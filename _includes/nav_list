@@ -49,7 +49,7 @@
       <label for="toplevel_{% increment toplevel_index %}">{{ navtitle }}</label>
     {% else %}
     <li>
-      <a href="{{site.url}}/docs/{{page.lang}}{{ navurl }}">{{ navtitle }}</a>
+      <a href="{{site.url}}{{ site.baseurl }}/docs/{{page.lang}}{{ navurl }}">{{ navtitle }}</a>
     </li>
     {% endif %}
 
@@ -106,7 +106,7 @@
           <input type="checkbox" name="sublevel_{{ sublevel_index }}" id="sublevel_{{ sublevel_index }}">
           <label for="sublevel_{% increment sublevel_index %}">{{ childtitle }}</label>
         {% else %}
-        <li><a href="{{site.url}}/docs/{{page.lang}}{{ childurl }}" class="{{ active }}">{{ childtitle }}</a></li>
+        <li><a href="{{site.url}}{{ site.baseurl }}/docs/{{page.lang}}{{ childurl }}" class="{{ active }}">{{ childtitle }}</a></li>
         {% endif %}
 
         {% if child.children != null %}
@@ -158,7 +158,7 @@
             {% endif %}
 
             <li>
-              <a href="{{site.url}}/docs/{{page.lang}}{{ grandchildurl }}" class="{{ active }}" style="font-style:italic;">{{ grandchildtitle }}</a>
+              <a href="{{site.url}}{{ site.baseurl }}/docs/{{page.lang}}{{ grandchildurl }}" class="{{ active }}" style="font-style:italic;">{{ grandchildtitle }}</a>
             </li>
           {% endfor %}
           </ul>
