@@ -5,7 +5,7 @@
         <a class="site-title" href="{{ site.url }}"><img src="/emanual/assets/images/robotis_logo.gif" style="padding-right:10px;">e-Manual</a>
         {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
         {% for page in pages %}
-          <a href="{{page.url}}" class="{{page.lang}}" style="color: #134268;padding-right:10px;">[{{page.lang}}]</a>
+          <a href="{{ page.url | absolute_url }}" class="{{page.lang}}" style="color: #134268;padding-right:10px;">[{{page.lang}}]</a>
         {% endfor %}
         <form method="get" style="margin:0 0 0 0; position:absolute; right:0; width:30%;">
           <input type="text" id="tipue_search_input" name="q" placeholder="Search" style="padding:0 10px; margin-bottom:0;">
