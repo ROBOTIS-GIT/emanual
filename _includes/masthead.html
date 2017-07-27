@@ -1,0 +1,212 @@
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        <a class="site-title" href="{{ '/' | absolute_url }}"><img src="/assets/images/robotis_logo.gif" style="padding-right:10px;">e-Manual</a>
+        {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+        {% for page in pages %}
+          <a href="{{page.url}}" class="{{page.lang}}" style="color: #134268;padding-right:10px;">[{{page.lang}}]</a>
+        {% endfor %}
+        <form method="get" style="margin:0 0 0 0; position:absolute; right:0; width:30%;">
+          <input type="text" id="tipue_search_input" name="q" placeholder="Search" style="padding:0 10px; margin-bottom:0;">
+        </form>
+      </nav>
+    </div>
+
+    <div class="container">
+      {% for link in site.data.navigation.main %}
+        {% if page.lang=='kr' %}
+          {% if link.titlekr %}
+            {% assign headtitle=link.titlekr %}
+          {% else %}
+            {% assign headtitle=link.title %}
+          {% endif %}
+          {% if link.urlkr %}
+            {% assign headurl=link.urlkr %}
+          {% else %}
+            {% assign headurl=null %}
+          {% endif %}
+        {% elsif page.lang=='jp' %}
+          {% if link.titlejp %}
+            {% assign headtitle=link.titlejp %}
+          {% else %}
+            {% assign headtitle=link.title %}
+          {% endif %}
+          {% if link.urljp %}
+            {% assign headurl=link.urljp %}
+          {% else %}
+            {% assign headurl=null %}
+          {% endif %}
+        {% elsif page.lang=='cn' %}
+          {% if link.titlecn %}
+            {% assign headtitle=link.titlecn %}
+          {% else %}
+            {% assign headtitle=link.title %}
+          {% endif %}
+          {% if link.urlcn %}
+            {% assign headurl=link.urlcn %}
+          {% else %}
+            {% assign headurl=null %}
+          {% endif %}
+        {% else %}
+          {% assign headtitle=link.title %}
+          {% assign headurl=link.url %}
+        {% endif %}
+
+        <div class="dropdown">
+          {% if headtitle %}
+          <button class="dropbtn">
+            {% if headurl %}
+              {% if headurl contains "://" %}
+                <a href="{{ headurl }}" style="color:#fff;text-decoration:none;">{% else %}
+                <a href="{{site.url}}/docs/{{page.lang}}{{ headurl }}" style="color:#fff;text-decoration:none;">{% endif %}
+              {% endif %}{{headtitle}}{% if headurl %}</a>
+            {% endif %}
+          </button>
+          {% endif %}
+
+          {% if link.children != null %}
+            <div class="dropdown-content">
+            {% for shoulder in link.children %}
+              <div class="dropdown-content-wrapper">
+              {% if page.lang=='en' %}
+                {% if shoulder.title %}
+                  {% assign shouldertitle=shoulder.title %}
+                {% else %}
+                  {% assign shouldertitle=null %}
+                {% endif %}
+              {% elsif page.lang=='kr' %}
+                {% if shoulder.titlekr %}
+                  {% assign shouldertitle=shoulder.titlekr %}
+                {% else %}
+                  {% assign shouldertitle=null %}
+                {% endif %}
+              {% elsif page.lang=='jp' %}
+                {% if shoulder.titlejp %}
+                  {% assign shouldertitle=shoulder.titlejp %}
+                {% else %}
+                  {% assign shouldertitle=null %}
+                {% endif %}
+              {% elsif page.lang=='cn' %}
+                {% if shoulder.titlecn %}
+                  {% assign shouldertitle=shoulder.titlecn %}
+                {% else %}
+                  {% assign shouldertitle=null %}
+                {% endif %}
+              {% else %}
+                {% assign shouldertitle=null %}
+              {% endif %}
+
+              {% if page.lang=='en' %}
+                {% if shoulder.url %}
+                  {% assign shoulderurl=shoulder.url %}
+                {% else %}
+                  {% assign shoulderurl=null %}
+                {% endif %}
+              {% elsif page.lang=='kr' %}
+                {% if shoulder.urlkr %}
+                  {% assign shoulderurl=shoulder.urlkr %}
+                {% else %}
+                  {% assign shoulderurl=null %}
+                {% endif %}
+              {% elsif page.lang=='jp' %}
+                {% if shoulder.urljp %}
+                  {% assign shoulderurl=shoulder.urljp %}
+                {% else %}
+                  {% assign shoulderurl=null %}
+                {% endif %}
+              {% elsif page.lang=='cn' %}
+                {% if shoulder.urlcn %}
+                  {% assign shoulderurl=shoulder.urlcn %}
+                {% else %}
+                  {% assign shoulderurl=null %}
+                {% endif %}
+              {% else %}
+                {% assign shoulderurl=null %}
+              {% endif %}
+
+              {% if shouldertitle %}
+                {% if shoulderurl %}
+                  {% if shoulderurl contains "://" %}<a href="{{ shoulderurl }}">{% else %}
+                    <a href="{{site.url}}/docs/{{page.lang}}{{ shoulderurl }}">{% endif %}{% else %}
+                <a>{% endif %}{{ shouldertitle }}</a>
+              {% endif %}
+
+              {% if shoulder.children != null %}
+              <div class="dropdown-2nd-content">
+                {% for knee in shoulder.children %}
+                  {% if page.lang=='en' %}
+                    {% if knee.title %}
+                      {% assign kneetitle=knee.title %}
+                    {% else %}
+                      {% assign kneetitle=null %}
+                    {% endif %}
+                  {% elsif page.lang=='kr' %}
+                    {% if knee.titlekr %}
+                      {% assign kneetitle=knee.titlekr %}
+                    {% else %}
+                      {% assign kneetitle=null %}
+                    {% endif %}
+                  {% elsif page.lang=='jp' %}
+                    {% if knee.titlejp %}
+                      {% assign kneetitle=knee.titlejp %}
+                    {% else %}
+                      {% assign kneetitle=null %}
+                    {% endif %}
+                  {% elsif page.lang=='cn' %}
+                    {% if knee.titlecn %}
+                      {% assign kneetitle=knee.titlecn %}
+                    {% else %}
+                      {% assign kneetitle=null %}
+                    {% endif %}
+                  {% else %}
+                    {% assign kneetitle=null %}
+                  {% endif %}
+
+                  {% if page.lang=='en' %}
+                    {% if knee.url %}
+                      {% assign kneeurl=knee.url %}
+                    {% else %}
+                      {% assign kneeurl=null %}
+                    {% endif %}
+                  {% elsif page.lang=='kr' %}
+                    {% if knee.urlkr %}
+                      {% assign kneeurl=knee.urlkr %}
+                    {% else %}
+                      {% assign kneeurl=null %}
+                    {% endif %}
+                  {% elsif page.lang=='jp' %}
+                    {% if knee.urljp %}
+                      {% assign kneeurl=knee.urljp %}
+                    {% else %}
+                      {% assign kneeurl=null %}
+                    {% endif %}
+                  {% elsif page.lang=='cn' %}
+                    {% if knee.urlcn %}
+                      {% assign kneeurl=knee.urlcn %}
+                    {% else %}
+                      {% assign kneeurl=null %}
+                    {% endif %}
+                  {% else %}
+                    {% assign kneeurl=null %}
+                  {% endif %}
+
+                  {% if kneetitle %}
+                    {% if kneeurl %}
+                      {% if kneeurl contains "://" %}<a href="{{ kneeurl }}">{% else %}<a href="{{site.url}}/docs/{{page.lang}}{{ kneeurl }}">{% endif %}{% else %}<a>{% endif %}{{ kneetitle }}</a>
+                    {% endif %}
+                {% endfor %}
+              </div>
+              {% endif %}
+
+            </div>
+            {% endfor %}
+            </div>
+          {% endif %}
+
+        </div>
+      {% endfor %}
+    </div>
+
+  </div>
+</div>
