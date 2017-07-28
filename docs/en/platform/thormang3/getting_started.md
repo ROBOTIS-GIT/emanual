@@ -11,7 +11,7 @@ sidebar:
   nav: "thormang3"
 ---
 
-![](/assets/images/platform/thormang3/thormang3.png)
+![](assets/images/platform/thormang3/thormang3.png)
 
 # [Getting Started](#getting-started)
 
