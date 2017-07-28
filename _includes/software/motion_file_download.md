@@ -6,7 +6,7 @@
 5. 목록에서 로봇에 연결된 블루투스(BT-210)을 선택하고 `연결하기`를 터치합니다. (스마트기기와 블루투스가 연결되어 있지 않으면 "장치 선택 창"이 열리므로 블루투스를 선택하여 연결하면 됩니다.)
 6. 창이 사라지면 ‘모션 다운로드’ 탭을 선택하고, ‘모션그룹 다운로드’ 버튼을 터치합니다.
 
-![](/assets/images/sw/motion_download_01.jpg)
-![](/assets/images/sw/motion_download_02.jpg)
-![](/assets/images/sw/motion_download_03.jpg)
-![](/assets/images/sw/motion_download_04.jpg)
+![](/emanual/assets/images/sw/motion_download_01.jpg)
+![](/emanual/assets/images/sw/motion_download_02.jpg)
+![](/emanual/assets/images/sw/motion_download_03.jpg)
+![](/emanual/assets/images/sw/motion_download_04.jpg)

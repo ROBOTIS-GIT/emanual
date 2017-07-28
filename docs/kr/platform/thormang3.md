@@ -20,7 +20,7 @@ sidebar:
 이미지 표시 예
 
 ```
-![Product Image](/assets/images/parts/cm_200.jpg)
+![Product Image](/emanual/assets/images/parts/cm_200.jpg)
 ```
 
 h1 제목 링크 예 (제일 앞 #의 갯수만큼 제목 단계가 깊어짐)
