@@ -13,7 +13,7 @@ sidebar:
 
 # [컨텐츠 작성방법](#컨텐츠-작성방법)
 
-  파일의 최상단에 반드시 아래의 YFM을 추가하고 내용을 알맞게 업데이트합니다.
+  파일의 최상단에 반드시 아래의 YFM(Yaml Front matter)을 추가하고 내용을 알맞게 업데이트합니다.
   ```
   ---
   layout: archive
@@ -30,7 +30,7 @@ sidebar:
   ```
 
 ## [개요번호](#개요번호)
-  H1은 아래와 같이 주제 앞에 #을 한개 붙이고 한칸 띄운다음 주제를 입력한다.
+  개요번호를 만들기 위해서는 아래와 같이 제목 앞에 #을 붙이고 한칸을 띄운다음 제목을 입력한다.
   ```
   # 첫번째 주제
 
@@ -40,12 +40,13 @@ sidebar:
   ```
 
 ## [다단계 목록](#다단계-목록)
-- 번호 없는 목록과
-  - 하위 항목을 만들 수 있으며
 
-1. 번호를 만들어서 사용할 수도 있고
-  - 번호 목록의 하위에 번호없는 목록을 섞어서 사용할수도 있다.
-    - 하위항목을 만들 때에는 반드시 두칸 이상 들여쓰기를 해야한다.
+- 번호 없는 목록과
+  - 하위 항목을 만들 수 있으며  
+
+1. 번호를 만들어서 사용할 수도 있고  
+  - 번호 목록의 하위에 번호없는 목록을 섞어서 사용할수도 있다.  
+    - 하위항목을 만들 때에는 반드시 두칸 이상 들여쓰기를 해야한다.  
 
 ```
 - 번호 없는 목록과
@@ -97,46 +98,49 @@ sidebar:
 
 ## [표](#표)
 아래의 예제를 보시기 바랍니다.
-각 셀은 '|'로 구분되며 줄을 맞추지 않아도 됩니다.
-항목 줄은 표 내용과 | :----------- |로 구분됩니다.
-셀 병합기능이 없기 때문에 사용에 다소 불편함이 있을 수 있습니다.
-한칸에 여러줄을 입력하려면 {% raw %}'<br />'{% endraw %}태그를 이용할 수 있습니다.
+각 셀은 '|'로 구분되며 줄을 맞추지 않아도 됩니다.  
+항목 줄은 표 내용과 | :----------- |로 구분됩니다.  
+셀 병합기능이 없기 때문에 사용에 다소 불편함이 있을 수 있습니다.  
+한칸에 여러줄을 입력하려면 <pre><br /></pre>태그를 이용할 수 있습니다.  
+표의 시작과 끝에는 반드시 한줄의 공백이 있어야 합니다.
 
 ```
 | 항목 1         | 항목 2       |
-| :------------- | :---------- |
-| 이름           | 똘망         |
+| :------------: | :---------- |
+| 이름           | 똘망<br />Thormang3|
 |소속|로보티즈|
 ```
 
 | 항목 1         | 항목 2       |
-| :------------- | :---------- |
-| 이름           | 똘망         |
+| :------------: | :---------- |
+| 이름           | 똘망<br />Thormang3|
 |소속|로보티즈|
 
 
 ## [그림](#그림)
-그림 삽입은 그림을 업로드한 후에 그림의 주소를 지정해서 사용할 수 있습니다. 주소가 지정되어있는 레퍼런스는
+그림 삽입은 그림을 업로드한 후에 그림의 주소를 지정해서 사용할 수 있습니다. 주소를 저장하는 레퍼런스는 문서의 가장 하단에 작성합니다.
 
-![성능그래프][performance graph]
-[performance graph]: {{site.url}}/assets/images/dxl/x-series/xh430_w210_performance_graph.jpg
-{: .notice}
-
+```text
 ![성능그래프][performance graph]
 
-[performance graph]: {{site.url}}/assets/images/dxl/x-series/xh430_w210_performance_graph.jpg
+[performance graph]: {{site.url}}/emanual/assets/images/dxl/x/xh430_w210_performance_graph.jpg
+```
+
+![성능그래프][image reference]
+
+[image reference]: {{site.url}}/emanual/assets/images/dxl/x/xh430_w210_performance_graph.jpg
 
 
 ## [링크](#링크)
-링크 삽입은 아래와 같이 사용할 수 있습니다.
+링크 삽입은 아래와 같이 사용할 수 있습니다. 주소를 저장하는 레퍼런스는 문서의 가장 하단에 작성합니다.
 
-[컨텐츠 작성방법][Contents Format]
+[컨텐츠 작성방법][link reference]
 
-[Contents Format]: {{site.url}}/docs/kr/faq
+[link reference]: {{site.url}}/emanual/docs/kr/faq
 
 ```
 [컨텐츠 작성방법][Contents Format]
-[Contents Format]: {{site.url}}/docs/kr/faq
+[Contents Format]: {{site.url}}/emanual/docs/kr/faq
 ```
 
 ## [텍스트 효과](#텍스트-효과)
@@ -156,11 +160,12 @@ sidebar:
   target_link_libraries( thormang3_kinematics_dynamics )   
   ```
 
-  &grave;&grave;&grave;c++  
-    find_package( thormang3_kinematics_dynamics )   
+<pre>
+  ```c++  
+  find_package( thormang3_kinematics_dynamics )   
   target_link_libraries( thormang3_kinematics_dynamics )   
-  &grave;&grave;&grave;
-
+  ```
+</pre>
 
 - 2번 방법
 
@@ -169,7 +174,9 @@ sidebar:
   target_link_libraries( thormang3_kinematics_dynamics )   
   ```
 
-  &grave;&grave;&grave;  
+<pre>
+  ```  
   find_package( thormang3_kinematics_dynamics )   
   target_link_libraries( thormang3_kinematics_dynamics )   
-  &grave;&grave;&grave;
+  ```
+</pre>
