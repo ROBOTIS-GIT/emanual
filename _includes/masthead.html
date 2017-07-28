@@ -59,7 +59,7 @@
             {% if headurl %}
               {% if headurl contains "://" %}
                 <a href="{{ headurl }}" style="color:#fff;text-decoration:none;">{% else %}
-                <a href="{{ {{ site.baseurl }}/docs/{{ page.lang }}{{ headurl }} | absolute_url }}" style="color:#fff;text-decoration:none;">{% endif %}
+                <a href="{{ "/docs/{{ page.lang }}{{ headurl }}" | absolute_url }}" style="color:#fff;text-decoration:none;">{% endif %}
               {% endif %}{{headtitle}}{% if headurl %}</a>
             {% endif %}
           </button>
@@ -128,7 +128,7 @@
               {% if shouldertitle %}
                 {% if shoulderurl %}
                   {% if shoulderurl contains "://" %}<a href="{{ shoulderurl }}">{% else %}
-                    <a href="{{ {{ site.baseurl }}/docs/{{ page.lang }}{{ shoulderurl }} | absolute_url }}">{% endif %}{% else %}
+                    <a href="{{ "/docs/{{ page.lang }}{{ shoulderurl }}" | absolute_url }}">{% endif %}{% else %}
                 <a>{% endif %}{{ shouldertitle }}</a>
               {% endif %}
 
@@ -193,7 +193,7 @@
 
                   {% if kneetitle %}
                     {% if kneeurl %}
-                      {% if kneeurl contains "://" %}<a href="{{ kneeurl }}">{% else %}<a href="{{ {{ site.baseurl }}/docs/{{ page.lang }}{{ kneeurl }} | absolute_url }}">{% endif %}{% else %}<a>{% endif %}{{ kneetitle }}</a>
+                      {% if kneeurl contains "://" %}<a href="{{ kneeurl }}">{% else %}<a href="{{ "/docs/{{ page.lang }}{{ kneeurl }}" | absolute_url }}">{% endif %}{% else %}<a>{% endif %}{{ kneetitle }}</a>
                     {% endif %}
                 {% endfor %}
               </div>
