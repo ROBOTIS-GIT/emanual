@@ -2,7 +2,7 @@
 
 <nav class="nav__list">
 
-  {% if page.sidebar.title %}<a href={{ 'page.permalink' | absolute_url }} style="font-size:$type-size-6; color: #2174b6;">{{ page.sidebar.title }}</a>{% endif %}
+  {% if page.sidebar.title %}<a href={{ page.permalink | absolute_url }} style="font-size:$type-size-6; color: #2174b6;">{{ page.sidebar.title }}</a>{% endif %}
   <ul class="nav__items">
   {% for nav in navigation %}
     {% if page.lang=='kr' %}
@@ -49,7 +49,7 @@
       <label for="toplevel_{{ forloop.index0 }}">{{ navtitle }}</label>
     {% else %}
     <li>
-      <a href="{{ '/docs/{{page.lang}}{{ navurl }}' | absolute_url }}">{{ navtitle }}</a>
+      <a href="{{ {{ site.baseurl }}/docs/{{page.lang}}{{ navurl }} | absolute_url }}">{{ navtitle }}</a>
     </li>
     {% endif %}
 
@@ -106,7 +106,7 @@
           <input type="checkbox" name="sublevel_{{ forloop.index0 }}" id="sublevel_{{ forloop.index0 }}">
           <label for="sublevel_{{ forloop.index0 }}">{{ childtitle }}</label>
         {% else %}
-        <li><a href="{{ '/docs/{{page.lang}}{{ childurl }}' | absolute_url }}" class="{{ active }}">{{ childtitle }}</a></li>
+        <li><a href="{{ {{ site.baseurl }}/docs/{{page.lang}}{{ childurl }} | absolute_url }}" class="{{ active }}">{{ childtitle }}</a></li>
         {% endif %}
 
         {% if child.children != null %}
@@ -158,7 +158,7 @@
             {% endif %}
 
             <li>
-              <a href="{{ '/docs/{{page.lang}}{{ grandchildurl }}' | absolute_url }}" class="{{ active }}" style="font-style:italic;">{{ grandchildtitle }}</a>
+              <a href="{{ {{ site.baseurl }}/docs/{{page.lang}}{{ grandchildurl }} | absolute_url }}" class="{{ active }}" style="font-style:italic;">{{ grandchildtitle }}</a>
             </li>
           {% endfor %}
           </ul>
