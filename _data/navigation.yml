@@ -9,6 +9,7 @@ main:
       children:
       - title: "AX-12W"
         titlekr: "AX-12W"
+        url: /dxl/ax/ax-12w/
       - title: "AX-12/12+/12A"
         titlekr: "AX-12/12+/12A"
       - title: "AX-18F/18A"
@@ -546,6 +547,73 @@ main:
     urljp: /fap
     urlcn: /faq
 
+#AX-12W sidebar
+ax-12w:
+  - title: "Specifications"
+    titlekr: "스펙"
+    url: /dxl/ax/ax-12w/#specifications
+    urlkr: /dxl/ax/ax-12w/#스펙
+    children:
+      - title: "Performance Graph"
+        titlekr: "성능 그래프"
+        url: /dxl/ax/ax-12w/#performance-graph
+        urlkr: /dxl/ax/ax-12w/#성능-그래프
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /dxl/ax/ax-12w/#control-table
+    urlkr: /dxl/ax/ax-12w/#컨트롤-테이블
+    children:
+      - title: "Control Table, Data, Address"
+        titlekr: "컨트롤 테이블, 데이터, 주소"
+        url: /dxl/ax/ax-12w/#control-table-data-address
+        urlkr: /dxl/ax/ax-12w/#컨트롤-테이블-데이터-주소
+        children:
+          - title: "Area(EEPROM, RAM)"
+            url: /dxl/ax/ax-12w/#area-eeprom-ram
+          - title: "Size"
+            url: /dxl/ax/ax-12w/#size
+          - title: "Access"
+            url: /dxl/ax/ax-12w/#access
+          - title: "Initial Value"
+            url: /dxl/ax/ax-12w/#initial-value
+      - title: "EEPROM Area"
+        titlekr: "EEPROM 영역"
+        url: /dxl/ax/ax-12w/#control-table-of-eeprom-area
+        urlkr: /dxl/ax/ax-12w/#eeprom-영역
+      - title: "RAM Area"
+        titlekr: "RAM 영역"
+        url: /dxl/ax/ax-12w/#control-table-of-ram-area
+        urlkr: /dxl/ax/ax-12w/#ram-영역
+      - title: "Control Table Description"
+        titlekr: "컨트롤 테이블 설명"
+        url: /dxl/ax/ax-12w/#control-table-description
+        urlkr: /dxl/ax/ax-12w/#컨트롤-테이블-설명
+  - title: "How to Assemble"
+    titlekr: "조립 예시"
+    url: /dxl/ax/ax-12w/#how-to-assemble
+    urlkr: /dxl/ax/ax-12w/#조립-예시
+  - title: "Maintenance"
+    titlekr: "유지보수"
+    url: /dxl/ax/ax-12w/#maintenance
+    urlkr: /dxl/ax/ax-12w/#유지보수
+    children:
+      - title: "Horn, Bearing"
+        titlekr: "혼, 베어링"
+        url: /dxl/ax/ax-12w/#horn-and-bearing-replacement
+        urlkr: /dxl/ax/ax-12w/#혼-베어링
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /dxl/ax/ax-12w/#reference
+    urlkr: /dxl/ax/ax-12w/#참고자료
+    children:
+      - title: "Quick Start"
+        titlekr: "퀵스타트"
+        url: /dxl/ax/ax-12w/#quick-start
+        urlkr: /dxl/ax/ax-12w/#퀵스타트
+      - title: "Drawings"
+        titlekr: "도면"
+        url: /dxl/ax/ax-12w/#drawings
+        urlkr: /dxl/ax/ax-12w/#도면
 
 #XH430-W210 sidebar
 xh430-w210:
