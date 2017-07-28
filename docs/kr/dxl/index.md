@@ -4,7 +4,7 @@ lang: kr
 ref: dxl_main
 permalink: /docs/kr/dxl/
 header:
-  overlay_color: 
+  overlay_color:
   overlay_image:
   cta_label:
   cta_url:

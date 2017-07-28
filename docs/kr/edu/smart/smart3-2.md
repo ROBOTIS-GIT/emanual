@@ -66,7 +66,7 @@ gallery:
     title: "가위바위보 로봇"
 ---
 
-# [부품 목록](#부품-목록)  
+# [부품 목록](#부품-목록)
 
 ![](/emanual/assets/images/edu/smart/smart3-2_part-list.jpg)
 

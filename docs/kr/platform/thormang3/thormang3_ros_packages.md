@@ -23,13 +23,13 @@ sidebar:
 
 `thormang3_manager` is a package to apply ROBOTIS Framework to THORMANG3. Refer to the below link to create a new robot manager.
 
-1. Download & Build  
+1. Download & Build
 
     `Note` Reference : [MPC Installation]
     {: .notice}
 
-2. Run  
-    Execute the program with a .launch file in order to load ROS parameters. The command should be executed from the root account to configure the attribute of Thread.  
+2. Run
+    Execute the program with a .launch file in order to load ROS parameters. The command should be executed from the root account to configure the attribute of Thread.
     ```
     $ sudo bash
     [sudo] password for robotis:
@@ -55,43 +55,43 @@ sidebar:
 
 In `CMakeList.txt`,
 ```c++
-find_package( thormang3_kinematics_dynamics )   
-target_link_libraries( thormang3_kinematics_dynamics )   
+find_package( thormang3_kinematics_dynamics )
+target_link_libraries( thormang3_kinematics_dynamics )
 ```
 
 In `package.xml`,
 ```c++
-<build_depend>thormang3_kinematics_dynamics</build_depend>   
+<build_depend>thormang3_kinematics_dynamics</build_depend>
 ```
 
 #### Functions
 
-1. LinkData.cpp  
+1. LinkData.cpp
 
-    + name : Joint name  
-    + parent : Parent joint ID  
-    + sibling : Sibling joint ID  
-    + child : Child joint ID  
-    + mass : Mass  
-    + relative_position : Joint relative position (relative to parent)  
-    + joint_axis : Joint axis vector (relative to parent)  
-    + center_of_mass : Center of mass (Link Local)  
-    + inertia : Moment of Inertia (Link Local)  
-    + joint_limit_max : Joint upper limit  
-    + joint_limit_min : Joint lower limit  
-    + joint_angle : Joint angle  
-    + joint_velocity : Joint velocity  
-    + joint_acceleration : Joint acceleration  
-    + position: Link position  
-    + orientation : Link orientation  
-    + transformation : Link transformation matrix   
+    + name : Joint name
+    + parent : Parent joint ID
+    + sibling : Sibling joint ID
+    + child : Child joint ID
+    + mass : Mass
+    + relative_position : Joint relative position (relative to parent)
+    + joint_axis : Joint axis vector (relative to parent)
+    + center_of_mass : Center of mass (Link Local)
+    + inertia : Moment of Inertia (Link Local)
+    + joint_limit_max : Joint upper limit
+    + joint_limit_min : Joint lower limit
+    + joint_angle : Joint angle
+    + joint_velocity : Joint velocity
+    + joint_acceleration : Joint acceleration
+    + position: Link position
+    + orientation : Link orientation
+    + transformation : Link transformation matrix
 
-2. ThorMang3KinematicsDynamics.cpp  
+2. ThorMang3KinematicsDynamics.cpp
 
   + THORMANG3 joint & link information
     ```c++
     ThorMang3KinematicsDynamics(TREE_SELECT tree)
-    ```   
+    ```
 
   + Find kinematics tree
     - arguments : start joint id
@@ -99,23 +99,23 @@ In `package.xml`,
 
     ```c++
     std::vector<int> findRoute( int to )
-    ```  
+    ```
 
   + Find kinematics tree
     - arguments : start joint id and end joint id
-    - return value : vector ( n x 1 )  
+    - return value : vector ( n x 1 )
 
     ```c++
     std::vector<int> findRoute( int from , int to )
-    ```  
+    ```
 
   + Calculate total mass
     - arguments : start joint id
-    - return value : total mass  
+    - return value : total mass
 
     ```c++
     double TotalMass( int joint_ID )
-    ```  
+    ```
 
   + Calculate center of mass
     - arguments : start joint id
@@ -124,22 +124,22 @@ In `package.xml`,
     ```c++
     Eigen::MatrixXd CalcMC( int joint_ID )
     Eigen::MatrixXd CalcCOM( Eigen::MatrixXd MC )
-    ```   
+    ```
 
   + Calculate forward kinematics
-    - arguments : start joint id  
+    - arguments : start joint id
 
     ```c++
     void ForwardKinematics( int joint_ID )
-    ```  
+    ```
 
   + Calculate forward kinematics
     - arguments : vector ( n x 1 )
-    - return value : 6 x n matrix  
+    - return value : 6 x n matrix
 
     ```c++
     Eigen::MatrixXd CalcJacobian( std::vector<int> idx )
-    ```  
+    ```
 
   + Calculate inverse kinematics
     - arguments : end joint id, target position, target orientation, max iteration, calculation error
@@ -150,7 +150,7 @@ In `package.xml`,
     ( int to,
       Eigen::MatrixXd tar_position, Eigen::MatrixXd tar_orientation,
       int max_iter,                 double ik_err )
-    ```  
+    ```
 
   + Calculate inverse kinematics
     - arguments : start joint id, end joint id, target position, target orientation, max iteration, calculation error
@@ -161,7 +161,7 @@ In `package.xml`,
     ( int from,                     int to,
       Eigen::MatrixXd tar_position, Eigen::MatrixXd tar_orientation,
       int max_iter,                 double ik_err )
-    ```  
+    ```
 
   + Calculate inverse kinematics for leg
     - arguments : output, target position (x y z), target orientation (roll pitch yaw)
@@ -172,7 +172,7 @@ In `package.xml`,
     ( double *out,
       double x,    double y,     double z,
       double roll, double pitch, double yaw )
-    ```  
+    ```
 
   + Calculate inverse kinematics for right leg
     - arguments : output, target position (x y z), target orientation (roll pitch yaw)
@@ -183,7 +183,7 @@ In `package.xml`,
     ( double *out,
       double x,    double y,     double z,
       double roll, double pitch, double yaw);
-    ```  
+    ```
 
   + Calculate inverse kinematics for left leg
     - arguments : output, target position (x y z), target orientation (roll pitch yaw)
@@ -194,42 +194,42 @@ In `package.xml`,
     ( double *out,
       double x,    double y,     double z,
       double roll, double pitch, double yaw);
-    ```  
+    ```
 
 ### [thormang3_action_module](#thormang3_action_module)
 
 `thormang3_action_module` is one of the Motion Module. This module can load and play a motion file.
 The motion file is edited with thormang3_action_editor
 
-- Download & Build  
+- Download & Build
   `Note` Reference : [MPC Installation]
   {: .notice}
 
 #### ROS API
 
-  - Subscribed Topics  
-    `/robotis/action/page_num`([std_msgs/Int32])  
-     The page number will be played.  
-     If user send a page number between 1 ~ 255, the page will be played.  
-     If user send -1, the action will be stopped.  
+  - Subscribed Topics
+    `/robotis/action/page_num`([std_msgs/Int32])
+     The page number will be played.
+     If user send a page number between 1 ~ 255, the page will be played.
+     If user send -1, the action will be stopped.
      If user send -2, the action will be broken(stop immediately).
 
-    `/robotis/action/start_action`([thormang3_action_module_msgs/StartAction])  
+    `/robotis/action/start_action`([thormang3_action_module_msgs/StartAction])
      The page number and joint names will be played.
 
-  - Published Topics  
-    `/robotis/status`([robotis_controller_msgs/StatusMsg])  
+  - Published Topics
+    `/robotis/status`([robotis_controller_msgs/StatusMsg])
      The message indicates status of the action_module.
 
-  - Services  
-    `/robotis/action/is_running`([thormang3_action_module_msgs/IsRunning])  
+  - Services
+    `/robotis/action/is_running`([thormang3_action_module_msgs/IsRunning])
      The service that checks whether THORMANG3's action is being played or not.
 
 ### [thormang3_base_module](#thormang3_base_module)
 
 `thormang3_base_module` is a module for initial posture. This module is included in thormang3_manager as a library.
 
-- Download & Build  
+- Download & Build
   `Note` Reference : [MPC Installation]
   {: .notice}
 
@@ -240,15 +240,15 @@ The motion file is edited with thormang3_action_editor
 
 #### ROS API
 
-  - Subscribed Topics  
-    `/robotis/base/ini_pose`([std_msgs/String])  
+  - Subscribed Topics
+    `/robotis/base/ini_pose`([std_msgs/String])
      A command to take the initial posture(This command is effective even when the base module is inactive).
 
-  - Published Topics  
-    `/robotis/enable_ctrl_module`([std_msgs/String])  
+  - Published Topics
+    `/robotis/enable_ctrl_module`([std_msgs/String])
      A base_module activation topic to take the initial posture.
 
-    `/robotis/status`([robotis_controller_msgs/StatusMsg])  
+    `/robotis/status`([robotis_controller_msgs/StatusMsg])
      A message that contains the status of base_module.
 
 
@@ -256,31 +256,31 @@ The motion file is edited with thormang3_action_editor
 
 THORMANG3 manipulation module for the upper body.
 
-- Download & Build  
+- Download & Build
   `Note` Reference : [MPC Installation]
   {: .notice}
 
 #### ROS API
 
-  - Subscribed Topics  
-    `/robotis/manipulation/ini_pose_msg` (std_msgs/String)  
+  - Subscribed Topics
+    `/robotis/manipulation/ini_pose_msg` (std_msgs/String)
      A message to take the initial posture.
 
-    `/robotis/manipulation/joint_pose_msg` (thormang3_manipulation_module_msgs/JointPose)  
+    `/robotis/manipulation/joint_pose_msg` (thormang3_manipulation_module_msgs/JointPose)
      A message to move to the target point in the Joint Space.
 
-    `/robotis/manipulation/kinematics_pose_msg` (thormang3_manipulation_module_msgs/KinematicsPose)  
+    `/robotis/manipulation/kinematics_pose_msg` (thormang3_manipulation_module_msgs/KinematicsPose)
      A message to move to the target pose in the Task Space.
 
-  - Published Topics  
-    `/robotis/status` (robotis_controller_msgs/StatusMsg)  
+  - Published Topics
+    `/robotis/status` (robotis_controller_msgs/StatusMsg)
      A status message of THORMANG3
 
-  - Services  
-    `/robotis/manipulation/get_joint_pose` (thormang3_manipulation_module_msgs/GetJointPose)  
+  - Services
+    `/robotis/manipulation/get_joint_pose` (thormang3_manipulation_module_msgs/GetJointPose)
      A service that reads the pose of specific joint.
 
-    `/robotis/manipulation/get_kinematics_pose` (thormang3_manipulation_module_msgs/GetKinematicsPose)  
+    `/robotis/manipulation/get_kinematics_pose` (thormang3_manipulation_module_msgs/GetKinematicsPose)
      A service that reads the pose of end effector from a specific kinematics group.
 
 
@@ -292,46 +292,46 @@ As seen from the above figure, thormang3_walking_module is one of the MotionModu
 THROMANG3 can be controlled with Topics and Services.
 Users can designate almost all Step Parameters.(thormang3_walking_module_msgs/StepData)
 
-1. Pattern Generation  
+1. Pattern Generation
     thormang3_walking_module includes online walking pattern generator.
-    The pattern is generated from Foot Step Data input.  
+    The pattern is generated from Foot Step Data input.
     ![](/emanual/assets/images/platform/thormang3/thormang3_walking_module_algorithm_diagram.jpg)
 
-2. Balance Algorithm  
+2. Balance Algorithm
     The balance algorithm is included as shown below.(thormang3_walking_module_msgs/BalanceParam)
     ![](/emanual/assets/images/platform/thormang3/thormang3_walking_module_balance_diagram.jpg)
 
-- Download & Build  
+- Download & Build
   `Note` Reference : [MPC Installation]
   {: .notice}
 
 #### ROS API
 
-  - Subscribed Topics  
-    `/robotis/sensor/imu/imu` (sensor_msgs/Imu)  
+  - Subscribed Topics
+    `/robotis/sensor/imu/imu` (sensor_msgs/Imu)
    Current data of the IMU Sensor
 
-  - Published Topics  
-    `/robotis/status`(robotis_controller_msgs/StatusMsg)  
+  - Published Topics
+    `/robotis/status`(robotis_controller_msgs/StatusMsg)
    Status message of THORMANG3
 
-  - Services  
-    `/robotis/walking/get_reference_step_data`(thormang3_walking_module_msgs/GetReferenceStrpData)  
+  - Services
+    `/robotis/walking/get_reference_step_data`(thormang3_walking_module_msgs/GetReferenceStrpData)
    A service that collects current location of THORMANG3 in the Global from the Walking Module.
 
-    `/robotis/walking/add_step_data`(thormang3_walking_module_msgs/AddStepDataArray)  
+    `/robotis/walking/add_step_data`(thormang3_walking_module_msgs/AddStepDataArray)
    A service that adds StepData created by the user.
 
-    `/robotis/walking/walking_start`(thormang3_walking_module_msgs/WalkingStart)  
+    `/robotis/walking/walking_start`(thormang3_walking_module_msgs/WalkingStart)
    A service that commands to start walking.
 
-    `/robotis/walking/is_running`(thormang3_walking_module_msgs/IsRunning)  
+    `/robotis/walking/is_running`(thormang3_walking_module_msgs/IsRunning)
    A service that checks whether THORMANG3 is walking or not.
 
-    `/robotis/walking/set_balance_param`(thormang3_walking_module_msgs/SetBalanceParam)  
+    `/robotis/walking/set_balance_param`(thormang3_walking_module_msgs/SetBalanceParam)
    A service that can set Balance Algorithm parameters.
 
-    `/robotis/walking/remove_existing_step_data`(thormang3_walking_module_msgs/RemoveExistingStepData)  
+    `/robotis/walking/remove_existing_step_data`(thormang3_walking_module_msgs/RemoveExistingStepData)
    A service that deletes existing StepData.
 
 
@@ -339,7 +339,7 @@ Users can designate almost all Step Parameters.(thormang3_walking_module_msgs/St
 
 This module is to control the head. This module is included in the Thormang3 Manager as a library.
 
-- Download & Build  
+- Download & Build
   `Note` Reference : [MPC Installation]
   {: .notice}
 
@@ -348,24 +348,24 @@ This module is to control the head. This module is included in the Thormang3 Man
 
 #### ROS API
 
-- Subscribed Topics  
-    `/robotis/head_control/move_lidar`(std_msgs/String)  
+- Subscribed Topics
+    `/robotis/head_control/move_lidar`(std_msgs/String)
      The command moves the head in order to obtain Lidar data.
 
-    `/robotis/head_control/move_lidar_with_range`(std_msgs/Float64)  
+    `/robotis/head_control/move_lidar_with_range`(std_msgs/Float64)
      This command scans up and down a given range at the current head position to generate 3D lidar data.
 
-    `/robotis/head_control/set_joint_states`(sensor_msgs/JointState)  
+    `/robotis/head_control/set_joint_states`(sensor_msgs/JointState)
      The message controls joints that are connected to the head.
 
-    `/robotis/head_control/set_joint_states_time`(thormang3_head_control_module_msgs/HeadJointPose)  
+    `/robotis/head_control/set_joint_states_time`(thormang3_head_control_module_msgs/HeadJointPose)
      The message moves head joints for given time.
 
-- Published Topics  
-    `/robotis/sensor/move_lidar`(std_msgs/String)  
+- Published Topics
+    `/robotis/sensor/move_lidar`(std_msgs/String)
      This message reports the head movement to the Node which assembles LiDAR data.
 
-    `/robotis/status`(robotis_controller_msgs/StatusMsg)  
+    `/robotis/status`(robotis_controller_msgs/StatusMsg)
      The message indicates status of the head_control_module.
 
 
@@ -379,9 +379,9 @@ The library does not include functions to communicate with hardwares. It can con
 
 1. ATIForceTorqueSensorTWE Class
 ```cpp
-bool Initialize(const std::string& ft_data_path,		
-                const std::string& ft_data_key,  
-                const std::string& ft_frame_id,  
+bool Initialize(const std::string& ft_data_path,
+                const std::string& ft_data_key,
+                const std::string& ft_frame_id,
                 const std::string& ft_raw_publish_name,
                 const std::string& ft_scaled_publish_name)
 ```
@@ -522,26 +522,26 @@ Acquired sensor values when the robot is hanging on the lift and standing on the
 #### ROS API
 
 1. Subscribed Topics
-  `/robotis/feet_ft/ft_calib_command` (std_msgs/String)  
+  `/robotis/feet_ft/ft_calib_command` (std_msgs/String)
    FT Calibration Command
 
 2. Published Topics
-  `/robotis/status` (robotis_controller_msgs/StatusMsg)  
+  `/robotis/status` (robotis_controller_msgs/StatusMsg)
    The status message of THORMANG3
 
-  `/robotis/feet_ft/both_ft_value` (thormang3_feet_ft_module_msgs/BothWrench)  
+  `/robotis/feet_ft/both_ft_value` (thormang3_feet_ft_module_msgs/BothWrench)
    Both Wrench
 
-  `/robotis/sensor/ft_right_foot/raw` (geometry_msgs/WrenchStamped)  
+  `/robotis/sensor/ft_right_foot/raw` (geometry_msgs/WrenchStamped)
    raw output from the force torque sensor on the right foot
 
-  `/robotis/sensor/ft_right_foot/scaled` (geometry_msgs/WrenchStamped)  
+  `/robotis/sensor/ft_right_foot/scaled` (geometry_msgs/WrenchStamped)
    scaled output from the force torque sensor on the right foot
 
-  `/robotis/sensor/ft_right_foot/raw`(geometry_msgs/WrenchStamped)  
+  `/robotis/sensor/ft_right_foot/raw`(geometry_msgs/WrenchStamped)
    raw output from the force torque sensor on the left foot
 
-  `/robotis/sensor/ft_right_foot/scaled`(geometry_msgs/renchStamped)  
+  `/robotis/sensor/ft_right_foot/scaled`(geometry_msgs/renchStamped)
    scaled output from the force torque sensor on the left foot
 
 ### [thormang3_balance_control](#thormang3_balance_control)

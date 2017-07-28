@@ -13,7 +13,7 @@ sidebar:
 
 ![](/emanual/assets/images/dxl/ax/ax-12w_product.jpg)
 
-# [Specifications](#specifications)  
+# [Specifications](#specifications)
 
 | Item           | Specifications     |
 | :------------- | :------------- |
@@ -101,22 +101,22 @@ Each data in the Control Table is restored to initial values when the DYNAMIXEL 
 
 ## [Control Table Description](#control-table-description)
 
-### <a name="model-number"></a>**Model Number (0)**  
+### <a name="model-number"></a>**Model Number (0)**
  This address stores model number of the DYNAMIXEL.
 
-### <a name="firmware-version"></a>**Firmware Version (2)**  
+### <a name="firmware-version"></a>**Firmware Version (2)**
  This address stores firmware version of the DYNAMIXEL.
 
-### <a name="id"></a>**ID (3)**  
+### <a name="id"></a>**ID (3)**
  The ID is a unique value in the network to identify each DYNAMIXEL with an Instruction Packet.
- 0~252 (0xFC) values can be used as an ID, and 254(0xFE) is occupied as a broadcast ID. The Broadcast ID(254, 0xFE) can send an Instruction Packet to all connected DYNAMIXELs simultaneously.  
+ 0~252 (0xFC) values can be used as an ID, and 254(0xFE) is occupied as a broadcast ID. The Broadcast ID(254, 0xFE) can send an Instruction Packet to all connected DYNAMIXELs simultaneously.
 
  `Note` Please avoid using an identical ID for multiple DYNAMIXELs. You may face communication failure or may not be able to detect Dynamixels with an identical ID.
  {: .notice}
 
 
-### <a name="baud-rate"></a>**Baud Rate (4)**  
- Baud Rate determines serial communication speed between a controller and DYNAMIXELs.  
+### <a name="baud-rate"></a>**Baud Rate (4)**
+ Baud Rate determines serial communication speed between a controller and DYNAMIXELs.
 
 | Value     | Baud Rate     | Margin of Error     |
 | :------------: | :------------: | :------------: |
@@ -134,8 +134,8 @@ Each data in the Control Table is restored to initial values when the DYNAMIXEL 
 {: .notice}
 
 
-### <a name="return-delay-time"></a>**Return Delay Time (5)**  
- After the DYNAMIXEL receives an Instruction Packet, it delays transmitting the Status Packet for Return Delay Time (9). For instance, if the Return Delay Time(9) is set to ‘10’, the Status Packet will be returned after 20[μsec] when the Instruction Packet is received.  
+### <a name="return-delay-time"></a>**Return Delay Time (5)**
+ After the DYNAMIXEL receives an Instruction Packet, it delays transmitting the Status Packet for Return Delay Time (9). For instance, if the Return Delay Time(9) is set to ‘10’, the Status Packet will be returned after 20[μsec] when the Instruction Packet is received.
 
  |      | Value     | Description     |
  | :------------- | :------------- | :------------- |
@@ -183,7 +183,7 @@ It decides how to return Status Packet. There are three ways like the below tabl
 When Instruction Packet is Broadcast ID, Status Packet is not returned regardless of Status Return Level.
 
 ### <a name="alarm-led"></a><a name="shutdown"></a>**Alarm LED / Alarm Shutdown**
-Dynamixel can protect itself by detecting errors occur during the operation.  
+Dynamixel can protect itself by detecting errors occur during the operation.
 The errors can be set are as the table below.
 
 |Bit   | Name     | Description     |
@@ -244,7 +244,7 @@ It is a position value of destination.
 0 to 1023 (0x3FF) is available.  The unit is 0.29 degree.
 If Goal Position is out of the range, Angle Limit Error Bit (Bit1) of Status Packet is returned as ‘1’ and Alarm is triggered as set in Alarm LED/Shutdown.
 
-![](/emanual/assets/images/dxl/dx_series_goal.png)  
+![](/emanual/assets/images/dxl/dx_series_goal.png)
 The picture above is the front view of Dynamixel
 
 `Note` If it is set to Wheel Mode, this value is not used.
@@ -254,7 +254,7 @@ The picture above is the front view of Dynamixel
 It is a moving speed to Goal Position.
 The range and the unit of the value may vary depending on the operation mode.
 
-+ Join Mode  
++ Join Mode
   0~1023 (0X3FF) can be used, and the unit is about 0.111rpm.
   If it is set to 0, it means the maximum rpm of the motor is used without controlling the speed.
   If it is 1023, it is about 114rpm.
@@ -263,7 +263,7 @@ The range and the unit of the value may vary depending on the operation mode.
   `Note` Please check the maximum rpm of relevant model in Joint Mode.  Even if the motor is set to more than maximum rpm, it cannot generate the torque more than the maximum rpm.
   {: .notice}
 
-+ Wheel Mode  
++ Wheel Mode
   0~2047( 0X7FF) can be used, the unit is about 0.1%.
   If a value in the range of 0~1023 is used, it is stopped by setting to 0 while rotating to CCW direction.
   If a value in the range of 1024~2047 is used, it is stopped by setting to 1024 while rotating to CW direction.
@@ -272,8 +272,8 @@ The range and the unit of the value may vary depending on the operation mode.
   For example, if it is set to 512, it means the output is controlled by 50% of the maximum output.
 
 ### <a name="torque-limit"></a>**Torque Limit**
-It is the value of the maximum torque limit.  
-0 to 1023 (0x3FF) is available, and the unit is about 0.1%.  
+It is the value of the maximum torque limit.
+0 to 1023 (0x3FF) is available, and the unit is about 0.1%.
 For example, if the value is 512, it is about 50%; that means only 50% of the maximum torque will be used.
 If the power is turned on, the value of Max Torque (Address 14, 15) is used as the initial value.
 
@@ -281,10 +281,10 @@ If the power is turned on, the value of Max Torque (Address 14, 15) is used as t
 {: .notice}
 
 ### <a name="present-position"></a>**Present Position**
-It is the current position value of Dynamixel.  
+It is the current position value of Dynamixel.
 The range of the value is 0~1023 (0x3FF), and the unit is 0.29 degree.
 
-![](/emanual/assets/images/dxl/dx_series_goal.png)  
+![](/emanual/assets/images/dxl/dx_series_goal.png)
 The picture above is the front view of Dynamixel.
 
 `Caution` If it is set to Wheel Mode, the value cannot be used to measure the moving distance and the rotation frequency.
@@ -298,11 +298,11 @@ If a value is in the rage of 1024~2047, it means that the motor rotates to the C
 That is, the 10th bit becomes the direction bit to control the direction, and 0 and 1024 are equal.
 The unit of this value varies depending on operation mode.
 
-+ Joint Mode  
++ Joint Mode
   The unit is about 0.111rpm.
   For example, if it is set to 300, it means that the motor is moving to the CCW direction at a rate of about 33.3rpm.
 
-+ Wheel Mode  
++ Wheel Mode
   The unit is about 0.1%.
   For example, if it is set to 512, it means that the torque is controlled by 50% of the maximum torque to the CCW direction.
 

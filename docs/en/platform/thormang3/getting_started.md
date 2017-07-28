@@ -49,7 +49,7 @@ This section explains how to configure the network for MPC(Motion PC) and PPC(Pe
 - WiFi Name (5G) : THORMANG-Sxx-5G (xx : number)
 - WiFi Password : 11111111
 
-#### AP in THORMANG3  
+#### AP in THORMANG3
 - Repeater Mode(Green light)
 
 
@@ -130,7 +130,7 @@ Above configuration has to be repeatedly done whenever a new terminal window is 
 1. Open the bash file with an editor to apply configuration.
     ```
     $ gedit ~/.bashrc
-    ```  
+    ```
 
 2. Append below contents at the end of the .bashrc file.
     ```
@@ -144,11 +144,11 @@ Above configuration has to be repeatedly done whenever a new terminal window is 
 
     # local ROS IP
     export ROS_IP=10.17.3.30
-    ```  
+    ```
 
 3. Use below command to apply modified configuration or open a new terminal window.
     ```
-    $ source ~/.bashrc  
+    $ source ~/.bashrc
     ```
 
 #### Example setting for OPC
