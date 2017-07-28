@@ -11,7 +11,7 @@ sidebar:
   nav: "ax-12w"
 ---
 
-![](/emanual/assets/images/dxl/x-series/ax-12w_product.jpg)
+![](/emanual/assets/images/dxl/ax-series/ax-12w_product.jpg)
 
 # [Specifications](#specifications)  
 
@@ -40,7 +40,7 @@ The Control Table is a structure of data implemented in the DYNAMIXEL. Users can
 The Control Table is a structure that consists of multiple Data fields to store status of the DYNAMIXEL or to control the DYNAMIXEL. Users can check current status of the DYNAMIXEL by reading a specific Data from the Control Table with Read Instruction Packets. WRITE Instruction Packets enable users to control the DYNAMIXEL by changing specific Data in the Control Table. The Address is a unique value when accessing a specific Data in the Control Table with Instruction Packets. In order to read or write data, users must designate a specific Address in the Instruction Packet. Please refer to [Protocol] for more details about Instruction Packets.
 
 `Note` Two's complement is applied for the negative value. For more information, please refer to [Two's complement] from Wikipedia.
-{: .notice}
+{: .notice--warning}
 
 ### [Area (EEPROM, RAM)](#area-eeprom-ram)
 The Control Table is divided into 2 Areas. Data in the RAM Area is reset to initial values when the DYNAMIXEL is turned on (Volatile). On the other hand, modified data in the EEPROM Area keeps their values even when the DYNAMIXEL is turned off (Non-Volatile). Data in the EEPROM Area can only be changed when the value of Torque Enable(64) is cleared to ‘0’.
@@ -182,7 +182,7 @@ It decides how to return Status Packet. There are three ways like the below tabl
 
 When Instruction Packet is Broadcast ID, Status Packet is not returned regardless of Status Return Level.
 
-### <a name="alarm-led"></a><a name="shutdown></a>**Alarm LED / Alarm Shutdown**
+### <a name="alarm-led"></a><a name="shutdown"></a>**Alarm LED / Alarm Shutdown**
 Dynamixel can protect itself by detecting errors occur during the operation.  
 The errors can be set are as the table below.
 
@@ -201,12 +201,14 @@ It is possible to make duplicate set since the function of each bit is run by  t
 If errors occur, in case of Alarm LED, the LED blinks; in case of Alarm Shutdown, the motor output becomes 0 % by making the value of Torque Limit(Address 34, 35) as 0.
 
 ### <a name="torque-enable"></a>**Torque Enable**
+
 | Value | Description     |
 | :------------- | :------------- |
 |0|Keeps Torque from generating by interrupting the power of motor|
 |1|Generates Torque by impressing the power to the motor.|
 
 ### <a name="led"></a>**LED**
+
 | Bit | Description     |
 | :------------- | :------------- |
 |0|Turn OFF the LED|
@@ -242,8 +244,8 @@ It is a position value of destination.
 0 to 1023 (0x3FF) is available.  The unit is 0.29 degree.
 If Goal Position is out of the range, Angle Limit Error Bit (Bit1) of Status Packet is returned as ‘1’ and Alarm is triggered as set in Alarm LED/Shutdown.
 
-![](/emanual/assets/image/dxl/dx_series_goal.png)
-<The picture above is the front view of Dynamixel>
+![](/emanual/assets/images/dxl/dx_series_goal.png)  
+The picture above is the front view of Dynamixel
 
 `Note` If it is set to Wheel Mode, this value is not used.
 {: .notice}
@@ -282,11 +284,11 @@ If the power is turned on, the value of Max Torque (Address 14, 15) is used as t
 It is the current position value of Dynamixel.  
 The range of the value is 0~1023 (0x3FF), and the unit is 0.29 degree.
 
-![](/emanual/assets/image/dxl/dx_series_goal.png)
-<The picture above is the front view of Dynamixel>
+![](/emanual/assets/images/dxl/dx_series_goal.png)  
+The picture above is the front view of Dynamixel.
 
 `Caution` If it is set to Wheel Mode, the value cannot be used to measure the moving distance and the rotation frequency.
-{: .warning}
+{: .notice--warning}
 
 ### <a name="present-speed"></a>**Present Speed**
 It is the current moving speed.
@@ -331,6 +333,7 @@ It is the internal temperature of Dynamixel in Celsius.
 Data value is identical to the actual temperature in Celsius. For example, if the data value is 85 (0x55), the current internal temperature is 85&deg;C.
 
 ### <a name="registered-instruction"></a>**Registered Instruction**
+
 | Value | Description     |
 | :------------- | :------------- |
 |0|There are no commands transmitted by REG_WRITE|
@@ -340,19 +343,21 @@ Data value is identical to the actual temperature in Celsius. For example, if th
 {: .notice}
 
 ### <a name="moving"></a>**Moving**
+
 |Value|Description|
 | :---| :---|
 |0|Goal position command execution is completed|
 |1|Goal position command execution is in progress|
 
 ### <a name="lock"></a>**Lock**
+
 |Value|Description|
 | :---| :---|
 |0|EEPROM area can be modified|
 |1|EEPROM area cannot be modified|
 
 `Caution` If Lock is set to 1, the power must be turned off and then turned on again to change into 0.
-{: .warning}
+{: .notice--warning}
 
 ### <a name="punch"></a>**Punch**
 Current to drive motor is at minimum.
@@ -376,5 +381,7 @@ Can choose vales from 0x20 to 0x3FF.
 
 ![](/emanual/assets/images/dxl/ax-series/ax-12w_dimension.png)
 
+
+[Two's complement]: #
 
 [Compatibility Guide]: http://en.robotis.com/BlueAD/board.php?bbs_id=faq&mode=view&bbs_no=47&page=1&key=&keyword=&sort=&scate=
