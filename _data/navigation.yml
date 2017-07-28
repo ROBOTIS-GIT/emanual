@@ -553,11 +553,6 @@ ax-12w:
     titlekr: "스펙"
     url: /dxl/ax/ax-12w/#specifications
     urlkr: /dxl/ax/ax-12w/#스펙
-    children:
-      - title: "Performance Graph"
-        titlekr: "성능 그래프"
-        url: /dxl/ax/ax-12w/#performance-graph
-        urlkr: /dxl/ax/ax-12w/#성능-그래프
   - title: "Control Table"
     titlekr: "컨트롤 테이블"
     url: /dxl/ax/ax-12w/#control-table

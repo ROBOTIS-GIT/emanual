@@ -109,8 +109,7 @@ Each data in the Control Table is restored to initial values when the DYNAMIXEL 
 
 ### <a name="id"></a>**ID (3)**  
  The ID is a unique value in the network to identify each DYNAMIXEL with an Instruction Packet.
- 0~252 (0xFC) values can be used as an ID, and 254(0xFE) is occupied as a broadcast ID. The Broadcast ID(254, 0xFE) can send an Instruction Packet to all connected DYNAMIXELs simultaneously.
-
+ 0~252 (0xFC) values can be used as an ID, and 254(0xFE) is occupied as a broadcast ID. The Broadcast ID(254, 0xFE) can send an Instruction Packet to all connected DYNAMIXELs simultaneously.  
  `Note` Please avoid using an identical ID for multiple DYNAMIXELs. You may face communication failure or may not be able to detect Dynamixels with an identical ID.
  {: .notice}
 
@@ -159,7 +158,7 @@ The wheel mode can be used to wheel-type operation robots since motors of the ro
 
 ### <a name="temperature-limit"></a>**The Highest Limit Temperature**
 `Caution` Do not set the temperature lower/higher than the default value. When the temperature alarm shutdown occurs, wait 20 minutes to cool the temperature before re-use. Using the product when the temperature is high may and can cause damage.
-{: .warning}
+{: .notice--warning}
 
 ### <a name="min-voltage-limit"></a><a name="max-voltage-limit"></a>**Min/Max Voltage Limit**
 It is the operation range of voltage.
@@ -254,16 +253,15 @@ The picture above is the front view of Dynamixel
 It is a moving speed to Goal Position.
 The range and the unit of the value may vary depending on the operation mode.
 
-+ Join Mode
++ Join Mode  
   0~1023 (0X3FF) can be used, and the unit is about 0.111rpm.
   If it is set to 0, it means the maximum rpm of the motor is used without controlling the speed.
   If it is 1023, it is about 114rpm.
-  For example, if it is set to 300, it is about 33.3 rpm.
-
+  For example, if it is set to 300, it is about 33.3 rpm.  
   `Note` Please check the maximum rpm of relevant model in Joint Mode.  Even if the motor is set to more than maximum rpm, it cannot generate the torque more than the maximum rpm.
   {: .notice}
 
-+ Wheel Mode
++ Wheel Mode  
   0~2047( 0X7FF) can be used, the unit is about 0.1%.
   If a value in the range of 0~1023 is used, it is stopped by setting to 0 while rotating to CCW direction.
   If a value in the range of 1024~2047 is used, it is stopped by setting to 1024 while rotating to CW direction.
@@ -285,8 +283,7 @@ It is the current position value of Dynamixel.
 The range of the value is 0~1023 (0x3FF), and the unit is 0.29 degree.
 
 ![](/emanual/assets/images/dxl/dx_series_goal.png)  
-The picture above is the front view of Dynamixel.
-
+The picture above is the front view of Dynamixel.  
 `Caution` If it is set to Wheel Mode, the value cannot be used to measure the moving distance and the rotation frequency.
 {: .notice--warning}
 
@@ -315,7 +312,7 @@ That is, the 10th bit becomes the direction bit to control the direction, and 10
 For example, the value is 512, it means the load is detected in the direction of CCW about 50% of the maximum torque.
 
 | Bit | 15 ~ 11  | 10 | 9 ~ 0|
-| :---- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| :----: | :---: | :---: | :---: |
 | Value | 0 | Load Direction | Data (Load Ratio)|
 
 `Note` CCW Load : Load Direction = 0, CW Load : Load Direction = 1
@@ -369,6 +366,10 @@ Can choose vales from 0x20 to 0x3FF.
 ![](/emanual/assets/images/dxl/ax-series/ax_series_frame_assembly_01.png)
 
 ![](/emanual/assets/images/dxl/ax-series/ax_series_frame_assembly_02.png)
+
+# [Maintenance](#maintenance)
+
+{% include dxl/horn_bearing_replacement.md %}
 
 # [Reference](#reference)
 
