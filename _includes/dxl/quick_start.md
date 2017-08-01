@@ -1,4 +1,4 @@
-`Note` Download [[Quick Start PDF]]  
+`Note` Download [[Quick Start PDF]]
 {: .notice}
 
 #### Prerequisites

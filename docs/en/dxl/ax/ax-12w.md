@@ -27,7 +27,7 @@ sidebar:
 | Operating Temperature | -5&deg;C ~ +70&deg;F |
 | Input Voltage | 9.0 ~ 12.0V (**Recommended : 11.1V**) |
 | Command Signal | Digital Packet |
-| Protocol Type | Half Duplex Asynchronous Serial Communication (8bit, 1stop, No Parity) |
+| Protocol Type | Half Duplex Asynchronous Serial Communication<br />(8bit, 1stop, No Parity) |
 | Physical Connection | TTL Level Multi Drop Bus(Daisy Chain Type Connector) |
 | ID | 0 ~ 253 |
 | Feedback | Position, Temperature, Load, Input Voltage, etc |
@@ -385,6 +385,7 @@ Can choose vales from 0x20 to 0x3FF.
 
 ![](/emanual/assets/images/dxl/ax/ax-12w_dimension.png)
 
+{% include dxl/485_ttl_connection.md %}
 
 [Two's complement]: #
 

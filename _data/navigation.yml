@@ -12,8 +12,10 @@ main:
         url: /dxl/ax/ax-12w/
       - title: "AX-12/12+/12A"
         titlekr: "AX-12/12+/12A"
+        url: /dxl/ax/ax-12a/
       - title: "AX-18F/18A"
         titlekr: "AX-18F/18A"
+        url: /dxl/ax/ax-18a/
     - title: "EX Series"
       titlekr: "EX 시리즈"
       children:
@@ -609,6 +611,10 @@ ax-12w:
         titlekr: "도면"
         url: /dxl/ax/ax-12w/#drawings
         urlkr: /dxl/ax/ax-12w/#도면
+      - title: "Communication Circuit"
+        url: /dxl/ax/ax-12w/#communication-circuit
+      - title: "Pin Assignment"
+        url: /dxl/ax/ax-12w/#pin-assignment
 
 #AX-12A sidebar
 ax-12a:
@@ -672,6 +678,10 @@ ax-12a:
         titlekr: "도면"
         url: /dxl/ax/ax-12a/#drawings
         urlkr: /dxl/ax/ax-12a/#도면
+      - title: "Communication Circuit"
+        url: /dxl/ax/ax-12a/#communication-circuit
+      - title: "Pin Assignment"
+        url: /dxl/ax/ax-12a/#pin-assignment
 
 #AX-18A sidebar
 ax-18a:
@@ -735,6 +745,10 @@ ax-18a:
         titlekr: "도면"
         url: /dxl/ax/ax-18a/#drawings
         urlkr: /dxl/ax/ax-18a/#도면
+      - title: "Communication Circuit"
+        url: /dxl/ax/ax-18a/#communication-circuit
+      - title: "Pin Assignment"
+        url: /dxl/ax/ax-18a/#pin-assignment
 
 #XH430-W210 sidebar
 xh430-w210:

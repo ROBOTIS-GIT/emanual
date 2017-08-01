@@ -39,14 +39,14 @@ sidebar:
 #### ROS API
 
 + Launch Parameters
-  - gazebo (bool, default: false) : Configure whether to the program run in gazebo mode.
-  - gazebo_robot_name (string, default: "") : Configure the robot name for joint_state topic name when running in gazebo mode.
+  - **gazebo (bool, default: false)** : Configure whether to the program run in gazebo mode.
+  - **gazebo_robot_name (string, default: "")** : Configure the robot name for joint_state topic name when running in gazebo mode.
   ex) If thormang3 is the gazebo_robot_name, /thormang3/joint_states will be subscribed.
-  - offset_file_path (string, default: "") : This path indicates the location of the file that contains offset data of each joint and initial posture data for offset adjustment.
-  - robot_file_path (string, default: "") : This path indicates the location of .robot file that contains robot data.
-  - init_file_path (string, default: "") : This path indicates the location of the file that contains initialization information of each joint.
-  - ft_data_path (string, default: "") : This path indicates the location of the file that contains calibration matrix and unloaded voltage information of the FT sensor.
-  - ft_calibration_data_path (string, default: "") : This path indicates the location of the file that contains the reference value for FT sensor calibration.
+  - **offset_file_path (string, default: "")** : This path indicates the location of the file that contains offset data of each joint and initial posture data for offset adjustment.
+  - **robot_file_path (string, default: "")** : This path indicates the location of .robot file that contains robot data.
+  - **init_file_path (string, default: "")** : This path indicates the location of the file that contains initialization information of each joint.
+  - **ft_data_path (string, default: "")** : This path indicates the location of the file that contains calibration matrix and unloaded voltage information of the FT sensor.
+  - **ft_calibration_data_path (string, default: "")** : This path indicates the location of the file that contains the reference value for FT sensor calibration.
 
 
 ### [thormang3_kinematics_dynamics](#thormang3_kinematics_dynamics)
@@ -68,23 +68,23 @@ In `package.xml`,
 
 1. LinkData.cpp
 
-    + name : Joint name
-    + parent : Parent joint ID
-    + sibling : Sibling joint ID
-    + child : Child joint ID
-    + mass : Mass
-    + relative_position : Joint relative position (relative to parent)
-    + joint_axis : Joint axis vector (relative to parent)
-    + center_of_mass : Center of mass (Link Local)
-    + inertia : Moment of Inertia (Link Local)
-    + joint_limit_max : Joint upper limit
-    + joint_limit_min : Joint lower limit
-    + joint_angle : Joint angle
-    + joint_velocity : Joint velocity
-    + joint_acceleration : Joint acceleration
-    + position: Link position
-    + orientation : Link orientation
-    + transformation : Link transformation matrix
+  + name : Joint name
+  + parent : Parent joint ID
+  + sibling : Sibling joint ID
+  + child : Child joint ID
+  + mass : Mass
+  + relative_position : Joint relative position (relative to parent)
+  + joint_axis : Joint axis vector (relative to parent)
+  + center_of_mass : Center of mass (Link Local)
+  + inertia : Moment of Inertia (Link Local)
+  + joint_limit_max : Joint upper limit
+  + joint_limit_min : Joint lower limit
+  + joint_angle : Joint angle
+  + joint_velocity : Joint velocity
+  + joint_acceleration : Joint acceleration
+  + position: Link position
+  + orientation : Link orientation
+  + transformation : Link transformation matrix
 
 2. ThorMang3KinematicsDynamics.cpp
 
@@ -208,6 +208,7 @@ The motion file is edited with thormang3_action_editor
 #### ROS API
 
   - Subscribed Topics
+
     `/robotis/action/page_num`([std_msgs/Int32])
      The page number will be played.
      If user send a page number between 1 ~ 255, the page will be played.
@@ -218,10 +219,12 @@ The motion file is edited with thormang3_action_editor
      The page number and joint names will be played.
 
   - Published Topics
+
     `/robotis/status`([robotis_controller_msgs/StatusMsg])
      The message indicates status of the action_module.
 
   - Services
+
     `/robotis/action/is_running`([thormang3_action_module_msgs/IsRunning])
      The service that checks whether THORMANG3's action is being played or not.
 
@@ -230,6 +233,7 @@ The motion file is edited with thormang3_action_editor
 `thormang3_base_module` is a module for initial posture. This module is included in thormang3_manager as a library.
 
 - Download & Build
+
   `Note` Reference : [MPC Installation]
   {: .notice}
 
@@ -241,10 +245,12 @@ The motion file is edited with thormang3_action_editor
 #### ROS API
 
   - Subscribed Topics
+
     `/robotis/base/ini_pose`([std_msgs/String])
      A command to take the initial posture(This command is effective even when the base module is inactive).
 
   - Published Topics
+
     `/robotis/enable_ctrl_module`([std_msgs/String])
      A base_module activation topic to take the initial posture.
 
@@ -257,12 +263,14 @@ The motion file is edited with thormang3_action_editor
 THORMANG3 manipulation module for the upper body.
 
 - Download & Build
+
   `Note` Reference : [MPC Installation]
   {: .notice}
 
 #### ROS API
 
   - Subscribed Topics
+
     `/robotis/manipulation/ini_pose_msg` (std_msgs/String)
      A message to take the initial posture.
 
@@ -273,10 +281,12 @@ THORMANG3 manipulation module for the upper body.
      A message to move to the target pose in the Task Space.
 
   - Published Topics
+
     `/robotis/status` (robotis_controller_msgs/StatusMsg)
      A status message of THORMANG3
 
   - Services
+
     `/robotis/manipulation/get_joint_pose` (thormang3_manipulation_module_msgs/GetJointPose)
      A service that reads the pose of specific joint.
 
@@ -293,29 +303,35 @@ THROMANG3 can be controlled with Topics and Services.
 Users can designate almost all Step Parameters.(thormang3_walking_module_msgs/StepData)
 
 1. Pattern Generation
+
     thormang3_walking_module includes online walking pattern generator.
     The pattern is generated from Foot Step Data input.
     ![](/emanual/assets/images/platform/thormang3/thormang3_walking_module_algorithm_diagram.jpg)
 
 2. Balance Algorithm
+
     The balance algorithm is included as shown below.(thormang3_walking_module_msgs/BalanceParam)
     ![](/emanual/assets/images/platform/thormang3/thormang3_walking_module_balance_diagram.jpg)
 
 - Download & Build
+
   `Note` Reference : [MPC Installation]
   {: .notice}
 
 #### ROS API
 
   - Subscribed Topics
+
     `/robotis/sensor/imu/imu` (sensor_msgs/Imu)
    Current data of the IMU Sensor
 
   - Published Topics
+
     `/robotis/status`(robotis_controller_msgs/StatusMsg)
    Status message of THORMANG3
 
   - Services
+
     `/robotis/walking/get_reference_step_data`(thormang3_walking_module_msgs/GetReferenceStrpData)
    A service that collects current location of THORMANG3 in the Global from the Walking Module.
 
@@ -340,6 +356,7 @@ Users can designate almost all Step Parameters.(thormang3_walking_module_msgs/St
 This module is to control the head. This module is included in the Thormang3 Manager as a library.
 
 - Download & Build
+
   `Note` Reference : [MPC Installation]
   {: .notice}
 
@@ -349,6 +366,7 @@ This module is to control the head. This module is included in the Thormang3 Man
 #### ROS API
 
 - Subscribed Topics
+
     `/robotis/head_control/move_lidar`(std_msgs/String)
      The command moves the head in order to obtain Lidar data.
 
