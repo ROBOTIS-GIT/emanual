@@ -21,6 +21,7 @@ main:
       children:
       - title: "EX-106+"
         titlekr: "EX-106+"
+        url: /dxl/ex/ex-106+/
     - title: "DX Series"
       titlekr: "DX 시리즈"
       children:
