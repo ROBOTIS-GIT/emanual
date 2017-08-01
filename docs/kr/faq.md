@@ -130,6 +130,8 @@ sidebar:
 
 [image reference]: {{site.url}}/emanual/assets/images/dxl/x/xh430_w210_performance_graph.jpg
 
+## [동영상](#동영상)
+동영상 삽입은 유튜브 동영상을 기준으로 다음과 같이 작성합니다.
 
 ## [링크](#링크)
 링크 삽입은 아래와 같이 사용할 수 있습니다. 주소를 저장하는 레퍼런스는 문서의 가장 하단에 작성합니다.
