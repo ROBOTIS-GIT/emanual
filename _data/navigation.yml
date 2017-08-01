@@ -610,6 +610,132 @@ ax-12w:
         url: /dxl/ax/ax-12w/#drawings
         urlkr: /dxl/ax/ax-12w/#도면
 
+#AX-12A sidebar
+ax-12a:
+  - title: "Specifications"
+    titlekr: "스펙"
+    url: /dxl/ax/ax-12a/#specifications
+    urlkr: /dxl/ax/ax-12a/#스펙
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /dxl/ax/ax-12a/#control-table
+    urlkr: /dxl/ax/ax-12a/#컨트롤-테이블
+    children:
+      - title: "Control Table, Data, Address"
+        titlekr: "컨트롤 테이블, 데이터, 주소"
+        url: /dxl/ax/ax-12a/#control-table-data-address
+        urlkr: /dxl/ax/ax-12a/#컨트롤-테이블-데이터-주소
+        children:
+          - title: "Area(EEPROM, RAM)"
+            url: /dxl/ax/ax-12a/#area-eeprom-ram
+          - title: "Size"
+            url: /dxl/ax/ax-12a/#size
+          - title: "Access"
+            url: /dxl/ax/ax-12a/#access
+          - title: "Initial Value"
+            url: /dxl/ax/ax-12a/#initial-value
+      - title: "EEPROM Area"
+        titlekr: "EEPROM 영역"
+        url: /dxl/ax/ax-12a/#control-table-of-eeprom-area
+        urlkr: /dxl/ax/ax-12a/#eeprom-영역
+      - title: "RAM Area"
+        titlekr: "RAM 영역"
+        url: /dxl/ax/ax-12a/#control-table-of-ram-area
+        urlkr: /dxl/ax/ax-12a/#ram-영역
+      - title: "Control Table Description"
+        titlekr: "컨트롤 테이블 설명"
+        url: /dxl/ax/ax-12a/#control-table-description
+        urlkr: /dxl/ax/ax-12a/#컨트롤-테이블-설명
+  - title: "How to Assemble"
+    titlekr: "조립 예시"
+    url: /dxl/ax/ax-12a/#how-to-assemble
+    urlkr: /dxl/ax/ax-12a/#조립-예시
+  - title: "Maintenance"
+    titlekr: "유지보수"
+    url: /dxl/ax/ax-12a/#maintenance
+    urlkr: /dxl/ax/ax-12a/#유지보수
+    children:
+      - title: "Horn, Bearing"
+        titlekr: "혼, 베어링"
+        url: /dxl/ax/ax-12a/#horn-and-bearing-replacement
+        urlkr: /dxl/ax/ax-12a/#혼-베어링
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /dxl/ax/ax-12a/#reference
+    urlkr: /dxl/ax/ax-12a/#참고자료
+    children:
+      - title: "Quick Start"
+        titlekr: "퀵스타트"
+        url: /dxl/ax/ax-12a/#quick-start
+        urlkr: /dxl/ax/ax-12a/#퀵스타트
+      - title: "Drawings"
+        titlekr: "도면"
+        url: /dxl/ax/ax-12a/#drawings
+        urlkr: /dxl/ax/ax-12a/#도면
+
+#AX-18A sidebar
+ax-18a:
+  - title: "Specifications"
+    titlekr: "스펙"
+    url: /dxl/ax/ax-18a/#specifications
+    urlkr: /dxl/ax/ax-18a/#스펙
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /dxl/ax/ax-18a/#control-table
+    urlkr: /dxl/ax/ax-18a/#컨트롤-테이블
+    children:
+      - title: "Control Table, Data, Address"
+        titlekr: "컨트롤 테이블, 데이터, 주소"
+        url: /dxl/ax/ax-18a/#control-table-data-address
+        urlkr: /dxl/ax/ax-18a/#컨트롤-테이블-데이터-주소
+        children:
+          - title: "Area(EEPROM, RAM)"
+            url: /dxl/ax/ax-18a/#area-eeprom-ram
+          - title: "Size"
+            url: /dxl/ax/ax-18a/#size
+          - title: "Access"
+            url: /dxl/ax/ax-18a/#access
+          - title: "Initial Value"
+            url: /dxl/ax/ax-18a/#initial-value
+      - title: "EEPROM Area"
+        titlekr: "EEPROM 영역"
+        url: /dxl/ax/ax-18a/#control-table-of-eeprom-area
+        urlkr: /dxl/ax/ax-18a/#eeprom-영역
+      - title: "RAM Area"
+        titlekr: "RAM 영역"
+        url: /dxl/ax/ax-18a/#control-table-of-ram-area
+        urlkr: /dxl/ax/ax-18a/#ram-영역
+      - title: "Control Table Description"
+        titlekr: "컨트롤 테이블 설명"
+        url: /dxl/ax/ax-18a/#control-table-description
+        urlkr: /dxl/ax/ax-18a/#컨트롤-테이블-설명
+  - title: "How to Assemble"
+    titlekr: "조립 예시"
+    url: /dxl/ax/ax-18a/#how-to-assemble
+    urlkr: /dxl/ax/ax-18a/#조립-예시
+  - title: "Maintenance"
+    titlekr: "유지보수"
+    url: /dxl/ax/ax-18a/#maintenance
+    urlkr: /dxl/ax/ax-18a/#유지보수
+    children:
+      - title: "Horn, Bearing"
+        titlekr: "혼, 베어링"
+        url: /dxl/ax/ax-18a/#horn-and-bearing-replacement
+        urlkr: /dxl/ax/ax-18a/#혼-베어링
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /dxl/ax/ax-18a/#reference
+    urlkr: /dxl/ax/ax-18a/#참고자료
+    children:
+      - title: "Quick Start"
+        titlekr: "퀵스타트"
+        url: /dxl/ax/ax-18a/#quick-start
+        urlkr: /dxl/ax/ax-18a/#퀵스타트
+      - title: "Drawings"
+        titlekr: "도면"
+        url: /dxl/ax/ax-18a/#drawings
+        urlkr: /dxl/ax/ax-18a/#도면
+
 #XH430-W210 sidebar
 xh430-w210:
   - title: "Specifications"
