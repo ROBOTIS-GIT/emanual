@@ -289,6 +289,7 @@ main:
         titlekr: "로보플러스 매니저 2.0"
         titlejp: "R+ Manager 2.0"
         titlecn: "R+ Manager 2.0"
+        urlkr: /software/rplus2/manager/getting_started/
       - title: "R+ Motion 2.0"
         titlekr: "로보플러스 모션 2.0"
         titlejp: "R+ Motion 2.0"

@@ -11,6 +11,9 @@ sidebar:
   nav: "rplusmanager2"
 ---
 
+<div style="counter-reset: h1 3">
+</div>
+
 # [고급 기능](#고급-기능)
 
 ## [XM/XH 시리즈 사용전 준비](#xm-xh-시리즈-사용전-준비)
