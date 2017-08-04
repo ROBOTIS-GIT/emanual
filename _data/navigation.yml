@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # main links
 main:
   - title: "DYNAMIXEL"
@@ -2068,4 +2067,3 @@ faq:
         urlkr: /faq/#텍스트-효과
       - titlekr: "소스코드 입력"
         urlkr: /faq/#소스코드-입력
->>>>>>> contents
