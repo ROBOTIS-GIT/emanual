@@ -29,7 +29,7 @@
 
 
 
-<meta name="author" content="Your Name">
+<meta name="author" content="ROBOTIS">
 
 <meta property="og:locale" content="en">
 <meta property="og:site_name" content="ROBOTIS e-Manual">
@@ -128,8 +128,9 @@
         
           <a href="http://localhost:4000/emanual/docs/kr/platform/thormang3/getting_started/" class="kr" style="color: #134268;padding-right:10px;">[kr]</a>
         
-        <form method="get" style="margin:0 0 0 0; position:absolute; right:0; width:30%;">
-          <input type="text" id="tipue_search_input" name="q" placeholder="Search" style="padding:0 10px; margin-bottom:0;">
+
+        <form method="get" id="site_search" style="margin:0 0 0 0; position:absolute; right:0; width:30%;">
+          <input type="text" id="search_box" name="query" placeholder="Search" style="padding:0 10px; margin-bottom:0;">
         </form>
       </nav>
     </div>
@@ -1689,9 +1690,16 @@
         </div>
       
     </div>
+    <div>
+      <ul id="search_results"></ul>
+    </div>
 
   </div>
 </div>
+
+<script src="/emanual/assets/js/lunr.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="/emanual/assets/js/search.js"></script>
 
 
     

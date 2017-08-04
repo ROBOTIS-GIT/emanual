@@ -28,6 +28,6 @@ header:
 `Note` [[ROBOTIS ROS Package Install]]
 {: .notice}
 
-[DYNAMIXEL Control Table]: /docs/en/dxl/x/xh430-w210/#control-table
+[DYNAMIXEL Control Table]: /emanual/docs/en/dxl/x/xh430-w210/#control-table
 
 [ROBOTIS ROS Package Install]: /emanual/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3-ros-packages

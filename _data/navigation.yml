@@ -1024,6 +1024,8 @@ faq:
         urlkr: /faq/#표
       - titlekr: "그림"
         urlkr: /faq/#그림
+      - titlekr: "동영상"
+        urlkr: /faq/#동영상
       - titlekr: "링크"
         urlkr: /faq/#링크
       - titlekr: "텍스트 효과"

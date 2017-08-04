@@ -42,11 +42,11 @@ sidebar:
 ## [다단계 목록](#다단계-목록)
 
 - 번호 없는 목록과
-  - 하위 항목을 만들 수 있으며  
+  - 하위 항목을 만들 수 있으며
 
-1. 번호를 만들어서 사용할 수도 있고  
-  - 번호 목록의 하위에 번호없는 목록을 섞어서 사용할수도 있다.  
-    - 하위항목을 만들 때에는 반드시 두칸 이상 들여쓰기를 해야한다.  
+1. 번호를 만들어서 사용할 수도 있고
+  - 번호 목록의 하위에 번호없는 목록을 섞어서 사용할수도 있다.
+    - 하위항목을 만들 때에는 반드시 두칸 이상 들여쓰기를 해야한다.
 
 ```
 - 번호 없는 목록과
@@ -98,10 +98,10 @@ sidebar:
 
 ## [표](#표)
 아래의 예제를 보시기 바랍니다.
-각 셀은 '|'로 구분되며 줄을 맞추지 않아도 됩니다.  
-항목 줄은 표 내용과 | :----------- |로 구분됩니다.  
-셀 병합기능이 없기 때문에 사용에 다소 불편함이 있을 수 있습니다.  
-한칸에 여러줄을 입력하려면 <pre><br /></pre>태그를 이용할 수 있습니다.  
+각 셀은 '|'로 구분되며 줄을 맞추지 않아도 됩니다.
+항목 줄은 표 내용과 | :----------- |로 구분됩니다.
+셀 병합기능이 없기 때문에 사용에 다소 불편함이 있을 수 있습니다.
+한칸에 여러줄을 입력하려면 <pre><br /></pre>태그를 이용할 수 있습니다.
 표의 시작과 끝에는 반드시 한줄의 공백이 있어야 합니다.
 
 ```
@@ -131,7 +131,13 @@ sidebar:
 [image reference]: {{site.url}}/emanual/assets/images/dxl/x/xh430_w210_performance_graph.jpg
 
 ## [동영상](#동영상)
-동영상 삽입은 유튜브 동영상을 기준으로 다음과 같이 작성합니다.
+동영상 삽입은 유튜브 동영상을 기준으로 아래의 코드를 복사한 후 src의 동영상 주소만 변경해서 작성합니다.
+
+```html
+<iframe width="640" height="360" src="https://www.youtube.com/embed/rvm-m2ogrLA" frameborder="0" allowfullscreen=""></iframe>
+```
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/rvm-m2ogrLA" frameborder="0" allowfullscreen=""></iframe>
 
 ## [링크](#링크)
 링크 삽입은 아래와 같이 사용할 수 있습니다. 주소를 저장하는 레퍼런스는 문서의 가장 하단에 작성합니다.
@@ -140,7 +146,7 @@ sidebar:
 
 [link reference]: {{site.url}}/emanual/docs/kr/faq
 
-```
+```text
 [컨텐츠 작성방법][Contents Format]
 [Contents Format]: {{site.url}}/emanual/docs/kr/faq
 ```
@@ -158,27 +164,27 @@ sidebar:
 - 1번 방법
 
   ```c++
-  find_package( thormang3_kinematics_dynamics )   
-  target_link_libraries( thormang3_kinematics_dynamics )   
+  find_package( thormang3_kinematics_dynamics )
+  target_link_libraries( thormang3_kinematics_dynamics )
   ```
 
 <pre>
-  ```c++  
-  find_package( thormang3_kinematics_dynamics )   
-  target_link_libraries( thormang3_kinematics_dynamics )   
+  ```c++
+  find_package( thormang3_kinematics_dynamics )
+  target_link_libraries( thormang3_kinematics_dynamics )
   ```
 </pre>
 
 - 2번 방법
 
   ```
-  find_package( thormang3_kinematics_dynamics )   
-  target_link_libraries( thormang3_kinematics_dynamics )   
+  find_package( thormang3_kinematics_dynamics )
+  target_link_libraries( thormang3_kinematics_dynamics )
   ```
 
 <pre>
-  ```  
-  find_package( thormang3_kinematics_dynamics )   
-  target_link_libraries( thormang3_kinematics_dynamics )   
+  ```
+  find_package( thormang3_kinematics_dynamics )
+  target_link_libraries( thormang3_kinematics_dynamics )
   ```
 </pre>
