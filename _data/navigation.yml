@@ -885,13 +885,13 @@ rplusmanager2:
     urlkr: /software/rplus2/manager/getting_started/#고급-기능
     children:
     - titlekr: "XM/XH 시리즈 사용전 준비"
-      urlkr: /software/rplus2/manager/getting_started/#xh-xh-시리즈-사용전-준비
+      urlkr: /software/rplus2/manager/advanced/#xh-xh-시리즈-사용전-준비
     - titlekr: "컨트롤 아이템 값 변경"
-      urlkr: /software/rplus2/manager/getting_started/#컨트롤-아이템-값-변경
+      urlkr: /software/rplus2/manager/advanced/#컨트롤-아이템-값-변경
     - titlekr: "펌웨어 정보 확인"
-      urlkr: /software/rplus2/manager/getting_started/#펌웨어-정보-확인
+      urlkr: /software/rplus2/manager/advanced/#펌웨어-정보-확인
     - titlekr: "블루투스로 펌웨어 관리하기"
-      urlkr: /software/rplus2/manager/getting_started/#블루투스로-펌웨어-관리하기
+      urlkr: /software/rplus2/manager/advanced/#블루투스로-펌웨어-관리하기
 
 #CM-200 Controller sidebar
 cm-200:
