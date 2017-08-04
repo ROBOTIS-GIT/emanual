@@ -1179,10 +1179,12 @@ main:
         titlekr: "1단계 교육키트"
         titlejp: "Level 1"
         titlecn: "Level 1"
+        urlkr: /edu/dream/dream1-1/
       - title: "Level 2"
         titlekr: "2단계 교육키트"
         titlejp: "Level 2"
         titlecn: "Level 2"
+        urlkr: /edu/dream/dream1-2/
       - title: "Level 3"
         titlekr: "3단계 교육키트"
         titlejp: "Level 3"
@@ -1861,6 +1863,34 @@ xh430-w210:
         titlekr: "도면"
         url: /dxl/x/xh430-w210/#drawings
         urlkr: /dxl/x/xh430-w210/#도면
+
+#DreamI Level1 sidebar
+dream1-1:
+  - titlekr: "개요"
+    urlkr: /edu/dream/dream1-1/#개요
+  - titlekr: "부품 목록"
+    urlkr: /edu/dream/dream1-1/#부품-목록
+
+#DreamI Level2 sidebar
+dream1-2:
+  - titlekr: "개요"
+    urlkr: /edu/dream/dream1-2/#개요
+  - titlekr: "부품 목록"
+    urlkr: /edu/dream/dream1-2/#부품-목록
+  - titlekr: "작동하기"
+    urlkr: /edu/dream/dream1-2/#작동하기
+    children:
+      - titlekr: "작동방법"
+        urlkr: /edu/dream/dream1-2/#작동방법
+      - titlekr: "프로그램 선택방법"
+        urlkr: /edu/dream/dream1-2/#프로그램-선택방법
+  - titlekr: "교안예제"
+    urlkr: /edu/dream/dream1-2/#교안예제
+  - titlekr: "참고자료"
+    urlkr: /edu/dream/dream1-2/#참고자료
+    children:
+      - titlekr: "호환성"
+        urlkr: /edu/dream/dream1-2/#호환성
 
 #SmartIII Level2 sidebar
 smart3-2:
