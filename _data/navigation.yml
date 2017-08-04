@@ -834,20 +834,63 @@ dream1-2:
 #SmartIII Level2 sidebar
 smart3-2:
   - titlekr: "부품 목록"
-    url: /edu/smart/smart3-2/#부품-목록
+    urlkr: /edu/smart/smart3-2/#부품-목록
   - titlekr: "작동하기"
-    url: /edu/smart/smart3-2/#작동하기
+    urlkr: /edu/smart/smart3-2/#작동하기
     children:
       - titlekr: "R+ Smart 3 설치"
-        url: /edu/smart/smart3-2/#r-smartiii-설치하기
+        urlkr: /edu/smart/smart3-2/#r-smartiii-설치하기
       - titlekr: "R+ m.Task 2.0 설치"
-        url: /edu/smart/smart3-2/#r-mtask-20-설치하기
+        urlkr: /edu/smart/smart3-2/#r-mtask-20-설치하기
       - titlekr: "모션파일 다운로드"
-        url: /edu/smart/smart3-2/#모션파일-다운로드
+        urlkr: /edu/smart/smart3-2/#모션파일-다운로드
       - titlekr: "블루투스 연결"
-        url: /edu/smart/smart3-2/#블루투스-연결하기
+        urlkr: /edu/smart/smart3-2/#블루투스-연결하기
   - titlekr: "교안예제"
-    url: /edu/smart/smart3-2/#교안예제
+    urlkr: /edu/smart/smart3-2/#교안예제
+
+#R+ Manager 2.0 sidebar
+rplusmanager2:
+  - titlekr: "개요"
+    urlkr: /software/rplus2/manager/geting_started/#개요
+    children:
+    - titlekr: "로보플러스 매니저 2.0"
+      urlkr: /software/rplus2/manager/getting_started/#로보플러스-매니저-20
+    - titlekr: "사용전 주의사항"
+      urlkr: /software/rplus2/manager/getting_started/#사용전-주의사항
+    - titlekr: "펌웨어 정의"
+      urlkr: /software/rplus2/manager/getting_started/#펌웨어-정의
+  - titlekr: "메뉴 설명"
+    urlkr: /software/rplus2/manager/getting_started/#메뉴-설명
+    children:
+    - titlekr: "단계별 편집 탭"
+      urlkr: /software/rplus2/manager/getting_started/#단계별-편집-탭
+    - titlekr: "홈 탭"
+      urlkr: /software/rplus2/manager/getting_started/#홈-탭
+    - titlekr: "관리-탭"
+      urlkr: /software/rplus2/manager/getting_started/#관리-탭
+    - titlekr: "터미널-탭"
+      urlkr: /software/rplus2/manager/getting_started/#터미널-탭
+  - titlekr: "기본 기능"
+    urlkr: /software/rplus2/manager/getting_started/#기본-기능
+    children:
+    - titlekr: "펌웨어 업데이트"
+      urlkr: /software/rplus2/manager/getting_started/#펌웨어-업데이트
+    - titlekr: "컨트롤 테이블 테스트"
+      urlkr: /software/rplus2/manager/getting_started/#컨트롤-테이블-테스트
+    - titlekr: "펌웨어 복구"
+      urlkr: /software/rplus2/manager/getting_started/#펌웨어-복구
+  - titlekr: "고급 기능"
+    urlkr: /software/rplus2/manager/getting_started/#고급-기능
+    children:
+    - titlekr: "XM/XH 시리즈 사용전 준비"
+      urlkr: /software/rplus2/manager/getting_started/#xh-xh-시리즈-사용전-준비
+    - titlekr: "컨트롤 아이템 값 변경"
+      urlkr: /software/rplus2/manager/getting_started/#컨트롤-아이템-값-변경
+    - titlekr: "펌웨어 정보 확인"
+      urlkr: /software/rplus2/manager/getting_started/#펌웨어-정보-확인
+    - titlekr: "블루투스로 펌웨어 관리하기"
+      urlkr: /software/rplus2/manager/getting_started/#블루투스로-펌웨어-관리하기
 
 #CM-200 Controller sidebar
 cm-200:
