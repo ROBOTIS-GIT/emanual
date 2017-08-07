@@ -629,7 +629,7 @@ gr: &DEFAULT_GR
   pagination_next            : "Επόμενo"
   breadcrumb_home_label      : "Κεντρική"
   breadcrumb_separator       : "/"
-  menu_label                 : 
+  menu_label                 :
   toc_label                  : "Πίνακας Περιεχομένων"
   ext_link_label             : "Εξωτερικός Σύνδεσμος"
   less_than                  : "Λιγότερο από"
