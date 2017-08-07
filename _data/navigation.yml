@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # main links
 main:
   - title: "DYNAMIXEL"
@@ -1080,3 +1081,1085 @@ faq:
         urlkr: /faq/#텍스트-효과
       - titlekr: "소스코드 입력"
         urlkr: /faq/#소스코드-입력
+=======
+# main links
+main:
+  - title: "DYNAMIXEL"
+    titlekr: "다이나믹셀"
+    titlejp: "ダイナミックセル"
+    children:
+    - title: "AX Series"
+      titlekr: "AX 시리즈"
+      children:
+      - title: "AX-12W"
+        titlekr: "AX-12W"
+        url: /dxl/ax/ax-12w/
+      - title: "AX-12/12+/12A"
+        titlekr: "AX-12/12+/12A"
+        url: /dxl/ax/ax-12a/
+      - title: "AX-18F/18A"
+        titlekr: "AX-18F/18A"
+        url: /dxl/ax/ax-18a/
+    - title: "EX Series"
+      titlekr: "EX 시리즈"
+      children:
+      - title: "EX-106+"
+        titlekr: "EX-106+"
+        url: /dxl/ex/ex-106+/
+    - title: "DX Series"
+      titlekr: "DX 시리즈"
+      children:
+      - title: "DX-113"
+        titlekr: "DX-113"
+      - title: "DX-116"
+        titlekr: "DX-116"
+      - title: "DX-117"
+        titlekr: "DX-117"
+    - title: "RX Series"
+      titlekr: "RX 시리즈"
+      children:
+      - title: "RX-10"
+        titlekr: "RX-10"
+      - title: "RX-24F"
+        titlekr: "RX-24F"
+      - title: "RX-28"
+        titlekr: "RX-28"
+      - title: "RX-64"
+        titlekr: "RX-64"
+    - title: "MX Series"
+      titlekr: "MX 시리즈"
+      titlejp: "MX シリーズ"
+      titlecn: "MX 系列"
+      children:
+      - title: "MX-12W"
+        titlekr: "MX-12W"
+      - title: "MX-28T/R/AT/AR"
+        titlekr: "MX-28T/R/AT/AR"
+      - title: "MX-64T/R/AT/AR"
+        titlekr: "MX-64T/R/AT/AR"
+      - title: "MX-106T/R"
+        titlekr: "MX-106T/R"
+    - title: "X Series"
+      titlekr: "X 시리즈"
+      titlejp: "X シリーズ"
+      titlecn: "X 系列"
+      children:
+      - title: "XL320"
+        titlekr: "XL320"
+      - title: "XL430-W250"
+        titlekr: "XL430-W250"
+      - title: "XM430-W210"
+        titlekr: "XM430-W210"
+      - title: "XM430-W350"
+        titlekr: "XM430-W350"
+      - title: "XH430-W210"
+        titlekr: "XH430-W210"
+        url: /dxl/x/xh430-w210/
+        urlkr: /dxl/x/xh430-w210/
+      - title: "XH430-W350"
+        titlekr: "XH430-W350"
+      - title: "XH430-V210"
+        titlekr: "XH430-V210"
+      - title: "XH430-V350"
+        titlekr: "XH430-V350"
+    - title: "PRO Series"
+      titlekr: "PRO 시리즈"
+      titlejp: "PRO シリーズ"
+      titlecn: "PRO 系列"
+  - title: "PLATFORM"
+    titlekr: "플랫폼"
+    titlejp: "プラットフォーム"
+    titlecn: "平台"
+    children:
+    - title: "OP"
+      titlekr: "OP"
+    - title: "OP2"
+      titlekr: "OP2"
+    - title: "OP3"
+      titlekr: "OP3"
+      titlejp: "OP3"
+      titlecn: "OP3"
+    - title: "Hand RX28"
+      titlekr: "Hand RX28"
+    - title: "Hand MX28"
+      titlekr: "Hand MX28"
+    - title: "Manipulator-H"
+      titlekr: "Manipulator-H"
+      titlejp: "Manipulator-H"
+      titlecn: "Manipulator-H"
+    - title: "Thormang3"
+      titlekr: "똘망3"
+      titlejp: "Thormang3"
+      titlecn: "Thormang3"
+      url: /platform/thormang3/getting_started/
+    - title: "TurtleBot3"
+      titlekr: "터틀봇3"
+      titlejp: "TurtleBot3"
+      titlecn: "TurtleBot3"
+  - title: "EDUCATION"
+    titlekr: "교육키트"
+    titlejp: "トレーニングキット"
+    titlecn: "培训工具包"
+    children:
+    - title: "OLLO"
+      titlekr: "올로"
+      titlejp: "OLLO"
+      titlecn: "OLLO"
+      children:
+      - title: "Bug Kit"
+        titlekr: "버그 키트"
+        titlejp: "Bug Kit"
+        titlecn: "Bug Kit"
+      - title: "Level 2 Kit"
+        titlekr: "2단계 교육키트"
+        titlejp: "Level 2 Kit"
+        titlecn: "Level 2 Kit"
+      - title: "Level 3 Kit"
+        titlekr: "3단계 교육키트"
+        titlejp: "Level 3 Kit"
+        titlecn: "Level 3 Kit"
+      - title: "Level 4 Kit"
+        titlekr: "4단계 교육키트"
+        titlejp: "Level 4 Kit"
+        titlecn: "Level 4 Kit"
+    - title: "Dream I"
+      titlekr: "드림 I"
+      children:
+      - title: "Level 1"
+        titlekr: "1단계 교육키트"
+        titlejp: "Level 1"
+        titlecn: "Level 1"
+        urlkr: /edu/dream/dream1-1/
+      - title: "Level 2"
+        titlekr: "2단계 교육키트"
+        titlejp: "Level 2"
+        titlecn: "Level 2"
+        urlkr: /edu/dream/dream1-2/
+      - title: "Level 3"
+        titlekr: "3단계 교육키트"
+        titlejp: "Level 3"
+        titlecn: "Level 3"
+      - title: "Level 4"
+        titlekr: "4단계 교육키트"
+        titlejp: "Level 4"
+        titlecn: "Level 4"
+    - title: "Dream II"
+      titlekr: "드림 II"
+      children:
+      - title: "Level 1"
+        titlekr: "1단계 교육키트"
+        titlejp: "Level 1"
+        titlecn: "Level 1"
+      - title: "Level 2"
+        titlekr: "2단계 교육키트"
+        titlejp: "Level 2"
+        titlecn: "Level 2"
+      - title: "Level 3"
+        titlekr: "3단계 교육키트"
+        titlejp: "Level 3"
+        titlecn: "Level 3"
+    - titlekr: "스마트 I"
+      children:
+      - titlekr: "1단계 교육키트"
+      - titlekr: "2단계 교육키트"
+      - titlekr: "3단계 교육키트"
+    - titlekr: "스마트 II"
+      children:
+      - titlekr: "1단계 교육키트"
+      - titlekr: "2단계 교육키트"
+      - titlekr: "3단계 교육키트"
+    - titlekr: "스마트 III"
+      children:
+      - titlekr: "1단계 교육키트"
+      - titlekr: "2단계 교육키트"
+        urlkr: /edu/smart/smart3-2/
+    - title: "IoT"
+      titlekr: "IoT"
+      children:
+      - title: "Level 1"
+        titlekr: "1단계 교육키트"
+        titlejp: "Level 1"
+        titlecn: "Level 1"
+      - title: "Level 2"
+        titlekr: "2단계 교육키트"
+        titlejp: "Level 2"
+        titlecn: "Level 2"
+    - title: "Bioloid"
+      titlekr: "바이올로이드"
+      titlejp: "Bioloid"
+      titlecn: "Bioloid"
+      children:
+      - title: "Entry Level"
+        titlekr: "초급"
+        titlejp: "Entry Level"
+        titlecn: "Entry Level"
+      - title: "Advanced Level"
+        titlekr: "종합"
+        titlejp: "Advanced Level"
+        titlecn: "Advanced Level"
+      - title: "STEM Kit"
+        titlekr: "STEM 키트"
+        titlejp: "STEM Kit"
+        titlecn: "STEM Kit"
+      - title: "STEM Academy"
+        titlekr: "STEM 아카데미"
+        titlejp: "STEM Academy"
+        titlecn: "STEM Academy"
+      - title: "Premium"
+        titlekr: "프리미엄"
+        titlejp: "Premium"
+        titlecn: "Premium"
+      - title: "GP"
+        titlekr: "GP"
+        titlejp: "GP"
+        titlecn: "GP"
+    - title: "MINI"
+      titlekr: "미니"
+  - title: "SOFTWARE"
+    titlekr: "소프트웨어"
+    titlejp: "ソフトウェア"
+    titlecn: "软件"
+    children:
+    - title: "Mobile Apps"
+      titlekr: "모바일 앱"
+      children:
+      - title: "R+ SMART"
+        titlekr: "R+ SMART"
+        titlejp: "R+ SMART"
+        titlecn: "R+ SMART"
+      - title: "R+ IoT"
+        titlekr: "R+ IoT"
+        titlejp: "R+ IoT"
+        titlecn: "R+ IoT"
+      - title: "ROBOTIS MINI"
+        titlekr: "ROBOTIS MINI"
+        titlejp: "ROBOTIS MINI"
+        titlecn: "ROBOTIS MINI"
+    - title: "R+ 1.0"
+      titlekr: "R+ 1.0"
+      titlejp: "R+ 1.0"
+      titlecn: "R+ 1.0"
+      children:
+      - title: "R+ Task"
+        titlekr: "로보플러스 태스크"
+        titlejp: "R+ Task"
+        titlecn: "R+ Task"
+      - title: "R+ Manager"
+        titlekr: "로보플러스 매니저"
+        titlejp: "R+ Manager"
+        titlecn: "R+ Manager"
+      - title: "R+ Motion"
+        titlekr: "로보플러스 모션"
+        titlejp: "R+ Motion"
+        titlecn: "R+ Motion"
+      - title: "R+ Design"
+        titlekr: "로보플러스 디자인"
+        titlejp: "R+ Design"
+        titlecn: "R+ Design"
+      - title: "R+ Wizard"
+        titlekr: "로보플러스 위자드"
+        titlejp: "R+ Wizard"
+        titlecn: "R+ Wizard"
+    - title: "R+ 2.0"
+      titlekr: "R+ 2.0"
+      titlejp: "R+ 2.0"
+      titlecn: "R+ 2.0"
+      children:
+      - title: "R+ Task 2.0"
+        titlekr: "로보플러스 태스크 2.0"
+        titlejp: "R+ Task 2.0"
+        titlecn: "R+ Task 2.0"
+      - title: "R+ Manager 2.0"
+        titlekr: "로보플러스 매니저 2.0"
+        titlejp: "R+ Manager 2.0"
+        titlecn: "R+ Manager 2.0"
+        urlkr: /software/rplus2/manager/getting_started/
+      - title: "R+ Motion 2.0"
+        titlekr: "로보플러스 모션 2.0"
+        titlejp: "R+ Motion 2.0"
+        titlecn: "R+ Motion 2.0"
+      - title: "R+ Design 2.0"
+        titlekr: "로보플러스 디자인 2.0"
+        titlejp: "R+ Design 2.0"
+        titlecn: "R+ Design 2.0"
+      - title: "R+ Scratch"
+        titlekr: "로보플러스 스크래치"
+        titlejp: "R+ Scratch"
+        titlecn: "R+ Scratch"
+    - title: "R+ Mobile"
+      titlekr: "R+ 모바일"
+      children:
+      - title: "R+ m.Task"
+        titlekr: "R+ m.Task"
+        titlejp: "R+ m.Task"
+        titlecn: "R+ m.Task"
+      - title: "R+ m.Task 2.0"
+        titlekr: "R+ m.Task 2.0"
+        titlejp: "R+ m.Task 2.0"
+        titlecn: "R+ m.Task 2.0"
+      - title: "R+ m.Motion 2.0"
+        titlekr: "R+ m.Motion 2.0"
+        titlejp: "R+ m.Motion 2.0"
+        titlecn: "R+ m.Motion 2.0"
+      - title: "R+ m.Design"
+        titlekr: "R+ m.Design"
+        titlejp: "R+ m.Design"
+        titlecn: "R+ m.Design"
+    - title: "SDK"
+      titlekr: "SDK"
+      titlejp: "SDK"
+      titlecn: "SDK"
+      children:
+      - title: "Embedded C"
+        titlekr: "제어기 펌웨어 개발"
+        titlejp: "Embedded C"
+        titlecn: "Embedded C"
+      - title: "DYNAMIXEL SDK"
+        titlekr: "다이나믹셀 제어"
+        titlejp: "DYNAMIXEL SDK"
+        titlecn: "DYNAMIXEL SDK"
+      - title: "Wireless SDK"
+        titlekr: "무선 제어"
+        titlejp: "Wireless SDK"
+        titlecn: "Wireless SDK"
+    - title: "OpenCM IDE"
+      titlekr: "OpenCM IDE"
+  - title: "PARTS"
+    titlekr: "부품"
+    titlejp: "部品"
+    titlecn: "部分"
+    children:
+    - title: "Controller"
+      titlekr: "제어기"
+      titlejp: "コントローラ"
+      titlecn: "控制器"
+      children:
+      - title: "CM-100A"
+        titlekr: "CM-100A"
+        titlejp: "CM-100A"
+        titlecn: "CM-100A"
+      - title: "CM-150"
+        titlekr: "CM-150"
+        titlejp: "CM-150"
+        titlecn: "CM-150"
+      - title: "CM-200"
+        titlekr: "CM-200"
+        titlejp: "CM-200"
+        titlecn: "CM-200"
+        url: /parts/controller/cm-200/
+        urlkr: /parts/controller/cm-200/
+      - title: "CM-5"
+        titlekr: "CM-5"
+        titlejp: "CM-5"
+        titlecn: "CM-5"
+      - title: "CM-510"
+        titlekr: "CM-510"
+        titlejp: "CM-510"
+        titlecn: "CM-510"
+      - title: "CM-530"
+        titlekr: "CM-530"
+        titlejp: "CM-530"
+        titlecn: "CM-530"
+      - title: "CM-700"
+        titlekr: "CM-700"
+        titlejp: "CM-700"
+        titlecn: "CM-700"
+      - title: "CM-900"
+        titlekr: "CM-900"
+        titlejp: "CM-900"
+        titlecn: "CM-900"
+      - title: "OpenCM"
+        titlekr: "OpenCM"
+        titlejp: "OpenCM"
+        titlecn: "OpenCM"
+      - title: "OpenCR"
+        titlekr: "OpenCR"
+        titlejp: "OpenCR"
+        titlecn: "OpenCR"
+    - title: "Communication"
+      titlekr: "통신"
+      titlejp: "通信"
+      titlecn: "沟通"
+      children:
+      - title: "RC-100A/100B"
+        titlekr: "RC-100A/100B"
+        titlejp: "RC-100A/100B"
+        titlecn: "RC-100A/100B"
+      - title: "ZIG-100/110A"
+        titlekr: "ZIG-100/110A"
+        titlejp: "ZIG-100/110A"
+        titlecn: "ZIG-100/110A"
+      - title: "BT-100/110A"
+        titlekr: "BT-100/110A"
+        titlejp: "BT-100/110A"
+        titlecn: "BT-100/110A"
+      - title: "BT-210"
+        titlekr: "BT-210"
+        titlejp: "BT-210"
+        titlecn: "BT-210"
+      - title: "BT-410"
+        titlekr: "BT-410"
+        titlejp: "BT-410"
+        titlecn: "BT-410"
+      - title: "ZIG2Serial"
+        titlekr: "ZIG2Serial"
+        titlejp: "ZIG2Serial"
+        titlecn: "ZIG2Serial"
+    - title: "Motors"
+      titlekr: "모터"
+      titlejp: "モーター"
+      titlecn: "马达"
+      children:
+      - title: "GM-10A"
+        titlekr: "GM-10A"
+        titlejp: "GM-10A"
+        titlecn: "GM-10A"
+      - title: "High Speed Geared Motor"
+        titlekr: "고속 감속 모터"
+        titlejp: "高速減速モーター"
+        titlecn: "高速齒輪馬達"
+      - title: "Low Speed Geared Motor"
+        titlekr: "저속 감속 모터"
+        titlejp: "低速減速モーター"
+        titlecn: "低速齒輪傳動馬達"
+      - title: "SM-10"
+        titlekr: "SM-10"
+        titlejp: "SM-10"
+        titlecn: "SM-10"
+    - title: "Interface"
+      titlekr: "인터페이스"
+      titlejp: "インターフェース"
+      titlecn: "接口"
+      children:
+      - title: "LN-101"
+        titlekr: "LN-101"
+        titlejp: "LN-101"
+        titlecn: "LN-101"
+      - title: "USB2DYNAMIXEL"
+        titlekr: "USB2DYNAMIXEL"
+        titlejp: "USB2DYNAMIXEL"
+        titlecn: "USB2DYNAMIXEL"
+    - title: "Sensors"
+      titlekr: "센서"
+      titlejp: "センサー"
+      titlecn: "传感器"
+      children:
+      - title: "IR Sensor"
+        titlekr: "적외선 센서"
+        titlejp: "赤外線センサー"
+        titlecn: "紅外傳感器"
+      - title: "Distance Sensor"
+        titlekr: "거리 측정 센서"
+        titlejp: "距離測定センサ"
+        titlecn: "距離測量傳感器"
+      - title: "Touch Sensor"
+        titlekr: "접촉 센서"
+        titlejp: "接触センサー"
+        titlecn: "聯繫傳感器"
+      - title: "Integrated Sensor"
+        titlekr: "통합 센서"
+        titlejp: "統合センサー"
+        titlecn: "集成傳感器"
+      - title: "Gyro Sensor"
+        titlekr: "자이로 센서"
+        titlejp: "ジャイロセンサー"
+        titlecn: "陀螺儀傳感器"
+      - title: "IR Array Sensor"
+        titlekr: "적외선 어레이 센서"
+        titlejp: "赤外線アレイセンサ"
+        titlecn: "紅外線陣列傳感器"
+      - title: "Color Sensor"
+        titlekr: "컬러 센서"
+        titlejp: "カラーセンサー"
+        titlecn: "顏色傳感器"
+      - title: "Magnetic Sensor"
+        titlekr: "자석 센서"
+        titlejp: "磁気センサー"
+        titlecn: "磁性傳感器"
+      - title: "Temperature Sensor"
+        titlekr: "온도 센서"
+        titlejp: "温度センサー"
+        titlecn: "溫度傳感器"
+      - title: "Motion Sensor"
+        titlekr: "동작감지 센서"
+        titlejp: "動作検知センサー"
+        titlecn: "運動傳感器"
+      - title: "Illuminance Sensor"
+        titlekr: "조도 센서"
+        titlejp: "照度センサ"
+        titlecn: "環境光傳感器"
+      - title: "Temp/Humid Sensor"
+        titlekr: "온습도 센서"
+        titlejp: "温度・湿度センサー"
+        titlecn: "溫度和濕度傳感器"
+    - title: "Display"
+      titlekr: "디스플레이"
+      titlejp: "ディスプレイ"
+      titlecn: "显示"
+      children:
+      - title: "LM-10"
+        titlekr: "LM-10"
+        titlejp: "LM-10"
+        titlecn: "LM-10"
+  - title: "FAQ"
+    titlekr: "FAQ"
+    titlejp: "FAQ"
+    titlecn: "FAQ"
+    url: /faq
+    urlkr: /faq
+    urljp: /fap
+    urlcn: /faq
+
+#AX-12W sidebar
+ax-12w:
+  - title: "Specifications"
+    titlekr: "스펙"
+    url: /dxl/ax/ax-12w/#specifications
+    urlkr: /dxl/ax/ax-12w/#스펙
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /dxl/ax/ax-12w/#control-table
+    urlkr: /dxl/ax/ax-12w/#컨트롤-테이블
+    children:
+      - title: "Control Table, Data, Address"
+        titlekr: "컨트롤 테이블, 데이터, 주소"
+        url: /dxl/ax/ax-12w/#control-table-data-address
+        urlkr: /dxl/ax/ax-12w/#컨트롤-테이블-데이터-주소
+        children:
+          - title: "Area(EEPROM, RAM)"
+            url: /dxl/ax/ax-12w/#area-eeprom-ram
+          - title: "Size"
+            url: /dxl/ax/ax-12w/#size
+          - title: "Access"
+            url: /dxl/ax/ax-12w/#access
+          - title: "Initial Value"
+            url: /dxl/ax/ax-12w/#initial-value
+      - title: "EEPROM Area"
+        titlekr: "EEPROM 영역"
+        url: /dxl/ax/ax-12w/#control-table-of-eeprom-area
+        urlkr: /dxl/ax/ax-12w/#eeprom-영역
+      - title: "RAM Area"
+        titlekr: "RAM 영역"
+        url: /dxl/ax/ax-12w/#control-table-of-ram-area
+        urlkr: /dxl/ax/ax-12w/#ram-영역
+      - title: "Control Table Description"
+        titlekr: "컨트롤 테이블 설명"
+        url: /dxl/ax/ax-12w/#control-table-description
+        urlkr: /dxl/ax/ax-12w/#컨트롤-테이블-설명
+  - title: "How to Assemble"
+    titlekr: "조립 예시"
+    url: /dxl/ax/ax-12w/#how-to-assemble
+    urlkr: /dxl/ax/ax-12w/#조립-예시
+  - title: "Maintenance"
+    titlekr: "유지보수"
+    url: /dxl/ax/ax-12w/#maintenance
+    urlkr: /dxl/ax/ax-12w/#유지보수
+    children:
+      - title: "Horn, Bearing"
+        titlekr: "혼, 베어링"
+        url: /dxl/ax/ax-12w/#horn-and-bearing-replacement
+        urlkr: /dxl/ax/ax-12w/#혼-베어링
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /dxl/ax/ax-12w/#reference
+    urlkr: /dxl/ax/ax-12w/#참고자료
+    children:
+      - title: "Quick Start"
+        titlekr: "퀵스타트"
+        url: /dxl/ax/ax-12w/#quick-start
+        urlkr: /dxl/ax/ax-12w/#퀵스타트
+      - title: "Drawings"
+        titlekr: "도면"
+        url: /dxl/ax/ax-12w/#drawings
+        urlkr: /dxl/ax/ax-12w/#도면
+      - title: "Communication Circuit"
+        url: /dxl/ax/ax-12w/#communication-circuit
+      - title: "Pin Assignment"
+        url: /dxl/ax/ax-12w/#pin-assignment
+
+#AX-12A sidebar
+ax-12a:
+  - title: "Specifications"
+    titlekr: "스펙"
+    url: /dxl/ax/ax-12a/#specifications
+    urlkr: /dxl/ax/ax-12a/#스펙
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /dxl/ax/ax-12a/#control-table
+    urlkr: /dxl/ax/ax-12a/#컨트롤-테이블
+    children:
+      - title: "Control Table, Data, Address"
+        titlekr: "컨트롤 테이블, 데이터, 주소"
+        url: /dxl/ax/ax-12a/#control-table-data-address
+        urlkr: /dxl/ax/ax-12a/#컨트롤-테이블-데이터-주소
+        children:
+          - title: "Area(EEPROM, RAM)"
+            url: /dxl/ax/ax-12a/#area-eeprom-ram
+          - title: "Size"
+            url: /dxl/ax/ax-12a/#size
+          - title: "Access"
+            url: /dxl/ax/ax-12a/#access
+          - title: "Initial Value"
+            url: /dxl/ax/ax-12a/#initial-value
+      - title: "EEPROM Area"
+        titlekr: "EEPROM 영역"
+        url: /dxl/ax/ax-12a/#control-table-of-eeprom-area
+        urlkr: /dxl/ax/ax-12a/#eeprom-영역
+      - title: "RAM Area"
+        titlekr: "RAM 영역"
+        url: /dxl/ax/ax-12a/#control-table-of-ram-area
+        urlkr: /dxl/ax/ax-12a/#ram-영역
+      - title: "Control Table Description"
+        titlekr: "컨트롤 테이블 설명"
+        url: /dxl/ax/ax-12a/#control-table-description
+        urlkr: /dxl/ax/ax-12a/#컨트롤-테이블-설명
+  - title: "How to Assemble"
+    titlekr: "조립 예시"
+    url: /dxl/ax/ax-12a/#how-to-assemble
+    urlkr: /dxl/ax/ax-12a/#조립-예시
+  - title: "Maintenance"
+    titlekr: "유지보수"
+    url: /dxl/ax/ax-12a/#maintenance
+    urlkr: /dxl/ax/ax-12a/#유지보수
+    children:
+      - title: "Horn, Bearing"
+        titlekr: "혼, 베어링"
+        url: /dxl/ax/ax-12a/#horn-and-bearing-replacement
+        urlkr: /dxl/ax/ax-12a/#혼-베어링
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /dxl/ax/ax-12a/#reference
+    urlkr: /dxl/ax/ax-12a/#참고자료
+    children:
+      - title: "Quick Start"
+        titlekr: "퀵스타트"
+        url: /dxl/ax/ax-12a/#quick-start
+        urlkr: /dxl/ax/ax-12a/#퀵스타트
+      - title: "Drawings"
+        titlekr: "도면"
+        url: /dxl/ax/ax-12a/#drawings
+        urlkr: /dxl/ax/ax-12a/#도면
+      - title: "Communication Circuit"
+        url: /dxl/ax/ax-12a/#communication-circuit
+      - title: "Pin Assignment"
+        url: /dxl/ax/ax-12a/#pin-assignment
+
+#AX-18A sidebar
+ax-18a:
+  - title: "Specifications"
+    titlekr: "스펙"
+    url: /dxl/ax/ax-18a/#specifications
+    urlkr: /dxl/ax/ax-18a/#스펙
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /dxl/ax/ax-18a/#control-table
+    urlkr: /dxl/ax/ax-18a/#컨트롤-테이블
+    children:
+      - title: "Control Table, Data, Address"
+        titlekr: "컨트롤 테이블, 데이터, 주소"
+        url: /dxl/ax/ax-18a/#control-table-data-address
+        urlkr: /dxl/ax/ax-18a/#컨트롤-테이블-데이터-주소
+        children:
+          - title: "Area(EEPROM, RAM)"
+            url: /dxl/ax/ax-18a/#area-eeprom-ram
+          - title: "Size"
+            url: /dxl/ax/ax-18a/#size
+          - title: "Access"
+            url: /dxl/ax/ax-18a/#access
+          - title: "Initial Value"
+            url: /dxl/ax/ax-18a/#initial-value
+      - title: "EEPROM Area"
+        titlekr: "EEPROM 영역"
+        url: /dxl/ax/ax-18a/#control-table-of-eeprom-area
+        urlkr: /dxl/ax/ax-18a/#eeprom-영역
+      - title: "RAM Area"
+        titlekr: "RAM 영역"
+        url: /dxl/ax/ax-18a/#control-table-of-ram-area
+        urlkr: /dxl/ax/ax-18a/#ram-영역
+      - title: "Control Table Description"
+        titlekr: "컨트롤 테이블 설명"
+        url: /dxl/ax/ax-18a/#control-table-description
+        urlkr: /dxl/ax/ax-18a/#컨트롤-테이블-설명
+  - title: "How to Assemble"
+    titlekr: "조립 예시"
+    url: /dxl/ax/ax-18a/#how-to-assemble
+    urlkr: /dxl/ax/ax-18a/#조립-예시
+  - title: "Maintenance"
+    titlekr: "유지보수"
+    url: /dxl/ax/ax-18a/#maintenance
+    urlkr: /dxl/ax/ax-18a/#유지보수
+    children:
+      - title: "Horn, Bearing"
+        titlekr: "혼, 베어링"
+        url: /dxl/ax/ax-18a/#horn-and-bearing-replacement
+        urlkr: /dxl/ax/ax-18a/#혼-베어링
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /dxl/ax/ax-18a/#reference
+    urlkr: /dxl/ax/ax-18a/#참고자료
+    children:
+      - title: "Quick Start"
+        titlekr: "퀵스타트"
+        url: /dxl/ax/ax-18a/#quick-start
+        urlkr: /dxl/ax/ax-18a/#퀵스타트
+      - title: "Drawings"
+        titlekr: "도면"
+        url: /dxl/ax/ax-18a/#drawings
+        urlkr: /dxl/ax/ax-18a/#도면
+      - title: "Communication Circuit"
+        url: /dxl/ax/ax-18a/#communication-circuit
+      - title: "Pin Assignment"
+        url: /dxl/ax/ax-18a/#pin-assignment
+
+#XH430-W210 sidebar
+xh430-w210:
+  - title: "Specifications"
+    titlekr: "스펙"
+    url: /dxl/x/xh430-w210/#specifications
+    urlkr: /dxl/x/xh430-w210/#스펙
+    children:
+      - title: "Performance Graph"
+        titlekr: "성능 그래프"
+        url: /dxl/x/xh430-w210/#performance-graph
+        urlkr: /dxl/x/xh430-w210/#성능-그래프
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /dxl/x/xh430-w210/#control-table
+    urlkr: /dxl/x/xh430-w210/#컨트롤-테이블
+    children:
+      - title: "Control Table, Data, Address"
+        titlekr: "컨트롤 테이블, 데이터, 주소"
+        url: /dxl/x/xh430-w210/#control-table-data-address
+        urlkr: /dxl/x/xh430-w210/#컨트롤-테이블-데이터-주소
+        children:
+          - title: "Area(EEPROM, RAM)"
+            url: /dxl/x/xh430-w210/#area-eeprom-ram
+          - title: "Size"
+            url: /dxl/x/xh430-w210/#size
+          - title: "Access"
+            url: /dxl/x/xh430-w210/#access
+          - title: "Initial Value"
+            url: /dxl/x/xh430-w210/#initial-value
+      - title: "EEPROM Area"
+        titlekr: "EEPROM 영역"
+        url: /dxl/x/xh430-w210/#control-table-of-eeprom-area
+        urlkr: /dxl/x/xh430-w210/#eeprom-영역
+      - title: "RAM Area"
+        titlekr: "RAM 영역"
+        url: /dxl/x/xh430-w210/#control-table-of-ram-area
+        urlkr: /dxl/x/xh430-w210/#ram-영역
+      - title: "Control Table Description"
+        titlekr: "컨트롤 테이블 설명"
+        url: /dxl/x/xh430-w210/#control-table-description
+        urlkr: /dxl/x/xh430-w210/#컨트롤-테이블-설명
+  - title: "How to Assemble"
+    titlekr: "조립 예시"
+    url: /dxl/x/xh430-w210/#how-to-assemble
+    urlkr: /dxl/x/xh430-w210/#조립-예시
+    children:
+      - title: "Wiring through Back Case"
+        titlekr: "배선 예시"
+        url: /dxl/x/xh430-w210/#wiring-through-back-case
+        urlkr: /dxl/x/xh430-w210/#배선-예시
+      - title: "Option Frame Assembly"
+        titlekr: "옵션프레임 조립"
+        url: /dxl/x/xh430-w210/#option-frame-assembly
+        urlkr: /dxl/x/xh430-w210/#옵션프레임-조립
+  - title: "Maintenance"
+    titlekr: "유지보수"
+    url: /dxl/x/xh430-w210/#maintenance
+    urlkr: /dxl/x/xh430-w210/#유지보수
+    children:
+      - title: "Horn, Bearing"
+        titlekr: "혼, 베어링"
+        url: /dxl/x/xh430-w210/#horn-and-bearing-replacement
+        urlkr: /dxl/x/xh430-w210/#혼-베어링
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /dxl/x/xh430-w210/#reference
+    urlkr: /dxl/x/xh430-w210/#참고자료
+    children:
+      - title: "Quick Start"
+        titlekr: "퀵스타트"
+        url: /dxl/x/xh430-w210/#quick-start
+        urlkr: /dxl/x/xh430-w210/#퀵스타트
+      - title: "Drawings"
+        titlekr: "도면"
+        url: /dxl/x/xh430-w210/#drawings
+        urlkr: /dxl/x/xh430-w210/#도면
+
+#DreamI Level1 sidebar
+dream1-1:
+  - titlekr: "개요"
+    urlkr: /edu/dream/dream1-1/#개요
+  - titlekr: "부품 목록"
+    urlkr: /edu/dream/dream1-1/#부품-목록
+
+#DreamI Level2 sidebar
+dream1-2:
+  - titlekr: "개요"
+    urlkr: /edu/dream/dream1-2/#개요
+  - titlekr: "부품 목록"
+    urlkr: /edu/dream/dream1-2/#부품-목록
+  - titlekr: "작동하기"
+    urlkr: /edu/dream/dream1-2/#작동하기
+    children:
+      - titlekr: "작동방법"
+        urlkr: /edu/dream/dream1-2/#작동방법
+      - titlekr: "프로그램 선택방법"
+        urlkr: /edu/dream/dream1-2/#프로그램-선택방법
+  - titlekr: "교안예제"
+    urlkr: /edu/dream/dream1-2/#교안예제
+  - titlekr: "참고자료"
+    urlkr: /edu/dream/dream1-2/#참고자료
+    children:
+      - titlekr: "호환성"
+        urlkr: /edu/dream/dream1-2/#호환성
+
+#SmartIII Level2 sidebar
+smart3-2:
+  - titlekr: "부품 목록"
+    urlkr: /edu/smart/smart3-2/#부품-목록
+  - titlekr: "작동하기"
+    urlkr: /edu/smart/smart3-2/#작동하기
+    children:
+      - titlekr: "R+ Smart 3 설치"
+        urlkr: /edu/smart/smart3-2/#r-smartiii-설치하기
+      - titlekr: "R+ m.Task 2.0 설치"
+        urlkr: /edu/smart/smart3-2/#r-mtask-20-설치하기
+      - titlekr: "모션파일 다운로드"
+        urlkr: /edu/smart/smart3-2/#모션파일-다운로드
+      - titlekr: "블루투스 연결"
+        urlkr: /edu/smart/smart3-2/#블루투스-연결하기
+  - titlekr: "교안예제"
+    urlkr: /edu/smart/smart3-2/#교안예제
+
+#R+ Manager 2.0 sidebar
+rplusmanager2:
+  - titlekr: "개요"
+    urlkr: /software/rplus2/manager/geting_started/#개요
+    children:
+    - titlekr: "로보플러스 매니저 2.0"
+      urlkr: /software/rplus2/manager/getting_started/#로보플러스-매니저-20
+    - titlekr: "사용전 주의사항"
+      urlkr: /software/rplus2/manager/getting_started/#사용전-주의사항
+    - titlekr: "펌웨어 정의"
+      urlkr: /software/rplus2/manager/getting_started/#펌웨어-정의
+  - titlekr: "메뉴 설명"
+    urlkr: /software/rplus2/manager/getting_started/#메뉴-설명
+    children:
+    - titlekr: "단계별 편집 탭"
+      urlkr: /software/rplus2/manager/getting_started/#단계별-편집-탭
+    - titlekr: "홈 탭"
+      urlkr: /software/rplus2/manager/getting_started/#홈-탭
+    - titlekr: "관리-탭"
+      urlkr: /software/rplus2/manager/getting_started/#관리-탭
+    - titlekr: "터미널-탭"
+      urlkr: /software/rplus2/manager/getting_started/#터미널-탭
+  - titlekr: "기본 기능"
+    urlkr: /software/rplus2/manager/getting_started/#기본-기능
+    children:
+    - titlekr: "펌웨어 업데이트"
+      urlkr: /software/rplus2/manager/getting_started/#펌웨어-업데이트
+    - titlekr: "컨트롤 테이블 테스트"
+      urlkr: /software/rplus2/manager/getting_started/#컨트롤-테이블-테스트
+    - titlekr: "펌웨어 복구"
+      urlkr: /software/rplus2/manager/getting_started/#펌웨어-복구
+  - titlekr: "고급 기능"
+    urlkr: /software/rplus2/manager/getting_started/#고급-기능
+    children:
+    - titlekr: "XM/XH 시리즈 사용전 준비"
+      urlkr: /software/rplus2/manager/advanced/#xh-xh-시리즈-사용전-준비
+    - titlekr: "컨트롤 아이템 값 변경"
+      urlkr: /software/rplus2/manager/advanced/#컨트롤-아이템-값-변경
+    - titlekr: "펌웨어 정보 확인"
+      urlkr: /software/rplus2/manager/advanced/#펌웨어-정보-확인
+    - titlekr: "블루투스로 펌웨어 관리하기"
+      urlkr: /software/rplus2/manager/advanced/#블루투스로-펌웨어-관리하기
+
+#CM-200 Controller sidebar
+cm-200:
+  - title: "Introduction"
+    titlekr: "개요"
+    url: /parts/controller/cm-200/#introduction
+    urlkr: /parts/controller/cm-200/#개요
+    children:
+      - title: "Specifications"
+        titlekr: "제품 사양"
+        url: /parts/controller/cm-200/#specifications
+        urlkr: /parts/controller/cm-200/#제품-사양
+      - title: "Control Table"
+        titlekr: "컨트롤 테이블"
+        url: /parts/controller/cm-200/#control-table
+        urlkr: /parts/controller/cm-200/#컨트롤-테이블
+  - title: "Quick Start"
+    url: /parts/controller/cm-200/#quick-start
+    children:
+      - titlekr: "각 부 명칭"
+        urlkr: /parts/controller/cm-200/#각-부-명칭
+      - titlekr: "전원 연결"
+        urlkr: /parts/controller/cm-200/#전원-연결
+      - titlekr: "작동 확인하기"
+        urlkr: /parts/controller/cm-200/#작동-확인하기
+  - title: "Basic Users"
+    titlekr: "초급 사용자"
+    url: /parts/controller/cm-200/#basic-users
+    urlkr: /parts/controller/cm-200/#초급-사용자
+    children:
+      - title: "Connect Wireless Module"
+        titlekr: "무선통신 연결하기"
+        url: /parts/controller/cm-200/#connect-wireless-module
+        urlkr: /parts/controller/cm-200/#무선통신-연결하기
+      - titlekr: "R+ SmartIII 설치"
+        urlkr: /parts/controller/cm-200/#r-smartiii-설치하기
+      - titlekr: "R+ m.Task2.0 설치"
+        urlkr: /parts/controller/cm-200/#r-mtask-20-설치하기
+      - titlekr: "모션파일 다운로드"
+        urlkr: /parts/controller/cm-200/#모션파일-다운로드
+  - title: "Advanced Users"
+    titlekr: "고급 사용자"
+    url: /parts/controller/cm-200/#advanced-users
+    urlkr: /parts/controller/cm-200/#고급-사용자
+    children:
+      - title: "Writing Task Code"
+        titlekr: "프로그래밍"
+        url: /parts/controller/cm-200/#writing-task-code
+        url: /parts/controller/cm-200/#프로그래밍
+  - title: "Maintenance"
+    titlekr: "관리하기"
+    url: /parts/controller/cm-200/#maintenance
+    urlkr: /parts/controller/cm-200/#관리하기
+    children:
+      - title: "Firmware Recovery"
+        titlekr: "펌웨어 복구"
+        url: /parts/controller/cm-200/#firmware-recovery
+        urlkr: /parts/controller/cm-200/#펌웨어-복구
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /parts/controller/cm-200/#reference
+    urlkr: /parts/controller/cm-200/#참고자료
+
+#THORMANG3
+thormang3:
+  - title: "Getting Started"
+    url: /platform/thormang3/getting_started/#getting-started
+    children:
+    - title: "OS Install"
+      url: /platform/thormang3/getting_started/#os-install
+    - title: "Network Setting"
+      url: /platform/thormang3/getting_started/#network-setting
+      children:
+        - title: "Access Point Setting"
+          url: /platform/thormang3/getting_started/#access-point-setting
+        - title: "PC Setting"
+          url: /platform/thormang3/getting_started/#pc-setting
+    - title: "ROS Install"
+      url: /platform/thormang3/getting_started/#ros-install
+    - title: "ROS Environment Setting"
+      url: /platform/thormang3/getting_started/#ros-environment-setting
+      children:
+        - title: "Network Setting Example"
+          url: /platform/thormang3/getting_started/#network-setting-example
+        - title: "Time Synchronization"
+          url: /platform/thormang3/getting_started/#time-synchronization
+    - title: "ROBOTIS ROS Package Install"
+      url: /platform/thormang3/getting_started/#robotis-ros-package-install
+      children:
+        - title: "MPC Installation"
+          url: /platform/thormang3/getting_started/#mpc-installation
+        - title: "PPC Installation"
+          url: /platform/thormang3/getting_started/#ppc-installation
+        - title: "OPC Installation"
+          url: /platform/thormang3/getting_started/#opc-installation
+        - title: "Update"
+          url: /platform/thormang3/getting_started/#update
+    - title: "Additional ROS Package Install"
+      url: /platform/thormang3/getting_started/#additional-ros-package-install
+      children:
+        - title: "ROS Packages for MPC"
+          url: /platform/thormang3/getting_started/#ros-packages-for-mpc
+        - title: "ROS Packages for PPC"
+          url: /platform/thormang3/getting_started/#ros-packages-for-ppc
+  - title: "THORMANG3 ROS Packages"
+    url: /platform/thormang3/thormang3_ros_packages/#thormang3-ros-packages
+    children:
+    - title: "MPC Packages"
+      url: /platform/thormang3/thormang3_ros_packages/#mpc-packages
+      children:
+        - title: "Manager"
+          url: /platform/thormang3/thormang3_ros_packages/#thormang3_manager
+        - title: "Kinematics & Dynamics"
+          url: /platform/thormang3/thormang3_ros_packages/#thormang3_kinematics_dynamics
+        - title: "Action Module"
+          url: /platform/thormang3/thormang3_ros_packages/#thormang3_action_module
+        - title: "Base Module"
+          url: /platform/thormang3/thormang3_ros_packages/#thormang3_base_module
+        - title: "Manipulation Module"
+          url: /platform/thormang3/thormang3_ros_packages/#thormang3_manipulation_module
+        - title: "Walking Module"
+          url: /platform/thormang3/thormang3_ros_packages/#thormang3_walking_module
+        - title: "Head Control Module"
+          url: /platform/thormang3/thormang3_ros_packages/#thormang3_head_control_module
+        - title: "FT Sensor"
+          url: /platform/thormang3/thormang3_ros_packages/#ati_ft_sensor
+        - title: "Feet FT Module"
+          url: /platform/thormang3/thormang3_ros_packages/#thormang3_feet_ft_module
+        - title: "Balance Control"
+          url: /platform/thormang3/thormang3_ros_packages/#thormang3_balance_control
+        - title: "IMU"
+          url: /platform/thormang3/thormang3_ros_packages/#imu-3dm-gx4
+    - title: "PPC Packages"
+      url: /platform/thormang3/thormang3_ros_packages/#ppc-packages
+    - title: "OPC Packages"
+      url: /platform/thormang3/thormang3_ros_packages/#opc-packages
+    - title: "Common Packages"
+      url: /platform/thormang3/thormang3_ros_packages/#common-packages
+    - title: "Tools Packages"
+      url: /platform/thormang3/thormang3_ros_packages/#tools-packages
+    - title: "THORMANG msgs Package"
+      url: /platform/thormang3/thormang3_ros_packages/#thormang-msgs-package
+  - title: "THORMANG3 Operation"
+    url: /platform/thormang3/thormang3_operation/#thormang3-operation
+    children:
+    - title: "Preparation"
+      url: /platform/thormang3/thormang3_operation/#preparation
+    - title: "Simple Demo"
+      url: /platform/thormang3/thormang3_operation/#simple-demo
+    - title: "GUI Program"
+      url: /platform/thormang3/thormang3_operation/#gui-program
+    - title: "Offset Tuner"
+      url: /platform/thormang3/thormang3_operation/#offset-tuner
+  - title: "Gazebo Simulation"
+    url: /platform/thormang3/thormang3_operation/#gazebo-simulation
+    children:
+    - title: "Install Gazebo"
+      url: /platform/thormang3/thormang3_operation/#install-gazebo
+    - title: "Run Simulation"
+      url: /platform/thormang3/thormang3_operation/#run-simulation
+  - title: "Maintenance"
+    url: /platform/thormang3/thormang3_operation/#maintenance
+  - title: "References"
+    url: /platform/thormang3/thormang3_operation/#references
+
+faq:
+  - title: "Contents Formats"
+    titlekr: "컨텐츠 작성방법"
+    urlkr: /faq/#컨텐츠-작성방법
+    children:
+      - titlekr: "개요번호"
+        urlkr: /faq/#개요번호
+      - titlekr: "다단계 목록"
+        urlkr: /faq/#다단계-목록
+      - titlekr: "글상자"
+        urlkr: /faq/#글상자
+      - titlekr: "표"
+        urlkr: /faq/#표
+      - titlekr: "그림"
+        urlkr: /faq/#그림
+      - titlekr: "링크"
+        urlkr: /faq/#링크
+      - titlekr: "텍스트 효과"
+        urlkr: /faq/#텍스트-효과
+      - titlekr: "소스코드 입력"
+        urlkr: /faq/#소스코드-입력
+>>>>>>> contents
