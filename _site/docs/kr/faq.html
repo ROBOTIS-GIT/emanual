@@ -29,7 +29,7 @@
 
 
 
-<meta name="author" content="Your Name">
+<meta name="author" content="ROBOTIS">
 
 <meta property="og:locale" content="en">
 <meta property="og:site_name" content="ROBOTIS e-Manual">
@@ -132,8 +132,9 @@
         
           <a href="http://localhost:4000/emanual/docs/kr/faq" class="kr" style="color: #134268;padding-right:10px;">[kr]</a>
         
-        <form method="get" style="margin:0 0 0 0; position:absolute; right:0; width:30%;">
-          <input type="text" id="tipue_search_input" name="q" placeholder="Search" style="padding:0 10px; margin-bottom:0;">
+
+        <form method="get" id="site_search" style="margin:0 0 0 0; position:absolute; right:0; width:30%;">
+          <input type="text" id="search_box" name="query" placeholder="Search" style="padding:0 10px; margin-bottom:0;">
         </form>
       </nav>
     </div>
@@ -1690,9 +1691,16 @@
         </div>
       
     </div>
+    <div>
+      <ul id="search_results"></ul>
+    </div>
 
   </div>
 </div>
+
+<script src="/emanual/assets/js/lunr.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="/emanual/assets/js/search.js"></script>
 
 
     
@@ -1787,6 +1795,18 @@
 
         
         <li><a href="http://localhost:4000/emanual/docs/kr/faq/#그림" class="">그림</a></li>
+        
+
+        
+        
+      
+        
+        
+
+        
+
+        
+        <li><a href="http://localhost:4000/emanual/docs/kr/faq/#동영상" class="">동영상</a></li>
         
 
         
@@ -1939,10 +1959,10 @@
 
 <h2 id="표"><a href="#표">표</a></h2>
 <p>아래의 예제를 보시기 바랍니다.
-각 셀은 ‘|’로 구분되며 줄을 맞추지 않아도 됩니다.<br />
-항목 줄은 표 내용과 | :———– |로 구분됩니다.<br />
-셀 병합기능이 없기 때문에 사용에 다소 불편함이 있을 수 있습니다.<br />
-한칸에 여러줄을 입력하려면 &lt;pre&gt;<br />&lt;/pre&gt;태그를 이용할 수 있습니다.<br />
+각 셀은 ‘|’로 구분되며 줄을 맞추지 않아도 됩니다.
+항목 줄은 표 내용과 | :———– |로 구분됩니다.
+셀 병합기능이 없기 때문에 사용에 다소 불편함이 있을 수 있습니다.
+한칸에 여러줄을 입력하려면 &lt;pre&gt;<br />&lt;/pre&gt;태그를 이용할 수 있습니다.
 표의 시작과 끝에는 반드시 한줄의 공백이 있어야 합니다.</p>
 
 <div class="highlighter-rouge"><pre class="highlight"><code>| 항목 1         | 항목 2       |
@@ -1983,14 +2003,24 @@
 <p><img src="http://localhost:4000/emanual/assets/images/dxl/x/xh430_w210_performance_graph.jpg" alt="성능그래프" /></p>
 
 <h2 id="동영상"><a href="#동영상">동영상</a></h2>
+<<<<<<< HEAD
 <p>동영상 삽입은 유튜브 동영상을 기준으로 다음과 같이 작성합니다.</p>
+=======
+<p>동영상 삽입은 유튜브 동영상을 기준으로 아래의 코드를 복사한 후 src의 동영상 주소만 변경해서 작성합니다.</p>
+
+<div class="language-html highlighter-rouge"><pre class="highlight"><code><span class="nt">&lt;iframe</span> <span class="na">width=</span><span class="s">"640"</span> <span class="na">height=</span><span class="s">"360"</span> <span class="na">src=</span><span class="s">"https://www.youtube.com/embed/rvm-m2ogrLA"</span> <span class="na">frameborder=</span><span class="s">"0"</span> <span class="na">allowfullscreen=</span><span class="s">""</span><span class="nt">&gt;&lt;/iframe&gt;</span>
+</code></pre>
+</div>
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/rvm-m2ogrLA" frameborder="0" allowfullscreen=""></iframe>
+>>>>>>> develop
 
 <h2 id="링크"><a href="#링크">링크</a></h2>
 <p>링크 삽입은 아래와 같이 사용할 수 있습니다. 주소를 저장하는 레퍼런스는 문서의 가장 하단에 작성합니다.</p>
 
 <p><a href="http://localhost:4000/emanual/docs/kr/faq">컨텐츠 작성방법</a></p>
 
-<div class="highlighter-rouge"><pre class="highlight"><code>[컨텐츠 작성방법][Contents Format]
+<div class="language-text highlighter-rouge"><pre class="highlight"><code>[컨텐츠 작성방법][Contents Format]
 [Contents Format]: http://localhost:4000/emanual/docs/kr/faq
 </code></pre>
 </div>
@@ -2008,17 +2038,17 @@
   <li>
     <p>1번 방법</p>
 
-    <div class="language-c++ highlighter-rouge"><pre class="highlight"><code><span class="n">find_package</span><span class="p">(</span> <span class="n">thormang3_kinematics_dynamics</span> <span class="p">)</span>   
-<span class="n">target_link_libraries</span><span class="p">(</span> <span class="n">thormang3_kinematics_dynamics</span> <span class="p">)</span>   
+    <div class="language-c++ highlighter-rouge"><pre class="highlight"><code><span class="n">find_package</span><span class="p">(</span> <span class="n">thormang3_kinematics_dynamics</span> <span class="p">)</span>
+<span class="n">target_link_libraries</span><span class="p">(</span> <span class="n">thormang3_kinematics_dynamics</span> <span class="p">)</span>
 </code></pre>
     </div>
   </li>
 </ul>
 
 <pre>
-  ```c++  
-  find_package( thormang3_kinematics_dynamics )   
-  target_link_libraries( thormang3_kinematics_dynamics )   
+  ```c++
+  find_package( thormang3_kinematics_dynamics )
+  target_link_libraries( thormang3_kinematics_dynamics )
   ```
 </pre>
 
@@ -2026,17 +2056,17 @@
   <li>
     <p>2번 방법</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code>find_package( thormang3_kinematics_dynamics )   
-target_link_libraries( thormang3_kinematics_dynamics )   
+    <div class="highlighter-rouge"><pre class="highlight"><code>find_package( thormang3_kinematics_dynamics )
+target_link_libraries( thormang3_kinematics_dynamics )
 </code></pre>
     </div>
   </li>
 </ul>
 
 <pre>
-  ```  
-  find_package( thormang3_kinematics_dynamics )   
-  target_link_libraries( thormang3_kinematics_dynamics )   
+  ```
+  find_package( thormang3_kinematics_dynamics )
+  target_link_libraries( thormang3_kinematics_dynamics )
   ```
 </pre>
 

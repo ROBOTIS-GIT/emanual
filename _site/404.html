@@ -19,7 +19,7 @@
 
 
 
-<title>Page Not Found - ROBOTIS e-Manual</title>
+<title>ROBOTIS e-Manual</title>
 
 
 
@@ -29,11 +29,11 @@
 
 
 
-<meta name="author" content="Your Name">
+<meta name="author" content="ROBOTIS">
 
 <meta property="og:locale" content="en">
 <meta property="og:site_name" content="ROBOTIS e-Manual">
-<meta property="og:title" content="Page Not Found">
+<meta property="og:title" content="ROBOTIS e-Manual">
 
 
   <link rel="canonical" href="http://localhost:4000/emanual/404.html">
@@ -126,8 +126,9 @@
         <a class="site-title" href="http://localhost:4000/emanual/"><img src="/emanual/assets/images/robotis_logo.gif" style="padding-right:10px;">e-Manual</a>
         
         
-        <form method="get" style="margin:0 0 0 0; position:absolute; right:0; width:30%;">
-          <input type="text" id="tipue_search_input" name="q" placeholder="Search" style="padding:0 10px; margin-bottom:0;">
+
+        <form method="get" id="site_search" style="margin:0 0 0 0; position:absolute; right:0; width:30%;">
+          <input type="text" id="search_box" name="query" placeholder="Search" style="padding:0 10px; margin-bottom:0;">
         </form>
       </nav>
     </div>
@@ -1687,9 +1688,16 @@
         </div>
       
     </div>
+    <div>
+      <ul id="search_results"></ul>
+    </div>
 
   </div>
 </div>
+
+<script src="/emanual/assets/js/lunr.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="/emanual/assets/js/search.js"></script>
 
 
     
