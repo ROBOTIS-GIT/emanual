@@ -1,1 +1,1 @@
-Sitemap: http://localhost:4000/emanual/sitemap.xml
+Sitemap: https://robotis-git.github.io/emanual/sitemap.xml
