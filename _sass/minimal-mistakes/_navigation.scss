@@ -352,9 +352,9 @@
 .nav__items label, .nav__items a {
   position: relative;
   display: block;
-  background: black;
+  background: white;
   box-shadow: inset 0 -1px #dddddd;
-  color: white;
+  color: black;
   font-size: 0.8rem;
   padding: 3px 10px;
 }
@@ -375,9 +375,9 @@
 }
 .nav__items ul label,
 .nav__items ul a {
-  background: black;
+  background: white;
   box-shadow: inset 0 -1px #dddddd;
-  color: white;
+  color: #888888;
   font-size: 1em;
   padding: 3px 20px;
 }
