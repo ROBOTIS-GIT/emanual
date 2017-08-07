@@ -317,157 +317,11 @@
 
 .nav__list {
   margin-bottom: 1.5em;
-/*
-  input[type="checkbox"],
-  label {
-    display: none;
-  }
-
-  @include breakpoint(max-width ($large - 1px)) {
-
-    label {
-      position: relative;
-      display: inline-block;
-      padding: 0.5em 2.5em 0.5em 1em;
-      color: $gray;
-      font-size: $type-size-6;
-      font-weight: bold;
-      border: 1px solid $light-gray;
-      border-radius: $border-radius;
-      z-index: 20;
-      -webkit-transition: 0.2s ease-out;
-      transition: 0.2s ease-out;
-      cursor: pointer;
-
-      &:before,
-      &:after {
-        content: '';
-        position: absolute;
-        right: 1em;
-        top: 1.25em;
-        width: 0.75em;
-        height: 0.125em;
-        line-height: 1;
-        background-color: $gray;
-        -webkit-transition: 0.2s ease-out;
-        transition: 0.2s ease-out;
-      }
-
-      &:after {
-        -webkit-transform: rotate(90deg);
-                -ms-transform: rotate(90deg);
-            transform: rotate(90deg);
-      }
-
-      &:hover {
-        color: #fff;
-        border-color: $gray;
-        background-color: mix(white, #000, 20%);
-
-        &:before,
-        &:after {
-          background-color: #fff;
-        }
-      }
-    }
-
-
-    input:checked + label {
-      color: white;
-      background-color: mix(white, #000, 20%);
-
-      &:before,
-      &:after {
-        background-color: #fff;
-      }
-    }
-
-
-    label:hover:after {
-      -webkit-transform: rotate(90deg);
-              -ms-transform: rotate(90deg);
-          transform: rotate(90deg);
-    }
-
-    input:checked + label:hover:after {
-      -webkit-transform: rotate(0);
-              -ms-transform: rotate(0);
-          transform: rotate(0);
-    }
-
-    ul {
-      margin-bottom: 1em;
-    }
-
-    a {
-      display: block;
-      padding: 0.25em 0;
-
-      @include breakpoint($large) {
-        padding-top: 0.125em;
-        padding-bottom: 0.125em;
-      }
-
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-  }
-  */
 }
 
 .nav__list .nav__items {
   margin: 0;
   font-size: 1.25rem;
-
-/*
-  a {
-    color: inherit;
-  }
-
-  .active {
-    margin-left: -0.5em;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
-    color: #fff;
-    font-weight: bold;
-    background: $primary-color;
-    border-radius: $border-radius;
-
-    &:hover {
-      color: #fff;
-    }
-  }
-
-  li input + ul {
-    display: none;
-    padding-left: 10px;
-  }
-
-  li input:checked + ul {
-    display: block;
-    position: relative;
-  }
-
-  li input{width:1em;height:1em;position:absolute;left:-0.5em;top:0;opacity:0;cursor:pointer;}
-
-  li input + ul{height:1em;margin:-22px 0 0 -60px;background:url("/assets/images/toggle-folded.png") no-repeat 40px 0;}
-*/
-
-/*
-  @include breakpoint(max-width ($large - 1px)) {
-    position: relative;
-    max-height: 0;
-    opacity: 0%;
-    overflow: hidden;
-    z-index: 10;
-    -webkit-transition: 0.3s ease-in-out;
-    transition: 0.3s ease-in-out;
-    -webkit-transform: translate(0, 10%);
-            -ms-transform: translate(0, 10%);
-        transform: translate(0, 10%);
-  }
-  */
 }
 
 .nav__items {
@@ -476,30 +330,35 @@
   background: #4d5158;
   margin: 4em auto;
 }
+
 .nav__items ul {
   /* by default hide all sub menus */
   display: none;
 }
+
 .nav__items li {
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
 }
+
 .nav__items input[type=checkbox] {
   /* hide native checkbox */
   position: absolute;
   opacity: 0;
 }
+
 .nav__items label, .nav__items a {
   position: relative;
   display: block;
-  background: #000000;
-  box-shadow: inset 0 -1px #555960;
-  color: #ffffff;
+  background: white;
+  box-shadow: inset 0 -1px #dddddd;
+  color: black;
   font-size: 0.8rem;
   padding: 3px 10px;
 }
+
 .nav__items label:hover, .nav__items a:hover {
   background: #52565d;
 }
@@ -516,9 +375,9 @@
 }
 .nav__items ul label,
 .nav__items ul a {
-  background: #35383d;
-  box-shadow: inset 0 -1px #41444a;
-  color: white;
+  background: white;
+  box-shadow: inset 0 -1px #dddddd;
+  color: #888888;
   font-size: 1em;
   padding: 3px 20px;
 }
