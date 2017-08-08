@@ -673,7 +673,8 @@
                   
 
                   
-                    <a>1단계 교육키트</a>
+                    
+                      <a href="http://localhost:4000/emanual/docs/kr/edu/dream/dream1-1/">1단계 교육키트</a>
                     
                 
                   
@@ -681,7 +682,8 @@
                   
 
                   
-                    <a>2단계 교육키트</a>
+                    
+                      <a href="http://localhost:4000/emanual/docs/kr/edu/dream/dream1-2/">2단계 교육키트</a>
                     
                 
                   
@@ -1123,7 +1125,8 @@
                   
 
                   
-                    <a>로보플러스 매니저 2.0</a>
+                    
+                      <a href="http://localhost:4000/emanual/docs/kr/software/rplus2/manager/getting_started/">로보플러스 매니저 2.0</a>
                     
                 
                   
@@ -1939,10 +1942,10 @@
 
 <h2 id="표"><a href="#표">표</a></h2>
 <p>아래의 예제를 보시기 바랍니다.
-각 셀은 ‘|’로 구분되며 줄을 맞추지 않아도 됩니다.<br />
-항목 줄은 표 내용과 | :———– |로 구분됩니다.<br />
-셀 병합기능이 없기 때문에 사용에 다소 불편함이 있을 수 있습니다.<br />
-한칸에 여러줄을 입력하려면 &lt;pre&gt;<br />&lt;/pre&gt;태그를 이용할 수 있습니다.<br />
+각 셀은 ‘|’로 구분되며 줄을 맞추지 않아도 됩니다.
+항목 줄은 표 내용과 | :———– |로 구분됩니다.
+셀 병합기능이 없기 때문에 사용에 다소 불편함이 있을 수 있습니다.
+한칸에 여러줄을 입력하려면 &lt;pre&gt;<br />&lt;/pre&gt;태그를 이용할 수 있습니다.
 표의 시작과 끝에는 반드시 한줄의 공백이 있어야 합니다.</p>
 
 <div class="highlighter-rouge"><pre class="highlight"><code>| 항목 1         | 항목 2       |
@@ -1982,9 +1985,6 @@
 
 <p><img src="http://localhost:4000/emanual/assets/images/dxl/x/xh430_w210_performance_graph.jpg" alt="성능그래프" /></p>
 
-<h2 id="동영상"><a href="#동영상">동영상</a></h2>
-<p>동영상 삽입은 유튜브 동영상을 기준으로 다음과 같이 작성합니다.</p>
-
 <h2 id="링크"><a href="#링크">링크</a></h2>
 <p>링크 삽입은 아래와 같이 사용할 수 있습니다. 주소를 저장하는 레퍼런스는 문서의 가장 하단에 작성합니다.</p>
 
@@ -2008,17 +2008,17 @@
   <li>
     <p>1번 방법</p>
 
-    <div class="language-c++ highlighter-rouge"><pre class="highlight"><code><span class="n">find_package</span><span class="p">(</span> <span class="n">thormang3_kinematics_dynamics</span> <span class="p">)</span>   
-<span class="n">target_link_libraries</span><span class="p">(</span> <span class="n">thormang3_kinematics_dynamics</span> <span class="p">)</span>   
+    <div class="language-cmake highlighter-rouge"><pre class="highlight"><code><span class="nb">find_package</span><span class="p">(</span> thormang3_kinematics_dynamics <span class="p">)</span>
+<span class="nb">target_link_libraries</span><span class="p">(</span> thormang3_kinematics_dynamics <span class="p">)</span>
 </code></pre>
     </div>
   </li>
 </ul>
 
 <pre>
-  ```c++  
-  find_package( thormang3_kinematics_dynamics )   
-  target_link_libraries( thormang3_kinematics_dynamics )   
+  ```cmake
+  find_package( thormang3_kinematics_dynamics )
+  target_link_libraries( thormang3_kinematics_dynamics )
   ```
 </pre>
 
@@ -2026,19 +2026,20 @@
   <li>
     <p>2번 방법</p>
 
-    <div class="highlighter-rouge"><pre class="highlight"><code>find_package( thormang3_kinematics_dynamics )   
-target_link_libraries( thormang3_kinematics_dynamics )   
+    <div class="highlighter-rouge"><pre class="highlight"><code>find_package( thormang3_kinematics_dynamics )
+target_link_libraries( thormang3_kinematics_dynamics )
 </code></pre>
     </div>
   </li>
 </ul>
 
 <pre>
-  ```  
-  find_package( thormang3_kinematics_dynamics )   
-  target_link_libraries( thormang3_kinematics_dynamics )   
+  ```
+  find_package( thormang3_kinematics_dynamics )
+  target_link_libraries( thormang3_kinematics_dynamics )
   ```
 </pre>
+
 
   </div>
 </div>

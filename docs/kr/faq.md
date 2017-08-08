@@ -11,4 +11,4 @@ sidebar:
   nav: "faq"
 ---
 
-{% includes/contents_create.md %}
+{% include faq/contents_create.md %}
