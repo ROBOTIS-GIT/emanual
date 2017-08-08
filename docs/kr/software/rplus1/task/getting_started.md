@@ -42,13 +42,20 @@ sidebar:
 `참고` 로보플러스를 실행하기 위해선 .NET FrameWork 3.5이상의 버전이 필요 합니다. 로보플러스 설치시 .NET FrameWork 자동설치가 실패할 경우엔 .NET FreameWork를 별도로 설치하세요.
 {: .notice}
 
-RoboPlus 설치 실패시 대처 방법
+#### RoboPlus 설치 실패시
 
-대부분의 RoboPlus 설치 실패의 원인은 사용자 PC환경에 따른 .NET FrameWork 자동 설치 실패 입니다.
-따라서 사용자가 직접 .NET FrameWork 3.5를 수동으로 설치 하셔야 합니다.
+대부분의 RoboPlus 설치 실패의 원인은 사용자 PC환경에 따른 .NET FrameWork 자동 설치 실패 입니다. 따라서 사용자가 직접 .NET FrameWork 3.5를 수동으로 설치 하셔야 합니다.
 .NET FrameWork 3.5를 수동으로 설치 하기 전에 Windows installer 3.1이상이 설치 되어 있어야 합니다.
 
-Windows installer와 .NET Framework는 마이크로 소프트 다운로드 센터에서 다운로드가 가능합니다.
+Windows installer와 .NET Framework는 [마이크로소프트 다운로드 센터]에서 다운로드가 가능합니다.
 
-Windows installer 3.1 다운로드 링크 가기
-.NET Framework 3.5 다운로드 링크 가기
+[Windows installer 3.1 다운로드]
+
+[.NET Framework 3.5 다운로드]
+
+
+[마이크로소프트 다운로드 센터]: http://www.microsoft.com/downloads/Search.aspx?displaylang=ko
+
+[Windows installer 3.1 다운로드]: http://www.microsoft.com/downloads/details.aspx?FamilyID=889482fc-5f56-4a38-b838-de776fd4138c&DisplayLang=ko
+
+[.NET Framework 3.5 다운로드]: http://www.microsoft.com/downloads/details.aspx?FamilyID=d0e5dea7-ac26-4ad7-b68c-fe5076bba986&DisplayLang=ko
