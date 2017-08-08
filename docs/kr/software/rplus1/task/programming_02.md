@@ -1,17 +1,169 @@
 ---
 layout: archive
 lang: kr
-ref: rplus1_task_getting_started
+ref: rplus1_task_programming_02
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/kr/software/rplus1/task/getting_started/
+permalink: /docs/kr/software/rplus1/task/programming_02/
 sidebar:
   title: R+ Task 1.0
   nav: "rplustask1"
 ---
 
-# [개요](#개요)
+<div style="counter-reset: h1 2">
+</div>
+
+# [프로그래밍](#프로그래밍)
+
+## [편집](#편집)
+
+### [여러줄 선택](#여러줄-선택)
+### [줄 삽입](#줄-삽입)
+### [줄 지우기](#줄-지우기)
+### [줄 활성/비활성](#줄-활성-비활성)
+### [복사/잘라내기/붙여넣기](#복사-잘라내기-붙여넣기)
+### [이름찾기](#이름찾기)
+
+## [명렁어](#명령어)
+
+### [프로그램 시작](#프로그램-시작)
+### [프로그램 강제종료](#프로그램-강제종료)
+### [구간 시작/끝](#구간-시작-끝)
+### [주석/메모](#주석-메모)
+### [계산](#계산)
+### [로드](#로드)
+### [레이블/점프](#레이블-점프)
+### [조건문](#조건문)
+### [무조건 반복](#무조건-반복)
+### [조건 반복](#조건-반복)
+### [횟수 반복](#횟수-반복)
+### [반복 끝내기](#반복-끝내기)
+### [조건 대기](#조건-대기)
+### [함수 강제종료](#함수-강제종료)
+### [함수 만들기/호출](#함수-만들기-호출)
+### [콜백 함수](#콜백-함수)
+
+## [제어기 파라미터](#제어기-파라미터)
+
+### [보낼 무선 데이터](#보낼-무선-데이터)
+### [받은 무선 데이터](#받은-무선-데이터)
+### [새 무선 데이터](#새-무선-데이터)
+### [임의의 숫자](#임의의-숫자)
+### [Aux LED](#aux-led)
+### [버튼](#버튼)
+### [타이머](#타이머)
+### [정밀타이머](#정밀타이머)
+### [상대 로봇 무선ID](#상대-로봇-무선ID)
+### [내 로봇 무선ID](#내-로봇-무선ID)
+### [화면출력/줄바꿈](#화면출력-줄바꿈)
+### [적외선 센서](#적외선-센서)
+### [부저 종류](#부저-종류)
+### [부저 울림시간](#부저-울림시간)
+### [최종 소리감지 횟수](#최종-소리감지-횟수)
+### [실시간 소리감지 횟수](#실시간-소리감지-횟수)
+### [시작버튼 눌림횟수](#시작버튼-눌림횟수)
+### [자동꺼짐 타이머](#자동꺼짐-타이머)
+### [RC-100 채널](#rc-100-채널)
+
+## [스마트앱 파라미터](#스마트앱-파라미터)
+
+## [모션 파라미터](#모션-파라미터)
+
+### [모션 페이지](#모션-페이지)
+### [모션 상태](#모션-상태)
+### [관절 오프셋](#관절-오프셋)
+### [관절 LED 자동켜기](#관절-led-자동켜기)
+
+## [주변장치](#주변장치)
+
+### [감속모터](#감속모터)
+### [서보모터](#서보모터)
+### [접촉센서](#접촉센서)
+### [LED모듈](#led모듈)
+### [적외선센서](#적외선센서)
+### [컬러센서](#컬러센서)
+### [자석센서](#자석센서)
+### [절대거리센서](#절대거리센서)
+### [사용자 장치](#사용자-장치)
+
+## [다이나믹셀:액츄에이터](#다이나믹셀-액츄에이터)
+
+### [모터 켜기](#모터-켜기)
+### [LED](#led)
+### [CW/CCW Margin](#cw-ccw-margin)
+### [CW/CCW Slope](#cw-ccw-slope)
+### [목표 위치](#목표-위치)
+### [이동 속도](#이동-속도)
+### [힘 조절](#힘-조절)
+### [현재 위치](#현재-위치)
+### [현재 속도](#현재-속도)
+### [현재 하중](#현재-하중)
+### [전압](#전압)
+### [온도](#온도)
+### [움직임 유무](#움직임-유무)
+
+## [다이나믹셀:EX액츄에이터](#다이나믹셀-ex액츄에이터)
+
+### [모터 켜기](#모터-켜기)
+### [LED](#led)
+### [CW/CCW Margin](#cw-ccw-margin)
+### [CW/CCW Slope](#cw-ccw-slope)
+### [목표 위치](#목표-위치)
+### [이동 속도](#이동-속도)
+### [힘 조절](#힘-조절)
+### [현재 위치](#현재-위치)
+### [현재 속도](#현재-속도)
+### [현재 하중](#현재-하중)
+### [전압](#전압)
+### [온도](#온도)
+### [움직임 유무](#움직임-유무)
+### [소모 전류량](#소모-전류량)
+
+## [다이나믹셀:MX액츄에이터](#다이나믹셀-mx액츄에이터)
+
+### [모터 켜기](#모터-켜기)
+### [LED](#led)
+### [PID 제어](#pid-제어)
+### [목표 위치](#목표-위치)
+### [이동 속도](#이동-속도)
+### [힘 조절](#힘-조절)
+### [현재 위치](#현재-위치)
+### [현재 속도](#현재-속도)
+### [현재 하중](#현재-하중)
+### [전압](#전압)
+### [온도](#온도)
+### [움직임 유무](#움직임-유무)
+### [소모 전류량](#소모-전류량)
+
+## [통합센서(S1)](#통합센서-s1-)
+
+### [거리센서 값](#거리센서-값)
+### [조명 밝기](#조명-밝기)
+### [물체감지](#물체감지)
+### [조명감지](#조명감지)
+### [소리 크기](#소리-크기)
+### [최대 소리 크기](#최대-소리-크기)
+### [소리감지 횟수](#소리감지-횟수)
+### [소리발생 시간](#소리발생-시간)
+### [부저 음계](#부저-음계)
+### [부저 울림시간](#부저-울림시간)
+### [새 리모컨 데이터](#새-리모컨-데이터)
+### [받은 리모컨 데이터](#받은-리모컨-데이터)
+### [보낼 리모컨 데이터](#보낼-리모컨-데이터)
+### [물체감지 기준값](#물체감지-기준값)
+### [조명감지 기준값](#조명감지-기준값)
+
+## [적외선 센서 어레이](#적외선-센서-어레이)
+### [적외선 센서 값](#적외선-센서-값)
+### [부저 음계](#부저-음계)
+### [부저 울림시간](#부저-울림시간)
+### [감지 기준값 자동설정](#감지-기준값-자동설정)
+### [적외선 물체감지](#적외선-물체감지)
+### [적외선감지 기준값](#적외선감지-기준값)
+
+## [직접 지정](#직접-지정)
+
 
 ## [로보플러스 태스크](#로보플러스-태스크)
 
@@ -207,52 +359,52 @@ RboPlus Task는 RC-100 등과 같은 조종기가 없어도 조종 기능을 사
 
 [.NET Framework 3.5 다운로드]: http://www.microsoft.com/downloads/details.aspx?FamilyID=d0e5dea7-ac26-4ad7-b68c-fe5076bba986&DisplayLang=ko
 
-[R+task]: /emanual/assets/images/sw/rplus1/roboplus_task_001.png
+[R+task]: /emanual/assets/images/sw/rplus1/roboplus_task_01.png
 
-[명령어-선택]: /emanual/assets/images/sw/rplus1/roboplus_task_002.png
+[명령어-선택]: /emanual/assets/images/sw/rplus1/roboplus_task_02.png
 
-[제어기-선택]: /emanual/assets/images/sw/rplus1/roboplus_task_003.png
+[제어기-선택]: /emanual/assets/images/sw/rplus1/roboplus_task_03.png
 
-[param]: /emanual/assets/images/sw/rplus1/roboplus_task_004.png
+[param]: /emanual/assets/images/sw/rplus1/roboplus_task_04.png
 
-[edit]: /emanual/assets/images/sw/rplus1/roboplus_task_005.png
+[edit]: /emanual/assets/images/sw/rplus1/roboplus_task_05.png
 
-[select]: /emanual/assets/images/sw/rplus1/roboplus_task_006.png
+[select]: /emanual/assets/images/sw/rplus1/roboplus_task_06.png
 
-[select-window]: /emanual/assets/images/sw/rplus1/roboplus_task_007.png
+[select-window]: /emanual/assets/images/sw/rplus1/roboplus_task_07.png
 
 [제어기 정보]: #
 
 [룰 체크 에러 메시지 확인]: #
 
-[port-select]: /emanual/assets/images/sw/rplus1/roboplus_task_008.png
+[port-select]: /emanual/assets/images/sw/rplus1/roboplus_task_08.png
 
-[error-message]: /emanual/assets/images/sw/rplus1/roboplus_task_009.png
+[error-message]: /emanual/assets/images/sw/rplus1/roboplus_task_09.png
 
-[download]: /emanual/assets/images/sw/rplus1/roboplus_task_010.png
+[download]: /emanual/assets/images/sw/rplus1/roboplus_task_10.png
 
-[download-run]: /emanual/assets/images/sw/rplus1/roboplus_task_011.png
+[download-run]: /emanual/assets/images/sw/rplus1/roboplus_task_11.png
 
-[terminal]: /emanual/assets/images/sw/rplus1/roboplus_task_012.png
+[terminal]: /emanual/assets/images/sw/rplus1/roboplus_task_12.png
 
-[output-monitor]: /emanual/assets/images/sw/rplus1/roboplus_task_013.png
+[output-monitor]: /emanual/assets/images/sw/rplus1/roboplus_task_13.png
 
 [monitor-btn]: /emanual/assets/images/sw/rplus1/monitor_btn.png
 
-[code]: /emanual/assets/images/sw/rplus1/roboplus_task_014.png
+[code]: /emanual/assets/images/sw/rplus1/roboplus_task_14.png
 
-[print]: /emanual/assets/images/sw/rplus1/roboplus_task_015.png
+[print]: /emanual/assets/images/sw/rplus1/roboplus_task_15.png
 
-[newline]: /emanual/assets/images/sw/rplus1/roboplus_task_016.png
+[newline]: /emanual/assets/images/sw/rplus1/roboplus_task_16.png
 
-[start-message]: /emanual/assets/images/sw/rplus1/roboplus_task_017.png
+[start-message]: /emanual/assets/images/sw/rplus1/roboplus_task_17.png
 
-[error-code]: /emanual/assets/images/sw/rplus1/roboplus_task_018.png
+[error-code]: /emanual/assets/images/sw/rplus1/roboplus_task_18.png
 
-[print-num]: /emanual/assets/images/sw/rplus1/roboplus_task_019.png
+[print-num]: /emanual/assets/images/sw/rplus1/roboplus_task_19.png
 
-[print-sensor]: /emanual/assets/images/sw/rplus1/roboplus_task_020.png
+[print-sensor]: /emanual/assets/images/sw/rplus1/roboplus_task_20.png
 
-[clear-screen]: /emanual/assets/images/sw/rplus1/roboplus_task_021.png
+[clear-screen]: /emanual/assets/images/sw/rplus1/roboplus_task_21.png
 
 [virtual-rc100]: /emanual/assets/images/sw/rplus1/virtual_rc100.png
