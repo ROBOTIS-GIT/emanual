@@ -1,12 +1,14 @@
 ---
-layout: splash
+layout: archive
 lang: jp
 ref: faq
+read_time: true
+share: true
+author_profile: false
 permalink: /docs/jp/faq
+sidebar:
+  title: FAQ
+  nav: "faq"
 ---
 
-# Frequently Asked Questions
-
-1. 7월말 : 시스템 구축
-
-2. 10월말 : 컨텐츠 이전
+{% includes/contents_create.md %}
