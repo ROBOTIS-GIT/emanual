@@ -32,11 +32,18 @@ sidebar:
 ## [개요번호](#개요번호)
   개요번호를 만들기 위해서는 아래와 같이 제목 앞에 #을 붙이고 한칸을 띄운다음 제목을 입력한다.
   ```
-  # 첫번째 주제
+  # 1번 제목
 
-  ## 두번째 주제
+  ## 1-1번 제목
 
-  ### 세번째 주제
+  ### 1-1-1번 제목
+
+  ## 1-2번 제목
+
+  # 2번 제목
+
+  ## 2-1번 제목
+
   ```
 
 ## [다단계 목록](#다단계-목록)
@@ -70,7 +77,7 @@ sidebar:
 `notice--warning` 한줄짜리 공지에 유용합니다.
 {: .notice--warning}
 
-`**notice--danger**` 여러줄은 다른 방법을 써야합니다.
+**`notice--danger`** 여러줄은 다른 방법을 써야합니다.
 {: .notice--danger}
 
 `Success` 조금 아쉽죠
@@ -89,19 +96,42 @@ sidebar:
 `notice--warning` 한줄짜리 공지에 유용합니다.
 {: .notice--warning}
 
-`**notice--danger**` 여러줄은 다른 방법을 써야합니다.
+**`notice--danger`** 여러줄은 다른 방법을 써야합니다.
 {: .notice--danger}
 
 `Success` 조금 아쉽죠
 {: .notice--success}
 ```
 
+{% capture group_notice_01 %}
+`Note` 여러줄짜리 글상자를 사용하려면 조금 복잡합니다.
+1. 글상자로 묶고자 하는 문단의 첫번째에 "{% capture group_notice_01 %}"를 넣고 마지막 숫자 01은 다른 그룹 글상자의 이름과 겹치지 않게 사용한 그룹 글상자의 숫자만큼 증가시켜줍니다.
+2. 글상자로 묶고자 하는 문단의 마지막 줄에 "{% endcapture %}"를 추가합니다.
+3. 글상자를 넣고자하는 부분에 아래의 코드를 추가하고 글상자의 유형에 따라 notice를 notice--info, notice--warning 등으로 변경한 뒤 group_notice_01의 01을 해당 그룹 글상자의 숫자와 맞춰줍니다.
+4. <div class="notice">{{ group_notice_01 | markdownify }}</div>
+{% endcapture %}
+
+<div class="notice">{{ group_notice_01 | markdownify }}</div>
+
+```
+{% capture group_notice_01 %}
+`Note` 여러줄짜리 예제입니다.
+1. 첫번째 문장
+2. 두번째 문장
+3. 세번째 문장
+4. <div class="notice">{{ group_notice_01 | markdownify }}</div>
+{% endcapture %}
+
+<div class="notice">{{ group_notice_01 | markdownify }}</div>
+```
+
 ## [표](#표)
 아래의 예제를 보시기 바랍니다.
-각 셀은 '|'로 구분되며 줄을 맞추지 않아도 됩니다.
-항목 줄은 표 내용과 | :----------- |로 구분됩니다.
+각 셀은 '|'로 구분되며 줄을 맞추지 않아도 되며 표 내용과 헤더로 구분됩니다.
+한 컬럼의 좌우정렬은 헤더 아래의 | :------- | 에서 지정할 수 있습니다.
+콜론(:)이 왼쪽에만 있으면 왼쪽정렬, 오른쪽에만 있으면 오른쪽 정렬, 양쪽에 모두 있으면 가운데 정렬입니다.
 셀 병합기능이 없기 때문에 사용에 다소 불편함이 있을 수 있습니다.
-한칸에 여러줄을 입력하려면 <pre><br /></pre>태그를 이용할 수 있습니다.
+한칸에 여러줄을 입력하려면 **&lt;br /&gt;**태그를 이용할 수 있습니다.
 표의 시작과 끝에는 반드시 한줄의 공백이 있어야 합니다.
 
 ```
@@ -140,7 +170,7 @@ sidebar:
 <iframe width="640" height="360" src="https://www.youtube.com/embed/rvm-m2ogrLA" frameborder="0" allowfullscreen=""></iframe>
 
 ## [링크](#링크)
-링크 삽입은 아래와 같이 사용할 수 있습니다. 주소를 저장하는 레퍼런스는 문서의 가장 하단에 작성합니다.
+링크 삽입은 아래와 같이 사용할 수 있습니다. 주소를 저장하는 레퍼런스 태그는 문서의 가장 하단에 작성합니다.
 
 [컨텐츠 작성방법][link reference]
 
@@ -148,6 +178,7 @@ sidebar:
 
 ```text
 [컨텐츠 작성방법][Contents Format]
+
 [Contents Format]: {{site.url}}/emanual/docs/kr/faq
 ```
 
@@ -163,17 +194,15 @@ sidebar:
 
 - 1번 방법
 
-  ```c++
+  ```cmake
   find_package( thormang3_kinematics_dynamics )
   target_link_libraries( thormang3_kinematics_dynamics )
   ```
 
-<pre>
-  ```c++
+  &#96;&#96;&#96;cmake
   find_package( thormang3_kinematics_dynamics )
   target_link_libraries( thormang3_kinematics_dynamics )
-  ```
-</pre>
+  &#96;&#96;&#96;
 
 - 2번 방법
 
@@ -182,9 +211,7 @@ sidebar:
   target_link_libraries( thormang3_kinematics_dynamics )
   ```
 
-<pre>
-  ```
+  &#96;&#96;&#96;
   find_package( thormang3_kinematics_dynamics )
   target_link_libraries( thormang3_kinematics_dynamics )
-  ```
-</pre>
+  &#96;&#96;&#96;
