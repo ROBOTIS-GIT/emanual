@@ -44,10 +44,12 @@
     {% endif %}
 
     {% if nav.children != null %}
+
     <li class="has-children">
       <input type="checkbox" name="toplevel_{{ forloop.index0 }}" id="toplevel_{{ forloop.index0 }}">
       <label for="toplevel_{{ forloop.index0 }}">{{ navtitle }}</label>
     {% else %}
+
     <li>
       <a href="{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ navurl }}">{{ navtitle }}</a>
     </li>
