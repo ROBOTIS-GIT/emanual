@@ -260,6 +260,7 @@ main:
         titlekr: "로보플러스 태스크"
         titlejp: "R+ Task"
         titlecn: "R+ Task"
+        urlkr: /software/rplus1/task/getting_started/
       - title: "R+ Manager"
         titlekr: "로보플러스 매니저"
         titlejp: "R+ Manager"
@@ -849,6 +850,27 @@ smart3-2:
         urlkr: /edu/smart/smart3-2/#블루투스-연결하기
   - titlekr: "교안예제"
     urlkr: /edu/smart/smart3-2/#교안예제
+
+#R+ Task 1.0 sidebar
+rplustask1:
+  - titlekr: "개요"
+    urlkr: /software/rplus1/task/getting_started/#개요
+    children:
+    - titlekr: "로보플러스 태스크"
+      urlkr: /software/rplus1/task/getting_started/#로보플러스-태스크
+  - titlekr: "시작하기"
+    urlkr: /software/rplus1/task/getting_started/#시작하기
+    children:
+    - titlekr: "명령줄 만들기"
+      urlkr: /software/rplus1/task/getting_started/#명령줄-만들기
+    - titlekr: "파라미터 만들기"
+      urlkr: /software/rplus1/task/getting_started/#파라미터-만들기
+    - titlekr: "프로그램 다운로드"
+      urlkr: /software/rplus1/task/getting_started/#프로그램-다운로드
+    - titlekr: "프로그램 결과 출력"
+      urlkr: /software/rplus1/task/getting_started/#프로그램-결과-출력
+    - titlekr: "가상로봇 조종"
+      urlkr: /software/rplus1/task/getting_started/#가상로봇-조종
 
 #R+ Manager 2.0 sidebar
 rplusmanager2:

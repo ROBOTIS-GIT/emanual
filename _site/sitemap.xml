@@ -52,6 +52,12 @@
 <loc>http://localhost:4000/emanual/docs/kr/platform/thormang3/getting_started/</loc>
 </url>
 <url>
+<<<<<<< HEAD
+=======
+<loc>http://localhost:4000/emanual/docs/kr/software/rplus1/task/getting_started/</loc>
+</url>
+<url>
+>>>>>>> contents_app
 <loc>http://localhost:4000/emanual/docs/kr/software/rplus2/manager/getting_started/</loc>
 </url>
 <url>
