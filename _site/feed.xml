@@ -1,5 +1,9 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 <?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.3.1">Jekyll</generator><link href="http://localhost:4000/emanual/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/emanual/" rel="alternate" type="text/html" /><updated>2017-08-07T14:24:49+09:00</updated><id>http://localhost:4000/emanual/</id><title type="html">ROBOTIS e-Manual</title><subtitle>e-Manual wiki</subtitle><author><name>Your Name</name></author></feed>
 =======
 <?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.3.1">Jekyll</generator><link href="http://localhost:4000/emanual/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/emanual/" rel="alternate" type="text/html" /><updated>2017-08-08T11:54:48+09:00</updated><id>http://localhost:4000/emanual/</id><title type="html">ROBOTIS e-Manual</title><subtitle>e-Manual wiki</subtitle><author><name>Your Name</name></author></feed>
 >>>>>>> contents_app
+=======
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.3.1">Jekyll</generator><link href="http://localhost:4000/emanual/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/emanual/" rel="alternate" type="text/html" /><updated>2017-08-08T10:55:54+09:00</updated><id>http://localhost:4000/emanual/</id><title type="html">ROBOTIS e-Manual</title><subtitle>e-Manual wiki</subtitle><author><name>Your Name</name></author></feed>
+>>>>>>> contents
