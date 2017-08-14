@@ -92,11 +92,10 @@
 
 {% capture group_notice_01 %}
 `Note` 여러줄짜리 글상자를 사용하려면 조금 복잡합니다.
-1. 글상자로 묶고자 하는 문단의 첫번째에 "{% capture group_notice_01 %}"를 넣고 마지막 숫자 01은 다른 그룹 글상자의 이름과 겹치지 않게 사용한 그룹 글상자의 숫자만큼 증가시켜줍니다.
-2. 글상자로 묶고자 하는 문단의 마지막 줄에 "{% endcapture %}"를 추가합니다.
+1. 글상자로 묶고자 하는 문단의 첫번째에 "&#123;% capture group_notice_01 %&#125;"를 넣고 마지막 숫자 01은 다른 그룹 글상자의 이름과 겹치지 않게 사용한 그룹 글상자의 숫자만큼 증가시켜줍니다.
+2. 글상자로 묶고자 하는 문단의 마지막 줄에 "&#123;% endcapture %&#125;"를 추가합니다.
 3. 글상자를 넣고자하는 부분에 아래의 코드를 추가하고 글상자의 유형에 따라 notice를 notice--info, notice--warning 등으로 변경한 뒤 group_notice_01의 01을 해당 그룹 글상자의 숫자와 맞춰줍니다.
-4. <div class="notice">{{ group_notice_01 | markdownify }}</div>
-{% endcapture %}
+4. &lt;div class="notice"&gt;&#123;&#123; group_notice_01 | markdownify &#125;&#125;&lt;/div&gt;&#123;% endcapture %&#125;
 
 <div class="notice">{{ group_notice_01 | markdownify }}</div>
 
@@ -171,34 +170,35 @@
 
 ## [텍스트 효과](#텍스트-효과)
 
-텍스트 효과에는 _기울임1_ 또는 *기울임2*, __두껍게1__ 또는 **두껍게2**, ~~선긋기~~ 를 사용할 수 있습니다.
+텍스트 효과에는 &#95;기울임1&#95; 또는 &#42;기울임2&#42;, &#95;&#95;두껍게1&#95;&#95; 또는 &#42;&#42;두껍게2&#42;&#42;, &#126;&#126;선긋기&#126;&#126; 를 사용할 수 있습니다.
+{: .notice}
 
 텍스트 효과에는 _기울임1_ 또는 *기울임2*, __두껍게1__ 또는 **두껍게2**, ~~선긋기~~ 를 사용할 수 있습니다.
-{: .notice}
 
 ## [소스코드 입력](#소스코드-입력)
 소스코드를 표시할 때에는 아래와 같이 할 수 있습니다. 1번 방법은 코딩언어를 명시함으로써 코드에 하이라이트를 해주는 기능입니다.
+코드는 자동적으로 글상자에 둘러쌓입니다.
 
 - 1번 방법
-
-  ```cmake
-  find_package( thormang3_kinematics_dynamics )
-  target_link_libraries( thormang3_kinematics_dynamics )
-  ```
 
   &#96;&#96;&#96;cmake
   find_package( thormang3_kinematics_dynamics )
   target_link_libraries( thormang3_kinematics_dynamics )
   &#96;&#96;&#96;
 
+  ```cmake
+  find_package( thormang3_kinematics_dynamics )
+  target_link_libraries( thormang3_kinematics_dynamics )
+  ```
+
 - 2번 방법
 
-  ```
+  &#96;&#96;&#96;
   find_package( thormang3_kinematics_dynamics )
   target_link_libraries( thormang3_kinematics_dynamics )
-  ```
+  &#96;&#96;&#96;
 
-  &#96;&#96;&#96;
+  ```
   find_package( thormang3_kinematics_dynamics )
   target_link_libraries( thormang3_kinematics_dynamics )
-  &#96;&#96;&#96;
+  ```
