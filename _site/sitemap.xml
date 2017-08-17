@@ -43,27 +43,18 @@
 <loc>http://localhost:4000/emanual/docs/kr/faq</loc>
 </url>
 <url>
-<<<<<<< HEAD
 <loc>http://localhost:4000/emanual/docs/en/platform/op3/getting_started/</loc>
 </url>
 <url>
-=======
->>>>>>> contents
 <loc>http://localhost:4000/emanual/docs/en/platform/thormang3/getting_started/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/emanual/docs/kr/platform/thormang3/getting_started/</loc>
 </url>
 <url>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
 <loc>http://localhost:4000/emanual/docs/kr/software/rplus1/task/getting_started/</loc>
 </url>
 <url>
->>>>>>> contents_app
-=======
->>>>>>> contents
 <loc>http://localhost:4000/emanual/docs/kr/software/rplus2/manager/getting_started/</loc>
 </url>
 <url>
@@ -83,6 +74,12 @@
 </url>
 <url>
 <loc>http://localhost:4000/emanual/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/emanual/docs/kr/software/rplus1/task/programming_01/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/emanual/docs/kr/software/rplus1/task/programming_02/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/emanual/search/</loc>

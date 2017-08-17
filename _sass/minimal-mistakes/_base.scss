@@ -27,6 +27,11 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
   font-family: $header-font-family;
   font-weight: bold;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
 }
 
 h1 {
@@ -50,6 +55,18 @@ h2 {
     counter-increment: h2;
     content: counter(h1) ". " counter(h2) ". ";
   }
+
+  ~ p {
+    margin-left: 0.5em;
+  }
+
+  ~ ul {
+    margin-left: 0.5em;
+  }
+
+  ~ ol {
+    margin-left: 0.5em;
+  }
 }
 
 h3 {
@@ -62,6 +79,18 @@ h3 {
     counter-increment: h3;
     content: counter(h1) ". " counter(h2) ". " counter(h3) ". ";
   }
+
+  ~ p {
+    margin-left: 1em;
+  }
+
+  ~ ul {
+    margin-left: 1em;
+  }
+
+  ~ ol {
+    margin-left: 1em;
+  }
 }
 
 h4 {
@@ -72,6 +101,18 @@ h4 {
   &:before {
     counter-increment: h4;
     content: counter(h1) ". " counter(h2) ". " counter(h3) ". " counter(h4) ". ";
+  }
+
+  ~ p {
+    margin-left: 1.5em;
+  }
+
+  ~ ul {
+    margin-left: 1.5em;
+  }
+
+  ~ ol {
+    margin-left: 1.5em;
   }
 }
 
@@ -86,6 +127,14 @@ h6 {
 
 small, .small {
   font-size: $type-size-7;
+}
+
+li {
+  font-size: 0.9em;
+
+  > ul {
+   margin-left: 0;
+ }
 }
 
 p {

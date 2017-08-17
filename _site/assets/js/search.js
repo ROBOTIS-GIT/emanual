@@ -38,19 +38,21 @@ jQuery(function() {
       if (results.length) {
         $search_results.empty(); // Clear any old results
 
+        $search_results.append('<font color=red><b>Search Results:</b></font><br>');
         // Iterate over the results
         results.forEach(function(result) {
           var item = loaded_data[result.ref];
 
           // Build a snippet of HTML for this result
-          var appendString = '<li style="list-style:none;"><a href="' + item.url + '">' + item.title + '<ul style="list-style:none;"><li>' + item.content.substring(0, 150) + '</li></ul></a></li>';
+          var appendString = '<li><a href="' + item.url + '" style="color:#006c8c;">' + item.title + '<ul style="list-style:none;"><li>' + item.content.substring(0, 150) + '</li></ul></a></li>';
 
           // Add the snippet to the collection of results.
           $search_results.append(appendString);
         });
       } else {
         // If there are no results, let the user know.
-        $search_results.html('<font color=red><b>No Results Found.</b></font>');
+        $search_results.empty(); // Clear any old results
+        $search_results.append('<font color=red><b>Search Results: None</b></font><br>');
       }
     });
   }

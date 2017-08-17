@@ -19,11 +19,13 @@
 }
 
 //new class for smaller font size in contents
+/*
 .article-wrap {
   p, li, ol {
     font-size: 80%;
   }
 }
+*/
 
 .page {
   @include breakpoint($large) {
