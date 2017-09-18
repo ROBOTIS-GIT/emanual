@@ -27,21 +27,28 @@ main:
       children:
       - title: "DX-113"
         titlekr: "DX-113"
+        url: /dxl/dx/dx-113/
       - title: "DX-116"
         titlekr: "DX-116"
+        url: /dxl/dx/dx-116/
       - title: "DX-117"
         titlekr: "DX-117"
+        url: /dxl/dx/dx-117/
     - title: "RX Series"
       titlekr: "RX 시리즈"
       children:
-      - title: "RX-10"
+      - title: "RX-10"``
         titlekr: "RX-10"
+        url: /dxl/rx/rx-10/
       - title: "RX-24F"
         titlekr: "RX-24F"
+        url: /dxl/rx/rx-24f/
       - title: "RX-28"
         titlekr: "RX-28"
+        url: /dxl/rx/rx-28/
       - title: "RX-64"
         titlekr: "RX-64"
+        url: /dxl/rx/rx-64/
     - title: "MX Series"
       titlekr: "MX 시리즈"
       titlejp: "MX シリーズ"
@@ -49,12 +56,16 @@ main:
       children:
       - title: "MX-12W"
         titlekr: "MX-12W"
+        url: /dxl/mx/mx-12w/
       - title: "MX-28T/R/AT/AR"
         titlekr: "MX-28T/R/AT/AR"
+        url: /dxl/mx/mx-28/
       - title: "MX-64T/R/AT/AR"
         titlekr: "MX-64T/R/AT/AR"
+        url: /dxl/mx/mx-64/
       - title: "MX-106T/R"
         titlekr: "MX-106T/R"
+        url: /dxl/mx/mx-106/
     - title: "X Series"
       titlekr: "X 시리즈"
       titlejp: "X シリーズ"
@@ -134,8 +145,7 @@ main:
         titlekr: "3단계 교육키트"
         titlejp: "Level 3 Kit"
         titlecn: "Level 3 Kit"
-      - title: "Level 4 Kit"
-        titlekr: "4단계 교육키트"
+      - titlekr: "4단계 교육키트"
         titlejp: "Level 4 Kit"
         titlecn: "Level 4 Kit"
     - title: "Dream I"
@@ -260,6 +270,7 @@ main:
         titlekr: "로보플러스 태스크"
         titlejp: "R+ Task"
         titlecn: "R+ Task"
+        url: /software/rplus1/task/getting_started/
         urlkr: /software/rplus1/task/getting_started/
       - title: "R+ Manager"
         titlekr: "로보플러스 매니저"
@@ -522,10 +533,10 @@ main:
     titlekr: "FAQ"
     titlejp: "FAQ"
     titlecn: "FAQ"
-    url: /faq
-    urlkr: /faq
-    urljp: /fap
-    urlcn: /faq
+    url: /faq/
+    urlkr: /faq/
+    urljp: /faq/
+    urlcn: /faq/
 
 #AX-12W sidebar
 ax-12w:
@@ -728,6 +739,542 @@ ax-18a:
       - title: "Pin Assignment"
         url: /dxl/ax/ax-18a/#pin-assignment
 
+#ex-106+ sidebar
+ex-106+:
+  - title: "Specifications"
+    titlekr: "스펙"
+    url: /dxl/ex/ex-106+/#specifications
+    urlkr: /dxl/ex/ex-106+/#스펙
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /dxl/ex/ex-106+/#control-table
+    urlkr: /dxl/ex/ex-106+/#컨트롤-테이블
+    children:
+      - title: "Control Table, Data, Address"
+        titlekr: "컨트롤 테이블, 데이터, 주소"
+        url: /dxl/ex/ex-106+/#control-table-data-address
+        urlkr: /dxl/ex/ex-106+/#컨트롤-테이블-데이터-주소
+        children:
+          - title: "Area(EEPROM, RAM)"
+            url: /dxl/ex/ex-106+/#area-eeprom-ram
+          - title: "Size"
+            url: /dxl/ex/ex-106+/#size
+          - title: "Access"
+            url: /dxl/ex/ex-106+/#access
+          - title: "Initial Value"
+            url: /dxl/ex/ex-106+/#initial-value
+      - title: "EEPROM Area"
+        titlekr: "EEPROM 영역"
+        url: /dxl/ex/ex-106+/#control-table-of-eeprom-area
+        urlkr: /dxl/ex/ex-106+/#eeprom-영역
+      - title: "RAM Area"
+        titlekr: "RAM 영역"
+        url: /dxl/ex/ex-106+/#control-table-of-ram-area
+        urlkr: /dxl/ex/ex-106+/#ram-영역
+      - title: "Control Table Description"
+        titlekr: "컨트롤 테이블 설명"
+        url: /dxl/ex/ex-106+/#control-table-description
+        urlkr: /dxl/ex/ex-106+/#컨트롤-테이블-설명
+  - title: "How to Assemble"
+    titlekr: "조립 예시"
+    url: /dxl/ex/ex-106+/#how-to-assemble
+    urlkr: /dxl/ex/ex-106+/#조립-예시
+  - title: "Maintenance"
+    titlekr: "유지보수"
+    url: /dxl/ex/ex-106+/#maintenance
+    urlkr: /dxl/ex/ex-106+/#유지보수
+    children:
+      - title: "Horn, Bearing"
+        titlekr: "혼, 베어링"
+        url: /dxl/ex/ex-106+/#horn-and-bearing-replacement
+        urlkr: /dxl/ex/ex-106+/#혼-베어링
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /dxl/ex/ex-106+/#reference
+    urlkr: /dxl/ex/ex-106+/#참고자료
+    children:
+      - title: "Quick Start"
+        titlekr: "퀵스타트"
+        url: /dxl/ex/ex-106+/#quick-start
+        urlkr: /dxl/ex/ex-106+/#퀵스타트
+      - title: "Drawings"
+        titlekr: "도면"
+        url: /dxl/ex/ex-106+/#drawings
+        urlkr: /dxl/ex/ex-106+/#도면
+      - title: "Communication Circuit"
+        url: /dxl/ex/ex-106+/#communication-circuit
+      - title: "Pin Assignment"
+        url: /dxl/ex/ex-106+/#pin-assignment
+
+#dx-113 sidebar
+dx-113:
+  - title: "Specifications"
+    titlekr: "스펙"
+    url: /dxl/dx/dx-113/#specifications
+    urlkr: /dxl/dx/dx-113/#스펙
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /dxl/dx/dx-113/#control-table
+    urlkr: /dxl/dx/dx-113/#컨트롤-테이블
+    children:
+      - title: "Control Table, Data, Address"
+        titlekr: "컨트롤 테이블, 데이터, 주소"
+        url: /dxl/dx/dx-113/#control-table-data-address
+        urlkr: /dxl/dx/dx-113/#컨트롤-테이블-데이터-주소
+        children:
+          - title: "Area(EEPROM, RAM)"
+            url: /dxl/dx/dx-113/#area-eeprom-ram
+          - title: "Size"
+            url: /dxl/dx/dx-113/#size
+          - title: "Access"
+            url: /dxl/dx/dx-113/#access
+          - title: "Initial Value"
+            url: /dxl/dx/dx-113/#initial-value
+      - title: "EEPROM Area"
+        titlekr: "EEPROM 영역"
+        url: /dxl/dx/dx-113/#control-table-of-eeprom-area
+        urlkr: /dxl/dx/dx-113/#eeprom-영역
+      - title: "RAM Area"
+        titlekr: "RAM 영역"
+        url: /dxl/dx/dx-113/#control-table-of-ram-area
+        urlkr: /dxl/dx/dx-113/#ram-영역
+      - title: "Control Table Description"
+        titlekr: "컨트롤 테이블 설명"
+        url: /dxl/dx/dx-113/#control-table-description
+        urlkr: /dxl/dx/dx-113/#컨트롤-테이블-설명
+  - title: "How to Assemble"
+    titlekr: "조립 예시"
+    url: /dxl/dx/dx-113/#how-to-assemble
+    urlkr: /dxl/dx/dx-113/#조립-예시
+  - title: "Maintenance"
+    titlekr: "유지보수"
+    url: /dxl/dx/dx-113/#maintenance
+    urlkr: /dxl/dx/dx-113/#유지보수
+    children:
+      - title: "Horn, Bearing"
+        titlekr: "혼, 베어링"
+        url: /dxl/dx/dx-113/#horn-and-bearing-replacement
+        urlkr: /dxl/dx/dx-113/#혼-베어링
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /dxl/dx/dx-113/#reference
+    urlkr: /dxl/dx/dx-113/#참고자료
+    children:
+      - title: "Quick Start"
+        titlekr: "퀵스타트"
+        url: /dxl/dx/dx-113/#quick-start
+        urlkr: /dxl/dx/dx-113/#퀵스타트
+      - title: "Drawings"
+        titlekr: "도면"
+        url: /dxl/dx/dx-113/#drawings
+        urlkr: /dxl/dx/dx-113/#도면
+      - title: "Communication Circuit"
+        url: /dxl/dx/dx-113/#communication-circuit
+      - title: "Pin Assignment"
+        url: /dxl/dx/dx-113/#pin-assignment
+
+#dx-116 sidebar
+dx-116:
+  - title: "Specifications"
+    titlekr: "스펙"
+    url: /dxl/dx/dx-116/#specifications
+    urlkr: /dxl/dx/dx-116/#스펙
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /dxl/dx/dx-116/#control-table
+    urlkr: /dxl/dx/dx-116/#컨트롤-테이블
+    children:
+      - title: "Control Table, Data, Address"
+        titlekr: "컨트롤 테이블, 데이터, 주소"
+        url: /dxl/dx/dx-116/#control-table-data-address
+        urlkr: /dxl/dx/dx-116/#컨트롤-테이블-데이터-주소
+        children:
+          - title: "Area(EEPROM, RAM)"
+            url: /dxl/dx/dx-116/#area-eeprom-ram
+          - title: "Size"
+            url: /dxl/dx/dx-116/#size
+          - title: "Access"
+            url: /dxl/dx/dx-116/#access
+          - title: "Initial Value"
+            url: /dxl/dx/dx-116/#initial-value
+      - title: "EEPROM Area"
+        titlekr: "EEPROM 영역"
+        url: /dxl/dx/dx-116/#control-table-of-eeprom-area
+        urlkr: /dxl/dx/dx-116/#eeprom-영역
+      - title: "RAM Area"
+        titlekr: "RAM 영역"
+        url: /dxl/dx/dx-116/#control-table-of-ram-area
+        urlkr: /dxl/dx/dx-116/#ram-영역
+      - title: "Control Table Description"
+        titlekr: "컨트롤 테이블 설명"
+        url: /dxl/dx/dx-116/#control-table-description
+        urlkr: /dxl/dx/dx-116/#컨트롤-테이블-설명
+  - title: "How to Assemble"
+    titlekr: "조립 예시"
+    url: /dxl/dx/dx-116/#how-to-assemble
+    urlkr: /dxl/dx/dx-116/#조립-예시
+  - title: "Maintenance"
+    titlekr: "유지보수"
+    url: /dxl/dx/dx-116/#maintenance
+    urlkr: /dxl/dx/dx-116/#유지보수
+    children:
+      - title: "Horn, Bearing"
+        titlekr: "혼, 베어링"
+        url: /dxl/dx/dx-116/#horn-and-bearing-replacement
+        urlkr: /dxl/dx/dx-116/#혼-베어링
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /dxl/dx/dx-116/#reference
+    urlkr: /dxl/dx/dx-116/#참고자료
+    children:
+      - title: "Quick Start"
+        titlekr: "퀵스타트"
+        url: /dxl/dx/dx-116/#quick-start
+        urlkr: /dxl/dx/dx-116/#퀵스타트
+      - title: "Drawings"
+        titlekr: "도면"
+        url: /dxl/dx/dx-116/#drawings
+        urlkr: /dxl/dx/dx-116/#도면
+      - title: "Communication Circuit"
+        url: /dxl/dx/dx-116/#communication-circuit
+      - title: "Pin Assignment"
+        url: /dxl/dx/dx-116/#pin-assignment
+
+#dx-117 sidebar
+dx-117:
+  - title: "Specifications"
+    titlekr: "스펙"
+    url: /dxl/dx/dx-117/#specifications
+    urlkr: /dxl/dx/dx-117/#스펙
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /dxl/dx/dx-117/#control-table
+    urlkr: /dxl/dx/dx-117/#컨트롤-테이블
+    children:
+      - title: "Control Table, Data, Address"
+        titlekr: "컨트롤 테이블, 데이터, 주소"
+        url: /dxl/dx/dx-117/#control-table-data-address
+        urlkr: /dxl/dx/dx-117/#컨트롤-테이블-데이터-주소
+        children:
+          - title: "Area(EEPROM, RAM)"
+            url: /dxl/dx/dx-117/#area-eeprom-ram
+          - title: "Size"
+            url: /dxl/dx/dx-117/#size
+          - title: "Access"
+            url: /dxl/dx/dx-117/#access
+          - title: "Initial Value"
+            url: /dxl/dx/dx-117/#initial-value
+      - title: "EEPROM Area"
+        titlekr: "EEPROM 영역"
+        url: /dxl/dx/dx-117/#control-table-of-eeprom-area
+        urlkr: /dxl/dx/dx-117/#eeprom-영역
+      - title: "RAM Area"
+        titlekr: "RAM 영역"
+        url: /dxl/dx/dx-117/#control-table-of-ram-area
+        urlkr: /dxl/dx/dx-117/#ram-영역
+      - title: "Control Table Description"
+        titlekr: "컨트롤 테이블 설명"
+        url: /dxl/dx/dx-117/#control-table-description
+        urlkr: /dxl/dx/dx-117/#컨트롤-테이블-설명
+  - title: "How to Assemble"
+    titlekr: "조립 예시"
+    url: /dxl/dx/dx-117/#how-to-assemble
+    urlkr: /dxl/dx/dx-117/#조립-예시
+  - title: "Maintenance"
+    titlekr: "유지보수"
+    url: /dxl/dx/dx-117/#maintenance
+    urlkr: /dxl/dx/dx-117/#유지보수
+    children:
+      - title: "Horn, Bearing"
+        titlekr: "혼, 베어링"
+        url: /dxl/dx/dx-117/#horn-and-bearing-replacement
+        urlkr: /dxl/dx/dx-117/#혼-베어링
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /dxl/dx/dx-117/#reference
+    urlkr: /dxl/dx/dx-117/#참고자료
+    children:
+      - title: "Quick Start"
+        titlekr: "퀵스타트"
+        url: /dxl/dx/dx-117/#quick-start
+        urlkr: /dxl/dx/dx-117/#퀵스타트
+      - title: "Drawings"
+        titlekr: "도면"
+        url: /dxl/dx/dx-117/#drawings
+        urlkr: /dxl/dx/dx-117/#도면
+      - title: "Communication Circuit"
+        url: /dxl/dx/dx-117/#communication-circuit
+      - title: "Pin Assignment"
+        url: /dxl/dx/dx-117/#pin-assignment
+
+#RX-10 sidebar
+rx-10:
+  - title: "Specifications"
+    titlekr: "스펙"
+    url: /dxl/rx/rx-10/#specifications
+    urlkr: /dxl/rx/rx-10/#스펙
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /dxl/rx/rx-10/#control-table
+    urlkr: /dxl/rx/rx-10/#컨트롤-테이블
+    children:
+      - title: "Control Table, Data, Address"
+        titlekr: "컨트롤 테이블, 데이터, 주소"
+        url: /dxl/rx/rx-10/#control-table-data-address
+        urlkr: /dxl/rx/rx-10/#컨트롤-테이블-데이터-주소
+        children:
+          - title: "Area(EEPROM, RAM)"
+            url: /dxl/rx/rx-10/#area-eeprom-ram
+          - title: "Size"
+            url: /dxl/rx/rx-10/#size
+          - title: "Access"
+            url: /dxl/rx/rx-10/#access
+          - title: "Initial Value"
+            url: /dxl/rx/rx-10/#initial-value
+      - title: "EEPROM Area"
+        titlekr: "EEPROM 영역"
+        url: /dxl/rx/rx-10/#control-table-of-eeprom-area
+        urlkr: /dxl/rx/rx-10/#eeprom-영역
+      - title: "RAM Area"
+        titlekr: "RAM 영역"
+        url: /dxl/rx/rx-10/#control-table-of-ram-area
+        urlkr: /dxl/rx/rx-10/#ram-영역
+      - title: "Control Table Description"
+        titlekr: "컨트롤 테이블 설명"
+        url: /dxl/rx/rx-10/#control-table-description
+        urlkr: /dxl/rx/rx-10/#컨트롤-테이블-설명
+  - title: "How to Assemble"
+    titlekr: "조립 예시"
+    url: /dxl/rx/rx-10/#how-to-assemble
+    urlkr: /dxl/rx/rx-10/#조립-예시
+  - title: "Maintenance"
+    titlekr: "유지보수"
+    url: /dxl/rx/rx-10/#maintenance
+    urlkr: /dxl/rx/rx-10/#유지보수
+    children:
+      - title: "Horn, Bearing"
+        titlekr: "혼, 베어링"
+        url: /dxl/rx/rx-10/#horn-and-bearing-replacement
+        urlkr: /dxl/rx/rx-10/#혼-베어링
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /dxl/rx/rx-10/#reference
+    urlkr: /dxl/rx/rx-10/#참고자료
+    children:
+      - title: "Quick Start"
+        titlekr: "퀵스타트"
+        url: /dxl/rx/rx-10/#quick-start
+        urlkr: /dxl/rx/rx-10/#퀵스타트
+      - title: "Drawings"
+        titlekr: "도면"
+        url: /dxl/rx/rx-10/#drawings
+        urlkr: /dxl/rx/rx-10/#도면
+      - title: "Communication Circuit"
+        url: /dxl/rx/rx-10/#communication-circuit
+      - title: "Pin Assignment"
+        url: /dxl/rx/rx-10/#pin-assignment
+
+#RX-24F sidebar
+rx-24f:
+  - title: "Specifications"
+    titlekr: "스펙"
+    url: /dxl/rx/rx-24f/#specifications
+    urlkr: /dxl/rx/rx-24f/#스펙
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /dxl/rx/rx-24f/#control-table
+    urlkr: /dxl/rx/rx-24f/#컨트롤-테이블
+    children:
+      - title: "Control Table, Data, Address"
+        titlekr: "컨트롤 테이블, 데이터, 주소"
+        url: /dxl/rx/rx-24f/#control-table-data-address
+        urlkr: /dxl/rx/rx-24f/#컨트롤-테이블-데이터-주소
+        children:
+          - title: "Area(EEPROM, RAM)"
+            url: /dxl/rx/rx-24f/#area-eeprom-ram
+          - title: "Size"
+            url: /dxl/rx/rx-24f/#size
+          - title: "Access"
+            url: /dxl/rx/rx-24f/#access
+          - title: "Initial Value"
+            url: /dxl/rx/rx-24f/#initial-value
+      - title: "EEPROM Area"
+        titlekr: "EEPROM 영역"
+        url: /dxl/rx/rx-24f/#control-table-of-eeprom-area
+        urlkr: /dxl/rx/rx-24f/#eeprom-영역
+      - title: "RAM Area"
+        titlekr: "RAM 영역"
+        url: /dxl/rx/rx-24f/#control-table-of-ram-area
+        urlkr: /dxl/rx/rx-24f/#ram-영역
+      - title: "Control Table Description"
+        titlekr: "컨트롤 테이블 설명"
+        url: /dxl/rx/rx-24f/#control-table-description
+        urlkr: /dxl/rx/rx-24f/#컨트롤-테이블-설명
+  - title: "How to Assemble"
+    titlekr: "조립 예시"
+    url: /dxl/rx/rx-24f/#how-to-assemble
+    urlkr: /dxl/rx/rx-24f/#조립-예시
+  - title: "Maintenance"
+    titlekr: "유지보수"
+    url: /dxl/rx/rx-24f/#maintenance
+    urlkr: /dxl/rx/rx-24f/#유지보수
+    children:
+      - title: "Horn, Bearing"
+        titlekr: "혼, 베어링"
+        url: /dxl/rx/rx-24f/#horn-and-bearing-replacement
+        urlkr: /dxl/rx/rx-24f/#혼-베어링
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /dxl/rx/rx-24f/#reference
+    urlkr: /dxl/rx/rx-24f/#참고자료
+    children:
+      - title: "Quick Start"
+        titlekr: "퀵스타트"
+        url: /dxl/rx/rx-24f/#quick-start
+        urlkr: /dxl/rx/rx-24f/#퀵스타트
+      - title: "Drawings"
+        titlekr: "도면"
+        url: /dxl/rx/rx-24f/#drawings
+        urlkr: /dxl/rx/rx-24f/#도면
+      - title: "Communication Circuit"
+        url: /dxl/rx/rx-24f/#communication-circuit
+      - title: "Pin Assignment"
+        url: /dxl/rx/rx-24f/#pin-assignment
+
+#RX-28 sidebar
+rx-28:
+  - title: "Specifications"
+    titlekr: "스펙"
+    url: /dxl/rx/rx-28/#specifications
+    urlkr: /dxl/rx/rx-28/#스펙
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /dxl/rx/rx-28/#control-table
+    urlkr: /dxl/rx/rx-28/#컨트롤-테이블
+    children:
+      - title: "Control Table, Data, Address"
+        titlekr: "컨트롤 테이블, 데이터, 주소"
+        url: /dxl/rx/rx-28/#control-table-data-address
+        urlkr: /dxl/rx/rx-28/#컨트롤-테이블-데이터-주소
+        children:
+          - title: "Area(EEPROM, RAM)"
+            url: /dxl/rx/rx-28/#area-eeprom-ram
+          - title: "Size"
+            url: /dxl/rx/rx-28/#size
+          - title: "Access"
+            url: /dxl/rx/rx-28/#access
+          - title: "Initial Value"
+            url: /dxl/rx/rx-28/#initial-value
+      - title: "EEPROM Area"
+        titlekr: "EEPROM 영역"
+        url: /dxl/rx/rx-28/#control-table-of-eeprom-area
+        urlkr: /dxl/rx/rx-28/#eeprom-영역
+      - title: "RAM Area"
+        titlekr: "RAM 영역"
+        url: /dxl/rx/rx-28/#control-table-of-ram-area
+        urlkr: /dxl/rx/rx-28/#ram-영역
+      - title: "Control Table Description"
+        titlekr: "컨트롤 테이블 설명"
+        url: /dxl/rx/rx-28/#control-table-description
+        urlkr: /dxl/rx/rx-28/#컨트롤-테이블-설명
+  - title: "How to Assemble"
+    titlekr: "조립 예시"
+    url: /dxl/rx/rx-28/#how-to-assemble
+    urlkr: /dxl/rx/rx-28/#조립-예시
+  - title: "Maintenance"
+    titlekr: "유지보수"
+    url: /dxl/rx/rx-28/#maintenance
+    urlkr: /dxl/rx/rx-28/#유지보수
+    children:
+      - title: "Horn, Bearing"
+        titlekr: "혼, 베어링"
+        url: /dxl/rx/rx-28/#horn-and-bearing-replacement
+        urlkr: /dxl/rx/rx-28/#혼-베어링
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /dxl/rx/rx-28/#reference
+    urlkr: /dxl/rx/rx-28/#참고자료
+    children:
+      - title: "Quick Start"
+        titlekr: "퀵스타트"
+        url: /dxl/rx/rx-28/#quick-start
+        urlkr: /dxl/rx/rx-28/#퀵스타트
+      - title: "Drawings"
+        titlekr: "도면"
+        url: /dxl/rx/rx-28/#drawings
+        urlkr: /dxl/rx/rx-28/#도면
+      - title: "Communication Circuit"
+        url: /dxl/rx/rx-28/#communication-circuit
+      - title: "Pin Assignment"
+        url: /dxl/rx/rx-28/#pin-assignment
+
+#RX-64 sidebar
+rx-64:
+  - title: "Specifications"
+    titlekr: "스펙"
+    url: /dxl/rx/rx-64/#specifications
+    urlkr: /dxl/rx/rx-64/#스펙
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /dxl/rx/rx-64/#control-table
+    urlkr: /dxl/rx/rx-64/#컨트롤-테이블
+    children:
+      - title: "Control Table, Data, Address"
+        titlekr: "컨트롤 테이블, 데이터, 주소"
+        url: /dxl/rx/rx-64/#control-table-data-address
+        urlkr: /dxl/rx/rx-64/#컨트롤-테이블-데이터-주소
+        children:
+          - title: "Area(EEPROM, RAM)"
+            url: /dxl/rx/rx-64/#area-eeprom-ram
+          - title: "Size"
+            url: /dxl/rx/rx-64/#size
+          - title: "Access"
+            url: /dxl/rx/rx-64/#access
+          - title: "Initial Value"
+            url: /dxl/rx/rx-64/#initial-value
+      - title: "EEPROM Area"
+        titlekr: "EEPROM 영역"
+        url: /dxl/rx/rx-64/#control-table-of-eeprom-area
+        urlkr: /dxl/rx/rx-64/#eeprom-영역
+      - title: "RAM Area"
+        titlekr: "RAM 영역"
+        url: /dxl/rx/rx-64/#control-table-of-ram-area
+        urlkr: /dxl/rx/rx-64/#ram-영역
+      - title: "Control Table Description"
+        titlekr: "컨트롤 테이블 설명"
+        url: /dxl/rx/rx-64/#control-table-description
+        urlkr: /dxl/rx/rx-64/#컨트롤-테이블-설명
+  - title: "How to Assemble"
+    titlekr: "조립 예시"
+    url: /dxl/rx/rx-64/#how-to-assemble
+    urlkr: /dxl/rx/rx-64/#조립-예시
+  - title: "Maintenance"
+    titlekr: "유지보수"
+    url: /dxl/rx/rx-64/#maintenance
+    urlkr: /dxl/rx/rx-64/#유지보수
+    children:
+      - title: "Horn, Bearing"
+        titlekr: "혼, 베어링"
+        url: /dxl/rx/rx-64/#horn-and-bearing-replacement
+        urlkr: /dxl/rx/rx-64/#혼-베어링
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /dxl/rx/rx-64/#reference
+    urlkr: /dxl/rx/rx-64/#참고자료
+    children:
+      - title: "Quick Start"
+        titlekr: "퀵스타트"
+        url: /dxl/rx/rx-64/#quick-start
+        urlkr: /dxl/rx/rx-64/#퀵스타트
+      - title: "Drawings"
+        titlekr: "도면"
+        url: /dxl/rx/rx-64/#drawings
+        urlkr: /dxl/rx/rx-64/#도면
+      - title: "Communication Circuit"
+        url: /dxl/rx/rx-64/#communication-circuit
+      - title: "Pin Assignment"
+        url: /dxl/rx/rx-64/#pin-assignment
+
 #XH430-W210 sidebar
 xh430-w210:
   - title: "Specifications"
@@ -805,6 +1352,44 @@ xh430-w210:
         url: /dxl/x/xh430-w210/#drawings
         urlkr: /dxl/x/xh430-w210/#도면
 
+#Ollo Bug Kit sidebar
+ollo_bug:
+  - title: "Introduction"
+    url: /edu/ollo/bugkit_getting_started/#introduction
+  - title: "Getting Started"
+    url: /edu/ollo/bugkit_getting_started/#getting-started
+    children:
+      - title: "Part List"
+        url: /edu/ollo/bugkit_getting_started/#part-list
+      - title: "How to Play"
+        url: /edu/ollo/bugkit_getting_started/#how-to-play
+      - title: "Wireless Control"
+        url: /edu/ollo/bugkit_getting_started/#wireless-control
+  - title: "Applications"
+    url: /edu/ollo/bugkit_getting_started/#applications
+    children:
+      - title: "Battle Bug"
+        url: /edu/ollo/bugkit_getting_started/#battle-bug
+      - title: "Car"
+        url: /edu/ollo/bugkit_getting_started/#car
+      - title: "Other Devices"
+        url: /edu/ollo/bugkit_getting_started/#other-devices
+  - title: "Download"
+    url: /edu/ollo/bugkit_getting_started/#download
+  - title: "Programming"
+    children:
+      - title: "Print on the Screen"
+        url: /edu/ollo/bugkit_print_screen/#print-on-the-screen
+      - title: "Move the Bug"
+        url: /edu/ollo/bugkit_move_bug/#move-the-bug
+      - title: "Line Tracing Bug"
+        url: /edu/ollo/bugkit_linetracing_bug/#line-tracing-bug
+      - title: "Sensing Bug"
+        url: /edu/ollo/bugkit_sensor_bug/#sensing-bug
+      - title: "Control the Bug"
+        url: /edu/ollo/bugkit_control_bug/#control-the-bug
+
+
 #DreamI Level1 sidebar
 dream1-1:
   - titlekr: "개요"
@@ -853,24 +1438,251 @@ smart3-2:
 
 #R+ Task 1.0 sidebar
 rplustask1:
-  - titlekr: "개요"
+  - title: "Introduction"
+    titlekr: "개요"
+    url: /software/rplus1/task/getting_started/#introduction
     urlkr: /software/rplus1/task/getting_started/#개요
     children:
-    - titlekr: "로보플러스 태스크"
-      urlkr: /software/rplus1/task/getting_started/#로보플러스-태스크
-  - titlekr: "시작하기"
+    - title: "Install"
+      titlekr: "설치"
+      url: /software/rplus1/task/getting_started/#install
+      urlkr: /software/rplus1/task/getting_started/#설치
+  - title: "Getting Started"
+    titlekr: "시작하기"
+    url: /software/rplus1/task/getting_started/#getting-started
     urlkr: /software/rplus1/task/getting_started/#시작하기
     children:
-    - titlekr: "명령줄 만들기"
+    - title: "Select Command"
+      titlekr: "명령줄 만들기"
+      url: /software/rplus1/task/getting_started/#select-command
       urlkr: /software/rplus1/task/getting_started/#명령줄-만들기
-    - titlekr: "파라미터 만들기"
+    - title: "Select Parameter"
+      titlekr: "파라미터 만들기"
+      url: /software/rplus1/task/getting_started/#select-parameter
       urlkr: /software/rplus1/task/getting_started/#파라미터-만들기
-    - titlekr: "프로그램 다운로드"
+    - title: "Program Download"
+      titlekr: "프로그램 다운로드"
+      url: /software/rplus1/task/getting_started/#program-download
       urlkr: /software/rplus1/task/getting_started/#프로그램-다운로드
-    - titlekr: "프로그램 결과 출력"
+    - title: "Print on the Screen"
+      titlekr: "프로그램 결과 출력"
+      url: /software/rplus1/task/getting_started/#print-on-the-screen
       urlkr: /software/rplus1/task/getting_started/#프로그램-결과-출력
-    - titlekr: "가상로봇 조종"
+    - title: "Virtual Robot Control"
+      titlekr: "가상로봇 조종"
+      url: /software/rplus1/task/getting_started/#virtual-robot-control
       urlkr: /software/rplus1/task/getting_started/#가상로봇-조종
+  - title: "Programming"
+    url: /software/rplus1/task/programming_01/#programming_01
+    children:
+    - title: "Edit"
+      url: /software/rplus1/task/programming_01/#edit
+      children:
+      - title: "Select Multiple Lines"
+        url: /software/rplus1/task/programming_01/#select-multiple-lines
+      - title: "Insert New Line"
+        url: /software/rplus1/task/programming_01/#insert-new-line
+      - title: "Delete Lines"
+        url: /software/rplus1/task/programming_01/#delete-lines
+      - title: "Enable/Disable Lines"
+        url: /software/rplus1/task/programming_01/#enabledisable-lines
+      - title: "Copy/Cut/Paste"
+        url: /software/rplus1/task/programming_01/#copycutpaste
+      - title: "Find Name"
+        url: /software/rplus1/task/programming_01/#find-name
+    - title: "Commands"
+      url: /software/rplus1/task/programming_01/#commands
+      children:
+      - title: "Start Program"
+        url: /software/rplus1/task/programming_01/#start-program
+      - title: "End Program"
+        url: /software/rplus1/task/programming_01/#end-program
+      - title: "Start/End of Section"
+        url: /software/rplus1/task/programming_01/#startend-of-section
+      - title: "Comments/Notes"
+        url: /software/rplus1/task/programming_01/#commentsnotes
+      - title: "Calculate"
+        url: /software/rplus1/task/programming_01/#calculate
+      - title: "Load"
+        url: /software/rplus1/task/programming_01/#load
+      - title: "Label/Jump"
+        url: /software/rplus1/task/programming_01/#labeljump
+      - title: "If/Else if/Else"
+        url: /software/rplus1/task/programming_01/#ifelse-ifelse
+      - title: "Endless Loop"
+        url: /software/rplus1/task/programming_01/#endless-loop
+      - title: "Loop While"
+        url: /software/rplus1/task/programming_01/#loop-while
+      - title: "Loop For"
+        url: /software/rplus1/task/programming_01/#loop-for
+      - title: "Break Loop"
+        url: /software/rplus1/task/programming_01/#break-loop
+      - title: "Wait While"
+        url: /software/rplus1/task/programming_01/#wait-while
+      - title: "Exit Function"
+        url: /software/rplus1/task/programming_01/#exit-function
+      - title: "Make/Call Function"
+        url: /software/rplus1/task/programming_01/#makecall-function
+      - title: "Callback Function"
+        url: /software/rplus1/task/programming_01/#callback-function
+    - title: "Controller Parameters"
+      url: /software/rplus1/task/programming_02/#controller-parameters
+      children:
+      - title: "Remocon TXD"
+        url: /software/rplus1/task/programming_02/#remocon-txd
+      - title: "Remocon RXD"
+        url: /software/rplus1/task/programming_02/#remocon-rxd
+      - title: "Remocon Arrived"
+        url: /software/rplus1/task/programming_02/#remocon-arrived
+      - title: "Aux LED"
+        url: /software/rplus1/task/programming_02/#aux-led
+      - title: "Button"
+        url: /software/rplus1/task/programming_02/#button
+      - title: "Timer"
+        url: /software/rplus1/task/programming_02/#timer
+      - title: "HR Timer"
+        url: /software/rplus1/task/programming_02/#hr-timer
+      - title: "Remocon ID"
+        url: /software/rplus1/task/programming_02/#remocon-id
+      - title: "My ID"
+        url: /software/rplus1/task/programming_02/#my-id
+      - title: "IR Left/Center/Right"
+        url: /software/rplus1/task/programming_02/#ir-leftcenterright
+      - title: "Buzzer Index"
+        url: /software/rplus1/task/programming_02/#buzzer-index
+      - title: "Buzzer Time"
+        url: /software/rplus1/task/programming_02/#buzzer-time
+      - title: "Sound Count"
+        url: /software/rplus1/task/programming_02/#sound-count
+      - title: "Current Sound Count"
+        url: /software/rplus1/task/programming_02/#current-sound-count
+      - title: "Button Count"
+        url: /software/rplus1/task/programming_02/#button-count
+      - title: "Powersave Timer"
+        url: /software/rplus1/task/programming_02/#powersave-timer
+      - title: "RC-100 Channel"
+        url: /software/rplus1/task/programming_02/#rc-100-channel
+    - title: "Motion Parameters"
+      url: /software/rplus1/task/programming_02/#motion-parameters
+      children:
+      - title: "Motion Page"
+        url: /software/rplus1/task/programming_02/#motion-page
+      - title: "Motion Status"
+        url: /software/rplus1/task/programming_02/#motion-status
+      - title: "Joint Offset"
+        url: /software/rplus1/task/programming_02/#joint-offset
+    - title: "Peripheral Devices"
+      url: /software/rplus1/task/programming_02/#peripheral-devices
+      children:
+      - title: "Reduction Motor"
+        url: /software/rplus1/task/programming_02/#reduction-motor
+      - title: "Servo Motor"
+        url: /software/rplus1/task/programming_02/#servo-motor
+      - title: "Touch Sensor"
+        url: /software/rplus1/task/programming_02/#touch-sensor
+      - title: "LED Module"
+        url: /software/rplus1/task/programming_02/#led-module
+      - title: "IR Sensor"
+        url: /software/rplus1/task/programming_02/#ir-sensor
+      - title: "DMS Sensor"
+        url: /software/rplus1/task/programming_02/#dms-sensor
+      - title: "User Devices"
+        url: /software/rplus1/task/programming_02/#user-devices
+    - title: "Dynamixel Parameters"
+      url: /software/rplus1/task/programming_02/#dynamixel-parameters
+      children:
+      - title: "Torque Enable"
+        url: /software/rplus1/task/programming_02/#torque-enable
+      - title: "LED"
+        url: /software/rplus1/task/programming_02/#led
+      - title: "CW/CCW Margin"
+        url: /software/rplus1/task/programming_02/#cwccw-margin
+      - title: "CW/CCW Slope"
+        url: /software/rplus1/task/programming_02/#cwccw-slope
+      - title: "PID Gain"
+        url: /software/rplus1/task/programming_02/#pid-gain
+      - title: "Goal Position"
+        url: /software/rplus1/task/programming_02/#goal-position
+      - title: "Moving Speed"
+        url: /software/rplus1/task/programming_02/#moving-speed
+      - title: "Torque Limit"
+        url: /software/rplus1/task/programming_02/#torque-limit
+      - title: "Present Position"
+        url: /software/rplus1/task/programming_02/#present-position
+      - title: "Present Speed"
+        url: /software/rplus1/task/programming_02/#present-speed
+      - title: "Present Load"
+        url: /software/rplus1/task/programming_02/#present-load
+      - title: "Voltage"
+        url: /software/rplus1/task/programming_02/#voltage
+      - title: "Temperature"
+        url: /software/rplus1/task/programming_02/#temperature
+      - title: "Moving"
+        url: /software/rplus1/task/programming_02/#moving
+      - title: "Sensed Current"
+        url: /software/rplus1/task/programming_02/#sensed-current
+    - title: "Universal Sensor S1"
+      url: /software/rplus1/task/programming_02/#universal-sensor-s1
+      children:
+      - title: "IR Left/Center/Right"
+        url: /software/rplus1/task/programming_02/#ir-leftcenterright
+      - title: "Light Left/Center/Right"
+        url: /software/rplus1/task/programming_02/#light-leftcenter-right
+      - title: "Object Detected"
+        url: /software/rplus1/task/programming_02/#object-detected
+      - title: "Light Detected"
+        url: /software/rplus1/task/programming_02/#light-detected
+      - title: "Sound Max Data"
+        url: /software/rplus1/task/programming_02/#sound-max-data
+      - title: "Sound Data"
+        url: /software/rplus1/task/programming_02/#sound-data
+      - title: "Sound Count"
+        url: /software/rplus1/task/programming_02/#sound-count
+      - title: "Sound Time"
+        url: /software/rplus1/task/programming_02/#sound-time
+      - title: "Buzzer Index"
+        url: /software/rplus1/task/programming_02/#buzzer-index
+      - title: "Buzzer Time"
+        url: /software/rplus1/task/programming_02/#buzzer-timez
+      - title: "IR COM Arrived"
+        url: /software/rplus1/task/programming_02/#ir-com-arrived
+      - title: "IR COM RXD"
+        url: /software/rplus1/task/programming_02/#ir-com-rxd
+      - title: "IR COM TXD"
+        url: /software/rplus1/task/programming_02/#ir-com-txd
+      - title: "Object Detection Threshold"
+        url: /software/rplus1/task/programming_02/#object-detection-threshold
+      - title: "Light Detection Threshold"
+        url: /software/rplus1/task/programming_02/#light-detection-threshold
+    - title: "IR Sensor Array"
+      url: /software/rplus1/task/programming_02/#ir-sensor-array
+      children:
+      - title: "IR Sensor Value"
+        url: /software/rplus1/task/programming_02/#ir-sensor-value
+      - title: "IR Array Buzzer Index"
+        url: /software/rplus1/task/programming_02/#ir-array-buzzer-index
+      - title: "IR Array Buzzer Time"
+        url: /software/rplus1/task/programming_02/#ir-array-buzzer-time
+      - title: "Auto Threshold Mode"
+        url: /software/rplus1/task/programming_02/#auto-threshold-mode
+      - title: "IR Obstacle Detected"
+        url: /software/rplus1/task/programming_02/#ir-obstacle-detected
+      - title: "IR Threshold"
+        url: /software/rplus1/task/programming_02/#ir-threshold
+      - title: "Direct Access"
+        url: /software/rplus1/task/programming_02/#direct-access
+    - title: "Variables"
+      url: /software/rplus1/task/programming_02/#variables
+  - title: "Miscellenous"
+    url: /software/rplus1/task/task_misc/
+    children:
+    - title: "Select Controller"
+      url: /software/rplus1/task/task_misc/#select-controller
+    - title: "Rule Check"
+      url: /software/rplus1/task/task_misc/#rule-check
+    - title: "Error Messages"
+      url: /software/rplus1/task/task_misc/#error-messages
+
 
 #R+ Manager 2.0 sidebar
 rplusmanager2:
@@ -1079,8 +1891,8 @@ thormang3:
   - title: "References"
     url: /platform/thormang3/thormang3_operation/#references
 
-faq:
-  - title: "Contents Formats"
+contents-guide:
+  - title: "Contents Guide"
     titlekr: "컨텐츠 작성방법"
     urlkr: /faq/#컨텐츠-작성방법
     children:
