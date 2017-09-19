@@ -5,6 +5,3 @@ When the absolute value of Present Velocity(128) is greater than the Moving Thre
 | :---: | :---: | :---: |
 |Unit|about 0.229 rpm|All velocity related Data uses the same unit|
 |Range|0 ~ 1,023|-|
-
-`Note` In case of the Position Control Mode(Joint Mode) that rotates less than 360 degrees, any invalid Homing Offset(20) values will be ignored(valid range : -1,024 ~ 1,024).
-{: .notice}
