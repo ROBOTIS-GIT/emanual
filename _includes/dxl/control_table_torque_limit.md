@@ -1,5 +1,5 @@
 It is the value of the maximum torque limit.
-0 to 1023 (0x3FF) is available, and the unit is about 0.1%.
+0 ~ 1,023(0x3FF) is available, and the unit is about 0.1%.
 For example, if the value is 512, it is about 50%; that means only 50% of the maximum torque will be used.
 If the power is turned on, the value of Max Torque (Address 14, 15) is used as the initial value.
 

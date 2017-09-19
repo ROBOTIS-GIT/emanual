@@ -111,7 +111,7 @@ sidebar:
 {% include dxl/control_table_temp_limit.md %}
 
 ### <a name="min-voltage-limit"></a><a name="max-voltage-limit"></a>**Min/Max Voltage Limit**
-{% include dxl/control_table_volt_limit.md %}
+{% include dxl/control_table_volt_limit_high.md %}
 
 ### <a name="max-torque"></a>**Max Torque**
 {% include dxl/control_table_max_torque.md %}

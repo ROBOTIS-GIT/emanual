@@ -1,3 +1,4 @@
+Turn on or turn off the LED on Dynamixel.
 
 | Bit | Description     |
 | :-------------: | :------------- |

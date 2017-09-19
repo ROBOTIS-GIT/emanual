@@ -1,8 +1,8 @@
 
 | Value | Description     |
 | :-------------: | :------------- |
-|0|There are no commands transmitted by REG_WRITE|
-|1|There are commands transmitted by REG_WRITE|
+|0|REG_WRITE instruction is not received|
+|1|REG_WRITE instruction is received|
 
-`Note` If ACTION command is executed, the value is changed into 0.
+`Note` If ACTION instruction is executed, the value will be changed to 0.
 {: .notice}

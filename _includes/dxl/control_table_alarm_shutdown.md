@@ -1,7 +1,7 @@
 Dynamixel can protect itself by detecting errors occur during the operation.
 The errors can be set are as the table below.
 
-|Bit   | Name     | Description     |
+|Bit   | Item     | Description     |
 | :-------------: | :-------------: | :------------- |
 |Bit 7|0|-|
 |Bit 6|Instruction Error|When undefined Instruction is transmitted or the Action command is delivered without the reg_write command|

@@ -45,27 +45,7 @@ sidebar:
 `Note` Stall torque is the maximum instantaneous and static  torque. Stable motions are possible with robots designed for loads with 1/5 or less of the stall torque.
 {: .notice}
 
-# [Control Table](#control-table)
-The Control Table is a structure of data implemented in the DYNAMIXEL. Users can read a specific Data to get status of the DYNAMIXEL with Read Instruction Packets, and modify Data as well to control DYNAMIXEL with WRITE Instruction Packets.
-
-## [Control Table, Data, Address](#control-table-data-address)
-The Control Table is a structure that consists of multiple Data fields to store status of the DYNAMIXEL or to control the DYNAMIXEL. Users can check current status of the DYNAMIXEL by reading a specific Data from the Control Table with Read Instruction Packets. WRITE Instruction Packets enable users to control the DYNAMIXEL by changing specific Data in the Control Table. The Address is a unique value when accessing a specific Data in the Control Table with Instruction Packets. In order to read or write data, users must designate a specific Address in the Instruction Packet. Please refer to [Protocol] for more details about Instruction Packets.
-
-`Note` Two's complement is applied for the negative value. For more information, please refer to [Two's complement] from Wikipedia.
-{: .notice--warning}
-
-### [Area (EEPROM, RAM)](#area-eeprom-ram)
-The Control Table is divided into 2 Areas. Data in the RAM Area is reset to initial values when the DYNAMIXEL is turned on (Volatile). On the other hand, modified data in the EEPROM Area keeps their values even when the DYNAMIXEL is turned off (Non-Volatile). Data in the EEPROM Area can only be changed when the value of Torque Enable(64) is cleared to ‘0’.
-
-### [Size](#size)
-The Size of data varies from 1 to 4 bytes depend on their usage. Please check the size of data when updating the data with an Instruction Packet.
-
-### [Access](#access)
-The Control Table has two different access properties. ‘RW’ property stands for read and write access permission while ‘R’ stands for read only access permission. Data with the read only property cannot be changed by the WRITE Instruction. Read only property(‘R’) is generally used for measuring and monitoring purpose, and read write property(‘RW’) is used for controlling DYNAMIXEL.
-
-### [Initial Value](#initial-value)
-Each data in the Control Table is restored to initial values when the DYNAMIXEL is turned on. Default values in the EEPROM area are initial values of the DYNAMIXEL (factory default settings). If any values in the EEPROM area are modified by a user, modified values will be restored as initial values when the DYNAMIXEL is turned on. Initial Values in the RAM area are restored when the DYNAMIXEL is turned on.
-
+{% include dxl/control_table_protocol1.md %}
 
 ## [Control Table of EEPROM Area](#control-table-of-eeprom-area)
 
@@ -120,177 +100,52 @@ Each data in the Control Table is restored to initial values when the DYNAMIXEL 
  This address stores firmware version of the DYNAMIXEL.
 
 ### <a name="id"></a>**ID (3)**
- The ID is a unique value in the network to identify each DYNAMIXEL with an Instruction Packet.
- 0~252 (0xFC) values can be used as an ID, and 254(0xFE) is occupied as a broadcast ID. The Broadcast ID(254, 0xFE) can send an Instruction Packet to all connected DYNAMIXELs simultaneously.
-
- `Note` Please avoid using an identical ID for multiple DYNAMIXELs. You may face communication failure or may not be able to detect Dynamixels with an identical ID.
- {: .notice}
-
+{% include dxl/control_table_id.md %}
 
 ### <a name="baud-rate"></a>**Baud Rate (4)**
- Baud Rate determines serial communication speed between a controller and DYNAMIXELs.
-
-| Value     | Baud Rate     | Margin of Error     |
-| :------------: | :------------: | :------------: |
-|1(Default)|1M|0.000%|
-|3|500,000| 0.000%|
-|4|400,000| 0.000%|
-|7|250,000| 0.000%|
-|9|200,000| 0.000%|
-|16|115200| -2.124%|
-|34|57600| 0.794%|
-|103|19200| -0.160%|
-|207|9600| -0.160%|
-
-`Note` Less than 3% of the baud rate error margin will not affect to UART communication.
-{: .notice}
-
+{% include dxl/control_table_baudrate.md %}
 
 ### <a name="return-delay-time"></a>**Return Delay Time (5)**
- After the DYNAMIXEL receives an Instruction Packet, it delays transmitting the Status Packet for Return Delay Time (9). For instance, if the Return Delay Time(9) is set to ‘10’, the Status Packet will be returned after 20[μsec] when the Instruction Packet is received.
-
- |      | Value     | Description     |
- | :------------- | :------------- | :------------- |
- |Unit| 2[μsec] | - |
- |Range| 0 ~ 254  | Default value ‘250’(500[μsec]), Maximum 508[μsec]|
-
+{% include dxl/control_table_return_delay_time.md %}
 
 ### <a name="cw-angle-limit"></a><a name="ccw-angle-limit"></a>**CW/CCW Angle Limit(6, 8)**
-The angle limit allows the motion to be restrained.
-The range and the unit of the value is the same as Goal Position(Address 30, 31).
-CW Angle Limit: the minimum value of Goal Position(Address 30, 31)
-CCW Angle Limit: the maximum value of Goal Position(Address 30, 31)
-The following two modes can be set pursuant to the value of CW and CCW.
-
-|Operation Type|CW / CCW|
-| :-------------: | :-------------: |
-|Wheel Mode|both are 0|
-|Joint Mode|neither are 0|
-
-The wheel mode can be used to wheel-type operation robots since motors of the robots spin infinitely. The joint mode can be used to multi-joints robot since the robots can be controlled with specific angles.
+{% include dxl/control_table_angle_limit.md %}
 
 ### <a name="temperature-limit"></a>**The Highest Limit Temperature**
-`Caution` Do not set the temperature lower/higher than the default value. When the temperature alarm shutdown occurs, wait 20 minutes to cool the temperature before re-use. Using the product when the temperature is high may and can cause damage.
-{: .notice--warning}
+{% include dxl/control_table_temp_limit.md %}
 
 ### <a name="min-voltage-limit"></a><a name="max-voltage-limit"></a>**Min/Max Voltage Limit**
-It is the operation range of voltage.
-50 to 250 (0x32 ~ 0x96) can be used.  The unit is 0.1V.
-For example, if the value is 80, it is 8V.
-If Present Voltage (Address42) is out of the range, Voltage Range Error Bit (Bit0) of Status Packet is returned as ‘1’ and Alarm is triggered as set in the addresses 17 and 18.
+{% include dxl/control_table_volt_limit_high.md %}
 
 ### <a name="max-torque"></a>**Max Torque**
-It is the torque value of maximum output. 0 to 1023 (0x3FF) can be used, and the unit is about 0.1%.
-For example, Data 1023 (0x3FF) means that Dynamixel will use 100% of the maximum torque it can produce while Data 512 (0x200) means that Dynamixel will use 50% of the maximum torque. When the power is turned on, Torque Limit (Addresses 34 and 35) uses the value as the initial value.
+{% include dxl/control_table_max_torque.md %}
 
 ### <a name="status-return-level"></a>**Status Return Level**
-It decides how to return Status Packet. There are three ways like the below table.
-
-| Value | Return of Status Packet     |
-| :-------------: | :------------- |
-|0| No return against all commands (Except PING Command)|
-|1|Return only for the READ command|
-|2|Return for all commands|
-
-When Instruction Packet is Broadcast ID, Status Packet is not returned regardless of Status Return Level.
+{% include dxl/control_table_status_return_lv.md %}
 
 ### <a name="alarm-led"></a><a name="shutdown"></a>**Alarm LED / Alarm Shutdown**
-Dynamixel can protect itself by detecting errors occur during the operation.
-The errors can be set are as the table below.
-
-|Bit   | Name     | Description     |
-| :-------------: | :-------------: | :------------- |
-|Bit 7|0|-|
-|Bit 6|Instruction Error|When undefined Instruction is transmitted or the Action command is delivered without the reg_write command|
-|Bit 5|Overload Error|When the current load cannot be controlled with the set maximum torque|
-|Bit 4|CheckSum Error|When the Checksum of the transmitted Instruction Packet is invalid|
-|Bit 3|Range Error|When the command is given beyond the range of usage|
-|Bit 2|OverHeating Error|When the internal temperature is out of the range of operating temperature set in the Control Table|
-|Bit 1|Angle Limit Error|When Goal Position is written with the value that is not between CW Angle Limit and CCW Angle Limit|
-|Bit 0|Input Voltage Error|When the applied voltage is out of the range of operating voltage set in the Control Table|
-
-It is possible to make duplicate set since the function of each bit is run by  the logic of ‘OR’. That is, if 0X05 (binary 00000101) is set, both Input Voltage Error and Overheating Error can be detected.
-If errors occur, in case of Alarm LED, the LED blinks; in case of Alarm Shutdown, the motor output becomes 0 % by making the value of Torque Limit(Address 34, 35) as 0.
+{% include dxl/control_table_alarm_shutdown.md %}
 
 ### <a name="torque-enable"></a>**Torque Enable**
-
-| Value | Description     |
-| :-------------: | :------------- |
-|0|Keeps Torque from generating by interrupting the power of motor|
-|1|Generates Torque by impressing the power to the motor.|
+{% include dxl/control_table_torque_enable.md %}
 
 ### <a name="led"></a>**LED**
-
-| Bit | Description     |
-| :-------------: | :------------- |
-|0|Turn OFF the LED|
-|1|Turn ON the LED|
+{% include dxl/control_table_led.md %}
 
 ### <a name="cw-compliance-margin"></a><a name="ccw-compliance-margin"></a>**Compliance Margin**
-It exists in each direction of CW/CCW and means the error between goal position and present position.
-The range of the value is 0~255, and the unit is the same as Goal Position.(Address 30,31)
-The greater the value, the more difference occurs.
+{% include dxl/control_table_compliance_margin.md %}
 
 ### <a name="cw-compliance-slope"></a><a name="ccw-compliance-slope"></a>**Compliance Slope**
-It exists in each direction of CW/CCW and sets the level of Torque near the goal position.
-Compliance Slope is set in 7 steps, the higher the value, the more flexibility is obtained.
-Data representative value is actually used value.  That is, even if the value is set to 25, 16 is used internally as the representative value.
-
-|Step| Data Value | Data Representative Value     |
-| :-------------: | :-------------: | :-------------: |
-|1|0(0x00) ~ 3(0x03)|2(0x02)|
-|2|4(0x04) ~ 7(0x07)|4(0x04)|
-|3|8(0x08)~15(0x0F)|8(0x08)|
-|4|16(0x10)~31(0x1F)|16(0x10)|
-|5|32(0x20)~63(0x3F)|32(0x20)|
-|6|64(0x40)~127(0x7F)|64(0x40)|
-|7|128(0x80)~254(0xFE)|128(0x80)|
-
-Compliance is to set the control flexibility of the motor.
-The following diagram shows the relationship between output torque and position of the motor.
-
-![](/emanual/assets/images/dxl/dxl_compliance.png)
+{% include dxl/control_table_compliance_slope.md %}
 
 ### <a name="goal-position"></a>**Goal Position**
-It is a position value of destination.
-0 to 1023 (0x3FF) is available.  The unit is 0.29 degree.
-If Goal Position is out of the range, Angle Limit Error Bit (Bit1) of Status Packet is returned as ‘1’ and Alarm is triggered as set in Alarm LED/Shutdown.
-
-![](/emanual/assets/images/dxl/dx_series_goal.png)
-The picture above is the front view of Dynamixel
-
-`Note` If it is set to Wheel Mode, this value is not used.
-{: .notice}
+{% include dxl/control_table_dx_goal_position.md %}
 
 ### <a name="moving-speed"></a>**Moving Speed**
-It is a moving speed to Goal Position.
-The range and the unit of the value may vary depending on the operation mode.
-
-+ Join Mode
-  0~1023 (0X3FF) can be used, and the unit is about 0.111rpm.
-  If it is set to 0, it means the maximum rpm of the motor is used without controlling the speed.
-  If it is 1023, it is about 114rpm.
-  For example, if it is set to 300, it is about 33.3 rpm.
-
-  `Note` Please check the maximum rpm of relevant model in Joint Mode.  Even if the motor is set to more than maximum rpm, it cannot generate the torque more than the maximum rpm.
-  {: .notice}
-
-+ Wheel Mode
-  0~2047( 0X7FF) can be used, the unit is about 0.1%.
-  If a value in the range of 0~1023 is used, it is stopped by setting to 0 while rotating to CCW direction.
-  If a value in the range of 1024~2047 is used, it is stopped by setting to 1024 while rotating to CW direction.
-  That is, the 10th bit becomes the direction bit to control the direction.
-  In Wheel Mode, only the output control is possible, not speed.
-  For example, if it is set to 512, it means the output is controlled by 50% of the maximum output.
+{% include dxl/control_table_moving_speed.md %}
 
 ### <a name="torque-limit"></a>**Torque Limit**
-It is the value of the maximum torque limit.
-0 to 1023 (0x3FF) is available, and the unit is about 0.1%.
-For example, if the value is 512, it is about 50%; that means only 50% of the maximum torque will be used.
-If the power is turned on, the value of Max Torque (Address 14, 15) is used as the initial value.
-
-`Note` If the function of Alarm Shutdown is triggered, the motor loses its torque because the value becomes 0. At this moment, if the value is changed to the value other than 0, the motor can be used again.
-{: .notice}
+{% include dxl/control_table_torque_limit.md %}
 
 ### <a name="present-position"></a>**Present Position**
 It is the current position value of Dynamixel.

@@ -1,10 +1,12 @@
-It decides how to return Status Packet. There are three ways like the below table.
+This value decides how to return Status Packet when Dynamixel receives an Instruction Packet.
 
-| Value | Return of Status Packet     |
-| :-------------: | :------------- |
-|0| No return against all commands (Except PING Command)|
-|1|Return only for the READ command|
-|2|Return for all commands|
+| Value | Responding Instructions  | Description |
+| :---: | :----------------------: | :---------: |
+|0|PING Instruction|Status Packet will not be returned for all Instructions|
+|1|PING Instruction<br />READ Instruction|Status Packet will be returned only for READ Instruction|
+|2|All Instructions|Status Packet will be returned for all Instructions|
 
-`Note` When Instruction Packet is Broadcast ID, Status Packet is not returned regardless of Status Return Level.
+`Note` If the ID of Instruction Packet is set to Broad Cast ID(0xFE), Status Packet will not be returned for READ and WRITE Instructions regardless of Status Return Level. For more details, please refer to the [Protocol] section of e-Manual.
 {: .notice}
+
+[Protocol]: ???

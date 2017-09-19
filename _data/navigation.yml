@@ -60,12 +60,21 @@ main:
       - title: "MX-28T/R/AT/AR"
         titlekr: "MX-28T/R/AT/AR"
         url: /dxl/mx/mx-28/
+      - title: "MX-28T/R/AT/AR(2.0)"
+        titlekr: "MX-28T/R/AT/AR(2.0)"
+        url: /dxl/mx/mx-28-2/
       - title: "MX-64T/R/AT/AR"
         titlekr: "MX-64T/R/AT/AR"
         url: /dxl/mx/mx-64/
+      - title: "MX-64T/R/AT/AR(2.0)"
+        titlekr: "MX-64T/R/AT/AR(2.0)"
+        url: /dxl/mx/mx-64-2/
       - title: "MX-106T/R"
         titlekr: "MX-106T/R"
         url: /dxl/mx/mx-106/
+      - title: "MX-106T/R(2.0)"
+        titlekr: "MX-106T/R(2.0)"
+        url: /dxl/mx/mx-106-2/
     - title: "X Series"
       titlekr: "X 시리즈"
       titlejp: "X シリーズ"

@@ -132,7 +132,7 @@ For BPS over 250 values :
 {% include dxl/control_table_resolution_divider.md %}
 
 ### <a name="torque-enable"></a>**Torque Enable**
-{% include dxl/control_table_mx_torque_enable.md %}
+{% include dxl/control_table_torque_enable.md %}
 
 ### <a name="led"></a>**LED**
 {% include dxl/control_table_led.md %}
