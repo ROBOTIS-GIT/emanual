@@ -82,22 +82,29 @@ main:
       children:
       - title: "XL320"
         titlekr: "XL320"
+        url: /dxl/x/xl320
       - title: "XL430-W250"
         titlekr: "XL430-W250"
+        url: /dxl/x/xl430-w250/
       - title: "XM430-W210"
         titlekr: "XM430-W210"
+        url: /dxl/x/xm430-w210/
       - title: "XM430-W350"
         titlekr: "XM430-W350"
+        url: /dxl/x/xm430-w350/
       - title: "XH430-W210"
         titlekr: "XH430-W210"
         url: /dxl/x/xh430-w210/
         urlkr: /dxl/x/xh430-w210/
       - title: "XH430-W350"
         titlekr: "XH430-W350"
+        url: /dxl/x/xh430-w350/
       - title: "XH430-V210"
         titlekr: "XH430-V210"
+        url: /dxl/x/xh430-v210/
       - title: "XH430-V350"
         titlekr: "XH430-V350"
+        url: /dxl/x/xh430-v350/
     - title: "PRO Series"
       titlekr: "PRO 시리즈"
       titlejp: "PRO シリーズ"

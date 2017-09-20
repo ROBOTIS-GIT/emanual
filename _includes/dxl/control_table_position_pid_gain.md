@@ -15,7 +15,7 @@ Below figure is a block diagram describing the position controller in Position C
 4. Feedforward and PID controller calculate PWM output for the motor based on target trajectories.
 5. Goal PWM(100) sets a limit on the calculated PWM output and decides the final PWM value.
 6. The final PWM value is applied to the motor through an Inverter, and the horn of Dynamixel is driven.
-7. Results are stored at Present Position(132), Present Velocity(128), Present PWM(124) and Present Load(126).
+7. Results are stored at Present Position(132), Present Velocity(128), Present PWM(124) and Present Current(126).
 
 ![](/emanual/assets/images/dxl/position_controller_pid_gain.jpg)
 
