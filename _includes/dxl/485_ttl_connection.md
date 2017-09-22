@@ -5,7 +5,7 @@ To control the Dynamixel actuators, the main controller needs to convert its UAR
 ![](/emanual/assets/images/dxl/ttl_circuit.png)
 
 ### RS-485 Communication
-![](/emanual/assets/images/dxl/485_circuit.jpg)
+![](/emanual/assets/images/dxl/485_circuit.png)
 
 The power of Dynamixel is supplied via Pin1(-), Pin2(+).
 (The above circuit is built into Dynamixel-only controller.)

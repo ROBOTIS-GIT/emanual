@@ -2,16 +2,16 @@ Indirect Address and Indirect Data are useful when accessing two remote addresse
 If specific address is allocated to Indirect Address, Indirect Address inherits features and properties of the Data from the specific Address. Property includes Size(Byte length), value range, and Access property(Read Only, Read/Write). For instance, if address 563(LED Red) is allocated to Indirect Address 1(49), Indirect Data 1(634) will have the exactly same value of LED Red(563).
 
 `Example 1` Allocating 1 byte LED(563) to Indirect Data 1(634).
-  A. Indirect Address 1(49) : change the value to '563' which is the address of LED Red.
-  B. Set Indirect Data 1(634) to ‘1’ : LED Red(563) also becomes '1' and Red LED will be turned on.
-  C. Set Indirect Data 1(634) to ‘0’ : LED Red(563) also becomes ‘0’ and Red LED will be turned off.
+1. Indirect Address 1(49) : change the value to '563' which is the address of LED Red.
+2. Set Indirect Data 1(634) to ‘1’ : LED Red(563) also becomes '1' and Red LED will be turned on.
+3. Set Indirect Data 1(634) to ‘0’ : LED Red(563) also becomes ‘0’ and Red LED will be turned off.
 
 `Example 2` Allocating Size 4 byte Goal Position(596) to Indirect Data 2(635), 4 sequential bytes have to be allocated.
-  A. Indirect Address 2(51) : change the value to '596' which is the first address of Goal Position.
-  B. Indirect Address 3(53) : change the value to '597' which is the second address of Goal Position.
-  C. Indirect Address 4(55) : change the value to '598' which is the third address of Goal Position.
-  D. Indirect Address 5(57) : change the value to '599' which is the fourth address of Goal Position.
-  E. Set 4 byte value 305,419,896(0x12345678) to Indirect Data 2 : Goal Position(596) also becomes 305,419,896(0x12345678) as below.
+1. Indirect Address 2(51) : change the value to '596' which is the first address of Goal Position.
+2. Indirect Address 3(53) : change the value to '597' which is the second address of Goal Position.
+3. Indirect Address 4(55) : change the value to '598' which is the third address of Goal Position.
+4. Indirect Address 5(57) : change the value to '599' which is the fourth address of Goal Position.
+5. Set 4 byte value 305,419,896(0x12345678) to Indirect Data 2 : Goal Position(596) also becomes 305,419,896(0x12345678) as below.
 
 | Indirect Data Address | Goal Position Address | Saved HEX Value |
 | :----------: | :-------------: | :-------------: |

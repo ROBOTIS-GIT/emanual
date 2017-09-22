@@ -21,7 +21,7 @@ When given Goal Position(116), Dynamixel's profile creates target velocity traje
 
 | Condition     | Types of Profile     |
 | :------------- | :------------- |
-| V<sub>PRFL</sub>(112) = 0 | Profile not used (Step Instruction) |
+| V<sub>PRFL</sub>(112) = 0 | Profile not used<br />(Step Instruction) |
 | (V<sub>PRFL</sub>(112) ≠ 0) & (A<sub>PRF</sub>(108) = 0) | Rectangular Profile |
 | (V<sub>PRFL</sub>(112) ≠ 0) & (A<sub>PRF</sub>(108) ≠ 0) & (V<sub>PRFL_TRI</sub> ≤ V<sub>PRFL</sub>(112)) | Triangular Profile |
 | (V<sub>PRFL</sub>(112) ≠ 0) & (A<sub>PRF</sub>(108) ≠ 0) & (V<sub>PRFL_TRI</sub> ＞ V<sub>PRFL</sub>(112))	| Trapezoidal Profile |
@@ -34,7 +34,7 @@ When given Goal Position(116), Dynamixel's profile creates target velocity traje
 
 {% capture group_notice_03 %}
 `Note` Velocity Control Mode only uses Profile Acceleration(108). Step and Trapezoidal Profiles are supported. Velocity Override and Jerk control are supported as well. Acceleration time(t1) can be calculated as below equation.
-![](/emanual/assets/images/dxl/x/equation_01.gif)
+Goal Velocity(104) / Profile Acceleration(108) * t<sub>1</sub> = 64
 {% endcapture %}
 
 <div class="notice">
