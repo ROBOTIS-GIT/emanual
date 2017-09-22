@@ -343,7 +343,7 @@
   user-select: none;
 }
 
-.nav__items input[type=checkbox] {
+.nav__items input[type=radio] {
   /* hide native checkbox */
   position: absolute;
   opacity: 0;
@@ -364,12 +364,12 @@
   // color: #ddd;
 }
 
-.nav__items input[type=checkbox]:checked + label::after {
+.nav__items input[type=radio]:checked + label::after {
   /* show open folder icon if item is checked */
   background-position: -32px 0;
 }
-.nav__items input[type=checkbox]:checked + label + ul,
-.nav__items input[type=checkbox]:checked + label:nth-of-type(n) + ul {
+.nav__items input[type=radio]:checked + label + ul,
+.nav__items input[type=radio]:checked + label:nth-of-type(n) + ul {
   /* use label:nth-of-type(n) to fix a bug on safari (<= 8.0.8) with multiple adjacent-sibling selectors*/
   /* show children when item is checked */
   display: block;

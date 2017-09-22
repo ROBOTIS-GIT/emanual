@@ -46,7 +46,7 @@
     {% if nav.children != null %}
 
     <li class="has-children">
-      <input type="checkbox" name="toplevel_{{ forloop.index0 }}" id="toplevel_{{ forloop.index0 }}">
+      <input type="radio" name="toplevel" id="toplevel_{{ forloop.index0 }}">
       <label for="toplevel_{{ forloop.index0 }}">{{ navtitle }}</label>
     {% else %}
 
@@ -105,7 +105,7 @@
 
         {% if child.children != null %}
         <li class="has-children">
-          <input type="checkbox" name="sublevel_{{ forloop.index0 }}" id="sublevel_{{ forloop.index0 }}">
+          <input type="radio" name="sublevel" id="sublevel_{{ forloop.index0 }}">
           <label for="sublevel_{{ forloop.index0 }}">{{ childtitle }}</label>
         {% else %}
         <li><a href="{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ childurl }}" class="{{ active }}">{{ childtitle }}</a></li>
