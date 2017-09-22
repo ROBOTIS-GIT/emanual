@@ -1,8 +1,8 @@
-It is the current moving speed.
-0~2047 (0X7FF) can be used.
-If a value is in the rage of 0~1023, it means that the motor rotates to the CCW direction.
-If a value is in the rage of 1024~2047, it means that the motor rotates to the CW direction.
-That is, the 10th bit becomes the direction bit to control the direction, and 0 and 1024 are equal.
+It is the present moving speed.
+0~2,047 (0x7FF) can be used.
+If a value is in the rage of 0~1,023, it means that the motor rotates to the CCW direction.
+If a value is in the rage of 1,024~2,047, it means that the motor rotates to the CW direction.
+That is, the 10th bit becomes the direction bit to control the direction, and 0 and 1,024 are equal.
 The unit of this value varies depending on operation mode.
 
 + Joint Mode

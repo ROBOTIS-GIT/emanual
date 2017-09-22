@@ -24,7 +24,7 @@ sidebar:
 | Dimensions (W x H x D) | 32mm x 50mm x 40mm |
 | Gear Ratio | 32 : 1  |
 | No Load Speed | 470rpm (at 12V) |
-| Operating Temperature | -5&deg;C ~ +80&deg;F |
+| Operating Temperature | -5&deg;C ~ +80&deg;C |
 | Input Voltage | 10 ~ 14.8V (**Recommended : 12V**) |
 | Standby Current | 60mA |
 | Command Signal | Digital Packet |

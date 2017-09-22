@@ -1,10 +1,14 @@
 MX series will use the PID controller as a main control method.
-P gain refers to the value of proportional band.
-I gain refers to the value of integral action.
-D Gain refers to the value of derivative action.
+P gain : value of proportional band.
+I gain : value of integral action.
+D Gain : value of derivative action.
 Gains values are in between 0~254.
 
 ![](/emanual/assets/images/dxl/mx/mx-12_pid_control.png)
+
+K<sub>p</sub> = P Gain / 8
+K<sub>i</sub> = I Gain * 1,000 / 2,048
+K<sub>d</sub> = D Gain * 4 / 1,000
 
 **The relationship between Compliance Slop and PID**
 

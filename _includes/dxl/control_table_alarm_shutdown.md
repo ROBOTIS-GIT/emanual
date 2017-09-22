@@ -12,5 +12,5 @@ The errors can be set are as the table below.
 |Bit 1|Angle Limit Error|When Goal Position is written with the value that is not between CW Angle Limit and CCW Angle Limit|
 |Bit 0|Input Voltage Error|When the applied voltage is out of the range of operating voltage set in the Control Table|
 
-It is possible to make duplicate set since the function of each bit is run by  the logic of ‘OR’. That is, if 0X05 (binary 00000101) is set, both Input Voltage Error and Overheating Error can be detected.
-If errors occur, in case of Alarm LED, the LED blinks; in case of Alarm Shutdown, the motor output becomes 0 % by making the value of Torque Limit(Address 34, 35) as 0.
+It is possible to make duplicate set since the function of each bit is run by  the logic of ‘OR’. That is, if 0x05 (binary 00000101) is set, both Input Voltage Error and Overheating Error can be detected.
+If errors occur, in case of Alarm LED, the LED blinks; in case of Alarm Shutdown, the motor output becomes 0 % by resetting the value of Torque Limit(34) to 0.

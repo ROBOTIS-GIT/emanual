@@ -29,7 +29,7 @@ sidebar:
 | Gear Ratio | 254 : 1  |
 | Stall Torque | 1.8 N*m (at 12V, 2.2A) |
 | No Load Speed | 97rpm (at 12V) |
-| Operating Temperature | -5&deg;C ~ +70&deg;F |
+| Operating Temperature | -5&deg;C ~ +70&deg;C |
 | Input Voltage | 9.0 ~ 12.0V (**Recommended : 11.1V**) |
 | Command Signal | Digital Packet |
 | Protocol Type | Half Duplex Asynchronous Serial Communication<br />(8bit, 1stop, No Parity) |

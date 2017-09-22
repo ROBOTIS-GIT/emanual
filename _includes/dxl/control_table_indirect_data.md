@@ -1,16 +1,15 @@
-Indirect Data 1 ~ 28 (224, 225 ~ 250, 251), Indirect Data 29 ~ 56 (634, 635 ~ 660, 661)**
 Indirect Address and Indirect Data are useful when accessing two remote addresses in the Control Table as sequential addresses. Sequential addresses increase Instruction Packet efficiency. Addresses that can be defined as Indirect Address is limited to RAM area(Address 64 ~ 661).
 If specific address is allocated to Indirect Address, Indirect Address inherits features and properties of the Data from the specific Address. Property includes Size(Byte length), value range, and Access property(Read Only, Read/Write). For instance, allocating 65(Address of LED) to Indirect Address 1(168), Indirect Data 1(224) can perform exactly same as LED(65).
 1. Example 1) Allocating Size 1 byte LED(65) to Indirect Data 1(224).
   A. Indirect Address 1(168) : change the value to '65' which is the address of LED.
   B. Set Indirect Data 1(224) to ‘1’ : LED(65) also becomes '1' and LED is turned on.
   C. Set Indirect Data 1(224) to ‘0’ : LED(65) also becomes ‘0’ and LED is turned off.
-2. Example 2) Allocating Size 4 byte Goal Position(116) to Indirect Data 2(225), all 4[byte] has to be allocated.
+2. Example 2) Allocating Size 4 byte Goal Position(116) to Indirect Data 2(225), 4 sequential bytes have to be allocated.
   A. Indirect Address 2(170) : change the value to '116' which is the first address of Goal Position.
-  B. Indirect Address 3(172) : change the value to '117' which is the first address of Goal Position.
-  C. Indirect Address 4(174) : change the value to '118' which is the first address of Goal Position.
-  D. Indirect Address 5(176) : change the value to '119' which is the first address of Goal Position.
-  E. Set 4 byte value '1,024' to Indirect Data 2 : Goal Position(116) also becomes '1024 and Dynamixel moves.
+  B. Indirect Address 3(172) : change the value to '117' which is the second address of Goal Position.
+  C. Indirect Address 4(174) : change the value to '118' which is the third address of Goal Position.
+  D. Indirect Address 5(176) : change the value to '119' which is the fourth address of Goal Position.
+  E. Set 4 byte value '1,024' to Indirect Data 2 : Goal Position(116) also becomes '1024' and Dynamixel moves.
 
 | Indirect Address Range | Description     |
 | :------------- | :------------- |

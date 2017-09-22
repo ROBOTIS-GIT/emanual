@@ -24,7 +24,7 @@ sidebar:
 | Dimensions (W x H x D) | 32mm x 50mm x 40mm |
 | Gear Ratio | 32 : 1  |
 | No Load Speed | 470rpm (at 12V, Wheel Mode)<br />54rpm (at 12.0V, Joint Mode) |
-| Operating Temperature | -5&deg;C ~ +70&deg;F |
+| Operating Temperature | -5&deg;C ~ +70&deg;C |
 | Input Voltage | 9.0 ~ 12.0V (**Recommended : 11.1V**) |
 | Command Signal | Digital Packet |
 | Protocol Type | Half Duplex Asynchronous Serial Communication<br />(8bit, 1stop, No Parity) |

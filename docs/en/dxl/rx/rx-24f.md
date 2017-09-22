@@ -28,7 +28,7 @@ sidebar:
 | Gear Ratio | 193 : 1  |
 | Stall Torque | 2.6 N*m (at 12V, 2.4A) |
 | No Load Speed | 126rpm (at 12V) |
-| Operating Temperature | -5&deg;C ~ +80&deg;F |
+| Operating Temperature | -5&deg;C ~ +80&deg;C |
 | Input Voltage | 9 ~ 12V (**Recommended : 11.1V**) |
 | Standby Current | 50mA |
 | Command Signal | Digital Packet |

@@ -2,4 +2,4 @@ In case of PWM Control Mode, both PID controller and Feedforward controller are 
 
 | Range  | Description |
 | :----: | :---------: |
-| 0 ~ PWM Limit(36) | Initial Value of PWM Limit(36) : ‘885’ |
+| -PWM Limit(36) ~ PWM Limit(36) | Initial Value of PWM Limit(36) : ‘885’ |
