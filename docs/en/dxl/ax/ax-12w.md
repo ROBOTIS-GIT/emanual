@@ -24,7 +24,7 @@ sidebar:
 | Dimensions (W x H x D) | 32mm x 50mm x 40mm |
 | Gear Ratio | 32 : 1  |
 | No Load Speed | 470rpm (at 12V, Wheel Mode)<br />54rpm (at 12.0V, Joint Mode) |
-| Operating Temperature | -5&deg;C ~ +70&deg;F |
+| Operating Temperature | -5&deg;C ~ +70&deg;C |
 | Input Voltage | 9.0 ~ 12.0V (**Recommended : 11.1V**) |
 | Command Signal | Digital Packet |
 | Protocol Type | Half Duplex Asynchronous Serial Communication<br />(8bit, 1stop, No Parity) |
@@ -244,7 +244,7 @@ It is a position value of destination.
 0 to 1023 (0x3FF) is available.  The unit is 0.29 degree.
 If Goal Position is out of the range, Angle Limit Error Bit (Bit1) of Status Packet is returned as ‘1’ and Alarm is triggered as set in Alarm LED/Shutdown.
 
-![](/emanual/assets/images/dxl/dx_series_goal.png)
+![](/emanual/assets/images/dxl/dx/dx_series_goal_position.png)
 The picture above is the front view of Dynamixel
 
 `Note` If it is set to Wheel Mode, this value is not used.
@@ -284,7 +284,7 @@ If the power is turned on, the value of Max Torque (Address 14, 15) is used as t
 It is the current position value of Dynamixel.
 The range of the value is 0~1023 (0x3FF), and the unit is 0.29 degree.
 
-![](/emanual/assets/images/dxl/dx_series_goal.png)
+![](/emanual/assets/images/dxl/dx/dx_series_goal_position.png)
 The picture above is the front view of Dynamixel.
 
 `Caution` If it is set to Wheel Mode, the value cannot be used to measure the moving distance and the rotation frequency.
