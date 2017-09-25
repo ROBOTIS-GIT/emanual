@@ -11,7 +11,7 @@ Drive Mode is availabe from the firmware version 38.
 
 Master/Slave configuration (Dual joint) is a method to simultaneously control two Dynamixels like one Dynamixel. Master Dynamixel and Slave Dynamixel must be connected with a sync cable. Slave Dynamixel is directly controlled by the Master Dynamixel’s PWM signal transmitted through the sync cable. Therefore, the Slave Dynamixel’s Goal Position, Goal Velocity, Goal Current and Goal PWM are ignored.
 
-![](/emanual/assets/images/dxl/ex/ex-106_dual.png)
+![](/assets/images/dxl/ex/ex-106_dual.png)
 
 |Sync Cable|Description|
 | :---: | :---: |
@@ -20,4 +20,4 @@ Master/Slave configuration (Dual joint) is a method to simultaneously control tw
 
 `Note` In a dual master-slave configuration position information from the slave is ignored and the position of the dual configuration is based on the master in PWM control. When master and slave are not physically connected there could be a slight difference on the driven load. Use the frame shown in the below image to achieve dual configuration.
 
-![](/emanual/assets/images/dxl/ex/ex-106+_fr08-h110_fr08-d101.png)
+![](/assets/images/dxl/ex/ex-106+_fr08-h110_fr08-d101.png)

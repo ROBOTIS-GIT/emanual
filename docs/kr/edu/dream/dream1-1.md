@@ -23,4 +23,4 @@ sidebar:
 
 # [부품 목록](#부품-목록)
 
-![](/emanual/assets/images/edu/dream/dream1-1_partlist.jpg)
+![](/assets/images/edu/dream/dream1-1_partlist.jpg)

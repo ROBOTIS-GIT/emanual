@@ -4,4 +4,4 @@ This P Gain is used in Position Control Mode. Below figure is a block diagram de
 | :---: |
 |0 ~ 32,767|
 
-![](/emanual/assets/images/dxl/pro/pro_position_controller.png)
+![](/assets/images/dxl/pro/pro_position_controller.png)

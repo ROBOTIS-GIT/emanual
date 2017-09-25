@@ -11,7 +11,7 @@ sidebar:
   nav: "rx-24f"
 ---
 
-![](/emanual/assets/images/dxl/rx/rx-24f_product.png)
+![](/assets/images/dxl/rx/rx-24f_product.png)
 
 `Warning` RX-24F has been discontinued.
 {: .notice--warning}
@@ -174,59 +174,59 @@ sidebar:
 
 + FR07-B1 Option Frame
 
-![](/emanual/assets/images/dxl/rx/rx-28_of-28b.png)
+![](/assets/images/dxl/rx/rx-28_of-28b.png)
 
 + FR07-H1 Option Frame
 
-![](/emanual/assets/images/dxl/rx/rx-28_of-28h.png)
+![](/assets/images/dxl/rx/rx-28_of-28h.png)
 
 + FR07-S1 Option Frame
 
-![](/emanual/assets/images/dxl/rx/rx-28_of-28s.png)
+![](/assets/images/dxl/rx/rx-28_of-28s.png)
 
 + FR07-B101 Option Frame
 
-![](/emanual/assets/images/dxl/rx/rx-28_fr07-b101.png)
+![](/assets/images/dxl/rx/rx-28_fr07-b101.png)
 
 + FR07-F101, FR07-X101 Option Frame
 
-![](/emanual/assets/images/dxl/rx/rx-28_fr07-f101_fr07-x101.png)
+![](/assets/images/dxl/rx/rx-28_fr07-f101_fr07-x101.png)
 
 + FR07-H101 Option Frame
 
-![](/emanual/assets/images/dxl/rx/rx-28_fr07-h101.png)
+![](/assets/images/dxl/rx/rx-28_fr07-h101.png)
 
 + FR07-S101 Option Frame
 
-![](/emanual/assets/images/dxl/rx/rx-28_fr07-s101.png)
+![](/assets/images/dxl/rx/rx-28_fr07-s101.png)
 
 + HN07-N1 Horn
 
-![](/emanual/assets/images/dxl/rx/rx-28_hn07-n1.png)
+![](/assets/images/dxl/rx/rx-28_hn07-n1.png)
 
 + HN07-I1 Horn
 
-![](/emanual/assets/images/dxl/rx/rx-28_hn07-i1.png)
+![](/assets/images/dxl/rx/rx-28_hn07-i1.png)
 
 + HN07-T1 Horn
 
-![](/emanual/assets/images/dxl/rx/rx-28_hn07-t1.png)
+![](/assets/images/dxl/rx/rx-28_hn07-t1.png)
 
 + HN07-N101 Horn
 
-![](/emanual/assets/images/dxl/rx/rx-28_hn07-n101.png)
+![](/assets/images/dxl/rx/rx-28_hn07-n101.png)
 
 + HN07-I101 Horn
 
-![](/emanual/assets/images/dxl/rx/rx-28_hn07-i101.png)
+![](/assets/images/dxl/rx/rx-28_hn07-i101.png)
 
 + HN07-T101 Horn
 
-![](/emanual/assets/images/dxl/rx/rx-28_hn07-t101.png)
+![](/assets/images/dxl/rx/rx-28_hn07-t101.png)
 
 + Combinations
 
-![](/emanual/assets/images/dxl/rx/rx-10_combinations.png)
+![](/assets/images/dxl/rx/rx-10_combinations.png)
 
 # [Maintenance](#maintenance)
 

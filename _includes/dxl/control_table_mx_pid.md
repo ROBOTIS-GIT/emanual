@@ -4,7 +4,7 @@ I gain : value of integral action.
 D Gain : value of derivative action.
 Gains values are in between 0~254.
 
-![](/emanual/assets/images/dxl/mx/mx-12_pid_control.png)
+![](/assets/images/dxl/mx/mx-12_pid_control.png)
 
 K<sub>p</sub> = P Gain / 8
 K<sub>i</sub> = I Gain * 1,000 / 2,048

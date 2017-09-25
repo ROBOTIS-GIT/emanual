@@ -6,7 +6,7 @@ The Maximum velocity of Profile can be set with this value. Profile Velocity(112
 
 The Profile is an acceleration/deceleration control method to reduce vibration, noise and load of the motor by controlling dramatically changing velocity and acceleration. It is also called Velocity Profile as it controls acceleration and deceleration based on velocity. DYNAMIXEL provides 4 different types of Profile. The following explains 4 Profiles and how to select them. Profiles are usually selected by a combination of Profile Velocity(112) and Profile Acceleration(108). Triangular and Trapezoidal Profiles exceptionally consider total travel distance(ΔPos, the distance difference between target position and current position) as an additional factor. For convenience, Profile Velocity(112) is abbreviated to V<sub>PRFL</sub> and Profile Acceleration(108) is abbreviated to V<sub>PRFL</sub>. 'X' stands for "Don't Care" case.
 
-![](/emanual/assets/images/dxl/dxl_profiles.jpg)
+![](/assets/images/dxl/dxl_profiles.jpg)
 
 
 When given Goal Position(116), Dynamixel's profile creates target velocity trajectory based on current velocity(initial velocity of the Profile). When Dynamixel receives updated target position from a new Goal Position(116) while it is moving toward the previous Goal Position(116), velocity smoothly varies for the new target velocity trajectory. Maintaining velocity continuity while updating target velocity trajectory is called Velocity Override. For a simple calculation, let's assume that the initial velocity of the Profile is '0'. The following explains how Profile processes Goal Position(116) instruction in Position Control mode, Extended Position Control Mode, Current-based Position Control Mode.
@@ -26,7 +26,7 @@ When given Goal Position(116), Dynamixel's profile creates target velocity traje
 | (V<sub>PRFL</sub>(112) ≠ 0) & (A<sub>PRF</sub>(108) ≠ 0) & (V<sub>PRFL_TRI</sub> ≤ V<sub>PRFL</sub>(112)) | Triangular Profile |
 | (V<sub>PRFL</sub>(112) ≠ 0) & (A<sub>PRF</sub>(108) ≠ 0) & (V<sub>PRFL_TRI</sub> ＞ V<sub>PRFL</sub>(112))	| Trapezoidal Profile |
 
-![](/emanual/assets/images/dxl/dxl_velocity_profiles.jpg)
+![](/assets/images/dxl/dxl_velocity_profiles.jpg)
 
 `Note` Dynamixel supports Jerk control in order to minimize dramatic change of acceleration. Therefore, actual travel time by the target trajectory of Profile could be longer than t3(t4 of above figure).
 {: .notice}

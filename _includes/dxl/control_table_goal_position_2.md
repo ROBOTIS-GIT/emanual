@@ -1,6 +1,6 @@
 Target position can be set with Goal Position(116). From the front view of Dynamixels, CCW is an increasing direction whereas CW is a decreasing direction. The way to reaching Goal Position(116) is differ by 4 Profiles provided by Dynamixels. Please refer to the Profile Velocity(112) for more details.
 
-![](/emanual/assets/images/dxl/x/dxl_goal_position.jpg)
+![](/assets/images/dxl/x/dxl_goal_position.jpg)
 
 | Mode     | Values     | Description |
 | :--------: | :--------: | :--------: |

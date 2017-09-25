@@ -11,9 +11,9 @@ sidebar:
   nav: "ax-12a"
 ---
 
-![](/emanual/assets/images/dxl/ax/ax-12+_product.png)
+![](/assets/images/dxl/ax/ax-12+_product.png)
 
-![](/emanual/assets/images/dxl/ax/ax-12a_product.png)
+![](/assets/images/dxl/ax/ax-12a_product.png)
 
 `Note` AX-12+ is the improved version of existing AX-12; the design of circuit, material, and wheel gear are specially improved.
 {: .notice}
@@ -151,7 +151,7 @@ sidebar:
 It is the current position value of Dynamixel.
 The range of the value is 0~1023 (0x3FF), and the unit is 0.29 degree.
 
-![](/emanual/assets/images/dxl/dx/dx_series_goal_position.png)
+![](/assets/images/dxl/dx/dx_series_goal_position.png)
 The picture above is the front view of Dynamixel.
 
 `Caution` If it is set to Wheel Mode, the value cannot be used to measure the moving distance and the rotation frequency.
@@ -233,13 +233,13 @@ Can choose vales from 0x20 to 0x3FF.
 
 # [How to Assemble](#how-to-assemble)
 
-![](/emanual/assets/images/dxl/ax/ax_12a_frame_assembly_01.png)
+![](/assets/images/dxl/ax/ax_12a_frame_assembly_01.png)
 
-![](/emanual/assets/images/dxl/ax/ax_12a_frame_assembly_02.png)
+![](/assets/images/dxl/ax/ax_12a_frame_assembly_02.png)
 
-![](/emanual/assets/images/dxl/ax/ax_series_frame_assembly_01.png)
+![](/assets/images/dxl/ax/ax_series_frame_assembly_01.png)
 
-![](/emanual/assets/images/dxl/ax/ax_series_frame_assembly_02.png)
+![](/assets/images/dxl/ax/ax_series_frame_assembly_02.png)
 
 # [Maintenance](#maintenance)
 
@@ -254,7 +254,7 @@ Can choose vales from 0x20 to 0x3FF.
 
 ## [Drawings](#drawings)
 
-![](/emanual/assets/images/dxl/ax/ax-12a_dimension.png)
+![](/assets/images/dxl/ax/ax-12a_dimension.png)
 
 {% include dxl/485_ttl_connection.md %}
 

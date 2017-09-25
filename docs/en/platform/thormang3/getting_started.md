@@ -11,7 +11,7 @@ sidebar:
   nav: "thormang3"
 ---
 
-![](/emanual/assets/images/platform/thormang3/thormang3.png)
+![](/assets/images/platform/thormang3/thormang3.png)
 
 # [Getting Started](#getting-started)
 
@@ -27,7 +27,7 @@ Ubuntu 16.04 LTS is installed on PCs in the THORMANG3 and the PC for Remote Cont
 
 This section explains how to configure the network for MPC(Motion PC) and PPC(Perception PC) of the robot, as well as the Wi-Fi switch and the OPC(Operating PC).
 
-![](/emanual/assets/images/platform/thormang3/THORMANG3_network_map.png)
+![](/assets/images/platform/thormang3/THORMANG3_network_map.png)
 
 ### [Access Point Setting](#access-point-setting)
 

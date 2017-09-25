@@ -6,4 +6,4 @@ Below figure is a block diagram describing the current-based position controller
 5. The final PWM value is applied to the motor through an Inverter, and the horn of DYNAMIXEL is driven.
 6. Results are stored at Present Position(132), Present Velocity(128), Present PWM(124) and Present Current(126).
 
-![](/emanual/assets/images/dxl/current_position_controller_pid_gain.jpg)
+![](/assets/images/dxl/current_position_controller_pid_gain.jpg)

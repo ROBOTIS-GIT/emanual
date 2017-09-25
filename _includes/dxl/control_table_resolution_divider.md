@@ -7,7 +7,7 @@ The Present Position can be obtained while Multi-turn Offset and Resolution Divi
 Present position = (Real Position / Resolution Divider) + Multi-turn Offset
 For example, a Dynamixel with a Real Position of 2048 with a Resolution Divider set as 4 and Multi-turn Offset as 1024 will yield a Present Position of 1535 ((2048/4) + 1024 = 1535).
 
-![](/emanual/assets/images/dxl/mx/mx-12_res_divider.jpg)
+![](/assets/images/dxl/mx/mx-12_res_divider.jpg)
 
 Note: This feature is only applied in multi-turn mode and will be ignored in other modes.
 {: .notice}

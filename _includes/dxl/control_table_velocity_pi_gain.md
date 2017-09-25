@@ -15,7 +15,7 @@ Below figure is a block diagram describing the velocity controller in Velocity C
 6. The final PWM value is applied to the motor through an Inverter, and the horn of DYNAMIXEL is driven.
 7. Results are stored at Present Position(132), Present Velocity(128), Present PWM(124) and Present Current(126).
 
-![](/emanual/assets/images/dxl/velocity_controller_pi_gain.jpg)
+![](/assets/images/dxl/velocity_controller_pi_gain.jpg)
 
 
 `Note` K<sub>a</sub> stands for Anti-windup Gain and ‘β’ is a conversion coefficient of position and velocity that cannot be modified by users. For more details about the PID controller, please refer to the [PID Controller at wikipedia](http://en.wikipedia.org/wiki/PID_controller).

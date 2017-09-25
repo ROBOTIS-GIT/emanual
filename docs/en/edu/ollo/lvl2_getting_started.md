@@ -1,21 +1,21 @@
 ---
 layout: archive
 lang: en
-ref: ollo_lvl2_getting_started
+ref: ollo_explore
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/edu/ollo/lvl2_getting_started/
+permalink: /docs/en/edu/ollo/bugexplore/
 sidebar:
   title: OLLO Explore
-  nav: "ollo_lvl2"
+  nav: "ollo_explore"
 ---
 
 # [Introduction](#introduction)
 Create robots using the controllers and sensors.
 Through 12-session curriculum, learn scientific principle and physics theory such as power of robot, usage of sensors, speed and force, walking, and running etc. by experiment.
 
-`Note` For OLLO Explorer, the instructor will download the program.  If you want to download and learn the program for yourself, you must purchase [USB Downloader(LN-101)][ln-101] separately. If you want to build and program your robots using more peripheral devices, please purchase OLLO [Inventor][inventor].
+`Note` For OLLO Explorer, the instructor will download the program.  If you want to download and learn the program for yourself, you must purchase [USB Downloader(LN-101)] separately. If you want to build and program your robots using more peripheral devices, please purchase OLLO [Inventor].
 {: .notice}
 
 
@@ -25,8 +25,8 @@ Through 12-session curriculum, learn scientific principle and physics theory suc
 
 ![][ollo_explore_partlist]
 
-- [CM-100][cm-100]
-- [Geared Motor][geared-motor]
+- [CM-100]
+- [Geared Motor]
 
 ## [How to Play](#how-to-play)
 
@@ -61,32 +61,53 @@ Please refer to the learning material in the kit for more information.
 Please refer to Explorer Learning Material on How to Assemble or motions during the execution for each example.
 {: .notice}
 
-Also, please refer to [How to Download of task code][download-task] for more information.
+Also, please refer to [How to Download of task code] for more information.
 {: .notice}
 
-Integrated example program
-This program is basically included in the main controller when you purchase the goods
-Please refer to the Operating Method to see how to use this program.
-  OLLO_L2_Total_EN.tsk
+1. Integrated example program
+  - This program is basically included in the main controller when you purchase the goods
+  - Please refer to the Operating Method to see how to use this program.
+  `Download` [OLLO_L2_Total_EN.tsk]
 
-Example program of each chapter
+2. Example program of each chapter
+
+|Robots|E-1|
+| :----- | :----- |
+|1. Elephant|`Download` [OLLO_L2_Elephant_EN.tsk]|
+|2. Windmill|`Download` [OLLO_L2_Windmill_EN.tsk]|
+|3. Avoider|`Download` [OLLO_L2_Avoider_EN.tsk]|
+|4. Imagine|`Download` [OLLO_L2_DistanceSensor_EN.tsk]<br />`Download` [OLLO_L2_Penguin_EN.tsk]<br />`Download` [OLLO_L2_CardGiver_EN.tsk]|
+
+|Robots|E-2|
+| :----- | :----- |
+|5. Seal|`Download` [OLLO_L2_Seal_EN.tsk]|
+|6. Line Tracer|`Download` [OLLO_L2_Linetracer_EN.tsk]|
+|7. Howitzer|`Download` [OLLO_L2_Howitzer_EN.tsk]|
+|8. Imagine|`Download` [OLLO_L2_SoundSensor_EN.tsk]<br />`Download` [OLLO_L2_Dancing_EN.tsk]<br />`Download` [OLLO_L2_Cradle_EN.tsk]|
+
+|Robots|E-3|
+| :----- | :----- |
+|9. Lady Bug|`Download` [OLLO_L2_Ladybug_EN.tsk]|
+|10. Wheel Puppy|`Download` [OLLO_L2_WheelPuppy_EN.tsk]|
+|11. Mouse|`Download` [OLLO_L2_Mouse_EN.tsk]|
+|12. Battle Bug|`Download` [OLLO_L2_Battlebug_EN.tsk]|
 
 
-[ln-101]: /emanual/docs/en/parts/interface/ln_101/
-[inventor]: #
-[cm-100]: /emanual/docs/en/parts/controller/cm_100/
-[geared-motor]: #
-[download-task]: /emanual/docs/en/faq/download_task_code/
-[ollo_explore_partlist]: /emanual/assets/images/edu/ollo/ollo_explore_partlist.png
-[cm-100-operate]: /emanual/assets/images/edu/ollo/ollo_lvl2_001.png
-[img_02]: /emanual/assets/images/edu/ollo/ollo_lvl2_elephant.jpg
-[img_03]: /emanual/assets/images/edu/ollo/ollo_lvl2_windmill.jpg
-[img_04]: /emanual/assets/images/edu/ollo/ollo_lvl2_introduce_robot.jpg
-[img_05]: /emanual/assets/images/edu/ollo/ollo_lvl2_imagine.jpg
-[img_06]: /emanual/assets/images/edu/ollo/ollo_lvl2_seal.jpg
-[img_07]: /emanual/assets/images/edu/ollo/ollo_lvl2_car.jpg
-[img_08]: /emanual/assets/images/edu/ollo/ollo_lvl2_howitzer.jpg
-[img_09]: /emanual/assets/images/edu/ollo/ollo_lvl2_ladybug.jpg
+[USB Downloader(LN-101)]: /emanual/docs/en/parts/interface/ln_101/
+[Inventor]: #
+[CM-100]: /emanual/docs/en/parts/controller/cm_100/
+[Geared Motor]: #
+[How to Download of task code]: /emanual/docs/en/faq/download_task_code/
+[ollo_explore_partlist]: /assets/images/edu/ollo/ollo_explorer_partlist.png
+[img_01]: /assets/images/edu/ollo/ollo_lvl2_001.jpg
+[img_02]: /assets/images/edu/ollo/ollo_lvl2_elephant.jpg
+[img_03]: /assets/images/edu/ollo/ollo_lvl2_windmill.jpg
+[img_04]: /assets/images/edu/ollo/ollo_lvl2_introduce_robot.jpg
+[img_05]: /assets/images/edu/ollo/ollo_lvl2_imagine.png
+[img_06]: /assets/images/edu/ollo/ollo_lvl2_seal.jpg
+[img_07]: /assets/images/edu/ollo/ollo_lvl2_car.jpg
+[img_08]: /assets/images/edu/ollo/ollo_lvl2_howitzer.jpg
+[img_09]: /assets/images/edu/ollo/ollo_lvl2_ladybug.jpg
 
 [Programming]: #programming
 [OLLO_LineTrace.pdf]: #
@@ -94,3 +115,20 @@ Example program of each chapter
 [OLLO_BUG_Product_EN.tsk]: #
 [How to Download Task code]: #
 [How to execute the Program]: #
+[OLLO_L2_Total_EN.tsk]: http://support.robotis.com/en/baggage_files/ollo/edu_2nd/ollo_l2_total_en.tsk
+[OLLO_L2_Elephant_EN.tsk]: http://support.robotis.com/en/baggage_files/ollo/edu_2nd/ollo_l2_elephant_en.tsk
+[OLLO_L2_Windmill_EN.tsk]: http://support.robotis.com/en/baggage_files/ollo/edu_2nd/ollo_l2_elephant_en.tsk
+[OLLO_L2_Avoider_EN.tsk]:http://support.robotis.com/en/baggage_files/ollo/edu_2nd/ollo_l2_avoider_en.tsk
+[OLLO_L2_DistanceSensor_EN.tsk]: http://support.robotis.com/en/baggage_files/ollo/edu_2nd/ollo_l2_distancesensor_en.tsk
+[OLLO_L2_Penguin_EN.tsk]: http://support.robotis.com/en/baggage_files/ollo/edu_2nd/ollo_l2_penguin_en.tsk
+[OLLO_L2_CardGiver_EN.tsk]: http://support.robotis.com/en/baggage_files/ollo/edu_2nd/ollo_l2_cardgiver_en.tsk
+[OLLO_L2_Seal_EN.tsk]: http://support.robotis.com/en/baggage_files/ollo/edu_2nd/ollo_l2_seal_en.tsk
+[OLLO_L2_Linetracer_EN.tsk]: http://support.robotis.com/en/baggage_files/ollo/edu_2nd/ollo_l2_linetracer_en.tsk
+[OLLO_L2_Howitzer_EN.tsk]: http://support.robotis.com/en/baggage_files/ollo/edu_2nd/ollo_l2_howitzer_en.tsk
+[OLLO_L2_SoundSensor_EN.tsk]: http://support.robotis.com/en/baggage_files/ollo/edu_2nd/ollo_l2_soundsensor_en.tsk
+[OLLO_L2_Dancing_EN.tsk]: http://support.robotis.com/en/baggage_files/ollo/edu_2nd/ollo_l2_dancing_en.tsk
+[OLLO_L2_Cradle_EN.tsk]: http://support.robotis.com/en/baggage_files/ollo/edu_2nd/ollo_l2_cradle_en.tsk
+[OLLO_L2_Ladybug_EN.tsk]: http://support.robotis.com/en/baggage_files/ollo/edu_2nd/ollo_l2_ladybug_en.tsk
+[OLLO_L2_WheelPuppy_EN.tsk]: http://support.robotis.com/en/baggage_files/ollo/edu_2nd/ollo_l2_wheelpuppy_en.tsk
+[OLLO_L2_Mouse_EN.tsk]: http://support.robotis.com/en/baggage_files/ollo/edu_2nd/ollo_l2_mouse_en.tsk
+[OLLO_L2_Battlebug_EN.tsk]: http://support.robotis.com/en/baggage_files/ollo/edu_2nd/ollo_l2_battlebug_en.tsk

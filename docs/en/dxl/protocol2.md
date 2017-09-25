@@ -22,24 +22,24 @@ Instruction Packet is the command data sent to the Device.
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |0xFF|0xFF|0xFD|0x00|ID|Len_L|Len_H|Instruction|Param 1|...|Param N|CRC_L|CRC_H|
 
-## Header
+## [Header](#header)
 The field indicates the start of the Packet
 
-## Reserved
+## [Reserved](#reserved)
 0x00 (0xFD cannot be used)
 
-## Packet ID
+## [Packet ID](#packet-id)
 The field that indicates the ID of the Device that should receive the Instruction Packet and process it
 
   1. Range : 0 ~ 252 (0x00 ~ 0xFC), which is a total of 253 numbers that can be used
   2. Broadcast ID : 254 (0xFE), which makes all connected devices execute the Instruction Packet
   3. 253(0xFD), 255(0xFF) : These are not used in order to avoid duplicate use with Header
 
-## Packet Length
+## [Packet Length](#packet-length)
 The length after the Packet Length field (Instruction, Parameter, CRC fields).
 Packet Length = number of Parameters + 3
 
-## Instruction
+## [Instruction](#instruction)
 The field that defines the type of command.
 
 |Value|Instructions|Description|
@@ -57,12 +57,13 @@ The field that defines the type of command.
 |0x92|Bulk Read|For multiple devices, Instruction to read data from different Addresses with different lengths at once|
 |0x93|Bulk Write|For multiple devices, Instruction to write data on different Addresses with different lengths at once|
 
-## Parameters
+## [Parameters](#parameters)
 
   1. As the auxiliary data field for Instruction, its purpose is different for each Instruction.
   2. Method of expressing negative number data : This is different for each product, so please refer to the e-manual of the corresponding product.
 
-`16bit CRC` This is the field that checks if the Packet has been damaged during communication. Please refer to the [CRC calculation code](/docs/en/dxl/crc/).
+## [CRC](#crc)
+16bit CRC field checks if the Packet has been damaged during communication. Please refer to the [CRC calculation code](/docs/en/dxl/crc/).
 
 
 # [Status Packet](#status-packet)
@@ -74,7 +75,7 @@ The field that defines the type of command.
 ## Instruction
 Instruction of the Status Packet is designated to 0x55 (Status)
 
-## Error
+## [Error](#error)
 The field that indicates the processing result of Instruction Packet
 
 |Bit 7|Bit 6 ~ Bit 0|
@@ -301,7 +302,7 @@ The field that indicates the processing result of Instruction Packet
 
 |H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|CRC1|CRC2|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0xFD|0x00|0xFE|0x03|0x00|0x05|0x02|0xCE|
+|0xFF|0xFF|0xFD|0x00|0x01|0x03|0x00|0x05|0x02|0xCE|
 
 #### ID 1 Status Packet
 

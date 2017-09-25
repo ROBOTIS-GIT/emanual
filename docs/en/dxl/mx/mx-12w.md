@@ -11,7 +11,7 @@ sidebar:
   nav: "mx-12w"
 ---
 
-![](/emanual/assets/images/dxl/mx/mx-12_product.jpg)
+![](/assets/images/dxl/mx/mx-12_product.jpg)
 
 # [Specifications](#specifications)
 
@@ -222,7 +222,7 @@ For example, if it is set to 300 then the motor is moving to the CCW direction a
 
 ## [Drawings](#drawings)
 
-![](/emanual/assets/images/dxl/ax/ax-12w_dimension.png)
+![](/assets/images/dxl/ax/ax-12w_dimension.png)
 
 
 [Compatibility Guide]: http://en.robotis.com/BlueAD/board.php?bbs_id=faq&mode=view&bbs_no=47&page=1&key=&keyword=&sort=&scate=

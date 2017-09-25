@@ -15,4 +15,4 @@ Data representative value is actually used value.  That is, even if the value is
 Compliance is to set the control flexibility of the motor.
 The following diagram shows the relationship between output torque and position of the motor.
 
-![](/emanual/assets/images/dxl/dxl_compliance.png)
+![](/assets/images/dxl/dxl_compliance.png)

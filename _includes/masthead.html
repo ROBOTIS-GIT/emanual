@@ -2,7 +2,7 @@
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <a class="site-title" href="{{ '/' | absolute_url }}"><img src="/emanual/assets/images/robotis_logo.gif" style="padding-right:10px;">e-Manual</a>
+        <a class="site-title" href="{{ '/' | absolute_url }}"><img src="/assets/images/robotis_logo.gif" style="padding-right:10px;">e-Manual</a>
         {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
         {% for page in pages %}
           <a href="{{ page.url | absolute_url }}" class="{{page.lang}}" style="color: #134268;padding-right:10px;">[{{page.lang}}]</a>
@@ -215,6 +215,6 @@
   </div>
 </div>
 
-<script src="/emanual/assets/js/lunr.min.js"></script>
+<script src="/assets/js/lunr.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="/emanual/assets/js/search.js"></script>
+<script src="/assets/js/search.js"></script>

@@ -17,7 +17,7 @@ Below figure is a block diagram describing the position controller in Position C
 6. The final PWM value is applied to the motor through an Inverter, and the horn of Dynamixel is driven.
 7. Results are stored at Present Position(132), Present Velocity(128), Present PWM(124) and Present Current(126).
 
-![](/emanual/assets/images/dxl/position_controller_pid_gain.jpg)
+![](/assets/images/dxl/position_controller_pid_gain.jpg)
 
 `Note` In case of PWM Control Mode, both PID controller and Feedforward controller are deactivated while Goal PWM(100) value is directly controlling the motor through an Inverter. In this manner, users can directly control the supplying voltage to the motor.
 {: .notice}

@@ -62,11 +62,11 @@ sidebar:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UlD4C1XMsgo" frameborder="0" allowfullscreen></iframe>
 
-[img_01]: /emanual/assets/images/edu/task_download_01.jpg
-[img_02]: /emanual/assets/images/edu/task_download_02.png
-[img_03]: /emanual/assets/images/edu/task_download_03.png
-[img_04]: /emanual/assets/images/edu/task_download_04.png
-[img_05]: /emanual/assets/images/edu/task_download_05.png
+[img_01]: /assets/images/edu/task_download_01.jpg
+[img_02]: /assets/images/edu/task_download_02.png
+[img_03]: /assets/images/edu/task_download_03.png
+[img_04]: /assets/images/edu/task_download_04.png
+[img_05]: /assets/images/edu/task_download_05.png
 [task-rule-check]: /emanual/docs/en/software/rplus1/task/task_misc/#rule-check
 [ln-101]: /emanual/docs/en/parts/interface/ln_101/
 [cm-100]: /emanual/docs/en/parts/controller/cm_100/

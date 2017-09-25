@@ -4,7 +4,7 @@ These values indicate P and I Gains of Velocity Control Mode. The I Gain include
 | :---: |
 |0 ~ 32,767|
 
-![](/emanual/assets/images/dxl/pro/pro_velocity_controller.png)
+![](/assets/images/dxl/pro/pro_velocity_controller.png)
 
 `Note` K<sub>P</sub>A stands for Anti-windup Gain that cannot be modified by users. For more details about the PID controller, please refer to the [PID Controller at wikipedia](http://en.wikipedia.org/wiki/PID_controller).
 {: .notice}

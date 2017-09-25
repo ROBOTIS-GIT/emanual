@@ -13,9 +13,9 @@ Dynamixel PRO is equipped with multi-purpose expansion ports.
 #### External expansion port location and pin function
 Remove bolts and cover plate to reveal External Port connector.
 
-![](/emanual/assets/images/dxl/pro/pro_external_port.png)
+![](/assets/images/dxl/pro/pro_external_port.png)
 
-![](/emanual/assets/images/dxl/pro/pro_external_port_pinout.png)
+![](/assets/images/dxl/pro/pro_external_port_pinout.png)
 
 |Pin 1|Pin 2|Pin 3|Pin 4|Pin 5|Pin 6|
 | :---: | :---: | :---: | :---: | :---: | :---: |

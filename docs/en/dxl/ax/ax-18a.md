@@ -11,8 +11,8 @@ sidebar:
   nav: "ax-18a"
 ---
 
-![](/emanual/assets/images/dxl/ax/ax-18f_product.jpg)
-![](/emanual/assets/images/dxl/ax/ax-18a_product.png)
+![](/assets/images/dxl/ax/ax-18f_product.jpg)
+![](/assets/images/dxl/ax/ax-18a_product.png)
 
 `Note` AX-18A is a new version of the AX-18F with the same performance but more advanced external design.
 {: .notice}
@@ -245,14 +245,14 @@ Data representative value is actually used value.  That is, even if the value is
 Compliance is to set the control flexibility of the motor.
 The following diagram shows the relationship between output torque and position of the motor.
 
-![](/emanual/assets/images/dxl/dxl_compliance.png)
+![](/assets/images/dxl/dxl_compliance.png)
 
 ### <a name="goal-position"></a>**Goal Position**
 It is a position value of destination.
 0 to 1023 (0x3FF) is available.  The unit is 0.29 degree.
 If Goal Position is out of the range, Angle Limit Error Bit (Bit1) of Status Packet is returned as ‘1’ and Alarm is triggered as set in Alarm LED/Shutdown.
 
-![](/emanual/assets/images/dxl/dx/dx_series_goal_position.png)
+![](/assets/images/dxl/dx/dx_series_goal_position.png)
 The picture above is the front view of Dynamixel
 
 `Note` If it is set to Wheel Mode, this value is not used.
@@ -292,7 +292,7 @@ If the power is turned on, the value of Max Torque (Address 14, 15) is used as t
 It is the current position value of Dynamixel.
 The range of the value is 0~1023 (0x3FF), and the unit is 0.29 degree.
 
-![](/emanual/assets/images/dxl/dx/dx_series_goal_position.png)
+![](/assets/images/dxl/dx/dx_series_goal_position.png)
 The picture above is the front view of Dynamixel.
 
 `Caution` If it is set to Wheel Mode, the value cannot be used to measure the moving distance and the rotation frequency.
@@ -374,11 +374,11 @@ Can choose vales from 0x20 to 0x3FF.
 
 # [How to Assemble](#how-to-assemble)
 
-![](/emanual/assets/images/dxl/ax/ax_12a_frame_assembly_02.png)
+![](/assets/images/dxl/ax/ax_12a_frame_assembly_02.png)
 
-![](/emanual/assets/images/dxl/ax/ax_series_frame_assembly_01.png)
+![](/assets/images/dxl/ax/ax_series_frame_assembly_01.png)
 
-![](/emanual/assets/images/dxl/ax/ax_series_frame_assembly_02.png)
+![](/assets/images/dxl/ax/ax_series_frame_assembly_02.png)
 
 # [Maintenance](#maintenance)
 
@@ -393,7 +393,7 @@ Can choose vales from 0x20 to 0x3FF.
 
 ## [Drawings](#drawings)
 
-![](/emanual/assets/images/dxl/ax/ax-18a_dimension.png)
+![](/assets/images/dxl/ax/ax-18a_dimension.png)
 
 {% include dxl/485_ttl_connection.md %}
 
