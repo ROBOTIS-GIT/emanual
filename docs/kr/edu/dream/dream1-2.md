@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/kr/edu/dream/dream1-2/
 sidebar:
-  title: Dream-LV.2
+  title: 드림1 2단계
   nav: "dream1-2"
 ---
 
@@ -59,7 +59,7 @@ sidebar:
 |9 (높은 레)|9장 예제, 다람쥐|![](/assets/images/edu/dream/dream1-2_squirrel.jpg)|
 |10 (높은 미)|10장 예제, 들소|![](/assets/images/edu/dream/dream1-2_buffalo.jpg)|
 |11 (높은 파)|11장 예제, 악어|![](/assets/images/edu/dream/dream1-2_crocodile.jpg)|
-|12 (높은 솔)|12장 예제, 상상하세요|![](/assets/images/edu/dream/dream1-2_eli.jpg)<br />![](/assets/images/edu/dream/dream1-2_peng.jpg)|
+|12 (높은 솔)|12장 예제, 상상하세요|![](/assets/images/edu/dream/dream1-2_imagine.jpg)|
 
 `참고` USB케이블은 로보티즈 드림 1단계 구성품에 포함되어 있습니다.
 {: .notice}
@@ -87,7 +87,7 @@ sidebar:
 |9장 예제, 다람쥐|![](/assets/images/edu/dream/dream1-2_squirrel.jpg)|[DREAM_L2_Squirrel_KR.tsk]|
 |10장 예제, 들소|![](/assets/images/edu/dream/dream1-2_buffalo.jpg)|[DREAM_L2_Buffalo_KR.tsk]|
 |11장 예제, 악어|![](/assets/images/edu/dream/dream1-2_crocodile.jpg)|[DREAM_L2_Crocodile_KR.tsk]|
-|12장 예제, 상상하세요|![](/assets/images/edu/dream/dream1-2_eli.jpg)<br />![](/assets/images/edu/dream/dream1-2_peng.jpg)|[DREAM_L2_Distancesensor_KR.tsk]|
+|12장 예제, 상상하세요|![](/assets/images/edu/dream/dream1-2_imagine.jpg)|[DREAM_L2_Distancesensor_KR.tsk]|
 
 # [참고자료](#참고자료)
 

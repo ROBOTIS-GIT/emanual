@@ -186,22 +186,21 @@ main:
         titlekr: "버그 키트"
         titlejp: "Bug Kit"
         titlecn: "Bug Kit"
-      - title: "Level 2 Kit"
+      - title: "Explorer"
         titlekr: "2단계 교육키트"
         titlejp: "Level 2 Kit"
         titlecn: "Level 2 Kit"
-      - title: "Level 3 Kit"
+      - title: "Inventor"
         titlekr: "3단계 교육키트"
         titlejp: "Level 3 Kit"
         titlecn: "Level 3 Kit"
       - titlekr: "4단계 교육키트"
         titlejp: "Level 4 Kit"
         titlecn: "Level 4 Kit"
-    - title: "Dream I"
+    - title: "Dream"
       titlekr: "드림 I"
       children:
-      - title: "Level 1"
-        titlekr: "1단계 교육키트"
+      - titlekr: "1단계 교육키트"
         titlejp: "Level 1"
         titlecn: "Level 1"
         urlkr: /edu/dream/dream1-1/
@@ -209,28 +208,31 @@ main:
         titlekr: "2단계 교육키트"
         titlejp: "Level 2"
         titlecn: "Level 2"
+        url: /edu/dream/dream1-2/
         urlkr: /edu/dream/dream1-2/
       - title: "Level 3"
         titlekr: "3단계 교육키트"
         titlejp: "Level 3"
         titlecn: "Level 3"
+        url: /edu/dream/dream1-3/
       - title: "Level 4"
         titlekr: "4단계 교육키트"
         titlejp: "Level 4"
         titlecn: "Level 4"
-    - title: "Dream II"
-      titlekr: "드림 II"
+        url: /edu/dream/dream1-4/
+      - title: "SET A"
+        url: /edu/dream/dream-a/
+      - title: "SET B"
+        url: /edu/dream/dream-b/
+    - titlekr: "드림 II"
       children:
-      - title: "Level 1"
-        titlekr: "1단계 교육키트"
+      - titlekr: "1단계 교육키트"
         titlejp: "Level 1"
         titlecn: "Level 1"
-      - title: "Level 2"
-        titlekr: "2단계 교육키트"
+      - titlekr: "2단계 교육키트"
         titlejp: "Level 2"
         titlecn: "Level 2"
-      - title: "Level 3"
-        titlekr: "3단계 교육키트"
+      - titlekr: "3단계 교육키트"
         titlejp: "Level 3"
         titlecn: "Level 3"
     - titlekr: "스마트 I"
@@ -248,15 +250,12 @@ main:
       - titlekr: "1단계 교육키트"
       - titlekr: "2단계 교육키트"
         urlkr: /edu/smart/smart3-2/
-    - title: "IoT"
-      titlekr: "IoT"
+    - titlekr: "IoT"
       children:
-      - title: "Level 1"
-        titlekr: "1단계 교육키트"
+      - titlekr: "1단계 교육키트"
         titlejp: "Level 1"
         titlecn: "Level 1"
-      - title: "Level 2"
-        titlekr: "2단계 교육키트"
+      - titlekr: "2단계 교육키트"
         titlejp: "Level 2"
         titlecn: "Level 2"
     - title: "Bioloid"
@@ -268,26 +267,26 @@ main:
         titlekr: "초급"
         titlejp: "Entry Level"
         titlecn: "Entry Level"
+        url: /edu/bioloid/entry/
       - title: "Advanced Level"
         titlekr: "종합"
         titlejp: "Advanced Level"
         titlecn: "Advanced Level"
-      - title: "STEM Kit"
+      - title: "ROBOTIS STEM"
         titlekr: "STEM 키트"
         titlejp: "STEM Kit"
         titlecn: "STEM Kit"
-      - title: "STEM Academy"
-        titlekr: "STEM 아카데미"
+      - titlekr: "STEM 아카데미"
         titlejp: "STEM Academy"
         titlecn: "STEM Academy"
-      - title: "Premium"
+      - title: "ROBOTIS Premium"
         titlekr: "프리미엄"
         titlejp: "Premium"
         titlecn: "Premium"
-      - title: "GP"
-        titlekr: "GP"
-        titlejp: "GP"
-        titlecn: "GP"
+      - title: "ROBOTIS GP"
+        titlekr: "ROBOTIS GP"
+        titlejp: "ROBOTIS GP"
+        titlecn: "ROBOTIS GP"
     - title: "MINI"
       titlekr: "미니"
   - title: "SOFTWARE"
@@ -3271,8 +3270,8 @@ ollo_bugkit:
         url: /edu/ollo/bugkit/#part-list
       - title: "How to Play"
         url: /edu/ollo/bugkit/#how-to-play
-      - title: "Wireless Control"
-        url: /edu/ollo/bugkit/#wireless-control
+      - title: "ZIGBee Wireless Control"
+        url: /edu/ollo/bugkit/#zigbee-wireless-control
   - title: "Applications"
     url: /edu/ollo/bugkit/#applications
     children:
@@ -3301,18 +3300,32 @@ ollo_bugkit:
 #Ollo Explorer
 ollo_explorer:
   - title: "Introduction"
-    url: /edu/ollo/bugexplorer/#introduction
-  - title: "Getting Started"
-    url: /edu/ollo/bugexplorer/#getting-started
+    url: /edu/ollo/explorer/#introduction
+  - title: "Part List"
+    url: /edu/ollo/explorer/#part-list
+  - title: "Quick Start"
+    url: /edu/ollo/explorer/#quick-start
     children:
-      - title: "Part List"
-        url: /edu/ollo/bugexplorer/#part-list
       - title: "How to Play"
-        url: /edu/ollo/bugexplorer/#how-to-play
+        url: /edu/ollo/explorer/#how-to-play
       - title: "Select Program"
-        url: /edu/ollo/bugexplorer/#select-program
+        url: /edu/ollo/explorer/#select-program
   - title: "Download"
-    url: /edu/ollo/bugexplorer/#download
+    url: /edu/ollo/explorer/#download
+
+#Ollo Inventor
+ollo_inventor:
+  - title: "Introduction"
+    url: /edu/ollo/inventor/#introduction
+  - title: "Part List"
+    url: /edu/ollo/inventor/#part-list
+  - title: "Quick Start"
+    url: /edu/ollo/inventor/#quick-start
+    children:
+      - title: "ZIGBee Wireless Control"
+        url: /edu/ollo/inventor/#zigbee-wireless-control
+  - title: "Download"
+    url: /edu/ollo/inventor/#download
 
 #DreamI Level1 sidebar
 dream1-1:
@@ -3323,24 +3336,86 @@ dream1-1:
 
 #DreamI Level2 sidebar
 dream1-2:
-  - titlekr: "개요"
+  - title: "Introduction"
+    titlekr: "개요"
+    url: /edu/dream/dream1-2/#introduction
     urlkr: /edu/dream/dream1-2/#개요
-  - titlekr: "부품 목록"
+  - title: "Part List"
+    titlekr: "부품 목록"
+    url: /edu/dream/dream1-2/#part-list
     urlkr: /edu/dream/dream1-2/#부품-목록
-  - titlekr: "작동하기"
+  - title: "Quick Start"
+    titlekr: "작동하기"
+    url: /edu/dream/dream1-2/#quick-start
     urlkr: /edu/dream/dream1-2/#작동하기
     children:
-      - titlekr: "작동방법"
+      - title: "How to Play"
+        titlekr: "작동방법"
+        url: /edu/dream/dream1-2/#how-to-play
         urlkr: /edu/dream/dream1-2/#작동방법
-      - titlekr: "프로그램 선택방법"
+      - title: "Select Program"
+        titlekr: "프로그램 선택방법"
+        url: /edu/dream/dream1-2/#select-program
         urlkr: /edu/dream/dream1-2/#프로그램-선택방법
-  - titlekr: "교안예제"
+  - title: "Examples"
+    titlekr: "교안예제"
+    url: /edu/dream/dream1-2/#examples
     urlkr: /edu/dream/dream1-2/#교안예제
-  - titlekr: "참고자료"
-    urlkr: /edu/dream/dream1-2/#참고자료
+
+#DreamI Level3 sidebar
+dream1-3:
+  - title: "Introduction"
+    titlekr: "개요"
+    url: /edu/dream/dream1-3/#introduction
+    urlkr: /edu/dream/dream1-3/#개요
+  - title: "Part List"
+    titlekr: "부품 목록"
+    url: /edu/dream/dream1-3/#part-list
+    urlkr: /edu/dream/dream1-3/#부품-목록
+  - title: "Examples"
+    titlekr: "교안예제"
+    url: /edu/dream/dream1-3/#examples
+    urlkr: /edu/dream/dream1-3/#교안예제
+
+#DreamI Level4 sidebar
+dream1-4:
+  - title: "Introduction"
+    titlekr: "개요"
+    url: /edu/dream/dream1-4/#introduction
+    urlkr: /edu/dream/dream1-4/#개요
+  - title: "Part List"
+    titlekr: "부품 목록"
+    url: /edu/dream/dream1-4/#part-list
+    urlkr: /edu/dream/dream1-4/#부품-목록
+  - title: "Examples"
+    titlekr: "교안예제"
+    url: /edu/dream/dream1-4/#examples
+    urlkr: /edu/dream/dream1-4/#교안예제
+
+#Dream Set A sidebar
+dream-a:
+  - title: "Introduction"
+    url: /edu/dream/dream-a/#introduction
+  - title: "Part List"
+    url: /edu/dream/dream-a/#part-list
+  - title: "Quick Start"
+    url: /edu/dream/dream-a/#quick-start
     children:
-      - titlekr: "호환성"
-        urlkr: /edu/dream/dream1-2/#호환성
+      - title: "How to Play"
+        url: /edu/dream/dream-a/#how-to-play
+      - title: "Select Program"
+        url: /edu/dream/dream-a/#select-program
+  - title: "Examples"
+    url: /edu/dream/dream-a/#examples
+
+#Dream Set B sidebar
+dream-b:
+  - title: "Introduction"
+    url: /edu/dream/dream-b/#introduction
+  - title: "Part List"
+    url: /edu/dream/dream-b/#part-list
+  - title: "Examples"
+    url: /edu/dream/dream-b/#examples
 
 #SmartIII Level2 sidebar
 smart3-2:
@@ -3359,6 +3434,101 @@ smart3-2:
         urlkr: /edu/smart/smart3-2/#블루투스-연결하기
   - titlekr: "교안예제"
     urlkr: /edu/smart/smart3-2/#교안예제
+
+#BIOLOID Entry sidebar
+bioloid-entry:
+  - title: "Introduction"
+    titlekr: "개요"
+    url: /edu/bioloid/entry/#introduction
+    urlkr:
+  - title: "Getting Started"
+    titlekr: ""
+    url: /edu/bioloid/entry/#getting-started
+    urlkr:
+    children:
+    - title: "Part List"
+      titlekr: ""
+      url: /edu/bioloid/entry/#part-list
+      urlkr:
+    - title: "Preparation"
+      titlekr: ""
+      url: /edu/bioloid/entry/#preparation
+      urlkr:
+    - title: "Operating"
+      titlekr: ""
+      url: /edu/bioloid/entry/#operating
+      urlkr:
+    - title: "Charging CM-5"
+      titlekr: ""
+      url: /edu/bioloid/entry/#charging-cm-5
+      urlkr:
+  - title: "Tutorial"
+    titlekr: ""
+    url: /edu/bioloid/entry/#tutorial
+    urlkr:
+    children:
+    - title: "Screen Output"
+      titlekr: ""
+      url: /edu/bioloid/entry/#screen-output
+      urlkr:
+    - title: "Button & LED"
+      titlekr: ""
+      url: /edu/bioloid/entry/#button-led
+      urlkr:
+    - title: "Attacking Duck"
+      titlekr: ""
+      url: /edu/bioloid/entry/#attacking-duck
+      urlkr:
+    - title: "Obstacle Detecting Car"
+      titlekr: ""
+      url: /edu/bioloid/entry/#obstacle-detecting-car
+      urlkr:
+    - title: "Walking Droid 1"
+      titlekr: ""
+      url: /edu/bioloid/entry/#walking-droid-1
+      urlkr:
+    - title: "Walking Droid 2"
+      titlekr: ""
+      url: /edu/bioloid/entry/#walking-droid-2
+      urlkr:
+    - title: "Walking Droid 3"
+      titlekr: ""
+      url: /edu/bioloid/entry/#walking-droid-3
+      urlkr:
+    - title: "Converting .bpg to .tsk"
+      titlekr: ""
+      url: /edu/bioloid/entry/#converting-bpg-to-tsk
+      urlkr:
+  - title: "Examples"
+    titlekr: ""
+    url: /edu/bioloid/entry/#examples
+    urlkr:
+    children:
+    - title: "Download Task Code"
+      url: /edu/bioloid/entry/#download-task-code
+    - title: "Download Motion File"
+      url: /edu/bioloid/entry/#download-motion-file
+  - title: "References"
+    titlekr: ""
+    url: /edu/bioloid/entry/#references
+    urlkr:
+    children:
+    - title: "Replacing Fuse"
+      titlekr: ""
+      url: /edu/bioloid/entry/#replacing-fuse-cm-5
+      urlkr:
+    - title: "Dynamixel Management"
+      titlekr: ""
+      url: /edu/bioloid/entry/#dynamixel-management
+      urlkr:
+    - title: "Zigbee Wireless Control"
+      titlekr: ""
+      url: /edu/bioloid/entry/#zigbee-wireless-control
+      urlkr:
+    - title: "Control Multiple Robots"
+      titlekr: ""
+      url: /edu/bioloid/entry/#control-multiple-robots
+      urlkr:
 
 #R+ Task 1.0 sidebar
 rplustask1:

@@ -18,15 +18,14 @@ Through 12-session curriculum, learn scientific principle and physics theory suc
 `Note` For OLLO Explorer, the instructor will download the program.  If you want to download and learn the program for yourself, you must purchase [USB Downloader(LN-101)] separately. If you want to build and program your robots using more peripheral devices, please purchase OLLO [Inventor].
 {: .notice}
 
-
-# [Getting Started](#getting-started)
-
-## [Part List](#part-list)
+# [Part List](#part-list)
 
 ![][ollo_explore_partlist]
 
 - [CM-100]
 - [Geared Motor]
+
+# [Quick Start](#quick-start)
 
 ## [How to Play](#how-to-play)
 
@@ -96,7 +95,7 @@ Also, please refer to [How to Download of task code] for more information.
 [USB Downloader(LN-101)]: /docs/en/parts/interface/ln_101/
 [Inventor]: /docs/en/edu/ollo/inventor/
 [CM-100]: /docs/en/parts/controller/cm_100/
-[Geared Motor]: #
+[Geared Motor]: /docs/en/parts/motor/geared_motor/
 [How to Download of task code]: /docs/en/faq/download_task_code/
 [ollo_explore_partlist]: /assets/images/edu/ollo/ollo_explorer_partlist.png
 [img_01]: /assets/images/edu/ollo/ollo_lvl2_001.jpg

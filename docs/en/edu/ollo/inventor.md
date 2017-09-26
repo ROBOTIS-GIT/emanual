@@ -15,9 +15,7 @@ sidebar:
 Create robots using the controller, geared motors, sensors, and servo motors and perform basic programming.
 Through 12-session curriculum, learn programming and experiment on wireless communication, the concept of control, sensors and various module applications.
 
-# [Getting Started](#getting-started)
-
-## [Part List](#part-list)
+# [Part List](#part-list)
 
 ![][ollo_inventor_partlist]
 
@@ -28,112 +26,95 @@ Through 12-session curriculum, learn programming and experiment on wireless comm
 - [LED Module]
 - [Touch Sensor]
 
-## [How to Play](#how-to-play)
+# [Quick Start](#quick-start)
 
-For the controller([CM-100]) included with OLLO Explorer, a comprehensive program which can be used without downloading is installed.
-
-`Caution` The comprehensive program in the controller will be overwritten when downloading a program. Therefore, you must download the program using [USB Downloader(LN-101)].
-{: .notice--warning}
-
-If the button on the controller is pressed sequentially, the sounds of musical notes are made. Depending on the number of pressed times, the installed program can be selected.
-
-![cm-100-operate][img_01]
-
-## [Select Program](#select-program)
-Please refer to the learning material in the kit for more information.
-
-|Button Press|Musical Note|Chapters|Robots|
-| :-----: | :-----: | :-----: | :-----: |
-|1|Do|E-1<br>Chapter 1, 2|![img_02][img_02]![img_03][img_03]|
-|2|Re|E-1<br>Chapter 3|![img_04][img_04]|
-|3|Mi|E-1<br>Chapter 4|![img_05][img_05]|
-|4|Fa|E-2<br>Chapter 1|![img_06][img_06]|
-|5|Sol|E-2<br>Chapter 2|![img_07][img_07]|
-|6|Ra|E-2<br>Chapter 3|![img_08][img_08]|
-|7|Si|E-2<br>Chapter 4|![img_05][img_05]|
-|8|Do|E-3<br>Chapter 1|![img_09][img_09]|
-
-`Note` The example which cannot be selected by the comprehensive program must be downloaded using USB Downloader(LN101).
-{: .notice}
+{% include en/edu/zigbee_control.md %}
 
 # [Download]
 
-Please refer to Explorer Learning Material on How to Assemble or motions during the execution for each example.
+Please refer to Inventor Learning Material on How to Assemble or motions during the execution for each example.
 {: .notice}
 
 Also, please refer to [How to Download of task code] for more information.
 {: .notice}
 
-1. Integrated example program
-  - This program is basically included in the main controller when you purchase the goods
-  - Please refer to the Operating Method to see how to use this program.
-  `Download` [OLLO_L2_Total_EN.tsk]
+|I-1|TASK Code|Description|
+| :---: | :-----: | :--- |
+|1. Crossing Gate<br />![I-1-1][img_I-1-1]|[Download][I-1-1_1]<br />[Download][I-1-1_2]<br />[Download][I-1-1_3]|Example program for assembly check<br />Example program for programming<br />Example program for robot|
+|2. Bump Car<br />![I-1-2][img_I-1-2]|[Download][I-1-2_1]<br />[Download][I-1-2_2]<br />[Download][I-1-2_3]|Example program for assembly check<br />Example program for programming<br />Example program for robot|
+|3. Probing Car<br />![I-1-3][img_I-1-3]|[Download][I-1-3_1]<br />[Download][I-1-3_2]<br />[Download][I-1-3_3]|Example program for assembly check<br />Example program for programming<br />Example program for robot|
+|4. Guitar<br />![I-1-4][img_I-1-4]|[Download][I-1-4_1]<br />[Download][I-1-4_2]<br />[Download][I-1-4_3]|Example program for assembly check<br />Example program for programming<br />Example program for robot|
 
-2. Example program of each chapter
+|I-2|TASK Code|Description|
+| :---: | :-----: | :--- |
+|5. Bird<br />![I-2-1][img_I-2-1]|[Download][I-2-1_1]<br />[Download][I-2-1_2]<br />[Download][I-2-1_3]|Example program for assembly check<br />Example program for programming<br />Example program for robot|
+|6. Crane<br />![I-2-2][img_I-2-2]|[Download][I-2-2_1]<br />[Download][I-2-2_2]<br />[Download][I-2-2_3]|Example program for assembly check<br />Example program for programming<br />Example program for robot|
+|7. Combat Car<br />![I-2-3][img_I-2-3]|[Download][I-2-3_1]<br />[Download][I-2-3_3]|Example program for assembly check<br />Example program for robot|
+|8. Tank<br />![I-2-4][img_I-2-4]|[Download][I-2-4_1]<br />[Download][I-2-4_2]<br />[Download][I-2-4_3]|Example program for assembly check<br />Example program for programming<br />Example program for robot|
 
-|Robots|E-1|
-| :----- | :----- |
-|1. Elephant|`Download` [OLLO_L2_Elephant_EN.tsk]|
-|2. Windmill|`Download` [OLLO_L2_Windmill_EN.tsk]|
-|3. Avoider|`Download` [OLLO_L2_Avoider_EN.tsk]|
-|4. Imagine|`Download` [OLLO_L2_DistanceSensor_EN.tsk]<br />`Download` [OLLO_L2_Penguin_EN.tsk]<br />`Download` [OLLO_L2_CardGiver_EN.tsk]|
-
-|Robots|E-2|
-| :----- | :----- |
-|5. Seal|`Download` [OLLO_L2_Seal_EN.tsk]|
-|6. Line Tracer|`Download` [OLLO_L2_Linetracer_EN.tsk]|
-|7. Howitzer|`Download` [OLLO_L2_Howitzer_EN.tsk]|
-|8. Imagine|`Download` [OLLO_L2_SoundSensor_EN.tsk]<br />`Download` [OLLO_L2_Dancing_EN.tsk]<br />`Download` [OLLO_L2_Cradle_EN.tsk]|
-
-|Robots|E-3|
-| :----- | :----- |
-|9. Lady Bug|`Download` [OLLO_L2_Ladybug_EN.tsk]|
-|10. Wheel Puppy|`Download` [OLLO_L2_WheelPuppy_EN.tsk]|
-|11. Mouse|`Download` [OLLO_L2_Mouse_EN.tsk]|
-|12. Battle Bug|`Download` [OLLO_L2_Battlebug_EN.tsk]|
-
+|I-3|TASK Code|Description|
+| :---: | :-----: | :--- |
+|9. Flag Game<br />![I-3-1][img_I-3-1]|[Download][I-3-1_1]<br />[Download][I-3-1_2]<br />[Download][I-3-1_3]|Example program for assembly check<br />Example program for programming<br />Example program for robot|
+|10. Battle Bug<br />![I-3-2][img_I-3-2]|[Download][I-3-2_1]<br />[Download][I-3-2_2]<br />[Download][I-3-2_3]|Example program for assembly check<br />Example program for programming<br />Example program for robot|
+|11. Knight<br />![I-3-3][img_I-3-3]|[Download][I-3-3_1]<br />[Download][I-3-3_2]<br />[Download][I-3-3_3]|Example program for assembly check<br />Example program for programming<br />Example program for robot|
+|12. Racing Car<br />![I-3-4][img_I-3-4]|[Download][I-3-4_1]<br />[Download][I-3-4_2]<br />[Download][I-3-4_3]<br />[Download][I-3-4_4]|Example program for assembly check<br />Example program for programming 1<br />Example program for programming 2<br />Example program for robot|
 
 
 [RC-100]: /docs/en/parts/communication/rc_100/
 [LN-101]: /docs/en/parts/interface/ln_101/
-[Servo Motor]:
-[IR Sensor]:
-[LED Module]:
-[Touch Sensor]: 
+[Servo Motor]: /docs/en/parts/motor/servo_motor/
+[IR Sensor]: /docs/en/parts/sensor/irss_10/
+[LED Module]: /docs/en/parts/display/lm_10/
+[Touch Sensor]: /docs/en/parts/sensor/ts_10/
 [ZIG-100/110]: /docs/en/parts/communication/zig_100_110/
 [USB Downloader(LN-101)]: /docs/en/parts/interface/ln_101/
 [How to Download of task code]: /docs/en/faq/download_task_code/
 [ollo_inventor_partlist]: /assets/images/edu/ollo/ollo_inventor_partlist.png
-[img_01]: /assets/images/edu/ollo/ollo_lvl2_001.jpg
-[img_02]: /assets/images/edu/ollo/ollo_lvl2_elephant.jpg
-[img_03]: /assets/images/edu/ollo/ollo_lvl2_windmill.jpg
-[img_04]: /assets/images/edu/ollo/ollo_lvl2_introduce_robot.jpg
-[img_05]: /assets/images/edu/ollo/ollo_lvl2_imagine.png
-[img_06]: /assets/images/edu/ollo/ollo_lvl2_seal.jpg
-[img_07]: /assets/images/edu/ollo/ollo_lvl2_car.jpg
-[img_08]: /assets/images/edu/ollo/ollo_lvl2_howitzer.jpg
-[img_09]: /assets/images/edu/ollo/ollo_lvl2_ladybug.jpg
-
-[Programming]: #programming
-[OLLO_LineTrace.pdf]: #
-[OLLO_PuzzleRacing.zip]: #
-[OLLO_BUG_Product_EN.tsk]: #
-[How to Download Task code]: #
-[How to execute the Program]: #
-[OLLO_L2_Total_EN.tsk]: http://support.robotis.com/en/baggage_files/ollo/edu_2nd/ollo_l2_total_en.tsk
-[OLLO_L2_Elephant_EN.tsk]: http://support.robotis.com/en/baggage_files/ollo/edu_2nd/ollo_l2_elephant_en.tsk
-[OLLO_L2_Windmill_EN.tsk]: http://support.robotis.com/en/baggage_files/ollo/edu_2nd/ollo_l2_elephant_en.tsk
-[OLLO_L2_Avoider_EN.tsk]:http://support.robotis.com/en/baggage_files/ollo/edu_2nd/ollo_l2_avoider_en.tsk
-[OLLO_L2_DistanceSensor_EN.tsk]: http://support.robotis.com/en/baggage_files/ollo/edu_2nd/ollo_l2_distancesensor_en.tsk
-[OLLO_L2_Penguin_EN.tsk]: http://support.robotis.com/en/baggage_files/ollo/edu_2nd/ollo_l2_penguin_en.tsk
-[OLLO_L2_CardGiver_EN.tsk]: http://support.robotis.com/en/baggage_files/ollo/edu_2nd/ollo_l2_cardgiver_en.tsk
-[OLLO_L2_Seal_EN.tsk]: http://support.robotis.com/en/baggage_files/ollo/edu_2nd/ollo_l2_seal_en.tsk
-[OLLO_L2_Linetracer_EN.tsk]: http://support.robotis.com/en/baggage_files/ollo/edu_2nd/ollo_l2_linetracer_en.tsk
-[OLLO_L2_Howitzer_EN.tsk]: http://support.robotis.com/en/baggage_files/ollo/edu_2nd/ollo_l2_howitzer_en.tsk
-[OLLO_L2_SoundSensor_EN.tsk]: http://support.robotis.com/en/baggage_files/ollo/edu_2nd/ollo_l2_soundsensor_en.tsk
-[OLLO_L2_Dancing_EN.tsk]: http://support.robotis.com/en/baggage_files/ollo/edu_2nd/ollo_l2_dancing_en.tsk
-[OLLO_L2_Cradle_EN.tsk]: http://support.robotis.com/en/baggage_files/ollo/edu_2nd/ollo_l2_cradle_en.tsk
-[OLLO_L2_Ladybug_EN.tsk]: http://support.robotis.com/en/baggage_files/ollo/edu_2nd/ollo_l2_ladybug_en.tsk
-[OLLO_L2_WheelPuppy_EN.tsk]: http://support.robotis.com/en/baggage_files/ollo/edu_2nd/ollo_l2_wheelpuppy_en.tsk
-[OLLO_L2_Mouse_EN.tsk]: http://support.robotis.com/en/baggage_files/ollo/edu_2nd/ollo_l2_mouse_en.tsk
-[OLLO_L2_Battlebug_EN.tsk]: http://support.robotis.com/en/baggage_files/ollo/edu_2nd/ollo_l2_battlebug_en.tsk
+[img_I-1-1]: /assets/images/edu/ollo/ollo_lvl3_crossinggate.jpg
+[img_I-1-2]: /assets/images/edu/ollo/ollo_lvl3_bumpcar.jpg
+[img_I-1-3]: /assets/images/edu/ollo/ollo_lvl3_probingcar.jpg
+[img_I-1-4]: /assets/images/edu/ollo/ollo_lvl3_guitar.jpg
+[img_I-2-1]: /assets/images/edu/ollo/ollo_lvl3_bird.jpg
+[img_I-2-2]: /assets/images/edu/ollo/ollo_lvl3_crane.jpg
+[img_I-2-3]: /assets/images/edu/ollo/ollo_lvl3_combatcar.jpg
+[img_I-2-4]: /assets/images/edu/ollo/ollo_lvl3_tank.jpg
+[img_I-3-1]: /assets/images/edu/ollo/ollo_lvl3_flaggame.jpg
+[img_I-3-2]: /assets/images/edu/ollo/ollo_lvl3_battlebug.jpg
+[img_I-3-3]: /assets/images/edu/ollo/ollo_lvl3_knight.jpg
+[img_I-3-4]: /assets/images/edu/ollo/ollo_lvl3_racingcar.jpg
+[I-1-1_1]: http://support.robotis.com/en/baggage_files/ollo/edu_3rd/ollo_l3_crossinggateasm_en.tsk
+[I-1-1_2]: http://support.robotis.com/en/baggage_files/ollo/edu_3rd/ollo_l3_crossinggateexam_en.tsk
+[I-1-1_3]: http://support.robotis.com/en/baggage_files/ollo/edu_3rd/ollo_l3_crossinggate_en.tsk
+[I-1-2_1]: http://support.robotis.com/en/baggage_files/ollo/edu_3rd/ollo_l3_bumpcarasm_en.tsk
+[I-1-2_2]: http://support.robotis.com/en/baggage_files/ollo/edu_3rd/ollo_l3_bumpcarexam_en.tsk
+[I-1-2_3]: http://support.robotis.com/en/baggage_files/ollo/edu_3rd/ollo_l3_bumpcar_en.tsk
+[I-1-3_1]: http://support.robotis.com/en/baggage_files/ollo/edu_3rd/ollo_l3_probingcarasm_en.tsk
+[I-1-3_2]: http://support.robotis.com/en/baggage_files/ollo/edu_3rd/ollo_l3_probingcarexam_en.tsk
+[I-1-3_3]: http://support.robotis.com/en/baggage_files/ollo/edu_3rd/ollo_l3_probingcar_en.tsk
+[I-1-4_1]: http://support.robotis.com/en/baggage_files/ollo/edu_3rd/ollo_l3_guitarasm_en.tsk
+[I-1-4_2]: http://support.robotis.com/en/baggage_files/ollo/edu_3rd/ollo_l3_guitarexam_en.tsk
+[I-1-4_3]: http://support.robotis.com/en/baggage_files/ollo/edu_3rd/ollo_l3_guitar_en.tsk
+[I-2-1_1]: http://support.robotis.com/en/baggage_files/ollo/edu_3rd/ollo_l3_birdasm_en.tsk
+[I-2-1_2]: http://support.robotis.com/en/baggage_files/ollo/edu_3rd/ollo_l3_birdexam_en.tsk
+[I-2-1_3]: http://support.robotis.com/en/baggage_files/ollo/edu_3rd/ollo_l3_bird_en.tsk
+[I-2-2_1]: http://support.robotis.com/en/baggage_files/ollo/edu_3rd/ollo_l3_craneasm_en.tsk
+[I-2-2_2]: http://support.robotis.com/en/baggage_files/ollo/edu_3rd/ollo_l3_craneexam_en.tsk
+[I-2-2_3]: http://support.robotis.com/en/baggage_files/ollo/edu_3rd/ollo_l3_crane_en.tsk
+[I-2-3_1]: http://support.robotis.com/en/baggage_files/ollo/edu_3rd/ollo_l3_combatcarasm_en.tsk
+[I-2-3_3]: http://support.robotis.com/en/baggage_files/ollo/edu_3rd/ollo_l3_combatcar_en.tsk
+[I-2-4_1]: http://support.robotis.com/en/baggage_files/ollo/edu_3rd/ollo_l3_tankasm_en.tsk
+[I-2-4_2]: http://support.robotis.com/en/baggage_files/ollo/edu_3rd/ollo_l3_tankexam_en.tsk
+[I-2-4_3]: http://support.robotis.com/en/baggage_files/ollo/edu_3rd/ollo_l3_tank_en.tsk
+[I-3-1_1]: http://support.robotis.com/en/baggage_files/ollo/edu_3rd/ollo_l3_flaggameasm_en.tsk
+[I-3-1_2]: http://support.robotis.com/en/baggage_files/ollo/edu_3rd/ollo_l3_flaggameexam_en.tsk
+[I-3-1_3]: http://support.robotis.com/en/baggage_files/ollo/edu_3rd/ollo_l3_flaggame_en.tsk
+[I-3-2_1]: http://support.robotis.com/en/baggage_files/ollo/edu_3rd/ollo_l3_battlebugasm_en.tsk
+[I-3-2_2]: http://support.robotis.com/en/baggage_files/ollo/edu_3rd/ollo_l3_battlebugexam_en.tsk
+[I-3-2_3]: http://support.robotis.com/en/baggage_files/ollo/edu_3rd/ollo_l3_battlebug_en.tsk
+[I-3-3_1]: http://support.robotis.com/en/baggage_files/ollo/edu_3rd/ollo_l3_knightasm_en.tsk
+[I-3-3_2]: http://support.robotis.com/en/baggage_files/ollo/edu_3rd/ollo_l3_knightexam_en.tsk
+[I-3-3_3]: http://support.robotis.com/en/baggage_files/ollo/edu_3rd/ollo_l3_knight_en.tsk
+[I-3-4_1]: http://support.robotis.com/en/baggage_files/ollo/edu_3rd/ollo_l3_racingcarasm_en.tsk
+[I-3-4_2]: http://support.robotis.com/en/baggage_files/ollo/edu_3rd/ollo_l3_racingcarexam1_en.tsk
+[I-3-4_3]: http://support.robotis.com/en/baggage_files/ollo/edu_3rd/ollo_l3_racingcarexam2_en.tsk
+[I-3-4_4]: http://support.robotis.com/en/baggage_files/ollo/edu_3rd/ollo_l3_racingcar_en.tsk
