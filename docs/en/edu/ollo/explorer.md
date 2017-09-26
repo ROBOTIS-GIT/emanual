@@ -1,14 +1,14 @@
 ---
 layout: archive
 lang: en
-ref: ollo_explore
+ref: ollo_explorer
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/edu/ollo/bugexplore/
+permalink: /docs/en/edu/ollo/explorer/
 sidebar:
-  title: OLLO Explore
-  nav: "ollo_explore"
+  title: OLLO Explorer
+  nav: "ollo_explorer"
 ---
 
 # [Introduction](#introduction)
@@ -30,12 +30,12 @@ Through 12-session curriculum, learn scientific principle and physics theory suc
 
 ## [How to Play](#how-to-play)
 
-For the controller(CM-100) included with OLLO Explorer, a comprehensive program which can be used without downloading is installed.
+For the controller([CM-100]) included with OLLO Explorer, a comprehensive program which can be used without downloading is installed.
 
-`Caution` The comprehensive program in the controller will be overwritten when downloading a program. Therefore, you must download the program using USB Downloader(LN101).
+`Caution` The comprehensive program in the controller will be overwritten when downloading a program. Therefore, you must download the program using [USB Downloader(LN-101)].
 {: .notice--warning}
 
-If the button on the controller is pressed sequentially, the sounds of musical notes are made. Depending on the number of pressed times, the installed program can be selected.
+If the button on the controller is pressed sequentially, the musical notes are played. Depending on the pressed number, the installed program can be selected.
 
 ![cm-100-operate][img_01]
 
@@ -56,7 +56,7 @@ Please refer to the learning material in the kit for more information.
 `Note` The example which cannot be selected by the comprehensive program must be downloaded using USB Downloader(LN101).
 {: .notice}
 
-# [Download]
+# [Download](#download)
 
 Please refer to Explorer Learning Material on How to Assemble or motions during the execution for each example.
 {: .notice}
@@ -93,11 +93,11 @@ Also, please refer to [How to Download of task code] for more information.
 |12. Battle Bug|`Download` [OLLO_L2_Battlebug_EN.tsk]|
 
 
-[USB Downloader(LN-101)]: /emanual/docs/en/parts/interface/ln_101/
-[Inventor]: #
-[CM-100]: /emanual/docs/en/parts/controller/cm_100/
+[USB Downloader(LN-101)]: /docs/en/parts/interface/ln_101/
+[Inventor]: /docs/en/edu/ollo/inventor/
+[CM-100]: /docs/en/parts/controller/cm_100/
 [Geared Motor]: #
-[How to Download of task code]: /emanual/docs/en/faq/download_task_code/
+[How to Download of task code]: /docs/en/faq/download_task_code/
 [ollo_explore_partlist]: /assets/images/edu/ollo/ollo_explorer_partlist.png
 [img_01]: /assets/images/edu/ollo/ollo_lvl2_001.jpg
 [img_02]: /assets/images/edu/ollo/ollo_lvl2_elephant.jpg
@@ -109,12 +109,6 @@ Also, please refer to [How to Download of task code] for more information.
 [img_08]: /assets/images/edu/ollo/ollo_lvl2_howitzer.jpg
 [img_09]: /assets/images/edu/ollo/ollo_lvl2_ladybug.jpg
 
-[Programming]: #programming
-[OLLO_LineTrace.pdf]: #
-[OLLO_PuzzleRacing.zip]: #
-[OLLO_BUG_Product_EN.tsk]: #
-[How to Download Task code]: #
-[How to execute the Program]: #
 [OLLO_L2_Total_EN.tsk]: http://support.robotis.com/en/baggage_files/ollo/edu_2nd/ollo_l2_total_en.tsk
 [OLLO_L2_Elephant_EN.tsk]: http://support.robotis.com/en/baggage_files/ollo/edu_2nd/ollo_l2_elephant_en.tsk
 [OLLO_L2_Windmill_EN.tsk]: http://support.robotis.com/en/baggage_files/ollo/edu_2nd/ollo_l2_elephant_en.tsk

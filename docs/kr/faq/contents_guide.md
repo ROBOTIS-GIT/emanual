@@ -174,12 +174,12 @@ sidebar:
 
 [컨텐츠 작성방법][link reference]
 
-[link reference]: {{site.url}}/emanual/docs/kr/faq
+[link reference]: {{site.url}}/docs/kr/faq
 
 ```text
 [컨텐츠 작성방법][Contents Format]
 
-[Contents Format]: {{site.url}}/emanual/docs/kr/faq
+[Contents Format]: {{site.url}}/docs/kr/faq
 ```
 
 ## [텍스트 효과](#텍스트-효과)

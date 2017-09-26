@@ -89,7 +89,7 @@ If an object is detected, it stops; if you clap, it traces the line again.
 
 ## [Wireless Control](#wireless-control)
 
-`Note` Use ZIG-100/110 for ZIGBee wireless communication.
+`Note` Use [ZIG-100/110] for ZIGBee wireless communication.
 {: .notice}
 
 # [Applications](#applications)
@@ -542,7 +542,7 @@ After executing the program, control the robot forward, backward, left, and righ
 
 `Note` [How to Download Task code]
 
-`Note` [How to execute the Program]
+`Note` [How to play Bug]
 
 
 [ollo_bug_examples]: /assets/images/edu/ollo/ollo_bug_examples.png
@@ -630,15 +630,15 @@ After executing the program, control the robot forward, backward, left, and righ
 [img_66]: /assets/images/edu/ollo/ollo_bug_68.png
 [img_67]: /assets/images/edu/ollo/ollo_bug_69.png
 
-[How to Download Task code]: ???
+[How to Download Task code]: /docs/en/faq/download_task_code/
 
-[CM-100]: #
-[Geared motor]: #
-[USB Downloader(LN-101)]: #
-[RC-100]: #
+[ZIG-100/110]: /docs/en/parts/communication/zig_100_110/
+[CM-100]: /docs/en/parts/controller/cm_100/
+[Geared Motor]: /docs/en/parts/motor/geared_motor/
+[USB Downloader(LN-101)]: /docs/en/parts/interface/ln_101/
+[RC-100]: /docs/en/parts/communication/rc_100/
 [Programming]: #programming
-[OLLO_LineTrace.pdf]: #
-[OLLO_PuzzleRacing.zip]: #
-[OLLO_BUG_Product_EN.tsk]: #
-[How to Download Task code]: #
-[How to execute the Program]: #
+[OLLO_LineTrace.pdf]: http://support.robotis.com/en/baggage_files/ollo/ollo_linetrace.pdf
+[OLLO_PuzzleRacing.zip]: http://support.robotis.com/en/baggage_files/ollo/ollo_puzzle_racing_line.zip
+[OLLO_BUG_Product_EN.tsk]: http://support.robotis.com/en/baggage_files/ollo/bug/ollo_bug_product_en.tsk
+[How to play Bug]: #how-to-play

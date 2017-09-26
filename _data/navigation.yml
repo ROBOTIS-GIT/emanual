@@ -3298,21 +3298,21 @@ ollo_bugkit:
   - title: "Download"
     url: /edu/ollo/bugkit/#download
 
-#Ollo Explore
-ollo_explore:
+#Ollo Explorer
+ollo_explorer:
   - title: "Introduction"
-    url: /edu/ollo/bugexplore/#introduction
+    url: /edu/ollo/bugexplorer/#introduction
   - title: "Getting Started"
-    url: /edu/ollo/bugexplore/#getting-started
+    url: /edu/ollo/bugexplorer/#getting-started
     children:
       - title: "Part List"
-        url: /edu/ollo/bugexplore/#part-list
+        url: /edu/ollo/bugexplorer/#part-list
       - title: "How to Play"
-        url: /edu/ollo/bugexplore/#how-to-play
+        url: /edu/ollo/bugexplorer/#how-to-play
       - title: "Select Program"
-        url: /edu/ollo/bugexplore/#select-program
+        url: /edu/ollo/bugexplorer/#select-program
   - title: "Download"
-    url: /edu/ollo/bugkit/#download
+    url: /edu/ollo/bugexplorer/#download
 
 #DreamI Level1 sidebar
 dream1-1:
@@ -3607,6 +3607,14 @@ rplustask1:
     - title: "Error Messages"
       url: /software/rplus1/task/task_misc/#error-messages
 
+#Task Code Download sidebar
+download_task_code:
+  - title: "Preparation"
+    url: /docs/en/faq/download_task_code/#preparation
+  - title: "Download"
+    url: /docs/en/faq/download_task_code/#download
+  - title: "Videos"
+    url: /docs/en/faq/download_task_code/#videos
 
 #R+ Manager 2.0 sidebar
 rplusmanager2:

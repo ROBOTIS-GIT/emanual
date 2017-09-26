@@ -11,4 +11,4 @@ sidebar:
   nav: "faq"
 ---
 
-1. [컨텐츠 작성방법](/emanual/docs/kr/faq/contents_guide/)
+1. [컨텐츠 작성방법](/docs/kr/faq/contents_guide/)

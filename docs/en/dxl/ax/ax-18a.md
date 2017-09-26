@@ -382,7 +382,7 @@ Can choose vales from 0x20 to 0x3FF.
 
 # [Maintenance](#maintenance)
 
-{% include dxl/horn_bearing_replacement.md %}
+{% include en/dxl/horn_bearing_replacement.md %}
 
 # [Reference](#reference)
 
@@ -395,7 +395,7 @@ Can choose vales from 0x20 to 0x3FF.
 
 ![](/assets/images/dxl/ax/ax-18a_dimension.png)
 
-{% include dxl/485_ttl_connection.md %}
+{% include en/dxl/485_ttl_connection.md %}
 
 [Two's complement]: #
 

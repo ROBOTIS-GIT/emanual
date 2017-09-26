@@ -202,9 +202,9 @@ Please refer to the table below to control the remote control with the  keyboard
 [Microsoft Download Center]: http://www.microsoft.com/downloads/Search.aspx?displaylang=ko
 [Windows installer 3.1]: http://www.microsoft.com/downloads/details.aspx?FamilyID=889482fc-5f56-4a38-b838-de776fd4138c&DisplayLang=ko
 [.NET Framework 3.5]: http://www.microsoft.com/downloads/details.aspx?FamilyID=d0e5dea7-ac26-4ad7-b68c-fe5076bba986&DisplayLang=ko
-[controller information]: /emanual/docs/en/faq/controller_compatibility/
-[rule check error messages]: /emanual/docs/en/software/rplus1/task/task_misc/#rule-check
-[Error Messages]: /emanual/docs/en/software/rplus1/task/task_misc/#error-messages
+[controller information]: /docs/en/faq/controller_compatibility/
+[rule check error messages]: /docs/en/software/rplus1/task/task_misc/#rule-check
+[Error Messages]: /docs/en/software/rplus1/task/task_misc/#error-messages
 [R+task]: /assets/images/sw/rplus1/task/roboplus_task_en_001.png
 [img_install]: /assets/images/sw/roboplus_install_en.png
 [select-command]: /assets/images/sw/rplus1/task/roboplus_task_en_002.png

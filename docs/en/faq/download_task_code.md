@@ -17,7 +17,7 @@ sidebar:
   - You can open it by using an 'open a file' function of RoboPlus Task.
   - You can open it by dragging & dropping  it to  the RoboPlus task with mouse.
 
-2. Connect the [contorller(CM-100)][cm-100] with your PC by using a [USB Downloader(LN-101)][ln-101].
+2. Connect the contorller([CM-100]) with your PC by using a [USB Downloader(LN-101)].
 3. Connect 2 double AA batteries then turn the power for the controller (CM-100) on.
 
   ![img_01][img_01]
@@ -42,7 +42,7 @@ sidebar:
 
   ![img_04][img_04]
 
-  If the program has an error, you must find the error and correct it. (See [rule check error messages][task-rule-check])
+  If the program has an error, you must find the error and correct it. (See [rule check error messages])
 
 4. Download the program.
 
@@ -62,11 +62,12 @@ sidebar:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UlD4C1XMsgo" frameborder="0" allowfullscreen></iframe>
 
+[CM-100]: /docs/en/parts/controller/cm_100/
+[USB Downloader(LN-101)]: /docs/en/parts/interface/ln_101/
+[rule check error messages]: /docs/en/software/rplus1/task/task_misc/#rule-check
+
 [img_01]: /assets/images/edu/task_download_01.jpg
 [img_02]: /assets/images/edu/task_download_02.png
 [img_03]: /assets/images/edu/task_download_03.png
 [img_04]: /assets/images/edu/task_download_04.png
 [img_05]: /assets/images/edu/task_download_05.png
-[task-rule-check]: /emanual/docs/en/software/rplus1/task/task_misc/#rule-check
-[ln-101]: /emanual/docs/en/parts/interface/ln_101/
-[cm-100]: /emanual/docs/en/parts/controller/cm_100/

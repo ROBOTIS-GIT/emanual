@@ -1330,23 +1330,23 @@ Variables may be used for many purposes.  Existing Variables are listed in the "
 
 Variables are useful when a number to be remembered, when a value must be changed depending on the situation, or when multiple values must be changed at once.
 
-[CM-100]: /emanual/docs/en/parts/controller/cm_100/
-[CM-150]: /emanual/docs/en/parts/controller/cm_150/
-[CM-200]: /emanual/docs/en/parts/controller/cm_200/
-[CM-5]: /emanual/docs/en/parts/controller/cm_5/
-[CM-510]: /emanual/docs/en/parts/controller/cm_510/
-[CM-530]: /emanual/docs/en/parts/controller/cm_530/
-[CM-700]: /emanual/docs/en/parts/controller/cm_700/
-[CM-900]: /emanual/docs/en/parts/controller/cm_900/
-[OpenCM9.04]: /emanual/docs/en/parts/controller/opencm_904/
-[EXP485]: /emanual/docs/en/parts/controller/exp485/
-[OpenCR]: /emanual/docs/en/parts/controller/opencr/
-[GM-12A]: /emanual/docs/en/parts/parts/motor/gm_12a/
-[SM-10A]: /emanual/docs/en/parts/parts/motor/sm_10a/
-[TS-10]: /emanual/docs/en/parts/parts/sensor/ts_10/
-[LM-10]: /emanual/docs/en/parts/parts/display/lm_10/
-[IRSS-10]: /emanual/docs/en/parts/parts/sensor/irss_10/
-[DMS-80]: /emanual/docs/en/parts/parts/sensor/dms_80/
+[CM-100]: /docs/en/parts/controller/cm_100/
+[CM-150]: /docs/en/parts/controller/cm_150/
+[CM-200]: /docs/en/parts/controller/cm_200/
+[CM-5]: /docs/en/parts/controller/cm_5/
+[CM-510]: /docs/en/parts/controller/cm_510/
+[CM-530]: /docs/en/parts/controller/cm_530/
+[CM-700]: /docs/en/parts/controller/cm_700/
+[CM-900]: /docs/en/parts/controller/cm_900/
+[OpenCM9.04]: /docs/en/parts/controller/opencm_904/
+[EXP485]: /docs/en/parts/controller/exp485/
+[OpenCR]: /docs/en/parts/controller/opencr/
+[GM-12A]: /docs/en/parts/parts/motor/gm_12a/
+[SM-10A]: /docs/en/parts/parts/motor/sm_10a/
+[TS-10]: /docs/en/parts/parts/sensor/ts_10/
+[LM-10]: /docs/en/parts/parts/display/lm_10/
+[IRSS-10]: /docs/en/parts/parts/sensor/irss_10/
+[DMS-80]: /docs/en/parts/parts/sensor/dms_80/
 [Custom Device]: ???
 
 [img_remocon_txd]: /assets/images/sw/rplus1/task/roboplus_task_en_078.png

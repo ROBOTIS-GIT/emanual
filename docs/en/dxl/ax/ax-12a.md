@@ -45,7 +45,7 @@ sidebar:
 `Note` Stall torque is the maximum instantaneous and static  torque. Stable motions are possible with robots designed for loads with 1/5 or less of the stall torque.
 {: .notice}
 
-{% include dxl/control_table_protocol1.md %}
+{% include en/dxl/control_table_protocol1.md %}
 
 ## [Control Table of EEPROM Area](#control-table-of-eeprom-area)
 
@@ -100,52 +100,52 @@ sidebar:
  This address stores firmware version of the DYNAMIXEL.
 
 ### <a name="id"></a>**ID (3)**
-{% include dxl/control_table_id.md %}
+{% include en/dxl/control_table_id.md %}
 
 ### <a name="baud-rate"></a>**Baud Rate (4)**
-{% include dxl/control_table_baudrate.md %}
+{% include en/dxl/control_table_baudrate.md %}
 
 ### <a name="return-delay-time"></a>**Return Delay Time (5)**
-{% include dxl/control_table_return_delay_time.md %}
+{% include en/dxl/control_table_return_delay_time.md %}
 
 ### <a name="cw-angle-limit"></a><a name="ccw-angle-limit"></a>**CW/CCW Angle Limit(6, 8)**
-{% include dxl/control_table_angle_limit.md %}
+{% include en/dxl/control_table_angle_limit.md %}
 
 ### <a name="temperature-limit"></a>**The Highest Limit Temperature**
-{% include dxl/control_table_temp_limit.md %}
+{% include en/dxl/control_table_temp_limit.md %}
 
 ### <a name="min-voltage-limit"></a><a name="max-voltage-limit"></a>**Min/Max Voltage Limit**
-{% include dxl/control_table_volt_limit_high.md %}
+{% include en/dxl/control_table_volt_limit_high.md %}
 
 ### <a name="max-torque"></a>**Max Torque**
-{% include dxl/control_table_max_torque.md %}
+{% include en/dxl/control_table_max_torque.md %}
 
 ### <a name="status-return-level"></a>**Status Return Level**
-{% include dxl/control_table_status_return_lv.md %}
+{% include en/dxl/control_table_status_return_lv.md %}
 
 ### <a name="alarm-led"></a><a name="shutdown"></a>**Alarm LED / Alarm Shutdown**
-{% include dxl/control_table_alarm_shutdown.md %}
+{% include en/dxl/control_table_alarm_shutdown.md %}
 
 ### <a name="torque-enable"></a>**Torque Enable**
-{% include dxl/control_table_torque_enable.md %}
+{% include en/dxl/control_table_torque_enable.md %}
 
 ### <a name="led"></a>**LED**
-{% include dxl/control_table_led.md %}
+{% include en/dxl/control_table_led.md %}
 
 ### <a name="cw-compliance-margin"></a><a name="ccw-compliance-margin"></a>**Compliance Margin**
-{% include dxl/control_table_compliance_margin.md %}
+{% include en/dxl/control_table_compliance_margin.md %}
 
 ### <a name="cw-compliance-slope"></a><a name="ccw-compliance-slope"></a>**Compliance Slope**
-{% include dxl/control_table_compliance_slope.md %}
+{% include en/dxl/control_table_compliance_slope.md %}
 
 ### <a name="goal-position"></a>**Goal Position**
-{% include dxl/control_table_dx_goal_position.md %}
+{% include en/dxl/control_table_dx_goal_position.md %}
 
 ### <a name="moving-speed"></a>**Moving Speed**
-{% include dxl/control_table_moving_speed.md %}
+{% include en/dxl/control_table_moving_speed.md %}
 
 ### <a name="torque-limit"></a>**Torque Limit**
-{% include dxl/control_table_torque_limit.md %}
+{% include en/dxl/control_table_torque_limit.md %}
 
 ### <a name="present-position"></a>**Present Position**
 It is the current position value of Dynamixel.
@@ -243,7 +243,7 @@ Can choose vales from 0x20 to 0x3FF.
 
 # [Maintenance](#maintenance)
 
-{% include dxl/horn_bearing_replacement.md %}
+{% include en/dxl/horn_bearing_replacement.md %}
 
 # [Reference](#reference)
 
@@ -256,7 +256,7 @@ Can choose vales from 0x20 to 0x3FF.
 
 ![](/assets/images/dxl/ax/ax-12a_dimension.png)
 
-{% include dxl/485_ttl_connection.md %}
+{% include en/dxl/485_ttl_connection.md %}
 
 [Two's complement]: #
 
