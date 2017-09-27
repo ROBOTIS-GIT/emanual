@@ -28,7 +28,7 @@ Through 12-session curriculum, learn programming and experiment on wireless comm
 
 # [Quick Start](#quick-start)
 
-{% include en/edu/zigbee_control.md %}
+{% include en/parts/communication/zigbee_control.md %}
 
 # [Download]
 

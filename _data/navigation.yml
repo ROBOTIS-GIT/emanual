@@ -3499,15 +3499,17 @@ bioloid-entry:
       titlekr: ""
       url: /edu/bioloid/entry/#converting-bpg-to-tsk
       urlkr:
-  - title: "Examples"
+  - title: "Download"
     titlekr: ""
-    url: /edu/bioloid/entry/#examples
+    url: /edu/bioloid/entry/#download
     urlkr:
     children:
     - title: "Download Task Code"
       url: /edu/bioloid/entry/#download-task-code
     - title: "Download Motion File"
       url: /edu/bioloid/entry/#download-motion-file
+    - title: "Examples"
+      url: /edu/bioloid/entry/#examples
   - title: "References"
     titlekr: ""
     url: /edu/bioloid/entry/#references

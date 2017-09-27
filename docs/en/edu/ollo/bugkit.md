@@ -87,7 +87,7 @@ If you press the start button 3 times, it is executed.
 The robot traces the black line on the white floor.
 If an object is detected, it stops; if you clap, it traces the line again.
 
-{% include en/edu/zigbee_control.md %}
+{% include en/parts/communication/zigbee_control.md %}
 
 # [Applications](#applications)
 
