@@ -1,4 +1,3 @@
-## [Charging CM-5](#charging-cm-5)
 To move a robot when it is not connected with SMPS, you have to use a battery. If the battery is discharged, please use by charging it according to following procedures.
 
 1. Connect SMSPS to CM-5.

@@ -263,15 +263,15 @@ main:
       titlejp: "Bioloid"
       titlecn: "Bioloid"
       children:
-      - title: "Entry Level"
+      - title: "Beginner Level"
         titlekr: "초급"
-        titlejp: "Entry Level"
-        titlecn: "Entry Level"
-        url: /edu/bioloid/entry/
-      - title: "Advanced Level"
+        titlejp: "Beginner Level"
+        titlecn: "Beginner Level"
+        url: /edu/bioloid/beginner/
+      - title: "Comprehensive Level"
         titlekr: "종합"
-        titlejp: "Advanced Level"
-        titlecn: "Advanced Level"
+        titlejp: "Comprehensive Level"
+        titlecn: "Comprehensive Level"
       - title: "ROBOTIS STEM"
         titlekr: "STEM 키트"
         titlejp: "STEM Kit"
@@ -3435,101 +3435,252 @@ smart3-2:
   - titlekr: "교안예제"
     urlkr: /edu/smart/smart3-2/#교안예제
 
-#BIOLOID Entry sidebar
-bioloid-entry:
+#BIOLOID Beginner sidebar
+bioloid-beginner:
   - title: "Introduction"
     titlekr: "개요"
-    url: /edu/bioloid/entry/#introduction
+    url: /edu/bioloid/beginner/#introduction
     urlkr:
   - title: "Getting Started"
     titlekr: ""
-    url: /edu/bioloid/entry/#getting-started
+    url: /edu/bioloid/beginner/#getting-started
     urlkr:
     children:
     - title: "Part List"
       titlekr: ""
-      url: /edu/bioloid/entry/#part-list
+      url: /edu/bioloid/beginner/#part-list
       urlkr:
     - title: "Preparation"
       titlekr: ""
-      url: /edu/bioloid/entry/#preparation
+      url: /edu/bioloid/beginner/#preparation
       urlkr:
     - title: "Operating"
       titlekr: ""
-      url: /edu/bioloid/entry/#operating
+      url: /edu/bioloid/beginner/#operating
       urlkr:
     - title: "Charging CM-5"
       titlekr: ""
-      url: /edu/bioloid/entry/#charging-cm-5
+      url: /edu/bioloid/beginner/#charging-cm-5
       urlkr:
   - title: "Tutorial"
     titlekr: ""
-    url: /edu/bioloid/entry/#tutorial
+    url: /edu/bioloid/beginner/#tutorial
     urlkr:
     children:
     - title: "Screen Output"
       titlekr: ""
-      url: /edu/bioloid/entry/#screen-output
+      url: /edu/bioloid/beginner/#screen-output
       urlkr:
     - title: "Button & LED"
       titlekr: ""
-      url: /edu/bioloid/entry/#button-led
+      url: /edu/bioloid/beginner/#button-led
       urlkr:
     - title: "Attacking Duck"
       titlekr: ""
-      url: /edu/bioloid/entry/#attacking-duck
+      url: /edu/bioloid/beginner/#attacking-duck
       urlkr:
     - title: "Obstacle Detecting Car"
       titlekr: ""
-      url: /edu/bioloid/entry/#obstacle-detecting-car
+      url: /edu/bioloid/beginner/#obstacle-detecting-car
       urlkr:
     - title: "Walking Droid 1"
       titlekr: ""
-      url: /edu/bioloid/entry/#walking-droid-1
+      url: /edu/bioloid/beginner/#walking-droid-1
       urlkr:
     - title: "Walking Droid 2"
       titlekr: ""
-      url: /edu/bioloid/entry/#walking-droid-2
+      url: /edu/bioloid/beginner/#walking-droid-2
       urlkr:
     - title: "Walking Droid 3"
       titlekr: ""
-      url: /edu/bioloid/entry/#walking-droid-3
+      url: /edu/bioloid/beginner/#walking-droid-3
       urlkr:
     - title: "Converting .bpg to .tsk"
       titlekr: ""
-      url: /edu/bioloid/entry/#converting-bpg-to-tsk
+      url: /edu/bioloid/beginner/#converting-bpg-to-tsk
       urlkr:
   - title: "Download"
     titlekr: ""
-    url: /edu/bioloid/entry/#download
+    url: /edu/bioloid/beginner/#download
     urlkr:
     children:
     - title: "Download Task Code"
-      url: /edu/bioloid/entry/#download-task-code
+      url: /edu/bioloid/beginner/#download-task-code
     - title: "Download Motion File"
-      url: /edu/bioloid/entry/#download-motion-file
+      url: /edu/bioloid/beginner/#download-motion-file
     - title: "Examples"
-      url: /edu/bioloid/entry/#examples
+      url: /edu/bioloid/beginner/#examples
   - title: "References"
     titlekr: ""
-    url: /edu/bioloid/entry/#references
+    url: /edu/bioloid/beginner/#references
     urlkr:
     children:
     - title: "Replacing Fuse"
       titlekr: ""
-      url: /edu/bioloid/entry/#replacing-fuse-cm-5
+      url: /edu/bioloid/beginner/#replacing-fuse-cm-5
       urlkr:
     - title: "Dynamixel Management"
       titlekr: ""
-      url: /edu/bioloid/entry/#dynamixel-management
+      url: /edu/bioloid/beginner/#dynamixel-management
       urlkr:
     - title: "Zigbee Wireless Control"
       titlekr: ""
-      url: /edu/bioloid/entry/#zigbee-wireless-control
+      url: /edu/bioloid/beginner/#zigbee-wireless-control
       urlkr:
     - title: "Control Multiple Robots"
       titlekr: ""
-      url: /edu/bioloid/entry/#control-multiple-robots
+      url: /edu/bioloid/beginner/#control-multiple-robots
+      urlkr:
+
+#BIOLOID Comprehensive sidebar
+bioloid-comprehensive:
+  - title: "Introduction"
+    titlekr: "개요"
+    url: /edu/bioloid/comprehensive/#introduction
+    urlkr:
+  - title: "Getting Started"
+    titlekr: ""
+    url: /edu/bioloid/comprehensive/#getting-started
+    urlkr:
+    children:
+    - title: "Part List"
+      titlekr: ""
+      url: /edu/bioloid/comprehensive/#part-list
+      urlkr:
+    - title: "Preparation"
+      titlekr: ""
+      url: /edu/bioloid/comprehensive/#preparation
+      urlkr:
+    - title: "Operating"
+      titlekr: ""
+      url: /edu/bioloid/comprehensive/#operating
+      urlkr:
+    - title: "Charging CM-5"
+      titlekr: ""
+      url: /edu/bioloid/comprehensive/#charging-cm-5
+      urlkr:
+  - title: "Tutorial"
+    titlekr: ""
+    url: /edu/bioloid/comprehensive/#tutorial
+    urlkr:
+    children:
+    - title: "Screen Output"
+      titlekr: ""
+      url: /edu/bioloid/comprehensive/#screen-output
+      urlkr:
+    - title: "Button & LED"
+      titlekr: ""
+      url: /edu/bioloid/comprehensive/#button-led
+      urlkr:
+    - title: "Attacking Duck"
+      titlekr: ""
+      url: /edu/bioloid/comprehensive/#attacking-duck
+      urlkr:
+    - title: "Obstacle Detecting Car"
+      titlekr: ""
+      url: /edu/bioloid/comprehensive/#obstacle-detecting-car
+      urlkr:
+    - title: "Walking Droid 1"
+      titlekr: ""
+      url: /edu/bioloid/comprehensive/#walking-droid-1
+      urlkr:
+    - title: "Walking Droid 2"
+      titlekr: ""
+      url: /edu/bioloid/comprehensive/#walking-droid-2
+      urlkr:
+    - title: "Walking Droid 3"
+      titlekr: ""
+      url: /edu/bioloid/comprehensive/#walking-droid-3
+      urlkr:
+    - title: "Converting .bpg to .tsk"
+      titlekr: ""
+      url: /edu/bioloid/comprehensive/#converting-bpg-to-tsk
+      urlkr:
+  - title: "Download"
+    titlekr: ""
+    url: /edu/bioloid/comprehensive/#download
+    urlkr:
+    children:
+    - title: "Download Task Code"
+      url: /edu/bioloid/comprehensive/#download-task-code
+    - title: "Download Motion File"
+      url: /edu/bioloid/comprehensive/#download-motion-file
+    - title: "Examples"
+      url: /edu/bioloid/comprehensive/#examples
+  - title: "References"
+    titlekr: ""
+    url: /edu/bioloid/comprehensive/#references
+    urlkr:
+    children:
+    - title: "Replacing Fuse"
+      titlekr: ""
+      url: /edu/bioloid/comprehensive/#replacing-fuse-cm-5
+      urlkr:
+    - title: "Dynamixel Management"
+      titlekr: ""
+      url: /edu/bioloid/comprehensive/#dynamixel-management
+      urlkr:
+    - title: "Zigbee Wireless Control"
+      titlekr: ""
+      url: /edu/bioloid/comprehensive/#zigbee-wireless-control
+      urlkr:
+    - title: "Control Multiple Robots"
+      titlekr: ""
+      url: /edu/bioloid/comprehensive/#control-multiple-robots
+      urlkr:
+
+#BIOLOID STEM sidebar
+bioloid-stem:
+  - title: "Introduction"
+    titlekr: "개요"
+    url: /edu/bioloid/stem/#introduction
+    urlkr:
+  - title: "Getting Started"
+    titlekr: ""
+    url: /edu/bioloid/stem/#getting-started
+    urlkr:
+    children:
+    - title: "Standard Part List"
+      titlekr: ""
+      url: /edu/bioloid/stem/#standard-part-list
+      urlkr:
+    - title: "Expansion Part List"
+      titlekr: ""
+      url: /edu/bioloid/stem/#expansion-part-list
+      urlkr:
+    - title: "Operating"
+      titlekr: ""
+      url: /edu/bioloid/stem/#operating
+      urlkr:
+    - title: "Battery Charge"
+      titlekr: ""
+      url: /edu/bioloid/stem/#battery-charge
+      urlkr:
+  - title: "Download"
+    titlekr: ""
+    url: /edu/bioloid/stem/#download
+    urlkr:
+    children:
+    - title: "Standard Examples"
+      url: /edu/bioloid/stem/#standard-examples
+    - title: "Expansion Examples"
+      url: /edu/bioloid/stem/#expansion-examples
+  - title: "References"
+    titlekr: ""
+    url: /edu/bioloid/stem/#references
+    urlkr:
+    children:
+    - title: "Replacing Fuse"
+      titlekr: ""
+      url: /edu/bioloid/stem/#replacing-fuse
+      urlkr:
+    - title: "Dynamixel Management"
+      titlekr: ""
+      url: /edu/bioloid/stem/#dynamixel-management
+      urlkr:
+    - title: "Zigbee Wireless Control"
+      titlekr: ""
+      url: /edu/bioloid/stem/#zigbee-wireless-control
       urlkr:
 
 #R+ Task 1.0 sidebar
