@@ -39,7 +39,7 @@ For more information assembly and operation, please refer to the ROBOTIS DREAM S
 |3. Flag Game Robot<br />![](/assets/images/edu/dream/dream1-3_flaggame.jpg)|[Download][ex_03]|
 |4. War Robot<br />![](/assets/images/edu/dream/dream1-4_warrobot.jpg)|[Download][ex_04]|
 
-[CM-150]: /docs/en/parts/controller/cm_150/
+[CM-150]: /docs/en/parts/controller/cm-150/
 [Geared Motor]: /docs/en/parts/motor/geared_motor/
 [USB Downloader(LN-101)]: /docs/en/parts/interface/ln_101/
 [How to Download Task code]: /docs/en/faq/download_task_code/

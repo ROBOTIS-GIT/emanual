@@ -11,7 +11,15 @@ sidebar:
   nav: "download_task_code"
 ---
 
-# [Preparation](#preparation)
+# [Download Task Code](#download-task-code)
+
+## [CM-5](#cm-5)
+
+{% include en/edu/bioloid/download_task.md %}
+
+## [CM-100](#cm-100)
+
+### Preparation
 1. Please open a task code file(*.tsk) to download from RoboPlus Task.
   - You can open it by double-clicking.
   - You can open it by using an 'open a file' function of RoboPlus Task.
@@ -22,7 +30,7 @@ sidebar:
 
   ![img_01][img_01]
 
-# [Download](#download)
+### Download
 
 1. Connect the controller before downloading the task code. To download the task code, the controller must be connected to the PC. (Please refer to controller information for information on how to connect the controller to the PC.)
 
@@ -52,17 +60,17 @@ sidebar:
 
 5. Execute the task code -> Your robot will move. Turn on the controller and execute the downloaded task code.
 
-# [Videos](#videos)
+### Videos
 
-## Download RoboPlus Program (for CM-100)
+#### Download RoboPlus Program (for CM-100)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3mDP9BW-Q0E" frameborder="0" allowfullscreen></iframe>
 
-## setting up the port
+#### setting up the port
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UlD4C1XMsgo" frameborder="0" allowfullscreen></iframe>
 
-[CM-100]: /docs/en/parts/controller/cm_100/
+[CM-100]: /docs/en/parts/controller/cm-100/
 [USB Downloader(LN-101)]: /docs/en/parts/interface/ln_101/
 [rule check error messages]: /docs/en/software/rplus1/task/task_misc/#rule-check
 

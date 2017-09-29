@@ -1,11 +1,11 @@
 ---
 layout: archive
-lang: en
+lang: kr
 ref: ax-12w
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/dxl/ax/ax-12w/
+permalink: /docs/kr/dxl/ax/ax-12w/
 sidebar:
   title: AX-12W
   nav: "ax-12w"
@@ -372,7 +372,7 @@ Can choose vales from 0x20 to 0x3FF.
 
 # [Maintenance](#maintenance)
 
-{% include dxl/horn_bearing_replacement.md %}
+{% include en/dxl/horn_bearing_replacement.md %}
 
 # [Reference](#reference)
 

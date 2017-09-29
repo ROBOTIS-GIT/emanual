@@ -272,6 +272,7 @@ main:
         titlekr: "종합"
         titlejp: "Comprehensive Level"
         titlecn: "Comprehensive Level"
+        url: /edu/bioloid/comprehensive/
       - title: "ROBOTIS STEM"
         titlekr: "STEM 키트"
         titlejp: "STEM Kit"
@@ -279,14 +280,17 @@ main:
       - titlekr: "STEM 아카데미"
         titlejp: "STEM Academy"
         titlecn: "STEM Academy"
+        url: /edu/bioloid/stem/
       - title: "ROBOTIS Premium"
         titlekr: "프리미엄"
         titlejp: "Premium"
         titlecn: "Premium"
+        url: /edu/bioloid/premium/
       - title: "ROBOTIS GP"
         titlekr: "ROBOTIS GP"
         titlejp: "ROBOTIS GP"
         titlecn: "ROBOTIS GP"
+        url: /edu/bioloid/gp/
     - title: "MINI"
       titlekr: "미니"
   - title: "SOFTWARE"
@@ -3681,6 +3685,99 @@ bioloid-stem:
     - title: "Zigbee Wireless Control"
       titlekr: ""
       url: /edu/bioloid/stem/#zigbee-wireless-control
+      urlkr:
+
+#BIOLOID Premium sidebar
+bioloid-premium:
+  - title: "Introduction"
+    titlekr: "개요"
+    url: /edu/bioloid/premium/#introduction
+    urlkr:
+  - title: "Getting Started"
+    titlekr: ""
+    url: /edu/bioloid/premium/#getting-started
+    urlkr:
+    children:
+    - title: "Part List"
+      titlekr: ""
+      url: /edu/bioloid/premium/#part-list
+      urlkr:
+    - title: "Operating"
+      titlekr: ""
+      url: /edu/bioloid/premium/#operating
+      urlkr:
+    - title: "Charging CM-5"
+      titlekr: ""
+      url: /edu/bioloid/premium/#charging-cm-5
+      urlkr:
+  - title: "Tutorial"
+    titlekr: ""
+    url: /edu/bioloid/premium/#tutorial
+    urlkr:
+    children:
+    - title: "Screen Output"
+      titlekr: ""
+      url: /edu/bioloid/premium/#screen-output
+      urlkr:
+    - title: "Button & LED"
+      titlekr: ""
+      url: /edu/bioloid/premium/#button-led
+      urlkr:
+    - title: "Attacking Duck"
+      titlekr: ""
+      url: /edu/bioloid/premium/#attacking-duck
+      urlkr:
+    - title: "Obstacle Detecting Car"
+      titlekr: ""
+      url: /edu/bioloid/premium/#obstacle-detecting-car
+      urlkr:
+    - title: "Walking Droid 1"
+      titlekr: ""
+      url: /edu/bioloid/premium/#walking-droid-1
+      urlkr:
+    - title: "Walking Droid 2"
+      titlekr: ""
+      url: /edu/bioloid/premium/#walking-droid-2
+      urlkr:
+    - title: "Walking Droid 3"
+      titlekr: ""
+      url: /edu/bioloid/premium/#walking-droid-3
+      urlkr:
+    - title: "Converting .bpg to .tsk"
+      titlekr: ""
+      url: /edu/bioloid/premium/#converting-bpg-to-tsk
+      urlkr:
+  - title: "Download"
+    titlekr: ""
+    url: /edu/bioloid/premium/#download
+    urlkr:
+    children:
+    - title: "Download Task Code"
+      url: /edu/bioloid/premium/#download-task-code
+    - title: "Download Motion File"
+      url: /edu/bioloid/premium/#download-motion-file
+    - title: "Examples"
+      url: /edu/bioloid/premium/#examples
+  - title: "References"
+    titlekr: ""
+    url: /edu/bioloid/premium/#references
+    urlkr:
+    children:
+    - title: "Replacing Fuse"
+      titlekr: ""
+      url: /edu/bioloid/premium/#replacing-fuse-cm-5
+      urlkr:
+    - title: "Dynamixel Management"
+      titlekr: ""
+      url: /edu/bioloid/premium/#dynamixel-management
+      urlkr:
+    - title: "Zigbee Wireless Control"
+      titlekr: ""
+      url: /edu/bioloid/premium/#zigbee-wireless-control
+      urlkr:
+    - title: "Control Multiple Robots"
+      titlekr: ""
+      url: /edu/bioloid/premium/#control-multiple-robots
       urlkr:
 
 #R+ Task 1.0 sidebar

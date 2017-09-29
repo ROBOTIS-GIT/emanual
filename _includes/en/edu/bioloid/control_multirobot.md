@@ -53,5 +53,5 @@ The channel for the ZIG-100 mounted on the CM-5 is unchangeable. Thus, all users
 The channel for the zigbee connected to the controller is not changeable. Thus, all users must set their channel to #4 for broadcast communicationAll channels for the devises must pair to communicate.
 {: .notice}
 
-[How to change the RC-100 channel]: /docs/en/parts/communication/rc_100/#how-to-set-broadcasting-channel
+[How to change the RC-100 channel]: /docs/en/parts/communication/rc-100/#how-to-set-broadcasting-channel
 [How to change the Zig2Serial channel]: /docs/en/parts/communication/zig2serial/#select-broadcast-channel

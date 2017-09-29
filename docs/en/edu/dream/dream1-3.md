@@ -48,9 +48,9 @@ For more information assembly and operation, please refer to the ROBOTIS DREAM L
 |11. Whac-A-Mole<br />![](/assets/images/edu/dream/dream1-3_whacamole.jpg)|[Download][ex_11]|
 |12. Goblin Robot<br />![](/assets/images/edu/dream/dream1-3_goblin.jpg)|[Download][ex_12]|
 
-[CM-150]: /docs/en/parts/controller/cm_150/
+[CM-150]: /docs/en/parts/controller/cm-150/
 [Servo Motor]: /docs/en/parts/motor/servo_motor/
-[IR Sensor]: /docs/en/parts/sensor/irss_10/
+[IR Sensor]: /docs/en/parts/sensor/irss-10/
 [LED Module]: /docs/en/parts/display/lm_10/
 [Touch Sensor]: /docs/en/parts/sensor/ts_10/
 [USB Downloader(LN-101)]: /docs/en/parts/interface/ln_101/

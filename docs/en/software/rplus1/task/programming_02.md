@@ -1330,14 +1330,14 @@ Variables may be used for many purposes.  Existing Variables are listed in the "
 
 Variables are useful when a number to be remembered, when a value must be changed depending on the situation, or when multiple values must be changed at once.
 
-[CM-100]: /docs/en/parts/controller/cm_100/
-[CM-150]: /docs/en/parts/controller/cm_150/
-[CM-200]: /docs/en/parts/controller/cm_200/
-[CM-5]: /docs/en/parts/controller/cm_5/
-[CM-510]: /docs/en/parts/controller/cm_510/
-[CM-530]: /docs/en/parts/controller/cm_530/
-[CM-700]: /docs/en/parts/controller/cm_700/
-[CM-900]: /docs/en/parts/controller/cm_900/
+[CM-100]: /docs/en/parts/controller/cm-100/
+[CM-150]: /docs/en/parts/controller/cm-150/
+[CM-200]: /docs/en/parts/controller/cm-200/
+[CM-5]: /docs/en/parts/controller/cm-5/
+[CM-510]: /docs/en/parts/controller/cm-510/
+[CM-530]: /docs/en/parts/controller/cm-530/
+[CM-700]: /docs/en/parts/controller/cm-700/
+[CM-900]: /docs/en/parts/controller/cm-900/
 [OpenCM9.04]: /docs/en/parts/controller/opencm_904/
 [EXP485]: /docs/en/parts/controller/exp485/
 [OpenCR]: /docs/en/parts/controller/opencr/
@@ -1345,7 +1345,7 @@ Variables are useful when a number to be remembered, when a value must be change
 [SM-10A]: /docs/en/parts/parts/motor/sm_10a/
 [TS-10]: /docs/en/parts/parts/sensor/ts_10/
 [LM-10]: /docs/en/parts/parts/display/lm_10/
-[IRSS-10]: /docs/en/parts/parts/sensor/irss_10/
+[IRSS-10]: /docs/en/parts/parts/sensor/irss-10/
 [DMS-80]: /docs/en/parts/parts/sensor/dms_80/
 [Custom Device]: ???
 

@@ -10,5 +10,3 @@ sidebar:
   title: FAQ
   nav: "faq"
 ---
-
-{% include faq/contents_create.md %}

@@ -120,6 +120,6 @@ The following robots have less than 4 joints and the robots can be built with Be
 {% include en/edu/bioloid/control_multirobot.md %}
 
 
-[CM-5]: /docs/en/parts/controller/cm_5/
+[CM-5]: /docs/en/parts/controller/cm-5/
 [AX-12]: /docs/en/dxl/ax/ax-12a/
 [AX-S1]: /docs/en/parts/sensor/ax-s1/

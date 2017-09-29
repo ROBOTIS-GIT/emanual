@@ -40,6 +40,6 @@ If you want to use RoboPlus program for [CM-5] (the controller used for Bioloid 
 5. Execute the task code and your robot will move.
   Turn on the controller and execute the downloaded task code(Please refer to each controller information to learn how to execute the task code).
 
-[CM-5]: /docs/en/parts/controller/cm_5/
+[CM-5]: /docs/en/parts/controller/cm-5/
 [Firmware Update]: ???
 [USB2Dynamixel]: /docs/en/parts/interface/usb2dynamixel/

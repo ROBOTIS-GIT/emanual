@@ -94,7 +94,7 @@ Also, please refer to [How to Download of task code] for more information.
 
 [USB Downloader(LN-101)]: /docs/en/parts/interface/ln_101/
 [Inventor]: /docs/en/edu/ollo/inventor/
-[CM-100]: /docs/en/parts/controller/cm_100/
+[CM-100]: /docs/en/parts/controller/cm-100/
 [Geared Motor]: /docs/en/parts/motor/geared_motor/
 [How to Download of task code]: /docs/en/faq/download_task_code/
 [ollo_explore_partlist]: /assets/images/edu/ollo/ollo_explorer_partlist.png

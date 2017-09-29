@@ -68,7 +68,7 @@ For more information assembly and operation, please refer to the ROBOTIS DREAM S
 |3. Scorpion<br />![](/assets/images/edu/dream/dream1-2_scorpion.jpg)|[Download][ex_03]|
 |4. Crocodile<br />![](/assets/images/edu/dream/dream1-2_crocodile.jpg)|[Download][ex_04]|
 
-[CM-150]: /docs/en/parts/controller/cm_150/
+[CM-150]: /docs/en/parts/controller/cm-150/
 [Geared Motor]: /docs/en/parts/motor/geared_motor/
 [USB Downloader(LN-101)]: /docs/en/parts/interface/ln_101/
 [How to Download Task code]: /docs/en/faq/download_task_code/

@@ -60,13 +60,13 @@ Also, please refer to [How to Download of task code] for more information.
 |12. Racing Car<br />![I-3-4][img_I-3-4]|[Download][I-3-4_1]<br />[Download][I-3-4_2]<br />[Download][I-3-4_3]<br />[Download][I-3-4_4]|Example program for assembly check<br />Example program for programming 1<br />Example program for programming 2<br />Example program for robot|
 
 
-[RC-100]: /docs/en/parts/communication/rc_100/
+[RC-100]: /docs/en/parts/communication/rc-100/
 [LN-101]: /docs/en/parts/interface/ln_101/
 [Servo Motor]: /docs/en/parts/motor/servo_motor/
-[IR Sensor]: /docs/en/parts/sensor/irss_10/
+[IR Sensor]: /docs/en/parts/sensor/irss-10/
 [LED Module]: /docs/en/parts/display/lm_10/
 [Touch Sensor]: /docs/en/parts/sensor/ts_10/
-[ZIG-100/110]: /docs/en/parts/communication/zig_100_110/
+[ZIG-100/110]: /docs/en/parts/communication/zig-100_110/
 [USB Downloader(LN-101)]: /docs/en/parts/interface/ln_101/
 [How to Download of task code]: /docs/en/faq/download_task_code/
 [ollo_inventor_partlist]: /assets/images/edu/ollo/ollo_inventor_partlist.png

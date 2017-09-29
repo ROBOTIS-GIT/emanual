@@ -121,7 +121,7 @@
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav">
-        <a class="site-title" href="http://localhost:4000/emanual/"><img src="/emanual/assets/images/robotis_logo.gif" style="padding-right:10px;">e-Manual</a>
+        <a class="site-title" href="http://localhost:4000/emanual/"><img src="/assets/images/robotis_logo.gif" style="padding-right:10px;">e-Manual</a>
         
         
           <a href="http://localhost:4000/emanual/docs/en/dxl/x/xh430-w210/" class="en" style="color: #134268;padding-right:10px;">[en]</a>
@@ -821,6 +821,18 @@
                     <a>4단계 교육키트</a>
                     
                 
+                  
+
+                  
+
+                  
+                
+                  
+
+                  
+
+                  
+                
               </div>
               
 
@@ -1079,7 +1091,7 @@
                   
 
                   
-                    <a>GP</a>
+                    <a>ROBOTIS GP</a>
                     
                 
               </div>
@@ -1820,9 +1832,9 @@
   </div>
 </div>
 
-<script src="/emanual/assets/js/lunr.min.js"></script>
+<script src="/assets/js/lunr.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="/emanual/assets/js/search.js"></script>
+<script src="/assets/js/search.js"></script>
 
 
     
@@ -2117,7 +2129,7 @@
     <a href="/blob/master/docs/kr/dxl/x/xh430-w210.md" itemprop="sameAs" style="font-size:16px;float:right;">
       <i class="fa fa-fw fa-github" aria-hidden="true"></i> Edit on GitHub
     </a>
-    <p><img src="/emanual/assets/images/dxl/x/x_series_product.png" alt="" /></p>
+    <p><img src="/assets/images/dxl/x/x_series_product.png" alt="" /></p>
 
 <h1 id="스펙"><a href="#스펙">스펙</a></h1>
 
@@ -2221,7 +2233,7 @@
 </table>
 
 <h2 id="성능-그래프"><a href="#성능-그래프">성능 그래프</a></h2>
-<p><img src="/emanual/assets/images/dxl/x/xh430_w210_performance_graph.jpg" alt="" /></p>
+<p><img src="/assets/images/dxl/x/xh430_w210_performance_graph.jpg" alt="" /></p>
 
 <p class="notice"><code class="highlighter-rouge">Note</code> Stall torque와 Performance Graph의 Max torque의 차이는 측정 방식에 기인합니다. Stall torque는 순간적인 최대토크를 측정하는 방식으로, 고전적인 RC Servo 제품에서 주로 사용하는 사양입니다. Performance Graph는 N-T Curve라고도 불리며, 부하(load)를 점진적으로 증가시키면서 측정됩니다. 모터 구동되는 환경은 Stall torque 측정 방식보다는 Performance Graph 측정 방식에 가깝습니다. 이러한 이유로 Performance Graph가 산업전반에서 보다 폭넓게 사용됩니다. 일반적으로 Performance Graph의 Max torque는 Stall torque보다 적게 측정됩니다.</p>
 
@@ -3638,7 +3650,7 @@ Present Position(132) = 실제 위치 + Homing Offset(20) 이 됩니다.</p>
   <li>구동 결과는 Present Position(132), Present Velocity(128) Present PWM(124), Present Current(126)에 표기됩니다.</li>
 </ol>
 
-<p><img src="/emanual/assets/images/dxl/x/dxl_velocity_controller.jpg" alt="" /></p>
+<p><img src="/assets/images/dxl/x/dxl_velocity_controller.jpg" alt="" /></p>
 
 <p class="notice"><code class="highlighter-rouge">Note</code> K<sub>a</sub>는 Anti-windup Gain이고 ‘β’는 위치와 속도의 변환계수로 사용자가 변경할 수는 없습니다. PID 제어기에 대한 자세한 설명은 위키피디아 사이트를 참고하세요. <a href="http://en.wikipedia.org/wiki/PID_controller">PID Controller at wikipedia</a>.</p>
 
@@ -3707,7 +3719,7 @@ Present Position(132) = 실제 위치 + Homing Offset(20) 이 됩니다.</p>
   <li>구동 결과는 Present Position(132), Present Velocity(128) Present PWM(124), Present Current(126)에 표기됩니다.</li>
 </ol>
 
-<p><img src="/emanual/assets/images/dxl/x/dxl_position_controller.jpg" alt="" /></p>
+<p><img src="/assets/images/dxl/x/dxl_position_controller.jpg" alt="" /></p>
 
 <p class="notice"><code class="highlighter-rouge">Note</code> PWM 제어 모드의 경우, PID 제어기와 Feedforward 제어기는 모두 비활성화되고 Goal PWM(100) 값이 Inverter를 통해서 모터에 직접 인가됩니다. 이를 통해 모터의 전압을 직접 제어할 수 있습니다.</p>
 
@@ -3723,7 +3735,7 @@ Present Position(132) = 실제 위치 + Homing Offset(20) 이 됩니다.</p>
   <li>구동 결과는 Present Position(132), Present Velocity(128) Present PWM(124), Present Current(126)에 표기됩니다.</li>
 </ol>
 
-<p><img src="/emanual/assets/images/dxl/x/dxl_current_position_controller.jpg" alt="" /></p>
+<p><img src="/assets/images/dxl/x/dxl_current_position_controller.jpg" alt="" /></p>
 
 <p class="notice"><code class="highlighter-rouge">Note</code> K<sub>a</sub>는 Anti-windup Gain로서 사용자가 변경할 수는 없습니다. 보다 자세한 PID 제어기와 Feedforward 제어기에 대한 설명은 위키피디아 사이트를 참고하세요. <a href="http://en.wikipedia.org/wiki/PID_controller">PID Controller</a>, <a href="https://en.wikipedia.org/wiki/Feed_forward_(control)">Feed Forward</a>.</p>
 
@@ -3907,7 +3919,7 @@ Present Position(132) = 실제 위치 + Homing Offset(20) 이 됩니다.</p>
 
 <p>Profile이란 모터 구동 시 급격하게 변하는 속도와 가속도를 조절함으로써 진동, 소음 및 모터의 부하를 줄이는 가감속 제어 방법입니다. 일반적으로 속도에 근거하여 가감속을 제어하기 때문에 Velocity Profile이라고 불립니다. 다이나믹셀은 4가지 형태의 Profile을 제공합니다. 다음은 4가지 종류의 Profile과 Profile의 선택 방법을 표시합니다. 기본적으로 Profile의 선택은 Profile Velocity(112)와 Profile Acceleration(108)의 조합에 의해서 결정됩니다. 예외적으로 Triangle과 Trapezoidal Profile은 총 이동거리(ΔPos, 목표위치와 현재위치의 차이)가 추가로 고려되어 선택됩니다. 편의상 Profile Velocity(112)를 VPRFL, Profile Acceleration(108)을 APRFL로 표기합니다. ‘X’는 “상관없음”(Don’t Care)를 뜻합니다.</p>
 
-<p><img src="/emanual/assets/images/dxl/x/dxl_profiles.jpg" alt="" /></p>
+<p><img src="/assets/images/dxl/x/dxl_profiles.jpg" alt="" /></p>
 
 <p>다이나믹셀의 Profile은 Goal Position(116)이 주어졌을 때, 현재 속도(Profile의 시작속도)를 기반으로 목표 속도 궤적을 생성합니다. 따라서 다이나믹셀이 Goal Position(116)로 이동하는 중에 새로운 Goal Position(116)로 목표위치가 변경되어도, 속도의 연속성을 유지하면서 목표 속도 궤적을 생성합니다. 이와 같이 속도의 불연속이 발생하지 않도록 목표 속도 궤적을 생성하는 기능을 Velocity Override라고 합니다. 여기서는 수식의 단순화를 위해 Profile의 시작속도를 ‘0’으로 가정합니다.</p>
 
@@ -3950,21 +3962,21 @@ Present Position(132) = 실제 위치 + Homing Offset(20) 이 됩니다.</p>
   </tbody>
 </table>
 
-<p><img src="/emanual/assets/images/dxl/x/dxl_velocity_profiles.jpg" alt="" /></p>
+<p><img src="/assets/images/dxl/x/dxl_velocity_profiles.jpg" alt="" /></p>
 
 <p class="notice"><code class="highlighter-rouge">Note</code> 급격한 가속도의 변화를 최소화하기 위해서 다이나믹셀은 Jerk를 관리하고 있습니다. 따라서 Profile에 의한 목표궤적의 정확한 완료시간은 t3 보다 다소 길어질 수 있습니다.(상기 그림의 t4)</p>
 
 <div class="notice">
   
 <p><code class="highlighter-rouge">Note</code> 속도 제어 모드에서는 Profile Acceleration(108)만 적용됩니다. 제공되는 Profile의 형태는 Step과 Trapezoidal 2가지 입니다. Velocity Override 기능과 Jerk 관리 기능은 동일하게 동작합니다. 이때의 가속시간(t1)은 다음과 같습니다.
-<img src="/emanual/assets/images/dxl/x/equation_01.gif" alt="" /></p>
+<img src="/assets/images/dxl/x/equation_01.gif" alt="" /></p>
 
 </div>
 
 <h3 id="goal-position-116"><a name="goal-position"></a><strong>Goal Position (116)</strong></h3>
 <p>Goal Position(116)을 통해 목표위치를 설정할 수 있습니다. 모든 다이나믹셀은 Horn을 정면에서 바라봤을 때 CCW(Counter Clockwise) 방향이 증가 방향이고, CW(Clockwise) 방향이 감소 방향입니다. Goal Position(116)에 도달하는 방식은 다이나믹셀이 제공하는 4가지 형태의 Profile에 따라 달라집니다. Profile에 대한 자세한 내용은 Profile Velocity(112)를 참고하세요.</p>
 
-<p><img src="/emanual/assets/images/dxl/x/dxl_goal_position.jpg" alt="" /></p>
+<p><img src="/assets/images/dxl/x/dxl_goal_position.jpg" alt="" /></p>
 
 <table>
   <thead>
@@ -4181,11 +4193,11 @@ Indirect Address에 특정 Address를 설정하면, Indirect Data는 특정한 A
 
 <h2 id="배선-예시"><a href="#배선-예시">배선 예시</a></h2>
 
-<p><img src="/emanual/assets/images/dxl/x/wiring_through_back_case.jpg" alt="" /></p>
+<p><img src="/assets/images/dxl/x/wiring_through_back_case.jpg" alt="" /></p>
 
 <h2 id="옵션프레임-조립"><a href="#옵션프레임-조립">옵션프레임 조립</a></h2>
 
-<p><img src="/emanual/assets/images/dxl/x/x430_option_frame.jpg" alt="" /></p>
+<p><img src="/assets/images/dxl/x/x430_option_frame.jpg" alt="" /></p>
 
 <h1 id="유지보수"><a href="#유지보수">유지보수</a></h1>
 
@@ -4193,14 +4205,14 @@ Indirect Address에 특정 Address를 설정하면, Indirect Data는 특정한 A
 
 <p>혼은 다이나믹셀의 전면 휠기어에 장착되며, 베어링은 후면에 장착됩니다.</p>
 
-<p><img src="/emanual/assets/images/dxl/x/horn_bearing.jpg" alt="" /></p>
+<p><img src="/assets/images/dxl/x/horn_bearing.jpg" alt="" /></p>
 
 <h3 id="installing-the-horn">Installing the Horn</h3>
 
 <p>혼을 삽입하기 전에 혼 와셔를 와셔 홈에 맞도록 올려놓으십시오.
 혼과 휠기어에 표시된 도트 표시를 맞추어서 혼을 끼워넣으십시오.</p>
 
-<p><img src="/emanual/assets/images/dxl/x/horn_alignment.jpg" alt="" /></p>
+<p><img src="/assets/images/dxl/x/horn_alignment.jpg" alt="" /></p>
 
 <p>도트 표시를 맞추어서 혼을 휠기어에 끼웠으면 혼의 중심부를 누르면서 휠기어의 끝까지 완전히 삽입되도록 조립하십시오. 이 과정에서 먼저 끼워진 혼 와셔가 이탈하지 않는지 확인하십시오. 혼과 와셔가 모두 정상적으로 조립되면 볼트를 이용해서 혼과 휠기어를 단단히 고정하십시오.</p>
 
@@ -4208,7 +4220,7 @@ Indirect Address에 특정 Address를 설정하면, Indirect Data는 특정한 A
 
 <p>다이나믹셀에 사용되던 베어링 셋트를 분리하거나 새로운 베어링 셋트를 구입해서 다이나믹셀에 조립할 수 있습니다.  베어링 셋트는 구동축과 분리되어 자유롭게 회전하기 때문에 혼을 조립할때 처럼 위치를 맞추어 조립할 필요가 없습니다.</p>
 
-<p><img src="/emanual/assets/images/dxl/x/bearing.jpg" alt="" /></p>
+<p><img src="/assets/images/dxl/x/bearing.jpg" alt="" /></p>
 
 <h1 id="참고자료"><a href="#참고자료">참고자료</a></h1>
 

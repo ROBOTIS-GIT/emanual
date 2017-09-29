@@ -88,14 +88,14 @@ sidebar:
 
 [ln-101]: /docs/en/parts/interface/ln_101/
 
-[cm-100]: /docs/en/parts/controller/cm_100/
-[cm-150]: /docs/en/parts/controller/cm_150/
-[cm-200]: /docs/en/parts/controller/cm_200/
-[cm-5]: /docs/en/parts/controller/cm_5/
-[cm-510]: /docs/en/parts/controller/cm_510/
-[cm-530]: /docs/en/parts/controller/cm_530/
-[cm-700]: /docs/en/parts/controller/cm_700/
-[cm-900]: /docs/en/parts/controller/cm_900/
+[cm-100]: /docs/en/parts/controller/cm-100/
+[cm-150]: /docs/en/parts/controller/cm-150/
+[cm-200]: /docs/en/parts/controller/cm-200/
+[cm-5]: /docs/en/parts/controller/cm-5/
+[cm-510]: /docs/en/parts/controller/cm-510/
+[cm-530]: /docs/en/parts/controller/cm-530/
+[cm-700]: /docs/en/parts/controller/cm-700/
+[cm-900]: /docs/en/parts/controller/cm-900/
 [opencm9.04]: /docs/en/parts/controller/opencm_904/
 [exp485]: /docs/en/parts/controller/exp485/
 [opencr]: /docs/en/parts/controller/opencr/

@@ -629,11 +629,11 @@ After executing the program, control the robot forward, backward, left, and righ
 
 [How to Download Task code]: /docs/en/faq/download_task_code/
 
-[ZIG-100/110]: /docs/en/parts/communication/zig_100_110/
-[CM-100]: /docs/en/parts/controller/cm_100/
+[ZIG-100/110]: /docs/en/parts/communication/zig-100_110/
+[CM-100]: /docs/en/parts/controller/cm-100/
 [Geared Motor]: /docs/en/parts/motor/geared_motor/
 [USB Downloader(LN-101)]: /docs/en/parts/interface/ln_101/
-[RC-100]: /docs/en/parts/communication/rc_100/
+[RC-100]: /docs/en/parts/communication/rc-100/
 [Programming]: #programming
 [OLLO_LineTrace.pdf]: http://support.robotis.com/en/baggage_files/ollo/ollo_linetrace.pdf
 [OLLO_PuzzleRacing.zip]: http://support.robotis.com/en/baggage_files/ollo/ollo_puzzle_racing_line.zip
