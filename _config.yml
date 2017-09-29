@@ -12,7 +12,7 @@ title_separator          : "-"
 name                     : "ROBOTIS"
 description              : "e-Manual wiki"
 url                      : "https://robotis-git.github.io"
-baseurl                  : 
+baseurl                  : "/emanual"
 repository               : ROBOTIS-Git/emanual
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
