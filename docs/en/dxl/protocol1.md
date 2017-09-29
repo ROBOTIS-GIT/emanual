@@ -10,3 +10,330 @@ sidebar:
   title: Protocol 1.0
   nav: "protocol1"
 ---
+
+# [Instruction Packet](#instruction-packet)
+Instruction Packet is the command data sent to the Device.
+
+|Header1|Header2|ID|Length|Instruction|Param 1|...|Param N|Checksum|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|0xFF|0xFF|ID|Length|Instruction|Param 1|...|Param N|CHKSUM|
+
+## [Header](#header)
+The field indicates the start of the Packet.
+
+## [Packet ID](#packet-id)
+The field that indicates the ID of the Device that should receive the Instruction Packet and process it
+
+  1. Range : 0 ~ 253 (0x00 ~ 0xFD), which is a total of 254 numbers that can be used.
+  2. Broadcast ID : 254 (0xFE), which makes all connected devices execute the Instruction Packet.
+
+## [Length](#length)
+The length of the Packet(Instruction, Parameter, Checksum fields).
+Length = number of Parameters + 2
+
+## [Instruction](#instruction)
+The field that defines the type of instruction.
+
+|Value|Instructions|Description|
+|:---:|:---:|:---:|
+|0x01|Ping|Instruction that checks whether the Packet has arrived to a device with the same ID as Packet ID|
+|0x02|Read|Instruction to read data from the Device|
+|0x03|Write|Instruction to write data on the Device|
+|0x04|Reg Write|Instruction that registers the Instruction Packet to a standby status; Packet is later executed through the Action instruction|
+|0x05|Action|Instruction that executes the Packet that was registered beforehand using Reg Write|
+|0x06|Factory Reset|Instruction that resets the Control Table to its initial factory default settings|
+|0x83|Sync Write|For multiple devices, Instruction to write data on the same Address with the same length at once|
+
+## [Parameters](#parameters)
+Parameters are used when additional data is required for an instruction.
+
+## [Instruction Checksum](#instruction-checksum)
+It is used to check if packet is damaged during communication.
+Instruction Checksum is calculated according to the following formula.
+
+**Instruction Checksum = ~( ID + Length + Instruction + Parameter1 + … Parameter N )**
+
+Where “~” is the Binary Ones Complement operator.
+When the calculation result of the parenthesis in the above formula is larger than 255 (0xFF), use only lower bytes.
+
+For example, when you want to use below Instruction Packet,
+
+ID=1(0x01), Length=5(0x05), Instruction=3(0x03),
+Parameter1=12(0x0C), Parameter2=100(0x64), Parameter3=170(0xAA)
+
+Checksum = ~ ( ID + Length + Instruction + Parameter1 + … Parameter 3 )
+= ~ [ 0x01 + 0x05 + 0x03 + 0x0C + 0x64 + 0xAA ]
+= ~ [ 0x123 ] // Only the lower byte 0x23 executes the Not operation.
+= 0xDC
+
+Thus, Instruction Packet should be 0xFF, 0xFF, 0x01, 0x05, 0x03, 0x0C, 0x64, 0xAA, 0xDC.
+
+
+# [Status Packet](#status-packet)
+
+|Header1|Header2|ID|Length|Error|Param 1|...|Param N|Checksum|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|0xFF|0xFF|ID|Length|Error|Param 1|...|Param N|CHKSUM|
+
+## [Error](#error)
+This field displays the error status occurred during the operation of Dynamixel.
+
+|Bit|Error|Description|
+|:---:|:---:|:---:|
+|Bit 7|0|-|
+|Bit 6|Instruction Error|In case of sending an undefined instruction or delivering the action instruction without the reg_write instruction, it is set as 1|
+|Bit 5|Overload Error|When the current load cannot be controlled by the set Torque, it is set as 1|
+|Bit 4|Checksum Error|When the Checksum of the transmitted Instruction Packet is incorrect, it is set as 1|
+|Bit 3|Range Error|When an instruction is out of the range for use, it is set as 1|
+|Bit 2|Overheating Error|When internal temperature of Dynamixel is out of the range of operating temperature set in the Control table, it is set as 1|
+|Bit 1|Angle Limit Error|When Goal Position is written out of the range from CW Angle Limit to CCW Angle Limit , it is set as 1|
+|Bit 0|Input Voltage Error|When the applied voltage is out of the range of operating voltage set in the Control table, it is as 1|
+
+For example, when Status Packet is returned as below
+
+0xFF 0xFF 0x01 0x02 0x24 0xD8
+It means that the error of 0x24 occurs from Dynamixel whose ID is 01. Since 0x24 is 00100100 as binary, Bit5 and Bit2 become 1. In order words, Overload and Overheating Errors have occurred.
+
+`Note` The error types on the table above are related to actuators, and the contents may vary depending on the type of Dynamixel.
+{: .notice}
+
+## [Status Checksum](#status-checksum)
+It is used to check if packet is damaged during communication.
+Status Checksum is calculated according to the following formula.
+
+**Status Checksum = ~( ID + Length + Error + Parameter1 + … Parameter N )**
+
+
+# [Instruction Details](#instruction-details)
+
+## [Ping](#ping)
+This instruction requests the Status Packet from a specific ID. Even if Status Return Level(16) is 0, Dynamixel returns Status Packet all the time for Ping Instruction.
+
+|Instruction|Length|Parameter|
+|:---:|:---:|:---:|
+|0x01|0x02|-|
+
+### Example
+#### Conditions
+- ID 1(RX-64) is connected to the PC with an identical baudrate.
+
+#### Ping Instruction Packet
+
+|H1|H2|ID|LEN|INST|CKSM|
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|0xFF|0xFF|0x01|0x02|0x01|0xFB|
+
+#### ID 1 Status Packet
+
+|H1|H2|ID|LEN|ERR|CKSM|
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|0xFF|0xFF|0x01|0x02|0x00|0xFC|
+
+## [Read](#read)
+This instruction is to read data in the Control Table of Dynamixel.
+
+|Instruction|Length|Param 1|Param 2|
+|:---:|:---:|:---:|:---:|
+|0x02|0x04|Starting Address of the Data|Length of Data to read|
+
+### Example
+#### Conditions
+- ID 1(RX-64) : Read Present Temperature, which is located at the address 43(0x2B)
+
+#### Read Instruction Packet
+
+|H1|H2|ID|LEN|INST|P1|P2|CKSM|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|0xFF|0xFF|0x01|0x04|0x02|0x2B|0x01|0xCC|
+
+#### ID 1 Status Packet
+
+|H1|H2|ID|LEN|ERR|P1|CKSM|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|0xFF|0xFF|0x01|0x03|0x00|0x20|0xDB|
+
+## [Write](#write)
+This instruction is to write data to the Control Table of DYNAMIXEL
+
+|Instruction|Length|Param 1|Param 2|Param 3|Param N+1|
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|0x03|N + 3|Starting Address of the Data|1st Byte|2nd Byte|Nth Byte|
+
+### Example
+#### Conditions
+- ID broadcast(RX-64) : Set the unknwon Dynamixel's ID as "1" by writing 1 to ID(3)
+
+#### Write Instruction Packet
+
+|H1|H2|ID|LEN|INST|P1|P2|CKSM|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|0xFF|0xFF|0xFE|0x04|0x03|0x03|0x01|0xF6|
+
+`Note` Status Packet will not be returned if Broadcast ID(0xFE) is used.
+{: .notice}
+
+## [Reg Write](#reg-write)
+  - Instruction that is similar to Write Instruction, but has an improved synchronization characteristic
+  - Write Instruction is executed immediately when an Instruction Packet is received.
+  - Reg Write Instruction registers the Instruction Packet to a standby status, and sets Control table Registered Instruction to ‘1’.
+  - When an Action Instruction is received, the registered Packet is executed, and sets Control Table Registered Instruction to ‘0’.
+
+|Instruction|Length|Param 1|Param 2|Param N+1|
+|:---:|:---:|:---:|:---:|:---:|
+|0x04|N+3|Starting Address of the Data|1st Byte|Nth Byte|
+
+### Example
+#### Conditions
+- ID 1(RX-64) : Reg Write 500(0x1F4) to Goal Position(30) and wait for Action instruction to move.
+
+#### Reg Write Instruction Packet
+
+|H1|H2|ID|LEN|INST|P1|P2|P3|CKSM|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|0xFF|0xFF|0x01|0x05|0x04|0x1E|0xF4|0x01|0xE2|
+
+#### ID 1 Status Packet
+
+|H1|H2|ID|LEN|ERR|CKSM|
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|0xFF|0xFF|0x01|0x02|0x00|0xFC|
+
+## [Action](#action)
+This instruction is to execute the registered Reg Write instruction. The Action instruction is useful when multiple Dynamixels are required to start moving at the same time. When several devices are controlled via communication, there is a minor time difference between enabling the first and last device. Dynamixel has resolved this problem by using Action instruction.
+
+|Instruction|Length|Parameter|
+|:---:|:---:|:---:|
+|0x05|0x02|-|
+
+### Example
+#### Conditions
+- All Dynamixels have received Reg Write instructions.
+
+#### Action Instruction Packet
+
+|H1|H2|ID|LEN|INST|CKSM|
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|0xFF|0xFF|0xFE|0x02|0x05|0xFA|
+
+`Note` Status Packet will not be returned if Broadcast ID(0xFE) is used.
+{: .notice}
+
+## [Factory Reset](#factory-reset)
+This instruction is to reset the Control Table of Dynamixel to the factory default values.
+
+`Caution` Please be careful as Reset instruction will erase saved custom values in the EEPROM.
+{: .notice--warning}
+
+|Instruction|Length|Parameter|
+|:---:|:---:|:---:|
+|0x06|0x02|-|
+
+### Example
+#### Conditions
+- ID 0(RX-64) : Factory Reset the Dynamixel
+
+#### Factory Reset Instruction Packet
+
+|H1|H2|ID|LEN|INST|CKSM|
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|0xFF|0xFF|0x00|0x02|0x06|0xF7|
+
+#### ID 0 Status Packet
+
+|H1|H2|ID|LEN|ERR|CKSM|
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|0xFF|0xFF|0x00|0x02|0x00|0xFD|
+
+## [Sync Write](#sync-write)
+This instruction is used to control multiple Dynamixels simultaneously with a single Instruction Packet transmission. When this instruction is used, several instructions can be transmitted at once, so that the communication time is reduced when multiple Dynamixels are connected in a single channel. However, the SYNC WRITE instruction can only be used to a single address with an identical length of data over connected Dynamixels. ID should be transmitted as Broadcasting ID.
+
+|Item|Description|
+|:---:|:---|
+|Instruction|0x83|
+|Length|((L + 1) * N) + 4, L:Data Length, N:Number of Dynamixel|
+|Parameter 1|Starting address|
+|Parameter 2|Length of Data to write|
+|Parameter 3|[1st Device] ID|
+|Parameter 4|[1st Device] 1st Byte|
+|Parameter 5|[1st Device] 2nd Byte|
+|...|...|
+|Parameter L+3|[1st Device] L-th Byte|
+|Parameter L+4|[2nd Device] ID|
+|Parameter L+5|[2nd Device] 1st Byte|
+|Parameter L+6|[2nd Device] 2nd Byte|
+|...|...|
+|Parameter 2L+4|[2nd Device] L-th Byte|
+
+### Example
+#### Conditions
+- ID 0(RX-64) : Write 0x010 to Goal Position(30, 0x1E) and write 0x150 to Moving Speed(32, 0x20)
+- ID 1(RX-64) : Write 0x220 to Goal Position(30, 0x1E) and write 0x360 to Moving Speed(32, 0x20)
+
+#### Sync Write Instruction Packet
+
+|H1|H2|ID|LEN|INST|P1|P2|P3|P4|P5|P6|P7|P8|P9|P10|P11|P12|CKSM|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|0xFF|0xFF|0xFE|0x0E|0x83|0x1E|0x04|0x00|0x10|0x00|0x50|0x01|0x01|0x20|0x02|0x60|0x03|0x67|
+
+`Note` Status Packet will not be returned if Broadcast ID(0xFE) is used.
+{: .notice}
+
+## [Bulk Read](#bulk-read)
+This instruction is used for reading values of multiple DYNAMIXELs simultaneously by sending a single Instruction Packet. The packet length is shortened compared to sending multiple READ commands, and the idle time between the status packets being returned is also shortened to save communication time. However, this cannot be used to read a single module. If an identical ID is designated multiple times, only the first designated parameter will be processed.
+
+|Item|Description|
+|:---:|:---|
+|Instruction|0x92|
+|Length|3N + 3|
+|Parameter 1|0x00|
+|Parameter 2|[1st Device] Length of Data to read|
+|Parameter 3|[1st Device] ID|
+|Parameter 4|[1st Device] Starting address|
+|...|...|
+|Parameter 3N+2|[Nth Device] Length of Data to read|
+|Parameter 3N+3|[Nth Device] ID|
+|Parameter 3N+4|[Nth Device] Starting address|
+
+### Example
+#### Conditions
+- ID 1(RX-64) : Read the 2-byte Goal Position value(30, 0x1E).
+- ID 2(RX-64) : Read the 2-byte Present Position value(36, 0x24).
+
+#### Bulk Read Instruction Packet
+
+|H1|H2|ID|LEN|INST|P1|P2|P3|P4|P5|P6|P7|CKSM|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|0xFF|0xFF|0xFE|0x09|0x92|0x00|0x02|0x01|0x1E|0x02|0x02|0x24|0x1D|
+
+When Bulk Read instruction is received, Dynamixel with ID 2 monitors the status packet being sent from ID 1 of the data bus (the preceeding device ID), and when device ID 1’s status packet transmission is completed, ID 2 sends its own status packet.
+
+#### ID 1 Status Packet
+
+|H1|H2|ID|LEN|ERR|P1|P2|CKSM|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|0xFF|0xFF|0x01|0x04|0x00|0x00|0x80|0x7A|
+
+#### ID 2 Status Packet
+
+|H1|H2|ID|LEN|ERR|P1|P2|CKSM|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|0xFF|0xFF|0x02|0x04|0x00|0x00|0x80|0x79|
+
+# [More Packet Examples](#more-packet-examples)
+
+
+![](/assets/images/dxl/protocol1/protocol1_example_06.png)
+![](/assets/images/dxl/protocol1/protocol1_example_07.png)
+![](/assets/images/dxl/protocol1/protocol1_example_08.png)
+![](/assets/images/dxl/protocol1/protocol1_example_09.png)
+![](/assets/images/dxl/protocol1/protocol1_example_10.png)
+![](/assets/images/dxl/protocol1/protocol1_example_11.png)
+![](/assets/images/dxl/protocol1/protocol1_example_12.png)
+![](/assets/images/dxl/protocol1/protocol1_example_13.png)
+![](/assets/images/dxl/protocol1/protocol1_example_15.png)
+![](/assets/images/dxl/protocol1/protocol1_example_16.png)
+![](/assets/images/dxl/protocol1/protocol1_example_17.png)
+![](/assets/images/dxl/protocol1/protocol1_example_18.png)
+![](/assets/images/dxl/protocol1/protocol1_example_19.png)
+![](/assets/images/dxl/protocol1/protocol1_example_20.png)
+![](/assets/images/dxl/protocol1/protocol1_example_21.png)

@@ -186,22 +186,21 @@ main:
         titlekr: "버그 키트"
         titlejp: "Bug Kit"
         titlecn: "Bug Kit"
-      - title: "Level 2 Kit"
+      - title: "Explorer"
         titlekr: "2단계 교육키트"
         titlejp: "Level 2 Kit"
         titlecn: "Level 2 Kit"
-      - title: "Level 3 Kit"
+      - title: "Inventor"
         titlekr: "3단계 교육키트"
         titlejp: "Level 3 Kit"
         titlecn: "Level 3 Kit"
       - titlekr: "4단계 교육키트"
         titlejp: "Level 4 Kit"
         titlecn: "Level 4 Kit"
-    - title: "Dream I"
+    - title: "Dream"
       titlekr: "드림 I"
       children:
-      - title: "Level 1"
-        titlekr: "1단계 교육키트"
+      - titlekr: "1단계 교육키트"
         titlejp: "Level 1"
         titlecn: "Level 1"
         urlkr: /edu/dream/dream1-1/
@@ -209,28 +208,31 @@ main:
         titlekr: "2단계 교육키트"
         titlejp: "Level 2"
         titlecn: "Level 2"
+        url: /edu/dream/dream1-2/
         urlkr: /edu/dream/dream1-2/
       - title: "Level 3"
         titlekr: "3단계 교육키트"
         titlejp: "Level 3"
         titlecn: "Level 3"
+        url: /edu/dream/dream1-3/
       - title: "Level 4"
         titlekr: "4단계 교육키트"
         titlejp: "Level 4"
         titlecn: "Level 4"
-    - title: "Dream II"
-      titlekr: "드림 II"
+        url: /edu/dream/dream1-4/
+      - title: "SET A"
+        url: /edu/dream/dream-a/
+      - title: "SET B"
+        url: /edu/dream/dream-b/
+    - titlekr: "드림 II"
       children:
-      - title: "Level 1"
-        titlekr: "1단계 교육키트"
+      - titlekr: "1단계 교육키트"
         titlejp: "Level 1"
         titlecn: "Level 1"
-      - title: "Level 2"
-        titlekr: "2단계 교육키트"
+      - titlekr: "2단계 교육키트"
         titlejp: "Level 2"
         titlecn: "Level 2"
-      - title: "Level 3"
-        titlekr: "3단계 교육키트"
+      - titlekr: "3단계 교육키트"
         titlejp: "Level 3"
         titlecn: "Level 3"
     - titlekr: "스마트 I"
@@ -248,15 +250,12 @@ main:
       - titlekr: "1단계 교육키트"
       - titlekr: "2단계 교육키트"
         urlkr: /edu/smart/smart3-2/
-    - title: "IoT"
-      titlekr: "IoT"
+    - titlekr: "IoT"
       children:
-      - title: "Level 1"
-        titlekr: "1단계 교육키트"
+      - titlekr: "1단계 교육키트"
         titlejp: "Level 1"
         titlecn: "Level 1"
-      - title: "Level 2"
-        titlekr: "2단계 교육키트"
+      - titlekr: "2단계 교육키트"
         titlejp: "Level 2"
         titlecn: "Level 2"
     - title: "Bioloid"
@@ -264,30 +263,34 @@ main:
       titlejp: "Bioloid"
       titlecn: "Bioloid"
       children:
-      - title: "Entry Level"
+      - title: "Beginner Level"
         titlekr: "초급"
-        titlejp: "Entry Level"
-        titlecn: "Entry Level"
-      - title: "Advanced Level"
+        titlejp: "Beginner Level"
+        titlecn: "Beginner Level"
+        url: /edu/bioloid/beginner/
+      - title: "Comprehensive Level"
         titlekr: "종합"
-        titlejp: "Advanced Level"
-        titlecn: "Advanced Level"
-      - title: "STEM Kit"
+        titlejp: "Comprehensive Level"
+        titlecn: "Comprehensive Level"
+        url: /edu/bioloid/comprehensive/
+      - title: "ROBOTIS STEM"
         titlekr: "STEM 키트"
         titlejp: "STEM Kit"
         titlecn: "STEM Kit"
-      - title: "STEM Academy"
-        titlekr: "STEM 아카데미"
+      - titlekr: "STEM 아카데미"
         titlejp: "STEM Academy"
         titlecn: "STEM Academy"
-      - title: "Premium"
+        url: /edu/bioloid/stem/
+      - title: "ROBOTIS Premium"
         titlekr: "프리미엄"
         titlejp: "Premium"
         titlecn: "Premium"
-      - title: "GP"
-        titlekr: "GP"
-        titlejp: "GP"
-        titlecn: "GP"
+        url: /edu/bioloid/premium/
+      - title: "ROBOTIS GP"
+        titlekr: "ROBOTIS GP"
+        titlejp: "ROBOTIS GP"
+        titlecn: "ROBOTIS GP"
+        url: /edu/bioloid/gp/
     - title: "MINI"
       titlekr: "미니"
   - title: "SOFTWARE"
@@ -1324,6 +1327,663 @@ rx-64:
       - title: "Pin Assignment"
         url: /dxl/rx/rx-64/#pin-assignment
 
+#MX-12W sidebar
+mx-12w:
+  - title: "Specifications"
+    titlekr: "스펙"
+    url: /dxl/mx/mx-12w/#specifications
+    urlkr: /dxl/mx/mx-12w/#스펙
+  - title: "Performance Graph"
+    titlekr: "성능 그래프"
+    url: /dxl/mx/mx-12w/#performance-graph
+    urlkr: /dxl/mx/mx-12w/#성능-그래프
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /dxl/mx/mx-12w/#control-table
+    urlkr: /dxl/mx/mx-12w/#컨트롤-테이블
+    children:
+      - title: "Control Table, Data, Address"
+        titlekr: "컨트롤 테이블, 데이터, 주소"
+        url: /dxl/mx/mx-12w/#control-table-data-address
+        urlkr: /dxl/mx/mx-12w/#컨트롤-테이블-데이터-주소
+        children:
+          - title: "Area(EEPROM, RAM)"
+            url: /dxl/mx/mx-12w/#area-eeprom-ram
+          - title: "Size"
+            url: /dxl/mx/mx-12w/#size
+          - title: "Access"
+            url: /dxl/mx/mx-12w/#access
+          - title: "Initial Value"
+            url: /dxl/mx/mx-12w/#initial-value
+      - title: "EEPROM Area"
+        titlekr: "EEPROM 영역"
+        url: /dxl/mx/mx-12w/#control-table-of-eeprom-area
+        urlkr: /dxl/mx/mx-12w/#eeprom-영역
+      - title: "RAM Area"
+        titlekr: "RAM 영역"
+        url: /dxl/mx/mx-12w/#control-table-of-ram-area
+        urlkr: /dxl/mx/mx-12w/#ram-영역
+      - title: "Control Table Description"
+        titlekr: "컨트롤 테이블 설명"
+        url: /dxl/mx/mx-12w/#control-table-description
+        urlkr: /dxl/mx/mx-12w/#컨트롤-테이블-설명
+  - title: "How to Assemble"
+    titlekr: "조립 예시"
+    url: /dxl/mx/mx-12w/#how-to-assemble
+    urlkr: /dxl/mx/mx-12w/#조립-예시
+  - title: "Maintenance"
+    titlekr: "유지보수"
+    url: /dxl/mx/mx-12w/#maintenance
+    urlkr: /dxl/mx/mx-12w/#유지보수
+    children:
+      - title: "Horn, Bearing"
+        titlekr: "혼, 베어링"
+        url: /dxl/mx/mx-12w/#horn-and-bearing-replacement
+        urlkr: /dxl/mx/mx-12w/#혼-베어링
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /dxl/mx/mx-12w/#reference
+    urlkr: /dxl/mx/mx-12w/#참고자료
+    children:
+      - title: "Quick Start"
+        titlekr: "퀵스타트"
+        url: /dxl/mx/mx-12w/#quick-start
+        urlkr: /dxl/mx/mx-12w/#퀵스타트
+      - title: "Drawings"
+        titlekr: "도면"
+        url: /dxl/mx/mx-12w/#drawings
+        urlkr: /dxl/mx/mx-12w/#도면
+      - title: "Communication Circuit"
+        url: /dxl/mx/mx-12w/#communication-circuit
+      - title: "Pin Assignment"
+        url: /dxl/mx/mx-12w/#pin-assignment
+
+#MX-28 sidebar
+mx-28:
+  - title: "Specifications"
+    titlekr: "스펙"
+    url: /dxl/mx/mx-28/#specifications
+    urlkr: /dxl/mx/mx-28/#스펙
+    children:
+    - title: "Performance Graph"
+      titlekr: "성능 그래프"
+      url: /dxl/mx/mx-28/#performance-graph
+      urlkr: /dxl/mx/mx-28/#성능-그래프
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /dxl/mx/mx-28/#control-table
+    urlkr: /dxl/mx/mx-28/#컨트롤-테이블
+    children:
+      - title: "Control Table, Data, Address"
+        titlekr: "컨트롤 테이블, 데이터, 주소"
+        url: /dxl/mx/mx-28/#control-table-data-address
+        urlkr: /dxl/mx/mx-28/#컨트롤-테이블-데이터-주소
+        children:
+          - title: "Area(EEPROM, RAM)"
+            url: /dxl/mx/mx-28/#area-eeprom-ram
+          - title: "Size"
+            url: /dxl/mx/mx-28/#size
+          - title: "Access"
+            url: /dxl/mx/mx-28/#access
+          - title: "Initial Value"
+            url: /dxl/mx/mx-28/#initial-value
+      - title: "EEPROM Area"
+        titlekr: "EEPROM 영역"
+        url: /dxl/mx/mx-28/#control-table-of-eeprom-area
+        urlkr: /dxl/mx/mx-28/#eeprom-영역
+      - title: "RAM Area"
+        titlekr: "RAM 영역"
+        url: /dxl/mx/mx-28/#control-table-of-ram-area
+        urlkr: /dxl/mx/mx-28/#ram-영역
+      - title: "Control Table Description"
+        titlekr: "컨트롤 테이블 설명"
+        url: /dxl/mx/mx-28/#control-table-description
+        urlkr: /dxl/mx/mx-28/#컨트롤-테이블-설명
+  - title: "How to Assemble"
+    titlekr: "조립 예시"
+    url: /dxl/mx/mx-28/#how-to-assemble
+    urlkr: /dxl/mx/mx-28/#조립-예시
+  - title: "Maintenance"
+    titlekr: "유지보수"
+    url: /dxl/mx/mx-28/#maintenance
+    urlkr: /dxl/mx/mx-28/#유지보수
+    children:
+      - title: "Horn, Bearing"
+        titlekr: "혼, 베어링"
+        url: /dxl/mx/mx-28/#horn-and-bearing-replacement
+        urlkr: /dxl/mx/mx-28/#혼-베어링
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /dxl/mx/mx-28/#reference
+    urlkr: /dxl/mx/mx-28/#참고자료
+    children:
+      - title: "Quick Start"
+        titlekr: "퀵스타트"
+        url: /dxl/mx/mx-28/#quick-start
+        urlkr: /dxl/mx/mx-28/#퀵스타트
+      - title: "Drawings"
+        titlekr: "도면"
+        url: /dxl/mx/mx-28/#drawings
+        urlkr: /dxl/mx/mx-28/#도면
+      - title: "Communication Circuit"
+        url: /dxl/mx/mx-28/#communication-circuit
+      - title: "Pin Assignment"
+        url: /dxl/mx/mx-28/#pin-assignment
+
+#MX-64 sidebar
+mx-64:
+  - title: "Specifications"
+    titlekr: "스펙"
+    url: /dxl/mx/mx-64/#specifications
+    urlkr: /dxl/mx/mx-64/#스펙
+    children:
+    - title: "Performance Graph"
+      titlekr: "성능 그래프"
+      url: /dxl/mx/mx-28/#performance-graph
+      urlkr: /dxl/mx/mx-28/#성능-그래프
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /dxl/mx/mx-64/#control-table
+    urlkr: /dxl/mx/mx-64/#컨트롤-테이블
+    children:
+      - title: "Control Table, Data, Address"
+        titlekr: "컨트롤 테이블, 데이터, 주소"
+        url: /dxl/mx/mx-64/#control-table-data-address
+        urlkr: /dxl/mx/mx-64/#컨트롤-테이블-데이터-주소
+        children:
+          - title: "Area(EEPROM, RAM)"
+            url: /dxl/mx/mx-64/#area-eeprom-ram
+          - title: "Size"
+            url: /dxl/mx/mx-64/#size
+          - title: "Access"
+            url: /dxl/mx/mx-64/#access
+          - title: "Initial Value"
+            url: /dxl/mx/mx-64/#initial-value
+      - title: "EEPROM Area"
+        titlekr: "EEPROM 영역"
+        url: /dxl/mx/mx-64/#control-table-of-eeprom-area
+        urlkr: /dxl/mx/mx-64/#eeprom-영역
+      - title: "RAM Area"
+        titlekr: "RAM 영역"
+        url: /dxl/mx/mx-64/#control-table-of-ram-area
+        urlkr: /dxl/mx/mx-64/#ram-영역
+      - title: "Control Table Description"
+        titlekr: "컨트롤 테이블 설명"
+        url: /dxl/mx/mx-64/#control-table-description
+        urlkr: /dxl/mx/mx-64/#컨트롤-테이블-설명
+  - title: "How to Assemble"
+    titlekr: "조립 예시"
+    url: /dxl/mx/mx-64/#how-to-assemble
+    urlkr: /dxl/mx/mx-64/#조립-예시
+  - title: "Maintenance"
+    titlekr: "유지보수"
+    url: /dxl/mx/mx-64/#maintenance
+    urlkr: /dxl/mx/mx-64/#유지보수
+    children:
+      - title: "Horn, Bearing"
+        titlekr: "혼, 베어링"
+        url: /dxl/mx/mx-64/#horn-and-bearing-replacement
+        urlkr: /dxl/mx/mx-64/#혼-베어링
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /dxl/mx/mx-64/#reference
+    urlkr: /dxl/mx/mx-64/#참고자료
+    children:
+      - title: "Quick Start"
+        titlekr: "퀵스타트"
+        url: /dxl/mx/mx-64/#quick-start
+        urlkr: /dxl/mx/mx-64/#퀵스타트
+      - title: "Drawings"
+        titlekr: "도면"
+        url: /dxl/mx/mx-64/#drawings
+        urlkr: /dxl/mx/mx-64/#도면
+      - title: "Communication Circuit"
+        url: /dxl/mx/mx-64/#communication-circuit
+      - title: "Pin Assignment"
+        url: /dxl/mx/mx-64/#pin-assignment
+
+#MX-106 sidebar
+mx-106:
+  - title: "Specifications"
+    titlekr: "스펙"
+    url: /dxl/mx/mx-106/#specifications
+    urlkr: /dxl/mx/mx-106/#스펙
+    children:
+    - title: "Performance Graph"
+      titlekr: "성능 그래프"
+      url: /dxl/mx/mx-28/#performance-graph
+      urlkr: /dxl/mx/mx-28/#성능-그래프
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /dxl/mx/mx-106/#control-table
+    urlkr: /dxl/mx/mx-106/#컨트롤-테이블
+    children:
+      - title: "Control Table, Data, Address"
+        titlekr: "컨트롤 테이블, 데이터, 주소"
+        url: /dxl/mx/mx-106/#control-table-data-address
+        urlkr: /dxl/mx/mx-106/#컨트롤-테이블-데이터-주소
+        children:
+          - title: "Area(EEPROM, RAM)"
+            url: /dxl/mx/mx-106/#area-eeprom-ram
+          - title: "Size"
+            url: /dxl/mx/mx-106/#size
+          - title: "Access"
+            url: /dxl/mx/mx-106/#access
+          - title: "Initial Value"
+            url: /dxl/mx/mx-106/#initial-value
+      - title: "EEPROM Area"
+        titlekr: "EEPROM 영역"
+        url: /dxl/mx/mx-106/#control-table-of-eeprom-area
+        urlkr: /dxl/mx/mx-106/#eeprom-영역
+      - title: "RAM Area"
+        titlekr: "RAM 영역"
+        url: /dxl/mx/mx-106/#control-table-of-ram-area
+        urlkr: /dxl/mx/mx-106/#ram-영역
+      - title: "Control Table Description"
+        titlekr: "컨트롤 테이블 설명"
+        url: /dxl/mx/mx-106/#control-table-description
+        urlkr: /dxl/mx/mx-106/#컨트롤-테이블-설명
+  - title: "How to Assemble"
+    titlekr: "조립 예시"
+    url: /dxl/mx/mx-106/#how-to-assemble
+    urlkr: /dxl/mx/mx-106/#조립-예시
+  - title: "Maintenance"
+    titlekr: "유지보수"
+    url: /dxl/mx/mx-106/#maintenance
+    urlkr: /dxl/mx/mx-106/#유지보수
+    children:
+      - title: "Horn, Bearing"
+        titlekr: "혼, 베어링"
+        url: /dxl/mx/mx-106/#horn-and-bearing-replacement
+        urlkr: /dxl/mx/mx-106/#혼-베어링
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /dxl/mx/mx-106/#reference
+    urlkr: /dxl/mx/mx-106/#참고자료
+    children:
+      - title: "Quick Start"
+        titlekr: "퀵스타트"
+        url: /dxl/mx/mx-106/#quick-start
+        urlkr: /dxl/mx/mx-106/#퀵스타트
+      - title: "Drawings"
+        titlekr: "도면"
+        url: /dxl/mx/mx-106/#drawings
+        urlkr: /dxl/mx/mx-106/#도면
+      - title: "Communication Circuit"
+        url: /dxl/mx/mx-106/#communication-circuit
+      - title: "Pin Assignment"
+        url: /dxl/mx/mx-106/#pin-assignment
+
+#MX-28(2.0) sidebar
+mx-28-2:
+  - title: "Specifications"
+    titlekr: "스펙"
+    url: /dxl/mx/mx-28-2/#specifications
+    urlkr: /dxl/mx/mx-28-2/#스펙
+    children:
+    - title: "Performance Graph"
+      titlekr: "성능 그래프"
+      url: /dxl/mx/mx-28/#performance-graph
+      urlkr: /dxl/mx/mx-28/#성능-그래프
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /dxl/mx/mx-28-2/#control-table
+    urlkr: /dxl/mx/mx-28-2/#컨트롤-테이블
+    children:
+      - title: "Control Table, Data, Address"
+        titlekr: "컨트롤 테이블, 데이터, 주소"
+        url: /dxl/mx/mx-28-2/#control-table-data-address
+        urlkr: /dxl/mx/mx-28-2/#컨트롤-테이블-데이터-주소
+        children:
+          - title: "Area(EEPROM, RAM)"
+            url: /dxl/mx/mx-28-2/#area-eeprom-ram
+          - title: "Size"
+            url: /dxl/mx/mx-28-2/#size
+          - title: "Access"
+            url: /dxl/mx/mx-28-2/#access
+          - title: "Initial Value"
+            url: /dxl/mx/mx-28-2/#initial-value
+      - title: "EEPROM Area"
+        titlekr: "EEPROM 영역"
+        url: /dxl/mx/mx-28-2/#control-table-of-eeprom-area
+        urlkr: /dxl/mx/mx-28-2/#eeprom-영역
+      - title: "RAM Area"
+        titlekr: "RAM 영역"
+        url: /dxl/mx/mx-28-2/#control-table-of-ram-area
+        urlkr: /dxl/mx/mx-28-2/#ram-영역
+      - title: "Control Table Description"
+        titlekr: "컨트롤 테이블 설명"
+        url: /dxl/mx/mx-28-2/#control-table-description
+        urlkr: /dxl/mx/mx-28-2/#컨트롤-테이블-설명
+  - title: "How to Assemble"
+    titlekr: "조립 예시"
+    url: /dxl/mx/mx-28-2/#how-to-assemble
+    urlkr: /dxl/mx/mx-28-2/#조립-예시
+  - title: "Maintenance"
+    titlekr: "유지보수"
+    url: /dxl/mx/mx-28-2/#maintenance
+    urlkr: /dxl/mx/mx-28-2/#유지보수
+    children:
+      - title: "Horn, Bearing"
+        titlekr: "혼, 베어링"
+        url: /dxl/mx/mx-28-2/#horn-and-bearing-replacement
+        urlkr: /dxl/mx/mx-28-2/#혼-베어링
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /dxl/mx/mx-28-2/#reference
+    urlkr: /dxl/mx/mx-28-2/#참고자료
+    children:
+      - title: "Quick Start"
+        titlekr: "퀵스타트"
+        url: /dxl/mx/mx-28-2/#quick-start
+        urlkr: /dxl/mx/mx-28-2/#퀵스타트
+      - title: "Drawings"
+        titlekr: "도면"
+        url: /dxl/mx/mx-28-2/#drawings
+        urlkr: /dxl/mx/mx-28-2/#도면
+      - title: "Communication Circuit"
+        url: /dxl/mx/mx-28-2/#communication-circuit
+      - title: "Pin Assignment"
+        url: /dxl/mx/mx-28-2/#pin-assignment
+
+#MX-64(2.0) sidebar
+mx-64-2:
+  - title: "Specifications"
+    titlekr: "스펙"
+    url: /dxl/mx/mx-64-2/#specifications
+    urlkr: /dxl/mx/mx-64-2/#스펙
+    children:
+    - title: "Performance Graph"
+      titlekr: "성능 그래프"
+      url: /dxl/mx/mx-28/#performance-graph
+      urlkr: /dxl/mx/mx-28/#성능-그래프
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /dxl/mx/mx-64-2/#control-table
+    urlkr: /dxl/mx/mx-64-2/#컨트롤-테이블
+    children:
+      - title: "Control Table, Data, Address"
+        titlekr: "컨트롤 테이블, 데이터, 주소"
+        url: /dxl/mx/mx-64-2/#control-table-data-address
+        urlkr: /dxl/mx/mx-64-2/#컨트롤-테이블-데이터-주소
+        children:
+          - title: "Area(EEPROM, RAM)"
+            url: /dxl/mx/mx-64-2/#area-eeprom-ram
+          - title: "Size"
+            url: /dxl/mx/mx-64-2/#size
+          - title: "Access"
+            url: /dxl/mx/mx-64-2/#access
+          - title: "Initial Value"
+            url: /dxl/mx/mx-64-2/#initial-value
+      - title: "EEPROM Area"
+        titlekr: "EEPROM 영역"
+        url: /dxl/mx/mx-64-2/#control-table-of-eeprom-area
+        urlkr: /dxl/mx/mx-64-2/#eeprom-영역
+      - title: "RAM Area"
+        titlekr: "RAM 영역"
+        url: /dxl/mx/mx-64-2/#control-table-of-ram-area
+        urlkr: /dxl/mx/mx-64-2/#ram-영역
+      - title: "Control Table Description"
+        titlekr: "컨트롤 테이블 설명"
+        url: /dxl/mx/mx-64-2/#control-table-description
+        urlkr: /dxl/mx/mx-64-2/#컨트롤-테이블-설명
+  - title: "How to Assemble"
+    titlekr: "조립 예시"
+    url: /dxl/mx/mx-64-2/#how-to-assemble
+    urlkr: /dxl/mx/mx-64-2/#조립-예시
+  - title: "Maintenance"
+    titlekr: "유지보수"
+    url: /dxl/mx/mx-64-2/#maintenance
+    urlkr: /dxl/mx/mx-64-2/#유지보수
+    children:
+      - title: "Horn, Bearing"
+        titlekr: "혼, 베어링"
+        url: /dxl/mx/mx-64-2/#horn-and-bearing-replacement
+        urlkr: /dxl/mx/mx-64-2/#혼-베어링
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /dxl/mx/mx-64-2/#reference
+    urlkr: /dxl/mx/mx-64-2/#참고자료
+    children:
+      - title: "Quick Start"
+        titlekr: "퀵스타트"
+        url: /dxl/mx/mx-64-2/#quick-start
+        urlkr: /dxl/mx/mx-64-2/#퀵스타트
+      - title: "Drawings"
+        titlekr: "도면"
+        url: /dxl/mx/mx-64-2/#drawings
+        urlkr: /dxl/mx/mx-64-2/#도면
+      - title: "Communication Circuit"
+        url: /dxl/mx/mx-64-2/#communication-circuit
+      - title: "Pin Assignment"
+        url: /dxl/mx/mx-64-2/#pin-assignment
+
+#MX-106(2.0) sidebar
+mx-106-2:
+  - title: "Specifications"
+    titlekr: "스펙"
+    url: /dxl/mx/mx-106-2/#specifications
+    urlkr: /dxl/mx/mx-106-2/#스펙
+    children:
+    - title: "Performance Graph"
+      titlekr: "성능 그래프"
+      url: /dxl/mx/mx-28/#performance-graph
+      urlkr: /dxl/mx/mx-28/#성능-그래프
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /dxl/mx/mx-106-2/#control-table
+    urlkr: /dxl/mx/mx-106-2/#컨트롤-테이블
+    children:
+      - title: "Control Table, Data, Address"
+        titlekr: "컨트롤 테이블, 데이터, 주소"
+        url: /dxl/mx/mx-106-2/#control-table-data-address
+        urlkr: /dxl/mx/mx-106-2/#컨트롤-테이블-데이터-주소
+        children:
+          - title: "Area(EEPROM, RAM)"
+            url: /dxl/mx/mx-106-2/#area-eeprom-ram
+          - title: "Size"
+            url: /dxl/mx/mx-106-2/#size
+          - title: "Access"
+            url: /dxl/mx/mx-106-2/#access
+          - title: "Initial Value"
+            url: /dxl/mx/mx-106-2/#initial-value
+      - title: "EEPROM Area"
+        titlekr: "EEPROM 영역"
+        url: /dxl/mx/mx-106-2/#control-table-of-eeprom-area
+        urlkr: /dxl/mx/mx-106-2/#eeprom-영역
+      - title: "RAM Area"
+        titlekr: "RAM 영역"
+        url: /dxl/mx/mx-106-2/#control-table-of-ram-area
+        urlkr: /dxl/mx/mx-106-2/#ram-영역
+      - title: "Control Table Description"
+        titlekr: "컨트롤 테이블 설명"
+        url: /dxl/mx/mx-106-2/#control-table-description
+        urlkr: /dxl/mx/mx-106-2/#컨트롤-테이블-설명
+  - title: "How to Assemble"
+    titlekr: "조립 예시"
+    url: /dxl/mx/mx-106-2/#how-to-assemble
+    urlkr: /dxl/mx/mx-106-2/#조립-예시
+  - title: "Maintenance"
+    titlekr: "유지보수"
+    url: /dxl/mx/mx-106-2/#maintenance
+    urlkr: /dxl/mx/mx-106-2/#유지보수
+    children:
+      - title: "Horn, Bearing"
+        titlekr: "혼, 베어링"
+        url: /dxl/mx/mx-106-2/#horn-and-bearing-replacement
+        urlkr: /dxl/mx/mx-106-2/#혼-베어링
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /dxl/mx/mx-106-2/#reference
+    urlkr: /dxl/mx/mx-106-2/#참고자료
+    children:
+      - title: "Quick Start"
+        titlekr: "퀵스타트"
+        url: /dxl/mx/mx-106-2/#quick-start
+        urlkr: /dxl/mx/mx-106-2/#퀵스타트
+      - title: "Drawings"
+        titlekr: "도면"
+        url: /dxl/mx/mx-106-2/#drawings
+        urlkr: /dxl/mx/mx-106-2/#도면
+      - title: "Communication Circuit"
+        url: /dxl/mx/mx-106-2/#communication-circuit
+      - title: "Pin Assignment"
+        url: /dxl/mx/mx-106-2/#pin-assignment
+
+#XH430-V210 sidebar
+xh430-v210:
+  - title: "Specifications"
+    titlekr: "스펙"
+    url: /dxl/x/xh430-v210/#specifications
+    urlkr: /dxl/x/xh430-v210/#스펙
+    children:
+      - title: "Performance Graph"
+        titlekr: "성능 그래프"
+        url: /dxl/x/xh430-v210/#performance-graph
+        urlkr: /dxl/x/xh430-v210/#성능-그래프
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /dxl/x/xh430-v210/#control-table
+    urlkr: /dxl/x/xh430-v210/#컨트롤-테이블
+    children:
+      - title: "Control Table, Data, Address"
+        titlekr: "컨트롤 테이블, 데이터, 주소"
+        url: /dxl/x/xh430-v210/#control-table-data-address
+        urlkr: /dxl/x/xh430-v210/#컨트롤-테이블-데이터-주소
+        children:
+          - title: "Area(EEPROM, RAM)"
+            url: /dxl/x/xh430-v210/#area-eeprom-ram
+          - title: "Size"
+            url: /dxl/x/xh430-v210/#size
+          - title: "Access"
+            url: /dxl/x/xh430-v210/#access
+          - title: "Initial Value"
+            url: /dxl/x/xh430-v210/#initial-value
+      - title: "EEPROM Area"
+        titlekr: "EEPROM 영역"
+        url: /dxl/x/xh430-v210/#control-table-of-eeprom-area
+        urlkr: /dxl/x/xh430-v210/#eeprom-영역
+      - title: "RAM Area"
+        titlekr: "RAM 영역"
+        url: /dxl/x/xh430-v210/#control-table-of-ram-area
+        urlkr: /dxl/x/xh430-v210/#ram-영역
+      - title: "Control Table Description"
+        titlekr: "컨트롤 테이블 설명"
+        url: /dxl/x/xh430-v210/#control-table-description
+        urlkr: /dxl/x/xh430-v210/#컨트롤-테이블-설명
+  - title: "How to Assemble"
+    titlekr: "조립 예시"
+    url: /dxl/x/xh430-v210/#how-to-assemble
+    urlkr: /dxl/x/xh430-v210/#조립-예시
+    children:
+      - title: "Wiring through Back Case"
+        titlekr: "배선 예시"
+        url: /dxl/x/xh430-v210/#wiring-through-back-case
+        urlkr: /dxl/x/xh430-v210/#배선-예시
+      - title: "Option Frame Assembly"
+        titlekr: "옵션프레임 조립"
+        url: /dxl/x/xh430-v210/#option-frame-assembly
+        urlkr: /dxl/x/xh430-v210/#옵션프레임-조립
+  - title: "Maintenance"
+    titlekr: "유지보수"
+    url: /dxl/x/xh430-v210/#maintenance
+    urlkr: /dxl/x/xh430-v210/#유지보수
+    children:
+      - title: "Horn, Bearing"
+        titlekr: "혼, 베어링"
+        url: /dxl/x/xh430-v210/#horn-and-bearing-replacement
+        urlkr: /dxl/x/xh430-v210/#혼-베어링
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /dxl/x/xh430-v210/#reference
+    urlkr: /dxl/x/xh430-v210/#참고자료
+    children:
+      - title: "Quick Start"
+        titlekr: "퀵스타트"
+        url: /dxl/x/xh430-v210/#quick-start
+        urlkr: /dxl/x/xh430-v210/#퀵스타트
+      - title: "Drawings"
+        titlekr: "도면"
+        url: /dxl/x/xh430-v210/#drawings
+        urlkr: /dxl/x/xh430-v210/#도면
+
+#XH430-V350 sidebar
+xh430-v350:
+  - title: "Specifications"
+    titlekr: "스펙"
+    url: /dxl/x/xh430-v350/#specifications
+    urlkr: /dxl/x/xh430-v350/#스펙
+    children:
+      - title: "Performance Graph"
+        titlekr: "성능 그래프"
+        url: /dxl/x/xh430-v350/#performance-graph
+        urlkr: /dxl/x/xh430-v350/#성능-그래프
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /dxl/x/xh430-v350/#control-table
+    urlkr: /dxl/x/xh430-v350/#컨트롤-테이블
+    children:
+      - title: "Control Table, Data, Address"
+        titlekr: "컨트롤 테이블, 데이터, 주소"
+        url: /dxl/x/xh430-v350/#control-table-data-address
+        urlkr: /dxl/x/xh430-v350/#컨트롤-테이블-데이터-주소
+        children:
+          - title: "Area(EEPROM, RAM)"
+            url: /dxl/x/xh430-v350/#area-eeprom-ram
+          - title: "Size"
+            url: /dxl/x/xh430-v350/#size
+          - title: "Access"
+            url: /dxl/x/xh430-v350/#access
+          - title: "Initial Value"
+            url: /dxl/x/xh430-v350/#initial-value
+      - title: "EEPROM Area"
+        titlekr: "EEPROM 영역"
+        url: /dxl/x/xh430-v350/#control-table-of-eeprom-area
+        urlkr: /dxl/x/xh430-v350/#eeprom-영역
+      - title: "RAM Area"
+        titlekr: "RAM 영역"
+        url: /dxl/x/xh430-v350/#control-table-of-ram-area
+        urlkr: /dxl/x/xh430-v350/#ram-영역
+      - title: "Control Table Description"
+        titlekr: "컨트롤 테이블 설명"
+        url: /dxl/x/xh430-v350/#control-table-description
+        urlkr: /dxl/x/xh430-v350/#컨트롤-테이블-설명
+  - title: "How to Assemble"
+    titlekr: "조립 예시"
+    url: /dxl/x/xh430-v350/#how-to-assemble
+    urlkr: /dxl/x/xh430-v350/#조립-예시
+    children:
+      - title: "Wiring through Back Case"
+        titlekr: "배선 예시"
+        url: /dxl/x/xh430-v350/#wiring-through-back-case
+        urlkr: /dxl/x/xh430-v350/#배선-예시
+      - title: "Option Frame Assembly"
+        titlekr: "옵션프레임 조립"
+        url: /dxl/x/xh430-v350/#option-frame-assembly
+        urlkr: /dxl/x/xh430-v350/#옵션프레임-조립
+  - title: "Maintenance"
+    titlekr: "유지보수"
+    url: /dxl/x/xh430-v350/#maintenance
+    urlkr: /dxl/x/xh430-v350/#유지보수
+    children:
+      - title: "Horn, Bearing"
+        titlekr: "혼, 베어링"
+        url: /dxl/x/xh430-v350/#horn-and-bearing-replacement
+        urlkr: /dxl/x/xh430-v350/#혼-베어링
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /dxl/x/xh430-v350/#reference
+    urlkr: /dxl/x/xh430-v350/#참고자료
+    children:
+      - title: "Quick Start"
+        titlekr: "퀵스타트"
+        url: /dxl/x/xh430-v350/#quick-start
+        urlkr: /dxl/x/xh430-v350/#퀵스타트
+      - title: "Drawings"
+        titlekr: "도면"
+        url: /dxl/x/xh430-v350/#drawings
+        urlkr: /dxl/x/xh430-v350/#도면
+
 #XH430-W210 sidebar
 xh430-w210:
   - title: "Specifications"
@@ -1401,43 +2061,1275 @@ xh430-w210:
         url: /dxl/x/xh430-w210/#drawings
         urlkr: /dxl/x/xh430-w210/#도면
 
+#XH430-W350 sidebar
+xh430-w350:
+  - title: "Specifications"
+    titlekr: "스펙"
+    url: /dxl/x/xh430-w350/#specifications
+    urlkr: /dxl/x/xh430-w350/#스펙
+    children:
+      - title: "Performance Graph"
+        titlekr: "성능 그래프"
+        url: /dxl/x/xh430-w350/#performance-graph
+        urlkr: /dxl/x/xh430-w350/#성능-그래프
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /dxl/x/xh430-w350/#control-table
+    urlkr: /dxl/x/xh430-w350/#컨트롤-테이블
+    children:
+      - title: "Control Table, Data, Address"
+        titlekr: "컨트롤 테이블, 데이터, 주소"
+        url: /dxl/x/xh430-w350/#control-table-data-address
+        urlkr: /dxl/x/xh430-w350/#컨트롤-테이블-데이터-주소
+        children:
+          - title: "Area(EEPROM, RAM)"
+            url: /dxl/x/xh430-w350/#area-eeprom-ram
+          - title: "Size"
+            url: /dxl/x/xh430-w350/#size
+          - title: "Access"
+            url: /dxl/x/xh430-w350/#access
+          - title: "Initial Value"
+            url: /dxl/x/xh430-w350/#initial-value
+      - title: "EEPROM Area"
+        titlekr: "EEPROM 영역"
+        url: /dxl/x/xh430-w350/#control-table-of-eeprom-area
+        urlkr: /dxl/x/xh430-w350/#eeprom-영역
+      - title: "RAM Area"
+        titlekr: "RAM 영역"
+        url: /dxl/x/xh430-w350/#control-table-of-ram-area
+        urlkr: /dxl/x/xh430-w350/#ram-영역
+      - title: "Control Table Description"
+        titlekr: "컨트롤 테이블 설명"
+        url: /dxl/x/xh430-w350/#control-table-description
+        urlkr: /dxl/x/xh430-w350/#컨트롤-테이블-설명
+  - title: "How to Assemble"
+    titlekr: "조립 예시"
+    url: /dxl/x/xh430-w350/#how-to-assemble
+    urlkr: /dxl/x/xh430-w350/#조립-예시
+    children:
+      - title: "Wiring through Back Case"
+        titlekr: "배선 예시"
+        url: /dxl/x/xh430-w350/#wiring-through-back-case
+        urlkr: /dxl/x/xh430-w350/#배선-예시
+      - title: "Option Frame Assembly"
+        titlekr: "옵션프레임 조립"
+        url: /dxl/x/xh430-w350/#option-frame-assembly
+        urlkr: /dxl/x/xh430-w350/#옵션프레임-조립
+  - title: "Maintenance"
+    titlekr: "유지보수"
+    url: /dxl/x/xh430-w350/#maintenance
+    urlkr: /dxl/x/xh430-w350/#유지보수
+    children:
+      - title: "Horn, Bearing"
+        titlekr: "혼, 베어링"
+        url: /dxl/x/xh430-w350/#horn-and-bearing-replacement
+        urlkr: /dxl/x/xh430-w350/#혼-베어링
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /dxl/x/xh430-w350/#reference
+    urlkr: /dxl/x/xh430-w350/#참고자료
+    children:
+      - title: "Quick Start"
+        titlekr: "퀵스타트"
+        url: /dxl/x/xh430-w350/#quick-start
+        urlkr: /dxl/x/xh430-w350/#퀵스타트
+      - title: "Drawings"
+        titlekr: "도면"
+        url: /dxl/x/xh430-w350/#drawings
+        urlkr: /dxl/x/xh430-w350/#도면
+
+#XL320 sidebar
+xl320:
+  - title: "Specifications"
+    titlekr: "스펙"
+    url: /dxl/x/xl320/#specifications
+    urlkr: /dxl/x/xl320/#스펙
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /dxl/x/xl320/#control-table
+    urlkr: /dxl/x/xl320/#컨트롤-테이블
+    children:
+      - title: "Control Table, Data, Address"
+        titlekr: "컨트롤 테이블, 데이터, 주소"
+        url: /dxl/x/xl320/#control-table-data-address
+        urlkr: /dxl/x/xl320/#컨트롤-테이블-데이터-주소
+        children:
+          - title: "Area(EEPROM, RAM)"
+            url: /dxl/x/xl320/#area-eeprom-ram
+          - title: "Size"
+            url: /dxl/x/xl320/#size
+          - title: "Access"
+            url: /dxl/x/xl320/#access
+          - title: "Initial Value"
+            url: /dxl/x/xl320/#initial-value
+      - title: "EEPROM Area"
+        titlekr: "EEPROM 영역"
+        url: /dxl/x/xl320/#control-table-of-eeprom-area
+        urlkr: /dxl/x/xl320/#eeprom-영역
+      - title: "RAM Area"
+        titlekr: "RAM 영역"
+        url: /dxl/x/xl320/#control-table-of-ram-area
+        urlkr: /dxl/x/xl320/#ram-영역
+      - title: "Control Table Description"
+        titlekr: "컨트롤 테이블 설명"
+        url: /dxl/x/xl320/#control-table-description
+        urlkr: /dxl/x/xl320/#컨트롤-테이블-설명
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /dxl/x/xl320/#reference
+    urlkr: /dxl/x/xl320/#참고자료
+    children:
+      - title: "Drawings"
+        titlekr: "도면"
+        url: /dxl/x/xl320/#drawings
+        urlkr: /dxl/x/xl320/#도면
+
+#XL430-W250 sidebar
+xl430-w250:
+  - title: "Specifications"
+    titlekr: "스펙"
+    url: /dxl/x/xl430-w250/#specifications
+    urlkr: /dxl/x/xl430-w250/#스펙
+    children:
+      - title: "Performance Graph"
+        titlekr: "성능 그래프"
+        url: /dxl/x/xl430-w250/#performance-graph
+        urlkr: /dxl/x/xl430-w250/#성능-그래프
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /dxl/x/xl430-w250/#control-table
+    urlkr: /dxl/x/xl430-w250/#컨트롤-테이블
+    children:
+      - title: "Control Table, Data, Address"
+        titlekr: "컨트롤 테이블, 데이터, 주소"
+        url: /dxl/x/xl430-w250/#control-table-data-address
+        urlkr: /dxl/x/xl430-w250/#컨트롤-테이블-데이터-주소
+        children:
+          - title: "Area(EEPROM, RAM)"
+            url: /dxl/x/xl430-w250/#area-eeprom-ram
+          - title: "Size"
+            url: /dxl/x/xl430-w250/#size
+          - title: "Access"
+            url: /dxl/x/xl430-w250/#access
+          - title: "Initial Value"
+            url: /dxl/x/xl430-w250/#initial-value
+      - title: "EEPROM Area"
+        titlekr: "EEPROM 영역"
+        url: /dxl/x/xl430-w250/#control-table-of-eeprom-area
+        urlkr: /dxl/x/xl430-w250/#eeprom-영역
+      - title: "RAM Area"
+        titlekr: "RAM 영역"
+        url: /dxl/x/xl430-w250/#control-table-of-ram-area
+        urlkr: /dxl/x/xl430-w250/#ram-영역
+      - title: "Control Table Description"
+        titlekr: "컨트롤 테이블 설명"
+        url: /dxl/x/xl430-w250/#control-table-description
+        urlkr: /dxl/x/xl430-w250/#컨트롤-테이블-설명
+  - title: "How to Assemble"
+    titlekr: "조립 예시"
+    url: /dxl/x/xl430-w250/#how-to-assemble
+    urlkr: /dxl/x/xl430-w250/#조립-예시
+    children:
+      - title: "Wiring through Back Case"
+        titlekr: "배선 예시"
+        url: /dxl/x/xl430-w250/#wiring-through-back-case
+        urlkr: /dxl/x/xl430-w250/#배선-예시
+      - title: "Option Frame Assembly"
+        titlekr: "옵션프레임 조립"
+        url: /dxl/x/xl430-w250/#option-frame-assembly
+        urlkr: /dxl/x/xl430-w250/#옵션프레임-조립
+  - title: "Maintenance"
+    titlekr: "유지보수"
+    url: /dxl/x/xl430-w250/#maintenance
+    urlkr: /dxl/x/xl430-w250/#유지보수
+    children:
+      - title: "Horn, Bearing"
+        titlekr: "혼, 베어링"
+        url: /dxl/x/xl430-w250/#horn-and-bearing-replacement
+        urlkr: /dxl/x/xl430-w250/#혼-베어링
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /dxl/x/xl430-w250/#reference
+    urlkr: /dxl/x/xl430-w250/#참고자료
+    children:
+      - title: "Quick Start"
+        titlekr: "퀵스타트"
+        url: /dxl/x/xl430-w250/#quick-start
+        urlkr: /dxl/x/xl430-w250/#퀵스타트
+      - title: "Drawings"
+        titlekr: "도면"
+        url: /dxl/x/xl430-w250/#drawings
+        urlkr: /dxl/x/xl430-w250/#도면
+
+#XM430-W210 sidebar
+xm430-w210:
+  - title: "Specifications"
+    titlekr: "스펙"
+    url: /dxl/x/xm430-w210/#specifications
+    urlkr: /dxl/x/xm430-w210/#스펙
+    children:
+      - title: "Performance Graph"
+        titlekr: "성능 그래프"
+        url: /dxl/x/xm430-w210/#performance-graph
+        urlkr: /dxl/x/xm430-w210/#성능-그래프
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /dxl/x/xm430-w210/#control-table
+    urlkr: /dxl/x/xm430-w210/#컨트롤-테이블
+    children:
+      - title: "Control Table, Data, Address"
+        titlekr: "컨트롤 테이블, 데이터, 주소"
+        url: /dxl/x/xm430-w210/#control-table-data-address
+        urlkr: /dxl/x/xm430-w210/#컨트롤-테이블-데이터-주소
+        children:
+          - title: "Area(EEPROM, RAM)"
+            url: /dxl/x/xm430-w210/#area-eeprom-ram
+          - title: "Size"
+            url: /dxl/x/xm430-w210/#size
+          - title: "Access"
+            url: /dxl/x/xm430-w210/#access
+          - title: "Initial Value"
+            url: /dxl/x/xm430-w210/#initial-value
+      - title: "EEPROM Area"
+        titlekr: "EEPROM 영역"
+        url: /dxl/x/xm430-w210/#control-table-of-eeprom-area
+        urlkr: /dxl/x/xm430-w210/#eeprom-영역
+      - title: "RAM Area"
+        titlekr: "RAM 영역"
+        url: /dxl/x/xm430-w210/#control-table-of-ram-area
+        urlkr: /dxl/x/xm430-w210/#ram-영역
+      - title: "Control Table Description"
+        titlekr: "컨트롤 테이블 설명"
+        url: /dxl/x/xm430-w210/#control-table-description
+        urlkr: /dxl/x/xm430-w210/#컨트롤-테이블-설명
+  - title: "How to Assemble"
+    titlekr: "조립 예시"
+    url: /dxl/x/xm430-w210/#how-to-assemble
+    urlkr: /dxl/x/xm430-w210/#조립-예시
+    children:
+      - title: "Wiring through Back Case"
+        titlekr: "배선 예시"
+        url: /dxl/x/xm430-w210/#wiring-through-back-case
+        urlkr: /dxl/x/xm430-w210/#배선-예시
+      - title: "Option Frame Assembly"
+        titlekr: "옵션프레임 조립"
+        url: /dxl/x/xm430-w210/#option-frame-assembly
+        urlkr: /dxl/x/xm430-w210/#옵션프레임-조립
+  - title: "Maintenance"
+    titlekr: "유지보수"
+    url: /dxl/x/xm430-w210/#maintenance
+    urlkr: /dxl/x/xm430-w210/#유지보수
+    children:
+      - title: "Horn, Bearing"
+        titlekr: "혼, 베어링"
+        url: /dxl/x/xm430-w210/#horn-and-bearing-replacement
+        urlkr: /dxl/x/xm430-w210/#혼-베어링
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /dxl/x/xm430-w210/#reference
+    urlkr: /dxl/x/xm430-w210/#참고자료
+    children:
+      - title: "Quick Start"
+        titlekr: "퀵스타트"
+        url: /dxl/x/xm430-w210/#quick-start
+        urlkr: /dxl/x/xm430-w210/#퀵스타트
+      - title: "Drawings"
+        titlekr: "도면"
+        url: /dxl/x/xm430-w210/#drawings
+        urlkr: /dxl/x/xm430-w210/#도면
+
+#XM430-W350 sidebar
+xm430-w350:
+  - title: "Specifications"
+    titlekr: "스펙"
+    url: /dxl/x/xm430-w350/#specifications
+    urlkr: /dxl/x/xm430-w350/#스펙
+    children:
+      - title: "Performance Graph"
+        titlekr: "성능 그래프"
+        url: /dxl/x/xm430-w350/#performance-graph
+        urlkr: /dxl/x/xm430-w350/#성능-그래프
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /dxl/x/xm430-w350/#control-table
+    urlkr: /dxl/x/xm430-w350/#컨트롤-테이블
+    children:
+      - title: "Control Table, Data, Address"
+        titlekr: "컨트롤 테이블, 데이터, 주소"
+        url: /dxl/x/xm430-w350/#control-table-data-address
+        urlkr: /dxl/x/xm430-w350/#컨트롤-테이블-데이터-주소
+        children:
+          - title: "Area(EEPROM, RAM)"
+            url: /dxl/x/xm430-w350/#area-eeprom-ram
+          - title: "Size"
+            url: /dxl/x/xm430-w350/#size
+          - title: "Access"
+            url: /dxl/x/xm430-w350/#access
+          - title: "Initial Value"
+            url: /dxl/x/xm430-w350/#initial-value
+      - title: "EEPROM Area"
+        titlekr: "EEPROM 영역"
+        url: /dxl/x/xm430-w350/#control-table-of-eeprom-area
+        urlkr: /dxl/x/xm430-w350/#eeprom-영역
+      - title: "RAM Area"
+        titlekr: "RAM 영역"
+        url: /dxl/x/xm430-w350/#control-table-of-ram-area
+        urlkr: /dxl/x/xm430-w350/#ram-영역
+      - title: "Control Table Description"
+        titlekr: "컨트롤 테이블 설명"
+        url: /dxl/x/xm430-w350/#control-table-description
+        urlkr: /dxl/x/xm430-w350/#컨트롤-테이블-설명
+  - title: "How to Assemble"
+    titlekr: "조립 예시"
+    url: /dxl/x/xm430-w350/#how-to-assemble
+    urlkr: /dxl/x/xm430-w350/#조립-예시
+    children:
+      - title: "Wiring through Back Case"
+        titlekr: "배선 예시"
+        url: /dxl/x/xm430-w350/#wiring-through-back-case
+        urlkr: /dxl/x/xm430-w350/#배선-예시
+      - title: "Option Frame Assembly"
+        titlekr: "옵션프레임 조립"
+        url: /dxl/x/xm430-w350/#option-frame-assembly
+        urlkr: /dxl/x/xm430-w350/#옵션프레임-조립
+  - title: "Maintenance"
+    titlekr: "유지보수"
+    url: /dxl/x/xm430-w350/#maintenance
+    urlkr: /dxl/x/xm430-w350/#유지보수
+    children:
+      - title: "Horn, Bearing"
+        titlekr: "혼, 베어링"
+        url: /dxl/x/xm430-w350/#horn-and-bearing-replacement
+        urlkr: /dxl/x/xm430-w350/#혼-베어링
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /dxl/x/xm430-w350/#reference
+    urlkr: /dxl/x/xm430-w350/#참고자료
+    children:
+      - title: "Quick Start"
+        titlekr: "퀵스타트"
+        url: /dxl/x/xm430-w350/#quick-start
+        urlkr: /dxl/x/xm430-w350/#퀵스타트
+      - title: "Drawings"
+        titlekr: "도면"
+        url: /dxl/x/xm430-w350/#drawings
+        urlkr: /dxl/x/xm430-w350/#도면
+
+#H42-20-S300-R sidebar
+h42-20-s300-r:
+  - title: "Specifications"
+    titlekr: "스펙"
+    url: /dxl/pro/h42-20-s300-r/#specifications
+    urlkr: /dxl/pro/h42-20-s300-r/#스펙
+    children:
+      - title: "Performance Graph"
+        titlekr: "성능 그래프"
+        url: /dxl/pro/h42-20-s300-r/#performance-graph
+        urlkr: /dxl/pro/h42-20-s300-r/#성능-그래프
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /dxl/pro/h42-20-s300-r/#control-table
+    urlkr: /dxl/pro/h42-20-s300-r/#컨트롤-테이블
+    children:
+      - title: "Control Table, Data, Address"
+        titlekr: "컨트롤 테이블, 데이터, 주소"
+        url: /dxl/pro/h42-20-s300-r/#control-table-data-address
+        urlkr: /dxl/pro/h42-20-s300-r/#컨트롤-테이블-데이터-주소
+        children:
+          - title: "Area(EEPROM, RAM)"
+            url: /dxl/pro/h42-20-s300-r/#area-eeprom-ram
+          - title: "Size"
+            url: /dxl/pro/h42-20-s300-r/#size
+          - title: "Access"
+            url: /dxl/pro/h42-20-s300-r/#access
+          - title: "Initial Value"
+            url: /dxl/pro/h42-20-s300-r/#initial-value
+      - title: "EEPROM Area"
+        titlekr: "EEPROM 영역"
+        url: /dxl/pro/h42-20-s300-r/#control-table-of-eeprom-area
+        urlkr: /dxl/pro/h42-20-s300-r/#eeprom-영역
+      - title: "RAM Area"
+        titlekr: "RAM 영역"
+        url: /dxl/pro/h42-20-s300-r/#control-table-of-ram-area
+        urlkr: /dxl/pro/h42-20-s300-r/#ram-영역
+      - title: "Control Table Description"
+        titlekr: "컨트롤 테이블 설명"
+        url: /dxl/pro/h42-20-s300-r/#control-table-description
+        urlkr: /dxl/pro/h42-20-s300-r/#컨트롤-테이블-설명
+  - title: "How to Assemble"
+    titlekr: "조립 예시"
+    url: /dxl/pro/h42-20-s300-r/#how-to-assemble
+    urlkr: /dxl/pro/h42-20-s300-r/#조립-예시
+    children:
+      - title: "Option Frame Assembly"
+        titlekr: "옵션프레임 조립"
+        url: /dxl/pro/h42-20-s300-r/#option-frame-assembly
+        urlkr: /dxl/pro/h42-20-s300-r/#옵션프레임-조립
+  - title: "Maintenance"
+    titlekr: "유지보수"
+    url: /dxl/pro/h42-20-s300-r/#maintenance
+    urlkr: /dxl/pro/h42-20-s300-r/#유지보수
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /dxl/pro/h42-20-s300-r/#reference
+    urlkr: /dxl/pro/h42-20-s300-r/#참고자료
+    children:
+      - title: "Quick Start"
+        titlekr: "퀵스타트"
+        url: /dxl/pro/h42-20-s300-r/#quick-start
+        urlkr: /dxl/pro/h42-20-s300-r/#퀵스타트
+      - title: "Drawings"
+        titlekr: "도면"
+        url: /dxl/pro/h42-20-s300-r/#drawings
+        urlkr: /dxl/pro/h42-20-s300-r/#도면
+
+#H54-100-S500-R sidebar
+h54-100-s500-r:
+  - title: "Specifications"
+    titlekr: "스펙"
+    url: /dxl/pro/h54-100-s500-r/#specifications
+    urlkr: /dxl/pro/h54-100-s500-r/#스펙
+    children:
+      - title: "Performance Graph"
+        titlekr: "성능 그래프"
+        url: /dxl/pro/h54-100-s500-r/#performance-graph
+        urlkr: /dxl/pro/h54-100-s500-r/#성능-그래프
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /dxl/pro/h54-100-s500-r/#control-table
+    urlkr: /dxl/pro/h54-100-s500-r/#컨트롤-테이블
+    children:
+      - title: "Control Table, Data, Address"
+        titlekr: "컨트롤 테이블, 데이터, 주소"
+        url: /dxl/pro/h54-100-s500-r/#control-table-data-address
+        urlkr: /dxl/pro/h54-100-s500-r/#컨트롤-테이블-데이터-주소
+        children:
+          - title: "Area(EEPROM, RAM)"
+            url: /dxl/pro/h54-100-s500-r/#area-eeprom-ram
+          - title: "Size"
+            url: /dxl/pro/h54-100-s500-r/#size
+          - title: "Access"
+            url: /dxl/pro/h54-100-s500-r/#access
+          - title: "Initial Value"
+            url: /dxl/pro/h54-100-s500-r/#initial-value
+      - title: "EEPROM Area"
+        titlekr: "EEPROM 영역"
+        url: /dxl/pro/h54-100-s500-r/#control-table-of-eeprom-area
+        urlkr: /dxl/pro/h54-100-s500-r/#eeprom-영역
+      - title: "RAM Area"
+        titlekr: "RAM 영역"
+        url: /dxl/pro/h54-100-s500-r/#control-table-of-ram-area
+        urlkr: /dxl/pro/h54-100-s500-r/#ram-영역
+      - title: "Control Table Description"
+        titlekr: "컨트롤 테이블 설명"
+        url: /dxl/pro/h54-100-s500-r/#control-table-description
+        urlkr: /dxl/pro/h54-100-s500-r/#컨트롤-테이블-설명
+  - title: "How to Assemble"
+    titlekr: "조립 예시"
+    url: /dxl/pro/h54-100-s500-r/#how-to-assemble
+    urlkr: /dxl/pro/h54-100-s500-r/#조립-예시
+    children:
+      - title: "Option Frame Assembly"
+        titlekr: "옵션프레임 조립"
+        url: /dxl/pro/h54-100-s500-r/#option-frame-assembly
+        urlkr: /dxl/pro/h54-100-s500-r/#옵션프레임-조립
+  - title: "Maintenance"
+    titlekr: "유지보수"
+    url: /dxl/pro/h54-100-s500-r/#maintenance
+    urlkr: /dxl/pro/h54-100-s500-r/#유지보수
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /dxl/pro/h54-100-s500-r/#reference
+    urlkr: /dxl/pro/h54-100-s500-r/#참고자료
+    children:
+      - title: "Quick Start"
+        titlekr: "퀵스타트"
+        url: /dxl/pro/h54-100-s500-r/#quick-start
+        urlkr: /dxl/pro/h54-100-s500-r/#퀵스타트
+      - title: "Drawings"
+        titlekr: "도면"
+        url: /dxl/pro/h54-100-s500-r/#drawings
+        urlkr: /dxl/pro/h54-100-s500-r/#도면
+
+#H54-200-S500-R sidebar
+h54-200-s500-r:
+  - title: "Specifications"
+    titlekr: "스펙"
+    url: /dxl/pro/h54-200-s500-r/#specifications
+    urlkr: /dxl/pro/h54-200-s500-r/#스펙
+    children:
+      - title: "Performance Graph"
+        titlekr: "성능 그래프"
+        url: /dxl/pro/h54-200-s500-r/#performance-graph
+        urlkr: /dxl/pro/h54-200-s500-r/#성능-그래프
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /dxl/pro/h54-200-s500-r/#control-table
+    urlkr: /dxl/pro/h54-200-s500-r/#컨트롤-테이블
+    children:
+      - title: "Control Table, Data, Address"
+        titlekr: "컨트롤 테이블, 데이터, 주소"
+        url: /dxl/pro/h54-200-s500-r/#control-table-data-address
+        urlkr: /dxl/pro/h54-200-s500-r/#컨트롤-테이블-데이터-주소
+        children:
+          - title: "Area(EEPROM, RAM)"
+            url: /dxl/pro/h54-200-s500-r/#area-eeprom-ram
+          - title: "Size"
+            url: /dxl/pro/h54-200-s500-r/#size
+          - title: "Access"
+            url: /dxl/pro/h54-200-s500-r/#access
+          - title: "Initial Value"
+            url: /dxl/pro/h54-200-s500-r/#initial-value
+      - title: "EEPROM Area"
+        titlekr: "EEPROM 영역"
+        url: /dxl/pro/h54-200-s500-r/#control-table-of-eeprom-area
+        urlkr: /dxl/pro/h54-200-s500-r/#eeprom-영역
+      - title: "RAM Area"
+        titlekr: "RAM 영역"
+        url: /dxl/pro/h54-200-s500-r/#control-table-of-ram-area
+        urlkr: /dxl/pro/h54-200-s500-r/#ram-영역
+      - title: "Control Table Description"
+        titlekr: "컨트롤 테이블 설명"
+        url: /dxl/pro/h54-200-s500-r/#control-table-description
+        urlkr: /dxl/pro/h54-200-s500-r/#컨트롤-테이블-설명
+  - title: "How to Assemble"
+    titlekr: "조립 예시"
+    url: /dxl/pro/h54-200-s500-r/#how-to-assemble
+    urlkr: /dxl/pro/h54-200-s500-r/#조립-예시
+    children:
+      - title: "Option Frame Assembly"
+        titlekr: "옵션프레임 조립"
+        url: /dxl/pro/h54-200-s500-r/#option-frame-assembly
+        urlkr: /dxl/pro/h54-200-s500-r/#옵션프레임-조립
+  - title: "Maintenance"
+    titlekr: "유지보수"
+    url: /dxl/pro/h54-200-s500-r/#maintenance
+    urlkr: /dxl/pro/h54-200-s500-r/#유지보수
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /dxl/pro/h54-200-s500-r/#reference
+    urlkr: /dxl/pro/h54-200-s500-r/#참고자료
+    children:
+      - title: "Quick Start"
+        titlekr: "퀵스타트"
+        url: /dxl/pro/h54-200-s500-r/#quick-start
+        urlkr: /dxl/pro/h54-200-s500-r/#퀵스타트
+      - title: "Drawings"
+        titlekr: "도면"
+        url: /dxl/pro/h54-200-s500-r/#drawings
+        urlkr: /dxl/pro/h54-200-s500-r/#도면
+
+#L42-10-S300-R sidebar
+l42-10-s300-r:
+  - title: "Specifications"
+    titlekr: "스펙"
+    url: /dxl/pro/l42-10-s300-r/#specifications
+    urlkr: /dxl/pro/l42-10-s300-r/#스펙
+    children:
+      - title: "Performance Graph"
+        titlekr: "성능 그래프"
+        url: /dxl/pro/l42-10-s300-r/#performance-graph
+        urlkr: /dxl/pro/l42-10-s300-r/#성능-그래프
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /dxl/pro/l42-10-s300-r/#control-table
+    urlkr: /dxl/pro/l42-10-s300-r/#컨트롤-테이블
+    children:
+      - title: "Control Table, Data, Address"
+        titlekr: "컨트롤 테이블, 데이터, 주소"
+        url: /dxl/pro/l42-10-s300-r/#control-table-data-address
+        urlkr: /dxl/pro/l42-10-s300-r/#컨트롤-테이블-데이터-주소
+        children:
+          - title: "Area(EEPROM, RAM)"
+            url: /dxl/pro/l42-10-s300-r/#area-eeprom-ram
+          - title: "Size"
+            url: /dxl/pro/l42-10-s300-r/#size
+          - title: "Access"
+            url: /dxl/pro/l42-10-s300-r/#access
+          - title: "Initial Value"
+            url: /dxl/pro/l42-10-s300-r/#initial-value
+      - title: "EEPROM Area"
+        titlekr: "EEPROM 영역"
+        url: /dxl/pro/l42-10-s300-r/#control-table-of-eeprom-area
+        urlkr: /dxl/pro/l42-10-s300-r/#eeprom-영역
+      - title: "RAM Area"
+        titlekr: "RAM 영역"
+        url: /dxl/pro/l42-10-s300-r/#control-table-of-ram-area
+        urlkr: /dxl/pro/l42-10-s300-r/#ram-영역
+      - title: "Control Table Description"
+        titlekr: "컨트롤 테이블 설명"
+        url: /dxl/pro/l42-10-s300-r/#control-table-description
+        urlkr: /dxl/pro/l42-10-s300-r/#컨트롤-테이블-설명
+  - title: "How to Assemble"
+    titlekr: "조립 예시"
+    url: /dxl/pro/l42-10-s300-r/#how-to-assemble
+    urlkr: /dxl/pro/l42-10-s300-r/#조립-예시
+    children:
+      - title: "Option Frame Assembly"
+        titlekr: "옵션프레임 조립"
+        url: /dxl/pro/l42-10-s300-r/#option-frame-assembly
+        urlkr: /dxl/pro/l42-10-s300-r/#옵션프레임-조립
+  - title: "Maintenance"
+    titlekr: "유지보수"
+    url: /dxl/pro/l42-10-s300-r/#maintenance
+    urlkr: /dxl/pro/l42-10-s300-r/#유지보수
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /dxl/pro/l42-10-s300-r/#reference
+    urlkr: /dxl/pro/l42-10-s300-r/#참고자료
+    children:
+      - title: "Quick Start"
+        titlekr: "퀵스타트"
+        url: /dxl/pro/l42-10-s300-r/#quick-start
+        urlkr: /dxl/pro/l42-10-s300-r/#퀵스타트
+      - title: "Drawings"
+        titlekr: "도면"
+        url: /dxl/pro/l42-10-s300-r/#drawings
+        urlkr: /dxl/pro/l42-10-s300-r/#도면
+
+#L54-30-S400-R sidebar
+l54-30-s400-r:
+  - title: "Specifications"
+    titlekr: "스펙"
+    url: /dxl/pro/l54-30-s400-r/#specifications
+    urlkr: /dxl/pro/l54-30-s400-r/#스펙
+    children:
+      - title: "Performance Graph"
+        titlekr: "성능 그래프"
+        url: /dxl/pro/l54-30-s400-r/#performance-graph
+        urlkr: /dxl/pro/l54-30-s400-r/#성능-그래프
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /dxl/pro/l54-30-s400-r/#control-table
+    urlkr: /dxl/pro/l54-30-s400-r/#컨트롤-테이블
+    children:
+      - title: "Control Table, Data, Address"
+        titlekr: "컨트롤 테이블, 데이터, 주소"
+        url: /dxl/pro/l54-30-s400-r/#control-table-data-address
+        urlkr: /dxl/pro/l54-30-s400-r/#컨트롤-테이블-데이터-주소
+        children:
+          - title: "Area(EEPROM, RAM)"
+            url: /dxl/pro/l54-30-s400-r/#area-eeprom-ram
+          - title: "Size"
+            url: /dxl/pro/l54-30-s400-r/#size
+          - title: "Access"
+            url: /dxl/pro/l54-30-s400-r/#access
+          - title: "Initial Value"
+            url: /dxl/pro/l54-30-s400-r/#initial-value
+      - title: "EEPROM Area"
+        titlekr: "EEPROM 영역"
+        url: /dxl/pro/l54-30-s400-r/#control-table-of-eeprom-area
+        urlkr: /dxl/pro/l54-30-s400-r/#eeprom-영역
+      - title: "RAM Area"
+        titlekr: "RAM 영역"
+        url: /dxl/pro/l54-30-s400-r/#control-table-of-ram-area
+        urlkr: /dxl/pro/l54-30-s400-r/#ram-영역
+      - title: "Control Table Description"
+        titlekr: "컨트롤 테이블 설명"
+        url: /dxl/pro/l54-30-s400-r/#control-table-description
+        urlkr: /dxl/pro/l54-30-s400-r/#컨트롤-테이블-설명
+  - title: "How to Assemble"
+    titlekr: "조립 예시"
+    url: /dxl/pro/l54-30-s400-r/#how-to-assemble
+    urlkr: /dxl/pro/l54-30-s400-r/#조립-예시
+    children:
+      - title: "Option Frame Assembly"
+        titlekr: "옵션프레임 조립"
+        url: /dxl/pro/l54-30-s400-r/#option-frame-assembly
+        urlkr: /dxl/pro/l54-30-s400-r/#옵션프레임-조립
+  - title: "Maintenance"
+    titlekr: "유지보수"
+    url: /dxl/pro/l54-30-s400-r/#maintenance
+    urlkr: /dxl/pro/l54-30-s400-r/#유지보수
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /dxl/pro/l54-30-s400-r/#reference
+    urlkr: /dxl/pro/l54-30-s400-r/#참고자료
+    children:
+      - title: "Quick Start"
+        titlekr: "퀵스타트"
+        url: /dxl/pro/l54-30-s400-r/#quick-start
+        urlkr: /dxl/pro/l54-30-s400-r/#퀵스타트
+      - title: "Drawings"
+        titlekr: "도면"
+        url: /dxl/pro/l54-30-s400-r/#drawings
+        urlkr: /dxl/pro/l54-30-s400-r/#도면
+
+#L54-30-S500-R sidebar
+l54-30-s500-r:
+  - title: "Specifications"
+    titlekr: "스펙"
+    url: /dxl/pro/l54-30-s500-r/#specifications
+    urlkr: /dxl/pro/l54-30-s500-r/#스펙
+    children:
+      - title: "Performance Graph"
+        titlekr: "성능 그래프"
+        url: /dxl/pro/l54-30-s500-r/#performance-graph
+        urlkr: /dxl/pro/l54-30-s500-r/#성능-그래프
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /dxl/pro/l54-30-s500-r/#control-table
+    urlkr: /dxl/pro/l54-30-s500-r/#컨트롤-테이블
+    children:
+      - title: "Control Table, Data, Address"
+        titlekr: "컨트롤 테이블, 데이터, 주소"
+        url: /dxl/pro/l54-30-s500-r/#control-table-data-address
+        urlkr: /dxl/pro/l54-30-s500-r/#컨트롤-테이블-데이터-주소
+        children:
+          - title: "Area(EEPROM, RAM)"
+            url: /dxl/pro/l54-30-s500-r/#area-eeprom-ram
+          - title: "Size"
+            url: /dxl/pro/l54-30-s500-r/#size
+          - title: "Access"
+            url: /dxl/pro/l54-30-s500-r/#access
+          - title: "Initial Value"
+            url: /dxl/pro/l54-30-s500-r/#initial-value
+      - title: "EEPROM Area"
+        titlekr: "EEPROM 영역"
+        url: /dxl/pro/l54-30-s500-r/#control-table-of-eeprom-area
+        urlkr: /dxl/pro/l54-30-s500-r/#eeprom-영역
+      - title: "RAM Area"
+        titlekr: "RAM 영역"
+        url: /dxl/pro/l54-30-s500-r/#control-table-of-ram-area
+        urlkr: /dxl/pro/l54-30-s500-r/#ram-영역
+      - title: "Control Table Description"
+        titlekr: "컨트롤 테이블 설명"
+        url: /dxl/pro/l54-30-s500-r/#control-table-description
+        urlkr: /dxl/pro/l54-30-s500-r/#컨트롤-테이블-설명
+  - title: "How to Assemble"
+    titlekr: "조립 예시"
+    url: /dxl/pro/l54-30-s500-r/#how-to-assemble
+    urlkr: /dxl/pro/l54-30-s500-r/#조립-예시
+    children:
+      - title: "Option Frame Assembly"
+        titlekr: "옵션프레임 조립"
+        url: /dxl/pro/l54-30-s500-r/#option-frame-assembly
+        urlkr: /dxl/pro/l54-30-s500-r/#옵션프레임-조립
+  - title: "Maintenance"
+    titlekr: "유지보수"
+    url: /dxl/pro/l54-30-s500-r/#maintenance
+    urlkr: /dxl/pro/l54-30-s500-r/#유지보수
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /dxl/pro/l54-30-s500-r/#reference
+    urlkr: /dxl/pro/l54-30-s500-r/#참고자료
+    children:
+      - title: "Quick Start"
+        titlekr: "퀵스타트"
+        url: /dxl/pro/l54-30-s500-r/#quick-start
+        urlkr: /dxl/pro/l54-30-s500-r/#퀵스타트
+      - title: "Drawings"
+        titlekr: "도면"
+        url: /dxl/pro/l54-30-s500-r/#drawings
+        urlkr: /dxl/pro/l54-30-s500-r/#도면
+
+#L54-50-S290-R sidebar
+l54-50-s290-r:
+  - title: "Specifications"
+    titlekr: "스펙"
+    url: /dxl/pro/l54-50-s290-r/#specifications
+    urlkr: /dxl/pro/l54-50-s290-r/#스펙
+    children:
+      - title: "Performance Graph"
+        titlekr: "성능 그래프"
+        url: /dxl/pro/l54-50-s290-r/#performance-graph
+        urlkr: /dxl/pro/l54-50-s290-r/#성능-그래프
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /dxl/pro/l54-50-s290-r/#control-table
+    urlkr: /dxl/pro/l54-50-s290-r/#컨트롤-테이블
+    children:
+      - title: "Control Table, Data, Address"
+        titlekr: "컨트롤 테이블, 데이터, 주소"
+        url: /dxl/pro/l54-50-s290-r/#control-table-data-address
+        urlkr: /dxl/pro/l54-50-s290-r/#컨트롤-테이블-데이터-주소
+        children:
+          - title: "Area(EEPROM, RAM)"
+            url: /dxl/pro/l54-50-s290-r/#area-eeprom-ram
+          - title: "Size"
+            url: /dxl/pro/l54-50-s290-r/#size
+          - title: "Access"
+            url: /dxl/pro/l54-50-s290-r/#access
+          - title: "Initial Value"
+            url: /dxl/pro/l54-50-s290-r/#initial-value
+      - title: "EEPROM Area"
+        titlekr: "EEPROM 영역"
+        url: /dxl/pro/l54-50-s290-r/#control-table-of-eeprom-area
+        urlkr: /dxl/pro/l54-50-s290-r/#eeprom-영역
+      - title: "RAM Area"
+        titlekr: "RAM 영역"
+        url: /dxl/pro/l54-50-s290-r/#control-table-of-ram-area
+        urlkr: /dxl/pro/l54-50-s290-r/#ram-영역
+      - title: "Control Table Description"
+        titlekr: "컨트롤 테이블 설명"
+        url: /dxl/pro/l54-50-s290-r/#control-table-description
+        urlkr: /dxl/pro/l54-50-s290-r/#컨트롤-테이블-설명
+  - title: "How to Assemble"
+    titlekr: "조립 예시"
+    url: /dxl/pro/l54-50-s290-r/#how-to-assemble
+    urlkr: /dxl/pro/l54-50-s290-r/#조립-예시
+    children:
+      - title: "Option Frame Assembly"
+        titlekr: "옵션프레임 조립"
+        url: /dxl/pro/l54-50-s290-r/#option-frame-assembly
+        urlkr: /dxl/pro/l54-50-s290-r/#옵션프레임-조립
+  - title: "Maintenance"
+    titlekr: "유지보수"
+    url: /dxl/pro/l54-50-s290-r/#maintenance
+    urlkr: /dxl/pro/l54-50-s290-r/#유지보수
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /dxl/pro/l54-50-s290-r/#reference
+    urlkr: /dxl/pro/l54-50-s290-r/#참고자료
+    children:
+      - title: "Quick Start"
+        titlekr: "퀵스타트"
+        url: /dxl/pro/l54-50-s290-r/#quick-start
+        urlkr: /dxl/pro/l54-50-s290-r/#퀵스타트
+      - title: "Drawings"
+        titlekr: "도면"
+        url: /dxl/pro/l54-50-s290-r/#drawings
+        urlkr: /dxl/pro/l54-50-s290-r/#도면
+
+#L54-50-S500-R sidebar
+l54-50-s500-r:
+  - title: "Specifications"
+    titlekr: "스펙"
+    url: /dxl/pro/l54-50-s500-r/#specifications
+    urlkr: /dxl/pro/l54-50-s500-r/#스펙
+    children:
+      - title: "Performance Graph"
+        titlekr: "성능 그래프"
+        url: /dxl/pro/l54-50-s500-r/#performance-graph
+        urlkr: /dxl/pro/l54-50-s500-r/#성능-그래프
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /dxl/pro/l54-50-s500-r/#control-table
+    urlkr: /dxl/pro/l54-50-s500-r/#컨트롤-테이블
+    children:
+      - title: "Control Table, Data, Address"
+        titlekr: "컨트롤 테이블, 데이터, 주소"
+        url: /dxl/pro/l54-50-s500-r/#control-table-data-address
+        urlkr: /dxl/pro/l54-50-s500-r/#컨트롤-테이블-데이터-주소
+        children:
+          - title: "Area(EEPROM, RAM)"
+            url: /dxl/pro/l54-50-s500-r/#area-eeprom-ram
+          - title: "Size"
+            url: /dxl/pro/l54-50-s500-r/#size
+          - title: "Access"
+            url: /dxl/pro/l54-50-s500-r/#access
+          - title: "Initial Value"
+            url: /dxl/pro/l54-50-s500-r/#initial-value
+      - title: "EEPROM Area"
+        titlekr: "EEPROM 영역"
+        url: /dxl/pro/l54-50-s500-r/#control-table-of-eeprom-area
+        urlkr: /dxl/pro/l54-50-s500-r/#eeprom-영역
+      - title: "RAM Area"
+        titlekr: "RAM 영역"
+        url: /dxl/pro/l54-50-s500-r/#control-table-of-ram-area
+        urlkr: /dxl/pro/l54-50-s500-r/#ram-영역
+      - title: "Control Table Description"
+        titlekr: "컨트롤 테이블 설명"
+        url: /dxl/pro/l54-50-s500-r/#control-table-description
+        urlkr: /dxl/pro/l54-50-s500-r/#컨트롤-테이블-설명
+  - title: "How to Assemble"
+    titlekr: "조립 예시"
+    url: /dxl/pro/l54-50-s500-r/#how-to-assemble
+    urlkr: /dxl/pro/l54-50-s500-r/#조립-예시
+    children:
+      - title: "Option Frame Assembly"
+        titlekr: "옵션프레임 조립"
+        url: /dxl/pro/l54-50-s500-r/#option-frame-assembly
+        urlkr: /dxl/pro/l54-50-s500-r/#옵션프레임-조립
+  - title: "Maintenance"
+    titlekr: "유지보수"
+    url: /dxl/pro/l54-50-s500-r/#maintenance
+    urlkr: /dxl/pro/l54-50-s500-r/#유지보수
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /dxl/pro/l54-50-s500-r/#reference
+    urlkr: /dxl/pro/l54-50-s500-r/#참고자료
+    children:
+      - title: "Quick Start"
+        titlekr: "퀵스타트"
+        url: /dxl/pro/l54-50-s500-r/#quick-start
+        urlkr: /dxl/pro/l54-50-s500-r/#퀵스타트
+      - title: "Drawings"
+        titlekr: "도면"
+        url: /dxl/pro/l54-50-s500-r/#drawings
+        urlkr: /dxl/pro/l54-50-s500-r/#도면
+
+#M42-10-S260-R sidebar
+m42-10-s260-r:
+  - title: "Specifications"
+    titlekr: "스펙"
+    url: /dxl/pro/m42-10-s260-r/#specifications
+    urlkr: /dxl/pro/m42-10-s260-r/#스펙
+    children:
+      - title: "Performance Graph"
+        titlekr: "성능 그래프"
+        url: /dxl/pro/m42-10-s260-r/#performance-graph
+        urlkr: /dxl/pro/m42-10-s260-r/#성능-그래프
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /dxl/pro/m42-10-s260-r/#control-table
+    urlkr: /dxl/pro/m42-10-s260-r/#컨트롤-테이블
+    children:
+      - title: "Control Table, Data, Address"
+        titlekr: "컨트롤 테이블, 데이터, 주소"
+        url: /dxl/pro/m42-10-s260-r/#control-table-data-address
+        urlkr: /dxl/pro/m42-10-s260-r/#컨트롤-테이블-데이터-주소
+        children:
+          - title: "Area(EEPROM, RAM)"
+            url: /dxl/pro/m42-10-s260-r/#area-eeprom-ram
+          - title: "Size"
+            url: /dxl/pro/m42-10-s260-r/#size
+          - title: "Access"
+            url: /dxl/pro/m42-10-s260-r/#access
+          - title: "Initial Value"
+            url: /dxl/pro/m42-10-s260-r/#initial-value
+      - title: "EEPROM Area"
+        titlekr: "EEPROM 영역"
+        url: /dxl/pro/m42-10-s260-r/#control-table-of-eeprom-area
+        urlkr: /dxl/pro/m42-10-s260-r/#eeprom-영역
+      - title: "RAM Area"
+        titlekr: "RAM 영역"
+        url: /dxl/pro/m42-10-s260-r/#control-table-of-ram-area
+        urlkr: /dxl/pro/m42-10-s260-r/#ram-영역
+      - title: "Control Table Description"
+        titlekr: "컨트롤 테이블 설명"
+        url: /dxl/pro/m42-10-s260-r/#control-table-description
+        urlkr: /dxl/pro/m42-10-s260-r/#컨트롤-테이블-설명
+  - title: "How to Assemble"
+    titlekr: "조립 예시"
+    url: /dxl/pro/m42-10-s260-r/#how-to-assemble
+    urlkr: /dxl/pro/m42-10-s260-r/#조립-예시
+    children:
+      - title: "Option Frame Assembly"
+        titlekr: "옵션프레임 조립"
+        url: /dxl/pro/m42-10-s260-r/#option-frame-assembly
+        urlkr: /dxl/pro/m42-10-s260-r/#옵션프레임-조립
+  - title: "Maintenance"
+    titlekr: "유지보수"
+    url: /dxl/pro/m42-10-s260-r/#maintenance
+    urlkr: /dxl/pro/m42-10-s260-r/#유지보수
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /dxl/pro/m42-10-s260-r/#reference
+    urlkr: /dxl/pro/m42-10-s260-r/#참고자료
+    children:
+      - title: "Quick Start"
+        titlekr: "퀵스타트"
+        url: /dxl/pro/m42-10-s260-r/#quick-start
+        urlkr: /dxl/pro/m42-10-s260-r/#퀵스타트
+      - title: "Drawings"
+        titlekr: "도면"
+        url: /dxl/pro/m42-10-s260-r/#drawings
+        urlkr: /dxl/pro/m42-10-s260-r/#도면
+
+#M54-40-S250-R sidebar
+m54-40-s250-r:
+  - title: "Specifications"
+    titlekr: "스펙"
+    url: /dxl/pro/m54-40-s250-r/#specifications
+    urlkr: /dxl/pro/m54-40-s250-r/#스펙
+    children:
+      - title: "Performance Graph"
+        titlekr: "성능 그래프"
+        url: /dxl/pro/m54-40-s250-r/#performance-graph
+        urlkr: /dxl/pro/m54-40-s250-r/#성능-그래프
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /dxl/pro/m54-40-s250-r/#control-table
+    urlkr: /dxl/pro/m54-40-s250-r/#컨트롤-테이블
+    children:
+      - title: "Control Table, Data, Address"
+        titlekr: "컨트롤 테이블, 데이터, 주소"
+        url: /dxl/pro/m54-40-s250-r/#control-table-data-address
+        urlkr: /dxl/pro/m54-40-s250-r/#컨트롤-테이블-데이터-주소
+        children:
+          - title: "Area(EEPROM, RAM)"
+            url: /dxl/pro/m54-40-s250-r/#area-eeprom-ram
+          - title: "Size"
+            url: /dxl/pro/m54-40-s250-r/#size
+          - title: "Access"
+            url: /dxl/pro/m54-40-s250-r/#access
+          - title: "Initial Value"
+            url: /dxl/pro/m54-40-s250-r/#initial-value
+      - title: "EEPROM Area"
+        titlekr: "EEPROM 영역"
+        url: /dxl/pro/m54-40-s250-r/#control-table-of-eeprom-area
+        urlkr: /dxl/pro/m54-40-s250-r/#eeprom-영역
+      - title: "RAM Area"
+        titlekr: "RAM 영역"
+        url: /dxl/pro/m54-40-s250-r/#control-table-of-ram-area
+        urlkr: /dxl/pro/m54-40-s250-r/#ram-영역
+      - title: "Control Table Description"
+        titlekr: "컨트롤 테이블 설명"
+        url: /dxl/pro/m54-40-s250-r/#control-table-description
+        urlkr: /dxl/pro/m54-40-s250-r/#컨트롤-테이블-설명
+  - title: "How to Assemble"
+    titlekr: "조립 예시"
+    url: /dxl/pro/m54-40-s250-r/#how-to-assemble
+    urlkr: /dxl/pro/m54-40-s250-r/#조립-예시
+    children:
+      - title: "Option Frame Assembly"
+        titlekr: "옵션프레임 조립"
+        url: /dxl/pro/m54-40-s250-r/#option-frame-assembly
+        urlkr: /dxl/pro/m54-40-s250-r/#옵션프레임-조립
+  - title: "Maintenance"
+    titlekr: "유지보수"
+    url: /dxl/pro/m54-40-s250-r/#maintenance
+    urlkr: /dxl/pro/m54-40-s250-r/#유지보수
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /dxl/pro/m54-40-s250-r/#reference
+    urlkr: /dxl/pro/m54-40-s250-r/#참고자료
+    children:
+      - title: "Quick Start"
+        titlekr: "퀵스타트"
+        url: /dxl/pro/m54-40-s250-r/#quick-start
+        urlkr: /dxl/pro/m54-40-s250-r/#퀵스타트
+      - title: "Drawings"
+        titlekr: "도면"
+        url: /dxl/pro/m54-40-s250-r/#drawings
+        urlkr: /dxl/pro/m54-40-s250-r/#도면
+
+#M54-60-S250-R sidebar
+m54-60-s250-r:
+  - title: "Specifications"
+    titlekr: "스펙"
+    url: /dxl/pro/m54-60-s250-r/#specifications
+    urlkr: /dxl/pro/m54-60-s250-r/#스펙
+    children:
+      - title: "Performance Graph"
+        titlekr: "성능 그래프"
+        url: /dxl/pro/m54-60-s250-r/#performance-graph
+        urlkr: /dxl/pro/m54-60-s250-r/#성능-그래프
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /dxl/pro/m54-60-s250-r/#control-table
+    urlkr: /dxl/pro/m54-60-s250-r/#컨트롤-테이블
+    children:
+      - title: "Control Table, Data, Address"
+        titlekr: "컨트롤 테이블, 데이터, 주소"
+        url: /dxl/pro/m54-60-s250-r/#control-table-data-address
+        urlkr: /dxl/pro/m54-60-s250-r/#컨트롤-테이블-데이터-주소
+        children:
+          - title: "Area(EEPROM, RAM)"
+            url: /dxl/pro/m54-60-s250-r/#area-eeprom-ram
+          - title: "Size"
+            url: /dxl/pro/m54-60-s250-r/#size
+          - title: "Access"
+            url: /dxl/pro/m54-60-s250-r/#access
+          - title: "Initial Value"
+            url: /dxl/pro/m54-60-s250-r/#initial-value
+      - title: "EEPROM Area"
+        titlekr: "EEPROM 영역"
+        url: /dxl/pro/m54-60-s250-r/#control-table-of-eeprom-area
+        urlkr: /dxl/pro/m54-60-s250-r/#eeprom-영역
+      - title: "RAM Area"
+        titlekr: "RAM 영역"
+        url: /dxl/pro/m54-60-s250-r/#control-table-of-ram-area
+        urlkr: /dxl/pro/m54-60-s250-r/#ram-영역
+      - title: "Control Table Description"
+        titlekr: "컨트롤 테이블 설명"
+        url: /dxl/pro/m54-60-s250-r/#control-table-description
+        urlkr: /dxl/pro/m54-60-s250-r/#컨트롤-테이블-설명
+  - title: "How to Assemble"
+    titlekr: "조립 예시"
+    url: /dxl/pro/m54-60-s250-r/#how-to-assemble
+    urlkr: /dxl/pro/m54-60-s250-r/#조립-예시
+    children:
+      - title: "Option Frame Assembly"
+        titlekr: "옵션프레임 조립"
+        url: /dxl/pro/m54-60-s250-r/#option-frame-assembly
+        urlkr: /dxl/pro/m54-60-s250-r/#옵션프레임-조립
+  - title: "Maintenance"
+    titlekr: "유지보수"
+    url: /dxl/pro/m54-60-s250-r/#maintenance
+    urlkr: /dxl/pro/m54-60-s250-r/#유지보수
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /dxl/pro/m54-60-s250-r/#reference
+    urlkr: /dxl/pro/m54-60-s250-r/#참고자료
+    children:
+      - title: "Quick Start"
+        titlekr: "퀵스타트"
+        url: /dxl/pro/m54-60-s250-r/#quick-start
+        urlkr: /dxl/pro/m54-60-s250-r/#퀵스타트
+      - title: "Drawings"
+        titlekr: "도면"
+        url: /dxl/pro/m54-60-s250-r/#drawings
+        urlkr: /dxl/pro/m54-60-s250-r/#도면
+
+#Protocol 1.0 sidebar
+protocol1:
+  - title: "Instruction Packet"
+    url: /dxl/protocol1/#instruction-packet
+    children:
+      - title: "Header"
+        url: /dxl/protocol1/#header
+      - title: "Packet ID"
+        url: /dxl/protocol1/#packet-id
+      - title: "Length"
+        url: /dxl/protocol1/#length
+      - title: "Instruction"
+        url: /dxl/protocol1/#instruction
+      - title: "Parameters"
+        url: /dxl/protocol1/#parameters
+      - title: "Instruction Checksum"
+        url: /dxl/protocol1/#instruction-checksum
+  - title: "Status Packet"
+    url: /dxl/protocol1/#status-packet
+    children:
+      - title: "Error"
+        url: /dxl/protocol1/#error
+      - title: "Status Checksum"
+        url: /dxl/protocol1/#status-checksum
+  - title: "Instruction Details"
+    url: /dxl/protocol1/#instruction-details
+    children:
+      - title: "Ping"
+        url: /dxl/protocol1/#ping
+      - title: "Read"
+        url: /dxl/protocol1/#read
+      - title: "Write"
+        url: /dxl/protocol1/#write
+      - title: "Reg Write"
+        url: /dxl/protocol1/#reg-write
+      - title: "Action"
+        url: /dxl/protocol1/#action
+      - title: "Factory Reset"
+        url: /dxl/protocol1/#factory-reset
+      - title: "Sync Write"
+        url: /dxl/protocol1/#sync-write
+      - title: "Bulk Read"
+        url: /dxl/protocol1/#bulk-read
+  - title: "More Packet Examples"
+    url: /dxl/protocol1/#more-packet-examples
+
+#Protocol 2.0 sidebar
+protocol2:
+  - title: "Instruction Packet"
+    url: /dxl/protocol2/#instruction-packet
+    children:
+      - title: "Header"
+        url: /dxl/protocol2/#header
+      - title: "Reserved"
+        url: /dxl/protocol2/#reserved
+      - title: "Packet ID"
+        url: /dxl/protocol2/#packet-id
+      - title: "Packet Length"
+        url: /dxl/protocol2/#packet-length
+      - title: "Instruction"
+        url: /dxl/protocol2/#instruction
+      - title: "Parameters"
+        url: /dxl/protocol2/#parameters
+      - title: "CRC"
+        url: /dxl/protocol2/#crc
+  - title: "Status Packet"
+    url: /dxl/protocol2/#status-packet
+    children:
+      - title: "Error"
+        url: /dxl/protocol2/#error
+      - title: "Status Checksum"
+        url: /dxl/protocol2/#status-checksum
+  - title: "Packet Process"
+    url: /dxl/protocol2/#packet-process
+  - title: "Instruction Details"
+    url: /dxl/protocol2/#instruction-details
+    children:
+      - title: "Ping"
+        url: /dxl/protocol2/#ping
+      - title: "Read"
+        url: /dxl/protocol2/#read
+      - title: "Write"
+        url: /dxl/protocol2/#write
+      - title: "Reg Write"
+        url: /dxl/protocol2/#reg-write
+      - title: "Action"
+        url: /dxl/protocol2/#action
+      - title: "Factory Reset"
+        url: /dxl/protocol2/#factory-reset
+      - title: "Reboot"
+        url: /dxl/protocol2/#reboot
+      - title: "Sync Read"
+        url: /dxl/protocol2/#sync-read
+      - title: "Sync Write"
+        url: /dxl/protocol2/#sync-write
+      - title: "Bulk Read"
+        url: /dxl/protocol2/#bulk-read
+      - title: "Bulk Write"
+        url: /dxl/protocol2/#bulk-write
+
 #Ollo Bug Kit sidebar
-ollo_bug:
+ollo_bugkit:
   - title: "Introduction"
-    url: /edu/ollo/bugkit_getting_started/#introduction
+    url: /edu/ollo/bugkit/#introduction
   - title: "Getting Started"
-    url: /edu/ollo/bugkit_getting_started/#getting-started
+    url: /edu/ollo/bugkit/#getting-started
     children:
       - title: "Part List"
-        url: /edu/ollo/bugkit_getting_started/#part-list
+        url: /edu/ollo/bugkit/#part-list
       - title: "How to Play"
-        url: /edu/ollo/bugkit_getting_started/#how-to-play
-      - title: "Wireless Control"
-        url: /edu/ollo/bugkit_getting_started/#wireless-control
+        url: /edu/ollo/bugkit/#how-to-play
+      - title: "ZIGBee Wireless Control"
+        url: /edu/ollo/bugkit/#zigbee-wireless-control
   - title: "Applications"
-    url: /edu/ollo/bugkit_getting_started/#applications
+    url: /edu/ollo/bugkit/#applications
     children:
       - title: "Battle Bug"
-        url: /edu/ollo/bugkit_getting_started/#battle-bug
+        url: /edu/ollo/bugkit/#battle-bug
       - title: "Car"
-        url: /edu/ollo/bugkit_getting_started/#car
+        url: /edu/ollo/bugkit/#car
       - title: "Other Devices"
-        url: /edu/ollo/bugkit_getting_started/#other-devices
-  - title: "Download"
-    url: /edu/ollo/bugkit_getting_started/#download
-  - title: "Programming"
+        url: /edu/ollo/bugkit/#other-devices
+  - title: "Learning Program"
+    url: /edu/ollo/bugkit/#learning-program
     children:
       - title: "Print on the Screen"
-        url: /edu/ollo/bugkit_print_screen/#print-on-the-screen
+        url: /edu/ollo/bugkit/#print-on-the-screen
       - title: "Move the Bug"
-        url: /edu/ollo/bugkit_move_bug/#move-the-bug
+        url: /edu/ollo/bugkit/#move-the-bug
       - title: "Line Tracing Bug"
-        url: /edu/ollo/bugkit_linetracing_bug/#line-tracing-bug
+        url: /edu/ollo/bugkit/#line-tracing-bug
       - title: "Sensing Bug"
-        url: /edu/ollo/bugkit_sensor_bug/#sensing-bug
+        url: /edu/ollo/bugkit/#sensing-bug
       - title: "Control the Bug"
-        url: /edu/ollo/bugkit_control_bug/#control-the-bug
+        url: /edu/ollo/bugkit/#control-the-bug
+  - title: "Download"
+    url: /edu/ollo/bugkit/#download
 
+#Ollo Explorer
+ollo_explorer:
+  - title: "Introduction"
+    url: /edu/ollo/explorer/#introduction
+  - title: "Part List"
+    url: /edu/ollo/explorer/#part-list
+  - title: "Quick Start"
+    url: /edu/ollo/explorer/#quick-start
+    children:
+      - title: "How to Play"
+        url: /edu/ollo/explorer/#how-to-play
+      - title: "Select Program"
+        url: /edu/ollo/explorer/#select-program
+  - title: "Download"
+    url: /edu/ollo/explorer/#download
+
+#Ollo Inventor
+ollo_inventor:
+  - title: "Introduction"
+    url: /edu/ollo/inventor/#introduction
+  - title: "Part List"
+    url: /edu/ollo/inventor/#part-list
+  - title: "Quick Start"
+    url: /edu/ollo/inventor/#quick-start
+    children:
+      - title: "ZIGBee Wireless Control"
+        url: /edu/ollo/inventor/#zigbee-wireless-control
+  - title: "Download"
+    url: /edu/ollo/inventor/#download
 
 #DreamI Level1 sidebar
 dream1-1:
@@ -1448,24 +3340,86 @@ dream1-1:
 
 #DreamI Level2 sidebar
 dream1-2:
-  - titlekr: "개요"
+  - title: "Introduction"
+    titlekr: "개요"
+    url: /edu/dream/dream1-2/#introduction
     urlkr: /edu/dream/dream1-2/#개요
-  - titlekr: "부품 목록"
+  - title: "Part List"
+    titlekr: "부품 목록"
+    url: /edu/dream/dream1-2/#part-list
     urlkr: /edu/dream/dream1-2/#부품-목록
-  - titlekr: "작동하기"
+  - title: "Quick Start"
+    titlekr: "작동하기"
+    url: /edu/dream/dream1-2/#quick-start
     urlkr: /edu/dream/dream1-2/#작동하기
     children:
-      - titlekr: "작동방법"
+      - title: "How to Play"
+        titlekr: "작동방법"
+        url: /edu/dream/dream1-2/#how-to-play
         urlkr: /edu/dream/dream1-2/#작동방법
-      - titlekr: "프로그램 선택방법"
+      - title: "Select Program"
+        titlekr: "프로그램 선택방법"
+        url: /edu/dream/dream1-2/#select-program
         urlkr: /edu/dream/dream1-2/#프로그램-선택방법
-  - titlekr: "교안예제"
+  - title: "Examples"
+    titlekr: "교안예제"
+    url: /edu/dream/dream1-2/#examples
     urlkr: /edu/dream/dream1-2/#교안예제
-  - titlekr: "참고자료"
-    urlkr: /edu/dream/dream1-2/#참고자료
+
+#DreamI Level3 sidebar
+dream1-3:
+  - title: "Introduction"
+    titlekr: "개요"
+    url: /edu/dream/dream1-3/#introduction
+    urlkr: /edu/dream/dream1-3/#개요
+  - title: "Part List"
+    titlekr: "부품 목록"
+    url: /edu/dream/dream1-3/#part-list
+    urlkr: /edu/dream/dream1-3/#부품-목록
+  - title: "Examples"
+    titlekr: "교안예제"
+    url: /edu/dream/dream1-3/#examples
+    urlkr: /edu/dream/dream1-3/#교안예제
+
+#DreamI Level4 sidebar
+dream1-4:
+  - title: "Introduction"
+    titlekr: "개요"
+    url: /edu/dream/dream1-4/#introduction
+    urlkr: /edu/dream/dream1-4/#개요
+  - title: "Part List"
+    titlekr: "부품 목록"
+    url: /edu/dream/dream1-4/#part-list
+    urlkr: /edu/dream/dream1-4/#부품-목록
+  - title: "Examples"
+    titlekr: "교안예제"
+    url: /edu/dream/dream1-4/#examples
+    urlkr: /edu/dream/dream1-4/#교안예제
+
+#Dream Set A sidebar
+dream-a:
+  - title: "Introduction"
+    url: /edu/dream/dream-a/#introduction
+  - title: "Part List"
+    url: /edu/dream/dream-a/#part-list
+  - title: "Quick Start"
+    url: /edu/dream/dream-a/#quick-start
     children:
-      - titlekr: "호환성"
-        urlkr: /edu/dream/dream1-2/#호환성
+      - title: "How to Play"
+        url: /edu/dream/dream-a/#how-to-play
+      - title: "Select Program"
+        url: /edu/dream/dream-a/#select-program
+  - title: "Examples"
+    url: /edu/dream/dream-a/#examples
+
+#Dream Set B sidebar
+dream-b:
+  - title: "Introduction"
+    url: /edu/dream/dream-b/#introduction
+  - title: "Part List"
+    url: /edu/dream/dream-b/#part-list
+  - title: "Examples"
+    url: /edu/dream/dream-b/#examples
 
 #SmartIII Level2 sidebar
 smart3-2:
@@ -1484,6 +3438,347 @@ smart3-2:
         urlkr: /edu/smart/smart3-2/#블루투스-연결하기
   - titlekr: "교안예제"
     urlkr: /edu/smart/smart3-2/#교안예제
+
+#BIOLOID Beginner sidebar
+bioloid-beginner:
+  - title: "Introduction"
+    titlekr: "개요"
+    url: /edu/bioloid/beginner/#introduction
+    urlkr:
+  - title: "Getting Started"
+    titlekr: ""
+    url: /edu/bioloid/beginner/#getting-started
+    urlkr:
+    children:
+    - title: "Part List"
+      titlekr: ""
+      url: /edu/bioloid/beginner/#part-list
+      urlkr:
+    - title: "Preparation"
+      titlekr: ""
+      url: /edu/bioloid/beginner/#preparation
+      urlkr:
+    - title: "Operating"
+      titlekr: ""
+      url: /edu/bioloid/beginner/#operating
+      urlkr:
+    - title: "Charging CM-5"
+      titlekr: ""
+      url: /edu/bioloid/beginner/#charging-cm-5
+      urlkr:
+  - title: "Tutorial"
+    titlekr: ""
+    url: /edu/bioloid/beginner/#tutorial
+    urlkr:
+    children:
+    - title: "Screen Output"
+      titlekr: ""
+      url: /edu/bioloid/beginner/#screen-output
+      urlkr:
+    - title: "Button & LED"
+      titlekr: ""
+      url: /edu/bioloid/beginner/#button-led
+      urlkr:
+    - title: "Attacking Duck"
+      titlekr: ""
+      url: /edu/bioloid/beginner/#attacking-duck
+      urlkr:
+    - title: "Obstacle Detecting Car"
+      titlekr: ""
+      url: /edu/bioloid/beginner/#obstacle-detecting-car
+      urlkr:
+    - title: "Walking Droid 1"
+      titlekr: ""
+      url: /edu/bioloid/beginner/#walking-droid-1
+      urlkr:
+    - title: "Walking Droid 2"
+      titlekr: ""
+      url: /edu/bioloid/beginner/#walking-droid-2
+      urlkr:
+    - title: "Walking Droid 3"
+      titlekr: ""
+      url: /edu/bioloid/beginner/#walking-droid-3
+      urlkr:
+    - title: "Converting .bpg to .tsk"
+      titlekr: ""
+      url: /edu/bioloid/beginner/#converting-bpg-to-tsk
+      urlkr:
+  - title: "Download"
+    titlekr: ""
+    url: /edu/bioloid/beginner/#download
+    urlkr:
+    children:
+    - title: "Download Task Code"
+      url: /edu/bioloid/beginner/#download-task-code
+    - title: "Download Motion File"
+      url: /edu/bioloid/beginner/#download-motion-file
+    - title: "Examples"
+      url: /edu/bioloid/beginner/#examples
+  - title: "References"
+    titlekr: ""
+    url: /edu/bioloid/beginner/#references
+    urlkr:
+    children:
+    - title: "Replacing Fuse"
+      titlekr: ""
+      url: /edu/bioloid/beginner/#replacing-fuse-cm-5
+      urlkr:
+    - title: "Dynamixel Management"
+      titlekr: ""
+      url: /edu/bioloid/beginner/#dynamixel-management
+      urlkr:
+    - title: "Zigbee Wireless Control"
+      titlekr: ""
+      url: /edu/bioloid/beginner/#zigbee-wireless-control
+      urlkr:
+    - title: "Control Multiple Robots"
+      titlekr: ""
+      url: /edu/bioloid/beginner/#control-multiple-robots
+      urlkr:
+
+#BIOLOID Comprehensive sidebar
+bioloid-comprehensive:
+  - title: "Introduction"
+    titlekr: "개요"
+    url: /edu/bioloid/comprehensive/#introduction
+    urlkr:
+  - title: "Getting Started"
+    titlekr: ""
+    url: /edu/bioloid/comprehensive/#getting-started
+    urlkr:
+    children:
+    - title: "Part List"
+      titlekr: ""
+      url: /edu/bioloid/comprehensive/#part-list
+      urlkr:
+    - title: "Preparation"
+      titlekr: ""
+      url: /edu/bioloid/comprehensive/#preparation
+      urlkr:
+    - title: "Operating"
+      titlekr: ""
+      url: /edu/bioloid/comprehensive/#operating
+      urlkr:
+    - title: "Charging CM-5"
+      titlekr: ""
+      url: /edu/bioloid/comprehensive/#charging-cm-5
+      urlkr:
+  - title: "Tutorial"
+    titlekr: ""
+    url: /edu/bioloid/comprehensive/#tutorial
+    urlkr:
+    children:
+    - title: "Screen Output"
+      titlekr: ""
+      url: /edu/bioloid/comprehensive/#screen-output
+      urlkr:
+    - title: "Button & LED"
+      titlekr: ""
+      url: /edu/bioloid/comprehensive/#button-led
+      urlkr:
+    - title: "Attacking Duck"
+      titlekr: ""
+      url: /edu/bioloid/comprehensive/#attacking-duck
+      urlkr:
+    - title: "Obstacle Detecting Car"
+      titlekr: ""
+      url: /edu/bioloid/comprehensive/#obstacle-detecting-car
+      urlkr:
+    - title: "Walking Droid 1"
+      titlekr: ""
+      url: /edu/bioloid/comprehensive/#walking-droid-1
+      urlkr:
+    - title: "Walking Droid 2"
+      titlekr: ""
+      url: /edu/bioloid/comprehensive/#walking-droid-2
+      urlkr:
+    - title: "Walking Droid 3"
+      titlekr: ""
+      url: /edu/bioloid/comprehensive/#walking-droid-3
+      urlkr:
+    - title: "Converting .bpg to .tsk"
+      titlekr: ""
+      url: /edu/bioloid/comprehensive/#converting-bpg-to-tsk
+      urlkr:
+  - title: "Download"
+    titlekr: ""
+    url: /edu/bioloid/comprehensive/#download
+    urlkr:
+    children:
+    - title: "Download Task Code"
+      url: /edu/bioloid/comprehensive/#download-task-code
+    - title: "Download Motion File"
+      url: /edu/bioloid/comprehensive/#download-motion-file
+    - title: "Examples"
+      url: /edu/bioloid/comprehensive/#examples
+  - title: "References"
+    titlekr: ""
+    url: /edu/bioloid/comprehensive/#references
+    urlkr:
+    children:
+    - title: "Replacing Fuse"
+      titlekr: ""
+      url: /edu/bioloid/comprehensive/#replacing-fuse-cm-5
+      urlkr:
+    - title: "Dynamixel Management"
+      titlekr: ""
+      url: /edu/bioloid/comprehensive/#dynamixel-management
+      urlkr:
+    - title: "Zigbee Wireless Control"
+      titlekr: ""
+      url: /edu/bioloid/comprehensive/#zigbee-wireless-control
+      urlkr:
+    - title: "Control Multiple Robots"
+      titlekr: ""
+      url: /edu/bioloid/comprehensive/#control-multiple-robots
+      urlkr:
+
+#BIOLOID STEM sidebar
+bioloid-stem:
+  - title: "Introduction"
+    titlekr: "개요"
+    url: /edu/bioloid/stem/#introduction
+    urlkr:
+  - title: "Getting Started"
+    titlekr: ""
+    url: /edu/bioloid/stem/#getting-started
+    urlkr:
+    children:
+    - title: "Standard Part List"
+      titlekr: ""
+      url: /edu/bioloid/stem/#standard-part-list
+      urlkr:
+    - title: "Expansion Part List"
+      titlekr: ""
+      url: /edu/bioloid/stem/#expansion-part-list
+      urlkr:
+    - title: "Operating"
+      titlekr: ""
+      url: /edu/bioloid/stem/#operating
+      urlkr:
+    - title: "Battery Charge"
+      titlekr: ""
+      url: /edu/bioloid/stem/#battery-charge
+      urlkr:
+  - title: "Download"
+    titlekr: ""
+    url: /edu/bioloid/stem/#download
+    urlkr:
+    children:
+    - title: "Standard Examples"
+      url: /edu/bioloid/stem/#standard-examples
+    - title: "Expansion Examples"
+      url: /edu/bioloid/stem/#expansion-examples
+  - title: "References"
+    titlekr: ""
+    url: /edu/bioloid/stem/#references
+    urlkr:
+    children:
+    - title: "Replacing Fuse"
+      titlekr: ""
+      url: /edu/bioloid/stem/#replacing-fuse
+      urlkr:
+    - title: "Dynamixel Management"
+      titlekr: ""
+      url: /edu/bioloid/stem/#dynamixel-management
+      urlkr:
+    - title: "Zigbee Wireless Control"
+      titlekr: ""
+      url: /edu/bioloid/stem/#zigbee-wireless-control
+      urlkr:
+
+#BIOLOID Premium sidebar
+bioloid-premium:
+  - title: "Introduction"
+    titlekr: "개요"
+    url: /edu/bioloid/premium/#introduction
+    urlkr:
+  - title: "Getting Started"
+    titlekr: ""
+    url: /edu/bioloid/premium/#getting-started
+    urlkr:
+    children:
+    - title: "Part List"
+      titlekr: ""
+      url: /edu/bioloid/premium/#part-list
+      urlkr:
+    - title: "Operating"
+      titlekr: ""
+      url: /edu/bioloid/premium/#operating
+      urlkr:
+    - title: "Charging CM-5"
+      titlekr: ""
+      url: /edu/bioloid/premium/#charging-cm-5
+      urlkr:
+  - title: "Tutorial"
+    titlekr: ""
+    url: /edu/bioloid/premium/#tutorial
+    urlkr:
+    children:
+    - title: "Screen Output"
+      titlekr: ""
+      url: /edu/bioloid/premium/#screen-output
+      urlkr:
+    - title: "Button & LED"
+      titlekr: ""
+      url: /edu/bioloid/premium/#button-led
+      urlkr:
+    - title: "Attacking Duck"
+      titlekr: ""
+      url: /edu/bioloid/premium/#attacking-duck
+      urlkr:
+    - title: "Obstacle Detecting Car"
+      titlekr: ""
+      url: /edu/bioloid/premium/#obstacle-detecting-car
+      urlkr:
+    - title: "Walking Droid 1"
+      titlekr: ""
+      url: /edu/bioloid/premium/#walking-droid-1
+      urlkr:
+    - title: "Walking Droid 2"
+      titlekr: ""
+      url: /edu/bioloid/premium/#walking-droid-2
+      urlkr:
+    - title: "Walking Droid 3"
+      titlekr: ""
+      url: /edu/bioloid/premium/#walking-droid-3
+      urlkr:
+    - title: "Converting .bpg to .tsk"
+      titlekr: ""
+      url: /edu/bioloid/premium/#converting-bpg-to-tsk
+      urlkr:
+  - title: "Download"
+    titlekr: ""
+    url: /edu/bioloid/premium/#download
+    urlkr:
+    children:
+    - title: "Download Task Code"
+      url: /edu/bioloid/premium/#download-task-code
+    - title: "Download Motion File"
+      url: /edu/bioloid/premium/#download-motion-file
+    - title: "Examples"
+      url: /edu/bioloid/premium/#examples
+  - title: "References"
+    titlekr: ""
+    url: /edu/bioloid/premium/#references
+    urlkr:
+    children:
+    - title: "Replacing Fuse"
+      titlekr: ""
+      url: /edu/bioloid/premium/#replacing-fuse-cm-5
+      urlkr:
+    - title: "Dynamixel Management"
+      titlekr: ""
+      url: /edu/bioloid/premium/#dynamixel-management
+      urlkr:
+    - title: "Zigbee Wireless Control"
+      titlekr: ""
+      url: /edu/bioloid/premium/#zigbee-wireless-control
+      urlkr:
+    - title: "Control Multiple Robots"
+      titlekr: ""
+      url: /edu/bioloid/premium/#control-multiple-robots
+      urlkr:
 
 #R+ Task 1.0 sidebar
 rplustask1:
@@ -1732,6 +4027,14 @@ rplustask1:
     - title: "Error Messages"
       url: /software/rplus1/task/task_misc/#error-messages
 
+#Task Code Download sidebar
+download_task_code:
+  - title: "Preparation"
+    url: /docs/en/faq/download_task_code/#preparation
+  - title: "Download"
+    url: /docs/en/faq/download_task_code/#download
+  - title: "Videos"
+    url: /docs/en/faq/download_task_code/#videos
 
 #R+ Manager 2.0 sidebar
 rplusmanager2:

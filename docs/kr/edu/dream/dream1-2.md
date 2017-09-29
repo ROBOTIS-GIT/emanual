@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/kr/edu/dream/dream1-2/
 sidebar:
-  title: Dream-LV.2
+  title: 드림1 2단계
   nav: "dream1-2"
 ---
 
@@ -26,7 +26,7 @@ sidebar:
 
 # [부품 목록](#부품-목록)
 
-![](/emanual/assets/images/edu/dream/dream1-2_partlist.jpg)
+![](/assets/images/edu/dream/dream1-2_partlist.jpg)
 
 # [작동하기](#작동하기)
 
@@ -40,7 +40,7 @@ sidebar:
 + 제어기의 시작버튼을 연속으로 누르면 도,레,미와 같은 음계 소리가 나며 누른 횟수에 따라 내장된 프로그램을 선택할 수 있습니다.
 + 제어기 작동 시 '자동꺼짐 타이머'의 기본 설정 값은 5분 입니다. [자동꺼짐타이머 바로가기]
 
-![](/emanual/assets/images/edu/dream/dream1-2_start.jpg)
+![](/assets/images/edu/dream/dream1-2_start.jpg)
 
 ## [프로그램 선택방법](#프로그램-선택방법)
 
@@ -48,18 +48,18 @@ sidebar:
 
 |시작버튼 누름횟수|교재 내용|로봇 이미지|
 | :---: | :---: | :---: |
-|1 (도)|1장 예제, 코끼리|![](/emanual/assets/images/edu/dream/dream1-2_elephant.jpg)|
-|2 (레)|2장 예제, 꽃과 반딧불|![](/emanual/assets/images/edu/dream/dream1-2_fireflylight.jpg)|
-|3 (미)|3장 예제, 어보이더|![](/emanual/assets/images/edu/dream/dream1-2_avoider.jpg)|
-|4 (파)|4장 예제, 물개|![](/emanual/assets/images/edu/dream/dream1-2_seal.jpg)|
-|5 (솔)|5장 예제, 장수풍뎅이|![](/emanual/assets/images/edu/dream/dream1-2_abeetle.jpg)|
-|6 (라)|6장 예제, 너구리|![](/emanual/assets/images/edu/dream/dream1-2_racoon.jpg)|
-|7 (시)|7장 예제, 전갈|![](/emanual/assets/images/edu/dream/dream1-2_scorpion.jpg)|
-|8 (높은 도)|8장 예제, 강아지|![](/emanual/assets/images/edu/dream/dream1-2_puppy.jpg)|
-|9 (높은 레)|9장 예제, 다람쥐|![](/emanual/assets/images/edu/dream/dream1-2_squirrel.jpg)|
-|10 (높은 미)|10장 예제, 들소|![](/emanual/assets/images/edu/dream/dream1-2_buffalo.jpg)|
-|11 (높은 파)|11장 예제, 악어|![](/emanual/assets/images/edu/dream/dream1-2_crocodile.jpg)|
-|12 (높은 솔)|12장 예제, 상상하세요|![](/emanual/assets/images/edu/dream/dream1-2_eli.jpg)<br />![](/emanual/assets/images/edu/dream/dream1-2_peng.jpg)|
+|1 (도)|1장 예제, 코끼리|![](/assets/images/edu/dream/dream1-2_elephant.jpg)|
+|2 (레)|2장 예제, 꽃과 반딧불|![](/assets/images/edu/dream/dream1-2_fireflylight.jpg)|
+|3 (미)|3장 예제, 어보이더|![](/assets/images/edu/dream/dream1-2_avoider.jpg)|
+|4 (파)|4장 예제, 물개|![](/assets/images/edu/dream/dream1-2_seal.jpg)|
+|5 (솔)|5장 예제, 장수풍뎅이|![](/assets/images/edu/dream/dream1-2_abeetle.jpg)|
+|6 (라)|6장 예제, 너구리|![](/assets/images/edu/dream/dream1-2_racoon.jpg)|
+|7 (시)|7장 예제, 전갈|![](/assets/images/edu/dream/dream1-2_scorpion.jpg)|
+|8 (높은 도)|8장 예제, 강아지|![](/assets/images/edu/dream/dream1-2_puppy.jpg)|
+|9 (높은 레)|9장 예제, 다람쥐|![](/assets/images/edu/dream/dream1-2_squirrel.jpg)|
+|10 (높은 미)|10장 예제, 들소|![](/assets/images/edu/dream/dream1-2_buffalo.jpg)|
+|11 (높은 파)|11장 예제, 악어|![](/assets/images/edu/dream/dream1-2_crocodile.jpg)|
+|12 (높은 솔)|12장 예제, 상상하세요|![](/assets/images/edu/dream/dream1-2_imagine.jpg)|
 
 `참고` USB케이블은 로보티즈 드림 1단계 구성품에 포함되어 있습니다.
 {: .notice}
@@ -76,18 +76,18 @@ sidebar:
 
 |예제 프로그램|로봇 이미지|프로그램|
 | :---: | :---: | :---: |
-|1장 예제, 코끼리|![](/emanual/assets/images/edu/dream/dream1-2_elephant.jpg)|[DREAM_L2_Elephant_KR.tsk]|
-|2장 예제, 꽃과 반딧불|![](/emanual/assets/images/edu/dream/dream1-2_fireflylight.jpg)|[DREAM_L2_Fireflylight_KR.tsk]|
-|3장 예제, 어보이더|![](/emanual/assets/images/edu/dream/dream1-2_avoider.jpg)|[DREAM_L2_Avoider_KR.tsk]|
-|4장 예제, 물개|![](/emanual/assets/images/edu/dream/dream1-2_seal.jpg)|[DREAM_L2_Seal_KR.tsk]|
-|5장 예제, 장수풍뎅이|![](/emanual/assets/images/edu/dream/dream1-2_abeetle.jpg)|[DREAM_L2_Abeetle_KR.tsk]|
-|6장 예제, 너구리|![](/emanual/assets/images/edu/dream/dream1-2_racoon.jpg)|[DREAM_L2_Raccoon_KR.tsk]|
-|7장 예제, 전갈|![](/emanual/assets/images/edu/dream/dream1-2_scorpion.jpg)|[DREAM_L2_Scorpion_KR.tsk]|
-|8장 예제, 강아지|![](/emanual/assets/images/edu/dream/dream1-2_puppy.jpg)|[DREAM_L2_Puppy_KR.tsk]|
-|9장 예제, 다람쥐|![](/emanual/assets/images/edu/dream/dream1-2_squirrel.jpg)|[DREAM_L2_Squirrel_KR.tsk]|
-|10장 예제, 들소|![](/emanual/assets/images/edu/dream/dream1-2_buffalo.jpg)|[DREAM_L2_Buffalo_KR.tsk]|
-|11장 예제, 악어|![](/emanual/assets/images/edu/dream/dream1-2_crocodile.jpg)|[DREAM_L2_Crocodile_KR.tsk]|
-|12장 예제, 상상하세요|![](/emanual/assets/images/edu/dream/dream1-2_eli.jpg)<br />![](/emanual/assets/images/edu/dream/dream1-2_peng.jpg)|[DREAM_L2_Distancesensor_KR.tsk]|
+|1장 예제, 코끼리|![](/assets/images/edu/dream/dream1-2_elephant.jpg)|[DREAM_L2_Elephant_KR.tsk]|
+|2장 예제, 꽃과 반딧불|![](/assets/images/edu/dream/dream1-2_fireflylight.jpg)|[DREAM_L2_Fireflylight_KR.tsk]|
+|3장 예제, 어보이더|![](/assets/images/edu/dream/dream1-2_avoider.jpg)|[DREAM_L2_Avoider_KR.tsk]|
+|4장 예제, 물개|![](/assets/images/edu/dream/dream1-2_seal.jpg)|[DREAM_L2_Seal_KR.tsk]|
+|5장 예제, 장수풍뎅이|![](/assets/images/edu/dream/dream1-2_abeetle.jpg)|[DREAM_L2_Abeetle_KR.tsk]|
+|6장 예제, 너구리|![](/assets/images/edu/dream/dream1-2_racoon.jpg)|[DREAM_L2_Raccoon_KR.tsk]|
+|7장 예제, 전갈|![](/assets/images/edu/dream/dream1-2_scorpion.jpg)|[DREAM_L2_Scorpion_KR.tsk]|
+|8장 예제, 강아지|![](/assets/images/edu/dream/dream1-2_puppy.jpg)|[DREAM_L2_Puppy_KR.tsk]|
+|9장 예제, 다람쥐|![](/assets/images/edu/dream/dream1-2_squirrel.jpg)|[DREAM_L2_Squirrel_KR.tsk]|
+|10장 예제, 들소|![](/assets/images/edu/dream/dream1-2_buffalo.jpg)|[DREAM_L2_Buffalo_KR.tsk]|
+|11장 예제, 악어|![](/assets/images/edu/dream/dream1-2_crocodile.jpg)|[DREAM_L2_Crocodile_KR.tsk]|
+|12장 예제, 상상하세요|![](/assets/images/edu/dream/dream1-2_imagine.jpg)|[DREAM_L2_Distancesensor_KR.tsk]|
 
 # [참고자료](#참고자료)
 

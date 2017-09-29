@@ -296,7 +296,7 @@ THORMANG3 manipulation module for the upper body.
 
 ### [thormang3_walking_module](#thormang3_walking_module)
 
-![](/emanual/assets/images/platform/thormang3/thormang3_walking_module_diagram.jpg)
+![](/assets/images/platform/thormang3/thormang3_walking_module_diagram.jpg)
 
 As seen from the above figure, thormang3_walking_module is one of the MotionModules from ROS Framework.
 THROMANG3 can be controlled with Topics and Services.
@@ -306,12 +306,12 @@ Users can designate almost all Step Parameters.(thormang3_walking_module_msgs/St
 
     thormang3_walking_module includes online walking pattern generator.
     The pattern is generated from Foot Step Data input.
-    ![](/emanual/assets/images/platform/thormang3/thormang3_walking_module_algorithm_diagram.jpg)
+    ![](/assets/images/platform/thormang3/thormang3_walking_module_algorithm_diagram.jpg)
 
 2. Balance Algorithm
 
     The balance algorithm is included as shown below.(thormang3_walking_module_msgs/BalanceParam)
-    ![](/emanual/assets/images/platform/thormang3/thormang3_walking_module_balance_diagram.jpg)
+    ![](/assets/images/platform/thormang3/thormang3_walking_module_balance_diagram.jpg)
 
 - Download & Build
 

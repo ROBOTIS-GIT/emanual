@@ -68,7 +68,7 @@ gallery:
 
 # [부품 목록](#부품-목록)
 
-![](/emanual/assets/images/edu/smart/smart3-2_part-list.jpg)
+![](/assets/images/edu/smart/smart3-2_part-list.jpg)
 
 
 # [작동하기](#작동하기)

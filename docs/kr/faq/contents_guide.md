@@ -153,12 +153,12 @@ sidebar:
 ```text
 ![성능그래프][performance graph]
 
-[performance graph]: {{site.url}}/emanual/assets/images/dxl/x/xh430_w210_performance_graph.jpg
+[performance graph]: {{site.url}}/assets/images/dxl/x/xh430_w210_performance_graph.jpg
 ```
 
 ![성능그래프][image reference]
 
-[image reference]: {{site.url}}/emanual/assets/images/dxl/x/xh430_w210_performance_graph.jpg
+[image reference]: {{site.url}}/assets/images/dxl/x/xh430_w210_performance_graph.jpg
 
 ## [동영상](#동영상)
 동영상 삽입은 유튜브 동영상을 기준으로 아래의 코드를 복사한 후 src의 동영상 주소만 변경해서 작성합니다.
@@ -174,12 +174,12 @@ sidebar:
 
 [컨텐츠 작성방법][link reference]
 
-[link reference]: {{site.url}}/emanual/docs/kr/faq
+[link reference]: {{site.url}}/docs/kr/faq
 
 ```text
 [컨텐츠 작성방법][Contents Format]
 
-[Contents Format]: {{site.url}}/emanual/docs/kr/faq
+[Contents Format]: {{site.url}}/docs/kr/faq
 ```
 
 ## [텍스트 효과](#텍스트-효과)

@@ -11,7 +11,7 @@ sidebar:
   nav: "mx-12w"
 ---
 
-![](/emanual/assets/images/dxl/mx/mx-12_product.jpg)
+![](/assets/images/dxl/mx/mx-12_product.jpg)
 
 # [Specifications](#specifications)
 
@@ -34,7 +34,7 @@ sidebar:
 | Feedback | Position, Temperature, Load, Input Voltage, etc |
 | Material | Engineering Plastic |
 
-{% include dxl/control_table_protocol1.md %}
+{% include en/dxl/control_table_protocol1.md %}
 
 ## [Control Table of EEPROM Area](#control-table-of-eeprom-area)
 
@@ -91,10 +91,10 @@ sidebar:
  This address stores firmware version of the DYNAMIXEL.
 
 ### <a name="id"></a>**ID (3)**
-{% include dxl/control_table_id.md %}
+{% include en/dxl/control_table_id.md %}
 
 ### <a name="baud-rate"></a>**Baud Rate (4)**
-{% include dxl/control_table_baudrate.md %}
+{% include en/dxl/control_table_baudrate.md %}
 
 For BPS over 250 values :
 
@@ -105,43 +105,43 @@ For BPS over 250 values :
 |252|3,000,000|0.000%|
 
 ### <a name="return-delay-time"></a>**Return Delay Time (5)**
-{% include dxl/control_table_return_delay_time.md %}
+{% include en/dxl/control_table_return_delay_time.md %}
 
 ### <a name="cw-angle-limit"></a><a name="ccw-angle-limit"></a>**CW/CCW Angle Limit(6, 8)**
-{% include dxl/control_table_mx_angle_limit.md %}
+{% include en/dxl/control_table_mx_angle_limit.md %}
 
 ### <a name="temperature-limit"></a>**The Maximum Temperature Limit**
-{% include dxl/control_table_temp_limit.md %}
+{% include en/dxl/control_table_temp_limit.md %}
 
 ### <a name="min-voltage-limit"></a><a name="max-voltage-limit"></a>**Min/Max Voltage Limit**
-{% include dxl/control_table_volt_limit.md %}
+{% include en/dxl/control_table_volt_limit.md %}
 
 ### <a name="max-torque"></a>**Max Torque**
-{% include dxl/control_table_max_torque.md %}
+{% include en/dxl/control_table_max_torque.md %}
 
 ### <a name="status-return-level"></a>**Status Return Level**
-{% include dxl/control_table_status_return_lv.md %}
+{% include en/dxl/control_table_status_return_lv.md %}
 
 ### <a name="alarm-led"></a><a name="shutdown"></a>**Alarm LED / Alarm Shutdown**
-{% include dxl/control_table_alarm_shutdown.md %}
+{% include en/dxl/control_table_alarm_shutdown.md %}
 
 ### <a name="multi-turn-offset"></a>**Multi-turn Offset**
-{% include dxl/control_table_multiturn_offset.md %}
+{% include en/dxl/control_table_multiturn_offset.md %}
 
 ### <a name="resolution-divider"></a>**Resolution Divider**
-{% include dxl/control_table_resolution_divider.md %}
+{% include en/dxl/control_table_resolution_divider.md %}
 
 ### <a name="torque-enable"></a>**Torque Enable**
-{% include dxl/control_table_torque_enable.md %}
+{% include en/dxl/control_table_torque_enable.md %}
 
 ### <a name="led"></a>**LED**
-{% include dxl/control_table_led.md %}
+{% include en/dxl/control_table_led.md %}
 
 ### <a name="p-gain"></a><a name="i-gain"></a><a name="d-gain"></a>**PID Gains**
-{% include dxl/control_table_mx_pid.md %}
+{% include en/dxl/control_table_mx_pid.md %}
 
 ### <a name="goal-position"></a>**Goal Position**
-{% include dxl/control_table_mx_goal_position.md %}
+{% include en/dxl/control_table_mx_goal_position.md %}
 
 ### <a name="moving-speed"></a>**Moving Speed**
 - Join Mode, Multi-Turn mode
@@ -163,10 +163,10 @@ For BPS over 250 values :
   {: .notice}
 
 ### <a name="torque-limit"></a>**Torque Limit**
-{% include dxl/control_table_torque_limit.md %}
+{% include en/dxl/control_table_torque_limit.md %}
 
 ### <a name="present-position"></a>**Present Position**
-{% include dxl/control_table_magnet_present_position.md %}
+{% include en/dxl/control_table_magnet_present_position.md %}
 
 ### <a name="present-speed"></a>**Present Speed**
 Is the current moving speed.
@@ -178,28 +178,28 @@ The value unit is about 0.916rpm.
 For example, if it is set to 300 then the motor is moving to the CCW direction at a rate of about 274.8rpm.
 
 ### <a name="present-load"></a>**Present Load**
-{% include dxl/control_table_present_load.md %}
+{% include en/dxl/control_table_present_load.md %}
 
 ### <a name="present-voltage"></a>**Present Voltage**
-{% include dxl/control_table_present_volt.md %}
+{% include en/dxl/control_table_present_volt.md %}
 
 ### <a name="present temperature"></a>**Present Temperature**
-{% include dxl/control_table_present_temp.md %}
+{% include en/dxl/control_table_present_temp.md %}
 
 ### <a name="registered-instruction"></a>**Registered Instruction**
-{% include dxl/control_table_reg_instruction.md %}
+{% include en/dxl/control_table_reg_instruction.md %}
 
 ### <a name="moving"></a>**Moving**
-{% include dxl/control_table_moving.md %}
+{% include en/dxl/control_table_moving.md %}
 
 ### <a name="lock"></a>**Lock**
-{% include dxl/control_table_lock.md %}
+{% include en/dxl/control_table_lock.md %}
 
 ### <a name="punch"></a>**Punch**
-{% include dxl/control_table_punch.md %}
+{% include en/dxl/control_table_punch.md %}
 
 ### <a name="goal-acceleration"></a>**Goal Acceleration**
-{% include dxl/control_table_goal_acceleration.md %}
+{% include en/dxl/control_table_goal_acceleration.md %}
 
 # [How to Assemble](#how-to-assemble)
 
@@ -207,7 +207,7 @@ For example, if it is set to 300 then the motor is moving to the CCW direction a
 
 # [Maintenance](#maintenance)
 
-{% include dxl/horn_bearing_replacement.md %}
+{% include en/dxl/horn_bearing_replacement.md %}
 
 # [Reference](#reference)
 
@@ -222,7 +222,7 @@ For example, if it is set to 300 then the motor is moving to the CCW direction a
 
 ## [Drawings](#drawings)
 
-![](/emanual/assets/images/dxl/ax/ax-12w_dimension.png)
+![](/assets/images/dxl/ax/ax-12w_dimension.png)
 
 
 [Compatibility Guide]: http://en.robotis.com/BlueAD/board.php?bbs_id=faq&mode=view&bbs_no=47&page=1&key=&keyword=&sort=&scate=

@@ -12,8 +12,8 @@ sidebar:
 ---
 
 # [Common](#common)
-1. [Contents Guide](/emanual/docs/en/faq/contents_guide)
+1. [Contents Guide](/docs/en/faq/contents_guide)
 
 # [Education](#education)
-1. [Download Task Code](/emanual/docs/en/software/rplus1/task/getting_started/#program-download)
-2. [Task Rule Check](/emanual/docs/en/software/rplus1/task/task_misc/#rule-check)
+1. [Download Task Code](/docs/en/software/rplus1/task/getting_started/#program-download)
+2. [Task Rule Check](/docs/en/software/rplus1/task/task_misc/#rule-check)
