@@ -34,7 +34,7 @@ sidebar:
 
 1. Connect the controller before downloading the task code. To download the task code, the controller must be connected to the PC. (Please refer to controller information for information on how to connect the controller to the PC.)
 
-2. Select the correct COM port (if you know) or else use the "Automatic Search" function  to easily find out the appropriate port. .
+2. Select the correct COM port (if you know) or else use the "Automatic Search" function  to easily find out the appropriate port.
 
   ![img_02][img_02]
 
