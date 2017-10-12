@@ -293,6 +293,7 @@ main:
         url: /edu/bioloid/gp/
     - title: "MINI"
       titlekr: "미니"
+      url: /edu/mini/
   - title: "SOFTWARE"
     titlekr: "소프트웨어"
     titlejp: "ソフトウェア"
@@ -3778,6 +3779,147 @@ bioloid-premium:
     - title: "Control Multiple Robots"
       titlekr: ""
       url: /edu/bioloid/premium/#control-multiple-robots
+      urlkr:
+
+#BIOLOID GP sidebar
+bioloid-gp:
+  - title: "Introduction"
+    titlekr: "개요"
+    url: /edu/bioloid/gp/#introduction
+    urlkr:
+  - title: "Getting Started"
+    titlekr: ""
+    url: /edu/bioloid/gp/#getting-started
+    urlkr:
+    children:
+    - title: "Part List"
+      titlekr: ""
+      url: /edu/bioloid/gp/#part-list
+      urlkr:
+    - title: "Operating"
+      titlekr: ""
+      url: /edu/bioloid/gp/#operating
+      urlkr:
+    - title: "Battery Charge"
+      titlekr: ""
+      url: /edu/bioloid/gp/#battery-charge
+      urlkr:
+  - title: "Tutorial"
+    titlekr: ""
+    url: /edu/bioloid/gp/#tutorial
+    urlkr:
+    children:
+    - title: "Screen Output"
+      titlekr: ""
+      url: /edu/bioloid/gp/#screen-output
+      urlkr:
+    - title: "Button & LED"
+      titlekr: ""
+      url: /edu/bioloid/gp/#button-led
+      urlkr:
+  - title: "Download"
+    titlekr: ""
+    url: /edu/bioloid/gp/#download
+    urlkr:
+  - title: "References"
+    titlekr: ""
+    url: /edu/bioloid/gp/#references
+    urlkr:
+    children:
+    - title: "Replacing Fuse"
+      titlekr: ""
+      url: /edu/bioloid/gp/#replacing-fuse
+      urlkr:
+    - title: "Dynamixel Management"
+      titlekr: ""
+      url: /edu/bioloid/gp/#dynamixel-management
+      urlkr:
+    - title: "Zigbee Wireless Control"
+      titlekr: ""
+      url: /edu/bioloid/gp/#zigbee-wireless-control
+      urlkr:
+    - title: "Control Multiple Robots"
+      titlekr: ""
+      url: /edu/bioloid/gp/#control-multiple-robots
+      urlkr:
+    - title: "Adding Sensors"
+      titlekr: ""
+      url: /edu/bioloid/gp/#adding-sensors
+      urlkr:
+    - title: "Custom Sensors"
+      titlekr: ""
+      url: /edu/bioloid/gp/#make-your-own-sensor
+      urlkr:
+
+#ROBOTIS MINI sidebar
+mini:
+  - title: "Introduction"
+    titlekr: "개요"
+    url: /edu/mini/#introduction
+    urlkr:
+  - title: "Getting Started"
+    titlekr: ""
+    url: /edu/mini/#getting-started
+    urlkr:
+    children:
+    - title: "Part List"
+      titlekr: ""
+      url: /edu/mini/#part-list
+      urlkr:
+    - title: "Preparation"
+      titlekr: ""
+      url: /edu/mini/#preparation
+      urlkr:
+      children:
+      - title: "Connect to MINI"
+        titlekr: ""
+        url: /edu/mini/#connect-to-mini
+        urlkr:
+      - title: "Check Connection"
+        titlekr: ""
+        url: /edu/mini/#check-connection
+        urlkr:
+  - title: "Operating MINI"
+    titlekr: ""
+    url: /edu/bioloid/gp/#operating-mini
+    urlkr:
+    children:
+    - title: "App Install"
+      titlekr: ""
+      url: /edu/mini/#app-install
+      urlkr:
+    - title: "Operation"
+      titlekr: ""
+      url: /edu/mini/#operation
+      urlkr:
+    - title: "App Setting"
+      titlekr: ""
+      url: /edu/mini/#app-setting
+      urlkr:
+    - title: "Programming"
+      titlekr:
+      url: /edu/mini/#programming
+      urlkr:
+  - title: "Customize"
+    titlekr: ""
+    url: /edu/mini/#customize
+    urlkr:
+  - title: "Download"
+    titlekr: ""
+    url: /edu/mini/#download
+    urlkr:
+  - title: "References"
+    titlekr: ""
+    url: /edu/mini/#references
+    urlkr:
+    children:
+    - title: "Firmware Update"
+      titlekr: ""
+      url: /edu/mini/#firmware-update
+      urlkr:
+    - title: "ID Map"
+      titlekr: ""
+      url: /edu/mini/#id-map
       urlkr:
 
 #R+ Task 1.0 sidebar

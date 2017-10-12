@@ -161,6 +161,14 @@ After mounting the IR receiver on CM-530 under control mode, you can set the cha
 
 {% include en/edu/bioloid/button_led.md %}
 
+# [Download](#download)
+
+|File Type|Download|
+|:---:|:---:|
+|Humanoid Task Code|[Download](http://support.robotis.com/en/baggage_files/bioloid/bio_gp_humanoid_en.tsk)|
+|Humanoid Basic Motion File|[Download](http://support.robotis.com/en/baggage_files/bioloid/bio_gp_humanoid_kr.mtn)|
+|QuickStart Guide PDF File|[Download](http://www.robotis.com/download/doc/BIO_GP_Humanoid_ASM_EN.pdf)|
+
 # [References](#references)
 
 ## [Replacing Fuse](#replacing-fuse)
