@@ -3963,122 +3963,133 @@ op:
     - title: "Shutdown"
       url: /platform/op/getting_started/#shutdown
   - title: "Development"
-    url: /platform/op/getting_started/#development
+    url: /platform/op/development/#development
     children:
     - title: "Getting Ready"
-      url: /platform/op/getting_started/#getting-ready
+      url: /platform/op/development/#getting-ready
       children:
       - title: "Connect to OP"
-        url: /platform/op/getting_started/#connect-to-op
+        url: /platform/op/development/#connect-to-op
       - title: "Source Code"
-        url: /platform/op/getting_started/#source-code
+        url: /platform/op/development/#source-code
       - title: "Terminate Demo Program"
-        url: /platform/op/getting_started/#terminate-demo-program
+        url: /platform/op/development/#terminate-demo-program
       - title: "Execute Demo Program"
-        url: /platform/op/getting_started/#execute-demo-program
+        url: /platform/op/development/#execute-demo-program
     - title: "Framework"
-      url: /platform/op/getting_started/#framework
+      url: /platform/op/development/#framework
       children:
       - title: "CM730 References"
-        url: /platform/op/getting_started/#cm730-references
+        url: /platform/op/development/#cm730-references
       - title: "Math References"
-        url: /platform/op/getting_started/#math-references
+        url: /platform/op/development/#math-references
       - title: "minINI Reference"
-        url: /platform/op/getting_started/#minini-reference
+        url: /platform/op/development/#minini-reference
       - title: "Motion References"
-        url: /platform/op/getting_started/#motion-reference
+        url: /platform/op/development/#motion-reference
       - title: "Vision References"
-        url: /platform/op/getting_started/#vision-reference
+        url: /platform/op/development/#vision-reference
       - title: "Linux Platform Porting"
-        url: /platform/op/getting_started/#linux-platform-porting
+        url: /platform/op/development/#linux-platform-porting
     - title: "Linux Tutorials"
-      url: /platform/op/getting_started/#linux-tutorials
+      url: /platform/op/development/#linux-tutorials
       children:
       - title: "Read/Write"
-        url: /platform/op/getting_started/#read-write
+        url: /platform/op/development/#read-write
       - title: "Camera Capture & View"
-        url: /platform/op/getting_started/#camera-capture-view
+        url: /platform/op/development/#camera-capture-view
       - title: "Image Processing"
-        url: /platform/op/getting_started/#image-processing
+        url: /platform/op/development/#image-processing
       - title: "Head Control"
-        url: /platform/op/getting_started/#head-control
+        url: /platform/op/development/#head-control
       - title: "Walking Control"
-        url: /platform/op/getting_started/#walking-control
+        url: /platform/op/development/#walking-control
       - title: "Action Control"
-        url: /platform/op/getting_started/#action-control
+        url: /platform/op/development/#action-control
       - title: "FSR"
-        url: /platform/op/getting_started/#fsr
+        url: /platform/op/development/#fsr
     - title: "Tools"
-      url: /platform/op/getting_started/#tools
+      url: /platform/op/development/#tools
       children:
       - title: "Action Editor"
-        url: /platform/op/getting_started/#action-editor
+        url: /platform/op/development/#action-editor
       - title: "Dynamixel Monitor"
-        url: /platform/op/getting_started/#dynamixel-monitor
+        url: /platform/op/development/#dynamixel-monitor
       - title: "RoboPlus"
-        url: /platform/op/getting_started/#roboplus
+        url: /platform/op/development/#roboplus
       - title: "Walking Tuner"
-        url: /platform/op/getting_started/#walking-tuner
+        url: /platform/op/development/#walking-tuner
       - title: "Firmware Installer"
-        url: /platform/op/getting_started/#firmware-installer
+        url: /platform/op/development/#firmware-installer
       - title: "Offset Tuner"
-        url: /platform/op/getting_started/#offset-tuner
+        url: /platform/op/development/#offset-tuner
   - title: "Simulation"
-    url: /platform/op/getting_started/#simulation
+    url: /platform/op/simulation/#simulation
     children:
     - title: "Webots Installation"
-      url: /platform/op/getting_started/#webots-installation
+      url: /platform/op/simulation/#webots-installation
     - title: "Cross Compile"
-      url: /platform/op/getting_started/#cross-compile
+      url: /platform/op/simulation/#cross-compile
   - title: "Maintenance"
-    url: /platform/op/getting_started/#maintenance
+    url: /platform/op/maintenance/#maintenance
     children:
     - title: "Fuse Replacement"
-      url: /platform/op/getting_started/#fuse-replacement
+      url: /platform/op/maintenance/#fuse-replacement
     - title: "Hardware Maintenance"
-      url: /platform/op/getting_started/#hardware-maintenance
+      url: /platform/op/maintenance/#hardware-maintenance
     - title: "Dynamixel Replacement"
-      url: /platform/op/getting_started/#dynamixel-replacement
+      url: /platform/op/maintenance/#dynamixel-replacement
     - title: "Controller Connection"
-      url: /platform/op/getting_started/#controller-connection
+      url: /platform/op/maintenance/#controller-connection
     - title: "Camera Connection"
-      url: /platform/op/getting_started/#camera-connection
+      url: /platform/op/maintenance/#camera-connection
     - title: "Self Maintenance Checklist"
-      url: /platform/op/getting_started/#self-maintenance-checklist
+      url: /platform/op/maintenance/#self-maintenance-checklist
     - title: "Recovery"
-      url: /platform/op/getting_started/#recovery
+      url: /platform/op/maintenance/#recovery
       children:
       - title: "Recovery(Ubuntu 9.10)"
-        url: /platform/op/getting_started/#recovery-ubuntu-9-10
+        url: /platform/op/maintenance/#recovery-ubuntu-9-10
       - title: "Recovery(Linux Mint 9)"
-        url: /platform/op/getting_started/#recovery-linux-mint-9
+        url: /platform/op/maintenance/#recovery-linux-mint-9
       - title: "Clonezilla Recovery"
-        url: /platform/op/getting_started/#clonezilla-recovery
+        url: /platform/op/maintenance/#clonezilla-recovery
   - title: "References"
-    url: /platform/op/getting_started/#references
+    url: /platform/op/references/#references
     children:
     - title: "Brochure"
-      url: /platform/op/getting_started/#brochure
+      url: /platform/op/references/#brochure
     - title: "Specifications"
-      url: /platform/op/getting_started/#specifications
+      url: /platform/op/references/#specifications
       children:
       - title: "Hardware Specs"
-        url: /platform/op/getting_started/#hardware-specifications
+        url: /platform/op/references/#hardware-specifications
+      - title: "Mechanical Specs"
+        url: /platform/op/references/#mechanical-specifications
       - title: "Software Specs"
-        url: /platform/op/getting_started/#software-specifications
+        url: /platform/op/references/#software-specifications
     - title: "Software Update Info"
-      url: /platform/op/getting_started/#software-update-info
+      url: /platform/op/references/#software-update-info
       children:
       - title: "Framework Release Note"
-        url: /platform/op/getting_started/#framework-release-note
+        url: /platform/op/references/#framework-release-note
       - title: "CM-730 Firmware Release Note"
-        url: /platform/op/getting_started/#cm-730-firmware-release-note
+        url: /platform/op/references/#cm-730-firmware-release-note
       - title: "MX-28 Firmware Release Note"
-        url: /platform/op/getting_started/#mx-28-firmware-release-note
+        url: /platform/op/references/#mx-28-firmware-release-note
       - title: "FSR Firmware Release Note"
-        url: /platform/op/getting_started/#fsr-firmware-release-note
+        url: /platform/op/references/#fsr-firmware-release-note
     - title: "Links"
-      url: /platform/op/getting_started/#links
+      url: /platform/op/references/#links
+      children:
+      - title: "Sites"
+        url: /platform/op/references/#sites
+      - title: "Recommended Tools"
+        url: /platform/op/references/#recommended-tools
+      - title: "Text Editor Tutorials"
+        url: /platform/op/references/#text-editor-tutorials
+      - title: "Videos"
+        url: /platform/op/references/#videos
 
 #R+ Task 1.0 sidebar
 rplustask1:
