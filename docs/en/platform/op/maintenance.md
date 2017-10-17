@@ -225,7 +225,7 @@ let's say change to 39 so type **wr 3 39**.
 
   ![](/assets/images/platform/op/op_243.jpg)
 
-  > Notice that all actuators fail except ID 1 (remember that the default values on a new Dynamixel is ID 1 and baud rate 34). Notice that ID 39 does not appear anymore. No need to worry this is because ID 39 does not currently have a specific function in DARWIN-OP and the baud rate of said ID is 1 Mbps; whereas the current baud rate between the CM-730 and and MX-28 is 576000 bps.
+  > Notice that all actuators fail except ID 1 (remember that the default values on a new Dynamixel is ID 1 and baud rate 34). Notice that ID 39 does not appear anymore. No need to worry this is because ID 39 does not currently have a specific function in DARWIN-OP and the baud rate of said ID is 1 Mbps; whereas the current baud rate between the CM-730 and and MX-28 is 57600 bps.
 
 7. go to ID 1 by typing **id 1**
 8. The command prompt will change from ID 200 to ID 1

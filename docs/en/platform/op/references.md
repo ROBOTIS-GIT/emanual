@@ -13,7 +13,6 @@ sidebar:
 
 <div style="counter-reset: h1 4"></div>
 
-
 # [References](#references)
 
 ## [Brochure](#brochure)
@@ -103,17 +102,33 @@ You can also get information on the [speaker](http://sourceforge.net/projects/da
 
 #### <a name="sub-controller"></a>Sub Controller
 
-`Download ZIP` [Framework](https://sourceforge.net/projects/darwinop/files/Software/Sub%20Controller/CM730_FIRMWARE_FRAMEWORK.zip/download)
-`Download PDF` [Schematics](http://sourceforge.net/projects/darwinop/files/Hardware/Electronics/Sub%20Controller/DARwIn-OP_Subcontroller_Schematics.pdf/download)
-`Download ZIP` [Reference Guide](https://sourceforge.net/projects/darwinop/files/Software/Sub%20Controller/DARwIn-OP_Subcontroller_Reference_Guide.zip/download)
+- `Download ZIP` [Framework](https://sourceforge.net/projects/darwinop/files/Software/Sub%20Controller/CM730_FIRMWARE_FRAMEWORK.zip/download)
+- `Download PDF` [Schematics](http://sourceforge.net/projects/darwinop/files/Hardware/Electronics/Sub%20Controller/DARwIn-OP_Subcontroller_Schematics.pdf/download)
+- `Download ZIP` [Reference Guide](https://sourceforge.net/projects/darwinop/files/Software/Sub%20Controller/DARwIn-OP_Subcontroller_Reference_Guide.zip/download)
 
-You can also get information about the [gyroscope](http://sourceforge.net/projects/darwinop/files/Hardware/Electronics/Sub%20Controller/Datasheets/Sensor/DARwIn-OP_Gyroscope.pdf/download) and [accelerometer](http://sourceforge.net/projects/darwinop/files/Hardware/Electronics/Sub%20Controller/Datasheets/Sensor/DARwIn-OP_Accelerometer.pdf/download).
+You can also get information about the  [gyroscope](http://sourceforge.net/projects/darwinop/files/Hardware/Electronics/Sub%20Controller/Datasheets/Sensor/DARwIn-OP_Gyroscope.pdf/download) and [accelerometer](http://sourceforge.net/projects/darwinop/files/Hardware/Electronics/Sub%20Controller/Datasheets/Sensor/DARwIn-OP_Accelerometer.pdf/download).
+
+##### How to convert TTL to RS485
+
+![](/assets/images/platform/op/op_255.jpg)
+ 
+Simply apply the 2 changes below to change the comm. method.
+ 
+- Yellow Rectangle : Change location of resistance
+  - RS24 Short : 3P
+  - R25 Short : 4P
+ 
+- Red Rectangle : Must change connector.
+  - Not sold separately by ROBOTIS.
+
+For more information on the connector, please refer to the link below.
+http://support.robotis.com/en/techsupport_eng.htm#product/dynamixel/dxl_connector.htm
 
 ##### Features
 
 |Feature|Specifications|
 |:---:|:---:|
-|CPU	|STMicroelectronics 32F103RE ARM Cortex 32-bit CPU (clocked @ 72MHz) (512KB Flash, 64KB SRAM )|
+|CPU	|STMicroelectronics 32F103RE ARM Cortex 32-bit CPU (clocked @ 72MHz)<br />(512KB Flash, 64KB SRAM )|
 |Interface|5 x LED , 2 x RGB LED, 3 x Button, 1 x Buzzer|
 |External ports|13 x ADC /I/O Ports|
 |Sensor|3-axis gyroscope , 3-axis accelerometer, supply voltage sensor|
@@ -123,11 +138,11 @@ You can also get information about the [gyroscope](http://sourceforge.net/projec
 |External supply voltage|8V ~ 16.8v|
 |Current consumption|Maximum 150mA , Standby 50mA|
 |Dimensions|80.0mm x 75.0mm x 20.0mm|
-|Operation temperature|–65&deg;C to +80&deg;C|
+|Operation temperature|-65&deg;C to +80&deg;C|
 |Weight|51g|
  
 ##### Control Table
-Control Table consists of data regarding the current status and operation of Dynamixel. The user can control Dynamixel by changing data of Control Table via Instruction packet.
+Control Table consists of data regarding the current status and operation of CM-730. The user can control CM-730 by changing data of Control Table via Instruction packet.
 
 ###### EEPROM and RAM
 Data in RAM area is reset to initial values whenever the power is turned on while data in EEPROM area is kept once values are set even if the power is turned off.
@@ -136,7 +151,7 @@ Data in RAM area is reset to initial values whenever the power is turned on whil
 Represents the location of data. To read from or write data to the control table the user should assign the correct address in the Instruction packet.
 
 ###### Access
-Dynamixel has two kinds of data: Read-only data, used mainly for sensing, and read-and-write data used for driving.
+CM-730 has two kinds of data: Read-only data, used mainly for sensing, and read-and-write data used for driving.
 
 ###### Initial Value
 In case of data in the EEPROM Area, the initial values on the right side of the below Control Table are the factory default settings.  
@@ -263,24 +278,6 @@ Decides how to return Status packet. There are three possibilities:
 
 `Note` When Instruction packet is Broadcast ID, Status packet is not returned regardless of Status return level.
 {: .notice}
-
-##### How to convert TTL to RS485
-
-![](/assets/images/platform/op/op_255.jpg)
- 
-Simply apply the 2 changes below to change the comm. method.
- 
-- Yellow Rectangle : Change location of resistance
-  - RS24 Short : 3P
-  - R25 Short : 4P
- 
-- Red Rectangle : Must change connector.
-  - Not sold separately by ROBOTIS.
-
-For more information on the connector, please refer to the link below.
-http://support.robotis.com/en/techsupport_eng.htm#product/dynamixel/dxl_connector.htm
- 
-##### RAM Area
 
 ###### Dynamixel Power
 
