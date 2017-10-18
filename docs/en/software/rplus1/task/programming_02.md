@@ -1341,12 +1341,12 @@ Variables are useful when a number to be remembered, when a value must be change
 [OpenCM9.04]: /docs/en/parts/controller/opencm_904/
 [EXP485]: /docs/en/parts/controller/exp485/
 [OpenCR]: /docs/en/parts/controller/opencr/
-[GM-12A]: /docs/en/parts/parts/motor/gm_12a/
-[SM-10A]: /docs/en/parts/parts/motor/sm_10a/
-[TS-10]: /docs/en/parts/parts/sensor/ts_10/
-[LM-10]: /docs/en/parts/parts/display/lm_10/
+[GM-12A]: /docs/en/parts/parts/motor/gm-12a/
+[SM-10A]: /docs/en/parts/parts/motor/sm-10a/
+[TS-10]: /docs/en/parts/parts/sensor/ts-10/
+[LM-10]: /docs/en/parts/parts/display/lm-10/
 [IRSS-10]: /docs/en/parts/parts/sensor/irss-10/
-[DMS-80]: /docs/en/parts/parts/sensor/dms_80/
+[DMS-80]: /docs/en/parts/parts/sensor/dms-80/
 [Custom Device]: ???
 
 [img_remocon_txd]: /assets/images/sw/rplus1/task/roboplus_task_en_078.png

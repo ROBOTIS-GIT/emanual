@@ -149,12 +149,14 @@ main:
     children:
     - title: "OP"
       titlekr: "OP"
+      url: /platform/op/getting_started/
     - title: "OP2"
       titlekr: "OP2"
     - title: "OP3"
       titlekr: "OP3"
       titlejp: "OP3"
       titlecn: "OP3"
+      url: /platform/op3/getting_started/
     - title: "Hand RX28"
       titlekr: "Hand RX28"
     - title: "Hand MX28"
@@ -293,6 +295,7 @@ main:
         url: /edu/bioloid/gp/
     - title: "MINI"
       titlekr: "미니"
+      url: /edu/mini/
   - title: "SOFTWARE"
     titlekr: "소프트웨어"
     titlejp: "ソフトウェア"
@@ -3780,6 +3783,650 @@ bioloid-premium:
       url: /edu/bioloid/premium/#control-multiple-robots
       urlkr:
 
+#BIOLOID GP sidebar
+bioloid-gp:
+  - title: "Introduction"
+    titlekr: "개요"
+    url: /edu/bioloid/gp/#introduction
+    urlkr:
+  - title: "Getting Started"
+    titlekr: ""
+    url: /edu/bioloid/gp/#getting-started
+    urlkr:
+    children:
+    - title: "Part List"
+      titlekr: ""
+      url: /edu/bioloid/gp/#part-list
+      urlkr:
+    - title: "Operating"
+      titlekr: ""
+      url: /edu/bioloid/gp/#operating
+      urlkr:
+    - title: "Battery Charge"
+      titlekr: ""
+      url: /edu/bioloid/gp/#battery-charge
+      urlkr:
+  - title: "Tutorial"
+    titlekr: ""
+    url: /edu/bioloid/gp/#tutorial
+    urlkr:
+    children:
+    - title: "Screen Output"
+      titlekr: ""
+      url: /edu/bioloid/gp/#screen-output
+      urlkr:
+    - title: "Button & LED"
+      titlekr: ""
+      url: /edu/bioloid/gp/#button-led
+      urlkr:
+  - title: "Download"
+    titlekr: ""
+    url: /edu/bioloid/gp/#download
+    urlkr:
+  - title: "References"
+    titlekr: ""
+    url: /edu/bioloid/gp/#references
+    urlkr:
+    children:
+    - title: "Replacing Fuse"
+      titlekr: ""
+      url: /edu/bioloid/gp/#replacing-fuse
+      urlkr:
+    - title: "Dynamixel Management"
+      titlekr: ""
+      url: /edu/bioloid/gp/#dynamixel-management
+      urlkr:
+    - title: "Zigbee Wireless Control"
+      titlekr: ""
+      url: /edu/bioloid/gp/#zigbee-wireless-control
+      urlkr:
+    - title: "Control Multiple Robots"
+      titlekr: ""
+      url: /edu/bioloid/gp/#control-multiple-robots
+      urlkr:
+    - title: "Adding Sensors"
+      titlekr: ""
+      url: /edu/bioloid/gp/#adding-sensors
+      urlkr:
+    - title: "Custom Sensors"
+      titlekr: ""
+      url: /edu/bioloid/gp/#make-your-own-sensor
+      urlkr:
+
+#ROBOTIS MINI sidebar
+mini:
+  - title: "Introduction"
+    titlekr: "개요"
+    url: /edu/mini/#introduction
+    urlkr:
+  - title: "Getting Started"
+    titlekr: ""
+    url: /edu/mini/#getting-started
+    urlkr:
+    children:
+    - title: "Part List"
+      titlekr: ""
+      url: /edu/mini/#part-list
+      urlkr:
+    - title: "Preparation"
+      titlekr: ""
+      url: /edu/mini/#preparation
+      urlkr:
+      children:
+      - title: "Connect to MINI"
+        titlekr: ""
+        url: /edu/mini/#connect-to-mini
+        urlkr:
+      - title: "Check Connection"
+        titlekr: ""
+        url: /edu/mini/#check-connection
+        urlkr:
+  - title: "Operating MINI"
+    titlekr: ""
+    url: /edu/bioloid/gp/#operating-mini
+    urlkr:
+    children:
+    - title: "App Install"
+      titlekr: ""
+      url: /edu/mini/#app-install
+      urlkr:
+    - title: "Operation"
+      titlekr: ""
+      url: /edu/mini/#operation
+      urlkr:
+    - title: "App Setting"
+      titlekr: ""
+      url: /edu/mini/#app-setting
+      urlkr:
+    - title: "Programming"
+      titlekr:
+      url: /edu/mini/#programming
+      urlkr:
+  - title: "Customize"
+    titlekr: ""
+    url: /edu/mini/#customize
+    urlkr:
+  - title: "Download"
+    titlekr: ""
+    url: /edu/mini/#download
+    urlkr:
+  - title: "References"
+    titlekr: ""
+    url: /edu/mini/#references
+    urlkr:
+    children:
+    - title: "Firmware Update"
+      titlekr: ""
+      url: /edu/mini/#firmware-update
+      urlkr:
+    - title: "ID Map"
+      titlekr: ""
+      url: /edu/mini/#id-map
+      urlkr:
+
+#ROBOTIS OP sidebar
+op:
+  - title: "Introduction"
+    url: /platform/op/getting_started/#introduction
+    children:
+    - title: "Safety Information"
+      url: /platform/op/getting_started/#safety-information
+  - title: "Getting Started"
+    url: /platform/op/getting_started/#getting-started
+    children:
+    - title: "Package Contents"
+      url: /platform/op/getting_started/#package-contents
+    - title: "Layout"
+      url: /platform/op/getting_started/#layout
+    - title: "Charging Battery"
+      url: /platform/op/getting_started/#charging-battery
+    - title: "Battery Hot Swap"
+      url: /platform/op/getting_started/#battery-hot-swap
+  - title: "Operating"
+    url: /platform/op/getting_started/#operating
+    children:
+    - title: "Preparation"
+      url: /platform/op/getting_started/#preparation
+    - title: "Demo Program"
+      url: /platform/op/getting_started/#demo-program
+      children:
+      - title: "Demonstration Ready Mode"
+        url: /platform/op/getting_started/#demonstration-ready-mode
+      - title: "Autonomous Soccer Mode"
+        url: /platform/op/getting_started/#autonomous-soccer-mode
+      - title: "Interactive Motion Mode"
+        url: /platform/op/getting_started/#interactive-motion-mode
+      - title: "Image Processing Mode"
+        url: /platform/op/getting_started/#image-processing-mode
+    - title: "Camera Calibration"
+      url: /platform/op/getting_started/#camera-calibration
+    - title: "Shutdown"
+      url: /platform/op/getting_started/#shutdown
+  - title: "Development"
+    url: /platform/op/development/#development
+    children:
+    - title: "Getting Ready"
+      url: /platform/op/development/#getting-ready
+      children:
+      - title: "Connect to OP"
+        url: /platform/op/development/#connect-to-op
+      - title: "Source Code"
+        url: /platform/op/development/#source-code
+      - title: "Terminate Demo Program"
+        url: /platform/op/development/#terminate-demo-program
+      - title: "Execute Demo Program"
+        url: /platform/op/development/#execute-demo-program
+    - title: "Framework"
+      url: /platform/op/development/#framework
+      children:
+      - title: "CM730 References"
+        url: /platform/op/development/#cm730-references
+      - title: "Math References"
+        url: /platform/op/development/#math-references
+      - title: "minINI Reference"
+        url: /platform/op/development/#minini-reference
+      - title: "Motion References"
+        url: /platform/op/development/#motion-reference
+      - title: "Vision References"
+        url: /platform/op/development/#vision-reference
+      - title: "Linux Platform Porting"
+        url: /platform/op/development/#linux-platform-porting
+    - title: "Linux Tutorials"
+      url: /platform/op/development/#linux-tutorials
+      children:
+      - title: "Read/Write"
+        url: /platform/op/development/#read-write
+      - title: "Camera Capture & View"
+        url: /platform/op/development/#camera-capture-view
+      - title: "Image Processing"
+        url: /platform/op/development/#image-processing
+      - title: "Head Control"
+        url: /platform/op/development/#head-control
+      - title: "Walking Control"
+        url: /platform/op/development/#walking-control
+      - title: "Action Control"
+        url: /platform/op/development/#action-control
+      - title: "FSR"
+        url: /platform/op/development/#fsr
+    - title: "Tools"
+      url: /platform/op/development/#tools
+      children:
+      - title: "Action Editor"
+        url: /platform/op/development/#action-editor
+      - title: "Dynamixel Monitor"
+        url: /platform/op/development/#dynamixel-monitor
+      - title: "RoboPlus"
+        url: /platform/op/development/#roboplus
+      - title: "Walking Tuner"
+        url: /platform/op/development/#walking-tuner
+      - title: "Firmware Installer"
+        url: /platform/op/development/#firmware-installer
+      - title: "Offset Tuner"
+        url: /platform/op/development/#offset-tuner
+  - title: "Simulation"
+    url: /platform/op/simulation/#simulation
+    children:
+    - title: "Webots Installation"
+      url: /platform/op/simulation/#webots-installation
+      children:
+      - title: "Windows Version Check"
+        url: /platform/op/simulation/#windows-version-check
+      - title: "Install Webots"
+        url: /platform/op/simulation/#install-webots
+      - title: "Run Webots"
+        url: /platform/op/simulation/#run-webots
+    - title: "Cross Compile"
+      url: /platform/op/simulation/#cross-compile
+      children:
+      - title: "Getting Sources"
+        url: /platform/op/simulation/#getting-the-sources
+      - title: "Transferring Sources"
+        url: /platform/op/simulation/#transferring-the-sources
+      - title: "Set Up Sources"
+        url: /platform/op/simulation/#setting-up-the-sources
+      - title: "Compile Webot Controller"
+        url: /platform/op/simulation/#compile-webot-controller
+      - title: "Creat/Run Custom Controller"
+        url: /platform/op/simulation/#create-run-custom-controller
+  - title: "Maintenance"
+    url: /platform/op/maintenance/#maintenance
+    children:
+    - title: "Fuse Replacement"
+      url: /platform/op/maintenance/#fuse-replacement
+    - title: "Hardware Maintenance"
+      url: /platform/op/maintenance/#hardware-maintenance
+    - title: "Dynamixel Replacement"
+      url: /platform/op/maintenance/#dynamixel-replacement
+    - title: "Controller Connection"
+      url: /platform/op/maintenance/#controller-connection
+    - title: "Camera Connection"
+      url: /platform/op/maintenance/#camera-connection
+    - title: "Self Maintenance Checklist"
+      url: /platform/op/maintenance/#self-maintenance-checklist
+    - title: "Recovery"
+      url: /platform/op/maintenance/#recovery
+      children:
+      - title: "Recovery(Ubuntu 9.10)"
+        url: /platform/op/maintenance/#recovery-ubuntu-9-10
+      - title: "Recovery(Linux Mint 9)"
+        url: /platform/op/maintenance/#recovery-linux-mint-9
+      - title: "Clonezilla Recovery"
+        url: /platform/op/maintenance/#clonezilla-recovery
+  - title: "References"
+    url: /platform/op/references/#references
+    children:
+    - title: "Brochure"
+      url: /platform/op/references/#brochure
+    - title: "Specifications"
+      url: /platform/op/references/#specifications
+      children:
+      - title: "Hardware Specs"
+        url: /platform/op/references/#hardware-specifications
+      - title: "Mechanical Specs"
+        url: /platform/op/references/#mechanical-specifications
+      - title: "Software Specs"
+        url: /platform/op/references/#software-specifications
+    - title: "Software Update Info"
+      url: /platform/op/references/#software-update-info
+      children:
+      - title: "Framework Release Note"
+        url: /platform/op/references/#framework-release-note
+      - title: "CM-730 Firmware Release Note"
+        url: /platform/op/references/#cm-730-firmware-release-note
+      - title: "MX-28 Firmware Release Note"
+        url: /platform/op/references/#mx-28-firmware-release-note
+      - title: "FSR Firmware Release Note"
+        url: /platform/op/references/#fsr-firmware-release-note
+    - title: "Links"
+      url: /platform/op/references/#links
+      children:
+      - title: "Sites"
+        url: /platform/op/references/#sites
+      - title: "Recommended Tools"
+        url: /platform/op/references/#recommended-tools
+      - title: "Text Editor Tutorials"
+        url: /platform/op/references/#text-editor-tutorials
+      - title: "Videos"
+        url: /platform/op/references/#videos
+
+#ROBOTIS OP2 sidebar
+op2:
+  - title: "Introduction"
+    url: /platform/op2/getting_started/#introduction
+    children:
+    - title: "Safety Information"
+      url: /platform/op2/getting_started/#safety-information
+    - title: "Package Contents"
+      url: /platform/op2/getting_started/#package-contents
+    - title: "Layout"
+      url: /platform/op2/getting_started/#layout
+    - title: "Charging Battery"
+      url: /platform/op2/getting_started/#Charging Battery
+    - title: "Battery Hot Swap"
+      url: /platform/op2/getting_started/#battery-hot-swap
+  - title: "Quick Start"
+    url: /platform/op2/getting_started/#quick-start
+    children:
+    - title: "Power On"
+      url: /platform/op2/getting_started/#power-on
+    - title: "Execute Demo Program"
+      url: /platform/op2/getting_started/#execute-demo-program
+    - title: "Camera Calibration"
+      url: /platform/op2/getting_started/#camera-calibration
+    - title: "Power Off"
+      url: /platform/op2/getting_started/#power-off
+  - title: "Programming Guide"
+    url: /platform/op2/getting_started/#programming-guide
+    children:
+    - title: "Connect to OP2"
+      url: /platform/op2/getting_started/#connect-to-op2
+    - title: "Development Environment"
+      url: /platform/op2/getting_started/#development-environment
+    - title: "Source Code"
+      url: /platform/op2/getting_started/#source-code
+    - title: "Framework"
+      url: /platform/op2/getting_started/#framework
+    - title: "Software Utilities"
+      url: /platform/op2/getting_started/#software-utilities
+    - title: "Recovery Software"
+      url: /platform/op2/getting_started/#recovery-software
+    - title: "Useful Information"
+      url: /platform/op2/getting_started/#useful-information
+  - title: "Miscellaneous"
+    url: /platform/op2/getting_started/#miscellaneous
+    children:
+    - title: "System Block Diagram"
+      url: /platform/op2/getting_started/#system-block-diagram
+    - title: "ID Map"
+      url: /platform/op2/getting_started/#id-map
+    - title: "Warranty"
+      url: /platform/op2/getting_started/#Warranty
+  - title: "Sub Controller(CM-740)"
+    url: /platform/op2/getting_started/#sub-controller-cm-740
+
+#ROBOTIS OP3 sidebar
+op3:
+  - title: "Introduction"
+    url: /platform/op3/getting_started/#introduction
+    children:
+    - title: "Safety Information"
+      url: /platform/op3/getting_started/#safety-information
+    - title: "Package Contents"
+      url: /platform/op3/getting_started/#package-contents
+    - title: "Layout"
+      url: /platform/op3/getting_started/#layout
+    - title: "Charging Battery"
+      url: /platform/op3/getting_started/#Charging Battery
+    - title: "Battery Hot Swap"
+      url: /platform/op3/getting_started/#battery-hot-swap
+  - title: "Quick Start"
+    url: /platform/op3/getting_started/#quick-start
+    children:
+    - title: "Power On"
+      url: /platform/op3/getting_started/#power-on
+    - title: "Execute Demo Program"
+      url: /platform/op3/getting_started/#execute-demo-program
+    - title: "Camera Calibration"
+      url: /platform/op3/getting_started/#camera-calibration
+    - title: "Power Off"
+      url: /platform/op3/getting_started/#power-off
+  - title: "Programming Guide"
+    url: /platform/op3/getting_started/#programming-guide
+    children:
+    - title: "Connect to OP2"
+      url: /platform/op3/getting_started/#connect-to-op3
+    - title: "Development Environment"
+      url: /platform/op3/getting_started/#development-environment
+    - title: "Source Code"
+      url: /platform/op3/getting_started/#source-code
+    - title: "Framework"
+      url: /platform/op3/getting_started/#framework
+    - title: "Software Utilities"
+      url: /platform/op3/getting_started/#software-utilities
+    - title: "Recovery Software"
+      url: /platform/op3/getting_started/#recovery-software
+    - title: "Useful Information"
+      url: /platform/op3/getting_started/#useful-information
+  - title: "Miscellaneous"
+    url: /platform/op3/getting_started/#miscellaneous
+    children:
+    - title: "System Block Diagram"
+      url: /platform/op3/getting_started/#system-block-diagram
+    - title: "ID Map"
+      url: /platform/op3/getting_started/#id-map
+    - title: "Warranty"
+      url: /platform/op3/getting_started/#Warranty
+  - title: "Sub Controller(CM-740)"
+    url: /platform/op3/getting_started/#sub-controller-opencr
+    children:
+    - title: "Control Table"
+      url: /platform/op3/getting_started/#control-table
+    - title: "EEPROM Area"
+      url: /platform/op3/getting_started/#eeprom-area
+    - title: "RAM Area"
+      url: /platform/op3/getting_started/#ram-area
+    - title: "Address Function Help"
+      url: /platform/op3/getting_started/#address-function-help
+    - title: "GPIO Pin Assignments"
+      url: /platform/op3/getting_started/#gpio-pin-assignments
+
+#THORMANG3
+thormang3:
+  - title: "Introduction"
+    url: /platform/thormang3/getting_started/#introduction
+    children:
+    - title: "What is THORMANG3?"
+      url: /platform/thormang3/getting_started/#what-is-thormang3
+    - title: "Package Contents"
+      url: /platform/thormang3/getting_started/#package-contents
+    - title: "Layout"
+      url: /platform/thormang3/getting_started/#layout
+    - title: "Specifications"
+      url: /platform/thormang3/getting_started/#specifications
+    - title: "Safety Information"
+      url: /platform/thormang3/getting_started/#safety-information
+  - title: "Quick Start"
+    url: /platform/thormang3/getting_started/#quick-start
+    children:
+    - title: "Unpacking"
+      url: /platform/thormang3/getting_started/#unpacking
+    - title: "Power On"
+      url: /platform/thormang3/getting_started/#power-on
+    - title: "Connect to THORMANG3"
+      url: /platform/thormang3/getting_started/#connect-to-thormang3
+    - title: "Basic Operation"
+      url: /platform/thormang3/getting_started/#basic-operation
+    - title: "Power Off"
+      url: /platform/thormang3/getting_started/#power-off
+    - title: "Battery Charge"
+      url: /platform/thormang3/getting_started/#battery-charge
+    - title: "Repacking"
+      url: /platform/thormang3/getting_started/#repacking
+  - title: "Getting Started"
+    url: /platform/thormang3/getting_started/#getting-started
+    children:
+    - title: "OS Install"
+      url: /platform/thormang3/getting_started/#os-install
+    - title: "Network Setting"
+      url: /platform/thormang3/getting_started/#network-setting
+      children:
+      - title: "Access Point Setting"
+        url: /platform/thormang3/getting_started/#access-point-setting
+      - title: "PC Setting"
+        url: /platform/thormang3/getting_started/#pc-setting
+    - title: "ROS Install"
+      url: /platform/thormang3/getting_started/#ros-install
+    - title: "ROS Environment Setting"
+      url: /platform/thormang3/getting_started/#ros-environment-setting
+      children:
+      - title: "Network Setting Example"
+        url: /platform/thormang3/getting_started/#network-setting-example
+      - title: "Time Synchronization"
+        url: /platform/thormang3/getting_started/#time-synchronization
+    - title: "ROBOTIS ROS Package Install"
+      url: /platform/thormang3/getting_started/#robotis-ros-package-install
+      children:
+      - title: "MPC Installation"
+        url: /platform/thormang3/getting_started/#mpc-installation
+      - title: "PPC Installation"
+        url: /platform/thormang3/getting_started/#ppc-installation
+      - title: "OPC Installation"
+        url: /platform/thormang3/getting_started/#opc-installation
+      - title: "Update"
+          url: /platform/thormang3/getting_started/#update
+    - title: "Additional ROS Package Install"
+      url: /platform/thormang3/getting_started/#additional-ros-package-install
+      children:
+      - title: "ROS Packages for MPC"
+        url: /platform/thormang3/getting_started/#ros-packages-for-mpc
+      - title: "ROS Packages for PPC"
+        url: /platform/thormang3/getting_started/#ros-packages-for-ppc
+  - title: "THORMANG3 ROS Packages"
+    url: /platform/thormang3/thormang3_ros_packages/#thormang3-ros-packages
+    children:
+    - title: "MPC Packages"
+      url: /platform/thormang3/thormang3_ros_packages/#mpc-packages
+      children:
+      - title: "Manager"
+        url: /platform/thormang3/thormang3_ros_packages/#thormang3_manager
+      - title: "Kinematics & Dynamics"
+        url: /platform/thormang3/thormang3_ros_packages/#thormang3_kinematics_dynamics
+      - title: "Action Module"
+        url: /platform/thormang3/thormang3_ros_packages/#thormang3_action_module
+      - title: "Base Module"
+        url: /platform/thormang3/thormang3_ros_packages/#thormang3_base_module
+      - title: "Manipulation Module"
+        url: /platform/thormang3/thormang3_ros_packages/#thormang3_manipulation_module
+      - title: "Walking Module"
+        url: /platform/thormang3/thormang3_ros_packages/#thormang3_walking_module
+      - title: "Head Control Module"
+        url: /platform/thormang3/thormang3_ros_packages/#thormang3_head_control_module
+      - title: "FT Sensor"
+        url: /platform/thormang3/thormang3_ros_packages/#ati_ft_sensor
+      - title: "Feet FT Module"
+        url: /platform/thormang3/thormang3_ros_packages/#thormang3_feet_ft_module
+      - title: "Balance Control"
+        url: /platform/thormang3/thormang3_ros_packages/#thormang3_balance_control
+      - title: "IMU"
+        url: /platform/thormang3/thormang3_ros_packages/#imu-3dm-gx4
+    - title: "PPC Packages"
+      url: /platform/thormang3/thormang3_ros_packages/#ppc-packages
+      children:
+      - title: "thormang3_sensors"
+        url: /platform/thormang3/thormang3_ros_packages/#thormang3-sensors
+      - title: "thormang3_simple_demo"
+        url: /platform/thormang3/thormang3_ros_packages/#thormang3-simple-demo
+    - title: "OPC Packages"
+      url: /platform/thormang3/thormang3_ros_packages/#opc-packages
+      children:
+      - title: "humanoid_navigation"
+        url: /platform/thormang3/thormang3_ros_packages/#humanoid-navigation
+      - title: "thormang3_demo"
+        url: /platform/thormang3/thormang3_ros_packages/#thormang3-demo
+      - title: "thormang3_action_script_player"
+        url: /platform/thormang3/thormang3_ros_packages/#thormang3-action-script-player
+      - title: "thormang3_foot_step_generator"
+        url: /platform/thormang3/thormang3_ros_packages/#thormang3-foot-setp-generator
+      - title: "thormang3_offset_tuner_client"
+        url: /platform/thormang3/thormang3_ros_packages/#thormang3-offset-tuner-client
+    - title: "Common Packages"
+      url: /platform/thormang3/thormang3_ros_packages/#common-packages
+      children:
+      - title: "thormang3_description"
+        url: /platform/thormang3/thormang3_ros_packages/#thormang3-description
+      - title: "thormang3_gazebo"
+        url: /platform/thormang3/thormang3_ros_packages/#thormang3-gazebo
+    - title: "Tools Packages"
+      url: /platform/thormang3/thormang3_ros_packages/#tools-packages
+      children:
+      - title: "thormang3_offset_tuner_server"
+        url: /platform/thormang3/thormang3_ros_packages/#thormang3-offset-tuner-server
+      - title: "thormang3_action_editor"
+        url: /platform/thormang3/thormang3_ros_packages/#thormang3-action-editor
+    - title: "THORMANG msgs Package"
+      url: /platform/thormang3/thormang3_ros_packages/#thormang-msgs-package
+      children:
+      - title: "thormang3_action_module_msgs"
+        url: /platform/thormang3/thormang3_ros_packages/#thormang3-action-module-msgs
+      - title: "thormang3_fee_ft_module_msgs"
+        url: /platform/thormang3/thormang3_ros_packages/#thormang3-feet-ft-module-msgs
+      - title: "thormang3_manipulation_module_msgs"
+        url: /platform/thormang3/thormang3_ros_packages/#thormang3-manipulation-module-msgs
+      - title: "thormang3_walking_module_msgs"
+        url: /platform/thormang3/thormang3_ros_packages/#thormang3-walking-module-msgs
+      - title: "thormang3_head_control_module_msgs"
+        url: /platform/thormang3/thormang3_ros_packages/#thormang3-head-control-module-msgs
+      - title: "thormang3_offset_tuner_msgs"
+        url: /platform/thormang3/thormang3_ros_packages/#thormang3-offset-tuner-msgs
+  - title: "THORMANG3 Operation"
+    url: /platform/thormang3/thormang3_operation/#thormang3-operation
+    children:
+    - title: "Preparation"
+      url: /platform/thormang3/thormang3_operation/#preparation
+    - title: "Simple Demo"
+      url: /platform/thormang3/thormang3_operation/#simple-demo
+    - title: "GUI Program"
+      url: /platform/thormang3/thormang3_operation/#gui-program
+      children:
+      - title: "What is OPC"
+        url: /platform/thormang3/thormang3_operation/#what-is-opc
+      - title: "Visualized Monitoring"
+        url: /platform/thormang3/thormang3_operation/#visualized-monitoring
+      - title: "Remote Control(GUI Demo)"
+        url: /platform/thormang3/thormang3_operation/#remote-control-gui-demo
+      - title: "Calibrate FT Sensors"
+        url: /platform/thormang3/thormang3_operation/#calibrate-ft-sensors
+      - title: "Operate Head Module"
+        url: /platform/thormang3/thormang3_operation/#operate-head-module
+      - title: "Operate Manipulation Module"
+        url: /platform/thormang3/thormang3_operation/#operate-manipulation-module
+      - title: "Operate Walking Module"
+        url: /platform/thormang3/thormang3_operation/#operate-walking-module
+    - title: "Offset Tuner"
+      url: /platform/thormang3/thormang3_operation/#offset-tuner
+  - title: "Gazebo Simulation"
+    url: /platform/thormang3/thormang3_operation/#gazebo-simulation
+    children:
+    - title: "Install Gazebo"
+      url: /platform/thormang3/thormang3_operation/#install-gazebo
+    - title: "Run Simulation"
+      url: /platform/thormang3/thormang3_operation/#run-simulation
+  - title: "References"
+    url: /platform/thormang3/thormang3_operation/#references
+    children:
+    - title: "Router Setting"
+      url: /platform/thormang3/thormang3_operation/#router-setting
+    - title: "LiDAR IP Setting"
+      url: /platform/thormang3/thormang3_operation/#lidar-ip-setting
+    - title: "System Block Diagram"
+      url: /platform/thormang3/thormang3_operation/#system-block-diagram
+    - title: "Technical Specifications"
+      url: /platform/thormang3/thormang3_operation/#technical-specifications
+    - title: "ID Map"
+      url: /platform/thormang3/thormang3_operation/#id-map
+    - title: "Physical Properties"
+      url: /platform/thormang3/thormang3_operation/#physical-properties
+
 #R+ Task 1.0 sidebar
 rplustask1:
   - title: "Introduction"
@@ -4140,108 +4787,6 @@ cm-200:
     titlekr: "참고자료"
     url: /parts/controller/cm-200/#reference
     urlkr: /parts/controller/cm-200/#참고자료
-
-#THORMANG3
-thormang3:
-  - title: "Getting Started"
-    url: /platform/thormang3/getting_started/#getting-started
-    children:
-    - title: "OS Install"
-      url: /platform/thormang3/getting_started/#os-install
-    - title: "Network Setting"
-      url: /platform/thormang3/getting_started/#network-setting
-      children:
-        - title: "Access Point Setting"
-          url: /platform/thormang3/getting_started/#access-point-setting
-        - title: "PC Setting"
-          url: /platform/thormang3/getting_started/#pc-setting
-    - title: "ROS Install"
-      url: /platform/thormang3/getting_started/#ros-install
-    - title: "ROS Environment Setting"
-      url: /platform/thormang3/getting_started/#ros-environment-setting
-      children:
-        - title: "Network Setting Example"
-          url: /platform/thormang3/getting_started/#network-setting-example
-        - title: "Time Synchronization"
-          url: /platform/thormang3/getting_started/#time-synchronization
-    - title: "ROBOTIS ROS Package Install"
-      url: /platform/thormang3/getting_started/#robotis-ros-package-install
-      children:
-        - title: "MPC Installation"
-          url: /platform/thormang3/getting_started/#mpc-installation
-        - title: "PPC Installation"
-          url: /platform/thormang3/getting_started/#ppc-installation
-        - title: "OPC Installation"
-          url: /platform/thormang3/getting_started/#opc-installation
-        - title: "Update"
-          url: /platform/thormang3/getting_started/#update
-    - title: "Additional ROS Package Install"
-      url: /platform/thormang3/getting_started/#additional-ros-package-install
-      children:
-        - title: "ROS Packages for MPC"
-          url: /platform/thormang3/getting_started/#ros-packages-for-mpc
-        - title: "ROS Packages for PPC"
-          url: /platform/thormang3/getting_started/#ros-packages-for-ppc
-  - title: "THORMANG3 ROS Packages"
-    url: /platform/thormang3/thormang3_ros_packages/#thormang3-ros-packages
-    children:
-    - title: "MPC Packages"
-      url: /platform/thormang3/thormang3_ros_packages/#mpc-packages
-      children:
-        - title: "Manager"
-          url: /platform/thormang3/thormang3_ros_packages/#thormang3_manager
-        - title: "Kinematics & Dynamics"
-          url: /platform/thormang3/thormang3_ros_packages/#thormang3_kinematics_dynamics
-        - title: "Action Module"
-          url: /platform/thormang3/thormang3_ros_packages/#thormang3_action_module
-        - title: "Base Module"
-          url: /platform/thormang3/thormang3_ros_packages/#thormang3_base_module
-        - title: "Manipulation Module"
-          url: /platform/thormang3/thormang3_ros_packages/#thormang3_manipulation_module
-        - title: "Walking Module"
-          url: /platform/thormang3/thormang3_ros_packages/#thormang3_walking_module
-        - title: "Head Control Module"
-          url: /platform/thormang3/thormang3_ros_packages/#thormang3_head_control_module
-        - title: "FT Sensor"
-          url: /platform/thormang3/thormang3_ros_packages/#ati_ft_sensor
-        - title: "Feet FT Module"
-          url: /platform/thormang3/thormang3_ros_packages/#thormang3_feet_ft_module
-        - title: "Balance Control"
-          url: /platform/thormang3/thormang3_ros_packages/#thormang3_balance_control
-        - title: "IMU"
-          url: /platform/thormang3/thormang3_ros_packages/#imu-3dm-gx4
-    - title: "PPC Packages"
-      url: /platform/thormang3/thormang3_ros_packages/#ppc-packages
-    - title: "OPC Packages"
-      url: /platform/thormang3/thormang3_ros_packages/#opc-packages
-    - title: "Common Packages"
-      url: /platform/thormang3/thormang3_ros_packages/#common-packages
-    - title: "Tools Packages"
-      url: /platform/thormang3/thormang3_ros_packages/#tools-packages
-    - title: "THORMANG msgs Package"
-      url: /platform/thormang3/thormang3_ros_packages/#thormang-msgs-package
-  - title: "THORMANG3 Operation"
-    url: /platform/thormang3/thormang3_operation/#thormang3-operation
-    children:
-    - title: "Preparation"
-      url: /platform/thormang3/thormang3_operation/#preparation
-    - title: "Simple Demo"
-      url: /platform/thormang3/thormang3_operation/#simple-demo
-    - title: "GUI Program"
-      url: /platform/thormang3/thormang3_operation/#gui-program
-    - title: "Offset Tuner"
-      url: /platform/thormang3/thormang3_operation/#offset-tuner
-  - title: "Gazebo Simulation"
-    url: /platform/thormang3/thormang3_operation/#gazebo-simulation
-    children:
-    - title: "Install Gazebo"
-      url: /platform/thormang3/thormang3_operation/#install-gazebo
-    - title: "Run Simulation"
-      url: /platform/thormang3/thormang3_operation/#run-simulation
-  - title: "Maintenance"
-    url: /platform/thormang3/thormang3_operation/#maintenance
-  - title: "References"
-    url: /platform/thormang3/thormang3_operation/#references
 
 contents-guide:
   - title: "Contents Guide"
