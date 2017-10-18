@@ -1566,6 +1566,7 @@ Maximum values of each properties.
 ###### Bit mask (enum)
 
 Position value bit mask.
+
 |Name|Value|Description|
 |:---:|:---:|:---:|
 |RANGE_BIT_MASK|0x03FF|Position value bit mask|
@@ -1645,49 +1646,49 @@ Process.
  
 ###### bool LoadFile( char* filename )
 
-지정된 action file 로부터 action 정보를 읽어온다.
+Load action information from designated action file.
 
 - Arguments
 
 |Name|Type|Description|
 |:---:|:---:|:---:|
-|filename|char*|읽어 오려는 Action file name|
+|filename|char*|Action file name to be read|
 
 - Return : On success, true is returned. On fail, false is returned.
  
 ###### bool CreateFile( char* filename )
 
-지정된 filename 으로 file 을 생성하고, 해당 파일에 action 정보를 저장한다.
+Create a file with assigned file name and save action information.
 
 - Arguments
 
 |Name|Type|Description|
 |:---:|:---:|:---:|
-|filename|char*|생성하려는 action file 의 file name|
+|filename|char*|file name of the action file to create|
 
 - Return : On success, true is returned. On fail, false is returned.
  
 ###### bool Start( int iPage )
 
-지정된 page 의 action 을 재생한다.
+Play action in the page.
 
 - Arguments
 
 |Name|Type|Description|
 |:---:|:---:|:---:|
-|iPage|int|재생하려는 action 의 page number|
+|iPage|int|page number of the action to play|
 
 - Return : On success, true is returned. On fail, false is returned.
  
 ###### bool Start( char* namePage )
 
-지정된 page name 을 갖는 action 을 재생한다.
+Play the action in the page name.
 
 - Arguments
 
 |Name|Type|Description|
 |:---:|:---:|:---:|
-|namePage|char*|재생하려는 action 의 page name|
+|namePage|char*|page name of the action to play|
 
 - Return : On success, true is returned. On fail, false is returned.
  
@@ -3170,15 +3171,15 @@ method to obtain global reference for Instance.
  
 ##### Operators
 
-###### const LinuxServer& operator << ( const std::string& s ) const
+###### const LinuxServer& operator &lt;&lt; ( const std::string& s ) const
 
 - Send
  
-###### const LinuxServer& operator << ( const int& i ) const
+###### const LinuxServer& operator &lt;&lt; ( const int& i ) const
 
 - Send
  
-###### const LinuxServer& operator >> ( const std::string& s ) const
+###### const LinuxServer& operator &gt;&gt; ( const std::string& s ) const
 
 - Read
 

@@ -4293,7 +4293,7 @@ thormang3:
       - title: "OPC Installation"
         url: /platform/thormang3/getting_started/#opc-installation
       - title: "Update"
-          url: /platform/thormang3/getting_started/#update
+        url: /platform/thormang3/getting_started/#update
     - title: "Additional ROS Package Install"
       url: /platform/thormang3/getting_started/#additional-ros-package-install
       children:

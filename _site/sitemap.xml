@@ -43,6 +43,12 @@
 <loc>http://localhost:4000/emanual/docs/en/dxl/crc/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/emanual/docs/en/platform/op/development/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/emanual/docs/en/parts/sensor/dms-80/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/emanual/docs/en/faq/download_task_code/</loc>
 </url>
 <url>
@@ -76,6 +82,9 @@
 <loc>http://localhost:4000/emanual/docs/en/dxl/dx/dx-117/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/emanual/docs/en/software/rplus1/dynamixe_wizard/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/emanual/docs/en/dxl/ex/ex-106+/</loc>
 </url>
 <url>
@@ -94,6 +103,12 @@
 <loc>http://localhost:4000/emanual/docs/kr/faq</loc>
 </url>
 <url>
+<loc>http://localhost:4000/emanual/docs/en/platform/op/getting_started/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/emanual/docs/en/platform/op2/getting_started/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/emanual/docs/en/platform/op3/getting_started/</loc>
 </url>
 <url>
@@ -110,6 +125,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/emanual/docs/kr/software/rplus2/manager/getting_started/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/emanual/docs/en/edu/bioloid/gp/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/emanual/docs/en/dxl/pro/h42-20-s300-r/</loc>
@@ -139,20 +157,9 @@
 <loc>http://localhost:4000/emanual/</loc>
 </url>
 <url>
-<<<<<<< HEAD
-<<<<<<< HEAD
-<loc>http://localhost:4000/emanual/docs/kr/software/rplus1/task/programming_01/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/emanual/docs/kr/software/rplus1/task/programming_02/</loc>
-</url>
-<url>
-=======
-=======
 <loc>http://localhost:4000/emanual/docs/en/edu/ollo/inventor/</loc>
 </url>
 <url>
->>>>>>> contents
 <loc>http://localhost:4000/emanual/docs/en/dxl/pro/l42-10-s300-r/</loc>
 </url>
 <url>
@@ -178,6 +185,12 @@
 </url>
 <url>
 <loc>http://localhost:4000/emanual/docs/en/dxl/pro/m54-60-s250-r/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/emanual/docs/en/platform/op/maintenance/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/emanual/docs/en/edu/mini/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/emanual/docs/en/dxl/mx/mx-106-2/</loc>
@@ -222,6 +235,9 @@
 <loc>http://localhost:4000/emanual/docs/en/dxl/protocol2/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/emanual/docs/en/platform/op/references/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/emanual/docs/en/dxl/rx/rx-10/</loc>
 </url>
 <url>
@@ -234,8 +250,10 @@
 <loc>http://localhost:4000/emanual/docs/en/dxl/rx/rx-64/</loc>
 </url>
 <url>
->>>>>>> contents
 <loc>http://localhost:4000/emanual/search/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/emanual/docs/en/platform/op/simulation/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/emanual/docs/kr/edu/smart/smart3-2/</loc>
@@ -245,6 +263,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/emanual/docs/en/software/rplus1/task/task_misc/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/emanual/docs/en/platform/thormang3/thormang3_operation/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/emanual/docs/en/platform/thormang3/thormang3_ros_packages/</loc>
