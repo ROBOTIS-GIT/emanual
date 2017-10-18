@@ -165,6 +165,7 @@ main:
       titlekr: "Manipulator-H"
       titlejp: "Manipulator-H"
       titlecn: "Manipulator-H"
+      url: /platform/manipulator_h/introduction/
     - title: "Thormang3"
       titlekr: "똘망3"
       titlejp: "Thormang3"
@@ -4121,7 +4122,7 @@ op2:
     - title: "Layout"
       url: /platform/op2/getting_started/#layout
     - title: "Charging Battery"
-      url: /platform/op2/getting_started/#Charging Battery
+      url: /platform/op2/getting_started/#charging-battery
     - title: "Battery Hot Swap"
       url: /platform/op2/getting_started/#battery-hot-swap
   - title: "Quick Start"
@@ -4160,7 +4161,7 @@ op2:
     - title: "ID Map"
       url: /platform/op2/getting_started/#id-map
     - title: "Warranty"
-      url: /platform/op2/getting_started/#Warranty
+      url: /platform/op2/getting_started/#warranty
   - title: "Sub Controller(CM-740)"
     url: /platform/op2/getting_started/#sub-controller-cm-740
 
@@ -4176,7 +4177,7 @@ op3:
     - title: "Layout"
       url: /platform/op3/getting_started/#layout
     - title: "Charging Battery"
-      url: /platform/op3/getting_started/#Charging Battery
+      url: /platform/op3/getting_started/#charging-battery
     - title: "Battery Hot Swap"
       url: /platform/op3/getting_started/#battery-hot-swap
   - title: "Quick Start"
@@ -4193,7 +4194,7 @@ op3:
   - title: "Programming Guide"
     url: /platform/op3/getting_started/#programming-guide
     children:
-    - title: "Connect to OP2"
+    - title: "Connect to OP3"
       url: /platform/op3/getting_started/#connect-to-op3
     - title: "Development Environment"
       url: /platform/op3/getting_started/#development-environment
@@ -4215,7 +4216,7 @@ op3:
     - title: "ID Map"
       url: /platform/op3/getting_started/#id-map
     - title: "Warranty"
-      url: /platform/op3/getting_started/#Warranty
+      url: /platform/op3/getting_started/#warranty
   - title: "Sub Controller(CM-740)"
     url: /platform/op3/getting_started/#sub-controller-opencr
     children:
@@ -4426,6 +4427,75 @@ thormang3:
       url: /platform/thormang3/thormang3_operation/#id-map
     - title: "Physical Properties"
       url: /platform/thormang3/thormang3_operation/#physical-properties
+
+#Manipulator-H
+manipulator_h:
+  - title: "Introduction"
+    url: /platform/manipulator_h/introduction/#introduction
+    children:
+    - title: "Safety Information"
+      url: /platform/manipulator_h/introduction/#safety-information
+    - title: "Package Contents"
+      url: /platform/manipulator_h/introduction/#package-contents
+    - title: "Layout"
+      url: /platform/manipulator_h/introduction/#layout
+    - title: "Specifications"
+      url: /platform/manipulator_h/introduction/#specifications
+    - title: "D-H Configuration"
+      url: /platform/manipulator_h/introduction/#d-h-configuration
+    - title: "Home Position"
+      url: /platform/manipulator_h/introduction/#home-position
+  - title: "Getting Started"
+    url: /platform/manipulator_h/introduction/#getting-started
+    children:
+    - title: "Prerequisite"
+      url: /platform/manipulator_h/introduction/#prerequisite
+    - title: "Preparation"
+      url: /platform/manipulator_h/introduction/#preparation
+    - title: "Product Assembly"
+      url: /platform/manipulator_h/introduction/#product-assembly
+    - title: "USB2Dynamixel Setting"
+      url: /platform/manipulator_h/introduction/#usb2dynamixel-setting
+    - title: "Manipulator Test"
+      url: /platform/manipulator_h/introduction/#manipulator-test
+    - title: "Manipulator SDK"
+      url: /platform/manipulator_h/introduction/#manipulator-sdk
+  - title: "Examples"
+    url: /platform/manipulator_h/introduction/#examples
+    children:
+    - title: "Arm Monitor"
+      url: /platform/manipulator_h/introduction/#armmonitor
+    - title: "Simple P to P"
+      url: /platform/manipulator_h/introduction/#simpleptop
+    - title: "Simple IK"
+      url: /platform/manipulator_h/introduction/#simpleik
+    - title: "Simple Torque & FK"
+      url: /platform/manipulator_h/introduction/#simpletorquefk
+  - title: "Manipulator SDK Programming"
+    url: /platform/manipulator_h/introduction/#manipulator-sdk-programming
+    children:
+    - title: "SDK Description"
+      url: /platform/manipulator_h/introduction/#sdk-description
+    - title: "SDK Flowchart"
+      url: /platform/manipulator_h/introduction/#sdk-flowchart
+  - title: "Firmware Recovery"
+    url: /platform/manipulator_h/introduction/#firmware-recovery
+  - title: "References"
+    url: /platform/manipulator_h/introduction/#references
+    children:
+    - title: "ARMSDK Define"
+      url: /platform/manipulator_h/introduction/#armsdk-define
+    - title: "ARMSDK Math"
+      url: /platform/manipulator_h/introduction/#armsdk-math
+    - title: "MotionEngine"
+      url: /platform/manipulator_h/introduction/#motionengine
+    - title: "RobotisLib"
+      url: /platform/manipulator_h/introduction/#robotislib
+    - title: "Timer"
+      url: /platform/manipulator_h/introduction/#timer
+    - title: "Mass Property"
+      url: /platform/manipulator_h/introduction/#mass-property
+      
 
 #R+ Task 1.0 sidebar
 rplustask1:

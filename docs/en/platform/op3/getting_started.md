@@ -625,6 +625,7 @@ For each reset bit, corresponding LED will be turned off.
 |BIT|15|14 ~ 10|9 ~ 5|4 ~ 0|
 |:---:|:---:|:---:|:---:|:---:|
 |Value|X|LED_B|LED_G|LED_R|
+
 Chest LED is a tricolor LED and the color can be represented with RGB values.
 
 ### Buzzer

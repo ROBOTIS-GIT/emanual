@@ -86,31 +86,31 @@ To switch battery pack, while operating, perform the following:
 
 1. Connect the DC power to the DC jack.
 
-  ![](/assets/images/platform/op/op_hotswap_01.jpg)
+    ![](/assets/images/platform/op/op_hotswap_01.jpg)
  
 2. Disconnect the battery cable from the battery jack.
 
-  ![](/assets/images/platform/op/op_hotswap_02.jpg)
+    ![](/assets/images/platform/op/op_hotswap_02.jpg)
  
 3. Unscrew the thumbscrew from the battery compartment door.
 
-  ![](/assets/images/platform/op/op_hotswap_03.jpg)
+    ![](/assets/images/platform/op/op_hotswap_03.jpg)
  
 4. Remove the battery pack.
 
-  ![](/assets/images/platform/op/op_hotswap_04.jpg)
+    ![](/assets/images/platform/op/op_hotswap_04.jpg)
  
 5. Insert a fully-charged battery pack; close and screw the thumbscrew.
 
-  ![](/assets/images/platform/op/op_hotswap_05.jpg)
+    ![](/assets/images/platform/op/op_hotswap_05.jpg)
  
 6. Connect the battery cable to the battery jack(The connector is a standard deans jack with the same dimensions).
 
-  ![](/assets/images/platform/op/op_hotswap_06.jpg)
+    ![](/assets/images/platform/op/op_hotswap_06.jpg)
  
 7. Remove DC power from the DC jack.
 
-  ![](/assets/images/platform/op/op_hotswap_07.jpg)
+    ![](/assets/images/platform/op/op_hotswap_07.jpg)
 
 # [Operating](#operating)
 
@@ -120,36 +120,33 @@ The following procedure takes you through the set up process.
  
 1. Set DARWIN-OP in the kneeling position as illustrated below
 
-  ![](/assets/images/platform/op/op_001.jpg)
+    ![](/assets/images/platform/op/op_001.jpg)
 
   `Caution` Setting DARWIN-OP in any position other than kneeling may cause physical damages.
   {: .notice--warning}
  
-2. If DC power (12V) supply is used to provide power to DARWIN-OP
-
+2. If DC power (12V) supply is used to provide power to DARWIN-OP  
   Connect the AC plug of your power adapter into a power outlet and the DC connector into DARWIN-OP's DC jack. The DC jack is located at the back and lower right side of DARWIN-OP.
 
-  ![](/assets/images/platform/op/op_002.jpg)
+    ![](/assets/images/platform/op/op_002.jpg)
  
-3. If Battery Pack (11.1V) is used instead of the DC power supply
-
+3. If Battery Pack (11.1V) is used instead of the DC power supply  
   You can select either DC power supply or battery pack to power on DARWIN-OP. If you want to use the battery pack please follow the steps below.
 
   - Ensure the battery pack is fully charged.
-  - Open the battery back compartment door (unscrew the thumbscrew) and insert the battery pack. Close and secure the compartment (screw the thumbscrew) afterwards.
+  - Open the battery back compartment door (unscrew the thumbscrew) and insert the battery pack.  Close and secure the compartment (screw the thumbscrew) afterwards.
   - Connect the battery pack cable to the battery power jack.
   - Disconnect DC power supply.
  
   `Note` To prevent unexpected shut down ensure that DARWIN-OP is connected to at least 1 active power source.
   {: .notice}
  
-  ![](/assets/images/platform/op/op_003.jpg)
+    ![](/assets/images/platform/op/op_003.jpg)
 
-4. Switching On
-
+4. Switching On  
   Turn rocker switch on located on the back lower right side of DARWIN-OP.
 
-  ![](/assets/images/platform/op/op_004.jpg)
+    ![](/assets/images/platform/op/op_004.jpg)
  
 Once power is on the following will take place sequentially
 
@@ -169,12 +166,12 @@ DARWIN-OP comes with preconfigured 4 modes of operations:
 - Vision Processing mode
  
 DARWIN-OP defaults to Demonstration-ready mode when turned on.  
-To switch between modes, press the `MODE` button. DARWIN-OP announces each mode with each pressing. Each mode has its own indicating LED.
+To switch between modes, press the `MODE` button. DARWIN-OP announces each mode with each pressing. Each mode has its own indicating LED.  
 To run each mode, press `START` button. After pressing `START` DARWIN-OP will stand up and begin operations.
 
 ![](/assets/images/platform/op/op_009.jpg)
  
-**RESET Button**
+**RESET Button**  
 The `RESET` button resets the actuators, not the entire robot. Please keep in mind that the demo program is still running in the main controller.
 
 `Caution` The RESET button powers off all actuators. It is highly recommended that DARWIN-OP is set at kneeling position before pressing RESET or hold DARWIN-OP by its carrying handle. Pressing the RESET button while DARWIN-OP is moving may result in damages the the actuator(s) or/and robot itself.
@@ -199,7 +196,7 @@ DARWIN-OP pursues and kicks a red ball (you can change the ball color), playing 
 
 1. Press the "MODE" button until the LED 1 (red) is on. DARWIN-OP announces "Autonomous soccer mode."
 
-  ![](/assets/images/platform/op/op_011.jpg)
+    ![](/assets/images/platform/op/op_011.jpg)
 
 2. Press the "START" button to begin. DARWIN-OP will stand up and announce "Start soccer demonstration."
 3. Right after then DARWIN-OP announces either
@@ -221,7 +218,7 @@ DARWIN-OP performs pre-programmed motions sequentially while talking.
 
 1. Press the "MODE" button until LED 2 (blue) is on. DARWIN-OP announces "Interactive motion mode."
 
-  ![](/assets/images/platform/op/op_012.jpg)
+    ![](/assets/images/platform/op/op_012.jpg)
   
 2. Press the "START" button to begin. DARWIN-OP will stand up and announce "Start motion demonstration."
 3. DARWIN-OP performs the following actions sequentially
@@ -281,8 +278,10 @@ To be able to manipulate color settings you must:
 The following procedure to access color settings assumes a connection via wired LAN:
 1. Ensure you have a proper connection with DARWIN-OP.
 2. Open up your computer's web browser.  
+
   `Note` Please abstain from using Chrome web browser as it can cause memory leaks!
   {: .notice}
+
 3. On the address line type: http://192.168.123.1:8080
 4. Click on the increment/decrement buttons until you have desired settings. You can see the changes visually.
 
