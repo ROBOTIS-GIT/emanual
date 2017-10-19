@@ -591,7 +591,7 @@ A walking example that follows StepData using [footstep_planner].
 1. Basic Operation
   - Sequentially proceed 1~4 of [Usage] from above "Walking with [thormang3_demo] and [thormang3_foot_step_generator]".   
 
-  [Usage]: /en/platform/thormang3/thormang3_ros_packages/#thormang3_walking_module
+  [Usage]: /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_walking_module
 
 2. Add Visualization
   - Click the `Add` button on the Rviz window.
@@ -1010,26 +1010,26 @@ The following table shows the network settings after the reset.
 |26	|l_leg_an_r(X)	|-90 to 35|
 
 
-[H54-200-S500-R]: /en/dxl/pro/h54-200-s500-r/
-[H54-100-S500-R]: /en/dxl/pro/h54-100-s500-r/
-[H42-20-S300-R]: /en/dxl/pro/h42-20-s300-r/
-[MPC Installation]: /en/platform/thormang3/getting_started/#mpc-installation
-[PPC Installation]: /en/platform/thormang3/getting_started/#ppc-installation
-[OPC Installation]: /en/platform/thormang3/getting_started/#opc-installation
-[ROBOTIS-THORMANG-OPC]: /en/platform/thormang3/thormang3_ros_packages/#opc-packages
-[ROSOTIS-THORMANG-Common]: /en/platform/thormang3/thormang3_ros_packages/#common-packages
-[Example Setting for OPC]: /en/platform/thormang3/getting_started/#ros-environment-setting
-[How to execute Simple Demonstration]: /en/platform/thormang3/thormang3_operation/#simple-demo
-[How to execute OPC's GUI program]: /en/platform/thormang3/thormang3_operation/#gui-program
-[How to run THORMANG3's program]: /en/platform/thormang3/thormang3_operation/#thormang3-operation
-[How to calibrate feet ft sensors]: /en/platform/thormang3/thormang3_operation/#calibrate-ft-sensors
-[thormang3_sensor]: /en/platform/thormang3/thormang3_ros_packages/#thormang3-sensors
-[thormang3_manager]: /en/platform/thormang3/thormang3_ros_packages/#thormang3_manager
-[thormang3_manipulation_module]: /en/platform/thormang3/thormang3_ros_packages/#thormang3_manipulation_module
-[thormang3_walking_module]: /en/platform/thormang3/thormang3_ros_packages/#thormang3_walking_module
-[thormang3_feet_ft_module]: /en/platform/thormang3/thormang3_ros_packages/#thormang3_feet_ft_module
-[thormang3_demo]: /en/platform/thormang3/thormang3_ros_packages/#thormang3-demo
-[thormang3_foot_step_generator]: /en/platform/thormang3/thormang3_ros_packages/#thormang3-foot-setp-generator
-[Balance Parameter]: /en/platform/thormang3/thormang3_ros_packages/#thormang3-walking-module-msgs
-[thormang3_foot_step_generator/data/balance_param.yaml]: /en/platform/thormang3/thormang3_ros_packages/#thormang3-foot-setp-generator
-[footstep_planner]: /en/platform/thormang3/thormang3_ros_packages/#humanoid-navigation
+[H54-200-S500-R]: /docs/en/dxl/pro/h54-200-s500-r/
+[H54-100-S500-R]: /docs/en/dxl/pro/h54-100-s500-r/
+[H42-20-S300-R]: /docs/en/dxl/pro/h42-20-s300-r/
+[MPC Installation]: /docs/en/platform/thormang3/getting_started/#mpc-installation
+[PPC Installation]: /docs/en/platform/thormang3/getting_started/#ppc-installation
+[OPC Installation]: /docs/en/platform/thormang3/getting_started/#opc-installation
+[ROBOTIS-THORMANG-OPC]: /docs/en/platform/thormang3/thormang3_ros_packages/#opc-packages
+[ROSOTIS-THORMANG-Common]: /docs/en/platform/thormang3/thormang3_ros_packages/#common-packages
+[Example Setting for OPC]: /docs/en/platform/thormang3/getting_started/#ros-environment-setting
+[How to execute Simple Demonstration]: /docs/en/platform/thormang3/thormang3_operation/#simple-demo
+[How to execute OPC's GUI program]: /docs/en/platform/thormang3/thormang3_operation/#gui-program
+[How to run THORMANG3's program]: /docs/en/platform/thormang3/thormang3_operation/#thormang3-operation
+[How to calibrate feet ft sensors]: /docs/en/platform/thormang3/thormang3_operation/#calibrate-ft-sensors
+[thormang3_sensor]: /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3-sensors
+[thormang3_manager]: /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_manager
+[thormang3_manipulation_module]: /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_manipulation_module
+[thormang3_walking_module]: /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_walking_module
+[thormang3_feet_ft_module]: /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_feet_ft_module
+[thormang3_demo]: /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3-demo
+[thormang3_foot_step_generator]: /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3-foot-setp-generator
+[Balance Parameter]: /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3-walking-module-msgs
+[thormang3_foot_step_generator/data/balance_param.yaml]: /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3-foot-setp-generator
+[footstep_planner]: /docs/en/platform/thormang3/thormang3_ros_packages/#humanoid-navigation

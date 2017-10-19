@@ -935,7 +935,7 @@ http://www.popsci.com/technology/article/2011-07/video-darwin-op-wants-tecate-no
 
 > DARWIN-OP with gripper demo
 
-[Dynamixel Monitor]: /en/platform/op/development/#dynamixel-monitor
-[Firmware Installer]: /en/platform/op/development/#firmware-installer
-[MX-28]: /en/dxl/mx/mx-28/
-[Dynamixel Protocol 1.0]: /en/dxl/protocol1/
+[Dynamixel Monitor]: /docs/en/platform/op/development/#dynamixel-monitor
+[Firmware Installer]: /docs/en/platform/op/development/#firmware-installer
+[MX-28]: /docs/en/dxl/mx/mx-28/
+[Dynamixel Protocol 1.0]: /docs/en/dxl/protocol1/

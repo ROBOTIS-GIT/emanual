@@ -86,7 +86,7 @@ sidebar:
 |OpenCM IDE||||||||||
 
 
-[ln-101]: /docs/en/parts/interface/ln_101/
+[ln-101]: /docs/en/parts/interface/ln-101/
 
 [cm-100]: /docs/en/parts/controller/cm-100/
 [cm-150]: /docs/en/parts/controller/cm-150/
@@ -96,6 +96,6 @@ sidebar:
 [cm-530]: /docs/en/parts/controller/cm-530/
 [cm-700]: /docs/en/parts/controller/cm-700/
 [cm-900]: /docs/en/parts/controller/cm-900/
-[opencm9.04]: /docs/en/parts/controller/opencm_904/
+[opencm9.04]: /docs/en/parts/controller/opencm904/
 [exp485]: /docs/en/parts/controller/exp485/
 [opencr]: /docs/en/parts/controller/opencr/

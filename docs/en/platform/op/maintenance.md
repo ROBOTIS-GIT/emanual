@@ -134,11 +134,11 @@ You have USB2Dynamixel and a Robotis dedicated robot controller (CM-5, CM-510, o
 
 6. After replacement is done. Run [DXL Monitor] and reset all Dynamixels.
 
-[DXL Monitor]: /en/platform/op/development/#dynamixel-monitor
+[DXL Monitor]: /docs/en/platform/op/development/#dynamixel-monitor
 
 Click [Dynamixel Wizard] for more information.
 
-[Dynamixel Wizard]: /en/software/rplus1/dynamixe_wizard/
+[Dynamixel Wizard]: /docs/en/software/rplus1/dynamixe_wizard/
  
 #### Method B
 You have USB2Dynamixel but do not have a Robotis dedicated robot controller (CM-5, CM-510, or CM-700).
@@ -188,7 +188,7 @@ Once all changes are made you still need to exit Dynamixel Monitor and [Shut dow
 Once shut down and powered off replace the Dynamixel actuator and restore all connections.
 Once connections are restored return to [DXL Monitor] and reset all Dynamixels.
 
-[Shut down DARWIN-OP]: /en/platform/op/getting_started/#shutdown
+[Shut down DARWIN-OP]: /docs/en/platform/op/getting_started/#shutdown
 
 If you are replacing 2 or more Dynamixel then you must perform this procedure again as Dynamixel Wizard will show errors when multiple Dynamixels with the same ID and same baud rate are connected.  
 Once the actuator has been replaced it is highly recommended that you update the firmware with Firmware Installer so that ALL Dynamixels are matched with the same firmware. 
@@ -286,7 +286,7 @@ However in this case instead of the need for 2 3-pin TTL cables you'll only need
 10. The ID change is done. [Shut down DARWIN-OP] properly, power off. Perform replacement, restore all connections and turn DARWIN-OP on again. Remember to set DARWIN-OP in the kneeling position as all actuators are connected and the demo program will run automatically.
 11. Perform the [killall] procedure to end the demo program. Run [DXL Monitor] and reset all Dynamixels.
 
-[killall]: /en/platform/op/development/#terminate-demo-program
+[killall]: /docs/en/platform/op/development/#terminate-demo-program
 
 For multiple Dynamixels, you may only repeat steps 3 through 9. You can disconnect the actuator after step 9, connect the new Dynamixel and run from step 3 again.
 
@@ -456,7 +456,7 @@ You may run your own maintenance check should DARWIN-OP have some anomalies.
 
 1. Please refer to the [Layout] of the LED's. Please see "Power does not turn on" symptom.
 
-[Layout]: /en/platform/op/getting_started/#layout
+[Layout]: /docs/en/platform/op/getting_started/#layout
 
 #### Can't get any sound from DARWIN-OP
 
@@ -890,7 +890,7 @@ After boot selection go to the “Exit” tab and select “Exit Saving Changes�
 14. Make sure you remove the USB thumbdrive, and reboot the DARWIN-OP.
 
 
-[Dynamixel Monitor]: /en/platform/op/development/#dynamixel-monitor
-[Firmware Installer]: /en/platform/op/development/#firmware-installer
-[MX-28]: /en/dxl/mx/mx-28/
-[Dynamixel Protocol 1.0]: /en/dxl/protocol1/
+[Dynamixel Monitor]: /docs/en/platform/op/development/#dynamixel-monitor
+[Firmware Installer]: /docs/en/platform/op/development/#firmware-installer
+[MX-28]: /docs/en/dxl/mx/mx-28/
+[Dynamixel Protocol 1.0]: /docs/en/dxl/protocol1/

@@ -53,7 +53,7 @@ For more information assembly and operation, please refer to the ROBOTIS DREAM L
 [IR Sensor]: /docs/en/parts/sensor/irss-10/
 [LED Module]: /docs/en/parts/display/lm_10/
 [Touch Sensor]: /docs/en/parts/sensor/ts_10/
-[USB Downloader(LN-101)]: /docs/en/parts/interface/ln_101/
+[USB Downloader(LN-101)]: /docs/en/parts/interface/ln-101/
 [How to Download Task code]: /docs/en/faq/download_task_code/
 [ex_01]: http://support.robotis.com/en/baggage_files/dream/dream_l3_musicbox_en.tsk
 [ex_02]: http://support.robotis.com/en/baggage_files/dream/dream_l3_cleaningrobot_en.tsk

@@ -88,7 +88,7 @@ For more information assembly and operation, please refer to the ROBOTIS DREAM L
 
 [CM-150]: /docs/en/parts/controller/cm-150/
 [Geared Motor]: /docs/en/parts/motor/geared_motor/
-[USB Downloader(LN-101)]: /docs/en/parts/interface/ln_101/
+[USB Downloader(LN-101)]: /docs/en/parts/interface/ln-101/
 [How to Download Task code]: /docs/en/faq/download_task_code/
 [Powersave Timer]: /docs/en/software/rplus1/task/programming_02/#powersave-timer
 [DREAM_L2_Total_EN.tsk]: http://support.robotis.com/en/baggage_files/dream/dream_l2_total_en.tsk

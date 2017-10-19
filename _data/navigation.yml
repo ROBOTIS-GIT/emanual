@@ -157,10 +157,8 @@ main:
       titlejp: "OP3"
       titlecn: "OP3"
       url: /platform/op3/getting_started/
-    - title: "Hand RX28"
-      titlekr: "Hand RX28"
-    - title: "Hand MX28"
-      titlekr: "Hand MX28"
+    - titlekr: "Hand RX28"
+    - titlekr: "Hand MX28"
     - title: "Manipulator-H"
       titlekr: "Manipulator-H"
       titlejp: "Manipulator-H"
@@ -175,6 +173,7 @@ main:
       titlekr: "터틀봇3"
       titlejp: "TurtleBot3"
       titlecn: "TurtleBot3"
+      url: http://turtlebot3.robotis.com
   - title: "EDUCATION"
     titlekr: "교육키트"
     titlejp: "トレーニングキット"
@@ -188,39 +187,34 @@ main:
       - title: "Bug Kit"
         titlekr: "버그 키트"
         titlejp: "Bug Kit"
-        titlecn: "Bug Kit"
+        url: /edu/ollo/bugkit/
       - title: "Explorer"
         titlekr: "2단계 교육키트"
         titlejp: "Level 2 Kit"
-        titlecn: "Level 2 Kit"
+        url: /edu/ollo/explore/
       - title: "Inventor"
         titlekr: "3단계 교육키트"
         titlejp: "Level 3 Kit"
-        titlecn: "Level 3 Kit"
+        url: /edu/ollo/inventor/
       - titlekr: "4단계 교육키트"
         titlejp: "Level 4 Kit"
-        titlecn: "Level 4 Kit"
     - title: "Dream"
       titlekr: "드림 I"
       children:
       - titlekr: "1단계 교육키트"
-        titlejp: "Level 1"
         titlecn: "Level 1"
         urlkr: /edu/dream/dream1-1/
       - title: "Level 2"
         titlekr: "2단계 교육키트"
-        titlejp: "Level 2"
         titlecn: "Level 2"
         url: /edu/dream/dream1-2/
         urlkr: /edu/dream/dream1-2/
       - title: "Level 3"
         titlekr: "3단계 교육키트"
-        titlejp: "Level 3"
         titlecn: "Level 3"
         url: /edu/dream/dream1-3/
       - title: "Level 4"
         titlekr: "4단계 교육키트"
-        titlejp: "Level 4"
         titlecn: "Level 4"
         url: /edu/dream/dream1-4/
       - title: "SET A"
@@ -230,13 +224,10 @@ main:
     - titlekr: "드림 II"
       children:
       - titlekr: "1단계 교육키트"
-        titlejp: "Level 1"
         titlecn: "Level 1"
       - titlekr: "2단계 교육키트"
-        titlejp: "Level 2"
         titlecn: "Level 2"
       - titlekr: "3단계 교육키트"
-        titlejp: "Level 3"
         titlecn: "Level 3"
     - titlekr: "스마트 I"
       children:
@@ -256,11 +247,7 @@ main:
     - titlekr: "IoT"
       children:
       - titlekr: "1단계 교육키트"
-        titlejp: "Level 1"
-        titlecn: "Level 1"
       - titlekr: "2단계 교육키트"
-        titlejp: "Level 2"
-        titlecn: "Level 2"
     - title: "Bioloid"
       titlekr: "바이올로이드"
       titlejp: "Bioloid"
@@ -269,12 +256,10 @@ main:
       - title: "Beginner Level"
         titlekr: "초급"
         titlejp: "Beginner Level"
-        titlecn: "Beginner Level"
         url: /edu/bioloid/beginner/
       - title: "Comprehensive Level"
         titlekr: "종합"
         titlejp: "Comprehensive Level"
-        titlecn: "Comprehensive Level"
         url: /edu/bioloid/comprehensive/
       - title: "ROBOTIS STEM"
         titlekr: "STEM 키트"
@@ -422,6 +407,7 @@ main:
         titlekr: "CM-100A"
         titlejp: "CM-100A"
         titlecn: "CM-100A"
+        url: /parts/controller/cm-100/
       - title: "CM-150"
         titlekr: "CM-150"
         titlejp: "CM-150"
@@ -452,10 +438,16 @@ main:
         titlekr: "CM-900"
         titlejp: "CM-900"
         titlecn: "CM-900"
-      - title: "OpenCM"
-        titlekr: "OpenCM"
-        titlejp: "OpenCM"
-        titlecn: "OpenCM"
+      - title: "OpenCM 9.04"
+        titlekr: "OpenCM 9.04"
+        titlejp: "OpenCM 9.04"
+        titlecn: "OpenCM 9.04"
+        url: /parts/controller/opencm904/
+      - title: "OpenCM 485 EXP"
+        titlekr: "OpenCM 485 EXP"
+        titlejp: "OpenCM 485 EXP"
+        titlecn: "OpenCM 485 EXP"
+        url: /parts/controller/opencm485exp/
       - title: "OpenCR"
         titlekr: "OpenCR"
         titlejp: "OpenCR"
@@ -3884,7 +3876,7 @@ mini:
         urlkr:
   - title: "Operating MINI"
     titlekr: ""
-    url: /edu/bioloid/gp/#operating-mini
+    url: /edu/mini/#operating-mini
     urlkr:
     children:
     - title: "App Install"
@@ -4796,38 +4788,93 @@ rplusmanager2:
     - titlekr: "블루투스로 펌웨어 관리하기"
       urlkr: /software/rplus2/manager/advanced/#블루투스로-펌웨어-관리하기
 
+#CM-100A Controller sidebar
+cm-100:
+  - title: "Introduction"
+    titlekr: "개요"
+    url: /parts/controller/cm-100/#introduction
+  - title: "Specifications"
+    titlekr: "제품 사양"
+    url: /parts/controller/cm-100/#specifications
+  - title: "Layout"
+    titlekr: "각 부 명칭"
+    url: /parts/controller/cm-100/#layout
+  - title: "Connecting Power"
+    titlekr: "전원 연결"
+    url: /parts/controller/cm-100/#connecting-power
+  - title: "How to Operate"
+    titlekr: "작동 방법"
+    url: /parts/controller/cm-100/#how-to-operate
+  - title: "Connect to PC"
+    titlekr: "PC 연결"
+    url: /parts/controller/cm-100/#connect-to-pc
+  - title: "Wireless Communication"
+    titlekr: "무선통신 연결"
+    url: /parts/controller/cm-100/#wireless-communication
+
+#CM-150 Controller sidebar
+cm-150:
+  - title: "Introduction"
+    titlekr: "개요"
+    url: /parts/controller/cm-150/#introduction
+  - title: "Specifications"
+    titlekr: "제품 사양"
+    url: /parts/controller/cm-150/#specifications
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /parts/controller/cm-150/#control-table
+  - title: "Layout"
+    titlekr: "각 부 명칭"
+    url: /parts/controller/cm-150/#layout
+  - title: "Connecting Power"
+    titlekr: "전원 연결"
+    url: /parts/controller/cm-150/#connecting-power
+  - title: "How to Operate"
+    titlekr: "작동 방법"
+    url: /parts/controller/cm-150/#how-to-operate
+  - title: "Connect to PC"
+    titlekr: "PC 연결"
+    url: /parts/controller/cm-150/#connect-to-pc
+  - title: "Wireless Communication"
+    titlekr: "무선통신 연결"
+    url: /parts/controller/cm-150/#wireless-communication
+
 #CM-200 Controller sidebar
 cm-200:
   - title: "Introduction"
     titlekr: "개요"
     url: /parts/controller/cm-200/#introduction
     urlkr: /parts/controller/cm-200/#개요
-    children:
-      - title: "Specifications"
-        titlekr: "제품 사양"
-        url: /parts/controller/cm-200/#specifications
-        urlkr: /parts/controller/cm-200/#제품-사양
-      - title: "Control Table"
-        titlekr: "컨트롤 테이블"
-        url: /parts/controller/cm-200/#control-table
-        urlkr: /parts/controller/cm-200/#컨트롤-테이블
-  - title: "Quick Start"
-    url: /parts/controller/cm-200/#quick-start
-    children:
-      - titlekr: "각 부 명칭"
-        urlkr: /parts/controller/cm-200/#각-부-명칭
-      - titlekr: "전원 연결"
-        urlkr: /parts/controller/cm-200/#전원-연결
-      - titlekr: "작동 확인하기"
-        urlkr: /parts/controller/cm-200/#작동-확인하기
-  - title: "Basic Users"
-    titlekr: "초급 사용자"
-    url: /parts/controller/cm-200/#basic-users
+  - title: "Specifications"
+    titlekr: "제품 사양"
+    url: /parts/controller/cm-200/#specifications
+    urlkr: /parts/controller/cm-200/#제품-사양
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /parts/controller/cm-200/#control-table
+    urlkr: /parts/controller/cm-200/#컨트롤-테이블
+  - title: "Layout"
+    titlekr: "각 부 명칭"
+    url: /parts/controller/cm-200/#layout
+    urlkr: /parts/controller/cm-200/#각-부-명칭
+  - title: "Connecting Power"
+    titlekr: "전원 연결"
+    url: /parts/controller/cm-200/#connecting-power
+    urlkr: /parts/controller/cm-200/#전원-연결
+  - title: "How to Operate"
+    titlekr: "작동 방법"
+    url: /parts/controller/cm-200/#how-to-operate
+    urlkr: /parts/controller/cm-200/#작동-방법
+  - title: "Connect to Smartphone"
+    url: /parts/controller/cm-150/#connect-to-smartphone
+  - title: "Connect to PC"
+    url: /parts/controller/cm-150/#connect-to-pc
+  - title: "Wireless Communication"
+    url: /parts/controller/cm-150/#wireless-communication
+  - titlekr: "초급 사용자"
     urlkr: /parts/controller/cm-200/#초급-사용자
     children:
-      - title: "Connect Wireless Module"
-        titlekr: "무선통신 연결하기"
-        url: /parts/controller/cm-200/#connect-wireless-module
+      - titlekr: "무선통신 연결하기"
         urlkr: /parts/controller/cm-200/#무선통신-연결하기
       - titlekr: "R+ SmartIII 설치"
         urlkr: /parts/controller/cm-200/#r-smartiii-설치하기
@@ -4835,28 +4882,191 @@ cm-200:
         urlkr: /parts/controller/cm-200/#r-mtask-20-설치하기
       - titlekr: "모션파일 다운로드"
         urlkr: /parts/controller/cm-200/#모션파일-다운로드
-  - title: "Advanced Users"
-    titlekr: "고급 사용자"
-    url: /parts/controller/cm-200/#advanced-users
+  - titlekr: "고급 사용자"
     urlkr: /parts/controller/cm-200/#고급-사용자
     children:
-      - title: "Writing Task Code"
-        titlekr: "프로그래밍"
-        url: /parts/controller/cm-200/#writing-task-code
-        url: /parts/controller/cm-200/#프로그래밍
-  - title: "Maintenance"
-    titlekr: "관리하기"
-    url: /parts/controller/cm-200/#maintenance
+      - titlekr: "프로그래밍"
+        urlkr: /parts/controller/cm-200/#프로그래밍
+  - titlekr: "관리하기"
     urlkr: /parts/controller/cm-200/#관리하기
     children:
-      - title: "Firmware Recovery"
-        titlekr: "펌웨어 복구"
-        url: /parts/controller/cm-200/#firmware-recovery
+      - titlekr: "펌웨어 복구"
         urlkr: /parts/controller/cm-200/#펌웨어-복구
-  - title: "Reference"
-    titlekr: "참고자료"
-    url: /parts/controller/cm-200/#reference
+  - titlekr: "참고자료"
     urlkr: /parts/controller/cm-200/#참고자료
+
+#CM-5 Controller sidebar
+cm-5:
+  - title: "Introduction"
+    titlekr: "개요"
+    url: /parts/controller/cm-5/#introduction
+  - title: "Specifications"
+    titlekr: "제품 사양"
+    url: /parts/controller/cm-5/#specifications
+  - title: "Layout"
+    titlekr: "각 부 명칭"
+    url: /parts/controller/cm-5/#layout
+  - title: "Connecting Power"
+    titlekr: "전원 연결"
+    url: /parts/controller/cm-5/#connecting-power
+  - title: "How to Operate"
+    titlekr: "작동 방법"
+    url: /parts/controller/cm-5/#how-to-operate
+  - title: "Connect to PC"
+    titlekr: "PC 연결"
+    url: /parts/controller/cm-5/#connect-to-pc
+  - title: "Wireless Communication"
+    titlekr: "무선통신 연결"
+    url: /parts/controller/cm-5/#wireless-communication
+  - title: "Charging"
+    url: /parts/controller/cm-5/#charging
+  - title: "Fuse Replacement"
+    url: /parts/controller/cm-5/#fuse-replacement
+
+#CM-510 Controller sidebar
+cm-510:
+  - title: "Introduction"
+    titlekr: "개요"
+    url: /parts/controller/cm-510/#introduction
+  - title: "Specifications"
+    titlekr: "제품 사양"
+    url: /parts/controller/cm-510/#specifications
+  - title: "Layout"
+    titlekr: "각 부 명칭"
+    url: /parts/controller/cm-510/#layout
+  - title: "Connecting Power"
+    titlekr: "전원 연결"
+    url: /parts/controller/cm-510/#connecting-power
+  - title: "How to Operate"
+    titlekr: "작동 방법"
+    url: /parts/controller/cm-510/#how-to-operate
+  - title: "Connect to PC"
+    titlekr: "PC 연결"
+    url: /parts/controller/cm-510/#connect-to-pc
+  - title: "Wireless Communication"
+    titlekr: "무선통신 연결"
+    url: /parts/controller/cm-510/#wireless-communication
+  - title: "Charging"
+    url: /parts/controller/cm-510/#charging
+  - title: "Fuse Replacement"
+    url: /parts/controller/cm-510/#fuse-replacement
+  - title: "Videos"
+    url: /parts/controller/cm-510/#videos
+
+#CM-530 Controller sidebar
+cm-530:
+  - title: "Introduction"
+    titlekr: "개요"
+    url: /parts/controller/cm-530/#introduction
+  - title: "Specifications"
+    titlekr: "제품 사양"
+    url: /parts/controller/cm-530/#specifications
+  - title: "Layout"
+    titlekr: "각 부 명칭"
+    url: /parts/controller/cm-530/#layout
+  - title: "Connecting Power"
+    titlekr: "전원 연결"
+    url: /parts/controller/cm-530/#connecting-power
+  - title: "How to Operate"
+    titlekr: "작동 방법"
+    url: /parts/controller/cm-530/#how-to-operate
+  - title: "Connect to PC"
+    titlekr: "PC 연결"
+    url: /parts/controller/cm-530/#connect-to-pc
+  - title: "Wireless Communication"
+    titlekr: "무선통신 연결"
+    url: /parts/controller/cm-530/#wireless-communication
+  - title: "Charging"
+    url: /parts/controller/cm-530/#charging
+  - title: "Fuse Replacement"
+    url: /parts/controller/cm-530/#fuse-replacement
+  - title: "Videos"
+    url: /parts/controller/cm-530/#videos
+
+#CM-700 Controller sidebar
+cm-700:
+  - title: "Introduction"
+    titlekr: "개요"
+    url: /parts/controller/cm-700/#introduction
+  - title: "Specifications"
+    titlekr: "제품 사양"
+    url: /parts/controller/cm-700/#specifications
+  - title: "Layout"
+    titlekr: "각 부 명칭"
+    url: /parts/controller/cm-700/#layout
+  - title: "Connecting Power"
+    titlekr: "전원 연결"
+    url: /parts/controller/cm-700/#connecting-power
+  - title: "How to Operate"
+    titlekr: "작동 방법"
+    url: /parts/controller/cm-700/#how-to-operate
+  - title: "Connect to PC"
+    titlekr: "PC 연결"
+    url: /parts/controller/cm-700/#connect-to-pc
+  - title: "Wireless Communication"
+    titlekr: "무선통신 연결"
+    url: /parts/controller/cm-700/#wireless-communication
+  - title: "Fuse Replacement"
+    url: /parts/controller/cm-700/#fuse-replacement
+  - title: "Videos"
+    url: /parts/controller/cm-700/#videos
+
+#CM-900 Controller sidebar
+cm-900:
+  - title: "Introduction"
+    url: /parts/controller/cm-900/#introduction
+  - title: "Specifications"
+    url: /parts/controller/cm-900/#specifications
+  - title: "Layout"
+    url: /parts/controller/cm-900/#layout
+  - title: "USB Driver Install"
+    url: /parts/controller/cm-900/#usb-driver-install
+  - title: "Instructions"
+    url: /parts/controller/cm-900/#instructions
+  - title: "Downloads"
+    url: /parts/controller/cm-900/#downloads
+
+#OpenCM 9.04 sidebar
+opencm904:
+  - title: "Introduction"
+    url: /parts/controller/opencm904/#Introduction
+  - title: "Specifications"
+    url: /parts/controller/opencm904/#specifications
+  - title: "Control Table"
+    url: /parts/controller/opencm904/#control-table
+  - title: "Block Diagram"
+    url: /parts/controller/opencm904/#block-diagram
+  - title: "Layout"
+    url: /parts/controller/opencm904/#layout
+  - title: "Connecting Power"
+    url: /parts/controller/opencm904/#connecting-power
+  - title: "Switch Assembly(Type A)"
+    url: /parts/controller/opencm904/#switch-assembly-type-a
+  - title: "Connector Assembly(Type A)"
+    url: /parts/controller/opencm904/#connector-assembly-type-a
+  - title: "Downloads"
+    url: /parts/controller/opencm904/#downloads
+  - title: "Dimension"
+    url: /parts/controller/opencm904/#dimension
+
+#OpenCM 485 EXP sidebar
+opencm485exp:
+  - title: "Introduction"
+    url: /parts/controller/opencm485exp/#Introduction
+  - title: "Specifications"
+    url: /parts/controller/opencm485exp/#specifications
+  - title: "Layout"
+    url: /parts/controller/opencm485exp/#layout
+  - title: "Connecting OpenCM9.04"
+    url: /parts/controller/opencm485exp/#connecting-opencm9-04
+  - title: "Power Circuit Connection"
+    url: /parts/controller/opencm485exp/#power-circuit-connection
+  - title: "EXP Board Programming"
+    url: /parts/controller/opencm485exp/#exp-board-programming
+  - title: "Button & LED"
+    url: /parts/controller/opencm485exp/#button-led
+  - title: "Downloads"
+    url: /parts/controller/opencm485exp/#downloads
 
 contents-guide:
   - title: "Contents Guide"

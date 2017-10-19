@@ -14,6 +14,8 @@ In case of DIRECTION485 Level = High: The signal of TxD is output to D+ and D-.
 In case of DIRECTION485 Level = Low: The signal of D+ and D- is output to RxD.
 
 ## [Pin Assignment](#pin-assignment)
-The connector pin assignments are as the following. The two connectors on the Dynamixel are connected pin to pin, thus the AX-12 can be operated with only one connector attached.
+The connector pin assignments are as the following. The two connectors on the Dynamixel are connected pin to pin, thus the Dynamixel can be operated with only one connector attached.
 
 ![](/assets/images/dxl/connector_pin.png)
+
+![](/assets/images/dxl/485_connector_pin.png)

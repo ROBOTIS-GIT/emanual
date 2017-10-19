@@ -49,7 +49,7 @@ For more information assembly and operation, please refer to the ROBOTIS DREAM L
 [CM-150]: /docs/en/parts/controller/cm-150/
 [BT-210]: /docs/en/parts/communication/bt_210/
 [RC-100B]: /docs/en/parts/communication/rc-100/
-[USB Downloader(LN-101)]: /docs/en/parts/interface/ln_101/
+[USB Downloader(LN-101)]: /docs/en/parts/interface/ln-101/
 [How to Download Task code]: /docs/en/faq/download_task_code/
 [ex_01]: http://support.robotis.com/en/baggage_files/dream/dream_l4_tank_en.tsk
 [ex_02]: http://support.robotis.com/en/baggage_files/dream/dream_l4_robotknight_en.tsk

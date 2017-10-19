@@ -71,7 +71,7 @@ sidebar:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UlD4C1XMsgo" frameborder="0" allowfullscreen></iframe>
 
 [CM-100]: /docs/en/parts/controller/cm-100/
-[USB Downloader(LN-101)]: /docs/en/parts/interface/ln_101/
+[USB Downloader(LN-101)]: /docs/en/parts/interface/ln-101/
 [rule check error messages]: /docs/en/software/rplus1/task/task_misc/#rule-check
 
 [img_01]: /assets/images/edu/task_download_01.jpg

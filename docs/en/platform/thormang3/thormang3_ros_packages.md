@@ -1953,9 +1953,9 @@ The following are Messages and Service used for the thormang3_offset_tuner_serve
   - [GetPresentJointOffsetData.srv]
 
 
-[MPC Installation]: /en/platform/thormang3/getting_started/#mpc-installation
-[PPC Installation]: /en/platform/thormang3/getting_started/#ppc-installation
-[OPC Installation]: /en/platform/thormang3/getting_started/#opc-installation
+[MPC Installation]: /docs/en/platform/thormang3/getting_started/#mpc-installation
+[PPC Installation]: /docs/en/platform/thormang3/getting_started/#ppc-installation
+[OPC Installation]: /docs/en/platform/thormang3/getting_started/#opc-installation
 [std_msgs/Int32]: http://docs.ros.org/api/std_msgs/html/msg/Int32.html
 [std_msgs/String]: http://docs.ros.org/api/std_msgs/html/msg/String.html
 [thormang3_action_module_msgs/StartAction]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/StartAction.msg
@@ -1965,9 +1965,9 @@ The following are Messages and Service used for the thormang3_offset_tuner_serve
 [IsRunning.srv]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/(thormang3_action_module_msgs)IsRunning.srv
 [sensor_msgs/PointCloud2]: http://docs.ros.org/api/sensor_msgs/html/msg/PointCloud2.html
 [laser_assembler/AssembleScan2]: http://docs.ros.org/api/laser_assembler/html/srv/AssembleScans2.html
-[How to execute Simple Demonstration]: /en/platform/thormang3/thormang3_operation/#simple-demo
-[How to operate walking module]: /en/platform/thormang3/thormang3_ros_packages/#thormang3_walking_module
-[thormang3_offset_tuner_client]: /en/platform/thormang3/thormang3_ros_packages/#thormang3-offset-tuner-client
+[How to execute Simple Demonstration]: /docs/en/platform/thormang3/thormang3_operation/#simple-demo
+[How to operate walking module]: /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_walking_module
+[thormang3_offset_tuner_client]: /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3-offset-tuner-client
 [thormang3_manipulation_module_msgs/KinematicsPose]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/KinematicsPose.msg
 [KinematicsPose.msg]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/KinematicsPose.msg
 [thormang3_walking_module_msgs/GetReferenceStrpData]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/GetReferenceStepData.srv
@@ -1990,13 +1990,13 @@ The following are Messages and Service used for the thormang3_offset_tuner_serve
 [thormang3_manipulation_module_msgs/GetKinematicsPose]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/GetKinematicsPose.srv
 [GetKinematicsPose.srv]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/GetKinematicsPose.srv
 [thormang3_walking_module_msgs::GetReferenceStepData]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/GetReferenceStepData.srv
-[Remote Control(GUI Demo)]: /en/platform/thormang3/thormang3_operation/#gui-program
-[thormang3_walking_module]: /en/platform/thormang3/thormang3_ros_packages/#thormang3_walking_module
-[thormang3_action_module]: /en/platform/thormang3/thormang3_ros_packages/#thormang3_action_module
-[thormang3_feet_ft_module]: /en/platform/thormang3/thormang3_ros_packages/#thormang3_feet_ft_module
-[thormang3_manipulation_module]: /en/platform/thormang3/thormang3_ros_packages/#thormang3_manipulation_module
-[thormang3_head_control_module]: /en/platform/thormang3/thormang3_ros_packages/#thormang3_head_control_module
-[thormang3_offset_tuner_server]: /en/platform/thormang3/thormang3_ros_packages/#thormang3-offset-tuner-server
+[Remote Control(GUI Demo)]: /docs/en/platform/thormang3/thormang3_operation/#gui-program
+[thormang3_walking_module]: /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_walking_module
+[thormang3_action_module]: /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_action_module
+[thormang3_feet_ft_module]: /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_feet_ft_module
+[thormang3_manipulation_module]: /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_manipulation_module
+[thormang3_head_control_module]: /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_head_control_module
+[thormang3_offset_tuner_server]: /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3-offset-tuner-server
 [robotis_controller_msgs::Status]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/StatusMsg.msg
 [FootStepCommand.msg]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/FootStepCommand.msg
 [Step2D.msg]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/Step2D.msg

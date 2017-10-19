@@ -547,7 +547,7 @@ After executing the program, control the robot forward, backward, left, and righ
 [ollo_bug_linetracer]: /assets/images/edu/ollo/ollo_bug_linetracer.png
 [ollo_bug_linetracer2]: /assets/images/edu/ollo/ollo_bug_linetracer2.png
 [ollo_bug_partlist]: /assets/images/edu/ollo/ollo_bug_partlist.png
-[CM-100_label]: /assets/images/parts/controller/cm100/cm100_label_en.png
+[CM-100_label]: /assets/images/parts/controller/cm-100/cm-100_label_en.png
 [ollo-RC100]: /assets/images/edu/ollo/ollo_bugkit_rc100.png
 [ollo_bug_battle]: /assets/images/edu/ollo/ollo_bug_01.png
 [ollo_bug_car]: /assets/images/edu/ollo/ollo_bug_02.png
@@ -632,7 +632,7 @@ After executing the program, control the robot forward, backward, left, and righ
 [ZIG-100/110]: /docs/en/parts/communication/zig-100_110/
 [CM-100]: /docs/en/parts/controller/cm-100/
 [Geared Motor]: /docs/en/parts/motor/geared_motor/
-[USB Downloader(LN-101)]: /docs/en/parts/interface/ln_101/
+[USB Downloader(LN-101)]: /docs/en/parts/interface/ln-101/
 [RC-100]: /docs/en/parts/communication/rc-100/
 [Programming]: #programming
 [OLLO_LineTrace.pdf]: http://support.robotis.com/en/baggage_files/ollo/ollo_linetrace.pdf

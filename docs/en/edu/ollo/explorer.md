@@ -92,7 +92,7 @@ Also, please refer to [How to Download of task code] for more information.
 |12. Battle Bug|`Download` [OLLO_L2_Battlebug_EN.tsk]|
 
 
-[USB Downloader(LN-101)]: /docs/en/parts/interface/ln_101/
+[USB Downloader(LN-101)]: /docs/en/parts/interface/ln-101/
 [Inventor]: /docs/en/edu/ollo/inventor/
 [CM-100]: /docs/en/parts/controller/cm-100/
 [Geared Motor]: /docs/en/parts/motor/geared_motor/
