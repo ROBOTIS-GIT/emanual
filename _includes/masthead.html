@@ -9,7 +9,21 @@
         {% endfor %}
 
         <form method="get" id="site_search" style="margin:0 0 0 0; position:absolute; right:0; width:30%;">
+          <script>
+            (function() {
+              var cx = '003548387656725317882:3pwl9jljqvi';
+              var gcse = document.createElement('script');
+              gcse.type = 'text/javascript';
+              gcse.async = true;
+              gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+              var s = document.getElementsByTagName('script')[0];
+              s.parentNode.insertBefore(gcse, s);
+            })();
+          </script>
+          <gcse:search></gcse:search>
+          {% comment %}
           <input type="text" id="search_box" name="query" placeholder="Search" style="padding:0 10px; margin-bottom:0;">
+          {% endcomment %}
         </form>
       </nav>
     </div>
@@ -214,6 +228,8 @@
   </div>
 </div>
 
+{% comment %}
 <script src="/assets/js/lunr.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="/assets/js/search.js"></script>
+{% endcomment %}
