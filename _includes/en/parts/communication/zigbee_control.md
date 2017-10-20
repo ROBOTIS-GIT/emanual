@@ -1,7 +1,7 @@
 ## [ZIGBee Wireless Control](#zigbee-wireless-control)
 
 ### ZIGBee
-![Zig-100/110](/assets/images/parts/communication/zig-100_110.png)
+![Zig-100/110](/assets/images/parts/communication/zig_100_110.png)
 
 [ZIG-100/110] uses ZIGBee for wireless communication. ZIGBee, like Bluetooth, is the communication technology commonly used in Personal Area Network (PAN). The communication quality of ZIGBee is better than that of IR, so it allows many users to control their robots without interferences.
 
@@ -23,7 +23,7 @@ OLLO and Bioloid both use the RC-100, which uses IR communication method. To upg
 |:---:|:---:|
 |![Zig-110_CM-510][Zig-110_CM-510]|![Zig-100_CM-5][Zig-100_CM-5]|
 
-[ZIG-100/110]: /docs/en/parts/communication/zig-100_110/
+[ZIG-100/110]: /docs/en/parts/communication/zig-110/
 [RC-100]: /docs/en/parts/communication/rc-100/
 [Controller]: /docs/en/parts/controller/compatibility/
 

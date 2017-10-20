@@ -629,7 +629,7 @@ After executing the program, control the robot forward, backward, left, and righ
 
 [How to Download Task code]: /docs/en/faq/download_task_code/
 
-[ZIG-100/110]: /docs/en/parts/communication/zig-100_110/
+[ZIG-100/110]: /docs/en/parts/communication/zig-110/
 [CM-100]: /docs/en/parts/controller/cm-100/
 [Geared Motor]: /docs/en/parts/motor/geared_motor/
 [USB Downloader(LN-101)]: /docs/en/parts/interface/ln-101/

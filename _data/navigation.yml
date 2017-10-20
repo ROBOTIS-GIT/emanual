@@ -412,6 +412,7 @@ main:
         titlekr: "CM-150"
         titlejp: "CM-150"
         titlecn: "CM-150"
+        url: /parts/controller/cm-150/
       - title: "CM-200"
         titlekr: "CM-200"
         titlejp: "CM-200"
@@ -422,22 +423,27 @@ main:
         titlekr: "CM-5"
         titlejp: "CM-5"
         titlecn: "CM-5"
+        url: /parts/controller/cm-5/
       - title: "CM-510"
         titlekr: "CM-510"
         titlejp: "CM-510"
         titlecn: "CM-510"
+        url: /parts/controller/cm-510/
       - title: "CM-530"
         titlekr: "CM-530"
         titlejp: "CM-530"
         titlecn: "CM-530"
+        url: /parts/controller/cm-530/
       - title: "CM-700"
         titlekr: "CM-700"
         titlejp: "CM-700"
         titlecn: "CM-700"
+        url: /parts/controller/cm-700/
       - title: "CM-900"
         titlekr: "CM-900"
         titlejp: "CM-900"
         titlecn: "CM-900"
+        url: /parts/controller/cm-900/
       - title: "OpenCM 9.04"
         titlekr: "OpenCM 9.04"
         titlejp: "OpenCM 9.04"
@@ -466,22 +472,27 @@ main:
         titlekr: "ZIG-100/110A"
         titlejp: "ZIG-100/110A"
         titlecn: "ZIG-100/110A"
+        url: /parts/communication/zig-110/
       - title: "BT-100/110A"
         titlekr: "BT-100/110A"
         titlejp: "BT-100/110A"
         titlecn: "BT-100/110A"
+        url: /parts/communication/bt-110/
       - title: "BT-210"
         titlekr: "BT-210"
         titlejp: "BT-210"
         titlecn: "BT-210"
+        url: /parts/communication/bt-210/
       - title: "BT-410"
         titlekr: "BT-410"
         titlejp: "BT-410"
         titlecn: "BT-410"
+        url: /parts/communication/bt-410/
       - title: "ZIG2Serial"
         titlekr: "ZIG2Serial"
         titlejp: "ZIG2Serial"
         titlecn: "ZIG2Serial"
+        url: /parts/communication/zig2serial/
     - title: "Motors"
       titlekr: "모터"
       titlejp: "モーター"
@@ -5114,11 +5125,55 @@ zig-110:
 #BT-100/110 sidebar
 bt-110:
   - title: "Introduction"
-    url: /parts/communication/zig-110/#introduction
+    url: /parts/communication/bt-110/#introduction
   - title: "Specifications"
-    url: /parts/communication/zig-110/#specifications
+    url: /parts/communication/bt-110/#specifications
   - title: "Pinout"
-    url: /parts/communication/zig-110/#pinout
+    url: /parts/communication/bt-110/#pinout
+
+#BT-210 sidebar
+bt-210:
+  - title: "Introduction"
+    url: /parts/communication/bt-210/#introduction
+  - title: "Specifications"
+    url: /parts/communication/bt-210/#specifications
+  - title: "Communication Mode"
+    url: /parts/communication/bt-210/#communication-mode
+  - title: "Pinout"
+    url: /parts/communication/bt-210/#pinout
+
+#BT-410 sidebar
+bt-410:
+  - title: "Introduction"
+    url: /parts/communication/bt-410/#introduction
+  - title: "Specifications"
+    url: /parts/communication/bt-410/#specifications
+  - title: "Compatibility"
+    url: /parts/communication/bt-410/#compatibility
+  - title: "Communication Mode"
+    url: /parts/communication/bt-410/#communication-mode
+  - title: "Pinout"
+    url: /parts/communication/bt-410/#pinout
+
+#ZIG2Serial sidebar
+zig2serial:
+  - title: "Introduction"
+    url: /parts/communication/zig2serial/#introduction
+  - title: "Specifications"
+    url: /parts/communication/zig2serial/#specifications
+  - title: "Layout"
+    url: /parts/communication/zig2serial/#layout
+  - title: "Pinout"
+    url: /parts/communication/zig2serial/#pinout
+  - title: "How To Use"
+    url: /parts/communication/zig2serial/#how-to-use
+  - title: "Tutorials"
+    url: /parts/communication/zig2serial/#tutorials
+  - title: "Circuit"
+    url: /parts/communication/zig2serial/#circuit
+  - title: "Videos"
+    url: /parts/communication/zig2serial/#videos
+  
 
 contents-guide:
   - title: "Contents Guide"
