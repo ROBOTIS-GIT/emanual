@@ -4710,7 +4710,7 @@ rplustask1:
       - title: "IR Left/Center/Right"
         url: /software/rplus1/task/programming_02/#ir-leftcenterright
       - title: "Light Left/Center/Right"
-        url: /software/rplus1/task/programming_02/#light-leftcenter-right
+        url: /software/rplus1/task/programming_02/#light-leftcenterright
       - title: "Object Detected"
         url: /software/rplus1/task/programming_02/#object-detected
       - title: "Light Detected"
@@ -4726,7 +4726,7 @@ rplustask1:
       - title: "Buzzer Index"
         url: /software/rplus1/task/programming_02/#buzzer-index
       - title: "Buzzer Time"
-        url: /software/rplus1/task/programming_02/#buzzer-timez
+        url: /software/rplus1/task/programming_02/#buzzer-time
       - title: "IR COM Arrived"
         url: /software/rplus1/task/programming_02/#ir-com-arrived
       - title: "IR COM RXD"
@@ -4765,6 +4765,38 @@ rplustask1:
       url: /software/rplus1/task/task_misc/#rule-check
     - title: "Error Messages"
       url: /software/rplus1/task/task_misc/#error-messages
+
+#R+ Manager 1.0 sidebar
+rplusmanager1:
+  - title: "Introduction"
+    titlekr: "개요"
+    url: /software/rplus1/manager/getting_started/#introduction
+    urlkr: /software/rplus1/manager/getting_started/#개요
+    children:
+    - title: "Install"
+      titlekr: "설치"
+      url: /software/rplus1/manager/getting_started/#install
+      urlkr: /software/rplus1/manager/getting_started/#설치
+  - title: "Getting Started"
+    titlekr: "시작하기"
+    url: /software/rplus1/manager/getting_started/#getting-started
+    urlkr: /software/rplus1/manager/getting_started/#시작하기
+  - title: "Firmware Management"
+    url: /software/rplus1/manager/getting_started/#firmware-management
+    children:
+    - title: "Firmware Update"
+      url: /software/rplus1/manager/getting_started/#firmware-update
+    - title: "Firmware Recovery"
+      url: /software/rplus1/manager/getting_started/#firmware-recovery
+  - title: "How to Use"
+    url: /software/rplus1/manager/getting_started/#how-to-use
+    children:
+    - title: "Controllers"
+      url: /software/rplus1/manager/getting_started/#controllers
+    - title: "Dynamixel"
+      url: /software/rplus1/manager/getting_started/#dynamixel
+    - title: "ZIG2Serial"
+      url: /software/rplus1/manager/getting_started/#zig2serial
 
 #Task Code Download sidebar
 download_task_code:
