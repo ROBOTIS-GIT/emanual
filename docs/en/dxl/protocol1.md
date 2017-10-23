@@ -321,7 +321,6 @@ When Bulk Read instruction is received, Dynamixel with ID 2 monitors the status 
 
 # [More Packet Examples](#more-packet-examples)
 
-
 ![](/assets/images/dxl/protocol1/protocol1_example_06.png)
 ![](/assets/images/dxl/protocol1/protocol1_example_07.png)
 ![](/assets/images/dxl/protocol1/protocol1_example_08.png)
@@ -337,3 +336,77 @@ When Bulk Read instruction is received, Dynamixel with ID 2 monitors the status 
 ![](/assets/images/dxl/protocol1/protocol1_example_19.png)
 ![](/assets/images/dxl/protocol1/protocol1_example_20.png)
 ![](/assets/images/dxl/protocol1/protocol1_example_21.png)
+
+# [Communication Overview](#communication-overview)
+
+To control Dynamixel, communication should be established according to the protocol of Dynamixel.  Dynamixel is driven by receiving binary data. Examples of programs for the transmission of this kind of data are described in detail in the User’s Manual of the Dynamixel-only controller or the USB2Dynamixel.
+Thus, this manual describes only the method and protocol of communication used in Dynamixel on the assumption that Main Controller can transfer binary data.
+ 
+## [Packet](#packet)
+
+Main Controller and Dynamixel communicate each other by sending and receiving data called Packet. Packet has two kinds: Instruction Packet, which Main Controller sends to control Dynamixel, and Status Packet, which Dynamixel responses to Main Controller.
+ 
+## [ID](#id)
+
+ID is a specific number for distinction of each Dynamixel when several Dynamixels are linked to one bus.  
+By giving IDs to Instruction and Status Packets, Main Controller can control only the Dynamixel that you want to control
+ 
+## [Protocol](#protocol)
+
+Dynamixel does the Asynchronous Serial Communication with 8 bit, 1 Stop bit, and None Parity.
+ 
+If Dynamixel with the same ID is connected, packet will collide and network problem will occur. Thus, set ID as such that there is no Dynamixel with the same ID.
+ 
+ID of Dynamixel is changeable.
+For this change, please refer to [Changing IDs of Dynamixel]. The factory default setting ID is 1.
+ 
+## [Half Duplex](#half-duplex)
+
+Half duplex UART is a serial communication protocol where both TxD and RxD cannot be used at the same time. This method is generally used when many devices need to be connected to a single bus. Since more than one device are connected to the same bus, all the other devices need to be in input mode while one device is transmitting. The Main Controller that controllers the Dynamixel actuators sets the communication direction to input mode, and only when it is transmitting an Instruction Packet, it changes the direction to output mode.
+
+![](/assets/images/dxl/halfduplex.png)
+
+## [Tx, Rx Direction](#tx-rx-direction)
+
+For Half Duplex UART, the transmission ending timing is important to change the direction to receiving mode. The bit definitions within the register that indicates UART_STATUS are as the following
+ 
+- **TXD_BUFFER_READY_BIT**: Indicates that the transmission DATA can be loaded into the Buffer. Note that this only means that the SERIAL TX BUFFER is empty, and does not necessarily mean that the all the data transmitted before has left the CPU.
+- **TXD_SHIFT_REGISTER_EMPTY_BIT**: Set when all the Transmission Data has completed its transmission and left the CPU.
+
+- The **TXD_BUFFER_READY_BIT** is used when one byte is to be transmitted via the serial communication channel, and an example is shown below.
+
+  ```code
+  TxDByte(byte bData)
+  {
+    while(!TXD_BUFFER_READY_BIT); //wait until data can be loaded.
+    SerialTxDBuffer = bData; //data load to TxD buffer
+  }
+  ```
+
+When changing the direction, the **TXD_SHIFT_REGISTER_EMPTY_BIT** must be checked. The following is an example program that sends an Instruction Packet  
+
+  ```code
+  DIRECTION_PORT = TX_DIRECTION;
+  TxDByte(0xff);
+  TxDByte(0xff);
+  TxDByte(bID);
+  TxDByte(bLength);
+  TxDByte(bInstruction);
+  TxDByte(Parameter0); TxDByte(Parameter1); …
+  DisableInterrupt(); // interrupt should be disable
+  TxDByte(Checksum); //last TxD
+  while(!TXD_SHIFT_REGISTER_EMPTY_BIT); //Wait till last data bit has been sent
+  DIRECTION_PORT = RX_DIRECTION; //Direction change to RXD
+  EnableInterrupt(); // enable interrupt again
+  ```
+ 
+`Note` Please note the important lines between LINE 8 and LINE 12. Line 8 is necessary since an interrupt here may cause a delay longer than the return delay time and corruption to the front of the status packet may occur.
+{: .notice}
+ 
+# [Byte to Byte Time](#byte-to-byte-time)
+
+The delay time between bytes when sending an instruction packet. If the delay time is over 100ms, then the Dynamixel actuator recognizes this as a communication problem and waits for the next header (0xff 0xff) of a packet again.
+
+![](/assets/images/dxl/byte2bytetime.png)
+
+[Changing IDs of Dynamixel]: ???RoboPlus-Manager

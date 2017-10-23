@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/parts/sensor/dms-80/
 sidebar:
-  title: DMS-80
+  title: Distance Sensor(DMS-80)
   nav: "dms-80"
 ---
 
@@ -18,6 +18,14 @@ sidebar:
 - DMS-80 is used to detect objects or walls within a fixed distance.
 - The sensor is not affected by color as much as IR Sensors enabling it to measure precise distance.
 
+`Compatibility Guide` [Controller Compatibility]
+
+# [Specifications](#specifications)
+
+- Weight : 4.4g
+- Detecting Distance : 10 ~ 80cm
+- Recommended Voltage Suppy : 4.5 ~ 5.5V
+
 # [Pinout](#pinout)
 
 ![](/assets/images/parts/sensors/dms-80_pinout.png)
@@ -26,7 +34,7 @@ sidebar:
 2. GND
 3. ADC(Outputs the distance sensing value in analog signal)
 
-# [Output Voltage](#output-voltage)
+# [Sensor Output](#sensor-output)
 
 - This is a graph shows the analog output voltage on RoboPlus based on the distance changes from white paper which has a reflection percentage of 90% and gray paper which has a reflection percentage of 18%.
 - Even if the color and reflection percentage change, you can see the output value for the distance barely changes.
@@ -34,21 +42,10 @@ sidebar:
 ![](/assets/images/parts/sensors/dms-80_voltage_graph.png)
 
 
-# [Specifications](#specifications)
+# [Tutorials](#tutorials)
 
-- Weight : 4.4g
-- Detecting Distance : 10 ~ 80cm
-- Recommended Voltage Suppy : 4.5 ~ 5.5V
-
-
-# [Compatible Controllers](#compatible-controllers)
-
-[Controller Compatibility]
-
-# [Roboplus Support](#roboplus-support)
-
-Please refer to [DMS-80 in Roboplus Task]
+- RoboPlus Task : Please refer to [DMS-80] section in the Roboplus Task.
 
 
 [Controller Compatibility]: /docs/en/faq/controller_compatibility/
-[DMS-80 in Roboplus Task]: /docs/en/software/rplus1/task/programming_02/#dms-sensor
+[DMS-80]: /docs/en/software/rplus1/task/programming_02/#dms-sensor

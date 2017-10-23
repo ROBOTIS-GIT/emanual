@@ -975,7 +975,7 @@ AX-12+ #9 was used for the right gripper and AX-12+ #10 was used for the left.
 [Touch Sensor]: /docs/en/parts/sensor/ts-10/
 [Gyro Sensor]: /docs/en/parts/sensor/gs-12/
 [USB2Dynamixel]: /docs/en/parts/interface/usb2dynamixel/
-[Controller]: /docs/en/parts/controller/compatibility/
+[Controller]: /docs/en/faq/controller_compatibility/
 [RC-100]: /docs/enparts/communication/rc-100/
 [ZIG-110]: /docs/enparts/communication/zig-100_110/
 [How to Download of task code]: /docs/en/faq/download_task_code/

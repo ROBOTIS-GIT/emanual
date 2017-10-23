@@ -3216,6 +3216,8 @@ protocol1:
         url: /dxl/protocol1/#bulk-read
   - title: "More Packet Examples"
     url: /dxl/protocol1/#more-packet-examples
+  - title: "Communication Overview"
+    url: /dxl/protocol1/#communication-overview
 
 #Protocol 2.0 sidebar
 protocol2:
@@ -5174,6 +5176,228 @@ zig2serial:
   - title: "Videos"
     url: /parts/communication/zig2serial/#videos
   
+#LM-10 sidebar
+lm-10:
+  - title: "Introduction"
+    url: /parts/display/lm-10/#introduction
+  - title: "Pinout"
+    url: /parts/display/lm-10/#pinout
+  - title: "Tutorials"
+    url: /parts/display/lm-10/#tutorials
+  - title: "Videos"
+    url: /parts/display/lm-10/#videos
+
+#DMS-80 sidebar
+dms-80:
+  - title: "Introduction"
+    url: /parts/sensor/dms-80/#introduction
+  - title: "Specifications"
+    url: /parts/sensor/dms-80/#specifications
+  - title: "Pinout"
+    url: /parts/sensor/dms-80/#pinout
+  - title: "Sensor Output"
+    url: /parts/sensor/dms-80/#sensor-output
+  - title: "Tutorials"
+    url: /parts/sensor/dms-80/#tutorials
+
+#IRSS-10 sidebar
+irss-10:
+  - title: "Introduction"
+    url: /parts/sensor/irss-10/#introduction
+  - title: "Specifications"
+    url: /parts/sensor/irss-10/#specifications
+  - title: "Pinout"
+    url: /parts/sensor/irss-10/#pinout
+  - title: "Sensor Output"
+    url: /parts/sensor/irss-10/#sensor-output
+  - title: "Tutorials"
+    url: /parts/sensor/irss-10/#tutorials
+  - title: "Videos"
+    url: /parts/sensor/irss-10/#videos
+
+#GS-12 sidebar
+gs-12:
+  - title: "Introduction"
+    url: /parts/sensor/gs-12/#introduction
+  - title: "Specifications"
+    url: /parts/sensor/gs-12/#specifications
+  - title: "Pinout"
+    url: /parts/sensor/gs-12/#pinout
+  - title: "Sensor Output"
+    url: /parts/sensor/gs-12/#sensor-output
+  - title: "Tutorials"
+    url: /parts/sensor/gs-12/#tutorials
+
+#TS-10 sidebar
+ts-10:
+  - title: "Introduction"
+    url: /parts/sensor/ts-10/#introduction
+  - title: "Specifications"
+    url: /parts/sensor/ts-10/#specifications
+  - title: "Pinout"
+    url: /parts/sensor/ts-10/#pinout
+  - title: "Sensor Output"
+    url: /parts/sensor/ts-10/#sensor-output
+  - title: "Tutorials"
+    url: /parts/sensor/ts-10/#tutorials
+  - title: "Videos"
+    url: /parts/sensor/ts-10/#videos
+
+#AX-S1 sidebar
+ax-s1:
+  - title: "Introduction"
+    url: /parts/sensor/ax-s1/#introduction
+  - title: "Specifications"
+    url: /parts/sensor/ax-s1/#specifications
+  - title: "How to Communicate"
+    url: /parts/sensor/ax-s1/#how-to-communicate
+  - title: "Control Table"
+    url: /parts/sensor/ax-s1/#control-table
+  - title: "How to Assemble"
+    url: /parts/sensor/ax-s1/#how-to-assemble
+  - title: "References"
+    url: /parts/sensor/ax-s1/#references
+
+#IR-Array sidebar
+ir-array:
+  - title: "Introduction"
+    url: /parts/sensor/ir-array/#introduction
+  - title: "Specifications"
+    url: /parts/sensor/ir-array/#specifications
+  - title: "How to Use"
+    url: /parts/sensor/ir-array/#how-to-use
+  - title: "Control Table"
+    url: /parts/sensor/ir-array/#control-table
+
+#CS-10 sidebar
+cs-10:
+  - title: "Introduction"
+    url: /parts/sensor/cs-10/#introduction
+  - title: "Specifications"
+    url: /parts/sensor/cs-10/#specifications
+  - title: "Pinout"
+    url: /parts/sensor/cs-10/#pinout
+  - title: "Videos"
+    url: /parts/sensor/cs-10/#videos
+
+#MGSS-10 sidebar
+mgss-10:
+  - title: "Introduction"
+    url: /parts/sensor/mgss-10/#introduction
+  - title: "Specifications"
+    url: /parts/sensor/mgss-10/#specifications
+  - title: "Pinout"
+    url: /parts/sensor/mgss-10/#pinout
+  - title: "Tutorials"
+    url: /parts/sensor/mgss-10/#tutorials
+  - title: "Videos"
+    url: /parts/sensor/mgss-10/#videos
+
+#TPS-10 sidebar
+tps-10:
+  - title: "Introduction"
+    url: /parts/sensor/tps-10/#introduction
+  - title: "Specifications"
+    url: /parts/sensor/tps-10/#specifications
+  - title: "Pinout"
+    url: /parts/sensor/tps-10/#pinout
+  - title: "Videos"
+    url: /parts/sensor/tps-10/#videos
+
+#PIR-10 sidebar
+pir-10:
+  - title: "Introduction"
+    url: /parts/sensor/cs-10/#introduction
+  - title: "Specifications"
+    url: /parts/sensor/cs-10/#specifications
+  - title: "Pinout"
+    url: /parts/sensor/cs-10/#pinout
+
+#Geared Motor sidebar
+gm-10a:
+  - title: "Introduction"
+    url: /parts/motor/gm-10a/#introduction
+  - title: "Specifications"
+    url: /parts/motor/gm-10a/#specifications
+  - title: "Pinout"
+    url: /parts/motor/gm-10a/#pinout
+  - title: "Tutorials"
+    url: /parts/motor/gm-10a/#tutorials
+  - title: "Videos"
+    url: /parts/motor/gm-10a/#videos
+
+#High Speed Geared Motor sidebar
+h_speed_geared_motor:
+  - title: "Introduction"
+    url: /parts/motor/h_speed_geared_motor/#introduction
+  - title: "Specifications"
+    url: /parts/motor/h_speed_geared_motor/#specifications
+  - title: "Pinout"
+    url: /parts/motor/h_speed_geared_motor/#pinout
+  - title: "Tutorials"
+    url: /parts/motor/h_speed_geared_motor/#tutorials
+  - title: "Videos"
+    url: /parts/motor/h_speed_geared_motor/#videos
+
+#Low Speed Geared Motor sidebar
+l_speed_geared_motor:
+  - title: "Introduction"
+    url: /parts/motor/l_speed_geared_motor/#introduction
+  - title: "Specifications"
+    url: /parts/motor/l_speed_geared_motor/#specifications
+  - title: "Pinout"
+    url: /parts/motor/l_speed_geared_motor/#pinout
+  - title: "Tutorials"
+    url: /parts/motor/l_speed_geared_motor/#tutorials
+  - title: "Videos"
+    url: /parts/motor/l_speed_geared_motor/#videos
+
+#Servo Motor sidebar
+servo_motor:
+  - title: "Introduction"
+    url: /parts/motor/servo_motor/#introduction
+  - title: "Specifications"
+    url: /parts/motor/servo_motor/#specifications
+  - title: "Pinout"
+    url: /parts/motor/servo_motor/#pinout
+  - title: "Tutorials"
+    url: /parts/motor/servo_motor/#tutorials
+  - title: "Videos"
+    url: /parts/motor/servo_motor/#videos
+
+#LN-101 sidebar
+ln-101:
+  - title: "Introduction"
+    url: /parts/interface/ln-101/#introduction
+  - title: "How to Use"
+    url: /parts/interface/ln-101/#how-to-use
+  - title: "Check Driver"
+    url: /parts/interface/ln-101/#check-driver
+  - title: "Install Driver Manually"
+    url: /parts/interface/ln-101/#install-driver-manually
+  - title: "Videos"
+    url: /parts/interface/ln-101/#videos
+
+#USB2Dynamixel sidebar
+usb2dynamixel:
+  - title: "Introduction"
+    url: /parts/interface/usb2dynamixel/#introduction
+  - title: "How to Use"
+    url: /parts/interface/usb2dynamixel/#how-to-use
+  - title: "Layout"
+    url: /parts/interface/usb2dynamixel/#layout
+  - title: "Select Communication Mode"
+    url: /parts/interface/usb2dynamixel/#select-communication-mode
+  - title: "Tutorials"
+    url: /parts/interface/usb2dynamixel/#tutorials
+  - title: "Supply Power"
+    url: /parts/interface/usb2dynamixel/#supply-power
+  - title: "Check Driver"
+    url: /parts/interface/usb2dynamixel/#check-driver
+  - title: "Install Driver Manually"
+    url: /parts/interface/usb2dynamixel/#install-driver-manually
+  - title: "Videos"
+    url: /parts/interface/usb2dynamixel/#videos
 
 contents-guide:
   - title: "Contents Guide"
