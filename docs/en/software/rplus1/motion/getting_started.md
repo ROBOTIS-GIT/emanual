@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: rplus1_motion
+ref: rplus1_motion_getting_started
 read_time: true
 share: true
 author_profile: false
@@ -13,13 +13,21 @@ sidebar:
 
 # [Introduction](#introduction)
 
-RoboPlus Manager is used to handle devices used by a robot.
-Major functions of this program are as follows.
-Manage controller firmware. (Update and Restore)
-Inspect the status of the controller and peripheral devices. (Test)
-Set the required modes. (Settings)
+## What is a Motion?
+A motion is a set of actuator position and speed data necessary for robot movements.  
+In order for the robot to move, a motion file is required.  A suitable motion file must be downloaded for the assembled robot.  
+A motion file is identified by the icon below, and its file extension is .mtn.
 
-![](/assets/images/sw/rplus1/manager/roboplus_manager_001.png)
+![](/assets/images/sw/rplus1/motion/roboplus_motion_001.png)
+ 
+## What is the relationship between a motion and task code?
+
+A task code file is a program while a motion file is data.  For better understanding, let us think about MP3 players and MP3 files. If there were no MP3 players, you will not be able to listen to music because MP3 file could not be played.  The result is the same when there is an MP3 player but no MP3 file.  If you want to make your robot move, you need a task code file.  If the task code downloaded into your robot uses motions, you must download the motion file as well.  If no motions are used in the task code, you do not need the motion file.
+
+`Note` To use motions in a task code, the motion file must be downloaded.
+{: .notice}
+ 
+![](/assets/images/sw/rplus1/motion/roboplus_motion_002.png)
 
 ## [Install](#install)
 
@@ -52,986 +60,1079 @@ Windows installer and .NET Framework can be downloaded from [Microsoft Download 
 
 # [Getting Started](#getting-started)
 
-## [Connect Controller](#connect-controller)
+## [Robot Motion](#robot-motion)
 
-1. Connect controller to the PC. (Please refer to each [controller information] for connecting the controller to the PC.)
-2. Select the communication port to use. Use the "Automatic Search" function to easily select the appropriate port.
+"Robot Motion" refers to the motion data in the controller.  
+These data can be seen and edited on the "Robot Motion" window.  
+This window is displayed only when the robot is connected.  
+(See how to [Connect to Robot](#connect-to-robot))
 
-    ![](/assets/images/sw/rplus1/manager/roboplus_manager_002.png)
+![](/assets/images/sw/rplus1/motion/roboplus_motion_003.png)
 
-    If the chosen communication port is being used by another program, you must first find and stop the program.
+## [File Motion](#file-motion)
 
-    ![](/assets/images/sw/rplus1/manager/roboplus_manager_003.png)
+"File Motion" refers to the motion data in the form of files in the PC.  
+These data can be seen and edited on the "File Motion" window.  
+Multiple "File Motion" windows can be displayed at once.
 
-    If RoboPlus Manager is unable to find a controller, the following error message will be shown.
+![](/assets/images/sw/rplus1/motion/roboplus_motion_004.png)
 
-    ![](/assets/images/sw/rplus1/manager/roboplus_manager_004.png)
+## <a name="connect-to-robot"></a>[Connect to Robot](#connect-to-robot)
 
-    - Check if the controller is connected to the PC. (See controller information for information on how to connect the controller.)
-    - Check if the controller is turned on.  
-    - Check if the correct communication port was chosen.
+1. Connect the robot to the PC (Please refer to [Controller Information] for details)
+2. Select the communication port to use.  
+    Choose the communication port to which the robot is connected.  If you don't know the port number, use the "Auto Searching" function.
+
+    ![](/assets/images/sw/rplus1/motion/roboplus_motion_005.png)
  
-3. Start management. (Please refer to the [managing information of each controller].)
+3. Connect with the robot. Choose the "Connect Robot" menu.
 
+    ![](/assets/images/sw/rplus1/motion/roboplus_motion_006.png)
 
-# [Firmware Management](#firmware-management)
-
-## <a name="firmware-update"></a>[Firmware Update](#firmware-update)
-
-Firmware is the program installed in the controller, and is used to execute .tsk programs or to manage the controller.  
-RoboPlus Manager automatically connects to the internet and searches for firmware updates.
-
-![](/assets/images/sw/rplus1/manager/roboplus_manager_005.png)
+    If you are unable to connect to the robot, please check following:
+    - Is the controller connected to the PC?
+    - Is the controller turned on?
+    - Was the correct port selected?
+    - Is the controller compatible with RoboPlus Motion?
+      - CM-100 is not compatible.
+      - CM-5 is compatible only after a firmware upgrade.
  
-### Updating Controller Firmware
-
-1. When the controller is connected, the controller's firmware version will be retrieved. If a newer firmware is available, it will ask whether to download the latest firmware.
-
-    ![](/assets/images/sw/rplus1/manager/roboplus_manager_006.png)
-
-2. When the 'OK' button is pressed, it will begin updating the firmware.
-
-    ![](/assets/images/sw/rplus1/manager/roboplus_manager_007.png)
-
-3. You can check your controller's model number and firmware version.
-
-    ![](/assets/images/sw/rplus1/manager/roboplus_manager_008.png)
-
-4. Press the "Next" button to begin updating your firmware. Be careful not to turn the power off or disconnect the cable while the firmware is being updated.
-
-    ![](/assets/images/sw/rplus1/manager/roboplus_manager_009.png)
-
-5. Once the firmware has been updated, Press the "Finish" button to return to the controller maintenance page.
-
-    ![](/assets/images/sw/rplus1/manager/roboplus_manager_010.png)
-
-## [Firmware Recovery](#firmware-recovery)
-
-When there is a problem with the controller’s firmware, RoboPlus Manager can be used to recover the firmware.  
-For CM-150 and CM-200, you will need the latest RoboPlus Manager (ver. 1.0.31.0 or higher) to execute the recovery.
-
-### Recover Controller Firmware
-
-1. Connect the controller to the PC using LN-101.
-
-    ![](/assets/images/parts/interface/ln101_connect.jpg)
- 
-2. Run RoboPlus Manager and open the controller firmware management wizard. On the menu bar, click the firmware management button to run the firmware wizard.  
-    (CM-150 and CM-200 require some pre-steps prior to proceeding. Please refer to the message below.)
-
-    ![](/assets/images/sw/rplus1/manager/roboplus_manager_011.gif)
+4. Disconnect the Robot.  
+    To disconnect from the robot, choose the "Exit" menu or simply close the window.
     
-    ![](/assets/images/sw/rplus1/manager/roboplus_manager_012.gif)
+    ![](/assets/images/sw/rplus1/motion/roboplus_motion_007.png)
+
+## [Download Motion](#download-motion)
+
+File motions can be converted into robot motions.
+- Open the file motion to download.
+- Connect to the robot.
+- Click on the "Download Motion" menu and wait for the download to complete.
+
+  ![](/assets/images/sw/rplus1/motion/roboplus_motion_008.png)
  
-3. Select the port number for connecting the controller.  
-    Because the firmware is broken, the controller cannot be automatically found. So, you must manually select the port number the controller is connected to.  
-    The controller cannot be found if the port is being used, so please close other programs before proceeding. Select the port number then click search.
+- Verify that the contents of the file motion have been copied to the robot motion as seen below.
 
-    ![](/assets/images/sw/rplus1/manager/roboplus_manager_013.gif)
+  ![](/assets/images/sw/rplus1/motion/roboplus_motion_009.png)
+
+- Download RoboPlus Program (for CM-510/530)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dHCqPs1_2yY" frameborder="0" allowfullscreen></iframe>
+
+## [Play Motion](#play-motion)
+
+You can play the created motions. Search the page to play and click "Play Motion".
+
+![](/assets/images/sw/rplus1/motion/roboplus_motion_010.png)
  
-4. Turn OFF then turn ON the controller (this process can be skipped for CM-150 and CM-200).  
-    Turn OFF and turn ON the controller to proceed with the recovery
+- Errors may occur when trying to play motions.
+  - This error can be seen while working on a "Robot Motion" window. In this case, the page linked as Next or Exit has been modified, but the controller does not have enough memory to temporarily save it.
 
-5. Check the controller information.  
-    When the controller is found, the information for the firmware to be downloaded will be displayed.  
-    Please check whether the model name is the same as the name of the connected controller (the version on the controller information is the version of the boot loader, not the firmware)
+  ![](/assets/images/sw/rplus1/motion/roboplus_motion_011.png)
 
-    ![](/assets/images/sw/rplus1/manager/roboplus_manager_014.gif)
+  > This can be solved by saving the page before execution.  If you proceed without saving, only the current page will be played.
  
-6. Firmware Recovery
+  - This error can be seen while working on a "File Motion" window. In this case, the data in the PC is not the controller, and the controller does not have enough memory  to temporarily save the Next or Exit page.
 
-    ![](/assets/images/sw/rplus1/manager/roboplus_manager_015.gif)
+  ![](/assets/images/sw/rplus1/motion/roboplus_motion_012.png)
 
-7. Check the results of the firmware recovery
-
-    ![](/assets/images/sw/rplus1/manager/roboplus_manager_016.gif)
-
-### Video
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ITpIY1lF2As" frameborder="0" allowfullscreen></iframe>
-
-# [How to Use](#how-to-use)
-
-## [Controllers](#controllers)
-
-### [CM-5](#cm-5)
-
-When the CM-5 controller is connected to RoboPlus Manager, the following screen is displayed.
-
-![](/assets/images/sw/rplus1/manager/roboplus_manager_017.png)
-
-The controller and its peripheral devices are listed in the left window.  In the right window is the "controller management" window.  
-If the controller's firmware version is older than that of RoboPlus Manager, it can be updated. (Please refer to the [Firmware Update](#firmware-update) section)
+  > You can execute only the chosen page.  To play linked pages, you must download the motion to the robot.
  
-<iframe width="560" height="315" src="https://www.youtube.com/embed/YurHoS-sSvk" frameborder="0" allowfullscreen></iframe>
+## [Stop Motion](#stop-motion)
 
-### [CM-510](#cm-510)
+Stops the motion that is being carried out.
 
-When the CM-510 controller is connected to RoboPlus Manager, the following screen is displayed.
+![](/assets/images/sw/rplus1/motion/roboplus_motion_013.png)
 
-![](/assets/images/sw/rplus1/manager/roboplus_manager_018.png)
+"Stop Motion" does not stop execution right away.  Instead, the "Exit" page is executed before stopping.  
  
-The controller and its peripheral devices are listed in the left window.  In the right window is the "controller management" window.  
-If the controller's firmware version is older than that of RoboPlus Manager, it can be updated. (Please refer to the [Firmware Update](#firmware-update) section)
+## [Emergency Stop](#emergency-stop)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ZAstC0VRqYA" frameborder="0" allowfullscreen></iframe>
+Stops the motion that is being carried out.
 
-### [CM-530](#cm-530)
+![](/assets/images/sw/rplus1/motion/roboplus_motion_014.png)
 
-When the CM-530 controller is connected to RoboPlus Manager, the following screen is displayed.
+Unlike "Stop Motion," "Emergency Stop" halts execution immediately.  
 
-![](/assets/images/sw/rplus1/manager/roboplus_manager_019.png)
+
+# [Motion Editing](#motion-editing)
+
+Things to be aware of before editing motions are introduced here.
  
-The controller and its peripheral devices are listed in the left window.  In the right window is the "controller management" window.  
-If the controller's firmware version is older than that of RoboPlus Manager, it can be updated. (Please refer to the [Firmware Update](#firmware-update) section)
+## Setting the Dynamixel ID
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/w2k7dIKIqB8" frameborder="0" allowfullscreen></iframe>
-
-### [CM-700](#cm-700)
-
-When the CM-700 controller is connected to RoboPlus Manager, the following screen is displayed.
-
-![](/assets/images/sw/rplus1/manager/roboplus_manager_020.png)
+The motion player in the controller can control a total of 26 Dynamixels (from ID 0 to 25). Therefore, to create a motion with RoboPlus Motion, the ID of each Dynamixel must be between 0 and 25.
  
-The controller and its peripheral devices are listed in the left window.  In the right window is the "controller management" window.  (Please refer to the "Test" page).  
-If the controller's firmware version is older than that of RoboPlus Manager, it can be updated.  (Please refer to the [Firmware Update](#firmware-update) section)
+## Control Priority
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_ZFpFSpPhbU" frameborder="0" allowfullscreen></iframe>
+Dynamixels may be controlled by both RoboPlus Motion and RoboPlus Task. Generally, the control priority is as follows:
+1. RoboPlus Motion (ID of Dynamixel is between 0 and 25.)
+2. RoboPlus Task
 
-### [General/Detail Search](#general-detail-search)
-
-RoboPlus Manager has two search modes.
+In other words, once a motion is executed, the Dynamixel will be controlled by only RoboPlus Motion, and RoboPlus Task will have no control over the  Dynamixel. However, this control priority may be changed by users, if so desired.  
+There are 2 ways to change the control priority:
+- In the motion data. -> Use [ID Used/Not-Used](#set-id-usage-status) function.
+- In the task code. -> Use the [Joint Offset Parameter]. The advantage of this method is that the control priority may be changed according to the situation.
  
-#### General Search
+## Dynamixel Auto Shutdown Function
 
-- Search for Dynamixels connected at 1Mbps.
-- Search speed is fast because it searches for only Dynamixels connected at 1Mbps.
-- Dynamixels connected at other speeds are not found.  
- 
-#### Detail Search
+Dynamixels have an Auto Shutdown function. This function prevents Dynamixels from being damaged. The Auto Shutdown function will be triggered in the following situations.  
+- The motor has overheated due to an increase in internal temperature.
+- The motor has been under too much load for an extensive period of time.
 
-- Search for Dynamixels connected at every possible communication speed.
-- Search speed is slower because it searches for Dynamixels connected at different communication speeds.
-- The Dynamixel that are not connected at 1Mbps are automatically adjusted to 1Mbps.  
+When the Auto Shutdown function is triggered, the following will be seen.  
+- The Dynamixel's LED will blink.
+- The motor will stop moving, resulting in no torque.
+
+To solve this problem, the following steps must be taken.
+- Resolve what triggered the Auto Shutdown function.  
+  If the motor has overheated, let it cool with some rest.  
+  If the motor is under too much load, remove some of the load.
+- Turn off the Dynamixel and turn it back on.
+
+When creating a motion, the joint may not move. This is because the Auto Shutdown function has been triggered by the causes listed above.
+
+## [Pose Editing](#pose-editing)
+
+A pose is the robot's position at a point in time.  It is a collection of motor position values required for the posture.   
  
-`Note` If a Dynamixel is no longer detected after a detailed search, there might be an ID duplication.  In this case, connect only the undetected device, and change its ID to an unused one. (Refer to the [ID Setup] section.)
+![](/assets/images/sw/rplus1/motion/roboplus_motion_015.png)
+ 
+- `Pose of Step` refers to the data values of the pose.
+
+- `Pose of Robot` refers to the position values of the connected robot's joints. When the Pose of Robot is modified, the robot will move accordingly.  
+
+### [Basic Pose Editing](#basic-pose-editing)
+
+The Basic Pose Editor is a simple editor that may be used for any type of robot. To change the number of ID's used at "Pose of Step," use the [ID Editing Function](#edit-all-pages).
+
+![](/assets/images/sw/rplus1/motion/roboplus_motion_016.png)
+
+#### [Select Actuator ID](#select-actuator-id)
+
+Click on a row to select an actuator.
+The following methods may be used to select multiple actuators.
+- To select actuators in consecutive order.
+
+  ![](/assets/images/sw/rplus1/motion/roboplus_motion_017.png)
+
+  - Drag with mouse.
+  - Select actuators while holding down the "Shift" key.
+
+- To select actuators separately.
+
+  ![](/assets/images/sw/rplus1/motion/roboplus_motion_018.png)
+
+  - Select actuators while holding down the "Ctrl" key.
+
+- To select all actuators.
+  - Press the button in the upper left corner.
+
+    ![](/assets/images/sw/rplus1/motion/roboplus_motion_019.png)
+
+  - Click on the "Select All" menu.
+
+    ![](/assets/images/sw/rplus1/motion/roboplus_motion_020.png)
+
+#### [Torque On/Off](#torque-onoff)
+
+The "Torque On/Off" function enables you to make a pose manually by turning the robot's joints on or off.  
+This function is only available in "Pose of Robot."  
+If the torque is on, its position value will be shown. Otherwise, the value will be displayed as 'OFF'.  
+
+![](/assets/images/sw/rplus1/motion/roboplus_motion_021.png)
+ 
+The torque may be turned on or off through the following methods.
+- Press the "On" button to turn on the selected actuator.
+
+  ![](/assets/images/sw/rplus1/motion/roboplus_motion_022.png)
+
+- Press the "Off" button to turn off the selected actuator.
+
+  ![](/assets/images/sw/rplus1/motion/roboplus_motion_023.png)
+
+- Click the "Torque Toggle" menu to turn it off when it is on and to turn it on when it is off.
+
+  ![](/assets/images/sw/rplus1/motion/roboplus_motion_024.png)
+
+#### [Change Actuator Value](#change-actuator-value)
+
+The position value of the selected actuator may be changed after choosing the joint in "Pose".
+
+![](/assets/images/sw/rplus1/motion/roboplus_motion_025.png)
+
+#### <a name="pose-executioncapture"></a>[Play Pose](#play-pose)
+
+To execute a pose, move "Pose of Step" to "Pose of Robot."  
+
+![](/assets/images/sw/rplus1/motion/roboplus_motion_026.png)
+
+![](/assets/images/sw/rplus1/motion/roboplus_motion_027.png)
+ 
+#### [Capture Pose](#capture-pose)
+
+To "Capture"(Store) a pose, move "Pose of Robot" to "Pose of Step."
+
+![](/assets/images/sw/rplus1/motion/roboplus_motion_028.png)
+
+![](/assets/images/sw/rplus1/motion/roboplus_motion_029.png)
+
+#### [Copy/Paste Pose](#copypaste-pose)
+
+These functions enable the actuator values to be changed easily.  
+Not only can poses be copied and pasted within the program, but texts from other files, such as Microsoft Excel, may be copied.  
+(When copying text from another program, values are delimited by spaces, new lines and tabs.)  
+
+![](/assets/images/sw/rplus1/motion/roboplus_motion_030.png)
+
+![](/assets/images/sw/rplus1/motion/roboplus_motion_031.png)
+
+- Copy Pose: Click on "Copy" or press Ctrl+C.
+
+![](/assets/images/sw/rplus1/motion/roboplus_motion_032.png)
+
+- Paste Pose: Click on "Paste" or press Ctrl+V.
+
+![](/assets/images/sw/rplus1/motion/roboplus_motion_033.png)
+
+#### [Mask Pose](#mask-pose)
+
+Masking a pose refers to the process of making a new pose by combining 2 poses by setting whether the value is used or not while executing or capturing a pose.  
+For example, Pose C may be created by adding the upper body of Pose A with the lower body of Pose B.
+
+![](/assets/images/sw/rplus1/motion/roboplus_motion_034.png)
+
+![](/assets/images/sw/rplus1/motion/roboplus_motion_035.png)
+
+### [Pose Utility]
+
+The pose utility is a tool to easily create a pose based on previously supplied information.
+- 3D robot control : A pose can be created by moving the 3D robot's joints.
+- Mirror: A symmetrical pose can be created or the pose can be reversed.
+- Inverse Kinematics: The accurate positions of each joint can be calculated.
+
+Information regarding the robot are required to create a pose using the pose utility. Therefore, a robot not on the list cannot be used. Some robots may not support the functions listed above. Because the pose utility uses 3D graphics, its performance depends on your graphic card.
 {: .notice}
-
-### [Aux LED](#aux-led)
-
-This parameter is used to turn the controller's Aux LED on or off.
  
-#### Characteristic
-
-The controller's Aux LED can be manipulated using the On/Off button.
+![](/assets/images/sw/rplus1/motion/roboplus_motion_036.png)
  
-#### Corresponding RoboPlus Task Command
+#### [Select Robot](#select-robot)
 
-- Parameter : [Aux LED]
-- Constants : True/False
-
-### [Button](#button)
-
-This parameter is used to read the controller's button status (whether it is pressed).
+Before using the pose utility, you must first select the robot. Click the robot's name on the list below to select an applicable robot.
  
-#### Characteristic
-
-When a button on the controller is pressed, you can see which button has been pressed.
+`Note` Pose utility cannot be used on a robot not on the list. In case of a user's robot, the motions of the robot must be created by Basic Pose Editor.
+{: .notice}
  
-#### Corresponding RoboPlus Task Command
-
-- Parameter : [Button]
-- Constant: Button
-
-### [Timer](#timer)
-
-This parameter is used to set or read the controller's timer.
+![](/assets/images/sw/rplus1/motion/roboplus_motion_037.png)
  
-#### Characteristics
+- Select the name of robot to create a pose for.
 
-- The timer can be set and the actual time can be checked.
-- Timer value is between 0 and 255.
-- When the timer is set, it will start to count every 0.128 seconds, and you will be able to see how much time is left.
+|Robot Name|Description|
+|:---:|:---:|
+|Bioloid Battle Droid|Battle Droid Robot from Bioloid Intermediate Example.|
+|Bioloid Dinosaur|Dinosaur Robot from Bioloid Advanced Example.|
+|Bioloid Fawn|Baby Fawn Robot from Bioloid Intermediate Example.|
+|Bioloid Gerwalk|Gerwalk Robot from Bioloid Advanced Example.|
+|Bioloid Humanoid|Humanoid from Bioloid Advanced Exampe.|
+|Bioloid King|Spider	King Spider Robot from Bioloid Advanced Example|
+|Bioloid Puppy|Puppy Robot from Bioloid Advanced Example|
+|Bioloid Spider|Spider Robot from Bioloid Intermediate Example|
+|Bioloid Turtle|Turtle Robot from Bioloid Intermediate Example|
+|Bioloid Walking|Droid	Walking Droid Robot from Bioloid Beginner Example|
+|Premium Humanoid|A-type	Bioloid Premium Humanoid|
+|Premium Humanoid|B-type	Bioloid Premium Humanoid|
+|Premium Humanoid|C-type	Bioloid Premium Humanoid|
  
-#### Corresponding RoboPlus Task Command
+- When the "Initial Pose" button is pressed, the robot will assume its initial position.
 
-- Parameter : [Timer]
-- Constants : Timer Values
+#### [Control 3D Robot](#control-3d-robot)
 
-### [High Resolution Timer](#high-resolution-timer)
+##### Control View
 
-Internally the controller sets a counter; this is the parameter for the high resolution timer.
-This timer is set for every 1ms, useful for more accurate timing.
+3D robot can be seen from various angle using the view control function.
  
-#### Characteristics
-
-- The timer can be set and the actual time can be checked.
-- Timer value is between 0 and 65535. Timers shows 1 unit for every 1ms
-- When the timer is set, it will start to count every 0.001 seconds, and you will be able to see how much time is left.
+![](/assets/images/sw/rplus1/motion/roboplus_motion_038.png)
  
-#### Corresponding RoboPlus Task Command
+- **Zoom Fit** : The view angle is reset to the initial status.
+- **Select Objects** : The joints can be selected by the mouse cursor.
+- **Rotate the View** : The view can be rotated using the mouse. The same thing as above occurs when you press the wheel button of mouse and move.
+- **Move the View** : The view can be moved horizontally using the mouse. The same thing as above occurs when you press the wheel button of mouse and move, while pressing "Ctrl" key.
+- **Increase/Decrease the View** : The view can be increased or decreased using the mouse. The same thing as above occurs when you spin the mouse wheel.
 
-- Parameter : [HR Timer]
-- Constants : Timer Values
+##### Control Joints
 
-### [Remocon ID](#remocon-id)
+The number appeared on the robot are the ID of Dynamixel. If you place your mouse on the ID, the color of choosable Dynamixel is changed.
 
-The parameter is used to set or read the ID of the ZigBee communication module that communicates with the robot's Zigbee module.
+![](/assets/images/sw/rplus1/motion/roboplus_motion_039.png)
  
-#### Characteristics
+If you click the relevant joint, the joint value appears. The joint value is appeared as angle, not the motor value.
 
-- This parameter is meaningful only when ZigBee module is connected.
-- The ID is a number between 0 and 65535.
-- When the opponent's ID is set to 65535, data is sent to all ZigBee modules, regardless of ID.  
-- For 1:1 communication, the ID's of both ZigBee modules must be correct.
+![](/assets/images/sw/rplus1/motion/roboplus_motion_040.png)
  
-#### Corresponding RoboPlus Task Command
+If you move the mouse to left and right  while pressing the left botton of the mouse, the value increases or decreases.  
+In case of 1,024-based control, the unit of the value is approximately 0.29(300 / 1,024), and in case of 4,096-base, it is approximately 0.06(250.92 / 4,096).
 
-- Parameter : [Remocon ID]
-- Constant : Number
+#### [Mirror](#mirror)
+
+The mirror function provides two functions:  "exchange" and "symmetric." Press "Apply" after choosing the function to apply it to your robot.
+ 
+1. Exchange  
+    The robot's left side and right side are reversed to create a mirror image of the previous pose.
+
+    ![](/assets/images/sw/rplus1/motion/roboplus_motion_041.jpg)
+    
+    ![](/assets/images/sw/rplus1/motion/roboplus_motion_042.png)
+ 
+2. Symmetry  
+    A symmetric pose based on the selected side is created.
+    
+    ![](/assets/images/sw/rplus1/motion/roboplus_motion_043.png)
+    
+    ![](/assets/images/sw/rplus1/motion/roboplus_motion_044.png)
+
+#### [Inverse Kinematics](#inverse-kinematics)
+
+##### Position and Coordinate System
+
+Understanding the kinematics of the robot's movements starts with figuring out where each robot part is located.  We must first assign a coordinate point as the origin, and then mark the displacement of each part on the coordinate system.  
+Coordinates axis and origin on the View are shown as below, and the unit of the grid is 20mm.  
+Here, Origin means that the coordinates of  X, Y, Z is (0, 0, 0).
+
+![](/assets/images/sw/rplus1/motion/roboplus_motion_045.png)
+ 
+##### Kinematics and Inverse Kinematics
+
+Kinematics is used to determine the location or movement of the end point from the angle or movement of the joint.  In other words, kinematics allows us to determine where the end points once the joint values have been decided. For example, suppose there is a manipulator with two joints in the same plane as shown below.  Using the angles of the joints, the coordinate (x,y) of the end point can be determined through kinematics.  Kinematics results in only one solution.
+
+![](/assets/images/sw/rplus1/motion/roboplus_motion_046.png)
+ 
+On the other hand, inverse kinematics may be used to determine the angle or movement of the joint from the location or movement of the end point.  For example, suppose again that there is a manipulator with two joints in the same plane coordinates.  If the end point (x,y) has been determined, there are 2 possible values for each joint as seen below.
+
+![](/assets/images/sw/rplus1/motion/roboplus_motion_047.png)
+
+When using inverse kinematics, the coordinate (x,y) of the end point may be located at an unreachable distance from the origin or no solution may be obtained due to limitations on joint angles. If more joints are used, there may be infinitely many solutions.
+ 
+##### End Point Control
+
+When the user selects how much and in which direction to move the end point, the "Inverse Kinematics" function in the pose utility will calculate the values of each joint and move the end point automatically.  
+This function needs a module executes "Inverse Kinematics" calculation.  Currently, the robots support "Inverse Kinematics" calculation are as follows:
+- Bioloid Humanoid
+- Bioloid Premium Humanoid Type A
+- Bioloid Premium Humanoid Type B
+- Bioloid Premium Humanoid Type C
+
+This subject is explained on the basis of Bioloid Premium Humanoid Type A.
+ 
+###### Select the end point
+- Walking Step : Located at the middle of both feet, used to move both feet.
+- Right Foot : Located at the center of the right foot, used to move only the right foot.
+- Left Foot : Located at the center of the left foot, used to move only the left foot.
+
+  ![](/assets/images/sw/rplus1/motion/roboplus_motion_048.png)
+ 
+###### Initialize the end point
+
+The location of the end point is initialized.
+ 
+###### Move the end point
+
+The end point in 3D space can be controlled by 6 parameters.  Depending on the structure of robots, all the 6 paramters may not be appeared.  
+To change the values, select relevant parameters, and then use the following methods.
+- Press the `[`or `]` to increase or decrease the value by 1.
+- Press the `[` or `]` while pressing `Shift` to increase or decrease the value by 10.
+- The controller can change the values appears if you double-click or press `Enter`.
+
+  ![](/assets/images/sw/rplus1/motion/roboplus_motion_049.png)
+
+- X(mm): it is moved to the  X-axis diretion by the unit of mm.
+
+  ![](/assets/images/sw/rplus1/motion/roboplus_motion_050.png)
+
+- Y(mm): it is moved to the Y-axis direction by the unit of mm.
+
+  ![](/assets/images/sw/rplus1/motion/roboplus_motion_051.png)
+
+- Z(mm): it is moved to the Z-axis direction by the unit of mm.
   
-### [My ID](#my-id)
+  ![](/assets/images/sw/rplus1/motion/roboplus_motion_052.png)
 
-This parameter is used to read the ID of the ZigBee module installed in my robot.
+- &phi;(&deg;): it is rotated based on the X-axis by the unit of angle.
+
+  ![](/assets/images/sw/rplus1/motion/roboplus_motion_053.png)
+
+- &theta;(&deg;): it is rotated based on the Y-axis by the unit of angle.
+
+  ![](/assets/images/sw/rplus1/motion/roboplus_motion_054.png)
+
+- &psi;(&deg;): it is rotated based on the Z-axis by the unit of angle.
+
+  ![](/assets/images/sw/rplus1/motion/roboplus_motion_055.png)
+
+{% capture rplusmotion_notice_01 %}
+Since each paramater has its minimum and maximum values, it can be changed only in the range.  
+Sometimes, mathematical results cannot be obtained by inverse kinematics calculation, so the situation is called "no solutions" or "Infinite solutions." Due to the such fact, the parameter values are not changed despite they are located in the range.  In that case, the solution can be obtained if other parameter values are replaced.  
+(For instance, in case that the legs are straightened until the end (z=0), X or Y parameter is not changed.)
+{% endcapture %}
+
+<div style="notice">{{ rplusmotion_notice_01 | markdownify }}</div>
+
+###### Apply the Result
+
+When Pose of Step is selected, the pose values on the data are changed, and if Pose of Robot is selected, the pose values of robot are changed.
+
+#### [Pose Execution/Capture](pose-executioncapture)
+
+![](/assets/images/sw/rplus1/motion/roboplus_motion_056.png)
+
+##### Pose of Step and Pose of Robot
+
+Pose of Step means the steps on the `currently selected motion file.  That is, the pose changed in pose utility is reflected to the motion file immediately, while Pose of Step has been selected.
  
-#### Characteristics
-
-- If a ZigBee module is not installed, 0 will be returned.
-- If a ZigBee module is installed, its ID is read (a number between 0 and 65534).
- 
-#### Corresponding RoboPlus Task Command
-
-- Parameter : [My ID]
-
-### [Sound Count](#sound-count)
-
-Sounds can be detected using the microphone in the controller.
- 
-#### Characteristics
-
-- When a sound louder than a certain threshold, such as a clap, is made near the controller, it will be detected by the controller's microphone.  
-- The maximum number of sounds counted is 255.
-- When sounds are no longer detected, the number of detected sounds will be input into the "Sound Count" parameter.
-- Because "Sound Count" is not initialized automatically, the user must reset it to 0 before use.
- 
-#### Corresponding RoboPlus Task Command
-
-- Parameter : [Sound Count]
- 
-### [Current Sound Count](#current-sound-count)
-
-It is also possible to know how many sounds have been counted by the controller's microphone so far.
- 
-#### Characteristics
-
-- The maximum number of sounds counted is 255.
-- The parameter value is increased in real-time whenever a sound is detected.
-- If a new sound is not detected for a certain period, the value of the "Current Sound Count" parameter is passed to the "Sound Count" parameter, and the "Current Sound Count" parameter is reset to 0.
- 
-#### Corresponding RoboPlus Task Command
-
-- Parameter : [Current Sound]
-
-### Buzzer Index
-
-This parameter is used to set the musical note played by the controller's buzzer.
- 
-#### Characteristics
-
-- Depending on what the "Buzzer Time" is set to, "Buzzer Index" can be set to play a musical note or a melody.  Please refer to the "Buzzer Time" parameter for information on sound modes.
-- If the "Buzzer Time" parameter is not set to melody mode, a melody will not be played even if it is selected.
-- In musical note mode, the note will be played for the length set as "Buzzer Time."
-- In melody mode, when a melody is set, it is played to the end.
-- There are 16 melodies (0-15) and 27 musical notes (0-26).
-- If the "Buzzer Time" is 0, the parameter is automatically set to 3 and the note is played.
- 
-#### Corresponding RoboPlus Task Command
-
-- Parameter : [Buzzer Type]
-- Constants : Melody, Scale Values.
- 
-### [Buzzer Time](#buzzer-time)
-
-This parameter is used to set the sound mode and how long the note or melody will be played.
- 
-#### Characteristics
-
-- If the "Buzzer Time" parameter is set to a  value between 0 and 50, the sound mode is set to musical note mode.  The note will be played for the length set as "Buzzer Time."
-- If the "Buzzer Time" parameter is set to 255, the sound mode is set to melody mode.
-- When the note or melody finishes playing, "Buzzer Time" is automatically reset to 0.  
- 
-#### Corresponding RoboPlus Task Command
-
-- Parameter : [Buzzer Time]
-- Constant Numbers : Melody, Scale Values
-
-### [Exterior I/O Devices](#external-i-o-devices)
-
-The controller supports exterior I/O devices, such as IR sensors, touch sensors, and DMS sensors.
- 
-#### Characteristics
-
-- Most devices support only reads, but a few also allow writes.
-- After connecting and setting up an exterior I/O device, you can check its values.
-- For user's devices, you can set which values are returned.
-- Exterior I/O devices are not recognized automatically, so the user must manually set the device.
-- IR sensors, touch sensors, DMS Sensors, and user's devices are supported.
-- If you read without connecting a device, a random value will be returned. This value is meaningless.
-- When the port and device are set, the address will be set automatically. This address can be used during programing.
- 
-#### Corresponding RoboPlus Task Command
-
-- Parameter : [User's Devices]
-
-## [Dynamixel](#dynamixel)
-
-In the program as shown below, users can set up and test Dynamixels.
-
-![](/assets/images/sw/rplus1/manager/roboplus_manager_021.png)
-
-- Dynamixels found using the "Scan" or "Search" function are listed.  All devices connected to the controller, including sensors such as AX-S1, are detected.  .
-- Choose an actuator to manage from the list on the left.
-- Parameters that can be set and tested for each device are shown in the table.  Clicking on a Dynamixel Name/ID  will call a subwindow to set or test the parameter. The subwindow simplifies the process of setting the parameter for the user.  
-- The image above is a screen shot of RoboPlus manager when the "Goal Position" parameter is clicked.  A subwindow is shown on the lower right hand corner when any row is clicked.  However, no subwindow will be displayed if only values need to be shown.
- 
-`Note` When an actuator with an ID in ① is double clicked, the actuator is selected and its LED will blink for a moment. This is used to check where the actuator is located.
+`Note` Pose of Step is activated only when there are steps on the currently selected page. Pose of Robot is activated only when the robot is connected.
 {: .notice}
 
-`Note` Actuators can be managed in a group.
+##### Pose Execution/Capture
+
+It is the same function as [Play/Capture Pose](#pose-executioncapture) of the Basic Pose Editor.
+- Pose Execution: Pose of Step is reflected to Pose of Robot.
+- Pose Capture : Pose of Robot is reflected to currently selected Pose of Step.
+
+## [Step Editing](#step-editing)
+
+A "Motion Step" means by key frames, that are  required to play consecutive motions.
+
+![](/assets/images/sw/rplus1/motion/roboplus_motion_057.png)
+
+The speed of a motion is determined by the time of each step.  
+The step editor enables steps to be edited easily.
+
+![](/assets/images/sw/rplus1/motion/roboplus_motion_058.png)
+
+Each [page](#page-editing) consists of a maximum of 7 steps.  
+To make a motion with more than 7 steps, you will need to [connect pages](#connect-page).
+
+### [Add/Insert/Delete/Move Step](#addinsertdeletemove-step)
+
+#### Add Step
+
+A new step is added at the bottom of the step list.
+
+![](/assets/images/sw/rplus1/motion/roboplus_motion_059.png)
+ 
+#### Insert Step
+
+A new step is inserted above the selected step.
+
+![](/assets/images/sw/rplus1/motion/roboplus_motion_060.png)
+ 
+#### Delete Step
+
+The selected step is deleted from the list.
+
+![](/assets/images/sw/rplus1/motion/roboplus_motion_061.png)
+ 
+#### Move Step
+
+The selected step may be moved up or down.
+
+![](/assets/images/sw/rplus1/motion/roboplus_motion_062.png)
+
+### [Pause/Time](#pausetime)
+
+#### Pause
+
+- "Pause" is the time between the end of the current step and the start of the next step.
+- The unit of the value is seconds, and the value can be changed in 0.008 increments.
+- The value is between 0 and 2.04 seconds.
+- The value can be changed using the upper scroll bar.
+
+  ![](/assets/images/sw/rplus1/motion/roboplus_motion_063.png)
+ 
+#### Time
+
+- "Time" is the time between the time from the start of the current step to the end of the current step.
+- The unit of the value is seconds, and the value can be changed in 0.008 increments.
+- The value is between 0.072 and 2.04 seconds.
+- The value can be changed using the lower scroll bar.
+
+  ![](/assets/images/sw/rplus1/motion/roboplus_motion_064.png)
+
+### [Copy/Cut/Paste Step](#copycutpaste-step)
+
+#### Copy Step
+
+The selected step is copied.
+
+![](/assets/images/sw/rplus1/motion/roboplus_motion_065.png)
+ 
+#### Cut Step
+
+The selected step is cut.
+
+![](/assets/images/sw/rplus1/motion/roboplus_motion_066.png)
+ 
+#### Paste Step
+
+The copied or cut step is pasted.  The value in the selected step is overwritten.
+
+![](/assets/images/sw/rplus1/motion/roboplus_motion_067.png)
+
+## <a name="page-editing"></a>[Page Editing](#page-editing)
+
+"Motion page" is the unit used to distinguish between saved motions.  
+Imported motions are read in terms of pages.  
+Motion data consists of 255 pages. (Some controllers are limited to only 127 pages.)
+
+![](/assets/images/sw/rplus1/motion/roboplus_motion_068.png)
+
+### <a name="select-page"></a>[Select Page](#select-page)
+
+Click on a row to select a page.
+The following methods may be used to select multiple pages.
+ 
+- To choose pages in consecutive order
+
+  ![](/assets/images/sw/rplus1/motion/roboplus_motion_069.png)
+
+  - Drag with mouse
+  - Choose pages while holding down the "Shift" key.
+ 
+- To choose pages separately
+
+  ![](/assets/images/sw/rplus1/motion/roboplus_motion_070.png)
+
+  - Choose pages while holding down the "Ctrl" key.
+ 
+- To choose all pages
+  - Press the button in the upper left corner
+
+    ![](/assets/images/sw/rplus1/motion/roboplus_motion_071.png)
+
+### <a name="conenct-page"></a>[Connect Page](#connect-page)
+
+Pages can be connected to each other if necessary.
+ 
+`Note` When data is exchanged using the Copy/Cut/Paste functions, page connection information is not exchanged.
 {: .notice}
-
-### [ID Setup](#id-setup)
-
-Each Dynamixel has its own ID, and the controller manages each Dynamixel using its ID.  This parameter is used to manage the Dynamixel's ID.  
-(Please refer to [Dynamixel Management] for more information about changing ID)
  
-#### Characteristics
+#### Next Page
 
-- Once this value is set, it will be saved, even when the power is turned off.
-- Click on the ID list to see a list of ID's that can be changed.
-- Values not shown in the ID list are being used by other Dynamixels.
-- An ID may be any number between 0 and 253, except 200, which is reserved for the controller.
+A single page can have a maximum of 7 steps.  Therefore, some motions may not fit in one page.  To use multiple pages for one motion, designate the page to link to.
 
+![](/assets/images/sw/rplus1/motion/roboplus_motion_072.png)
 
-### [Position Limit and Mode](#position-limit-and-mode)
+Enter the number of the next page in the "Next" column.  
 
-This parameter is used to limit the position of the actuator or to set the movement mode.  
-(Please refer to [Changing the Movement Mode] for more information about changing Movement Mode)
+![](/assets/images/sw/rplus1/motion/roboplus_motion_073.png)
+
+#### Exit Page
+
+When commands are made to stop a motion, the robot will usually be in a highly unstable state due to the motion being executed.  To stop a motion in a stable state, designate an exit page.
+
+![](/assets/images/sw/rplus1/motion/roboplus_motion_074.png)
+
+Enter the number of the exit page in the "Exit" column.
+
+![](/assets/images/sw/rplus1/motion/roboplus_motion_075.png)
+
+### [Copy/Cut/Paste Page](#copycutpaste-page)
+
+#### Copy Page
+
+The selected page is copied.
+
+![](/assets/images/sw/rplus1/motion/roboplus_motion_076.png)
  
-#### Characteristics
+#### Cut Page
 
-- Once this value is set, it will be saved even when the power is turned off.
-- The position limitation value for both clockwise and counterclockwise rotation can be set, and its value affects the value of the "Goal Position" parameter.
-- The actual angle for the set value is displayed.
+The selected page is cut.
 
-#### Movement Mode
+![](/assets/images/sw/rplus1/motion/roboplus_motion_077.png)
 
-- Wheel Mode
-  - When both the CW Postition Limitation Value and  CCW Position Limitation Value are set to 0, the movement mode is set to Wheel Mode (Endless Rotation Mode).
-  - When the "Wheel Mode" button is pressed, the position limitation values are automatically set to 0.
-- Joint Mode
-  - The actuator will operate in Joint Mode in all other cases.
+#### Paste page
 
-### [Drive Mode](#drive-mode)
+The copied or cut page is pasted.  The contents of selected page is overwritten.
 
-Tis parameter is used to set the drive mode of EX actuators.  Depending on the drive mode, the Ex actuator's special modes, such as dual mode and reverse mode can be used.  Please refer to EX-series Dual Mode Setting for detailed information about drive mode.  
+![](/assets/images/sw/rplus1/motion/roboplus_motion_078.png)
+
+### [Set Page Repeat/Time](#set-page-repeattime)
+
+#### Repeat Time
+
+This is the number of times the current page is repeated during motion execution.
+
+![](/assets/images/sw/rplus1/motion/roboplus_motion_079.png)
  
-#### Characteristics
+#### Speed Rate
 
-- Master/Slave and Normal/Reverse modes can be set.
-- The setting values of an actuator in slave mode will be synchronized with the setting values of the master actuator.
-- When the Master/Slave mode is set, the control table will be updated to reflect the mode.  
-  (For example, in slave mode, the position value cannot be set.  Therefore, RoboPlus Manager does not display tables for unnecessary values. )
-- In reverse mode, the position values are reversed.  
-  (Position values 0 and 4095 have opposite meanings as goal position values.)
+- This is the playback speed of the page during motion execution.  Unlike "Step Time," this applies to the entire page.
+  - If the speed rate is 1.0, the page will be executed at  normal speed.
+  - If the speed rate is lower than 1.0, the execution speed will decrease.
+  - If the speed rate is higher than 1.0, the execution speed will increase.  
 
-### [Temperature Setting](#temperature-setting)
+  ![](/assets/images/sw/rplus1/motion/roboplus_motion_080.png)
 
-This parameter is used to set the temperature limit for Dynamixel movement.
+### [Inertial Force Control](#inertial-force-control)
+
+Force is generated between steps. We call this force "inertial force," because it is the result of the law of inertia.  In general, inertial forces are created by acceleration, which is the change in speed.  That is, as acceleration increases, inertial force also increases, and as acceleration decreases, inertial force also decreases.  To reduce acceleration, increase or decrease the speed gradually, and to increase acceleration, change the speed drastically ."Ctrl Inertial Force" is used to control this acceleration.  Increase this value to increase or decrease the speed gradually, reducing the acceleration.
  
-#### Characteristics
+- The value is between 0 and 127. (Default is 32.)
 
-- Once this value is set, it will be saved even when the power is turned off.
-- The actual temperature for the set value is displayed.
-- If the actuator's temperature goes over the limit, the LED will blink or the actuator will stop moving depending on the setting.  
-- Unless otherwise specified, it is recommended to use the default value.
+  ![](/assets/images/sw/rplus1/motion/roboplus_motion_081.png)
+  
+- The closer the value is to 0, the greater the inertial force.
+- The closer the value is to 127, the lower the inertial force.
+
+### [Joint Softness](#joint-softness)
+
+Joint softness is used to set the compliance of the Dynamixel.
+The pros and cons of different joint softness values are as follows:
+- When the joint softness is big
+  - Pro: Movement is smooth.  Used for fluid movements, such as dancing.
+  - Con : May not be good for legs that need much support.
+- When the joint softness is small  
+  - Pro: Movement is stable.  Used for movements that require support, such as walking.
+  - Con: Movement may look too rigid when performing fluid motions.
  
-### [Temperature](#temperature)
+There are 7 joint softness levels.
+- Level 1: Almost none  (Not recommended)
+- Level 2: Very Low
+- Level 3: Low
+- Level 4: Somewhat Low
+- Level 5: Average (Default)
+- Level 6: High
+- Level 7: Very High
 
-This parameter is used to read the Dynamixel's current temperature.
+  ![](/assets/images/sw/rplus1/motion/roboplus_motion_082.png)
+
+# [More Information](#more-information)
+
+## [Upload Robot Motion](#upload-robot-motion)
+
+Transferring motion data from the controller to the PC is called "uploading."
+1. Connect the robot to the PC to see the Robot Motion window.
+
+    ![](/assets/images/sw/rplus1/motion/roboplus_motion_083.png)
+    
+    ![](/assets/images/sw/rplus1/motion/roboplus_motion_084.png)
+
+2. After selecting the Robot Motion window, click on "Save As".
+
+    ![](/assets/images/sw/rplus1/motion/roboplus_motion_085.png)
+
+## [Motion Offset](#motion-offset)
+
+Offset is the difference from a standard value. Motion offset refers to the difference from the standard motion, and the robot that performs the standard motion is called the "Master Robot".  
+Even when robots of the same type are performing the same motions, there will be differences in their poses. This is due to discrepancies in motor locations and errors in assembly.  These differences may even cause some robots to fall down.  "Motion Offset" is used to resolve these differences.
+
+`Note` Generally, motion offset is small enough to be ignored. However, for robots that are sensitive to balance, such as humanoids, motion offset can be a source of critical problems.  
+{: .notice}
  
-#### Characteristic
+### Edit Motion Offset
 
-- The Dynamixel's temperature is returned in real-time.
+Discrepancies in the location of robot joints can be fixed using the "Edit Motion Offset" function.
+
+When the menu is selected, the torque of all joints will be turned on to sustain its current position.  Therefore, it would be beneficial to execute this function when the robot is in a pose where the differences can be easily distinguished.   
+{: .notice} 
+
+![](/assets/images/sw/rplus1/motion/roboplus_motion_086.png)
  
-#### Corresponding RoboPlus Task Command
+Select the joint to edit its value with the editor.  
+- Positive values indicate movement in the CCW direction.
+- Negative values indicate movement in the CW direction.
 
-- Parameter : [Temperature]
-
-### [Voltage Setting](#voltage-setting)
-
-This parameter is used to set the voltage limit for Dynamixel movement.
+  ![](/assets/images/sw/rplus1/motion/roboplus_motion_087.png)
  
-#### Characteristics
+### Initialize
 
-- Once this value is set, it will be saved even when the power is turned off.
-- The actual voltage for the set value is displayed.
-- The maximum voltage value and minimum voltage value can be set.  
-- If the actuator's voltage exceeds the limit, the LED will blink or the actuator will stop moving depending on the setting.  
-- Unless otherwise specified, it is recommended to use the default value.
+Initiaizes all values to 0.
 
-### [Voltage](#voltage)
-
-This parameter is used to read the Dynamixel's current voltage.
+![](/assets/images/sw/rplus1/motion/roboplus_motion_088.png)
  
-#### Characteristic
+### Save
 
-- The Dynamixel's voltage is returned in real-time.
+Saves the current offset values.  The values are saved in the controller.
+
+![](/assets/images/sw/rplus1/motion/roboplus_motion_089.png)
  
-#### Corresponding RoboPlus Task Command
+### Save as File
 
-- Parameter : [Voltage]
+Saves the robot's current offset values as a file in the PC. The file extension of motion offset files is .ofs.
 
-### [Alarm & Shutdown](#alarm-shutdown)
-
-The LED alarm or shutdown operation can be set for specific cases.
+![](/assets/images/sw/rplus1/motion/roboplus_motion_090.png)
  
-#### Parameter Characteristics
+### Download
 
-- Once this value is set, it will be saved even when the power is turned off.
-- The actuator can be set to automatically stop its movements using the shutdown operation.
-- By using the shutdown operation, Dynamixels can be protected from problematic situations, such as current overloads, overheating, and abnormal movements.
-- The LED alarm or shutdown operation can be triggered by the following errors.  
-  - Instruction Error : A wrong command is received.
-  - Overload Error : The current load is larger than the limit.
-  - Checksum Error : The checksum of the received command is incorrect.
-  - Range Error : The received command requires movements that are outside the actuator's boundaries.
-  - Overheating Error : The actuator's current temperature is higher than the maximum operating temperature
-  - Angle Limit Error : The actuator has moved farther than its limit.
-  - Input Voltage Error : The input voltage is lower than the minimum possible voltage or has exceeded the maximum possible voltage
+Motion Offset files(*.ofs) in the PC can be downloaded to the robot.
 
-### [Torque Enable](#torque-enable)
+![](/assets/images/sw/rplus1/motion/roboplus_motion_091.png)
 
-This parameter is used to turn the actuator on or off.
+## <a name="edit-all-page"></a>[Edit All Page](#edit-all-page)
+
+"Edit All Page" is used to duplicate revisions on all pages. This function is required in the following situations:
+- To change all motor values simultaneously Changes the value of every motor at once.
+- To change ID usage status (whether it is being used or not)
  
-#### Characteristics
+### Set Resolution
 
-- If the value is 0, the actuator's torque  is turned off. i.e. the horn is free to rotate.   If the value is 1, the actuator's torque is turned on.
-- The torque can easily be turned on or off using the On/Off command.
-- If the goal position is set when the actuator is turned off, the actuator will automatically turn on and this parameter will be set to 1.
+- The monitor's resolution can be set.
+- For the MX and EX series, please set the resolution value as 4096.  For other Dynamixels, 1024 is the recommended value.
+- EX series have position control of 250 degrees.
+- MX series have position control of 360 degrees.
+
+![](/assets/images/sw/rplus1/motion/roboplus_motion_092.png)
  
-#### Corresponding RoboPlus Task Command
+- When the resolution value is set as 4,096, the default values in the basic pose editor will be automatically changed from 512 to 2,048.
 
-- Parameter : [Torque Enable]
-- Constants : True /False
-
-### [LED](#led)
-
-This parameter is used to turn the Dynamixel's LED on or off.
+![](/assets/images/sw/rplus1/motion/roboplus_motion_093.png)
  
-#### Characteristics
+### Set ID Usage Status
 
-- If the value is 0, the LED is turned off.  If the value is 1, it is turned on.
-- The LED can easily be turned on or off using the On/Off command.
-- The LED cannot be manipulated when the LED alarm is triggered.
+- RoboPlus Motion can handle the motions of robots with up to 26 motors. (Dynamixel ID between 0 and 25). Set whether an ID is being used to edit only the necessary ID's.
+
+![](/assets/images/sw/rplus1/motion/roboplus_motion_094.png)
  
-#### Corresponding RoboPlus Task Command
+### Exchange ID
 
-- Parameter : [LED]
-- Constants : True/False
+The position values of the robot's joints can be easily exchanged.
+Select the 2 ID's to exchange, and then click "Exchange ID."
 
-### [CW/CCW Margin](#cw-ccw-margin)
-
-This parameter is used to set the actuator's compliance margin.
+![](/assets/images/sw/rplus1/motion/roboplus_motion_095.png)
  
-#### Parameter Characteristics
+### Change All Values
 
-- The margin designates the area around the goal position that receives no torque.
-- Set appropriate values for CW/CCW slope, "torque limit, " and "CW/CCW margin," for smoother movements.
+Use this function to change the value of the selected ID.
+
+![](/assets/images/sw/rplus1/motion/roboplus_motion_096.png)
  
-#### Corresponding RoboPlus Task Command
+### Apply Offset Values to All
 
-- Parameter : [CW/CCW Margin]
+Offset is the difference from a standard value.  Use this function to add or subtract a value from all joints with the selected ID.
 
-### [CW/CCW Slope](#cw-ccw-slope)
+![](/assets/images/sw/rplus1/motion/roboplus_motion_097.png)
 
-This parameter is used to set the actuator's compliance slope.
+## [Keyboard Shortcuts](#keyboard-shortcuts)
+
+When creating robot motions, it is difficult to use the mouse and keyboard at the same time, while holding the robot with one hand.  Here, we introduce useful tips to make motions using only the keyboard.
  
-#### Parameter Characteristics
+### Use arrow keys to move within the program
 
-- The slope value will be created at both CW/CCW  directions, and the output level will be set near the target position.
-- If you set the lower slope value, it will reach to the target position by reducing the initial power NOT that much. On the contrary, if you set the higher value, it will reach the target position by reducing considerable powers as it reaches to the goal.
-- If you set the lower slope value, it will resist with maximum power not to stray from target position.
-- Even if you set the higher value, it will resist with more and more power if it is strayed too much from target position.
-- Compliance Slope will be changed into 7 Data representative values according to the input Data. In other words, if you input 25, in real operation, 16 -the representative value of 25-, will be used.  
+Arrow keys can be used to move the focus between the Page Edit Window, Step Edit Window, and Pose Edit Window.
 
-|Level|Real Data Value|Representative Data Value|
+![](/assets/images/sw/rplus1/motion/roboplus_motion_098.png)
+ 
+### Change the Joint Values
+
+- Press the `[` or `]` keys to increase or decrease the joint value by 1.
+- Press the `{` or  `}` keys (`Shift` + `[` or `]`) to increase or decrease the joint value by 10.
+- Press `Enter` to move the focus to the setting window.  When you are done changing the value, press `Enter` again to return the focus.
+
+![](/assets/images/sw/rplus1/motion/roboplus_motion_099.png)
+
+This function is available in the following windows:
+- Pose of Step
+
+  ![](/assets/images/sw/rplus1/motion/roboplus_motion_100.png)
+  
+- Pose of Robot
+
+  ![](/assets/images/sw/rplus1/motion/roboplus_motion_101.png)
+
+- Edit Motion Offset
+
+  ![](/assets/images/sw/rplus1/motion/roboplus_motion_102.png)
+
+- 3D drawing of robot
+
+  ![](/assets/images/sw/rplus1/motion/roboplus_motion_103.png)
+ 
+### Turn the torque on/off
+
+After selecting the joint, press the space bar to turn the torque on or off.
+ 
+### Moving robot according to each step  
+
+Please choose the step that you want and press the enter key. Your robot will take the pose of selected step. (This is available only at robot motion window )   
+
+![](/assets/images/sw/rplus1/motion/roboplus_motion_104.png)
+
+## [Making Robots](#making-robots)
+
+Users can make and operate their own robots usig RoboPlus Motion
+
+{% capture roboplus_motion_warning_01 %}
+`Warning` For this section, some previous knowledge on the following is required.
+- XML
+- 3D Graphics
+- C# Programming
+{% endcapture %}
+
+<div style="notice--warning">{{ roboplus_motion_warning_01 | markdownify }}</div>
+
+### Folder Structure
+
+If you look at the folder inside RoboPlus Motion, there are robot information file as shown below.
+(i.e, C:/Program Files/ROBOTIS/RoboPlus/Motion)
+- /Robots: There are files on robot’s information.
+- /Models: There are 3D model data for each part
+- /PlugIn: There are IK(Inverse Kinematics) calculation modules.
+
+In order for users to make their own robot, they need to make their own files and put them into folders accordingly
+
+### [Robot Information File](#robot-information-file)
+
+Robot Infromation file has all the information required for the use of RoboPlus Motion.  
+This file has extension of .rbt. Robot list in "Pose Utility" tab shows the .rbt file list of various robots showed in the e-manual.
+
+![](/assets/images/sw/rplus1/motion/roboplus_motion_105.png)
+ 
+Robot Information file is written in the format of XML. Users can read the files using Windows TextPad.
+ 
+![](/assets/images/sw/rplus1/motion/roboplus_motion_106.png)
+ 
+#### &lt;General&gt;
+
+In this part, general information on the robot users making must be recorded.
+ 
+
+##### &lt;Name&gt;
+
+Put in the name that will be shown on the robot list.  
+You can give different "culture" values to show different languages (only for languages supported by RoboPlus Motion)
+ 
+|Value|Language|
+|:---:|:---:|
+|kor|Korean|
+|jpn|Japanese|
+|N/A|English or any other languages|
+ 
+```html
+<Name>Premium Humanoid A-type</Name> 
+<Name culture=”kor”> Bioloid Premium Type A</Name> 
+```
+> Example of Bioloid Premium Type A 
+ 
+##### &lt;Motor&gt;
+
+Input information for the Dynamixels used in robots.
+- id: Dynamixel's ID
+- model: model type
+- init: position value for when "Initial Pose" button is pressed
+ 
+![](/assets/images/sw/rplus1/motion/roboplus_motion_105.png)
+ 
+```html
+<Motor id="1" model="AX-12+" init="205"></Motor>
+<Motor id="2" model="AX-12+" init="818"></Motor>
+<Motor id="3" model="AX-12+" init="251"></Motor>
+<Motor id="4" model="AX-12+" init="772"></Motor>
+<Motor id="5" model="AX-12+" init="512"></Motor>
+<Motor id="6" model="AX-12+" init="512"></Motor>
+<Motor id="7" model="AX-12+" init="358"></Motor>
+<Motor id="8" model="AX-12+" init="666"></Motor>
+<Motor id="9" model="AX-12+" init="512"></Motor>
+<Motor id="10" model="AX-12+" init="512"></Motor>
+<Motor id="11" model="AX-12+" init="475"></Motor>
+<Motor id="12" model="AX-12+" init="549"></Motor>
+<Motor id="13" model="AX-12+" init="437"></Motor>
+<Motor id="14" model="AX-12+" init="587"></Motor>
+<Motor id="15" model="AX-12+" init="549"></Motor>
+<Motor id="16" model="AX-12+" init="475"></Motor>
+<Motor id="17" model="AX-12+" init="512"></Motor>
+<Motor id="18" model="AX-12+" init="512"></Motor>
+```
+> Example of Bioloid Premium Type A
+ 
+#### &lt;Mirror&gt;
+
+Infromation needed for Mirror function. Not necessary if the function is not in use.
+
+![](/assets/images/sw/rplus1/motion/roboplus_motion_108.jpg)
+ 
+Only use for Dynamixels in symmetric positions. If there is no symmetrically positioned Dynamixles, do not input anything.
+- Right: Dynamixel IDs for devices on the right side
+- Left: Dynamixel IDs for devices on the left side
+
+```html
+<Mirror>
+   <Right>1,3,5,9,11,13,15,17</Right>
+   <Left>2,4,6,10,12,14,16,18</Left>
+</Mirror>
+```
+> Example of Bioloid Premium Type A
+
+![](/assets/images/sw/rplus1/motion/roboplus_motion_109.png)
+
+#### &lt;InverseKinematics&gt;
+
+This connects the modules for Inverse Kinematics computing. Computing modules are in the form of DDL. To learn how to make modules, please refer to "Plug-In SDK Programming" in the next section. If not using Inverse Kinematis, this section can be ignored.
+
+![](/assets/images/sw/rplus1/motion/roboplus_motion_110.png)
+
+```html
+<InverseKinematics>
+   <Module>
+      <Name>PremiumHumanoidA.dll</Name>
+   </Module>
+</InverseKinematics>
+```
+> Example of Bioloid Premium Type A
+
+#### &lt;Object3D&gt;
+
+In this section, robot assembly information is included for 3D display. The robot assembly information is in the Tree structure.
+If 3D display not needed, this section can be ignored.
+
+##### &lt;Part&gt;
+
+In this section, each part's information is included. The relationship between parts are expressed through the Tree structure.
+- name: 3D Model name. There is no need to include extensions.  
+  (i.e., for f3.igs, just put f3)
+- T: 3x4 matrix that contains movement and rotation information for 3D display.  
+  Each element is separated by space.
+
+  ![](/assets/images/sw/rplus1/motion/roboplus_motion_111.png)
+
+- id: Input ID number for Dynamixels.
+- type: Define what type of motor a part is.
+  - If the whole body moves, define the motor's type as "body." (Horn is fixed in this case)
+
+    ![](/assets/images/sw/rplus1/motion/roboplus_motion_112.png)
+
+  - If the motor's body is fixed and only its horn moves, define "body" to the part you want to fix and define "horn" to the part you want it to move.
+
+    ![](/assets/images/sw/rplus1/motion/roboplus_motion_113.png)
+
+```html
+<Object3D>
+    <Part name="f51" T="0 0 1 0 1 0 0 0 0 1 0 302.5">
+      <Part name ="f3" T="1 0 0 0 0 0 1 -70.5 0 -1 0 19"></Part>
+      <Part name ="f3" T="1 0 0 0 0 0 -1 -70.5 0 1 0 -19"></Part>
+      <Part name="f52" T="1 0 0 0 0 1 0 0 0 0 1 0">
+```
+
+> Example of Bioloid Premium Type A
+
+### [3D Model Data](#3d-model-data)
+
+Shown below are the 3D models of parts. These parts can be generated by various Computer Aided Design softwares. Users can add the parts created on their own in addition to the provided parts by ROBOTIS.  
+RoboPlus Motion only supports IGES(*.igs) format. ROBOTIS recommends to make data files small since if the data is too big, it will slow down the 3D display.  
+The following are the basic parts provided with RoboPlus.
+ 
+|Name|Diagram|File|
 |:---:|:---:|:---:|
-|1|0 (0x00) ~ 3(0x03)|2 (0x02)|
-|2|4(0x04) ~ 7(0x07)|4 (0x04)|
-|3|8(0x08)~15(0x0F)|8 (0x08)|
-|4|16(0x10)~31(0x1F)|16 (0x10)|
-|5|32(0x20)~63(0x3F)|32 (0x20)|
-|6|64(0x40)~127(0x7F)|64 (0x40)|
-|7|128(0x80)~254(0xFE)|128 (0x80)|
+|F1|![](/assets/images/sw/rplus1/motion/roboplus_motion_114.png)|f1.igs|
+|F2|![](/assets/images/sw/rplus1/motion/roboplus_motion_115.png)|f2.igs|
+|F3|![](/assets/images/sw/rplus1/motion/roboplus_motion_116.png)|f3.igs|
+|F4|![](/assets/images/sw/rplus1/motion/roboplus_motion_117.png)|f4.igs|
+|F5|![](/assets/images/sw/rplus1/motion/roboplus_motion_118.png)|f5.igs|
+|F6|![](/assets/images/sw/rplus1/motion/roboplus_motion_119.png)|f6.igs|
+|F7|![](/assets/images/sw/rplus1/motion/roboplus_motion_120.png)|f7.igs|
+|F8|![](/assets/images/sw/rplus1/motion/roboplus_motion_121.png)|f8.igs|
+|F9|![](/assets/images/sw/rplus1/motion/roboplus_motion_122.png)|f9.igs|
+|F10|![](/assets/images/sw/rplus1/motion/roboplus_motion_123.png)|f10.igs|
+|F11|![](/assets/images/sw/rplus1/motion/roboplus_motion_124.png)|f11.igs|
+|F12|![](/assets/images/sw/rplus1/motion/roboplus_motion_125.png)|f12.igs|
+|F15 + F16|![](/assets/images/sw/rplus1/motion/roboplus_motion_126.png)|f15.igs|
+|F51|![](/assets/images/sw/rplus1/motion/roboplus_motion_127.png)|f51.igs|
+|F52|![](/assets/images/sw/rplus1/motion/roboplus_motion_128.png)|f52.igs|
+|F53|![](/assets/images/sw/rplus1/motion/roboplus_motion_129.png)|f53.igs|
+|F56|![](/assets/images/sw/rplus1/motion/roboplus_motion_130.png)|f56.igs|
+|F57|![](/assets/images/sw/rplus1/motion/roboplus_motion_131.png)|f57.igs|
+|F58|![](/assets/images/sw/rplus1/motion/roboplus_motion_132.png)|f58.igs|
+|F60|![](/assets/images/sw/rplus1/motion/roboplus_motion_133.png)|f60.igs|
+|WA|![](/assets/images/sw/rplus1/motion/roboplus_motion_134.png)|wa,igs|
+|BU|![](/assets/images/sw/rplus1/motion/roboplus_motion_135.png)|bu.igs|
+|CM-5|![](/assets/images/sw/rplus1/motion/roboplus_motion_136.png)|cm-5.igs|
+|ADAPTOR-CM5|![](/assets/images/sw/rplus1/motion/roboplus_motion_137.png)|adaptor_cm5.igs|
+|BATTERY|![](/assets/images/sw/rplus1/motion/roboplus_motion_138.png)|battery.igs|
+|AX-12|![](/assets/images/sw/rplus1/motion/roboplus_motion_139.png)|ax-12.igs|
+|AX-12 Horn|![](/assets/images/sw/rplus1/motion/roboplus_motion_140.png)|ax-12_horn.igs|
+|AX-S1|![](/assets/images/sw/rplus1/motion/roboplus_motion_141.png)|ax-s1.igs|
 
-- Appropriate Compliance Slope, Power control, and the Compliance Margin values will make it possible to create smoother movement.
+### [Plug-In SDK](#plug-in-sdk)
+
+Users can use Plug-In SDK to add inverse kinematics computing module from "Pose Utility."
+Instruction is given using an example of developing C# from Visual Studio 2005. (Sample example included)
+- `Download ZIP` [PlugInSDK_Example.zip](http://support.robotis.com/en/baggage_files/zigbee_sdk/pluginsdk_example.zip)
  
-#### Corresponding RoboPlus Task Command
+#### Create Project
 
-Parameter : [CW/CCW Slope]
-
-### [Goal Position](#goal-position)
-
-This parameter is used to set the actuator's goal position.
+Go to Visual Studio's menu and select `File -> Create New -> Project`. Then select `Visual C# -> Windows -> Classic Library` to create a new project.
  
-#### Characteristics
+#### Add Reference
 
-- The value can be set using a jog dial.
-- When this value is set, the actuator will immediately move to the goal position.
-- The value is affected by "moving speed,"position limitation," "CW/CCW slope," and "CW/CCW margin" parameters.
-- Even when the torque is turned off, as soon as the value is set, it will be turned on.
-- When the "center position" button is pressed, the value is set to the center position.  
+Go to Visual Studio's menu and select `Project -> Add Reference`. When a window box pops up, click "Find" then select `Motion -> PlugInSDK.dll` in the folder Roboplus is installed.(i.e, C:\Program Files\ROBOTIS\RoboPlus\Motion\PlugInSDK.dll)
  
-#### Corresponding RoboPlus Task Command
+#### Implement Interface
 
-- Parameter  : [Goal Position]
-- Constants : Position Values
+Write command lines shown below in the Class file that is to be implemented. (i.e, Class1.cs)
 
-### [Moving Speed](#moving-speed)
+```code
+using ROBOTIS.MotionEditor.SDK  // add namespace
+namespace MyPlugIn
+{
+  public class MyPlugIn : IInverseKinematics // Interface succession
+  {
+  }
+}
+```
 
-This parameter is used to set the speed of the actuator.
+Put the mouse cursor on "IInverseKinematics" and right click it. Then select "Implement Interface -> Implement Interface" and sources will be automatically generated.
+
+##### CurrentPose
+
+It's Pose data transferred from and received by RoboPlus Motion. Users must follow the rules shown below.
+- Users create the arrangement of 26 pose data.
+- The index of arrangement are the ID numbers of Dynamixels.
+- In order to deliever values to motors, put some number in between 0 ~ 1,023 or 4,096. If not, put -1.
+
+When RoboPlus Motion is in "get" direction, inverse kinematics computing result should be delievered and when it is in "set" direction, endpoints should be calculated and computed using forward kinematics and based on Pose data.
+
+##### EndPoints
+
+This is the name to be printed on endpoint list.
+
+![](/assets/images/sw/rplus1/motion/roboplus_motion_142.png)
+
+Users can either choose one form the endpoint list or run the interface shown below to see the result.
+- SelectedIndex: Index of endpoint
+- SelectedEndPoint: Name of endpoint
  
-#### Characteristics
+##### X, Y, Z, Roll, Pitch, Yaw
 
-- In joint mode, the speed is affected by "compliance slope" and "compliance margin" values.
-- In joint mode, set the value as 0 to output at maximum power.
-- In wheel mode (endless rotation mode), the speed and rotating direction depend on the "moving speed" value.
-- The movement mode can be set using the "position limitation" parameter.
-- The control used to set the speed is different for each mode.
+It's the data of location of end points from the origin.  
+Users can set minimum and/or maximum using user DLL.  
+Roll signifies rotation in x-axis, Pitch is in y-axis, and Yaw z-axis.
+
+![](/assets/images/sw/rplus1/motion/roboplus_motion_143.png)
+
+- MinX, MinY, MinZ, MinRoll, MinPitch, MinYaw: Minimum values for endpoints.
+- MaxX, MaxY, MaxZ, MaxRoll, MaxPitch, MaxYaw: Maximum values for endpoints.
+- If the minimum and maximum values are set at the same value for an endpoint, such endpoint is considered as not in use and thus, does not show up on the list.
+- X, Y, Z, Roll, Pitch, Yaw: position values of endpoints.
  
-#### Corresponding RoboPlus Task Command
+##### Reset
 
-- Parameter :[Moving Speed]
-- Constants : Motor Control Values
+By clicking the "reset" button on RoboPlus Motion,  users can default the position values of endpoints.
 
-### [Torque Limit](#torque-limit)
-
-This parameter is used to set the maximum load on the actuator.
+![](/assets/images/sw/rplus1/motion/roboplus_motion_144.png)
  
-#### Characteristic
+#### Add Plug-In
 
-- The LED alarm may be triggered or the movement may be stopped depending on the torque limit, LED alarm, and shutdown settings.
- 
-#### Corresponding RoboPlus Task Command
+If successful with building the project, copy the DLL file to the "PlugIn" folder inside the RoboPlus Motion folder. (For example, C:\Program Files\ROBOTIS\RoboPlus\Motion\PlugIn)  
+In robot informational file (*.rbt), write DLL information that wil compute inverse kinematics.
 
-- Parameter : [Torque Limit]
+```html
+<InverseKinematics>
+   <Module>
+      <Name>PremiumHumanoidA.dll</Name>
+   </Module>
+</InverseKinematics>
+```
+> Example of Bioloid Premium Type A
 
-### [Present Position](#present-position)
+Run RoboPlus Motion and check if the (new) robot is operating properly.
 
-This parameter is used to read the actuator's current position.
- 
-#### Characteristic
 
-- The value changes in real-time to reflect the actuator's movement.
- 
-#### Corresponding RoboPlus Task Command
-
-- Parameter  : [Present Position]
-
-### [Present Speed](#present-speed)
-
-This parameter is used to read the actuator's current speed.
- 
-#### Characteristic
-
-- The value changes in real-time to reflect the actuator's movement.
- 
-#### Corresponding RoboPlus Task Command
-
-- Parameter : [Present Speed]
-
-### [Present Load](#present-load)
-
-This parameter is used to read the actuator's current load.
- 
-#### Characteristics
-
-- The value changes in real-time to reflect the actuator's movement.
-- When the motor is turned off, this value is meaningless.
- 
-#### RoboPlus Task Referring Command
-
-- Parameter : [Present Load]
-
-### [Moving](#moving)
-
-This parameter is used to determine whether the actuator is currently moving or not.
- 
-#### Characteristic
-
-- If the value is 0, it is not moving. If the value is 1, it is moving.
- 
-#### Corresponding RoboPlus Task Command
-
-- Parameter: [Moving]
-
-### [Sensed Current](#sensed-current)
-
-This parameter is used to check the current being consumed.
- 
-#### Characteristics
-
-##### EX-Series
-- If the value is 512, the current is 0 ampere.  That is, there is no current flowing.
-- If the value is larger than 512, the current is rotating the motor clockwise, and the size of the current is proportional to the size of the data. (1 = aprroximately 10 mA)
-- For example, if the data is 612, 1A (612-512=100 => 100x10mA = 1,000mA) is being used to rotate the motor in the clockwise direction.
-- If the value is smaller than 512, the current is rotating the counterclockwise, and the size of the current is proportional to the size of the data. (1 = aprroximately 10 mA)
-- For example, if the data is 312, 2A (512-312= -200 => 200x10mA = 2,000mA) is being used to rotate the motor in the counterclockwise direction.
-
-##### MX-Series
-
-- If the value is 2,048, the currnet is 0 ampere.  That is, there is no current flowing.
-- If current flows in normal direction then output values are larger than 2,048.
-- If current flows in the opposite direction then output values are smaller than 2,048
-- Current flow values are proportional to data values (value unit of 1 = 4.5mA units)
-- For example if data reads 2,148 then 2,148 - 2,048 = 100 -> 100 x 4.5mA = 450mA. The output current is 450mA in the normal direction.
- 
-#### Corresponding RoboPlus Task Command
-
-- Parameter  : [Sensed Current]
-
-### [PID Gain](#pid-gain)
-
-For `MX-Series` actuator PID values read/write availability
- 
-#### Characteristics
-
-- P gain refers to the value of proportional band.
-- I gain refers to the value of integral action.
-- D Gain refers to the value of derivative action.
-- Gains values are in between 0~254.
- 
-#### Corresponding RoboPlus Task Command
-
-- Parameter : [PID Gain]
-
-### [IR Left/Center/Right](#ir-leftcenterright)
-
-For `AX-S1` these parameters are used to read the DMS sensor value.
- 
-#### Characteristics
-
-- The current DMS sensor value of AX-S1 can be read.
-- The reflection angle of IR rays are measured, so objects the same distance away may return different values due to their color or surrounding light.
-- The sensor value is between 0 and 255.
- 
-#### Corresponding RoboPlus Task Command
-
-- Parameter : [IR Left/Center/Right]
-
-### [Light Left/Center/Right](#light-leftcenterright)
-
-For `AX-S1` this parameter is used to read the light brightness.
- 
-#### Characteristics
-
-- The current light brightness value of AX-S1 can be read.
-- The infrared rays emitted by nearby light sources such as candles and light bulbs can be measured.
-- The sensor value is between 0 and 255.
- 
-#### Corresponding RoboPlus Task Command
-
-- Parameter : [Light Left/Center/Right]
-
-### [Object Detected](#object-detected)
-
-For `AX-S1` this parameter is used to determine whether an object is detected.
- 
-#### Characteristics
-
-- If an object is detected within a certain distance, specific bits are set as 1.
-- From the left, the first bit represents the left sensor, the second bit represents the center sensor, and the third bit represents the right sensor.
-- Values are returned as a combination of the bits.
- 
-#### RoboPlus Task Referring Command
-
-- Parameter : [Object Detected]
-- Constants : Binary numbers
-
-### [Object Detection Threshold](#object-detection-threshold)
-
-For `AX-S1` this parameter is used to set the object detection threshold.
- 
-#### Characteristics
-
-- Set the object detection threshold to be used when determining whether an object is detected or not.
-- The value is between 0 and 255.
-- There is a short-range detection mode and a long-distance detection mode.
-- The short-range detection mode is activated when the threshold value is set as.
- 
-#### Corresponding RoboPlus Task Command
-
-- Parameter : [Object Detection Threshold]
-
-### [Light Detected](#light-detected)
-
-For `AX-S1` this parameter is used to determine whether a light is detected.
- 
-#### Characteristics
-
-- If the AX-S1's IR sensor value is greater than the light detection threshold value, set the bits as 1.
-- From the left, the first bit represents the left sensor, the second bit represents the center sensor, and the third bit represents the right sensor.
-- Values are returned as a combination of the bits.
- 
-#### Corresponding RoboPlus Task Command
-
-- Parameter : [Light Detected]
-- Constants : Binary numbers
-
-### [Light Detection Threshold](#light-detection-threshold)
-
-For `AX-S1` this parameter is used to set the light detection threshold.
- 
-#### Characteristics
-
-- Set the threshold to be used when determining whether a light is detected or not.
-- The value is between 0 and 255.
- 
-#### Corresponding RoboPlus Task Command
-
-- Parameter : [Light Detection Threshold]
-
-### [Sound Data](#sound-data)
-
-For `AX-S1` this parameter is used to read the volume of the sound detected.
- 
-#### Characteristics
-
-- Reads the volume of the sound being detected by AX-S1.
-- If no sounds are detected, the returned  value will be near 127.  When sounds are detected, the value will change according to the volume. (The louder the sound, the more the value will fluctuate from 127 to 0 and 255 is not clear. Whether the value will go up or down to sound value.)
-- The value is between 0 and 255.
- 
-#### Corresponding RoboPlus Task Command
-
-- Parameter : [Sound Data]
- 
-### [Sound Max Data](#sound-max-data)
-
-For `AX-S1` this parameter is used to read the volume of the loudest sound detected.
- 
-#### Characteristics
-
-- Reads the maximum sound data detected by AX-S1.
-- If the detected volume is louder than the volume of the loudest sound up to that point,  the max sound data is replaced with the detected value.
-- The value is between 0 and 255.
-- Because "Sound Max Data" is not initialized automatically, the user must reset it to 0 before use.
- 
-#### Corresponding RoboPlus Task Command
-
-- Parameter : [Sound Max Data]
-
-### [Sound Count](#sound-count)
-
-The`AX-S1` is equipped with a function to count sounds louder than a certain threshold.  For example, it is possible to count claps.  This parameter is used to read or initialize the number of detected sounds.  
- 
-#### Characteristics
-
-- "Sound Count" uses numbers between 0 and 255.
-- When sounds are no longer detected, the number of detected sounds will be input into the "Sound Count" parameter.  
-- Because "Sound Count" is not initialized automatically, the user must reset it to 0 before use.
- 
-#### Corresponding RoboPlus Task Command
-
-- Parameter : [Sound Count]
-
-### [Buzzer Index](#buzzer-index)
-
-`AX-S1` is equipped with a buzzer.  This parameter is used to set the musical note played by the buzzer.
- 
-#### Characteristics
-
-- After setting "Buzzer Time," set "Buzzer Index" to play a sound using the buzzer.
-- There are 52 musical notes that can be played (0-51).
-- There are 27 melodies that can be played (0-26).
-- Depending on what the "Buzzer Time" is set to, "Buzzer Index" can be set to play a musical note or a melody.
- 
-#### Corresponding RoboPlus Task Command
-
-- Parameter : [Buzzer Index]
-
-### [Buzzer Time](#buzzer-time)
-
-`AX-S1` is equipped with a buzzer.  This parameter is used to set how long the sound is played by the buzzer.
- 
-#### Characteristics
-
-- After setting "Buzzer Time," set "Buzzer Index" to play a sound using the buzzer.
-- "Buzzer Time" can be set to a value between 0 and 50.  Each value represents 0.1 second.
-- When it is set to 254, the sound will play without end.
-- When it is set to 255, melodies will be played.
-- When the melody finishes playing, "Buzzer Time" is reset to 0.
- 
-#### Corresponding RoboPlus Task Command
-
-- Parameter : [Buzzer Time]
-
-### [IR Sensor Value](#ir-sensor-value)
-
-For `IR Sensor Array` these parameters are used to read the current IR sensor value.
- 
-#### Characteristics
-
-- Can read IR array’s current sensor values.
-- The IR array’s receivers can detect walls and obstacles by measuring the amount of infrared reflection bouncing back. The closer the object the higher the value.
-- The sensor value is between 0 and 1023.
- 
-#### Corresponding RoboPlus Task Command
-
-- Parameter : [IR Sensor Value]
-
-### [Auto Threshold Mode](#auto-threshold-mode)
-
-For `IR Sensor Array` Setting for start/set for automatic detection for set black.
- 
-#### Characteristics
-
-- Once LED’s blink when turned on and set values are on.
-- When crossing between white and black the IR sensors automatically set values.
-- Powers off when turned off. 
-
-![](/assets/images/sw/rplus1/manager/roboplus_manager_022.png)
-
-#### Corresponding RoboPlus Task Command
-
-- Parameter : [Auto Threshold Mode]
-
-### [IR Obstacle Detected](#ir-obstacle-detected)
-
-For `IR Sensor Array` Paramenters to determine IR array obstacle values
- 
-#### Characteristics
-
-- In the IR array if each IR sensor detected black value is lower than the set black valuethe values will be assigned as shown below; the LED turns on.
-- Output values are in decimal number.
-
-|Binary value|Decimal value|Black detection|
-|:---:|:---:|:---:|
-|0000001|1|Black detection for IR sensor #1|
-|0000010|2|Black detection for IR sensor #2|
-|0000100|4|Black detection for IR sensor #3|
-|0001000|8|Black detection for IR sensor #4|
-|0010000|16|Black detection for IR sensor #5|
-|0100000|32|Black detection for IR sensor #6|
-|1000000|64|Black detection for IR sensor #7|
- 
-#### Corresponding RoboPlus Task Command
-
-- Parameter : [IR Obstacle Detected]
-
-### [Set IR Threshold](#set-ir-threshold)
-
-For `IR Sensor Array` Determine set values for black and white for the IR array.
- 
-#### Characteristics
-
-- Setting infrared values for presence of obstacles.
-- Overall set values can be set by automatic parameter setting.
-- Values range from 0 to 1,023.
-
-![](/assets/images/sw/rplus1/manager/roboplus_manager_023.png)
- 
-#### Corresponding RoboPlus Task Command
-
-- Parameter : [Set IR Threshold]
-
-## [ZIG2Serial](#zig2serial)
-
-Follow these steps to manage the Zig-100 module through RoboPlus Manager using Zig2Serial.
- 
-1. Attach Zig-100 to Zig2Serial and connect Zig2Serial to the PC's serial port.(Please refer to [ZIG2Serial] for connection)  
-    If your PC does not have a serial port, you may use USB2Dynamixel, as in the picture below.
-
-    ![](/assets/images/sw/rplus1/manager/roboplus_manager_024.png)
-
-2. Select the port to which Zig2Serial is connected and click the "Zig2Serial Management" icon.  
-    (Unlike with a controller, this port cannot be detected automatically.)
-
-    ![](/assets/images/sw/rplus1/manager/roboplus_manager_025.png)
-
-3. The following screen is displayed when the "Zig2Serial Management" icon is pressed.  Click the "Zigbee Setting" button.
-
-    ![](/assets/images/sw/rplus1/manager/roboplus_manager_026.png)
-
-4. Press the reset button within 3 seconds of clicking "OK".
-
-    ![](/assets/images/sw/rplus1/manager/roboplus_manager_027.png)
-
-5. When the Zigbee module is connected, a window to set functions is displayed.
-  - Can check my ID and remote ID.
-  - Can change the remote ID.
-  - Can set to "Broadcast" mode.
-  - Can set to "Wait" mode.
-
-    ![](/assets/images/sw/rplus1/manager/roboplus_manager_028.png)
-
-6. If no ZIg100 module is detected, check whether the module has been connected properly.
-
-    ![](/assets/images/sw/rplus1/manager/roboplus_manager_029.png)
-
-- You can send/receive data to/from other wireless communication modules or create and send RC-100 remote control signals.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/YgebCObXJZg" frameborder="0" allowfullscreen></iframe>
-
-
-[ZIG2Serial]: /docs/en/parts/communication/zig2serial/
-[RoboPlus]: http://en.robotis.com/BlueAD/board.php?bbs_id=downloads
-[Microsoft Download Center]: http://www.microsoft.com/downloads/Search.aspx?displaylang=ko
-[Windows installer 3.1]: http://www.microsoft.com/downloads/details.aspx?FamilyID=889482fc-5f56-4a38-b838-de776fd4138c&DisplayLang=ko
-[.NET Framework 3.5]: http://www.microsoft.com/downloads/details.aspx?FamilyID=d0e5dea7-ac26-4ad7-b68c-fe5076bba986&DisplayLang=ko
-[managing information of each controller]: /docs/en/software/rplus1/manager/getting_started/#controllers
-[controller information]: /docs/en/faq/controller_compatibility/
-[ID Setup]: /docs/en/software/rplus1/manager/getting_started/#id-setup
-[Aux LED]: /docs/en/software/rplus1/task/programming_02/#aux-led
-[Button]: /docs/en/software/rplus1/task/programming_02/#button
-[Timer]: /docs/en/software/rplus1/task/programming_02/#timer
-[HR Timer]: /docs/en/software/rplus1/task/programming_02/#hr-timer
-[Remocon ID]: /docs/en/software/rplus1/task/programming_02/#remocon-id
-[My ID]: /docs/en/software/rplus1/task/programming_02/#my-id
-[Sound Count]: /docs/en/software/rplus1/task/programming_02/#sound-count
-[Current Sound]: /docs/en/software/rplus1/task/programming_02/#current-sound-count
-[Buzzer Type]: /docs/en/software/rplus1/task/programming_02/#buzzer-index
-[Buzzer Time]: /docs/en/software/rplus1/task/programming_02/#buzzer-time
-[User's Devices]: /docs/en/software/rplus1/task/programming_02/#user-devices
-[Dynamixel Management]: /docs/en/edu/bioloid/beginner/#dynamixel-management
-[Changing the Movement Mode]: /docs/en/edu/bioloid/beginner/#dynamixel-management
-[Temperature]: /docs/en/software/rplus1/task/programming_02/#temperature
-[Voltage]: /docs/en/software/rplus1/task/programming_02/#voltage
-[Torque Enable]: /docs/en/software/rplus1/task/programming_02/#torque-enable
-[LED]: /docs/en/software/rplus1/task/programming_02/#led
-[CW/CCW Margin]: /docs/en/software/rplus1/task/programming_02/#cwccw-margin
-[CW/CCW Slope]: /docs/en/software/rplus1/task/programming_02/#cwccw-slope
-[Goal Position]: /docs/en/software/rplus1/task/programming_02/#goal-position
-[Moving Speed]: /docs/en/software/rplus1/task/programming_02/#moving-speed
-[Torque Limit]: /docs/en/software/rplus1/task/programming_02/#torque-limit
-[Present Position]: /docs/en/software/rplus1/task/programming_02/#present-position
-[Present Speed]: /docs/en/software/rplus1/task/programming_02/#present-speed
-[Present Speed]: /docs/en/software/rplus1/task/programming_02/#present-load
-[Moving]: /docs/en/software/rplus1/task/programming_02/#moving
-[Sensed Current]: /docs/en/software/rplus1/task/programming_02/#sensed-current
-[PID Gain]: /docs/en/software/rplus1/task/programming_02/#pid-gain
-[IR Left/Center/Right]: /docs/en/software/rplus1/task/programming_02/#ir-leftcenterright
-[Light Left/Center/Right]: /docs/en/software/rplus1/task/programming_02/#light-leftcenterright
-[Object Detected]: /docs/en/software/rplus1/task/programming_02/#object-detected
-[Object Detection Threshold]: /docs/en/software/rplus1/task/programming_02/#object-detection-threshold
-[Light Detected]: /docs/en/software/rplus1/task/programming_02/#light-detected
-[Light Detection Threshold]: /docs/en/software/rplus1/task/programming_02/#light-detection-threshold
-[Sound Data]: /docs/en/software/rplus1/task/programming_02/#sound-data
-[Sound Max Data]: /docs/en/software/rplus1/task/programming_02/#sound-max-data
-[Sound Count]: /docs/en/software/rplus1/task/programming_02/#sound-count
-[Buzzer Index]: /docs/en/software/rplus1/task/programming_02/#buzzer-index
-[Buzzer Time]: /docs/en/software/rplus1/task/programming_02/#buzzer-time
-[IR Sensor Value]: /docs/en/software/rplus1/task/programming_02/#ir-sensor-value
-[Auto Threshold Mode]: /docs/en/software/rplus1/task/programming_02/#auto-threshold-mode
-[IR Obstacle Detected]: /docs/en/software/rplus1/task/programming_02/#ir-obstacle-detected
-[Set IR Threshold]: /docs/en/software/rplus1/task/programming_02/#ir-threshold
+[Joint Offset Parameter]: /docs/en/software/rplus1/task/programming_02/#joint-offset

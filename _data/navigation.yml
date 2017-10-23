@@ -4798,6 +4798,93 @@ rplusmanager1:
     - title: "ZIG2Serial"
       url: /software/rplus1/manager/getting_started/#zig2serial
 
+#R+ Motion 1.0 sidebar
+rplusmotion1:
+  - title: "Introduction"
+    url: /software/rplus1/motion/getting_started/#introduction
+  - title: "Getting Started"
+    url: /software/rplus1/motion/getting_started/#getting-started
+    children:
+    - title: "Robot Motion"
+      url: /software/rplus1/motion/getting_started/#robot-motion
+    - title: "File Motion"
+      url: /software/rplus1/motion/getting_started/#file-motion
+    - title: "Download Motion"
+      url: /software/rplus1/motion/getting_started/#download-motion
+    - title: "Play Motion"
+      url: /software/rplus1/motion/getting_started/#play-motion
+    - title: "Stop Motion"
+      url: /software/rplus1/motion/getting_started/#stop-motion
+    - title: "Emergency Stop"
+      url: /software/rplus1/motion/getting_started/#emergency-stop
+  - title: "Motion Editing"
+    url: /software/rplus1/motion/getting_started/#motion-editing
+    children:
+    - title: "Pose Editing"
+      url: /software/rplus1/motion/getting_started/#pose-editing
+      children:
+      - title: "Select Actuator ID"
+        url: /software/rplus1/motion/getting_started/#select-actuator-id
+      - title: "Torque On/Off"
+        url: /software/rplus1/motion/getting_started/#torque-onoff
+      - title: "Change Actuator Value"
+        url: /software/rplus1/motion/getting_started/#change-actuator-value
+      - title: "Play Pose"
+        url: /software/rplus1/motion/getting_started/#play-pose
+      - title: "Capture Pose"
+        url: /software/rplus1/motion/getting_started/#capture-pose
+      - title: "Copy/Paste Pose"
+        url: /software/rplus1/motion/getting_started/#copypaste-pose
+      - title: "Mask Pose"
+        url: /software/rplus1/motion/getting_started/#mask-pose
+      - title: "Select Robot"
+        url: /software/rplus1/motion/getting_started/#select-robot
+      - title: "Control 3D Robot"
+        url: /software/rplus1/motion/getting_started/#control-3d-robot
+      - title: "Mirror"
+        url: /software/rplus1/motion/getting_started/#mirror
+      - title: "Inverse Kinematics"
+        url: /software/rplus1/motion/getting_started/#inverse-kinematics
+      - title: "Pose Go/Write(Utility)"
+        url: /software/rplus1/motion?getting_started/#pose-executioncapture
+    - title: "Step Editing"
+      url: /software/rplus1/motion/getting_started/#step-editing
+      children:
+      - title: "Add/Insert/Delete/Move Step"
+        url: /software/rplus1/motion/getting_started/#addinsertdeletemove-step
+      - title: "Pause/Time"
+        url: /software/rplus1/motion/getting_started/#pausetime
+      - title: "Copy/Cut/Paste Step"
+        url: /software/rplus1/motion/getting_started/#copycutpaste-step
+    - title: "Page Editing"
+      url: /software/rplus1/motion/getting_started/#page-editing
+      children:
+      - title: "Select Page"
+        url: /software/rplus1/motion/getting_started/#select-page
+      - title: "Connect Page"
+        url: /software/rplus1/motion/getting_started/#connect-page
+      - title: "Copy/Cut/Paste Page"
+        url: /software/rplus1/motion/getting_started/#copycutpaste-page
+      - title: "Set Page Repeat/Time"
+        url: /software/rplus1/motion/getting_started/#set-page-repeattime
+      - title: "Inertial Force Control"
+        url: /software/rplus1/motion/getting_started/#inertial-force-control
+      - title: "Joint Softness"
+        url: /software/rplus1/motion/getting_started/#joint-softness
+  - title: "More Information"
+    url: /software/rplus1/motion/getting_started/#more-information
+    children:
+    - title: "Upload Robot Motion"
+      url: /software/rplus1/motion/getting_started/#upload-robot-motion
+    - title: "Motion Offset"
+      url: /software/rplus1/motion/getting_started/#motion-offset
+    - title: "Edit All Page"
+      url: /software/rplus1/motion/getting_started/#edit-all-page
+    - title: "Keyboard Shortcuts"
+      url: /software/rplus1/motion/getting_started/#keyboard-shortcuts
+    - title: "Making Robots"
+      url: /software/rplus1/motion/getting_started/#making-robots
+
 #Task Code Download sidebar
 download_task_code:
   - title: "Preparation"
