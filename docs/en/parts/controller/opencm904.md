@@ -407,7 +407,7 @@ Both types of 3-pin TTL pins are included in OpenCM Accessory Set.
 ![](/assets/images/parts/controller/opencm904/opencm904_28.png)
 
 [RoboPlus Task]: /docs/en/software/rplus1/task/getting_started/
-[RoboPlus Motion]: ???/docs/en/software/rplus1/motion/getting_started/
+[RoboPlus Motion]: ???/docs/en/software/rplus1/motion/
 [RoboPlus Manager]: ???
 [Number of pressed Start button]: /docs/en/software/rplus1/task/programming_02/#button-count
 [Start button]: /docs/en/software/rplus1/task/programming_02/#button-count

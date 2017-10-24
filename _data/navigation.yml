@@ -4770,120 +4770,152 @@ rplustask1:
 rplusmanager1:
   - title: "Introduction"
     titlekr: "개요"
-    url: /software/rplus1/manager/getting_started/#introduction
-    urlkr: /software/rplus1/manager/getting_started/#개요
+    url: /software/rplus1/manager/#introduction
+    urlkr: /software/rplus1/manager/#개요
     children:
     - title: "Install"
       titlekr: "설치"
-      url: /software/rplus1/manager/getting_started/#install
-      urlkr: /software/rplus1/manager/getting_started/#설치
+      url: /software/rplus1/manager/#install
+      urlkr: /software/rplus1/manager/#설치
   - title: "Getting Started"
     titlekr: "시작하기"
-    url: /software/rplus1/manager/getting_started/#getting-started
-    urlkr: /software/rplus1/manager/getting_started/#시작하기
+    url: /software/rplus1/manager/#getting-started
+    urlkr: /software/rplus1/manager/#시작하기
   - title: "Firmware Management"
-    url: /software/rplus1/manager/getting_started/#firmware-management
+    url: /software/rplus1/manager/#firmware-management
     children:
     - title: "Firmware Update"
-      url: /software/rplus1/manager/getting_started/#firmware-update
+      url: /software/rplus1/manager/#firmware-update
     - title: "Firmware Recovery"
-      url: /software/rplus1/manager/getting_started/#firmware-recovery
+      url: /software/rplus1/manager/#firmware-recovery
   - title: "How to Use"
-    url: /software/rplus1/manager/getting_started/#how-to-use
+    url: /software/rplus1/manager/#how-to-use
     children:
     - title: "Controllers"
-      url: /software/rplus1/manager/getting_started/#controllers
+      url: /software/rplus1/manager/#controllers
     - title: "Dynamixel"
-      url: /software/rplus1/manager/getting_started/#dynamixel
+      url: /software/rplus1/manager/#dynamixel
     - title: "ZIG2Serial"
-      url: /software/rplus1/manager/getting_started/#zig2serial
+      url: /software/rplus1/manager/#zig2serial
 
 #R+ Motion 1.0 sidebar
 rplusmotion1:
   - title: "Introduction"
-    url: /software/rplus1/motion/getting_started/#introduction
+    url: /software/rplus1/motion/#introduction
   - title: "Getting Started"
-    url: /software/rplus1/motion/getting_started/#getting-started
+    url: /software/rplus1/motion/#getting-started
     children:
     - title: "Robot Motion"
-      url: /software/rplus1/motion/getting_started/#robot-motion
+      url: /software/rplus1/motion/#robot-motion
     - title: "File Motion"
-      url: /software/rplus1/motion/getting_started/#file-motion
+      url: /software/rplus1/motion/#file-motion
     - title: "Download Motion"
-      url: /software/rplus1/motion/getting_started/#download-motion
+      url: /software/rplus1/motion/#download-motion
     - title: "Play Motion"
-      url: /software/rplus1/motion/getting_started/#play-motion
+      url: /software/rplus1/motion/#play-motion
     - title: "Stop Motion"
-      url: /software/rplus1/motion/getting_started/#stop-motion
+      url: /software/rplus1/motion/#stop-motion
     - title: "Emergency Stop"
-      url: /software/rplus1/motion/getting_started/#emergency-stop
+      url: /software/rplus1/motion/#emergency-stop
   - title: "Motion Editing"
-    url: /software/rplus1/motion/getting_started/#motion-editing
+    url: /software/rplus1/motion/#motion-editing
     children:
     - title: "Pose Editing"
-      url: /software/rplus1/motion/getting_started/#pose-editing
+      url: /software/rplus1/motion/#pose-editing
       children:
       - title: "Select Actuator ID"
-        url: /software/rplus1/motion/getting_started/#select-actuator-id
+        url: /software/rplus1/motion/#select-actuator-id
       - title: "Torque On/Off"
-        url: /software/rplus1/motion/getting_started/#torque-onoff
+        url: /software/rplus1/motion/#torque-onoff
       - title: "Change Actuator Value"
-        url: /software/rplus1/motion/getting_started/#change-actuator-value
+        url: /software/rplus1/motion/#change-actuator-value
       - title: "Play Pose"
-        url: /software/rplus1/motion/getting_started/#play-pose
+        url: /software/rplus1/motion/#play-pose
       - title: "Capture Pose"
-        url: /software/rplus1/motion/getting_started/#capture-pose
+        url: /software/rplus1/motion/#capture-pose
       - title: "Copy/Paste Pose"
-        url: /software/rplus1/motion/getting_started/#copypaste-pose
+        url: /software/rplus1/motion/#copypaste-pose
       - title: "Mask Pose"
-        url: /software/rplus1/motion/getting_started/#mask-pose
+        url: /software/rplus1/motion/#mask-pose
       - title: "Select Robot"
-        url: /software/rplus1/motion/getting_started/#select-robot
+        url: /software/rplus1/motion/#select-robot
       - title: "Control 3D Robot"
-        url: /software/rplus1/motion/getting_started/#control-3d-robot
+        url: /software/rplus1/motion/#control-3d-robot
       - title: "Mirror"
-        url: /software/rplus1/motion/getting_started/#mirror
+        url: /software/rplus1/motion/#mirror
       - title: "Inverse Kinematics"
-        url: /software/rplus1/motion/getting_started/#inverse-kinematics
+        url: /software/rplus1/motion/#inverse-kinematics
       - title: "Pose Go/Write(Utility)"
-        url: /software/rplus1/motion?getting_started/#pose-executioncapture
+        url: /software/rplus1/motion/#pose-executioncapture
     - title: "Step Editing"
-      url: /software/rplus1/motion/getting_started/#step-editing
+      url: /software/rplus1/motion/#step-editing
       children:
       - title: "Add/Insert/Delete/Move Step"
-        url: /software/rplus1/motion/getting_started/#addinsertdeletemove-step
+        url: /software/rplus1/motion/#addinsertdeletemove-step
       - title: "Pause/Time"
-        url: /software/rplus1/motion/getting_started/#pausetime
+        url: /software/rplus1/motion/#pausetime
       - title: "Copy/Cut/Paste Step"
-        url: /software/rplus1/motion/getting_started/#copycutpaste-step
+        url: /software/rplus1/motion/#copycutpaste-step
     - title: "Page Editing"
-      url: /software/rplus1/motion/getting_started/#page-editing
+      url: /software/rplus1/motion/#page-editing
       children:
       - title: "Select Page"
-        url: /software/rplus1/motion/getting_started/#select-page
+        url: /software/rplus1/motion/#select-page
       - title: "Connect Page"
-        url: /software/rplus1/motion/getting_started/#connect-page
+        url: /software/rplus1/motion/#connect-page
       - title: "Copy/Cut/Paste Page"
-        url: /software/rplus1/motion/getting_started/#copycutpaste-page
+        url: /software/rplus1/motion/#copycutpaste-page
       - title: "Set Page Repeat/Time"
-        url: /software/rplus1/motion/getting_started/#set-page-repeattime
+        url: /software/rplus1/motion/#set-page-repeattime
       - title: "Inertial Force Control"
-        url: /software/rplus1/motion/getting_started/#inertial-force-control
+        url: /software/rplus1/motion/#inertial-force-control
       - title: "Joint Softness"
-        url: /software/rplus1/motion/getting_started/#joint-softness
+        url: /software/rplus1/motion/#joint-softness
   - title: "More Information"
-    url: /software/rplus1/motion/getting_started/#more-information
+    url: /software/rplus1/motion/#more-information
     children:
     - title: "Upload Robot Motion"
-      url: /software/rplus1/motion/getting_started/#upload-robot-motion
+      url: /software/rplus1/motion/#upload-robot-motion
     - title: "Motion Offset"
-      url: /software/rplus1/motion/getting_started/#motion-offset
+      url: /software/rplus1/motion/#motion-offset
     - title: "Edit All Page"
-      url: /software/rplus1/motion/getting_started/#edit-all-page
+      url: /software/rplus1/motion/#edit-all-page
     - title: "Keyboard Shortcuts"
-      url: /software/rplus1/motion/getting_started/#keyboard-shortcuts
+      url: /software/rplus1/motion/#keyboard-shortcuts
     - title: "Making Robots"
-      url: /software/rplus1/motion/getting_started/#making-robots
+      url: /software/rplus1/motion/#making-robots
+
+#R+ Terminal
+rplusterminal:
+  - title: "Introduction"
+    url: /software/rplus1/terminal/#introduction
+  - title: "Serial Port Setting"
+    url: /software/rplus1/terminal/#serial-port-setting
+  - title: "Processing Input"
+    url: /software/rplus1/terminal/#processing-input
+  - title: "Processing Output"
+    url: /software/rplus1/terminal/#processing-controller-output
+  - title: "Transmitting/Receiving Data"
+    url: /software/rplus1/terminal/#transmittingreceiving-data
+  - title: "Setting Option"
+    url: /software/rplus1/terminal/#setting-option
+
+#Dynamixel Wizard
+dynamixel_wizard:
+  - title: "Introduction"
+    url: /software/rplus1/dynamixe_wizard/#introduction
+  - title: "Connecting Dynamixel"
+    url: /software/rplus1/dynamixe_wizard/#connecting-dynamixel
+  - title: "Firmware Update"
+    url: /software/rplus1/dynamixe_wizard/#firmware-update
+  - title: "Firmware Recovery"
+    url: /software/rplus1/dynamixe_wizard/#firmware-recovery
+  - title: "Test and Setup"
+    url: /software/rplus1/dynamixe_wizard/#test-and-setup
+  - title: "MX Series Calibration"
+    url: /software/rplus1/dynamixe_wizard/#mx-series-calibration
+  - title: "Videos"
+    url: /software/rplus1/dynamixe_wizard/#videos
 
 #Task Code Download sidebar
 download_task_code:
@@ -4896,46 +4928,161 @@ download_task_code:
 
 #R+ Manager 2.0 sidebar
 rplusmanager2:
-  - titlekr: "개요"
+  - title: "Introduction"
+    titlekr: "개요"
+    url: /software/rplus2/manager/#introduction
     urlkr: /software/rplus2/manager/geting_started/#개요
     children:
-    - titlekr: "로보플러스 매니저 2.0"
+    - title: "RoboPlus Manager 2.0"
+      titlekr: "로보플러스 매니저 2.0"
+      url: /software/rplus2/manager/#roboplus-manager-20
       urlkr: /software/rplus2/manager/getting_started/#로보플러스-매니저-20
-    - titlekr: "사용전 주의사항"
+    - title: "Precautions"
+      titlekr: "사용전 주의사항"
+      url: /software/rplus2/manager/#precautions
       urlkr: /software/rplus2/manager/getting_started/#사용전-주의사항
-    - titlekr: "펌웨어 정의"
+    - title: "Definition of Firmware"
+      titlekr: "펌웨어 정의"
+      url: /software/rplus2/manager/#definition-of-firmware
       urlkr: /software/rplus2/manager/getting_started/#펌웨어-정의
-  - titlekr: "메뉴 설명"
+  - title: "Menu Description"
+    titlekr: "메뉴 설명"
+    url: /software/rplus2/manager/#menu-description
     urlkr: /software/rplus2/manager/getting_started/#메뉴-설명
     children:
-    - titlekr: "단계별 편집 탭"
+    - title: "Editing Tab for Each Stage"
+      titlekr: "단계별 편집 탭"
+      url: /software/rplus2/manager/#editing-tab-for-each-stage
       urlkr: /software/rplus2/manager/getting_started/#단계별-편집-탭
-    - titlekr: "홈 탭"
+    - title: "Home Tab"
+      titlekr: "홈 탭"
+      url: /software/rplus2/manager/#home-tab
       urlkr: /software/rplus2/manager/getting_started/#홈-탭
-    - titlekr: "관리-탭"
+    - title: "Management Tab"
+      titlekr: "관리-탭"
+      url: /software/rplus2/manager/#management-tab
       urlkr: /software/rplus2/manager/getting_started/#관리-탭
-    - titlekr: "터미널-탭"
+    - title: "Terminal tab"
+      titlekr: "터미널-탭"
+      url: /software/rplus2/manager/#terminal-tab
       urlkr: /software/rplus2/manager/getting_started/#터미널-탭
-  - titlekr: "기본 기능"
+  - title: "Basic Features"
+    titlekr: "기본 기능"
+    url: /software/rplus2/manager/#basic-features
     urlkr: /software/rplus2/manager/getting_started/#기본-기능
     children:
-    - titlekr: "펌웨어 업데이트"
+    - title: "Firmware Update"
+      titlekr: "펌웨어 업데이트"
+      url: /software/rplus2/manager/#firmware-update
       urlkr: /software/rplus2/manager/getting_started/#펌웨어-업데이트
-    - titlekr: "컨트롤 테이블 테스트"
-      urlkr: /software/rplus2/manager/getting_started/#컨트롤-테이블-테스트
-    - titlekr: "펌웨어 복구"
+    - title: "Firmware Recovery"
+      titlekr: "펌웨어 복구"
+      url: /software/rplus2/manager/#firmware-recovery
       urlkr: /software/rplus2/manager/getting_started/#펌웨어-복구
-  - titlekr: "고급 기능"
+    - title: "Dynamixel Control Table"
+      titlekr: "다이나믹셀 컨트롤 테이블"
+      url: /software/rplus2/manager/#dynamixel-control-table
+      urlkr: /software/rplus2/manager/getting_started/#다이나믹셀-컨트롤-테이블
+    - title: "Controller Control Table"
+      url: /software/rplus2/manager/#controller-control-table
+  - title: "Advanced Features"
+    titlekr: "고급 기능"
+    url: /software/rplus2/manager/#advanced-features
     urlkr: /software/rplus2/manager/getting_started/#고급-기능
     children:
-    - titlekr: "XM/XH 시리즈 사용전 준비"
+    - title: "Preparation for XM/XH Series"
+      titlekr: "XM/XH 시리즈 사용전 준비"
+      url: /software/rplus2/manager/#preparation-for-xmxh-series
       urlkr: /software/rplus2/manager/advanced/#xh-xh-시리즈-사용전-준비
-    - titlekr: "컨트롤 아이템 값 변경"
+    - title: "Changing Control Value"
+      titlekr: "컨트롤 아이템 값 변경"
+      url: /software/rplus2/manager/#changing-control-value
       urlkr: /software/rplus2/manager/advanced/#컨트롤-아이템-값-변경
-    - titlekr: "펌웨어 정보 확인"
+    - title: "Firmware Information"
+      titlekr: "펌웨어 정보 확인"
+      url: /software/rplus2/manager/#firmware-information
       urlkr: /software/rplus2/manager/advanced/#펌웨어-정보-확인
-    - titlekr: "블루투스로 펌웨어 관리하기"
+    - title: "Firmware Management(Bluetooth)"
+      titlekr: "블루투스로 펌웨어 관리하기"
+      url: /software/rplus2/manager/#firmware-management-bluetooth
       urlkr: /software/rplus2/manager/advanced/#블루투스로-펌웨어-관리하기
+
+#R+ Task 2.0 sidebar
+rplustask2:
+  - title: "Introduction"
+    url: /software/rplus2/task/#introductino
+    children:
+    - title: "RoboPlus Task 2.0"
+      url: /software/rplus2/task/#roboplus-task-20
+    - title: "Manual Instructions"
+      url: /software/rplus2/task/#manual-instructions
+    - title: "Resources for Task"
+      url: /software/rplus2/task/#resources-for-task
+    - title: "Task Code Structure"
+      url: /software/rplus2/task/#task-code-structure
+  - title: "Basic Features"
+    url: /software/rplus2/task/#basic-features
+    children:
+    - title: "File Open"
+      url: /software/rplus2/task/#file-open
+    - title: "Create New File"
+      url: /software/rplus2/task/#create-new-file
+    - title: "Command Edit"
+      url: /software/rplus2/task/#command-edit
+    - title: "Parameter Edit"
+      url: /software/rplus2/task/#parameter-edit
+    - title: "Download Task Code"
+      url: /software/rplus2/task/#download-task-code
+    - title: "Print Output"
+      url: /software/rplus2/task/#print-output
+  - title: "Programming(Edit)"
+    url: /software/rplus2/task/#programming-edit
+    children:
+    - title: "Insert/Change Instruction"
+      url: /software/rplus2/task/#insertchange-instruction
+    - title: "Select Multiple Lines"
+      url: /software/rplus2/task/#select-multiple-lines
+    - title: "Insert/Delete Line"
+      url: /software/rplus2/task/#insertdelete-line
+    - title: "Enable/Disable Line"
+      url: /software/rplus2/task/#enabledisable-line
+    - title: "Copy/Cut/Paste"
+      url: /software/rplus2/task/#copycutpaste
+    - title: "Undo/Redo"
+      url: /software/rplus2/task/#undoredo
+  - title: "Programming(Instructions)"
+    url: /software/rplus2/task/#programming-instructions
+    children:
+    - title: "Start/End"
+      url: /software/rplus2/task/#startend
+    - title: "Execute"
+      url: /software/rplus2/task/#execute
+    - title: "Condition"
+      url: /software/rplus2/task/#condition
+    - title: "Loop"
+      url: /software/rplus2/task/#loop
+    - title: "Function(Sub-Routine)"
+      url: /software/rplus2/task/#function-sub-routine
+  - title: "Programming(Parameters)"
+    url: /software/rplus2/task/#programming-parameters
+    children:
+    - title: "Controllers"
+      url: /software/rplus2/task/#controllers
+    - title: "Dynamixel"
+      url: /software/rplus2/task/#dynamixel
+    - title: "Common"
+      url: /software/rplus2/task/#common
+  - title: "Useful Tips"
+    url: /software/rplus2/task/#useful-tips
+    children:
+    - title: "Search Variables/Functions"
+      url: /software/rplus2/task/#search-variablesfunctions
+    - title: "Search Keyword"
+      url: /software/rplus2/task/#search-keyword
+    - title: "Grammar/Compile Check"
+      url: /software/rplus2/task/#grammarcompile-check
+    - title: "FAQ"
+      url: /software/rplus2/task/#faq
 
 #CM-100A Controller sidebar
 cm-100:

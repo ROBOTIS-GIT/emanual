@@ -119,7 +119,7 @@ PC Link(Serial Cable) of CM-5 and Serial Port of PC must be connected using seri
 {% include en/parts/controller/fuse_cm_5.md %}
 
 [RoboPlus Task]: /docs/en/software/rplus1/task/getting_started/
-[RoboPlus Motion]: ???/docs/en/software/rplus1/motion/getting_started/
+[RoboPlus Motion]: ???/docs/en/software/rplus1/motion/
 [RoboPlus Manager]: ???
 [Number of pressed Start button]: /docs/en/software/rplus1/task/programming_02/#button-count
 [Start button]: /docs/en/software/rplus1/task/programming_02/#button-count

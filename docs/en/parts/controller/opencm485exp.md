@@ -141,7 +141,7 @@ The OpenCM9.04 I/O pin numbers for the buttons and LED’s are indicated below.
 
 
 [RoboPlus Task]: /docs/en/software/rplus1/task/getting_started/
-[RoboPlus Motion]: ???/docs/en/software/rplus1/motion/getting_started/
+[RoboPlus Motion]: ???/docs/en/software/rplus1/motion/
 [RoboPlus Manager]: ???
 [Number of pressed Start button]: /docs/en/software/rplus1/task/programming_02/#button-count
 [Start button]: /docs/en/software/rplus1/task/programming_02/#button-count
