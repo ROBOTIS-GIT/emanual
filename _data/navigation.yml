@@ -5303,7 +5303,7 @@ opencmide:
       url: /software/opencm_ide/getting_started/#bkp-library
   - title: "API References"
     url: /software/opencm_ide/api_reference/#api-references
-    children
+    children:
   - title: "EEPROM Class"
     url: /software/opencm_ide/api_reference/#eeprom-class
   - title: "BKP Class"
