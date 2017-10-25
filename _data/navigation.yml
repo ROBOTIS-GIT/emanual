@@ -317,18 +317,17 @@ main:
         titlekr: "로보플러스 매니저"
         titlejp: "R+ Manager"
         titlecn: "R+ Manager"
+        url: /software/rplus1/manager/
       - title: "R+ Motion"
         titlekr: "로보플러스 모션"
         titlejp: "R+ Motion"
         titlecn: "R+ Motion"
-      - title: "R+ Design"
-        titlekr: "로보플러스 디자인"
-        titlejp: "R+ Design"
-        titlecn: "R+ Design"
-      - title: "R+ Wizard"
-        titlekr: "로보플러스 위자드"
-        titlejp: "R+ Wizard"
-        titlecn: "R+ Wizard"
+        url: /software/rplus1/motion/
+      - title: "Dynamixel Wizard"
+        titlekr: "다이나믹셀 위자드"
+        titlejp: "Dynamixel Wizard"
+        titlecn: "Dynamixel Wizard"
+        url: /software/rplus1/dynamixel_wizard/
     - title: "R+ 2.0"
       titlekr: "R+ 2.0"
       titlejp: "R+ 2.0"
@@ -338,23 +337,28 @@ main:
         titlekr: "로보플러스 태스크 2.0"
         titlejp: "R+ Task 2.0"
         titlecn: "R+ Task 2.0"
+        url: /software/rplus2/task/
       - title: "R+ Manager 2.0"
         titlekr: "로보플러스 매니저 2.0"
         titlejp: "R+ Manager 2.0"
         titlecn: "R+ Manager 2.0"
+        url: /software/rplus2/manager/
         urlkr: /software/rplus2/manager/getting_started/
       - title: "R+ Motion 2.0"
         titlekr: "로보플러스 모션 2.0"
         titlejp: "R+ Motion 2.0"
         titlecn: "R+ Motion 2.0"
+        url: /software/rplus2/motion/
       - title: "R+ Design 2.0"
         titlekr: "로보플러스 디자인 2.0"
         titlejp: "R+ Design 2.0"
         titlecn: "R+ Design 2.0"
+        url: /software/rplus2/design/
       - title: "R+ Scratch"
         titlekr: "로보플러스 스크래치"
         titlejp: "R+ Scratch"
         titlecn: "R+ Scratch"
+        url: /software/rplus2/scratch/
     - title: "R+ Mobile"
       titlekr: "R+ 모바일"
       children:
@@ -5010,7 +5014,7 @@ rplusmanager2:
 #R+ Task 2.0 sidebar
 rplustask2:
   - title: "Introduction"
-    url: /software/rplus2/task/#introductino
+    url: /software/rplus2/task/#introduction
     children:
     - title: "RoboPlus Task 2.0"
       url: /software/rplus2/task/#roboplus-task-20
@@ -5083,6 +5087,186 @@ rplustask2:
       url: /software/rplus2/task/#grammarcompile-check
     - title: "FAQ"
       url: /software/rplus2/task/#faq
+
+#R+ Motion 2.0 sidebar
+rplusmotion2:
+  - title: "Introduction"
+    url: /software/rplus2/motion/#introduction
+    children:
+    - title: "Menu"
+      url: /software/rplus2/motion/#menu
+    - title: "3D Robot and Actual Robot"
+      url: /software/rplus2/motion/#3d-robot-and-actual-robot
+    - title: "Motion Data"
+      url: /software/rplus2/motion/#motion-data
+    - title: "Editing Timeline"
+      url: /software/rplus2/motion/#editing-timeline
+    - title: "Editing Flow Control"
+      url: /software/rplus2/motion/#editing-flow-control
+    - title: "Download Motion File"
+      url: /software/rplus2/motion/#download-motion-file
+  - title: "Practice"
+    url: /software/rplus2/motion/#Practice
+    children:
+    - title: "Open Project"
+      url: /software/rplus2/motion/#open-project
+    - title: "Connect to Robot"
+      url: /software/rplus2/motion/#connect-to-robot
+    - title: "Create New Motion Unit"
+      url: /software/rplus2/motion/#create-new-motion-unit
+    - title: "Edit Motion Unit(3D Robot)"
+      url: /software/rplus2/motion/#edit-motion-unit-3d-robot
+    - title: "Edit Motion Unit(Actual Robot)"
+      url: /software/rplus2/motion/#edit-motion-unit-actual-robot
+    - title: "Create New Motion"
+      url: /software/rplus2/motion/#create-new-motion
+    - title: "Edit Motion"
+      url: /software/rplus2/motion/#edit-motion
+    - title: "Create New Motion Group"
+      url: /software/rplus2/motion/#create-new-motion-group
+    - title: "Download Motion"
+      url: /software/rplus2/motion/#download-motion
+  - title: "Useful Tips"
+    url: /software/rplus2/motion/#useful-tips
+    children:
+    - title: "Create Custom Robot"
+      url: /software/rplus2/motion/#create-custom-robot
+    - title: "Change 3D Robot"
+      url: /software/rplus2/motion/#change-3d-robot
+    - title: "Pose Mirroring"
+      url: /software/rplus2/motion/#pose-mirroring
+    - title: "Edit Motion Index Number"
+      url: /software/rplus2/motion/#edit-motion-index-number
+    - title: "Copy Motion Data"
+      url: /software/rplus2/motion/#copy-motion-data
+    - title: "Edit Offset"
+      url: /software/rplus2/motion/#edit-offset
+    - title: "Convert mtn File"
+      url: /software/rplus2/motion/#convert-mtn-file
+    - title: "Control 3D Camera"
+      url: /software/rplus2/motion/#control-3d-camera
+    - title: "Shortcut Keys"
+      url: /software/rplus2/motion/#shortcut-keys
+    - title: "FAQ"
+      url: /software/rplus2/motion/#faq
+
+#R+ Design sidebar
+rplusdesign:
+  - title: "Introduction"
+    url: /software/rplus2/design/#introduction
+    children:
+    - title: "Home Tab"
+      url: /software/rplus2/design/#home-tab
+    - title: "My Robot Tab"
+      url: /software/rplus2/design/#my-robot-tab
+    - title: "Assembly Tab"
+      url: /software/rplus2/design/#assembly-tab
+    - title: "Edit Assembly Guide Tab"
+      url: /software/rplus2/design/#edit-assembly-guid-tab
+    - title: "View Assembled Guide Tab"
+      url: /software/rplus2/design/#view-assembled-guide-tab
+  - title: "Practice"
+    url: /software/rplus2/design/#practice
+    children:
+    - title: "Open Sample"
+      url: /software/rplus2/design/#open-sample
+    - title: "Open Design File"
+      url: /software/rplus2/design/#open-design-file
+    - title: "Create New Robot"
+      url: /software/rplus2/design/#create-new-robot
+    - title: "Change Viewpoint"
+      url: /software/rplus2/design/#change-viewpoint
+    - title: "Adding Part"
+      url: /software/rplus2/design/#adding-part
+    - title: "Select Part"
+      url: /software/rplus2/design/#select-part
+    - title: "Copying Part"
+      url: /software/rplus2/design/#copying-part
+    - title: "Change Part Color"
+      url: /software/rplus2/design/#change-part-color
+    - title: "Delete Part"
+      url: /software/rplus2/design/#delete-part
+    - title: "Move Part"
+      url: /software/rplus2/design/#move-part
+    - title: "Rotate Part"
+      url: /software/rplus2/design/#rotate-part
+    - title: "Hole-Based Rotation"
+      url: /software/rplus2/design/#hole-based-rotation
+    - title: "Connect Parts"
+      url: /software/rplus2/design/#connect-parts
+    - title: "Group"
+      url: /software/rplus2/design/#group
+  - title: "Edit Robot Information"
+    url: /software/rplus2/design/#edit-robot-information
+    children:
+    - title: "Robot Information"
+      url: /software/rplus2/design/#robot-information
+    - title: "Part List"
+      url: /software/rplus2/design/#part-list
+  - title: "Edit Assembly Guide"
+    url: /software/rplus2/design/#edit-assembly-guide
+    children:
+    - title: "Assembly Guide"
+      url: /software/rplus2/design/#assemlby-guide
+    - title: "Delete Event"
+      url: /software/rplus2/design/#delete-event
+    - title: "Select Part/Event"
+      url: /software/rplus2/design/#select-partevent
+    - title: "Add Event"
+      url: /software/rplus2/design/#add-event
+    - title: "Edit Move Event"
+      url: /software/rplus2/design/#edit-move-event
+    - title: "Add Move Event"
+      url: /software/rplus2/design/#add-move-event
+    - title: "Change Event Viewpoint"
+      url: /software/rplus2/design/#change-event-viewpoint
+  - title: "Install Instruction"
+    url: /software/rplus2/design/#install-instruction
+    children:
+    - title: "Install on PC"
+      url: /software/rplus2/design/#install-on-pc
+    - title: "Install on Smartphone"
+      url: /software/rplus2/design/#install-on-smartphone
+
+#R+ Scratch sidebar
+rplusscratch:
+  - title: "Introduction"
+    url: /software/rplus2/scratch/#introduction
+    children:
+    - title: "Program Layout"
+      url: /software/rplus2/scratch/#program-layout
+    - title: "Connect Controller to PC"
+      url: /software/rplus2/scratch/#connect-controller-to-pc
+  - title: "Miscellenous"
+    url: /software/rplus2/scratch/#miscellaneous
+
+
+  - title: ""
+    url: /software/rplus2/scratch/#
+  - title: ""
+    url: /software/rplus2/scratch/#
+  - title: ""
+    url: /software/rplus2/scratch/#
+  - title: ""
+    url: /software/rplus2/scratch/#
+  - title: ""
+    url: /software/rplus2/scratch/#
+  - title: ""
+    url: /software/rplus2/scratch/#
+  - title: ""
+    url: /software/rplus2/scratch/#
+  - title: ""
+    url: /software/rplus2/scratch/#
+  - title: ""
+    url: /software/rplus2/scratch/#
+  - title: ""
+    url: /software/rplus2/scratch/#
+  - title: ""
+    url: /software/rplus2/scratch/#
+  - title: ""
+    url: /software/rplus2/scratch/#
+  - title: ""
+    url: /software/rplus2/scratch/#
 
 #CM-100A Controller sidebar
 cm-100:
