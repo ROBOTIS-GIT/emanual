@@ -493,7 +493,7 @@ In this example, the reduction motor connected to Port 1 will rotate in the cloc
 - Speed and direction can be controlled separately using motor control constants.
 - In this example, the motor in Port 1 is set as "CCW:700",and the motor in Port 2 is set as "CW:700."
 
-![Reductino Motor Tips][img_reduction_motor_tips]
+![Reduction Motor Tips][img_reduction_motor_tips]
 
 ### [Servo Motor](#servo-motor)
 

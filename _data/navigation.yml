@@ -290,18 +290,17 @@ main:
     - title: "Mobile Apps"
       titlekr: "모바일 앱"
       children:
-      - title: "R+ SMART"
-        titlekr: "R+ SMART"
+      - titlekr: "R+ SMART"
         titlejp: "R+ SMART"
         titlecn: "R+ SMART"
-      - title: "R+ IoT"
-        titlekr: "R+ IoT"
+      - titlekr: "R+ IoT"
         titlejp: "R+ IoT"
         titlecn: "R+ IoT"
       - title: "ROBOTIS MINI"
         titlekr: "ROBOTIS MINI"
         titlejp: "ROBOTIS MINI"
         titlecn: "ROBOTIS MINI"
+        url: /software/mobile_app/mini_app/
     - title: "R+ 1.0"
       titlekr: "R+ 1.0"
       titlejp: "R+ 1.0"
@@ -362,41 +361,45 @@ main:
     - title: "R+ Mobile"
       titlekr: "R+ 모바일"
       children:
-      - title: "R+ m.Task"
-        titlekr: "R+ m.Task"
+      - titlekr: "R+ m.Task"
         titlejp: "R+ m.Task"
         titlecn: "R+ m.Task"
-      - title: "R+ m.Task 2.0"
-        titlekr: "R+ m.Task 2.0"
+      - titlekr: "R+ m.Task 2.0"
         titlejp: "R+ m.Task 2.0"
         titlecn: "R+ m.Task 2.0"
       - title: "R+ m.Motion 2.0"
         titlekr: "R+ m.Motion 2.0"
         titlejp: "R+ m.Motion 2.0"
         titlecn: "R+ m.Motion 2.0"
+        url: /software/rplus_mobile/mmotion/
       - title: "R+ m.Design"
         titlekr: "R+ m.Design"
         titlejp: "R+ m.Design"
         titlecn: "R+ m.Design"
+        url: /software/rplus_mobile/mdesign/
     - title: "SDK"
       titlekr: "SDK"
       titlejp: "SDK"
       titlecn: "SDK"
+      url: /software/sdk/
       children:
       - title: "Embedded C"
         titlekr: "제어기 펌웨어 개발"
         titlejp: "Embedded C"
         titlecn: "Embedded C"
       - title: "DYNAMIXEL SDK"
-        titlekr: "다이나믹셀 제어"
+        titlekr: "다이나믹셀 SDK"
         titlejp: "DYNAMIXEL SDK"
         titlecn: "DYNAMIXEL SDK"
-      - title: "Wireless SDK"
-        titlekr: "무선 제어"
-        titlejp: "Wireless SDK"
-        titlecn: "Wireless SDK"
+        url: https://github.com/ROBOTIS-GIT/DynamixelSDK/wiki
+      - title: "ZIGBEE SDK"
+        titlekr: "지그비 SDK"
+        titlejp: "ZIGBEE SDK"
+        titlecn: "ZIGBEE SDK"
+        url: /software/sdk/zigbee_sdk/
     - title: "OpenCM IDE"
       titlekr: "OpenCM IDE"
+      url: /software/opencm_ide/getting_started/
   - title: "PARTS"
     titlekr: "부품"
     titlejp: "部品"
@@ -5240,33 +5243,133 @@ rplusscratch:
   - title: "Miscellenous"
     url: /software/rplus2/scratch/#miscellaneous
 
+#R+ Mobile m.Motion sidebar
+rplusmmotion:
+  - title: "Getting Started"
+    url: /software/rplus2/mmotion/#getting-started
+  - title: "Practice"
+    url: /software/rplus2/mmotion/#practice
+    children:
+    - title: "Connect to Robot"
+      url: /software/rplus2/mmotion/#connect-to-robot
+    - title: "Open Project"
+      url: /software/rplus2/mmotion/#open-project
+    - title: "Motion Playback"
+      url: /software/rplus2/mmotion/#motion-playback
+    - title: "Motion Editing"
+      url: /software/rplus2/mmotion/#motion-editing
+    - title: "Motion Download"
+      url: /software/rplus2/mmotion/#motion-download
+    - title: "Save Motion Project"
+      url: /software/rplus2/mmotion/#save-motion-project
+  - title: "FAQ"
+    url: /software/rplus2/mmotion/#faq
 
-  - title: ""
-    url: /software/rplus2/scratch/#
-  - title: ""
-    url: /software/rplus2/scratch/#
-  - title: ""
-    url: /software/rplus2/scratch/#
-  - title: ""
-    url: /software/rplus2/scratch/#
-  - title: ""
-    url: /software/rplus2/scratch/#
-  - title: ""
-    url: /software/rplus2/scratch/#
-  - title: ""
-    url: /software/rplus2/scratch/#
-  - title: ""
-    url: /software/rplus2/scratch/#
-  - title: ""
-    url: /software/rplus2/scratch/#
-  - title: ""
-    url: /software/rplus2/scratch/#
-  - title: ""
-    url: /software/rplus2/scratch/#
-  - title: ""
-    url: /software/rplus2/scratch/#
-  - title: ""
-    url: /software/rplus2/scratch/#
+#OpenCM IDE sidebar
+opencmide:
+  - title: "Introduction"
+    url: /software/opencm_ide/getting_started/#introduction
+  - title: "Getting Started"
+    url: /software/opencm_ide/getting_started/#getting-started
+    children:
+    - title: "Install Software"
+      url: /software/opencm_ide/getting_started/#install-software
+    - title: "OpenCM IDE"
+      url: /software/opencm_ide/getting_started/#opencm-ide
+    - title: "Libraries"
+      url: /software/opencm_ide/getting_started/#libraries
+    - title: "Recovery Mode"
+      url: /software/opencm_ide/getting_started/#recovery-mode
+  - title: "Examples"
+    url: /software/opencm_ide/getting_started/#examples
+    children:
+    - title: "EEPROM(Flash)"
+      url: /software/opencm_ide/getting_started/#eeprom-flash
+    - title: "Sensor Module"
+      url: /software/opencm_ide/getting_started/#sensor-module
+    - title: "Digital I/O"
+      url: /software/opencm_ide/getting_started/#digital-io
+    - title: "Analog I/O"
+      url: /software/opencm_ide/getting_started/#analog-io
+    - title: "Serial Communication"
+      url: /software/opencm_ide/getting_started/#serial-communication
+    - title: "External Interrupt"
+      url: /software/opencm_ide/getting_started/#external-interrupt
+    - title: "Dynamixel Instructions"
+      url: /software/opencm_ide/getting_started/#dynamixel-instructions
+    - title: "RC-100"
+      url: /software/opencm_ide/getting_started/#rc-100
+    - title: "BKP Library"
+      url: /software/opencm_ide/getting_started/#bkp-library
+  - title: "API References"
+    url: /software/opencm_ide/api_reference/#api-references
+    children
+  - title: "EEPROM Class"
+    url: /software/opencm_ide/api_reference/#eeprom-class
+  - title: "BKP Class"
+    url: /software/opencm_ide/api_reference/#bkp-class
+  - title: "RC100 Class"
+    url: /software/opencm_ide/api_reference/#rc100-class
+  - title: "Interrupt"
+    url: /software/opencm_ide/api_reference/#interrupt
+  - title: "GPIO"
+    url: /software/opencm_ide/api_reference/#gpio
+  - title: "OLLO Class"
+    url: /software/opencm_ide/api_reference/#ollo-class
+  - title: "Serial Class"
+    url: /software/opencm_ide/api_reference/#serial-class
+  - title: "API"
+    url: /software/opencm_ide/api_reference/#api
+  - title: "Utilities"
+    url: /software/opencm_ide/api_reference/#utilities
+
+#ZIGBEE SDK sidebar
+sigbee_sdk:
+  - title: "Introduction"
+    url: /software/sdk/zigbee_sdk/#introduction
+  - title: "API Reference"
+    url: /software/sdk/zigbee_sdk/#api-reference
+    children:
+    - title: "Device Control Method"
+      url: /software/sdk/zigbee_sdk/#device-control-method
+      children:
+      - title: "zgb_initialize"
+        url: /software/sdk/zigbee_sdk/#zgb-initialize
+      - title: "zgb_terminate"
+        url: /software/sdk/zigbee_sdk/#zgb-terminate
+    - title: "Communication Method"
+      url: /software/sdk/zigbee_sdk/#communication-method
+      children:
+      - title: "zgb_tx_data"
+        url: /software/sdk/zigbee_sdk/#zgb-tx-data
+      - title: "zgb_rx_check"
+        url: /software/sdk/zigbee_sdk/#zgb-rx-check
+      - title: "zgb_rx_data"
+        url: /software/sdk/zigbee_sdk/#zgb-rx-data
+  - title: "Platform Porting"
+    url: /software/sdk/zigbee_sdk/#platform-porting
+    children:
+    - title: "zgb_hal_open"
+      url: /software/sdk/zigbee_sdk/#zgb-hal-open
+    - title: "zgb_hal_close"
+      url: /software/sdk/zigbee_sdk/#zgb-hal-close
+    - title: "zgb_hal_tx"
+      url: /software/sdk/zigbee_sdk/#zgb-hal-tx
+    - title: "zgb_hal_rx"
+      url: /software/sdk/zigbee_sdk/#zgb-hal-rx
+  - title: "ZIG2Serial"
+    url: /software/sdk/zigbee_sdk/#zig2serial
+    children:
+    - title: "Visual C++"
+      url: /software/sdk/zigbee_sdk/#visual-c
+    - title: "Visual Basic"
+      url: /software/sdk/zigbee_sdk/#visual-basic
+    - title: "Visual C#"
+      url: /software/sdk/zigbee_sdk/#visual-c#
+    - title: "gcc"
+      url: /software/sdk/zigbee_sdk/#gcc
+  - title: "CM-510/700"
+    url: /software/sdk/zigbee_sdk/#cm-510700
 
 #CM-100A Controller sidebar
 cm-100:

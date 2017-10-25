@@ -102,41 +102,41 @@ For Windows 8/8.1, to open the `Control Panel` click on the right side of the ch
 1. Connect the Bluetooth (BT-210) to your robot and turn the power on.
 2. Select ‘Control Panel’  > ‘Hardware and Sound’  > ‘Add a device’ on your computer
 
-  ![](/assets/images/edu/mini/mini_003.jpg)
+    ![](/assets/images/edu/mini/mini_003.jpg)
 
 3. Select ‘ROBOTIS BT-210’ from your list and click ‘Next.’
 
-  ![](/assets/images/edu/mini/mini_004.png)
+    ![](/assets/images/edu/mini/mini_004.png)
 
 4. When there is more than one device, check the ‘Properties’ of the device by clicking on the right side of your mouse. Make sure the Unique Identifier number of your Bluetooth under the ‘Bluetooth’ tab is the same number you wish to use.
 
-  ![](/assets/images/edu/mini/mini_005.png)
+    ![](/assets/images/edu/mini/mini_005.png)
 
 5. Select ‘Enter the device's pairing code’ from the Connection Option.
 
-  ![](/assets/images/edu/mini/mini_006.png)
+    ![](/assets/images/edu/mini/mini_006.png)
 
 6. Input ‘0000’ then click ‘Next.’
 
-  ![](/assets/images/edu/mini/mini_007.png)
+    ![](/assets/images/edu/mini/mini_007.png)
 
 7. Device has been successfully added.
 
-  ![](/assets/images/edu/mini/mini_008.png)
+    ![](/assets/images/edu/mini/mini_008.png)
 
 ### [Check Connection](#check-connection)
 
 1. Select ‘Control Panel’ > ‘Hardware and Sound’ > ‘View devices and printers’ on your computer.
 
-  ![](/assets/images/edu/mini/mini_009.png)
+    ![](/assets/images/edu/mini/mini_009.png)
 
 2. Select ‘Properties’ by right clicking on the BT-210 that you just added.
 
-  ![](/assets/images/edu/mini/mini_010.jpg)
+    ![](/assets/images/edu/mini/mini_010.jpg)
 
 3. Check the COM port under the ‘Hardware’ tab.
 
-  ![](/assets/images/edu/mini/mini_011.jpg)
+    ![](/assets/images/edu/mini/mini_011.jpg)
 
 # [Operating MINI](#operating-mini)
 
@@ -255,38 +255,36 @@ Like the task code, the motion data needs to be downloaded to the controller onc
 
 # [Customize](#customize)
 
-1. Adding Peripheral Devices
-
-  The controller OpenCM9.04-C Type used in ROBOTIS MINI has four ports to connect 5P devices.
+1. Adding Peripheral Devices  
+    The controller OpenCM9.04-C Type used in ROBOTIS MINI has four ports to connect 5P devices.
 
   - Accessories
 
-  ![](/assets/images/edu/mini/mini_023.jpg)
+    ![](/assets/images/edu/mini/mini_023.jpg)
 
-  ※ Please refer to our online shop to purchase the sensors above. [GO TO ROBOTIS SHOP](http://www.robotis-shop-en.com/index.php)
+    ※ Please refer to our online shop to purchase the sensors above. [GO TO ROBOTIS SHOP](http://www.robotis-shop-en.com/index.php)
 
-  ![](/assets/images/edu/mini/mini_024.jpg)
+    ![](/assets/images/edu/mini/mini_024.jpg)
 
-  Port number for each port is written in white.
+    Port number for each port is written in white.
 
-  {% capture mini_warning_02 %}
-  `Caution`
-  - LED Module : Use ports `2` and `3`(LED will not light up when using ports `3` and `4`)
-  - IR Sensor :  Use ports `1` and `4`
-  - Color Sensor : Use ports `2` and `3`
-  {% endcapture %}
+    {% capture mini_warning_02 %}
+    `Caution`
+    - LED Module : Use ports `2` and `3`(LED will not light up when using ports `3` and `4`)
+    - IR Sensor :  Use ports `1` and `4`
+    - Color Sensor : Use ports `2` and `3`
+    {% endcapture %}
 
-  <div class="notice--warning">{{ mini_warning_02 | markdownify }}</div>
+    <div class="notice--warning">{{ mini_warning_02 | markdownify }}</div>
 
-  Images of ROBOTIS-MINI with different devices assembled.
+    Images of ROBOTIS-MINI with different devices assembled.
 
-  ![](/assets/images/edu/mini/mini_025.jpg)
+    ![](/assets/images/edu/mini/mini_025.jpg)
 
-2. Customize Appearance
+2. Customize Appearance  
+    The stickers come with your package but if you want to re-reprint them, please refer to the link below. You can also draw your own design. Sticker file can be downloaded at [Download Section](#download)
 
-  The stickers come with your package but if you want to re-reprint them, please refer to the link below. You can also draw your own design. Sticker file can be downloaded at [Download Section](#download)
-
-  ![](/assets/images/edu/mini/mini_026.jpg)
+    ![](/assets/images/edu/mini/mini_026.jpg)
 
 # [Download](#download)
 
@@ -308,19 +306,19 @@ Please follow the procedure below to recover or update the ROBOTIS MINI’s cont
 
 1. Separate the ROBOTIS MINI’s chest with the body to disassemble the controller.
 
-  ![](/assets/images/sw/mobile/mini_firmware_01.jpg)
+    ![](/assets/images/sw/mobile/mini_firmware_01.jpg)
 
 2. With the power off, push the user button (marked red below).
 
-  ![](/assets/images/sw/mobile/mini_firmware_02.jpg)
+    ![](/assets/images/sw/mobile/mini_firmware_02.jpg)
 
 3. Keep holding the user button, then connect the OpenCM9.04C with the PC with the mini USB cable (marked red below).
 
-  ![](/assets/images/sw/mobile/mini_firmware_03.jpg)
+    ![](/assets/images/sw/mobile/mini_firmware_03.jpg)
 
 4. When a green light shows up on the LED marked below, let go of the user button.
 
-  ![](/assets/images/sw/mobile/mini_firmware_04.jpg)
+    ![](/assets/images/sw/mobile/mini_firmware_04.jpg)
 
 5. Run RoboPlus. If the version is low, an automatic update will be run through the internet. If the automatic update doesn’t run, please download the latest version from the ROBOTIS website’s Download site.
 
@@ -338,31 +336,31 @@ Please follow the procedure below to recover or update the ROBOTIS MINI’s cont
 
 9. Click the controller firmware management button on the top.
 
-  ![](/assets/images/sw/mobile/mini_firmware_08.jpg)
+    ![](/assets/images/sw/mobile/mini_firmware_08.jpg)
 
 10. Click [Next].
 
-  ![](/assets/images/sw/mobile/mini_firmware_09.jpg)
+    ![](/assets/images/sw/mobile/mini_firmware_09.jpg)
 
 11. Select the port the OpenCM9.04C is connected on and click search.
 
-  ![](/assets/images/sw/mobile/mini_firmware_10.jpg)
+    ![](/assets/images/sw/mobile/mini_firmware_10.jpg)
 
 12. When the controller is found, click [Next].
 
-  ![](/assets/images/sw/mobile/mini_firmware_11.jpg)
+    ![](/assets/images/sw/mobile/mini_firmware_11.jpg)
 
 13. Click [Next].
 
-  ![](/assets/images/sw/mobile/mini_firmware_12.jpg)
+    ![](/assets/images/sw/mobile/mini_firmware_12.jpg)
 
 14. Click [Next].
 
-  ![](/assets/images/sw/mobile/mini_firmware_13.jpg)
+    ![](/assets/images/sw/mobile/mini_firmware_13.jpg)
 
 15. Click [Finish].
 
-  ![](/assets/images/sw/mobile/mini_firmware_14.jpg)
+    ![](/assets/images/sw/mobile/mini_firmware_14.jpg)
 
 ## [ID Map](#id-map)
 
