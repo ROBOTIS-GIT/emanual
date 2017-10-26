@@ -39,9 +39,9 @@ header:
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |O|X|O|O|X|X|X|X|X|X|X|
 
-- [Download CM-510 SDK](http://support.robotis.com/en/software/embeded_c/cm510_cm700.htm)
-- [Download CM-530 SDK](http://support.robotis.com/en/software/embeded_c/cm530.htm)
-- [Download CM-700 SDK](http://support.robotis.com/en/software/embeded_c/cm510_cm700.htm)
+- [Download CM-510 SDK]
+- [Download CM-530 SDK]
+- [Download CM-700 SDK]
 
 # Wireless Control SDK
 
@@ -62,3 +62,6 @@ header:
 [Controller Embedded C]: /docs/en/software/sdk/embedded_c/
 [Dynamixel SDK]: https://github.com/ROBOTIS-GIT/DynamixelSDK/wiki
 [ZIGBEE SDK]: /docs/en/software/sdk/zigbee_sdk/
+[Download CM-510 SDK]: http://support.robotis.com/en/baggage_files/embeded_c/embeded_c(cm510_v1.02).zip
+[Download CM-530 SDK]: http://support.robotis.com/en/baggage_files/embeded_c/embeddec_c(cm530_v1_02).zip
+[Download CM-700 SDK]: http://support.robotis.com/en/baggage_files/embeded_c/embeded_c(cm700_v1.02).zip
