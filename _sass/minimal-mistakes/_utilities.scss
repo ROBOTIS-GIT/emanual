@@ -480,12 +480,36 @@ a.reversefootnote {
    ========================================================================== */
 
 .gsc-control-cse {
-
+  padding: 0 !important;
+  
   table, tr, td {
-    border: 0; /* remove table borders widget */
+    border: 0 !important; /* remove table borders widget */
   }
 }
 
+.cse .gsc-search-button input.gsc-search-button-v2, input.gsc-search-button-v2 {
+  width: auto !important;
+  height: auto !important;
+}
+
+.gsc-search-box {
+  border: 0px solid !important;
+  border-radius: 25px !important;
+  margin: 0 !important;
+  height: 40px !important;
+}
+
+.gsc-input {
+  padding: 0 !important;
+}
+
+.gstl_50 {
+  margin: 0 !important;
+}
+
+.gsib_a {
+  padding: 0 !important;
+}
 /*
    Responsive Video Embed
    ========================================================================== */

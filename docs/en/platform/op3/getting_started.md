@@ -233,7 +233,7 @@ If ROBOTIS OP3 falls down (either on its back or belly) it will stand up and res
   1. Press `MODE` button until LED1(red) is lit.  
     ROBOTIS OP3 will verbally announce “Autonomous soccer mode”.
 
-    ![](/assets/images/platform/op3/op3_017.png)
+      ![](/assets/images/platform/op3/op3_017.png)
 
   2. Press `START` button to begin.  
     ROBOTIS OP3 will stand up and walk around to find the ball.ROBOTIS-OP3 will verbally announce “Start soccer demonstration”
@@ -243,7 +243,7 @@ If ROBOTIS OP3 falls down (either on its back or belly) it will stand up and res
     If ROBOTIS OP3 falls down during pursuit or kick, it will stand up and resume.
 
 - Stop Autonomous Soccer Mode
-  1. Press `MODE` button until LED 3(blue) is lit. ROBOTIS OP3 will verbally announce “Interactive motion mode”.
+  - Press `MODE` button until LED 3(blue) is lit. ROBOTIS OP3 will verbally announce “Interactive motion mode”.
 
 ### [Interactive Motion Mode](#interactive-motion-mode)
 
@@ -252,7 +252,7 @@ ROBOTIS OP3 performs pre-programmed motions sequentially while talking.
 - Start Interactive Motion Mode
   1. Press `MODE` button until LED 3(blue) is lit. ROBOTIS OP3 will verbally announce “Interactive motion mode”.
 
-    ![](/assets/images/platform/op3/op3_019.png)
+      ![](/assets/images/platform/op3/op3_019.png)
 
   2. Press `START` button to begin. ROBOTIS OP3 will stand up and announce “Start motion demonstration”.
   3. ROBOTIS OP3 will perform following actions sequentially.
@@ -260,7 +260,7 @@ ROBOTIS OP3 performs pre-programmed motions sequentially while talking.
     ![](/assets/images/platform/op3/op3_020.png)
 
 - Stop Interactive Motion Mode
-  1. If `MODE` button is pressed for at least 2 seconds, ROBOTIS-OP3 will return to demonstration-ready mode.
+  - If `MODE` button is pressed for at least 2 seconds, ROBOTIS-OP3 will return to demonstration-ready mode.
 
 ### [Vision Processing Mode](#vision-processing-mode)
 
@@ -272,7 +272,7 @@ Face detecting : https://github.com/phil333/face_detection
 - Start Vision Processing Mode
   1. Press `MODE` button until LED 2(green) is lit. ROBOTIS OP3 will verbally announce “Vision processing mode”.
 
-    ![](/assets/images/platform/op3/op3_018.png)
+      ![](/assets/images/platform/op3/op3_018.png)
 
   2. Press `START` button to begin. ROBOTIS OP3 will verbally announce “Start vision processing demonstration” and stand up.
   3. The target face should be located approximately 90cm(36”) away from ROBOTIS OP3.  
@@ -280,7 +280,7 @@ Face detecting : https://github.com/phil333/face_detection
     ROBOTIS OP3 will keep track on the first recognized target face.
 
 - Stop Vision Processing Mode
-  1. If `MODE` button is pressed for at least 2 seconds, ROBOTIS-OP3 will return to Demonstration-Ready mode.
+  - If `MODE` button is pressed for at least 2 seconds, ROBOTIS-OP3 will return to Demonstration-Ready mode.
 
 - ETC
   - Modifying parameters of the ‘face_detection’ package might improve recognition of the face. Please refer to the following website for more details. 
@@ -300,10 +300,10 @@ Please perform below procedures in order to shutdown the computer inside ROBOTIS
 
 1. Press PC power button which is located on the bottom side of the chest. ROBOTIS OP3 will verbally announce “bye-bye” and initiate shutdown process.
 
-  ![](/assets/images/platform/op3/op3_021.png)
+    ![](/assets/images/platform/op3/op3_021.png)
 
-  When the internal computer of ROBOTIS OP3 is turned off, blue LED at the chest will be off.  
-  After the blue LED is turned off, shutdown the main power with the switch in the back of the robot.
+    When the internal computer of ROBOTIS OP3 is turned off, blue LED at the chest will be off.  
+    After the blue LED is turned off, shutdown the main power with the switch in the back of the robot.
 
 2. If ROBOTIS OP3 does not announce “bye-bye” then you may need to force shutdown by holding the power button until the blue LED at the chest turns off.
 

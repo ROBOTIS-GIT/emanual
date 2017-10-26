@@ -15,12 +15,14 @@ table {
   }
 }
 
+/*
 table.gsc-search-box {
   margin-bottom: 0;
   width: 100%;
   font-size: $type-size-6;
   border: 0px;
 }
+*/
 
 thead {
   background-color: $lighter-gray;
@@ -40,9 +42,11 @@ td {
   border-right: 1px solid $light-gray;
 }
 
+/*
 td.gsc-input {
   border: 0px;
 }
+*/
 
 tr, td, th {
   vertical-align: middle;

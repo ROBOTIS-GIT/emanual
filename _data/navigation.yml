@@ -387,6 +387,7 @@ main:
         titlekr: "제어기 펌웨어 개발"
         titlejp: "Embedded C"
         titlecn: "Embedded C"
+        url: /software/sdk/embedded_c/
       - title: "DYNAMIXEL SDK"
         titlekr: "다이나믹셀 SDK"
         titlejp: "DYNAMIXEL SDK"
@@ -5304,24 +5305,24 @@ opencmide:
   - title: "API References"
     url: /software/opencm_ide/api_reference/#api-references
     children:
-  - title: "EEPROM Class"
-    url: /software/opencm_ide/api_reference/#eeprom-class
-  - title: "BKP Class"
-    url: /software/opencm_ide/api_reference/#bkp-class
-  - title: "RC100 Class"
-    url: /software/opencm_ide/api_reference/#rc100-class
-  - title: "Interrupt"
-    url: /software/opencm_ide/api_reference/#interrupt
-  - title: "GPIO"
-    url: /software/opencm_ide/api_reference/#gpio
-  - title: "OLLO Class"
-    url: /software/opencm_ide/api_reference/#ollo-class
-  - title: "Serial Class"
-    url: /software/opencm_ide/api_reference/#serial-class
-  - title: "API"
-    url: /software/opencm_ide/api_reference/#api
-  - title: "Utilities"
-    url: /software/opencm_ide/api_reference/#utilities
+    - title: "EEPROM Class"
+      url: /software/opencm_ide/api_reference/#eeprom-class
+    - title: "BKP Class"
+      url: /software/opencm_ide/api_reference/#bkp-class
+    - title: "RC100 Class"
+      url: /software/opencm_ide/api_reference/#rc100-class
+    - title: "Interrupt"
+      url: /software/opencm_ide/api_reference/#interrupt
+    - title: "GPIO"
+      url: /software/opencm_ide/api_reference/#gpio
+    - title: "OLLO Class"
+      url: /software/opencm_ide/api_reference/#ollo-class
+    - title: "Serial Class"
+      url: /software/opencm_ide/api_reference/#serial-class
+    - title: "API"
+      url: /software/opencm_ide/api_reference/#api
+    - title: "Utilities"
+      url: /software/opencm_ide/api_reference/#utilities
 
 #ZIGBEE SDK sidebar
 sigbee_sdk:
@@ -5612,7 +5613,7 @@ cm-900:
 #OpenCM 9.04 sidebar
 opencm904:
   - title: "Introduction"
-    url: /parts/controller/opencm904/#Introduction
+    url: /parts/controller/opencm904/#introduction
   - title: "Specifications"
     url: /parts/controller/opencm904/#specifications
   - title: "Control Table"

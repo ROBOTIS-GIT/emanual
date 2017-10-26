@@ -5,15 +5,13 @@ ref: faq
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/faq
+permalink: /docs/en/faq/
 sidebar:
   title: FAQ
   nav: "faq"
 ---
 
-# [Common](#common)
-1. [Contents Guide](/docs/en/faq/contents_guide)
-
-# [Education](#education)
-1. [Download Task Code](/docs/en/software/rplus1/task/getting_started/#program-download)
-2. [Task Rule Check](/docs/en/software/rplus1/task/task_misc/#rule-check)
+- [Product Compatibility Guide](/docs/en/faq/controller_compatibility/)
+- [Download Task Code](/docs/en/software/rplus1/task/getting_started/#program-download)
+- [Task Rule Check](/docs/en/software/rplus1/task/task_misc/#rule-check)
+- [CM 510/530 Fuse Replacement](/docs/en/faq/cm_510_530_fuse/)
