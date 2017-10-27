@@ -1284,8 +1284,9 @@ This is the modified version of KumarRobotics/imu_3dm_gx4.
 #### ROS API
 
 ##### Published Topics
-    `/robotis/sensor/imu/imu` (sensor_msgs/Imu)  
-    Current output of the IMU Sensor
+
+   `/robotis/sensor/imu/imu` (sensor_msgs/Imu)  
+   Present output of the IMU Sensor
 
 
 ## [PPC Packages](#ppc-packages)
