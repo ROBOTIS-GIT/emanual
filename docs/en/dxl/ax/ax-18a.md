@@ -11,6 +11,8 @@ sidebar:
   nav: "ax-18a"
 ---
 
+# AX-18A
+
 ![](/assets/images/dxl/ax/ax-18f_product.jpg)
 ![](/assets/images/dxl/ax/ax-18a_product.png)
 

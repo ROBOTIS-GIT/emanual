@@ -11,6 +11,8 @@ sidebar:
   nav: "bioloid-beginner"
 ---
 
+# BIOLOID Beginner
+
 # [Introduction](#introduction)
 
 Robots of 4 DOF can be built with Beginner Kit.  This kit is recommended for people who meet robots for the first time.

@@ -11,9 +11,11 @@ sidebar:
   nav: "ax-s1"
 ---
 
-# [Introduction](#introduction)
+# Integrated Sensor(AX-S1)
 
 ![](/assets/images/parts/sensors/ax-s1_product.png)
+
+# [Introduction](#introduction)
 
 `Warning` AX-S1 has been discontinued.
 {: .notice--warning}

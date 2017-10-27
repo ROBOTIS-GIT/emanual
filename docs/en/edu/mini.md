@@ -7,9 +7,11 @@ share: true
 author_profile: false
 permalink: /docs/en/edu/mini/
 sidebar:
-  title: MINI
+  title: ROBOTIS MINI
   nav: "mini"
 ---
+
+# ROBOTIS MINI
 
 # [Introduction](#introduction)
 
@@ -214,7 +216,7 @@ Roboplus Motion is the program that helps to easily make the robot motion data.
 The RoboPlus Motion program can be downloaded from the ROBOTIS homepage.
 Further instructions on how to use it can be found on the e-Manual.
 
-- Click [here](/docs/en/software/rplus1/motion/???) to learn more about RoboPlus Motion.
+- Click [here](/docs/en/software/rplus1/motion/) to learn more about RoboPlus Motion.
 - Click [here](http://en.robotis.com/BlueAD/board.php?bbs_id=downloads&mode=view&bbs_no=1152561&page=1&key=&keyword=&sort=&scate=) to download RoboPlus.
 
 #### DARWIN-MINI basic motion file
@@ -286,7 +288,7 @@ Like the task code, the motion data needs to be downloaded to the controller onc
 
     ![](/assets/images/edu/mini/mini_026.jpg)
 
-# [Download](#download)
+# <a name"download"></a>[Download](#download)
 
 - [Download][mini_download_01] Example Task Code and Motion File
 - [Download][mini_download_02] Sticker Design

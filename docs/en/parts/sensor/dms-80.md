@@ -11,9 +11,11 @@ sidebar:
   nav: "dms-80"
 ---
 
-# [Introduction](#introduction)
+# Distance Sensor(DMS-80)
 
 ![](/assets/images/parts/sensors/dms-80_product.jpg)
+
+# [Introduction](#introduction)
 
 - DMS-80 is used to detect objects or walls within a fixed distance.
 - The sensor is not affected by color as much as IR Sensors enabling it to measure precise distance.

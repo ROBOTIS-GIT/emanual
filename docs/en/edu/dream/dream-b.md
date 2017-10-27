@@ -7,9 +7,11 @@ share: true
 author_profile: false
 permalink: /docs/en/edu/dream/dream-b/
 sidebar:
-  title: Dream Set B
+  title: DREAM SET B
   nav: "dream-b"
 ---
+
+# DREAM SET B
 
 # [Introduction](#introduction)
 

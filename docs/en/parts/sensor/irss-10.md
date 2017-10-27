@@ -11,9 +11,11 @@ sidebar:
   nav: "irss-10"
 ---
 
-# [Introduction](#introduction)
+# IR Sensor(IRSS-10)
 
 ![](/assets/images/parts/sensors/ir.jpg)
+
+# [Introduction](#introduction)
 
 - It uses a method which produces infrared lights and calculates the amount reflected back.
 - Infrared light is not suitable to measure distance between objects because even though two objects are at the same distance, the reflected amount can be varied depending on the color and brightness.

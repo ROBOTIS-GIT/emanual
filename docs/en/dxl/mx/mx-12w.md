@@ -11,6 +11,8 @@ sidebar:
   nav: "mx-12w"
 ---
 
+# MX-12W
+
 ![](/assets/images/dxl/mx/mx-12_product.jpg)
 
 # [Specifications](#specifications)

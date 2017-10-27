@@ -27,7 +27,7 @@ OLLO and Bioloid both use the RC-100, which uses IR communication method. To upg
 [RC-100]: /docs/en/parts/communication/rc-100/
 [Controller]: /docs/en/parts/controller/compatibility/
 
-[Zig-100_RC-100]: /assets/images/parts/communication/rc-100_zig_100.jpg
+[Zig-100_RC-100]: /assets/images/parts/communication/rc_100_zig_100.jpg
 [Zig-110_CM-100]: /assets/images/parts/communication/cm_100_zig_110.jpg
 [Zig-110_CM-510]: /assets/images/parts/communication/cm_510_zig_110.png
 [Zig-100_CM-5]: /assets/images/parts/communication/cm_5_zig_100.png

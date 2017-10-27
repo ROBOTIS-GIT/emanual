@@ -15,4 +15,4 @@ The Dynamixel can protect itself by detecting dangerous situations that could oc
 1. H/W REBOOT : Turn off the power and turn on again
 2. S/W REBOOT : Transmit REBOOT Instruction (For more details, please refer to the [Protocol] section of e-Manual.)
 
-[Protocol]: ???
+[Protocol]: /docs/en/dxl/protocol2/#reboot

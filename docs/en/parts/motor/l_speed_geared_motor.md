@@ -7,13 +7,16 @@ share: true
 author_profile: false
 permalink: /docs/en/parts/motor/l_speed_geared_motor/
 sidebar:
-  title: Low Speed Geared Motor
+  title: 
+    # Low Speed Geared Motor
   nav: "l_speed_geared_motor"
 ---
 
-# [Introduction](#introduction)
+# Low Speed Geared Motor
 
 ![](/assets/images/parts/motor/l_speed_geared_motor_product.jpg)
+
+# [Introduction](#introduction)
 
 This motor is used in ROBOTIS DREAM LEVEL 1
 

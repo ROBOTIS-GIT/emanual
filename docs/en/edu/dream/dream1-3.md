@@ -11,6 +11,8 @@ sidebar:
   nav: "dream1-3"
 ---
 
+# DREAM1 Level 2
+
 # [Introduction](#introduction)
 
 ROBOTIS DREAM Level 3 comes with the controller and teaches you the principles of servo motor control, usage of the touch sensor and IR sensors, and LED modules. This level will help you understand the flow chart to set up your ground work for programming.

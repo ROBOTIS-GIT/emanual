@@ -11,6 +11,8 @@ sidebar:
   nav: "ax-12w"
 ---
 
+# AX-12W
+
 ![](/assets/images/dxl/ax/ax-12w_product.jpg)
 
 # [Specifications](#specifications)

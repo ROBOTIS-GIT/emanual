@@ -7,9 +7,11 @@ share: true
 author_profile: false
 permalink: /docs/en/edu/ollo/inventor/
 sidebar:
-  title: OLLO Inventor
+  title: OLLO INVENTOR
   nav: "ollo_inventor"
 ---
+
+# OLLO INVENTOR
 
 # [Introduction](#introduction)
 Create robots using the controller, geared motors, sensors, and servo motors and perform basic programming.

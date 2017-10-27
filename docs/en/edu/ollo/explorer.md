@@ -7,9 +7,11 @@ share: true
 author_profile: false
 permalink: /docs/en/edu/ollo/explorer/
 sidebar:
-  title: OLLO Explorer
+  title: OLLO EXPLORER
   nav: "ollo_explorer"
 ---
+
+# OLLO EXPLORER
 
 # [Introduction](#introduction)
 Create robots using the controllers and sensors.

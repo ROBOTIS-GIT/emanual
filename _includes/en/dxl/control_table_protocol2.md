@@ -19,6 +19,6 @@ The Control Table has two different access properties. ‘RW’ property stands 
 ### [Initial Value](#initial-value)
 Each data in the Control Table is restored to initial values when the DYNAMIXEL is turned on. Default values in the EEPROM area are initial values of the DYNAMIXEL (factory default settings). If any values in the EEPROM area are modified by a user, modified values will be restored as initial values when the DYNAMIXEL is turned on. Initial Values in the RAM area are restored when the DYNAMIXEL is turned on.
 
-[Protocol 2.0]: ???
-[Two's complement]: ???
-[Little Endian]: ???
+[Protocol 2.0]: /docs/en/dxl/protocol2/
+[Two's complement]: https://en.wikipedia.org/wiki/Two%27s_complement
+[Little Endian]: https://en.wikipedia.org/wiki/Endianness#Little

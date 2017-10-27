@@ -5,14 +5,13 @@ Dynamixels used as robot actuators possess many functions. This section explains
 1. Select the port the controller is connected to.
 2. Click “Connect”.
 
-  ![DXL_Management_01](/assets/images/sw/rplus1/manager/dxl_management_01.png)
+    ![DXL_Management_01](/assets/images/sw/rplus1/manager/dxl_management_01.png)
 
 3. A list of connected dynamixels is shown on the left. Click on the dynamixel you wish to change the ID of.
 4. Click on the ID row in the Control Table.
 5. Click on the ID List combo box to see a list of possible ID's. Select the ID, then click Apply.
 
-  ![DXL_Management_02](/assets/images/sw/rplus1/manager/dxl_management_02.png)
-
+    ![DXL_Management_02](/assets/images/sw/rplus1/manager/dxl_management_02.png)
 
 - To use in RoboPlus Motion and RoboPlus Task, the ID must be within the following ranges.
   - The Dynamixel’s ID must be between 0 and 25.
@@ -29,15 +28,14 @@ The mode can be changed using RoboPlus Manager. Once the mode is set, it will be
 1. Select the port the controller is connected to.
 2. Click “Connect”.
 
-  ![DXL_Management_03](/assets/images/sw/rplus1/manager/dxl_management_03.png)
+    ![DXL_Management_03](/assets/images/sw/rplus1/manager/dxl_management_03.png)
 
 3. A list of connected Dynamixels is shown on the left.  Click on the Dynamixel you wish to change the mode of. Then, click on the CW/CCW Angle Limit line in the Control Table.
 4. To set to Wheel Mode, change the CW/CCW Angle Limit value to “0.”  Or, simply click on the "Wheel Mode" button.
 
-  ![DXL_Management_04](/assets/images/sw/rplus1/manager/dxl_management_04.png)
+    ![DXL_Management_04](/assets/images/sw/rplus1/manager/dxl_management_04.png)
 
-5. To set to Joint Mode again, set the CW/CCW Angle Limit value to any number other than "0".
-The initial values for Joint Mode are "0" for CW Angle Limit, and "1023" for CCW Angle Limit.
+5. To set to Joint Mode again, set the CW/CCW Angle Limit value to any number other than "0". The initial values for Joint Mode are "0" for CW Angle Limit, and "1023" for CCW Angle Limit.
 
 ### Troubleshooting
 

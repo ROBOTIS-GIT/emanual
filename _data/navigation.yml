@@ -184,38 +184,38 @@ main:
       titlejp: "OLLO"
       titlecn: "OLLO"
       children:
-      - title: "Bug Kit"
+      - title: "BUG KIT"
         titlekr: "버그 키트"
-        titlejp: "Bug Kit"
+        titlejp: "BUG KIT"
         url: /edu/ollo/bugkit/
-      - title: "Explorer"
+      - title: "EXPLORER"
         titlekr: "2단계 교육키트"
         titlejp: "Level 2 Kit"
         url: /edu/ollo/explore/
-      - title: "Inventor"
+      - title: "INVENTOR"
         titlekr: "3단계 교육키트"
         titlejp: "Level 3 Kit"
         url: /edu/ollo/inventor/
       - titlekr: "4단계 교육키트"
         titlejp: "Level 4 Kit"
-    - title: "Dream"
+    - title: "DREAM"
       titlekr: "드림 I"
       children:
       - titlekr: "1단계 교육키트"
-        titlecn: "Level 1"
+        titlecn: "LEVEL 1"
         urlkr: /edu/dream/dream1-1/
-      - title: "Level 2"
+      - title: "LEVEL 2"
         titlekr: "2단계 교육키트"
-        titlecn: "Level 2"
+        titlecn: "LEVEL 2"
         url: /edu/dream/dream1-2/
         urlkr: /edu/dream/dream1-2/
-      - title: "Level 3"
+      - title: "LEVEL 3"
         titlekr: "3단계 교육키트"
-        titlecn: "Level 3"
+        titlecn: "LEVEL 3"
         url: /edu/dream/dream1-3/
-      - title: "Level 4"
+      - title: "LEVEL 4"
         titlekr: "4단계 교육키트"
-        titlecn: "Level 4"
+        titlecn: "LEVEL 4"
         url: /edu/dream/dream1-4/
       - title: "SET A"
         url: /edu/dream/dream-a/
@@ -224,11 +224,11 @@ main:
     - titlekr: "드림 II"
       children:
       - titlekr: "1단계 교육키트"
-        titlecn: "Level 1"
+        titlecn: "LEVEL 1"
       - titlekr: "2단계 교육키트"
-        titlecn: "Level 2"
+        titlecn: "LEVEL 2"
       - titlekr: "3단계 교육키트"
-        titlecn: "Level 3"
+        titlecn: "LEVEL 3"
     - titlekr: "스마트 I"
       children:
       - titlekr: "1단계 교육키트"
@@ -248,10 +248,10 @@ main:
       children:
       - titlekr: "1단계 교육키트"
       - titlekr: "2단계 교육키트"
-    - title: "Bioloid"
+    - title: "BIOLOID"
       titlekr: "바이올로이드"
-      titlejp: "Bioloid"
-      titlecn: "Bioloid"
+      titlejp: "BIOLOID"
+      titlecn: "BIOLOID"
       children:
       - title: "Beginner Level"
         titlekr: "초급"
@@ -263,16 +263,16 @@ main:
         url: /edu/bioloid/comprehensive/
       - title: "ROBOTIS STEM"
         titlekr: "STEM 키트"
-        titlejp: "STEM Kit"
-        titlecn: "STEM Kit"
+        titlejp: "STEM KIT"
+        titlecn: "STEM KIT"
       - titlekr: "STEM 아카데미"
         titlejp: "STEM Academy"
         titlecn: "STEM Academy"
         url: /edu/bioloid/stem/
-      - title: "ROBOTIS Premium"
+      - title: "ROBOTIS PREMIUM"
         titlekr: "프리미엄"
-        titlejp: "Premium"
-        titlecn: "Premium"
+        titlejp: "ROBOTIS PREMIUM"
+        titlecn: "ROBOTIS PREMIUM"
         url: /edu/bioloid/premium/
       - title: "ROBOTIS GP"
         titlekr: "ROBOTIS GP"

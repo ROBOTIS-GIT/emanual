@@ -6,17 +6,17 @@ During charging the charger’s red LED turns on. When complete the green LED tu
 
 1. Take the battery out
 
-  ![](/assets/images/parts/controller/cm-530/cm_530_battery_charge_01.png)
+    ![](/assets/images/parts/controller/cm-530/cm_530_battery_charge_01.png)
 
 2. Connect the charger
 
-  ![](/assets/images/parts/controller/cm-530/cm_530_battery_charge_02.png)
+    ![](/assets/images/parts/controller/cm-530/cm_530_battery_charge_02.png)
 
 3. Charge
 
-  Charging(Red LED), Complete(Green LED)
+    Charging(Red LED), Complete(Green LED)
 
-  ![](/assets/images/parts/controller/cm-530/cm_530_battery_charge_03.png)
+    ![](/assets/images/parts/controller/cm-530/cm_530_battery_charge_03.png)
 
 
 - You can connect the robot to an external power source through SMPS.

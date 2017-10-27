@@ -11,9 +11,11 @@ sidebar:
   nav: "pir-10"
 ---
 
-# [Introduction](#introduction)
+# Passive IR Sensor(PIR-10)
 
 ![](/assets/images/parts/sensors/pir-10_product.jpg)
+
+# [Introduction](#introduction)
 
 - Motion-sensing sensor.
 - Object motion sensing occurs within the sensor range

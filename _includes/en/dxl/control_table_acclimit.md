@@ -6,4 +6,4 @@ This value indicates maximum Profile Acceleration(108). Profile Acceleration(108
 
 `Note` Bit information of the Error field in the Status Packet is different from protocol 1.0 and protocol 2.0. This manual complies with protocol 2.0. Please refer to the [Protocol] section of e-Manual for more details about the protocol.
 
-[Protocol]: ???
+[Protocol]: /docs/en/dxl/protocol1/#error

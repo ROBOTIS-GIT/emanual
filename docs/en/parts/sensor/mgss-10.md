@@ -11,9 +11,11 @@ sidebar:
   nav: "mgss-10"
 ---
 
-# [Introduction](#introduction)
+# Magnetic Sensor(MGSS-10)
 
 ![](/assets/images/parts/sensors/mgss-10_product.gif)
+
+# [Introduction](#introduction)
 
 - This sensor detects magnetism.
 - The sensor behaves as a touch sensor and detects a magnet close or far.

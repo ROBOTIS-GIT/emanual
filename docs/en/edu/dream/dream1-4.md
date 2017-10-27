@@ -7,9 +7,11 @@ share: true
 author_profile: false
 permalink: /docs/en/edu/dream/dream1-4/
 sidebar:
-  title: Dream Lv 4
+  title: DREAM Lv 4
   nav: "dream1-4"
 ---
+
+# DREAM1 Level 4
 
 # [Introduction](#introduction)
 

@@ -11,9 +11,11 @@ sidebar:
   nav: "manipulator_h"
 ---
 
-# [Introduction](#introduction)
+# Manipulator-H
 
 ![](/assets/images/platform/manipulator/manipulator_product.gif)
+
+# [Introduction](#introduction)
 
 - This manual applies to the Dynamixel PRO-based Robotis Manipulator.
 - All parameters in this manual are based on default values.

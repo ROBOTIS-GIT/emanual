@@ -19,9 +19,9 @@ header:
 
 # Dynamixel SDK
 
-|Protocol 1.0|Protocol 2.0|ROS|Windows|Linux|LabVIEW|MATLAB|VB|C#|C++|Java|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|O|O|O|O|O|O|O|X|O|O|O|
+|Protocol 1.0|Protocol 2.0|ROS|Windows|Linux|OS X|LabVIEW|MATLAB|VB|C#|C++|Java|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|O|O|O|O|O|O|O|O|X|O|O|O|
 
 - [Download Dynamixel SDK](https://github.com/ROBOTIS-GIT/DynamixelSDK/releases)
 
@@ -35,9 +35,10 @@ header:
 
 # Controller SDK
 
-|Protocol 1.0|Protocol 2.0|ROS|Windows|Linux|LabVIEW|MATLAB|VB|C#|C++|Java|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|O|X|O|O|X|X|X|X|X|X|X|
+|Controllers|Protocol 1.0|Protocol 2.0|ROS|Windows|Linux|LabVIEW|MATLAB|VB|C#|C++|Java|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|CM-Series|O|X|X|O|X|X|X|X|X|X|X|
+|OpenCM/CR|O|O|O|O|O|X|X|X|X|O|X|
 
 - [Download CM-510 SDK]
 - [Download CM-530 SDK]
@@ -47,10 +48,10 @@ header:
 
 |SDK|Protocol 1.0|Protocol 2.0|ROS|Windows|Linux|LabVIEW|MATLAB|VB|C#|C++|Java|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|Plug-in(Motion)|X|X|O|X|X|X|X|X|O|X|X|
-|ZIGBEE Porting|X|X|O|X|X|X|X|X|X|X|X|
-|ZIG2Serial(Windows)|X|X|O|O|X|X|X|O|O|O|X|
-|ZIG2Serial(Linux)|X|X|O|X|O|X|X|X|X|X|X|
+|Plug-in(Motion)|X|X|X|X|X|X|X|X|O|X|X|
+|ZIGBEE Porting|X|X|X|X|X|X|X|X|X|X|X|
+|ZIG2Serial(Windows)|X|X|X|O|X|X|X|O|O|O|X|
+|ZIG2Serial(Linux)|X|X|X|X|O|X|X|X|X|X|X|
 
 - [Download Plug-In SDK(Motion)](http://support.robotis.com/en/baggage_files/zigbee_sdk/pluginsdk_example.zip)
 - [Download ZIGBEE Porting SDK](http://support.robotis.com/en/baggage_files/zigbee_sdk/zigbee_sdk_porting_v1_00.zip)

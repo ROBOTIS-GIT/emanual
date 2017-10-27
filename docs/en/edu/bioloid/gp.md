@@ -11,6 +11,8 @@ sidebar:
   nav: "bioloid-gp"
 ---
 
+# BIOLOID GP
+
 # [Introduction](#introduction)
 
 ![](/assets/images/edu/bioloid/gp_product.jpg)

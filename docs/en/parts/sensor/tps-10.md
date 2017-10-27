@@ -11,9 +11,11 @@ sidebar:
   nav: "tps-10"
 ---
 
-# [Introduction](#introduction)
+# Temperature Sensor(TPS-10)
 
 ![](/assets/images/parts/sensors/tps-10_product.jpg)
+
+# [Introduction](#introduction)
 
 - Sensor measures changes in temperature
 - Sensor activates when heat is applied to object

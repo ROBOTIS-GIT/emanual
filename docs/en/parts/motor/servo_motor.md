@@ -11,9 +11,11 @@ sidebar:
   nav: "servo_motor"
 ---
 
-# [Introduction](#introduction)
+# Servo Motor
 
 ![](/assets/images/parts/motor/servo_motor_product.jpg)
+
+# [Introduction](#introduction)
 
 - It is the motor used in OLLO; it is connected to CM-100, and the direction of spin and the speed of spin can be adjusted through port control.
 - If it is set to "Spin Mode," it can be operated as the geared motor; if it is set to "Joint Mode," the motor can be moved to the designated location by setting the speed of spin(Power)and the value of location.

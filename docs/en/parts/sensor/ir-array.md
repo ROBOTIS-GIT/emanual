@@ -11,12 +11,13 @@ sidebar:
   nav: "ir-array"
 ---
 
-# [Introduction](#introduction)
+# IR Sensor Array
 
 ![](/assets/images/parts/sensors/ir-array_product_01.jpg)
 
 ![](/assets/images/parts/sensors/ir-array_product_02.jpg)
 
+# [Introduction](#introduction)
 
 - The IR sensor array is a device with 7 mounted infrared sensors. Each IR sensor is capable of detecting black and white colors. The array is capable of emitting sounds.
 - The IR array can perform detection at proper distances. The infrared sensors transmitters/receivers  have optimal operating range of 0-5CM.

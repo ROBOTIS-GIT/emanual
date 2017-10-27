@@ -11,6 +11,8 @@ sidebar:
   nav: "bioloid-comprehensive"
 ---
 
+# BIOLOID Comprehensive
+
 # [Introduction](#introduction)
 
 Robots of 18 DOF can be built with Comprehensive Kit including the contents in Beginner Kit, and it provides 26 examples of robots.

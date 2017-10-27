@@ -13,6 +13,6 @@ The Dynamixel can protect itself by detecting dangerous situations that could oc
 
 `Note` If Shutdown occurs, use below method to reboot Dynamixels.
 1. H/W REBOOT : Turn off the power and turn on again
-2. S/W REBOOT : Transmit REBOOT Instruction (For more details, please refer to the [Protocol] section of e-Manual.)
+2. S/W REBOOT : Transmit REBOOT Instruction (For more details, please refer to the [Reboot] section of Protocol e-Manual.)
 
-[Protocol]: ???
+[Reboot]: /docs/en/dxl/protocol2/#reboot

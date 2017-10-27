@@ -10,6 +10,8 @@ sidebar:
   nav: "controller_compatibility"
 ---
 
+# Controller Compatibility
+
 # Supported Baudrates for Dynamixel
 
 |Baudrate(bps)|[CM-5][cm-5]|[CM-510][cm-510]|[CM-530][cm-530]|[CM-700][cm-700]|[CM-900][cm-900]|[OpenCM9.04][opencm9.04]|[OpenCR][opencr]|

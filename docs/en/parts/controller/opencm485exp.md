@@ -11,11 +11,11 @@ sidebar:
   nav: "opencm485exp"
 ---
 
-
-# [Introduction](#introduction)
+# OpenCM 485 Expansion Board
 
 ![](/assets/images/parts/controller/opencm904/opencm485exp_product.jpg)
 
+# [Introduction](#introduction)
 
 # [Specifications](#specifications)
 

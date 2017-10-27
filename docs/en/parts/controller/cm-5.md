@@ -11,6 +11,7 @@ sidebar:
   nav: "cm-5"
 ---
 
+# CM-5
 
 # [Introduction](#introduction)
 
@@ -119,8 +120,8 @@ PC Link(Serial Cable) of CM-5 and Serial Port of PC must be connected using seri
 {% include en/parts/controller/fuse_cm_5.md %}
 
 [RoboPlus Task]: /docs/en/software/rplus1/task/getting_started/
-[RoboPlus Motion]: ???/docs/en/software/rplus1/motion/
-[RoboPlus Manager]: ???
+[RoboPlus Motion]: /docs/en/software/rplus1/motion/
+[RoboPlus Manager]: /docs/en/software/rplus1/manager/
 [Number of pressed Start button]: /docs/en/software/rplus1/task/programming_02/#button-count
 [Start button]: /docs/en/software/rplus1/task/programming_02/#button-count
 [LN-101]: /docs/en/parts/interface/ln-101/
@@ -128,4 +129,4 @@ PC Link(Serial Cable) of CM-5 and Serial Port of PC must be connected using seri
 [BT-110]: /docs/en/parts/communication/bt-110/
 [BT-210]: /docs/en/parts/communication/bt-210/
 [Automatic Turn-off]: /docs/en/software/rplus1/task/programming_02/#powersave-timer
-[Firmware Update]: ???Roboplus
+[Firmware Update]: /docs/en/software/rplus1/manager/#firmware-update

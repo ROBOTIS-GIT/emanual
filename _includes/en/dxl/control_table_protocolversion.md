@@ -9,4 +9,4 @@ It is recommended to use an identical protocol version for multiple Dynamixels.
 `Note` The protocol 2.0 is greatly enhanced from the protocol 1.0. Accessing some of the Control Table area might be denied if protocol 1.0 is selected. This manual complies with protocol 2.0. Please refer to the [Protocol] section of e-Manual for more details about the protocol.
 {: .notice}
 
-[Protocol]: ???
+[Protocol]: /docs/en/dxl/protocol2/

@@ -11,9 +11,11 @@ sidebar:
   nav: "h_speed_geared_motor"
 ---
 
-# [Introduction](#introduction)
+# High Speed Geared Motor
 
 ![](/assets/images/parts/motor/h_speed_geared_motor_product.png)
+
+# [Introduction](#introduction)
 
 It is the motor used in OLLO; it is connected to CM-100, and the direction of spin and the speed of spin can be adjusted through port control.
 It can be operated as general DC motors by connecting OLLO switch and the battery box.

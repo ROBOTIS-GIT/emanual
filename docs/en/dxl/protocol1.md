@@ -11,6 +11,8 @@ sidebar:
   nav: "protocol1"
 ---
 
+# Protocol 1.0
+
 # [Instruction Packet](#instruction-packet)
 Instruction Packet is the command data sent to the Device.
 
@@ -409,4 +411,4 @@ The delay time between bytes when sending an instruction packet. If the delay ti
 
 ![](/assets/images/dxl/byte2bytetime.png)
 
-[Changing IDs of Dynamixel]: ???RoboPlus-Manager
+[Changing IDs of Dynamixel]: /docs/en/software/rplus1/manager/#id-setup

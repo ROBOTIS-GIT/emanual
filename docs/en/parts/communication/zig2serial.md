@@ -11,6 +11,8 @@ sidebar:
   nav: "zig2serial"
 ---
 
+# ZIG2Serial
+
 # [Introduction](#introduction)
 
 ![](/assets/images/parts/communication/zig2serial_product.png)
@@ -20,7 +22,6 @@ sidebar:
   - The program for PC must be created separately.
   - Communication test can be done with RoboPlus Manager.
 
-
 # [Specifications](#specifications)
 
 |Item|Description|
@@ -29,7 +30,6 @@ sidebar:
 |Dimension|56mm x 34mm x 12mm|
 |Operating Voltage|4.5V ~ 5.5V|
 |Baud Rate|57,600bps|
-
 
 # [Layout](#layout)
 
@@ -43,7 +43,6 @@ sidebar:
 |Reset Switch|It is used when ZIG-100 is rebooted.|
 |Power Connector|The power of 5V is needed to operate ZIG2Serial. The user can supply power using this connector. If it is connected to USB2Dynamixel, a separate power supply is not necessary.|
 |RS232 Connector|It can be connected to RS-232 port of PC.|
-
 
 # [Pinout](#pinout)
 
@@ -112,6 +111,6 @@ The connection status must be changed to select the channel on the Zig2Serial.
 # [Videos](#videos)
 <iframe width="560" height="315" src="https://www.youtube.com/embed/YgebCObXJZg" frameborder="0" allowfullscreen></iframe>
 
-[RoboPlus Manager]: ???
+[RoboPlus Manager]: /docs/en/software/rplus1/manager/
 [USB2Dynamixel]: /docs/en/parts/interface/usb2dynamixel/
 [Zigbee SDK]: /docs/en/software/sdk/zigbee_sdk/

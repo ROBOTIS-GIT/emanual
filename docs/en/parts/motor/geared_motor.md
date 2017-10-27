@@ -11,9 +11,11 @@ sidebar:
   nav: "gm-10a"
 ---
 
-# [Introduction](#introduction)
+# Geared Motor(GM-10A)
 
 ![](/assets/images/parts/motor/gm-10_product.jpg)
+
+# [Introduction](#introduction)
 
 It is the motor used in OLLO; it is connected to CM-100, and the direction of spin and the speed of spin can be adjusted through port control.  
 It can be operated as general DC motors by connecting OLLO switch and the battery box.

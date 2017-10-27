@@ -11,6 +11,8 @@ sidebar:
   nav: "rx-24f"
 ---
 
+# RX-24F
+
 ![](/assets/images/dxl/rx/rx-24f_product.png)
 
 `Warning` RX-24F has been discontinued.
