@@ -811,7 +811,7 @@
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/edu/ollo/bugkit/">Bug Kit</a>
+                      <a href="http://localhost:4000/docs/en/edu/ollo/bugkit/">BUG KIT</a>
                     
                 
                   
@@ -820,7 +820,7 @@
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/edu/ollo/explore/">Explorer</a>
+                      <a href="http://localhost:4000/docs/en/edu/ollo/explore/">EXPLORER</a>
                     
                 
                   
@@ -829,7 +829,7 @@
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/edu/ollo/inventor/">Inventor</a>
+                      <a href="http://localhost:4000/docs/en/edu/ollo/inventor/">INVENTOR</a>
                     
                 
                   
@@ -850,7 +850,7 @@
 
               
                 
-                <a>Dream</a>
+                <a>DREAM</a>
               
 
               
@@ -868,7 +868,7 @@
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/edu/dream/dream1-2/">Level 2</a>
+                      <a href="http://localhost:4000/docs/en/edu/dream/dream1-2/">LEVEL 2</a>
                     
                 
                   
@@ -877,7 +877,7 @@
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/edu/dream/dream1-3/">Level 3</a>
+                      <a href="http://localhost:4000/docs/en/edu/dream/dream1-3/">LEVEL 3</a>
                     
                 
                   
@@ -886,7 +886,7 @@
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/edu/dream/dream1-4/">Level 4</a>
+                      <a href="http://localhost:4000/docs/en/edu/dream/dream1-4/">LEVEL 4</a>
                     
                 
                   
@@ -1072,7 +1072,7 @@
 
               
                 
-                <a>Bioloid</a>
+                <a>BIOLOID</a>
               
 
               
@@ -1116,7 +1116,7 @@
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/edu/bioloid/premium/">ROBOTIS Premium</a>
+                      <a href="http://localhost:4000/docs/en/edu/bioloid/premium/">ROBOTIS PREMIUM</a>
                     
                 
                   
@@ -1389,7 +1389,16 @@
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/software/sdk/embedded_c/">Embedded C</a>
+                      <a href="http://localhost:4000/docs/en/software/sdk/embedded_c_cm510/">Embedded C(CM-510/700)</a>
+                    
+                
+                  
+
+                  
+
+                  
+                    
+                      <a href="http://localhost:4000/docs/en/software/sdk/embedded_c_cm530/">Embedded C(CM-530)</a>
                     
                 
                   
@@ -2173,7 +2182,9 @@
     <a href="/blob/master/docs/en/dxl/ax/ax-12a.md" itemprop="sameAs" style="font-size:16px;float:right;">
       <i class="fa fa-fw fa-github" aria-hidden="true"></i> Edit on GitHub
     </a>
-    <p><img src="/assets/images/dxl/ax/ax-12+_product.png" alt="" /></p>
+    <h1 id="ax-12a">AX-12A</h1>
+
+<p><img src="/assets/images/dxl/ax/ax-12+_product.png" alt="" /></p>
 
 <p><img src="/assets/images/dxl/ax/ax-12a_product.png" alt="" /></p>
 
@@ -2264,7 +2275,7 @@
 <p>The Control Table is a structure of data implemented in the DYNAMIXEL. Users can read a specific Data to get status of the DYNAMIXEL with Read Instruction Packets, and modify Data as well to control DYNAMIXEL with WRITE Instruction Packets.</p>
 
 <h2 id="control-table-data-address"><a href="#control-table-data-address">Control Table, Data, Address</a></h2>
-<p>The Control Table is a structure that consists of multiple Data fields to store status of the DYNAMIXEL or to control the DYNAMIXEL. Users can check current status of the DYNAMIXEL by reading a specific Data from the Control Table with Read Instruction Packets. WRITE Instruction Packets enable users to control the DYNAMIXEL by changing specific Data in the Control Table. The Address is a unique value when accessing a specific Data in the Control Table with Instruction Packets. In order to read or write data, users must designate a specific Address in the Instruction Packet. Please refer to <a href="???">Protocol 1.0</a> for more details about Instruction Packets.</p>
+<p>The Control Table is a structure that consists of multiple Data fields to store status of the DYNAMIXEL or to control the DYNAMIXEL. Users can check current status of the DYNAMIXEL by reading a specific Data from the Control Table with Read Instruction Packets. WRITE Instruction Packets enable users to control the DYNAMIXEL by changing specific Data in the Control Table. The Address is a unique value when accessing a specific Data in the Control Table with Instruction Packets. In order to read or write data, users must designate a specific Address in the Instruction Packet. Please refer to <a href="/docs/en/dxl/protocol1/">Protocol 1.0</a> for more details about Instruction Packets.</p>
 
 <p class="notice"><code class="highlighter-rouge">Note</code> Two’s complement is applied for the negative value. For more information, please refer to <a href="#">Two’s complement</a> from Wikipedia.</p>
 
@@ -2272,7 +2283,7 @@
 <p>The Control Table is divided into 2 Areas. Data in the RAM Area is reset to initial values when the DYNAMIXEL is turned on (Volatile). On the other hand, modified data in the EEPROM Area keeps their values even when the DYNAMIXEL is turned off (Non-Volatile). Data in the EEPROM Area can only be changed or modified when the value of Torque Enable(24) is ‘0’ and Dynamixel is in idle state.</p>
 
 <h3 id="size"><a href="#size">Size</a></h3>
-<p>The Size of data is 1 or 2 bytes depend on their usage. Please check the size of data when updating the data with an Instruction Packet. 2 bytes data will be saved according to <a href="???">Little Endian</a>.</p>
+<p>The Size of data is 1 or 2 bytes depend on their usage. Please check the size of data when updating the data with an Instruction Packet. 2 bytes data will be saved according to <a href="https://en.wikipedia.org/wiki/Endianness#Little">Little Endian</a>.</p>
 
 <h3 id="access"><a href="#access">Access</a></h3>
 <p>The Control Table has two different access properties. ‘RW’ property stands for read and write access permission while ‘R’ stands for read only access permission. Data with the read only property cannot be changed by the WRITE Instruction. Read only property(‘R’) is generally used for measuring and monitoring purpose, and read write property(‘RW’) is used for controlling DYNAMIXEL.</p>
@@ -2772,7 +2783,7 @@ For example, Data 1,023 (0x3FF) means that Dynamixel will use 100% of the maximu
   </tbody>
 </table>
 
-<p class="notice"><code class="highlighter-rouge">Note</code> If the ID of Instruction Packet is set to Broad Cast ID(0xFE), Status Packet will not be returned for READ and WRITE Instructions regardless of Status Return Level. For more details, please refer to the <a href="???">Protocol</a> section of e-Manual.</p>
+<p class="notice"><code class="highlighter-rouge">Note</code> If the ID of Instruction Packet is set to Broad Cast ID(0xFE), Status Packet will not be returned for READ and WRITE Instructions regardless of Status Return Level. For more details, please refer to the [Status Packet] section of Protocol.</p>
 
 <h3 id="alarm-led--alarm-shutdown"><a name="alarm-led"></a><a name="shutdown"></a><strong>Alarm LED / Alarm Shutdown</strong></h3>
 <p>Dynamixel can protect itself by detecting errors occur during the operation.

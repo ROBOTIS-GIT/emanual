@@ -811,7 +811,7 @@
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/edu/ollo/bugkit/">Bug Kit</a>
+                      <a href="http://localhost:4000/docs/en/edu/ollo/bugkit/">BUG KIT</a>
                     
                 
                   
@@ -820,7 +820,7 @@
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/edu/ollo/explore/">Explorer</a>
+                      <a href="http://localhost:4000/docs/en/edu/ollo/explore/">EXPLORER</a>
                     
                 
                   
@@ -829,7 +829,7 @@
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/edu/ollo/inventor/">Inventor</a>
+                      <a href="http://localhost:4000/docs/en/edu/ollo/inventor/">INVENTOR</a>
                     
                 
                   
@@ -850,7 +850,7 @@
 
               
                 
-                <a>Dream</a>
+                <a>DREAM</a>
               
 
               
@@ -868,7 +868,7 @@
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/edu/dream/dream1-2/">Level 2</a>
+                      <a href="http://localhost:4000/docs/en/edu/dream/dream1-2/">LEVEL 2</a>
                     
                 
                   
@@ -877,7 +877,7 @@
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/edu/dream/dream1-3/">Level 3</a>
+                      <a href="http://localhost:4000/docs/en/edu/dream/dream1-3/">LEVEL 3</a>
                     
                 
                   
@@ -886,7 +886,7 @@
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/edu/dream/dream1-4/">Level 4</a>
+                      <a href="http://localhost:4000/docs/en/edu/dream/dream1-4/">LEVEL 4</a>
                     
                 
                   
@@ -1072,7 +1072,7 @@
 
               
                 
-                <a>Bioloid</a>
+                <a>BIOLOID</a>
               
 
               
@@ -1116,7 +1116,7 @@
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/edu/bioloid/premium/">ROBOTIS Premium</a>
+                      <a href="http://localhost:4000/docs/en/edu/bioloid/premium/">ROBOTIS PREMIUM</a>
                     
                 
                   
@@ -1389,7 +1389,16 @@
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/software/sdk/embedded_c/">Embedded C</a>
+                      <a href="http://localhost:4000/docs/en/software/sdk/embedded_c_cm510/">Embedded C(CM-510/700)</a>
+                    
+                
+                  
+
+                  
+
+                  
+                    
+                      <a href="http://localhost:4000/docs/en/software/sdk/embedded_c_cm530/">Embedded C(CM-530)</a>
                     
                 
                   
@@ -2197,7 +2206,9 @@
     <a href="/blob/master/docs/en/dxl/x/xh430-v210.md" itemprop="sameAs" style="font-size:16px;float:right;">
       <i class="fa fa-fw fa-github" aria-hidden="true"></i> Edit on GitHub
     </a>
-    <p><img src="/assets/images/dxl/x/x_series_product.png" alt="" /></p>
+    <h1 id="xh430-v210">XH430-V210</h1>
+
+<p><img src="/assets/images/dxl/x/x_series_product.png" alt="" /></p>
 
 <h1 id="specifications"><a href="#specifications">Specifications</a></h1>
 
@@ -2308,15 +2319,15 @@ Do not connect or disconnect DYNAMIXEL when power is being supplied.</p>
 <p>The Control Table is a structure of data implemented in the DYNAMIXEL. Users can read a specific Data to get status of the DYNAMIXEL with Read Instruction Packets, and modify Data as well to control DYNAMIXEL with WRITE Instruction Packets.</p>
 
 <h2 id="control-table-data-address"><a href="#control-table-data-address">Control Table, Data, Address</a></h2>
-<p>The Control Table is a structure that consists of multiple Data fields to store status of the DYNAMIXEL or to control the DYNAMIXEL. Users can check current status of the DYNAMIXEL by reading a specific Data from the Control Table with Read Instruction Packets. WRITE Instruction Packets enable users to control the DYNAMIXEL by changing specific Data in the Control Table. The Address is a unique value when accessing a specific Data in the Control Table with Instruction Packets. In order to read or write data, users must designate a specific Address in the Instruction Packet. Please refer to <a href="???">Protocol 2.0</a> for more details about Instruction Packets.</p>
+<p>The Control Table is a structure that consists of multiple Data fields to store status of the DYNAMIXEL or to control the DYNAMIXEL. Users can check current status of the DYNAMIXEL by reading a specific Data from the Control Table with Read Instruction Packets. WRITE Instruction Packets enable users to control the DYNAMIXEL by changing specific Data in the Control Table. The Address is a unique value when accessing a specific Data in the Control Table with Instruction Packets. In order to read or write data, users must designate a specific Address in the Instruction Packet. Please refer to <a href="/docs/en/dxl/protocol2/">Protocol 2.0</a> for more details about Instruction Packets.</p>
 
-<p class="notice"><code class="highlighter-rouge">Note</code> Two’s complement is applied for the negative value. For more information, please refer to <a href="???">Two’s complement</a> from Wikipedia.</p>
+<p class="notice"><code class="highlighter-rouge">Note</code> Two’s complement is applied for the negative value. For more information, please refer to <a href="https://en.wikipedia.org/wiki/Two%27s_complement">Two’s complement</a> from Wikipedia.</p>
 
 <h3 id="area-eeprom-ram"><a href="#area-eeprom-ram">Area (EEPROM, RAM)</a></h3>
 <p>The Control Table is divided into 2 Areas. Data in the RAM Area is reset to initial values when the DYNAMIXEL is turned on (Volatile). On the other hand, modified data in the EEPROM Area keeps their values even when the DYNAMIXEL is turned off (Non-Volatile). <strong>Data in the EEPROM Area can only be changed or modified when the value of Torque Enable(64) is cleared to ‘0’.</strong></p>
 
 <h3 id="size"><a href="#size">Size</a></h3>
-<p>The Size of data varies from 1 to 4 bytes depend on their usage. Please check the size of data when updating the data with an Instruction Packet. For data larger than 2 bytes will be saved according to <a href="???">Little Endian</a>.</p>
+<p>The Size of data varies from 1 to 4 bytes depend on their usage. Please check the size of data when updating the data with an Instruction Packet. For data larger than 2 bytes will be saved according to <a href="https://en.wikipedia.org/wiki/Endianness#Little">Little Endian</a>.</p>
 
 <h3 id="access"><a href="#access">Access</a></h3>
 <p>The Control Table has two different access properties. ‘RW’ property stands for read and write access permission while ‘R’ stands for read only access permission. Data with the read only property cannot be changed by the WRITE Instruction. Read only property(‘R’) is generally used for measuring and monitoring purpose, and read write property(‘RW’) is used for controlling DYNAMIXEL.</p>
@@ -3247,7 +3258,7 @@ It is recommended to use an identical protocol version for multiple Dynamixels.<
   </tbody>
 </table>
 
-<p class="notice"><code class="highlighter-rouge">Note</code> The protocol 2.0 is greatly enhanced from the protocol 1.0. Accessing some of the Control Table area might be denied if protocol 1.0 is selected. This manual complies with protocol 2.0. Please refer to the <a href="???">Protocol</a> section of e-Manual for more details about the protocol.</p>
+<p class="notice"><code class="highlighter-rouge">Note</code> The protocol 2.0 is greatly enhanced from the protocol 1.0. Accessing some of the Control Table area might be denied if protocol 1.0 is selected. This manual complies with protocol 2.0. Please refer to the <a href="/docs/en/dxl/protocol1/#status-packet">Protocol</a> section of e-Manual for more details about the protocol.</p>
 
 <h3 id="homing-offset20"><a name="homing-offset"></a><strong>Homing Offset(20)</strong></h3>
 <p>Users can adjust the Home position by setting Home Offset(20). The Homing Offset value is added to the Present Position(132).
@@ -3397,7 +3408,7 @@ When current input voltage acquired from Present Input Voltage(144) exceeds the 
   </tbody>
 </table>
 
-<p><code class="highlighter-rouge">Note</code> Bit information of the Error field in the Status Packet is different from protocol 1.0 and protocol 2.0. This manual complies with protocol 2.0. Please refer to the <a href="???">Protocol</a> section of e-Manual for more details about the protocol.</p>
+<p><code class="highlighter-rouge">Note</code> Bit information of the Error field in the Status Packet is different from protocol 1.0 and protocol 2.0. This manual complies with protocol 2.0. Please refer to the <a href="/docs/en/dxl/protocol1/#status-packet">Protocol</a> section of e-Manual for more details about the protocol.</p>
 
 <h3 id="velocity-limit44"><a name="velocity-limit"></a><strong>Velocity Limit(44)</strong></h3>
 <p>This value indicates maximum velocity of Goal Velocity(104) and Profile Velocity(112). For more details, please refer to the Profile Velocity(112).</p>
@@ -3495,7 +3506,7 @@ When current input voltage acquired from Present Input Voltage(144) exceeds the 
 <p><code class="highlighter-rouge">Note</code> If Shutdown occurs, use below method to reboot Dynamixels.</p>
 <ol>
   <li>H/W REBOOT : Turn off the power and turn on again</li>
-  <li>S/W REBOOT : Transmit REBOOT Instruction (For more details, please refer to the <a href="???">Protocol</a> section of e-Manual.)</li>
+  <li>S/W REBOOT : Transmit REBOOT Instruction (For more details, please refer to the <a href="/docs/en/dxl/protocol2/#reboot">Reboot</a> section of Protocol e-Manual.)</li>
 </ol>
 
 <h3 id="torque-enable64"><a name="torque-enable"></a><strong>Torque Enable(64)</strong></h3>
@@ -3574,7 +3585,7 @@ When current input voltage acquired from Present Input Voltage(144) exceeds the 
   </tbody>
 </table>
 
-<p class="notice"><code class="highlighter-rouge">Note</code> If the ID of Instruction Packet is set to Broad Cast ID(0xFE), Status Packet will not be returned for READ and WRITE Instructions regardless of Status Return Level. For more details, please refer to the <a href="???">Protocol</a> section of e-Manual.</p>
+<p class="notice"><code class="highlighter-rouge">Note</code> If the ID of Instruction Packet is set to Broad Cast ID(0xFE), Status Packet will not be returned for READ and WRITE Instructions regardless of Status Return Level. For more details, please refer to the [Status Packet] section of Protocol.</p>
 
 <h3 id="registered-instruction69"><a name="registered-instruction"></a><strong>Registered Instruction(69)</strong></h3>
 
@@ -3658,7 +3669,7 @@ The Dynamixel can protect itself by detecting dangerous situations that could oc
 <p><code class="highlighter-rouge">Note</code> If Shutdown occurs, use below method to reboot Dynamixels.</p>
 <ol>
   <li>H/W REBOOT : Turn off the power and turn on again</li>
-  <li>S/W REBOOT : Transmit REBOOT Instruction (For more details, please refer to the <a href="???">Protocol</a> section of e-Manual.)</li>
+  <li>S/W REBOOT : Transmit REBOOT Instruction (For more details, please refer to the <a href="/docs/en/dxl/protocol2/#reboot">Reboot</a> section of Protocol e-Manual.)</li>
 </ol>
 
 <h3 id="velocity-pi-gain78-76"><a name="velocity-i-gain"></a><a name="velocity-p-gain"></a><strong>Velocity PI Gain(78, 76)</strong></h3>

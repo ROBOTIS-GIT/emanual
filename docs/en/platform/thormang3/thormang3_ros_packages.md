@@ -1285,8 +1285,8 @@ This is the modified version of KumarRobotics/imu_3dm_gx4.
 
 ##### Published Topics
 
-   `/robotis/sensor/imu/imu` (sensor_msgs/Imu)  
-   Present output of the IMU Sensor
+`/robotis/sensor/imu/imu` (sensor_msgs/Imu)  
+Present output of the IMU Sensor
 
 
 ## [PPC Packages](#ppc-packages)
@@ -1789,20 +1789,20 @@ $ roslaunch thormang3_action_editor thormang3_action_editor.launch
 
 ![](/assets/images/platform/thormang3/thormang3_038.jpg)
 
-**Page number**: Page number is the listed page number. If user wants to create a new action poses, user can use any empty page.  
-**Page title**: We'd like to recommend to user that they use a page title, if they will make a new action on an empty page.  
-**Current position**: This is the current position of dynamixels which converted from original resolution to 4095 resolution. This data is represented by STP7 in thormang3_action_editor. Sometimes the position may read as ---- in thormang3_action_editor. This means position of the dynamixel is not being read (or its torque is off).
-If user turn a dynamixel off, user cannot get current position reading until user turn it back on.
-User can turn off any or all dynamixels. This is very convenient to make robot poses rather than entering position values.  
-For example, if user wants to make a new robot pose, user simply turns any dynamixels off, makes the robot pose, and turn the dynamixels back on at that robot pose. Once turning on, user will get the pose values.  
-**Steps or stages**: Each page can be stored up to 7 steps, from STP0 to STP6. However, some actions may be required more than 7 stages to perform completely. It can be resolved by simply using multiple pages and link them with “Next”.  
-**Next**: “Next” indicates whether or not action continues at a different page. To continue actions, just list the page number where action is to be continued. Number 0 indicates that action does not continue onto another page (default value). Linking page does not have to the in numerical order allowing you to link from one page to any other page.  
-**Play Count**: “Play Count” is the number of times the action of the page is to be played.  
-**Exit**: There may be times when an action is stopped. In this case, the robot may be in an unstable position. “Exit” is much like "Next", so "Exit" should be linked to a page where THORMANG3 can return to a stable pose.if "Exit" is 0, it means that there is  no link to exit page linked (default value).  
-Tip: When calling an action requires multiple pages, we strongly suggest that user call that action from the starting page. For example “clap” starts at page 7 and ends at page 8. This means you should call page 7 when calling “clap.” Calling the page 8 may cause the robot to perform abnormally.  
-**STP7**: "STP7" column is the current position of the dynamixels which converted to 4095 resolution from its original resolution. "----" means that torque has been released.  
-**PauseTime**: "PauseTime" is the pause for motion playback for step STP[x].  
-**Time(x 8msec)** : "Time" is the time period for THORMANG3 to complete step STP[x]. Each time unit account for 8ms of time.  
+- **Page number**: Page number is the listed page number. If user wants to create a new action poses, user can use any empty page.  
+- **Page title**: We'd like to recommend to user that they use a page title, if they will make a new action on an empty page.  
+- **Current position**: This is the current position of dynamixels which converted from original resolution to 4095 resolution. This data is represented by STP7 in thormang3_action_editor. Sometimes the position may read as ---- in thormang3_action_editor. This means position of the dynamixel is not being read (or its torque is off).  
+  If user turn a dynamixel off, user cannot get current position reading until user turn it back on.  
+  User can turn off any or all dynamixels. This is very convenient to make robot poses rather than entering position values.  
+  For example, if user wants to make a new robot pose, user simply turns any dynamixels off, makes the robot pose, and turn the dynamixels back on at that robot pose. Once turning on, user will get the pose values.  
+- **Steps or stages**: Each page can be stored up to 7 steps, from STP0 to STP6. However, some actions may be required more than 7 stages to perform completely. It can be resolved by simply using multiple pages and link them with “Next”.  
+- **Next**: “Next” indicates whether or not action continues at a different page. To continue actions, just list the page number where action is to be continued. Number 0 indicates that action does not continue onto another page (default value). Linking page does not have to the in numerical order allowing you to link from one page to any other page.  
+- **Play Count**: “Play Count” is the number of times the action of the page is to be played.  
+- **Exit**: There may be times when an action is stopped. In this case, the robot may be in an unstable position. “Exit” is much like "Next", so "Exit" should be linked to a page where THORMANG3 can return to a stable pose.if "Exit" is 0, it means that there is  no link to exit page linked (default value).  
+  `Tip` When calling an action requires multiple pages, we strongly suggest that user call that action from the starting page. For example “clap” starts at page 7 and ends at page 8. This means you should call page 7 when calling “clap.” Calling the page 8 may cause the robot to perform abnormally.  
+- **STP7**: "STP7" column is the current position of the dynamixels which converted to 4095 resolution from its original resolution. "----" means that torque has been released.  
+- **PauseTime**: "PauseTime" is the pause for motion playback for step STP[x].  
+- **Time(x 8msec)** : "Time" is the time period for THORMANG3 to complete step STP[x]. Each time unit account for 8ms of time.  
   
 It is strongly advised that when user tests user’s own newly-created or edited actions, there should be small incremental changes in position, speed/time, and pause values for the sake of THORMANG3's stability.  
 
@@ -1810,7 +1810,7 @@ It is strongly advised that when user tests user’s own newly-created or edited
 The below table shows the contents of the default action file.  
 
 | page number | page title | brief description of page                             | number of pages |
-|-------------|------------|-------------------------------------------------------|-----------------|
+|:-----------:|:----------:|-------------------------------------------------------|:---------------:|
 |      1      | walki_init | initial standing pose                                 |        1        |
 |      2      |    hello   | greeting                                              |        1        |
 |      3      |  thank_you | Thank you                                             |        1        |
@@ -1829,24 +1829,24 @@ After typing "help", the commend list will appear as shown below.
 
 ![](/assets/images/platform/thormang3/thormang3_039.jpg)
 
-**exit**: exits the program.  
-**re**: refreshes the screen.  
-**b**: moves to the previous page.  
-**n**: moves to the next page.  
-**page [index]**: moves to the [index] page. For example typing page 5 outputs data from page 5 on screen.  
-**list**: outputs a list of pages.  
-**new**: initializes current page by clearing all actuator position data.  
-**copy [index]**: copies data from page [index] to current page. For example if you are on page 5 and want to copy page 9 then type copy 9.  
-**set [value]**: sets position value on chosen actuator. For example If you want ID19 (head pan) to have a value of 512 then using the keyboard's directional keys place the cursor on ID19 and type set 512.  
-**save**: saves any changes you've made. the saved motion file (motion_4096.bin can be found at "thormang3_action_module/data")  
-**play**: plays motion(s) of current page.  
-**name**: changes the name of the current page. You can view the name of the page at the top right portion of the screen. For example, page 2 is titled hello; to change the name type name and press the "ENTER" key. "name:" will appear at the bottom of the screen. Input the desired name for the page, good for instance, and press the "ENTER" key again.  
-**i**: inserts data from STP7 to STP0. Moves data from STP[x] to STP[x + 1] if any.  
-**i [index]**: inserts data from STP7 to STP[index]. Moves data from STP[index] to STP[index + 1] if any.  
-**m [index] [index2]**: moves data from [index2] to [index].  
-**d [index]**: deletes data from STP[index]. Moves data from STP[index] to STP[index - 1].  
-**on/off**: turns on/off torque from all Dynamixels.  
-**on/off [index1] [index2] [index3] …** : turns torque on/off from ID[index1] ID[index2] ID[index3]. For example off 20 releases torque from ID20. Notice that STP7 for ID20 will read [----]. Typing on 20 turns torque from ID20 on again and the screen outputs the current position data of ID20.  
+- **exit**: exits the program.  
+- **re**: refreshes the screen.  
+- **b**: moves to the previous page.  
+- **n**: moves to the next page.  
+- **page [index]**: moves to the [index] page. For example typing page 5 outputs data from page 5 on screen.  
+- **list**: outputs a list of pages.  
+- **new**: initializes current page by clearing all actuator position data.  
+- **copy [index]**: copies data from page [index] to current page. For example if you are on page 5 and want to copy page 9 then type copy 9.  
+- **set [value]**: sets position value on chosen actuator. For example If you want ID19 (head pan) to have a value of 512 then using the keyboard's directional keys place the cursor on ID19 and type set 512.  
+- **save**: saves any changes you've made. the saved motion file (motion_4096.bin can be found at "thormang3_action_module/data")  
+- **play**: plays motion(s) of current page.  
+- **name**: changes the name of the current page. You can view the name of the page at the top right portion of the screen. For example, page 2 is titled hello; to change the name type name and press the "ENTER" key. "name:" will appear at the bottom of the screen. Input the desired name for the page, good for instance, and press the "ENTER" key again.  
+- **i**: inserts data from STP7 to STP0. Moves data from STP[x] to STP[x + 1] if any.  
+- **i [index]**: inserts data from STP7 to STP[index]. Moves data from STP[index] to STP[index + 1] if any.  
+- **m [index] [index2]**: moves data from [index2] to [index].  
+- **d [index]**: deletes data from STP[index]. Moves data from STP[index] to STP[index - 1].  
+- **on/off**: turns on/off torque from all Dynamixels.  
+- **on/off [index1] [index2] [index3] …** : turns torque on/off from ID[index1] ID[index2] ID[index3]. For example off 20 releases torque from ID20. Notice that STP7 for ID20 will read [----]. Typing on 20 turns torque from ID20 on again and the screen outputs the current position data of ID20.  
 
 #### Example Action editing with thormang3_action_editor
 1. Run the thormang3_action_editor on MPC  
@@ -1876,7 +1876,7 @@ After typing "help", the commend list will appear as shown below.
 
 8. Edit "Pause Time", "Time" of STP1 and "Page Step" as shown below.  
 
-  ![](/assets/images/platform/thormang3/thormang3_046.jpg)
+  ![](/assets/images/platform/thormang3/thormang3_046.png)
 
 9. Type "play" and check the THORMANG3's action  
 

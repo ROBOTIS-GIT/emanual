@@ -127,7 +127,10 @@
 <loc>http://localhost:4000/docs/en/software/rplus1/dynamixe_wizard/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/docs/en/software/sdk/embedded_c/</loc>
+<loc>http://localhost:4000/docs/en/software/sdk/embedded_c_cm510/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/docs/en/software/sdk/embedded_c_cm530/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/docs/en/dxl/ex/ex-106+/</loc>
