@@ -265,10 +265,11 @@ main:
         titlekr: "STEM 키트"
         titlejp: "STEM KIT"
         titlecn: "STEM KIT"
+        url: /edu/bioloid/stem/
       - titlekr: "STEM 아카데미"
         titlejp: "STEM Academy"
         titlecn: "STEM Academy"
-        url: /edu/bioloid/stem/
+        url: /edu/bioloid/stem_academy/
       - title: "ROBOTIS PREMIUM"
         titlekr: "프리미엄"
         titlejp: "ROBOTIS PREMIUM"
@@ -5290,7 +5291,7 @@ opencmide:
     url: /software/opencm_ide/getting_started/#examples
     children:
     - title: "EEPROM(Flash)"
-      url: /software/opencm_ide/getting_started/#eeprom-flash
+      url: /software/opencm_ide/getting_started/#eepromflash
     - title: "Sensor Module"
       url: /software/opencm_ide/getting_started/#sensor-module
     - title: "Digital I/O"

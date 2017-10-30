@@ -36,11 +36,11 @@ sidebar:
 
 2. Select the correct COM port (if you know) or else use the "Automatic Search" function  to easily find out the appropriate port.
 
-  ![img_02][img_02]
+    ![img_02][img_02]
 
-  If RoboPlus Task is unable to find a controller, the following error message will be shown.
+    If RoboPlus Task is unable to find a controller, the following error message will be shown.
 
-  ![img_03][img_03]
+    ![img_03][img_03]
 
   - Check if the controller is connected to the PC.
   - Check if the controller is turned on.
@@ -48,15 +48,15 @@ sidebar:
 
 3. Select the download menu.
 
-  ![img_04][img_04]
+    ![img_04][img_04]
 
-  If the program has an error, you must find the error and correct it. (See [rule check error messages])
+    If the program has an error, you must find the error and correct it. (See [rule check error messages])
 
 4. Download the program.
 
-  ![img_05][img_05]
+    ![img_05][img_05]
 
-  If the downloading fails, it will automatically try again from the beginning.
+    If the downloading fails, it will automatically try again from the beginning.
 
 5. Execute the task code -> Your robot will move. Turn on the controller and execute the downloaded task code.
 
@@ -66,7 +66,7 @@ sidebar:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3mDP9BW-Q0E" frameborder="0" allowfullscreen></iframe>
 
-#### setting up the port
+#### Setting Up the Port
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UlD4C1XMsgo" frameborder="0" allowfullscreen></iframe>
 
