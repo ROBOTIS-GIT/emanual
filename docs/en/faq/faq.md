@@ -11,7 +11,7 @@ sidebar:
   nav: "faq"
 ---
 
-- [Product Compatibility Guide](/docs/en/faq/controller_compatibility/)
+- [Product Compatibility Guide](/docs/en/parts/controller/controller_compatibility/)
 - [Download Task Code](/docs/en/software/rplus1/task/getting_started/#program-download)
 - [Task Rule Check](/docs/en/software/rplus1/task/task_misc/#rule-check)
 - [CM 510/530 Fuse Replacement](/docs/en/faq/cm_510_530_fuse/)

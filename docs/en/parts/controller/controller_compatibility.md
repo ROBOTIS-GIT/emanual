@@ -1,13 +1,10 @@
 ---
-layout: archive
+layout: splash
 lang: en
 ref: controller_compatibility
 share: true
 author_profile: false
-permalink: /docs/en/faq/controller_compatibility/
-sidebar:
-  title: Compatibility
-  nav: "controller_compatibility"
+permalink: /docs/en/parts/controller/controller_compatibility/
 ---
 
 # Controller Compatibility

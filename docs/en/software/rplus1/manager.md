@@ -990,7 +990,7 @@ Follow these steps to manage the Zig-100 module through RoboPlus Manager using Z
 [Windows installer 3.1]: http://www.microsoft.com/downloads/details.aspx?FamilyID=889482fc-5f56-4a38-b838-de776fd4138c&DisplayLang=ko
 [.NET Framework 3.5]: http://www.microsoft.com/downloads/details.aspx?FamilyID=d0e5dea7-ac26-4ad7-b68c-fe5076bba986&DisplayLang=ko
 [managing information of each controller]: /docs/en/software/rplus1/manager/#controllers
-[controller information]: /docs/en/faq/controller_compatibility/
+[controller information]: /docs/en/parts/controller/controller_compatibility/
 [ID Setup]: /docs/en/software/rplus1/manager/#id-setup
 [Aux LED]: /docs/en/software/rplus1/task/programming_02/#aux-led
 [Button]: /docs/en/software/rplus1/task/programming_02/#button

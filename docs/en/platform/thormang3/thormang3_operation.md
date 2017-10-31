@@ -251,39 +251,42 @@ Operating PC is used to control the robot from the outside.
   > Reference : [Example Setting for OPC]  
 
 - IP Address : Static IP address is recommended  
-  > ex )  
-  > - IP address: 10.17.3.100  
-  > - Netmask : 255.255.255.0  
-  > - Gateway : 10.17.3.1  
+  > ex )
+  > IP address: 10.17.3.100
+  > Netmask : 255.255.255.0
+  > Gateway : 10.17.3.1
 
 - ROS network environment setting
   > Reference : [ROS Network Setup](http://wiki.ros.org/ROS/NetworkSetup)  
 
 1. Open the bash file to configure environment  
-  ```
-  $ gedit ~/.bashrc
-  ```
+
+    ```
+    $ gedit ~/.bashrc
+    ```
 
 2. Append below contents at the end of the `.bashrc` file  
-  ```bash
-  # Set ROS Kinetic
-  source /opt/ros/kinetic/setup.bash
-  source ~/catkin_ws/devel/setup.bash
 
-  ##### Set ROS Network ####
-  # PPC CORE(10.17.3.35)
-  export ROS_MASTER_URI=http://10.17.3.35:11311 
+    ```
+    # Set ROS Kinetic
+    source /opt/ros/kinetic/setup.bash
+    source ~/catkin_ws/devel/setup.bash
 
-  # local ROS IP
-  export ROS_IP=10.17.3.100
-  ```
-  > ROS_MASTER_URI : PPC(10.17.3.35)  
-  > ROS_IP : OPC(10.17.3.100)  
+    ##### Set ROS Network ####
+    # PPC CORE(10.17.3.35)
+    export ROS_MASTER_URI=http://10.17.3.35:11311 
+
+    # local ROS IP
+    export ROS_IP=10.17.3.100
+    ```
+    > ROS_MASTER_URI : PPC(10.17.3.35)  
+    > ROS_IP : OPC(10.17.3.100)  
 
 3. Use below command to apply modified configuration or open a new terminal window.  
-  ```
-  $ source ~/.bashrc
-  ```
+
+    ```
+    $ source ~/.bashrc
+    ```
 
 ### [Visualized Monitoring](#visualized-monitoring)
 
@@ -310,31 +313,36 @@ Operating PC is used to control the robot from the outside.
 2. Synchronize time with the PPC(Perception PC)  
   - If this is the first synchronization, create the script file.  
     - Create a script file with an editor.  
+
       ```
       $ gedit ~/timesync
       ```
     
     - Copy below contents in the script file.  
-      ```bash
+
+      ```
       #! /bin/sh
       sudo date --set='-2 secs'
       sudo ntpdate 10.17.3.35
       sudo hwclock -w
       ```
     
-    > PPC(10.17.3.35)  
+      > PPC(10.17.3.35)  
 
     - Modify the script file permission(Add execute permission)  
+
       ```
       $ sudo chmod +x timesync
       ```
 
     - Execute the script file to synchronize time.  
+
       ```
       $ ~/timesync
       ```
 
   - If this is not the first synchronization, execute the script file.  
+
     ```
     $ ~/timesync
     ```
@@ -366,15 +374,15 @@ Walking, manipulation, head control are provided.
 5. Click the mode at the top to activate  
 6. Check all joints are switched to selected mode.  
 
-![](/assets/images/platform/thormang3/thormang3_048.png)
+    ![](/assets/images/platform/thormang3/thormang3_048.png)
 
 7. Initial Posture  
   In order to operate the robot safely, the robot should be operated from the initial posture.  
   Click `Robot Init Pose` button at the top of demo program(Effective regardless of current mode)  
 
-![](/assets/images/platform/thormang3/thormang3_049.png)
+    ![](/assets/images/platform/thormang3/thormang3_049.png)
 
-![](/assets/images/platform/thormang3/thormang3_050.png)
+    ![](/assets/images/platform/thormang3/thormang3_050.png)
 
 ### [Calibrate FT Sensors](#calibrate-ft-sensors)
 
@@ -392,34 +400,34 @@ Instructions about how to calibrate FT Sensors on THORMANG3's feet. Balance Algo
 1. Move to Robot Init Pose
   - Click `Robot Init Pose` button on the top.  
 
-  ![](/assets/images/platform/thormang3/thormang3_051.jpg)
+    ![](/assets/images/platform/thormang3/thormang3_051.jpg)
 
 2. Measure FT Air  
   - After reaching to Robot Init Pose, click `FT Air` button to measure the Force Torque value in the air.
   - **THORMANG3 must be hanging on the lift for this procedure.**
 
-  ![](/assets/images/platform/thormang3/thormang3_052.jpg)
+    ![](/assets/images/platform/thormang3/thormang3_052.jpg)
 
 3. Measure FT Ground  
-  - After completing previous procedure, click `FT Ground` button to measure the Force Torque on the ground.
-  - **THORMANG3 must be standing on the ground for this procedure.**
+    - After completing previous procedure, click `FT Ground` button to measure the Force Torque on the ground.
+    - **THORMANG3 must be standing on the ground for this procedure.**
 
     ![](/assets/images/platform/thormang3/thormang3_053.jpg)
 
-  - **Measured values are displayed on the left of GUID.**
-  - **If measured Fz value on the ground is greater than the measured value in the air by more than around 210N, it is normal.**
-  - **If the value is smaller than around 210N, repeat 1~3 procedure from above.**
+    - **Measured values are displayed on the left of GUID.**
+    - **If measured Fz value on the ground is greater than the measured value in the air by more than around 210N, it is normal.**
+    - **If the value is smaller than around 210N, repeat 1~3 procedure from above.**
 
 4. Apply Init FT
   - After completing above procedures, click `Apply Init FT` button.
   - Measured Force Torque values in the air and on the ground are transmitted to [thormang3_feet_ft_module] and FT Sensor calibration is completed.
 
-  ![](/assets/images/platform/thormang3/thormang3_054.jpg)
+    ![](/assets/images/platform/thormang3/thormang3_054.jpg)
 
 5. Save FT Calibration
   - If you want to save current calibration, click `Save FT calibration` button.
 
-  ![](/assets/images/platform/thormang3/thormang3_055.jpg)
+    ![](/assets/images/platform/thormang3/thormang3_055.jpg)
 
 ### [Operate Head Module](#operate-head-module)
 
@@ -435,7 +443,7 @@ User can manipulate head joints to move the sensor attached head.
   2. Assemble  
   Click `Make PointCloud` button in the `Basic Control` of the demo program.  
   
-  ![](/assets/images/platform/thormang3/thormang3_056.png)
+      ![](/assets/images/platform/thormang3/thormang3_056.png)
 
   3. Check the pointcloud  
     Assembled pointcloud can be seen on the RViz screen.  
@@ -447,7 +455,7 @@ User can manipulate head joints to move the sensor attached head.
       - Select `/robotis/sensor/assembled_scan/PointCloud2`  
     - Check PointCloud on the 3D screen  
     
-    ![](/assets/images/platform/thormang3/thormang3_057.png)
+      ![](/assets/images/platform/thormang3/thormang3_057.png)
 
 - Head Joint Control  
   1. Change the Mode  
@@ -534,7 +542,7 @@ Structure looks like the below figure.
 1. Move to Robot Init Pose
   - Click the `Robot Init Pose` button.  
 
-  ![](/assets/images/platform/thormang3/thormang3_061.png)
+    ![](/assets/images/platform/thormang3/thormang3_061.png)
 
 2. FT Sensor Calibration
   - FT sensor calibration is important for the walking operation.
@@ -546,28 +554,28 @@ Structure looks like the below figure.
 3. Set Mode
   - Click the `Walking Module` button to switch to Walking Mode.
 
-  ![](/assets/images/platform/thormang3/thormang3_062.jpg)
+    ![](/assets/images/platform/thormang3/thormang3_062.jpg)
 
 4. Balance On 
   - Select the `Walking` tab from the demo program.
   - Click `On` button in the `Balance Control`.
   
-  ![](/assets/images/platform/thormang3/thormang3_063.png)
+    ![](/assets/images/platform/thormang3/thormang3_063.png)
   
-  - Balance is turned on by configuring [Balance Parameter] with the `/robotis/walking/set_balance_param` service.
-  - Balance Parameter is updated with the saved value in the [thormang3_foot_step_generator/data/balance_param.yaml].
+    - Balance is turned on by configuring [Balance Parameter] with the `/robotis/walking/set_balance_param` service.
+    - Balance Parameter is updated with the saved value in the [thormang3_foot_step_generator/data/balance_param.yaml].
 
-  ![](/assets/images/platform/thormang3/thormang3_064.jpg)
+    ![](/assets/images/platform/thormang3/thormang3_064.jpg)
 
 5. Walking Control
   - Configure Walking Parameters on the right of the `Direction Walking` panel.
   - After configuring parameters, clicking one of Walking Directions will initiate walking of THORMANG3.
 
-  ![](/assets/images/platform/thormang3/thormang3_065.jpg)
+    ![](/assets/images/platform/thormang3/thormang3_065.jpg)
   
-  - The procedure flows as below.
+    - The procedure flows as below.
 
-  ![](/assets/images/platform/thormang3/thormang3_066.jpg)
+    ![](/assets/images/platform/thormang3/thormang3_066.jpg)
 
 
 #### Walking with [thormang3_demo] and [footstep_planner]
@@ -591,43 +599,43 @@ A walking example that follows StepData using [footstep_planner].
 1. Basic Operation
   - Sequentially proceed 1~4 of [Usage] from above "Walking with [thormang3_demo] and [thormang3_foot_step_generator]".   
 
-  [Usage]: /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_walking_module
-
 2. Add Visualization
   - Click the `Add` button on the Rviz window.
   - Select the `By Topic` tab and select the `/demo/foot_step_marker/MarkerArray`, then click `OK`.
 
-  ![](/assets/images/platform/thormang3/thormang3_068.jpg)
+    ![](/assets/images/platform/thormang3/thormang3_068.jpg)
 
 3. Interactive Marker
   - Click the `Publish Point` button on the Rviz window.
   - Click one of the THORMANG's feet on the Rviz window.
 
-  ![](/assets/images/platform/thormang3/thormang3_069.jpg)
-  
-  - Click `Set Marker` button.
-  - The Interactive Marker is activated on the Rviz window as below figure.
+    ![](/assets/images/platform/thormang3/thormang3_069.jpg)
 
-  ![](/assets/images/platform/thormang3/thormang3_070.jpg)
+    - Click `Set Marker` button.
+    - The Interactive Marker is activated on the Rviz window as below figure.
+
+    ![](/assets/images/platform/thormang3/thormang3_070.jpg)
 
 4. StepData Planning
   - Move the Interative Marker and click `Publish Pose` button.  
   - `Walking` tab of the [thormang3_demo] GUI should be selected ahead.  
 
-  ![](/assets/images/platform/thormang3/thormang3_071.jpg)
+    ![](/assets/images/platform/thormang3/thormang3_071.jpg)
   
-  - After checking "Get Pose for Step" message from the GUI and activated `Plan` button, click `Plan` button.  
+    - After checking "Get Pose for Step" message from the GUI and activated `Plan` button, click `Plan` button.  
 
-  ![](/assets/images/platform/thormang3/thormang3_072.jpg)
+    ![](/assets/images/platform/thormang3/thormang3_072.jpg)
   
-  - When planning is completed, planned StepData can be seen on the Rviz GUI window.  
+    - When planning is completed, planned StepData can be seen on the Rviz GUI window.  
 
-  ![](/assets/images/platform/thormang3/thormang3_073.jpg)
+    ![](/assets/images/platform/thormang3/thormang3_073.jpg)
 
 5. Start Walking
   - Confirm planned StepData from the [thormang3_demo] GUI and click `GO!` button.
 
-  ![](/assets/images/platform/thormang3/thormang3_074.jpg)
+    ![](/assets/images/platform/thormang3/thormang3_074.jpg)
+
+[Usage]: /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_walking_module
 
 ## [Offset Tuner](#offset-tuner)
 
@@ -687,13 +695,14 @@ $ roslaunch thormang3_gazebo robotis_world.launch
 
 ### [thormang3_manager] for Gazebo  
 - Configure simulation setting in the launch file of the thormang3_manager   
-`<param name="gazebo" value="true" type="bool"/>`   
-`<param name="gazebo_robot_name" value="thormang3"/>`   
+  `<param name="gazebo" value="true" type="bool"/>`   
+  `<param name="gazebo_robot_name" value="thormang3"/>`   
 
 - Launch thormang3_manager   
-```
-$ roslaunch thormang3_manager thormang3_manager.launch
-```
+
+  ```
+  $ roslaunch thormang3_manager thormang3_manager.launch
+  ```
 
 - Please refer to below tutorials for the rest procedures.   
 [How to run THORMANG3's program]
@@ -751,11 +760,11 @@ $ roslaunch thormang3_manager thormang3_manager.launch
   
   1. Remove the rubber cap that covers the IP reset button.
 
-  ![](/assets/images/platform/thormang3/thormang3_080.jpg)
+    ![](/assets/images/platform/thormang3/thormang3_080.jpg)
  
   2. Press the switch inside the hole for more than 3 seconds, using a thin stick.
 
-  ![](/assets/images/platform/thormang3/thormang3_081.jpg)
+    ![](/assets/images/platform/thormang3/thormang3_081.jpg)
  
 Restart the sensor when the LED blinks, the IP setting will be completed.  
 The following table shows the network settings after the reset.
@@ -800,21 +809,21 @@ The following table shows the network settings after the reset.
  
     ![](/assets/images/platform/thormang3/thormang3_086.jpg)
  
-  - IMU sensor([MicroSrain 3DM-GX4-25](http://www.microstrain.com/inertial/3dm-gx4-25))
+    - IMU sensor([MicroSrain 3DM-GX4-25](http://www.microstrain.com/inertial/3dm-gx4-25))
   
-    ![](/assets/images/platform/thormang3/thormang3_087.jpg)
+      ![](/assets/images/platform/thormang3/thormang3_087.jpg)
  
-  - LIDAR([Hokuyo UTM-30LX-EW](https://www.hokuyo-aut.jp/02sensor/07scanner/download/products/utm-30lx-ew/))
+    - LIDAR([Hokuyo UTM-30LX-EW](https://www.hokuyo-aut.jp/02sensor/07scanner/download/products/utm-30lx-ew/))
 
-    ![](/assets/images/platform/thormang3/thormang3_088.jpg)
- 
-  - HD Camera([Logitech C920 HD](http://www.logitech.com/en-us/product/hd-pro-webcam-c920))
-  
-    ![](/assets/images/platform/thormang3/thormang3_089.jpg)
- 
-  - Depth camera([Intel RealSense R200](https://software.intel.com/en-us/realsense/r200camera))
-  
-    ![](/assets/images/platform/thormang3/thormang3_090.jpg)
+      ![](/assets/images/platform/thormang3/thormang3_088.jpg)
+   
+    - HD Camera([Logitech C920 HD](http://www.logitech.com/en-us/product/hd-pro-webcam-c920))
+    
+      ![](/assets/images/platform/thormang3/thormang3_089.jpg)
+   
+    - Depth camera([Intel RealSense R200](https://software.intel.com/en-us/realsense/r200camera))
+    
+      ![](/assets/images/platform/thormang3/thormang3_090.jpg)
  
 4. Batteries
   - LiPo 22.2V, 22000mAh x 1EA(http://www.maxamps.com/proddetail.php?prod=Lipo-22000-222-Pack)  
@@ -822,10 +831,10 @@ The following table shows the network settings after the reset.
 
     ![](/assets/images/platform/thormang3/thormang3_091.jpg)
  
-  - LiPo 18.5V, 11000mAh x 1EA(http://www.maxamps.com/proddetail.php?prod=Lipo-11000-185-Pack)  
-    no plug-12awg
+    - LiPo 18.5V, 11000mAh x 1EA(http://www.maxamps.com/proddetail.php?prod=Lipo-11000-185-Pack)  
+      no plug-12awg
 
-    ![](/assets/images/platform/thormang3/thormang3_092.jpg)
+      ![](/assets/images/platform/thormang3/thormang3_092.jpg)
  
 - Chargers(hitec smart charger h4, hitec e power box 30a)  
   http://hitecrcd.com/products/chargers/dcdc-chargers/h4-dcdc-four-port-multi-charger/product  

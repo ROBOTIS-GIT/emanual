@@ -43,4 +43,4 @@ sidebar:
 `Caution` Make connections to the controlled while unpowered. Making connections while the controller is powered may cause it to malfunction or/and damage.
 {: .notice--warning}
 
-[Controller Compatibility]: /docs/en/faq/controller_compatibility/
+[Controller Compatibility]: /docs/en/parts/controller/controller_compatibility/

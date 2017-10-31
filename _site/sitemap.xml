@@ -73,7 +73,7 @@
 <loc>http://localhost:4000/docs/kr/faq/contents_guide</loc>
 </url>
 <url>
-<loc>http://localhost:4000/docs/en/faq/controller_compatibility/</loc>
+<loc>http://localhost:4000/docs/en/parts/controller/controller_compatibility/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/docs/en/dxl/crc/</loc>
@@ -221,6 +221,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/docs/en/platform/manipulator_h/introduction/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/docs/en/platform/turtlebot3/introduction/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/docs/en/edu/ollo/inventor/</loc>
@@ -464,5 +467,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/docs/en/software/sdk/zigbee_sdk/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/assets/images/platform/turtlebot3/LDS_Basic_Specification.pdf</loc>
+<lastmod>2017-10-30T13:29:04+09:00</lastmod>
 </url>
 </urlset>

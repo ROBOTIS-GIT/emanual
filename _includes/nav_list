@@ -39,8 +39,16 @@
         {% assign navurl=nav.url %}
       {% endif %}
     {% else %}
-      {% assign navtitle=nav.title %}
-      {% assign navurl=nav.url %}
+      {% if nav.title %}
+        {% assign navtitle=nav.title %}
+      {% else %}
+        {% assign navtitle=null %}
+      {% endif %}
+      {% if nav.url %}
+        {% assign navurl=nav.url %}
+      {% else %}
+        {% assign navurl=null %}
+      {% endif %}
     {% endif %}
 
     {% if nav.children != null %}

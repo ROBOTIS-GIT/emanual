@@ -416,6 +416,7 @@ main:
       titlekr: "제어기"
       titlejp: "コントローラ"
       titlecn: "控制器"
+      url: /parts/controller/controller_compatibility/
       children:
       - title: "CM-100A"
         titlekr: "CM-100A"
@@ -6082,6 +6083,19 @@ usb2dynamixel:
     url: /parts/interface/usb2dynamixel/#install-driver-manually
   - title: "Videos"
     url: /parts/interface/usb2dynamixel/#videos
+
+#FAQ sidebar
+faq:
+  - title: "DYNAMIXEL"
+    url:
+  - title: "Platform"
+    url:
+  - title: "Eductation"
+    url:
+  - title: "Software"
+    url:
+  - title: "Parts"
+    url:
 
 contents-guide:
   - title: "Contents Guide"

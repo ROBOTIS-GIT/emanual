@@ -88,16 +88,13 @@ A rechargeable battery is installed in CM-5. If the rechargeable battery is char
 - Specific motions can be edited and saved through [RoboPlus Motion]. The saved motion (mtn file) can be always executed by [RoboPlus Task], and also the motions of each part can be controlled by writing the task codes for control.
 
 - RoboPlus Motion  
+  ![](/assets/images/parts/controller/cm-5/cm-5_04.jpg)
 
-![](/assets/images/parts/controller/cm-5/cm-5_04.jpg)
+- RoboPlus Task  
+  ![](/assets/images/parts/controller/cm-5/cm-5_05.jpg)
 
-- RoboPlus Task
-
-![](/assets/images/parts/controller/cm-5/cm-5_05.jpg)
-
-- RoboPlus Manager
-
-![](/assets/images/parts/controller/cm-5/cm-5_06.jpg)
+- RoboPlus Manager  
+  ![](/assets/images/parts/controller/cm-5/cm-5_06.jpg)
 
 # [Connect to PC](#connect-to-pc)
 
