@@ -1477,7 +1477,7 @@ Feet ft calibration, Pointcloud conversion are available with this package.
   `Note` Reference : [OPC Installation]
   {: .notice}
 
-#### 2.2 Run  
+#### Run  
 Execute the launch file  
 
 ```
@@ -1490,9 +1490,9 @@ Configuration file used in `thormang3_demo`
 > * module_list : Module name displayed on each joint in the demo program.
 > * module_button : Modules to configure with the manager (index : module name)
   
-#### 3. ROS API  
+#### ROS API  
 
-##### 3.1 Subscribed Topics  
+##### Subscribed Topics  
 `/robotis/feet_ft/both_ft_value`([thormang3_feet_ft_module_msgs/BothWrench])  
   FT value for calibration
 
@@ -1508,7 +1508,7 @@ Configuration file used in `thormang3_demo`
 `/robotis/demo/pose`([geometry_msgs/Pose](http://docs.ros.org/api/geometry_msgs/html/msg/Pose.html))  
   Pose that are used for Walking and Manipulation
 
-##### 3.2 Published Topics
+##### Published Topics
 `/robotis/set_joint_ctrl_modules`([robotis_controller_msgs/JointCtrlModule])  
   Configuring each joint modules (configure for each joint, Not recommended to use)
 
@@ -1562,7 +1562,7 @@ Configuration file used in `thormang3_demo`
 `/robotis/manipulation/get_kinematics_pose`([thormang3_manipulation_module_msgs/GetKinematicsPose])  
   Obtains end effector pose of selected manipulation group.
 
-#### 3.4 Parameters  
+#### Parameters  
 
 `~demo_config`(string, default: /config/demo_config.yaml)  
   Configuration file path of the demo program.
@@ -1756,7 +1756,7 @@ $ roslaunch thormang3_offset_tuner_server thormang3_offset_tuner_server.launch
   - "save"     : Saves current offset to yaml  
   - "ini_pose" : Take the initial posture for offset tuning  
 
-#### 3.2 Services
+#### Services
 `robotis/offset_tuner/get_present_joint_offset_data`([thormang3_offset_tuner_msgs/GetPresentJointOffsetData])  
   The service obtains current offset data from the [thormang3_offset_tuner_client].  
 
@@ -1852,51 +1852,51 @@ After typing "help", the commend list will appear as shown below.
 1. Run the thormang3_action_editor on MPC  
 2. Find the page where the "walking_init page" is by typing "list"  
 
-  ![](/assets/images/platform/thormang3/thormang3_040.jpg)
+    ![](/assets/images/platform/thormang3/thormang3_040.jpg)
 
 3. Exit the list and go to any blank page by typing "page [x]"(for example, page 15).
 
-  ![](/assets/images/platform/thormang3/thormang3_041.jpg)
+    ![](/assets/images/platform/thormang3/thormang3_041.jpg)
 
 4. And copy the page 1 to page [x].  
   
-  ![](/assets/images/platform/thormang3/thormang3_042.jpg)
+    ![](/assets/images/platform/thormang3/thormang3_042.jpg)
 
 5. Go to "walking_init" pose by typing "play"  
 
-  ![](/assets/images/platform/thormang3/thormang3_043.jpg)
+    ![](/assets/images/platform/thormang3/thormang3_043.jpg)
 
 6. Turn off the torque of ID 2, 4 and 8 by typing "off 2 4 8"  
 
-  ![](/assets/images/platform/thormang3/thormang3_044.jpg)
+    ![](/assets/images/platform/thormang3/thormang3_044.jpg)
 
 7. After getting the desired pose turn torque on again by simple typing on. And insert the pose to step 1 by typing "i 1"  
 
-  ![](/assets/images/platform/thormang3/thormang3_045.jpg)
+    ![](/assets/images/platform/thormang3/thormang3_045.jpg)
 
 8. Edit "Pause Time", "Time" of STP1 and "Page Step" as shown below.  
 
-  ![](/assets/images/platform/thormang3/thormang3_046.png)
+    ![](/assets/images/platform/thormang3/thormang3_046.png)
 
 9. Type "play" and check the THORMANG3's action  
 
 
 ## [THORMANG msgs Package](#thormang-msgs-package)
 
-### [thormang3_action_module_msgs]
+### [thormang3_action_module_msgs](#thormang3-action-module-msgs)
 
 The followings are Messages and Services used for the [thormang3_action_module].
 
 - ROS Message Type : [StartAction.msg]
 - ROS Service Type : [IsRunning.srv]
 
-### [thormang3_feet_ft_module_msgs]
+### [thormang3_feet_ft_module_msgs](#thormang3-feet-ft-module-msgs)
 
 Message used in the [thormang3_feet_ft_module].
 
 - ROS Message Type : [BothWrench.msg]
 
-### [thormang3_manipulation_module_msgs]
+### [thormang3_manipulation_module_msgs](#thormang3-manipulation-module-msgs)
 
 Messages and Services used in the [thormang3_manipulation_module]
 
@@ -1908,7 +1908,7 @@ Messages and Services used in the [thormang3_manipulation_module]
   - [GetJointPose.srv]
   - [GetKinematicsPose.srv]
 
-### [thormang3_walking_module_msgs]
+### [thormang3_walking_module_msgs](#thormang3-walking-module-msgs)
 
 Messages and Services used in the [thormang3_walking_module].
 
@@ -1934,13 +1934,13 @@ Messages and Services used in the [thormang3_walking_module].
   - [SetJointFeedBackGain.srv]
   - [StartWalking.srv]
 
-### [thormang3_head_control_module_msgs]
+### [thormang3_head_control_module_msgs](#thormang3-head-control-module-msgs)
 
 Messages used in the [thormang3_head_control_module]
 
 - ROS Message Type : [HeadJointPose.msg]
 
-### [thormang3_offset_tuner_msgs]
+### [thormang3_offset_tuner_msgs](#thormang3-offset-tuner-msgs)
 
 The following are Messages and Service used for the thormang3_offset_tuner_server and the [thormang3_offset_tuner_client].
 
