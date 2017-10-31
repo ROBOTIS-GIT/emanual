@@ -4,9 +4,11 @@
       <nav id="site-nav" class="greedy-nav">
         <a class="site-title" href="{{ '/' | absolute_url }}"><img src="/assets/images/robotis_logo.gif" style="padding-right:10px;">e-Manual</a>
         {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+        {% comment %}
         {% for page in pages %}
           <a href="{{ page.url | absolute_url }}" class="{{page.lang}}" style="color: #134268;padding-right:10px;">[{{page.lang}}]</a>
         {% endfor %}
+        {% endcomment %}
 
         <form method="get" id="site_search" style="margin:0 0 0 0; position:absolute; right:0; width:30%;">
           <script>
