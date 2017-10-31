@@ -10,12 +10,13 @@ header:
   cta_url:
   caption:
   intro:
-    - excerpt: 'How to use ROBOTIS e-Manual'
+    - excerpt: 'ROBOTIS wiki e-Manual'
 ---
 
-# Forum
+# ROBOTIS e-Manaul
 
-New ROBOTIS Community [Forum] is available. Please checkout the [Forum] if you have any issue with ROBOTIS Products.
+- [Previous e-Manual](support.robotis.com) will be served as well.
+- New ROBOTIS Community [Forum] is available. Please checkout the [Forum] if you have any issue with ROBOTIS Products.
 
 # Quick References
 

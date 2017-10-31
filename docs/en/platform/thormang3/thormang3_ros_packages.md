@@ -1269,7 +1269,6 @@ BalanceLowPassFilter left_foot_torque_pitch_lpf_;
 ```
   - description : Low Pass Filter for y directional torque from force-torque sensor on left foot
 
-
 ### [imu-3dm-gx4](#imu-3dm-gx4)
 
 This module is for the IMU Sensor(MicroStrain 3DM-GX4-25).  
@@ -1278,14 +1277,14 @@ This is the modified version of KumarRobotics/imu_3dm_gx4.
 
 #### Download & Build
 
-  `Note` Reference : [MPC Installation]
-  {: .notice}
+`Note` Reference : [MPC Installation]
 
 #### ROS API
 
 ##### Published Topics
 
-`/robotis/sensor/imu/imu` (sensor_msgs/Imu)  
+`/robotis/sensor/imu/imu` (sensor_msgs/Imu)
+  
 Present output of the IMU Sensor
 
 
