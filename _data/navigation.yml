@@ -4106,9 +4106,9 @@ op:
       url: /platform/op/maintenance/#recovery
       children:
       - title: "Recovery(Ubuntu 9.10)"
-        url: /platform/op/maintenance/#recovery-ubuntu-9-10
+        url: /platform/op/maintenance/#recoveryubuntu-910
       - title: "Recovery(Linux Mint 9)"
-        url: /platform/op/maintenance/#recovery-linux-mint-9
+        url: /platform/op/maintenance/#recoverylinux-mint-9
       - title: "Clonezilla Recovery"
         url: /platform/op/maintenance/#clonezilla-recovery
   - title: "References"
@@ -4201,7 +4201,7 @@ op2:
     - title: "Warranty"
       url: /platform/op2/getting_started/#warranty
   - title: "Sub Controller(CM-740)"
-    url: /platform/op2/getting_started/#sub-controller-cm-740
+    url: /platform/op2/getting_started/#sub-controllercm-740
 
 #ROBOTIS OP3 sidebar
 op3:
@@ -4255,8 +4255,8 @@ op3:
       url: /platform/op3/getting_started/#id-map
     - title: "Warranty"
       url: /platform/op3/getting_started/#warranty
-  - title: "Sub Controller(CM-740)"
-    url: /platform/op3/getting_started/#sub-controller-opencr
+  - title: "Sub Controller(OpenCR)"
+    url: /platform/op3/getting_started/#sub-controlleropencr
     children:
     - title: "Control Table"
       url: /platform/op3/getting_started/#control-table
@@ -4372,51 +4372,51 @@ thormang3:
       url: /platform/thormang3/thormang3_ros_packages/#ppc-packages
       children:
       - title: "thormang3_sensors"
-        url: /platform/thormang3/thormang3_ros_packages/#thormang3-sensors
+        url: /platform/thormang3/thormang3_ros_packages/#thormang3_sensors
       - title: "thormang3_simple_demo"
-        url: /platform/thormang3/thormang3_ros_packages/#thormang3-simple-demo
+        url: /platform/thormang3/thormang3_ros_packages/#thormang3_simple_demo
     - title: "OPC Packages"
       url: /platform/thormang3/thormang3_ros_packages/#opc-packages
       children:
       - title: "humanoid_navigation"
-        url: /platform/thormang3/thormang3_ros_packages/#humanoid-navigation
+        url: /platform/thormang3/thormang3_ros_packages/#humanoid_navigation
       - title: "thormang3_demo"
-        url: /platform/thormang3/thormang3_ros_packages/#thormang3-demo
+        url: /platform/thormang3/thormang3_ros_packages/#thormang3_demo
       - title: "thormang3_action_script_player"
-        url: /platform/thormang3/thormang3_ros_packages/#thormang3-action-script-player
+        url: /platform/thormang3/thormang3_ros_packages/#thormang3_action_script_player
       - title: "thormang3_foot_step_generator"
-        url: /platform/thormang3/thormang3_ros_packages/#thormang3-foot-setp-generator
+        url: /platform/thormang3/thormang3_ros_packages/#thormang3_foot_step_generator
       - title: "thormang3_offset_tuner_client"
-        url: /platform/thormang3/thormang3_ros_packages/#thormang3-offset-tuner-client
+        url: /platform/thormang3/thormang3_ros_packages/#thormang3_offset_tuner_client
     - title: "Common Packages"
       url: /platform/thormang3/thormang3_ros_packages/#common-packages
       children:
       - title: "thormang3_description"
-        url: /platform/thormang3/thormang3_ros_packages/#thormang3-description
+        url: /platform/thormang3/thormang3_ros_packages/#thormang3_description
       - title: "thormang3_gazebo"
-        url: /platform/thormang3/thormang3_ros_packages/#thormang3-gazebo
+        url: /platform/thormang3/thormang3_ros_packages/#thormang3_gazebo
     - title: "Tools Packages"
       url: /platform/thormang3/thormang3_ros_packages/#tools-packages
       children:
       - title: "thormang3_offset_tuner_server"
-        url: /platform/thormang3/thormang3_ros_packages/#thormang3-offset-tuner-server
+        url: /platform/thormang3/thormang3_ros_packages/#thormang3_offset_tuner_server
       - title: "thormang3_action_editor"
-        url: /platform/thormang3/thormang3_ros_packages/#thormang3-action-editor
+        url: /platform/thormang3/thormang3_ros_packages/#thormang3_action_editor
     - title: "THORMANG msgs Package"
       url: /platform/thormang3/thormang3_ros_packages/#thormang-msgs-package
       children:
       - title: "thormang3_action_module_msgs"
-        url: /platform/thormang3/thormang3_ros_packages/#thormang3-action-module-msgs
+        url: /platform/thormang3/thormang3_ros_packages/#thormang3_action_module_msgs
       - title: "thormang3_fee_ft_module_msgs"
-        url: /platform/thormang3/thormang3_ros_packages/#thormang3-feet-ft-module-msgs
+        url: /platform/thormang3/thormang3_ros_packages/#thormang3_feet_ft_module_msgs
       - title: "thormang3_manipulation_module_msgs"
-        url: /platform/thormang3/thormang3_ros_packages/#thormang3-manipulation-module-msgs
+        url: /platform/thormang3/thormang3_ros_packages/#thormang3_manipulation_module_msgs
       - title: "thormang3_walking_module_msgs"
-        url: /platform/thormang3/thormang3_ros_packages/#thormang3-walking-module-msgs
+        url: /platform/thormang3/thormang3_ros_packages/#thormang3_walking_module_msgs
       - title: "thormang3_head_control_module_msgs"
-        url: /platform/thormang3/thormang3_ros_packages/#thormang3-head-control-module-msgs
+        url: /platform/thormang3/thormang3_ros_packages/#thormang3_head_control_module_msgs
       - title: "thormang3_offset_tuner_msgs"
-        url: /platform/thormang3/thormang3_ros_packages/#thormang3-offset-tuner-msgs
+        url: /platform/thormang3/thormang3_ros_packages/#thormang3_offset_tuner_msgs
   - title: "THORMANG3 Operation"
     url: /platform/thormang3/thormang3_operation/#thormang3-operation
     children:
@@ -4432,7 +4432,7 @@ thormang3:
       - title: "Visualized Monitoring"
         url: /platform/thormang3/thormang3_operation/#visualized-monitoring
       - title: "Remote Control(GUI Demo)"
-        url: /platform/thormang3/thormang3_operation/#remote-control-gui-demo
+        url: /platform/thormang3/thormang3_operation/#remote-controlgui-demo
       - title: "Calibrate FT Sensors"
         url: /platform/thormang3/thormang3_operation/#calibrate-ft-sensors
       - title: "Operate Head Module"
@@ -5020,7 +5020,7 @@ rplusmanager2:
       urlkr: /software/rplus2/manager/advanced/#펌웨어-정보-확인
     - title: "Firmware Management(Bluetooth)"
       titlekr: "블루투스로 펌웨어 관리하기"
-      url: /software/rplus2/manager/#firmware-management-bluetooth
+      url: /software/rplus2/manager/#firmware-managementbluetooth
       urlkr: /software/rplus2/manager/advanced/#블루투스로-펌웨어-관리하기
 
 #R+ Task 2.0 sidebar
@@ -5052,7 +5052,7 @@ rplustask2:
     - title: "Print Output"
       url: /software/rplus2/task/#print-output
   - title: "Programming(Edit)"
-    url: /software/rplus2/task/#programming-edit
+    url: /software/rplus2/task/#programmingedit
     children:
     - title: "Insert/Change Instruction"
       url: /software/rplus2/task/#insertchange-instruction
@@ -5067,7 +5067,7 @@ rplustask2:
     - title: "Undo/Redo"
       url: /software/rplus2/task/#undoredo
   - title: "Programming(Instructions)"
-    url: /software/rplus2/task/#programming-instructions
+    url: /software/rplus2/task/#programminginstructions
     children:
     - title: "Start/End"
       url: /software/rplus2/task/#startend
@@ -5078,9 +5078,9 @@ rplustask2:
     - title: "Loop"
       url: /software/rplus2/task/#loop
     - title: "Function(Sub-Routine)"
-      url: /software/rplus2/task/#function-sub-routine
+      url: /software/rplus2/task/#functionsub-routine
   - title: "Programming(Parameters)"
-    url: /software/rplus2/task/#programming-parameters
+    url: /software/rplus2/task/#programmingparameters
     children:
     - title: "Controllers"
       url: /software/rplus2/task/#controllers
@@ -5127,9 +5127,9 @@ rplusmotion2:
     - title: "Create New Motion Unit"
       url: /software/rplus2/motion/#create-new-motion-unit
     - title: "Edit Motion Unit(3D Robot)"
-      url: /software/rplus2/motion/#edit-motion-unit-3d-robot
+      url: /software/rplus2/motion/#edit-motion-unit3d-robot
     - title: "Edit Motion Unit(Actual Robot)"
-      url: /software/rplus2/motion/#edit-motion-unit-actual-robot
+      url: /software/rplus2/motion/#edit-motion-unitactual-robot
     - title: "Create New Motion"
       url: /software/rplus2/motion/#create-new-motion
     - title: "Edit Motion"
@@ -5741,9 +5741,9 @@ opencm904:
   - title: "Connecting Power"
     url: /parts/controller/opencm904/#connecting-power
   - title: "Switch Assembly(Type A)"
-    url: /parts/controller/opencm904/#switch-assembly-type-a
+    url: /parts/controller/opencm904/#switch-assemblytype-a
   - title: "Connector Assembly(Type A)"
-    url: /parts/controller/opencm904/#connector-assembly-type-a
+    url: /parts/controller/opencm904/#connector-assemblytype-a
   - title: "Downloads"
     url: /parts/controller/opencm904/#downloads
   - title: "Dimension"
@@ -5758,7 +5758,7 @@ opencm485exp:
   - title: "Layout"
     url: /parts/controller/opencm485exp/#layout
   - title: "Connecting OpenCM9.04"
-    url: /parts/controller/opencm485exp/#connecting-opencm9-04
+    url: /parts/controller/opencm485exp/#connecting-opencm904
   - title: "Power Circuit Connection"
     url: /parts/controller/opencm485exp/#power-circuit-connection
   - title: "EXP Board Programming"

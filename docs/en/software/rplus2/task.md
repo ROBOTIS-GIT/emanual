@@ -191,7 +191,7 @@ Task code is comprised of 3 elements (code lines, instructions, and parameters).
 
     ![](/assets/images/sw/rplus2/task/roboplus_task2_028.jpg)
 
-# [Programming(Edit)](#programming-edit)
+# [Programming(Edit)](#programmingedit)
 
 This section explains the basic editing functions used in R+ Task 2.0  
 
@@ -285,7 +285,7 @@ This section explains the basic editing functions used in R+ Task 2.0
 
     ![](/assets/images/sw/rplus2/task/roboplus_task2_045.jpg)
 
-# [Programming(Instructions)](#programming-instructions)
+# [Programming(Instructions)](#programminginstructions)
 
 This section explains the instructions used in R+ Task 2.0
 
@@ -557,7 +557,7 @@ By setting the repetition block and repetition condition, loop can be applied in
 
   ![](/assets/images/sw/rplus2/task/roboplus_task2_084.jpg)
 
-## [Function(Sub-Routine)](#function-sub-routine)
+## [Function(Sub-Routine)](#functionsub-routine)
 
 If a specific code is used repeatedly, or if you wish to classify an area of code as a unit that performs a specific behavior, you can group the lines of code as a Function.
 Refer to the following figure for details.
@@ -614,7 +614,7 @@ Refer to the following figure for details.
   ![](/assets/images/sw/rplus2/task/roboplus_task2_091.jpg)
 
 
-# [Programming(Parameters)](#programming-parameters)
+# [Programming(Parameters)](#programmingparameters)
 
 This section explains parameters used in R+ Task 2.0. It classifies the parameters that can be used by each device. Refer to the explanation and example codes of each item for details.
 

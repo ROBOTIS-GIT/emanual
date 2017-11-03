@@ -15,7 +15,7 @@ header:
 
 # ROBOTIS e-Manaul
 
-- [Previous e-Manual](support.robotis.com) will be served as well.
+- [Previous e-Manual] will be served as well.
 - New ROBOTIS Community [Forum] is available. Please checkout the [Forum] if you have any issue with ROBOTIS Products.
 
 # Quick References
@@ -76,3 +76,4 @@ header:
 [L54-30-S400-R]: /docs/en/dxl/pro/l54-30-s400-r/#control-table-of-eeprom-area
 [L42-10-S300-R]: /docs/en/dxl/pro/l42-10-s300-r/#control-table-of-eeprom-area
 [Forum]: http://www.robotis.com/service/forum.php
+[Previous e-Manual]: http://support.robotis.com

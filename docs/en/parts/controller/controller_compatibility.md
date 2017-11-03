@@ -82,7 +82,7 @@ permalink: /docs/en/parts/controller/controller_compatibility/
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 |R+ 1.0|O|O|O|O|O|O|O|X|O(X)|
 |R+ 2.0|O|O|O|O|O|O|O|X|O(X)|
-|OpenCM IDE||||||||||
+|OpenCM IDE|X|X|X|X|X|X|X|X|O|
 
 
 [ln-101]: /docs/en/parts/interface/ln-101/

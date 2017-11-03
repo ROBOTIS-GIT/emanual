@@ -172,9 +172,6 @@
 <loc>http://localhost:4000/docs/en/software/rplus1/task/getting_started/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/docs/kr/platform/thormang3/getting_started/</loc>
-</url>
-<url>
 <loc>http://localhost:4000/docs/kr/software/rplus1/task/getting_started/</loc>
 </url>
 <url>
@@ -395,9 +392,6 @@
 </url>
 <url>
 <loc>http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/</loc>

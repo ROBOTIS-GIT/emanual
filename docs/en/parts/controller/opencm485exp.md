@@ -46,7 +46,7 @@ sidebar:
 10. **JP1 Jumper** : Jumper that determines whether the power inputted onto OpenCM 485 EXP will be supplied to OpenCM9.04 board or not.
 
 
-# [Connecting OpenCM9.04](#connecting-opencm9-04)
+# [Connecting OpenCM9.04](#connecting-opencm904)
 
 1. Prepare OpenCM 485 EXP and OpenCM9.04 boards. Any version of OpenCM9.04 is compatible. Solder the header onto the OpenCM9.04.
     

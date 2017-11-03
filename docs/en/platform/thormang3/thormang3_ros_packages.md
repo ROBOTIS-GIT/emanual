@@ -16,7 +16,6 @@ sidebar:
 
 # [THORMANG3 ROS Packages](#thormang3-ros-packages)
 
-
 ## [MPC Packages](#mpc-packages)
 
 ### [thormang3_manager](#thormang3_manager)
@@ -25,24 +24,25 @@ sidebar:
 
 #### Download & Build
 
-    `Note` Reference : [MPC Installation]
-    {: .notice}
+`Reference` : [MPC Installation]
+{: .notice}
 
 #### Run
-    Execute the program with a .launch file in order to load ROS parameters. The command should be executed from the root account to configure the attribute of Thread.
+Execute the program with a .launch file in order to load ROS parameters. The command should be executed from the root account to configure the attribute of Thread.
 
-    ```
-    $ sudo bash
-    [sudo] password for robotis:
-    # roslaunch thormang3_manager thormang3_manager.launch
-    ```
+```
+$ sudo bash
+[sudo] password for robotis:
+# roslaunch thormang3_manager thormang3_manager.launch
+```
 
 #### ROS API
 
-+ Launch Parameters
+- Launch Parameters
+
   - **gazebo (bool, default: false)** : Configure whether to the program run in gazebo mode.
-  - **gazebo_robot_name (string, default: "")** : Configure the robot name for joint_state topic name when running in gazebo mode.
-  ex) If thormang3 is the gazebo_robot_name, /thormang3/joint_states will be subscribed.
+  - **gazebo_robot_name (string, default: "")** : Configure the robot name for joint_state topic name when running in gazebo mode.  
+    ex) If thormang3 is the gazebo_robot_name, /thormang3/joint_states will be subscribed.
   - **offset_file_path (string, default: "")** : This path indicates the location of the file that contains offset data of each joint and initial posture data for offset adjustment.
   - **robot_file_path (string, default: "")** : This path indicates the location of .robot file that contains robot data.
   - **init_file_path (string, default: "")** : This path indicates the location of the file that contains initialization information of each joint.
@@ -56,48 +56,47 @@ sidebar:
 
 In `CMakeList.txt`,
 
-```c++
+```
 find_package( thormang3_kinematics_dynamics )
 target_link_libraries( thormang3_kinematics_dynamics )
 ```
 
 In `package.xml`,
 
-```c++
+```
 <build_depend>thormang3_kinematics_dynamics</build_depend>
 ```
 
 #### Functions
 
 1. LinkData.cpp
-
-  + name : Joint name
-  + parent : Parent joint ID
-  + sibling : Sibling joint ID
-  + child : Child joint ID
-  + mass : Mass
-  + relative_position : Joint relative position (relative to parent)
-  + joint_axis : Joint axis vector (relative to parent)
-  + center_of_mass : Center of mass (Link Local)
-  + inertia : Moment of Inertia (Link Local)
-  + joint_limit_max : Joint upper limit
-  + joint_limit_min : Joint lower limit
-  + joint_angle : Joint angle
-  + joint_velocity : Joint velocity
-  + joint_acceleration : Joint acceleration
-  + position: Link position
-  + orientation : Link orientation
-  + transformation : Link transformation matrix
+    - name : Joint name
+    - parent : Parent joint ID
+    - sibling : Sibling joint ID
+    - child : Child joint ID
+    - mass : Mass
+    - relative_position : Joint relative position (relative to parent)
+    - joint_axis : Joint axis vector (relative to parent)
+    - center_of_mass : Center of mass (Link Local)
+    - inertia : Moment of Inertia (Link Local)
+    - joint_limit_max : Joint upper limit
+    - joint_limit_min : Joint lower limit
+    - joint_angle : Joint angle
+    - joint_velocity : Joint velocity
+    - joint_acceleration : Joint acceleration
+    - position: Link position
+    - orientation : Link orientation
+    - transformation : Link transformation matrix
 
 2. ThorMang3KinematicsDynamics.cpp
 
-  + THORMANG3 joint & link information
+  - THORMANG3 joint & link information
 
     ```c++
     ThorMang3KinematicsDynamics(TREE_SELECT tree)
     ```
 
-  + Find kinematics tree
+  - Find kinematics tree
     - arguments : start joint id
     - return value : vector ( n x 1 )
 
@@ -105,7 +104,7 @@ In `package.xml`,
     std::vector<int> findRoute( int to )
     ```
 
-  + Find kinematics tree
+  - Find kinematics tree
     - arguments : start joint id and end joint id
     - return value : vector ( n x 1 )
 
@@ -113,7 +112,7 @@ In `package.xml`,
     std::vector<int> findRoute( int from , int to )
     ```
 
-  + Calculate total mass
+  - Calculate total mass
     - arguments : start joint id
     - return value : total mass
 
@@ -121,7 +120,7 @@ In `package.xml`,
     double TotalMass( int joint_ID )
     ```
 
-  + Calculate center of mass
+  - Calculate center of mass
     - arguments : start joint id
     - return value : 3 x 1 matrix
 
@@ -130,14 +129,14 @@ In `package.xml`,
     Eigen::MatrixXd CalcCOM( Eigen::MatrixXd MC )
     ```
 
-  + Calculate forward kinematics
+  - Calculate forward kinematics
     - arguments : start joint id
 
     ```c++
     void ForwardKinematics( int joint_ID )
     ```
 
-  + Calculate forward kinematics
+  - Calculate forward kinematics
     - arguments : vector ( n x 1 )
     - return value : 6 x n matrix
 
@@ -145,7 +144,7 @@ In `package.xml`,
     Eigen::MatrixXd CalcJacobian( std::vector<int> idx )
     ```
 
-  + Calculate inverse kinematics
+  - Calculate inverse kinematics
     - arguments : end joint id, target position, target orientation, max iteration, calculation error
     - return value : true or false
 
@@ -156,7 +155,7 @@ In `package.xml`,
       int max_iter,                 double ik_err )
     ```
 
-  + Calculate inverse kinematics
+  - Calculate inverse kinematics
     - arguments : start joint id, end joint id, target position, target orientation, max iteration, calculation error
     - return value : true or false
 
@@ -167,7 +166,7 @@ In `package.xml`,
       int max_iter,                 double ik_err )
     ```
 
-  + Calculate inverse kinematics for leg
+  - Calculate inverse kinematics for leg
     - arguments : output, target position (x y z), target orientation (roll pitch yaw)
     - return value : true or false
 
@@ -178,7 +177,7 @@ In `package.xml`,
       double roll, double pitch, double yaw )
     ```
 
-  + Calculate inverse kinematics for right leg
+  - Calculate inverse kinematics for right leg
     - arguments : output, target position (x y z), target orientation (roll pitch yaw)
     - return value : true or false
 
@@ -189,7 +188,7 @@ In `package.xml`,
       double roll, double pitch, double yaw);
     ```
 
-  + Calculate inverse kinematics for left leg
+  - Calculate inverse kinematics for left leg
     - arguments : output, target position (x y z), target orientation (roll pitch yaw)
     - return value : true or false
 
@@ -206,7 +205,7 @@ In `package.xml`,
 The motion file is edited with thormang3_action_editor
 
 #### Download & Build
-  `Note` Reference : [MPC Installation]
+  `Reference` : [MPC Installation]
   {: .notice}
 
 #### ROS API
@@ -235,12 +234,12 @@ The motion file is edited with thormang3_action_editor
 
 #### Download & Build
 
-  `Note` Reference : [MPC Installation]
+  `Reference` : [MPC Installation]
   {: .notice}
 
   The Motion Module is used in the manager as a form of library.
 
-  `Note` Reference : Creating new robot manager
+  `Reference` : Creating new robot manager
   {: .notice}
 
 #### ROS API
@@ -263,7 +262,7 @@ THORMANG3 manipulation module for the upper body.
 
 #### Download & Build
 
-  `Note` Reference : [MPC Installation]
+  `Reference` : [MPC Installation]
   {: .notice}
 
 #### ROS API
@@ -310,7 +309,7 @@ Users can designate almost all Step Parameters.(thormang3_walking_module_msgs/St
 
 #### Download & Build
 
-  `Note` Reference : [MPC Installation]
+  `Reference` : [MPC Installation]
   {: .notice}
 
 #### ROS API
@@ -348,10 +347,10 @@ This module is to control the head. This module is included in the Thormang3 Man
 
 #### Download & Build
 
-  `Note` Reference : [MPC Installation]
+  `Reference` : [MPC Installation]
   {: .notice}
 
-`Note` Reference : Creating new robot manager
+`Reference` : Creating new robot manager
 {: .notice}
 
 #### ROS API
@@ -544,7 +543,7 @@ Acquired sensor values when the robot is hanging on the lift and standing on the
 
 #### Download & Build
 
-  `Note` Reference : [MPC Installation]
+  `Reference` : [MPC Installation]
   {: .notice}
 
 #### ROS API
@@ -557,7 +556,7 @@ Acquired sensor values when the robot is hanging on the lift and standing on the
   - `/robotis/status` (robotis_controller_msgs/StatusMsg)  
     The status message of THORMANG3
 
-  -`/robotis/feet_ft/both_ft_value` (thormang3_feet_ft_module_msgs/BothWrench)  
+  - `/robotis/feet_ft/both_ft_value` (thormang3_feet_ft_module_msgs/BothWrench)  
     Both Wrench
 
   - `/robotis/sensor/ft_right_foot/raw` (geometry_msgs/WrenchStamped)  
@@ -578,7 +577,7 @@ Library for using Balance Algorithm of THORMANG3 in ROS. There is two kinds of a
 
 #### Download & Build
 
-  `Note` Reference : [MPC Installation]
+  `Reference` : [MPC Installation]
   {: .notice}
 
 #### Functions and Variables
@@ -600,7 +599,7 @@ void setCutOffFrequency(double cut_off_frequency)
 ```
 
 - arguments :
-    -cut off frequency : desired cut off frequency for filtering. If cut_off_frequency is less than 0, filtering is not performed.
+    - cut off frequency : desired cut off frequency for filtering. If cut_off_frequency is less than 0, filtering is not performed.
 - description : the function for setting cut off frequency
 - return value : void
 
@@ -795,10 +794,11 @@ void setCurrentOrientationSensorOutput(double cob_orientation_roll, double cob_o
   - return value : void
 
 ```
-void setCurrentFootForceTorqueSensorOutput(double r_force_x_N,      double r_force_y_N,       double r_force_z_N,  
-                                           double r_torque_roll_Nm, double r_torque_pitch_Nm, double r_torque_yaw_Nm,  
-                                           double l_force_x_N,      double l_force_y_N,       double l_force_z_N,  
-                                             double l_torque_roll_Nm, double l_torque_pitch_Nm, double l_torque_yaw_Nm)
+void setCurrentFootForceTorqueSensorOutput(
+  double r_force_x_N,      double r_force_y_N,       double r_force_z_N,  
+  double r_torque_roll_Nm, double r_torque_pitch_Nm, double r_torque_yaw_Nm,  
+  double l_force_x_N,      double l_force_y_N,       double l_force_z_N,  
+  double l_torque_roll_Nm, double l_torque_pitch_Nm, double l_torque_yaw_Nm)
 ```  
   - arguments :
       - r_force_x_N : current x directional force on right foot with respect to robot's local coordinate
@@ -817,10 +817,11 @@ void setCurrentFootForceTorqueSensorOutput(double r_force_x_N,      double r_for
   - return value : void
 
 ```
-void setMaximumAdjustment(double cob_x_max_adjustment_m,  double cob_y_max_adjustment_m,  double cob_z_max_adjustment_m,  
-                          double cob_roll_max_adjustment_rad, double cob_pitch_max_adjustment_rad, double cob_yaw_max_adjustment_rad,  
-                          double foot_x_max_adjustment_m, double foot_y_max_adjustment_m, double foot_z_max_adjustment_m,  
-                          double foot_roll_max_adjustment_rad, double foot_pitch_max_adjustment_rad, double foot_yaw_max_adjustment_rad)
+void setMaximumAdjustment(
+  double cob_x_max_adjustment_m, double cob_y_max_adjustment_m, double cob_z_max_adjustment_m,  
+  double cob_roll_max_adjustment_rad, double cob_pitch_max_adjustment_rad, double cob_yaw_max_adjustment_rad,  
+  double foot_x_max_adjustment_m, double foot_y_max_adjustment_m, double foot_z_max_adjustment_m,  
+  double foot_roll_max_adjustment_rad, double foot_pitch_max_adjustment_rad, double foot_yaw_max_adjustment_rad)
 ```  
   - arguments :
       - cob_x_max_adjustment_m : the maximum x directinal linear modification of center of body
@@ -839,7 +840,8 @@ void setMaximumAdjustment(double cob_x_max_adjustment_m,  double cob_y_max_adjus
   - return value : void
 
 ```
-void setCOBManualAdjustment(double cob_x_adjustment_m, double cob_y_adjustment_m, double cob_z_adjustment_m)
+void setCOBManualAdjustment(
+  double cob_x_adjustment_m, double cob_y_adjustment_m, double cob_z_adjustment_m)
 ```
   - arguments :
       - cob_x_adjustment_m : the x offset of center of body
@@ -873,7 +875,7 @@ double getCOBManualAdjustmentZ()
 void setGyroBalanceGainRatio(double gyro_balance_gain_ratio)
 ```
   - arguments :
-  - gyro_balance_gain_ratio : gyro balance gain
+    - gyro_balance_gain_ratio : gyro balance gain
   - description : the function for setting gyro balance gain
   - return value : void
 
@@ -979,7 +981,11 @@ void setForceTorqueBalanceEnable(bool enable)
   - return value : void
 
 ```
-void process(int *balance_error, Eigen::MatrixXd *robot_to_cob_modified, Eigen::MatrixXd *robot_to_right_foot_modified, Eigen::MatrixXd *robot_to_left_foot_modified)
+void process(
+  int *balance_error, 
+  Eigen::MatrixXd *robot_to_cob_modified,
+  Eigen::MatrixXd *robot_to_right_foot_modified, 
+  Eigen::MatrixXd *robot_to_left_foot_modified)
 ```
   - arguments :
       - balance_error : the one of below values would be returned
@@ -992,7 +998,10 @@ void process(int *balance_error, Eigen::MatrixXd *robot_to_cob_modified, Eigen::
   - return value : void
 
 ```
-void setDesiredPose(const Eigen::MatrixXd &robot_to_cob, const Eigen::MatrixXd &robot_to_right_foot, const Eigen::MatrixXd &robot_to_left_foot)
+void setDesiredPose(
+  const Eigen::MatrixXd &robot_to_cob, 
+  const Eigen::MatrixXd &robot_to_right_foot, 
+  const Eigen::MatrixXd &robot_to_left_foot)
 ```
   - arguments :
       - robot_to_cob : desired pose of center of body with respect to robot's local coordinate
@@ -1011,7 +1020,8 @@ void setDesiredCOBGyro(double gyro_roll, double gyro_pitch)
   - return value : void
 
 ```
-void setDesiredCOBOrientation(double cob_orientation_roll, double cob_orientation_pitch)
+void setDesiredCOBOrientation(
+  double cob_orientation_roll, double cob_orientation_pitch)
 ```
   - arguments :
       - cob_orientation_roll : desired roll angle in radian of robot's local coordinate
@@ -1020,10 +1030,11 @@ void setDesiredCOBOrientation(double cob_orientation_roll, double cob_orientatio
   - return value : void
 
 ```
-void setDesiredFootForceTorque(double r_force_x_N,      double r_force_y_N,       double r_force_z_N,
-                                 double r_torque_roll_Nm, double r_torque_pitch_Nm, double r_torque_yaw_Nm,
-                                 double l_force_x_N,      double l_force_y_N,       double l_force_z_N,
-                                 double l_torque_roll_Nm, double l_torque_pitch_Nm, double l_torque_yaw_Nm)
+void setDesiredFootForceTorque(
+  double r_force_x_N,      double r_force_y_N,       double r_force_z_N,
+  double r_torque_roll_Nm, double r_torque_pitch_Nm, double r_torque_yaw_Nm,
+  double l_force_x_N,      double l_force_y_N,       double l_force_z_N,
+  double l_torque_roll_Nm, double l_torque_pitch_Nm, double l_torque_yaw_Nm)
 ```
   - arguments :
       - r_force_x_N : desired x directional force on right foot with respect to robot's local coordinate
@@ -1060,10 +1071,11 @@ void setCurrentOrientationSensorOutput(double cob_orientation_roll, double cob_o
   - return value : void
 
 ```
-void setCurrentFootForceTorqueSensorOutput(double r_force_x_N,      double r_force_y_N,       double r_force_z_N,
-                                           double r_torque_roll_Nm, double r_torque_pitch_Nm, double r_torque_yaw_Nm,
-                                           double l_force_x_N,      double l_force_y_N,       double l_force_z_N,
-                                           double l_torque_roll_Nm, double l_torque_pitch_Nm, double l_torque_yaw_Nm)
+void setCurrentFootForceTorqueSensorOutput(
+  double r_force_x_N,      double r_force_y_N,       double r_force_z_N,
+  double r_torque_roll_Nm, double r_torque_pitch_Nm, double r_torque_yaw_Nm,
+  double l_force_x_N,      double l_force_y_N,       double l_force_z_N,
+  double l_torque_roll_Nm, double l_torque_pitch_Nm, double l_torque_yaw_Nm)
 ```
   - arguments :
       - r_force_x_N : current x directional force on right foot with respect to robot's local coordinate
@@ -1082,10 +1094,11 @@ void setCurrentFootForceTorqueSensorOutput(double r_force_x_N,      double r_for
   - return value : void
 
 ```
-void setMaximumAdjustment(double cob_x_max_adjustment_m,  double cob_y_max_adjustment_m,  double cob_z_max_adjustment_m,
-                          double cob_roll_max_adjustment_rad, double cob_pitch_max_adjustment_rad, double cob_yaw_max_adjustment_rad,
-                          double foot_x_max_adjustment_m, double foot_y_max_adjustment_m, double foot_z_max_adjustment_m,
-                          double foot_roll_max_adjustment_rad, double foot_pitch_max_adjustment_rad, double foot_yaw_max_adjustment_rad)
+void setMaximumAdjustment(
+  double cob_x_max_adjustment_m,  double cob_y_max_adjustment_m,  double cob_z_max_adjustment_m,
+  double cob_roll_max_adjustment_rad, double cob_pitch_max_adjustment_rad, double cob_yaw_max_adjustment_rad,
+  double foot_x_max_adjustment_m, double foot_y_max_adjustment_m, double foot_z_max_adjustment_m,
+  double foot_roll_max_adjustment_rad, double foot_pitch_max_adjustment_rad, double foot_yaw_max_adjustment_rad)
 ```
   - arguments :
       - cob_x_max_adjustment_m : the maximum x directinal linear modification of center of body
@@ -1277,7 +1290,7 @@ This is the modified version of KumarRobotics/imu_3dm_gx4.
 
 #### Download & Build
 
-`Note` Reference : [MPC Installation]
+`Reference` : [MPC Installation]
 
 #### ROS API
 
@@ -1290,7 +1303,7 @@ Present output of the IMU Sensor
 
 ## [PPC Packages](#ppc-packages)
 
-### [thormang3_sensors](#thormang3-sensors)
+### [thormang3_sensors](#thormang3_sensors)
 
 Thormang3 sensor related package.  
 This package contains sensor related launch files.  
@@ -1298,7 +1311,7 @@ The package also includes a node for assembling Laserscan(LaserScan to PointClou
 
 #### Download & Build
 
-  `Note` Reference : [PPC Installation]
+  `Reference` : [PPC Installation]
   {: .notice}
   
 #### Run
@@ -1336,7 +1349,7 @@ $ roslaunch thormang3_sensors thormang3_sensors.launch
 `/robotis/sensor/service/assemble_scan2`([laser_assembler/AssembleScan2])  
   Get assembled PointCloud from the Service with LaserScan start/end parameters.
 
-### [thormang3_simple_demo](#thormang3-simple-demo)
+### [thormang3_simple_demo](#thormang3_simple_demo)
 
 #### thormang3_manipulation_demo
 
@@ -1344,7 +1357,7 @@ Thormang3 manipulation simple demonstration
 
 ##### Download & Build
 
-  `Note` Reference : [PPC Installation]
+  `Reference` : [PPC Installation]
   {: .notice}
   
 ##### Run
@@ -1378,7 +1391,7 @@ Thormang3 Walking simple demonstration
 
 ##### Download & Build
 
-  `Note` Reference : [PPC Installation]
+  `Reference` : [PPC Installation]
   {: .notice}
   
 ##### Run
@@ -1416,7 +1429,7 @@ Thormang3 Walking simple demonstration
 
 ## [OPC Packages](#opc-packages)
 
-### [humanoid_navigation](#humanoid-navigation)
+### [humanoid_navigation](#humanoid_navigation)
 
 - `Reference` : http://wiki.ros.org/humanoid_navigation
 - `Source` : https://github.com/AravindaDP/humanoid_navigation
@@ -1435,13 +1448,13 @@ $ sudo apt-get install ros-kinetic-octomap-server
 ```
 
 - Building and Installing from source
-  - sbpl(https://github.com/sbpl/sbpl)
+  - sbpl([https://github.com/sbpl/sbpl](https://github.com/sbpl/sbpl))
 
 #### footstep_planner
 
 The footstep planner for humanoids or bipedal robots.
 
-- `Reference` : http://wiki.ros.org/footstep_planner
+- `Reference` : [http://wiki.ros.org/footstep_planner](http://wiki.ros.org/footstep_planner)
 
 ##### RUN
 
@@ -1457,13 +1470,13 @@ $ roslaunch footstep_planner thormang3_footstep_planner.launch
 
 #### gridmap_2d
 
-- `Reference` : http://wiki.ros.org/gridmap_2d
+- `Reference` : [http://wiki.ros.org/gridmap_2d](http://wiki.ros.org/gridmap_2d)
 
 #### humanoid_localization
 
-- `Reference` : http://wiki.ros.org/humanoid_localization
+- `Reference` : [http://wiki.ros.org/humanoid_localization](http://wiki.ros.org/humanoid_localization)
 
-### [thormang3_demo](#thormang3-demo)
+### [thormang3_demo](#thormang3_demo)
 
 The package for THORMANG3 demonstration.  
 Initial posture, walking, manipulation, head control are available with this package.  
@@ -1473,7 +1486,7 @@ Feet ft calibration, Pointcloud conversion are available with this package.
 
 #### Download & Build
 
-  `Note` Reference : [OPC Installation]
+  `Reference` : [OPC Installation]
   {: .notice}
 
 #### Run  
@@ -1483,11 +1496,10 @@ Execute the launch file
 $ roslaunch thormang3_demo thormang3_demo.launch
 ```
 
-Configuration file used in `thormang3_demo`  
-> config/demo_config.yaml
-> * id_joint : id and joint name tables
-> * module_list : Module name displayed on each joint in the demo program.
-> * module_button : Modules to configure with the manager (index : module name)
+- Configuration file used in `thormang3_demo`(config/demo_config.yaml)  
+  > id_joint : id and joint name tables
+  > module_list : Module name displayed on each joint in the demo program.
+  > module_button : Modules to configure with the manager (index : module name)
   
 #### ROS API  
 
@@ -1566,7 +1578,7 @@ Configuration file used in `thormang3_demo`
 `~demo_config`(string, default: /config/demo_config.yaml)  
   Configuration file path of the demo program.
 
-### [thormang3_action_script_player](#thormang3-action-script-player)
+### [thormang3_action_script_player](#thormang3_action_script_player)
 
 The Node that can play a action script.  
 The default action script is in the "thormang3_action_script_player/script/action_script.yaml".  
@@ -1575,7 +1587,7 @@ The thormang3_action_script_player is used with [thormang3_action_module](thorma
 
 #### Download & Build
 
-  `Note` Reference : [OPC Installation]
+  `Reference` : [OPC Installation]
   {: .notice}
 
 #### Run  
@@ -1616,14 +1628,14 @@ There are below four cmd_name in the action script.
 `/action_script_file_path`(string, default : "thormang3_action_script_player/script/action_script.yaml")  
   The location of action script file.  
 
-### [thormang3_foot_step_generator](#thormang3-foot-step-generator)
+### [thormang3_foot_step_generator](#thormang3_foot_step_generator)
 
 The Node that can create a basic Step Data.  
 Based on the simple Parameter from Topic, the package creates StepData and transmit it to [thormang3_walking_module].  
   
 #### Download & Build
 
-  `Note` Reference : [OPC Installation]
+  `Reference` : [OPC Installation]
   {: .notice}
 
 #### Run  
@@ -1658,14 +1670,14 @@ Based on the simple Parameter from Topic, the package creates StepData and trans
 * [Step2D.msg]
 * [Step2DArray.msg]
 
-### [thormang3_offset_tuner_client](#thormang3-offset-tuner-client)
+### [thormang3_offset_tuner_client](#thormang3_offset_tuner_client)
 
 The GUI Node that can adjust offset of THORMANG3.
 It is used with the [thormang3_offset_tuner_server].
 
 #### Download & Build
 
-  `Note` Reference : [OPC Installation]
+  `Reference` : [OPC Installation]
   {: .notice}
 
 #### Run  
@@ -1695,7 +1707,7 @@ $ rosrun thormang3_offset_tuner_client thormang3_offset_tuner_client
 
 ## [Common Packages](#common-packages)
 
-### [thormang3_description](#thormang3-description)
+### [thormang3_description](#thormang3_description)
 
 Thormang3 URDF Model
 
@@ -1708,7 +1720,7 @@ Thormang3 URDF Model
   - src : ROS node for Rviz to publish imaginary gripper joint
   - urdf : urdf & xacro files for Thormang3 model
 
-### [thormang3_gazebo](#thormang3-gazebo)
+### [thormang3_gazebo](#thormang3_gazebo)
 
 Thormang3 Gazebo Simulation
 
@@ -1721,7 +1733,7 @@ Thormang3 Gazebo Simulation
 
 ## [Tools Packages](#tools-packages)
 
-### [thormang3_offset_tuner_server](#thormang3-offset-tuner-server)
+### [thormang3_offset_tuner_server](#thormang3_offset_tuner_server)
 
 THORMANG3 Offset Tuner Node   
 Data related to the Offset can be Tuned, Loaded and Saved.   
@@ -1729,7 +1741,7 @@ It is used with the [thormang3_offset_tuner_client].
 
 #### Download & Build
 
-  `Note` Reference : [MPC Installation]
+  `Reference` : [MPC Installation]
   {: .notice}
 
 #### Run  
@@ -1759,7 +1771,7 @@ $ roslaunch thormang3_offset_tuner_server thormang3_offset_tuner_server.launch
 `robotis/offset_tuner/get_present_joint_offset_data`([thormang3_offset_tuner_msgs/GetPresentJointOffsetData])  
   The service obtains current offset data from the [thormang3_offset_tuner_client].  
 
-### [thormang3_action_editor](#thormang3-action-editor)
+### [thormang3_action_editor](#thormang3_action_editor)
 
 THORMANG3 Action Editor Node   
 The action file can be edited by this action editor.   
@@ -1775,7 +1787,7 @@ The action file contains 256 pages. Each page can store up to 7 stages (or steps
 
 #### Download & Build
 
-  `Note` Reference : [MPC Installation]
+  `Reference` : [MPC Installation]
   {: .notice}
 
 #### Run  
@@ -1882,20 +1894,20 @@ After typing "help", the commend list will appear as shown below.
 
 ## [THORMANG msgs Package](#thormang-msgs-package)
 
-### [thormang3_action_module_msgs](#thormang3-action-module-msgs)
+### [thormang3_action_module_msgs](#thormang3_action_module_msgs)
 
 The followings are Messages and Services used for the [thormang3_action_module].
 
 - ROS Message Type : [StartAction.msg]
 - ROS Service Type : [IsRunning.srv]
 
-### [thormang3_feet_ft_module_msgs](#thormang3-feet-ft-module-msgs)
+### [thormang3_feet_ft_module_msgs](#thormang3_feet_ft_module_msgs)
 
 Message used in the [thormang3_feet_ft_module].
 
 - ROS Message Type : [BothWrench.msg]
 
-### [thormang3_manipulation_module_msgs](#thormang3-manipulation-module-msgs)
+### [thormang3_manipulation_module_msgs](#thormang3_manipulation_module_msgs)
 
 Messages and Services used in the [thormang3_manipulation_module]
 
@@ -1907,7 +1919,7 @@ Messages and Services used in the [thormang3_manipulation_module]
   - [GetJointPose.srv]
   - [GetKinematicsPose.srv]
 
-### [thormang3_walking_module_msgs](#thormang3-walking-module-msgs)
+### [thormang3_walking_module_msgs](#thormang3_walking_module_msgs)
 
 Messages and Services used in the [thormang3_walking_module].
 
@@ -1933,13 +1945,13 @@ Messages and Services used in the [thormang3_walking_module].
   - [SetJointFeedBackGain.srv]
   - [StartWalking.srv]
 
-### [thormang3_head_control_module_msgs](#thormang3-head-control-module-msgs)
+### [thormang3_head_control_module_msgs](#thormang3_head_control_module_msgs)
 
 Messages used in the [thormang3_head_control_module]
 
 - ROS Message Type : [HeadJointPose.msg]
 
-### [thormang3_offset_tuner_msgs](#thormang3-offset-tuner-msgs)
+### [thormang3_offset_tuner_msgs](#thormang3_offset_tuner_msgs)
 
 The following are Messages and Service used for the thormang3_offset_tuner_server and the [thormang3_offset_tuner_client].
 

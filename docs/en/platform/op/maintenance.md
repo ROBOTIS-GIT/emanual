@@ -468,7 +468,7 @@ You may run your own maintenance check should DARWIN-OP have some anomalies.
 
 ## [Recovery](#recovery)
 
-### [Recovery(Ubuntu 9.10)](#recovery-ubuntu-9-10)
+### [Recovery(Ubuntu 9.10)](#recoveryubuntu-910)
 
 #### Install Ubuntu 9.10
 
@@ -606,7 +606,7 @@ Refer to [Firmware Installer] section.
 Refer to [Dynamixel Monitor] section.
 Use **reset all** command.
 
-### [Recovery(Linux Mint 9)](#recovery-linux-mint-9)
+### [Recovery(Linux Mint 9)](#recoverylinux-mint-9)
 
 #### Install Linux Mint 9
 

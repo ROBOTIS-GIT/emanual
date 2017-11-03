@@ -355,7 +355,7 @@ Operating PC is used to control the robot from the outside.
 
 ![](/assets/images/platform/thormang3/thormang3_047.png)
 
-### [Remote Control(GUI Demo)](#remote-control-gui-demo)
+### [Remote Control(GUI Demo)](#remote-controlgui-demo)
 Demo program for remote control is provided.  
 Walking, manipulation, head control are provided.  
 
@@ -719,7 +719,7 @@ $ roslaunch thormang3_gazebo robotis_world.launch
   - Green LED : Repeater Mode
   - Red LED : AP Mode
 
-  ![](/assets/images/platform/thormang3/thormang3_077.jpg)
+    ![](/assets/images/platform/thormang3/thormang3_077.jpg)
 
 2. Connect to Router  
   - Default Wi-Fi Name:
@@ -738,7 +738,7 @@ $ roslaunch thormang3_gazebo robotis_world.launch
   - Select “예” and click “APPLY” button.
   The language has been changed.
 
-  ![](/assets/images/platform/thormang3/thormang3_078.jpg)
+    ![](/assets/images/platform/thormang3/thormang3_078.jpg)
        
 4. Disable the IPTV Availability.  
   In order to use Port 4, IPTV Availability should be disabled.To use Port 4 must disable IPTV Availability.   
@@ -746,7 +746,7 @@ $ roslaunch thormang3_gazebo robotis_world.launch
   - “IPTV Availability” > Select “Disable” > Click “APPLY” button
   - Reboot the router.
 
-  ![](/assets/images/platform/thormang3/thormang3_079.jpg)
+    ![](/assets/images/platform/thormang3/thormang3_079.jpg)
 
 ## [LiDAR IP Setting](#lidar-ip-setting)
 
@@ -760,11 +760,11 @@ $ roslaunch thormang3_gazebo robotis_world.launch
   
   1. Remove the rubber cap that covers the IP reset button.
 
-    ![](/assets/images/platform/thormang3/thormang3_080.jpg)
+      ![](/assets/images/platform/thormang3/thormang3_080.jpg)
  
   2. Press the switch inside the hole for more than 3 seconds, using a thin stick.
 
-    ![](/assets/images/platform/thormang3/thormang3_081.jpg)
+      ![](/assets/images/platform/thormang3/thormang3_081.jpg)
  
 Restart the sensor when the LED blinks, the IP setting will be completed.  
 The following table shows the network settings after the reset.
@@ -779,11 +779,11 @@ The following table shows the network settings after the reset.
 - Change the IP Setting
   1. Below is the screen shot of IP changer’s screen shot.
 
-    ![](/assets/images/platform/thormang3/thormang3_082.jpg)
+      ![](/assets/images/platform/thormang3/thormang3_082.jpg)
 
   2. Change the IP address and push “Update” button. (The “Update” button can be pushed only when the sensor is connected.)
 
-    ![](/assets/images/platform/thormang3/thormang3_083.jpg)
+      ![](/assets/images/platform/thormang3/thormang3_083.jpg)
 
 ## [System Block Diagram](#system-block-diagram)
 
@@ -792,17 +792,17 @@ The following table shows the network settings after the reset.
 ## [Technical Specifications](#technical-specifications)
 
 1. PC
-  - nuc5i5RYK(http://www.intel.com/content/www/us/en/nuc/products-overview.html)
-  - Technical Product Specification(http://www.intel.com/content/www/us/en/support/boards-and-kits/000005545.html)
+  - [nuc5i5RYK](http://www.intel.com/content/www/us/en/nuc/products-overview.html)
+  - [Technical Product Specification](http://www.intel.com/content/www/us/en/support/boards-and-kits/000005545.html)
   
-  ![](/assets/images/platform/thormang3/thormang3_084.png)
- 
+    ![](/assets/images/platform/thormang3/thormang3_084.png)
+
 2. Actuators
   - [H54-200-S500-R] x10
   - [H54-100-S500-R] x11
   - [H42-20-S300-R] x8
 
-  ![](/assets/images/platform/thormang3/thormang3_085.jpg)
+    ![](/assets/images/platform/thormang3/thormang3_085.jpg)
 
 3. Sensors
   - 6-axis force-torque sensor([ATi Mini58-SI-2800-120](http://www.ati-ia.com/products/ft/ft_models.aspx?id=Mini58))
