@@ -146,7 +146,7 @@
                 {% if shoulderurl %}
                   {% if shoulderurl contains "://" %}<a href="{{ shoulderurl }}">{% else %}
                     <a href="{{ site.url }}{{ site.baseurl }}/docs/{{ page.lang }}{{ shoulderurl }}">{% endif %}{% else %}
-                <a>{% endif %}{{ shouldertitle }}</a>
+                <a>{% endif %}{% if shouldertitle contains '*' %}<font color=#ccc>{{ shouldertitle }}</font>{% else %}{{ shouldertitle }}{% endif %}</a>
               {% endif %}
 
               {% if shoulder.children != null %}
@@ -210,7 +210,8 @@
 
                   {% if kneetitle %}
                     {% if kneeurl %}
-                      {% if kneeurl contains "://" %}<a href="{{ kneeurl }}">{% else %}<a href="{{ site.url }}{{ site.baseurl }}/docs/{{ page.lang }}{{ kneeurl }}">{% endif %}{% else %}<a>{% endif %}{{ kneetitle }}</a>
+                      {% if kneeurl contains "://" %}<a href="{{ kneeurl }}">{% else %}<a href="{{ site.url }}{{ site.baseurl }}/docs/{{ page.lang }}{{ kneeurl }}">{% endif %}{% else %}
+                        <a>{% endif %}{% if kneetitle contains '*' %}<font color=#ccc>{{ kneetitle }}</font>{% else %}{{ kneetitle }}{% endif %}</a>
                     {% endif %}
                 {% endfor %}
               </div>

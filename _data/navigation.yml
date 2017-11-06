@@ -16,38 +16,38 @@ main:
       - title: "AX-18F/18A"
         titlekr: "AX-18F/18A"
         url: /dxl/ax/ax-18a/
-    - title: "EX Series"
-      titlekr: "EX 시리즈"
+    - title: "*EX Series"
+      titlekr: "*EX 시리즈"
       children:
-      - title: "EX-106+"
-        titlekr: "EX-106+"
+      - title: "*EX-106+"
+        titlekr: "*EX-106+"
         url: /dxl/ex/ex-106+/
-    - title: "DX Series"
-      titlekr: "DX 시리즈"
+    - title: "*DX Series"
+      titlekr: "*DX 시리즈"
       children:
-      - title: "DX-113"
-        titlekr: "DX-113"
+      - title: "*DX-113"
+        titlekr: "*DX-113"
         url: /dxl/dx/dx-113/
-      - title: "DX-116"
-        titlekr: "DX-116"
+      - title: "*DX-116"
+        titlekr: "*DX-116"
         url: /dxl/dx/dx-116/
-      - title: "DX-117"
-        titlekr: "DX-117"
+      - title: "*DX-117"
+        titlekr: "*DX-117"
         url: /dxl/dx/dx-117/
-    - title: "RX Series"
-      titlekr: "RX 시리즈"
+    - title: "*RX Series"
+      titlekr: "*RX 시리즈"
       children:
-      - title: "RX-10"
-        titlekr: "RX-10"
+      - title: "*RX-10"
+        titlekr: "*RX-10"
         url: /dxl/rx/rx-10/
-      - title: "RX-24F"
-        titlekr: "RX-24F"
+      - title: "*RX-24F"
+        titlekr: "*RX-24F"
         url: /dxl/rx/rx-24f/
-      - title: "RX-28"
-        titlekr: "RX-28"
+      - title: "*RX-28"
+        titlekr: "*RX-28"
         url: /dxl/rx/rx-28/
-      - title: "RX-64"
-        titlekr: "RX-64"
+      - title: "*RX-64"
+        titlekr: "*RX-64"
         url: /dxl/rx/rx-64/
     - title: "MX Series"
       titlekr: "MX 시리즈"
@@ -122,15 +122,15 @@ main:
         url: /dxl/pro/m54-40-s250-r/
       - title: "M42-10-S260-R"
         url: /dxl/pro/m42-10-s260-r/
-      - title: "L54-50-S500-R"
+      - title: "*L54-50-S500-R"
         url: /dxl/pro/l54-50-s500-r/
-      - title: "L54-50-S290-R"
+      - title: "*L54-50-S290-R"
         url: /dxl/pro/l54-50-s290-r/
-      - title: "L54-30-S500-R"
+      - title: "*L54-30-S500-R"
         url: /dxl/pro/l54-30-s500-r/
-      - title: "L54-30-S400-R"
+      - title: "*L54-30-S400-R"
         url: /dxl/pro/l54-30-s400-r/
-      - title: "L42-10-S300-R"
+      - title: "*L42-10-S300-R"
         url: /dxl/pro/l42-10-s300-r/
     - title: "Procotol 1.0"
       titlekr: "프로토콜 1.0"
@@ -147,8 +147,8 @@ main:
     titlejp: "プラットフォーム"
     titlecn: "平台"
     children:
-    - title: "OP"
-      titlekr: "OP"
+    - title: "*OP"
+      titlekr: "*OP"
       url: /platform/op/getting_started/
     - title: "OP2"
       titlekr: "OP2"
@@ -180,25 +180,25 @@ main:
     titlejp: "トレーニングキット"
     titlecn: "培训工具包"
     children:
-    - title: "OLLO"
-      titlekr: "올로"
-      titlejp: "OLLO"
-      titlecn: "OLLO"
+    - title: "*OLLO"
+      titlekr: "*올로"
+      titlejp: "*OLLO"
+      titlecn: "*OLLO"
       children:
-      - title: "BUG KIT"
-        titlekr: "버그 키트"
-        titlejp: "BUG KIT"
+      - title: "*BUG KIT"
+        titlekr: "*버그 키트"
+        titlejp: "*BUG KIT"
         url: /edu/ollo/bugkit/
-      - title: "EXPLORER"
-        titlekr: "2단계 교육키트"
-        titlejp: "Level 2 Kit"
+      - title: "*EXPLORER"
+        titlekr: "*2단계 교육키트"
+        titlejp: "*Level 2 Kit"
         url: /edu/ollo/explore/
-      - title: "INVENTOR"
-        titlekr: "3단계 교육키트"
-        titlejp: "Level 3 Kit"
+      - title: "*INVENTOR"
+        titlekr: "*3단계 교육키트"
+        titlejp: "*Level 3 Kit"
         url: /edu/ollo/inventor/
-      - titlekr: "4단계 교육키트"
-        titlejp: "Level 4 Kit"
+      - titlekr: "*4단계 교육키트"
+        titlejp: "*Level 4 Kit"
     - title: "DREAM"
       titlekr: "드림 I"
       children:
@@ -419,10 +419,10 @@ main:
       titlecn: "控制器"
       url: /parts/controller/controller_compatibility/
       children:
-      - title: "CM-100A"
-        titlekr: "CM-100A"
-        titlejp: "CM-100A"
-        titlecn: "CM-100A"
+      - title: "*CM-100A"
+        titlekr: "*CM-100A"
+        titlejp: "*CM-100A"
+        titlecn: "*CM-100A"
         url: /parts/controller/cm-100/
       - title: "CM-150"
         titlekr: "CM-150"
@@ -435,15 +435,15 @@ main:
         titlecn: "CM-200"
         url: /parts/controller/cm-200/
         urlkr: /parts/controller/cm-200/
-      - title: "CM-5"
-        titlekr: "CM-5"
-        titlejp: "CM-5"
-        titlecn: "CM-5"
+      - title: "*CM-5"
+        titlekr: "*CM-5"
+        titlejp: "*CM-5"
+        titlecn: "*CM-5"
         url: /parts/controller/cm-5/
-      - title: "CM-510"
-        titlekr: "CM-510"
-        titlejp: "CM-510"
-        titlecn: "CM-510"
+      - title: "*CM-510"
+        titlekr: "*CM-510"
+        titlejp: "*CM-510"
+        titlecn: "*CM-510"
         url: /parts/controller/cm-510/
       - title: "CM-530"
         titlekr: "CM-530"
@@ -455,10 +455,10 @@ main:
         titlejp: "CM-700"
         titlecn: "CM-700"
         url: /parts/controller/cm-700/
-      - title: "CM-900"
-        titlekr: "CM-900"
-        titlejp: "CM-900"
-        titlecn: "CM-900"
+      - title: "*CM-900"
+        titlekr: "*CM-900"
+        titlejp: "*CM-900"
+        titlecn: "*CM-900"
         url: /parts/controller/cm-900/
       - title: "OpenCM 9.04"
         titlekr: "OpenCM 9.04"
@@ -485,15 +485,15 @@ main:
         titlejp: "RC-100A/100B"
         titlecn: "RC-100A/100B"
         url: /parts/communication/rc-100/
-      - title: "ZIG-100/110A"
-        titlekr: "ZIG-100/110A"
-        titlejp: "ZIG-100/110A"
-        titlecn: "ZIG-100/110A"
+      - title: "*ZIG-100/110A"
+        titlekr: "*ZIG-100/110A"
+        titlejp: "*ZIG-100/110A"
+        titlecn: "*ZIG-100/110A"
         url: /parts/communication/zig-110/
-      - title: "BT-100/110A"
-        titlekr: "BT-100/110A"
-        titlejp: "BT-100/110A"
-        titlecn: "BT-100/110A"
+      - title: "*BT-100/110A"
+        titlekr: "*BT-100/110A"
+        titlejp: "*BT-100/110A"
+        titlecn: "*BT-100/110A"
         url: /parts/communication/bt-110/
       - title: "BT-210"
         titlekr: "BT-210"
@@ -520,10 +520,10 @@ main:
         titlejp: "Geared Motor(GM-10A)"
         titlecn: "Geared Motor(GM-10A)"
         url: /parts/motor/geared_motor/
-      - title: "High Speed Geared Motor"
-        titlekr: "고속 감속모터"
-        titlejp: "高速減速モーター"
-        titlecn: "高速齒輪馬達"
+      - title: "*High Speed Geared Motor"
+        titlekr: "*고속 감속모터"
+        titlejp: "*高速減速モーター"
+        titlecn: "*高速齒輪馬達"
         url: /parts/motor/h_speed_geared_motor/
       - title: "Low Speed Geared Motor"
         titlekr: "저속 감속모터"
@@ -570,10 +570,10 @@ main:
         titlejp: "接触センサー(TS-10)"
         titlecn: "聯繫傳感器(TS-10)"
         url: /parts/sensor/ts-10/
-      - title: "Integrated Sensor(AX-S1)"
-        titlekr: "통합 센서(AX-S1)"
-        titlejp: "統合センサー(AX-S1)"
-        titlecn: "集成傳感器(AX-S1)"
+      - title: "*Integrated Sensor(AX-S1)"
+        titlekr: "*통합 센서(AX-S1)"
+        titlejp: "*統合センサー(AX-S1)"
+        titlecn: "*集成傳感器(AX-S1)"
         url: /parts/sensor/ax-s1/
       - title: "Gyro Sensor(GS-12)"
         titlekr: "자이로 센서(GS-12)"
@@ -666,6 +666,63 @@ ax-12w:
         titlekr: "컨트롤 테이블 설명"
         url: /dxl/ax/ax-12w/#control-table-description
         urlkr: /dxl/ax/ax-12w/#컨트롤-테이블-설명
+        children:
+          - title: "Model Number(0)"
+            url: /dxl/ax/ax-12w/#model-number-0
+          - title: "Firmware Version(2)"
+            url: /dxl/ax/ax-12w/#firmware-version-2
+          - title: "ID(3)"
+            url: /dxl/ax/ax-12w/#id-3
+          - title: "Baud Rate(4)"
+            url: /dxl/ax/ax-12w/#baud-rate-4
+          - title: "Return Delay Time(5)"
+            url: /dxl/ax/ax-12w/#return-delay-time-5
+          - title: "CW/CCW Angle Limit(6,8)"
+            url: /dxl/ax/ax-12w/#cwccw-angle-limit6-8
+          - title: "Temperature Limit(11)"
+            url: /dxl/ax/ax-12w/#temperature-limit-11
+          - title: "Min/Max Voltage Limit(12,13)"
+            url: /dxl/ax/ax-12w/#minmax-voltage-limit-12-13
+          - title: "Max Torque(14)"
+            url: /dxl/ax/ax-12w/#max-torque-14
+          - title: "Status Return Level(16)"
+            url: /dxl/ax/ax-12w/#status-return-level-16
+          - title: "Alarm LED(17)"
+            url: /dxl/ax/ax-12w/#alarm-led17-shutdown18
+          - title: "Shutdown(18)"
+            url: /dxl/ax/ax-12w/#alarm-led17-shutdown18
+          - title: "Torque Enable(24)"
+            url: /dxl/ax/ax-12w/#torque-enable-24
+          - title: "LED(25)"
+            url: /dxl/ax/ax-12w/#led-25
+          - title: "Compliance Margin(26,27)"
+            url: /dxl/ax/ax-12w/#compliance-margin-26-27
+          - title: "Compliance Slope(28,29)"
+            url: /dxl/ax/ax-12w/#compliance-slope-28-29
+          - title: "Goal Position(30)"
+            url: /dxl/ax/ax-12w/#goal-position-30
+          - title: "Moving Speed(32)"
+            url: /dxl/ax/ax-12w/#moving-speed-32
+          - title: "Torque Limit(34)"
+            url: /dxl/ax/ax-12w/#torque-limit-34
+          - title: "Present Position(36)"
+            url: /dxl/ax/ax-12w/#present-position-36
+          - title: "Present Speed(38)"
+            url: /dxl/ax/ax-12w/#present-speed-38
+          - title: "Present Load(40)"
+            url: /dxl/ax/ax-12w/#present-load-40
+          - title: "Present Voltage(42)"
+            url: /dxl/ax/ax-12w/#present-voltage-42
+          - title: "Present Temperature(43)"
+            url: /dxl/ax/ax-12w/#present-temperature-43
+          - title: "Registered Instruction(44)"
+            url: /dxl/ax/ax-12w/#registered-instruction-44
+          - title: "Moving(46)"
+            url: /dxl/ax/ax-12w/#moving-46
+          - title: "Lock(47)"
+            url: /dxl/ax/ax-12w/#lock-47
+          - title: "Punch(48)"
+            url: /dxl/ax/ax-12w/#punch-48
   - title: "How to Assemble"
     titlekr: "조립 예시"
     url: /dxl/ax/ax-12w/#how-to-assemble
@@ -733,6 +790,63 @@ ax-12a:
         titlekr: "컨트롤 테이블 설명"
         url: /dxl/ax/ax-12a/#control-table-description
         urlkr: /dxl/ax/ax-12a/#컨트롤-테이블-설명
+        children:
+          - title: "Model Number(0)"
+            url: /dxl/ax/ax-12a/#model-number-0
+          - title: "Firmware Version(2)"
+            url: /dxl/ax/ax-12a/#firmware-version-2
+          - title: "ID(3)"
+            url: /dxl/ax/ax-12a/#id-3
+          - title: "Baud Rate(4)"
+            url: /dxl/ax/ax-12a/#baud-rate-4
+          - title: "Return Delay Time(5)"
+            url: /dxl/ax/ax-12a/#return-delay-time-5
+          - title: "CW/CCW Angle Limit(6,8)"
+            url: /dxl/ax/ax-12a/#cwccw-angle-limit6-8
+          - title: "Temperature Limit(11)"
+            url: /dxl/ax/ax-12a/#temperature-limit-11
+          - title: "Min/Max Voltage Limit(12,13)"
+            url: /dxl/ax/ax-12a/#minmax-voltage-limit-12-13
+          - title: "Max Torque(14)"
+            url: /dxl/ax/ax-12a/#max-torque-14
+          - title: "Status Return Level(16)"
+            url: /dxl/ax/ax-12a/#status-return-level-16
+          - title: "Alarm LED(17)"
+            url: /dxl/ax/ax-12a/#alarm-led17-shutdown18
+          - title: "Shutdown(18)"
+            url: /dxl/ax/ax-12a/#alarm-led17-shutdown18
+          - title: "Torque Enable(24)"
+            url: /dxl/ax/ax-12a/#torque-enable-24
+          - title: "LED(25)"
+            url: /dxl/ax/ax-12a/#led-25
+          - title: "Compliance Margin(26,27)"
+            url: /dxl/ax/ax-12a/#compliance-margin-26-27
+          - title: "Compliance Slope(28,29)"
+            url: /dxl/ax/ax-12a/#compliance-slope-28-29
+          - title: "Goal Position(30)"
+            url: /dxl/ax/ax-12a/#goal-position-30
+          - title: "Moving Speed(32)"
+            url: /dxl/ax/ax-12a/#moving-speed-32
+          - title: "Torque Limit(34)"
+            url: /dxl/ax/ax-12a/#torque-limit-34
+          - title: "Present Position(36)"
+            url: /dxl/ax/ax-12a/#present-position-36
+          - title: "Present Speed(38)"
+            url: /dxl/ax/ax-12a/#present-speed-38
+          - title: "Present Load(40)"
+            url: /dxl/ax/ax-12a/#present-load-40
+          - title: "Present Voltage(42)"
+            url: /dxl/ax/ax-12a/#present-voltage-42
+          - title: "Present Temperature(43)"
+            url: /dxl/ax/ax-12a/#present-temperature-43
+          - title: "Registered Instruction(44)"
+            url: /dxl/ax/ax-12a/#registered-instruction-44
+          - title: "Moving(46)"
+            url: /dxl/ax/ax-12a/#moving-46
+          - title: "Lock(47)"
+            url: /dxl/ax/ax-12a/#lock-47
+          - title: "Punch(48)"
+            url: /dxl/ax/ax-12a/#punch-48
   - title: "How to Assemble"
     titlekr: "조립 예시"
     url: /dxl/ax/ax-12a/#how-to-assemble
@@ -800,6 +914,63 @@ ax-18a:
         titlekr: "컨트롤 테이블 설명"
         url: /dxl/ax/ax-18a/#control-table-description
         urlkr: /dxl/ax/ax-18a/#컨트롤-테이블-설명
+        children:
+          - title: "Model Number(0)"
+            url: /dxl/ax/ax-18a/#model-number-0
+          - title: "Firmware Version(2)"
+            url: /dxl/ax/ax-18a/#firmware-version-2
+          - title: "ID(3)"
+            url: /dxl/ax/ax-18a/#id-3
+          - title: "Baud Rate(4)"
+            url: /dxl/ax/ax-18a/#baud-rate-4
+          - title: "Return Delay Time(5)"
+            url: /dxl/ax/ax-18a/#return-delay-time-5
+          - title: "CW/CCW Angle Limit(6,8)"
+            url: /dxl/ax/ax-18a/#cwccw-angle-limit6-8
+          - title: "Temperature Limit(11)"
+            url: /dxl/ax/ax-18a/#temperature-limit-11
+          - title: "Min/Max Voltage Limit(12,13)"
+            url: /dxl/ax/ax-18a/#minmax-voltage-limit-12-13
+          - title: "Max Torque(14)"
+            url: /dxl/ax/ax-18a/#max-torque-14
+          - title: "Status Return Level(16)"
+            url: /dxl/ax/ax-18a/#status-return-level-16
+          - title: "Alarm LED(17)"
+            url: /dxl/ax/ax-18a/#alarm-led17-shutdown18
+          - title: "Shutdown(18)"
+            url: /dxl/ax/ax-18a/#alarm-led17-shutdown18
+          - title: "Torque Enable(24)"
+            url: /dxl/ax/ax-18a/#torque-enable-24
+          - title: "LED(25)"
+            url: /dxl/ax/ax-18a/#led-25
+          - title: "Compliance Margin(26,27)"
+            url: /dxl/ax/ax-18a/#compliance-margin-26-27
+          - title: "Compliance Slope(28,29)"
+            url: /dxl/ax/ax-18a/#compliance-slope-28-29
+          - title: "Goal Position(30)"
+            url: /dxl/ax/ax-18a/#goal-position-30
+          - title: "Moving Speed(32)"
+            url: /dxl/ax/ax-18a/#moving-speed-32
+          - title: "Torque Limit(34)"
+            url: /dxl/ax/ax-18a/#torque-limit-34
+          - title: "Present Position(36)"
+            url: /dxl/ax/ax-18a/#present-position-36
+          - title: "Present Speed(38)"
+            url: /dxl/ax/ax-18a/#present-speed-38
+          - title: "Present Load(40)"
+            url: /dxl/ax/ax-18a/#present-load-40
+          - title: "Present Voltage(42)"
+            url: /dxl/ax/ax-18a/#present-voltage-42
+          - title: "Present Temperature(43)"
+            url: /dxl/ax/ax-18a/#present-temperature-43
+          - title: "Registered Instruction(44)"
+            url: /dxl/ax/ax-18a/#registered-instruction-44
+          - title: "Moving(46)"
+            url: /dxl/ax/ax-18a/#moving-46
+          - title: "Lock(47)"
+            url: /dxl/ax/ax-18a/#lock-47
+          - title: "Punch(48)"
+            url: /dxl/ax/ax-18a/#punch-48
   - title: "How to Assemble"
     titlekr: "조립 예시"
     url: /dxl/ax/ax-18a/#how-to-assemble
@@ -867,6 +1038,67 @@ ex-106+:
         titlekr: "컨트롤 테이블 설명"
         url: /dxl/ex/ex-106+/#control-table-description
         urlkr: /dxl/ex/ex-106+/#컨트롤-테이블-설명
+        children:
+          - title: "Model Number(0)"
+            url: /dxl/ex/ex-106+/#model-number-0
+          - title: "Firmware Version(2)"
+            url: /dxl/ex/ex-106+/#firmware-version-2
+          - title: "ID(3)"
+            url: /dxl/ex/ex-106+/#id-3
+          - title: "Baud Rate(4)"
+            url: /dxl/ex/ex-106+/#baud-rate-4
+          - title: "Return Delay Time(5)"
+            url: /dxl/ex/ex-106+/#return-delay-time-5
+          - title: "CW/CCW Angle Limit(6,8)"
+            url: /dxl/ex/ex-106+/#cwccw-angle-limit6-8
+          - title: "Drive Mode(10)"
+            url: /dxl/ex/ex-106+/#drive-mode-10
+          - title: "Temperature Limit(11)"
+            url: /dxl/ex/ex-106+/#temperature-limit-11
+          - title: "Min/Max Voltage Limit(12,13)"
+            url: /dxl/ex/ex-106+/#minmax-voltage-limit-12-13
+          - title: "Max Torque(14)"
+            url: /dxl/ex/ex-106+/#max-torque-14
+          - title: "Status Return Level(16)"
+            url: /dxl/ex/ex-106+/#status-return-level-16
+          - title: "Alarm LED(17)"
+            url: /dxl/ex/ex-106+/#alarm-led17-shutdown18
+          - title: "Shutdown(18)"
+            url: /dxl/ex/ex-106+/#alarm-led17-shutdown18
+          - title: "Torque Enable(24)"
+            url: /dxl/ex/ex-106+/#torque-enable-24
+          - title: "LED(25)"
+            url: /dxl/ex/ex-106+/#led-25
+          - title: "Compliance Margin(26,27)"
+            url: /dxl/ex/ex-106+/#compliance-margin-26-27
+          - title: "Compliance Slope(28,29)"
+            url: /dxl/ex/ex-106+/#compliance-slope-28-29
+          - title: "Goal Position(30)"
+            url: /dxl/ex/ex-106+/#goal-position-30
+          - title: "Moving Speed(32)"
+            url: /dxl/ex/ex-106+/#moving-speed-32
+          - title: "Torque Limit(34)"
+            url: /dxl/ex/ex-106+/#torque-limit-34
+          - title: "Present Position(36)"
+            url: /dxl/ex/ex-106+/#present-position-36
+          - title: "Present Speed(38)"
+            url: /dxl/ex/ex-106+/#present-speed-38
+          - title: "Present Load(40)"
+            url: /dxl/ex/ex-106+/#present-load-40
+          - title: "Present Voltage(42)"
+            url: /dxl/ex/ex-106+/#present-voltage-42
+          - title: "Present Temperature(43)"
+            url: /dxl/ex/ex-106+/#present-temperature-43
+          - title: "Registered Instruction(44)"
+            url: /dxl/ex/ex-106+/#registered-instruction-44
+          - title: "Moving(46)"
+            url: /dxl/ex/ex-106+/#moving-46
+          - title: "Lock(47)"
+            url: /dxl/ex/ex-106+/#lock-47
+          - title: "Punch(48)"
+            url: /dxl/ex/ex-106+/#punch-48
+          - title: "Sensed Current(56)"
+            url: /dxl/ex/ex-106+/#sensed-current-56
   - title: "How to Assemble"
     titlekr: "조립 예시"
     url: /dxl/ex/ex-106+/#how-to-assemble
@@ -934,6 +1166,63 @@ dx-113:
         titlekr: "컨트롤 테이블 설명"
         url: /dxl/dx/dx-113/#control-table-description
         urlkr: /dxl/dx/dx-113/#컨트롤-테이블-설명
+        children:
+          - title: "Model Number(0)"
+            url: /dxl/dx/dx-113/#model-number-0
+          - title: "Firmware Version(2)"
+            url: /dxl/dx/dx-113/#firmware-version-2
+          - title: "ID(3)"
+            url: /dxl/dx/dx-113/#id-3
+          - title: "Baud Rate(4)"
+            url: /dxl/dx/dx-113/#baud-rate-4
+          - title: "Return Delay Time(5)"
+            url: /dxl/dx/dx-113/#return-delay-time-5
+          - title: "CW/CCW Angle Limit(6,8)"
+            url: /dxl/dx/dx-113/#cwccw-angle-limit6-8
+          - title: "Temperature Limit(11)"
+            url: /dxl/dx/dx-113/#temperature-limit-11
+          - title: "Min/Max Voltage Limit(12,13)"
+            url: /dxl/dx/dx-113/#minmax-voltage-limit-12-13
+          - title: "Max Torque(14)"
+            url: /dxl/dx/dx-113/#max-torque-14
+          - title: "Status Return Level(16)"
+            url: /dxl/dx/dx-113/#status-return-level-16
+          - title: "Alarm LED(17)"
+            url: /dxl/dx/dx-113/#alarm-led17-shutdown18
+          - title: "Shutdown(18)"
+            url: /dxl/dx/dx-113/#alarm-led17-shutdown18
+          - title: "Torque Enable(24)"
+            url: /dxl/dx/dx-113/#torque-enable-24
+          - title: "LED(25)"
+            url: /dxl/dx/dx-113/#led-25
+          - title: "Compliance Margin(26,27)"
+            url: /dxl/dx/dx-113/#compliance-margin-26-27
+          - title: "Compliance Slope(28,29)"
+            url: /dxl/dx/dx-113/#compliance-slope-28-29
+          - title: "Goal Position(30)"
+            url: /dxl/dx/dx-113/#goal-position-30
+          - title: "Moving Speed(32)"
+            url: /dxl/dx/dx-113/#moving-speed-32
+          - title: "Torque Limit(34)"
+            url: /dxl/dx/dx-113/#torque-limit-34
+          - title: "Present Position(36)"
+            url: /dxl/dx/dx-113/#present-position-36
+          - title: "Present Speed(38)"
+            url: /dxl/dx/dx-113/#present-speed-38
+          - title: "Present Load(40)"
+            url: /dxl/dx/dx-113/#present-load-40
+          - title: "Present Voltage(42)"
+            url: /dxl/dx/dx-113/#present-voltage-42
+          - title: "Present Temperature(43)"
+            url: /dxl/dx/dx-113/#present-temperature-43
+          - title: "Registered Instruction(44)"
+            url: /dxl/dx/dx-113/#registered-instruction-44
+          - title: "Moving(46)"
+            url: /dxl/dx/dx-113/#moving-46
+          - title: "Lock(47)"
+            url: /dxl/dx/dx-113/#lock-47
+          - title: "Punch(48)"
+            url: /dxl/dx/dx-113/#punch-48
   - title: "How to Assemble"
     titlekr: "조립 예시"
     url: /dxl/dx/dx-113/#how-to-assemble
@@ -1001,6 +1290,63 @@ dx-116:
         titlekr: "컨트롤 테이블 설명"
         url: /dxl/dx/dx-116/#control-table-description
         urlkr: /dxl/dx/dx-116/#컨트롤-테이블-설명
+        children:
+          - title: "Model Number(0)"
+            url: /dxl/dx/dx-116/#model-number-0
+          - title: "Firmware Version(2)"
+            url: /dxl/dx/dx-116/#firmware-version-2
+          - title: "ID(3)"
+            url: /dxl/dx/dx-116/#id-3
+          - title: "Baud Rate(4)"
+            url: /dxl/dx/dx-116/#baud-rate-4
+          - title: "Return Delay Time(5)"
+            url: /dxl/dx/dx-116/#return-delay-time-5
+          - title: "CW/CCW Angle Limit(6,8)"
+            url: /dxl/dx/dx-116/#cwccw-angle-limit6-8
+          - title: "Temperature Limit(11)"
+            url: /dxl/dx/dx-116/#temperature-limit-11
+          - title: "Min/Max Voltage Limit(12,13)"
+            url: /dxl/dx/dx-116/#minmax-voltage-limit-12-13
+          - title: "Max Torque(14)"
+            url: /dxl/dx/dx-116/#max-torque-14
+          - title: "Status Return Level(16)"
+            url: /dxl/dx/dx-116/#status-return-level-16
+          - title: "Alarm LED(17)"
+            url: /dxl/dx/dx-116/#alarm-led17-shutdown18
+          - title: "Shutdown(18)"
+            url: /dxl/dx/dx-116/#alarm-led17-shutdown18
+          - title: "Torque Enable(24)"
+            url: /dxl/dx/dx-116/#torque-enable-24
+          - title: "LED(25)"
+            url: /dxl/dx/dx-116/#led-25
+          - title: "Compliance Margin(26,27)"
+            url: /dxl/dx/dx-116/#compliance-margin-26-27
+          - title: "Compliance Slope(28,29)"
+            url: /dxl/dx/dx-116/#compliance-slope-28-29
+          - title: "Goal Position(30)"
+            url: /dxl/dx/dx-116/#goal-position-30
+          - title: "Moving Speed(32)"
+            url: /dxl/dx/dx-116/#moving-speed-32
+          - title: "Torque Limit(34)"
+            url: /dxl/dx/dx-116/#torque-limit-34
+          - title: "Present Position(36)"
+            url: /dxl/dx/dx-116/#present-position-36
+          - title: "Present Speed(38)"
+            url: /dxl/dx/dx-116/#present-speed-38
+          - title: "Present Load(40)"
+            url: /dxl/dx/dx-116/#present-load-40
+          - title: "Present Voltage(42)"
+            url: /dxl/dx/dx-116/#present-voltage-42
+          - title: "Present Temperature(43)"
+            url: /dxl/dx/dx-116/#present-temperature-43
+          - title: "Registered Instruction(44)"
+            url: /dxl/dx/dx-116/#registered-instruction-44
+          - title: "Moving(46)"
+            url: /dxl/dx/dx-116/#moving-46
+          - title: "Lock(47)"
+            url: /dxl/dx/dx-116/#lock-47
+          - title: "Punch(48)"
+            url: /dxl/dx/dx-116/#punch-48
   - title: "How to Assemble"
     titlekr: "조립 예시"
     url: /dxl/dx/dx-116/#how-to-assemble
@@ -1068,6 +1414,63 @@ dx-117:
         titlekr: "컨트롤 테이블 설명"
         url: /dxl/dx/dx-117/#control-table-description
         urlkr: /dxl/dx/dx-117/#컨트롤-테이블-설명
+        children:
+          - title: "Model Number(0)"
+            url: /dxl/dx/dx-117/#model-number-0
+          - title: "Firmware Version(2)"
+            url: /dxl/dx/dx-117/#firmware-version-2
+          - title: "ID(3)"
+            url: /dxl/dx/dx-117/#id-3
+          - title: "Baud Rate(4)"
+            url: /dxl/dx/dx-117/#baud-rate-4
+          - title: "Return Delay Time(5)"
+            url: /dxl/dx/dx-117/#return-delay-time-5
+          - title: "CW/CCW Angle Limit(6,8)"
+            url: /dxl/dx/dx-117/#cwccw-angle-limit6-8
+          - title: "Temperature Limit(11)"
+            url: /dxl/dx/dx-117/#temperature-limit-11
+          - title: "Min/Max Voltage Limit(12,13)"
+            url: /dxl/dx/dx-117/#minmax-voltage-limit-12-13
+          - title: "Max Torque(14)"
+            url: /dxl/dx/dx-117/#max-torque-14
+          - title: "Status Return Level(16)"
+            url: /dxl/dx/dx-117/#status-return-level-16
+          - title: "Alarm LED(17)"
+            url: /dxl/dx/dx-117/#alarm-led17-shutdown18
+          - title: "Shutdown(18)"
+            url: /dxl/dx/dx-117/#alarm-led17-shutdown18
+          - title: "Torque Enable(24)"
+            url: /dxl/dx/dx-117/#torque-enable-24
+          - title: "LED(25)"
+            url: /dxl/dx/dx-117/#led-25
+          - title: "Compliance Margin(26,27)"
+            url: /dxl/dx/dx-117/#compliance-margin-26-27
+          - title: "Compliance Slope(28,29)"
+            url: /dxl/dx/dx-117/#compliance-slope-28-29
+          - title: "Goal Position(30)"
+            url: /dxl/dx/dx-117/#goal-position-30
+          - title: "Moving Speed(32)"
+            url: /dxl/dx/dx-117/#moving-speed-32
+          - title: "Torque Limit(34)"
+            url: /dxl/dx/dx-117/#torque-limit-34
+          - title: "Present Position(36)"
+            url: /dxl/dx/dx-117/#present-position-36
+          - title: "Present Speed(38)"
+            url: /dxl/dx/dx-117/#present-speed-38
+          - title: "Present Load(40)"
+            url: /dxl/dx/dx-117/#present-load-40
+          - title: "Present Voltage(42)"
+            url: /dxl/dx/dx-117/#present-voltage-42
+          - title: "Present Temperature(43)"
+            url: /dxl/dx/dx-117/#present-temperature-43
+          - title: "Registered Instruction(44)"
+            url: /dxl/dx/dx-117/#registered-instruction-44
+          - title: "Moving(46)"
+            url: /dxl/dx/dx-117/#moving-46
+          - title: "Lock(47)"
+            url: /dxl/dx/dx-117/#lock-47
+          - title: "Punch(48)"
+            url: /dxl/dx/dx-117/#punch-48
   - title: "How to Assemble"
     titlekr: "조립 예시"
     url: /dxl/dx/dx-117/#how-to-assemble
@@ -1135,6 +1538,63 @@ rx-10:
         titlekr: "컨트롤 테이블 설명"
         url: /dxl/rx/rx-10/#control-table-description
         urlkr: /dxl/rx/rx-10/#컨트롤-테이블-설명
+        children:
+          - title: "Model Number(0)"
+            url: /dxl/rx/rx-10/#model-number-0
+          - title: "Firmware Version(2)"
+            url: /dxl/rx/rx-10/#firmware-version-2
+          - title: "ID(3)"
+            url: /dxl/rx/rx-10/#id-3
+          - title: "Baud Rate(4)"
+            url: /dxl/rx/rx-10/#baud-rate-4
+          - title: "Return Delay Time(5)"
+            url: /dxl/rx/rx-10/#return-delay-time-5
+          - title: "CW/CCW Angle Limit(6,8)"
+            url: /dxl/rx/rx-10/#cwccw-angle-limit6-8
+          - title: "Temperature Limit(11)"
+            url: /dxl/rx/rx-10/#temperature-limit-11
+          - title: "Min/Max Voltage Limit(12,13)"
+            url: /dxl/rx/rx-10/#minmax-voltage-limit-12-13
+          - title: "Max Torque(14)"
+            url: /dxl/rx/rx-10/#max-torque-14
+          - title: "Status Return Level(16)"
+            url: /dxl/rx/rx-10/#status-return-level-16
+          - title: "Alarm LED(17)"
+            url: /dxl/rx/rx-10/#alarm-led17-shutdown18
+          - title: "Shutdown(18)"
+            url: /dxl/rx/rx-10/#alarm-led17-shutdown18
+          - title: "Torque Enable(24)"
+            url: /dxl/rx/rx-10/#torque-enable-24
+          - title: "LED(25)"
+            url: /dxl/rx/rx-10/#led-25
+          - title: "Compliance Margin(26,27)"
+            url: /dxl/rx/rx-10/#compliance-margin-26-27
+          - title: "Compliance Slope(28,29)"
+            url: /dxl/rx/rx-10/#compliance-slope-28-29
+          - title: "Goal Position(30)"
+            url: /dxl/rx/rx-10/#goal-position-30
+          - title: "Moving Speed(32)"
+            url: /dxl/rx/rx-10/#moving-speed-32
+          - title: "Torque Limit(34)"
+            url: /dxl/rx/rx-10/#torque-limit-34
+          - title: "Present Position(36)"
+            url: /dxl/rx/rx-10/#present-position-36
+          - title: "Present Speed(38)"
+            url: /dxl/rx/rx-10/#present-speed-38
+          - title: "Present Load(40)"
+            url: /dxl/rx/rx-10/#present-load-40
+          - title: "Present Voltage(42)"
+            url: /dxl/rx/rx-10/#present-voltage-42
+          - title: "Present Temperature(43)"
+            url: /dxl/rx/rx-10/#present-temperature-43
+          - title: "Registered Instruction(44)"
+            url: /dxl/rx/rx-10/#registered-instruction-44
+          - title: "Moving(46)"
+            url: /dxl/rx/rx-10/#moving-46
+          - title: "Lock(47)"
+            url: /dxl/rx/rx-10/#lock-47
+          - title: "Punch(48)"
+            url: /dxl/rx/rx-10/#punch-48
   - title: "How to Assemble"
     titlekr: "조립 예시"
     url: /dxl/rx/rx-10/#how-to-assemble
@@ -1202,6 +1662,63 @@ rx-24f:
         titlekr: "컨트롤 테이블 설명"
         url: /dxl/rx/rx-24f/#control-table-description
         urlkr: /dxl/rx/rx-24f/#컨트롤-테이블-설명
+        children:
+          - title: "Model Number(0)"
+            url: /dxl/rx/rx-24f/#model-number-0
+          - title: "Firmware Version(2)"
+            url: /dxl/rx/rx-24f/#firmware-version-2
+          - title: "ID(3)"
+            url: /dxl/rx/rx-24f/#id-3
+          - title: "Baud Rate(4)"
+            url: /dxl/rx/rx-24f/#baud-rate-4
+          - title: "Return Delay Time(5)"
+            url: /dxl/rx/rx-24f/#return-delay-time-5
+          - title: "CW/CCW Angle Limit(6,8)"
+            url: /dxl/rx/rx-24f/#cwccw-angle-limit6-8
+          - title: "Temperature Limit(11)"
+            url: /dxl/rx/rx-24f/#temperature-limit-11
+          - title: "Min/Max Voltage Limit(12,13)"
+            url: /dxl/rx/rx-24f/#minmax-voltage-limit-12-13
+          - title: "Max Torque(14)"
+            url: /dxl/rx/rx-24f/#max-torque-14
+          - title: "Status Return Level(16)"
+            url: /dxl/rx/rx-24f/#status-return-level-16
+          - title: "Alarm LED(17)"
+            url: /dxl/rx/rx-24f/#alarm-led17-shutdown18
+          - title: "Shutdown(18)"
+            url: /dxl/rx/rx-24f/#alarm-led17-shutdown18
+          - title: "Torque Enable(24)"
+            url: /dxl/rx/rx-24f/#torque-enable-24
+          - title: "LED(25)"
+            url: /dxl/rx/rx-24f/#led-25
+          - title: "Compliance Margin(26,27)"
+            url: /dxl/rx/rx-24f/#compliance-margin-26-27
+          - title: "Compliance Slope(28,29)"
+            url: /dxl/rx/rx-24f/#compliance-slope-28-29
+          - title: "Goal Position(30)"
+            url: /dxl/rx/rx-24f/#goal-position-30
+          - title: "Moving Speed(32)"
+            url: /dxl/rx/rx-24f/#moving-speed-32
+          - title: "Torque Limit(34)"
+            url: /dxl/rx/rx-24f/#torque-limit-34
+          - title: "Present Position(36)"
+            url: /dxl/rx/rx-24f/#present-position-36
+          - title: "Present Speed(38)"
+            url: /dxl/rx/rx-24f/#present-speed-38
+          - title: "Present Load(40)"
+            url: /dxl/rx/rx-24f/#present-load-40
+          - title: "Present Voltage(42)"
+            url: /dxl/rx/rx-24f/#present-voltage-42
+          - title: "Present Temperature(43)"
+            url: /dxl/rx/rx-24f/#present-temperature-43
+          - title: "Registered Instruction(44)"
+            url: /dxl/rx/rx-24f/#registered-instruction-44
+          - title: "Moving(46)"
+            url: /dxl/rx/rx-24f/#moving-46
+          - title: "Lock(47)"
+            url: /dxl/rx/rx-24f/#lock-47
+          - title: "Punch(48)"
+            url: /dxl/rx/rx-24f/#punch-48
   - title: "How to Assemble"
     titlekr: "조립 예시"
     url: /dxl/rx/rx-24f/#how-to-assemble
@@ -1269,6 +1786,63 @@ rx-28:
         titlekr: "컨트롤 테이블 설명"
         url: /dxl/rx/rx-28/#control-table-description
         urlkr: /dxl/rx/rx-28/#컨트롤-테이블-설명
+        children:
+          - title: "Model Number(0)"
+            url: /dxl/rx/rx-28/#model-number-0
+          - title: "Firmware Version(2)"
+            url: /dxl/rx/rx-28/#firmware-version-2
+          - title: "ID(3)"
+            url: /dxl/rx/rx-28/#id-3
+          - title: "Baud Rate(4)"
+            url: /dxl/rx/rx-28/#baud-rate-4
+          - title: "Return Delay Time(5)"
+            url: /dxl/rx/rx-28/#return-delay-time-5
+          - title: "CW/CCW Angle Limit(6,8)"
+            url: /dxl/rx/rx-28/#cwccw-angle-limit6-8
+          - title: "Temperature Limit(11)"
+            url: /dxl/rx/rx-28/#temperature-limit-11
+          - title: "Min/Max Voltage Limit(12,13)"
+            url: /dxl/rx/rx-28/#minmax-voltage-limit-12-13
+          - title: "Max Torque(14)"
+            url: /dxl/rx/rx-28/#max-torque-14
+          - title: "Status Return Level(16)"
+            url: /dxl/rx/rx-28/#status-return-level-16
+          - title: "Alarm LED(17)"
+            url: /dxl/rx/rx-28/#alarm-led17-shutdown18
+          - title: "Shutdown(18)"
+            url: /dxl/rx/rx-28/#alarm-led17-shutdown18
+          - title: "Torque Enable(24)"
+            url: /dxl/rx/rx-28/#torque-enable-24
+          - title: "LED(25)"
+            url: /dxl/rx/rx-28/#led-25
+          - title: "Compliance Margin(26,27)"
+            url: /dxl/rx/rx-28/#compliance-margin-26-27
+          - title: "Compliance Slope(28,29)"
+            url: /dxl/rx/rx-28/#compliance-slope-28-29
+          - title: "Goal Position(30)"
+            url: /dxl/rx/rx-28/#goal-position-30
+          - title: "Moving Speed(32)"
+            url: /dxl/rx/rx-28/#moving-speed-32
+          - title: "Torque Limit(34)"
+            url: /dxl/rx/rx-28/#torque-limit-34
+          - title: "Present Position(36)"
+            url: /dxl/rx/rx-28/#present-position-36
+          - title: "Present Speed(38)"
+            url: /dxl/rx/rx-28/#present-speed-38
+          - title: "Present Load(40)"
+            url: /dxl/rx/rx-28/#present-load-40
+          - title: "Present Voltage(42)"
+            url: /dxl/rx/rx-28/#present-voltage-42
+          - title: "Present Temperature(43)"
+            url: /dxl/rx/rx-28/#present-temperature-43
+          - title: "Registered Instruction(44)"
+            url: /dxl/rx/rx-28/#registered-instruction-44
+          - title: "Moving(46)"
+            url: /dxl/rx/rx-28/#moving-46
+          - title: "Lock(47)"
+            url: /dxl/rx/rx-28/#lock-47
+          - title: "Punch(48)"
+            url: /dxl/rx/rx-28/#punch-48
   - title: "How to Assemble"
     titlekr: "조립 예시"
     url: /dxl/rx/rx-28/#how-to-assemble
@@ -1336,6 +1910,63 @@ rx-64:
         titlekr: "컨트롤 테이블 설명"
         url: /dxl/rx/rx-64/#control-table-description
         urlkr: /dxl/rx/rx-64/#컨트롤-테이블-설명
+        children:
+          - title: "Model Number(0)"
+            url: /dxl/rx/rx-64/#model-number-0
+          - title: "Firmware Version(2)"
+            url: /dxl/rx/rx-64/#firmware-version-2
+          - title: "ID(3)"
+            url: /dxl/rx/rx-64/#id-3
+          - title: "Baud Rate(4)"
+            url: /dxl/rx/rx-64/#baud-rate-4
+          - title: "Return Delay Time(5)"
+            url: /dxl/rx/rx-64/#return-delay-time-5
+          - title: "CW/CCW Angle Limit(6,8)"
+            url: /dxl/rx/rx-64/#cwccw-angle-limit6-8
+          - title: "Temperature Limit(11)"
+            url: /dxl/rx/rx-64/#temperature-limit-11
+          - title: "Min/Max Voltage Limit(12,13)"
+            url: /dxl/rx/rx-64/#minmax-voltage-limit-12-13
+          - title: "Max Torque(14)"
+            url: /dxl/rx/rx-64/#max-torque-14
+          - title: "Status Return Level(16)"
+            url: /dxl/rx/rx-64/#status-return-level-16
+          - title: "Alarm LED(17)"
+            url: /dxl/rx/rx-64/#alarm-led17-shutdown18
+          - title: "Shutdown(18)"
+            url: /dxl/rx/rx-64/#alarm-led17-shutdown18
+          - title: "Torque Enable(24)"
+            url: /dxl/rx/rx-64/#torque-enable-24
+          - title: "LED(25)"
+            url: /dxl/rx/rx-64/#led-25
+          - title: "Compliance Margin(26,27)"
+            url: /dxl/rx/rx-64/#compliance-margin-26-27
+          - title: "Compliance Slope(28,29)"
+            url: /dxl/rx/rx-64/#compliance-slope-28-29
+          - title: "Goal Position(30)"
+            url: /dxl/rx/rx-64/#goal-position-30
+          - title: "Moving Speed(32)"
+            url: /dxl/rx/rx-64/#moving-speed-32
+          - title: "Torque Limit(34)"
+            url: /dxl/rx/rx-64/#torque-limit-34
+          - title: "Present Position(36)"
+            url: /dxl/rx/rx-64/#present-position-36
+          - title: "Present Speed(38)"
+            url: /dxl/rx/rx-64/#present-speed-38
+          - title: "Present Load(40)"
+            url: /dxl/rx/rx-64/#present-load-40
+          - title: "Present Voltage(42)"
+            url: /dxl/rx/rx-64/#present-voltage-42
+          - title: "Present Temperature(43)"
+            url: /dxl/rx/rx-64/#present-temperature-43
+          - title: "Registered Instruction(44)"
+            url: /dxl/rx/rx-64/#registered-instruction-44
+          - title: "Moving(46)"
+            url: /dxl/rx/rx-64/#moving-46
+          - title: "Lock(47)"
+            url: /dxl/rx/rx-64/#lock-47
+          - title: "Punch(48)"
+            url: /dxl/rx/rx-64/#punch-48
   - title: "How to Assemble"
     titlekr: "조립 예시"
     url: /dxl/rx/rx-64/#how-to-assemble
@@ -1407,6 +2038,67 @@ mx-12w:
         titlekr: "컨트롤 테이블 설명"
         url: /dxl/mx/mx-12w/#control-table-description
         urlkr: /dxl/mx/mx-12w/#컨트롤-테이블-설명
+        children:
+          - title: "Model Number(0)"
+            url: /dxl/mx/mx-12w/#model-number-0
+          - title: "Firmware Version(2)"
+            url: /dxl/mx/mx-12w/#firmware-version-2
+          - title: "ID(3)"
+            url: /dxl/mx/mx-12w/#id-3
+          - title: "Baud Rate(4)"
+            url: /dxl/mx/mx-12w/#baud-rate-4
+          - title: "Return Delay Time(5)"
+            url: /dxl/mx/mx-12w/#return-delay-time-5
+          - title: "CW/CCW Angle Limit(6,8)"
+            url: /dxl/mx/mx-12w/#cwccw-angle-limit6-8
+          - title: "Temperature Limit(11)"
+            url: /dxl/mx/mx-12w/#temperature-limit-11
+          - title: "Min/Max Voltage Limit(12,13)"
+            url: /dxl/mx/mx-12w/#minmax-voltage-limit-12-13
+          - title: "Max Torque(14)"
+            url: /dxl/mx/mx-12w/#max-torque-14
+          - title: "Status Return Level(16)"
+            url: /dxl/mx/mx-12w/#status-return-level-16
+          - title: "Alarm LED(17)"
+            url: /dxl/mx/mx-12w/#alarm-led17-shutdown18
+          - title: "Shutdown(18)"
+            url: /dxl/mx/mx-12w/#alarm-led17-shutdown18
+          - title: "Multiturn Offset(20)"
+            url: /dxl/mx/mx-12w/#multi-turn-offset-20
+          - title: "Resolution Divider(22)"
+            url: /dxl/mx/mx-12w/#resolution-divider-22
+          - title: "Torque Enable(24)"
+            url: /dxl/mx/mx-12w/#torque-enable-24
+          - title: "LED(25)"
+            url: /dxl/mx/mx-12w/#led-25
+          - title: "PID Gains(26,27,28)"
+            url: /dxl/mx/mx-12w/#pid-gains-26-27-28
+          - title: "Goal Position(30)"
+            url: /dxl/mx/mx-12w/#goal-position-30
+          - title: "Moving Speed(32)"
+            url: /dxl/mx/mx-12w/#moving-speed-32
+          - title: "Torque Limit(34)"
+            url: /dxl/mx/mx-12w/#torque-limit-34
+          - title: "Present Position(36)"
+            url: /dxl/mx/mx-12w/#present-position-36
+          - title: "Present Speed(38)"
+            url: /dxl/mx/mx-12w/#present-speed-38
+          - title: "Present Load(40)"
+            url: /dxl/mx/mx-12w/#present-load-40
+          - title: "Present Voltage(42)"
+            url: /dxl/mx/mx-12w/#present-voltage-42
+          - title: "Present Temperature(43)"
+            url: /dxl/mx/mx-12w/#present-temperature-43
+          - title: "Registered Instruction(44)"
+            url: /dxl/mx/mx-12w/#registered-instruction-44
+          - title: "Moving(46)"
+            url: /dxl/mx/mx-12w/#moving-46
+          - title: "Lock(47)"
+            url: /dxl/mx/mx-12w/#lock-47
+          - title: "Punch(48)"
+            url: /dxl/mx/mx-12w/#punch-48
+          - title: "Goal Acceleration(73)"
+            url: /dxl/mx/mx-12w/#goal-acceleration-73
   - title: "How to Assemble"
     titlekr: "조립 예시"
     url: /dxl/mx/mx-12w/#how-to-assemble
@@ -1479,6 +2171,67 @@ mx-28:
         titlekr: "컨트롤 테이블 설명"
         url: /dxl/mx/mx-28/#control-table-description
         urlkr: /dxl/mx/mx-28/#컨트롤-테이블-설명
+        children:
+          - title: "Model Number(0)"
+            url: /dxl/mx/mx-28/#model-number-0
+          - title: "Firmware Version(2)"
+            url: /dxl/mx/mx-28/#firmware-version-2
+          - title: "ID(3)"
+            url: /dxl/mx/mx-28/#id-3
+          - title: "Baud Rate(4)"
+            url: /dxl/mx/mx-28/#baud-rate-4
+          - title: "Return Delay Time(5)"
+            url: /dxl/mx/mx-28/#return-delay-time-5
+          - title: "CW/CCW Angle Limit(6,8)"
+            url: /dxl/mx/mx-28/#cwccw-angle-limit6-8
+          - title: "Temperature Limit(11)"
+            url: /dxl/mx/mx-28/#temperature-limit-11
+          - title: "Min/Max Voltage Limit(12,13)"
+            url: /dxl/mx/mx-28/#minmax-voltage-limit-12-13
+          - title: "Max Torque(14)"
+            url: /dxl/mx/mx-28/#max-torque-14
+          - title: "Status Return Level(16)"
+            url: /dxl/mx/mx-28/#status-return-level-16
+          - title: "Alarm LED(17)"
+            url: /dxl/mx/mx-28/#alarm-led17-shutdown18
+          - title: "Shutdown(18)"
+            url: /dxl/mx/mx-28/#alarm-led17-shutdown18
+          - title: "Multiturn Offset(20)"
+            url: /dxl/mx/mx-28/#multi-turn-offset-20
+          - title: "Resolution Divider(22)"
+            url: /dxl/mx/mx-28/#resolution-divider-22
+          - title: "Torque Enable(24)"
+            url: /dxl/mx/mx-28/#torque-enable-24
+          - title: "LED(25)"
+            url: /dxl/mx/mx-28/#led-25
+          - title: "PID Gains(26,27,28)"
+            url: /dxl/mx/mx-28/#pid-gains-26-27-28
+          - title: "Goal Position(30)"
+            url: /dxl/mx/mx-28/#goal-position-30
+          - title: "Moving Speed(32)"
+            url: /dxl/mx/mx-28/#moving-speed-32
+          - title: "Torque Limit(34)"
+            url: /dxl/mx/mx-28/#torque-limit-34
+          - title: "Present Position(36)"
+            url: /dxl/mx/mx-28/#present-position-36
+          - title: "Present Speed(38)"
+            url: /dxl/mx/mx-28/#present-speed-38
+          - title: "Present Load(40)"
+            url: /dxl/mx/mx-28/#present-load-40
+          - title: "Present Voltage(42)"
+            url: /dxl/mx/mx-28/#present-voltage-42
+          - title: "Present Temperature(43)"
+            url: /dxl/mx/mx-28/#present-temperature-43
+          - title: "Registered Instruction(44)"
+            url: /dxl/mx/mx-28/#registered-instruction-44
+          - title: "Moving(46)"
+            url: /dxl/mx/mx-28/#moving-46
+          - title: "Lock(47)"
+            url: /dxl/mx/mx-28/#lock-47
+          - title: "Punch(48)"
+            url: /dxl/mx/mx-28/#punch-48
+          - title: "Goal Acceleration(73)"
+            url: /dxl/mx/mx-28/#goal-acceleration-73
   - title: "How to Assemble"
     titlekr: "조립 예시"
     url: /dxl/mx/mx-28/#how-to-assemble
@@ -1551,6 +2304,73 @@ mx-64:
         titlekr: "컨트롤 테이블 설명"
         url: /dxl/mx/mx-64/#control-table-description
         urlkr: /dxl/mx/mx-64/#컨트롤-테이블-설명
+        children:
+          - title: "Model Number(0)"
+            url: /dxl/mx/mx-64/#model-number-0
+          - title: "Firmware Version(2)"
+            url: /dxl/mx/mx-64/#firmware-version-2
+          - title: "ID(3)"
+            url: /dxl/mx/mx-64/#id-3
+          - title: "Baud Rate(4)"
+            url: /dxl/mx/mx-64/#baud-rate-4
+          - title: "Return Delay Time(5)"
+            url: /dxl/mx/mx-64/#return-delay-time-5
+          - title: "CW/CCW Angle Limit(6,8)"
+            url: /dxl/mx/mx-64/#cwccw-angle-limit6-8
+          - title: "Temperature Limit(11)"
+            url: /dxl/mx/mx-64/#temperature-limit-11
+          - title: "Min/Max Voltage Limit(12,13)"
+            url: /dxl/mx/mx-64/#minmax-voltage-limit-12-13
+          - title: "Max Torque(14)"
+            url: /dxl/mx/mx-64/#max-torque-14
+          - title: "Status Return Level(16)"
+            url: /dxl/mx/mx-64/#status-return-level-16
+          - title: "Alarm LED(17)"
+            url: /dxl/mx/mx-64/#alarm-led17-shutdown18
+          - title: "Shutdown(18)"
+            url: /dxl/mx/mx-64/#alarm-led17-shutdown18
+          - title: "Multiturn Offset(20)"
+            url: /dxl/mx/mx-64/#multi-turn-offset-20
+          - title: "Resolution Divider(22)"
+            url: /dxl/mx/mx-64/#resolution-divider-22
+          - title: "Torque Enable(24)"
+            url: /dxl/mx/mx-64/#torque-enable-24
+          - title: "LED(25)"
+            url: /dxl/mx/mx-64/#led-25
+          - title: "PID Gains(26,27,28)"
+            url: /dxl/mx/mx-64/#pid-gains-26-27-28
+          - title: "Goal Position(30)"
+            url: /dxl/mx/mx-64/#goal-position-30
+          - title: "Moving Speed(32)"
+            url: /dxl/mx/mx-64/#moving-speed-32
+          - title: "Torque Limit(34)"
+            url: /dxl/mx/mx-64/#torque-limit-34
+          - title: "Present Position(36)"
+            url: /dxl/mx/mx-64/#present-position-36
+          - title: "Present Speed(38)"
+            url: /dxl/mx/mx-64/#present-speed-38
+          - title: "Present Load(40)"
+            url: /dxl/mx/mx-64/#present-load-40
+          - title: "Present Voltage(42)"
+            url: /dxl/mx/mx-64/#present-voltage-42
+          - title: "Present Temperature(43)"
+            url: /dxl/mx/mx-64/#present-temperature-43
+          - title: "Registered Instruction(44)"
+            url: /dxl/mx/mx-64/#registered-instruction-44
+          - title: "Moving(46)"
+            url: /dxl/mx/mx-64/#moving-46
+          - title: "Lock(47)"
+            url: /dxl/mx/mx-64/#lock-47
+          - title: "Punch(48)"
+            url: /dxl/mx/mx-64/#punch-48
+          - title: "Current(68)"
+            url: /dxl/mx/mx-64/#current-68
+          - title: "Torque Ctrl Enable(70)"
+            url: /dxl/mx/mx-64/#torque-control-mode-enable-70
+          - title: "Goal Torque(71)"
+            url: /dxl/mx/mx-64/#goal-torque-71
+          - title: "Goal Acceleration(73)"
+            url: /dxl/mx/mx-64/#goal-acceleration-73
   - title: "How to Assemble"
     titlekr: "조립 예시"
     url: /dxl/mx/mx-64/#how-to-assemble
@@ -1623,6 +2443,75 @@ mx-106:
         titlekr: "컨트롤 테이블 설명"
         url: /dxl/mx/mx-106/#control-table-description
         urlkr: /dxl/mx/mx-106/#컨트롤-테이블-설명
+        children:
+          - title: "Model Number(0)"
+            url: /dxl/mx/mx-106/#model-number-0
+          - title: "Firmware Version(2)"
+            url: /dxl/mx/mx-106/#firmware-version-2
+          - title: "ID(3)"
+            url: /dxl/mx/mx-106/#id-3
+          - title: "Baud Rate(4)"
+            url: /dxl/mx/mx-106/#baud-rate-4
+          - title: "Return Delay Time(5)"
+            url: /dxl/mx/mx-106/#return-delay-time-5
+          - title: "CW/CCW Angle Limit(6,8)"
+            url: /dxl/mx/mx-106/#cwccw-angle-limit6-8
+          - title: "Drive Mode(10)"
+            url: /dxl/mx/mx-106/#drive-mode-10
+          - title: "Temperature Limit(11)"
+            url: /dxl/mx/mx-106/#temperature-limit-11
+          - title: "Min/Max Voltage Limit(12,13)"
+            url: /dxl/mx/mx-106/#minmax-voltage-limit-12-13
+          - title: "Max Torque(14)"
+            url: /dxl/mx/mx-106/#max-torque-14
+          - title: "Status Return Level(16)"
+            url: /dxl/mx/mx-106/#status-return-level-16
+          - title: "Alarm LED(17)"
+            url: /dxl/mx/mx-106/#alarm-led17-shutdown18
+          - title: "Shutdown(18)"
+            url: /dxl/mx/mx-106/#alarm-led17-shutdown18
+          - title: "Multiturn Offset(20)"
+            url: /dxl/mx/mx-106/#multi-turn-offset-20
+          - title: "Resolution Divider(22)"
+            url: /dxl/mx/mx-106/#resolution-divider-22
+          - title: "Torque Enable(24)"
+            url: /dxl/mx/mx-106/#torque-enable-24
+          - title: "LED(25)"
+            url: /dxl/mx/mx-106/#led-25
+          - title: "PID Gains(26,27,28)"
+            url: /dxl/mx/mx-106/#pid-gains-26-27-28
+          - title: "Goal Position(30)"
+            url: /dxl/mx/mx-106/#goal-position-30
+          - title: "Moving Speed(32)"
+            url: /dxl/mx/mx-106/#moving-speed-32
+          - title: "Torque Limit(34)"
+            url: /dxl/mx/mx-106/#torque-limit-34
+          - title: "Present Position(36)"
+            url: /dxl/mx/mx-106/#present-position-36
+          - title: "Present Speed(38)"
+            url: /dxl/mx/mx-106/#present-speed-38
+          - title: "Present Load(40)"
+            url: /dxl/mx/mx-106/#present-load-40
+          - title: "Present Voltage(42)"
+            url: /dxl/mx/mx-106/#present-voltage-42
+          - title: "Present Temperature(43)"
+            url: /dxl/mx/mx-106/#present-temperature-43
+          - title: "Registered Instruction(44)"
+            url: /dxl/mx/mx-106/#registered-instruction-44
+          - title: "Moving(46)"
+            url: /dxl/mx/mx-106/#moving-46
+          - title: "Lock(47)"
+            url: /dxl/mx/mx-106/#lock-47
+          - title: "Punch(48)"
+            url: /dxl/mx/mx-106/#punch-48
+          - title: "Current(68)"
+            url: /dxl/mx/mx-106/#current-68
+          - title: "Torque Ctrl Enable(70)"
+            url: /dxl/mx/mx-106/#torque-control-mode-enable-70
+          - title: "Goal Torque(71)"
+            url: /dxl/mx/mx-106/#goal-torque-71
+          - title: "Goal Acceleration(73)"
+            url: /dxl/mx/mx-106/#goal-acceleration-73
   - title: "How to Assemble"
     titlekr: "조립 예시"
     url: /dxl/mx/mx-106/#how-to-assemble

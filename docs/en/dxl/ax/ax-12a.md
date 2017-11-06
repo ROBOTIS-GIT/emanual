@@ -95,61 +95,61 @@ sidebar:
 
 ## [Control Table Description](#control-table-description)
 
-### <a name="model-number"></a>**Model Number (0)**
+### <a name="model-number"></a>**[Model Number (0)](#model-number-0)**
  This address stores model number of the DYNAMIXEL.
 
-### <a name="firmware-version"></a>**Firmware Version (2)**
+### <a name="firmware-version"></a>**[Firmware Version (2)](#firmware-version-2)**
  This address stores firmware version of the DYNAMIXEL.
 
-### <a name="id"></a>**ID (3)**
+### <a name="id"></a>**[ID (3)](#id-3)**
 {% include en/dxl/control_table_id.md %}
 
-### <a name="baud-rate"></a>**Baud Rate (4)**
+### <a name="baud-rate"></a>**[Baud Rate (4)](#baud-rate-4)**
 {% include en/dxl/control_table_baudrate.md %}
 
-### <a name="return-delay-time"></a>**Return Delay Time (5)**
+### <a name="return-delay-time"></a>**[Return Delay Time (5)](#return-delay-time-5)**
 {% include en/dxl/control_table_return_delay_time.md %}
 
-### <a name="cw-angle-limit"></a><a name="ccw-angle-limit"></a>**CW/CCW Angle Limit(6, 8)**
+### <a name="cw-angle-limit"></a><a name="ccw-angle-limit"></a>**[CW/CCW Angle Limit(6, 8)](#cwccw-angle-limit6-8)**
 {% include en/dxl/control_table_angle_limit.md %}
 
-### <a name="temperature-limit"></a>**The Highest Limit Temperature**
+### <a name="temperature-limit"></a>**[Temperature Limit (11)](#temperature-limit-11)**
 {% include en/dxl/control_table_temp_limit.md %}
 
-### <a name="min-voltage-limit"></a><a name="max-voltage-limit"></a>**Min/Max Voltage Limit**
+### <a name="min-voltage-limit"></a><a name="max-voltage-limit"></a>**[Min/Max Voltage Limit (12, 13)](#minmax-voltage-limit-12-13)**
 {% include en/dxl/control_table_volt_limit_high.md %}
 
-### <a name="max-torque"></a>**Max Torque**
+### <a name="max-torque"></a>**[Max Torque (14)](#max-torque-14)**
 {% include en/dxl/control_table_max_torque.md %}
 
-### <a name="status-return-level"></a>**Status Return Level**
+### <a name="status-return-level"></a>**[Status Return Level (16)](#status-return-level-16)**
 {% include en/dxl/control_table_status_return_lv.md %}
 
-### <a name="alarm-led"></a><a name="shutdown"></a>**Alarm LED / Alarm Shutdown**
+### <a name="alarm-led"></a><a name="shutdown"></a>**[Alarm LED(17), Shutdown(18)](#alarm-led17-shutdown18)**
 {% include en/dxl/control_table_alarm_shutdown.md %}
 
-### <a name="torque-enable"></a>**Torque Enable**
+### <a name="torque-enable"></a>**[Torque Enable (24)](#torque-enable-24)**
 {% include en/dxl/control_table_torque_enable.md %}
 
-### <a name="led"></a>**LED**
+### <a name="led"></a>**[LED (25)](#led-25)**
 {% include en/dxl/control_table_led.md %}
 
-### <a name="cw-compliance-margin"></a><a name="ccw-compliance-margin"></a>**Compliance Margin**
+### <a name="cw-compliance-margin"></a><a name="ccw-compliance-margin"></a>**[Compliance Margin (26, 27)](#compliance-margin-26-27)**
 {% include en/dxl/control_table_compliance_margin.md %}
 
-### <a name="cw-compliance-slope"></a><a name="ccw-compliance-slope"></a>**Compliance Slope**
+### <a name="cw-compliance-slope"></a><a name="ccw-compliance-slope"></a>**[Compliance Slope (28, 29)](#compliance-slope-28-29)**
 {% include en/dxl/control_table_compliance_slope.md %}
 
-### <a name="goal-position"></a>**Goal Position**
+### <a name="goal-position"></a>**[Goal Position (30)](#goal-position-30)**
 {% include en/dxl/control_table_dx_goal_position.md %}
 
-### <a name="moving-speed"></a>**Moving Speed**
+### <a name="moving-speed"></a>**[Moving Speed (32)](#moving-speed-32)**
 {% include en/dxl/control_table_moving_speed.md %}
 
-### <a name="torque-limit"></a>**Torque Limit**
+### <a name="torque-limit"></a>**[Torque Limit (34)](#torque-limit-34)**
 {% include en/dxl/control_table_torque_limit.md %}
 
-### <a name="present-position"></a>**Present Position**
+### <a name="present-position"></a>**[Present Position (36)](#present-position-36)**
 It is the current position value of Dynamixel.
 The range of the value is 0~1023 (0x3FF), and the unit is 0.29 degree.
 
@@ -159,7 +159,7 @@ The picture above is the front view of Dynamixel.
 `Caution` If it is set to Wheel Mode, the value cannot be used to measure the moving distance and the rotation frequency.
 {: .notice--warning}
 
-### <a name="present-speed"></a>**Present Speed**
+### <a name="present-speed"></a>**[Present Speed (38)](#present-speed-38)**
 It is the current moving speed.
 0~2047 (0X7FF) can be used.
 If a value is in the rage of 0~1023, it means that the motor rotates to the CCW direction.
@@ -175,7 +175,7 @@ The unit of this value varies depending on operation mode.
   The unit is about 0.1%.
   For example, if it is set to 512, it means that the torque is controlled by 50% of the maximum torque to the CCW direction.
 
-### <a name="present-load"></a>**Present Load**
+### <a name="present-load"></a>**[Present Load (40)](#present-load-40)**
 It means currently applied load.
 The range of the value is 0~2047, and the unit is about 0.1%.
 If the value is 0~1023, it means the load works to the CCW direction.
@@ -193,15 +193,15 @@ For example, the value is 512, it means the load is detected in the direction of
 `Note` Present load is an inferred value based on the internal output value; not a measured value using torque sensor, etc. Therefore, it may be inaccurate for measuring weight or torque. It is recommended to use it for predicting the direction and size of the force being applied to the joint.
 {: .notice}
 
-### <a name="present-voltage"></a>**Present Voltage**
+### <a name="present-voltage"></a>**[Present Voltage (42)](#present-voltage-42)**
 It is the size of the current voltage supplied.
 This value is 10 times larger than the actual voltage. For example, when 10V is supplied, the data value is 100 (0x64)
 
-### <a name="present temperature"></a>**Present Temperature**
+### <a name="present-temperature"></a>**[Present Temperature (43)](#present-temperature-43)**
 It is the internal temperature of Dynamixel in Celsius.
 Data value is identical to the actual temperature in Celsius. For example, if the data value is 85 (0x55), the current internal temperature is 85&deg;C.
 
-### <a name="registered-instruction"></a>**Registered Instruction**
+### <a name="registered-instruction"></a>**[Registered Instruction (44)](#registered-instruction-44)**
 
 | Value | Description     |
 | :-------------: | :------------- |
@@ -211,14 +211,14 @@ Data value is identical to the actual temperature in Celsius. For example, if th
 `Note` If ACTION command is executed, the value is changed into 0.
 {: .notice}
 
-### <a name="moving"></a>**Moving**
+### <a name="moving"></a>**[Moving (46)](#moving-46)**
 
 |Value|Description|
 | :---:| :---|
 |0|Goal position command execution is completed|
 |1|Goal position command execution is in progress|
 
-### <a name="lock"></a>**Lock**
+### <a name="lock"></a>**[Lock (47)](#lock-47)**
 
 |Value|Description|
 | :---:| :---|
@@ -228,7 +228,7 @@ Data value is identical to the actual temperature in Celsius. For example, if th
 `Caution` If Lock is set to 1, the power must be turned off and then turned on again to change into 0.
 {: .notice--warning}
 
-### <a name="punch"></a>**Punch**
+### <a name="punch"></a>**[Punch (48)](#punch-48)**
 Current to drive motor is at minimum.
 Can choose vales from 0x20 to 0x3FF.
 
