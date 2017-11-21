@@ -2325,7 +2325,7 @@ Do not connect or disconnect DYNAMIXEL when power is being supplied.</p>
 <p class="notice"><code class="highlighter-rouge">Note</code> Two’s complement is applied for the negative value. For more information, please refer to <a href="https://en.wikipedia.org/wiki/Two%27s_complement">Two’s complement</a> from Wikipedia.</p>
 
 <h3 id="area-eeprom-ram"><a href="#area-eeprom-ram">Area (EEPROM, RAM)</a></h3>
-<p>The Control Table is divided into 2 Areas. Data in the RAM Area is reset to initial values when the DYNAMIXEL is turned on (Volatile). On the other hand, modified data in the EEPROM Area keeps their values even when the DYNAMIXEL is turned off (Non-Volatile). <strong>Data in the EEPROM Area can only be changed or modified when the value of Torque Enable(64) is cleared to ‘0’.</strong></p>
+<p>The Control Table is divided into 2 Areas. Data in the RAM Area is reset to initial values when the power is reset(Volatile). On the other hand, data in the EEPROM Area is maintained even when the DYNAMIXEL is powered off(Non-Volatile). <strong>Data in the EEPROM Area can only be written to if Torque Enable(64) is cleared to ‘0’(Off).</strong></p>
 
 <h3 id="size"><a href="#size">Size</a></h3>
 <p>The Size of data varies from 1 to 4 bytes depend on their usage. Please check the size of data when updating the data with an Instruction Packet. For data larger than 2 bytes will be saved according to <a href="https://en.wikipedia.org/wiki/Endianness#Little">Little Endian</a>.</p>

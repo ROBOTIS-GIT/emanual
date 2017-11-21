@@ -2272,8 +2272,8 @@ mx-64:
     children:
     - title: "Performance Graph"
       titlekr: "성능 그래프"
-      url: /dxl/mx/mx-28/#performance-graph
-      urlkr: /dxl/mx/mx-28/#성능-그래프
+      url: /dxl/mx/mx-64/#performance-graph
+      urlkr: /dxl/mx/mx-64/#성능-그래프
   - title: "Control Table"
     titlekr: "컨트롤 테이블"
     url: /dxl/mx/mx-64/#control-table
@@ -2411,8 +2411,8 @@ mx-106:
     children:
     - title: "Performance Graph"
       titlekr: "성능 그래프"
-      url: /dxl/mx/mx-28/#performance-graph
-      urlkr: /dxl/mx/mx-28/#성능-그래프
+      url: /dxl/mx/mx-106/#performance-graph
+      urlkr: /dxl/mx/mx-106/#성능-그래프
   - title: "Control Table"
     titlekr: "컨트롤 테이블"
     url: /dxl/mx/mx-106/#control-table
@@ -2552,8 +2552,8 @@ mx-28-2:
     children:
     - title: "Performance Graph"
       titlekr: "성능 그래프"
-      url: /dxl/mx/mx-28/#performance-graph
-      urlkr: /dxl/mx/mx-28/#성능-그래프
+      url: /dxl/mx/mx-28-2/#performance-graph
+      urlkr: /dxl/mx/mx-28-2/#성능-그래프
   - title: "Control Table"
     titlekr: "컨트롤 테이블"
     url: /dxl/mx/mx-28-2/#control-table
@@ -2624,8 +2624,8 @@ mx-64-2:
     children:
     - title: "Performance Graph"
       titlekr: "성능 그래프"
-      url: /dxl/mx/mx-28/#performance-graph
-      urlkr: /dxl/mx/mx-28/#성능-그래프
+      url: /dxl/mx/mx-64-2/#performance-graph
+      urlkr: /dxl/mx/mx-64-2/#성능-그래프
   - title: "Control Table"
     titlekr: "컨트롤 테이블"
     url: /dxl/mx/mx-64-2/#control-table
@@ -2696,8 +2696,8 @@ mx-106-2:
     children:
     - title: "Performance Graph"
       titlekr: "성능 그래프"
-      url: /dxl/mx/mx-28/#performance-graph
-      urlkr: /dxl/mx/mx-28/#성능-그래프
+      url: /dxl/mx/mx-106-2/#performance-graph
+      urlkr: /dxl/mx/mx-106-2/#성능-그래프
   - title: "Control Table"
     titlekr: "컨트롤 테이블"
     url: /dxl/mx/mx-106-2/#control-table

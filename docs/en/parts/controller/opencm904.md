@@ -269,7 +269,7 @@ USART channel 1 is registered under Dynamixel TTL Bus and cannot be used simulta
 - **A1** : Digital I/O and analog input. Can be used for SPI channel 1’s SCK clock-pin.
 - **A2** : Digital I/O, analog input, & PWM output.
 - **A3** : Digital I/O, analog input, & PWM output.
-- **A4** : Digital I/O, analog input, & PWM output. Used as USART1 (Serial2) channel’s TXD pin and connected to 4-pin communication port’s TX2.
+- **A4** : Digital I/O, analog input, & PWM output. Used as USART2(Serial2) channel’s TXD pin and connected to 4-pin communication port’s TX2.
 - **A5** : Digital I/O, analog input, & PWM output. Used as USART2(Serial2) channel’s RXD pin and connected to 4-pin communication RX2.
 - **A6** : Digital I/O, analog input, & PWM output. Can be used as SPI channel 1’s MISO pin.
 - **A7** : Digital I/O, analog input, & PWM output. Can be used as SPI channel 1’s MISO pin.

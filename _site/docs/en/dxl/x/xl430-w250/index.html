@@ -2325,7 +2325,7 @@ Do not connect or disconnect DYNAMIXEL when power is being supplied.</p>
 <p class="notice"><code class="highlighter-rouge">Note</code> Two’s complement is applied for the negative value. For more information, please refer to <a href="https://en.wikipedia.org/wiki/Two%27s_complement">Two’s complement</a> from Wikipedia.</p>
 
 <h3 id="area-eeprom-ram"><a href="#area-eeprom-ram">Area (EEPROM, RAM)</a></h3>
-<p>The Control Table is divided into 2 Areas. Data in the RAM Area is reset to initial values when the DYNAMIXEL is turned on (Volatile). On the other hand, modified data in the EEPROM Area keeps their values even when the DYNAMIXEL is turned off (Non-Volatile). <strong>Data in the EEPROM Area can only be changed or modified when the value of Torque Enable(64) is cleared to ‘0’.</strong></p>
+<p>The Control Table is divided into 2 Areas. Data in the RAM Area is reset to initial values when the power is reset(Volatile). On the other hand, data in the EEPROM Area is maintained even when the DYNAMIXEL is powered off(Non-Volatile). <strong>Data in the EEPROM Area can only be written to if Torque Enable(64) is cleared to ‘0’(Off).</strong></p>
 
 <h3 id="size"><a href="#size">Size</a></h3>
 <p>The Size of data varies from 1 to 4 bytes depend on their usage. Please check the size of data when updating the data with an Instruction Packet. For data larger than 2 bytes will be saved according to <a href="https://en.wikipedia.org/wiki/Endianness#Little">Little Endian</a>.</p>
@@ -3123,55 +3123,7 @@ Do not connect or disconnect DYNAMIXEL when power is being supplied.</p>
 </table>
 
 <h3 id="operating-mode11"><a name="operating-mode"></a><strong><a href="#operating-mode11">Operating Mode(11)</a></strong></h3>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: center">Value</th>
-      <th style="text-align: center">Operating Mode</th>
-      <th style="text-align: center">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: center">1</td>
-      <td style="text-align: center">Velocity Control Mode<br />(0° ~ 360°)</td>
-      <td style="text-align: center">This mode controls velocity and ideal for wheel operation.<br />This mode is identical to the Wheel Mode(endless) from existing Dynamixels.</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">3(Default)</td>
-      <td style="text-align: center">Position Control Mode</td>
-      <td style="text-align: center">This mode controls position and identical to the Joint Mode.<br />Operating position range is limited by Max Position Limit(48) and Min Position Limit(52).<br />This mode is ideal for articulated robots that each joint rotates less than 360°.</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">4</td>
-      <td style="text-align: center">Extended Position Control Mode<br />(Multi-turn)</td>
-      <td style="text-align: center">This mode controls position and identical to Multi-turn Mode.<br />512 turns are supported(-256[rev] ~ 256[rev]) and ideal for multi-turn wrists or conveyer systems or a system that requires an additional reduction gear.</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">16</td>
-      <td style="text-align: center">PWM Control Mode<br />(Voltage Control Mode)</td>
-      <td style="text-align: center">This mode directly controls PWM output (Voltage Control Mode)</td>
-    </tr>
-  </tbody>
-</table>
-
-<div class="notice">
-  
-<p><code class="highlighter-rouge">Note</code> Switching Operating Mode will reset gains(PID, Feedfoward) properly to the selected Operating Mode. The profile generator and limits will also be reset.</p>
-<ol>
-  <li>Profile Velocity(112), Profile Acceleration(108) : Reset to ‘0’</li>
-  <li>Goal PWM(100) : Reset to PWM Limit(36)</li>
-</ol>
-
-</div>
-
-<div class="notice">
-  
-<p><code class="highlighter-rouge">Note</code> PWM is the abbreviation for Pulse Width Modulation that modulates PWM Duty to control motors. The PWM Control Mode changes pulse width to control average supply voltage to the motor and this technique is widely used in the motor control field.
-Therefore, PWM Control Mode uses Goal PWM(100) value to control supply voltage for Dynamixel. PWM Control Mode is similar to the Wheel Mode of Dynamixel AX and RX series.</p>
-
-</div>
+<p></p>
 
 <h3 id="secondaryshadow-id12"><a name="secondary-shadow-id"></a><strong><a href="#secondaryshadow-id-12">Secondary(Shadow) ID(12)</a></strong></h3>
 <p>Set the Dynamixel’s Secondary ID. Secondary ID(12) is a value to identify each Dynamixel, just like the ID(7).
