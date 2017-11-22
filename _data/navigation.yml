@@ -92,6 +92,12 @@ main:
       - title: "XM430-W350"
         titlekr: "XM430-W350"
         url: /dxl/x/xm430-w350/
+      - title: "XM540-W150"
+        titlekr: "XM540-W150"
+        url: /dxl/x/xm540-w150/
+      - title: "XM540-W270"
+        titlekr: "XM540-W270"
+        url: /dxl/x/xm540-w270/
       - title: "XH430-W210"
         titlekr: "XH430-W210"
         url: /dxl/x/xh430-w210/
@@ -192,7 +198,7 @@ main:
       - title: "*EXPLORER"
         titlekr: "*2단계 교육키트"
         titlejp: "*Level 2 Kit"
-        url: /edu/ollo/explore/
+        url: /edu/ollo/explorer/
       - title: "*INVENTOR"
         titlekr: "*3단계 교육키트"
         titlejp: "*Level 3 Kit"
@@ -505,6 +511,11 @@ main:
         titlejp: "BT-410"
         titlecn: "BT-410"
         url: /parts/communication/bt-410/
+      - title: "BT-410 Dongle"
+        titlekr: "BT-410 동글"
+        titlejp: "BT-410 Dongle"
+        titlecn: "BT-410 Dongle"
+        url: /parts/communication/bt-410-dongle/
       - title: "ZIG2Serial"
         titlekr: "ZIG2Serial"
         titlejp: "ZIG2Serial"
@@ -550,6 +561,9 @@ main:
         titlejp: "USB2DYNAMIXEL"
         titlecn: "USB2DYNAMIXEL"
         url: /parts/interface/usb2dynamixel/
+      - title: "U2D2"
+        titlekr: "U2D2"
+        url: /parts/interface/u2d2/
     - title: "Sensors"
       titlekr: "센서"
       titlejp: "センサー"
@@ -3343,6 +3357,160 @@ xm430-w350:
         titlekr: "도면"
         url: /dxl/x/xm430-w350/#drawings
         urlkr: /dxl/x/xm430-w350/#도면
+
+#XM540-W150 sidebar
+xm540-w150:
+  - title: "Specifications"
+    titlekr: "스펙"
+    url: /dxl/x/xm540-w150/#specifications
+    urlkr: /dxl/x/xm540-w150/#스펙
+    children:
+      - title: "Performance Graph"
+        titlekr: "성능 그래프"
+        url: /dxl/x/xm540-w150/#performance-graph
+        urlkr: /dxl/x/xm540-w150/#성능-그래프
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /dxl/x/xm540-w150/#control-table
+    urlkr: /dxl/x/xm540-w150/#컨트롤-테이블
+    children:
+      - title: "Control Table, Data, Address"
+        titlekr: "컨트롤 테이블, 데이터, 주소"
+        url: /dxl/x/xm540-w150/#control-table-data-address
+        urlkr: /dxl/x/xm540-w150/#컨트롤-테이블-데이터-주소
+        children:
+          - title: "Area(EEPROM, RAM)"
+            url: /dxl/x/xm540-w150/#area-eeprom-ram
+          - title: "Size"
+            url: /dxl/x/xm540-w150/#size
+          - title: "Access"
+            url: /dxl/x/xm540-w150/#access
+          - title: "Initial Value"
+            url: /dxl/x/xm540-w150/#initial-value
+      - title: "EEPROM Area"
+        titlekr: "EEPROM 영역"
+        url: /dxl/x/xm540-w150/#control-table-of-eeprom-area
+        urlkr: /dxl/x/xm540-w150/#eeprom-영역
+      - title: "RAM Area"
+        titlekr: "RAM 영역"
+        url: /dxl/x/xm540-w150/#control-table-of-ram-area
+        urlkr: /dxl/x/xm540-w150/#ram-영역
+      - title: "Control Table Description"
+        titlekr: "컨트롤 테이블 설명"
+        url: /dxl/x/xm540-w150/#control-table-description
+        urlkr: /dxl/x/xm540-w150/#컨트롤-테이블-설명
+  - title: "How to Assemble"
+    titlekr: "조립 예시"
+    url: /dxl/x/xm540-w150/#how-to-assemble
+    urlkr: /dxl/x/xm540-w150/#조립-예시
+    children:
+      - title: "Wiring through Back Case"
+        titlekr: "배선 예시"
+        url: /dxl/x/xm540-w150/#wiring-through-back-case
+        urlkr: /dxl/x/xm540-w150/#배선-예시
+      - title: "Option Frame Assembly"
+        titlekr: "옵션프레임 조립"
+        url: /dxl/x/xm540-w150/#option-frame-assembly
+        urlkr: /dxl/x/xm540-w150/#옵션프레임-조립
+  - title: "Maintenance"
+    titlekr: "유지보수"
+    url: /dxl/x/xm540-w150/#maintenance
+    urlkr: /dxl/x/xm540-w150/#유지보수
+    children:
+      - title: "Horn, Bearing"
+        titlekr: "혼, 베어링"
+        url: /dxl/x/xm540-w150/#horn-and-bearing-replacement
+        urlkr: /dxl/x/xm540-w150/#혼-베어링
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /dxl/x/xm540-w150/#reference
+    urlkr: /dxl/x/xm540-w150/#참고자료
+    children:
+      - title: "Quick Start"
+        titlekr: "퀵스타트"
+        url: /dxl/x/xm540-w150/#quick-start
+        urlkr: /dxl/x/xm540-w150/#퀵스타트
+      - title: "Drawings"
+        titlekr: "도면"
+        url: /dxl/x/xm540-w150/#drawings
+        urlkr: /dxl/x/xm540-w150/#도면
+
+#XM540-W270 sidebar
+xm540-w270:
+  - title: "Specifications"
+    titlekr: "스펙"
+    url: /dxl/x/xm540-w270/#specifications
+    urlkr: /dxl/x/xm540-w270/#스펙
+    children:
+      - title: "Performance Graph"
+        titlekr: "성능 그래프"
+        url: /dxl/x/xm540-w270/#performance-graph
+        urlkr: /dxl/x/xm540-w270/#성능-그래프
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /dxl/x/xm540-w270/#control-table
+    urlkr: /dxl/x/xm540-w270/#컨트롤-테이블
+    children:
+      - title: "Control Table, Data, Address"
+        titlekr: "컨트롤 테이블, 데이터, 주소"
+        url: /dxl/x/xm540-w270/#control-table-data-address
+        urlkr: /dxl/x/xm540-w270/#컨트롤-테이블-데이터-주소
+        children:
+          - title: "Area(EEPROM, RAM)"
+            url: /dxl/x/xm540-w270/#area-eeprom-ram
+          - title: "Size"
+            url: /dxl/x/xm540-w270/#size
+          - title: "Access"
+            url: /dxl/x/xm540-w270/#access
+          - title: "Initial Value"
+            url: /dxl/x/xm540-w270/#initial-value
+      - title: "EEPROM Area"
+        titlekr: "EEPROM 영역"
+        url: /dxl/x/xm540-w270/#control-table-of-eeprom-area
+        urlkr: /dxl/x/xm540-w270/#eeprom-영역
+      - title: "RAM Area"
+        titlekr: "RAM 영역"
+        url: /dxl/x/xm540-w270/#control-table-of-ram-area
+        urlkr: /dxl/x/xm540-w270/#ram-영역
+      - title: "Control Table Description"
+        titlekr: "컨트롤 테이블 설명"
+        url: /dxl/x/xm540-w270/#control-table-description
+        urlkr: /dxl/x/xm540-w270/#컨트롤-테이블-설명
+  - title: "How to Assemble"
+    titlekr: "조립 예시"
+    url: /dxl/x/xm540-w270/#how-to-assemble
+    urlkr: /dxl/x/xm540-w270/#조립-예시
+    children:
+      - title: "Wiring through Back Case"
+        titlekr: "배선 예시"
+        url: /dxl/x/xm540-w270/#wiring-through-back-case
+        urlkr: /dxl/x/xm540-w270/#배선-예시
+      - title: "Option Frame Assembly"
+        titlekr: "옵션프레임 조립"
+        url: /dxl/x/xm540-w270/#option-frame-assembly
+        urlkr: /dxl/x/xm540-w270/#옵션프레임-조립
+  - title: "Maintenance"
+    titlekr: "유지보수"
+    url: /dxl/x/xm540-w270/#maintenance
+    urlkr: /dxl/x/xm540-w270/#유지보수
+    children:
+      - title: "Horn, Bearing"
+        titlekr: "혼, 베어링"
+        url: /dxl/x/xm540-w270/#horn-and-bearing-replacement
+        urlkr: /dxl/x/xm540-w270/#혼-베어링
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /dxl/x/xm540-w270/#reference
+    urlkr: /dxl/x/xm540-w270/#참고자료
+    children:
+      - title: "Quick Start"
+        titlekr: "퀵스타트"
+        url: /dxl/x/xm540-w270/#quick-start
+        urlkr: /dxl/x/xm540-w270/#퀵스타트
+      - title: "Drawings"
+        titlekr: "도면"
+        url: /dxl/x/xm540-w270/#drawings
+        urlkr: /dxl/x/xm540-w270/#도면
 
 #H42-20-S300-R sidebar
 h42-20-s300-r:
@@ -6729,8 +6897,31 @@ bt-410:
     url: /parts/communication/bt-410/#compatibility
   - title: "Communication Mode"
     url: /parts/communication/bt-410/#communication-mode
+  - title: "BT-410 Setting"
+    url: /parts/communication/bt-410/#bt-410-setting
+  - title: "AT Commands"
+    url: /parts/communication/bt-410/#at-commands
   - title: "Pinout"
     url: /parts/communication/bt-410/#pinout
+    
+#BT-410 Dongle sidebar
+bt-410-dongle:
+  - title: "Introduction"
+    url: /parts/communication/bt-410-dongle/#introduction
+  - title: "Specifications"
+    url: /parts/communication/bt-410-dongle/#specifications
+  - title: "Compatibility"
+    url: /parts/communication/bt-410-dongle/#compatibility
+  - title: "Communication Mode"
+    url: /parts/communication/bt-410-dongle/#communication-mode
+  - title: "BT-410 Dongle Setting"
+    url: /parts/communication/bt-410-dongle/#bt-410-dongle-setting
+  - title: "AT Commands"
+    url: /parts/communication/bt-410-dongle/#at-commands
+  - title: "Check Driver"
+    url: /parts/communication/bt-410-dongle/#check-driver
+  - title: "Install Driver Manually"
+    url: /parts/communication/bt-410-dongle/#install-driver-manually
 
 #ZIG2Serial sidebar
 zig2serial:
@@ -6973,6 +7164,29 @@ usb2dynamixel:
     url: /parts/interface/usb2dynamixel/#install-driver-manually
   - title: "Videos"
     url: /parts/interface/usb2dynamixel/#videos
+
+#U2D2 sidebar
+u2d2:
+  - title: "Introduction"
+    url: /parts/interface/u2d2/#introduction
+  - title: "How to Use"
+    url: /parts/interface/u2d2/#how-to-use
+  - title: "Specifications"
+    url: /parts/interface/u2d2/#specifications
+  - title: "Layout"
+    url: /parts/interface/u2d2/#layout
+  - title: "Baudrate"
+    url: /parts/interface/u2d2/#baudrate
+  - title: "Supply Power"
+    url: /parts/interface/u2d2/#supply-power
+  - title: "Pinouts"
+    url: /parts/interface/u2d2/#pinouts
+  - title: "Data Flow Control"
+    url: /parts/interface/u2d2/#data-flow-control
+  - title: "Software"
+    url: /parts/interface/u2d2/#software
+  - title: "Additional Features"
+    url: /parts/interface/u2d2/#additional-features
 
 #FAQ sidebar
 faq:

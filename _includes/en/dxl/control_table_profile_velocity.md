@@ -33,7 +33,7 @@ When given Goal Position(116), Dynamixel's profile creates target velocity traje
 
 
 {% capture group_notice_03 %}
-`Note` Velocity Control Mode only uses Profile Acceleration(108). Step and Trapezoidal Profiles are supported. Velocity Override and Jerk control are supported as well. Acceleration time(t1) can be calculated as below equation.
+`Note` Velocity Control Mode only uses Profile Acceleration(108). Step and Trapezoidal Profiles are supported. Velocity Override and Jerk control are supported as well. Acceleration time(t1) can be calculated as below equation.  
 Goal Velocity(104) / Profile Acceleration(108) * t<sub>1</sub> = 64
 {% endcapture %}
 
