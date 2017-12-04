@@ -180,7 +180,7 @@ main:
       titlekr: "터틀봇3"
       titlejp: "TurtleBot3"
       titlecn: "TurtleBot3"
-      url: http://turtlebot3.robotis.com
+      url: /platform/turtlebot3/introduction/
   - title: "EDUCATION"
     titlekr: "교육키트"
     titlejp: "トレーニングキット"
@@ -5523,6 +5523,17 @@ thormang3:
     - title: "Physical Properties"
       url: /platform/thormang3/thormang3_operation/#physical-properties
 
+#TURTLEBOT3
+turtlebot3:
+  - title: "Overview"
+    url: /platform/turtlebot3/introduction/#overview
+    children:
+    - title: "TurtleBot3"
+      url: /platform/turtlebot3/introduction/#turtlebot3
+    - title: "News"
+      url: /platform/turtlebot3/introduction/#news
+
+
 #Manipulator-H
 manipulator_h:
   - title: "Introduction"
@@ -5590,7 +5601,7 @@ manipulator_h:
       url: /platform/manipulator_h/introduction/#timer
     - title: "Mass Property"
       url: /platform/manipulator_h/introduction/#mass-property
-      
+
 
 #R+ Task 1.0 sidebar
 rplustask1:
@@ -6903,7 +6914,7 @@ bt-410:
     url: /parts/communication/bt-410/#at-commands
   - title: "Pinout"
     url: /parts/communication/bt-410/#pinout
-    
+
 #BT-410 Dongle sidebar
 bt-410-dongle:
   - title: "Introduction"
@@ -6941,7 +6952,7 @@ zig2serial:
     url: /parts/communication/zig2serial/#circuit
   - title: "Videos"
     url: /parts/communication/zig2serial/#videos
-  
+
 #LM-10 sidebar
 lm-10:
   - title: "Introduction"
