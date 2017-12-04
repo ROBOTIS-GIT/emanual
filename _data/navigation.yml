@@ -5526,12 +5526,95 @@ thormang3:
 #TURTLEBOT3
 turtlebot3:
   - title: "Overview"
-    url: /platform/turtlebot3/introduction/#overview
+    url: /platform/turtlebot3/overview/#overview
     children:
     - title: "TurtleBot3"
-      url: /platform/turtlebot3/introduction/#turtlebot3
+      url: /platform/turtlebot3/overview/#turtlebot3
     - title: "News"
-      url: /platform/turtlebot3/introduction/#news
+      url: /platform/turtlebot3/overview/#news
+  - title: "Features"
+    url: /platform/turtlebot3/features/#features
+    children:
+    - title: "World's Most Popular ROS Platform"
+      url: /platform/turtlebot3/features/#world/'s-most-popular-ros-platform
+    - title: "Affordable Cost"
+      url: /platform/turtlebot3/features/#affordable-cost
+    - title: "Small Size"
+      url: /platform/turtlebot3/features/#small-size
+    - title: "ROS Standard"
+      url: /platform/turtlebot3/features/#ros-standard
+    - title: "Extensibility"
+      url: /platform/turtlebot3/features/#extensibility
+    - title: "Modular Actuator for Mobile Robot"
+      url: /platform/turtlebot3/features/#modular-actuator-for-mobile-robot
+    - title: "Open Control Board for ROS"
+      url: /platform/turtlebot3/features/#open-control-board-for-ros
+    - title: "Strong Sensor Lineups"
+      url: /platform/turtlebot3/features/#strong-sensor-lineups
+    - title: "Open Source"
+      url: /platform/turtlebot3/features/#open-source
+  - title: "Specifications"
+    url: /platform/turtlebot3/specifications/#specifications
+    children:
+    - title: "Hardware Specifications"
+      url: /platform/turtlebot3/specifications/#hardware-specifications
+    - title: "Dimension and Mass"
+      url: /platform/turtlebot3/specifications/#dimension-and-mass
+      children:
+      - title: "Data of TurtleBot3 Burger"
+        url: /platform/turtlebot3/specifications/#data-of-turtlebot3-burger
+      - title: "Data of TurtleBot3 Waffle"
+        url: /platform/turtlebot3/specifications/#data-of-turtlebot3-waffle
+    - title: "Components"
+      url: /platform/turtlebot3/specifications/#components
+      children:
+      - title: "SBC"
+        url: /platform/turtlebot3/specifications/#sbc
+      - title: "Sensor"
+        url: /platform/turtlebot3/specifications/#sensor
+      - title: "Control Board"
+        url: /platform/turtlebot3/specifications/#control-board
+      - title: "Actuator"
+        url: /platform/turtlebot3/specifications/#actuator
+  - title: "Hardware Setup"
+    url: /platform/turtlebot3/specifications/#hardware-setup
+    children:
+    - title: "Main Components"
+      url: /platform/turtlebot3/specifications/#main-components
+    - title: "Part List"
+      url: /platform/turtlebot3/specifications/#part-list
+      children:
+      - title: "Chassis Parts"
+        url: /platform/turtlebot3/specifications/#chassis-parts
+      - title: "Motor"
+        url: /platform/turtlebot3/specifications/#motor
+      - title: "Board"
+        url: /platform/turtlebot3/specifications/#board
+      - title: "Sensor"
+        url: /platform/turtlebot3/specifications/#sensor
+      - title: "Memory"
+        url: /platform/turtlebot3/specifications/#memory
+      - title: "Cable"
+        url: /platform/turtlebot3/specifications/#cable
+      - title: "Power"
+        url: /platform/turtlebot3/specifications/#power
+      - title: "Tools"
+        url: /platform/turtlebot3/specifications/#tools
+      - title: "Miscellaneous"
+        url: /platform/turtlebot3/specifications/#miscellaneous
+    - title: "Assembly Manual"
+      url: /platform/turtlebot3/specifications/#assembly-manual
+    - title: "Assembly Video"
+      url: /platform/turtlebot3/specifications/#assembly-video
+      children:
+      - title: "TurtleBot3 Burger"
+        url: /platform/turtlebot3/specifications/#turtlebot3-burger
+      - title: "TurtleBot3 Waffle"
+        url: /platform/turtlebot3/specifications/#turtlebot3-waffle
+    - title: "Basic Operation"
+      url: /platform/turtlebot3/specifications/#basic-operation
+    - title: "Open Source Hardware"
+      url: /platform/turtlebot3/specifications/#open-source-hardware
 
 
 #Manipulator-H

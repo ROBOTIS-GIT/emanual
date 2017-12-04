@@ -1,11 +1,11 @@
 ---
 layout: archive
 lang: en
-ref: turtlebot3_intro
+ref: turtlebot3_specifications
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/turtlebot3/introduction/
+permalink: /docs/en/platform/turtlebot3/specifications/
 sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
@@ -44,11 +44,11 @@ sidebar:
 
 ## [Dimension and Mass](#dimension-and-mass)
 
-### Data of TurtleBot3 Burger
+### [Data of TurtleBot3 Burger](#data-of-turtlebot3-burger)
 
 ![](/assets/images/platform/turtlebot3/turtlebot3_dimension1.png)
 
-### Data of TurtleBot3 Waffle
+### [Data of TurtleBot3 Waffle](#data-of-turtlebot3-waffle)
 
 ![](/assets/images/platform/turtlebot3/turtlebot3_dimension2.png)
 
@@ -66,7 +66,7 @@ sidebar:
 
 - Intel® Realsense™ R200 : https://software.intel.com/en-us/RealSense/R200Camera
 
-### [Control board](#control-board)
+### [Control Board](#control-board)
 
 - OpenCR1.0 : http://turtlebot3.robotis.com/en/latest/appendix_opencr.html
 

@@ -1,11 +1,11 @@
 ---
 layout: archive
 lang: en
-ref: turtlebot3_intro
+ref: turtlebot3_hardware_setup
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/turtlebot3/introduction/
+permalink: /docs/en/platform/turtlebot3/hardware-setup/
 sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
@@ -25,7 +25,7 @@ sidebar:
 
 TurtleBot3 has two different models: `Burger` and `Waffle`. The following list shows their components. The big differences between two models are the Motor, the SBC(Single Board Computer) and the Sensors.
 
-### Chasis Parts
+### [Chassis Parts](#chassis-parts)
 
 | Part Name                      |Burger  | Waffle  |
 |:-------------------------------|:------:|:-------:|
@@ -37,14 +37,14 @@ TurtleBot3 has two different models: `Burger` and `Waffle`. The following list s
 | Tire                           | 2      | 2       |
 | Ball Caster                    | 1      | 2       |
 
-### Motor
+### [Motor](#motor)
 
 | Part Name                      |Burger  | Waffle  |
 |:-------------------------------|:------:|:-------:|
 | DYNAMIXEL (XL430-W250-T)       | 2      | 0       |
 | DYNAMIXEL (XM430-W210-T)       | 0      | 2       |
 
-### Board
+### [Board](#board)
 
 | Part Name                      |Burger  | Waffle  |
 |:-------------------------------|:------:|:-------:|
@@ -53,20 +53,20 @@ TurtleBot3 has two different models: `Burger` and `Waffle`. The following list s
 | Intel® Joule™                  | 0      | 1       |
 | USB2LDS                        | 1      | 1       |
 
-### Sensor
+### [Sensor](#sensor)
 
 | Part Name                      |Burger  | Waffle  |
 |:-------------------------------|:------:|:-------:|
 | LDS (HLS-LFCD2)                | 1      | 1       |
 | Intel® Realsense™ R200         | 0      | 1       |
 
-### Memory
+### [Memory](#memory)
 
 | Part Name                      |Burger  | Waffle  |
 |:-------------------------------|:------:|:-------:|
 | MicroSD Card                   | 1      | 0       |
 
-### Cable
+### [Cable](cable)
 
 | Part Name                      |Burger  | Waffle  |
 |:-------------------------------|:------:|:-------:|
@@ -76,7 +76,7 @@ TurtleBot3 has two different models: `Burger` and `Waffle`. The following list s
 | DYNAMIXEL to OpenCR Cable      | 2      | 2       |
 | USB Cable                      | 2      | 2       |
 
-### Power
+### [Power](power)
 
 | Part Name                      |Burger  | Waffle  |
 |:-------------------------------|:------:|:-------:|
@@ -84,7 +84,7 @@ TurtleBot3 has two different models: `Burger` and `Waffle`. The following list s
 | A/C Cord                       | 1      | 1       |
 | LIPO Battery 11.1V 1800mAh     | 1      | 1       |
 
-### Tools
+### [Tools](tools)
 
 | Part Name                      |Burger  | Waffle  |
 |:-------------------------------|:------:|:-------:|
@@ -93,7 +93,7 @@ TurtleBot3 has two different models: `Burger` and `Waffle`. The following list s
 | USB3.0 HUB                     | 0      | 1       |
 | LIPO Battery charger           | 1      | 1       |
 
-### Miscellenous
+### [Miscellaneous](miscellaneous)
 
 | Part Name                      |Burger  | Waffle  |
 |:-------------------------------|:------:|:-------:|
@@ -127,17 +127,17 @@ TurtleBots3 is delivered as unassembled parts in the boxes. Follow the instructi
 If it is difficult to assemble with the assembly manual, please refer to the following assembly video.
 
 
-### TurtleBot3 Burger
+### [TurtleBot3 Burger](turtlebot3-burger)
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/rvm-m2ogrLA" frameborder="0" allowfullscreen></iframe>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5D9S_tcenL4" frameborder="0" allowfullscreen></iframe>
 
-### TurtleBot3 Waffle
+### [TurtleBot3 Waffle](turtlebot3-waffle)
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/1nTMyr4ybi0" frameborder="0" allowfullscreen></iframe>
 
-## [Basic Operation]
+## [Basic Operation](#basic-operation)
 
 ![](/assets/images/platform/turtlebot3/opencr_models.png)
 

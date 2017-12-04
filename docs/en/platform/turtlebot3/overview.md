@@ -1,11 +1,11 @@
 ---
 layout: archive
 lang: en
-ref: turtlebot3_intro
+ref: turtlebot3_overview
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/turtlebot3/introduction/
+permalink: /docs/en/platform/turtlebot3/overview/
 sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
