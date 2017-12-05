@@ -1,11 +1,11 @@
 ---
 layout: archive
 lang: en
-ref: turtlebot3_contactus
+ref: turtlebot3_contact_us
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/turtlebot3/contactus/
+permalink: /docs/en/platform/turtlebot3/contact_us/
 sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
