@@ -15,7 +15,9 @@ sidebar:
 
 ![](/assets/images/platform/turtlebot3/turtlebot3_flyer_front.png)
 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/9OC3J53RUsk" frameborder="0" allowfullscreen></iframe>
+<figure class="video_container">
+  <iframe width="640" height="360" src="https://www.youtube.com/embed/9OC3J53RUsk" frameborder="0" allowfullscreen></iframe>
+</figure>
 
 ## [TurtleBot3](#turtlebot3)
 
