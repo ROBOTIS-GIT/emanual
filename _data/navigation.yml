@@ -5774,9 +5774,6 @@ turtlebot3:
       url: /platform/turtlebot3/applications/#turtlebot-panorama-demo-using-raspberry-pi-camera-module
     - title: "Automatic Docking"
       url: /platform/turtlebot3/applications/#automatic-docking
-
-
-
   - title: "Friends"
     url: /platform/turtlebot3/friends/#friends
     children:
@@ -5878,6 +5875,7 @@ turtlebot3:
       url: /platform/turtlebot3/appendix_realsense/#introduction-video
     - title: "User Guide"
       url: /platform/turtlebot3/appendix_realsense/#user-guide
+      children:
       - title: "Installation"
         url: /platform/turtlebot3/appendix_realsense/#installation
       - title: "Run realsense_camera Node"
