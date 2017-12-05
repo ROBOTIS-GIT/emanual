@@ -5851,6 +5851,7 @@ turtlebot3:
       url: /platform/turtlebot3/appendix_lds_01/#introduction-video
     - title: "User Guide"
       url: /platform/turtlebot3/appendix_lds_01/#user-guide
+      children:
       - title: "Installation"
         url: /platform/turtlebot3/appendix_lds_01/#installation
       - title: "Set Permission for HLS-LFCD LDS"
