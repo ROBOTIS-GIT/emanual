@@ -15,9 +15,9 @@ sidebar:
 
 ![](/assets/images/platform/turtlebot3/software/remote_pc_and_turtlebot.png)
 
-<div class="alert alert-warning">
   **Warning :** The contents in this chapter corresponds to the `Remote PC` (your desktop or laptop PC) which will control TurtleBot3. Do **NOT** apply this instruction to your TurtleBot3.
-</div>
+  {: .notice--warning}
+
 
 <div class="alert alert-info">
   **Note :** OpenCR1.0 is pre-loaded with the software needed to run your specific TurtleBot3 model(Burger or Waffle). Refer to the information below only if you want to modify the existing software or write new software for OpenCR1.0.
