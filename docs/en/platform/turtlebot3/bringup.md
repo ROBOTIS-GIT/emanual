@@ -11,29 +11,27 @@ sidebar:
   nav: "turtlebot3"
 ---
 
+<div style="counter-reset: h8 1">
+</div>
+
 # [Bringup](#bringup)
 
 ![](/assets/images/platform/turtlebot3/software/remote_pc_and_turtlebot.png)
 
-<div class="alert alert-info">
-  **Note :** This instruction was tested on <kbd>Ubuntu 16.04</kbd> and <kbd>ROS Kinetic Kame</kbd>.
-</div>
+**Note :** This instruction was tested on <kbd>Ubuntu 16.04</kbd> and <kbd>ROS Kinetic Kame</kbd>.
+{: .notice--info}
 
-<div class="alert alert-warning">
-  **Warning :** This instruction is intended to be run on the remote PC. If you are following the instruction on **TurtleBot**, please do **NOT** run *roscore* command.
-</div>
+**Warning :** This instruction is intended to be run on the remote PC. If you are following the instruction on **TurtleBot**, please do **NOT** run *roscore* command.
+{: .notice--warning}
 
-<div class="alert alert-warning">
-  **Warning :** Make sure that IP address on each device is set correctly.
-</div>
+**Warning :** Make sure that IP address on each device is set correctly.
+{: .notice--warning}
 
-<div class="alert alert-warning">
-  **Warning :** When the battery voltage is lower than 11V, the buzzer alarm will continuously sound and actuators will be disabled. The battery must be recharged when the buzzer alarm sounds.
-</div>
+**Warning :** When the battery voltage is lower than 11V, the buzzer alarm will continuously sound and actuators will be disabled. The battery must be recharged when the buzzer alarm sounds.
+{: .notice--warning}
 
-<div class="alert alert-info">
-  **Note :** Before start bringup TurtleBot3, We recommend you add `export` command to `bashrc` depend on your TurtleBot3(`burger` or `waffle`)
-</div>
+**Note :** Before start bringup TurtleBot3, We recommend you add `export` command to `bashrc` depend on your TurtleBot3(`burger` or `waffle`)
+{: .notice--info}
 
 
 ``` bash
@@ -48,9 +46,8 @@ sidebar:
 
 ## [Bringup TurtleBot3](#bringup-turtlebot3)
 
-<div class="alert alert-info">
-  **Note :** The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is <kbd>Ctrl</kbd>-<kbd>Alt</kbd>-<kbd>T</kbd>.
-</div>
+**Note :** The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is <kbd>Ctrl</kbd>-<kbd>Alt</kbd>-<kbd>T</kbd>.
+{: .notice--info}
 
 **[Remote PC]** Run roscore.
 
@@ -66,18 +63,16 @@ sidebar:
   roslaunch turtlebot3_bringup turtlebot3_robot.launch
 ```
 
-<div class="alert alert-info">
-  **Tip :** If you want to launch Lidar sensor and core separately, please use below commands.
-</div>
+**Tip :** If you want to launch Lidar sensor and core separately, please use below commands.
+{: .notice--info}
 
 ``` bash
   roslaunch turtlebot3_bringup turtlebot3_lidar.launch
   roslaunch turtlebot3_bringup turtlebot3_core.launch
 ```
 
-<div class="alert alert-info">
-  **Note :** If `lost sync with device` error message is displayed on the terminal window, the sensor device of TurtleBot3 might not be securely connected.
-</div>
+**Note :** If `lost sync with device` error message is displayed on the terminal window, the sensor device of TurtleBot3 might not be securely connected.
+{: .notice--info}
 
 **[Remote PC]** Run RViz
 
@@ -96,9 +91,8 @@ sidebar:
   roslaunch turtlebot3_bringup turtlebot3_robot.launch
 ```
 
-<div class="alert alert-info">
-  **Tip :** If you want to launch Lidar sensor, Intel® RealSense™ R200 and core separately, please use below commands.
-</div>
+**Tip :** If you want to launch Lidar sensor, Intel® RealSense™ R200 and core separately, please use below commands.
+{: .notice--info}
 
 ``` bash
   roslaunch turtlebot3_bringup turtlebot3_lidar.launch
@@ -106,9 +100,8 @@ sidebar:
   roslaunch turtlebot3_bringup turtlebot3_core.launch
 ```
 
-<div class="alert alert-info">
-  **note :** If `lost sync with device` error message is displayed on the terminal window, sensor devices of the TurtleBot3 might not be securely connected.
-</div>
+**note :** If `lost sync with device` error message is displayed on the terminal window, sensor devices of the TurtleBot3 might not be securely connected.
+{: .notice--info}
 
 **[Remote PC]** Run RViz
 

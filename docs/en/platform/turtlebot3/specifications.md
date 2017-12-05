@@ -11,9 +11,12 @@ sidebar:
   nav: "turtlebot3"
 ---
 
+<div style="counter-reset: h3 1">
+</div>
+
 # [Specifications](#specifications)
 
-![](/assets/images/platform/turtlebot3/turtlebot3_models.png)
+![](/assets/images/platform/turtlebot3/hardware/turtlebot3_models.png)
 
 ## [Hardware Specifications](#hardware-specifications)
 
@@ -46,11 +49,11 @@ sidebar:
 
 ### [Data of TurtleBot3 Burger](#data-of-turtlebot3-burger)
 
-![](/assets/images/platform/turtlebot3/turtlebot3_dimension1.png)
+![](/assets/images/platform/turtlebot3/hardware/turtlebot3_dimension1.png)
 
 ### [Data of TurtleBot3 Waffle](#data-of-turtlebot3-waffle)
 
-![](/assets/images/platform/turtlebot3/turtlebot3_dimension2.png)
+![](/assets/images/platform/turtlebot3/hardware/turtlebot3_dimension2.png)
 
 ## [Components](#components)
 

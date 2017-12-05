@@ -11,15 +11,18 @@ sidebar:
   nav: "turtlebot3"
 ---
 
+<div style="counter-reset: h4 1">
+</div>
+
 # [Hardware Setup](#hardware-setup)
 
-![](/assets/images/platform/turtlebot3/turtlebot3_models_rd2.png)
+![](/assets/images/platform/turtlebot3/hardware/turtlebot3_models_rd2.png)
 
 ## [Main Components](#main-components)
 
-![](/assets/images/platform/turtlebot3/turtlebot3_burger_components.png)
+![](/assets/images/platform/turtlebot3/hardware/turtlebot3_burger_components.png)
 
-![](/assets/images/platform/turtlebot3/turtlebot3_waffle_components.png)
+![](/assets/images/platform/turtlebot3/hardware/turtlebot3_waffle_components.png)
 
 ## [Part List](#part-list)
 
@@ -139,7 +142,7 @@ If it is difficult to assemble with the assembly manual, please refer to the fol
 
 ## [Basic Operation](#basic-operation)
 
-![](/assets/images/platform/turtlebot3/opencr_models.png)
+![](/assets/images/platform/turtlebot3/hardware/opencr_models.png)
 
 You can use `PUSH SW 1` and `PUSH SW 2` buttons to see whether your robot has been properly assembled. This process tests the left and right DYNAMIXELs and the OpenCR1.0 board.
 
@@ -156,9 +159,6 @@ The CAD data is released to the [Onshape], which is a full-cloud 3D CAD editor. 
 
 - TurtleBot3 Burger 3D Model: https://goo.gl/n3bGNr
 - TurtleBot3 Waffle 3D Model: https://goo.gl/wCDvVI
-
-
-
 
 
 [Onshape]: https://cad.onshape.com/documents?filter=recently-opened&column=modifiedAt&order=desc&viewMode=0&q=turtlebot3

@@ -11,18 +11,19 @@ sidebar:
   nav: "turtlebot3"
 ---
 
+<div style="counter-reset: h15 1">
+</div>
+
 # [Applications](#applications)
 
 This chapter shows some demos using Turtlebot3.
 In order to implement these demos, you have to install the turtlebot3_applications package.
 
-<div class="alert alert-info">
-  **Note :** Turtlebot3 has been tested on <kbd>Ubuntu 16.04</kbd> and <kbd>ROS Kinetic Kame</kbd>.
-</div>
+**Note :** Turtlebot3 has been tested on <kbd>Ubuntu 16.04</kbd> and <kbd>ROS Kinetic Kame</kbd>.
+{: .notice--info}
 
-<div class="alert alert-info">
-  **Tip :** The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is <kbd>Ctrl</kbd>-<kbd>Alt</kbd>-<kbd>T</kbd>.
-</div>
+**Tip :** The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is <kbd>Ctrl</kbd>-<kbd>Alt</kbd>-<kbd>T</kbd>.
+{: .notice--info}
 
 **[Remote PC]** Go to ROS source directory (/home/<user_name>/catkin_ws/src) and clone the turtlebot3_applications repository.
 
@@ -39,13 +40,11 @@ In order to implement these demos, you have to install the turtlebot3_applicatio
 
 ## [TurtleBot Follower Demo](#turtlebot-follower-demo)
 
-<div class="alert alert-info">
-  **Note :** The follower demo was implemented only using a 360 Laser Distance Sensor LDS-01. a classification algorithm is used based on previous fitting with samples of person and obstacles positions to take actions. It follows someone in front of the robot within a 50 centimeter range and 140 degrees.
-</div>
+**Note :** The follower demo was implemented only using a 360 Laser Distance Sensor LDS-01. a classification algorithm is used based on previous fitting with samples of person and obstacles positions to take actions. It follows someone in front of the robot within a 50 centimeter range and 140 degrees.
+{: .notice--info}
 
-<div class="alert alert-info">
-  **Note :** Running the follower demo in an area with obstacles may not work well. Therefore, it is recommended to run the demo in an open area without obstacles.
-</div>
+**Note :** Running the follower demo in an area with obstacles may not work well. Therefore, it is recommended to run the demo in an open area without obstacles.
+{: .notice--info}
 
 **[TurtleBot]** In order to run the demo, parameter in LIDAR launch file has to be modified. In the below example, Pluma is used to edit the launch file. In the param tag with frame_id as a name, replace `base_scan` to `odom` and save the file as shown in the below images.
 
@@ -58,9 +57,8 @@ In order to implement these demos, you have to install the turtlebot3_applicatio
 
 ![](/assets/images/platform/turtlebot3/application/odom.png)
 
-<div class="alert alert-info">
-  **Note :** Turtlebot Follower Demo requires scikit-learn, NumPy and ScyPy packages.
-</div>
+**Note :** Turtlebot Follower Demo requires scikit-learn, NumPy and ScyPy packages.
+{: .notice--info}
 
 **[Remote PC]** Install scikit-learn, NumPy and ScyPy packages with below commands.
 
@@ -107,17 +105,14 @@ In order to implement these demos, you have to install the turtlebot3_applicatio
 
 ## [TurtleBot Panorama Demo Using Raspberry Pi Camera Module](#turtlebot-panorama-demo-using-raspberry-pi-camera-module)
 
-<div class="alert alert-info">
-  **Note :** The turtlebot3_panorama demo uses pano_ros for taking snapshots and stitching them together to create panoramic image.
-</div>
+**Note :** The turtlebot3_panorama demo uses pano_ros for taking snapshots and stitching them together to create panoramic image.
+{: .notice--info}
 
-<div class="alert alert-info">
-  **Note :** Panorama demo requires to install Raspicam package. Instructions for installing this package can be found at https://github.com/UbiquityRobotics/raspicam_node
-</div>
+**Note :** Panorama demo requires to install Raspicam package. Instructions for installing this package can be found at https://github.com/UbiquityRobotics/raspicam_node
+{: .notice--info}
 
-<div class="alert alert-info">
-  **Note :** Panorama demo requires to install OpenCV and cvbridge packages. Instructions for installing OpenCV can be found at http://docs.opencv.org/2.4/doc/tutorials/introduction/linux_install/linux_install.html
-</div>
+**Note :** Panorama demo requires to install OpenCV and cvbridge packages. Instructions for installing OpenCV can be found at http://docs.opencv.org/2.4/doc/tutorials/introduction/linux_install/linux_install.html
+{: .notice--info}
 
 **[TurtleBot]** Launch the Raspberry Pi cam V2
 

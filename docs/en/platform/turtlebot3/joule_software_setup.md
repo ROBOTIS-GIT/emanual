@@ -11,6 +11,9 @@ sidebar:
   nav: "turtlebot3"
 ---
 
+<div style="counter-reset: h6 2">
+</div>
+
 ## [[Short] Install Linux on TurtleBot3 Waffle (Intel® Joule™)](#short-install-linux-on-turtlebot3-waffle-intel-joule)
 
 In this section, the Alternative Ubuntu Desktop 16.04 LTS will be installed on Intel® Joule™.
@@ -27,13 +30,11 @@ In this section, the Alternative Ubuntu Desktop 16.04 LTS will be installed on I
 
 - https://software.intel.com/en-us/flashing-the-bios-on-joule
 
-<div class="alert alert-warning">
-  **Warning :** Updating to the latest BIOS(1J2 or higher) may cause unexpected problem of `Intel® Joule™` with Ubuntu 16.04 LTS. Please use only the recommended [BIOS version #193][bios-version-193].
-</div>
+**Warning :** Updating to the latest BIOS(1J2 or higher) may cause unexpected problem of `Intel® Joule™` with Ubuntu 16.04 LTS. Please use only the recommended [BIOS version #193][bios-version-193].
+{: .notice--warning}
 
-<div class="alert alert-warning">
-  **Warning :** `Intel® Joule™` comes with `passive heatsink` in the package. It is recommended to use the heatsink. In order to operate Joule without the heatsink, please follow the extra instruction: https://software.intel.com/en-us/node/721471
-</div>
+**Warning :** `Intel® Joule™` comes with `passive heatsink` in the package. It is recommended to use the heatsink. In order to operate Joule without the heatsink, please follow the extra instruction: https://software.intel.com/en-us/node/721471
+{: .notice--warning}
 
 [bios-version-193]: https://downloadmirror.intel.com/26206/eng/joule-firmware-2017-02-19-193-public.zip
 [alternative-installubuntu-desktop-1604-lts]: https://developer.ubuntu.com/core/get-started/intel-joule#alternative-install:-ubuntu-desktop-16.04-lts

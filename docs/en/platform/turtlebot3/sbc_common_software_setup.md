@@ -11,15 +11,16 @@ sidebar:
   nav: "turtlebot3"
 ---
 
+<div style="counter-reset: h6 3">
+</div>
+
 ## [Install ROS and Packages (Burger and Waffle)](#install-ros-and-packages-burger-and-waffle)
 
-<div class="alert alert-warning">
-  **Warning :** The contents in this chapter corresponds to the SBC of `TurtleBot3` (Raspberry Pi 3 or Intel® Joule™) which will be the main computer of TurtleBot3. Do **NOT** apply this instruction to your Remote PC (your desktop PC or laptop).
-</div>
+**Warning :** The contents in this chapter corresponds to the SBC of `TurtleBot3` (Raspberry Pi 3 or Intel® Joule™) which will be the main computer of TurtleBot3. Do **NOT** apply this instruction to your Remote PC (your desktop PC or laptop).
+{: .notice--warning}
 
-<div class="alert alert-info">
-  **Note :** This instruction takes about 2 hours to install ROS and TurtleBot3 related packages. Elapsed time may vary depending on network environment.
-</div>
+**Note :** This instruction takes about 2 hours to install ROS and TurtleBot3 related packages. Elapsed time may vary depending on network environment.
+{: .notice--info}
 
 ![](/assets/images/platform/turtlebot3/logo_ros.png)
 
@@ -29,9 +30,8 @@ sidebar:
 
 **[TurtleBot]** Install [ROS][ros] by using a simple installation script file.
 
-<div class="alert alert-info">
-  **Tip :** The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is Ctrl-Alt-T.
-</div>
+**Tip :** The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is Ctrl-Alt-T.
+{: .notice--info}
 
 **[TurtleBot Burger]**
 
@@ -49,9 +49,8 @@ sidebar:
   wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic.sh && chmod 755 ./install_ros_kinetic.sh && bash ./install_ros_kinetic.sh
 ```
 
-<div class="alert alert-info">
-  **Note :** After install ROS, please reboot Raspberry Pi or Intel® Joule™.
-</div>
+**Note :** After install ROS, please reboot Raspberry Pi or Intel® Joule™.
+{: .notice--info}
 
 ### [Second Method](#second-method)
 
@@ -59,9 +58,8 @@ sidebar:
 
 - http://wiki.ros.org/kinetic/Installation/Ubuntu
 
-<div class="alert alert-info">
-  **Note :** In order to see which packages are installed, please check this link out. https://raw.githubusercontent.com/oroca/oroca-ros-pkg/kinetic/ros_install.sh
-</div>
+**Note :** In order to see which packages are installed, please check this link out. https://raw.githubusercontent.com/oroca/oroca-ros-pkg/kinetic/ros_install.sh
+{: .notice--info}
 
 ### [Install Dependent Packages](#install-dependent-packages)
 

@@ -11,19 +11,19 @@ sidebar:
   nav: "turtlebot3"
 ---
 
+<div style="counter-reset: h10 1">
+</div>
+
 # [SLAM](#slam)
 
-<div class="alert alert-info">
-  **Note :** This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
-</div>
+**Note :** This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+{: .notice--info}
 
-<div class="alert alert-warning">
-  **Warning :** Make sure to run the [Bringup][#bringup] instruction before performing SLAM.
-</div>
+**Warning :** Make sure to run the [Bringup][#bringup] instruction before performing SLAM.
+{: .notice--warning}
 
-<div class="alert alert-info">
-  **Tip :** It is recommended to use a joystick pad instead of the keyboard for easier control.
-</div>
+**Tip :** It is recommended to use a joystick pad instead of the keyboard for easier control.
+{: .notice--info}
 
 The Simultaneous Localization and Mapping, or SLAM, is a technique to draw a map by estimating current location in an arbitrary space.
 
@@ -55,9 +55,8 @@ The SLAM is a well-known feature of TurtleBot from its predecessors. The video h
 
 ## [Create a Map with Teleoperation](#create-a-map-with-teleoperation)
 
-<div class="alert alert-info">
-  **Tip :** The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is Ctrl-Alt-T.
-</div>
+**Tip :** The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is Ctrl-Alt-T.
+{: .notice--info}
 
 **[Remote PC]** Open a new terminal and launch the SLAM file.
 If you have TurtleBot3 Burger,

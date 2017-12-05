@@ -11,6 +11,9 @@ sidebar:
   nav: "turtlebot3"
 ---
 
+<div style="counter-reset: h18 1">
+</div>
+
 # [Appendix #DYNAMIXEL](#appendix-dynamixel)
 
 ![](/assets/images/platform/turtlebot3/appendix_dynamixel/dynamixel_x.jpg)
@@ -36,10 +39,8 @@ DYNAMIXEL X-Series shares its design, therefore, users can replace actuators dep
   - Trajectory Data and Moving Status (In-Position, Following Error, etc.)
   - Energy Saving (Reduced Current from 100mA to 40mA)
 
-<div class="alert alert-info">
-  **Note :** Control Functions may vary by models
-</div>
-
+**Note :** Control Functions may vary by models
+{: .notice--info}
 
 <figure class="video_container">
   <iframe width="560" height="315" src="https://www.youtube.com/embed/gZWoyCvU-U8" frameborder="0" allowfullscreen></iframe>

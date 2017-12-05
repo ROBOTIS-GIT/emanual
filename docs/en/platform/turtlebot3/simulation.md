@@ -11,29 +11,28 @@ sidebar:
   nav: "turtlebot3"
 ---
 
+<div style="counter-reset: h12 1">
+</div>
+
 # [Simulation](#simulation)
 
 ![](/assets/images/platform/turtlebot3/software/remote_pc_and_turtlebot.png)
 
-<div class="alert alert-warning">
-  **Warning :** The contents in this chapter corresponds to the `Remote PC` (your desktop or laptop PC) which will control TurtleBot3. Do **NOT** apply this instruction to your TurtleBot3.
-</div>
+**Warning :** The contents in this chapter corresponds to the `Remote PC` (your desktop or laptop PC) which will control TurtleBot3. Do **NOT** apply this instruction to your TurtleBot3.
+{: .notice--warning}
 
-<div class="alert alert-info">
-  **Note :** This instruction was tested on <kbd>Ubuntu 16.04</kbd> and <kbd>ROS Kinetic Kame</kbd>.
-</div>
+**Note :** This instruction was tested on <kbd>Ubuntu 16.04</kbd> and <kbd>ROS Kinetic Kame</kbd>.
+{: .notice--info}
 
 ## [TurtleBot3 Fake Node Implementation](#turtlebot3-fake-node-implementation)
 
-<div class="alert alert-info">
-  **Tip :** The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is <kbd>Ctrl</kbd>-<kbd>Alt</kbd>-<kbd>T</kbd>.
-</div>
+**Tip :** The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is <kbd>Ctrl</kbd>-<kbd>Alt</kbd>-<kbd>T</kbd>.
+{: .notice--info}
 
 Install dependent packages for TurtleBot3 Simulation.
 
-<div class="alert alert-info">
-  **Note :** turtlebot3_simulation package requires **TurtleBot3** (http://turtlebot3.robotis.com/en/latest/pc_software.html#install-dependent-packages) package as a prerequisite.
-</div>
+**Note :** turtlebot3_simulation package requires **TurtleBot3** (http://turtlebot3.robotis.com/en/latest/pc_software.html#install-dependent-packages) package as a prerequisite.
+{: .notice--info}
 
 ``` bash
   cd ~/catkin_ws/src/
@@ -66,13 +65,12 @@ Install dependent packages for TurtleBot3 Simulation.
   <iframe width="640" height="360" src="https://www.youtube.com/embed/xXM5r_SVkWM" frameborder="0" allowfullscreen></iframe>
 </figure>
 
-<div class="alert alert-info">
-  **Tip :** The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is <kbd>Ctrl</kbd>-<kbd>Alt</kbd>-<kbd>T</kbd>.
-</div>
+**Tip :** The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is <kbd>Ctrl</kbd>-<kbd>Alt</kbd>-<kbd>T</kbd>.
+{: .notice--info}
 
-<div class="alert alert-warning">
-  **Warning :** If you are running Gazebo for the first time on your `Remote PC`, it takes a bit longer than usual.
-</div>
+**Warning :** If you are running Gazebo for the first time on your `Remote PC`, it takes a bit longer than usual.
+{: .notice--warning}
+
 You should set Turtlebot3 model parameter. Select either burger or waffle for the model parameter in the below command.
 
 ``` bash

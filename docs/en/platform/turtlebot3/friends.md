@@ -11,6 +11,9 @@ sidebar:
   nav: "turtlebot3"
 ---
 
+<div style="counter-reset: h16 1">
+</div>
+
 # [Friends](#friends)
 
 In the video, watch how TurtleBot3 can be assembled and reassembled with a few additional parts. The waffle plate which is the biggest part among TurtleBot3 components can be assembled in various sizes and shapes, thanks to its diverse holes for bolts and nuts.
@@ -46,9 +49,8 @@ Get source codes and make friends! Go to <kbd>Examples</kbd> → <kbd>turtlebot3
 
 ![](/assets/images/platform/turtlebot3/friends/ide.png)
 
-<div class="alert alert-info">
-  **Note :** Any suggestions and ideas for TurtleBot3 Friends Project are always welcomed. Tell us about your creative TurtleBot3 Friends. We can introduce your friend to the world through this wiki page! :)
-</div>
+**Note :** Any suggestions and ideas for TurtleBot3 Friends Project are always welcomed. Tell us about your creative TurtleBot3 Friends. We can introduce your friend to the world through this wiki page! :)
+{: .notice--info}
 
 * E-Mail : ost@robotis.com
 

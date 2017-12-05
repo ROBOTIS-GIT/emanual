@@ -11,9 +11,12 @@ sidebar:
   nav: "turtlebot3"
 ---
 
+<div style="counter-reset: h2 1">
+</div>
+
 # [Features](#features)
 
-![](/assets/images/platform/turtlebot3/features_with_icons.png)
+![](/assets/images/platform/turtlebot3/features/features_with_icons.png)
 
 ## [World's Most Popular ROS Platform](#world/'s-most-popular-ros-platform)
 

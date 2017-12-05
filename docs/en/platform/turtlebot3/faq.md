@@ -11,6 +11,9 @@ sidebar:
   nav: "turtlebot3"
 ---
 
+<div style="counter-reset: h23 1">
+</div>
+
 # [FAQ](#faq)
 
 **How to download the STL files of TurtleBot3**

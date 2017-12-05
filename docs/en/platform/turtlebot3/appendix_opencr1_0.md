@@ -11,6 +11,9 @@ sidebar:
   nav: "turtlebot3"
 ---
 
+<div style="counter-reset: h17 1">
+</div>
+
 # [Appendix #OpenCR1.0](#appendix-opencr10)
 
 ![](/assets/images/platform/turtlebot3/appendix_opencr/opencr.png)
@@ -119,6 +122,5 @@ If you want to manufacture your own OpenCR1.0, you can download necessary files 
 - OpenCR1.0 Hardware: https://github.com/ROBOTIS-GIT/OpenCR-Hardware
 
 ## [Wiki Site for More Information](#wiki-site-for-more-information)
-------------------------------
 
 - OpenCR1.0 Wiki: https://github.com/ROBOTIS-GIT/OpenCR/wiki

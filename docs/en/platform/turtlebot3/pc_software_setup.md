@@ -11,18 +11,18 @@ sidebar:
   nav: "turtlebot3"
 ---
 
+<div style="counter-reset: h5 1">
+</div>
+
 # [PC Software Setup](#pc-software-setup)
 
 ![](/assets/images/platform/turtlebot3/software/remote_pc_and_turtlebot.png)
-    :align: center
 
-<div class="alert alert-warning">
-  **Warning :** The contents in this chapter corresponds to the `Remote PC` (your desktop or laptop PC) which will control TurtleBot3. Do NOT apply this instruction to your TurtleBot3.
-</div>
+**Warning :** The contents in this chapter corresponds to the `Remote PC` (your desktop or laptop PC) which will control TurtleBot3. Do NOT apply this instruction to your TurtleBot3.
+{: .notice--warning}
 
-<div class="alert alert-info">
-  **Note :** This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
-</div>
+**Note :** This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+{: .notice--info}
 
 ## [Install Ubuntu on Remote PC (Desktop or Laptop PC)](#install-ubuntu-on-remote-pc-desktop-or-laptop-pc)
 
@@ -36,7 +36,7 @@ If you need more help for installing Ubuntu, check out the step-by-step guide fr
 
 ## [Install ROS on Remote PC](#install-ros-on-remote-pc)
 
-![](/assets/images/platform/turtlebot3/logo_ros.png)
+![](/assets/images/platform/software/turtlebot3/logo_ros.png)
 
 **[Remote PC]** There are two ways to install [ROS][ros]. If you prefer manual installation, please take the second method.
 In order to develop source code from the remote PC, please configure ROS environment after completing ROS installation.
@@ -45,9 +45,8 @@ In order to develop source code from the remote PC, please configure ROS environ
 
 Install [ROS][ros] by using a simple installation script file
 
-<div class="alert alert-info">
-  **Tip :** The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is <kbd>Ctrl</kbd>-<kbd>Alt</kbd>-<kbd>T</kbd>.
-</div>
+**Tip :** The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is <kbd>Ctrl</kbd>-<kbd>Alt</kbd>-<kbd>T</kbd>.
+{: .notice--info}
 
 ``` bash
   sudo apt-get update
@@ -61,9 +60,8 @@ You can start from "[1.2 Setup your sources.list][12-setup-your-sourceslist]" an
 
 - http://wiki.ros.org/kinetic/Installation/Ubuntu
 
-<div class="alert alert-info">
-  **Note :** In order to check which packages are installed, please check this link out. https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic.sh
-</div>
+**Note :** In order to check which packages are installed, please check this link out. https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic.sh
+{: .notice--info}
 
 ### [Configure ROS Environment](#configure-ros-environment)
 If you are going to modify or develop source code from the remote PC, you'll have to configure ROS environment. Simple instructions are described in the below link and it will take a couple minutes.

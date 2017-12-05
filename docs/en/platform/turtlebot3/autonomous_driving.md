@@ -11,11 +11,13 @@ sidebar:
   nav: "turtlebot3"
 ---
 
+<div style="counter-reset: h14 1">
+</div>
+
 # [Autonomous Driving](#autonomous-driving)
 
-<div class="alert alert-info">
-  **Note :** Turtlebot3 has been tested on <kbd>Ubuntu 16.04</kbd> and <kbd>ROS Kinetic Kame</kbd>.
-</div>
+**Note :** Turtlebot3 has been tested on <kbd>Ubuntu 16.04</kbd> and <kbd>ROS Kinetic Kame</kbd>.
+{: .notice--info}
 
 We are currently doing several projects related with the keywords: Autonomous Driving and TurtleBot3s
 

@@ -11,32 +11,30 @@ sidebar:
   nav: "turtlebot3"
 ---
 
+<div style="counter-reset: h11 1">
+</div>
+
 # [Navigation](#navigation)
 
-<div class="alert alert-info">
-  **Note :** This instruction was tested on ``Ubuntu 16.04`` and ``ROS Kinetic Kame`` version.
-</div>
+**Note :** This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame` version.
+{: .notice--info}
 
-<div class="alert alert-warning">
-  **Warning :** Make sure to run the :ref:`[Bringup]<chapter_bringup>` instruction before performing Navigation.
-</div>
+**Warning :** Make sure to run the [Bringup](#bringup) instruction before performing Navigation.
+{: .notice--warning}
 
-<div class="alert alert-warning">
-  **Warning :** The navigation uses the a data created in :ref:`[SLAM]<chapter_slam>`. Please make sure to have a map data.
-</div>
+**Warning :** The navigation uses the a data created in [SLAM](#slam). Please make sure to have a map data.
+{: .notice--warning}
 
-<div class="alert alert-warning">
-  **Warning :** Be careful when testing the robot on the table as the robot might fall.
-</div>
+**Warning :** Be careful when testing the robot on the table as the robot might fall.
+{: .notice--warning}
 
 The Navigation locates TurtleBot3 to the calculated position in the map by combining actual sensor data and anticipated position data.
 
 
 ## [Perform Navigation](#perform-navigation)
 
-<div class="alert alert-info">
-  **Tip :** The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is Ctrl-Alt-T.
-</div>
+**Tip :** The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is <kbd>Ctrl</kbd>-<kbd>Alt</kbd>-<kbd>T</kbd>.
+{: .notice--info}
 
 **[Remote PC]** Launch the navigation file.
 If you have TurtleBot3 Burger,

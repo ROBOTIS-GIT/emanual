@@ -11,11 +11,13 @@ sidebar:
   nav: "turtlebot3"
 ---
 
+<div style="counter-reset: h6 2">
+</div>
+
 ## [Install Linux on TurtleBot3 Burger (Raspberry Pi 3)](#install-linux-on-turtlebot3-burger-raspberry-pi-3)
 
-<div class="alert alert-warning">
-  **Warning :** The SDcard should have at least **8 GB** of empty space in order to install Linux on TurtleBot3.
-</div>
+**Warning :** The SDcard should have at least **8 GB** of empty space in order to install Linux on TurtleBot3.
+{: .notice--warning}
 
 **[Remote PC]** Download `Ubuntu MATE 16.04` on the Raspberry Pi 3 from the link below.
 
@@ -33,17 +35,14 @@ sidebar:
   <iframe width="640" height="360" src="https://www.youtube.com/embed/V_6GNyL6Dac?ecver=1" frameborder="0" allowfullscreen></iframe>
 </figure>
 
-<div class="alert alert-info">
-  **Tip :** It is recommended using `GNOME Disks`, but other applications such as `ddrescue` on Linux can be used.
-</div>
+**Tip :** It is recommended using `GNOME Disks`, but other applications such as `ddrescue` on Linux can be used.
+{: .notice--info}
 
 ``` bash
   sudo apt-get install gddrescue xz-utils
   unxz ubuntu-mate-16.04.2-desktop-armhf-raspberry-pi.img.xz
   sudo ddrescue -D --force ubuntu-mate-16.04.2-desktop-armhf-raspberry-pi.img /dev/sdx
 ```
-<div class="alert alert-info">
-  **Tip :** It is recommended using `GNOME Disks`, but other applications such as `Win32 Disk Imager` on Windows can be used.
 
-  https://sourceforge.net/projects/win32diskimager/
-</div>
+**Tip :** It is recommended using `GNOME Disks`, but other applications such as `Win32 Disk Imager` on Windows can be used. https://sourceforge.net/projects/win32diskimager/
+{: .notice--info}

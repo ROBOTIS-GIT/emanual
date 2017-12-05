@@ -11,6 +11,9 @@ sidebar:
   nav: "turtlebot3"
 ---
 
+<div style="counter-reset: h20 1">
+</div>
+
 # [Appendix #RealSense™](#appendix-realsense)
 
 ![](/assets/images/platform/turtlebot3/appendix_realsense/realsense_r200.png)
@@ -77,9 +80,8 @@ The TurtleBot3 Waffle uses Intel® RealSense™ Camera R200 as a default vision 
 
 ### [Installation](#installation)
 
-<div class="alert alert-warning">
-  **Warning!** There are installation prerequisites for the Intel® RealSense™ package installation in http://wiki.ros.org/librealsense
-</div>
+**Warning!** There are installation prerequisites for the Intel® RealSense™ package installation in http://wiki.ros.org/librealsense
+{: .notice--warning}
 
 **[TurtleBot]** The following commands will install relevant Intel® RealSense™ packages on your ROS system.
 

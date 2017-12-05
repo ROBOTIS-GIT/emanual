@@ -11,21 +11,21 @@ sidebar:
   nav: "turtlebot3"
 ---
 
+<div style="counter-reset: h7 1">
+</div>
+
 # [OpenCR1.0 Software Setup](#opencr10-software-setup)
 
 ![](/assets/images/platform/turtlebot3/software/remote_pc_and_turtlebot.png)
 
-  **Warning :** The contents in this chapter corresponds to the `Remote PC` (your desktop or laptop PC) which will control TurtleBot3. Do **NOT** apply this instruction to your TurtleBot3.
-  {: .notice--warning}
+**Warning :** The contents in this chapter corresponds to the `Remote PC` (your desktop or laptop PC) which will control TurtleBot3. Do **NOT** apply this instruction to your TurtleBot3.
+{: .notice--warning}
 
+**Note :** OpenCR1.0 is pre-loaded with the software needed to run your specific TurtleBot3 model(Burger or Waffle). Refer to the information below only if you want to modify the existing software or write new software for OpenCR1.0.
+{: .notice--info}
 
-<div class="alert alert-info">
-  **Note :** OpenCR1.0 is pre-loaded with the software needed to run your specific TurtleBot3 model(Burger or Waffle). Refer to the information below only if you want to modify the existing software or write new software for OpenCR1.0.
-</div>
-
-<div class="alert alert-info">
-  **Note :** This instruction was tested on <kbd>Ubuntu 16.04</kbd> and <kbd>ROS Kinetic Kame</kbd> and OpenCR1.0 software setup can be done from Intel® Joule™.
-</div>
+**Note :** This instruction was tested on <kbd>Ubuntu 16.04</kbd> and <kbd>ROS Kinetic Kame</kbd> and OpenCR1.0 software setup can be done from Intel® Joule™.
+{: .notice--info}
 
 OpenCR1.0 controls DYNAMIXELs with instructions from the SBC. To be able to control DYNAMIXELs, a specific firmware should be installed on the board. See the descriptions and configure the settings.
 
@@ -35,7 +35,6 @@ Following instructions will setup OpenCR1.0 Arduino development environment on t
 
 ### [USB Port Settings](#usb-port-settings)
 
-<div class="alert alert-info">
   **Tip :** The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is Ctrl-Alt-T.
 </dev>
 
@@ -140,17 +139,15 @@ https://www.arduino.cc/en/Main/Software
  
 **[Remote PC]** Select <kbd>Tools</kbd> → <kbd>Port</kbd> → <kbd>/dev/ttyACM0</kbd>.
 
-<div class="alert alert-warning">
-  **Warning :** The last digit value `0` in the string ``/dev/ttyACM0`` might be different depend on the USB connection environment.
-</div>
+**Warning :** The last digit value `0` in the string ``/dev/ttyACM0`` might be different depend on the USB connection environment.
+{: .notice--warning}
 
 ![](/assets/images/platform/turtlebot3/preparation/ide6.png)
 
 ### [Writing Bootloader (can be skipped)](#writing-bootloader-can-be-skipped)
 
-<div class="alert alert-info">
-  **Note :** This section is not necessary until there is new updates in the OpenCR bootloader. Once the bootloader is burned on the board, IT DOESN'T NEED EXTRA BURNING.
-</div>
+**Note :** This section is not necessary until there is new updates in the OpenCR bootloader. Once the bootloader is burned on the board, IT DOESN'T NEED EXTRA BURNING.
+{: .notice--info}
 
 The STM32F7xx, which is used for the main MCU of OpenCR1.0, supports DFU(Device Firmware Upgrade). This enables built-in bootloader of the MCU to boot with the DFU protocol by using USB, primarily for the bootloader initialization, the recovery mode and the bootloader update. The biggest advantage of using bootloader with USB is that JTAG equipment is not required. Therefore, writing the new firmware by using the DFU mode which is embedded in the MCU will not require writing / debugging equipment such as STLink.
 
