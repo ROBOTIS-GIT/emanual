@@ -2,28 +2,28 @@
   
   
       "docs-cn-faq":  {
-      "title": "FAQ",
+      "title": "FAQ-cn",
       "content"	 : "",
       "url": "http://emanual.robotis.com/docs/cn/faq"
       } ,
   
   
       "docs-en-faq":  {
-      "title": "FAQ",
+      "title": "FAQ-en",
       "content"	 : "  Product Compatibility Guide  Download Task Code  Task Rule Check  CM 510 530 Fuse Replacement",
       "url": "http://emanual.robotis.com/docs/en/faq/"
       } ,
   
   
       "docs-jp-faq":  {
-      "title": "FAQ",
+      "title": "FAQ-jp",
       "content"	 : "",
       "url": "http://emanual.robotis.com/docs/jp/faq"
       } ,
   
   
       "docs-kr-faq":  {
-      "title": "FAQ",
+      "title": "FAQ-kr",
       "content"	 : "  컨텐츠 작성방법",
       "url": "http://emanual.robotis.com/docs/kr/faq"
       } ,
