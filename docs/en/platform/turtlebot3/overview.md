@@ -29,8 +29,11 @@ TurtleBot3 is a collaboration project among Open Robotics, ROBOTIS, and more par
 
 ![](/assets/images/platform/turtlebot3/logo_cooperation.png)
 
-## [News](#news)
-
+  ## [News](#news)
+  - 11/30/2017 [Robot Gift Guide 2017, IEEE Spectrum] (https://spectrum.ieee.org/automaton/robotics/home-robots/robot-gift-guide-2017)
+  - 11/07/2017 [10 Memorable ROS-based Robots, Robotics Trends] (http://roboticstrends.com/article/10_memorable_ros_based_robots)
+  - 11/07/2017 [TurtleBot 3 and Friends: A Lower Barrier of Entry for Exploring A.I. Robotics, ThomasNet] (https://news.thomasnet.com/fullstory/40007572)
+  - 10/24/2017 [Announcing the Arm TechCon Innovation Award Finalists, arm TechCon] (http://www.armtechcon.com/announcing-the-arm-techcon-innovation-award-finalists/)
   - 10/13/2017 [Top 10 Open Source Linux Robots, Linux.com](https://www.linux.com/blog/2017/10/top-10-open-source-linux-robots)
   - 09/22/2017 "TurtleBot3 AutoRace" on ROSCon2017, [PDF](https://roscon.ros.org/2017/presentations/ROSCon%202017%20Lightning%20211.pdf), [Video](https://vimeo.com/236177042#t=1760s)
   - 09/21/2017 "Introducing OpenManipulator; the full open robot platform" on ROSCon2017, [PDF](https://roscon.ros.org/2017/presentations/ROSCon%202017%20OpenManipulator.pdf), [Video](https://vimeo.com/236147296)
