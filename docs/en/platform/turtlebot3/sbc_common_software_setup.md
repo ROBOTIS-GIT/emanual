@@ -11,8 +11,8 @@ sidebar:
   nav: "turtlebot3"
 ---
 
-<div style="counter-reset: h6 3">
-</div>
+<div style="counter-reset: h1 5"></div>
+<div style="counter-reset: h2 2"></div>
 
 ## [Install ROS and Packages (Burger and Waffle)](#install-ros-and-packages-burger-and-waffle)
 
