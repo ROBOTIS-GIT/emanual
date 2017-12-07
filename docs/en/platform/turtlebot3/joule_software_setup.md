@@ -11,8 +11,8 @@ sidebar:
   nav: "turtlebot3"
 ---
 
-<div style="counter-reset: h6 2">
-</div>
+<div style="counter-reset: h1 5"></div>
+<div style="counter-reset: h2 1"></div>
 
 ## [[Short] Install Linux on TurtleBot3 Waffle (Intel® Joule™)](#short-install-linux-on-turtlebot3-waffle-intel-joule)
 
