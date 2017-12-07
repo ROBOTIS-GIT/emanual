@@ -11,8 +11,7 @@ sidebar:
   nav: "turtlebot3"
 ---
 
-<div style="counter-reset: h7 1">
-</div>
+<div style="counter-reset: h1 6"></div>
 
 # [OpenCR1.0 Software Setup](#opencr10-software-setup)
 
@@ -35,8 +34,8 @@ Following instructions will setup OpenCR1.0 Arduino development environment on t
 
 ### [USB Port Settings](#usb-port-settings)
 
-  **Tip :** The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is Ctrl-Alt-T.
-</dev>
+**Tip :** The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is Ctrl-Alt-T.
+{: .notice--info}
 
 **[Remote PC]** The following commands allow to use OpenCR1.0 USB port for uploading ``Arduino IDE`` program without acquiring root permission.
 
@@ -196,6 +195,7 @@ If you have TurtleBot3 Waffle,
 
 ![](/assets/images/platform/turtlebot3/opencr/o3.png)
 
-.. NOTE:: If error occurs while uploading firmware, go to <kbd>Tools</kbd> → <kbd>Port</kbd> and check if correct port is selected. Press <kbd>Reset<kbd> button on the OpenCR1.0 and try to upload the firmware again.
-
+**Note :** If error occurs while uploading firmware, go to <kbd>Tools</kbd> → <kbd>Port</kbd> and check if correct port is selected. Press <kbd>Reset<kbd> button on the OpenCR1.0 and try to upload the firmware again.
+{: .notice--info}
+  
 **[Remote PC]** When firmware upload is completed, `jump_to_fw` text string will be printed on the screen.
