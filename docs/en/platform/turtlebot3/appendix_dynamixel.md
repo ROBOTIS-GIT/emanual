@@ -11,7 +11,7 @@ sidebar:
   nav: "turtlebot3"
 ---
 
-<div style="counter-reset: h18 1">
+<div style="counter-reset: h1 17">
 </div>
 
 # [Appendix #DYNAMIXEL](#appendix-dynamixel)
