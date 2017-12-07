@@ -11,8 +11,7 @@ sidebar:
   nav: "turtlebot3"
 ---
 
-<div style="counter-reset: h8 1">
-</div>
+<div style="counter-reset: h1 7"></div>
 
 # [Bringup](#bringup)
 
@@ -31,14 +30,12 @@ sidebar:
 {: .notice--warning}
 
 **Note :** Before start bringup TurtleBot3, We recommend you add `export` command to `bashrc` depend on your TurtleBot3(`burger` or `waffle`)
-{: .notice--info}
-
-
 ``` bash
   gedit ~/.bashrc
 ```
-
 ![](/assets/images/platform/turtlebot3/bringup/bashrc.png)
+{: .notice--info}
+
 
 ``` bash
   source ~/.bashrc
@@ -64,12 +61,11 @@ sidebar:
 ```
 
 **Tip :** If you want to launch Lidar sensor and core separately, please use below commands.
-{: .notice--info}
-
 ``` bash
   roslaunch turtlebot3_bringup turtlebot3_lidar.launch
   roslaunch turtlebot3_bringup turtlebot3_core.launch
 ```
+{: .notice--info}
 
 **Note :** If `lost sync with device` error message is displayed on the terminal window, the sensor device of TurtleBot3 might not be securely connected.
 {: .notice--info}
@@ -92,15 +88,14 @@ sidebar:
 ```
 
 **Tip :** If you want to launch Lidar sensor, Intel® RealSense™ R200 and core separately, please use below commands.
-{: .notice--info}
-
 ``` bash
   roslaunch turtlebot3_bringup turtlebot3_lidar.launch
   roslaunch turtlebot3_bringup turtlebot3_realsense.launch
   roslaunch turtlebot3_bringup turtlebot3_core.launch
 ```
+{: .notice--info}
 
-**note :** If `lost sync with device` error message is displayed on the terminal window, sensor devices of the TurtleBot3 might not be securely connected.
+**Note :** If `lost sync with device` error message is displayed on the terminal window, sensor devices of the TurtleBot3 might not be securely connected.
 {: .notice--info}
 
 **[Remote PC]** Run RViz
