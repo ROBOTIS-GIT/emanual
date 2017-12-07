@@ -11,7 +11,7 @@ sidebar:
   nav: "turtlebot3"
 ---
 
-<div style="counter-reset: h3 1">
+<div style="counter-reset: h1 2">
 </div>
 
 # [Specifications](#specifications)
@@ -49,30 +49,30 @@ sidebar:
 
 ### [Data of TurtleBot3 Burger](#data-of-turtlebot3-burger)
 
-![](/assets/images/platform/turtlebot3/hardware/turtlebot3_dimension1.png)
+![](/assets/images/platform/turtlebot3/hardware_setup/turtlebot3_dimension1.png)
 
 ### [Data of TurtleBot3 Waffle](#data-of-turtlebot3-waffle)
 
-![](/assets/images/platform/turtlebot3/hardware/turtlebot3_dimension2.png)
+![](/assets/images/platform/turtlebot3/hardware_setup/turtlebot3_dimension2.png)
 
 ## [Components](#components)
 
 ### [SBC](#sbc)
 
-- Raspberry Pi 3 Model B : https://www.raspberrypi.org/products/raspberry-pi-3-model-b/
+Raspberry Pi 3 Model B : https://www.raspberrypi.org/products/raspberry-pi-3-model-b/
 
-- Intel® Joule™ : http://ark.intel.com/products/96414/Intel-Joule-570x-Developer-Kit
+Intel® Joule™ : http://ark.intel.com/products/96414/Intel-Joule-570x-Developer-Kit
 
 ### [Sensor](#sensor)
 
-- 360 Laser Distance Sensor LDS-01 : http://turtlebot3.robotis.com/en/latest/appendix_lds.html
+360 Laser Distance Sensor LDS-01 : http://turtlebot3.robotis.com/en/latest/appendix_lds.html
 
-- Intel® Realsense™ R200 : https://software.intel.com/en-us/RealSense/R200Camera
+Intel® Realsense™ R200 : https://software.intel.com/en-us/RealSense/R200Camera
 
 ### [Control Board](#control-board)
 
-- OpenCR1.0 : http://turtlebot3.robotis.com/en/latest/appendix_opencr.html
+OpenCR1.0 : http://turtlebot3.robotis.com/en/latest/appendix_opencr.html
 
 ### [Actuator](#actuator)
 
-- Dynamixel X series : http://en.robotis.com/index/product.php?cate_code=10121110
+Dynamixel X series : http://en.robotis.com/index/product.php?cate_code=10121110
