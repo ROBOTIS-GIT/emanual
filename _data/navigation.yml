@@ -5733,10 +5733,10 @@ turtlebot3:
     - title: "Save the Map"
       url: /platform/turtlebot3/slam/#save-the-map
   - title: "Navigation"
-    url: /platform/turtlebot3/pc_software_setup/#navigation
+    url: /platform/turtlebot3/navigation/#navigation
     children:
     - title: "Perform Navigation"
-      url: /platform/turtlebot3/pc_software_setup/#perform-navigation
+      url: /platform/turtlebot3/navigation/#perform-navigation
   - title: "Simulation"
     url: /platform/turtlebot3/simulation/#simulation
     children:
