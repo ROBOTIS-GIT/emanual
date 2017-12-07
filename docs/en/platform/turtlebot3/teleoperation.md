@@ -11,7 +11,7 @@ sidebar:
   nav: "turtlebot3"
 ---
 
-<div style="counter-reset: h9 1">
+<div style="counter-reset: h1 8">
 </div>
 
 # [Teleoperation](#teleoperation)
@@ -32,9 +32,7 @@ sidebar:
 
 TurtleBot3 can be teleoperated by various devices. It is tested with several wireless devices such as PS3, XBOX 360, ROBOTIS RC100 and etc. Examples shown here(except the LEAP Motion) can be launched by ROS on Ubuntu mate 16.04 with Raspberry Pi 3 and OpenCR1.0 which controls DYNAMIXEL.
 
-<figure class="video_container">
-  <iframe width="640" height="360" src="https://www.youtube.com/embed/Z4s18hlazb4" frameborder="0" allowfullscreen></iframe>
-</figure>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/Z4s18hlazb4" frameborder="0" allowfullscreen></iframe>
 
 ## [Keyboard](#keyboard)
 
