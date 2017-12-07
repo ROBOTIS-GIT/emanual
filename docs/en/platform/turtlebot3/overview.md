@@ -29,7 +29,8 @@ TurtleBot3 is a collaboration project among Open Robotics, ROBOTIS, and more par
 
 ![](/assets/images/platform/turtlebot3/logo_cooperation.png)
 
-  ## [News](#news)
+## [News](#news)
+
   - 11/30/2017 [Robot Gift Guide 2017, IEEE Spectrum](https://spectrum.ieee.org/automaton/robotics/home-robots/robot-gift-guide-2017)
   - 11/07/2017 [10 Memorable ROS-based Robots, Robotics Trends](http://roboticstrends.com/article/10_memorable_ros_based_robots)
   - 11/07/2017 [TurtleBot 3 and Friends: A Lower Barrier of Entry for Exploring A.I. Robotics, ThomasNet](https://news.thomasnet.com/fullstory/40007572)
