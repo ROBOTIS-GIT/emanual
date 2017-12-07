@@ -11,7 +11,7 @@ sidebar:
   nav: "turtlebot3"
 ---
 
-<div style="counter-reset: h10 1">
+<div style="counter-reset: h1 9">
 </div>
 
 # [SLAM](#slam)
@@ -94,4 +94,4 @@ If you have TurtleBot3 Waffle,
   rosrun map_server map_saver -f ~/map
 ```
 
-**map.pgm** and **map.yaml** files will be created in the `~/` directory (``$HOME` directory, ``/home/<username>``).
+**map.pgm** and **map.yaml** files will be created in the `~/` directory (``$HOME` directory, `/home/<username>`).
