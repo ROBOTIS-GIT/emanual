@@ -11,7 +11,7 @@ sidebar:
   nav: "turtlebot3"
 ---
 
-<div style="counter-reset: h13 1">
+<div style="counter-reset: h1 12">
 </div>
 
 # [Manipulation](#manipulation)
@@ -55,7 +55,7 @@ Below command will load the Open-Manipulator on Gazebo environment.
   roslaunch open_manipulator_gazebo open_manipulator_gazebo.launch
 ```
 
-![](/assets/images/platform/turtlebot3/manipulation/open_manipulator_gazebo_1.png
+![](/assets/images/platform/turtlebot3/manipulation/open_manipulator_gazebo_1.png)
 
 In order to control Open-Manipulator, please use topic publish with below command in a new terminal window.
 
@@ -63,7 +63,7 @@ In order to control Open-Manipulator, please use topic publish with below comman
   rostopic pub /open_manipulator_chain/joint2_position/command std_msgs/Float64 "data: 1.0" --once
 ```
 
-![](/assets/images/platform/turtlebot3/manipulation/open_manipulator_gazebo_2.png
+![](/assets/images/platform/turtlebot3/manipulation/open_manipulator_gazebo_2.png)
 
 In order to run Open-Manipulator simulation with MoveIt!, open a new terminal window and enter below command.
 
@@ -71,9 +71,9 @@ In order to run Open-Manipulator simulation with MoveIt!, open a new terminal wi
   roslaunch open_manipulator_moveit open_manipulator_demo.launch use_gazebo:=true
 ```
 
-![](/assets/images/platform/turtlebot3/manipulation/open_manipulator_moveit_sim_1.png
+![](/assets/images/platform/turtlebot3/manipulation/open_manipulator_moveit_sim_1.png)
 
-![](/assets/images/platform/turtlebot3/manipulation/open_manipulator_moveit_sim_2.png
+![](/assets/images/platform/turtlebot3/manipulation/open_manipulator_moveit_sim_2.png)
 
 In order to control gripper, please use topic publish with below command in a new terminal window.
 
@@ -81,7 +81,7 @@ In order to control gripper, please use topic publish with below command in a ne
   rostopic pub /robotis/open_manipulator/gripper std_msgs/String "data: 'grip_on'" --once
 ```
 
-![](/assets/images/platform/turtlebot3/manipulation/open_manipulator_gripper.png
+![](/assets/images/platform/turtlebot3/manipulation/open_manipulator_gripper.png)
 
 ## [Platform](#platform)
 
@@ -97,13 +97,13 @@ In order to run Open-Manipulator simulation with MoveIt!, open a new terminal wi
   roslaunch open_manipulator_moveit open_manipulator_demo.launch
 ```
 
-![](/assets/images/platform/turtlebot3/manipulation/open_manipulator_moveit_real_1.png
+![](/assets/images/platform/turtlebot3/manipulation/open_manipulator_moveit_real_1.png)
 
-![](/assets/images/platform/turtlebot3/manipulation/open_manipulator_moveit_real_2.jpg
+![](/assets/images/platform/turtlebot3/manipulation/open_manipulator_moveit_real_2.jpg)
 
-![](/assets/images/platform/turtlebot3/manipulation/open_manipulator_moveit_real_3.png
+![](/assets/images/platform/turtlebot3/manipulation/open_manipulator_moveit_real_3.png)
 
-![](/assets/images/platform/turtlebot3/manipulation/open_manipulator_moveit_real_4.jpg
+![](/assets/images/platform/turtlebot3/manipulation/open_manipulator_moveit_real_4.jpg)
 
 ## [TurtleBot3 Waffle with Open-Manipulator](#turtlebot3-waffle-with-openmanipulator)
 
@@ -121,4 +121,4 @@ Below command will load the TurtleBot3 Waffle with Open-Manipulator on Rviz.
   roslaunch open_manipulator_with_tb3 open_manipulator_chain_with_tb3_rviz.launch
 ```
 
-![](/assets/images/platform/turtlebot3/manipulation/TurtleBot3_with_Open_Manipulator.png
+![](/assets/images/platform/turtlebot3/manipulation/TurtleBot3_with_Open_Manipulator.png)
