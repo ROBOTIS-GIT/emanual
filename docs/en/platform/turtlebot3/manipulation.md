@@ -11,8 +11,7 @@ sidebar:
   nav: "turtlebot3"
 ---
 
-<div style="counter-reset: h1 12">
-</div>
+<div style="counter-reset: h1 12"></div>
 
 # [Manipulation](#manipulation)
 
@@ -22,13 +21,9 @@ sidebar:
 **Note :** If you want more specfic information about OpenManipulator, you would follow official wiki page of OpenManipulator. https://github.com/ROBOTIS-GIT/open_manipulator
 {: .notice--info}
 
-<figure class="video_container">
-  <iframe width="640" height="360" src="https://www.youtube.com/embed/qbht0ssv8M0" frameborder="0" allowfullscreen></iframe>
-</figure>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/qbht0ssv8M0" frameborder="0" allowfullscreen></iframe>
 
-<figure class="video_container">
-  <iframe width="640" height="360" src="https://www.youtube.com/embed/Qhvk5cnX2hM" frameborder="0" allowfullscreen></iframe>
-</figure>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/Qhvk5cnX2hM" frameborder="0" allowfullscreen></iframe>
 
 **Tip :** The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is Ctrl-Alt-T.
 {: .notice--info}

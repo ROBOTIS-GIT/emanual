@@ -11,16 +11,13 @@ sidebar:
   nav: "turtlebot3"
 ---
 
-<div style="counter-reset: h1 15">
-</div>
+<div style="counter-reset: h1 15"></div>
 
 # [Friends](#friends)
 
 In the video, watch how TurtleBot3 can be assembled and reassembled with a few additional parts. The waffle plate which is the biggest part among TurtleBot3 components can be assembled in various sizes and shapes, thanks to its diverse holes for bolts and nuts.
 
-<figure class="video_container">
-  <iframe width="640" height="360" src="https://www.youtube.com/embed/o9d7NVC0A1Y" frameborder="0" allowfullscreen></iframe>
-</figure>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/o9d7NVC0A1Y" frameborder="0" allowfullscreen></iframe>
 
 With this openended component, handful of TurtleBot3 friends with various characteristics could be built. You can create a totally new robot that is never seen before.
 
@@ -41,9 +38,7 @@ TurtleBot3 Friends List:
 
 ![](/assets/images/platform/turtlebot3/friends/All_friends.jpg)
 
-<figure class="video_container">
-  <iframe width="640" height="360" src="https://www.youtube.com/embed/gI0T4-aqTpI" frameborder="0" allowfullscreen></iframe>
-</figure>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/gI0T4-aqTpI" frameborder="0" allowfullscreen></iframe>
 
 Get source codes and make friends! Go to <kbd>Examples</kbd> → <kbd>turtlebot3</kbd> → <kbd>turtlebot3_friends</kbd>.
 
@@ -66,14 +61,10 @@ E-Mail : ost@robotis.com
 * Video:
 
 
-<figure class="video_container">
-  <iframe width="640" height="360" src="https://www.youtube.com/embed/IkPexspUgKk" frameborder="0" allowfullscreen></iframe>
-</figure>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/IkPexspUgKk" frameborder="0" allowfullscreen></iframe>
 
 
-<figure class="video_container">
-  <iframe width="640" height="360" src="https://www.youtube.com/embed/1V33iEu4ylw" frameborder="0" allowfullscreen></iframe>
-</figure>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/1V33iEu4ylw" frameborder="0" allowfullscreen></iframe>
 
 
 ## [TurtleBot3 Friends: OpenManipulator Chain](#turtlebot3-friends-openmanipulator-chain)
@@ -91,14 +82,10 @@ E-Mail : ost@robotis.com
 
 [openmanipulator-wiki]: https://github.com/ROBOTIS-GIT/open_manipulator/wiki/OpenManipulator-Chain
 
-<figure class="video_container">
-  <iframe width="640" height="360" src="https://www.youtube.com/embed/Qhvk5cnX2hM" frameborder="0" allowfullscreen></iframe>
-</figure>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/Qhvk5cnX2hM" frameborder="0" allowfullscreen></iframe>
 
 
-<figure class="video_container">
-  <iframe width="640" height="360" src="https://www.youtube.com/embed/qbht0ssv8M0" frameborder="0" allowfullscreen></iframe>
-</figure>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/qbht0ssv8M0" frameborder="0" allowfullscreen></iframe>
 
 
 ## [TurtleBot3 Friends: Segway](#turtlebot3-friends-segway)
@@ -113,9 +100,7 @@ E-Mail : ost@robotis.com
 * Software: <kbd>Examples</kbd> → <kbd>turtlebot3</kbd> → <kbd>turtlebot3_friends</kbd> → <kbd>turtlebot3_segway</kbd>
 * Video:
 
-<figure class="video_container">
-  <iframe width="640" height="360" src="https://www.youtube.com/embed/VAY-0xBOE2g" frameborder="0" allowfullscreen></iframe>
-</figure>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/VAY-0xBOE2g" frameborder="0" allowfullscreen></iframe>
 
 
 ## [TurtleBot3 Friends: Conveyor](#turtlebot3-friends-conveyor)
@@ -130,9 +115,7 @@ E-Mail : ost@robotis.com
 * Software: <kbd>Examples</kbd> → <kbd>turtlebot3</kbd> → <kbd>turtlebot3_friends</kbd> → <kbd>turtlebot3_conveyor</kbd>
 * Video:
 
-<figure class="video_container">
-  <iframe width="640" height="360" src="https://www.youtube.com/embed/uv2faO7GhXc" frameborder="0" allowfullscreen></iframe>
-</figure>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/uv2faO7GhXc" frameborder="0" allowfullscreen></iframe>
 
 ## [TurtleBot3 Friends: Monster](#turtlebot3-friends-monster)
 
@@ -146,9 +129,7 @@ E-Mail : ost@robotis.com
 * Software: <kbd>Examples</kbd> → <kbd>turtlebot3</kbd> → <kbd>turtlebot3_friends</kbd> → <kbd>turtlebot3_monster</kbd>
 * Video:
 
-<figure class="video_container">
-  <iframe width="640" height="360" src="https://www.youtube.com/embed/UqdwGLH1-cA" frameborder="0" allowfullscreen></iframe>
-</figure>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/UqdwGLH1-cA" frameborder="0" allowfullscreen></iframe>
 
 
 ## [TurtleBot3 Friends: Tank](#turtlebot3-friends-tank)
@@ -164,9 +145,7 @@ E-Mail : ost@robotis.com
 * Software: <kbd>Examples</kbd> → <kbd>turtlebot3</kbd> → <kbd>turtlebot3_friends</kbd> → <kbd>turtlebot3_tank</kbd>
 * Video:
 
-<figure class="video_container">
-  <iframe width="640" height="360" src="https://www.youtube.com/embed/vndnwpVEpVE" frameborder="0" allowfullscreen></iframe>
-</figure>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/vndnwpVEpVE" frameborder="0" allowfullscreen></iframe>
 
 ## [TurtleBot3 Friends: Omni](#turtlebot3-friends-omni)
 
@@ -181,9 +160,7 @@ E-Mail : ost@robotis.com
 * Software: <kbd>Examples</kbd> → <kbd>turtlebot3</kbd> → <kbd>turtlebot3_friends</kbd> → <kbd>turtlebot3_omni</kbd>
 * Video:
 
-<figure class="video_container">
-  <iframe width="640" height="360" src="https://www.youtube.com/embed/r8wRACM_ZbE" frameborder="0" allowfullscreen></iframe>
-</figure>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/r8wRACM_ZbE" frameborder="0" allowfullscreen></iframe>
 
 ## [TurtleBot3 Friends: Mecanum](#turtlebot3-friends-mecanum)
 
@@ -224,9 +201,7 @@ E-Mail : ost@robotis.com
 * Software: <kbd>Examples</kbd> → <kbd>turtlebot3</kbd> → <kbd>turtlebot3_friends</kbd> → <kbd>turtlebot3_road_train</kbd>
 * Video:
 
-<figure class="video_container">
-  <iframe width="640" height="360" src="https://www.youtube.com/embed/uhkq1w4YoEE" frameborder="0" allowfullscreen></iframe>
-</figure>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/uhkq1w4YoEE" frameborder="0" allowfullscreen></iframe>
 
 ## [TurtleBot3 Friends: Real TurtleBot](#turtlebot3-friends-real-turtlebot)
 
@@ -241,14 +216,9 @@ E-Mail : ost@robotis.com
 * Software: <kbd>Examples</kbd> → <kbd>turtlebot3</kbd> → <kbd>turtlebot3_friends</kbd> → <kbd>turtlebot3_realturtlebot</kbd>
 * Video:
 
-<figure class="video_container">
-  <iframe width="640" height="360" src="https://www.youtube.com/embed/KNWkAe0ob9g" frameborder="0" allowfullscreen></iframe>
-</figure>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/KNWkAe0ob9g" frameborder="0" allowfullscreen></iframe>
 
-
-<figure class="video_container">
-  <iframe width="640" height="360" src="https://www.youtube.com/embed/vort-z9HDlU" frameborder="0" allowfullscreen></iframe>
-</figure>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/vort-z9HDlU" frameborder="0" allowfullscreen></iframe>
 
 ## [TurtleBot3 Friends: Carrier](#turtlebot3-friends-carrier)
 
@@ -262,10 +232,6 @@ E-Mail : ost@robotis.com
 * Software: <kbd>Examples<kbd> → <kbd>turtlebot3<kbd> → <kbd>turtlebot3_waffle<kbd> → <kbd>turtlebot3_waffle<kbd>
 * Video:
 
-<figure class="video_container">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/5NYdgnzxykc" frameborder="0" allowfullscreen></iframe>
-</figure>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5NYdgnzxykc" frameborder="0" allowfullscreen></iframe>
 
-<figure class="video_container">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/u7qb8xiSiNg" frameborder="0" allowfullscreen></iframe>
-</figure>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/u7qb8xiSiNg" frameborder="0" allowfullscreen></iframe>

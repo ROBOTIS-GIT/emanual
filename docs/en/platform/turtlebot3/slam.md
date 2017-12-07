@@ -11,8 +11,7 @@ sidebar:
   nav: "turtlebot3"
 ---
 
-<div style="counter-reset: h1 9">
-</div>
+<div style="counter-reset: h1 9"></div>
 
 # [SLAM](#slam)
 
@@ -29,9 +28,7 @@ The Simultaneous Localization and Mapping, or SLAM, is a technique to draw a map
 
 The SLAM is a well-known feature of TurtleBot from its predecessors. The video here shows you how accurately TurtleBot3 can draw a map with its compact and affordable platform.
 
-<figure class="video_container">
-  <iframe width="640" height="360" src="https://www.youtube.com/embed/lkW4-dG2BCY" frameborder="0" allowfullscreen></iframe>
-</figure>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/lkW4-dG2BCY" frameborder="0" allowfullscreen></iframe>
 
 * Date: 2016.11.29
 * Robot: TurtleBot3 Burger
@@ -41,9 +38,7 @@ The SLAM is a well-known feature of TurtleBot from its predecessors. The video h
 * Duration: 55 minutes
 * Distance: Total 351 meters
 
-<figure class="video_container">
-  <iframe width="640" height="360" src="https://www.youtube.com/embed/7mEKrT_cKWI" frameborder="0" allowfullscreen></iframe>
-</figure>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/7mEKrT_cKWI" frameborder="0" allowfullscreen></iframe>
 
 * Date: 2017.04.20
 * Robot: TurtleBot3 Burger and Waffle

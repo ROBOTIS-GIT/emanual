@@ -11,8 +11,7 @@ sidebar:
   nav: "turtlebot3"
 ---
 
-<div style="counter-reset: h1 14">
-</div>
+<div style="counter-reset: h1 14"></div>
 
 # [Applications](#applications)
 
@@ -98,9 +97,7 @@ In order to implement these demos, you have to install the turtlebot3_applicatio
   rosrun turtlebot3_follower follower.py
 ```
 
-<figure class="video_container">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/w9YTxZVY6yQ" frameborder="0" allowfullscreen></iframe>
-</figure>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/w9YTxZVY6yQ" frameborder="0" allowfullscreen></iframe>
 
 
 ## [TurtleBot Panorama Demo Using Raspberry Pi Camera Module](#turtlebot-panorama-demo-using-raspberry-pi-camera-module)
@@ -139,7 +136,7 @@ Parameters that can be sent to the rosservice to get a panoramic image are:
     - 0 : snap&rotate (i.e. rotate, stop, snapshot, rotate, stop, snapshot, ...)  
     - 1 : continuous (i.e. keep rotating while taking snapshots)  
     - 2 : stop taking pictures and create panoramic image  
-    
+
 - total angle of panoramic image, in degrees
 - angle interval (in degrees) when creating the panoramic image in snap&rotate mode, time interval (in seconds) otherwise
 - rotating velocity (in radians/s)

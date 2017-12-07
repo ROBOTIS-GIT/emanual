@@ -11,8 +11,7 @@ sidebar:
   nav: "turtlebot3"
 ---
 
-<div style="counter-reset: h1 16">
-</div>
+<div style="counter-reset: h1 16"></div>
 
 # [Appendix #OpenCR1.0](#appendix-opencr10)
 
@@ -31,9 +30,7 @@ OpenCR1.0 can provide a best solution when using with a SBC. It supports 12V, 5V
 OpenCR1.0 will be the best solution for implementing your embedded control design.
 
 
-<figure class="video_container">
-  <iframe width="640" height="360" src="https://www.youtube.com/embed/-_kBfIS6wJs" frameborder="0" allowfullscreen></iframe>
-</figure>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/-_kBfIS6wJs" frameborder="0" allowfullscreen></iframe>
 
 ## [Specification](#specification)
 

@@ -11,8 +11,7 @@ sidebar:
   nav: "turtlebot3"
 ---
 
-<div style="counter-reset: h1 18">
-</div>
+<div style="counter-reset: h1 18"></div>
 
 # [Appendix #LDS-01](#appendix-lds01)
 
@@ -22,9 +21,7 @@ sidebar:
 
 360 Laser Distance Sensor LDS-01 is used for both TurtleBot3 Burger and TurtleBot3 Waffle. The LDS-01(LASER Distance Sensor) is a sensor which collects a set of distance data and send them to the host for the Simultaneous Localization and Mapping (SLAM) technique.
 
-<figure class="video_container">
-  <iframe width="640" height="360" src="https://www.youtube.com/embed/9oic8aT3wIc" frameborder="0" allowfullscreen></iframe>
-</figure>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/9oic8aT3wIc" frameborder="0" allowfullscreen></iframe>
 
 ## [Specifications](#specifications)
 
@@ -80,15 +77,11 @@ The 360 Laser Distance Sensor LDS-01 is used for both TurtleBot3 Burger and Turt
 
 ROS Hector SLAM demo using only a 360 Laser Distance Sensor LDS-01 made by HLDS (Hitachi-LG Data Storage).
 
-<figure class="video_container">
-  <iframe width="640" height="360" src="https://www.youtube.com/embed/s7CflpA6TOo" frameborder="0" allowfullscreen></iframe>
-</figure>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/s7CflpA6TOo" frameborder="0" allowfullscreen></iframe>
 
 ROS Gmapping and Cartographer SLAM demo using TurtleBot3 and 360 Laser Distance Sensor LDS-01.
 
-<figure class="video_container">
-  <iframe width="640" height="360" src="https://www.youtube.com/embed/lkW4-dG2BCY" frameborder="0" allowfullscreen></iframe>
-</figure>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/lkW4-dG2BCY" frameborder="0" allowfullscreen></iframe>
 
 ## [User Guide](#user-guide)
 

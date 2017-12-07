@@ -11,8 +11,7 @@ sidebar:
   nav: "turtlebot3"
 ---
 
-<div style="counter-reset: h1 19">
-</div>
+<div style="counter-reset: h1 19"></div>
 
 # [Appendix #RealSense™](#appendix-realsense)
 
@@ -64,9 +63,7 @@ The Intel® RealSense™ R200 is applied on TurtleBot3 Waffle.
 
 The TurtleBot3 Waffle uses Intel® RealSense™ Camera R200 as a default vision sensor. Check this video out that shows how Intel® RealSense™ Camera R200 can be used in TurtleBot3 Waffle.
 
-<figure class="video_container">
-  <iframe width="640" height="360" src="https://www.youtube.com/embed/V8VJUkWWaO8?ecver=1" frameborder="0" allowfullscreen></iframe>
-</figure>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/V8VJUkWWaO8?ecver=1" frameborder="0" allowfullscreen></iframe>
 
 
 ## [User Guide](#user-guide)

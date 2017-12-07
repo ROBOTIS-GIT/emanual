@@ -11,8 +11,7 @@ sidebar:
   nav: "turtlebot3"
 ---
 
-<div style="counter-reset: h1 17">
-</div>
+<div style="counter-reset: h1 17"></div>
 
 # [Appendix #DYNAMIXEL](#appendix-dynamixel)
 
@@ -42,9 +41,7 @@ DYNAMIXEL X-Series shares its design, therefore, users can replace actuators dep
 **Note :** Control Functions may vary by models
 {: .notice--info}
 
-<figure class="video_container">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/gZWoyCvU-U8" frameborder="0" allowfullscreen></iframe>
-</figure>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gZWoyCvU-U8" frameborder="0" allowfullscreen></iframe>
 
 ## [Specifications](#specifications)
 

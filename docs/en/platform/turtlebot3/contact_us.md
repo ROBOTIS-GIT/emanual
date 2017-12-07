@@ -11,8 +11,7 @@ sidebar:
   nav: "turtlebot3"
 ---
 
-<div style="counter-reset: h1 23">
-</div>
+<div style="counter-reset: h1 23"></div>
 
 # [Contact US](#contact-us)
 
@@ -82,6 +81,4 @@ Our favorite platform is ROS! :) We are delighted to be in charge of developing 
 * GitHub : https://github.com/ROBOTIS-GIT
 * E-Mail : ost@robotis.com
 
-<figure class="video_container">
-  <iframe width="640" height="360" src="https://www.youtube.com/embed/jFvEGKkdOqM?ecver=1" frameborder="0" allowfullscreen></iframe>
-</figure>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/jFvEGKkdOqM?ecver=1" frameborder="0" allowfullscreen></iframe>

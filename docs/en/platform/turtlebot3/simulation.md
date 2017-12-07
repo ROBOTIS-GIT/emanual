@@ -50,9 +50,7 @@ Install dependent packages for TurtleBot3 Simulation.
   roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 ```
 
-<figure class="video_container">
-  <iframe width="640" height="360" src="https://www.youtube.com/embed/iHXZSLBJHMg" frameborder="0" allowfullscreen></iframe>
-</figure>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/iHXZSLBJHMg" frameborder="0" allowfullscreen></iframe>
 
 ## [Stage (2D)](#stage-2d)
 
@@ -60,9 +58,7 @@ Install dependent packages for TurtleBot3 Simulation.
 
 ## [Gazebo (3D)](#gazebo-3d)
 
-<figure class="video_container">
-  <iframe width="640" height="360" src="https://www.youtube.com/embed/xXM5r_SVkWM" frameborder="0" allowfullscreen></iframe>
-</figure>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/xXM5r_SVkWM" frameborder="0" allowfullscreen></iframe>
 
 **Tip :** The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is <kbd>Ctrl</kbd>-<kbd>Alt</kbd>-<kbd>T</kbd>.
 {: .notice--info}

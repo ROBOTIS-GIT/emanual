@@ -11,8 +11,7 @@ sidebar:
   nav: "turtlebot3"
 ---
 
-<div style="counter-reset: h1 1">
-</div>
+<div style="counter-reset: h1 1"></div>
 
 # [Features](#features)
 
