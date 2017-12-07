@@ -50,7 +50,7 @@ DYNAMIXEL X-Series shares its design, therefore, users can replace actuators dep
 | Microcontroller <td colspan=2> ST CORTEX-M3 (STM32F103C8 @ 72Mhz, 32bit)                                                                    </td>
 | Position Sensor <td colspan=2> Contactless Absolute Encoder (12bit, 360&deg;)                                                               </td>
 | Motor          | Cored Motor                                   | Coreless Motor                                                             |
-| Baud Rate       <td colspan=2> 9600 bps ~ 4.5 Mbps
+| Baud Rate      | 9600 bps ~ 4.5 Mbps                                                           ||
 | Control Modes  | Velocity, Position, Extended Position, PWM    | Velocity, Position, Extended Position, PWM, Current, Current-base Position |
 | Gear Ratio     | 258.5 : 1                                     | 212.6 : 1                                                                  |
 | Stall Torque   | 1.0 N.m (@ 9V, 1A)                            | 2.7 N.m (@ 11.1V, 2.1A)                                                    |
