@@ -11,12 +11,12 @@ sidebar:
   nav: "turtlebot3"
 ---
 
-<div style="counter-reset: h19 1">
+<div style="counter-reset: h1 18">
 </div>
 
 # [Appendix #LDS-01](#appendix-lds01)
 
-![](/assets/images/platform/turtlebot3/appendix_lds/lds.jpg)
+![](/assets/images/platform/turtlebot3/appendix_lds/lds.png)
 
 ## [Overview](#overview)
 
@@ -74,7 +74,7 @@ Here is the detail specification document : [pdf](/assets/docs/LDS_Basic_Specifi
 
 The 360 Laser Distance Sensor LDS-01 is used for both TurtleBot3 Burger and TurtleBot3 Waffle.
 
-![](/assets/images/platform/turtlebot3/hardware/turtlebot3_models.png)
+![](/assets/images/platform/turtlebot3/hardware_setup/turtlebot3_models.png)
 
 ## [Introduction Video](#introduction-video)
 
