@@ -11,8 +11,7 @@ sidebar:
   nav: "turtlebot3"
 ---
 
-<div style="counter-reset: h1 5">
-</div>
+<div style="counter-reset: h1 5"></div>
 
 # [SBC Software Setup](#sbc-software-setup)
 
