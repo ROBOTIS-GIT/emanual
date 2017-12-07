@@ -11,7 +11,7 @@ sidebar:
   nav: "turtlebot3"
 ---
 
-<div style="counter-reset: h5 1">
+<div style="counter-reset: h1 4">
 </div>
 
 # [PC Software Setup](#pc-software-setup)
@@ -36,7 +36,7 @@ If you need more help for installing Ubuntu, check out the step-by-step guide fr
 
 ## [Install ROS on Remote PC](#install-ros-on-remote-pc)
 
-![](/assets/images/platform/software/turtlebot3/logo_ros.png)
+![](/assets/images/platform/turtlebot3/logo_ros.png)
 
 **[Remote PC]** There are two ways to install [ROS][ros]. If you prefer manual installation, please take the second method.
 In order to develop source code from the remote PC, please configure ROS environment after completing ROS installation.
