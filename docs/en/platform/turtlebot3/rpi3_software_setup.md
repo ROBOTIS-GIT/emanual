@@ -34,7 +34,7 @@ sidebar:
 ```
 
 <figure class="video_container">
-  <iframe width="640" height="360" src="https://www.youtube.com/embed/V_6GNyL6Dac?ecver=1" frameborder="0" allowfullscreen></iframe>
+  <iframe width="640" height="360315" src="https://www.youtube.com/embed/V_6GNyL6Dac" frameborder="0" allowfullscreen></iframe>
 </figure>
 
 **Tip :** It is recommended using `GNOME Disks`, but other applications such as `ddrescue` on Linux can be used.
