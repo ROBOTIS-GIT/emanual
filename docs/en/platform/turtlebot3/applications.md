@@ -11,7 +11,7 @@ sidebar:
   nav: "turtlebot3"
 ---
 
-<div style="counter-reset: h15 1">
+<div style="counter-reset: h1 14">
 </div>
 
 # [Applications](#applications)
@@ -135,9 +135,11 @@ In order to implement these demos, you have to install the turtlebot3_applicatio
 Parameters that can be sent to the rosservice to get a panoramic image are:
 
 - mode for taking the pictures.
-    0 : snap&rotate (i.e. rotate, stop, snapshot, rotate, stop, snapshot, ...)  
-    1 : continuous (i.e. keep rotating while taking snapshots)  
-    2 : stop taking pictures and create panoramic image  
+
+    - 0 : snap&rotate (i.e. rotate, stop, snapshot, rotate, stop, snapshot, ...)  
+    - 1 : continuous (i.e. keep rotating while taking snapshots)  
+    - 2 : stop taking pictures and create panoramic image  
+    
 - total angle of panoramic image, in degrees
 - angle interval (in degrees) when creating the panoramic image in snap&rotate mode, time interval (in seconds) otherwise
 - rotating velocity (in radians/s)
