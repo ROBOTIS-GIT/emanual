@@ -5577,44 +5577,44 @@ turtlebot3:
       - title: "Actuator"
         url: /platform/turtlebot3/specifications/#actuator
   - title: "Hardware Setup"
-    url: /platform/turtlebot3/specifications/#hardware-setup
+    url: /platform/turtlebot3/hardware_setup/#hardware-setup
     children:
     - title: "Main Components"
-      url: /platform/turtlebot3/specifications/#main-components
+      url: /platform/turtlebot3/hardware_setup/#main-components
     - title: "Part List"
-      url: /platform/turtlebot3/specifications/#part-list
+      url: /platform/turtlebot3/hardware_setup/#part-list
       children:
       - title: "Chassis Parts"
-        url: /platform/turtlebot3/specifications/#chassis-parts
+        url: /platform/turtlebot3/hardware_setup/#chassis-parts
       - title: "Motor"
-        url: /platform/turtlebot3/specifications/#motor
+        url: /platform/turtlebot3/hardware_setup/#motor
       - title: "Board"
-        url: /platform/turtlebot3/specifications/#board
+        url: /platform/turtlebot3/hardware_setup/#board
       - title: "Sensor"
-        url: /platform/turtlebot3/specifications/#sensor
+        url: /platform/turtlebot3/hardware_setup/#sensor
       - title: "Memory"
-        url: /platform/turtlebot3/specifications/#memory
+        url: /platform/turtlebot3/hardware_setup/#memory
       - title: "Cable"
-        url: /platform/turtlebot3/specifications/#cable
+        url: /platform/turtlebot3/hardware_setup/#cable
       - title: "Power"
-        url: /platform/turtlebot3/specifications/#power
+        url: /platform/turtlebot3/hardware_setup/#power
       - title: "Tools"
-        url: /platform/turtlebot3/specifications/#tools
+        url: /platform/turtlebot3/hardware_setup/#tools
       - title: "Miscellaneous"
-        url: /platform/turtlebot3/specifications/#miscellaneous
+        url: /platform/turtlebot3/hardware_setup/#miscellaneous
     - title: "Assembly Manual"
-      url: /platform/turtlebot3/specifications/#assembly-manual
+      url: /platform/turtlebot3/hardware_setup/#assembly-manual
     - title: "Assembly Video"
-      url: /platform/turtlebot3/specifications/#assembly-video
+      url: /platform/turtlebot3/hardware_setup/#assembly-video
       children:
       - title: "TurtleBot3 Burger"
-        url: /platform/turtlebot3/specifications/#turtlebot3-burger
+        url: /platform/turtlebot3/hardware_setup/#turtlebot3-burger
       - title: "TurtleBot3 Waffle"
-        url: /platform/turtlebot3/specifications/#turtlebot3-waffle
+        url: /platform/turtlebot3/hardware_setup/#turtlebot3-waffle
     - title: "Basic Operation"
-      url: /platform/turtlebot3/specifications/#basic-operation
+      url: /platform/turtlebot3/hardware_setup/#basic-operation
     - title: "Open Source Hardware"
-      url: /platform/turtlebot3/specifications/#open-source-hardware
+      url: /platform/turtlebot3/hardware_setup/#open-source-hardware
   - title: "PC Software Setup"
     url: /platform/turtlebot3/pc_software_setup/#pc-software-setup
     children:
