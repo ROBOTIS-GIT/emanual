@@ -12,7 +12,6 @@ sidebar:
 ---
 
 <div style="counter-reset: h1 5"></div>
-<div style="counter-reset: h2 1"></div>
 
 
 ## [Install Linux on TurtleBot3 Burger (Raspberry Pi 3)](#install-linux-on-turtlebot3-burger-raspberry-pi-3)
