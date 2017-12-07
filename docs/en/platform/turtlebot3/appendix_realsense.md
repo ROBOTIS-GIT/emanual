@@ -11,7 +11,7 @@ sidebar:
   nav: "turtlebot3"
 ---
 
-<div style="counter-reset: h20 1">
+<div style="counter-reset: h1 19">
 </div>
 
 # [Appendix #RealSense™](#appendix-realsense)
@@ -58,7 +58,7 @@ Here is the detail specification document: [Intel® RealSense™ Datasheet](http
 
 The Intel® RealSense™ R200 is applied on TurtleBot3 Waffle.
 
-![](/assets/images/platform/turtlebot3/hardware/turtlebot3_models.png)
+![](/assets/images/platform/turtlebot3/hardware_setup/turtlebot3_models.png)
 
 ## [Introduction Video](#introduction-video)
 
