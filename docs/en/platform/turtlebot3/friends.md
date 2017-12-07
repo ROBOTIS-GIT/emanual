@@ -11,7 +11,7 @@ sidebar:
   nav: "turtlebot3"
 ---
 
-<div style="counter-reset: h16 1">
+<div style="counter-reset: h1 15">
 </div>
 
 # [Friends](#friends)
@@ -52,7 +52,7 @@ Get source codes and make friends! Go to <kbd>Examples</kbd> → <kbd>turtlebot3
 **Note :** Any suggestions and ideas for TurtleBot3 Friends Project are always welcomed. Tell us about your creative TurtleBot3 Friends. We can introduce your friend to the world through this wiki page! :)
 {: .notice--info}
 
-* E-Mail : ost@robotis.com
+E-Mail : ost@robotis.com
 
 
 ## [TurtleBot3 Friends: Car](#turtlebot3-friends-car)
