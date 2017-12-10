@@ -86,16 +86,16 @@ sidebar:
 
 ## [Control Table Description](#control-table-description)
 
-### <a name="model-number"></a>**Model Number (0)**
+### <a name="model-number"></a>**[Model Number (0)](#model-number-0)**
  This address stores model number of the DYNAMIXEL.
 
-### <a name="firmware-version"></a>**Firmware Version (2)**
+### <a name="firmware-version"></a>**[Firmware Version (2)](#firmware-version-2)**
  This address stores firmware version of the DYNAMIXEL.
 
-### <a name="id"></a>**ID (3)**
+### <a name="id"></a>**[ID (3)](#id-3)**
 {% include en/dxl/control_table_id.md %}
 
-### <a name="baud-rate"></a>**Baud Rate (4)**
+### <a name="baud-rate"></a>**[Baud Rate (4)](#baud-rate-4)**
 {% include en/dxl/control_table_baudrate.md %}
 
 For BPS over 250 values :
@@ -106,46 +106,46 @@ For BPS over 250 values :
 |251|2,500,000|0.000%|
 |252|3,000,000|0.000%|
 
-### <a name="return-delay-time"></a>**Return Delay Time (5)**
+### <a name="return-delay-time"></a>**[Return Delay Time (5)](#return-delay-time-5)**
 {% include en/dxl/control_table_return_delay_time.md %}
 
-### <a name="cw-angle-limit"></a><a name="ccw-angle-limit"></a>**CW/CCW Angle Limit(6, 8)**
+### <a name="cw-angle-limit"></a><a name="ccw-angle-limit"></a>**[CW/CCW Angle Limit(6, 8)](#cwccw-angle-limit6-8)**
 {% include en/dxl/control_table_mx_angle_limit.md %}
 
-### <a name="temperature-limit"></a>**The Maximum Temperature Limit**
+### <a name="temperature-limit"></a>**[Temperature Limit (11)](#temperature-limit-11)**
 {% include en/dxl/control_table_temp_limit.md %}
 
-### <a name="min-voltage-limit"></a><a name="max-voltage-limit"></a>**Min/Max Voltage Limit**
+### <a name="min-voltage-limit"></a><a name="max-voltage-limit"></a>**[Min/Max Voltage Limit (12, 13)](#minmax-voltage-limit-12-13)**
 {% include en/dxl/control_table_volt_limit.md %}
 
-### <a name="max-torque"></a>**Max Torque**
+### <a name="max-torque"></a>**[Max Torque (14)](#max-torque-14)**
 {% include en/dxl/control_table_max_torque.md %}
 
-### <a name="status-return-level"></a>**Status Return Level**
+### <a name="status-return-level"></a>**[Status Return Level (16)](#status-return-level-16)**
 {% include en/dxl/control_table_status_return_lv.md %}
 
-### <a name="alarm-led"></a><a name="shutdown"></a>**Alarm LED / Alarm Shutdown**
+### <a name="alarm-led"></a><a name="shutdown"></a>**[Alarm LED(17), Shutdown(18)](#alarm-led17-shutdown18)**
 {% include en/dxl/control_table_alarm_shutdown.md %}
 
-### <a name="multi-turn-offset"></a>**Multi-turn Offset**
+### <a name="multi-turn-offset"></a>**[Multi Turn Offset (20)](#multi-turn-offset-20)**
 {% include en/dxl/control_table_multiturn_offset.md %}
 
-### <a name="resolution-divider"></a>**Resolution Divider**
+### <a name="resolution-divider"></a>**[Resolution Divider (22)](#resolution-divider-22)**
 {% include en/dxl/control_table_resolution_divider.md %}
 
-### <a name="torque-enable"></a>**Torque Enable**
+### <a name="torque-enable"></a>**[Torque Enable (24)](#torque-enable-24)**
 {% include en/dxl/control_table_torque_enable.md %}
 
-### <a name="led"></a>**LED**
+### <a name="led"></a>**[LED (25)](#led-25)**
 {% include en/dxl/control_table_led.md %}
 
-### <a name="p-gain"></a><a name="i-gain"></a><a name="d-gain"></a>**PID Gains**
+### <a name="p-gain"></a><a name="i-gain"></a><a name="d-gain"></a>**[PID Gains (26, 27, 28)](#pid-gains-26-27-28)**
 {% include en/dxl/control_table_mx_pid.md %}
 
-### <a name="goal-position"></a>**Goal Position**
+### <a name="goal-position"></a>**[Goal Position (30)](#goal-position-30)**
 {% include en/dxl/control_table_mx_goal_position.md %}
 
-### <a name="moving-speed"></a>**Moving Speed**
+### <a name="moving-speed"></a>**[Moving Speed (32)](#moving-speed-32)**
 - Join Mode, Multi-Turn mode
   It is a moving speed to Goal Position.
   0~1023 (0X3FF) can be used, and the unit is about 0.916rpm.
@@ -164,13 +164,13 @@ For BPS over 250 values :
   `Note` Wheel mode allows to check max rpm. Any values higher than max rpm will not take effect.
   {: .notice}
 
-### <a name="torque-limit"></a>**Torque Limit**
+### <a name="torque-limit"></a>**[Torque Limit (34)](#torque-limit-34)**
 {% include en/dxl/control_table_torque_limit.md %}
 
-### <a name="present-position"></a>**Present Position**
+### <a name="present-position"></a>**[Present Position (36)](#present-position-36)**
 {% include en/dxl/control_table_magnet_present_position.md %}
 
-### <a name="present-speed"></a>**Present Speed**
+### <a name="present-speed"></a>**[Present Speed (38)](#present-speed-38)**
 Is the current moving speed.
 0~2047 (0x000 ~ 0x7FF) can be used.
 If a value is in the rage of 0~1023 then the motor rotates to the CCW direction.
@@ -179,28 +179,28 @@ The 10th bit becomes the direction bit to control the direction; 0 and 1024 are 
 The value unit is about 0.916rpm.
 For example, if it is set to 300 then the motor is moving to the CCW direction at a rate of about 274.8rpm.
 
-### <a name="present-load"></a>**Present Load**
+### <a name="present-load"></a>**[Present Load (40)](#present-load-40)**
 {% include en/dxl/control_table_present_load.md %}
 
-### <a name="present-voltage"></a>**Present Voltage**
+### <a name="present-voltage"></a>**[Present Voltage (42)](#present-voltage-42)**
 {% include en/dxl/control_table_present_volt.md %}
 
-### <a name="present temperature"></a>**Present Temperature**
+### <a name="present-temperature"></a>**[Present Temperature (43)](#present-temperature-43)**
 {% include en/dxl/control_table_present_temp.md %}
 
-### <a name="registered-instruction"></a>**Registered Instruction**
+### <a name="registered-instruction"></a>**[Registered Instruction (44)](#registered-instruction-44)**
 {% include en/dxl/control_table_reg_instruction.md %}
 
-### <a name="moving"></a>**Moving**
+### <a name="moving"></a>**[Moving (46)](#moving-46)**
 {% include en/dxl/control_table_moving.md %}
 
-### <a name="lock"></a>**Lock**
+### <a name="lock"></a>**[Lock (47)](#lock-47)**
 {% include en/dxl/control_table_lock.md %}
 
-### <a name="punch"></a>**Punch**
+### <a name="punch"></a>**[Punch (48)](#punch-48)**
 {% include en/dxl/control_table_punch.md %}
 
-### <a name="goal-acceleration"></a>**Goal Acceleration**
+### <a name="goal-acceleration"></a>**[Goal Acceleration (73)](#goal-acceleration-73)**
 {% include en/dxl/control_table_goal_acceleration.md %}
 
 # [How to Assemble](#how-to-assemble)

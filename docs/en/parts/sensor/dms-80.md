@@ -49,5 +49,5 @@ sidebar:
 - RoboPlus Task : Please refer to [DMS-80] section in the Roboplus Task.
 
 
-[Controller Compatibility]: /docs/en/faq/controller_compatibility/
+[Controller Compatibility]: /docs/en/parts/controller/controller_compatibility/
 [DMS-80]: /docs/en/software/rplus1/task/programming_02/#dms-sensor

@@ -4,9 +4,11 @@
       <nav id="site-nav" class="greedy-nav">
         <a class="site-title" href="{{ '/' | absolute_url }}"><img src="/assets/images/robotis_logo.gif" style="padding-right:10px;">e-Manual</a>
         {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
+        {% comment %}
         {% for page in pages %}
           <a href="{{ page.url | absolute_url }}" class="{{page.lang}}" style="color: #134268;padding-right:10px;">[{{page.lang}}]</a>
         {% endfor %}
+        {% endcomment %}
 
         <form method="get" id="site_search" style="margin:0 0 0 0; position:absolute; right:0; width:30%;">
           <script>
@@ -144,7 +146,7 @@
                 {% if shoulderurl %}
                   {% if shoulderurl contains "://" %}<a href="{{ shoulderurl }}">{% else %}
                     <a href="{{ site.url }}{{ site.baseurl }}/docs/{{ page.lang }}{{ shoulderurl }}">{% endif %}{% else %}
-                <a>{% endif %}{{ shouldertitle }}</a>
+                <a>{% endif %}{% if shouldertitle contains '*' %}<font color=#ccc>{{ shouldertitle }}</font>{% else %}{{ shouldertitle }}{% endif %}</a>
               {% endif %}
 
               {% if shoulder.children != null %}
@@ -208,7 +210,8 @@
 
                   {% if kneetitle %}
                     {% if kneeurl %}
-                      {% if kneeurl contains "://" %}<a href="{{ kneeurl }}">{% else %}<a href="{{ site.url }}{{ site.baseurl }}/docs/{{ page.lang }}{{ kneeurl }}">{% endif %}{% else %}<a>{% endif %}{{ kneetitle }}</a>
+                      {% if kneeurl contains "://" %}<a href="{{ kneeurl }}">{% else %}<a href="{{ site.url }}{{ site.baseurl }}/docs/{{ page.lang }}{{ kneeurl }}">{% endif %}{% else %}
+                        <a>{% endif %}{% if kneetitle contains '*' %}<font color=#ccc>{{ kneetitle }}</font>{% else %}{{ kneetitle }}{% endif %}</a>
                     {% endif %}
                 {% endfor %}
               </div>

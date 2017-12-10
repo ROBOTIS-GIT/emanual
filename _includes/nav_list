@@ -39,8 +39,16 @@
         {% assign navurl=nav.url %}
       {% endif %}
     {% else %}
-      {% assign navtitle=nav.title %}
-      {% assign navurl=nav.url %}
+      {% if nav.title %}
+        {% assign navtitle=nav.title %}
+      {% else %}
+        {% assign navtitle=null %}
+      {% endif %}
+      {% if nav.url %}
+        {% assign navurl=nav.url %}
+      {% else %}
+        {% assign navurl=null %}
+      {% endif %}
     {% endif %}
 
     {% if nav.children != null %}
@@ -105,8 +113,8 @@
 
         {% if child.children != null %}
         <li class="has-children">
-          <input type="radio" name="sublevel" id="sublevel_{{ forloop.index0 }}">
-          <label for="sublevel_{{ forloop.index0 }}">{{ childtitle }}</label>
+          <input type="radio" name="sublevel" id="{{ childtitle }}">
+          <label for="{{ childtitle }}">{{ childtitle }}</label>
         {% else %}
         <li><a href="{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ childurl }}" class="{{ active }}">{{ childtitle }}</a></li>
         {% endif %}

@@ -273,7 +273,7 @@ from ROBOTIS before their standard warranty period is over.
   Evaluation, maintenance and quality assurance of assembled robot can be provided by ROBOTIS only.  
   RMA is required and additional fee may apply. Service will not be rendered for seriously customized hardware.
 
-# [Sub Controller(CM-740)](#sub-controller-cm-740)
+# [Sub Controller(CM-740)](#sub-controllercm-740)
 
 - `Download ZIP` [Framework](https://sourceforge.net/projects/darwinop/files/Software/Sub%20Controller/CM730_FIRMWARE_FRAMEWORK.zip/download)
 - `Download PDF` [Schematics](http://sourceforge.net/projects/darwinop/files/Hardware/Electronics/Sub%20Controller/DARwIn-OP_Subcontroller_Schematics.pdf/download)

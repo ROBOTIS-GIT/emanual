@@ -269,7 +269,7 @@ USART channel 1 is registered under Dynamixel TTL Bus and cannot be used simulta
 - **A1** : Digital I/O and analog input. Can be used for SPI channel 1’s SCK clock-pin.
 - **A2** : Digital I/O, analog input, & PWM output.
 - **A3** : Digital I/O, analog input, & PWM output.
-- **A4** : Digital I/O, analog input, & PWM output. Used as USART1 (Serial2) channel’s TXD pin and connected to 4-pin communication port’s TX2.
+- **A4** : Digital I/O, analog input, & PWM output. Used as USART2(Serial2) channel’s TXD pin and connected to 4-pin communication port’s TX2.
 - **A5** : Digital I/O, analog input, & PWM output. Used as USART2(Serial2) channel’s RXD pin and connected to 4-pin communication RX2.
 - **A6** : Digital I/O, analog input, & PWM output. Can be used as SPI channel 1’s MISO pin.
 - **A7** : Digital I/O, analog input, & PWM output. Can be used as SPI channel 1’s MISO pin.
@@ -370,7 +370,7 @@ The OpenCM9.04’s maximum tolerable voltage is 16V; voltage input greater than 
 Dynamixel cannot operate using the power supplied via USB cable, but communication ports and I/O headers can be operated normally.  
 CAUTION: do NOT charge the LBS-40 battery while it is connected to the board and the board is connected to the PC via USB cable.
 
-# [Switch Assembly(Type A)](#switch-assembly-type-a)
+# [Switch Assembly(Type A)](#switch-assemblytype-a)
 
 OpenCM9.04 Type A is sold without a power switch and JP1 shorted. To add the power switch, remove the solder connection of JP1 and solder the 2.54mm pitch power switch.  
 Power switch is included in the OpenCM accessory kit or other switches with the similar pitch can be used.  
@@ -384,7 +384,7 @@ Power switch is included in the OpenCM accessory kit or other switches with the 
 > OpenCM9.04 Type A needs to have JP1 disconnected when soldering the switch for it to operate properly
 
 
-# [Connector Assembly(Type A)](#connector-assembly-type-a)
+# [Connector Assembly(Type A)](#connector-assemblytype-a)
 
 OpenCM9.04’s Dynamixel 3-Pin TTL pins are all compatible with Dynamixel 3-pin TTL and XL-320 3-pin TTL(mini-type). Thus, both type of pins can be soldered and used.  
 Both types of 3-pin TTL pins are included in OpenCM Accessory Set.

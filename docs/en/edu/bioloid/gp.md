@@ -295,7 +295,7 @@ Most of the sensors used in robots, such as IR sensors and distance sensors, sup
 [Touch Sensor]: /docs/en/parts/sensor/ts-10/
 [Gyro Sensor]: /docs/en/parts/sensor/gs-12/
 [USB2Dynamixel]: /docs/en/parts/interface/usb2dynamixel/
-[Controller]: /docs/en/faq/controller_compatibility/
+[Controller]: /docs/en/parts/controller/controller_compatibility/
 [RC-100]: /docs/en/parts/communication/rc-100/
 [ZIG-110]: /docs/en/parts/communication/zig-110/
 [How to Download of task code]: /docs/en/faq/download_task_code/

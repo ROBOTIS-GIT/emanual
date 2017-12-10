@@ -296,7 +296,7 @@ There are two preparations that need to be done for using the XM Series in R+Tas
 8. When the configuration is finished, you can now use the XM/XH Series in R+ Task 2.0 and R+ Motion 2.0.  
     (Supported from versions R+ Task 2.0 v2.1.0, R+ Motion 2.0 v2.4.0 or later)
 
-## [Chanaging Control Value](#changing-control-value)
+## [Changing Control Value](#changing-control-value)
 
 Use the left mouse-button to drag and change the value(used when changing the value in large amounts.)
 
@@ -327,7 +327,7 @@ This is the function to check the Firmware version, release date, and update not
 
     ![](/assets/images/sw/rplus2/manager/roboplus_manager2_40.jpg)
 
-## [Firmware Management(Bluetooth)](#firmware-management-bluetooth)
+## [Firmware Management(Bluetooth)](#firmware-managementbluetooth)
 
 By using the BT-210 or BT-110 you can manage the Firmware wirelessly (The BT-410 does not provide a wireless Firmware management function)
 

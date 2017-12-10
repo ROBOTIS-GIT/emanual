@@ -67,6 +67,10 @@ h2 {
   ~ ol {
     margin-left: 0.5em;
   }
+  
+  ~ table {
+    margin-left: 0.5em;
+  }
 }
 
 h3 {
@@ -89,6 +93,10 @@ h3 {
   }
 
   ~ ol {
+    margin-left: 1em;
+  }
+  
+  ~ table {
     margin-left: 1em;
   }
 }
@@ -114,15 +122,53 @@ h4 {
   ~ ol {
     margin-left: 1.5em;
   }
+  
+  ~ table {
+    margin-left: 1.5em;
+  }
 }
 
 h5 {
+  margin-left: 2em;
   font-size: $type-size-6;
   font-style: italic;
+  
+  ~ p {
+    margin-left: 2em;
+  }
+
+  ~ ul {
+    margin-left: 2em;
+  }
+
+  ~ ol {
+    margin-left: 2em;
+  }
+  
+  ~ table {
+    margin-left: 2em;
+  }
 }
 
 h6 {
+  margin-left: 2.3em;
   font-size: $type-size-7;
+  
+  ~ p {
+    margin-left: 2.3em;
+  }
+
+  ~ ul {
+    margin-left: 2.3em;
+  }
+
+  ~ ol {
+    margin-left: 2.3em;
+  }
+  
+  ~ table {
+    margin-left: 2.3em;
+  }
 }
 
 small, .small {
@@ -139,6 +185,7 @@ li {
 
 p {
   margin-bottom: 1.3em;
+  font-size: 0.8em;
 }
 
 u,
@@ -219,7 +266,7 @@ figcaption > code,
 td > code {
   padding-top: 0.1rem;
   padding-bottom: 0.1rem;
-  font-size: $type-size-5;
+  font-size: 0.8em;
   background: $code-background-color;
   border: 1px solid $lighter-gray;
   border-radius: $border-radius;

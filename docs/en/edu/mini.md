@@ -257,38 +257,38 @@ Like the task code, the motion data needs to be downloaded to the controller onc
 
 # [Customize](#customize)
 
-1. Adding Peripheral Devices  
-    The controller OpenCM9.04-C Type used in ROBOTIS MINI has four ports to connect 5P devices.
+## Adding Peripheral Devices  
+  The controller OpenCM9.04-C Type used in ROBOTIS MINI has four ports to connect 5P devices.
 
   - Accessories
 
-    ![](/assets/images/edu/mini/mini_023.jpg)
+  ![](/assets/images/edu/mini/mini_023.jpg)
 
-    ※ Please refer to our online shop to purchase the sensors above. [GO TO ROBOTIS SHOP](http://www.robotis-shop-en.com/index.php)
+  ※ Please refer to our online shop to purchase the sensors above. [GO TO ROBOTIS SHOP](http://www.robotis-shop-en.com/index.php)
 
-    ![](/assets/images/edu/mini/mini_024.jpg)
+  ![](/assets/images/edu/mini/mini_024.jpg)
 
-    Port number for each port is written in white.
+  Port number for each port is written in white.
 
-    {% capture mini_warning_02 %}
-    `Caution`
-    - LED Module : Use ports `2` and `3`(LED will not light up when using ports `3` and `4`)
-    - IR Sensor :  Use ports `1` and `4`
-    - Color Sensor : Use ports `2` and `3`
-    {% endcapture %}
+{% capture mini_warning_02 %}
+`Caution`  
+LED Module : Use ports `2` and `3`(LED will not light up when using ports `3` and `4`)  
+IR Sensor :  Use ports `1` and `4`  
+Color Sensor : Use ports `2` and `3`  
+{% endcapture %}
 
-    <div class="notice--warning">{{ mini_warning_02 | markdownify }}</div>
+  <div class="notice--warning">{{ mini_warning_02 | markdownify }}</div>
 
-    Images of ROBOTIS-MINI with different devices assembled.
+  Images of ROBOTIS-MINI with different devices assembled.
 
-    ![](/assets/images/edu/mini/mini_025.jpg)
+  ![](/assets/images/edu/mini/mini_025.jpg)
 
-2. Customize Appearance  
-    The stickers come with your package but if you want to re-reprint them, please refer to the link below. You can also draw your own design. Sticker file can be downloaded at [Download Section](#download)
+## Customize Appearance  
+  The stickers come with your package but if you want to re-reprint them, please refer to the link below. You can also draw your own design. Sticker file can be downloaded at [Download Section](#download)
 
-    ![](/assets/images/edu/mini/mini_026.jpg)
+  ![](/assets/images/edu/mini/mini_026.jpg)
 
-# <a name"download"></a>[Download](#download)
+# <a name="download"></a>[Download](#download)
 
 - [Download][mini_download_01] Example Task Code and Motion File
 - [Download][mini_download_02] Sticker Design

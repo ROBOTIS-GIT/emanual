@@ -49,5 +49,5 @@ It can be operated as general DC motors by connecting OLLO switch and the batter
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/-qRy_NDd5eU" frameborder="0" allowfullscreen></iframe>
 
-[Controller Compatibility]: /docs/en/faq/controller_compatibility/
+[Controller Compatibility]: /docs/en/parts/controller/controller_compatibility/
 [Geared Motor]: /docs/en/software/rplus1/task/programming_02/#reduction-motor

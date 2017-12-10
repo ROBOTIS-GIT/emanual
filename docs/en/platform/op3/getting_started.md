@@ -482,7 +482,7 @@ from ROBOTIS before their standard warranty period is over.
   Evaluation, maintenance and quality assurance of assembled robot can be provided by ROBOTIS only.  
   RMA is required and additional fee may apply. Service will not be rendered for seriously customized hardware.
 
-# [Sub Controller(OpenCR)](#sub-controller-opencr)
+# [Sub Controller(OpenCR)](#sub-controlleropencr)
 
 ## [Control Table](#contrl-table)
 Control Table consists of data regarding the current status and operation of OpenCR. The user can control OpenCR by changing data of Control Table via Instruction packet.

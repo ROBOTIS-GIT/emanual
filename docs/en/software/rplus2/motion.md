@@ -180,7 +180,7 @@ Motion Unit is the link of poses placed on the timeline, to create a motion. The
 
     ![](/assets/images/sw/rplus2/motion/roboplus_motion_023.gif)
 
-## [Edit Motion Unit(3D Robot)](#edit-motion-unit-3d-robot)
+## [Edit Motion Unit(3D Robot)](#edit-motion-unit3d-robot)
 
 This section explains how to edit Motion Units when an actual robot is not available. Users will edit the 3D robot’s pose and save the pose on the timeline to create Motion Units.
  
@@ -209,7 +209,7 @@ This section explains how to edit Motion Units when an actual robot is not avail
 
     ![](/assets/images/sw/rplus2/motion/roboplus_motion_029.gif)
 
-## [Edit Motion Unit(Actual Robot)](#edit-motion-unit-actual-robot)
+## [Edit Motion Unit(Actual Robot)](#edit-motion-unitactual-robot)
 
 This time, an actual robot will be used to edit a Motion Unit. Users will set the pose using the actual robot, and save the pose onto the timeline.
  

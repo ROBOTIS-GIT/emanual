@@ -7,3 +7,6 @@ Below figure is a block diagram describing the current-based position controller
 6. Results are stored at Present Position(132), Present Velocity(128), Present PWM(124) and Present Current(126).
 
 ![](/assets/images/dxl/current_position_controller_pid_gain.jpg)
+
+`Note` K<sub>a</sub> is an Anti-windup Gain that cannot be modified by users. For more details about the PID controller and Feedforward controller, please refer to the [PID Controller](http://en.wikipedia.org/wiki/PID_controller) and [Feed Forward](https://en.wikipedia.org/wiki/Feed_forward_(control)).
+{: .notice}

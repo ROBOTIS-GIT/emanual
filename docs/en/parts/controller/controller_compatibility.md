@@ -1,13 +1,10 @@
 ---
-layout: archive
+layout: splash
 lang: en
 ref: controller_compatibility
 share: true
 author_profile: false
-permalink: /docs/en/faq/controller_compatibility/
-sidebar:
-  title: Compatibility
-  nav: "controller_compatibility"
+permalink: /docs/en/parts/controller/controller_compatibility/
 ---
 
 # Controller Compatibility
@@ -85,7 +82,7 @@ sidebar:
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 |R+ 1.0|O|O|O|O|O|O|O|X|O(X)|
 |R+ 2.0|O|O|O|O|O|O|O|X|O(X)|
-|OpenCM IDE||||||||||
+|OpenCM IDE|X|X|X|X|X|X|X|X|O|
 
 
 [ln-101]: /docs/en/parts/interface/ln-101/
