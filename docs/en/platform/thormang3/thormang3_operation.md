@@ -211,7 +211,7 @@ Simple demo of the [thormang3_walking_module]
   - demo 3 : make balance algorithm enable/disable – Balance ON / OFF
     ``` 
     $ rostopic pub -1 /robotis/walking_demo/command std_msgs/String "balance_on"  
-    $ rostopic pub -1 /robotis/walking_demo/command std_msgs/String "balance_off"   
+    $ rostopic pub -1 /robotis/walking_demo/command std_msgs/String "balance_off"   
     ```
   - demo 4 : walk forward – One step forward walking (balance should be turned on)
     ``` 
