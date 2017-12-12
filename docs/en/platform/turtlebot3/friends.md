@@ -95,9 +95,17 @@ E-Mail : ost@robotis.com
 * Type: Segway robot
 * Features: Balancing with only two DYNAMIXEL by applying PID controller.
 * Components: Two Dynamixel X 430 Series (All for balancing), an OpenCR1.0 Board, TurtleBot3 Chassis and Battery, 3D printed chassis.
+
+**Note :** Two Dynamixel X 430 Series are need to be set on PWM Mode.
+{: .notice--info}
+
 * BOM: https://goo.gl/XPgJkZ
 * Hardware: https://goo.gl/rbmqLB
 * Software: <kbd>Examples</kbd> → <kbd>turtlebot3</kbd> → <kbd>turtlebot3_friends</kbd> → <kbd>turtlebot3_segway</kbd>
+
+**Note :** Filters library have to be downloaded and includes it arduino IDE. https://github.com/JonHub/Filters
+{: .notice--info}
+
 * Video:
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/VAY-0xBOE2g" frameborder="0" allowfullscreen></iframe>
