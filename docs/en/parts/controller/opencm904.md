@@ -439,3 +439,5 @@ Both types of 3-pin TTL pins are included in OpenCM Accessory Set.
 [DARWIN-MINI Controller Firmware Update]: /docs/en/edu/mini/#firmware-update
 [Arduino IDE]: https://github.com/ROBOTIS-GIT/OpenCM9.04/wiki
 [OpenCM IDE]: http://emanual.robotis.com/docs/en/software/opencm_ide/getting_started/
+[Dynamixel SDK]: https://github.com/ROBOTIS-GIT/DynamixelSDK/wiki
+[DynamixelWorkbench]: http://wiki.ros.org/dynamixel_workbench
