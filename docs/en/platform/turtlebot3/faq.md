@@ -83,6 +83,7 @@ First you have to install ssh on [Remote PC] and [Raspberry Pi]
 In case of Raspberry Pi (TurtleBot3 Burger and Waffle Pi), since the SSH server of Ubuntu MATE 16.04.x and Raspbian is disabled by default. If you want to enable SSH, please refer to the documents below.
 
 https://www.raspberrypi.org/documentation/remote-access/ssh/
+
 https://ubuntu-mate.org/raspberry-pi/
 
 or you can use following commands
@@ -92,10 +93,14 @@ or you can use following commands
   sudo ufw allow ssh
 ```
 
-After enabling it, you can use SSH using below commands
+Before start to connect SSH, you need to check host computer's name. Redbox in below image shows it.
+
+![](/assets/images/platform/turtlebot3/faq/computer_name.png)
+
+Then, you can use SSH following command in [Remote PC].
 
 ``` bash
-  ssh turtlebot@xxx.xxx.xx.xx
+  ssh {computer's name}@xxx.xxx.xx.xx
 ```
 
 ![](/assets/images/platform/turtlebot3/faq/connection_ssh.png)
