@@ -70,3 +70,32 @@ If BIOS firmware is not properly installed, this might happen. Please burn the B
 Download BIOS Firmware #193 : https://downloadmirror.intel.com/26206/eng/joule-firmware-2017-02-19-193-public.zip
 
 ![](/assets/images/platform/turtlebot3/faq/nvstorage.png)
+
+**Enable SSH server in Raspberry Pi**
+----------------------------------------------------
+
+First you have to install ssh on [Remote PC] and [Raspberry Pi]
+
+``` bash
+  sudo apt-get install ssh
+```
+
+In case of Raspberry Pi (TurtleBot3 Burger and Waffle Pi), since the SSH server of Ubuntu MATE 16.04.x and Raspbian is disabled by default. If you want to enable SSH, please refer to the documents below.
+
+https://www.raspberrypi.org/documentation/remote-access/ssh/
+https://ubuntu-mate.org/raspberry-pi/
+
+or you can use following commands
+
+``` bash
+  sudo service ssh start
+  sudo ufw allow ssh
+```
+
+After enabling it, you can use SSH using below commands
+
+``` bash
+  ssh turtlebot@xxx.xxx.xx.xx
+```
+
+![](/assets/images/platform/turtlebot3/faq/connection_ssh.png)
