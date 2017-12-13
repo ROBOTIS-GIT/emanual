@@ -464,6 +464,24 @@
 
                   
                     
+                      <a href="http://localhost:4000/docs/en/dxl/x/xm540-w150/">XM540-W150</a>
+                    
+                
+                  
+
+                  
+
+                  
+                    
+                      <a href="http://localhost:4000/docs/en/dxl/x/xm540-w270/">XM540-W270</a>
+                    
+                
+                  
+
+                  
+
+                  
+                    
                       <a href="http://localhost:4000/docs/en/dxl/x/xh430-w210/">XH430-W210</a>
                     
                 
@@ -767,7 +785,8 @@
 
               
                 
-                  <a href="http://turtlebot3.robotis.com">TurtleBot3</a>
+                  
+                    <a href="http://localhost:4000/docs/en/platform/turtlebot3/overview/">TurtleBot3</a>
               
 
               
@@ -819,7 +838,7 @@
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/edu/ollo/explore/"><font color=#ccc>*EXPLORER</font></a>
+                      <a href="http://localhost:4000/docs/en/edu/ollo/explorer/"><font color=#ccc>*EXPLORER</font></a>
                     
                 
                   
@@ -1407,7 +1426,7 @@
 
                   
                     
-                      <a href="https://github.com/ROBOTIS-GIT/DynamixelSDK/wiki">DYNAMIXEL SDK</a>
+                      <a href="http://localhost:4000/docs/en/software/sdk/dynamixel_sdk/overview/">DYNAMIXEL SDK</a>
                     
                 
                   
@@ -1638,6 +1657,15 @@
 
                   
                     
+                      <a href="http://localhost:4000/docs/en/parts/communication/bt-410-dongle/">BT-410 Dongle</a>
+                    
+                
+                  
+
+                  
+
+                  
+                    
                       <a href="http://localhost:4000/docs/en/parts/communication/zig2serial/">ZIG2Serial</a>
                     
                 
@@ -1729,6 +1757,15 @@
                   
                     
                       <a href="http://localhost:4000/docs/en/parts/interface/usb2dynamixel/">USB2DYNAMIXEL</a>
+                    
+                
+                  
+
+                  
+
+                  
+                    
+                      <a href="http://localhost:4000/docs/en/parts/interface/u2d2/">U2D2</a>
                     
                 
               </div>
@@ -2536,7 +2573,7 @@
 <p>The Control Table is a structure of data implemented in the DYNAMIXEL. Users can read a specific Data to get status of the DYNAMIXEL with Read Instruction Packets, and modify Data as well to control DYNAMIXEL with WRITE Instruction Packets.</p>
 
 <h2 id="control-table-data-address"><a href="#control-table-data-address">Control Table, Data, Address</a></h2>
-<p>The Control Table is a structure that consists of multiple Data fields to store status of the DYNAMIXEL or to control the DYNAMIXEL. Users can check current status of the DYNAMIXEL by reading a specific Data from the Control Table with Read Instruction Packets. WRITE Instruction Packets enable users to control the DYNAMIXEL by changing specific Data in the Control Table. The Address is a unique value when accessing a specific Data in the Control Table with Instruction Packets. In order to read or write data, users must designate a specific Address in the Instruction Packet. Please refer to <a href="/docs/en/dxl/protocol1/">Protocol 1.0</a> for more details about Instruction Packets.</p>
+<p>The Control Table is a structure that consists of multiple Data fields to store status of the DYNAMIXEL or to control the DYNAMIXEL. Users can check current status of the DYNAMIXEL by reading a specific Data from the Control Table with Read Instruction Packets. WRITE Instruction Packets enable users to control the DYNAMIXEL by changing specific Data in the Control Table. The Address is a unique value when accessing a specific Data in the Control Table with Instruction Packets. In order to read or write data, users must designate a specific Address in the Instruction Packet. Please refer to <a href="/docs/en/dxl/protocol1/#status-packet">Protocol 1.0</a> for more details about Instruction Packets.</p>
 
 <p class="notice"><code class="highlighter-rouge">Note</code> Two’s complement is applied for the negative value. For more information, please refer to <a href="#">Two’s complement</a> from Wikipedia.</p>
 
@@ -3044,7 +3081,7 @@ For example, Data 1,023 (0x3FF) means that Dynamixel will use 100% of the maximu
   </tbody>
 </table>
 
-<p class="notice"><code class="highlighter-rouge">Note</code> If the ID of Instruction Packet is set to Broad Cast ID(0xFE), Status Packet will not be returned for READ and WRITE Instructions regardless of Status Return Level. For more details, please refer to the [Status Packet] section of Protocol.</p>
+<p class="notice"><code class="highlighter-rouge">Note</code> If the ID of Instruction Packet is set to Broad Cast ID(0xFE), Status Packet will not be returned for READ and WRITE Instructions regardless of Status Return Level. For more details, please refer to the <code class="highlighter-rouge">Status Packet</code> section for <a href="/docs/en/dxl/protocol1/#status-packet">Protocol 1.0</a> or <a href="/docs/en/dxl/protocol2/#status-packet">Protocol 2.0</a>.</p>
 
 <h3 id="alarm-led17-shutdown18"><a name="alarm-led"></a><a name="shutdown"></a><strong><a href="#alarm-led17-shutdown18">Alarm LED(17), Shutdown(18)</a></strong></h3>
 <p>Dynamixel can protect itself by detecting errors occur during the operation.
