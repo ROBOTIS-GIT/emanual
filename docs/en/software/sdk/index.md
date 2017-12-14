@@ -61,7 +61,7 @@ header:
 
 
 [Controller Embedded C]: /docs/en/software/sdk/embedded_c/
-[Dynamixel SDK]: https://github.com/ROBOTIS-GIT/DynamixelSDK/wiki
+[Dynamixel SDK]: /docs/en/software/sdk/dynamixel_sdk/overview/
 [ZIGBEE SDK]: /docs/en/software/sdk/zigbee_sdk/
 [Download CM-510 SDK]: http://support.robotis.com/en/baggage_files/embeded_c/embeded_c(cm510_v1.02).zip
 [Download CM-530 SDK]: http://support.robotis.com/en/baggage_files/embeded_c/embeddec_c(cm530_v1_02).zip

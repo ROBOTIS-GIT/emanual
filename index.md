@@ -13,7 +13,7 @@ header:
     - excerpt: 'ROBOTIS wiki e-Manual'
 ---
 
-# ROBOTIS e-Manaul
+# ROBOTIS e-Manual
 
 - [Previous e-Manual] will be served as well.
 - New ROBOTIS Community [Forum] is available. Please checkout the [Forum] if you have any issue with ROBOTIS Products.
@@ -31,11 +31,11 @@ header:
   - [M54-60-S250-R], [M54-40-S250-R], [M42-10-S260-R]
   - [L54-50-S500-R], [L54-50-S290-R], [L54-30-S500-R], [L54-30-S400-R], [L42-10-S300-R]
 
-- `DYNAMIXEL SDK` [SDK Download](https://github.com/ROBOTIS-GIT/DynamixelSDK/releases), [Documentation](https://github.com/ROBOTIS-GIT/DynamixelSDK/wiki)
+- `DYNAMIXEL SDK` [SDK Download](https://github.com/ROBOTIS-GIT/DynamixelSDK/releases), [Documentation](http://emanual.robotis.com/docs/en/software/sdk/dynamixel_sdk/overview/)
 
 - `DYNAMIXEL Protocol` [Protocol 1.0](/docs/en/dxl/protocol1/), [Protocol 2.0](/docs/en/dxl/protocol2/)
 
-- `Comatibility Guide` [Controller](/docs/en/parts/controller/controller_compatibility/)
+- `Compatibility Guide` [Controller](/docs/en/parts/controller/controller_compatibility/)
 
 
 [AX-12W]: /docs/en/dxl/ax/ax-12w/#control-table-of-eeprom-area
