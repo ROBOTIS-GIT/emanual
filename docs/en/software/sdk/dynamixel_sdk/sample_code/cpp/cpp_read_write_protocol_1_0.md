@@ -14,8 +14,6 @@ sidebar:
 <div style="counter-reset: h2 17"></div>
 <div style="counter-reset: h1 3"></div>
 
-# [Sample Code](#sample-code)
-
 ## [CPP Read Write Protocol 1.0](#cpp-read-write-protocol-10)
 
 - Description

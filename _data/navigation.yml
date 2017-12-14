@@ -7031,18 +7031,18 @@ dynamixel_sdk:
     - title: "MATLAB Protocol 1.0"
       url: /software/sdk/dynamixel_sdk/sample_code/matlab_protocol1_0/#matlab-protocol-10
       children:
-      - title: "Java Read Write Protocol 1.0"
-        url: /software/sdk/dynamixel_sdk/sample_code/java_read_write_protocol_1_0/#java-read-write-protocol-10
-      - title: "Java Multi Port Protocol 1.0"
-        url: /software/sdk/dynamixel_sdk/sample_code/java_multi_port_protocol_1_0/#java-multi-port-protocol-10
-      - title: "Java Sync Write Protocol 1.0"
-        url: /software/sdk/dynamixel_sdk/sample_code/java_sync_write_protocol_1_0/#java-sync-write-protocol-10
-      - title: "Java Bulk Read Protocol 1.0"
-        url: /software/sdk/dynamixel_sdk/sample_code/java_bulk_read_protocol_1_0/#java-bulk-read-protocol-10
-      - title: "Java Ping Protocol 1.0"
-        url: /software/sdk/dynamixel_sdk/sample_code/java_ping_protocol_1_0/#java-ping-protocol-10
-      - title: "Java Reset Protocol 1.0"
-        url: /software/sdk/dynamixel_sdk/sample_code/java_reset_protocol_1_0/#java-reset-protocol-10
+      - title: "Matlab Read Write Protocol 1.0"
+        url: /software/sdk/dynamixel_sdk/sample_code/matlab_read_write_protocol_1_0/#matlab-read-write-protocol-10
+      - title: "Matlab Multi Port Protocol 1.0"
+        url: /software/sdk/dynamixel_sdk/sample_code/matlab_multi_port_protocol_1_0/#matlab-multi-port-protocol-10
+      - title: "Matlab Sync Write Protocol 1.0"
+        url: /software/sdk/dynamixel_sdk/sample_code/matlab_sync_write_protocol_1_0/#matlab-sync-write-protocol-10
+      - title: "Matlab Bulk Read Protocol 1.0"
+        url: /software/sdk/dynamixel_sdk/sample_code/matlab_bulk_read_protocol_1_0/#matlab-bulk-read-protocol-10
+      - title: "Matlab Ping Protocol 1.0"
+        url: /software/sdk/dynamixel_sdk/sample_code/matlab_ping_protocol_1_0/#matlab-ping-protocol-10
+      - title: "Matlab Reset Protocol 1.0"
+        url: /software/sdk/dynamixel_sdk/sample_code/matlab_reset_protocol_1_0/#matlab-reset-protocol-10
     - title: "MATLAB Protocol 2.0"
       url: /software/sdk/dynamixel_sdk/sample_code/matlab_protocol2_0/#matlab-protocol-20
       children:

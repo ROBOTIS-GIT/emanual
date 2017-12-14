@@ -16,7 +16,7 @@ sidebar:
 
 ## [Dynamixel](#dynamixel)
 
-![](https://raw.githubusercontent.com/ROBOTIS-GIT/ROBOTIS-Documents/master/wiki-images/DynamixelSDK/Home/DXL_SDK_image.jpg)
+![](/assets/images/sw/sdk/dynamixel_sdk/device_setup/dynamixel_image.jpg)
 
 The SDK and SDK examples were developed based on the MX-28 and H54-200 PRO Dynamixels. 
 
@@ -51,11 +51,11 @@ blank : Not yet tested
 
 * 12V for MX (also AX, EX, RX, and X series)
 
-![](https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/DynamixelSDK/2.HardwareSettings/Dynamixel%20setting/1.png)
+![](/assets/images/sw/sdk/dynamixel_sdk/device_setup/dynamixel_setting/1.png)
 
 * 24V for PRO 
 
-![](https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/DynamixelSDK/2.HardwareSettings/Dynamixel%20setting/2.png)
+![](/assets/images/sw/sdk/dynamixel_sdk/device_setup/dynamixel_setting/2.png)
 
 **Note:** The X series' 4P connector is not compatible with the USB2Dynamixel connector.
 
@@ -65,8 +65,8 @@ To run the SDK examples, the following Dynamixel parameters need to be changed:
 
 To change Dynamixel parameters, use Dynamixel Wizard, which is part of ROBOTIS [RoboPlus](http://en.robotis.com/BlueAD/board.php?bbs_id=downloads&mode=view&bbs_no=1132559&page=1&key=&keyword=&sort=&scate=) suite of software.
 
-![](https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/DynamixelSDK/2.HardwareSettings/Dynamixel%20setting/3.png)
+![](/assets/images/sw/sdk/dynamixel_sdk/device_setup/dynamixel_setting/3.png)
 
-![](https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/DynamixelSDK/2.HardwareSettings/Dynamixel%20setting/4.png)
+![](/assets/images/sw/sdk/dynamixel_sdk/device_setup/dynamixel_setting/4.png)
 
 Instructions on how to utilize Dynamixel Wizard are uploaded on the [e-manual](http://support.robotis.com/en/) → <kbd>Software Help</kbd> → <kbd>Dynamixel Wizard</kbd>.

@@ -17,17 +17,9 @@ sidebar:
 ## [Concept](#concept)
 
 
-![](https://raw.githubusercontent.com/ROBOTIS-GIT/ROBOTIS-Documents/master/wiki-images/DynamixelSDK/Home/DYNAMIXEL_SDK.jpg)
+![](/assets/images/sw/sdk/dynamixel_sdk/overview/dynamixel_sdk_concept_logo.jpg)
 
 The ROBOTIS Dynamixel SDK is a software development library that provides Dynamixel control functions for packet communication. The API is designed for Dynamixel actuators and Dynamixel-based platforms. It assumes that you are familiar with C/C++ programming. If you need to familiarize yourself with Dynamixel, see the e-manual support website at [support.robotis.com](http://support.robotis.com/en/). The e-manual provides comprehensive information about ROBOTIS products and applications.
-
-<!--
-![](https://raw.githubusercontent.com/ROBOTIS-GIT/ROBOTIS-Documents/master/wiki-images/DynamixelSDK/Home/DYNAMIXEL_SDK_Logo.jpg)
--->
-
-<!--
-![](https://raw.githubusercontent.com/ROBOTIS-GIT/ROBOTIS-Documents/master/wiki-images/DynamixelSDK/Home/DXL_SDK_image.jpg)
--->
 
 * Download Cross-compilable, all-in-one SDK for ROBOTIS Dynamixel from the [ROBOTIS Open Source Repository](https://github.com/ROBOTIS-GIT/DynamixelSDK).
 * [Terminal or GitBash] `$ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK.git`
@@ -35,7 +27,7 @@ The ROBOTIS Dynamixel SDK is a software development library that provides Dynami
 
 The example codes are using either C or C++ version dll. Extract zip file, you can see the folders shown below.
 
-![](https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/DynamixelSDK/3.SourcePreparation/Source%20File/2.png?raw=true)
+![](/assets/images/sw/sdk/dynamixel_sdk/overview/dynamixel_sdk_language_map.png)
 
 Now the SDK example codes for various language are available.
 
@@ -47,17 +39,17 @@ Now the SDK example codes for various language are available.
 
 Open C++ folder, for instance, you would see 4 folders which contain cpp source files, header files, build files and example codes. 
 
-![](https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/DynamixelSDK/3.SourcePreparation/Source%20File/4.png?raw=true)
+![](/assets/images/sw/sdk/dynamixel_sdk/overview/dynamixel_sdk_library_struct.png)
 
 Though the `PortHandler` which handles system communication environment is separated in two OS, the Linux and the Windows, the other sources are made to be able to be cross-compiled. Basically, `Makefile` or `Microsoft Visual Studio` is used for each environment of 32bit or 64bit platform respectively. Example codes using library files(.dll, .so, .dylib) show how to use SDK functions to control one or more Dynamixels.  
 
-![](https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/DynamixelSDK/3.SourcePreparation/Source%20File/3.png)
+![](/assets/images/sw/sdk/dynamixel_sdk/overview/dynamixel_sdk_sample_struct.png)
 
 Each example folder also has the build files which are for Linux or Windows, 32bit or 64bit platform. Make library file before you run the example codes. The ReadWrite example code can control and read Dynamixel position.
 
 The example sources coded with C# / Python / Java / MATLAB / LabVIEW are not using library functions coded with the language of themselves but using the `.dll`, `.so` or `.dylib` which are built previously by C language coded source. 
 
-![](https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/DynamixelSDK/3.SourcePreparation/Source%20File/5.png)
+![](/assets/images/sw/sdk/dynamixel_sdk/overview/dynamixel_sdk_language_struct.png)
 
 You can find out how to run the examples in the Dynamixel SDK sources at [here](https://github.com/ROBOTIS-GIT/DynamixelSDK/wiki/4.-SDK-Example)
 

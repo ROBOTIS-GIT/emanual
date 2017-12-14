@@ -58,7 +58,7 @@ $ sudo apt-get install gcc-multilib g++-multilib
 
   Please note that if you will be building the 32-bit example source, you should build the 32-bit library.
 
-![](https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/DynamixelSDK/3.SourcePreparation/Compiler%20and%20Builder/CPP/cpp6.png)
+![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/cpp/linux/library_file/cpp6.png)
 
 
 * Go to the Makefile's directory located in `[DynamixelSDK folder]/cpp/build/linux32` OR `[DynamixelSDK folder]/cpp/build/linux64` OR `[DynamixelSDK folder]/cpp/build/linux_sbc` using $ `cd`.
@@ -69,7 +69,7 @@ $ sudo apt-get install gcc-multilib g++-multilib
 $ make
 ```
 
-![](https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/DynamixelSDK/3.SourcePreparation/Compiler%20and%20Builder/CPP/cpp1.png)
+![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/cpp/linux/library_file/cpp1.png)
 
 
 * If there is an error:  
@@ -84,7 +84,7 @@ $ make clean && make
 $ make clean
 ```
 
-![](https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/DynamixelSDK/3.SourcePreparation/Compiler%20and%20Builder/CPP/cpp2.png)
+![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/cpp/linux/library_file/cpp2.png)
 
 ##### Copy (Install) the Library to the Root Directory
 
@@ -94,7 +94,7 @@ $ make clean
 $ sudo make install
 ```
 
-![](https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/DynamixelSDK/3.SourcePreparation/Compiler%20and%20Builder/CPP/cpp3.png)
+![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/cpp/linux/library_file/cpp3.png)
 
 * If there is an error:  
 
@@ -114,7 +114,7 @@ $ sudo make reinstall
 $ sudo make uninstall
 ```
 
-![](https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/DynamixelSDK/3.SourcePreparation/Compiler%20and%20Builder/CPP/cpp4.png)
+![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/cpp/linux/library_file/cpp4.png)
 
 * To recopy the library file to the root directory:  
 
@@ -122,6 +122,44 @@ $ sudo make uninstall
 $ sudo make reinstall
 ```
 
-![](https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/DynamixelSDK/3.SourcePreparation/Compiler%20and%20Builder/CPP/cpp5.png)
+![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/cpp/linux/library_file/cpp5.png)
 
 * You will see the built library file in `[DynamixelSDK folder]/c/build/[linuxXX]/libdxl_xYY_cpp.so`
+
+### [Building and Running the Sample Code](#building-and-running-the-sample-code)
+
+The Dynamixel SDK sample code for CPP uses the library files(.so for Linux) built in CPP language.
+
+You should build library files in `[DynamixelSDK folder]/c++/build/[linuxXX]/libdxl_xYY_cpp.so` with its own source code as shown above. 
+
+* Choose which format (32bit or 64bit) do you want to build in. The Makefile file for building source is in `[DynamixelSDK folder]/c++/example/protocol1.0/read_write/linux32` or `[DynamixelSDK folder]/c++/example/protocol1.0/read_write/linux64` folder. If you want to build example source in 32bit, for instance, you should build this library in 32bit as well.
+
+![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/cpp/linux/sample_code/excp4.png)
+
+* On the terminal, go to the Makefile located folder `/c++/example/protocol1.0/read_write/linux32`, for example, using `cd`.
+
+* To build executable file, type: 
+
+[Terminal] $ `make`
+
+![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/cpp/linux/sample_code/excp1.png)
+
+If it shows some error, try `make clean` and `make` it again.
+
+* To delete executable file, type: 
+
+[Terminal] $ `make clean`
+
+![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/cpp/linux/sample_code/excp2.png)
+
+* Make the port available to be used
+
+[Terminal] $ `sudo chmod a+rw /dev/ttyUSB0`
+
+![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/cpp/linux/sample_code/excp3.png)
+
+* Run the source code
+
+[Terminal] $ `./read_write`
+
+![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/cpp/linux/sample_code/excp5.png)

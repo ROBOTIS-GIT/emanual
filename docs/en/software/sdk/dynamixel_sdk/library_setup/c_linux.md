@@ -58,7 +58,7 @@ $ sudo apt-get install gcc-multilib g++-multilib
 
   Please note that if you will be building the 32-bit example source, you should build the 32-bit library.
 
-![](https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/DynamixelSDK/3.SourcePreparation/Compiler%20and%20Builder/C/c6.png)
+![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/c/linux/library_file/c6.png)
 
 
 * Go to the Makefile's directory located in `[DynamixelSDK folder]/c/build/linux32` OR `[DynamixelSDK folder]/c/build/linux64` OR `[DynamixelSDK folder]/c/build/linux_sbc` using $ `cd`.
@@ -69,7 +69,7 @@ $ sudo apt-get install gcc-multilib g++-multilib
 $ make
 ```
 
-![](https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/DynamixelSDK/3.SourcePreparation/Compiler%20and%20Builder/C/c1.png)
+![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/c/linux/library_file/c1.png)
 
 
 * If there is an error:  
@@ -84,7 +84,7 @@ $ make clean && make
 $ make clean
 ```
 
-![](https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/DynamixelSDK/3.SourcePreparation/Compiler%20and%20Builder/C/c2.png)
+![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/c/linux/library_file/c2.png)
 
 ##### Copy (Install) the Library to the Root Directory
 
@@ -94,7 +94,7 @@ $ make clean
 $ sudo make install
 ```
 
-![](https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/DynamixelSDK/3.SourcePreparation/Compiler%20and%20Builder/C/c3.png)
+![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/c/linux/library_file/c3.png)
 
 * If there is an error:  
 
@@ -114,7 +114,7 @@ $ sudo make reinstall
 $ sudo make uninstall
 ```
 
-![](https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/DynamixelSDK/3.SourcePreparation/Compiler%20and%20Builder/C/c4.png)
+![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/c/linux/library_file/c4.png)
 
 * To recopy the library file to the root directory:  
 
@@ -122,6 +122,54 @@ $ sudo make uninstall
 $ sudo make reinstall
 ```
 
-![](https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/DynamixelSDK/3.SourcePreparation/Compiler%20and%20Builder/C/c5.png)
+![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/c/linux/library_file/c5.png)
 
 * You will see the built library file in `[DynamixelSDK folder]/c/build/[linuxXX]/libdxl_xYY_c.so`
+
+### [Building and Running the Sample Code](#building-and-running-the-sample-code)
+
+The Dynamixel SDK example code for C uses a .so (Linux) library built in C.
+
+By doing above, each released Dynamixel SDK have latest library files in `[DynamixelSDK folder]/c/build/[linuxXX]/libdxl_xYY_c.so` which were built by its own source code. 
+
+* Go to the Makefile's directory using `cd`:  
+
+``` bash
+$ cd [DynamixelSDK folder]/c/example/protocol1.0/read_write/linux32 OR
+```
+
+``` bash 
+$ cd [DynamixelSDK folder]/c/example/protocol1.0/read_write/linux64
+```
+
+![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/c/linux/sample_code/exc4.png)
+
+* Build the executable file: 
+
+``` bash
+$ make
+```
+
+![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/c/linux/sample_code/exc1.png)
+
+* If there is an error, `$ make clean` then `$ make` again.
+
+* To delete the executable file, `$ make clean`.
+
+![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/c/linux/sample_code/exc2.png)
+
+* Access the port you will be using to communicate with Dynamixel: 
+
+``` bash
+$ sudo chmod a+rw /dev/ttyUSB0
+```
+
+![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/c/linux/sample_code/exc3.png)
+
+* Run the executable file: 
+
+``` bash
+$ ./read_write
+```
+
+![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/c/linux/sample_code/exc5.png)

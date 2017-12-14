@@ -15,7 +15,7 @@ sidebar:
 
 # [Device Setup](#device-setup)
 
-![](https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/DynamixelSDK/2.HardwareSettings/Connection.png)
+![](/assets/images/sw/sdk/dynamixel_sdk/device_setup/connection.png)
 
 To use the Dynamixel SDK, you need to set up the [Controller](#controller) and [Dynamixel](#dynamixel).  
 
@@ -30,9 +30,9 @@ Please check to see whether your Dynamixel is a TTL-based Dynamixel or an RS485-
 
 The SDK and its examples were written using ROBOTIS USB2Dynamixel signal converter, which is shown below. You can use any other converter as long as it generates TTL or RS485-level signals. 
 
-![](https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/DynamixelSDK/2.HardwareSettings/1.JPG)
+![](/assets/images/sw/sdk/dynamixel_sdk/device_setup/usb2dynamixel.jpg)
 
-![](https://raw.githubusercontent.com/ROBOTIS-GIT/ROBOTIS-Documents/master/wiki-images/DynamixelSDK/2.HardwareSettings/3.u2d_select.png)
+![](/assets/images/sw/sdk/dynamixel_sdk/device_setup/u2d_select.png)
 
 Adjust the signal interface so that you can communicate with your Dynamixel by flipping the switch between the following communication modes: 
 
@@ -106,7 +106,7 @@ If you don't want to install RoboPlus, install the latest VCP driver from the [F
  
 * If the FTDI driver isn't automatically installed, the Found New Hardware Wizard pops up after connecting USB2Dynamixel to your controller. Select **Install from a list or specific location** and click **Next**.
 
-![](https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/DynamixelSDK/2.HardwareSettings/FTDI%20driver%20install/ln101_driverinstall_01.png)
+![](/assets/images/sw/sdk/dynamixel_sdk/device_setup/ftdi_driver_install/ln101_driverinstall_01.png)
 
 * Choose your driver's directory.  
 a. The driver must be in **LN101** folder of RoboPlus installed folder.  
@@ -114,11 +114,11 @@ b. If you don't want to install RoboPlus, install the latest VCP driver from the
  
 * Click **Next** to start the installation. 
 
-![](https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/DynamixelSDK/2.HardwareSettings/FTDI%20driver%20install/ln101_driverinstall_03.png)
+![](/assets/images/sw/sdk/dynamixel_sdk/device_setup/ftdi_driver_install/ln101_driverinstall_03.png)
 
 * Click **Finish** to complete installation of the **USB Serial Port** driver. 
 
-![](https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/DynamixelSDK/2.HardwareSettings/FTDI%20driver%20install/ln101_driverinstall_06.png)
+![](/assets/images/sw/sdk/dynamixel_sdk/device_setup/ftdi_driver_install/ln101_driverinstall_06.png)
 
 #### <a name="installation-in-linux"></a>[Installation in Linux](#installation-in-linux)
 
