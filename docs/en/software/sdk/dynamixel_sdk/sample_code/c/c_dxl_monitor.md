@@ -5,7 +5,7 @@ ref: dynamixel_sdk_sample_code_c_dxl_monitor
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/software/sdk/dynamixel_sdk/sample_code/c_dxl_monitor
+permalink: /docs/en/software/sdk/dynamixel_sdk/sample_code/c_dxl_monitor/
 sidebar:
   title: DynamixelSDK
   nav: "dynamixel_sdk"

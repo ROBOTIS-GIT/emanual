@@ -5,7 +5,7 @@ ref: dynamixel_sdk_library_setup_matlab_windows
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/software/sdk/dynamixel_sdk/library_setup/matlab_windows
+permalink: /docs/en/software/sdk/dynamixel_sdk/library_setup/matlab_windows/
 sidebar:
   title: DynamixelSDK
   nav: "dynamixel_sdk"

@@ -5,7 +5,7 @@ ref: dynamixel_sdk_api_reference_labview_groupsyncwrite
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/software/sdk/dynamixel_sdk/api_reference/labview/labview_groupsyncwrite
+permalink: /docs/en/software/sdk/dynamixel_sdk/api_reference/labview/labview_groupsyncwrite/
 sidebar:
   title: DynamixelSDK
   nav: "dynamixel_sdk"

@@ -5,7 +5,7 @@ ref: dynamixel_sdk_sample_code_labview_bulk_read_write_protocol_2_0
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/software/sdk/dynamixel_sdk/sample_code/labview_bulk_read_write_protocol_2_0
+permalink: /docs/en/software/sdk/dynamixel_sdk/sample_code/labview_bulk_read_write_protocol_2_0/
 sidebar:
   title: DynamixelSDK
   nav: "dynamixel_sdk"

@@ -5,7 +5,7 @@ ref: dynamixel_sdk_api_reference_c_porthandler
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/software/sdk/dynamixel_sdk/api_reference/c/c_porthandler
+permalink: /docs/en/software/sdk/dynamixel_sdk/api_reference/c/c_porthandler/
 sidebar:
   title: DynamixelSDK
   nav: "dynamixel_sdk"

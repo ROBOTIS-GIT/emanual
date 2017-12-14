@@ -5,7 +5,7 @@ ref: dynamixel_sdk_library_setup_cpp_linux
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/software/sdk/dynamixel_sdk/library_setup/cpp_linux
+permalink: /docs/en/software/sdk/dynamixel_sdk/library_setup/cpp_linux/
 sidebar:
   title: DynamixelSDK
   nav: "dynamixel_sdk"

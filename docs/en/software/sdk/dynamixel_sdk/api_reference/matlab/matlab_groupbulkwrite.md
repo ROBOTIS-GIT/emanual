@@ -5,7 +5,7 @@ ref: dynamixel_sdk_api_reference_matlab_groupbulkwrite
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/software/sdk/dynamixel_sdk/api_reference/matlab/matlab_groupbulkwrite
+permalink: /docs/en/software/sdk/dynamixel_sdk/api_reference/matlab/matlab_groupbulkwrite/
 sidebar:
   title: DynamixelSDK
   nav: "dynamixel_sdk"

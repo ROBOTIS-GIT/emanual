@@ -5,7 +5,7 @@ ref: dynamixel_sdk_api_reference_python_porthandler
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/software/sdk/dynamixel_sdk/api_reference/python/python_porthandler
+permalink: /docs/en/software/sdk/dynamixel_sdk/api_reference/python/python_porthandler/
 sidebar:
   title: DynamixelSDK
   nav: "dynamixel_sdk"

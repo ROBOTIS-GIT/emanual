@@ -5,7 +5,7 @@ ref: dynamixel_sdk_api_reference_cpp_groupsyncread
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/software/sdk/dynamixel_sdk/api_reference/cpp/cpp_groupsyncread
+permalink: /docs/en/software/sdk/dynamixel_sdk/api_reference/cpp/cpp_groupsyncread/
 sidebar:
   title: DynamixelSDK
   nav: "dynamixel_sdk"

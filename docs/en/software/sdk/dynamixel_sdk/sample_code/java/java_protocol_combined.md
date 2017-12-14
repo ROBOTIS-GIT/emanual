@@ -5,7 +5,7 @@ ref: dynamixel_sdk_sample_code_java_protocol_combined
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/software/sdk/dynamixel_sdk/sample_code/java_protocol_combined
+permalink: /docs/en/software/sdk/dynamixel_sdk/sample_code/java_protocol_combined/
 sidebar:
   title: DynamixelSDK
   nav: "dynamixel_sdk"
