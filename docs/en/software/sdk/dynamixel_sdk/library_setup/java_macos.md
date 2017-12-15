@@ -128,7 +128,7 @@ Each released Dynamixel SDK have latest library files in `[DynamixelSDK folder]/
 ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/java/mac/sample_code/13.png)
 
 
-#### 2.4 JNA 를 import 하기
+#### 2.4 Import JNA
 
 * Go to Libraries on the screen. 
 
