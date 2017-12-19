@@ -113,4 +113,4 @@ The connection status must be changed to select the channel on the Zig2Serial.
 
 [RoboPlus Manager]: /docs/en/software/rplus1/manager/
 [USB2Dynamixel]: /docs/en/parts/interface/usb2dynamixel/
-[Zigbee SDK]: /docs/en/software/sdk/zigbee_sdk/
+[Zigbee SDK]: /docs/en/software/embedded_sdk/zigbee_sdk/

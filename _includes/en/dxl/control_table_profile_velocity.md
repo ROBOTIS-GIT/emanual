@@ -24,7 +24,7 @@ When given Goal Position(116), Dynamixel's profile creates target velocity traje
 | V<sub>PRFL</sub>(112) = 0 | Profile not used<br />(Step Instruction) |
 | (V<sub>PRFL</sub>(112) ≠ 0) & (A<sub>PRF</sub>(108) = 0) | Rectangular Profile |
 | (V<sub>PRFL</sub>(112) ≠ 0) & (A<sub>PRF</sub>(108) ≠ 0) & (V<sub>PRFL_TRI</sub> ≤ V<sub>PRFL</sub>(112)) | Triangular Profile |
-| (V<sub>PRFL</sub>(112) ≠ 0) & (A<sub>PRF</sub>(108) ≠ 0) & (V<sub>PRFL_TRI</sub> ＞ V<sub>PRFL</sub>(112))	| Trapezoidal Profile |
+| (V<sub>PRFL</sub>(112) ≠ 0) & (A<sub>PRF</sub>(108) ≠ 0) & (V<sub>PRFL_TRI</sub> ＞ V<sub>PRFL</sub>(112)) | Trapezoidal Profile |
 
 ![](/assets/images/dxl/dxl_velocity_profiles.jpg)
 
