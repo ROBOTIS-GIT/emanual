@@ -181,7 +181,7 @@ main:
       titlejp: "TurtleBot3"
       titlecn: "TurtleBot3"
       url: /platform/turtlebot3/overview/
-  - title: "EDUCATION"
+  - title: "STEM"
     titlekr: "교육키트"
     titlejp: "トレーニングキット"
     titlecn: "培训工具包"
@@ -295,6 +295,10 @@ main:
     titlejp: "ソフトウェア"
     titlecn: "软件"
     children:
+    - title: "Dynamixel"
+      titlekr: "다이나믹셀"
+      children:
+      - title: "Dynamixel SDK"
     - title: "Mobile Apps"
       titlekr: "모바일 앱"
       children:
