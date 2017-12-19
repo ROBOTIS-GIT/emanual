@@ -1,0 +1,7 @@
+#main {
+  margin: 0;
+  
+  @include breakpoint(1280px) {
+    max-width: 1280px;
+  }
+}

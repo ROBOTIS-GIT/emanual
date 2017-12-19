@@ -1,16 +1,8 @@
 <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
-      <nav id="site-nav" class="greedy-nav">
         <a class="site-title" href="{{ '/' | absolute_url }}"><img src="/assets/images/robotis_logo.gif" style="padding-right:10px;">e-Manual</a>
-        {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
-        {% comment %}
-        {% for page in pages %}
-          <a href="{{ page.url | absolute_url }}" class="{{page.lang}}" style="color: #134268;padding-right:10px;">[{{page.lang}}]</a>
-        {% endfor %}
-        {% endcomment %}
-
-        <form method="get" id="site_search" style="margin:0 0 0 0; position:absolute; right:0; width:30%;">
+        <form class="searchbox" method="get" id="site_search">
           <script>
             (function() {
               var cx = '003548387656725317882:3pwl9jljqvi';
@@ -23,11 +15,7 @@
             })();
           </script>
           <gcse:search></gcse:search>
-          {% comment %}
-          <input type="text" id="search_box" name="query" placeholder="Search" style="padding:0 10px; margin-bottom:0;">
-          {% endcomment %}
         </form>
-      </nav>
     </div>
 
     <div class="container">
