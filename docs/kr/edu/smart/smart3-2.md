@@ -15,55 +15,6 @@ categories:
 tags:
   - R+ SmartIII
   - R+ m.Task 2.0
-gallery:
-  - url: /assets/images/edu/smart/smart3-2_dribble_bot.png
-    image_path: /assets/images/edu/smart/smart3-2_dribble_bot.png
-    alt: "드리블 로봇"
-    title: "드리블 로봇"
-  - url: /assets/images/edu/smart/smart3-2_electric_bow.png
-    image_path: /assets/images/edu/smart/smart3-2_electric_bow.png
-    alt: "전자 활"
-    title: "전자 활"
-  - url: /assets/images/edu/smart/smart3-2_roulette_dart.png
-    image_path: /assets/images/edu/smart/smart3-2_roulette_dart.png
-    alt: "룰렛 로봇"
-    title: "룰렛 로봇"
-  - url: /assets/images/edu/smart/smart3-2_fox_game.png
-    image_path: /assets/images/edu/smart/smart3-2_fox_game.png
-    alt: "여우 게임"
-    title: "여우 게임"
-  - url: /assets/images/edu/smart/smart3-2_alarm_clock.png
-    image_path: /assets/images/edu/smart/smart3-2_alarm_clock.png
-    alt: "알람 로봇"
-    title: "알람 로봇"
-  - url: /assets/images/edu/smart/smart3-2_gladiator.png
-    image_path: /assets/images/edu/smart/smart3-2_gladiator.png
-    alt: "검투사"
-    title: "검투사"
-  - url: /assets/images/edu/smart/smart3-2_tank.png
-    image_path: /assets/images/edu/smart/smart3-2_tank.png
-    alt: "대포 로봇"
-    title: "대포 로봇"
-  - url: /assets/images/edu/smart/smart3-2_talking_witch.png
-    image_path: /assets/images/edu/smart/smart3-2_talking_witch.png
-    alt: "마녀 로봇"
-    title: "마녀 로봇"
-  - url: /assets/images/edu/smart/smart3-2_racing_car.png
-    image_path: /assets/images/edu/smart/smart3-2_racing_car.png
-    alt: "스마트 레이싱 카"
-    title: "스마트 레이싱 카"
-  - url: /assets/images/edu/smart/smart3-2_pirate_roulette.png
-    image_path: /assets/images/edu/smart/smart3-2_pirate_roulette.png
-    alt: "해적 게임"
-    title: "해적 게임"
-  - url: /assets/images/edu/smart/smart3-2_trans_bike.png
-    image_path: /assets/images/edu/smart/smart3-2_trans_bike.png
-    alt: "스마트 오토바이"
-    title: "스마트 오토바이"
-  - url: /assets/images/edu/smart/smart3-2_robot_hand.png
-    image_path: /assets/images/edu/smart/smart3-2_robot_hand.png
-    alt: "가위바위보 로봇"
-    title: "가위바위보 로봇"
 ---
 
 # [부품 목록](#부품-목록)
@@ -96,8 +47,6 @@ gallery:
 
 ## [모션파일 다운로드](#모션파일-다운로드)
 
-{% include software/motion_file_download.md %}
-
 ## [블루투스 연결하기](#블루투스-연결하기)
 
 # [교안예제](#교안예제)
@@ -106,5 +55,5 @@ gallery:
 {: .notice}
 
 
-[R+ SmartIII]: #
-[R+ m.Task 2.0]: #
+[R+ SmartIII]: ???
+[R+ m.Task 2.0]: ???
