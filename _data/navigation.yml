@@ -398,23 +398,23 @@ main:
         url: /software/rplus_mobile/mdesign/
     - title: "EMBEDDED SDK"
       titlekr: "EMBEDDED SDK"
-      url: /software/sdk/
+      url: /software/embedded_sdk/
       children:
       - title: "Embedded C(CM-510/700)"
         titlekr: "제어기 펌웨어 개발(CM-510/700)"
         titlejp: "Embedded C(CM-510/700)"
         titlecn: "Embedded C(CM-510/700)"
-        url: /software/sdk/embedded_c_cm510/
+        url: /software/embedded_sdk/embedded_c_cm510/
       - title: "Embedded C(CM-530)"
         titlekr: "제어기 펌웨어 개발(CM-530)"
         titlejp: "Embedded C(CM-530)"
         titlecn: "Embedded C(CM-530)"
-        url: /software/sdk/embedded_c_cm530/
+        url: /software/embedded_sdk/embedded_c_cm530/
       - title: "ZIGBEE SDK"
         titlekr: "지그비 SDK"
         titlejp: "ZIGBEE SDK"
         titlecn: "ZIGBEE SDK"
-        url: /software/sdk/zigbee_sdk/
+        url: /software/embedded_sdk/zigbee_sdk/
     - title: "OpenCM IDE"
       titlekr: "OpenCM IDE"
       url: /software/opencm_ide/getting_started/
@@ -7276,158 +7276,158 @@ dynamixel_sdk:
 #ZIGBEE SDK sidebar
 sigbee_sdk:
   - title: "Introduction"
-    url: /software/sdk/zigbee_sdk/#introduction
+    url: /software/embedded_sdk/zigbee_sdk/#introduction
   - title: "API Reference"
-    url: /software/sdk/zigbee_sdk/#api-reference
+    url: /software/embedded_sdk/zigbee_sdk/#api-reference
     children:
     - title: "Device Control Method"
-      url: /software/sdk/zigbee_sdk/#device-control-method
+      url: /software/embedded_sdk/zigbee_sdk/#device-control-method
       children:
       - title: "zgb_initialize"
-        url: /software/sdk/zigbee_sdk/#zgb-initialize
+        url: /software/embedded_sdk/zigbee_sdk/#zgb-initialize
       - title: "zgb_terminate"
-        url: /software/sdk/zigbee_sdk/#zgb-terminate
+        url: /software/embedded_sdk/zigbee_sdk/#zgb-terminate
     - title: "Communication Method"
-      url: /software/sdk/zigbee_sdk/#communication-method
+      url: /software/embedded_sdk/zigbee_sdk/#communication-method
       children:
       - title: "zgb_tx_data"
-        url: /software/sdk/zigbee_sdk/#zgb-tx-data
+        url: /software/embedded_sdk/zigbee_sdk/#zgb-tx-data
       - title: "zgb_rx_check"
-        url: /software/sdk/zigbee_sdk/#zgb-rx-check
+        url: /software/embedded_sdk/zigbee_sdk/#zgb-rx-check
       - title: "zgb_rx_data"
-        url: /software/sdk/zigbee_sdk/#zgb-rx-data
+        url: /software/embedded_sdk/zigbee_sdk/#zgb-rx-data
   - title: "Platform Porting"
-    url: /software/sdk/zigbee_sdk/#platform-porting
+    url: /software/embedded_sdk/zigbee_sdk/#platform-porting
     children:
     - title: "zgb_hal_open"
-      url: /software/sdk/zigbee_sdk/#zgb-hal-open
+      url: /software/embedded_sdk/zigbee_sdk/#zgb-hal-open
     - title: "zgb_hal_close"
-      url: /software/sdk/zigbee_sdk/#zgb-hal-close
+      url: /software/embedded_sdk/zigbee_sdk/#zgb-hal-close
     - title: "zgb_hal_tx"
-      url: /software/sdk/zigbee_sdk/#zgb-hal-tx
+      url: /software/embedded_sdk/zigbee_sdk/#zgb-hal-tx
     - title: "zgb_hal_rx"
-      url: /software/sdk/zigbee_sdk/#zgb-hal-rx
+      url: /software/embedded_sdk/zigbee_sdk/#zgb-hal-rx
   - title: "ZIG2Serial"
-    url: /software/sdk/zigbee_sdk/#zig2serial
+    url: /software/embedded_sdk/zigbee_sdk/#zig2serial
     children:
     - title: "Visual C++"
-      url: /software/sdk/zigbee_sdk/#visual-c
+      url: /software/embedded_sdk/zigbee_sdk/#visual-c
     - title: "Visual Basic"
-      url: /software/sdk/zigbee_sdk/#visual-basic
+      url: /software/embedded_sdk/zigbee_sdk/#visual-basic
     - title: "Visual C#"
-      url: /software/sdk/zigbee_sdk/#visual-c#
+      url: /software/embedded_sdk/zigbee_sdk/#visual-c#
     - title: "gcc"
-      url: /software/sdk/zigbee_sdk/#gcc
+      url: /software/embedded_sdk/zigbee_sdk/#gcc
   - title: "CM-510/700"
-    url: /software/sdk/zigbee_sdk/#cm-510700
+    url: /software/embedded_sdk/zigbee_sdk/#cm-510700
 
 #Embedded C CM510/700 sidebar
 embedded_c_cm510:
   - title: "Introduction"
-    url: /software/sdk/embedded_c_cm510/#introduction
+    url: /software/embedded_sdk/embedded_c_cm510/#introduction
   - title: "CM-510/700"
-    url: /software/sdk/embedded_c_cm510/#cm-510700
+    url: /software/embedded_sdk/embedded_c_cm510/#cm-510700
     children:
     - title: "Getting Started"
-      url: /software/sdk/embedded_c_cm510/#getting-started
+      url: /software/embedded_sdk/embedded_c_cm510/#getting-started
       children:
       - title: "Install WinAVR"
-        url: /software/sdk/embedded_c_cm510/#install-winavr
+        url: /software/embedded_sdk/embedded_c_cm510/#install-winavr
       - title: "Install Atmel Studio"
-        url: /software/sdk/embedded_c_cm510/#install-atmel-studio
+        url: /software/embedded_sdk/embedded_c_cm510/#install-atmel-studio
       - title: "Environment Setting"
-        url: /software/sdk/embedded_c_cm510/#environment-setting
+        url: /software/embedded_sdk/embedded_c_cm510/#environment-setting
       - title: "Restore RoboPlus"
-        url: /software/sdk/embedded_c_cm510/#restore-roboplus
+        url: /software/embedded_sdk/embedded_c_cm510/#restore-roboplus
     - title: "Programming"
-      url: /software/sdk/embedded_c_cm510/#programming
+      url: /software/embedded_sdk/embedded_c_cm510/#programming
       children:
       - title: "Hardware Port Map"
-        url: /software/sdk/embedded_c_cm510/#hardware-port-map
+        url: /software/embedded_sdk/embedded_c_cm510/#hardware-port-map
       - title: "Basic Programming"
-        url: /software/sdk/embedded_c_cm510/#basic-programming
+        url: /software/embedded_sdk/embedded_c_cm510/#basic-programming
       - title: "Boot Loader"
-        url: /software/sdk/embedded_c_cm510/#boot-loader
+        url: /software/embedded_sdk/embedded_c_cm510/#boot-loader
     - title: "Examples"
-      url: /software/sdk/embedded_c_cm510/#examples
+      url: /software/embedded_sdk/embedded_c_cm510/#examples
       children:
       - title: "LED Control"
-        url: /software/sdk/embedded_c_cm510/#led-control
+        url: /software/embedded_sdk/embedded_c_cm510/#led-control
       - title: "Button"
-        url: /software/sdk/embedded_c_cm510/#button
+        url: /software/embedded_sdk/embedded_c_cm510/#button
       - title: "Serial Communication"
-        url: /software/sdk/embedded_c_cm510/#serial-communication
+        url: /software/embedded_sdk/embedded_c_cm510/#serial-communication
       - title: "Buzzer"
-        url: /software/sdk/embedded_c_cm510/#buzzer
+        url: /software/embedded_sdk/embedded_c_cm510/#buzzer
       - title: "MIC"
-        url: /software/sdk/embedded_c_cm510/#mic
+        url: /software/embedded_sdk/embedded_c_cm510/#mic
       - title: "IR Sensor"
-        url: /software/sdk/embedded_c_cm510/#ir-sensor
+        url: /software/embedded_sdk/embedded_c_cm510/#ir-sensor
       - title: "Read/Write Dynamixel"
-        url: /software/sdk/embedded_c_cm510/#readwrite-dynamixel
+        url: /software/embedded_sdk/embedded_c_cm510/#readwrite-dynamixel
       - title: "Dynamixel Sync Control"
-        url: /software/sdk/embedded_c_cm510/#dynamixel-sync-control
+        url: /software/embedded_sdk/embedded_c_cm510/#dynamixel-sync-control
       - title: "RC-100/ZIGBEE"
-        url: /software/sdk/embedded_c_cm510/#rc-100zigbee
+        url: /software/embedded_sdk/embedded_c_cm510/#rc-100zigbee
 
 #Embedded C CM530 sidebar
 embedded_c_cm530:
   - title: "Introduction"
-    url: /software/sdk/embedded_c_cm530/#introduction
+    url: /software/embedded_sdk/embedded_c_cm530/#introduction
   - title: "CM-530"
-    url: /software/sdk/embedded_c_cm530/#cm-530
+    url: /software/embedded_sdk/embedded_c_cm530/#cm-530
     children:
     - title: "Getting Started"
-      url: /software/sdk/embedded_c_cm530/#getting-started
+      url: /software/embedded_sdk/embedded_c_cm530/#getting-started
       children:
       - title: "Install JRE"
-        url: /software/sdk/embedded_c_cm530/#install-jre
+        url: /software/embedded_sdk/embedded_c_cm530/#install-jre
       - title: "Install WinARM"
-        url: /software/sdk/embedded_c_cm530/#install-winarm
+        url: /software/embedded_sdk/embedded_c_cm530/#install-winarm
       - title: "Install Eclipse"
-        url: /software/sdk/embedded_c_cm530/#install-atmel-studio
+        url: /software/embedded_sdk/embedded_c_cm530/#install-atmel-studio
       - title: "Verify Installation"
-        url: /software/sdk/embedded_c_cm530/#verify-installation
+        url: /software/embedded_sdk/embedded_c_cm530/#verify-installation
       - title: "Restore RoboPlus"
-        url: /software/sdk/embedded_c_cm530/#restore-roboplus
+        url: /software/embedded_sdk/embedded_c_cm530/#restore-roboplus
     - title: "Programming"
-      url: /software/sdk/embedded_c_cm530/#programming
+      url: /software/embedded_sdk/embedded_c_cm530/#programming
       children:
       - title: "Hardware Port Map"
-        url: /software/sdk/embedded_c_cm530/#hardware-port-map
+        url: /software/embedded_sdk/embedded_c_cm530/#hardware-port-map
       - title: "Open Project"
-        url: /software/sdk/embedded_c_cm530/#open-project
+        url: /software/embedded_sdk/embedded_c_cm530/#open-project
       - title: "Download bin File"
-        url: /software/sdk/embedded_c_cm530/#download-bin-file
+        url: /software/embedded_sdk/embedded_c_cm530/#download-bin-file
       - title: "Boot Loader"
-        url: /software/sdk/embedded_c_cm530/#boot-loader
+        url: /software/embedded_sdk/embedded_c_cm530/#boot-loader
       - title: "Additional Description"
-        url: /software/sdk/embedded_c_cm530/#additional-description
+        url: /software/embedded_sdk/embedded_c_cm530/#additional-description
     - title: "Examples"
-      url: /software/sdk/embedded_c_cm530/#examples
+      url: /software/embedded_sdk/embedded_c_cm530/#examples
       children:
       - title: "LED Control"
-        url: /software/sdk/embedded_c_cm530/#led-control
+        url: /software/embedded_sdk/embedded_c_cm530/#led-control
       - title: "Button"
-        url: /software/sdk/embedded_c_cm530/#button
+        url: /software/embedded_sdk/embedded_c_cm530/#button
       - title: "Serial Communication"
-        url: /software/sdk/embedded_c_cm530/#serial-communication
+        url: /software/embedded_sdk/embedded_c_cm530/#serial-communication
       - title: "Buzzer"
-        url: /software/sdk/embedded_c_cm530/#buzzer
+        url: /software/embedded_sdk/embedded_c_cm530/#buzzer
       - title: "MIC"
-        url: /software/sdk/embedded_c_cm530/#mic
+        url: /software/embedded_sdk/embedded_c_cm530/#mic
       - title: "OLLO Servo CW/CCW"
-        url: /software/sdk/embedded_c_cm530/#ollo-servo-cwccw
+        url: /software/embedded_sdk/embedded_c_cm530/#ollo-servo-cwccw
       - title: "OLLO Servo Position"
-        url: /software/sdk/embedded_c_cm530/#ollo-servo-position
+        url: /software/embedded_sdk/embedded_c_cm530/#ollo-servo-position
       - title: "IR Sensor"
-        url: /software/sdk/embedded_c_cm530/#ir-sensor
+        url: /software/embedded_sdk/embedded_c_cm530/#ir-sensor
       - title: "Read/Write Dynamixel"
-        url: /software/sdk/embedded_c_cm530/#readwrite-dynamixel
+        url: /software/embedded_sdk/embedded_c_cm530/#readwrite-dynamixel
       - title: "Dynamixel Sync Control"
-        url: /software/sdk/embedded_c_cm530/#dynamixel-sync-control
+        url: /software/embedded_sdk/embedded_c_cm530/#dynamixel-sync-control
       - title: "RC-100/ZIGBEE"
-        url: /software/sdk/embedded_c_cm530/#rc-100zigbee
+        url: /software/embedded_sdk/embedded_c_cm530/#rc-100zigbee
 
 #CM-100A Controller sidebar
 cm-100:
