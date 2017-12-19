@@ -5951,6 +5951,14 @@ openmanipulator:
       url: /platform/openmanipulator/openmanipulator/#link-hardware-setup
     - title: "Software Setup"
       url: /platform/openmanipulator/openmanipulator/#link-software-setup
+  - title: "OpenManipulator Planar"
+    url: /platform/openmanipulator/openmanipulator/#openmanipulator-planar
+  - title: "OpenManipulator Delta"
+    url: /platform/openmanipulator/openmanipulator/#openmanipulator-delta
+  - title: "OpenManipulator Stewart"
+    url: /platform/openmanipulator/openmanipulator/#openmanipulator-stewart
+  - title: "OpenManipulator Linear"
+    url: /platform/openmanipulator/openmanipulator/#openmanipulator-linear
 
 #Manipulator-H
 manipulator_h:

@@ -166,14 +166,114 @@ OpenManipulator is composed by [Dynamixel X series](http://en.robotis.com/index/
 
 ### OpenCR
 
+![](/assets/images/platform/openmanipulator/OpenManipulator_chain_processing.png)
+
 [OpenCR WIKI](https://github.com/ROBOTIS-GIT/OpenCR/wiki/arduino_examples_openmanipulator_chain)
 
-### Image of OpenManipulator Chain
+## Image of OpenManipulator Chain
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_OnShape.jpg)
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_Capture.jpg)
 
-# [SCARA](#scara)
+# [OpenManipulator SCARA](#openmanipulator-scara)
 
-# [Link](#link)
+## [Specification](#scara-spec)
+
+|                     |  Unit     | Chain with XM430-W350                     |
+| -----------------   | --------- | ----------------------------------------- |
+| **Input Voltage**   |  V        |  12                                       |
+| **DOF**             |  -        |  4 (3 DOF + 1 End-Effector)               |
+| **Speed(Joint)**    |  rad/sec  |  4.82                                     |
+| **Weight**          |  kg(lb)   |  0.52 (1.14)                              |
+| **Reach**           |  mm (in)  |  234 (9.21)                               |
+| **Rated Voltage**   |  VDC      |  12                                       |
+| **Communication**   |  -        |  RS-485 (Multi Drop Bus)                  |
+| **Power(Joint)**    |  W        |  27.6                                     |
+| **Software**        |  -        |  ROS, Dynamixel SDK, Arduino, Processing  |
+| **Main Controller** |  -        |  Laptop PC, OpenCR                        |
+
+
+![](/assets/images/platform/openmanipulator/OpenManipulator_SCARA_spec_side.png)
+
+## [Hardware Setup](#scara-hardware-setup)
+
+[Parts of OpenManipulator](https://docs.google.com/a/robotis.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit?usp=sharing)
+
+[CAD Files](https://goo.gl/oVsK8m)
+
+* Items that are painted in purple are purchased on ROBOTIS SHOP
+* Items that are painted in green are purchased on shopping mall
+* Items that are painted in yellow are 3D printing parts
+
+## [Software Setup](#scara-software-setup)
+
+### OpenCR
+
+[OpenCR WIKI](https://github.com/ROBOTIS-GIT/OpenCR/wiki/arduino_examples_openmanipulator_SCARA)
+
+## Image of OpenManipulator SCARA
+
+![](/assets/images/platform/openmanipulator/OpenManipulator_SCARA_OnShape.png)
+
+![](/assets/images/platform/openmanipulator/OpenManipulator_SCARA_Capture.png)
+
+# [OpenManipulator Link](#openmanipulator-link)
+
+## [Specification](#link-spec)
+
+|                          |  Unit     | Chain with XM430-W350                     |
+| -----------------        | --------- | ----------------------------------------- |
+| **Input Voltage**        |  V        |  12                                       |
+| **DOF**                  |  -        |  3                                        |
+| **Payload With Suction** |  g (lb)   |  400 ~ 450 (0.88 ~ 0.99)                  |
+| **Speed(Joint)**         |  rad/sec  |  4.82                                     |
+| **Weight**               |  kg(lb)   |  0.53 (1.16)                              |
+| **Reach**                |  mm (in)  |  330 (12.99)                              |
+| **Rated Voltage**        |  VDC      |  12                                       |
+| **Communication**        |  -        |  RS-485 (Multi Drop Bus)                  |
+| **Power(Joint)**         |  W        |  27.6                                     |
+| **Software**             |  -        |  ROS, Dynamixel SDK, Arduino, Processing  |
+| **Main Controller**      |  -        |  Laptop PC, OpenCR                        |
+
+![](/assets/images/platform/openmanipulator/OpenManipulator_Link_spec_side.png)
+
+![](/assets/images/platform/openmanipulator/OpenManipulator_Link_spec_up.png)
+
+## [Hardware Setup](#link-hardware-setup)
+
+[Parts of OpenManipulator](https://docs.google.com/a/robotis.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit?usp=sharing)
+
+[CAD Files](https://goo.gl/MJ6C8K)
+
+* Items that are painted in purple are purchased on ROBOTIS SHOP
+* Items that are painted in green are purchased on shopping mall
+* Items that are painted in yellow are 3D printing parts
+
+## [Software Setup](#link-software-setup)
+
+### OpenCR
+
+[OpenCR WIKI](https://github.com/ROBOTIS-GIT/OpenCR/wiki/arduino_examples_openmanipulator_Link)
+
+## Image of OpenManipulator Link
+
+![](/assets/images/platform/openmanipulator/OpenManipulator_Link_OnShape.png)
+
+![](/assets/images/platform/openmanipulator/OpenManipulator_Link_Capture.png)
+
+# [OpenManipulator Planar](#openmanipulator-planar)
+
+**Be released in 2018**
+
+# [OpenManipulator Delta](#openmanipulator-delta)
+
+**Be released in 2018**
+
+# [OpenManipulator Stewart](#openmanipulator-stewart)
+
+**Be released in 2018**
+
+# [OpenManipulator Linear](#openmanipulator-linear)
+
+**Be released in 2018**
