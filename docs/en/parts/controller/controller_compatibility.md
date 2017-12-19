@@ -36,7 +36,7 @@ permalink: /docs/en/parts/controller/controller_compatibility/
 |MX-Series(RS485)|X|X|X|X|X|X|O|O|X(O)|
 |XM-Series|X|X|X|X|X|X|X|X|X(O)|
 |XH-Series|X|X|X|X|X|X|X|X|X(O)|
-|XL-320|X|X|X|X|X|X|X|O|X(O)|
+|XL-320|X|X|X|X|X|X|X|O|O(X)|
 
 ## Parts
 

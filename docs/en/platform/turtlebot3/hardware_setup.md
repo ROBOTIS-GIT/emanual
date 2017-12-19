@@ -156,8 +156,9 @@ Core components of Turtlebot3 are the followings: Chassis, Motors, Wheels, OpenC
 
 The CAD data is released to the [Onshape], which is a full-cloud 3D CAD editor. Get access through a web browser from your PC or from portable devices. OnShape allows drawing and assemblying parts with co-workers.
 
-- TurtleBot3 Burger 3D Model: https://goo.gl/n3bGNr
-- TurtleBot3 Waffle 3D Model: https://goo.gl/wCDvVI
+- TurtleBot3 Burger 3D Model: http://www.robotis.com/service/download.php?no=676
+- TurtleBot3 Waffle 3D Model: http://www.robotis.com/service/download.php?no=677
+- TurtleBot3 Waffle Pi 3D Model: http://www.robotis.com/service/download.php?no=678
 
 
 [Onshape]: https://cad.onshape.com/documents?filter=recently-opened&column=modifiedAt&order=desc&viewMode=0&q=turtlebot3

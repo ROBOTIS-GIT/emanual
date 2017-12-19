@@ -32,7 +32,7 @@ sidebar:
   sudo apt-get install gnome-disk-utility
 ```
 
-<iframe width="640" height="360315" src="https://www.youtube.com/embed/V_6GNyL6Dac" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="480" src="https://www.youtube.com/embed/V_6GNyL6Dac" frameborder="0" allowfullscreen></iframe>
 
 **Tip :** It is recommended using `GNOME Disks`, but other applications such as `ddrescue` on Linux can be used.
 {: .notice--info}
