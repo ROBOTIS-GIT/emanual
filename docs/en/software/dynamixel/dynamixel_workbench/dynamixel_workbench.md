@@ -41,7 +41,7 @@ The **Dynamixel Workbench** metapackage contains four packages: **Single Manager
   $ sudo apt-get install ros-kinetic-qt-build
   ```
 
-# [Supported Dynamixels](#supported-dynamixel)
+# [Supported Dynamixels](#supported-dynamixels)
 
 | Dynamixel Series |                |                |                |               |               |
 | ---------------- | -------------- | -------------- | -------------- | ------------- | ------------- |
@@ -308,7 +308,7 @@ The **Dynamixel Workbench** metapackage contains four packages: **Single Manager
     **Note :** IF YOU ALREADY CREATE **my_dynamixel_workbench_tutorial** PACKAGE, THEN YOU JUMP TO STEP 2.
     {: .notice--info}
 
-### [Command line](#single-manager-tutorial)
+### [Command line](#command-line)
 
         1. Create a package
 
@@ -482,7 +482,7 @@ The **Dynamixel Workbench** metapackage contains four packages: **Single Manager
 
             The Dynamixel is running!! If you have a question about running single_manager, please make a [new issue](https://github.com/ROBOTIS-GIT/dynamixel-workbench/issues).
 
-### [GUI](#single-manager-gui-tutorial)
+### [GUI](#gui)
 
         **Note :** IF YOU ALREADY CREATE **my_dynamixel_workbench_tutorial** PACKAGE, THEN YOU JUMP TO STEP 2.
         {: .notice--info}
@@ -591,7 +591,7 @@ The **Dynamixel Workbench** metapackage contains four packages: **Single Manager
 
 ## Controllers
 
-### [Position controller](#position-tutorial)
+### [Position controller](#position-controller)
 
         **Note :** IF YOU ALREADY CREATE **my_dynamixel_workbench_tutorial** PACKAGE, THEN YOU JUMP TO STEP 2.
         {: .notice--info}
@@ -906,7 +906,7 @@ The **Dynamixel Workbench** metapackage contains four packages: **Single Manager
 
             If you have a question about running ***velocity_control***, please make a [new issue](https://github.com/ROBOTIS-GIT/dynamixel-workbench/issues).
 
-### [Torque controller](#torque-tutorial)
+### [Torque controller](#torque-controller)
 
         **Note :** IF YOU ALREADY CREATE **my_dynamixel_workbench_tutorial** PACKAGE, THEN YOU JUMP TO STEP 2.
         {: .notice--info}
@@ -1066,7 +1066,7 @@ The **Dynamixel Workbench** metapackage contains four packages: **Single Manager
 
             The pan & tilt is running!! If you have a question about running ***torque_control***, please make a [new issue](https://github.com/ROBOTIS-GIT/dynamixel-workbench/issues).
 
-### [Multi port controller](#multi-port-tutorial)
+### [Multi port controller](#multi-port-controller)
 
         **Note :** IF YOU ALREADY CREATE **my_dynamixel_workbench_tutorial** PACKAGE, THEN YOU JUMP TO STEP 2.
         {: .notice--info}
