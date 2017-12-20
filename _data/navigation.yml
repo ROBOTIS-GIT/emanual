@@ -304,8 +304,8 @@ main:
       - title: "DYNAMIXEL SDK"
         titlekr: "다이나믹셀 SDK"
         url: /software/dynamixel/dynamixel_sdk/overview/
-      # - title: "Dynamixel-workbench"
-      #   url: /software/dynamixel/???
+      - title: "Dynamixel-Workbench"
+        url: /software/dynamixeldynamixel_workbench/dynamixel_workbench/
     - title: "Mobile Apps"
       titlekr: "모바일 앱"
       children:
@@ -5917,7 +5917,7 @@ turtlebot3:
       url: /platform/turtlebot3/contact_us/#about-ost-open-source-team
 
 #OpenManipulator
-openmanipulator:
+open_manipulator:
   - title: "Introduction"
     url: /platform/openmanipulator/openmanipulator/#introduction
   - title: "OpenManipulator Chain"
@@ -5947,6 +5947,14 @@ openmanipulator:
       url: /platform/openmanipulator/openmanipulator/#link-hardware-setup
     - title: "Software Setup"
       url: /platform/openmanipulator/openmanipulator/#link-software-setup
+  - title: "OpenManipulator Planar"
+    url: /platform/openmanipulator/openmanipulator/#openmanipulator-planar
+  - title: "OpenManipulator Delta"
+    url: /platform/openmanipulator/openmanipulator/#openmanipulator-delta
+  - title: "OpenManipulator Stewart"
+    url: /platform/openmanipulator/openmanipulator/#openmanipulator-stewart
+  - title: "OpenManipulator Linear"
+    url: /platform/openmanipulator/openmanipulator/#openmanipulator-linear
 
 #Manipulator-H
 manipulator_h:
@@ -7272,6 +7280,41 @@ dynamixel_sdk:
     url: /software/dynamixel/dynamixel_sdk/quick_start_video/#quick-start-video
   - title: "Frequently Asked Questions(FAQ)"
     url: /software/dynamixel/dynamixel_sdk/frequently_asked_questionsfaq/#frequently-asked-questionsfaq
+
+#Dynamixel-Workbench sidebar
+dynamixel_workbench:
+  - title: "Introduction"
+    url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#introduction
+  - title: "Installation"
+    url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#installation
+  - title: "Supported Dynamixels"
+    url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#supported-dynamixel
+  - title: "Package Description"
+    url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#package-description
+    children:
+    - title: "Single Manager"
+      url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#single-manager
+    - title: "Controllers"
+      url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#controllers
+    - title: "Operators"
+      url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#operators
+    - title: "Toolbox"
+      url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#toolbox
+  - title: "Tutorials"
+    url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#tutorials
+    children:
+    - title: "Command line"
+      url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#single-manager-tutorial
+    - title: "GUI"
+      url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#single-manager-gui-tutorial
+    - title: "Position controller"
+      url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#position-tutorial
+    - title: "Velocity controller"
+      url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#velocity-tutorial
+    - title: "Torque controller"
+      url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#torque-tutorial
+    - title: "Multi port controller"
+      url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#multi-port-tutorial
 
 #ZIGBEE SDK sidebar
 sigbee_sdk:
