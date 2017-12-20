@@ -8,7 +8,7 @@ author_profile: false
 permalink: /docs/en/software/dynamixel/dynamixel_workbench/dynamixel_workbench/
 sidebar:
   title: Dynamixel-Workbench
-  nav: "dynamixelworkbench"
+  nav: "dynamixel_workbench"
 ---
 
 # [Introduction](#introduction)
@@ -58,7 +58,7 @@ The **Dynamixel Workbench** metapackage contains four packages: **Single Manager
 
 # [Package Description](#package-description)
 
-## Single Manager Packages
+## [Single Manager](#single-manager)
 
 * dynamixel_workbench_single_manager - Check Dynamixel status and access Dynamixel's Control Table addresses via **command line**.
  
@@ -93,7 +93,7 @@ The **Dynamixel Workbench** metapackage contains four packages: **Single Manager
             * /dynamixel/info - Get information about connected Dynamixel
             * /dynamixel/command - Send command to control Dynamixel          
 
-## Controllers Packages 
+## [Controllers](#controllers) 
 
  * dynamixel_workbench_controllers - Contains 3 different controllers(Position, Velocity, Torque) and Multi port example that demonstrate how to control the Dynamixels
 
@@ -134,7 +134,7 @@ The **Dynamixel Workbench** metapackage contains four packages: **Single Manager
         1. Services
             * /joint_command - Command to change the angle  
 
-## Operators Packages 
+## [Operators](#operators)
 
  * dynamixel_workbench_operators - Contains **Joint Operator** and **Wheel Operator**. Operators make commands for ***Controllers***.
 
@@ -152,7 +152,7 @@ The **Dynamixel Workbench** metapackage contains four packages: **Single Manager
         1. Services
             * /wheel_command - Command to change the velocity  
 
-## Toolbox Packages 
+## [Toolbox](#toolbox) 
 
  * dynamixel_workbench_toolbox - This package is composed of ***dynamixel_tool***, ***dynamixel_driver*** and ***dynamixel_multi_driver*** class. The ***dynamixel_tool*** class loads the information of Dynamixel stored in '.device' files. The ***dynamixel_driver*** class which is based on dynamixel_sdk provides functions to control an Dynamixel. The ***dynamixel_multi_driver*** class which is inherited by ***dynamixel_driver*** class provides functions to control Dynamixels.
 
@@ -303,12 +303,12 @@ The **Dynamixel Workbench** metapackage contains four packages: **Single Manager
             
 # [Tutorials](#tutorials)
 
-1. Single Manager
+## Single Manager
 
     **Note :** IF YOU ALREADY CREATE **my_dynamixel_workbench_tutorial** PACKAGE, THEN YOU JUMP TO STEP 2.
     {: .notice--info}
 
-    1. Command line
+### [Command line](#single-manager-tutorial)
 
         1. Create a package
 
@@ -482,7 +482,7 @@ The **Dynamixel Workbench** metapackage contains four packages: **Single Manager
 
             The Dynamixel is running!! If you have a question about running single_manager, please make a [new issue](https://github.com/ROBOTIS-GIT/dynamixel-workbench/issues).
 
-    1. GUI
+### [GUI](#single-manager-gui-tutorial)
 
         **Note :** IF YOU ALREADY CREATE **my_dynamixel_workbench_tutorial** PACKAGE, THEN YOU JUMP TO STEP 2.
         {: .notice--info}
@@ -589,9 +589,9 @@ The **Dynamixel Workbench** metapackage contains four packages: **Single Manager
 
             The Dynamixel is running!! If you have a question about running single_manager_gui, please make a [new issue](https://github.com/ROBOTIS-GIT/dynamixel-workbench/issues).
 
-1. Controllers
+## Controllers
 
-    1. Position controller
+### [Position controller](#position-tutorial)
 
         **Note :** IF YOU ALREADY CREATE **my_dynamixel_workbench_tutorial** PACKAGE, THEN YOU JUMP TO STEP 2.
         {: .notice--info}
@@ -751,7 +751,7 @@ The **Dynamixel Workbench** metapackage contains four packages: **Single Manager
 
             The pan & tilt is running!! If you have a question about running ***position_control***, please make a [new issue](https://github.com/ROBOTIS-GIT/dynamixel-workbench/issues).
 
-    1. Velocity controller
+### [Velocity controller](#velocity-controller)
 
         **Note :** IF YOU ALREADY CREATE **my_dynamixel_workbench_tutorial** PACKAGE, THEN YOU JUMP TO STEP 2.
         {: .notice--info}
@@ -906,7 +906,7 @@ The **Dynamixel Workbench** metapackage contains four packages: **Single Manager
 
             If you have a question about running ***velocity_control***, please make a [new issue](https://github.com/ROBOTIS-GIT/dynamixel-workbench/issues).
 
-    1. Torque controller
+### [Torque controller](#torque-tutorial)
 
         **Note :** IF YOU ALREADY CREATE **my_dynamixel_workbench_tutorial** PACKAGE, THEN YOU JUMP TO STEP 2.
         {: .notice--info}
@@ -1066,7 +1066,7 @@ The **Dynamixel Workbench** metapackage contains four packages: **Single Manager
 
             The pan & tilt is running!! If you have a question about running ***torque_control***, please make a [new issue](https://github.com/ROBOTIS-GIT/dynamixel-workbench/issues).
 
-    1. Multi port controller
+### [Multi port controller](#multi-port-tutorial)
 
         **Note :** IF YOU ALREADY CREATE **my_dynamixel_workbench_tutorial** PACKAGE, THEN YOU JUMP TO STEP 2.
         {: .notice--info}
