@@ -37,7 +37,7 @@ OpenManipulator is composed by [Dynamixel X series](http://en.robotis.com/index/
 
 # [OpenManipulator Chain](#openmanipulator-chain)
 
-## [Specification](#chain-spec)
+## [Specification of Chain](#specification-of-chain)
 
 |                     |  Unit     | Chain with XM430-W350                     |
 | -----------------   | --------- | ----------------------------------------- |
@@ -57,7 +57,7 @@ OpenManipulator is composed by [Dynamixel X series](http://en.robotis.com/index/
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_spec_gripper.jpg)
 
-## [Hardware Setup](#chain-hardware-setup)
+## [Hardware Setup of Chain](#hardware-setup-of-chain)
 
 [Parts of OpenManipulator](https://docs.google.com/a/robotis.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit?usp=sharing)
 
@@ -67,7 +67,7 @@ OpenManipulator is composed by [Dynamixel X series](http://en.robotis.com/index/
 * Items that are painted in green are purchased on shopping mall
 * Items that are painted in yellow are 3D printing parts
 
-## [Software Setup](#chain-software-setup)
+## [Software Setup of Chain](#software-setup-of-chain)
 
 ### ROS
 
@@ -183,7 +183,7 @@ OpenManipulator is composed by [Dynamixel X series](http://en.robotis.com/index/
 
 # [OpenManipulator SCARA](#openmanipulator-scara)
 
-## [Specification](#scara-spec)
+## [Specification Of SCARA](#specification-of-scara)
 
 |                     |  Unit     | Chain with XM430-W350                     |
 | -----------------   | --------- | ----------------------------------------- |
@@ -201,7 +201,7 @@ OpenManipulator is composed by [Dynamixel X series](http://en.robotis.com/index/
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_SCARA_spec_side.png)
 
-## [Hardware Setup](#scara-hardware-setup)
+## [Hardware Setup Of SCARA](#hardware-setup-scara)
 
 [Parts of OpenManipulator](https://docs.google.com/a/robotis.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit?usp=sharing)
 
@@ -211,7 +211,7 @@ OpenManipulator is composed by [Dynamixel X series](http://en.robotis.com/index/
 * Items that are painted in green are purchased on shopping mall
 * Items that are painted in yellow are 3D printing parts
 
-## [Software Setup](#scara-software-setup)
+## [Software Setup Of SCARA](#software-setup-scara)
 
 ### OpenCR
 
@@ -225,7 +225,7 @@ OpenManipulator is composed by [Dynamixel X series](http://en.robotis.com/index/
 
 # [OpenManipulator Link](#openmanipulator-link)
 
-## [Specification](#link-spec)
+## [Specification Of Link](#specification-of-link)
 
 |                          |  Unit     | Chain with XM430-W350                     |
 | -----------------        | --------- | ----------------------------------------- |
@@ -245,7 +245,7 @@ OpenManipulator is composed by [Dynamixel X series](http://en.robotis.com/index/
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_Link_spec_up.png)
 
-## [Hardware Setup](#link-hardware-setup)
+## [Hardware Setup Of Link](#hardware-setup-of-link)
 
 [Parts of OpenManipulator](https://docs.google.com/a/robotis.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit?usp=sharing)
 
@@ -255,7 +255,7 @@ OpenManipulator is composed by [Dynamixel X series](http://en.robotis.com/index/
 * Items that are painted in green are purchased on shopping mall
 * Items that are painted in yellow are 3D printing parts
 
-## [Software Setup](#link-software-setup)
+## [Software Setup Of Link](#software-setup-of-link)
 
 ### OpenCR
 
