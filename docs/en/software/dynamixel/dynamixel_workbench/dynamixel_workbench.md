@@ -305,8 +305,8 @@ The **Dynamixel Workbench** metapackage contains four packages: **Single Manager
 
 ## [Single Manager Tutorials](#single-manager-tutorials)
 
-    **Note :** IF YOU ALREADY CREATE **my_dynamixel_workbench_tutorial** PACKAGE, THEN YOU JUMP TO STEP 2.
-    {: .notice--info}
+**Note :** IF YOU ALREADY CREATE **my_dynamixel_workbench_tutorial** PACKAGE, THEN YOU JUMP TO STEP 2.
+{: .notice--info}
 
 ### [Command line](#command-line)
 
@@ -484,8 +484,8 @@ The **Dynamixel Workbench** metapackage contains four packages: **Single Manager
 
 ### [GUI](#gui)
 
-        **Note :** IF YOU ALREADY CREATE **my_dynamixel_workbench_tutorial** PACKAGE, THEN YOU JUMP TO STEP 2.
-        {: .notice--info}
+**Note :** IF YOU ALREADY CREATE **my_dynamixel_workbench_tutorial** PACKAGE, THEN YOU JUMP TO STEP 2.
+{: .notice--info}
 
         1. Create a package
 
@@ -593,8 +593,8 @@ The **Dynamixel Workbench** metapackage contains four packages: **Single Manager
 
 ### [Position controller](#position-controller)
 
-        **Note :** IF YOU ALREADY CREATE **my_dynamixel_workbench_tutorial** PACKAGE, THEN YOU JUMP TO STEP 2.
-        {: .notice--info}
+**Note :** IF YOU ALREADY CREATE **my_dynamixel_workbench_tutorial** PACKAGE, THEN YOU JUMP TO STEP 2.
+{: .notice--info}
 
         1. Create a package
 
@@ -753,8 +753,8 @@ The **Dynamixel Workbench** metapackage contains four packages: **Single Manager
 
 ### [Velocity controller](#velocity-controller)
 
-        **Note :** IF YOU ALREADY CREATE **my_dynamixel_workbench_tutorial** PACKAGE, THEN YOU JUMP TO STEP 2.
-        {: .notice--info}
+**Note :** IF YOU ALREADY CREATE **my_dynamixel_workbench_tutorial** PACKAGE, THEN YOU JUMP TO STEP 2.
+{: .notice--info}
 
         1. Create a package
 
@@ -908,11 +908,11 @@ The **Dynamixel Workbench** metapackage contains four packages: **Single Manager
 
 ### [Torque controller](#torque-controller)
 
-        **Note :** IF YOU ALREADY CREATE **my_dynamixel_workbench_tutorial** PACKAGE, THEN YOU JUMP TO STEP 2.
-        {: .notice--info}
+**Note :** IF YOU ALREADY CREATE **my_dynamixel_workbench_tutorial** PACKAGE, THEN YOU JUMP TO STEP 2.
+{: .notice--info}
         
-        **Warning :** **NOTE: THIS TUTORIAL ONLY SUPPORT M430-W350-R**
-        {: .notice--warning}
+**Warning :** THIS TUTORIAL ONLY SUPPORT XM430-W350-R.
+{: .notice--warning}
 
         1. Create a package
 
@@ -1068,8 +1068,8 @@ The **Dynamixel Workbench** metapackage contains four packages: **Single Manager
 
 ### [Multi port controller](#multi-port-controller)
 
-        **Note :** IF YOU ALREADY CREATE **my_dynamixel_workbench_tutorial** PACKAGE, THEN YOU JUMP TO STEP 2.
-        {: .notice--info}
+**Note :** IF YOU ALREADY CREATE **my_dynamixel_workbench_tutorial** PACKAGE, THEN YOU JUMP TO STEP 2.
+{: .notice--info}
 
         1. Create a package
 
