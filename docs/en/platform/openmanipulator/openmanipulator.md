@@ -8,7 +8,7 @@ author_profile: false
 permalink: /docs/en/platform/openmanipulator/openmanipulator/
 sidebar:
   title: OpenManipulator
-  nav: "openmanipulator"
+  nav: "open_manipulator"
 ---
 
 # [Introduction](#introduction)
