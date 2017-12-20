@@ -7303,18 +7303,25 @@ dynamixel_workbench:
   - title: "Tutorials"
     url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#tutorials
     children:
-    - title: "Command line"
-      url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#command-line
-    - title: "GUI"
-      url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#gui
-    - title: "Position controller"
-      url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#position-controller
-    - title: "Velocity controller"
-      url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#velocity-controller
-    - title: "Torque controller"
-      url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#torque-controller
-    - title: "Multi port controller"
-      url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#multi-port-controller
+    - title: "Single Manager Tutorials"
+      url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#single-manager-tutorials
+      children:
+      - title: "Command line"
+        url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#command-line
+      - title: "GUI"
+        url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#gui
+    children:
+    - title: "Controllers Tutorials"
+      url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#controllers-tutorials
+      children:
+      - title: "Position controller"
+        url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#position-controller
+      - title: "Velocity controller"
+        url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#velocity-controller
+      - title: "Torque controller"
+        url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#torque-controller
+      - title: "Multi port controller"
+        url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#multi-port-controller
 
 #ZIGBEE SDK sidebar
 sigbee_sdk:

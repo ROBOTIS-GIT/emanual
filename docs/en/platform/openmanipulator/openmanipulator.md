@@ -39,19 +39,19 @@ OpenManipulator is composed by [Dynamixel X series](http://en.robotis.com/index/
 
 ## [Specification of Chain](#specification-of-chain)
 
-|                     |  Unit     | Chain with XM430-W350                     |
-| -----------------   | --------- | ----------------------------------------- |
-| **Input Voltage**   |  V        |  12                                       |
-| **DOF**             |  -        |  5 (4 DOF + 1 DOF Gripper)                |
-| **Payload**         |  g        |  1000 ~ 1300 (2.20 ~ 2.86)                |
-| **Speed(Joint)**    |  rad/sec  |  4.82                                     |
-| **Weight**          |  kg(lb)   |  0.7 (1.54)                               |
-| **Reach**           |  mm (in)  |  380 (14.9)                               |
-| **Rated Voltage**   |  VDC      |  12                                       |
-| **Communication**   |  -        |  RS-485 (Multi Drop Bus)                  |
-| **Power(Joint)**    |  W        |  27.6                                     |
-| **Software**        |  -        |  ROS, Dynamixel SDK, Arduino, Processing  |
-| **Main Controller** |  -        |  Laptop PC, OpenCR                        |
+|                     | Unit    | Chain with XM430-W350                   |
+| ------------------- | ------- | --------------------------------------- |
+| **Input Voltage**   | V       | 12                                      |
+| **DOF**             | -       | 5 (4 DOF + 1 DOF Gripper)               |
+| **Payload**         | g       | 1000 ~ 1300 (2.20 ~ 2.86)               |
+| **Speed(Joint)**    | rad/sec | 4.82                                    |
+| **Weight**          | kg(lb)  | 0.7 (1.54)                              |
+| **Reach**           | mm (in) | 380 (14.9)                              |
+| **Rated Voltage**   | VDC     | 12                                      |
+| **Communication**   | -       | RS-485 (Multi Drop Bus)                 |
+| **Power(Joint)**    | W       | 27.6                                    |
+| **Software**        | -       | ROS, Dynamixel SDK, Arduino, Processing |
+| **Main Controller** | -       | Laptop PC, OpenCR                       |
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_spec_side.png)
 
@@ -186,23 +186,23 @@ OpenManipulator is composed by [Dynamixel X series](http://en.robotis.com/index/
 
 ## [Specification Of SCARA](#specification-of-scara)
 
-|                     |  Unit     | Chain with XM430-W350                     |
-| -----------------   | --------- | ----------------------------------------- |
-| **Input Voltage**   |  V        |  12                                       |
-| **DOF**             |  -        |  4 (3 DOF + 1 End-Effector)               |
-| **Speed(Joint)**    |  rad/sec  |  4.82                                     |
-| **Weight**          |  kg(lb)   |  0.52 (1.14)                              |
-| **Reach**           |  mm (in)  |  234 (9.21)                               |
-| **Rated Voltage**   |  VDC      |  12                                       |
-| **Communication**   |  -        |  RS-485 (Multi Drop Bus)                  |
-| **Power(Joint)**    |  W        |  27.6                                     |
-| **Software**        |  -        |  ROS, Dynamixel SDK, Arduino, Processing  |
-| **Main Controller** |  -        |  Laptop PC, OpenCR                        |
+|                     | Unit    | Chain with XM430-W350                   |
+| ------------------- | ------- | --------------------------------------- |
+| **Input Voltage**   | V       | 12                                      |
+| **DOF**             | -       | 4 (3 DOF + 1 End-Effector)              |
+| **Speed(Joint)**    | rad/sec | 4.82                                    |
+| **Weight**          | kg(lb)  | 0.52 (1.14)                             |
+| **Reach**           | mm (in) | 234 (9.21)                              |
+| **Rated Voltage**   | VDC     | 12                                      |
+| **Communication**   | -       | RS-485 (Multi Drop Bus)                 |
+| **Power(Joint)**    | W       | 27.6                                    |
+| **Software**        | -       | ROS, Dynamixel SDK, Arduino, Processing |
+| **Main Controller** | -       | Laptop PC, OpenCR                       |
 
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_SCARA_spec_side.png)
 
-## [Hardware Setup Of SCARA](#hardware-setup-scara)
+## [Hardware Setup of SCARA](#hardware-setup-scara)
 
 [Parts of OpenManipulator](https://docs.google.com/a/robotis.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit?usp=sharing)
 
@@ -212,7 +212,7 @@ OpenManipulator is composed by [Dynamixel X series](http://en.robotis.com/index/
 * Items that are painted in green are purchased on shopping mall
 * Items that are painted in yellow are 3D printing parts
 
-## [Software Setup Of SCARA](#software-setup-scara)
+## [Software Setup of SCARA](#software-setup-scara)
 
 ### OpenCR
 
@@ -226,27 +226,27 @@ OpenManipulator is composed by [Dynamixel X series](http://en.robotis.com/index/
 
 # [OpenManipulator Link](#openmanipulator-link)
 
-## [Specification Of Link](#specification-of-link)
+## [Specification of Link](#specification-of-link)
 
-|                          |  Unit     | Chain with XM430-W350                     |
-| -----------------        | --------- | ----------------------------------------- |
-| **Input Voltage**        |  V        |  12                                       |
-| **DOF**                  |  -        |  3                                        |
-| **Payload With Suction** |  g (lb)   |  400 ~ 450 (0.88 ~ 0.99)                  |
-| **Speed(Joint)**         |  rad/sec  |  4.82                                     |
-| **Weight**               |  kg(lb)   |  0.53 (1.16)                              |
-| **Reach**                |  mm (in)  |  330 (12.99)                              |
-| **Rated Voltage**        |  VDC      |  12                                       |
-| **Communication**        |  -        |  RS-485 (Multi Drop Bus)                  |
-| **Power(Joint)**         |  W        |  27.6                                     |
-| **Software**             |  -        |  ROS, Dynamixel SDK, Arduino, Processing  |
-| **Main Controller**      |  -        |  Laptop PC, OpenCR                        |
+|                          | Unit    | Chain with XM430-W350                   |
+| ------------------------ | ------- | --------------------------------------- |
+| **Input Voltage**        | V       | 12                                      |
+| **DOF**                  | -       | 3                                       |
+| **Payload With Suction** | g (lb)  | 400 ~ 450 (0.88 ~ 0.99)                 |
+| **Speed(Joint)**         | rad/sec | 4.82                                    |
+| **Weight**               | kg(lb)  | 0.53 (1.16)                             |
+| **Reach**                | mm (in) | 330 (12.99)                             |
+| **Rated Voltage**        | VDC     | 12                                      |
+| **Communication**        | -       | RS-485 (Multi Drop Bus)                 |
+| **Power(Joint)**         | W       | 27.6                                    |
+| **Software**             | -       | ROS, Dynamixel SDK, Arduino, Processing |
+| **Main Controller**      | -       | Laptop PC, OpenCR                       |
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_Link_spec_side.png)
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_Link_spec_up.png)
 
-## [Hardware Setup Of Link](#hardware-setup-of-link)
+## [Hardware Setup of Link](#hardware-setup-of-link)
 
 [Parts of OpenManipulator](https://docs.google.com/a/robotis.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit?usp=sharing)
 
@@ -256,7 +256,7 @@ OpenManipulator is composed by [Dynamixel X series](http://en.robotis.com/index/
 * Items that are painted in green are purchased on shopping mall
 * Items that are painted in yellow are 3D printing parts
 
-## [Software Setup Of Link](#software-setup-of-link)
+## [Software Setup of Link](#software-setup-of-link)
 
 ### OpenCR
 
