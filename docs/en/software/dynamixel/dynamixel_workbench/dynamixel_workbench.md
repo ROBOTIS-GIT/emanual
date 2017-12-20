@@ -115,7 +115,7 @@ The **Dynamixel Workbench** metapackage contains four packages: **Single Manager
             * /wheel_command - Command to change the speed
             
 
-    1. torque_control - Dynamixel torque control example using ***toolbox*** library which is based on [Dynamixel SDK](http://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_sdk/overview/). Two Dynamixels which set by torque control mode are commanded by joint_operator. **Note**: This packages only supports XM430-W350-R
+    1. torque_control - Dynamixel torque control example using ***toolbox*** library which is based on [Dynamixel SDK](http://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_sdk/overview/). Two Dynamixels which set by torque control mode are commanded by joint_operator. **Note: This packages only supports XM430-W350-R**
         1. Messages
             * /torque_control/dynamixel_state - Provides states of two Dynamixels
         1. Services
@@ -166,6 +166,7 @@ The **Dynamixel Workbench** metapackage contains four packages: **Single Manager
             * bool getModelItem() - It arranges model information in model information file(~.device)
 
             For example of model information(~.device):
+
             ```
             [device info]
             model_number = 1030
@@ -298,4 +299,171 @@ The **Dynamixel Workbench** metapackage contains four packages: **Single Manager
             
 # [Tutorials](#tutorials)
 
+1. Single Manager
+    1. Command line
+        1. Create a package
+            This package contains default launch file(***single_manager.launch***) in launch folder. But, in this tutorial, we create a new tutorial package to show how to run ***dynamixel_workbench_single_manager*** in other package.
 
+            ```
+            $ cd ~/catkin_ws/src
+            $ catkin_create_pkg my_dynamixel_workbench_tutorial std_msgs roscpp
+            ```
+
+        1. Create a launch file for the single manager node
+            First we need a launch file in launch folder in ***my_dynamixel_workbench_tutorial*** package. This launch file connects to the ***dynamixel_workbench_single_manager*** package and sets device name, baudrate and protocol version of a Dynamixel. We assume that the Dynamixel is connected to **/dev/ttyUSB0** and baudrate **57600**. If not, make sure you set your device name, baudrate and protocol version correctly. **NOTE: IN THIS TUTORIAL, WE USE XM430-W210-R**
+
+            1. Make a launch file in ros package which we created
+
+            ```            
+            $ cd my_dynamixel_workbench_tutorial
+            $ mkdir launch
+            $ cd launch
+            $ gedit single_manager.launch
+            ```
+
+            1. Type or Copy&Paste code below to connect dynamixel_workbench_single manager packages and set parameters
+            
+            ```
+            <launch>
+            <arg name="use_ping"         default="false"/>
+            <arg name="id"               default="1"/>
+
+            <arg name="device_name"      default="/dev/ttyUSB0"/>
+            <arg name="baud_rate"        default="57600"/>
+            <arg name="protocol_version" default="2.0"/>
+
+            <param name="ping"             value="$(arg use_ping)"  type="bool"/>
+            <param name="ping_id"          value="$(arg id)"/>
+
+            <param name="device_name"      value="$(arg device_name)"/>
+            <param name="baud_rate"        value="$(arg baud_rate)"/>
+            <param name="protocol_version" value="$(arg protocol_version)"/>
+
+            <node name="single_dynamixel_monitor" pkg="dynamixel_workbench_single_manager"
+                    type="single_dynamixel_monitor" required="true" output="screen"/>
+
+            <node name="single_dynamixel_controller" pkg="dynamixel_workbench_single_manager"
+                    type="single_dynamixel_controller" required="true" output="screen"/>
+            </launch>
+            ```
+
+            **NOTE: Each Dynamixel has different default baudrate (e.g. 1000000 or 57600). Before excute the single manager, it needs to be checked the baudrate of [Dynamixel e-MANUAL](http://emanual.robotis.com/docs/en/dxl/x/xm430-w210/)**
+
+            1. Before we operating this package, we need to access permission for USB device
+            
+            ```
+            $ sudo chmod a+rw /dev/ttyUSB0
+            ```
+            1. Now we can run tutorial package:
+            
+            ```
+            $ cd ~/catkin_ws && catkin_make 
+            $ roslaunch my_dynamixel_workbench_tutorial single_manager.launch
+            ```
+
+            If single_manager find linked Dynamixel, we could show state of it and command list:
+
+            ```
+            [ INFO] [1498120819.125555149]: Succeeded to open the port(/dev/ttyUSB0)!
+            [ INFO] [1498120819.125989319]: Succeeded to change the baudrate(57600)!
+            [ INFO] [1498120819.126012342]: Scan Dynamixel(ID: 1~253) Using Protocol 2.0
+
+            [ INFO] [1498120819.126023837]: ...wait for seconds
+            [ INFO] [1498120819.158510315]: ...Succeeded to find dynamixel
+
+            [ INFO] [1498120819.158539843]: [ID] 1, [Model Name] XM430_W210, [BAUD RATE] 57600
+            [ INFO] [1498120819.160766066]: dynamixel_workbench_single_manager : Init Success!
+            And press Enter key to command the Dynamixel:
+
+            [ INFO] [1498120821.643246443]: ----------------------------------------------------------------------
+            [ INFO] [1498120821.643297230]: Single Manager supports GUI (dynamixel_workbench_single_manager_gui)  
+            [ INFO] [1498120821.643311697]: ----------------------------------------------------------------------
+            [ INFO] [1498120821.643335297]: Command list :
+            [ INFO] [1498120821.643348112]: [help|h|?]...........: help
+            [ INFO] [1498120821.643363078]: [info]...............: information of a Dynamixel
+            [ INFO] [1498120821.643375468]: [table]..............: check a control table of a Dynamixel
+            [ INFO] [1498120821.643388111]: [torque_on]..........: torque on Dynamixel
+            [ INFO] [1498120821.643399388]: [torque_off].........: torque off Dynamixel
+            [ INFO] [1498120821.643410949]: [reboot].............: reboot a Dynamixel(only protocol version 2.0)
+            [ INFO] [1498120821.643422932]: [factory_reset]......: command for all data back to factory settings values
+            [ INFO] [1498120821.643433879]: [[table_item] [value]: change address value of a Dynamixel
+            [ INFO] [1498120821.643444016]: [exit]...............: shutdown
+            [ INFO] [1498120821.643458553]: ----------------------------------------------------------------------
+            [ INFO] [1498120821.643466760]: Press Enter Key To Command A Dynamixel
+            [ CMD ]
+            ```
+
+        1. Check state of Dynamixel
+            Now, we can check a state of linked Dynamixel through /dynamixel/[motor_name] topic:
+
+            ```
+            $ rostopic echo /dynamixel/[motor_name]
+            ```
+
+            For example:
+
+            ```
+            model_number: 1030
+            version_of_firmware: 39
+            id: 1
+            baud_rate: 1
+            return_delay_time: 250
+            drive_mode: 0
+            operating_mode: 3
+            secondary_id: 255
+            protocol_version: 2
+            homing_offset: 0
+            moving_threshold: 10
+            temperature_limit: 80
+            max_voltage_limit: 160
+            min_voltage_limit: 95
+            pwm_limit: 885
+            current_limit: 1193
+            acceleration_limit: 32767
+            velocity_limit: 480
+            max_position_limit: 4095
+            min_position_limit: 0
+            shutdown: 52
+            torque_enable: 0
+            led: 0
+            status_return_level: 2
+            registered_instruction: 0
+            hardware_error_status: 0
+            velocity_i_gain: 1920
+            velocity_p_gain: 100
+            position_d_gain: 0
+            position_i_gain: 0
+            position_p_gain: 800
+            feedforward_2nd_gain: 0
+            feedforward_1st_gain: 0
+            bus_watchdog: 0
+            goal_pwm: 885
+            goal_current: 1193
+            goal_velocity: 480
+            profile_acceleration: 0
+            profile_velocity: 0
+            goal_position: 1903
+            realtime_tick: 6550
+            moving: 0
+            moving_status: 1
+            present_pwm: 0
+            present_current: -3
+            present_velocity: 0
+            present_position: 1903
+            velocity_trajectory: 0
+            position_trajectory: 1903
+            present_input_voltage: 120
+            present_temperature: 28
+            ```
+
+        1. Send command to Dynamixel
+            We operate a Dynamixel using command. Address names can be checked published message or using table command. If user wants to specific information about control table of a Dynamixel, please follow the link [e-MANUAL](http://emanual.robotis.com/docs/en/dxl/x/xm430-w210/). **NOTE: BEFORE YOU COMMAND, YOU NEED TO PRESS ENTER KEY**
+
+            ```
+            [CMD]torque_on
+            [CMD]goal_position 2048
+            ```
+
+            The Dynamixel is running!! If you have a question about running single_manager, please make a [new issue](https://github.com/ROBOTIS-GIT/dynamixel-workbench/issues).
+
+    1. GUI
