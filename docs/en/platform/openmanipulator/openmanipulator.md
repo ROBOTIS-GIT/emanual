@@ -216,6 +216,8 @@ OpenManipulator is composed by [Dynamixel X series](http://en.robotis.com/index/
 
 ### OpenCR
 
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/4PK3I1JfSzc" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+
 [OpenCR WIKI](https://github.com/ROBOTIS-GIT/OpenCR/wiki/arduino_examples_openmanipulator_SCARA)
 
 ## Image of OpenManipulator SCARA
