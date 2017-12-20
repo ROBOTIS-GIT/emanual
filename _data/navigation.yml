@@ -5923,29 +5923,29 @@ open_manipulator:
   - title: "OpenManipulator Chain"
     url: /platform/openmanipulator/openmanipulator/#openmanipulator-chain
     children:
-    - title: "Specification of Chain"
+    - title: "Specification"
       url: /platform/openmanipulator/openmanipulator/#specification-of-chain
-    - title: "Hardware Setup of Chain"
+    - title: "Hardware Setup"
       url: /platform/openmanipulator/openmanipulator/#hardware-setup-of-chain
-    - title: "Software Setup of Chain"
+    - title: "Software Setup"
       url: /platform/openmanipulator/openmanipulator/#software-setup-of-chain
   - title: "OpenManipulator SCARA"
     url: /platform/openmanipulator/openmanipulator/#openmanipulator-scara
     children:
-    - title: "Specification Of SCARA"
+    - title: "Specification"
       url: /platform/openmanipulator/openmanipulator/#specification-of-scara
-    - title: "Hardware Setup Of SCARA"
+    - title: "Hardware Setup"
       url: /platform/openmanipulator/openmanipulator/#hardware-setup-of-scara
-    - title: "Software Setup Of SCARA"
+    - title: "Software Setup"
       url: /platform/openmanipulator/openmanipulator/#software-setup-of-scara
   - title: "OpenManipulator Link"
     url: /platform/openmanipulator/openmanipulator/#openmanipulator-link
     children:
-    - title: "Specification Of Link"
+    - title: "Specification"
       url: /platform/openmanipulator/openmanipulator/#specification-of-link
-    - title: "Hardware Setup Of Link"
+    - title: "Hardware Setup"
       url: /platform/openmanipulator/openmanipulator/#hardware-setup-of-link
-    - title: "Software Setup Of Link"
+    - title: "Software Setup"
       url: /platform/openmanipulator/openmanipulator/#software-setup-of-link
   - title: "OpenManipulator Planar"
     url: /platform/openmanipulator/openmanipulator/#openmanipulator-planar
@@ -7303,24 +7303,23 @@ dynamixel_workbench:
   - title: "Tutorials"
     url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#tutorials
     children:
-    - title: "Single Manager Tutorials"
+    - title: "Single Manager"
       url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#single-manager-tutorials
       children:
       - title: "Command line"
         url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#command-line
       - title: "GUI"
         url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#gui
-    children:
-    - title: "Controllers Tutorials"
+    - title: "Controllers"
       url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#controllers-tutorials
       children:
-      - title: "Position controller"
+      - title: "Position"
         url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#position-controller
-      - title: "Velocity controller"
+      - title: "Velocity"
         url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#velocity-controller
-      - title: "Torque controller"
+      - title: "Torque"
         url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#torque-controller
-      - title: "Multi port controller"
+      - title: "Multi port"
         url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#multi-port-controller
 
 #ZIGBEE SDK sidebar
