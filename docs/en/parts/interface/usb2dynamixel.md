@@ -157,7 +157,7 @@ If you installed RoboPlus, FTDI Driver (USB2Dynamixel, USB Downloader (LN-101) d
 Setting up the port
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UlD4C1XMsgo" frameborder="0" allowfullscreen></iframe>
 
-[USB2Dynamixel SDK]: /docs/en/software/sdk/usb2dynamixel/
+[USB2Dynamixel SDK]: /docs/en/software/embedded_sdk/usb2dynamixel/
 [download_task_code]: /docs/en/software/rplus1/task/getting_started/#program-download
 [task_result_print]: /docs/en/software/rplus1/task/getting_started/#print-on-the-screen
 [virtual_robot_control]: /docs/en/software/rplus1/task/getting_started/#virtual-robot-control

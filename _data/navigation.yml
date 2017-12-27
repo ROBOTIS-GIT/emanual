@@ -181,7 +181,10 @@ main:
       titlejp: "TurtleBot3"
       titlecn: "TurtleBot3"
       url: /platform/turtlebot3/overview/
-  - title: "EDUCATION"
+    - title: "OpenManipulator"
+      titlekr: "오픈매니퓰레이터"
+      url: /platform/openmanipulator/openmanipulator/
+  - title: "STEAM"
     titlekr: "교육키트"
     titlejp: "トレーニングキット"
     titlecn: "培训工具包"
@@ -199,12 +202,15 @@ main:
         titlekr: "*2단계 교육키트"
         titlejp: "*Level 2 Kit"
         url: /edu/ollo/explorer/
+        urlkr: /edu/ollo/ollo-2/
       - title: "*INVENTOR"
         titlekr: "*3단계 교육키트"
         titlejp: "*Level 3 Kit"
         url: /edu/ollo/inventor/
+        urlkr: /edu/ollo/ollo-3/
       - titlekr: "*4단계 교육키트"
         titlejp: "*Level 4 Kit"
+        urlkr: /edu/ollo/ollo-4/
     - title: "DREAM"
       titlekr: "드림 I"
       children:
@@ -295,6 +301,14 @@ main:
     titlejp: "ソフトウェア"
     titlecn: "软件"
     children:
+    - title: "DYNAMIXEL"
+      titlekr: "다이나믹셀"
+      children:
+      - title: "DYNAMIXEL SDK"
+        titlekr: "다이나믹셀 SDK"
+        url: /software/dynamixel/dynamixel_sdk/overview/
+      - title: "Dynamixel-Workbench"
+        url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/
     - title: "Mobile Apps"
       titlekr: "모바일 앱"
       children:
@@ -385,32 +399,25 @@ main:
         titlejp: "R+ m.Design"
         titlecn: "R+ m.Design"
         url: /software/rplus_mobile/mdesign/
-    - title: "SDK"
-      titlekr: "SDK"
-      titlejp: "SDK"
-      titlecn: "SDK"
-      url: /software/sdk/
+    - title: "EMBEDDED SDK"
+      titlekr: "EMBEDDED SDK"
+      url: /software/embedded_sdk/
       children:
       - title: "Embedded C(CM-510/700)"
         titlekr: "제어기 펌웨어 개발(CM-510/700)"
         titlejp: "Embedded C(CM-510/700)"
         titlecn: "Embedded C(CM-510/700)"
-        url: /software/sdk/embedded_c_cm510/
+        url: /software/embedded_sdk/embedded_c_cm510/
       - title: "Embedded C(CM-530)"
         titlekr: "제어기 펌웨어 개발(CM-530)"
         titlejp: "Embedded C(CM-530)"
         titlecn: "Embedded C(CM-530)"
-        url: /software/sdk/embedded_c_cm530/
-      - title: "DYNAMIXEL SDK"
-        titlekr: "다이나믹셀 SDK"
-        titlejp: "DYNAMIXEL SDK"
-        titlecn: "DYNAMIXEL SDK"
-        url: https://github.com/ROBOTIS-GIT/DynamixelSDK/wiki
+        url: /software/embedded_sdk/embedded_c_cm530/
       - title: "ZIGBEE SDK"
         titlekr: "지그비 SDK"
         titlejp: "ZIGBEE SDK"
         titlecn: "ZIGBEE SDK"
-        url: /software/sdk/zigbee_sdk/
+        url: /software/embedded_sdk/zigbee_sdk/
     - title: "OpenCM IDE"
       titlekr: "OpenCM IDE"
       url: /software/opencm_ide/getting_started/
@@ -5912,6 +5919,46 @@ turtlebot3:
     - title: "About OST (Open Source Team)"
       url: /platform/turtlebot3/contact_us/#about-ost-open-source-team
 
+#OpenManipulator
+open_manipulator:
+  - title: "Introduction"
+    url: /platform/openmanipulator/openmanipulator/#introduction
+  - title: "OpenManipulator Chain"
+    url: /platform/openmanipulator/openmanipulator/#openmanipulator-chain
+    children:
+    - title: "Specification"
+      url: /platform/openmanipulator/openmanipulator/#specification-of-chain
+    - title: "Hardware Setup"
+      url: /platform/openmanipulator/openmanipulator/#hardware-setup-of-chain
+    - title: "Software Setup"
+      url: /platform/openmanipulator/openmanipulator/#software-setup-of-chain
+  - title: "OpenManipulator SCARA"
+    url: /platform/openmanipulator/openmanipulator/#openmanipulator-scara
+    children:
+    - title: "Specification"
+      url: /platform/openmanipulator/openmanipulator/#specification-of-scara
+    - title: "Hardware Setup"
+      url: /platform/openmanipulator/openmanipulator/#hardware-setup-of-scara
+    - title: "Software Setup"
+      url: /platform/openmanipulator/openmanipulator/#software-setup-of-scara
+  - title: "OpenManipulator Link"
+    url: /platform/openmanipulator/openmanipulator/#openmanipulator-link
+    children:
+    - title: "Specification"
+      url: /platform/openmanipulator/openmanipulator/#specification-of-link
+    - title: "Hardware Setup"
+      url: /platform/openmanipulator/openmanipulator/#hardware-setup-of-link
+    - title: "Software Setup"
+      url: /platform/openmanipulator/openmanipulator/#software-setup-of-link
+  - title: "OpenManipulator Planar"
+    url: /platform/openmanipulator/openmanipulator/#openmanipulator-planar
+  - title: "OpenManipulator Delta"
+    url: /platform/openmanipulator/openmanipulator/#openmanipulator-delta
+  - title: "OpenManipulator Stewart"
+    url: /platform/openmanipulator/openmanipulator/#openmanipulator-stewart
+  - title: "OpenManipulator Linear"
+    url: /platform/openmanipulator/openmanipulator/#openmanipulator-linear
+
 #Manipulator-H
 manipulator_h:
   - title: "Introduction"
@@ -6778,161 +6825,661 @@ opencmide:
     - title: "Utilities"
       url: /software/opencm_ide/api_reference/#utilities
 
+#DYNAMIXEL SDK sidebar
+dynamixel_sdk:
+  - title: "Overview"
+    url: /software/dynamixel/dynamixel_sdk/overview/#overview
+    children:
+    - title: "Concept"
+      url: /software/dynamixel/dynamixel_sdk/overview/#concept
+    - title: "License"
+      url: /software/dynamixel/dynamixel_sdk/overview/#license
+  - title: "Device Setup"
+    url: /software/dynamixel/dynamixel_sdk/device_setup/controller/#device-setup
+    children:
+    - title: "Controller"
+      url: /software/dynamixel/dynamixel_sdk/device_setup/controller/#controller
+    - title: "Dynamixel"
+      url: /software/dynamixel/dynamixel_sdk/device_setup/dynamixel/#dynamixel
+  - title: "Library Setup"
+    url: /software/dynamixel/dynamixel_sdk/library_setup/c_windows/#library-setup
+    children:
+    - title: "C Windows"
+      url: /software/dynamixel/dynamixel_sdk/library_setup/c_windows/#c-windows
+    - title: "C Linux"
+      url: /software/dynamixel/dynamixel_sdk/library_setup/c_linux/#c-linux
+    - title: "C MacOSX"
+      url: /software/dynamixel/dynamixel_sdk/library_setup/c_macosx/#c-macosx
+    - title: "CPP Windows"
+      url: /software/dynamixel/dynamixel_sdk/library_setup/cpp_windows/#cpp-windows
+    - title: "CPP Linux"
+      url: /software/dynamixel/dynamixel_sdk/library_setup/cpp_linux/#cpp-linux
+    - title: "CPP Mac OS"
+      url: /software/dynamixel/dynamixel_sdk/library_setup/cpp_macosx/#cpp-macosx
+    - title: "Csharp Windows"
+      url: /software/dynamixel/dynamixel_sdk/library_setup/csharp_windows/#csharp-windows
+    - title: "Python Windows"
+      url: /software/dynamixel/dynamixel_sdk/library_setup/python_windows/#python-windows
+    - title: "Python Linux"
+      url: /software/dynamixel/dynamixel_sdk/library_setup/python_linux/#python-linux
+    - title: "Python MacOSX"
+      url: /software/dynamixel/dynamixel_sdk/library_setup/python_macosx/#python-macosx
+    - title: "Java Windows"
+      url: /software/dynamixel/dynamixel_sdk/library_setup/java_windows/#java-windows
+    - title: "Java Linux"
+      url: /software/dynamixel/dynamixel_sdk/library_setup/java_linux/#java-linux
+    - title: "Java MacOSX"
+      url: /software/dynamixel/dynamixel_sdk/library_setup/java_macosx/#java-macosx
+    - title: "MATLAB Windows"
+      url: /software/dynamixel/dynamixel_sdk/library_setup/matlab_windows/#matlab-windows
+    - title: "MATLAB Linux"
+      url: /software/dynamixel/dynamixel_sdk/library_setup/matlab_linux/#matlab-linux
+    - title: "MATLAB MacOSX"
+      url: /software/dynamixel/dynamixel_sdk/library_setup/matlab_macosx/#matlab-macosx
+    - title: "LabVIEW Windows"
+      url: /software/dynamixel/dynamixel_sdk/library_setup/labview_windows/#labview-windows
+  - title: "Sample Code"
+    url: /software/dynamixel/dynamixel_sdk/#sample-code
+    children:
+    - title: "C Protocol 1.0"
+      url: /software/dynamixel/dynamixel_sdk/sample_code/c_protocol_1_0/#c-protocol-10
+      children:
+      - title: "C Read Write Protocol 1.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/c_read_write_protocol_1_0/#c-read-write-protocol-10
+      - title: "C Multi Port Protocol 1.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/c_multi_port_protocol_1_0/#c-multi-port-protocol-10
+      - title: "C Sync Write Protocol 1.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/c_sync_write_protocol_1_0/#c-sync-write-protocol-10
+      - title: "C Bulk Read Protocol 1.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/c_bulk_read_protocol_1_0/#c-bulk-read-protocol-10
+      - title: "C Ping Protocol 1.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/c_ping_protocol_1_0/#c-ping-protocol-10
+      - title: "C Reset Protocol 1.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/c_reset_protocol_1_0/#c-reset-protocol-10
+    - title: "C Protocol 2.0"
+      url: /software/dynamixel/dynamixel_sdk/sample_code/c_protocol_2_0/#c-protocol-20
+      children:
+      - title: "C Read Write Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/c_read_write_protocol_2_0/#c-read-write-protocol-20
+      - title: "C Multi Port Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/c_multi_port_protocol_2_0/#c-multi-port-protocol-20
+      - title: "C Sync Write Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/c_sync_read_write_protocol_2_0/#c-sync-read-write-protocol-20
+      - title: "C Bulk Read Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/c_bulk_read_write_protocol_2_0/#c-bulk-read-write-protocol-20
+      - title: "C Indirect Address Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/c_indirect_address_2_0/#c-indirect-address-protocol-20
+      - title: "C Ping Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/c_ping_protocol_2_0/#c-ping-protocol-20
+      - title: "C Broadcast Ping Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/c_broadcast_ping_protocol_2_0/#c-broadcast-ping-protocol-20
+      - title: "C Reboot Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/c_reboot_protocol_2_0/#c-reboot-protocol-20
+      - title: "C Reset Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/c_reset_protocol_2_0/#c-reset-protocol-20
+    - title: "C Protocol Combined"
+      url: /software/dynamixel/dynamixel_sdk/sample_code/c_protocol_combined/#c-protocol-combined
+    - title: "C DXL Monitor"
+      url: /software/dynamixel/dynamixel_sdk/sample_code/c_dxl_monitor/#c-dxl-monitor
+    - title: "CPP Protocol 1.0"
+      url: /software/dynamixel/dynamixel_sdk/sample_code/cpp_protocol1_0/#cpp-protocol-10
+      children:
+      - title: "CPP Read Write Protocol 1.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/cpp_read_write_protocol_1_0/#cpp-read-write-protocol-10
+      - title: "CPP Multi Port Protocol 1.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/cpp_multi_port_protocol_1_0/#cpp-multi-port-protocol-10
+      - title: "CPP Sync Write Protocol 1.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/cpp_sync_write_protocol_1_0/#cpp-sync-write-protocol-10
+      - title: "CPP Bulk Read Protocol 1.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/cpp_bulk_read_protocol_1_0/#cpp-bulk-read-protocol-10
+      - title: "CPP Ping Protocol 1.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/cpp_ping_protocol_1_0/#cpp-ping-protocol-10
+      - title: "CPP Reset Protocol 1.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/cpp_reset_protocol_1_0/#cpp-reset-protocol-10
+    - title: "CPP Protocol 2.0"
+      url: /software/dynamixel/dynamixel_sdk/sample_code/cpp_protocol2_0/#cpp-protocol-20
+      children:
+      - title: "CPP Read Write Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/cpp_read_write_protocol_2_0/#cpp-read-write-protocol-20
+      - title: "CPP Multi Port Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/cpp_multi_port_protocol_2_0/#cpp-multi-port-protocol-20
+      - title: "CPP Sync Write Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/cpp_sync_read_write_protocol_2_0/#cpp-sync-read-write-protocol-20
+      - title: "CPP Bulk Read Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/cpp_bulk_read_write_protocol_2_0/#cpp-bulk-read-write-protocol-20
+      - title: "CPP Indirect Address Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/cpp_indirect_address_2_0/#cpp-indirect-address-protocol-20
+      - title: "CPP Ping Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/cpp_ping_protocol_2_0/#cpp-ping-protocol-20
+      - title: "CPP Broadcast Ping Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/cpp_broadcast_ping_protocol_2_0/#cpp-broadcast-ping-protocol-20
+      - title: "CPP Reboot Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/cpp_reboot_protocol_2_0/#cpp-reboot-protocol-20
+      - title: "CPP Reset Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/cpp_reset_protocol_2_0/#cpp-reset-protocol-20
+    - title: "CPP Protocol Combined"
+      url: /software/dynamixel/dynamixel_sdk/sample_code/cpp_protocol_combined/#cpp-protocol-combined
+    - title: "CPP DXL Monitor"
+      url: /software/dynamixel/dynamixel_sdk/sample_code/cpp_dxl_monitor/#cpp-dxl-monitor
+    - title: "Csharp Protocol 1.0"
+      url: /software/dynamixel/dynamixel_sdk/sample_code/csharp_protocol1_0/#csharp-protocol-10
+      children:
+      - title: "CSharp Read Write Protocol 1.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/csharp_read_write_protocol_1_0/#csharp-read-write-protocol-10
+      - title: "CSharp Multi Port Protocol 1.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/csharp_multi_port_protocol_1_0/#csharp-multi-port-protocol-10
+      - title: "CSharp Sync Write Protocol 1.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/csharp_sync_write_protocol_1_0/#csharp-sync-write-protocol-10
+      - title: "CSharp Bulk Read Protocol 1.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/csharp_bulk_read_protocol_1_0/#csharp-bulk-read-protocol-10
+      - title: "CSharp Ping Protocol 1.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/csharp_ping_protocol_1_0/#csharp-ping-protocol-10
+      - title: "CSharp Reset Protocol 1.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/csharp_reset_protocol_1_0/#csharp-reset-protocol-10
+    - title: "Csharp Protocol 2.0"
+      url: /software/dynamixel/dynamixel_sdk/sample_code/csharp_protocol2_0/#csharp-protocol-20
+      children:
+      - title: "CSharp Read Write Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/csharp_read_write_protocol_2_0/#csharp-read-write-protocol-20
+      - title: "CSharp Multi Port Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/csharp_multi_port_protocol_2_0/#csharp-multi-port-protocol-20
+      - title: "CSharp Sync Write Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/csharp_sync_read_write_protocol_2_0/#csharp-sync-read-write-protocol-20
+      - title: "CSharp Bulk Read Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/csharp_bulk_read_write_protocol_2_0/#csharp-bulk-read-write-protocol-20
+      - title: "CSharp Indirect Address Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/csharp_indirect_address_2_0/#csharp-indirect-address-protocol-20
+      - title: "CSharp Ping Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/csharp_ping_protocol_2_0/#csharp-ping-protocol-20
+      - title: "CSharp Broadcast Ping Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/csharp_broadcast_ping_protocol_2_0/#csharp-broadcast-ping-protocol-20
+      - title: "CSharp Reboot Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/csharp_reboot_protocol_2_0/#csharp-reboot-protocol-20
+      - title: "CSharp Reset Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/csharp_reset_protocol_2_0/#csharp-reset-protocol-20
+    - title: "Csharp Protocol Combined"
+      url: /software/dynamixel/dynamixel_sdk/sample_code/csharp_protocol_combined/#csharp-protocol-combined
+    - title: "Python Protocol 1.0"
+      url: /software/dynamixel/dynamixel_sdk/sample_code/python_protocol1_0/#python-protocol-10
+      children:
+      - title: "Python Read Write Protocol 1.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/python_read_write_protocol_1_0/#python-read-write-protocol-10
+      - title: "Python Multi Port Protocol 1.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/python_multi_port_protocol_1_0/#python-multi-port-protocol-10
+      - title: "Python Sync Write Protocol 1.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/python_sync_write_protocol_1_0/#python-sync-write-protocol-10
+      - title: "Python Bulk Read Protocol 1.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/python_bulk_read_protocol_1_0/#python-bulk-read-protocol-10
+      - title: "Python Ping Protocol 1.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/python_ping_protocol_1_0/#python-ping-protocol-10
+      - title: "Python Reset Protocol 1.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/python_reset_protocol_1_0/#python-reset-protocol-10
+    - title: "Python Protocol 2.0"
+      url: /software/dynamixel/dynamixel_sdk/sample_code/python_protocol2_0/#python-protocol-20
+      children:
+      - title: "Python Read Write Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/python_read_write_protocol_2_0/#python-read-write-protocol-20
+      - title: "Python Multi Port Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/python_multi_port_protocol_2_0/#python-multi-port-protocol-20
+      - title: "Python Sync Write Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/python_sync_read_write_protocol_2_0/#python-sync-read-write-protocol-20
+      - title: "Python Bulk Read Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/python_bulk_read_write_protocol_2_0/#python-bulk-read-write-protocol-20
+      - title: "Python Indirect Address Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/python_indirect_address_2_0/#python-indirect-address-protocol-20
+      - title: "Python Ping Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/python_ping_protocol_2_0/#python-ping-protocol-20
+      - title: "Python Broadcast Ping Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/python_broadcast_ping_protocol_2_0/#python-broadcast-ping-protocol-20
+      - title: "Python Reboot Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/python_reboot_protocol_2_0/#python-reboot-protocol-20
+      - title: "Python Reset Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/python_reset_protocol_2_0/#python-reset-protocol-20
+    - title: "Python Protocol Combined"
+      url: /software/dynamixel/dynamixel_sdk/sample_code/python_protocol_combined/#python-protocol-combined
+    - title: "Java Protocol 1.0"
+      url: /software/dynamixel/dynamixel_sdk/sample_code/java_protocol1_0/#java-protocol-10
+      children:
+      - title: "Java Read Write Protocol 1.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/java_read_write_protocol_1_0/#java-read-write-protocol-10
+      - title: "Java Multi Port Protocol 1.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/java_multi_port_protocol_1_0/#java-multi-port-protocol-10
+      - title: "Java Sync Write Protocol 1.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/java_sync_write_protocol_1_0/#java-sync-write-protocol-10
+      - title: "Java Bulk Read Protocol 1.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/java_bulk_read_protocol_1_0/#java-bulk-read-protocol-10
+      - title: "Java Ping Protocol 1.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/java_ping_protocol_1_0/#java-ping-protocol-10
+      - title: "Java Reset Protocol 1.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/java_reset_protocol_1_0/#java-reset-protocol-10
+    - title: "Java Protocol 2.0"
+      url: /software/dynamixel/dynamixel_sdk/sample_code/java_protocol2_0/#java-protocol-20
+      children:
+      - title: "Java Read Write Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/java_read_write_protocol_2_0/#java-read-write-protocol-20
+      - title: "Java Multi Port Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/java_multi_port_protocol_2_0/#java-multi-port-protocol-20
+      - title: "Java Sync Write Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/java_sync_read_write_protocol_2_0/#java-sync-read-write-protocol-20
+      - title: "Java Bulk Read Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/java_bulk_read_write_protocol_2_0/#java-bulk-read-write-protocol-20
+      - title: "Java Indirect Address Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/java_indirect_address_2_0/#java-indirect-address-protocol-20
+      - title: "Java Ping Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/java_ping_protocol_2_0/#java-ping-protocol-20
+      - title: "Java Broadcast Ping Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/java_broadcast_ping_protocol_2_0/#java-broadcast-ping-protocol-20
+      - title: "Java Reboot Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/java_reboot_protocol_2_0/#java-reboot-protocol-20
+      - title: "Java Reset Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/java_reset_protocol_2_0/#java-reset-protocol-20
+    - title: "Java Protocol Combined"
+      url: /software/dynamixel/dynamixel_sdk/sample_code/java_protocol_combined/#java-protocol-combined
+    - title: "MATLAB Protocol 1.0"
+      url: /software/dynamixel/dynamixel_sdk/sample_code/matlab_protocol1_0/#matlab-protocol-10
+      children:
+      - title: "Matlab Read Write Protocol 1.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/matlab_read_write_protocol_1_0/#matlab-read-write-protocol-10
+      - title: "Matlab Multi Port Protocol 1.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/matlab_multi_port_protocol_1_0/#matlab-multi-port-protocol-10
+      - title: "Matlab Sync Write Protocol 1.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/matlab_sync_write_protocol_1_0/#matlab-sync-write-protocol-10
+      - title: "Matlab Bulk Read Protocol 1.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/matlab_bulk_read_protocol_1_0/#matlab-bulk-read-protocol-10
+      - title: "Matlab Ping Protocol 1.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/matlab_ping_protocol_1_0/#matlab-ping-protocol-10
+      - title: "Matlab Reset Protocol 1.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/matlab_reset_protocol_1_0/#matlab-reset-protocol-10
+    - title: "MATLAB Protocol 2.0"
+      url: /software/dynamixel/dynamixel_sdk/sample_code/matlab_protocol2_0/#matlab-protocol-20
+      children:
+      - title: "Matlab Read Write Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/matlab_read_write_protocol_2_0/#matlab-read-write-protocol-20
+      - title: "Matlab Multi Port Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/matlab_multi_port_protocol_2_0/#matlab-multi-port-protocol-20
+      - title: "Matlab Sync Write Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/matlab_sync_read_write_protocol_2_0/#matlab-sync-read-write-protocol-20
+      - title: "Matlab Bulk Read Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/matlab_bulk_read_write_protocol_2_0/#matlab-bulk-read-write-protocol-20
+      - title: "Matlab Indirect Address Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/matlab_indirect_address_2_0/#matlab-indirect-address-protocol-20
+      - title: "Matlab Ping Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/matlab_ping_protocol_2_0/#matlab-ping-protocol-20
+      - title: "Matlab Broadcast Ping Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/matlab_broadcast_ping_protocol_2_0/#matlab-broadcast-ping-protocol-20
+      - title: "Matlab Reboot Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/matlab_reboot_protocol_2_0/#matlab-reboot-protocol-20
+      - title: "Matlab Reset Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/matlab_reset_protocol_2_0/#matlab-reset-protocol-20
+    - title: "MATLAB Protocol Combined"
+      url: /software/dynamixel/dynamixel_sdk/sample_code/matlab_protocol_combined/#matlab-protocol-combined
+    - title: "LabVIEW Protocol 1.0"
+      url: /software/dynamixel/dynamixel_sdk/sample_code/labview_protocol1_0/#labview-protocol-10
+      children:
+      - title: "LabVIEW Read Write Protocol 1.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/labview_read_write_protocol_1_0/#labview-read-write-protocol-10
+      - title: "LabVIEW Multi Port Protocol 1.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/labview_multi_port_protocol_1_0/#labview-multi-port-protocol-10
+      - title: "LabVIEW Sync Write Protocol 1.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/labview_sync_write_protocol_1_0/#labview-sync-write-protocol-10
+      - title: "LabVIEW Bulk Read Protocol 1.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/labview_bulk_read_protocol_1_0/#labview-bulk-read-protocol-10
+      - title: "LabVIEW Ping Protocol 1.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/labview_ping_protocol_1_0/#labview-ping-protocol-10
+      - title: "LabVIEW Reset Protocol 1.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/labview_reset_protocol_1_0/#labview-reset-protocol-10
+    - title: "LabVIEW Protocol 2.0"
+      url: /software/dynamixel/dynamixel_sdk/sample_code/labview_protocol2_0/#labview-protocol-20
+      children:
+      - title: "LabVIEW Read Write Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/labview_read_write_protocol_2_0/#labview-read-write-protocol-20
+      - title: "LabVIEW Multi Port Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/labview_multi_port_protocol_2_0/#labview-multi-port-protocol-20
+      - title: "LabVIEW Sync Write Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/labview_sync_read_write_protocol_2_0/#labview-sync-read-write-protocol-20
+      - title: "LabVIEW Bulk Read Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/labview_bulk_read_write_protocol_2_0/#labview-bulk-read-write-protocol-20
+      - title: "LabVIEW Indirect Address Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/labview_indirect_address_2_0/#labview-indirect-address-protocol-20
+      - title: "LabVIEW Ping Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/labview_ping_protocol_2_0/#labview-ping-protocol-20
+      - title: "LabVIEW Broadcast Ping Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/labview_broadcast_ping_protocol_2_0/#labview-broadcast-ping-protocol-20
+      - title: "LabVIEW Reboot Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/labview_reboot_protocol_2_0/#labview-reboot-protocol-20
+      - title: "LabVIEW Reset Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/labview_reset_protocol_2_0/#labview-reset-protocol-20
+    - title: "LabVIEW Protocol Combined"
+      url: /software/dynamixel/dynamixel_sdk/sample_code/labview_protocol_combined/#labview-protocol-combined
+  - title: "API Reference"
+    url: /software/dynamixel/dynamixel_sdk/api_reference/c/c_porthandler/#api-reference
+    children:
+    - title: "C"
+      url: /software/dynamixel/dynamixel_sdk/api_reference/c/c_porthandler/#c
+      children:
+      - title: "C PortHandler"
+        url: /software/dynamixel/dynamixel_sdk/api_reference/c/c_porthandler/#c-porthandler
+      - title: "C PortHandlerWindows"
+        url: /software/dynamixel/dynamixel_sdk/api_reference/c/c_porthandlerwindows/#c-porthandlerwindows
+      - title: "C PortHandlerLinux"
+        url: /software/dynamixel/dynamixel_sdk/api_reference/c/c_porthandlerlinux/#c-porthandlerlinux
+      - title: "C PortHandlerMac"
+        url: /software/dynamixel/dynamixel_sdk/api_reference/c/c_porthandlermac/#c-porthandlermac
+      - title: "C PacketHandler"
+        url: /software/dynamixel/dynamixel_sdk/api_reference/c/c_packethandler/#c-packethandler
+      - title: "C Protocol1PacketHandler"
+        url: /software/dynamixel/dynamixel_sdk/api_reference/c/c_protocol1packethandler/#c-porthandler
+      - title: "C Protocol2PacketHandler"
+        url: /software/dynamixel/dynamixel_sdk/api_reference/c/c_protocol2packethandler/#c-protocol2packethandler
+      - title: "C GroupSyncWrite"
+        url: /software/dynamixel/dynamixel_sdk/api_reference/c/c_groupsyncwrite/#c-groupsyncwrite
+      - title: "C GroupSyncRead"
+        url: /software/dynamixel/dynamixel_sdk/api_reference/c/c_groupsyncread/#c-groupsyncread
+      - title: "C GroupBulkWrite"
+        url: /software/dynamixel/dynamixel_sdk/api_reference/c/c_groupbulkwrite/#c-groupbulkwrite
+      - title: "C GroupBulkRead"
+        url: /software/dynamixel/dynamixel_sdk/api_reference/c/c_groupbulkread/#c-groupbulkread
+    - title: "CPP"
+      url: /software/dynamixel/dynamixel_sdk/api_reference/cpp/cpp_porthandler/#cpp
+      children:
+      - title: "CPP PortHandler"
+        url: /software/dynamixel/dynamixel_sdk/api_reference/cpp/cpp_porthandler/#cpp-porthandler
+      - title: "CPP PortHandlerWindows"
+        url: /software/dynamixel/dynamixel_sdk/api_reference/cpp/cpp_porthandlerwindows/#cpp-porthandlerwindows
+      - title: "CPP PortHandlerLinux"
+        url: /software/dynamixel/dynamixel_sdk/api_reference/cpp/cpp_porthandlerlinux/#cpp-porthandlerlinux
+      - title: "CPP PortHandlerMac"
+        url: /software/dynamixel/dynamixel_sdk/api_reference/cpp/cpp_porthandlermac/#cpp-porthandlermac
+      - title: "CPP PacketHandler"
+        url: /software/dynamixel/dynamixel_sdk/api_reference/cpp/cpp_packethandler/#cpp-packethandler
+      - title: "CPP Protocol1PacketHandler"
+        url: /software/dynamixel/dynamixel_sdk/api_reference/cpp/cpp_protocol1packethandler/#cpp-porthandler
+      - title: "CPP Protocol2PacketHandler"
+        url: /software/dynamixel/dynamixel_sdk/api_reference/cpp/cpp_protocol2packethandler/#cpp-protocol2packethandler
+      - title: "CPP GroupSyncWrite"
+        url: /software/dynamixel/dynamixel_sdk/api_reference/cpp/cpp_groupsyncwrite/#cpp-groupsyncwrite
+      - title: "CPP GroupSyncRead"
+        url: /software/dynamixel/dynamixel_sdk/api_reference/cpp/cpp_groupsyncread/#cpp-groupsyncread
+      - title: "CPP GroupBulkWrite"
+        url: /software/dynamixel/dynamixel_sdk/api_reference/cpp/cpp_groupbulkwrite/#cpp-groupbulkwrite
+      - title: "CPP GroupBulkRead"
+        url: /software/dynamixel/dynamixel_sdk/api_reference/cpp/cpp_groupbulkread/#cpp-groupbulkread
+    - title: "CSharp"
+      url: /software/dynamixel/dynamixel_sdk/api_reference/csharp/csharp_porthandler/#csharp
+      children:
+      - title: "CSharp PortHandler"
+        url: /software/dynamixel/dynamixel_sdk/api_reference/csharp/csharp_porthandler/#csharp-porthandler
+      - title: "CSharp PacketHandler"
+        url: /software/dynamixel/dynamixel_sdk/api_reference/csharp/csharp_packethandler/#csharp-packethandler
+      - title: "CSharp GroupSyncWrite"
+        url: /software/dynamixel/dynamixel_sdk/api_reference/csharp/csharp_groupsyncwrite/#csharp-groupsyncwrite
+      - title: "CSharp GroupSyncRead"
+        url: /software/dynamixel/dynamixel_sdk/api_reference/csharp/csharp_groupsyncread/#csharp-groupsyncread
+      - title: "CSharp GroupBulkWrite"
+        url: /software/dynamixel/dynamixel_sdk/api_reference/csharp/csharp_groupbulkwrite/#csharp-groupbulkwrite
+      - title: "CSharp GroupBulkRead"
+        url: /software/dynamixel/dynamixel_sdk/api_reference/csharp/csharp_groupbulkread/#csharp-groupbulkread
+    - title: "Python"
+      url: /software/dynamixel/dynamixel_sdk/api_reference/python/python_porthandler/#python
+      children:
+      - title: "Python PortHandler"
+        url: /software/dynamixel/dynamixel_sdk/api_reference/python/python_porthandler/#python-porthandler
+      - title: "Python PacketHandler"
+        url: /software/dynamixel/dynamixel_sdk/api_reference/python/python_packethandler/#python-packethandler
+      - title: "Python GroupSyncWrite"
+        url: /software/dynamixel/dynamixel_sdk/api_reference/python/python_groupsyncwrite/#python-groupsyncwrite
+      - title: "Python GroupSyncRead"
+        url: /software/dynamixel/dynamixel_sdk/api_reference/python/python_groupsyncread/#python-groupsyncread
+      - title: "Python GroupBulkWrite"
+        url: /software/dynamixel/dynamixel_sdk/api_reference/python/python_groupbulkwrite/#python-groupbulkwrite
+      - title: "Python GroupBulkRead"
+        url: /software/dynamixel/dynamixel_sdk/api_reference/python/python_groupbulkread/#python-groupbulkread
+    - title: "Java"
+      url: /software/dynamixel/dynamixel_sdk/api_reference/java/java_porthandler/#java
+      children:
+      - title: "Java PortHandler"
+        url: /software/dynamixel/dynamixel_sdk/api_reference/java/java_porthandler/#java-porthandler
+      - title: "Java PacketHandler"
+        url: /software/dynamixel/dynamixel_sdk/api_reference/java/java_packethandler/#java-packethandler
+      - title: "Java GroupSyncWrite"
+        url: /software/dynamixel/dynamixel_sdk/api_reference/java/java_groupsyncwrite/#java-groupsyncwrite
+      - title: "Java GroupSyncRead"
+        url: /software/dynamixel/dynamixel_sdk/api_reference/java/java_groupsyncread/#java-groupsyncread
+      - title: "Java GroupBulkWrite"
+        url: /software/dynamixel/dynamixel_sdk/api_reference/java/java_groupbulkwrite/#java-groupbulkwrite
+      - title: "Java GroupBulkRead"
+        url: /software/dynamixel/dynamixel_sdk/api_reference/java/java_groupbulkread/#java-groupbulkread
+    - title: "Matlab"
+      url: /software/dynamixel/dynamixel_sdk/api_reference/matlab/matlab_porthandler/#matlab
+      children:
+      - title: "Matlab PortHandler"
+        url: /software/dynamixel/dynamixel_sdk/api_reference/matlab/matlab_porthandler/#matlab-porthandler
+      - title: "Matlab PacketHandler"
+        url: /software/dynamixel/dynamixel_sdk/api_reference/matlab/matlab_packethandler/#matlab-packethandler
+      - title: "Matlab GroupSyncWrite"
+        url: /software/dynamixel/dynamixel_sdk/api_reference/matlab/matlab_groupsyncwrite/#matlab-groupsyncwrite
+      - title: "Matlab GroupSyncRead"
+        url: /software/dynamixel/dynamixel_sdk/api_reference/matlab/matlab_groupsyncread/#matlab-groupsyncread
+      - title: "Matlab GroupBulkWrite"
+        url: /software/dynamixel/dynamixel_sdk/api_reference/matlab/matlab_groupbulkwrite/#matlab-groupbulkwrite
+      - title: "Matlab GroupBulkRead"
+        url: /software/dynamixel/dynamixel_sdk/api_reference/matlab/matlab_groupbulkread/#matlab-groupbulkread
+    - title: "LabVIEW"
+      url: /software/dynamixel/dynamixel_sdk/api_reference/labview/labview_porthandler/#labview
+      children:
+      - title: "LabVIEW PortHandler"
+        url: /software/dynamixel/dynamixel_sdk/api_reference/labview/labview_porthandler/#labview-porthandler
+      - title: "LabVIEW PacketHandler"
+        url: /software/dynamixel/dynamixel_sdk/api_reference/labview/labview_packethandler/#labview-packethandler
+      - title: "LabVIEW GroupSyncWrite"
+        url: /software/dynamixel/dynamixel_sdk/api_reference/labview/labview_groupsyncwrite/#labview-groupsyncwrite
+      - title: "LabVIEW GroupSyncRead"
+        url: /software/dynamixel/dynamixel_sdk/api_reference/labview/labview_groupsyncread/#labview-groupsyncread
+      - title: "LabVIEW GroupBulkWrite"
+        url: /software/dynamixel/dynamixel_sdk/api_reference/labview/labview_groupbulkwrite/#labview-groupbulkwrite
+      - title: "LabVIEW GroupBulkRead"
+        url: /software/dynamixel/dynamixel_sdk/api_reference/labview/labview_groupbulkread/#labview-groupbulkread
+  - title: "Quick Start Video"
+    url: /software/dynamixel/dynamixel_sdk/quick_start_video/#quick-start-video
+  - title: "Frequently Asked Questions(FAQ)"
+    url: /software/dynamixel/dynamixel_sdk/frequently_asked_questionsfaq/#frequently-asked-questionsfaq
+
+#Dynamixel-Workbench sidebar
+dynamixel_workbench:
+  - title: "Introduction"
+    url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#introduction
+  - title: "Installation"
+    url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#installation
+  - title: "Supported Dynamixels"
+    url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#supported-dynamixels
+  - title: "Package Description"
+    url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#package-description
+    children:
+    - title: "Single Manager"
+      url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#single-manager
+    - title: "Controllers"
+      url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#controllers
+    - title: "Operators"
+      url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#operators
+    - title: "Toolbox"
+      url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#toolbox
+  - title: "Tutorials"
+    url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#tutorials
+    children:
+    - title: "Single Manager"
+      url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#single-manager-tutorials
+      children:
+      - title: "Command line"
+        url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#command-line
+      - title: "GUI"
+        url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#gui
+    - title: "Controllers"
+      url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#controllers-tutorials
+      children:
+      - title: "Position"
+        url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#position-controller
+      - title: "Velocity"
+        url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#velocity-controller
+      - title: "Torque"
+        url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#torque-controller
+      - title: "Multi port"
+        url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#multi-port-controller
+
 #ZIGBEE SDK sidebar
 sigbee_sdk:
   - title: "Introduction"
-    url: /software/sdk/zigbee_sdk/#introduction
+    url: /software/embedded_sdk/zigbee_sdk/#introduction
   - title: "API Reference"
-    url: /software/sdk/zigbee_sdk/#api-reference
+    url: /software/embedded_sdk/zigbee_sdk/#api-reference
     children:
     - title: "Device Control Method"
-      url: /software/sdk/zigbee_sdk/#device-control-method
+      url: /software/embedded_sdk/zigbee_sdk/#device-control-method
       children:
       - title: "zgb_initialize"
-        url: /software/sdk/zigbee_sdk/#zgb-initialize
+        url: /software/embedded_sdk/zigbee_sdk/#zgb-initialize
       - title: "zgb_terminate"
-        url: /software/sdk/zigbee_sdk/#zgb-terminate
+        url: /software/embedded_sdk/zigbee_sdk/#zgb-terminate
     - title: "Communication Method"
-      url: /software/sdk/zigbee_sdk/#communication-method
+      url: /software/embedded_sdk/zigbee_sdk/#communication-method
       children:
       - title: "zgb_tx_data"
-        url: /software/sdk/zigbee_sdk/#zgb-tx-data
+        url: /software/embedded_sdk/zigbee_sdk/#zgb-tx-data
       - title: "zgb_rx_check"
-        url: /software/sdk/zigbee_sdk/#zgb-rx-check
+        url: /software/embedded_sdk/zigbee_sdk/#zgb-rx-check
       - title: "zgb_rx_data"
-        url: /software/sdk/zigbee_sdk/#zgb-rx-data
+        url: /software/embedded_sdk/zigbee_sdk/#zgb-rx-data
   - title: "Platform Porting"
-    url: /software/sdk/zigbee_sdk/#platform-porting
+    url: /software/embedded_sdk/zigbee_sdk/#platform-porting
     children:
     - title: "zgb_hal_open"
-      url: /software/sdk/zigbee_sdk/#zgb-hal-open
+      url: /software/embedded_sdk/zigbee_sdk/#zgb-hal-open
     - title: "zgb_hal_close"
-      url: /software/sdk/zigbee_sdk/#zgb-hal-close
+      url: /software/embedded_sdk/zigbee_sdk/#zgb-hal-close
     - title: "zgb_hal_tx"
-      url: /software/sdk/zigbee_sdk/#zgb-hal-tx
+      url: /software/embedded_sdk/zigbee_sdk/#zgb-hal-tx
     - title: "zgb_hal_rx"
-      url: /software/sdk/zigbee_sdk/#zgb-hal-rx
+      url: /software/embedded_sdk/zigbee_sdk/#zgb-hal-rx
   - title: "ZIG2Serial"
-    url: /software/sdk/zigbee_sdk/#zig2serial
+    url: /software/embedded_sdk/zigbee_sdk/#zig2serial
     children:
     - title: "Visual C++"
-      url: /software/sdk/zigbee_sdk/#visual-c
+      url: /software/embedded_sdk/zigbee_sdk/#visual-c
     - title: "Visual Basic"
-      url: /software/sdk/zigbee_sdk/#visual-basic
+      url: /software/embedded_sdk/zigbee_sdk/#visual-basic
     - title: "Visual C#"
-      url: /software/sdk/zigbee_sdk/#visual-c#
+      url: /software/embedded_sdk/zigbee_sdk/#visual-c#
     - title: "gcc"
-      url: /software/sdk/zigbee_sdk/#gcc
+      url: /software/embedded_sdk/zigbee_sdk/#gcc
   - title: "CM-510/700"
-    url: /software/sdk/zigbee_sdk/#cm-510700
+    url: /software/embedded_sdk/zigbee_sdk/#cm-510700
 
 #Embedded C CM510/700 sidebar
 embedded_c_cm510:
   - title: "Introduction"
-    url: /software/sdk/embedded_c_cm510/#introduction
+    url: /software/embedded_sdk/embedded_c_cm510/#introduction
   - title: "CM-510/700"
-    url: /software/sdk/embedded_c_cm510/#cm-510700
+    url: /software/embedded_sdk/embedded_c_cm510/#cm-510700
     children:
     - title: "Getting Started"
-      url: /software/sdk/embedded_c_cm510/#getting-started
+      url: /software/embedded_sdk/embedded_c_cm510/#getting-started
       children:
       - title: "Install WinAVR"
-        url: /software/sdk/embedded_c_cm510/#install-winavr
+        url: /software/embedded_sdk/embedded_c_cm510/#install-winavr
       - title: "Install Atmel Studio"
-        url: /software/sdk/embedded_c_cm510/#install-atmel-studio
+        url: /software/embedded_sdk/embedded_c_cm510/#install-atmel-studio
       - title: "Environment Setting"
-        url: /software/sdk/embedded_c_cm510/#environment-setting
+        url: /software/embedded_sdk/embedded_c_cm510/#environment-setting
       - title: "Restore RoboPlus"
-        url: /software/sdk/embedded_c_cm510/#restore-roboplus
+        url: /software/embedded_sdk/embedded_c_cm510/#restore-roboplus
     - title: "Programming"
-      url: /software/sdk/embedded_c_cm510/#programming
+      url: /software/embedded_sdk/embedded_c_cm510/#programming
       children:
       - title: "Hardware Port Map"
-        url: /software/sdk/embedded_c_cm510/#hardware-port-map
+        url: /software/embedded_sdk/embedded_c_cm510/#hardware-port-map
       - title: "Basic Programming"
-        url: /software/sdk/embedded_c_cm510/#basic-programming
+        url: /software/embedded_sdk/embedded_c_cm510/#basic-programming
       - title: "Boot Loader"
-        url: /software/sdk/embedded_c_cm510/#boot-loader
+        url: /software/embedded_sdk/embedded_c_cm510/#boot-loader
     - title: "Examples"
-      url: /software/sdk/embedded_c_cm510/#examples
+      url: /software/embedded_sdk/embedded_c_cm510/#examples
       children:
       - title: "LED Control"
-        url: /software/sdk/embedded_c_cm510/#led-control
+        url: /software/embedded_sdk/embedded_c_cm510/#led-control
       - title: "Button"
-        url: /software/sdk/embedded_c_cm510/#button
+        url: /software/embedded_sdk/embedded_c_cm510/#button
       - title: "Serial Communication"
-        url: /software/sdk/embedded_c_cm510/#serial-communication
+        url: /software/embedded_sdk/embedded_c_cm510/#serial-communication
       - title: "Buzzer"
-        url: /software/sdk/embedded_c_cm510/#buzzer
+        url: /software/embedded_sdk/embedded_c_cm510/#buzzer
       - title: "MIC"
-        url: /software/sdk/embedded_c_cm510/#mic
+        url: /software/embedded_sdk/embedded_c_cm510/#mic
       - title: "IR Sensor"
-        url: /software/sdk/embedded_c_cm510/#ir-sensor
+        url: /software/embedded_sdk/embedded_c_cm510/#ir-sensor
       - title: "Read/Write Dynamixel"
-        url: /software/sdk/embedded_c_cm510/#readwrite-dynamixel
+        url: /software/embedded_sdk/embedded_c_cm510/#readwrite-dynamixel
       - title: "Dynamixel Sync Control"
-        url: /software/sdk/embedded_c_cm510/#dynamixel-sync-control
+        url: /software/embedded_sdk/embedded_c_cm510/#dynamixel-sync-control
       - title: "RC-100/ZIGBEE"
-        url: /software/sdk/embedded_c_cm510/#rc-100zigbee
+        url: /software/embedded_sdk/embedded_c_cm510/#rc-100zigbee
 
 #Embedded C CM530 sidebar
 embedded_c_cm530:
   - title: "Introduction"
-    url: /software/sdk/embedded_c_cm530/#introduction
+    url: /software/embedded_sdk/embedded_c_cm530/#introduction
   - title: "CM-530"
-    url: /software/sdk/embedded_c_cm530/#cm-530
+    url: /software/embedded_sdk/embedded_c_cm530/#cm-530
     children:
     - title: "Getting Started"
-      url: /software/sdk/embedded_c_cm530/#getting-started
+      url: /software/embedded_sdk/embedded_c_cm530/#getting-started
       children:
       - title: "Install JRE"
-        url: /software/sdk/embedded_c_cm530/#install-jre
+        url: /software/embedded_sdk/embedded_c_cm530/#install-jre
       - title: "Install WinARM"
-        url: /software/sdk/embedded_c_cm530/#install-winarm
+        url: /software/embedded_sdk/embedded_c_cm530/#install-winarm
       - title: "Install Eclipse"
-        url: /software/sdk/embedded_c_cm530/#install-atmel-studio
+        url: /software/embedded_sdk/embedded_c_cm530/#install-atmel-studio
       - title: "Verify Installation"
-        url: /software/sdk/embedded_c_cm530/#verify-installation
+        url: /software/embedded_sdk/embedded_c_cm530/#verify-installation
       - title: "Restore RoboPlus"
-        url: /software/sdk/embedded_c_cm530/#restore-roboplus
+        url: /software/embedded_sdk/embedded_c_cm530/#restore-roboplus
     - title: "Programming"
-      url: /software/sdk/embedded_c_cm530/#programming
+      url: /software/embedded_sdk/embedded_c_cm530/#programming
       children:
       - title: "Hardware Port Map"
-        url: /software/sdk/embedded_c_cm530/#hardware-port-map
+        url: /software/embedded_sdk/embedded_c_cm530/#hardware-port-map
       - title: "Open Project"
-        url: /software/sdk/embedded_c_cm530/#open-project
+        url: /software/embedded_sdk/embedded_c_cm530/#open-project
       - title: "Download bin File"
-        url: /software/sdk/embedded_c_cm530/#download-bin-file
+        url: /software/embedded_sdk/embedded_c_cm530/#download-bin-file
       - title: "Boot Loader"
-        url: /software/sdk/embedded_c_cm530/#boot-loader
+        url: /software/embedded_sdk/embedded_c_cm530/#boot-loader
       - title: "Additional Description"
-        url: /software/sdk/embedded_c_cm530/#additional-description
+        url: /software/embedded_sdk/embedded_c_cm530/#additional-description
     - title: "Examples"
-      url: /software/sdk/embedded_c_cm530/#examples
+      url: /software/embedded_sdk/embedded_c_cm530/#examples
       children:
       - title: "LED Control"
-        url: /software/sdk/embedded_c_cm530/#led-control
+        url: /software/embedded_sdk/embedded_c_cm530/#led-control
       - title: "Button"
-        url: /software/sdk/embedded_c_cm530/#button
+        url: /software/embedded_sdk/embedded_c_cm530/#button
       - title: "Serial Communication"
-        url: /software/sdk/embedded_c_cm530/#serial-communication
+        url: /software/embedded_sdk/embedded_c_cm530/#serial-communication
       - title: "Buzzer"
-        url: /software/sdk/embedded_c_cm530/#buzzer
+        url: /software/embedded_sdk/embedded_c_cm530/#buzzer
       - title: "MIC"
-        url: /software/sdk/embedded_c_cm530/#mic
+        url: /software/embedded_sdk/embedded_c_cm530/#mic
       - title: "OLLO Servo CW/CCW"
-        url: /software/sdk/embedded_c_cm530/#ollo-servo-cwccw
+        url: /software/embedded_sdk/embedded_c_cm530/#ollo-servo-cwccw
       - title: "OLLO Servo Position"
-        url: /software/sdk/embedded_c_cm530/#ollo-servo-position
+        url: /software/embedded_sdk/embedded_c_cm530/#ollo-servo-position
       - title: "IR Sensor"
-        url: /software/sdk/embedded_c_cm530/#ir-sensor
+        url: /software/embedded_sdk/embedded_c_cm530/#ir-sensor
       - title: "Read/Write Dynamixel"
-        url: /software/sdk/embedded_c_cm530/#readwrite-dynamixel
+        url: /software/embedded_sdk/embedded_c_cm530/#readwrite-dynamixel
       - title: "Dynamixel Sync Control"
-        url: /software/sdk/embedded_c_cm530/#dynamixel-sync-control
+        url: /software/embedded_sdk/embedded_c_cm530/#dynamixel-sync-control
       - title: "RC-100/ZIGBEE"
-        url: /software/sdk/embedded_c_cm530/#rc-100zigbee
+        url: /software/embedded_sdk/embedded_c_cm530/#rc-100zigbee
 
 #CM-100A Controller sidebar
 cm-100:
