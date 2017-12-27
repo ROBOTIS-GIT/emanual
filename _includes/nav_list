@@ -16,28 +16,6 @@
       {% else %}
         {% assign navurl=nav.url %}
       {% endif %}
-    {% elsif page.lang=='jp' %}
-      {% if nav.titlejp %}
-        {% assign navtitle=nav.titlejp %}
-      {% else %}
-        {% assign navtitle=nav.title %}
-      {% endif %}
-      {% if nav.urljp %}
-        {% assign navurl=nav.urljp %}
-      {% else %}
-        {% assign navurl=nav.url %}
-      {% endif %}
-    {% elsif page.lang=='cn' %}
-      {% if nav.titlecn %}
-        {% assign navtitle=nav.titlecn %}
-      {% else %}
-        {% assign navtitle=nav.title %}
-      {% endif %}
-      {% if nav.urlcn %}
-        {% assign navurl=nav.urlcn %}
-      {% else %}
-        {% assign navurl=nav.url %}
-      {% endif %}
     {% else %}
       {% if nav.title %}
         {% assign navtitle=nav.title %}
@@ -84,28 +62,6 @@
           {% else %}
             {% assign childurl=child.url %}
           {% endif %}
-        {% elsif page.lang=='jp' %}
-          {% if child.titlejp %}
-            {% assign childtitle=child.titlejp %}
-          {% else %}
-            {% assign childtitle=child.title %}
-          {% endif %}
-          {% if child.urljp %}
-            {% assign childurl=child.urljp %}
-          {% else %}
-            {% assign childurl=child.url %}
-          {% endif %}
-        {% elsif page.lang=='cn' %}
-          {% if child.titlecn %}
-            {% assign childtitle=child.titlecn %}
-          {% else %}
-            {% assign childtitle=child.title %}
-          {% endif %}
-          {% if child.urlcn %}
-            {% assign childurl=child.urlcn %}
-          {% else %}
-            {% assign childurl=child.url %}
-          {% endif %}
         {% else %}
           {% assign childtitle=child.title %}
           {% assign childurl=child.url %}
@@ -137,28 +93,6 @@
               {% endif %}
               {% if grandchild.urlkr %}
                 {% assign grandchildurl=grandchild.urlkr %}
-              {% else %}
-                {% assign grandchildurl=grandchild.url %}
-              {% endif %}
-            {% elsif page.lang=='jp' %}
-              {% if grandchild.titlejp %}
-                {% assign grandchildtitle=grandchild.titlejp %}
-              {% else %}
-                {% assign grandchildtitle=grandchild.title %}
-              {% endif %}
-              {% if grandchild.urljp %}
-                {% assign grandchildurl=grandchild.urljp %}
-              {% else %}
-                {% assign grandchildurl=grandchild.url %}
-              {% endif %}
-            {% elsif page.lang=='cn' %}
-              {% if grandchild.titlecn %}
-                {% assign grandchildtitle=grandchild.titlecn %}
-              {% else %}
-                {% assign grandchildtitle=grandchild.title %}
-              {% endif %}
-              {% if grandchild.urlcn %}
-                {% assign grandchildurl=grandchild.urlcn %}
               {% else %}
                 {% assign grandchildurl=grandchild.url %}
               {% endif %}

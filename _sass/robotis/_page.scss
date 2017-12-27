@@ -1,7 +1,47 @@
 #main {
   margin: 0;
   
-  @include breakpoint(1280px) {
-    max-width: 1280px;
+  @include breakpoint($max-width) {
+    max-width: $max-width;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  
+  #main {
+    padding-top: 100px;
+  }
+  
+  #sidebar {
+    float: none;
+    width: 100%;
+    position: relative;
+  }
+  
+  #archive {
+    float: none;
+    max-width: 100%;
+    margin: 0;
+  }
+  
+  #container {
+    display: none;
+  }
+  
+  // #mobile_nav__items {
+  //   width: 100%;
+  //   height: auto;
+  //   opacity: 0.9;
+  //   z-index: 999;
+  // }
+  
+  #site_search {
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+  
+  .menu-icon {
+    display: inline-block;;
   }
 }

@@ -1,24 +1,128 @@
 <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
-        <a class="site-title" href="{{ '/' | absolute_url }}"><img src="/assets/images/robotis_logo.gif" style="padding-right:10px;">e-Manual</a>
-        <form class="searchbox" method="get" id="site_search">
-          <script>
-            (function() {
-              var cx = '003548387656725317882:3pwl9jljqvi';
-              var gcse = document.createElement('script');
-              gcse.type = 'text/javascript';
-              gcse.async = true;
-              gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-              var s = document.getElementsByTagName('script')[0];
-              s.parentNode.insertBefore(gcse, s);
-            })();
-          </script>
-          <gcse:search></gcse:search>
-        </form>
+      <a class="site-title" href="{{ '/' | absolute_url }}"><img src="/assets/images/robotis_emanual_logo.png" style="padding: 10px 10px;"></a>
+      
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="mobile_nav__items">
+        {% for nav in site.data.navigation.main %}
+
+          {% if page.lang=='kr' %}
+            {% if nav.titlekr %}
+              {% assign depth1_title=nav.titlekr %}
+            {% else %}
+              {% assign depth1_title=nav.title %}
+            {% endif %}
+            {% if nav.urlkr %}
+              {% assign depth1_url=nav.urlkr %}
+            {% else %}
+              {% assign depth1_url=null %}
+            {% endif %}
+          {% else %}
+            {% assign depth1_title=nav.title %}
+            {% assign depth1_url=nav.url %}
+          {% endif %}
+
+          {% if nav.children != null %}
+          <li class="mobile_depth_1">
+            <input type="checkbox" name="mobile_nav_depth_1" id="{{ depth1_title }}">
+            <label for="{{ depth1_title }}">{{ depth1_title }}</label>
+            <ul>
+            {% for child in nav.children %}
+              {% if page.lang=='kr' %}
+                {% if child.titlekr %}
+                  {% assign depth2_title=child.titlekr %}
+                {% else %}
+                  {% assign depth2_title=child.title %}
+                {% endif %}
+                {% if child.urlkr %}
+                  {% assign depth2_url=child.urlkr %}
+                {% else %}
+                  {% assign depth2_url=child.url %}
+                {% endif %}
+              {% else %}
+                {% if child.title %}
+                  {% assign depth2_title=child.title %}
+                {% else %}
+                  {% assign depth2_title=null %}
+                {% endif %}
+                {% if child.url %}
+                  {% assign depth2_url=child.url %}
+                {% else %}
+                  {% assign depth2_url=null %}
+                {% endif %}
+              {% endif %}
+              
+              {% if child.children != null %}
+                {% if depth2_title != null %}
+                  <li class="mobile_depth_2">
+                    <input type="radio" name="sublevel" id="{{ depth2_title }}">
+                    <label for="{{ depth2_title }}">{{ depth2_title }}</label>
+                    <ul>
+                    {% for grandchild in child.children %}
+                      {% if page.lang=='kr' %}
+                        {% if grandchild.titlekr %}
+                          {% assign depth3_title=grandchild.titlekr %}
+                        {% else %}
+                          {% assign depth3_title=grandchild.title %}
+                        {% endif %}
+                        {% if grandchild.urlkr %}
+                          {% assign depth3_url=grandchild.urlkr %}
+                        {% else %}
+                          {% assign depth3_url=grandchild.url %}
+                        {% endif %}
+                      {% else %}
+                        {% assign depth3_title=grandchild.title %}
+                        {% assign depth3_url=grandchild.url %}
+                      {% endif %}
+                      {% if depth3_title != null %}
+                        <li class="mobile_depth_3">
+                          <a href="{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ depth3_url }}" class="{{ active }}">{{ depth3_title }}</a>
+                        </li>
+                      {% endif %}
+                    {% endfor %}
+                    </ul>
+                  </li>
+                {% endif %}
+              {% else %}
+                {% if depth2_title != null %}
+                  <li class="mobile_depth_2">
+                    <a href="{{ site.url }}{{ site.baseurl }}/docs/{{ page.lang }}{{ depth2_url }}">{{ depth2_title }}</a>
+                  </li>
+                {% endif %}
+              {% endif %}
+            {% endfor %}
+            </ul>
+          {% else %}
+          <li class="mobile_depth_1">
+            <a href="{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ depth1_url }}">{{ depth1_title }}</a>
+          </li>
+          {% endif %}
+
+          {% if nav.children != null %}
+          </li>
+          {% endif %}
+        {% endfor %}
+        </ul>
+      
+      <form class="searchbox" method="get" id="site_search">
+        <script>
+          (function() {
+            var cx = '003548387656725317882:3pwl9jljqvi';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+          })();
+        </script>
+        <gcse:search></gcse:search>
+      </form>
     </div>
 
-    <div class="container">
+    <div class="container" id="container">
       {% for link in site.data.navigation.main %}
         {% if page.lang=='kr' %}
           {% if link.titlekr %}
@@ -28,28 +132,6 @@
           {% endif %}
           {% if link.urlkr %}
             {% assign headurl=link.urlkr %}
-          {% else %}
-            {% assign headurl=null %}
-          {% endif %}
-        {% elsif page.lang=='jp' %}
-          {% if link.titlejp %}
-            {% assign headtitle=link.titlejp %}
-          {% else %}
-            {% assign headtitle=link.title %}
-          {% endif %}
-          {% if link.urljp %}
-            {% assign headurl=link.urljp %}
-          {% else %}
-            {% assign headurl=null %}
-          {% endif %}
-        {% elsif page.lang=='cn' %}
-          {% if link.titlecn %}
-            {% assign headtitle=link.titlecn %}
-          {% else %}
-            {% assign headtitle=link.title %}
-          {% endif %}
-          {% if link.urlcn %}
-            {% assign headurl=link.urlcn %}
           {% else %}
             {% assign headurl=null %}
           {% endif %}
@@ -86,18 +168,6 @@
                 {% else %}
                   {% assign shouldertitle=null %}
                 {% endif %}
-              {% elsif page.lang=='jp' %}
-                {% if shoulder.titlejp %}
-                  {% assign shouldertitle=shoulder.titlejp %}
-                {% else %}
-                  {% assign shouldertitle=null %}
-                {% endif %}
-              {% elsif page.lang=='cn' %}
-                {% if shoulder.titlecn %}
-                  {% assign shouldertitle=shoulder.titlecn %}
-                {% else %}
-                  {% assign shouldertitle=null %}
-                {% endif %}
               {% else %}
                 {% assign shouldertitle=null %}
               {% endif %}
@@ -111,18 +181,6 @@
               {% elsif page.lang=='kr' %}
                 {% if shoulder.urlkr %}
                   {% assign shoulderurl=shoulder.urlkr %}
-                {% else %}
-                  {% assign shoulderurl=null %}
-                {% endif %}
-              {% elsif page.lang=='jp' %}
-                {% if shoulder.urljp %}
-                  {% assign shoulderurl=shoulder.urljp %}
-                {% else %}
-                  {% assign shoulderurl=null %}
-                {% endif %}
-              {% elsif page.lang=='cn' %}
-                {% if shoulder.urlcn %}
-                  {% assign shoulderurl=shoulder.urlcn %}
                 {% else %}
                   {% assign shoulderurl=null %}
                 {% endif %}
@@ -152,18 +210,6 @@
                     {% else %}
                       {% assign kneetitle=null %}
                     {% endif %}
-                  {% elsif page.lang=='jp' %}
-                    {% if knee.titlejp %}
-                      {% assign kneetitle=knee.titlejp %}
-                    {% else %}
-                      {% assign kneetitle=null %}
-                    {% endif %}
-                  {% elsif page.lang=='cn' %}
-                    {% if knee.titlecn %}
-                      {% assign kneetitle=knee.titlecn %}
-                    {% else %}
-                      {% assign kneetitle=null %}
-                    {% endif %}
                   {% else %}
                     {% assign kneetitle=null %}
                   {% endif %}
@@ -177,18 +223,6 @@
                   {% elsif page.lang=='kr' %}
                     {% if knee.urlkr %}
                       {% assign kneeurl=knee.urlkr %}
-                    {% else %}
-                      {% assign kneeurl=null %}
-                    {% endif %}
-                  {% elsif page.lang=='jp' %}
-                    {% if knee.urljp %}
-                      {% assign kneeurl=knee.urljp %}
-                    {% else %}
-                      {% assign kneeurl=null %}
-                    {% endif %}
-                  {% elsif page.lang=='cn' %}
-                    {% if knee.urlcn %}
-                      {% assign kneeurl=knee.urlcn %}
                     {% else %}
                       {% assign kneeurl=null %}
                     {% endif %}
@@ -213,6 +247,7 @@
         </div>
       {% endfor %}
     </div>
+    
     <div>
       <ul id="search_results" style="margin: 0; background-color: #ffebeb"></ul>
     </div>
