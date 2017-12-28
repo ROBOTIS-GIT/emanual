@@ -24,7 +24,22 @@
   width: 400px;
 }
 
+.cse .gsc-search-button input.gsc-search-button-v2,
+input.gsc-search-button-v2 {
+  height: 26px !important;
+  margin-top: 0 !important;
+  min-width: 13px !important;
+  padding: 5px 26px !important;
+  width: 68px !important;
+}
 
+.cse .gsc-control-cse, .gsc-control-cse {
+  padding: 0.5em !important;
+}
+
+.gsib_a {
+  padding: 0 !important;
+}
 
 /*dropdown menu css*/
 $top-bgcolor: #333;
@@ -120,7 +135,7 @@ $bottom-textcolor: white;
   margin-top: 50px;
   width: 100%;
   opacity: 0.95;
-  z-index: 999;
+  z-index: 20;
 }
 
 .mobile_nav__items ul {
@@ -253,6 +268,7 @@ $bottom-textcolor: white;
   background-color: $top-bgcolor;
   font-family: Arial;
   max-width: $max-width;
+  z-index: 900;
 }
 
 .dropdown {

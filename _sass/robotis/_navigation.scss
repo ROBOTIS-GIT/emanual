@@ -1,12 +1,3 @@
-.nav__list {
-  margin-bottom: 1.5em;
-}
-
-.nav__list .nav__items {
-  margin: 0;
-  // font-size: 1.25rem;
-}
-
 .nav__items {
   width: 100%;
   max-width: 600px;
@@ -24,6 +15,7 @@
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  list-style: none;
 }
 
 .nav__items input[type=radio] {
@@ -38,8 +30,7 @@
   background: #fff;
   box-shadow: inset 0 -1px #2174b6;
   color: #494e52;
-  // font-size: 0.8rem;
-  // padding: 3px 10px;
+  text-decoration: none;
 }
 
 .nav__items label:hover, .nav__items a:hover {
@@ -51,56 +42,43 @@
   /* show open folder icon if item is checked */
   background-position: -32px 0;
 }
+
 .nav__items input[type=radio]:checked + label + ul,
 .nav__items input[type=radio]:checked + label:nth-of-type(n) + ul {
   /* use label:nth-of-type(n) to fix a bug on safari (<= 8.0.8) with multiple adjacent-sibling selectors*/
   /* show children when item is checked */
   display: block;
 }
+
 .nav__items ul label,
 .nav__items ul a {
   background: #fff;
-  box-shadow: inset 0 -1px #50adf7;
+  box-shadow: inset 0 -1px #2174b6;
   color: #487ea9;
-  // font-size: 0.9em;
-  // padding: 3px 20px;
+  text-decoration: none;
+  font-size: 0.85em;
 }
+
 .nav__items ul label:hover,
 .nav__items ul a:hover {
   background: #eee;
 }
-.nav__items > li > label,
+
 .nav__items > li > a,
-.nav__items > li > ul > li label,
-.nav__items > li > ul > li a {
-  box-shadow: none;
+.nav__items > li > label {
   padding-left: 20px;
+  font-size: 1em;
+  font-weight: bold;
 }
 
-// .nav__items ul ul label,
-// .nav__items ul ul a {
-//   // font-size: 0.9em;
-//   padding-left: 30px;
-// }
-// 
-// .nav__items ul ul ul label,
-// .nav__items ul ul ul a {
-//   padding-left: 118px;
-// }
-// 
-// @include breakpoint(max-width ($large - 1px)) {
-//   .nav__list input:checked ~ .nav__items {
-//     -webkit-transition: 0.5s ease-in-out;
-//     transition: 0.5s ease-in-out;
-//     max-height: 9999px; /* exaggerate max-height to accommodate tall lists*/
-//     overflow: visible;
-//     opacity: 1;
-//     margin-top: 1em;
-//     -webkit-transform: translate(0, 0);
-//             -ms-transform: translate(0, 0);
-//         transform: translate(0, 0);
-//   }
-// }
+.nav__items > li > ul > li a,
+.nav__items > li > ul > li label {
+  padding-left: 30px;
+}
+
+.nav__items > li > ul > li > ul > li a {
+  padding-left: 45px;
+}
 
 .nav__title {
   margin: 0;

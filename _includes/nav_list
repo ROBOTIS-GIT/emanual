@@ -2,7 +2,7 @@
 
 <nav class="nav__list">
 
-  {% if page.sidebar.title %}<a href={{ page.permalink | absolute_url }} style="font-size:$type-size-6; color: #2174b6;">{{ page.sidebar.title }}</a>{% endif %}
+  {% if page.sidebar.title %}<a href={{ page.permalink | absolute_url }} style="font-size:$type-size-6; color: #2174b6; text-decoration: none;">{{ page.sidebar.title }}</a>{% endif %}
   <ul class="nav__items">
   {% for nav in navigation %}
     {% if page.lang=='kr' %}
@@ -33,7 +33,7 @@
 
     <li class="has-children">
       <input type="radio" name="toplevel" id="toplevel_{{ forloop.index0 }}">
-      <label for="toplevel_{{ forloop.index0 }}">{{ navtitle }}</label>
+      <label for="toplevel_{{ forloop.index0 }}">{{ navtitle }} &loz;</label>
     {% else %}
 
     <li>
@@ -70,7 +70,7 @@
         {% if child.children != null %}
         <li class="has-children">
           <input type="radio" name="sublevel" id="{{ childtitle }}">
-          <label for="{{ childtitle }}">{{ childtitle }}</label>
+          <label for="{{ childtitle }}">{{ childtitle }} &loz;</label>
         {% else %}
         <li><a href="{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ childurl }}" class="{{ active }}">{{ childtitle }}</a></li>
         {% endif %}

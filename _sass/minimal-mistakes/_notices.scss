@@ -11,11 +11,10 @@
  */
 
 @mixin notice($notice-color) {
-  margin-top: 2em !important;  /* override*/
-  margin-bottom: 2em !important;
+  margin: 1em !important;  /* override*/
   padding: 1em;
   font-family: $global-font-family;
-  font-size: 16px !important;
+  font-size: 1em !important;
   text-indent: initial; /* override*/
   background-color: mix(#fff, $notice-color, 90%);
   border-radius: $border-radius;
@@ -44,7 +43,7 @@
 /* Default notice */
 
 .notice {
-  @include notice($light-gray);
+  @include notice($gray);
 }
 
 /* Primary notice */
@@ -75,4 +74,34 @@
 
 .notice--danger {
   @include notice($danger-color);
+}
+
+.highlighter-rouge {
+  position: relative;
+  margin-bottom: 1em;
+  font-family: $monospace;
+  font-size: 0.8em;
+  line-height: 1.8;
+  border: 1px solid black;
+  border-radius: $border-radius;
+  background-color: $code-background-color;
+  box-shadow: $box-shadow;
+
+  &:before {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0.5em;
+    background-color: $lighter-gray;
+    content: "\f121";
+    font-family: "fontawesome" !important;
+    line-height: 1;
+    text-transform: none;
+    speak: none;
+  }
+
+  .highlight {
+    margin: 0;
+    padding: 1em;
+  }
 }

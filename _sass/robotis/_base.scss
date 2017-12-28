@@ -43,6 +43,9 @@ h1 {
     counter-increment: h1;
     content: counter(h1) ". ";
   }
+  ~ p {
+    margin-left: 1em;
+  }
 }
 
 h2 {

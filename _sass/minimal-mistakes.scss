@@ -20,12 +20,12 @@
 //@import "minimal-mistakes/reset";
 @import "robotis/base";
 //@import "minimal-mistakes/forms";
-//@import "minimal-mistakes/tables";
+@import "robotis/tables";
 //@import "minimal-mistakes/animations";
 
 /* Components */
 //@import "minimal-mistakes/buttons";
-//@import "minimal-mistakes/notices";
+@import "minimal-mistakes/notices";
 //@import "minimal-mistakes/masthead";
 @import "robotis/masthead";
 //@import "minimal-mistakes/navigation";
