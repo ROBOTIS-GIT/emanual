@@ -10,11 +10,12 @@
   
   #main {
     padding-top: 100px;
+    width: 95%;
   }
   
   #sidebar {
     float: none;
-    width: 100%;
+    width: 95%;
     position: relative;
     margin: 0 2em;
     padding: 0;
@@ -24,6 +25,7 @@
     float: none;
     max-width: 100%;
     margin: 0 1em;
+    padding: 0;
   }
   
   #container {
@@ -41,6 +43,7 @@
     position: relative;
     display: block;
     width: 100%;
+    padding-left: 1em;
   }
   
   .menu-icon {

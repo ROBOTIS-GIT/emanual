@@ -46,9 +46,9 @@ $type-size-2                : 1.953em !default;  // ~31.248px
 $type-size-3                : 1.563em !default;  // ~25.008px
 $type-size-4                : 1.25em !default;   // ~20px
 $type-size-5                : 1em !default;      // ~16px
-$type-size-6                : 0.85em !default;   // ~12px
-$type-size-7                : 0.75em !default; // ~11px
-$type-size-8                : 0.7em !default;  // ~10px
+$type-size-6                : 0.95em !default; 
+$type-size-7                : 0.9em !default;
+$type-size-8                : 0.7em !default; 
 
 
 $border-radius              : 5px !default;
@@ -57,7 +57,7 @@ $box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.125) !default;
 
 /* links */
 $link-color                 : #116AC6 !default;
-$link-color-hover           : mix(#000, $link-color, 25%) !default;
+$link-color-hover           : #ff0000 !default; //mix(#000, $link-color, 25%) !default;
 $link-color-visited         : mix(#fff, $link-color, 25%) !default;
 $masthead-link-color        : black !default;
 $masthead-link-color-hover  : mix(#000, $primary-color, 25%) !default;

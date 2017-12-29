@@ -3,11 +3,12 @@
   /* sticky footer fix start */
   position: relative;
   bottom: 0;
-  max-width: 100%;
+  width: 100%;
   clear: both;
   height: auto;
+  font-size: 0.9em;
   /* sticky footer fix end */
-  margin-top: 3em;
+
   color: mix(#fff, #7a8288, 25%);
   -webkit-animation: intro 0.3s both;
           animation: intro 0.3s both;
@@ -30,7 +31,7 @@
     text-decoration: none;
 
     &:hover {
-      text-decoration: underline;
+      color: #ff0000;
     }
   }
 

@@ -21,7 +21,13 @@
 
 .searchbox {
   float: right;
-  width: 400px;
+  width: 300px;
+  margin: 0.45rem;
+}
+
+#google_translate_element {
+  float: left;
+  margin: 0.5rem;
 }
 
 .cse .gsc-search-button input.gsc-search-button-v2,
@@ -34,11 +40,15 @@ input.gsc-search-button-v2 {
 }
 
 .cse .gsc-control-cse, .gsc-control-cse {
-  padding: 0.5em !important;
+  padding: 0 !important;
 }
 
 .gsib_a {
   padding: 0 !important;
+}
+
+.goog-te-gadget-icon {
+  padding: 9px;
 }
 
 /*dropdown menu css*/
@@ -168,6 +178,7 @@ $bottom-textcolor: white;
   text-align: left;
   box-shadow: inset 0 -1px #bbb9b9;
   padding: 2px 1em;
+  text-decoration: none;
 }
 
 .mobile_depth_1 label:hover, .mobile_depth_1 a:hover {
@@ -183,6 +194,7 @@ $bottom-textcolor: white;
   font-size: 1.1rem;
   text-align: left;
   padding: 2px 3em;
+  text-decoration: none;
 }
 
 .mobile_depth_2 label:hover, .mobile_depth_2 a:hover {
@@ -198,6 +210,7 @@ $bottom-textcolor: white;
   font-size: 1.0rem;
   text-align: left;
   padding: 2px 6em;
+  text-decoration: none;
 }
 
 .mobile_depth_3 label:hover, .mobile_depth_3 a:hover {

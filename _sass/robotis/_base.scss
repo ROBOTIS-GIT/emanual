@@ -2,6 +2,14 @@
    BASE ELEMENTS
    ========================================================================== */
 
+@mixin indentation {
+  padding-left: 1.5em;
+  
+  li > ul, ol, p, div {
+    margin: 0;
+  }
+}
+
 html {
   /* sticky footer fix */
   position: relative;
@@ -22,6 +30,24 @@ body {
   }
 }
 
+.header-link {
+  position: relative;
+  margin-left: 0.5em;
+  opacity: 0;
+
+  \-webkit-transition: opacity 0.1s ease-in-out 0.1s;
+  \-moz-transition: opacity 0.1s ease-in-out 0.1s;
+  \-ms-transition: opacity 0.1s ease-in-out 0.1s;
+}
+
+h2:hover .header-link,
+h3:hover .header-link,
+h4:hover .header-link,
+h5:hover .header-link,
+h6:hover .header-link {
+  opacity: 1;
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin: 1.5em 0 0.5em;
   line-height: 1.2;
@@ -34,7 +60,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-h1 {
+.class-h1 {
   counter-reset: h2;
   font-size: $type-size-4;
   color: #134268;
@@ -43,13 +69,23 @@ h1 {
     counter-increment: h1;
     content: counter(h1) ". ";
   }
-  ~ p {
-    margin-left: 1em;
+  
+  + div {
+    p, div {
+      margin: 0.5em 0.5em 0 1em;
+    }
+    table {
+      margin: 0.5em 0.5em 0 2em;
+    }
+    ul, ol {
+      margin: 0.5em 0 0 1em;
+      @include indentation;
+    }
   }
 }
 
-h2 {
-  margin-left: 0.5em;
+.class-h2 {
+  margin-left: 1em;
   counter-reset: h3;
   font-size: $type-size-5;
   color: #1a5b8f;
@@ -59,25 +95,22 @@ h2 {
     content: counter(h1) ". " counter(h2) ". ";
   }
 
-  ~ p {
-    margin-left: 0.5em;
-  }
-
-  ~ ul {
-    margin-left: 0.5em;
-  }
-
-  ~ ol {
-    margin-left: 0.5em;
-  }
-  
-  ~ table {
-    margin-left: 0.5em;
+  + div {
+    p, div {
+      margin: 0.5em 0.5em 0 2em;
+    }
+    table {
+      margin: 0.5em 0.5em 0 3em;
+    }
+    ul, ol {
+      margin: 0.5em 2em 0 2em;
+      @include indentation;
+    }
   }
 }
 
-h3 {
-  margin-left: 1em;
+.class-h3 {
+  margin-left: 2.2em;
   counter-reset: h4;
   font-size: $type-size-5;
   color: #2174b6;
@@ -87,25 +120,22 @@ h3 {
     content: counter(h1) ". " counter(h2) ". " counter(h3) ". ";
   }
 
-  ~ p {
-    margin-left: 1em;
-  }
-
-  ~ ul {
-    margin-left: 1em;
-  }
-
-  ~ ol {
-    margin-left: 1em;
-  }
-  
-  ~ table {
-    margin-left: 1em;
+  + div {
+    p, div {
+      margin: 0.5em 0.5em 0 3.3em;
+    }
+    table {
+      margin: 0.5em 0.5em 0 4.3em;
+    }
+    ul, ol {
+      margin: 0.5em 2em 0 3.3em;
+      @include indentation;
+    }
   }
 }
 
-h4 {
-  margin-left: 1.5em;
+.class-h4 {
+  margin-left: 3.3em;
   font-size: $type-size-5;
   color: #2686d2;
 
@@ -114,62 +144,66 @@ h4 {
     content: counter(h1) ". " counter(h2) ". " counter(h3) ". " counter(h4) ". ";
   }
 
-  ~ p {
-    margin-left: 1.5em;
-  }
-
-  ~ ul {
-    margin-left: 1.5em;
-  }
-
-  ~ ol {
-    margin-left: 1.5em;
-  }
-  
-  ~ table {
-    margin-left: 1.5em;
+  + div {
+    p, div {
+      margin: 0.5em 0.5em 0 4.5em;
+    }
+    table {
+      margin: 0.5em 0.5em 0 5.5em;
+    }
+    ul, ol {
+      margin: 0.5em 1em 0 4.5em;
+      @include indentation;
+    }
   }
 }
 
-h5 {
-  margin-left: 2em;
+.class-h5 {
+  margin-left: 5em;
   font-size: $type-size-6;
   font-style: italic;
   
-  ~ p {
-    margin-left: 2em;
-  }
-
-  ~ ul {
-    margin-left: 2em;
-  }
-
-  ~ ol {
-    margin-left: 2em;
-  }
-  
-  ~ table {
-    margin-left: 2em;
+  + div {
+    p, div {
+      margin: 0.5em 0.5em 0 6em;
+    }
+    table {
+      margin: 0.5em 0.5em 0 7em;
+    }
+    ul, ol {
+      margin: 0.5em 1em 0 6em;
+      @include indentation;
+    }
   }
 }
 
-h6 {
-  margin-left: 2.3em;
-  font-size: $type-size-7;
+.class-h6 {
+  margin-left: 6.2em;
+  font-size: $type-size-6;
   
-  ~ p {
-    margin-left: 2.3em;
+  + div {
+    p, div {
+      margin: 0.5em 0.5em 0 7em;
+    }
+    table {
+      margin: 0.5em 0.5em 0 8em;
+    }
+    ul, ol {
+      margin: 0.5em 1em 0 7em;
+      @include indentation;
+    }
   }
+}
 
-  ~ ul {
-    margin-left: 2.3em;
-  }
+a {
+  color: $link-color;
+  text-decoration: none;
 
-  ~ ol {
-    margin-left: 2.3em;
+  &:hover {
+    color: $link-color-hover;
   }
-  
-  ~ table {
-    margin-left: 2.3em;
-  }
+}
+
+ul > li > ul {
+  margin-left: 1.2em;
 }

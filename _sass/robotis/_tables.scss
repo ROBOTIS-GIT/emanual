@@ -6,7 +6,7 @@ table {
   margin-bottom: 1em;
   width: auto;
   font-family: $global-font-family;
-  font-size: 1em;
+  font-size: 0.8em;
   border-collapse: collapse;
   border: 1px solid $light-gray;
 
@@ -40,6 +40,11 @@ td {
   padding: 0.5em;
   border-bottom: 1px solid $light-gray;
   border-right: 1px solid $light-gray;
+}
+
+.gsc-input, .gsib_a, .gsib_b, .gsc-search-button, .gstl_50 {
+  padding: 0;
+  border: 0;
 }
 
 /*
