@@ -1,0 +1,450 @@
+---
+layout: archive
+lang: kr
+ref: rplus2_manager
+read_time: true
+share: true
+author_profile: false
+permalink: /docs/kr/software/rplus2/manager/
+sidebar:
+  title: R+ Manager 2.0 light
+  nav: "rplusmanager2"
+---
+
+# [시작하기](#시작하기)
+
+## [메뉴설명](#메뉴설명)
+
+
+1. 단계별 편집탭
+
+  작업 영역이 홈 탭, 관리 탭, 터미널 탭으로 분리됩니다.
+
+  (V2.0.0 기준으로 관리 탭의 자가진단 / 캘리브래이션 기능과 터미널 탭 기능이 미지원 됩니다.)
+
+  ![](/assets/images/sw/rplus2/manager/r+manager2_4.jpg)
+
+2. 홈 탭
+
+  프로그램 시작시 첫 화면으로 제품 선택 메뉴와 펌웨어 업데이트 내역 기능 등을 제공합니다.
+
+  ![](/assets/images/sw/rplus2/manager/r+manager2_5.jpg)
+
+3. 관리 탭
+
+  앞서 선택한 제품의 펌웨어 업데이트 / 테스트 / 복구 기능을 제공합니다. 선택된 제품에 따라 사용할 수 있는 기능이 필터링되어 나타납니다.
+
+  ![](/assets/images/sw/rplus2/manager/r+manager2_6.jpg)
+
+  아래 그림은 컨트롤 테이블을 테스트하는 화면입니다. 검색된 제품을 통신속도, 모델에 따라 분류하여 나타내며, 컨트롤 테이블 값을 수정하며 테스트해볼 수 있습니다.
+
+  ![](/assets/images/sw/rplus2/manager/r+manager2_7.jpg)
+
+4. 터미널 탭(준비중)
+
+  해당 기능은 현재 준비 중이며 추후 업데이트를 통해 지원할 예정입니다.
+
+
+## [소개](#소개)
+
+  1. 로보플러스 매니저 2.0 (R+ Manager 2.0)
+
+  로보플러스 매니저 2.0은 로봇을 구성하는 제어기와 다이나믹셀 장치들을 통합 관리합니다.
+
+  제품을 연결하면 해당 제품을 최신버전으로 업데이트할 수 있으며, 컨트롤 테이블을 테스트해볼 수 있습니다.
+
+  기존의 로보플러스 매니저1.0과 위자드1.0에서 제공하던 기능이 로보플러스 매니저 2.0에서 통합되었습니다.
+
+  ![](/assets/images/sw/rplus2/manager/r+manager2_2.jpg)
+
+  2. 사용 전 주의 사항
+
+  V2.0.0 기준으로 지원 제품이 한정됩니다. 지원 제품 목록에 포함되지 않는 제품의 경우 로보플러스 매니저1.0과 위자드1.0을 사용하시기 바랍니다.
+
+
+
+  지원 제품 목록
+
+  - [로보티즈 드림]
+
+  - [로보티즈 스마트(스마트2)]
+
+  - [로보티즈 IoT]
+
+  - [로보티즈 미니]
+
+  - [다이나믹셀 2.0 시리즈] ([MX-28, MX-64, MX-106], [XL-320, XM시리즈, XH시리즈], [Pro시리즈])
+
+  ![](/assets/images/sw/rplus2/manager/r+manager2_3.jpg)
+
+# [개념소개](#개념소개)
+
+# 펌웨어 (F/W : Firmware) 정의
+
+  펌웨어는 하드웨어 장치를 구동하기 위하여 장치에 설치하는 기본적인 소프트웨어입니다. 펌웨어에는 PC나 스마트폰, 다른 장치와의 통신 약속이 포함되기 때문에 가급적 펌웨어를 최신상태로 유지할 것을 권장합니다.
+
+  모든 장치(제어기, 다이나믹셀 등)는 처음 구매시 펌웨어가 설치되어있으나, 기능 추가 / 버그 수정이 있을 경우 새로운 버전을 배포하기도 합니다.
+
+
+
+  **제어기 펌웨어의 역할**
+
+  - 로보플러스 태스크를 통해 작성한 제어프로그램을 구동합니다.
+
+  - 로보플러스 모션을 통해 작성한 모션 데이터를 해석합니다.
+
+  - PC나 스마트폰, 다이나믹셀과의 패킷 통신 기능을 합니다.
+
+
+
+**다이나믹셀 펌웨어의 역할**
+
+  - 제어기에서 제어프로그램이나 모션 구동시 제어기와의 패킷 통신 기능을 합니다.
+
+  - PC나 스마트폰, 다이나믹셀과의 패킷 통신 기능을 합니다.
+
+
+# 펌웨어 업데이트의 중요성
+
+  새로운 기능이 추가되거나 기존의 기능이 수정될 경우, 새로운 펌웨어가 배포될 수 있습니다.
+
+  새로운 S/W를 지원해야 하는 경우, 호환성 향상을 위해 새로운 펌웨어가 배포될 수 있습니다.
+
+  버그 수정이 있을 경우, 새로운 버전의 펌웨어가 배포될 수 있습니다.
+
+  제품이 정상적으로 동작하지 않거나, 통신이 원활하지 않을 경우, 최신 펌웨어 업데이트를 통해 문제가 해결될 수 있습니다.
+
+# [따라해보기](#따라해보기)
+
+## [펌웨어 업데이트하기](#펌웨어-업데이트하기)
+
+① 홈 탭에서 업데이트 및 테스트를 진행할 제품을 선택합니다. (예시에서는 ROBOTIS MINI를 선택함)
+
+![](/assets/images/sw/rplus2/manager/r+manager2_8.jpg)
+
+② “업데이트 및 테스트” 메뉴를 선택합니다.
+
+![](/assets/images/sw/rplus2/manager/r+manager2_9.jpg)
+
+③ 안내에 따라 제품과 PC를 연결한 후 제품을 켭니다.
+
+![](/assets/images/sw/rplus2/manager/r+manager2_10.jpg)
+
+④ 연결할 포트를 선택한 후 “다음”버튼을 클릭합니다. (예시에서는 블루투스 시리얼 포트를 사용함)
+
+![](/assets/images/sw/rplus2/manager/r+manager2_11.jpg)
+
+⑤ 검색할 통신속도를 선택한 후 “다음”버튼을 클릭합니다.
+
+(블루투스 시리얼 포트 사용시 57600bps만 가능함)
+
+![](/assets/images/sw/rplus2/manager/r+manager2_47.jpg)
+
+⑥ 관리할 대상이 정상적으로 검색되었는지 확인한 후 다음 버튼을 클릭합니다.
+
+(만약, 제품 검색이 정상적으로 이뤄지지 않을 경우 다시 시도 버튼을 클릭하세요.)
+
+![](/assets/images/sw/rplus2/manager/r+manager2_12.jpg)
+
+⑦ 업데이트할 내용이 감지되면 아래의 “지금 업데이트” 버튼이 활성화됩니다.
+
+업데이트 내용을 확인한 후 “지금 업데이트”버튼을 클릭합니다.
+
+![](/assets/images/sw/rplus2/manager/r+manager2_13.jpg)
+
+⑧ 업데이트가 정상적으로 완료될 때까지 기다린 후, “다음” 버튼을 클릭합니다.
+
+![](/assets/images/sw/rplus2/manager/r+manager2_14.jpg)
+
+⑨ 업데이트가 완료되면 “컨트롤 테이블 테스트” 기능이 실행됩니다.
+
+(일부 제어기는 업데이트 완료 후 전원이 꺼지며, 대화창이 종료됩니다.)
+
+![](/assets/images/sw/rplus2/manager/r+manager2_15.jpg)
+
+
+## [컨트롤 테이블 테스트하기](#컨트롤-테이블-테스트하기)
+
+① 컨트롤 테이블 창이 열려있다는 가정으로 진행합니다.  
+  (연결하는 과정은 “업데이트 하기”를 참고하세요.)
+
+② 컨트롤 테이블 창은 장치를 통신속도, 장치, 순으로 분류합니다.  
+테스트할 통신속도 그룹과 장치를 선택합니다. (예시에서는 XL-320을 선택함.)
+
+![](/assets/images/sw/rplus2/manager/r+manager2_16.jpg)
+
+③ 좌측 메뉴에서 “팩토리 리셋” 버튼을 클릭하면 제품을 공장 초기화 상태로 되돌릴 수 있습니다.
+
+(이때, ID와 Baudrate 값은 변경하지 않습니다.)
+
+좌측 메뉴에서 “리부팅” 버튼을 클릭하면 해당 다이나믹셀을 재부팅할 수 있습니다.
+
+좌측 메뉴에서 “토크 켜기” 버튼을 클릭하면 해당 다이나믹셀의 토크를 켜거나 끌 수 있습니다.
+
+![](/assets/images/sw/rplus2/manager/r+manager2_17.jpg)
+
+ 
+④ 좌측 메뉴의 “토크 켜기” 버튼을 클릭하여 다이나믹셀의 토크를 켭니다.
+
+⑤ 컨트롤 테이블 항목에서 “Goal Position”항목을 찾아 선택합니다.
+
+⑥ 우측 하단의 위치 값 컨트롤을 사용하여 모터를 움직여봅니다.
+
+**(값을 조정하는 과정에서 모터가 갑작스럽게 움직일 수 있으니 주의하세요.)**
+
+![](/assets/images/sw/rplus2/manager/r+manager2_18.jpg)
+
+⑦ 좌측 하단의 “통신 상태” LED를 통해 현재 PC와 제품의 통신이 원활히 이루어지고 있는지 확인할 수 있습니다. (초록색 : 정상, 노란색 : 타임아웃, 빨간색 : 데이터 소실)
+
+⑧ 좌측 하단의 “응답 에러” 메시지를 통해 다이나믹셀의 응답상태를 확인할 수 있습니다.
+
+⑨ 좌측 하단의 “하드웨어 알람” 메시지를 통해 하드웨어의 에러상태를 확인할 수 있습니다.
+
+![](/assets/images/sw/rplus2/manager/r+manager2_19.jpg)
+
+⑩ 일부 다이나믹셀의 경우 프로파일 타입 상태 보기 기능을 제공합니다.
+
+특정 Operating Mode에서 Profile Acceleration 값과 Profile Velocity 값에 따라 프로파일 타입이 결정됩니다. 자세한 사항은 해당 다이나믹셀의 E-Manual을 참고하세요.
+
+(지원 가능한 제품 : XM시리즈와 XH시리즈)
+
+![](/assets/images/sw/rplus2/manager/r+manager2_20.jpg)
+
+⑪ 컨트롤 테이블에 대한 더 많은 정보를 얻으려면 각 제품의 E-Manual을 참고하세요.
+
+([다이나믹셀 E-Manual 바로가기]. [다이나믹셀 프로 E-Manual 바로가기])
+
+## [펌웨어 복구하기](#펌웨어-복구하기)
+
+① 홈 탭에서 펌웨어 복구를 진행할 제품을 선택합니다. (예시에서는 ROBOTIS MINI를 선택함)
+
+![](/assets/images/sw/rplus2/manager/r+manager2_21.jpg)
+
+② “펌웨어 복구” 메뉴를 선택합니다.
+
+![](/assets/images/sw/rplus2/manager/r+manager2_22.jpg)
+
+③ 안내 메시지를 확인한 후 “다음” 버튼을 클릭하세요.
+
+![](/assets/images/sw/rplus2/manager/r+manager2_23.jpg)
+
+④ 복구를 진행할 제품을 선택한 후 “다음” 버튼을 클릭합니다. (예시에서는 OpenCM9.04를 선택함.)
+
+![](/assets/images/sw/rplus2/manager/r+manager2_24.jpg)
+
+⑤ 안내를 순서대로 따라서 진행합니다. 노란색 경고 문구를 반드시 숙지하세요!
+
+⑥ 모든 준비를 마치면 “다음” 버튼을 클릭합니다.
+
+![](/assets/images/sw/rplus2/manager/r+manager2_25.jpg)
+
+⑦ 연결할 포트를 선택한 후 “다음”버튼을 클릭합니다. (예시에서는 블루투스 시리얼 포트를 사용함)
+
+![](/assets/images/sw/rplus2/manager/r+manager2_48.jpg)
+
+⑧ 장치가 연결되면 펌웨어 설치를 위해 부트로더를 감지합니다.
+
+“다음” 버튼이 활성화되면 클릭합니다.
+
+![](/assets/images/sw/rplus2/manager/r+manager2_26.jpg)
+
+⑨ 설치할 펌웨어 정보를 확인한 후 “다음” 버튼을 클릭합니다.
+
+![](/assets/images/sw/rplus2/manager/r+manager2_27.jpg)
+
+⑩ 복구가 정상적으로 완료되면 “마침” 버튼을 클릭합니다.
+
+![](/assets/images/sw/rplus2/manager/r+manager2_28.jpg)
+
+# [유용한 정보](#유용한-정보)
+
+## [XM/XH 시리즈를 R+ 2.0 S/W에 연결할 시 사전 준비 안내](#XMXH-시리즈를-R-2-0-sw에-연결할-시-사전-준비-안내)
+
+XM 시리즈를 R+Task2.0이나 R+Motion2.0에서 사용하기 위해서는 두 가지 사전준비를 거쳐야 합니다.
+
+(H/W 준비하기 / Dynamixel Channel 설정하기)
+
+# H/W 준비하기
+
+① 아래 그림처럼 OpenCM9.04과 XM시리즈 외에 “OpenCM 485 EXP 보드” 가 필요합니다.
+
+② 아래 3가지를 케이블로 연결합니다.
+
+![](/assets/images/sw/rplus2/manager/r+manager2_29.jpg)
+
+# Dynamixel Channel 설정하기
+
+① R+ Manager 2.0을 실행하여 Dynamixel2.0 제품을 선택한 후, 업데이트 & 테스트 메뉴를 실행합니다.
+
+![](/assets/images/sw/rplus2/manager/r+manager2_30.jpg)
+
+② OpenCM9.04에 LN-101 또는 BT-210(혹은 BT-110)을 사용하여 PC와 연결한 후, OpenCM 485 EXP의 전원을 켭니다.
+
+③ 안내에 따라 제품을 검색하면 OpenCM9.04가 검색됩니다.
+
+(처음에는 OpenCM9.04의 Dynamixel Channel 값이 Default로 설정되어 있어 XM/XH시리즈가 검색되지 않습니다.)
+
+![](/assets/images/sw/rplus2/manager/r+manager2_31.jpg)
+
+④ 제품을 업데이트하는 과정을 거치면 컨트롤 테이블이 실행됩니다.
+
+⑤ 컨트롤 테이블 항목에서 Dynamixel Channel 값을 EXP Board로 설정한 후 저장합니다.
+
+![](/assets/images/sw/rplus2/manager/r+manager2_32.jpg)
+
+⑥ 설정이 완료되면 컨트롤 테이블 창을 닫고, OpenCM 485 EXP의 전원을 껐다가 켭니다.
+
+(이때, 재부팅되면서 OpenCM9.04의 미니 TTL버스가 비활성화되고 OpenCM 485 EXP의 다이나믹셀 버스가 활성화 됩니다.)
+
+⑦ 업데이트 & 테스트 메뉴를 다시 실행하여 XM/XH시리즈가 정상적으로 검색되는지 확인합니다.
+
+![](/assets/images/sw/rplus2/manager/r+manager2_33.jpg)
+
+⑧ 설정이 완료되면 R+ Task 2.0과 R+ Motion 2.0에서 XM/XH 시리즈를 사용할 수 있게 됩니다.
+
+(R+ Task 2.0 v2.1.0, R+ Motion 2.0 v2.4.0 이상 버전에서 지원)
+
+## [컨트롤 아이템 값 변경 방법](#컨트롤-아이템-값-변경-방법)
+
+마우스 왼쪽 버튼 드래그로 변경하기 (값을 크게 변경할 때 사용합니다.)
+
+![](/assets/images/sw/rplus2/manager/r+manager2_34.jpg)
+
+마우스 휠로 변경하기 (값을 조금 키우거나 줄일 때 사용합니다.)
+
+![](/assets/images/sw/rplus2/manager/r+manager2_35.jpg)
+
+키보드 방향키로 변경하기 (값을 미세하게 키우거나 줄일 때 사용합니다.)
+
+![](/assets/images/sw/rplus2/manager/r+manager2_36.jpg)
+
+값 직접 입력하기 (간단한 연산 식(덧셈, 뺄셈)의 입력이 가능합니다.)
+
+![](/assets/images/sw/rplus2/manager/r+manager2_37.jpg)
+
+## [펌웨어 정보 확인하기](#펌웨어 정보 확인하기)
+
+제품의 펌웨어 버전, 배포일, 업데이트 노트를 확인하는 기능입니다.
+
+① 홈 탭으로 이동한 후, 펌웨어 정보를 확인할 제품을 선택합니다.
+
+② 우측 상단의 “펌웨어 정보” 버튼을 클릭합니다.
+
+![](/assets/images/sw/rplus2/manager/r+manager2_38.jpg)
+
+③ 선택된 제품의 펌웨어 버전, 배포일, 업데이트 노트를 확인할 수 있습니다.
+
+![](/assets/images/sw/rplus2/manager/r+manager2_39.jpg)
+
+
+## [블루투스를 이용한 펌웨어 관리](#블루투스를-이용한-펌웨어-관리)
+
+BT-210, BT-110을 이용하면 무선으로 펌웨어 관리를 진행하실 수 있습니다.
+
+(BT-410의 경우 무선 펌웨어 관리 기능을 제공하지 않습니다.)
+
+
+다음 설명에 따라 블루투스 시리얼 포트를 추가하세요. (Windows10 기준)
+
+
+① 제어기에 BT-210(또는 BT-110)을 연결하고 제어기의 전원을 켭니다.
+
+② 윈도우 시작 버튼을 클릭한 후, 설정 메뉴를 클릭합니다.
+
+![](/assets/images/sw/rplus2/manager/r+manager2_40.jpg)
+
+③ 장치 메뉴를 클릭합니다.
+
+![](/assets/images/sw/rplus2/manager/r+manager2_41.jpg)
+
+④ 좌측의 Bluetooth를 선택한 후, Bluetooth 장치를 켭니다.
+
+⑤ 검색된 블루투스 모듈을 찾아 선택한 후, 연결 버튼을 클릭합니다.
+
+![](/assets/images/sw/rplus2/manager/r+manager2_42.jpg)
+
+⑥ 장치 암호입력란에 0000을 입력한 후, 다음 버튼을 클릭합니다.
+
+![](/assets/images/sw/rplus2/manager/r+manager2_43.jpg)
+
+⑦ 페어링이 완료되면 페어링된 장치를 선택한 후, 하단의 “추가 Bluetooth 옵션”을 클릭합니다.
+
+![](/assets/images/sw/rplus2/manager/r+manager2_44.jpg)
+
+⑧ COM 포트 탭을 클릭한 후, 송신 포트의 포트 번호를 확인합니다. (아래 그림에서는 COM7)
+
+![](/assets/images/sw/rplus2/manager/r+manager2_45.jpg)
+
+⑨ R+ Manager 2.0에서 설치된 블루투스 포트를 선택하면 무선으로 관리 기능을 사용할 수 있습니다.
+
+![](/assets/images/sw/rplus2/manager/r+manager2_46.jpg)
+
+## [FAQ](#faq)
+
+**① 지원 가능한 제품 군은?**
+
+- [ROBOTIS DREAM]
+
+- [ROBOTIS SMART]
+
+- [ROBOTIS SMART2]
+
+- [ROBOTIS IoT]
+
+- [ROBOTIS MINI]
+
+- Dynamixel 2.0 시리즈 ([XL-320, XM시리즈, XH시리즈] / [Pro시리즈])
+
+- 그 외 [CM-150, CM-200, OpenCM9.04, OpenCM7.0]을 사용하여 만든 사용자 로봇
+
+- AX시리즈, MX시리즈, RX시리즈, DX시리즈, EX시리즈, CM-530, CM-510, CM-700, CM-100A는 지원하지 않습니다. (V2.0.0 기준)  
+{: .notice--warning}
+
+
+**② 통신 포트가 나타나지 않습니다. 어떻게 해야 하나요?**
+
+- 드라이버 설치 매뉴얼을 참고하세요. ([USB 드라이버 설치], [LN-101 드라이버 설치])
+
+**③ 제어기가 잘 검색되지 않습니다. 어떻게 해야 하나요?**
+
+- 홈 탭에서 올바른 제품을 선택하였는지 확인하세요.
+
+- USB 케이블을 사용하는 경우, 제어기의 전원을 끄고 PC와 연결한 후 다시 켜보세요.
+
+- 제어기의 베터리가 충분한지 확인하세요.
+
+- 위 사항이 모두 만족한다면 펌웨어 복구를 시도해보세요.
+
+- 더 자세한 사항은 고객지원 또는 Q&A게시판으로 문의바랍니다.
+
+
+
+**④ 다이나믹셀이 잘 검색되지 않습니다. 어떻게 해야 하나요?**
+
+- USB2Dynamixel의 통신 모드 스위치가 제대로 설정되어 있는지 확인하세요.
+
+- 다이나믹셀의 연결을 하나씩만 제거하며 시도해보세요.
+
+- 다이나믹셀의 ID가 겹칠 경우 동작이 원활하지 않을 수 있습니다.
+
+- 더 자세한 사항은 고객지원 또는 Q&A게시판으로 문의바랍니다.
+
+
+[로보티즈 드림]: ?
+[로보티즈 스마트(스마트2)]:??
+[로보티즈 IoT]:??
+[로보티즈 미니]:??
+[다이나믹셀 2.0 시리즈]:??
+[MX-28, MX-64, MX-106]:??
+[XL-320, XM시리즈, XH시리즈]:??
+[Pro시리즈]:??
+[다이나믹셀 E-Manual 바로가기]:??
+[다이나믹셀 프로 E-Manual 바로가기]: ?
+[ROBOTIS DREAM]: ??
+[ROBOTIS SMART]: ?
+[ROBOTIS SMART2]: ?
+[ROBOTIS IoT]: ?
+[ROBOTIS MINI]: ?
+[CM-150, CM-200, OpenCM9.04, OpenCM7.0]:?
+[USB 드라이버 설치]:?
+[LN-101 드라이버 설치]: ?
