@@ -1,0 +1,99 @@
+.nav__items {
+  width: 100%;
+  max-width: 600px;
+  // background: #4d5158;
+  // margin: 4em auto;
+}
+
+.nav__items ul {
+  /* by default hide all sub menus */
+  display: none;
+}
+
+.nav__items li {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  list-style: none;
+}
+
+.nav__items input[type=radio] {
+  /* hide native checkbox */
+  position: absolute;
+  opacity: 0;
+}
+
+.nav__items label, .nav__items a {
+  position: relative;
+  display: block;
+  background: #fff;
+  box-shadow: inset 0 -1px #2174b6;
+  color: #494e52;
+  text-decoration: none;
+}
+
+.nav__items label:hover, .nav__items a:hover {
+  background: #eee;
+  // color: #ddd;
+}
+
+.nav__items input[type=radio]:checked + label::after {
+  /* show open folder icon if item is checked */
+  background-position: -32px 0;
+}
+
+.nav__items input[type=radio]:checked + label + ul,
+.nav__items input[type=radio]:checked + label:nth-of-type(n) + ul {
+  /* use label:nth-of-type(n) to fix a bug on safari (<= 8.0.8) with multiple adjacent-sibling selectors*/
+  /* show children when item is checked */
+  display: block;
+}
+
+.nav__items ul label,
+.nav__items ul a {
+  background: #fff;
+  box-shadow: inset 0 -1px #2174b6;
+  color: #487ea9;
+  text-decoration: none;
+  font-size: 0.85em;
+}
+
+.nav__items ul label:hover,
+.nav__items ul a:hover {
+  background: #eee;
+}
+
+.nav__items > li > a,
+.nav__items > li > label {
+  padding-left: 20px;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.nav__items > li > ul > li a,
+.nav__items > li > ul > li label {
+  padding-left: 30px;
+}
+
+.nav__items > li > ul > li > ul > li a {
+  padding-left: 45px;
+}
+
+.nav__title {
+  margin: 0;
+  padding: 0.5rem 1rem;
+  font-family: $sans-serif-narrow;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.nav__sub-title {
+  display: block;
+  margin: 0.5rem 0;
+  padding: 0.5rem 0;
+  font-family: $sans-serif-narrow;
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+}

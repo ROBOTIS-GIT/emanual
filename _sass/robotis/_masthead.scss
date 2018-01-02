@@ -1,0 +1,362 @@
+.masthead {
+  position: relative;
+  margin: 0;
+  z-index: 99;
+  max-width: $max-width;
+  
+  &__inner-wrap {
+    display: block;
+    width: 100%;
+  }
+  
+  &__menu {
+    display: block;
+    
+  }
+}
+
+.site-title {
+  float: left;
+}
+
+.searchbox {
+  float: right;
+  width: 300px;
+  margin: 0.45rem;
+}
+
+#google_translate_element {
+  float: left;
+  margin: 0.5rem;
+}
+
+.cse .gsc-search-button input.gsc-search-button-v2,
+input.gsc-search-button-v2 {
+  height: 26px !important;
+  margin-top: 0 !important;
+  min-width: 13px !important;
+  padding: 5px 26px !important;
+  width: 68px !important;
+}
+
+.cse .gsc-control-cse, .gsc-control-cse {
+  padding: 0 !important;
+}
+
+.gsib_a {
+  padding: 0 !important;
+}
+
+.goog-te-gadget-icon {
+  padding: 9px;
+}
+
+/*dropdown menu css*/
+$top-bgcolor: #333;
+$top-hovercolor: #2581DC;
+$top-textcolor: white;
+$middle-bgcolor: #777;
+$middle-hovercolor: #333;
+$middle-textcolor: white;
+$bottom-bgcolor: #999;
+$bottom-hovercolor: #333;
+$bottom-textcolor: white;
+
+// .mobile_very_top {
+//   position: absolute;
+//   right: 5%;
+//   margin-top: 4px;
+// }
+
+.menu-icon {
+  cursor: pointer;
+  display: none;
+  float: right;
+  padding: 24px 20px;
+  position: relative;
+  user-select: none;
+}
+
+.menu-icon .navicon {
+  background: #333;
+  display: block;
+  height: 2px;
+  position: relative;
+  transition: background .2s ease-out;
+  width: 18px;
+}
+
+.menu-icon .navicon:before,
+.menu-icon .navicon:after {
+  background: #333;
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  transition: all .2s ease-out;
+  width: 100%;
+}
+
+.menu-icon .navicon:before {
+  top: 5px;
+}
+
+.menu-icon .navicon:after {
+  top: -5px;
+}
+
+.menu-btn {
+  display: none;
+}
+
+.menu-btn:checked ~ .menu {
+  max-height: 240px;
+}
+
+.menu-btn:checked ~ .menu-icon .navicon {
+  background: transparent;
+}
+
+.menu-btn:checked ~ .menu-icon .navicon:before {
+  transform: rotate(-45deg);
+}
+
+.menu-btn:checked ~ .menu-icon .navicon:after {
+  transform: rotate(45deg);
+}
+
+.menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+  top: 0;
+}
+
+.menu-btn:checked ~ .mobile_nav__items {
+  display: block;
+}
+
+.mobile_nav__items {
+  position: absolute;
+  clear: both;
+  display: none;
+  overflow: hidden;
+  background-color: $top-bgcolor;
+  font-family: Arial;
+  padding: 10px 10px;
+  margin-top: 50px;
+  width: 100%;
+  opacity: 0.95;
+  z-index: 20;
+}
+
+.mobile_nav__items ul {
+  /* by default hide all sub menus */
+  display: none;
+  list-style: none;
+}
+
+.mobile_nav__items li {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  list-style: none;
+}
+
+.mobile_nav__items input[type=radio], .mobile_nav__items input[type=checkbox] {
+  /* hide native checkbox */
+  position: absolute;
+  opacity: 0;
+}
+
+
+.mobile_depth_1 label, .mobile_depth_1 a {
+  position: relative;
+  display: block;
+  background: $top-bgcolor;
+  color: $top-textcolor;
+  font-size: 1.3rem;
+  text-align: left;
+  box-shadow: inset 0 -1px #bbb9b9;
+  padding: 2px 1em;
+  text-decoration: none;
+}
+
+.mobile_depth_1 label:hover, .mobile_depth_1 a:hover {
+  background: $top-hovercolor;
+  // color: #ddd;
+}
+
+.mobile_depth_2 label, .mobile_depth_2 a {
+  position: relative;
+  display: block;
+  background: $middle-bgcolor;
+  color: $middle-textcolor;
+  font-size: 1.1rem;
+  text-align: left;
+  padding: 2px 3em;
+  text-decoration: none;
+}
+
+.mobile_depth_2 label:hover, .mobile_depth_2 a:hover {
+  background: $middle-hovercolor;
+  // color: #ddd;
+}
+
+.mobile_depth_3 label, .mobile_depth_3 a {
+  position: relative;
+  display: block;
+  background: $bottom-bgcolor;
+  color: $bottom-textcolor;
+  font-size: 1.0rem;
+  text-align: left;
+  padding: 2px 6em;
+  text-decoration: none;
+}
+
+.mobile_depth_3 label:hover, .mobile_depth_3 a:hover {
+  background: $bottom-hovercolor;
+  // color: #ddd;
+}
+
+.mobile_nav__items input[type=radio]:checked + label::after {
+  /* show open folder icon if item is checked */
+  background-position: -32px 0;
+}
+
+.mobile_nav__items input[type=checkbox]:checked + label::after {
+  /* show open folder icon if item is checked */
+  background-position: -32px 0;
+}
+
+.mobile_nav__items input[type=radio]:checked + label + ul,
+.mobile_nav__items input[type=radio]:checked + label:nth-of-type(n) + ul {
+  /* use label:nth-of-type(n) to fix a bug on safari (<= 8.0.8) with multiple adjacent-sibling selectors*/
+  /* show children when item is checked */
+  display: block;
+}
+
+.mobile_nav__items input[type=checkbox]:checked + label + ul,
+.mobile_nav__items input[type=checkbox]:checked + label:nth-of-type(n) + ul {
+  /* use label:nth-of-type(n) to fix a bug on safari (<= 8.0.8) with multiple adjacent-sibling selectors*/
+  /* show children when item is checked */
+  display: block;
+}
+
+// .mobile_nav__items ul label,
+// .mobile_nav__items ul a {
+//   background: $middle-bgcolor;
+//   color: $middle-textcolor;
+//   font-size: 0.9em;
+//   padding: 3px;
+//   text-align: center;
+// }
+// .mobile_nav__items ul label:hover,
+// .mobile_nav__items ul a:hover {
+//   background: $middle-hovercolor;
+// }
+.mobile_nav__items > li:last-of-type > label,
+.mobile_nav__items > li:last-of-type > a,
+.mobile_nav__items > li > ul > li:last-of-type label,
+.mobile_nav__items > li > ul > li:last-of-type a {
+  box-shadow: none;
+}
+
+
+
+// .mobile_nav__items ul ul label,
+// .mobile_nav__items ul ul a {
+//   font-size: 0.9em;
+//   // padding-left: 30px;
+// }
+// 
+// .mobile_nav__items ul ul ul label,
+// .mobile_nav__items ul ul ul a {
+//   // padding-left: 118px;
+// }
+
+.container {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  background-color: $top-bgcolor;
+  font-family: Arial;
+  max-width: $max-width;
+  z-index: 900;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: $top-textcolor;
+  padding: 14px 16px;
+  background-color: $top-bgcolor;
+  height: 52px;
+}
+
+.container a:hover, .dropdown:hover .dropbtn {
+    background-color: $top-hovercolor;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: $middle-bgcolor;
+    min-width: 150px;
+    z-index: 1;
+
+    &-wrapper {
+      float: none;
+      position: relative;
+    }
+}
+
+.dropdown-content a {
+    font-size: 14px;
+    color: $middle-textcolor;
+    padding: 6px 16px;
+    text-decoration: none;
+    text-align: left;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: $middle-hovercolor;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-2nd-content {
+    display: none;
+    position: absolute;
+    right: -150px;
+    top: -0.5px;
+    background-color: $bottom-bgcolor;
+    min-width: 150px;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+    z-index: 2;
+}
+
+.dropdown-2nd-content a {
+    float: none;
+    color: $bottom-textcolor;
+    padding: 6px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-2nd-content a:hover {
+    background-color: $bottom-hovercolor;
+}
+
+.dropdown-content-wrapper:hover .dropdown-2nd-content {
+    display: block;
+}

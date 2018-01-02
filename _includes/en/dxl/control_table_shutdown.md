@@ -22,7 +22,7 @@ The followings are detectable situations.
 2. S/W REBOOT : Transmit REBOOT Instruction (For more details, please refer to the [Reboot] section of Protocol e-Manual.)
 {% endcapture %}
 
-<div style="notice">{{ control_table_shutdown | markdownify }}</div>
+<div class="notice">{{ control_table_shutdown | markdownify }}</div>
 
 If Shutdown occurs, LED will flicker every second.(Firmware v41 or above)
 {: .notice--warning}
