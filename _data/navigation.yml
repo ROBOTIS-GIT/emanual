@@ -184,7 +184,7 @@ main:
     - title: "OpenManipulator"
       titlekr: "오픈매니퓰레이터"
       url: /platform/openmanipulator/openmanipulator/
-  - title: "STEM"
+  - title: "STEAM"
     titlekr: "교육키트"
     titlejp: "トレーニングキット"
     titlecn: "培训工具包"
@@ -202,12 +202,15 @@ main:
         titlekr: "*2단계 교육키트"
         titlejp: "*Level 2 Kit"
         url: /edu/ollo/explorer/
+        urlkr: /edu/ollo/ollo-2/
       - title: "*INVENTOR"
         titlekr: "*3단계 교육키트"
         titlejp: "*Level 3 Kit"
         url: /edu/ollo/inventor/
+        urlkr: /edu/ollo/ollo-3/
       - titlekr: "*4단계 교육키트"
         titlejp: "*Level 4 Kit"
+        urlkr: /edu/ollo/ollo-4/
     - title: "DREAM"
       titlekr: "드림 I"
       children:

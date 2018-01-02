@@ -474,7 +474,7 @@ Sometimes, mathematical results cannot be obtained by inverse kinematics calcula
 (For instance, in case that the legs are straightened until the end (z=0), X or Y parameter is not changed.)
 {% endcapture %}
 
-<div style="notice">{{ rplusmotion_notice_01 | markdownify }}</div>
+<div class="notice">{{ rplusmotion_notice_01 | markdownify }}</div>
 
 ###### Apply the Result
 
@@ -867,7 +867,7 @@ Users can make and operate their own robots usig RoboPlus Motion
 - C# Programming
 {% endcapture %}
 
-<div style="notice--warning">{{ roboplus_motion_warning_01 | markdownify }}</div>
+<div class="notice--warning">{{ roboplus_motion_warning_01 | markdownify }}</div>
 
 ### Folder Structure
 

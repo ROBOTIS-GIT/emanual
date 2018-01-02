@@ -134,7 +134,8 @@ Controllers usually do not have display devices the way a PC has a monitor, so i
 To see the output of the program, you must open the Program Output Monitor BEFORE executing the program. There are three ways to open the `Program Output Monitor`.
 
 1. Click the 'View Print of Program' on the Download Program window.
-  ![output-monitor][output-monitor]
+
+    ![output-monitor][output-monitor]
 
 2. Click the `View Print of Program` button in the tool bar.
 3. Press `F5` or click on `View Print of Program(V)` menu under Program(P).
@@ -158,22 +159,27 @@ Print with New Line: Print out the value, and move the cursor to next line.
 
 1. Values from the controller
     - A welcome screen is shown when the program starts
+
       ![start-message][start-message]
 
     - Error messages during program operation([Error Messages])
+
       ![error-code][error-code]
 
 2. Values from task code : All decimal numbers between -32767 and +32767 can be displayed(Printing characters or custom messages is not possible).
 
     - To print numbers
+
       ![print-num][print-num]
 
     - To print values from sensors
+
       ![print-sensor][print-sensor]
 
 ### Clear Screen
 
 You may erase everything on the screen.
+
 ![clear-screen][clear-screen]
 
 

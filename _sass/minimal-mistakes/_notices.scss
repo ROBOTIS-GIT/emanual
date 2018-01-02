@@ -11,24 +11,15 @@
  */
 
 @mixin notice($notice-color) {
-  margin-top: 2em !important;  /* override*/
-  margin-bottom: 2em !important;
+  margin-bottom: 1em !important;
+  margin-right: 0.5em !important;
   padding: 1em;
   font-family: $global-font-family;
-  font-size: 16px !important;
+  font-size: 0.9em !important;
   text-indent: initial; /* override*/
   background-color: mix(#fff, $notice-color, 90%);
   border-radius: $border-radius;
   box-shadow: 0 1px 1px rgba($notice-color, 0.25);
-
-  a {
-    color: $link-color;
-    text-decoration: none;
-
-    &:hover {
-      color: mix(#000, $link-color-hover, 40%);
-    }
-  }
 
   code {
     background-color: mix(#fff, $notice-color, 95%)
@@ -41,38 +32,96 @@
   }
 }
 
+@mixin notice-margin {
+  p, ol {
+    margin-left: 0 !important;
+  }
+}
+
 /* Default notice */
 
 .notice {
-  @include notice($light-gray);
+  @include notice($gray);
+  @include notice-margin;
 }
 
 /* Primary notice */
 
 .notice--primary {
   @include notice($primary-color);
+  @include notice-margin;
 }
 
 /* Info notice */
 
 .notice--info {
   @include notice($info-color);
+  @include notice-margin;
 }
 
 /* Warning notice */
 
 .notice--warning {
   @include notice($warning-color);
+  @include notice-margin;
 }
 
 /* Success notice */
 
 .notice--success {
   @include notice($success-color);
+  @include notice-margin;
 }
 
 /* Danger notice */
 
 .notice--danger {
   @include notice($danger-color);
+  @include notice-margin;
+}
+
+p>code, a>code, li>code, td>code {
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  font-family: $monospace;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  border: 1px solid #000;
+  border-radius: $border-radius;
+  background-color: $code-background-color;
+  box-shadow: $box-shadow;
+  
+  &:before, &:after {
+    letter-spacing: -0.2em;
+    content: "\00a0";
+  }
+}
+
+div.highlighter-rouge {
+  position: relative;
+  margin-bottom: 1em;
+  padding: 0.5em 1em;
+  font-family: Monaco,Consolas,"Lucida Console",monospace;
+  font-size: 0.9rem;
+  color: white;
+  border-radius: 5px;
+  background-color: #000;
+  
+  &:before {
+    position: absolute;
+    top: 0;
+    right: 1em;
+    background-color: #000;
+    content: "\f121";
+    font-family: "fontawesome" !important;
+    font-size: 0.8em;
+    text-transform: none;
+    speak: none;
+  }
+  
+  .highlight {
+    overflow-x: auto;
+    padding-bottom: 0.5em;
+    padding-right: 2em;
+  }
 }

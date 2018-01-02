@@ -451,7 +451,7 @@ The Index Number of the Motion data downloaded on the controller must match the 
 - Copying must be proceeded in the order of Motion Unit -> Motion. If a Motion is copied without copying any Motion Units, an empty Motion will be pasted.
 {% endcapture %}
 
-<div style="notice--warning">{{ rplus2_motion_warning_01 | markdownify }}</div>
+<div class="notice--warning">{{ rplus2_motion_warning_01 | markdownify }}</div>
 
 ## [Edit Offset](#edit-offset)
 

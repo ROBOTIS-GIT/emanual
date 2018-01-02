@@ -586,7 +586,7 @@ PC([RoboPlus Task] 프로그램), 조립된 버그 로봇, USB 다운로더([LN-
 프로그램을 실행 시킨 후 RC-100 조종기로 전/후/좌/우로 조종해 보세요.
 
 
-[CM-100]: /docs/kr/parts/controller/cm-100a/
+[CM-100]: /docs/kr/parts/controller/cm-100/
 [감속모터]: /docs/kr/parts/motor/gm-10a/
 [USB 다운로더(LN-101)]: /docs/kr/parts/interface/ln-101/
 [프로그래밍 학습]: ???
@@ -601,7 +601,7 @@ PC([RoboPlus Task] 프로그램), 조립된 버그 로봇, USB 다운로더([LN-
 [ZIG-110 set]: /docs/kr/parts/communication/zig-110/
 [제어기]: ???
 [큰타이어 세트]: ???
-[제어기(CM-100)]: /docs/kr/parts/controller/cm-100a/
+[제어기(CM-100)]: /docs/kr/parts/controller/cm-100/
 [제어기 선택]: ???
 [프로그램 시작]: ???
 [무조건 반복]: ???

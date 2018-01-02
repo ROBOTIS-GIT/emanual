@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+$max-width  : 1920px;
+
+/* system typefaces */
+$serif                      : Georgia, Times, serif !default;
+$sans-serif                 : -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif !default;
+$monospace                  : Monaco, Consolas, "Lucida Console", monospace !default;
+
+/* sans serif typefaces */
+$sans-serif-narrow          : $sans-serif !default;
+$helvetica                  : Helvetica, "Helvetica Neue", Arial, sans-serif !default;
+
+/* serif typefaces */
+$georgia                    : Georgia, serif !default;
+$times                      : Times, serif !default;
+$bodoni                     : "Bodoni MT", serif !default;
+$calisto                    : "Calisto MT", serif !default;
+$garamond                   : Garamond, serif !default;
+
+$global-font-family         : $sans-serif !default;
+$header-font-family         : $sans-serif !default;
+$caption-font-family        : $serif !default;
+
+$text-color                 : #333333 !default;
+
+/* colors */
+$gray                       : #7a8288 !default;
+$light-gray                 : #dadada !default;
+$lighter-gray               : #f5f5f5 !default;
+$primary-color              : #7a8288 !default;
+$success-color              : #62c462 !default;
+$warning-color              : #f89406 !default;
+$danger-color               : #ee5f5b !default;
+$info-color                 : #52adc8 !default;
+$code-background-color      : #fafafa !default;
+$code-background-color-dark : $light-gray !default;
+
+/* type scale */
+$type-size-1                : 2.441em !default;  // ~39.056px
+$type-size-2                : 1.953em !default;  // ~31.248px
+$type-size-3                : 1.563em !default;  // ~25.008px
+$type-size-4                : 1.25em !default;   // ~20px
+$type-size-5                : 1em !default;      // ~16px
+$type-size-6                : 0.95em !default; 
+$type-size-7                : 0.9em !default;
+$type-size-8                : 0.7em !default; 
+
+
+$border-radius              : 5px !default;
+$border-color               : $lighter-gray !default;
+$box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.125) !default;
+
+/* links */
+$link-color                 : #116AC6 !default;
+$link-color-hover           : #ff0000 !default; //mix(#000, $link-color, 25%) !default;
+$link-color-visited         : mix(#fff, $link-color, 25%) !default;
+$masthead-link-color        : black !default;
+$masthead-link-color-hover  : mix(#000, $primary-color, 25%) !default;

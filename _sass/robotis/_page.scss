@@ -1,0 +1,52 @@
+#main {
+  margin: 0;
+  
+  @include breakpoint($max-width) {
+    max-width: $max-width;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  
+  #main {
+    padding-top: 100px;
+    width: 95%;
+  }
+  
+  #sidebar {
+    float: none;
+    width: 95%;
+    position: relative;
+    margin: 0 2em;
+    padding: 0;
+  }
+  
+  #archive {
+    float: none;
+    max-width: 100%;
+    margin: 0 1em;
+    padding: 0;
+  }
+  
+  #container {
+    display: none;
+  }
+  
+  // #mobile_nav__items {
+  //   width: 100%;
+  //   height: auto;
+  //   opacity: 0.9;
+  //   z-index: 999;
+  // }
+  
+  #site_search {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding-left: 1em;
+  }
+  
+  .menu-icon {
+    display: inline-block;;
+  }
+}
