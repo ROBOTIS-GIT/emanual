@@ -83,9 +83,9 @@ The TurtleBot3 Waffle uses Intel® RealSense™ Camera R200 as a default vision 
 **[TurtleBot]** The following commands will install relevant Intel® RealSense™ packages on your ROS system.
 
 ``` bash
-  sudo apt-get install linux-headers-generic
-  sudo apt-get install ros-kinetic-librealsense
-  sudo apt-get install ros-kinetic-realsense-camera
+$ sudo apt-get install linux-headers-generic
+$ sudo apt-get install ros-kinetic-librealsense
+$ sudo apt-get install ros-kinetic-realsense-camera
 ```
 
 ### [Run realsense_camera Node](#run-realsensecamera-node)
@@ -93,7 +93,7 @@ The TurtleBot3 Waffle uses Intel® RealSense™ Camera R200 as a default vision 
 **[TurtleBot]** Run the following command
 
 ``` bash
-  roslaunch realsense_camera r200_nodelet_default.launch
+$ roslaunch realsense_camera r200_nodelet_default.launch
 ```
 
 While the realsense_camera node is running, you can view various data from Intel® RealSense™ by launching rqt_image_view.
@@ -101,7 +101,7 @@ While the realsense_camera node is running, you can view various data from Intel
 **[Remote PC]** Run the following command
 
 ``` bash
-  rqt_image_view
+$ rqt_image_view
 ```
 
 Once the gui application is appeared on the screen, you can select data topic name related to Intel® RealSense™ from drop down menu at the top of the application.
@@ -111,25 +111,25 @@ Once the gui application is appeared on the screen, you can select data topic na
 **[TurtleBot]** Input <kbd>ctrl</kbd> + <kbd>c</kbd> to quit the previously run camera node, then run other realsense_camera node
 
 ``` bash
-  roslaunch realsense_camera r200_nodelet_rgbd.launch
+$ roslaunch realsense_camera r200_nodelet_rgbd.launch
 ```
 
 **[TurtleBot]** Run turtlebot3_bringup node to get datas for doing SLAM
 
 ``` bash
-  roslaunch turtlebot3_bringup turtlebot3_robot.launch
+$ roslaunch turtlebot3_bringup turtlebot3_robot.launch
 ```
 
 **[Remote PC]** Run turtlebot3_slam node to do SLAM
 
 ``` bash
-  roslaunch turtlebot3_slam turtlebot3_slam.launch
+$ roslaunch turtlebot3_slam turtlebot3_slam.launch
 ```
 
 **[Remote PC]** Run RViz
 
 ``` bash
-  rosrun rviz rviz -d `rospack find turtlebot3_slam`/rviz/turtlebot3_slam.rviz
+$ rosrun rviz rviz -d `rospack find turtlebot3_slam`/rviz/turtlebot3_slam.rviz
 ```
 
 **[Remote PC]** Click <kbd>Panels</kbd> - <kbd>Views</kbd> to open the view window

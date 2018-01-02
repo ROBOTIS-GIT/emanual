@@ -93,23 +93,23 @@ We are offering [ROS package for LSD](http://wiki.ros.org/hls_lfcd_lds_driver). 
 ### [Installation](#installation)
 
 ``` bash
-  sudo apt-get install ros-kinetic-hls-lfcd-lds-driver
+$ sudo apt-get install ros-kinetic-hls-lfcd-lds-driver
 ```
 
 ### [Set Permission for HLS-LFCD LDS](#set-permission-for-hlslfcd-lds)
 
 ``` bash
-  sudo chmod a+rw /dev/ttyUSB0
+$ sudo chmod a+rw /dev/ttyUSB0
 ```
 
 ### [Run hlds_laser_publisher Node](#run-hldslaserpublisher-node)
 
 ``` bash
-  roslaunch hls_lfcd_lds_driver hlds_laser.launch
+$ roslaunch hls_lfcd_lds_driver hlds_laser.launch
 ```
 
 ### [Run hlds_laser_publisher Node with RViz](#run-hldslaserpublisher-node-with-rviz)
 
 ``` bash
-  roslaunch hls_lfcd_lds_driver view_hlds_laser.launch
+$ roslaunch hls_lfcd_lds_driver view_hlds_laser.launch
 ```
