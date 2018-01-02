@@ -36,17 +36,17 @@ sidebar:
 **[TurtleBot Burger]**
 
 ``` bash
-  sudo apt-get update
-  sudo apt-get upgrade
-  wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic_rp3.sh && chmod 755 ./install_ros_kinetic_rp3.sh && bash ./install_ros_kinetic_rp3.sh
+$ sudo apt-get update
+$ sudo apt-get upgrade
+$ wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic_rp3.sh && chmod 755 ./install_ros_kinetic_rp3.sh && bash ./install_ros_kinetic_rp3.sh
 ```
 
 **[TurtleBot Waffle]**
 
 ``` bash
-  sudo apt-get update
-  sudo apt-get upgrade
-  wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic.sh && chmod 755 ./install_ros_kinetic.sh && bash ./install_ros_kinetic.sh
+$ sudo apt-get update
+$ sudo apt-get upgrade
+$ wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic.sh && chmod 755 ./install_ros_kinetic.sh && bash ./install_ros_kinetic.sh
 ```
 
 **Note :** After install ROS, please reboot Raspberry Pi or Intel® Joule™.
@@ -66,15 +66,15 @@ sidebar:
 **[TurtleBot]** The next step is to install dependent packages for TurtleBot3 control.
 
 ``` bash
-  sudo apt-get install ros-kinetic-joy ros-kinetic-teleop-twist-joy ros-kinetic-teleop-twist-keyboard ros-kinetic-laser-proc ros-kinetic-rgbd-launch ros-kinetic-depthimage-to-laserscan ros-kinetic-rosserial-arduino ros-kinetic-rosserial-python ros-kinetic-rosserial-server ros-kinetic-rosserial-client ros-kinetic-rosserial-msgs ros-kinetic-amcl ros-kinetic-map-server ros-kinetic-move-base ros-kinetic-urdf ros-kinetic-xacro ros-kinetic-compressed-image-transport ros-kinetic-rqt-image-view ros-kinetic-gmapping ros-kinetic-navigation
+$ sudo apt-get install ros-kinetic-joy ros-kinetic-teleop-twist-joy ros-kinetic-teleop-twist-keyboard ros-kinetic-laser-proc ros-kinetic-rgbd-launch ros-kinetic-depthimage-to-laserscan ros-kinetic-rosserial-arduino ros-kinetic-rosserial-python ros-kinetic-rosserial-server ros-kinetic-rosserial-client ros-kinetic-rosserial-msgs ros-kinetic-amcl ros-kinetic-map-server ros-kinetic-move-base ros-kinetic-urdf ros-kinetic-xacro ros-kinetic-compressed-image-transport ros-kinetic-rqt-image-view ros-kinetic-gmapping ros-kinetic-navigation
 ```
 
 ``` bash
-  cd ~/catkin_ws/src
-  git clone https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver.git
-  git clone https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
-  git clone https://github.com/ROBOTIS-GIT/turtlebot3.git
-  cd ~/catkin_ws && catkin_make
+$ cd ~/catkin_ws/src
+$ git clone https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver.git
+$ git clone https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
+$ git clone https://github.com/ROBOTIS-GIT/turtlebot3.git
+$ cd ~/catkin_ws && catkin_make
 ```
 
 If catkin_make command is completed without any errors, the preparation for TurtleBot3 is done.
@@ -84,10 +84,10 @@ If catkin_make command is completed without any errors, the preparation for Turt
 **[TurtleBot]** The following commands allow to use USB port for OpenCR1.0 without acquiring root permission.
 
 ``` bash
-  cd ~/catkin_ws/src/turtlebot3
-  sudo cp ./99-turtlebot3-cdc.rules /etc/udev/rules.d/
-  sudo udevadm control --reload-rules
-  sudo udevadm trigger
+$ cd ~/catkin_ws/src/turtlebot3
+$ sudo cp ./99-turtlebot3-cdc.rules /etc/udev/rules.d/
+$ sudo udevadm control --reload-rules
+$ sudo udevadm trigger
 ```
 
 ## [Network Configuration (Burger and Waffle)](#network-configuration-burger-and-waffle)
@@ -99,7 +99,7 @@ ROS requires IP addresses in order to communicate between TurtleBot3 and remote 
 **[TurtleBot]** Enter the below command on the terminal window of the SBC in TurtleBot3 to find out the IP address of TurtleBot3.
 
 ``` bash
-  ifconfig
+$ ifconfig
 ```
 
 Texts in the rectangle is the IP address of the `TurtleBot`.
@@ -109,7 +109,7 @@ Texts in the rectangle is the IP address of the `TurtleBot`.
 **[TurtleBot]** Enter the following command.
 
 ``` bash
-  gedit ~/.bashrc
+$ gedit ~/.bashrc
 ```
 
 **[TurtleBot]** Replace the `localhost` in the ROS_MASTER_URI address with the IP address acquired from [Remote PC Network Configuration][remote-pc-network-configuration]. Also replace the `localhost` in the ROS_HOSTNAME address with the IP address acquired from the above terminal window, which is the IP address of TurtleBot3.
@@ -119,7 +119,7 @@ Texts in the rectangle is the IP address of the `TurtleBot`.
 **[TurtleBot]** Then, source the bashrc with below command.
 
 ``` bash
-  source ~/.bashrc
+$ source ~/.bashrc
 ```
 
 [12-setup-your-sourceslist]: http://wiki.ros.org/kinetic/Installation/Ubuntu#Installation.2BAC8-Ubuntu.2BAC8-Sources.Setup_your_sources.list

@@ -57,28 +57,28 @@ The SLAM is a well-known feature of TurtleBot from its predecessors. The video h
 If you have TurtleBot3 Burger,
 
 ``` bash
-  export TURTLEBOT3_MODEL=burger
-  roslaunch turtlebot3_slam turtlebot3_slam.launch
+$ export TURTLEBOT3_MODEL=burger
+$ roslaunch turtlebot3_slam turtlebot3_slam.launch
 ```
 
 If you have TurtleBot3 Waffle,
 
 ``` bash
-  export TURTLEBOT3_MODEL=waffle
-  roslaunch turtlebot3_slam turtlebot3_slam.launch
+$ export TURTLEBOT3_MODEL=waffle
+$ roslaunch turtlebot3_slam turtlebot3_slam.launch
 ```
 
 
 **[Remote PC]** Visualize the model in 3D with RViz.
 
 ``` bash
-  rosrun rviz rviz -d `rospack find turtlebot3_slam`/rviz/turtlebot3_slam.rviz
+$ rosrun rviz rviz -d `rospack find turtlebot3_slam`/rviz/turtlebot3_slam.rviz
 ```
 
 **[Remote PC]** Teleoperation with Keyboard
 
 ``` bash
-  roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
+$ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 ```
 
 ## [Save the Map](#save-the-map)
@@ -86,7 +86,7 @@ If you have TurtleBot3 Waffle,
 **[Remote PC]** Open a new terminal and run the map saver node.
 
 ``` bash
-  rosrun map_server map_saver -f ~/map
+$ rosrun map_server map_saver -f ~/map
 ```
 
 **map.pgm** and **map.yaml** files will be created in the `~/` directory (``$HOME` directory, `/home/<username>`).

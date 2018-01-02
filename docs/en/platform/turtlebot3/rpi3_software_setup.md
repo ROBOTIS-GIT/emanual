@@ -29,7 +29,7 @@ sidebar:
 **[Remote PC]** In order to install Ubuntu MATE from an image file, it is recommended using GNOME Disks with `Restore Disk Image…` option, which natively supports XZ compressed image.
 
 ``` bash
-  sudo apt-get install gnome-disk-utility
+$ sudo apt-get install gnome-disk-utility
 ```
 
 <iframe width="640" height="480" src="https://www.youtube.com/embed/V_6GNyL6Dac" frameborder="0" allowfullscreen></iframe>
@@ -38,9 +38,9 @@ sidebar:
 {: .notice--info}
 
 ``` bash
-  sudo apt-get install gddrescue xz-utils
-  unxz ubuntu-mate-16.04.2-desktop-armhf-raspberry-pi.img.xz
-  sudo ddrescue -D --force ubuntu-mate-16.04.2-desktop-armhf-raspberry-pi.img /dev/sdx
+$ sudo apt-get install gddrescue xz-utils
+$ unxz ubuntu-mate-16.04.2-desktop-armhf-raspberry-pi.img.xz
+$ sudo ddrescue -D --force ubuntu-mate-16.04.2-desktop-armhf-raspberry-pi.img /dev/sdx
 ```
 
 **Tip :** It is recommended using `GNOME Disks`, but other applications such as `Win32 Disk Imager` on Windows can be used. https://sourceforge.net/projects/win32diskimager/
