@@ -32,7 +32,7 @@
     {% if nav.children != null %}
 
     <li class="has-children">
-      <input type="radio" name="toplevel" id="toplevel_{{ forloop.index0 }}">
+      <input type="radio" name="toplevel" id="toplevel_{{ forloop.index0 }}" {{ active }}>
       <label for="toplevel_{{ forloop.index0 }}">{{ navtitle }} &loz;</label>
     {% else %}
 
@@ -44,9 +44,8 @@
     {% if nav.children != null %}
       <ul>
       {% for child in nav.children %}
-        {% comment %} set "active" class on current page {% endcomment %}
         {% if child.url == page.url %}
-          {% assign active = "active" %}
+          {% assign active = "checked" %}
         {% else %}
           {% assign active = "" %}
         {% endif %}
@@ -69,18 +68,17 @@
 
         {% if child.children != null %}
         <li class="has-children">
-          <input type="radio" name="sublevel" id="{{ childtitle }}">
+          <input type="radio" name="sublevel" id="{{ childtitle }}" {{ active }}>
           <label for="{{ childtitle }}">{{ childtitle }} &loz;</label>
         {% else %}
-        <li><a href="{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ childurl }}" class="{{ active }}">{{ childtitle }}</a></li>
+        <li><a href="{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ childurl }}">{{ childtitle }}</a></li>
         {% endif %}
 
         {% if child.children != null %}
           <ul>
           {% for grandchild in child.children %}
-            {% comment %} set "active" class on current page {% endcomment %}
             {% if grandchild.url == page.url %}
-              {% assign active = "active" %}
+              {% assign active = "checked" %}
             {% else %}
               {% assign active = "" %}
             {% endif %}
@@ -102,7 +100,7 @@
             {% endif %}
 
             <li>
-              <a href="{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ grandchildurl }}" class="{{ active }}" style="font-style:italic;">{{ grandchildtitle }}</a>
+              <a href="{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ grandchildurl }}" style="font-style:italic;">{{ grandchildtitle }}</a>
             </li>
           {% endfor %}
           </ul>

@@ -4,6 +4,7 @@
 
 @mixin indentation {
   padding-left: 1.5em;
+  word-wrap: break-word;
   
   li > ul, ol, p, div {
     margin: 0;
@@ -73,12 +74,13 @@ h1, h2, h3, h4, h5, h6 {
   + div {
     p, div {
       margin: 0.5em 0.5em 0 1em;
+      word-wrap: break-word;
     }
     table {
       margin: 0.5em 0.5em 0 2em;
     }
     ul, ol {
-      margin: 0.5em 0 0 1em;
+      margin: 0.5em 0.5em 0 1em;
       @include indentation;
     }
   }
@@ -97,13 +99,14 @@ h1, h2, h3, h4, h5, h6 {
 
   + div {
     p, div {
+      word-wrap: break-word;
       margin: 0.5em 0.5em 0 2em;
     }
     table {
       margin: 0.5em 0.5em 0 3em;
     }
     ul, ol {
-      margin: 0.5em 2em 0 2em;
+      margin: 0.5em 0.5em 0 2em;
       @include indentation;
     }
   }
@@ -122,13 +125,14 @@ h1, h2, h3, h4, h5, h6 {
 
   + div {
     p, div {
+      word-wrap: break-word;
       margin: 0.5em 0.5em 0 3.3em;
     }
     table {
       margin: 0.5em 0.5em 0 4.3em;
     }
     ul, ol {
-      margin: 0.5em 2em 0 3.3em;
+      margin: 0.5em 0.5em 0 3.3em;
       @include indentation;
     }
   }
@@ -146,13 +150,14 @@ h1, h2, h3, h4, h5, h6 {
 
   + div {
     p, div {
+      word-wrap: break-word;
       margin: 0.5em 0.5em 0 4.5em;
     }
     table {
       margin: 0.5em 0.5em 0 5.5em;
     }
     ul, ol {
-      margin: 0.5em 1em 0 4.5em;
+      margin: 0.5em 0.5em 0 4.5em;
       @include indentation;
     }
   }
@@ -165,13 +170,14 @@ h1, h2, h3, h4, h5, h6 {
   
   + div {
     p, div {
+      word-wrap: break-word;
       margin: 0.5em 0.5em 0 6em;
     }
     table {
       margin: 0.5em 0.5em 0 7em;
     }
     ul, ol {
-      margin: 0.5em 1em 0 6em;
+      margin: 0.5em 0.5em 0 6em;
       @include indentation;
     }
   }
@@ -183,13 +189,14 @@ h1, h2, h3, h4, h5, h6 {
   
   + div {
     p, div {
+      word-wrap: break-word;
       margin: 0.5em 0.5em 0 7em;
     }
     table {
       margin: 0.5em 0.5em 0 8em;
     }
     ul, ol {
-      margin: 0.5em 1em 0 7em;
+      margin: 0.5em 0.5em 0 7em;
       @include indentation;
     }
   }

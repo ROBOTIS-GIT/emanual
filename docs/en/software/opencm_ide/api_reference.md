@@ -1176,7 +1176,7 @@ This means that if you have a number of calls to one of the SerialUSB write() or
 You can avoid this behavior by deciphering the port status using the DTR and RTS line status (the behavior of these control lines is platform dependent and we no longer interpret them by default).  
 {% endcapture %}
 
-<div style="notice--warning">{{ opencm_warning_01 | markdownify }}</div>
+<div class="notice--warning">{{ opencm_warning_01 | markdownify }}</div>
 
 The SerialUSB object is an instance of the USBSerial class, which is documented in this section.  
 This means that you can use any of these functions by writing SerialUSB.functionName(arguments...).  

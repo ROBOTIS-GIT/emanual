@@ -15,7 +15,7 @@
   margin-right: 0.5em !important;
   padding: 1em;
   font-family: $global-font-family;
-  font-size: 1em !important;
+  font-size: 0.9em !important;
   text-indent: initial; /* override*/
   background-color: mix(#fff, $notice-color, 90%);
   border-radius: $border-radius;
@@ -84,7 +84,8 @@ p>code, a>code, li>code, td>code {
   padding-top: 0.1rem;
   padding-bottom: 0.1rem;
   font-family: $monospace;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
+  white-space: nowrap;
   border: 1px solid #000;
   border-radius: $border-radius;
   background-color: $code-background-color;
@@ -101,15 +102,10 @@ div.highlighter-rouge {
   margin-bottom: 1em;
   padding: 0.5em 1em;
   font-family: Monaco,Consolas,"Lucida Console",monospace;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: white;
   border-radius: 5px;
   background-color: #000;
-  
-  .highligh {
-    margin: 0;
-    padding: 1em;
-  }
   
   &:before {
     position: absolute;
@@ -121,5 +117,11 @@ div.highlighter-rouge {
     font-size: 0.8em;
     text-transform: none;
     speak: none;
+  }
+  
+  .highlight {
+    overflow-x: auto;
+    padding-bottom: 0.5em;
+    padding-right: 2em;
   }
 }

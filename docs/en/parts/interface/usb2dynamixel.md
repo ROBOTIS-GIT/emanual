@@ -87,7 +87,7 @@ USB2Dynamixel does not supply power to Dynamixel. Therefore, the power must be s
 - Connect your DYNAMIXEL to power supply while it’s off and turn on/off with the power switch.
 {% endcapture %}
 
-<div style="notice--warning">{{ usb2dynamixel_warning_01 | markdownify }}</div>
+<div class="notice--warning">{{ usb2dynamixel_warning_01 | markdownify }}</div>
  
 ## Applying Power to the Dynamixel
 
