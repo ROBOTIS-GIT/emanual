@@ -1326,7 +1326,7 @@ If the CCW Angle Limit is 0x3FF then it is 300 degrees, so we will send 0x200 wh
 
 ```c
 Dxl.writeWord(1, 8, 0x200);
-if( Dxl.getResult() == COMM_RXSUCCESS ){ // Check if the communication was successful…}
+if( Dxl.getResult() == COMM_RXSUCCESS ){ // Check if the communication was successful...}
 ```
 
 ### Let us configure the movement voltage to 10V ~ 17V.
@@ -1337,7 +1337,7 @@ The data for 10V is 100(0x64), and the data for 17V is 170(0xAA), so we use the 
 ```c
 Dxl.writeByte(1, 12, 100);
 Dxl.writeByte(1, 13, 170);
-if( Dxl.getResult() == COMM_RXSUCCESS ){ // Check if the communication was successful…}
+if( Dxl.getResult() == COMM_RXSUCCESS ){ // Check if the communication was successful...}
 ```
 
 ### Let us limit the torque to only 50% of its maximum value.
@@ -1347,7 +1347,7 @@ We will configure the MAX Torque value from its maximum value 0x3FF to 50% which
 
 ```c
 Dxl.writeByte(1, 14, 0x1FF);   
-if( Dxl.getResult() == COMM_RXSUCCESS ){ // Check if the communication was successful…}
+if( Dxl.getResult() == COMM_RXSUCCESS ){ // Check if the communication was successful...}
 ```
 
 You need to turn the power off and then restart the power for the Max Torque to change.
@@ -1359,7 +1359,7 @@ Moving Speed( Address 32(0x20) ) = 512(0x200)
 Goal Position( Address 30(0x1E) ) = 512 (0x200). We will access data by units of words as shown below. 
 Dxl.writeWord(1, 32, 512);  // Configure the speed as 57 RPM 
 Dxl.writeWord(1, 30, 512);   // Move to location 180 degrees
-if( Dxl.getResult() == COMM_RXSUCCESS ){ // Check if the communication was successful…}
+if( Dxl.getResult() == COMM_RXSUCCESS ){ // Check if the communication was successful...}
 ```
 
 ### Move AX-12 which has ID number 0 to location of 0 degrees, and move AX-12 which has ID number 1 to location of 300 degrees. (We will start with borth AX-12 in the same position)
@@ -1375,7 +1375,7 @@ Dxl.setTxPacketParameter(1, Dxl.getLowByte(0)); // Low Byte
 Dxl.setTxPacketParameter(2, Dxl.getHighByte(0)); // High Byte
 Dxl.setTxPacketLength(5);  //Total data length = Data length + 3
 Dxl.txrxPacket();
-if( Dxl.getResult() == COMM_RXSUCCESS ){ // Check if the communication was successful…}
+if( Dxl.getResult() == COMM_RXSUCCESS ){ // Check if the communication was successful...}
 ```
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_127.png)
@@ -1390,7 +1390,7 @@ Dxl.setTxPacketParameter(1,Dxl.getLowByte(1023)); //Low Byte
 Dxl.setTxPacketParameter(2, Dxl.getHighByte(1023)); //High Byte
 Dxl.setPacketLength(5);
 Dxl.txrxPacket();
-if( Dxl.getResult() == COMM_RXSUCCESS ){ // Check if the communication was successful…}
+if( Dxl.getResult() == COMM_RXSUCCESS ){ // Check if the communication was successful...}
 ```
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_128.png)
@@ -1402,7 +1402,7 @@ Dxl.setTxPacketId(BROADCAST_ID);
 Dxl.setTxPacketInstruction(INST_ACTION);
 Dxl.setTxPacketLength(2);
 Dxl.txrxPacket();
-if( Dxl.getResult() == COMM_RXSUCCESS ){ // Check if the communication was successful…}
+if( Dxl.getResult() == COMM_RXSUCCESS ){ // Check if the communication was successful...}
 ```
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_129.png)

@@ -1122,7 +1122,7 @@ In order to download the task code to the controller, it must go through a gramm
   > Yes. However, if you load a previous TSK file into Task 2.0 and save it again, it will be converted to a TSKX format so it will no longer be compatible with Task 1.0.
  
 3. The controller will not shut down after downloading a task. What should I do?
-  > In R + Task 2.0, when you download a task the task is executed. (For controllers : CM-150, OpenCM9.04, OpenCM7.0…)
+  > In R + Task 2.0, when you download a task the task is executed. (For controllers : CM-150, OpenCM9.04, OpenCM7.0...)
  
 4. Can I use Bluetooth module in R+ Task 2.0?
   > Support of Bluetooth module is different for each controller, so please refer to the specifications of each Bluetooth module: BT-110, BT-210, BT-410

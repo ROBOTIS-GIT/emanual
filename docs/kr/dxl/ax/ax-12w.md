@@ -87,7 +87,7 @@ Each data in the Control Table is restored to initial values when the DYNAMIXEL 
 |29|1|[CCW Compliance Slope](#ccw-compliance-alope)   |CCW Compliance Slope|RW|64|
 |30|2|[Goal Position](#goal-position)                 |Target Position|RW|-|
 |32|2|[Moving Speed](#moving-speed)             |Moving Speed|RW|-|
-|34|2|[Torque Limit](#torque-limit)            |Torque Limit(Goal Torque)|RW|ADD 14&15|
+|34|2|[Torque Limit](#torque-limit)            |Torque Limit(Goal Torque)|RW|ADD 14&amp;15|
 |36|2|[Present Position](#present-position)     |Present Position|R|-|
 |38|2|[Present Speed](#present-speed)           |Present Speed|R|-|
 |40|2|[Present Load](#present-load)             |Present Load|R|-|

@@ -26,7 +26,7 @@ sidebar:
 
 ![](/assets/images/platform/turtlebot3/preparation/download_ubuntu_mate_image.png)
 
-**[Remote PC]** In order to install Ubuntu MATE from an image file, it is recommended using GNOME Disks with `Restore Disk Image…` option, which natively supports XZ compressed image.
+**[Remote PC]** In order to install Ubuntu MATE from an image file, it is recommended using GNOME Disks with `Restore Disk Image...` option, which natively supports XZ compressed image.
 
 ``` bash
   sudo apt-get install gnome-disk-utility

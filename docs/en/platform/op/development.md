@@ -4095,7 +4095,7 @@ The menu options are very extensive so you may not be able to memorize every com
 - **m [index] [index2]**: moves data from [index2] to [index].
 - **d [index]**: deletes data from STP[index]. Moves data from STP[index] to STP[index - 1].
 - **on/off**: turns on/off torque from all Dynamixels.
-- **on/off [index1] [index2] [index3] …**: turns torque on/off from ID[index1] ID[index2] ID[index3]. For example off 20 releases torque from ID20. Notice that STP7 for ID20 will read [????]. Typing on 20 turns torque from ID20 on again and the screen outputs the current position data of ID20.
+- **on/off [index1] [index2] [index3] ...**: turns torque on/off from ID[index1] ID[index2] ID[index3]. For example off 20 releases torque from ID20. Notice that STP7 for ID20 will read [????]. Typing on 20 turns torque from ID20 on again and the screen outputs the current position data of ID20.
 
   ![](/assets/images/platform/op/op_090.jpg)
 
@@ -4647,7 +4647,7 @@ type **help** and the following window appears
 - **dgain [value]**: sets the P (differential) parameters on all Dynamixels.
 - **save**: saves any changes you've made ( /darwin/Data/config.ini ). The config.ini file only contain changes made in OFFSET (either directly or via MODVAL).
 - **on/off**: turns on/off torque from all Dynamixels.
-- **on/off [index1] [index2] [index3] …**: turns torque on/off from ID[index1] ID[index2]ID[index3]. For example if you type off 13 16 19 then torque from ID 13, 16, and 19 will be released.
+- **on/off [index1] [index2] [index3] ...**: turns torque on/off from ID[index1] ID[index2]ID[index3]. For example if you type off 13 16 19 then torque from ID 13, 16, and 19 will be released.
 - Pressing the `[` key will decrease value by 1 unit. Holding the `shift key + [` will decrease value by 10 units. Use the directional arrows to select the value you wish to change.
 - Pressing the `]` key will increase value by 1 unit. Holding the `shift key + ]` will increase value by 10 units. Use the directional arrows to select the value you wish to change.
  
