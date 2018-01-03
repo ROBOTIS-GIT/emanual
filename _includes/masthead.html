@@ -57,8 +57,8 @@
               {% if child.children != null %}
                 {% if depth2_title != null %}
                   <li class="mobile_depth_2">
-                    <input type="radio" name="sublevel" id="{{ depth2_title }}">
-                    <label for="{{ depth2_title }}">{{ depth2_title }}</label>
+                    <input type="radio" name="sublevel" id="{{ depth1_title }}{{ depth2_title }}">
+                    <label for="{{ depth1_title }}{{ depth2_title }}">{{ depth2_title }}</label>
                     <ul>
                     {% for grandchild in child.children %}
                       {% if page.lang=='kr' %}

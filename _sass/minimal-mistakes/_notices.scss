@@ -96,32 +96,3 @@ p>code, a>code, li>code, td>code {
     content: "\00a0";
   }
 }
-
-div.highlighter-rouge {
-  position: relative;
-  margin-bottom: 1em;
-  padding: 0.5em 1em;
-  font-family: Monaco,Consolas,"Lucida Console",monospace;
-  font-size: 0.9rem;
-  color: white;
-  border-radius: 5px;
-  background-color: #000;
-  
-  &:before {
-    position: absolute;
-    top: 0;
-    right: 1em;
-    background-color: #000;
-    content: "\f121";
-    font-family: "fontawesome" !important;
-    font-size: 0.8em;
-    text-transform: none;
-    speak: none;
-  }
-  
-  .highlight {
-    overflow-x: auto;
-    padding-bottom: 0.5em;
-    padding-right: 2em;
-  }
-}
