@@ -11,6 +11,12 @@
   #main {
     padding-top: 100px;
     width: 95%;
+    font-size: 14px;
+  }
+  
+  #logo {
+    max-width: 200px;
+    width: 50vw;
   }
   
   #sidebar {
@@ -21,6 +27,7 @@
     padding: 0 2em;
     background-color: #dcdcdc;
     opacity: 0.95;
+    z-index: 100;
   }
   
   #archive {
@@ -64,5 +71,9 @@
     border-radius: $border-radius;
     box-shadow: $box-shadow;
     z-index: 30;
+  }
+  
+  table {
+    font-size: 0.65rem;
   }
 }
