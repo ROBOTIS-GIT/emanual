@@ -13,7 +13,7 @@ html {
 @media screen and (max-width: $mobile-width) {
   
   #main {
-    padding-top: 100px;
+    padding-top: 50px;
     width: 95%;
     font-size: 14px;
   }
@@ -29,9 +29,11 @@ html {
     position: fixed;
     left: -100%;
     padding: 0 2em;
+    border: 1px solid #000;
+    border-radius: $border-radius;
     background-color: #dcdcdc;
     opacity: 0.95;
-    z-index: 100;
+    z-index: 30;
   }
   
   #archive {
@@ -53,10 +55,8 @@ html {
   // }
   
   #site_search {
-    position: relative;
-    display: block;
-    width: 100%;
-    padding-left: 1em;
+    right: 45px;
+    max-width: 15em;
   }
   
   .menu-icon {
@@ -68,13 +68,37 @@ html {
     position: fixed;
     width: 45px;
     height: 50px;
-    top: 6.5rem;
+    top: 10rem;
     right: -5px;
     background-color: #2174b6;
     border: 1px solid mix(#fff, #000, 80%);
     border-radius: $border-radius;
     box-shadow: $box-shadow;
-    z-index: 30;
+    z-index: 100;
+    opacity: 0.8;
+  }
+  
+  #google_button {
+    display: block;
+    position: fixed;
+    width: 45px;
+    height: 50px;
+    top: 6.8rem;
+    right: -5px;
+    background-color: white;
+    border: 1px solid mix(#fff, #000, 80%);
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+    z-index: 100;
+    opacity: 0.8;
+  }
+  
+  .extend_sidebar {
+    margin-left: 100%;
+  }
+  
+  .extend_googletools {
+    right: 5px;
   }
   
   table {

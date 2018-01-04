@@ -1,5 +1,4 @@
 {% assign navigation = site.data.navigation[include.nav] %}
-<button class="nav_button" id="nav_button" onclick="extendnav()">Nav</button>
 <nav class="nav__list">
 
   {% if page.sidebar.title %}<a href={{ page.permalink | absolute_url }} style="font-size:$type-size-6; color: #2174b6; text-decoration: none; font-weight: bold;" onclick="extendnav()">{{ page.sidebar.title }}</a>{% endif %}
