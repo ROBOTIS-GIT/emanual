@@ -40,10 +40,10 @@ Following instructions will setup OpenCR1.0 Arduino development environment on t
 **[Remote PC]** The following commands allow to use OpenCR1.0 USB port for uploading ``Arduino IDE`` program without acquiring root permission.
 
 ``` bash
-  wget https://raw.githubusercontent.com/ROBOTIS-GIT/OpenCR/master/99-opencr-cdc.rules
-  sudo cp ./99-opencr-cdc.rules /etc/udev/rules.d/
-  sudo udevadm control --reload-rules
-  sudo udevadm trigger
+$ wget https://raw.githubusercontent.com/ROBOTIS-GIT/OpenCR/master/99-opencr-cdc.rules
+$ sudo cp ./99-opencr-cdc.rules /etc/udev/rules.d/
+$ sudo udevadm control --reload-rules
+$ sudo udevadm trigger
 ```
 
 ![](/assets/images/platform/turtlebot3/preparation/7_1_1_usb_port_setting.png)
@@ -53,7 +53,7 @@ Following instructions will setup OpenCR1.0 Arduino development environment on t
 **[Remote PC]** OpenCR1.0 libraries are designed for 32-bit platform, therefore, 64-bit PC requires 32-bit compiler for Arduino IDE.
 
 ``` bash
-  sudo apt-get install libncurses5-dev:i386
+$ sudo apt-get install libncurses5-dev:i386
 ```
 
 ![](/assets/images/platform/turtlebot3/preparation/7_1_2_compiler_settings.png)
@@ -68,26 +68,26 @@ https://www.arduino.cc/en/Main/Software
 **[Remote PC]** Extract downloaded file to desired folder and execute the install file in the folder from the terminal. The below example uses *tools* folder in the root directory (`~/`). This folder will act as Arduino IDE folder.
 
 ``` bash
-  cd ~/tools/arduino-1.8.1
-  ./install.sh
+$ cd ~/tools/arduino-1.8.1
+$ ./install.sh
 ```
 
 **[Remote PC]** Open the script file with below command.
 
 ``` bash
-  gedit ~/.bashrc
+$ gedit ~/.bashrc
 ```
 
 **[Remote PC]** Append below `Arduino IDE` path information at the end of the `bashrc` file. It is recommended to use **gedit editor**. (Use another editor if necessary)
 
 ``` bash
-  export PATH=$PATH:$HOME/tools/arduino-1.8.1
+$ export PATH=$PATH:$HOME/tools/arduino-1.8.1
 ```
 
 **[Remote PC]** Last but not least, `source` the ``bashrc`` file to apply changes.
 
 ``` bash
-  source ~/.bashrc
+$ source ~/.bashrc
 ```
 
 ### [Run Arduino IDE](#run-arduino-ide)
@@ -95,7 +95,7 @@ https://www.arduino.cc/en/Main/Software
 **[Remote PC]** In order to run `Arduino IDE` on Linux platform, enter below command on the terminal.
 
 ``` bash
-  arduino
+$ arduino
 ```
 
 **[Remote PC]** If the program is installed and configured correctly, you'll be able to see GUI program as below.
@@ -109,7 +109,7 @@ https://www.arduino.cc/en/Main/Software
 **[Remote PC]** When `Arduino IDE` is running, go to <kbd>File</kbd> → <kbd>Preferences</kbd> from the menu of the program. When the *Preferences* window appears, copy and paste following link to the `Additional Boards Manager URLs` textbox. (This step may take about 20 min.)
 
 ``` bash
-  https://raw.githubusercontent.com/ROBOTIS-GIT/OpenCR/master/arduino/opencr_release/package_opencr_index.json
+$ https://raw.githubusercontent.com/ROBOTIS-GIT/OpenCR/master/arduino/opencr_release/package_opencr_index.json
 ```
 
 ![](/assets/images/platform/turtlebot3/preparation/ide1.png)

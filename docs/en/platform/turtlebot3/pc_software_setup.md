@@ -48,9 +48,9 @@ Install [ROS][ros] by using a simple installation script file
 {: .notice--info}
 
 ``` bash
-  sudo apt-get update
-  sudo apt-get upgrade
-  wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic.sh && chmod 755 ./install_ros_kinetic.sh && bash ./install_ros_kinetic.sh
+$ sudo apt-get update
+$ sudo apt-get upgrade
+$ wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic.sh && chmod 755 ./install_ros_kinetic.sh && bash ./install_ros_kinetic.sh
 ```
 
 ### [Second Method](#second-method)
@@ -72,14 +72,14 @@ If you are going to modify or develop source code from the remote PC, you'll hav
 **[Remote PC]** The next step is to install dependent packages for TurtleBot3 control.
 
 ``` bash
-  sudo apt-get install ros-kinetic-joy ros-kinetic-teleop-twist-joy ros-kinetic-teleop-twist-keyboard ros-kinetic-laser-proc ros-kinetic-rgbd-launch ros-kinetic-depthimage-to-laserscan ros-kinetic-rosserial-arduino ros-kinetic-rosserial-python ros-kinetic-rosserial-server ros-kinetic-rosserial-client ros-kinetic-rosserial-msgs ros-kinetic-amcl ros-kinetic-map-server ros-kinetic-move-base ros-kinetic-urdf ros-kinetic-xacro ros-kinetic-compressed-image-transport ros-kinetic-rqt-image-view ros-kinetic-gmapping ros-kinetic-navigation
+$ sudo apt-get install ros-kinetic-joy ros-kinetic-teleop-twist-joy ros-kinetic-teleop-twist-keyboard ros-kinetic-laser-proc ros-kinetic-rgbd-launch ros-kinetic-depthimage-to-laserscan ros-kinetic-rosserial-arduino ros-kinetic-rosserial-python ros-kinetic-rosserial-server ros-kinetic-rosserial-client ros-kinetic-rosserial-msgs ros-kinetic-amcl ros-kinetic-map-server ros-kinetic-move-base ros-kinetic-urdf ros-kinetic-xacro ros-kinetic-compressed-image-transport ros-kinetic-rqt-image-view ros-kinetic-gmapping ros-kinetic-navigation
 ```
 
 ``` bash
-  cd ~/catkin_ws/src/
-  git clone https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
-  git clone https://github.com/ROBOTIS-GIT/turtlebot3.git
-  cd ~/catkin_ws && catkin_make
+$ cd ~/catkin_ws/src/
+$ git clone https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
+$ git clone https://github.com/ROBOTIS-GIT/turtlebot3.git
+$ cd ~/catkin_ws && catkin_make
 ```
 
 If catkin_make command is completed without any errors, the preparation for TurtleBot3 is done.
@@ -94,7 +94,7 @@ ROS requires IP addresses in order to communicate between TurtleBot3 and the rem
 **[Remote PC]** Enter the below command on the terminal window of the remote PC to find out the IP address of the remote PC.
 
 ``` bash
-  ifconfig
+$ ifconfig
 ```
 
 Text strings in the rectangle is the IP address of the `Remote PC`.
@@ -104,7 +104,7 @@ Text strings in the rectangle is the IP address of the `Remote PC`.
 **[Remote PC]** Enter the below command.
 
 ``` bash
-  gedit ~/.bashrc
+$ gedit ~/.bashrc
 ```
 
 Modify the address of `localhost` with the IP address acquired from the above terminal window.
@@ -114,7 +114,7 @@ Modify the address of `localhost` with the IP address acquired from the above te
 **[Remote PC]** Then, source the bashrc with below command.
 
 ``` bash
-  source ~/.bashrc
+$ source ~/.bashrc
 ```
 
 [12-setup-your-sourceslist]: http://wiki.ros.org/kinetic/Installation/Ubuntu#Installation.2BAC8-Ubuntu.2BAC8-Sources.Setup_your_sources.list

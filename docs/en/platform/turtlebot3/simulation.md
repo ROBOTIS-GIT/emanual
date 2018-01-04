@@ -34,20 +34,20 @@ Install dependent packages for TurtleBot3 Simulation.
 {: .notice--info}
 
 ``` bash
-  cd ~/catkin_ws/src/
-  git clone https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
-  cd ~/catkin_ws && catkin_make
+$ cd ~/catkin_ws/src/
+$ git clone https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
+$ cd ~/catkin_ws && catkin_make
 ```
 
 `TurtleBot3 fake node` is a very simple simulation node that can be run without having an actual robot. You can even control the virtual TurtleBot3 in RViz with a teleop node.
 
 ``` bash
-  export TURTLEBOT3_MODEL=burger
-  roslaunch turtlebot3_fake turtlebot3_fake.launch
+$ export TURTLEBOT3_MODEL=burger
+$ roslaunch turtlebot3_fake turtlebot3_fake.launch
 ```
 
 ``` bash
-  roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
+$ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 ```
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/iHXZSLBJHMg" frameborder="0" allowfullscreen></iframe>
@@ -69,13 +69,13 @@ Install dependent packages for TurtleBot3 Simulation.
 You should set Turtlebot3 model parameter. Select either burger or waffle for the model parameter in the below command.
 
 ``` bash
-  export TURTLEBOT3_MODEL=burger
+$ export TURTLEBOT3_MODEL=burger
 ```
 
 Below command will load TurtleBot3 on the default Gazebo environment `TurtleBot3 empty world`.
 
 ``` bash
-  roslaunch turtlebot3_gazebo turtlebot3_empty_world.launch
+$ roslaunch turtlebot3_gazebo turtlebot3_empty_world.launch
 ```
 
 ![](/assets/images/platform/turtlebot3/simulation/turtlebot3_empty_world.png)
@@ -84,8 +84,8 @@ If you wish to load more interesting map, please use below command instead of ab
 `TurtleBot3 world` is a map consists of simple objects that makes up the shape of TurtleBot3 symbol.  
   
 ``` bash
-  export TURTLEBOT3_MODEL=burger
-  roslaunch turtlebot3_gazebo turtlebot3_world.launch
+$ export TURTLEBOT3_MODEL=burger
+$ roslaunch turtlebot3_gazebo turtlebot3_world.launch
 ```
 
 ![](/assets/images/platform/turtlebot3/simulation/turtlebot3_world_bugger.png)
@@ -95,21 +95,21 @@ If you wish to load more interesting map, please use below command instead of ab
 In order to control TurtleBot3 with a keyboard, please launch teleoperation feature with below command in a new terminal window.
 
 ``` bash
-  roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
+$ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 ```
 
 In order to run TurtleBot3 simulation that autonomously navigates around the map, open a new terminal window and enter below command.
 
 ``` bash
-  export TURTLEBOT3_MODEL=burger
-  roslaunch turtlebot3_gazebo turtlebot3_simulation.launch
+$ export TURTLEBOT3_MODEL=burger
+$ roslaunch turtlebot3_gazebo turtlebot3_simulation.launch
 ```
 
 RViz visualizes published topics while simulation is running. You can launch RViz in a new terminal window by entering below command.
 
 ``` bash
-  export TURTLEBOT3_MODEL=burger
-  roslaunch turtlebot3_gazebo turtlebot3_gazebo_rviz.launch
+$ export TURTLEBOT3_MODEL=burger
+$ roslaunch turtlebot3_gazebo turtlebot3_gazebo_rviz.launch
 ```
 
 ![](/assets/images/platform/turtlebot3/simulation/turtlebot3_gazebo_rviz.png)

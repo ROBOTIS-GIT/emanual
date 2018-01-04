@@ -24,11 +24,11 @@ In this section, the Alternative Ubuntu Desktop 16.04 LTS will be installed on I
 
 **[Remote PC]** In order to make a bootable installation USB drive, please follow the [Alternative install(Ubuntu Desktop 16.04 LTS)][alternative-installubuntu-desktop-1604-lts] section from the below link.
 
-- https://developer.ubuntu.com/core/get-started/intel-joule
+- [https://developer.ubuntu.com/core/get-started/intel-joule](https://developer.ubuntu.com/core/get-started/intel-joule)
 
 **[Remote PC]** Before getting started, The board needs to have its BIOS updated to [BIOS version #193][bios-version-193] to install Ubuntu Image. Download [BIOS version #193][bios-version-193] and flash the BIOS into the Joule by following instructions in the below link.
 
-- https://software.intel.com/en-us/flashing-the-bios-on-joule
+- [https://software.intel.com/en-us/flashing-the-bios-on-joule](https://software.intel.com/en-us/flashing-the-bios-on-joule)
 
 **Warning :** Updating to the latest BIOS(1J2 or higher) may cause unexpected problem of `Intel® Joule™` with Ubuntu 16.04 LTS. Please use only the recommended [BIOS version #193][bios-version-193].
 {: .notice--warning}

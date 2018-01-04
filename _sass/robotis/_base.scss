@@ -83,6 +83,19 @@ h1, h2, h3, h4, h5, h6 {
       margin: 0.5em 0.5em 0 1em;
       @include indentation;
     }
+    blockquote {
+      word-wrap: break-word;
+      margin: 0.5em 0.5em 0 2em;
+      font-style: italic;
+      color: $primary-color;
+      border-left: 0.25em solid $primary-color;
+      p {
+        margin : 0 0.5em;
+      }
+    }
+    div.fluid-width-video-wrapper {
+      margin-left: 0;
+    }
   }
 }
 
@@ -108,6 +121,19 @@ h1, h2, h3, h4, h5, h6 {
     ul, ol {
       margin: 0.5em 0.5em 0 2em;
       @include indentation;
+    }
+    blockquote {
+      word-wrap: break-word;
+      margin: 0.5em 0.5em 0 3em;
+      font-style: italic;
+      color: $primary-color;
+      border-left: 0.25em solid $primary-color;
+      p {
+        margin : 0 0.5em;
+      }
+    }
+    div.fluid-width-video-wrapper {
+      margin-left: 0;
     }
   }
 }
@@ -135,6 +161,19 @@ h1, h2, h3, h4, h5, h6 {
       margin: 0.5em 0.5em 0 3.3em;
       @include indentation;
     }
+    blockquote {
+      word-wrap: break-word;
+      margin: 0.5em 0.5em 0 4.3em;
+      font-style: italic;
+      color: $primary-color;
+      border-left: 0.25em solid $primary-color;
+      p {
+        margin : 0 0.5em;
+      }
+    }
+    div.fluid-width-video-wrapper {
+      margin-left: 0;
+    }
   }
 }
 
@@ -160,6 +199,19 @@ h1, h2, h3, h4, h5, h6 {
       margin: 0.5em 0.5em 0 4.5em;
       @include indentation;
     }
+    blockquote {
+      word-wrap: break-word;
+      margin: 0.5em 0.5em 0 5.5em;
+      font-style: italic;
+      color: $primary-color;
+      border-left: 0.25em solid $primary-color;
+      p {
+        margin : 0 0.5em;
+      }
+    }
+    div.fluid-width-video-wrapper {
+      margin-left: 0;
+    }
   }
 }
 
@@ -180,6 +232,19 @@ h1, h2, h3, h4, h5, h6 {
       margin: 0.5em 0.5em 0 6em;
       @include indentation;
     }
+    blockquote {
+      word-wrap: break-word;
+      margin: 0.5em 0.5em 0 7em;
+      font-style: italic;
+      color: $primary-color;
+      border-left: 0.25em solid $primary-color;
+      p {
+        margin : 0 0.5em;
+      }
+    }
+    div.fluid-width-video-wrapper {
+      margin-left: 0;
+    }
   }
 }
 
@@ -198,6 +263,19 @@ h1, h2, h3, h4, h5, h6 {
     ul, ol {
       margin: 0.5em 0.5em 0 7em;
       @include indentation;
+    }
+    blockquote {
+      word-wrap: break-word;
+      margin: 0.5em 0.5em 0 8em;
+      font-style: italic;
+      color: $primary-color;
+      border-left: 0.25em solid $primary-color;
+      p {
+        margin : 0 0.5em;
+      }
+    }
+    div.fluid-width-video-wrapper {
+      margin-left: 0;
     }
   }
 }
