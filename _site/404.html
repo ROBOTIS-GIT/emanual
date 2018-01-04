@@ -3385,15 +3385,18 @@ $(function() {
   }
   
   var toggle = 0;
+  var mobile_width = 960;
   
   function extendnav() {
-    if (toggle == 0) {
-      sidebar.classList.add("extend_sidebar");
-      toggle = 1;
-    }
-    else {
-      sidebar.classList.remove("extend_sidebar");
-      toggle = 0;
+    if (document.body.clientWidth < mobile_width ) {
+      if (toggle == 0) {
+        sidebar.classList.add("extend_sidebar");
+        toggle = 1;
+      }
+      else {
+        sidebar.classList.remove("extend_sidebar");
+        toggle = 0;
+      }
     }
   }
 </script>
