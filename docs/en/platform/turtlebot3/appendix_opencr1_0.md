@@ -73,7 +73,7 @@ OpenCR1.0 will be the best solution for implementing your embedded control desig
 ### [Run serial_node package](#run-serialnode-package)
 
 ``` bash
-  rosrun rosserial_python serial_node.py __name:=turtlebot3_core _port:=/dev/ttyACM0 _baud:=115200
+$ rosrun rosserial_python serial_node.py __name:=turtlebot3_core _port:=/dev/ttyACM0 _baud:=115200
 ```
 
 ### [Testing](#testing)

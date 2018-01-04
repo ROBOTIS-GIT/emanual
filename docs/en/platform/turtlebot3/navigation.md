@@ -39,21 +39,21 @@ The Navigation locates TurtleBot3 to the calculated position in the map by combi
 If you have TurtleBot3 Burger,
 
 ``` bash
-  export TURTLEBOT3_MODEL=burger
-  roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/map.yaml
+$ export TURTLEBOT3_MODEL=burger
+$ roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/map.yaml
 ```
 
 If you have TurtleBot3 Waffle,
 
 ``` bash
-  export TURTLEBOT3_MODEL=waffle
-  roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/map.yaml
+$ export TURTLEBOT3_MODEL=waffle
+$ roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/map.yaml
 ```
 
 **[Remote PC]** Launch the Rviz.
 
 ``` bash
-  rosrun rviz rviz -d `rospack find turtlebot3_navigation`/rviz/turtlebot3_nav.rviz
+$ rosrun rviz rviz -d `rospack find turtlebot3_navigation`/rviz/turtlebot3_nav.rviz
 ```
 
 **[Remote PC]** Before starting the navigation, RViz should be updated with initial location and pose of TurtleBot3. To upate the initial data, follow the instruction below.

@@ -49,7 +49,7 @@ sidebar:
 **[Remote PC]** Run roscore.
 
 ``` bash
-  roscore
+$ roscore
 ```
 
 ### [TurtleBot3 Burger](#turtlebot3-burger)
@@ -57,15 +57,14 @@ sidebar:
 **[TurtleBot]** Bring up basic packages to start TurtleBot3 applications.
 
 ``` bash
-  roslaunch turtlebot3_bringup turtlebot3_robot.launch
+$ roslaunch turtlebot3_bringup turtlebot3_robot.launch
 ```
 
 **Tip :** If you want to launch Lidar sensor and core separately, please use below commands.
 ``` bash
-  roslaunch turtlebot3_bringup turtlebot3_lidar.launch
-  roslaunch turtlebot3_bringup turtlebot3_core.launch
+$ roslaunch turtlebot3_bringup turtlebot3_lidar.launch
+$ roslaunch turtlebot3_bringup turtlebot3_core.launch
 ```
-{: .notice--info}
 
 **Note :** If `lost sync with device` error message is displayed on the terminal window, the sensor device of TurtleBot3 might not be securely connected.
 {: .notice--info}
@@ -73,8 +72,8 @@ sidebar:
 **[Remote PC]** Run RViz
 
 ``` bash
-  export TURTLEBOT3_MODEL=burger
-  roslaunch turtlebot3_bringup turtlebot3_model.launch
+$ export TURTLEBOT3_MODEL=burger
+$ roslaunch turtlebot3_bringup turtlebot3_model.launch
 ```
 
 ![](/assets/images/platform/turtlebot3/bringup/rviz_burger_model.jpg)
@@ -84,16 +83,15 @@ sidebar:
 **[TurtleBot]** Bring up basic packages to start TurtleBot3 applications.
 
 ``` bash
-  roslaunch turtlebot3_bringup turtlebot3_robot.launch
+$ roslaunch turtlebot3_bringup turtlebot3_robot.launch
 ```
 
 **Tip :** If you want to launch Lidar sensor, Intel® RealSense™ R200 and core separately, please use below commands.
 ``` bash
-  roslaunch turtlebot3_bringup turtlebot3_lidar.launch
-  roslaunch turtlebot3_bringup turtlebot3_realsense.launch
-  roslaunch turtlebot3_bringup turtlebot3_core.launch
+$ roslaunch turtlebot3_bringup turtlebot3_lidar.launch
+$ roslaunch turtlebot3_bringup turtlebot3_realsense.launch
+$ roslaunch turtlebot3_bringup turtlebot3_core.launch
 ```
-{: .notice--info}
 
 **Note :** If `lost sync with device` error message is displayed on the terminal window, sensor devices of the TurtleBot3 might not be securely connected.
 {: .notice--info}
@@ -101,8 +99,8 @@ sidebar:
 **[Remote PC]** Run RViz
 
 ``` bash
-  export TURTLEBOT3_MODEL=waffle
-  roslaunch turtlebot3_bringup turtlebot3_model.launch
+$ export TURTLEBOT3_MODEL=waffle
+$ roslaunch turtlebot3_bringup turtlebot3_model.launch
 ```
 
 ![](/assets/images/platform/turtlebot3/bringup/rviz_waffle_model.jpg)
