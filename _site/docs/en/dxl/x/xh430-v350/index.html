@@ -153,6 +153,23 @@ $(function() {
 
 <!-- end custom head snippets -->
 
+    <script>
+      var toggle_google = 0;
+      var mobile_width = 960;
+      
+      function extendgoogletool() {
+        if (document.body.clientWidth < mobile_width) {
+          if (toggle_google == 0) {
+            google_tools.classList.add("extend_googletools");
+            toggle_google = 1;
+          }
+          else {
+            google_tools.classList.remove("extend_googletools");
+            toggle_google = 0;
+          }
+        }
+      }
+    </script>
   </head>
 
   <body class="layout--archive">
@@ -164,15 +181,6 @@ $(function() {
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <a class="site-title" href="http://localhost:4000/"><img class="logo" id="logo" src="/assets/images/robotis_emanual_logo.png"></a>
-        
-      <!-- Google Translation -->
-      <div id="google_translate_element"></div><script type="text/javascript">
-      function googleTranslateElementInit() {
-        new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'ar,de,es,fr,hi,ja,ko,pt,ru,sv,th,tr,vi,zh-CN', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, multilanguagePage: true, gaTrack: true, gaId: 'UA-83196341'}, 'google_translate_element');
-      }
-      </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-      <!-- end of Google Translation -->
-
       <!-- Google Custom Search -->
       <form class="searchbox" method="get" id="site_search">
         <script>
@@ -188,7 +196,17 @@ $(function() {
         </script>
         <gcse:search></gcse:search>
       </form>
-      <!-- end of Google Custom Search -->  
+      <!-- end of Google Custom Search -->
+      <button class="google_button" id="google_button" onclick="extendgoogletool()"><img src="https://www.google.com/images/cleardot.gif" class="goog-te-gadget-icon" alt="" style="background-image: url(&quot;https://translate.googleapis.com/translate_static/img/te_ctrl3.gif&quot;); background-position: -65px 0px;"></button>
+      <div class="google_tools" id="google_tools">
+        <!-- Google Translation -->
+        <div id="google_translate_element"></div><script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'ar,de,es,fr,hi,ja,ko,pt,ru,sv,th,tr,vi,zh-CN', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, multilanguagePage: true, gaTrack: true, gaId: 'UA-83196341'}, 'google_translate_element');
+        }
+        </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <!-- end of Google Translation -->  
+      </div>
       
       <input class="menu-btn" type="checkbox" id="menu-btn" />
       <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
@@ -3415,7 +3433,6 @@ $(function() {
     
     
       
-<button class="nav_button" id="nav_button" onclick="extendnav()">Nav</button>
 <nav class="nav__list">
 
   <a href=http://localhost:4000/docs/en/dxl/x/xh430-v350/ style="font-size:$type-size-6; color: #2174b6; text-decoration: none; font-weight: bold;" onclick="extendnav()">XH430-V350</a>
@@ -3670,7 +3687,7 @@ $(function() {
   </div>
 
 
-
+  <button class="nav_button" id="nav_button" onclick="extendnav()">Nav</button>
   <div class="archive" id="archive">
     <a href="/blob/master/docs/en/dxl/x/xh430-v350.md" itemprop="sameAs" style="font-size:16px; float:right; margin: 10px 20px; text-decoration: none;">
       <i class="fa fa-fw fa-github" aria-hidden="true"></i> Edit on GitHub
