@@ -537,7 +537,7 @@ main:
         titlekr: "감속모터(GM-10A)"
         titlejp: "Geared Motor(GM-10A)"
         titlecn: "Geared Motor(GM-10A)"
-        url: /parts/motor/geared_motor/
+        url: /parts/motor/gm-10a/
       - title: "*High Speed Geared Motor"
         titlekr: "*고속 감속모터"
         titlejp: "*高速減速モーター"
