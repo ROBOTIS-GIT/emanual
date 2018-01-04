@@ -3367,12 +3367,12 @@ $(function() {
 
 
 <script>
+  var side_nav = document.getElementById("sidebar");
+  var offset = 105;
+
   window.onscroll = function () {
     stickynav()
   };
-  
-  var side_nav = document.getElementById("sidebar");
-  var offset = 105;
   
   function stickynav() {
     if (window.pageYOffset > offset) {
@@ -3380,6 +3380,19 @@ $(function() {
     }
     else {
       sidebar.classList.remove("sticky_sidebar");
+    }
+  }
+  
+  var toggle = 0;
+  
+  function extendnav() {
+    if (toggle == 0) {
+      sidebar.classList.add("extend_sidebar");
+      toggle = 1;
+    }
+    else {
+      sidebar.classList.remove("extend_sidebar");
+      toggle = 0;
     }
   }
 </script>

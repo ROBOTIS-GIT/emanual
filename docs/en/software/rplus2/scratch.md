@@ -119,7 +119,7 @@ This method utilizes BT-210 Bluetooth module or ZigBee (ZIG-110A Set + ZIG2Seria
 ## Installing the ROBOTIS Virtual COM Port Driver
 1. If the driver is properly installed and your Controller is connected to your PC and powered on, you will see “ROBOTIS Virtual COM Port(COM X)” in Device Manager.
 2. If the device shows up as “USB Serial Port,” then you must update the driver.
-3. Right-click on “USB Serial Port” and select “Update Driver Software…”
+3. Right-click on “USB Serial Port” and select “Update Driver Software...”
 4. Select “Browse my computer for driver software”.
 5. Select “Let me pick from a list of device drivers on my computer”.
 6. Select “ROBOTIS Virtual COM Port” and click “Next” to finish the installation.

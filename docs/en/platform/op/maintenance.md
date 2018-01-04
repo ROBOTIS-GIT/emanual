@@ -869,7 +869,7 @@ After boot selection go to the “Exit” tab and select “Exit Saving Changes�
   - device-image  work with disks or partitions using images
 6. Mount Clonezilla image directory: Select the following
   - skip Use existing /home/partimag (Writable device. E.g. hard disk/USB drive)
-  - < Press “Enter” to continue……> : Press “Enter” key
+  - < Press “Enter” to continue......> : Press “Enter” key
 7. Clonezilla – Opensource Clone System (OCS) : Select the default option from the menu
   - Beginner Beginner mode: Accept the default options
 8. Clonezilla: Select mode: Select the following
@@ -878,12 +878,12 @@ After boot selection go to the “Exit” tab and select “Exit Saving Changes�
   - Ex) DARwIn_Recovery_2012-03-19  2012-0316-1405_sda
 10. Clonezilla – Opensource Clone System (OCS) | Mode: restoredisk : Choose the target disk
   - Sda 4096MB_4GB_NANDrive__ata-4GB_NANDrive_0000000000R1Q199982a
-  - < Press “Enter” to continue …… > : Press “Enter” key
+  - < Press “Enter” to continue ...... > : Press “Enter” key
   - < Are you sure you want to continue? ? (y/n) > : Press ‘Y’ key and Press “Enter” key
   - < Let me ask you again. Are you sure you want to continue? ? (y/n) > : Press ‘Y’ key and Press “Enter” key
 11. Starting to restore image to device. Wait until done.
 12. After completing restoration
-  - < Press “Enter” to continue…> : Press “Enter” key.
+  - < Press “Enter” to continue...> : Press “Enter” key.
 13. Now you can choose to: Choose 0 or 1
   - (0) Poweroff
   - (1) Reboot
