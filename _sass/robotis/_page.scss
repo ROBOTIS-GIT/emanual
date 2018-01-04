@@ -6,7 +6,7 @@
   }
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: $mobile-width) {
   
   #main {
     padding-top: 100px;
