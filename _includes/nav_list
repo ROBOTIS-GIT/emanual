@@ -2,7 +2,7 @@
 
 <nav class="nav__list">
 
-  {% if page.sidebar.title %}<a href={{ page.permalink | absolute_url }} style="font-size:$type-size-6; color: #2174b6; text-decoration: none;">{{ page.sidebar.title }}</a>{% endif %}
+  {% if page.sidebar.title %}<a href={{ page.permalink | absolute_url }} style="font-size:$type-size-6; color: #2174b6; text-decoration: none; font-weight: bold;">{{ page.sidebar.title }}</a>{% endif %}
   <ul class="nav__items">
   {% for nav in navigation %}
     {% if page.lang=='kr' %}
@@ -116,4 +116,5 @@
     {% endif %}
   {% endfor %}
   </ul>
+  <a href="#" style="font-size:$type-size-6; color: #2174b6; text-decoration: none; font-weight: bold;">Back to Top &#9650;</a>
 </nav>

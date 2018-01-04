@@ -7727,20 +7727,111 @@ opencm904:
     url: /parts/controller/opencm904/#specifications
   - title: "Control Table"
     url: /parts/controller/opencm904/#control-table
-  - title: "Block Diagram"
-    url: /parts/controller/opencm904/#block-diagram
-  - title: "Layout"
-    url: /parts/controller/opencm904/#layout
+  - title: "Hardware"
+    url: /parts/controller/opencm904/#hardware
+    children:
+    - title: "Memory Map"
+      url: /parts/controller/opencm904/#memory-map
+    - title: "Block Diagram"
+      url: /parts/controller/opencm904/#block-diagram
+    - title: "Layout / Pin Map"
+      url: /parts/controller/opencm904/#layoutpin-map
+      children:
+      - title: "Power Switch"
+        url: /parts/controller/opencm904/#power-switch
+      - title: "Serial Battery Socket"
+        url: /parts/controller/opencm904/#serial-battery-socket
+      - title: "Dynamixel TTL Socket"
+        url: /parts/controller/opencm904/#dynamixel-ttl-3-pin
+      - title: "Communication Port"
+        url: /parts/controller/opencm904/#communication-port
+      - title: "User Button"
+        url: /parts/controller/opencm904/#user-button
+      - title: "Ext ADC Ref Jumper"
+        url: /parts/controller/opencm904/#ext-adc-ref-jumper
+      - title: "Micro-B USB"
+        url: /parts/controller/opencm904/#micro-b-usb
+      - title: "Status LED"
+        url: /parts/controller/opencm904/#status-led
+      - title: "Reset Button"
+        url: /parts/controller/opencm904/#reset-button
+      - title: "JTAG/SWD Pin"
+        url: /parts/controller/opencm904/#jtagswd-4-pin
+      - title: "5 Pin Port"
+        url: /parts/controller/opencm904/#5-pin-port
+      - title: "I/O Header"
+        url: /parts/controller/opencm904/#io-header
+    - title: "Pin Name Definition"
+      url: /parts/controller/opencm904/#pin-name-definition
+    - title: "Pin Function Definition"
+      url: /parts/controller/opencm904/#pin-function-definition
   - title: "Connecting Power"
     url: /parts/controller/opencm904/#connecting-power
   - title: "Switch Assembly(Type A)"
     url: /parts/controller/opencm904/#switch-assemblytype-a
   - title: "Connector Assembly(Type A)"
     url: /parts/controller/opencm904/#connector-assemblytype-a
+  - title: "Development Environment"
+    url: /parts/controller/opencm904/#development-environment
+    children:
+    - title: "Softwares"
+      url: /parts/controller/opencm904/#softwares
+    - title: "OpenCM IDE"
+      url: /parts/controller/opencm904/#opencm-ide
+    - title: "Arduino IDE"
+      url: /parts/controller/opencm904/#arduino-ide
+      children:
+      - title: "Install on Linux"
+        url: /parts/controller/opencm904/#install-on-linux
+      - title: "Install on Mac"
+        url: /parts/controller/opencm904/#install-on-mac
+      - title: "Install on Windows"
+        url: /parts/controller/opencm904/#install-on-windows
+    - title: "DynamixelWorkbench"
+      url: /parts/controller/opencm904/#dynamixelworkbench
+      children:
+      - title: "APIs"
+        url: /parts/controller/opencm904/#apis
+      - title: "Example 1. Find Dynamixel"
+        url: /parts/controller/opencm904/#find-dynamixel
+      - title: "Example 2. Position"
+        url: /parts/controller/opencm904/#position
+      - title: "Example 3. Speed"
+        url: /parts/controller/opencm904/#speed
+  - title: "Examples"
+    url: /parts/controller/opencm904/#examples
+    children:
+    - title: "LED"
+      url: /parts/controller/opencm904/#led
+    - title: "Button"
+      url: /parts/controller/opencm904/#button
+    - title: "Buzzer"
+      url: /parts/controller/opencm904/#buzzer
+    - title: "PWM"
+      url: /parts/controller/opencm904/#pwm
+    - title: "EEPROM"
+      url: /parts/controller/opencm904/#eeprom
+    - title: "Servo"
+      url: /parts/controller/opencm904/#servo
+    - title: "SD Card"
+      url: /parts/controller/opencm904/#sd-card
+    - title: "MS5540S"
+      url: /parts/controller/opencm904/#ms5540s
+    - title: "MPU6050 DMP"
+      url: /parts/controller/opencm904/#mpu6050-dmp
+    - title: "0.96\" OLED LCD"
+      url: /parts/controller/opencm904/#096-oled-lcd
   - title: "Downloads"
     url: /parts/controller/opencm904/#downloads
-  - title: "Dimension"
-    url: /parts/controller/opencm904/#dimension
+  - title: "References"
+    url: /parts/controller/opencm904/#references
+    children:
+    - title: "Recovery Mode"
+      url: /parts/controller/opencm904/#recovery-mode
+    - title: "Install Windows Driver"
+      url: /parts/controller/opencm904/#install-windows-driver
+    - title: "Dimension"
+      url: /parts/controller/opencm904/#dimension
 
 #OpenCM 485 EXP sidebar
 opencm485exp:

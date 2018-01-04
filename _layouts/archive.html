@@ -14,6 +14,24 @@ layout: default
   {% endunless %}
 {% endif %}
 
+<script>
+  window.onscroll = function () {
+    stickynav()
+  };
+  
+  var side_nav = document.getElementById("sidebar");
+  var offset = 105;
+  
+  function stickynav() {
+    if (window.pageYOffset > offset) {
+      sidebar.classList.add("sticky_sidebar");
+    }
+    else {
+      sidebar.classList.remove("sticky_sidebar");
+    }
+  }
+</script>
+
 <div id="main" role="main">
   {% include sidebar.html %}
 
