@@ -10,8 +10,19 @@
   margin: 0.5em;
 }
 
-.google_button {
-  display: none;
+#google_button {
+  display: block;
+  position: fixed;
+  width: 45px;
+  height: 50px;
+  top: 6.8rem;
+  right: -5px;
+  background-color: white;
+  border: 1px solid mix(#fff, #000, 80%);
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  z-index: 100;
+  opacity: 0.8;
 }
 
 .google_tools {
@@ -22,6 +33,10 @@
   border: 1px solid mix(#fff, #000, 80%);
   border-radius: $border-radius;
   z-index: 30;
+}
+
+.extend_googletools {
+  right: 5px;
 }
 
 .cse .gsc-search-button input.gsc-search-button-v2,
