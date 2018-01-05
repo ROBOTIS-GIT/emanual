@@ -51,7 +51,7 @@ The example sources coded with C# / Python / Java / MATLAB / LabVIEW are not usi
 
 ![](/assets/images/sw/sdk/dynamixel_sdk/overview/dynamixel_sdk_language_struct.png)
 
-You can find out how to run the examples in the Dynamixel SDK sources at [here](https://github.com/ROBOTIS-GIT/DynamixelSDK/wiki/4.-SDK-Example)
+You can find out how to run the examples in the Dynamixel SDK sources at [here](/docs/en/software/dynamixel/dynamixel_sdk/sample_code/c_read_write_protocol_1_0/#sample-code)
 
 ## [License](#license)
 

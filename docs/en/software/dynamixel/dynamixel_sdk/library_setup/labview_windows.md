@@ -30,7 +30,7 @@ sidebar:
 
 Note that if following procedure imports the DynamixelSDK c ver. 32bit library, the built library for LabVIEW only can be used by LabVIEW 32bit. Choose the platform target to either 32bit or 64bit, at first.
 
-Besides, when some error that are related with `.dll file version is higher than the LabVIEW's version` is appeared, the `.dll` file should be rebuilt in lower version Visual Studio. Check how to build in the lower version environment [here](https://github.com/ROBOTIS-GIT/DynamixelSDK/wiki/3.2.1.1-C-Windows) → <kbd>Building the Library</kbd> → `Platform Toolset`. 
+Besides, when some error that are related with `.dll file version is higher than the LabVIEW's version` is appeared, the `.dll` file should be rebuilt in lower version Visual Studio. Check how to build in the lower version environment [here](/docs/en/software/dynamixel/dynamixel_sdk/library_setup/labview_windows/#labview-windows) → <kbd>Building the Library</kbd> → `Platform Toolset`. 
 
 * Run LabVIEW, then click <kbd>Tools</kbd> → <kbd>Import</kbd> → <kbd>Shared Library (.dll)...</kbd>.
 

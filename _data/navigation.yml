@@ -4871,7 +4871,7 @@ bioloid-premium:
     children:
     - title: "Replacing Fuse"
       titlekr: ""
-      url: /edu/bioloid/premium/#replacing-fuse-cm-5
+      url: /edu/bioloid/premium/#replacing-fuse
       urlkr:
     - title: "Dynamixel Management"
       titlekr: ""
@@ -5826,8 +5826,8 @@ turtlebot3:
       url: /platform/turtlebot3/appendix_opencr1_0/#open-source-software
     - title: "Open Source Hardware"
       url: /platform/turtlebot3/appendix_opencr1_0/#open-source-hardware
-    - title: "Wiki Site for More Information"
-      url: /platform/turtlebot3/appendix_opencr1_0/#wiki-site-for-more-information
+    - title: "e-Manual"
+      url: /platform/turtlebot3/appendix_opencr1_0/#e-manual
   - title: "Appendix #DYNAMIXEL"
     url: /platform/turtlebot3/appendix_dynamixel/#appendix-dynamixel
     children:

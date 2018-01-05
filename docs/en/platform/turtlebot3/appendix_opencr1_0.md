@@ -99,9 +99,9 @@ If you want to manufacture your own OpenCR1.0, you can download necessary files 
 
 - OpenCR1.0 Hardware: [https://github.com/ROBOTIS-GIT/OpenCR-Hardware](https://github.com/ROBOTIS-GIT/OpenCR-Hardware)
 
-## [Wiki Site for More Information](#wiki-site-for-more-information)
+## [e-Manual](#e-manual)
 
-- OpenCR1.0 Wiki: https://github.com/ROBOTIS-GIT/OpenCR/wiki
+- [OpenCR1.0 e-Manual]
 
 [B3B-EH-A]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
 [B4B-EH-A]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
@@ -111,3 +111,4 @@ If you want to manufacture your own OpenCR1.0, you can download necessary files 
 [5267-02A]: http://www.molex.com/molex/products/datasheet.jsp?part=active/0022035025_PCB_HEADERS.xml&channel=Products&Lang=en-US
 [20010WS-02]: http://www.alldatasheet.com/datasheet-pdf/pdf/147795/YEONHO/20010WS-02000.html
 [Molex 53047-0210]: http://www.molex.com/molex/products/datasheet.jsp?part=active/0530470210_PCB_HEADERS.xml
+[OpenCR1.0 e-Manual]: /docs/en/parts/controller/opencr10/
