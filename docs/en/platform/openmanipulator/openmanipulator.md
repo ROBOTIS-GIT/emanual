@@ -24,7 +24,7 @@ OpenManipulator are based on ROS ​and OpenSource. ROS official hardware platfo
 The OpenManipulator is oriented towards Open Hardware​. Most of the components except for some frames are uploaded as [STL files](https://cad.onshape.com/documents/9442f03bd8ccac084fda9dd3/w/039e8dbd53e0782540ea5b0d/e/9d3986b1e15cd5dce9557032) that can be 3d printing. This allows users to modify the length of the link and the design of the robot to suit the intended use. The open manipulator also uses the **Dynamixel X ​series** used in TurtleBot 3. Dynamixel has a modular form and adopts daisy chain method. This allows users to easily change and add joints for some torque and degree of freedom they need. Taking advantage of these advantages, we are planning a total of seven different types (For example, Chain, SCARA, Link, Planar, Delta, Stewart and Linear) of OpenManipulator.
 
 ## OpenCR (Embedded board)
-The OpenManipulator can also be controlled via [OpenCR](https://github.com/ROBOTIS-GIT/OpenCR/wiki) (Open-source Control module for ROS), the control board of TurtleBot3. OpenCR's computing power and real-time control are used to support forward, inverse kinematics, and profile control examples. In addition, OpenCR can interoperate with many functions provided by ROS through message communication with ROS, which will evolve into ROS 2.0 in the future.
+The OpenManipulator can also be controlled via [OpenCR] (Open-source Control module for ROS), the control board of TurtleBot3. OpenCR's computing power and real-time control are used to support forward, inverse kinematics, and profile control examples. In addition, OpenCR can interoperate with many functions provided by ROS through message communication with ROS, which will evolve into ROS 2.0 in the future.
 
 ## Examples
 
@@ -71,62 +71,60 @@ OpenManipulator is composed by [Dynamixel X series](http://en.robotis.com/index/
 
 ### ROS
 
- <iframe width="560" height="315" src="https://www.youtube.com/embed/Qhvk5cnX2hM" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Qhvk5cnX2hM" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
 
- <iframe width="560" height="315" src="https://www.youtube.com/embed/B2pnXtooKOg" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/B2pnXtooKOg" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
-* Install dependent packages for the OpenManipulator.
+- Install dependent packages for the OpenManipulator.
 
- ```
- $ sudo apt-get install ros-kinetic-ros-controllers ros-kinetic-gazebo* ros-kinetic-moveit* ros-kinetic-dynamixel-sdk ros-kinetic-dynamixel-workbench-toolbox ros-kinetic-robotis-math ros-kinetic-industrial-core 
- ```
+```
+$ sudo apt-get install ros-kinetic-ros-controllers ros-kinetic-gazebo* ros-kinetic-moveit* ros-kinetic-dynamixel-sdk ros-kinetic-dynamixel-workbench-toolbox ros-kinetic-robotis-math ros-kinetic-industrial-core 
+```
 
- ```
- $ cd ~/catkin_ws/src/
+```
+$ cd ~/catkin_ws/src/
+$ git clone https://github.com/ROBOTIS-GIT/open_manipulator.git
+$ cd ~/catkin_ws && catkin_make 
+```
 
- $ git clone https://github.com/ROBOTIS-GIT/open_manipulator.git
-
- $ cd ~/catkin_ws && catkin_make 
- ```
-
-* If catkin_make command is completed without any errors, preparation for OpenManipulator is done.
+- If catkin_make command is completed without any errors, preparation for OpenManipulator is done.
 
 ### Gazebo(3D)
 
-* Below command will load the OpenManipulator on Gazebo environment.
+- Below command will load the OpenManipulator on Gazebo environment.
 
- ```
- $ roslaunch open_manipulator_gazebo open_manipulator_gazebo.launch
- ```
+  ```
+  $ roslaunch open_manipulator_gazebo open_manipulator_gazebo.launch
+  ```
 
- ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_gazebo_1.jpg)
+  ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_gazebo_1.jpg)
 
-* In order to control OpenManipulator, please use topic publish with below command in a new terminal window.
+- In order to control OpenManipulator, please use topic publish with below command in a new terminal window.
 
- ```
- $ rostopic pub /open_manipulator_chain/joint2_position/command std_msgs/Float64 "data: 1.0" --once
- ```
+  ```
+  $ rostopic pub /open_manipulator_chain/joint2_position/command std_msgs/Float64 "data: 1.0" --once
+  ```
 
- ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_gazebo_2.jpg)
+  ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_gazebo_2.jpg)
 
-* In order to run OpenManipulator simulation with MoveIt!, open a new terminal window and enter below command.
+- In order to run OpenManipulator simulation with MoveIt!, open a new terminal window and enter below command.
 
- ```
- $ roslaunch open_manipulator_moveit open_manipulator_demo.launch use_gazebo:=true
- ```
+  ```
+  $ roslaunch open_manipulator_moveit open_manipulator_demo.launch use_gazebo:=true
+  ```
 
- ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_moveit_sim_1.png)
+  ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_moveit_sim_1.png)
 
- ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_moveit_sim_2.png)
+  ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_moveit_sim_2.png)
 
-* In order to control gripper, please use topic publish with below command in a new terminal window.
+- In order to control gripper, please use topic publish with below command in a new terminal window.
 
- ```
- $ rostopic pub /robotis/open_manipulator/gripper std_msgs/String "data: 'grip_on'" --once
- ```
+  ```
+  $ rostopic pub /robotis/open_manipulator/gripper std_msgs/String "data: 'grip_on'" --once
+  ```
 
- ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_gripper.png)
+  ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_gripper.png)
 
 ### Platform
 
@@ -136,37 +134,35 @@ OpenManipulator is composed by [Dynamixel X series](http://en.robotis.com/index/
  $ roslaunch open_manipulator_dynamixel_ctrl dynamixel_controller.launch
  ```
 
-* In order to run OpenManipulator simulation with MoveIt!, open a new terminal window and enter below command.
+- In order to run OpenManipulator simulation with MoveIt!, open a new terminal window and enter below command.
 
- ```
- $ roslaunch open_manipulator_moveit open_manipulator_demo.launch
- ```
+  ```
+  $ roslaunch open_manipulator_moveit open_manipulator_demo.launch
+  ```
 
- ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_moveit_real_1.png)
+  ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_moveit_real_1.png)
 
- ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_moveit_real_2.png)
+  ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_moveit_real_2.png)
 
- ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_moveit_real_3.png)
+  ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_moveit_real_3.png)
 
- ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_moveit_real_4.png)
+  ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_moveit_real_4.png)
 
 ### TurtleBot3 Waffle with OpenManipulator Chain
 
-* Install dependent packages for the OpenManipulator.
+- Install dependent packages for the OpenManipulator.
 
- ```
- $ cd ~/catkin_ws/src
+  ```
+  $ cd ~/catkin_ws/src
+  $ git clone https://github.com/ROBOTIS-GIT/turtlebot3.git
+  $ cd ~/catkin_ws && catkin_make
+  ```
 
- $ git clone https://github.com/ROBOTIS-GIT/turtlebot3.git
+- Below command will load the TurtleBot3 Waffle with OpenManipulator on Rviz.
 
- $ cd ~/catkin_ws && catkin_make
- ```
-
-* Below command will load the TurtleBot3 Waffle with OpenManipulator on Rviz.
-
- ```
- $ roslaunch open_manipulator_with_tb3 open_manipulator_chain_with_tb3_rviz.launch
- ```
+  ```
+  $ roslaunch open_manipulator_with_tb3 open_manipulator_chain_with_tb3_rviz.launch
+  ```
 
 ![](/assets/images/platform/openmanipulator/TurtleBot3_with_Open_Manipulator.jpg)
 
@@ -174,7 +170,7 @@ OpenManipulator is composed by [Dynamixel X series](http://en.robotis.com/index/
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_chain_processing.png)
 
-[OpenCR WIKI](https://github.com/ROBOTIS-GIT/OpenCR/wiki/arduino_examples_openmanipulator_chain)
+- [OpenCR Manual]
 
 ## Image of OpenManipulator Chain
 
@@ -218,7 +214,7 @@ OpenManipulator is composed by [Dynamixel X series](http://en.robotis.com/index/
 
  <iframe width="560" height="315" src="https://www.youtube.com/embed/4PK3I1JfSzc" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
-[OpenCR WIKI](https://github.com/ROBOTIS-GIT/OpenCR/wiki/arduino_examples_openmanipulator_SCARA)
+- [OpenCR Manual]
 
 ## Image of OpenManipulator SCARA
 
@@ -262,7 +258,7 @@ OpenManipulator is composed by [Dynamixel X series](http://en.robotis.com/index/
 
 ### OpenCR
 
-[OpenCR WIKI](https://github.com/ROBOTIS-GIT/OpenCR/wiki/arduino_examples_openmanipulator_Link)
+- [OpenCR Manual]
 
 ## Image of OpenManipulator Link
 
@@ -285,3 +281,6 @@ OpenManipulator is composed by [Dynamixel X series](http://en.robotis.com/index/
 # [OpenManipulator Linear](#openmanipulator-linear)
 
 **Be released in 2018**
+
+[OpenCR]: /docs/en/parts/controller/opencr10/
+[OpenCR Manual]: /docs/en/parts/controller/opencr10/

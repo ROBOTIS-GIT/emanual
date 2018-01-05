@@ -3967,7 +3967,7 @@ If you wish to use the tools is recommended that you connect to DARWIN-OP via SS
 
 Action Editor allows the user to control and edit DARWIN-OP's motions and poses via command line. This process is done by manipulating values of the MX-28 actuator(s).  
 For more information about the MX-28, please refer to [MX-28 manual](/en/dxl/mx/mx-28/).  
-For more information about Actuator ID Map of DARWIN-OP, please refer to [ID Map](???).
+For more information about Actuator ID Map of DARWIN-OP, please refer to [ID Map](/en/platform/op/development/#motion-references).
 
 Before getting into Action Editor be aware of the motion data file residing in the source code.
  
@@ -4616,7 +4616,7 @@ To tune walking parameters go to the directory `/darwin/Linux/project/offset_tun
 
 Offset tuner allows you to manipulate the MX-28 position values.  
 For more information about the MX-28, please refer to [MX-28 manual](/en/dxl/mx/mx-28/).  
-For more information about Actuator ID Map of DARWIN-OP, please refer to [ID Map](???).
+For more information about Actuator ID Map of DARWIN-OP, please refer to [ID Map](/en/platform/op/development/#motion-references).
  
 Ensure that you have a properly sized window
 

@@ -2283,7 +2283,7 @@ void testscrolltext(void) {
 [Bottom Gerber]: http://support.robotis.com/en/baggage_files/opencm/opencm9.04__rev_1.0(131009)-bottom.pdf
 [Gerber]: http://support.robotis.com/en/baggage_files/opencm/opencm9.04__rev_1.0(131009)-gerber.pdf
 [DARWIN-MINI Controller Firmware Update]: /docs/en/edu/mini/#firmware-update
-[Arduino IDE]: https://github.com/ROBOTIS-GIT/OpenCM9.04/wiki
+[Arduino IDE]: /docs/en/parts/controller/opencm904/#arduino-ide
 [OpenCM IDE]: http://emanual.robotis.com/docs/en/software/opencm_ide/getting_started/
-[Dynamixel SDK]: https://github.com/ROBOTIS-GIT/DynamixelSDK/wiki
+[Dynamixel SDK]: /docs/en/software/dynamixel/dynamixel_sdk/overview/
 [DynamixelWorkbench]: http://wiki.ros.org/dynamixel_workbench

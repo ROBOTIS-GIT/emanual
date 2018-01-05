@@ -141,8 +141,6 @@ The OpenCM9.04 I/O pin numbers for the buttons and LED’s are indicated below.
 
 
 [RoboPlus Task]: /docs/en/software/rplus1/task/getting_started/
-[RoboPlus Motion]: ???/docs/en/software/rplus1/motion/
-[RoboPlus Manager]: ???
 [Number of pressed Start button]: /docs/en/software/rplus1/task/programming_02/#button-count
 [Start button]: /docs/en/software/rplus1/task/programming_02/#button-count
 [LN-101]: /docs/en/parts/interface/ln-101/
@@ -150,7 +148,6 @@ The OpenCM9.04 I/O pin numbers for the buttons and LED’s are indicated below.
 [BT-110]: /docs/en/parts/communication/bt-110/
 [BT-210]: /docs/en/parts/communication/bt-210/
 [Automatic Turn-off]: /docs/en/software/rplus1/task/programming_02/#powersave-timer
-[Firmware Update]: ???Roboplus
 [Top Gerber]: http://support.robotis.com/en/baggage_files/opencm/opencm9.04__rev_1.0(131009)-top.pdf
 [Bottom Gerber]: http://support.robotis.com/en/baggage_files/opencm/opencm9.04__rev_1.0(131009)-bottom.pdf
 [Gerber]: http://support.robotis.com/en/baggage_files/opencm/opencm9.04__rev_1.0(131009)-gerber.pdf

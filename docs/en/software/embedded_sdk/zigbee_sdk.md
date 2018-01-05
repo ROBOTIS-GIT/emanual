@@ -776,6 +776,7 @@ The source above is to receive data before the set TIMEOUT. zgb_rx_check and  zg
 # [CM-510/700](#cm-510700)
 
 Zigbee SDK for CM-510/700 is included in Embedded C.  
-Please refer to [RC100 and ZigBee]
+Please refer to [RC100] and [ZigBee]
 
-[RC100 and ZigBee]: ???
+[RC100]: /docs/en/parts/communication/rc-100/
+[ZigBee]: /docs/en/parts/communication/zig-110/
