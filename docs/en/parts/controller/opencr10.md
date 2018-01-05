@@ -572,9 +572,9 @@ Select Tools → Port → COM1.
 {: .notice--warning}
 
 ## [Arduino Pinmap](#arduino-pinmap)
-OpenCR includes a connector that is compatible with Arduino Uno pinmap.
+OpenCR includes a connector that is compatible with Arduino Uno pinmap.  
 
-### OpenCR Arduino compatible connector
+### [Arduino Connector](#arduino-connector)
 
 The pins 0 to 21 are the same pin as the Arduino Uno, and thereafter they are mapped to the pins added to OpenCR.
 
@@ -605,11 +605,10 @@ The pins 0 to 21 are the same pin as the Arduino Uno, and thereafter they are ma
 |   20    |   ADC    |    A4     |           |        |
 |   21    |   ADC    |    A5     |           |        |
 
-## USER LED
+### [User LED](#user-led)
 The OpenCR additional LEDs consist of four LEDs and are mapped to Arupinopin 22-25.
 
-![](https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/OpenCR/arduino_pinmap_03.png?raw=true)
-
+![](/assets/images/parts/controller/opencr10/arduino_pinmap_03.png)
 
 | Name    | Arduino Pin | Pin Name         |
 |:--------|:------------|:-----------------|
@@ -620,22 +619,19 @@ The OpenCR additional LEDs consist of four LEDs and are mapped to Arupinopin 22-
 | STS     | 36          | BDPIN_LED_STATUS |
 | Arduino | 13          | LED_BUILTIN      |
 
+### [Dip Switch](#dip-switch)
 
-## Dip Switch
-
-![](https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/OpenCR/arduino_pinmap_04.png?raw=true)
+![](/assets/images/parts/controller/opencr10/arduino_pinmap_04.png)
 
 | Arduino Pin | Pin Name       |
 |:------------|:---------------|
 | 26          | BDPIN_DIP_SW_1 |
 | 27          | BDPIN_DIP_SW_2 |
 
-
-## GPIO
+### [GPIO](#pgio)
 It has an 18-pin common GPIO expansion connector and is mapped to the GPIO pin of the Arduino. The pin number below is the arduino pin number.
 
-![](https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/OpenCR/arduino_pinmap_05.png?raw=true)
-
+![](/assets/images/parts/controller/opencr10/arduino_pinmap_05.png)
 
 | Pin Number | Arduino Pin | Pin Name      | Pin Number | Arduino Pin | Pin Name     |
 |:-----------|:------------|:--------------|:-----------|:------------|:-------------|
@@ -650,147 +646,821 @@ It has an 18-pin common GPIO expansion connector and is mapped to the GPIO pin o
 | 17         | 64          | BDPIN_GPIO_15 | 18         | 65          | BDPIN_GPIO_1 |
 | 19         | 66          | BDPIN_GPIO_17 | 20         | 67          | BDPIN_GPIO_1 |
 
+### [OLLO Connector](#ollo-connector)
 
-## OLLO connector
+![](/assets/images/parts/controller/opencr10/arduino_pinmap_06.png)
 
-![](https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/OpenCR/arduino_pinmap_06.png?raw=true)
+### [Push Switch](#push-switch)
 
-
-## Push Switch
-
-![](https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/OpenCR/arduino_pinmap_08.png?raw=true)
+![](/assets/images/parts/controller/opencr10/arduino_pinmap_08.png)
 
 | Arduino Pin | Pin Name        |
 |:------------|:----------------|
 | 34          | BDPIN_PUSH_SW_1 |
 | 35          | BDPIN_PUSH_SW_2 |
 
-
-
-## Pin Definition 
+### [Pin Definition](#pin-definition)
 
 ```c++
 extern const Pin2PortMapArray g_Pin2PortMapArray[]=
 {
-    {GPIOC, GPIO_PIN_7,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 0  UART6_RX
-    {GPIOC, GPIO_PIN_6,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 1  UART6_TX
-    {GPIOG, GPIO_PIN_6,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , 0       },  // 2                         EXTI_0
-    {GPIOB, GPIO_PIN_4,   NULL,     NO_ADC        , &hTIM3 ,   TIM_CHANNEL_1, 1       },  // 3  TIM3_CH1               EXTI_1
-    {GPIOG, GPIO_PIN_7,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , 2       },  // 4                         EXTI_2
-    {GPIOA, GPIO_PIN_8,   NULL,     NO_ADC        , &hTIM1 ,   TIM_CHANNEL_1, NO_EXTI },  // 5  TIM1_CH1
-    {GPIOA, GPIO_PIN_2,   NULL,     NO_ADC        , &hTIM2 ,   TIM_CHANNEL_3, NO_EXTI },  // 6  TIM2_CH3
-    {GPIOC, GPIO_PIN_1,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , 3       },  // 7                         EXTI_3
-    {GPIOC, GPIO_PIN_2,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , 4       },  // 8                         EXTI_4
-    {GPIOA, GPIO_PIN_3,   NULL,     NO_ADC        , &hTIM9 ,   TIM_CHANNEL_2, NO_EXTI },  // 9  TIM9_CH2
-    {GPIOB, GPIO_PIN_9,   NULL,     NO_ADC        , &hTIM11,   TIM_CHANNEL_1, NO_EXTI },  // 10 TIM11_CH1   SPI2_NSS
-    {GPIOB, GPIO_PIN_15,  NULL,     NO_ADC        , &hTIM12,   TIM_CHANNEL_2, NO_EXTI },  // 11 TIM12_CH2   SPI2_MOSI
-    {GPIOB, GPIO_PIN_14,  NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 12             SPI2_MISO
-    {GPIOA, GPIO_PIN_9,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 13 LED         SPI2_SCK
-    {GPIOB, GPIO_PIN_7,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 14             I2C1_SDA
-    {GPIOB, GPIO_PIN_8,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 15             I2C1_SCL
+  {GPIOC, GPIO_PIN_7,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 0  UART6_RX
+  {GPIOC, GPIO_PIN_6,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 1  UART6_TX
+  {GPIOG, GPIO_PIN_6,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , 0       },  // 2              EXTI_0
+  {GPIOB, GPIO_PIN_4,   NULL,     NO_ADC        , &hTIM3 ,   TIM_CHANNEL_1, 1       },  // 3  TIM3_CH1    EXTI_1
+  {GPIOG, GPIO_PIN_7,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , 2       },  // 4              EXTI_2
+  {GPIOA, GPIO_PIN_8,   NULL,     NO_ADC        , &hTIM1 ,   TIM_CHANNEL_1, NO_EXTI },  // 5  TIM1_CH1
+  {GPIOA, GPIO_PIN_2,   NULL,     NO_ADC        , &hTIM2 ,   TIM_CHANNEL_3, NO_EXTI },  // 6  TIM2_CH3
+  {GPIOC, GPIO_PIN_1,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , 3       },  // 7              EXTI_3
+  {GPIOC, GPIO_PIN_2,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , 4       },  // 8              EXTI_4
+  {GPIOA, GPIO_PIN_3,   NULL,     NO_ADC        , &hTIM9 ,   TIM_CHANNEL_2, NO_EXTI },  // 9  TIM9_CH2
+  {GPIOB, GPIO_PIN_9,   NULL,     NO_ADC        , &hTIM11,   TIM_CHANNEL_1, NO_EXTI },  // 10 TIM11_CH1   SPI2_NSS
+  {GPIOB, GPIO_PIN_15,  NULL,     NO_ADC        , &hTIM12,   TIM_CHANNEL_2, NO_EXTI },  // 11 TIM12_CH2   SPI2_MOSI
+  {GPIOB, GPIO_PIN_14,  NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 12             SPI2_MISO
+  {GPIOA, GPIO_PIN_9,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 13 LED         SPI2_SCK
+  {GPIOB, GPIO_PIN_7,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 14             I2C1_SDA
+  {GPIOB, GPIO_PIN_8,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 15             I2C1_SCL
 
-    {GPIOA, GPIO_PIN_0,   &hADC3,   ADC_CHANNEL_0 , NULL   ,   NO_PWM       , NO_EXTI },  // 16 A0
-    {GPIOF, GPIO_PIN_10,  &hADC3,   ADC_CHANNEL_8 , NULL   ,   NO_PWM       , NO_EXTI },  // 17 A1
-    {GPIOF, GPIO_PIN_9,   &hADC3,   ADC_CHANNEL_7 , NULL   ,   NO_PWM       , NO_EXTI },  // 18 A2
-    {GPIOF, GPIO_PIN_8,   &hADC3,   ADC_CHANNEL_6 , NULL   ,   NO_PWM       , NO_EXTI },  // 19 A3
-    {GPIOF, GPIO_PIN_7,   &hADC3,   ADC_CHANNEL_5 , NULL   ,   NO_PWM       , NO_EXTI },  // 20 A4
-    {GPIOF, GPIO_PIN_6,   &hADC3,   ADC_CHANNEL_4 , NULL   ,   NO_PWM       , NO_EXTI },  // 21 A5
+  {GPIOA, GPIO_PIN_0,   &hADC3,   ADC_CHANNEL_0 , NULL   ,   NO_PWM       , NO_EXTI },  // 16 A0
+  {GPIOF, GPIO_PIN_10,  &hADC3,   ADC_CHANNEL_8 , NULL   ,   NO_PWM       , NO_EXTI },  // 17 A1
+  {GPIOF, GPIO_PIN_9,   &hADC3,   ADC_CHANNEL_7 , NULL   ,   NO_PWM       , NO_EXTI },  // 18 A2
+  {GPIOF, GPIO_PIN_8,   &hADC3,   ADC_CHANNEL_6 , NULL   ,   NO_PWM       , NO_EXTI },  // 19 A3
+  {GPIOF, GPIO_PIN_7,   &hADC3,   ADC_CHANNEL_5 , NULL   ,   NO_PWM       , NO_EXTI },  // 20 A4
+  {GPIOF, GPIO_PIN_6,   &hADC3,   ADC_CHANNEL_4 , NULL   ,   NO_PWM       , NO_EXTI },  // 21 A5
 
-    {GPIOG, GPIO_PIN_12,  NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 22 BDPIN_LED_USER_1
-    {GPIOE, GPIO_PIN_5,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 23 BDPIN_LED_USER_2
-    {GPIOE, GPIO_PIN_4,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 24 BDPIN_LED_USER_3
-    {GPIOG, GPIO_PIN_10,  NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 25 BDPIN_LED_USER_4
-    {GPIOG, GPIO_PIN_11,  NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 26 BDPIN_DIP_SW_1
-    {GPIOE, GPIO_PIN_6,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 27 BDPIN_DIP_SW_2
-    {GPIOA, GPIO_PIN_4,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 28 BDPIN_SPI_CS_IMU
-    {GPIOC, GPIO_PIN_0,   &hADC3,   ADC_CHANNEL_10, NULL   ,   NO_PWM       , NO_EXTI },  // 29 BDPIN_BAT_PWR_ADC
-    {GPIOC, GPIO_PIN_3,   &hADC3,   ADC_CHANNEL_13, NULL   ,   NO_PWM       , NO_EXTI },  // 30
-    {GPIOF, GPIO_PIN_14,  NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 31 BDPIN_BUZZER
-    {GPIOF, GPIO_PIN_15,  NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 32 BDPIN_DXL_PWR_EN
-    {GPIOG, GPIO_PIN_14,  NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 33
-    {GPIOG, GPIO_PIN_3,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 34 BDPIN_PUSH_SW_1
-    {GPIOC, GPIO_PIN_12,  NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 35 BDPIN_PUSH_SW_2
-    {GPIOG, GPIO_PIN_9,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 36 BDPIN_LED_STATUS
-    {GPIOA, GPIO_PIN_5,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 37 BDPIN_SPI_CLK_IMU
-    {GPIOA, GPIO_PIN_6,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 38 BDPIN_SPI_SDO_IMU
-    {GPIOB, GPIO_PIN_5,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 39 BDPIN_SPI_SDI_IMU
+  {GPIOG, GPIO_PIN_12,  NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 22 BDPIN_LED_USER_1
+  {GPIOE, GPIO_PIN_5,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 23 BDPIN_LED_USER_2
+  {GPIOE, GPIO_PIN_4,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 24 BDPIN_LED_USER_3
+  {GPIOG, GPIO_PIN_10,  NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 25 BDPIN_LED_USER_4
+  {GPIOG, GPIO_PIN_11,  NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 26 BDPIN_DIP_SW_1
+  {GPIOE, GPIO_PIN_6,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 27 BDPIN_DIP_SW_2
+  {GPIOA, GPIO_PIN_4,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 28 BDPIN_SPI_CS_IMU
+  {GPIOC, GPIO_PIN_0,   &hADC3,   ADC_CHANNEL_10, NULL   ,   NO_PWM       , NO_EXTI },  // 29 BDPIN_BAT_PWR_ADC
+  {GPIOC, GPIO_PIN_3,   &hADC3,   ADC_CHANNEL_13, NULL   ,   NO_PWM       , NO_EXTI },  // 30
+  {GPIOF, GPIO_PIN_14,  NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 31 BDPIN_BUZZER
+  {GPIOF, GPIO_PIN_15,  NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 32 BDPIN_DXL_PWR_EN
+  {GPIOG, GPIO_PIN_14,  NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 33
+  {GPIOG, GPIO_PIN_3,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 34 BDPIN_PUSH_SW_1
+  {GPIOC, GPIO_PIN_12,  NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 35 BDPIN_PUSH_SW_2
+  {GPIOG, GPIO_PIN_9,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 36 BDPIN_LED_STATUS
+  {GPIOA, GPIO_PIN_5,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 37 BDPIN_SPI_CLK_IMU
+  {GPIOA, GPIO_PIN_6,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 38 BDPIN_SPI_SDO_IMU
+  {GPIOB, GPIO_PIN_5,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 39 BDPIN_SPI_SDI_IMU
 
-    {GPIOB, GPIO_PIN_0,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 40 OLLO_P1_SIG1
-    {GPIOC, GPIO_PIN_8,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 41 OLLO_P1_SIG2
-    {GPIOA, GPIO_PIN_7,   &hADC1,   ADC_CHANNEL_7 , NULL   ,   NO_PWM       , 5       },  // 42 OLLO_P1_ADC           EXTI_5
-    {GPIOC, GPIO_PIN_5,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 43 OLLO_P2_SIG1
-    {GPIOB, GPIO_PIN_1,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 44 OLLO_P2_SIG2
-    {GPIOC, GPIO_PIN_4,   &hADC1,   ADC_CHANNEL_14, NULL   ,   NO_PWM       , 6       },  // 45 OLLO_P2_ADC           EXTI_6
-    {GPIOD, GPIO_PIN_10,  NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 46 OLLO_SLEEP
-    {GPIOF, GPIO_PIN_7,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 47
-    {GPIOF, GPIO_PIN_7,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 48
-    {GPIOF, GPIO_PIN_7,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 49
+  {GPIOB, GPIO_PIN_0,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 40 OLLO_P1_SIG1
+  {GPIOC, GPIO_PIN_8,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 41 OLLO_P1_SIG2
+  {GPIOA, GPIO_PIN_7,   &hADC1,   ADC_CHANNEL_7 , NULL   ,   NO_PWM       , 5       },  // 42 OLLO_P1_ADC           EXTI_5
+  {GPIOC, GPIO_PIN_5,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 43 OLLO_P2_SIG1
+  {GPIOB, GPIO_PIN_1,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 44 OLLO_P2_SIG2
+  {GPIOC, GPIO_PIN_4,   &hADC1,   ADC_CHANNEL_14, NULL   ,   NO_PWM       , 6       },  // 45 OLLO_P2_ADC           EXTI_6
+  {GPIOD, GPIO_PIN_10,  NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 46 OLLO_SLEEP
+  {GPIOF, GPIO_PIN_7,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 47
+  {GPIOF, GPIO_PIN_7,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 48
+  {GPIOF, GPIO_PIN_7,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 49
 
-    {GPIOB, GPIO_PIN_10,  NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 50 BDPIN_GPIO_1
-    {GPIOB, GPIO_PIN_11,  NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 51 BDPIN_GPIO_2
-    {GPIOC, GPIO_PIN_13,  NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 52 BDPIN_GPIO_3
-    {GPIOD, GPIO_PIN_2,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 53 BDPIN_GPIO_4
-    {GPIOE, GPIO_PIN_3,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 54 BDPIN_GPIO_5
-    {GPIOG, GPIO_PIN_2,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 55 BDPIN_GPIO_6
-    {GPIOE, GPIO_PIN_10,  NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 56 BDPIN_GPIO_7
-    {GPIOE, GPIO_PIN_11,  NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 57 BDPIN_GPIO_8
-    {GPIOE, GPIO_PIN_12,  NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 58 BDPIN_GPIO_9
-    {GPIOE, GPIO_PIN_13,  NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 59 BDPIN_GPIO_10
-    {GPIOE, GPIO_PIN_14,  NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 60 BDPIN_GPIO_11
-    {GPIOE, GPIO_PIN_15,  NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 61 BDPIN_GPIO_12
-    {GPIOF, GPIO_PIN_0,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 62 BDPIN_GPIO_13
-    {GPIOF, GPIO_PIN_1,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 63 BDPIN_GPIO_14
-    {GPIOF, GPIO_PIN_2,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 64 BDPIN_GPIO_15
-    {GPIOD, GPIO_PIN_8,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 65 BDPIN_GPIO_16
-    {GPIOF, GPIO_PIN_4,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 66 BDPIN_GPIO_17
-    {GPIOD, GPIO_PIN_9,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 67 BDPIN_GPIO_18
-    {GPIOF, GPIO_PIN_7,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 68
-    {GPIOF, GPIO_PIN_7,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 69
+  {GPIOB, GPIO_PIN_10,  NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 50 BDPIN_GPIO_1
+  {GPIOB, GPIO_PIN_11,  NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 51 BDPIN_GPIO_2
+  {GPIOC, GPIO_PIN_13,  NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 52 BDPIN_GPIO_3
+  {GPIOD, GPIO_PIN_2,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 53 BDPIN_GPIO_4
+  {GPIOE, GPIO_PIN_3,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 54 BDPIN_GPIO_5
+  {GPIOG, GPIO_PIN_2,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 55 BDPIN_GPIO_6
+  {GPIOE, GPIO_PIN_10,  NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 56 BDPIN_GPIO_7
+  {GPIOE, GPIO_PIN_11,  NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 57 BDPIN_GPIO_8
+  {GPIOE, GPIO_PIN_12,  NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 58 BDPIN_GPIO_9
+  {GPIOE, GPIO_PIN_13,  NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 59 BDPIN_GPIO_10
+  {GPIOE, GPIO_PIN_14,  NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 60 BDPIN_GPIO_11
+  {GPIOE, GPIO_PIN_15,  NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 61 BDPIN_GPIO_12
+  {GPIOF, GPIO_PIN_0,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 62 BDPIN_GPIO_13
+  {GPIOF, GPIO_PIN_1,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 63 BDPIN_GPIO_14
+  {GPIOF, GPIO_PIN_2,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 64 BDPIN_GPIO_15
+  {GPIOD, GPIO_PIN_8,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 65 BDPIN_GPIO_16
+  {GPIOF, GPIO_PIN_4,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 66 BDPIN_GPIO_17
+  {GPIOD, GPIO_PIN_9,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 67 BDPIN_GPIO_18
+  {GPIOF, GPIO_PIN_7,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 68
+  {GPIOF, GPIO_PIN_7,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 69
 
-    {GPIOF, GPIO_PIN_12,  NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 70 OLLO_P3_SIG1
-    {GPIOF, GPIO_PIN_11,  NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 71 OLLO_P3_SIG2
-    {GPIOF, GPIO_PIN_5,   &hADC3,   ADC_CHANNEL_15, NULL   ,   NO_PWM       , 7       },  // 72 OLLO_P3_ADC           EXTI_7
-    {GPIOE, GPIO_PIN_9,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 73 OLLO_P4_SIG1
-    {GPIOE, GPIO_PIN_8,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 74 OLLO_P4_SIG2
-    {GPIOF, GPIO_PIN_3,   &hADC3,   ADC_CHANNEL_9 , NULL   ,   NO_PWM       , 8       },  // 75 OLLO_P4_ADC           EXTI_8
-    {GPIOF, GPIO_PIN_7,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 76
-    {GPIOF, GPIO_PIN_7,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 77
-    {GPIOF, GPIO_PIN_7,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 78
-    {GPIOF, GPIO_PIN_7,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 79
+  {GPIOF, GPIO_PIN_12,  NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 70 OLLO_P3_SIG1
+  {GPIOF, GPIO_PIN_11,  NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 71 OLLO_P3_SIG2
+  {GPIOF, GPIO_PIN_5,   &hADC3,   ADC_CHANNEL_15, NULL   ,   NO_PWM       , 7       },  // 72 OLLO_P3_ADC           EXTI_7
+  {GPIOE, GPIO_PIN_9,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 73 OLLO_P4_SIG1
+  {GPIOE, GPIO_PIN_8,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 74 OLLO_P4_SIG2
+  {GPIOF, GPIO_PIN_3,   &amp;hADC3,   ADC_CHANNEL_9 , NULL   ,   NO_PWM       , 8       },  // 75 OLLO_P4_ADC           EXTI_8
+  {GPIOF, GPIO_PIN_7,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 76
+  {GPIOF, GPIO_PIN_7,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 77
+  {GPIOF, GPIO_PIN_7,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 78
+  {GPIOF, GPIO_PIN_7,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 79
 
-    {GPIOD, GPIO_PIN_6,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 80 BDPIN_UART1_RX
-    {GPIOD, GPIO_PIN_5,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 81 BDPIN_UART1_TX
-    {GPIOE, GPIO_PIN_0,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 82 BDPIN_UART2_RX
-    {GPIOE, GPIO_PIN_1,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 83 BDPIN_UART2_TX
+  {GPIOD, GPIO_PIN_6,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 80 BDPIN_UART1_RX
+  {GPIOD, GPIO_PIN_5,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 81 BDPIN_UART1_TX
+  {GPIOE, GPIO_PIN_0,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 82 BDPIN_UART2_RX
+  {GPIOE, GPIO_PIN_1,   NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI },  // 83 BDPIN_UART2_TX
 
-
-
-    {NULL , 0          ,  NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI }
+  {NULL , 0          ,  NULL,     NO_ADC        , NULL   ,   NO_PWM       , NO_EXTI }
 };
-
 ```
 
+# [Examples](#examples)
+
+## [LED](#led)
+It is a built-in LED test on the OpenCR board.  
+
+### Code
+There are 5 LEDs available in OpenCR, USER1 ~ 4, and the LED connected to base 13 of Arduino.  
+USER1 ~ 4 arduino pin numbers are defined as follows. When the corresponding pin is output as High / Low, the LED turns on / off.
+
+```c++
+#define BDPIN_LED_USER_1        22
+#define BDPIN_LED_USER_2        23
+#define BDPIN_LED_USER_3        24
+#define BDPIN_LED_USER_4        25
+```
+
+It is a code that sequentially turns on and off all the LEDs.
+
+```c++
+int led_pin = 13;
+int led_pin_user[4] = { BDPIN_LED_USER_1, BDPIN_LED_USER_2, BDPIN_LED_USER_3, BDPIN_LED_USER_4 };
+
+void setup() {
+  // Set up the built-in LED pin as an output:
+  pinMode(led_pin, OUTPUT);
+  pinMode(led_pin_user[0], OUTPUT);
+  pinMode(led_pin_user[1], OUTPUT);
+  pinMode(led_pin_user[2], OUTPUT);
+  pinMode(led_pin_user[3], OUTPUT);
+}
+
+void loop() {
+  int i;
+
+  digitalWrite(led_pin, HIGH);  // set to as HIGH LED is turn-off
+  delay(100);                   // Wait for 0.1 second
+  digitalWrite(led_pin, LOW);   // set to as LOW LED is turn-on
+  delay(100);                   // Wait for 0.1 second
+
+  for( i=0; i<4; i++ )
+  {
+    digitalWrite(led_pin_user[i], HIGH);
+    delay(100);
+  }
+  for( i=0; i<4; i++ )
+  {
+    digitalWrite(led_pin_user[i], LOW);
+    delay(100);
+  }
+}
+```
+
+### Result
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VTz_iBqisFk" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+
+## [Button](#button)
+It is a built-in BUTTON test on the OpenCR board.  
+
+### Code
+There are Push switches SW1 ~ 2 and Dip switches 1 ~ 2 in OpenCR. The pin number is defined as below, so you can see the status of the current button when you input the data of that pin.
+
+```c++
+#define BDPIN_DIP_SW_1          26
+#define BDPIN_DIP_SW_2          27
+#define BDPIN_PUSH_SW_1         34
+#define BDPIN_PUSH_SW_2         35
+```
+
+It is a code that outputs the button input status in serial.
+
+```c++
+void setup(){
+  Serial.begin(115200);
+
+  pinMode(BDPIN_DIP_SW_1, INPUT);
+  pinMode(BDPIN_DIP_SW_2, INPUT);
+  pinMode(BDPIN_PUSH_SW_1, INPUT);
+  pinMode(BDPIN_PUSH_SW_2, INPUT);
+
+}
+void loop(){
+  int dip_state;
+  int push_state;
+
+  dip_state  = digitalRead(BDPIN_DIP_SW_1)<<0;
+  dip_state |= digitalRead(BDPIN_DIP_SW_2)<<1;
+
+  push_state  = digitalRead(BDPIN_PUSH_SW_1)<<0;
+  push_state |= digitalRead(BDPIN_PUSH_SW_2)<<1;
+
+  Serial.print("dip_state = ");
+  Serial.print(dip_state, BIN);
+
+  Serial.print("\tpush_state = ");
+  Serial.println(push_state, BIN);
 
 
-[RoboPlus Task]: /docs/en/software/rplus1/task/getting_started/
-[RoboPlus Motion]: /docs/en/software/rplus1/motion/
-[RoboPlus Manager]: /docs/en/software/rplus1/manager/
-[Number of pressed Start button]: /docs/en/software/rplus1/task/programming_02/#button-count
-[Start button]: /docs/en/software/rplus1/task/programming_02/#button-count
-[LN-101]: /docs/en/parts/interface/ln-101/
-[ZIG-100]: /docs/en/parts/communication/zig-110/
-[BT-110]: /docs/en/parts/communication/bt-110/
-[BT-210]: /docs/en/parts/communication/bt-210/
-[Automatic Turn-off]: /docs/en/software/rplus1/task/programming_02/#powersave-timer
-[Firmware Update]: /docs/en/software/rplus1/manager/#firmware-update
-[Top Gerber]: http://support.robotis.com/en/baggage_files/opencm/opencm9.04__rev_1.0(131009)-top.pdf
-[Bottom Gerber]: http://support.robotis.com/en/baggage_files/opencm/opencm9.04__rev_1.0(131009)-bottom.pdf
-[Gerber]: http://support.robotis.com/en/baggage_files/opencm/opencm9.04__rev_1.0(131009)-gerber.pdf
-[DARWIN-MINI Controller Firmware Update]: /docs/en/edu/mini/#firmware-update
-[Arduino IDE]: https://github.com/ROBOTIS-GIT/OpenCM9.04/wiki
-[OpenCM IDE]: http://emanual.robotis.com/docs/en/software/opencm_ide/getting_started/
-[Dynamixel SDK]: https://github.com/ROBOTIS-GIT/DynamixelSDK/wiki
-[DynamixelWorkbench]: http://wiki.ros.org/dynamixel_workbench
+  delay(100);
+}
+```
+
+### Result
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8RfEmWHOjlQ" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+
+## [Buzzer](#buzzer)
+It is a BUZZER related test built in the OpenCR board and uses the Tone function of Arduino.
+
+### Code
+OpenCR has a built-in BUZZER, and the sound varies depending on the frequency.
+The built-in BUZZER is also mapped to the arduino pin number, and the arduino pin number is as follows. Arduino's Tone function is ported, so you can use BUZZER by using this function.
+
+```c++
+#define BDPIN_BUZZER            31
+```
+
+It outputs the melody according to the scale defined in the pitches.h header. The following code is a change from OpenCR's BUZZER to only the PIN number in the example provided in the Arduino IDE.
+
+```c++
+#include "pitches.h"
+
+// notes in the melody:
+int melody[] = {
+  NOTE_C4, NOTE_G3, NOTE_G3, NOTE_A3, NOTE_G3, 0, NOTE_B3, NOTE_C4
+};
+
+// note durations: 4 = quarter note, 8 = eighth note, etc.:
+int noteDurations[] = {
+  4, 8, 8, 4, 4, 4, 4, 4
+};
+
+void setup() {
+  // iterate over the notes of the melody:
+  for (int thisNote = 0; thisNote < 8; thisNote++) {
+
+    // to calculate the note duration, take one second
+    // divided by the note type.
+    //e.g. quarter note = 1000 / 4, eighth note = 1000/8, etc.
+    int noteDuration = 1000 / noteDurations[thisNote];
+    tone(BDPIN_BUZZER, melody[thisNote], noteDuration);
+
+    // to distinguish the notes, set a minimum time between them.
+    // the note's duration + 30% seems to work well:
+    int pauseBetweenNotes = noteDuration * 1.30;
+    delay(pauseBetweenNotes);
+    // stop the tone playing:
+    noTone(BDPIN_BUZZER);
+  }
+}
+```
+
+### Result
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gvICseDo0SQ" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+
+## [PWM](#pwm)
+This is the PWM output test from the Arundin pin of the OpenCR board.
+
+### Code
+
+OpenCR has the same pin configuration as Arduino Uno. The PWM output is also mapped to the same port. Therefore, analogueWrite is used to output the PWM duty ratio to the corresponding ports. The resolution is 8 bits, from 0 to 255, and the frequency is 50 KHz.
+
+![](/assets/images/parts/controller/opencr10/exam_pwm_01.png)
+
+This is an example of PWM output on all six pins.
+
+```c++
+int pwm_pins[6] = { 3, 5, 6, 9, 10, 11 };
+
+void setup() {
+  // put your setup code here, to run once:
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  int i;
+  static uint8_t pwm_out = 0;
+
+  for( i=0; i<6; i++ )
+  {
+    analogWrite(pwm_pins[i], pwm_out++);
+  }
+  delay(100);
+}
+```
+
+### Result
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/de_K0mpgVcE" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+
+## [EEPROM](#eeprom)
+It is the EEPROM library test of OpenCR board.
+
+OpenCR does not have EEPROM memory, so it emulates a part of flash memory built in STM32F746 into EEPROM. The method of emulation was provided by ST as an example.  
+The area used as EEPROM is 0x08010000 ~ 0x08020000 as shown below. Two sectors are used.
+
+![](/assets/images/parts/controller/opencr10/ex_eeprom_01.png)
+
+32 bits are used to store one data, the lower 16 bits are the data to be stored, and the upper 16 bits indicate the address of the corresponding data. When storing data, it is always stored in the new location. When you use one page while saving the data, only the latest values ​​from the saved page are copied to the new page and the existing page is deleted.
+As a result, the number of flash memory erasures is reduced, thereby increasing the write-through life.
+
+![](/assets/images/parts/controller/opencr10/ex_eeprom_02.png)
+
+![](/assets/images/parts/controller/opencr10/ex_eeprom_03.png)
+
+To use the EEPROM library, a header must be added, and the maximum size of the current EEPROM is 1 KBytes. Since the EEPROM library has ported what is supported in Arduino, the basic usage method is the same as that used in other existing Arduino boards. For more information on how to use it, please refer to the Adunion site.
+
+[https://www.arduino.cc/en/Reference/EEPROM](https://www.arduino.cc/en/Reference/EEPROM)
+
+### Code
+
+```c++
+#include <EEPROM.h>
+
+void setup() {
+  // put your setup code here, to run once:
+  Serial.begin(115200);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  uint32_t tTime;
+  static int i = 0;
+
+
+  if( (millis()-tTime) > 100 )
+  {
+    Serial.print(EEPROM.read(0));
+    Serial.print("\t");
+    Serial.print(EEPROM.read(1));
+    Serial.print("\t");
+    Serial.print(EEPROM.read(2));
+    Serial.println("\t");
+   
+    tTime = millis();
+  }
+
+  if (Serial.available())
+  {
+    uint8_t inByte = Serial.read();
+
+    if( inByte == '1' )
+    {
+      EEPROM.write(0, i+1);
+      EEPROM.write(1, i+2);
+      EEPROM.write(2, i+3);
+      i++;
+    }
+  }
+}
+```
+
+### Result
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wTTbqdFP8uc" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+
+## [OP3](#op3)
+OpenCR is used for power and sensor control in OP3, a humanoid robot. If the OpenCR firmware for OP3 has been changed, follow the procedure below to update it.
+
+### Preparations
+OpenCR develops and downloads firmware through the Arduino IDE. Therefore, you must install the Arduino IDE in advance and install the OpenCR board package. Install through the following link document.
+
+- [Install Arduino IDE and OpenCR](#arduino-ide)
+
+### Download OP3 firmware
+
+1. To update OpenCR's firmware, open the front cover of OP3 and connect USB to PC as shown below.
+
+    ![](/assets/images/parts/controller/opencr10/op3_01.png)
+
+2. After connecting USB, select Tools-> Board-> OpenCR Board in Arduino IDE.
+3. Change Tools-> Port to the port to which the board is connected.  
+4. In the Arduino IDE Examples, select the firmware for OP3.
+
+    ![](/assets/images/parts/controller/opencr10/op3_02.png)
+
+5. Click on the icon in the Arduino IDE that displays the red circle in the following figure to build and download the firmware. When the download is completed, the firmware is automatically executed.
+
+    ![](/assets/images/parts/controller/opencr10/op3_03.png)
+
+### Editing OP3 Firmware
+The firmware that is provided as a basic example of OpenCR is read-only. If you want to edit it, you have to save it to a new folder and work on it.  
+
+1. Open the OP3 example.
+
+    ![](/assets/images/parts/controller/opencr10/op3_02.png)
+
+2. Select File-> Save.
+
+    ![](/assets/images/parts/controller/opencr10/op3_05.png)
+
+3. Since the example provided is Read-Only, select OK to save it as a new file.
+
+    ![](/assets/images/parts/controller/opencr10/op3_06.png)
+
+4. Save it to a new folder and edit it. Once editing is complete, repeat the process of building and downloading the firmware.
+
+    ![](/assets/images/parts/controller/opencr10/op3_09.png)
+
+## [Sensors](#sensors)
+
+### [Ambient Light Sensor](#ambient-light-sensor)
+It is ambient light sensor test on the OpenCR board.
+
+- Pinouts
+  - Green : Signal
+  - Red : Vcc
+  - Black : Gnd
+
+- Specification
+  - [ambient light sensor specification](https://www.dfrobot.com/wiki/index.php/DFRobot_Ambient_Light_Sensor_SKU:DFR0026#Application)
+  - Supply Voltage : 3.3V to 5V 
+  - Illumination range : 1 Lux to 6000 Lux 
+  - Interface : Analog
+
+#### Code
+LED turns off/on sequentially depending on the light received by the sensor.  
+LED turns off in bright place. If it is dark place, the LED turns on.  
+This sensor is an analog sensor, connect it to port A0. 
+
+```c++
+#define BDPIN_LED_USER_1     23
+#define BDPIN_LED_USER_2     24
+#define BDPIN_LED_USER_3     25
+```
+
+It is a code that turns on/off the LED depending on the brightness of light changes.
+
+```c++
+
+void setup()
+{
+  Serial.begin(9600);
+  pinMode(BDPIN_LED_USER_1, OUTPUT);
+  pinMode(BDPIN_LED_USER_2, OUTPUT);
+  pinMode(BDPIN_LED_USER_3, OUTPUT);
+}
+
+void loop()
+{
+  if(analogRead(0)<200)
+  {
+    digitalWrite(BDPIN_LED_USER_1, LOW);
+    digitalWrite(BDPIN_LED_USER_2, LOW);
+    digitalWrite(BDPIN_LED_USER_3, LOW);
+  }
+  else if(analogRead(0)>200 && analogRead(0)<300)
+  {
+    digitalWrite(BDPIN_LED_USER_1, HIGH);
+    digitalWrite(BDPIN_LED_USER_2, LOW);
+    digitalWrite(BDPIN_LED_USER_3, LOW);
+  }
+  else if(analogRead(0)>300 && analogRead(0)<400)
+  {
+    digitalWrite(BDPIN_LED_USER_1, HIGH);
+    digitalWrite(BDPIN_LED_USER_2, HIGH);
+    digitalWrite(BDPIN_LED_USER_3, LOW);
+  }
+  else if(analogRead(0)>400 && analogRead(0)<500)
+  {
+    digitalWrite(BDPIN_LED_USER_1, HIGH);
+    digitalWrite(BDPIN_LED_USER_2, HIGH);
+    digitalWrite(BDPIN_LED_USER_3, HIGH);
+  }
+  Serial.println(analogRead(0), DEC);
+  delay(100);
+}
+```
+
+#### Result
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/eqZsd12g0VI" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+
+### [Tilt Sensor](#tilt-sensor)
+It is tilt sensor test on the OpenCR.
+
+![](/assets/images/parts/controller/opencr10/tilt_sensor.png)
+
+- Pinouts
+  - Green : Signal
+  - Red : Vcc
+  - Black : Gnd
+
+- Specification
+  - [Tilt Sensor Specification](https://www.dfrobot.com/wiki/index.php/Digital_Tilt_Sensor_SKU:DFR0028)
+  - Supply Voltage : 3.3V to 5V 
+  - Interface : Digital
+
+#### Code
+tilt sensor and led are connected to OpenCR. so that red/blue led is on/off when tilted and red/blue led is off/on when not tilted.  
+Connect the Tilt Sensor, Led_blue, and Led_red signal pins to D0, D1, and D2.
+
+```c++
+#define tilt     0
+#define led_blue 1
+#define led_red  2
+```
+
+```c++
+
+void setup()
+{
+  pinMode(tilt, INPUT);
+  pinMode(led_blue, OUTPUT);
+  pinMode(led_red, OUTPUT);
+}
+
+void loop()
+{
+  if(digitalRead(tilt) == HIGH)
+  {
+    digitalWrite(led_blue, HIGH);
+    digitalWrite(led_red, LOW);
+  }
+  else
+  {
+    digitalWrite(led_blue, LOW);
+    digitalWrite(led_red, HIGH);
+  }
+}
+```
+
+#### Result
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/VejyCWv4FLc" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+
+### [Rotation Sensor](#rotation-sensor)
+
+It is rotation sensor test on the OpenCR board.
+
+![](/assets/images/parts/controller/opencr10/rotation_sensor.png)
+
+- Specification
+  - [Rotation Sensor Specification](https://www.dfrobot.com/wiki/index.php/Digital_Tilt_Sensor_SKU:DFR0028)
+  - Rotation Angle : 3600 degrees
+  - Supply Voltage : 3.3V to 5V 
+  - Interface : Analog
+
+#### Code
+Rotation sensor is an analog sensor, the output value depending on the degree of rotation.  
+The LED turned on/off depending on the degree of rotation.  
+The signal pin is connected to A0 of OpenCR.
+
+```c++
+#define BDPIN_LED_USER_1        22
+#define BDPIN_LED_USER_2        23
+#define BDPIN_LED_USER_3        24
+#define BDPIN_LED_USER_4        25
+```
+
+```c++
+const int analogInPin = A0;
+int sensorValue = 0;
+
+void setup()
+{
+  Serial.begin(9600);
+  pinMode(BDPIN_LED_USER_4, OUTPUT);
+  pinMode(BDPIN_LED_USER_3, OUTPUT);
+  pinMode(BDPIN_LED_USER_2, OUTPUT);
+  pinMode(BDPIN_LED_USER_1, OUTPUT);
+}
+
+void loop()
+{
+  sensorValue = analogRead(analogInPin);
+  Serial.print(" sensorValue : ");
+  Serial.println(sensorValue);
+
+  if(sensorValue>0 && sensorValue<50)
+  {
+    digitalWrite(BDPIN_LED_USER_4, LOW);
+    digitalWrite(BDPIN_LED_USER_3, HIGH);
+    digitalWrite(BDPIN_LED_USER_2, HIGH);
+    digitalWrite(BDPIN_LED_USER_1, HIGH);
+  }
+  if(sensorValue>50 && sensorValue<100)
+  {
+    digitalWrite(BDPIN_LED_USER_4, LOW);
+    digitalWrite(BDPIN_LED_USER_3, LOW);
+    digitalWrite(BDPIN_LED_USER_2, HIGH);
+    digitalWrite(BDPIN_LED_USER_1, HIGH);
+  }
+  if(sensorValue>100 && sensorValue<150)
+  {
+    digitalWrite(BDPIN_LED_USER_4, LOW);
+    digitalWrite(BDPIN_LED_USER_3, LOW);
+    digitalWrite(BDPIN_LED_USER_2, LOW);
+    digitalWrite(BDPIN_LED_USER_1, HIGH);
+  }
+  if(sensorValue>200 && sensorValue<250)
+  {
+    digitalWrite(BDPIN_LED_USER_4, LOW);
+    digitalWrite(BDPIN_LED_USER_3, LOW);
+    digitalWrite(BDPIN_LED_USER_2, LOW);
+    digitalWrite(BDPIN_LED_USER_1, LOW);
+  }
+  delay(100);
+}
+```
+
+#### Result
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/z2AbTL7R6rg" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+
+### [Capacitive Sensor](#capacitive-sensor)
+It is capacitive touch sensor test on the OpenCR board.
+
+![](/assets/images/parts/controller/opencr10/cap_sensor.jpg)
+
+- Pinouts
+  - Green : Signal
+  - Red : Vcc
+  - Black : Gnd
+
+- Specification
+  - [Capacitive Touch Sensor Specification](https://www.dfrobot.com/wiki/index.php/DFRobot_Capacitive_Touch_Sensor_SKU:DFR0030)
+  - Supply Voltage : 3.3V to 5V 
+  - Interface : Digital
+
+#### Code
+When you put your hand on the sensor, the led turn on/off sequentially and then the LED turns off when you take your hand.  
+Tilt sensor is a digital sensor, signal of sensor is connected to D0 of OpenCR.
+
+```c++
+#define SensorINPUT             0
+#define BDPIN_LED_USER_1        22
+#define BDPIN_LED_USER_2        23
+#define BDPIN_LED_USER_3        24
+#define BDPIN_LED_USER_4        25
+```
+
+```c++
+
+int LED[] = {BDPIN_LED_USER_1, BDPIN_LED_USER_2, BDPIN_LED_USER_3, BDPIN_LED_USER_4};
+int i = 0;
+
+void setup()
+{
+  pinMode(SensorINPUT, INPUT);
+  pinMode(BDPIN_LED_USER_1, OUTPUT);
+  pinMode(BDPIN_LED_USER_2, OUTPUT);
+  pinMode(BDPIN_LED_USER_3, OUTPUT);
+  pinMode(BDPIN_LED_USER_4, OUTPUT);
+}
+
+void loop()
+{
+  if (digitalRead(SensorINPUT) == HIGH )
+  {
+    for(i=0; i<4; i++)
+    {
+      digitalWrite(LED[i], LOW);
+      delay(100);
+      digitalWrite(LED[i], HIGH);
+    }
+  }
+  if (digitalRead(SensorINPUT) == LOW )
+  {
+    for(i=0; i<4; i++)
+    {
+      digitalWrite(LED[i], HIGH);
+    }
+  }
+}
+```
+
+#### Result
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CtYwSdOD1wI" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+
+### [Flame Sensor](#flame-sensor)
+It is flame sensor test on the OpenCR board.
+
+![](/assets/images/parts/controller/opencr10/flame_sensor.jpg)
+
+- Pinouts
+  - Blue : Signal
+  - Red : Vcc 
+  - Black : Gnd
+
+- Specification
+  - [Flame Sensor Specification](https://www.dfrobot.com/wiki/index.php/Flame_sensor_SKU:_DFR0076)
+  - Detection range : 20cm(4.8V) ~ 100cm(1V)
+  - Supply Voltage : 3.3V to 5V 
+  - Interface : Analog
+
+#### Code
+If the flame is detected, turns on the led.  
+Fire near the sensor, it outputs a high value close to 1024.  
+If the output exceeds 800, led will turn on.  
+Signal is connected to A0 of Arduino.
+
+```c++
+#define BDPIN_LED_USER_1 22
+#define flame            0
+```
+
+```c++
+void setup()
+{
+  Serial.begin(9600);
+  pinMode(BDPIN_LED_USER_1, OUTPUT);
+}
+
+void loop()
+{
+  int val;
+  val=analogRead(flame);
+
+  if(val>800)
+  {
+    digitalWrite(BDPIN_LED_USER_1, LOW);
+  }
+  else
+  {
+    digitalWrite(BDPIN_LED_USER_1, HIGH);
+  } 
+
+  Serial.println(val,DEC);
+  delay(100);
+}
+```
+
+#### Result
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DcDFl4UjUos" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+
+### [Joystic Sensor](#joystick-sensor)
+It is joystic test on the OpenCR board.
+
+![](/assets/images/parts/controller/opencr10/joystick_sensor.png)
+
+- Specification
+  - [Joystic Sensor Specification](https://www.dfrobot.com/wiki/index.php/Joystick_Module_For_Arduino_(SKU:DFR0061))
+  - Interface : Analog
+
+#### Code
+Joystic is to get the output value according to the input.  
+We will look at the X Y Z values ​​that change depending on how we move.  
+Signal of x,y and z is connected to A0, A1, A2 of Arduino.
+
+```c++
+#define X A0
+#define Y A1
+#define Z A2
+```
+
+```c++
+void setup()
+{
+  Serial.begin(9600);
+}
+void loop()
+{
+  int x,y,z;
+  x=analogRead(X);
+  y=analogRead(Y);
+  z=analogRead(Z);
+.
+  Serial.print(" X = ");
+  Serial.print(x,DEC);
+
+  Serial.print(" Y = ");
+  Serial.print(y,DEC);
+
+  Serial.print(" Z = ");
+  Serial.println(z,DEC);
+  delay(100);
+}
+```
+
+#### Result
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7fOIeFTg7bY" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+
+## [OpenManipulator](#openmanipulator)
+
+### [OpenManipulator Chain](#openmanipulator-chain)
+
+- `e-Manual` [OpenManipulator Chain](http://emanual.robotis.com/docs/en/platform/openmanipulator/openmanipulator/#openmanipulator-chain)
+
+### [OpenManipulator SCARA](#openmanipulator-scara)
+
+- `e-Manual` [OpenManipulator SCARA](http://emanual.robotis.com/docs/en/platform/openmanipulator/openmanipulator/#openmanipulator-scara)
+
+### [OpenManipulator Link](#openmanipulator-link)
+
+- `e-Manual` [OpenManipulator Link](http://emanual.robotis.com/docs/en/platform/openmanipulator/openmanipulator/#openmanipulator-link)
+
+# [Downloads](#downloads)
+
+- `Download` [BOM](https://github.com/ROBOTIS-GIT/OpenCR-Hardware/tree/master/BOM)
+- `Download` [Schematic](https://github.com/ROBOTIS-GIT/OpenCR-Hardware/tree/master/Schematic)
+- `Download` [PCB](https://github.com/ROBOTIS-GIT/OpenCR-Hardware/tree/master/CAD)
+
+# [References](#references)
+
+## [Recovery Mode](#recovery-mode)
+
+- `e-Manual` [OpenCR Firmware Recovery](#firmware-recovery-mode)
 
 [B3B-EH-A]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
 [B4B-EH-A]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
