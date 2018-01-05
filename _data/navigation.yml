@@ -487,7 +487,7 @@ main:
         titlekr: "OpenCR"
         titlejp: "OpenCR"
         titlecn: "OpenCR"
-        url: /parts/controller/opencr/
+        url: /parts/controller/opencr10/
     - title: "Communication"
       titlekr: "통신"
       titlejp: "通信"
@@ -7853,7 +7853,7 @@ opencm485exp:
     url: /parts/controller/opencm485exp/#downloads
 
 #OpenCR sidebar
-opencr:
+opencr10:
   - title: "Introduction"
     url: /parts/controller/opencr10/#introduction
   - title: "Specifications"
@@ -7949,65 +7949,21 @@ opencr:
         url: /parts/controller/opencr10/#porting-to-arduino-idewindows
     - title: "Arduino Pinmap"
       url: /parts/controller/opencr10/#arduino-pinmap
-    - title: ""
-      url: /parts/controller/opencr10/#
-    - title: ""
-      url: /parts/controller/opencr10/#
-    - title: "Block Diagram"
-      url: /parts/controller/opencr10/#block-diagram
       children:
-      - title: "Power Switch"
-        url: /parts/controller/opencr10/#power-switch
-      - title: "Serial Battery Socket"
-        url: /parts/controller/opencr10/#serial-battery-socket
-      - title: "Dynamixel TTL Socket"
-        url: /parts/controller/opencr10/#dynamixel-ttl-3-pin
-      - title: "Communication Port"
-        url: /parts/controller/opencr10/#communication-port
-      - title: "User Button"
-        url: /parts/controller/opencr10/#user-button
-      - title: "Ext ADC Ref Jumper"
-        url: /parts/controller/opencr10/#ext-adc-ref-jumper
-      - title: "Micro-B USB"
-        url: /parts/controller/opencr10/#micro-b-usb
-      - title: "Status LED"
-        url: /parts/controller/opencr10/#status-led
-      - title: "Reset Button"
-        url: /parts/controller/opencr10/#reset-button
-      - title: "JTAG/SWD Pin"
-        url: /parts/controller/opencr10/#jtagswd-4-pin
-      - title: "5 Pin Port"
-        url: /parts/controller/opencr10/#5-pin-port
-      - title: "I/O Header"
-        url: /parts/controller/opencr10/#io-header
-    - title: "Pin Name Definition"
-      url: /parts/controller/opencr10/#pin-name-definition
-    - title: "Pin Function Definition"
-      url: /parts/controller/opencr10/#pin-function-definition
-  - title: "Connecting Power"
-    url: /parts/controller/opencr10/#connecting-power
-  - title: "Switch Assembly(Type A)"
-    url: /parts/controller/opencr10/#switch-assemblytype-a
-  - title: "Connector Assembly(Type A)"
-    url: /parts/controller/opencr10/#connector-assemblytype-a
-  - title: "Development Environment"
-    url: /parts/controller/opencr10/#development-environment
-    children:
-    - title: "Softwares"
-      url: /parts/controller/opencr10/#softwares
-    - title: "OpenCM IDE"
-      url: /parts/controller/opencr10/#opencm-ide
-    - title: "DynamixelWorkbench"
-      url: /parts/controller/opencr10/#dynamixelworkbench
-      children:
-      - title: "APIs"
-        url: /parts/controller/opencr10/#apis
-      - title: "Example 1. Find Dynamixel"
-        url: /parts/controller/opencr10/#find-dynamixel
-      - title: "Example 2. Position"
-        url: /parts/controller/opencr10/#position
-      - title: "Example 3. Speed"
-        url: /parts/controller/opencr10/#speed
+      - title: "Arduino Connector"
+        url: /parts/controller/opencr10/#arduino-connector
+      - title: "User LED"
+        url: /parts/controller/opencr10/#user-led
+      - title: "Dip Switch"
+        url: /parts/controller/opencr10/#dip-switch
+      - title: "GPIO"
+        url: /parts/controller/opencr10/#gpio
+      - title: "OLLO Connector"
+        url: /parts/controller/opencr10/#ollo-connector
+      - title: "Push Switch"
+        url: /parts/controller/opencr10/#push-switch
+      - title: "Pin Definition"
+        url: /parts/controller/opencr10/#pin-definition
   - title: "Examples"
     url: /parts/controller/opencr10/#examples
     children:
@@ -8021,16 +7977,32 @@ opencr:
       url: /parts/controller/opencr10/#pwm
     - title: "EEPROM"
       url: /parts/controller/opencr10/#eeprom
-    - title: "Servo"
-      url: /parts/controller/opencr10/#servo
-    - title: "SD Card"
-      url: /parts/controller/opencr10/#sd-card
-    - title: "MS5540S"
-      url: /parts/controller/opencr10/#ms5540s
-    - title: "MPU6050 DMP"
-      url: /parts/controller/opencr10/#mpu6050-dmp
-    - title: "0.96\" OLED LCD"
-      url: /parts/controller/opencr10/#096-oled-lcd
+    - title: "OP3"
+      url: /parts/controller/opencr10/#op3
+    - title: "Sensors"
+      url: /parts/controller/opencr10/#sensors
+      children:
+      - title: "Ambient Light Sensor"
+        url: /parts/controller/opencr10/#ambient-light-sensor
+      - title: "Tilt Sensor"
+        url: /parts/controller/opencr10/#tilt-sensor
+      - title: "Rotation Sensor"
+        url: /parts/controller/opencr10/#rotation-sensor
+      - title: "Capacitive Touch Sensor"
+        url: /parts/controller/opencr10/#capacitive-touch-sensor
+      - title: "Flame Sensor"
+        url: /parts/controller/opencr10/#flame-sensor
+      - title: "Joystic Sensor"
+        url: /parts/controller/opencr10/#joystic-sensor
+    - title: "OpenManipulator"
+      url: /parts/controller/opencr10/#openmanipulator
+      children:
+      - title: "OpenManipulator Chain"
+        url: /parts/controller/opencr10/#openmanipulator-chain
+      - title: "OpenManipulator SCARA"
+        url: /parts/controller/opencr10/#openmanipulator-scara
+      - title: "OpenManipulator Link"
+        url: /parts/controller/opencr10/#openmanipulator-link
   - title: "Downloads"
     url: /parts/controller/opencr10/#downloads
   - title: "References"
@@ -8040,8 +8012,6 @@ opencr:
       url: /parts/controller/opencr10/#recovery-mode
     - title: "Install Windows Driver"
       url: /parts/controller/opencr10/#install-windows-driver
-    - title: "Dimension"
-      url: /parts/controller/opencr10/#dimension
 
 #RC-100 sidebar
 rc-100:
