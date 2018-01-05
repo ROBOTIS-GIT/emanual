@@ -487,7 +487,7 @@ main:
         titlekr: "OpenCR"
         titlejp: "OpenCR"
         titlecn: "OpenCR"
-        url: https://github.com/ROBOTIS-GIT/OpenCR/wiki
+        url: /parts/controller/opencr/
     - title: "Communication"
       titlekr: "통신"
       titlejp: "通信"
@@ -7851,6 +7851,197 @@ opencm485exp:
     url: /parts/controller/opencm485exp/#button-led
   - title: "Downloads"
     url: /parts/controller/opencm485exp/#downloads
+
+#OpenCR sidebar
+opencr:
+  - title: "Introduction"
+    url: /parts/controller/opencr10/#introduction
+  - title: "Specifications"
+    url: /parts/controller/opencr10/#specifications
+  - title: "Hardware"
+    url: /parts/controller/opencr10/#hardware
+    children:
+    - title: "Layout / Pin Map"
+      url: /parts/controller/opencr10/#layoutpin-map
+  - title: "Bootloader"
+    url: /parts/controller/opencr10/#bootloader
+    children:
+    - title: "Memory Map"
+      url: /parts/controller/opencr10/#memory-map
+    - title: "Boot Sequence"
+      url: /parts/controller/opencr10/#boot-sequence
+    - title: "Communication Protocol"
+      url: /parts/controller/opencr10/#communication-protocol
+      children:
+      - title: "MavLink"
+        url: /parts/controller/opencr10/#mavlink
+      - title: "Composition of Commands"
+        url: /parts/controller/opencr10/#composition-of-commands
+      - title: "Download Sequence"
+        url: /parts/controller/opencr10/#download-sequence
+      - title: "Message Processing"
+        url: /parts/controller/opencr10/#message-processing
+      - title: "Folder Structure"
+        url: /parts/controller/opencr10/#folder-structure
+    - title: "Update Bootloader(Linux)"
+      url: /parts/controller/opencr10/#update-bootloaderlinux
+      children:
+      - title: "Enter DFU Mode"
+        url: /parts/controller/opencr10/#enter-dfu-mode
+      - title: "Check Boot Mode"
+        url: /parts/controller/opencr10/#check-boot-mode
+      - title: "Update Bootloader"
+        url: /parts/controller/opencr10/#update-bootloader
+    - title: "Firmware Recovery Mode"
+      url: /parts/controller/opencr10/#firmware-recovery-mode
+  - title: "Downloader"
+    url: /parts/controller/opencr10/#downloader
+    children:
+    - title: "Usage"
+      url: /parts/controller/opencr10/#usage
+    - title: "Linux/Mac Example"
+      url: /parts/controller/opencr10/#linuxmac-example
+    - title: "Windows Example"
+      url: /parts/controller/opencr10/#windows-example
+    - title: "Execution Result"
+      url: /parts/controller/opencr10/#execution-result
+    - title: "Download Executable File"
+      url: /parts/controller/opencr10/#download-executable-file
+  - title: "Arduino IDE"
+    url: /parts/controller/opencr10/#arduino-ide
+    children:
+    - title: "Install on Linux"
+      url: /parts/controller/opencr10/#install-on-linux
+      children:
+      - title: "USB Port Settings"
+        url: /parts/controller/opencr10/#usb-port-settings
+      - title: "Compiler Settings"
+        url: /parts/controller/opencr10/#compiler-settings
+      - title: "Install Arduino IDE"
+        url: /parts/controller/opencr10/#install-arduino-idelinux
+      - title: "Run Arduino IDE"
+        url: /parts/controller/opencr10/#run-arduino-idelinux
+      - title: "Porting to Arduino IDE"
+        url: /parts/controller/opencr10/#porting-to-arduino-idelinux
+      - title: "Remove Modemmanager"
+        url: /parts/controller/opencr10/#remove-modemmanager
+      - title: "Writing Bootloader"
+        url: /parts/controller/opencr10/#writing-bootloaderlinux
+    - title: "Install on Mac"
+      url: /parts/controller/opencr10/#install-on-mac
+      children:
+      - title: "Install Arduino IDE"
+        url: /parts/controller/opencr10/#install-arduino-idemac
+      - title: "Run Arduino IDE"
+        url: /parts/controller/opencr10/#run-arduino-idemac
+      - title: "Porting to Arduino IDE"
+        url: /parts/controller/opencr10/#porting-to-arduino-idemac
+      - title: "Writing Bootloader"
+        url: /parts/controller/opencr10/#writing-bootloadermac
+    - title: "Install on Windows"
+      url: /parts/controller/opencr10/#install-on-windows
+      children:
+      - title: "Install Driver"
+        url: /parts/controller/opencr10/#install-driver
+      - title: "Install Arduino IDE"
+        url: /parts/controller/opencr10/#install-arduino-idewindows
+      - title: "Porting to Arduino IDE"
+        url: /parts/controller/opencr10/#porting-to-arduino-idewindows
+    - title: "Arduino Pinmap"
+      url: /parts/controller/opencr10/#arduino-pinmap
+    - title: ""
+      url: /parts/controller/opencr10/#
+    - title: ""
+      url: /parts/controller/opencr10/#
+    - title: "Block Diagram"
+      url: /parts/controller/opencr10/#block-diagram
+      children:
+      - title: "Power Switch"
+        url: /parts/controller/opencr10/#power-switch
+      - title: "Serial Battery Socket"
+        url: /parts/controller/opencr10/#serial-battery-socket
+      - title: "Dynamixel TTL Socket"
+        url: /parts/controller/opencr10/#dynamixel-ttl-3-pin
+      - title: "Communication Port"
+        url: /parts/controller/opencr10/#communication-port
+      - title: "User Button"
+        url: /parts/controller/opencr10/#user-button
+      - title: "Ext ADC Ref Jumper"
+        url: /parts/controller/opencr10/#ext-adc-ref-jumper
+      - title: "Micro-B USB"
+        url: /parts/controller/opencr10/#micro-b-usb
+      - title: "Status LED"
+        url: /parts/controller/opencr10/#status-led
+      - title: "Reset Button"
+        url: /parts/controller/opencr10/#reset-button
+      - title: "JTAG/SWD Pin"
+        url: /parts/controller/opencr10/#jtagswd-4-pin
+      - title: "5 Pin Port"
+        url: /parts/controller/opencr10/#5-pin-port
+      - title: "I/O Header"
+        url: /parts/controller/opencr10/#io-header
+    - title: "Pin Name Definition"
+      url: /parts/controller/opencr10/#pin-name-definition
+    - title: "Pin Function Definition"
+      url: /parts/controller/opencr10/#pin-function-definition
+  - title: "Connecting Power"
+    url: /parts/controller/opencr10/#connecting-power
+  - title: "Switch Assembly(Type A)"
+    url: /parts/controller/opencr10/#switch-assemblytype-a
+  - title: "Connector Assembly(Type A)"
+    url: /parts/controller/opencr10/#connector-assemblytype-a
+  - title: "Development Environment"
+    url: /parts/controller/opencr10/#development-environment
+    children:
+    - title: "Softwares"
+      url: /parts/controller/opencr10/#softwares
+    - title: "OpenCM IDE"
+      url: /parts/controller/opencr10/#opencm-ide
+    - title: "DynamixelWorkbench"
+      url: /parts/controller/opencr10/#dynamixelworkbench
+      children:
+      - title: "APIs"
+        url: /parts/controller/opencr10/#apis
+      - title: "Example 1. Find Dynamixel"
+        url: /parts/controller/opencr10/#find-dynamixel
+      - title: "Example 2. Position"
+        url: /parts/controller/opencr10/#position
+      - title: "Example 3. Speed"
+        url: /parts/controller/opencr10/#speed
+  - title: "Examples"
+    url: /parts/controller/opencr10/#examples
+    children:
+    - title: "LED"
+      url: /parts/controller/opencr10/#led
+    - title: "Button"
+      url: /parts/controller/opencr10/#button
+    - title: "Buzzer"
+      url: /parts/controller/opencr10/#buzzer
+    - title: "PWM"
+      url: /parts/controller/opencr10/#pwm
+    - title: "EEPROM"
+      url: /parts/controller/opencr10/#eeprom
+    - title: "Servo"
+      url: /parts/controller/opencr10/#servo
+    - title: "SD Card"
+      url: /parts/controller/opencr10/#sd-card
+    - title: "MS5540S"
+      url: /parts/controller/opencr10/#ms5540s
+    - title: "MPU6050 DMP"
+      url: /parts/controller/opencr10/#mpu6050-dmp
+    - title: "0.96\" OLED LCD"
+      url: /parts/controller/opencr10/#096-oled-lcd
+  - title: "Downloads"
+    url: /parts/controller/opencr10/#downloads
+  - title: "References"
+    url: /parts/controller/opencr10/#references
+    children:
+    - title: "Recovery Mode"
+      url: /parts/controller/opencr10/#recovery-mode
+    - title: "Install Windows Driver"
+      url: /parts/controller/opencr10/#install-windows-driver
+    - title: "Dimension"
+      url: /parts/controller/opencr10/#dimension
 
 #RC-100 sidebar
 rc-100:

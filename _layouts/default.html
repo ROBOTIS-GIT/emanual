@@ -17,15 +17,13 @@
       var mobile_width = 960;
       
       function extendgoogletool() {
-        if (document.body.clientWidth < mobile_width) {
-          if (toggle_google == 0) {
-            google_tools.classList.add("extend_googletools");
-            toggle_google = 1;
-          }
-          else {
-            google_tools.classList.remove("extend_googletools");
-            toggle_google = 0;
-          }
+        if (toggle_google == 0) {
+          google_tools.classList.add("extend_googletools");
+          toggle_google = 1;
+        }
+        else {
+          google_tools.classList.remove("extend_googletools");
+          toggle_google = 0;
         }
       }
     </script>
