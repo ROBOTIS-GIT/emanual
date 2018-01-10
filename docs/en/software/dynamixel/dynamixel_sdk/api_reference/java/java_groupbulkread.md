@@ -1,21 +1,25 @@
 ---
 layout: archive
 lang: en
-ref: dynamixel_sdk_api_reference_python_groupbulkread
+ref: dynamixel_sdk_api_reference_java_groupbulkread
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/software/dynamixel/dynamixel_sdk/api_reference/python/python_groupbulkread/
+permalink: /docs/en/software/dynamixel/dynamixel_sdk/api_reference/java/java_groupbulkread/
 sidebar:
   title: DynamixelSDK
   nav: "dynamixel_sdk"
 ---
 
+<div style="counter-reset: h1 4"></div>
+<div style="counter-reset: h2 4"></div>
 <div style="counter-reset: h3 5"></div>
-<div style="counter-reset: h2 5"></div>
-<div style="counter-reset: h1 5"></div>
 
-### [Python GroupBulkRead](#python-groupbulkread)
+# [API Reference](#api-reference)
+
+## [Java](#java)
+
+### [Java GroupBulkRead](#java-groupbulkread)
 
 - Description
 

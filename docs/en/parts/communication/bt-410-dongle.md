@@ -11,11 +11,11 @@ sidebar:
   nav: "bt-410-dongle"
 ---
 
-# BT-410 Dongle
-
 # [Introduction](#introduction)
 
 ![](/assets/images/parts/communication/bt-410_dongle_product.jpg)
+
+> BT-410 Dongle
 
 BT-410 Dongle converts USB 2.0 interface and Bluetooth 4.0 Low Energy standard communication interface(Master).  
 If BT-410 Dongle is connected to the PC, it can be paired with a BT-410 Slave module to exchange data.  

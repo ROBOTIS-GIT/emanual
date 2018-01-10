@@ -11,10 +11,15 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
-<div style="counter-reset: h2 52"></div>
 <div style="counter-reset: h1 3"></div>
+<div style="counter-reset: h2 11"></div>
+<div style="counter-reset: h3 2"></div>
 
-## [Python Sync Write Protocol 1.0](#python-sync-write-protocol-10)
+# [Sample Code](#sample-code)
+
+## [Python Protocol 1.0](#python-protocol-10)
+
+### [Python Sync Write Protocol 1.0](#python-sync-write-protocol-10)
 
 - Description
 

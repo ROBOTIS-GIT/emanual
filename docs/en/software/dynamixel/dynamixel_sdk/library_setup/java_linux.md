@@ -14,6 +14,8 @@ sidebar:
 <div style="counter-reset: h2 11"></div>
 <div style="counter-reset: h1 2"></div>
 
+# [Library Setup](#library-setup)
+
 ## [Java Linux](#java-linux)
 
 ### [Compiler and Builder](#compiler-and-builder)

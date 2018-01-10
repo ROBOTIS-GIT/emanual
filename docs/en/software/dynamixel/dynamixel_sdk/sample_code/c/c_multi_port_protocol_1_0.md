@@ -11,10 +11,14 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
-<div style="counter-reset: h2 1"></div>
 <div style="counter-reset: h1 3"></div>
+<div style="counter-reset: h3 1"></div>
 
-## [C Multi Port Protocol 1.0](#c-multi-port-protocol-10)
+# [Sample Code](#sample-code)
+
+## [C Protocol 1.0](#c-protocol-10)
+
+### [C Multi Port Protocol 1.0](#c-multi-port-protocol-10)
 
 * Description
 

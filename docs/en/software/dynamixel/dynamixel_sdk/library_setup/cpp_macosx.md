@@ -14,6 +14,8 @@ sidebar:
 <div style="counter-reset: h2 5"></div>
 <div style="counter-reset: h1 2"></div>
 
+# [Library Setup](#library-setup)
+
 ## [CPP MacOSX](#cpp-macosx)
 
 ### [Compiler and Builder](#compiler-and-builder)

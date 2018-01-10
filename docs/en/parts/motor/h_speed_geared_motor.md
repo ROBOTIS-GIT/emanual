@@ -11,9 +11,9 @@ sidebar:
   nav: "h_speed_geared_motor"
 ---
 
-# High Speed Geared Motor
-
 ![](/assets/images/parts/motor/h_speed_geared_motor_product.png)
+
+> High Speed Geared Motor
 
 # [Introduction](#introduction)
 

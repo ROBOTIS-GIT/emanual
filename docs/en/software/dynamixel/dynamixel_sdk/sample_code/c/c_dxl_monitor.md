@@ -11,8 +11,10 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
-<div style="counter-reset: h2 16"></div>
 <div style="counter-reset: h1 3"></div>
+<div style="counter-reset: h2 3"></div>
+
+# [Sample Code](#sample-code)
 
 ## [C DXL Monitor](#c-dxl-monitor)
 

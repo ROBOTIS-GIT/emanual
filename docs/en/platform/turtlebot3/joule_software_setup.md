@@ -14,6 +14,8 @@ sidebar:
 <div style="counter-reset: h1 5"></div>
 <div style="counter-reset: h2 1"></div>
 
+# [SBC Software Setup](#sbc-software-setup)
+
 ## [[Short] Install Linux on TurtleBot3 Waffle (Intel® Joule™)](#short-install-linux-on-turtlebot3-waffle-intel-joule)
 
 In this section, the Alternative Ubuntu Desktop 16.04 LTS will be installed on Intel® Joule™.

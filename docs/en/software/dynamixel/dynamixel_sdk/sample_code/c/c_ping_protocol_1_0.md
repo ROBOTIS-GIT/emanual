@@ -11,10 +11,14 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
-<div style="counter-reset: h2 4"></div>
 <div style="counter-reset: h1 3"></div>
+<div style="counter-reset: h3 4"></div>
 
-## [C Ping Protocol 1.0](#c-ping-protocol-10)
+# [Sample Code](#sample-code)
+
+## [C Protocol 1.0](#c-protocol-10)
+
+### [C Ping Protocol 1.0](#c-ping-protocol-10)
 
 * Description
 

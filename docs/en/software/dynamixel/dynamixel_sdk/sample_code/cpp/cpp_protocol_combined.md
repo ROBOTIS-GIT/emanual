@@ -11,8 +11,10 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
-<div style="counter-reset: h2 32"></div>
 <div style="counter-reset: h1 3"></div>
+<div style="counter-reset: h2 6"></div>
+
+# [Sample Code](#sample-code)
 
 ## [CPP Protocol Combined](#cpp-protocol-combined)
 

@@ -11,10 +11,15 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
-<div style="counter-reset: h2 38"></div>
 <div style="counter-reset: h1 3"></div>
+<div style="counter-reset: h2 8"></div>
+<div style="counter-reset: h3 4"></div>
 
-## [CSharp Ping Protocol 1.0](#csharp-ping-protocol-10)
+# [Sample Code](#sample-code)
+
+## [CSharp Protocol 1.0](#csharp-protocol-10)
+
+### [CSharp Ping Protocol 1.0](#csharp-ping-protocol-10)
 
 - Description
 

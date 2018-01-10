@@ -11,10 +11,15 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
-<div style="counter-reset: h2 91"></div>
 <div style="counter-reset: h1 3"></div>
+<div style="counter-reset: h2 18"></div>
+<div style="counter-reset: h3 3"></div>
 
-## [Matlab Bulk Read Write Protocol 2.0](#matlab-bulk-read-write-protocol-20)
+# [Sample Code](#sample-code)
+
+## [MATLAB Protocol 2.0](#matlab-protocol-20)
+
+### [Matlab Bulk Read Write Protocol 2.0](#matlab-bulk-read-write-protocol-20)
 
 - Description
 

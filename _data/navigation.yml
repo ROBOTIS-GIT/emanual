@@ -7160,17 +7160,17 @@ dynamixel_sdk:
       - title: "C PortHandler"
         url: /software/dynamixel/dynamixel_sdk/api_reference/c/c_porthandler/#c-porthandler
       - title: "C PortHandlerWindows"
-        url: /software/dynamixel/dynamixel_sdk/api_reference/c/c_porthandlerwindows/#c-porthandlerwindows
+        url: /software/dynamixel/dynamixel_sdk/api_reference/c/c_porthandler/#c-porthandlerwindows
       - title: "C PortHandlerLinux"
-        url: /software/dynamixel/dynamixel_sdk/api_reference/c/c_porthandlerlinux/#c-porthandlerlinux
+        url: /software/dynamixel/dynamixel_sdk/api_reference/c/c_porthandler/#c-porthandlerlinux
       - title: "C PortHandlerMac"
-        url: /software/dynamixel/dynamixel_sdk/api_reference/c/c_porthandlermac/#c-porthandlermac
+        url: /software/dynamixel/dynamixel_sdk/api_reference/c/c_porthandler/#c-porthandlermac
       - title: "C PacketHandler"
         url: /software/dynamixel/dynamixel_sdk/api_reference/c/c_packethandler/#c-packethandler
       - title: "C Protocol1PacketHandler"
-        url: /software/dynamixel/dynamixel_sdk/api_reference/c/c_protocol1packethandler/#c-porthandler
+        url: /software/dynamixel/dynamixel_sdk/api_reference/c/c_packethandler/#c-protocol1packethandler
       - title: "C Protocol2PacketHandler"
-        url: /software/dynamixel/dynamixel_sdk/api_reference/c/c_protocol2packethandler/#c-protocol2packethandler
+        url: /software/dynamixel/dynamixel_sdk/api_reference/c/c_packethandler/#c-protocol2packethandler
       - title: "C GroupSyncWrite"
         url: /software/dynamixel/dynamixel_sdk/api_reference/c/c_groupsyncwrite/#c-groupsyncwrite
       - title: "C GroupSyncRead"
@@ -7185,17 +7185,17 @@ dynamixel_sdk:
       - title: "CPP PortHandler"
         url: /software/dynamixel/dynamixel_sdk/api_reference/cpp/cpp_porthandler/#cpp-porthandler
       - title: "CPP PortHandlerWindows"
-        url: /software/dynamixel/dynamixel_sdk/api_reference/cpp/cpp_porthandlerwindows/#cpp-porthandlerwindows
+        url: /software/dynamixel/dynamixel_sdk/api_reference/cpp/cpp_porthandler/#cpp-porthandlerwindows
       - title: "CPP PortHandlerLinux"
-        url: /software/dynamixel/dynamixel_sdk/api_reference/cpp/cpp_porthandlerlinux/#cpp-porthandlerlinux
+        url: /software/dynamixel/dynamixel_sdk/api_reference/cpp/cpp_porthandler/#cpp-porthandlerlinux
       - title: "CPP PortHandlerMac"
-        url: /software/dynamixel/dynamixel_sdk/api_reference/cpp/cpp_porthandlermac/#cpp-porthandlermac
+        url: /software/dynamixel/dynamixel_sdk/api_reference/cpp/cpp_porthandler/#cpp-porthandlermac
       - title: "CPP PacketHandler"
         url: /software/dynamixel/dynamixel_sdk/api_reference/cpp/cpp_packethandler/#cpp-packethandler
       - title: "CPP Protocol1PacketHandler"
-        url: /software/dynamixel/dynamixel_sdk/api_reference/cpp/cpp_protocol1packethandler/#cpp-porthandler
+        url: /software/dynamixel/dynamixel_sdk/api_reference/cpp/cpp_packethandler/#cpp-protocol1packethandler
       - title: "CPP Protocol2PacketHandler"
-        url: /software/dynamixel/dynamixel_sdk/api_reference/cpp/cpp_protocol2packethandler/#cpp-protocol2packethandler
+        url: /software/dynamixel/dynamixel_sdk/api_reference/cpp/cpp_packethandler/#cpp-protocol2packethandler
       - title: "CPP GroupSyncWrite"
         url: /software/dynamixel/dynamixel_sdk/api_reference/cpp/cpp_groupsyncwrite/#cpp-groupsyncwrite
       - title: "CPP GroupSyncRead"
@@ -7372,6 +7372,16 @@ sigbee_sdk:
       url: /software/embedded_sdk/zigbee_sdk/#gcc
   - title: "CM-510/700"
     url: /software/embedded_sdk/zigbee_sdk/#cm-510700
+
+embedded_sdk:
+  - title: "Dynamixel SDK"
+    url: /software/embedded_sdk/#dynamixel-sdk
+  - title: "ROBOTIS Manipulator SDK"
+    url: /software/embedded_sdk/#robotis-manipulator-sdk
+  - title: "Controller SDK"
+    url: /software/embedded_sdk/#controller-sdk
+  - title: "Wireless Control SDK"
+    url: /software/embedded_sdk/#wireless-control-sdk
 
 #Embedded C CM510/700 sidebar
 embedded_c_cm510:

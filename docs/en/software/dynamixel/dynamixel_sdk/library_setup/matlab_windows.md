@@ -14,8 +14,9 @@ sidebar:
 <div style="counter-reset: h2 13"></div>
 <div style="counter-reset: h1 2"></div>
 
-## [Matlab Windows](#matlab-windows)
+# [Library Setup](#library-setup)
 
+## [Matlab Windows](#matlab-windows)
 
 ### [Compiler and Builder](#compiler-and-builder)
 

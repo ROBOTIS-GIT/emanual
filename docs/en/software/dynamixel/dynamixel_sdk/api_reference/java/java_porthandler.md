@@ -1,22 +1,24 @@
 ---
 layout: archive
 lang: en
-ref: dynamixel_sdk_api_reference_python_porthandler
+ref: dynamixel_sdk_api_reference_java_porthandler
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/software/dynamixel/dynamixel_sdk/api_reference/python/python_porthandler/
+permalink: /docs/en/software/dynamixel/dynamixel_sdk/api_reference/java/java_porthandler/
 sidebar:
   title: DynamixelSDK
   nav: "dynamixel_sdk"
 ---
 
+<div style="counter-reset: h1 4"></div>
 <div style="counter-reset: h2 4"></div>
-<div style="counter-reset: h1 5"></div>
 
-## [Python](#python)
+# [API Reference](#api-reference)
 
-### [CSharp PortHandler](#csharp-porthandler)
+## [Java](#java)
+
+### [Java PortHandler](#java-porthandler)
 
 - Description
 

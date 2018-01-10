@@ -11,10 +11,15 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
-<div style="counter-reset: h2 103"></div>
 <div style="counter-reset: h1 3"></div>
+<div style="counter-reset: h2 20"></div>
+<div style="counter-reset: h3 5"></div>
 
-## [LabVIEW Reset Protocol 1.0](#labview-reset-protocol-10)
+# [Sample Code](#sample-code)
+
+## [LabVIEW Protocol 1.0](#labview-protocol-10)
+
+### [LabVIEW Reset Protocol 1.0](#labview-reset-protocol-10)
 
 - Description
 
@@ -35,5 +40,3 @@ sidebar:
 - Block Diagram
 
 ![](https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/DynamixelSDK/4.SDKExample/4.7%20LabVIEW/factory_reset1/block_diagram.png)
-
-

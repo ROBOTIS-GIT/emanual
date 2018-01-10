@@ -14,6 +14,8 @@ sidebar:
 <div style="counter-reset: h2 6"></div>
 <div style="counter-reset: h1 2"></div>
 
+# [Library Setup](#library-setup)
+
 ## [CSharp Windows](#csharp-windows)
 
 For C#, only the Windows source is provided. 

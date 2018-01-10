@@ -11,9 +11,9 @@ sidebar:
   nav: "pir-10"
 ---
 
-# Passive IR Sensor(PIR-10)
-
 ![](/assets/images/parts/sensors/pir-10_product.jpg)
+
+> Passive IR Sensor(PIR-10)
 
 # [Introduction](#introduction)
 

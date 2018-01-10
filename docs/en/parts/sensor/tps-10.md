@@ -11,9 +11,9 @@ sidebar:
   nav: "tps-10"
 ---
 
-# Temperature Sensor(TPS-10)
-
 ![](/assets/images/parts/sensors/tps-10_product.jpg)
+
+> Temperature Sensor(TPS-10)
 
 # [Introduction](#introduction)
 
