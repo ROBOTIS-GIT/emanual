@@ -1,3 +1,25 @@
+// .nav__list {
+//   background-color: #dcdcdc;
+// }
+
+.sidebar__left {
+  width: 330px;
+  float: left;
+  position: fixed;
+  z-index: 10;
+  padding: 0.5em;
+  word-wrap: break-word;
+}
+
+.sticky_sidebar {
+  top: 0px;
+}
+
+.nav_button {
+  display: none;
+  color: white;
+}
+
 .nav__items {
   width: 100%;
   max-width: 600px;
@@ -27,8 +49,8 @@
 .nav__items label, .nav__items a {
   position: relative;
   display: block;
-  background: #fff;
-  box-shadow: inset 0 -1px #2174b6;
+  // background: #fff;
+  // box-shadow: inset 0 -1px #2174b6;
   color: #494e52;
   text-decoration: none;
 }
@@ -52,8 +74,8 @@
 
 .nav__items ul label,
 .nav__items ul a {
-  background: #fff;
-  box-shadow: inset 0 -1px #2174b6;
+  // background: #fff;
+  // box-shadow: inset 0 -1px #2174b6;
   color: #487ea9;
   text-decoration: none;
   font-size: 0.85em;

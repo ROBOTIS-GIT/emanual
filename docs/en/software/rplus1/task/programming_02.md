@@ -1347,7 +1347,7 @@ Variables are useful when a number to be remembered, when a value must be change
 [LM-10]: /docs/en/parts/display/lm-10/
 [IRSS-10]: /docs/en/parts/sensor/irss-10/
 [DMS-80]: /docs/en/parts/sensor/dms-80/
-[Custom Device]: ???
+[Custom Device]: /docs/en/edu/bioloid/gp/#make-your-own-sensor
 
 [img_remocon_txd]: /assets/images/sw/rplus1/task/roboplus_task_en_078.png
 [img_remocon_rxd]: /assets/images/sw/rplus1/task/roboplus_task_en_079.png

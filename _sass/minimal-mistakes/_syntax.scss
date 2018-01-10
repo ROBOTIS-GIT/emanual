@@ -2,59 +2,32 @@
    Syntax highlighting
    ========================================================================== */
 
-div.highlighter-rouge,
-figure.highlight {
+div.highlighter-rouge {
   position: relative;
   margin-bottom: 1em;
-  font-family: $monospace;
-  font-size: $type-size-6;
-  line-height: 1.8;
-  border: 1px solid $border-color;
-  border-radius: $border-radius;
-  background-color: $code-background-color;
-  box-shadow: $box-shadow;
-
+  padding: 0.5em 1em;
+  font-family: Monaco,Consolas,"Lucida Console",monospace;
+  font-size: 0.9em;
+  color: white;
+  border-radius: 5px;
+  background-color: #000;
+  
   &:before {
     position: absolute;
     top: 0;
-    right: 0;
-    padding: 0.5em;
-    background-color: $lighter-gray;
+    right: 1em;
+    background-color: #000;
     content: "\f121";
     font-family: "fontawesome" !important;
-    line-height: 1;
+    font-size: 0.8em;
     text-transform: none;
     speak: none;
   }
-
+  
   .highlight {
-    margin: 0;
-    padding: 1em;
-  }
-}
-
-figure.highlight {
-  padding-left: 1em;
-  padding-right: 1em;
-}
-
-.highlight table {
-  font-size: 1em;
-  border: 0;
-
-  td {
-    padding: 5px;
-    border: 0;
-
-    /* line numbers*/
-    &.gutter {
-      padding-right: 1em;
-      color: $light-gray;
-    }
-  }
-
-  pre {
-    margin: 0;
+    overflow-x: auto;
+    padding-bottom: 0.5em;
+    padding-right: 2em;
   }
 }
 
@@ -81,10 +54,10 @@ figure.highlight {
 .highlight .g { color: #586e75 } /* Generic */
 .highlight .k { color: #859900 } /* Keyword */
 .highlight .l { color: #586e75 } /* Literal */
-.highlight .n { color: #586e75 } /* Name */
+.highlight .n { color: #aaaaaa } /* Name */
 .highlight .o { color: #859900 } /* Operator */
 .highlight .x { color: #cb4b16 } /* Other */
-.highlight .p { color: #586e75 } /* Punctuation */
+.highlight .p { color: #aaaaaa } /* Punctuation */
 .highlight .cm { color: #93a1a1 } /* Comment.Multiline */
 .highlight .cp { color: #859900 } /* Comment.Preproc */
 .highlight .c1 { color: #93a1a1 } /* Comment.Single */

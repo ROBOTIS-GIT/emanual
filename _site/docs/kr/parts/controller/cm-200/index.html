@@ -153,6 +153,21 @@ $(function() {
 
 <!-- end custom head snippets -->
 
+    <script>
+      var toggle_google = 0;
+      var mobile_width = 960;
+      
+      function extendgoogletool() {
+        if (toggle_google == 0) {
+          google_tools.classList.add("extend_googletools");
+          toggle_google = 1;
+        }
+        else {
+          google_tools.classList.remove("extend_googletools");
+          toggle_google = 0;
+        }
+      }
+    </script>
   </head>
 
   <body class="layout--archive">
@@ -163,7 +178,33 @@ $(function() {
     <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
-      <a class="site-title" href="http://localhost:4000/"><img src="/assets/images/robotis_emanual_logo.png" style="padding: 10px 10px;"></a>
+      <a class="site-title" href="http://localhost:4000/"><img class="logo" id="logo" src="/assets/images/robotis_emanual_logo.png"></a>
+      <!-- Google Custom Search -->
+      <form class="searchbox" method="get" id="site_search">
+        <script>
+          (function() {
+            var cx = '003548387656725317882:3pwl9jljqvi';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+          })();
+        </script>
+        <gcse:search></gcse:search>
+      </form>
+      <!-- end of Google Custom Search -->
+      <button class="google_button" id="google_button" onclick="extendgoogletool()"><img src="https://www.google.com/images/cleardot.gif" class="goog-te-gadget-icon" alt="" style="background-image: url(&quot;https://translate.googleapis.com/translate_static/img/te_ctrl3.gif&quot;); background-position: -65px 0px;"></button>
+      <div class="google_tools" id="google_tools">
+        <!-- Google Translation -->
+        <div id="google_translate_element"></div><script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'ar,de,es,fr,hi,ja,ko,pt,ru,sv,th,tr,vi,zh-CN', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, multilanguagePage: true, gaTrack: true, gaId: 'UA-83196341'}, 'google_translate_element');
+        }
+        </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <!-- end of Google Translation -->  
+      </div>
       
       <input class="menu-btn" type="checkbox" id="menu-btn" />
       <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
@@ -183,8 +224,8 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <input type="radio" name="sublevel" id="AX 시리즈">
-                    <label for="AX 시리즈">AX 시리즈</label>
+                    <input type="radio" name="sublevel" id="다이나믹셀AX 시리즈">
+                    <label for="다이나믹셀AX 시리즈">AX 시리즈</label>
                     <ul>
                     
                       
@@ -218,8 +259,8 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <input type="radio" name="sublevel" id="*EX 시리즈">
-                    <label for="*EX 시리즈">*EX 시리즈</label>
+                    <input type="radio" name="sublevel" id="다이나믹셀*EX 시리즈">
+                    <label for="다이나믹셀*EX 시리즈">*EX 시리즈</label>
                     <ul>
                     
                       
@@ -239,8 +280,8 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <input type="radio" name="sublevel" id="*DX 시리즈">
-                    <label for="*DX 시리즈">*DX 시리즈</label>
+                    <input type="radio" name="sublevel" id="다이나믹셀*DX 시리즈">
+                    <label for="다이나믹셀*DX 시리즈">*DX 시리즈</label>
                     <ul>
                     
                       
@@ -274,8 +315,8 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <input type="radio" name="sublevel" id="*RX 시리즈">
-                    <label for="*RX 시리즈">*RX 시리즈</label>
+                    <input type="radio" name="sublevel" id="다이나믹셀*RX 시리즈">
+                    <label for="다이나믹셀*RX 시리즈">*RX 시리즈</label>
                     <ul>
                     
                       
@@ -316,8 +357,8 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <input type="radio" name="sublevel" id="MX 시리즈">
-                    <label for="MX 시리즈">MX 시리즈</label>
+                    <input type="radio" name="sublevel" id="다이나믹셀MX 시리즈">
+                    <label for="다이나믹셀MX 시리즈">MX 시리즈</label>
                     <ul>
                     
                       
@@ -379,8 +420,8 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <input type="radio" name="sublevel" id="X 시리즈">
-                    <label for="X 시리즈">X 시리즈</label>
+                    <input type="radio" name="sublevel" id="다이나믹셀X 시리즈">
+                    <label for="다이나믹셀X 시리즈">X 시리즈</label>
                     <ul>
                     
                       
@@ -463,8 +504,8 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <input type="radio" name="sublevel" id="PRO 시리즈">
-                    <label for="PRO 시리즈">PRO 시리즈</label>
+                    <input type="radio" name="sublevel" id="다이나믹셀PRO 시리즈">
+                    <label for="다이나믹셀PRO 시리즈">PRO 시리즈</label>
                     <ul>
                     
                       
@@ -696,8 +737,8 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <input type="radio" name="sublevel" id="*올로">
-                    <label for="*올로">*올로</label>
+                    <input type="radio" name="sublevel" id="교육키트*올로">
+                    <label for="교육키트*올로">*올로</label>
                     <ul>
                     
                       
@@ -738,8 +779,8 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <input type="radio" name="sublevel" id="드림 I">
-                    <label for="드림 I">드림 I</label>
+                    <input type="radio" name="sublevel" id="교육키트드림 I">
+                    <label for="교육키트드림 I">드림 I</label>
                     <ul>
                     
                       
@@ -794,8 +835,8 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <input type="radio" name="sublevel" id="드림 II">
-                    <label for="드림 II">드림 II</label>
+                    <input type="radio" name="sublevel" id="교육키트드림 II">
+                    <label for="교육키트드림 II">드림 II</label>
                     <ul>
                     
                       
@@ -829,8 +870,8 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <input type="radio" name="sublevel" id="스마트 I">
-                    <label for="스마트 I">스마트 I</label>
+                    <input type="radio" name="sublevel" id="교육키트스마트 I">
+                    <label for="교육키트스마트 I">스마트 I</label>
                     <ul>
                     
                       
@@ -864,8 +905,8 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <input type="radio" name="sublevel" id="스마트 II">
-                    <label for="스마트 II">스마트 II</label>
+                    <input type="radio" name="sublevel" id="교육키트스마트 II">
+                    <label for="교육키트스마트 II">스마트 II</label>
                     <ul>
                     
                       
@@ -899,8 +940,8 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <input type="radio" name="sublevel" id="스마트 III">
-                    <label for="스마트 III">스마트 III</label>
+                    <input type="radio" name="sublevel" id="교육키트스마트 III">
+                    <label for="교육키트스마트 III">스마트 III</label>
                     <ul>
                     
                       
@@ -927,8 +968,8 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <input type="radio" name="sublevel" id="IoT">
-                    <label for="IoT">IoT</label>
+                    <input type="radio" name="sublevel" id="교육키트IoT">
+                    <label for="교육키트IoT">IoT</label>
                     <ul>
                     
                       
@@ -955,8 +996,8 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <input type="radio" name="sublevel" id="바이올로이드">
-                    <label for="바이올로이드">바이올로이드</label>
+                    <input type="radio" name="sublevel" id="교육키트바이올로이드">
+                    <label for="교육키트바이올로이드">바이올로이드</label>
                     <ul>
                     
                       
@@ -1037,8 +1078,8 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <input type="radio" name="sublevel" id="다이나믹셀">
-                    <label for="다이나믹셀">다이나믹셀</label>
+                    <input type="radio" name="sublevel" id="소프트웨어다이나믹셀">
+                    <label for="소프트웨어다이나믹셀">다이나믹셀</label>
                     <ul>
                     
                       
@@ -1065,8 +1106,8 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <input type="radio" name="sublevel" id="모바일 앱">
-                    <label for="모바일 앱">모바일 앱</label>
+                    <input type="radio" name="sublevel" id="소프트웨어모바일 앱">
+                    <label for="소프트웨어모바일 앱">모바일 앱</label>
                     <ul>
                     
                       
@@ -1100,8 +1141,8 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <input type="radio" name="sublevel" id="R+ 1.0">
-                    <label for="R+ 1.0">R+ 1.0</label>
+                    <input type="radio" name="sublevel" id="소프트웨어R+ 1.0">
+                    <label for="소프트웨어R+ 1.0">R+ 1.0</label>
                     <ul>
                     
                       
@@ -1142,8 +1183,8 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <input type="radio" name="sublevel" id="R+ 2.0">
-                    <label for="R+ 2.0">R+ 2.0</label>
+                    <input type="radio" name="sublevel" id="소프트웨어R+ 2.0">
+                    <label for="소프트웨어R+ 2.0">R+ 2.0</label>
                     <ul>
                     
                       
@@ -1191,8 +1232,8 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <input type="radio" name="sublevel" id="R+ 모바일">
-                    <label for="R+ 모바일">R+ 모바일</label>
+                    <input type="radio" name="sublevel" id="소프트웨어R+ 모바일">
+                    <label for="소프트웨어R+ 모바일">R+ 모바일</label>
                     <ul>
                     
                       
@@ -1233,8 +1274,8 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <input type="radio" name="sublevel" id="EMBEDDED SDK">
-                    <label for="EMBEDDED SDK">EMBEDDED SDK</label>
+                    <input type="radio" name="sublevel" id="소프트웨어EMBEDDED SDK">
+                    <label for="소프트웨어EMBEDDED SDK">EMBEDDED SDK</label>
                     <ul>
                     
                       
@@ -1294,8 +1335,8 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <input type="radio" name="sublevel" id="제어기">
-                    <label for="제어기">제어기</label>
+                    <input type="radio" name="sublevel" id="부품제어기">
+                    <label for="부품제어기">제어기</label>
                     <ul>
                     
                       
@@ -1371,7 +1412,7 @@ $(function() {
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/krhttps://github.com/ROBOTIS-GIT/OpenCR/wiki" class="">OpenCR</a>
+                          <a href="http://localhost:4000/docs/kr/parts/controller/opencr10/" class="">OpenCR</a>
                         </li>
                       
                     
@@ -1385,8 +1426,8 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <input type="radio" name="sublevel" id="통신">
-                    <label for="통신">통신</label>
+                    <input type="radio" name="sublevel" id="부품통신">
+                    <label for="부품통신">통신</label>
                     <ul>
                     
                       
@@ -1448,14 +1489,14 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <input type="radio" name="sublevel" id="모터">
-                    <label for="모터">모터</label>
+                    <input type="radio" name="sublevel" id="부품모터">
+                    <label for="부품모터">모터</label>
                     <ul>
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/kr/parts/motor/geared_motor/" class="">감속모터(GM-10A)</a>
+                          <a href="http://localhost:4000/docs/kr/parts/motor/gm-10a/" class="">감속모터(GM-10A)</a>
                         </li>
                       
                     
@@ -1490,8 +1531,8 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <input type="radio" name="sublevel" id="인터페이스">
-                    <label for="인터페이스">인터페이스</label>
+                    <input type="radio" name="sublevel" id="부품인터페이스">
+                    <label for="부품인터페이스">인터페이스</label>
                     <ul>
                     
                       
@@ -1525,8 +1566,8 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <input type="radio" name="sublevel" id="센서">
-                    <label for="센서">센서</label>
+                    <input type="radio" name="sublevel" id="부품센서">
+                    <label for="부품센서">센서</label>
                     <ul>
                     
                       
@@ -1623,8 +1664,8 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <input type="radio" name="sublevel" id="디스플레이">
-                    <label for="디스플레이">디스플레이</label>
+                    <input type="radio" name="sublevel" id="부품디스플레이">
+                    <label for="부품디스플레이">디스플레이</label>
                     <ul>
                     
                       
@@ -1659,30 +1700,6 @@ $(function() {
         
         </ul>
 
-        <!-- Google Translation -->
-        <div id="google_translate_element"></div><script type="text/javascript">
-        function googleTranslateElementInit() {
-          new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'ar,de,es,fr,hi,ja,ko,pt,ru,sv,th,tr,vi,zh-CN', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, multilanguagePage: true, gaTrack: true, gaId: 'UA-83196341'}, 'google_translate_element');
-        }
-        </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-        <!-- end of Google Translation -->
-      
-      <!-- Google Custom Search -->
-      <form class="searchbox" method="get" id="site_search">
-        <script>
-          (function() {
-            var cx = '003548387656725317882:3pwl9jljqvi';
-            var gcse = document.createElement('script');
-            gcse.type = 'text/javascript';
-            gcse.async = true;
-            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(gcse, s);
-          })();
-        </script>
-        <gcse:search></gcse:search>
-      </form>
-      <!-- end of Google Custom Search -->
     </div>
 
     <div class="container" id="container">
@@ -3571,6 +3588,40 @@ $(function() {
 
 
 
+<script>
+  var side_nav = document.getElementById("sidebar");
+  var offset = 105;
+
+  window.onscroll = function () {
+    stickynav()
+  };
+  
+  function stickynav() {
+    if (window.pageYOffset > offset) {
+      sidebar.classList.add("sticky_sidebar");
+    }
+    else {
+      sidebar.classList.remove("sticky_sidebar");
+    }
+  }
+  
+  var toggle = 0;
+  var mobile_width = 960;
+  
+  function extendnav() {
+    if (document.body.clientWidth < mobile_width ) {
+      if (toggle == 0) {
+        sidebar.classList.add("extend_sidebar");
+        toggle = 1;
+      }
+      else {
+        sidebar.classList.remove("extend_sidebar");
+        toggle = 0;
+      }
+    }
+  }
+</script>
+
 <div id="main" role="main">
   
   <div class="sidebar__left" id="sidebar">
@@ -3587,10 +3638,9 @@ $(function() {
     
     
       
-
 <nav class="nav__list">
 
-  <a href=http://localhost:4000/docs/kr/parts/controller/cm-200/ style="font-size:$type-size-6; color: #2174b6; text-decoration: none;">CM-200</a>
+  <a href=http://localhost:4000/docs/kr/parts/controller/cm-200/ style="font-size:$type-size-6; color: #2174b6; text-decoration: none; font-weight: bold;" onclick="extendnav()">CM-200</a>
   <ul class="nav__items">
   
     
@@ -3598,7 +3648,7 @@ $(function() {
     
 
     <li>
-      <a href="http://localhost:4000/docs/kr/parts/controller/cm-200/#개요">개요</a>
+      <a href="http://localhost:4000/docs/kr/parts/controller/cm-200/#개요" onclick="extendnav()">개요</a>
     </li>
     
 
@@ -3610,7 +3660,7 @@ $(function() {
     
 
     <li>
-      <a href="http://localhost:4000/docs/kr/parts/controller/cm-200/#제품-사양">제품 사양</a>
+      <a href="http://localhost:4000/docs/kr/parts/controller/cm-200/#제품-사양" onclick="extendnav()">제품 사양</a>
     </li>
     
 
@@ -3622,7 +3672,7 @@ $(function() {
     
 
     <li>
-      <a href="http://localhost:4000/docs/kr/parts/controller/cm-200/#컨트롤-테이블">컨트롤 테이블</a>
+      <a href="http://localhost:4000/docs/kr/parts/controller/cm-200/#컨트롤-테이블" onclick="extendnav()">컨트롤 테이블</a>
     </li>
     
 
@@ -3634,7 +3684,7 @@ $(function() {
     
 
     <li>
-      <a href="http://localhost:4000/docs/kr/parts/controller/cm-200/#각-부-명칭">각 부 명칭</a>
+      <a href="http://localhost:4000/docs/kr/parts/controller/cm-200/#각-부-명칭" onclick="extendnav()">각 부 명칭</a>
     </li>
     
 
@@ -3646,7 +3696,7 @@ $(function() {
     
 
     <li>
-      <a href="http://localhost:4000/docs/kr/parts/controller/cm-200/#전원-연결">전원 연결</a>
+      <a href="http://localhost:4000/docs/kr/parts/controller/cm-200/#전원-연결" onclick="extendnav()">전원 연결</a>
     </li>
     
 
@@ -3658,7 +3708,7 @@ $(function() {
     
 
     <li>
-      <a href="http://localhost:4000/docs/kr/parts/controller/cm-200/#작동-방법">작동 방법</a>
+      <a href="http://localhost:4000/docs/kr/parts/controller/cm-200/#작동-방법" onclick="extendnav()">작동 방법</a>
     </li>
     
 
@@ -3670,7 +3720,7 @@ $(function() {
     
 
     <li>
-      <a href="http://localhost:4000/docs/kr/parts/controller/cm-150/#connect-to-smartphone">Connect to Smartphone</a>
+      <a href="http://localhost:4000/docs/kr/parts/controller/cm-150/#connect-to-smartphone" onclick="extendnav()">Connect to Smartphone</a>
     </li>
     
 
@@ -3682,7 +3732,7 @@ $(function() {
     
 
     <li>
-      <a href="http://localhost:4000/docs/kr/parts/controller/cm-150/#connect-to-pc">Connect to PC</a>
+      <a href="http://localhost:4000/docs/kr/parts/controller/cm-150/#connect-to-pc" onclick="extendnav()">Connect to PC</a>
     </li>
     
 
@@ -3694,7 +3744,7 @@ $(function() {
     
 
     <li>
-      <a href="http://localhost:4000/docs/kr/parts/controller/cm-150/#wireless-communication">Wireless Communication</a>
+      <a href="http://localhost:4000/docs/kr/parts/controller/cm-150/#wireless-communication" onclick="extendnav()">Wireless Communication</a>
     </li>
     
 
@@ -3718,7 +3768,7 @@ $(function() {
         
 
         
-        <li><a href="http://localhost:4000/docs/kr/parts/controller/cm-200/#무선통신-연결하기">무선통신 연결하기</a></li>
+        <li><a href="http://localhost:4000/docs/kr/parts/controller/cm-200/#무선통신-연결하기" onclick="extendnav()">무선통신 연결하기</a></li>
         
 
         
@@ -3729,7 +3779,7 @@ $(function() {
         
 
         
-        <li><a href="http://localhost:4000/docs/kr/parts/controller/cm-200/#r-smartiii-설치하기">R+ SmartIII 설치</a></li>
+        <li><a href="http://localhost:4000/docs/kr/parts/controller/cm-200/#r-smartiii-설치하기" onclick="extendnav()">R+ SmartIII 설치</a></li>
         
 
         
@@ -3740,7 +3790,7 @@ $(function() {
         
 
         
-        <li><a href="http://localhost:4000/docs/kr/parts/controller/cm-200/#r-mtask-20-설치하기">R+ m.Task2.0 설치</a></li>
+        <li><a href="http://localhost:4000/docs/kr/parts/controller/cm-200/#r-mtask-20-설치하기" onclick="extendnav()">R+ m.Task2.0 설치</a></li>
         
 
         
@@ -3751,7 +3801,7 @@ $(function() {
         
 
         
-        <li><a href="http://localhost:4000/docs/kr/parts/controller/cm-200/#모션파일-다운로드">모션파일 다운로드</a></li>
+        <li><a href="http://localhost:4000/docs/kr/parts/controller/cm-200/#모션파일-다운로드" onclick="extendnav()">모션파일 다운로드</a></li>
         
 
         
@@ -3780,7 +3830,7 @@ $(function() {
         
 
         
-        <li><a href="http://localhost:4000/docs/kr/parts/controller/cm-200/#프로그래밍">프로그래밍</a></li>
+        <li><a href="http://localhost:4000/docs/kr/parts/controller/cm-200/#프로그래밍" onclick="extendnav()">프로그래밍</a></li>
         
 
         
@@ -3809,7 +3859,7 @@ $(function() {
         
 
         
-        <li><a href="http://localhost:4000/docs/kr/parts/controller/cm-200/#펌웨어-복구">펌웨어 복구</a></li>
+        <li><a href="http://localhost:4000/docs/kr/parts/controller/cm-200/#펌웨어-복구" onclick="extendnav()">펌웨어 복구</a></li>
         
 
         
@@ -3826,7 +3876,7 @@ $(function() {
     
 
     <li>
-      <a href="http://localhost:4000/docs/kr/parts/controller/cm-200/#참고자료">참고자료</a>
+      <a href="http://localhost:4000/docs/kr/parts/controller/cm-200/#참고자료" onclick="extendnav()">참고자료</a>
     </li>
     
 
@@ -3834,6 +3884,7 @@ $(function() {
     
   
   </ul>
+  <a href="#" style="font-size:$type-size-6; color: #2174b6; text-decoration: none; font-weight: bold;" onclick="extendnav()">Back to Top &#9650;</a>
 </nav>
 
     
@@ -3841,7 +3892,7 @@ $(function() {
   </div>
 
 
-
+  <button class="nav_button" id="nav_button" onclick="extendnav()">Nav</button>
   <div class="archive" id="archive">
     <a href="/blob/master/docs/kr/parts/controller/cm-200.md" itemprop="sameAs" style="font-size:16px; float:right; margin: 10px 20px; text-decoration: none;">
       <i class="fa fa-fw fa-github" aria-hidden="true"></i> Edit on GitHub

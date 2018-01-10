@@ -487,7 +487,7 @@ main:
         titlekr: "OpenCR"
         titlejp: "OpenCR"
         titlecn: "OpenCR"
-        url: https://github.com/ROBOTIS-GIT/OpenCR/wiki
+        url: /parts/controller/opencr10/
     - title: "Communication"
       titlekr: "통신"
       titlejp: "通信"
@@ -537,7 +537,7 @@ main:
         titlekr: "감속모터(GM-10A)"
         titlejp: "Geared Motor(GM-10A)"
         titlecn: "Geared Motor(GM-10A)"
-        url: /parts/motor/geared_motor/
+        url: /parts/motor/gm-10a/
       - title: "*High Speed Geared Motor"
         titlekr: "*고속 감속모터"
         titlejp: "*高速減速モーター"
@@ -4871,7 +4871,7 @@ bioloid-premium:
     children:
     - title: "Replacing Fuse"
       titlekr: ""
-      url: /edu/bioloid/premium/#replacing-fuse-cm-5
+      url: /edu/bioloid/premium/#replacing-fuse
       urlkr:
     - title: "Dynamixel Management"
       titlekr: ""
@@ -5826,8 +5826,8 @@ turtlebot3:
       url: /platform/turtlebot3/appendix_opencr1_0/#open-source-software
     - title: "Open Source Hardware"
       url: /platform/turtlebot3/appendix_opencr1_0/#open-source-hardware
-    - title: "Wiki Site for More Information"
-      url: /platform/turtlebot3/appendix_opencr1_0/#wiki-site-for-more-information
+    - title: "e-Manual"
+      url: /platform/turtlebot3/appendix_opencr1_0/#e-manual
   - title: "Appendix #DYNAMIXEL"
     url: /platform/turtlebot3/appendix_dynamixel/#appendix-dynamixel
     children:
@@ -7727,20 +7727,111 @@ opencm904:
     url: /parts/controller/opencm904/#specifications
   - title: "Control Table"
     url: /parts/controller/opencm904/#control-table
-  - title: "Block Diagram"
-    url: /parts/controller/opencm904/#block-diagram
-  - title: "Layout"
-    url: /parts/controller/opencm904/#layout
+  - title: "Hardware"
+    url: /parts/controller/opencm904/#hardware
+    children:
+    - title: "Memory Map"
+      url: /parts/controller/opencm904/#memory-map
+    - title: "Block Diagram"
+      url: /parts/controller/opencm904/#block-diagram
+    - title: "Layout / Pin Map"
+      url: /parts/controller/opencm904/#layoutpin-map
+      children:
+      - title: "Power Switch"
+        url: /parts/controller/opencm904/#power-switch
+      - title: "Serial Battery Socket"
+        url: /parts/controller/opencm904/#serial-battery-socket
+      - title: "Dynamixel TTL Socket"
+        url: /parts/controller/opencm904/#dynamixel-ttl-3-pin
+      - title: "Communication Port"
+        url: /parts/controller/opencm904/#communication-port
+      - title: "User Button"
+        url: /parts/controller/opencm904/#user-button
+      - title: "Ext ADC Ref Jumper"
+        url: /parts/controller/opencm904/#ext-adc-ref-jumper
+      - title: "Micro-B USB"
+        url: /parts/controller/opencm904/#micro-b-usb
+      - title: "Status LED"
+        url: /parts/controller/opencm904/#status-led
+      - title: "Reset Button"
+        url: /parts/controller/opencm904/#reset-button
+      - title: "JTAG/SWD Pin"
+        url: /parts/controller/opencm904/#jtagswd-4-pin
+      - title: "5 Pin Port"
+        url: /parts/controller/opencm904/#5-pin-port
+      - title: "I/O Header"
+        url: /parts/controller/opencm904/#io-header
+    - title: "Pin Name Definition"
+      url: /parts/controller/opencm904/#pin-name-definition
+    - title: "Pin Function Definition"
+      url: /parts/controller/opencm904/#pin-function-definition
   - title: "Connecting Power"
     url: /parts/controller/opencm904/#connecting-power
   - title: "Switch Assembly(Type A)"
     url: /parts/controller/opencm904/#switch-assemblytype-a
   - title: "Connector Assembly(Type A)"
     url: /parts/controller/opencm904/#connector-assemblytype-a
+  - title: "Development Environment"
+    url: /parts/controller/opencm904/#development-environment
+    children:
+    - title: "Softwares"
+      url: /parts/controller/opencm904/#softwares
+    - title: "OpenCM IDE"
+      url: /parts/controller/opencm904/#opencm-ide
+    - title: "Arduino IDE"
+      url: /parts/controller/opencm904/#arduino-ide
+      children:
+      - title: "Install on Linux"
+        url: /parts/controller/opencm904/#install-on-linux
+      - title: "Install on Mac"
+        url: /parts/controller/opencm904/#install-on-mac
+      - title: "Install on Windows"
+        url: /parts/controller/opencm904/#install-on-windows
+    - title: "DynamixelWorkbench"
+      url: /parts/controller/opencm904/#dynamixelworkbench
+      children:
+      - title: "APIs"
+        url: /parts/controller/opencm904/#apis
+      - title: "Example 1. Find Dynamixel"
+        url: /parts/controller/opencm904/#find-dynamixel
+      - title: "Example 2. Position"
+        url: /parts/controller/opencm904/#position
+      - title: "Example 3. Speed"
+        url: /parts/controller/opencm904/#speed
+  - title: "Examples"
+    url: /parts/controller/opencm904/#examples
+    children:
+    - title: "LED"
+      url: /parts/controller/opencm904/#led
+    - title: "Button"
+      url: /parts/controller/opencm904/#button
+    - title: "Buzzer"
+      url: /parts/controller/opencm904/#buzzer
+    - title: "PWM"
+      url: /parts/controller/opencm904/#pwm
+    - title: "EEPROM"
+      url: /parts/controller/opencm904/#eeprom
+    - title: "Servo"
+      url: /parts/controller/opencm904/#servo
+    - title: "SD Card"
+      url: /parts/controller/opencm904/#sd-card
+    - title: "MS5540S"
+      url: /parts/controller/opencm904/#ms5540s
+    - title: "MPU6050 DMP"
+      url: /parts/controller/opencm904/#mpu6050-dmp
+    - title: "0.96\" OLED LCD"
+      url: /parts/controller/opencm904/#096-oled-lcd
   - title: "Downloads"
     url: /parts/controller/opencm904/#downloads
-  - title: "Dimension"
-    url: /parts/controller/opencm904/#dimension
+  - title: "References"
+    url: /parts/controller/opencm904/#references
+    children:
+    - title: "Recovery Mode"
+      url: /parts/controller/opencm904/#recovery-mode
+    - title: "Install Windows Driver"
+      url: /parts/controller/opencm904/#install-windows-driver
+    - title: "Dimension"
+      url: /parts/controller/opencm904/#dimension
 
 #OpenCM 485 EXP sidebar
 opencm485exp:
@@ -7760,6 +7851,167 @@ opencm485exp:
     url: /parts/controller/opencm485exp/#button-led
   - title: "Downloads"
     url: /parts/controller/opencm485exp/#downloads
+
+#OpenCR sidebar
+opencr10:
+  - title: "Introduction"
+    url: /parts/controller/opencr10/#introduction
+  - title: "Specifications"
+    url: /parts/controller/opencr10/#specifications
+  - title: "Hardware"
+    url: /parts/controller/opencr10/#hardware
+    children:
+    - title: "Layout / Pin Map"
+      url: /parts/controller/opencr10/#layoutpin-map
+  - title: "Bootloader"
+    url: /parts/controller/opencr10/#bootloader
+    children:
+    - title: "Memory Map"
+      url: /parts/controller/opencr10/#memory-map
+    - title: "Boot Sequence"
+      url: /parts/controller/opencr10/#boot-sequence
+    - title: "Communication Protocol"
+      url: /parts/controller/opencr10/#communication-protocol
+      children:
+      - title: "MavLink"
+        url: /parts/controller/opencr10/#mavlink
+      - title: "Composition of Commands"
+        url: /parts/controller/opencr10/#composition-of-commands
+      - title: "Download Sequence"
+        url: /parts/controller/opencr10/#download-sequence
+      - title: "Message Processing"
+        url: /parts/controller/opencr10/#message-processing
+      - title: "Folder Structure"
+        url: /parts/controller/opencr10/#folder-structure
+    - title: "Update Bootloader(Linux)"
+      url: /parts/controller/opencr10/#update-bootloaderlinux
+      children:
+      - title: "Enter DFU Mode"
+        url: /parts/controller/opencr10/#enter-dfu-mode
+      - title: "Check Boot Mode"
+        url: /parts/controller/opencr10/#check-boot-mode
+      - title: "Update Bootloader"
+        url: /parts/controller/opencr10/#update-bootloader
+    - title: "Firmware Recovery Mode"
+      url: /parts/controller/opencr10/#firmware-recovery-mode
+  - title: "Downloader"
+    url: /parts/controller/opencr10/#downloader
+    children:
+    - title: "Usage"
+      url: /parts/controller/opencr10/#usage
+    - title: "Linux/Mac Example"
+      url: /parts/controller/opencr10/#linuxmac-example
+    - title: "Windows Example"
+      url: /parts/controller/opencr10/#windows-example
+    - title: "Execution Result"
+      url: /parts/controller/opencr10/#execution-result
+    - title: "Download Executable File"
+      url: /parts/controller/opencr10/#download-executable-file
+  - title: "Arduino IDE"
+    url: /parts/controller/opencr10/#arduino-ide
+    children:
+    - title: "Install on Linux"
+      url: /parts/controller/opencr10/#install-on-linux
+      children:
+      - title: "USB Port Settings"
+        url: /parts/controller/opencr10/#usb-port-settings
+      - title: "Compiler Settings"
+        url: /parts/controller/opencr10/#compiler-settings
+      - title: "Install Arduino IDE"
+        url: /parts/controller/opencr10/#install-arduino-idelinux
+      - title: "Run Arduino IDE"
+        url: /parts/controller/opencr10/#run-arduino-idelinux
+      - title: "Porting to Arduino IDE"
+        url: /parts/controller/opencr10/#porting-to-arduino-idelinux
+      - title: "Remove Modemmanager"
+        url: /parts/controller/opencr10/#remove-modemmanager
+      - title: "Writing Bootloader"
+        url: /parts/controller/opencr10/#writing-bootloaderlinux
+    - title: "Install on Mac"
+      url: /parts/controller/opencr10/#install-on-mac
+      children:
+      - title: "Install Arduino IDE"
+        url: /parts/controller/opencr10/#install-arduino-idemac
+      - title: "Run Arduino IDE"
+        url: /parts/controller/opencr10/#run-arduino-idemac
+      - title: "Porting to Arduino IDE"
+        url: /parts/controller/opencr10/#porting-to-arduino-idemac
+      - title: "Writing Bootloader"
+        url: /parts/controller/opencr10/#writing-bootloadermac
+    - title: "Install on Windows"
+      url: /parts/controller/opencr10/#install-on-windows
+      children:
+      - title: "Install Driver"
+        url: /parts/controller/opencr10/#install-driver
+      - title: "Install Arduino IDE"
+        url: /parts/controller/opencr10/#install-arduino-idewindows
+      - title: "Porting to Arduino IDE"
+        url: /parts/controller/opencr10/#porting-to-arduino-idewindows
+    - title: "Arduino Pinmap"
+      url: /parts/controller/opencr10/#arduino-pinmap
+      children:
+      - title: "Arduino Connector"
+        url: /parts/controller/opencr10/#arduino-connector
+      - title: "User LED"
+        url: /parts/controller/opencr10/#user-led
+      - title: "Dip Switch"
+        url: /parts/controller/opencr10/#dip-switch
+      - title: "GPIO"
+        url: /parts/controller/opencr10/#gpio
+      - title: "OLLO Connector"
+        url: /parts/controller/opencr10/#ollo-connector
+      - title: "Push Switch"
+        url: /parts/controller/opencr10/#push-switch
+      - title: "Pin Definition"
+        url: /parts/controller/opencr10/#pin-definition
+  - title: "Examples"
+    url: /parts/controller/opencr10/#examples
+    children:
+    - title: "LED"
+      url: /parts/controller/opencr10/#led
+    - title: "Button"
+      url: /parts/controller/opencr10/#button
+    - title: "Buzzer"
+      url: /parts/controller/opencr10/#buzzer
+    - title: "PWM"
+      url: /parts/controller/opencr10/#pwm
+    - title: "EEPROM"
+      url: /parts/controller/opencr10/#eeprom
+    - title: "OP3"
+      url: /parts/controller/opencr10/#op3
+    - title: "Sensors"
+      url: /parts/controller/opencr10/#sensors
+      children:
+      - title: "Ambient Light Sensor"
+        url: /parts/controller/opencr10/#ambient-light-sensor
+      - title: "Tilt Sensor"
+        url: /parts/controller/opencr10/#tilt-sensor
+      - title: "Rotation Sensor"
+        url: /parts/controller/opencr10/#rotation-sensor
+      - title: "Capacitive Touch Sensor"
+        url: /parts/controller/opencr10/#capacitive-touch-sensor
+      - title: "Flame Sensor"
+        url: /parts/controller/opencr10/#flame-sensor
+      - title: "Joystic Sensor"
+        url: /parts/controller/opencr10/#joystic-sensor
+    - title: "OpenManipulator"
+      url: /parts/controller/opencr10/#openmanipulator
+      children:
+      - title: "OpenManipulator Chain"
+        url: /parts/controller/opencr10/#openmanipulator-chain
+      - title: "OpenManipulator SCARA"
+        url: /parts/controller/opencr10/#openmanipulator-scara
+      - title: "OpenManipulator Link"
+        url: /parts/controller/opencr10/#openmanipulator-link
+  - title: "Downloads"
+    url: /parts/controller/opencr10/#downloads
+  - title: "References"
+    url: /parts/controller/opencr10/#references
+    children:
+    - title: "Recovery Mode"
+      url: /parts/controller/opencr10/#recovery-mode
+    - title: "Install Windows Driver"
+      url: /parts/controller/opencr10/#install-windows-driver
 
 #RC-100 sidebar
 rc-100:

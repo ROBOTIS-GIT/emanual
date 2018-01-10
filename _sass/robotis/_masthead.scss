@@ -1,3 +1,7 @@
+.logo {
+  padding: 10px;
+}
+
 .masthead {
   position: relative;
   margin: 0;
@@ -17,38 +21,6 @@
 
 .site-title {
   float: left;
-}
-
-.searchbox {
-  float: right;
-  width: 300px;
-  margin: 0.45rem;
-}
-
-#google_translate_element {
-  float: left;
-  margin: 0.5rem;
-}
-
-.cse .gsc-search-button input.gsc-search-button-v2,
-input.gsc-search-button-v2 {
-  height: 26px !important;
-  margin-top: 0 !important;
-  min-width: 13px !important;
-  padding: 5px 26px !important;
-  width: 68px !important;
-}
-
-.cse .gsc-control-cse, .gsc-control-cse {
-  padding: 0 !important;
-}
-
-.gsib_a {
-  padding: 0 !important;
-}
-
-.goog-te-gadget-icon {
-  padding: 9px;
 }
 
 /*dropdown menu css*/
@@ -73,7 +45,8 @@ $bottom-textcolor: white;
   display: none;
   float: right;
   padding: 24px 20px;
-  position: relative;
+  position: absolute;
+  right: 0;
   user-select: none;
 }
 
@@ -174,7 +147,7 @@ $bottom-textcolor: white;
   display: block;
   background: $top-bgcolor;
   color: $top-textcolor;
-  font-size: 1.3rem;
+  font-size: 1em;
   text-align: left;
   box-shadow: inset 0 -1px #bbb9b9;
   padding: 2px 1em;
@@ -191,7 +164,7 @@ $bottom-textcolor: white;
   display: block;
   background: $middle-bgcolor;
   color: $middle-textcolor;
-  font-size: 1.1rem;
+  font-size: 0.8em;
   text-align: left;
   padding: 2px 3em;
   text-decoration: none;
@@ -207,7 +180,7 @@ $bottom-textcolor: white;
   display: block;
   background: $bottom-bgcolor;
   color: $bottom-textcolor;
-  font-size: 1.0rem;
+  font-size: 0.7em;
   text-align: left;
   padding: 2px 6em;
   text-decoration: none;

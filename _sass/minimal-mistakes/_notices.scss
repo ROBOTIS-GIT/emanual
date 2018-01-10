@@ -84,7 +84,7 @@ p>code, a>code, li>code, td>code {
   padding-top: 0.1rem;
   padding-bottom: 0.1rem;
   font-family: $monospace;
-  font-size: 0.8rem;
+  font-size: 0.8em;
   white-space: nowrap;
   border: 1px solid #000;
   border-radius: $border-radius;
@@ -94,34 +94,5 @@ p>code, a>code, li>code, td>code {
   &:before, &:after {
     letter-spacing: -0.2em;
     content: "\00a0";
-  }
-}
-
-div.highlighter-rouge {
-  position: relative;
-  margin-bottom: 1em;
-  padding: 0.5em 1em;
-  font-family: Monaco,Consolas,"Lucida Console",monospace;
-  font-size: 0.9rem;
-  color: white;
-  border-radius: 5px;
-  background-color: #000;
-  
-  &:before {
-    position: absolute;
-    top: 0;
-    right: 1em;
-    background-color: #000;
-    content: "\f121";
-    font-family: "fontawesome" !important;
-    font-size: 0.8em;
-    text-transform: none;
-    speak: none;
-  }
-  
-  .highlight {
-    overflow-x: auto;
-    padding-bottom: 0.5em;
-    padding-right: 2em;
   }
 }

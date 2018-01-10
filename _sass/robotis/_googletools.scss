@@ -1,0 +1,61 @@
+.searchbox {
+  position: absolute;
+  right: 0;
+  max-width: 300px;
+  margin: 0.45em 0.5em 0.45em 0.45em;
+}
+
+#google_translate_element {
+  float: left;
+  margin: 0.5em;
+}
+
+#google_button {
+  display: block;
+  position: fixed;
+  width: 45px;
+  height: 50px;
+  top: 6.8rem;
+  right: -5px;
+  background-color: white;
+  border: 1px solid mix(#fff, #000, 80%);
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  z-index: 100;
+  opacity: 0.8;
+}
+
+.google_tools {
+  position: fixed;
+  background-color: white;
+  top: 53px;
+  right: -250px;
+  border: 1px solid mix(#fff, #000, 80%);
+  border-radius: $border-radius;
+  z-index: 30;
+}
+
+.extend_googletools {
+  right: 5px;
+}
+
+.cse .gsc-search-button input.gsc-search-button-v2,
+input.gsc-search-button-v2 {
+  height: 26px !important;
+  margin-top: 0 !important;
+  min-width: 13px !important;
+  padding: 5px 26px !important;
+  width: 68px !important;
+}
+
+.cse .gsc-control-cse, .gsc-control-cse {
+  padding: 0 !important;
+}
+
+.gsib_a {
+  padding: 0 !important;
+}
+
+.goog-te-gadget-icon {
+  padding: 9px;
+}

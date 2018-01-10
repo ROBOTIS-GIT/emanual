@@ -153,6 +153,21 @@ $(function() {
 
 <!-- end custom head snippets -->
 
+    <script>
+      var toggle_google = 0;
+      var mobile_width = 960;
+      
+      function extendgoogletool() {
+        if (toggle_google == 0) {
+          google_tools.classList.add("extend_googletools");
+          toggle_google = 1;
+        }
+        else {
+          google_tools.classList.remove("extend_googletools");
+          toggle_google = 0;
+        }
+      }
+    </script>
   </head>
 
   <body class="layout--archive">
@@ -163,7 +178,33 @@ $(function() {
     <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
-      <a class="site-title" href="http://localhost:4000/"><img src="/assets/images/robotis_emanual_logo.png" style="padding: 10px 10px;"></a>
+      <a class="site-title" href="http://localhost:4000/"><img class="logo" id="logo" src="/assets/images/robotis_emanual_logo.png"></a>
+      <!-- Google Custom Search -->
+      <form class="searchbox" method="get" id="site_search">
+        <script>
+          (function() {
+            var cx = '003548387656725317882:3pwl9jljqvi';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+          })();
+        </script>
+        <gcse:search></gcse:search>
+      </form>
+      <!-- end of Google Custom Search -->
+      <button class="google_button" id="google_button" onclick="extendgoogletool()"><img src="https://www.google.com/images/cleardot.gif" class="goog-te-gadget-icon" alt="" style="background-image: url(&quot;https://translate.googleapis.com/translate_static/img/te_ctrl3.gif&quot;); background-position: -65px 0px;"></button>
+      <div class="google_tools" id="google_tools">
+        <!-- Google Translation -->
+        <div id="google_translate_element"></div><script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'ar,de,es,fr,hi,ja,ko,pt,ru,sv,th,tr,vi,zh-CN', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, multilanguagePage: true, gaTrack: true, gaId: 'UA-83196341'}, 'google_translate_element');
+        }
+        </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <!-- end of Google Translation -->  
+      </div>
       
       <input class="menu-btn" type="checkbox" id="menu-btn" />
       <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
@@ -183,8 +224,8 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <input type="radio" name="sublevel" id="AX Series">
-                    <label for="AX Series">AX Series</label>
+                    <input type="radio" name="sublevel" id="DYNAMIXELAX Series">
+                    <label for="DYNAMIXELAX Series">AX Series</label>
                     <ul>
                     
                       
@@ -218,8 +259,8 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <input type="radio" name="sublevel" id="*EX Series">
-                    <label for="*EX Series">*EX Series</label>
+                    <input type="radio" name="sublevel" id="DYNAMIXEL*EX Series">
+                    <label for="DYNAMIXEL*EX Series">*EX Series</label>
                     <ul>
                     
                       
@@ -239,8 +280,8 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <input type="radio" name="sublevel" id="*DX Series">
-                    <label for="*DX Series">*DX Series</label>
+                    <input type="radio" name="sublevel" id="DYNAMIXEL*DX Series">
+                    <label for="DYNAMIXEL*DX Series">*DX Series</label>
                     <ul>
                     
                       
@@ -274,8 +315,8 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <input type="radio" name="sublevel" id="*RX Series">
-                    <label for="*RX Series">*RX Series</label>
+                    <input type="radio" name="sublevel" id="DYNAMIXEL*RX Series">
+                    <label for="DYNAMIXEL*RX Series">*RX Series</label>
                     <ul>
                     
                       
@@ -316,8 +357,8 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <input type="radio" name="sublevel" id="MX Series">
-                    <label for="MX Series">MX Series</label>
+                    <input type="radio" name="sublevel" id="DYNAMIXELMX Series">
+                    <label for="DYNAMIXELMX Series">MX Series</label>
                     <ul>
                     
                       
@@ -379,8 +420,8 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <input type="radio" name="sublevel" id="X Series">
-                    <label for="X Series">X Series</label>
+                    <input type="radio" name="sublevel" id="DYNAMIXELX Series">
+                    <label for="DYNAMIXELX Series">X Series</label>
                     <ul>
                     
                       
@@ -463,8 +504,8 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <input type="radio" name="sublevel" id="PRO Series">
-                    <label for="PRO Series">PRO Series</label>
+                    <input type="radio" name="sublevel" id="DYNAMIXELPRO Series">
+                    <label for="DYNAMIXELPRO Series">PRO Series</label>
                     <ul>
                     
                       
@@ -688,8 +729,8 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <input type="radio" name="sublevel" id="*OLLO">
-                    <label for="*OLLO">*OLLO</label>
+                    <input type="radio" name="sublevel" id="STEAM*OLLO">
+                    <label for="STEAM*OLLO">*OLLO</label>
                     <ul>
                     
                       
@@ -726,8 +767,8 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <input type="radio" name="sublevel" id="DREAM">
-                    <label for="DREAM">DREAM</label>
+                    <input type="radio" name="sublevel" id="STEAMDREAM">
+                    <label for="STEAMDREAM">DREAM</label>
                     <ul>
                     
                       
@@ -808,8 +849,8 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <input type="radio" name="sublevel" id="BIOLOID">
-                    <label for="BIOLOID">BIOLOID</label>
+                    <input type="radio" name="sublevel" id="STEAMBIOLOID">
+                    <label for="STEAMBIOLOID">BIOLOID</label>
                     <ul>
                     
                       
@@ -886,8 +927,8 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <input type="radio" name="sublevel" id="DYNAMIXEL">
-                    <label for="DYNAMIXEL">DYNAMIXEL</label>
+                    <input type="radio" name="sublevel" id="SOFTWAREDYNAMIXEL">
+                    <label for="SOFTWAREDYNAMIXEL">DYNAMIXEL</label>
                     <ul>
                     
                       
@@ -914,8 +955,8 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <input type="radio" name="sublevel" id="Mobile Apps">
-                    <label for="Mobile Apps">Mobile Apps</label>
+                    <input type="radio" name="sublevel" id="SOFTWAREMobile Apps">
+                    <label for="SOFTWAREMobile Apps">Mobile Apps</label>
                     <ul>
                     
                       
@@ -941,8 +982,8 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <input type="radio" name="sublevel" id="R+ 1.0">
-                    <label for="R+ 1.0">R+ 1.0</label>
+                    <input type="radio" name="sublevel" id="SOFTWARER+ 1.0">
+                    <label for="SOFTWARER+ 1.0">R+ 1.0</label>
                     <ul>
                     
                       
@@ -983,8 +1024,8 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <input type="radio" name="sublevel" id="R+ 2.0">
-                    <label for="R+ 2.0">R+ 2.0</label>
+                    <input type="radio" name="sublevel" id="SOFTWARER+ 2.0">
+                    <label for="SOFTWARER+ 2.0">R+ 2.0</label>
                     <ul>
                     
                       
@@ -1032,8 +1073,8 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <input type="radio" name="sublevel" id="R+ Mobile">
-                    <label for="R+ Mobile">R+ Mobile</label>
+                    <input type="radio" name="sublevel" id="SOFTWARER+ Mobile">
+                    <label for="SOFTWARER+ Mobile">R+ Mobile</label>
                     <ul>
                     
                       
@@ -1066,8 +1107,8 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <input type="radio" name="sublevel" id="EMBEDDED SDK">
-                    <label for="EMBEDDED SDK">EMBEDDED SDK</label>
+                    <input type="radio" name="sublevel" id="SOFTWAREEMBEDDED SDK">
+                    <label for="SOFTWAREEMBEDDED SDK">EMBEDDED SDK</label>
                     <ul>
                     
                       
@@ -1127,8 +1168,8 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <input type="radio" name="sublevel" id="Controller">
-                    <label for="Controller">Controller</label>
+                    <input type="radio" name="sublevel" id="PARTSController">
+                    <label for="PARTSController">Controller</label>
                     <ul>
                     
                       
@@ -1204,7 +1245,7 @@ $(function() {
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/enhttps://github.com/ROBOTIS-GIT/OpenCR/wiki" class="">OpenCR</a>
+                          <a href="http://localhost:4000/docs/en/parts/controller/opencr10/" class="">OpenCR</a>
                         </li>
                       
                     
@@ -1218,8 +1259,8 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <input type="radio" name="sublevel" id="Communication">
-                    <label for="Communication">Communication</label>
+                    <input type="radio" name="sublevel" id="PARTSCommunication">
+                    <label for="PARTSCommunication">Communication</label>
                     <ul>
                     
                       
@@ -1281,14 +1322,14 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <input type="radio" name="sublevel" id="Motors">
-                    <label for="Motors">Motors</label>
+                    <input type="radio" name="sublevel" id="PARTSMotors">
+                    <label for="PARTSMotors">Motors</label>
                     <ul>
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/parts/motor/geared_motor/" class="">Geared Motor(GM-10A)</a>
+                          <a href="http://localhost:4000/docs/en/parts/motor/gm-10a/" class="">Geared Motor(GM-10A)</a>
                         </li>
                       
                     
@@ -1323,8 +1364,8 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <input type="radio" name="sublevel" id="Interface">
-                    <label for="Interface">Interface</label>
+                    <input type="radio" name="sublevel" id="PARTSInterface">
+                    <label for="PARTSInterface">Interface</label>
                     <ul>
                     
                       
@@ -1358,8 +1399,8 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <input type="radio" name="sublevel" id="Sensors">
-                    <label for="Sensors">Sensors</label>
+                    <input type="radio" name="sublevel" id="PARTSSensors">
+                    <label for="PARTSSensors">Sensors</label>
                     <ul>
                     
                       
@@ -1448,8 +1489,8 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <input type="radio" name="sublevel" id="Display">
-                    <label for="Display">Display</label>
+                    <input type="radio" name="sublevel" id="PARTSDisplay">
+                    <label for="PARTSDisplay">Display</label>
                     <ul>
                     
                       
@@ -1484,30 +1525,6 @@ $(function() {
         
         </ul>
 
-        <!-- Google Translation -->
-        <div id="google_translate_element"></div><script type="text/javascript">
-        function googleTranslateElementInit() {
-          new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'ar,de,es,fr,hi,ja,ko,pt,ru,sv,th,tr,vi,zh-CN', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, multilanguagePage: true, gaTrack: true, gaId: 'UA-83196341'}, 'google_translate_element');
-        }
-        </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-        <!-- end of Google Translation -->
-      
-      <!-- Google Custom Search -->
-      <form class="searchbox" method="get" id="site_search">
-        <script>
-          (function() {
-            var cx = '003548387656725317882:3pwl9jljqvi';
-            var gcse = document.createElement('script');
-            gcse.type = 'text/javascript';
-            gcse.async = true;
-            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(gcse, s);
-          })();
-        </script>
-        <gcse:search></gcse:search>
-      </form>
-      <!-- end of Google Custom Search -->
     </div>
 
     <div class="container" id="container">
@@ -2994,7 +3011,7 @@ $(function() {
 
                   
                     
-                      <a href="https://github.com/ROBOTIS-GIT/OpenCR/wiki">OpenCR</a>
+                      <a href="http://localhost:4000/docs/en/parts/controller/opencr10/">OpenCR</a>
                     
                 
               </div>
@@ -3102,7 +3119,7 @@ $(function() {
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/parts/motor/geared_motor/">Geared Motor(GM-10A)</a>
+                      <a href="http://localhost:4000/docs/en/parts/motor/gm-10a/">Geared Motor(GM-10A)</a>
                     
                 
                   
@@ -3364,6 +3381,40 @@ $(function() {
 
 
 
+<script>
+  var side_nav = document.getElementById("sidebar");
+  var offset = 105;
+
+  window.onscroll = function () {
+    stickynav()
+  };
+  
+  function stickynav() {
+    if (window.pageYOffset > offset) {
+      sidebar.classList.add("sticky_sidebar");
+    }
+    else {
+      sidebar.classList.remove("sticky_sidebar");
+    }
+  }
+  
+  var toggle = 0;
+  var mobile_width = 960;
+  
+  function extendnav() {
+    if (document.body.clientWidth < mobile_width ) {
+      if (toggle == 0) {
+        sidebar.classList.add("extend_sidebar");
+        toggle = 1;
+      }
+      else {
+        sidebar.classList.remove("extend_sidebar");
+        toggle = 0;
+      }
+    }
+  }
+</script>
+
 <div id="main" role="main">
   
   <div class="sidebar__left" id="sidebar">
@@ -3380,10 +3431,9 @@ $(function() {
     
     
       
-
 <nav class="nav__list">
 
-  <a href=http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/ style="font-size:$type-size-6; color: #2174b6; text-decoration: none;">THORMANG3</a>
+  <a href=http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/ style="font-size:$type-size-6; color: #2174b6; text-decoration: none; font-weight: bold;" onclick="extendnav()">THORMANG3</a>
   <ul class="nav__items">
   
     
@@ -3403,7 +3453,7 @@ $(function() {
         
 
         
-        <li><a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#what-is-thormang3">What is THORMANG3?</a></li>
+        <li><a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#what-is-thormang3" onclick="extendnav()">What is THORMANG3?</a></li>
         
 
         
@@ -3414,7 +3464,7 @@ $(function() {
         
 
         
-        <li><a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#package-contents">Package Contents</a></li>
+        <li><a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#package-contents" onclick="extendnav()">Package Contents</a></li>
         
 
         
@@ -3425,7 +3475,7 @@ $(function() {
         
 
         
-        <li><a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#layout">Layout</a></li>
+        <li><a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#layout" onclick="extendnav()">Layout</a></li>
         
 
         
@@ -3436,7 +3486,7 @@ $(function() {
         
 
         
-        <li><a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#specifications">Specifications</a></li>
+        <li><a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#specifications" onclick="extendnav()">Specifications</a></li>
         
 
         
@@ -3447,7 +3497,7 @@ $(function() {
         
 
         
-        <li><a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#safety-information">Safety Information</a></li>
+        <li><a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#safety-information" onclick="extendnav()">Safety Information</a></li>
         
 
         
@@ -3476,7 +3526,7 @@ $(function() {
         
 
         
-        <li><a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#unpacking">Unpacking</a></li>
+        <li><a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#unpacking" onclick="extendnav()">Unpacking</a></li>
         
 
         
@@ -3487,7 +3537,7 @@ $(function() {
         
 
         
-        <li><a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#power-on">Power On</a></li>
+        <li><a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#power-on" onclick="extendnav()">Power On</a></li>
         
 
         
@@ -3498,7 +3548,7 @@ $(function() {
         
 
         
-        <li><a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#connect-to-thormang3">Connect to THORMANG3</a></li>
+        <li><a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#connect-to-thormang3" onclick="extendnav()">Connect to THORMANG3</a></li>
         
 
         
@@ -3509,7 +3559,7 @@ $(function() {
         
 
         
-        <li><a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#basic-operation">Basic Operation</a></li>
+        <li><a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#basic-operation" onclick="extendnav()">Basic Operation</a></li>
         
 
         
@@ -3520,7 +3570,7 @@ $(function() {
         
 
         
-        <li><a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#power-off">Power Off</a></li>
+        <li><a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#power-off" onclick="extendnav()">Power Off</a></li>
         
 
         
@@ -3531,7 +3581,7 @@ $(function() {
         
 
         
-        <li><a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#battery-charge">Battery Charge</a></li>
+        <li><a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#battery-charge" onclick="extendnav()">Battery Charge</a></li>
         
 
         
@@ -3542,7 +3592,7 @@ $(function() {
         
 
         
-        <li><a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#repacking">Repacking</a></li>
+        <li><a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#repacking" onclick="extendnav()">Repacking</a></li>
         
 
         
@@ -3571,7 +3621,7 @@ $(function() {
         
 
         
-        <li><a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#os-install">OS Install</a></li>
+        <li><a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#os-install" onclick="extendnav()">OS Install</a></li>
         
 
         
@@ -3595,7 +3645,7 @@ $(function() {
             
 
             <li>
-              <a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#access-point-setting" style="font-style:italic;">Access Point Setting</a>
+              <a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#access-point-setting" style="font-style:italic;" onclick="extendnav()">Access Point Setting</a>
             </li>
           
             
@@ -3603,7 +3653,7 @@ $(function() {
             
 
             <li>
-              <a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#pc-setting" style="font-style:italic;">PC Setting</a>
+              <a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#pc-setting" style="font-style:italic;" onclick="extendnav()">PC Setting</a>
             </li>
           
           </ul>
@@ -3617,7 +3667,7 @@ $(function() {
         
 
         
-        <li><a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#ros-install">ROS Install</a></li>
+        <li><a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#ros-install" onclick="extendnav()">ROS Install</a></li>
         
 
         
@@ -3641,7 +3691,7 @@ $(function() {
             
 
             <li>
-              <a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#network-setting-example" style="font-style:italic;">Network Setting Example</a>
+              <a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#network-setting-example" style="font-style:italic;" onclick="extendnav()">Network Setting Example</a>
             </li>
           
             
@@ -3649,7 +3699,7 @@ $(function() {
             
 
             <li>
-              <a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#time-synchronization" style="font-style:italic;">Time Synchronization</a>
+              <a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#time-synchronization" style="font-style:italic;" onclick="extendnav()">Time Synchronization</a>
             </li>
           
           </ul>
@@ -3676,7 +3726,7 @@ $(function() {
             
 
             <li>
-              <a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#mpc-installation" style="font-style:italic;">MPC Installation</a>
+              <a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#mpc-installation" style="font-style:italic;" onclick="extendnav()">MPC Installation</a>
             </li>
           
             
@@ -3684,7 +3734,7 @@ $(function() {
             
 
             <li>
-              <a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#ppc-installation" style="font-style:italic;">PPC Installation</a>
+              <a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#ppc-installation" style="font-style:italic;" onclick="extendnav()">PPC Installation</a>
             </li>
           
             
@@ -3692,7 +3742,7 @@ $(function() {
             
 
             <li>
-              <a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#opc-installation" style="font-style:italic;">OPC Installation</a>
+              <a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#opc-installation" style="font-style:italic;" onclick="extendnav()">OPC Installation</a>
             </li>
           
             
@@ -3700,7 +3750,7 @@ $(function() {
             
 
             <li>
-              <a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#update" style="font-style:italic;">Update</a>
+              <a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#update" style="font-style:italic;" onclick="extendnav()">Update</a>
             </li>
           
           </ul>
@@ -3727,7 +3777,7 @@ $(function() {
             
 
             <li>
-              <a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#ros-packages-for-mpc" style="font-style:italic;">ROS Packages for MPC</a>
+              <a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#ros-packages-for-mpc" style="font-style:italic;" onclick="extendnav()">ROS Packages for MPC</a>
             </li>
           
             
@@ -3735,7 +3785,7 @@ $(function() {
             
 
             <li>
-              <a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#ros-packages-for-ppc" style="font-style:italic;">ROS Packages for PPC</a>
+              <a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#ros-packages-for-ppc" style="font-style:italic;" onclick="extendnav()">ROS Packages for PPC</a>
             </li>
           
           </ul>
@@ -3780,7 +3830,7 @@ $(function() {
             
 
             <li>
-              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_manager" style="font-style:italic;">Manager</a>
+              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_manager" style="font-style:italic;" onclick="extendnav()">Manager</a>
             </li>
           
             
@@ -3788,7 +3838,7 @@ $(function() {
             
 
             <li>
-              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_kinematics_dynamics" style="font-style:italic;">Kinematics & Dynamics</a>
+              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_kinematics_dynamics" style="font-style:italic;" onclick="extendnav()">Kinematics & Dynamics</a>
             </li>
           
             
@@ -3796,7 +3846,7 @@ $(function() {
             
 
             <li>
-              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_action_module" style="font-style:italic;">Action Module</a>
+              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_action_module" style="font-style:italic;" onclick="extendnav()">Action Module</a>
             </li>
           
             
@@ -3804,7 +3854,7 @@ $(function() {
             
 
             <li>
-              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_base_module" style="font-style:italic;">Base Module</a>
+              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_base_module" style="font-style:italic;" onclick="extendnav()">Base Module</a>
             </li>
           
             
@@ -3812,7 +3862,7 @@ $(function() {
             
 
             <li>
-              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_manipulation_module" style="font-style:italic;">Manipulation Module</a>
+              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_manipulation_module" style="font-style:italic;" onclick="extendnav()">Manipulation Module</a>
             </li>
           
             
@@ -3820,7 +3870,7 @@ $(function() {
             
 
             <li>
-              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_walking_module" style="font-style:italic;">Walking Module</a>
+              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_walking_module" style="font-style:italic;" onclick="extendnav()">Walking Module</a>
             </li>
           
             
@@ -3828,7 +3878,7 @@ $(function() {
             
 
             <li>
-              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_head_control_module" style="font-style:italic;">Head Control Module</a>
+              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_head_control_module" style="font-style:italic;" onclick="extendnav()">Head Control Module</a>
             </li>
           
             
@@ -3836,7 +3886,7 @@ $(function() {
             
 
             <li>
-              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#ati_ft_sensor" style="font-style:italic;">FT Sensor</a>
+              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#ati_ft_sensor" style="font-style:italic;" onclick="extendnav()">FT Sensor</a>
             </li>
           
             
@@ -3844,7 +3894,7 @@ $(function() {
             
 
             <li>
-              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_feet_ft_module" style="font-style:italic;">Feet FT Module</a>
+              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_feet_ft_module" style="font-style:italic;" onclick="extendnav()">Feet FT Module</a>
             </li>
           
             
@@ -3852,7 +3902,7 @@ $(function() {
             
 
             <li>
-              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_balance_control" style="font-style:italic;">Balance Control</a>
+              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_balance_control" style="font-style:italic;" onclick="extendnav()">Balance Control</a>
             </li>
           
             
@@ -3860,7 +3910,7 @@ $(function() {
             
 
             <li>
-              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#imu-3dm-gx4" style="font-style:italic;">IMU</a>
+              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#imu-3dm-gx4" style="font-style:italic;" onclick="extendnav()">IMU</a>
             </li>
           
           </ul>
@@ -3887,7 +3937,7 @@ $(function() {
             
 
             <li>
-              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_sensors" style="font-style:italic;">thormang3_sensors</a>
+              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_sensors" style="font-style:italic;" onclick="extendnav()">thormang3_sensors</a>
             </li>
           
             
@@ -3895,7 +3945,7 @@ $(function() {
             
 
             <li>
-              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_simple_demo" style="font-style:italic;">thormang3_simple_demo</a>
+              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_simple_demo" style="font-style:italic;" onclick="extendnav()">thormang3_simple_demo</a>
             </li>
           
           </ul>
@@ -3922,7 +3972,7 @@ $(function() {
             
 
             <li>
-              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#humanoid_navigation" style="font-style:italic;">humanoid_navigation</a>
+              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#humanoid_navigation" style="font-style:italic;" onclick="extendnav()">humanoid_navigation</a>
             </li>
           
             
@@ -3930,7 +3980,7 @@ $(function() {
             
 
             <li>
-              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_demo" style="font-style:italic;">thormang3_demo</a>
+              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_demo" style="font-style:italic;" onclick="extendnav()">thormang3_demo</a>
             </li>
           
             
@@ -3938,7 +3988,7 @@ $(function() {
             
 
             <li>
-              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_action_script_player" style="font-style:italic;">thormang3_action_script_player</a>
+              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_action_script_player" style="font-style:italic;" onclick="extendnav()">thormang3_action_script_player</a>
             </li>
           
             
@@ -3946,7 +3996,7 @@ $(function() {
             
 
             <li>
-              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_foot_step_generator" style="font-style:italic;">thormang3_foot_step_generator</a>
+              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_foot_step_generator" style="font-style:italic;" onclick="extendnav()">thormang3_foot_step_generator</a>
             </li>
           
             
@@ -3954,7 +4004,7 @@ $(function() {
             
 
             <li>
-              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_offset_tuner_client" style="font-style:italic;">thormang3_offset_tuner_client</a>
+              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_offset_tuner_client" style="font-style:italic;" onclick="extendnav()">thormang3_offset_tuner_client</a>
             </li>
           
           </ul>
@@ -3981,7 +4031,7 @@ $(function() {
             
 
             <li>
-              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_description" style="font-style:italic;">thormang3_description</a>
+              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_description" style="font-style:italic;" onclick="extendnav()">thormang3_description</a>
             </li>
           
             
@@ -3989,7 +4039,7 @@ $(function() {
             
 
             <li>
-              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_gazebo" style="font-style:italic;">thormang3_gazebo</a>
+              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_gazebo" style="font-style:italic;" onclick="extendnav()">thormang3_gazebo</a>
             </li>
           
           </ul>
@@ -4016,7 +4066,7 @@ $(function() {
             
 
             <li>
-              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_offset_tuner_server" style="font-style:italic;">thormang3_offset_tuner_server</a>
+              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_offset_tuner_server" style="font-style:italic;" onclick="extendnav()">thormang3_offset_tuner_server</a>
             </li>
           
             
@@ -4024,7 +4074,7 @@ $(function() {
             
 
             <li>
-              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_action_editor" style="font-style:italic;">thormang3_action_editor</a>
+              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_action_editor" style="font-style:italic;" onclick="extendnav()">thormang3_action_editor</a>
             </li>
           
           </ul>
@@ -4051,7 +4101,7 @@ $(function() {
             
 
             <li>
-              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_action_module_msgs" style="font-style:italic;">thormang3_action_module_msgs</a>
+              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_action_module_msgs" style="font-style:italic;" onclick="extendnav()">thormang3_action_module_msgs</a>
             </li>
           
             
@@ -4059,7 +4109,7 @@ $(function() {
             
 
             <li>
-              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_feet_ft_module_msgs" style="font-style:italic;">thormang3_fee_ft_module_msgs</a>
+              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_feet_ft_module_msgs" style="font-style:italic;" onclick="extendnav()">thormang3_fee_ft_module_msgs</a>
             </li>
           
             
@@ -4067,7 +4117,7 @@ $(function() {
             
 
             <li>
-              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_manipulation_module_msgs" style="font-style:italic;">thormang3_manipulation_module_msgs</a>
+              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_manipulation_module_msgs" style="font-style:italic;" onclick="extendnav()">thormang3_manipulation_module_msgs</a>
             </li>
           
             
@@ -4075,7 +4125,7 @@ $(function() {
             
 
             <li>
-              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_walking_module_msgs" style="font-style:italic;">thormang3_walking_module_msgs</a>
+              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_walking_module_msgs" style="font-style:italic;" onclick="extendnav()">thormang3_walking_module_msgs</a>
             </li>
           
             
@@ -4083,7 +4133,7 @@ $(function() {
             
 
             <li>
-              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_head_control_module_msgs" style="font-style:italic;">thormang3_head_control_module_msgs</a>
+              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_head_control_module_msgs" style="font-style:italic;" onclick="extendnav()">thormang3_head_control_module_msgs</a>
             </li>
           
             
@@ -4091,7 +4141,7 @@ $(function() {
             
 
             <li>
-              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_offset_tuner_msgs" style="font-style:italic;">thormang3_offset_tuner_msgs</a>
+              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_offset_tuner_msgs" style="font-style:italic;" onclick="extendnav()">thormang3_offset_tuner_msgs</a>
             </li>
           
           </ul>
@@ -4123,7 +4173,7 @@ $(function() {
         
 
         
-        <li><a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#preparation">Preparation</a></li>
+        <li><a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#preparation" onclick="extendnav()">Preparation</a></li>
         
 
         
@@ -4134,7 +4184,7 @@ $(function() {
         
 
         
-        <li><a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#simple-demo">Simple Demo</a></li>
+        <li><a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#simple-demo" onclick="extendnav()">Simple Demo</a></li>
         
 
         
@@ -4158,7 +4208,7 @@ $(function() {
             
 
             <li>
-              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#what-is-opc" style="font-style:italic;">What is OPC</a>
+              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#what-is-opc" style="font-style:italic;" onclick="extendnav()">What is OPC</a>
             </li>
           
             
@@ -4166,7 +4216,7 @@ $(function() {
             
 
             <li>
-              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#visualized-monitoring" style="font-style:italic;">Visualized Monitoring</a>
+              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#visualized-monitoring" style="font-style:italic;" onclick="extendnav()">Visualized Monitoring</a>
             </li>
           
             
@@ -4174,7 +4224,7 @@ $(function() {
             
 
             <li>
-              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#remote-controlgui-demo" style="font-style:italic;">Remote Control(GUI Demo)</a>
+              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#remote-controlgui-demo" style="font-style:italic;" onclick="extendnav()">Remote Control(GUI Demo)</a>
             </li>
           
             
@@ -4182,7 +4232,7 @@ $(function() {
             
 
             <li>
-              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#calibrate-ft-sensors" style="font-style:italic;">Calibrate FT Sensors</a>
+              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#calibrate-ft-sensors" style="font-style:italic;" onclick="extendnav()">Calibrate FT Sensors</a>
             </li>
           
             
@@ -4190,7 +4240,7 @@ $(function() {
             
 
             <li>
-              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#operate-head-module" style="font-style:italic;">Operate Head Module</a>
+              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#operate-head-module" style="font-style:italic;" onclick="extendnav()">Operate Head Module</a>
             </li>
           
             
@@ -4198,7 +4248,7 @@ $(function() {
             
 
             <li>
-              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#operate-manipulation-module" style="font-style:italic;">Operate Manipulation Module</a>
+              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#operate-manipulation-module" style="font-style:italic;" onclick="extendnav()">Operate Manipulation Module</a>
             </li>
           
             
@@ -4206,7 +4256,7 @@ $(function() {
             
 
             <li>
-              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#operate-walking-module" style="font-style:italic;">Operate Walking Module</a>
+              <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#operate-walking-module" style="font-style:italic;" onclick="extendnav()">Operate Walking Module</a>
             </li>
           
           </ul>
@@ -4220,7 +4270,7 @@ $(function() {
         
 
         
-        <li><a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#offset-tuner">Offset Tuner</a></li>
+        <li><a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#offset-tuner" onclick="extendnav()">Offset Tuner</a></li>
         
 
         
@@ -4249,7 +4299,7 @@ $(function() {
         
 
         
-        <li><a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#install-gazebo">Install Gazebo</a></li>
+        <li><a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#install-gazebo" onclick="extendnav()">Install Gazebo</a></li>
         
 
         
@@ -4260,7 +4310,7 @@ $(function() {
         
 
         
-        <li><a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#run-simulation">Run Simulation</a></li>
+        <li><a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#run-simulation" onclick="extendnav()">Run Simulation</a></li>
         
 
         
@@ -4289,7 +4339,7 @@ $(function() {
         
 
         
-        <li><a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#router-setting">Router Setting</a></li>
+        <li><a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#router-setting" onclick="extendnav()">Router Setting</a></li>
         
 
         
@@ -4300,7 +4350,7 @@ $(function() {
         
 
         
-        <li><a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#lidar-ip-setting">LiDAR IP Setting</a></li>
+        <li><a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#lidar-ip-setting" onclick="extendnav()">LiDAR IP Setting</a></li>
         
 
         
@@ -4311,7 +4361,7 @@ $(function() {
         
 
         
-        <li><a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#system-block-diagram">System Block Diagram</a></li>
+        <li><a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#system-block-diagram" onclick="extendnav()">System Block Diagram</a></li>
         
 
         
@@ -4322,7 +4372,7 @@ $(function() {
         
 
         
-        <li><a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#technical-specifications">Technical Specifications</a></li>
+        <li><a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#technical-specifications" onclick="extendnav()">Technical Specifications</a></li>
         
 
         
@@ -4333,7 +4383,7 @@ $(function() {
         
 
         
-        <li><a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#id-map">ID Map</a></li>
+        <li><a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#id-map" onclick="extendnav()">ID Map</a></li>
         
 
         
@@ -4344,7 +4394,7 @@ $(function() {
         
 
         
-        <li><a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#physical-properties">Physical Properties</a></li>
+        <li><a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#physical-properties" onclick="extendnav()">Physical Properties</a></li>
         
 
         
@@ -4357,6 +4407,7 @@ $(function() {
     
   
   </ul>
+  <a href="#" style="font-size:$type-size-6; color: #2174b6; text-decoration: none; font-weight: bold;" onclick="extendnav()">Back to Top &#9650;</a>
 </nav>
 
     
@@ -4364,7 +4415,7 @@ $(function() {
   </div>
 
 
-
+  <button class="nav_button" id="nav_button" onclick="extendnav()">Nav</button>
   <div class="archive" id="archive">
     <a href="/blob/master/docs/en/platform/thormang3/thormang3_ros_packages.md" itemprop="sameAs" style="font-size:16px; float:right; margin: 10px 20px; text-decoration: none;">
       <i class="fa fa-fw fa-github" aria-hidden="true"></i> Edit on GitHub

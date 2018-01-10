@@ -28,13 +28,14 @@
 @import "robotis/masthead";
 @import "robotis/navigation";
 @import "robotis/footer";
-//@import "minimal-mistakes/syntax";
+@import "minimal-mistakes/syntax";
 
 /* Utility classes */
 //@import "minimal-mistakes/utilities";
+@import "robotis/googletools";
 
 /* Layout specific */
 @import "robotis/page";
 @import "robotis/archive";
-@import "robotis/sidebar";
+// @import "robotis/sidebar";
 //@import "minimal-mistakes/print";

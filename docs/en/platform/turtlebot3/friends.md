@@ -80,7 +80,7 @@ E-Mail : ost@robotis.com
 * Software: https://github.com/ROBOTIS-GIT/open_manipulator (We are preparing for OpenCR Example)
 * Video:
 
-[openmanipulator-wiki]: https://github.com/ROBOTIS-GIT/open_manipulator/wiki/OpenManipulator-Chain
+- [Openmanipulator e-Manual](/docs/en/platform/openmanipulator/openmanipulator/)
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/Qhvk5cnX2hM" frameborder="0" allowfullscreen></iframe>
 

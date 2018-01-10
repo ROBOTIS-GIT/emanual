@@ -19,9 +19,9 @@ Read this guide thouroughly before getting with THORMANG.
  
 ![](/assets/images/platform/thormang3/thormang3.png)
 
-[THORMANG3 User Guide Wiki](https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/THORMANG3%20User%27s%20Guide)
-- `Download ZIP` [thormang3_stp.zip](http://support.robotis.com/en/baggage_files/thormang3/thormang3_stp.zip)
-- `Download ZIP` [sim_for_thormang3_stl.zip](http://support.robotis.com/en/baggage_files/thormang3/sim_for_thormang3_stl.zip)
+- THORMANG3 3D files
+  - `Download ZIP` [thormang3_stp.zip](http://support.robotis.com/en/baggage_files/thormang3/thormang3_stp.zip)
+  - `Download ZIP` [sim_for_thormang3_stl.zip](http://support.robotis.com/en/baggage_files/thormang3/sim_for_thormang3_stl.zip)
 
 ## [What is THORMANG3?](#what-is-thormang3)
 
