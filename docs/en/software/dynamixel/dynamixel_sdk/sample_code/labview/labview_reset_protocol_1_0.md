@@ -35,8 +35,8 @@ sidebar:
 
 - Control Panel
 
-![](https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/DynamixelSDK/4.SDKExample/4.7%20LabVIEW/factory_reset1/factory_reset1.png)
+![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/labview/windows/sample_code/factory_reset1/factory_reset1.png)
 
 - Block Diagram
 
-![](https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/DynamixelSDK/4.SDKExample/4.7%20LabVIEW/factory_reset1/block_diagram.png)
+![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/labview/windows/sample_code/factory_reset1/block_diagram.png)
