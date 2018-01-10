@@ -183,7 +183,7 @@ main:
       url: /platform/turtlebot3/overview/
     - title: "OpenManipulator"
       titlekr: "오픈매니퓰레이터"
-      url: /platform/openmanipulator/openmanipulator/
+      url: /platform/openmanipulator/
   - title: "STEAM"
     titlekr: "교육키트"
     titlejp: "トレーニングキット"
@@ -5922,42 +5922,42 @@ turtlebot3:
 #OpenManipulator
 open_manipulator:
   - title: "Introduction"
-    url: /platform/openmanipulator/openmanipulator/#introduction
+    url: /platform/openmanipulator/#introduction
   - title: "OpenManipulator Chain"
-    url: /platform/openmanipulator/openmanipulator/#openmanipulator-chain
+    url: /platform/openmanipulator/#openmanipulator-chain
     children:
     - title: "Specification"
-      url: /platform/openmanipulator/openmanipulator/#specification-of-chain
+      url: /platform/openmanipulator/#specification-of-chain
     - title: "Hardware Setup"
-      url: /platform/openmanipulator/openmanipulator/#hardware-setup-of-chain
+      url: /platform/openmanipulator/#hardware-setup-of-chain
     - title: "Software Setup"
-      url: /platform/openmanipulator/openmanipulator/#software-setup-of-chain
+      url: /platform/openmanipulator/#software-setup-of-chain
   - title: "OpenManipulator SCARA"
-    url: /platform/openmanipulator/openmanipulator/#openmanipulator-scara
+    url: /platform/openmanipulator/#openmanipulator-scara
     children:
     - title: "Specification"
-      url: /platform/openmanipulator/openmanipulator/#specification-of-scara
+      url: /platform/openmanipulator/#specification-of-scara
     - title: "Hardware Setup"
-      url: /platform/openmanipulator/openmanipulator/#hardware-setup-of-scara
+      url: /platform/openmanipulator/#hardware-setup-of-scara
     - title: "Software Setup"
-      url: /platform/openmanipulator/openmanipulator/#software-setup-of-scara
+      url: /platform/openmanipulator/#software-setup-of-scara
   - title: "OpenManipulator Link"
-    url: /platform/openmanipulator/openmanipulator/#openmanipulator-link
+    url: /platform/openmanipulator/#openmanipulator-link
     children:
     - title: "Specification"
-      url: /platform/openmanipulator/openmanipulator/#specification-of-link
+      url: /platform/openmanipulator/#specification-of-link
     - title: "Hardware Setup"
-      url: /platform/openmanipulator/openmanipulator/#hardware-setup-of-link
+      url: /platform/openmanipulator/#hardware-setup-of-link
     - title: "Software Setup"
-      url: /platform/openmanipulator/openmanipulator/#software-setup-of-link
+      url: /platform/openmanipulator/#software-setup-of-link
   - title: "OpenManipulator Planar"
-    url: /platform/openmanipulator/openmanipulator/#openmanipulator-planar
+    url: /platform/openmanipulator/#openmanipulator-planar
   - title: "OpenManipulator Delta"
-    url: /platform/openmanipulator/openmanipulator/#openmanipulator-delta
+    url: /platform/openmanipulator/#openmanipulator-delta
   - title: "OpenManipulator Stewart"
-    url: /platform/openmanipulator/openmanipulator/#openmanipulator-stewart
+    url: /platform/openmanipulator/#openmanipulator-stewart
   - title: "OpenManipulator Linear"
-    url: /platform/openmanipulator/openmanipulator/#openmanipulator-linear
+    url: /platform/openmanipulator/#openmanipulator-linear
 
 #Manipulator-H
 manipulator_h:
