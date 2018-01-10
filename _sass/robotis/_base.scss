@@ -161,7 +161,7 @@ h1, h2, h3, h4, h5, h6 {
       margin: 0.5em 0.5em 0 3.3em;
     }
     table {
-      margin: 0.5em 0.5em 0 4.3em;
+      margin: 0.5em 0.5em 0 6em;
     }
     ul, ol {
       margin: 0.5em 0.5em 0 3.3em;
@@ -235,13 +235,13 @@ h1, h2, h3, h4, h5, h6 {
   + div {
     p, div {
       word-wrap: break-word;
-      margin: 0.5em 0.5em 0 6em;
+      margin: 0.5em 0.5em 0 5em;
     }
     table {
-      margin: 0.5em 0.5em 0 7em;
+      margin: 0.5em 0.5em 0 8em;
     }
     ul, ol {
-      margin: 0.5em 0.5em 0 6em;
+      margin: 0.5em 0.5em 0 5em;
       @include indentation;
       blockquote {
         margin: 0.5em 0;
