@@ -11,10 +11,15 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
-<div style="counter-reset: h2 14"></div>
 <div style="counter-reset: h1 3"></div>
+<div style="counter-reset: h2 1"></div>
+<div style="counter-reset: h3 8"></div>
 
-## [C Reset Protocol 2.0](#c-reset-protocol-20)
+# [Sample Code](#sample-code)
+
+## [C Protocol 2.0](#c-protocol-20)
+
+### [C Reset Protocol 2.0](#c-reset-protocol-20)
 
 - Description
 

@@ -14,6 +14,8 @@ sidebar:
 <div style="counter-reset: h2 10"></div>
 <div style="counter-reset: h1 2"></div>
 
+# [Library Setup](#library-setup)
+
 ## [Java Windows](#java-windows)
 
 ### [Compiler and Builder](#compiler-and-builder)
@@ -160,4 +162,3 @@ Each released Dynamixel SDK have latest library files in `[DynamixelSDK folder]/
 * Click `Run` in the Eclipse toolbox above. Console window will show the results
 
 ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/java/windows/sample_code/21.png)
-

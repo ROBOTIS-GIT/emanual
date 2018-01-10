@@ -11,11 +11,11 @@ sidebar:
   nav: "cm-5"
 ---
 
-# CM-5
-
 # [Introduction](#introduction)
 
 ![](/assets/images/parts/controller/cm-5/cm-5_product.jpg)
+
+> CM-5
 
 `Note` CM-5 is discontinued.
 {: .notice}

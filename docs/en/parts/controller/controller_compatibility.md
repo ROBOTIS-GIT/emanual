@@ -1,13 +1,15 @@
 ---
-layout: splash
+layout: archive
 lang: en
 ref: controller_compatibility
+read_time: true
 share: true
 author_profile: false
 permalink: /docs/en/parts/controller/controller_compatibility/
+sidebar:
+  title: Controller compatibility
+  nav: "controller_compatibility"
 ---
-
-# Controller Compatibility
 
 # Supported Baudrates for Dynamixel
 

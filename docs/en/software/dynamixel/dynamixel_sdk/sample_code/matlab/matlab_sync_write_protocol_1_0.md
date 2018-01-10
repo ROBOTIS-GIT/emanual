@@ -11,10 +11,15 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
-<div style="counter-reset: h2 84"></div>
 <div style="counter-reset: h1 3"></div>
+<div style="counter-reset: h2 17"></div>
+<div style="counter-reset: h3 2"></div>
 
-## [Matlab Sync Write Protocol 1.0](#matlab-sync-write-protocol-10)
+# [Sample Code](#sample-code)
+
+## [MATLAB Protocol 1.0](#matlab-protocol-10)
+
+### [Matlab Sync Write Protocol 1.0](#matlab-sync-write-protocol-10)
 
 - Description
 

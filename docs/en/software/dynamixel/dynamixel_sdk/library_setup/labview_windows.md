@@ -14,6 +14,8 @@ sidebar:
 <div style="counter-reset: h2 15"></div>
 <div style="counter-reset: h1 2"></div>
 
+# [Library Setup](#library-setup)
+
 ## [LabVIEW Windows](#labview-windows)
 
 ### [Compiler and Builder](#compiler-and-builder)

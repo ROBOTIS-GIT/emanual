@@ -11,11 +11,11 @@ sidebar:
   nav: "zig2serial"
 ---
 
-# ZIG2Serial
-
 # [Introduction](#introduction)
 
 ![](/assets/images/parts/communication/zig2serial_product.png)
+
+> ZIG2Serial
 
 - Chaning the ID of ZIG-100 : the ID can be changed through [RoboPlus Manager].
 - Serial communication with Bioloid through Zigbee communcation in PC

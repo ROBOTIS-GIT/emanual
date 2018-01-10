@@ -11,9 +11,9 @@ sidebar:
   nav: "irss-10"
 ---
 
-# IR Sensor(IRSS-10)
-
 ![](/assets/images/parts/sensors/ir.jpg)
+
+> IR Sensor(IRSS-10)
 
 # [Introduction](#introduction)
 

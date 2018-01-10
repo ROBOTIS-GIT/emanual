@@ -1,5 +1,3 @@
----
----
 {
   {% assign pages=site.html_pages | sort: 'permalink' %}
   {% for page in pages %}

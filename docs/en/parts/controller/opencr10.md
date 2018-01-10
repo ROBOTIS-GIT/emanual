@@ -316,8 +316,8 @@ The PC program Downloader communicates with the boot loader and downloads the fi
 $ opencr_ld <Communication port> <Baudrate> <Firmware binary> <Firmware execution status [0|1]>
 ```
 
-- Communication port: The serial port name is usually / dev / ttyACM0 for Linux, and it should be the same as the serial port connected to OpenCR.
-- Baudrate : The speed to communicate and input at 115200bps.
+- Communication port: The serial port name is usually `/dev/ttyACM0` for Linux, and it should be the same as the serial port connected to OpenCR.
+- Baudrate : The speed to communicate and input at 115,200bps.
 - Firmware binary : The firmware binary image has an extension of bin.
 - Firmware execution status : In case of 1, the firmware will be executed after downloading the firmware. If it is not input or if it is 0, only downloading the firmware is performed.
 

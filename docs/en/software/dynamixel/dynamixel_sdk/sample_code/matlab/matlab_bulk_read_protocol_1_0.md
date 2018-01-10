@@ -11,10 +11,15 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
-<div style="counter-reset: h2 85"></div>
 <div style="counter-reset: h1 3"></div>
+<div style="counter-reset: h2 17"></div>
+<div style="counter-reset: h3 3"></div>
 
-## [Matlab Bulk Read Protocol 1.0](#matlab-bulk-read-protocol-10)
+# [Sample Code](#sample-code)
+
+## [MATLAB Protocol 1.0](#matlab-protocol-10)
+
+### [Matlab Bulk Read Protocol 1.0](#matlab-bulk-read-protocol-10)
 
 - Description
 

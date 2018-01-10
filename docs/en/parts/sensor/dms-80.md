@@ -11,9 +11,9 @@ sidebar:
   nav: "dms-80"
 ---
 
-# Distance Sensor(DMS-80)
-
 ![](/assets/images/parts/sensors/dms-80_product.jpg)
+
+> Distance Sensor(DMS-80)
 
 # [Introduction](#introduction)
 

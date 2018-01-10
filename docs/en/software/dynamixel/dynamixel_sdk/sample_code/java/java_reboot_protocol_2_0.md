@@ -11,10 +11,15 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
-<div style="counter-reset: h2 79"></div>
 <div style="counter-reset: h1 3"></div>
+<div style="counter-reset: h2 15"></div>
+<div style="counter-reset: h3 7"></div>
 
-## [Java Reboot Protocol 2.0](#java-reboot-protocol-20)
+# [Sample Code](#sample-code)
+
+## [Java Protocol 2.0](#python-protocol-20)
+
+### [Java Reboot Protocol 2.0](#java-reboot-protocol-20)
 
 - Description
 

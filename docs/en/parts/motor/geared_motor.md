@@ -11,9 +11,9 @@ sidebar:
   nav: "gm-10a"
 ---
 
-# Geared Motor(GM-10A)
-
 ![](/assets/images/parts/motor/gm-10_product.jpg)
+
+> Geared Motor(GM-10A)
 
 # [Introduction](#introduction)
 

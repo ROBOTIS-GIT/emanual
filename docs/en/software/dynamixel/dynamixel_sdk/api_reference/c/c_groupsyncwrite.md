@@ -11,9 +11,12 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
+<div style="counter-reset: h1 4"></div>
 <div style="counter-reset: h3 7"></div>
-<div style="counter-reset: h2 1"></div>
-<div style="counter-reset: h1 5"></div>
+
+# [API Reference](#api-reference)
+
+## [C](#c)
 
 ### [C GroupSyncWrite](#c-groupsyncwrite)
 
@@ -28,14 +31,14 @@ sidebar:
 
 - Methods
 
-| | |
-| ------------- | ------------- |
-|**[groupSyncWrite](#groupsyncwrite)**	|Initializes members of packet data pointer struct|
-|**[groupSyncWriteAddParam](#groupsyncwrite_addparam)**	|Adds parameter storage for read |
-|**[groupSyncWriteRemoveParam](#groupsyncwrite_removeparam)**	|Removes parameter on the storage |
-|**[groupSyncWriteChangeParam](#groupsyncwrite_changeparam)**	|Changes parameter on the storage |
-|**[groupSyncWriteClearParam](#groupsyncwrite_clearparam)**	|Clears parameter storage|
-|**[groupSyncWriteTxPacket](#groupsyncwrite_txpacket)**	|Transmits packet to the number of Dynamixels|
+|                                                              |                                                   |
+|:-------------------------------------------------------------|:--------------------------------------------------|
+| **[groupSyncWrite](#groupsyncwrite)**                        | Initializes members of packet data pointer struct |
+| **[groupSyncWriteAddParam](#groupsyncwrite_addparam)**       | Adds parameter storage for read                   |
+| **[groupSyncWriteRemoveParam](#groupsyncwrite_removeparam)** | Removes parameter on the storage                  |
+| **[groupSyncWriteChangeParam](#groupsyncwrite_changeparam)** | Changes parameter on the storage                  |
+| **[groupSyncWriteClearParam](#groupsyncwrite_clearparam)**   | Clears parameter storage                          |
+| **[groupSyncWriteTxPacket](#groupsyncwrite_txpacket)**       | Transmits packet to the number of Dynamixels      |
 
 
 
@@ -52,12 +55,12 @@ int groupSyncWrite(int port_num, int protocol_version, uint16_t start_address, u
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-| port_num | Port number |
-| protocol_version | Protocol version |
-|start_address	| Control table address to start writing data|
-|data_length	| Total data length |
+|                  |                                             |
+|:-----------------|:--------------------------------------------|
+| port_num         | Port number                                 |
+| protocol_version | Protocol version                            |
+| start_address    | Control table address to start writing data |
+| data_length      | Total data length                           |
 
 - Detailed Description
 
@@ -71,12 +74,12 @@ uint8_t groupSyncWriteAddParam(int group_num, uint8_t id, uint32_t data, uint16_
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-| group_num | Group number |
-|id	|Dynamixel ID|
-|data	|Data for write|
-|input_length	| Input data length|
+|              |                   |
+|:-------------|:------------------|
+| group_num    | Group number      |
+| id           | Dynamixel ID      |
+| data         | Data for write    |
+| input_length | Input data length |
 
 - Detailed Description
 
@@ -90,10 +93,10 @@ void groupSyncWriteRemoveParam(int group_num, uint8_t id)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
+|           |              |
+|:----------|:-------------|
 | group_num | Group number |
-|id|	Dynamixel ID|
+| id        | Dynamixel ID |
 
 - Detailed Description
 
@@ -107,13 +110,13 @@ uint8_t groupSyncWriteChangeParam(int group_num, uint8_t id, uint32_t data, uint
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-| group_num | Group number |
-|id	|Dynamixel ID|
-|data	|Data for write|
-|input_length	| Input data length|
-|data_pos | Data position in the array |
+|              |                            |
+|:-------------|:---------------------------|
+| group_num    | Group number               |
+| id           | Dynamixel ID               |
+| data         | Data for write             |
+| input_length | Input data length          |
+| data_pos     | Data position in the array |
 
 - Detailed Description
 
@@ -141,8 +144,8 @@ void groupSyncWriteTxPacket(int group_num)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
+|           |              |
+|:----------|:-------------|
 | group_num | Group number |
 
 - Detailed Description

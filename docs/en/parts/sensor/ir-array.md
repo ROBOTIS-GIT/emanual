@@ -11,11 +11,11 @@ sidebar:
   nav: "ir-array"
 ---
 
-# IR Sensor Array
-
 ![](/assets/images/parts/sensors/ir-array_product_01.jpg)
 
 ![](/assets/images/parts/sensors/ir-array_product_02.jpg)
+
+> IR Sensor Array
 
 # [Introduction](#introduction)
 

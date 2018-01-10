@@ -11,9 +11,12 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
+<div style="counter-reset: h1 4"></div>
 <div style="counter-reset: h3 8"></div>
-<div style="counter-reset: h2 1"></div>
-<div style="counter-reset: h1 5"></div>
+
+# [API Reference](#api-reference)
+
+## [C](#c)
 
 ### [C GroupSyncRead](#c-groupsyncread)
 

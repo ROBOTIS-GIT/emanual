@@ -11,10 +11,15 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
-<div style="counter-reset: h2 26"></div>
 <div style="counter-reset: h1 3"></div>
+<div style="counter-reset: h2 5"></div>
+<div style="counter-reset: h3 3"></div>
 
-## [CPP Bulk Read Write Protocol 2.0](#cpp-bulk-read-write-protocol-20)
+# [Sample Code](#sample-code)
+
+## [CPP Protocol 2.0](#cpp-protocol-20)
+
+### [CPP Bulk Read Write Protocol 2.0](#cpp-bulk-read-write-protocol-20)
 
 - Description
 

@@ -11,10 +11,15 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
-<div style="counter-reset: h2 94"></div>
 <div style="counter-reset: h1 3"></div>
+<div style="counter-reset: h2 18"></div>
+<div style="counter-reset: h3 6"></div>
 
-## [Matlab Broadcast Ping Protocol 2.0](#matlab-broadcast-ping-protocol-20)
+# [Sample Code](#sample-code)
+
+## [MATLAB Protocol 2.0](#matlab-protocol-20)
+
+### [Matlab Broadcast Ping Protocol 2.0](#matlab-broadcast-ping-protocol-20)
 
 - Description
 

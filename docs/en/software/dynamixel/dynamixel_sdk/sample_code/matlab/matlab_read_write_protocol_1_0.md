@@ -11,10 +11,14 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
-<div style="counter-reset: h2 82"></div>
 <div style="counter-reset: h1 3"></div>
+<div style="counter-reset: h2 17"></div>
 
-## [Matlab Read Write Protocol 1.0](#matlab-read-write-protocol-10)
+# [Sample Code](#sample-code)
+
+## [MATLAB Protocol 1.0](#matlab-protocol-10)
+
+### [Matlab Read Write Protocol 1.0](#matlab-read-write-protocol-10)
 
 - Description
 

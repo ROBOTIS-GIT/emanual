@@ -11,10 +11,15 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
-<div style="counter-reset: h2 60"></div>
 <div style="counter-reset: h1 3"></div>
+<div style="counter-reset: h2 12"></div>
+<div style="counter-reset: h3 4"></div>
 
-## [Python Indirect Address Protocol 2.0](#python-indirect-address-protocol-20)
+# [Sample Code](#sample-code)
+
+## [Python Protocol 2.0](#python-protocol-20)
+
+### [Python Indirect Address Protocol 2.0](#python-indirect-address-protocol-20)
 
 - Description
 

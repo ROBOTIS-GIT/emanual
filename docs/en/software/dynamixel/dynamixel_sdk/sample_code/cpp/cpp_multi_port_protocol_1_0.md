@@ -11,10 +11,15 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
-<div style="counter-reset: h2 18"></div>
 <div style="counter-reset: h1 3"></div>
+<div style="counter-reset: h2 4"></div>
+<div style="counter-reset: h3 1"></div>
 
-## [CPP Multi Port Protocol 1.0](#cpp-multi-port-protocol-10)
+# [Sample Code](#sample-code)
+
+## [CPP Protocol 1.0](#cpp-protocol-10)
+
+### [CPP Multi Port Protocol 1.0](#cpp-multi-port-protocol-10)
 
 - Description
 

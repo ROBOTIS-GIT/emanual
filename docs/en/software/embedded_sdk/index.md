@@ -1,23 +1,21 @@
 ---
-layout: splash
+layout: archive
 lang: en
-ref: sdk_index
+ref: embedded_sdk
+read_time: true
+share: true
+author_profile: false
 permalink: /docs/en/software/embedded_sdk/
-header:
-  overlay_color:
-  overlay_image:
-  cta_label:
-  cta_url:
-  caption:
-  intro:
-    - excerpt: 'ROBOTIS SDK'
+sidebar:
+  title: Embedded SDK
+  nav: "embedded_sdk"
 ---
 
 - [Controller Embedded C]
 - [Dynamixel SDK]
 - [ZIGBEE SDK]
 
-# Dynamixel SDK
+# [Dynamixel SDK](#dynamixel-sdk)
 
 |Protocol 1.0|Protocol 2.0|ROS|Windows|Linux|OS X|LabVIEW|MATLAB|VB|C#|C++|Java|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -25,7 +23,7 @@ header:
 
 - [Download Dynamixel SDK](https://github.com/ROBOTIS-GIT/DynamixelSDK/releases)
 
-# ROBOTIS Manipulator SDK
+# [ROBOTIS Manipulator SDK](#robotis-manipulator-sdk)
 
 |Protocol 1.0|Protocol 2.0|ROS|Windows|Linux|LabVIEW|MATLAB|VB|C#|C++|Java|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -33,7 +31,7 @@ header:
 
 - [Download ROBOTIS Manipulator SDK](http://en.robotis.com/BlueAD/board.php?bbs_id=downloads&mode=view&bbs_no=1152543&page=1&key=&keyword=&sort=&scate=SOFTWARE)
 
-# Controller SDK
+# [Controller SDK](#controller-sdk)
 
 |Controllers|Protocol 1.0|Protocol 2.0|ROS|Windows|Linux|LabVIEW|MATLAB|VB|C#|C++|Java|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -44,7 +42,7 @@ header:
 - [Download CM-530 SDK]
 - [Download CM-700 SDK]
 
-# Wireless Control SDK
+# [Wireless Control SDK](#wireless-control-sdk)
 
 |SDK|Protocol 1.0|Protocol 2.0|ROS|Windows|Linux|LabVIEW|MATLAB|VB|C#|C++|Java|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|

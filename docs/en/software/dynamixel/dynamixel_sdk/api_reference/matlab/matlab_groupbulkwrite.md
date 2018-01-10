@@ -11,9 +11,13 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
+<div style="counter-reset: h1 4"></div>
+<div style="counter-reset: h2 5"></div>
 <div style="counter-reset: h3 4"></div>
-<div style="counter-reset: h2 6"></div>
-<div style="counter-reset: h1 5"></div>
+
+# [API Reference](#api-reference)
+
+## [Matlab](#matlab)
 
 ### [Matlab GroupBulkWrite](#matlab-groupbulkwrite)
 
