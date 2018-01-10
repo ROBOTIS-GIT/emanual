@@ -11,10 +11,14 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
-<div style="counter-reset: h2 2"></div>
 <div style="counter-reset: h1 3"></div>
+<div style="counter-reset: h3 2"></div>
 
-## [C Sync Write Protocol 1.0](#c-sync-write-protocol-10)
+# [Sample Code](#sample-code)
+
+## [C Protocol 1.0](#c-protocol-10)
+
+### [C Sync Write Protocol 1.0](#c-sync-write-protocol-10)
 
 * Description
 

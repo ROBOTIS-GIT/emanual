@@ -10,9 +10,9 @@ sidebar:
   nav: "usb2dynamixel"
 ---
 
-# USB2Dynamixel
-
 ![](/assets/images/parts/interface/usb2dynamixel_product.jpg)
+
+> USB2Dynamixel
 
 # [Introduction](#introduction)
 

@@ -11,8 +11,10 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
-<div style="counter-reset: h2 65"></div>
 <div style="counter-reset: h1 3"></div>
+<div style="counter-reset: h2 13"></div>
+
+# [Sample Code](#sample-code)
 
 ## [Python Protocol Combined](#python-protocol-combined)
 

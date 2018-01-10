@@ -11,10 +11,15 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
-<div style="counter-reset: h2 89"></div>
 <div style="counter-reset: h1 3"></div>
+<div style="counter-reset: h2 18"></div>
+<div style="counter-reset: h3 1"></div>
 
-## [Matlab Multi Port Protocol 2.0](#matlab-multi-port-protocol-20)
+# [Sample Code](#sample-code)
+
+## [MATLAB Protocol 2.0](#matlab-protocol-20)
+
+### [Matlab Multi Port Protocol 2.0](#matlab-multi-port-protocol-20)
 
 - Description
 

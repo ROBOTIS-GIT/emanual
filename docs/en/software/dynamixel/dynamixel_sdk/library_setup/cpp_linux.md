@@ -14,6 +14,8 @@ sidebar:
 <div style="counter-reset: h2 4"></div>
 <div style="counter-reset: h1 2"></div>
 
+# [Library Setup](#library-setup)
+
 ## [CPP Linux](#cpp-linux)
 
 ### [Compiler and Builder](#compiler-and-builder)

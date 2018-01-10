@@ -14,8 +14,9 @@ sidebar:
 <div style="counter-reset: h2 14"></div>
 <div style="counter-reset: h1 2"></div>
 
-## [Matlab MacOSX](#matlab-macosx)
+# [Library Setup](#library-setup)
 
+## [Matlab MacOSX](#matlab-macosx)
 
 ### [Compiler and Builder](#compiler-and-builder)
 

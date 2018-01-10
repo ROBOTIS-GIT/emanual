@@ -11,9 +11,9 @@ sidebar:
   nav: "servo_motor"
 ---
 
-# Servo Motor
-
 ![](/assets/images/parts/motor/servo_motor_product.jpg)
+
+> Servo Motor
 
 # [Introduction](#introduction)
 

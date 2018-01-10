@@ -11,9 +11,9 @@ sidebar:
   nav: "ax-s1"
 ---
 
-# Integrated Sensor(AX-S1)
-
 ![](/assets/images/parts/sensors/ax-s1_product.png)
+
+> Integrated Sensor(AX-S1)
 
 # [Introduction](#introduction)
 

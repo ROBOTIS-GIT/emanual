@@ -12,7 +12,9 @@ sidebar:
 ---
 
 <div style="counter-reset: h1 5"></div>
-<div style="counter-reset: h2 2"></div>
+<div style="counter-reset: h2 3"></div>
+
+# [SBC Software Setup](#sbc-software-setup)
 
 ## [Install ROS and Packages (Burger and Waffle)](#install-ros-and-packages-burger-and-waffle)
 

@@ -11,8 +11,10 @@ sidebar:
   nav: "rplustask1"
 ---
 
-<div style="counter-reset: h1 3 h2 2">
+<div style="counter-reset: h1 2 h2 2">
 </div>
+
+# [Programming](#programming)
 
 ## [Controller Parameters](#controller-parameters)
 

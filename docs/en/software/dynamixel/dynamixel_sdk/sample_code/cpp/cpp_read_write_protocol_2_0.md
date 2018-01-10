@@ -11,10 +11,14 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
-<div style="counter-reset: h2 23"></div>
 <div style="counter-reset: h1 3"></div>
+<div style="counter-reset: h2 5"></div>
 
-## [CPP Read Write Protocol 2.0](#cpp-read-write-protocol-10)
+# [Sample Code](#sample-code)
+
+## [CPP Protocol 2.0](#cpp-protocol-20)
+
+### [CPP Read Write Protocol 2.0](#cpp-read-write-protocol-10)
 
 - Description
 

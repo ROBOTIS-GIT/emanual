@@ -11,10 +11,15 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
-<div style="counter-reset: h2 39"></div>
 <div style="counter-reset: h1 3"></div>
+<div style="counter-reset: h2 8"></div>
+<div style="counter-reset: h3 5"></div>
 
-## [CSharp Reset Protocol 1.0](#csharp-reset-protocol-10)
+# [Sample Code](#sample-code)
+
+## [CSharp Protocol 1.0](#csharp-protocol-10)
+
+### [CSharp Reset Protocol 1.0](#csharp-reset-protocol-10)
 
 - Description
 

@@ -7,14 +7,13 @@ share: true
 author_profile: false
 permalink: /docs/en/parts/motor/l_speed_geared_motor/
 sidebar:
-  title: 
-    # Low Speed Geared Motor
+  title: Low Speed Geared Motor
   nav: "l_speed_geared_motor"
 ---
 
-# Low Speed Geared Motor
-
 ![](/assets/images/parts/motor/l_speed_geared_motor_product.jpg)
+
+> Low Speed Geared Motor
 
 # [Introduction](#introduction)
 

@@ -1,21 +1,25 @@
 ---
 layout: archive
 lang: en
-ref: dynamixel_sdk_api_reference_python_groupbulkwrite
+ref: dynamixel_sdk_api_reference_java_groupbulkwrite
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/software/dynamixel/dynamixel_sdk/api_reference/python/python_groupbulkwrite/
+permalink: /docs/en/software/dynamixel/dynamixel_sdk/api_reference/java/java_groupbulkwrite/
 sidebar:
   title: DynamixelSDK
   nav: "dynamixel_sdk"
 ---
 
+<div style="counter-reset: h1 4"></div>
+<div style="counter-reset: h2 4"></div>
 <div style="counter-reset: h3 4"></div>
-<div style="counter-reset: h2 5"></div>
-<div style="counter-reset: h1 5"></div>
 
-### [Python GroupBulkWrite](#python-groupbulkwrite)
+# [API Reference](#api-reference)
+
+## [Java](#java)
+
+### [Java GroupBulkWrite](#java-groupbulkwrite)
 
 - Description
 

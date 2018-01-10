@@ -11,10 +11,15 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
-<div style="counter-reset: h2 47"></div>
 <div style="counter-reset: h1 3"></div>
+<div style="counter-reset: h2 9"></div>
+<div style="counter-reset: h3 7"></div>
 
-## [CSharp Reboot Protocol 2.0](#csharp-reboot-protocol-20)
+# [Sample Code](#sample-code)
+
+## [CSharp Protocol 2.0](#csharp-protocol-20)
+
+### [CSharp Reboot Protocol 2.0](#csharp-reboot-protocol-20)
 
 - Description
 

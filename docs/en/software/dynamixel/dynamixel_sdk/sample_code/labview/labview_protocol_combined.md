@@ -11,8 +11,10 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
-<div style="counter-reset: h2 113"></div>
 <div style="counter-reset: h1 3"></div>
+<div style="counter-reset: h2 22"></div>
+
+# [Sample Code](#sample-code)
 
 ## [LabVIEW Protocol Combined](#labview-protocol-combined)
 

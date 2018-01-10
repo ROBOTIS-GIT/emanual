@@ -11,10 +11,14 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
-<div style="counter-reset: h2 3"></div>
 <div style="counter-reset: h1 3"></div>
+<div style="counter-reset: h3 3"></div>
 
-## [C Bulk Read Protocol 1.0](#c-bulk-read-protocol-10)
+# [Sample Code](#sample-code)
+
+## [C Protocol 1.0](#c-protocol-10)
+
+### [C Bulk Read Protocol 1.0](#c-bulk-read-protocol-10)
 
 * Description
 

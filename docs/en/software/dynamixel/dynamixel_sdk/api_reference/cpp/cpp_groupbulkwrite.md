@@ -11,9 +11,13 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
+<div style="counter-reset: h1 4"></div>
+<div style="counter-reset: h2 1"></div>
 <div style="counter-reset: h3 9"></div>
-<div style="counter-reset: h2 2"></div>
-<div style="counter-reset: h1 5"></div>
+
+# [API Reference](#api-reference)
+
+## [CPP](#cpp)
 
 ### [CPP GroupBulkWrite](#cpp-groupbulkwrite)
 

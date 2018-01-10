@@ -11,9 +11,9 @@ sidebar:
   nav: "opencm904"
 ---
 
-# OpenCM 9.04
-
 ![](/assets/images/parts/controller/opencm904/opencm904_product.png)
+
+> OpenCM 9.04
 
 # [Introduction](#introduction)
 

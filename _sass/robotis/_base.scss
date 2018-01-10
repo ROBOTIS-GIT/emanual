@@ -82,6 +82,9 @@ h1, h2, h3, h4, h5, h6 {
     ul, ol {
       margin: 0.5em 0.5em 0 1em;
       @include indentation;
+      blockquote {
+        margin: 0.5em 0;
+      }
     }
     blockquote {
       word-wrap: break-word;
@@ -121,6 +124,9 @@ h1, h2, h3, h4, h5, h6 {
     ul, ol {
       margin: 0.5em 0.5em 0 2em;
       @include indentation;
+      blockquote {
+        margin: 0.5em 0;
+      }
     }
     blockquote {
       word-wrap: break-word;
@@ -160,6 +166,9 @@ h1, h2, h3, h4, h5, h6 {
     ul, ol {
       margin: 0.5em 0.5em 0 3.3em;
       @include indentation;
+      blockquote {
+        margin: 0.5em 0;
+      }
     }
     blockquote {
       word-wrap: break-word;
@@ -198,6 +207,9 @@ h1, h2, h3, h4, h5, h6 {
     ul, ol {
       margin: 0.5em 0.5em 0 4.5em;
       @include indentation;
+      blockquote {
+        margin: 0.5em 0;
+      }
     }
     blockquote {
       word-wrap: break-word;
@@ -231,6 +243,9 @@ h1, h2, h3, h4, h5, h6 {
     ul, ol {
       margin: 0.5em 0.5em 0 6em;
       @include indentation;
+      blockquote {
+        margin: 0.5em 0;
+      }
     }
     blockquote {
       word-wrap: break-word;
@@ -263,6 +278,9 @@ h1, h2, h3, h4, h5, h6 {
     ul, ol {
       margin: 0.5em 0.5em 0 7em;
       @include indentation;
+      blockquote {
+        margin: 0.5em 0;
+      }
     }
     blockquote {
       word-wrap: break-word;

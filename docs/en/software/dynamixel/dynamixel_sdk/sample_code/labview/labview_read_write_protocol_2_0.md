@@ -11,10 +11,14 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
-<div style="counter-reset: h2 104"></div>
 <div style="counter-reset: h1 3"></div>
+<div style="counter-reset: h2 21"></div>
 
-## [LabVIEW Read Write Protocol 2.0](#labview-read-write-protocol-10)
+# [Sample Code](#sample-code)
+
+## [LabVIEW Protocol 2.0](#labview-protocol-20)
+
+### [LabVIEW Read Write Protocol 2.0](#labview-read-write-protocol-10)
 
 - Description
 

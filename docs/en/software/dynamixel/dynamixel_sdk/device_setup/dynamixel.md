@@ -12,7 +12,9 @@ sidebar:
 ---
 
 <div style="counter-reset: h2 1"></div>
-<div style="counter-reset: h1 2"></div>
+<div style="counter-reset: h1 1"></div>
+
+# [Device Setup](#device-setup)
 
 ## [Dynamixel](#dynamixel)
 

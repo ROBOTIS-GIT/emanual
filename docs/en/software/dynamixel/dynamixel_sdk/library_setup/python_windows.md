@@ -14,6 +14,8 @@ sidebar:
 <div style="counter-reset: h2 7"></div>
 <div style="counter-reset: h1 2"></div>
 
+# [Library Setup](#library-setup)
+
 ## [Python Windows](#python-windows)
 
 ### [Recommended Editor](#recommended-editor)
