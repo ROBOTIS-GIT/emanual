@@ -17,25 +17,21 @@ The attacking patterns of the duck are as follows.
 
 1. Enter the basic value of the motor's moving speed and Call initial behavior.
 
-2. If an object is detected from the left side of the robot, turn the beak left.
-
+2. If an object is detected from the left side of the robot, turn the beak left.  
   If an object is detected by the left distance sensor of AX-S1, the location value (present location  value of the ID[1] joint + 20) is entered as the goal position to turn left.  However, to prevent from turning too much, it is written to move only if the present location value is less than 812.
 
-3. If an object is detected from the right side of the robot, turn the beak right.
-
+3. If an object is detected from the right side of the robot, turn the beak right.  
   If an object is detected by the right distance sensor of AX-S1, the location value (present location value of the ID[1] joint -20) is entered as the goal position to turn right.  However, to prevent from turning too much, it is written to move only if the present location value is greater than 212.
 
 4. Attack if an object is detected at the front
-If an object is detected by the central distance sensor of AX-S1, the robot attacks by calling "Attack with beak."
+  If an object is detected by the central distance sensor of AX-S1, the robot attacks by calling "Attack with beak."
 
-  ![Attacking_Duck-3][img_027]
+    ![Attacking_Duck-3][img_027]
 
-5. Make Initial Behavior
-
+5. Make Initial Behavior  
   Move the beak in the center by inputting proper goal position value(512) into ID[1] joint, and then call "Attack with Beak" once to make initial behavior.
 
-6. Make Attack Behavior
-
+6. Make Attack Behavior  
   Make behaviors such as attack behaviors and raising head (ready behavior) by inputting proper goal position values into ID[2], ID[3] joints, and program "Behavior Wating(7)" function which can stop the behavior control program processing shortly until each behavior is completed.
 
 ### Download Task Code

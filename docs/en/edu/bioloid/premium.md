@@ -514,7 +514,7 @@ Setting priorities to control the gripper and motions separately.
 
 ### Assembly
 
-Please refer to the [Gripper Assembly].
+Please refer to the [Gripper Assembly](#attaching-grippers).
 
 ### Writing Task Code
 
@@ -549,159 +549,6 @@ Please refer to the [Gripper Assembly].
 - Download the task code written in STEP 2 ([How to Download of task code]).
 - While controlling the robot’s motion with the remote controller, check whether the gripper and arm are fixed.
 - Control the gripper with the remote controller.
-
-# [References](#references)
-
-## [Replacing Fuse](#replacing-fuse)
-
-{% include en/parts/controller/fuse_cm510_530.md %}
-
-## [Dynamixel Management](#dynamixel-management)
-
-{% include en/edu/bioloid/dynamixel_management.md %}
-
-{% include en/parts/communication/zigbee_control.md %}
-
-## [Customizing Robot](#customizing-robot)
-
-Use the semi-transparent skins provided only in the Premium Kit to make your humanoid unique.
-
-### Customizing your semi-transparent skins
-
-Samples of customized chest skins
-
-|![](/assets/images/edu/bioloid/premium_skin_01.jpg)|![](/assets/images/edu/bioloid/premium_skin_02.jpg)|
-|:---:|:---:|
-|![](/assets/images/edu/bioloid/premium_skin_03.jpg)|![](/assets/images/edu/bioloid/premium_skin_04.jpg)|
-|![](/assets/images/edu/bioloid/premium_skin_05.jpg)|![](/assets/images/edu/bioloid/premium_skin_06.jpg)|
-
-Samples of customized head skins
-
-![](/assets/images/edu/bioloid/premium_skin_07.jpg)
-
-![](/assets/images/edu/bioloid/premium_skin_08.jpg)
-
-Samples of robots with customized skins
-
-|![](/assets/images/edu/bioloid/premium_skin_09.jpg)|![](/assets/images/edu/bioloid/premium_skin_10.jpg)|![](/assets/images/edu/bioloid/premium_skin_11.jpg)|
-|:---:|:---:|:---:|
-|![](/assets/images/edu/bioloid/premium_skin_12.jpg)|![](/assets/images/edu/bioloid/premium_skin_13.jpg)|![](/assets/images/edu/bioloid/premium_skin_14.jpg)|
-
-## [Adding Sensors](#adding-sensors)
-
-With the Bioloid Premium Kit, you can connect additional [IR Sensor] and [Touch Sensor] to the CM-530.
-For more information on each sensors, please click on the names of the sensors.
-
-### IR Sensor
-
-![](/assets/images/parts/sensors/ir.jpg)
-
-- IR Sensor Applications
-  - The IR sensor can detects objects in front of the robot.
-  - It can also be used to detect object on the side when walking or moving.
-
-[More information](/docs/en/software/rplus1/task/programming_02/#ir-sensor)
-
-### Touch Sensor
-
-![](/assets/images/parts/sensors/touch.jpg)
-
-- Touch Sensor Applications
-  - The touch sensor enables the robot to feel when it has been touched.
-  - For example, the sensor can be used to make the robot react to certain touches.
-
-[More information](/docs/en/software/rplus1/task/programming_02/#touch-sensor)
-
-## [Make Your Own Sensor](#make-your-own-sensor)
-
-You can make your own sensor with simple control functions using the ADC port and OUT port on CM-510/CM-530.
-
-`Caution` Connecting poorly designed circuits may damage the controller. Please be sure to acquire sufficient knowledge about circuits beforehand.
-{: .notice--warning}
-
-### PIN Information
-
-![](/assets/images/parts/controller/cm-530/cm510_external_io.png)
-
-- Below is a pin diagram of CM-510’s external port.
-  1. OUT : 5V Output
-  2. VCC (5V)
-  3. ADC : Can read analog signals made by users.
-  4. GND
-  5. NC : Not used
-
-- Below is a pin diagram of CM-530’s external port.
-  1. OUT1 : 3.3V Output (Maximum Allowed Current 0.3A)
-  2. VCC (5V)
-  3. ADC : Can read analog signals made by users.
-  4. GND
-  5. OUT2 : 3.3V Output (Maximum Allowed Current 0.3A)
-
-`Note` Please use the 5P Cable when using other sensors. The 5P cable can be purchased from ROBOTIS.
-{: .notice}
-
-### Controlling User’s Device
-
-#### External Output Control
-Below is an example of an LED circuit to turn the LED on and off using the OUT port (Pin 1).
-You need to adjust the amound of resistance depending on the type of controller and/or the type of LED.
-
-![](/assets/images/edu/bioloid/premium_led_circuit.png)
-
-A high signal can be sent to the OUT port using RoboPlus Task.
-
-1. Select the user's device in the writable parameter such as LOAD and CALCULATE, then select the port on which the device is connected.
-2. Then, set the high signal to the readable parameter using a constant.
-
-![](/assets/images/edu/bioloid/premium_diy_sensor_01.png)
-
-![](/assets/images/edu/bioloid/premium_diy_sensor_02.png)
-
-When the code above is executed, high signal will be sent to the OUT port of the device connected to PORT 3, and the LED will turn on.
-
-#### Reading the ADC Value
-Most of the sensors used in robots, such as IR sensors and distance sensors, support analog output. The CM-510 can use its external ports to read the sensor’s analog output signals. These sensors may be designed by the user or bought from a store.
-
-- Below is an image of a tilt sensor. When the sensor is tilted, it prints the tilted value as the analog singal.
-
-![](/assets/images/edu/bioloid/premium_diy_sensor_03.png)
-
-- The left pin of the tilt sensor is 5V VCC. The center is an analog signal output pin, and the right pin is GND.  This sensor can be used by connecting its pins to the corresponding pins on CM-510’s external port.  To try for yourself, please refer to the pin information for CM-510’s external ports.
-
-![](/assets/images/edu/bioloid/premium_diy_sensor_04.png)
-
-- You can incorporate the sensor’s analog output to your robot's movements as in the example below.
-
-![](/assets/images/edu/bioloid/premium_diy_sensor_05.png)
-
-## <a name="gripper-assembly"></a>[Gripper Assembly](#gripper-assembly)
-
-- Users can add grippers to humanoid robots to fit their needs.
-- Grippers are useful when holding or throwing things.
-
-### Materials
-
-There are 2 spare AX-12+'s when assembling a humanoid Type B or Type C using the Bioloid Premium Kit.
-You can use these spare parts to make a gripper to your humanoid.
-Below are the parts required to make a gripper.
-
-![](/assets/images/edu/bioloid/premium_gripper_assy_01.png)
-
-### Making a gripper
-
-![](/assets/images/edu/bioloid/premium_gripper_assy_02.jpg)
-
-The image above shows how to make a gripper using frames and an AX-12+. Make two of these if you want to attach a gripper on both hands.
-
-### Attaching Grippers
-
-By making a robot with grippers, you can expand the things you can do with the robot.
-For more information on controlling the gripper robot, please refer to gripper control.
-Below is an image of a Type B humanoid with a grippers.
-AX-12+ #9 was used for the right gripper and AX-12+ #10 was used for the left.
-
-![](/assets/images/edu/bioloid/premium_gripper_assy_03.png)
-
 
 # [Download](#download)
 
@@ -969,6 +816,160 @@ AX-12+ #9 was used for the right gripper and AX-12+ #10 was used for the left.
 [ex_advanced_5-2]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_lizard_en.tsk
 [ex_advanced_5-3]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_lizard_en.mtn
 [ex_advanced_5-4]: http://www.robotis.com/video/BIO_PRM_Lizard.wmv
+
+
+# [References](#references)
+
+## [Replacing Fuse](#replacing-fuse)
+
+{% include en/parts/controller/fuse_cm510_530.md %}
+
+## [Dynamixel Management](#dynamixel-management)
+
+{% include en/edu/bioloid/dynamixel_management.md %}
+
+{% include en/parts/communication/zigbee_control.md %}
+
+## [Customizing Robot](#customizing-robot)
+
+Use the semi-transparent skins provided only in the Premium Kit to make your humanoid unique.
+
+### Customizing your semi-transparent skins
+
+Samples of customized chest skins
+
+|![](/assets/images/edu/bioloid/premium_skin_01.jpg)|![](/assets/images/edu/bioloid/premium_skin_02.jpg)|
+|:---:|:---:|
+|![](/assets/images/edu/bioloid/premium_skin_03.jpg)|![](/assets/images/edu/bioloid/premium_skin_04.jpg)|
+|![](/assets/images/edu/bioloid/premium_skin_05.jpg)|![](/assets/images/edu/bioloid/premium_skin_06.jpg)|
+
+Samples of customized head skins
+
+![](/assets/images/edu/bioloid/premium_skin_07.jpg)
+
+![](/assets/images/edu/bioloid/premium_skin_08.jpg)
+
+Samples of robots with customized skins
+
+|![](/assets/images/edu/bioloid/premium_skin_09.jpg)|![](/assets/images/edu/bioloid/premium_skin_10.jpg)|![](/assets/images/edu/bioloid/premium_skin_11.jpg)|
+|:---:|:---:|:---:|
+|![](/assets/images/edu/bioloid/premium_skin_12.jpg)|![](/assets/images/edu/bioloid/premium_skin_13.jpg)|![](/assets/images/edu/bioloid/premium_skin_14.jpg)|
+
+## [Adding Sensors](#adding-sensors)
+
+With the Bioloid Premium Kit, you can connect additional [IR Sensor] and [Touch Sensor] to the CM-530.
+For more information on each sensors, please click on the names of the sensors.
+
+### IR Sensor
+
+![](/assets/images/parts/sensors/ir.jpg)
+
+- IR Sensor Applications
+  - The IR sensor can detects objects in front of the robot.
+  - It can also be used to detect object on the side when walking or moving.
+
+[More information](/docs/en/software/rplus1/task/programming_02/#ir-sensor)
+
+### Touch Sensor
+
+![](/assets/images/parts/sensors/touch.jpg)
+
+- Touch Sensor Applications
+  - The touch sensor enables the robot to feel when it has been touched.
+  - For example, the sensor can be used to make the robot react to certain touches.
+
+[More information](/docs/en/software/rplus1/task/programming_02/#touch-sensor)
+
+## [Make Your Own Sensor](#make-your-own-sensor)
+
+You can make your own sensor with simple control functions using the ADC port and OUT port on CM-510/CM-530.
+
+`Caution` Connecting poorly designed circuits may damage the controller. Please be sure to acquire sufficient knowledge about circuits beforehand.
+{: .notice--warning}
+
+### PIN Information
+
+![](/assets/images/parts/controller/cm-530/cm510_external_io.png)
+
+- Below is a pin diagram of CM-510’s external port.
+  1. OUT : 5V Output
+  2. VCC (5V)
+  3. ADC : Can read analog signals made by users.
+  4. GND
+  5. NC : Not used
+
+- Below is a pin diagram of CM-530’s external port.
+  1. OUT1 : 3.3V Output (Maximum Allowed Current 0.3A)
+  2. VCC (5V)
+  3. ADC : Can read analog signals made by users.
+  4. GND
+  5. OUT2 : 3.3V Output (Maximum Allowed Current 0.3A)
+
+`Note` Please use the 5P Cable when using other sensors. The 5P cable can be purchased from ROBOTIS.
+{: .notice}
+
+### Controlling User’s Device
+
+#### External Output Control
+Below is an example of an LED circuit to turn the LED on and off using the OUT port (Pin 1).
+You need to adjust the amound of resistance depending on the type of controller and/or the type of LED.
+
+![](/assets/images/edu/bioloid/premium_led_circuit.png)
+
+A high signal can be sent to the OUT port using RoboPlus Task.
+
+1. Select the user's device in the writable parameter such as LOAD and CALCULATE, then select the port on which the device is connected.
+2. Then, set the high signal to the readable parameter using a constant.
+
+![](/assets/images/edu/bioloid/premium_diy_sensor_01.png)
+
+![](/assets/images/edu/bioloid/premium_diy_sensor_02.png)
+
+When the code above is executed, high signal will be sent to the OUT port of the device connected to PORT 3, and the LED will turn on.
+
+#### Reading the ADC Value
+Most of the sensors used in robots, such as IR sensors and distance sensors, support analog output. The CM-510 can use its external ports to read the sensor’s analog output signals. These sensors may be designed by the user or bought from a store.
+
+- Below is an image of a tilt sensor. When the sensor is tilted, it prints the tilted value as the analog singal.
+
+![](/assets/images/edu/bioloid/premium_diy_sensor_03.png)
+
+- The left pin of the tilt sensor is 5V VCC. The center is an analog signal output pin, and the right pin is GND.  This sensor can be used by connecting its pins to the corresponding pins on CM-510’s external port.  To try for yourself, please refer to the pin information for CM-510’s external ports.
+
+![](/assets/images/edu/bioloid/premium_diy_sensor_04.png)
+
+- You can incorporate the sensor’s analog output to your robot's movements as in the example below.
+
+![](/assets/images/edu/bioloid/premium_diy_sensor_05.png)
+
+## <a name="gripper-assembly"></a>[Gripper Assembly](#gripper-assembly)
+
+- Users can add grippers to humanoid robots to fit their needs.
+- Grippers are useful when holding or throwing things.
+
+### Materials
+
+There are 2 spare AX-12+'s when assembling a humanoid Type B or Type C using the Bioloid Premium Kit.
+You can use these spare parts to make a gripper to your humanoid.
+Below are the parts required to make a gripper.
+
+![](/assets/images/edu/bioloid/premium_gripper_assy_01.png)
+
+### Making a gripper
+
+![](/assets/images/edu/bioloid/premium_gripper_assy_02.jpg)
+
+The image above shows how to make a gripper using frames and an AX-12+. Make two of these if you want to attach a gripper on both hands.
+
+### [Attaching Grippers](#attaching-grippers)
+
+By making a robot with grippers, you can expand the things you can do with the robot.
+For more information on controlling the gripper robot, please refer to gripper control.
+Below is an image of a Type B humanoid with a grippers.
+AX-12+ #9 was used for the right gripper and AX-12+ #10 was used for the left.
+
+![](/assets/images/edu/bioloid/premium_gripper_assy_03.png)
+
 
 [CM-530]: /docs/en/parts/controller/cm-530/
 [AX-12A]: /docs/en/dxl/ax/ax-12a/

@@ -13,8 +13,6 @@ sidebar:
 
 # [Introduction](#introduction)
 
-## [RoboPlus Task 2.0](#roboplus-task-20)
-
 ![](/assets/images/sw/rplus2/task/roboplus_task2_001.gif)
 
 In computer science, a task generally means a set of relevant activities to complete the work at hand. In RoboPlus terms, a task code is a source code programmed for a robot to complete a task.  
@@ -28,7 +26,9 @@ A robot operates according to the task code created by the user, and the RoboPlu
   (If user wants to use a Motion file in the task code, the user must download the Motion file.)
 
 ![](/assets/images/sw/rplus2/task/roboplus_task2_002.gif)
- 
+
+# [Getting Started](#getting-started)
+
 ## [Manual Instructions](#manual-instructions)
 
 1. Editing Tab for Each Stage  
