@@ -1,11 +1,11 @@
 ---
 layout: archive
 lang: en
-ref: rplus1_dynamixe_wizard
+ref: rplus1_dynamixel_wizard
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/software/rplus1/dynamixe_wizard/
+permalink: /docs/en/software/rplus1/dynamixel_wizard/
 sidebar:
   title: Dynamixel Wizard
   nav: "dynamixel_wizard"
