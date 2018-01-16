@@ -31,8 +31,8 @@ sidebar:
 
 - Control Panel
 
-![](https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/DynamixelSDK/4.SDKExample/4.7%20LabVIEW/multi_port1/multi_port1.png)
+![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/labview/windows/sample_code/multi_port1/multi_port1.png)
 
 - Block Diagram
 
-![](https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/DynamixelSDK/4.SDKExample/4.7%20LabVIEW/multi_port1/block_diagram.png)
+![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/labview/windows/sample_code/multi_port1/block_diagram.png)
