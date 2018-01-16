@@ -62,7 +62,7 @@ sidebar:
 |   11 (높은 파)    |    11장 예제, 악어    |  ![](/assets/images/edu/dream/dream1-2_crocodile.jpg)   |
 |   12 (높은 솔)    | 12장 예제, 상상하세요 |   ![](/assets/images/edu/dream/dream1-2_imagine.jpg)    |
 
-`참고` USB케이블은 로보티즈 드림 1단계 구성품에 포함되어 있습니다.
+`Note` USB케이블은 로보티즈 드림 1단계 구성품에 포함되어 있습니다.
 {: .notice}
 
 # [교안예제](#교안예제)
