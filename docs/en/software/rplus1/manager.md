@@ -13,18 +13,16 @@ sidebar:
 
 # [Introduction](#introduction)
 
-RoboPlus Manager is used to handle devices used by a robot.
-Major functions of this program are as follows.
-Manage controller firmware. (Update and Restore)
-Inspect the status of the controller and peripheral devices. (Test)
-Set the required modes. (Settings)
+RoboPlus Manager is used to handle devices used by a robot. Major functions of this program are as follows.
+- Manage controller firmware. (Update and Restore)
+- Inspect the status of the controller and peripheral devices. (Test)
+- Set the required modes. (Settings)
 
 ![](/assets/images/sw/rplus1/manager/roboplus_manager_001.png)
 
 ## [Install](#install)
 
-`Download` [RoboPlus]
-{: .notice--download}
+- `Download` [RoboPlus]
 
 RoboPlus is a software to create a customized programme for every ROBOTIS product.
 
@@ -165,6 +163,30 @@ If the controller's firmware version is older than that of RoboPlus Manager, it 
  
 <iframe width="560" height="315" src="https://www.youtube.com/embed/YurHoS-sSvk" frameborder="0" allowfullscreen></iframe>
 
+#### General/Detail Search
+
+{% include en/software/rplus1/genera_detail_search.md %}
+
+#### Aux LED
+
+{% include en/software/rplus1/aux_led.md %}
+
+#### Button
+
+{% include en/software/rplus1/button.md %}
+
+#### Timer
+
+{% include en/software/rplus1/timer.md %}
+
+#### Remocon ID
+
+{% include en/software/rplus1/remocon_id.md %}
+
+#### My ID
+
+{% include en/software/rplus1/my_id.md %}
+
 ### [CM-510](#cm-510)
 
 When the CM-510 controller is connected to RoboPlus Manager, the following screen is displayed.
@@ -175,6 +197,50 @@ The controller and its peripheral devices are listed in the left window.  In the
 If the controller's firmware version is older than that of RoboPlus Manager, it can be updated. (Please refer to the [Firmware Update](#firmware-update) section)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ZAstC0VRqYA" frameborder="0" allowfullscreen></iframe>
+
+#### General/Detail Search
+
+{% include en/software/rplus1/genera_detail_search.md %}
+
+#### Aux LED
+
+{% include en/software/rplus1/aux_led.md %}
+
+#### Button
+
+{% include en/software/rplus1/button.md %}
+
+#### Timer
+
+{% include en/software/rplus1/timer.md %}
+
+#### Remocon ID
+
+{% include en/software/rplus1/remocon_id.md %}
+
+#### My ID
+
+{% include en/software/rplus1/my_id.md %}
+
+#### Sound Count
+
+{% include en/software/rplus1/sound_count.md %}
+ 
+#### Current Sound Count
+
+{% include en/software/rplus1/current_sound.md %}
+
+#### Buzzer Index
+
+{% include en/software/rplus1/buzzer_index.md %}
+ 
+#### Buzzer Time
+
+{% include en/software/rplus1/buzzer_time.md %}
+
+#### Exterior I/O Devices
+
+{% include en/software/rplus1/ext_io_device.md %}
 
 ### [CM-530](#cm-530)
 
@@ -187,6 +253,54 @@ If the controller's firmware version is older than that of RoboPlus Manager, it 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/w2k7dIKIqB8" frameborder="0" allowfullscreen></iframe>
 
+#### General/Detail Search
+
+{% include en/software/rplus1/genera_detail_search.md %}
+
+#### Aux LED
+
+{% include en/software/rplus1/aux_led.md %}
+
+#### Button
+
+{% include en/software/rplus1/button.md %}
+
+#### Timer
+
+{% include en/software/rplus1/timer.md %}
+
+#### High Resolution Timer
+
+{% include en/software/rplus1/high_resolution_timer.md %}
+
+#### Remocon ID
+
+{% include en/software/rplus1/remocon_id.md %}
+
+#### My ID
+
+{% include en/software/rplus1/my_id.md %}
+
+#### Sound Count
+
+{% include en/software/rplus1/sound_count.md %}
+ 
+#### Current Sound Count
+
+{% include en/software/rplus1/current_sound.md %}
+
+#### Buzzer Index
+
+{% include en/software/rplus1/buzzer_index.md %}
+ 
+#### Buzzer Time
+
+{% include en/software/rplus1/buzzer_time.md %}
+
+#### Exterior I/O Devices
+
+{% include en/software/rplus1/ext_io_device.md %}
+
 ### [CM-700](#cm-700)
 
 When the CM-700 controller is connected to RoboPlus Manager, the following screen is displayed.
@@ -198,190 +312,29 @@ If the controller's firmware version is older than that of RoboPlus Manager, it 
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/_ZFpFSpPhbU" frameborder="0" allowfullscreen></iframe>
 
-### [General/Detail Search](#general-detail-search)
+#### General/Detail Search
 
-RoboPlus Manager has two search modes.
- 
-#### General Search
+{% include en/software/rplus1/genera_detail_search.md %}
 
-- Search for Dynamixels connected at 1Mbps.
-- Search speed is fast because it searches for only Dynamixels connected at 1Mbps.
-- Dynamixels connected at other speeds are not found.  
- 
-#### Detail Search
+#### Aux LED
 
-- Search for Dynamixels connected at every possible communication speed.
-- Search speed is slower because it searches for Dynamixels connected at different communication speeds.
-- The Dynamixel that are not connected at 1Mbps are automatically adjusted to 1Mbps.  
- 
-`Note` If a Dynamixel is no longer detected after a detailed search, there might be an ID duplication.  In this case, connect only the undetected device, and change its ID to an unused one. (Refer to the [ID Setup] section.)
-{: .notice}
+{% include en/software/rplus1/aux_led.md %}
 
-### [Aux LED](#aux-led)
+#### Timer
 
-This parameter is used to turn the controller's Aux LED on or off.
- 
-#### Characteristic
+{% include en/software/rplus1/timer.md %}
 
-The controller's Aux LED can be manipulated using the On/Off button.
- 
-#### Corresponding RoboPlus Task Command
+#### Remocon ID
 
-- Parameter : [Aux LED]
-- Constants : True/False
+{% include en/software/rplus1/remocon_id.md %}
 
-### [Button](#button)
+#### My ID
 
-This parameter is used to read the controller's button status (whether it is pressed).
- 
-#### Characteristic
+{% include en/software/rplus1/my_id.md %}
 
-When a button on the controller is pressed, you can see which button has been pressed.
- 
-#### Corresponding RoboPlus Task Command
+#### Exterior I/O Devices
 
-- Parameter : [Button]
-- Constant: Button
-
-### [Timer](#timer)
-
-This parameter is used to set or read the controller's timer.
- 
-#### Characteristics
-
-- The timer can be set and the actual time can be checked.
-- Timer value is between 0 and 255.
-- When the timer is set, it will start to count every 0.128 seconds, and you will be able to see how much time is left.
- 
-#### Corresponding RoboPlus Task Command
-
-- Parameter : [Timer]
-- Constants : Timer Values
-
-### [High Resolution Timer](#high-resolution-timer)
-
-Internally the controller sets a counter; this is the parameter for the high resolution timer.
-This timer is set for every 1ms, useful for more accurate timing.
- 
-#### Characteristics
-
-- The timer can be set and the actual time can be checked.
-- Timer value is between 0 and 65535. Timers shows 1 unit for every 1ms
-- When the timer is set, it will start to count every 0.001 seconds, and you will be able to see how much time is left.
- 
-#### Corresponding RoboPlus Task Command
-
-- Parameter : [HR Timer]
-- Constants : Timer Values
-
-### [Remocon ID](#remocon-id)
-
-The parameter is used to set or read the ID of the ZigBee communication module that communicates with the robot's Zigbee module.
- 
-#### Characteristics
-
-- This parameter is meaningful only when ZigBee module is connected.
-- The ID is a number between 0 and 65535.
-- When the opponent's ID is set to 65535, data is sent to all ZigBee modules, regardless of ID.  
-- For 1:1 communication, the ID's of both ZigBee modules must be correct.
- 
-#### Corresponding RoboPlus Task Command
-
-- Parameter : [Remocon ID]
-- Constant : Number
-  
-### [My ID](#my-id)
-
-This parameter is used to read the ID of the ZigBee module installed in my robot.
- 
-#### Characteristics
-
-- If a ZigBee module is not installed, 0 will be returned.
-- If a ZigBee module is installed, its ID is read (a number between 0 and 65534).
- 
-#### Corresponding RoboPlus Task Command
-
-- Parameter : [My ID]
-
-### [Sound Count](#sound-count)
-
-Sounds can be detected using the microphone in the controller.
- 
-#### Characteristics
-
-- When a sound louder than a certain threshold, such as a clap, is made near the controller, it will be detected by the controller's microphone.  
-- The maximum number of sounds counted is 255.
-- When sounds are no longer detected, the number of detected sounds will be input into the "Sound Count" parameter.
-- Because "Sound Count" is not initialized automatically, the user must reset it to 0 before use.
- 
-#### Corresponding RoboPlus Task Command
-
-- Parameter : [Sound Count]
- 
-### [Current Sound Count](#current-sound-count)
-
-It is also possible to know how many sounds have been counted by the controller's microphone so far.
- 
-#### Characteristics
-
-- The maximum number of sounds counted is 255.
-- The parameter value is increased in real-time whenever a sound is detected.
-- If a new sound is not detected for a certain period, the value of the "Current Sound Count" parameter is passed to the "Sound Count" parameter, and the "Current Sound Count" parameter is reset to 0.
- 
-#### Corresponding RoboPlus Task Command
-
-- Parameter : [Current Sound]
-
-### Buzzer Index
-
-This parameter is used to set the musical note played by the controller's buzzer.
- 
-#### Characteristics
-
-- Depending on what the "Buzzer Time" is set to, "Buzzer Index" can be set to play a musical note or a melody.  Please refer to the "Buzzer Time" parameter for information on sound modes.
-- If the "Buzzer Time" parameter is not set to melody mode, a melody will not be played even if it is selected.
-- In musical note mode, the note will be played for the length set as "Buzzer Time."
-- In melody mode, when a melody is set, it is played to the end.
-- There are 16 melodies (0-15) and 27 musical notes (0-26).
-- If the "Buzzer Time" is 0, the parameter is automatically set to 3 and the note is played.
- 
-#### Corresponding RoboPlus Task Command
-
-- Parameter : [Buzzer Type]
-- Constants : Melody, Scale Values.
- 
-### [Buzzer Time](#buzzer-time)
-
-This parameter is used to set the sound mode and how long the note or melody will be played.
- 
-#### Characteristics
-
-- If the "Buzzer Time" parameter is set to a  value between 0 and 50, the sound mode is set to musical note mode.  The note will be played for the length set as "Buzzer Time."
-- If the "Buzzer Time" parameter is set to 255, the sound mode is set to melody mode.
-- When the note or melody finishes playing, "Buzzer Time" is automatically reset to 0.  
- 
-#### Corresponding RoboPlus Task Command
-
-- Parameter : [Buzzer Time]
-- Constant Numbers : Melody, Scale Values
-
-### [Exterior I/O Devices](#external-i-o-devices)
-
-The controller supports exterior I/O devices, such as IR sensors, touch sensors, and DMS sensors.
- 
-#### Characteristics
-
-- Most devices support only reads, but a few also allow writes.
-- After connecting and setting up an exterior I/O device, you can check its values.
-- For user's devices, you can set which values are returned.
-- Exterior I/O devices are not recognized automatically, so the user must manually set the device.
-- IR sensors, touch sensors, DMS Sensors, and user's devices are supported.
-- If you read without connecting a device, a random value will be returned. This value is meaningless.
-- When the port and device are set, the address will be set automatically. This address can be used during programing.
- 
-#### Corresponding RoboPlus Task Command
-
-- Parameter : [User's Devices]
+{% include en/software/rplus1/ext_io_device.md %}
 
 ## [Dynamixel](#dynamixel)
 
@@ -492,7 +445,7 @@ This parameter is used to read the Dynamixel's current voltage.
 
 - Parameter : [Voltage]
 
-### [Alarm & Shutdown](#alarm-shutdown)
+### [Alarm & Shutdown](#alarm--shutdown)
 
 The LED alarm or shutdown operation can be set for specific cases.
  
@@ -540,7 +493,7 @@ This parameter is used to turn the Dynamixel's LED on or off.
 - Parameter : [LED]
 - Constants : True/False
 
-### [CW/CCW Margin](#cw-ccw-margin)
+### [CW/CCW Margin](#cwccw-margin)
 
 This parameter is used to set the actuator's compliance margin.
  
@@ -553,7 +506,7 @@ This parameter is used to set the actuator's compliance margin.
 
 - Parameter : [CW/CCW Margin]
 
-### [CW/CCW Slope](#cw-ccw-slope)
+### [CW/CCW Slope](#cwccw-slope)
 
 This parameter is used to set the actuator's compliance slope.
  
@@ -992,17 +945,14 @@ Follow these steps to manage the Zig-100 module through RoboPlus Manager using Z
 [managing information of each controller]: /docs/en/software/rplus1/manager/#controllers
 [controller information]: /docs/en/parts/controller/controller_compatibility/
 [ID Setup]: /docs/en/software/rplus1/manager/#id-setup
-[Aux LED]: /docs/en/software/rplus1/task/programming_02/#aux-led
-[Button]: /docs/en/software/rplus1/task/programming_02/#button
-[Timer]: /docs/en/software/rplus1/task/programming_02/#timer
-[HR Timer]: /docs/en/software/rplus1/task/programming_02/#hr-timer
-[Remocon ID]: /docs/en/software/rplus1/task/programming_02/#remocon-id
-[My ID]: /docs/en/software/rplus1/task/programming_02/#my-id
-[Sound Count]: /docs/en/software/rplus1/task/programming_02/#sound-count
-[Current Sound]: /docs/en/software/rplus1/task/programming_02/#current-sound-count
-[Buzzer Type]: /docs/en/software/rplus1/task/programming_02/#buzzer-index
-[Buzzer Time]: /docs/en/software/rplus1/task/programming_02/#buzzer-time
-[User's Devices]: /docs/en/software/rplus1/task/programming_02/#user-devices
+
+
+
+
+
+
+
+
 [Dynamixel Management]: /docs/en/edu/bioloid/beginner/#dynamixel-management
 [Changing the Movement Mode]: /docs/en/edu/bioloid/beginner/#dynamixel-management
 [Temperature]: /docs/en/software/rplus1/task/programming_02/#temperature
@@ -1028,9 +978,7 @@ Follow these steps to manage the Zig-100 module through RoboPlus Manager using Z
 [Light Detection Threshold]: /docs/en/software/rplus1/task/programming_02/#light-detection-threshold
 [Sound Data]: /docs/en/software/rplus1/task/programming_02/#sound-data
 [Sound Max Data]: /docs/en/software/rplus1/task/programming_02/#sound-max-data
-[Sound Count]: /docs/en/software/rplus1/task/programming_02/#sound-count
 [Buzzer Index]: /docs/en/software/rplus1/task/programming_02/#buzzer-index
-[Buzzer Time]: /docs/en/software/rplus1/task/programming_02/#buzzer-time
 [IR Sensor Value]: /docs/en/software/rplus1/task/programming_02/#ir-sensor-value
 [Auto Threshold Mode]: /docs/en/software/rplus1/task/programming_02/#auto-threshold-mode
 [IR Obstacle Detected]: /docs/en/software/rplus1/task/programming_02/#ir-obstacle-detected
