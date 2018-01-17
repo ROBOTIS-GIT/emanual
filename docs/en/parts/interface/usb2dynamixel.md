@@ -75,7 +75,7 @@ The communication mode can be selected by chaning the switch of USB2Dynamixel as
 
 # [Tutorials](#tutorials)
 
-- USB2Dynamixel SDK : Please refer to the [USB2Dynamixel SDK].
+- USB2Dynamixel SDK : Please refer to the [Dynamixel SDK].
 
 # [Supply Power](#supply-power)
 
@@ -154,18 +154,9 @@ If you installed RoboPlus, FTDI Driver (USB2Dynamixel, USB Downloader (LN-101) d
 
 # [Videos](#videos)
 
-Setting up the port
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UlD4C1XMsgo" frameborder="0" allowfullscreen></iframe>
 
-[USB2Dynamixel SDK]: /docs/en/software/embedded_sdk/usb2dynamixel/
-[download_task_code]: /docs/en/software/rplus1/task/getting_started/#program-download
-[task_result_print]: /docs/en/software/rplus1/task/getting_started/#print-on-the-screen
-[virtual_robot_control]: /docs/en/software/rplus1/task/getting_started/#virtual-robot-control
-[CM-100]: /docs/en/parts/controller/cm-100/
-[CM-150]: /docs/en/parts/controller/cm-150/
-[CM-200]: /docs/en/parts/controller/cm-200/
-[CM-700]: /docs/en/parts/controller/cm-700/
-[OpenCM9.04]: /docs/en/parts/controller/opencm904/
+[Dynamixel SDK]: /docs/en/software/dynamixel/dynamixel_sdk/overview/
 [FTDI Driver Download]: http://www.ftdichip.com/Drivers/VCP.htm
 [img_01]: /assets/images/parts/interface/ln101.jpg
 [img_02]: /assets/images/edu/task_download_01.jpg

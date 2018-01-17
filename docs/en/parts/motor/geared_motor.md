@@ -20,7 +20,7 @@ sidebar:
 It is the motor used in OLLO; it is connected to CM-100, and the direction of spin and the speed of spin can be adjusted through port control.  
 It can be operated as general DC motors by connecting OLLO switch and the battery box.
 
-`Compatibility Guide` [Controller Compatibility]
+- `Compatibility Guide` [Controller Compatibility]
 
 # [Specifications](#specifications)
 

@@ -34,7 +34,7 @@ sidebar:
 
 ## [Control Angle](#control-angle)
 
-- The servo motor of OLLO can control the location from 0 degree to 300 degrees, and the minimum control angle is about 0.29 degrees (300/1024).
+- The servo motor of OLLO can control the location from 0&deg; to 300&deg;, and the minimum control angle is about 0.29&deg; (300&deg;/1024).
 - However, since the servo motor of OLLO is not as accurate as Dynamixel, and the torque is weaker than Dynamixel, it is appropriate servo motors are used for basic learning of the principles and usages; not appropriate to use for the places where accurate controls are needed.
 
 ![](/assets/images/parts/motor/servo_motor_01.png)
