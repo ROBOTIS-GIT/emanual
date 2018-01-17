@@ -86,10 +86,7 @@ If catkin_make command is completed without any errors, the preparation for Turt
 **[TurtleBot]** The following commands allow to use USB port for OpenCR1.0 without acquiring root permission.
 
 ``` bash
-$ cd ~/catkin_ws/src/turtlebot3
-$ sudo cp ./99-turtlebot3-cdc.rules /etc/udev/rules.d/
-$ sudo udevadm control --reload-rules
-$ sudo udevadm trigger
+$ rosrun turtlebot3_bringup create_udev_rules
 ```
 
 ## [Network Configuration (Burger and Waffle)](#network-configuration-burger-and-waffle)

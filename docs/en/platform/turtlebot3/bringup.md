@@ -73,7 +73,8 @@ $ roslaunch turtlebot3_bringup turtlebot3_core.launch
 
 ``` bash
 $ export TURTLEBOT3_MODEL=burger
-$ roslaunch turtlebot3_bringup turtlebot3_model.launch
+$ roslaunch turtlebot3_bringup turtlebot3_remote.launch
+$ rosrun rviz rviz -d `rospack find turtlebot3_description`/rviz/model.rviz
 ```
 
 ![](/assets/images/platform/turtlebot3/bringup/rviz_burger_model.jpg)
@@ -100,7 +101,8 @@ $ roslaunch turtlebot3_bringup turtlebot3_core.launch
 
 ``` bash
 $ export TURTLEBOT3_MODEL=waffle
-$ roslaunch turtlebot3_bringup turtlebot3_model.launch
+$ roslaunch turtlebot3_bringup turtlebot3_remote.launch
+$ rosrun rviz rviz -d `rospack find turtlebot3_description`/rviz/model.rviz
 ```
 
 ![](/assets/images/platform/turtlebot3/bringup/rviz_waffle_model.jpg)

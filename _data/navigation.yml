@@ -307,7 +307,7 @@ main:
       - title: "DYNAMIXEL SDK"
         titlekr: "다이나믹셀 SDK"
         url: /software/dynamixel/dynamixel_sdk/overview/
-      - title: "Dynamixel-Workbench"
+      - title: "DYNAMIXEL-Workbench"
         url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/
     - title: "Mobile Apps"
       titlekr: "모바일 앱"
