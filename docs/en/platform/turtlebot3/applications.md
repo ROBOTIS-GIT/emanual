@@ -166,12 +166,12 @@ $ sudo pip install --upgrade pip
 ```
 
 
-**[Remote PC]** Move to turtlebot3_automatic_parking source directory
+**[Remote PC]** Move to turtlebot3_automatic_parking source directory.
 ```bash
 $ cd ~/catkin_ws/src/turtlebot3_applications/turtlebot3_automatic_parking/src
 ```
 
-**[Remote PC]** To make it executable
+**[Remote PC]** To make it executable.
 ```bash
 $ sudo chmod +x automatic_parking.py
 ```
@@ -204,11 +204,22 @@ $ export TURTLEBOT3_MODEL=waffle
 $ roslaunch turtlebot3_bringup turtlebot3_remote.launch
 $ rosrun rviz rviz -d `rospack find turtlebot3_automatic_parking`/rviz/turtlebot3_automatic_parking.rviz
 ```
+You can select LaserScan topic in RViz.
+- /scan
 
-**[Remote PC]** Run turtlebot3_automatic_parking.py
+![](/assets/images/platform/turtlebot3/application/scan.png)
+
+- /scan_spot
+
+![](/assets/images/platform/turtlebot3/application/scan_spot.png)
+
+
+**[Remote PC]** Run turtlebot3_automatic_parking.py.
 
 ``` bash
 $ rosrun turtlebot3_automatic_parking automatic_parking.py  
 ```
+
+
 
 <iframe width="560" height="315" src="https://youtu.be/IRtdxoPo8Y8" frameborder="0" allowfullscreen></iframe>
