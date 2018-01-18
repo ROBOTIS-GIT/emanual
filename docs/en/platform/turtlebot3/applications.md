@@ -150,6 +150,65 @@ $ rqt_image_view image:=/turtlebot3_panorama/panorama
 
 ![](/assets/images/platform/turtlebot3/application/panorama_view.png)
 
-## [Automatic Docking](#automatic-docking)
+## [Automatic parking](#automatic-parking)
+**Note :** The turtlebot3_automatic_parking demo was using a 360 laser Distance Sensor LDS-01 and a reflective tape. The LaserScan topic has intensity and distance data from LDS. The turtlebot3 uses this to locate the reflective tape.
+{: .notice--info}
 
-(TODO)
+**Note :** TThe turtlebot3_automatic_parking demo requires NumPy package.
+{: .notice--info}
+
+**[Remote PC]** Install NumPy package with below commands.
+
+``` bash
+$ sudo apt-get install python-pip
+$ sudo pip install numpy
+$ sudo pip install --upgrade pip
+```
+
+
+**[Remote PC]** Move to turtlebot3_automatic_parking source directory
+```bash
+$ cd ~/catkin_ws/src/turtlebot3_applications/turtlebot3_automatic_parking/src
+```
+
+**[Remote PC]** To make it executable
+```bash
+$ sudo chmod +x automatic_parking.py
+```
+
+**[Remote PC]** Run roscore.
+
+```bash
+$ roscore
+```
+
+**[TurtleBot]** Bring up basic packages to start TurtleBot3 applications.
+
+```bash
+$ roslaunch turtlebot3_bringup turtlebot3_robot.launch
+```
+
+**[Remote PC]** If you have Turtlebot3 Burger,
+
+```bash
+$ export TURTLEBOT3_MODEL=burger
+```
+If you have TurtleBot3 Waffle.
+
+```bash
+$ export TURTLEBOT3_MODEL=waffle
+```
+
+**[Remote PC]** Run RViz.
+```bash
+$ roslaunch turtlebot3_bringup turtlebot3_remote.launch
+$ rosrun rviz rviz -d `rospack find turtlebot3_automatic_parking`/rviz/turtlebot3_automatic_parking.rviz
+```
+
+**[Remote PC]** Run turtlebot3_automatic_parking.py
+
+``` bash
+$ rosrun turtlebot3_automatic_parking automatic_parking.py  
+```
+
+<iframe width="560" height="315" src="https://youtu.be/IRtdxoPo8Y8" frameborder="0" allowfullscreen></iframe>
