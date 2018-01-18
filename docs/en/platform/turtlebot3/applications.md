@@ -154,7 +154,7 @@ $ rqt_image_view image:=/turtlebot3_panorama/panorama
 **Note :** The turtlebot3_automatic_parking demo was using a 360 laser Distance Sensor LDS-01 and a reflective tape. The LaserScan topic has intensity and distance data from LDS. The turtlebot3 uses this to locate the reflective tape.
 {: .notice--info}
 
-**Note :** TThe turtlebot3_automatic_parking demo requires NumPy package.
+**Note :** The turtlebot3_automatic_parking demo requires NumPy package.
 {: .notice--info}
 
 **[Remote PC]** Install NumPy package with below commands.
