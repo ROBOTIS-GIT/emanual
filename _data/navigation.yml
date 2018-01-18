@@ -5537,6 +5537,9 @@ turtlebot3:
     children:
     - title: "TurtleBot3"
       url: /platform/turtlebot3/overview/#turtlebot3
+  - title: "Notice"
+    url: /platform/turtlebot3/overview/#notice
+    children:
     - title: "News"
       url: /platform/turtlebot3/overview/#news
   - title: "Features"
