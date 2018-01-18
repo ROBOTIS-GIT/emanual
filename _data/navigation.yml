@@ -5537,6 +5537,9 @@ turtlebot3:
     children:
     - title: "TurtleBot3"
       url: /platform/turtlebot3/overview/#turtlebot3
+  - title: "Notice"
+    url: /platform/turtlebot3/overview/#notice
+    children:
     - title: "News"
       url: /platform/turtlebot3/overview/#news
   - title: "Features"
@@ -7797,17 +7800,6 @@ opencm904:
         url: /parts/controller/opencm904/#install-on-mac
       - title: "Install on Windows"
         url: /parts/controller/opencm904/#install-on-windows
-    - title: "DynamixelWorkbench"
-      url: /parts/controller/opencm904/#dynamixelworkbench
-      children:
-      - title: "APIs"
-        url: /parts/controller/opencm904/#apis
-      - title: "Example 1. Find Dynamixel"
-        url: /parts/controller/opencm904/#find-dynamixel
-      - title: "Example 2. Position"
-        url: /parts/controller/opencm904/#position
-      - title: "Example 3. Speed"
-        url: /parts/controller/opencm904/#speed
   - title: "Examples"
     url: /parts/controller/opencm904/#examples
     children:
@@ -7821,6 +7813,17 @@ opencm904:
       url: /parts/controller/opencm904/#pwm
     - title: "EEPROM"
       url: /parts/controller/opencm904/#eeprom
+    - title: "DynamixelWorkbench"
+      url: /parts/controller/opencm904/#dynamixelworkbench
+      children:
+      - title: "APIs"
+        url: /parts/controller/opencm904/#apis
+      - title: "Example 1. Find Dynamixel"
+        url: /parts/controller/opencm904/#find-dynamixel
+      - title: "Example 2. Position"
+        url: /parts/controller/opencm904/#position
+      - title: "Example 3. Speed"
+        url: /parts/controller/opencm904/#speed
     - title: "Servo"
       url: /parts/controller/opencm904/#servo
     - title: "SD Card"
@@ -8004,6 +8007,17 @@ opencr10:
         url: /parts/controller/opencr10/#flame-sensor
       - title: "Joystic Sensor"
         url: /parts/controller/opencr10/#joystic-sensor
+    - title: "DynamixelWorkbench"
+      url: /parts/controller/opencm904/#dynamixelworkbench
+      children:
+      - title: "APIs"
+        url: /parts/controller/opencm904/#apis
+      - title: "Example 1. Find Dynamixel"
+        url: /parts/controller/opencm904/#find-dynamixel
+      - title: "Example 2. Position"
+        url: /parts/controller/opencm904/#position
+      - title: "Example 3. Speed"
+        url: /parts/controller/opencm904/#speed
     - title: "OpenManipulator"
       url: /parts/controller/opencr10/#openmanipulator
       children:
