@@ -5538,10 +5538,10 @@ turtlebot3:
     - title: "TurtleBot3"
       url: /platform/turtlebot3/overview/#turtlebot3
   - title: "Notice"
-    url: /platform/turtlebot3/overview/#notice
+    url: /platform/turtlebot3/notice/#notice
     children:
     - title: "News"
-      url: /platform/turtlebot3/overview/#news
+      url: /platform/turtlebot3/notice/#news
   - title: "Features"
     url: /platform/turtlebot3/features/#features
     children:
