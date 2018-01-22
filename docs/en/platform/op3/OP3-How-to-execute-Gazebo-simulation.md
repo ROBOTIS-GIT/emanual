@@ -19,7 +19,7 @@ $ roslaunch op3_manager op3_gazebo.launch
 ```
 
 * Please refer to below tutorials for the rest procedures.   
-[OP3 Tutorials](OP3_Tutorials.md)
+[OP3 Tutorials](OP3-Tutorials.md)
 
 ### 5. To improve gazebo simulation
 
