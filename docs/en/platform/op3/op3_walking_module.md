@@ -1,15 +1,15 @@
 ### 1. Overview
 This chapter explains the module to control OP3 walking.  
-This module is compiled to a library to be used in [op3_manager](op3_manager).  
+This module is compiled to a library to be used in [op3_manager](op3_manager.md).  
 
 
 ### 2. Getting started
 #### 2.1 Download & Build
- > Reference : [Installing ROBOTIS ROS Package](OP3-Recovery-of-ROBOTIS-OP3#24-installation-robotis-ros-packages)    
+ > Reference : [Installing ROBOTIS ROS Package](OP3-Recovery-of-ROBOTIS-OP3#24-installation-robotis-ros-packages.md)    
 
 #### 2.2 Usage
 The Motion Module is used in the manager in the form of library.  
-> Reference : [Creating new robot manager](Creating new robot manager)
+> Reference : [Creating new robot manager](Creating-new-robot-manager.md)
 
 ### 3. ROS API
 #### 3.1 Subscribed Topics
@@ -95,4 +95,4 @@ The Motion Module is used in the manager in the form of library.
 
    - d_gain: not yet implemented
 
-[&lt;&lt; Back](ROBOTIS-OP3-Modules)
+[&lt;&lt; Back](ROBOTIS-OP3-Modules.md)
