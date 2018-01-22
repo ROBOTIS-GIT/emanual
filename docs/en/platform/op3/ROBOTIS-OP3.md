@@ -13,7 +13,7 @@
   The package that controls OP3 using framework and various modules.   
 
 ### 3. Others
-  1. [op3_balance_control](op3_balance_control)
+  1. [op3_balance_control](op3_balance_control,md)
   2. [op3_localization](op3_localization)  
   3. [op3_optimization](op3_optimization)
 
