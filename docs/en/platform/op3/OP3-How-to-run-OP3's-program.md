@@ -3,7 +3,7 @@ This chapter explains how to run the `op3_manager` that controls ROBOTIS-OP3.
 Several modules are controlling ROBOTIS-OP3 and various topics and services transmit commands and report status.  
 The `op3_manager` cooperates with other programs such as `op3_demo` and `op3_gui_demo`.  
 
-> Reference : [op3_manager](op3_manager)
+> Reference : [op3_manager](op3_manager.md)
 
 #### 1.1 Diagram
 [diagram image]  
@@ -12,7 +12,7 @@ The `op3_manager` cooperates with other programs such as `op3_demo` and `op3_gui
 
 ### 2. Getting started
 #### 2.1 Download & Build
- > Reference : [Installing ROBOTIS ROS Package](OP3-Recovery-of-ROBOTIS-OP3#24-installation-robotis-ros-packages)  
+ > Reference : [Installing ROBOTIS ROS Package](OP3-Recovery-of-ROBOTIS-OP3#24-installation-robotis-ros-packages.md)  
 
 
 #### 2.2 Run
