@@ -33,4 +33,4 @@ Motion Module is used in the form of lib in the manager.
 &emsp;&emsp; File path that indicates the location of action libraries for OP3.  
 
 
-<br>[[&lt;&lt; Back|ROBOTIS-OP3-Modules]]
+<br>&lt;&lt; [Back](ROBOTIS-OP3-Modules.md)
