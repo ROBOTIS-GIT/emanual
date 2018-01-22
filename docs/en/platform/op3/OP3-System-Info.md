@@ -47,4 +47,4 @@ System Configuration of ROBOTIS-OP3
   > Reference : [e-Manual](http://support.robotis.com/en/techsupport_eng.htm#product/actuator/dynamixel_x/xm_series/xm430-w350.htm)  
 
 
-[&lt;&lt; Back](OP3-User's-Guide)
+[&lt;&lt; Back](OP3-User's-Guide.md)
