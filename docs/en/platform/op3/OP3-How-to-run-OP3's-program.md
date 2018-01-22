@@ -159,7 +159,7 @@ Offset file contains offset angles of each joint(radian) to correct distortion a
     r_sho_roll: 0
   ```
 
-> Reference : [How to use offset tuner](OP3-How-to-use-offset-tuner)  
+> Reference : [How to use offset tuner](OP3-How-to-use-offset-tuner.md)  
 
 
-[&lt;&lt; Back](OP3 User's Guide)
+[&lt;&lt; Back](OP3-User's-Guide.md)
