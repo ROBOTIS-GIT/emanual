@@ -43,7 +43,7 @@
 
 
 8. **Recovery**
-    1. [Manual Installation](OP3-Manual-  Installation.md)
+    1. [Manual Installation](OP3-Manual-Installation.md)
     2. [Recovery of ROBOTIS-OP3](OP3-Recovery-of-ROBOTIS-op3.md)
 
 <br>[&lt;&lt; Back](Home.md)
