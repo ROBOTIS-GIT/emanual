@@ -6,13 +6,13 @@ The GUI program provides various functions for ROBOTIS-OP3.
 - Control the head joint of the OP3  
 - Play action files in the OP3  
 
-> Reference : [op3_gui_demo](op3_gui_demo)
+> Reference : [op3_gui_demo](op3_gui_demo.md)
 
 <img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_gui_diagram.png?raw=true" align="bottom" width="70%"/>
 
 ### 2. Getting started
 #### 2.1 Download & Build
- > Reference : [Installing ROBOTIS ROS Package](OP3-Recovery-of-ROBOTIS-OP3#24-installation-robotis-ros-packages)  
+ > Reference : [Installing ROBOTIS ROS Package](OP3-Recovery-of-ROBOTIS-OP3#24-installation-robotis-ros-packages.md)  
 
 #### 2.2 Run the program
 There are three options to run the GUI program.
@@ -25,7 +25,7 @@ Open the terminal window and enter the following command.
 ```
 $ roslaunch op3_gui_demo op3_demo.launch
 ```  
-  > Reference : [How to run op3_mamager](OP3-How-to-run-OP3's-program)
+  > Reference : [How to run op3_mamager](OP3-How-to-run-OP3's-program.md)
 
 #### 2.3 Execution result
 <img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_gui.png?raw=true" align="bottom"/>
@@ -55,21 +55,21 @@ Clicking the button surrounded by the red dashed rectangle will let the `base_mo
 
   <img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_gui_get_module.png?raw=true" align="bottom"/>  
 
-#### 3.3 [How to use the Walking Tuner](OP3-How-to-use-walking-tuner)
+#### 3.3 [How to use the Walking Tuner](OP3-How-to-use-walking-tuner.md)
 This section explains how to configure and tune walking parameters.
 Saved parameters are used in the basic demo.  
 
 
-#### 3.4 [How to control head joints](OP3-How-to-control-the-head-joints)
+#### 3.4 [How to control head joints](OP3-How-to-control-the-head-joints.md)
 This section explains how to control the head joint of ROBOTIS-OP3.  
 
 
 
-#### 3.5 [How to play the motions](OP3-How-to-play-the-motions)
+#### 3.5 [How to play the motions](OP3-How-to-play-the-motions.md)
 This section explains how to play pre-defined actions.  
 
-#### 3.6 [How to control upgraded walking(online walking)](OP3-How-to-ocntrol-upgraded-walking)
+#### 3.6 [How to control upgraded walking(online walking)](OP3-How-to-ocntrol-upgraded-walking.md)
 This section explains how to control upgraded walking(download/run/test).
 
 
-[&lt;&lt; Back](OP3 User's Guide)
+[&lt;&lt; Back](OP3-User's-Guide.md)
