@@ -7,7 +7,7 @@ Keyboard and monitor are directly connected to ROBOTIS-OP3.
 
 ### 3. Remote Connection
 <img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_connection.png?raw=true"/>   
-  
+
    **Connect to ROBOTIS-OP3 over the network.**  
 
 
@@ -19,7 +19,7 @@ Keyboard and monitor are directly connected to ROBOTIS-OP3.
 
  - Via Wired(Ethernet)   
  When using wired connection, connect ROBOTIS OP3 to the same Router with PC so that OP3 can be connected as a DHCP client.  
-  
+
 #### 3.2 How to connect
  - SSH
     1. Execute SSH client program (ex: PuTTY)

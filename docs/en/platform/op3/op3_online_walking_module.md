@@ -1,16 +1,16 @@
 ### 1. Overview
 This chapter explains the module to control OP3's walking.  
-This module is compiled to a library to be used in [op3_manager](op3_manager.md).  
+This module is compiled to a library to be used in [op3_manager](op3_manager).  
 Online walking algorithm is described in this book ([Introduction to Humanoid Robotics](http://www.springer.com/gp/book/9783642545351)).
 
 
 ### 2. Getting started  
 #### 2.1 Download & Build
- > Reference : [Installing ROBOTIS ROS Package](OP3-Recovery-of-ROBOTIS-OP3#24-installation-robotis-ros-packages.md)    
+ > Reference : [Installing ROBOTIS ROS Package](OP3-Recovery-of-ROBOTIS-OP3#24-installation-robotis-ros-packages)    
 
 #### 2.2 Usage
 The Motion Module is used in the manager in the form of library.  
-> Reference : [Creating new robot manager](Creating-new-robot-manager.md)
+> Reference : [Creating new robot manager](Creating new robot manager)
 
 ### 3. ROS API
 #### 3.1 Subscribed Topics
@@ -76,4 +76,4 @@ The Motion Module is used in the manager in the form of library.
 &emsp;&emsp; This service is used to calculate matrix for online walking.  
 
 
-[&lt;&lt; Back](ROBOTIS-OP3-Modules.md)
+[&lt;&lt; Back](ROBOTIS-OP3-Modules)

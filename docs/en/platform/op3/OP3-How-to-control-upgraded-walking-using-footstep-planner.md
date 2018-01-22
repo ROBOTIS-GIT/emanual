@@ -1,11 +1,11 @@
 ### 1. Overview   
 This chapter explains upgraded walking and footstep planner.
 
-> Reference : [OP3-How-to-control-upgraded-walking](OP3-How-to-control-upgraded-walking)
+> Reference : [OP3-How-to-control-upgraded-walking](OP3-How-to-control-upgraded-walking.md)
 
 ### 2. Getting started  
 #### 2.1 Installation
- - [humanoid_navigation](humanoid_navigation) for footstep planner  
+ - [humanoid_navigation](humanoid_navigation.md) for footstep planner  
      follow link and install the packages  
 
  - [op3_navigation](https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Tools/tree/master/op3_navigation)  
@@ -62,7 +62,7 @@ This chapter explains upgraded walking and footstep planner.
   <img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_online_walking_footstep_02.png?raw=true" align="bottom"/>  
 
     <img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_online_walking_footstep_04.png?raw=true" align="bottom"/>    
-    
+
    ** **  
    5. plan the path and send a walking message to ROBOTIS-OP3     
 
@@ -72,4 +72,4 @@ This chapter explains upgraded walking and footstep planner.
 
 
 
-[&lt;&lt; Back](OP3 User's Guide)
+[&lt;&lt; Back](OP3-User's-Guide.md)

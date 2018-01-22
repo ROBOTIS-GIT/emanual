@@ -42,7 +42,7 @@ This chapter explains installation and configuration of Robot Operating System(R
      ```
 
      > Reference : In order to operate ROS in a network with multiple PCs, addresses of the ROS_MASTER_URI and the ROS_IP have to be replaced with the `core` PC's IP address and the remote PC's IP address respectively.  
-     > Reference : If Hotspot is configured, use "10.42.0.1". Otherwise, use "localhost" instead of IP address. 
+     > Reference : If Hotspot is configured, use "10.42.0.1". Otherwise, use "localhost" instead of IP address.
        - ROS_MASTER_URI=http://localhost:11311
        - ROS_IP=localhost
 
@@ -56,8 +56,8 @@ This chapter explains installation and configuration of Robot Operating System(R
  2. [ROBOTIS-Framerowk](https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/ROBOTIS-Framework-Documents) : The packages to use ROS (Robot Operating System) for robots assembled with ROBOTIS products.  
  3. [ROBOTIS-Framerowk-msgs](https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/ROBOTIS-Framework-Documents) : Messages used in the ROBOTIS-Framework.  
  4. [ROBOTIS-Math](https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/robotis_math) : Basic calculation related to transformation and trajectory functions.  
- 5. [ROBOTIS-OP3](OP3-ROBOTIS-ROS-Packages) : ROS Packages running in the ROBOTIS-OP3.
- 6. ROBOTIS-OP3-Common 
+ 5. [ROBOTIS-OP3](OP3-ROBOTIS-ROS-Packages.md) : ROS Packages running in the ROBOTIS-OP3.
+ 6. ROBOTIS-OP3-Common
  7. ROBOTIS-OP3-Demo  
  8. ROBOTIS-OP3-msgs  
  9. ROBOTIS-OP3-Tools  
@@ -76,7 +76,7 @@ This chapter explains installation and configuration of Robot Operating System(R
  2. robot_upstart  
     - This ROS Package is used to automatically execute ROS on startup.  
     - Link : [http://wiki.ros.org/robot_upstart](http://wiki.ros.org/robot_upstart)  
-    - [How to setup auto start](OP3-How-to-kill-the-demo-program#31-start-demo-program-on-start)  
+    - [How to setup auto start](OP3-How-to-kill-the-demo-program#31-start-demo-program-on-start.md)  
 
  3. usb_cam  
     - USB Camera  

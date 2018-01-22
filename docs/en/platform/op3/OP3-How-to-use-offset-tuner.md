@@ -2,8 +2,8 @@
 This chapter explains how to run the ROBOTIS-OP3 offset tuner program.  
 `op3_offset_tuner_server` and `op3_offset_tuner_client` are used to adjust offsets of ROBOTIS-OP3.  
 
-> Reference : [op3_offset_tuner_server](op3_offset_tuner_server)  
-> Reference2 : [op3_offset_tuner_client](op3_offset_tuner_client)  
+> Reference : [op3_offset_tuner_server](op3_offset_tuner_server.md)  
+> Reference2 : [op3_offset_tuner_client](op3_offset_tuner_client.md)  
 
 <img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_offset_tuner_diagram.png?raw=true" align="bottom" width="100%"/>  
 
@@ -49,4 +49,4 @@ $ roslaunch op3_offset_tuner_client op3_offset_tuner.launch
 src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-THORMANG3/How%20to%20use%20offset%20tuner_2.png?raw=true" align="bottom" width="100%"/>
 
 
-[&lt;&lt; Back](OP3 User's Guide)
+[&lt;&lt; Back](OP3-User's-Guide.md)

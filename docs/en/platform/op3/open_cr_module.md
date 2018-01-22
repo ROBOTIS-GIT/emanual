@@ -23,4 +23,4 @@ The Sensor Module is used in the manager in the form of library.
 `/robotis/open_cr/button`([std_msgs/String](http://docs.ros.org/api/std_msgs/html/msg/String.html))  
 &emsp;&emsp; This message notifies the status of the button connected to OpenCR GPIO.  
 
-<br>&lt;&lt; [Back](ROBOTIS-OP3-Modules.md)
+<br>[[&lt;&lt; [Back](ROBOTIS-OP3-Modules.md)

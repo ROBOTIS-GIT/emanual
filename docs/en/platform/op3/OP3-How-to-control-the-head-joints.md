@@ -2,7 +2,7 @@
 This chapter explains how to control the head joint of ROBOTIS-OP3.  
 Operator can get different camera view angle by controlling head joints.  
 
-> Reference : [op3_head_control_module](op3_head_control_module)  
+> Reference : [op3_head_control_module](op3_head_control_module.md)  
 
 
 ### 2. Head Joint Control  
@@ -21,4 +21,4 @@ Operator can get different camera view angle by controlling head joints.
 <img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_gui_control_head_03.png?raw=true" align="bottom"/>    
 
 
-[&lt;&lt; Back](OP3 User's Guide)
+[&lt;&lt; Back](OP3-User's-Guide.md)

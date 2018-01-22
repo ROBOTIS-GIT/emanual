@@ -1,7 +1,7 @@
 ### 1. Overview   
 This page explains how to control upgraded walking(online walking).  
 > Reference 1 : [Introduction to Humanoid Robotics](http://www.springer.com/gp/book/9783642545351)   
-> Reference 2 : [op3_online_walking_module](op3_online_walking_module)
+> Reference 2 : [op3_online_walking_module](op3_online_walking_module.md)
 
 ### 2. Description
 #### 2.1 How to
@@ -35,6 +35,6 @@ This page explains how to control upgraded walking(online walking).
     >  - Foot Distance : desired foot distance between left and right foot
 
 ### 3. Online walking using footstep planner
-  > Reference : [Online walking using footstep planner](OP3-How-to-control-upgraded-walking-using-footstep-planner)  
+  > Reference : [Online walking using footstep planner](OP3-How-to-control-upgraded-walking-using-footstep-planner.md)  
 
-[&lt;&lt; Back](OP3 User's Guide)
+[&lt;&lt; Back](OP3-User's-Guide.md)

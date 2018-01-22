@@ -11,7 +11,7 @@ System Configuration of ROBOTIS-OP3
    Linux Mint 18.1 Xfce
    > Reference : [User Guides](https://www.linuxmint.com/documentation.php)  
 
- - [Robot Operating System(ROS)](OP3-Robot-Operating-System)  
+ - [Robot Operating System(ROS)](OP3-Robot-Operating-System.md)  
    Version :  Kinetic  
    > Reference : [What is ROS?](http://www.ros.org/about-ros/)
 

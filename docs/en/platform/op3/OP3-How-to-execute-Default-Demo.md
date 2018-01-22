@@ -108,7 +108,7 @@ Press the mode button thrice from demonstration ready mode to switch to interact
 3. Return to Demonstration Ready Mode  
   Pressing and holding the mode button for 3 seconds will make ROBOTIS-OP3 to take the initial posture and return to Demonstration ready mode.
 
-    
+
 
 
 [&lt;&lt; Back](OP3-User's-Guide.md)

@@ -10,4 +10,4 @@ This node publish TF data from /world to /body_link.
 `/robotis/pelvis_pose_reset`([std_msgs::String](http://docs.ros.org/api/std_msgs/html/msg/String.html))  
 &emsp;&emsp; This message will reset the body_link pose to default value.  
 
-<br>[[&lt;&lt; Back|ROBOTIS OP3]]
+<br>[&lt;&lt; Back](ROBOTIS OP3.md)
