@@ -15,4 +15,4 @@ If ros-indigo-desktop-full was used to install, the following packages need to b
 # apt-get install ros-kinetic-gazebo-ros-control
 ```
 
-[&lt;&lt; Back](OP3 User's Guide)
+[&lt;&lt; Back](OP3-User's-Guide.md)
