@@ -14,7 +14,7 @@
 
 ### 3. Others
   1. [op3_balance_control](op3_balance_control.md)
-  2. [op3_localization](op3_localization)  
+  2. [op3_localization](op3_localization.md)  
   3. [op3_optimization](op3_optimization)
 
 
