@@ -10,7 +10,7 @@
 3. **[Getting Started](OP3-Getting-Started)**  
     1. [How to connect](OP3-How-to-connect.md)  
     2. [How to kill the demo program](OP3-How-to-kill-the-demo-program.md)
-    3. [How to restart the demo program](OP3-How-to-restart-the-demo program.md)
+    3. [How to restart the demo program](OP3-How-to-restart-the-demo-program.md)
 
 
 4. **[ROBOTIS ROS Packages](OP3-ROBOTIS-ROS-Packages)**  
@@ -27,14 +27,14 @@
     3. [How to execute GUI program](OP3-How-to-execute-GUI-program.md)
        1. [How to use walking tuner](OP3-How-to-use-walking-tuner.md)
        2. [How to play the motions](OP3-How-to-play-the-motions.md)
-       2. [How to control the head joints](OP3-How-to-control-the-head joints.md)
+       2. [How to control the head joints](OP3-How-to-control-the-head-joints.md)
     4. [How to use offset tuner](OP3-How-to-use-offset-tuner.md)
     5. [How to create the motions](op3_action_editor.md)
 
 
 6. **[Simulation](OP3-Simulation)**
     1. [Gazebo Installation](OP3-Gazebo-installation.md)
-    2. [How to execute Gazebo simulation](OP3-How-to-execute-Gazebo simulation.md)
+    2. [How to execute Gazebo simulation](OP3-How-to-execute-Gazebo-simulation.md)
 
 
 7. **Hardware**
@@ -43,7 +43,7 @@
 
 
 8. **Recovery**
-    1. [Manual Installation](OP3-Manual-Installation.md)
+    1. [Manual Installation](OP3-Manual-  Installation.md)
     2. [Recovery of ROBOTIS-OP3](OP3-Recovery-of-ROBOTIS-op3.md)
 
 <br>[&lt;&lt; Back](Home.md)
