@@ -1,11 +1,11 @@
 ### 1. Overview   
 This chapter explains how to play basic demonstrations of OP3.
 There are three available demos; playing soccer, vision and sequence of various actions.
-> Reference : [op3_demo](op3_demo)
+> Reference : [op3_demo](op3_demo.md)
 
 ### 2. Getting started
 #### 2.1 Download & Build
- > Reference : [Installing ROBOTIS ROS Package](OP3-Recovery-of-ROBOTIS-OP3#24-installation-robotis-ros-packages)  
+ > Reference : [Installing ROBOTIS ROS Package](OP3-Recovery-of-ROBOTIS-OP3#24-installation-robotis-ros-packages.md)  
 
 #### 2.2 Run
 1. Auto Start  
@@ -54,7 +54,7 @@ From the left, each button is assigned for Mode, Start, User and Reset.
 
 2. Setting Walking Parameters
   Walking motion imports parameters saved in the `op3_walking_module` in `op3_manager`. Default parameters can be configured by using walking tuner in the `op3_gui_demo`.  
-  > Reference : [How to use walking tuner](OP3-How-to-use-walking-tuner)  
+  > Reference : [How to use walking tuner](OP3-How-to-use-walking-tuner.md)  
 
 3. Return to Demonstration Ready Mode  
   Pressing and holding the mode button for 3 seconds will make ROBOTIS-OP3 to take the initial posture and return to Demonstration ready mode.  
@@ -111,4 +111,4 @@ Press the mode button thrice from demonstration ready mode to switch to interact
     
 
 
-[&lt;&lt; Back](OP3 User's Guide)
+[&lt;&lt; Back](OP3-User's-Guide.md)
