@@ -36,4 +36,4 @@ The Motion Module is used in the manager in the form of library.
    - via_pose : Angle of every joint for each waypoint(unit in degree, array structure)  
    - tar_pose : Target joint angles for initial posture
 
-[&lt;&lt; Back](ROBOTIS-OP3-Modules)
+[&lt;&lt; Back](ROBOTIS-OP3-Modules.md)
