@@ -21,25 +21,25 @@ The **Dynamixel Workbench** metapackage contains four packages: **Single Manager
 
 # [Installation](#installation)
 
-  **Main package**
+**Main package**
 
-  ```
-  $ sudo apt-get install ros-kinetic-dynamixel-workbench
-  $ sudo apt-get install ros-kinetic-dynamixel-workbench-msgs
-  ```
-  or
+```
+$ sudo apt-get install ros-kinetic-dynamixel-workbench
+$ sudo apt-get install ros-kinetic-dynamixel-workbench-msgs
+```
+or
 
-  ```
-  $ git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench.git
-  $ git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench-msgs.git
-  ```
+```
+$ git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench.git
+$ git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench-msgs.git
+```
 
-  **Dependent package**
+**Dependent package**
 
-  ```
-  $ sudo apt-get install ros-kinetic-dynamixel-sdk
-  $ sudo apt-get install ros-kinetic-qt-build
-  ```
+```
+$ sudo apt-get install ros-kinetic-dynamixel-sdk
+$ sudo apt-get install ros-kinetic-qt-build
+```
 
 # [Supported Dynamixels](#supported-dynamixels)
 
@@ -65,28 +65,20 @@ The **Dynamixel Workbench** metapackage contains four packages: **Single Manager
 ### Nodes
 
 1. dynamixel_monitor - To show states of a Dynamixel by topic messages
-
-
     + Messages
-        * /dynamixel/(model_name) - Provides states of connected Dynamixel
-
+        - /dynamixel/(model_name) - Provides states of connected Dynamixel
 
     + Services
-        * /dynamixel/info - Provides information about connected Dynamixel
-        * /dynamixel/command - Receive command to control Dynamixel
-            
+        - /dynamixel/info - Provides information about connected Dynamixel
+        - /dynamixel/command - Receive command to control Dynamixel
 
 1. dynamixel_controller - To change the Dynamixel's address value through command line
-
-
     + Messages
-    
 
     + Services
-        * /dynamixel/info - Get information about connected Dynamixel
-        * /dynamixel/command - Send command to control Dynamixel
+        - /dynamixel/info - Get information about connected Dynamixel
+        - /dynamixel/command - Send command to control Dynamixel
           
-
 * dynamixel_workbench_single_manager_gui - Check Dynamixel status and access Dynamixel's Control Table addresses via **GUI**.
 
 ![](/assets/images/sw/dynamixel/dynamixel_workbench/single_manager_gui.jpg)
@@ -94,16 +86,12 @@ The **Dynamixel Workbench** metapackage contains four packages: **Single Manager
 ### Nodes
 
 1. dynamixel_workbench_single_manager_gui - To manage and represent states of a Dynamixels and change their address value through GUI
-
-
     + Messages
-        * /dynamixel/(model_name) - Take states of connected Dynamixel
-
+        - /dynamixel/(model_name) - Take states of connected Dynamixel
 
     + Services
-        * /dynamixel/info - Get information about connected Dynamixel
-        * /dynamixel/command - Send command to control Dynamixel          
-
+        - /dynamixel/info - Get information about connected Dynamixel
+        - /dynamixel/command - Send command to control Dynamixel          
 
 ## [Controllers](#controllers) 
 
@@ -112,47 +100,31 @@ The **Dynamixel Workbench** metapackage contains four packages: **Single Manager
 ### Nodes
 
 1. position_control - Dynamixel position control example using Dynamixel Workbench library which is based on [Dynamixel SDK](http://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_sdk/overview/). 
-
-
     + Messages
-        * /dynamixel_state - Provides states of connected Dynamixels
-
+        - /dynamixel_state - Provides states of connected Dynamixels
 
     + Services
-        * /joint_command - Command to change the angle
-            
-
+        - /joint_command - Command to change the angle
+    
 1. velocity_control - Dynamixel velocity control example using Dynamixel Workbench library which is based on [Dynamixel SDK](http://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_sdk/overview/). 
-
-
     + Messages
-        * /dynamixel_state - Provides states of connected Dynamixels
-
-
+        - /dynamixel_state - Provides states of connected Dynamixels
     + Services
-        * /wheel_command - Command to change the speed
-        
+        - /wheel_command - Command to change the speed
+
 
 1. torque_control - Dynamixel torque control example using Dynamixel Workbench library which is based on [Dynamixel SDK](http://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_sdk/overview/). **Note: This packages only supports XM430-W350-R**
-
-
     + Messages
-        * /dynamixel_state - Provides states of connected Dynamixels
-
-
+        - /dynamixel_state - Provides states of connected Dynamixels
     + Services
-        * /joint_command - Command to change the angle
-
+        - /joint_command - Command to change the angle
 
 1. multi_port - Dynamixel multi-port example using Dynamixel Workbench library which is based on [Dynamixel SDK](http://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_sdk/overview/). 
-
-
     + Messages
-        * /dynamixel_state - Provides states of connected Dynamixels
-        
+        - /dynamixel_state - Provides states of connected Dynamixels
 
     + Services
-        * /joint_command - Command to change the angle  
+        - /joint_command - Command to change the angle  
 
 ## [Operators](#operators)
 
@@ -161,24 +133,16 @@ The **Dynamixel Workbench** metapackage contains four packages: **Single Manager
 ### Nodes
 
 1. joint_operator - Command Dynamixels to move to a specific position
-
-
     + Messages
-        
-
+            
     + Services
-        * /joint_command - Command to change the angle  
-
+        - /joint_command - Command to change the angle  
 
 1. wheel_operator - Give Dynamixels to rotate to a specific velocity
-
-
     + Messages
-        
-
+            
     + Services
-        * /wheel_command - Command to change the velocity  
-
+        - /wheel_command - Command to change the velocity  
 
 ## [Toolbox](#toolbox) 
 
@@ -187,219 +151,146 @@ The **Dynamixel Workbench** metapackage contains four packages: **Single Manager
 ### Library
 1. dynamixel_driver
     + Function Reference
+        - init(const char* device_name = "/dev/ttyUSB0", uint32_t baud_rate = 57600) - Set connected device name and baudrate of Dynamixels
 
+        - setPortHandler(const char *device_name) - Set Port Handler
 
-        * init(const char* device_name = "/dev/ttyUSB0", uint32_t baud_rate = 57600) - Set connected device name and baudrate of Dynamixels
+        - setPacketHandler(void) - Set PacketHandlers(1.0, 2.0)
 
+        - setPacketHandler(float protocol_version) - Set PacketHandler
 
-        * setPortHandler(const char *device_name) - Set Port Handler
+        - setBaudrate(uint32_t baud_rate) - Set baudrate
 
+        - getProtocolVersion(void) - Return protocol version
 
-        * setPacketHandler(void) - Set PacketHandlers(1.0, 2.0)
-        
+        - getBaudrate(void) - Return baudrate
 
-        * setPacketHandler(float protocol_version) - Set PacketHandler
+        - getModelName(uint8_t id) - Return model name
 
+        - getModelNum(uint8_t id) - Return model number
 
-        * setBaudrate(uint32_t baud_rate) - Set baudrate
+        - getControlItemPtr(uint8_t id) - Return pointer of control table item
 
+        - getTheNumberOfItem(uint8_t id) - Return the number of loaded control table item
 
-        * getProtocolVersion(void) - Return protocol version
+        - scan(uint8_t *get_id, uint8_t *get_id_num, uint8_t range = 200) - Scan Dynamixels
 
+        - ping(uint8_t id, uint16_t *get_model_number) - Ping a Dynamixel
 
-        * getBaudrate(void) - Return baudrate
+        - reboot(uint8_t id) - Reboot a Dynamixel
 
+        - reset(uint8_t id) - Reset a Dynamixel
 
-        * getModelName(uint8_t id) - Return model name
-    
+        - writeRegister(uint8_t id, const char *item_name, int32_t data) - Write data in address (item)
 
-        * getModelNum(uint8_t id) - Return model number
-    
+        - readRegister(uint8_t id, const char *item_name, int32_t *data) - Read data in address (item)
 
-        * getControlItemPtr(uint8_t id) - Return pointer of control table item
-        
+        - addSyncWrite(const char *item_name) - Add sync write handler
 
-        * getTheNumberOfItem(uint8_t id) - Return the number of loaded control table item
+        - syncWrite(const char *item_name, int32_t *data) - Write synchronize data in address (item)
 
+        - addSyncRead(const char *item_name) - Add sync read handler
 
-        * scan(uint8_t *get_id, uint8_t *get_id_num, uint8_t range = 200) - Scan Dynamixels
-        
+        - syncRead(const char *item_name, int32_t *data) - Read synchronize data in address (item)
 
-        * ping(uint8_t id, uint16_t *get_model_number) - Ping a Dynamixel
+        - initBulkWrite() - Initialize bulk write handler
 
+        - addBulkWriteParam(uint8_t id, const char *item_name, int32_t data) - Add parameter for bulk write
 
-        * reboot(uint8_t id) - Reboot a Dynamixel
+        - bulkWrite() - Write bulk data in address (item)
 
+        - initBulkRead() - Initialize bulk read handler
 
-        * reset(uint8_t id) - Reset a Dynamixel
+        - addBulkReadParam(uint8_t id, const char *item_name) - Add parameter for bulk read
 
+        - sendBulkReadPacket() - Send packet for bulk read
 
-        * writeRegister(uint8_t id, const char *item_name, int32_t data) - Write data in address (item)
+        - bulkRead(uint8_t id, const char *item_name, int32_t *data) - Read bulk data in address (item)
 
+        - convertRadian2Value(uint8_t id, float radian) - Convert radian to value
 
-        * readRegister(uint8_t id, const char *item_name, int32_t *data) - Read data in address (item)
+        - convertValue2Radian(uint8_t id, int32_t value) - Convert value to radian
 
+        - convertVelocity2Value(uint8_t id, float velocity) - Convert velocity to value
 
-        * addSyncWrite(const char *item_name) - Add sync write handler
+        - convertValue2Velocity(uint8_t id, int32_t value) - Convert value to velocity
 
+        - convertTorque2Value(uint8_t id, float torque) - Convert torque to value
 
-        * syncWrite(const char *item_name, int32_t *data) - Write synchronize data in address (item)
-
-
-        * addSyncRead(const char *item_name) - Add sync read handler
-
-
-        * syncRead(const char *item_name, int32_t *data) - Read synchronize data in address (item)
-
-
-        * initBulkWrite() - Initialize bulk write handler
-
-
-        * addBulkWriteParam(uint8_t id, const char *item_name, int32_t data) - Add parameter for bulk write
-
-
-        * bulkWrite() - Write bulk data in address (item)
-
-
-        * initBulkRead() - Initialize bulk read handler
-
-
-        * addBulkReadParam(uint8_t id, const char *item_name) - Add parameter for bulk read
-
-
-        * sendBulkReadPacket() - Send packet for bulk read
-
-
-        * bulkRead(uint8_t id, const char *item_name, int32_t *data) - Read bulk data in address (item)
-
-
-        * convertRadian2Value(uint8_t id, float radian) - Convert radian to value
-
-
-        * convertValue2Radian(uint8_t id, int32_t value) - Convert value to radian
-
-
-        * convertVelocity2Value(uint8_t id, float velocity) - Convert velocity to value
-
-
-        * convertValue2Velocity(uint8_t id, int32_t value) - Convert value to velocity
-
-
-        * convertTorque2Value(uint8_t id, float torque) - Convert torque to value
-
-
-        * convertValue2Torque(uint8_t id, int16_t value) - Convert value to torque
-
+        - convertValue2Torque(uint8_t id, int16_t value) - Convert value to torque
 
 1. dynamixel_workbench
     + Function Reference
+        - begin(const char* device_name = "/dev/ttyUSB0", uint32_t baud_rate = 57600) - Set connected device name and baudrate of Dynamixels
 
+        - scan(uint8_t *get_id, uint8_t *get_id_num = 0, uint8_t range = 200) - Scan Dynamixels
 
-        * begin(const char* device_name = "/dev/ttyUSB0", uint32_t baud_rate = 57600) - Set connected device name and baudrate of Dynamixels
+        - ping(uint8_t id, uint16_t *get_model_number = 0) - Ping a Dynamixel
 
+        - reboot(uint8_t id) - Reboot a Dynamixel
 
-        * scan(uint8_t *get_id, uint8_t *get_id_num = 0, uint8_t range = 200) - Scan Dynamixels
+        - reset(uint8_t id) - Reset a Dynamixel
 
+        - setID(uint8_t id, uint8_t new_id) - Set new id
 
-        * ping(uint8_t id, uint16_t *get_model_number = 0) - Ping a Dynamixel
+        - setBaud(uint8_t id, uint32_t new_baud) - Set new baudrate
 
+        - setPacketHandler(float protocol_version) - Set new packet handler
 
-        * reboot(uint8_t id) - Reboot a Dynamixel
+        - getModelName(uint8_t id) - Get model name
 
+        - ledOn(uint8_t id) - LED On
 
-        * reset(uint8_t id) - Reset a Dynamixel
+        - ledOff(uint8_t id) - LED off
 
+        - jointMode(uint8_t id, uint16_t vel = 0, uint16_t acc = 0) - Set joint mode
 
-        * setID(uint8_t id, uint8_t new_id) - Set new id
+        - wheelMode(uint8_t id, uint16_t vel = 0, uint16_t acc = 0) - Set wheel mode
 
+        - currentMode(uint8_t id, uint8_t cur = 50) - Set current mode
 
-        * setBaud(uint8_t id, uint32_t new_baud) - Set new baudrate
+        - goalPosition(uint8_t id, uint16_t goal) - Send position data
 
+        - goalSpeed(uint8_t id, int32_t goal) - Send velocity data
 
-        * setPacketHandler(float protocol_version) - Set new packet handler
+        - itemWrite(uint8_t id, const char* item_name, int32_t value) - Write data in address
 
+        - syncWrite(const char *item_name, int32_t* value) - Write synchronize data in address
 
-        * getModelName(uint8_t id) - Get model name
+        - bulkWrite(void) - Write data in address - Write bulk data in address
 
+        - itemRead(uint8_t id, const char* item_name) - Read data in address
 
-        * ledOn(uint8_t id) - LED On
+        - syncRead(const char* item_name) - Read synchronize data in address
 
+        - bulkRead(uint8_t id, const char* item_name) - Read bulk data in address
 
-        * ledOff(uint8_t id) - LED off
+        - addSyncWrite(const char* item_name) - Add sync write handler
 
+        - addSyncRead(const char* item_name) - Add sync read handler
 
-        * jointMode(uint8_t id, uint16_t vel = 0, uint16_t acc = 0) - Set joint mode
+        - initBulkWrite() - Initialize bulk write handler
 
+        - initBulkRead() - Initialize bulk read handler
 
-        * wheelMode(uint8_t id, uint16_t vel = 0, uint16_t acc = 0) - Set wheel mode
+        - addBulkWriteParam(uint8_t id, const char *item_name, int32_t data) - Add bulk write parameter
 
+        - addBulkReadParam(uint8_t id, const char *item_name) - Add bulk read parameter
 
-        * currentMode(uint8_t id, uint8_t cur = 50) - Set current mode
+        - setBulkRead() - Set bulk read parameter
 
+        - convertRadian2Value(uint8_t id, float radian) - Convert radian to value
 
-        * goalPosition(uint8_t id, uint16_t goal) - Send position data
+        - convertValue2Radian(uint8_t id, int32_t value) - Convert value to radian
 
+        - convertVelocity2Value(uint8_t id, float velocity) - Convert velocity to value
 
-        * goalSpeed(uint8_t id, int32_t goal) - Send velocity data
+        - convertValue2Velocity(uint8_t id, int32_t value) - Convert value to velocity
 
+        - convertTorque2Value(uint8_t id, float torque) - Convert torque to value
 
-        * itemWrite(uint8_t id, const char* item_name, int32_t value) - Write data in address
-
-
-        * syncWrite(const char *item_name, int32_t* value) - Write synchronize data in address
-
-
-        * bulkWrite(void) - Write data in address - Write bulk data in address
-
-
-        * itemRead(uint8_t id, const char* item_name) - Read data in address
-
-
-        * syncRead(const char* item_name) - Read synchronize data in address
-
-
-        * bulkRead(uint8_t id, const char* item_name) - Read bulk data in address
-
-
-        * addSyncWrite(const char* item_name) - Add sync write handler
-
-
-        * addSyncRead(const char* item_name) - Add sync read handler
-
-
-        * initBulkWrite() - Initialize bulk write handler
-
-
-        * initBulkRead() - Initialize bulk read handler
-
-
-        * addBulkWriteParam(uint8_t id, const char *item_name, int32_t data) - Add bulk write parameter
-
-
-        * addBulkReadParam(uint8_t id, const char *item_name) - Add bulk read parameter
-
-
-        * setBulkRead() - Set bulk read parameter
-
-
-        * convertRadian2Value(uint8_t id, float radian) - Convert radian to value
-        
-
-        * convertValue2Radian(uint8_t id, int32_t value) - Convert value to radian
-
-
-        * convertVelocity2Value(uint8_t id, float velocity) - Convert velocity to value
-        
-
-        * convertValue2Velocity(uint8_t id, int32_t value) - Convert value to velocity
-
-
-        * convertTorque2Value(uint8_t id, float torque) - Convert torque to value
-        
-
-        * convertValue2Torque(uint8_t id, int16_t value) - Convert value to torque
-            
-
+        - convertValue2Torque(uint8_t id, int16_t value) - Convert value to torque
+                
 # [Tutorials](#tutorials)
 
 ## [Single Manager Tutorials](#single-manager-tutorials)
@@ -411,20 +302,16 @@ The **Dynamixel Workbench** metapackage contains four packages: **Single Manager
 
 1. Create a package
 
-    ```
-    $ cd ~/catkin_ws/src
-    $ catkin_create_pkg my_dynamixel_workbench_tutorial std_msgs roscpp
-    ```
+```
+$ cd ~/catkin_ws/src
+$ catkin_create_pkg my_dynamixel_workbench_tutorial std_msgs roscpp
+```
 
+2. Create a launch file for the single manager node
 
-1. Create a launch file for the single manager node
-
-
-    First we need a launch file in launch folder in ***my_dynamixel_workbench_tutorial*** package. This launch file connects to the ***dynamixel_workbench_single_manager*** package and sets device name and baudrate of a Dynamixel. We assume that the Dynamixel is connected to **/dev/ttyUSB0** and baudrate **57600**. If not, make sure you set your device name and baudrate correctly. **NOTE: IN THIS TUTORIAL, WE USE XM430-W210**
-
+First we need a launch file in launch folder in ***my_dynamixel_workbench_tutorial*** package. This launch file connects to the ***dynamixel_workbench_single_manager*** package and sets device name and baudrate of a Dynamixel. We assume that the Dynamixel is connected to **/dev/ttyUSB0** and baudrate **57600**. If not, make sure you set your device name and baudrate correctly. **NOTE: IN THIS TUTORIAL, WE USE XM430-W210**
 
     1. Make a launch file in ros package which we created
-
 
     ```            
     $ cd my_dynamixel_workbench_tutorial
@@ -432,10 +319,8 @@ The **Dynamixel Workbench** metapackage contains four packages: **Single Manager
     $ cd launch
     $ gedit single_manager.launch
     ```
-    
 
-    1. Type or Copy & Paste code below to connect dynamixel_workbench_single manager packages and set parameters
-    
+    2. Type or Copy & Paste code below to connect dynamixel_workbench_single manager packages and set parameters
 
     ```
     <launch>
@@ -463,21 +348,16 @@ The **Dynamixel Workbench** metapackage contains four packages: **Single Manager
     </launch>
     ```
 
-
 **Note :** Each Dynamixel has different default baudrate (e.g. 1000000 or 57600). Before excute the single manager, it needs to be checked the baudrate of [Dynamixel e-MANUAL](http://emanual.robotis.com/docs/en/dxl/x/xm430-w210/)
 {: .notice--info}
 
-
-1. Before we operating this package, we need to access permission for USB device
-
+3. Before we operating this package, we need to access permission for USB device
 
 ```
 $ sudo chmod a+rw /dev/ttyUSB0
 ```
     
-
-1. Launch paskage
-
+4. Launch paskage
 
     1. Now we can run tutorial package:
     
@@ -514,112 +394,99 @@ $ sudo chmod a+rw /dev/ttyUSB0
     [CMD]
     ```
 
+5. Check state of Dynamixel
 
-1. Check state of Dynamixel
+Now, we can check a state of linked Dynamixel through /dynamixel/[motor_name] topic:
 
+```
+$ rostopic echo /dynamixel/[motor_name]
+```
 
-    Now, we can check a state of linked Dynamixel through /dynamixel/[motor_name] topic:
+For example:
 
-    ```
-    $ rostopic echo /dynamixel/[motor_name]
-    ```
+```
+Model_Number: 1030
+Firmware_Version: 40
+ID: 1
+Baud_Rate: 1
+Return_Delay_Time: 250
+Drive_Mode: 0
+Operating_Mode: 1
+Secondary_ID: 255
+Protocol_Version: 2
+Homing_Offset: 0
+Moving_Threshold: 10
+Temperature_Limit: 80
+Max_Voltage_Limit: 160
+Min_Voltage_Limit: 95
+PWM_Limit: 885
+Current_Limit: 32767
+Acceleration_Limit: 32767
+Velocity_Limit: 480
+Max_Position_Limit: 4095
+Min_Position_Limit: 0
+Shutdown: 1
+Torque_Enable: 0
+LED: 0
+Status_Return_Level: 2
+Registered_Instruction: 0
+Hardware_Error_Status: 0
+Velocity_I_Gain: 1920
+Velocity_P_Gain: 100
+Position_D_Gain: 0
+Position_I_Gain: 0
+Position_P_Gain: 800
+Feedforward_2nd_Gain: 0
+Feedforward_1st_Gain: 0
+Bus_Watchdog: 0
+Goal_PWM: 885
+Goal_Current: 1193
+Goal_Velocity: 480
+Profile_Acceleration: 0
+Profile_Velocity: 0
+Goal_Position: 2320
+Realtime_Tick: 30351
+Moving: 0
+Moving_Status: 0
+Present_PWM: 0
+Present_Load: 0
+Present_Current: -3
+Present_Velocity: 0
+Present_Position: 2320
+Velocity_Trajectory: 0
+Position_Trajectory: 2320
+Present_Input_Voltage: 121
+Present_Temperature: 28
+```
 
-    For example:
+6. Send command to Dynamixel
 
-    ```
-    Model_Number: 1030
-    Firmware_Version: 40
-    ID: 1
-    Baud_Rate: 1
-    Return_Delay_Time: 250
-    Drive_Mode: 0
-    Operating_Mode: 1
-    Secondary_ID: 255
-    Protocol_Version: 2
-    Homing_Offset: 0
-    Moving_Threshold: 10
-    Temperature_Limit: 80
-    Max_Voltage_Limit: 160
-    Min_Voltage_Limit: 95
-    PWM_Limit: 885
-    Current_Limit: 32767
-    Acceleration_Limit: 32767
-    Velocity_Limit: 480
-    Max_Position_Limit: 4095
-    Min_Position_Limit: 0
-    Shutdown: 1
-    Torque_Enable: 0
-    LED: 0
-    Status_Return_Level: 2
-    Registered_Instruction: 0
-    Hardware_Error_Status: 0
-    Velocity_I_Gain: 1920
-    Velocity_P_Gain: 100
-    Position_D_Gain: 0
-    Position_I_Gain: 0
-    Position_P_Gain: 800
-    Feedforward_2nd_Gain: 0
-    Feedforward_1st_Gain: 0
-    Bus_Watchdog: 0
-    Goal_PWM: 885
-    Goal_Current: 1193
-    Goal_Velocity: 480
-    Profile_Acceleration: 0
-    Profile_Velocity: 0
-    Goal_Position: 2320
-    Realtime_Tick: 30351
-    Moving: 0
-    Moving_Status: 0
-    Present_PWM: 0
-    Present_Load: 0
-    Present_Current: -3
-    Present_Velocity: 0
-    Present_Position: 2320
-    Velocity_Trajectory: 0
-    Position_Trajectory: 2320
-    Present_Input_Voltage: 121
-    Present_Temperature: 28
-    ```
+We operate a Dynamixel using command. Address names can be checked published message or using table command. If user wants to specific information about control table of a Dynamixel, please follow the link [E-MANUAL](http://emanual.robotis.com/docs/en/dxl/x/xm430-w210/). **NOTE: BEFORE YOU COMMAND, YOU NEED TO PRESS ENTER KEY**
 
+```
+[CMD]torque_on
+[CMD]goal 2048
+```
 
-1. Send command to Dynamixel
-
-
-    We operate a Dynamixel using command. Address names can be checked published message or using table command. If user wants to specific information about control table of a Dynamixel, please follow the link [E-MANUAL](http://emanual.robotis.com/docs/en/dxl/x/xm430-w210/). **NOTE: BEFORE YOU COMMAND, YOU NEED TO PRESS ENTER KEY**
-
-
-    ```
-    [CMD]torque_on
-    [CMD]goal 2048
-    ```
-
-
-    The Dynamixel is running!! If you have a question about running single_manager, please make a [new issue](https://github.com/ROBOTIS-GIT/dynamixel-workbench/issues).
-
+The Dynamixel is running!! If you have a question about running single_manager, please make a [new issue](https://github.com/ROBOTIS-GIT/dynamixel-workbench/issues).
 
 ### [GUI](#gui)
 
 **Note :** IF YOU ALREADY CREATE **my_dynamixel_workbench_tutorial** PACKAGE, THEN YOU JUMP TO STEP 2.
 {: .notice--info}
 
-
 1. Create a package
 
+```
+$ cd ~/catkin_ws/src
+$ catkin_create_pkg my_dynamixel_workbench_tutorial std_msgs roscpp
+```
 
-    ```
-    $ cd ~/catkin_ws/src
-    $ catkin_create_pkg my_dynamixel_workbench_tutorial std_msgs roscpp
-    ```
+2. Create a launch file for the single monitor node
 
-
-1. Create a launch file for the single monitor node
-
-
-    First we need a launch file in launch folder in ***my_dynamixel_workbench_tutorial*** package. This launch file connects to the ***dynamixel_workbench_single_manager*** package and sets device name and baudrate of a Dynamixel. We assume that the Dynamixel is connected to **/dev/ttyUSB0** and baudrate **57600**. If not, make sure you set your device name and baudrate correctly. **NOTE: IN THIS TUTORIAL, WE USE XM430-W210**
-
+First we need a launch file in launch folder in ***my_dynamixel_workbench_tutorial*** package. This launch file connects to the ***dynamixel_workbench_single_manager*** package and sets device name and baudrate of a Dynamixel. We assume that the Dynamixel is connected to **/dev/ttyUSB0** and baudrate **57600**. If not, make sure you set your device name and baudrate correctly. **NOTE: IN THIS TUTORIAL, WE USE XM430-W210**
 
     1. Make a launch file in ros package which we created
-
 
     ```            
     $ cd my_dynamixel_workbench_tutorial
@@ -628,10 +495,8 @@ $ sudo chmod a+rw /dev/ttyUSB0
     $ gedit single_monitor.launch
     ```
 
-
-    1. Type or Copy&Paste code below to connect dynamixel_workbench_single manager packages and set parameters
-
-
+    2. Type or Copy&Paste code below to connect dynamixel_workbench_single manager packages and set parameters
+    
     ```
     <launch>
     <arg name="use_ping"         default="false"/>
@@ -655,45 +520,34 @@ $ sudo chmod a+rw /dev/ttyUSB0
     </launch>
     ```
 
-
     **NOTE: Each Dynamixel has different default baudrate (e.g. 1000000 or 57600). Before excute the single manager, it needs to be checked the baudrate of [Dynamixel e-MANUAL](http://emanual.robotis.com/docs/en/dxl/x/xm430-w210/)**
 
-
-1. Launch packages
-
+3. Launch packages
 
     1. Before we operating this package, we need to access permission for USB device
     
-
     ```
     $ sudo chmod a+rw /dev/ttyUSB0
     ```
-
-    1. Now we can run tutorial package:
+    2. Now we can run tutorial package:
     
-
     ```
     $ cd ~/catkin_ws && catkin_make 
     $ roslaunch my_dynamixel_workbench_tutorial single_monitor.launch
     ```
 
-
     If single_manager find linked Dynamixel, we could show state of it and command list:
-
 
     ```
     [ID] 1, [Model Name] XM430-W210, [BAUD RATE] 57600 [VERSION] 2.0
     dynamixel_workbench_single_manager : Init Success!
     ```
 
-
     And we run single_manager_gui:
-
 
     ```
     $ rosrun dynamixel_workbench_single_manager_gui dynamixel_workbench_single_manager_gui
     ```
-
 
     Now, GUI is opened! 
 
@@ -701,22 +555,17 @@ $ sudo chmod a+rw /dev/ttyUSB0
 
     We check current states of linked Dynamixel in left window and information of it in up-right.
 
+4. Send command to Dynamixel
 
-1. Send command to Dynamixel
+Let's operate the Dynamixel using GUI. We easily change a ID, Operating Mode and Baudrate by seperated widget and access all address using combobox widget. If we change motor position, first we push a **Torque Enable** button. **NOTE: SOME ADDRESS VALUES CAN BE APPLIED AFTER TORQUE ON. IF YOU WANT MORE INFORMATION, PLEASE FOLLOW THE LINK [E-MANUAL](http://emanual.robotis.com/docs/en/dxl/x/xm430-w210/))**
 
+![](/assets/images/sw/dynamixel/dynamixel_workbench/gui_torque_enable.jpg)
 
-    Let's operate the Dynamixel using GUI. We easily change a ID, Operating Mode and Baudrate by seperated widget and access all address using combobox widget. If we change motor position, first we push a **Torque Enable** button. **NOTE: SOME ADDRESS VALUES CAN BE APPLIED AFTER TORQUE ON. IF YOU WANT MORE INFORMATION, PLEASE FOLLOW THE LINK [E-MANUAL](http://emanual.robotis.com/docs/en/dxl/x/xm430-w210/))**
+Second, we should select goal_position in combobox and turn dial, type value on line edit or push Position ZERO. 
 
-    ![](/assets/images/sw/dynamixel/dynamixel_workbench/gui_torque_enable.jpg)
+![](/assets/images/sw/dynamixel/dynamixel_workbench/gui_goal_position.jpg)
 
-
-    Second, we should select goal_position in combobox and turn dial, type value on line edit or push Position ZERO. 
-
-    ![](/assets/images/sw/dynamixel/dynamixel_workbench/gui_goal_position.jpg)
-
-
-    The Dynamixel is running!! If you have a question about running single_manager_gui, please make a [new issue](https://github.com/ROBOTIS-GIT/dynamixel-workbench/issues).
-
+The Dynamixel is running!! If you have a question about running single_manager_gui, please make a [new issue](https://github.com/ROBOTIS-GIT/dynamixel-workbench/issues).
 
 ## [Controllers Tutorials](#controllers-tutorials)
 
@@ -725,31 +574,24 @@ $ sudo chmod a+rw /dev/ttyUSB0
 **Note :** IF YOU ALREADY CREATE **my_dynamixel_workbench_tutorial** PACKAGE, THEN YOU JUMP TO STEP 2.
 {: .notice--info}
 
-
 1. Create a package
 
+```
+$ cd ~/catkin_ws/src
+$ catkin_create_pkg my_dynamixel_workbench_tutorial std_msgs roscpp
+```
 
-    ```
-    $ cd ~/catkin_ws/src
-    $ catkin_create_pkg my_dynamixel_workbench_tutorial std_msgs roscpp
-    ```
+2. Prepare Dynamixels
 
+We need to prepare connected Dynamixels which are set same baudrate. In this tutorial shows pan tilt example.
 
-1. Prepare Dynamixels
+![](/assets/images/sw/dynamixel/dynamixel_workbench/pan_tilt_example.jpg)
 
+3. Create a launch file for the position control node            
 
-    We need to prepare connected Dynamixels which are set same baudrate. In this tutorial shows pan tilt example.
-
-    ![](/assets/images/sw/dynamixel/dynamixel_workbench/pan_tilt_example.jpg)
-
-
-1. Create a launch file for the position control node            
-
-    First we need a launch file in launch folder in ***my_dynamixel_workbench_tutorial*** package. This launch file connects to the ***dynamixel_workbench_controllers*** package and sets device name and baudrate of a Dynamixel. We assume that the Dynamixel is connected to **/dev/ttyUSB0** and baudrate **57600**. If not, make sure you set your device name and baudrate correctly. **NOTE: IN THIS TUTORIAL, WE USE XM430-W350**
-
+First we need a launch file in launch folder in ***my_dynamixel_workbench_tutorial*** package. This launch file connects to the ***dynamixel_workbench_controllers*** package and sets device name and baudrate of a Dynamixel. We assume that the Dynamixel is connected to **/dev/ttyUSB0** and baudrate **57600**. If not, make sure you set your device name and baudrate correctly. **NOTE: IN THIS TUTORIAL, WE USE XM430-W350**
 
     1. Make a launch file in ros package which we created
-
 
     ```
     $ cd my_dynamixel_workbench_tutorial
@@ -758,9 +600,7 @@ $ sudo chmod a+rw /dev/ttyUSB0
     $ gedit position_control.launch
     ```
 
-
-    1. Type or copy&paste code below to connect dynamixel_workbench_controllers packages and set parameters
-
+    2. Type or copy&paste code below to connect dynamixel_workbench_controllers packages and set parameters
 
     ```
     <launch>
@@ -784,123 +624,100 @@ $ sudo chmod a+rw /dev/ttyUSB0
     </launch>
     ```
 
-
-    1. Before we operating this package, we need to access permission for USB device
-
+    3. Before we operating this package, we need to access permission for USB device
 
     ```
     $ sudo chmod a+rw /dev/ttyUSB0
     ```
 
+4. Run package
 
-1. Run package
+Now we can run tutorial package:
 
+```
+$ cd ~/catkin_ws && catkin_make
+$ roslaunch my_dynamixel_workbench_tutorial position_control.launch
+```
 
-    Now we can run tutorial package:
+If position_controllers find linked Dynamixels, we could show state of it and command list and set torque on:
 
+```
+-----------------------------------------------------------------------
+dynamixel_workbench controller; position control example             
+-----------------------------------------------------------------------
 
-    ```
-    $ cd ~/catkin_ws && catkin_make
-    $ roslaunch my_dynamixel_workbench_tutorial position_control.launch
-    ```
+MODEL   : XM430-W350
+ID      : 1
 
+MODEL   : XM430-W350
+ID      : 2
 
-    If position_controllers find linked Dynamixels, we could show state of it and command list and set torque on:
+-----------------------------------------------------------------------
+```
 
+5. Check state of Dynamixel
 
-    ```
-    -----------------------------------------------------------------------
-    dynamixel_workbench controller; position control example             
-    -----------------------------------------------------------------------
+Now, we can check a state of linked Dynamixels through /dynamixel_state topic:
 
-    MODEL   : XM430-W350
-    ID      : 1
+```
+$ rostopic echo /dynamixel_state
+```
 
-    MODEL   : XM430-W350
-    ID      : 2
+For example:
 
-    -----------------------------------------------------------------------
-    ```
+```
+dynamixel_state: 
+- 
+    model_name: "XM430-W350"
+    id: 1
+    torque_enable: 1
+    goal_current: 0
+    goal_velocity: 350
+    goal_position: 4004
+    present_current: 0
+    present_velocity: 0
+    present_position: 4004
+    moving: 0
+- 
+    model_name: "XM430-W350"
+    id: 2
+    torque_enable: 1
+    goal_current: 0
+    goal_velocity: 350
+    goal_position: 1969
+    present_current: 0
+    present_velocity: 0
+    present_position: 1969
+    moving: 0
+```
 
+6. Control pan & tilt
 
-1. Check state of Dynamixel
+We run the two linked Dynamixels using **rosservice call** or **dynamixel_workbench_operators** with different unit ***radian*** or ***raw*** value.
 
+```
+$ rosservice call /joint_command -- [unit] [id] [goal_position]
+```
 
-    Now, we can check a state of linked Dynamixels through /dynamixel_state topic:
+or
 
+```
+$ rosrun dynamixel_workbench_operators joint_operator [unit] [id] [goal_position]
+```
 
-    ```
-    $ rostopic echo /dynamixel_state
-    ```
+Example
 
+```
+$ rosservice call /joint_command -- rad 1 2.0
+```
 
-    For example:
+or
 
+```
+$ rosrun dynamixel_workbench_operators joint_operator raw 1 3000
+```
 
-    ```
-    dynamixel_state: 
-    - 
-        model_name: "XM430-W350"
-        id: 1
-        torque_enable: 1
-        goal_current: 0
-        goal_velocity: 350
-        goal_position: 4004
-        present_current: 0
-        present_velocity: 0
-        present_position: 4004
-        moving: 0
-    - 
-        model_name: "XM430-W350"
-        id: 2
-        torque_enable: 1
-        goal_current: 0
-        goal_velocity: 350
-        goal_position: 1969
-        present_current: 0
-        present_velocity: 0
-        present_position: 1969
-        moving: 0
-    ```
-
-
-1. Control pan & tilt
-
-
-    We run the two linked Dynamixels using **rosservice call** or **dynamixel_workbench_operators** with different unit ***radian*** or ***raw*** value.
-
-
-    ```
-    $ rosservice call /joint_command -- [unit] [id] [goal_position]
-    ```
-
-
-    or
-
-
-    ```
-    $ rosrun dynamixel_workbench_operators joint_operator [unit] [id] [goal_position]
-    ```
-
-
-    Example
-
-
-    ```
-    $ rosservice call /joint_command -- rad 1 2.0
-    ```
-
-
-    or
-
-
-    ```
-    $ rosrun dynamixel_workbench_operators joint_operator raw 1 3000
-    ```
-
-
-    The pan & tilt is running!! If you have a question about running ***position_control***, please make a [new issue](https://github.com/ROBOTIS-GIT/dynamixel-workbench/issues).
-
+The pan & tilt is running!! If you have a question about running ***position_control***, please make a [new issue](https://github.com/ROBOTIS-GIT/dynamixel-workbench/issues).
 
 ### [Velocity controller](#velocity-controller)
 
@@ -909,29 +726,22 @@ $ sudo chmod a+rw /dev/ttyUSB0
 
 1. Create a package
 
+```
+$ cd ~/catkin_ws/src
+$ catkin_create_pkg my_dynamixel_workbench_tutorial std_msgs roscpp
+```
 
-    ```
-    $ cd ~/catkin_ws/src
-    $ catkin_create_pkg my_dynamixel_workbench_tutorial std_msgs roscpp
-    ```
+2. Prepare two Dynamixels
 
+We need two Dynamixels which are assembled common mobile platform.
 
-1. Prepare two Dynamixels
+![](/assets/images/sw/dynamixel/dynamixel_workbench/wheel_example.jpg)
 
+3. Create a launch file for the velocity control node            
 
-    We need two Dynamixels which are assembled common mobile platform.
-
-    ![](/assets/images/sw/dynamixel/dynamixel_workbench/wheel_example.jpg)
-
-
-1. Create a launch file for the velocity control node            
-
-
-    First we need a launch file in launch folder in ***my_dynamixel_workbench_tutorial*** package. This launch file connects to the ***dynamixel_workbench_controllers*** package and sets device name and baudrate of a Dynamixel. We assume that the Dynamixel is connected to **/dev/ttyUSB0** and baudrate **57600**. If not, make sure you set your device name and baudrate correctly. **NOTE: IN THIS TUTORIAL, WE USE XM430-W350**
-
+First we need a launch file in launch folder in ***my_dynamixel_workbench_tutorial*** package. This launch file connects to the ***dynamixel_workbench_controllers*** package and sets device name and baudrate of a Dynamixel. We assume that the Dynamixel is connected to **/dev/ttyUSB0** and baudrate **57600**. If not, make sure you set your device name and baudrate correctly. **NOTE: IN THIS TUTORIAL, WE USE XM430-W350**
 
     1. Make a launch file in ros package which we created
-
 
     ```
     $ cd my_dynamixel_workbench_tutorial
@@ -940,9 +750,7 @@ $ sudo chmod a+rw /dev/ttyUSB0
     $ gedit velocity_control.launch
     ```
 
-
-    1. Type or copy&paste code below to connect dynamixel_workbench_controllers packages and set parameters
-
+    2. Type or copy&paste code below to connect dynamixel_workbench_controllers packages and set parameters
 
     ```
     <launch>
@@ -968,125 +776,103 @@ $ sudo chmod a+rw /dev/ttyUSB0
     </launch>
     ```
 
-
-    1. Before we operating this package, we need to access permission for USB device
-
+    3. Before we operating this package, we need to access permission for USB device
 
     ```
     $ sudo chmod a+rw /dev/ttyUSB0
     ```
 
+4. Run package
 
-1. Run package
+Now we can run tutorial package:
 
+```
+$ cd ~/catkin_ws && catkin_make
+$ roslaunch my_dynamixel_workbench_tutorial velocity_control.launch
+```
 
-    Now we can run tutorial package:
+If velocity_controllers find linked Dynamixels, we could show state of it and command list and set torque on:
 
+```
+-----------------------------------------------------------------------
+dynamixel_workbench controller; velocity control example             
+-----------------------------------------------------------------------
 
-    ```
-    $ cd ~/catkin_ws && catkin_make
-    $ roslaunch my_dynamixel_workbench_tutorial velocity_control.launch
-    ```
+MODEL   : XM430-W350
+ID      : 1
 
+MODEL   : XM430-W350
+ID      : 2
 
-    If velocity_controllers find linked Dynamixels, we could show state of it and command list and set torque on:
+-----------------------------------------------------------------------
+```
 
+5. Check state of Dynamixel
 
-    ```
-    -----------------------------------------------------------------------
-    dynamixel_workbench controller; velocity control example             
-    -----------------------------------------------------------------------
+Now, we can check a state of linked Dynamixels through /dynamixel_state topic:
 
-    MODEL   : XM430-W350
-    ID      : 1
+```
+$ rostopic echo /dynamixel_state
+```
 
-    MODEL   : XM430-W350
-    ID      : 2
+For example:
 
-    -----------------------------------------------------------------------
-    ```
+```
+dynamixel_state: 
+- 
+    model_name: "XM430-W350"
+    id: 1
+    torque_enable: 1
+    goal_current: 0
+    goal_velocity: 0
+    goal_position: 2050
+    present_current: 0
+    present_velocity: 0
+    present_position: 2049
+    moving: 0
+- 
+    model_name: "XM430-W350"
+    id: 2
+    torque_enable: 1
+    goal_current: 0
+    goal_velocity: 0
+    goal_position: 1969
+    present_current: 0
+    present_velocity: 0
+    present_position: 1967
+    moving: 0
+```
 
+6. Control mobile platform
 
-1. Check state of Dynamixel
+We run the two linked Dynamixels using rosservice call or dynamixel_workbench_operators [unit : rad/sec].
 
+```
+$ rosrun dynamixel_workbench_operators wheel_operator 
+```
 
-    Now, we can check a state of linked Dynamixels through /dynamixel_state topic:
+Then, we can set velocity using keyboard.
 
+```
+[ INFO] [1498123238.521332487]: Set angular velocity(+-0.2 rad/sec) to your Dynamixel!! by using keyboard
+[ INFO] [1498123238.521369361]: w : Forward
+[ INFO] [1498123238.521380496]: x : Backward
+[ INFO] [1498123238.521389146]: a : Left
+[ INFO] [1498123238.521397016]: d : Right
+[ INFO] [1498123238.521404724]: s : STOPS
 
-    ```
-    $ rostopic echo /dynamixel_state
-    ```
+[ INFO] [1498123238.521414139]: ESC : exit
+```
 
+Press 'w' then the mobile plaform is running!! or
 
-    For example:
+```
+$ rosservice call /wheel_command -- [right_vel] [left_vel]
+```
 
+The mobile plaform is working!!
 
-    ```
-    dynamixel_state: 
-    - 
-        model_name: "XM430-W350"
-        id: 1
-        torque_enable: 1
-        goal_current: 0
-        goal_velocity: 0
-        goal_position: 2050
-        present_current: 0
-        present_velocity: 0
-        present_position: 2049
-        moving: 0
-    - 
-        model_name: "XM430-W350"
-        id: 2
-        torque_enable: 1
-        goal_current: 0
-        goal_velocity: 0
-        goal_position: 1969
-        present_current: 0
-        present_velocity: 0
-        present_position: 1967
-        moving: 0
-    ```
-
-
-1. Control mobile platform
-
-
-    We run the two linked Dynamixels using rosservice call or dynamixel_workbench_operators [unit : rad/sec].
-
-
-    ```
-    $ rosrun dynamixel_workbench_operators wheel_operator 
-    ```
-
-
-    Then, we can set velocity using keyboard.
-
-
-    ```
-    [ INFO] [1498123238.521332487]: Set angular velocity(+-0.2 rad/sec) to your Dynamixel!! by using keyboard
-    [ INFO] [1498123238.521369361]: w : Forward
-    [ INFO] [1498123238.521380496]: x : Backward
-    [ INFO] [1498123238.521389146]: a : Left
-    [ INFO] [1498123238.521397016]: d : Right
-    [ INFO] [1498123238.521404724]: s : STOPS
-
-    [ INFO] [1498123238.521414139]: ESC : exit
-    ```
-
-
-    Press 'w' then the mobile plaform is running!! or
-
-
-    ```
-    $ rosservice call /wheel_command -- [right_vel] [left_vel]
-    ```
-
-
-    The mobile plaform is working!!
-
-
-    If you have a question about running ***velocity_control***, please make a [new issue](https://github.com/ROBOTIS-GIT/dynamixel-workbench/issues).
-
+If you have a question about running ***velocity_control***, please make a [new issue](https://github.com/ROBOTIS-GIT/dynamixel-workbench/issues).
 
 ### [Torque controller](#torque-controller)
 
@@ -1096,32 +882,24 @@ $ sudo chmod a+rw /dev/ttyUSB0
 **Warning :** THIS TUTORIAL ONLY SUPPORT XM430-W350-R.
 {: .notice--warning}
 
-
 1. Create a package
 
+```
+$ cd ~/catkin_ws/src
+$ catkin_create_pkg my_dynamixel_workbench_tutorial std_msgs roscpp
+```
 
-    ```
-    $ cd ~/catkin_ws/src
-    $ catkin_create_pkg my_dynamixel_workbench_tutorial std_msgs roscpp
-    ```
+2. Prepare two Dynamixels
 
+We need to prepare connected Dynamixels which are set same baudrate. In this tutorial shows pan tilt example.
 
-1. Prepare two Dynamixels
+![](/assets/images/sw/dynamixel/dynamixel_workbench/pan_tilt_example.jpg)
 
+3. Create a launch file for the torque control node            
 
-    We need to prepare connected Dynamixels which are set same baudrate. In this tutorial shows pan tilt example.
-
-    ![](/assets/images/sw/dynamixel/dynamixel_workbench/pan_tilt_example.jpg)
-
-
-1. Create a launch file for the torque control node            
-
-
-    First we need a launch file in launch folder in ***my_dynamixel_workbench_tutorial*** package. This launch file connects to the ***dynamixel_workbench_controllers*** package and sets device name and baudrate of a Dynamixel. We assume that the Dynamixel is connected to **/dev/ttyUSB0** and baudrate **3000000**. If not, make sure you set your device name and baudrate correctly. **NOTE: IN THIS TUTORIAL, WE USE XM430-W350**
-
+First we need a launch file in launch folder in ***my_dynamixel_workbench_tutorial*** package. This launch file connects to the ***dynamixel_workbench_controllers*** package and sets device name and baudrate of a Dynamixel. We assume that the Dynamixel is connected to **/dev/ttyUSB0** and baudrate **3000000**. If not, make sure you set your device name and baudrate correctly. **NOTE: IN THIS TUTORIAL, WE USE XM430-W350**
 
     1. Make a launch file in ros package which we created
-
 
     ```
     $ cd my_dynamixel_workbench_tutorial
@@ -1130,9 +908,7 @@ $ sudo chmod a+rw /dev/ttyUSB0
     $ gedit torque_control.launch
     ```
 
-
-    1. Type or copy&paste code below to connect dynamixel_workbench_controllers packages and set parameters
-
+    2. Type or copy&paste code below to connect dynamixel_workbench_controllers packages and set parameters
 
     ```
     <launch>
@@ -1158,122 +934,100 @@ $ sudo chmod a+rw /dev/ttyUSB0
     </launch>
     ```
 
-
-    1. Before we operating this package, we need to access permission for USB device
-
+    3. Before we operating this package, we need to access permission for USB device
 
     ```
     $ sudo chmod a+rw /dev/ttyUSB0
     ```
 
+4. Run package
 
-1. Run package
+Now we can run tutorial package:
 
+```
+$ cd ~/catkin_ws && catkin_make
+$ roslaunch my_dynamixel_workbench_tutorial torque_control.launch
+```
 
-    Now we can run tutorial package:
+If position_controllers find linked Dynamixels, we could show state of it and command list and set torque on:
 
+```
+-----------------------------------------------------------------------
+dynamixel_workbench controller; torque control example               
+-----------------------------------------------------------------------
 
-    ```
-    $ cd ~/catkin_ws && catkin_make
-    $ roslaunch my_dynamixel_workbench_tutorial torque_control.launch
-    ```
+MODEL   : XM430-W350
+ID      : 1
 
+MODEL   : XM430-W350
+ID      : 2
 
-    If position_controllers find linked Dynamixels, we could show state of it and command list and set torque on:
+-----------------------------------------------------------------------
+```
 
+5. Check state of Dynamixel
 
-    ```
-    -----------------------------------------------------------------------
-    dynamixel_workbench controller; torque control example               
-    -----------------------------------------------------------------------
+Now, we can check a state of linked Dynamixels through /dynamixel_state topic:
 
-    MODEL   : XM430-W350
-    ID      : 1
+```
+$ rostopic echo /dynamixel_state
+```
 
-    MODEL   : XM430-W350
-    ID      : 2
+For example:
 
-    -----------------------------------------------------------------------
-    ```
+```
+dynamixel_state: 
+- 
+    model_name: "XM430-W350"
+    id: 1
+    torque_enable: 1
+    goal_current: 0
+    goal_velocity: 350
+    goal_position: 2049
+    present_current: 0
+    present_velocity: 0
+    present_position: 2049
+    moving: 0
+- 
+    model_name: "XM430-W350"
+    id: 2
+    torque_enable: 1
+    goal_current: -375
+    goal_velocity: 350
+    goal_position: 1967
+    present_current: -19
+    present_velocity: -90
+    present_position: 2328
+    moving: 1
+```
 
+6. Control pan & tilt
 
-1. Check state of Dynamixel
+We run the two linked Dynamixels using **rosservice call** or **dynamixel_workbench_operators** with different unit ***radian*** or ***raw*** value.
 
+```
+$ rosservice call /joint_command -- [unit] [id] [goal_position]
+```
 
-    Now, we can check a state of linked Dynamixels through /dynamixel_state topic:
+or
 
+```
+$ rosrun dynamixel_workbench_operators joint_operator [unit] [id] [goal_position]
+```
 
-    ```
-    $ rostopic echo /dynamixel_state
-    ```
+Example
 
+```
+$ rosservice call /joint_command -- rad 1 2.0
+```
 
-    For example:
+or
 
+```
+$ rosrun dynamixel_workbench_operators joint_operator raw 1 3000
+```
 
-    ```
-    dynamixel_state: 
-    - 
-        model_name: "XM430-W350"
-        id: 1
-        torque_enable: 1
-        goal_current: 0
-        goal_velocity: 350
-        goal_position: 2049
-        present_current: 0
-        present_velocity: 0
-        present_position: 2049
-        moving: 0
-    - 
-        model_name: "XM430-W350"
-        id: 2
-        torque_enable: 1
-        goal_current: -375
-        goal_velocity: 350
-        goal_position: 1967
-        present_current: -19
-        present_velocity: -90
-        present_position: 2328
-        moving: 1
-    ```
-
-
-1. Control pan & tilt
-
-
-    We run the two linked Dynamixels using **rosservice call** or **dynamixel_workbench_operators** with different unit ***radian*** or ***raw*** value.
-
-
-    ```
-    $ rosservice call /joint_command -- [unit] [id] [goal_position]
-    ```
-
-
-    or
-
-
-    ```
-    $ rosrun dynamixel_workbench_operators joint_operator [unit] [id] [goal_position]
-    ```
-
-
-    Example
-
-
-    ```
-    $ rosservice call /joint_command -- rad 1 2.0
-    ```
-
-
-    or
-
-
-    ```
-    $ rosrun dynamixel_workbench_operators joint_operator raw 1 3000
-    ```
-
-    The pan & tilt is running!! If you have a question about running ***torque_control***, please make a [new issue](https://github.com/ROBOTIS-GIT/dynamixel-workbench/issues).
-
+The pan & tilt is running!! If you have a question about running ***torque_control***, please make a [new issue](https://github.com/ROBOTIS-GIT/dynamixel-workbench/issues).
 
 ### [Multi port controller](#multi-port-controller)
 
@@ -1282,27 +1036,20 @@ $ sudo chmod a+rw /dev/ttyUSB0
 
 1. Create a package
 
+```
+$ cd ~/catkin_ws/src
+$ catkin_create_pkg my_dynamixel_workbench_tutorial std_msgs roscpp
+```
 
-    ```
-    $ cd ~/catkin_ws/src
-    $ catkin_create_pkg my_dynamixel_workbench_tutorial std_msgs roscpp
-    ```
+2. Prepare Dynamixels
 
+We need to prepare connected Dynamixels which are set same baudrate. In this tutorial shows connected three Dynamixels.
 
-1. Prepare Dynamixels
+3. Create a launch file for the position control node            
 
-
-    We need to prepare connected Dynamixels which are set same baudrate. In this tutorial shows connected three Dynamixels.
-
-
-1. Create a launch file for the position control node            
-
-
-    First we need a launch file in launch folder in ***my_dynamixel_workbench_tutorial*** package. This launch file connects to the ***dynamixel_workbench_controllers*** package and sets device name and baudrate of a Dynamixel. We assume that the Dynamixel is connected to **/dev/ttyUSB0** and baudrate **57600**. If not, make sure you set your device name and baudrate correctly. **NOTE: IN THIS TUTORIAL, WE USE XM430-W350**
-
+First we need a launch file in launch folder in ***my_dynamixel_workbench_tutorial*** package. This launch file connects to the ***dynamixel_workbench_controllers*** package and sets device name and baudrate of a Dynamixel. We assume that the Dynamixel is connected to **/dev/ttyUSB0** and baudrate **57600**. If not, make sure you set your device name and baudrate correctly. **NOTE: IN THIS TUTORIAL, WE USE XM430-W350**
 
     1. Make a launch file in ros package which we created
-
 
     ```
     $ cd my_dynamixel_workbench_tutorial
@@ -1311,9 +1058,7 @@ $ sudo chmod a+rw /dev/ttyUSB0
     $ gedit multi_port.launch
     ```
 
-
-    1. Type or copy&paste code below to connect dynamixel_workbench_controllers packages and set parameters
-
+    2. Type or copy&paste code below to connect dynamixel_workbench_controllers packages and set parameters
 
     ```
     <launch>
@@ -1343,30 +1088,23 @@ $ sudo chmod a+rw /dev/ttyUSB0
     </launch>
     ```
 
-
-    1. Before we operating this package, we need to access permission for USB device
-
+    3. Before we operating this package, we need to access permission for USB device
 
     ```
     $ sudo chmod a+rw /dev/ttyUSB0
     $ sudo chmod a+rw /dev/ttyUSB1
     ```
 
-
-1. Run package
-
+4. Run package
 
     Now we can run tutorial package:
-
 
     ```
     $ cd ~/catkin_ws && catkin_make
     $ roslaunch my_dynamixel_workbench_tutorial multi_port.launch
     ```
 
-
     If multi_controllers find linked Dynamixels, we could show state of it and command list and set torque on:
-
 
     ```
     -----------------------------------------------------------------------
@@ -1387,92 +1125,77 @@ $ sudo chmod a+rw /dev/ttyUSB0
     -----------------------------------------------------------------------
     ```
 
+5. Check state of Dynamixel
 
-1. Check state of Dynamixel
+Now, we can check a state of linked Dynamixels through /dynamixel_state topic:
 
+```
+$ rostopic echo /dynamixel_state
+```
 
-    Now, we can check a state of linked Dynamixels through /dynamixel_state topic:
+For example:
 
+```
+dynamixel_state: 
+- 
+    model_name: "XM430-W350"
+    id: 1
+    torque_enable: 1
+    goal_current: 0
+    goal_velocity: 0
+    goal_position: 2050
+    present_current: 0
+    present_velocity: 0
+    present_position: 2049
+    moving: 0
+- 
+    model_name: "XM430-W350"
+    id: 2
+    torque_enable: 1
+    goal_current: 0
+    goal_velocity: 0
+    goal_position: 1765
+    present_current: 0
+    present_velocity: 0
+    present_position: 1765
+    moving: 0
+- 
+    model_name: "MX-28"
+    id: 1
+    torque_enable: 1
+    goal_current: 0
+    goal_velocity: 0
+    goal_position: 698
+    present_current: 0
+    present_velocity: 0
+    present_position: 698
+    moving: 0
+```
 
-    ```
-    $ rostopic echo /dynamixel_state
-    ```
+6. Control pan & tilt
 
+We run the two linked Dynamixels using **rosservice call** or **dynamixel_workbench_operators** with different unit ***radian*** or ***raw*** value.
 
-    For example:
+```
+$ rosservice call /joint_command -- [unit] [id] [goal_position]
+```
 
+or
 
-    ```
-    dynamixel_state: 
-    - 
-        model_name: "XM430-W350"
-        id: 1
-        torque_enable: 1
-        goal_current: 0
-        goal_velocity: 0
-        goal_position: 2050
-        present_current: 0
-        present_velocity: 0
-        present_position: 2049
-        moving: 0
-    - 
-        model_name: "XM430-W350"
-        id: 2
-        torque_enable: 1
-        goal_current: 0
-        goal_velocity: 0
-        goal_position: 1765
-        present_current: 0
-        present_velocity: 0
-        present_position: 1765
-        moving: 0
-    - 
-        model_name: "MX-28"
-        id: 1
-        torque_enable: 1
-        goal_current: 0
-        goal_velocity: 0
-        goal_position: 698
-        present_current: 0
-        present_velocity: 0
-        present_position: 698
-        moving: 0
-    ```
+```
+$ rosrun dynamixel_workbench_operators joint_operator [unit] [id] [goal_position]
+```
 
+Example
 
-1. Control pan & tilt
+```
+$ rosservice call /joint_command -- rad 1 2.0
+```
 
+or
 
-    We run the two linked Dynamixels using **rosservice call** or **dynamixel_workbench_operators** with different unit ***radian*** or ***raw*** value.
+```
+$ rosrun dynamixel_workbench_operators joint_operator raw 1 3000
+```
 
-
-    ```
-    $ rosservice call /joint_command -- [unit] [id] [goal_position]
-    ```
-
-
-    or
-
-
-    ```
-    $ rosrun dynamixel_workbench_operators joint_operator [unit] [id] [goal_position]
-    ```
-
-
-    Example
-
-
-    ```
-    $ rosservice call /joint_command -- rad 1 2.0
-    ```
-
-
-    or
-
-
-    ```
-    $ rosrun dynamixel_workbench_operators joint_operator raw 1 3000
-    ```
-
-
-    The Dynamixel is running!! If you have a question about running ***multi_port***, please make a [new issue](https://github.com/ROBOTIS-GIT/dynamixel-workbench/issues).
+The Dynamixel is running!! If you have a question about running ***multi_port***, please make a [new issue](https://github.com/ROBOTIS-GIT/dynamixel-workbench/issues).
