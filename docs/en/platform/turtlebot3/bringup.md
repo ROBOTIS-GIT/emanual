@@ -29,7 +29,7 @@ sidebar:
 **Warning :** When the battery voltage is lower than 11V, the buzzer alarm will continuously sound and actuators will be disabled. The battery must be recharged when the buzzer alarm sounds.
 {: .notice--warning}
 
-**Note :** Before start bringup TurtleBot3, We recommend you add `export` command to `bashrc` depend on your TurtleBot3(`burger` or `waffle`)
+**Note :** Before start bringup TurtleBot3, We recommend you add `export` command to `bashrc` depend on your TurtleBot3(`burger` or `waffle` or `waffle_pi`)
 ``` bash
   gedit ~/.bashrc
 ```
@@ -101,6 +101,35 @@ $ roslaunch turtlebot3_bringup turtlebot3_core.launch
 
 ``` bash
 $ export TURTLEBOT3_MODEL=waffle
+$ roslaunch turtlebot3_bringup turtlebot3_remote.launch
+$ rosrun rviz rviz -d `rospack find turtlebot3_description`/rviz/model.rviz
+```
+
+![](/assets/images/platform/turtlebot3/bringup/rviz_waffle_model.jpg)
+
+### [TurtleBot3 Waffle Pi](#turtlebot3-waffle-pi)
+
+**[TurtleBot]** Bring up basic packages to start TurtleBot3 applications.
+
+``` bash
+$ roslaunch turtlebot3_bringup turtlebot3_robot.launch
+```
+
+**Tip :** If you want to launch Lidar sensor, Raspberry Pi Camera and core separately, please use below commands.
+
+``` bash
+$ roslaunch raspicam_node camerav2_1280x960.launch
+$ roslaunch turtlebot3_bringup turtlebot3_lidar.launch
+$ roslaunch turtlebot3_bringup turtlebot3_core.launch
+```
+
+**Note :** If `lost sync with device` error message is displayed on the terminal window, sensor devices of the TurtleBot3 might not be securely connected.
+{: .notice--info}
+
+**[Remote PC]** Run RViz
+
+``` bash
+$ export TURTLEBOT3_MODEL=waffle_pi
 $ roslaunch turtlebot3_bringup turtlebot3_remote.launch
 $ rosrun rviz rviz -d `rospack find turtlebot3_description`/rviz/model.rviz
 ```

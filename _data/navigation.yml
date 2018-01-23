@@ -5575,6 +5575,8 @@ turtlebot3:
         url: /platform/turtlebot3/specifications/#data-of-turtlebot3-burger
       - title: "Data of TurtleBot3 Waffle"
         url: /platform/turtlebot3/specifications/#data-of-turtlebot3-waffle
+      - title: "Data of TurtleBot3 Waffle Pi"
+        url: /platform/turtlebot3/specifications/#data-of-turtlebot3-waffle-pi
     - title: "Components"
       url: /platform/turtlebot3/specifications/#components
       children:
@@ -5712,6 +5714,8 @@ turtlebot3:
         url: /platform/turtlebot3/bringup/#turtlebot3-burger
       - title: "TurtleBot3 Waffle"
         url: /platform/turtlebot3/bringup/#turtlebot3-waffle
+      - title: "TurtleBot3 Waffle Pi"
+        url: /platform/turtlebot3/bringup/#turtlebot3-waffle-pi
   - title: "Teleoperation"
     url: /platform/turtlebot3/teleoperation/#teleoperation
     children:
