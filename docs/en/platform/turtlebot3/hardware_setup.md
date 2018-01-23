@@ -15,13 +15,15 @@ sidebar:
 
 # [Hardware Setup](#hardware-setup)
 
-![](/assets/images/platform/turtlebot3/hardware_setup/turtlebot3_models_rd2.png)
+![](/assets/images/platform/turtlebot3/hardware_setup/turtlebot3_models.png)
 
 ## [Main Components](#main-components)
 
 ![](/assets/images/platform/turtlebot3/hardware_setup/turtlebot3_burger_components.png)
 
 ![](/assets/images/platform/turtlebot3/hardware_setup/turtlebot3_waffle_components.png)
+
+![](/assets/images/platform/turtlebot3/hardware_setup/turtlebot3_waffle_pi_components.png)
 
 ## [Part List](#part-list)
 
