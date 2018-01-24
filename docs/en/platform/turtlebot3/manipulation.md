@@ -15,7 +15,7 @@ sidebar:
 
 # [Manipulation](#manipulation)
 
-`Note` This instruction was tested on <kbd>Ubuntu 16.04</kbd>, <kbd>Linux Mint 18.1</kbd> and <kbd>ROS Kinetic Kame</kbd>.
+`Note` This instruction was tested on `Ubuntu 16.04`, `Linux Mint 18.1` and `ROS Kinetic Kame`.
 {: .notice--info}
 
 `Note` If you want more specfic information about OpenManipulator, please refer to the [OpenManipulator e-Manual](/docs/en/platform/openmanipulator/)
