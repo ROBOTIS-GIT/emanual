@@ -108,7 +108,7 @@ Once the gui application is appeared on the screen, you can select data topic na
 
 ### [(Optional) To Try as the Example Video Shows](#optional-to-try-as-the-example-video-shows)
 
-**[TurtleBot]** Input <kbd>ctrl</kbd> + <kbd>c</kbd> to quit the previously run camera node, then run other realsense_camera node
+**[TurtleBot]** Input `ctrl` + `c` to quit the previously run camera node, then run other realsense_camera node
 
 ``` bash
 $ roslaunch realsense_camera r200_nodelet_rgbd.launch
@@ -132,20 +132,20 @@ $ roslaunch turtlebot3_slam turtlebot3_slam.launch
 $ rosrun rviz rviz -d `rospack find turtlebot3_slam`/rviz/turtlebot3_slam.rviz
 ```
 
-**[Remote PC]** Click <kbd>Panels</kbd> - <kbd>Views</kbd> to open the view window
+**[Remote PC]** Click `Panels` - `Views` to open the view window
 
-**[Remote PC]** Click <kbd>TopDownOrtho (rviz)</kbd> and change it into <kbd>XYOrbit (rviz)</kbd>
+**[Remote PC]** Click `TopDownOrtho (rviz)` and change it into `XYOrbit (rviz)`
 
-**[Remote PC]** Click <kbd>add</kbd> - <kbd>By topic</kbd> and find the PointCloud2 type `/points` topic in `/camera/depth`, then click it
+**[Remote PC]** Click `add` - `By topic` and find the PointCloud2 type `/points` topic in `/camera/depth`, then click it
 
-**[Remote PC]** Click PointCloud2 type topic on the left window, then change <kbd>Color Transformer</kbd> from <kbd>Intensity</kbd> to <kbd>AxisColor</kbd>. This will show the depth of each points by color description.
+**[Remote PC]** Click PointCloud2 type topic on the left window, then change `Color Transformer` from `Intensity` to `AxisColor`. This will show the depth of each points by color description.
 
-**[Remote PC]** Click <kbd>add</kbd> - <kbd>By topic</kbd> and find the Image type `/image_color` topic in `/camera/rgb`, then click it. This will show the view of the rgb camera
+**[Remote PC]** Click `add` - `By topic` and find the Image type `/image_color` topic in `/camera/rgb`, then click it. This will show the view of the rgb camera
 
 
 ## [References](#references)
 
-- Intel® RealSense™ Datasheet https://software.intel.com/sites/default/files/managed/d7/a9/realsense-camera-r200-product-datasheet.pdf
-- Data ranges https://software.intel.com/en-us/articles/intel-realsense-data-ranges
-- Intel® RealSense™ SDK https://software.intel.com/en-us/intel-realsense-sdk
-- Purchase https://click.intel.com/realsense.html
+- [Intel® RealSense™ Datasheet](https://software.intel.com/sites/default/files/managed/d7/a9/realsense-camera-r200-product-datasheet.pdf)
+- [Data ranges](https://software.intel.com/en-us/articles/intel-realsense-data-ranges)
+- [Intel® RealSense™ SDK](https://software.intel.com/en-us/intel-realsense-sdk)
+- [Purchase](https://click.intel.com/realsense.html)

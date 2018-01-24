@@ -62,8 +62,8 @@ Here is the detail specification document : [pdf](/assets/docs/LDS_Basic_Specifi
 **Note :** The 360 Laser Distance Sensor LDS-01 for TurtleBot3 uses molex 51021-0800 and 53048-0810 instead of the basic housing and connector.
 {: .notice--info}
 
-- [for LDS] Molex 51021-0800 (http://www.molex.com/pdm_docs/sd/510210800_sd.pdf)
-- [for USB2LDS] Molex 53048-0810  (http://www.molex.com/pdm_docs/sd/530480810_sd.pdf)
+- [for LDS] [Molex 51021-0800](http://www.molex.com/pdm_docs/sd/510210800_sd.pdf)
+- [for USB2LDS] [Molex 53048-0810](http://www.molex.com/pdm_docs/sd/530480810_sd.pdf)
 
 
 

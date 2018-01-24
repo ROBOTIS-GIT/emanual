@@ -89,4 +89,4 @@ $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 $ rosrun map_server map_saver -f ~/map
 ```
 
-**map.pgm** and **map.yaml** files will be created in the `~/` directory (``$HOME` directory, `/home/<username>`).
+**map.pgm** and **map.yaml** files will be created in the `~/` ($HOME directory : `/home/<username>`) directory.

@@ -22,7 +22,7 @@ sidebar:
 
 **[Remote PC]** Download `Ubuntu MATE 16.04` on the Raspberry Pi 3 from the link below.
 
-- https://ubuntu-mate.org/download/
+- [Ubuntu MATE](https://ubuntu-mate.org/download/)
 
 ![](/assets/images/platform/turtlebot3/preparation/download_ubuntu_mate_image.png)
 
@@ -43,5 +43,5 @@ $ unxz ubuntu-mate-16.04.2-desktop-armhf-raspberry-pi.img.xz
 $ sudo ddrescue -D --force ubuntu-mate-16.04.2-desktop-armhf-raspberry-pi.img /dev/sdx
 ```
 
-**Tip :** It is recommended using `GNOME Disks`, but other applications such as `Win32 Disk Imager` on Windows can be used. https://sourceforge.net/projects/win32diskimager/
+**Tip :** It is recommended using `GNOME Disks`, but other applications such as `Win32 Disk Imager` on Windows can be used. [Win32 Disk Imager](https://sourceforge.net/projects/win32diskimager/)
 {: .notice--info}

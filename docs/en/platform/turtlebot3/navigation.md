@@ -32,7 +32,7 @@ The Navigation locates TurtleBot3 to the calculated position in the map by combi
 
 ## [Perform Navigation](#perform-navigation)
 
-**Tip :** The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is <kbd>Ctrl</kbd>-<kbd>Alt</kbd>-<kbd>T</kbd>.
+**Tip :** The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`-`Alt`-`T`.
 {: .notice--info}
 
 **[Remote PC]** Launch the navigation file.
@@ -58,14 +58,14 @@ $ rosrun rviz rviz -d `rospack find turtlebot3_navigation`/rviz/turtlebot3_nav.r
 
 **[Remote PC]** Before starting the navigation, RViz should be updated with initial location and pose of TurtleBot3. To upate the initial data, follow the instruction below.
 
-- Click the <kbd>2D Pose Estimate</kbd> button.
+- Click the `2D Pose Estimate` button.
 - Click on the approxtimate point in the map where the TurtleBot3 is located and drag the cursor to indicate the direction where TurtleBot3 faces.
 
-Every green arrow stands for an expected position of TurtleBot3. The laser scanner will draw approximate figures of wall on the map. If the drawing doesn't show the figures incorrectly, repeat localizing the TurtleBot3 from clicking <kbd>2D Pose Estimate</kbd> button above.
+Every green arrow stands for an expected position of TurtleBot3. The laser scanner will draw approximate figures of wall on the map. If the drawing doesn't show the figures incorrectly, repeat localizing the TurtleBot3 from clicking `2D Pose Estimate` button above.
 
 **[Remote PC]** If TurtleBot3 is localized, it will automatically create the path to the target position. In order to set a goal position, follow the instruction below.
 
-- Click the <kbd>2D Nav Goal</kbd> button.
+- Click the `2D Nav Goal` button.
 - Click on a specific point in the map to set a goal position and drag the cursor to the direction where TurtleBot should be facing at the end.
 
 Setting a goal position might fail if the path to the goal position cannot be created.
@@ -73,4 +73,4 @@ If you wish to stop the robot before it reaches to the goal position, set the cu
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/VYlMywwYALU" frameborder="0" allowfullscreen></iframe>
 
-Reference doc: http://wiki.ros.org/turtlebot_navigation/Tutorials/Autonomously%20navigate%20in%20a%20known%20map
+[Reference doc](http://wiki.ros.org/turtlebot_navigation/Tutorials/Autonomously%20navigate%20in%20a%20known%20map)

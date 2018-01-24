@@ -18,13 +18,13 @@ sidebar:
 This chapter shows some demos using Turtlebot3.
 In order to implement these demos, you have to install the turtlebot3_applications package.
 
-**Note :** Turtlebot3 has been tested on <kbd>Ubuntu 16.04</kbd> and <kbd>ROS Kinetic Kame</kbd>.
+**Note :** Turtlebot3 has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 {: .notice--info}
 
-**Tip :** The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is <kbd>Ctrl</kbd>-<kbd>Alt</kbd>-<kbd>T</kbd>.
+**Tip :** The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`-`Alt`-`T`.
 {: .notice--info}
 
-**[Remote PC]** Go to ROS source directory (/home/<user_name>/catkin_ws/src) and clone the turtlebot3_applications repository.
+**[Remote PC]** Go to ROS source directory (/home/(user_name)/catkin_ws/src) and clone the turtlebot3_applications repository.
 
 ``` bash
 $ cd ~/catkin_ws/src
@@ -105,10 +105,10 @@ $ rosrun turtlebot3_follower follower.py
 **Note :** The turtlebot3_panorama demo uses pano_ros for taking snapshots and stitching them together to create panoramic image.
 {: .notice--info}
 
-**Note :** Panorama demo requires to install Raspicam package. Instructions for installing this package can be found at https://github.com/UbiquityRobotics/raspicam_node
+**Note :** Panorama demo requires to install Raspicam package. Instructions for installing this package can be found at [Gihub Link](https://github.com/UbiquityRobotics/raspicam_node)
 {: .notice--info}
 
-**Note :** Panorama demo requires to install OpenCV and cvbridge packages. Instructions for installing OpenCV can be found at http://docs.opencv.org/2.4/doc/tutorials/introduction/linux_install/linux_install.html
+**Note :** Panorama demo requires to install OpenCV and cvbridge packages. Instructions for installing OpenCV can be found at [OpenCV Tutorial Link](http://docs.opencv.org/2.4/doc/tutorials/introduction/linux_install/linux_install.html)
 {: .notice--info}
 
 **[TurtleBot]** Launch the Raspberry Pi cam V2
