@@ -136,8 +136,8 @@ Download [ROS Teleop][ros-teleop] and run the application.
 
 **[Remote PC]** Install packages for teleoperation using LEAP motion.
 
-- https://www.leapmotion.com/setup
-- https://developer.leapmotion.com/downloads/sdk-preview
+- [LEAP Setup](https://www.leapmotion.com/setup)
+- [Download SDK](https://developer.leapmotion.com/downloads/sdk-preview)
 
 ``` bash
 $ leapd
