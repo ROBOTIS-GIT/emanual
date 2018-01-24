@@ -25,23 +25,29 @@ TurtleBot3 simulator in Ubuntu 14.04 (This tutorial is builed by [cyaninfinite](
 
 Programming with Blockly to run TurtleBot3 (This tutorial is builed by [Dabit Industries](https://dabit.industries/))
 
+![](/assets/images/platform/turtlebot3/learn/turn_lr_deg.gif)
+
  - [Blockly Wiki](https://turtlebot-3-blockly-wiki.readthedocs.io/en/latest/)
 
-## [Courses](#courses)
-
-### [The Construct](#the-construct)
+## [The Construct](#the-construct)
 
 This lecture is made by [the Construct](http://www.theconstructsim.com/)
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/y54BWXInJDQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
   - [MASTERING WITH ROS: TurtleBot3](http://www.theconstructsim.com/construct-learn-develop-robots-using-ros/robotigniteacademy_learnros/ros-courses-library/mastering-with-ros-turtlebot3/)
 
-### [Youtube](#youtube)
+## [Youtube Course](#youtube-course)
 
-  - [ROS Courses](https://youtu.be/rV-POzbzoHc) [KOR]
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rV-POzbzoHc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+  - [ROS Courses](https://www.youtube.com/watch?v=ot_D9N-H4lQ&list=PLRG6WP3c31_VIFtFAxSke2NG_DumVZPgw) [KOR]
   
   English version will be comming soon.
 
-### [Books](#books)
+## [Books](#books)
+
+![](/assets/images/platform/turtlebot3/learn/ros_robot_programming.png)
 
   - [ROS Robot Programming](http://book.naver.com/bookdb/book_detail.nhn?bid=12443870) [KOR]
 
