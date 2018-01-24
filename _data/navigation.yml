@@ -5914,6 +5914,8 @@ turtlebot3:
       url: /platform/turtlebot3/license/#hardware-license
     - title: "Documents License"
       url: /platform/turtlebot3/license/#documents-license
+  - title: "Learn"
+    url: /platform/turtlebot3/learn/#learn
   - title: "FAQ"
     url: /platform/turtlebot3/faq/#faq
   - title: "Contact US"
