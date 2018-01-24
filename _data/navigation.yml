@@ -5916,7 +5916,7 @@ turtlebot3:
       url: /platform/turtlebot3/license/#documents-license
   - title: "Learn"
     url: /platform/turtlebot3/learn/#learn
-      children:
+    children:
     - title: "TurtleBot3 Simulation on ROS Indigo"
       url: /platform/turtlebot3/learn/#turtlebot3-simulation-on-ros-indigo
     - title: "TurtleBot3 Blockly"
