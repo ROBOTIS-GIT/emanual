@@ -41,7 +41,7 @@ It can be operated as general DC motors by connecting OLLO switch and the batter
 1. MOT-
 2. MOT+
 
-`Caution` Cables can may be damaged when not properly connected (i.e. wrong orientation), or use of excessive force during connection.
+`Caution` Cables can be damaged when connected imporperly(i.e. wrong orientation), or when use excessive force during connection.
 {: .notice--warning}
 
 # [Tutorials](#tutorials)

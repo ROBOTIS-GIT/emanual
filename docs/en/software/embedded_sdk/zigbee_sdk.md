@@ -526,14 +526,14 @@ Used Zigbee modules are set to 1:1 communication for each other. Download tsk fi
 
 ##### Initialization
 
-```code
- 'Open device
-        If (zgb_initialize(DEFAULT_PORTNUM) = 0) Then
-            Console.WriteLine("Failed to open Zig2Serial!")
-            Exit Sub
-        Else
-            Console.WriteLine("Succeed to open Zig2Serial!")
-        End If
+```
+'Open device
+If (zgb_initialize(DEFAULT_PORTNUM) = 0) Then
+  Console.WriteLine("Failed to open Zig2Serial!")
+  Exit Sub
+Else
+  Console.WriteLine("Succeed to open Zig2Serial!")
+End If
 ```
 
 The source above checks whether the initialization is done properly or not.  
@@ -544,7 +544,7 @@ DEFAULT_PORTNUM must be set depending on the user's system status, and it is ori
  
 ##### Termination
 
-```code
+```
 'Close device
 zgb_terminate()
 ```
@@ -553,9 +553,9 @@ The source above terminates communication with the controller's communication de
  
 ##### Transmitting Packet
 
-```code
+```
 If (zgb_tx_data(TxData) = 0) Then
-                Console.WriteLine("Failed to transmit")
+  Console.WriteLine("Failed to transmit")
 End If
 ```
 
@@ -566,16 +566,16 @@ TxData means the value users transmit to the controller.
  
 ##### Receiving Packet
 
-```code
- For i = 1 To TIMEOUT_TIME
-                'Verify data recieved
-                If (zgb_rx_check() = 1) Then
-                    'Get data verified
-                    RxData = zgb_rx_data()
-                    Console.WriteLine("Recieved: " & RxData & "")
-                    Exit For
-                End If
-                Sleep(1)
+```
+For i = 1 To TIMEOUT_TIME
+  'Verify data recieved
+  If (zgb_rx_check() = 1) Then
+    'Get data verified
+    RxData = zgb_rx_data()
+    Console.WriteLine("Recieved: " & RxData & "")
+    Exit For
+  End If
+  Sleep(1)
 Next i
 ```
            

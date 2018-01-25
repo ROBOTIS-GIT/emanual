@@ -49,7 +49,7 @@ sidebar:
 4. VCC
 5. MOT+
 
-`Caution` Cables can may be damaged when not properly connected (i.e. wrong orientation), or use of excessive force during connection.
+`Caution` Cables can be damaged when connected imporperly(i.e. wrong orientation), or when use excessive force during connection.
 {: .notice--warning}
 
 # [Tutorials](#tutorials)

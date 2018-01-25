@@ -7,11 +7,9 @@ share: true
 author_profile: false
 permalink: /docs/en/edu/bioloid/premium/
 sidebar:
-  title: BIOLOID PREMIUM
+  title: BIOLOID Premium
   nav: "bioloid-premium"
 ---
-
-# BIOLOID PREMIUM
 
 # [Introduction](#introduction)
 
@@ -226,7 +224,7 @@ You may use the Check Assembly Mode to see whether your robot has been properly 
 
 {% include en/edu/bioloid/screen_output.md %}
 
-## [Button & LED](#button-led)
+## [Button & LED](#button--led)
 
 {% include en/edu/bioloid/button_led.md %}
 
@@ -244,6 +242,7 @@ Let’s use the `Walking Machine` to learn about how walking motions are convert
 ### Motion File Overview
 
 #### Walking Motion File
+
 ![](/assets/images/edu/bioloid/premium_tutorial_01.png)
 
 The walking motion files used in the Walking Machine can be found on pages 31~224. Several motion pages are gathered and repeatedly played to make up one walking pattern (forward, backward, etc). Each page is made to be conveniently converted to the next walking pattern’s motion page.
@@ -305,11 +304,9 @@ Let’s try writing a simple “Start Program” sample using the "Initializatio
 
 There are 16 different walking pattern sample codes to control via remote control in the walking machine's task code file. Change the `Start Program` function in the sample codes to suit your needs.
 
-## [Gyro Sensor](#gyro-sensor)
+## [Gyro Sensor Calibration](#gyro-sensor-calibration)
 
-Prerequisite : [Walking Machine]
-
-[Walking Machine]: #walking-machine
+- Prerequisite : [Walking Machine]
 
 Code to control the gyro sensor will be added to the task code used in the [Walking Machine] section. Review the [Walking Machine] section before getting started.
 
@@ -343,29 +340,29 @@ A Gyro sensor is used to determine angular velocity (angular variation per secon
 
 1. `InitializationGyro` Call Function
 
-    ![](/assets/images/edu/bioloid/premium_tutorial_21.png)
+  ![](/assets/images/edu/bioloid/premium_tutorial_21.png)
 
 2. Execute `BalancePage` to Apply Joint Offset
 
-    In order to apply the joint offset a motion must be executed. When no motion is being played, the joint offset will not be applied even if a  value is input by the gyro sensor. The **BalancePage** is used to apply the joint when no motion is being executed.
+  In order to apply the joint offset a motion must be executed. When no motion is being played, the joint offset will not be applied even if a  value is input by the gyro sensor. The **BalancePage** is used to apply the joint when no motion is being executed.
 
-    ![](/assets/images/edu/bioloid/premium_tutorial_22.png)
+  ![](/assets/images/edu/bioloid/premium_tutorial_22.png)
 
 3. `InitializationGyro` Function
 
-    The `InitializeGyro` function reads the gyro sensor value 10 times in a 0.128 second intervals and saves the average value as a gyro sensor standard value. (The standard value is Approximate 250 degrees.) If the gyro sensor value is less than 230 or greater than 270, it assumes there is no gyro sensor and does not use adjustment (when there is no gyro sensor or the robot has moved during initialization).
+  The `InitializeGyro` function reads the gyro sensor value 10 times in a 0.128 second intervals and saves the average value as a gyro sensor standard value. (The standard value is Approximate 250 degrees.) If the gyro sensor value is less than 230 or greater than 270, it assumes there is no gyro sensor and does not use adjustment (when there is no gyro sensor or the robot has moved during initialization).
 
-    ![](/assets/images/edu/bioloid/premium_tutorial_23.png)
+  ![](/assets/images/edu/bioloid/premium_tutorial_23.png)
 
 4. Calculating the adjustment value in the `Callback Function`
 
-    At regular intervals, the callback function reads the current gyro sensor value and compares it to the standard value to calculate the adjustment value. If the `UseGyro` variable is false, the robot it will not adjust itself. Thus, set the `UseGyro` variable to false where you do not wish to use the gyro adjustment.
+  At regular intervals, the callback function reads the current gyro sensor value and compares it to the standard value to calculate the adjustment value. If the `UseGyro` variable is false, the robot it will not adjust itself. Thus, set the `UseGyro` variable to false where you do not wish to use the gyro adjustment.
 
-    ![](/assets/images/edu/bioloid/premium_tutorial_24.png)
+  ![](/assets/images/edu/bioloid/premium_tutorial_24.png)
 
-    Apply the calculated adjustment value to the joint offset and adjust the robot’s posture.  To adjust the front/back tilt, you must use the joints in the knees and ankle, which are actuators 13-16.  To adjust the left/right tilt, you must use the joints in the ankle and waist, which are actuators 9-10 and 17-18.
+  Apply the calculated adjustment value to the joint offset and adjust the robot’s posture.  To adjust the front/back tilt, you must use the joints in the knees and ankle, which are actuators 13-16.  To adjust the left/right tilt, you must use the joints in the ankle and waist, which are actuators 9-10 and 17-18.
 
-    ![](/assets/images/edu/bioloid/premium_tutorial_25.png)
+  ![](/assets/images/edu/bioloid/premium_tutorial_25.png)
 
 ### Adjustment Test
 
@@ -376,7 +373,7 @@ A Gyro sensor is used to determine angular velocity (angular variation per secon
 
 [How to Download Task Code]: /docs/en/faq/download_task_code/#cm-5
 
-## <a name="custom-motions-create"></a>[Custom Motions : Create](#custom-motions-create)
+## [Custom Motions(Create)](#custom-motionscreate)
 
 Prerequisite : [Walking Machine]
 
@@ -395,41 +392,41 @@ Let’s learn how to add 4 motions below using the RoboPlus Motion program.
 
 ### Make a motion to block a ball on the right
 
-1. Execute RoboPlus Motion, then connect it to the controller(Please refer to [Connect Robot](/docs/en/software/rplus1/motion/#connect-to-robot)
+1. Execute RoboPlus Motion, then connect it to the controller(Please refer to [Connect Robot](/docs/en/software/rplus1/motion/???))
 
-    ![](/assets/images/edu/bioloid/premium_tutorial_26.png)
+  ![](/assets/images/edu/bioloid/premium_tutorial_26.png)
 
-    ![](/assets/images/edu/bioloid/premium_tutorial_27.jpg)
+  ![](/assets/images/edu/bioloid/premium_tutorial_27.jpg)
 
 2. To add the “Block Ball” motion in page 14, input a name and step.
 
-    ![](/assets/images/edu/bioloid/premium_tutorial_28.jpg)
+  ![](/assets/images/edu/bioloid/premium_tutorial_28.jpg)
 
 3. Turn off all motors, then set the robot’s pose.  The "Block ball on the right" pose is shown below.
 
-    ![](/assets/images/edu/bioloid/premium_tutorial_29.jpg)
+  ![](/assets/images/edu/bioloid/premium_tutorial_29.jpg)
 
 4. Set the robot’s pose as above. When you press the "torque on" button, the robot’s current actuator values will automatically be saved. When you press the left arrow button, you can read the robot’s current input actuator values into Step’s Pose column.
 
-    ![](/assets/images/edu/bioloid/premium_tutorial_30.jpg)
+  ![](/assets/images/edu/bioloid/premium_tutorial_30.jpg)
 
-5. You can adjust the pause and play durations. (Click here for more information on [STEP STOP/PLAY](/docs/en/software/rplus1/motion/#pausetime)
+5. You can adjust the pause and play durations. (Please refer for more information about [STEP STOP/PLAY](/docs/en/software/rplus1/motion/???))
 
-    ![](/assets/images/edu/bioloid/premium_tutorial_31.jpg)
+  ![](/assets/images/edu/bioloid/premium_tutorial_31.jpg)
 
 6. Designating the NEXT page as itself(14) will cause the robot to enter an infinite loop and maintain its pose.  Also designate an EXIT page for the robot to smoothly transiton into when it exits the infinite loop.
 
-    ![](/assets/images/edu/bioloid/premium_tutorial_32.jpg)
+  ![](/assets/images/edu/bioloid/premium_tutorial_32.jpg)
 
 7. Make a motion to return to the standard position on the page designated as the Exit page (15). Add the following 3 steps and poses to page 15.
 
-    ![](/assets/images/edu/bioloid/premium_tutorial_33.jpg)
+  ![](/assets/images/edu/bioloid/premium_tutorial_33.jpg)
 
-8. Additional settings ([Number of Repeats, Play Speed, etc](/docs/en/software/rplus1/motion/#page-editing)
+8. Additional settings ([Number of Repeats, Play Speed, etc](/docs/en/software/rplus1/motion/???))
 
-    You can also set the number of repeats, entire speed, etc. for each page.
+  You can also set the number of repeats, entire speed, etc. for each page.
 
-    ![](/assets/images/edu/bioloid/premium_tutorial_34.jpg)
+  ![](/assets/images/edu/bioloid/premium_tutorial_34.jpg)
 
 ### Make a motion to block a ball on the left
 
@@ -454,7 +451,7 @@ Use the `Save(S)` command to save your work in the robot or use `Save As(A)` to 
   ![](/assets/images/edu/bioloid/premium_tutorial_37.png)
 
 
-## <a name="custom-motions-task-code"></a>[Custom Motions : Task Code](#custom-motions-task-code)
+## [Custom Motions(Task Code)](#custom-motionstask-code)
 
 Prerequisite : [Adjustment using the Gyro Sensor, Custom Motions: Create](#custom-motions-create)
 
@@ -476,8 +473,8 @@ Code to execute user-defined motions has been added to the task code written in 
 1. Set `WalkCommand`  as 0 to make the robot stop.
 2. If the motion added by the user does not require the gyro sensor to maintain posture, you must turn off the gyro sensor adjustment to prevent motion variation due to the offset. Set the `UseGyro` variable as FALSE.  Then call the `EXITPageWaitMotion` function and wait for the robot to come to a complete stop.
 3. The `Getting Up` motions added in motion pages 27 and 28 can be played just once. Thus, execute the motion, and wait for the motion to finish before executing another motion.
-4. The `Block Ball` motions added in motion page 14 and 16 are endlessly repeating motions. Thus, in order to end the motion, an EXIT page is needed.  Using the `WAIT WHILE` command so that if the button is not pressed and held, the `EXITPageWaitMotion` function will execute the EXIT to end the motion  
-  (For more information, please refer to the [Motion Page](/docs/en/software/rplus1/task/programming_02/#motion-page)).
+4. The `Block Ball` motions added in motion page 14 and 16 are endlessly repeating motions. Thus, in order to end the motion, an EXIT page is needed.  Using the `WAIT WHILE` command so that if the button is not pressed and held, the `EXITPageWaitMotion` function will execute the EXIT to end the motion
+(For more information, please refer to the [Motion Page](/docs/en/software/rplus1/task/programming_02/#motion-page)).
 5. After the user's motion ends, set the `UseGyro` variable back to TRUE to restore gyro adjustment.
 
 ## [Gripper Control](#gripper-control)
@@ -514,35 +511,35 @@ Setting priorities to control the gripper and motions separately.
 
 ### Assembly
 
-Please refer to the [Gripper Assembly](#attaching-grippers).
+Please refer to the [Gripper Assembly].
 
 ### Writing Task Code
 
 1. Initializing Gripper Control
 
-    Set the joint offsets of the actuatorsfor both arms to 1024, so that they are not controlled by the motion data.  Initialize the other data , such as  the arms' and grippers’ movement speeds, and gripper’s grasping power and flexibility, then place the arms in their default position.
+  Set the joint offsets of the actuatorsfor both arms to 1024, so that they are not controlled by the motion data.  Initialize the other data , such as  the arms' and grippers’ movement speeds, and gripper’s grasping power and flexibility, then place the arms in their default position.
 
-    ![](/assets/images/edu/bioloid/premium_tutorial_39.png)
+  ![](/assets/images/edu/bioloid/premium_tutorial_39.png)
 
 2. Revise Callback Function (Gyro Adjustment)
 
-    If the joint offset is used in the callback function to apply the gyro adjustment value, the joint offset should not be set for the joints used by the grippers.  This is to prevent the values set as 1024 in STEP 1 from being changed.
+  If the joint offset is used in the callback function to apply the gyro adjustment value, the joint offset should not be set for the joints used by the grippers.  This is to prevent the values set as 1024 in STEP 1 from being changed.
 
-    ![](/assets/images/edu/bioloid/premium_tutorial_40.png)
+  ![](/assets/images/edu/bioloid/premium_tutorial_40.png)
 
 3. Gripper/Arm Control Function
 
-    Copy the following fuction to control the gripper and arm.  This function can control the gripper's and arm's movements, regardless of the motion status.
+  Copy the following fuction to control the gripper and arm.  This function can control the gripper's and arm's movements, regardless of the motion status.
 
-    ![](/assets/images/edu/bioloid/premium_tutorial_41.png)
+  ![](/assets/images/edu/bioloid/premium_tutorial_41.png)
 
-    Write a function for the left arm and gripper as above.
+  Write a function for the left arm and gripper as above.
 
 4. Controlling the arm and gripper with a remote controller
 
-    Add code to control the gripper and arm using the remote controller. Reviewing [Custom Motions: Task Code] will help you understand the code below.
+  Add code to control the gripper and arm using the remote controller. Reviewing [Custom Motions: Task Code] will help you understand the code below.
 
-    ![](/assets/images/edu/bioloid/premium_tutorial_42.png)
+  ![](/assets/images/edu/bioloid/premium_tutorial_42.png)
 
 ### Download and Verify Result
 
@@ -567,7 +564,7 @@ Please refer to the [Gripper Assembly](#attaching-grippers).
 |C Type|Task Code|[Download][premium_file_06]|
 |C Type|Motion File|[Download][premium_file_07]|
 
-### Humanoid Fight
+### [Humanoid Fight](#humanoid-fight)
 
 |Robot Type|File Type|Download|
 |:---:|:---:|:---:|
@@ -604,7 +601,7 @@ Please refer to the [Gripper Assembly](#attaching-grippers).
 |5+6+D+3|Torque Off|5+6+U+1|Torque On|
 |1 + U|Stand Up from face down|1 + D|Stand Up from back down|
 
-### Humanoid Soccer
+### [Humanoid Soccer](#humanoid-soccer)
 
 |Robot Type|File Type|Download|
 |:---:|:---:|:---:|
@@ -817,7 +814,6 @@ Please refer to the [Gripper Assembly](#attaching-grippers).
 [ex_advanced_5-3]: http://support.robotis.com/en/baggage_files/bioloid/bio_prm_lizard_en.mtn
 [ex_advanced_5-4]: http://www.robotis.com/video/BIO_PRM_Lizard.wmv
 
-
 # [References](#references)
 
 ## [Replacing Fuse](#replacing-fuse)
@@ -829,6 +825,10 @@ Please refer to the [Gripper Assembly](#attaching-grippers).
 {% include en/edu/bioloid/dynamixel_management.md %}
 
 {% include en/parts/communication/zigbee_control.md %}
+
+## [Control Multiple Robots](#control-multiple-robots)
+
+{% include en/edu/bioloid/control_multirobot.md %}
 
 ## [Customizing Robot](#customizing-robot)
 
@@ -942,7 +942,7 @@ Most of the sensors used in robots, such as IR sensors and distance sensors, sup
 
 ![](/assets/images/edu/bioloid/premium_diy_sensor_05.png)
 
-## <a name="gripper-assembly"></a>[Gripper Assembly](#gripper-assembly)
+## [Gripper Assembly](#gripper-assembly)
 
 - Users can add grippers to humanoid robots to fit their needs.
 - Grippers are useful when holding or throwing things.
@@ -961,7 +961,7 @@ Below are the parts required to make a gripper.
 
 The image above shows how to make a gripper using frames and an AX-12+. Make two of these if you want to attach a gripper on both hands.
 
-### [Attaching Grippers](#attaching-grippers)
+### Attaching Grippers
 
 By making a robot with grippers, you can expand the things you can do with the robot.
 For more information on controlling the gripper robot, please refer to gripper control.
@@ -979,8 +979,8 @@ AX-12+ #9 was used for the right gripper and AX-12+ #10 was used for the left.
 [Gyro Sensor]: /docs/en/parts/sensor/gs-12/
 [USB2Dynamixel]: /docs/en/parts/interface/usb2dynamixel/
 [Controller]: /docs/en/parts/controller/controller_compatibility/
-[RC-100]: /docs/enparts/communication/rc-100/
-[ZIG-110]: /docs/enparts/communication/zig-100_110/
+[RC-100]: /docs/en/parts/communication/rc-100/
+[ZIG-110]: /docs/en/parts/communication/zig-100_110/
 [How to Download of task code]: /docs/en/faq/download_task_code/
 [How to Download motion file]: /docs/en/software/rplus1/motion/#download-motion
 

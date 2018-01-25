@@ -57,7 +57,7 @@ sidebar:
 - 케이블이 다리 바깥으로 연결되었는지 확인하세요.
   ![](/assets/images/edu/bioloid/bp_act_3_1_KR.jpg)
 
-로봇에 손상을 줄 정도로 심각하게 조립이 잘못 되었을 경우, 경고음이 울립니다. 이와 동시에 문제가 있는 모터의 힘이 풀리며 LED 가 켜집니다. 이는 로봇의 손상을 막기 위한 안전장치가 작동하는 것입니다.
+로봇에 손상을 줄 정도로 심각하게 조립이 잘못되었을 경우 경고음이 울립니다. 이와 동시에 문제가 있는 모터의 힘이 풀리며 LED가 켜집니다. 이는 로봇의 손상을 막기위한 안전장치가 작동하는 것입니다.
 {: .notice}
 
 ![](/assets/images/edu/bioloid/bp_act_3_2_KR.jpg)  
@@ -218,7 +218,7 @@ sidebar:
 3. LED 가 켜진 모터의 ID 와 조립서의 ID 를 비교하세요.  
     > 해당 ID 의 모터가 로봇에 존재하지 않을 경우 경고음이 울립니다.
 4. 실제로 모터가 멈춰있는 위치와 기본 자세에 해당하는 관절의 모습을 서로 비교하세요.  
-    >  LED 는 켜져 있지만 모터에 힘이 풀려 있다면, 모터의 조립 상태나 주변의 케이블 등을 다시 살펴보세요.
+    >  LED는 켜져 있지만 모터에 힘이 풀려 있다면, 모터의 조립 상태나 주변의 케이블 등을 다시 살펴보세요.
 
 ## [충전하기](#충전하기)
 
@@ -238,8 +238,8 @@ sidebar:
 
 `보행 머신` 의 사용 방법을 알아 봅시다. 보행 머신이란 특정 패턴으로 만들어진 보행 모션 파일과 이 모션 파일에 들어있는 보행 모션들 간의 연결을 부드럽게 이어주는 역할을 하는 태스크 코드를 합쳐서 부르는 말입니다.
 
-- 보행 모션 파일 : [Download][BIO_PRM_WalkingMachineExam_KR.mtn]
-- 태스크 코드 : [Download][BIO_PRM_WalkingMachineExam_KR.tsk]
+- `Download` 보행 모션 파일 : [BIO_PRM_WalkingMachineExam_KR.mtn](http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_walkingmachineexam_kr.mtn)
+- `Download` 태스크 코드 : [BIO_PRM_WalkingMachineExam_KR.tsk](http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_walkingmachineexam_kr.tsk)
 
 보행 머신을 사용하여 보행 모션 간의 전환을 부드럽게 이어주는 방법에 대해 알아 봅시다.
 
@@ -313,9 +313,9 @@ sidebar:
 {: .notice}
 
 - 학습 목표 : 자이로 센서를 이용하여 휴머노이드의 자세를 보정하는 방법을 알아봅시다.  
-  - 각속도(1 초당 각도의 변화량)를 검출할 수 있는 자이로 센서(Gyro Sensor)를 이용하여 로봇이 기울어져 특정 방향으로 각속도가 가해지게 되면 그 반대 방향으로 서보모터 값을 보정하여 자세를 바로 잡는 방법에 대하여 알아봅시다.
+- 각속도(1 초당 각도의 변화량)를 검출할 수 있는 자이로 센서(Gyro Sensor)를 이용하여 로봇이 기울어져 특정 방향으로 각속도가 가해지게 되면 그 반대 방향으로 서보모터 값을 보정하여 자세를 바로 잡는 방법에 대하여 알아봅시다.
 
-- 태스크 코드 : [Download][BIO_PRM_GyroSensorExam_KR.tsk]
+- `Downlaod` 태스크 코드 : [BIO_PRM_GyroSensorExam_KR.tsk](http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_gyrosensorexam_kr.tsk)
 
 
 ### 준비 사항
@@ -365,7 +365,7 @@ sidebar:
 - 가만히 서 있는 상태에서 충격을 받아 자세가 흐트러지면 보정을 시도하는지 확인하세요.
 - 경사면 등에서 자이로를 이용한 보정을 하지 않을 때와, 보정을 할 때 각각 어떻게 다른지 확인하세요.
 
-## [사용자 모션 추가하기(모션 만들기)](#사용자-모션-추가하기모션-만들기)
+## [사용자 모션 추가(모션 만들기)](#사용자-모션-추가모션-만들기)
 
 - 선행 학습 : [보행 머신]
 
@@ -380,7 +380,7 @@ RoboPlus Motion 프로그램을 사용하여 아래와 같은 4 가지 모션을
 |14|오른쪽 공 막기	|27|엎드려 일어나기|
 |16|왼쪽 공 막기	|28|누워 일어나기|
 
-- 모션 파일 : [Download][BIO_PRM_UserMotionExam_KR.mtn]
+- `Download` 모션 파일 : [BIO_PRM_UserMotionExam_KR.mtn](http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_usermotionexam_kr.mtn)
 
 ### "오른쪽 공 막기" 모션 만들기
 
@@ -440,17 +440,17 @@ RoboPlus Motion 프로그램을 사용하여 아래와 같은 4 가지 모션을
   ![](/assets/images/edu/bioloid/walking_14_kr.png)
 
 
-## [사용자 모션 추가하기(태스크 코드)](#사용자-모션-추가하기태스크-코드)
+## [사용자 모션 추가(태스크 코드)](#사용자-모션-추가태스크-코드)
 
-- 선행 학습 : [자이로 센서를 이용한 보정] , [사용자 모션 추가하기(모션 만들기)]
+- 선행 학습 : [자이로 센서를 이용한 보정], [사용자 모션 추가(모션 만들기)]
   본 학습에 사용된 태스크 코드는 "자이로 센서를 이용한 보정" 에서 사용된 태스크 코드에 사용자가 추가한 모션을 실행시키는 코드를 추가한 것이며, 모션 파일은 "사용자 모션 추가하기1 - 모션만들기" 의 결과물입니다. 따라서 선행 학습 부분을 먼저 학습 후 보시면 이해하기가 더 쉽습니다.
 
 
 - 학습 목표 : 사용자가 추가한 모션을 실행하는 태스크 코드를 작성해 봅시다.  
   앞서 "사용자 모션 추가하기1 - 모션만들기" 에서 추가한 모션을 리모컨(RC-100)으로 실행하는 방법에 대해 학습해 봅시다.
 
-- 모션 파일 : [Download][BIO_PRM_UserMotionExam_KR.mtn]
-- 태스크 코드 : [Download][BIO_PRM_UserMotionExam_KR.tsk]
+- `Download` 모션 파일 : [BIO_PRM_UserMotionExam_KR.mtn](http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_usermotionexam_kr.mtn)
+- `Download` 태스크 코드 : [BIO_PRM_UserMotionExam_KR.tsk](http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_usermotionexam_kr.tsk)
 
 ### 태스크 코드 살펴보기  
 "자이로 센서를 이용한 보정" 에서 작성한 태스크 코드에 사용자 모션을 실행하는 코드를 추가한 태스크 코드입니다.  
@@ -465,15 +465,15 @@ RoboPlus Motion 프로그램을 사용하여 아래와 같은 4 가지 모션을
 
 ## [그리퍼 제어](#그리퍼-제어)
 
-- 선행 학습 : [사용자 모션 추가하기(모션 만들기)], [사용자 모션 추가하기(태스크 코드)]     
+- 선행 학습 : [사용자 모션 추가(모션 만들기)], [사용자 모션 추가(태스크 코드)]     
   본 학습에 앞서 선행 학습에 해당하는 부분을 먼저 학습하시면 이해하기가 더 쉽습니다.
 
 - 학습 목표 : 모션과 별개로 그리퍼를 제어하는 방법을 학습해 봅시다.  
   - 로봇에 그리퍼를 달게 되면 모션에 관계 없이 그리퍼를 달아 놓은 팔은 고정시킬 필요가 있습니다. 이럴 경우 기존의 모션에서 팔을 고정시키도록 수정하지 않고, 특정 관절들만 모션 데이터에 의한 제어가 되지 않도록 하여 모션과 별개로 태스크 코드에서 그리퍼를 제어하는 방법에 대해 학습해 봅시다.  
   - 본 학습에서는 그리퍼에 2 개의 다이나믹셀이 사용되므로 휴머노이드 B 타입에 그리퍼를 달아 사용합니다.
 
-- 태스크 코드 : [Download][BIO_PRM_GripperExam_KR.tsk]
-- B타입 모션 파일 : [Download][BIO_PRM_HumanoidTypeB_KR.mtn]
+- `Download` 태스크 코드 : [BIO_PRM_GripperExam_KR.tsk](http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_gripperexam_kr.tsk)
+- `Download` B타입 모션 파일 : [BIO_PRM_HumanoidTypeB_KR.mtn](http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_humanoidtypeb_kr.mtn)
 
 ### 배경 지식
 모션과 그리퍼를 별도 제어하기 위한 제어 우선순위 설정
@@ -511,7 +511,7 @@ RoboPlus Motion 프로그램을 사용하여 아래와 같은 4 가지 모션을
     왼팔과 그리퍼 역시 위와 동일한 방법으로 함수를 작성해 줍니다.
 
 4. 리모컨으로 팔 및 그리퍼 제어  
-  그리퍼 및 팔 제어 함수를 이용하여 리모컨으로 조종하는 코드를 추가합니다. 아래 코드는 [사용자 모션 추가하기(태스크 코드)] 부분을 참조하시면 도움이 됩니다.
+  그리퍼 및 팔 제어 함수를 이용하여 리모컨으로 조종하는 코드를 추가합니다. 아래 코드는 [사용자 모션 추가(태스크 코드)] 부분을 참조하시면 도움이 됩니다.
   
     ![](/assets/images/edu/bioloid/bp_tutorial_gripper_03_kr.png)  
 
@@ -527,7 +527,6 @@ RoboPlus Motion 프로그램을 사용하여 아래와 같은 4 가지 모션을
 
 - [태스크 코드 다운로드 방법]
 - [모션 파일 다운로드 방법]
-- [기본 프로그램의 동작 방법]
 
 |타입|파일 종류|다운로드|
 |:---:|
@@ -536,6 +535,14 @@ RoboPlus Motion 프로그램을 사용하여 아래와 같은 4 가지 모션을
 |B 타입|휴머노이드 기본 태스크 코드<br />휴머노이드 기본 모션 파일|[Download][BIO_PRM_HumanoidTypeB_KR.tsk]<br />[Download][BIO_PRM_HumanoidTypeB_KR.mtn]|
 |C 타입|휴머노이드 기본 태스크 코드<br />휴머노이드 기본 모션 파일|[Download][BIO_PRM_HumanoidTypeC_KR.tsk]<br />[Download][BIO_PRM_HumanoidTypeC_KR.mtn]|
 
+[BIO_PRM_Humanoid_ASM.pdf]: http://www.robotis.com/download/doc/BIO_PRM_Humanoid_ASM.pdf
+[BIO_PRM_HumanoidTypeA_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_humanoidtypea_kr.tsk
+[BIO_PRM_HumanoidTypeA_KR.mtn]: http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_humanoidtypea_kr.mtn
+[BIO_PRM_HumanoidTypeB_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_humanoidtypeb_kr.tsk
+[BIO_PRM_HumanoidTypeB_KR.mtn]: http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_humanoidtypeb_kr.mtn
+[BIO_PRM_HumanoidTypeC_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_humanoidtypec_kr.tsk
+[BIO_PRM_HumanoidTypeC_KR.mtn]: http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_humanoidtypec_kr.mtn
+
 ### 휴머노이드 활용 예제
 기본예제로 로보티즈 프리미엄에 제공되는 보행 속도의 2배 이상의 속도를 내는 보행 동작과 격투 경기용 동작이 포함되어 있습니다.  
 보행 모션 페이지만 별도로 복사하여 사용하실 수도 있습니다.
@@ -543,7 +550,7 @@ RoboPlus Motion 프로그램을 사용하여 아래와 같은 4 가지 모션을
 A타입에만 적용 가능하며, B와 C타입에 적용시에는, [로보플러스 모션]에서 로봇의 양쪽 골반과 발목 관절의 옵셋을 수정하여 흐트러진 로봇의 무게중심을 수정하는 절차를 진행하셔야 합니다.
 {: .notice}
 
-### 휴머노이드 격투
+### [휴머노이드 격투](#휴머노이드-격투)
 
 #### 휴머노이드 격투 예제 파일
 
@@ -551,6 +558,9 @@ A타입에만 적용 가능하며, B와 C타입에 적용시에는, [로보플�
 |:---:|
 |A 타입|휴머노이드 격투 태스크 파일|[Download][BIO_PRM_FightTypeA_KR.tsk]|
 |A 타입|휴머노이드 격투 모션 파일|[Download][BIO_PRM_FightTypeA_KR.mtn]|
+
+[BIO_PRM_FightTypeA_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_fighttypea_kr.tsk
+[BIO_PRM_FightTypeA_KR.mtn]: http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_fighttypea_kr.mtn
 
 #### 로봇 조종하기
 로봇을 작동하기 위한  키 정보 입니다.
@@ -589,12 +599,15 @@ A타입에만 적용 가능하며, B와 C타입에 적용시에는, [로보플�
 `Note` 4+U 와 4+L 은 같은 동작입니다.  마찬가지로 4+D와 4+R은 같은 동작입니다.
 {: .notice}
 
-### 휴머노이드 축구
+### [휴머노이드 축구](#휴머노이드-축구)
 
 |타입|파일 종류|다운로드|
 |:---:|
 |A 타입|휴머노이드 축구 태스크 파일|[Download][BIO_PRM_SoccerTypeA_KR.tsk]|
 |A 타입|휴머노이드 축구 모션 파일|[Download][BIO_PRM_SoccerTypeA_KR.mtn]|
+
+[BIO_PRM_SoccerTypeA_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_soccertypea_kr.tsk
+[BIO_PRM_SoccerTypeA_KR.mtn]: http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_soccertypea_kr.mtn
 
 #### 로봇 조종하기
 
@@ -690,8 +703,8 @@ A타입에만 적용 가능하며, B와 C타입에 적용시에는, [로보플�
 |4.전갈     <br />![](/assets/images/edu/bioloid/prm_scorpion_kr.jpg)|  [Download][BIO_PRM_Scorpion_ASM.pdf] 조립서 <br />[Download][BIO_PRM_Scorpion_KR.tsk] 데모용 태스크 코드<br />[Download][BIO_PRM_Scorpion_KR.mtn] 데모용 모션 파일<br/>[Download](http://www.robotis.com/video/BIO_PRM_Scorpion.wmv) Video<br />`사용된 장치` CM-510/CM-530(1), AX-12+(18), 거리 센서(1)<br />`다이나믹셀 설정 값` AX-12+ ID[1]~ ID[18] : 관절모드<Br/>`RoboPlus 문법`	함수, 호출, 로드, 레이블, 점프, 만약, 아니면 만약, 횟수만큼 반복, 조건 대기<br />`알고리즘`	소리 감지 횟수와 거리 센서 값에 따라 6족 응용 모션 제어<br />`동작 방법`<br />- 시작하면 잠을 잡니다.<br />- 박수를 치면 깨어납니다.<br/>-센서에 손을 가까이 가져가면 꼬리로 위협합니다.<br/>-센서에 손을 더 가까이 가져가면 공격합니다.|
 |5.도마뱀   <br />![](/assets/images/edu/bioloid/premium_lizard.jpg)|  [Download][BIO_PRM_Lizard_ASM.pdf] 조립서 <br />[Download][BIO_PRM_Lizard_KR.tsk] 데모용 태스크 코드<br />[Download][BIO_PRM_Lizard_KR.mtn] 데모용 모션 파일<br/>[Download](http://www.robotis.com/video/BIO_PRM_Lizard.wmv) Video<br />`사용된 장치` CM-510/CM-530(1), AX-12+(14), 적외선 센서(1), 거리 센서(1)<br />`다이나믹셀 설정 값` AX-12+ ID[1]~ ID[14] : 관절모드<Br/>`RoboPlus 문법`	함수, 호출, 로드, 계산, 무조건 반복, 만약, 아니면 만약, 아니면, 조건 대기<br />`알고리즘`	적외선 센서와 거리 센서 값에 따라 4족 장애물 회피 모션 제어<br />`동작 방법`<br />- 시작하면 기어가다가 전방에 장애물을 만나면 잠시 멈추었다가  피해갑니다.<br />- 꼬리를 잡히면 도망가려 합니다.|
 
-# [참고자료](#참고자료)
 
+# [참고자료](#참고자료)
 
 ## [퓨즈 교체하기](#퓨즈-교체하기)
 
@@ -737,7 +750,7 @@ A타입에만 적용 가능하며, B와 C타입에 적용시에는, [로보플�
 
 ## [센서 추가하기](#센서-추가하기)
 
-로보티즈 프리미엄 혹은 로보티즈 GP 에서는 CM-510의 센서연결부를 통해 [적외선센서]와 [접촉 센서]를 추가로 달 수 있습니다.  
+로보티즈 프리미엄 혹은 로보티즈 GP 에서는 CM-510의 센서연결부를 통해 [적외선 센서]와 [접촉 센서]를 추가로 달 수 있습니다.  
 각 센서에 대한 자세한 정보는 위의 텍스트에 각 센서에 대한 이름을 클릭하시면 해당 페이지로 이동하여 보실 수 있습니다.
  
 ### 적외선 센서
@@ -845,135 +858,114 @@ B 타입 로봇에 그리퍼를 장착한 모습입니다.
 ![](/assets/images/edu/bioloid/gripper_KR.png)
 
 
-[CM-510]:???
-[AX-12A]:???
-[거리 센서]:???
-[적외선 센서]:???
-[자이로 센서]:???
-[USB2Dynamixel]:???
-[기본 프로그램]:???
-[충전하기]:???
-[여기]:???
-[BT-410 세트]:???
-[ZIG-110 세트]:???
-[로보티즈 쇼핑몰]:???
-[제어기]:???
-[RC-100]:???
-[태스크 코드 다운로드 방법]:???
-[기본 프로그램의 동작 방법]:???
-[모션 파일 다운로드 방법]:???
+[CM-510]: /docs/kr/parts/controller/cm-510/
+[AX-12A]: /docs/kr/dxl/ax/ax-12a/
+[거리 센서]: /docs/kr/parts/sensor/dms-80/
+[적외선 센서]: /docs/kr/parts/sensor/irss-10/
+[자이로 센서]: /docs/kr/parts/sensor/gs-12/
+[USB2Dynamixel]: /docs/kr/parts/interface/usb2dynamixel/
+[기본 프로그램]: #기본-프로그램
+[BT-410 세트]: /docs/kr/parts/communication/bt-410/
+[ZIG-110 세트]: /docs/kr/parts/communication/zig-110/
+[로보티즈 쇼핑몰]: http://www.robotis.com/shop/
+[제어기]: /docs/kr/parts/controller/controller_compatibility/
+[RC-100]: /docs/kr/parts/communication/rc-100/
+[태스크 코드 다운로드 방법]: /docs/kr/faq/download_task_code/
+[모션 파일 다운로드 방법]: /docs/kr/software/rplus1/motion/#download-motion
 [보행 머신]: #보행-머신
 [콜백(Callback) 함수]: /docs/kr/software/rplus1/task/programming_01/#???
 [관절 오프셋]: /docs/kr/software/rplus1/task/programming_02/#???
-[BIO_PRM_Humanoid_ASM.pdf]:???
-[BIO_PRM_HumanoidTypeA_KR.tsk]:???
-[BIO_PRM_HumanoidTypeA_KR.mtn]:???
-[BIO_PRM_HumanoidTypeB_KR.tsk]:???
-[BIO_PRM_HumanoidTypeB_KR.mtn]:???
-[BIO_PRM_HumanoidTypeC_KR.tsk]:???
-[BIO_PRM_HumanoidTypeC_KR.mtn]:???
-[BIO_PRM_FightTypeA_KR.tsk]:???
-[BIO_PRM_FightTypeA_KR.mtn]:???
-[BIO_PRM_SoccerTypeA_KR.tsk]:???
-[BIO_PRM_SoccerTypeA_KR.mtn]:???
-[태스크 코드 다운로드 방법]:???
-[모션 파일 다운로드 방법]:???
-[BIO_PRM_CrossingGate_ASM.pdf]:???
-[BIO_PRM_CrossingGate_KR.tsk]:???
-[BIO_PRM_Universalgauge_ASM.pdf]:???
-[BIO_PRM_Universalgauge_KR.tsk]:???
-[BIO_PRM_CrocodileMouth_ASM.pdf]:???
-[BIO_PRM_CrocodileMouth_KR.tsk]:???
-[BIO_PRM_Pantilt_ASM.pdf]:???
-[BIO_PRM_Pantilt_KR.tsk]:???
-[BIO_PRM_Parkinggate_ASM.pdf]:???
-[BIO_PRM_Parkinggate_KR.tsk]:???
-[BIO_PRM_Smartcar_ASM.pdf]:???
-[BIO_PRM_Smartcar_KR.tsk]:???
-[BIO_PRM_ClappingCrab_ASM.pdf]:???
-[BIO_PRM_ClappingCrab_KR.tsk]:???
-[BIO_PRM_AttackingDuck_ASM.pdf]:???
-[BIO_PRM_AttackingDuck_KR.tsk]:???
-[BIO_PRM_DistanceLevelMeter_ASM.pdf]:???
-[BIO_PRM_DistanceLevelMeter_KR.tsk]:???
-[BIO_PRM_Linetracer_ASM.pdf]:???
-[BIO_PRM_Linetracer_KR.tsk]:???
-[BIO_PRM_Linetracer_ASM.pdf]:???
-[BIO_PRM_Linetracer_KR.tsk]:???
-[BIO_PRM_WalkingDroid_ASM.pdf]:???
-[BIO_PRM_WalkingDroid_KR.tsk]:???
-[BIO_PRM_WalkingDroid_KR.mtn]:???
-[BIO_PRM_ProbingRobot_ASM.pdf]:???
-[BIO_PRM_ProbingRobot_KR.tsk]:???
-[BIO_PRM_Excavator_ASM.pdf]:???
-[BIO_PRM_Excavator_KR.tsk]:???
-[BIO_PRM_Excavator_KR.mtn]:???
-[BIO_PRM_RobotFlower_ASM.pdf]:???
-[BIO_PRM_RobotFlower_KR.tsk]:???
-[BIO_PRM_RobotFlower_KR.mtn]:???
-[BIO_PRM_Fawn_ASM.pdf]:???
-[BIO_PRM_Fawn_KR.tsk]:???
-[BIO_PRM_Fawn_KR.mtn]:???
-[BIO_PRM_Turtle_ASM.pdf]:???
-[BIO_PRM_Turtle_KR.tsk]:???
-[BIO_PRM_Turtle_KR.mtn]:???
-[BIO_PRM_GerWalk_ASM.pdf]:???
-[BIO_PRM_GerWalk_KR.tsk]:???
-[BIO_PRM_GerWalk_KR.mtn]:???
-[BIO_PRM_BattleDroid_ASM.pdf]:???
-[BIO_PRM_BattleDroid_KR.tsk]:???
-[BIO_PRM_BattleDroid_KR.mtn]:???
-[BIO_PRM_QuadrupedWalkingRobot_ASM.pdf]:???
-[BIO_PRM_QuadrupedWalkingRobot_KR.tsk]:???
-[BIO_PRM_QuadrupedWalkingRobot_KR.mtn]:???
-[BIO_PRM_BipedWalkingRobot_ASM.pdf]:???
-[BIO_PRM_BipedWalkingRobot_ASM.pdf]:???
-[BIO_PRM_BipedWalkingRobot_KR.tsk]:???
-[BIO_PRM_BipedWalkingRobot_KR.mtn]:???
-[BIO_PRM_RobotArm_ASM.pdf]:???
-[BIO_PRM_RobotArm_KR.tsk]:???
-[BIO_PRM_Dinosaur_ASM.pdf]:???
-[BIO_PRM_Dinosaur_KR.tsk]:???
-[BIO_PRM_Dinosaur_KR.mtn]:???
-[BIO_PRM_Puppy_ASM.pdf]:???
-[BIO_PRM_Puppy_KR.tsk]:???
-[BIO_PRM_Puppy_KR.mtn]:???
-[BIO_PRM_KingSpider_ASM.pdf]:???
-[BIO_PRM_KingSpider_KR.tsk]:???
-[BIO_PRM_KingSpider_KR.mtn]:???
-[BIO_PRM_Scorpion_ASM.pdf]:???
-[BIO_PRM_Scorpion_KR.tsk]:???
-[BIO_PRM_Scorpion_KR.mtn]:???[
-[BIO_PRM_Lizard_ASM.pdf]:???
-[BIO_PRM_Lizard_KR.tsk]:???
-[BIO_PRM_Lizard_KR.mtn]:???
-[BIO_PRM_WalkingMachineExam_KR.mtn]:???
-[BIO_PRM_WalkingMachineExam_KR.tsk]:???
-[BIO_PRM_GyroSensorExam_KR.tsk]:???
-[관절 오프셋에 대한 자세한 설명]:???
-[BIO_PRM_UserMotionExam_KR.mtn]:???
+
+
+[BIO_PRM_CrossingGate_ASM.pdf]: http://www.robotis.com/download/doc/BIO_PRM_CrossingGate_ASM.pdf
+[BIO_PRM_CrossingGate_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_crossinggate_kr.tsk
+[BIO_PRM_Universalgauge_ASM.pdf]: http://www.robotis.com/download/doc/BIO_PRM_Universalgauge_ASM.pdf
+[BIO_PRM_Universalgauge_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_universalgauge_kr.tsk
+[BIO_PRM_CrocodileMouth_ASM.pdf]: http://www.robotis.com/download/doc/BIO_PRM_CrocodileMouth_ASM.pdf
+[BIO_PRM_CrocodileMouth_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_crocodilemouth_kr.tsk
+[BIO_PRM_Pantilt_ASM.pdf]: http://www.robotis.com/download/doc/BIO_PRM_Pantilt_ASM.pdf
+[BIO_PRM_Pantilt_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_pantilt_kr.tsk
+[BIO_PRM_Parkinggate_ASM.pdf]: http://www.robotis.com/download/doc/BIO_PRM_Parkinggate_ASM.pdf
+[BIO_PRM_Parkinggate_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_parkinggate_kr.tsk
+[BIO_PRM_Smartcar_ASM.pdf]: http://www.robotis.com/download/doc/BIO_PRM_Smartcar_ASM.pdf
+[BIO_PRM_Smartcar_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_smartcar_kr.tsk
+[BIO_PRM_ClappingCrab_ASM.pdf]: http://www.robotis.com/download/doc/BIO_PRM_ClappingCrab_ASM.pdf
+[BIO_PRM_ClappingCrab_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_clappingcrab_kr.tsk
+[BIO_PRM_AttackingDuck_ASM.pdf]: http://www.robotis.com/download/doc/BIO_PRM_AttackingDuck_ASM.pdf
+[BIO_PRM_AttackingDuck_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_attackingduck_kr.tsk
+[BIO_PRM_DistanceLevelMeter_ASM.pdf]: http://www.robotis.com/download/doc/BIO_PRM_DistanceLevelMeter_ASM.pdf
+[BIO_PRM_DistanceLevelMeter_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_distancelevelmeter_kr.tsk
+[BIO_PRM_Linetracer_ASM.pdf]: http://www.robotis.com/download/doc/BIO_PRM_Linetracer_ASM.pdf
+[BIO_PRM_Linetracer_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_linetracer_kr.tsk
+[BIO_PRM_WalkingDroid_ASM.pdf]: http://www.robotis.com/download/doc/BIO_PRM_WalkingDroid_ASM.pdf
+[BIO_PRM_WalkingDroid_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_walkingdroid_kr.tsk
+[BIO_PRM_WalkingDroid_KR.mtn]: http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_walkingdroid_kr.mtn
+[BIO_PRM_ProbingRobot_ASM.pdf]: http://www.robotis.com/download/doc/BIO_PRM_ProbingRobot_ASM.pdf
+[BIO_PRM_ProbingRobot_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_probingrobot_kr.tsk
+[BIO_PRM_Excavator_ASM.pdf]: http://www.robotis.com/download/doc/BIO_PRM_Excavator_ASM.pdf
+[BIO_PRM_Excavator_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_excavator_kr.tsk
+[BIO_PRM_Excavator_KR.mtn]: http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_excavator_kr.mtn
+[BIO_PRM_RobotFlower_ASM.pdf]: http://www.robotis.com/download/doc/BIO_PRM_RobotFlower_ASM.pdf
+[BIO_PRM_RobotFlower_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_robotflower_kr.tsk
+[BIO_PRM_RobotFlower_KR.mtn]: http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_robotflower_kr.mtn
+[BIO_PRM_Fawn_ASM.pdf]: http://www.robotis.com/download/doc/BIO_PRM_Fawn_ASM.pdf 
+[BIO_PRM_Fawn_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_fawn_kr.tsk
+[BIO_PRM_Fawn_KR.mtn]: http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_fawn_kr.mtn
+[BIO_PRM_Turtle_ASM.pdf]: http://www.robotis.com/download/doc/BIO_PRM_Turtle_ASM.pdf
+[BIO_PRM_Turtle_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_turtle_kr.tsk
+[BIO_PRM_Turtle_KR.mtn]: http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_turtle_kr.mtn
+[BIO_PRM_GerWalk_ASM.pdf]: http://www.robotis.com/download/doc/BIO_PRM_GerWalk_ASM.pdf
+[BIO_PRM_GerWalk_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_gerwalk_kr.tsk
+[BIO_PRM_GerWalk_KR.mtn]: http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_gerwalk_kr.mtn
+[BIO_PRM_BattleDroid_ASM.pdf]: http://www.robotis.com/download/doc/BIO_PRM_BattleDroid_ASM.pdf
+[BIO_PRM_BattleDroid_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_battledroid_kr.tsk
+[BIO_PRM_BattleDroid_KR.mtn]: http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_battledroid_kr.mtn
+[BIO_PRM_QuadrupedWalkingRobot_ASM.pdf]: http://www.robotis.com/download/doc/BIO_PRM_QuadrupedWalkingRobot_ASM.pdf
+[BIO_PRM_QuadrupedWalkingRobot_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_quadrupedwalkingrobot_kr.tsk
+[BIO_PRM_QuadrupedWalkingRobot_KR.mtn]: http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_quadrupedwalkingrobot_kr.mtn
+[BIO_PRM_BipedWalkingRobot_ASM.pdf]: http://www.robotis.com/download/doc/BIO_PRM_BipedWalkingRobot_ASM.pdf
+[BIO_PRM_BipedWalkingRobot_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_bipedwalkingrobot_kr.tsk
+[BIO_PRM_BipedWalkingRobot_KR.mtn]: http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_bipedwalkingrobot_kr.mtn
+[BIO_PRM_RobotArm_ASM.pdf]: http://www.robotis.com/download/doc/BIO_PRM_RobotArm_ASM.pdf
+[BIO_PRM_RobotArm_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_robotarm_kr.tsk
+[BIO_PRM_Dinosaur_ASM.pdf]: http://www.robotis.com/download/doc/BIO_PRM_Dinosaur_ASM.pdf
+[BIO_PRM_Dinosaur_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_dinosaur_kr.tsk
+[BIO_PRM_Dinosaur_KR.mtn]: http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_dinosaur_kr.mtn
+[BIO_PRM_Puppy_ASM.pdf]: http://www.robotis.com/download/doc/BIO_PRM_Puppy_ASM.pdf
+[BIO_PRM_Puppy_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_puppy_kr.tsk
+[BIO_PRM_Puppy_KR.mtn]: http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_puppy_kr.mtn
+[BIO_PRM_KingSpider_ASM.pdf]: http://www.robotis.com/download/doc/BIO_PRM_KingSpider_ASM.pdf
+[BIO_PRM_KingSpider_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_kingspider_kr.tsk
+[BIO_PRM_KingSpider_KR.mtn]: http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_kingspider_kr.mtn
+[BIO_PRM_Scorpion_ASM.pdf]: http://www.robotis.com/download/doc/BIO_PRM_Scorpion_ASM.pdf
+[BIO_PRM_Scorpion_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_scorpion_kr.tsk
+[BIO_PRM_Scorpion_KR.mtn]: http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_scorpion_kr.mtn
+[BIO_PRM_Lizard_ASM.pdf]: http://www.robotis.com/download/doc/BIO_PRM_Lizard_ASM.pdf
+[BIO_PRM_Lizard_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_lizard_kr.tsk
+[BIO_PRM_Lizard_KR.mtn]: http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_lizard_kr.mtn
+[BIO_PRM_WalkingMachineExam_KR.mtn]: http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_walkingmachineexam_kr.mtn
+[BIO_PRM_WalkingMachineExam_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_walkingmachineexam_kr.tsk
+[BIO_PRM_GyroSensorExam_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_gyrosensorexam_kr.tsk
+[BIO_PRM_UserMotionExam_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_usermotionexam_kr.tsk
+[BIO_PRM_UserMotionExam_KR.mtn]: http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_usermotionexam_kr.mtn
+[BIO_PRM_GripperExam_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_gripperexam_kr.tsk
+[BIO_PRM_HumanoidTypeB_KR.mtn]: http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_humanoidtypeb_kr.mtn
+
 [스텝 멈춤/실행 시간의 자세한 정보는 여기를 참조하세요.]: http://emanual.robotis.com/docs/en/software/rplus1/motion/#???
 [반복 횟수, 재생 배속]:???
 [자이로 센서를 이용한 보정]: #자이로-센서를-이용한-보정
-[사용자 모션 추가하기(모션 만들기)]: #사용자-모션-추가하기모션-만들기
-[사용자 모션 추가하기(태스크 코드)]: #사용자-모션-추가하기태스크-코드
-[BIO_PRM_UserMotionExam_KR.mtn]:???
-[BIO_PRM_UserMotionExam_KR.tsk]:???
+[사용자 모션 추가(모션 만들기)]: #사용자-모션-추가하기모션-만들기
+[사용자 모션 추가(태스크 코드)]: #사용자-모션-추가하기태스크-코드
+
 ["모션 페이지" 파라미터에 대한 자세한 설명은 여기를 참고하세요.]:???
-[사용자 모션 추가하기(태스크 코드)]:???
-[BIO_PRM_GripperExam_KR.tsk]:???
-[BIO_PRM_HumanoidTypeB_KR.mtn]:???
+[사용자 모션 추가(태스크 코드)]:???
+
 [그리퍼 장착]: #그리퍼-장착
 
 [다운로드 방법 참조]:???
-[ZIG-100/110]:???
-[ZIG-110 set]:???
-[RC-100]:???
-[제어기]:???
+
 [RC-100 채널 바꾸는 방법 링크가기]:???
 [Zig2Serial 채널 바꾸는 방법 링크가기]:???
-[적외선센서]:???
-[접촉 센서]:???   
-[자세한 정보]:???
+[접촉 센서]: /docs/kr/parts/sensor/ts-10/ 
 [자세한 정보]:???
 [5핀 케이블]:???
