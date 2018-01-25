@@ -58,9 +58,9 @@ $ wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/instal
 
 **[TurtleBot]** You can start from "[1.2 Setup your sources.list][12-setup-your-sourceslist]" and keep following the instruction until "[1.7 Getting rosinstall][17-getting-rosinstall]" from below ROS installation instruction link.
 
-- http://wiki.ros.org/kinetic/Installation/Ubuntu
+- [ROS installation](http://wiki.ros.org/kinetic/Installation/Ubuntu)
 
-**Note :** In order to see which packages are installed, please check this link out. https://raw.githubusercontent.com/oroca/oroca-ros-pkg/kinetic/ros_install.sh
+**Note :** In order to see which packages are installed, please check this link out. [install_ros_kinetic](https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic.sh)
 {: .notice--info}
 
 ### [Install Dependent Packages](#install-dependent-packages)
@@ -86,10 +86,7 @@ If catkin_make command is completed without any errors, the preparation for Turt
 **[TurtleBot]** The following commands allow to use USB port for OpenCR1.0 without acquiring root permission.
 
 ``` bash
-$ cd ~/catkin_ws/src/turtlebot3
-$ sudo cp ./99-turtlebot3-cdc.rules /etc/udev/rules.d/
-$ sudo udevadm control --reload-rules
-$ sudo udevadm trigger
+$ rosrun turtlebot3_bringup create_udev_rules
 ```
 
 ## [Network Configuration (Burger and Waffle)](#network-configuration-burger-and-waffle)

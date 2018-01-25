@@ -27,11 +27,11 @@ sidebar:
 
 **[Remote PC]** Download `Ubuntu 16.04` on the remote PC from the following link.
 
-- https://www.ubuntu.com/download/desktop
+- [Download link](https://www.ubuntu.com/download/desktop)
 
 If you need more help for installing Ubuntu, check out the step-by-step guide from the link below.
 
-- https://www.ubuntu.com/download/desktop/install-ubuntu-desktop
+- [Install ubuntu desktop](https://www.ubuntu.com/download/desktop/install-ubuntu-desktop)
 
 ## [Install ROS on Remote PC](#install-ros-on-remote-pc)
 
@@ -44,7 +44,7 @@ In order to develop source code from the remote PC, please configure ROS environ
 
 Install [ROS][ros] by using a simple installation script file
 
-**Tip :** The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is <kbd>Ctrl</kbd>-<kbd>Alt</kbd>-<kbd>T</kbd>.
+**Tip :** The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`-`Alt`-`T`.
 {: .notice--info}
 
 ``` bash
@@ -59,13 +59,13 @@ You can start from "[1.2 Setup your sources.list][12-setup-your-sourceslist]" an
 
 - http://wiki.ros.org/kinetic/Installation/Ubuntu
 
-**Note :** In order to check which packages are installed, please check this link out. https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic.sh
+**Note :** In order to check which packages are installed, please check this link out. [install_ros_kinetic](https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic.sh)
 {: .notice--info}
 
 ### [Configure ROS Environment](#configure-ros-environment)
 If you are going to modify or develop source code from the remote PC, you'll have to configure ROS environment. Simple instructions are described in the below link and it will take a couple minutes.
 
-- http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment
+- [ROS Environment](http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment)
 
 ## [Install Dependent packages](#install-dependent-packages)
 

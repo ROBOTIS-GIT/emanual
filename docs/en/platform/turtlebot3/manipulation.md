@@ -15,10 +15,10 @@ sidebar:
 
 # [Manipulation](#manipulation)
 
-`Note` This instruction was tested on <kbd>Ubuntu 16.04</kbd>, <kbd>Linux Mint 18.1</kbd> and <kbd>ROS Kinetic Kame</kbd>.
+`Note` This instruction was tested on `Ubuntu 16.04`, `Linux Mint 18.1` and `ROS Kinetic Kame`.
 {: .notice--info}
 
-`Note` If you want more specfic information about OpenManipulator, please refer to the [OpenManipulator e-Manual](/docs/en/platform/openmanipulator/openmanipulator/)
+`Note` If you want more specfic information about OpenManipulator, please refer to the [OpenManipulator e-Manual](/docs/en/platform/openmanipulator/)
 {: .notice--info}
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/qbht0ssv8M0" frameborder="0" allowfullscreen></iframe>
