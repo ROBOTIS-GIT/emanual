@@ -445,7 +445,7 @@ sidebar:
 - 복사는 모션 유닛 -> 모션 순으로 진행해야 하며, 모션 유닛을 복사하지 않고 모션을 복사한다면 빈 모션으로 복사됩니다.
 {% endcapture %}
 
-<div class="notice-warning">{{ motion_01 || markdownify }}</div>
+<div class="notice-warning">{{ motion_01 | markdownify }}</div>
 
 ## [오프셋 편집](#오프셋-편집)
 

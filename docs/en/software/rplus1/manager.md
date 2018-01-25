@@ -165,7 +165,7 @@ If the controller's firmware version is older than that of RoboPlus Manager, it 
 
 #### General/Detail Search
 
-{% include en/software/rplus1/genera_detail_search.md %}
+{% include en/software/rplus1/general_detail_search.md %}
 
 #### Aux LED
 
@@ -200,7 +200,7 @@ If the controller's firmware version is older than that of RoboPlus Manager, it 
 
 #### General/Detail Search
 
-{% include en/software/rplus1/genera_detail_search.md %}
+{% include en/software/rplus1/general_detail_search.md %}
 
 #### Aux LED
 
@@ -255,7 +255,7 @@ If the controller's firmware version is older than that of RoboPlus Manager, it 
 
 #### General/Detail Search
 
-{% include en/software/rplus1/genera_detail_search.md %}
+{% include en/software/rplus1/general_detail_search.md %}
 
 #### Aux LED
 
@@ -314,7 +314,7 @@ If the controller's firmware version is older than that of RoboPlus Manager, it 
 
 #### General/Detail Search
 
-{% include en/software/rplus1/genera_detail_search.md %}
+{% include en/software/rplus1/general_detail_search.md %}
 
 #### Aux LED
 

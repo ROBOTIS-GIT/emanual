@@ -47,7 +47,7 @@ sidebar:
 
 ## [화면 출력하기](#화면-출력하기)
 
-{% include kr/parts/controller/screen_output.md %}
+{% include kr/edu/bioloid/screen_output.md %}
 
 ## [버튼과 LED](버튼과-led)
 

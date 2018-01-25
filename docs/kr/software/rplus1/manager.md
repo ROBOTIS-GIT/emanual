@@ -265,7 +265,7 @@ RoboPlus Manager는 인터넷을 통해 새 버전의 펌웨어를 자동으로 
 
 #### 일반/상세 검색
 
-{% include kr/software/rplus1/genera_detail_search.md %}
+{% include kr/software/rplus1/general_detail_search.md %}
 
 #### Aux LED
 
@@ -300,7 +300,7 @@ RoboPlus Manager는 인터넷을 통해 새 버전의 펌웨어를 자동으로 
 
 #### 일반/상세 검색
 
-{% include kr/software/rplus1/genera_detail_search.md %}
+{% include kr/software/rplus1/general_detail_search.md %}
 
 #### Aux LED
 
@@ -355,7 +355,7 @@ RoboPlus Manager는 인터넷을 통해 새 버전의 펌웨어를 자동으로 
 
 #### 일반/상세 검색
 
-{% include kr/software/rplus1/genera_detail_search.md %}
+{% include kr/software/rplus1/general_detail_search.md %}
 
 #### Aux LED
 
@@ -405,7 +405,7 @@ RoboPlus Manager는 인터넷을 통해 새 버전의 펌웨어를 자동으로 
 
 #### 일반/상세 검색
 
-{% include kr/software/rplus1/genera_detail_search.md %}
+{% include kr/software/rplus1/general_detail_search.md %}
 
 #### Aux LED
 
