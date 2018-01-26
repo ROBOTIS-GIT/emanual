@@ -14,7 +14,7 @@ sidebar:
 <div style="counter-reset: h1 3">
 </div>
 
-# [Miscellenous](#miscellenous)
+# [Miscellaneous](#miscellaneous)
 ## [Select Controller](#select-controller)
 The commands and parameters that can be used in RoboPlus Task depend on the controller.  Therefore, a controller must be selected before creating a program.
 

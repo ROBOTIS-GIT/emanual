@@ -13,7 +13,7 @@ sidebar:
 
 # [Introduction](#introduction)
 
-The ROBOTIS OpenCM is a development Software and download tool for the OpenCM9.04 embedded board.  
+The `ROBOTIS OpenCM` is a development Software and download tool for the OpenCM9.04 embedded board.  
 Sources of the ROBOTIS OpenCM are released under licenses of their respective authors.  
 Copyright (c)  ROBOTIS Co., Ltd. Modified or newly-created codes are released under the GNUGPL or LGPL licenses.  
 For more information on the OpenCM9.04 refer to the Appendix section of the e-manuals.  
@@ -21,22 +21,22 @@ For more information on the OpenCM9.04 refer to the Appendix section of the e-ma
 - [GNU GPL](http://opensource.org/licenses/gpl-license.php)
 - [GNL LGPL](http://opensource.org/licenses/lgpl-license.php)
 
-## OpenCM9.04 Software Download
+## ROBOTIS OpenCM Software Download
 
 OpenCM9.04 uses the ROBOTIS OpenCM Integrated Developmental Environment (IDE) to allow users to program with ease.  
 The download link for the ROBOTIS OpenCM IDE can be found below:
 
-- [Windows XP, Vista, 7, 8] 32bit/64bit : [ROBOTIS-v1.0.4-windows.zip](http://www.robotis.com/download/software/CM-9/ROBOTIS-v1.0.4-windows.zip)
-- [Mac OS X] Tested in OS X 10.12.2 : [ROBOTIS_OpenCM-v1.0.3-macosx.zip](http://support.robotis.com/en/baggage_files/opencm/robotis_opencm-v1.0.3-macosx.zip)
-- [Linux 64bit] Tested in Ubuntu 12.04 : [ROBOTIS_OpenCM-v1.0.2-linux64.tgz](http://www.robotis.com/download/software/CM-9/ROBOTIS_OpenCM-v1.0.2-linux64.tgz)
-- [Linux 32bit] Tested in Ubuntu 10.10 : [ROBOTIS_OpenCM-v1.0.2-linux32.tgz](http://www.robotis.com/download/software/CM-9/ROBOTIS_OpenCM-v1.0.2-linux32.tgz)
+- [Windows XP, Vista, 7, 8] 32bit/64bit : [Download](http://www.robotis.com/service/download.php?no=47)
+- [Mac OS X] Tested in OS X 10.12.2 : [Download](http://www.robotis.com/service/download.php?no=48)
+- [Linux 64bit] Tested in Ubuntu 12.04 : [Download](http://www.robotis.com/service/download.php?no=49)
+- [Linux 32bit] Tested in Ubuntu 10.10 : [Dowload](http://www.robotis.com/service/download.php?no=50)
 
 
 # [Getting Started](#getting-started)
 
 ## [Install Software](#install-software)
 
-### Windows
+### [Windows](#windows)
 
 #### Prepare the OpenCM9.04 and USB cable
 
@@ -105,25 +105,25 @@ This will execute the ROBOTIS OpenCM tool as shown below.
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_011.png)
 
-#### Open the Example Blink
+##### Open the Example Blink
 
 Go to File → Examples → 01.Basics → b_Blink
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_012.png)
  
-#### Select the Board
+##### Select the Board
 
 In Tools → Board, select ROBOTIS OpenCM9.04.
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_013.png)
  
-#### Select the Serial Port
+##### Select the Serial Port
 
 Make sure you select the COM Port number that you checked in the previous step.
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_014.png)
  
-#### Proceed to Download
+##### Proceed to Download
 
 Click on the Download button as shown below. As the download begins the board’s green LED is continuously turned on. Once the download is complete the board resets and the Blink example is executed, and the LED blinks.
 
@@ -132,7 +132,7 @@ Click on the Download button as shown below. As the download begins the board’
 `Note` If the power turns on for the board and the green LED is continuously turned on then restart the Download. Please refer to the Emergency Recovery Mode(Force Download) section.
 {: .notice}
 
-### MAC OS X
+### [MAC OS X](#mac-os-x)
 
 #### Download the Mac OS X release for ROBOTIS OpenCM
 
@@ -196,7 +196,7 @@ Click on the Download button as shown below. As the download begins the board’
 `Note` If the power turns on for the board and the green LED is continuously turned on then restart the Download. Please refer to the Emergency Recovery Mode(Force Download) section.
 {: .notice}
 
-### Linux
+### [Linux](#linux)
 
 #### Download the Linux release for ROBOTIS OpenCM
 
@@ -285,9 +285,7 @@ As the download begins the board’s green LED is continuously turned on. Once t
 `Note` If the power turns on for the board and the green LED is continuously turned on then restart the Download. Please refer to the Emergency Recovery Mode(Force Download) section.
 {: .notice}
 
-## [OpenCM IDE](#opencm-ide)
-
-### Run the Program
+## [Run Program](#run-program)
 
 If you run the program the following screen appears.
  
@@ -529,7 +527,7 @@ Please note that the pins assigned to the 5-pin are also shared with the 40-pin 
 
 For example, if you connect the IR sensor to Port 1, you must not use Pins 2, 6, and 7 in the header.
 
-### IR Sensor Module
+### [IR Sensor Module](#ir-sensor-module)
 
 1. Connectivity  
     The way it works, as explained in the E-manual, is if High is given to SIG2(MOT+), the transmitter LED is turned on and its infrared is detected by the detector LED and is shown as ADC.  
@@ -557,7 +555,7 @@ For example, if you connect the IR sensor to Port 1, you must not use Pins 2, 6,
     And if you send SIG2 again as LOW then one cycle will be finished. It does not matter if there is nothing 30us afterwards.  
     The OLLO library is already coded with this principle so you can easily use it.
 
-### DMS Sensor Module
+### [DMS Sensor Module](#dms-sensor-module)
 
 1. Connectivity  
     By default, you approve voltage using the 3 middle pins of the 5 pins and afterwards read the ADC value to utilize it.  
@@ -575,7 +573,7 @@ For example, if you connect the IR sensor to Port 1, you must not use Pins 2, 6,
 
     ![](/assets/images/sw/opencm_ide/opencm_ide_085.png)
 
-### Gyro Sensor
+### [Gyro Sensor](#gyro-sensor)
 
 1. Connectivity and Sensor Internal Structure  
     The Robotis gyro sensor can also be connected to Pin 5 of OpenCM9.04 to measure the angular speeds of X, Y (rotational acceleration).
@@ -594,7 +592,7 @@ For example, if you connect the IR sensor to Port 1, you must not use Pins 2, 6,
 
     ![](/assets/images/sw/opencm_ide/opencm_ide_088.jpg)
 
-### LED Module
+### [LED Module](#led-module)
 
 1. Connectivity and Internal Structure  
     The LED module is not a sensor module but simple a module to use 2 LED’s as a display format.  
@@ -607,7 +605,8 @@ For example, if you connect the IR sensor to Port 1, you must not use Pins 2, 6,
 
     ![](/assets/images/sw/opencm_ide/opencm_ide_089.png)
 
-### Touch Sensor
+### [Touch Sensor](#touch-sensor)
+
 1. Connectivity and Internal Structure  
     The touch sensor works by detecting whether it has been touched, just as a button, when it is simply pressed from the top. You can also use it simply as a button.  
     The circuit diagram is also nothing more than a frequently used button circuit. When the button is pressed it returns HIGH and when the button is released it returns LOW.  
@@ -1216,7 +1215,8 @@ Using the same method we will read one byte using readByte().
 
 ```c
 byte temp = Dxl.readByte(1, 43);
-SerialUSB.print(“Current Temperature : “);SerialUSB.println(temp);
+SerialUSB.print(“Current Temperature : “);
+SerialUSB.println(temp);
 ```
 
 ### Let us configure the ID as 2 for AX-12.
@@ -1289,7 +1289,9 @@ Dxl.writeWord(1, 30, 512);
 
 Now check if the communication was successful using the function Dxl.getResult().
 
-### For each RX-64 let us move them each to the following locations and speeds. After we finish moving them we will return them all to their original location of 0. This action will be repeated continuously.
+### For each RX-64 let us move them each to the following locations and speeds.
+
+After we finish moving them we will return them all to their original location of 0. This action will be repeated continuously.
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_123.png)
 
@@ -1362,7 +1364,8 @@ Dxl.writeWord(1, 30, 512);   // Move to location 180 degrees
 if( Dxl.getResult() == COMM_RXSUCCESS ){ // Check if the communication was successful...}
 ```
 
-### Move AX-12 which has ID number 0 to location of 0 degrees, and move AX-12 which has ID number 1 to location of 300 degrees. (We will start with borth AX-12 in the same position)
+### Move ID #0 AX-12 to 0&deg;, and move ID #1 AX-12 to 300&deg;
+We will start with both AX-12 in the same position.
 Similar to Syncwrite, we will create a Packets directly using the setTxPacketXXX() method. In this case we will make a Packet using INST_REG_WRITE and INST_ACTION. Note that the location of 1 degrees corresponds to 0, and the location of 300 degrees corresponds to 1023(0x3FF).
 
 ```c
@@ -1428,7 +1431,9 @@ Please refer to the RC-100 for information on the RC-100 communication packet.
 > Connecting OpenCM9.04 and the RC100 controller using ZigBee 
 
 ### Infrared connection using RC-100B + IR Receiver OIR-10
-Please refer to OIR-10 for information on infrared communication methods for RC-100A or RC-100B.
+Please refer to [IR-10] for information on infrared communication methods for RC-100A or RC-100B.
+
+[IR-10]: ???
 
 ### Bluetooth connection using an Android smartphone + BT-210 
 For Android smartphones you can use the R+ m.Task application’s RC100 simulation to send RC-100 packets. You can download R+m.Task through Google Play.
@@ -1442,15 +1447,20 @@ For Android smartphones you can use the R+ m.Task application’s RC100 simulati
 ### Let us make the Status LED of OpenCM9.04 blink when Button 1 of RC100 is pressed.
 The RC100 library is used to process the RC100 packets in OpenCM9.04.  
 The RC100 library can be started in 2 modes, the wireless communication mode and the infrared communication mode.  
-Wireless communication mode(1) – Bluetooth module(BT-210/BT-110A), ZigBee module(ZIG-110A)  
-Infrared communication mode(2) – Infrared receiver(OIR-10)  
+- Wireless communication mode(1) : Bluetooth module(BT-210/BT-110A), ZigBee module(ZIG-110A)  
+- Infrared communication mode(2) : Infrared receiver(OIR-10)  
+
 We will initialize to the RC100 library using the wireless communication mode.  
 
 ```c
 #include <RC100.h>
 RC100 Controller;
 Controller.begin(1);  //RC100 init as remote mode
+```
+
 Please refer below for defining each button of RC100.
+
+```c
 #define RC100_BTN_U (1)
 #define RC100_BTN_D (2)
 #define RC100_BTN_L (4)
@@ -1467,10 +1477,9 @@ If the packet data read using the RC100 library is Button 1 then output the Stat
 
 ```c
 if(Controller.available()){
-RcvData = Controller.readData()
-if(RcvData & RC100_BTN_1)
-  digitalWrite(BOARD_LED_PIN, LOW);
-
+  RcvData = Controller.readData()
+  if(RcvData & RC100_BTN_1)
+    digitalWrite(BOARD_LED_PIN, LOW);
 }
 ```
 
@@ -1503,8 +1512,9 @@ Once you select the examples the following codes appear.
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_138.png)
 
-`Example Explanation`  
-In setup() we initialize the BKP Memory and initialize the Serial2 device to 57600bps. Then print “Start OpenCM9.04 BKP Memory Test” through Serial2 and start loop().  
+### Example Explanation
+
+In setup() we initialize the BKP Memory and initialize the Serial2 device to 57,600bps. Then print “Start OpenCM9.04 BKP Memory Test” through Serial2 and start loop().  
 STM32F103CB of OpenCM is composed of a BKP Memory with a total of ten 16bit registers.  
 In loop() we will output data from addresses 1 to 10 with a 1 second interval, and when  
 

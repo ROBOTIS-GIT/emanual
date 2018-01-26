@@ -93,15 +93,15 @@ The following robots have less than 4 joints and the robots can be built with Be
 
 ## [Examples](#examples)
 
-### Beginner Level
+### [Beginner Level]
 
 {% include en/edu/bioloid/example_beginner.md %}
 
-### Intermediate Level
+### [Intermediate Level]
 
 {% include en/edu/bioloid/example_intermediate.md %}
 
-### Advanced Level
+### [Advanced Level]
 
 {% include en/edu/bioloid/example_advanced.md %}
 

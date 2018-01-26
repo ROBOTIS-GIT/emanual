@@ -46,7 +46,7 @@ The Motion project file has an .mtnx extension, and is shown on the PC as the ic
 
     ![](/assets/images/sw/rplus2/motion/roboplus_motion_005.gif)
 
-## [3D Robot and Acutal Robot](#3d-robot-and-actual-robot)
+## [3D Robot and Actual Robot](#3d-robot-and-actual-robot)
 
 The 3D robot acts as an avatar of the actual robot. Even when an actual robot is not present, the 3D robot can be used to edit or playback motions.
 When the actual robot is connected, and Sync Mode is turned on, the 3D robot can be used as an interface to control the actual robot.

@@ -838,7 +838,8 @@ The controller can be operated using RC-100.
   The received data by Zigbee Module can be read using zgb_rx_data() function.  
   If the received packet is RC-100 button, LEDs are turned on or off by controlling PORTC pursuant to pressed buttons of RC-100.
    
-  `Caution` Due to the UART sharing, there  happen a system collision when you use the zigBee and serial communication library at the same source. If you want to use both of them at once, you must modify the source properly in advance.
+  `Caution` Due to the UART sharing, there will be a system collision when you use both ZIGBee and serial communication library at the same time. If you want to use both of them at once, you must modify the source properly in advance.
+  {: .notice--warning}
  
 - Result
   - If Zigbee is connected normally, LEDs are turned on and off whenever the buttons of RC-100 is pressed.

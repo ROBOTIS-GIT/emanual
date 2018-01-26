@@ -73,7 +73,7 @@ RoboPlus Task provides a function to cut, copy and paste lines.
 - Select one or more lines, right-click, and click 'Copy'.
 - The selected line will be copied to a temporary clipboard.
 - When you perform the 'Copy' function, the data in the clipboard will be replaced with the new selection.
-- The shortcut is Ctrl+C.
+- The shortcut is `Ctrl`+`C`.
 
   ![copy][copy]
 
@@ -82,7 +82,7 @@ RoboPlus Task provides a function to cut, copy and paste lines.
 - Select one or more lines, right-click, and click "Cut".
 - The selected line will be deleted and stored in a temporary clipboard.
 - When you perform the "Cut" function, the data in the clipboard will be replaced with the new selection.
-- The shortcut is Ctrl+X.
+- The shortcut is `Ctrl`+`X`.
 
   ![cut][cut]
 
@@ -92,7 +92,7 @@ RoboPlus Task provides a function to cut, copy and paste lines.
 - Select the line where the data will be pasted, right-click, and click "Paste".
 - The data in the clipboard will remain even after it has been pasted, so you can paste the same data many times.
 - If you perform the "Paste" function on a line with code, the code will be overwritten with data from the clipboard.
-- The shortcut is Ctrl+V.
+- The shortcut is `Ctrl`+`V`.
 
   ![paste][paste]
 
@@ -129,10 +129,12 @@ Start a program with the "Start Program" command.
 If this command is called during program execution, the program exits immediately. There are 2 ways to end a programme.
 
 1. When the end of "Start Program" is reached(Natural Exit).
-  ![end01][end01]
+  
+    ![end01][end01]
 
 2. When "End Program" is called(Forced Exit).
-  ![end02][end02]
+  
+    ![end02][end02]
 
 #### Usage
 
@@ -273,7 +275,7 @@ To set a value (Insert 10 into the variable)
 
 In this sample code, the program jumps to "JumpPoint" as soon as it starts and executes "Routine 2".
 
-  ![jump example][jump_example]
+![jump example][jump_example]
 
 ### [If/Else if/Else](#ifelse-ifelse)
 These commands will branch the flow of the program depending on whether the condition is true or false.
@@ -338,7 +340,7 @@ This command is used to repeat the command lines in the block without end.
 
 A block is always required(However, if the block consists of only one, the block need not be enclosed with brackets).
 
-  ![endless usage][endless_usage]
+![endless usage][endless_usage]
 
 Use the "Break Loop" command to exit the loop.
 
@@ -346,7 +348,7 @@ Use the "Break Loop" command to exit the loop.
 
 Continuously prints "10" on the Program Output Monitor.
 
-  ![endless example][endless_example]
+![endless example][endless_example]
 
 ### [Loop While](#loop-while)
 This command is used to repeat the command lines in the block while the clause is true.

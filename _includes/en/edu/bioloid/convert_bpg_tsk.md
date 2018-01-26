@@ -86,7 +86,7 @@ Objective for this tutorial is to convert .bpg files written in Behavior Control
 |![Convert_tsk_17][img_071]|
 
 - In case that (CONT IF) comes after existing (AND), it is changed to &&.
-- In case that (CONT IF) comes after existing (OR),  it is changed to ||.
+- In case that (CONT IF) comes after existing (OR),  it is changed to \|\|.
 
 |RoboPlus Task|
 |:---:|
@@ -162,7 +162,7 @@ Objective for this tutorial is to convert .bpg files written in Behavior Control
 
   Lately added concept : it is not included in existing Behavior Control Program 1.0.
 
-- Make/Call Function ( Click here to see more information on "Make/Call Function. )
+- Make/Call Function ( Click here to see more information on "Make/Call Function". )
 
   The function is the same as the sub-routine composed of existing Label and RETURN.
   In RoboPlus Task, the function must be located outside of the block where is owned by Start Program (the block tied with { AND }).

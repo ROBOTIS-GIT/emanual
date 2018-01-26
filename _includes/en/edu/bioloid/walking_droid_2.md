@@ -32,7 +32,7 @@ It is effective to make regularly-repeated motions such as walking as an infinit
 3. If an object is detected by Central Distance Sensor, Stop and walk backward,and then turn left.
 4. Even though it turns left, if an object is detected by Central Distance Sensor, it turns left until no object is detected.
 
-  ![Walking_Droid-19][img_052]
+    ![Walking_Droid-19][img_052]
 
 5. Write a  function which executes the motion on the page 1 where the "Ready" motion is saved. To wait until the motion is complete after execution, Call the function "WaitMotion."
 6. Write a function which executes the motion on the page 12 where the "Forward" motion is saved. To wait until the motion is complete after execution, Call the function "WaitMotion."
@@ -42,7 +42,7 @@ It is effective to make regularly-repeated motions such as walking as an infinit
 
 ### Download Task Code
 
-[Download][ex_14-2] Complete Task Code ([How to Download Task Code])
+- [Download][ex_14-2] Complete Task Code ([How to Download Task Code])
 
 ### Execute Task Code
 

@@ -199,6 +199,65 @@ This example prints the ZigBee module's ID. This code can be used with controlle
 
 ![My ID Example 02][img_my_id_example_02]
 
+### [Print Program Output](#print-program-output)
+
+Controllers usually do not have display devices the way a PC has a monitor, so it is hard to keep track of what goes on in a controller.  Therefore, a "terminal" is used to "borrow" the PC's monitor.
+
+![terminal][terminal]
+
+#### Open the Program Output Monitor
+
+To see the output of the program, you must open the Program Output Monitor BEFORE executing the program. There are three ways to open the `Program Output Monitor`.
+
+1. Click the 'View Print of Program' on the Download Program window.
+
+    ![output-monitor][output-monitor]
+
+2. Click the `View Print of Program` button in the tool bar.
+3. Press `F5` or click on `View Print of Program(V)` menu under Program(P).
+
+
+#### Print/Print with Carriage Return
+
+Use the "Print" parameter in your task code to see desired values on the screen.
+
+![task code][code]
+
+Print : Print the value, then move the cursor to next line.
+
+![print][print]
+
+Print with New Line: Print out the value, and move the cursor to next line.
+
+![newline][newline]
+
+#### Error : Please check the following
+
+1. Values from the controller
+    - A welcome screen is shown when the program starts
+
+      ![start-message][start-message]
+
+    - Error messages during program operation([Error Messages])
+
+      ![error-code][error-code]
+
+2. Values from task code : All decimal numbers between -32767 and +32767 can be displayed(Printing characters or custom messages is not possible).
+
+    - To print numbers
+
+      ![print-num][print-num]
+
+    - To print values from sensors
+
+      ![print-sensor][print-sensor]
+
+#### Clear Screen
+
+You may erase everything on the screen.
+
+![clear-screen][clear-screen]
+
 ### [IR Left/Center/Right](#ir-leftcenterright)
 
 This parameters are used to read the IR sensors' values.
@@ -1365,6 +1424,17 @@ Variables are useful when a number to be remembered, when a value must be change
 [img_remocon_id]: /assets/images/sw/rplus1/task/roboplus_task_en_090.png
 [img_my_id_example_01]: /assets/images/sw/rplus1/task/roboplus_task_en_091.png
 [img_my_id_example_02]: /assets/images/sw/rplus1/task/roboplus_task_en_092.png
+[terminal]: /assets/images/sw/rplus1/task/roboplus_task_en_012.png
+[output-monitor]: /assets/images/sw/rplus1/task/roboplus_task_en_013.png
+[monitor-btn]: /assets/images/sw/rplus1/task/monitor_btn.png
+[code]: /assets/images/sw/rplus1/task/roboplus_task_en_014.png
+[print]: /assets/images/sw/rplus1/task/roboplus_task_en_015.png
+[newline]: /assets/images/sw/rplus1/task/roboplus_task_en_016.png
+[start-message]: /assets/images/sw/rplus1/task/roboplus_task_en_017.png
+[error-code]: /assets/images/sw/rplus1/task/roboplus_task_en_018.png
+[print-num]: /assets/images/sw/rplus1/task/roboplus_task_en_019.png
+[print-sensor]: /assets/images/sw/rplus1/task/roboplus_task_en_020.png
+[clear-screen]: /assets/images/sw/rplus1/task/roboplus_task_en_021.png
 [img_controller_ir_sensor]: /assets/images/sw/rplus1/task/roboplus_task_en_093.png
 [img_buzzer_01]: /assets/images/sw/rplus1/task/roboplus_task_en_094.png
 [img_buzzer_02]: /assets/images/sw/rplus1/task/roboplus_task_en_095.png

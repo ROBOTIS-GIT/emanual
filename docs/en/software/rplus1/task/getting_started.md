@@ -111,15 +111,14 @@ To download the task code, the controller must be connected to the PC. (Please r
 
 5. Execute the task code -> Your robot will move. Turn on the controller and execute the downloaded task code. (Please refer to [controller information] to learn how to execute the task code.)
 
-### [Videos](#videos)
 
-1. Download RoboPlus Program(for CM-100)
+- Download RoboPlus Program(for CM-100)
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/3mDP9BW-Q0E" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3mDP9BW-Q0E" frameborder="0" allowfullscreen></iframe>
 
-2. Download RoboPlus Program(for CM-510/530)
+- Download RoboPlus Program(for CM-510/530)
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/dHCqPs1_2yY" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dHCqPs1_2yY" frameborder="0" allowfullscreen></iframe>
 
 
 ## [Print on the Screen](#print-on-the-screen)

@@ -10,7 +10,7 @@ html {
   }
 }
 
-@media screen and (max-width: $mobile-width) {
+@media screen and (max-width: $mobile-landscape) {
   
   #main {
     padding-top: 50px;
@@ -57,6 +57,11 @@ html {
   #site_search {
     right: 45px;
     max-width: 15em;
+    
+    @media screen and (max-width: $mobile-portrait) {
+      top: 30px;
+      right: 10px;
+    }
   }
   
   .menu-icon {
@@ -71,6 +76,21 @@ html {
     top: 10rem;
     right: -5px;
     background-color: #2174b6;
+    border: 1px solid mix(#fff, #000, 80%);
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+    z-index: 100;
+    opacity: 0.8;
+  }
+  
+  #backtotop {
+    display: block;
+    position: fixed;
+    width: 45px;
+    height: 50px;
+    top: 13.2rem;
+    right: -5px;
+    // background-color: #2174b6;
     border: 1px solid mix(#fff, #000, 80%);
     border-radius: $border-radius;
     box-shadow: $box-shadow;
