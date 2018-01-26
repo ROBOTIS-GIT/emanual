@@ -11,11 +11,9 @@ sidebar:
   nav: "ax-12a"
 ---
 
-# AX-12A
+![](/assets/images/dxl/ax/ax-12+_product.png)![](/assets/images/dxl/ax/ax-12a_product.png)
 
-![](/assets/images/dxl/ax/ax-12+_product.png)
-
-![](/assets/images/dxl/ax/ax-12a_product.png)
+> AX-12+, AX-12A
 
 `Note` AX-12+ is the improved version of existing AX-12; the design of circuit, material, and wheel gear are specially improved.
 {: .notice}
@@ -25,24 +23,24 @@ sidebar:
 
 # [Specifications](#specifications)
 
-| Item           | Specifications     |
-| :------------- | :------------- |
-| Baud Rate       | 7843 bps ~ 1 Mbps       |
-| Resolution | 0.29&deg;  |
-| Running Degree | 0&deg; ~ 300&deg;<br />Endless Turn |
-| Weight | 53.5g(AX-12, AX-12+), 54.6g(AX-12A) |
-| Dimensions (W x H x D) | 32mm x 50mm x 40mm |
-| Gear Ratio | 254 : 1  |
-| Stall Torque | 1.5 N*m (at 12V, 1.5A) |
-| No Load Speed | 59rpm (at 12V) |
-| Operating Temperature | -5&deg;C ~ +70&deg;C |
-| Input Voltage | 9.0 ~ 12.0V (**Recommended : 11.1V**) |
-| Command Signal | Digital Packet |
-| Protocol Type | Half Duplex Asynchronous Serial Communication<br />(8bit, 1stop, No Parity) |
-| Physical Connection | TTL Level Multi Drop Bus(Daisy Chain Type Connector) |
-| ID | 0 ~ 253 |
-| Feedback | Position, Temperature, Load, Input Voltage, etc |
-| Material | Engineering Plastic |
+| Item                   | Specifications                                                              |
+|:-----------------------|:----------------------------------------------------------------------------|
+| Baud Rate              | 7843 bps ~ 1 Mbps                                                           |
+| Resolution             | 0.29&deg;                                                                   |
+| Running Degree         | 0&deg; ~ 300&deg;<br />Endless Turn                                         |
+| Weight                 | 53.5g(AX-12, AX-12+), 54.6g(AX-12A)                                         |
+| Dimensions (W x H x D) | 32mm x 50mm x 40mm                                                          |
+| Gear Ratio             | 254 : 1                                                                     |
+| Stall Torque           | 1.5 N*m (at 12V, 1.5A)                                                      |
+| No Load Speed          | 59rpm (at 12V)                                                              |
+| Operating Temperature  | -5&deg;C ~ +70&deg;C                                                        |
+| Input Voltage          | 9.0 ~ 12.0V (**Recommended : 11.1V**)                                       |
+| Command Signal         | Digital Packet                                                              |
+| Protocol Type          | Half Duplex Asynchronous Serial Communication<br />(8bit, 1stop, No Parity) |
+| Physical Connection    | TTL Level Multi Drop Bus(Daisy Chain Type Connector)                        |
+| ID                     | 0 ~ 253                                                                     |
+| Feedback               | Position, Temperature, Load, Input Voltage, etc                             |
+| Material               | Engineering Plastic                                                         |
 
 `Note` Stall torque is the maximum instantaneous and static  torque. Stable motions are possible with robots designed for loads with 1/5 or less of the stall torque.
 {: .notice}
@@ -51,46 +49,46 @@ sidebar:
 
 ## [Control Table of EEPROM Area](#control-table-of-eeprom-area)
 
-| Address     | Size(Byte)     | Data Name     | Description     | Access     | Initial Value     |
-| :------------- | :------------- | :------------- | :------------- | :------------- | :------------- |
-|0|2|[Model Number](#model-number)         | Model Number       | R       | 12 |
-|2|1|[Firmware Version](#firmware-version)    |Firmware Version|R|-|
-|3|1|[ID](#id)                  |DYNAMIXEL ID      |RW|1|
-|4|1|[Baud Rate](#baud-rate)           |Communication Speed|RW|1|
-|5|1|[Return Delay Time](#return-delay-time)   |Response Delay Time|RW|250|
-|6|2|[CW Angle Limit](#cw-angle-limit)          |Clockwise Angle Limit|RW|0|
-|8|2|[CCW Angle Limit](#ccw-angle-limit)          |Counter-Clockwise Angle Limit|RW|1023|
-|11|1|[Temperature Limit](#temperature-limit)   |Maximum Internal Temperature Limit|RW|70|
-|12|1|[Min Voltage Limit](#min-voltage-limit)   |Minimum Input Voltage Limit|RW|60|
-|13|1|[Max Voltage Limit](#max-voltage-limit)   |Maximum Input Voltage Limit|RW|140|
-|14|2|[Max Torque](#max-torque)           |Maximun Torque|RW|1023|
-|16|1|[Status Return Level](#status-return-level)      |Select Types of Status Return|RW|2|
-|17|1|[Alarm LED](#alarm-led)                             |LED for Alarm|RW|36|
-|18|1|[Shutdown](#shutdown)            |Shutdown Error Information|RW|36|
+| Address | Size(Byte) | Data Name                                   | Description                        | Access | Initial Value |
+|:--------|:-----------|:--------------------------------------------|:-----------------------------------|:-------|:--------------|
+| 0       | 2          | [Model Number](#model-number)               | Model Number                       | R      | 12            |
+| 2       | 1          | [Firmware Version](#firmware-version)       | Firmware Version                   | R      | -             |
+| 3       | 1          | [ID](#id)                                   | DYNAMIXEL ID                       | RW     | 1             |
+| 4       | 1          | [Baud Rate](#baud-rate)                     | Communication Speed                | RW     | 1             |
+| 5       | 1          | [Return Delay Time](#return-delay-time)     | Response Delay Time                | RW     | 250           |
+| 6       | 2          | [CW Angle Limit](#cw-angle-limit)           | Clockwise Angle Limit              | RW     | 0             |
+| 8       | 2          | [CCW Angle Limit](#ccw-angle-limit)         | Counter-Clockwise Angle Limit      | RW     | 1023          |
+| 11      | 1          | [Temperature Limit](#temperature-limit)     | Maximum Internal Temperature Limit | RW     | 70            |
+| 12      | 1          | [Min Voltage Limit](#min-voltage-limit)     | Minimum Input Voltage Limit        | RW     | 60            |
+| 13      | 1          | [Max Voltage Limit](#max-voltage-limit)     | Maximum Input Voltage Limit        | RW     | 140           |
+| 14      | 2          | [Max Torque](#max-torque)                   | Maximun Torque                     | RW     | 1023          |
+| 16      | 1          | [Status Return Level](#status-return-level) | Select Types of Status Return      | RW     | 2             |
+| 17      | 1          | [Alarm LED](#alarm-led)                     | LED for Alarm                      | RW     | 36            |
+| 18      | 1          | [Shutdown](#shutdown)                       | Shutdown Error Information         | RW     | 36            |
 
 
 ## [Control Table of RAM Area](#control-table-of-ram-area)
 
-| Address     | Size(Byte)     | Data Name     | Description     | Access     | Initial Value     |
-| :------------- | :------------- | :------------- | :------------- | :------------- | :------------- |
-|24|1|[Torque Enable](#torque-enable)            |Motor Torque On/Off|RW|0|
-|25|1|[LED](#led)                             |Status LED On/Off|RW|0|
-|26|1|[CW Compliance Margin](#cw-compliance-margin)   |CW Compliance Margin|RW|1|
-|27|1|[CCW Compliance Margin](#ccw-compliance-margin)   |CCW Compliance Margin|RW|1|
-|28|1|[CW Compliance Slope](#cw-compliance-slope)   |CW Compliance Slope|RW|32|
-|29|1|[CCW Compliance Slope](#ccw-compliance-alope)   |CCW Compliance Slope|RW|32|
-|30|2|[Goal Position](#goal-position)                 |Target Position|RW|-|
-|32|2|[Moving Speed](#moving-speed)             |Moving Speed|RW|-|
-|34|2|[Torque Limit](#torque-limit)            |Torque Limit(Goal Torque)|RW|ADD 14&amp;15|
-|36|2|[Present Position](#present-position)     |Present Position|R|-|
-|38|2|[Present Speed](#present-speed)           |Present Speed|R|-|
-|40|2|[Present Load](#present-load)             |Present Load|R|-|
-|42|1|[Present Voltage](#present-voltage)       |Present Voltage|R|-|
-|43|1|[Present Temperature](#present-temperature)|Present Temperature|R|-|
-|44|1|[Registered](#registered)                 |If Instruction is registered|R|0|
-|46|1|[Moving](#moving)                   |Movement Status|R|0|
-|47|1|[Lock](#lock)                   |Locking EEPROM|RW|0|
-|48|2|[Punch](#punch)                   |Minimum Current Threshold|RW|32|
+| Address | Size(Byte) | Data Name                                       | Description                  | Access | Initial Value |
+|:--------|:-----------|:------------------------------------------------|:-----------------------------|:-------|:--------------|
+| 24      | 1          | [Torque Enable](#torque-enable)                 | Motor Torque On/Off          | RW     | 0             |
+| 25      | 1          | [LED](#led)                                     | Status LED On/Off            | RW     | 0             |
+| 26      | 1          | [CW Compliance Margin](#cw-compliance-margin)   | CW Compliance Margin         | RW     | 1             |
+| 27      | 1          | [CCW Compliance Margin](#ccw-compliance-margin) | CCW Compliance Margin        | RW     | 1             |
+| 28      | 1          | [CW Compliance Slope](#cw-compliance-slope)     | CW Compliance Slope          | RW     | 32            |
+| 29      | 1          | [CCW Compliance Slope](#ccw-compliance-alope)   | CCW Compliance Slope         | RW     | 32            |
+| 30      | 2          | [Goal Position](#goal-position)                 | Target Position              | RW     | -             |
+| 32      | 2          | [Moving Speed](#moving-speed)                   | Moving Speed                 | RW     | -             |
+| 34      | 2          | [Torque Limit](#torque-limit)                   | Torque Limit(Goal Torque)    | RW     | ADD 14&amp;15 |
+| 36      | 2          | [Present Position](#present-position)           | Present Position             | R      | -             |
+| 38      | 2          | [Present Speed](#present-speed)                 | Present Speed                | R      | -             |
+| 40      | 2          | [Present Load](#present-load)                   | Present Load                 | R      | -             |
+| 42      | 1          | [Present Voltage](#present-voltage)             | Present Voltage              | R      | -             |
+| 43      | 1          | [Present Temperature](#present-temperature)     | Present Temperature          | R      | -             |
+| 44      | 1          | [Registered](#registered)                       | If Instruction is registered | R      | 0             |
+| 46      | 1          | [Moving](#moving)                               | Movement Status              | R      | 0             |
+| 47      | 1          | [Lock](#lock)                                   | Locking EEPROM               | RW     | 0             |
+| 48      | 2          | [Punch](#punch)                                 | Minimum Current Threshold    | RW     | 32            |
 
 
 ## [Control Table Description](#control-table-description)
@@ -183,9 +181,9 @@ If the value is 1024~2047, it means the load works to the CW direction.
 That is, the 10th bit becomes the direction bit to control the direction, and 1024 is equal to 0.
 For example, the value is 512, it means the load is detected in the direction of CCW about 50% of the maximum torque.
 
-| Bit | 15 ~ 11  | 10 | 9 ~ 0|
-| :----: | :---: | :---: | :---: |
-| Value | 0 | Load Direction | Data (Load Ratio)|
+|  Bit  | 15 ~ 11 |       10       |       9 ~ 0       |
+|:-----:|:-------:|:--------------:|:-----------------:|
+| Value |    0    | Load Direction | Data (Load Ratio) |
 
 `Note` CCW Load : Load Direction = 0, CW Load : Load Direction = 1
 {: .notice}
@@ -203,27 +201,27 @@ Data value is identical to the actual temperature in Celsius. For example, if th
 
 ### <a name="registered-instruction"></a>**[Registered Instruction (44)](#registered-instruction-44)**
 
-| Value | Description     |
-| :-------------: | :------------- |
-|0|There are no commands transmitted by REG_WRITE|
-|1|There are commands transmitted by REG_WRITE|
+| Value | Description                                    |
+|:-----:|:-----------------------------------------------|
+|   0   | There are no commands transmitted by REG_WRITE |
+|   1   | There are commands transmitted by REG_WRITE    |
 
 `Note` If ACTION command is executed, the value is changed into 0.
 {: .notice}
 
 ### <a name="moving"></a>**[Moving (46)](#moving-46)**
 
-|Value|Description|
-| :---:| :---|
-|0|Goal position command execution is completed|
-|1|Goal position command execution is in progress|
+| Value | Description                                    |
+|:-----:|:-----------------------------------------------|
+|   0   | Goal position command execution is completed   |
+|   1   | Goal position command execution is in progress |
 
 ### <a name="lock"></a>**[Lock (47)](#lock-47)**
 
-|Value|Description|
-| :---:| :---|
-|0|EEPROM area can be modified|
-|1|EEPROM area cannot be modified|
+| Value | Description                    |
+|:-----:|:-------------------------------|
+|   0   | EEPROM area can be modified    |
+|   1   | EEPROM area cannot be modified |
 
 `Caution` If Lock is set to 1, the power must be turned off and then turned on again to change into 0.
 {: .notice--warning}
@@ -252,7 +250,9 @@ Can choose vales from 0x20 to 0x3FF.
 `Note` [Compatibility Guide]
 {: .notice}
 
-## [Quick Start](#quick-start)
+## [Connector Information](#connector-information)
+
+{% include en/dxl/molex_ttl.md %}
 
 ## [Drawings](#drawings)
 

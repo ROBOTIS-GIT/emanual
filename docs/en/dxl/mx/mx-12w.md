@@ -11,9 +11,9 @@ sidebar:
   nav: "mx-12w"
 ---
 
-# MX-12W
-
 ![](/assets/images/dxl/mx/mx-12_product.jpg)
+
+> MX-12W
 
 # [Specifications](#specifications)
 
@@ -235,7 +235,9 @@ For example, if it is set to 300 then the motor is moving to the CCW direction a
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Tw4GfqUpzNA" frameborder="0" allowfullscreen></iframe>
 
-## [Quick Start](#quick-start)
+## [Connector Information](#connector-information)
+
+{% include en/dxl/molex_ttl.md %}
 
 ## [Drawings](#drawings)
 
