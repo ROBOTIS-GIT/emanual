@@ -11,9 +11,9 @@ sidebar:
   nav: "ax-12w"
 ---
 
-# AX-12W
-
 ![](/assets/images/dxl/ax/ax-12w_product.jpg)
+
+> AX-12W
 
 # [Specifications](#specifications)
 
@@ -381,7 +381,9 @@ Can choose vales from 0x20 to 0x3FF.
 `Note` [Compatibility Guide]
 {: .notice}
 
-## [Quick Start](#quick-start)
+## [Connector Information](#connector-information)
+
+{% include en/dxl/molex_ttl.md %}
 
 ## [Drawings](#drawings)
 

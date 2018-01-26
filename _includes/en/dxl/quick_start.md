@@ -1,5 +1,3 @@
-`Note` Download [[Quick Start PDF]]
-{: .notice}
 
 #### Prerequisites
 - Power supply to DYNAMIXEL(12V SMPS / Controllers)
@@ -11,6 +9,3 @@ In order to change settings of DYNAMIXEL, R+ Manager 2.0 must be installed on yo
 
 #### Basic Settings
 DYNAMIXEL has a default setting when manufactured. If you wish to change basic settings, run R+ Manager 2.0.
-
-
-[Quick Start PDF]: #
