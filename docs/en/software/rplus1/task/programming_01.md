@@ -377,7 +377,11 @@ This command is used to repeat the command lines in the block for the specified 
   ![img_for][img_for]
 
 The number of executions can be calculated as:
-- Number to Executions = Terminal Value - Initial Value + 1
+
+```
+Number to Executions = Terminal Value - Initial Value + 1
+```
+
 This is the equivalent of the "for" function in C language.
 
 #### Usage
