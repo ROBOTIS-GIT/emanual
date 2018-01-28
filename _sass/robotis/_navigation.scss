@@ -1,12 +1,14 @@
-// .nav__list {
-//   background-color: #dcdcdc;
-// }
+.nav__list {
+  overflow-y:auto;
+  height: 95vh;
+}
 
 .sidebar__left {
   width: 330px;
+  height: 100vh;
   float: left;
   position: fixed;
-  z-index: 10;
+  z-index: 9;
   padding: 0.5em;
   word-wrap: break-word;
 }
@@ -45,7 +47,7 @@
 
 .nav__items {
   width: 100%;
-  max-width: 600px;
+  max-width: $mobile-landscape;
   // background: #4d5158;
   // margin: 4em auto;
 }
