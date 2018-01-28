@@ -5,7 +5,6 @@
 .masthead {
   position: relative;
   margin: 0;
-  z-index: 99;
   max-width: $max-width;
   
   &__inner-wrap {
@@ -118,7 +117,7 @@ $bottom-textcolor: white;
   margin-top: 50px;
   width: 100%;
   opacity: 0.95;
-  z-index: 20;
+  z-index: 10;
 }
 
 .mobile_nav__items ul {
