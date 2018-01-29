@@ -8589,105 +8589,157 @@ embedded_c_cm510:
         url: /software/embedded_sdk/embedded_c_cm510/#boot-loader
         urlkr: /software/embedded_sdk/embedded_c_cm510/#부트로더
     - title: "Examples"
-      titlekr: ""
+      titlekr: "예제"
       url: /software/embedded_sdk/embedded_c_cm510/#examples
-      urlkr: /software/embedded_sdk/embedded_c_cm510/#
+      urlkr: /software/embedded_sdk/embedded_c_cm510/#예제
       children:
       - title: "LED Control"
-        titlekr: ""
+        titlekr: "LED 제어"
         url: /software/embedded_sdk/embedded_c_cm510/#led-control
-        urlkr: /software/embedded_sdk/embedded_c_cm510/#
+        urlkr: /software/embedded_sdk/embedded_c_cm510/#led-제어
       - title: "Button"
-        titlekr: ""
+        titlekr: "버튼"
         url: /software/embedded_sdk/embedded_c_cm510/#button
-        urlkr: /software/embedded_sdk/embedded_c_cm510/#
+        urlkr: /software/embedded_sdk/embedded_c_cm510/#버튼
       - title: "Serial Communication"
-        titlekr: ""
+        titlekr: "시리얼 통신"
         url: /software/embedded_sdk/embedded_c_cm510/#serial-communication
-        urlkr: /software/embedded_sdk/embedded_c_cm510/#
+        urlkr: /software/embedded_sdk/embedded_c_cm510/#시리얼-통신
       - title: "Buzzer"
-        titlekr: ""
+        titlekr: "버저"
         url: /software/embedded_sdk/embedded_c_cm510/#buzzer
-        urlkr: /software/embedded_sdk/embedded_c_cm510/#
+        urlkr: /software/embedded_sdk/embedded_c_cm510/#버저
       - title: "MIC"
-        titlekr: ""
+        titlekr: "마이크"
         url: /software/embedded_sdk/embedded_c_cm510/#mic
-        urlkr: /software/embedded_sdk/embedded_c_cm510/#
+        urlkr: /software/embedded_sdk/embedded_c_cm510/#마이크
       - title: "IR Sensor"
-        titlekr: ""
+        titlekr: "적외선 센서"
         url: /software/embedded_sdk/embedded_c_cm510/#ir-sensor
-        urlkr: /software/embedded_sdk/embedded_c_cm510/#
+        urlkr: /software/embedded_sdk/embedded_c_cm510/#적외선-센서
       - title: "Read/Write Dynamixel"
-        titlekr: ""
+        titlekr: "다이나믹셀 읽기/쓰기"
         url: /software/embedded_sdk/embedded_c_cm510/#readwrite-dynamixel
-        urlkr: /software/embedded_sdk/embedded_c_cm510/#
+        urlkr: /software/embedded_sdk/embedded_c_cm510/#다이나믹셀-읽기쓰기
       - title: "Dynamixel Sync Control"
-        titlekr: ""
+        titlekr: "다이나믹셀 동기 제어"
         url: /software/embedded_sdk/embedded_c_cm510/#dynamixel-sync-control
-        urlkr: /software/embedded_sdk/embedded_c_cm510/#
+        urlkr: /software/embedded_sdk/embedded_c_cm510/#다이나믹셀-동기-제어
       - title: "RC-100/ZIGBEE"
-        titlekr: ""
+        titlekr: "RC100과 ZIGBee"
         url: /software/embedded_sdk/embedded_c_cm510/#rc-100zigbee
-        urlkr: /software/embedded_sdk/embedded_c_cm510/#
+        urlkr: /software/embedded_sdk/embedded_c_cm510/#rc100과-zigbee
 
 #Embedded C CM530 sidebar
 embedded_c_cm530:
   - title: "Introduction"
+    titlekr: "개요"
     url: /software/embedded_sdk/embedded_c_cm530/#introduction
+    urlkr: /software/embedded_sdk/embedded_c_cm530/#개요
   - title: "CM-530"
+    titlekr: "CM-530"
     url: /software/embedded_sdk/embedded_c_cm530/#cm-530
+    urlkr: /software/embedded_sdk/embedded_c_cm530/#cm-530
     children:
     - title: "Getting Started"
+      titlekr: "시작하기"
       url: /software/embedded_sdk/embedded_c_cm530/#getting-started
+      urlkr: /software/embedded_sdk/embedded_c_cm530/#시작하기
       children:
       - title: "Install JRE"
+        titlekr: "JRE 설치"
         url: /software/embedded_sdk/embedded_c_cm530/#install-jre
+        urlkr: /software/embedded_sdk/embedded_c_cm530/#jre-설치
       - title: "Install WinARM"
+        titlekr: "WinARM 설치"
         url: /software/embedded_sdk/embedded_c_cm530/#install-winarm
+        urlkr: /software/embedded_sdk/embedded_c_cm530/#winarm-설치
       - title: "Install Eclipse"
+        titlekr: "Eclipse 설치"
         url: /software/embedded_sdk/embedded_c_cm530/#install-atmel-studio
+        urlkr: /software/embedded_sdk/embedded_c_cm530/#eclipse-설치
       - title: "Verify Installation"
+        titlekr: "설치 성공여부 확인"
         url: /software/embedded_sdk/embedded_c_cm530/#verify-installation
+        urlkr: /software/embedded_sdk/embedded_c_cm530/#설치-성공여부-확인
       - title: "Restore RoboPlus"
+        titlekr: "로보플러스 복구하기"
         url: /software/embedded_sdk/embedded_c_cm530/#restore-roboplus
+        urlkr: /software/embedded_sdk/embedded_c_cm530/#로보플러스-복구하기
     - title: "Programming"
+      titlekr: "프로그래밍"
       url: /software/embedded_sdk/embedded_c_cm530/#programming
+      urlkr: /software/embedded_sdk/embedded_c_cm530/#프로그래밍
       children:
       - title: "Hardware Port Map"
+        titlekr: "하드웨어 포트맵"
         url: /software/embedded_sdk/embedded_c_cm530/#hardware-port-map
+        urlkr: /software/embedded_sdk/embedded_c_cm530/#하드웨어-포트맵
       - title: "Open Project"
+        titlekr: "프로젝트 열기"
         url: /software/embedded_sdk/embedded_c_cm530/#open-project
+        urlkr: /software/embedded_sdk/embedded_c_cm530/#프로젝트-열기
       - title: "Download bin File"
+        titlekr: "bin 파일 다운로드 하기"
         url: /software/embedded_sdk/embedded_c_cm530/#download-bin-file
+        urlkr: /software/embedded_sdk/embedded_c_cm530/#bin-파일-다운로드-하기
       - title: "Boot Loader"
+        titlekr: "부트로더"
         url: /software/embedded_sdk/embedded_c_cm530/#boot-loader
+        urlkr: /software/embedded_sdk/embedded_c_cm530/#부트로더
       - title: "Additional Description"
+        titlekr: "부가설명"
         url: /software/embedded_sdk/embedded_c_cm530/#additional-description
+        urlkr: /software/embedded_sdk/embedded_c_cm530/#부가설명
     - title: "Examples"
+      titlekr: "예제"
       url: /software/embedded_sdk/embedded_c_cm530/#examples
+      urlkr: /software/embedded_sdk/embedded_c_cm530/#예제
       children:
       - title: "LED Control"
+        titlekr: "LED 제어"
         url: /software/embedded_sdk/embedded_c_cm530/#led-control
+        urlkr: /software/embedded_sdk/embedded_c_cm530/#led-제어
       - title: "Button"
+        titlekr: "버튼"
         url: /software/embedded_sdk/embedded_c_cm530/#button
+        urlkr: /software/embedded_sdk/embedded_c_cm530/#버튼
       - title: "Serial Communication"
+        titlekr: "시리얼 통신"
         url: /software/embedded_sdk/embedded_c_cm530/#serial-communication
+        urlkr: /software/embedded_sdk/embedded_c_cm530/#시리얼-통신
       - title: "Buzzer"
+        titlekr: "버저"
         url: /software/embedded_sdk/embedded_c_cm530/#buzzer
+        urlkr: /software/embedded_sdk/embedded_c_cm530/#버저
       - title: "MIC"
+        titlekr: "마이크"
         url: /software/embedded_sdk/embedded_c_cm530/#mic
+        urlkr: /software/embedded_sdk/embedded_c_cm530/#마이크
       - title: "OLLO Servo CW/CCW"
+        titlekr: "올로 서보모터(회전방향 제어)"
         url: /software/embedded_sdk/embedded_c_cm530/#ollo-servo-cwccw
+        urlkr: /software/embedded_sdk/embedded_c_cm530/#올로-서보모터회전방향-제어
       - title: "OLLO Servo Position"
+        titlekr: "올로 서보모터(위치값 읽기)"
         url: /software/embedded_sdk/embedded_c_cm530/#ollo-servo-position
+        urlkr: /software/embedded_sdk/embedded_c_cm530/#올로-서보모터위치값-읽기
       - title: "IR Sensor"
+        titlekr: "적외선 센서"
         url: /software/embedded_sdk/embedded_c_cm530/#ir-sensor
+        urlkr: /software/embedded_sdk/embedded_c_cm530/#적외선-센서
       - title: "Read/Write Dynamixel"
+        titlekr: "다이나믹셀 읽기/쓰기"
         url: /software/embedded_sdk/embedded_c_cm530/#readwrite-dynamixel
+        urlkr: /software/embedded_sdk/embedded_c_cm530/#다이나믹셀-읽기쓰기
       - title: "Dynamixel Sync Control"
+        titlekr: "다이나믹셀 동기 제어"
         url: /software/embedded_sdk/embedded_c_cm530/#dynamixel-sync-control
+        urlkr: /software/embedded_sdk/embedded_c_cm530/#다이나믹셀-동기-제어
       - title: "RC-100/ZIGBEE"
+        titlekr: "RC100과 ZIGBee"
         url: /software/embedded_sdk/embedded_c_cm530/#rc-100zigbee
+        urlkr: /software/embedded_sdk/embedded_c_cm530/#rc100과-zigbee
 
 #CM-100A Controller sidebar
 cm-100:
