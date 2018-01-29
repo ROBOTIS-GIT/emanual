@@ -2227,6 +2227,14 @@ $(function() {
 
                   
                 
+                  
+
+                  
+                
+                  
+
+                  
+                
               </div>
               
 
@@ -3346,6 +3354,17 @@ $(function() {
         
 
         
+        <li><a href="http://localhost:4000/docs/en/dxl/x/xh430-w210/#connector-information" onclick="extendnav()">Connector Information</a></li>
+        
+
+        
+        
+      
+        
+
+        
+
+        
         <li><a href="http://localhost:4000/docs/en/dxl/x/xh430-w210/#drawings" onclick="extendnav()">Drawings</a></li>
         
 
@@ -3373,9 +3392,11 @@ $(function() {
     <a href="/blob/master/docs/en/dxl/x/xh430-w210.md" itemprop="sameAs" style="font-size:16px; float:right; margin: 10px 20px; text-decoration: none;">
       <i class="fa fa-fw fa-github" aria-hidden="true"></i> Edit on GitHub
     </a>
-    <h1 id="xh430-w210">XH430-W210</h1>
+    <p><img src="/assets/images/dxl/x/x_series_product.png" alt="" /></p>
 
-<p><img src="/assets/images/dxl/x/x_series_product.png" alt="" /></p>
+<blockquote>
+  <p>XH430-W210</p>
+</blockquote>
 
 <h1 id="specifications"><a href="#specifications">Specifications</a></h1>
 
@@ -3508,11 +3529,11 @@ Do not connect or disconnect DYNAMIXEL when power is being supplied.</p>
   <thead>
     <tr>
       <th style="text-align: left">Address</th>
-      <th style="text-align: left">Size(Byte)</th>
+      <th style="text-align: left">Size<br />(Byte)</th>
       <th style="text-align: left">Data Name</th>
       <th style="text-align: left">Description</th>
       <th style="text-align: left">Access</th>
-      <th style="text-align: left">Initial Value</th>
+      <th style="text-align: left">Initial<br />Value</th>
     </tr>
   </thead>
   <tbody>
@@ -3701,11 +3722,11 @@ Do not connect or disconnect DYNAMIXEL when power is being supplied.</p>
   <thead>
     <tr>
       <th style="text-align: left">Address</th>
-      <th style="text-align: left">Size(Byte)</th>
+      <th style="text-align: left">Size<br />(Byte)</th>
       <th style="text-align: left">Data Name</th>
       <th style="text-align: left">Description</th>
       <th style="text-align: left">Access</th>
-      <th style="text-align: left">Initial Value</th>
+      <th style="text-align: left">Initial<br />Value</th>
     </tr>
   </thead>
   <tbody>
@@ -5466,8 +5487,6 @@ As bearing set is rotating freely, therefore alignment is not required when asse
 
 <h2 id="quick-start"><a href="#quick-start">Quick Start</a></h2>
 
-<p class="notice"><code class="highlighter-rouge">Note</code> Download [<a href="#">Quick Start PDF</a>]</p>
-
 <h4 id="prerequisites">Prerequisites</h4>
 <ul>
   <li>Power supply to DYNAMIXEL(12V SMPS / Controllers)</li>
@@ -5480,6 +5499,50 @@ As bearing set is rotating freely, therefore alignment is not required when asse
 
 <h4 id="basic-settings">Basic Settings</h4>
 <p>DYNAMIXEL has a default setting when manufactured. If you wish to change basic settings, run R+ Manager 2.0.</p>
+
+<h2 id="connector-information"><a href="#connector-information">Connector Information</a></h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Item</th>
+      <th style="text-align: center">TTL</th>
+      <th style="text-align: center">RS-485</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">Pinout</td>
+      <td style="text-align: center"><code class="highlighter-rouge">1</code> GND<br /><code class="highlighter-rouge">2</code> VDD<br /><code class="highlighter-rouge">3</code> DATA</td>
+      <td style="text-align: center"><code class="highlighter-rouge">1</code> GND<br /><code class="highlighter-rouge">2</code> VDD<br /><code class="highlighter-rouge">3</code> DATA+<br /><code class="highlighter-rouge">4</code> DATA-</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Diagram</td>
+      <td style="text-align: center"><img src="/assets/images/dxl/jst_b3beha_diagram.png" alt="" /></td>
+      <td style="text-align: center"><img src="/assets/images/dxl/jst_b4beha_diagram.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Housing</td>
+      <td style="text-align: center"><a href="http://www.jst-mfg.com/product/pdf/eng/eEH.pdf">JST EHR-03</a></td>
+      <td style="text-align: center"><a href="http://www.jst-mfg.com/product/pdf/eng/eEH.pdf">JST EHR-04</a></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">PCB Header</td>
+      <td style="text-align: center"><img src="/assets/images/dxl/jst_b3beha.png" alt="" /><br /><a href="http://www.jst-mfg.com/product/pdf/eng/eEH.pdf">JST B3B-EH-A</a></td>
+      <td style="text-align: center"><img src="/assets/images/dxl/jst_b4beha.png" alt="" /><br /><a href="http://www.jst-mfg.com/product/pdf/eng/eEH.pdf">JST B4B-EH-A</a></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Crimp Terminal</td>
+      <td style="text-align: center"><a href="http://www.jst-mfg.com/product/pdf/eng/eEH.pdf">JST SHE-001T-P0.6</a></td>
+      <td style="text-align: center"><a href="http://www.jst-mfg.com/product/pdf/eng/eEH.pdf">JST SHE-001T-P0.6</a></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Wire Gauge</td>
+      <td style="text-align: center">21 AWG</td>
+      <td style="text-align: center">21 AWG</td>
+    </tr>
+  </tbody>
+</table>
 
 <h2 id="drawings"><a href="#drawings">Drawings</a></h2>
 <p><code class="highlighter-rouge">Download</code> <a href="http://support.robotis.com/en/baggage_files/dynamixel/x-430_std_ref.pdf">X_430_std_ref.pdf</a></p>
