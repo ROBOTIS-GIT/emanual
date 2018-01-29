@@ -332,7 +332,9 @@ main:
       titlekr: "R+ 모바일"
       children:
       - titlekr: "R+ m.Task"
+        url: /software/rplus_mobile/mtask/
       - titlekr: "R+ m.Task 2.0"
+        url: /software/rplus_mobile/mtask20/
       - title: "R+ m.Motion 2.0"
         titlekr: "R+ m.Motion 2.0"
         url: /software/rplus_mobile/mmotion/
@@ -480,8 +482,10 @@ main:
       - title: "Motion Sensor(PIR-10)"
         titlekr: "동작감지 센서(PIR-10)"
         url: /parts/sensor/pir-10/
-      - titlekr: "조도 센서"
-      - titlekr: "온습도 센서"
+      - titlekr: "조도 센서(CDS-10)"
+        url: /parts/sensor/cds-10/
+      - titlekr: "온습도 센서(TMS-10)"
+        url: /parts/sensor/tms-10/
     - title: "Display"
       titlekr: "디스플레이"
       children:
@@ -9403,128 +9407,242 @@ lm-10:
 #DMS-80 sidebar
 dms-80:
   - title: "Introduction"
+    titlekr: "개요"
     url: /parts/sensor/dms-80/#introduction
+    urlkr: /parts/sensor/dms-80/#개요
   - title: "Specifications"
+    titlekr: "사양"
     url: /parts/sensor/dms-80/#specifications
+    urlkr: /parts/sensor/dms-80/#사양
   - title: "Pinout"
+    titlekr: "핀 배열 정보"
     url: /parts/sensor/dms-80/#pinout
+    urlkr: /parts/sensor/dms-80/#핀-배열-정보
   - title: "Sensor Output"
+    titlekr: "센서 출력"
     url: /parts/sensor/dms-80/#sensor-output
+    urlkr: /parts/sensor/dms-80/#센서-출력
   - title: "Tutorials"
+    titlekr: "튜토리얼"
     url: /parts/sensor/dms-80/#tutorials
+    urlkr: /parts/sensor/dms-80/#튜토리얼
 
 #IRSS-10 sidebar
 irss-10:
   - title: "Introduction"
+    titlekr: "개요"
     url: /parts/sensor/irss-10/#introduction
+    urlkr: /parts/sensor/irss-10/#개요
   - title: "Specifications"
+    titlekr: "사양"
     url: /parts/sensor/irss-10/#specifications
+    urlkr: /parts/sensor/irss-10/#사양
   - title: "Pinout"
+    titlekr: "핀 배열 정보"
     url: /parts/sensor/irss-10/#pinout
+    urlkr: /parts/sensor/irss-10/#핀-배열-정보
   - title: "Sensor Output"
+    titlekr: "거리와 센세값의 관계"
     url: /parts/sensor/irss-10/#sensor-output
+    urlkr: /parts/sensor/irss-10/#거리와-센서값의-관계
   - title: "Tutorials"
+    titlekr: "튜토리얼"
     url: /parts/sensor/irss-10/#tutorials
+    urlkr: /parts/sensor/irss-10/#튜토리얼
   - title: "Videos"
+    titlekr: "동영상"
     url: /parts/sensor/irss-10/#videos
+    urlkr: /parts/sensor/irss-10/#동영상
 
 #GS-12 sidebar
 gs-12:
   - title: "Introduction"
+    titlekr: "개요"
     url: /parts/sensor/gs-12/#introduction
+    urlkr: /parts/sensor/gs-12/#개요
   - title: "Specifications"
+    titlekr: "사양"
     url: /parts/sensor/gs-12/#specifications
+    urlkr: /parts/sensor/gs-12/#사양
   - title: "Pinout"
+    titlekr: "핀 배열 정보"
     url: /parts/sensor/gs-12/#pinout
+    urlkr: /parts/sensor/gs-12/#핀-배열-정보
   - title: "Sensor Output"
+    titlekr: "센서 출력"
     url: /parts/sensor/gs-12/#sensor-output
+    urlkr: /parts/sensor/gs-12/#센서-출력
   - title: "Tutorials"
+    titlekr: "튜토리얼"
     url: /parts/sensor/gs-12/#tutorials
+    urlkr: /parts/sensor/gs-12/#튜토리얼
 
 #TS-10 sidebar
 ts-10:
   - title: "Introduction"
+    titlekr: "개요"
     url: /parts/sensor/ts-10/#introduction
+    urlkr: /parts/sensor/ts-10/#개요
   - title: "Specifications"
+    titlekr: "사양"
     url: /parts/sensor/ts-10/#specifications
+    urlkr: /parts/sensor/ts-10/#사양
   - title: "Pinout"
+    titlekr: "핀 배열 정보"
     url: /parts/sensor/ts-10/#pinout
-  - title: "Sensor Output"
-    url: /parts/sensor/ts-10/#sensor-output
+    urlkr: /parts/sensor/ts-10/#핀-배열-정보
   - title: "Tutorials"
+    titlekr: "튜토리얼"
     url: /parts/sensor/ts-10/#tutorials
+    urlkr: /parts/sensor/ts-10/#튜토리얼
   - title: "Videos"
+    titlekr: "동영상"
     url: /parts/sensor/ts-10/#videos
+    urlkr: /parts/sensor/ts-10/#동영상
 
 #AX-S1 sidebar
 ax-s1:
   - title: "Introduction"
+    titlekr: "개요"
     url: /parts/sensor/ax-s1/#introduction
+    urlkr: /parts/sensor/ax-s1/#개요
   - title: "Specifications"
+    titlekr: "주요사양"
     url: /parts/sensor/ax-s1/#specifications
+    urlkr: /parts/sensor/ax-s1/#주요사양
   - title: "How to Communicate"
+    titlekr: "통신방법"
     url: /parts/sensor/ax-s1/#how-to-communicate
+    urlkr: /parts/sensor/ax-s1/#통신방법
   - title: "Control Table"
+    titlekr: "컨트롤 테이블"
     url: /parts/sensor/ax-s1/#control-table
+    urlkr: /parts/sensor/ax-s1/#컨트롤-테이블
+  - title: "Control Table Description"
+    titlekr: "컨트롤 테이블 설명"
+    url: /parts/sensor/ax-s1/#control-table-description
+    urlkr: /parts/sensor/ax-s1/#컨트롤-테이블-설명
   - title: "How to Assemble"
+    titlekr: "조립하기"
     url: /parts/sensor/ax-s1/#how-to-assemble
+    urlkr: /parts/sensor/ax-s1/#조립하기
   - title: "References"
+    titlekr: "참고자료"
     url: /parts/sensor/ax-s1/#references
+    urlkr: /parts/sensor/ax-s1/#참고자료
+
+cds-10:
+  - title: "개요"
+    urlkr: /parts/sensor/cds-10/#개요
+  - title: "사양"
+    urlkr: /parts/sensor/cds-10/#사양
+  - title: "핀 배열 정보"
+    urlkr: /parts/sensor/cds-10/#핀-배열-정보
 
 #IR-Array sidebar
 ir-array:
   - title: "Introduction"
+    titlekr: "개요"
     url: /parts/sensor/ir-array/#introduction
+    urlkr: /parts/sensor/ir-array/#개요
   - title: "Specifications"
+    titlekr: "사양"
     url: /parts/sensor/ir-array/#specifications
+    urlkr: /parts/sensor/ir-array/#사양
   - title: "How to Use"
+    titlekr: "사용법"
     url: /parts/sensor/ir-array/#how-to-use
+    urlkr: /parts/sensor/ir-array/#사용법
   - title: "Control Table"
+    titlekr: "컨트롤 테이블"
     url: /parts/sensor/ir-array/#control-table
+    urlkr: /parts/sensor/ir-array/#컨트롤-테이블
 
 #CS-10 sidebar
 cs-10:
   - title: "Introduction"
+    titlekr: "개요"
     url: /parts/sensor/cs-10/#introduction
+    urlkr: /parts/sensor/cs-10/#개요
   - title: "Specifications"
+    titlekr: "사양"
     url: /parts/sensor/cs-10/#specifications
+    urlkr: /parts/sensor/cs-10/#사양
   - title: "Pinout"
+    titlekr: "핀 배열 정보"
     url: /parts/sensor/cs-10/#pinout
+    urlkr: /parts/sensor/cs-10/#핀-배열-정보
   - title: "Videos"
+    titlekr: "동영상"
     url: /parts/sensor/cs-10/#videos
+    urlkr: /parts/sensor/cs-10/#동영상
 
 #MGSS-10 sidebar
 mgss-10:
   - title: "Introduction"
+    titlekr: "개요"
     url: /parts/sensor/mgss-10/#introduction
+    urlkr: /parts/sensor/mgss-10/#개요
   - title: "Specifications"
+    titlekr: "사양"
     url: /parts/sensor/mgss-10/#specifications
+    urlkr: /parts/sensor/mgss-10/#사양
   - title: "Pinout"
+    titlekr: "핀 배열 정보"
     url: /parts/sensor/mgss-10/#pinout
+    urlkr: /parts/sensor/mgss-10/#핀-배열-정보
   - title: "Tutorials"
+    titlekr: "튜토리얼"
     url: /parts/sensor/mgss-10/#tutorials
+    urlkr: /parts/sensor/mgss-10/#튜토리얼
   - title: "Videos"
+    titlekr: "동영상"
     url: /parts/sensor/mgss-10/#videos
+    urlkr: /parts/sensor/mgss-10/#동영상
 
 #TPS-10 sidebar
 tps-10:
   - title: "Introduction"
+    titlekr: "개요"
     url: /parts/sensor/tps-10/#introduction
+    urlkr: /parts/sensor/tps-10/#개요
   - title: "Specifications"
+    titlekr: "사양"
     url: /parts/sensor/tps-10/#specifications
+    urlkr: /parts/sensor/tps-10/#사양
   - title: "Pinout"
+    titlekr: "핀 배열 정보"
     url: /parts/sensor/tps-10/#pinout
+    urlkr: /parts/sensor/tps-10/#핀-배열-정보
   - title: "Videos"
+    titlekr: "동영상"
     url: /parts/sensor/tps-10/#videos
+    urlkr: /parts/sensor/tps-10/#동영상
 
 #PIR-10 sidebar
 pir-10:
   - title: "Introduction"
+    titlekr: "개요"
     url: /parts/sensor/cs-10/#introduction
+    urlkr: /parts/sensor/cs-10/#개요
   - title: "Specifications"
+    titlekr: "사양"
     url: /parts/sensor/cs-10/#specifications
+    urlkr: /parts/sensor/cs-10/#사양
   - title: "Pinout"
+    titlekr: "핀 배열 정보"
     url: /parts/sensor/cs-10/#pinout
+    urlkr: /parts/sensor/cs-10/#핀-배열-정보
+    
+tms-10:
+  - titlekr: "개요"
+    urlkr: /parts/sensor/tms-10/#개요
+  - titlekr: "사양"
+    urlkr: /parts/sensor/tms-10/#사양
+  - titlekr: "핀 배열 정보"
+    urlkr: /parts/sensor/tms-10/#핀-배열-정보
+  - titlekr: "SIG2 신호에 따른 센서 기능"
+    urlkr: /parts/sensor/tms-10/#sig2-신호에-따른-센서-기능
 
 #Geared Motor sidebar
 gm-10a:
