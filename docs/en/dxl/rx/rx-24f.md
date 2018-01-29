@@ -44,7 +44,7 @@ sidebar:
 
 ## [Control Table of EEPROM Area](#control-table-of-eeprom-area)
 
-| Address | Size(Byte) |                  Data Name                  |            Description             | Access | Initial Value |
+| Address | Size<br>(Byte) |                  Data Name                  |            Description             | Access | Initial<br />Value |
 |:-------:|:----------:|:-------------------------------------------:|:----------------------------------:|:------:|:-------------:|
 |    0    |     2      |        [Model Number](#model-number)        |            Model Number            |   R    |      24       |
 |    2    |     1      |    [Firmware Version](#firmware-version)    |          Firmware Version          |   R    |       -       |
@@ -64,7 +64,7 @@ sidebar:
 
 ## [Control Table of RAM Area](#control-table-of-ram-area)
 
-| Address | Size(Byte) |                    Data Name                    |         Description          | Access | Initial Value |
+| Address | Size<br>(Byte) |                    Data Name                    |         Description          | Access | Initial<br />Value |
 |:-------:|:----------:|:-----------------------------------------------:|:----------------------------:|:------:|:-------------:|
 |   24    |     1      |         [Torque Enable](#torque-enable)         |     Motor Torque On/Off      |   RW   |       0       |
 |   25    |     1      |                   [LED](#led)                   |      Status LED On/Off       |   RW   |       0       |

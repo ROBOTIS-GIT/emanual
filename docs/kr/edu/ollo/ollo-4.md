@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/kr/edu/ollo/ollo-4/
 sidebar:
-  title: OLLO-4
+  title: OLLO 4단계
   nav: "ollo-4"
 ---
 

@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/kr/edu/ollo/bugkit/
 sidebar:
-  title: BUG KIT
+  title: 버그 키트
   nav: "ollo_bugkit"
 ---
 

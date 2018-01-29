@@ -139,15 +139,350 @@ Window8,10의 경우 "시작설정-> 업데이트 복구-> 복구-> 고급시작
 
 ### [맥킨토시 환경 설치](#맥킨토시-환경-설치)
 
+#### ROBOTIS OpenCM Mac OS X release 다운로드
+
+E-manual에서 Mac OS X용 설치 이미지 파일(dmg)을 다운로드 받습니다.
+
+![img](/assets/images/sw/opencm_ide/opencm9.04_mac1.png)
+
+다운로드가 완료되면 아래 dmg파일을 더블 클릭해서 Mount를 진행합니다.
+
+![img](/assets/images/sw/opencm_ide/opencm9.04_mac2.png)
+
+마운트 후 설치창이 뜨면 마우스로 ROBOTIS 아이콘을 Application 쪽으로 드래그 합니다.
+
+![img](/assets/images/sw/opencm_ide/opencm9.04_mac3.png)
+
+그러면 다음과 같이 설치가 진행됩니다.
+
+![img](/assets/images/sw/opencm_ide/opencm9.04_mac4.png)
+
+#### ROBOTIS OpenCM 실행
+
+Finder를 이용해서 Application 폴더를 보면 ROBOTIS.app 응용프로그램 패키지가 있고 이것을 더블클릭해서 실행합니다.
+
+![img](/assets/images/sw/opencm_ide/opencm9.04_mac5.png)
+
+아래와 같은 그림에서 Open 버튼을 선택합니다.
+
+![img](/assets/images/sw/opencm_ide/opencm9.04_mac6.png)
+
+아래와 같이 ROBOTIS OpenCM이 실행됩니다.
+
+![img](/assets/images/sw/opencm_ide/opencm9.04_mac7.png)
+
+#### Blink 예제 Open
+
+파일 → Examples → 01. Basics → b_Blink 순으로 선택합니다.
+
+![img](/assets/images/sw/opencm_ide/opencm9.04_mac8.png)
+
+#### 보드 선택
+
+ROBOTIS OpenCM9.04를 선택합니다.
+
+![img](/assets/images/sw/opencm_ide/opencm9.04_mac9.png)
+
+#### 시리얼 포트 선택
+
+tty.usbmodemXXX로 선택합니다. 뒤의 숫자는 PC마다 다릅니다.
+
+![img](/assets/images/sw/opencm_ide/opencm9.04_mac10.png)
+
+#### 다운로드 수행
+
+아래 그림에서 다운로드 버튼을 클릭합니다. 다운로드가 시작되는 동안 보드의 녹색 LED가 계속 켜집니다. 다운로드가 끝나면 보드가 리셋되고 Blink 예제가 실행되면서 LED가 깜빡입니다.
+
+`Note` 만약에 다운로드 버튼을 클릭하고도 보드의 녹색 Status LED가 켜지지 않는다면 User button을 누른상태에서 USB를 PC와 연결하십시요. 보드 전원이 들어오면서 녹색 LED가 계속 켜지면 다운로드를 다시 시작하십시요. 자세한 설명은 긴급 복구 모드(강제 다운로드)편을 참조하세요.
+{: .notice}
+
+![img](/assets/images/sw/opencm_ide/opencm9.04_mac11.png)
+
+![img](http://support.robotis.com/ko/images/product/opencm/904/opencm9.04_26.jpg)
+
+그 외에 사용법은 윈도우즈 버전과 동일합니다.
 
 ### [리눅스 환경 설치](#리눅스-환경-설치)
 
+#### ROBOTIS OpenCM Linux release 다운로드
+
+사용 중인 Linux가 32bit라면 Linux 32 bit 패키지를 다운로드 받고 64bit이면 Linux 64 bit 패키지를 e-Manual에서 다운로드 받습니다.
+
+다운로드 받고 난 뒤 아래의 커맨드로 압축을 해제합니다. 아래는 32비트 기준으로 설명합니다.
+
+![img](/assets/images/sw/opencm_ide/opencm_ide_027.png)
+
+압축을 풀면 아래와 같이 ROBOTIS 폴더가 생성됩니다.
+
+![img](/assets/images/sw/opencm_ide/opencm_ide_028.png)
+
+#### JRE(Java Runtime Environment)설치
+
+아두이노와 마찬가지로 ROBOTIS OpenCM 툴도 Java로 만들어진 프로그램이므로 JRE(Java Runtime Environment)가 필요합니다. 윈도우 패키지는 JRE가 패키지에 포함되어 있지만 리눅스 버전은 제외가 되어 있다.
+
+설치가 되어 있으면 다음으로 진행합니다. JRE 설치 확인은 아래와 같이 터미널에서 java –version으로 확인할 수 있습니다.
+
+![img](/assets/images/sw/opencm_ide/opencm_ide_029.png)
+
+위와 같은 응답이 나온다면 JAVA JRE(Java Runtime Environment) 또는 JDK를 설치해야 합니다.  
+여기서는 openjdk-7-jre-headless를 설치하는 방법을 소개합니다.
+
+```
+sudo apt-get install openjdk-7-jre
+```
+
+![img](/assets/images/sw/opencm_ide/opencm_ide_030.png)
+
+Java JRE가 성공적으로 설치되었으며 이제 ROBOTIS OpenCM을 실행할 수 있습니다.
+
+#### i386 라이브러리 설치하기(Linux 64bit)
+Linux 64비트 OS에서 사용하기 위해서는 ia32-libs를 설치해야 합니다.
+
+```
+$sudo dpkg –add-architecture i386
+$sudo apt-get update
+$sudo apt-get install ia32-libs
+```
+
+성공적으로 설치가 끝나면 아래와 같이 Processing trigger가 제대로 실행됩니다.
+
+![img](/assets/images/sw/opencm_ide/opencm_ide_031.png)
+
+#### ROBOTIS OpenCM 실행
+
+아래와 같이 ROBOTIS_OpenCM를 더블 클릭하거나 터미널에서 ./ROBOTIS_OpenCM을 입력후 엔터를 하면 실행합니다.
+
+![img](/assets/images/sw/opencm_ide/opencm_ide_032.png)
+
+실행 버튼을 클릭합니다.
+
+![img](/assets/images/sw/opencm_ide/opencm_ide_033.png)
+
+그러면 아래와 같이 실행됩니다.
+
+![img](/assets/images/sw/opencm_ide/opencm_ide_034.png)
+
+#### Blink 예제 열기
+
+파일 → 예제 → 01. Basics → b_Blink 순으로 선택합니다.
+
+![img](/assets/images/sw/opencm_ide/opencm_ide_035.png)
+
+#### 보드선택
+
+도구 → 보드에서 ROBOTIS OpenCM9.04를 선택합니다.
+
+![img](/assets/images/sw/opencm_ide/opencm_ide_036.png)
+
+#### 시리얼 포트 선택
+
+시리얼 포트는 ttyACMX로 표시되는데 X는 사용자 PC에 따라 다른 숫자로 표시됩니다.
+
+리눅스/Mac OS X 릴리즈는 커널에 USB CDC드라이버가 포함되어 있으므로 윈도우와 달리 별도의 드라이버를 설치할 필요 없이 바로 사용할 수 있습니다.
+
+![img](/assets/images/sw/opencm_ide/opencm_ide_037.png)
+
+#### 다운로드 수행
+
+아래 그림에서 가리키는 다운로드 버튼을 클릭합니다.  
+다운로드가 시작되는 동안 보드의 녹색 LED가 계속 켜집니다. 다운로드가 끝나면 보드가 리셋되고 Blink 예제가 실행되면서 LED가 깜빡입니다
+
+`Note` 만약에 다운로드 버튼을 클릭하고도 보드의 녹색 Status LED가 켜지지 않는다면 User button을 누른상태에서 USB를 PC와 연결하십시요. 보드 전원이 들어오면서 녹색 LED가 계속 켜지면 다운로드를 다시 시작하십시요. 자세한 설명은 긴급 복구 모드(강제 다운로드)편을 참조하세요. 
+{:. notice}
+
+![img](/assets/images/sw/opencm_ide/opencm_ide_038.png)
+
+![img](/assets/images/sw/opencm/opencm9.04_26.jpg)
+
+그 외에 사용방법은 윈도우즈 버전과 동일합니다.
 
 ## [프로그램 실행](#프로그램-실행)
 
+프로그램을 실행하면 다음과 같은 화면이 나타납니다.
+
+![img](/assets/images/sw/opencm_ide/opencm_ide_039.png)
+
+|항목|설명|
+|:---:|:---:|
+|Menu |  파일, 편집, 스케치, 도구, 도움말 선택 할 수 있는 영역 입니다.|
+|Toolbar | 자주 쓰는 버튼을 단축 아이콘으로 표시한 영역 입니다.|
+|![img](/assets/images/sw/opencm_ide/opencm_ide_040.gif) | 컴파일만 수행하고 실패하거나 성공할 경우 상태바 또는 콘솔에 해당 메시지가 출력됩니다.|
+|![img](/assets/images/sw/opencm_ide/opencm_ide_041.gif) | 컴파일을 수행한 후 곧바로 다운로드를 수행합니다. 보드가 반드시 연결된 상태로 실행해야 합니다.|
+|![img](/assets/images/sw/opencm_ide/opencm_ide_042.gif) | 새 파일을 시작합니다.|
+|![img](/assets/images/sw/opencm_ide/opencm_ide_043.gif) |파일 불러오기를 수행합니다.|
+|![img](/assets/images/sw/opencm_ide/opencm_ide_044.gif) |현재 상태를 저장합니다.|
+|![img](/assets/images/sw/opencm_ide/opencm_ide_045.gif) |시리얼 모니터를 실행 합니다.|
+|에디터(Editor) | 소스를 편집하는 영역 입니다.|
+|상태바(Status Bar) | 요청된 기능에 대한 진행 상황을 시각적으로 표시하는 영역 입니다.|
+|콘솔(Console) | 현재 커서가 위치한 곳의 라인번호와 선택된 보드와 COM포트를 보여줍니다.|
+|탭메뉴(Tab Menu) | 탭을 추가하거나 삭제할 때 선택하는 메뉴 입니다.|
+
+### 예제 살펴보기
+
+ROBOTIS OpenCM 개발환경(IDE)은 OpenCM 하드웨어 보드가 제공하는 기능별로 쉬운 예제를 제공하고 있으며, 파일 (예제)Examples 메뉴를 보면 다음과 같이 다양한 예제를 볼 수 있습니다.
+
+![img](/assets/images/sw/opencm_ide/opencm9.04_ide2.png)
+
+### 코드 편집 기능
+
+#### Auto Highliht 기능
+코드 타이핑을 할 때 등록된 키워드는 아래와 같이 검정색에서 노란색 또는 파란색으로 자동으로 하이라이트(highlight)가 됩니다.
+등록된 API라면 아래와 같이 색상이 변하므로 사용하려는 API 이름이 제대로 타이핑 되었는지 확인 할 수 있습니다.
+
+![img](/assets/images/sw/opencm_ide/opencm9.04_ide3.png)
+
+그리고 이러한 자동 하이라이트(Auto highlight) 기능은 아래 경로의 keyword.txt 파일을 이용해서 얼마든지 수정하거나 추가할 수 있습니다,
+
+![img](/assets/images/sw/opencm_ide/opencm9.04_ide4.png)
+
+![img](/assets/images/sw/opencm_ide/opencm9.04_ide5.png)
+
+#### 자동포맷 기능 사용
+도구 →자동포맷 기능을 활용하면 뒤죽박죽으로 타이핑한 코드들이 보기 좋게 정렬이 됩니다.
+
+![img](/assets/images/sw/opencm_ide/opencm9.04_ide6.jpg)
+
+아래와 같은 코드가 Ctrl+T만 누르면 한번에 보기 좋게 코드가 정렬이 됩니다.
+
+![img](/assets/images/sw/opencm_ide/opencm9.04_ide7.jpg)
+
+#### 주석 처리 및 해제
+아래 편집→주석추가/주석삭제를 선택하거나 단축키 Ctrl+/를 누르면 주석처리가 되고 다시 한번 더 누르면 주석이 해제 됩니다.
+
+![img](/assets/images/sw/opencm_ide/opencm9.04_ide8.jpg)
+
+![img](/assets/images/sw/opencm_ide/opencm9.04_ide9.png)
+
+위와 같이 블록 처리를 하고 나서 Ctrl+/를 누르면 아래와 같이 주석 처리가 됩니다.
+
+![img](/assets/images/sw/opencm_ide/opencm9.04_ide10.png)
+
+다시 Ctrl+/를 누르면 주석이 해제 됩니다.
+#### 들여쓰기 추가 및 삭제
+편집→들여쓰기 추가/삭제를 누르면 현재 커서에서 들여쓰기 단계를 조절 할 수 있습니다. 마찬가지로 Ctrl+}를 누르면 오른쪽으로 한 탭씩 이동하고 Ctrl+}를 누르면 한탭씩 들어갑니다.
+
+![img](/assets/images/sw/opencm_ide/opencm9.04_ide11.jpg)
+
+Ctrl+}를 계속해서 눌러보면 아래와 같이 오른쪽으로 한 탭씩 이동합니다.
+
+![img](/assets/images/sw/opencm_ide/opencm9.04_ide12.png)
+
+### 컴파일 및 다운로드 하기
+
+코드를 작성하고 나면 컴파일 메뉴를 이용해 자신이 구현한 코드가 문법에 맞는지 오류가 없는지 체크하면서 프로그래밍을 하는 것이 좋습니다.
+
+![img](/assets/images/sw/opencm_ide/opencm9.04_ide13.png)
+
+> 빌드가 성공하게 되면 아래 상태 창에 빌드한 바이너리 사이즈에서 최대 바이너리 사이즈, 그리고 사이즈 대비 점유율이 0%로 나옵니다.
+
+만약에 아래 경로의 Core 경로에 있는 코드들을 수정하였다면 반드시 미리 만들어진 Object 파일들을 지워주어야 한다.
+
+> ROBOTIS\hardware\robotis\cores\robotis
+
+도구 > Clean Objects 메뉴를 클릭하고 새로 빌드를 하면된다. 이 경우 처음은 약간 오래 걸리지만 두번째 부터는 처음에 빌드한 Object 파일들을 재활용하기 때문에 다시 빨라진다.
+
+![img](http://support.robotis.com/ko/images/product/opencm/904/opencm9.04_27.jpg)
+
+Object 파일들은 아래의 Core 경로에 각각의 보드 디렉토리에 저장되어서 재활용된다.
+
+![img](/assets/images/sw/opencm_ide/opencm9.04_ide15.png)
+
+모든 코드가 에러 없이 컴파일이 잘된다면 다운로드를 해보자. 간단히 아래쪽 방향의 화살표를 누르면 컴파일과 다운로드를 한번에 수행하게 된다.
+
+![img](/assets/images/sw/opencm_ide/opencm9.04_ide16.jpg)
+
+다운로드가 성공적으로 끝나면 상태바에 Done downloading이라는 메시지와 함께 다운로드한 코드가 OpenCM9.04에서 바로 실행된다.
+
+![img](http://support.robotis.com/ko/images/product/opencm/904/opencm9.04_28.jpg)
+
+### 시리얼 모니터 사용하기
+
+ROBOTIS OpenCM에는 윈도우즈의 하이퍼 터미널이나 TeraTerm과 같은 터미널 프로그램을 Add-on 프로그램으로 기본 제공을 합니다.
+
+![img](/assets/images/sw/opencm_ide/opencm9.04_ide19.jpg)
+
+선택된 COM1번 포트를 통해 통신하고 싶다면 툴바 상단 오른쪽 시리얼 모니터 아이콘을 클릭하면 시리얼 모니터가 실행된다. 참고로 Ctrl + Shift + M 단축키를 눌러서 실행시킬 수 있습니다.
+
+![img](/assets/images/sw/opencm_ide/opencm9.04_ide20.jpg)
+
+![img](/assets/images/sw/opencm_ide/opencm9.04_ide21.jpg)
+
+### 시리얼 모니터 주의사항
+
+OpenCM9.04가 다운로드 중일때는 따로 USB 통신을 할 수 없습니다. 다운로드 중일 때는 시리얼 모니터를 열지 마세요.( 다른 COM포트라면 관계 없습니다.)
+
+#### 환경설정(Preference)
+
+파일 > 환경설정(Preference)를 통해 환경설정을 수행합니다.
+
+![img](http://support.robotis.com/ko/images/product/opencm/904/opencm9.04_29.jpg)
+
+![img](http://support.robotis.com/ko/images/product/opencm/904/opencm9.04_30.jpg)
+
+1. 스케치북 위치 : 사용자 기본 작업 디렉토리입니다. 기본적인 스케치 파일의 저장하기 및 불러오기 경로입니다.
+
+    ![img](/assets/images/sw/opencm_ide/opencm9.04_ide24.png)
+
+2. Editor language: 글꼴을 변경합니다.
+
+    ![img](/assets/images/sw/opencm_ide/opencm9.04_ide25.png)
+
+3. 다음 동작중 자세한 출력 보이기 : compilation에 체크를 하면 컴파일 과정중에 자세한 출력을 합니다.  
+    Download에 체크를 하면 컴파일 후 다운로드 과정을 자세히 출력합니다.  
+    컴파일 및 다운로드가 느려질 수 있으니 꼭 필요하지 않다면 선택하지 않는 것을 추천합니다.
+
 ## [라이브러리 사용하기](#라이브러리-사용하기)
 
+### 라이브러리 설치하기
+
+라이브러리 설치 방법은 아두이노와 동일합니다. 라이브러리의 경로는 IDE 폴더에서 libraries 입니다.  
+
+```
+ROBOTIS\libraries
+```
+
+![img](/assets/images/sw/opencm_ide/opencm9.04lib1.png)
+
+Mac의 경우 아래의 경로로 접근하세요
+
+```
+ Documents/ROBOTIS/libraries
+```
+
+OpenCM의 모든 라이브러리는 다음 RC100 라이브러리 구조와 같은 구조로 등록합니다. 참고로 현재 널리 쓰이고 있는 아두이노 라이브러리들도 아래와 같은 구조로 되어 있으니 OpenCM으로 포팅하기 수월합니다.
+
+(단 Arduino 함수나 헤더파일 이름을 OpenCM에 맞게 수정해야 합니다.)
+
+![img](/assets/images/sw/opencm_ide/opencm9.04lib2.png)
+
+![img](/assets/images/sw/opencm_ide/opencm9.04lib3.png)
+
+위와 같이 libraries폴더 내에 RC100이라는 폴더 이름과 동일한 이름으로 RC100.cpp, RC100.h 파일을 구성합니다. utility 폴더에는 C파일로 짜여진 코드를 넣을 수 있습니다.
+
+examples 폴더에는 해당 라이브러리로 구성된 스케치 예제가 들어갑니다. 예제도 폴더 단위로 구성되며 폴더 이름과 ino파일 이름이 동일하게 해야 인식합니다.
+
+![img](/assets/images/sw/opencm_ide/opencm9.04lib4.jpg)
+
+![img](/assets/images/sw/opencm_ide/opencm9.04lib5.png)
+
 ## [복구 모드](#복구-모드)
+
+아래와 같이 Board is not responding 이라는 메시지와 함께 다운로드가 되지 않으면 복구모드를 활용해서 강제로 다운로드 가능합니다.  
+이렇게 정상 예제를 다운로드를 한번 하고 나면 복구가 되어서 다시 정상적인 다운로드가 됩니다.
+
+![img](/assets/images/sw/opencm_ide/opencm9.04restore1.png)
+
+OpenCM9.04의 User Button을 누른상태에서 USB 케이블로 PC와 직접 연결합니다. 다른 전원 소스는 모두 제거하고 오로지 User Button을 누른 채 USB로만 연결합니다.
+
+![img](/assets/images/sw/opencm/opencm9.04_26.jpg)
+
+> OpenCM9.04는 User Button으로 복구 모드 진입을 할 수 있습니다.
+
+아래 그림과 같이 복구모드로 진입할 경우 녹색 LED가 계속 켜진상태로 있습니다. 정상적으로 다운로드가 끝나면 보드가 리셋되면서 LED는 꺼집니다.
+
+![img](/assets/images/sw/opencm_ide/opencm9.04restore2.jpg)
+
+계속 다운로드 불능상태가 지속되면 작성하신 코드에서 USB 인터럽트를 방해할 만한 코드들을 제거하셔야 합니다.
 
 # [예제](#예제)
 
