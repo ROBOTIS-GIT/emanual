@@ -115,10 +115,10 @@ Control Table 에는 명칭이 같지만 (L) 과 (H) 가 뒤에 붙어서 Addres
 다이나믹셀 펌웨어 버전입니다.
 
 ## <a name="id"></a>ID (3)
-{% include en/dxl/control_table_id.md %}
+{% include kr/dxl/control_table_id.md %}
 
 ### <a name="baud-rate"></a>전송속도 (4)
-{% include en/dxl/control_table_baudrate.md %}
+{% include kr/dxl/control_table_baudrate.md %}
 
 ### <a name="return-delay-time"></a>Return Delay Time (5)
 {% include kr/dxl/control_table_return_delay_time.md %}
