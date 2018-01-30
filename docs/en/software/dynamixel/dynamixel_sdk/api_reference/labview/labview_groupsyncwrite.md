@@ -32,14 +32,14 @@ sidebar:
 
 - Methods
 
-| | |
-| ------------- | ------------- |
-|**[groupSyncWrite](#groupsyncwrite)**	|Initializes members of packet data pointer struct|
-|**[groupSyncWriteAddParam](#groupsyncwrite_addparam)**	|Adds parameter storage for read |
-|**[groupSyncWriteRemoveParam](#groupsyncwrite_removeparam)**	|Removes parameter on the storage |
-|**[groupSyncWriteChangeParam](#groupsyncwrite_changeparam)**	|Changes parameter on the storage |
-|**[groupSyncWriteClearParam](#groupsyncwrite_clearparam)**	|Clears parameter storage|
-|**[groupSyncWriteTxPacket](#groupsyncwrite_txpacket)**	|Transmits packet to the number of Dynamixels|
+| Methods                                                      | Description                                       |
+|:-------------------------------------------------------------|:--------------------------------------------------|
+| **[groupSyncWrite](#groupsyncwrite)**                        | Initializes members of packet data pointer struct |
+| **[groupSyncWriteAddParam](#groupsyncwrite_addparam)**       | Adds parameter storage for read                   |
+| **[groupSyncWriteRemoveParam](#groupsyncwrite_removeparam)** | Removes parameter on the storage                  |
+| **[groupSyncWriteChangeParam](#groupsyncwrite_changeparam)** | Changes parameter on the storage                  |
+| **[groupSyncWriteClearParam](#groupsyncwrite_clearparam)**   | Clears parameter storage                          |
+| **[groupSyncWriteTxPacket](#groupsyncwrite_txpacket)**       | Transmits packet to the number of Dynamixels      |
 
 
 
@@ -48,20 +48,20 @@ sidebar:
   None
 
 #### Method References
-----------------------------------------------
+
 ##### groupSyncWrite
 - Syntax
-``` Labview
+```c
 int groupSyncWrite(int port_num, int protocol_version, uint16_t start_address, uint16_t data_length)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-| port_num | Port number |
-| protocol_version | Protocol version |
-|start_address	| Control table address to start writing data|
-|data_length	| Total data length |
+| Parameters       | Description                                 |
+|:-----------------|:--------------------------------------------|
+| port_num         | Port number                                 |
+| protocol_version | Protocol version                            |
+| start_address    | Control table address to start writing data |
+| data_length      | Total data length                           |
 
 - Detailed Description
 
@@ -70,17 +70,17 @@ int groupSyncWrite(int port_num, int protocol_version, uint16_t start_address, u
 
 ##### groupSyncWriteAddParam
 - Syntax
-``` Labview
+```c
 uint8_t groupSyncWriteAddParam(int group_num, uint8_t id, uint32_t data, uint16_t input_length)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-| group_num | Group number |
-|id	|Dynamixel ID|
-|data	|Data for write|
-|input_length	| Input data length|
+| Parameters   | Description       |
+|:-------------|:------------------|
+| group_num    | Group number      |
+| id           | Dynamixel ID      |
+| data         | Data for write    |
+| input_length | Input data length |
 
 - Detailed Description
 
@@ -89,15 +89,15 @@ uint8_t groupSyncWriteAddParam(int group_num, uint8_t id, uint32_t data, uint16_
 
 ##### groupSyncWriteRemoveParam
 - Syntax
-``` Labview
+```c
 void groupSyncWriteRemoveParam(int group_num, uint8_t id)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-| group_num | Group number |
-|id|	Dynamixel ID|
+| Parameters | Description  |
+|:-----------|:-------------|
+| group_num  | Group number |
+| id         | Dynamixel ID |
 
 - Detailed Description
 
@@ -106,18 +106,18 @@ void groupSyncWriteRemoveParam(int group_num, uint8_t id)
 
 ##### groupSyncWriteChangeParam
 - Syntax
-``` Labview
+```c
 uint8_t groupSyncWriteChangeParam(int group_num, uint8_t id, uint32_t data, uint16_t input_length, uint16_t data_pos)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-| group_num | Group number |
-|id	|Dynamixel ID|
-|data	|Data for write|
-|input_length	| Input data length|
-|data_pos | Data position in the array |
+| Parameters   | Description                |
+|:-------------|:---------------------------|
+| group_num    | Group number               |
+| id           | Dynamixel ID               |
+| data         | Data for write             |
+| input_length | Input data length          |
+| data_pos     | Data position in the array |
 
 - Detailed Description
 
@@ -126,7 +126,7 @@ uint8_t groupSyncWriteChangeParam(int group_num, uint8_t id, uint32_t data, uint
 
 ##### groupSyncWriteClearParam
 - Syntax
-``` Labview
+```c
 void groupSyncWriteClearParam(int group_num)
 ```
 - Parameters
@@ -140,14 +140,14 @@ void groupSyncWriteClearParam(int group_num)
 
 ##### groupSyncWriteTxPacket
 - Syntax
-``` Labview
+```c
 void groupSyncWriteTxPacket(int group_num)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-| group_num | Group number |
+| Parameters | Description  |
+|:-----------|:-------------|
+| group_num  | Group number |
 
 - Detailed Description
 

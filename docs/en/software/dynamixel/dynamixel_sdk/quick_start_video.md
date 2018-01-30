@@ -42,8 +42,6 @@ sidebar:
 * [MATLAB Episode 3: ReadWrite MATLAB Example Multi-Port Control - Windows](https://youtu.be/eGG-RIVKtrs)
 
 
----------------------------------------------------------------------------------
-
 ## Episode 1-Introduction to the Dynamixel SDK, the Dynamixel SDK Wiki, and the Issues Section
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/F-sXbIAM0jc" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
@@ -95,4 +93,3 @@ sidebar:
 ## MATLAB Episode 3: ReadWrite MATLAB Example Multi-Port Control - Windows
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/eGG-RIVKtrs" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-

@@ -25,33 +25,33 @@ sidebar:
 * GNU gcc ver. 5.4.0 20160609 or higher
 * To check the version of your gcc compiler:  
 
-``` bash
-$ gcc -v 
-```
+  ``` bash
+  $ gcc -v 
+  ```
 
 * Download the required compiler:  
 
-``` bash 
-$ sudo apt-get install gcc-5
-```
+  ``` bash 
+  $ sudo apt-get install gcc-5
+  ```
 
 #### [Builder](#builder)
 
 * Build-essential pkg → make
 * Download:  
 
-``` bash 
-$ sudo apt-get install build-essential
-```
+  ``` bash 
+  $ sudo apt-get install build-essential
+  ```
 
 #### [Dependent Packages](#dependent-packages) 
 
 * Packages needed for cross-compiling 
 * Download:  
 
-``` bash 
-$ sudo apt-get install gcc-multilib g++-multilib
-```
+  ``` bash 
+  $ sudo apt-get install gcc-multilib g++-multilib
+  ```
 
 #### [Build the Library](#build-the-library)
 
@@ -60,71 +60,70 @@ $ sudo apt-get install gcc-multilib g++-multilib
 
   Please note that if you will be building the 32-bit example source, you should build the 32-bit library.
 
-![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/cpp/linux/library_file/cpp6.png)
+  ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/cpp/linux/library_file/cpp6.png)
 
 
 * Go to the Makefile's directory located in `[DynamixelSDK folder]/cpp/build/linux32` OR `[DynamixelSDK folder]/cpp/build/linux64` OR `[DynamixelSDK folder]/cpp/build/linux_sbc` using $ `cd`.
 
 * To build the library file:  
 
-``` bash
-$ make
-```
+  ``` bash
+  $ make
+  ```
 
-![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/cpp/linux/library_file/cpp1.png)
-
+  ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/cpp/linux/library_file/cpp1.png)
 
 * If there is an error:  
 
-``` bash
-$ make clean && make
-```
+  ``` bash
+  $ make clean && make
+  ```
 
 * To delete the library file and object files:  
 
-``` bash
-$ make clean
-```
+  ``` bash
+  $ make clean
+  ```
 
-![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/cpp/linux/library_file/cpp2.png)
+  ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/cpp/linux/library_file/cpp2.png)
 
 ##### Copy (Install) the Library to the Root Directory
 
 * To make library file and copy it to the root directory (to handle the serial port):  
 
-``` bash
-$ sudo make install
-```
+  ``` bash
+  $ sudo make install
+  ```
 
-![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/cpp/linux/library_file/cpp3.png)
+  ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/cpp/linux/library_file/cpp3.png)
 
 * If there is an error:  
 
-``` bash
-$ sudo make uninstall && sudo make install
-```
+  ``` bash
+  $ sudo make uninstall && sudo make install
+  ```
  
-OR
+  OR
 
-``` bash
-$ sudo make reinstall
-```
+  ``` bash
+  $ sudo make reinstall
+  ```
 
 * To delete the library file from the root directory:  
 
-``` bash
-$ sudo make uninstall
-```
+  ``` bash
+  $ sudo make uninstall
+  ```
 
-![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/cpp/linux/library_file/cpp4.png)
+  ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/cpp/linux/library_file/cpp4.png)
 
 * To recopy the library file to the root directory:  
 
-``` bash
-$ sudo make reinstall
-```
+  ``` bash
+  $ sudo make reinstall
+  ```
 
-![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/cpp/linux/library_file/cpp5.png)
+  ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/cpp/linux/library_file/cpp5.png)
 
 * You will see the built library file in `[DynamixelSDK folder]/c/build/[linuxXX]/libdxl_xYY_cpp.so`
 
@@ -136,32 +135,40 @@ You should build library files in `[DynamixelSDK folder]/c++/build/[linuxXX]/lib
 
 * Choose which format (32bit or 64bit) do you want to build in. The Makefile file for building source is in `[DynamixelSDK folder]/c++/example/protocol1.0/read_write/linux32` or `[DynamixelSDK folder]/c++/example/protocol1.0/read_write/linux64` folder. If you want to build example source in 32bit, for instance, you should build this library in 32bit as well.
 
-![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/cpp/linux/sample_code/excp4.png)
+  ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/cpp/linux/sample_code/excp4.png)
 
 * On the terminal, go to the Makefile located folder `/c++/example/protocol1.0/read_write/linux32`, for example, using `cd`.
 
 * To build executable file, type: 
 
-[Terminal] $ `make`
+  ```bash
+  $ make
+  ```
 
-![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/cpp/linux/sample_code/excp1.png)
+  ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/cpp/linux/sample_code/excp1.png)
 
 If it shows some error, try `make clean` and `make` it again.
 
 * To delete executable file, type: 
 
-[Terminal] $ `make clean`
+  ```bash
+  $ make clean
+  ```
 
-![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/cpp/linux/sample_code/excp2.png)
+  ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/cpp/linux/sample_code/excp2.png)
 
 * Make the port available to be used
 
-[Terminal] $ `sudo chmod a+rw /dev/ttyUSB0`
+  ```bash
+  $ sudo chmod a+rw /dev/ttyUSB0
+  ```
 
-![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/cpp/linux/sample_code/excp3.png)
+  ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/cpp/linux/sample_code/excp3.png)
 
 * Run the source code
 
-[Terminal] $ `./read_write`
+  ```bash
+  $ ./read_write
+  ```
 
-![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/cpp/linux/sample_code/excp5.png)
+  ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/cpp/linux/sample_code/excp5.png)

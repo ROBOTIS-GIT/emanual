@@ -32,17 +32,17 @@ sidebar:
 
 - Methods
 
-| | |
-| ------------- | ------------- |
-|GroupBulkWrite	|Initializes groupBulkWrite instance|
-|~GroupBulkWrite	|Clears parameter storage |
-|getPortHandler	|Returns PortHandler instance|
-|getPacketHandler	|Returns PacketHandler instance|
-|**[addParam](#addparam)**	|Adds parameter storage for read |
-|**[removeParam](#removeparam)**	|Removes parameter on the storage |
-|**[changeParam](#changeparam)**	|Changes parameter on the storage |
-|**[clearParam](#clearparam)**	|Clears parameter storage|
-|**[txPacket](#txpacket)**	|Transmits packet to the number of Dynamixels|
+| Methods                         | Description                                  |
+|:--------------------------------|:---------------------------------------------|
+| GroupBulkWrite                  | Initializes groupBulkWrite instance          |
+| ~GroupBulkWrite                 | Clears parameter storage                     |
+| getPortHandler                  | Returns PortHandler instance                 |
+| getPacketHandler                | Returns PacketHandler instance               |
+| **[addParam](#addparam)**       | Adds parameter storage for read              |
+| **[removeParam](#removeparam)** | Removes parameter on the storage             |
+| **[changeParam](#changeparam)** | Changes parameter on the storage             |
+| **[clearParam](#clearparam)**   | Clears parameter storage                     |
+| **[txPacket](#txpacket)**       | Transmits packet to the number of Dynamixels |
 
 
 
@@ -51,7 +51,6 @@ sidebar:
   None
 
 #### Method References
-----------------------------------------------
 
 ##### addParam
 - Syntax
@@ -60,12 +59,12 @@ bool addParam(UINT8_T id, UINT16_T start_address, UINT16_T data_length, UINT8_T 
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|id	|Dynamixel ID|
-|start_address	|Start address|
-|data_length	|Data length|
-|data	|Data for write|
+| Parameters    | Description    |
+|:--------------|:---------------|
+| id            | Dynamixel ID   |
+| start_address | Start address  |
+| data_length   | Data length    |
+| data          | Data for write |
 
 - Detailed Description
 
@@ -79,9 +78,9 @@ void removeParam(UINT8_T id)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|id|	Dynamixel ID|
+| Parameters | Description  |
+|:-----------|:-------------|
+| id         | Dynamixel ID |
 
 - Detailed Description
 
@@ -95,12 +94,12 @@ void removeParam(UINT8_T id)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|id	|Dynamixel ID|
-|start_address	|Start address|
-|data_length	|Data length|
-|data	|data for write|
+| Parameters    | Description    |
+|:--------------|:---------------|
+| id            | Dynamixel ID   |
+| start_address | Start address  |
+| data_length   | Data length    |
+| data          | data for write |
 
 - Detailed Description
 

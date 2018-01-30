@@ -32,20 +32,20 @@ sidebar:
 
 - Methods
 
-| | |
-| ------------- | ------------- |
-|GroupSyncRead	|Initializes groupSyncRead instance|
-|~GroupSyncRead	|Clears parameter storage |
-|getPortHandler	|Returns PortHandler instance|
-|getPacketHandler	|Returns PacketHandler instance|
-|**[addParam](#addparam)**	|Adds parameter storage for read |
-|**[removeParam](#removeparam)**	|Removes parameter on the storage |
-|**[clearParam](#clearparam)**	|Clears parameter storage|
-|**[txPacket](#txpacket)**	|Transmits packet to the number of Dynamixels|
-|**[rxPacket](#rxpacket)**	|receives packet from the number of Dynamixels|
-|**[txRxPacket](#txrxpacket)**	|Transmits and receives packet on the number of Dynamixels|
-|**[isAvailable](#isavailable)** | Checks whether there is available data in the data storage |
-|**[getData](#getdata)**	|Gets data from received packet|
+| Methods                         | Description                                                |
+|:--------------------------------|:-----------------------------------------------------------|
+| GroupSyncRead                   | Initializes groupSyncRead instance                         |
+| ~GroupSyncRead                  | Clears parameter storage                                   |
+| getPortHandler                  | Returns PortHandler instance                               |
+| getPacketHandler                | Returns PacketHandler instance                             |
+| **[addParam](#addparam)**       | Adds parameter storage for read                            |
+| **[removeParam](#removeparam)** | Removes parameter on the storage                           |
+| **[clearParam](#clearparam)**   | Clears parameter storage                                   |
+| **[txPacket](#txpacket)**       | Transmits packet to the number of Dynamixels               |
+| **[rxPacket](#rxpacket)**       | receives packet from the number of Dynamixels              |
+| **[txRxPacket](#txrxpacket)**   | Transmits and receives packet on the number of Dynamixels  |
+| **[isAvailable](#isavailable)** | Checks whether there is available data in the data storage |
+| **[getData](#getdata)**         | Gets data from received packet                             |
 
 
 - Enumerator
@@ -53,7 +53,6 @@ sidebar:
   None
 
 #### Method References
-----------------------------------------------
 
 ##### addParam
 - Syntax
@@ -62,9 +61,9 @@ bool addParam(UINT8_T id)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|id	|Dynamixel ID|
+| Parameters | Description  |
+|:-----------|:-------------|
+| id         | Dynamixel ID |
 
 - Detailed Description
 
@@ -78,9 +77,9 @@ void removeParam(UINT8_T id)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|id|	Dynamixel ID|
+| Parameters | Description  |
+|:-----------|:-------------|
+| id         | Dynamixel ID |
 
 - Detailed Description
 
@@ -149,11 +148,11 @@ bool isAvailable(uint8_t id, uint16_t address, uint16_t data_length)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|id	|Dynamixel ID|
-|address	|Address on the control table of Dynamixel|
-|data	|Packet data|
+| Parameters | Description                               |
+|:-----------|:------------------------------------------|
+| id         | Dynamixel ID                              |
+| address    | Address on the control table of Dynamixel |
+| data       | Packet data                               |
 
 
 - Detailed Description
@@ -167,11 +166,11 @@ uint32_t getData(UINT8_T id, UINT16_T address, UINT16_T data_length)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|id	|Dynamixel ID|
-|address	|Address on the control table of Dynamixel|
-|data length	| Data length|
+| Parameters  | Description                               |
+|:------------|:------------------------------------------|
+| id          | Dynamixel ID                              |
+| address     | Address on the control table of Dynamixel |
+| data length | Data length                               |
 
 
 - Detailed Description

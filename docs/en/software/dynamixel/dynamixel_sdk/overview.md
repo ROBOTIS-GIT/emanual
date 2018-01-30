@@ -22,8 +22,13 @@ sidebar:
 The ROBOTIS Dynamixel SDK is a software development library that provides Dynamixel control functions for packet communication. The API is designed for Dynamixel actuators and Dynamixel-based platforms. It assumes that you are familiar with C/C++ programming. This e-Manual provides comprehensive information about ROBOTIS products and applications.
 
 * Download Cross-compilable, all-in-one SDK for ROBOTIS Dynamixel from the [ROBOTIS Open Source Repository](https://github.com/ROBOTIS-GIT/DynamixelSDK).
-* [Terminal or GitBash] `$ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK.git`
-* [Download](https://github.com/ROBOTIS-GIT/DynamixelSDK/releases) - `DynamixelSDK-3.xx.yy.zip`
+* [Terminal or GitBash] 
+  
+  ```
+  $ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK.git
+  ```
+  
+* `Download` [DynamixelSDK-3.xx.yy.zip](https://github.com/ROBOTIS-GIT/DynamixelSDK/releases)
 
 The example codes are using either C or C++ version dll. Extract zip file, you can see the folders shown below.
 

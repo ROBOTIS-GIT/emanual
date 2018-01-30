@@ -313,7 +313,7 @@ elif dynamixel.getLastRxPacketError(port_num, PROTOCOL_VERSION) != 0:
 dynamixel.closePort(port_num)
 ```
 
--------------------------------------------------------------------------------------
+
 
 - Details
 
