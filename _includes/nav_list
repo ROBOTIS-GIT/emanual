@@ -32,7 +32,7 @@
 
     <li class="has-children">
       <input type="radio" name="toplevel" id="toplevel_{{ forloop.index0 }}" {{ active }}>
-      <label for="toplevel_{{ forloop.index0 }}">{{ navtitle }} &loz;</label>
+      <label for="toplevel_{{ forloop.index0 }}">{{ navtitle }} [+]</label>
     {% else %}
 
     <li>
@@ -68,7 +68,7 @@
         {% if child.children != null %}
         <li class="has-children">
           <input type="radio" name="sublevel" id="{{ childtitle }}" {{ active }}>
-          <label for="{{ childtitle }}">{{ childtitle }} &loz;</label>
+          <label for="{{ childtitle }}">{{ childtitle }} [+]</label>
         {% else %}
         <li><a href="{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ childurl }}" onclick="extendnav()">{{ childtitle }}</a></li>
         {% endif %}
