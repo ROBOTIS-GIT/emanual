@@ -377,7 +377,7 @@ For Half Duplex UART, the transmission ending timing is important to change the 
 
 - The **TXD_BUFFER_READY_BIT** is used when one byte is to be transmitted via the serial communication channel, and an example is shown below.
 
-  ```code
+  ```c
   TxDByte(byte bData)
   {
     while(!TXD_BUFFER_READY_BIT); //wait until data can be loaded.
@@ -387,20 +387,20 @@ For Half Duplex UART, the transmission ending timing is important to change the 
 
 When changing the direction, the **TXD_SHIFT_REGISTER_EMPTY_BIT** must be checked. The following is an example program that sends an Instruction Packet  
 
-  ```code
-  DIRECTION_PORT = TX_DIRECTION;
-  TxDByte(0xff);
-  TxDByte(0xff);
-  TxDByte(bID);
-  TxDByte(bLength);
-  TxDByte(bInstruction);
-  TxDByte(Parameter0); TxDByte(Parameter1); ...
-  DisableInterrupt(); // interrupt should be disable
-  TxDByte(Checksum); //last TxD
-  while(!TXD_SHIFT_REGISTER_EMPTY_BIT); //Wait till last data bit has been sent
-  DIRECTION_PORT = RX_DIRECTION; //Direction change to RXD
-  EnableInterrupt(); // enable interrupt again
-  ```
+```c
+DIRECTION_PORT = TX_DIRECTION;
+TxDByte(0xff);
+TxDByte(0xff);
+TxDByte(bID);
+TxDByte(bLength);
+TxDByte(bInstruction);
+TxDByte(Parameter0); TxDByte(Parameter1); ...
+DisableInterrupt(); // interrupt should be disable
+TxDByte(Checksum); //last TxD
+while(!TXD_SHIFT_REGISTER_EMPTY_BIT); //Wait till last data bit has been sent
+DIRECTION_PORT = RX_DIRECTION; //Direction change to RXD
+EnableInterrupt(); // enable interrupt again
+```
  
 `Note` Please note the important lines between LINE 8 and LINE 12. Line 8 is necessary since an interrupt here may cause a delay longer than the return delay time and corruption to the front of the status packet may occur.
 {: .notice}
