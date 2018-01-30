@@ -26,30 +26,30 @@ Base class for serial communication.
 
 - Members
 
-| | |
-| ------------- | ------------- |
-| DEFAULT\_BAUDRATE\_ | :=1000000	Default Baudrate |
-| is\_using\_ | Shows whether the port is in-use |
+| Members             | Description                      |
+|:--------------------|:---------------------------------|
+| DEFAULT\_BAUDRATE\_ | :=1000000	Default Baudrate        |
+| is\_using\_         | Shows whether the port is in-use |
 
 
 - Methods
 
-| | |
-| ------------- | ------------- |
-| getPortHandler | Gets a child class (PortHandlerLinux or PortHandlerWindows) instance |
-| ~PortHandler	| None |
-| openPort	| Opens a serial port |
-| closePort	| Closes a serial port |
-| clearPort	| Refreshes a serial port |
-| setPortName	| Sets a device name |
-| getPortName	| Gets a device name |
-| setBaudrate	| Sets a baudrate |
-| getBaudrate	| Gets a baudrate |
-| getBytesAvailable	| Checks how many bytes can be read in port buffer |
-| readPort	| Reads bytes from port buffer |
-| writePort	| Writes bytes to port buffer |
-| setPacketTimeout	| Sets timeout|
-| isPacketTimeout	| Checks whether communication has been succeeded in timeout |
+| Methods           | Description                                                          |
+|:------------------|:---------------------------------------------------------------------|
+| getPortHandler    | Gets a child class (PortHandlerLinux or PortHandlerWindows) instance |
+| ~PortHandler      | None                                                                 |
+| openPort          | Opens a serial port                                                  |
+| closePort         | Closes a serial port                                                 |
+| clearPort         | Refreshes a serial port                                              |
+| setPortName       | Sets a device name                                                   |
+| getPortName       | Gets a device name                                                   |
+| setBaudrate       | Sets a baudrate                                                      |
+| getBaudrate       | Gets a baudrate                                                      |
+| getBytesAvailable | Checks how many bytes can be read in port buffer                     |
+| readPort          | Reads bytes from port buffer                                         |
+| writePort         | Writes bytes to port buffer                                          |
+| setPacketTimeout  | Sets timeout                                                         |
+| isPacketTimeout   | Checks whether communication has been succeeded in timeout           |
 
 - Enumerator
 
@@ -57,7 +57,7 @@ Base class for serial communication.
 
 
 #### Method References
-----------------------------------------------
+
 [Windows](#cpp-porthandlerwindows)
 
 [Linux](#cpp-porthandlerlinux)
@@ -77,22 +77,22 @@ Base class for serial communication.
 
 - Methods
 
-| | |
-| ------------- | ------------- |
-| PortHandlerWindows | Initializes PortHandlerWindows instance |
-| ~PortHandlerWindows | Closes a serial port |
-| **[openPort](#openport)**	| Opens a serial port |
-| **[closePort](#closeport)**	| Closes a serial port |
-| **[clearPort](#clearport)**	| Refreshes a serial port |
-| **[setPortName](#setportname)**	| Sets a device name |
-| **[getPortName](#getportname)**	| Gets a device name |
-| **[setBaudrate](#setbaudrate)**	| Sets a baudrate |
-| **[getBaudrate](#getbaudrate)**	| Gets a baudrate |
-| **[getBytesAvailable](#getbytesavailable)**	| Checks how many bytes can be read in port buffer |
-| **[readPort](#readport)**	| Reads bytes from port buffer |
-| **[writePort](#writeport)**	| Writes bytes to port buffer |
-| **[setPacketTimeout](#setpackettimeout)**	| Sets timeout |
-| **[isPacketTimeout](#ispackettimeout)**	| Checks whether communication has been succeeded in timeout |
+| Methods                                     | Description                                                |
+|:--------------------------------------------|:-----------------------------------------------------------|
+| PortHandlerWindows                          | Initializes PortHandlerWindows instance                    |
+| ~PortHandlerWindows                         | Closes a serial port                                       |
+| **[openPort](#openport)**                   | Opens a serial port                                        |
+| **[closePort](#closeport)**                 | Closes a serial port                                       |
+| **[clearPort](#clearport)**                 | Refreshes a serial port                                    |
+| **[setPortName](#setportname)**             | Sets a device name                                         |
+| **[getPortName](#getportname)**             | Gets a device name                                         |
+| **[setBaudrate](#setbaudrate)**             | Sets a baudrate                                            |
+| **[getBaudrate](#getbaudrate)**             | Gets a baudrate                                            |
+| **[getBytesAvailable](#getbytesavailable)** | Checks how many bytes can be read in port buffer           |
+| **[readPort](#readport)**                   | Reads bytes from port buffer                               |
+| **[writePort](#writeport)**                 | Writes bytes to port buffer                                |
+| **[setPacketTimeout](#setpackettimeout)**   | Sets timeout                                               |
+| **[isPacketTimeout](#ispackettimeout)**     | Checks whether communication has been succeeded in timeout |
 
 
 - Enumerator
@@ -102,7 +102,6 @@ Base class for serial communication.
 
 
 #### Method References
-----------------------------------------------
 
 ##### openPort
 - Syntax
@@ -153,9 +152,9 @@ void setPortName(const char* port_name)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-| port_name | Port name |
+| Parameters | Description |
+|:-----------|:------------|
+| port_name  | Port name   |
 
 
 - Detailed Description
@@ -187,9 +186,9 @@ bool setBaudRate(const int baudrate)
 
 - Parameters
 
-| | |
-| ------------- | ------------- |
-| baudrate | Target baudrate |
+| Parameters | Description     |
+|:-----------|:----------------|
+| baudrate   | Target baudrate |
 
 
 - Description
@@ -240,10 +239,10 @@ int readPort(UINT8_T* packet, int length)
 
 - Parameters
 
-| | |
-| ------------- | ------------- |
-| packet	| The number of data bytes read previously |
-| length	| Byte length for read |
+| Parameters | Description                              |
+|:-----------|:-----------------------------------------|
+| packet     | The number of data bytes read previously |
+| length     | Byte length for read                     |
 
 
 - Description
@@ -260,10 +259,10 @@ int writePort(UINT8_T* packet, int length)
 
 - Parameters
 
-| | |
-| ------------- | ------------- |
-| packet	| The number of data bytes to write |
-| length	| Byte length for write |
+| Parameters | Description                       |
+|:-----------|:----------------------------------|
+| packet     | The number of data bytes to write |
+| length     | Byte length for write             |
 
 
 
@@ -282,10 +281,10 @@ void setPacketTimeout (double msec)
 
 - Parameters
 
-| | |
-| ------------- | ------------- |
-| Packet_length	| Target byte length for write  |
-| msec	| Miliseconds |
+| Parameters    | Description                  |
+|:--------------|:-----------------------------|
+| Packet_length | Target byte length for write |
+| msec          | Miliseconds                  |
 
 
 - Description
@@ -321,22 +320,22 @@ bool isPacketTimeout ()
 
 - Methods
 
-| | |
-| ------------- | ------------- |
-| PortHandlerLinux	| Initializes PortHandlerLinux instance |
-| ~PortHandlerLinux	| Closes a serial port |
-| **[openPort](#openport)**	| Opens a serial port |
-| **[closePort](#closeport)**	| Closes a serial port |
-| **[clearPort](#clearport)**	| Refreshes a serial port |
-| **[setPortName](#setportname)**	| Sets a device name |
-| **[getPortName](#getportname)**	| Gets a device name |
-| **[setBaudrate](#setbaudrate)**	| Sets a baudrate |
-| **[getBaudrate](#getbaudrate)**	| Gets a baudrate |
-| **[getBytesAvailable](#getbytesavailable)**	| Checks how many bytes can be read in port buffer |
-| **[readPort](#readport)**	| Reads bytes from port buffer |
-| **[writePort](#writeport)**	| Writes bytes to port buffer |
-| **[setPacketTimeout](#setpackettimeout)**	| Sets timeout |
-| **[isPacketTimeout](#ispackettimeout)**	| Checks whether communication has been succeeded in timeout |
+| Methods                                     | Description                                                |
+|:--------------------------------------------|:-----------------------------------------------------------|
+| PortHandlerLinux                            | Initializes PortHandlerLinux instance                      |
+| ~PortHandlerLinux                           | Closes a serial port                                       |
+| **[openPort](#openport)**                   | Opens a serial port                                        |
+| **[closePort](#closeport)**                 | Closes a serial port                                       |
+| **[clearPort](#clearport)**                 | Refreshes a serial port                                    |
+| **[setPortName](#setportname)**             | Sets a device name                                         |
+| **[getPortName](#getportname)**             | Gets a device name                                         |
+| **[setBaudrate](#setbaudrate)**             | Sets a baudrate                                            |
+| **[getBaudrate](#getbaudrate)**             | Gets a baudrate                                            |
+| **[getBytesAvailable](#getbytesavailable)** | Checks how many bytes can be read in port buffer           |
+| **[readPort](#readport)**                   | Reads bytes from port buffer                               |
+| **[writePort](#writeport)**                 | Writes bytes to port buffer                                |
+| **[setPacketTimeout](#setpackettimeout)**   | Sets timeout                                               |
+| **[isPacketTimeout](#ispackettimeout)**     | Checks whether communication has been succeeded in timeout |
 
 
 - Enumerator
@@ -397,9 +396,9 @@ void setPortName(const char* port_name)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-| port_name | Port name |
+| Parameters | Description |
+|:-----------|:------------|
+| port_name  | Port name   |
 
 
 - Detailed Description
@@ -431,9 +430,9 @@ bool setBaudRate(const int baudrate)
 
 - Parameters
 
-| | |
-| ------------- | ------------- |
-| baudrate | Target baudrate |
+| Parameters | Description     |
+|:-----------|:----------------|
+| baudrate   | Target baudrate |
 
 
 - Description
@@ -484,10 +483,10 @@ int readPort(UINT8_T* packet, int length)
 
 - Parameters
 
-| | |
-| ------------- | ------------- |
-| packet	| The number of data bytes read previously |
-| length	| Byte length for read |
+| Parameters | Description                              |
+|:-----------|:-----------------------------------------|
+| packet     | The number of data bytes read previously |
+| length     | Byte length for read                     |
 
 
 - Description
@@ -504,10 +503,10 @@ int writePort(UINT8_T* packet, int length)
 
 - Parameters
 
-| | |
-| ------------- | ------------- |
-| packet	| The number of data bytes to write |
-| length	| Byte length for write |
+| Parameters | Description                       |
+|:-----------|:----------------------------------|
+| packet     | The number of data bytes to write |
+| length     | Byte length for write             |
 
 
 
@@ -526,10 +525,10 @@ void setPacketTimeout (double msec)
 
 - Parameters
 
-| | |
-| ------------- | ------------- |
-| Packet_length	| Target byte length for write  |
-| msec	| Miliseconds |
+| Parameters    | Description                  |
+|:--------------|:-----------------------------|
+| Packet_length | Target byte length for write |
+| msec          | Miliseconds                  |
 
 
 - Description
@@ -603,9 +602,9 @@ void setPortName(const char* port_name)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-| port_name | Port name |
+| Parameters | Description |
+|:-----------|:------------|
+| port_name  | Port name   |
 
 
 - Detailed Description
@@ -637,9 +636,9 @@ bool setBaudRate(const int baudrate)
 
 - Parameters
 
-| | |
-| ------------- | ------------- |
-| baudrate | Target baudrate |
+| Parameters | Description     |
+|:-----------|:----------------|
+| baudrate   | Target baudrate |
 
 
 - Description
@@ -690,10 +689,10 @@ int readPort(UINT8_T* packet, int length)
 
 - Parameters
 
-| | |
-| ------------- | ------------- |
-| packet	| The number of data bytes read previously |
-| length	| Byte length for read |
+| Parameters | Description                              |
+|:-----------|:-----------------------------------------|
+| packet     | The number of data bytes read previously |
+| length     | Byte length for read                     |
 
 
 - Description
@@ -710,10 +709,10 @@ int writePort(UINT8_T* packet, int length)
 
 - Parameters
 
-| | |
-| ------------- | ------------- |
-| packet	| The number of data bytes to write |
-| length	| Byte length for write |
+| Parameters | Description                       |
+|:-----------|:----------------------------------|
+| packet     | The number of data bytes to write |
+| length     | Byte length for write             |
 
 
 
@@ -732,10 +731,10 @@ void setPacketTimeout (double msec)
 
 - Parameters
 
-| | |
-| ------------- | ------------- |
-| Packet_length	| Target byte length for write  |
-| msec	| Miliseconds |
+| Parameters    | Description                  |
+|:--------------|:-----------------------------|
+| Packet_length | Target byte length for write |
+| msec          | Miliseconds                  |
 
 
 - Description

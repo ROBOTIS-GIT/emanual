@@ -32,17 +32,17 @@ sidebar:
 
 - Methods
 
-| | |
-| ------------- | ------------- |
-|GroupSyncWrite	|Initializes groupSyncWrite instance|
-|~GroupSyncWrite	|Clears parameter storage |
-|getPortHandler	|Returns PortHandler instance|
-|getPacketHandler	|Returns PacketHandler instance|
-|**[addParam](#addparam)**	|Adds parameter storage for read |
-|**[removeParam](#removeparam)**	|Removes parameter on the storage |
-|**[changeParam](#changeparam)**	|Changes parameter on the storage |
-|**[clearParam](#clearparam)**	|Clears parameter storage|
-|**[txPacket](#txpacket)**	|Transmits packet to the number of Dynamixels|
+| Methods                         | Description                                  |
+|:--------------------------------|:---------------------------------------------|
+| GroupSyncWrite                  | Initializes groupSyncWrite instance          |
+| ~GroupSyncWrite                 | Clears parameter storage                     |
+| getPortHandler                  | Returns PortHandler instance                 |
+| getPacketHandler                | Returns PacketHandler instance               |
+| **[addParam](#addparam)**       | Adds parameter storage for read              |
+| **[removeParam](#removeparam)** | Removes parameter on the storage             |
+| **[changeParam](#changeparam)** | Changes parameter on the storage             |
+| **[clearParam](#clearparam)**   | Clears parameter storage                     |
+| **[txPacket](#txpacket)**       | Transmits packet to the number of Dynamixels |
 
 
 
@@ -51,7 +51,6 @@ sidebar:
   None
 
 #### Method References
-----------------------------------------------
 
 ##### addParam
 - Syntax
@@ -60,10 +59,10 @@ bool addParam(UINT8_T id, UINT8_T *data)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|id	|Dynamixel ID|
-|data	|data for write|
+| Parameters | Description    |
+|:-----------|:---------------|
+| id         | Dynamixel ID   |
+| data       | data for write |
 
 - Detailed Description
 
@@ -77,9 +76,9 @@ void removeParam(UINT8_T id)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|id|	Dynamixel ID|
+| Parameters | Description  |
+|:-----------|:-------------|
+| id         | Dynamixel ID |
 
 - Detailed Description
 
@@ -93,10 +92,10 @@ bool changeParam(UINT8_T id, UINT8_T *data)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|id	|Dynamixel ID|
-|data	|data for write|
+| Parameters | Description    |
+|:-----------|:---------------|
+| id         | Dynamixel ID   |
+| data       | data for write |
 
 
 - Detailed Description

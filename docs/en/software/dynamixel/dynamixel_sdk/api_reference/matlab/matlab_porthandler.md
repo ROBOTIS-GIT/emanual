@@ -31,21 +31,21 @@ sidebar:
 
 - Methods
 
-| | |
-| ------------- | ------------- |
-| **[portHandle](#porthandler)** | Initializes parameters for serial port control |
-| **[openPort](#openport)**	| Opens a serial port |
-| **[closePort](#closeport)**	| Closes a serial port |
-| **[clearPort](#clearport)**	| Refreshes a serial port |
-| **[setPortName](#setportname)**	| Sets a device name |
-| **[getPortName](#getportname)**	| Gets a device name |
-| **[setBaudrate](#setbaudrate)**	| Sets a baudrate |
-| **[getBaudrate](#getbaudrate)**	| Gets a baudrate |
-| **[getBytesAvailable](#getbytesavailable)**	| Checks how many bytes can be read in port buffer |
-| **[readPort](#readport)**	| Reads bytes from port buffer |
-| **[writePort](#writeport)**	| Writes bytes to port buffer |
-| **[setPacketTimeout](#setpackettimeout)**	| Sets timeout |
-| **[isPacketTimeout](#ispackettimeout)**	| Checks whether communication has been succeeded in timeout |
+| Methods                                     | Description                                                |
+|:--------------------------------------------|:-----------------------------------------------------------|
+| **[portHandle](#porthandler)**              | Initializes parameters for serial port control             |
+| **[openPort](#openport)**                   | Opens a serial port                                        |
+| **[closePort](#closeport)**                 | Closes a serial port                                       |
+| **[clearPort](#clearport)**                 | Refreshes a serial port                                    |
+| **[setPortName](#setportname)**             | Sets a device name                                         |
+| **[getPortName](#getportname)**             | Gets a device name                                         |
+| **[setBaudrate](#setbaudrate)**             | Sets a baudrate                                            |
+| **[getBaudrate](#getbaudrate)**             | Gets a baudrate                                            |
+| **[getBytesAvailable](#getbytesavailable)** | Checks how many bytes can be read in port buffer           |
+| **[readPort](#readport)**                   | Reads bytes from port buffer                               |
+| **[writePort](#writeport)**                 | Writes bytes to port buffer                                |
+| **[setPacketTimeout](#setpackettimeout)**   | Sets timeout                                               |
+| **[isPacketTimeout](#ispackettimeout)**     | Checks whether communication has been succeeded in timeout |
 
 
 - Enumerator
@@ -55,17 +55,17 @@ sidebar:
 
 
 #### Method References
-----------------------------------------------
+
 ##### portHandler
 - Syntax
-``` m
+```c
 int portHandler(string port_name)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-| port_name | Port name |
+| Parameters | Description |
+|:-----------|:------------|
+| port_name  | Port name   |
 
 - Detailed Description
 
@@ -73,14 +73,14 @@ int portHandler(string port_name)
 
 ##### openPort
 - Syntax
-``` m
+```c
 bool openPort(int port_num)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-| port_num| Port number |
+| Parameters | Description |
+|:-----------|:------------|
+| port_num   | Port number |
 
 - Detailed Description
 
@@ -89,14 +89,14 @@ bool openPort(int port_num)
 
 ##### closePort
 - Syntax
-``` m
+```c
 void closePort(int port_num)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-| port_num| Port number |
+| Parameters | Description |
+|:-----------|:------------|
+| port_num   | Port number |
 
 - Detailed Description
 
@@ -105,14 +105,14 @@ void closePort(int port_num)
 
 ##### clearPort
 - Syntax
-``` m
+```c
 void clearPort(int port_num)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-| port_num| Port number |
+| Parameters | Description |
+|:-----------|:------------|
+| port_num   | Port number |
 
 - Detailed Description
 
@@ -121,15 +121,15 @@ void clearPort(int port_num)
 
 ##### setPortName
 - Syntax
-``` m
+```c
 void setPortName(int port_num, string port_name)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-| port_num| Port number |
-| port_name | Port name |
+| Parameters | Description |
+|:-----------|:------------|
+| port_num   | Port number |
+| port_name  | Port name   |
 
 - Detailed Description
 
@@ -138,14 +138,14 @@ void setPortName(int port_num, string port_name)
 
 ##### getPortName
 - Syntax
-``` m
+```c
 string getPortName(int port_num)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-| port_num| Port number |
+| Parameters | Description |
+|:-----------|:------------|
+| port_num   | Port number |
 
 - Detailed Description
 
@@ -155,16 +155,16 @@ string getPortName(int port_num)
 ##### setBaudrate
 - Syntax
 
-``` m
+```c
 bool setBaudrate(int port_num, int baudrate)
 ```
 
 - Parameters
 
-| | |
-| ------------- | ------------- |
-| port_num| Port number |
-| baudrate | Target baudrate |
+| Parameters | Description     |
+|:-----------|:----------------|
+| port_num   | Port number     |
+| baudrate   | Target baudrate |
 
 
 - Description
@@ -175,15 +175,15 @@ bool setBaudrate(int port_num, int baudrate)
 ##### getBaudrate
 - Syntax
 
-``` m
+```c
 int getBaudrate(int port_num)
 ```
 
 - Parameters
 
-| | |
-| ------------- | ------------- |
-| port_num| Port number |
+| Parameters | Description |
+|:-----------|:------------|
+| port_num   | Port number |
 
 - Description
 
@@ -193,15 +193,15 @@ int getBaudrate(int port_num)
 ##### getBytesAvailable
 - Syntax
 
-``` m
+```c
 int getBytesAvailable(int port_num)
 ```
 
 - Parameters
 
-| | |
-| ------------- | ------------- |
-| port_num| Port number |
+| Parameters | Description |
+|:-----------|:------------|
+| port_num   | Port number |
 
 - Description
 
@@ -211,17 +211,17 @@ int getBytesAvailable(int port_num)
 ##### readPort
 - Syntax
 
-``` m
+```c
 int readPort(int port_num, int[] packet, int length)
 ```
 
 - Parameters
 
-| | |
-| ------------- | ------------- |
-| port_num| Port number |
-| packet	| The number of data bytes read previously |
-| length	| Byte length for read |
+| Parameters | Description                              |
+|:-----------|:-----------------------------------------|
+| port_num   | Port number                              |
+| packet     | The number of data bytes read previously |
+| length     | Byte length for read                     |
 
 
 - Description
@@ -232,17 +232,17 @@ int readPort(int port_num, int[] packet, int length)
 ##### writePort
 - Syntax
 
-``` m
+```c
 int writePort(int port_num, int[] packet, int length)
 ```
 
 - Parameters
 
-| | |
-| ------------- | ------------- |
-| port_num| Port number |
-| packet	| The number of data bytes to write |
-| length	| Byte length for write |
+| Parameters | Description                       |
+|:-----------|:----------------------------------|
+| port_num   | Port number                       |
+| packet     | The number of data bytes to write |
+| length     | Byte length for write             |
 
 
 
@@ -254,16 +254,16 @@ int writePort(int port_num, int[] packet, int length)
 ##### setPacketTimeout
 - Syntax
 
-``` m
+```c
 void setPacketTimeout (int port_num, uint16_t packet_length)
 ```
 
 - Parameters
 
-| | |
-| ------------- | ------------- |
-| port_num| Port number |
-| Packet_length	| Target byte length for write  |
+| Parameters    | Description                  |
+|:--------------|:-----------------------------|
+| port_num      | Port number                  |
+| Packet_length | Target byte length for write |
 
 
 - Description
@@ -274,16 +274,16 @@ void setPacketTimeout (int port_num, uint16_t packet_length)
 ##### setPacketTimeoutMSec
 - Syntax
 
-``` m
+```c
 void setPacketTimeoutMSec (int port_num, double msec)
 ```
 
 - Parameters
 
-| | |
-| ------------- | ------------- |
-| port_num| Port number |
-| msec	| Miliseconds |
+| Parameters | Description |
+|:-----------|:------------|
+| port_num   | Port number |
+| msec       | Miliseconds |
 
 
 - Description
@@ -293,15 +293,15 @@ void setPacketTimeoutMSec (int port_num, double msec)
 ##### isPacketTimeout
 - Syntax
 
-``` m
+```c
 bool isPacketTimeout(int port_num)
 ```
 
 - Parameters
 
-| | |
-| ------------- | ------------- |
-| port_num| Port number |
+| Parameters | Description |
+|:-----------|:------------|
+| port_num   | Port number |
 
 - Description
 

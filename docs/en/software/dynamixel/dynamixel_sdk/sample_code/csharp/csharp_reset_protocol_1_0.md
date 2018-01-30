@@ -232,7 +232,7 @@ namespace reset
 ```
 
 
--------------------------------------------------------------------------------------
+
 
 - Details
 
@@ -436,7 +436,7 @@ static void Main(string[] args)
 
 In `Main()` function, the codes call actual functions for Dynamixel control.
 
---------------------------------------------------------------------------------
+
 
 ``` cs
 // Initialize PortHandler Structs

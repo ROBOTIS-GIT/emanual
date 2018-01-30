@@ -292,7 +292,7 @@ namespace bulk_read_write
 }
 ```
 
--------------------------------------------------------------------------------------
+
 
 - Details
 
@@ -571,7 +571,7 @@ static void Main(string[] args)
 
 In `Main()` function, the codes call actual functions for Dynamixel control.
 
---------------------------------------------------------------------------------
+
 
 ``` cs
 // Initialize PortHandler Structs

@@ -1,13 +1,13 @@
 ---
 layout: archive
-lang: en
+lang: kr
 ref: openmanipulator
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/openmanipulator/
+permalink: /docs/kr/platform/openmanipulator/
 sidebar:
-  title: OpenManipulator
+  title: 오픈매니퓰레이터
   nav: "open_manipulator"
 ---
 

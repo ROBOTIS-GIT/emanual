@@ -32,17 +32,17 @@ sidebar:
 
 - Methods
 
-| | |
-| ------------- | ------------- |
-|**[groupSyncRead](#groupsyncread)**	|Initializes members of packet data pointer struct|
-|**[groupSyncReadAddParam](#groupsyncread_addparam)**	|Adds parameter storage for read |
-|**[groupSyncReadRemoveParam](#groupsyncreadremoveparam)**	|Removes parameter on the storage |
-|**[groupSyncReadClearParam](#groupsyncreadclearparam)**	|Clears parameter storage|
-|**[groupSyncReadTxPacket](#groupsyncreadtxpacket)**	|Transmits packet to the number of Dynamixels|
-|**[groupSyncReadRxPacket](#groupsyncreadrxpacket)**	|receives packet from the number of Dynamixels|
-|**[groupSyncReadTxRxPacket](#groupsyncreadtxrxpacket)**	|Transmits and receives packet on the number of Dynamixels|
-|**[groupSyncReadIsAvailable](#groupsyncreadisavailable)** | Checks whether there is available data in the data storage |
-|**[groupSyncReadGetData](#groupsyncreadgetdata)**	|Gets data from received packet|
+| Methods                                                   | Description                                                |
+|:----------------------------------------------------------|:-----------------------------------------------------------|
+| **[groupSyncRead](#groupsyncread)**                       | Initializes members of packet data pointer struct          |
+| **[groupSyncReadAddParam](#groupsyncread_addparam)**      | Adds parameter storage for read                            |
+| **[groupSyncReadRemoveParam](#groupsyncreadremoveparam)** | Removes parameter on the storage                           |
+| **[groupSyncReadClearParam](#groupsyncreadclearparam)**   | Clears parameter storage                                   |
+| **[groupSyncReadTxPacket](#groupsyncreadtxpacket)**       | Transmits packet to the number of Dynamixels               |
+| **[groupSyncReadRxPacket](#groupsyncreadrxpacket)**       | receives packet from the number of Dynamixels              |
+| **[groupSyncReadTxRxPacket](#groupsyncreadtxrxpacket)**   | Transmits and receives packet on the number of Dynamixels  |
+| **[groupSyncReadIsAvailable](#groupsyncreadisavailable)** | Checks whether there is available data in the data storage |
+| **[groupSyncReadGetData](#groupsyncreadgetdata)**         | Gets data from received packet                             |
 
 
 - Enumerator
@@ -50,20 +50,20 @@ sidebar:
   None
 
 #### Method References
-----------------------------------------------
+
 ##### groupSyncRead
 - Syntax
-``` m
+```c
 int groupSyncRead(int port_num, int protocol_version, int start_address, int data_length)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port_num | Port number|
-|protocol_version | Protocol version |
-|start_address | Control table address to start reading data |
-|data_length	|Total data length|
+| Parameters       | Description                                 |
+|:-----------------|:--------------------------------------------|
+| port_num         | Port number                                 |
+| protocol_version | Protocol version                            |
+| start_address    | Control table address to start reading data |
+| data_length      | Total data length                           |
 
 - Detailed Description
 
@@ -72,15 +72,15 @@ int groupSyncRead(int port_num, int protocol_version, int start_address, int dat
 
 ##### groupSyncReadAddParam
 - Syntax
-``` m
+```c
 bool groupSyncReadAddParam(int group_num, int id)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|group_num | Group number |
-|id	|Dynamixel ID|
+| Parameters | Description  |
+|:-----------|:-------------|
+| group_num  | Group number |
+| id         | Dynamixel ID |
 
 - Detailed Description
 
@@ -89,15 +89,15 @@ bool groupSyncReadAddParam(int group_num, int id)
 
 ##### groupSyncReadRemoveParam
 - Syntax
-``` m
+```c
 void groupSyncReadRemoveParam(int group_num, int id)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|group_num | Group number |
-|id|	Dynamixel ID|
+| Parameters | Description  |
+|:-----------|:-------------|
+| group_num  | Group number |
+| id         | Dynamixel ID |
 
 - Detailed Description
 
@@ -106,14 +106,14 @@ void groupSyncReadRemoveParam(int group_num, int id)
 
 ##### groupSyncReadClearParam
 - Syntax
-``` m
+```c
 void groupSyncReadClearParam(int group_num)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|group_num | Group number |
+| Parameters | Description  |
+|:-----------|:-------------|
+| group_num  | Group number |
 
 - Detailed Description
 
@@ -122,14 +122,14 @@ void groupSyncReadClearParam(int group_num)
 
 ##### groupSyncReadTxPacket
 - Syntax
-``` m
+```c
 int groupSyncReadTxPacket(int group_num)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|group_num | Group number |
+| Parameters | Description  |
+|:-----------|:-------------|
+| group_num  | Group number |
 
 - Detailed Description
 
@@ -138,14 +138,14 @@ int groupSyncReadTxPacket(int group_num)
 
 ##### groupSyncReadRxPacket
 - Syntax
-``` m
+```c
 int groupSyncReadRxPacket(int group_num)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|group_num | Group number |
+| Parameters | Description  |
+|:-----------|:-------------|
+| group_num  | Group number |
 
 - Detailed Description
 
@@ -154,14 +154,14 @@ int groupSyncReadRxPacket(int group_num)
 
 ##### groupSyncReadTxRxPacket
 - Syntax
-``` m
+```c
 int groupSyncReadTxRxPacket(int group_num)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|group_num | Group number |
+| Parameters | Description  |
+|:-----------|:-------------|
+| group_num  | Group number |
 
 - Detailed Description
 
@@ -169,16 +169,16 @@ int groupSyncReadTxRxPacket(int group_num)
 
  ##### groupSyncReadIsAvailable
  - Syntax
- ``` m
+ ```c
  bool groupSyncReadIsAvailable(int group_num, int id, int address, int data_length)
  ```
  - Parameters
 
- | | |
- | ------------- | ------------- |
- |id	|Dynamixel ID|
- |address	|Address on the control table of Dynamixel|
- |data	|Packet data|
+| Parameters | Description                               |
+|:-----------|:------------------------------------------|
+| id         | Dynamixel ID                              |
+| address    | Address on the control table of Dynamixel |
+| data       | Packet data                               |
 
 
  - Detailed Description
@@ -187,17 +187,17 @@ int groupSyncReadTxRxPacket(int group_num)
 
 ##### groupSyncReadGetData
 - Syntax
-``` m
+```c
 int groupSyncReadGetData(int group_num, int id, int address, int data_length)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|group_num | Group number |
-|id	|Dynamixel ID|
-|address	|Address on the control table of Dynamixel|
-|data	|Packet data|
+| Parameters | Description                               |
+|:-----------|:------------------------------------------|
+| group_num  | Group number                              |
+| id         | Dynamixel ID                              |
+| address    | Address on the control table of Dynamixel |
+| data       | Packet data                               |
 
 
 - Detailed Description

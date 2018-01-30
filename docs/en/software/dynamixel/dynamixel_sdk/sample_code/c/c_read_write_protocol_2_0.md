@@ -28,7 +28,7 @@ sidebar:
 
   All series using protocol 2.0
 
-- Simple code
+- Sample code
 
 
 ``` cpp
@@ -252,7 +252,7 @@ int main()
 }
 ```
 
--------------------------------------------------------------------------------------
+
 
 - Details
 
@@ -505,7 +505,7 @@ int main()
 
 In `main()` function, the codes call actual functions for Dynamixel control.
 
---------------------------------------------------------------------------------
+
 
 ``` cpp
   // Initialize PortHandler Structs
