@@ -160,12 +160,12 @@ $(function() {
       function extendgoogletool() {
         if (toggle_google == 0) {
           google_tools.classList.add("extend_googletools");
-          // switch_ko_en.classList.add("show_switch_ko_en");
+          switch_ko_en.classList.add("show_switch_ko_en");
           toggle_google = 1;
         }
         else {
           google_tools.classList.remove("extend_googletools");
-          // switch_ko_en.classList.remove("show_switch_ko_en");
+          switch_ko_en.classList.remove("show_switch_ko_en");
           toggle_google = 0;
         }
       }
@@ -208,18 +208,16 @@ $(function() {
         <!-- end of Google Translation -->  
         
         
-        <!-- Korean - English Translation Button
         <button class="switch_ko_en" id="switch_ko_en">
           
             
-              
+              N/A
             
           
             
               <a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/" style="color: black;">Korean</a></button>
             
           
-          Korean - English Translation Button -->
       </div>
       
       <input class="menu-btn" type="checkbox" id="menu-btn" />
@@ -957,7 +955,7 @@ $(function() {
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/software/dynamixel/dynamixel_workbench/dynamixel_workbench/" class="">Dynamixel-Workbench</a>
+                          <a href="http://localhost:4000/docs/en/software/dynamixel/dynamixel_workbench/" class="">Dynamixel-Workbench</a>
                         </li>
                       
                     
@@ -2439,7 +2437,7 @@ $(function() {
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/software/dynamixel/dynamixel_workbench/dynamixel_workbench/">Dynamixel-Workbench</a>
+                      <a href="http://localhost:4000/docs/en/software/dynamixel/dynamixel_workbench/">Dynamixel-Workbench</a>
                     
                 
               </div>
@@ -3132,7 +3130,7 @@ $(function() {
 
     <li class="has-children">
       <input type="radio" name="toplevel" id="toplevel_0" >
-      <label for="toplevel_0">Specifications &loz;</label>
+      <label for="toplevel_0">Specifications [+]</label>
     
 
     
@@ -3161,7 +3159,7 @@ $(function() {
 
     <li class="has-children">
       <input type="radio" name="toplevel" id="toplevel_1" >
-      <label for="toplevel_1">Control Table &loz;</label>
+      <label for="toplevel_1">Control Table [+]</label>
     
 
     
@@ -3174,7 +3172,7 @@ $(function() {
         
         <li class="has-children">
           <input type="radio" name="sublevel" id="Control Table, Data, Address" >
-          <label for="Control Table, Data, Address">Control Table, Data, Address &loz;</label>
+          <label for="Control Table, Data, Address">Control Table, Data, Address [+]</label>
         
 
         
@@ -3263,7 +3261,7 @@ $(function() {
 
     <li class="has-children">
       <input type="radio" name="toplevel" id="toplevel_2" >
-      <label for="toplevel_2">How to Assemble &loz;</label>
+      <label for="toplevel_2">How to Assemble [+]</label>
     
 
     
@@ -3303,7 +3301,7 @@ $(function() {
 
     <li class="has-children">
       <input type="radio" name="toplevel" id="toplevel_3" >
-      <label for="toplevel_3">Maintenance &loz;</label>
+      <label for="toplevel_3">Maintenance [+]</label>
     
 
     
@@ -3332,7 +3330,7 @@ $(function() {
 
     <li class="has-children">
       <input type="radio" name="toplevel" id="toplevel_4" >
-      <label for="toplevel_4">Reference &loz;</label>
+      <label for="toplevel_4">Reference [+]</label>
     
 
     
@@ -4558,7 +4556,7 @@ When current input voltage acquired from Present Input Voltage(144) exceeds the 
   </tbody>
 </table>
 
-<h3 id="acurrent-limit38"><a name="current-limit"></a>&lt;/a&gt;<strong><a href="#current-limit38">Current Limit(38)</a></strong></h3>
+<h3 id="current-limit38"><a name="current-limit"></a><strong><a href="#current-limit38">Current Limit(38)</a></strong></h3>
 <p>This value indicates maximum current(torque) output limit. Goal Current(102) can’t be configured with any values exceeding Current Limit(38). The Current Limit(38) is used in Torque Control Mode and Current-based Position Control Mode, therefore decreasing Current Limit(38) will result in decreasing torque of DYNAMIXEL. For more details, please refer to the Position PID Gain(80 ~ 84).</p>
 
 <table>

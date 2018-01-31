@@ -29,7 +29,7 @@ sidebar:
 
   All series using protocol 2.0
 
-- Simple code
+#### Sample code
 
 
 ``` cs
@@ -381,7 +381,7 @@ namespace sync_write
 
 
 
-- Details
+#### Details
 
 ``` cs
 using System;

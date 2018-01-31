@@ -28,7 +28,7 @@ sidebar:
 
   All series using protocol 1.0
 
-- Code
+#### Sample code
 
 
 ``` m
@@ -189,7 +189,7 @@ clear all;
 
 
 
-- Details
+#### Details
 
 ``` m
 % Load Libraries

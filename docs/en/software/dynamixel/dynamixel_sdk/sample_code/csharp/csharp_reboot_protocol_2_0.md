@@ -29,7 +29,7 @@ sidebar:
 
   All series using protocol 2.0
 
-- Simple code
+#### Sample code
 
 
 ``` cs
@@ -141,7 +141,7 @@ namespace reboot
 
 
 
-- Details
+#### Details
 
 ``` cs
 using System;

@@ -33,7 +33,7 @@ sidebar:
 
   All series using protocol 1.0
 
-- Simple code
+#### Sample code
 
 
 ``` java
@@ -243,7 +243,7 @@ public class Reset
 
 
 
-- Details
+#### Details
 
 ``` java
 import java.util.Scanner;

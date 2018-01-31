@@ -28,7 +28,7 @@ sidebar:
 
   All series using protocol 1.0
 
-- Code
+#### Sample code
 
 
 ``` java
@@ -207,7 +207,7 @@ public class ReadWrite
 
 
 
-- Details
+#### Details
 
 ``` java
 import java.util.Scanner;

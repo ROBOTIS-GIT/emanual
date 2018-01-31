@@ -29,7 +29,7 @@ sidebar:
 
   All series using protocol 1.0
 
-- Code Parts
+#### Sample code Parts
 
 
 ``` java
@@ -267,7 +267,7 @@ public class SyncWrite
 
 
 
-- Details
+#### Details
 
 ``` java
 import java.util.Scanner;

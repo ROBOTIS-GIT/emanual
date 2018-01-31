@@ -29,8 +29,8 @@ sidebar:
 
 - Control Panel
 
-![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/labview/windows/sample_code/protocol_combined/protocol_combined.png)
+  ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/labview/windows/sample_code/protocol_combined/protocol_combined.png)
 
 - Block Diagram
 
-![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/labview/windows/sample_code/protocol_combined/block_diagram.png)
+  ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/labview/windows/sample_code/protocol_combined/block_diagram.png)

@@ -28,7 +28,7 @@ sidebar:
 
   All series using protocol 2.0
 
-- Simple code
+#### Sample code
 
 
 ``` cs
@@ -206,7 +206,7 @@ namespace read_write
 
 
 
-- Details
+#### Details
 
 ``` cs
 using System;

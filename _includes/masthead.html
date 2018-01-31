@@ -29,16 +29,14 @@
         <!-- end of Google Translation -->  
         {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
         
-        <!-- Korean - English Translation Button
         <button class="switch_ko_en" id="switch_ko_en">
           {% for switch in pages %}
             {% if page.lang=='kr' %}
-              {% if switch.lang=='en' %}<a href="{{ switch.url | absolute_url }}" style="color: black;">English</a></button>{% else %}{% endif %}
+              {% if switch.lang=='en' %}<a href="{{ switch.url | absolute_url }}" style="color: black;">English</a></button>{% else %}N/A{% endif %}
             {% else %}
-              {% if switch.lang=='kr' %}<a href="{{ switch.url | absolute_url }}" style="color: black;">Korean</a></button>{% else %}{% endif %}
+              {% if switch.lang=='kr' %}<a href="{{ switch.url | absolute_url }}" style="color: black;">Korean</a></button>{% else %}N/A{% endif %}
             {% endif %}
           {% endfor %}
-          Korean - English Translation Button -->
       </div>
       
       <input class="menu-btn" type="checkbox" id="menu-btn" />

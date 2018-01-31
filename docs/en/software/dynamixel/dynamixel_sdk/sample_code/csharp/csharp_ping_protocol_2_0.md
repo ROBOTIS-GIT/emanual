@@ -29,7 +29,7 @@ sidebar:
 
   All series using protocol 2.0
 
-- Simple code
+#### Sample code
 
 
 ``` cs
@@ -137,7 +137,7 @@ namespace ping
 
 
 
-- Details
+#### Details
 
 ``` cs
 using System;

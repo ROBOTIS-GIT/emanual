@@ -35,7 +35,7 @@ sidebar:
 
   All series using protocol 2.0
 
-- Simple code
+#### Sample code
 
 
 ```python
@@ -207,7 +207,7 @@ dynamixel.closePort(port_num)
 
 
 
-- Details
+#### Details
 
 ```python
 import os, sys

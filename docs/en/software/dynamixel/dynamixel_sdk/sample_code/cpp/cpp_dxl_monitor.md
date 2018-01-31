@@ -35,7 +35,7 @@ sidebar:
   All series using protocol 1.0 and 2.0
 
 
-- Code
+#### Sample code
 
 ``` cpp
 /*

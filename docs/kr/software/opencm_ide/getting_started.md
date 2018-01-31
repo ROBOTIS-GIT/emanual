@@ -292,7 +292,7 @@ $sudo apt-get install ia32-libs
 
 ![img](/assets/images/sw/opencm_ide/opencm_ide_038.png)
 
-![img](/assets/images/sw/opencm/opencm9.04_26.jpg)
+![img](/assets/images/sw/opencm_ide/opencm9.04_26.jpg)
 
 그 외에 사용방법은 윈도우즈 버전과 동일합니다.
 
@@ -474,7 +474,7 @@ examples 폴더에는 해당 라이브러리로 구성된 스케치 예제가 �
 
 OpenCM9.04의 User Button을 누른상태에서 USB 케이블로 PC와 직접 연결합니다. 다른 전원 소스는 모두 제거하고 오로지 User Button을 누른 채 USB로만 연결합니다.
 
-![img](/assets/images/sw/opencm/opencm9.04_26.jpg)
+![img](/assets/images/sw/opencm_ide/opencm9.04_26.jpg)
 
 > OpenCM9.04는 User Button으로 복구 모드 진입을 할 수 있습니다.
 

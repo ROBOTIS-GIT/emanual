@@ -160,12 +160,12 @@ $(function() {
       function extendgoogletool() {
         if (toggle_google == 0) {
           google_tools.classList.add("extend_googletools");
-          // switch_ko_en.classList.add("show_switch_ko_en");
+          switch_ko_en.classList.add("show_switch_ko_en");
           toggle_google = 1;
         }
         else {
           google_tools.classList.remove("extend_googletools");
-          // switch_ko_en.classList.remove("show_switch_ko_en");
+          switch_ko_en.classList.remove("show_switch_ko_en");
           toggle_google = 0;
         }
       }
@@ -208,18 +208,16 @@ $(function() {
         <!-- end of Google Translation -->  
         
         
-        <!-- Korean - English Translation Button
         <button class="switch_ko_en" id="switch_ko_en">
           
             
-              
+              N/A
             
           
             
               <a href="http://localhost:4000/docs/kr/platform/thormang3/getting_started/" style="color: black;">Korean</a></button>
             
           
-          Korean - English Translation Button -->
       </div>
       
       <input class="menu-btn" type="checkbox" id="menu-btn" />
@@ -957,7 +955,7 @@ $(function() {
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/software/dynamixel/dynamixel_workbench/dynamixel_workbench/" class="">Dynamixel-Workbench</a>
+                          <a href="http://localhost:4000/docs/en/software/dynamixel/dynamixel_workbench/" class="">Dynamixel-Workbench</a>
                         </li>
                       
                     
@@ -2439,7 +2437,7 @@ $(function() {
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/software/dynamixel/dynamixel_workbench/dynamixel_workbench/">Dynamixel-Workbench</a>
+                      <a href="http://localhost:4000/docs/en/software/dynamixel/dynamixel_workbench/">Dynamixel-Workbench</a>
                     
                 
               </div>
@@ -3132,7 +3130,7 @@ $(function() {
 
     <li class="has-children">
       <input type="radio" name="toplevel" id="toplevel_0" >
-      <label for="toplevel_0">Introduction &loz;</label>
+      <label for="toplevel_0">Introduction [+]</label>
     
 
     
@@ -3205,7 +3203,7 @@ $(function() {
 
     <li class="has-children">
       <input type="radio" name="toplevel" id="toplevel_1" >
-      <label for="toplevel_1">Quick Start &loz;</label>
+      <label for="toplevel_1">Quick Start [+]</label>
     
 
     
@@ -3300,7 +3298,7 @@ $(function() {
 
     <li class="has-children">
       <input type="radio" name="toplevel" id="toplevel_2" >
-      <label for="toplevel_2">Getting Started &loz;</label>
+      <label for="toplevel_2">Getting Started [+]</label>
     
 
     
@@ -3324,7 +3322,7 @@ $(function() {
         
         <li class="has-children">
           <input type="radio" name="sublevel" id="Network Setting" >
-          <label for="Network Setting">Network Setting &loz;</label>
+          <label for="Network Setting">Network Setting [+]</label>
         
 
         
@@ -3370,7 +3368,7 @@ $(function() {
         
         <li class="has-children">
           <input type="radio" name="sublevel" id="ROS Environment Setting" >
-          <label for="ROS Environment Setting">ROS Environment Setting &loz;</label>
+          <label for="ROS Environment Setting">ROS Environment Setting [+]</label>
         
 
         
@@ -3405,7 +3403,7 @@ $(function() {
         
         <li class="has-children">
           <input type="radio" name="sublevel" id="ROBOTIS ROS Package Install" >
-          <label for="ROBOTIS ROS Package Install">ROBOTIS ROS Package Install &loz;</label>
+          <label for="ROBOTIS ROS Package Install">ROBOTIS ROS Package Install [+]</label>
         
 
         
@@ -3456,7 +3454,7 @@ $(function() {
         
         <li class="has-children">
           <input type="radio" name="sublevel" id="Additional ROS Package Install" >
-          <label for="Additional ROS Package Install">Additional ROS Package Install &loz;</label>
+          <label for="Additional ROS Package Install">Additional ROS Package Install [+]</label>
         
 
         
@@ -3496,7 +3494,7 @@ $(function() {
 
     <li class="has-children">
       <input type="radio" name="toplevel" id="toplevel_3" >
-      <label for="toplevel_3">THORMANG3 ROS Packages &loz;</label>
+      <label for="toplevel_3">THORMANG3 ROS Packages [+]</label>
     
 
     
@@ -3509,7 +3507,7 @@ $(function() {
         
         <li class="has-children">
           <input type="radio" name="sublevel" id="MPC Packages" >
-          <label for="MPC Packages">MPC Packages &loz;</label>
+          <label for="MPC Packages">MPC Packages [+]</label>
         
 
         
@@ -3616,7 +3614,7 @@ $(function() {
         
         <li class="has-children">
           <input type="radio" name="sublevel" id="PPC Packages" >
-          <label for="PPC Packages">PPC Packages &loz;</label>
+          <label for="PPC Packages">PPC Packages [+]</label>
         
 
         
@@ -3651,7 +3649,7 @@ $(function() {
         
         <li class="has-children">
           <input type="radio" name="sublevel" id="OPC Packages" >
-          <label for="OPC Packages">OPC Packages &loz;</label>
+          <label for="OPC Packages">OPC Packages [+]</label>
         
 
         
@@ -3710,7 +3708,7 @@ $(function() {
         
         <li class="has-children">
           <input type="radio" name="sublevel" id="Common Packages" >
-          <label for="Common Packages">Common Packages &loz;</label>
+          <label for="Common Packages">Common Packages [+]</label>
         
 
         
@@ -3745,7 +3743,7 @@ $(function() {
         
         <li class="has-children">
           <input type="radio" name="sublevel" id="Tools Packages" >
-          <label for="Tools Packages">Tools Packages &loz;</label>
+          <label for="Tools Packages">Tools Packages [+]</label>
         
 
         
@@ -3780,7 +3778,7 @@ $(function() {
         
         <li class="has-children">
           <input type="radio" name="sublevel" id="THORMANG msgs Package" >
-          <label for="THORMANG msgs Package">THORMANG msgs Package &loz;</label>
+          <label for="THORMANG msgs Package">THORMANG msgs Package [+]</label>
         
 
         
@@ -3852,7 +3850,7 @@ $(function() {
 
     <li class="has-children">
       <input type="radio" name="toplevel" id="toplevel_4" >
-      <label for="toplevel_4">THORMANG3 Operation &loz;</label>
+      <label for="toplevel_4">THORMANG3 Operation [+]</label>
     
 
     
@@ -3887,7 +3885,7 @@ $(function() {
         
         <li class="has-children">
           <input type="radio" name="sublevel" id="GUI Program" >
-          <label for="GUI Program">GUI Program &loz;</label>
+          <label for="GUI Program">GUI Program [+]</label>
         
 
         
@@ -3978,7 +3976,7 @@ $(function() {
 
     <li class="has-children">
       <input type="radio" name="toplevel" id="toplevel_5" >
-      <label for="toplevel_5">Gazebo Simulation &loz;</label>
+      <label for="toplevel_5">Gazebo Simulation [+]</label>
     
 
     
@@ -4018,7 +4016,7 @@ $(function() {
 
     <li class="has-children">
       <input type="radio" name="toplevel" id="toplevel_6" >
-      <label for="toplevel_6">References &loz;</label>
+      <label for="toplevel_6">References [+]</label>
     
 
     

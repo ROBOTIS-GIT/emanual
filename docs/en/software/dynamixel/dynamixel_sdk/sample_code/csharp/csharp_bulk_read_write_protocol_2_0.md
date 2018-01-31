@@ -29,7 +29,7 @@ sidebar:
 
   All series using protocol 2.0
 
-- Code
+#### Sample code
 
 
 ``` cs
@@ -294,7 +294,7 @@ namespace bulk_read_write
 
 
 
-- Details
+#### Details
 
 ``` cs
 using System;
