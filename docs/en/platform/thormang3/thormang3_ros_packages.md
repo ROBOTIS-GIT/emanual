@@ -294,7 +294,7 @@ THORMANG3 manipulation module for the upper body.
 
 As seen from the above figure, thormang3_walking_module is one of the MotionModules from ROS Framework.
 THROMANG3 can be controlled with Topics and Services.
-Users can designate almost all Step Parameters.(thormang3_walking_module_msgs/StepData)
+Users can designate almost all Step Parameters.([thormang3_walking_module_msgs/StepData])
 
 1. Pattern Generation
 
@@ -304,7 +304,7 @@ Users can designate almost all Step Parameters.(thormang3_walking_module_msgs/St
 
 2. Balance Algorithm
 
-    The balance algorithm is included as shown below.(thormang3_walking_module_msgs/BalanceParam)
+    The balance algorithm is included as shown below.([thormang3_walking_module_msgs/BalanceParam])
     ![](/assets/images/platform/thormang3/thormang3_walking_module_balance_diagram.jpg)
 
 #### Download & Build
@@ -2047,3 +2047,5 @@ The following are Messages and Service used for the thormang3_offset_tuner_serve
 [sensor_msgs/JointState]: http://docs.ros.org/api/sensor_msgs/html/msg/JointState.html
 [thormang3_head_control_module_msgs/HeadJointPose]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/HeadJointPose.msg
 [geometry_msgs/WrenchStamped]: http://docs.ros.org/api/geometry_msgs/html/msg/WrenchStamped.html
+[thormang3_walking_module_msgs/StepData]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/StepData.msg
+[thormang3_walking_module_msgs/BalanceParam]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/BalanceParam.msg
