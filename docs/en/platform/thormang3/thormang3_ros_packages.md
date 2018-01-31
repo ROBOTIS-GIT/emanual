@@ -268,24 +268,24 @@ THORMANG3 manipulation module for the upper body.
 #### ROS API
 
 ##### Subscribed Topics
-  - `/robotis/manipulation/ini_pose_msg` (std_msgs/String)  
+  - `/robotis/manipulation/ini_pose_msg` ([std_msgs/String])  
     A message to take the initial posture.
 
-  - `/robotis/manipulation/joint_pose_msg` (thormang3_manipulation_module_msgs/JointPose)  
+  - `/robotis/manipulation/joint_pose_msg` ([thormang3_manipulation_module_msgs/JointPose])  
     A message to move to the target point in the Joint Space.
 
-  - `/robotis/manipulation/kinematics_pose_msg` (thormang3_manipulation_module_msgs/KinematicsPose)  
+  - `/robotis/manipulation/kinematics_pose_msg` ([thormang3_manipulation_module_msgs/KinematicsPose])  
     A message to move to the target pose in the Task Space.
 
 ##### Published Topics
-  - `/robotis/status` (robotis_controller_msgs/StatusMsg)  
+  - `/robotis/status` ([robotis_controller_msgs/StatusMsg])  
     A status message of THORMANG3
 
 ##### Services
-  - `/robotis/manipulation/get_joint_pose` (thormang3_manipulation_module_msgs/GetJointPose)  
+  - `/robotis/manipulation/get_joint_pose` ([thormang3_manipulation_module_msgs/GetJointPose])  
     A service that reads the pose of specific joint.
 
-  - `/robotis/manipulation/get_kinematics_pose` (thormang3_manipulation_module_msgs/GetKinematicsPose)  
+  - `/robotis/manipulation/get_kinematics_pose` ([thormang3_manipulation_module_msgs/GetKinematicsPose])  
     A service that reads the pose of end effector from a specific kinematics group.
 
 ### [thormang3_walking_module](#thormang3_walking_module)
@@ -315,30 +315,30 @@ Users can designate almost all Step Parameters.(thormang3_walking_module_msgs/St
 #### ROS API
 
 ##### Subscribed Topics
-  - `/robotis/sensor/imu/imu` (sensor_msgs/Imu)  
+  - `/robotis/sensor/imu/imu` ([sensor_msgs/Imu])  
     Current data of the IMU Sensor
 
 ##### Published Topics
-  - `/robotis/status`(robotis_controller_msgs/StatusMsg)  
+  - `/robotis/status`([robotis_controller_msgs/StatusMsg])  
     Status message of THORMANG3
 
 ##### Services
-  - `/robotis/walking/get_reference_step_data`(thormang3_walking_module_msgs/GetReferenceStrpData)  
+  - `/robotis/walking/get_reference_step_data`([thormang3_walking_module_msgs/GetReferenceStrpData])  
     A service that collects current location of THORMANG3 in the Global from the Walking Module.
 
-  - `/robotis/walking/add_step_data`(thormang3_walking_module_msgs/AddStepDataArray)  
+  - `/robotis/walking/add_step_data`([thormang3_walking_module_msgs/AddStepDataArray])  
     A service that adds StepData created by the user.
 
-  - `/robotis/walking/walking_start`(thormang3_walking_module_msgs/WalkingStart)  
+  - `/robotis/walking/walking_start`([thormang3_walking_module_msgs/WalkingStart])  
     A service that commands to start walking.
 
-  - `/robotis/walking/is_running`(thormang3_walking_module_msgs/IsRunning)  
+  - `/robotis/walking/is_running`([thormang3_walking_module_msgs/IsRunning])  
     A service that checks whether THORMANG3 is walking or not.
 
-  - `/robotis/walking/set_balance_param`(thormang3_walking_module_msgs/SetBalanceParam)  
+  - `/robotis/walking/set_balance_param`([thormang3_walking_module_msgs/SetBalanceParam])  
     A service that can set Balance Algorithm parameters.
 
-  - `/robotis/walking/remove_existing_step_data`(thormang3_walking_module_msgs/RemoveExistingStepData)  
+  - `/robotis/walking/remove_existing_step_data`([thormang3_walking_module_msgs/RemoveExistingStepData])  
     A service that deletes existing StepData.
 
 ### [thormang3_head_control_module](#thormang3_head_control_module)
@@ -357,24 +357,24 @@ This module is to control the head. This module is included in the Thormang3 Man
 
 ##### Subscribed Topics
 
-  - `/robotis/head_control/move_lidar`(std_msgs/String)  
+  - `/robotis/head_control/move_lidar`([std_msgs/String])  
     The command moves the head in order to obtain Lidar data.
 
-  - `/robotis/head_control/move_lidar_with_range`(std_msgs/Float64)  
+  - `/robotis/head_control/move_lidar_with_range`([std_msgs/Float64])  
     This command scans up and down a given range at the current head position to generate 3D lidar data.
 
-  - `/robotis/head_control/set_joint_states`(sensor_msgs/JointState)  
+  - `/robotis/head_control/set_joint_states`([sensor_msgs/JointState])  
     The message controls joints that are connected to the head.
 
-  - `/robotis/head_control/set_joint_states_time`(thormang3_head_control_module_msgs/HeadJointPose)  
+  - `/robotis/head_control/set_joint_states_time`([thormang3_head_control_module_msgs/HeadJointPose])  
     The message moves head joints for given time.
 
 ##### Published Topics
 
-  - `/robotis/sensor/move_lidar`(std_msgs/String)  
+  - `/robotis/sensor/move_lidar`([std_msgs/String])  
     This message reports the head movement to the Node which assembles LiDAR data.
 
-  - `/robotis/status`(robotis_controller_msgs/StatusMsg)  
+  - `/robotis/status`([robotis_controller_msgs/StatusMsg])  
     The message indicates status of the head_control_module.
 
 
@@ -549,26 +549,26 @@ Acquired sensor values when the robot is hanging on the lift and standing on the
 #### ROS API
 
 1. Subscribed Topics
-  - `/robotis/feet_ft/ft_calib_command` (std_msgs/String)  
+  - `/robotis/feet_ft/ft_calib_command` ([std_msgs/String])  
     FT Calibration Command
 
 2. Published Topics
-  - `/robotis/status` (robotis_controller_msgs/StatusMsg)  
+  - `/robotis/status` ([robotis_controller_msgs/StatusMsg])  
     The status message of THORMANG3
 
-  - `/robotis/feet_ft/both_ft_value` (thormang3_feet_ft_module_msgs/BothWrench)  
+  - `/robotis/feet_ft/both_ft_value` ([thormang3_feet_ft_module_msgs/BothWrench])  
     Both Wrench
 
-  - `/robotis/sensor/ft_right_foot/raw` (geometry_msgs/WrenchStamped)  
+  - `/robotis/sensor/ft_right_foot/raw` ([geometry_msgs/WrenchStamped])  
     raw output from the force torque sensor on the right foot
 
-  - `/robotis/sensor/ft_right_foot/scaled` (geometry_msgs/WrenchStamped)  
+  - `/robotis/sensor/ft_right_foot/scaled` ([geometry_msgs/WrenchStamped])  
     scaled output from the force torque sensor on the right foot
 
-  - `/robotis/sensor/ft_right_foot/raw`(geometry_msgs/WrenchStamped)  
+  - `/robotis/sensor/ft_right_foot/raw`([geometry_msgs/WrenchStamped])  
     raw output from the force torque sensor on the left foot
 
-  - `/robotis/sensor/ft_right_foot/scaled`(geometry_msgs/renchStamped)  
+  - `/robotis/sensor/ft_right_foot/scaled`([geometry_msgs/WrenchStamped])  
     scaled output from the force torque sensor on the left foot
 
 ### [thormang3_balance_control](#thormang3_balance_control)
@@ -1296,7 +1296,7 @@ This is the modified version of KumarRobotics/imu_3dm_gx4.
 
 ##### Published Topics
 
-`/robotis/sensor/imu/imu` (sensor_msgs/Imu)
+`/robotis/sensor/imu/imu` ([sensor_msgs/Imu])
   
 Present output of the IMU Sensor
 
@@ -1513,7 +1513,7 @@ $ roslaunch thormang3_demo thormang3_demo.launch
 `/robotis/present_joint_ctrl_modules`([robotis_controller_msgs/JointCtrlModule])  
   Joint modules that are currently in use
 
-`/robotis/present_joint_states`([sensor_msgs/JointState](http://docs.ros.org/api/sensor_msgs/html/msg/JointState.html))  
+`/robotis/present_joint_states`([sensor_msgs/JointState])  
   Degree of each joint(Unit in Degree)
 
 `/robotis/demo/pose`([geometry_msgs/Pose](http://docs.ros.org/api/geometry_msgs/html/msg/Pose.html))  
@@ -1535,7 +1535,7 @@ $ roslaunch thormang3_demo thormang3_demo.launch
 `/robotis/head_control/move_lidar`([std_msgs/String](http://docs.ros.org/api/std_msgs/html/msg/String.html))  
   Head movement command for assembling LaserScan.
 
-`/robotis/head_control/set_joint_states`([sensor_msgs/JointState](http://docs.ros.org/api/sensor_msgs/html/msg/JointState.html))  
+`/robotis/head_control/set_joint_states`([sensor_msgs/JointState])  
   Control for separate head joints
 
 `/robotis/demo/foot_step_marker`([visualization_msgs/MarkerArray](http://docs.ros.org/api/visualization_msgs/html/msg/MarkerArray.html))  
@@ -2039,3 +2039,11 @@ The following are Messages and Service used for the thormang3_offset_tuner_serve
 [StartWalking.srv]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/StartWalking.srv
 [HeadJointPose.msg]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/HeadJointPose.msg
 [JointTorqueOnOff.msg]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/JointTorqueOnOff.msg
+[sensor_msgs/Imu]: http://docs.ros.org/api/sensor_msgs/html/msg/Imu.html
+[thormang3_walking_module_msgs/WalkingStart]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/WalkingStart.srv
+[thormang3_walking_module_msgs/IsRunning]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/IsRunning.srv
+[thormang3_walking_module_msgs/RemoveExistingStepData]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/RemoveExistingStepData.srv
+[std_msgs/Float64]: http://docs.ros.org/api/std_msgs/html/msg/Float64.html
+[sensor_msgs/JointState]: http://docs.ros.org/api/sensor_msgs/html/msg/JointState.html
+[thormang3_head_control_module_msgs/HeadJointPose]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/HeadJointPose.msg
+[geometry_msgs/WrenchStamped]: http://docs.ros.org/api/geometry_msgs/html/msg/WrenchStamped.html
