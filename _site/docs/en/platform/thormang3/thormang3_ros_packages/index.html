@@ -170,6 +170,16 @@ $(function() {
         }
       }
     </script>
+    <script>
+    $(document).ready(function() {
+
+    	$('.popup').magnificPopup({
+    		type: 'ajax',
+    		alignTop: true,
+    		overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
+    	});
+    });
+    </script>
   </head>
 
   <body class="layout--archive">
@@ -211,7 +221,7 @@ $(function() {
         <button class="switch_ko_en" id="switch_ko_en">
           
             
-              N/A
+              
             
           
             
@@ -4344,7 +4354,7 @@ The motion file is edited with thormang3_action_editor</p>
 <h5 id="subscribed-topics">Subscribed Topics</h5>
 <ul>
   <li>
-    <p><code class="highlighter-rouge">/robotis/action/page_num</code>(<a href="http://docs.ros.org/api/std_msgs/html/msg/Int32.html" class="haha">std_msgs/Int32</a>)<br />
+    <p><code class="highlighter-rouge">/robotis/action/page_num</code>(<a href="/docs/en/popup/std_msgs_int32_message/" class="popup">std_msgs/Int32</a>)<br />
 The page number will be played.<br />
 If user send a page number between 1 ~ 255, the page will be played.<br />
 If user send -1, the action will be stopped.<br />
@@ -4384,14 +4394,14 @@ The service that checks whether THORMANG3’s action is being played or not.</li
 
 <h5 id="subscribed-topics-1">Subscribed Topics</h5>
 <ul>
-  <li><code class="highlighter-rouge">/robotis/base/ini_pose</code>(<a href="http://docs.ros.org/api/std_msgs/html/msg/String.html">std_msgs/String</a>)<br />
+  <li><code class="highlighter-rouge">/robotis/base/ini_pose</code>(<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
 A command to take the initial posture(This command is effective even when the base module is inactive).</li>
 </ul>
 
 <h5 id="published-topics-1">Published Topics</h5>
 <ul>
   <li>
-    <p><code class="highlighter-rouge">/robotis/enable_ctrl_module</code>(<a href="http://docs.ros.org/api/std_msgs/html/msg/String.html">std_msgs/String</a>)<br />
+    <p><code class="highlighter-rouge">/robotis/enable_ctrl_module</code>(<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
 A base_module activation topic to take the initial posture.</p>
   </li>
   <li>
@@ -4413,7 +4423,7 @@ A message that contains the status of base_module.</p>
 <h5 id="subscribed-topics-2">Subscribed Topics</h5>
 <ul>
   <li>
-    <p><code class="highlighter-rouge">/robotis/manipulation/ini_pose_msg</code> (<a href="http://docs.ros.org/api/std_msgs/html/msg/String.html">std_msgs/String</a>)<br />
+    <p><code class="highlighter-rouge">/robotis/manipulation/ini_pose_msg</code> (<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
 A message to take the initial posture.</p>
   </li>
   <li>
@@ -4530,7 +4540,7 @@ A service that deletes existing StepData.</p>
 
 <ul>
   <li>
-    <p><code class="highlighter-rouge">/robotis/head_control/move_lidar</code>(<a href="http://docs.ros.org/api/std_msgs/html/msg/String.html">std_msgs/String</a>)<br />
+    <p><code class="highlighter-rouge">/robotis/head_control/move_lidar</code>(<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
 The command moves the head in order to obtain Lidar data.</p>
   </li>
   <li>
@@ -4551,7 +4561,7 @@ The message moves head joints for given time.</p>
 
 <ul>
   <li>
-    <p><code class="highlighter-rouge">/robotis/sensor/move_lidar</code>(<a href="http://docs.ros.org/api/std_msgs/html/msg/String.html">std_msgs/String</a>)<br />
+    <p><code class="highlighter-rouge">/robotis/sensor/move_lidar</code>(<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
 This message reports the head movement to the Node which assembles LiDAR data.</p>
   </li>
   <li>
@@ -4765,7 +4775,7 @@ Acquired sensor values when the robot is hanging on the lift and standing on the
 <ol>
   <li>Subscribed Topics
     <ul>
-      <li><code class="highlighter-rouge">/robotis/feet_ft/ft_calib_command</code> (<a href="http://docs.ros.org/api/std_msgs/html/msg/String.html">std_msgs/String</a>)<br />
+      <li><code class="highlighter-rouge">/robotis/feet_ft/ft_calib_command</code> (<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
  FT Calibration Command</li>
     </ul>
   </li>
@@ -5851,7 +5861,7 @@ The package also includes a node for assembling Laserscan(LaserScan to PointClou
 
 <h5 id="subscribed-topics-5">Subscribed Topics</h5>
 
-<p><code class="highlighter-rouge">/robotis/sensor/move_lidar</code>(<a href="http://docs.ros.org/api/std_msgs/html/msg/String.html">std_msgs/String</a>)<br />
+<p><code class="highlighter-rouge">/robotis/sensor/move_lidar</code>(<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
   Configures start and end time to assemble LaserScan<br />
   Set the start time when receiving start message.<br />
   Set the end time and assemble Pointcloud when receiving end message.</p>
@@ -5884,18 +5894,18 @@ The package also includes a node for assembling Laserscan(LaserScan to PointClou
 
 <h6 id="subscribed-topics-6">Subscribed Topics</h6>
 
-<p><code class="highlighter-rouge">/robotis/manipulation_demo/command</code> (<a href="http://docs.ros.org/api/std_msgs/html/msg/String.html">std_msgs/String</a>)<br />
+<p><code class="highlighter-rouge">/robotis/manipulation_demo/command</code> (<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
   The topic to run various Manipulation simple demo commands.</p>
 
 <h6 id="published-topics-7">Published Topics</h6>
 
-<p><code class="highlighter-rouge">/robotis/base/ini_pose</code>(<a href="http://docs.ros.org/api/std_msgs/html/msg/String.html">std_msgs/String</a>)<br />
+<p><code class="highlighter-rouge">/robotis/base/ini_pose</code>(<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
   The topic to take initial posture of the Base Module</p>
 
-<p><code class="highlighter-rouge">/robotis/enable_ctrl_module</code>(<a href="http://docs.ros.org/api/std_msgs/html/msg/String.html">std_msgs/String</a>)<br />
+<p><code class="highlighter-rouge">/robotis/enable_ctrl_module</code>(<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
   The topic to set upper body of the robot with the Manipulation Module</p>
 
-<p><code class="highlighter-rouge">/robotis/manipulation/ini_pose_msg</code>(<a href="http://docs.ros.org/api/std_msgs/html/msg/String.html">std_msgs/String</a>)<br />
+<p><code class="highlighter-rouge">/robotis/manipulation/ini_pose_msg</code>(<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
   The topic to take initial posture of the Manipulation Module</p>
 
 <p><code class="highlighter-rouge">/robotis/manipulation/kinematics_pose_msg</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/KinematicsPose.msg">thormang3_manipulation_module_msgs/KinematicsPose</a>)<br />
@@ -5920,15 +5930,15 @@ The package also includes a node for assembling Laserscan(LaserScan to PointClou
 <p><code class="highlighter-rouge">/robotis/status</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/StatusMsg.msg">robotis_controller_msgs/StatusMsg</a>)<br />
   Status message of THORMANG3</p>
 
-<p><code class="highlighter-rouge">robotis/walking_demo/command</code>(<a href="http://docs.ros.org/api/std_msgs/html/msg/String.html">std_msgs/String</a>)<br />
+<p><code class="highlighter-rouge">robotis/walking_demo/command</code>(<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
   Command for walking simple demo</p>
 
 <h6 id="published-topics-8">Published Topics</h6>
 
-<p><code class="highlighter-rouge">robotis/base/ini_pose</code>(<a href="http://docs.ros.org/api/std_msgs/html/msg/String.html">std_msgs/String</a>)<br />
+<p><code class="highlighter-rouge">robotis/base/ini_pose</code>(<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
   The command delivered to the thormang3_base_module to take the initial posture.</p>
 
-<p><code class="highlighter-rouge">/robotis/enable_ctrl_module</code>(<a href="http://docs.ros.org/api/std_msgs/html/msg/String.html">std_msgs/String</a>)<br />
+<p><code class="highlighter-rouge">/robotis/enable_ctrl_module</code>(<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
   The topic to set lower body of the robot with the Walking Module.</p>
 
 <h6 id="services-called-1">Services Called</h6>
@@ -6058,16 +6068,16 @@ module_button : Modules to configure with the manager (index : module name)</p>
 <p><code class="highlighter-rouge">/robotis/set_joint_ctrl_modules</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/JointCtrlModule.msg">robotis_controller_msgs/JointCtrlModule</a>)<br />
   Configuring each joint modules (configure for each joint, Not recommended to use)</p>
 
-<p><code class="highlighter-rouge">/robotis/enable_ctrl_module</code>(<a href="http://docs.ros.org/api/std_msgs/html/msg/String.html">std_msgs/String</a>)<br />
+<p><code class="highlighter-rouge">/robotis/enable_ctrl_module</code>(<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
   Configure modules to control</p>
 
-<p><code class="highlighter-rouge">/robotis/base/ini_pose</code>(<a href="http://docs.ros.org/api/std_msgs/html/msg/String.html">std_msgs/String</a>)<br />
+<p><code class="highlighter-rouge">/robotis/base/ini_pose</code>(<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
   Initial posture of Thormang3</p>
 
-<p><code class="highlighter-rouge">/robotis/feet_ft/ft_calib_command</code>(<a href="http://docs.ros.org/api/std_msgs/html/msg/String.html">std_msgs/String</a>)<br />
+<p><code class="highlighter-rouge">/robotis/feet_ft/ft_calib_command</code>(<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
   FT Calibration related command</p>
 
-<p><code class="highlighter-rouge">/robotis/head_control/move_lidar</code>(<a href="http://docs.ros.org/api/std_msgs/html/msg/String.html">std_msgs/String</a>)<br />
+<p><code class="highlighter-rouge">/robotis/head_control/move_lidar</code>(<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
   Head movement command for assembling LaserScan.</p>
 
 <p><code class="highlighter-rouge">/robotis/head_control/set_joint_states</code>(<a href="http://docs.ros.org/api/sensor_msgs/html/msg/JointState.html">sensor_msgs/JointState</a>)<br />
@@ -6076,7 +6086,7 @@ module_button : Modules to configure with the manager (index : module name)</p>
 <p><code class="highlighter-rouge">/robotis/demo/foot_step_marker</code>(<a href="http://docs.ros.org/api/visualization_msgs/html/msg/MarkerArray.html">visualization_msgs/MarkerArray</a>)<br />
   Visualized footstep messages created by <a href="http://wiki.ros.org/action/fullsearch/footstep_planner">footstep_planner</a></p>
 
-<p><code class="highlighter-rouge">/robotis/manipulation/ini_pose_msg</code>(<a href="http://docs.ros.org/api/std_msgs/html/msg/String.html">std_msgs/String</a>)<br />
+<p><code class="highlighter-rouge">/robotis/manipulation/ini_pose_msg</code>(<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
   Initial posture command for Manipulation</p>
 
 <p><code class="highlighter-rouge">/robotis/manipulation/joint_pose_msg</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/JointPose.msg">thormang3_manipulation_module_msgs/JointPose</a>)<br />
@@ -6159,7 +6169,7 @@ Because <a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Utility">ros_mpg321_play
 
 <h4 id="ros-api-11">ROS API</h4>
 <h5 id="subscribed-topics-9">Subscribed Topics</h5>
-<p><code class="highlighter-rouge">/robotis/demo/action_index</code>(<a href="http://docs.ros.org/api/std_msgs/html/msg/Int32.html">std_msgs/Int32</a>)<br />
+<p><code class="highlighter-rouge">/robotis/demo/action_index</code>(<a href="/docs/en/popup/std_msgs_int32_message/" class="popup">std_msgs/Int32</a>)<br />
   The action script number to play.</p>
 
 <h5 id="parameters-1">Parameters</h5>
@@ -6306,7 +6316,7 @@ It is used with the <a href="/docs/en/platform/thormang3/thormang3_ros_packages/
 <h4 id="ros-api-14">ROS API</h4>
 
 <h5 id="subscribed-topics-11">Subscribed Topics</h5>
-<p><code class="highlighter-rouge">/robotis/base/send_tra</code>(<a href="http://docs.ros.org/api/std_msgs/html/msg/String.html">std_msgs/String</a>)<br />
+<p><code class="highlighter-rouge">/robotis/base/send_tra</code>(<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
   The topic informs the start and end of trajectory following.</p>
 
 <p><code class="highlighter-rouge">/robotis/offset_tuner/joint_offset_data</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/JointOffsetData.msg">thormang3_offset_tuner_msgs/JointOffsetData</a>)<br />
@@ -6315,7 +6325,7 @@ It is used with the <a href="/docs/en/platform/thormang3/thormang3_ros_packages/
 <p><code class="highlighter-rouge">/robotis/offset_tuner/torque_enable</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/JointTorqueOnOffArray.msg">thormang3_offset_tuner_msgs/JointTorqueOnOffArray</a>)<br />
   The topic transfers Torque enable/disable command for joints.</p>
 
-<p><code class="highlighter-rouge">/robotis/offset_tuner/command</code>(<a href="http://docs.ros.org/api/std_msgs/html/msg/String.html">std_msgs/String</a>)<br />
+<p><code class="highlighter-rouge">/robotis/offset_tuner/command</code>(<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
   The topic transfers command to the <a href="/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3-offset-tuner-client">thormang3_offset_tuner_client</a>.</p>
 <ul>
   <li>“save”     : Saves current offset to yaml</li>
