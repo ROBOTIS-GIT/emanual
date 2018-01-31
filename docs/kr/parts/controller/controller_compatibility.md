@@ -1,19 +1,19 @@
 ---
 layout: archive
-lang: en
+lang: kr
 ref: controller_compatibility
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/parts/controller/controller_compatibility/
+permalink: /docs/kr/parts/controller/controller_compatibility/
 sidebar:
-  title: Controller compatibility
+  title: 제어기 호환표
   nav: "controller_compatibility"
 ---
 
-# Supported Baudrates for Dynamixel
+# 다이나믹셀을 지원하는 통신속도
 
-|Baudrate(bps)|[CM-5][cm-5]|[CM-510][cm-510]|[CM-530][cm-530]|[CM-700][cm-700]|[CM-900][cm-900]|[OpenCM9.04][opencm9.04]|[OpenCR][opencr]|
+|통신속도(bps)|[CM-5][cm-5]|[CM-510][cm-510]|[CM-530][cm-530]|[CM-700][cm-700]|[CM-900][cm-900]|[OpenCM9.04][opencm9.04]|[OpenCR][opencr]|
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 |9600|O|O|O|O|O|O|O|
 |57600|O|O|O|O|O|O|O|
@@ -24,11 +24,11 @@ sidebar:
 |4M|X|X|X|X|X|X|O|
 |4.5M|X|X|X|X|X|X|O|
 
-# Compatibility
+# 호환표
 
-## Dynamixel
+## 다이나믹셀
 
-|Model|[CM-100][cm-100]|[CM-150][cm-150]|[CM-200][cm-200]|[CM-5][cm-5]|[CM-510][cm-510]|[CM-530][cm-530]|[CM-700][cm-700]|[CM-900][cm-900]|[OpenCM9.04][opencm9.04]<br>(+[485 EXP][exp485])|
+|모델|[CM-100][cm-100]|[CM-150][cm-150]|[CM-200][cm-200]|[CM-5][cm-5]|[CM-510][cm-510]|[CM-530][cm-530]|[CM-700][cm-700]|[CM-900][cm-900]|[OpenCM9.04][opencm9.04]<br>(+[485 EXP][exp485])|
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 |AX-Series|X|X|X|O|O|O|O|O|O(O)|
 |DX-Series|X|X|X|X|X|X|O|O|X(O)|
@@ -40,9 +40,9 @@ sidebar:
 |XH-Series|X|X|X|X|X|X|X|X|X(O)|
 |XL-320|X|X|X|X|X|X|X|O|O(X)|
 
-## Parts
+## 부품
 
-|Model|[CM-100][cm-100]|[CM-150][cm-150]|[CM-200][cm-200]|[CM-5][cm-5]|[CM-510][cm-510]|[CM-530][cm-530]|[CM-700][cm-700]|[CM-900][cm-900]|[OpenCM9.04][opencm9.04]<br>(+[485 EXP][exp485])|
+|모델|[CM-100][cm-100]|[CM-150][cm-150]|[CM-200][cm-200]|[CM-5][cm-5]|[CM-510][cm-510]|[CM-530][cm-530]|[CM-700][cm-700]|[CM-900][cm-900]|[OpenCM9.04][opencm9.04]<br>(+[485 EXP][exp485])|
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 |Bioloid Serial Cable|X|X|X|O|O|X|X|X|X|
 |Mini USB|X|X|X|X|X|O|X|X|X|
@@ -51,7 +51,7 @@ sidebar:
 |IRSS-10|O|O|O|X|O|O|O|X|O(O)|
 |TS-10|O|O|O|X|O|O|O|X|O(O)|
 |DMS-80|X|X|X|X|O|O|O|X|O(O)|
-|IR Array|X|X|X|O|O|O|O|O|O(O)|
+|IR 어레이|X|X|X|O|O|O|O|O|O(O)|
 |GS-12|X|X|X|X|O|O|O|X|O(O)|
 |CS-10|X|O|O|X|X|O|X|X|O(O)|
 |MGSS-10|X|O|O|X|X|O|X|X|O(O)|
@@ -60,10 +60,10 @@ sidebar:
 |AX-S1|X|X|X|O|O|O|O|O|O(O)|
 |SM-10|O|O|O|X|X|O|X|X|X|
 |GM-10A|O|O|O|X|X|X|X|X|X|
-|H-Spd Geared Motor|O|O|X|X|X|X|X|X|X|
-|L-Spd Geared Motor|O|O|X|X|X|X|X|X|X|
+|고속 감속 모터|O|O|X|X|X|X|X|X|X|
+|저속 감속 모터|O|O|X|X|X|X|X|X|X|
 |LM-10|O|O|O|X|X|O|X|X|O(O)|
-|IR Receiver|O|O|X|X|O|O|O|X|X|
+|적외선 수신기|O|O|X|X|O|O|O|X|X|
 |ZIG-100|X|X|X|O|X|X|X|X|X|
 |ZIG-110A|O|O|O|X|O|O|O|O|O(O)|
 |BT-110A|O|O|O|X|O|O|O|O|O(O)|
@@ -76,16 +76,16 @@ sidebar:
 |ABB-030|X|X|O|X|X|X|X|X|X|
 |LFU-10|X|X|X|X|O|O|O|X|X|
 |FU-5|X|X|X|O|X|X|X|X|X|
-|User Device|X|X|X|X|O|O|O|O|O(O)|
+|사용자 장치|X|X|X|X|O|O|O|O|O(O)|
 
-## Software
+## 소프트웨어
 
-|Model|[CM-100][cm-100]|[CM-150][cm-150]|[CM-200][cm-200]|[CM-5][cm-5]|[CM-510][cm-510]|[CM-530][cm-530]|[CM-700][cm-700]|[CM-900][cm-900]|[OpenCM9.04][opencm9.04]<br>(+[485 EXP][exp485])|
+|모델|[CM-100][cm-100]|[CM-150][cm-150]|[CM-200][cm-200]|[CM-5][cm-5]|[CM-510][cm-510]|[CM-530][cm-530]|[CM-700][cm-700]|[CM-900][cm-900]|[OpenCM9.04][opencm9.04]<br>(+[485 EXP][exp485])|
 | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: |
 |R+ 1.0|O|O|O|O|O|O|O|X|O(X)|
 |R+ 2.0|O|O|O|O|O|O|O|X|O(X)|
 |OpenCM IDE|X|X|X|X|X|X|X|X|O|
-|Scratch2.0|X|O|X|X|X|X|X|X|X|
+|스크래치2.0|X|O|X|X|X|X|X|X|X|
 
 
 [ln-101]: /docs/en/parts/interface/ln-101/

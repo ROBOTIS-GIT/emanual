@@ -211,7 +211,7 @@ The motion file is edited with thormang3_action_editor
 #### ROS API
 
 ##### Subscribed Topics  
-  - `/robotis/action/page_num`([std_msgs/Int32])  
+  - `/robotis/action/page_num`([std_msgs/Int32]{: .popup})  
     The page number will be played.  
     If user send a page number between 1 ~ 255, the page will be played.  
     If user send -1, the action will be stopped.  
@@ -245,11 +245,11 @@ The motion file is edited with thormang3_action_editor
 #### ROS API
 
 ##### Subscribed Topics
-  - `/robotis/base/ini_pose`([std_msgs/String])  
+  - `/robotis/base/ini_pose`([std_msgs/String]{: .popup})  
     A command to take the initial posture(This command is effective even when the base module is inactive).
 
 ##### Published Topics
-  - `/robotis/enable_ctrl_module`([std_msgs/String])  
+  - `/robotis/enable_ctrl_module`([std_msgs/String]{: .popup})  
     A base_module activation topic to take the initial posture.
 
   - `/robotis/status`([robotis_controller_msgs/StatusMsg])  
@@ -268,7 +268,7 @@ THORMANG3 manipulation module for the upper body.
 #### ROS API
 
 ##### Subscribed Topics
-  - `/robotis/manipulation/ini_pose_msg` ([std_msgs/String])  
+  - `/robotis/manipulation/ini_pose_msg` ([std_msgs/String]{: .popup})  
     A message to take the initial posture.
 
   - `/robotis/manipulation/joint_pose_msg` ([thormang3_manipulation_module_msgs/JointPose])  
@@ -357,7 +357,7 @@ This module is to control the head. This module is included in the Thormang3 Man
 
 ##### Subscribed Topics
 
-  - `/robotis/head_control/move_lidar`([std_msgs/String])  
+  - `/robotis/head_control/move_lidar`([std_msgs/String]{: .popup})  
     The command moves the head in order to obtain Lidar data.
 
   - `/robotis/head_control/move_lidar_with_range`([std_msgs/Float64])  
@@ -371,7 +371,7 @@ This module is to control the head. This module is included in the Thormang3 Man
 
 ##### Published Topics
 
-  - `/robotis/sensor/move_lidar`([std_msgs/String])  
+  - `/robotis/sensor/move_lidar`([std_msgs/String]{: .popup})  
     This message reports the head movement to the Node which assembles LiDAR data.
 
   - `/robotis/status`([robotis_controller_msgs/StatusMsg])  
@@ -549,7 +549,7 @@ Acquired sensor values when the robot is hanging on the lift and standing on the
 #### ROS API
 
 1. Subscribed Topics
-  - `/robotis/feet_ft/ft_calib_command` ([std_msgs/String])  
+  - `/robotis/feet_ft/ft_calib_command` ([std_msgs/String]{: .popup})  
     FT Calibration Command
 
 2. Published Topics
@@ -1334,7 +1334,7 @@ $ roslaunch thormang3_sensors thormang3_sensors.launch
 
 ##### Subscribed Topics
 
-`/robotis/sensor/move_lidar`([std_msgs/String])  
+`/robotis/sensor/move_lidar`([std_msgs/String]{: .popup})  
   Configures start and end time to assemble LaserScan  
   Set the start time when receiving start message.  
   Set the end time and assemble Pointcloud when receiving end message.
@@ -1368,18 +1368,18 @@ Reference : Manipulation Simple Demo from [How to execute Simple Demonstration]
 
 ###### Subscribed Topics
 
-`/robotis/manipulation_demo/command` ([std_msgs/String])  
+`/robotis/manipulation_demo/command` ([std_msgs/String]{: .popup})  
   The topic to run various Manipulation simple demo commands.
 
 ###### Published Topics
 
-`/robotis/base/ini_pose`([std_msgs/String])  
+`/robotis/base/ini_pose`([std_msgs/String]{: .popup})  
   The topic to take initial posture of the Base Module
 
-`/robotis/enable_ctrl_module`([std_msgs/String])  
+`/robotis/enable_ctrl_module`([std_msgs/String]{: .popup})  
   The topic to set upper body of the robot with the Manipulation Module
 
-`/robotis/manipulation/ini_pose_msg`([std_msgs/String])  
+`/robotis/manipulation/ini_pose_msg`([std_msgs/String]{: .popup})  
   The topic to take initial posture of the Manipulation Module
 
 `/robotis/manipulation/kinematics_pose_msg`([thormang3_manipulation_module_msgs/KinematicsPose])  
@@ -1405,15 +1405,15 @@ Thormang3 Walking simple demonstration
 `/robotis/status`([robotis_controller_msgs/StatusMsg])  
   Status message of THORMANG3
 
-`robotis/walking_demo/command`([std_msgs/String])  
+`robotis/walking_demo/command`([std_msgs/String]{: .popup})  
   Command for walking simple demo
 
 ###### Published Topics
 
-`robotis/base/ini_pose`([std_msgs/String])  
+`robotis/base/ini_pose`([std_msgs/String]{: .popup})  
   The command delivered to the thormang3_base_module to take the initial posture.
 
-`/robotis/enable_ctrl_module`([std_msgs/String])  
+`/robotis/enable_ctrl_module`([std_msgs/String]{: .popup})  
   The topic to set lower body of the robot with the Walking Module.
 
 ###### Services Called
@@ -1523,16 +1523,16 @@ $ roslaunch thormang3_demo thormang3_demo.launch
 `/robotis/set_joint_ctrl_modules`([robotis_controller_msgs/JointCtrlModule])  
   Configuring each joint modules (configure for each joint, Not recommended to use)
 
-`/robotis/enable_ctrl_module`([std_msgs/String](http://docs.ros.org/api/std_msgs/html/msg/String.html))  
+`/robotis/enable_ctrl_module`([std_msgs/String]{: .popup})  
   Configure modules to control
 
-`/robotis/base/ini_pose`([std_msgs/String](http://docs.ros.org/api/std_msgs/html/msg/String.html))  
+`/robotis/base/ini_pose`([std_msgs/String]{: .popup})  
   Initial posture of Thormang3
 
-`/robotis/feet_ft/ft_calib_command`([std_msgs/String](http://docs.ros.org/api/std_msgs/html/msg/String.html))  
+`/robotis/feet_ft/ft_calib_command`([std_msgs/String]{: .popup})  
   FT Calibration related command
 
-`/robotis/head_control/move_lidar`([std_msgs/String](http://docs.ros.org/api/std_msgs/html/msg/String.html))  
+`/robotis/head_control/move_lidar`([std_msgs/String]{: .popup})  
   Head movement command for assembling LaserScan.
 
 `/robotis/head_control/set_joint_states`([sensor_msgs/JointState])  
@@ -1541,7 +1541,7 @@ $ roslaunch thormang3_demo thormang3_demo.launch
 `/robotis/demo/foot_step_marker`([visualization_msgs/MarkerArray](http://docs.ros.org/api/visualization_msgs/html/msg/MarkerArray.html))  
   Visualized footstep messages created by [footstep_planner](http://wiki.ros.org/action/fullsearch/footstep_planner)
 
-`/robotis/manipulation/ini_pose_msg`([std_msgs/String](http://docs.ros.org/api/std_msgs/html/msg/String.html))  
+`/robotis/manipulation/ini_pose_msg`([std_msgs/String]{: .popup})  
   Initial posture command for Manipulation
 
 `/robotis/manipulation/joint_pose_msg`([thormang3_manipulation_module_msgs/JointPose])  
@@ -1621,7 +1621,7 @@ There are below four cmd_name in the action script.
 
 #### ROS API  
 ##### Subscribed Topics  
-`/robotis/demo/action_index`([std_msgs/Int32])  
+`/robotis/demo/action_index`([std_msgs/Int32]{: .popup})  
   The action script number to play.  
 
 ##### Parameters  
@@ -1753,7 +1753,7 @@ $ roslaunch thormang3_offset_tuner_server thormang3_offset_tuner_server.launch
 #### ROS API
 
 ##### Subscribed Topics
-`/robotis/base/send_tra`([std_msgs/String])  
+`/robotis/base/send_tra`([std_msgs/String]{: .popup})  
   The topic informs the start and end of trajectory following.  
 
 `/robotis/offset_tuner/joint_offset_data`([thormang3_offset_tuner_msgs/JointOffsetData])  
@@ -1762,7 +1762,7 @@ $ roslaunch thormang3_offset_tuner_server thormang3_offset_tuner_server.launch
 `/robotis/offset_tuner/torque_enable`([thormang3_offset_tuner_msgs/JointTorqueOnOffArray])  
   The topic transfers Torque enable/disable command for joints.
 
-`/robotis/offset_tuner/command`([std_msgs/String](http://docs.ros.org/api/std_msgs/html/msg/String.html))  
+`/robotis/offset_tuner/command`([std_msgs/String]{: .popup})  
   The topic transfers command to the [thormang3_offset_tuner_client].  
   - "save"     : Saves current offset to yaml  
   - "ini_pose" : Take the initial posture for offset tuning  
@@ -1968,8 +1968,8 @@ The following are Messages and Service used for the thormang3_offset_tuner_serve
 [MPC Installation]: /docs/en/platform/thormang3/getting_started/#mpc-installation
 [PPC Installation]: /docs/en/platform/thormang3/getting_started/#ppc-installation
 [OPC Installation]: /docs/en/platform/thormang3/getting_started/#opc-installation
-[std_msgs/Int32]: http://docs.ros.org/api/std_msgs/html/msg/Int32.html
-[std_msgs/String]: http://docs.ros.org/api/std_msgs/html/msg/String.html
+[std_msgs/Int32]: /docs/en/popup/std_msgs_int32_message/
+[std_msgs/String]: /docs/en/popup/std_msgs_string/
 [thormang3_action_module_msgs/StartAction]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/StartAction.msg
 [StartAction.msg]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/StartAction.msg
 [robotis_controller_msgs/StatusMsg]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/StatusMsg.msg

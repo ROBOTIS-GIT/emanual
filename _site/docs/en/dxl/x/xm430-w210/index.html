@@ -170,6 +170,16 @@ $(function() {
         }
       }
     </script>
+    <script>
+    $(document).ready(function() {
+
+    	$('.popup').magnificPopup({
+    		type: 'ajax',
+    		alignTop: true,
+    		overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
+    	});
+    });
+    </script>
   </head>
 
   <body class="layout--archive">
@@ -211,7 +221,7 @@ $(function() {
         <button class="switch_ko_en" id="switch_ko_en">
           
             
-              N/A
+              
             
           
       </div>

@@ -32,9 +32,9 @@
         <button class="switch_ko_en" id="switch_ko_en">
           {% for switch in pages %}
             {% if page.lang=='kr' %}
-              {% if switch.lang=='en' %}<a href="{{ switch.url | absolute_url }}" style="color: black;">English</a></button>{% else %}N/A{% endif %}
+              {% if switch.lang=='en' %}<a href="{{ switch.url | absolute_url }}" style="color: black;">English</a></button>{% else %}{% endif %}
             {% else %}
-              {% if switch.lang=='kr' %}<a href="{{ switch.url | absolute_url }}" style="color: black;">Korean</a></button>{% else %}N/A{% endif %}
+              {% if switch.lang=='kr' %}<a href="{{ switch.url | absolute_url }}" style="color: black;">Korean</a></button>{% else %}{% endif %}
             {% endif %}
           {% endfor %}
       </div>
