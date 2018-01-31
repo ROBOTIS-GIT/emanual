@@ -31,8 +31,8 @@ sidebar:
 
 - Control Panel
 
-![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/labview/windows/sample_code/ping2/ping2.png)
+  ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/labview/windows/sample_code/ping2/ping2.png)
 
 - Block Diagram
 
-![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/labview/windows/sample_code/ping2/block_diagram.png)
+  ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/labview/windows/sample_code/ping2/block_diagram.png)

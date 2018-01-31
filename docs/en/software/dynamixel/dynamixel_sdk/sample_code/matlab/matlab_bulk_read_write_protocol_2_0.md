@@ -29,7 +29,7 @@ sidebar:
 
   All series using protocol 2.0
 
-- Code
+#### Sample code
 
 
 ``` m
@@ -270,7 +270,7 @@ clear all;
 
 
 
-- Details
+#### Details
 
 ``` m
 % Load Libraries

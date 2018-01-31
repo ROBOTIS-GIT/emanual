@@ -28,10 +28,10 @@ sidebar:
 
   Protocol 1.0 Dynamixels
 
-* Code
+#### Sample code
 
 
-``` cpp
+```c
 /*
 * sync_write.c
 *
@@ -313,9 +313,9 @@ int main()
 
 
 
-- Details
+#### Details
 
-``` cpp
+```c
 #ifdef __linux__
 #include <unistd.h>
 #include <fcntl.h>
@@ -327,25 +327,25 @@ int main()
 
 This source includes above to get key input interruption while the example is running. Actual functions for getting the input is described in a little below.
 
-``` cpp
+```c
 #include <stdlib.h>
 ```
 
 The function `abs()` is in the example code, and it needs `stdlib.h` to be included.
 
-``` cpp
+```c
 #include <stdio.h>
 ```
 
 The example shows Dynamixel status in sequence by the function `printf()`. So here `stdio.h` is needed.
 
-``` cpp
+```c
 #include "dynamixel_sdk.h"                                   // Uses Dynamixel SDK library
 ```
 
 All libraries of Dynamixel SDK are linked with the header file `dynamixel_sdk.h`.
 
-``` cpp
+```c
 // Control table address
 #define ADDR_MX_TORQUE_ENABLE           24                  // Control table address is different in Dynamixel model
 #define ADDR_MX_GOAL_POSITION           30
@@ -358,14 +358,14 @@ All libraries of Dynamixel SDK are linked with the header file `dynamixel_sdk.h`
 
 Dynamixel series have their own control tables: Addresses and Byte Length in each items. To control one of the items, its address (and length if necessary) is required. Find your requirements in http://support.robotis.com/.
 
-``` cpp
+```c
 // Protocol version
 #define PROTOCOL_VERSION                1.0                 // See which protocol version is used in the Dynamixel
 ```
 
 Dynamixel uses either or both protocols: Protocol 1.0 and Protocol 2.0. Choose one of the Protocol which is appropriate in the Dynamixel.
 
-``` cpp
+```c
 // Default setting
 #define DXL1_ID                         1                   // Dynamixel#1 ID: 1
 #define DXL2_ID                         2                   // Dynamixel#2 ID: 2
@@ -393,7 +393,7 @@ Since the Dynamixel has its own rotation range, it may shows malfunction if your
 
 `DXL_MOVING_STATUS_THRESHOLD` acts as a criteria for verifying its rotation stopped.
 
-``` cpp
+```c
 int getch()
 {
 #ifdef __linux__
@@ -445,7 +445,7 @@ int kbhit(void)
 
 These functions accept the key inputs in terms of example action. The example codes mainly apply the function `getch()` rather than the function `kbhit()` to get information which key has been pressed.
 
-``` cpp
+```c
 int main()
 {
   // Initialize PortHandler Structs
@@ -625,7 +625,7 @@ In `main()` function, the codes call actual functions for Dynamixel control.
 
 
 
-``` cpp
+```c
   // Initialize PortHandler Structs
   // Set the port path
   // Get methods and members of PortHandlerLinux or PortHandlerWindows
@@ -634,7 +634,7 @@ In `main()` function, the codes call actual functions for Dynamixel control.
 
 `portHandler()` function sets port path as `DEVICENAME` and get `port_num`, and prepares an appropriate functions for port control in controller OS automatically. `port_num` would be used in many functions in the body of the code to specify the port for use.
 
-``` cpp
+```c
   // Initialize PacketHandler Structs
   packetHandler();
 ```
@@ -642,14 +642,14 @@ In `main()` function, the codes call actual functions for Dynamixel control.
 `packetHandler()` function initializes parameters used for packet construction and packet storing.
 
 
-``` cpp
+```c
   // Initialize Groupsyncwrite instance
   int group_num = groupSyncWrite(port_num, PROTOCOL_VERSION, ADDR_MX_GOAL_POSITION, LEN_MX_GOAL_POSITION);
 ```
 
 `groupSyncWrite()` function initializes grouped parameters used for packet construction and packet storing. The utility functions of sync write deals simultaneously with more than one Dynamixel through #`port_num` port, building packets by the function which uses `PROTOCOL_VERSION`, and writing `LEN_MX_GOAL_POSITION` bytes of the values on the address `ADDR_MX_GOAL_POSITION`.
 
-``` cpp
+```c
   int index = 0;
   int dxl_comm_result = COMM_TX_FAIL;             // Communication result
   bool dxl_addparam_result = false;                // AddParam result
@@ -671,7 +671,7 @@ In `main()` function, the codes call actual functions for Dynamixel control.
 
 `dxl1_present_position` and `dxl2_present_position` view where now each Dynamixel points out.
 
-``` cpp
+```c
   // Open port
   if (openPort(port_num))
   {
@@ -688,7 +688,7 @@ In `main()` function, the codes call actual functions for Dynamixel control.
 
 First, controller opens #`port_num` port to do serial communication with the Dynamixel. If it fails to open the port, the example will be terminated.
 
-``` cpp
+```c
   // Set port baudrate
   if (setBaudRate(port_num, BAUDRATE))
   {
@@ -706,7 +706,7 @@ First, controller opens #`port_num` port to do serial communication with the Dyn
 Secondly, the controller sets the communication `BAUDRATE` at #`port_num` port opened previously.
 
 
-``` cpp
+```c
   // Enable Dynamixel#1 Torque
   write1ByteTxRx(port_num, PROTOCOL_VERSION, DXL1_ID, ADDR_MX_TORQUE_ENABLE, TORQUE_ENABLE);
   if ((dxl_comm_result = getLastTxRxResult(port_num, PROTOCOL_VERSION)) != COMM_SUCCESS)
@@ -743,7 +743,7 @@ As mentioned in the document, above code enables each Dynamixel`s torque to set 
 `write1ByteTxRx()` function orders to the #`DXL1_ID` and #`DXL2_ID` Dynamixels in `PROTOCOL_VERSION` communication protocol through #`port_num` port, writing 1 byte of `TORQUE_ENABLE` value to `ADDR_MX_TORQUE_ENABLE` address. The function checks Tx/Rx result and receives Hardware error.
 `getLastTxRxResult()` function and `getLastRxPacketError()` function get either, and then `printTxRxResult()` function and `printRxPacketError()` function show results on the console window if any communication error or Hardware error has been occurred.
 
-``` cpp
+```c
   while (1)
   {
     printf("Press any key to continue! (or press ESC to quit!)\n");
@@ -832,7 +832,7 @@ Reading their present position will be ended when absolute value of `(dxl_goal_p
 
 At last, it changes their direction to the counter-wise and waits for extra key input.
 
-``` cpp
+```c
   // Disable Dynamixel#1 Torque
   write1ByteTxRx(port_num, PROTOCOL_VERSION, DXL1_ID, ADDR_MX_TORQUE_ENABLE, TORQUE_DISABLE);
   if ((dxl_comm_result = getLastTxRxResult(port_num, PROTOCOL_VERSION)) != COMM_SUCCESS)
@@ -861,7 +861,7 @@ The controller frees the Dynamixels to be idle.
 `write1ByteTxRx()` function orders to the #`DXL1_ID` and #`DXL2_ID` Dynamixels in `PROTOCOL_VERSION` communication protocol through #`port_num` port, writing 1 byte of `TORQUE_DISABLE` value to `ADDR_MX_TORQUE_ENABLE` address. The function checks Tx/Rx result and receives Hardware error.
 `getLastTxRxResult()` function and `getLastRxPacketError()` function get either, and then `printTxRxResult()` function and `printRxPacketError()` function show results on the console window if any communication error or Hardware error has been occurred.
 
-``` cpp
+```c
   // Close port
   closePort(port_num);
 

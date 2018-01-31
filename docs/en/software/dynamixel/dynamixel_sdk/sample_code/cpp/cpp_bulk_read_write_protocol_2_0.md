@@ -29,7 +29,7 @@ sidebar:
 
   All series using protocol 2.0
 
-- Code
+#### Sample code
 
 
 ``` cpp
@@ -351,7 +351,7 @@ int main()
 
 
 
-- Details
+#### Details
 
 ``` cpp
 #ifdef __linux__

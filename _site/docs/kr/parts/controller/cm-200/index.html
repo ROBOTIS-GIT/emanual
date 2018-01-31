@@ -160,12 +160,12 @@ $(function() {
       function extendgoogletool() {
         if (toggle_google == 0) {
           google_tools.classList.add("extend_googletools");
-          // switch_ko_en.classList.add("show_switch_ko_en");
+          switch_ko_en.classList.add("show_switch_ko_en");
           toggle_google = 1;
         }
         else {
           google_tools.classList.remove("extend_googletools");
-          // switch_ko_en.classList.remove("show_switch_ko_en");
+          switch_ko_en.classList.remove("show_switch_ko_en");
           toggle_google = 0;
         }
       }
@@ -208,7 +208,6 @@ $(function() {
         <!-- end of Google Translation -->  
         
         
-        <!-- Korean - English Translation Button
         <button class="switch_ko_en" id="switch_ko_en">
           
             
@@ -216,10 +215,9 @@ $(function() {
             
           
             
-              
+              N/A
             
           
-          Korean - English Translation Button -->
       </div>
       
       <input class="menu-btn" type="checkbox" id="menu-btn" />
@@ -1112,6 +1110,10 @@ $(function() {
                       
                     
                       
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/software/dynamixel/dynamixel_workbench/" class="">다이나믹셀 워크벤치</a>
+                        </li>
                       
                     
                     </ul>
@@ -2686,6 +2688,9 @@ $(function() {
                   
 
                   
+                    
+                      <a href="http://localhost:4000/docs/kr/software/dynamixel/dynamixel_workbench/">다이나믹셀 워크벤치</a>
+                    
                 
               </div>
               
@@ -3466,7 +3471,7 @@ $(function() {
     
 
     <li>
-      <a href="http://localhost:4000/docs/kr/parts/controller/cm-150/#connect-to-smartphone" onclick="extendnav()">Connect to Smartphone</a>
+      <a href="http://localhost:4000/docs/kr" onclick="extendnav()"></a>
     </li>
     
 
@@ -3478,7 +3483,7 @@ $(function() {
     
 
     <li>
-      <a href="http://localhost:4000/docs/kr/parts/controller/cm-150/#connect-to-pc" onclick="extendnav()">Connect to PC</a>
+      <a href="http://localhost:4000/docs/kr" onclick="extendnav()"></a>
     </li>
     
 
@@ -3490,7 +3495,7 @@ $(function() {
     
 
     <li>
-      <a href="http://localhost:4000/docs/kr/parts/controller/cm-150/#wireless-communication" onclick="extendnav()">Wireless Communication</a>
+      <a href="http://localhost:4000/docs/kr" onclick="extendnav()"></a>
     </li>
     
 
@@ -3503,7 +3508,7 @@ $(function() {
 
     <li class="has-children">
       <input type="radio" name="toplevel" id="toplevel_9" >
-      <label for="toplevel_9">초급 사용자 &loz;</label>
+      <label for="toplevel_9">초급 사용자 [+]</label>
     
 
     
@@ -3565,7 +3570,7 @@ $(function() {
 
     <li class="has-children">
       <input type="radio" name="toplevel" id="toplevel_10" >
-      <label for="toplevel_10">고급 사용자 &loz;</label>
+      <label for="toplevel_10">고급 사용자 [+]</label>
     
 
     
@@ -3594,7 +3599,7 @@ $(function() {
 
     <li class="has-children">
       <input type="radio" name="toplevel" id="toplevel_11" >
-      <label for="toplevel_11">관리하기 &loz;</label>
+      <label for="toplevel_11">관리하기 [+]</label>
     
 
     

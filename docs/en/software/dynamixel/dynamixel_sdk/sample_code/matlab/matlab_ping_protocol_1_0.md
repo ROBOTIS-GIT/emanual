@@ -29,7 +29,7 @@ sidebar:
 
   All series using protocol 1.0
 
-- Code Parts
+#### Sample code Parts
 
 
 ``` m
@@ -126,7 +126,7 @@ clear all;
 
 
 
-- Details
+#### Details
 
 ``` m
 % Load Libraries

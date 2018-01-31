@@ -160,12 +160,12 @@ $(function() {
       function extendgoogletool() {
         if (toggle_google == 0) {
           google_tools.classList.add("extend_googletools");
-          // switch_ko_en.classList.add("show_switch_ko_en");
+          switch_ko_en.classList.add("show_switch_ko_en");
           toggle_google = 1;
         }
         else {
           google_tools.classList.remove("extend_googletools");
-          // switch_ko_en.classList.remove("show_switch_ko_en");
+          switch_ko_en.classList.remove("show_switch_ko_en");
           toggle_google = 0;
         }
       }
@@ -208,18 +208,16 @@ $(function() {
         <!-- end of Google Translation -->  
         
         
-        <!-- Korean - English Translation Button
         <button class="switch_ko_en" id="switch_ko_en">
           
             
-              
+              N/A
             
           
             
               <a href="http://localhost:4000/docs/kr/" style="color: black;">Korean</a></button>
             
           
-          Korean - English Translation Button -->
       </div>
       
       <input class="menu-btn" type="checkbox" id="menu-btn" />
@@ -957,7 +955,7 @@ $(function() {
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/software/dynamixel/dynamixel_workbench/dynamixel_workbench/" class="">Dynamixel-Workbench</a>
+                          <a href="http://localhost:4000/docs/en/software/dynamixel/dynamixel_workbench/" class="">Dynamixel-Workbench</a>
                         </li>
                       
                     
@@ -2439,7 +2437,7 @@ $(function() {
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/software/dynamixel/dynamixel_workbench/dynamixel_workbench/">Dynamixel-Workbench</a>
+                      <a href="http://localhost:4000/docs/en/software/dynamixel/dynamixel_workbench/">Dynamixel-Workbench</a>
                     
                 
               </div>
@@ -3084,32 +3082,82 @@ $(function() {
 
 <ul>
   <li><a href="http://support.robotis.com">Previous e-Manual</a> will be served as well.</li>
-  <li>New ROBOTIS Community <a href="http://www.robotis.com/service/forum.php">Forum</a> is available. Please checkout the <a href="http://www.robotis.com/service/forum.php">Forum</a> if you have any issue with ROBOTIS Products.</li>
+  <li>New ROBOTIS Community <a href="http://en.robotis.com/service/forum.php">Forum</a> is available. Please checkout the <a href="http://en.robotis.com/service/forum.php">Forum</a> if you have any issue with ROBOTIS Products.</li>
 </ul>
 
 <h1 id="quick-references">Quick References</h1>
 
+<h2 id="turtlebot3">TurtleBot3</h2>
 <ul>
-  <li><code class="highlighter-rouge">DYNAMIXEL Control Table</code>
-    <ul>
-      <li><a href="/docs/en/dxl/ax/ax-12w/#control-table-of-eeprom-area">AX-12W</a>, <a href="/docs/en/dxl/ax/ax-12a/#control-table-of-eeprom-area">AX-12+/12A</a>, <a href="/docs/en/dxl/ax/ax-18a/#control-table-of-eeprom-area">AX-18F/18A</a></li>
-      <li><a href="/docs/en/dxl/ex/ex-106+/#control-table-of-eeprom-area">EX-106</a></li>
-      <li><a href="/docs/en/dxl/dx/dx-113/#control-table-of-eeprom-area">DX-113</a>, <a href="/docs/en/dxl/dx/dx-116/#control-table-of-eeprom-area">DX-116</a>, <a href="/docs/en/dxl/dx/dx-117/#control-table-of-eeprom-area">DX-117</a></li>
-      <li><a href="/docs/en/dxl/rx/rx-10/#control-table-of-eeprom-area">RX-10</a>, <a href="/docs/en/dxl/rx/rx-24f/#control-table-of-eeprom-area">RX-24F</a>, <a href="/docs/en/dxl/rx/rx-28/#control-table-of-eeprom-area">RX-28</a>, <a href="/docs/en/dxl/rx/rx-64/#control-table-of-eeprom-area">RX-64</a></li>
-      <li><a href="/docs/en/dxl/mx/mx-12w/#control-table-of-eeprom-area">MX-12W</a>, <a href="/docs/en/dxl/mx/mx-28/#control-table-of-eeprom-area">MX-28</a>, <a href="/docs/en/dxl/mx/mx-28-2/#control-table-of-eeprom-area">MX-28(2.0)</a>, <a href="/docs/en/dxl/mx/mx-64/#control-table-of-eeprom-area">MX-64</a>, <a href="/docs/en/dxl/mx/mx-64-2/#control-table-of-eeprom-area">MX-64(2.0)</a>, <a href="/docs/en/dxl/mx/mx-106/#control-table-of-eeprom-area">MX-106</a>, <a href="/docs/en/dxl/mx/mx-106-2/#control-table-of-eeprom-area">MX-106(2.0)</a></li>
-      <li><a href="/docs/en/dxl/x/xl320/#control-table-of-eeprom-area">XL320</a>, <a href="/docs/en/dxl/x/xl430-w250/#control-table-of-eeprom-area">XL430-W250</a>, <a href="/docs/en/dxl/x/xm430-w210/#control-table-of-eeprom-area">XM430-W210</a>, <a href="/docs/en/dxl/x/xm430-w350/#control-table-of-eeprom-area">XM430-W350</a>, <a href="/docs/en/dxl/x/xh430-w210/#control-table-of-eeprom-area">XH430-W210</a>, <a href="/docs/en/dxl/x/xh430-w350/#control-table-of-eeprom-area">XH430-W350</a>, <a href="/docs/en/dxl/x/xh430-v210/#control-table-of-eeprom-area">XH430-V210</a>, <a href="/docs/en/dxl/x/xh430-v350/#control-table-of-eeprom-area">XH430-V350</a></li>
-      <li><a href="/docs/en/dxl/pro/h54-200-s500-r/#control-table-of-eeprom-area">H54-200-S500-R</a>, <a href="/docs/en/dxl/pro/h54-100-s500-r/#control-table-of-eeprom-area">H54-100-S500-R</a>, <a href="/docs/en/dxl/pro/h42-20-s300-r/#control-table-of-eeprom-area">H42-20-S300-R</a></li>
-      <li><a href="/docs/en/dxl/pro/m54-60-s250-r/#control-table-of-eeprom-area">M54-60-S250-R</a>, <a href="/docs/en/dxl/pro/m54-40-s250-r/#control-table-of-eeprom-area">M54-40-S250-R</a>, <a href="/docs/en/dxl/pro/m42-10-s260-r/#control-table-of-eeprom-area">M42-10-S260-R</a></li>
-      <li><a href="/docs/en/dxl/pro/l54-50-s500-r/#control-table-of-eeprom-area">L54-50-S500-R</a>, <a href="/docs/en/dxl/pro/l54-50-s290-r/#control-table-of-eeprom-area">L54-50-S290-R</a>, <a href="/docs/en/dxl/pro/l54-30-s500-r/#control-table-of-eeprom-area">L54-30-S500-R</a>, <a href="/docs/en/dxl/pro/l54-30-s400-r/#control-table-of-eeprom-area">L54-30-S400-R</a>, <a href="/docs/en/dxl/pro/l42-10-s300-r/#control-table-of-eeprom-area">L42-10-S300-R</a></li>
-    </ul>
-  </li>
-  <li>
-    <p><code class="highlighter-rouge">DYNAMIXEL SDK</code> <a href="https://github.com/ROBOTIS-GIT/DynamixelSDK/releases">SDK Download</a>, <a href="http://emanual.robotis.com/docs/en/software/sdk/dynamixel_sdk/overview/">Documentation</a></p>
-  </li>
-  <li>
-    <p><code class="highlighter-rouge">DYNAMIXEL Protocol</code> <a href="/docs/en/dxl/protocol1/">Protocol 1.0</a>, <a href="/docs/en/dxl/protocol2/">Protocol 2.0</a></p>
-  </li>
-  <li><code class="highlighter-rouge">Compatibility Guide</code> <a href="/docs/en/parts/controller/controller_compatibility/">Controller</a></li>
+  <li><a href="/docs/en/platform/turtlebot3/pc_software_setup/">Remote PC Software Setup</a></li>
+  <li><a href="/docs/en/platform/turtlebot3/rpi3_software_setup/">SBC Software Setup</a></li>
+  <li><a href="/docs/en/platform/turtlebot3/bringup/#turtlebot3-burger">Bringup Burger</a></li>
+  <li><a href="/docs/en/platform/turtlebot3/bringup/#turtlebot3-waffle">Bringup Waffle</a></li>
+  <li><a href="/docs/en/platform/turtlebot3/slam/">SLAM</a></li>
+</ul>
+
+<h2 id="dynamixel-sdk">DYNAMIXEL SDK</h2>
+<ul>
+  <li><a href="https://github.com/ROBOTIS-GIT/DynamixelSDK/releases">SDK Download</a></li>
+  <li><a href="/docs/en/software/dynamixel/dynamixel_sdk/overview/">Documentation</a></li>
+</ul>
+
+<h2 id="dynamixel-workbench">DYNAMIXEL Workbench</h2>
+<ul>
+  <li><a href="https://github.com/ROBOTIS-GIT/dynamixel-workbench">Package Download</a></li>
+  <li><a href="/docs/en/software/dynamixel/dynamixel_workbench/">Documentation</a></li>
+</ul>
+
+<h2 id="dynamixel-control-table">DYNAMIXEL Control Table</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Model</th>
+      <th style="text-align: left">Details</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">EX</td>
+      <td style="text-align: left"><a href="/docs/en/dxl/ex/ex-106+/#control-table-of-eeprom-area">EX-106</a></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">AX</td>
+      <td style="text-align: left"><a href="/docs/en/dxl/ax/ax-12w/#control-table-of-eeprom-area">AX-12W</a>, <a href="/docs/en/dxl/ax/ax-12a/#control-table-of-eeprom-area">AX-12+/12A</a>, <a href="/docs/en/dxl/ax/ax-18a/#control-table-of-eeprom-area">AX-18F/18A</a></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">DX</td>
+      <td style="text-align: left"><a href="/docs/en/dxl/dx/dx-113/#control-table-of-eeprom-area">DX-113</a>, <a href="/docs/en/dxl/dx/dx-116/#control-table-of-eeprom-area">DX-116</a>, <a href="/docs/en/dxl/dx/dx-117/#control-table-of-eeprom-area">DX-117</a></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">RX</td>
+      <td style="text-align: left"><a href="/docs/en/dxl/rx/rx-10/#control-table-of-eeprom-area">RX-10</a>, <a href="/docs/en/dxl/rx/rx-24f/#control-table-of-eeprom-area">RX-24F</a>, <a href="/docs/en/dxl/rx/rx-28/#control-table-of-eeprom-area">RX-28</a>, <a href="/docs/en/dxl/rx/rx-64/#control-table-of-eeprom-area">RX-64</a></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">MX</td>
+      <td style="text-align: left"><code class="highlighter-rouge">Protocol 1.0</code> <a href="/docs/en/dxl/mx/mx-12w/#control-table-of-eeprom-area">MX-12W</a>, <a href="/docs/en/dxl/mx/mx-28/#control-table-of-eeprom-area">MX-28</a>, <a href="/docs/en/dxl/mx/mx-64/#control-table-of-eeprom-area">MX-64</a>, <a href="/docs/en/dxl/mx/mx-106/#control-table-of-eeprom-area">MX-106</a><br /><code class="highlighter-rouge">Protocol 2.0</code> <a href="/docs/en/dxl/mx/mx-28-2/#control-table-of-eeprom-area">MX-28(2.0)</a>, <a href="/docs/en/dxl/mx/mx-64-2/#control-table-of-eeprom-area">MX-64(2.0)</a>, <a href="/docs/en/dxl/mx/mx-106-2/#control-table-of-eeprom-area">MX-106(2.0)</a></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">X</td>
+      <td style="text-align: left"><code class="highlighter-rouge">L Series</code> <a href="/docs/en/dxl/x/xl320/#control-table-of-eeprom-area">XL320</a>, <a href="/docs/en/dxl/x/xl430-w250/#control-table-of-eeprom-area">XL430-W250</a><br /><code class="highlighter-rouge">M Series</code><a href="/docs/en/dxl/x/xm430-w210/#control-table-of-eeprom-area">XM430-W210</a>, <a href="/docs/en/dxl/x/xm430-w350/#control-table-of-eeprom-area">XM430-W350</a>, <a href="/docs/en/dxl/x/xm540-w150/#control-table-of-eeprom-area">XM540-W150</a>, <a href="/docs/en/dxl/x/xm540-w270/#control-table-of-eeprom-area">XM540-W270</a><br /><code class="highlighter-rouge">H Series</code><a href="/docs/en/dxl/x/xh430-w210/#control-table-of-eeprom-area">XH430-W210</a>, <a href="/docs/en/dxl/x/xh430-w350/#control-table-of-eeprom-area">XH430-W350</a>, <a href="/docs/en/dxl/x/xh430-v210/#control-table-of-eeprom-area">XH430-V210</a>, <a href="/docs/en/dxl/x/xh430-v350/#control-table-of-eeprom-area">XH430-V350</a></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Pro</td>
+      <td style="text-align: left"><code class="highlighter-rouge">L Seires</code> <a href="/docs/en/dxl/pro/l54-50-s500-r/#control-table-of-eeprom-area">L54-50-S500-R</a>, <a href="/docs/en/dxl/pro/l54-50-s290-r/#control-table-of-eeprom-area">L54-50-S290-R</a>, <a href="/docs/en/dxl/pro/l54-30-s500-r/#control-table-of-eeprom-area">L54-30-S500-R</a>, <a href="/docs/en/dxl/pro/l54-30-s400-r/#control-table-of-eeprom-area">L54-30-S400-R</a>, <a href="/docs/en/dxl/pro/l42-10-s300-r/#control-table-of-eeprom-area">L42-10-S300-R</a><br /><code class="highlighter-rouge">M Series</code> <a href="/docs/en/dxl/pro/m54-60-s250-r/#control-table-of-eeprom-area">M54-60-S250-R</a>, <a href="/docs/en/dxl/pro/m54-40-s250-r/#control-table-of-eeprom-area">M54-40-S250-R</a>, <a href="/docs/en/dxl/pro/m42-10-s260-r/#control-table-of-eeprom-area">M42-10-S260-R</a><br /><code class="highlighter-rouge">H Series</code> <a href="/docs/en/dxl/pro/h54-200-s500-r/#control-table-of-eeprom-area">H54-200-S500-R</a>, <a href="/docs/en/dxl/pro/h54-100-s500-r/#control-table-of-eeprom-area">H54-100-S500-R</a>, <a href="/docs/en/dxl/pro/h42-20-s300-r/#control-table-of-eeprom-area">H42-20-S300-R</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="dynamixel-protocol">DYNAMIXEL Protocol</h2>
+<ul>
+  <li><a href="/docs/en/dxl/protocol1/">Protocol 1.0</a></li>
+  <li><a href="/docs/en/dxl/protocol2/">Protocol 2.0</a></li>
+</ul>
+
+<h2 id="compatibility-guide">Compatibility Guide</h2>
+<ul>
+  <li><a href="/docs/en/parts/controller/controller_compatibility/">Controller</a></li>
 </ul>
 
 

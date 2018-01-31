@@ -160,12 +160,12 @@ $(function() {
       function extendgoogletool() {
         if (toggle_google == 0) {
           google_tools.classList.add("extend_googletools");
-          // switch_ko_en.classList.add("show_switch_ko_en");
+          switch_ko_en.classList.add("show_switch_ko_en");
           toggle_google = 1;
         }
         else {
           google_tools.classList.remove("extend_googletools");
-          // switch_ko_en.classList.remove("show_switch_ko_en");
+          switch_ko_en.classList.remove("show_switch_ko_en");
           toggle_google = 0;
         }
       }
@@ -208,7 +208,6 @@ $(function() {
         <!-- end of Google Translation -->  
         
         
-        <!-- Korean - English Translation Button
         <button class="switch_ko_en" id="switch_ko_en">
           
             
@@ -216,10 +215,9 @@ $(function() {
             
           
             
-              
+              N/A
             
           
-          Korean - English Translation Button -->
       </div>
       
       <input class="menu-btn" type="checkbox" id="menu-btn" />
@@ -1112,6 +1110,10 @@ $(function() {
                       
                     
                       
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/software/dynamixel/dynamixel_workbench/" class="">다이나믹셀 워크벤치</a>
+                        </li>
                       
                     
                     </ul>
@@ -2686,6 +2688,9 @@ $(function() {
                   
 
                   
+                    
+                      <a href="http://localhost:4000/docs/kr/software/dynamixel/dynamixel_workbench/">다이나믹셀 워크벤치</a>
+                    
                 
               </div>
               
@@ -3395,7 +3400,7 @@ $(function() {
 
     <li class="has-children">
       <input type="radio" name="toplevel" id="toplevel_0" >
-      <label for="toplevel_0">개요 &loz;</label>
+      <label for="toplevel_0">개요 [+]</label>
     
 
     
@@ -3424,7 +3429,7 @@ $(function() {
 
     <li class="has-children">
       <input type="radio" name="toplevel" id="toplevel_1" >
-      <label for="toplevel_1">시작하기 &loz;</label>
+      <label for="toplevel_1">시작하기 [+]</label>
     
 
     
@@ -3497,7 +3502,7 @@ $(function() {
 
     <li class="has-children">
       <input type="radio" name="toplevel" id="toplevel_2" >
-      <label for="toplevel_2">프로그래밍 &loz;</label>
+      <label for="toplevel_2">프로그래밍 [+]</label>
     
 
     
@@ -3510,7 +3515,7 @@ $(function() {
         
         <li class="has-children">
           <input type="radio" name="sublevel" id="편집" >
-          <label for="편집">편집 &loz;</label>
+          <label for="편집">편집 [+]</label>
         
 
         
@@ -3577,7 +3582,7 @@ $(function() {
         
         <li class="has-children">
           <input type="radio" name="sublevel" id="명령어" >
-          <label for="명령어">명령어 &loz;</label>
+          <label for="명령어">명령어 [+]</label>
         
 
         
@@ -3724,7 +3729,7 @@ $(function() {
         
         <li class="has-children">
           <input type="radio" name="sublevel" id="제어기 파라미터" >
-          <label for="제어기 파라미터">제어기 파라미터 &loz;</label>
+          <label for="제어기 파라미터">제어기 파라미터 [+]</label>
         
 
         
@@ -3895,7 +3900,7 @@ $(function() {
         
         <li class="has-children">
           <input type="radio" name="sublevel" id="모션 파라미터" >
-          <label for="모션 파라미터">모션 파라미터 &loz;</label>
+          <label for="모션 파라미터">모션 파라미터 [+]</label>
         
 
         
@@ -3946,7 +3951,7 @@ $(function() {
         
         <li class="has-children">
           <input type="radio" name="sublevel" id="주변장치" >
-          <label for="주변장치">주변장치 &loz;</label>
+          <label for="주변장치">주변장치 [+]</label>
         
 
         
@@ -4037,7 +4042,7 @@ $(function() {
         
         <li class="has-children">
           <input type="radio" name="sublevel" id="다이나믹셀 파라미터" >
-          <label for="다이나믹셀 파라미터">다이나믹셀 파라미터 &loz;</label>
+          <label for="다이나믹셀 파라미터">다이나믹셀 파라미터 [+]</label>
         
 
         
@@ -4176,7 +4181,7 @@ $(function() {
         
         <li class="has-children">
           <input type="radio" name="sublevel" id="통합센서 S1" >
-          <label for="통합센서 S1">통합센서 S1 &loz;</label>
+          <label for="통합센서 S1">통합센서 S1 [+]</label>
         
 
         
@@ -4315,7 +4320,7 @@ $(function() {
         
         <li class="has-children">
           <input type="radio" name="sublevel" id="적외선 센서 어레이" >
-          <label for="적외선 센서 어레이">적외선 센서 어레이 &loz;</label>
+          <label for="적외선 센서 어레이">적외선 센서 어레이 [+]</label>
         
 
         
@@ -4401,7 +4406,7 @@ $(function() {
         
         <li class="has-children">
           <input type="radio" name="sublevel" id="스마트앱 파라미터" >
-          <label for="스마트앱 파라미터">스마트앱 파라미터 &loz;</label>
+          <label for="스마트앱 파라미터">스마트앱 파라미터 [+]</label>
         
 
         
@@ -4785,7 +4790,7 @@ $(function() {
 
     <li class="has-children">
       <input type="radio" name="toplevel" id="toplevel_3" >
-      <label for="toplevel_3">기타 정보 &loz;</label>
+      <label for="toplevel_3">기타 정보 [+]</label>
     
 
     

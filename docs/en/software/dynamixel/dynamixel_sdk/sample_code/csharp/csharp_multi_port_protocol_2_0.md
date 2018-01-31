@@ -29,7 +29,7 @@ sidebar:
 
   All series using protocol 2.0
 
-- Code
+#### Sample code
 
 
 ``` cs
@@ -286,7 +286,7 @@ namespace read_write
 
 
 
-- Details
+#### Details
 
 ``` cs
 using System;

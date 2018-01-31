@@ -29,7 +29,7 @@ sidebar:
 
   All series using protocol 2.0
 
-- Simple code
+#### Sample code
 
 
 - Description
@@ -40,7 +40,7 @@ sidebar:
 
   All series using protocol 2.0
 
-- Simple code
+#### Sample code
 
 
 ``` java
@@ -144,7 +144,7 @@ public class BroadcastPing
 
 
 
-- Details
+#### Details
 
 ``` java
 import java.util.Scanner;

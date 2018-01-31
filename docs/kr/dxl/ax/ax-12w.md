@@ -13,99 +13,82 @@ sidebar:
 
 ![](/assets/images/dxl/ax/ax-12w_product.jpg)
 
-# [Specifications](#specifications)
+# [주요 사양 요약](#주요-사양-요약)
 
-| Item           | Specifications     |
+| 항목           | 내용     |
 | :------------- | :------------- |
-| Baud Rate       | 7843 bps ~ 1 Mbps       |
-| Resolution | 0.29&deg;  |
-| Running Degree | 0&deg; ~ 300&deg;<br />Endless Turn |
-| Weight | 52.9g |
-| Dimensions (W x H x D) | 32mm x 50mm x 40mm |
-| Gear Ratio | 32 : 1  |
+| 무게 | 52.9g |
+| 크기 | 32mm x 50mm x 40mm |
+| 최소 제어각 | 0.29&deg;  |
+| 모터 | Cored |
+| 기어비 | 32 : 1  |
 | No Load Speed | 470rpm (at 12V, Wheel Mode)<br />54rpm (at 12.0V, Joint Mode) |
-| Operating Temperature | -5&deg;C ~ +70&deg;F |
-| Input Voltage | 9.0 ~ 12.0V (**Recommended : 11.1V**) |
+| 동작 모드| 관절 모드 (0&deg; ~ 300&deg;) / 바퀴 모드(무한 회전)|
+| 동작 온도 | -5&deg;C ~ +70&deg;F |
+| 사용 전압 | 9.0 ~ 12.0V (**권장 전압 : 11.1V**) |
 | Command Signal | Digital Packet |
 | Protocol Type | Half Duplex Asynchronous Serial Communication (8bit, 1stop, No Parity) |
-| Physical Connection | TTL Level Multi Drop Bus(Daisy Chain Type Connector) |
-| ID | 0 ~ 253 |
+| Link (Physical) | TTL Level Multi Drop Bus(Daisy Chain Type Connector) |
+| ID | 254 ID (0~253) |
+| 통신 속도       | 7843 bps ~ 1 Mbps       |
 | Feedback | Position, Temperature, Load, Input Voltage, etc |
 | Material | Engineering Plastic |
 
-# [Control Table](#control-table)
-The Control Table is a structure of data implemented in the DYNAMIXEL. Users can read a specific Data to get status of the DYNAMIXEL with Read Instruction Packets, and modify Data as well to control DYNAMIXEL with WRITE Instruction Packets.
+{% include kr/dxl/control_table_protocol1.md %}
 
-## [Control Table, Data, Address](#control-table-data-address)
-The Control Table is a structure that consists of multiple Data fields to store status of the DYNAMIXEL or to control the DYNAMIXEL. Users can check current status of the DYNAMIXEL by reading a specific Data from the Control Table with Read Instruction Packets. WRITE Instruction Packets enable users to control the DYNAMIXEL by changing specific Data in the Control Table. The Address is a unique value when accessing a specific Data in the Control Table with Instruction Packets. In order to read or write data, users must designate a specific Address in the Instruction Packet. Please refer to [Protocol] for more details about Instruction Packets.
-
-`Note` Two's complement is applied for the negative value. For more information, please refer to [Two's complement] from Wikipedia.
-{: .notice--warning}
-
-### [Area (EEPROM, RAM)](#area-eeprom-ram)
-The Control Table is divided into 2 Areas. Data in the RAM Area is reset to initial values when the DYNAMIXEL is turned on (Volatile). On the other hand, modified data in the EEPROM Area keeps their values even when the DYNAMIXEL is turned off (Non-Volatile). Data in the EEPROM Area can only be changed when the value of Torque Enable(64) is cleared to ‘0’.
-
-### [Size](#size)
-The Size of data varies from 1 to 4 bytes depend on their usage. Please check the size of data when updating the data with an Instruction Packet.
-
-### [Access](#access)
-The Control Table has two different access properties. ‘RW’ property stands for read and write access permission while ‘R’ stands for read only access permission. Data with the read only property cannot be changed by the WRITE Instruction. Read only property(‘R’) is generally used for measuring and monitoring purpose, and read write property(‘RW’) is used for controlling DYNAMIXEL.
-
-### [Initial Value](#initial-value)
-Each data in the Control Table is restored to initial values when the DYNAMIXEL is turned on. Default values in the EEPROM area are initial values of the DYNAMIXEL (factory default settings). If any values in the EEPROM area are modified by a user, modified values will be restored as initial values when the DYNAMIXEL is turned on. Initial Values in the RAM area are restored when the DYNAMIXEL is turned on.
 
 
 ## [Control Table of EEPROM Area](#control-table-of-eeprom-area)
 
-| Address     | Size(Byte)     | Data Name     | Description     | Access     | Initial Value     |
+| 주소     | 크기(Byte)     | 명칭     | 의미     | 접근     | 초기값     |
 | :------------- | :------------- | :------------- | :------------- | :------------- | :------------- |
-|0|2|[Model Number](#model-number)         | Model Number       | R       | 300 |
-|2|1|[Firmware Version](#firmware-version)    |Firmware Version|R|-|
-|3|1|[ID](#id)                  |DYNAMIXEL ID      |RW|1|
-|4|1|[Baud Rate](#baud-rate)           |Communication Speed|RW|1|
-|5|1|[Return Delay Time](#return-delay-time)   |Response Delay Time|RW|250|
-|6|2|[CW Angle Limit](#cw-angle-limit)          |Clockwise Angle Limit|RW|0|
-|8|2|[CCW Angle Limit](#ccw-angle-limit)          |Counter-Clockwise Angle Limit|RW|1023|
-|11|1|[Temperature Limit](#temperature-limit)   |Maximum Internal Temperature Limit|RW|70|
-|12|1|[Min Voltage Limit](#min-voltage-limit)   |Minimum Input Voltage Limit|RW|60|
-|13|1|[Max Voltage Limit](#max-voltage-limit)   |Maximum Input Voltage Limit|RW|140|
-|14|2|[Max Torque](#max-torque)           |Maximun Torque|RW|1023|
-|16|1|[Status Return Level](#status-return-level)      |Select Types of Status Return|RW|2|
-|17|1|[Alarm LED](#alarm-led)                             |LED for Alarm|RW|36|
-|18|1|[Shutdown](#shutdown)            |Shutdown Error Information|RW|36|
+|0|2|[Model Number](#model-number)         | 모델 번호의 바이트     | R       | 300 |
+|2|1|[Firmware Version](#firmware-version)    |펌웨어 버전 정보|R|-|
+|3|1|[ID](#id)                  |다이나믹셀 ID      |RW|1|
+|4|1|[Baud Rate](#baud-rate)           |다이나믹셀 통신 속도|RW|1|
+|5|1|[Return Delay Time](#return-delay-time)   |응답 지연 시간|RW|250|
+|6|2|[CW Angle Limit](#cw-angle-limit)          |시계 방향 한계 각도 값의 바이트|RW|0|
+|8|2|[CCW Angle Limit](#ccw-angle-limit)          |반시계 방향 한계 각도 값의 바이트|RW|1023|
+|11|1|[Temperature Limit](#temperature-limit)   |내부 한계 온도|RW|70|
+|12|1|[Min Voltage Limit](#min-voltage-limit)   |최저 한계 전압|RW|60|
+|13|1|[Max Voltage Limit](#max-voltage-limit)   |최고 한계 전압|RW|140|
+|14|2|[Max Torque](#max-torque)           |토크 한계 값의 바이트|RW|1023|
+|16|1|[Status Return Level](#status-return-level)      |응답 레벨|RW|2|
+|17|1|[Alarm LED](#alarm-led)                             |알람용 LED 기능|RW|36|
+|18|1|[Shutdown](#shutdown)            |알람용 셧 다운(Shut down) 기능|RW|36|
 
 
 ## [Control Table of RAM Area](#control-table-of-ram-area)
 
-| Address     | Size(Byte)     | Data Name     | Description     | Access     | Initial Value     |
+| 주소     | 크기(Byte)     | 명칭     | 의미     | 접근    | 초기값    |
 | :------------- | :------------- | :------------- | :------------- | :------------- | :------------- |
-|24|1|[Torque Enable](#torque-enable)            |Motor Torque On/Off|RW|0|
+|24|1|[Torque Enable](#torque-enable)            |토크 켜기|RW|0|
 |25|1|[LED](#led)                             |Status LED On/Off|RW|0|
 |26|1|[CW Compliance Margin](#cw-compliance-margin)   |CW Compliance Margin|RW|4|
 |27|1|[CCW Compliance Margin](#ccw-compliance-margin)   |CCW Compliance Margin|RW|4|
 |28|1|[CW Compliance Slope](#cw-compliance-slope)   |CW Compliance Slope|RW|64|
 |29|1|[CCW Compliance Slope](#ccw-compliance-alope)   |CCW Compliance Slope|RW|64|
-|30|2|[Goal Position](#goal-position)                 |Target Position|RW|-|
-|32|2|[Moving Speed](#moving-speed)             |Moving Speed|RW|-|
-|34|2|[Torque Limit](#torque-limit)            |Torque Limit(Goal Torque)|RW|ADD 14&amp;15|
-|36|2|[Present Position](#present-position)     |Present Position|R|-|
-|38|2|[Present Speed](#present-speed)           |Present Speed|R|-|
-|40|2|[Present Load](#present-load)             |Present Load|R|-|
-|42|1|[Present Voltage](#present-voltage)       |Present Voltage|R|-|
-|43|1|[Present Temperature](#present-temperature)|Present Temperature|R|-|
-|44|1|[Registered](#registered)                 |If Instruction is registered|R|0|
-|46|1|[Moving](#moving)                   |Movement Status|R|0|
-|47|1|[Lock](#lock)                   |Locking EEPROM|RW|0|
-|48|2|[Punch](#punch)                   |Minimum Current Threshold|RW|32|
+|30|2|[Goal Position](#goal-position)                 |목표 위치 값의 바이트|RW|-|
+|32|2|[Moving Speed](#moving-speed)             |목표 속도 값의 바이트|RW|-|
+|34|2|[Torque Limit](#torque-limit)            |토크 한계 값의 바이트|RW|ADD 14&15|
+|36|2|[Present Position](#present-position)     |현재 위치 값의 바이트|R|-|
+|38|2|[Present Speed](#present-speed)           |현재 속도 값의 바이트|R|-|
+|40|2|[Present Load](#present-load)             |현재 하중 값의 바이트|R|-|
+|42|1|[Present Voltage](#present-voltage)       |현재 전압|R|-|
+|43|1|[Present Temperature](#present-temperature)|현재 온도|R|-|
+|44|1|[Registered](#registered)                 |Instruction의 등록 여부|R|0|
+|46|1|[Moving](#moving)                   |움직임 유무|R|0|
+|47|1|[Lock](#lock)                   |EEPROM 잠금|RW|0|
+|48|2|[Punch](#punch)                   |Punch 값의 바이트|RW|32|
 
 
-## [Control Table Description](#control-table-description)
+## [Address 기능 설명](#address-기능-설명)
 
 ### <a name="model-number"></a>**Model Number (0)**
- This address stores model number of the DYNAMIXEL.
+다이나믹셀의 모델 번호입니다.
 
 ### <a name="firmware-version"></a>**Firmware Version (2)**
- This address stores firmware version of the DYNAMIXEL.
+다이나믹셀 펌웨어 버전입니다.
 
 ### <a name="id"></a>**ID (3)**
  The ID is a unique value in the network to identify each DYNAMIXEL with an Instruction Packet.
@@ -372,7 +355,7 @@ Can choose vales from 0x20 to 0x3FF.
 
 # [Maintenance](#maintenance)
 
-{% include en/dxl/horn_bearing_replacement.md %}
+{% include kr/dxl/horn_bearing_replacement.md %}
 
 # [Reference](#reference)
 

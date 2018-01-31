@@ -160,12 +160,12 @@ $(function() {
       function extendgoogletool() {
         if (toggle_google == 0) {
           google_tools.classList.add("extend_googletools");
-          // switch_ko_en.classList.add("show_switch_ko_en");
+          switch_ko_en.classList.add("show_switch_ko_en");
           toggle_google = 1;
         }
         else {
           google_tools.classList.remove("extend_googletools");
-          // switch_ko_en.classList.remove("show_switch_ko_en");
+          switch_ko_en.classList.remove("show_switch_ko_en");
           toggle_google = 0;
         }
       }
@@ -208,10 +208,8 @@ $(function() {
         <!-- end of Google Translation -->  
         
         
-        <!-- Korean - English Translation Button
         <button class="switch_ko_en" id="switch_ko_en">
           
-          Korean - English Translation Button -->
       </div>
       
       <input class="menu-btn" type="checkbox" id="menu-btn" />
