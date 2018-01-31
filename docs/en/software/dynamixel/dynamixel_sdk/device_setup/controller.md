@@ -17,9 +17,9 @@ sidebar:
 
 ![](/assets/images/sw/sdk/dynamixel_sdk/device_setup/connection.png)
 
-To use the Dynamixel SDK, you need to set up the [Controller](#controller) and [Dynamixel](#dynamixel).  
+To use the Dynamixel SDK, you need to set up the [Controller](#controller) and [Dynamixel](/software/dynamixel/dynamixel_sdk/device_setup/dynamixel/#dynamixel).
 
-## [Controller](#controller)
+## <a name="controller"></a>[Controller](#controller)
 
 ### [Signal Interface](#signal-interface)
 Dynamixels communicate at one of the following signal levels: 
@@ -40,7 +40,8 @@ Adjust the signal interface so that you can communicate with your Dynamixel by f
 * RS485: Models with 4P connectors (DX-Series, RX-Series, EX-Series, MX-Series, X-Series, PRO-Series)
 * RS232: Models attached via serial connector (CM-5 controller, CM-510 controller, other UART devices)
 
-**Note:** The X-Series' connector is different than the USB2Dynamixel's connector. Please check the connector types [here](http://support.robotis.com/en/product/actuator/dynamixel/dxl_connector.htm).
+`Note` The X-Series' connector is different than the USB2Dynamixel's connector. Please check [the connector types of X-Series](dxl/x/xm430-w210/#connector-information).
+{: .notice}
 
 Since the other signal ports, such as UART, I2C, etc., are in various conditions depending on the controller specification, modify SDK yourselves and optimize your codes to your own controllers.
 
@@ -51,36 +52,30 @@ Note that USB2Dynamixel will be able to be used by following settings:
 ### [Controllers](#controllers)
 The SDK was tested on a desktop PC and some common SBCs such as Raspberry Pi and ODROID, in the following OS:
 
-|               | Laptop & Desktop | Intel Joule | Intel Up Board | Raspberry Pi  | ODROID        | Beagle Bone Black | 
-| ------------- | ------------- | ------------- | ------------- | ------------- | ------------- | ------------- |
-| Windows    |              |               |               |               |               |               |
-| - 10   |      O        |               |               |               |               |               |
-| - IoT   |               |               |               |               |               |               |
-|               |               |               |               |               |               |               |
-| Ubuntu |              |               |               |               |               |               |
-| - 16.04  |       O       |       O       |               |               |               |               |
-| - 14.04  |       O       |               |               |               |       O       |               |
-|               |               |               |               |               |               |
-| lUbuntu       |               |               |               |               |               |               |
-| - 12.04  |       O       |               |               |               |       O       |               |
-|               |               |               |               |               |               |               |
-| Ubuntu Mate  |               |               |               |               |               |               |
-| - 16.04   |               |               |               |       O       |       O       |               |
-|               |               |               |               |               |               |               |
-| Snappy Ubuntu |               |               |               |               |               |               |
-| - 15.04 |               |               |               |       O       |               |               |
-|               |               |               |               |               |               |               |
-| Raspbian      |               |               |               |               |               |               |
-| - wheezy      |               |               |               |       O       |               |               |
-| - jessie      |               |               |               |       O       |               |               |
-| - jessie lite |               |               |               |       O       |               |               |
-|               |               |               |               |               |               |               |
-| MacOSX |              |               |               |               |               |               |
-| - Sierra  |       O       |               |               |               |               |               |
+|                   | Laptop <br>& Desktop | Intel <br>Joule | Intel <br>Up Board | Raspberry Pi | ODROID | Beagle Bone<br>Black |
+|:-----------------:|:--------------------:|:---------------:|:------------------:|:------------:|:------:|:--------------------:|
+|    **Windows**    |                      |                 |                    |              |        |                      |
+|       - 10        |          O           |                 |                    |              |        |                      |
+|       - IoT       |                      |                 |                    |              |        |                      |
+|    **Ubuntu**     |                      |                 |                    |              |        |                      |
+|      - 16.04      |          O           |        O        |                    |              |        |                      |
+|      - 14.04      |          O           |                 |                    |              |   O    |                      |
+|    **lUbuntu**    |                      |                 |                    |              |        |                      |
+|      - 12.04      |          O           |                 |                    |              |   O    |                      |
+|  **Ubuntu Mate**  |                      |                 |                    |              |        |                      |
+|      - 16.04      |                      |                 |                    |      O       |   O    |                      |
+| **Snappy Ubuntu** |                      |                 |                    |              |        |                      |
+|      - 15.04      |                      |                 |                    |      O       |        |                      |
+|   **Raspbian**    |                      |                 |                    |              |        |                      |
+|     - wheezy      |                      |                 |                    |      O       |        |                      |
+|     - jessie      |                      |                 |                    |      O       |        |                      |
+|   - jessie lite   |                      |                 |                    |      O       |        |                      |
+|    **Mac OSX**    |                      |                 |                    |              |        |                      |
+|     - Sierra      |          O           |                 |                    |              |        |                      |
 
-O: Test Successful  
-X: Test Failed  
-Blank: Not Yet Tested   
+  > O: Test Successful  
+  > X: Test Failed  
+  > Blank: Not tested yet
 
 and also in MCU:
 
@@ -94,7 +89,8 @@ and also in MCU:
 
 * [Installation in Linux](#installation-in-linux)
 
-**Note:** The FTDI driver may not be compatible with some devices.
+`Note` The FTDI driver may not be compatible with some devices.
+{: .notice}
 
 #### <a name="installation-in-windows"></a>[Installation in Windows](#installation-in-windows)
 
@@ -102,11 +98,11 @@ If you installed ROBOTIS RoboPlus software - a suite of software that allows you
 
 If you don't want to install RoboPlus, install the latest VCP driver from the [FTDI Driver Download page](http://www.ftdichip.com/Drivers/VCP.htm).
 
-**Manually Installing the FTDI Driver**
+##### Manually Installing the FTDI Driver
  
 * If the FTDI driver isn't automatically installed, the Found New Hardware Wizard pops up after connecting USB2Dynamixel to your controller. Select **Install from a list or specific location** and click **Next**.
 
-![](/assets/images/sw/sdk/dynamixel_sdk/device_setup/ftdi_driver_install/ln101_driverinstall_01.png)
+  ![](/assets/images/sw/sdk/dynamixel_sdk/device_setup/ftdi_driver_install/ln101_driverinstall_01.png)
 
 * Choose your driver's directory.  
 a. The driver must be in **LN101** folder of RoboPlus installed folder.  
@@ -114,11 +110,11 @@ b. If you don't want to install RoboPlus, install the latest VCP driver from the
  
 * Click **Next** to start the installation. 
 
-![](/assets/images/sw/sdk/dynamixel_sdk/device_setup/ftdi_driver_install/ln101_driverinstall_03.png)
+  ![](/assets/images/sw/sdk/dynamixel_sdk/device_setup/ftdi_driver_install/ln101_driverinstall_03.png)
 
 * Click **Finish** to complete installation of the **USB Serial Port** driver. 
 
-![](/assets/images/sw/sdk/dynamixel_sdk/device_setup/ftdi_driver_install/ln101_driverinstall_06.png)
+  ![](/assets/images/sw/sdk/dynamixel_sdk/device_setup/ftdi_driver_install/ln101_driverinstall_06.png)
 
 #### <a name="installation-in-linux"></a>[Installation in Linux](#installation-in-linux)
 

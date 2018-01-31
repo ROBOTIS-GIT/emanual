@@ -130,7 +130,7 @@ print("[ID:%03d] reboot Succeeded" % (DXL_ID))
 dynamixel.closePort(port_num)
 ```
 
--------------------------------------------------------------------------------------
+
 
 - Details
 

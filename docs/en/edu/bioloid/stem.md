@@ -11,8 +11,6 @@ sidebar:
   nav: "bioloid-stem"
 ---
 
-# BIOLOID STEM
-
 # [Introduction](#introduction)
 
 ![](/assets/images/edu/bioloid/stem_product.jpg)

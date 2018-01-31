@@ -57,7 +57,7 @@ sidebar:
 {: .notice}
 
 
-`참고` 예제  task파일은 [스마트2단계 교안예제] 페이지 또는 R+ SMART앱 에서 얻을 수 있습니다.   
+`Note` 예제  task파일은 [스마트2단계 교안예제] 페이지 또는 R+ SMART앱 에서 얻을 수 있습니다.   
 {: .notice}
 
 

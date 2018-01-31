@@ -20,7 +20,7 @@ Zigbee SDK is a standard programming library to develop S/W communicates with Ro
 
 # [API Reference](#api-reference)
 
-## Device Control Method
+## [Device Control Method](#device-control-method)
 Functions to control the communication devices
 
 ### [zgb_initialize](#zgb-initialize)
@@ -102,7 +102,7 @@ int zgb_tx_data(
 - data : The data values to be transmitted. If it has the effects of controlling with RC-100, the button value declared in advance can be used.
 
 |Value|Name|Contents|
-|:---:|:---:|:---:
+|:---:|:---:|:---:|
 |1|RC100_BTN_U|Pressed value- U Button|
 |2|RC100_BTN_D|Pressed value- D Button|
 |4|RC100_BTN_L|Pressed value- L Button|
@@ -526,14 +526,14 @@ Used Zigbee modules are set to 1:1 communication for each other. Download tsk fi
 
 ##### Initialization
 
-```code
- 'Open device
-        If (zgb_initialize(DEFAULT_PORTNUM) = 0) Then
-            Console.WriteLine("Failed to open Zig2Serial!")
-            Exit Sub
-        Else
-            Console.WriteLine("Succeed to open Zig2Serial!")
-        End If
+```
+'Open device
+If (zgb_initialize(DEFAULT_PORTNUM) = 0) Then
+  Console.WriteLine("Failed to open Zig2Serial!")
+  Exit Sub
+Else
+  Console.WriteLine("Succeed to open Zig2Serial!")
+End If
 ```
 
 The source above checks whether the initialization is done properly or not.  
@@ -544,7 +544,7 @@ DEFAULT_PORTNUM must be set depending on the user's system status, and it is ori
  
 ##### Termination
 
-```code
+```
 'Close device
 zgb_terminate()
 ```
@@ -553,9 +553,9 @@ The source above terminates communication with the controller's communication de
  
 ##### Transmitting Packet
 
-```code
+```
 If (zgb_tx_data(TxData) = 0) Then
-                Console.WriteLine("Failed to transmit")
+  Console.WriteLine("Failed to transmit")
 End If
 ```
 
@@ -566,16 +566,16 @@ TxData means the value users transmit to the controller.
  
 ##### Receiving Packet
 
-```code
- For i = 1 To TIMEOUT_TIME
-                'Verify data recieved
-                If (zgb_rx_check() = 1) Then
-                    'Get data verified
-                    RxData = zgb_rx_data()
-                    Console.WriteLine("Recieved: " & RxData & "")
-                    Exit For
-                End If
-                Sleep(1)
+```
+For i = 1 To TIMEOUT_TIME
+  'Verify data recieved
+  If (zgb_rx_check() = 1) Then
+    'Get data verified
+    RxData = zgb_rx_data()
+    Console.WriteLine("Recieved: " & RxData & "")
+    Exit For
+  End If
+  Sleep(1)
 Next i
 ```
            
@@ -586,7 +586,7 @@ If the packet is received (if the returned value is 1), using zgb_rx_data functi
 If the packet is not received, it spins the loop as long as the Timeout_Time using Sleep() function after providing the delay time of 1ms.  
 TIMEOUT_TIME is initially set to 1000, and the packet is waited for 1 second in this example source.
 
-## [Visual C#](#visual-c#)
+## [Visual C Sharp(#)](#visual-c-sharp)
 
 This is an example for Visual C#. This example has been tested in Visual Studio 2005.
 
@@ -699,7 +699,7 @@ Linux gcc used for this example.
 
 #### Using Zigbee API
 
-1. Designate header file. Add #include <zigbee.h> to source file.
+1. Designate header file. Add #include \<zigbee.h> to source file.
 2. Call functions. Call necessary functions for the source.  Please refer to API Reference on the usage of each function.
  
 ### Send/Receive Example
@@ -716,13 +716,13 @@ Also, there must be the controller or other communication device which can commu
 ```c
 if( zgb_initialize(DEFAULT_DEVICEINDEX) == 0 )
 {
-printf( "Failed to open Zig2Serial!\n" );
-printf( "Press any key to terminate...\n" );
-getchar();
-return 0;
+  printf( "Failed to open Zig2Serial!\n" );
+  printf( "Press any key to terminate...\n" );
+  getchar();
+  return 0;
 }
 else
-printf( "Succeed to open Zig2Serial!\n" );
+  printf( "Succeed to open Zig2Serial!\n" );
 ```
 
 The source above checks whether the initialization is done properly or not.  
@@ -747,9 +747,9 @@ The source is for termination. The connection is terminated by calling zgb_temin
 // Wait user's input
 printf( "Input number to transmit: " );
 if(scanf("%d", &TxData));
-// Transmit data
+  // Transmit data
 if(zgb_tx_data(TxData) == 0)
-printf( "Failed to transmit\n" );
+  printf( "Failed to transmit\n" );
 ```
 
 The source above is to transmit the inputted values by users through zigbee. zgb_tx_data function is called form zigbee API.
@@ -776,7 +776,6 @@ The source above is to receive data before the set TIMEOUT. zgb_rx_check and  zg
 # [CM-510/700](#cm-510700)
 
 Zigbee SDK for CM-510/700 is included in Embedded C.  
-Please refer to [RC100] and [ZigBee]
+Please refer to [RC100/ZigBee]
 
-[RC100]: /docs/en/parts/communication/rc-100/
-[ZigBee]: /docs/en/parts/communication/zig-110/
+[RC100/ZigBee]: /docs/kr/software/embedded_sdk/embedded_c_cm510/#rc-100zigbee

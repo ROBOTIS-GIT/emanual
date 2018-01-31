@@ -111,15 +111,14 @@ To download the task code, the controller must be connected to the PC. (Please r
 
 5. Execute the task code -> Your robot will move. Turn on the controller and execute the downloaded task code. (Please refer to [controller information] to learn how to execute the task code.)
 
-### [Videos](#videos)
 
-1. Download RoboPlus Program(for CM-100)
+- Download RoboPlus Program(for CM-100)
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/3mDP9BW-Q0E" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3mDP9BW-Q0E" frameborder="0" allowfullscreen></iframe>
 
-2. Download RoboPlus Program(for CM-510/530)
+- Download RoboPlus Program(for CM-510/530)
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/dHCqPs1_2yY" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dHCqPs1_2yY" frameborder="0" allowfullscreen></iframe>
 
 
 ## [Print on the Screen](#print-on-the-screen)
@@ -204,7 +203,7 @@ Please refer to the table below to control the remote control with the  keyboard
 |5|Number Key(5)|
 |6|Number Key(6)|
 
-[RoboPlus Task]: http://en.robotis.com/BlueAD/board.php?bbs_id=downloads
+[RoboPlus Task]: http://en.robotis.com/service/downloadpage.php?cate=software
 [Microsoft Download Center]: http://www.microsoft.com/downloads/Search.aspx?displaylang=ko
 [Windows installer 3.1]: http://www.microsoft.com/downloads/details.aspx?FamilyID=889482fc-5f56-4a38-b838-de776fd4138c&DisplayLang=ko
 [.NET Framework 3.5]: http://www.microsoft.com/downloads/details.aspx?FamilyID=d0e5dea7-ac26-4ad7-b68c-fe5076bba986&DisplayLang=ko

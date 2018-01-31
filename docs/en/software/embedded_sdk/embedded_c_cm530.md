@@ -46,7 +46,8 @@ JRE(Java Runtime Environment) is a required component to run Eclipse.
 ![](/assets/images/sw/sdk/embedded_050.png)
  
 To verify whether JRE has been installed input ‘java’ at the command prompt. You can download JRE here.  
-http://www.oracle.com/technetwork/java/javase/downloads/index.html
+
+`Download` [JRE](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
 
 ![](/assets/images/sw/sdk/embedded_051.png)
 
@@ -56,7 +57,9 @@ Select the version that best matches your working system.
 
 ### [Install WinARM](#install-winarm)
 
-You can download WinARM [here](http://support.robotis.com/en/software/embeded_c/WinARM_20080331_testing.zip).
+You can download WinARM 
+
+`Download `[WinARM](http://support.robotis.com/en/software/embeded_c/WinARM_20080331_testing.zip).
  
 The downloaded file is a compressed file. Decompressed the file in C:\WinARM directory.
 
@@ -95,7 +98,8 @@ If it does not work well, turn off the cmd window and re-run cmd, then try again
 ### [Install Eclipse](#install-eclipse)
 
 You can download Eclipse here.  
-http://www.eclipse.org/downloads/
+
+`Download` [Eclipse](http://www.eclipse.org/downloads/)
 
 ![](/assets/images/sw/sdk/embedded_058.png)
 
@@ -301,7 +305,7 @@ The memory map using STM32F103RE is as below.
 - If you input SYS command on the window after entering Boot Loader, Boot Loader is executed after the next reset.  
   (It is started as Boot Loader status, even if you do not press "#.")
 
-#### <a name="installexecute-program">Install/Execute Program</a>
+#### <a name="installexecute-program"></a>Install/Execute Program
 
 Preparations for installing a firmware of the controller are as follows:
 - Prepare a firmware (hex file) of the controller to be installed.
@@ -518,7 +522,7 @@ PC and the controller can perform serial communication.
 
     ![](/assets/images/sw/sdk/embedded_084.png)
 
-### Buzzer
+### [Buzzer](#buzzer)
 
 Buzzer on the controller can be used.
  
@@ -532,24 +536,24 @@ Buzzer on the controller can be used.
   - The relationship between musical scale and frequency is as below.
   - Time is a reciprocal number of frequency. The conversion formula is as below.
 
-    **Time(Sec) =  1 / (Frequency)**
+    `Time(Sec) =  1 / (Frequency)`
 
-|Octave<br />/Scale|1|2|3|4|5|6|7|8|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|C|32.7032|65.4064|130.8128|261.6256|523.2511|1046.502|2093.005|4186.009|
-|C#|34.6478|69.2957|138.5913|277.1826|554.3653|1108.731|2217.461|4434.922|
-|D|36.7081|73.4162|146.8324|293.6648|587.3295|1174.659|2349.318|4698.636|
-|D#|38.8909|77.7817|155.5635|311.1270|622.2540|1244.508|2489.016|4978.032|
-|E|41.2034|82.4069|164.8138|329.6276|659.2551|1318.510|2637.020|5274.041|
-|F|43.6535|87.3071|174.6141|349.2282|698.4565|1396.913|2793.826|5587.652|
-|F#|46.2493|92.4986|184.9972|369.9944|739.9888|1479.978|2959.955|5919.911|
-|G|48.9994|97.9989|195.9977|391.9954|783.9909|1567.982|3135.963|6271.927|
-|G#|51.9130|103.8262|207.6523|415.3047|830.6094|1661.219|3322.438|6644.875|
-|A|55.0000|110.0000|220.0000|440.0000|880.0000|1760.000|3520.000|7040.000|
-|A#|58.2705|116.5409|233.0819|466.1638|932.3275|1864.655|3729.310|7458.620|
-|G|61.7354|123.4708|246.9417|493.8833|987.7666|1975.533|3951.066|7902.133| 
+  |Octave<br />/Scale|1|2|3|4|5|6|7|8|
+  |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+  |C|32.7032|65.4064|130.8128|261.6256|523.2511|1046.502|2093.005|4186.009|
+  |C#|34.6478|69.2957|138.5913|277.1826|554.3653|1108.731|2217.461|4434.922|
+  |D|36.7081|73.4162|146.8324|293.6648|587.3295|1174.659|2349.318|4698.636|
+  |D#|38.8909|77.7817|155.5635|311.1270|622.2540|1244.508|2489.016|4978.032|
+  |E|41.2034|82.4069|164.8138|329.6276|659.2551|1318.510|2637.020|5274.041|
+  |F|43.6535|87.3071|174.6141|349.2282|698.4565|1396.913|2793.826|5587.652|
+  |F#|46.2493|92.4986|184.9972|369.9944|739.9888|1479.978|2959.955|5919.911|
+  |G|48.9994|97.9989|195.9977|391.9954|783.9909|1567.982|3135.963|6271.927|
+  |G#|51.9130|103.8262|207.6523|415.3047|830.6094|1661.219|3322.438|6644.875|
+  |A|55.0000|110.0000|220.0000|440.0000|880.0000|1760.000|3520.000|7040.000|
+  |A#|58.2705|116.5409|233.0819|466.1638|932.3275|1864.655|3729.310|7458.620|
+  |G|61.7354|123.4708|246.9417|493.8833|987.7666|1975.533|3951.066|7902.133| 
 
-> Unit : Hz
+  > Unit : Hz
 
 - Source
 
@@ -867,7 +871,7 @@ int main(void)
 - Result
   - Connect the IR sensor to port 1 and reading values ar displayed onscreen.
 
-### Read/Write Dynamixel
+### [Read/Write Dynamixel](#readwrite-dynamixel)
 
 The location of Dynamixel can be set and read. (For more details refer to Dynamixel SDK)
  

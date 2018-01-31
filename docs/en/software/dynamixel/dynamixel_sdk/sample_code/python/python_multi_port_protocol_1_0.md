@@ -237,7 +237,7 @@ dynamixel.closePort(port_num1)
 dynamixel.closePort(port_num2)
 ```
 
--------------------------------------------------------------------------------------
+
 
 - Details
 

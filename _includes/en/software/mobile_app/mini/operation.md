@@ -122,7 +122,7 @@ The ‘Gesture’ tab uses the acceleration sensor of the smart device to enable
   ![](/assets/images/sw/mobile/mini_app_040.jpg)
 
   The pre-designated directions below should be held in your right hand 90 degrees straight from the ground to move forward, backward, left, and right.
-  (: .notice)
+  {: .notice}
 
   ![](/assets/images/sw/mobile/mini_app_041.png)
 

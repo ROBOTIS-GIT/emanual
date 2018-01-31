@@ -331,19 +331,19 @@ int main()
 }
 ```
 
--------------------------------------------------------------------------------------
+
 
 - Details
 
-``` cpp
-#ifdef __linux__
-#include <unistd.h>
-#include <fcntl.h>
-#include <termios.h>
-#elif defined(_WIN32) || defined(_WIN64)
-#include <conio.h>
-#endif
-```
+  ``` cpp
+  #ifdef __linux__
+  #include <unistd.h>
+  #include <fcntl.h>
+  #include <termios.h>
+  #elif defined(_WIN32) || defined(_WIN64)
+  #include <conio.h>
+  #endif
+  ```
 
 This source includes above to get key input interruption while the example is running. Actual functions for getting the input is described in a little below.
 
@@ -662,7 +662,7 @@ int main()
 
 In `main()` function, the codes call actual functions for Dynamixel control.
 
---------------------------------------------------------------------------------
+
 
 ``` cpp
   // Initialize PortHandler Structs

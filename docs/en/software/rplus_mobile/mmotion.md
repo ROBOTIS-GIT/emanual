@@ -25,7 +25,7 @@ sidebar:
     - Hardware : iPhone 4S, iPod 5G, iPad mini, iPad 2 or higher
   - Supports : BT-410
 
-## Menu Description
+# [Menu Description](#menu-description)
 
 ![](/assets/images/sw/mobile/mobile_motion_01.gif)
 

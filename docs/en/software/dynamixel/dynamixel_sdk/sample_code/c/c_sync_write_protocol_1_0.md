@@ -311,7 +311,7 @@ int main()
 }
 ```
 
--------------------------------------------------------------------------------------
+
 
 - Details
 
@@ -623,7 +623,7 @@ int main()
 
 In `main()` function, the codes call actual functions for Dynamixel control.
 
---------------------------------------------------------------------------------
+
 
 ``` cpp
   // Initialize PortHandler Structs

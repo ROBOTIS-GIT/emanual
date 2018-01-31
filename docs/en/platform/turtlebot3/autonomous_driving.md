@@ -43,29 +43,29 @@ Get opened source of what is participated in each competitions!
 
 - Details of track map and referee system (with sources provided)
 
-  - track map : https://github.com/ROBOTIS-GIT/autorace_track
+  - [track map](https://github.com/ROBOTIS-GIT/autorace_track)
 
-  - referee system : https://github.com/ROBOTIS-GIT/autorace_referee
+  - [referee system](https://github.com/ROBOTIS-GIT/autorace_referee)
 
 - Participants sources
 
-| Place | Team                               | Source link                                              |
-|-------|------------------------------------|----------------------------------------------------------|
-|   1   | RealRiceThief                      | https://github.com/KoG-8/Turtlebot_RealRiceThief         |
-|   2   | IronHeart                          | https://github.com/kijongGil/Ironheart                   |
-|   3   | Robit                              | https://github.com/ROBIT-GIT/turtlebot3_autoRace_2017    |
-|   4   | Loading                            | https://github.com/Kihoon0716/self_driving_turtlebot3    |
-|   5   | RunHoney                           | https://github.com/hyunoklee/turtlebot3_RBIZ             |
-|   6   | Sherlotics                         | https://github.com/minbaekkim/turtlebot_autorace         |
-|   7   | FastAndFurious                     | https://github.com/kts006/deu_racer                      |
-|   8   | BonoBono                           | https://github.com/Gaeul/BonobonoTurtlebot               |
-|   9   | BeginAgain                         | https://github.com/yh-na/beginagain                      |
-|   10  | Hanzo                              | https://github.com/DeokYun/autorace                      |
-|   11  | Codis                              | will be released soon                                    |
-|   12  | Zero                               | https://github.com/dongwan123/zero_turtlebot_competition |
-|   13  | CanDynamix                         | https://github.com/candynamix/can_dynamix                |
-|   14  | Cena                               | retire                                                   |
-|   15  | TogetherChaChaCha                  | retire                                                   |
+| Place | Team              | Source link                                                        |
+| ----- | ----------------- | ------------------------------------------------------------------ |
+| 1     | RealRiceThief     | [Github](https://github.com/KoG-8/Turtlebot_RealRiceThief)         |
+| 2     | IronHeart         | [Github](https://github.com/kijongGil/Ironheart)                   |
+| 3     | Robit             | [Github](https://github.com/ROBIT-GIT/turtlebot3_autoRace_2017)    |
+| 4     | Loading           | [Github](https://github.com/Kihoon0716/self_driving_turtlebot3)    |
+| 5     | RunHoney          | [Github](https://github.com/hyunoklee/turtlebot3_RBIZ)             |
+| 6     | Sherlotics        | [Github](https://github.com/minbaekkim/turtlebot_autorace)         |
+| 7     | FastAndFurious    | [Github](https://github.com/kts006/deu_racer)                      |
+| 8     | BonoBono          | [Github](https://github.com/Gaeul/BonobonoTurtlebot)               |
+| 9     | BeginAgain        | [Github](https://github.com/yh-na/beginagain)                      |
+| 10    | Hanzo             | [Github](https://github.com/DeokYun/autorace)                      |
+| 11    | Codis             | will be released soon                                              |
+| 12    | Zero              | [Github](https://github.com/dongwan123/zero_turtlebot_competition) |
+| 13    | CanDynamix        | [Github](https://github.com/candynamix/can_dynamix)                |
+| 14    | Cena              | retire                                                             |
+| 15    | TogetherChaChaCha | retire                                                             |
 
 
 - Videos

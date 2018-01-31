@@ -18,24 +18,24 @@ If you want to use RoboPlus program for [CM-5] (the controller used for Bioloid 
 
 2. Select the correct COM port (if you know) or else use the "Automatic Search" function  to easily find out the appropriate port. .
 
-  ![CM-5_to_PC-02](/assets/images/parts/controller/cm-5/cm_5_connect_pc_02.png)
+    ![CM-5_to_PC-02](/assets/images/parts/controller/cm-5/cm_5_connect_pc_02.png)
 
-  If RoboPlus Task is unable to find a controller, the following error message will be shown.
-  - Check if the controller is connected to the PC. (See controller information on how to connect the controller.)
-  - Check if the controller is turned on.
-  - Check if the correct communication port was chosen.
+    If RoboPlus Task is unable to find a controller, the following error message will be shown.
+    - Check if the controller is connected to the PC. (See controller information on how to connect the controller.)
+    - Check if the controller is turned on.
+    - Check if the correct communication port was chosen.
 
 3. Select the download menu.
 
-  ![CM-5_to_PC-03](/assets/images/parts/controller/cm-5/cm_5_connect_pc_03.png)
+    ![CM-5_to_PC-03](/assets/images/parts/controller/cm-5/cm_5_connect_pc_03.png)
 
-  If the program has an error, you must find the error and correct it. (See "rule check error messages")
+    If the program has an error, you must find the error and correct it. (See "rule check error messages")
 
 4. Download the program.
 
-  ![CM-5_to_PC-04](/assets/images/parts/controller/cm-5/cm_5_connect_pc_04.png)
+    ![CM-5_to_PC-04](/assets/images/parts/controller/cm-5/cm_5_connect_pc_04.png)
 
-  If the downloading fails, it will automatically try again from the beginning.
+    If the downloading fails, it will automatically try again from the beginning.
 
 5. Execute the task code and your robot will move.
   Turn on the controller and execute the downloaded task code(Please refer to each controller information to learn how to execute the task code).
