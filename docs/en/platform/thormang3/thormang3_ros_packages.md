@@ -2049,3 +2049,7 @@ The following are Messages and Service used for the thormang3_offset_tuner_serve
 [geometry_msgs/WrenchStamped]: http://docs.ros.org/api/geometry_msgs/html/msg/WrenchStamped.html
 [thormang3_walking_module_msgs/StepData]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/StepData.msg
 [thormang3_walking_module_msgs/BalanceParam]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/BalanceParam.msg
+[thormang3_foot_step_generator::FootStepCommand]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/FootStepCommand.msg
+[thormang3_foot_step_generator::Step2DArray]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/Step2DArray.msg
+[thormang3_walking_module_msgs::AddStepDataArray]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/AddStepDataArray.srv
+[thormang3_walking_module_msgs::SetBalanceParam]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/SetBalanceParam.srv
