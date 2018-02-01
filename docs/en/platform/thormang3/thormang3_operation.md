@@ -23,68 +23,66 @@ sidebar:
 > Reference : [ROS network Setup, 5. Timing issues](http://wiki.ros.org/ROS/NetworkSetup#Timing_issues.2C_TF_complaining_about_extrapolation_into_the_future.3F)
 
 1. Connect to the **MPC(Motion PC)**
-  - via ssh  
-    1. Run below command on the terminal.  
-      ```
-      ssh robotis@10.17.3.35
-      ```
+    - via ssh  
+      1. Run below command on the terminal.  
+        ```bash
+        $ ssh robotis@10.17.3.35
+        ```
 
-    2. Input password  
-      `111111`  
- 	
-  - via VNC  
+      2. Input password : `111111`  
+   	
+    - via VNC  
    
 2. Synchronize time with the **PPC(Perception PC)**  
-  - If this is the first synchronization, create the script file.   
-    1. Create the script file with an editor.  
-      ```
-      $ gedit ~/timesync
-      ```
+    - If this is the first synchronization, create the script file.   
+      1. Create the script file with an editor.  
+        ```bash
+        $ gedit ~/timesync
+        ```
+          
+      2. Copy below contents in the script file.  
+        ```bash
+        #! /bin/sh
+        sudo date --set='-2 secs'
+        sudo ntpdate 10.17.3.35
+        sudo hwclock -w
+        ```
         
-    2. Copy below contents in the script file.  
+      3. Modify the script file permission(Add execute permission)  
+        ```bash
+        $ sudo chmod +x timesync
+        ```
+         
+      4. Execute the script file to synchronize time.  
+        ```bash
+        $ ~/timesync
+        ```
+            
+    - If this is not the first synchronization, execute the script file.  
       ```bash
-      #! /bin/sh
-      sudo date --set='-2 secs'
-      sudo ntpdate 10.17.3.35
-      sudo hwclock -w
-      ```
-      
-    3. Modify the script file permission(Add execute permission)  
-      ```
-      $ sudo chmod +x timesync
-      ```
-       
-    4. Execute the script file to synchronize time.  
-      ```
       $ ~/timesync
       ```
-          
-  - If this is not the first synchronization, execute the script file.  
-    ```
-    $ ~/timesync
-    ```
 
 ### roscore (PPC)
 1. Connect to the **PPC**
-  - via ssh  
-    1. Run below command on the terminal.  
-      ```
-      ssh robotis@10.17.3.35
-      ```
+    - via ssh  
+      1. Run below command on the terminal.  
+        ```bash
+        $ ssh robotis@10.17.3.35
+        ```
 
-    2. Input password.  
-      `111111`  
-    
-  - via VNC  
+      2. Input password.  
+        `111111`  
+      
+    - via VNC  
    
 2. Launch [roscore](http://wiki.ros.org/roscore)  
   Execute below command on the Terminal  
-    
-  ```
+  ```bash
   $ roscore
   ```
     
-  - If `roscore` is terminated while it is running, relaunch `roscore`, `thormang3 sensors` and `thormang3 manager`.
+    - If `roscore` is terminated while it is running, relaunch `roscore`, `thormang3 sensors` and `thormang3 manager`.
 
 ### thormang3 sensors (PPC)
 1. Connect to the **PPC**  
@@ -100,15 +98,14 @@ Turn on the actuator power before executing THORMANG3 Manager.
 
 1. Connect to the **MPC**  
 2. Get superuser permission  
-  ```
+  ```bash
   $ sudo bash
   ```
    
 3. Execute [thormang3_manager.launch](https://github.com/ROBOTIS-GIT/ROBOTIS-THORMANG-MPC/blob/master/thormang3_manager/launch/thormang3_manager.launch) file  
-  ```
+  ```bash
   # roslaunch thormang3_manager thormang3_manager.launch
   ```
-	
   > Reference :: [thormang3_manager]  
 
 4. If program is loaded, torque of the actuator will be turned on.  
@@ -116,7 +113,6 @@ Turn on the actuator power before executing THORMANG3 Manager.
   - How to check thormang3 working
     > Reference 1 : [How to execute Simple Demonstration]  
     > Reference 2 : [How to execute OPC's GUI program] 
-
 
 ## [Simple Demo](#simple-demo)
 
@@ -133,47 +129,42 @@ Simple demo of the [thormang3_manipulation_module]
 
 1. Connect to the PPC with SSH client program (IP: 10.17.3.35).   
 
-  ```
-  $ ssh 10.17.3.35 -l robotis   
-  ```
+    ```bash
+    $ ssh 10.17.3.35 -l robotis   
+    ```
 
 2. You can execute simple demo with the following command.   
 
-  ```
-  $ rosrun thormang3_manipulation_demo thormang3_manipulation_demo   
-  ```
+    ```bash
+    $ rosrun thormang3_manipulation_demo thormang3_manipulation_demo   
+    ```
 
 3. There are 5 commands for simple demonstration.   
 
-  - demo 1 : go to initial posture (from base module)   
-
-    ```
-    $ rostopic pub -1 /robotis/manipulation_demo/command std_msgs/String "ini_pose"
-    ```
-  
-  - demo 2 : set manipulation module
-  
-    ```
-    $ rostopic pub -1 /robotis/manipulation_demo/command std_msgs/String "set_mode"
-    ```
-  
-  - demo 3 : go to manipulation initial posture - Joint Space Control
-  
-    ```
-    $ rostopic pub -1 /robotis/manipulation_demo/command std_msgs/String "base_pose"
-    ```
-  
-  - demo 4 : move right arm (without torso) - Task Space Control
-  
-    ```
-    $ rostopic pub -1 /robotis/manipulation_demo/command std_msgs/String "right_arm"
-    ```
-  
-  - demo 5 : move left arm (with torso) - Task Space Control
-  
-    ```
-    $ rostopic pub -1 /robotis/manipulation_demo/command std_msgs/String "left_arm"
-    ```
+    - demo 1 : go to initial posture (from base module)   
+      ```bash
+      $ rostopic pub -1 /robotis/manipulation_demo/command std_msgs/String "ini_pose"
+      ```
+    
+    - demo 2 : set manipulation module
+      ```bash
+      $ rostopic pub -1 /robotis/manipulation_demo/command std_msgs/String "set_mode"
+      ```
+    
+    - demo 3 : go to manipulation initial posture - Joint Space Control
+      ```bash
+      $ rostopic pub -1 /robotis/manipulation_demo/command std_msgs/String "base_pose"
+      ```
+    
+    - demo 4 : move right arm (without torso) - Task Space Control
+      ```bash
+      $ rostopic pub -1 /robotis/manipulation_demo/command std_msgs/String "right_arm"
+      ```
+    
+    - demo 5 : move left arm (with torso) - Task Space Control
+      ```bash
+      $ rostopic pub -1 /robotis/manipulation_demo/command std_msgs/String "left_arm"
+      ```
 
 ### [Walking Simple Demo](#walking-simple-demo)
 
@@ -181,46 +172,44 @@ Simple demo of the [thormang3_walking_module]
 
 #### Install & Build
 
-  `Note` Reference : [PPC Installation]
-  {: .notice}
+`Note` Reference : [PPC Installation]
+{: .notice}
 
 #### Usage
 
 1. Connect to the PPC with SSH client program (IP: 10.17.3.35).   
-
-  ```
+  ```bash
   $ ssh 10.17.3.35 -l robotis   
   ```
 
 2. You can execute simple demo with the following command.   
-
-  ```
+  ```bash
   $ rosrun thormang3_walking_demo thormang3_walking_demo_node   
   ```
 
 3. There are 5 commands for simple demonstration.   
 
-  - demo 1 : go to initial posture (from base module)   
-    ```
-    $ rostopic pub -1 /robotis/walking_demo/command std_msgs/String "ini_pose"
-    ```
-  - demo 2 : set manipulation module
-    ``` 
-    $ rostopic pub -1 /robotis/walking_demo/command std_msgs/String "set_mode"
-    ```
-  - demo 3 : make balance algorithm enable/disable – Balance ON / OFF
-    ``` 
-    $ rostopic pub -1 /robotis/walking_demo/command std_msgs/String "balance_on"  
-    $ rostopic pub -1 /robotis/walking_demo/command std_msgs/String "balance_off"   
-    ```
-  - demo 4 : walk forward – One step forward walking (balance should be turned on)
-    ``` 
-    $ rostopic pub -1 /robotis/walking_demo/command std_msgs/String "forward"    
-    ```
-  - demo 5 : walk backward – One step backward walking (balance should be turned on)
-    ``` 
-    $ rostopic pub -1 /robotis/walking_demo/command std_msgs/String "backward"    
-    ```
+    - demo 1 : go to initial posture (from base module)   
+      ```bash
+      $ rostopic pub -1 /robotis/walking_demo/command std_msgs/String "ini_pose"
+      ```
+    - demo 2 : set manipulation module
+      ```bash
+      $ rostopic pub -1 /robotis/walking_demo/command std_msgs/String "set_mode"
+      ```
+    - demo 3 : make balance algorithm enable/disable – Balance ON / OFF
+      ```bash
+      $ rostopic pub -1 /robotis/walking_demo/command std_msgs/String "balance_on"  
+      $ rostopic pub -1 /robotis/walking_demo/command std_msgs/String "balance_off"   
+      ```
+    - demo 4 : walk forward – One step forward walking (balance should be turned on)
+      ```bash 
+      $ rostopic pub -1 /robotis/walking_demo/command std_msgs/String "forward"    
+      ```
+    - demo 5 : walk backward – One step backward walking (balance should be turned on)
+      ```bash 
+      $ rostopic pub -1 /robotis/walking_demo/command std_msgs/String "backward"    
+      ```
 
 ## [GUI Program](#gui-program)
 
@@ -242,13 +231,12 @@ Operating PC is used to control the robot from the outside.
   - environment setting : [http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment](http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment)  
 
 3. ROBOTIS ROS Package  
-  > Reference : [OPC Installation]  
-
+  - `Reference` [OPC Installation]  
   - [ROBOTIS-THORMANG-OPC]
   - [ROSOTIS-THORMANG-Common]
 
 #### OPC Network setting  
-  > Reference : [Example Setting for OPC]  
+- `Reference` [Example Setting for OPC]  
 
 - IP Address : Static IP address is recommended  
   > ex )
@@ -257,17 +245,15 @@ Operating PC is used to control the robot from the outside.
   > Gateway : 10.17.3.1
 
 - ROS network environment setting
-  > Reference : [ROS Network Setup](http://wiki.ros.org/ROS/NetworkSetup)  
+  - `Reference` [ROS Network Setup](http://wiki.ros.org/ROS/NetworkSetup)  
 
 1. Open the bash file to configure environment  
-
-    ```
-    $ gedit ~/.bashrc
-    ```
+  ```bash
+  $ gedit ~/.bashrc
+  ```
 
 2. Append below contents at the end of the `.bashrc` file  
-
-    ```
+    ```bash
     # Set ROS Kinetic
     source /opt/ros/kinetic/setup.bash
     source ~/catkin_ws/devel/setup.bash
@@ -284,7 +270,7 @@ Operating PC is used to control the robot from the outside.
 
 3. Use below command to apply modified configuration or open a new terminal window.  
 
-    ```
+    ```bash
     $ source ~/.bashrc
     ```
 
@@ -311,49 +297,40 @@ Operating PC is used to control the robot from the outside.
   > Reference : [How to run THORMANG3's program]
 
 2. Synchronize time with the PPC(Perception PC)  
-  - If this is the first synchronization, create the script file.  
-    - Create a script file with an editor.  
+    - If this is the first synchronization, create the script file.  
+      - Create a script file with an editor.  
+        ```bash
+        $ gedit ~/timesync
+        ```
+      - Copy below contents in the script file.  
+        ```
+        #! /bin/sh
+        sudo date --set='-2 secs'
+        sudo ntpdate 10.17.3.35
+        sudo hwclock -w
+        ```
+        > PPC(10.17.3.35)  
+      - Modify the script file permission(Add execute permission)  
+        ```bash
+        $ sudo chmod +x timesync
+        ```
+      - Execute the script file to synchronize time.  
+        ```bash
+        $ ~/timesync
+        ```
 
-      ```
-      $ gedit ~/timesync
-      ```
-    
-    - Copy below contents in the script file.  
-
-      ```
-      #! /bin/sh
-      sudo date --set='-2 secs'
-      sudo ntpdate 10.17.3.35
-      sudo hwclock -w
-      ```
-    
-      > PPC(10.17.3.35)  
-
-    - Modify the script file permission(Add execute permission)  
-
-      ```
-      $ sudo chmod +x timesync
-      ```
-
-    - Execute the script file to synchronize time.  
-
-      ```
+    - If this is not the first synchronization, execute the script file.  
+      ```bash
       $ ~/timesync
       ```
 
-  - If this is not the first synchronization, execute the script file.  
-
-    ```
-    $ ~/timesync
-    ```
-
 3. Run Visualization Tool  
   User can monitor the robot with below command.  
-  ```
+  ```bash
   $ roslaunch thormang3_description thormang3_opc.launch
   ```
 
-![](/assets/images/platform/thormang3/thormang3_047.png)
+  ![](/assets/images/platform/thormang3/thormang3_047.png)
 
 ### [Remote Control(GUI Demo)](#remote-controlgui-demo)
 Demo program for remote control is provided.  
@@ -361,7 +338,7 @@ Walking, manipulation, head control are provided.
 
 1. Run thormang3 demo  
   The following command will launch the demo program.  
-    ```
+    ```bash
     $ roslaunch thormand3_demo thormang3_demo.launch
     ```
 
@@ -373,8 +350,7 @@ Walking, manipulation, head control are provided.
 4. Move to `Mode` tab  
 5. Click the mode at the top to activate  
 6. Check all joints are switched to selected mode.  
-
-    ![](/assets/images/platform/thormang3/thormang3_048.png)
+  ![](/assets/images/platform/thormang3/thormang3_048.png)
 
 7. Initial Posture  
   In order to operate the robot safely, the robot should be operated from the initial posture.  
@@ -448,14 +424,14 @@ User can manipulate head joints to move the sensor attached head.
   3. Check the pointcloud  
     Assembled pointcloud can be seen on the RViz screen.  
 
-    - Execute Visualization Tool  
-    - Add topic  
-      - Click `Add` button on the Display window on the left.  
-      - Select `By topic` tab on the new window  
-      - Select `/robotis/sensor/assembled_scan/PointCloud2`  
-    - Check PointCloud on the 3D screen  
-    
-      ![](/assets/images/platform/thormang3/thormang3_057.png)
+      - Execute Visualization Tool  
+      - Add topic  
+        - Click `Add` button on the Display window on the left.  
+        - Select `By topic` tab on the new window  
+        - Select `/robotis/sensor/assembled_scan/PointCloud2`  
+      - Check PointCloud on the 3D screen  
+      
+        ![](/assets/images/platform/thormang3/thormang3_057.png)
 
 - Head Joint Control  
   1. Change the Mode  
@@ -549,7 +525,7 @@ Structure looks like the below figure.
   - FT Sensor calibration is recommended when there are significant environmental changes such as motor replacement and temperature change.
   - FT Sensor calibration can be done as below.  
 
-  > Reference : [How to calibrate feet ft sensors]
+    > Reference : [How to calibrate feet ft sensors]
 
 3. Set Mode
   - Click the `Walking Module` button to switch to Walking Mode.

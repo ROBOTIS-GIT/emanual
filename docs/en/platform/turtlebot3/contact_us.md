@@ -1,15 +1,17 @@
 ---
 layout: archive
 lang: en
-ref: turtlebot3_contactus
+ref: turtlebot3_contact_us
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/turtlebot3/contactus/
+permalink: /docs/en/platform/turtlebot3/contact_us/
 sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
 ---
+
+<div style="counter-reset: h1 24"></div>
 
 # [Contact US](#contact-us)
 
@@ -38,21 +40,21 @@ There are many answers to this question, but we strive to develop and apply prod
 * Address: 26228 Enterprise Ct Lake Forest, CA 92630, USA
 * Tel: +1-949-377-0377
 * Fax: +1-949-242-5112
-* Web: http://en.robotis.com/
+* Web: [http://en.robotis.com/](http://en.robotis.com/)
 * E-Mail: america@robotis.com
 
 **China Office**
 
 * Address: Room 1103, Building B, Jiajing Tiancheng, Chaoyang District, (100102) Beijing, China
 * Tel: +86-10-5726-7179
-* Web: http://cn.robotis.com/
+* Web: [http://cn.robotis.com/](http://cn.robotis.com/)
 * E-Mail: china@robotis.com
 
 **Japan Office**
 
 * Address: BIZ SMART 8F,1 Chome-10-6 Kajichō, Chiyoda-ku, Tōkyō-to
 * Tel: +81-3-4330-3660
-* Web: http://jp.robotis.com/
+* Web: [http://jp.robotis.com/](http://jp.robotis.com/)
 * E-Mail: japan@robotis.com
 
 **Korea Office**
@@ -60,7 +62,7 @@ There are many answers to this question, but we strive to develop and apply prod
 * Address:	#1505, Gasan Digital-1ro 145 (Ace High End Tower 3), Geumchungu, Seoul, South Korea
 * Tel:	+82-70-8671-2609
 * Fax:	+82-70-8230-1336
-* Web: http://wwww.robotis.com/
+* Web: [http://wwww.robotis.com/](http://wwww.robotis.com/)
 * E-Mail: ost@robotis.com
 
 ## [About OST (Open Source Team)](#about-ost-open-source-team)
@@ -76,9 +78,7 @@ There are many answers to this question, but we strive to develop and apply prod
 We are **Open Source Team** in ROBOTIS HQ. With open source hardwares and softwares, our robot friends are hoping to enrich our lives. We mainly develop and support Dynamixel SDK, OpenManipulator, OpenCM, OpenCR and OpenAutonomousCar.
 Our favorite platform is ROS! :) We are delighted to be in charge of developing TurtleBot3, the official reference platform for ROS, and in the future we will be the team that can support you to get closer to your robot dreams.
 
-* GitHub : https://github.com/ROBOTIS-GIT
+* GitHub : [https://github.com/ROBOTIS-GIT](https://github.com/ROBOTIS-GIT)
 * E-Mail : ost@robotis.com
 
-<figure class="video_container">
-  <iframe width="640" height="360" src="https://www.youtube.com/embed/jFvEGKkdOqM?ecver=1" frameborder="0" allowfullscreen></iframe>
-</figure>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/jFvEGKkdOqM?ecver=1" frameborder="0" allowfullscreen></iframe>

@@ -11,13 +11,13 @@ sidebar:
   nav: "ax-s1"
 ---
 
-# Integrated Sensor(AX-S1)
-
 ![](/assets/images/parts/sensors/ax-s1_product.png)
+
+> Integrated Sensor(AX-S1)
 
 # [Introduction](#introduction)
 
-`Warning` AX-S1 has been discontinued.
+`Caution` AX-S1 is **DISCONTINUED**.
 {: .notice--warning}
 
 - AX-S1 is a sensor device, which plays the role of eyes and ears of robots.  Distance of an object, Brightness of surroundings, heat, and sound detection functions are included; additionally, IR remote control receptor and sound-making functions are included.  The configuration and the communication type of AX-S1 are equal to AX-12+'s, but it is not operated by servo motor.

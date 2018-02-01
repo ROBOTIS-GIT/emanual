@@ -11,11 +11,12 @@ sidebar:
   nav: "turtlebot3"
 ---
 
+<div style="counter-reset: h1 13"></div>
+
 # [Autonomous Driving](#autonomous-driving)
 
-<div class="alert alert-info">
-  **Note :** Turtlebot3 has been tested on <kbd>Ubuntu 16.04</kbd> and <kbd>ROS Kinetic Kame</kbd>.
-</div>
+**Note :** Turtlebot3 has been tested on <kbd>Ubuntu 16.04</kbd> and <kbd>ROS Kinetic Kame</kbd>.
+{: .notice--info}
 
 We are currently doing several projects related with the keywords: Autonomous Driving and TurtleBot3s
 
@@ -23,9 +24,7 @@ We are currently doing several projects related with the keywords: Autonomous Dr
 
 In the video, TurtleBot3 gets its eye by attaching a $40 Raspberry Pi Camera and adopts open source from MIT DuckieTown engineering to track the lane.
 
-<figure class="video_container">
-  <iframe width="640" height="360" src="https://www.youtube.com/embed/1V33iEu4ylw" frameborder="0" allowfullscreen></iframe>
-</figure>
+<iframe width="640" height="360" src="https://www.youtube.com/embed/1V33iEu4ylw" frameborder="0" allowfullscreen></iframe>
 
 and soon (In January, 2018), official autonomous driving package for turtlebot3 will be released.
 
@@ -44,59 +43,49 @@ Get opened source of what is participated in each competitions!
 
 - Details of track map and referee system (with sources provided)
 
-  - track map : https://github.com/ROBOTIS-GIT/autorace_track
+  - [track map](https://github.com/ROBOTIS-GIT/autorace_track)
 
-  - referee system : https://github.com/ROBOTIS-GIT/autorace_referee
+  - [referee system](https://github.com/ROBOTIS-GIT/autorace_referee)
 
 - Participants sources
 
-| Place | Team                               | Source link                                              |
-|-------|------------------------------------|----------------------------------------------------------|
-|   1   | RealRiceThief                      | https://github.com/KoG-8/Turtlebot_RealRiceThief         |
-|   2   | IronHeart                          | https://github.com/kijongGil/Ironheart                   |
-|   3   | Robit                              | https://github.com/ROBIT-GIT/turtlebot3_autoRace_2017    |
-|   4   | Loading                            | https://github.com/Kihoon0716/self_driving_turtlebot3    |
-|   5   | RunHoney                           | https://github.com/hyunoklee/turtlebot3_RBIZ             |
-|   6   | Sherlotics                         | https://github.com/minbaekkim/turtlebot_autorace         |
-|   7   | FastAndFurious                     | https://github.com/kts006/deu_racer                      |
-|   8   | BonoBono                           | https://github.com/Gaeul/BonobonoTurtlebot               |
-|   9   | BeginAgain                         | https://github.com/yh-na/beginagain                      |
-|   10  | Hanzo                              | https://github.com/DeokYun/autorace                      |
-|   11  | Codis                              | will be released soon                                    |
-|   12  | Zero                               | https://github.com/dongwan123/zero_turtlebot_competition |
-|   13  | CanDynamix                         | https://github.com/candynamix/can_dynamix                |
-|   14  | Cena                               | retire                                                   |
-|   15  | TogetherChaChaCha                  | retire                                                   |
+| Place | Team              | Source link                                                        |
+| ----- | ----------------- | ------------------------------------------------------------------ |
+| 1     | RealRiceThief     | [Github](https://github.com/KoG-8/Turtlebot_RealRiceThief)         |
+| 2     | IronHeart         | [Github](https://github.com/kijongGil/Ironheart)                   |
+| 3     | Robit             | [Github](https://github.com/ROBIT-GIT/turtlebot3_autoRace_2017)    |
+| 4     | Loading           | [Github](https://github.com/Kihoon0716/self_driving_turtlebot3)    |
+| 5     | RunHoney          | [Github](https://github.com/hyunoklee/turtlebot3_RBIZ)             |
+| 6     | Sherlotics        | [Github](https://github.com/minbaekkim/turtlebot_autorace)         |
+| 7     | FastAndFurious    | [Github](https://github.com/kts006/deu_racer)                      |
+| 8     | BonoBono          | [Github](https://github.com/Gaeul/BonobonoTurtlebot)               |
+| 9     | BeginAgain        | [Github](https://github.com/yh-na/beginagain)                      |
+| 10    | Hanzo             | [Github](https://github.com/DeokYun/autorace)                      |
+| 11    | Codis             | will be released soon                                              |
+| 12    | Zero              | [Github](https://github.com/dongwan123/zero_turtlebot_competition) |
+| 13    | CanDynamix        | [Github](https://github.com/candynamix/can_dynamix)                |
+| 14    | Cena              | retire                                                             |
+| 15    | TogetherChaChaCha | retire                                                             |
 
 
 - Videos
 
 Official Teaser #1
 
-<figure class="video_container">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/9Wnu8If1eS4" frameborder="0" allowfullscreen></iframe>
-</figure>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9Wnu8If1eS4" frameborder="0" allowfullscreen></iframe>
 
 Official Teaser #2
 
-<figure class="video_container">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/47YnSBAssOM" frameborder="0" allowfullscreen></iframe>
-</figure>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/47YnSBAssOM" frameborder="0" allowfullscreen></iframe>
 
 Official Final Video
 
-<figure class="video_container">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/DWDBAHHQi_k" frameborder="0" allowfullscreen></iframe>
-</figure>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DWDBAHHQi_k" frameborder="0" allowfullscreen></iframe>
 
 Video - Team RealRiceThief (1st Place)
 
-<figure class="video_container">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/szhllE1T_cg" frameborder="0" allowfullscreen></iframe>
-</figure>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/szhllE1T_cg" frameborder="0" allowfullscreen></iframe>
 
 Video - Team Sherlotics (Introduction video)
 
-<figure class="video_container">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/dzjsLFj62HE" frameborder="0" allowfullscreen></iframe>
-</figure>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dzjsLFj62HE" frameborder="0" allowfullscreen></iframe>

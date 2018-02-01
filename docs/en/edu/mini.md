@@ -11,8 +11,6 @@ sidebar:
   nav: "mini"
 ---
 
-# ROBOTIS MINI
-
 # [Introduction](#introduction)
 
 ![](/assets/images/edu/mini/mini_product.jpg)
@@ -332,7 +330,7 @@ Please follow the procedure below to recover or update the ROBOTIS MINI’s cont
 
 7. Click the button on the top right to update RoboPlus to the latest version.
 
-  ![](/assets/images/sw/mobile/mini_firmware_07.jpg)
+    ![](/assets/images/sw/mobile/mini_firmware_07.jpg)
 
 8. If any updates were made, close R+ Manager and open the program again.
 

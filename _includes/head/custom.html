@@ -1,5 +1,45 @@
 <!-- start custom head snippets -->
+<script>
+$(function() {
+  return $("h2, h3, h4, h5, h6").each(function(i, el) {
+    var $el, icon, id;
+    $el = $(el);
+    id = $el.attr('id');
+    icon = '<i class="fa fa-link"></i>';
+    if (id) {
+      return $el.append($("<a />").addClass("header-link").attr("href", "#" + id).html(icon));
+    }
+  });
+});
 
+$(function(){
+  $('h1').each(function(){
+    $(this).addClass('class-h1');
+  });
+  $('h2').each(function(){
+    $(this).addClass('class-h2');
+  });
+  $('h3').each(function(){
+    $(this).addClass('class-h3');
+  });
+  $('h4').each(function(){
+    $(this).addClass('class-h4');
+  });
+  $('h5').each(function(){
+    $(this).addClass('class-h5');
+  });
+  $('h6').each(function(){
+    $(this).addClass('class-h6');
+  });
+});
+
+$(function() {
+    $('h1, h2, h3, h4, h5, h6').each(function(i, e) {
+        $(e).nextUntil('h1, h2, h3, h4, h5, h6').wrapAll('<div>');
+    });
+
+});
+</script>
 <!-- insert favicons. use http://realfavicongenerator.net/ -->
 
 <!-- end custom head snippets -->

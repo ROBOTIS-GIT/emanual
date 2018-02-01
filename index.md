@@ -13,29 +13,47 @@ header:
     - excerpt: 'ROBOTIS wiki e-Manual'
 ---
 
-# ROBOTIS e-Manaul
+# ROBOTIS e-Manual
 
 - [Previous e-Manual] will be served as well.
 - New ROBOTIS Community [Forum] is available. Please checkout the [Forum] if you have any issue with ROBOTIS Products.
 
 # Quick References
 
-- `DYNAMIXEL Control Table`
-  - [AX-12W], [AX-12+/12A], [AX-18F/18A]
-  - [EX-106]
-  - [DX-113], [DX-116], [DX-117]
-  - [RX-10], [RX-24F], [RX-28], [RX-64]
-  - [MX-12W], [MX-28], [MX-28(2.0)], [MX-64], [MX-64(2.0)], [MX-106], [MX-106(2.0)]
-  - [XL320], [XL430-W250], [XM430-W210], [XM430-W350], [XH430-W210], [XH430-W350], [XH430-V210], [XH430-V350]
-  - [H54-200-S500-R], [H54-100-S500-R], [H42-20-S300-R]
-  - [M54-60-S250-R], [M54-40-S250-R], [M42-10-S260-R]
-  - [L54-50-S500-R], [L54-50-S290-R], [L54-30-S500-R], [L54-30-S400-R], [L42-10-S300-R]
+## TurtleBot3
+- [Remote PC Software Setup](/docs/en/platform/turtlebot3/pc_software_setup/)
+- [SBC Software Setup](/docs/en/platform/turtlebot3/rpi3_software_setup/)
+- [Bringup Burger](/docs/en/platform/turtlebot3/bringup/#turtlebot3-burger)
+- [Bringup Waffle](/docs/en/platform/turtlebot3/bringup/#turtlebot3-waffle)
+- [SLAM](/docs/en/platform/turtlebot3/slam/)
 
-- `DYNAMIXEL SDK` [SDK Download](https://github.com/ROBOTIS-GIT/DynamixelSDK/releases), [Documentation](https://github.com/ROBOTIS-GIT/DynamixelSDK/wiki)
+## DYNAMIXEL SDK
+- [SDK Download](https://github.com/ROBOTIS-GIT/DynamixelSDK/releases)
+- [Documentation](/docs/en/software/dynamixel/dynamixel_sdk/overview/)
 
-- `DYNAMIXEL Protocol` [Protocol 1.0](/docs/en/dxl/protocol1/), [Protocol 2.0](/docs/en/dxl/protocol2/)
+## DYNAMIXEL Workbench
+- [Package Download](https://github.com/ROBOTIS-GIT/dynamixel-workbench)
+- [Documentation](/docs/en/software/dynamixel/dynamixel_workbench/)
 
-- `Comatibility Guide` [Controller](/docs/en/parts/controller/controller_compatibility/)
+## DYNAMIXEL Control Table
+
+|Model|Details|
+|:---:|:---|
+|EX|[EX-106]|
+|AX|[AX-12W], [AX-12+/12A], [AX-18F/18A]|
+|DX|[DX-113], [DX-116], [DX-117]|
+|RX|[RX-10], [RX-24F], [RX-28], [RX-64]|
+|MX|`Protocol 1.0` [MX-12W], [MX-28], [MX-64], [MX-106]<br>`Protocol 2.0` [MX-28(2.0)], [MX-64(2.0)], [MX-106(2.0)]|
+|X|`L Series` [XL320], [XL430-W250]<br>`M Series`[XM430-W210], [XM430-W350], [XM540-W150], [XM540-W270]<br>`H Series`[XH430-W210], [XH430-W350], [XH430-V210], [XH430-V350]|
+|Pro|`L Seires` [L54-50-S500-R], [L54-50-S290-R], [L54-30-S500-R], [L54-30-S400-R], [L42-10-S300-R]<br>`M Series` [M54-60-S250-R], [M54-40-S250-R], [M42-10-S260-R]<br>`H Series` [H54-200-S500-R], [H54-100-S500-R], [H42-20-S300-R]|
+
+
+## DYNAMIXEL Protocol
+- [Protocol 1.0](/docs/en/dxl/protocol1/)
+- [Protocol 2.0](/docs/en/dxl/protocol2/)
+
+## Compatibility Guide
+- [Controller](/docs/en/parts/controller/controller_compatibility/)
 
 
 [AX-12W]: /docs/en/dxl/ax/ax-12w/#control-table-of-eeprom-area
@@ -61,6 +79,8 @@ header:
 [XM430-W210]: /docs/en/dxl/x/xm430-w210/#control-table-of-eeprom-area
 [XM430-W350]: /docs/en/dxl/x/xm430-w350/#control-table-of-eeprom-area
 [XH430-W210]: /docs/en/dxl/x/xh430-w210/#control-table-of-eeprom-area
+[XM540-W150]: /docs/en/dxl/x/xm540-w150/#control-table-of-eeprom-area
+[XM540-W270]: /docs/en/dxl/x/xm540-w270/#control-table-of-eeprom-area
 [XH430-W350]: /docs/en/dxl/x/xh430-w350/#control-table-of-eeprom-area
 [XH430-V210]: /docs/en/dxl/x/xh430-v210/#control-table-of-eeprom-area
 [XH430-V350]: /docs/en/dxl/x/xh430-v350/#control-table-of-eeprom-area
@@ -75,5 +95,5 @@ header:
 [L54-30-S500-R]: /docs/en/dxl/pro/l54-30-s500-r/#control-table-of-eeprom-area
 [L54-30-S400-R]: /docs/en/dxl/pro/l54-30-s400-r/#control-table-of-eeprom-area
 [L42-10-S300-R]: /docs/en/dxl/pro/l42-10-s300-r/#control-table-of-eeprom-area
-[Forum]: http://www.robotis.com/service/forum.php
+[Forum]: http://en.robotis.com/service/forum.php
 [Previous e-Manual]: http://support.robotis.com

@@ -77,7 +77,7 @@ Multiple "File Motion" windows can be displayed at once.
 
 ![](/assets/images/sw/rplus1/motion/roboplus_motion_004.png)
 
-## <a name="connect-to-robot"></a>[Connect to Robot](#connect-to-robot)
+## [Connect to Robot](#connect-to-robot)
 
 1. Connect the robot to the PC (Please refer to [Controller Information] for details)
 2. Select the communication port to use.  
@@ -144,7 +144,7 @@ Stops the motion that is being carried out.
 
 ![](/assets/images/sw/rplus1/motion/roboplus_motion_013.png)
 
-"Stop Motion" does not stop execution right away.  Instead, the "Exit" page is executed before stopping.  
+"Stop Motion" does not stop execution right away. Instead, the "Exit" page is executed before stopping.  
  
 ## [Emergency Stop](#emergency-stop)
 
@@ -171,8 +171,8 @@ Dynamixels may be controlled by both RoboPlus Motion and RoboPlus Task. Generall
 
 In other words, once a motion is executed, the Dynamixel will be controlled by only RoboPlus Motion, and RoboPlus Task will have no control over the  Dynamixel. However, this control priority may be changed by users, if so desired.  
 There are 2 ways to change the control priority:
-- In the motion data. -> Use [ID Used/Not-Used](#set-id-usage-status) function.
-- In the task code. -> Use the [Joint Offset Parameter]. The advantage of this method is that the control priority may be changed according to the situation.
+- In the motion data : Use [ID Used/Not-Used](#set-id-usage-status) function.
+- In the task code : Use the [Joint Offset Parameter]. The advantage of this method is that the control priority may be changed according to the situation.
  
 ## Dynamixel Auto Shutdown Function
 
@@ -185,9 +185,9 @@ When the Auto Shutdown function is triggered, the following will be seen.
 - The motor will stop moving, resulting in no torque.
 
 To solve this problem, the following steps must be taken.
-- Resolve what triggered the Auto Shutdown function.  
-  If the motor has overheated, let it cool with some rest.  
-  If the motor is under too much load, remove some of the load.
+- Resolve what triggered the Auto Shutdown function.
+- If the motor has overheated, let it cool with some rest.  
+- If the motor is under too much load, remove some of the load.
 - Turn off the Dynamixel and turn it back on.
 
 When creating a motion, the joint may not move. This is because the Auto Shutdown function has been triggered by the causes listed above.
@@ -202,9 +202,9 @@ A pose is the robot's position at a point in time.  It is a collection of motor 
 
 - `Pose of Robot` refers to the position values of the connected robot's joints. When the Pose of Robot is modified, the robot will move accordingly.  
 
-### [Basic Pose Editing](#basic-pose-editing)
+### <a name="basic-pose-editing"></a>[Basic Pose Editing](#basic-pose-editing)
 
-The Basic Pose Editor is a simple editor that may be used for any type of robot. To change the number of ID's used at "Pose of Step," use the [ID Editing Function](#edit-all-pages).
+The Basic Pose Editor is a simple editor that may be used for any type of robot. To change the number of ID's used at "Pose of Step," use the [ID Editing Function](#edit-all-page).
 
 ![](/assets/images/sw/rplus1/motion/roboplus_motion_016.png)
 
@@ -261,7 +261,7 @@ The position value of the selected actuator may be changed after choosing the jo
 
 ![](/assets/images/sw/rplus1/motion/roboplus_motion_025.png)
 
-#### <a name="pose-executioncapture"></a>[Play Pose](#play-pose)
+#### <a name="play-pose"></a>[Play Pose](#play-pose)
 
 To execute a pose, move "Pose of Step" to "Pose of Robot."  
 
@@ -269,7 +269,7 @@ To execute a pose, move "Pose of Step" to "Pose of Robot."
 
 ![](/assets/images/sw/rplus1/motion/roboplus_motion_027.png)
  
-#### [Capture Pose](#capture-pose)
+#### <a name="capture-pose"></a>[Capture Pose](#capture-pose)
 
 To "Capture"(Store) a pose, move "Pose of Robot" to "Pose of Step."
 
@@ -289,11 +289,11 @@ Not only can poses be copied and pasted within the program, but texts from other
 
 - Copy Pose: Click on "Copy" or press Ctrl+C.
 
-![](/assets/images/sw/rplus1/motion/roboplus_motion_032.png)
+  ![](/assets/images/sw/rplus1/motion/roboplus_motion_032.png)
 
 - Paste Pose: Click on "Paste" or press Ctrl+V.
 
-![](/assets/images/sw/rplus1/motion/roboplus_motion_033.png)
+  ![](/assets/images/sw/rplus1/motion/roboplus_motion_033.png)
 
 #### [Mask Pose](#mask-pose)
 
@@ -311,8 +311,14 @@ The pose utility is a tool to easily create a pose based on previously supplied 
 - Mirror: A symmetrical pose can be created or the pose can be reversed.
 - Inverse Kinematics: The accurate positions of each joint can be calculated.
 
-Information regarding the robot are required to create a pose using the pose utility. Therefore, a robot not on the list cannot be used. Some robots may not support the functions listed above. Because the pose utility uses 3D graphics, its performance depends on your graphic card.
-{: .notice}
+{% capture motion_01 %}
+`Note`
+- Information regarding the robot are required to create a pose using the pose utility. Therefore, a robot not on the list cannot be used. 
+- Some robots may not support the functions listed above. 
+- Because the pose utility uses 3D graphics, its performance depends on your graphic card.
+{% endcapture %}
+
+<div class="notice">{{ motion_01 | markdownify }}</div>
  
 ![](/assets/images/sw/rplus1/motion/roboplus_motion_036.png)
  
@@ -320,7 +326,7 @@ Information regarding the robot are required to create a pose using the pose uti
 
 Before using the pose utility, you must first select the robot. Click the robot's name on the list below to select an applicable robot.
  
-`Note` Pose utility cannot be used on a robot not on the list. In case of a user's robot, the motions of the robot must be created by Basic Pose Editor.
+`Note` Pose utility cannot be used on a robot not on the list. In case of a user's robot, the motions of the robot must be created by [Basic Pose Editor](#basic-pose-editing).
 {: .notice}
  
 ![](/assets/images/sw/rplus1/motion/roboplus_motion_037.png)
@@ -474,13 +480,13 @@ Sometimes, mathematical results cannot be obtained by inverse kinematics calcula
 (For instance, in case that the legs are straightened until the end (z=0), X or Y parameter is not changed.)
 {% endcapture %}
 
-<div style="notice">{{ rplusmotion_notice_01 | markdownify }}</div>
+<div class="notice">{{ rplusmotion_notice_01 | markdownify }}</div>
 
 ###### Apply the Result
 
 When Pose of Step is selected, the pose values on the data are changed, and if Pose of Robot is selected, the pose values of robot are changed.
 
-#### [Pose Execution/Capture](pose-executioncapture)
+#### [Pose Execution/Capture](#pose-executioncapture)
 
 ![](/assets/images/sw/rplus1/motion/roboplus_motion_056.png)
 
@@ -493,7 +499,7 @@ Pose of Step means the steps on the `currently selected motion file.  That is, t
 
 ##### Pose Execution/Capture
 
-It is the same function as [Play/Capture Pose](#pose-executioncapture) of the Basic Pose Editor.
+It is the same function as [Play Pose](#play-pose), [Capture Pose](#capture-pose) of the Basic Pose Editor.
 - Pose Execution: Pose of Step is reflected to Pose of Robot.
 - Pose Capture : Pose of Robot is reflected to currently selected Pose of Step.
 
@@ -537,9 +543,7 @@ The selected step may be moved up or down.
 
 ![](/assets/images/sw/rplus1/motion/roboplus_motion_062.png)
 
-### [Pause/Time](#pausetime)
-
-#### Pause
+### [Pause](#pause)
 
 - "Pause" is the time between the end of the current step and the start of the next step.
 - The unit of the value is seconds, and the value can be changed in 0.008 increments.
@@ -548,7 +552,7 @@ The selected step may be moved up or down.
 
   ![](/assets/images/sw/rplus1/motion/roboplus_motion_063.png)
  
-#### Time
+### [Time](#time)
 
 - "Time" is the time between the time from the start of the current step to the end of the current step.
 - The unit of the value is seconds, and the value can be changed in 0.008 increments.
@@ -773,7 +777,7 @@ Motion Offset files(*.ofs) in the PC can be downloaded to the robot.
 - To change all motor values simultaneously Changes the value of every motor at once.
 - To change ID usage status (whether it is being used or not)
  
-### Set Resolution
+### [Set Resolution](#set-resolution)
 
 - The monitor's resolution can be set.
 - For the MX and EX series, please set the resolution value as 4096.  For other Dynamixels, 1024 is the recommended value.
@@ -786,20 +790,20 @@ Motion Offset files(*.ofs) in the PC can be downloaded to the robot.
 
 ![](/assets/images/sw/rplus1/motion/roboplus_motion_093.png)
  
-### Set ID Usage Status
+### <a name="set-id-usage-status"></a>[Set ID Usage Status](#set-id-usage-status)
 
 - RoboPlus Motion can handle the motions of robots with up to 26 motors. (Dynamixel ID between 0 and 25). Set whether an ID is being used to edit only the necessary ID's.
 
 ![](/assets/images/sw/rplus1/motion/roboplus_motion_094.png)
  
-### Exchange ID
+### [Exchange ID](#exchange-id)
 
 The position values of the robot's joints can be easily exchanged.
 Select the 2 ID's to exchange, and then click "Exchange ID."
 
 ![](/assets/images/sw/rplus1/motion/roboplus_motion_095.png)
  
-### Change All Values
+### [Change All Values](#change-all-values)
 
 Use this function to change the value of the selected ID.
 
@@ -867,15 +871,15 @@ Users can make and operate their own robots usig RoboPlus Motion
 - C# Programming
 {% endcapture %}
 
-<div style="notice--warning">{{ roboplus_motion_warning_01 | markdownify }}</div>
+<div class="notice--warning">{{ roboplus_motion_warning_01 | markdownify }}</div>
 
-### Folder Structure
+### [Folder Structure](#folder-structure)
 
 If you look at the folder inside RoboPlus Motion, there are robot information file as shown below.
 (i.e, C:/Program Files/ROBOTIS/RoboPlus/Motion)
-- /Robots: There are files on robot’s information.
-- /Models: There are 3D model data for each part
-- /PlugIn: There are IK(Inverse Kinematics) calculation modules.
+- `/Robots`: There are files on robot’s information.
+- `/Models`: There are 3D model data for each part
+- `/PlugIn`: There are IK(Inverse Kinematics) calculation modules.
 
 In order for users to make their own robot, they need to make their own files and put them into folders accordingly
 
@@ -895,7 +899,7 @@ Robot Information file is written in the format of XML. Users can read the files
 In this part, general information on the robot users making must be recorded.
  
 
-##### &lt;Name&gt;
+#### &lt;Name&gt;
 
 Put in the name that will be shown on the robot list.  
 You can give different "culture" values to show different languages (only for languages supported by RoboPlus Motion)
@@ -906,13 +910,13 @@ You can give different "culture" values to show different languages (only for la
 |jpn|Japanese|
 |N/A|English or any other languages|
  
-```html
+```xml
 <Name>Premium Humanoid A-type</Name> 
 <Name culture=”kor”> Bioloid Premium Type A</Name> 
 ```
 > Example of Bioloid Premium Type A 
  
-##### &lt;Motor&gt;
+#### &lt;Motor&gt;
 
 Input information for the Dynamixels used in robots.
 - id: Dynamixel's ID
@@ -921,7 +925,7 @@ Input information for the Dynamixels used in robots.
  
 ![](/assets/images/sw/rplus1/motion/roboplus_motion_105.png)
  
-```html
+```xml
 <Motor id="1" model="AX-12+" init="205"></Motor>
 <Motor id="2" model="AX-12+" init="818"></Motor>
 <Motor id="3" model="AX-12+" init="251"></Motor>
@@ -941,6 +945,7 @@ Input information for the Dynamixels used in robots.
 <Motor id="17" model="AX-12+" init="512"></Motor>
 <Motor id="18" model="AX-12+" init="512"></Motor>
 ```
+
 > Example of Bioloid Premium Type A
  
 #### &lt;Mirror&gt;
@@ -953,29 +958,31 @@ Only use for Dynamixels in symmetric positions. If there is no symmetrically pos
 - Right: Dynamixel IDs for devices on the right side
 - Left: Dynamixel IDs for devices on the left side
 
-```html
+```xml
 <Mirror>
    <Right>1,3,5,9,11,13,15,17</Right>
    <Left>2,4,6,10,12,14,16,18</Left>
 </Mirror>
 ```
+
 > Example of Bioloid Premium Type A
 
 ![](/assets/images/sw/rplus1/motion/roboplus_motion_109.png)
 
 #### &lt;InverseKinematics&gt;
 
-This connects the modules for Inverse Kinematics computing. Computing modules are in the form of DDL. To learn how to make modules, please refer to "Plug-In SDK Programming" in the next section. If not using Inverse Kinematis, this section can be ignored.
+This connects the modules for Inverse Kinematics computing. Computing modules are in the form of DDL. To learn how to make modules, please refer to [Plug-In SDK Programming](#plug-in-sdk-programming) in the next section. If not using Inverse Kinematis, this section can be ignored.
 
 ![](/assets/images/sw/rplus1/motion/roboplus_motion_110.png)
 
-```html
+```xml
 <InverseKinematics>
    <Module>
       <Name>PremiumHumanoidA.dll</Name>
    </Module>
 </InverseKinematics>
 ```
+
 > Example of Bioloid Premium Type A
 
 #### &lt;Object3D&gt;
@@ -983,7 +990,7 @@ This connects the modules for Inverse Kinematics computing. Computing modules ar
 In this section, robot assembly information is included for 3D display. The robot assembly information is in the Tree structure.
 If 3D display not needed, this section can be ignored.
 
-##### &lt;Part&gt;
+#### &lt;Part&gt;
 
 In this section, each part's information is included. The relationship between parts are expressed through the Tree structure.
 - name: 3D Model name. There is no need to include extensions.  
@@ -1050,7 +1057,7 @@ The following are the basic parts provided with RoboPlus.
 |AX-12 Horn|![](/assets/images/sw/rplus1/motion/roboplus_motion_140.png)|ax-12_horn.igs|
 |AX-S1|![](/assets/images/sw/rplus1/motion/roboplus_motion_141.png)|ax-s1.igs|
 
-### [Plug-In SDK](#plug-in-sdk)
+### <a name="#plug-in-sdk-programming"></a>[Plug-In SDK](#plug-in-sdk)
 
 Users can use Plug-In SDK to add inverse kinematics computing module from "Pose Utility."
 Instruction is given using an example of developing C# from Visual Studio 2005. (Sample example included)
@@ -1058,17 +1065,17 @@ Instruction is given using an example of developing C# from Visual Studio 2005. 
  
 #### Create Project
 
-Go to Visual Studio's menu and select `File -> Create New -> Project`. Then select `Visual C# -> Windows -> Classic Library` to create a new project.
+Go to Visual Studio's menu and select `File` > `Create New` > `Project`. Then select `Visual C#` > `Windows` > `Classic Library` to create a new project.
  
 #### Add Reference
 
-Go to Visual Studio's menu and select `Project -> Add Reference`. When a window box pops up, click "Find" then select `Motion -> PlugInSDK.dll` in the folder Roboplus is installed.(i.e, C:\Program Files\ROBOTIS\RoboPlus\Motion\PlugInSDK.dll)
+Go to Visual Studio's menu and select `Project` > `Add Reference`. When a window box pops up, click "Find" then select `Motion` > `PlugInSDK.dll` in the folder Roboplus is installed.(i.e, C:\Program Files\ROBOTIS\RoboPlus\Motion\PlugInSDK.dll)
  
 #### Implement Interface
 
 Write command lines shown below in the Class file that is to be implemented. (i.e, Class1.cs)
 
-```code
+```csharp
 using ROBOTIS.MotionEditor.SDK  // add namespace
 namespace MyPlugIn
 {
@@ -1123,16 +1130,17 @@ By clicking the "reset" button on RoboPlus Motion,  users can default the positi
 If successful with building the project, copy the DLL file to the "PlugIn" folder inside the RoboPlus Motion folder. (For example, C:\Program Files\ROBOTIS\RoboPlus\Motion\PlugIn)  
 In robot informational file (*.rbt), write DLL information that wil compute inverse kinematics.
 
-```html
+```xml
 <InverseKinematics>
    <Module>
       <Name>PremiumHumanoidA.dll</Name>
    </Module>
 </InverseKinematics>
 ```
+
 > Example of Bioloid Premium Type A
 
 Run RoboPlus Motion and check if the (new) robot is operating properly.
 
-
 [Joint Offset Parameter]: /docs/en/software/rplus1/task/programming_02/#joint-offset
+[ID Editing Function]: ???

@@ -80,6 +80,8 @@
 
 <link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="ROBOTIS e-Manual Feed">
 
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
 <!-- http://t.co/dKP3o1e -->
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
@@ -106,10 +108,78 @@
 <meta http-equiv="cleartype" content="on">
 
     <!-- start custom head snippets -->
+<script>
+$(function() {
+  return $("h2, h3, h4, h5, h6").each(function(i, el) {
+    var $el, icon, id;
+    $el = $(el);
+    id = $el.attr('id');
+    icon = '<i class="fa fa-link"></i>';
+    if (id) {
+      return $el.append($("<a />").addClass("header-link").attr("href", "#" + id).html(icon));
+    }
+  });
+});
 
+$(function(){
+  $('h1').each(function(){
+    $(this).addClass('class-h1');
+  });
+  $('h2').each(function(){
+    $(this).addClass('class-h2');
+  });
+  $('h3').each(function(){
+    $(this).addClass('class-h3');
+  });
+  $('h4').each(function(){
+    $(this).addClass('class-h4');
+  });
+  $('h5').each(function(){
+    $(this).addClass('class-h5');
+  });
+  $('h6').each(function(){
+    $(this).addClass('class-h6');
+  });
+});
+
+$(function() {
+    $('h1, h2, h3, h4, h5, h6').each(function(i, e) {
+        $(e).nextUntil('h1, h2, h3, h4, h5, h6').wrapAll('<div>');
+    });
+
+});
+</script>
 <!-- insert favicons. use http://realfavicongenerator.net/ -->
 
 <!-- end custom head snippets -->
+
+    <script>
+      var toggle_google = 0;
+      var mobile_width = 960;
+      
+      function extendgoogletool() {
+        if (toggle_google == 0) {
+          google_tools.classList.add("extend_googletools");
+          switch_ko_en.classList.add("show_switch_ko_en");
+          toggle_google = 1;
+        }
+        else {
+          google_tools.classList.remove("extend_googletools");
+          switch_ko_en.classList.remove("show_switch_ko_en");
+          toggle_google = 0;
+        }
+      }
+    </script>
+    <script>
+    $(document).ready(function() {
+
+    	$('.popup').magnificPopup({
+    		type: 'ajax',
+    		alignTop: true,
+    		overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
+    	});
+    });
+    </script>
   </head>
 
   <body class="layout--home">
@@ -120,38 +190,382 @@
     <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
-      <nav id="site-nav" class="greedy-nav">
-        <a class="site-title" href="http://localhost:4000/"><img src="/assets/images/robotis_logo.gif" style="padding-right:10px;">e-Manual</a>
+      <a class="site-title" href="http://localhost:4000/"><img class="logo" id="logo" src="/assets/images/robotis_emanual_logo.png"></a>
+      <!-- Google Custom Search -->
+      <form class="searchbox" method="get" id="site_search">
+        <script>
+          (function() {
+            var cx = '003548387656725317882:3pwl9jljqvi';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+          })();
+        </script>
+        <gcse:search></gcse:search>
+      </form>
+      <!-- end of Google Custom Search -->
+      <button class="google_button" id="google_button" onclick="extendgoogletool()"><img src="https://www.google.com/images/cleardot.gif" class="goog-te-gadget-icon" alt="" style="background-image: url(&quot;https://translate.googleapis.com/translate_static/img/te_ctrl3.gif&quot;); background-position: -65px 0px;"></button>
+      <div class="google_tools" id="google_tools">
+        <!-- Google Translation -->
+        <div id="google_translate_element"></div><script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'ar,de,es,fr,hi,ja,ko,pt,ru,sv,th,tr,vi,zh-CN', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, multilanguagePage: true, gaTrack: true, gaId: 'UA-83196341'}, 'google_translate_element');
+        }
+        </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <!-- end of Google Translation -->  
         
+        
+        <button class="switch_ko_en" id="switch_ko_en">
+          
+      </div>
+      
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="mobile_nav__items">
         
 
-        <form method="get" id="site_search" style="margin:0 0 0 0; position:absolute; right:0; width:30%;">
-          <script>
-            (function() {
-              var cx = '003548387656725317882:3pwl9jljqvi';
-              var gcse = document.createElement('script');
-              gcse.type = 'text/javascript';
-              gcse.async = true;
-              gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-              var s = document.getElementsByTagName('script')[0];
-              s.parentNode.insertBefore(gcse, s);
-            })();
-          </script>
-          <gcse:search></gcse:search>
           
-        </form>
-      </nav>
+
+          
+          <li class="mobile_depth_1">
+            <input type="checkbox" name="mobile_nav_depth_1" id="">
+            <label for=""></label>
+            <ul>
+            
+              
+              
+              
+                
+              
+            
+              
+              
+              
+                
+              
+            
+              
+              
+              
+                
+              
+            
+              
+              
+              
+                
+              
+            
+              
+              
+              
+                
+              
+            
+              
+              
+              
+                
+              
+            
+              
+              
+              
+                
+              
+            
+              
+              
+              
+                
+              
+            
+              
+              
+              
+                
+              
+            
+            </ul>
+          
+
+          
+          </li>
+          
+        
+
+          
+
+          
+          <li class="mobile_depth_1">
+            <input type="checkbox" name="mobile_nav_depth_1" id="">
+            <label for=""></label>
+            <ul>
+            
+              
+              
+              
+                
+              
+            
+              
+              
+              
+                
+              
+            
+              
+              
+              
+                
+              
+            
+              
+              
+              
+                
+              
+            
+              
+              
+              
+                
+              
+            
+              
+              
+              
+                
+              
+            
+              
+              
+              
+                
+              
+            
+              
+              
+              
+                
+              
+            
+              
+              
+              
+                
+              
+            
+            </ul>
+          
+
+          
+          </li>
+          
+        
+
+          
+
+          
+          <li class="mobile_depth_1">
+            <input type="checkbox" name="mobile_nav_depth_1" id="">
+            <label for=""></label>
+            <ul>
+            
+              
+              
+              
+                
+              
+            
+              
+              
+              
+                
+              
+            
+              
+              
+              
+                
+              
+            
+              
+              
+              
+                
+              
+            
+              
+              
+              
+                
+              
+            
+              
+              
+              
+                
+              
+            
+              
+              
+              
+                
+              
+            
+              
+              
+              
+                
+              
+            
+              
+              
+              
+                
+              
+            
+            </ul>
+          
+
+          
+          </li>
+          
+        
+
+          
+
+          
+          <li class="mobile_depth_1">
+            <input type="checkbox" name="mobile_nav_depth_1" id="">
+            <label for=""></label>
+            <ul>
+            
+              
+              
+              
+                
+              
+            
+              
+              
+              
+                
+              
+            
+              
+              
+              
+                
+              
+            
+              
+              
+              
+                
+              
+            
+              
+              
+              
+                
+              
+            
+              
+              
+              
+                
+              
+            
+              
+              
+              
+                
+              
+            
+            </ul>
+          
+
+          
+          </li>
+          
+        
+
+          
+
+          
+          <li class="mobile_depth_1">
+            <input type="checkbox" name="mobile_nav_depth_1" id="">
+            <label for=""></label>
+            <ul>
+            
+              
+              
+              
+                
+              
+            
+              
+              
+              
+                
+              
+            
+              
+              
+              
+                
+              
+            
+              
+              
+              
+                
+              
+            
+              
+              
+              
+                
+              
+            
+              
+              
+              
+                
+              
+            
+            </ul>
+          
+
+          
+          </li>
+          
+        
+
+          
+
+          
+          <li class="mobile_depth_1">
+            <a href="http://localhost:4000/docs/"></a>
+          </li>
+          
+
+          
+        
+        </ul>
+
     </div>
 
-    <div class="container">
+    <div class="container" id="container">
       
         
 
         <div class="dropdown">
-          
-          <button class="dropbtn">
-            DYNAMIXEL
-          </button>
           
 
           
@@ -163,6 +577,29 @@
               
 
               
+              <div class="dropdown-2nd-content">
+                
+                  
+
+                  
+                
+                  
+
+                  
+                
+                  
+
+                  
+                
+              </div>
+              
+
+            </div>
+            
+              <div class="dropdown-content-wrapper">
+              
+
+              
 
               
               <div class="dropdown-2nd-content">
@@ -170,17 +607,208 @@
                   
 
                   
+                
+              </div>
+              
+
+            </div>
+            
+              <div class="dropdown-content-wrapper">
+              
+
+              
+
+              
+              <div class="dropdown-2nd-content">
+                
+                  
 
                   
                 
                   
 
                   
+                
+                  
+
+                  
+                
+              </div>
+              
+
+            </div>
+            
+              <div class="dropdown-content-wrapper">
+              
+
+              
+
+              
+              <div class="dropdown-2nd-content">
+                
+                  
 
                   
                 
                   
 
+                  
+                
+                  
+
+                  
+                
+                  
+
+                  
+                
+              </div>
+              
+
+            </div>
+            
+              <div class="dropdown-content-wrapper">
+              
+
+              
+
+              
+              <div class="dropdown-2nd-content">
+                
+                  
+
+                  
+                
+                  
+
+                  
+                
+                  
+
+                  
+                
+                  
+
+                  
+                
+                  
+
+                  
+                
+                  
+
+                  
+                
+                  
+
+                  
+                
+              </div>
+              
+
+            </div>
+            
+              <div class="dropdown-content-wrapper">
+              
+
+              
+
+              
+              <div class="dropdown-2nd-content">
+                
+                  
+
+                  
+                
+                  
+
+                  
+                
+                  
+
+                  
+                
+                  
+
+                  
+                
+                  
+
+                  
+                
+                  
+
+                  
+                
+                  
+
+                  
+                
+                  
+
+                  
+                
+                  
+
+                  
+                
+                  
+
+                  
+                
+              </div>
+              
+
+            </div>
+            
+              <div class="dropdown-content-wrapper">
+              
+
+              
+
+              
+              <div class="dropdown-2nd-content">
+                
+                  
+
+                  
+                
+                  
+
+                  
+                
+                  
+
+                  
+                
+                  
+
+                  
+                
+                  
+
+                  
+                
+                  
+
+                  
+                
+                  
+
+                  
+                
+                  
+
+                  
+                
+                  
+
+                  
+                
+                  
+
+                  
+                
                   
 
                   
@@ -197,307 +825,9 @@
 
               
 
-              
-              <div class="dropdown-2nd-content">
-                
-                  
-
-                  
-
-                  
-                
-              </div>
-              
-
             </div>
             
               <div class="dropdown-content-wrapper">
-              
-
-              
-
-              
-
-              
-              <div class="dropdown-2nd-content">
-                
-                  
-
-                  
-
-                  
-                
-                  
-
-                  
-
-                  
-                
-                  
-
-                  
-
-                  
-                
-              </div>
-              
-
-            </div>
-            
-              <div class="dropdown-content-wrapper">
-              
-
-              
-
-              
-
-              
-              <div class="dropdown-2nd-content">
-                
-                  
-
-                  
-
-                  
-                
-                  
-
-                  
-
-                  
-                
-                  
-
-                  
-
-                  
-                
-                  
-
-                  
-
-                  
-                
-              </div>
-              
-
-            </div>
-            
-              <div class="dropdown-content-wrapper">
-              
-
-              
-
-              
-
-              
-              <div class="dropdown-2nd-content">
-                
-                  
-
-                  
-
-                  
-                
-                  
-
-                  
-
-                  
-                
-                  
-
-                  
-
-                  
-                
-                  
-
-                  
-
-                  
-                
-                  
-
-                  
-
-                  
-                
-                  
-
-                  
-
-                  
-                
-                  
-
-                  
-
-                  
-                
-              </div>
-              
-
-            </div>
-            
-              <div class="dropdown-content-wrapper">
-              
-
-              
-
-              
-
-              
-              <div class="dropdown-2nd-content">
-                
-                  
-
-                  
-
-                  
-                
-                  
-
-                  
-
-                  
-                
-                  
-
-                  
-
-                  
-                
-                  
-
-                  
-
-                  
-                
-                  
-
-                  
-
-                  
-                
-                  
-
-                  
-
-                  
-                
-                  
-
-                  
-
-                  
-                
-                  
-
-                  
-
-                  
-                
-              </div>
-              
-
-            </div>
-            
-              <div class="dropdown-content-wrapper">
-              
-
-              
-
-              
-
-              
-              <div class="dropdown-2nd-content">
-                
-                  
-
-                  
-
-                  
-                
-                  
-
-                  
-
-                  
-                
-                  
-
-                  
-
-                  
-                
-                  
-
-                  
-
-                  
-                
-                  
-
-                  
-
-                  
-                
-                  
-
-                  
-
-                  
-                
-                  
-
-                  
-
-                  
-                
-                  
-
-                  
-
-                  
-                
-                  
-
-                  
-
-                  
-                
-                  
-
-                  
-
-                  
-                
-                  
-
-                  
-
-                  
-                
-              </div>
-              
-
-            </div>
-            
-              <div class="dropdown-content-wrapper">
-              
-
-              
-
-              
-
-              
-
-            </div>
-            
-              <div class="dropdown-content-wrapper">
-              
-
               
 
               
@@ -515,10 +845,6 @@
 
         <div class="dropdown">
           
-          <button class="dropbtn">
-            PLATFORM
-          </button>
-          
 
           
             <div class="dropdown-content">
@@ -530,24 +856,9 @@
 
               
 
-              
-
             </div>
             
               <div class="dropdown-content-wrapper">
-              
-
-              
-
-              
-
-              
-
-            </div>
-            
-              <div class="dropdown-content-wrapper">
-              
-
               
 
               
@@ -563,24 +874,9 @@
 
               
 
-              
-
             </div>
             
               <div class="dropdown-content-wrapper">
-              
-
-              
-
-              
-
-              
-
-            </div>
-            
-              <div class="dropdown-content-wrapper">
-              
-
               
 
               
@@ -596,6 +892,13 @@
 
               
 
+            </div>
+            
+              <div class="dropdown-content-wrapper">
+              
+
+              
+
               
 
             </div>
@@ -603,6 +906,22 @@
               <div class="dropdown-content-wrapper">
               
 
+              
+
+              
+
+            </div>
+            
+              <div class="dropdown-content-wrapper">
+              
+
+              
+
+              
+
+            </div>
+            
+              <div class="dropdown-content-wrapper">
               
 
               
@@ -620,10 +939,6 @@
 
         <div class="dropdown">
           
-          <button class="dropbtn">
-            EDUCATION
-          </button>
-          
 
           
             <div class="dropdown-content">
@@ -634,30 +949,20 @@
               
 
               
-
-              
               <div class="dropdown-2nd-content">
                 
                   
 
                   
+                
+                  
 
                   
                 
                   
 
                   
-
-                  
                 
-                  
-
-                  
-
-                  
-                
-                  
-
                   
 
                   
@@ -673,24 +978,12 @@
               
 
               
-
-              
               <div class="dropdown-2nd-content">
                 
                   
 
                   
-
-                  
                 
-                  
-
-                  
-
-                  
-                
-                  
-
                   
 
                   
@@ -698,17 +991,15 @@
                   
 
                   
+                
+                  
 
                   
                 
                   
 
                   
-
-                  
                 
-                  
-
                   
 
                   
@@ -724,24 +1015,24 @@
               
 
               
-
-              
               <div class="dropdown-2nd-content">
                 
                   
 
                   
+                
+                  
 
                   
                 
                   
 
                   
-
-                  
                 
                   
 
+                  
+                
                   
 
                   
@@ -757,24 +1048,16 @@
               
 
               
-
-              
               <div class="dropdown-2nd-content">
                 
                   
 
                   
-
-                  
                 
                   
 
                   
-
-                  
                 
-                  
-
                   
 
                   
@@ -790,24 +1073,16 @@
               
 
               
-
-              
               <div class="dropdown-2nd-content">
                 
                   
 
                   
-
-                  
                 
                   
 
                   
-
-                  
                 
-                  
-
                   
 
                   
@@ -823,18 +1098,12 @@
               
 
               
-
-              
               <div class="dropdown-2nd-content">
                 
                   
 
                   
-
-                  
                 
-                  
-
                   
 
                   
@@ -850,18 +1119,12 @@
               
 
               
-
-              
               <div class="dropdown-2nd-content">
                 
                   
 
                   
-
-                  
                 
-                  
-
                   
 
                   
@@ -877,24 +1140,12 @@
               
 
               
-
-              
               <div class="dropdown-2nd-content">
                 
                   
 
                   
-
-                  
                 
-                  
-
-                  
-
-                  
-                
-                  
-
                   
 
                   
@@ -902,17 +1153,15 @@
                   
 
                   
+                
+                  
 
                   
                 
                   
 
                   
-
-                  
                 
-                  
-
                   
 
                   
@@ -923,8 +1172,6 @@
             </div>
             
               <div class="dropdown-content-wrapper">
-              
-
               
 
               
@@ -942,10 +1189,6 @@
 
         <div class="dropdown">
           
-          <button class="dropbtn">
-            SOFTWARE
-          </button>
-          
 
           
             <div class="dropdown-content">
@@ -956,24 +1199,12 @@
               
 
               
-
-              
               <div class="dropdown-2nd-content">
                 
                   
 
                   
-
-                  
                 
-                  
-
-                  
-
-                  
-                
-                  
-
                   
 
                   
@@ -989,30 +1220,16 @@
               
 
               
-
-              
               <div class="dropdown-2nd-content">
                 
                   
 
                   
-
-                  
                 
                   
 
                   
-
-                  
                 
-                  
-
-                  
-
-                  
-                
-                  
-
                   
 
                   
@@ -1028,24 +1245,12 @@
               
 
               
-
-              
               <div class="dropdown-2nd-content">
                 
                   
 
                   
-
-                  
                 
-                  
-
-                  
-
-                  
-                
-                  
-
                   
 
                   
@@ -1053,11 +1258,7 @@
                   
 
                   
-
-                  
                 
-                  
-
                   
 
                   
@@ -1073,30 +1274,24 @@
               
 
               
-
-              
               <div class="dropdown-2nd-content">
                 
                   
 
                   
+                
+                  
 
                   
                 
                   
 
                   
-
-                  
                 
                   
 
                   
-
-                  
                 
-                  
-
                   
 
                   
@@ -1112,30 +1307,20 @@
               
 
               
-
-              
               <div class="dropdown-2nd-content">
                 
                   
 
                   
+                
+                  
 
                   
                 
                   
 
                   
-
-                  
                 
-                  
-
-                  
-
-                  
-                
-                  
-
                   
 
                   
@@ -1148,6 +1333,29 @@
               <div class="dropdown-content-wrapper">
               
 
+              
+
+              
+              <div class="dropdown-2nd-content">
+                
+                  
+
+                  
+                
+                  
+
+                  
+                
+                  
+
+                  
+                
+              </div>
+              
+
+            </div>
+            
+              <div class="dropdown-content-wrapper">
               
 
               
@@ -1165,10 +1373,6 @@
 
         <div class="dropdown">
           
-          <button class="dropbtn">
-            PARTS
-          </button>
-          
 
           
             <div class="dropdown-content">
@@ -1179,24 +1383,12 @@
               
 
               
-
-              
               <div class="dropdown-2nd-content">
                 
                   
 
                   
-
-                  
                 
-                  
-
-                  
-
-                  
-                
-                  
-
                   
 
                   
@@ -1204,17 +1396,7 @@
                   
 
                   
-
-                  
                 
-                  
-
-                  
-
-                  
-                
-                  
-
                   
 
                   
@@ -1222,17 +1404,7 @@
                   
 
                   
-
-                  
                 
-                  
-
-                  
-
-                  
-                
-                  
-
                   
 
                   
@@ -1240,11 +1412,19 @@
                   
 
                   
+                
+                  
 
                   
                 
                   
 
+                  
+                
+                  
+
+                  
+                
                   
 
                   
@@ -1260,24 +1440,12 @@
               
 
               
-
-              
               <div class="dropdown-2nd-content">
                 
                   
 
                   
-
-                  
                 
-                  
-
-                  
-
-                  
-                
-                  
-
                   
 
                   
@@ -1285,17 +1453,19 @@
                   
 
                   
+                
+                  
 
                   
                 
                   
 
                   
-
-                  
                 
                   
 
+                  
+                
                   
 
                   
@@ -1311,30 +1481,20 @@
               
 
               
-
-              
               <div class="dropdown-2nd-content">
                 
                   
 
                   
+                
+                  
 
                   
                 
                   
 
                   
-
-                  
                 
-                  
-
-                  
-
-                  
-                
-                  
-
                   
 
                   
@@ -1350,18 +1510,16 @@
               
 
               
-
-              
               <div class="dropdown-2nd-content">
                 
                   
 
                   
-
-                  
                 
                   
 
+                  
+                
                   
 
                   
@@ -1377,24 +1535,12 @@
               
 
               
-
-              
               <div class="dropdown-2nd-content">
                 
                   
 
                   
-
-                  
                 
-                  
-
-                  
-
-                  
-                
-                  
-
                   
 
                   
@@ -1402,17 +1548,7 @@
                   
 
                   
-
-                  
                 
-                  
-
-                  
-
-                  
-                
-                  
-
                   
 
                   
@@ -1420,17 +1556,7 @@
                   
 
                   
-
-                  
                 
-                  
-
-                  
-
-                  
-                
-                  
-
                   
 
                   
@@ -1438,17 +1564,23 @@
                   
 
                   
+                
+                  
 
                   
                 
                   
 
                   
+                
+                  
 
                   
                 
                   
 
+                  
+                
                   
 
                   
@@ -1464,12 +1596,8 @@
               
 
               
-
-              
               <div class="dropdown-2nd-content">
                 
-                  
-
                   
 
                   
@@ -1487,14 +1615,6 @@
         
 
         <div class="dropdown">
-          
-          <button class="dropbtn">
-            
-              
-                <a href="http://localhost:4000/docs//faq/" style="color:#fff;text-decoration:none;">
-              FAQ</a>
-            
-          </button>
           
 
           
@@ -1502,6 +1622,7 @@
         </div>
       
     </div>
+    
     <div>
       <ul id="search_results" style="margin: 0; background-color: #ffebeb"></ul>
     </div>
@@ -1509,15 +1630,47 @@
 </div>
 
 
-
-
     
 
 
 
+<script>
+  var side_nav = document.getElementById("sidebar");
+  var offset = 105;
+
+  window.onscroll = function () {
+    stickynav()
+  };
+  
+  function stickynav() {
+    if (window.pageYOffset > offset) {
+      sidebar.classList.add("sticky_sidebar");
+    }
+    else {
+      sidebar.classList.remove("sticky_sidebar");
+    }
+  }
+  
+  var toggle = 0;
+  var mobile_width = 960;
+  
+  function extendnav() {
+    if (document.body.clientWidth < mobile_width ) {
+      if (toggle == 0) {
+        sidebar.classList.add("extend_sidebar");
+        toggle = 1;
+      }
+      else {
+        sidebar.classList.remove("extend_sidebar");
+        toggle = 0;
+      }
+    }
+  }
+</script>
+
 <div id="main" role="main">
   
-  <div class="sidebar sticky">
+  <div class="sidebar__left" id="sidebar">
   
 
 <div itemscope itemtype="http://schema.org/Person">
@@ -1605,8 +1758,10 @@
   </div>
 
 
-  <div class="archive">
-    <a href="/blob/master/docs/help.html" itemprop="sameAs" style="font-size:16px;float:right;">
+  <button class="nav_button" id="nav_button" onclick="extendnav()">ToC</button>
+  <button class="backtotop" id="backtotop"><a href="#">&#9650;<br />TOP</a></button>
+  <div class="archive" id="archive">
+    <a href="/blob/master/docs/help.html" itemprop="sameAs" style="font-size:16px; float:right; margin: 10px 20px; text-decoration: none;">
       <i class="fa fa-fw fa-github" aria-hidden="true"></i> Edit on GitHub
     </a>
     <h3 class="archive__subtitle">Recent Posts</h3>
@@ -1627,7 +1782,7 @@
 <!-- end custom footer snippets -->
         
 
-<div class="page__footer-copyright">&copy; 2017 ROBOTIS. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2018 ROBOTIS. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>

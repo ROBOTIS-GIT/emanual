@@ -11,29 +11,32 @@ sidebar:
   nav: "turtlebot3"
 ---
 
+<div style="counter-reset: h1 5"></div>
+<div style="counter-reset: h2 1"></div>
+
+# [SBC Software Setup](#sbc-software-setup)
+
 ## [[Short] Install Linux on TurtleBot3 Waffle (Intel® Joule™)](#short-install-linux-on-turtlebot3-waffle-intel-joule)
 
 In this section, the Alternative Ubuntu Desktop 16.04 LTS will be installed on Intel® Joule™.
 
 **[Remote PC]** Download Ubuntu image `Alternative Ubuntu 16.04 for Intel® Joule™` from the below link.
 
-- http://people.canonical.com/~platform/snappy/tuchuck/desktop-final/tuchuck-xenial-desktop-iso-20170317-0.iso
+- [Download Ubuntu 16.04 for Intel® Joule™](http://people.canonical.com/~platform/snappy/tuchuck/desktop-final/tuchuck-xenial-desktop-iso-20170317-0.iso)
 
 **[Remote PC]** In order to make a bootable installation USB drive, please follow the [Alternative install(Ubuntu Desktop 16.04 LTS)][alternative-installubuntu-desktop-1604-lts] section from the below link.
 
-- https://developer.ubuntu.com/core/get-started/intel-joule
+- [Make a bootable installation USB drive](https://developer.ubuntu.com/core/get-started/intel-joule)
 
 **[Remote PC]** Before getting started, The board needs to have its BIOS updated to [BIOS version #193][bios-version-193] to install Ubuntu Image. Download [BIOS version #193][bios-version-193] and flash the BIOS into the Joule by following instructions in the below link.
 
-- https://software.intel.com/en-us/flashing-the-bios-on-joule
+- [BIOS update](https://software.intel.com/en-us/flashing-the-bios-on-joule)
 
-<div class="alert alert-warning">
-  **Warning :** Updating to the latest BIOS(1J2 or higher) may cause unexpected problem of `Intel® Joule™` with Ubuntu 16.04 LTS. Please use only the recommended [BIOS version #193][bios-version-193].
-</div>
+**Warning :** Updating to the latest BIOS(1J2 or higher) may cause unexpected problem of `Intel® Joule™` with Ubuntu 16.04 LTS. Please use only the recommended [BIOS version #193][bios-version-193].
+{: .notice--warning}
 
-<div class="alert alert-warning">
-  **Warning :** `Intel® Joule™` comes with `passive heatsink` in the package. It is recommended to use the heatsink. In order to operate Joule without the heatsink, please follow the extra instruction: https://software.intel.com/en-us/node/721471
-</div>
+**Warning :** `Intel® Joule™` comes with `passive heatsink` in the package. It is recommended to use the heatsink. In order to operate Joule without the heatsink, please follow the extra [instruction](https://software.intel.com/en-us/node/721471)
+{: .notice--warning}
 
 [bios-version-193]: https://downloadmirror.intel.com/26206/eng/joule-firmware-2017-02-19-193-public.zip
 [alternative-installubuntu-desktop-1604-lts]: https://developer.ubuntu.com/core/get-started/intel-joule#alternative-install:-ubuntu-desktop-16.04-lts

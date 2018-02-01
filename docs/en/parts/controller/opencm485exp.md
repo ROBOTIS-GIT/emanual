@@ -11,9 +11,9 @@ sidebar:
   nav: "opencm485exp"
 ---
 
-# OpenCM 485 Expansion Board
-
 ![](/assets/images/parts/controller/opencm904/opencm485exp_product.jpg)
+
+> OpenCM 485 Expansion Board
 
 # [Introduction](#introduction)
 
@@ -54,8 +54,7 @@ sidebar:
     
 2. OpenCM9.04 is mounted onto OpenCM 485 EXP as shown below.
 
-  `Caution` The orientation of the connection must be correct.
-  {: .notice--warning}
+    `Caution` The orientation of the connection must be correct.{: .notice--warning}
 
     ![](/assets/images/parts/controller/opencm904/opencm485exp_03.jpg)
  
@@ -96,24 +95,24 @@ OpenCM 485 EXP’s Dynamixel 485 bus operates as a Dynamixel bus using OpenCM9.0
 
     ![](/assets/images/parts/controller/opencm904/opencm485exp_09.jpg)
             
-3. OpenCM 485 EXP’s 485 Bus sends and receives communication packets from OpenCM9.04’s Serial3(USART3).
-Dynamixel Class variable MUST be set to 3 once it has been declared.
+3. OpenCM 485 EXP’s 485 Bus sends and receives communication packets from OpenCM9.04’s Serial3(USART3).  
+  Dynamixel Class variable MUST be set to 3 once it has been declared.
 
-```cpp
-Dynamixel Dxl(3); //Dynamixel on Serial3 (USART3). Needs to be set as 3 to used USART3 on OpenCM 485 EXP.
-void setup() {
-  Dxl.begin(1);  //1Mbps  
-}
+    ```cpp
+    Dynamixel Dxl(3); //Dynamixel on Serial3 (USART3). Needs to be set as 3 to used USART3 on OpenCM 485 EXP.
+    void setup() {
+      Dxl.begin(1);  //1Mbps  
+    }
 
-void loop() {  
-  Dxl.writeWord(6, 30, 0);
-  Dxl.writeWord(2, 30, 0);
-  delay(1000);              
-  Dxl.writeWord(6, 30, 1023);
-  Dxl.writeWord(2, 30, 4095);
-  delay(1000);
-}
-```
+    void loop() {  
+      Dxl.writeWord(6, 30, 0);
+      Dxl.writeWord(2, 30, 0);
+      delay(1000);              
+      Dxl.writeWord(6, 30, 1023);
+      Dxl.writeWord(2, 30, 4095);
+      delay(1000);
+    }
+    ```
 
 4. Click on “Download” button indicated below to download the program.
  
@@ -141,8 +140,6 @@ The OpenCM9.04 I/O pin numbers for the buttons and LED’s are indicated below.
 
 
 [RoboPlus Task]: /docs/en/software/rplus1/task/getting_started/
-[RoboPlus Motion]: ???/docs/en/software/rplus1/motion/
-[RoboPlus Manager]: ???
 [Number of pressed Start button]: /docs/en/software/rplus1/task/programming_02/#button-count
 [Start button]: /docs/en/software/rplus1/task/programming_02/#button-count
 [LN-101]: /docs/en/parts/interface/ln-101/
@@ -150,7 +147,6 @@ The OpenCM9.04 I/O pin numbers for the buttons and LED’s are indicated below.
 [BT-110]: /docs/en/parts/communication/bt-110/
 [BT-210]: /docs/en/parts/communication/bt-210/
 [Automatic Turn-off]: /docs/en/software/rplus1/task/programming_02/#powersave-timer
-[Firmware Update]: ???Roboplus
 [Top Gerber]: http://support.robotis.com/en/baggage_files/opencm/opencm9.04__rev_1.0(131009)-top.pdf
 [Bottom Gerber]: http://support.robotis.com/en/baggage_files/opencm/opencm9.04__rev_1.0(131009)-bottom.pdf
 [Gerber]: http://support.robotis.com/en/baggage_files/opencm/opencm9.04__rev_1.0(131009)-gerber.pdf

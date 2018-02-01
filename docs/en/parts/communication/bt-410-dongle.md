@@ -11,11 +11,11 @@ sidebar:
   nav: "bt-410-dongle"
 ---
 
-# BT-410 Dongle
-
 # [Introduction](#introduction)
 
 ![](/assets/images/parts/communication/bt-410_dongle_product.jpg)
+
+> BT-410 Dongle
 
 BT-410 Dongle converts USB 2.0 interface and Bluetooth 4.0 Low Energy standard communication interface(Master).  
 If BT-410 Dongle is connected to the PC, it can be paired with a BT-410 Slave module to exchange data.  
@@ -76,13 +76,15 @@ Available features with BT-410 Dongle and BT-410 Slave pair.
 
 Utilizes a pairing mechanism that allows reliable 1:1 communication.
 
-## [1:1 Communication](1-1-communication)
+## [1:1 Communication](11-communication)
 
 - Once the power is supplied to the Bluetooth module, the blue LED will blink. Successful pairing will turn on the solid blue LED.
 - **Auto Pairing** : When the blue LED of BT-410 dongle is blinking(not paired), approach the BT-410 Slave module near the BT-410 dongle(within 10cm) to automatically pair both devices. Successfully paired devices can be paired again within the range of Bluetooth communication.
 
 # [BT-410 Dongle Setting](bt-410-dongle-setting)
 Can reset system, change device name, and set SLAVE address, but **CANNOT** change mode.
+
+## [Setup](#setup)
 
 1. Connect the BT-410 dongle to PC and check assigned port number from the Device Manager. Then connect using the Tera Term terminal program through the respective COM port.
 
@@ -93,7 +95,7 @@ Can reset system, change device name, and set SLAVE address, but **CANNOT** chan
 
     ![](/assets/images/parts/communication/bt-410_dongle_03.png)
     
-    - Select assigned COM port for BT-410 dongle.
+2. Select assigned COM port for BT-410 dongle.
 
     ![](/assets/images/parts/communication/bt-410_dongle_04.png)
 
@@ -123,7 +125,7 @@ Can reset system, change device name, and set SLAVE address, but **CANNOT** chan
 
 9. After searching for available devices with "AT+BTINQ" command, use returned MAC address to pair with the device. For example, in order to pair with above searched device, use "ATD" command followed by the MAC address: "ATDDBE7DF00512B".
 
-# [AT Commands](#at-commands)
+## [AT Commands](#at-commands)
 
 The followings are AT terminal commands for the BT-410 Dongle.
 
@@ -145,7 +147,7 @@ The followings are AT terminal commands for the BT-410 Dongle.
 
     ![](/assets/images/parts/communication/bt-410_dongle_13.png)
  
-  A few seconds later, below message will be displayed.
+    A few seconds later, below message will be displayed.
  
     ![](/assets/images/parts/communication/bt-410_dongle_14.png)
  
@@ -154,7 +156,7 @@ The followings are AT terminal commands for the BT-410 Dongle.
 
     ![](/assets/images/parts/communication/bt-410_dongle_15.png)
  
-  A few seconds later, below message will be displayed.
+    A few seconds later, below message will be displayed.
  
     ![](/assets/images/parts/communication/bt-410_dongle_16.png)
  

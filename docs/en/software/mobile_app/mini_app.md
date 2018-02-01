@@ -11,8 +11,18 @@ sidebar:
   nav: "mini_app"
 ---
 
-# ROBOTIS MINI APP
+# [ROBOTIS MINI APP](#robotis-mini-app)
 
-Please refer to [Operating MINI] section.
+This app is used to control and operate [ROBOTIS MINI](/docs/en/edu/mini/)
 
-[Operating MINI]: /docs/en/edu/mini/#operating-mini
+## [App Install](#app-install)
+
+{% include en/software/mobile_app/mini/app_install.md %}
+
+## [App Usage](#app-usage)
+
+{% include en/software/mobile_app/mini/operation.md %}
+
+## [App Setting](#app-setting)
+
+{% include en/software/mobile_app/mini/app_setting.md %}

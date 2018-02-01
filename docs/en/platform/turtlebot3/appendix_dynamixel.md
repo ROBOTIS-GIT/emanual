@@ -11,6 +11,8 @@ sidebar:
   nav: "turtlebot3"
 ---
 
+<div style="counter-reset: h1 17"></div>
+
 # [Appendix #DYNAMIXEL](#appendix-dynamixel)
 
 ![](/assets/images/platform/turtlebot3/appendix_dynamixel/dynamixel_x.jpg)
@@ -36,14 +38,10 @@ DYNAMIXEL X-Series shares its design, therefore, users can replace actuators dep
   - Trajectory Data and Moving Status (In-Position, Following Error, etc.)
   - Energy Saving (Reduced Current from 100mA to 40mA)
 
-<div class="alert alert-info">
-  **Note :** Control Functions may vary by models
-</div>
+**Note :** Control Functions may vary by models
+{: .notice--info}
 
-
-<figure class="video_container">
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/gZWoyCvU-U8" frameborder="0" allowfullscreen></iframe>
-</figure>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gZWoyCvU-U8" frameborder="0" allowfullscreen></iframe>
 
 ## [Specifications](#specifications)
 
@@ -52,7 +50,7 @@ DYNAMIXEL X-Series shares its design, therefore, users can replace actuators dep
 | Microcontroller <td colspan=2> ST CORTEX-M3 (STM32F103C8 @ 72Mhz, 32bit)                                                                    </td>
 | Position Sensor <td colspan=2> Contactless Absolute Encoder (12bit, 360&deg;)                                                               </td>
 | Motor          | Cored Motor                                   | Coreless Motor                                                             |
-| Baud Rate       <td colspan=2> 9600 bps ~ 4.5 Mbps                                                                                          </td>
+| Baud Rate      | 9600 bps ~ 4.5 Mbps                                                           ||
 | Control Modes  | Velocity, Position, Extended Position, PWM    | Velocity, Position, Extended Position, PWM, Current, Current-base Position |
 | Gear Ratio     | 258.5 : 1                                     | 212.6 : 1                                                                  |
 | Stall Torque   | 1.0 N.m (@ 9V, 1A)                            | 2.7 N.m (@ 11.1V, 2.1A)                                                    |

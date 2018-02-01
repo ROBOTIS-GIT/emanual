@@ -1,0 +1,123 @@
+---
+layout: archive
+lang: kr
+ref: smart3-3
+read_time: true
+share: true
+author_profile: false
+permalink: /docs/kr/edu/smart/smart3-3/
+sidebar:
+  title: SMART3-3
+  nav: "smart3-3"
+---
+
+# [로보티즈 스마트Ⅲ 교육 키트(로봇수업용) 3단계](#로보티즈-스마트Ⅲ-교육-키트-로봇수업용-3단계)
+
+로보티즈 스마트Ⅲ는 일반 리모컨을 이용한 로봇의 단순 조종한계를 극복하기 위해 스마트 기기와 로봇을 블루투스로 연결하여 양방향 입출력이 가능하도록 구현된 교육용 로봇 솔루션입니다.
+
+로보티즈 스마트Ⅲ는 총 12장의 교재와 12가지 예제 로봇이 결합되어 로봇 및 과학 원리의 이해, 로봇의 제작, 문제 풀이 등의 과정을 제공합니다.
+
+로보티즈 스마트Ⅲ 3단계에는 적외선센서가 포함되어 있어 거리를 감지하는 기능을 구현 할 수 있고, 자석센서가 포함되어 있어 자력감지를 통한 비접촉 감지 기능을 구현할 수 있습니다.
+
+또한, 추가적인 서보모터를 통해 더욱 다양한 로봇의 구조를 학습할 수 있으며, 대형사이즈의 휠과 타이어셋트를 결합한 예제를 경험할 수 있습니다.
+
+로보티즈 스마트Ⅲ 3단계에서 프로그램 학습 및 다운로드를 하기 위해서는 R+SMARTⅢ 와R+m.Task2.0이 필요합니다.
+
+스마트기기가 없는 경우에도 로보티즈 BT-410 SET가 결합된 리모컨(RC-100B)으로 로봇을 조종할 수 있도록 별도의 예제 프로그램이 제공됩니다.
+
+[스마트 앱 파라미터 사용법 바로가기]  
+{: .notice}
+
+
+## [부품 리스트](#부품-리스트)
+
+# 로보티즈 스마트Ⅲ 3단계 부품 리스트
+
+ ![](/assets/images/edu/smart/smart3-3_e-manual.jpg)
+
+ - [서보 모터]
+ - [자석 센서]
+ - [적외선 센서]
+ - [LED 모듈]
+
+## [작동하기](#작동하기)
+
+- 스마트 기기에 R+ SMARTⅢ 와 R+m.task2.0 를 설치해야 합니다.
+
+- 앱 설치가 완료되면 스마트Ⅲ 1단계 키트에 포함된 제어기(CM-200)에 블루투스(BT-410)를 연결하고 R+SMARTⅢ에서 R+m.task2.0을 실행하여 예제를 다운로드 받습니다.
+
+**[R+ SMARTⅢ 설치 및 예제 다운로드 방법 바로가기]**
+
+`주의` 제어기에 프로그램을 다운로드 받으면, 그전에 다운받은 프로그램은 지워집니다.
+예제 동작시 음원이나 음성이 재생되는 것을 함께 확인하기 위해서는 스마트 기기의 미디어 볼륨을 반드시 키우고 실행하길 권장합니다.  
+{: .notice}
+
+# 작동방법
+
+- 제어기의 버튼을 눌러 전원을 켭니다. R+ SMARTⅢ에서 해당 예제를 클릭하여 제어기와 스마트기기 연결이 완료되면 프로그램이 실행됩니다.
+
+ ![](/assets/images/edu/smart/cm_200_7.jpg)
+
+`Note` 예제 파일은 [3단계 교안예제] 페이지 또는 R+ SMARTⅢ앱 에서 얻을 수 있습니다.  
+{: .notice}
+
+## [교안 예제(교육키트 3단계)](#교안-예제-교육키트-3단계)
+
+{% capture smart3-3_01 %}
+각 예제의 조립 방법이나 실행 시 동작에 관한 내용은 교육키트 2단계 교안을 참고하세요.  
+또한, [예제 태스크 코드의 다운로드 방법은 여기를 참고하세요.]  
+다운로드시 필요한 [BT-410]은 1단계 구성품에 포함되어 있습니다. 분실시 쇼핑몰에서 별도구매 해주세요.
+{% endcapture %}
+
+<div class="notice">{{ smart3-3_01 | markdownify }}</div>
+
+
+|로봇|태스크 코드|설명|
+| :---: | :-----: | :--- |
+|1. 스노우모빌<br />![](/assets/images/edu/smart/200_1lifesaving_car.png)|[Download][01_smart3_L3_Snow_Mobile_kr.tskx]<br />[Download][03_smart3_L3_Snow_Mobile_RC_kr.tskx]|-로봇 예제 프로그램<br />-조종기 프로그램|
+|2. 더하기 게임<br />![](/assets/images/edu/smart/200_2counter.png)|[Download][01_smart3_L3_Add_Game_kr.tskx]<br />[Download][03_smart3_L3_Add_Game_RC_kr.tskx]|-로봇 예제 프로그램<br />-조종기 프로그램|
+|3. 스마트 금고<br />![](/assets/images/edu/smart/200_3robot_safe.png)|[Download][01_smart3_L3_Strong_Box_kr.tskx]<br />[Download][03_smart3_L3_Strong_Box_RC_kr.tskx]|-로봇 예제 프로그램<br />-조종기 프로그램|
+|4. 다연발 탱크<br />![](/assets/images/edu/smart/200_4cannon.png)|[Download][01_smart3_L3_Multiple_Roket_Tank_kr.tskx]<br />[Download][03_smart3_L3_Multiple_Roket_Tank_RC_kr.tskx]|-로봇 예제 프로그램<br />-조종기 프로그램|
+|5. 반딧불이<br />![](/assets/images/edu/smart/200_5firefly.png)|[Download][01_smart3_L3_Firefly_kr.tskx]<br />[Download][3_smart3_L3_Firefly_RC_kr.tskx]|-로봇 예제 프로그램<br />-조종기 프로그램|
+|6. 해양탐사선<br />![](/assets/images/edu/smart/200_6submarine.png)|[Download][01_smart3_L3_Research_Vessel_kr.tskx]<br />[Download][03_smart3_L3_Research_Vessel_RC_kr.tskx]|-로봇 예제 프로그램<br />-조종기 프로그램|
+|7. 농구 로봇<br />![](/assets/images/edu/smart/200_7basketball.png)|[Download][01_smart3_L3_Basketball_Bot_kr.tskx]<br />[Download][03_smart3_L3_Basketball_Bot_RC_kr.tskx]|-로봇 예제 프로그램<br />-조종기 프로그램|
+|8. 덤프트럭<br />![](/assets/images/edu/smart/200_8ump_truck.png)|[Download][01_smart3_L3_Dump_Truck_kr.tskx]<br />[Download][03_smart3_L3_Dump_Truck_RC_kr.tskx]|-로봇 예제 프로그램<br />-조종기 프로그램|
+|9. 스마트 지게카<br />![](/assets/images/edu/smart/200_9forklift.png)|[Download][01_smart3_L3_Forklift_kr.tskx]<br />[Download][03_smart3_L3_Forklift_RC_kr.tskx]|-로봇 예제 프로그램<br />-조종기 프로그램|
+|10. 플라스틱맨<br />![](/assets/images/edu/smart/200_10wolverine.png)|[Download][01_smart3_L3_Plastic_Man_kr.tskx]<br />[Download][03_smart3_L3_Plastic_Man_AI_kr.tskx]|-로봇 예제 프로그램<br />-자율 프로그램|
+|11. 지프차<br />![](/assets/images/edu/smart/200_11jeep.png)|[Download][01_smart3_L3_Jeep_Car_kr.tskx]<br />[Download][03_smart3_L3_Jeep_Car_RC_kr.tskx]|-로봇 예제 프로그램<br />-조종기 프로그램|
+|12. 타워크레인<br />![](/assets/images/edu/smart/200_12crane.png)|[Download][01_smart3_L3_Tower_Crane_kr.tskx]<br />[Download][03_smart3_L3_Tower_Crane_RC_kr.tskx]|-로봇 예제 프로그램<br />-조종기 프로그램|
+
+
+[스마트 앱 파라미터 사용법 바로가기]: ???
+[서보 모터]: ?
+[자석 센서]: ?
+[적외선 센서]: ?
+[LED 모듈]: ?
+[R+ SMARTⅢ 설치 및 예제 다운로드 방법 바로가기]: ??
+[3단계 교안예제]: ??
+[예제 태스크 코드의 다운로드 방법은 여기를 참고하세요.]: ???
+[BT-410]:???
+[01_smart3_L3_Snow_Mobile_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/01_smart3_l2_dribble_bot_kr.tskx
+[03_smart3_L3_Snow_Mobile_RC_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/03_smart3_l2_dribble_bot_rc_kr.tskx
+[01_smart3_L3_Add_Game_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/01_smart3_l3_add_game_kr.tskx
+[03_smart3_L3_Add_Game_RC_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/03_smart3_l3_add_game_rc_kr.tskx
+[01_smart3_L3_Strong_Box_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/01_smart3_l3_strong_box_kr.tskx
+[03_smart3_L3_Strong_Box_RC_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/03_smart3_l3_strong_box_rc_kr.tskx
+[01_smart3_L3_Multiple_Roket_Tank_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/01_smart3_l3_multiple_roket_tank_kr.tskx
+[03_smart3_L3_Multiple_Roket_Tank_RC_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/03_smart3_l3_multiple_roket_tank_rc_kr.tskx
+[01_smart3_L3_Firefly_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/01_smart3_l3_firefly_kr.tskx
+[3_smart3_L3_Firefly_RC_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/03_smart3_l3_firefly_rc_kr.tskx
+[01_smart3_L3_Research_Vessel_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/01_smart3_l3_research_vessel_kr.tskx
+[03_smart3_L3_Research_Vessel_RC_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/03_smart3_l3_research_vessel_rc_kr.tskx
+[01_smart3_L3_Basketball_Bot_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/01_smart3_l3_basketball_bot_kr.tskx
+[03_smart3_L3_Basketball_Bot_RC_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/03_smart3_l3_basketball_bot_rc_kr.tskx
+[01_smart3_L3_Dump_Truck_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/01_smart3_l3_dump_truck_kr.tskx
+[03_smart3_L3_Dump_Truck_RC_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/03_smart3_l3_dump_truck_rc_kr.tskx
+[01_smart3_L3_Forklift_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/01_smart3_l3_forklift_kr.tskx
+[03_smart3_L3_Forklift_RC_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/03_smart3_l3_forklift_rc_kr.tskx
+[01_smart3_L3_Plastic_Man_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/01_smart3_l3_plastic_man_kr.tskx
+[03_smart3_L3_Plastic_Man_AI_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/03_smart3_l3_plastic_man_ai_kr.tskx
+[01_smart3_L3_Jeep_Car_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/01_smart3_l3_jeep_car_kr.tskx
+[03_smart3_L3_Jeep_Car_RC_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/03_smart3_l3_jeep_car_rc_kr.tskx
+[01_smart3_L3_Tower_Crane_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/01_smart3_l3_tower_crane_kr.tskx
+[03_smart3_L3_Tower_Crane_RC_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/03_smart3_l3_tower_crane_rc_kr.tskx

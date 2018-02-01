@@ -53,7 +53,7 @@ Parameters are used when additional data is required for an instruction.
 It is used to check if packet is damaged during communication.
 Instruction Checksum is calculated according to the following formula.
 
-**Instruction Checksum = ~( ID + Length + Instruction + Parameter1 + … Parameter N )**
+**Instruction Checksum = ~( ID + Length + Instruction + Parameter1 + ... Parameter N )**
 
 Where “~” is the Binary Ones Complement operator.
 When the calculation result of the parenthesis in the above formula is larger than 255 (0xFF), use only lower bytes.
@@ -63,7 +63,7 @@ For example, when you want to use below Instruction Packet,
 ID=1(0x01), Length=5(0x05), Instruction=3(0x03),
 Parameter1=12(0x0C), Parameter2=100(0x64), Parameter3=170(0xAA)
 
-Checksum = ~ ( ID + Length + Instruction + Parameter1 + … Parameter 3 )
+Checksum = ~ ( ID + Length + Instruction + Parameter1 + ... Parameter 3 )
 = ~ [ 0x01 + 0x05 + 0x03 + 0x0C + 0x64 + 0xAA ]
 = ~ [ 0x123 ] // Only the lower byte 0x23 executes the Not operation.
 = 0xDC
@@ -103,7 +103,7 @@ It means that the error of 0x24 occurs from Dynamixel whose ID is 01. Since 0x24
 It is used to check if packet is damaged during communication.
 Status Checksum is calculated according to the following formula.
 
-**Status Checksum = ~( ID + Length + Error + Parameter1 + … Parameter N )**
+**Status Checksum = ~( ID + Length + Error + Parameter1 + ... Parameter N )**
 
 
 # [Instruction Details](#instruction-details)
@@ -377,7 +377,7 @@ For Half Duplex UART, the transmission ending timing is important to change the 
 
 - The **TXD_BUFFER_READY_BIT** is used when one byte is to be transmitted via the serial communication channel, and an example is shown below.
 
-  ```code
+  ```c
   TxDByte(byte bData)
   {
     while(!TXD_BUFFER_READY_BIT); //wait until data can be loaded.
@@ -387,20 +387,20 @@ For Half Duplex UART, the transmission ending timing is important to change the 
 
 When changing the direction, the **TXD_SHIFT_REGISTER_EMPTY_BIT** must be checked. The following is an example program that sends an Instruction Packet  
 
-  ```code
-  DIRECTION_PORT = TX_DIRECTION;
-  TxDByte(0xff);
-  TxDByte(0xff);
-  TxDByte(bID);
-  TxDByte(bLength);
-  TxDByte(bInstruction);
-  TxDByte(Parameter0); TxDByte(Parameter1); …
-  DisableInterrupt(); // interrupt should be disable
-  TxDByte(Checksum); //last TxD
-  while(!TXD_SHIFT_REGISTER_EMPTY_BIT); //Wait till last data bit has been sent
-  DIRECTION_PORT = RX_DIRECTION; //Direction change to RXD
-  EnableInterrupt(); // enable interrupt again
-  ```
+```c
+DIRECTION_PORT = TX_DIRECTION;
+TxDByte(0xff);
+TxDByte(0xff);
+TxDByte(bID);
+TxDByte(bLength);
+TxDByte(bInstruction);
+TxDByte(Parameter0); TxDByte(Parameter1); ...
+DisableInterrupt(); // interrupt should be disable
+TxDByte(Checksum); //last TxD
+while(!TXD_SHIFT_REGISTER_EMPTY_BIT); //Wait till last data bit has been sent
+DIRECTION_PORT = RX_DIRECTION; //Direction change to RXD
+EnableInterrupt(); // enable interrupt again
+```
  
 `Note` Please note the important lines between LINE 8 and LINE 12. Line 8 is necessary since an interrupt here may cause a delay longer than the return delay time and corruption to the front of the status packet may occur.
 {: .notice}

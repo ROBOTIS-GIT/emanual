@@ -1,0 +1,16 @@
+.popup_window {
+  max-width: 100%;
+  padding: 1em 2em;
+  background-color: white;
+  border-radius: $img-border-radius;
+  font-size: 1em;
+}
+
+.mfp-bg {
+  opacity: 0.3;
+}
+
+.mfp-ajax-holder .mfp-content {
+  top: 5%;
+  width: 80%
+}

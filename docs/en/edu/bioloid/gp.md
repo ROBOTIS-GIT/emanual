@@ -11,8 +11,6 @@ sidebar:
   nav: "bioloid-gp"
 ---
 
-# BIOLOID GP
-
 # [Introduction](#introduction)
 
 ![](/assets/images/edu/bioloid/gp_product.jpg)
@@ -127,7 +125,7 @@ sidebar:
 
 After mounting the IR receiver on CM-530 under control mode, you can set the channels to control it remotely by pressing the Aux button. If you change the channel of the controller, you must also change the channel of RC-100. On how to change the channel of RC-100, please refer to Changing RC-100's Channel.
 
-- Setting the CM-530 IR Channels (Start + U/L/D/R)
+#### Setting the CM-530 IR Channels (Start + U/L/D/R)
 
 |Buttons|Description |
 |:---:|:---:|
@@ -159,7 +157,7 @@ After mounting the IR receiver on CM-530 under control mode, you can set the cha
 
 {% include en/edu/bioloid/screen_output.md %}
 
-## [Button & LED](#button-led)
+## [Button & LED](#button--led)
 
 {% include en/edu/bioloid/button_led.md %}
 

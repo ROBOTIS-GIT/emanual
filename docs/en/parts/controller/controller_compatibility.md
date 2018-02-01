@@ -1,13 +1,15 @@
 ---
-layout: splash
+layout: archive
 lang: en
 ref: controller_compatibility
+read_time: true
 share: true
 author_profile: false
 permalink: /docs/en/parts/controller/controller_compatibility/
+sidebar:
+  title: Controller compatibility
+  nav: "controller_compatibility"
 ---
-
-# Controller Compatibility
 
 # Supported Baudrates for Dynamixel
 
@@ -36,7 +38,7 @@ permalink: /docs/en/parts/controller/controller_compatibility/
 |MX-Series(RS485)|X|X|X|X|X|X|O|O|X(O)|
 |XM-Series|X|X|X|X|X|X|X|X|X(O)|
 |XH-Series|X|X|X|X|X|X|X|X|X(O)|
-|XL-320|X|X|X|X|X|X|X|O|X(O)|
+|XL-320|X|X|X|X|X|X|X|O|O(X)|
 
 ## Parts
 
@@ -83,6 +85,7 @@ permalink: /docs/en/parts/controller/controller_compatibility/
 |R+ 1.0|O|O|O|O|O|O|O|X|O(X)|
 |R+ 2.0|O|O|O|O|O|O|O|X|O(X)|
 |OpenCM IDE|X|X|X|X|X|X|X|X|O|
+|Scratch2.0|X|O|X|X|X|X|X|X|X|
 
 
 [ln-101]: /docs/en/parts/interface/ln-101/

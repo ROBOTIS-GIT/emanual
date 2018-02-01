@@ -11,8 +11,10 @@ sidebar:
   nav: "rplustask1"
 ---
 
-<div style="counter-reset: h1 3 h2 2">
+<div style="counter-reset: h1 2 h2 2">
 </div>
+
+# [Programming](#programming)
 
 ## [Controller Parameters](#controller-parameters)
 
@@ -196,6 +198,65 @@ This example checks whether a ZIG-110 module is installed in the CM-100 controll
 This example prints the ZigBee module's ID. This code can be used with controllers other than CM-100.
 
 ![My ID Example 02][img_my_id_example_02]
+
+### [Print Program Output](#print-program-output)
+
+Controllers usually do not have display devices the way a PC has a monitor, so it is hard to keep track of what goes on in a controller.  Therefore, a "terminal" is used to "borrow" the PC's monitor.
+
+![terminal][terminal]
+
+#### Open the Program Output Monitor
+
+To see the output of the program, you must open the Program Output Monitor BEFORE executing the program. There are three ways to open the `Program Output Monitor`.
+
+1. Click the 'View Print of Program' on the Download Program window.
+
+    ![output-monitor][output-monitor]
+
+2. Click the `View Print of Program` button in the tool bar.
+3. Press `F5` or click on `View Print of Program(V)` menu under Program(P).
+
+
+#### Print/Print with Carriage Return
+
+Use the "Print" parameter in your task code to see desired values on the screen.
+
+![task code][code]
+
+Print : Print the value, then move the cursor to next line.
+
+![print][print]
+
+Print with New Line: Print out the value, and move the cursor to next line.
+
+![newline][newline]
+
+#### Error : Please check the following
+
+1. Values from the controller
+    - A welcome screen is shown when the program starts
+
+      ![start-message][start-message]
+
+    - Error messages during program operation([Error Messages])
+
+      ![error-code][error-code]
+
+2. Values from task code : All decimal numbers between -32767 and +32767 can be displayed(Printing characters or custom messages is not possible).
+
+    - To print numbers
+
+      ![print-num][print-num]
+
+    - To print values from sensors
+
+      ![print-sensor][print-sensor]
+
+#### Clear Screen
+
+You may erase everything on the screen.
+
+![clear-screen][clear-screen]
 
 ### [IR Left/Center/Right](#ir-leftcenterright)
 
@@ -662,8 +723,8 @@ When the R button of the controller is pressed, the actuator with ID 1 will turn
 This parameter is used to set or read the Dynamixel's LED status.
 
 The value is either TRUE or FALSE.
-- TRUE (1 ) : When set to TRUE,  the LED turns on. When the parameter is read, a value of TRUE signifies that the LED is on.
-- FALSE ( 0 ) : When set to FALSE, the LED turns off.  When the parameter is read, a value of FALSE signifies that the LED is off.
+- TRUE (1) : When set to TRUE,  the LED turns on. When the parameter is read, a value of TRUE signifies that the LED is on.
+- FALSE (0) : When set to FALSE, the LED turns off.  When the parameter is read, a value of FALSE signifies that the LED is off.
 
 #### Example
 
@@ -756,7 +817,7 @@ This parameter is used to set or read the speed of actuator.
 
 - Motor control constants can be used.
 
-![Moving Speed][img_reduction_motor]
+  ![Moving Speed][img_reduction_motor]
 
 - In joint mode, the direction value is meaningless, and only the power value will be used.
 - In joint mode, set the value as 0 to output at maximum power.
@@ -837,7 +898,7 @@ This parameter is used to read the Dynamixel's current temperature.
 
 - The current temperature of the Dynamixel is read.
 
-#### xample
+#### Example
 
 Prints the present temperature of the Dynamixel with ID 1 on the screen.
 
@@ -943,9 +1004,9 @@ Compatible Controller
 - If a light is detected within a certain distance, the following values are returned.
 - Binary numbers can be used for the bit values.
 
-![Light Detected][img_light_detected]
+  ![Light Detected][img_light_detected]
 
-|Binary value|Decimal value||Meaning in `Object Detected` Commands|
+|Binary value|Decimal value|Meaning in `Light Detection` Commands|
 | :---: | :---: | :---: |
 |000|0|Not detected|
 |001|1|Detected by left sensor|
@@ -1033,10 +1094,12 @@ This parameter is used to set or read the musical note played by the buzzer of t
 - Depending on what the "Buzzer Time" is set to, "Buzzer Index" can be set to play a musical note or a melody.
   - "Buzzer Time" is set to 255 : Melody Mode
   - Choose from 26 different melodies (0 ~ 25).
+
     ![Buzzer Index 01][img_buzzer_index_01]
 
   - When "Buzzer Time" is between 0 and 254 : Musical Note Mode
-  - Choose from 51 notes.  The selected note will play for the length set as "Buzzer Time."
+  - Choose from 51 notes. The selected note will play for the length set as "Buzzer Time."
+
     ![Buzzer Index 02][img_buzzer_index_02]
 
 #### Example
@@ -1063,11 +1126,13 @@ This parameter is used to set or read how long the sound is played by the buzzer
   - When "Buzzer Time" is set to 255 : Melody Mode
   - Choose from 26 different melodies (0-25).
   - When the melody finishes playing, "Buzzer Time" is reset to 0.
+
     ![Buzzer Time 01][img_buzzer_time_01]
 
   - "Buzzer Time" is between 0 and 254 : Musical Note Mode
   - Choose from 51 notes.  The selected note will play for the length set as "Buzzer Time."
   - When it is set to 254, the sound will play without end.
+
     ![Buzzer Time 02][img_buzzer_time_02]
 
 #### Example
@@ -1194,6 +1259,7 @@ This parameter is used to set or read the musical note played by the buzzer of t
 
   - When "Buzzer Time" is between 0 and 254 : Musical Note Mode
   - Choose from 51 notes.  The selected note will play for the length set as "Buzzer Time."
+
     ![Buzzer Index 02][img_buzzer_index_02]
 
 #### Example
@@ -1223,6 +1289,7 @@ This parameter is used to set or read how long the sound is played by the buzzer
   - "Buzzer Time" is between 0 and 254 : Musical Note Mode
   - Choose from 51 notes.  The selected note will play for the length set as "Buzzer Time."
   - When it is set to 254, the sound will play without end.
+
     ![Buzzer Index 02][img_buzzer_index_02]
 
 #### Example
@@ -1266,7 +1333,7 @@ Paramenters to determine IR array obstacle values
 
 - From the diagram you may check binary values.
 
-![IR Obstacle][img_ir_obstacle]
+  ![IR Obstacle][img_ir_obstacle]
 
 #### Example
 
@@ -1309,7 +1376,7 @@ Write 0 at word address 25 of the Dynamixel with ID 105.
 
 Print the value stored in the word address 25 of the Dynamixel with ID 105.
 
-![Direct Access 02][img_direct_access_02]
+  ![Direct Access 02][img_direct_access_02]
 
 ## [Variables](#variables)
 
@@ -1347,7 +1414,7 @@ Variables are useful when a number to be remembered, when a value must be change
 [LM-10]: /docs/en/parts/display/lm-10/
 [IRSS-10]: /docs/en/parts/sensor/irss-10/
 [DMS-80]: /docs/en/parts/sensor/dms-80/
-[Custom Device]: ???
+[Custom Device]: /docs/en/edu/bioloid/gp/#make-your-own-sensor
 
 [img_remocon_txd]: /assets/images/sw/rplus1/task/roboplus_task_en_078.png
 [img_remocon_rxd]: /assets/images/sw/rplus1/task/roboplus_task_en_079.png
@@ -1363,6 +1430,17 @@ Variables are useful when a number to be remembered, when a value must be change
 [img_remocon_id]: /assets/images/sw/rplus1/task/roboplus_task_en_090.png
 [img_my_id_example_01]: /assets/images/sw/rplus1/task/roboplus_task_en_091.png
 [img_my_id_example_02]: /assets/images/sw/rplus1/task/roboplus_task_en_092.png
+[terminal]: /assets/images/sw/rplus1/task/roboplus_task_en_012.png
+[output-monitor]: /assets/images/sw/rplus1/task/roboplus_task_en_013.png
+[monitor-btn]: /assets/images/sw/rplus1/task/monitor_btn.png
+[code]: /assets/images/sw/rplus1/task/roboplus_task_en_014.png
+[print]: /assets/images/sw/rplus1/task/roboplus_task_en_015.png
+[newline]: /assets/images/sw/rplus1/task/roboplus_task_en_016.png
+[start-message]: /assets/images/sw/rplus1/task/roboplus_task_en_017.png
+[error-code]: /assets/images/sw/rplus1/task/roboplus_task_en_018.png
+[print-num]: /assets/images/sw/rplus1/task/roboplus_task_en_019.png
+[print-sensor]: /assets/images/sw/rplus1/task/roboplus_task_en_020.png
+[clear-screen]: /assets/images/sw/rplus1/task/roboplus_task_en_021.png
 [img_controller_ir_sensor]: /assets/images/sw/rplus1/task/roboplus_task_en_093.png
 [img_buzzer_01]: /assets/images/sw/rplus1/task/roboplus_task_en_094.png
 [img_buzzer_02]: /assets/images/sw/rplus1/task/roboplus_task_en_095.png
@@ -1436,7 +1514,7 @@ Variables are useful when a number to be remembered, when a value must be change
 [img_buzzer_index_ex03]: /assets/images/sw/rplus1/task/roboplus_task_en_256.png
 [img_buzzer_index_ex04]: /assets/images/sw/rplus1/task/roboplus_task_en_257.png
 [img_auto_thr]: /assets/images/sw/rplus1/task/roboplus_task_en_258.png
-[img_ir_obstacl]: /assets/images/sw/rplus1/task/roboplus_task_en_259.pnge
+[img_ir_obstacle]: /assets/images/sw/rplus1/task/roboplus_task_en_259.png
 [img_ir_obstacle_ex]: /assets/images/sw/rplus1/task/roboplus_task_en_260.png
 [img_ir_thresh_ex]: /assets/images/sw/rplus1/task/roboplus_task_en_261.png
 [img_direct_access_01]: /assets/images/sw/rplus1/task/roboplus_task_en_262.png

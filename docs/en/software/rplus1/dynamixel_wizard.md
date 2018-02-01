@@ -1,11 +1,11 @@
 ---
 layout: archive
 lang: en
-ref: rplus1_dynamixe_wizard
+ref: rplus1_dynamixel_wizard
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/software/rplus1/dynamixe_wizard/
+permalink: /docs/en/software/rplus1/dynamixel_wizard/
 sidebar:
   title: Dynamixel Wizard
   nav: "dynamixel_wizard"
@@ -84,7 +84,7 @@ If any problems occur in Dynamixel firmware, Dynamixel Wizard can restore the fi
 Please check the mode on the USB2Dynamixel. 3 pin cables should be set to TTL and 4 pin cables should be set to the RS485 switch.
 {% endcapture %}
 
-<div style="notice--warning">{{ wizard_warning_01 | markdownify }}</div>
+<div class="notice--warning">{{ wizard_warning_01 | markdownify }}</div>
 
 ## How to Restore Dynamixel Firmware
 

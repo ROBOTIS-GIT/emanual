@@ -7,14 +7,13 @@ share: true
 author_profile: false
 permalink: /docs/en/parts/motor/l_speed_geared_motor/
 sidebar:
-  title: 
-    # Low Speed Geared Motor
+  title: Low Speed Geared Motor
   nav: "l_speed_geared_motor"
 ---
 
-# Low Speed Geared Motor
-
 ![](/assets/images/parts/motor/l_speed_geared_motor_product.jpg)
+
+> Low Speed Geared Motor
 
 # [Introduction](#introduction)
 
@@ -38,7 +37,7 @@ This motor is used in ROBOTIS DREAM LEVEL 1
 1. MOT-
 2. MOT+
 
-`Caution` Cables can may be damaged when not properly connected (i.e. wrong orientation), or use of excessive force during connection.
+`Caution` Cables can be damaged when connected imporperly(i.e. wrong orientation), or when use excessive force during connection.
 {: .notice--warning}
 
 # [Tutorials](#tutorials)

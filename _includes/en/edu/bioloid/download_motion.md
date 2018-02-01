@@ -6,11 +6,11 @@ File motions can be converted into robot motions.
 
 3. Click on the "Download Motion" menu and wait for the download to complete.
 
-  ![Download_Motion-01](/assets/images/edu/bioloid/bioloid_down_motion_01.png)
+    ![Download_Motion-01](/assets/images/edu/bioloid/bioloid_down_motion_01.png)
 
 4. Verify that the contents of the file motion have been copied to the robot motion as seen below.
 
-  ![Download_Motion-02](/assets/images/edu/bioloid/bioloid_down_motion_02.png)
+    ![Download_Motion-02](/assets/images/edu/bioloid/bioloid_down_motion_02.png)
 
 ### Video
 

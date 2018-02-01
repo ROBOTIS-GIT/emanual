@@ -11,17 +11,17 @@ sidebar:
   nav: "turtlebot3"
 ---
 
+<div style="counter-reset: h1 5"></div>
+
 # [SBC Software Setup](#sbc-software-setup)
 
 ![](/assets/images/platform/turtlebot3/software/remote_pc_and_turtlebot.png)
 
-<div class="alert alert-info">
-  **Note :** An `SBC(Single-Board Computer)` is a complete computer built on a single circuit board with microprocessor(s), memory, input/output (I/O) and other features required as a fully functional computer. TurtleBot3 uses Raspberry Pi (TB3 Burger) and Intel® Joule™ (TB3 Waffle) as SBC.
-</div>
+**Note :** An `SBC(Single-Board Computer)` is a complete computer built on a single circuit board with microprocessor(s), memory, input/output (I/O) and other features required as a fully functional computer. TurtleBot3 uses Raspberry Pi (TB3 Burger) and Intel® Joule™ (TB3 Waffle) as SBC.
+{: .notice--info}
 
-<div class="alert alert-info">
-  **Note :** This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
-</div>
+**Note :** This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+{: .notice--info}
 
 ## [Install Linux on TurtleBot3 Burger (Raspberry Pi 3)](#install-linux-on-turtlebot3-burger-raspberry-pi-3)
 

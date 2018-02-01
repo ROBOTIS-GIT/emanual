@@ -80,6 +80,8 @@
 
 <link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="ROBOTIS e-Manual Feed">
 
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
 <!-- http://t.co/dKP3o1e -->
 <meta name="HandheldFriendly" content="True">
 <meta name="MobileOptimized" content="320">
@@ -106,10 +108,78 @@
 <meta http-equiv="cleartype" content="on">
 
     <!-- start custom head snippets -->
+<script>
+$(function() {
+  return $("h2, h3, h4, h5, h6").each(function(i, el) {
+    var $el, icon, id;
+    $el = $(el);
+    id = $el.attr('id');
+    icon = '<i class="fa fa-link"></i>';
+    if (id) {
+      return $el.append($("<a />").addClass("header-link").attr("href", "#" + id).html(icon));
+    }
+  });
+});
 
+$(function(){
+  $('h1').each(function(){
+    $(this).addClass('class-h1');
+  });
+  $('h2').each(function(){
+    $(this).addClass('class-h2');
+  });
+  $('h3').each(function(){
+    $(this).addClass('class-h3');
+  });
+  $('h4').each(function(){
+    $(this).addClass('class-h4');
+  });
+  $('h5').each(function(){
+    $(this).addClass('class-h5');
+  });
+  $('h6').each(function(){
+    $(this).addClass('class-h6');
+  });
+});
+
+$(function() {
+    $('h1, h2, h3, h4, h5, h6').each(function(i, e) {
+        $(e).nextUntil('h1, h2, h3, h4, h5, h6').wrapAll('<div>');
+    });
+
+});
+</script>
 <!-- insert favicons. use http://realfavicongenerator.net/ -->
 
 <!-- end custom head snippets -->
+
+    <script>
+      var toggle_google = 0;
+      var mobile_width = 960;
+      
+      function extendgoogletool() {
+        if (toggle_google == 0) {
+          google_tools.classList.add("extend_googletools");
+          switch_ko_en.classList.add("show_switch_ko_en");
+          toggle_google = 1;
+        }
+        else {
+          google_tools.classList.remove("extend_googletools");
+          switch_ko_en.classList.remove("show_switch_ko_en");
+          toggle_google = 0;
+        }
+      }
+    </script>
+    <script>
+    $(document).ready(function() {
+
+    	$('.popup').magnificPopup({
+    		type: 'ajax',
+    		alignTop: true,
+    		overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
+    	});
+    });
+    </script>
   </head>
 
   <body class="layout--archive">
@@ -120,30 +190,1549 @@
     <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
-      <nav id="site-nav" class="greedy-nav">
-        <a class="site-title" href="http://localhost:4000/"><img src="/assets/images/robotis_logo.gif" style="padding-right:10px;">e-Manual</a>
+      <a class="site-title" href="http://localhost:4000/"><img class="logo" id="logo" src="/assets/images/robotis_emanual_logo.png"></a>
+      <!-- Google Custom Search -->
+      <form class="searchbox" method="get" id="site_search">
+        <script>
+          (function() {
+            var cx = '003548387656725317882:3pwl9jljqvi';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+          })();
+        </script>
+        <gcse:search></gcse:search>
+      </form>
+      <!-- end of Google Custom Search -->
+      <button class="google_button" id="google_button" onclick="extendgoogletool()"><img src="https://www.google.com/images/cleardot.gif" class="goog-te-gadget-icon" alt="" style="background-image: url(&quot;https://translate.googleapis.com/translate_static/img/te_ctrl3.gif&quot;); background-position: -65px 0px;"></button>
+      <div class="google_tools" id="google_tools">
+        <!-- Google Translation -->
+        <div id="google_translate_element"></div><script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'ar,de,es,fr,hi,ja,ko,pt,ru,sv,th,tr,vi,zh-CN', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, multilanguagePage: true, gaTrack: true, gaId: 'UA-83196341'}, 'google_translate_element');
+        }
+        </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <!-- end of Google Translation -->  
         
+        
+        <button class="switch_ko_en" id="switch_ko_en">
+          
+            
+              <a href="http://localhost:4000/docs/en/software/rplus1/task/getting_started/" style="color: black;">English</a></button>
+            
+          
+            
+              
+            
+          
+      </div>
+      
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="mobile_nav__items">
         
 
-        <form method="get" id="site_search" style="margin:0 0 0 0; position:absolute; right:0; width:30%;">
-          <script>
-            (function() {
-              var cx = '003548387656725317882:3pwl9jljqvi';
-              var gcse = document.createElement('script');
-              gcse.type = 'text/javascript';
-              gcse.async = true;
-              gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-              var s = document.getElementsByTagName('script')[0];
-              s.parentNode.insertBefore(gcse, s);
-            })();
-          </script>
-          <gcse:search></gcse:search>
           
-        </form>
-      </nav>
+
+          
+          <li class="mobile_depth_1">
+            <input type="checkbox" name="mobile_nav_depth_1" id="다이나믹셀">
+            <label for="다이나믹셀">다이나믹셀</label>
+            <ul>
+            
+              
+              
+              
+                
+                  <li class="mobile_depth_2">
+                    <input type="radio" name="sublevel" id="다이나믹셀AX 시리즈">
+                    <label for="다이나믹셀AX 시리즈">AX 시리즈</label>
+                    <ul>
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/dxl/ax/ax-12w/" class="">AX-12W</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/dxl/ax/ax-12a/" class="">AX-12/12+/12A</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/dxl/ax/ax-18a/" class="">AX-18F/18A</a>
+                        </li>
+                      
+                    
+                    </ul>
+                  </li>
+                
+              
+            
+              
+              
+              
+                
+                  <li class="mobile_depth_2">
+                    <input type="radio" name="sublevel" id="다이나믹셀*EX 시리즈">
+                    <label for="다이나믹셀*EX 시리즈">*EX 시리즈</label>
+                    <ul>
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/dxl/ex/ex-106+/" class="">*EX-106+</a>
+                        </li>
+                      
+                    
+                    </ul>
+                  </li>
+                
+              
+            
+              
+              
+              
+                
+                  <li class="mobile_depth_2">
+                    <input type="radio" name="sublevel" id="다이나믹셀*DX 시리즈">
+                    <label for="다이나믹셀*DX 시리즈">*DX 시리즈</label>
+                    <ul>
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/dxl/dx/dx-113/" class="">*DX-113</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/dxl/dx/dx-116/" class="">*DX-116</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/dxl/dx/dx-117/" class="">*DX-117</a>
+                        </li>
+                      
+                    
+                    </ul>
+                  </li>
+                
+              
+            
+              
+              
+              
+                
+                  <li class="mobile_depth_2">
+                    <input type="radio" name="sublevel" id="다이나믹셀*RX 시리즈">
+                    <label for="다이나믹셀*RX 시리즈">*RX 시리즈</label>
+                    <ul>
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/dxl/rx/rx-10/" class="">*RX-10</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/dxl/rx/rx-24f/" class="">*RX-24F</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/dxl/rx/rx-28/" class="">*RX-28</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/dxl/rx/rx-64/" class="">*RX-64</a>
+                        </li>
+                      
+                    
+                    </ul>
+                  </li>
+                
+              
+            
+              
+              
+              
+                
+                  <li class="mobile_depth_2">
+                    <input type="radio" name="sublevel" id="다이나믹셀MX 시리즈">
+                    <label for="다이나믹셀MX 시리즈">MX 시리즈</label>
+                    <ul>
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/dxl/mx/mx-12w/" class="">MX-12W</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/dxl/mx/mx-28/" class="">MX-28T/R/AT/AR</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/dxl/mx/mx-28-2/" class="">MX-28T/R/AT/AR(2.0)</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/dxl/mx/mx-64/" class="">MX-64T/R/AT/AR</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/dxl/mx/mx-64-2/" class="">MX-64T/R/AT/AR(2.0)</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/dxl/mx/mx-106/" class="">MX-106T/R</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/dxl/mx/mx-106-2/" class="">MX-106T/R(2.0)</a>
+                        </li>
+                      
+                    
+                    </ul>
+                  </li>
+                
+              
+            
+              
+              
+              
+                
+                  <li class="mobile_depth_2">
+                    <input type="radio" name="sublevel" id="다이나믹셀X 시리즈">
+                    <label for="다이나믹셀X 시리즈">X 시리즈</label>
+                    <ul>
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/dxl/x/xl320/" class="">XL320</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/dxl/x/xl430-w250/" class="">XL430-W250</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/dxl/x/xm430-w210/" class="">XM430-W210</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/dxl/x/xm430-w350/" class="">XM430-W350</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/dxl/x/xm540-w150/" class="">XM540-W150</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/dxl/x/xm540-w270/" class="">XM540-W270</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/" class="">XH430-W210</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/dxl/x/xh430-w350/" class="">XH430-W350</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/dxl/x/xh430-v210/" class="">XH430-V210</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/dxl/x/xh430-v350/" class="">XH430-V350</a>
+                        </li>
+                      
+                    
+                    </ul>
+                  </li>
+                
+              
+            
+              
+              
+              
+                
+                  <li class="mobile_depth_2">
+                    <input type="radio" name="sublevel" id="다이나믹셀PRO 시리즈">
+                    <label for="다이나믹셀PRO 시리즈">PRO 시리즈</label>
+                    <ul>
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/dxl/pro/h54-200-s500-r/" class="">H54-200-S500-R</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/dxl/pro/h54-100-s500-r/" class="">H54-100-S500-R</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/dxl/pro/h42-20-s300-r/" class="">H42-20-S300-R</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/dxl/pro/m54-60-s250-r/" class="">M54-60-S250-R</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/dxl/pro/m54-40-s250-r/" class="">M54-40-S250-R</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/dxl/pro/m42-10-s260-r/" class="">M42-10-S260-R</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/dxl/pro/l54-50-s500-r/" class="">*L54-50-S500-R</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/dxl/pro/l54-50-s290-r/" class="">*L54-50-S290-R</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/dxl/pro/l54-30-s500-r/" class="">*L54-30-S500-R</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/dxl/pro/l54-30-s400-r/" class="">*L54-30-S400-R</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/dxl/pro/l42-10-s300-r/" class="">*L42-10-S300-R</a>
+                        </li>
+                      
+                    
+                    </ul>
+                  </li>
+                
+              
+            
+              
+              
+              
+                
+                  <li class="mobile_depth_2">
+                    <a href="http://localhost:4000/docs/kr/dxl/protocol1/">프로토콜 1.0</a>
+                  </li>
+                
+              
+            
+              
+              
+              
+                
+                  <li class="mobile_depth_2">
+                    <a href="http://localhost:4000/docs/kr/dxl/protocol2/">프로토콜 2.0</a>
+                  </li>
+                
+              
+            
+            </ul>
+          
+
+          
+          </li>
+          
+        
+
+          
+
+          
+          <li class="mobile_depth_1">
+            <input type="checkbox" name="mobile_nav_depth_1" id="플랫폼">
+            <label for="플랫폼">플랫폼</label>
+            <ul>
+            
+              
+              
+              
+                
+                  <li class="mobile_depth_2">
+                    <a href="http://localhost:4000/docs/kr/platform/op/getting_started/">*OP</a>
+                  </li>
+                
+              
+            
+              
+              
+              
+                
+                  <li class="mobile_depth_2">
+                    <a href="http://localhost:4000/docs/kr/platform/op2/getting_started/">OP2</a>
+                  </li>
+                
+              
+            
+              
+              
+              
+                
+                  <li class="mobile_depth_2">
+                    <a href="http://localhost:4000/docs/kr/platform/op3/getting_started/">OP3</a>
+                  </li>
+                
+              
+            
+              
+              
+              
+                
+                  <li class="mobile_depth_2">
+                    <a href="http://localhost:4000/docs/kr/platform/robothand_rx28/">로봇핸드 RX28</a>
+                  </li>
+                
+              
+            
+              
+              
+              
+                
+                  <li class="mobile_depth_2">
+                    <a href="http://localhost:4000/docs/kr/platform/robothand_mx28/">로봇핸드 MX28</a>
+                  </li>
+                
+              
+            
+              
+              
+              
+                
+                  <li class="mobile_depth_2">
+                    <a href="http://localhost:4000/docs/kr/platform/manipulator_h/introduction/">Manipulator-H</a>
+                  </li>
+                
+              
+            
+              
+              
+              
+                
+                  <li class="mobile_depth_2">
+                    <a href="http://localhost:4000/docs/kr/platform/thormang3/getting_started/">똘망3</a>
+                  </li>
+                
+              
+            
+              
+              
+              
+                
+                  <li class="mobile_depth_2">
+                    <a href="http://localhost:4000/docs/kr/platform/turtlebot3/overview/">터틀봇3</a>
+                  </li>
+                
+              
+            
+              
+              
+              
+                
+                  <li class="mobile_depth_2">
+                    <a href="http://localhost:4000/docs/kr/platform/openmanipulator/">오픈매니퓰레이터</a>
+                  </li>
+                
+              
+            
+            </ul>
+          
+
+          
+          </li>
+          
+        
+
+          
+
+          
+          <li class="mobile_depth_1">
+            <input type="checkbox" name="mobile_nav_depth_1" id="교육키트">
+            <label for="교육키트">교육키트</label>
+            <ul>
+            
+              
+              
+              
+                
+                  <li class="mobile_depth_2">
+                    <input type="radio" name="sublevel" id="교육키트*올로">
+                    <label for="교육키트*올로">*올로</label>
+                    <ul>
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/edu/ollo/bugkit/" class="">*버그 키트</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/edu/ollo/explorer/" class="">*2단계 교육키트</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/edu/ollo/inventor/" class="">*3단계 교육키트</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/edu/ollo/ollo-4/" class="">*4단계 교육키트</a>
+                        </li>
+                      
+                    
+                    </ul>
+                  </li>
+                
+              
+            
+              
+              
+              
+                
+                  <li class="mobile_depth_2">
+                    <input type="radio" name="sublevel" id="교육키트드림 I">
+                    <label for="교육키트드림 I">드림 I</label>
+                    <ul>
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/edu/dream/dream1-1/" class="">1단계 교육키트</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/edu/dream/dream1-2/" class="">2단계 교육키트</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/edu/dream/dream1-3/" class="">3단계 교육키트</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/edu/dream/dream1-4/" class="">4단계 교육키트</a>
+                        </li>
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                    </ul>
+                  </li>
+                
+              
+            
+              
+              
+              
+                
+                  <li class="mobile_depth_2">
+                    <input type="radio" name="sublevel" id="교육키트드림 II">
+                    <label for="교육키트드림 II">드림 II</label>
+                    <ul>
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/edu/dream/dream2-1/" class="">1단계 교육키트</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/edu/dream/dream2-2/" class="">2단계 교육키트</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/edu/dream/dream2-3/" class="">3단계 교육키트</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/edu/dream/dream2-4/" class="">4단계 교육키트</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/edu/dream/dream2-5/" class="">5단계 교육키트</a>
+                        </li>
+                      
+                    
+                    </ul>
+                  </li>
+                
+              
+            
+              
+              
+              
+                
+                  <li class="mobile_depth_2">
+                    <input type="radio" name="sublevel" id="교육키트스마트 I">
+                    <label for="교육키트스마트 I">스마트 I</label>
+                    <ul>
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/edu/smart/smart1-1/" class="">1단계 교육키트</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/edu/smart/smart1-2/" class="">2단계 교육키트</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/edu/smart/smart1-3/" class="">3단계 교육키트</a>
+                        </li>
+                      
+                    
+                    </ul>
+                  </li>
+                
+              
+            
+              
+              
+              
+                
+                  <li class="mobile_depth_2">
+                    <input type="radio" name="sublevel" id="교육키트스마트 II">
+                    <label for="교육키트스마트 II">스마트 II</label>
+                    <ul>
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/edu/smart/smart2-1/" class="">1단계 교육키트</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/edu/smart/smart2-2/" class="">2단계 교육키트</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/edu/smart/smart2-3/" class="">3단계 교육키트</a>
+                        </li>
+                      
+                    
+                    </ul>
+                  </li>
+                
+              
+            
+              
+              
+              
+                
+                  <li class="mobile_depth_2">
+                    <input type="radio" name="sublevel" id="교육키트스마트 III">
+                    <label for="교육키트스마트 III">스마트 III</label>
+                    <ul>
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/edu/smart/smart3-1/" class="">1단계 교육키트</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/edu/smart/smart3-2/" class="">2단계 교육키트</a>
+                        </li>
+                      
+                    
+                    </ul>
+                  </li>
+                
+              
+            
+              
+              
+              
+                
+                  <li class="mobile_depth_2">
+                    <input type="radio" name="sublevel" id="교육키트IoT">
+                    <label for="교육키트IoT">IoT</label>
+                    <ul>
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/edu/iot/iot-1/" class="">1단계 교육키트</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/edu/iot/iot-2/" class="">2단계 교육키트</a>
+                        </li>
+                      
+                    
+                    </ul>
+                  </li>
+                
+              
+            
+              
+              
+              
+                
+                  <li class="mobile_depth_2">
+                    <input type="radio" name="sublevel" id="교육키트바이올로이드">
+                    <label for="교육키트바이올로이드">바이올로이드</label>
+                    <ul>
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/edu/bioloid/beginner/" class="">초급</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/edu/bioloid/comprehensive/" class="">종합</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/edu/bioloid/stem/" class="">STEM 키트</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/edu/bioloid/stem_academy/" class="">STEM 아카데미</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/edu/bioloid/premium/" class="">프리미엄</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/edu/bioloid/gp/" class="">ROBOTIS GP</a>
+                        </li>
+                      
+                    
+                    </ul>
+                  </li>
+                
+              
+            
+              
+              
+              
+                
+                  <li class="mobile_depth_2">
+                    <a href="http://localhost:4000/docs/kr/edu/mini/">미니</a>
+                  </li>
+                
+              
+            
+            </ul>
+          
+
+          
+          </li>
+          
+        
+
+          
+
+          
+          <li class="mobile_depth_1">
+            <input type="checkbox" name="mobile_nav_depth_1" id="소프트웨어">
+            <label for="소프트웨어">소프트웨어</label>
+            <ul>
+            
+              
+              
+              
+                
+                  <li class="mobile_depth_2">
+                    <input type="radio" name="sublevel" id="소프트웨어다이나믹셀">
+                    <label for="소프트웨어다이나믹셀">다이나믹셀</label>
+                    <ul>
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/software/dynamixel/dynamixel_sdk/overview/" class="">다이나믹셀 SDK</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/software/dynamixel/dynamixel_workbench/" class="">다이나믹셀 워크벤치</a>
+                        </li>
+                      
+                    
+                    </ul>
+                  </li>
+                
+              
+            
+              
+              
+              
+                
+                  <li class="mobile_depth_2">
+                    <input type="radio" name="sublevel" id="소프트웨어모바일 앱">
+                    <label for="소프트웨어모바일 앱">모바일 앱</label>
+                    <ul>
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/software/mobile_app/rplussmart/" class="">로보플러스 SMART</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/software/mobile_app/rplusiot/" class="">로보플러스 IoT</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/software/mobile_app/mini_app/" class="">로보티즈 미니</a>
+                        </li>
+                      
+                    
+                    </ul>
+                  </li>
+                
+              
+            
+              
+              
+              
+                
+                  <li class="mobile_depth_2">
+                    <input type="radio" name="sublevel" id="소프트웨어로보플러스 1.0">
+                    <label for="소프트웨어로보플러스 1.0">로보플러스 1.0</label>
+                    <ul>
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/software/rplus1/task/getting_started/" class="">로보플러스 태스크</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/software/rplus1/manager/" class="">로보플러스 매니저</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/software/rplus1/motion/" class="">로보플러스 모션</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/software/rplus1/dynamixel_wizard/" class="">다이나믹셀 위자드</a>
+                        </li>
+                      
+                    
+                    </ul>
+                  </li>
+                
+              
+            
+              
+              
+              
+                
+                  <li class="mobile_depth_2">
+                    <input type="radio" name="sublevel" id="소프트웨어R+ 2.0">
+                    <label for="소프트웨어R+ 2.0">R+ 2.0</label>
+                    <ul>
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/software/rplus2/task/" class="">로보플러스 태스크 2.0</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/software/rplus2/manager/" class="">로보플러스 매니저 2.0</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/software/rplus2/motion/" class="">로보플러스 모션 2.0</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/software/rplus2/design/" class="">로보플러스 디자인 2.0</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/software/rplus2/scratch/" class="">로보플러스 스크래치</a>
+                        </li>
+                      
+                    
+                    </ul>
+                  </li>
+                
+              
+            
+              
+              
+              
+                
+                  <li class="mobile_depth_2">
+                    <input type="radio" name="sublevel" id="소프트웨어R+ 모바일">
+                    <label for="소프트웨어R+ 모바일">R+ 모바일</label>
+                    <ul>
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/software/rplus_mobile/mtask/" class="">R+ m.Task</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/software/rplus_mobile/mtask20/" class="">R+ m.Task 2.0</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/software/rplus_mobile/mmotion/" class="">R+ m.Motion 2.0</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/software/rplus_mobile/mdesign/" class="">R+ m.Design</a>
+                        </li>
+                      
+                    
+                    </ul>
+                  </li>
+                
+              
+            
+              
+              
+              
+                
+                  <li class="mobile_depth_2">
+                    <input type="radio" name="sublevel" id="소프트웨어EMBEDDED SDK">
+                    <label for="소프트웨어EMBEDDED SDK">EMBEDDED SDK</label>
+                    <ul>
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/software/embedded_sdk/embedded_c_cm510/" class="">제어기 펌웨어 개발(CM-510/700)</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/software/embedded_sdk/embedded_c_cm530/" class="">제어기 펌웨어 개발(CM-530)</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/software/embedded_sdk/zigbee_sdk/" class="">지그비 SDK</a>
+                        </li>
+                      
+                    
+                    </ul>
+                  </li>
+                
+              
+            
+              
+              
+              
+                
+                  <li class="mobile_depth_2">
+                    <a href="http://localhost:4000/docs/kr/software/opencm_ide/getting_started/">OpenCM IDE</a>
+                  </li>
+                
+              
+            
+            </ul>
+          
+
+          
+          </li>
+          
+        
+
+          
+
+          
+          <li class="mobile_depth_1">
+            <input type="checkbox" name="mobile_nav_depth_1" id="부품">
+            <label for="부품">부품</label>
+            <ul>
+            
+              
+              
+              
+                
+                  <li class="mobile_depth_2">
+                    <input type="radio" name="sublevel" id="부품제어기">
+                    <label for="부품제어기">제어기</label>
+                    <ul>
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/parts/controller/cm-100/" class="">*CM-100A</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/parts/controller/cm-150/" class="">CM-150</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/parts/controller/cm-200/" class="">CM-200</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/parts/controller/cm-5/" class="">*CM-5</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/parts/controller/cm-510/" class="">*CM-510</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/parts/controller/cm-530/" class="">CM-530</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/parts/controller/cm-700/" class="">CM-700</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/parts/controller/cm-900/" class="">*CM-900</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/parts/controller/opencm904/" class="">OpenCM 9.04</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/parts/controller/opencm485exp/" class="">OpenCM 485 EXP</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/parts/controller/opencr10/" class="">OpenCR</a>
+                        </li>
+                      
+                    
+                    </ul>
+                  </li>
+                
+              
+            
+              
+              
+              
+                
+                  <li class="mobile_depth_2">
+                    <input type="radio" name="sublevel" id="부품통신">
+                    <label for="부품통신">통신</label>
+                    <ul>
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/parts/communication/rc-100/" class="">RC-100A/100B</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/parts/communication/zig-110/" class="">*ZIG-100/110A</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/parts/communication/bt-110/" class="">*BT-100/110A</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/parts/communication/bt-210/" class="">BT-210</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/parts/communication/bt-410/" class="">BT-410</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/parts/communication/bt-410-dongle/" class="">BT-410 동글</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/parts/communication/zig2serial/" class="">ZIG2Serial</a>
+                        </li>
+                      
+                    
+                    </ul>
+                  </li>
+                
+              
+            
+              
+              
+              
+                
+                  <li class="mobile_depth_2">
+                    <input type="radio" name="sublevel" id="부품모터">
+                    <label for="부품모터">모터</label>
+                    <ul>
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/parts/motor/gm-10a/" class="">감속모터(GM-10A)</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/parts/motor/h_speed_geared_motor/" class="">*고속 감속모터</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/parts/motor/l_speed_geared_motor/" class="">저속 감속모터</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/parts/motor/servo_motor/" class="">서보모터(SM-10)</a>
+                        </li>
+                      
+                    
+                    </ul>
+                  </li>
+                
+              
+            
+              
+              
+              
+                
+                  <li class="mobile_depth_2">
+                    <input type="radio" name="sublevel" id="부품인터페이스">
+                    <label for="부품인터페이스">인터페이스</label>
+                    <ul>
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/parts/interface/ln-101/" class="">LN-101</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/parts/interface/usb2dynamixel/" class="">USB2DYNAMIXEL</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/parts/interface/u2d2/" class="">U2D2</a>
+                        </li>
+                      
+                    
+                    </ul>
+                  </li>
+                
+              
+            
+              
+              
+              
+                
+                  <li class="mobile_depth_2">
+                    <input type="radio" name="sublevel" id="부품센서">
+                    <label for="부품센서">센서</label>
+                    <ul>
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/parts/sensor/irss-10/" class="">적외선 센서(IRSS-10)</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/parts/sensor/dms-80/" class="">거리 측정 센서(DMS-80)</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/parts/sensor/ts-10/" class="">접촉 센서(TS-10)</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/parts/sensor/ax-s1/" class="">*통합 센서(AX-S1)</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/parts/sensor/gs-12/" class="">자이로 센서(GS-12)</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/parts/sensor/ir-array/" class="">적외선 어레이 센서</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/parts/sensor/cs-10/" class="">컬러 센서(CS-10)</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/parts/sensor/mgss-10/" class="">자석 센서(MGSS-10)</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/parts/sensor/tps-10/" class="">온도 센서(TPS-10)</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/parts/sensor/pir-10/" class="">동작감지 센서(PIR-10)</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/parts/sensor/cds-10/" class="">조도 센서(CDS-10)</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/parts/sensor/tms-10/" class="">온습도 센서(TMS-10)</a>
+                        </li>
+                      
+                    
+                    </ul>
+                  </li>
+                
+              
+            
+              
+              
+              
+                
+                  <li class="mobile_depth_2">
+                    <input type="radio" name="sublevel" id="부품디스플레이">
+                    <label for="부품디스플레이">디스플레이</label>
+                    <ul>
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/kr/parts/display/lm-10/" class="">LED 모듈(LM-10)</a>
+                        </li>
+                      
+                    
+                    </ul>
+                  </li>
+                
+              
+            
+            </ul>
+          
+
+          
+          </li>
+          
+        
+
+          
+
+          
+          <li class="mobile_depth_1">
+            <a href="http://localhost:4000/docs/kr/faq/">FAQ</a>
+          </li>
+          
+
+          
+        
+        </ul>
+
     </div>
 
-    <div class="container">
+    <div class="container" id="container">
       
         
 
@@ -161,8 +1750,6 @@
               
 
               
-
-              
                 
                 <a>AX 시리즈</a>
               
@@ -173,28 +1760,22 @@
                   
 
                   
-
-                  
                     
-                        <a>AX-12W</a>
+                      <a href="http://localhost:4000/docs/kr/dxl/ax/ax-12w/">AX-12W</a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a>AX-12/12+/12A</a>
+                      <a href="http://localhost:4000/docs/kr/dxl/ax/ax-12a/">AX-12/12+/12A</a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a>AX-18F/18A</a>
+                      <a href="http://localhost:4000/docs/kr/dxl/ax/ax-18a/">AX-18F/18A</a>
                     
                 
               </div>
@@ -203,8 +1784,6 @@
             </div>
             
               <div class="dropdown-content-wrapper">
-              
-
               
 
               
@@ -218,10 +1797,8 @@
                   
 
                   
-
-                  
                     
-                        <a><font color=#ccc>*EX-106+</font></a>
+                      <a href="http://localhost:4000/docs/kr/dxl/ex/ex-106+/"><font color=#ccc>*EX-106+</font></a>
                     
                 
               </div>
@@ -230,8 +1807,6 @@
             </div>
             
               <div class="dropdown-content-wrapper">
-              
-
               
 
               
@@ -245,28 +1820,22 @@
                   
 
                   
-
-                  
                     
-                        <a><font color=#ccc>*DX-113</font></a>
+                      <a href="http://localhost:4000/docs/kr/dxl/dx/dx-113/"><font color=#ccc>*DX-113</font></a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a><font color=#ccc>*DX-116</font></a>
+                      <a href="http://localhost:4000/docs/kr/dxl/dx/dx-116/"><font color=#ccc>*DX-116</font></a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a><font color=#ccc>*DX-117</font></a>
+                      <a href="http://localhost:4000/docs/kr/dxl/dx/dx-117/"><font color=#ccc>*DX-117</font></a>
                     
                 
               </div>
@@ -275,8 +1844,6 @@
             </div>
             
               <div class="dropdown-content-wrapper">
-              
-
               
 
               
@@ -290,37 +1857,29 @@
                   
 
                   
-
-                  
                     
-                        <a><font color=#ccc>*RX-10</font></a>
+                      <a href="http://localhost:4000/docs/kr/dxl/rx/rx-10/"><font color=#ccc>*RX-10</font></a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a><font color=#ccc>*RX-24F</font></a>
+                      <a href="http://localhost:4000/docs/kr/dxl/rx/rx-24f/"><font color=#ccc>*RX-24F</font></a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a><font color=#ccc>*RX-28</font></a>
+                      <a href="http://localhost:4000/docs/kr/dxl/rx/rx-28/"><font color=#ccc>*RX-28</font></a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a><font color=#ccc>*RX-64</font></a>
+                      <a href="http://localhost:4000/docs/kr/dxl/rx/rx-64/"><font color=#ccc>*RX-64</font></a>
                     
                 
               </div>
@@ -329,8 +1888,6 @@
             </div>
             
               <div class="dropdown-content-wrapper">
-              
-
               
 
               
@@ -344,64 +1901,50 @@
                   
 
                   
-
-                  
                     
-                        <a>MX-12W</a>
+                      <a href="http://localhost:4000/docs/kr/dxl/mx/mx-12w/">MX-12W</a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a>MX-28T/R/AT/AR</a>
+                      <a href="http://localhost:4000/docs/kr/dxl/mx/mx-28/">MX-28T/R/AT/AR</a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a>MX-28T/R/AT/AR(2.0)</a>
+                      <a href="http://localhost:4000/docs/kr/dxl/mx/mx-28-2/">MX-28T/R/AT/AR(2.0)</a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a>MX-64T/R/AT/AR</a>
+                      <a href="http://localhost:4000/docs/kr/dxl/mx/mx-64/">MX-64T/R/AT/AR</a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a>MX-64T/R/AT/AR(2.0)</a>
+                      <a href="http://localhost:4000/docs/kr/dxl/mx/mx-64-2/">MX-64T/R/AT/AR(2.0)</a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a>MX-106T/R</a>
+                      <a href="http://localhost:4000/docs/kr/dxl/mx/mx-106/">MX-106T/R</a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a>MX-106T/R(2.0)</a>
+                      <a href="http://localhost:4000/docs/kr/dxl/mx/mx-106-2/">MX-106T/R(2.0)</a>
                     
                 
               </div>
@@ -410,8 +1953,6 @@
             </div>
             
               <div class="dropdown-content-wrapper">
-              
-
               
 
               
@@ -425,41 +1966,45 @@
                   
 
                   
-
-                  
                     
-                        <a>XL320</a>
+                      <a href="http://localhost:4000/docs/kr/dxl/x/xl320/">XL320</a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a>XL430-W250</a>
+                      <a href="http://localhost:4000/docs/kr/dxl/x/xl430-w250/">XL430-W250</a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a>XM430-W210</a>
+                      <a href="http://localhost:4000/docs/kr/dxl/x/xm430-w210/">XM430-W210</a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a>XM430-W350</a>
+                      <a href="http://localhost:4000/docs/kr/dxl/x/xm430-w350/">XM430-W350</a>
                     
                 
                   
 
+                  
+                    
+                      <a href="http://localhost:4000/docs/kr/dxl/x/xm540-w150/">XM540-W150</a>
+                    
+                
+                  
+
+                  
+                    
+                      <a href="http://localhost:4000/docs/kr/dxl/x/xm540-w270/">XM540-W270</a>
+                    
+                
                   
 
                   
@@ -470,28 +2015,22 @@
                   
 
                   
-
-                  
                     
-                        <a>XH430-W350</a>
+                      <a href="http://localhost:4000/docs/kr/dxl/x/xh430-w350/">XH430-W350</a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a>XH430-V210</a>
+                      <a href="http://localhost:4000/docs/kr/dxl/x/xh430-v210/">XH430-V210</a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a>XH430-V350</a>
+                      <a href="http://localhost:4000/docs/kr/dxl/x/xh430-v350/">XH430-V350</a>
                     
                 
               </div>
@@ -500,8 +2039,6 @@
             </div>
             
               <div class="dropdown-content-wrapper">
-              
-
               
 
               
@@ -515,68 +2052,79 @@
                   
 
                   
-
-                  
+                    
+                      <a href="http://localhost:4000/docs/kr/dxl/pro/h54-200-s500-r/">H54-200-S500-R</a>
+                    
                 
                   
 
                   
-
-                  
+                    
+                      <a href="http://localhost:4000/docs/kr/dxl/pro/h54-100-s500-r/">H54-100-S500-R</a>
+                    
                 
                   
 
                   
-
-                  
+                    
+                      <a href="http://localhost:4000/docs/kr/dxl/pro/h42-20-s300-r/">H42-20-S300-R</a>
+                    
                 
                   
 
                   
-
-                  
+                    
+                      <a href="http://localhost:4000/docs/kr/dxl/pro/m54-60-s250-r/">M54-60-S250-R</a>
+                    
                 
                   
 
                   
-
-                  
+                    
+                      <a href="http://localhost:4000/docs/kr/dxl/pro/m54-40-s250-r/">M54-40-S250-R</a>
+                    
                 
                   
 
                   
-
-                  
+                    
+                      <a href="http://localhost:4000/docs/kr/dxl/pro/m42-10-s260-r/">M42-10-S260-R</a>
+                    
                 
                   
 
                   
-
-                  
+                    
+                      <a href="http://localhost:4000/docs/kr/dxl/pro/l54-50-s500-r/"><font color=#ccc>*L54-50-S500-R</font></a>
+                    
                 
                   
 
                   
-
-                  
+                    
+                      <a href="http://localhost:4000/docs/kr/dxl/pro/l54-50-s290-r/"><font color=#ccc>*L54-50-S290-R</font></a>
+                    
                 
                   
 
                   
-
-                  
+                    
+                      <a href="http://localhost:4000/docs/kr/dxl/pro/l54-30-s500-r/"><font color=#ccc>*L54-30-S500-R</font></a>
+                    
                 
                   
 
                   
-
-                  
+                    
+                      <a href="http://localhost:4000/docs/kr/dxl/pro/l54-30-s400-r/"><font color=#ccc>*L54-30-S400-R</font></a>
+                    
                 
                   
 
                   
-
-                  
+                    
+                      <a href="http://localhost:4000/docs/kr/dxl/pro/l42-10-s300-r/"><font color=#ccc>*L42-10-S300-R</font></a>
+                    
                 
               </div>
               
@@ -587,10 +2135,9 @@
               
 
               
-
-              
                 
-                <a>프로토콜 1.0</a>
+                  
+                    <a href="http://localhost:4000/docs/kr/dxl/protocol1/">프로토콜 1.0</a>
               
 
               
@@ -601,10 +2148,9 @@
               
 
               
-
-              
                 
-                <a>프로토콜 2.0</a>
+                  
+                    <a href="http://localhost:4000/docs/kr/dxl/protocol2/">프로토콜 2.0</a>
               
 
               
@@ -632,10 +2178,9 @@
               
 
               
-
-              
                 
-                <a><font color=#ccc>*OP</font></a>
+                  
+                    <a href="http://localhost:4000/docs/kr/platform/op/getting_started/"><font color=#ccc>*OP</font></a>
               
 
               
@@ -646,10 +2191,9 @@
               
 
               
-
-              
                 
-                <a>OP2</a>
+                  
+                    <a href="http://localhost:4000/docs/kr/platform/op2/getting_started/">OP2</a>
               
 
               
@@ -660,10 +2204,9 @@
               
 
               
-
-              
                 
-                <a>OP3</a>
+                  
+                    <a href="http://localhost:4000/docs/kr/platform/op3/getting_started/">OP3</a>
               
 
               
@@ -674,10 +2217,9 @@
               
 
               
-
-              
                 
-                <a>Hand RX28</a>
+                  
+                    <a href="http://localhost:4000/docs/kr/platform/robothand_rx28/">로봇핸드 RX28</a>
               
 
               
@@ -688,10 +2230,9 @@
               
 
               
-
-              
                 
-                <a>Hand MX28</a>
+                  
+                    <a href="http://localhost:4000/docs/kr/platform/robothand_mx28/">로봇핸드 MX28</a>
               
 
               
@@ -702,10 +2243,9 @@
               
 
               
-
-              
                 
-                <a>Manipulator-H</a>
+                  
+                    <a href="http://localhost:4000/docs/kr/platform/manipulator_h/introduction/">Manipulator-H</a>
               
 
               
@@ -716,10 +2256,9 @@
               
 
               
-
-              
                 
-                <a>똘망3</a>
+                  
+                    <a href="http://localhost:4000/docs/kr/platform/thormang3/getting_started/">똘망3</a>
               
 
               
@@ -730,10 +2269,22 @@
               
 
               
+                
+                  
+                    <a href="http://localhost:4000/docs/kr/platform/turtlebot3/overview/">터틀봇3</a>
+              
+
+              
+
+            </div>
+            
+              <div class="dropdown-content-wrapper">
+              
 
               
                 
-                <a>터틀봇3</a>
+                  
+                    <a href="http://localhost:4000/docs/kr/platform/openmanipulator/">오픈매니퓰레이터</a>
               
 
               
@@ -761,8 +2312,6 @@
               
 
               
-
-              
                 
                 <a><font color=#ccc>*올로</font></a>
               
@@ -773,37 +2322,29 @@
                   
 
                   
-
-                  
                     
-                        <a><font color=#ccc>*버그 키트</font></a>
+                      <a href="http://localhost:4000/docs/kr/edu/ollo/bugkit/"><font color=#ccc>*버그 키트</font></a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a><font color=#ccc>*2단계 교육키트</font></a>
+                      <a href="http://localhost:4000/docs/kr/edu/ollo/explorer/"><font color=#ccc>*2단계 교육키트</font></a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a><font color=#ccc>*3단계 교육키트</font></a>
+                      <a href="http://localhost:4000/docs/kr/edu/ollo/inventor/"><font color=#ccc>*3단계 교육키트</font></a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a><font color=#ccc>*4단계 교육키트</font></a>
+                      <a href="http://localhost:4000/docs/kr/edu/ollo/ollo-4/"><font color=#ccc>*4단계 교육키트</font></a>
                     
                 
               </div>
@@ -812,8 +2353,6 @@
             </div>
             
               <div class="dropdown-content-wrapper">
-              
-
               
 
               
@@ -827,14 +2366,10 @@
                   
 
                   
-
-                  
                     
                       <a href="http://localhost:4000/docs/kr/edu/dream/dream1-1/">1단계 교육키트</a>
                     
                 
-                  
-
                   
 
                   
@@ -845,29 +2380,21 @@
                   
 
                   
-
-                  
                     
-                        <a>3단계 교육키트</a>
+                      <a href="http://localhost:4000/docs/kr/edu/dream/dream1-3/">3단계 교육키트</a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a>4단계 교육키트</a>
+                      <a href="http://localhost:4000/docs/kr/edu/dream/dream1-4/">4단계 교육키트</a>
                     
                 
                   
 
                   
-
-                  
                 
-                  
-
                   
 
                   
@@ -878,8 +2405,6 @@
             </div>
             
               <div class="dropdown-content-wrapper">
-              
-
               
 
               
@@ -893,28 +2418,36 @@
                   
 
                   
-
-                  
                     
-                        <a>1단계 교육키트</a>
+                      <a href="http://localhost:4000/docs/kr/edu/dream/dream2-1/">1단계 교육키트</a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a>2단계 교육키트</a>
+                      <a href="http://localhost:4000/docs/kr/edu/dream/dream2-2/">2단계 교육키트</a>
                     
                 
                   
 
                   
+                    
+                      <a href="http://localhost:4000/docs/kr/edu/dream/dream2-3/">3단계 교육키트</a>
+                    
+                
+                  
 
                   
                     
-                        <a>3단계 교육키트</a>
+                      <a href="http://localhost:4000/docs/kr/edu/dream/dream2-4/">4단계 교육키트</a>
+                    
+                
+                  
+
+                  
+                    
+                      <a href="http://localhost:4000/docs/kr/edu/dream/dream2-5/">5단계 교육키트</a>
                     
                 
               </div>
@@ -923,8 +2456,6 @@
             </div>
             
               <div class="dropdown-content-wrapper">
-              
-
               
 
               
@@ -938,28 +2469,22 @@
                   
 
                   
-
-                  
                     
-                        <a>1단계 교육키트</a>
+                      <a href="http://localhost:4000/docs/kr/edu/smart/smart1-1/">1단계 교육키트</a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a>2단계 교육키트</a>
+                      <a href="http://localhost:4000/docs/kr/edu/smart/smart1-2/">2단계 교육키트</a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a>3단계 교육키트</a>
+                      <a href="http://localhost:4000/docs/kr/edu/smart/smart1-3/">3단계 교육키트</a>
                     
                 
               </div>
@@ -968,8 +2493,6 @@
             </div>
             
               <div class="dropdown-content-wrapper">
-              
-
               
 
               
@@ -983,28 +2506,22 @@
                   
 
                   
-
-                  
                     
-                        <a>1단계 교육키트</a>
+                      <a href="http://localhost:4000/docs/kr/edu/smart/smart2-1/">1단계 교육키트</a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a>2단계 교육키트</a>
+                      <a href="http://localhost:4000/docs/kr/edu/smart/smart2-2/">2단계 교육키트</a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a>3단계 교육키트</a>
+                      <a href="http://localhost:4000/docs/kr/edu/smart/smart2-3/">3단계 교육키트</a>
                     
                 
               </div>
@@ -1013,8 +2530,6 @@
             </div>
             
               <div class="dropdown-content-wrapper">
-              
-
               
 
               
@@ -1028,14 +2543,10 @@
                   
 
                   
-
-                  
                     
-                        <a>1단계 교육키트</a>
+                      <a href="http://localhost:4000/docs/kr/edu/smart/smart3-1/">1단계 교육키트</a>
                     
                 
-                  
-
                   
 
                   
@@ -1052,8 +2563,6 @@
               
 
               
-
-              
                 
                 <a>IoT</a>
               
@@ -1064,19 +2573,15 @@
                   
 
                   
-
-                  
                     
-                        <a>1단계 교육키트</a>
+                      <a href="http://localhost:4000/docs/kr/edu/iot/iot-1/">1단계 교육키트</a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a>2단계 교육키트</a>
+                      <a href="http://localhost:4000/docs/kr/edu/iot/iot-2/">2단계 교육키트</a>
                     
                 
               </div>
@@ -1085,8 +2590,6 @@
             </div>
             
               <div class="dropdown-content-wrapper">
-              
-
               
 
               
@@ -1100,55 +2603,43 @@
                   
 
                   
-
-                  
                     
-                        <a>초급</a>
+                      <a href="http://localhost:4000/docs/kr/edu/bioloid/beginner/">초급</a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a>종합</a>
+                      <a href="http://localhost:4000/docs/kr/edu/bioloid/comprehensive/">종합</a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a>STEM 키트</a>
+                      <a href="http://localhost:4000/docs/kr/edu/bioloid/stem/">STEM 키트</a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a>STEM 아카데미</a>
+                      <a href="http://localhost:4000/docs/kr/edu/bioloid/stem_academy/">STEM 아카데미</a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a>프리미엄</a>
+                      <a href="http://localhost:4000/docs/kr/edu/bioloid/premium/">프리미엄</a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a>ROBOTIS GP</a>
+                      <a href="http://localhost:4000/docs/kr/edu/bioloid/gp/">ROBOTIS GP</a>
                     
                 
               </div>
@@ -1160,10 +2651,9 @@
               
 
               
-
-              
                 
-                <a>미니</a>
+                  
+                    <a href="http://localhost:4000/docs/kr/edu/mini/">미니</a>
               
 
               
@@ -1191,6 +2681,34 @@
               
 
               
+                
+                <a>다이나믹셀</a>
+              
+
+              
+              <div class="dropdown-2nd-content">
+                
+                  
+
+                  
+                    
+                      <a href="http://localhost:4000/docs/kr/software/dynamixel/dynamixel_sdk/overview/">다이나믹셀 SDK</a>
+                    
+                
+                  
+
+                  
+                    
+                      <a href="http://localhost:4000/docs/kr/software/dynamixel/dynamixel_workbench/">다이나믹셀 워크벤치</a>
+                    
+                
+              </div>
+              
+
+            </div>
+            
+              <div class="dropdown-content-wrapper">
+              
 
               
                 
@@ -1203,28 +2721,22 @@
                   
 
                   
-
-                  
                     
-                        <a>R+ SMART</a>
+                      <a href="http://localhost:4000/docs/kr/software/mobile_app/rplussmart/">로보플러스 SMART</a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a>R+ IoT</a>
+                      <a href="http://localhost:4000/docs/kr/software/mobile_app/rplusiot/">로보플러스 IoT</a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a>ROBOTIS MINI</a>
+                      <a href="http://localhost:4000/docs/kr/software/mobile_app/mini_app/">로보티즈 미니</a>
                     
                 
               </div>
@@ -1236,17 +2748,13 @@
               
 
               
-
-              
                 
-                <a>R+ 1.0</a>
+                <a>로보플러스 1.0</a>
               
 
               
               <div class="dropdown-2nd-content">
                 
-                  
-
                   
 
                   
@@ -1257,28 +2765,22 @@
                   
 
                   
-
-                  
                     
-                        <a>로보플러스 매니저</a>
+                      <a href="http://localhost:4000/docs/kr/software/rplus1/manager/">로보플러스 매니저</a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a>로보플러스 모션</a>
+                      <a href="http://localhost:4000/docs/kr/software/rplus1/motion/">로보플러스 모션</a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a>다이나믹셀 위자드</a>
+                      <a href="http://localhost:4000/docs/kr/software/rplus1/dynamixel_wizard/">다이나믹셀 위자드</a>
                     
                 
               </div>
@@ -1287,8 +2789,6 @@
             </div>
             
               <div class="dropdown-content-wrapper">
-              
-
               
 
               
@@ -1302,46 +2802,36 @@
                   
 
                   
-
-                  
                     
-                        <a>로보플러스 태스크 2.0</a>
+                      <a href="http://localhost:4000/docs/kr/software/rplus2/task/">로보플러스 태스크 2.0</a>
                     
                 
                   
 
                   
-
-                  
                     
-                      <a href="http://localhost:4000/docs/kr/software/rplus2/manager/getting_started/">로보플러스 매니저 2.0</a>
+                      <a href="http://localhost:4000/docs/kr/software/rplus2/manager/">로보플러스 매니저 2.0</a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a>로보플러스 모션 2.0</a>
+                      <a href="http://localhost:4000/docs/kr/software/rplus2/motion/">로보플러스 모션 2.0</a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a>로보플러스 디자인 2.0</a>
+                      <a href="http://localhost:4000/docs/kr/software/rplus2/design/">로보플러스 디자인 2.0</a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a>로보플러스 스크래치</a>
+                      <a href="http://localhost:4000/docs/kr/software/rplus2/scratch/">로보플러스 스크래치</a>
                     
                 
               </div>
@@ -1350,8 +2840,6 @@
             </div>
             
               <div class="dropdown-content-wrapper">
-              
-
               
 
               
@@ -1365,37 +2853,29 @@
                   
 
                   
-
-                  
                     
-                        <a>R+ m.Task</a>
+                      <a href="http://localhost:4000/docs/kr/software/rplus_mobile/mtask/">R+ m.Task</a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a>R+ m.Task 2.0</a>
+                      <a href="http://localhost:4000/docs/kr/software/rplus_mobile/mtask20/">R+ m.Task 2.0</a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a>R+ m.Motion 2.0</a>
+                      <a href="http://localhost:4000/docs/kr/software/rplus_mobile/mmotion/">R+ m.Motion 2.0</a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a>R+ m.Design</a>
+                      <a href="http://localhost:4000/docs/kr/software/rplus_mobile/mdesign/">R+ m.Design</a>
                     
                 
               </div>
@@ -1407,10 +2887,9 @@
               
 
               
-
-              
                 
-                <a>SDK</a>
+                  
+                    <a href="http://localhost:4000/docs/kr/software/embedded_sdk/">EMBEDDED SDK</a>
               
 
               
@@ -1419,37 +2898,22 @@
                   
 
                   
-
-                  
                     
-                        <a>제어기 펌웨어 개발(CM-510/700)</a>
+                      <a href="http://localhost:4000/docs/kr/software/embedded_sdk/embedded_c_cm510/">제어기 펌웨어 개발(CM-510/700)</a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a>제어기 펌웨어 개발(CM-530)</a>
+                      <a href="http://localhost:4000/docs/kr/software/embedded_sdk/embedded_c_cm530/">제어기 펌웨어 개발(CM-530)</a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a>다이나믹셀 SDK</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    
-                        <a>지그비 SDK</a>
+                      <a href="http://localhost:4000/docs/kr/software/embedded_sdk/zigbee_sdk/">지그비 SDK</a>
                     
                 
               </div>
@@ -1461,10 +2925,9 @@
               
 
               
-
-              
                 
-                <a>OpenCM IDE</a>
+                  
+                    <a href="http://localhost:4000/docs/kr/software/opencm_ide/getting_started/">OpenCM IDE</a>
               
 
               
@@ -1492,10 +2955,9 @@
               
 
               
-
-              
                 
-                <a>제어기</a>
+                  
+                    <a href="http://localhost:4000/docs/kr/parts/controller/controller_compatibility/">제어기</a>
               
 
               
@@ -1504,23 +2966,17 @@
                   
 
                   
-
-                  
                     
-                        <a><font color=#ccc>*CM-100A</font></a>
+                      <a href="http://localhost:4000/docs/kr/parts/controller/cm-100/"><font color=#ccc>*CM-100A</font></a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a>CM-150</a>
+                      <a href="http://localhost:4000/docs/kr/parts/controller/cm-150/">CM-150</a>
                     
                 
-                  
-
                   
 
                   
@@ -1531,73 +2987,57 @@
                   
 
                   
-
-                  
                     
-                        <a><font color=#ccc>*CM-5</font></a>
+                      <a href="http://localhost:4000/docs/kr/parts/controller/cm-5/"><font color=#ccc>*CM-5</font></a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a><font color=#ccc>*CM-510</font></a>
+                      <a href="http://localhost:4000/docs/kr/parts/controller/cm-510/"><font color=#ccc>*CM-510</font></a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a>CM-530</a>
+                      <a href="http://localhost:4000/docs/kr/parts/controller/cm-530/">CM-530</a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a>CM-700</a>
+                      <a href="http://localhost:4000/docs/kr/parts/controller/cm-700/">CM-700</a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a><font color=#ccc>*CM-900</font></a>
+                      <a href="http://localhost:4000/docs/kr/parts/controller/cm-900/"><font color=#ccc>*CM-900</font></a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a>OpenCM 9.04</a>
+                      <a href="http://localhost:4000/docs/kr/parts/controller/opencm904/">OpenCM 9.04</a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a>OpenCM 485 EXP</a>
+                      <a href="http://localhost:4000/docs/kr/parts/controller/opencm485exp/">OpenCM 485 EXP</a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a>OpenCR</a>
+                      <a href="http://localhost:4000/docs/kr/parts/controller/opencr10/">OpenCR</a>
                     
                 
               </div>
@@ -1606,8 +3046,6 @@
             </div>
             
               <div class="dropdown-content-wrapper">
-              
-
               
 
               
@@ -1621,55 +3059,50 @@
                   
 
                   
-
-                  
                     
-                        <a>RC-100A/100B</a>
+                      <a href="http://localhost:4000/docs/kr/parts/communication/rc-100/">RC-100A/100B</a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a><font color=#ccc>*ZIG-100/110A</font></a>
+                      <a href="http://localhost:4000/docs/kr/parts/communication/zig-110/"><font color=#ccc>*ZIG-100/110A</font></a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a><font color=#ccc>*BT-100/110A</font></a>
+                      <a href="http://localhost:4000/docs/kr/parts/communication/bt-110/"><font color=#ccc>*BT-100/110A</font></a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a>BT-210</a>
+                      <a href="http://localhost:4000/docs/kr/parts/communication/bt-210/">BT-210</a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a>BT-410</a>
+                      <a href="http://localhost:4000/docs/kr/parts/communication/bt-410/">BT-410</a>
                     
                 
                   
 
                   
+                    
+                      <a href="http://localhost:4000/docs/kr/parts/communication/bt-410-dongle/">BT-410 동글</a>
+                    
+                
+                  
 
                   
                     
-                        <a>ZIG2Serial</a>
+                      <a href="http://localhost:4000/docs/kr/parts/communication/zig2serial/">ZIG2Serial</a>
                     
                 
               </div>
@@ -1678,8 +3111,6 @@
             </div>
             
               <div class="dropdown-content-wrapper">
-              
-
               
 
               
@@ -1693,37 +3124,29 @@
                   
 
                   
-
-                  
                     
-                        <a>감속모터(GM-10A)</a>
+                      <a href="http://localhost:4000/docs/kr/parts/motor/gm-10a/">감속모터(GM-10A)</a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a><font color=#ccc>*고속 감속모터</font></a>
+                      <a href="http://localhost:4000/docs/kr/parts/motor/h_speed_geared_motor/"><font color=#ccc>*고속 감속모터</font></a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a>저속 감속모터</a>
+                      <a href="http://localhost:4000/docs/kr/parts/motor/l_speed_geared_motor/">저속 감속모터</a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a>서보모터(SM-10)</a>
+                      <a href="http://localhost:4000/docs/kr/parts/motor/servo_motor/">서보모터(SM-10)</a>
                     
                 
               </div>
@@ -1732,8 +3155,6 @@
             </div>
             
               <div class="dropdown-content-wrapper">
-              
-
               
 
               
@@ -1747,19 +3168,22 @@
                   
 
                   
-
-                  
                     
-                        <a>LN-101</a>
+                      <a href="http://localhost:4000/docs/kr/parts/interface/ln-101/">LN-101</a>
                     
                 
                   
 
                   
+                    
+                      <a href="http://localhost:4000/docs/kr/parts/interface/usb2dynamixel/">USB2DYNAMIXEL</a>
+                    
+                
+                  
 
                   
                     
-                        <a>USB2DYNAMIXEL</a>
+                      <a href="http://localhost:4000/docs/kr/parts/interface/u2d2/">U2D2</a>
                     
                 
               </div>
@@ -1768,8 +3192,6 @@
             </div>
             
               <div class="dropdown-content-wrapper">
-              
-
               
 
               
@@ -1783,109 +3205,85 @@
                   
 
                   
-
-                  
                     
-                        <a>적외선 센서(IRSS-10)</a>
+                      <a href="http://localhost:4000/docs/kr/parts/sensor/irss-10/">적외선 센서(IRSS-10)</a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a>거리 측정 센서(DMS-80)</a>
+                      <a href="http://localhost:4000/docs/kr/parts/sensor/dms-80/">거리 측정 센서(DMS-80)</a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a>접촉 센서(TS-10)</a>
+                      <a href="http://localhost:4000/docs/kr/parts/sensor/ts-10/">접촉 센서(TS-10)</a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a><font color=#ccc>*통합 센서(AX-S1)</font></a>
+                      <a href="http://localhost:4000/docs/kr/parts/sensor/ax-s1/"><font color=#ccc>*통합 센서(AX-S1)</font></a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a>자이로 센서(GS-12)</a>
+                      <a href="http://localhost:4000/docs/kr/parts/sensor/gs-12/">자이로 센서(GS-12)</a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a>적외선 어레이 센서</a>
+                      <a href="http://localhost:4000/docs/kr/parts/sensor/ir-array/">적외선 어레이 센서</a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a>컬러 센서(CS-10)</a>
+                      <a href="http://localhost:4000/docs/kr/parts/sensor/cs-10/">컬러 센서(CS-10)</a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a>자석 센서(MGSS-10)</a>
+                      <a href="http://localhost:4000/docs/kr/parts/sensor/mgss-10/">자석 센서(MGSS-10)</a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a>온도 센서(TPS-10)</a>
+                      <a href="http://localhost:4000/docs/kr/parts/sensor/tps-10/">온도 센서(TPS-10)</a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a>동작감지 센서(PIR-10)</a>
+                      <a href="http://localhost:4000/docs/kr/parts/sensor/pir-10/">동작감지 센서(PIR-10)</a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a>조도 센서</a>
+                      <a href="http://localhost:4000/docs/kr/parts/sensor/cds-10/">조도 센서(CDS-10)</a>
                     
                 
                   
 
                   
-
-                  
                     
-                        <a>온습도 센서</a>
+                      <a href="http://localhost:4000/docs/kr/parts/sensor/tms-10/">온습도 센서(TMS-10)</a>
                     
                 
               </div>
@@ -1894,8 +3292,6 @@
             </div>
             
               <div class="dropdown-content-wrapper">
-              
-
               
 
               
@@ -1909,10 +3305,8 @@
                   
 
                   
-
-                  
                     
-                        <a>LED 모듈(LM-10)</a>
+                      <a href="http://localhost:4000/docs/kr/parts/display/lm-10/">LED 모듈(LM-10)</a>
                     
                 
               </div>
@@ -1943,6 +3337,7 @@
         </div>
       
     </div>
+    
     <div>
       <ul id="search_results" style="margin: 0; background-color: #ffebeb"></ul>
     </div>
@@ -1950,15 +3345,47 @@
 </div>
 
 
-
-
     
 
 
+
+<script>
+  var side_nav = document.getElementById("sidebar");
+  var offset = 105;
+
+  window.onscroll = function () {
+    stickynav()
+  };
+  
+  function stickynav() {
+    if (window.pageYOffset > offset) {
+      sidebar.classList.add("sticky_sidebar");
+    }
+    else {
+      sidebar.classList.remove("sticky_sidebar");
+    }
+  }
+  
+  var toggle = 0;
+  var mobile_width = 960;
+  
+  function extendnav() {
+    if (document.body.clientWidth < mobile_width ) {
+      if (toggle == 0) {
+        sidebar.classList.add("extend_sidebar");
+        toggle = 1;
+      }
+      else {
+        sidebar.classList.remove("extend_sidebar");
+        toggle = 0;
+      }
+    }
+  }
+</script>
 
 <div id="main" role="main">
   
-  <div class="sidebar sticky">
+  <div class="sidebar__left" id="sidebar">
   
   
     
@@ -1972,10 +3399,9 @@
     
     
       
-
 <nav class="nav__list">
 
-  <a href=http://localhost:4000/docs/kr/software/rplus1/task/getting_started/ style="font-size:$type-size-6; color: #2174b6;">R+ Task 1.0</a>
+  <a href=http://localhost:4000/docs/kr/software/rplus1/task/getting_started/ style="font-size:$type-size-6; color: #2174b6; text-decoration: none; font-weight: bold;" onclick="extendnav()">로보플러스 태스크 1.0</a>
   <ul class="nav__items">
   
     
@@ -1983,20 +3409,19 @@
     
 
     <li class="has-children">
-      <input type="radio" name="toplevel" id="toplevel_0">
-      <label for="toplevel_0">개요</label>
+      <input type="radio" name="toplevel" id="toplevel_0" >
+      <label for="toplevel_0">개요 [+]</label>
     
 
     
       <ul>
       
         
-        
 
         
 
         
-        <li><a href="http://localhost:4000/docs/kr/software/rplus1/task/getting_started/#설치" class="">설치</a></li>
+        <li><a href="http://localhost:4000/docs/kr/software/rplus1/task/getting_started/#설치하기" onclick="extendnav()">설치하기</a></li>
         
 
         
@@ -2013,68 +3438,63 @@
     
 
     <li class="has-children">
-      <input type="radio" name="toplevel" id="toplevel_1">
-      <label for="toplevel_1">시작하기</label>
+      <input type="radio" name="toplevel" id="toplevel_1" >
+      <label for="toplevel_1">시작하기 [+]</label>
     
 
     
       <ul>
       
         
-        
 
         
 
         
-        <li><a href="http://localhost:4000/docs/kr/software/rplus1/task/getting_started/#명령줄-만들기" class="">명령줄 만들기</a></li>
-        
-
-        
-        
-      
-        
-        
-
-        
-
-        
-        <li><a href="http://localhost:4000/docs/kr/software/rplus1/task/getting_started/#파라미터-만들기" class="">파라미터 만들기</a></li>
+        <li><a href="http://localhost:4000/docs/kr/software/rplus1/task/getting_started/#명령줄-만들기" onclick="extendnav()">명령줄 만들기</a></li>
         
 
         
         
       
         
-        
 
         
 
         
-        <li><a href="http://localhost:4000/docs/kr/software/rplus1/task/getting_started/#프로그램-다운로드" class="">프로그램 다운로드</a></li>
-        
-
-        
-        
-      
-        
-        
-
-        
-
-        
-        <li><a href="http://localhost:4000/docs/kr/software/rplus1/task/getting_started/#프로그램-결과-출력" class="">프로그램 결과 출력</a></li>
+        <li><a href="http://localhost:4000/docs/kr/software/rplus1/task/getting_started/#파라미터-만들기" onclick="extendnav()">파라미터 만들기</a></li>
         
 
         
         
       
         
+
+        
+
+        
+        <li><a href="http://localhost:4000/docs/kr/software/rplus1/task/getting_started/#프로그램-다운로드" onclick="extendnav()">프로그램 다운로드</a></li>
+        
+
+        
+        
+      
         
 
         
 
         
-        <li><a href="http://localhost:4000/docs/kr/software/rplus1/task/getting_started/#가상로봇-조종" class="">가상로봇 조종</a></li>
+        <li><a href="http://localhost:4000/docs/kr/software/rplus1/task/getting_started/#프로그램-결과-출력" onclick="extendnav()">프로그램 결과 출력</a></li>
+        
+
+        
+        
+      
+        
+
+        
+
+        
+        <li><a href="http://localhost:4000/docs/kr/software/rplus1/task/getting_started/#가상로봇-조종" onclick="extendnav()">가상로봇 조종</a></li>
         
 
         
@@ -2091,79 +3511,72 @@
     
 
     <li class="has-children">
-      <input type="radio" name="toplevel" id="toplevel_2">
-      <label for="toplevel_2">Programming</label>
+      <input type="radio" name="toplevel" id="toplevel_2" >
+      <label for="toplevel_2">프로그래밍 [+]</label>
     
 
     
       <ul>
       
         
-        
 
         
 
         
         <li class="has-children">
-          <input type="radio" name="sublevel" id="Edit">
-          <label for="Edit">Edit</label>
+          <input type="radio" name="sublevel" id="편집" >
+          <label for="편집">편집 [+]</label>
         
 
         
           <ul>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#select-multiple-lines" class="" style="font-style:italic;">Select Multiple Lines</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#여러줄-선택" style="font-style:italic;" onclick="extendnav()">여러줄 선택</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#insert-new-line" class="" style="font-style:italic;">Insert New Line</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#줄-삽입" style="font-style:italic;" onclick="extendnav()">줄 삽입</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#delete-lines" class="" style="font-style:italic;">Delete Lines</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#줄-지우기" style="font-style:italic;" onclick="extendnav()">줄 지우기</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#enabledisable-lines" class="" style="font-style:italic;">Enable/Disable Lines</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#줄-활성비활성" style="font-style:italic;" onclick="extendnav()">줄 활성/비활성</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#copycutpaste" class="" style="font-style:italic;">Copy/Cut/Paste</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#복사잘라내기붙여넣기" style="font-style:italic;" onclick="extendnav()">복사/잘라내기/붙여넣기</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#find-name" class="" style="font-style:italic;">Find Name</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#이름찾기" style="font-style:italic;" onclick="extendnav()">이름찾기</a>
             </li>
           
           </ul>
@@ -2173,161 +3586,144 @@
         
       
         
-        
 
         
 
         
         <li class="has-children">
-          <input type="radio" name="sublevel" id="Commands">
-          <label for="Commands">Commands</label>
+          <input type="radio" name="sublevel" id="명령어" >
+          <label for="명령어">명령어 [+]</label>
         
 
         
           <ul>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#start-program" class="" style="font-style:italic;">Start Program</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#프로그램-시작" style="font-style:italic;" onclick="extendnav()">프로그램 시작</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#end-program" class="" style="font-style:italic;">End Program</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#프로그램-강제종료" style="font-style:italic;" onclick="extendnav()">프로그램 강제종료</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#startend-of-section" class="" style="font-style:italic;">Start/End of Section</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#구간-시작끝" style="font-style:italic;" onclick="extendnav()">구간 시작/끝</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#commentsnotes" class="" style="font-style:italic;">Comments/Notes</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#주석메모" style="font-style:italic;" onclick="extendnav()">주석/메모</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#calculate" class="" style="font-style:italic;">Calculate</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#계산" style="font-style:italic;" onclick="extendnav()">계산</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#load" class="" style="font-style:italic;">Load</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#로드" style="font-style:italic;" onclick="extendnav()">로드</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#labeljump" class="" style="font-style:italic;">Label/Jump</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#레이블점프" style="font-style:italic;" onclick="extendnav()">레이블/점프</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#ifelse-ifelse" class="" style="font-style:italic;">If/Else if/Else</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#조건문" style="font-style:italic;" onclick="extendnav()">조건문</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#endless-loop" class="" style="font-style:italic;">Endless Loop</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#무조건-반복" style="font-style:italic;" onclick="extendnav()">무조건 반복</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#loop-while" class="" style="font-style:italic;">Loop While</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#조건-반복" style="font-style:italic;" onclick="extendnav()">조건 반복</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#loop-for" class="" style="font-style:italic;">Loop For</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#횟수-반복" style="font-style:italic;" onclick="extendnav()">횟수 반복</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#break-loop" class="" style="font-style:italic;">Break Loop</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#반복-끝내기" style="font-style:italic;" onclick="extendnav()">반복 끝내기</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#wait-while" class="" style="font-style:italic;">Wait While</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#조건-대기" style="font-style:italic;" onclick="extendnav()">조건 대기</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#exit-function" class="" style="font-style:italic;">Exit Function</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#함수-강제종료" style="font-style:italic;" onclick="extendnav()">함수 강제종료</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#makecall-function" class="" style="font-style:italic;">Make/Call Function</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#함수-만들기호출" style="font-style:italic;" onclick="extendnav()">함수 만들기/호출</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#callback-function" class="" style="font-style:italic;">Callback Function</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#콜백-함수" style="font-style:italic;" onclick="extendnav()">콜백 함수</a>
             </li>
           
           </ul>
@@ -2337,170 +3733,168 @@
         
       
         
-        
 
         
 
         
         <li class="has-children">
-          <input type="radio" name="sublevel" id="Controller Parameters">
-          <label for="Controller Parameters">Controller Parameters</label>
+          <input type="radio" name="sublevel" id="제어기 파라미터" >
+          <label for="제어기 파라미터">제어기 파라미터 [+]</label>
         
 
         
           <ul>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#remocon-txd" class="" style="font-style:italic;">Remocon TXD</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#보낼-무선-데이터" style="font-style:italic;" onclick="extendnav()">모낼 무선 데이터</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#remocon-rxd" class="" style="font-style:italic;">Remocon RXD</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#받은-무선-데이터" style="font-style:italic;" onclick="extendnav()">받은 무선 데이터</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#remocon-arrived" class="" style="font-style:italic;">Remocon Arrived</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#새-무선-데이터" style="font-style:italic;" onclick="extendnav()">새 무선 데이터</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#aux-led" class="" style="font-style:italic;">Aux LED</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#임의의-숫자" style="font-style:italic;" onclick="extendnav()">임의의 숫자</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#button" class="" style="font-style:italic;">Button</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#aux-led" style="font-style:italic;" onclick="extendnav()">Aux LED</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#timer" class="" style="font-style:italic;">Timer</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#버튼" style="font-style:italic;" onclick="extendnav()">버튼</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#hr-timer" class="" style="font-style:italic;">HR Timer</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#타이머" style="font-style:italic;" onclick="extendnav()">타이머</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#remocon-id" class="" style="font-style:italic;">Remocon ID</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#정밀타이머" style="font-style:italic;" onclick="extendnav()">정밀타이머</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#my-id" class="" style="font-style:italic;">My ID</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#상대-로봇-무선id" style="font-style:italic;" onclick="extendnav()">상대 로봇 무선ID</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#ir-leftcenterright" class="" style="font-style:italic;">IR Left/Center/Right</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#내-로봇-무선id" style="font-style:italic;" onclick="extendnav()">내 로봇 무선ID</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#buzzer-index" class="" style="font-style:italic;">Buzzer Index</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#화면출력줄바꿈" style="font-style:italic;" onclick="extendnav()">화면출력/줄바꿈</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#buzzer-time" class="" style="font-style:italic;">Buzzer Time</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#왼쪽중앙오른쪽-적외선-센서" style="font-style:italic;" onclick="extendnav()">왼쪽/중앙/오른쪽 적외선 센서</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#sound-count" class="" style="font-style:italic;">Sound Count</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#부저-종류" style="font-style:italic;" onclick="extendnav()">부저 종류</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#current-sound-count" class="" style="font-style:italic;">Current Sound Count</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#부저-울림시간" style="font-style:italic;" onclick="extendnav()">부저 울림시간</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#button-count" class="" style="font-style:italic;">Button Count</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#최종-소리감지-횟수" style="font-style:italic;" onclick="extendnav()">최종 소리감지 횟수</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#powersave-timer" class="" style="font-style:italic;">Powersave Timer</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#실시간-소리감지-횟수" style="font-style:italic;" onclick="extendnav()">실시간 소리감지 횟수</a>
             </li>
           
             
+
+            
+
+            <li>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#시작버튼-눌림횟수" style="font-style:italic;" onclick="extendnav()">시작버튼 눌림횟수</a>
+            </li>
+          
             
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#rc-100-channel" class="" style="font-style:italic;">RC-100 Channel</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#자동꺼짐-타이머" style="font-style:italic;" onclick="extendnav()">자동꺼짐 타이머</a>
+            </li>
+          
+            
+
+            
+
+            <li>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#rc-100-채널" style="font-style:italic;" onclick="extendnav()">RC-100 채널</a>
             </li>
           
           </ul>
@@ -2510,44 +3904,48 @@
         
       
         
-        
 
         
 
         
         <li class="has-children">
-          <input type="radio" name="sublevel" id="Motion Parameters">
-          <label for="Motion Parameters">Motion Parameters</label>
+          <input type="radio" name="sublevel" id="모션 파라미터" >
+          <label for="모션 파라미터">모션 파라미터 [+]</label>
         
 
         
           <ul>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#motion-page" class="" style="font-style:italic;">Motion Page</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#모션-페이지" style="font-style:italic;" onclick="extendnav()">모션 페이지</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#motion-status" class="" style="font-style:italic;">Motion Status</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#모션-상태" style="font-style:italic;" onclick="extendnav()">모션 상태</a>
             </li>
           
             
+
+            
+
+            <li>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#관절-오프셋" style="font-style:italic;" onclick="extendnav()">관절 오프셋</a>
+            </li>
+          
             
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#joint-offset" class="" style="font-style:italic;">Joint Offset</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#관절-led-자동켜기" style="font-style:italic;" onclick="extendnav()">관절 LED 자동켜기</a>
             </li>
           
           </ul>
@@ -2557,80 +3955,88 @@
         
       
         
-        
 
         
 
         
         <li class="has-children">
-          <input type="radio" name="sublevel" id="Peripheral Devices">
-          <label for="Peripheral Devices">Peripheral Devices</label>
+          <input type="radio" name="sublevel" id="주변장치" >
+          <label for="주변장치">주변장치 [+]</label>
         
 
         
           <ul>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#reduction-motor" class="" style="font-style:italic;">Reduction Motor</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#감속모터" style="font-style:italic;" onclick="extendnav()">감속모터</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#servo-motor" class="" style="font-style:italic;">Servo Motor</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#서보모터" style="font-style:italic;" onclick="extendnav()">서보모터</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#touch-sensor" class="" style="font-style:italic;">Touch Sensor</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#접촉센서" style="font-style:italic;" onclick="extendnav()">접촉센서</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#led-module" class="" style="font-style:italic;">LED Module</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#led모듈" style="font-style:italic;" onclick="extendnav()">LED모듈</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#ir-sensor" class="" style="font-style:italic;">IR Sensor</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#적외선센서" style="font-style:italic;" onclick="extendnav()">적외선센서</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#dms-sensor" class="" style="font-style:italic;">DMS Sensor</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#컬러센서" style="font-style:italic;" onclick="extendnav()">컬러센서</a>
             </li>
           
             
+
+            
+
+            <li>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#자석센서" style="font-style:italic;" onclick="extendnav()">자석센서</a>
+            </li>
+          
             
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#user-devices" class="" style="font-style:italic;">User Devices</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#절대거리센서" style="font-style:italic;" onclick="extendnav()">절대거리센서</a>
+            </li>
+          
+            
+
+            
+
+            <li>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#사용자-장치" style="font-style:italic;" onclick="extendnav()">사용자 장치</a>
             </li>
           
           </ul>
@@ -2640,152 +4046,136 @@
         
       
         
-        
 
         
 
         
         <li class="has-children">
-          <input type="radio" name="sublevel" id="Dynamixel Parameters">
-          <label for="Dynamixel Parameters">Dynamixel Parameters</label>
+          <input type="radio" name="sublevel" id="다이나믹셀 파라미터" >
+          <label for="다이나믹셀 파라미터">다이나믹셀 파라미터 [+]</label>
         
 
         
           <ul>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#torque-enable" class="" style="font-style:italic;">Torque Enable</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#모터-켜기" style="font-style:italic;" onclick="extendnav()">모터 켜기</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#led" class="" style="font-style:italic;">LED</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#led" style="font-style:italic;" onclick="extendnav()">LED</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#cwccw-margin" class="" style="font-style:italic;">CW/CCW Margin</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#cwccw-margin" style="font-style:italic;" onclick="extendnav()">CW/CCW Margin</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#cwccw-slope" class="" style="font-style:italic;">CW/CCW Slope</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#cwccw-slope" style="font-style:italic;" onclick="extendnav()">CW/CCW Slope</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#pid-gain" class="" style="font-style:italic;">PID Gain</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#pid-제어" style="font-style:italic;" onclick="extendnav()">PID 제어</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#goal-position" class="" style="font-style:italic;">Goal Position</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#목표-위치" style="font-style:italic;" onclick="extendnav()">목표 위치</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#moving-speed" class="" style="font-style:italic;">Moving Speed</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#이동-속도" style="font-style:italic;" onclick="extendnav()">이동 속도</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#torque-limit" class="" style="font-style:italic;">Torque Limit</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#힘-조절" style="font-style:italic;" onclick="extendnav()">힘 조절</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#present-position" class="" style="font-style:italic;">Present Position</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#현재-위치" style="font-style:italic;" onclick="extendnav()">현재 위치</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#present-speed" class="" style="font-style:italic;">Present Speed</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#현재-속도" style="font-style:italic;" onclick="extendnav()">현재 속도</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#present-load" class="" style="font-style:italic;">Present Load</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#현재-하중" style="font-style:italic;" onclick="extendnav()">현재 하중</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#voltage" class="" style="font-style:italic;">Voltage</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#전압" style="font-style:italic;" onclick="extendnav()">전압</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#temperature" class="" style="font-style:italic;">Temperature</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#온도" style="font-style:italic;" onclick="extendnav()">온도</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#moving" class="" style="font-style:italic;">Moving</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#움직임-유무" style="font-style:italic;" onclick="extendnav()">움직임 유무</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#sensed-current" class="" style="font-style:italic;">Sensed Current</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#소모-전류량" style="font-style:italic;" onclick="extendnav()">소모 전류량</a>
             </li>
           
           </ul>
@@ -2795,152 +4185,136 @@
         
       
         
-        
 
         
 
         
         <li class="has-children">
-          <input type="radio" name="sublevel" id="Universal Sensor S1">
-          <label for="Universal Sensor S1">Universal Sensor S1</label>
+          <input type="radio" name="sublevel" id="통합센서 S1" >
+          <label for="통합센서 S1">통합센서 S1 [+]</label>
         
 
         
           <ul>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#ir-leftcenterright" class="" style="font-style:italic;">IR Left/Center/Right</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#거리센서-값" style="font-style:italic;" onclick="extendnav()">거리센서 값</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#light-leftcenterright" class="" style="font-style:italic;">Light Left/Center/Right</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#조명-밝기" style="font-style:italic;" onclick="extendnav()">조명 밝기</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#object-detected" class="" style="font-style:italic;">Object Detected</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#물체감지" style="font-style:italic;" onclick="extendnav()">물체감지</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#light-detected" class="" style="font-style:italic;">Light Detected</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#조명감지" style="font-style:italic;" onclick="extendnav()">조명감지</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#sound-max-data" class="" style="font-style:italic;">Sound Max Data</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#최대-소리-크기" style="font-style:italic;" onclick="extendnav()">최대 소리 크기</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#sound-data" class="" style="font-style:italic;">Sound Data</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#소리-크기" style="font-style:italic;" onclick="extendnav()">소리 크기</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#sound-count" class="" style="font-style:italic;">Sound Count</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#소리감지-횟수" style="font-style:italic;" onclick="extendnav()">소리감지 횟수</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#sound-time" class="" style="font-style:italic;">Sound Time</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#소리발생-시간" style="font-style:italic;" onclick="extendnav()">소리발생 시간</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#buzzer-index" class="" style="font-style:italic;">Buzzer Index</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#부저-음계" style="font-style:italic;" onclick="extendnav()">부저 음계</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#buzzer-time" class="" style="font-style:italic;">Buzzer Time</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#부저-울림시간" style="font-style:italic;" onclick="extendnav()">부저 울림시간</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#ir-com-arrived" class="" style="font-style:italic;">IR COM Arrived</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#새-리모컨-데이터" style="font-style:italic;" onclick="extendnav()">새 리모컨 데이터</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#ir-com-rxd" class="" style="font-style:italic;">IR COM RXD</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#받은-리모컨-데이터" style="font-style:italic;" onclick="extendnav()">받은 리모컨 데이터</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#ir-com-txd" class="" style="font-style:italic;">IR COM TXD</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#보낼-리모컨-데이터" style="font-style:italic;" onclick="extendnav()">보낼 리모컨 데이터</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#object-detection-threshold" class="" style="font-style:italic;">Object Detection Threshold</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#물체감지-기준값" style="font-style:italic;" onclick="extendnav()">물체감지 기준값</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#light-detection-threshold" class="" style="font-style:italic;">Light Detection Threshold</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#조명감지-기준값" style="font-style:italic;" onclick="extendnav()">조명감지 기준값</a>
             </li>
           
           </ul>
@@ -2950,80 +4324,72 @@
         
       
         
-        
 
         
 
         
         <li class="has-children">
-          <input type="radio" name="sublevel" id="IR Sensor Array">
-          <label for="IR Sensor Array">IR Sensor Array</label>
+          <input type="radio" name="sublevel" id="적외선 센서 어레이" >
+          <label for="적외선 센서 어레이">적외선 센서 어레이 [+]</label>
         
 
         
           <ul>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#ir-sensor-value" class="" style="font-style:italic;">IR Sensor Value</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#적외선-센서-값" style="font-style:italic;" onclick="extendnav()">적외선 센서 값</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#ir-array-buzzer-index" class="" style="font-style:italic;">IR Array Buzzer Index</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#ir-어레이-부저-음계" style="font-style:italic;" onclick="extendnav()">IR 어레이 부저 음계</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#ir-array-buzzer-time" class="" style="font-style:italic;">IR Array Buzzer Time</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#ir-어레이-부저-울림시간" style="font-style:italic;" onclick="extendnav()">IR 어레이 부저 울림시간</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#auto-threshold-mode" class="" style="font-style:italic;">Auto Threshold Mode</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#감지-기준값-자동설정" style="font-style:italic;" onclick="extendnav()">감지 기준값 자동설정</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#ir-obstacle-detected" class="" style="font-style:italic;">IR Obstacle Detected</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#적외선-물체감지" style="font-style:italic;" onclick="extendnav()">적외선 물체감지</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#ir-threshold" class="" style="font-style:italic;">IR Threshold</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#적외선감지-기준값" style="font-style:italic;" onclick="extendnav()">적외선감지 기준값</a>
             </li>
           
             
-            
 
             
 
             <li>
-              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#direct-access" class="" style="font-style:italic;">Direct Access</a>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#직접-지정" style="font-style:italic;" onclick="extendnav()">직접 지정</a>
             </li>
           
           </ul>
@@ -3033,15 +4399,393 @@
         
       
         
+
+        
+
+        
+        <li><a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#변수" onclick="extendnav()">변수</a></li>
+        
+
+        
+        
+      
         
 
         
 
         
-        <li><a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#variables" class="">Variables</a></li>
+        <li class="has-children">
+          <input type="radio" name="sublevel" id="스마트앱 파라미터" >
+          <label for="스마트앱 파라미터">스마트앱 파라미터 [+]</label>
         
 
         
+          <ul>
+          
+            
+
+            
+
+            <li>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#기본정보" style="font-style:italic;" onclick="extendnav()">기본정보</a>
+            </li>
+          
+            
+
+            
+
+            <li>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#디버그-정보-표시읽기쓰기" style="font-style:italic;" onclick="extendnav()">디버그 정보 표시(읽기/쓰기)</a>
+            </li>
+          
+            
+
+            
+
+            <li>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#화면-회전읽기쓰기" style="font-style:italic;" onclick="extendnav()">화면 회전(읽기/쓰기)</a>
+            </li>
+          
+            
+
+            
+
+            <li>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#카메라-선택읽기쓰기" style="font-style:italic;" onclick="extendnav()">카메라 선택(읽기/쓰기)</a>
+            </li>
+          
+            
+
+            
+
+            <li>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#카메라-줌읽기쓰기" style="font-style:italic;" onclick="extendnav()">카메라 줌(읽기/쓰기)</a>
+            </li>
+          
+            
+
+            
+
+            <li>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#카메라-기능-선택읽기쓰기" style="font-style:italic;" onclick="extendnav()">카메라 기능 선택(읽기/쓰기)</a>
+            </li>
+          
+            
+
+            
+
+            <li>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#얼굴-감지-위치읽기" style="font-style:italic;" onclick="extendnav()">얼굴 감지 위치(읽기)</a>
+            </li>
+          
+            
+
+            
+
+            <li>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#감지된-색상읽기" style="font-style:italic;" onclick="extendnav()">감지된 색상(읽기)</a>
+            </li>
+          
+            
+
+            
+
+            <li>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#동작-감지-위치읽기" style="font-style:italic;" onclick="extendnav()">동작 감지 위치(읽기)</a>
+            </li>
+          
+            
+
+            
+
+            <li>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#라인-감지-색상읽기쓰기" style="font-style:italic;" onclick="extendnav()">라인 감지 색상(읽기/쓰기)</a>
+            </li>
+          
+            
+
+            
+
+            <li>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#라인-감지-위치읽기" style="font-style:italic;" onclick="extendnav()">라인 감지 위치(읽기)</a>
+            </li>
+          
+            
+
+            
+
+            <li>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#동영상-녹화읽기쓰기" style="font-style:italic;" onclick="extendnav()">동영상 녹화(읽기/쓰기)</a>
+            </li>
+          
+            
+
+            
+
+            <li>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#사진-촬영읽기쓰기" style="font-style:italic;" onclick="extendnav()">사진 촬영(읽기/쓰기)</a>
+            </li>
+          
+            
+
+            
+
+            <li>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#배경-표시읽기쓰기" style="font-style:italic;" onclick="extendnav()">배경 표시(읽기/쓰기)</a>
+            </li>
+          
+            
+
+            
+
+            <li>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#그림-표시읽기쓰기" style="font-style:italic;" onclick="extendnav()">그림 표시(읽기/쓰기)</a>
+            </li>
+          
+            
+
+            
+
+            <li>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#감지된-얼굴-그림-표시읽기쓰기" style="font-style:italic;" onclick="extendnav()">감지된 얼굴 그림 표시(읽기/쓰기)</a>
+            </li>
+          
+            
+
+            
+
+            <li>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#도형-표시읽기쓰기" style="font-style:italic;" onclick="extendnav()">도형 표시(읽기/쓰기)</a>
+            </li>
+          
+            
+
+            
+
+            <li>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#문자-표시읽기쓰기" style="font-style:italic;" onclick="extendnav()">문자 표시(읽기/쓰기)</a>
+            </li>
+          
+            
+
+            
+
+            <li>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#숫자-표시읽기쓰기" style="font-style:italic;" onclick="extendnav()">숫자 표시(읽기/쓰기)</a>
+            </li>
+          
+            
+
+            
+
+            <li>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#문자음성-자동변환--tts읽기쓰기" style="font-style:italic;" onclick="extendnav()">문자음성 자동변환 - TTS(읽기/쓰기)</a>
+            </li>
+          
+            
+
+            
+
+            <li>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#악기-연주읽기쓰기" style="font-style:italic;" onclick="extendnav()">악기 연주(읽기/쓰기)</a>
+            </li>
+          
+            
+
+            
+
+            <li>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#오디오-재생-12읽기쓰기" style="font-style:italic;" onclick="extendnav()">오디오 재생 1.2(읽기/쓰기)</a>
+            </li>
+          
+            
+
+            
+
+            <li>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#동영상-재생읽기쓰기" style="font-style:italic;" onclick="extendnav()">동영상 재생(읽기/쓰기)</a>
+            </li>
+          
+            
+
+            
+
+            <li>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#동영상-일시-정지읽기쓰기" style="font-style:italic;" onclick="extendnav()">동영상 일시 정지(읽기/쓰기)</a>
+            </li>
+          
+            
+
+            
+
+            <li>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#음성-인식읽기쓰기" style="font-style:italic;" onclick="extendnav()">음성 인식(읽기/쓰기)</a>
+            </li>
+          
+            
+
+            
+
+            <li>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#음성-인식-결과읽기쓰기" style="font-style:italic;" onclick="extendnav()">음성 인식 결과(읽기/쓰기)</a>
+            </li>
+          
+            
+
+            
+
+            <li>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#볼륨읽기쓰기" style="font-style:italic;" onclick="extendnav()">볼륨(읽기/쓰기)</a>
+            </li>
+          
+            
+
+            
+
+            <li>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#흔들림-정도읽기" style="font-style:italic;" onclick="extendnav()">흔들림 정도(읽기)</a>
+            </li>
+          
+            
+
+            
+
+            <li>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#기울기-각도왼쪽오른쪽위쪽아래쪽읽기" style="font-style:italic;" onclick="extendnav()">기울기 각도(읽기)</a>
+            </li>
+          
+            
+
+            
+
+            <li>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#조도-센서읽기" style="font-style:italic;" onclick="extendnav()">조도 센서(읽기)</a>
+            </li>
+          
+            
+
+            
+
+            <li>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#자기장-센서읽기" style="font-style:italic;" onclick="extendnav()">자기장 센서(읽기)</a>
+            </li>
+          
+            
+
+            
+
+            <li>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#방향-각도값읽기" style="font-style:italic;" onclick="extendnav()">방향 (각도값)(읽기)</a>
+            </li>
+          
+            
+
+            
+
+            <li>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#소음-측정읽기" style="font-style:italic;" onclick="extendnav()">소음 측정(읽기)</a>
+            </li>
+          
+            
+
+            
+
+            <li>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#터치-위치-12읽기" style="font-style:italic;" onclick="extendnav()">터치 위치 1.2(읽기)</a>
+            </li>
+          
+            
+
+            
+
+            <li>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#sms전화번호읽기쓰기" style="font-style:italic;" onclick="extendnav()">SMS(전화번호)(읽기/쓰기)</a>
+            </li>
+          
+            
+
+            
+
+            <li>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#sms내용읽기쓰기" style="font-style:italic;" onclick="extendnav()">SMS(내용)(읽기/쓰기)</a>
+            </li>
+          
+            
+
+            
+
+            <li>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#알림바-이벤트읽기쓰기" style="font-style:italic;" onclick="extendnav()">알림바 이벤트(읽기/쓰기)</a>
+            </li>
+          
+            
+
+            
+
+            <li>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#타이머읽기쓰기" style="font-style:italic;" onclick="extendnav()">타이머(읽기/쓰기)</a>
+            </li>
+          
+            
+
+            
+
+            <li>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#진동-시간읽기쓰기" style="font-style:italic;" onclick="extendnav()">진동 시간(읽기/쓰기)</a>
+            </li>
+          
+            
+
+            
+
+            <li>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#플래시-led읽기쓰기" style="font-style:italic;" onclick="extendnav()">플래시 LED(읽기/쓰기)</a>
+            </li>
+          
+            
+
+            
+
+            <li>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#앱-실행읽기쓰기" style="font-style:italic;" onclick="extendnav()">앱 실행(읽기/쓰기)</a>
+            </li>
+          
+            
+
+            
+
+            <li>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#현재-시간읽기" style="font-style:italic;" onclick="extendnav()">현재 시간(읽기)</a>
+            </li>
+          
+            
+
+            
+
+            <li>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#메일-발송읽기쓰기" style="font-style:italic;" onclick="extendnav()">메일 발송(읽기/쓰기)</a>
+            </li>
+          
+            
+
+            
+
+            <li>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#화면출력-화면출력-후-줄바꿈읽기" style="font-style:italic;" onclick="extendnav()">화면출력, 화면출력 후 줄바꿈(읽기)</a>
+            </li>
+          
+            
+
+            
+
+            <li>
+              <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#제스처-인식읽기쓰기" style="font-style:italic;" onclick="extendnav()">제스처 인식(읽기/쓰기)</a>
+            </li>
+          
+          </ul>
+        
+        
+        </li>
         
       
       </ul>
@@ -3055,44 +4799,41 @@
     
 
     <li class="has-children">
-      <input type="radio" name="toplevel" id="toplevel_3">
-      <label for="toplevel_3">Miscellenous</label>
+      <input type="radio" name="toplevel" id="toplevel_3" >
+      <label for="toplevel_3">기타 정보 [+]</label>
     
 
     
       <ul>
       
         
-        
 
         
 
         
-        <li><a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#select-controller" class="">Select Controller</a></li>
-        
-
-        
-        
-      
-        
-        
-
-        
-
-        
-        <li><a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#rule-check" class="">Rule Check</a></li>
+        <li><a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#제어기-선택" onclick="extendnav()">제어기 선택</a></li>
         
 
         
         
       
         
+
+        
+
+        
+        <li><a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#룰-체크" onclick="extendnav()">룰 체크</a></li>
+        
+
+        
+        
+      
         
 
         
 
         
-        <li><a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#error-messages" class="">Error Messages</a></li>
+        <li><a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#에러-메세지" onclick="extendnav()">에러 메세지</a></li>
         
 
         
@@ -3105,6 +4846,7 @@
     
   
   </ul>
+  <a href="#" style="font-size:$type-size-6; color: #2174b6; text-decoration: none; font-weight: bold;" onclick="extendnav()">Back to Top &#9650;</a>
 </nav>
 
     
@@ -3112,29 +4854,31 @@
   </div>
 
 
-  <div class="archive">
-    <a href="/blob/master/docs/kr/software/rplus1/task/getting_started.md" itemprop="sameAs" style="font-size:16px;float:right;">
+  <button class="nav_button" id="nav_button" onclick="extendnav()">목차</button>
+  <button class="backtotop" id="backtotop"><a href="#">&#9650;<br />처음</a></button>
+  <div class="archive" id="archive">
+    <a href="/blob/master/docs/kr/software/rplus1/task/getting_started.md" itemprop="sameAs" style="font-size:16px; float:right; margin: 10px 20px; text-decoration: none;">
       <i class="fa fa-fw fa-github" aria-hidden="true"></i> Edit on GitHub
     </a>
     <h1 id="개요"><a href="#개요">개요</a></h1>
 
-<h2 id="로보플러스-태스크"><a href="#로보플러스-태스크">로보플러스 태스크</a></h2>
+<p>어떤 일을 처리하기 위한 행동들의 집합을 태스크(Task)라고 합니다. 로봇이 해야할 태스크를 프로그래밍 한 소스를 로보플러스(RoboPlus)에서는 태스크 코드(Task Code)라고 합니다. 로봇은 사용자가 작성한 태스크 코드에 따라 동작하게 되며, 이러한 태스크 코드를 쉽게 작성할 수 있도록 도와주는 것이 <code class="highlighter-rouge">로보플러스 태스크</code>(RoboPlus Task) 프로그램입니다.</p>
 
-<p>어떤 일을 처리하기 위한 행동들의 집합을 태스크(Task)라고 합니다. 로봇이 해야할 태스크를 프로그래밍 한 소스를 로보플러스(RoboPlus)에서는 태스크 코드(Task Code)라고 합니다. 로봇은 사용자가 작성한 태스크 코드에 따라 동작하게 되며, 이러한 태스크 코드를 쉽게 작성할 수 있도록 도와주는 것이 로보플러스 태스크(RoboPlus Task) 프로그램입니다.</p>
+<p>태스크 코드 파일은 PC 에서 <em>.tsk</em> 라는 확장자를 가지며 좌측과 같은 아이콘으로 표시됩니다.</p>
 
-<p>태스크 코드 파일은 PC 에서 .tsk 라는 확장자를 가지며 좌측과 같은 아이콘으로 표시됩니다.</p>
+<p class="notice"><code class="highlighter-rouge">Note</code> 상위버젼의 Task 파일은 하위버젼에서 호환되지 않습니다.</p>
 
-<p class="notice"><code class="highlighter-rouge">참고</code> 상위버젼의 Task 파일은 하위버젼에서 호환되지 않습니다.</p>
+<p><img src="/assets/images/sw/rplus1/task/roboplus_task_001.png" alt="R+태스크" /></p>
 
-<p><img src="/assets/images/sw/rplus1/roboplus_task_001.png" alt="R+태스크" /></p>
+<h2 id="설치하기"><a href="#설치하기">설치하기</a></h2>
 
-<h3 id="설치하기"><a href="#설치하기">설치하기</a></h3>
-
-<p class="notice"><code class="highlighter-rouge">다운로드</code> <a href="#http://www.robotis.com/BlueAD/board.php?bbs_id=service_03">로보티즈 홈페이지 자료실</a></p>
+<ul>
+  <li><code class="highlighter-rouge">다운로드</code> <a href="http://www.robotis.com/service/downloadpage.php?cate=software">로보티즈 홈페이지 자료실</a></li>
+</ul>
 
 <p>로보플러스는 모든 로보티즈 제품을 프로그래밍할 수 있는 통합 소프트웨어입니다.</p>
 
-<h4 id="roboplus-시스템-요구-사항">RoboPlus 시스템 요구 사항</h4>
+<h3 id="roboplus-시스템-요구-사항">RoboPlus 시스템 요구 사항</h3>
 <ul>
   <li>OS : Windows XP Service Pack 2 이상/ Vista/ 7 (32/64bit)/8 (32/64bit)</li>
   <li>800MHz이상의 32비트(x86) 또는 64비트 (x64) 프로세서</li>
@@ -3143,18 +4887,22 @@
   <li>여유공간이 500MB 이상인 하드디스크</li>
 </ul>
 
-<p class="notice"><code class="highlighter-rouge">참고</code> 로보플러스를 실행하기 위해선 .NET FrameWork 3.5이상의 버전이 필요 합니다. 로보플러스 설치시 .NET FrameWork 자동설치가 실패할 경우엔 .NET FreameWork를 별도로 설치하세요.</p>
+<p><img src="/assets/images/sw/roboplus_install.png" alt="img_install" /></p>
 
-<h4 id="roboplus-설치-실패시">RoboPlus 설치 실패시</h4>
+<p class="notice"><code class="highlighter-rouge">Note</code> 로보플러스를 실행하기 위해선 .NET FrameWork 3.5이상의 버전이 필요 합니다. 로보플러스 설치시 .NET FrameWork 자동설치가 실패할 경우엔 .NET FreameWork를 별도로 설치하세요.</p>
 
-<p>대부분의 RoboPlus 설치 실패의 원인은 사용자 PC환경에 따른 .NET FrameWork 자동 설치 실패 입니다. 따라서 사용자가 직접 .NET FrameWork 3.5를 수동으로 설치 하셔야 합니다.
+<h3 id="roboplus-설치-실패시">RoboPlus 설치 실패시</h3>
+
+<p>대부분의 RoboPlus 설치 실패의 원인은 사용자 PC환경에 따른 .NET FrameWork 자동 설치 실패 입니다.<br />
+따라서 사용자가 직접 .NET FrameWork 3.5를 수동으로 설치 하셔야 합니다.<br />
 .NET FrameWork 3.5를 수동으로 설치 하기 전에 Windows installer 3.1이상이 설치 되어 있어야 합니다.</p>
 
-<p>Windows installer와 .NET Framework는 <a href="http://www.microsoft.com/downloads/Search.aspx?displaylang=ko">마이크로소프트 다운로드 센터</a>에서 다운로드가 가능합니다.</p>
+<p>Windows installer와 .NET Framework는 마이크로 소프트 다운로드 센터에서 다운로드가 가능합니다.</p>
 
-<p><a href="http://www.microsoft.com/downloads/details.aspx?FamilyID=889482fc-5f56-4a38-b838-de776fd4138c&amp;DisplayLang=ko">Windows installer 3.1 다운로드</a></p>
-
-<p><a href="http://www.microsoft.com/downloads/details.aspx?FamilyID=d0e5dea7-ac26-4ad7-b68c-fe5076bba986&amp;DisplayLang=ko">.NET Framework 3.5 다운로드</a></p>
+<ul>
+  <li><code class="highlighter-rouge">다운로드</code> <a href="http://www.microsoft.com/downloads/details.aspx?FamilyID=889482fc-5f56-4a38-b838-de776fd4138c&amp;DisplayLang=ko">Windows installer 3.1</a></li>
+  <li><code class="highlighter-rouge">다운로드</code> <a href="http://www.microsoft.com/downloads/details.aspx?FamilyID=d0e5dea7-ac26-4ad7-b68c-fe5076bba986&amp;DisplayLang=ko">.NET Framework 3.5</a></li>
+</ul>
 
 <h1 id="시작하기"><a href="#시작하기">시작하기</a></h1>
 
@@ -3162,32 +4910,35 @@
 
 <p>명령을 작성하고 싶은 빈 줄을 더블클릭하거나, 마우스를 클릭 후 엔터를 입력하면 선택한 제어기에서 사용할 수 있는 명령을 입력할 수 있습니다.</p>
 
-<p><img src="/assets/images/sw/rplus1/roboplus_task_002.png" alt="명령어 선택" /></p>
+<p><img src="/assets/images/sw/rplus1/task/roboplus_task_002.png" alt="명령어 선택" /></p>
 
 <p>만약, 제어기가 선택되어 있지 않다면, 사용자에게 현재 프로그램에서 사용할 제어기를 묻게 됩니다.</p>
 
-<p><img src="/assets/images/sw/rplus1/roboplus_task_003.png" alt="제어기 선택" /></p>
+<p><img src="/assets/images/sw/rplus1/task/roboplus_task_003.png" alt="제어기 선택" /></p>
 
 <h2 id="파라미터-만들기"><a href="#파라미터-만들기">파라미터 만들기</a></h2>
 
 <p>파라미터(Parameter)는 명령이 수행되기 위해 필요한 대상입니다. 아무것도 설정되지 않았다면 ‘?’표시로 나타나게 됩니다.</p>
 
-<p><img src="/assets/images/sw/rplus1/roboplus_task_004.png" alt="파라미터" /></p>
+<p><img src="/assets/images/sw/rplus1/task/roboplus_task_004.png" alt="파라미터" /></p>
 
 <p>명령을 선택한 다음에는 명령줄을 완성하기 위해 파라미터를 만들어야 합니다.</p>
 
 <ol>
   <li>
-    <p>Enter키를 누르거나 마우스를 더블클릭하여 편집 모드로 들어갑니다.
-    <img src="/assets/images/sw/rplus1/roboplus_task_005.png" alt="편집모드" /></p>
+    <p>Enter키를 누르거나 마우스를 더블클릭하여 편집 모드로 들어갑니다.</p>
+
+    <p><img src="/assets/images/sw/rplus1/task/roboplus_task_005.png" alt="편집모드" /></p>
   </li>
   <li>
-    <p>좌/우 방향키를 누르거나 마우스로 클릭하면 만들 파라미터를 선택할 수 있습니다.
-    <img src="/assets/images/sw/rplus1/roboplus_task_006.png" alt="파라미터 선택" /></p>
+    <p>좌/우 방향키를 누르거나 마우스로 클릭하면 만들 파라미터를 선택할 수 있습니다.</p>
+
+    <p><img src="/assets/images/sw/rplus1/task/roboplus_task_006.png" alt="파라미터 선택" /></p>
   </li>
   <li>
-    <p>Enter키를 누르거나 마우스를 더블클릭하면 파라미터 선택창이 나타납니다.
-    <img src="/assets/images/sw/rplus1/roboplus_task_007.png" alt="파라미터 선택창" /></p>
+    <p>Enter키를 누르거나 마우스를 더블클릭하면 파라미터 선택창이 나타납니다.</p>
+
+    <p><img src="/assets/images/sw/rplus1/task/roboplus_task_007.png" alt="파라미터 선택창" /></p>
   </li>
   <li>
     <p>적절한 파라미터를 선택합니다. 각 파라미터의 사용법을 익히는 것이 매우 중요합니다.</p>
@@ -3199,58 +4950,51 @@
 <p>태스크 코드를 제어기에 다운로드합니다. 다운로드 과정은 제어기 내부에 태스크 코드를 저장하므로 한번만 수행하면 됩니다.</p>
 
 <ol>
-  <li>
-    <p>PC 와 제어기가 연결되어야 합니다. 태스크 코드를 다운로드하기 위해서는 PC 와 제어기가 연결되어야 합니다. (연결 방법은 각 <a href="#">제어기 정보</a>를 참고하세요.)</p>
-  </li>
+  <li>PC 와 제어기가 연결되어야 합니다. 태스크 코드를 다운로드하기 위해서는 PC 와 제어기가 연결되어야 합니다. (연결 방법은 각 <a href="/docs/kr/parts/controller/controller_compatibility/">제어기 정보</a>를 참고하세요.)</li>
   <li>
     <p>사용할 통신 포트를 선택해야 합니다. 자동 찾기 기능을 이용하면 쉽게 통신 포트를 설정할 수 있습니다.</p>
 
-    <p><img src="/assets/images/sw/rplus1/roboplus_task_008.png" alt="통신포트 선택" /></p>
+    <p><img src="/assets/images/sw/rplus1/task/roboplus_task_008.png" alt="통신포트 선택" /></p>
 
     <p>RoboPlus Task 가 제어기를 찾지 못하면 아래와 같은 에러 메시지가 나타납니다.</p>
 
-    <p><img src="/assets/images/sw/rplus1/roboplus_task_009.png" alt="에러메세지" /></p>
+    <p><img src="/assets/images/sw/rplus1/task/roboplus_task_009.png" alt="에러메세지" /></p>
 
-    <p>PC 와 제어기가 연결되어 있는지 확인합니다. (연결 방법은 각 <a href="#">제어기 정보</a>를 참고하세요.)
- 제어기의 전원이 켜져 있는지 확인합니다.
+    <p>PC 와 제어기가 연결되어 있는지 확인합니다. (연결 방법은 각 <a href="/docs/kr/parts/controller/controller_compatibility/">제어기 정보</a>를 참고하세요.)<br />
+ 제어기의 전원이 켜져 있는지 확인합니다.<br />
  제어기가 연결된 통신 포트가 바르게 선택되어 있는지 확인합니다.</p>
   </li>
   <li>
-    <p>다운로드 메뉴를 선택합니다. 만약, 프로그램에 오류가 있다면 오류를 찾아 수정해야 합니다. (<a href="#">룰 체크 에러 메시지 확인</a>)</p>
+    <p>다운로드 메뉴를 선택합니다. 만약, 프로그램에 오류가 있다면 오류를 찾아 수정해야 합니다. (<a href="/docs/kr/software/rplus1/task/task_misc/#룰-체크">룰 체크</a>, <a href="/docs/kr/software/rplus1/task/task_misc/#에러-메시지">에러 메시지</a> 확인)</p>
 
-    <p><img src="/assets/images/sw/rplus1/roboplus_task_010.png" alt="다운로드 선택" /></p>
+    <p><img src="/assets/images/sw/rplus1/task/roboplus_task_010.png" alt="다운로드 선택" /></p>
   </li>
   <li>
     <p>다운로드를 진행합니다. 만약 다운로드에 실패했다면 처음부터 다시 시도합니다.</p>
 
-    <p><img src="/assets/images/sw/rplus1/roboplus_task_011.png" alt="다운로드 진행" /></p>
+    <p><img src="/assets/images/sw/rplus1/task/roboplus_task_011.png" alt="다운로드 진행" /></p>
   </li>
-  <li>
-    <p>태스크 코드(Task Code)를 실행합니다. -&gt; 로봇의 동작을 실행 합니다.
- 제어기를 켜고 다운로드 한 태스크 코드를 실행합니다. (태스크 코드 실행 방법은 각 <a href="#">제어기 정보</a>를  참고하세요.)</p>
-  </li>
+  <li>태스크 코드(Task Code)를 실행합니다. -&gt; 로봇의 동작을 실행 합니다.
+ 제어기를 켜고 다운로드 한 태스크 코드를 실행합니다. (태스크 코드 실행 방법은 각 <a href="/docs/kr/parts/controller/controller_compatibility/">제어기 정보</a>를  참고하세요.)</li>
 </ol>
 
-<h3 id="동영상"><a href="#동영상">동영상</a></h3>
+<ul>
+  <li>로보플러스 프로그램 다운로드(CM-100)</li>
+</ul>
 
-<ol>
-  <li>
-    <p>로보플러스 프로그램 다운로드(CM-100)</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3mDP9BW-Q0E" frameborder="0" allowfullscreen=""></iframe>
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/3mDP9BW-Q0E" frameborder="0" allowfullscreen=""></iframe>
-  </li>
-  <li>
-    <p>로보플러스 프로그램 다운로드(CM-510/530)</p>
+<ul>
+  <li>로보플러스 프로그램 다운로드(CM-510/530)</li>
+</ul>
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/dHCqPs1_2yY" frameborder="0" allowfullscreen=""></iframe>
-  </li>
-</ol>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dHCqPs1_2yY" frameborder="0" allowfullscreen=""></iframe>
 
 <h2 id="프로그램-결과-출력"><a href="#프로그램-결과-출력">프로그램 결과 출력</a></h2>
 
 <p>일반적으로 제어기는 PC와 같이 모니터와 같은 출력 장치가 없기 때문에 내부 상태를 확인하기 어렵습니다. 따라서, 터미널(Terminal)이라는 프로그램을 통해 PC 모니터를 빌려쓰는 방식을 사용합니다. RoboPlus Task에는 터미널 프로그램이 포함되어 있어서 제어기의 상태를 확인할 수 있습니다.</p>
 
-<p><img src="/assets/images/sw/rplus1/roboplus_task_012.png" alt="터미널" /></p>
+<p><img src="/assets/images/sw/rplus1/task/roboplus_task_012.png" alt="터미널" /></p>
 
 <h3 id="프로그램-출력용-모니터-창-띄우기">프로그램 출력용 모니터 창 띄우기</h3>
 
@@ -3258,66 +5002,19 @@
 
 <ol>
   <li>
-    <p>프로그램 다운로드 창에서 프로그램 출력 보기 버튼을 클릭
-  <img src="/assets/images/sw/rplus1/roboplus_task_013.png" alt="출력모니터" /></p>
+    <p>프로그램 다운로드 창에서 프로그램 출력 보기 버튼을 클릭</p>
+
+    <p><img src="/assets/images/sw/rplus1/task/roboplus_task_013.png" alt="출력모니터" /></p>
   </li>
   <li>도구 모음에서 프로그램 출력 보기 버튼을 클릭</li>
   <li>프로그램(P) 메뉴의 프로그램 출력 보기(V) 메뉴 선택 혹은 단축키 F5</li>
 </ol>
 
-<h3 id="화면-출력화면-출력-후-줄바꿈">화면 출력/화면 출력 후 줄바꿈</h3>
-
-<p>태스크 코드에 화면 출력 파라미터를 사용하면 원하는 값을 볼 수 있습니다.</p>
-
-<p><img src="/assets/images/sw/rplus1/roboplus_task_014.png" alt="코드" /></p>
-
-<p>화면 출력 : 값을 출력하고 커서를 옆으로 한 칸 이동시킵니다.</p>
-
-<p><img src="/assets/images/sw/rplus1/roboplus_task_015.png" alt="화면출력" /></p>
-
-<p>화면 출력 후 줄바꿈 : 값을 출력하고 커서를 다음 줄로 이동시킵니다.</p>
-
-<p><img src="/assets/images/sw/rplus1/roboplus_task_016.png" alt="줄바꿈" /></p>
-
-<h3 id="화면-출력-내용">화면 출력 내용</h3>
-
-<ol>
-  <li>제어기 자체 출력 내용
-    <ul>
-      <li>
-        <p>프로그램 시작 메시지가 처음에 출력됩니다.
-<img src="/assets/images/sw/rplus1/roboplus_task_017.png" alt="시작메세지" /></p>
-      </li>
-      <li>
-        <p>프로그램 수행 중 에러 메시지 (에러 메시지 종류 보기)
-<img src="/assets/images/sw/rplus1/roboplus_task_018.png" alt="에러메세지" /></p>
-      </li>
-    </ul>
-  </li>
-  <li>태스크 코드 출력 내용 : -32767 ~ +32767 범위의 10진수로 표시됩니다. (글자는 출력할 수 없습니다.)
-    <ul>
-      <li>
-        <p>숫자를 출력하는 경우
-<img src="/assets/images/sw/rplus1/roboplus_task_019.png" alt="숫자출력" /></p>
-      </li>
-      <li>
-        <p>센서 값을 출력하는 경우
-<img src="/assets/images/sw/rplus1/roboplus_task_020.png" alt="센서값출력" /></p>
-      </li>
-    </ul>
-  </li>
-</ol>
-
-<h3 id="화면-지우기">화면 지우기</h3>
-
-<p>화면의 내용을 지울 수 있습니다.
-<img src="/assets/images/sw/rplus1/roboplus_task_021.png" alt="화면지우기" /></p>
-
 <h2 id="가상로봇-조종"><a href="#가상로봇-조종">가상로봇 조종</a></h2>
 
 <p>RboPlus Task는 RC-100 등과 같은 조종기가 없어도 조종 기능을 사용할 수 있도록 가상 로봇 조종 기능을 지원하며, 조종기 버튼을 마우스로 클릭하거나 키보드를 이용하여 사용할 수 있습니다.</p>
 
-<p><img src="/assets/images/sw/rplus1/virtual_rc100.png" alt="가상로봇 조종" /></p>
+<p><img src="/assets/images/sw/rplus1/task/virtual_rc100.png" alt="가상로봇 조종" /></p>
 
 <p>키보드 조종은 아래 표를 참고하세요.</p>
 
@@ -3384,7 +5081,7 @@
 <!-- end custom footer snippets -->
         
 
-<div class="page__footer-copyright">&copy; 2017 ROBOTIS. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2018 ROBOTIS. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>
