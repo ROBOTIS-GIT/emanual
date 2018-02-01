@@ -54,8 +54,8 @@ Get opened source of what is participated in each competitions!
 | 1     | RealRiceThief     | [Github](https://github.com/KoG-8/Turtlebot_RealRiceThief)         |
 | 2     | IronHeart         | [Github](https://github.com/kijongGil/Ironheart)                   |
 | 3     | Robit             | [Github](https://github.com/ROBIT-GIT/turtlebot3_autoRace_2017)    |
-| 4     | Loading           | [Github](https://github.com/Kihoon0716/self_driving_turtlebot3)    |
-| 5     | RunHoney          | [Github](https://github.com/hyunoklee/turtlebot3_RBIZ)             |
+| 4     | Loading           | [Github](https://github.com/AuTURBO/autorace2017-team-loading)    |
+| 5     | RunHoney          | [Github](https://github.com/AuTURBO/autorace2017-team-honey)             |
 | 6     | Sherlotics        | [Github](https://github.com/minbaekkim/turtlebot_autorace)         |
 | 7     | FastAndFurious    | [Github](https://github.com/kts006/deu_racer)                      |
 | 8     | BonoBono          | [Github](https://github.com/Gaeul/BonobonoTurtlebot)               |
