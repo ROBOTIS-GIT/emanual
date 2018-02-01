@@ -2,10 +2,10 @@
 ROS-Gazebo Package Installation
 
 ### 2. Gazebo with ROS
-[Gazebo Tutorials](http://gazebosim.org/tutorials?cat=connect_ros)
+[Gazebo Tutorials]
 
 ### 3. Download Package
-[ROBOTIS-OP3 Common](https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Common)
+[ROBOTIS-OP3 Common]
 
 ### 4. Additional Installation
 If ros-indigo-desktop-full was used to install, the following packages need to be installed.
@@ -16,3 +16,7 @@ If ros-indigo-desktop-full was used to install, the following packages need to b
 ```
 
 [&lt;&lt; Back](OP3-User's-Guide.md)
+
+
+[Gazebo Tutorials]:http://gazebosim.org/tutorials?cat=connect_ros
+[ROBOTIS-OP3 Common]:https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Common

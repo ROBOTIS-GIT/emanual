@@ -13,7 +13,7 @@ $ sudo service OP3-demo stop
 ### 3. Running demo on startup
 This chapter describes settings for automatically executing demo on startup.  
 Autorun feature requires robot_upstart package from ROS.  
-> Reference : [robot_upstart](http://wiki.ros.org/robot_upstart)  
+> Reference : [robot_upstart]
 
 #### 3.1 Start demo program on start  
 1. Make a script for auto-run
@@ -54,3 +54,5 @@ $ rosrun robot_upstart uninstall JOB_NAME
 
 
 [&lt;&lt; Back](OP3-User's-Guide.md)
+
+[robot_upstart]:http://wiki.ros.org/robot_upstart

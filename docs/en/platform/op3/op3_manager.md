@@ -1,11 +1,11 @@
 ### 1. Overview  
 `op3_manager` package applies ROBOTIS Framework to ROBOTIS OP3.  
 Refer to the below link to create a new robot manager.  
-> Reference : [Creating new robot manager](Creating new robot manager)
+> Reference : [Creating new robot manager](Creating_new_robot_manager.md)
 
 ### 2. Getting started  
 #### 2.1 Download & Build  
- > Reference : [Installation ROBOTIS ROS Package](OP3-Recovery-of-ROBOTIS-OP3#24-installation-robotis-ros-packages)  
+ > Reference : [Installation ROBOTIS ROS Package](OP3_Recovery_of_ROBOTIS_OP3#24_installation_robotis_ros_packages.md)  
 
 #### 2.2. Run  
 Execute the program with a `.launch` file in order to load ROS parameters.  
@@ -49,15 +49,15 @@ This chapter explains various modules in `op3_manager`.
 Actual control is processed within each modules.  
 
 #### 4.1 Motion Module
- 1. [op3_action_module](op3_action_module) : This manages every joint actions.  
- 2. [op3_base_module](. [op3_base_module) : This module manages initial posture and basic functions.  
- 3. [op3_head_control_module](op3_head_control_module) : This module controls OP3 head.  
- 4. [op3_walking_module](op3_walking_module) : This module controls walking.  
- 5. [op3_online_walking_module](op3_online_walking_module) : This module controls upgraded walking.  
+ 1. [op3_action_module] : This manages every joint actions.  
+ 2. [op3_base_module] : This module manages initial posture and basic functions.  
+ 3. [op3_head_control_module] : This module controls OP3 head.  
+ 4. [op3_walking_module] : This module controls walking.  
+ 5. [op3_online_walking_module] : This module controls upgraded walking.  
 
 
 #### 4.2 Sensor Module  
- 1. [open_cr_module](open_cr_module) : This module is required to use OpenCR as a sensor.  
+ 1. [open_cr_module] : This module is required to use OpenCR as a sensor.  
 
 
 ### 5. Source  
@@ -101,4 +101,14 @@ controller->startTimer();
 ```
 
 
-[&lt;&lt; Back](OP3 User's Guide)
+[&lt;&lt; Back]
+
+[Creating new robot manager]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/Creating-new-robot-manager
+[op3_action_module]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_action_module
+[op3_base_module]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_base_module
+[op3_head_control_module]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_head_control_module
+[op3_walking_module]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_walking_module
+[op3_online_walking_module]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_online_walking_module
+[open_cr_module]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/open_cr_module
+
+[&lt;&lt; Back]:[OP3-User's-Guide.md]

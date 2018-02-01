@@ -1,11 +1,11 @@
 ### 1. Overview   
 This chapter explains how to play basic demonstrations of OP3.
 There are three available demos; playing soccer, vision and sequence of various actions.
-> Reference : [op3_demo](op3_demo.md)
+> Reference : [op3_demo]
 
 ### 2. Getting started
 #### 2.1 Download & Build
- > Reference : [Installing ROBOTIS ROS Package](OP3-Recovery-of-ROBOTIS-OP3#24-installation-robotis-ros-packages.md)  
+ > Reference : [Installing ROBOTIS ROS Package](OP3_Recovery_of_ROBOTIS_OP3#24_installation_robotis_ros_packages.md)  
 
 #### 2.2 Run
 1. Auto Start  
@@ -54,7 +54,7 @@ From the left, each button is assigned for Mode, Start, User and Reset.
 
 2. Setting Walking Parameters
   Walking motion imports parameters saved in the `op3_walking_module` in `op3_manager`. Default parameters can be configured by using walking tuner in the `op3_gui_demo`.  
-  > Reference : [How to use walking tuner](OP3-How-to-use-walking-tuner.md)  
+  > Reference : [How to use walking tuner]
 
 3. Return to Demonstration Ready Mode  
   Pressing and holding the mode button for 3 seconds will make ROBOTIS-OP3 to take the initial posture and return to Demonstration ready mode.  
@@ -66,7 +66,8 @@ Press the mode button twice from demonstration ready mode to switch to vision pr
   (ROBOTIS-OP3 will announce "Vision processing mode" and green LED in the back will be lit.)  
   When the demo begins, ROBOTIS-OP3 will announce "Start vision processing demonstration" and stand up to search for a face.  
   If a face is detected, RGB-LED on the chest and back turns into white color and OP3's head will follow the detected face.  
-    > Reference : [Face Tracker - ROS Package](https://github.com/ROBOTIS-GIT/face_detection)
+    > Reference : [Face Tracker - ROS Package]
+
 
 2. Return to Demonstration Ready Mode  
   Pressing and holding the mode button for 3 seconds will make ROBOTIS-OP3 to take the initial posture and return to Demonstration ready mode.  
@@ -112,3 +113,7 @@ Press the mode button thrice from demonstration ready mode to switch to interact
 
 
 [&lt;&lt; Back](OP3-User's-Guide.md)
+
+[op3_demo]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_demo
+[How to use walking tuner]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/OP3-How-to-use-walking-tuner
+[Face Tracker - ROS Package]:https://github.com/ROBOTIS-GIT/face_detection

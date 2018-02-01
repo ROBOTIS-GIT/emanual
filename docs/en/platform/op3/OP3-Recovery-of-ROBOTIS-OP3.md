@@ -4,7 +4,7 @@ This chapter explains how to recover ROBOTIS-OP3 softwares using recovery USB im
 ### 2. CloneZilla recovery  
 Clonezilla is used to recover ROBOTIS-OP3 with the image file in the provided USB.  
 
-> Reference : [e-manual](http://support.robotis.com/en/product/darwin-op/operating/recovery/clonezilla_recovery.htm)  
+> Reference : [e-manual]
 
 ### 3. File
 * clonezilla-live-ROBOTIS-OP3_Recovery_171013.zip  
@@ -12,3 +12,5 @@ Clonezilla is used to recover ROBOTIS-OP3 with the image file in the provided US
 
 
 [&lt;&lt; Back](OP3-User's-Guide.md)
+
+[e-manual]:http://support.robotis.com/en/product/darwin-op/operating/recovery/clonezilla_recovery.htm

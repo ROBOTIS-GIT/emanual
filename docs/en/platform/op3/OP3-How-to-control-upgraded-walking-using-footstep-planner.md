@@ -1,14 +1,14 @@
 ### 1. Overview   
 This chapter explains upgraded walking and footstep planner.
 
-> Reference : [OP3-How-to-control-upgraded-walking](OP3-How-to-control-upgraded-walking.md)
+> Reference : [OP3-How-to-control-upgraded-walking]
 
 ### 2. Getting started  
 #### 2.1 Installation
- - [humanoid_navigation](humanoid_navigation.md) for footstep planner  
+ - [humanoid_navigation] for footstep planner  
      follow link and install the packages  
 
- - [op3_navigation](https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Tools/tree/master/op3_navigation)  
+ - [op3_navigation]
     - Download source
         ```
         $ cd ~/catkin_ws/src
@@ -73,3 +73,7 @@ This chapter explains upgraded walking and footstep planner.
 
 
 [&lt;&lt; Back](OP3-User's-Guide.md)
+
+[OP3-How-to-control-upgraded-walking]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/OP3-How-to-control-upgraded-walking
+[humanoid_navigation]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/humanoid_navigation
+[op3_navigation]:https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Tools/tree/master/op3_navigation

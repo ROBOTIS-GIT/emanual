@@ -7,6 +7,8 @@ ROBOTIS provides cover data for ROBOTIS-OP3. Covers for the head, body, arms and
 <img src="https://github.com/ROBOTIS-GIT/ROBOTIS-OP-Series-Data/blob/master/ROBOTIS-OP3/Hardware/Mechanics/Skin/ROBOTIS-OP3-Skin_THORMANG3-Style/ROBOTIS-OP3-Skin_THORMANG3-Style.png?raw=true" width=250/>
 
 ### 3. File
- > Reference : [ [Download](https://github.com/ROBOTIS-GIT/ROBOTIS-OP-Series-Data/tree/master/ROBOTIS-OP3/Hardware/Mechanics/Skin) ]
-  
-[&lt;&lt; Back](OP3-User's-Guide.md)
+ > Reference : [Download]
+
+[&lt;&lt; Back]:(OP3-User's-Guide.md)
+
+[Download]:https://github.com/ROBOTIS-GIT/ROBOTIS-OP-Series-Data/tree/master/ROBOTIS-OP3/Hardware/Mechanics/Skin

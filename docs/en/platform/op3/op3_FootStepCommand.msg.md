@@ -1,4 +1,4 @@
-### File: [`op3_online_walking_module_msgs/FootStepCommand.msg`](https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-msgs/blob/develop/op3_online_walking_module_msgs/msg/FootStepCommand.msg)
+### File: [`op3_online_walking_module_msgs/FootStepCommand.msg`]
 
 ### Message Definition
 ```
@@ -30,3 +30,6 @@ float64 step_angle
 
 <br>
 [&lt;&lt; Back](op3_online_walking_module_msgs.md)
+
+
+[`op3_online_walking_module_msgs/FootStepCommand.msg`]:(https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-msgs/blob/develop/op3_online_walking_module_msgs/msg/FootStepCommand.msg)

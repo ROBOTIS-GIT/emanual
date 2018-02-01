@@ -1,14 +1,14 @@
 ### 1. Overview   
 This Node tunes walking parameters of ROBOTIS-OP3.  
-Walking tuner function is included in the [op3_gui_demo](OP3-How to use walk tuner.md).  
-`op3_walking_tuner` runs on a terminal window while [op3_gui_demo](op3_gui_demo.md) creates its own GUI window.    
+Walking tuner function is included in the [op3_gui_demo].  
+`op3_walking_tuner` runs on a terminal window while [op3_gui_demo] creates its own GUI window.    
 
 
 
 
 ### 2. Getting started
 #### 2.1 Download & Build
- > Reference : [Installing ROBOTIS ROS Package](OP3-Recovery-of-ROBOTIS-OP3#24-installation-robotis-ros-packages.md)  
+ > Reference : [Installing ROBOTIS ROS Package](OP3_Recovery_of_ROBOTIS_OP3#24_installation_robotis_ros_packages.md)  
 
  > Reference : `libncurses5-dev` must be pre-installed in order to build `op3_walking_tuner`.  
     ```
@@ -29,6 +29,10 @@ $ roslaunch op3_walking_tuner op3_walking_tuner.launch
 
 
 #### 2.4 Usage
-Please refer to [How to use walking tuner](OP3-How-to-use-walking-tuner.md).
+Please refer to [How to use walking tuner].
 
 <br>[&lt;&lt; Back](ROBOTIS-OP3-Tools.md)
+
+[op3_gui_demo]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/OP3-How-to-use-walking-tuner
+[op3_gui_demo]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_gui_demo
+[How to use walking tuner]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/OP3-How-to-use-walking-tuner

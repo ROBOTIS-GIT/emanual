@@ -3,7 +3,7 @@ This chapter explains how to run the `op3_manager` that controls ROBOTIS-OP3.
 Several modules are controlling ROBOTIS-OP3 and various topics and services transmit commands and report status.  
 The `op3_manager` cooperates with other programs such as `op3_demo` and `op3_gui_demo`.  
 
-> Reference : [op3_manager](op3_manager.md)
+> Reference : [op3_manager]
 
 #### 1.1 Diagram
 [diagram image]  
@@ -12,7 +12,7 @@ The `op3_manager` cooperates with other programs such as `op3_demo` and `op3_gui
 
 ### 2. Getting started
 #### 2.1 Download & Build
- > Reference : [Installing ROBOTIS ROS Package](OP3-Recovery-of-ROBOTIS-OP3#24-installation-robotis-ros-packages.md)  
+ > Reference : [Installing ROBOTIS ROS Package](OP3_Recovery_of_ROBOTIS_OP3#24_installation_robotis_ros_packages.md)  
 
 
 #### 2.2 Run
@@ -79,7 +79,7 @@ Control frequency, communication interface, baud rate, available devices and the
    sensor    | /dev/U2D2    | 200 | OPEN-CR        | 2.0      | open-cr        | button, present_voltage, gyro_x, gyro_y, gyro_z, acc_x, acc_y, acc_z, roll, pitch, yaw
    ```
 
-> Reference : [Robot Information file(.robot)](https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/Creating-new-robot-manager#41-robot-information-file-robot)  
+> Reference : [Robot Information file(.robot)]  
 
 
 #### 3.2 Joint Initialize File (`.yaml`)
@@ -103,7 +103,7 @@ Set initialization values for properties of Dynamixel or sensor.
   ...
   ```
 
-> Reference : [Joint initialize file(.yaml)](https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/Creating-new-robot-manager#42-joint-initialize-file-yaml)  
+> Reference : [Joint initialize file(.yaml)]  
 
 
 #### 3.3 Offset file(`.yaml`)
@@ -159,7 +159,12 @@ Offset file contains offset angles of each joint(radian) to correct distortion a
     r_sho_roll: 0
   ```
 
-> Reference : [How to use offset tuner](OP3-How-to-use-offset-tuner.md)  
+> Reference : [How to use offset tuner]
 
 
 [&lt;&lt; Back](OP3-User's-Guide.md)
+
+[op3_manager]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_manager
+[Robot Information file(.robot)]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/Creating-new-robot-manager#41-robot-information-file-robot
+[Joint initialize file(.yaml)]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/Creating-new-robot-manager#42-joint-initialize-file-yaml
+[How to use offset tuner]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/OP3-How-to-use-offset-tuner

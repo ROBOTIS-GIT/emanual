@@ -1,32 +1,32 @@
 ### 1. Overview
 This chapter explains the module to control OP3 walking.  
-This module is compiled to a library to be used in [op3_manager](op3_manager).  
+This module is compiled to a library to be used in [op3_manager].  
 
 
 ### 2. Getting started
 #### 2.1 Download & Build
- > Reference : [Installing ROBOTIS ROS Package](OP3-Recovery-of-ROBOTIS-OP3#24-installation-robotis-ros-packages)    
+ > Reference : [Installing ROBOTIS ROS Package](OP3_Recovery_of_ROBOTIS_OP3#24_installation_robotis_ros_packages)    
 
 #### 2.2 Usage
 The Motion Module is used in the manager in the form of library.  
-> Reference : [Creating new robot manager](Creating new robot manager)
+> Reference : [Creating new robot manager]
 
 ### 3. ROS API
 #### 3.1 Subscribed Topics
-`/robotis/walking/command`([std_msgs/String](http://docs.ros.org/api/std_msgs/html/msg/String.html))  
+`/robotis/walking/command`([std_msgs/String])  
 &emsp;&emsp; This message requests start and stop for walking.  
 
-`/robotis/walking/set_params`([op3_walking_module_msgs/WalkingParam](op3_WalkingParam.msg))  
-&emsp;&emsp; This message sets necessary parameters for walking. For details, refer to [WalkingParam.msg](op3_WalkingParam.msg).  
+`/robotis/walking/set_params`([op3_walking_module_msgs/WalkingParam])  
+&emsp;&emsp; This message sets necessary parameters for walking. For details, refer to [WalkingParam.msg].  
 
 
 #### 3.2 Published Topics
-`/robotis/status`([robotis_controller_msgs/StatusMsg](StatusMsg.msg))  
+`/robotis/status`([robotis_controller_msgs/StatusMsg])  
 &emsp;&emsp; This message notifies the status of op3_walking_module.  
 
 
 #### 3.3 Services
-`/robotis/walking/get_params`([op3_walking_module_msgs/GetWalkingParam](op3_GetWalkingParam.srv))  
+`/robotis/walking/get_params`([op3_walking_module_msgs/GetWalkingParam])  
 &emsp;&emsp; This service acquires walking parameters.  
 
 
@@ -37,7 +37,7 @@ The Motion Module is used in the manager in the form of library.
 ### 5. Data
 #### 5.1 Walking parameters
 
- - data file path : [/op3_walking_module/config/param.yaml](https://github.com/ROBOTIS-GIT/ROBOTIS-OP3/blob/master/op3_walking_module/config/param.yaml)  
+ - data file path : [/op3_walking_module/config/param.yaml]
 
  - YAML format
    - x_offset: offset in the x-direction (front and back) [m]  
@@ -95,4 +95,15 @@ The Motion Module is used in the manager in the form of library.
 
    - d_gain: not yet implemented
 
-[&lt;&lt; Back](ROBOTIS-OP3-Modules)
+[&lt;&lt; Back](ROBOTIS-OP3-Modules.md)
+
+
+[Creating new robot manager]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/Creating-new-robot-manager
+[std_msgs/String]:http://docs.ros.org/api/std_msgs/html/msg/String.html
+[op3_manager]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_manager
+
+[op3_walking_module_msgs/WalkingParam]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_WalkingParam.msg
+[WalkingParam.msg]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_WalkingParam.msg
+[robotis_controller_msgs/StatusMsg]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/StatusMsg.msg
+[op3_walking_module_msgs/GetWalkingParam]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_GetWalkingParam.srv
+[/op3_walking_module/config/param.yaml]:https://github.com/ROBOTIS-GIT/ROBOTIS-OP3/blob/master/op3_walking_module/config/param.yaml  

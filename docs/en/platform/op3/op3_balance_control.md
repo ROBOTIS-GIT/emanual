@@ -4,4 +4,6 @@ This library is used to improve walking performance.
 Currently, this library is not implemented because of sensors (ft & IMU).  
 We will update how to used is library.  
 
-<br>[&lt;&lt; Back](ROBOTIS-OP3.md)
+<br>[&lt;&lt; Back]
+
+[&lt;&lt; Back]:[ROBOTIS-OP3.md]

@@ -11,7 +11,7 @@ $ roslaunch robotis_op3_gazebo robotis_world.launch
 ```
 ![op3_gazebo](https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_gazebo.png?raw=true)
 
-### 4. [op3_manager](op3_manager.md) for Gazebo  
+### 4. [op3_manager] for Gazebo  
 
 * Launch op3_manager for gazebo   
 ```
@@ -19,15 +19,18 @@ $ roslaunch op3_manager op3_gazebo.launch
 ```
 
 * Please refer to below tutorials for the rest procedures.   
-[OP3 Tutorials](OP3-Tutorials.md)
+[OP3 Tutorials]
 
 ### 5. To improve gazebo simulation
 
 * Change joint gain   
-[Controller File](https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Common/blob/master/robotis_op3_gazebo/config/position_controller.yaml)
-
+[Controller File]
 * Edit physics engine   
-[World File](https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Common/blob/master/robotis_op3_gazebo/worlds/empty.world)
+[World File]
 
 
 [&lt;&lt; Back](OP3-User's-Guide.md)
+[op3_manager]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_manager
+[OP3 Tutorials]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/OP3-Tutorials
+[Controller File]:https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Common/blob/master/robotis_op3_gazebo/config/position_controller.yaml
+[World File]:https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Common/blob/master/robotis_op3_gazebo/worlds/empty.world

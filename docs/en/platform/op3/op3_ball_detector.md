@@ -5,7 +5,7 @@ The package utilizes OpenCV library in order to search for a ball with a specifi
 
 ### 2. Getting started
 #### 2.1 Download & Build
- > Reference : [Installing ROBOTIS ROS Package](OP3-Recovery of ROBOTIS-OP3#24-installation-robotis-ros-packages.md)    
+ > Reference : [Installing ROBOTIS ROS Package](OP3_Recovery of ROBOTIS_OP3#24_installation_robotis_ros_packages.md)    
 
 #### 2.2 Run
 - Standalone   
@@ -25,26 +25,26 @@ Execute the program with a `.launch` file in order to load ROS parameters.
 
 ### 3. ROS API
 #### 3.1 Subscribed Topics
-`~/enable`([std_msgs/Bool](http://docs.ros.org/api/std_msgs/html/msg/Bool.html))  
+`~/enable`([std_msgs/Bool])  
 &emsp;&emsp; OP3 will start searching for a ball with a `True` message, and stop with a `False` message.  
 
-`~/image_in`([sensor_mgsg/Image](http://docs.ros.org/api/sensor_msgs/html/msg/Image.html))  
+`~/image_in`([sensor_mgsg/Image])  
 &emsp;&emsp; The message in this topic contains camera input image for ball searching.  
 
-`~/cameraInfo_in`([sensor_msgs/CameraInfo](http://docs.ros.org/api/sensor_msgs/html/msg/CameraInfo.html))  
+`~/cameraInfo_in`([sensor_msgs/CameraInfo])  
 &emsp;&emsp; The message in this topic contains camera information of the corresponding input image.  
 
 #### 3.2 Published Topics
-`~/image_out`([sensor_mgsg/Image](http://docs.ros.org/api/sensor_msgs/html/msg/Image.html))  
+`~/image_out`([sensor_mgsg/Image])  
 &emsp;&emsp; The message in this topic contains an output image after the ball searching process.  
 
-`~/camera_info`([sensor_msgs/CameraInfo](http://docs.ros.org/api/sensor_msgs/html/msg/CameraInfo.html))  
+`~/camera_info`([sensor_msgs/CameraInfo])  
 &emsp;&emsp; The message in this topic contains camera information of the output image.  
 
-`~/circle_set`([ball_detector/circleSetStamped](https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Demo/blob/master/ball_detector/msg/circleSetStamped.msg))  
+`~/circle_set`([ball_detector/circleSetStamped])  
 &emsp;&emsp; Detected ball information
-  - `header`([std_msgs/Header](http://docs.ros.org/api/std_msgs/html/msg/Header.html)) : Header information
-  - `circles`([geometry_msgs/Point[]](http://docs.ros.org/api/geometry_msgs/html/msg/Point.html)) : Detecetd balls
+  - `header`([std_msgs/Header]) : Header information
+  - `circles`([geometry_msgs/Point]) : Detecetd balls
     - `x` X coordinate of the center of ball in the image coordinate system
     - `y` Y coordinate of the center of ball in the image coordinate system
     - `z` Radius of the detected ball
@@ -100,4 +100,12 @@ Execute the program with a `.launch` file in order to load ROS parameters.
 
 
 
-<br>[&lt;&lt; Back](ROBOTIS-OP3-Demo.md)
+<br>[&lt;&lt; Back]
+
+[std_msgs/Bool]:(http://docs.ros.org/api/std_msgs/html/msg/Bool.html)
+[sensor_mgsg/Image]:(http://docs.ros.org/api/sensor_msgs/html/msg/Image.html)
+[sensor_msgs/CameraInfo]:(http://docs.ros.org/api/sensor_msgs/html/msg/CameraInfo.html)
+[ball_detector/circleSetStamped]:(https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Demo/blob/master/ball_detector/msg/circleSetStamped.msg)
+[std_msgs/Header]:(http://docs.ros.org/api/std_msgs/html/msg/Header.html)
+[geometry_msgs/Point]:(http://docs.ros.org/api/geometry_msgs/html/msg/Point.html)
+[&lt;&lt; Back]:[ROBOTIS-OP3-Demo.md]

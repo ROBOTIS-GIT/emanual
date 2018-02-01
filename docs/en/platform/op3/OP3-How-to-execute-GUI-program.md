@@ -6,13 +6,13 @@ The GUI program provides various functions for ROBOTIS-OP3.
 - Control the head joint of the OP3  
 - Play action files in the OP3  
 
-> Reference : [op3_gui_demo](op3_gui_demo.md)
+> Reference : [op3_gui_demo]
 
 <img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_gui_diagram.png?raw=true" align="bottom" width="70%"/>
 
 ### 2. Getting started
 #### 2.1 Download & Build
- > Reference : [Installing ROBOTIS ROS Package](OP3-Recovery-of-ROBOTIS-OP3#24-installation-robotis-ros-packages.md)  
+ > Reference : [Installing ROBOTIS ROS Package](OP3_Recovery_of_ROBOTIS_OP3#24_installation_robotis_ros_packages.md)  
 
 #### 2.2 Run the program
 There are three options to run the GUI program.
@@ -25,7 +25,7 @@ Open the terminal window and enter the following command.
 ```
 $ roslaunch op3_gui_demo op3_demo.launch
 ```  
-  > Reference : [How to run op3_mamager](OP3-How-to-run-OP3's-program.md)
+  > Reference : [How to run op3_mamager]
 
 #### 2.3 Execution result
 <img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_gui.png?raw=true" align="bottom"/>
@@ -55,21 +55,28 @@ Clicking the button surrounded by the red dashed rectangle will let the `base_mo
 
   <img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_gui_get_module.png?raw=true" align="bottom"/>  
 
-#### 3.3 [How to use the Walking Tuner](OP3-How-to-use-walking-tuner.md)
+#### 3.3 [How to use the Walking Tuner]
 This section explains how to configure and tune walking parameters.
 Saved parameters are used in the basic demo.  
 
 
-#### 3.4 [How to control head joints](OP3-How-to-control-the-head-joints.md)
+#### 3.4 [How to control head joints]
 This section explains how to control the head joint of ROBOTIS-OP3.  
 
 
 
-#### 3.5 [How to play the motions](OP3-How-to-play-the-motions.md)
+#### 3.5 [How to play the motions]
 This section explains how to play pre-defined actions.  
 
-#### 3.6 [How to control upgraded walking(online walking)](OP3-How-to-ocntrol-upgraded-walking.md)
+#### 3.6 [How to control upgraded walking(online walking)]
 This section explains how to control upgraded walking(download/run/test).
 
 
 [&lt;&lt; Back](OP3-User's-Guide.md)
+
+[op3_gui_demo]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_gui_demo
+[How to run op3_mamager]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/OP3-How-to-run-OP3's-program
+[How to use the Walking Tuner]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/OP3-How-to-use-walking-tuner
+[How to control head joints]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/OP3-How-to-control-the-head-joints
+[How to play the motions]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/OP3-How-to-play-the-motions
+[How to control upgraded walking(online walking)]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/OP3-How-to-control-upgraded-walking

@@ -3,7 +3,9 @@
 
 ### 2. ROS API
 #### 2.1 Service Server  
-`/robotis/get_preview_matrix`([op3_online_walking_module_msgs::GetPreviewMatrix](https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_GetPreviewMatrix.srv))  
+`/robotis/get_preview_matrix`([op3_online_walking_module_msgs::GetPreviewMatrix])  
 &emsp;&emsp; This service will return preview control matrix for online walking pattern generation.  
 
-<br>[&lt;&lt; Back](ROBOTIS OP3.md)
+<br>[&lt;&lt; Back](ROBOTIS-OP3.md)
+
+[op3_online_walking_module_msgs::GetPreviewMatrix]:(https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_GetPreviewMatrix.srv)

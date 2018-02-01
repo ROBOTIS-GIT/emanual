@@ -1,6 +1,6 @@
 ### 1. Overview   
 ROBOTIS-OP3 Action Editor Node   
-This chapter explains how to create and edit action file used in the [op3_action_module](op3_action_module.md) of ROBOTIS-OP3.   
+This chapter explains how to create and edit action file used in the [op3_action_module] of ROBOTIS-OP3.   
 
 #### 1.1 Action File
 The action file contains ROBOTIS-OP3’s poses and time data. The current position describes positions of Dynamixels which converted from actual Dynamixel resolution to 4095 resolution. The action file is written as binary file so users can read its contents with op3_action_editor. ROBOTIS currently provides a default action file with source code. It is located in "op3_action_module/data" directory.  
@@ -10,7 +10,7 @@ The action file contains 256 pages. Each page can store up to 7 stages (or steps
 
 ### 2. Getting started
 #### 2.1 Download & Build
- > Reference : [Installing ROBOTIS ROS Package](OP3-Recovery-of-ROBOTIS-OP3#24-installation-robotis-ros-packages.md)  
+ > Reference : [Installing ROBOTIS ROS Package](OP3_Recovery_of_ROBOTIS_OP3#24_installation_robotis_ros_packages.md)  
 
 #### 2.2 Run
 Execute the launch file.  
@@ -113,4 +113,8 @@ After typing "help", the commend list will appear as shown below.
 8) Type "play" and check the ROBOTIS-OP3's action  
 
 
-[&lt;&lt; Back](ROBOTIS-OP3-Tools.md)
+[&lt;&lt; Back]
+
+
+[op3_action_module]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_action_module
+[&lt;&lt; Back]:[ROBOTIS-OP3-Tools.md]

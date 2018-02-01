@@ -6,7 +6,7 @@ Face detection and tracking will be demonstrated for vision.
 
 ### 2. Getting started
 #### 2.1 Download & Build
- > Reference : [Installing ROBOTIS ROS Package](OP3-Recovery-of-ROBOTIS-OP3#24-installation-robotis-ros-packages.md)  
+ > Reference : [Installing ROBOTIS ROS Package](OP3_Recovery_of_ROBOTIS_OP3#24_installation_robotis_ros_packages.md)  
 
 #### 2.2 Run
 - Execute `.launch` file to initiate demonstration  
@@ -16,7 +16,7 @@ Face detection and tracking will be demonstrated for vision.
 - With a successful launch of the program, OP3 will announce that it is ready for the demonstration.  
 
 #### 2.3 Usage
- > Reference : [How to execute Default Demo](OP3-How-to-execute-Default-Demo.md)  
+ > Reference : [How to execute Default Demo](OP3_How_to_execute_Default_Demo.md)  
 
 - Button Functions  
 From the left, each button is assigned for Mode, Start, User and Reset.  
@@ -36,18 +36,18 @@ From the left, each button is assigned for Mode, Start, User and Reset.
 ROS APIs used in each demo will be explained in corresponding wiki pages.  
 
 #### 3.1 Subscribed Topics
-`/robotis/open_cr/button"`([std_msgs/String](http://docs.ros.org/api/std_msgs/html/msg/String.html))  
+`/robotis/open_cr/button"`([std_msgs/String])  
 &emsp;&emsp; The message in this topic is used to process button control.
 
 #### 3.2 Published Topics
-`/robotis/base/ini_pose`([std_msgs/String](http://docs.ros.org/api/std_msgs/html/msg/String.html))  
+`/robotis/base/ini_pose`([std_msgs/String])  
 &emsp;&emsp; The message in this topic is used for initial posture of ROBOTIS-OP3.
 
-`/robotis/sync_write_item`([std_msgs/String](http://docs.ros.org/api/std_msgs/html/msg/String.html))  
+`/robotis/sync_write_item`([std_msgs/String])  
 &emsp;&emsp; This topic has a message to sync write data on ROBOTIS-OP3   
 &emsp;&emsp; ex) LED controls
 
-`/play_sound_file`([std_msgs/String](http://docs.ros.org/api/std_msgs/html/msg/String.html))  
+`/play_sound_file`([std_msgs/String])  
 &emsp;&emsp; The message in this topic contains path of the voice file for verbal announcement.
 
 
@@ -66,3 +66,5 @@ Buttons on the back of ROBOTIS-OP3 can be used to select and play demo.
 
 
 <br>[&lt;&lt; Back](ROBOTIS-OP3-Demo.md)
+
+[std_msgs/String]:(http://docs.ros.org/api/std_msgs/html/msg/String.html)

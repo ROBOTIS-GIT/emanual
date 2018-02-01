@@ -1,4 +1,4 @@
-### File: [`op3_online_walking_module_msgs/FootStepArray.msg`](https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-msgs/blob/develop/op3_online_walking_module_msgs/msg/FootStepArray.msg)
+### File: [`op3_online_walking_module_msgs/FootStepArray.msg`]
 
 ### Message Definition
 ```
@@ -18,3 +18,6 @@ geometry_msgs/Pose2D[] data
 
 <br>
 [&lt;&lt; Back](op3_online_walking_module_msgs.md)
+
+
+[`op3_online_walking_module_msgs/FootStepArray.msg`]:(https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-msgs/blob/develop/op3_online_walking_module_msgs/msg/FootStepArray.msg)
