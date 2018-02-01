@@ -29,7 +29,7 @@ sidebar:
 
   All series using protocol 1.0
 
-- Code Parts
+#### Sample code Parts
 
 
 ``` cpp
@@ -182,9 +182,9 @@ int main()
 }
 ```
 
--------------------------------------------------------------------------------------
 
-- Details
+
+#### Details
 
 ``` cpp
 #ifdef __linux__
@@ -348,7 +348,7 @@ int main()
 
 In `main()` function, the codes call actual functions for Dynamixel control.
 
---------------------------------------------------------------------------------
+
 
 ``` cpp
   // Initialize PortHandler instance

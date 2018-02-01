@@ -55,12 +55,12 @@ sidebar:
 
 # [Tutorials](#tutorials)
 
-- Reading Data is similar to that of IR sensor.
-- RoboPlus Task : Please refer to [IR Sensor] section in the Roboplus Task.
+- Reading Data is similar to that of Touch sensor.
+- RoboPlus Task : Please refer to [Touch Sensor] section in the Roboplus Task.
 
 # [Videos](#videos)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/LJ1x6tMrFRE" frameborder="0" allowfullscreen></iframe>
 
 [Controller Compatibility]: /docs/en/parts/controller/controller_compatibility/
-[IR Sensor]: /docs/en/software/rplus1/task/programming_02/#ir-sensor
+[Touch Sensor]: /docs/en/software/rplus1/task/programming_02/#touch-sensor

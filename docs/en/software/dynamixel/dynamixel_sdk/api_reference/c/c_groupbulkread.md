@@ -20,66 +20,54 @@ sidebar:
 
 ### [C GroupBulkRead](#c-groupbulkread)
 
-- Description
+- Description : Base functions for simultaneous dynamixel control on reading to different length data on different control table address.
 
-  Base functions for simultaneous dynamixel control on reading to different length data on different control table address.
+- Members : None
 
-- Members
-
-  None
-
-- Methods
-
-| | |
-| ------------- | ------------- |
-|**[groupBulkRead](#groupbulkread)**	|Initializes members of packet data pointer struct|
-|**[groupBulkReadAddParam](#groupbulkreadaddparam)**	|Adds parameter storage for read |
-|**[groupBulkReadRemoveParam](#groupbulkreadremoveparam)**	|Removes parameter on the storage |
-|**[groupBulkReadClearParam](#groupbulkreadclearparam)**	|Clears parameter storage|
-|**[groupBulkReadTxPacket](#groupbulkreadtxpacket)**	|Transmits packet to the number of Dynamixels|
-|**[groupBulkReadRxPacket](#groupbulkreadrxpacket)**	|receives packet from the number of Dynamixels|
-|**[groupBulkReadTxRxPacket](#groupbulkreadtxrxpacket)**	|Transmits and receives packet on the number of Dynamixels|
-|**[groupBulkReadIsAvailable](#groupbulkreadisavailable)** | Checks whether there is available data in the data storage |
-|**[groupBulkReadGetData](#groupbulkreadgetdata)**	|Gets data from received packet|
+| Methods                                                   | Description                                                |
+|:----------------------------------------------------------|:-----------------------------------------------------------|
+| **[groupBulkRead](#groupbulkread)**                       | Initializes members of packet data pointer struct          |
+| **[groupBulkReadAddParam](#groupbulkreadaddparam)**       | Adds parameter storage for read                            |
+| **[groupBulkReadRemoveParam](#groupbulkreadremoveparam)** | Removes parameter on the storage                           |
+| **[groupBulkReadClearParam](#groupbulkreadclearparam)**   | Clears parameter storage                                   |
+| **[groupBulkReadTxPacket](#groupbulkreadtxpacket)**       | Transmits packet to the number of Dynamixels               |
+| **[groupBulkReadRxPacket](#groupbulkreadrxpacket)**       | receives packet from the number of Dynamixels              |
+| **[groupBulkReadTxRxPacket](#groupbulkreadtxrxpacket)**   | Transmits and receives packet on the number of Dynamixels  |
+| **[groupBulkReadIsAvailable](#groupbulkreadisavailable)** | Checks whether there is available data in the data storage |
+| **[groupBulkReadGetData](#groupbulkreadgetdata)**         | Gets data from received packet                             |
 
 
-- Enumerator
-
-  None
+- Enumerator : None
 
 #### Method References
-----------------------------------------------
+
 ##### groupBulkRead
 - Syntax
 ``` cpp
 uint8_t groupBulkRead(int port_num, int protocol_version)
 ```
-- Parameters
 
-| | |
-| ------------- | ------------- |
-|port_num	|Port number|
-|protocol_version | Protocol version |
-
+| Parameters       | Description      |
+|:-----------------|:-----------------|
+| port_num         | Port number      |
+| protocol_version | Protocol version |
 
 - Detailed Description
 
-   This function initializes the parameters for packet construction. The function resizes groupData struct and initialzes struct members.
-
+  This function initializes the parameters for packet construction. The function resizes groupData struct and initialzes struct members.
 
 ##### groupBulkReadAddParam
 - Syntax
 ``` cpp
 uint8_t groupBulkReadAddParam(int group_num, uint8_t id, uint16_t start_address, uint16_t data_length)
 ```
-- Parameters
 
-| | |
-| ------------- | ------------- |
-|group_num | Group number |
-|id	|Dynamixel ID|
-|start_address	|Start address|
-|data_length	|Data length|
+| Parameters    | Description   |
+|:--------------|:--------------|
+| group_num     | Group number  |
+| id            | Dynamixel ID  |
+| start_address | Start address |
+| data_length   | Data length   |
 
 
 - Detailed Description
@@ -92,12 +80,11 @@ uint8_t groupBulkReadAddParam(int group_num, uint8_t id, uint16_t start_address,
 ``` cpp
 void groupBulkReadRemoveParam(int group_num, uint8_t id)
 ```
-- Parameters
 
-| | |
-| ------------- | ------------- |
-|group_num | Group number |
-|id|	Dynamixel ID|
+| Parameters | Description  |
+|:-----------|:-------------|
+| group_num  | Group number |
+| id         | Dynamixel ID |
 
 - Detailed Description
 
@@ -109,11 +96,10 @@ void groupBulkReadRemoveParam(int group_num, uint8_t id)
 ``` cpp
 void groupBulkReadClearParam(int group_num)
 ```
-- Parameters
 
-| | |
-| ------------- | ------------- |
-|group_num | Group number |
+| Parameters | Description  |
+|:-----------|:-------------|
+| group_num  | Group number |
 
 - Detailed Description
 
@@ -125,11 +111,10 @@ void groupBulkReadClearParam(int group_num)
 ``` cpp
 int groupBulkReadTxPacket(int group_num)
 ```
-- Parameters
 
-| | |
-| ------------- | ------------- |
-|group_num | Group number |
+| Parameters | Description  |
+|:-----------|:-------------|
+| group_num  | Group number |
 
 - Detailed Description
 
@@ -141,11 +126,10 @@ int groupBulkReadTxPacket(int group_num)
 ``` cpp
 int groupBulkReadRxPacket(int group_num)
 ```
-- Parameters
 
-| | |
-| ------------- | ------------- |
-|group_num | Group number |
+| Parameters | Description  |
+|:-----------|:-------------|
+| group_num  | Group number |
 
 - Detailed Description
 
@@ -157,11 +141,10 @@ int groupBulkReadRxPacket(int group_num)
 ``` cpp
 int groupBulkReadTxRxPacket(int group_num)
 ```
-- Parameters
 
-| | |
-| ------------- | ------------- |
-|group_num | Group number |
+| Parameters | Description  |
+|:-----------|:-------------|
+| group_num  | Group number |
 
 - Detailed Description
 
@@ -172,13 +155,12 @@ int groupBulkReadTxRxPacket(int group_num)
 ``` cpp
 bool groupBulkReadIsAvailable(int group_num, uint8_t id, uint16_t address, uint16_t data_length)
 ```
-- Parameters
 
-| | |
-| ------------- | ------------- |
-|id	|Dynamixel ID|
-|address	|Address on the control table of Dynamixel|
-|data	|Packet data|
+| Parameters | Description                               |
+|:-----------|:------------------------------------------|
+| id         | Dynamixel ID                              |
+| address    | Address on the control table of Dynamixel |
+| data       | Packet data                               |
 
 
 - Detailed Description
@@ -190,15 +172,13 @@ bool groupBulkReadIsAvailable(int group_num, uint8_t id, uint16_t address, uint1
 ``` cpp
 uint8_t groupBulkReadGetData(int group_num, uint8_t id, uint16_t address, uint16_t data_length)
 ```
-- Parameters
 
-| | |
-| ------------- | ------------- |
-|group_num | Group number |
-|id	|Dynamixel ID|
-|address	|Address on the control table of Dynamixel|
-|data_length	|Data length|
-
+| Parameters  | Description                               |
+|:------------|:------------------------------------------|
+| group_num   | Group number                              |
+| id          | Dynamixel ID                              |
+| address     | Address on the control table of Dynamixel |
+| data_length | Data length                               |
 
 - Detailed Description
 

@@ -27,7 +27,7 @@ sidebar:
   All models using protocol 1.0 and 2.0
 
 
-- Code
+#### Sample code
 
 
 ``` m
@@ -235,9 +235,9 @@ close all;
 clear all;
 ```
 
--------------------------------------------------------------------------------------
 
-- Details
+
+#### Details
 
 ``` m
 % Load Libraries

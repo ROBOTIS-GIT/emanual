@@ -1,0 +1,1 @@
+In case of Torque Control Mode, Goal Current(102) can be used to set a target current. This value sets a limit to current in Current-based Position Control mode. This value cannot exceed Current Limit(38).

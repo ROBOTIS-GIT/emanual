@@ -41,7 +41,7 @@ It makes the users possible to develop their own firmware. The characteristics a
 
 WinAVR is necessary for AVR programming.  
 WinAVR can be downloaded from the following website, and it is free-of-charge.  
-http://winavr.sourceforge.net/
+[http://winavr.sourceforge.net/](http://winavr.sourceforge.net/)
  
 The installation process is as below.
  
@@ -76,7 +76,7 @@ The installation process is as below.
 ### [Install Atmel Studio](#install-atmel-studio)
 Atmel Studio provides users various Macro, Library, and comprehensive environment for easy programming.  
 Atmel Studio can be downloaded from the website below, and it is free-of-charge.  
-http://www.atmel.com/dyn/products/tools_card.asp?tool_id=2725  
+[http://www.atmel.com/dyn/products/tools_card.asp?tool_id=2725](http://www.atmel.com/dyn/products/tools_card.asp?tool_id=2725)
  
 The installation procedure is as follows.
  
@@ -128,7 +128,7 @@ If you want to use Embedded C, you must select the basic environment of the inst
 
     ![](/assets/images/sw/sdk/embedded_017.png)
  
-5. Click on File - Open - Project/Solution.
+5. Click on File > Open > Project/Solution.
 
     ![](/assets/images/sw/sdk/embedded_018.png)
  
@@ -411,15 +411,15 @@ Input of the button can be received.
 
       ```c
       if(~PINE & BTN_UP)
-      PORTC &= ~LED_MANAGE;
+       PORTC &= ~LED_MANAGE;
       else if(~PINE & BTN_DOWN)
-      PORTC &= ~LED_AUX;
+       PORTC &= ~LED_AUX;
       else if(~PINE & BTN_LEFT)
-      PORTC &= ~LED_PROGRAM;
+       PORTC &= ~LED_PROGRAM;
       else if(~PINE & BTN_RIGHT)
-      PORTC &= ~LED_PLAY;
+       PORTC &= ~LED_PLAY;
       else if(~PIND & BTN_START)
-      PORTC = ~(LED_BAT|LED_TxD|LED_RxD|LED_AUX|LED_MANAGE|LED_PROGRAM|LED_PLAY);
+       PORTC = ~(LED_BAT|LED_TxD|LED_RxD|LED_AUX|LED_MANAGE|LED_PROGRAM|LED_PLAY);
       else PORTC = LED_BAT|LED_TxD|LED_RxD|LED_AUX|LED_MANAGE|LED_PROGRAM|LED_PLAY;
       ```
 
@@ -432,7 +432,7 @@ Input of the button can be received.
 
       ```c
       if(~PIND & BTN_START)
-      PORTC = ~(LED_BAT|LED_TxD|LED_RxD|LED_AUX|LED_MANAGE|LED_PROGRAM|LED_PLAY);
+        PORTC = ~(LED_BAT|LED_TxD|LED_RxD|LED_AUX|LED_MANAGE|LED_PROGRAM|LED_PLAY);
       else PORTC = LED_BAT|LED_TxD|LED_RxD|LED_AUX|LED_MANAGE|LED_PROGRAM|LED_PLAY;
       ```
 
@@ -497,7 +497,7 @@ Buzzer on the controller can be used.
   - The relationship between musical scale and frequency is as below.
   - Time is a reciprocal number of frequency.  The conversion formula is as below. 
  
-    **Time(Sec) =  1 / (Frequency)**
+    `Time(Sec) =  1 / (Frequency)`
 
 |Octave<br />/Scale|1|2|3|4|5|6|7|8|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -725,7 +725,7 @@ Multiple Dynamixels can be controlled by synchronization.
   If there are no specific reasons, device index is 0.
  
   ```c
-  for( i=0; i<NUM_ACTUATOR; i++ )
+  for( i=0; i < NUM_ACTUATOR; i++ )
   {
     id[i] = i+1;
     phase[i] = 2*PI * (float)i / (float)NUM_ACTUATOR;
@@ -746,7 +746,7 @@ Multiple Dynamixels can be controlled by synchronization.
   dxl_set_txpacket_instruction(INST_SYNC_WRITE);
   dxl_set_txpacket_parameter(0, P_GOAL_POSITION_L);
   dxl_set_txpacket_parameter(1, 2);
-  for( i=0; i<NUM_ACTUATOR; i++ )
+  for( i=0; i < NUM_ACTUATOR; i++ )
   {
     dxl_set_txpacket_parameter(2+3*i, id[i]);
     GoalPos = (int)((sin(theta+phase[i]) + 1.0) * (float)AmpPos);
@@ -838,7 +838,8 @@ The controller can be operated using RC-100.
   The received data by Zigbee Module can be read using zgb_rx_data() function.  
   If the received packet is RC-100 button, LEDs are turned on or off by controlling PORTC pursuant to pressed buttons of RC-100.
    
-  `Caution` Due to the UART sharing, there  happen a system collision when you use the zigBee and serial communication library at the same source. If you want to use both of them at once, you must modify the source properly in advance.
+  `Caution` Due to the UART sharing, there will be a system collision when you use both ZIGBee and serial communication library at the same time. If you want to use both of them at once, you must modify the source properly in advance.
+  {: .notice--warning}
  
 - Result
   - If Zigbee is connected normally, LEDs are turned on and off whenever the buttons of RC-100 is pressed.

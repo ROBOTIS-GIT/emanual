@@ -29,7 +29,7 @@ sidebar:
 
   All series using protocol 1.0
 
-- Code Parts
+#### Sample code Parts
 
 
 ``` cs
@@ -285,9 +285,9 @@ namespace bulk_read
 }
 ```
 
--------------------------------------------------------------------------------------
 
-- Details
+
+#### Details
 
 ``` cs
 using System;
@@ -556,7 +556,7 @@ static void Main(string[] args)
 
 In `Main()` function, the codes call actual functions for Dynamixel control.
 
---------------------------------------------------------------------------------
+
 
 ``` cs
 // Initialize PortHandler Structs

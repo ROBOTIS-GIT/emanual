@@ -29,10 +29,10 @@ sidebar:
 
   All series using protocol 2.0
 
-- Code
+#### Sample code
 
 
-``` cpp
+```c
 /*
 * bulk_read_write.c
 *
@@ -342,11 +342,11 @@ int main()
 }
 ```
 
--------------------------------------------------------------------------------------
 
-- Details
 
-``` cpp
+#### Details
+
+```c
 #ifdef __linux__
 #include <unistd.h>
 #include <fcntl.h>
@@ -358,25 +358,25 @@ int main()
 
 This source includes above to get key input interruption while the example is running. Actual functions for getting the input is described in a little below.
 
-``` cpp
+```c
 #include <stdlib.h>
 ```
 
 The function `abs()` is in the example code, and it needs `stdlib.h` to be included.
 
-``` cpp
+```c
 #include <stdio.h>
 ```
 
 The example shows Dynamixel status in sequence by the function `printf()`. So here `stdio.h` is needed.
 
-``` cpp
+```c
 #include "dynamixel_sdk.h"                                   // Uses Dynamixel SDK library
 ```
 
 All libraries of Dynamixel SDK are linked with the header file `dynamixel_sdk.h`.
 
-``` cpp
+```c
 // Control table address
 #define ADDR_PRO_TORQUE_ENABLE           562                  // Control table address is different in Dynamixel model
 #define ADDR_PRO_LED_RED                 563
@@ -391,14 +391,14 @@ All libraries of Dynamixel SDK are linked with the header file `dynamixel_sdk.h`
 
 Dynamixel series have their own control tables: Addresses and Byte Length in each items. To control one of the items, its address (and length if necessary) is required. Find your requirements in http://support.robotis.com/.
 
-``` cpp
+```c
 // Protocol version
 #define PROTOCOL_VERSION                2.0                 // See which protocol version is used in the Dynamixel
 ```
 
 Dynamixel uses either or both protocols: Protocol 1.0 and Protocol 2.0. Choose one of the Protocol which is appropriate in the Dynamixel.
 
-``` cpp
+```c
 // Default setting
 #define DXL1_ID                         1                   // Dynamixel#1 ID: 1
 #define DXL2_ID                         2                   // Dynamixel#2 ID: 2
@@ -430,7 +430,7 @@ Dynamixel LED has its own range of value: 1 byte red LED for Dynamixel MX-28 and
 
 `DXL_MOVING_STATUS_THRESHOLD` acts as a criteria for verifying its rotation stopped.
 
-``` cpp
+```c
 int getch()
 {
 #ifdef __linux__
@@ -482,7 +482,7 @@ int kbhit(void)
 
 These functions accept the key inputs in terms of example action. The example codes mainly apply the function `getch()` rather than the function `kbhit()` to get information which key has been pressed.
 
-``` cpp
+```c
 int main()
 {
   // Initialize PortHandler Structs
@@ -688,50 +688,50 @@ int main()
 
 In `main()` function, the codes call actual functions for Dynamixel control.
 
---------------------------------------------------------------------------------
 
-``` cpp
-  // Initialize PortHandler Structs
-  // Set the port path
-  // Get methods and members of PortHandlerLinux or PortHandlerWindows
-  int port_num = portHandler(DEVICENAME);
+
+```c
+// Initialize PortHandler Structs
+// Set the port path
+// Get methods and members of PortHandlerLinux or PortHandlerWindows
+int port_num = portHandler(DEVICENAME);
 ```
 
 `portHandler()` function sets port path as `DEVICENAME` and get `port_num`, and prepares an appropriate functions for port control in controller OS automatically. `port_num` would be used in many functions in the body of the code to specify the port for use.
 
-``` cpp
-  // Initialize PacketHandler Structs
-  packetHandler();
+```c
+// Initialize PacketHandler Structs
+packetHandler();
 ```
 
 `packetHandler()` function initializes parameters used for packet construction and packet storing.
 
-``` cpp
-  // Initialize groupBulkWrite Struct
-  int groupwrite_num = groupBulkWrite(port_num, PROTOCOL_VERSION);
+```c
+// Initialize groupBulkWrite Struct
+int groupwrite_num = groupBulkWrite(port_num, PROTOCOL_VERSION);
 ```
 
 `groupBulkWrite()` function  initializes grouped parameters used for packet construction and packet storing. The utility functions of bulk read deals simultaneously with more than one Dynamixel through #`port_num` port, building packets by the function which uses `PROTOCOL_VERSION`.
 
-``` cpp
-  // Initialize Groupbulkread Structs
-  int groupread_num = groupBulkRead(port_num, PROTOCOL_VERSION);
+```c
+// Initialize Groupbulkread Structs
+int groupread_num = groupBulkRead(port_num, PROTOCOL_VERSION);
 ```
 
 `groupBulkRead()` function initializes grouped parameters used for packet construction and packet storing. The utility functions of bulk read deals simultaneously with more than one Dynamixel through #`port_num` port, building packets by the function which uses `PROTOCOL_VERSION`.
 
 
-``` cpp
-  int index = 0;
-  int dxl_comm_result = COMM_TX_FAIL;              // Communication result
-  bool dxl_addparam_result = false;                // AddParam result
-  bool dxl_getdata_result = false;                 // GetParam result
-  int dxl_goal_position[2] = {DXL_MINIMUM_POSITION_VALUE, DXL_MAXIMUM_POSITION_VALUE};         // Goal position
+```c
+int index = 0;
+int dxl_comm_result = COMM_TX_FAIL;              // Communication result
+bool dxl_addparam_result = false;                // AddParam result
+bool dxl_getdata_result = false;                 // GetParam result
+int dxl_goal_position[2] = {DXL_MINIMUM_POSITION_VALUE, DXL_MAXIMUM_POSITION_VALUE};         // Goal position
 
-  uint8_t dxl_error = 0;                          // Dynamixel error
-  uint8_t dxl_led_value[2] = {DXL_MINIMUM_LED_VALUE, DXL_MAXIMUM_LED_VALUE};        // Dynamixel LED value for write             
-  uint16_t dxl1_present_position = 0;             // Present position
-  uint8_t dxl2_moving = 0;                        // Dynamixel moving status
+uint8_t dxl_error = 0;                          // Dynamixel error
+uint8_t dxl_led_value[2] = {DXL_MINIMUM_LED_VALUE, DXL_MAXIMUM_LED_VALUE};        // Dynamixel LED value for write             
+uint16_t dxl1_present_position = 0;             // Present position
+uint8_t dxl2_moving = 0;                        // Dynamixel moving status
 ```
 
 `index` variable points the direction to where the Dynamixel should be rotated.
@@ -753,70 +753,70 @@ In `main()` function, the codes call actual functions for Dynamixel control.
 `dxl2_moving` views whether the Dynamixel is stopped.
 
 
-``` cpp
-  // Open port
-  if (openPort(port_num))
-  {
-      printf("Succeeded to open the port!\n");
-  }
-  else
-  {
-      printf("Failed to open the port!\n");
-      printf("Press any key to terminate...\n");
-      _getch();
-      return 0;
-  }
+```c
+// Open port
+if (openPort(port_num))
+{
+    printf("Succeeded to open the port!\n");
+}
+else
+{
+    printf("Failed to open the port!\n");
+    printf("Press any key to terminate...\n");
+    _getch();
+    return 0;
+}
 ```
 
 First, controller opens #`port_num` port to do serial communication with the Dynamixel. If it fails to open the port, the example will be terminated.
 
-``` cpp
-  // Set port baudrate
-  if (setBaudRate(port_num, BAUDRATE))
-  {
-      printf("Succeeded to change the baudrate!\n");
-  }
-  else
-  {
-      printf("Failed to change the baudrate!\n");
-      printf("Press any key to terminate...\n");
-      _getch();
-      return 0;
-  }
+```c
+// Set port baudrate
+if (setBaudRate(port_num, BAUDRATE))
+{
+    printf("Succeeded to change the baudrate!\n");
+}
+else
+{
+    printf("Failed to change the baudrate!\n");
+    printf("Press any key to terminate...\n");
+    _getch();
+    return 0;
+}
 ```
 
 Secondly, the controller sets the communication `BAUDRATE` at #`port_num` port opened previously.
 
-``` cpp
-  // Enable Dynamixel#1 Torque
-  write1ByteTxRx(port_num, PROTOCOL_VERSION, DXL1_ID, ADDR_PRO_TORQUE_ENABLE, TORQUE_ENABLE);
-  if ((dxl_comm_result = getLastTxRxResult(port_num, PROTOCOL_VERSION)) != COMM_SUCCESS)
-  {
-    printTxRxResult(PROTOCOL_VERSION, dxl_comm_result);
-  }
-  else if ((dxl_error = getLastRxPacketError(port_num, PROTOCOL_VERSION)) != 0)
-  {
-    printRxPacketError(PROTOCOL_VERSION, dxl_error);
-  }
-  else
-  {
-    printf("DXL#%d has been successfully connected \n", DXL1_ID);
-  }
+```c
+// Enable Dynamixel#1 Torque
+write1ByteTxRx(port_num, PROTOCOL_VERSION, DXL1_ID, ADDR_PRO_TORQUE_ENABLE, TORQUE_ENABLE);
+if ((dxl_comm_result = getLastTxRxResult(port_num, PROTOCOL_VERSION)) != COMM_SUCCESS)
+{
+  printTxRxResult(PROTOCOL_VERSION, dxl_comm_result);
+}
+else if ((dxl_error = getLastRxPacketError(port_num, PROTOCOL_VERSION)) != 0)
+{
+  printRxPacketError(PROTOCOL_VERSION, dxl_error);
+}
+else
+{
+  printf("DXL#%d has been successfully connected \n", DXL1_ID);
+}
 
-  // Enable Dynamixel#2 Torque
-  write1ByteTxRx(port_num, PROTOCOL_VERSION, DXL2_ID, ADDR_PRO_TORQUE_ENABLE, TORQUE_ENABLE);
-  if ((dxl_comm_result = getLastTxRxResult(port_num, PROTOCOL_VERSION)) != COMM_SUCCESS)
-  {
-    printTxRxResult(PROTOCOL_VERSION, dxl_comm_result);
-  }
-  else if ((dxl_error = getLastRxPacketError(port_num, PROTOCOL_VERSION)) != 0)
-  {
-    printRxPacketError(PROTOCOL_VERSION, dxl_error);
-  }
-  else
-  {
-    printf("DXL#%d has been successfully connected \n", DXL2_ID);
-  }
+// Enable Dynamixel#2 Torque
+write1ByteTxRx(port_num, PROTOCOL_VERSION, DXL2_ID, ADDR_PRO_TORQUE_ENABLE, TORQUE_ENABLE);
+if ((dxl_comm_result = getLastTxRxResult(port_num, PROTOCOL_VERSION)) != COMM_SUCCESS)
+{
+  printTxRxResult(PROTOCOL_VERSION, dxl_comm_result);
+}
+else if ((dxl_error = getLastRxPacketError(port_num, PROTOCOL_VERSION)) != 0)
+{
+  printRxPacketError(PROTOCOL_VERSION, dxl_error);
+}
+else
+{
+  printf("DXL#%d has been successfully connected \n", DXL2_ID);
+}
 ```
 
 As mentioned in the document, above code enables each Dynamixel`s torque to set their status as being ready to move.
@@ -824,100 +824,100 @@ As mentioned in the document, above code enables each Dynamixel`s torque to set 
 `write1ByteTxRx()` function orders to the #`DXL1_ID` and #`DXL2_ID` Dynamixels in `PROTOCOL_VERSION` communication protocol through #`port_num` port, writing 1 byte of `TORQUE_ENABLE` value to `ADDR_PRO_TORQUE_ENABLE` address. The function checks Tx/Rx result and receives Hardware error.
 `getLastTxRxResult()` function and `getLastRxPacketError()` function get either, and then `printTxRxResult()` function and `printRxPacketError()` function show results on the console window if any communication error or Hardware error has been occurred.
 
-``` cpp
-  // Add parameter storage for Dynamixel#1 present position
-  dxl_addparam_result = groupBulkReadAddParam(groupread_num, DXL1_ID, ADDR_PRO_PRESENT_POSITION, LEN_PRO_PRESENT_POSITION);
-  if (dxl_addparam_result != True)
-  {
-    fprintf(stderr, "[ID:%03d] groupBulkRead addparam failed", DXL1_ID);
-    return 0;
-  }
+```c
+// Add parameter storage for Dynamixel#1 present position
+dxl_addparam_result = groupBulkReadAddParam(groupread_num, DXL1_ID, ADDR_PRO_PRESENT_POSITION, LEN_PRO_PRESENT_POSITION);
+if (dxl_addparam_result != True)
+{
+  fprintf(stderr, "[ID:%03d] groupBulkRead addparam failed", DXL1_ID);
+  return 0;
+}
 
-  // Add parameter storage for Dynamixel#2 LED value
-  dxl_addparam_result = groupBulkReadAddParam(groupread_num, DXL2_ID, ADDR_PRO_LED_RED, LEN_PRO_LED_RED);
-  if (dxl_addparam_result != True)
-  {
-    fprintf(stderr, "[ID:%03d] groupBulkRead addparam failed", DXL2_ID);
-    return 0;
-  }
+// Add parameter storage for Dynamixel#2 LED value
+dxl_addparam_result = groupBulkReadAddParam(groupread_num, DXL2_ID, ADDR_PRO_LED_RED, LEN_PRO_LED_RED);
+if (dxl_addparam_result != True)
+{
+  fprintf(stderr, "[ID:%03d] groupBulkRead addparam failed", DXL2_ID);
+  return 0;
+}
 ```
 
 `groupBulkReadAddParam()` function stores the Dynamixel ID and address `ADDR_PRO_PRESENT_POSITION` or `ADDR_PRO_LED_RED`, byte length `LEN_PRO_PRESENT_POSITION` or `LEN_PRO_LED_RED` of required data to the bulkread target Dynamixel list.
 
-``` cpp
-  while (1)
+```c
+while (1)
+{
+  printf("Press any key to continue! (or press ESC to quit!)\n");
+  if (getch() == ESC_ASCII_VALUE)
+    break;
+
+  // Add parameter storage for Dynamixel#1 goal position
+  dxl_addparam_result = groupBulkWriteAddParam(groupwrite_num, DXL1_ID, ADDR_PRO_GOAL_POSITION, LEN_PRO_GOAL_POSITION, dxl_goal_position[index], LEN_PRO_GOAL_POSITION);
+  if (dxl_addparam_result != True)
   {
-    printf("Press any key to continue! (or press ESC to quit!)\n");
-    if (getch() == ESC_ASCII_VALUE)
-      break;
+    fprintf(stderr, "[ID:%03d] groupBulkWrite addparam failed", DXL1_ID);
+    return 0;
+  }
 
-    // Add parameter storage for Dynamixel#1 goal position
-    dxl_addparam_result = groupBulkWriteAddParam(groupwrite_num, DXL1_ID, ADDR_PRO_GOAL_POSITION, LEN_PRO_GOAL_POSITION, dxl_goal_position[index], LEN_PRO_GOAL_POSITION);
-    if (dxl_addparam_result != True)
-    {
-      fprintf(stderr, "[ID:%03d] groupBulkWrite addparam failed", DXL1_ID);
-      return 0;
-    }
+  // Add parameter storage for Dynamixel#2 LED value
+  dxl_addparam_result = groupBulkWriteAddParam(groupwrite_num, DXL2_ID, ADDR_PRO_LED_RED, LEN_PRO_LED_RED, dxl_led_value[index], LEN_PRO_LED_RED);
+  if (dxl_addparam_result != True)
+  {
+    fprintf(stderr, "[ID:%03d] groupBulkWrite addparam failed", DXL2_ID);
+    return 0;
+  }
 
-    // Add parameter storage for Dynamixel#2 LED value
-    dxl_addparam_result = groupBulkWriteAddParam(groupwrite_num, DXL2_ID, ADDR_PRO_LED_RED, LEN_PRO_LED_RED, dxl_led_value[index], LEN_PRO_LED_RED);
-    if (dxl_addparam_result != True)
-    {
-      fprintf(stderr, "[ID:%03d] groupBulkWrite addparam failed", DXL2_ID);
-      return 0;
-    }
+  // Bulkwrite goal position and LED value
+  groupBulkWriteTxPacket(groupwrite_num);
+  if ((dxl_comm_result = getLastTxRxResult(port_num, PROTOCOL_VERSION)) != COMM_SUCCESS)
+    printTxRxResult(PROTOCOL_VERSION, dxl_comm_result);
 
-    // Bulkwrite goal position and LED value
-    groupBulkWriteTxPacket(groupwrite_num);
+  // Clear bulkwrite parameter storage
+  groupBulkWriteClearParam(groupwrite_num);
+
+  do
+  {
+    // Bulkread present position and LED status
+    groupBulkReadTxRxPacket(groupread_num);
     if ((dxl_comm_result = getLastTxRxResult(port_num, PROTOCOL_VERSION)) != COMM_SUCCESS)
       printTxRxResult(PROTOCOL_VERSION, dxl_comm_result);
 
-    // Clear bulkwrite parameter storage
-    groupBulkWriteClearParam(groupwrite_num);
-
-    do
+    // Check if groupbulkread data of Dynamixel#1 is available
+    dxl_getdata_result = groupBulkReadIsAvailable(groupread_num, DXL1_ID, ADDR_PRO_PRESENT_POSITION, LEN_PRO_PRESENT_POSITION);
+    if (dxl_getdata_result != True)
     {
-      // Bulkread present position and LED status
-      groupBulkReadTxRxPacket(groupread_num);
-      if ((dxl_comm_result = getLastTxRxResult(port_num, PROTOCOL_VERSION)) != COMM_SUCCESS)
-        printTxRxResult(PROTOCOL_VERSION, dxl_comm_result);
-
-      // Check if groupbulkread data of Dynamixel#1 is available
-      dxl_getdata_result = groupBulkReadIsAvailable(groupread_num, DXL1_ID, ADDR_PRO_PRESENT_POSITION, LEN_PRO_PRESENT_POSITION);
-      if (dxl_getdata_result != True)
-      {
-        fprintf(stderr, "[ID:%03d] groupBulkRead getdata failed", DXL1_ID);
-        return 0;
-      }
-
-      // Check if groupbulkread data of Dynamixel#2 is available
-      dxl_getdata_result = groupBulkReadIsAvailable(groupread_num, DXL2_ID, ADDR_PRO_LED_RED, LEN_PRO_LED_RED);
-      if (dxl_getdata_result != True)
-      {
-        fprintf(stderr, "[ID:%03d] groupBulkRead getdata failed", DXL2_ID);
-        return 0;
-      }
-
-      // Get present position value
-      dxl1_present_position = groupBulkReadGetData(groupread_num, DXL1_ID, ADDR_PRO_PRESENT_POSITION, LEN_PRO_PRESENT_POSITION);
-
-      // Get LED value
-      dxl2_led_value_read = groupBulkReadGetData(groupread_num, DXL2_ID, ADDR_PRO_LED_RED, LEN_PRO_LED_RED);
-
-      printf("[ID:%03d] Present Position : %d \t [ID:%03d] LED Value: %d\n", DXL1_ID, dxl1_present_position, DXL2_ID, dxl2_led_value_read);
-
-    } while (abs(dxl_goal_position[index] - dxl1_present_position) > DXL_MOVING_STATUS_THRESHOLD);
-
-    // Change goal position
-    if (index == 0)
-    {
-      index = 1;
+      fprintf(stderr, "[ID:%03d] groupBulkRead getdata failed", DXL1_ID);
+      return 0;
     }
-    else
+
+    // Check if groupbulkread data of Dynamixel#2 is available
+    dxl_getdata_result = groupBulkReadIsAvailable(groupread_num, DXL2_ID, ADDR_PRO_LED_RED, LEN_PRO_LED_RED);
+    if (dxl_getdata_result != True)
     {
-      index = 0;
+      fprintf(stderr, "[ID:%03d] groupBulkRead getdata failed", DXL2_ID);
+      return 0;
     }
+
+    // Get present position value
+    dxl1_present_position = groupBulkReadGetData(groupread_num, DXL1_ID, ADDR_PRO_PRESENT_POSITION, LEN_PRO_PRESENT_POSITION);
+
+    // Get LED value
+    dxl2_led_value_read = groupBulkReadGetData(groupread_num, DXL2_ID, ADDR_PRO_LED_RED, LEN_PRO_LED_RED);
+
+    printf("[ID:%03d] Present Position : %d \t [ID:%03d] LED Value: %d\n", DXL1_ID, dxl1_present_position, DXL2_ID, dxl2_led_value_read);
+
+  } while (abs(dxl_goal_position[index] - dxl1_present_position) > DXL_MOVING_STATUS_THRESHOLD);
+
+  // Change goal position
+  if (index == 0)
+  {
+    index = 1;
   }
+  else
+  {
+    index = 0;
+  }
+}
 ```
 
 During `while()` loop, the controller writes and reads each Dynamixel position or moving status through packet transmission/reception(Tx/Rx).
@@ -944,28 +944,28 @@ Reading their present position will be ended when absolute value of `(dxl_goal_p
 
 At last, it changes their direction to the counter-wise and waits for extra key input.
 
-``` cpp
-  // Disable Dynamixel#1 Torque
-  write1ByteTxRx(port_num, PROTOCOL_VERSION, DXL1_ID, ADDR_PRO_TORQUE_ENABLE, TORQUE_DISABLE);
-  if ((dxl_comm_result = getLastTxRxResult(port_num, PROTOCOL_VERSION)) != COMM_SUCCESS)
-  {
-    printTxRxResult(PROTOCOL_VERSION, dxl_comm_result);
-  }
-  else if ((dxl_error = getLastRxPacketError(port_num, PROTOCOL_VERSION)) != 0)
-  {
-    printRxPacketError(PROTOCOL_VERSION, dxl_error);
-  }
+```c
+// Disable Dynamixel#1 Torque
+write1ByteTxRx(port_num, PROTOCOL_VERSION, DXL1_ID, ADDR_PRO_TORQUE_ENABLE, TORQUE_DISABLE);
+if ((dxl_comm_result = getLastTxRxResult(port_num, PROTOCOL_VERSION)) != COMM_SUCCESS)
+{
+  printTxRxResult(PROTOCOL_VERSION, dxl_comm_result);
+}
+else if ((dxl_error = getLastRxPacketError(port_num, PROTOCOL_VERSION)) != 0)
+{
+  printRxPacketError(PROTOCOL_VERSION, dxl_error);
+}
 
-  // Disable Dynamixel#2 Torque
-  write1ByteTxRx(port_num, PROTOCOL_VERSION, DXL2_ID, ADDR_PRO_TORQUE_ENABLE, TORQUE_DISABLE);
-  if ((dxl_comm_result = getLastTxRxResult(port_num, PROTOCOL_VERSION)) != COMM_SUCCESS)
-  {
-    printTxRxResult(PROTOCOL_VERSION, dxl_comm_result);
-  }
-  else if ((dxl_error = getLastRxPacketError(port_num, PROTOCOL_VERSION)) != 0)
-  {
-    printRxPacketError(PROTOCOL_VERSION, dxl_error);
-  }
+// Disable Dynamixel#2 Torque
+write1ByteTxRx(port_num, PROTOCOL_VERSION, DXL2_ID, ADDR_PRO_TORQUE_ENABLE, TORQUE_DISABLE);
+if ((dxl_comm_result = getLastTxRxResult(port_num, PROTOCOL_VERSION)) != COMM_SUCCESS)
+{
+  printTxRxResult(PROTOCOL_VERSION, dxl_comm_result);
+}
+else if ((dxl_error = getLastRxPacketError(port_num, PROTOCOL_VERSION)) != 0)
+{
+  printRxPacketError(PROTOCOL_VERSION, dxl_error);
+}
 ```
 
 The controller frees the Dynamixels to be idle.
@@ -973,11 +973,11 @@ The controller frees the Dynamixels to be idle.
 `write1ByteTxRx()` function orders to the #`DXL1_ID` and #`DXL2_ID` Dynamixels in `PROTOCOL_VERSION` communication protocol through #`port_num` port, writing 1 byte of `TORQUE_DISABLE` value to `ADDR_PRO_TORQUE_ENABLE` address. The function checks Tx/Rx result and receives Hardware error.
 `getLastTxRxResult()` function and `getLastRxPacketError()` function get either, and then `printTxRxResult()` function and `printRxPacketError()` function show results on the console window if any communication error or Hardware error has been occurred.
 
-``` cpp
-  // Close port
-  closePort(port_num);
+```c
+// Close port
+closePort(port_num);
 
-  return 0;
+return 0;
 ```
 
 Finally, port becomes disposed.

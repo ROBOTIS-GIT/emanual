@@ -28,10 +28,7 @@ sidebar:
 
   None
 
-
-- Methods
-
-|                                                              |                                                   |
+| Methods                                                      | Description                                       |
 |:-------------------------------------------------------------|:--------------------------------------------------|
 | **[groupSyncWrite](#groupsyncwrite)**                        | Initializes members of packet data pointer struct |
 | **[groupSyncWriteAddParam](#groupsyncwrite_addparam)**       | Adds parameter storage for read                   |
@@ -53,9 +50,8 @@ sidebar:
 ``` cpp
 int groupSyncWrite(int port_num, int protocol_version, uint16_t start_address, uint16_t data_length)
 ```
-- Parameters
 
-|                  |                                             |
+| Parameters       | Description                                 |
 |:-----------------|:--------------------------------------------|
 | port_num         | Port number                                 |
 | protocol_version | Protocol version                            |
@@ -72,9 +68,8 @@ int groupSyncWrite(int port_num, int protocol_version, uint16_t start_address, u
 ``` cpp
 uint8_t groupSyncWriteAddParam(int group_num, uint8_t id, uint32_t data, uint16_t input_length)
 ```
-- Parameters
 
-|              |                   |
+| Parameters   | Description       |
 |:-------------|:------------------|
 | group_num    | Group number      |
 | id           | Dynamixel ID      |
@@ -91,12 +86,11 @@ uint8_t groupSyncWriteAddParam(int group_num, uint8_t id, uint32_t data, uint16_
 ``` cpp
 void groupSyncWriteRemoveParam(int group_num, uint8_t id)
 ```
-- Parameters
 
-|           |              |
-|:----------|:-------------|
-| group_num | Group number |
-| id        | Dynamixel ID |
+| Parameters | Description  |
+|:-----------|:-------------|
+| group_num  | Group number |
+| id         | Dynamixel ID |
 
 - Detailed Description
 
@@ -108,9 +102,8 @@ void groupSyncWriteRemoveParam(int group_num, uint8_t id)
 ``` cpp
 uint8_t groupSyncWriteChangeParam(int group_num, uint8_t id, uint32_t data, uint16_t input_length, uint16_t data_pos)
 ```
-- Parameters
 
-|              |                            |
+| Parameters   | Description                |
 |:-------------|:---------------------------|
 | group_num    | Group number               |
 | id           | Dynamixel ID               |
@@ -142,11 +135,10 @@ void groupSyncWriteClearParam(int group_num)
 ``` cpp
 void groupSyncWriteTxPacket(int group_num)
 ```
-- Parameters
 
-|           |              |
-|:----------|:-------------|
-| group_num | Group number |
+| Parameters | Description  |
+|:-----------|:-------------|
+| group_num  | Group number |
 
 - Detailed Description
 

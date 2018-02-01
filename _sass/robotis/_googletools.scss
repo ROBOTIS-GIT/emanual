@@ -27,16 +27,16 @@
 
 .google_tools {
   position: fixed;
-  background-color: white;
-  top: 53px;
-  right: -250px;
+  background-color: #e73a3e;
+  top: 6.8rem;
+  right: -250%;
   border: 1px solid mix(#fff, #000, 80%);
   border-radius: $border-radius;
   z-index: 30;
 }
 
 .extend_googletools {
-  right: 5px;
+  right: 120px;
 }
 
 .cse .gsc-search-button input.gsc-search-button-v2,

@@ -35,7 +35,7 @@ sidebar:
 
   All series using protocol 2.0
 
-- Simple code
+#### Sample code
 
 
 ``` java
@@ -247,9 +247,9 @@ public class FactoryReset
 }
 ```
 
--------------------------------------------------------------------------------------
 
-- Details
+
+#### Details
 
 ``` java
 import java.util.Scanner;

@@ -32,87 +32,86 @@ Base class for packet construction.
 
 - Methods
 
-| | |
-| ------------- | ------------- |
-| getPacketHandler	| Gets PacketHandler from either of Protocols |
-| ~PacketHandler	| None |
-| getProtocolVersion	| Gets Protocol version |
-| printTxRxResult	| Shows communication result |
-| printRxPacketError    | Shows hardware error |
-| txPacket	| Transmits the packet |
-| rxPacket	| Receives the packet |
-| txRxPacket	| Transmits and receives the packet |
-| ping	| Ping a Dynamixel |
-| broadcastPing	| Ping all connected Dynamixels |
-| action	| Commands ‘Run’ the Regwritten |
-| regWrite	| Writes the packets and wait for the ‘Action’ command |
-| reboot	| Reboots Dynamixel |
-| factoryReset	| Resets all Dynamixel settings |
-| readTx	| Transmits N byte read instruction packet |
-| readRx	| Receives N byte read status packet |
-| readTxRx	| Transmits and receives N byte packet |
-| read1ByteTx	| Transmits 1 byte read instruction packet |
-| read1ByteRx	| Receives 1 byte read status packet |
-| read1ByteTxRx	| Transmits and receives 1 byte packet |
-| read2ByteTx	| Transmits 2 byte read instruction packet |
-| read2ByteRx	| Receives 2 byte read status packet |
-| read2ByteTxRx	| Transmits and receives 2 byte packet |
-| read4ByteTx	| Transmits 4 byte read instruction packet |
-| read4ByteRx	| Receives 4 byte read status packet |
-| read4ByteTxRx	| Transmits and receives 4 byte packet |
-| writeTxOnly	| Transmits N byte write instruction packet |
-| writeTxRx	| Transmits and receives N byte packet |
-| write1ByteTxOnly	| Transmits 1 byte write instruction packet |
-| write1ByteTxRx	| Transmits and receives 1 byte packet |
-| write2ByteTxOnly	| Transmits 2 byte write instruction packet |
-| write2ByteTxRx	| Transmits and receives 2 byte packet |
-| write4ByteTxOnly	| Transmits 4 byte write instruction packet |
-| write4ByteTxRx	| Transmits and receives 4 byte packet |
-| regWriteTxOnly	| Transmits register write instruction packet |
-| regWriteTxRx	| Transmits and receives register write packet |
-| syncReadTx	| Transmits N byte sync read Instruction packet |
-| syncWriteTxOnly	| Transmits N byte sync write Instruction packet |
-| bulkReadTx	| Transmits N byte bulk read Instruction packet |
-| bulkWriteTxOnly	| Transmits N byte bulk write Instruction packet |
+| Methods            | Description                                          |
+|:-------------------|:-----------------------------------------------------|
+| getPacketHandler   | Gets PacketHandler from either of Protocols          |
+| ~PacketHandler     | None                                                 |
+| getProtocolVersion | Gets Protocol version                                |
+| printTxRxResult    | Shows communication result                           |
+| printRxPacketError | Shows hardware error                                 |
+| txPacket           | Transmits the packet                                 |
+| rxPacket           | Receives the packet                                  |
+| txRxPacket         | Transmits and receives the packet                    |
+| ping               | Ping a Dynamixel                                     |
+| broadcastPing      | Ping all connected Dynamixels                        |
+| action             | Commands ‘Run’ the Regwritten                        |
+| regWrite           | Writes the packets and wait for the ‘Action’ command |
+| reboot             | Reboots Dynamixel                                    |
+| factoryReset       | Resets all Dynamixel settings                        |
+| readTx             | Transmits N byte read instruction packet             |
+| readRx             | Receives N byte read status packet                   |
+| readTxRx           | Transmits and receives N byte packet                 |
+| read1ByteTx        | Transmits 1 byte read instruction packet             |
+| read1ByteRx        | Receives 1 byte read status packet                   |
+| read1ByteTxRx      | Transmits and receives 1 byte packet                 |
+| read2ByteTx        | Transmits 2 byte read instruction packet             |
+| read2ByteRx        | Receives 2 byte read status packet                   |
+| read2ByteTxRx      | Transmits and receives 2 byte packet                 |
+| read4ByteTx        | Transmits 4 byte read instruction packet             |
+| read4ByteRx        | Receives 4 byte read status packet                   |
+| read4ByteTxRx      | Transmits and receives 4 byte packet                 |
+| writeTxOnly        | Transmits N byte write instruction packet            |
+| writeTxRx          | Transmits and receives N byte packet                 |
+| write1ByteTxOnly   | Transmits 1 byte write instruction packet            |
+| write1ByteTxRx     | Transmits and receives 1 byte packet                 |
+| write2ByteTxOnly   | Transmits 2 byte write instruction packet            |
+| write2ByteTxRx     | Transmits and receives 2 byte packet                 |
+| write4ByteTxOnly   | Transmits 4 byte write instruction packet            |
+| write4ByteTxRx     | Transmits and receives 4 byte packet                 |
+| regWriteTxOnly     | Transmits register write instruction packet          |
+| regWriteTxRx       | Transmits and receives register write packet         |
+| syncReadTx         | Transmits N byte sync read Instruction packet        |
+| syncWriteTxOnly    | Transmits N byte sync write Instruction packet       |
+| bulkReadTx         | Transmits N byte bulk read Instruction packet        |
+| bulkWriteTxOnly    | Transmits N byte bulk write Instruction packet       |
 
 
 - Enumerator
 
-| | |
-| ------------- | ------------- |
-| DXL_MAKEWORD(a, b)	| Makes value from a and b to word type |
-| DXL_MAKEDWORD(a, b)	| Makes value from a and b to dword type |
-| DXL_LOWORD(l)	| Gets lower word type value from l |
-| DXL_HIWORD(l)	| Gets higher word type value from l |
-| DXL_LOBYTE(w)	| Gets lower byte type value from w |
-| DXL_HIBYTE(w)	| Gets higher byte type value from w |
-| BROADCAST_ID  | := 0xFE	Broadcast ID |
-| MAX_ID  | := 0xFC	Maximum ID value |
-| INST_PING  | := 1	Instruction value of Ping |
-| INST_READ  | := 2	Instruction value of Read |
-| INST_WRITE  | := 3	Instruction value of Write |
-| INST_REG_WRITE  | := 4	Instruction value of Register Write |
-| INST_ACTION  | := 5	Instruction value of Action |
-| INST_FACTORY_RESET  | := 6	Instruction value of Factory Reset |
-| INST_SYNC_WRITE  | := 131	Instruction value of Sync Write |
-| INST_BULK_READ  | := 146	Instruction value of Bulk Read |
-| INST_REBOOT  | := 8	Instruction value of Reboot |
-| INST_STATUS  | := 85	Instruction value of Status |
-| INST_SYNC_READ  | := 130	Instruction value of Sync Read |
-| INST_BULK_WRITE  | := 147		Instruction value of Bulk Write |
-| COMM_SUCCESS  | := 0	Status of Communication Success |
-| COMM_PORT_BUSY  | := -1000	Status of Port in use |
-| COMM_TX_FAIL  | := -1001	Status of Transmit packet failed |
-| COMM_RX_FAIL  | := -1002	Status of Receive packet failed |
-| COMM_TX_ERROR  | := -2000	Status of Transmit packet error |
-| COMM_RX_WAITING  | := -3000	Status of Receive packet waiting |
-| COMM_RX_TIMEOUT  | := -3001	Status of Receive packet timeout |
-| COMM_RX_CORRUPT  | := -3002	Status of Receive packet corrupt |
+| Enumerator          | Description                                   |
+|:--------------------|:----------------------------------------------|
+| DXL_MAKEWORD(a, b)  | Makes value from a and b to word type         |
+| DXL_MAKEDWORD(a, b) | Makes value from a and b to dword type        |
+| DXL_LOWORD(l)       | Gets lower word type value from l             |
+| DXL_HIWORD(l)       | Gets higher word type value from l            |
+| DXL_LOBYTE(w)       | Gets lower byte type value from w             |
+| DXL_HIBYTE(w)       | Gets higher byte type value from w            |
+| BROADCAST_ID        | := 0xFE	Broadcast ID                           |
+| MAX_ID              | := 0xFC	Maximum ID value                       |
+| INST_PING           | := 1	Instruction value of Ping                 |
+| INST_READ           | := 2	Instruction value of Read                 |
+| INST_WRITE          | := 3	Instruction value of Write                |
+| INST_REG_WRITE      | := 4	Instruction value of Register Write       |
+| INST_ACTION         | := 5	Instruction value of Action               |
+| INST_FACTORY_RESET  | := 6	Instruction value of Factory Reset        |
+| INST_SYNC_WRITE     | := 131	Instruction value of Sync Write         |
+| INST_BULK_READ      | := 146	Instruction value of Bulk Read          |
+| INST_REBOOT         | := 8	Instruction value of Reboot               |
+| INST_STATUS         | := 85	Instruction value of Status              |
+| INST_SYNC_READ      | := 130	Instruction value of Sync Read          |
+| INST_BULK_WRITE     | := 147		Instruction value of Bulk Write         |
+| COMM_SUCCESS        | := 0	Status of Communication Success           |
+| COMM_PORT_BUSY      | := -1000	Status of Port in use                 |
+| COMM_TX_FAIL        | := -1001	Status of Transmit packet failed      |
+| COMM_RX_FAIL        | := -1002	Status of Receive packet failed       |
+| COMM_TX_ERROR       | := -2000	Status of Transmit packet error       |
+| COMM_RX_WAITING     | := -3000	Status of Receive packet waiting      |
+| COMM_RX_TIMEOUT     | := -3001	Status of Receive packet timeout      |
+| COMM_RX_CORRUPT     | := -3002	Status of Receive packet corrupt      |
 | COMM_NOT_AVAILABLE  | := -9000	Status of Unavailable in protocol 1.0 |
 
 
 #### Method References
-----------------------------------------------
 
 [Protocol1 Packet Handler](/docs/en/software/dynamixel/dynamixel_sdk/api_reference/cpp/cpp_protocol1packethandler)
 
@@ -131,48 +130,48 @@ Base class for packet construction.
 
 - Methods
 
-| | |
-| ------------- | ------------- |
-| getInstance	| Gets instance of this class |
-| ~Protocol1PacketHandler	| None |
-| **[getProtocolVersion](#getprotocolversion)**	| Gets Protocol version |
-| **[printTxRxResult](#printtxrxresult)**	| Shows communication result |
-| **[printRxPacketError](#printrxpacketerror)**	| Shows hardware error |
-| **[txPacket](#txpacket)**	| Transmits the packet |
-| **[rxPacket](#rxpacket)**	| Receives the packet |
-| **[txRxPacket](#txrxpacket)**	| Transmits and receives the packet |
-| **[ping](#ping)**	| Ping a Dynamixel |
-| **[broadcastPing](#broadcastping)**	| Not available in Protocol 1.0 |
-| **[action](#action)**	| Commands ‘Run’ the Regwritten |
-| **[regWrite](#regwrite)**	| Writes the packets and wait for the ‘Action’ command |
-| **[reboot](#reboot)**	| Not available in Protocol 1.0 |
-| **[factoryReset](#factoryreset)**	| Resets all Dynamixel settings |
-| **[readTx](#readtx)**	| Transmits N byte read instruction packet |
-| **[readRx](#readrx)**	| Receives N byte read status packet |
-| **[readTxRx](#readtxrx)**	| Transmits and receives N byte packet |
-| **[read1ByteTx](#read1bytetx)**	| Transmits 1 byte read instruction packet |
-| **[read1ByteRx](#read1byterx)**	| Receives 1 byte read status packet |
-| **[read1ByteTxRx](#read1bytetxrx)**	| Transmits and receives 1 byte packet |
-| **[read2ByteTx](#read2bytetx)**	| Transmits 2 byte read instruction packet |
-| **[read2ByteRx](#read2byterx)**	| Receives 2 byte read status packet |
-| **[read2ByteTxRx](#read2bytetxrx)**	| Transmits and receives 2 byte packet |
-| **[read4ByteTx](#read4bytetx)**	| Not available in Protocol 1.0 |
-| **[read4ByteRx](#read4byterx)**	| Not available in Protocol 1.0 |
-| **[read4ByteTxRx](#read4bytetxrx)**	| Not available in Protocol 1.0 |
-| **[writeTxOnly](#writetxonly)**	| Transmits N byte write instruction packet |
-| **[writeTxRx](#writetxrx)**	| Transmits and receives N byte packet |
-| **[write1ByteTxOnly](#write1bytetxonly)**	| Transmits 1 byte write instruction packet |
-| **[write1ByteTxRx](#write1bytetxrx)**	| Transmits and receives 1 byte packet |
-| **[write2ByteTxOnly](#write2bytetxonly)**	| Transmits 2 byte write instruction packet |
-| **[write2ByteTxRx](#write2bytetxrx)**	| Transmits and receives 2 byte packet |
-| **[write4ByteTxOnly](#write4bytetxonly)**	| Not available in Protocol 1.0 |
-| **[write4ByteTxRx](#write4bytetxrx)**	| Not available in Protocol 1.0 |
-| **[regWriteTxOnly](#regwritetxonly)**	| Transmits register write instruction packet |
-| **[regWriteTxRx](#regwritetxrx)**	| Transmits and receives register write packet |
-| **[syncReadTx](#syncreadtx)**	| Not available in Protocol 1.0 |
-| **[syncWriteTxOnly](#syncwritetxonly)**	| Transmits N byte sync write Instruction packet |
-| **[bulkReadTx](#bulkreadtx)**	| Transmits N byte bulk read Instruction packet |
-| **[bulkWriteTxOnly](#bulkwritetxonly)**	| Not available in Protocol 1.0 |
+| Methods                                       | Description                                          |
+|:----------------------------------------------|:-----------------------------------------------------|
+| getInstance                                   | Gets instance of this class                          |
+| ~Protocol1PacketHandler                       | None                                                 |
+| **[getProtocolVersion](#getprotocolversion)** | Gets Protocol version                                |
+| **[printTxRxResult](#printtxrxresult)**       | Shows communication result                           |
+| **[printRxPacketError](#printrxpacketerror)** | Shows hardware error                                 |
+| **[txPacket](#txpacket)**                     | Transmits the packet                                 |
+| **[rxPacket](#rxpacket)**                     | Receives the packet                                  |
+| **[txRxPacket](#txrxpacket)**                 | Transmits and receives the packet                    |
+| **[ping](#ping)**                             | Ping a Dynamixel                                     |
+| **[broadcastPing](#broadcastping)**           | Not available in Protocol 1.0                        |
+| **[action](#action)**                         | Commands ‘Run’ the Regwritten                        |
+| **[regWrite](#regwrite)**                     | Writes the packets and wait for the ‘Action’ command |
+| **[reboot](#reboot)**                         | Not available in Protocol 1.0                        |
+| **[factoryReset](#factoryreset)**             | Resets all Dynamixel settings                        |
+| **[readTx](#readtx)**                         | Transmits N byte read instruction packet             |
+| **[readRx](#readrx)**                         | Receives N byte read status packet                   |
+| **[readTxRx](#readtxrx)**                     | Transmits and receives N byte packet                 |
+| **[read1ByteTx](#read1bytetx)**               | Transmits 1 byte read instruction packet             |
+| **[read1ByteRx](#read1byterx)**               | Receives 1 byte read status packet                   |
+| **[read1ByteTxRx](#read1bytetxrx)**           | Transmits and receives 1 byte packet                 |
+| **[read2ByteTx](#read2bytetx)**               | Transmits 2 byte read instruction packet             |
+| **[read2ByteRx](#read2byterx)**               | Receives 2 byte read status packet                   |
+| **[read2ByteTxRx](#read2bytetxrx)**           | Transmits and receives 2 byte packet                 |
+| **[read4ByteTx](#read4bytetx)**               | Not available in Protocol 1.0                        |
+| **[read4ByteRx](#read4byterx)**               | Not available in Protocol 1.0                        |
+| **[read4ByteTxRx](#read4bytetxrx)**           | Not available in Protocol 1.0                        |
+| **[writeTxOnly](#writetxonly)**               | Transmits N byte write instruction packet            |
+| **[writeTxRx](#writetxrx)**                   | Transmits and receives N byte packet                 |
+| **[write1ByteTxOnly](#write1bytetxonly)**     | Transmits 1 byte write instruction packet            |
+| **[write1ByteTxRx](#write1bytetxrx)**         | Transmits and receives 1 byte packet                 |
+| **[write2ByteTxOnly](#write2bytetxonly)**     | Transmits 2 byte write instruction packet            |
+| **[write2ByteTxRx](#write2bytetxrx)**         | Transmits and receives 2 byte packet                 |
+| **[write4ByteTxOnly](#write4bytetxonly)**     | Not available in Protocol 1.0                        |
+| **[write4ByteTxRx](#write4bytetxrx)**         | Not available in Protocol 1.0                        |
+| **[regWriteTxOnly](#regwritetxonly)**         | Transmits register write instruction packet          |
+| **[regWriteTxRx](#regwritetxrx)**             | Transmits and receives register write packet         |
+| **[syncReadTx](#syncreadtx)**                 | Not available in Protocol 1.0                        |
+| **[syncWriteTxOnly](#syncwritetxonly)**       | Transmits N byte sync write Instruction packet       |
+| **[bulkReadTx](#bulkreadtx)**                 | Transmits N byte bulk read Instruction packet        |
+| **[bulkWriteTxOnly](#bulkwritetxonly)**       | Not available in Protocol 1.0                        |
 
 
 - Enumerator
@@ -180,7 +179,6 @@ Base class for packet construction.
   None
 
 #### Method References
-----------------------------------------------
 
 ##### getProtocolVersion
 - Syntax
@@ -203,9 +201,9 @@ void printTxRxResult(int result)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|result |Communication result |
+| Parameters | Description          |
+|:-----------|:---------------------|
+| result     | Communication result |
 
 - Detailed Description
 
@@ -219,9 +217,9 @@ void printRxPacketError(uint8_t error)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|error| Hardware error |
+| Parameters | Description    |
+|:-----------|:---------------|
+| error      | Hardware error |
 
 - Detailed Description
 
@@ -236,10 +234,10 @@ void printRxPacketError(uint8_t error)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|txpacket	|packet for transmission|
+| Parameters | Description             |
+|:-----------|:------------------------|
+| port       | PortHandler instance    |
+| txpacket   | packet for transmission |
 
 - Detailed Description
 
@@ -253,10 +251,10 @@ int rxPacket(PortHandler *port, UINT8_T *rxpacket)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|rxpacket	|packet for reception|
+| Parameters | Description          |
+|:-----------|:---------------------|
+| port       | PortHandler instance |
+| rxpacket   | packet for reception |
 
 - Detailed Description
 
@@ -270,12 +268,12 @@ int txRxPacket(PortHandler *port, UINT8_T *txpacket, UINT8_T *rxpacket, UINT8_T 
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|txpacket	|packet for transmission|
-|rxpacket	|packet for reception|
-|error	|Dynamixel error|
+| Parameters | Description             |
+|:-----------|:------------------------|
+| port       | PortHandler instance    |
+| txpacket   | packet for transmission |
+| rxpacket   | packet for reception    |
+| error      | Dynamixel error         |
 
 - Detailed Description
 
@@ -290,11 +288,11 @@ int ping (PortHandler *port, UINT8_T id, UINT16_T *model_number, UINT8_T *error 
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|id	|Dynamixel ID|
-|error	|Dynamixel error|
+| Parameters | Description          |
+|:-----------|:---------------------|
+| port       | PortHandler instance |
+| id         | Dynamixel ID         |
+| error      | Dynamixel error      |
 
 - Detailed Description
 
@@ -308,10 +306,10 @@ int broadcastPing(PortHandler *port, std::vector<UINT8_T> &id_list)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|id_list	|Dynamixel ID list|
+| Parameters | Description          |
+|:-----------|:---------------------|
+| port       | PortHandler instance |
+| id_list    | Dynamixel ID list    |
 
 - Detailed Description
 
@@ -325,10 +323,10 @@ int action(PortHandler *port, UINT8_T id)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|id	|Dynamixel ID|
+| Parameters | Description          |
+|:-----------|:---------------------|
+| port       | PortHandler instance |
+| id         | Dynamixel ID         |
 
 
 - Detailed Description
@@ -343,11 +341,11 @@ int reboot(PortHandler *port, UINT8_T id, UINT8_T *error)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|id	|Dynamixel ID|
-|error	|Dynamixel error|
+| Parameters | Description          |
+|:-----------|:---------------------|
+| port       | PortHandler instance |
+| id         | Dynamixel ID         |
+| error      | Dynamixel error      |
 
 
 - Detailed Description
@@ -362,12 +360,12 @@ int factoryReset(PortHandler *port, UINT8_T id, UINT8_T option, UINT8_T *error)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|id	|Dynamixel ID|
-|option |Reset option|
-|error	|Dynamixel error|
+| Parameters | Description          |
+|:-----------|:---------------------|
+| port       | PortHandler instance |
+| id         | Dynamixel ID         |
+| option     | Reset option         |
+| error      | Dynamixel error      |
 
 - Detailed Description
 
@@ -381,12 +379,12 @@ int readTx(PortHandler *port, UINT8_T id, UINT16_T address, UINT16_T length)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|id	|Dynamixel ID|
-|address	|Address on the control table of Dynamixel|
-|length	|Packet length|
+| Parameters | Description                               |
+|:-----------|:------------------------------------------|
+| port       | PortHandler instance                      |
+| id         | Dynamixel ID                              |
+| address    | Address on the control table of Dynamixel |
+| length     | Packet length                             |
 
 - Detailed Description
 
@@ -400,12 +398,12 @@ int readRx(PortHandler *port, UINT16_T length, UINT8_T *data, UINT8_T *error)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|length	|Packet length|
-|data	|Packet data|
-|error	|Dynamixel error|
+| Parameters | Description          |
+|:-----------|:---------------------|
+| port       | PortHandler instance |
+| length     | Packet length        |
+| data       | Packet data          |
+| error      | Dynamixel error      |
 
 
 - Detailed Description
@@ -420,14 +418,14 @@ int readRx(PortHandler *port, UINT16_T length, UINT8_T *data, UINT8_T *error)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|id	|Dynamixel ID|
-|address	|Address on the control table of Dynamixel|
-|length	|Packet length|
-|data	|Packet data|
-|error	|Dynamixel error|
+| Parameters | Description                               |
+|:-----------|:------------------------------------------|
+| port       | PortHandler instance                      |
+| id         | Dynamixel ID                              |
+| address    | Address on the control table of Dynamixel |
+| length     | Packet length                             |
+| data       | Packet data                               |
+| error      | Dynamixel error                           |
 
 
 - Detailed Description
@@ -442,11 +440,11 @@ int read1ByteTx(PortHandler *port, UINT8_T id, UINT16_T address)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|id	|Dynamixel ID|
-|address	|Address on the control table of Dynamixel|
+| Parameters | Description                               |
+|:-----------|:------------------------------------------|
+| port       | PortHandler instance                      |
+| id         | Dynamixel ID                              |
+| address    | Address on the control table of Dynamixel |
 
 
 - Detailed Description
@@ -461,11 +459,11 @@ int read1ByteRx(PortHandler *port, UINT8_T *data, UINT8_T *error)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|data	|Packet data|
-|error	|Dynamixel error|
+| Parameters | Description          |
+|:-----------|:---------------------|
+| port       | PortHandler instance |
+| data       | Packet data          |
+| error      | Dynamixel error      |
 
 - Detailed Description
 
@@ -479,13 +477,13 @@ int read1ByteRx(PortHandler *port, UINT8_T *data, UINT8_T *error)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|id	|Dynamixel ID|
-|address	|Address on the control table of Dynamixel|
-|data	|Packet data|
-|error	|Dynamixel error|
+| Parameters | Description                               |
+|:-----------|:------------------------------------------|
+| port       | PortHandler instance                      |
+| id         | Dynamixel ID                              |
+| address    | Address on the control table of Dynamixel |
+| data       | Packet data                               |
+| error      | Dynamixel error                           |
 
 
 - Detailed Description
@@ -500,11 +498,11 @@ int read2ByteTx(PortHandler *port, UINT8_T id, UINT16_T address)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|id	|Dynamixel ID|
-|address	|Address on the control table of Dynamixel|
+| Parameters | Description                               |
+|:-----------|:------------------------------------------|
+| port       | PortHandler instance                      |
+| id         | Dynamixel ID                              |
+| address    | Address on the control table of Dynamixel |
 
 
 - Detailed Description
@@ -519,11 +517,11 @@ int read2ByteTx(PortHandler *port, UINT8_T id, UINT16_T address)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|data	|Packet data|
-|error	|Dynamixel error|
+| Parameters | Description          |
+|:-----------|:---------------------|
+| port       | PortHandler instance |
+| data       | Packet data          |
+| error      | Dynamixel error      |
 
 
 - Detailed Description
@@ -538,13 +536,13 @@ int read2ByteTx(PortHandler *port, UINT8_T id, UINT16_T address)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|id	|Dynamixel ID|
-|address	|Address on the control table of Dynamixel|
-|data	|Packet data|
-|error	|Dynamixel error|
+| Parameters | Description                               |
+|:-----------|:------------------------------------------|
+| port       | PortHandler instance                      |
+| id         | Dynamixel ID                              |
+| address    | Address on the control table of Dynamixel |
+| data       | Packet data                               |
+| error      | Dynamixel error                           |
 
 
 - Detailed Description
@@ -559,11 +557,11 @@ int read4ByteTx(PortHandler *port, UINT8_T id, UINT16_T address)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|id	|Dynamixel ID|
-|address	|Address on the control table of Dynamixel|
+| Parameters | Description                               |
+|:-----------|:------------------------------------------|
+| port       | PortHandler instance                      |
+| id         | Dynamixel ID                              |
+| address    | Address on the control table of Dynamixel |
 
 
 - Detailed Description
@@ -578,11 +576,11 @@ int read4ByteRx(PortHandler *port, UINT32_T *data, UINT8_T *error)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|data	|Packet data|
-|error	|Dynamixel error|
+| Parameters | Description          |
+|:-----------|:---------------------|
+| port       | PortHandler instance |
+| data       | Packet data          |
+| error      | Dynamixel error      |
 
 - Detailed Description
 
@@ -596,13 +594,13 @@ int read4ByteTxRx(PortHandler *port, UIN8_T id, UINT16_T address, UINT32_T *data
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|id	|Dynamixel ID|
-|address	|Address on the control table of Dynamixel|
-|data	|Data for write|
-|error	|Dynamixel error|
+| Parameters | Description                               |
+|:-----------|:------------------------------------------|
+| port       | PortHandler instance                      |
+| id         | Dynamixel ID                              |
+| address    | Address on the control table of Dynamixel |
+| data       | Data for write                            |
+| error      | Dynamixel error                           |
 
 
 - Detailed Description
@@ -617,13 +615,13 @@ int writeTxOnly(PortHandler *port, UINT8_T id, UINT16_T address, UINT16_T length
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|id	|Dynamixel ID|
-|address	|Address on the control table of Dynamixel|
-|length	|Packet length|
-|data	|Data for write|
+| Parameters | Description                               |
+|:-----------|:------------------------------------------|
+| port       | PortHandler instance                      |
+| id         | Dynamixel ID                              |
+| address    | Address on the control table of Dynamixel |
+| length     | Packet length                             |
+| data       | Data for write                            |
 
 
 - Detailed Description
@@ -638,14 +636,14 @@ int writeTxRx(PortHandler *port, UINT8_T id, UINT16_T address, UINT16_T length, 
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|id	|Dynamixel ID|
-|address	|Address on the control table of Dynamixel|
-|length	|Packet length|
-|data	|Data for write|
-|error	|Dynamixel error|
+| Parameters | Description                               |
+|:-----------|:------------------------------------------|
+| port       | PortHandler instance                      |
+| id         | Dynamixel ID                              |
+| address    | Address on the control table of Dynamixel |
+| length     | Packet length                             |
+| data       | Data for write                            |
+| error      | Dynamixel error                           |
 
 
 - Detailed Description
@@ -660,12 +658,12 @@ int write1ByteTxOnly(PortHandler *port, UINT8_T id, UINT16_T address, UINT8_T da
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|id	|Dynamixel ID|
-|address	|Address on the control table of Dynamixel|
-|data	|Data for write|
+| Parameters | Description                               |
+|:-----------|:------------------------------------------|
+| port       | PortHandler instance                      |
+| id         | Dynamixel ID                              |
+| address    | Address on the control table of Dynamixel |
+| data       | Data for write                            |
 
 
 - Detailed Description
@@ -680,13 +678,13 @@ int write1ByteTxRx(PortHandler *port, UINT8_T id, UINT16_T address, UINT8_T data
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|id	|Dynamixel ID|
-|address	|Address on the control table of Dynamixel|
-|data	|Data for write|
-|error	|Dynamixel error|
+| Parameters | Description                               |
+|:-----------|:------------------------------------------|
+| port       | PortHandler instance                      |
+| id         | Dynamixel ID                              |
+| address    | Address on the control table of Dynamixel |
+| data       | Data for write                            |
+| error      | Dynamixel error                           |
 
 
 - Detailed Description
@@ -701,12 +699,12 @@ int write2ByteTxOnly(PortHandler *port, UINT8_T id, UINT16_T address, UINT16_T d
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|id	|Dynamixel ID|
-|address	|Address on the control table of Dynamixel|
-|data	|Data for write|
+| Parameters | Description                               |
+|:-----------|:------------------------------------------|
+| port       | PortHandler instance                      |
+| id         | Dynamixel ID                              |
+| address    | Address on the control table of Dynamixel |
+| data       | Data for write                            |
 
 
 - Detailed Description
@@ -721,13 +719,13 @@ int write2ByteTxOnly(PortHandler *port, UINT8_T id, UINT16_T address, UINT16_T d
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|id	|Dynamixel ID|
-|address	|Address on the control table of Dynamixel|
-|data	|Data for write|
-|error	|Dynamixel error|
+| Parameters | Description                               |
+|:-----------|:------------------------------------------|
+| port       | PortHandler instance                      |
+| id         | Dynamixel ID                              |
+| address    | Address on the control table of Dynamixel |
+| data       | Data for write                            |
+| error      | Dynamixel error                           |
 
 
 - Detailed Description
@@ -742,12 +740,12 @@ int write1ByteTxOnly(PortHandler *port, UINT8_T id, UINT16_T address, UINT32_T d
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|id	|Dynamixel ID|
-|address|	Address on the control table of Dynamixel|
-|data	|Data for write|
+| Parameters | Description                               |
+|:-----------|:------------------------------------------|
+| port       | PortHandler instance                      |
+| id         | Dynamixel ID                              |
+| address    | Address on the control table of Dynamixel |
+| data       | Data for write                            |
 
 
 - Detailed Description
@@ -762,13 +760,13 @@ int write4ByteTxRx(PortHandler *port, UINT8_T id, UINT16_T address, UINT32_T dat
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|id	|Dynamixel ID|
-|address	|Address on the control table of Dynamixel|
-|data	|Data for write|
-|error	|Dynamixel error|
+| Parameters | Description                               |
+|:-----------|:------------------------------------------|
+| port       | PortHandler instance                      |
+| id         | Dynamixel ID                              |
+| address    | Address on the control table of Dynamixel |
+| data       | Data for write                            |
+| error      | Dynamixel error                           |
 
 
 - Detailed Description
@@ -783,13 +781,13 @@ int write4ByteTxRx(PortHandler *port, UINT8_T id, UINT16_T address, UINT32_T dat
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|id	|Dynamixel ID|
-|address	|Address on the control table of Dynamixel|
-|length	|Packet length|
-|data	|Data for write|
+| Parameters | Description                               |
+|:-----------|:------------------------------------------|
+| port       | PortHandler instance                      |
+| id         | Dynamixel ID                              |
+| address    | Address on the control table of Dynamixel |
+| length     | Packet length                             |
+| data       | Data for write                            |
 
 
 - Detailed Description
@@ -805,14 +803,14 @@ int write4ByteTxRx(PortHandler *port, UINT8_T id, UINT16_T address, UINT32_T dat
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|id	|Dynamixel ID|
-|address	|Address on the control table of Dynamixel|
-|length	|Packet length|
-|data	|Data for write|
-|error	|Dynamixel error|
+| Parameters | Description                               |
+|:-----------|:------------------------------------------|
+| port       | PortHandler instance                      |
+| id         | Dynamixel ID                              |
+| address    | Address on the control table of Dynamixel |
+| length     | Packet length                             |
+| data       | Data for write                            |
+| error      | Dynamixel error                           |
 
 
 - Detailed Description
@@ -827,13 +825,13 @@ int syndReadTx(PortHandler *port, UINT16_T address, UINT16_T data_length, UINT8_
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|address	|Address on the control table of Dynamixel|
-|data_length	|Data length|
-|param	|Parameters|
-|param_length	|Parameter length|
+| Parameters   | Description                               |
+|:-------------|:------------------------------------------|
+| port         | PortHandler instance                      |
+| address      | Address on the control table of Dynamixel |
+| data_length  | Data length                               |
+| param        | Parameters                                |
+| param_length | Parameter length                          |
 
 
 - Detailed Description
@@ -848,14 +846,14 @@ int syndReadTx(PortHandler *port, UINT16_T address, UINT16_T data_length, UINT8_
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|id	|Dynamixel ID|
-|address	|Address on the control table of Dynamixel|
-|data_length	|Data length|
-|data	|Data for write|
-|param_length	|Parameter length|
+| Parameters   | Description                               |
+|:-------------|:------------------------------------------|
+| port         | PortHandler instance                      |
+| id           | Dynamixel ID                              |
+| address      | Address on the control table of Dynamixel |
+| data_length  | Data length                               |
+| data         | Data for write                            |
+| param_length | Parameter length                          |
 
 
 - Detailed Description
@@ -870,11 +868,11 @@ int syndReadTx(PortHandler *port, UINT16_T address, UINT16_T data_length, UINT8_
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|param	|Parameters|
-|param_length	|Parameter length|
+| Parameters   | Description          |
+|:-------------|:---------------------|
+| port         | PortHandler instance |
+| param        | Parameters           |
+| param_length | Parameter length     |
 
 - Detailed Description
 
@@ -888,11 +886,11 @@ int syndReadTx(PortHandler *port, UINT16_T address, UINT16_T data_length, UINT8_
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|param	|Parameters|
-|param_length	|Parameter length|
+| Parameters   | Description          |
+|:-------------|:---------------------|
+| port         | PortHandler instance |
+| param        | Parameters           |
+| param_length | Parameter length     |
 
 - Detailed Description
 
@@ -911,48 +909,48 @@ int syndReadTx(PortHandler *port, UINT16_T address, UINT16_T data_length, UINT8_
 
 - Methods
 
-| | |
-| ------------- | ------------- |
-| getInstance	| Gets instance of this class |
-| ~Protocol2PacketHandler	| None |
-| **[getProtocolVersion](#getprotocolversion)**	| Gets Protocol version |
-| **[printTxRxResult](#printtxrxresult)**	| Shows communication result |
-| **[printRxPacketError](#printrxpacketerror)**	| Shows hardware error |
-| **[txPacket](#txpacket)**	| Transmits the packet |
-| **[rxPacket](#rxpacket)**	| Receives the packet |
-| **[txRxPacket](#txrxpacket)**	| Transmits and receives the packet |
-| **[ping](#ping)**	| Ping a Dynamixel |
-| **[broadcastPing](#broadcastping)**	| Ping all connected Dynamixels |
-| **[action](#action)**	| Commands ‘Run’ the Regwritten |
-| **[regWrite](#regwrite)**	| Writes the packets and wait for the ‘Action’ command |
-| **[reboot](#reboot)**	| Reboots Dynamixel |
-| **[factoryReset](#factoryreset)**	| Resets all Dynamixel settings |
-| **[readTx](#readtx)**	| Transmits N byte read instruction packet |
-| **[readRx](#readrx)**	| Receives N byte read status packet |
-| **[readTxRx](#readtxrx)**	| Transmits and receives N byte packet |
-| **[read1ByteTx](#read1bytetx)**	| Transmits 1 byte read instruction packet |
-| **[read1ByteRx](#read1byterx)**	| Receives 1 byte read status packet |
-| **[read1ByteTxRx](#read1bytetxrx)**	| Transmits and receives 1 byte packet |
-| **[read2ByteTx](#read2bytetx)**	| Transmits 2 byte read instruction packet |
-| **[read2ByteRx](#read2byterx)**	| Receives 2 byte read status packet |
-| **[read2ByteTxRx](#read2bytetxrx)**	| Transmits and receives 2 byte packet |
-| **[read4ByteTx](#read4bytetx)**	| Transmits 4 byte read instruction packet |
-| **[read4ByteRx](#read4byterx)**	| Receives 4 byte read status packet |
-| **[read4ByteTxRx](#read4bytetxrx)**	| Transmits and receives 4 byte packet |
-| **[writeTxOnly](#writetxonly)**	| Transmits N byte write instruction packet |
-| **[writeTxRx](#writetxrx)**	| Transmits and receives N byte packet |
-| **[write1ByteTxOnly](#write1bytetxonly)**	| Transmits 1 byte write instruction packet |
-| **[write1ByteTxRx](#write1bytetxrx)**	| Transmits and receives 1 byte packet |
-| **[write2ByteTxOnly](#write2bytetxonly)**	| Transmits 2 byte write instruction packet |
-| **[write2ByteTxRx](#write2bytetxrx)**	| Transmits and receives 2 byte packet |
-| **[write4ByteTxOnly](#write4bytetxonly)**	| Transmits 4 byte write instruction packet |
-| **[write4ByteTxRx](#write4bytetxrx)**	| Transmits and receives 4 byte packet |
-| **[regWriteTxOnly](#regwritetxonly)**	| Transmits register write instruction packet |
-| **[regWriteTxRx](#regwritetxrx)**	| Transmits and receives register write packet |
-| **[syncReadTx](#syncreadtx)**	| Transmits N byte sync read Instruction packet |
-| **[syncWriteTxOnly](#syncwritetxonly)**	| Transmits N byte sync write Instruction packet |
-| **[bulkReadTx](#bulkreadtx)**	| Transmits N byte bulk read Instruction packet |
-| **[bulkWriteTxOnly](#bulkwritetxonly)**	| Transmits N byte bulk write Instruction packet |
+| Methods                                       | Description                                          |
+|:----------------------------------------------|:-----------------------------------------------------|
+| getInstance                                   | Gets instance of this class                          |
+| ~Protocol2PacketHandler                       | None                                                 |
+| **[getProtocolVersion](#getprotocolversion)** | Gets Protocol version                                |
+| **[printTxRxResult](#printtxrxresult)**       | Shows communication result                           |
+| **[printRxPacketError](#printrxpacketerror)** | Shows hardware error                                 |
+| **[txPacket](#txpacket)**                     | Transmits the packet                                 |
+| **[rxPacket](#rxpacket)**                     | Receives the packet                                  |
+| **[txRxPacket](#txrxpacket)**                 | Transmits and receives the packet                    |
+| **[ping](#ping)**                             | Ping a Dynamixel                                     |
+| **[broadcastPing](#broadcastping)**           | Ping all connected Dynamixels                        |
+| **[action](#action)**                         | Commands ‘Run’ the Regwritten                        |
+| **[regWrite](#regwrite)**                     | Writes the packets and wait for the ‘Action’ command |
+| **[reboot](#reboot)**                         | Reboots Dynamixel                                    |
+| **[factoryReset](#factoryreset)**             | Resets all Dynamixel settings                        |
+| **[readTx](#readtx)**                         | Transmits N byte read instruction packet             |
+| **[readRx](#readrx)**                         | Receives N byte read status packet                   |
+| **[readTxRx](#readtxrx)**                     | Transmits and receives N byte packet                 |
+| **[read1ByteTx](#read1bytetx)**               | Transmits 1 byte read instruction packet             |
+| **[read1ByteRx](#read1byterx)**               | Receives 1 byte read status packet                   |
+| **[read1ByteTxRx](#read1bytetxrx)**           | Transmits and receives 1 byte packet                 |
+| **[read2ByteTx](#read2bytetx)**               | Transmits 2 byte read instruction packet             |
+| **[read2ByteRx](#read2byterx)**               | Receives 2 byte read status packet                   |
+| **[read2ByteTxRx](#read2bytetxrx)**           | Transmits and receives 2 byte packet                 |
+| **[read4ByteTx](#read4bytetx)**               | Transmits 4 byte read instruction packet             |
+| **[read4ByteRx](#read4byterx)**               | Receives 4 byte read status packet                   |
+| **[read4ByteTxRx](#read4bytetxrx)**           | Transmits and receives 4 byte packet                 |
+| **[writeTxOnly](#writetxonly)**               | Transmits N byte write instruction packet            |
+| **[writeTxRx](#writetxrx)**                   | Transmits and receives N byte packet                 |
+| **[write1ByteTxOnly](#write1bytetxonly)**     | Transmits 1 byte write instruction packet            |
+| **[write1ByteTxRx](#write1bytetxrx)**         | Transmits and receives 1 byte packet                 |
+| **[write2ByteTxOnly](#write2bytetxonly)**     | Transmits 2 byte write instruction packet            |
+| **[write2ByteTxRx](#write2bytetxrx)**         | Transmits and receives 2 byte packet                 |
+| **[write4ByteTxOnly](#write4bytetxonly)**     | Transmits 4 byte write instruction packet            |
+| **[write4ByteTxRx](#write4bytetxrx)**         | Transmits and receives 4 byte packet                 |
+| **[regWriteTxOnly](#regwritetxonly)**         | Transmits register write instruction packet          |
+| **[regWriteTxRx](#regwritetxrx)**             | Transmits and receives register write packet         |
+| **[syncReadTx](#syncreadtx)**                 | Transmits N byte sync read Instruction packet        |
+| **[syncWriteTxOnly](#syncwritetxonly)**       | Transmits N byte sync write Instruction packet       |
+| **[bulkReadTx](#bulkreadtx)**                 | Transmits N byte bulk read Instruction packet        |
+| **[bulkWriteTxOnly](#bulkwritetxonly)**       | Transmits N byte bulk write Instruction packet       |
 
 
 - Enumerator
@@ -960,7 +958,6 @@ int syndReadTx(PortHandler *port, UINT16_T address, UINT16_T data_length, UINT8_
  None
 
 #### Method References
-----------------------------------------------
 
 ##### getProtocolVersion
 - Syntax
@@ -984,9 +981,9 @@ void printTxRxResult(int result)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|result |Communication result |
+| Parameters | Description          |
+|:-----------|:---------------------|
+| result     | Communication result |
 
 - Detailed Description
 
@@ -1000,9 +997,9 @@ void printRxPacketError(uint8_t error)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|error| Hardware error |
+| Parameters | Description    |
+|:-----------|:---------------|
+| error      | Hardware error |
 
 - Detailed Description
 
@@ -1017,10 +1014,10 @@ int txPacket(PortHandler *port, UINT8_T *txpacket)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|txpacket	|packet for transmission|
+| Parameters | Description             |
+|:-----------|:------------------------|
+| port       | PortHandler instance    |
+| txpacket   | packet for transmission |
 
 - Detailed Description
 
@@ -1034,10 +1031,10 @@ int rxPacket(PortHandler *port, UINT8_T *rxpacket)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|rxpacket	|packet for reception|
+| Parameters | Description          |
+|:-----------|:---------------------|
+| port       | PortHandler instance |
+| rxpacket   | packet for reception |
 
 - Detailed Description
 
@@ -1051,12 +1048,12 @@ int txRxPacket(PortHandler *port, UINT8_T *txpacket, UINT8_T *rxpacket, UINT8_T 
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|txpacket	|packet for transmission|
-|rxpacket	|packet for reception|
-|error	|Dynamixel error|
+| Parameters | Description             |
+|:-----------|:------------------------|
+| port       | PortHandler instance    |
+| txpacket   | packet for transmission |
+| rxpacket   | packet for reception    |
+| error      | Dynamixel error         |
 
 - Detailed Description
 
@@ -1071,11 +1068,11 @@ int ping (PortHandler *port, UINT8_T id, UINT16_T *model_number, UINT8_T *error 
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|id	|Dynamixel ID|
-|error	|Dynamixel error|
+| Parameters | Description          |
+|:-----------|:---------------------|
+| port       | PortHandler instance |
+| id         | Dynamixel ID         |
+| error      | Dynamixel error      |
 
 - Detailed Description
 
@@ -1089,10 +1086,10 @@ int broadcastPing(PortHandler *port, std::vector<UINT8_T> &id_list)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|id_list	|Dynamixel ID list|
+| Parameters | Description          |
+|:-----------|:---------------------|
+| port       | PortHandler instance |
+| id_list    | Dynamixel ID list    |
 
 - Detailed Description
 
@@ -1106,10 +1103,10 @@ int action(PortHandler *port, UINT8_T id)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|id	|Dynamixel ID|
+| Parameters | Description          |
+|:-----------|:---------------------|
+| port       | PortHandler instance |
+| id         | Dynamixel ID         |
 
 
 - Detailed Description
@@ -1124,11 +1121,11 @@ int reboot(PortHandler *port, UINT8_T id, UINT8_T *error)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|id	|Dynamixel ID|
-|error	|Dynamixel error|
+| Parameters | Description          |
+|:-----------|:---------------------|
+| port       | PortHandler instance |
+| id         | Dynamixel ID         |
+| error      | Dynamixel error      |
 
 
 - Detailed Description
@@ -1143,12 +1140,12 @@ int factoryReset(PortHandler *port, UINT8_T id, UINT8_T option, UINT8_T *error)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|id	|Dynamixel ID|
-|option |Reset option|
-|error	|Dynamixel error|
+| Parameters | Description          |
+|:-----------|:---------------------|
+| port       | PortHandler instance |
+| id         | Dynamixel ID         |
+| option     | Reset option         |
+| error      | Dynamixel error      |
 
 - Detailed Description
 
@@ -1162,12 +1159,12 @@ int readTx(PortHandler *port, UINT8_T id, UINT16_T address, UINT16_T length)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|id	|Dynamixel ID|
-|address	|Address on the control table of Dynamixel|
-|length	|Packet length|
+| Parameters | Description                               |
+|:-----------|:------------------------------------------|
+| port       | PortHandler instance                      |
+| id         | Dynamixel ID                              |
+| address    | Address on the control table of Dynamixel |
+| length     | Packet length                             |
 
 - Detailed Description
 
@@ -1181,12 +1178,12 @@ int readRx(PortHandler *port, UINT16_T length, UINT8_T *data, UINT8_T *error)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|length	|Packet length|
-|data	|Packet data|
-|error	|Dynamixel error|
+| Parameters | Description          |
+|:-----------|:---------------------|
+| port       | PortHandler instance |
+| length     | Packet length        |
+| data       | Packet data          |
+| error      | Dynamixel error      |
 
 
 - Detailed Description
@@ -1201,14 +1198,14 @@ int readTxRx(PortHandler *port, UINT8_T id, UINT16_T address, UINT16_T length, U
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|id	|Dynamixel ID|
-|address	|Address on the control table of Dynamixel|
-|length	|Packet length|
-|data	|Packet data|
-|error	|Dynamixel error|
+| Parameters | Description                               |
+|:-----------|:------------------------------------------|
+| port       | PortHandler instance                      |
+| id         | Dynamixel ID                              |
+| address    | Address on the control table of Dynamixel |
+| length     | Packet length                             |
+| data       | Packet data                               |
+| error      | Dynamixel error                           |
 
 
 - Detailed Description
@@ -1223,11 +1220,11 @@ int read1ByteTx(PortHandler *port, UINT8_T id, UINT16_T address)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|id	|Dynamixel ID|
-|address	|Address on the control table of Dynamixel|
+| Parameters | Description                               |
+|:-----------|:------------------------------------------|
+| port       | PortHandler instance                      |
+| id         | Dynamixel ID                              |
+| address    | Address on the control table of Dynamixel |
 
 
 - Detailed Description
@@ -1242,11 +1239,11 @@ int read1ByteRx(PortHandler *port, UINT8_T *data, UINT8_T *error)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|data	|Packet data|
-|error	|Dynamixel error|
+| Parameters | Description          |
+|:-----------|:---------------------|
+| port       | PortHandler instance |
+| data       | Packet data          |
+| error      | Dynamixel error      |
 
 - Detailed Description
 
@@ -1260,13 +1257,13 @@ int read1ByteTxRx(PortHandler *port, UINT8_T id,UINT16_T address, UINT8_T *data,
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|id	|Dynamixel ID|
-|address	|Address on the control table of Dynamixel|
-|data	|Packet data|
-|error	|Dynamixel error|
+| Parameters | Description                               |
+|:-----------|:------------------------------------------|
+| port       | PortHandler instance                      |
+| id         | Dynamixel ID                              |
+| address    | Address on the control table of Dynamixel |
+| data       | Packet data                               |
+| error      | Dynamixel error                           |
 
 
 - Detailed Description
@@ -1281,11 +1278,11 @@ int read2ByteTx(PortHandler *port, UINT8_T id, UINT16_T address)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|id	|Dynamixel ID|
-|address	|Address on the control table of Dynamixel|
+| Parameters | Description                               |
+|:-----------|:------------------------------------------|
+| port       | PortHandler instance                      |
+| id         | Dynamixel ID                              |
+| address    | Address on the control table of Dynamixel |
 
 
 - Detailed Description
@@ -1300,11 +1297,11 @@ int read2ByteRx(PortHandler *port, UINT16_T *data, UINT8_T *error)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|data	|Packet data|
-|error	|Dynamixel error|
+| Parameters | Description          |
+|:-----------|:---------------------|
+| port       | PortHandler instance |
+| data       | Packet data          |
+| error      | Dynamixel error      |
 
 
 - Detailed Description
@@ -1319,13 +1316,13 @@ int read2ByteTxRx(PortHandler *port, UINT8_T id,UINT16_T address, UIN16_T *data,
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|id	|Dynamixel ID|
-|address	|Address on the control table of Dynamixel|
-|data	|Packet data|
-|error	|Dynamixel error|
+| Parameters | Description                               |
+|:-----------|:------------------------------------------|
+| port       | PortHandler instance                      |
+| id         | Dynamixel ID                              |
+| address    | Address on the control table of Dynamixel |
+| data       | Packet data                               |
+| error      | Dynamixel error                           |
 
 
 - Detailed Description
@@ -1340,11 +1337,11 @@ int read4ByteTx(PortHandler *port, UINT8_T id, UINT16_T address)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|id	|Dynamixel ID|
-|address	|Address on the control table of Dynamixel|
+| Parameters | Description                               |
+|:-----------|:------------------------------------------|
+| port       | PortHandler instance                      |
+| id         | Dynamixel ID                              |
+| address    | Address on the control table of Dynamixel |
 
 
 - Detailed Description
@@ -1359,11 +1356,11 @@ int read4ByteRx(PortHandler *port, UINT32_T *data, UINT8_T *error)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|data	|Packet data|
-|error	|Dynamixel error|
+| Parameters | Description          |
+|:-----------|:---------------------|
+| port       | PortHandler instance |
+| data       | Packet data          |
+| error      | Dynamixel error      |
 
 - Detailed Description
 
@@ -1377,13 +1374,13 @@ int read4ByteTxRx(PortHandler *port, UIN8_T id, UINT16_T address, UINT32_T *data
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|id	|Dynamixel ID|
-|address	|Address on the control table of Dynamixel|
-|data	|Data for write|
-|error	|Dynamixel error|
+| Parameters | Description                               |
+|:-----------|:------------------------------------------|
+| port       | PortHandler instance                      |
+| id         | Dynamixel ID                              |
+| address    | Address on the control table of Dynamixel |
+| data       | Data for write                            |
+| error      | Dynamixel error                           |
 
 
 - Detailed Description
@@ -1398,13 +1395,13 @@ int writeTxOnly(PortHandler *port, UINT8_T id, UINT16_T address, UINT16_T length
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|id	|Dynamixel ID|
-|address	|Address on the control table of Dynamixel|
-|length	|Packet length|
-|data	|Data for write|
+| Parameters | Description                               |
+|:-----------|:------------------------------------------|
+| port       | PortHandler instance                      |
+| id         | Dynamixel ID                              |
+| address    | Address on the control table of Dynamixel |
+| length     | Packet length                             |
+| data       | Data for write                            |
 
 
 - Detailed Description
@@ -1419,14 +1416,14 @@ int writeTxRx(PortHandler *port, UINT8_T id, UINT16_T address, UINT16_T length, 
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|id	|Dynamixel ID|
-|address	|Address on the control table of Dynamixel|
-|length	|Packet length|
-|data	|Data for write|
-|error	|Dynamixel error|
+| Parameters | Description                               |
+|:-----------|:------------------------------------------|
+| port       | PortHandler instance                      |
+| id         | Dynamixel ID                              |
+| address    | Address on the control table of Dynamixel |
+| length     | Packet length                             |
+| data       | Data for write                            |
+| error      | Dynamixel error                           |
 
 
 - Detailed Description
@@ -1441,12 +1438,12 @@ int write1ByteTxOnly(PortHandler *port, UINT8_T id, UINT16_T address, UINT8_T da
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|id	|Dynamixel ID|
-|address	|Address on the control table of Dynamixel|
-|data	|Data for write|
+| Parameters | Description                               |
+|:-----------|:------------------------------------------|
+| port       | PortHandler instance                      |
+| id         | Dynamixel ID                              |
+| address    | Address on the control table of Dynamixel |
+| data       | Data for write                            |
 
 
 - Detailed Description
@@ -1461,13 +1458,13 @@ int write1ByteTxRx(PortHandler *port, UINT8_T id, UINT16_T address, UINT8_T data
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|id	|Dynamixel ID|
-|address	|Address on the control table of Dynamixel|
-|data	|Data for write|
-|error	|Dynamixel error|
+| Parameters | Description                               |
+|:-----------|:------------------------------------------|
+| port       | PortHandler instance                      |
+| id         | Dynamixel ID                              |
+| address    | Address on the control table of Dynamixel |
+| data       | Data for write                            |
+| error      | Dynamixel error                           |
 
 
 - Detailed Description
@@ -1482,12 +1479,12 @@ int write2ByteTxOnly(PortHandler *port, UINT8_T id, UINT16_T address, UINT16_T d
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|id	|Dynamixel ID|
-|address	|Address on the control table of Dynamixel|
-|data	|Data for write|
+| Parameters | Description                               |
+|:-----------|:------------------------------------------|
+| port       | PortHandler instance                      |
+| id         | Dynamixel ID                              |
+| address    | Address on the control table of Dynamixel |
+| data       | Data for write                            |
 
 
 - Detailed Description
@@ -1502,13 +1499,13 @@ int write2ByteTxRx(PortHandler *port, UINT8_T id, UINT16_T address, UINT16_T dat
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|id	|Dynamixel ID|
-|address	|Address on the control table of Dynamixel|
-|data	|Data for write|
-|error	|Dynamixel error|
+| Parameters | Description                               |
+|:-----------|:------------------------------------------|
+| port       | PortHandler instance                      |
+| id         | Dynamixel ID                              |
+| address    | Address on the control table of Dynamixel |
+| data       | Data for write                            |
+| error      | Dynamixel error                           |
 
 
 - Detailed Description
@@ -1523,12 +1520,12 @@ int write1ByteTxOnly(PortHandler *port, UINT8_T id, UINT16_T address, UINT32_T d
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|id	|Dynamixel ID|
-|address|	Address on the control table of Dynamixel|
-|data	|Data for write|
+| Parameters | Description                               |
+|:-----------|:------------------------------------------|
+| port       | PortHandler instance                      |
+| id         | Dynamixel ID                              |
+| address    | Address on the control table of Dynamixel |
+| data       | Data for write                            |
 
 
 - Detailed Description
@@ -1543,13 +1540,13 @@ int write4ByteTxRx(PortHandler *port, UINT8_T id, UINT16_T address, UINT32_T dat
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|id	|Dynamixel ID|
-|address	|Address on the control table of Dynamixel|
-|data	|Data for write|
-|error	|Dynamixel error|
+| Parameters | Description                               |
+|:-----------|:------------------------------------------|
+| port       | PortHandler instance                      |
+| id         | Dynamixel ID                              |
+| address    | Address on the control table of Dynamixel |
+| data       | Data for write                            |
+| error      | Dynamixel error                           |
 
 
 - Detailed Description
@@ -1564,13 +1561,13 @@ int regWriteTxOnly(PortHandler *port, UINT8_T id, UINT16_T address, UINT16_T len
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|id	|Dynamixel ID|
-|address	|Address on the control table of Dynamixel|
-|length	|Packet length|
-|data	|Data for write|
+| Parameters | Description                               |
+|:-----------|:------------------------------------------|
+| port       | PortHandler instance                      |
+| id         | Dynamixel ID                              |
+| address    | Address on the control table of Dynamixel |
+| length     | Packet length                             |
+| data       | Data for write                            |
 
 
 - Detailed Description
@@ -1586,14 +1583,14 @@ int regWriteTxRx(PortHandler *port, UINT8_T id, UINT16_T address, UINT16_T lengt
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|id	|Dynamixel ID|
-|address	|Address on the control table of Dynamixel|
-|length	|Packet length|
-|data	|Data for write|
-|error	|Dynamixel error|
+| Parameters | Description                               |
+|:-----------|:------------------------------------------|
+| port       | PortHandler instance                      |
+| id         | Dynamixel ID                              |
+| address    | Address on the control table of Dynamixel |
+| length     | Packet length                             |
+| data       | Data for write                            |
+| error      | Dynamixel error                           |
 
 
 - Detailed Description
@@ -1608,13 +1605,13 @@ int syndReadTx(PortHandler *port, UINT16_T address, UINT16_T data_length, UINT8_
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|address	|Address on the control table of Dynamixel|
-|data_length	|Data length|
-|param	|Parameters|
-|param_length	|Parameter length|
+| Parameters   | Description                               |
+|:-------------|:------------------------------------------|
+| port         | PortHandler instance                      |
+| address      | Address on the control table of Dynamixel |
+| data_length  | Data length                               |
+| param        | Parameters                                |
+| param_length | Parameter length                          |
 
 
 - Detailed Description
@@ -1629,14 +1626,14 @@ int syncWriteTxOnly(PortHandler *port, UINT16_T start_address, UINT16_T data_len
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|id	|Dynamixel ID|
-|address	|Address on the control table of Dynamixel|
-|data_length	|Data length|
-|data	|Data for write|
-|param_length	|Parameter length|
+| Parameters   | Description                               |
+|:-------------|:------------------------------------------|
+| port         | PortHandler instance                      |
+| id           | Dynamixel ID                              |
+| address      | Address on the control table of Dynamixel |
+| data_length  | Data length                               |
+| data         | Data for write                            |
+| param_length | Parameter length                          |
 
 
 - Detailed Description
@@ -1651,11 +1648,11 @@ int bulkReadTx(PortHandler *port, UINT8_T *param, UINT16_T param_length)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|param	|Parameters|
-|param_length	|Parameter length|
+| Parameters   | Description          |
+|:-------------|:---------------------|
+| port         | PortHandler instance |
+| param        | Parameters           |
+| param_length | Parameter length     |
 
 - Detailed Description
 
@@ -1669,11 +1666,11 @@ int bulkWriteTxOnly(PortHandler *port, UINT8_T *param, UINT16_T param_length)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port	|PortHandler instance|
-|param	|Parameters|
-|param_length	|Parameter length|
+| Parameters   | Description          |
+|:-------------|:---------------------|
+| port         | PortHandler instance |
+| param        | Parameters           |
+| param_length | Parameter length     |
 
 - Detailed Description
 

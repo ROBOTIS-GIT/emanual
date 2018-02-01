@@ -19,13 +19,25 @@
       function extendgoogletool() {
         if (toggle_google == 0) {
           google_tools.classList.add("extend_googletools");
+          switch_ko_en.classList.add("show_switch_ko_en");
           toggle_google = 1;
         }
         else {
           google_tools.classList.remove("extend_googletools");
+          switch_ko_en.classList.remove("show_switch_ko_en");
           toggle_google = 0;
         }
       }
+    </script>
+    <script>
+    $(document).ready(function() {
+
+    	$('.popup').magnificPopup({
+    		type: 'ajax',
+    		alignTop: true,
+    		overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
+    	});
+    });
     </script>
   </head>
 

@@ -5,7 +5,8 @@
 }
 
 $max-width  : 1920px;
-$mobile-width : 960px;
+$mobile-landscape : 960px;
+$mobile-portrait : 500px;
 
 /* system typefaces */
 $serif                      : Georgia, Times, serif !default;
@@ -53,6 +54,7 @@ $type-size-8                : 0.7em !default;
 
 
 $border-radius              : 5px !default;
+$img-border-radius          : 10px !default;
 $border-color               : $lighter-gray !default;
 $box-shadow                 : 0 1px 1px rgba(0, 0, 0, 0.125) !default;
 

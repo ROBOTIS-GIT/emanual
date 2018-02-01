@@ -52,7 +52,7 @@ Robots of 4 DOF can be built with Beginner Kit.  This kit is recommended for peo
 
 {% include en/edu/bioloid/screen_output.md %}
 
-## [Button & LED](#button-led)
+## [Button & LED](#button--led)
 
 {% include en/edu/bioloid/button_led.md %}
 

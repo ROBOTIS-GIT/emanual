@@ -11,9 +11,9 @@ sidebar:
   nav: "mx-12w"
 ---
 
-# MX-12W
-
 ![](/assets/images/dxl/mx/mx-12_product.jpg)
+
+> MX-12W
 
 # [Specifications](#specifications)
 
@@ -40,7 +40,7 @@ sidebar:
 
 ## [Control Table of EEPROM Area](#control-table-of-eeprom-area)
 
-| Address     | Size(Byte)     | Data Name     | Description     | Access     | Initial Value     |
+| Address     | Size<br>(Byte)     | Data Name     | Description     | Access     | Initial<br />Value     |
 | :------------- | :------------- | :------------- | :------------- | :------------- | :------------- |
 |0|2|[Model Number](#model-number)         | Model Number       | R       | 104 |
 |2|1|[Firmware Version](#firmware-version)    |Firmware Version|R|-|
@@ -62,7 +62,7 @@ sidebar:
 
 ## [Control Table of RAM Area](#control-table-of-ram-area)
 
-| Address     | Size(Byte)     | Data Name     | Description     | Access     | Initial Value     |
+| Address     | Size<br>(Byte)     | Data Name     | Description     | Access     | Initial<br />Value     |
 | :------------- | :------------- | :------------- | :------------- | :------------- | :------------- |
 |24|1|[Torque Enable](#torque-enable)            |Motor Torque On/Off|RW|0|
 |25|1|[LED](#led)                             |Status LED On/Off|RW|0|
@@ -235,7 +235,9 @@ For example, if it is set to 300 then the motor is moving to the CCW direction a
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Tw4GfqUpzNA" frameborder="0" allowfullscreen></iframe>
 
-## [Quick Start](#quick-start)
+## [Connector Information](#connector-information)
+
+{% include en/dxl/molex_ttl.md %}
 
 ## [Drawings](#drawings)
 

@@ -30,7 +30,7 @@ Using RoboPlus Manager, set both the CW location limit value and the CCW locatio
 
 3. Call appropriate motion functions pursuant to the object detection existence value. (Obstacle Detection Direction)
 
-  ![Obstacle_Car-4][img_032]
+    ![Obstacle_Car-4][img_032]
 
 4. Make Stop / Forward / Backward / Turn Right / Turn Left Motions. Each motor's moving speed is set by adding moving speed value which is the set speed value at the beginning and CW:0 and CCW:0 which represent directions.
 

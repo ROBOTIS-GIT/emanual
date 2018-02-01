@@ -33,7 +33,7 @@ sidebar:
 
   All series using protocol 1.0
 
-- Simple code
+#### Sample code
 
 
 ``` m
@@ -201,9 +201,9 @@ clear all;
 ```
 
 
--------------------------------------------------------------------------------------
 
-- Details
+
+#### Details
 
 ``` m
 % Load Libraries

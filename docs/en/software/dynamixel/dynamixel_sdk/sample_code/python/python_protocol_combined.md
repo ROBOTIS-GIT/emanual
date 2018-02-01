@@ -27,7 +27,7 @@ sidebar:
   All models using protocol 1.0 and 2.0
 
 
-- Code
+#### Sample code
 
 
 ```python
@@ -228,9 +228,9 @@ elif dynamixel.getLastRxPacketError(port_num, PROTOCOL_VERSION2) != 0:
 dynamixel.closePort(port_num)
 ```
 
--------------------------------------------------------------------------------------
 
-- Details
+
+#### Details
 
 ```python
 import os, sys

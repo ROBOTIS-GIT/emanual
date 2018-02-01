@@ -29,7 +29,7 @@ sidebar:
 
   All series using protocol 1.0
 
-- Code Parts
+#### Sample code Parts
 
 
 ```python
@@ -126,9 +126,9 @@ print("[ID:%03d] ping Succeeded. Dynamixel model number : %d" % (DXL_ID, dxl_mod
 dynamixel.closePort(port_num)
 ```
 
--------------------------------------------------------------------------------------
 
-- Details
+
+#### Details
 
 ```python
 import os, sys

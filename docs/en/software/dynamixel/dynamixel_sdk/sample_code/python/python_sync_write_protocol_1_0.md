@@ -29,7 +29,7 @@ sidebar:
 
   All series using protocol 1.0
 
-- Code Parts
+#### Sample code Parts
 
 
 ```python
@@ -229,9 +229,9 @@ elif dynamixel.getLastRxPacketError(port_num, PROTOCOL_VERSION) != 0:
 dynamixel.closePort(port_num)
 ```
 
--------------------------------------------------------------------------------------
 
-- Details
+
+#### Details
 
 ```python
 import os, sys, ctypes

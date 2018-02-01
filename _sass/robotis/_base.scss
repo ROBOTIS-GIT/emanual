@@ -235,7 +235,7 @@ h1, h2, h3, h4, h5, h6 {
   + div {
     p, div {
       word-wrap: break-word;
-      margin: 0.5em 0.5em 0 5em;
+      margin: 0.5em 0.5em 0 6em;
     }
     table {
       margin: 0.5em 0.5em 0 8em;
@@ -309,4 +309,9 @@ a {
 
 ul > li > ul {
   margin-left: 1.2em;
+}
+
+img {
+  border: 1px solid #999;
+  border-radius: $img-border-radius;
 }

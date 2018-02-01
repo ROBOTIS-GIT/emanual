@@ -85,6 +85,7 @@ sidebar:
 |R+ 1.0|O|O|O|O|O|O|O|X|O(X)|
 |R+ 2.0|O|O|O|O|O|O|O|X|O(X)|
 |OpenCM IDE|X|X|X|X|X|X|X|X|O|
+|Scratch2.0|X|O|X|X|X|X|X|X|X|
 
 
 [ln-101]: /docs/en/parts/interface/ln-101/

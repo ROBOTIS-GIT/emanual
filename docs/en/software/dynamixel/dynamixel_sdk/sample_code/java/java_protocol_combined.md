@@ -27,7 +27,7 @@ sidebar:
   All models using protocol 1.0 and 2.0
 
 
-- Code
+#### Sample code
 
 
 ``` java
@@ -269,9 +269,9 @@ public class ProtocolCombined
 }
 ```
 
--------------------------------------------------------------------------------------
 
-- Details
+
+#### Details
 
 ``` java
 import java.util.Scanner;

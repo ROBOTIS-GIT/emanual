@@ -11,9 +11,9 @@ sidebar:
   nav: "ax-12w"
 ---
 
-# AX-12W
-
 ![](/assets/images/dxl/ax/ax-12w_product.jpg)
+
+> AX-12W
 
 # [Specifications](#specifications)
 
@@ -59,7 +59,7 @@ Each data in the Control Table is restored to initial values when the DYNAMIXEL 
 
 ## [Control Table of EEPROM Area](#control-table-of-eeprom-area)
 
-| Address     | Size(Byte)     | Data Name     | Description     | Access     | Initial Value     |
+| Address     | Size<br>(Byte)     | Data Name     | Description     | Access     | Initial<br />Value     |
 | :------------- | :------------- | :------------- | :------------- | :------------- | :------------- |
 |0|2|[Model Number](#model-number)         | Model Number       | R       | 300 |
 |2|1|[Firmware Version](#firmware-version)    |Firmware Version|R|-|
@@ -79,7 +79,7 @@ Each data in the Control Table is restored to initial values when the DYNAMIXEL 
 
 ## [Control Table of RAM Area](#control-table-of-ram-area)
 
-| Address     | Size(Byte)     | Data Name     | Description     | Access     | Initial Value     |
+| Address     | Size<br>(Byte)     | Data Name     | Description     | Access     | Initial<br />Value     |
 | :------------- | :------------- | :------------- | :------------- | :------------- | :------------- |
 |24|1|[Torque Enable](#torque-enable)            |Motor Torque On/Off|RW|0|
 |25|1|[LED](#led)                             |Status LED On/Off|RW|0|
@@ -381,7 +381,9 @@ Can choose vales from 0x20 to 0x3FF.
 `Note` [Compatibility Guide]
 {: .notice}
 
-## [Quick Start](#quick-start)
+## [Connector Information](#connector-information)
+
+{% include en/dxl/molex_ttl.md %}
 
 ## [Drawings](#drawings)
 

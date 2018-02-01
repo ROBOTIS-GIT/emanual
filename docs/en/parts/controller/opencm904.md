@@ -11,11 +11,11 @@ sidebar:
   nav: "opencm904"
 ---
 
+# [Introduction](#introduction)
+
 ![](/assets/images/parts/controller/opencm904/opencm904_product.png)
 
 > OpenCM 9.04
-
-# [Introduction](#introduction)
 
 - OpenCM9.04 Types Package
  	
@@ -36,6 +36,9 @@ sidebar:
 
 `Note` Refer to the DARWIN-MINI for controller recovery (type C-only) [DARWIN-MINI Controller Firmware Update]
 {: .notice}
+
+`Caution` Please **DISCONNECT** OpenCM9.04 and OpenCM 485 Expansion board when updating or recovering Dynamixel firmware.
+{: .notice--warning}
 
 # [Specifications](#specifications)
 

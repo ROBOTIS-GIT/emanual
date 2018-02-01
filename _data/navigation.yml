@@ -2,7 +2,6 @@
 main:
   - title: "DYNAMIXEL"
     titlekr: "다이나믹셀"
-    titlejp: "ダイナミックセル"
     children:
     - title: "AX Series"
       titlekr: "AX 시리즈"
@@ -51,8 +50,6 @@ main:
         url: /dxl/rx/rx-64/
     - title: "MX Series"
       titlekr: "MX 시리즈"
-      titlejp: "MX シリーズ"
-      titlecn: "MX 系列"
       children:
       - title: "MX-12W"
         titlekr: "MX-12W"
@@ -77,8 +74,6 @@ main:
         url: /dxl/mx/mx-106-2/
     - title: "X Series"
       titlekr: "X 시리즈"
-      titlejp: "X シリーズ"
-      titlecn: "X 系列"
       children:
       - title: "XL320"
         titlekr: "XL320"
@@ -101,7 +96,6 @@ main:
       - title: "XH430-W210"
         titlekr: "XH430-W210"
         url: /dxl/x/xh430-w210/
-        urlkr: /dxl/x/xh430-w210/
       - title: "XH430-W350"
         titlekr: "XH430-W350"
         url: /dxl/x/xh430-w350/
@@ -113,45 +107,48 @@ main:
         url: /dxl/x/xh430-v350/
     - title: "PRO Series"
       titlekr: "PRO 시리즈"
-      titlejp: "PRO シリーズ"
-      titlecn: "PRO 系列"
       children:
       - title: "H54-200-S500-R"
+        titlekr: "H54-200-S500-R"
         url: /dxl/pro/h54-200-s500-r/
       - title: "H54-100-S500-R"
+        titlekr: "H54-100-S500-R"
         url: /dxl/pro/h54-100-s500-r/
       - title: "H42-20-S300-R"
+        titlekr: "H42-20-S300-R"
         url: /dxl/pro/h42-20-s300-r/
       - title: "M54-60-S250-R"
+        titlekr: "M54-60-S250-R"
         url: /dxl/pro/m54-60-s250-r/
       - title: "M54-40-S250-R"
+        titlekr: "M54-40-S250-R"
         url: /dxl/pro/m54-40-s250-r/
       - title: "M42-10-S260-R"
+        titlekr: "M42-10-S260-R"
         url: /dxl/pro/m42-10-s260-r/
       - title: "*L54-50-S500-R"
+        titlekr: "*L54-50-S500-R"
         url: /dxl/pro/l54-50-s500-r/
       - title: "*L54-50-S290-R"
+        titlekr: "*L54-50-S290-R"
         url: /dxl/pro/l54-50-s290-r/
       - title: "*L54-30-S500-R"
+        titlekr: "*L54-30-S500-R"
         url: /dxl/pro/l54-30-s500-r/
       - title: "*L54-30-S400-R"
+        titlekr: "*L54-30-S400-R"
         url: /dxl/pro/l54-30-s400-r/
       - title: "*L42-10-S300-R"
+        titlekr: "*L42-10-S300-R"
         url: /dxl/pro/l42-10-s300-r/
     - title: "Procotol 1.0"
       titlekr: "프로토콜 1.0"
-      titlejp: "Protocol 1.0"
-      titlecn: "Protocol 1.0"
       url: /dxl/protocol1/
     - title: "Protocol 2.0"
       titlekr: "프로토콜 2.0"
-      titlejp: "Protocol 2.0"
-      titlecn: "Protocol 2.0"
       url: /dxl/protocol2/
   - title: "PLATFORM"
     titlekr: "플랫폼"
-    titlejp: "プラットフォーム"
-    titlecn: "平台"
     children:
     - title: "*OP"
       titlekr: "*OP"
@@ -161,74 +158,53 @@ main:
       url: /platform/op2/getting_started/
     - title: "OP3"
       titlekr: "OP3"
-      titlejp: "OP3"
-      titlecn: "OP3"
       url: /platform/op3/getting_started/
-    - titlekr: "Hand RX28"
-    - titlekr: "Hand MX28"
+    - titlekr: "로봇핸드 RX28"
+      url: /platform/robothand_rx28/
+    - titlekr: "로봇핸드 MX28"
+      url: /platform/robothand_mx28/
     - title: "Manipulator-H"
       titlekr: "Manipulator-H"
-      titlejp: "Manipulator-H"
-      titlecn: "Manipulator-H"
       url: /platform/manipulator_h/introduction/
     - title: "Thormang3"
       titlekr: "똘망3"
-      titlejp: "Thormang3"
-      titlecn: "Thormang3"
       url: /platform/thormang3/getting_started/
     - title: "TurtleBot3"
       titlekr: "터틀봇3"
-      titlejp: "TurtleBot3"
-      titlecn: "TurtleBot3"
       url: /platform/turtlebot3/overview/
     - title: "OpenManipulator"
       titlekr: "오픈매니퓰레이터"
       url: /platform/openmanipulator/
   - title: "STEAM"
     titlekr: "교육키트"
-    titlejp: "トレーニングキット"
-    titlecn: "培训工具包"
     children:
     - title: "*OLLO"
       titlekr: "*올로"
-      titlejp: "*OLLO"
-      titlecn: "*OLLO"
       children:
       - title: "*BUG KIT"
         titlekr: "*버그 키트"
-        titlejp: "*BUG KIT"
         url: /edu/ollo/bugkit/
       - title: "*EXPLORER"
         titlekr: "*2단계 교육키트"
-        titlejp: "*Level 2 Kit"
         url: /edu/ollo/explorer/
-        urlkr: /edu/ollo/ollo-2/
       - title: "*INVENTOR"
         titlekr: "*3단계 교육키트"
-        titlejp: "*Level 3 Kit"
         url: /edu/ollo/inventor/
-        urlkr: /edu/ollo/ollo-3/
       - titlekr: "*4단계 교육키트"
-        titlejp: "*Level 4 Kit"
-        urlkr: /edu/ollo/ollo-4/
+        url: /edu/ollo/ollo-4/
     - title: "DREAM"
       titlekr: "드림 I"
       children:
       - titlekr: "1단계 교육키트"
-        titlecn: "LEVEL 1"
-        urlkr: /edu/dream/dream1-1/
+        url: /edu/dream/dream1-1/
       - title: "LEVEL 2"
         titlekr: "2단계 교육키트"
-        titlecn: "LEVEL 2"
         url: /edu/dream/dream1-2/
-        urlkr: /edu/dream/dream1-2/
       - title: "LEVEL 3"
         titlekr: "3단계 교육키트"
-        titlecn: "LEVEL 3"
         url: /edu/dream/dream1-3/
       - title: "LEVEL 4"
         titlekr: "4단계 교육키트"
-        titlecn: "LEVEL 4"
         url: /edu/dream/dream1-4/
       - title: "SET A"
         url: /edu/dream/dream-a/
@@ -237,69 +213,68 @@ main:
     - titlekr: "드림 II"
       children:
       - titlekr: "1단계 교육키트"
-        titlecn: "LEVEL 1"
+        url: /edu/dream/dream2-1/
       - titlekr: "2단계 교육키트"
-        titlecn: "LEVEL 2"
+        url: /edu/dream/dream2-2/
       - titlekr: "3단계 교육키트"
-        titlecn: "LEVEL 3"
+        url: /edu/dream/dream2-3/
+      - titlekr: "4단계 교육키트"
+        url: /edu/dream/dream2-4/
+      - titlekr: "5단계 교육키트"
+        url: /edu/dream/dream2-5/
     - titlekr: "스마트 I"
       children:
       - titlekr: "1단계 교육키트"
+        url: /edu/smart/smart1-1/
       - titlekr: "2단계 교육키트"
+        url: /edu/smart/smart1-2/
       - titlekr: "3단계 교육키트"
+        url: /edu/smart/smart1-3/
     - titlekr: "스마트 II"
       children:
       - titlekr: "1단계 교육키트"
+        url: /edu/smart/smart2-1/
       - titlekr: "2단계 교육키트"
+        url: /edu/smart/smart2-2/
       - titlekr: "3단계 교육키트"
+        url: /edu/smart/smart2-3/
     - titlekr: "스마트 III"
       children:
       - titlekr: "1단계 교육키트"
+        url: /edu/smart/smart3-1/
       - titlekr: "2단계 교육키트"
-        urlkr: /edu/smart/smart3-2/
+        url: /edu/smart/smart3-2/
     - titlekr: "IoT"
       children:
       - titlekr: "1단계 교육키트"
+        url: /edu/iot/iot-1/
       - titlekr: "2단계 교육키트"
+        url: /edu/iot/iot-2/
     - title: "BIOLOID"
       titlekr: "바이올로이드"
-      titlejp: "BIOLOID"
-      titlecn: "BIOLOID"
       children:
       - title: "Beginner Level"
         titlekr: "초급"
-        titlejp: "Beginner Level"
         url: /edu/bioloid/beginner/
       - title: "Comprehensive Level"
         titlekr: "종합"
-        titlejp: "Comprehensive Level"
         url: /edu/bioloid/comprehensive/
       - title: "ROBOTIS STEM"
         titlekr: "STEM 키트"
-        titlejp: "STEM KIT"
-        titlecn: "STEM KIT"
         url: /edu/bioloid/stem/
       - titlekr: "STEM 아카데미"
-        titlejp: "STEM Academy"
-        titlecn: "STEM Academy"
         url: /edu/bioloid/stem_academy/
       - title: "ROBOTIS PREMIUM"
         titlekr: "프리미엄"
-        titlejp: "ROBOTIS PREMIUM"
-        titlecn: "ROBOTIS PREMIUM"
         url: /edu/bioloid/premium/
       - title: "ROBOTIS GP"
         titlekr: "ROBOTIS GP"
-        titlejp: "ROBOTIS GP"
-        titlecn: "ROBOTIS GP"
         url: /edu/bioloid/gp/
     - title: "MINI"
       titlekr: "미니"
       url: /edu/mini/
   - title: "SOFTWARE"
     titlekr: "소프트웨어"
-    titlejp: "ソフトウェア"
-    titlecn: "软件"
     children:
     - title: "DYNAMIXEL"
       titlekr: "다이나믹셀"
@@ -307,97 +282,65 @@ main:
       - title: "DYNAMIXEL SDK"
         titlekr: "다이나믹셀 SDK"
         url: /software/dynamixel/dynamixel_sdk/overview/
-      - title: "DYNAMIXEL-Workbench"
-        url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/
+      - title: "Dynamixel-Workbench"
+        titlekr: "다이나믹셀 워크벤치"
+        url: /software/dynamixel/dynamixel_workbench/
     - title: "Mobile Apps"
       titlekr: "모바일 앱"
       children:
-      - titlekr: "R+ SMART"
-        titlejp: "R+ SMART"
-        titlecn: "R+ SMART"
-      - titlekr: "R+ IoT"
-        titlejp: "R+ IoT"
-        titlecn: "R+ IoT"
+      - titlekr: "로보플러스 SMART"
+        url: /software/mobile_app/rplussmart/
+      - titlekr: "로보플러스 IoT"
+        url: /software/mobile_app/rplusiot/
       - title: "ROBOTIS MINI"
-        titlekr: "ROBOTIS MINI"
-        titlejp: "ROBOTIS MINI"
-        titlecn: "ROBOTIS MINI"
+        titlekr: "로보티즈 미니"
         url: /software/mobile_app/mini_app/
     - title: "R+ 1.0"
-      titlekr: "R+ 1.0"
-      titlejp: "R+ 1.0"
-      titlecn: "R+ 1.0"
+      titlekr: "로보플러스 1.0"
       children:
       - title: "R+ Task"
         titlekr: "로보플러스 태스크"
-        titlejp: "R+ Task"
-        titlecn: "R+ Task"
         url: /software/rplus1/task/getting_started/
-        urlkr: /software/rplus1/task/getting_started/
       - title: "R+ Manager"
         titlekr: "로보플러스 매니저"
-        titlejp: "R+ Manager"
-        titlecn: "R+ Manager"
         url: /software/rplus1/manager/
       - title: "R+ Motion"
         titlekr: "로보플러스 모션"
-        titlejp: "R+ Motion"
-        titlecn: "R+ Motion"
         url: /software/rplus1/motion/
       - title: "Dynamixel Wizard"
         titlekr: "다이나믹셀 위자드"
-        titlejp: "Dynamixel Wizard"
-        titlecn: "Dynamixel Wizard"
         url: /software/rplus1/dynamixel_wizard/
     - title: "R+ 2.0"
       titlekr: "R+ 2.0"
-      titlejp: "R+ 2.0"
-      titlecn: "R+ 2.0"
       children:
       - title: "R+ Task 2.0"
         titlekr: "로보플러스 태스크 2.0"
-        titlejp: "R+ Task 2.0"
-        titlecn: "R+ Task 2.0"
         url: /software/rplus2/task/
       - title: "R+ Manager 2.0"
         titlekr: "로보플러스 매니저 2.0"
-        titlejp: "R+ Manager 2.0"
-        titlecn: "R+ Manager 2.0"
         url: /software/rplus2/manager/
-        urlkr: /software/rplus2/manager/getting_started/
+        urlkr: /software/rplus2/manager/
       - title: "R+ Motion 2.0"
         titlekr: "로보플러스 모션 2.0"
-        titlejp: "R+ Motion 2.0"
-        titlecn: "R+ Motion 2.0"
         url: /software/rplus2/motion/
       - title: "R+ Design 2.0"
         titlekr: "로보플러스 디자인 2.0"
-        titlejp: "R+ Design 2.0"
-        titlecn: "R+ Design 2.0"
         url: /software/rplus2/design/
       - title: "R+ Scratch"
         titlekr: "로보플러스 스크래치"
-        titlejp: "R+ Scratch"
-        titlecn: "R+ Scratch"
         url: /software/rplus2/scratch/
     - title: "R+ Mobile"
       titlekr: "R+ 모바일"
       children:
       - titlekr: "R+ m.Task"
-        titlejp: "R+ m.Task"
-        titlecn: "R+ m.Task"
+        url: /software/rplus_mobile/mtask/
       - titlekr: "R+ m.Task 2.0"
-        titlejp: "R+ m.Task 2.0"
-        titlecn: "R+ m.Task 2.0"
+        url: /software/rplus_mobile/mtask20/
       - title: "R+ m.Motion 2.0"
         titlekr: "R+ m.Motion 2.0"
-        titlejp: "R+ m.Motion 2.0"
-        titlecn: "R+ m.Motion 2.0"
         url: /software/rplus_mobile/mmotion/
       - title: "R+ m.Design"
         titlekr: "R+ m.Design"
-        titlejp: "R+ m.Design"
-        titlecn: "R+ m.Design"
         url: /software/rplus_mobile/mdesign/
     - title: "EMBEDDED SDK"
       titlekr: "EMBEDDED SDK"
@@ -405,251 +348,155 @@ main:
       children:
       - title: "Embedded C(CM-510/700)"
         titlekr: "제어기 펌웨어 개발(CM-510/700)"
-        titlejp: "Embedded C(CM-510/700)"
-        titlecn: "Embedded C(CM-510/700)"
         url: /software/embedded_sdk/embedded_c_cm510/
       - title: "Embedded C(CM-530)"
         titlekr: "제어기 펌웨어 개발(CM-530)"
-        titlejp: "Embedded C(CM-530)"
-        titlecn: "Embedded C(CM-530)"
         url: /software/embedded_sdk/embedded_c_cm530/
       - title: "ZIGBEE SDK"
         titlekr: "지그비 SDK"
-        titlejp: "ZIGBEE SDK"
-        titlecn: "ZIGBEE SDK"
         url: /software/embedded_sdk/zigbee_sdk/
     - title: "OpenCM IDE"
       titlekr: "OpenCM IDE"
       url: /software/opencm_ide/getting_started/
   - title: "PARTS"
     titlekr: "부품"
-    titlejp: "部品"
-    titlecn: "部分"
     children:
     - title: "Controller"
       titlekr: "제어기"
-      titlejp: "コントローラ"
-      titlecn: "控制器"
       url: /parts/controller/controller_compatibility/
       children:
       - title: "*CM-100A"
         titlekr: "*CM-100A"
-        titlejp: "*CM-100A"
-        titlecn: "*CM-100A"
         url: /parts/controller/cm-100/
       - title: "CM-150"
         titlekr: "CM-150"
-        titlejp: "CM-150"
-        titlecn: "CM-150"
         url: /parts/controller/cm-150/
       - title: "CM-200"
         titlekr: "CM-200"
-        titlejp: "CM-200"
-        titlecn: "CM-200"
         url: /parts/controller/cm-200/
         urlkr: /parts/controller/cm-200/
       - title: "*CM-5"
         titlekr: "*CM-5"
-        titlejp: "*CM-5"
-        titlecn: "*CM-5"
         url: /parts/controller/cm-5/
       - title: "*CM-510"
         titlekr: "*CM-510"
-        titlejp: "*CM-510"
-        titlecn: "*CM-510"
         url: /parts/controller/cm-510/
       - title: "CM-530"
         titlekr: "CM-530"
-        titlejp: "CM-530"
-        titlecn: "CM-530"
         url: /parts/controller/cm-530/
       - title: "CM-700"
         titlekr: "CM-700"
-        titlejp: "CM-700"
-        titlecn: "CM-700"
         url: /parts/controller/cm-700/
       - title: "*CM-900"
         titlekr: "*CM-900"
-        titlejp: "*CM-900"
-        titlecn: "*CM-900"
         url: /parts/controller/cm-900/
       - title: "OpenCM 9.04"
         titlekr: "OpenCM 9.04"
-        titlejp: "OpenCM 9.04"
-        titlecn: "OpenCM 9.04"
         url: /parts/controller/opencm904/
       - title: "OpenCM 485 EXP"
         titlekr: "OpenCM 485 EXP"
-        titlejp: "OpenCM 485 EXP"
-        titlecn: "OpenCM 485 EXP"
         url: /parts/controller/opencm485exp/
       - title: "OpenCR"
         titlekr: "OpenCR"
-        titlejp: "OpenCR"
-        titlecn: "OpenCR"
         url: /parts/controller/opencr10/
     - title: "Communication"
       titlekr: "통신"
-      titlejp: "通信"
-      titlecn: "沟通"
       children:
       - title: "RC-100A/100B"
         titlekr: "RC-100A/100B"
-        titlejp: "RC-100A/100B"
-        titlecn: "RC-100A/100B"
         url: /parts/communication/rc-100/
       - title: "*ZIG-100/110A"
         titlekr: "*ZIG-100/110A"
-        titlejp: "*ZIG-100/110A"
-        titlecn: "*ZIG-100/110A"
         url: /parts/communication/zig-110/
       - title: "*BT-100/110A"
         titlekr: "*BT-100/110A"
-        titlejp: "*BT-100/110A"
-        titlecn: "*BT-100/110A"
         url: /parts/communication/bt-110/
       - title: "BT-210"
         titlekr: "BT-210"
-        titlejp: "BT-210"
-        titlecn: "BT-210"
         url: /parts/communication/bt-210/
       - title: "BT-410"
         titlekr: "BT-410"
-        titlejp: "BT-410"
-        titlecn: "BT-410"
         url: /parts/communication/bt-410/
       - title: "BT-410 Dongle"
         titlekr: "BT-410 동글"
-        titlejp: "BT-410 Dongle"
-        titlecn: "BT-410 Dongle"
         url: /parts/communication/bt-410-dongle/
       - title: "ZIG2Serial"
         titlekr: "ZIG2Serial"
-        titlejp: "ZIG2Serial"
-        titlecn: "ZIG2Serial"
         url: /parts/communication/zig2serial/
     - title: "Motors"
       titlekr: "모터"
-      titlejp: "モーター"
-      titlecn: "马达"
       children:
       - title: "Geared Motor(GM-10A)"
         titlekr: "감속모터(GM-10A)"
-        titlejp: "Geared Motor(GM-10A)"
-        titlecn: "Geared Motor(GM-10A)"
         url: /parts/motor/gm-10a/
       - title: "*High Speed Geared Motor"
         titlekr: "*고속 감속모터"
-        titlejp: "*高速減速モーター"
-        titlecn: "*高速齒輪馬達"
         url: /parts/motor/h_speed_geared_motor/
       - title: "Low Speed Geared Motor"
         titlekr: "저속 감속모터"
-        titlejp: "低速減速モーター"
-        titlecn: "低速齒輪傳動馬達"
         url: /parts/motor/l_speed_geared_motor/
       - title: "Servo Motor(SM-10)"
         titlekr: "서보모터(SM-10)"
-        titlejp: "Servo Motor(SM-10)"
-        titlecn: "Servo Motor(SM-10)"
         url: /parts/motor/servo_motor/
     - title: "Interface"
       titlekr: "인터페이스"
-      titlejp: "インターフェース"
-      titlecn: "接口"
       children:
       - title: "LN-101"
         titlekr: "LN-101"
-        titlejp: "LN-101"
-        titlecn: "LN-101"
         url: /parts/interface/ln-101/
       - title: "USB2DYNAMIXEL"
         titlekr: "USB2DYNAMIXEL"
-        titlejp: "USB2DYNAMIXEL"
-        titlecn: "USB2DYNAMIXEL"
         url: /parts/interface/usb2dynamixel/
       - title: "U2D2"
         titlekr: "U2D2"
         url: /parts/interface/u2d2/
     - title: "Sensors"
       titlekr: "센서"
-      titlejp: "センサー"
-      titlecn: "传感器"
       children:
       - title: "IR Sensor(IRSS-10)"
         titlekr: "적외선 센서(IRSS-10)"
-        titlejp: "赤外線センサー(IRSS-10)"
-        titlecn: "紅外傳感器(IRSS-10)"
         url: /parts/sensor/irss-10/
       - title: "Distance Sensor(DMS-80)"
         titlekr: "거리 측정 센서(DMS-80)"
-        titlejp: "距離測定センサ(DMS-80)"
-        titlecn: "距離測量傳感器(DMS-80)"
         url: /parts/sensor/dms-80/
       - title: "Touch Sensor(TS-10)"
         titlekr: "접촉 센서(TS-10)"
-        titlejp: "接触センサー(TS-10)"
-        titlecn: "聯繫傳感器(TS-10)"
         url: /parts/sensor/ts-10/
       - title: "*Integrated Sensor(AX-S1)"
         titlekr: "*통합 센서(AX-S1)"
-        titlejp: "*統合センサー(AX-S1)"
-        titlecn: "*集成傳感器(AX-S1)"
         url: /parts/sensor/ax-s1/
       - title: "Gyro Sensor(GS-12)"
         titlekr: "자이로 센서(GS-12)"
-        titlejp: "ジャイロセンサー(GS-12)"
-        titlecn: "陀螺儀傳感器(GS-12)"
         url: /parts/sensor/gs-12/
       - title: "IR Array Sensor"
         titlekr: "적외선 어레이 센서"
-        titlejp: "赤外線アレイセンサ"
-        titlecn: "紅外線陣列傳感器"
         url: /parts/sensor/ir-array/
       - title: "Color Sensor(CS-10)"
         titlekr: "컬러 센서(CS-10)"
-        titlejp: "カラーセンサー(CS-10)"
-        titlecn: "顏色傳感器(CS-10)"
         url: /parts/sensor/cs-10/
       - title: "Magnetic Sensor(MGSS-10)"
         titlekr: "자석 센서(MGSS-10)"
-        titlejp: "磁気センサー(MGSS-10)"
-        titlecn: "磁性傳感器(MGSS-10)"
         url: /parts/sensor/mgss-10/
       - title: "Temperature Sensor(TPS-10)"
         titlekr: "온도 센서(TPS-10)"
-        titlejp: "温度センサー(TPS-10)"
-        titlecn: "溫度傳感器(TPS-10)"
         url: /parts/sensor/tps-10/
       - title: "Motion Sensor(PIR-10)"
         titlekr: "동작감지 센서(PIR-10)"
-        titlejp: "動作検知センサー(PIR-10)"
-        titlecn: "運動傳感器(PIR-10)"
         url: /parts/sensor/pir-10/
-      - titlekr: "조도 센서"
-        titlejp: "照度センサ"
-        titlecn: "環境光傳感器"
-      - titlekr: "온습도 센서"
-        titlejp: "温度・湿度センサー"
-        titlecn: "溫度和濕度傳感器"
+      - titlekr: "조도 센서(CDS-10)"
+        url: /parts/sensor/cds-10/
+      - titlekr: "온습도 센서(TMS-10)"
+        url: /parts/sensor/tms-10/
     - title: "Display"
       titlekr: "디스플레이"
-      titlejp: "ディスプレイ"
-      titlecn: "显示"
       children:
       - title: "LED Module(LM-10)"
         titlekr: "LED 모듈(LM-10)"
-        titlejp: "LED Module(LM-10)"
-        titlecn: "LED Module(LM-10)"
         url: /parts/display/lm-10/
   - title: "FAQ"
     titlekr: "FAQ"
-    titlejp: "FAQ"
-    titlecn: "FAQ"
     url: /faq/
     urlkr: /faq/
-    urljp: /faq/
-    urlcn: /faq/
 
 #AX-12W sidebar
 ax-12w:
@@ -762,10 +609,10 @@ ax-12w:
     url: /dxl/ax/ax-12w/#reference
     urlkr: /dxl/ax/ax-12w/#참고자료
     children:
-      - title: "Quick Start"
-        titlekr: "퀵스타트"
-        url: /dxl/ax/ax-12w/#quick-start
-        urlkr: /dxl/ax/ax-12w/#퀵스타트
+      - title: "Connector Information"
+        titlekr: "커넥터 정보"
+        url: /dxl/ax/ax-12w/#connector-information
+        urlkr: /dxl/ax/ax-12w/#커넥터-정보
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/ax/ax-12w/#drawings
@@ -886,10 +733,10 @@ ax-12a:
     url: /dxl/ax/ax-12a/#reference
     urlkr: /dxl/ax/ax-12a/#참고자료
     children:
-      - title: "Quick Start"
-        titlekr: "퀵스타트"
-        url: /dxl/ax/ax-12a/#quick-start
-        urlkr: /dxl/ax/ax-12a/#퀵스타트
+      - title: "Connector Information"
+        titlekr: "커넥터 정보"
+        url: /dxl/ax/ax-12a/#connector-information
+        urlkr: /dxl/ax/ax-12a/#커넥터-정보
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/ax/ax-12a/#drawings
@@ -1010,10 +857,10 @@ ax-18a:
     url: /dxl/ax/ax-18a/#reference
     urlkr: /dxl/ax/ax-18a/#참고자료
     children:
-      - title: "Quick Start"
-        titlekr: "퀵스타트"
-        url: /dxl/ax/ax-18a/#quick-start
-        urlkr: /dxl/ax/ax-18a/#퀵스타트
+      - title: "Connector Information"
+        titlekr: "커넥터 정보"
+        url: /dxl/ax/ax-18a/#connector-information
+        urlkr: /dxl/ax/ax-18a/#커넥터-정보
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/ax/ax-18a/#drawings
@@ -1138,10 +985,10 @@ ex-106+:
     url: /dxl/ex/ex-106+/#reference
     urlkr: /dxl/ex/ex-106+/#참고자료
     children:
-      - title: "Quick Start"
-        titlekr: "퀵스타트"
-        url: /dxl/ex/ex-106+/#quick-start
-        urlkr: /dxl/ex/ex-106+/#퀵스타트
+      - title: "Connector Information"
+        titlekr: "커넥터 정보"
+        url: /dxl/ex/ex-106+/#connector-information
+        urlkr: /dxl/ex/ex-106+/#커넥터-정보
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/ex/ex-106+/#drawings
@@ -1262,10 +1109,10 @@ dx-113:
     url: /dxl/dx/dx-113/#reference
     urlkr: /dxl/dx/dx-113/#참고자료
     children:
-      - title: "Quick Start"
-        titlekr: "퀵스타트"
-        url: /dxl/dx/dx-113/#quick-start
-        urlkr: /dxl/dx/dx-113/#퀵스타트
+      - title: "Connector Information"
+        titlekr: "커넥터 정보"
+        url: /dxl/dx/dx-113/#connector-information
+        urlkr: /dxl/dx/dx-113/#커넥터-정보
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/dx/dx-113/#drawings
@@ -1386,10 +1233,10 @@ dx-116:
     url: /dxl/dx/dx-116/#reference
     urlkr: /dxl/dx/dx-116/#참고자료
     children:
-      - title: "Quick Start"
-        titlekr: "퀵스타트"
-        url: /dxl/dx/dx-116/#quick-start
-        urlkr: /dxl/dx/dx-116/#퀵스타트
+      - title: "Connector Information"
+        titlekr: "커넥터 정보"
+        url: /dxl/dx/dx-116/#connector-information
+        urlkr: /dxl/dx/dx-116/#커넥터-정보
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/dx/dx-116/#drawings
@@ -1510,10 +1357,10 @@ dx-117:
     url: /dxl/dx/dx-117/#reference
     urlkr: /dxl/dx/dx-117/#참고자료
     children:
-      - title: "Quick Start"
-        titlekr: "퀵스타트"
-        url: /dxl/dx/dx-117/#quick-start
-        urlkr: /dxl/dx/dx-117/#퀵스타트
+      - title: "Connector Information"
+        titlekr: "커넥터 정보"
+        url: /dxl/dx/dx-117/#connector-information
+        urlkr: /dxl/dx/dx-117/#커넥터-정보
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/dx/dx-117/#drawings
@@ -1634,10 +1481,10 @@ rx-10:
     url: /dxl/rx/rx-10/#reference
     urlkr: /dxl/rx/rx-10/#참고자료
     children:
-      - title: "Quick Start"
-        titlekr: "퀵스타트"
-        url: /dxl/rx/rx-10/#quick-start
-        urlkr: /dxl/rx/rx-10/#퀵스타트
+      - title: "Connector Information"
+        titlekr: "커넥터 정보"
+        url: /dxl/rx/rx-10/#connector-information
+        urlkr: /dxl/rx/rx-10/#커넥터-정보
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/rx/rx-10/#drawings
@@ -1758,10 +1605,10 @@ rx-24f:
     url: /dxl/rx/rx-24f/#reference
     urlkr: /dxl/rx/rx-24f/#참고자료
     children:
-      - title: "Quick Start"
-        titlekr: "퀵스타트"
-        url: /dxl/rx/rx-24f/#quick-start
-        urlkr: /dxl/rx/rx-24f/#퀵스타트
+      - title: "Connector Information"
+        titlekr: "커넥터 정보"
+        url: /dxl/rx/rx-24f/#connector-information
+        urlkr: /dxl/rx/rx-24f/#커넥터-정보
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/rx/rx-24f/#drawings
@@ -1882,10 +1729,10 @@ rx-28:
     url: /dxl/rx/rx-28/#reference
     urlkr: /dxl/rx/rx-28/#참고자료
     children:
-      - title: "Quick Start"
-        titlekr: "퀵스타트"
-        url: /dxl/rx/rx-28/#quick-start
-        urlkr: /dxl/rx/rx-28/#퀵스타트
+      - title: "Connector Information"
+        titlekr: "커넥터 정보"
+        url: /dxl/rx/rx-28/#connector-information
+        urlkr: /dxl/rx/rx-28/#커넥터-정보
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/rx/rx-28/#drawings
@@ -2006,10 +1853,10 @@ rx-64:
     url: /dxl/rx/rx-64/#reference
     urlkr: /dxl/rx/rx-64/#참고자료
     children:
-      - title: "Quick Start"
-        titlekr: "퀵스타트"
-        url: /dxl/rx/rx-64/#quick-start
-        urlkr: /dxl/rx/rx-64/#퀵스타트
+      - title: "Connector Information"
+        titlekr: "커넥터 정보"
+        url: /dxl/rx/rx-64/#connector-information
+        urlkr: /dxl/rx/rx-64/#커넥터-정보
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/rx/rx-64/#drawings
@@ -2138,10 +1985,10 @@ mx-12w:
     url: /dxl/mx/mx-12w/#reference
     urlkr: /dxl/mx/mx-12w/#참고자료
     children:
-      - title: "Quick Start"
-        titlekr: "퀵스타트"
-        url: /dxl/mx/mx-12w/#quick-start
-        urlkr: /dxl/mx/mx-12w/#퀵스타트
+      - title: "Connector Information"
+        titlekr: "커넥터 정보"
+        url: /dxl/mx/mx-12w/#connector-information
+        urlkr: /dxl/mx/mx-12w/#커넥터-정보
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/mx/mx-12w/#drawings
@@ -2271,10 +2118,10 @@ mx-28:
     url: /dxl/mx/mx-28/#reference
     urlkr: /dxl/mx/mx-28/#참고자료
     children:
-      - title: "Quick Start"
-        titlekr: "퀵스타트"
-        url: /dxl/mx/mx-28/#quick-start
-        urlkr: /dxl/mx/mx-28/#퀵스타트
+      - title: "Connector Information"
+        titlekr: "커넥터 정보"
+        url: /dxl/mx/mx-28/#connector-information
+        urlkr: /dxl/mx/mx-28/#커넥터-정보
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/mx/mx-28/#drawings
@@ -2410,10 +2257,10 @@ mx-64:
     url: /dxl/mx/mx-64/#reference
     urlkr: /dxl/mx/mx-64/#참고자료
     children:
-      - title: "Quick Start"
-        titlekr: "퀵스타트"
-        url: /dxl/mx/mx-64/#quick-start
-        urlkr: /dxl/mx/mx-64/#퀵스타트
+      - title: "Connector Information"
+        titlekr: "커넥터 정보"
+        url: /dxl/mx/mx-64/#connector-information
+        urlkr: /dxl/mx/mx-64/#커넥터-정보
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/mx/mx-64/#drawings
@@ -2551,10 +2398,10 @@ mx-106:
     url: /dxl/mx/mx-106/#reference
     urlkr: /dxl/mx/mx-106/#참고자료
     children:
-      - title: "Quick Start"
-        titlekr: "퀵스타트"
-        url: /dxl/mx/mx-106/#quick-start
-        urlkr: /dxl/mx/mx-106/#퀵스타트
+      - title: "Connector Information"
+        titlekr: "커넥터 정보"
+        url: /dxl/mx/mx-106/#connector-information
+        urlkr: /dxl/mx/mx-106/#커넥터-정보
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/mx/mx-106/#drawings
@@ -2623,10 +2470,10 @@ mx-28-2:
     url: /dxl/mx/mx-28-2/#reference
     urlkr: /dxl/mx/mx-28-2/#참고자료
     children:
-      - title: "Quick Start"
-        titlekr: "퀵스타트"
-        url: /dxl/mx/mx-28-2/#quick-start
-        urlkr: /dxl/mx/mx-28-2/#퀵스타트
+      - title: "Connector Information"
+        titlekr: "커넥터 정보"
+        url: /dxl/mx/mx-28-2/#connector-information
+        urlkr: /dxl/mx/mx-28-2/#커넥터-정보
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/mx/mx-28-2/#drawings
@@ -2695,10 +2542,10 @@ mx-64-2:
     url: /dxl/mx/mx-64-2/#reference
     urlkr: /dxl/mx/mx-64-2/#참고자료
     children:
-      - title: "Quick Start"
-        titlekr: "퀵스타트"
-        url: /dxl/mx/mx-64-2/#quick-start
-        urlkr: /dxl/mx/mx-64-2/#퀵스타트
+      - title: "Connector Information"
+        titlekr: "커넥터 정보"
+        url: /dxl/mx/mx-64-2/#connector-information
+        urlkr: /dxl/mx/mx-64-2/#커넥터-정보
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/mx/mx-64-2/#drawings
@@ -2767,10 +2614,10 @@ mx-106-2:
     url: /dxl/mx/mx-106-2/#reference
     urlkr: /dxl/mx/mx-106-2/#참고자료
     children:
-      - title: "Quick Start"
-        titlekr: "퀵스타트"
-        url: /dxl/mx/mx-106-2/#quick-start
-        urlkr: /dxl/mx/mx-106-2/#퀵스타트
+      - title: "Connector Information"
+        titlekr: "커넥터 정보"
+        url: /dxl/mx/mx-106-2/#connector-information
+        urlkr: /dxl/mx/mx-106-2/#커넥터-정보
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/mx/mx-106-2/#drawings
@@ -2852,6 +2699,10 @@ xh430-v210:
         titlekr: "퀵스타트"
         url: /dxl/x/xh430-v210/#quick-start
         urlkr: /dxl/x/xh430-v210/#퀵스타트
+      - title: "Connector Information"
+        titlekr: "커넥터 정보"
+        url: /dxl/x/xh430-v210/#connector-information
+        urlkr: /dxl/x/xh430-v210/#커넥터-정보
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/x/xh430-v210/#drawings
@@ -2929,6 +2780,10 @@ xh430-v350:
         titlekr: "퀵스타트"
         url: /dxl/x/xh430-v350/#quick-start
         urlkr: /dxl/x/xh430-v350/#퀵스타트
+      - title: "Connector Information"
+        titlekr: "커넥터 정보"
+        url: /dxl/x/xh430-v350/#connector-information
+        urlkr: /dxl/x/xh430-v350/#커넥터-정보
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/x/xh430-v350/#drawings
@@ -3006,6 +2861,10 @@ xh430-w210:
         titlekr: "퀵스타트"
         url: /dxl/x/xh430-w210/#quick-start
         urlkr: /dxl/x/xh430-w210/#퀵스타트
+      - title: "Connector Information"
+        titlekr: "커넥터 정보"
+        url: /dxl/x/xh430-w210/#connector-information
+        urlkr: /dxl/x/xh430-w210/#커넥터-정보
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/x/xh430-w210/#drawings
@@ -3083,6 +2942,10 @@ xh430-w350:
         titlekr: "퀵스타트"
         url: /dxl/x/xh430-w350/#quick-start
         urlkr: /dxl/x/xh430-w350/#퀵스타트
+      - title: "Connector Information"
+        titlekr: "커넥터 정보"
+        url: /dxl/x/xh430-w350/#connector-information
+        urlkr: /dxl/x/xh430-w350/#커넥터-정보
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/x/xh430-w350/#drawings
@@ -3206,6 +3069,10 @@ xl430-w250:
         titlekr: "퀵스타트"
         url: /dxl/x/xl430-w250/#quick-start
         urlkr: /dxl/x/xl430-w250/#퀵스타트
+      - title: "Connector Information"
+        titlekr: "커넥터 정보"
+        url: /dxl/x/xl430-w250/#connector-information
+        urlkr: /dxl/x/xl430-w250/#커넥터-정보
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/x/xl430-w250/#drawings
@@ -3283,6 +3150,10 @@ xm430-w210:
         titlekr: "퀵스타트"
         url: /dxl/x/xm430-w210/#quick-start
         urlkr: /dxl/x/xm430-w210/#퀵스타트
+      - title: "Connector Information"
+        titlekr: "커넥터 정보"
+        url: /dxl/x/xm430-w210/#connector-information
+        urlkr: /dxl/x/xm430-w210/#커넥터-정보
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/x/xm430-w210/#drawings
@@ -3360,6 +3231,10 @@ xm430-w350:
         titlekr: "퀵스타트"
         url: /dxl/x/xm430-w350/#quick-start
         urlkr: /dxl/x/xm430-w350/#퀵스타트
+      - title: "Connector Information"
+        titlekr: "커넥터 정보"
+        url: /dxl/x/xm430-w350/#connector-information
+        urlkr: /dxl/x/xm430-w350/#커넥터-정보
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/x/xm430-w350/#drawings
@@ -3437,6 +3312,10 @@ xm540-w150:
         titlekr: "퀵스타트"
         url: /dxl/x/xm540-w150/#quick-start
         urlkr: /dxl/x/xm540-w150/#퀵스타트
+      - title: "Connector Information"
+        titlekr: "커넥터 정보"
+        url: /dxl/x/xm540-w150/#connector-information
+        urlkr: /dxl/x/xm540-w150/#커넥터-정보
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/x/xm540-w150/#drawings
@@ -3514,6 +3393,10 @@ xm540-w270:
         titlekr: "퀵스타트"
         url: /dxl/x/xm540-w270/#quick-start
         urlkr: /dxl/x/xm540-w270/#퀵스타트
+      - title: "Connector Information"
+        titlekr: "커넥터 정보"
+        url: /dxl/x/xm540-w270/#connector-information
+        urlkr: /dxl/x/xm540-w270/#커넥터-정보
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/x/xm540-w270/#drawings
@@ -3578,10 +3461,10 @@ h42-20-s300-r:
     url: /dxl/pro/h42-20-s300-r/#reference
     urlkr: /dxl/pro/h42-20-s300-r/#참고자료
     children:
-      - title: "Quick Start"
-        titlekr: "퀵스타트"
-        url: /dxl/pro/h42-20-s300-r/#quick-start
-        urlkr: /dxl/pro/h42-20-s300-r/#퀵스타트
+      - title: "Connector Information"
+        titlekr: "커넥터 정보"
+        url: /dxl/pro/h42-20-s300-r/#connector-information
+        urlkr: /dxl/pro/h42-20-s300-r/#커넥터-정보
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/pro/h42-20-s300-r/#drawings
@@ -3646,10 +3529,10 @@ h54-100-s500-r:
     url: /dxl/pro/h54-100-s500-r/#reference
     urlkr: /dxl/pro/h54-100-s500-r/#참고자료
     children:
-      - title: "Quick Start"
-        titlekr: "퀵스타트"
-        url: /dxl/pro/h54-100-s500-r/#quick-start
-        urlkr: /dxl/pro/h54-100-s500-r/#퀵스타트
+      - title: "Connector Information"
+        titlekr: "커넥터 정보"
+        url: /dxl/pro/h54-100-s500-r/#connector-information
+        urlkr: /dxl/pro/h54-100-s500-r/#커넥터-정보
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/pro/h54-100-s500-r/#drawings
@@ -3714,10 +3597,10 @@ h54-200-s500-r:
     url: /dxl/pro/h54-200-s500-r/#reference
     urlkr: /dxl/pro/h54-200-s500-r/#참고자료
     children:
-      - title: "Quick Start"
-        titlekr: "퀵스타트"
-        url: /dxl/pro/h54-200-s500-r/#quick-start
-        urlkr: /dxl/pro/h54-200-s500-r/#퀵스타트
+      - title: "Connector Information"
+        titlekr: "커넥터 정보"
+        url: /dxl/pro/h54-200-s500-r/#connector-information
+        urlkr: /dxl/pro/h54-200-s500-r/#커넥터-정보
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/pro/h54-200-s500-r/#drawings
@@ -3782,10 +3665,10 @@ l42-10-s300-r:
     url: /dxl/pro/l42-10-s300-r/#reference
     urlkr: /dxl/pro/l42-10-s300-r/#참고자료
     children:
-      - title: "Quick Start"
-        titlekr: "퀵스타트"
-        url: /dxl/pro/l42-10-s300-r/#quick-start
-        urlkr: /dxl/pro/l42-10-s300-r/#퀵스타트
+      - title: "Connector Information"
+        titlekr: "커넥터 정보"
+        url: /dxl/pro/l42-10-s300-r/#connector-information
+        urlkr: /dxl/pro/l42-10-s300-r/#커넥터-정보
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/pro/l42-10-s300-r/#drawings
@@ -3850,10 +3733,10 @@ l54-30-s400-r:
     url: /dxl/pro/l54-30-s400-r/#reference
     urlkr: /dxl/pro/l54-30-s400-r/#참고자료
     children:
-      - title: "Quick Start"
-        titlekr: "퀵스타트"
-        url: /dxl/pro/l54-30-s400-r/#quick-start
-        urlkr: /dxl/pro/l54-30-s400-r/#퀵스타트
+      - title: "Connector Information"
+        titlekr: "커넥터 정보"
+        url: /dxl/pro/l54-30-s400-r/#connector-information
+        urlkr: /dxl/pro/l54-30-s400-r/#커넥터-정보
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/pro/l54-30-s400-r/#drawings
@@ -3918,10 +3801,10 @@ l54-30-s500-r:
     url: /dxl/pro/l54-30-s500-r/#reference
     urlkr: /dxl/pro/l54-30-s500-r/#참고자료
     children:
-      - title: "Quick Start"
-        titlekr: "퀵스타트"
-        url: /dxl/pro/l54-30-s500-r/#quick-start
-        urlkr: /dxl/pro/l54-30-s500-r/#퀵스타트
+      - title: "Connector Information"
+        titlekr: "커넥터 정보"
+        url: /dxl/pro/l54-30-s500-r/#connector-information
+        urlkr: /dxl/pro/l54-30-s500-r/#커넥터-정보
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/pro/l54-30-s500-r/#drawings
@@ -3986,10 +3869,10 @@ l54-50-s290-r:
     url: /dxl/pro/l54-50-s290-r/#reference
     urlkr: /dxl/pro/l54-50-s290-r/#참고자료
     children:
-      - title: "Quick Start"
-        titlekr: "퀵스타트"
-        url: /dxl/pro/l54-50-s290-r/#quick-start
-        urlkr: /dxl/pro/l54-50-s290-r/#퀵스타트
+      - title: "Connector Information"
+        titlekr: "커넥터 정보"
+        url: /dxl/pro/l54-50-s290-r/#connector-information
+        urlkr: /dxl/pro/l54-50-s290-r/#커넥터-정보
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/pro/l54-50-s290-r/#drawings
@@ -4054,10 +3937,10 @@ l54-50-s500-r:
     url: /dxl/pro/l54-50-s500-r/#reference
     urlkr: /dxl/pro/l54-50-s500-r/#참고자료
     children:
-      - title: "Quick Start"
-        titlekr: "퀵스타트"
-        url: /dxl/pro/l54-50-s500-r/#quick-start
-        urlkr: /dxl/pro/l54-50-s500-r/#퀵스타트
+      - title: "Connector Information"
+        titlekr: "커넥터 정보"
+        url: /dxl/pro/l54-50-s500-r/#connector-information
+        urlkr: /dxl/pro/l54-50-s500-r/#커넥터-정보
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/pro/l54-50-s500-r/#drawings
@@ -4122,10 +4005,10 @@ m42-10-s260-r:
     url: /dxl/pro/m42-10-s260-r/#reference
     urlkr: /dxl/pro/m42-10-s260-r/#참고자료
     children:
-      - title: "Quick Start"
-        titlekr: "퀵스타트"
-        url: /dxl/pro/m42-10-s260-r/#quick-start
-        urlkr: /dxl/pro/m42-10-s260-r/#퀵스타트
+      - title: "Connector Information"
+        titlekr: "커넥터 정보"
+        url: /dxl/pro/m42-10-s260-r/#connector-information
+        urlkr: /dxl/pro/m42-10-s260-r/#커넥터-정보
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/pro/m42-10-s260-r/#drawings
@@ -4190,10 +4073,10 @@ m54-40-s250-r:
     url: /dxl/pro/m54-40-s250-r/#reference
     urlkr: /dxl/pro/m54-40-s250-r/#참고자료
     children:
-      - title: "Quick Start"
-        titlekr: "퀵스타트"
-        url: /dxl/pro/m54-40-s250-r/#quick-start
-        urlkr: /dxl/pro/m54-40-s250-r/#퀵스타트
+      - title: "Connector Information"
+        titlekr: "커넥터 정보"
+        url: /dxl/pro/m54-40-s250-r/#connector-information
+        urlkr: /dxl/pro/m54-40-s250-r/#커넥터-정보
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/pro/m54-40-s250-r/#drawings
@@ -4258,10 +4141,10 @@ m54-60-s250-r:
     url: /dxl/pro/m54-60-s250-r/#reference
     urlkr: /dxl/pro/m54-60-s250-r/#참고자료
     children:
-      - title: "Quick Start"
-        titlekr: "퀵스타트"
-        url: /dxl/pro/m54-60-s250-r/#quick-start
-        urlkr: /dxl/pro/m54-60-s250-r/#퀵스타트
+      - title: "Connector Information"
+        titlekr: "커넥터 정보"
+        url: /dxl/pro/m54-60-s250-r/#connector-information
+        urlkr: /dxl/pro/m54-60-s250-r/#커넥터-정보
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/pro/m54-60-s250-r/#drawings
@@ -4441,8 +4324,8 @@ ollo_inventor:
 dream1-1:
   - titlekr: "개요"
     urlkr: /edu/dream/dream1-1/#개요
-  - titlekr: "부품 목록"
-    urlkr: /edu/dream/dream1-1/#부품-목록
+  - titlekr: "부품 리스트"
+    urlkr: /edu/dream/dream1-1/#부품-리스트
 
 #DreamI Level2 sidebar
 dream1-2:
@@ -4451,9 +4334,9 @@ dream1-2:
     url: /edu/dream/dream1-2/#introduction
     urlkr: /edu/dream/dream1-2/#개요
   - title: "Part List"
-    titlekr: "부품 목록"
+    titlekr: "부품 리스트"
     url: /edu/dream/dream1-2/#part-list
-    urlkr: /edu/dream/dream1-2/#부품-목록
+    urlkr: /edu/dream/dream1-2/#부품-리스트
   - title: "Quick Start"
     titlekr: "작동하기"
     url: /edu/dream/dream1-2/#quick-start
@@ -4479,9 +4362,9 @@ dream1-3:
     url: /edu/dream/dream1-3/#introduction
     urlkr: /edu/dream/dream1-3/#개요
   - title: "Part List"
-    titlekr: "부품 목록"
+    titlekr: "부품 리스트"
     url: /edu/dream/dream1-3/#part-list
-    urlkr: /edu/dream/dream1-3/#부품-목록
+    urlkr: /edu/dream/dream1-3/#부품-리스트
   - title: "Examples"
     titlekr: "교안예제"
     url: /edu/dream/dream1-3/#examples
@@ -4494,9 +4377,9 @@ dream1-4:
     url: /edu/dream/dream1-4/#introduction
     urlkr: /edu/dream/dream1-4/#개요
   - title: "Part List"
-    titlekr: "부품 목록"
+    titlekr: "부품 리스트"
     url: /edu/dream/dream1-4/#part-list
-    urlkr: /edu/dream/dream1-4/#부품-목록
+    urlkr: /edu/dream/dream1-4/#부품-리스트
   - title: "Examples"
     titlekr: "교안예제"
     url: /edu/dream/dream1-4/#examples
@@ -4527,6 +4410,56 @@ dream-b:
   - title: "Examples"
     url: /edu/dream/dream-b/#examples
 
+dream2-1:
+  - titlekr: "개요"
+    urlkr: /edu/dream/dream2-1/#개요
+  - titlekr: "부품 리스트"
+    urlkr: /edu/dream/dream2-1/#부품-리스트
+
+dream2-2:
+  - titlekr: "개요"
+    urlkr: /edu/dream/dream2-2/#개요
+  - titlekr: "부품 리스트"
+    urlkr: /edu/dream/dream2-2/#부품-리스트
+  - titlekr: "작동하기"
+    urlkr: /edu/dream/dream2-2/#작동하기
+    children:
+    - titlekr: "작동방법"
+      urlkr: /edu/dream/dream2-2/#작동방법
+    - titlekr: "프로그램 선택 방법"
+      urlkr: /edu/dream/dream2-2/#프로그램-선택-방법
+  - titlekr: "교안예제"
+    urlkr: /edu/dream/dream2-2/#교안예제
+    children:
+    - titlekr: "통합 예제 프로그램"
+      urlkr: /edu/dream/dream2-2/#통합-예제-프로그램
+    - titlekr: "단원별 예제 프로그램"
+      urlkr: /edu/dream/dream2-2/#단원별-예제-프로그램
+
+dream2-3:
+  - titlekr: "개요"
+    urlkr: /edu/dream/dream2-3/#개요
+  - titlekr: "부품 리스트"
+    urlkr: /edu/dream/dream2-3/#부품-리스트
+  - titlekr: "교안예제"
+    urlkr: /edu/dream/dream2-3/#교안예제
+
+dream2-4:
+  - titlekr: "개요"
+    urlkr: /edu/dream/dream2-4/#개요
+  - titlekr: "부품 리스트"
+    urlkr: /edu/dream/dream2-4/#부품-리스트
+  - titlekr: "교안예제"
+    urlkr: /edu/dream/dream2-4/#교안예제
+
+dream2-5:
+  - titlekr: "개요"
+    urlkr: /edu/dream/dream2-5/#개요
+  - titlekr: "부품 리스트"
+    urlkr: /edu/dream/dream2-5/#부품-리스트
+  - titlekr: "교안예제"
+    urlkr: /edu/dream/dream2-5/#교안예제
+
 #SmartIII Level2 sidebar
 smart3-2:
   - titlekr: "부품 목록"
@@ -4545,487 +4478,610 @@ smart3-2:
   - titlekr: "교안예제"
     urlkr: /edu/smart/smart3-2/#교안예제
 
+iot-1:
+  - titlekr: "개요"
+    urlkr: /edu/iot/iot-1/#개요
+  - titlekr: "부품 리스트"
+    urlkr: /edu/iot/iot-1/#부품-리스트
+  - titlekr: "작동하기"
+    urlkr: /edu/iot/iot-1/#작동하기
+  - titlekr: "교안예제"
+    urlkr: /edu/iot/iot-1/#교안예제
+
+iot-2:
+  - titlekr: "개요"
+    urlkr: /edu/iot/iot-2/#개요
+  - titlekr: "부품 리스트"
+    urlkr: /edu/iot/iot-2/#부품-리스트
+  - titlekr: "작동하기"
+    urlkr: /edu/iot/iot-2/#작동하기
+  - titlekr: "교안예제"
+    urlkr: /edu/iot/iot-2/#교안예제
+
+#BIOLOID
+bioloid:
+  - titlekr: "바이올로이드 초급키트"
+    urlkr: /edu/bioloid/#
+  - titlekr: "바이올로이드 종합키트"
+    urlkr: /edu/bioloid/#바이올로이드-종합키트
+  - titlekr: "로보티즈 STEM"
+    urlkr: /edu/bioloid/#로보티즈-stem
+  - titlekr: "로보티즈 프리미엄"
+    urlkr: /edu/bioloid/#로보티즈-프리미엄
+  - titlekr: "로보티즈 GP"
+    urlkr: /edu/bioloid/#로보티즈-gp
+
 #BIOLOID Beginner sidebar
 bioloid-beginner:
   - title: "Introduction"
     titlekr: "개요"
     url: /edu/bioloid/beginner/#introduction
-    urlkr:
+    urlkr: /edu/bioloid/beginner/#개요
   - title: "Getting Started"
-    titlekr: ""
+    titlekr: "시작하기"
     url: /edu/bioloid/beginner/#getting-started
-    urlkr:
+    urlkr: /edu/bioloid/beginner/#시작하기
     children:
     - title: "Part List"
-      titlekr: ""
+      titlekr: "부품 리스트"
       url: /edu/bioloid/beginner/#part-list
-      urlkr:
+      urlkr: /edu/bioloid/beginner/#부품-리스트
     - title: "Preparation"
-      titlekr: ""
+      titlekr: "로보플러스 사용준비"
       url: /edu/bioloid/beginner/#preparation
-      urlkr:
+      urlkr: /edu/bioloid/beginner/#로보플러스-사용준비
     - title: "Operating"
-      titlekr: ""
+      titlekr: "작동하기"
       url: /edu/bioloid/beginner/#operating
-      urlkr:
+      urlkr: /edu/bioloid/beginner/#작동하기
     - title: "Charging CM-5"
-      titlekr: ""
+      titlekr: "충전하기(CM-5)"
       url: /edu/bioloid/beginner/#charging-cm-5
-      urlkr:
+      urlkr: /edu/bioloid/beginner/#충전하기cm-5
   - title: "Tutorial"
-    titlekr: ""
+    titlekr: "튜토리얼"
     url: /edu/bioloid/beginner/#tutorial
-    urlkr:
+    urlkr: /edu/bioloid/beginner/#튜토리얼
     children:
     - title: "Screen Output"
-      titlekr: ""
+      titlekr: "화면 출력하기"
       url: /edu/bioloid/beginner/#screen-output
-      urlkr:
+      urlkr: /edu/bioloid/beginner/#화면-출력하기
     - title: "Button & LED"
-      titlekr: ""
-      url: /edu/bioloid/beginner/#button-led
-      urlkr:
+      titlekr: "버튼과 LED"
+      url: /edu/bioloid/beginner/#button--led
+      urlkr: /edu/bioloid/beginner/#버튼과-led
     - title: "Attacking Duck"
-      titlekr: ""
+      titlekr: "공격하는 오리"
       url: /edu/bioloid/beginner/#attacking-duck
-      urlkr:
+      urlkr: /edu/bioloid/beginner/#공격하는-오리
     - title: "Obstacle Detecting Car"
-      titlekr: ""
+      titlekr: "장애물 감지 자동차"
       url: /edu/bioloid/beginner/#obstacle-detecting-car
-      urlkr:
+      urlkr: /edu/bioloid/beginner/#장애물-감지-자동차
     - title: "Walking Droid 1"
-      titlekr: ""
+      titlekr: "보행 드로이드 제작 1(모션 만들기)"
       url: /edu/bioloid/beginner/#walking-droid-1
-      urlkr:
+      urlkr: /edu/bioloid/beginner/#보행-드로이드-제작-1모션-만들기
     - title: "Walking Droid 2"
-      titlekr: ""
+      titlekr: "보행 드로이드 제작 2(태스크 코드)"
       url: /edu/bioloid/beginner/#walking-droid-2
-      urlkr:
+      urlkr: /edu/bioloid/beginner/#보행-드로이드-제작-2태스크-코드
     - title: "Walking Droid 3"
-      titlekr: ""
+      titlekr: "보행 드로이드 제작 3(무선 조종)"
       url: /edu/bioloid/beginner/#walking-droid-3
-      urlkr:
+      urlkr: /edu/bioloid/beginner/#보행-드로이드-제작-3무선-조종
     - title: "Converting .bpg to .tsk"
-      titlekr: ""
+      titlekr: ".bpg를 .tsk로 변환"
       url: /edu/bioloid/beginner/#converting-bpg-to-tsk
-      urlkr:
+      urlkr: /edu/bioloid/beginner/#bpg를-tsk로-변환
   - title: "Download"
-    titlekr: ""
+    titlekr: "다운로드"
     url: /edu/bioloid/beginner/#download
-    urlkr:
+    urlkr: /edu/bioloid/beginner/#다운로드
     children:
     - title: "Download Task Code"
+      titlekr: "태스크 코드 다운로드"
       url: /edu/bioloid/beginner/#download-task-code
+      urlkr: /edu/bioloid/beginner/#태스크-코드-다운로드
     - title: "Download Motion File"
+      titlekr: "모션 파일 다운로드"
       url: /edu/bioloid/beginner/#download-motion-file
+      urlkr: /edu/bioloid/beginner/#모션-파일-다운로드
     - title: "Examples"
+      titlekr: "예제"
       url: /edu/bioloid/beginner/#examples
+      urlkr: /edu/bioloid/beginner/#예제
   - title: "References"
-    titlekr: ""
+    titlekr: "참고자료"
     url: /edu/bioloid/beginner/#references
-    urlkr:
+    urlkr: /edu/bioloid/beginner/#참고자료
     children:
     - title: "Replacing Fuse"
-      titlekr: ""
+      titlekr: "퓨즈 교체하기"
       url: /edu/bioloid/beginner/#replacing-fuse-cm-5
-      urlkr:
+      urlkr: /edu/bioloid/beginner/#퓨즈-교체하기cm-5
     - title: "Dynamixel Management"
-      titlekr: ""
+      titlekr: "다이나믹셀 관리하기"
       url: /edu/bioloid/beginner/#dynamixel-management
-      urlkr:
+      urlkr: /edu/bioloid/beginner/#다이나믹셀-관리하기
     - title: "Zigbee Wireless Control"
-      titlekr: ""
+      titlekr: "지그비 무선 조종"
       url: /edu/bioloid/beginner/#zigbee-wireless-control
-      urlkr:
+      urlkr: /edu/bioloid/beginner/#지그비-무선-조종
     - title: "Control Multiple Robots"
-      titlekr: ""
+      titlekr: "여러 대의 로봇 조종하기"
       url: /edu/bioloid/beginner/#control-multiple-robots
-      urlkr:
+      urlkr: /edu/bioloid/beginner/#여러-대의-로봇-조종하기
 
 #BIOLOID Comprehensive sidebar
 bioloid-comprehensive:
   - title: "Introduction"
     titlekr: "개요"
     url: /edu/bioloid/comprehensive/#introduction
-    urlkr:
+    urlkr: /edu/bioloid/comprehensive/#개요
   - title: "Getting Started"
-    titlekr: ""
+    titlekr: "시작하기"
     url: /edu/bioloid/comprehensive/#getting-started
-    urlkr:
+    urlkr: /edu/bioloid/comprehensive/#시작하기
     children:
     - title: "Part List"
-      titlekr: ""
+      titlekr: "부품 리스트"
       url: /edu/bioloid/comprehensive/#part-list
-      urlkr:
+      urlkr: /edu/bioloid/comprehensive/#부품-리스트
     - title: "Preparation"
-      titlekr: ""
+      titlekr: "로보플러스 사용준비"
       url: /edu/bioloid/comprehensive/#preparation
-      urlkr:
+      urlkr: /edu/bioloid/comprehensive/#로보플러스-사용준비
     - title: "Operating"
-      titlekr: ""
+      titlekr: "작동하기"
       url: /edu/bioloid/comprehensive/#operating
-      urlkr:
+      urlkr: /edu/bioloid/comprehensive/#작동하기
     - title: "Charging CM-5"
-      titlekr: ""
+      titlekr: "충전하기(CM-5)"
       url: /edu/bioloid/comprehensive/#charging-cm-5
-      urlkr:
+      urlkr: /edu/bioloid/comprehensive/#충전하기cm-5
   - title: "Tutorial"
-    titlekr: ""
+    titlekr: "튜토리얼"
     url: /edu/bioloid/comprehensive/#tutorial
-    urlkr:
+    urlkr: /edu/bioloid/comprehensive/#튜토리얼
     children:
     - title: "Screen Output"
-      titlekr: ""
+      titlekr: "화면 출력하기"
       url: /edu/bioloid/comprehensive/#screen-output
-      urlkr:
+      urlkr: /edu/bioloid/comprehensive/#화면-출력하기
     - title: "Button & LED"
-      titlekr: ""
-      url: /edu/bioloid/comprehensive/#button-led
-      urlkr:
+      titlekr: "버튼과 LED"
+      url: /edu/bioloid/comprehensive/#button--led
+      urlkr: /edu/bioloid/comprehensive/#버튼과-led
     - title: "Attacking Duck"
-      titlekr: ""
+      titlekr: "공격하는 오리"
       url: /edu/bioloid/comprehensive/#attacking-duck
-      urlkr:
+      urlkr: /edu/bioloid/comprehensive/#공격하는-오리
     - title: "Obstacle Detecting Car"
-      titlekr: ""
+      titlekr: "장애물 감지차"
       url: /edu/bioloid/comprehensive/#obstacle-detecting-car
-      urlkr:
+      urlkr: /edu/bioloid/comprehensive/#장애물-감지차
     - title: "Walking Droid 1"
-      titlekr: ""
+      titlekr: "보행 드로이드 제작 1(모션 만들기)"
       url: /edu/bioloid/comprehensive/#walking-droid-1
-      urlkr:
+      urlkr: /edu/bioloid/comprehensive/#보행-드로이드-제작-1모션-만들기
     - title: "Walking Droid 2"
-      titlekr: ""
+      titlekr: "보행 드로이드 제작 2(태스크 코드)"
       url: /edu/bioloid/comprehensive/#walking-droid-2
-      urlkr:
+      urlkr: /edu/bioloid/comprehensive/#보행-드로이드-제작-2태스크-코드
     - title: "Walking Droid 3"
-      titlekr: ""
+      titlekr: "보행 드로이드 제작 3(무선 조종)"
       url: /edu/bioloid/comprehensive/#walking-droid-3
-      urlkr:
+      urlkr: /edu/bioloid/comprehensive/#보행-드로이드-제작-3무선-조종
     - title: "Converting .bpg to .tsk"
-      titlekr: ""
+      titlekr: ".bpg를 .tsk로 변환"
       url: /edu/bioloid/comprehensive/#converting-bpg-to-tsk
-      urlkr:
+      urlkr: /edu/bioloid/comprehensive/#bpg를-tsk로-변환
   - title: "Download"
-    titlekr: ""
+    titlekr: "다운로드"
     url: /edu/bioloid/comprehensive/#download
-    urlkr:
+    urlkr: /edu/bioloid/comprehensive/#다운로드
     children:
     - title: "Download Task Code"
+      titlekr: "태스크 코드 다운로드"
       url: /edu/bioloid/comprehensive/#download-task-code
+      urlkr: /edu/bioloid/comprehensive/#태스크-코드-다운로드
     - title: "Download Motion File"
+      titlekr: "모션 파일 다운로드"
       url: /edu/bioloid/comprehensive/#download-motion-file
+      urlkr: /edu/bioloid/comprehensive/#모션-파일-다운로드
     - title: "Examples"
+      titlekr: "예제"
       url: /edu/bioloid/comprehensive/#examples
+      urlkr: /edu/bioloid/comprehensive/#예제
+      children:
+      - title: "Beginner Level"
+        titlekr: "초급 레벨"
+        url: /edu/bioloid/comprehensive/#beginner-level
+        urlkr: /edu/bioloid/comprehensive/#초급-레벨
+      - title: "Intermediate Level"
+        titlekr: "중급 레벨"
+        url: /edu/bioloid/comprehensive/#intermediate-level
+        urlkr: /edu/bioloid/comprehensive/#중급-레벨
+      - title: "Advanced Level"
+        titlekr: "고급 레벨"
+        url: /edu/bioloid/comprehensive/#advanced-level
+        urlkr: /edu/bioloid/comprehensive/#고급-레벨
   - title: "References"
-    titlekr: ""
+    titlekr: "참고자료"
     url: /edu/bioloid/comprehensive/#references
-    urlkr:
+    urlkr: /edu/bioloid/comprehensive/#참고자료
     children:
     - title: "Replacing Fuse"
-      titlekr: ""
+      titlekr: "퓨즈 교체하기"
       url: /edu/bioloid/comprehensive/#replacing-fuse-cm-5
-      urlkr:
+      urlkr: /edu/bioloid/comprehensive/#퓨즈-교체하기cm-5
     - title: "Dynamixel Management"
-      titlekr: ""
+      titlekr: "다이나믹셀 관리하기"
       url: /edu/bioloid/comprehensive/#dynamixel-management
-      urlkr:
+      urlkr: /edu/bioloid/comprehensive/#다이나믹셀-관리하기
     - title: "Zigbee Wireless Control"
-      titlekr: ""
+      titlekr: "지그비 무선 조종"
       url: /edu/bioloid/comprehensive/#zigbee-wireless-control
-      urlkr:
+      urlkr: /edu/bioloid/comprehensive/#지그비-무선-조종
     - title: "Control Multiple Robots"
-      titlekr: ""
+      titlekr: "여러 대의 로봇 조종하기"
       url: /edu/bioloid/comprehensive/#control-multiple-robots
-      urlkr:
+      urlkr: /edu/bioloid/comprehensive/#여러-대의-로봇-조종하기
 
 #BIOLOID STEM sidebar
 bioloid-stem:
   - title: "Introduction"
     titlekr: "개요"
     url: /edu/bioloid/stem/#introduction
-    urlkr:
+    urlkr: /edu/bioloid/stem/#개요
   - title: "Getting Started"
-    titlekr: ""
+    titlekr: "시작하기"
     url: /edu/bioloid/stem/#getting-started
-    urlkr:
+    urlkr: /edu/bioloid/stem/#시작하기
     children:
     - title: "Standard Part List"
-      titlekr: ""
+      titlekr: "Level 1 부품 리스트"
       url: /edu/bioloid/stem/#standard-part-list
-      urlkr:
+      urlkr: /edu/bioloid/stem/#level-1-부품-리스트
     - title: "Expansion Part List"
-      titlekr: ""
+      titlekr: "Level 2 부품 리스트"
       url: /edu/bioloid/stem/#expansion-part-list
-      urlkr:
+      urlkr: /edu/bioloid/stem/#level-2-부품-리스트
     - title: "Operating"
-      titlekr: ""
+      titlekr: "작동하기"
       url: /edu/bioloid/stem/#operating
-      urlkr:
+      urlkr: /edu/bioloid/stem/#작동하기
     - title: "Battery Charge"
-      titlekr: ""
+      titlekr: "충전하기"
       url: /edu/bioloid/stem/#battery-charge
-      urlkr:
+      urlkr: /edu/bioloid/stem/#충전하기
   - title: "Download"
-    titlekr: ""
+    titlekr: "다운로드"
     url: /edu/bioloid/stem/#download
-    urlkr:
+    urlkr: /edu/bioloid/stem/#다운로드
     children:
     - title: "Standard Examples"
+      titlekr: "STEM Level 1 예제"
       url: /edu/bioloid/stem/#standard-examples
+      urlkr: /edu/bioloid/stem/#stem-level-1-예제
     - title: "Expansion Examples"
+      titlekr: "STEM Level 2 예제"
       url: /edu/bioloid/stem/#expansion-examples
+      urlkr: /edu/bioloid/stem/#stem-level-2-예제
   - title: "References"
-    titlekr: ""
+    titlekr: "참고자료"
     url: /edu/bioloid/stem/#references
-    urlkr:
+    urlkr: /edu/bioloid/stem/#참고자료
     children:
     - title: "Replacing Fuse"
-      titlekr: ""
+      titlekr: "퓨즈 교체하기"
       url: /edu/bioloid/stem/#replacing-fuse
-      urlkr:
+      urlkr: /edu/bioloid/stem/#퓨즈-교체하기
     - title: "Dynamixel Management"
-      titlekr: ""
+      titlekr: "다이나믹셀 관리하기"
       url: /edu/bioloid/stem/#dynamixel-management
-      urlkr:
+      urlkr: /edu/bioloid/stem/#다이나믹셀-관리하기
     - title: "Zigbee Wireless Control"
-      titlekr: ""
+      titlekr: "지그비 무선 조종"
       url: /edu/bioloid/stem/#zigbee-wireless-control
-      urlkr:
+      urlkr: /edu/bioloid/stem/#지그비-무선-조종
+
+stem-academy:
+  - titlekr: "개요"
+    urlkr: /edu/bioloid/stem_academy/#개요
+  - titlekr: "시작하기"
+    urlkr: /edu/bioloid/stem_academy/#시작하기
+    children:
+    - titlekr: "Level 1 부품 리스트"
+      urlkr: /edu/bioloid/stem_academy/#level-1-부품-리스트
+    - titlekr: "Level 2 부품 리스트"
+      urlkr: /edu/bioloid/stem_academy/#level-2-부품-리스트
+    - titlekr: "작동하기"
+      urlkr: /edu/bioloid/stem_academy/#작동하기
+    - titlekr: "충전하기"
+      urlkr: /edu/bioloid/stem_academy/#충전하기
+  - titlekr: "다운로드"
+    urlkr: /edu/bioloid/stem_academy/#다운로드
+  - titlekr: "참고자료"
+    urlkr: /edu/bioloid/stem_academy/#참고자료
+    children:
+    - titlekr: "퓨즈 교체하기"
+      urlkr: /edu/bioloid/stem_academy/#퓨즈-교체하기
+    - titlekr: "다이나믹셀 관리하기"
+      urlkr: /edu/bioloid/stem_academy/#다이나믹셀-관리하기
+    - titlekr: "지그비 무선 조종"
+      urlkr: /edu/bioloid/stem_academy/#지그비-무선-조종
 
 #BIOLOID Premium sidebar
 bioloid-premium:
   - title: "Introduction"
     titlekr: "개요"
     url: /edu/bioloid/premium/#introduction
-    urlkr:
+    urlkr: /edu/bioloid/premium/#개요
   - title: "Getting Started"
-    titlekr: ""
+    titlekr: "시작하기"
     url: /edu/bioloid/premium/#getting-started
-    urlkr:
+    urlkr: /edu/bioloid/premium/#시작하기
     children:
     - title: "Part List"
-      titlekr: ""
+      titlekr: "부품 리스트"
       url: /edu/bioloid/premium/#part-list
-      urlkr:
+      urlkr: /edu/bioloid/premium/#부품-리스트
     - title: "Operating"
-      titlekr: ""
+      titlekr: "작동하기"
       url: /edu/bioloid/premium/#operating
-      urlkr:
+      urlkr: /edu/bioloid/premium/#작동하기
     - title: "Charging CM-5"
-      titlekr: ""
+      titlekr: "충전하기"
       url: /edu/bioloid/premium/#charging-cm-5
-      urlkr:
+      urlkr: /edu/bioloid/premium/#충전하기
   - title: "Tutorial"
-    titlekr: ""
+    titlekr: "튜토리얼"
     url: /edu/bioloid/premium/#tutorial
-    urlkr:
+    urlkr: /edu/bioloid/premium/#튜토리얼
     children:
     - title: "Screen Output"
-      titlekr: ""
+      titlekr: "화면 출력하기"
       url: /edu/bioloid/premium/#screen-output
-      urlkr:
+      urlkr: /edu/bioloid/premium/#화면-출력하기
     - title: "Button & LED"
-      titlekr: ""
-      url: /edu/bioloid/premium/#button-led
-      urlkr:
-    - title: "Attacking Duck"
-      titlekr: ""
-      url: /edu/bioloid/premium/#attacking-duck
-      urlkr:
-    - title: "Obstacle Detecting Car"
-      titlekr: ""
-      url: /edu/bioloid/premium/#obstacle-detecting-car
-      urlkr:
-    - title: "Walking Droid 1"
-      titlekr: ""
-      url: /edu/bioloid/premium/#walking-droid-1
-      urlkr:
-    - title: "Walking Droid 2"
-      titlekr: ""
-      url: /edu/bioloid/premium/#walking-droid-2
-      urlkr:
-    - title: "Walking Droid 3"
-      titlekr: ""
-      url: /edu/bioloid/premium/#walking-droid-3
-      urlkr:
-    - title: "Converting .bpg to .tsk"
-      titlekr: ""
-      url: /edu/bioloid/premium/#converting-bpg-to-tsk
-      urlkr:
+      titlekr: "버튼과 LED"
+      url: /edu/bioloid/premium/#button--led
+      urlkr: /edu/bioloid/premium/#버튼과-led
+    - title: "Walking Machine"
+      titlekr: "보행 머신"
+      url: /edu/bioloid/premium/#walking-machine
+      urlkr: /edu/bioloid/premium/#보행-머신
+    - title: "Gyro Sensor"
+      titlekr: "자이로 센서를 이용한 보정"
+      url: /edu/bioloid/premium/#gyro-sensor
+      urlkr: /edu/bioloid/premium/#자이로-센서를-이용한-보정
+    - title: "Custom Motions(Create)"
+      titlekr: "사용자 모션 추가하기(모션 만들기)"
+      url: /edu/bioloid/premium/#custom-motions-create
+      urlkr: /edu/bioloid/premium/#사용자-모션-추가하기모션-만들기
+    - title: "Custom Motions(Task Code)"
+      titlekr: "사용자 모션 추가하기(태스크 코드)"
+      url: /edu/bioloid/premium/#custom-motions-task-code
+      urlkr: /edu/bioloid/premium/#사용자-모션-추가하기태스크-코드
+    - title: "Gripper Control"
+      titlekr: "그리퍼 제어"
+      url: /edu/bioloid/premium/#gripper-control
+      urlkr: /edu/bioloid/premium/#그리퍼-제어
   - title: "Download"
-    titlekr: ""
+    titlekr: "다운로드"
     url: /edu/bioloid/premium/#download
-    urlkr:
+    urlkr: /edu/bioloid/premium/#다운로드
     children:
-    - title: "Download Task Code"
-      url: /edu/bioloid/premium/#download-task-code
-    - title: "Download Motion File"
-      url: /edu/bioloid/premium/#download-motion-file
+    - title: "Default Program"
+      titlekr: "기본 프로그램"
+      url: /edu/bioloid/premium/#default-program
+      urlkr: /edu/bioloid/premium/#기본-프로그램
     - title: "Examples"
+      titlekr: "예제"
       url: /edu/bioloid/premium/#examples
+      urlkr: /edu/bioloid/premium/#예제
   - title: "References"
-    titlekr: ""
+    titlekr: "참고자료"
     url: /edu/bioloid/premium/#references
-    urlkr:
+    urlkr: /edu/bioloid/premium/#참고자료
     children:
     - title: "Replacing Fuse"
-      titlekr: ""
+      titlekr: "퓨즈 교체하기"
       url: /edu/bioloid/premium/#replacing-fuse
-      urlkr:
+      urlkr: /edu/bioloid/premium/#퓨즈-교체하기
     - title: "Dynamixel Management"
-      titlekr: ""
+      titlekr: "다이나믹셀 관리하기"
       url: /edu/bioloid/premium/#dynamixel-management
-      urlkr:
+      urlkr: /edu/bioloid/premium/#다이나믹셀-관리하기
     - title: "Zigbee Wireless Control"
-      titlekr: ""
+      titlekr: "지그비 무선 조종"
       url: /edu/bioloid/premium/#zigbee-wireless-control
-      urlkr:
+      urlkr: /edu/bioloid/premium/#지그비-무선-조종
     - title: "Control Multiple Robots"
-      titlekr: ""
+      titlekr: "여러 대의 로봇 조종하기"
       url: /edu/bioloid/premium/#control-multiple-robots
-      urlkr:
+      urlkr: /edu/bioloid/premium/#여러-대의-로봇-조종하기
+    - title: "Customizing Robot"
+      titlekr: "로봇 꾸미기"
+      url: /edu/bioloid/premium/#customizing-robot
+      urlkr: /edu/bioloid/premium/#로봇-꾸미기
+    - title: "Adding Sensors"
+      titlekr: "센서 추가하기"
+      url: /edu/bioloid/premium/#adding-sensors
+      urlkr: /edu/bioloid/premium/#센서-추가하기
+    - title: "Make Your Own Sensor"
+      titlekr: "사용자 센서 제작"
+      url: /edu/bioloid/premium/#make-your-own-sensor
+      urlkr: /edu/bioloid/premium/#사용자-센서-제작
+    - title: "Gripper Assembly"
+      titlekr: "그리퍼 장착"
+      url: /edu/bioloid/premium/#gripper-assembly
+      urlkr: /edu/bioloid/premium/#그리퍼-장착
 
 #BIOLOID GP sidebar
 bioloid-gp:
   - title: "Introduction"
     titlekr: "개요"
     url: /edu/bioloid/gp/#introduction
-    urlkr:
+    urlkr: /edu/bioloid/gp/#개요
   - title: "Getting Started"
-    titlekr: ""
+    titlekr: "시작하기"
     url: /edu/bioloid/gp/#getting-started
-    urlkr:
+    urlkr: /edu/bioloid/gp/#시작하기
     children:
     - title: "Part List"
-      titlekr: ""
+      titlekr: "부품 리스트"
       url: /edu/bioloid/gp/#part-list
-      urlkr:
+      urlkr: /edu/bioloid/gp/#부품-리스트
     - title: "Operating"
-      titlekr: ""
+      titlekr: "작동하기"
       url: /edu/bioloid/gp/#operating
-      urlkr:
+      urlkr: /edu/bioloid/gp/#작동하기
     - title: "Battery Charge"
-      titlekr: ""
+      titlekr: "충전하기"
       url: /edu/bioloid/gp/#battery-charge
-      urlkr:
+      urlkr: /edu/bioloid/gp/#충전하기
   - title: "Tutorial"
-    titlekr: ""
+    titlekr: "튜토리얼"
     url: /edu/bioloid/gp/#tutorial
-    urlkr:
+    urlkr: /edu/bioloid/gp/#튜토리얼
     children:
     - title: "Screen Output"
-      titlekr: ""
+      titlekr: "화면 출력하기"
       url: /edu/bioloid/gp/#screen-output
-      urlkr:
+      urlkr: /edu/bioloid/gp/#화면-출력하기
     - title: "Button & LED"
-      titlekr: ""
-      url: /edu/bioloid/gp/#button-led
-      urlkr:
+      titlekr: "버튼과 LED"
+      url: /edu/bioloid/gp/#button--led
+      urlkr: /edu/bioloid/gp/#버튼과-led
   - title: "Download"
-    titlekr: ""
+    titlekr: "다운로드"
     url: /edu/bioloid/gp/#download
-    urlkr:
+    urlkr: /edu/bioloid/gp/#다운로드
   - title: "References"
-    titlekr: ""
+    titlekr: "참고자료"
     url: /edu/bioloid/gp/#references
-    urlkr:
+    urlkr: /edu/bioloid/gp/#참고자료
     children:
     - title: "Replacing Fuse"
-      titlekr: ""
+      titlekr: "퓨즈 교체하기"
       url: /edu/bioloid/gp/#replacing-fuse
-      urlkr:
+      urlkr: /edu/bioloid/gp/#퓨즈-교체하기
     - title: "Dynamixel Management"
-      titlekr: ""
+      titlekr: "다이나믹셀 관리하기"
       url: /edu/bioloid/gp/#dynamixel-management
-      urlkr:
+      urlkr: /edu/bioloid/gp/#다이나믹셀-관리하기
     - title: "Zigbee Wireless Control"
-      titlekr: ""
+      titlekr: "지그비 무선 조종"
       url: /edu/bioloid/gp/#zigbee-wireless-control
-      urlkr:
+      urlkr: /edu/bioloid/gp/#지그비-무선-조종
     - title: "Control Multiple Robots"
-      titlekr: ""
+      titlekr: "여러 대의 로봇 조종하기"
       url: /edu/bioloid/gp/#control-multiple-robots
-      urlkr:
+      urlkr: /edu/bioloid/gp/#여러-대의-로봇-조종하기
     - title: "Adding Sensors"
-      titlekr: ""
+      titlekr: "센서 추가하기"
       url: /edu/bioloid/gp/#adding-sensors
-      urlkr:
+      urlkr: /edu/bioloid/gp/#센서-추가하기
     - title: "Custom Sensors"
-      titlekr: ""
+      titlekr: "사용자 센서 제작"
       url: /edu/bioloid/gp/#make-your-own-sensor
-      urlkr:
+      urlkr: /edu/bioloid/gp/#사용자-센서-제작
 
 #ROBOTIS MINI sidebar
 mini:
   - title: "Introduction"
     titlekr: "개요"
     url: /edu/mini/#introduction
-    urlkr:
+    urlkr: /edu/mini/#개요
   - title: "Getting Started"
-    titlekr: ""
+    titlekr: "시작하기"
     url: /edu/mini/#getting-started
-    urlkr:
+    urlkr: /edu/mini/#시작하기
     children:
     - title: "Part List"
-      titlekr: ""
+      titlekr: "부품 리스트"
       url: /edu/mini/#part-list
-      urlkr:
+      urlkr: /edu/mini/#부품-리스트
     - title: "Preparation"
-      titlekr: ""
+      titlekr: "준비하기"
       url: /edu/mini/#preparation
-      urlkr:
+      urlkr: /edu/mini/#준비하기
       children:
+      - titlekr: "로보티즈 미니 앱"
+        urlkr: /edu/mini/#로보티즈-미니-앱
       - title: "Connect to MINI"
-        titlekr: ""
+        titlekr: "로보티즈 미니 연결하기"
         url: /edu/mini/#connect-to-mini
-        urlkr:
+        urlkr: /edu/mini/#로보티즈-미니-연결하기
       - title: "Check Connection"
-        titlekr: ""
+        titlekr: "연결 포트번호 확인하기"
         url: /edu/mini/#check-connection
-        urlkr:
+        urlkr: /edu/mini/#연결-포트번호-확인하기
   - title: "Operating MINI"
-    titlekr: ""
+    titlekr: "로보티즈 미니 작동하기"
     url: /edu/mini/#operating-mini
-    urlkr:
+    urlkr: /edu/mini/#로보티즈-미니-작동하기
     children:
     - title: "App Install"
-      titlekr: ""
+      titlekr: "미니 앱 설치"
       url: /edu/mini/#app-install
-      urlkr:
+      urlkr: /edu/mini/#미니-앱-설치
     - title: "Operation"
-      titlekr: ""
+      titlekr: "미니 앱 사용하기"
       url: /edu/mini/#operation
-      urlkr:
+      urlkr: /edu/mini/#미니-앱-사용하기
     - title: "App Setting"
-      titlekr: ""
+      titlekr: "미니 앱 설정"
       url: /edu/mini/#app-setting
-      urlkr:
+      urlkr: /edu/mini/#미니-앱-설정
     - title: "Programming"
-      titlekr:
+      titlekr: "로봇 프로그래밍"
       url: /edu/mini/#programming
-      urlkr:
+      urlkr: /edu/mini/#로봇-프로그래밍
   - title: "Customize"
-    titlekr: ""
+    titlekr: "나만의 로보티즈 미니 꾸미기"
     url: /edu/mini/#customize
-    urlkr:
+    urlkr: /edu/mini/#나만의-로보티즈-미니-꾸미기
   - title: "Download"
-    titlekr: ""
+    titlekr: "다운로드"
     url: /edu/mini/#download
-    urlkr:
+    urlkr: /edu/mini/#다운로드
   - title: "References"
-    titlekr: ""
+    titlekr: "로보티즈 미니 관리하기"
     url: /edu/mini/#references
-    urlkr:
+    urlkr: /edu/mini/#로보티즈-미니-관리하기
     children:
     - title: "Firmware Update"
-      titlekr: ""
+      titlekr: "펌웨어 업데이트"
       url: /edu/mini/#firmware-update
-      urlkr:
+      urlkr: /edu/mini/#로보티즈-미니-제어기-펌웨어-업데이트
     - title: "ID Map"
-      titlekr: ""
+      titlekr: "ID Map"
       url: /edu/mini/#id-map
-      urlkr:
+      urlkr: /edu/mini/#xl32-id-map
+
+car:
+  - titlekr: "개요"
+    urlkr: /edu/car/#개요
+  - titlekr: "로봇 사용법"
+    urlkr: /edu/car/#로봇-사용법
+    children:
+    - titlekr: "소리센서 모드"
+      urlkr: /edu/car/#소리센서-모드
+    - titlekr: "적외선센서 모드"
+      urlkr: /edu/car/#적외선센서-모드
+    - titlekr: "접촉센서 모드"
+      urlkr: /edu/car/#접촉센서-모드
+    - titlekr: "동작센서 모드"
+      urlkr: /edu/car/#동작센서-모드
+    - titlekr: "속력 바꾸기"
+      urlkr: /edu/car/#속력-바꾸기
+  - titlekr: "교육자료 다운로드"
+    urlkr: /edu/car/#교육자료-다운로드
 
 #ROBOTIS OP sidebar
 op:
@@ -5537,11 +5593,8 @@ turtlebot3:
     children:
     - title: "TurtleBot3"
       url: /platform/turtlebot3/overview/#turtlebot3
-  - title: "Notice"
-    url: /platform/turtlebot3/notice/#notice
-    children:
     - title: "News"
-      url: /platform/turtlebot3/notice/#news
+      url: /platform/turtlebot3/overview/#news
   - title: "Features"
     url: /platform/turtlebot3/features/#features
     children:
@@ -5575,8 +5628,6 @@ turtlebot3:
         url: /platform/turtlebot3/specifications/#data-of-turtlebot3-burger
       - title: "Data of TurtleBot3 Waffle"
         url: /platform/turtlebot3/specifications/#data-of-turtlebot3-waffle
-      - title: "Data of TurtleBot3 Waffle Pi"
-        url: /platform/turtlebot3/specifications/#data-of-turtlebot3-waffle-pi
     - title: "Components"
       url: /platform/turtlebot3/specifications/#components
       children:
@@ -5714,8 +5765,6 @@ turtlebot3:
         url: /platform/turtlebot3/bringup/#turtlebot3-burger
       - title: "TurtleBot3 Waffle"
         url: /platform/turtlebot3/bringup/#turtlebot3-waffle
-      - title: "TurtleBot3 Waffle Pi"
-        url: /platform/turtlebot3/bringup/#turtlebot3-waffle-pi
   - title: "Teleoperation"
     url: /platform/turtlebot3/teleoperation/#teleoperation
     children:
@@ -5786,8 +5835,8 @@ turtlebot3:
       url: /platform/turtlebot3/applications/#turtlebot-follower-demo
     - title: "TurtleBot Panorama Demo Using Raspberry Pi Camera Module"
       url: /platform/turtlebot3/applications/#turtlebot-panorama-demo-using-raspberry-pi-camera-module
-    - title: "Automatic Parking"
-      url: /platform/turtlebot3/applications/#automatic-parking
+    - title: "Automatic Docking"
+      url: /platform/turtlebot3/applications/#automatic-docking
   - title: "Friends"
     url: /platform/turtlebot3/friends/#friends
     children:
@@ -5914,19 +5963,6 @@ turtlebot3:
       url: /platform/turtlebot3/license/#hardware-license
     - title: "Documents License"
       url: /platform/turtlebot3/license/#documents-license
-  - title: "Learn"
-    url: /platform/turtlebot3/learn/#learn
-    children:
-    - title: "TurtleBot3 Simulation on ROS Indigo"
-      url: /platform/turtlebot3/learn/#turtlebot3-simulation-on-ros-indigo
-    - title: "TurtleBot3 Blockly"
-      url: /platform/turtlebot3/learn/#turtlebot3-blockly
-    - title: "The Construct"
-      url: /platform/turtlebot3/learn/#the-construct
-    - title: "Youtube Course"
-      url: /platform/turtlebot3/learn/#youtube-course
-    - title: "Books"
-      url: /platform/turtlebot3/learn/#books
   - title: "FAQ"
     url: /platform/turtlebot3/faq/#faq
   - title: "Contact US"
@@ -6047,7 +6083,6 @@ manipulator_h:
     - title: "Mass Property"
       url: /platform/manipulator_h/introduction/#mass-property
 
-
 #R+ Task 1.0 sidebar
 rplustask1:
   - title: "Introduction"
@@ -6056,9 +6091,9 @@ rplustask1:
     urlkr: /software/rplus1/task/getting_started/#개요
     children:
     - title: "Install"
-      titlekr: "설치"
+      titlekr: "설치하기"
       url: /software/rplus1/task/getting_started/#install
-      urlkr: /software/rplus1/task/getting_started/#설치
+      urlkr: /software/rplus1/task/getting_started/#설치하기
   - title: "Getting Started"
     titlekr: "시작하기"
     url: /software/rplus1/task/getting_started/#getting-started
@@ -6085,215 +6120,520 @@ rplustask1:
       url: /software/rplus1/task/getting_started/#virtual-robot-control
       urlkr: /software/rplus1/task/getting_started/#가상로봇-조종
   - title: "Programming"
+    titlekr: "프로그래밍"
     url: /software/rplus1/task/programming_01/#programming_01
+    urlkr: /software/rplus1/task/programming_01/#프로그래밍
     children:
     - title: "Edit"
+      titlekr: "편집"
       url: /software/rplus1/task/programming_01/#edit
+      urlkr: /software/rplus1/task/programming_01/#편집
       children:
       - title: "Select Multiple Lines"
+        titlekr: "여러줄 선택"
         url: /software/rplus1/task/programming_01/#select-multiple-lines
+        urlkr: /software/rplus1/task/programming_01/#여러줄-선택
       - title: "Insert New Line"
+        titlekr: "줄 삽입"
         url: /software/rplus1/task/programming_01/#insert-new-line
+        urlkr: /software/rplus1/task/programming_01/#줄-삽입
       - title: "Delete Lines"
+        titlekr: "줄 지우기"
         url: /software/rplus1/task/programming_01/#delete-lines
+        urlkr: /software/rplus1/task/programming_01/#줄-지우기
       - title: "Enable/Disable Lines"
+        titlekr: "줄 활성/비활성"
         url: /software/rplus1/task/programming_01/#enabledisable-lines
+        urlkr: /software/rplus1/task/programming_01/#줄-활성비활성
       - title: "Copy/Cut/Paste"
+        titlekr: "복사/잘라내기/붙여넣기"
         url: /software/rplus1/task/programming_01/#copycutpaste
+        urlkr: /software/rplus1/task/programming_01/#복사잘라내기붙여넣기
       - title: "Find Name"
+        titlekr: "이름찾기"
         url: /software/rplus1/task/programming_01/#find-name
+        urlkr: /software/rplus1/task/programming_01/#이름찾기
     - title: "Commands"
+      titlekr: "명령어"
       url: /software/rplus1/task/programming_01/#commands
+      urlkr: /software/rplus1/task/programming_01/#명령어
       children:
       - title: "Start Program"
+        titlekr: "프로그램 시작"
         url: /software/rplus1/task/programming_01/#start-program
+        urlkr: /software/rplus1/task/programming_01/#프로그램-시작
       - title: "End Program"
+        titlekr: "프로그램 강제종료"
         url: /software/rplus1/task/programming_01/#end-program
+        urlkr: /software/rplus1/task/programming_01/#프로그램-강제종료
       - title: "Start/End of Section"
+        titlekr: "구간 시작/끝"
         url: /software/rplus1/task/programming_01/#startend-of-section
+        urlkr: /software/rplus1/task/programming_01/#구간-시작끝
       - title: "Comments/Notes"
+        titlekr: "주석/메모"
         url: /software/rplus1/task/programming_01/#commentsnotes
+        urlkr: /software/rplus1/task/programming_01/#주석메모
       - title: "Calculate"
+        titlekr: "계산"
         url: /software/rplus1/task/programming_01/#calculate
+        urlkr: /software/rplus1/task/programming_01/#계산
       - title: "Load"
+        titlekr: "로드"
         url: /software/rplus1/task/programming_01/#load
+        urlkr: /software/rplus1/task/programming_01/#로드
       - title: "Label/Jump"
+        titlekr: "레이블/점프"
         url: /software/rplus1/task/programming_01/#labeljump
+        urlkr: /software/rplus1/task/programming_01/#레이블점프
       - title: "If/Else if/Else"
+        titlekr: "조건문"
         url: /software/rplus1/task/programming_01/#ifelse-ifelse
+        urlkr: /software/rplus1/task/programming_01/#조건문
       - title: "Endless Loop"
+        titlekr: "무조건 반복"
         url: /software/rplus1/task/programming_01/#endless-loop
+        urlkr: /software/rplus1/task/programming_01/#무조건-반복
       - title: "Loop While"
+        titlekr: "조건 반복"
         url: /software/rplus1/task/programming_01/#loop-while
+        urlkr: /software/rplus1/task/programming_01/#조건-반복
       - title: "Loop For"
+        titlekr: "횟수 반복"
         url: /software/rplus1/task/programming_01/#loop-for
+        urlkr: /software/rplus1/task/programming_01/#횟수-반복
       - title: "Break Loop"
+        titlekr: "반복 끝내기"
         url: /software/rplus1/task/programming_01/#break-loop
+        urlkr: /software/rplus1/task/programming_01/#반복-끝내기
       - title: "Wait While"
+        titlekr: "조건 대기"
         url: /software/rplus1/task/programming_01/#wait-while
+        urlkr: /software/rplus1/task/programming_01/#조건-대기
       - title: "Exit Function"
+        titlekr: "함수 강제종료"
         url: /software/rplus1/task/programming_01/#exit-function
+        urlkr: /software/rplus1/task/programming_01/#함수-강제종료
       - title: "Make/Call Function"
+        titlekr: "함수 만들기/호출"
         url: /software/rplus1/task/programming_01/#makecall-function
+        urlkr: /software/rplus1/task/programming_01/#함수-만들기호출
       - title: "Callback Function"
+        titlekr: "콜백 함수"
         url: /software/rplus1/task/programming_01/#callback-function
+        urlkr: /software/rplus1/task/programming_01/#콜백-함수
     - title: "Controller Parameters"
+      titlekr: "제어기 파라미터"
       url: /software/rplus1/task/programming_02/#controller-parameters
+      urlkr: /software/rplus1/task/programming_02/#제어기-파라미터
       children:
       - title: "Remocon TXD"
+        titlekr: "모낼 무선 데이터"
         url: /software/rplus1/task/programming_02/#remocon-txd
+        urlkr: /software/rplus1/task/programming_02/#보낼-무선-데이터
       - title: "Remocon RXD"
+        titlekr: "받은 무선 데이터"
         url: /software/rplus1/task/programming_02/#remocon-rxd
+        urlkr: /software/rplus1/task/programming_02/#받은-무선-데이터
       - title: "Remocon Arrived"
+        titlekr: "새 무선 데이터"
         url: /software/rplus1/task/programming_02/#remocon-arrived
+        urlkr: /software/rplus1/task/programming_02/#새-무선-데이터
+      - titlekr: "임의의 숫자"
+        urlkr: /software/rplus1/task/programming_02/#임의의-숫자
       - title: "Aux LED"
+        titlekr: "Aux LED"
         url: /software/rplus1/task/programming_02/#aux-led
+        urlkr: /software/rplus1/task/programming_02/#aux-led
       - title: "Button"
+        titlekr: "버튼"
         url: /software/rplus1/task/programming_02/#button
+        urlkr: /software/rplus1/task/programming_02/#버튼
       - title: "Timer"
+        titlekr: "타이머"
         url: /software/rplus1/task/programming_02/#timer
+        urlkr: /software/rplus1/task/programming_02/#타이머
       - title: "HR Timer"
+        titlekr: "정밀타이머"
         url: /software/rplus1/task/programming_02/#hr-timer
+        urlkr: /software/rplus1/task/programming_02/#정밀타이머
       - title: "Remocon ID"
+        titlekr: "상대 로봇 무선ID"
         url: /software/rplus1/task/programming_02/#remocon-id
+        urlkr: /software/rplus1/task/programming_02/#상대-로봇-무선id
       - title: "My ID"
+        titlekr: "내 로봇 무선ID"
         url: /software/rplus1/task/programming_02/#my-id
+        urlkr: /software/rplus1/task/programming_02/#내-로봇-무선id
+      - title: "Print Program Output"
+        titlekr: "화면출력/줄바꿈"
+        url: /software/rplus1/task/programming_02/#print-program-output
+        urlkr: /software/rplus1/task/programming_02/#화면출력줄바꿈
       - title: "IR Left/Center/Right"
+        titlekr: "왼쪽/중앙/오른쪽 적외선 센서"
         url: /software/rplus1/task/programming_02/#ir-leftcenterright
+        urlkr: /software/rplus1/task/programming_02/#왼쪽중앙오른쪽-적외선-센서
       - title: "Buzzer Index"
+        titlekr: "부저 종류"
         url: /software/rplus1/task/programming_02/#buzzer-index
+        urlkr: /software/rplus1/task/programming_02/#부저-종류
       - title: "Buzzer Time"
+        titlekr: "부저 울림시간"
         url: /software/rplus1/task/programming_02/#buzzer-time
+        urlkr: /software/rplus1/task/programming_02/#부저-울림시간
       - title: "Sound Count"
+        titlekr: "최종 소리감지 횟수"
         url: /software/rplus1/task/programming_02/#sound-count
+        urlkr: /software/rplus1/task/programming_02/#최종-소리감지-횟수
       - title: "Current Sound Count"
+        titlekr: "실시간 소리감지 횟수"
         url: /software/rplus1/task/programming_02/#current-sound-count
+        urlkr: /software/rplus1/task/programming_02/#실시간-소리감지-횟수
       - title: "Button Count"
+        titlekr: "시작버튼 눌림횟수"
         url: /software/rplus1/task/programming_02/#button-count
+        urlkr: /software/rplus1/task/programming_02/#시작버튼-눌림횟수
       - title: "Powersave Timer"
+        titlekr: "자동꺼짐 타이머"
         url: /software/rplus1/task/programming_02/#powersave-timer
+        urlkr: /software/rplus1/task/programming_02/#자동꺼짐-타이머
       - title: "RC-100 Channel"
+        titlekr: "RC-100 채널"
         url: /software/rplus1/task/programming_02/#rc-100-channel
+        urlkr: /software/rplus1/task/programming_02/#rc-100-채널
     - title: "Motion Parameters"
+      titlekr: "모션 파라미터"
       url: /software/rplus1/task/programming_02/#motion-parameters
+      urlkr: /software/rplus1/task/programming_02/#모션-파라미터
       children:
       - title: "Motion Page"
+        titlekr: "모션 페이지"
         url: /software/rplus1/task/programming_02/#motion-page
+        urlkr: /software/rplus1/task/programming_02/#모션-페이지
       - title: "Motion Status"
+        titlekr: "모션 상태"
         url: /software/rplus1/task/programming_02/#motion-status
+        urlkr: /software/rplus1/task/programming_02/#모션-상태
       - title: "Joint Offset"
+        titlekr: "관절 오프셋"
         url: /software/rplus1/task/programming_02/#joint-offset
+        urlkr: /software/rplus1/task/programming_02/#관절-오프셋
+      - titlekr: "관절 LED 자동켜기"
+        urlkr: /software/rplus1/task/programming_02/#관절-led-자동켜기
     - title: "Peripheral Devices"
+      titlekr: "주변장치"
       url: /software/rplus1/task/programming_02/#peripheral-devices
+      urlkr: /software/rplus1/task/programming_02/#주변장치
       children:
       - title: "Reduction Motor"
+        titlekr: "감속모터"
         url: /software/rplus1/task/programming_02/#reduction-motor
+        urlkr: /software/rplus1/task/programming_02/#감속모터
       - title: "Servo Motor"
+        titlekr: "서보모터"
         url: /software/rplus1/task/programming_02/#servo-motor
+        urlkr: /software/rplus1/task/programming_02/#서보모터
       - title: "Touch Sensor"
+        titlekr: "접촉센서"
         url: /software/rplus1/task/programming_02/#touch-sensor
+        urlkr: /software/rplus1/task/programming_02/#접촉센서
       - title: "LED Module"
+        titlekr: "LED모듈"
         url: /software/rplus1/task/programming_02/#led-module
+        urlkr: /software/rplus1/task/programming_02/#led모듈
       - title: "IR Sensor"
+        titlekr: "적외선센서"
         url: /software/rplus1/task/programming_02/#ir-sensor
+        urlkr: /software/rplus1/task/programming_02/#적외선센서
+      - titlekr: "컬러센서"
+        urlkr: /software/rplus1/task/programming_02/#컬러센서
+      - titlekr: "자석센서"
+        urlkr: /software/rplus1/task/programming_02/#자석센서
       - title: "DMS Sensor"
+        titlekr: "절대거리센서"
         url: /software/rplus1/task/programming_02/#dms-sensor
+        urlkr: /software/rplus1/task/programming_02/#절대거리센서
       - title: "User Devices"
+        titlekr: "사용자 장치"
         url: /software/rplus1/task/programming_02/#user-devices
+        urlkr: /software/rplus1/task/programming_02/#사용자-장치
     - title: "Dynamixel Parameters"
+      titlekr: "다이나믹셀 파라미터"
       url: /software/rplus1/task/programming_02/#dynamixel-parameters
+      urlkr: /software/rplus1/task/programming_02/#다이나믹셀-파라미터
       children:
       - title: "Torque Enable"
+        titlekr: "모터 켜기"
         url: /software/rplus1/task/programming_02/#torque-enable
+        urlkr: /software/rplus1/task/programming_02/#모터-켜기
       - title: "LED"
+        titlekr: "LED"
         url: /software/rplus1/task/programming_02/#led
+        urlkr: /software/rplus1/task/programming_02/#led
       - title: "CW/CCW Margin"
+        titlekr: "CW/CCW Margin"
         url: /software/rplus1/task/programming_02/#cwccw-margin
+        urlkr: /software/rplus1/task/programming_02/#cwccw-margin
       - title: "CW/CCW Slope"
+        titlekr: "CW/CCW Slope"
         url: /software/rplus1/task/programming_02/#cwccw-slope
+        urlkr: /software/rplus1/task/programming_02/#cwccw-slope
       - title: "PID Gain"
+        titlekr: "PID 제어"
         url: /software/rplus1/task/programming_02/#pid-gain
+        urlkr: /software/rplus1/task/programming_02/#pid-제어
       - title: "Goal Position"
+        titlekr: "목표 위치"
         url: /software/rplus1/task/programming_02/#goal-position
+        urlkr: /software/rplus1/task/programming_02/#목표-위치
       - title: "Moving Speed"
+        titlekr: "이동 속도"
         url: /software/rplus1/task/programming_02/#moving-speed
+        urlkr: /software/rplus1/task/programming_02/#이동-속도
       - title: "Torque Limit"
+        titlekr: "힘 조절"
         url: /software/rplus1/task/programming_02/#torque-limit
+        urlkr: /software/rplus1/task/programming_02/#힘-조절
       - title: "Present Position"
+        titlekr: "현재 위치"
         url: /software/rplus1/task/programming_02/#present-position
+        urlkr: /software/rplus1/task/programming_02/#현재-위치
       - title: "Present Speed"
+        titlekr: "현재 속도"
         url: /software/rplus1/task/programming_02/#present-speed
+        urlkr: /software/rplus1/task/programming_02/#현재-속도
       - title: "Present Load"
+        titlekr: "현재 하중"
         url: /software/rplus1/task/programming_02/#present-load
+        urlkr: /software/rplus1/task/programming_02/#현재-하중
       - title: "Voltage"
+        titlekr: "전압"
         url: /software/rplus1/task/programming_02/#voltage
+        urlkr: /software/rplus1/task/programming_02/#전압
       - title: "Temperature"
+        titlekr: "온도"
         url: /software/rplus1/task/programming_02/#temperature
+        urlkr: /software/rplus1/task/programming_02/#온도
       - title: "Moving"
+        titlekr: "움직임 유무"
         url: /software/rplus1/task/programming_02/#moving
+        urlkr: /software/rplus1/task/programming_02/#움직임-유무
       - title: "Sensed Current"
+        titlekr: "소모 전류량"
         url: /software/rplus1/task/programming_02/#sensed-current
+        urlkr: /software/rplus1/task/programming_02/#소모-전류량
     - title: "Universal Sensor S1"
+      titlekr: "통합센서 S1"
       url: /software/rplus1/task/programming_02/#universal-sensor-s1
+      urlkr: /software/rplus1/task/programming_02/#통합센서-s1
       children:
       - title: "IR Left/Center/Right"
+        titlekr: "거리센서 값"
         url: /software/rplus1/task/programming_02/#ir-leftcenterright
+        urlkr: /software/rplus1/task/programming_02/#거리센서-값
       - title: "Light Left/Center/Right"
+        titlekr: "조명 밝기"
         url: /software/rplus1/task/programming_02/#light-leftcenterright
+        urlkr: /software/rplus1/task/programming_02/#조명-밝기
       - title: "Object Detected"
+        titlekr: "물체감지"
         url: /software/rplus1/task/programming_02/#object-detected
+        urlkr: /software/rplus1/task/programming_02/#물체감지
       - title: "Light Detected"
+        titlekr: "조명감지"
         url: /software/rplus1/task/programming_02/#light-detected
+        urlkr: /software/rplus1/task/programming_02/#조명감지
       - title: "Sound Max Data"
+        titlekr: "최대 소리 크기"
         url: /software/rplus1/task/programming_02/#sound-max-data
+        urlkr: /software/rplus1/task/programming_02/#최대-소리-크기
       - title: "Sound Data"
+        titlekr: "소리 크기"
         url: /software/rplus1/task/programming_02/#sound-data
+        urlkr: /software/rplus1/task/programming_02/#소리-크기
       - title: "Sound Count"
+        titlekr: "소리감지 횟수"
         url: /software/rplus1/task/programming_02/#sound-count
+        urlkr: /software/rplus1/task/programming_02/#소리감지-횟수
       - title: "Sound Time"
+        titlekr: "소리발생 시간"
         url: /software/rplus1/task/programming_02/#sound-time
+        urlkr: /software/rplus1/task/programming_02/#소리발생-시간
       - title: "Buzzer Index"
+        titlekr: "부저 음계"
         url: /software/rplus1/task/programming_02/#buzzer-index
+        urlkr: /software/rplus1/task/programming_02/#부저-음계
       - title: "Buzzer Time"
+        titlekr: "부저 울림시간"
         url: /software/rplus1/task/programming_02/#buzzer-time
+        urlkr: /software/rplus1/task/programming_02/#부저-울림시간
       - title: "IR COM Arrived"
+        titlekr: "새 리모컨 데이터"
         url: /software/rplus1/task/programming_02/#ir-com-arrived
+        urlkr: /software/rplus1/task/programming_02/#새-리모컨-데이터
       - title: "IR COM RXD"
+        titlekr: "받은 리모컨 데이터"
         url: /software/rplus1/task/programming_02/#ir-com-rxd
+        urlkr: /software/rplus1/task/programming_02/#받은-리모컨-데이터
       - title: "IR COM TXD"
+        titlekr: "보낼 리모컨 데이터"
         url: /software/rplus1/task/programming_02/#ir-com-txd
+        urlkr: /software/rplus1/task/programming_02/#보낼-리모컨-데이터
       - title: "Object Detection Threshold"
+        titlekr: "물체감지 기준값"
         url: /software/rplus1/task/programming_02/#object-detection-threshold
+        urlkr: /software/rplus1/task/programming_02/#물체감지-기준값
       - title: "Light Detection Threshold"
+        titlekr: "조명감지 기준값"
         url: /software/rplus1/task/programming_02/#light-detection-threshold
+        urlkr: /software/rplus1/task/programming_02/#조명감지-기준값
     - title: "IR Sensor Array"
+      titlekr: "적외선 센서 어레이"
       url: /software/rplus1/task/programming_02/#ir-sensor-array
+      urlkr: /software/rplus1/task/programming_02/#적외선-센서-어레이
       children:
       - title: "IR Sensor Value"
+        titlekr: "적외선 센서 값"
         url: /software/rplus1/task/programming_02/#ir-sensor-value
+        urlkr: /software/rplus1/task/programming_02/#적외선-센서-값
       - title: "IR Array Buzzer Index"
+        titlekr: "IR 어레이 부저 음계"
         url: /software/rplus1/task/programming_02/#ir-array-buzzer-index
+        urlkr: /software/rplus1/task/programming_02/#ir-어레이-부저-음계
       - title: "IR Array Buzzer Time"
+        titlekr: "IR 어레이 부저 울림시간"
         url: /software/rplus1/task/programming_02/#ir-array-buzzer-time
+        urlkr: /software/rplus1/task/programming_02/#ir-어레이-부저-울림시간
       - title: "Auto Threshold Mode"
+        titlekr: "감지 기준값 자동설정"
         url: /software/rplus1/task/programming_02/#auto-threshold-mode
+        urlkr: /software/rplus1/task/programming_02/#감지-기준값-자동설정
       - title: "IR Obstacle Detected"
+        titlekr: "적외선 물체감지"
         url: /software/rplus1/task/programming_02/#ir-obstacle-detected
+        urlkr: /software/rplus1/task/programming_02/#적외선-물체감지
       - title: "IR Threshold"
+        titlekr: "적외선감지 기준값"
         url: /software/rplus1/task/programming_02/#ir-threshold
+        urlkr: /software/rplus1/task/programming_02/#적외선감지-기준값
       - title: "Direct Access"
+        titlekr: "직접 지정"
         url: /software/rplus1/task/programming_02/#direct-access
+        urlkr: /software/rplus1/task/programming_02/#직접-지정
     - title: "Variables"
+      titlekr: "변수"
       url: /software/rplus1/task/programming_02/#variables
+      urlkr: /software/rplus1/task/programming_02/#변수
+    - titlekr: "스마트앱 파라미터"
+      urlkr: /software/rplus1/task/task_misc/#스마트앱-파라미터
+      children:
+      - titlekr: "기본정보"
+        urlkr: /software/rplus1/task/task_misc/#기본정보
+      - titlekr: "디버그 정보 표시(읽기/쓰기)"
+        urlkr: /software/rplus1/task/task_misc/#디버그-정보-표시읽기쓰기
+      - titlekr: "화면 회전(읽기/쓰기)"
+        urlkr: /software/rplus1/task/task_misc/#화면-회전읽기쓰기
+      - titlekr: "카메라 선택(읽기/쓰기)"
+        urlkr: /software/rplus1/task/task_misc/#카메라-선택읽기쓰기
+      - titlekr: "카메라 줌(읽기/쓰기)"
+        urlkr: /software/rplus1/task/task_misc/#카메라-줌읽기쓰기
+      - titlekr: "카메라 기능 선택(읽기/쓰기)"
+        urlkr: /software/rplus1/task/task_misc/#카메라-기능-선택읽기쓰기
+      - titlekr: "얼굴 감지 위치(읽기)"
+        urlkr: /software/rplus1/task/task_misc/#얼굴-감지-위치읽기
+      - titlekr: "감지된 색상(읽기)"
+        urlkr: /software/rplus1/task/task_misc/#감지된-색상읽기
+      - titlekr: "동작 감지 위치(읽기)"
+        urlkr: /software/rplus1/task/task_misc/#동작-감지-위치읽기
+      - titlekr: "라인 감지 색상(읽기/쓰기)"
+        urlkr: /software/rplus1/task/task_misc/#라인-감지-색상읽기쓰기
+      - titlekr: "라인 감지 위치(읽기)"
+        urlkr: /software/rplus1/task/task_misc/#라인-감지-위치읽기
+      - titlekr: "동영상 녹화(읽기/쓰기)"
+        urlkr: /software/rplus1/task/task_misc/#동영상-녹화읽기쓰기
+      - titlekr: "사진 촬영(읽기/쓰기)"
+        urlkr: /software/rplus1/task/task_misc/#사진-촬영읽기쓰기
+      - titlekr: "배경 표시(읽기/쓰기)"
+        urlkr: /software/rplus1/task/task_misc/#배경-표시읽기쓰기
+      - titlekr: "그림 표시(읽기/쓰기)"
+        urlkr: /software/rplus1/task/task_misc/#그림-표시읽기쓰기
+      - titlekr: "감지된 얼굴 그림 표시(읽기/쓰기)"
+        urlkr: /software/rplus1/task/task_misc/#감지된-얼굴-그림-표시읽기쓰기
+      - titlekr: "도형 표시(읽기/쓰기)"
+        urlkr: /software/rplus1/task/task_misc/#도형-표시읽기쓰기
+      - titlekr: "문자 표시(읽기/쓰기)"
+        urlkr: /software/rplus1/task/task_misc/#문자-표시읽기쓰기
+      - titlekr: "숫자 표시(읽기/쓰기)"
+        urlkr: /software/rplus1/task/task_misc/#숫자-표시읽기쓰기
+      - titlekr: "문자음성 자동변환 - TTS(읽기/쓰기)"
+        urlkr: /software/rplus1/task/task_misc/#문자음성-자동변환--tts읽기쓰기
+      - titlekr: "악기 연주(읽기/쓰기)"
+        urlkr: /software/rplus1/task/task_misc/#악기-연주읽기쓰기
+      - titlekr: "오디오 재생 1.2(읽기/쓰기)"
+        urlkr: /software/rplus1/task/task_misc/#오디오-재생-12읽기쓰기
+      - titlekr: "동영상 재생(읽기/쓰기)"
+        urlkr: /software/rplus1/task/task_misc/#동영상-재생읽기쓰기
+      - titlekr: "동영상 일시 정지(읽기/쓰기)"
+        urlkr: /software/rplus1/task/task_misc/#동영상-일시-정지읽기쓰기
+      - titlekr: "음성 인식(읽기/쓰기)"
+        urlkr: /software/rplus1/task/task_misc/#음성-인식읽기쓰기
+      - titlekr: "음성 인식 결과(읽기/쓰기)"
+        urlkr: /software/rplus1/task/task_misc/#음성-인식-결과읽기쓰기
+      - titlekr: "볼륨(읽기/쓰기)"
+        urlkr: /software/rplus1/task/task_misc/#볼륨읽기쓰기
+      - titlekr: "흔들림 정도(읽기)"
+        urlkr: /software/rplus1/task/task_misc/#흔들림-정도읽기
+      - titlekr: "기울기 각도(읽기)"
+        urlkr: /software/rplus1/task/task_misc/#기울기-각도왼쪽오른쪽위쪽아래쪽읽기
+      - titlekr: "조도 센서(읽기)"
+        urlkr: /software/rplus1/task/task_misc/#조도-센서읽기
+      - titlekr: "자기장 센서(읽기)"
+        urlkr: /software/rplus1/task/task_misc/#자기장-센서읽기
+      - titlekr: "방향 (각도값)(읽기)"
+        urlkr: /software/rplus1/task/task_misc/#방향-각도값읽기
+      - titlekr: "소음 측정(읽기)"
+        urlkr: /software/rplus1/task/task_misc/#소음-측정읽기
+      - titlekr: "터치 위치 1.2(읽기)"
+        urlkr: /software/rplus1/task/task_misc/#터치-위치-12읽기
+      - titlekr: "SMS(전화번호)(읽기/쓰기)"
+        urlkr: /software/rplus1/task/task_misc/#sms전화번호읽기쓰기
+      - titlekr: "SMS(내용)(읽기/쓰기)"
+        urlkr: /software/rplus1/task/task_misc/#sms내용읽기쓰기
+      - titlekr: "알림바 이벤트(읽기/쓰기)"
+        urlkr: /software/rplus1/task/task_misc/#알림바-이벤트읽기쓰기
+      - titlekr: "타이머(읽기/쓰기)"
+        urlkr: /software/rplus1/task/task_misc/#타이머읽기쓰기
+      - titlekr: "진동 시간(읽기/쓰기)"
+        urlkr: /software/rplus1/task/task_misc/#진동-시간읽기쓰기
+      - titlekr: "플래시 LED(읽기/쓰기)"
+        urlkr: /software/rplus1/task/task_misc/#플래시-led읽기쓰기
+      - titlekr: "앱 실행(읽기/쓰기)"
+        urlkr: /software/rplus1/task/task_misc/#앱-실행읽기쓰기
+      - titlekr: "현재 시간(읽기)"
+        urlkr: /software/rplus1/task/task_misc/#현재-시간읽기
+      - titlekr: "메일 발송(읽기/쓰기)"
+        urlkr: /software/rplus1/task/task_misc/#메일-발송읽기쓰기
+      - titlekr: "화면출력, 화면출력 후 줄바꿈(읽기)"
+        urlkr: /software/rplus1/task/task_misc/#화면출력-화면출력-후-줄바꿈읽기
+      - titlekr: "제스처 인식(읽기/쓰기)"
+        urlkr: /software/rplus1/task/task_misc/#제스처-인식읽기쓰기
   - title: "Miscellenous"
-    url: /software/rplus1/task/task_misc/
+    titlekr: "기타 정보"
+    url: /software/rplus1/task/task_misc/#miscellenous
+    urlkr: /software/rplus1/task/task_misc/#기타-정보
     children:
     - title: "Select Controller"
+      titlekr: "제어기 선택"
       url: /software/rplus1/task/task_misc/#select-controller
+      urlkr: /software/rplus1/task/task_misc/#제어기-선택
     - title: "Rule Check"
+      titlekr: "룰 체크"
       url: /software/rplus1/task/task_misc/#rule-check
+      urlkr: /software/rplus1/task/task_misc/#룰-체크
     - title: "Error Messages"
+      titlekr: "에러 메세지"
       url: /software/rplus1/task/task_misc/#error-messages
+      urlkr: /software/rplus1/task/task_misc/#에러-메세지
 
 #R+ Manager 1.0 sidebar
 rplusmanager1:
@@ -6303,148 +6643,432 @@ rplusmanager1:
     urlkr: /software/rplus1/manager/#개요
     children:
     - title: "Install"
-      titlekr: "설치"
+      titlekr: "설치하기"
       url: /software/rplus1/manager/#install
-      urlkr: /software/rplus1/manager/#설치
+      urlkr: /software/rplus1/manager/#설치하기
   - title: "Getting Started"
     titlekr: "시작하기"
     url: /software/rplus1/manager/#getting-started
     urlkr: /software/rplus1/manager/#시작하기
   - title: "Firmware Management"
+    titlekr: "펌웨어 관리"
     url: /software/rplus1/manager/#firmware-management
+    urlkr: /software/rplus1/manager/#펌웨어-관리
     children:
     - title: "Firmware Update"
+      titlekr: "펌웨어 업데이트"
       url: /software/rplus1/manager/#firmware-update
+      urlkr: /software/rplus1/manager/#펌웨어-업데이트
     - title: "Firmware Recovery"
+      titlekr: "펌웨어 복구"
       url: /software/rplus1/manager/#firmware-recovery
+      urlkr: /software/rplus1/manager/#펌웨어-복구
   - title: "How to Use"
+    titlekr: "테스트 및 설정"
     url: /software/rplus1/manager/#how-to-use
+    urlkr: /software/rplus1/manager/#테스트-및-설정
     children:
     - title: "Controllers"
+      titlekr: "제어기"
       url: /software/rplus1/manager/#controllers
+      urlkr: /software/rplus1/manager/#제어기
+      children:
+      - title: "CM-5"
+        titlekr: "CM-5"
+        url: /software/rplus1/manager/#cm-5
+        urlkr: /software/rplus1/manager/#cm-5
+      - title: "CM-510"
+        titlekr: "CM-510"
+        url: /software/rplus1/manager/#cm-510
+        urlkr: /software/rplus1/manager/#cm-510
+      - title: "CM-530"
+        titlekr: "CM-530"
+        url: /software/rplus1/manager/#cm-530
+        urlkr: /software/rplus1/manager/#cm-530
+      - title: "CM-700"
+        titlekr: "CM-700"
+        url: /software/rplus1/manager/#cm-700
+        urlkr: /software/rplus1/manager/#cm-700
     - title: "Dynamixel"
+      titlekr: "다이나믹셀"
       url: /software/rplus1/manager/#dynamixel
+      urlkr: /software/rplus1/manager/#다이나믹셀
+      children:
+      - title: "ID Setup"
+        titlekr: "ID 설정"
+        url: /software/rplus1/manager/#id-setup
+        urlkr: /software/rplus1/manager/#id-설정
+      - title: "Position Limit and Mode"
+        titlekr: "위치 제한과 모드"
+        url: /software/rplus1/manager/#position-limit-and-mode
+        urlkr: /software/rplus1/manager/#위치-제한과-모드
+      - title: "Drive Mode"
+        titlekr: "동작 모드"
+        url: /software/rplus1/manager/#drive-mode
+        urlkr: /software/rplus1/manager/#동작-모드
+      - title: "Temperature Setting"
+        titlekr: "온도 설정"
+        url: /software/rplus1/manager/#temperature-setting
+        urlkr: /software/rplus1/manager/#온도-설정
+      - title: "Temperature"
+        titlekr: "현재 온도"
+        url: /software/rplus1/manager/#temperature
+        urlkr: /software/rplus1/manager/#현재-온도
+      - title: "Voltage Setting"
+        titlekr: "전압 설정"
+        url: /software/rplus1/manager/#voltage-setting
+        urlkr: /software/rplus1/manager/#전압-설정
+      - title: "Voltage"
+        titlekr: "현재 전압"
+        url: /software/rplus1/manager/#voltage
+        urlkr: /software/rplus1/manager/#현재-전압
+      - title: "Alarm & Shutdown"
+        titlekr: "알람 & 셧다운 설정"
+        url: /software/rplus1/manager/#alarm--shutdown
+        urlkr: /software/rplus1/manager/#알람--셧다운-설정
+      - title: "Torque Enable"
+        titlekr: "모터 켜기"
+        url: /software/rplus1/manager/#torque-enable
+        urlkr: /software/rplus1/manager/#모터-켜기
+      - title: "LED"
+        titlekr: "LED"
+        url: /software/rplus1/manager/#led
+        urlkr: /software/rplus1/manager/#led
+      - title: "CW/CCW Margin"
+        titlekr: "Compliance Margin 설정"
+        url: /software/rplus1/manager/#cwccw-margin
+        urlkr: /software/rplus1/manager/#compliance-margin-설정
+      - title: "CW/CCW Slope"
+        titlekr: "Compliance Slope 설정"
+        url: /software/rplus1/manager/#cwccw-slope
+        urlkr: /software/rplus1/manager/#compliance-slope-설정
+      - title: "Goal Position"
+        titlekr: "목표 위치"
+        url: /software/rplus1/manager/#goal-position
+        urlkr: /software/rplus1/manager/#목표-위치
+      - title: "Moving Speed"
+        titlekr: "이동 속도"
+        url: /software/rplus1/manager/#moving-speed
+        urlkr: /software/rplus1/manager/#이동-속도
+      - title: "Torque Limit"
+        titlekr: "힘 조절"
+        url: /software/rplus1/manager/#torque-limit
+        urlkr: /software/rplus1/manager/#힘-조절
+      - title: "Present Position"
+        titlekr: "현재 위치"
+        url: /software/rplus1/manager/#present-position
+        urlkr: /software/rplus1/manager/#현재-위치
+      - title: "Present Speed"
+        titlekr: "현재 속도"
+        url: /software/rplus1/manager/#present-speed
+        urlkr: /software/rplus1/manager/#현재-속도
+      - title: "Present Load"
+        titlekr: "현재 하중"
+        url: /software/rplus1/manager/#present-load
+        urlkr: /software/rplus1/manager/#현재-하중
+      - title: "Moving"
+        titlekr: "움직임 유무"
+        url: /software/rplus1/manager/#moving
+        urlkr: /software/rplus1/manager/#움직임-유무
+      - title: "Sensed Current"
+        titlekr: "소모 전류량"
+        url: /software/rplus1/manager/#sensed-current
+        urlkr: /software/rplus1/manager/#소모-전류량
+      - title: "PID Gain"
+        titlekr: "PID Gain"
+        url: /software/rplus1/manager/#pid-gain
+        urlkr: /software/rplus1/manager/#pid-gain
+      - title: "IR Left/Center/Right"
+        titlekr: "적외선 거리 감지"
+        url: /software/rplus1/manager/#ir-leftcenterright
+        urlkr: /software/rplus1/manager/#적외선-거리-감지
+      - title: "Light Left/Center/Right"
+        titlekr: "조명 감지"
+        url: /software/rplus1/manager/#light-leftcenterright
+        urlkr: /software/rplus1/manager/#조명-감지
+      - title: "Object Detected"
+        titlekr: "물체 감지"
+        url: /software/rplus1/manager/#object-detected
+        urlkr: /software/rplus1/manager/#물체-감지
+      - title: "Object Detection Threshold"
+        titlekr: "물체 감지 기준값"
+        url: /software/rplus1/manager/#object-detection-threshold
+        urlkr: /software/rplus1/manager/#물체-감지-기준값
+      - title: "Light Detected"
+        titlekr: "조명 감지"
+        url: /software/rplus1/manager/#light-detected
+        urlkr: /software/rplus1/manager/#조명-감지
+      - title: "Light Detection Threshold"
+        titlekr: "조명 감지 기준값"
+        url: /software/rplus1/manager/#light-detection-threshold
+        urlkr: /software/rplus1/manager/#조명-감지-기준값
+      - title: "Sound Data"
+        titlekr: "소리 크기"
+        url: /software/rplus1/manager/#sound-data
+        urlkr: /software/rplus1/manager/#소리-크기
+      - title: "Sound Max Data"
+        titlekr: "최대 소리 크기"
+        url: /software/rplus1/manager/#sound-max-data
+        urlkr: /software/rplus1/manager/#최대-소리-크기
+      - title: "Sound Count"
+        titlekr: "소리 감지 횟수"
+        url: /software/rplus1/manager/#sound-count
+        urlkr: /software/rplus1/manager/#소리-감지-횟수
+      - title: "Buzzer Index"
+        titlekr: "버저 음계"
+        url: /software/rplus1/manager/#buzzer-index
+        urlkr: /software/rplus1/manager/#버저-음계
+      - title: "Buzzer Time"
+        titlekr: "버저 울림 시간"
+        url: /software/rplus1/manager/#buzzer-time
+        urlkr: /software/rplus1/manager/#버저-울림-시간
+      - title: "IR Sensor Value"
+        titlekr: "1~7번 적외선 센서 값"
+        url: /software/rplus1/manager/#ir-sensor-value
+        urlkr: /software/rplus1/manager/#17번-적외선-센서-값
+      - title: "Auto Threshold Mode"
+        titlekr: "감지 기준값 자동설정"
+        url: /software/rplus1/manager/#auto-threshold-mode
+        urlkr: /software/rplus1/manager/#감지-기준값-자동설정
+      - title: "IR Obstacle Detected"
+        titlekr: "적외선 물체 감지 유무"
+        url: /software/rplus1/manager/#ir-obstacle-detected
+        urlkr: /software/rplus1/manager/#적외선-물체-감지-유무
+      - title: "Set IR Threshold"
+        titlekr: "적외선 감지 기준값"
+        url: /software/rplus1/manager/#set-ir-threshold
+        urlkr: /software/rplus1/manager/#적외선-감지-기준값
     - title: "ZIG2Serial"
+      titlekr: "ZIG2Serial"
       url: /software/rplus1/manager/#zig2serial
+      urlkr: /software/rplus1/manager/#zig2serial
 
 #R+ Motion 1.0 sidebar
 rplusmotion1:
   - title: "Introduction"
+    titlekr: "개요"
     url: /software/rplus1/motion/#introduction
+    urlkr: /software/rplus1/motion/#개요
   - title: "Getting Started"
+    titlekr: "시작하기"
     url: /software/rplus1/motion/#getting-started
+    urlkr: /software/rplus1/motion/#시작하기
     children:
     - title: "Robot Motion"
+      titlekr: "로봇 모션"
       url: /software/rplus1/motion/#robot-motion
+      urlkr: /software/rplus1/motion/#로봇-모션
     - title: "File Motion"
+      titlekr: "파일 모션"
       url: /software/rplus1/motion/#file-motion
+      urlkr: /software/rplus1/motion/#파일-모션
+    - title: "Connect to Robot"
+      titlekr: "로봇 연결하기"
+      url: /software/rplus1/motion/#connect-to-robot
+      urlkr: /software/rplus1/motion/#로봇-연결하기
     - title: "Download Motion"
+      titlekr: "모션 다운로드"
       url: /software/rplus1/motion/#download-motion
+      urlkr: /software/rplus1/motion/#모션-다운로드
     - title: "Play Motion"
+      titlekr: "모션 실행"
       url: /software/rplus1/motion/#play-motion
+      urlkr: /software/rplus1/motion/#모션-실행
     - title: "Stop Motion"
+      titlekr: "모션 정지"
       url: /software/rplus1/motion/#stop-motion
+      urlkr: /software/rplus1/motion/#모션-정지
     - title: "Emergency Stop"
+      titlekr: "모션 비상 정지"
       url: /software/rplus1/motion/#emergency-stop
+      urlkr: /software/rplus1/motion/#모션-비상-정지
   - title: "Motion Editing"
+    titlekr: "모션 편집"
     url: /software/rplus1/motion/#motion-editing
+    urlkr: /software/rplus1/motion/#모션-편집
     children:
     - title: "Pose Editing"
+      titlekr: "포즈 편집"
       url: /software/rplus1/motion/#pose-editing
+      urlkr: /software/rplus1/motion/#포즈-편집
       children:
       - title: "Select Actuator ID"
+        titlekr: "관절 선택하기"
         url: /software/rplus1/motion/#select-actuator-id
+        urlkr: /software/rplus1/motion/#관절-선택하기
       - title: "Torque On/Off"
+        titlekr: "토크 On/Off"
         url: /software/rplus1/motion/#torque-onoff
+        urlkr: /software/rplus1/motion/#토크-onoff
       - title: "Change Actuator Value"
+        titlekr: "관절 값 바꾸기"
         url: /software/rplus1/motion/#change-actuator-value
+        urlkr: /software/rplus1/motion/#관절-값-바꾸기
       - title: "Play Pose"
+        titlekr: "포즈 실행"
         url: /software/rplus1/motion/#play-pose
+        urlkr: /software/rplus1/motion/#포즈-실행
       - title: "Capture Pose"
+        titlekr: "포즈 캡쳐"
         url: /software/rplus1/motion/#capture-pose
+        urlkr: /software/rplus1/motion/#포즈-캡쳐
       - title: "Copy/Paste Pose"
+        titlekr: "포즈 복사/붙여넣기"
         url: /software/rplus1/motion/#copypaste-pose
+        urlkr: /software/rplus1/motion/#포즈-복사붙여넣기
       - title: "Mask Pose"
+        titlekr: "포즈 마스크"
         url: /software/rplus1/motion/#mask-pose
+        urlkr: /software/rplus1/motion/#포즈-마스크
       - title: "Select Robot"
+        titlekr: "로봇 선택"
         url: /software/rplus1/motion/#select-robot
+        urlkr: /software/rplus1/motion/#로봇-선택
       - title: "Control 3D Robot"
+        titlekr: "3D 로봇 제어"
         url: /software/rplus1/motion/#control-3d-robot
+        urlkr: /software/rplus1/motion/#3d-로봇-제어
       - title: "Mirror"
+        titlekr: "미러(Mirror)"
         url: /software/rplus1/motion/#mirror
+        urlkr: /software/rplus1/motion/#미러mirror
       - title: "Inverse Kinematics"
+        titlekr: "역기구학"
         url: /software/rplus1/motion/#inverse-kinematics
-      - title: "Pose Go/Write(Utility)"
+        urlkr: /software/rplus1/motion/#역기구학
+      - title: "Pose Execution/Capture"
+        titlekr: "포즈 실행/캡쳐"
         url: /software/rplus1/motion/#pose-executioncapture
+        urlkr: /software/rplus1/motion/#포즈-실행캡쳐
     - title: "Step Editing"
+      titlekr: "스텝 편집"
       url: /software/rplus1/motion/#step-editing
+      urlkr: /software/rplus1/motion/#스텝-편집
       children:
       - title: "Add/Insert/Delete/Move Step"
+        titlekr: "스텝 추가/삽입/삭제/이동"
         url: /software/rplus1/motion/#addinsertdeletemove-step
+        urlkr: /software/rplus1/motion/#스텝-추가삽입삭제이동
       - title: "Pause/Time"
+        titlekr: "스텝 멈춤 시간"
         url: /software/rplus1/motion/#pausetime
+        urlkr: /software/rplus1/motion/#스텝-멈춤-시간
       - title: "Copy/Cut/Paste Step"
+        titlekr: "스텝 복사/잘라내기/붙여넣기"
         url: /software/rplus1/motion/#copycutpaste-step
+        urlkr: /software/rplus1/motion/#스텝-복사잘라내기붙여넣기
     - title: "Page Editing"
+      titlekr: "페이지 편집"
       url: /software/rplus1/motion/#page-editing
+      urlkr: /software/rplus1/motion/#페이지-편집
       children:
       - title: "Select Page"
+        titlekr: "페이지 선택"
         url: /software/rplus1/motion/#select-page
+        urlkr: /software/rplus1/motion/#페이지-선택
       - title: "Connect Page"
+        titlekr: "페이지 연결"
         url: /software/rplus1/motion/#connect-page
+        urlkr: /software/rplus1/motion/#페이지-연결
       - title: "Copy/Cut/Paste Page"
+        titlekr: "페이지 복사/잘라내기/붙여넣기"
         url: /software/rplus1/motion/#copycutpaste-page
+        urlkr: /software/rplus1/motion/#페이지-복사잘라내기붙여넣기
       - title: "Set Page Repeat/Time"
+        titlekr: "페이지 반복/속도 설정"
         url: /software/rplus1/motion/#set-page-repeattime
+        urlkr: /software/rplus1/motion/#페이지-반복속도-설정
       - title: "Inertial Force Control"
+        titlekr: "관성력 조절"
         url: /software/rplus1/motion/#inertial-force-control
+        urlkr: /software/rplus1/motion/#관성력-조절
       - title: "Joint Softness"
+        titlekr: "관절 유연성"
         url: /software/rplus1/motion/#joint-softness
+        urlkr: /software/rplus1/motion/#관절-유연성
   - title: "More Information"
+    titlekr: "기타 정보"
     url: /software/rplus1/motion/#more-information
+    urlkr: /software/rplus1/motion/#기타-정보
     children:
     - title: "Upload Robot Motion"
+      titlekr: "로봇 모션 업로드"
       url: /software/rplus1/motion/#upload-robot-motion
+      urlkr: /software/rplus1/motion/#로봇-모션-업로드
     - title: "Motion Offset"
+      titlekr: "모션 오프셋"
       url: /software/rplus1/motion/#motion-offset
+      urlkr: /software/rplus1/motion/#모션-오프셋
     - title: "Edit All Page"
+      titlekr: "전체 페이지 편집"
       url: /software/rplus1/motion/#edit-all-page
+      urlkr: /software/rplus1/motion/#전체-페이지-편집
     - title: "Keyboard Shortcuts"
+      titlekr: "키보드 단축키 활용 팁"
       url: /software/rplus1/motion/#keyboard-shortcuts
+      urlkr: /software/rplus1/motion/#키보드-단축키-활용-팁
     - title: "Making Robots"
+      titlekr: "사용자 로봇 만들기"
       url: /software/rplus1/motion/#making-robots
+      urlkr: /software/rplus1/motion/#사용자-로봇-만들기
 
 #R+ Terminal
 rplusterminal:
   - title: "Introduction"
+    titlekr: "개요"
     url: /software/rplus1/terminal/#introduction
+    urlkr: /software/rplus1/terminal/#개요
   - title: "Serial Port Setting"
+    titlekr: "통신 포트 설정"
     url: /software/rplus1/terminal/#serial-port-setting
+    urlkr: /software/rplus1/terminal/#통신-포트-설정
   - title: "Processing Input"
+    titlekr: "입력 처리"
     url: /software/rplus1/terminal/#processing-input
+    urlkr: /software/rplus1/terminal/#입력-처리
   - title: "Processing Output"
+    titlekr: "제어기 출력 처리"
     url: /software/rplus1/terminal/#processing-controller-output
+    urlkr: /software/rplus1/terminal/#제어기-출력-처리
   - title: "Transmitting/Receiving Data"
+    titlekr: "데이터 전송/수신"
     url: /software/rplus1/terminal/#transmittingreceiving-data
+    urlkr: /software/rplus1/terminal/#데이터-전송수신
   - title: "Setting Option"
+    titlekr: "옵션 설정"
     url: /software/rplus1/terminal/#setting-option
+    urlkr: /software/rplus1/terminal/#옵션-설정
 
 #Dynamixel Wizard
 dynamixel_wizard:
   - title: "Introduction"
+    titlekr: "개요"
     url: /software/rplus1/dynamixe_wizard/#introduction
+    urlkr: /software/rplus1/dynamixe_wizard/#개요
   - title: "Connecting Dynamixel"
+    titlekr: "다이나믹셀 연결"
     url: /software/rplus1/dynamixe_wizard/#connecting-dynamixel
+    urlkr: /software/rplus1/dynamixe_wizard/#다이나믹셀-연결
   - title: "Firmware Update"
+    titlekr: "펌웨어 업데이트"
     url: /software/rplus1/dynamixe_wizard/#firmware-update
+    urlkr: /software/rplus1/dynamixe_wizard/#펌웨어-업데이트
   - title: "Firmware Recovery"
+    titlekr: "펌웨어 복구"
     url: /software/rplus1/dynamixe_wizard/#firmware-recovery
+    urlkr: /software/rplus1/dynamixe_wizard/#펌웨어-복구
   - title: "Test and Setup"
+    titlekr: "테스트 및 설정"
     url: /software/rplus1/dynamixe_wizard/#test-and-setup
+    urlkr: /software/rplus1/dynamixe_wizard/#테스트-및-설정
   - title: "MX Series Calibration"
+    titlekr: "MX 시리즈 보정하기"
     url: /software/rplus1/dynamixe_wizard/#mx-series-calibration
+    urlkr: /software/rplus1/dynamixe_wizard/#mx-시리즈-보정하기
   - title: "Videos"
+    titlekr: "동영상"
     url: /software/rplus1/dynamixe_wizard/#videos
+    urlkr: /software/rplus1/dynamixe_wizard/#동영상
 
 #Task Code Download sidebar
 download_task_code:
@@ -6460,390 +7084,859 @@ rplusmanager2:
   - title: "Introduction"
     titlekr: "개요"
     url: /software/rplus2/manager/#introduction
-    urlkr: /software/rplus2/manager/geting_started/#개요
+    urlkr: /software/rplus2/manager/#개요
     children:
     - title: "RoboPlus Manager 2.0"
       titlekr: "로보플러스 매니저 2.0"
       url: /software/rplus2/manager/#roboplus-manager-20
-      urlkr: /software/rplus2/manager/getting_started/#로보플러스-매니저-20
+      urlkr: /software/rplus2/manager/#로보플러스-매니저-20
     - title: "Precautions"
       titlekr: "사용전 주의사항"
       url: /software/rplus2/manager/#precautions
-      urlkr: /software/rplus2/manager/getting_started/#사용전-주의사항
+      urlkr: /software/rplus2/manager/#사용전-주의사항
     - title: "Definition of Firmware"
       titlekr: "펌웨어 정의"
       url: /software/rplus2/manager/#definition-of-firmware
-      urlkr: /software/rplus2/manager/getting_started/#펌웨어-정의
+      urlkr: /software/rplus2/manager/#펌웨어-정의
   - title: "Menu Description"
     titlekr: "메뉴 설명"
     url: /software/rplus2/manager/#menu-description
-    urlkr: /software/rplus2/manager/getting_started/#메뉴-설명
+    urlkr: /software/rplus2/manager/#메뉴-설명
     children:
     - title: "Editing Tab for Each Stage"
       titlekr: "단계별 편집 탭"
       url: /software/rplus2/manager/#editing-tab-for-each-stage
-      urlkr: /software/rplus2/manager/getting_started/#단계별-편집-탭
+      urlkr: /software/rplus2/manager/#단계별-편집-탭
     - title: "Home Tab"
       titlekr: "홈 탭"
       url: /software/rplus2/manager/#home-tab
-      urlkr: /software/rplus2/manager/getting_started/#홈-탭
+      urlkr: /software/rplus2/manager/#홈-탭
     - title: "Management Tab"
       titlekr: "관리-탭"
       url: /software/rplus2/manager/#management-tab
-      urlkr: /software/rplus2/manager/getting_started/#관리-탭
+      urlkr: /software/rplus2/manager/#관리-탭
     - title: "Terminal tab"
       titlekr: "터미널-탭"
       url: /software/rplus2/manager/#terminal-tab
-      urlkr: /software/rplus2/manager/getting_started/#터미널-탭
+      urlkr: /software/rplus2/manager/#터미널-탭
   - title: "Basic Features"
     titlekr: "기본 기능"
     url: /software/rplus2/manager/#basic-features
-    urlkr: /software/rplus2/manager/getting_started/#기본-기능
+    urlkr: /software/rplus2/manager/#기본-기능
     children:
     - title: "Firmware Update"
       titlekr: "펌웨어 업데이트"
       url: /software/rplus2/manager/#firmware-update
-      urlkr: /software/rplus2/manager/getting_started/#펌웨어-업데이트
+      urlkr: /software/rplus2/manager/#펌웨어-업데이트
     - title: "Firmware Recovery"
       titlekr: "펌웨어 복구"
       url: /software/rplus2/manager/#firmware-recovery
-      urlkr: /software/rplus2/manager/getting_started/#펌웨어-복구
+      urlkr: /software/rplus2/manager/#펌웨어-복구
     - title: "Dynamixel Control Table"
       titlekr: "다이나믹셀 컨트롤 테이블"
       url: /software/rplus2/manager/#dynamixel-control-table
-      urlkr: /software/rplus2/manager/getting_started/#다이나믹셀-컨트롤-테이블
+      urlkr: /software/rplus2/manager/#다이나믹셀-컨트롤-테이블
     - title: "Controller Control Table"
       url: /software/rplus2/manager/#controller-control-table
   - title: "Advanced Features"
     titlekr: "고급 기능"
     url: /software/rplus2/manager/#advanced-features
-    urlkr: /software/rplus2/manager/getting_started/#고급-기능
+    urlkr: /software/rplus2/manager/#고급-기능
     children:
     - title: "Preparation for XM/XH Series"
       titlekr: "XM/XH 시리즈 사용전 준비"
       url: /software/rplus2/manager/#preparation-for-xmxh-series
-      urlkr: /software/rplus2/manager/advanced/#xh-xh-시리즈-사용전-준비
+      urlkr: /software/rplus2/manager/#xh-xh-시리즈-사용전-준비
     - title: "Changing Control Value"
       titlekr: "컨트롤 아이템 값 변경"
       url: /software/rplus2/manager/#changing-control-value
-      urlkr: /software/rplus2/manager/advanced/#컨트롤-아이템-값-변경
+      urlkr: /software/rplus2/manager/#컨트롤-아이템-값-변경
     - title: "Firmware Information"
       titlekr: "펌웨어 정보 확인"
       url: /software/rplus2/manager/#firmware-information
-      urlkr: /software/rplus2/manager/advanced/#펌웨어-정보-확인
+      urlkr: /software/rplus2/manager/#펌웨어-정보-확인
     - title: "Firmware Management(Bluetooth)"
       titlekr: "블루투스로 펌웨어 관리하기"
       url: /software/rplus2/manager/#firmware-managementbluetooth
-      urlkr: /software/rplus2/manager/advanced/#블루투스로-펌웨어-관리하기
+      urlkr: /software/rplus2/manager/#블루투스로-펌웨어-관리하기
 
 #R+ Task 2.0 sidebar
 rplustask2:
   - title: "Introduction"
+    titlekr: "개요"
     url: /software/rplus2/task/#introduction
+    urlkr: /software/rplus2/task/#개요
+  - title: "Getting Started"
+    titlekr: "시작하기"
+    url: /software/rplus2/task/#getting-started
+    urlkr: /software/rplus2/task/#시작하기
     children:
-    - title: "RoboPlus Task 2.0"
-      url: /software/rplus2/task/#roboplus-task-20
     - title: "Manual Instructions"
+      titlekr: "메뉴설명"
       url: /software/rplus2/task/#manual-instructions
+      urlkr: /software/rplus2/task/#메뉴설명
     - title: "Resources for Task"
+      titlekr: "태스크 코드에서 활용 가능한 자원"
       url: /software/rplus2/task/#resources-for-task
+      urlkr: /software/rplus2/task/#태스크-코드에서-활용-가능한-자원
     - title: "Task Code Structure"
+      titlekr: "태스크 코드의 구조"
       url: /software/rplus2/task/#task-code-structure
+      urlkr: /software/rplus2/task/#태스크-코드의-구조
   - title: "Basic Features"
+    titlekr: "따라해보기"
     url: /software/rplus2/task/#basic-features
+    urlkr: /software/rplus2/task/#따라해보기
     children:
     - title: "File Open"
+      titlekr: "예제 프로젝트 열기"
       url: /software/rplus2/task/#file-open
+      urlkr: /software/rplus2/task/#예제-프로젝트-열기
     - title: "Create New File"
+      titlekr: "새 파일 만들기"
       url: /software/rplus2/task/#create-new-file
+      urlkr: /software/rplus2/task/#새-파일-만들기
     - title: "Command Edit"
+      titlekr: "명령어 편집하기"
       url: /software/rplus2/task/#command-edit
+      urlkr: /software/rplus2/task/#명령어-편집하기
     - title: "Parameter Edit"
+      titlekr: "파라미터 편집하기"
       url: /software/rplus2/task/#parameter-edit
+      urlkr: /software/rplus2/task/#파라미터-편집하기
     - title: "Download Task Code"
+      titlekr: "다운로드 하기"
       url: /software/rplus2/task/#download-task-code
+      urlkr: /software/rplus2/task/#다운로드-하기
     - title: "Print Output"
+      titlekr: "프로그램 출력보기"
       url: /software/rplus2/task/#print-output
+      urlkr: /software/rplus2/task/#프로그램-출력보기
   - title: "Programming(Edit)"
+    titlekr: "프로그래밍(편집)"
     url: /software/rplus2/task/#programmingedit
+    urlkr: /software/rplus2/task/#프로그래밍편집
     children:
     - title: "Insert/Change Instruction"
+      titlekr: "명령어 삽입/변경"
       url: /software/rplus2/task/#insertchange-instruction
+      urlkr: /software/rplus2/task/#명령어-삽입변경
     - title: "Select Multiple Lines"
+      titlekr: "여러 줄 선택"
       url: /software/rplus2/task/#select-multiple-lines
+      urlkr: /software/rplus2/task/#여러-줄-선택
     - title: "Insert/Delete Line"
+      titlekr: "줄 삽입/지우기"
       url: /software/rplus2/task/#insertdelete-line
+      urlkr: /software/rplus2/task/#줄-삽입지우기
     - title: "Enable/Disable Line"
+      titlekr: "줄 활성/비활성"
       url: /software/rplus2/task/#enabledisable-line
+      urlkr: /software/rplus2/task/#줄-활성비활성
     - title: "Copy/Cut/Paste"
+      titlekr: "복사/잘라내기/붙여넣기"
       url: /software/rplus2/task/#copycutpaste
+      urlkr: /software/rplus2/task/#복사잘라내기붙여넣기
     - title: "Undo/Redo"
+      titlekr: "실행취소/다시실행"
       url: /software/rplus2/task/#undoredo
+      urlkr: /software/rplus2/task/#실행취소다시실행
   - title: "Programming(Instructions)"
+    titlekr: "프로그래밍(명령어)"
     url: /software/rplus2/task/#programminginstructions
+    urlkr: /software/rplus2/task/#프로그래밍명령어
     children:
     - title: "Start/End"
+      titlekr: "시작과 끝"
       url: /software/rplus2/task/#startend
+      urlkr: /software/rplus2/task/#시작과-끝
     - title: "Execute"
+      titlekr: "실행문"
       url: /software/rplus2/task/#execute
+      urlkr: /software/rplus2/task/#실행문
     - title: "Condition"
+      titlekr: "조건문"
       url: /software/rplus2/task/#condition
+      urlkr: /software/rplus2/task/#조건문
     - title: "Loop"
+      titlekr: "반복문"
       url: /software/rplus2/task/#loop
+      urlkr: /software/rplus2/task/#반복문
     - title: "Function(Sub-Routine)"
+      titlekr: "함수(서브루틴)"
       url: /software/rplus2/task/#functionsub-routine
+      urlkr: /software/rplus2/task/#함수서브루틴
   - title: "Programming(Parameters)"
+    titlekr: "프로그래밍(파라미터)"
     url: /software/rplus2/task/#programmingparameters
+    urlkr: /software/rplus2/task/#프로그래밍파라미터
     children:
     - title: "Controllers"
+      titlekr: "제어기 장치"
       url: /software/rplus2/task/#controllers
+      urlkr: /software/rplus2/task/#제어기-장치
+    - titlekr: "스마트 장치"
+      urlkr: /software/rplus2/task/#스마트-장치
     - title: "Dynamixel"
+      titlekr: "다이나믹셀 장치"
       url: /software/rplus2/task/#dynamixel
+      urlkr: /software/rplus2/task/#다이나믹셀-장치
     - title: "Common"
+      titlekr: "공통"
       url: /software/rplus2/task/#common
+      urlkr: /software/rplus2/task/#공통
   - title: "Useful Tips"
+    titlekr: "유용한 정보"
     url: /software/rplus2/task/#useful-tips
+    urlkr: /software/rplus2/task/#유용한-정보
     children:
     - title: "Search Variables/Functions"
+      titlekr: "변수, 함수 참조 찾기"
       url: /software/rplus2/task/#search-variablesfunctions
+      urlkr: /software/rplus2/task/#변수-함수-참조-찾기
     - title: "Search Keyword"
+      titlekr: "키워드 찾기"
       url: /software/rplus2/task/#search-keyword
+      urlkr: /software/rplus2/task/#키워드-찾기
     - title: "Grammar/Compile Check"
+      titlekr: "문법검사/컴파일 결과 확인하기"
       url: /software/rplus2/task/#grammarcompile-check
+      urlkr: /software/rplus2/task/#문법검사컴파일-결과-확인하기
     - title: "FAQ"
+      titlekr: "자주 묻는 질문"
       url: /software/rplus2/task/#faq
+      urlkr: /software/rplus2/task/#자주-묻는-질문
 
 #R+ Motion 2.0 sidebar
 rplusmotion2:
   - title: "Introduction"
+    titlekr: "개요"
     url: /software/rplus2/motion/#introduction
+    urlkr: /software/rplus2/motion/#개요
     children:
     - title: "Menu"
+      titlekr: "메뉴설명"
       url: /software/rplus2/motion/#menu
+      urlkr: /software/rplus2/motion/#메뉴설명
     - title: "3D Robot and Actual Robot"
+      titlekr: "3D 로봇과 실제 로봇"
       url: /software/rplus2/motion/#3d-robot-and-actual-robot
+      urlkr: /software/rplus2/motion/#3d-로봇과-실제-로봇
     - title: "Motion Data"
+      titlekr: "모션 데이터"
       url: /software/rplus2/motion/#motion-data
+      urlkr: /software/rplus2/motion/#모션-데이터
     - title: "Editing Timeline"
+      titlekr: "타임라인 편집 방식의 장점"
       url: /software/rplus2/motion/#editing-timeline
+      urlkr: /software/rplus2/motion/#타임라인-편집-방식의-장점
     - title: "Editing Flow Control"
+      titlekr: "흐름제어 편집 방식의 장점"
       url: /software/rplus2/motion/#editing-flow-control
+      urlkr: /software/rplus2/motion/#흐름제어-편집-방식의-장점
     - title: "Download Motion File"
+      titlekr: "모션 다운로드 주의사항"
       url: /software/rplus2/motion/#download-motion-file
+      urlkr: /software/rplus2/motion/#모션-다운로드-주의사항
   - title: "Practice"
+    titlekr: "따라해보기"
     url: /software/rplus2/motion/#Practice
+    urlkr: /software/rplus2/motion/#따라해보기
     children:
     - title: "Open Project"
+      titlekr: "예제 프로젝트 열기"
       url: /software/rplus2/motion/#open-project
+      urlkr: /software/rplus2/motion/#예제-프로젝트-열기
     - title: "Connect to Robot"
+      titlekr: "로봇 연결하기"
       url: /software/rplus2/motion/#connect-to-robot
+      urlkr: /software/rplus2/motion/#로봇-연결하기
     - title: "Create New Motion Unit"
+      titlekr: "새 모션 유닛 만들기"
       url: /software/rplus2/motion/#create-new-motion-unit
+      urlkr: /software/rplus2/motion/#새-모션-유닛-만들기
     - title: "Edit Motion Unit(3D Robot)"
+      titlekr: "모션 유닛 편집하기(3D 로봇 활용)"
       url: /software/rplus2/motion/#edit-motion-unit3d-robot
+      urlkr: /software/rplus2/motion/#모션-유닛-편집하기-3D-로봇-활용
     - title: "Edit Motion Unit(Actual Robot)"
+      titlekr: "모션 유닛 편집하기2(실제 로봇 활용)"
       url: /software/rplus2/motion/#edit-motion-unitactual-robot
+      urlkr: /software/rplus2/motion/#모션-유닛-편집하기2-실제-로봇-활용
     - title: "Create New Motion"
+      titlekr: "새 모션 만들기"
       url: /software/rplus2/motion/#create-new-motion
+      urlkr: /software/rplus2/motion/#새-모션-만들기
     - title: "Edit Motion"
+      titlekr: "모션 편집하기"
       url: /software/rplus2/motion/#edit-motion
+      urlkr: /software/rplus2/motion/#모션-편집하기
     - title: "Create New Motion Group"
+      titlekr: "모션 그룹 만들기"
       url: /software/rplus2/motion/#create-new-motion-group
+      urlkr: /software/rplus2/motion/#모션-그룹-만들기
     - title: "Download Motion"
+      titlekr: "로봇에 다운로드하기"
       url: /software/rplus2/motion/#download-motion
+      urlkr: /software/rplus2/motion/#로봇에-다운로드하기
   - title: "Useful Tips"
+    titlekr: "유용한 정보"
     url: /software/rplus2/motion/#useful-tips
+    urlkr: /software/rplus2/motion/#유용한-정보
     children:
     - title: "Create Custom Robot"
+      titlekr: "자유 형태 로봇 생성(사용자 로봇)"
       url: /software/rplus2/motion/#create-custom-robot
+      urlkr: /software/rplus2/motion/#자유-형태-로봇-생성-사용자-로봇
     - title: "Change 3D Robot"
+      titlekr: "3D 로봇 변경"
       url: /software/rplus2/motion/#change-3d-robot
+      urlkr: /software/rplus2/motion/#3D-로봇-변경
     - title: "Pose Mirroring"
+      titlekr: "포즈 미러링"
       url: /software/rplus2/motion/#pose-mirroring
+      urlkr: /software/rplus2/motion/#포즈-미러링
     - title: "Edit Motion Index Number"
+      titlekr: "모션 호출 번호 수정"
       url: /software/rplus2/motion/#edit-motion-index-number
+      urlkr: /software/rplus2/motion/#모션-호출-번호-수정
     - title: "Copy Motion Data"
+      titlekr: "모션 파일간 데이터 복사"
       url: /software/rplus2/motion/#copy-motion-data
+      urlkr: /software/rplus2/motion/#모션-파일간-데이터-복사
     - title: "Edit Offset"
+      titlekr: "오프셋 편집"
       url: /software/rplus2/motion/#edit-offset
+      urlkr: /software/rplus2/motion/#오프셋-편집
     - title: "Convert mtn File"
+      titlekr: "구 버전 파일(*.mtn) 변환하기"
       url: /software/rplus2/motion/#convert-mtn-file
+      urlkr: /software/rplus2/motion/#구-버전-파일-mtn-변환하기
     - title: "Control 3D Camera"
+      titlekr: "3D 카메라 조작"
       url: /software/rplus2/motion/#control-3d-camera
+      urlkr: /software/rplus2/motion/#3D-카메라-조작
     - title: "Shortcut Keys"
+      titlekr: "단축키"
       url: /software/rplus2/motion/#shortcut-keys
+      urlkr: /software/rplus2/motion/#단축키
     - title: "FAQ"
+      titlekr: "자주 묻는 질문"
       url: /software/rplus2/motion/#faq
+      urlkr: /software/rplus2/motion/#자주-묻는-질문
 
 #R+ Design sidebar
 rplusdesign:
   - title: "Introduction"
+    titlekr: "개요"
     url: /software/rplus2/design/#introduction
+    urlkr: /software/rplus2/design/#개요
     children:
     - title: "Home Tab"
+      titlekr: "홈 탭"
       url: /software/rplus2/design/#home-tab
+      urlkr: /software/rplus2/design/#홈-탭
     - title: "My Robot Tab"
+      titlekr: "내 로봇 탭"
       url: /software/rplus2/design/#my-robot-tab
+      urlkr: /software/rplus2/design/#내-로봇-탭
     - title: "Assembly Tab"
+      titlekr: "조립-탭"
       url: /software/rplus2/design/#assembly-tab
+      urlkr: /software/rplus2/design/#조립-탭
     - title: "Edit Assembly Guide Tab"
+      titlekr: "조립 가이드 편집 탭"
       url: /software/rplus2/design/#edit-assembly-guid-tab
+      urlkr: /software/rplus2/design/#조립-가이드-편집-탭
     - title: "View Assembled Guide Tab"
+      titlekr: "조립 가이드 보기 탭"
       url: /software/rplus2/design/#view-assembled-guide-tab
+      urlkr: /software/rplus2/design/#조립-가이드-보기-탭
   - title: "Practice"
+    titlekr: "로봇 만들기"
     url: /software/rplus2/design/#practice
+    urlkr: /software/rplus2/design/#로봇-만들기
     children:
     - title: "Open Sample"
+      titlekr: "예제 열기"
       url: /software/rplus2/design/#open-sample
+      urlkr: /software/rplus2/design/#예제-열기
     - title: "Open Design File"
+      titlekr: "디자인 파일 열기"
       url: /software/rplus2/design/#open-design-file
+      urlkr: /software/rplus2/design/#디자인-파일-열기
     - title: "Create New Robot"
+      titlekr: "새 로봇 만들기"
       url: /software/rplus2/design/#create-new-robot
+      urlkr: /software/rplus2/design/#새-로봇-만들기
     - title: "Change Viewpoint"
+      titlekr: "시점 변경하기"
       url: /software/rplus2/design/#change-viewpoint
+      urlkr: /software/rplus2/design/#시점-변경하기
     - title: "Adding Part"
+      titlekr: "파트 추가하기"
       url: /software/rplus2/design/#adding-part
+      urlkr: /software/rplus2/design/#파트-추가하기
     - title: "Select Part"
+      titlekr: "파트 선택/해제하기"
       url: /software/rplus2/design/#select-part
+      urlkr: /software/rplus2/design/#파트-선택해제하기
     - title: "Copying Part"
+      titlekr: "파트 복사하기"
       url: /software/rplus2/design/#copying-part
+      urlkr: /software/rplus2/design/#파트-복사하기
     - title: "Change Part Color"
+      titlekr: "파트 색상 변경하기"
       url: /software/rplus2/design/#change-part-color
+      urlkr: /software/rplus2/design/#파트-색상-변경하기
     - title: "Delete Part"
+      titlekr: "파트-삭제하기"
       url: /software/rplus2/design/#delete-part
+      urlkr: /software/rplus2/design/#파트-삭제하기
     - title: "Move Part"
+      titlekr: "파트 이동하기"
       url: /software/rplus2/design/#move-part
+      urlkr: /software/rplus2/design/#파트-이동하기
     - title: "Rotate Part"
+      titlekr: "파트 회전하기"
       url: /software/rplus2/design/#rotate-part
+      urlkr: /software/rplus2/design/#파트-회전하기
     - title: "Hole-Based Rotation"
+      titlekr: "홀 기준 회전"
       url: /software/rplus2/design/#hole-based-rotation
+      urlkr: /software/rplus2/design/#홀-기준-회전
     - title: "Connect Parts"
+      titlekr: "파트 연결하기"
       url: /software/rplus2/design/#connect-parts
+      urlkr: /software/rplus2/design/#파트-연결하기
     - title: "Group"
+      titlekr: "그룹"
       url: /software/rplus2/design/#group
+      urlkr: /software/rplus2/design/#그룹
   - title: "Edit Robot Information"
+    titlekr: "로봇정보 입력/편집하기"
     url: /software/rplus2/design/#edit-robot-information
+    urlkr: /software/rplus2/design/#로봇정보-입력편집하기
     children:
     - title: "Robot Information"
+      titlekr: "내 로봇정보"
       url: /software/rplus2/design/#robot-information
+      urlkr: /software/rplus2/design/#내-로봇정보
     - title: "Part List"
+      titlekr: "파트 리스트"
       url: /software/rplus2/design/#part-list
+      urlkr: /software/rplus2/design/#파트-리스트
   - title: "Edit Assembly Guide"
+    titlekr: "조립 가이드 만들기"
     url: /software/rplus2/design/#edit-assembly-guide
+    urlkr: /software/rplus2/design/#조립-가이드-만들기
     children:
     - title: "Assembly Guide"
+      titlekr: "조립 가이드"
       url: /software/rplus2/design/#assemlby-guide
+      urlkr: /software/rplus2/design/#조립-가이드
     - title: "Delete Event"
+      titlekr: "이벤트 삭제하기"
       url: /software/rplus2/design/#delete-event
+      urlkr: /software/rplus2/design/#이벤트-삭제하기
     - title: "Select Part/Event"
+      titlekr: "파트 선택/이벤트 선택하기"
       url: /software/rplus2/design/#select-partevent
+      urlkr: /software/rplus2/design/#파트-선택이벤트-선택하기
     - title: "Add Event"
+      titlekr: "이벤트 생성하기"
       url: /software/rplus2/design/#add-event
+      urlkr: /software/rplus2/design/#이벤트-생성하기
     - title: "Edit Move Event"
+      titlekr: "이동 이벤트 편집하기"
       url: /software/rplus2/design/#edit-move-event
+      urlkr: /software/rplus2/design/#이동-이벤트-편집하기
     - title: "Add Move Event"
+      titlekr: "이동 이벤트 추가하기"
       url: /software/rplus2/design/#add-move-event
+      urlkr: /software/rplus2/design/#이동-이벤트-추가하기
     - title: "Change Event Viewpoint"
+      titlekr: "이동 이벤트 시점 변경하기"
       url: /software/rplus2/design/#change-event-viewpoint
+      urlkr: /software/rplus2/design/#이동-이벤트-시점-변경하기
   - title: "Install Instruction"
+    titlekr: "로보플러스 디자인 설치"
     url: /software/rplus2/design/#install-instruction
+    urlkr: /software/rplus2/design/#로보플러스-디자인r-design-설치하기
     children:
     - title: "Install on PC"
+      titlekr: "PC에 설치하기"
       url: /software/rplus2/design/#install-on-pc
+      urlkr: /software/rplus2/design/#pc에-설치하기
     - title: "Install on Smartphone"
+      titlekr: "스마트폰에 설치하기"
       url: /software/rplus2/design/#install-on-smartphone
+      urlkr: /software/rplus2/design/#스마트폰에-설치하기
 
 #R+ Scratch sidebar
 rplusscratch:
   - title: "Introduction"
+    titlekr: "개요"
     url: /software/rplus2/scratch/#introduction
+    urlkr: /software/rplus2/scratch/#개요
     children:
     - title: "Program Layout"
+      titlekr: "로보플러스 스크래치 설명"
       url: /software/rplus2/scratch/#program-layout
+      urlkr: /software/rplus2/scratch/#로보플러스-스크래치-설명
     - title: "Connect Controller to PC"
+      titlekr: "제어기를 PC에 연결하기"
       url: /software/rplus2/scratch/#connect-controller-to-pc
+      urlkr: /software/rplus2/scratch/#제어기를-pc에-연결하기
   - title: "Miscellenous"
+    titlekr: "참고자료"
     url: /software/rplus2/scratch/#miscellaneous
+    urlkr: /software/rplus2/scratch/#참고자료
 
 #R+ Mobile m.Motion sidebar
 rplusmmotion:
   - title: "Getting Started"
+    titlekr: "개요"
     url: /software/rplus2/mmotion/#getting-started
+    urlkr: /software/rplus2/mmotion/#개요
+  - title: "Menu Description"
+    titlekr: "메뉴 설명"
+    url: /software/rplus2/mmotion/#menu-description
+    urlkr: /software/rplus2/mmotion/#메뉴-설명
   - title: "Practice"
+    titlekr: "따라해보기"
     url: /software/rplus2/mmotion/#practice
+    urlkr: /software/rplus2/mmotion/#따라해보기
     children:
     - title: "Connect to Robot"
+      titlekr: "로봇 연결하기"
       url: /software/rplus2/mmotion/#connect-to-robot
+      urlkr: /software/rplus2/mmotion/#로봇-연결하기
     - title: "Open Project"
+      titlekr: "예제 프로젝트 열기"
       url: /software/rplus2/mmotion/#open-project
+      urlkr: /software/rplus2/mmotion/#예제-프로젝트-열기
     - title: "Motion Playback"
+      titlekr: "모션 유닛 재생하기"
       url: /software/rplus2/mmotion/#motion-playback
+      urlkr: /software/rplus2/mmotion/#모션-유닛-재생하기
     - title: "Motion Editing"
+      titlekr: "모션 유닛 편집하기"
       url: /software/rplus2/mmotion/#motion-editing
+      urlkr: /software/rplus2/mmotion/#모션-유닛-편집하기
+    - titlekr: "모션 재생하기"
+      urlkr: /software/rplus2/mmotion/#모션-재생하기
+    - titlekr: "모션 편집하기"
+      urlkr: /software/rplus2/mmotion/#모션-편집하기
     - title: "Motion Download"
+      titlekr: "모션 다운로드하기"
       url: /software/rplus2/mmotion/#motion-download
+      urlkr: /software/rplus2/mmotion/#모션-다운로드하기
     - title: "Save Motion Project"
+      titlekr: "모션 프로젝트 저장하기"
       url: /software/rplus2/mmotion/#save-motion-project
+      urlkr: /software/rplus2/mmotion/#모션-프로젝트-저장하기
+  - titlekr: "소프트웨어 다운로드"
+    urlkr: /software/rplus2/mmotion/#소프트웨어-다운로드
+  - titlekr: "기타 정보"
+    urlkr: /software/rplus2/mmotion/#기타-정보
+    children:
+    - titlekr: "3D 카메라 조작"
+      urlkr: /software/rplus2/mmotion/#3d-카메라-조작
   - title: "FAQ"
+    titlekr: "자주 묻는 질문"
     url: /software/rplus2/mmotion/#faq
+    urlkr: /software/rplus2/mmotion/#자주-묻는-질문
+
+mtask20:
+  - titlekr: "개요"
+    urlkr: /software/rplus_mobile/mtask20/#개요
+    children:
+    - titlekr: "구동사양 및 주의사항"
+      urlkr: /software/rplus_mobile/mtask20/#구동사양-및-주의사항
+    - titlekr: "지원제품"
+      urlkr: /software/rplus_mobile/mtask20/#지원제품
+  - titlekr: "메뉴설명"
+    urlkr: /software/rplus_mobile/mtask20/#메뉴설명
+    children:
+    - titlekr: "단계별 편집 탭"
+      urlkr: /software/rplus_mobile/mtask20/#단계별-편집-탭
+    - titlekr: "시작화면"
+      urlkr: /software/rplus_mobile/mtask20/#시작화면
+    - titlekr: "홈 탭"
+      urlkr: /software/rplus_mobile/mtask20/#홈-탭
+    - titlekr: "프로그래밍 탭"
+      urlkr: /software/rplus_mobile/mtask20/#프로그래밍-탭
+    - titlekr: "디버깅 탭"
+      urlkr: /software/rplus_mobile/mtask20/#디버깅-탭
+  - titlekr: "따라해보기"
+    urlkr: /software/rplus_mobile/mtask20/#따라해보기
+    children:
+    - titlekr: "예제파일 열기"
+      urlkr: /software/rplus_mobile/mtask20/#예제파일-열기
+    - titlekr: "새 파일 만들기"
+      urlkr: /software/rplus_mobile/mtask20/#새-파일-만들기
+    - titlekr: "명령어 편집하기"
+      urlkr: /software/rplus_mobile/mtask20/#명령어-편집하기
+    - titlekr: "파라미터 편집하기"
+      urlkr: /software/rplus_mobile/mtask20/#파라미터-편집하기
+    - titlekr: "다운로드 하기"
+      urlkr: /software/rplus_mobile/mtask20/#다운로드-하기
+    - titlekr: "프로그램 출력보기"
+      urlkr: /software/rplus_mobile/mtask20/#프로그램-출력보기
+    - titlekr: "리모컨 사용하기"
+      urlkr: /software/rplus_mobile/mtask20/#리모컨-사용하기
+  - titlekr: "프로그래밍(편집)"
+    urlkr: /software/rplus_mobile/mtask20/#프로그래밍편집
+    children:
+    - titlekr: "명령어 삽입/변경"
+      urlkr: /software/rplus_mobile/mtask20/#명령어-삽입변경
+    - titlekr: "여러 줄 선택"
+      urlkr: /software/rplus_mobile/mtask20/#여러-줄-선택
+    - titlekr: "줄 삽입/지우기"
+      urlkr: /software/rplus_mobile/mtask20/#줄-삽입지우기
+    - titlekr: "줄 활성/비활성"
+      urlkr: /software/rplus_mobile/mtask20/#줄-활성비활성
+    - titlekr: "복사/잘라내기/붙여넣기"
+      urlkr: /software/rplus_mobile/mtask20/#복사잘라내기붙여넣기
+    - titlekr: "실행취소/다시실행"
+      urlkr: /software/rplus_mobile/mtask20/#실행취소다시실행
+  - titlekr: "프로그래밍(명령어)"
+    urlkr: /software/rplus_mobile/mtask20/#프로그래밍명령어
+  - titlekr: "프로그래밍(파라미터)"
+    urlkr: /software/rplus_mobile/mtask20/#프로그래밍파라미터
+  - titlekr: "소프트웨어 다운로드"
+    urlkr: /software/rplus_mobile/mtask20/#소프트웨어-다운로드
+  - titlekr: "유용한 정보"
+    urlkr: /software/rplus_mobile/mtask20/#유용한-정보
+    children:
+    - titlekr: "변수, 함수 참조 찾기"
+      urlkr: /software/rplus_mobile/mtask20/#변수-함수-참조-찾기
+    - titlekr: "키워드 찾기"
+      urlkr: /software/rplus_mobile/mtask20/#키워드-찾기
+    - titlekr: "문법검사, 컴파일 결과 확인하기"
+      urlkr: /software/rplus_mobile/mtask20/#문법검사-컴파일-결과-확인하기
+    - titlekr: "안드로이드 기기에 태스크파일 복사하기"
+      urlkr: /software/rplus_mobile/mtask20/#안드로이드-기기에-태스크파일-복사하기
+    - titlekr: "Apple 기기에 태스크파일 복사하기"
+      urlkr: /software/rplus_mobile/mtask20/#apple-기기에-태스크파일-복사하기
+  - titlekr: "자주 묻는 질문"
+    urlkr: /software/rplus_mobile/mtask20/#자주-묻는-질문
+
+mtask:
+  - titlekr: "다운로드"
+    urlkr: /software/rplus_mobile/mtask/#다운로드
+    
+rplusmdesign:
+  - title: "Download"
+    titlekr: "다운로드"
+    url: /software/rplus_mobile/mdesign/#download
+    urlkr: /software/rplus_mobile/mdesign/#다운로드
+
+rplussmart:
+  - titlekr: "R+ SMART 어플 사용방법"
+    urlkr: /software/mobile_app/rplussmart/#r-smart-어플-사용방법
+    children:
+    - titlekr: "환경설정"
+      urlkr: /software/mobile_app/rplussmart/#환경설정
+    - titlekr: "R+m.Task 연동"
+      urlkr: /software/mobile_app/rplussmart/#rmtask-연동
+    - titlekr: "R+m.Motion 연동"
+      urlkr: /software/mobile_app/rplussmart/#rmmotion-연동
+    - titlekr: "모션 오프셋 설정"
+      urlkr: /software/mobile_app/rplussmart/#모션-오프셋-설정
+    - titlekr: "프로젝트 실행"
+      urlkr: /software/mobile_app/rplussmart/#프로젝트-실행
+    - titlekr: "프로젝트 복사"
+      urlkr: /software/mobile_app/rplussmart/#프로젝트-복사
+    - titlekr: "프로젝트 이름 변경"
+      urlkr: /software/mobile_app/rplussmart/#프로젝트-이름-변경
+  - titlekr: "R+ SMART 어플 기능확인/수정"
+    urlkr: /software/mobile_app/rplussmart/#r-smart-어플-기능확인수정
+    children:
+    - titlekr: "기능확인"
+      urlkr: /software/mobile_app/rplussmart/#기능확인
+    - titlekr: "기능수정"
+      urlkr: /software/mobile_app/rplussmart/#기능수정
+  - titlekr: "R+ SMART Control Table"
+    urlkr: /software/mobile_app/rplussmart/#r-smart-control-table
+  - titlekr: "R+ SMART 다운로드/설치"
+    urlkr: /software/mobile_app/rplussmart/#r-smart-다운로드설치
+  - titlekr: "참고자료"
+    urlkr: /software/mobile_app/rplussmart/#참고자료
+    children:
+    - titlekr: "모션파일 다운로드"
+      urlkr: /software/mobile_app/rplussmart/#모션파일-다운로드
+    - titlekr: "제어기(CM-200)와 스마트기기 블루투스 연결"
+      urlkr: /software/mobile_app/rplussmart/#제어기cm-200와-스마트기기-블루투스-연결
+    - titlekr: "태스크파일 다운로드"
+      urlkr: /software/mobile_app/rplussmart/#태스크파일-다운로드
+
+rplusiot:
+  - titlekr: "R+ IoT 어플 사용방법"
+    urlkr: /software/mobile_app/rplusiot/#r-iot-어플-사용방법
+    children:
+    - titlekr: "환경설정"
+      urlkr: /software/mobile_app/rplusiot/#환경설정
+    - titlekr: "R+m.Task 연동"
+      urlkr: /software/mobile_app/rplusiot/#rmtask-연동
+    - titlekr: "R+m.Motion 연동"
+      urlkr: /software/mobile_app/rplusiot/#rmmotion-연동
+    - titlekr: "모션 오프셋 설정"
+      urlkr: /software/mobile_app/rplusiot/#모션-오프셋-설정
+    - titlekr: "프로젝트 실행"
+      urlkr: /software/mobile_app/rplusiot/#프로젝트-실행
+    - titlekr: "프로젝트 복사"
+      urlkr: /software/mobile_app/rplusiot/#프로젝트-복사
+    - titlekr: "프로젝트 이름 변경"
+      urlkr: /software/mobile_app/rplusiot/#프로젝트-이름-변경
+  - titlekr: "R+ IoT 어플 기능확인/수정"
+    urlkr: /software/mobile_app/rplusiot/#r-iot-어플-기능확인수정
+    children:
+    - titlekr: "기능확인"
+      urlkr: /software/mobile_app/rplusiot/#기능확인
+    - titlekr: "기능수정"
+      urlkr: /software/mobile_app/rplusiot/#기능수정
+  - titlekr: "R+ IoT Control Table"
+    urlkr: /software/mobile_app/rplusiot/#r-iot-control-table
+  - titlekr: "R+ IoT 다운로드/설치"
+    urlkr: /software/mobile_app/rplusiot/#r-iot-다운로드설치
+  - titlekr: "참고자료"
+    urlkr: /software/mobile_app/rplusiot/#참고자료
+    children:
+    - titlekr: "모션파일 다운로드"
+      urlkr: /software/mobile_app/rplusiot/#모션파일-다운로드
+    - titlekr: "제어기와 스마트기기 블루투스 연결"
+      urlkr: /software/mobile_app/rplusiot/#제어기opencm70와-스마트기기-블루투스-연결
+    - titlekr: "태스크 파일 작성/다운로드"
+      urlkr: /software/mobile_app/rplusiot/#태스크-파일-작성다운로드
+
+mini_app:
+  - title: "ROBOTIS MINI APP"
+    titlekr: "로보티즈 미니 앱"
+    url: /software/mobile_app/mini_app/#robotis-mini-app
+    urlkr: /software/mobile_app/mini_app/#로보티즈-미니-작동하기
+    children:
+    - title: "App Install"
+      titlekr: "미니 앱 설치"
+      url: /software/mobile_app/mini_app/#app-install
+      urlkr: /software/mobile_app/mini_app/#미니-앱-설치
+    - title: "App Usage"
+      titlekr: "미니 앱 사용하기"
+      url: /software/mobile_app/mini_app/#app-usage
+      urlkr: /software/mobile_app/mini_app/#미니-앱-사용하기
+    - title: "App Setting"
+      titlekr: "미니 앱 설정"
+      url: /software/mobile_app/mini_app/#app-setting
+      urlkr: /software/mobile_app/mini_app/#미니-앱-설정
 
 #OpenCM IDE sidebar
 opencmide:
   - title: "Introduction"
+    titlekr: "개요"
     url: /software/opencm_ide/getting_started/#introduction
+    urlkr: /software/opencm_ide/getting_started/#개요
   - title: "Getting Started"
+    titlekr: "시작하기"
     url: /software/opencm_ide/getting_started/#getting-started
+    urlkr: /software/opencm_ide/getting_started/#시작하기
     children:
     - title: "Install Software"
+      titlekr: "소프트웨어 설치"
       url: /software/opencm_ide/getting_started/#install-software
-    - title: "OpenCM IDE"
-      url: /software/opencm_ide/getting_started/#opencm-ide
+      urlkr: /software/opencm_ide/getting_started/#소프트웨어-설치
+    - title: "Run Program"
+      titlekr: "프로그램 실행"
+      url: /software/opencm_ide/getting_started/#run-program
+      urlkr: /software/opencm_ide/getting_started/#프로그램-실행
     - title: "Libraries"
+      titlekr: "라이브러리 사용하기"
       url: /software/opencm_ide/getting_started/#libraries
+      urlkr: /software/opencm_ide/getting_started/#라이브러리-사용하기
     - title: "Recovery Mode"
+      titlekr: "복구 모드"
       url: /software/opencm_ide/getting_started/#recovery-mode
+      urlkr: /software/opencm_ide/getting_started/#복구-모드
   - title: "Examples"
+    titlekr: "예제"
     url: /software/opencm_ide/getting_started/#examples
+    urlkr: /software/opencm_ide/getting_started/#예제
     children:
     - title: "EEPROM(Flash)"
       url: /software/opencm_ide/getting_started/#eepromflash
     - title: "Sensor Module"
+      titlekr: "센서 사용법"
       url: /software/opencm_ide/getting_started/#sensor-module
+      urlkr: /software/opencm_ide/getting_started/#센서-사용법
     - title: "Digital I/O"
+      titlekr: "디지털 입출력"
       url: /software/opencm_ide/getting_started/#digital-io
+      urlkr: /software/opencm_ide/getting_started/#디지털-입출력
     - title: "Analog I/O"
+      titlekr: "아날로그 입출력"
       url: /software/opencm_ide/getting_started/#analog-io
+      urlkr: /software/opencm_ide/getting_started/#아날로그-입출력
     - title: "Serial Communication"
+      titlekr: "시리얼 통신"
       url: /software/opencm_ide/getting_started/#serial-communication
+      urlkr: /software/opencm_ide/getting_started/#시리얼-통신
     - title: "External Interrupt"
+      titlekr: "외부 인터럽트"
       url: /software/opencm_ide/getting_started/#external-interrupt
+      urlkr: /software/opencm_ide/getting_started/#외부-인터럽트
     - title: "Dynamixel Instructions"
+      titlekr: "다이나믹셀 사용법"
       url: /software/opencm_ide/getting_started/#dynamixel-instructions
+      urlkr: /software/opencm_ide/getting_started/#다이나믹셀-사용법
     - title: "RC-100"
+      titlekr: "RC-100 라이브러리"
       url: /software/opencm_ide/getting_started/#rc-100
+      urlkr: /software/opencm_ide/getting_started/#rc-100-라이브러리
     - title: "BKP Library"
+      titlekr: "BKP Library"
       url: /software/opencm_ide/getting_started/#bkp-library
+      urlkr: /software/opencm_ide/getting_started/#bkp-library
   - title: "API References"
+    titlekr: "API References"
     url: /software/opencm_ide/api_reference/#api-references
+    urlkr: /software/opencm_ide/api_reference/#api-references
     children:
     - title: "EEPROM Class"
+      titlekr: "EEPROM Class"
       url: /software/opencm_ide/api_reference/#eeprom-class
+      urlkr: /software/opencm_ide/api_reference/#eeprom-class
     - title: "BKP Class"
+      titlekr: "BKP Class"
       url: /software/opencm_ide/api_reference/#bkp-class
+      urlkr: /software/opencm_ide/api_reference/#bkp-class
     - title: "RC100 Class"
+      titlekr: "RC100 Class"
       url: /software/opencm_ide/api_reference/#rc100-class
+      urlkr: /software/opencm_ide/api_reference/#rc100-class
     - title: "Interrupt"
+      titlekr: "Interrupt"
       url: /software/opencm_ide/api_reference/#interrupt
+      urlkr: /software/opencm_ide/api_reference/#interrupt
     - title: "GPIO"
+      titlekr: "GPIO"
       url: /software/opencm_ide/api_reference/#gpio
+      urlkr: /software/opencm_ide/api_reference/#gpio
     - title: "OLLO Class"
+      titlekr: "OLLO Class"
       url: /software/opencm_ide/api_reference/#ollo-class
+      urlkr: /software/opencm_ide/api_reference/#ollo-class
     - title: "Serial Class"
+      titlekr: "Serial Class"
       url: /software/opencm_ide/api_reference/#serial-class
+      urlkr: /software/opencm_ide/api_reference/#serial-class
     - title: "API"
+      titlekr: "API"
       url: /software/opencm_ide/api_reference/#api
+      urlkr: /software/opencm_ide/api_reference/#api
     - title: "Utilities"
+      titlekr: "Utilities"
       url: /software/opencm_ide/api_reference/#utilities
+      urlkr: /software/opencm_ide/api_reference/#utilities
 
 #DYNAMIXEL SDK sidebar
 dynamixel_sdk:
@@ -7346,170 +8439,312 @@ dynamixel_workbench:
         url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#multi-port-controller
 
 #ZIGBEE SDK sidebar
-sigbee_sdk:
+zigbee_sdk:
   - title: "Introduction"
+    titlekr: "개요"
     url: /software/embedded_sdk/zigbee_sdk/#introduction
+    urlkr: /software/embedded_sdk/zigbee_sdk/#개요
   - title: "API Reference"
+    titlekr: "API Reference"
     url: /software/embedded_sdk/zigbee_sdk/#api-reference
+    urlkr: /software/embedded_sdk/zigbee_sdk/#api-reference
     children:
     - title: "Device Control Method"
+      titlekr: "Device Control Method"
       url: /software/embedded_sdk/zigbee_sdk/#device-control-method
+      urlkr: /software/embedded_sdk/zigbee_sdk/#device-control-method
       children:
       - title: "zgb_initialize"
+        titlekr: "zgb_initialize"
         url: /software/embedded_sdk/zigbee_sdk/#zgb-initialize
+        urlkr: /software/embedded_sdk/zigbee_sdk/#zgb-initialize
       - title: "zgb_terminate"
+        titlekr: "zgb_terminate"
         url: /software/embedded_sdk/zigbee_sdk/#zgb-terminate
+        urlkr: /software/embedded_sdk/zigbee_sdk/#zgb-terminate
     - title: "Communication Method"
+      titlekr: "Communication Method"
       url: /software/embedded_sdk/zigbee_sdk/#communication-method
+      urlkr: /software/embedded_sdk/zigbee_sdk/#communication-method
       children:
       - title: "zgb_tx_data"
+        titlekr: "zgb_tx_data"
         url: /software/embedded_sdk/zigbee_sdk/#zgb-tx-data
+        urlkr: /software/embedded_sdk/zigbee_sdk/#zgb-tx-data
       - title: "zgb_rx_check"
+        titlekr: "zgb_rx_check"
         url: /software/embedded_sdk/zigbee_sdk/#zgb-rx-check
+        urlkr: /software/embedded_sdk/zigbee_sdk/#zgb-rx-check
       - title: "zgb_rx_data"
+        titlekr: "zgb_rx_data"
         url: /software/embedded_sdk/zigbee_sdk/#zgb-rx-data
+        urlkr: /software/embedded_sdk/zigbee_sdk/#zgb-rx-data
   - title: "Platform Porting"
+    titlekr: "플랫폼 포팅"
     url: /software/embedded_sdk/zigbee_sdk/#platform-porting
+    urlkr: /software/embedded_sdk/zigbee_sdk/#플랫폼-포팅
     children:
     - title: "zgb_hal_open"
+      titlekr: "zgb_hal_open"
       url: /software/embedded_sdk/zigbee_sdk/#zgb-hal-open
+      urlkr: /software/embedded_sdk/zigbee_sdk/#zgb-hal-open
     - title: "zgb_hal_close"
+      titlekr: "zgb_hal_close"
       url: /software/embedded_sdk/zigbee_sdk/#zgb-hal-close
+      urlkr: /software/embedded_sdk/zigbee_sdk/#zgb-hal-close
     - title: "zgb_hal_tx"
+      titlekr: "zgb_hal_tx"
       url: /software/embedded_sdk/zigbee_sdk/#zgb-hal-tx
+      urlkr: /software/embedded_sdk/zigbee_sdk/#zgb-hal-tx
     - title: "zgb_hal_rx"
+      titlekr: "zgb_hal_rx"
       url: /software/embedded_sdk/zigbee_sdk/#zgb-hal-rx
+      urlkr: /software/embedded_sdk/zigbee_sdk/#zgb-hal-rx
   - title: "ZIG2Serial"
+    titlekr: "ZIG2Serial"
     url: /software/embedded_sdk/zigbee_sdk/#zig2serial
+    urlkr: /software/embedded_sdk/zigbee_sdk/#zig2serial
     children:
     - title: "Visual C++"
+      titlekr: "Visual C++"
       url: /software/embedded_sdk/zigbee_sdk/#visual-c
+      urlkr: /software/embedded_sdk/zigbee_sdk/#visual-c
     - title: "Visual Basic"
+      titlekr: "Visual Basic"
       url: /software/embedded_sdk/zigbee_sdk/#visual-basic
+      urlkr: /software/embedded_sdk/zigbee_sdk/#visual-basic
     - title: "Visual C#"
-      url: /software/embedded_sdk/zigbee_sdk/#visual-c#
+      titlekr: "Visual C#"
+      url: /software/embedded_sdk/zigbee_sdk/#visual-c-sharp
+      urlkr: /software/embedded_sdk/zigbee_sdk/#visual-c-sharp
     - title: "gcc"
+      titlekr: "gcc"
       url: /software/embedded_sdk/zigbee_sdk/#gcc
+      urlkr: /software/embedded_sdk/zigbee_sdk/#gcc
   - title: "CM-510/700"
+    titlekr: "CM-510/700용 ZIGBee SDK"
     url: /software/embedded_sdk/zigbee_sdk/#cm-510700
+    urlkr: /software/embedded_sdk/zigbee_sdk/#cm-510710용-zigbee-sdk
 
 embedded_sdk:
   - title: "Dynamixel SDK"
+    titlekr: "다이나믹셀 SDK"
     url: /software/embedded_sdk/#dynamixel-sdk
+    urlkr: /software/embedded_sdk/#다이나믹셀-sdk
   - title: "ROBOTIS Manipulator SDK"
+    titlekr: "로보티즈 매니퓰레이터 SDK"
     url: /software/embedded_sdk/#robotis-manipulator-sdk
+    urlkr: /software/embedded_sdk/#로보티즈-매니퓰레이터-sdk
   - title: "Controller SDK"
+    titlekr: "제어기 SDK"
     url: /software/embedded_sdk/#controller-sdk
+    urlkr: /software/embedded_sdk/#제어기-sdk
   - title: "Wireless Control SDK"
+    titlekr: "ZIGBee SDK"
     url: /software/embedded_sdk/#wireless-control-sdk
+    urlkr: /software/embedded_sdk/#zigbee-sdk
 
 #Embedded C CM510/700 sidebar
 embedded_c_cm510:
   - title: "Introduction"
+    titlekr: "개요"
     url: /software/embedded_sdk/embedded_c_cm510/#introduction
+    urlkr: /software/embedded_sdk/embedded_c_cm510/#개요
   - title: "CM-510/700"
+    titlekr: "CM-510/700"
     url: /software/embedded_sdk/embedded_c_cm510/#cm-510700
+    urlkr: /software/embedded_sdk/embedded_c_cm510/#cm-510700
     children:
     - title: "Getting Started"
+      titlekr: "시작하기"
       url: /software/embedded_sdk/embedded_c_cm510/#getting-started
+      urlkr: /software/embedded_sdk/embedded_c_cm510/#시작하기
       children:
       - title: "Install WinAVR"
+        titlekr: "WinAVR 설치"
         url: /software/embedded_sdk/embedded_c_cm510/#install-winavr
+        urlkr: /software/embedded_sdk/embedded_c_cm510/#winavr-설치
       - title: "Install Atmel Studio"
+        titlekr: "Atmel Studio 설치"
         url: /software/embedded_sdk/embedded_c_cm510/#install-atmel-studio
+        urlkr: /software/embedded_sdk/embedded_c_cm510/#atmel-studio-설치
       - title: "Environment Setting"
+        titlekr: "환경 설정"
         url: /software/embedded_sdk/embedded_c_cm510/#environment-setting
+        urlkr: /software/embedded_sdk/embedded_c_cm510/#환경-설정
       - title: "Restore RoboPlus"
+        titlekr: "로보플러스 복구하기"
         url: /software/embedded_sdk/embedded_c_cm510/#restore-roboplus
+        urlkr: /software/embedded_sdk/embedded_c_cm510/#로보플러스-복구하기
     - title: "Programming"
+      titlekr: "프로그래밍"
       url: /software/embedded_sdk/embedded_c_cm510/#programming
+      urlkr: /software/embedded_sdk/embedded_c_cm510/#프로그래밍
       children:
       - title: "Hardware Port Map"
+        titlekr: "하드웨어 포트맵"
         url: /software/embedded_sdk/embedded_c_cm510/#hardware-port-map
+        urlkr: /software/embedded_sdk/embedded_c_cm510/#하드웨어-포트맵
       - title: "Basic Programming"
+        titlekr: "기본 프로그래밍"
         url: /software/embedded_sdk/embedded_c_cm510/#basic-programming
+        urlkr: /software/embedded_sdk/embedded_c_cm510/#기본-프로그래밍
       - title: "Boot Loader"
+        titlekr: "부트로더"
         url: /software/embedded_sdk/embedded_c_cm510/#boot-loader
+        urlkr: /software/embedded_sdk/embedded_c_cm510/#부트로더
     - title: "Examples"
+      titlekr: "예제"
       url: /software/embedded_sdk/embedded_c_cm510/#examples
+      urlkr: /software/embedded_sdk/embedded_c_cm510/#예제
       children:
       - title: "LED Control"
+        titlekr: "LED 제어"
         url: /software/embedded_sdk/embedded_c_cm510/#led-control
+        urlkr: /software/embedded_sdk/embedded_c_cm510/#led-제어
       - title: "Button"
+        titlekr: "버튼"
         url: /software/embedded_sdk/embedded_c_cm510/#button
+        urlkr: /software/embedded_sdk/embedded_c_cm510/#버튼
       - title: "Serial Communication"
+        titlekr: "시리얼 통신"
         url: /software/embedded_sdk/embedded_c_cm510/#serial-communication
+        urlkr: /software/embedded_sdk/embedded_c_cm510/#시리얼-통신
       - title: "Buzzer"
+        titlekr: "버저"
         url: /software/embedded_sdk/embedded_c_cm510/#buzzer
+        urlkr: /software/embedded_sdk/embedded_c_cm510/#버저
       - title: "MIC"
+        titlekr: "마이크"
         url: /software/embedded_sdk/embedded_c_cm510/#mic
+        urlkr: /software/embedded_sdk/embedded_c_cm510/#마이크
       - title: "IR Sensor"
+        titlekr: "적외선 센서"
         url: /software/embedded_sdk/embedded_c_cm510/#ir-sensor
+        urlkr: /software/embedded_sdk/embedded_c_cm510/#적외선-센서
       - title: "Read/Write Dynamixel"
+        titlekr: "다이나믹셀 읽기/쓰기"
         url: /software/embedded_sdk/embedded_c_cm510/#readwrite-dynamixel
+        urlkr: /software/embedded_sdk/embedded_c_cm510/#다이나믹셀-읽기쓰기
       - title: "Dynamixel Sync Control"
+        titlekr: "다이나믹셀 동기 제어"
         url: /software/embedded_sdk/embedded_c_cm510/#dynamixel-sync-control
+        urlkr: /software/embedded_sdk/embedded_c_cm510/#다이나믹셀-동기-제어
       - title: "RC-100/ZIGBEE"
+        titlekr: "RC100과 ZIGBee"
         url: /software/embedded_sdk/embedded_c_cm510/#rc-100zigbee
+        urlkr: /software/embedded_sdk/embedded_c_cm510/#rc100과-zigbee
 
 #Embedded C CM530 sidebar
 embedded_c_cm530:
   - title: "Introduction"
+    titlekr: "개요"
     url: /software/embedded_sdk/embedded_c_cm530/#introduction
+    urlkr: /software/embedded_sdk/embedded_c_cm530/#개요
   - title: "CM-530"
+    titlekr: "CM-530"
     url: /software/embedded_sdk/embedded_c_cm530/#cm-530
+    urlkr: /software/embedded_sdk/embedded_c_cm530/#cm-530
     children:
     - title: "Getting Started"
+      titlekr: "시작하기"
       url: /software/embedded_sdk/embedded_c_cm530/#getting-started
+      urlkr: /software/embedded_sdk/embedded_c_cm530/#시작하기
       children:
       - title: "Install JRE"
+        titlekr: "JRE 설치"
         url: /software/embedded_sdk/embedded_c_cm530/#install-jre
+        urlkr: /software/embedded_sdk/embedded_c_cm530/#jre-설치
       - title: "Install WinARM"
+        titlekr: "WinARM 설치"
         url: /software/embedded_sdk/embedded_c_cm530/#install-winarm
+        urlkr: /software/embedded_sdk/embedded_c_cm530/#winarm-설치
       - title: "Install Eclipse"
+        titlekr: "Eclipse 설치"
         url: /software/embedded_sdk/embedded_c_cm530/#install-atmel-studio
+        urlkr: /software/embedded_sdk/embedded_c_cm530/#eclipse-설치
       - title: "Verify Installation"
+        titlekr: "설치 성공여부 확인"
         url: /software/embedded_sdk/embedded_c_cm530/#verify-installation
+        urlkr: /software/embedded_sdk/embedded_c_cm530/#설치-성공여부-확인
       - title: "Restore RoboPlus"
+        titlekr: "로보플러스 복구하기"
         url: /software/embedded_sdk/embedded_c_cm530/#restore-roboplus
+        urlkr: /software/embedded_sdk/embedded_c_cm530/#로보플러스-복구하기
     - title: "Programming"
+      titlekr: "프로그래밍"
       url: /software/embedded_sdk/embedded_c_cm530/#programming
+      urlkr: /software/embedded_sdk/embedded_c_cm530/#프로그래밍
       children:
       - title: "Hardware Port Map"
+        titlekr: "하드웨어 포트맵"
         url: /software/embedded_sdk/embedded_c_cm530/#hardware-port-map
+        urlkr: /software/embedded_sdk/embedded_c_cm530/#하드웨어-포트맵
       - title: "Open Project"
+        titlekr: "프로젝트 열기"
         url: /software/embedded_sdk/embedded_c_cm530/#open-project
+        urlkr: /software/embedded_sdk/embedded_c_cm530/#프로젝트-열기
       - title: "Download bin File"
+        titlekr: "bin 파일 다운로드 하기"
         url: /software/embedded_sdk/embedded_c_cm530/#download-bin-file
+        urlkr: /software/embedded_sdk/embedded_c_cm530/#bin-파일-다운로드-하기
       - title: "Boot Loader"
+        titlekr: "부트로더"
         url: /software/embedded_sdk/embedded_c_cm530/#boot-loader
+        urlkr: /software/embedded_sdk/embedded_c_cm530/#부트로더
       - title: "Additional Description"
+        titlekr: "부가설명"
         url: /software/embedded_sdk/embedded_c_cm530/#additional-description
+        urlkr: /software/embedded_sdk/embedded_c_cm530/#부가설명
     - title: "Examples"
+      titlekr: "예제"
       url: /software/embedded_sdk/embedded_c_cm530/#examples
+      urlkr: /software/embedded_sdk/embedded_c_cm530/#예제
       children:
       - title: "LED Control"
+        titlekr: "LED 제어"
         url: /software/embedded_sdk/embedded_c_cm530/#led-control
+        urlkr: /software/embedded_sdk/embedded_c_cm530/#led-제어
       - title: "Button"
+        titlekr: "버튼"
         url: /software/embedded_sdk/embedded_c_cm530/#button
+        urlkr: /software/embedded_sdk/embedded_c_cm530/#버튼
       - title: "Serial Communication"
+        titlekr: "시리얼 통신"
         url: /software/embedded_sdk/embedded_c_cm530/#serial-communication
+        urlkr: /software/embedded_sdk/embedded_c_cm530/#시리얼-통신
       - title: "Buzzer"
+        titlekr: "버저"
         url: /software/embedded_sdk/embedded_c_cm530/#buzzer
+        urlkr: /software/embedded_sdk/embedded_c_cm530/#버저
       - title: "MIC"
+        titlekr: "마이크"
         url: /software/embedded_sdk/embedded_c_cm530/#mic
+        urlkr: /software/embedded_sdk/embedded_c_cm530/#마이크
       - title: "OLLO Servo CW/CCW"
+        titlekr: "올로 서보모터(회전방향 제어)"
         url: /software/embedded_sdk/embedded_c_cm530/#ollo-servo-cwccw
+        urlkr: /software/embedded_sdk/embedded_c_cm530/#올로-서보모터회전방향-제어
       - title: "OLLO Servo Position"
+        titlekr: "올로 서보모터(위치값 읽기)"
         url: /software/embedded_sdk/embedded_c_cm530/#ollo-servo-position
+        urlkr: /software/embedded_sdk/embedded_c_cm530/#올로-서보모터위치값-읽기
       - title: "IR Sensor"
+        titlekr: "적외선 센서"
         url: /software/embedded_sdk/embedded_c_cm530/#ir-sensor
+        urlkr: /software/embedded_sdk/embedded_c_cm530/#적외선-센서
       - title: "Read/Write Dynamixel"
+        titlekr: "다이나믹셀 읽기/쓰기"
         url: /software/embedded_sdk/embedded_c_cm530/#readwrite-dynamixel
+        urlkr: /software/embedded_sdk/embedded_c_cm530/#다이나믹셀-읽기쓰기
       - title: "Dynamixel Sync Control"
+        titlekr: "다이나믹셀 동기 제어"
         url: /software/embedded_sdk/embedded_c_cm530/#dynamixel-sync-control
+        urlkr: /software/embedded_sdk/embedded_c_cm530/#다이나믹셀-동기-제어
       - title: "RC-100/ZIGBEE"
+        titlekr: "RC100과 ZIGBee"
         url: /software/embedded_sdk/embedded_c_cm530/#rc-100zigbee
+        urlkr: /software/embedded_sdk/embedded_c_cm530/#rc100과-zigbee
 
 #CM-100A Controller sidebar
 cm-100:
@@ -7817,6 +9052,17 @@ opencm904:
         url: /parts/controller/opencm904/#install-on-mac
       - title: "Install on Windows"
         url: /parts/controller/opencm904/#install-on-windows
+    - title: "DynamixelWorkbench"
+      url: /parts/controller/opencm904/#dynamixelworkbench
+      children:
+      - title: "APIs"
+        url: /parts/controller/opencm904/#apis
+      - title: "Example 1. Find Dynamixel"
+        url: /parts/controller/opencm904/#find-dynamixel
+      - title: "Example 2. Position"
+        url: /parts/controller/opencm904/#position
+      - title: "Example 3. Speed"
+        url: /parts/controller/opencm904/#speed
   - title: "Examples"
     url: /parts/controller/opencm904/#examples
     children:
@@ -7830,17 +9076,6 @@ opencm904:
       url: /parts/controller/opencm904/#pwm
     - title: "EEPROM"
       url: /parts/controller/opencm904/#eeprom
-    - title: "DynamixelWorkbench"
-      url: /parts/controller/opencm904/#dynamixelworkbench
-      children:
-      - title: "APIs"
-        url: /parts/controller/opencm904/#apis
-      - title: "Example 1. Find Dynamixel"
-        url: /parts/controller/opencm904/#find-dynamixel
-      - title: "Example 2. Position"
-        url: /parts/controller/opencm904/#position
-      - title: "Example 3. Speed"
-        url: /parts/controller/opencm904/#speed
     - title: "Servo"
       url: /parts/controller/opencm904/#servo
     - title: "SD Card"
@@ -7878,7 +9113,7 @@ opencm485exp:
   - title: "EXP Board Programming"
     url: /parts/controller/opencm485exp/#exp-board-programming
   - title: "Button & LED"
-    url: /parts/controller/opencm485exp/#button-led
+    url: /parts/controller/opencm485exp/#button--led
   - title: "Downloads"
     url: /parts/controller/opencm485exp/#downloads
 
@@ -8024,17 +9259,6 @@ opencr10:
         url: /parts/controller/opencr10/#flame-sensor
       - title: "Joystic Sensor"
         url: /parts/controller/opencr10/#joystic-sensor
-    - title: "DynamixelWorkbench"
-      url: /parts/controller/opencm904/#dynamixelworkbench
-      children:
-      - title: "APIs"
-        url: /parts/controller/opencm904/#apis
-      - title: "Example 1. Find Dynamixel"
-        url: /parts/controller/opencm904/#find-dynamixel
-      - title: "Example 2. Position"
-        url: /parts/controller/opencm904/#position
-      - title: "Example 3. Speed"
-        url: /parts/controller/opencm904/#speed
     - title: "OpenManipulator"
       url: /parts/controller/opencr10/#openmanipulator
       children:
@@ -8054,7 +9278,6 @@ opencr10:
     - title: "Install Windows Driver"
       url: /parts/controller/opencr10/#install-windows-driver
 
-#RC-100 sidebar
 rc-100:
   - title: "Introduction"
     url: /parts/communication/rc-100/#introduction
@@ -8069,7 +9292,7 @@ rc-100:
   - title: "How to Set IR Channel"
     url: /parts/communication/rc-100/#how-to-set-ir-channel
   - title: "Install ZIG-100/BT-100"
-    url: /parts/communication/rc-100/#install-zig-100-bt-100
+    url: /parts/communication/rc-100/#install-zig-100bt-100
   - title: "Set Broadcasting Channel"
     url: /parts/communication/rc-100/#how-to-set-broadcasting-channel
   - title: "Code Map"
@@ -8185,128 +9408,242 @@ lm-10:
 #DMS-80 sidebar
 dms-80:
   - title: "Introduction"
+    titlekr: "개요"
     url: /parts/sensor/dms-80/#introduction
+    urlkr: /parts/sensor/dms-80/#개요
   - title: "Specifications"
+    titlekr: "사양"
     url: /parts/sensor/dms-80/#specifications
+    urlkr: /parts/sensor/dms-80/#사양
   - title: "Pinout"
+    titlekr: "핀 배열 정보"
     url: /parts/sensor/dms-80/#pinout
+    urlkr: /parts/sensor/dms-80/#핀-배열-정보
   - title: "Sensor Output"
+    titlekr: "센서 출력"
     url: /parts/sensor/dms-80/#sensor-output
+    urlkr: /parts/sensor/dms-80/#센서-출력
   - title: "Tutorials"
+    titlekr: "튜토리얼"
     url: /parts/sensor/dms-80/#tutorials
+    urlkr: /parts/sensor/dms-80/#튜토리얼
 
 #IRSS-10 sidebar
 irss-10:
   - title: "Introduction"
+    titlekr: "개요"
     url: /parts/sensor/irss-10/#introduction
+    urlkr: /parts/sensor/irss-10/#개요
   - title: "Specifications"
+    titlekr: "사양"
     url: /parts/sensor/irss-10/#specifications
+    urlkr: /parts/sensor/irss-10/#사양
   - title: "Pinout"
+    titlekr: "핀 배열 정보"
     url: /parts/sensor/irss-10/#pinout
+    urlkr: /parts/sensor/irss-10/#핀-배열-정보
   - title: "Sensor Output"
+    titlekr: "거리와 센세값의 관계"
     url: /parts/sensor/irss-10/#sensor-output
+    urlkr: /parts/sensor/irss-10/#거리와-센서값의-관계
   - title: "Tutorials"
+    titlekr: "튜토리얼"
     url: /parts/sensor/irss-10/#tutorials
+    urlkr: /parts/sensor/irss-10/#튜토리얼
   - title: "Videos"
+    titlekr: "동영상"
     url: /parts/sensor/irss-10/#videos
+    urlkr: /parts/sensor/irss-10/#동영상
 
 #GS-12 sidebar
 gs-12:
   - title: "Introduction"
+    titlekr: "개요"
     url: /parts/sensor/gs-12/#introduction
+    urlkr: /parts/sensor/gs-12/#개요
   - title: "Specifications"
+    titlekr: "사양"
     url: /parts/sensor/gs-12/#specifications
+    urlkr: /parts/sensor/gs-12/#사양
   - title: "Pinout"
+    titlekr: "핀 배열 정보"
     url: /parts/sensor/gs-12/#pinout
+    urlkr: /parts/sensor/gs-12/#핀-배열-정보
   - title: "Sensor Output"
+    titlekr: "센서 출력"
     url: /parts/sensor/gs-12/#sensor-output
+    urlkr: /parts/sensor/gs-12/#센서-출력
   - title: "Tutorials"
+    titlekr: "튜토리얼"
     url: /parts/sensor/gs-12/#tutorials
+    urlkr: /parts/sensor/gs-12/#튜토리얼
 
 #TS-10 sidebar
 ts-10:
   - title: "Introduction"
+    titlekr: "개요"
     url: /parts/sensor/ts-10/#introduction
+    urlkr: /parts/sensor/ts-10/#개요
   - title: "Specifications"
+    titlekr: "사양"
     url: /parts/sensor/ts-10/#specifications
+    urlkr: /parts/sensor/ts-10/#사양
   - title: "Pinout"
+    titlekr: "핀 배열 정보"
     url: /parts/sensor/ts-10/#pinout
-  - title: "Sensor Output"
-    url: /parts/sensor/ts-10/#sensor-output
+    urlkr: /parts/sensor/ts-10/#핀-배열-정보
   - title: "Tutorials"
+    titlekr: "튜토리얼"
     url: /parts/sensor/ts-10/#tutorials
+    urlkr: /parts/sensor/ts-10/#튜토리얼
   - title: "Videos"
+    titlekr: "동영상"
     url: /parts/sensor/ts-10/#videos
+    urlkr: /parts/sensor/ts-10/#동영상
 
 #AX-S1 sidebar
 ax-s1:
   - title: "Introduction"
+    titlekr: "개요"
     url: /parts/sensor/ax-s1/#introduction
+    urlkr: /parts/sensor/ax-s1/#개요
   - title: "Specifications"
+    titlekr: "주요사양"
     url: /parts/sensor/ax-s1/#specifications
+    urlkr: /parts/sensor/ax-s1/#주요사양
   - title: "How to Communicate"
+    titlekr: "통신방법"
     url: /parts/sensor/ax-s1/#how-to-communicate
+    urlkr: /parts/sensor/ax-s1/#통신방법
   - title: "Control Table"
+    titlekr: "컨트롤 테이블"
     url: /parts/sensor/ax-s1/#control-table
+    urlkr: /parts/sensor/ax-s1/#컨트롤-테이블
+  - title: "Control Table Description"
+    titlekr: "컨트롤 테이블 설명"
+    url: /parts/sensor/ax-s1/#control-table-description
+    urlkr: /parts/sensor/ax-s1/#컨트롤-테이블-설명
   - title: "How to Assemble"
+    titlekr: "조립하기"
     url: /parts/sensor/ax-s1/#how-to-assemble
+    urlkr: /parts/sensor/ax-s1/#조립하기
   - title: "References"
+    titlekr: "참고자료"
     url: /parts/sensor/ax-s1/#references
+    urlkr: /parts/sensor/ax-s1/#참고자료
+
+cds-10:
+  - title: "개요"
+    urlkr: /parts/sensor/cds-10/#개요
+  - title: "사양"
+    urlkr: /parts/sensor/cds-10/#사양
+  - title: "핀 배열 정보"
+    urlkr: /parts/sensor/cds-10/#핀-배열-정보
 
 #IR-Array sidebar
 ir-array:
   - title: "Introduction"
+    titlekr: "개요"
     url: /parts/sensor/ir-array/#introduction
+    urlkr: /parts/sensor/ir-array/#개요
   - title: "Specifications"
+    titlekr: "사양"
     url: /parts/sensor/ir-array/#specifications
+    urlkr: /parts/sensor/ir-array/#사양
   - title: "How to Use"
+    titlekr: "사용법"
     url: /parts/sensor/ir-array/#how-to-use
+    urlkr: /parts/sensor/ir-array/#사용법
   - title: "Control Table"
+    titlekr: "컨트롤 테이블"
     url: /parts/sensor/ir-array/#control-table
+    urlkr: /parts/sensor/ir-array/#컨트롤-테이블
 
 #CS-10 sidebar
 cs-10:
   - title: "Introduction"
+    titlekr: "개요"
     url: /parts/sensor/cs-10/#introduction
+    urlkr: /parts/sensor/cs-10/#개요
   - title: "Specifications"
+    titlekr: "사양"
     url: /parts/sensor/cs-10/#specifications
+    urlkr: /parts/sensor/cs-10/#사양
   - title: "Pinout"
+    titlekr: "핀 배열 정보"
     url: /parts/sensor/cs-10/#pinout
+    urlkr: /parts/sensor/cs-10/#핀-배열-정보
   - title: "Videos"
+    titlekr: "동영상"
     url: /parts/sensor/cs-10/#videos
+    urlkr: /parts/sensor/cs-10/#동영상
 
 #MGSS-10 sidebar
 mgss-10:
   - title: "Introduction"
+    titlekr: "개요"
     url: /parts/sensor/mgss-10/#introduction
+    urlkr: /parts/sensor/mgss-10/#개요
   - title: "Specifications"
+    titlekr: "사양"
     url: /parts/sensor/mgss-10/#specifications
+    urlkr: /parts/sensor/mgss-10/#사양
   - title: "Pinout"
+    titlekr: "핀 배열 정보"
     url: /parts/sensor/mgss-10/#pinout
+    urlkr: /parts/sensor/mgss-10/#핀-배열-정보
   - title: "Tutorials"
+    titlekr: "튜토리얼"
     url: /parts/sensor/mgss-10/#tutorials
+    urlkr: /parts/sensor/mgss-10/#튜토리얼
   - title: "Videos"
+    titlekr: "동영상"
     url: /parts/sensor/mgss-10/#videos
+    urlkr: /parts/sensor/mgss-10/#동영상
 
 #TPS-10 sidebar
 tps-10:
   - title: "Introduction"
+    titlekr: "개요"
     url: /parts/sensor/tps-10/#introduction
+    urlkr: /parts/sensor/tps-10/#개요
   - title: "Specifications"
+    titlekr: "사양"
     url: /parts/sensor/tps-10/#specifications
+    urlkr: /parts/sensor/tps-10/#사양
   - title: "Pinout"
+    titlekr: "핀 배열 정보"
     url: /parts/sensor/tps-10/#pinout
+    urlkr: /parts/sensor/tps-10/#핀-배열-정보
   - title: "Videos"
+    titlekr: "동영상"
     url: /parts/sensor/tps-10/#videos
+    urlkr: /parts/sensor/tps-10/#동영상
 
 #PIR-10 sidebar
 pir-10:
   - title: "Introduction"
+    titlekr: "개요"
     url: /parts/sensor/cs-10/#introduction
+    urlkr: /parts/sensor/cs-10/#개요
   - title: "Specifications"
+    titlekr: "사양"
     url: /parts/sensor/cs-10/#specifications
+    urlkr: /parts/sensor/cs-10/#사양
   - title: "Pinout"
+    titlekr: "핀 배열 정보"
     url: /parts/sensor/cs-10/#pinout
+    urlkr: /parts/sensor/cs-10/#핀-배열-정보
+    
+tms-10:
+  - titlekr: "개요"
+    urlkr: /parts/sensor/tms-10/#개요
+  - titlekr: "사양"
+    urlkr: /parts/sensor/tms-10/#사양
+  - titlekr: "핀 배열 정보"
+    urlkr: /parts/sensor/tms-10/#핀-배열-정보
+  - titlekr: "SIG2 신호에 따른 센서 기능"
+    urlkr: /parts/sensor/tms-10/#sig2-신호에-따른-센서-기능
 
 #Geared Motor sidebar
 gm-10a:

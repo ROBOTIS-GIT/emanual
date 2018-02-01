@@ -29,7 +29,7 @@ sidebar:
 
   All series using protocol 1.0
 
-- Code
+#### Sample code
 
 
 ``` java
@@ -287,9 +287,9 @@ public class MultiPort
 }
 ```
 
--------------------------------------------------------------------------------------
 
-- Details
+
+#### Details
 
 ``` java
 import java.util.Scanner;

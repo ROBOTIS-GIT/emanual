@@ -18,8 +18,8 @@ Based on previously written task code in Building Walking Droid 2 - Task Code:
 
 ### Download Task Code
 
-[Download][ex_14-2] Complete Task Code ([How to Download Task Code])
-[Download][ex_14-3] Example Motion File ([How to Download Motion File])
+- [Download][ex_14-2] Complete Task Code ([How to Download Task Code])
+- [Download][ex_14-3] Example Motion File ([How to Download Motion File])
 
 ### Execute Task Code
 

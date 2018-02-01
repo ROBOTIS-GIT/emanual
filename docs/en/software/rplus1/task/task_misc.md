@@ -14,7 +14,7 @@ sidebar:
 <div style="counter-reset: h1 3">
 </div>
 
-# [Miscellenous](#miscellenous)
+# [Miscellaneous](#miscellaneous)
 ## [Select Controller](#select-controller)
 The commands and parameters that can be used in RoboPlus Task depend on the controller.  Therefore, a controller must be selected before creating a program.
 
@@ -68,178 +68,178 @@ The following is a list of grammatical errors
 
 1. <a name="error_01"></a>Select the number or device
 
-    | Cause of Error | Solution |
-    | :---: | :---: |
-    |The parameter has not been set|Properly set to a unset parameter|
-    |![img_01][img_01]|![img_02][img_02]|
+  | Cause of Error | Solution |
+  | :---: | :---: |
+  |The parameter has not been set|Properly set to a unset parameter|
+  |![img_01][img_01]|![img_02][img_02]|
 
 2. <a name="error_02"></a>Block beginning doesn't exist
 
-    | Cause of Error | Solution |
-    | :---: | :---: |
-    |A block does not exist in a command line|Properly set the block|
-    |![img_03][img_03]|![img_04][img_04]|
+  | Cause of Error | Solution |
+  | :---: | :---: |
+  |A block does not exist in a command line|Properly set the block|
+  |![img_03][img_03]|![img_04][img_04]|
 
 3. <a name="error_03"></a>A block must be designated
 
-    | Cause of Error | Solution |
-    | :---: | :---: |
-    |A duplicate block without a command line|Properly set the block|
-    |![img_05][img_05]|![img_06][img_06]|
+  | Cause of Error | Solution |
+  | :---: | :---: |
+  |A duplicate block without a command line|Properly set the block|
+  |![img_05][img_05]|![img_06][img_06]|
 
 4. <a name="error_04"></a>Only 1 "Start Program" is permitted
 
-    | Cause of Error | Solution |
-    | :---: | :---: |
-    |Two or more “Start Program” exists|Create only one “Start Program”|
-    |![img_07][img_07]|![img_08][img_08]|
+  | Cause of Error | Solution |
+  | :---: | :---: |
+  |Two or more “Start Program” exists|Create only one “Start Program”|
+  |![img_07][img_07]|![img_08][img_08]|
 
 5. <a name="error_05"></a>"Start Program" cannot be defined in a block
 
-    | Cause of Error | Solution |
-    | :---: | :---: |
-    |“Start Program” exists in the block|Remove the block from the “Start Program”|
-    |![img_09][img_09]|![img_10][img_10]|
+  | Cause of Error | Solution |
+  | :---: | :---: |
+  |“Start Program” exists in the block|Remove the block from the “Start Program”|
+  |![img_09][img_09]|![img_10][img_10]|
 
 6. <a name="error_06"></a>A function cannot be defined in a block
 
-    | Cause of Error | Solution |
-    | :---: | :---: |
-    |Function is located within a block|Remove the function from the block|
-    |![img_11][img_11]|![img_12][img_12]|
+  | Cause of Error | Solution |
+  | :---: | :---: |
+  |Function is located within a block|Remove the function from the block|
+  |![img_11][img_11]|![img_12][img_12]|
 
 7. <a name="error_07"></a>A command to execute the designated block does not exist
 
-    | Cause of Error | Solution |
-    | :---: | :---: |
-    |Block exists without a command or condition line|Added the omitted command or delete|
-    |![img_13][img_13]|![img_14][img_14]|
+  | Cause of Error | Solution |
+  | :---: | :---: |
+  |Block exists without a command or condition line|Added the omitted command or delete|
+  |![img_13][img_13]|![img_14][img_14]|
 
 8. <a name="error_08"></a>This line should be included in a block
 
-    | Cause of Error | Solution |
-    | :---: | :---: |
-    |A command without a block is located outermost|Move the command to a proper location or delete|
-    |![img_15][img_15]|![img_16][img_16]|
+  | Cause of Error | Solution |
+  | :---: | :---: |
+  |A command without a block is located outermost|Move the command to a proper location or delete|
+  |![img_15][img_15]|![img_16][img_16]|
 
 9. <a name="error_09"></a>The start and end of the block are not paired
 
-    | Cause of Error | Solution |
-    | :---: | :---: |
-    |The start and end of the block are not paired|Please set the area properly|
-    |![img_17][img_17]|![img_18][img_18]|
+  | Cause of Error | Solution |
+  | :---: | :---: |
+  |The start and end of the block are not paired|Please set the area properly|
+  |![img_17][img_17]|![img_18][img_18]|
 
 10. <a name="error_10"></a>"Start Program" does not exist
 
-    | Cause of Error | Solution |
-    | :---: | :---: |
-    |“Start Program” does not exist|Create a “Start Program”|
-    |![img_19][img_19]|![img_20][img_20]|
+  | Cause of Error | Solution |
+  | :---: | :---: |
+  |“Start Program” does not exist|Create a “Start Program”|
+  |![img_19][img_19]|![img_20][img_20]|
 
 11. <a name="error_11"></a>A function with the same name already exists
 
-    | Cause of Error | Solution |
-    | :---: | :---: |
-    |A label with the same name already exists|Change duplicate function name or delete|
-    |![img_21][img_21]|![img_22][img_22]|
+  | Cause of Error | Solution |
+  | :---: | :---: |
+  |A label with the same name already exists|Change duplicate function name or delete|
+  |![img_21][img_21]|![img_22][img_22]|
 
 12. <a name="error_12"></a>"Restoration" can only be used in a function
 
-    | Cause of Error | Solution |
-    | :---: | :---: |
-    |The restoration command is used in a location other than a function|Create a restoration command within a function or delete|
-    |![img_23][img_23]|![img_24][img_24]|
+  | Cause of Error | Solution |
+  | :---: | :---: |
+  |The restoration command is used in a location other than a function|Create a restoration command within a function or delete|
+  |![img_23][img_23]|![img_24][img_24]|
 
 13. <a name="error_13"></a>A label with same name already exists
 
-    | Cause of Error | Solution |
-    | :---: | :---: |
-    |Duplicate label name exists|Set to a different name or delete|
-    |![img_25][img_25]|![img_26][img_26]|
+  | Cause of Error | Solution |
+  | :---: | :---: |
+  |Duplicate label name exists|Set to a different name or delete|
+  |![img_25][img_25]|![img_26][img_26]|
 
 14. <a name="error_14"></a>A function cannot call itself
 
-    | Cause of Error | Solution |
-    | :---: | :---: |
-    |The function is called within the function|Replace with a proper command or delete|
-    |![img_27][img_27]|![img_28][img_28]|
+  | Cause of Error | Solution |
+  | :---: | :---: |
+  |The function is called within the function|Replace with a proper command or delete|
+  |![img_27][img_27]|![img_28][img_28]|
 
 15. <a name="error_15"></a>"If/If else" has been used improperly
 
-    | Cause of Error | Solution |
-    | :---: | :---: |
-    |If else/ If has been used without Else|Revised according to usage If, Else If, Either|
-    |![img_29][img_29]|![img_30][img_30]|
+  | Cause of Error | Solution |
+  | :---: | :---: |
+  |If else/ If has been used without Else|Revised according to usage If, Else If, Either|
+  |![img_29][img_29]|![img_30][img_30]|
 
 16. <a name="error_16"></a>There is no loop to end
 
-    | Cause of Error | Solution |
-    | :---: | :---: |
-    |The "End Repeat" command is used at a location other than a loop|End Repeat command can only be used within the loop, delete if unnecessary|
-    |![img_31][img_31]|![img_32][img_32]|
+  | Cause of Error | Solution |
+  | :---: | :---: |
+  |The "End Repeat" command is used at a location other than a loop|End Repeat command can only be used within the loop, delete if unnecessary|
+  |![img_31][img_31]|![img_32][img_32]|
 
 17. <a name="error_17"></a>A block must consist of at least one command
 
-    | Cause of Error | Solution |
-    | :---: | :---: |
-    |A line does not exist behind a command that is required by a block|Add a line required behind the command or delete|
-    |![img_33][img_33]|![img_34][img_34]|
+  | Cause of Error | Solution |
+  | :---: | :---: |
+  |A line does not exist behind a command that is required by a block|Add a line required behind the command or delete|
+  |![img_33][img_33]|![img_34][img_34]|
 
 18. <a name="error_18"></a>A jump to another block is not permitted
 
-    | Cause of Error | Solution |
-    | :---: | :---: |
-    |The label you wish to jump to is unavailable in the function|Jump to a label within a function or delete|
-    |![img_35][img_35]|![img_36][img_36]|
+  | Cause of Error | Solution |
+  | :---: | :---: |
+  |The label you wish to jump to is unavailable in the function|Jump to a label within a function or delete|
+  |![img_35][img_35]|![img_36][img_36]|
 
 19. <a name="error_19"></a>The called function does not exist
 
-    | Cause of Error | Solution |
-    | :---: | :---: |
-    |The called function does not exist|Create a function or delete|
-    |![img_37][img_37]|![img_38][img_38]|
+  | Cause of Error | Solution |
+  | :---: | :---: |
+  |The called function does not exist|Create a function or delete|
+  |![img_37][img_37]|![img_38][img_38]|
 
 20. <a name="error_20"></a>Only 1 callback function may exist
 
-    | Cause of Error | Solution |
-    | :---: | :---: |
-    |Two or more callback functions exist|Create only one callback function|
-    |![img_39][img_39]|![img_40][img_40]|
+  | Cause of Error | Solution |
+  | :---: | :---: |
+  |Two or more callback functions exist|Create only one callback function|
+  |![img_39][img_39]|![img_40][img_40]|
 
 21. <a name="error_21"></a>A callback function cannot be defined in a block
 
-    | Cause of Error | Solution |
-    | :---: | :---: |
-    |Callback located in the block|Remove callback from block|
-    |![img_41][img_41]|![img_42][img_42]|
+  | Cause of Error | Solution |
+  | :---: | :---: |
+  |Callback located in the block|Remove callback from block|
+  |![img_41][img_41]|![img_42][img_42]|
 
 22. <a name="error_22"></a>This command cannot be used in a callback function
 
-    | Cause of Error | Solution |
-    | :---: | :---: |
-    |Improper command located in callback|The corresponding command has been deleted|
-    |![img_43][img_43]|![img_44][img_44]|
+  | Cause of Error | Solution |
+  | :---: | :---: |
+  |Improper command located in callback|The corresponding command has been deleted|
+  |![img_43][img_43]|![img_44][img_44]|
 
 23. <a name="error_23"></a>This device cannot be used in a callback function
 
-    | Cause of Error | Solution |
-    | :---: | :---: |
-    |An unusable parameter located in callback|Delete corresponding parameter|
-    |![img_45][img_45]|![img_46][img_46]|
+  | Cause of Error | Solution |
+  | :---: | :---: |
+  |An unusable parameter located in callback|Delete corresponding parameter|
+  |![img_45][img_45]|![img_46][img_46]|
 
 24. <a name="error_24"></a>This command cannot be used with the selected controller
 
-    | Cause of Error | Solution |
-    | :---: | :---: |
-    |Unsupported command being used in the current controller|Delete corresponding command or set to supported controller|
-    |![img_47][img_47]|![img_48][img_48]|
+  | Cause of Error | Solution |
+  | :---: | :---: |
+  |Unsupported command being used in the current controller|Delete corresponding command or set to supported controller|
+  |![img_47][img_47]|![img_48][img_48]|
 
 25. <a name="error_25"></a>There is a device which cannot be used with the selected controller
 
-    | Cause of Error | Solution |
-    | :---: | :---: |
-    |Unusable parameter being used in the controller|Either deleted the corresponding parameter or set to a controller which is supported|
-    |![img_49][img_49]|![img_50][img_50]|
+  | Cause of Error | Solution |
+  | :---: | :---: |
+  |Unusable parameter being used in the controller|Either deleted the corresponding parameter or set to a controller which is supported|
+  |![img_49][img_49]|![img_50][img_50]|
 
 
 ## [Error Messages](#error-messages)

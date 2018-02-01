@@ -32,32 +32,32 @@ sidebar:
 
 - Methods
 
-| | |
-| ------------- | ------------- |
-|**[groupBulkWrite](#groupbulkwrite)**	|Initializes members of packet data pointer struct|
-|**[groupBulkWriteAddParam](#groupbulkwriteaddparam)**	|Adds parameter storage for read |
-|**[groupBulkWriteRemoveParam](#groupbulkwriteremoveparam)**	|Removes parameter on the storage |
-|**[groupBulkWriteChangeParam](#groupbulkwritechangeparam)**	|Changes parameter on the storage |
-|**[groupBulkWriteClearParam](#groupbulkwriteclearparam)**	|Clears parameter storage|
-|**[groupBulkWriteTxPacket](#groupbulkwritetxpacket)**	|Transmits packet to the number of Dynamixels|
+| Methods                                                     | Description                                       |
+|:------------------------------------------------------------|:--------------------------------------------------|
+| **[groupBulkWrite](#groupbulkwrite)**                       | Initializes members of packet data pointer struct |
+| **[groupBulkWriteAddParam](#groupbulkwriteaddparam)**       | Adds parameter storage for read                   |
+| **[groupBulkWriteRemoveParam](#groupbulkwriteremoveparam)** | Removes parameter on the storage                  |
+| **[groupBulkWriteChangeParam](#groupbulkwritechangeparam)** | Changes parameter on the storage                  |
+| **[groupBulkWriteClearParam](#groupbulkwriteclearparam)**   | Clears parameter storage                          |
+| **[groupBulkWriteTxPacket](#groupbulkwritetxpacket)**       | Transmits packet to the number of Dynamixels      |
 
 - Enumerator
 
   None
 
 #### Method References
-----------------------------------------------
+
 ##### groupBulkWrite
 - Syntax
-``` Labview
+```c
 int groupBulkWrite(int port_num, int protocol_version)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|port_num	|Port number|
-|protocol_version	|Protocol version|
+| Parameters       | Description      |
+|:-----------------|:-----------------|
+| port_num         | Port number      |
+| protocol_version | Protocol version |
 
 - Detailed Description
 
@@ -65,19 +65,19 @@ int groupBulkWrite(int port_num, int protocol_version)
 
 ##### groupBulkWriteAddParam
 - Syntax
-``` Labview
+```c
 uint8_t groupBulkWriteAddParam(int group_num, uint8_t id, uint16_t start_address, uint16_t data_length, uint32_t data, uint16_t input_length)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|group_num | Group number|
-|id	|Dynamixel ID|
-|start_address	|Start address|
-|data_length	|Data length|
-|data	|Data for write|
-|input_length	|Input data length|
+| Parameters    | Description       |
+|:--------------|:------------------|
+| group_num     | Group number      |
+| id            | Dynamixel ID      |
+| start_address | Start address     |
+| data_length   | Data length       |
+| data          | Data for write    |
+| input_length  | Input data length |
 
 - Detailed Description
 
@@ -86,15 +86,15 @@ uint8_t groupBulkWriteAddParam(int group_num, uint8_t id, uint16_t start_address
 
 ##### groupBulkWriteRemoveParam
 - Syntax
-``` Labview
+```c
 void groupBulkWriteRemoveParam(int group_num, uint8_t id)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|group_num | Group number|
-|id|	Dynamixel ID|
+| Parameters | Description  |
+|:-----------|:-------------|
+| group_num  | Group number |
+| id         | Dynamixel ID |
 
 - Detailed Description
 
@@ -103,20 +103,20 @@ void groupBulkWriteRemoveParam(int group_num, uint8_t id)
 
 ##### groupBulkWriteChangeParam
 - Syntax
-``` Labview
+```c
  uint8_t groupBulkWriteChangeParam(int group_num, uint8_t id, uint16_t start_address, uint16_t data_length, uint32_t data, uint16_t input_length, uint16_t data_pos)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|group_num | Group number|
-|id	|Dynamixel ID|
-|start_address	|Start address|
-|data_length	|Data length|
-|data	|data for write|
-|input_length	|Input data length|
-|data_pos	|Data position in the array|
+| Parameters    | Description                |
+|:--------------|:---------------------------|
+| group_num     | Group number               |
+| id            | Dynamixel ID               |
+| start_address | Start address              |
+| data_length   | Data length                |
+| data          | data for write             |
+| input_length  | Input data length          |
+| data_pos      | Data position in the array |
 
 - Detailed Description
 
@@ -124,14 +124,14 @@ void groupBulkWriteRemoveParam(int group_num, uint8_t id)
 
 ##### groupBulkWriteClearParam
 - Syntax
-``` Labview
+```c
 void groupBulkWriteClearParam(int group_num)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|group_num | Group number|
+| Parameters | Description  |
+|:-----------|:-------------|
+| group_num  | Group number |
 
 - Detailed Description
 
@@ -140,14 +140,14 @@ void groupBulkWriteClearParam(int group_num)
 
 ##### groupBulkWriteTxPacket
 - Syntax
-``` Labview
+```c
 int groupBulkWriteTxPacket(int group_num)
 ```
 - Parameters
 
-| | |
-| ------------- | ------------- |
-|group_num | Group number|
+| Parameters | Description  |
+|:-----------|:-------------|
+| group_num  | Group number |
 
 - Detailed Description
 

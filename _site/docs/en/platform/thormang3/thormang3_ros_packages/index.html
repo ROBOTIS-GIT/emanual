@@ -160,13 +160,25 @@ $(function() {
       function extendgoogletool() {
         if (toggle_google == 0) {
           google_tools.classList.add("extend_googletools");
+          switch_ko_en.classList.add("show_switch_ko_en");
           toggle_google = 1;
         }
         else {
           google_tools.classList.remove("extend_googletools");
+          switch_ko_en.classList.remove("show_switch_ko_en");
           toggle_google = 0;
         }
       }
+    </script>
+    <script>
+    $(document).ready(function() {
+
+    	$('.popup').magnificPopup({
+    		type: 'ajax',
+    		alignTop: true,
+    		overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
+    	});
+    });
     </script>
   </head>
 
@@ -204,6 +216,18 @@ $(function() {
         }
         </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
         <!-- end of Google Translation -->  
+        
+        
+        <button class="switch_ko_en" id="switch_ko_en">
+          
+            
+              
+            
+          
+            
+              <a href="http://localhost:4000/docs/kr/platform/thormang3/thormang3_ros_packages/" style="color: black;">Korean</a></button>
+            
+          
       </div>
       
       <input class="menu-btn" type="checkbox" id="menu-btn" />
@@ -941,7 +965,7 @@ $(function() {
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/software/dynamixel/dynamixel_workbench/dynamixel_workbench/" class="">Dynamixel-Workbench</a>
+                          <a href="http://localhost:4000/docs/en/software/dynamixel/dynamixel_workbench/" class="">Dynamixel-Workbench</a>
                         </li>
                       
                     
@@ -1545,8 +1569,6 @@ $(function() {
               
 
               
-
-              
                 
                 <a>AX Series</a>
               
@@ -1557,8 +1579,6 @@ $(function() {
                   
 
                   
-
-                  
                     
                       <a href="http://localhost:4000/docs/en/dxl/ax/ax-12w/">AX-12W</a>
                     
@@ -1566,14 +1586,10 @@ $(function() {
                   
 
                   
-
-                  
                     
                       <a href="http://localhost:4000/docs/en/dxl/ax/ax-12a/">AX-12/12+/12A</a>
                     
                 
-                  
-
                   
 
                   
@@ -1590,8 +1606,6 @@ $(function() {
               
 
               
-
-              
                 
                 <a><font color=#ccc>*EX Series</font></a>
               
@@ -1599,8 +1613,6 @@ $(function() {
               
               <div class="dropdown-2nd-content">
                 
-                  
-
                   
 
                   
@@ -1617,8 +1629,6 @@ $(function() {
               
 
               
-
-              
                 
                 <a><font color=#ccc>*DX Series</font></a>
               
@@ -1629,8 +1639,6 @@ $(function() {
                   
 
                   
-
-                  
                     
                       <a href="http://localhost:4000/docs/en/dxl/dx/dx-113/"><font color=#ccc>*DX-113</font></a>
                     
@@ -1638,14 +1646,10 @@ $(function() {
                   
 
                   
-
-                  
                     
                       <a href="http://localhost:4000/docs/en/dxl/dx/dx-116/"><font color=#ccc>*DX-116</font></a>
                     
                 
-                  
-
                   
 
                   
@@ -1662,8 +1666,6 @@ $(function() {
               
 
               
-
-              
                 
                 <a><font color=#ccc>*RX Series</font></a>
               
@@ -1674,14 +1676,10 @@ $(function() {
                   
 
                   
-
-                  
                     
                       <a href="http://localhost:4000/docs/en/dxl/rx/rx-10/"><font color=#ccc>*RX-10</font></a>
                     
                 
-                  
-
                   
 
                   
@@ -1692,14 +1690,10 @@ $(function() {
                   
 
                   
-
-                  
                     
                       <a href="http://localhost:4000/docs/en/dxl/rx/rx-28/"><font color=#ccc>*RX-28</font></a>
                     
                 
-                  
-
                   
 
                   
@@ -1716,8 +1710,6 @@ $(function() {
               
 
               
-
-              
                 
                 <a>MX Series</a>
               
@@ -1728,14 +1720,10 @@ $(function() {
                   
 
                   
-
-                  
                     
                       <a href="http://localhost:4000/docs/en/dxl/mx/mx-12w/">MX-12W</a>
                     
                 
-                  
-
                   
 
                   
@@ -1746,14 +1734,10 @@ $(function() {
                   
 
                   
-
-                  
                     
                       <a href="http://localhost:4000/docs/en/dxl/mx/mx-28-2/">MX-28T/R/AT/AR(2.0)</a>
                     
                 
-                  
-
                   
 
                   
@@ -1764,8 +1748,6 @@ $(function() {
                   
 
                   
-
-                  
                     
                       <a href="http://localhost:4000/docs/en/dxl/mx/mx-64-2/">MX-64T/R/AT/AR(2.0)</a>
                     
@@ -1773,14 +1755,10 @@ $(function() {
                   
 
                   
-
-                  
                     
                       <a href="http://localhost:4000/docs/en/dxl/mx/mx-106/">MX-106T/R</a>
                     
                 
-                  
-
                   
 
                   
@@ -1797,8 +1775,6 @@ $(function() {
               
 
               
-
-              
                 
                 <a>X Series</a>
               
@@ -1809,14 +1785,10 @@ $(function() {
                   
 
                   
-
-                  
                     
                       <a href="http://localhost:4000/docs/en/dxl/x/xl320/">XL320</a>
                     
                 
-                  
-
                   
 
                   
@@ -1827,14 +1799,10 @@ $(function() {
                   
 
                   
-
-                  
                     
                       <a href="http://localhost:4000/docs/en/dxl/x/xm430-w210/">XM430-W210</a>
                     
                 
-                  
-
                   
 
                   
@@ -1845,14 +1813,10 @@ $(function() {
                   
 
                   
-
-                  
                     
                       <a href="http://localhost:4000/docs/en/dxl/x/xm540-w150/">XM540-W150</a>
                     
                 
-                  
-
                   
 
                   
@@ -1863,14 +1827,10 @@ $(function() {
                   
 
                   
-
-                  
                     
                       <a href="http://localhost:4000/docs/en/dxl/x/xh430-w210/">XH430-W210</a>
                     
                 
-                  
-
                   
 
                   
@@ -1881,14 +1841,10 @@ $(function() {
                   
 
                   
-
-                  
                     
                       <a href="http://localhost:4000/docs/en/dxl/x/xh430-v210/">XH430-V210</a>
                     
                 
-                  
-
                   
 
                   
@@ -1905,8 +1861,6 @@ $(function() {
               
 
               
-
-              
                 
                 <a>PRO Series</a>
               
@@ -1917,14 +1871,10 @@ $(function() {
                   
 
                   
-
-                  
                     
                       <a href="http://localhost:4000/docs/en/dxl/pro/h54-200-s500-r/">H54-200-S500-R</a>
                     
                 
-                  
-
                   
 
                   
@@ -1935,14 +1885,10 @@ $(function() {
                   
 
                   
-
-                  
                     
                       <a href="http://localhost:4000/docs/en/dxl/pro/h42-20-s300-r/">H42-20-S300-R</a>
                     
                 
-                  
-
                   
 
                   
@@ -1953,14 +1899,10 @@ $(function() {
                   
 
                   
-
-                  
                     
                       <a href="http://localhost:4000/docs/en/dxl/pro/m54-40-s250-r/">M54-40-S250-R</a>
                     
                 
-                  
-
                   
 
                   
@@ -1971,14 +1913,10 @@ $(function() {
                   
 
                   
-
-                  
                     
                       <a href="http://localhost:4000/docs/en/dxl/pro/l54-50-s500-r/"><font color=#ccc>*L54-50-S500-R</font></a>
                     
                 
-                  
-
                   
 
                   
@@ -1989,8 +1927,6 @@ $(function() {
                   
 
                   
-
-                  
                     
                       <a href="http://localhost:4000/docs/en/dxl/pro/l54-30-s500-r/"><font color=#ccc>*L54-30-S500-R</font></a>
                     
@@ -1998,14 +1934,10 @@ $(function() {
                   
 
                   
-
-                  
                     
                       <a href="http://localhost:4000/docs/en/dxl/pro/l54-30-s400-r/"><font color=#ccc>*L54-30-S400-R</font></a>
                     
                 
-                  
-
                   
 
                   
@@ -2022,8 +1954,6 @@ $(function() {
               
 
               
-
-              
                 
                   
                     <a href="http://localhost:4000/docs/en/dxl/protocol1/">Procotol 1.0</a>
@@ -2034,8 +1964,6 @@ $(function() {
             </div>
             
               <div class="dropdown-content-wrapper">
-              
-
               
 
               
@@ -2069,8 +1997,6 @@ $(function() {
               
 
               
-
-              
                 
                   
                     <a href="http://localhost:4000/docs/en/platform/op/getting_started/"><font color=#ccc>*OP</font></a>
@@ -2084,8 +2010,6 @@ $(function() {
               
 
               
-
-              
                 
                   
                     <a href="http://localhost:4000/docs/en/platform/op2/getting_started/">OP2</a>
@@ -2096,8 +2020,6 @@ $(function() {
             </div>
             
               <div class="dropdown-content-wrapper">
-              
-
               
 
               
@@ -2117,8 +2039,6 @@ $(function() {
 
               
 
-              
-
             </div>
             
               <div class="dropdown-content-wrapper">
@@ -2128,13 +2048,9 @@ $(function() {
 
               
 
-              
-
             </div>
             
               <div class="dropdown-content-wrapper">
-              
-
               
 
               
@@ -2151,8 +2067,6 @@ $(function() {
               
 
               
-
-              
                 
                   
                     <a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/">Thormang3</a>
@@ -2166,8 +2080,6 @@ $(function() {
               
 
               
-
-              
                 
                   
                     <a href="http://localhost:4000/docs/en/platform/turtlebot3/overview/">TurtleBot3</a>
@@ -2178,8 +2090,6 @@ $(function() {
             </div>
             
               <div class="dropdown-content-wrapper">
-              
-
               
 
               
@@ -2213,8 +2123,6 @@ $(function() {
               
 
               
-
-              
                 
                 <a><font color=#ccc>*OLLO</font></a>
               
@@ -2225,14 +2133,10 @@ $(function() {
                   
 
                   
-
-                  
                     
                       <a href="http://localhost:4000/docs/en/edu/ollo/bugkit/"><font color=#ccc>*BUG KIT</font></a>
                     
                 
-                  
-
                   
 
                   
@@ -2243,14 +2147,10 @@ $(function() {
                   
 
                   
-
-                  
                     
                       <a href="http://localhost:4000/docs/en/edu/ollo/inventor/"><font color=#ccc>*INVENTOR</font></a>
                     
                 
-                  
-
                   
 
                   
@@ -2264,8 +2164,6 @@ $(function() {
               
 
               
-
-              
                 
                 <a>DREAM</a>
               
@@ -2276,11 +2174,7 @@ $(function() {
                   
 
                   
-
-                  
                 
-                  
-
                   
 
                   
@@ -2291,14 +2185,10 @@ $(function() {
                   
 
                   
-
-                  
                     
                       <a href="http://localhost:4000/docs/en/edu/dream/dream1-3/">LEVEL 3</a>
                     
                 
-                  
-
                   
 
                   
@@ -2309,14 +2199,10 @@ $(function() {
                   
 
                   
-
-                  
                     
                       <a href="http://localhost:4000/docs/en/edu/dream/dream-a/">SET A</a>
                     
                 
-                  
-
                   
 
                   
@@ -2335,24 +2221,24 @@ $(function() {
               
 
               
-
-              
               <div class="dropdown-2nd-content">
                 
                   
 
                   
+                
+                  
 
                   
                 
                   
 
                   
-
-                  
                 
                   
 
+                  
+                
                   
 
                   
@@ -2368,24 +2254,16 @@ $(function() {
               
 
               
-
-              
               <div class="dropdown-2nd-content">
                 
                   
 
                   
-
-                  
                 
                   
 
                   
-
-                  
                 
-                  
-
                   
 
                   
@@ -2401,24 +2279,16 @@ $(function() {
               
 
               
-
-              
               <div class="dropdown-2nd-content">
                 
                   
 
                   
-
-                  
                 
                   
 
                   
-
-                  
                 
-                  
-
                   
 
                   
@@ -2434,18 +2304,12 @@ $(function() {
               
 
               
-
-              
               <div class="dropdown-2nd-content">
                 
                   
 
                   
-
-                  
                 
-                  
-
                   
 
                   
@@ -2461,18 +2325,12 @@ $(function() {
               
 
               
-
-              
               <div class="dropdown-2nd-content">
                 
                   
 
                   
-
-                  
                 
-                  
-
                   
 
                   
@@ -2483,8 +2341,6 @@ $(function() {
             </div>
             
               <div class="dropdown-content-wrapper">
-              
-
               
 
               
@@ -2498,14 +2354,10 @@ $(function() {
                   
 
                   
-
-                  
                     
                       <a href="http://localhost:4000/docs/en/edu/bioloid/beginner/">Beginner Level</a>
                     
                 
-                  
-
                   
 
                   
@@ -2516,8 +2368,6 @@ $(function() {
                   
 
                   
-
-                  
                     
                       <a href="http://localhost:4000/docs/en/edu/bioloid/stem/">ROBOTIS STEM</a>
                     
@@ -2525,11 +2375,7 @@ $(function() {
                   
 
                   
-
-                  
                 
-                  
-
                   
 
                   
@@ -2537,8 +2383,6 @@ $(function() {
                       <a href="http://localhost:4000/docs/en/edu/bioloid/premium/">ROBOTIS PREMIUM</a>
                     
                 
-                  
-
                   
 
                   
@@ -2552,8 +2396,6 @@ $(function() {
             </div>
             
               <div class="dropdown-content-wrapper">
-              
-
               
 
               
@@ -2587,8 +2429,6 @@ $(function() {
               
 
               
-
-              
                 
                 <a>DYNAMIXEL</a>
               
@@ -2599,8 +2439,6 @@ $(function() {
                   
 
                   
-
-                  
                     
                       <a href="http://localhost:4000/docs/en/software/dynamixel/dynamixel_sdk/overview/">DYNAMIXEL SDK</a>
                     
@@ -2608,10 +2446,8 @@ $(function() {
                   
 
                   
-
-                  
                     
-                      <a href="http://localhost:4000/docs/en/software/dynamixel/dynamixel_workbench/dynamixel_workbench/">Dynamixel-Workbench</a>
+                      <a href="http://localhost:4000/docs/en/software/dynamixel/dynamixel_workbench/">Dynamixel-Workbench</a>
                     
                 
               </div>
@@ -2620,8 +2456,6 @@ $(function() {
             </div>
             
               <div class="dropdown-content-wrapper">
-              
-
               
 
               
@@ -2635,17 +2469,11 @@ $(function() {
                   
 
                   
-
-                  
                 
                   
 
                   
-
-                  
                 
-                  
-
                   
 
                   
@@ -2662,8 +2490,6 @@ $(function() {
               
 
               
-
-              
                 
                 <a>R+ 1.0</a>
               
@@ -2674,14 +2500,10 @@ $(function() {
                   
 
                   
-
-                  
                     
                       <a href="http://localhost:4000/docs/en/software/rplus1/task/getting_started/">R+ Task</a>
                     
                 
-                  
-
                   
 
                   
@@ -2692,14 +2514,10 @@ $(function() {
                   
 
                   
-
-                  
                     
                       <a href="http://localhost:4000/docs/en/software/rplus1/motion/">R+ Motion</a>
                     
                 
-                  
-
                   
 
                   
@@ -2716,8 +2534,6 @@ $(function() {
               
 
               
-
-              
                 
                 <a>R+ 2.0</a>
               
@@ -2728,14 +2544,10 @@ $(function() {
                   
 
                   
-
-                  
                     
                       <a href="http://localhost:4000/docs/en/software/rplus2/task/">R+ Task 2.0</a>
                     
                 
-                  
-
                   
 
                   
@@ -2746,8 +2558,6 @@ $(function() {
                   
 
                   
-
-                  
                     
                       <a href="http://localhost:4000/docs/en/software/rplus2/motion/">R+ Motion 2.0</a>
                     
@@ -2755,14 +2565,10 @@ $(function() {
                   
 
                   
-
-                  
                     
                       <a href="http://localhost:4000/docs/en/software/rplus2/design/">R+ Design 2.0</a>
                     
                 
-                  
-
                   
 
                   
@@ -2779,8 +2585,6 @@ $(function() {
               
 
               
-
-              
                 
                 <a>R+ Mobile</a>
               
@@ -2791,17 +2595,11 @@ $(function() {
                   
 
                   
-
-                  
                 
                   
 
                   
-
-                  
                 
-                  
-
                   
 
                   
@@ -2809,8 +2607,6 @@ $(function() {
                       <a href="http://localhost:4000/docs/en/software/rplus_mobile/mmotion/">R+ m.Motion 2.0</a>
                     
                 
-                  
-
                   
 
                   
@@ -2827,8 +2623,6 @@ $(function() {
               
 
               
-
-              
                 
                   
                     <a href="http://localhost:4000/docs/en/software/embedded_sdk/">EMBEDDED SDK</a>
@@ -2840,8 +2634,6 @@ $(function() {
                   
 
                   
-
-                  
                     
                       <a href="http://localhost:4000/docs/en/software/embedded_sdk/embedded_c_cm510/">Embedded C(CM-510/700)</a>
                     
@@ -2849,14 +2641,10 @@ $(function() {
                   
 
                   
-
-                  
                     
                       <a href="http://localhost:4000/docs/en/software/embedded_sdk/embedded_c_cm530/">Embedded C(CM-530)</a>
                     
                 
-                  
-
                   
 
                   
@@ -2870,8 +2658,6 @@ $(function() {
             </div>
             
               <div class="dropdown-content-wrapper">
-              
-
               
 
               
@@ -2905,8 +2691,6 @@ $(function() {
               
 
               
-
-              
                 
                   
                     <a href="http://localhost:4000/docs/en/parts/controller/controller_compatibility/">Controller</a>
@@ -2918,14 +2702,10 @@ $(function() {
                   
 
                   
-
-                  
                     
                       <a href="http://localhost:4000/docs/en/parts/controller/cm-100/"><font color=#ccc>*CM-100A</font></a>
                     
                 
-                  
-
                   
 
                   
@@ -2936,14 +2716,10 @@ $(function() {
                   
 
                   
-
-                  
                     
                       <a href="http://localhost:4000/docs/en/parts/controller/cm-200/">CM-200</a>
                     
                 
-                  
-
                   
 
                   
@@ -2954,14 +2730,10 @@ $(function() {
                   
 
                   
-
-                  
                     
                       <a href="http://localhost:4000/docs/en/parts/controller/cm-510/"><font color=#ccc>*CM-510</font></a>
                     
                 
-                  
-
                   
 
                   
@@ -2972,14 +2744,10 @@ $(function() {
                   
 
                   
-
-                  
                     
                       <a href="http://localhost:4000/docs/en/parts/controller/cm-700/">CM-700</a>
                     
                 
-                  
-
                   
 
                   
@@ -2990,8 +2758,6 @@ $(function() {
                   
 
                   
-
-                  
                     
                       <a href="http://localhost:4000/docs/en/parts/controller/opencm904/">OpenCM 9.04</a>
                     
@@ -2999,14 +2765,10 @@ $(function() {
                   
 
                   
-
-                  
                     
                       <a href="http://localhost:4000/docs/en/parts/controller/opencm485exp/">OpenCM 485 EXP</a>
                     
                 
-                  
-
                   
 
                   
@@ -3023,8 +2785,6 @@ $(function() {
               
 
               
-
-              
                 
                 <a>Communication</a>
               
@@ -3035,14 +2795,10 @@ $(function() {
                   
 
                   
-
-                  
                     
                       <a href="http://localhost:4000/docs/en/parts/communication/rc-100/">RC-100A/100B</a>
                     
                 
-                  
-
                   
 
                   
@@ -3053,14 +2809,10 @@ $(function() {
                   
 
                   
-
-                  
                     
                       <a href="http://localhost:4000/docs/en/parts/communication/bt-110/"><font color=#ccc>*BT-100/110A</font></a>
                     
                 
-                  
-
                   
 
                   
@@ -3071,8 +2823,6 @@ $(function() {
                   
 
                   
-
-                  
                     
                       <a href="http://localhost:4000/docs/en/parts/communication/bt-410/">BT-410</a>
                     
@@ -3080,14 +2830,10 @@ $(function() {
                   
 
                   
-
-                  
                     
                       <a href="http://localhost:4000/docs/en/parts/communication/bt-410-dongle/">BT-410 Dongle</a>
                     
                 
-                  
-
                   
 
                   
@@ -3104,8 +2850,6 @@ $(function() {
               
 
               
-
-              
                 
                 <a>Motors</a>
               
@@ -3116,14 +2860,10 @@ $(function() {
                   
 
                   
-
-                  
                     
                       <a href="http://localhost:4000/docs/en/parts/motor/gm-10a/">Geared Motor(GM-10A)</a>
                     
                 
-                  
-
                   
 
                   
@@ -3134,14 +2874,10 @@ $(function() {
                   
 
                   
-
-                  
                     
                       <a href="http://localhost:4000/docs/en/parts/motor/l_speed_geared_motor/">Low Speed Geared Motor</a>
                     
                 
-                  
-
                   
 
                   
@@ -3158,8 +2894,6 @@ $(function() {
               
 
               
-
-              
                 
                 <a>Interface</a>
               
@@ -3170,8 +2904,6 @@ $(function() {
                   
 
                   
-
-                  
                     
                       <a href="http://localhost:4000/docs/en/parts/interface/ln-101/">LN-101</a>
                     
@@ -3179,14 +2911,10 @@ $(function() {
                   
 
                   
-
-                  
                     
                       <a href="http://localhost:4000/docs/en/parts/interface/usb2dynamixel/">USB2DYNAMIXEL</a>
                     
                 
-                  
-
                   
 
                   
@@ -3203,8 +2931,6 @@ $(function() {
               
 
               
-
-              
                 
                 <a>Sensors</a>
               
@@ -3215,14 +2941,10 @@ $(function() {
                   
 
                   
-
-                  
                     
                       <a href="http://localhost:4000/docs/en/parts/sensor/irss-10/">IR Sensor(IRSS-10)</a>
                     
                 
-                  
-
                   
 
                   
@@ -3233,14 +2955,10 @@ $(function() {
                   
 
                   
-
-                  
                     
                       <a href="http://localhost:4000/docs/en/parts/sensor/ts-10/">Touch Sensor(TS-10)</a>
                     
                 
-                  
-
                   
 
                   
@@ -3251,14 +2969,10 @@ $(function() {
                   
 
                   
-
-                  
                     
                       <a href="http://localhost:4000/docs/en/parts/sensor/gs-12/">Gyro Sensor(GS-12)</a>
                     
                 
-                  
-
                   
 
                   
@@ -3269,14 +2983,10 @@ $(function() {
                   
 
                   
-
-                  
                     
                       <a href="http://localhost:4000/docs/en/parts/sensor/cs-10/">Color Sensor(CS-10)</a>
                     
                 
-                  
-
                   
 
                   
@@ -3287,14 +2997,10 @@ $(function() {
                   
 
                   
-
-                  
                     
                       <a href="http://localhost:4000/docs/en/parts/sensor/tps-10/">Temperature Sensor(TPS-10)</a>
                     
                 
-                  
-
                   
 
                   
@@ -3305,11 +3011,7 @@ $(function() {
                   
 
                   
-
-                  
                 
-                  
-
                   
 
                   
@@ -3323,8 +3025,6 @@ $(function() {
               
 
               
-
-              
                 
                 <a>Display</a>
               
@@ -3332,8 +3032,6 @@ $(function() {
               
               <div class="dropdown-2nd-content">
                 
-                  
-
                   
 
                   
@@ -3442,7 +3140,7 @@ $(function() {
 
     <li class="has-children">
       <input type="radio" name="toplevel" id="toplevel_0" >
-      <label for="toplevel_0">Introduction &loz;</label>
+      <label for="toplevel_0">Introduction [+]</label>
     
 
     
@@ -3515,7 +3213,7 @@ $(function() {
 
     <li class="has-children">
       <input type="radio" name="toplevel" id="toplevel_1" >
-      <label for="toplevel_1">Quick Start &loz;</label>
+      <label for="toplevel_1">Quick Start [+]</label>
     
 
     
@@ -3610,7 +3308,7 @@ $(function() {
 
     <li class="has-children">
       <input type="radio" name="toplevel" id="toplevel_2" >
-      <label for="toplevel_2">Getting Started &loz;</label>
+      <label for="toplevel_2">Getting Started [+]</label>
     
 
     
@@ -3634,7 +3332,7 @@ $(function() {
         
         <li class="has-children">
           <input type="radio" name="sublevel" id="Network Setting" >
-          <label for="Network Setting">Network Setting &loz;</label>
+          <label for="Network Setting">Network Setting [+]</label>
         
 
         
@@ -3680,7 +3378,7 @@ $(function() {
         
         <li class="has-children">
           <input type="radio" name="sublevel" id="ROS Environment Setting" >
-          <label for="ROS Environment Setting">ROS Environment Setting &loz;</label>
+          <label for="ROS Environment Setting">ROS Environment Setting [+]</label>
         
 
         
@@ -3715,7 +3413,7 @@ $(function() {
         
         <li class="has-children">
           <input type="radio" name="sublevel" id="ROBOTIS ROS Package Install" >
-          <label for="ROBOTIS ROS Package Install">ROBOTIS ROS Package Install &loz;</label>
+          <label for="ROBOTIS ROS Package Install">ROBOTIS ROS Package Install [+]</label>
         
 
         
@@ -3766,7 +3464,7 @@ $(function() {
         
         <li class="has-children">
           <input type="radio" name="sublevel" id="Additional ROS Package Install" >
-          <label for="Additional ROS Package Install">Additional ROS Package Install &loz;</label>
+          <label for="Additional ROS Package Install">Additional ROS Package Install [+]</label>
         
 
         
@@ -3806,7 +3504,7 @@ $(function() {
 
     <li class="has-children">
       <input type="radio" name="toplevel" id="toplevel_3" >
-      <label for="toplevel_3">THORMANG3 ROS Packages &loz;</label>
+      <label for="toplevel_3">THORMANG3 ROS Packages [+]</label>
     
 
     
@@ -3819,7 +3517,7 @@ $(function() {
         
         <li class="has-children">
           <input type="radio" name="sublevel" id="MPC Packages" >
-          <label for="MPC Packages">MPC Packages &loz;</label>
+          <label for="MPC Packages">MPC Packages [+]</label>
         
 
         
@@ -3926,7 +3624,7 @@ $(function() {
         
         <li class="has-children">
           <input type="radio" name="sublevel" id="PPC Packages" >
-          <label for="PPC Packages">PPC Packages &loz;</label>
+          <label for="PPC Packages">PPC Packages [+]</label>
         
 
         
@@ -3961,7 +3659,7 @@ $(function() {
         
         <li class="has-children">
           <input type="radio" name="sublevel" id="OPC Packages" >
-          <label for="OPC Packages">OPC Packages &loz;</label>
+          <label for="OPC Packages">OPC Packages [+]</label>
         
 
         
@@ -4020,7 +3718,7 @@ $(function() {
         
         <li class="has-children">
           <input type="radio" name="sublevel" id="Common Packages" >
-          <label for="Common Packages">Common Packages &loz;</label>
+          <label for="Common Packages">Common Packages [+]</label>
         
 
         
@@ -4055,7 +3753,7 @@ $(function() {
         
         <li class="has-children">
           <input type="radio" name="sublevel" id="Tools Packages" >
-          <label for="Tools Packages">Tools Packages &loz;</label>
+          <label for="Tools Packages">Tools Packages [+]</label>
         
 
         
@@ -4090,7 +3788,7 @@ $(function() {
         
         <li class="has-children">
           <input type="radio" name="sublevel" id="THORMANG msgs Package" >
-          <label for="THORMANG msgs Package">THORMANG msgs Package &loz;</label>
+          <label for="THORMANG msgs Package">THORMANG msgs Package [+]</label>
         
 
         
@@ -4162,7 +3860,7 @@ $(function() {
 
     <li class="has-children">
       <input type="radio" name="toplevel" id="toplevel_4" >
-      <label for="toplevel_4">THORMANG3 Operation &loz;</label>
+      <label for="toplevel_4">THORMANG3 Operation [+]</label>
     
 
     
@@ -4197,7 +3895,7 @@ $(function() {
         
         <li class="has-children">
           <input type="radio" name="sublevel" id="GUI Program" >
-          <label for="GUI Program">GUI Program &loz;</label>
+          <label for="GUI Program">GUI Program [+]</label>
         
 
         
@@ -4288,7 +3986,7 @@ $(function() {
 
     <li class="has-children">
       <input type="radio" name="toplevel" id="toplevel_5" >
-      <label for="toplevel_5">Gazebo Simulation &loz;</label>
+      <label for="toplevel_5">Gazebo Simulation [+]</label>
     
 
     
@@ -4328,7 +4026,7 @@ $(function() {
 
     <li class="has-children">
       <input type="radio" name="toplevel" id="toplevel_6" >
-      <label for="toplevel_6">References &loz;</label>
+      <label for="toplevel_6">References [+]</label>
     
 
     
@@ -4415,7 +4113,8 @@ $(function() {
   </div>
 
 
-  <button class="nav_button" id="nav_button" onclick="extendnav()">Nav</button>
+  <button class="nav_button" id="nav_button" onclick="extendnav()">ToC</button>
+  <button class="backtotop" id="backtotop"><a href="#">&#9650;<br />TOP</a></button>
   <div class="archive" id="archive">
     <a href="/blob/master/docs/en/platform/thormang3/thormang3_ros_packages.md" itemprop="sameAs" style="font-size:16px; float:right; margin: 10px 20px; text-decoration: none;">
       <i class="fa fa-fw fa-github" aria-hidden="true"></i> Edit on GitHub
@@ -4655,7 +4354,7 @@ The motion file is edited with thormang3_action_editor</p>
 <h5 id="subscribed-topics">Subscribed Topics</h5>
 <ul>
   <li>
-    <p><code class="highlighter-rouge">/robotis/action/page_num</code>(<a href="http://docs.ros.org/api/std_msgs/html/msg/Int32.html">std_msgs/Int32</a>)<br />
+    <p><code class="highlighter-rouge">/robotis/action/page_num</code>(<a href="/docs/en/popup/std_msgs_int32_message/" class="popup">std_msgs/Int32</a>)<br />
 The page number will be played.<br />
 If user send a page number between 1 ~ 255, the page will be played.<br />
 If user send -1, the action will be stopped.<br />
@@ -4695,14 +4394,14 @@ The service that checks whether THORMANG3’s action is being played or not.</li
 
 <h5 id="subscribed-topics-1">Subscribed Topics</h5>
 <ul>
-  <li><code class="highlighter-rouge">/robotis/base/ini_pose</code>(<a href="http://docs.ros.org/api/std_msgs/html/msg/String.html">std_msgs/String</a>)<br />
+  <li><code class="highlighter-rouge">/robotis/base/ini_pose</code>(<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
 A command to take the initial posture(This command is effective even when the base module is inactive).</li>
 </ul>
 
 <h5 id="published-topics-1">Published Topics</h5>
 <ul>
   <li>
-    <p><code class="highlighter-rouge">/robotis/enable_ctrl_module</code>(<a href="http://docs.ros.org/api/std_msgs/html/msg/String.html">std_msgs/String</a>)<br />
+    <p><code class="highlighter-rouge">/robotis/enable_ctrl_module</code>(<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
 A base_module activation topic to take the initial posture.</p>
   </li>
   <li>
@@ -4724,33 +4423,33 @@ A message that contains the status of base_module.</p>
 <h5 id="subscribed-topics-2">Subscribed Topics</h5>
 <ul>
   <li>
-    <p><code class="highlighter-rouge">/robotis/manipulation/ini_pose_msg</code> (std_msgs/String)<br />
+    <p><code class="highlighter-rouge">/robotis/manipulation/ini_pose_msg</code> (<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
 A message to take the initial posture.</p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">/robotis/manipulation/joint_pose_msg</code> (thormang3_manipulation_module_msgs/JointPose)<br />
+    <p><code class="highlighter-rouge">/robotis/manipulation/joint_pose_msg</code> (<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/JointPose.msg">thormang3_manipulation_module_msgs/JointPose</a>)<br />
 A message to move to the target point in the Joint Space.</p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">/robotis/manipulation/kinematics_pose_msg</code> (thormang3_manipulation_module_msgs/KinematicsPose)<br />
+    <p><code class="highlighter-rouge">/robotis/manipulation/kinematics_pose_msg</code> (<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/KinematicsPose.msg">thormang3_manipulation_module_msgs/KinematicsPose</a>)<br />
 A message to move to the target pose in the Task Space.</p>
   </li>
 </ul>
 
 <h5 id="published-topics-2">Published Topics</h5>
 <ul>
-  <li><code class="highlighter-rouge">/robotis/status</code> (robotis_controller_msgs/StatusMsg)<br />
+  <li><code class="highlighter-rouge">/robotis/status</code> (<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/StatusMsg.msg">robotis_controller_msgs/StatusMsg</a>)<br />
 A status message of THORMANG3</li>
 </ul>
 
 <h5 id="services-1">Services</h5>
 <ul>
   <li>
-    <p><code class="highlighter-rouge">/robotis/manipulation/get_joint_pose</code> (thormang3_manipulation_module_msgs/GetJointPose)<br />
+    <p><code class="highlighter-rouge">/robotis/manipulation/get_joint_pose</code> (<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/GetJointPose.srv">thormang3_manipulation_module_msgs/GetJointPose</a>)<br />
 A service that reads the pose of specific joint.</p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">/robotis/manipulation/get_kinematics_pose</code> (thormang3_manipulation_module_msgs/GetKinematicsPose)<br />
+    <p><code class="highlighter-rouge">/robotis/manipulation/get_kinematics_pose</code> (<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/GetKinematicsPose.srv">thormang3_manipulation_module_msgs/GetKinematicsPose</a>)<br />
 A service that reads the pose of end effector from a specific kinematics group.</p>
   </li>
 </ul>
@@ -4761,7 +4460,7 @@ A service that reads the pose of end effector from a specific kinematics group.<
 
 <p>As seen from the above figure, thormang3_walking_module is one of the MotionModules from ROS Framework.
 THROMANG3 can be controlled with Topics and Services.
-Users can designate almost all Step Parameters.(thormang3_walking_module_msgs/StepData)</p>
+Users can designate almost all Step Parameters.(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/StepData.msg">thormang3_walking_module_msgs/StepData</a>)</p>
 
 <ol>
   <li>
@@ -4774,7 +4473,7 @@ Users can designate almost all Step Parameters.(thormang3_walking_module_msgs/St
   <li>
     <p>Balance Algorithm</p>
 
-    <p>The balance algorithm is included as shown below.(thormang3_walking_module_msgs/BalanceParam)
+    <p>The balance algorithm is included as shown below.(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/BalanceParam.msg">thormang3_walking_module_msgs/BalanceParam</a>)
  <img src="/assets/images/platform/thormang3/thormang3_walking_module_balance_diagram.jpg" alt="" /></p>
   </li>
 </ol>
@@ -4787,40 +4486,40 @@ Users can designate almost all Step Parameters.(thormang3_walking_module_msgs/St
 
 <h5 id="subscribed-topics-3">Subscribed Topics</h5>
 <ul>
-  <li><code class="highlighter-rouge">/robotis/sensor/imu/imu</code> (sensor_msgs/Imu)<br />
+  <li><code class="highlighter-rouge">/robotis/sensor/imu/imu</code> (<a href="http://docs.ros.org/api/sensor_msgs/html/msg/Imu.html">sensor_msgs/Imu</a>)<br />
 Current data of the IMU Sensor</li>
 </ul>
 
 <h5 id="published-topics-3">Published Topics</h5>
 <ul>
-  <li><code class="highlighter-rouge">/robotis/status</code>(robotis_controller_msgs/StatusMsg)<br />
+  <li><code class="highlighter-rouge">/robotis/status</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/StatusMsg.msg">robotis_controller_msgs/StatusMsg</a>)<br />
 Status message of THORMANG3</li>
 </ul>
 
 <h5 id="services-2">Services</h5>
 <ul>
   <li>
-    <p><code class="highlighter-rouge">/robotis/walking/get_reference_step_data</code>(thormang3_walking_module_msgs/GetReferenceStrpData)<br />
+    <p><code class="highlighter-rouge">/robotis/walking/get_reference_step_data</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/GetReferenceStepData.srv">thormang3_walking_module_msgs/GetReferenceStrpData</a>)<br />
 A service that collects current location of THORMANG3 in the Global from the Walking Module.</p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">/robotis/walking/add_step_data</code>(thormang3_walking_module_msgs/AddStepDataArray)<br />
+    <p><code class="highlighter-rouge">/robotis/walking/add_step_data</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/AddStepDataArray.srv">thormang3_walking_module_msgs/AddStepDataArray</a>)<br />
 A service that adds StepData created by the user.</p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">/robotis/walking/walking_start</code>(thormang3_walking_module_msgs/WalkingStart)<br />
+    <p><code class="highlighter-rouge">/robotis/walking/walking_start</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/WalkingStart.srv">thormang3_walking_module_msgs/WalkingStart</a>)<br />
 A service that commands to start walking.</p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">/robotis/walking/is_running</code>(thormang3_walking_module_msgs/IsRunning)<br />
+    <p><code class="highlighter-rouge">/robotis/walking/is_running</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/IsRunning.srv">thormang3_walking_module_msgs/IsRunning</a>)<br />
 A service that checks whether THORMANG3 is walking or not.</p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">/robotis/walking/set_balance_param</code>(thormang3_walking_module_msgs/SetBalanceParam)<br />
+    <p><code class="highlighter-rouge">/robotis/walking/set_balance_param</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/SetBalanceParam.srv">thormang3_walking_module_msgs/SetBalanceParam</a>)<br />
 A service that can set Balance Algorithm parameters.</p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">/robotis/walking/remove_existing_step_data</code>(thormang3_walking_module_msgs/RemoveExistingStepData)<br />
+    <p><code class="highlighter-rouge">/robotis/walking/remove_existing_step_data</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/RemoveExistingStepData.srv">thormang3_walking_module_msgs/RemoveExistingStepData</a>)<br />
 A service that deletes existing StepData.</p>
   </li>
 </ul>
@@ -4841,19 +4540,19 @@ A service that deletes existing StepData.</p>
 
 <ul>
   <li>
-    <p><code class="highlighter-rouge">/robotis/head_control/move_lidar</code>(std_msgs/String)<br />
+    <p><code class="highlighter-rouge">/robotis/head_control/move_lidar</code>(<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
 The command moves the head in order to obtain Lidar data.</p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">/robotis/head_control/move_lidar_with_range</code>(std_msgs/Float64)<br />
+    <p><code class="highlighter-rouge">/robotis/head_control/move_lidar_with_range</code>(<a href="http://docs.ros.org/api/std_msgs/html/msg/Float64.html">std_msgs/Float64</a>)<br />
 This command scans up and down a given range at the current head position to generate 3D lidar data.</p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">/robotis/head_control/set_joint_states</code>(sensor_msgs/JointState)<br />
+    <p><code class="highlighter-rouge">/robotis/head_control/set_joint_states</code>(<a href="http://docs.ros.org/api/sensor_msgs/html/msg/JointState.html">sensor_msgs/JointState</a>)<br />
 The message controls joints that are connected to the head.</p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">/robotis/head_control/set_joint_states_time</code>(thormang3_head_control_module_msgs/HeadJointPose)<br />
+    <p><code class="highlighter-rouge">/robotis/head_control/set_joint_states_time</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/HeadJointPose.msg">thormang3_head_control_module_msgs/HeadJointPose</a>)<br />
 The message moves head joints for given time.</p>
   </li>
 </ul>
@@ -4862,11 +4561,11 @@ The message moves head joints for given time.</p>
 
 <ul>
   <li>
-    <p><code class="highlighter-rouge">/robotis/sensor/move_lidar</code>(std_msgs/String)<br />
+    <p><code class="highlighter-rouge">/robotis/sensor/move_lidar</code>(<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
 This message reports the head movement to the Node which assembles LiDAR data.</p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">/robotis/status</code>(robotis_controller_msgs/StatusMsg)<br />
+    <p><code class="highlighter-rouge">/robotis/status</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/StatusMsg.msg">robotis_controller_msgs/StatusMsg</a>)<br />
 The message indicates status of the head_control_module.</p>
   </li>
 </ul>
@@ -5076,13 +4775,13 @@ Acquired sensor values when the robot is hanging on the lift and standing on the
 <ol>
   <li>Subscribed Topics
     <ul>
-      <li><code class="highlighter-rouge">/robotis/feet_ft/ft_calib_command</code> (std_msgs/String)<br />
+      <li><code class="highlighter-rouge">/robotis/feet_ft/ft_calib_command</code> (<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
  FT Calibration Command</li>
     </ul>
   </li>
   <li>Published Topics
     <ul>
-      <li><code class="highlighter-rouge">/robotis/status</code> (robotis_controller_msgs/StatusMsg)<br />
+      <li><code class="highlighter-rouge">/robotis/status</code> (<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/StatusMsg.msg">robotis_controller_msgs/StatusMsg</a>)<br />
  The status message of THORMANG3</li>
     </ul>
   </li>
@@ -5090,23 +4789,23 @@ Acquired sensor values when the robot is hanging on the lift and standing on the
 
 <ul>
   <li>
-    <p><code class="highlighter-rouge">/robotis/feet_ft/both_ft_value</code> (thormang3_feet_ft_module_msgs/BothWrench)<br />
+    <p><code class="highlighter-rouge">/robotis/feet_ft/both_ft_value</code> (<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/BothWrench.msg">thormang3_feet_ft_module_msgs/BothWrench</a>)<br />
 Both Wrench</p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">/robotis/sensor/ft_right_foot/raw</code> (geometry_msgs/WrenchStamped)<br />
+    <p><code class="highlighter-rouge">/robotis/sensor/ft_right_foot/raw</code> (<a href="http://docs.ros.org/api/geometry_msgs/html/msg/WrenchStamped.html">geometry_msgs/WrenchStamped</a>)<br />
 raw output from the force torque sensor on the right foot</p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">/robotis/sensor/ft_right_foot/scaled</code> (geometry_msgs/WrenchStamped)<br />
+    <p><code class="highlighter-rouge">/robotis/sensor/ft_right_foot/scaled</code> (<a href="http://docs.ros.org/api/geometry_msgs/html/msg/WrenchStamped.html">geometry_msgs/WrenchStamped</a>)<br />
 scaled output from the force torque sensor on the right foot</p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">/robotis/sensor/ft_right_foot/raw</code>(geometry_msgs/WrenchStamped)<br />
+    <p><code class="highlighter-rouge">/robotis/sensor/ft_right_foot/raw</code>(<a href="http://docs.ros.org/api/geometry_msgs/html/msg/WrenchStamped.html">geometry_msgs/WrenchStamped</a>)<br />
 raw output from the force torque sensor on the left foot</p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">/robotis/sensor/ft_right_foot/scaled</code>(geometry_msgs/renchStamped)<br />
+    <p><code class="highlighter-rouge">/robotis/sensor/ft_right_foot/scaled</code>(<a href="http://docs.ros.org/api/geometry_msgs/html/msg/WrenchStamped.html">geometry_msgs/WrenchStamped</a>)<br />
 scaled output from the force torque sensor on the left foot</p>
   </li>
 </ul>
@@ -6118,7 +5817,7 @@ This is the modified version of KumarRobotics/imu_3dm_gx4.</p>
 
 <h5 id="published-topics-5">Published Topics</h5>
 
-<p><code class="highlighter-rouge">/robotis/sensor/imu/imu</code> (sensor_msgs/Imu)</p>
+<p><code class="highlighter-rouge">/robotis/sensor/imu/imu</code> (<a href="http://docs.ros.org/api/sensor_msgs/html/msg/Imu.html">sensor_msgs/Imu</a>)</p>
 
 <p>Present output of the IMU Sensor</p>
 
@@ -6162,7 +5861,7 @@ The package also includes a node for assembling Laserscan(LaserScan to PointClou
 
 <h5 id="subscribed-topics-5">Subscribed Topics</h5>
 
-<p><code class="highlighter-rouge">/robotis/sensor/move_lidar</code>(<a href="http://docs.ros.org/api/std_msgs/html/msg/String.html">std_msgs/String</a>)<br />
+<p><code class="highlighter-rouge">/robotis/sensor/move_lidar</code>(<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
   Configures start and end time to assemble LaserScan<br />
   Set the start time when receiving start message.<br />
   Set the end time and assemble Pointcloud when receiving end message.</p>
@@ -6195,18 +5894,18 @@ The package also includes a node for assembling Laserscan(LaserScan to PointClou
 
 <h6 id="subscribed-topics-6">Subscribed Topics</h6>
 
-<p><code class="highlighter-rouge">/robotis/manipulation_demo/command</code> (<a href="http://docs.ros.org/api/std_msgs/html/msg/String.html">std_msgs/String</a>)<br />
+<p><code class="highlighter-rouge">/robotis/manipulation_demo/command</code> (<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
   The topic to run various Manipulation simple demo commands.</p>
 
 <h6 id="published-topics-7">Published Topics</h6>
 
-<p><code class="highlighter-rouge">/robotis/base/ini_pose</code>(<a href="http://docs.ros.org/api/std_msgs/html/msg/String.html">std_msgs/String</a>)<br />
+<p><code class="highlighter-rouge">/robotis/base/ini_pose</code>(<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
   The topic to take initial posture of the Base Module</p>
 
-<p><code class="highlighter-rouge">/robotis/enable_ctrl_module</code>(<a href="http://docs.ros.org/api/std_msgs/html/msg/String.html">std_msgs/String</a>)<br />
+<p><code class="highlighter-rouge">/robotis/enable_ctrl_module</code>(<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
   The topic to set upper body of the robot with the Manipulation Module</p>
 
-<p><code class="highlighter-rouge">/robotis/manipulation/ini_pose_msg</code>(<a href="http://docs.ros.org/api/std_msgs/html/msg/String.html">std_msgs/String</a>)<br />
+<p><code class="highlighter-rouge">/robotis/manipulation/ini_pose_msg</code>(<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
   The topic to take initial posture of the Manipulation Module</p>
 
 <p><code class="highlighter-rouge">/robotis/manipulation/kinematics_pose_msg</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/KinematicsPose.msg">thormang3_manipulation_module_msgs/KinematicsPose</a>)<br />
@@ -6231,15 +5930,15 @@ The package also includes a node for assembling Laserscan(LaserScan to PointClou
 <p><code class="highlighter-rouge">/robotis/status</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/StatusMsg.msg">robotis_controller_msgs/StatusMsg</a>)<br />
   Status message of THORMANG3</p>
 
-<p><code class="highlighter-rouge">robotis/walking_demo/command</code>(<a href="http://docs.ros.org/api/std_msgs/html/msg/String.html">std_msgs/String</a>)<br />
+<p><code class="highlighter-rouge">robotis/walking_demo/command</code>(<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
   Command for walking simple demo</p>
 
 <h6 id="published-topics-8">Published Topics</h6>
 
-<p><code class="highlighter-rouge">robotis/base/ini_pose</code>(<a href="http://docs.ros.org/api/std_msgs/html/msg/String.html">std_msgs/String</a>)<br />
+<p><code class="highlighter-rouge">robotis/base/ini_pose</code>(<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
   The command delivered to the thormang3_base_module to take the initial posture.</p>
 
-<p><code class="highlighter-rouge">/robotis/enable_ctrl_module</code>(<a href="http://docs.ros.org/api/std_msgs/html/msg/String.html">std_msgs/String</a>)<br />
+<p><code class="highlighter-rouge">/robotis/enable_ctrl_module</code>(<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
   The topic to set lower body of the robot with the Walking Module.</p>
 
 <h6 id="services-called-1">Services Called</h6>
@@ -6369,16 +6068,16 @@ module_button : Modules to configure with the manager (index : module name)</p>
 <p><code class="highlighter-rouge">/robotis/set_joint_ctrl_modules</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/JointCtrlModule.msg">robotis_controller_msgs/JointCtrlModule</a>)<br />
   Configuring each joint modules (configure for each joint, Not recommended to use)</p>
 
-<p><code class="highlighter-rouge">/robotis/enable_ctrl_module</code>(<a href="http://docs.ros.org/api/std_msgs/html/msg/String.html">std_msgs/String</a>)<br />
+<p><code class="highlighter-rouge">/robotis/enable_ctrl_module</code>(<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
   Configure modules to control</p>
 
-<p><code class="highlighter-rouge">/robotis/base/ini_pose</code>(<a href="http://docs.ros.org/api/std_msgs/html/msg/String.html">std_msgs/String</a>)<br />
+<p><code class="highlighter-rouge">/robotis/base/ini_pose</code>(<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
   Initial posture of Thormang3</p>
 
-<p><code class="highlighter-rouge">/robotis/feet_ft/ft_calib_command</code>(<a href="http://docs.ros.org/api/std_msgs/html/msg/String.html">std_msgs/String</a>)<br />
+<p><code class="highlighter-rouge">/robotis/feet_ft/ft_calib_command</code>(<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
   FT Calibration related command</p>
 
-<p><code class="highlighter-rouge">/robotis/head_control/move_lidar</code>(<a href="http://docs.ros.org/api/std_msgs/html/msg/String.html">std_msgs/String</a>)<br />
+<p><code class="highlighter-rouge">/robotis/head_control/move_lidar</code>(<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
   Head movement command for assembling LaserScan.</p>
 
 <p><code class="highlighter-rouge">/robotis/head_control/set_joint_states</code>(<a href="http://docs.ros.org/api/sensor_msgs/html/msg/JointState.html">sensor_msgs/JointState</a>)<br />
@@ -6387,7 +6086,7 @@ module_button : Modules to configure with the manager (index : module name)</p>
 <p><code class="highlighter-rouge">/robotis/demo/foot_step_marker</code>(<a href="http://docs.ros.org/api/visualization_msgs/html/msg/MarkerArray.html">visualization_msgs/MarkerArray</a>)<br />
   Visualized footstep messages created by <a href="http://wiki.ros.org/action/fullsearch/footstep_planner">footstep_planner</a></p>
 
-<p><code class="highlighter-rouge">/robotis/manipulation/ini_pose_msg</code>(<a href="http://docs.ros.org/api/std_msgs/html/msg/String.html">std_msgs/String</a>)<br />
+<p><code class="highlighter-rouge">/robotis/manipulation/ini_pose_msg</code>(<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
   Initial posture command for Manipulation</p>
 
 <p><code class="highlighter-rouge">/robotis/manipulation/joint_pose_msg</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/JointPose.msg">thormang3_manipulation_module_msgs/JointPose</a>)<br />
@@ -6470,7 +6169,7 @@ Because <a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Utility">ros_mpg321_play
 
 <h4 id="ros-api-11">ROS API</h4>
 <h5 id="subscribed-topics-9">Subscribed Topics</h5>
-<p><code class="highlighter-rouge">/robotis/demo/action_index</code>(<a href="http://docs.ros.org/api/std_msgs/html/msg/Int32.html">std_msgs/Int32</a>)<br />
+<p><code class="highlighter-rouge">/robotis/demo/action_index</code>(<a href="/docs/en/popup/std_msgs_int32_message/" class="popup">std_msgs/Int32</a>)<br />
   The action script number to play.</p>
 
 <h5 id="parameters-1">Parameters</h5>
@@ -6496,20 +6195,20 @@ Based on the simple Parameter from Topic, the package creates StepData and trans
 <p><code class="highlighter-rouge">/robotis/status</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/StatusMsg.msg">robotis_controller_msgs::Status</a>)<br />
   Status message of THORMANG3</p>
 
-<p><code class="highlighter-rouge">/robotis/thormang3_foot_step_generator/walking_command</code>([thormang3_foot_step_generator::FootStepCommand])<br />
+<p><code class="highlighter-rouge">/robotis/thormang3_foot_step_generator/walking_command</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/FootStepCommand.msg">thormang3_foot_step_generator::FootStepCommand</a>)<br />
   The topic includes walking type and step length.</p>
 
-<p><code class="highlighter-rouge">/robotis/thormang3_foot_step_generator/footsteps_2d</code>([thormang3_foot_step_generator::Step2DArray])<br />
+<p><code class="highlighter-rouge">/robotis/thormang3_foot_step_generator/footsteps_2d</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/Step2DArray.msg">thormang3_foot_step_generator::Step2DArray</a>)<br />
   Planar walking step data contains x, y, theta and moving_foot_flag</p>
 
 <h5 id="services-called-3">Services Called</h5>
 <p><code class="highlighter-rouge">/robotis/walking/get_reference_step_data</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/GetReferenceStepData.srv">thormang3_walking_module_msgs::GetReferenceStepData</a>)<br />
   The service obtains current location of THORMANG3 in the Global space from the Walking Module.</p>
 
-<p><code class="highlighter-rouge">/robotis/walking/add_step_data</code>([thormang3_walking_module_msgs::AddStepDataArray])<br />
+<p><code class="highlighter-rouge">/robotis/walking/add_step_data</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/AddStepDataArray.srv">thormang3_walking_module_msgs::AddStepDataArray</a>)<br />
   The service adds StepData created by the User.</p>
 
-<p><code class="highlighter-rouge">/robotis/walking/set_balance_param</code>([thormang3_walking_module_msgs::SetBalanceParam])<br />
+<p><code class="highlighter-rouge">/robotis/walking/set_balance_param</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/SetBalanceParam.srv">thormang3_walking_module_msgs::SetBalanceParam</a>)<br />
   The service initiates walking.</p>
 
 <p><code class="highlighter-rouge">/robotis/walking/is_running</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/IsRunning.srv">thormang3_walking_module_msgs::IsRunning</a>)<br />
@@ -6617,7 +6316,7 @@ It is used with the <a href="/docs/en/platform/thormang3/thormang3_ros_packages/
 <h4 id="ros-api-14">ROS API</h4>
 
 <h5 id="subscribed-topics-11">Subscribed Topics</h5>
-<p><code class="highlighter-rouge">/robotis/base/send_tra</code>(<a href="http://docs.ros.org/api/std_msgs/html/msg/String.html">std_msgs/String</a>)<br />
+<p><code class="highlighter-rouge">/robotis/base/send_tra</code>(<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
   The topic informs the start and end of trajectory following.</p>
 
 <p><code class="highlighter-rouge">/robotis/offset_tuner/joint_offset_data</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/JointOffsetData.msg">thormang3_offset_tuner_msgs/JointOffsetData</a>)<br />
@@ -6626,7 +6325,7 @@ It is used with the <a href="/docs/en/platform/thormang3/thormang3_ros_packages/
 <p><code class="highlighter-rouge">/robotis/offset_tuner/torque_enable</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/JointTorqueOnOffArray.msg">thormang3_offset_tuner_msgs/JointTorqueOnOffArray</a>)<br />
   The topic transfers Torque enable/disable command for joints.</p>
 
-<p><code class="highlighter-rouge">/robotis/offset_tuner/command</code>(<a href="http://docs.ros.org/api/std_msgs/html/msg/String.html">std_msgs/String</a>)<br />
+<p><code class="highlighter-rouge">/robotis/offset_tuner/command</code>(<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
   The topic transfers command to the <a href="/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3-offset-tuner-client">thormang3_offset_tuner_client</a>.</p>
 <ul>
   <li>“save”     : Saves current offset to yaml</li>

@@ -35,7 +35,7 @@ sidebar:
 
   All series using protocol 2.0
 
-- Simple code
+#### Sample code
 
 
 ``` m
@@ -208,9 +208,9 @@ close all;
 clear all;
 ```
 
--------------------------------------------------------------------------------------
 
-- Details
+
+#### Details
 
 ``` m
 % Load Libraries

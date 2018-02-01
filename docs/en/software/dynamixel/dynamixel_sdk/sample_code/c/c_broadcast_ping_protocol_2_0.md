@@ -29,10 +29,9 @@ sidebar:
 
   All series using protocol 2.0
 
-- Simple code
+#### Sample code
 
-
-``` cpp
+```c
 /*
 * broadcast_ping.c
 *
@@ -175,11 +174,9 @@ int main()
 }
 ```
 
--------------------------------------------------------------------------------------
+#### Details
 
-- Details
-
-``` cpp
+```c
 #ifdef __linux__
 #include <unistd.h>
 #include <fcntl.h>
@@ -189,39 +186,39 @@ int main()
 #endif
 ```
 
-This source includes above to get key input interruption while the example is running. Actual functions for getting the input is described in a little below.
+> This source includes above to get key input interruption while the example is running. Actual functions for getting the input is described in a little below.
 
-``` cpp
+```c
 #include <stdio.h>
 ```
 
-The example shows Dynamixel status in sequence by the function `printf()`. So here `stdio.h` is needed.
+> The example shows Dynamixel status in sequence by the function `printf()`. So here `stdio.h` is needed.
 
-``` cpp
+```c
 #include "dynamixel_sdk.h"                                   // Uses Dynamixel SDK library
 ```
 
-All libraries of Dynamixel SDK are linked with the header file `dynamixel_sdk.h`.
+> All libraries of Dynamixel SDK are linked with the header file `dynamixel_sdk.h`.
 
-``` cpp
+```c
 // Protocol version
 #define PROTOCOL_VERSION                2.0                 // See which protocol version is used in the Dynamixel
 ```
 
-Dynamixel uses either or both protocols: Protocol 1.0 and Protocol 2.0. Choose one of the Protocol which is appropriate in the Dynamixel.
+> Dynamixel uses either or both protocols: Protocol 1.0 and Protocol 2.0. Choose one of the Protocol which is appropriate in the Dynamixel.
 
-``` cpp
+```c
 // Default setting
 #define BAUDRATE                        1000000
 #define DEVICENAME                      "/dev/ttyUSB0"      // Check which port is being used on your controller
                                                             // ex) Windows: "COM1"   Linux: "/dev/ttyUSB0"
 ```
 
-Here we set some variables to let you freely change them and use them to run the example code.
+> Here we set some variables to let you freely change them and use them to run the example code.
 
 As the document previously said in [previous chapter](/docs/en/software/dynamixel/dynamixel_sdk/device_setup/dynamixel/#dynamixel), customize Dynamixel control table items, such as Dynamixel ID, communication `BAUDRATE`, and the `DEVICENAME`, on your own terms of needs. In particular, `BAUDRATE` and `DEVICENAME` have systematical dependencies on your controller, so make clear what kind of communication method you will use.
 
-``` cpp
+```c
 int getch()
 {
 #ifdef __linux__
@@ -271,9 +268,9 @@ int kbhit(void)
 }
 ```
 
-These functions accept the key inputs in terms of example action. The example codes mainly apply the function `getch()` rather than the function `kbhit()` to get information which key has been pressed.
+> These functions accept the key inputs in terms of example action. The example codes mainly apply the function `getch()` rather than the function `kbhit()` to get information which key has been pressed.
 
-``` cpp
+```c
 int main()
 {
   // Initialize PortHandler Structs
@@ -334,82 +331,81 @@ int main()
 
 In `main()` function, the codes call actual functions for Dynamixel control.
 
---------------------------------------------------------------------------------
 
-``` cpp
-  // Initialize PortHandler Structs
-  // Set the port path
-  // Get methods and members of PortHandlerLinux or PortHandlerWindows
-  int port_num = portHandler(DEVICENAME);
+
+```c
+// Initialize PortHandler Structs
+// Set the port path
+// Get methods and members of PortHandlerLinux or PortHandlerWindows
+int port_num = portHandler(DEVICENAME);
 ```
 
-`portHandler()` function sets port path as `DEVICENAME` and get `port_num`, and prepares an appropriate functions for port control in controller OS automatically. `port_num` would be used in many functions in the body of the code to specify the port for use.
+> `portHandler()` function sets port path as `DEVICENAME` and get `port_num`, and prepares an appropriate functions for port control in controller OS automatically. `port_num` would be used in many functions in the body of the code to specify the port for use.
 
-``` cpp
-  // Initialize PacketHandler Structs
-  packetHandler();
+```c
+// Initialize PacketHandler Structs
+packetHandler();
 ```
 
-`packetHandler()` function initializes parameters used for packet construction and packet storing.
+> `packetHandler()` function initializes parameters used for packet construction and packet storing.
 
-``` cpp
-  int dxl_comm_result = COMM_TX_FAIL;             // Communication result
-  int id;
+```c
+int dxl_comm_result = COMM_TX_FAIL;             // Communication result
+int id;
 ```
 
-`dxl_comm_result` indicates which error has been occurred during packet communication.
+> `dxl_comm_result` indicates which error has been occurred during packet communication.
+> `id` keeps Dynamixel id information.
 
-`id` keeps Dynamixel id information.
-
-``` cpp
-  // Open port
-  if (openPort(port_num))
-  {
-      printf("Succeeded to open the port!\n");
-  }
-  else
-  {
-      printf("Failed to open the port!\n");
-      printf("Press any key to terminate...\n");
-      _getch();
-      return 0;
-  }
+```c
+// Open port
+if (openPort(port_num))
+{
+    printf("Succeeded to open the port!\n");
+}
+else
+{
+    printf("Failed to open the port!\n");
+    printf("Press any key to terminate...\n");
+    _getch();
+    return 0;
+}
 ```
 
-First, controller opens #`port_num` port to do serial communication with the Dynamixel. If it fails to open the port, the example will be terminated.
+> First, controller opens #`port_num` port to do serial communication with the Dynamixel. If it fails to open the port, the example will be terminated.
 
-``` cpp
-  // Set port baudrate
-  if (setBaudRate(port_num, BAUDRATE))
-  {
-      printf("Succeeded to change the baudrate!\n");
-  }
-  else
-  {
-      printf("Failed to change the baudrate!\n");
-      printf("Press any key to terminate...\n");
-      _getch();
-      return 0;
-  }
+```c
+// Set port baudrate
+if (setBaudRate(port_num, BAUDRATE))
+{
+    printf("Succeeded to change the baudrate!\n");
+}
+else
+{
+    printf("Failed to change the baudrate!\n");
+    printf("Press any key to terminate...\n");
+    _getch();
+    return 0;
+}
 ```
 
-Secondly, the controller sets the communication `BAUDRATE` at #`port_num` port opened previously.
+> Secondly, the controller sets the communication `BAUDRATE` at #`port_num` port opened previously.
 
 
-``` cpp
-  // Try to broadcast ping the Dynamixel
-  broadcastPing(port_num, PROTOCOL_VERSION);
-  if ((dxl_comm_result = getLastTxRxResult(port_num, PROTOCOL_VERSION)) != COMM_SUCCESS)
-    printTxRxResult(PROTOCOL_VERSION, dxl_comm_result);
+```c
+// Try to broadcast ping the Dynamixel
+broadcastPing(port_num, PROTOCOL_VERSION);
+if ((dxl_comm_result = getLastTxRxResult(port_num, PROTOCOL_VERSION)) != COMM_SUCCESS)
+  printTxRxResult(PROTOCOL_VERSION, dxl_comm_result);
 ```
 
-`broadcastPing()` function shows the connection between controller and each Dynamixels from ID 1 to ID 253 through #`port_num` port.
+> `broadcastPing()` function shows the connection between controller and each Dynamixels from ID 1 to ID 253 through #`port_num` port.
 
-``` cpp
-  // Close port
-  closePort(port_num);
+```c
+// Close port
+closePort(port_num);
 
-  return 0;
+return 0;
 ```
 
-Finally, port becomes disposed.
+> Finally, port becomes disposed.

@@ -30,8 +30,8 @@ sidebar:
 
 - Control Panel
 
-![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/labview/windows/sample_code/read_write2/read_write2.png)
+  ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/labview/windows/sample_code/read_write2/read_write2.png)
 
 - Block Diagram
 
-![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/labview/windows/sample_code/read_write2/block_diagram.png)
+  ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/labview/windows/sample_code/read_write2/block_diagram.png)

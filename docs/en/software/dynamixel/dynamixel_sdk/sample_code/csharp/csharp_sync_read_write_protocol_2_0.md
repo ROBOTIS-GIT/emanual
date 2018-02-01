@@ -29,7 +29,7 @@ sidebar:
 
   All series using protocol 2.0
 
-- Code
+#### Sample code
 
 
 ``` cs
@@ -289,9 +289,9 @@ namespace sync_write
 }
 ```
 
--------------------------------------------------------------------------------------
 
-- Details
+
+#### Details
 
 ``` cs
 using System;
@@ -564,7 +564,7 @@ static void Main(string[] args)
 
 In `Main()` function, the codes call actual functions for Dynamixel control.
 
---------------------------------------------------------------------------------
+
 
 ``` cs
 // Initialize PortHandler Structs

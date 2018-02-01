@@ -29,7 +29,7 @@ sidebar:
 
   All series using protocol 2.0
 
-- Code
+#### Sample code
 
 
 ``` java
@@ -295,9 +295,9 @@ public class BulkReadWrite
 }
 ```
 
--------------------------------------------------------------------------------------
 
-- Details
+
+#### Details
 
 ``` java
 import java.util.Scanner;

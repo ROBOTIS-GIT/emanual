@@ -47,6 +47,4 @@ During charging the charger’s red LED turns on. When complete the green LED tu
   {{ stem_charge_caution_01 | markdownify }}
 </div>
 
-### [Video](#video)
-
 <iframe width="560" height="315" src="https://www.youtube.com/embed/V1l9lB1ny_4" frameborder="0" allowfullscreen></iframe>
