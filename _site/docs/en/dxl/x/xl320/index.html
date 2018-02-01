@@ -224,6 +224,10 @@ $(function() {
               
             
           
+            
+              <a href="http://localhost:4000/docs/kr/dxl/x/xl320/" style="color: black;">Korean</a></button>
+            
+          
       </div>
       
       <input class="menu-btn" type="checkbox" id="menu-btn" />
@@ -4039,17 +4043,21 @@ If errors occur, in case of Alarm LED, the LED blinks; in case of Alarm Shutdown
 </table>
 
 <h3 id="pid-gains27-28-29"><a name="p-gain"></a><a name="i-gain"></a><a name="d-gain"></a><strong>PID Gains(27, 28, 29)</strong></h3>
-<p>MX series will use the PID controller as a main control method.
-P gain : value of proportional band.
-I gain : value of integral action.
-D Gain : value of derivative action.
-Gains values are in between 0~254.</p>
+<p>MX series will use the PID controller as a main control method.</p>
+<ul>
+  <li><code class="highlighter-rouge">P gain</code> : value of proportional band.</li>
+  <li><code class="highlighter-rouge">I gain</code> : value of integral action.</li>
+  <li><code class="highlighter-rouge">D Gain</code> : value of derivative action.
+Gains values are in between 0 ~ 254.</li>
+</ul>
 
 <p><img src="/assets/images/dxl/mx/mx-12_pid_control.png" alt="" /></p>
 
-<p>K<sub>p</sub> = P Gain / 8
-K<sub>i</sub> = I Gain * 1,000 / 2,048
-K<sub>d</sub> = D Gain * 4 / 1,000</p>
+<ul>
+  <li><code class="highlighter-rouge">K&lt;sub&gt;p&lt;/sub&gt;</code> = P Gain / 8</li>
+  <li><code class="highlighter-rouge">K&lt;sub&gt;i&lt;/sub&gt;</code> = I Gain * 1,000 / 2,048</li>
+  <li><code class="highlighter-rouge">K&lt;sub&gt;d&lt;/sub&gt;</code> = D Gain * 4 / 1,000</li>
+</ul>
 
 <p><strong>The relationship between Compliance Slop and PID</strong></p>
 
@@ -4084,12 +4092,12 @@ K<sub>d</sub> = D Gain * 4 / 1,000</p>
   </tbody>
 </table>
 
-<p>The less the P gain, The larger the back lash, and the weaker the amount of output near goal position.
-At some extent, it is like a combined concept of margine and slope.
-It does not exactly match the previous concept of compliance. So it is obvious if you see the difference in terms of motion.
-<strong>Explanation for PID required.</strong>
-For the brief explanation about general PID, please refer to the website(link) below.
-http://en.wikipedia.org/wiki/PID_controller
+<p>The less the P gain, The larger the back lash, and the weaker the amount of output near goal position.<br />
+At some extent, it is like a combined concept of margine and slope.<br />
+It does not exactly match the previous concept of compliance. So it is obvious if you see the difference in terms of motion.<br />
+<strong>Explanation for PID required.</strong><br />
+For the brief explanation about general PID, please refer to the website(link) below.<br />
+<a href="http://en.wikipedia.org/wiki/PID_controller">http://en.wikipedia.org/wiki/PID_controller</a><br />
 FYI, PID control theory is not only limited to the control of motor(actuator) but is a generic theory that can be applied to all kinds of control.</p>
 
 <h3 id="goal-position30"><a name="goal-position"></a><strong>Goal Position(30)</strong></h3>
@@ -4201,7 +4209,7 @@ This value is 10 times larger than the actual voltage. For example, when 10V is 
 If Present Voltage(45) value is out of range, Voltage Range Error Bit (Bit0) of Status Packet is returned as ‘1’ and Shutdown(18) is triggered by setting 1 to the Bit 0 of the address 18.</p>
 
 <h3 id="present-temperature46"><a name="present-temperature"></a><strong>Present Temperature(46)</strong></h3>
-<p>It is the internal temperature of Dynamixel in Celsius.
+<p>It is the internal temperature of Dynamixel in Celsius.<br />
 Data value is identical to the actual temperature in Celsius. For example, if the data value is 85 (0x55), the current internal temperature is 85°C.</p>
 
 <h3 id="registered-instruction47"><a name="registered-instruction"></a><strong>Registered Instruction(47)</strong></h3>

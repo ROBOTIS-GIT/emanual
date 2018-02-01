@@ -1,7 +1,9 @@
 
-|Unit|Value Range|
-| :---: | :---: | :---: |
-|About 1&deg;C|0 ~ 100|
+동작 온도의 상한 값입니다.
 
-`Caution` Do not set the temperature lower/higher than the default value. When the temperature alarm shutdown occurs, wait 20 minutes to cool the temperature before re-use. Keep using the product when the temperature is high can cause severe damage.
+|단위|범위|
+| :---: | :---: | :---: |
+|약 1&deg;C|0 ~ 100|
+
+`주의` 온도 상한선을 초기값보다 높게 설정하지 마십시오. 온도 알람셧다운 발생시 20분이상 휴식하여 다이나믹셀의 온도를 충분히 낮춘후 사용해 주세요. 온도가 높은상태에서 사용시 제품이 손상될 수 있습니다.
 {: .notice--warning}

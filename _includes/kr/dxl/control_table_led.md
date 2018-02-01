@@ -1,6 +1,6 @@
-Turn on or turn off the LED on Dynamixel.
+LED를 ON/OFF 합니다. 다이나믹셀의 LED는 LED(65)에 의해서만 제어 됩니다.
 
-| Bit | Description     |
+| 값 | 설명     |
 | :-------------: | :------------- |
-|0(Default)|Turn OFF the LED|
-|1|Turn ON the LED|
+|0(기본값)|LED를 Off 시킵니다.|
+|1|LED를 On 시킵니다.|

@@ -1,7 +1,8 @@
-It is the value of the maximum torque limit.
-0 ~ 1,023(0x3FF) is available, and the unit is about 0.1%.
-For example, if the value is 512, it is about 50%; that means only 50% of the maximum torque will be used.
-If the power is turned on, the value of Max Torque (Address 14, 15) is used as the initial value.
 
-`Note` If the function of Alarm Shutdown is triggered, the motor loses its torque because the value becomes 0. Once error conditions are resolved and this value is changed to the value other than 0, the motor can be operated again.
+모터의 최대 출력 제한 값입니다.  
+0 ~ 1,023 (0x3FF)까지 사용 가능하며, 단위는 약 0.1%입니다.  
+예를 들어, 값이 512이면 약 50%이고 최대 출력 대비 50%만 사용하겠다는 의미입니다.  
+전원이 켜지면 Max Torque(Address 14, 15)의 값을 초기 값으로 사용합니다.
+
+`Note` Alarm Shutdown의 기능이 발휘되면 이 값이 0이 되어 모터의 힘이 없어지게 됩니다. Alarm Shutdown조건이 해제되고 이 값을 0이 아닌 값으로 바꾸면 다시 모터의 출력이 발휘되어 사용할 수 있습니다.
 {: .notice}

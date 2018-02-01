@@ -5,7 +5,5 @@
 - Connection between PC and DYNAMIXEL (Micro USB cable)
 
 #### R+ Manager 2.0 Install
-In order to change settings of DYNAMIXEL, R+ Manager 2.0 must be installed on your system.
-
-#### Basic Settings
-DYNAMIXEL has a default setting when manufactured. If you wish to change basic settings, run R+ Manager 2.0.
+In order to change settings of DYNAMIXEL, R+ Manager 2.0 must be installed on your system.  
+You can also use Dynamixel SDK or Dynamixel Workbench.

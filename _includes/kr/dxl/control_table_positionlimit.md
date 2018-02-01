@@ -1,7 +1,10 @@
-These values limit maximum and minimum target positions for Position Control Mode(Joint Mode) within the range of 1 rotation(0 ~ 4,095). Therefore, Goal Position(116) should be configured within the position limit range. These values are not used in Extended Position Control Mode and Current-based Position Control Mode.
+위치 제어 모드(관절 모드)에서 목표 위치의 제한 값으로써, 1회전(0 ~ 4,095) 범위 내에서 목표 위치를 제한 합니다.  
+따라서 위치 제어 모드에서 Goal position(116)은 이 값보다 클 수 없습니다.  
+확장 위치 제어 모드와 전류기반 위치 제어 모드에서는 적용되지 않습니다.
 
-|Unit|Value Range|
+|단위|범위|
 | :---: | :---: |
-|0.088&deg;|0 ~ 4,095(1 rotation)|
+|0.088&deg;|0 ~ 4,095(1 회전)|
 
-`Note` Max Position Limit(48) and Min Position Limit(52) are only used in Position Control Mode with a single turn.
+`Note` Max Position Limit(48)와 Min Position Limit(52)는 1회전 내에서 제어하는 위치제어 모드(관절 모드)에서만 적용 됩니다.
+{: .notice}

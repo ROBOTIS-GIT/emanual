@@ -1,7 +1,5 @@
-This is Goal Acceleration value.
-It can be used from 0~254(0XFE) and the unit is approximately 8.583&deg; / sec<sup>2</sup>.
-When it is set to 0, there is no control over acceleration and moves with the maximum acceleration of the motor.
-When the goal speead is set to 0, there is no control over acceleration and moves with the maximum acceleration of the motor.
-When it is set to 254, it becomes 2,180&deg; / sec<sup>2</sup>.
-For example, the current speed of Dynamixel is 0, and Goal acceleration is 10.
-The speed of Dynamixel after 1 second will be 14.3 RPM.
+목표 가속도 값입니다. 0 ~ 254 (0xFE)까지 사용되며, 단위는 약, 8.583&deg; / sec<sup>2</sup> 입니다.  
+0으로 설정하면, 가속도 제어를 하지 않고 모터의 최대 가속도로 움직인다는 의미입니다.  
+목표속도가 0일 경우에도, 가속도 제어를 하지 않고, 모터의 최대 가속도로 움직입니다.  
+254를 설정할 경우 2,180&deg; / sec<sup>2</sup>이 됩니다.  
+예를 들어, 다이나믹셀의 속도가 현재 0이고, Goal Acceleration이 10인 경우, 1초 뒤의 다이나믹셀의 속도는, 14.3 RPM이 됩니다.

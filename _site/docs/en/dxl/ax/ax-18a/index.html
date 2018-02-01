@@ -4005,7 +4005,7 @@ $(function() {
 
 <h3 id="id-3"><a name="id"></a><strong><a href="#id-3">ID (3)</a></strong></h3>
 <p>The ID is a unique value in the network to identify each DYNAMIXEL with an Instruction Packet.
- 0~252 (0xFC) values can be used as an ID, and 254(0xFE) is occupied as a broadcast ID. The Broadcast ID(254, 0xFE) can send an Instruction Packet to all connected DYNAMIXELs simultaneously.</p>
+0~252 (0xFC) values can be used as an ID, and 254(0xFE) is occupied as a broadcast ID. The Broadcast ID(254, 0xFE) can send an Instruction Packet to all connected DYNAMIXELs simultaneously.</p>
 
 <p class="notice"><code class="highlighter-rouge">Note</code> Please avoid using an identical ID for multiple DYNAMIXELs. You may face communication failure or may not be able to detect Dynamixels with an identical ID.</p>
 
@@ -4077,31 +4077,28 @@ $(function() {
 <table>
   <thead>
     <tr>
-      <th style="text-align: left"> </th>
-      <th style="text-align: left">Value</th>
-      <th style="text-align: left">Description</th>
+      <th style="text-align: center">Unit</th>
+      <th style="text-align: center">Value Range</th>
+      <th style="text-align: center">Description</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align: left">Unit</td>
-      <td style="text-align: left">2[μsec]</td>
-      <td style="text-align: left">-</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">Range</td>
-      <td style="text-align: left">0 ~ 254</td>
-      <td style="text-align: left">Default value ‘250’(500[μsec]), Maximum 508[μsec]</td>
+      <td style="text-align: center">2[μsec]</td>
+      <td style="text-align: center">0 ~ 254</td>
+      <td style="text-align: center">Default value ‘250’(500[μsec]), Maximum 508[μsec]</td>
     </tr>
   </tbody>
 </table>
 
 <h3 id="cwccw-angle-limit6-8"><a name="cw-angle-limit"></a><a name="ccw-angle-limit"></a><strong><a href="#cwccw-angle-limit6-8">CW/CCW Angle Limit(6, 8)</a></strong></h3>
 <p>The angle limit allows the motion to be restrained.
-The range and the unit of the value is the same as Goal Position(Address 30, 31).
-CW Angle Limit: the minimum value of Goal Position(Address 30, 31)
-CCW Angle Limit: the maximum value of Goal Position(Address 30, 31)
-The following two modes can be set pursuant to the value of CW and CCW.</p>
+The range and the unit of the value is the same as Goal Position(Address 30, 31).</p>
+<ul>
+  <li>CW Angle Limit: the minimum value of Goal Position(Address 30, 31)</li>
+  <li>CCW Angle Limit: the maximum value of Goal Position(Address 30, 31)
+The following two modes can be set pursuant to the value of CW and CCW.</li>
+</ul>
 
 <table>
   <thead>
@@ -4125,45 +4122,82 @@ The following two modes can be set pursuant to the value of CW and CCW.</p>
 <p>The wheel mode can be used to wheel-type operation robots since motors of the robots spin infinitely. The joint mode can be used to multi-joints robot since the robots can be controlled with specific angles.</p>
 
 <h3 id="temperature-limit-11"><a name="temperature-limit"></a><strong><a href="#temperature-limit-11">Temperature Limit (11)</a></strong></h3>
-<p class="notice--warning"><code class="highlighter-rouge">Caution</code> Do not set the temperature lower/higher than the default value. When the temperature alarm shutdown occurs, wait 20 minutes to cool the temperature before re-use. Using the product when the temperature is high may and can cause damage.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Unit</th>
+      <th style="text-align: center">Value Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">About 1°C</td>
+      <td style="text-align: center">0 ~ 99</td>
+    </tr>
+  </tbody>
+</table>
+
+<p class="notice--warning"><code class="highlighter-rouge">Caution</code> Do not set the temperature lower/higher than the default value. When the temperature alarm shutdown occurs, wait 20 minutes to cool the temperature before re-use. Keep using the product when the temperature is high can cause severe damage.</p>
 
 <h3 id="minmax-voltage-limit-12-13"><a name="min-voltage-limit"></a><a name="max-voltage-limit"></a><strong><a href="#minmax-voltage-limit-12-13">Min/Max Voltage Limit (12, 13)</a></strong></h3>
-<p>It is the operation range of voltage.
-50 to 250 (0x32 ~ 0x96) can be used.  The unit is 0.1V.
-For example, if the value is 80, it is 8V.
-If Present Voltage (Address42) is out of the range, Voltage Range Error Bit (Bit0) of Status Packet is returned as ‘1’ and Alarm is triggered as set in the addresses 17 and 18.</p>
+<p>It is the operation range of voltage.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Unit</th>
+      <th style="text-align: center">Value Range</th>
+      <th style="text-align: center">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">About 0.1V</td>
+      <td style="text-align: center">50 ~ 160</td>
+      <td style="text-align: center">5.0 ~ 16.0V</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>For example, if the value is 80, the voltage is 8V.
+If <a href="#present-voltage">Present Voltage(42)</a> is out of the range, Voltage Range Error Bit (Bit0) of Status Packet is returned as ‘1’ and Alarm is triggered as set in the addresses 17 and 18.</p>
 
 <h3 id="max-torque-14"><a name="max-torque"></a><strong><a href="#max-torque-14">Max Torque (14)</a></strong></h3>
-<p>It is the torque value of maximum output. 0 to 1023 (0x3FF) can be used, and the unit is about 0.1%.
-For example, Data 1023 (0x3FF) means that Dynamixel will use 100% of the maximum torque it can produce while Data 512 (0x200) means that Dynamixel will use 50% of the maximum torque. When the power is turned on, Torque Limit (Addresses 34 and 35) uses the value as the initial value.</p>
+<p>It is the torque value of maximum output. 0 to 1,023 (0x3FF) can be used, and the unit is about 0.1%.
+For example, Data 1,023 (0x3FF) means that Dynamixel will use 100% of the maximum torque it can produce while Data 512 (0x200) means that Dynamixel will use 50% of the maximum torque. When the power is turned on, Torque Limit (Address 34 and 35) uses the value as the initial value.</p>
 
 <h3 id="status-return-level-16"><a name="status-return-level"></a><strong><a href="#status-return-level-16">Status Return Level (16)</a></strong></h3>
-<p>It decides how to return Status Packet. There are three ways like the below table.</p>
+<p>This value decides how to return Status Packet when Dynamixel receives an Instruction Packet.</p>
 
 <table>
   <thead>
     <tr>
       <th style="text-align: center">Value</th>
-      <th style="text-align: left">Return of Status Packet</th>
+      <th style="text-align: center">Responding Instructions</th>
+      <th style="text-align: center">Description</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td style="text-align: center">0</td>
-      <td style="text-align: left">No return against all commands (Except PING Command)</td>
+      <td style="text-align: center">PING Instruction</td>
+      <td style="text-align: center">Status Packet will not be returned for all Instructions</td>
     </tr>
     <tr>
       <td style="text-align: center">1</td>
-      <td style="text-align: left">Return only for the READ command</td>
+      <td style="text-align: center">PING Instruction<br />READ Instruction</td>
+      <td style="text-align: center">Status Packet will be returned only for READ Instruction</td>
     </tr>
     <tr>
       <td style="text-align: center">2</td>
-      <td style="text-align: left">Return for all commands</td>
+      <td style="text-align: center">All Instructions</td>
+      <td style="text-align: center">Status Packet will be returned for all Instructions</td>
     </tr>
   </tbody>
 </table>
 
-<p>When Instruction Packet is Broadcast ID, Status Packet is not returned regardless of Status Return Level.</p>
+<p class="notice"><code class="highlighter-rouge">Note</code> If the ID of Instruction Packet is set to Broad Cast ID(0xFE), Status Packet will not be returned for READ and WRITE Instructions regardless of Status Return Level. For more details, please refer to the <code class="highlighter-rouge">Status Packet</code> section for <a href="/docs/en/dxl/protocol1/#status-packet">Protocol 1.0</a> or <a href="/docs/en/dxl/protocol2/#status-packet">Protocol 2.0</a>.</p>
 
 <h3 id="alarm-led17-shutdown18"><a name="alarm-led"></a><a name="shutdown"></a><strong><a href="#alarm-led17-shutdown18">Alarm LED(17), Shutdown(18)</a></strong></h3>
 <p>Dynamixel can protect itself by detecting errors occur during the operation.
@@ -4173,7 +4207,7 @@ The errors can be set are as the table below.</p>
   <thead>
     <tr>
       <th style="text-align: center">Bit</th>
-      <th style="text-align: center">Name</th>
+      <th style="text-align: center">Item</th>
       <th style="text-align: left">Description</th>
     </tr>
   </thead>
@@ -4221,8 +4255,8 @@ The errors can be set are as the table below.</p>
   </tbody>
 </table>
 
-<p>It is possible to make duplicate set since the function of each bit is run by  the logic of ‘OR’. That is, if 0X05 (binary 00000101) is set, both Input Voltage Error and Overheating Error can be detected.
-If errors occur, in case of Alarm LED, the LED blinks; in case of Alarm Shutdown, the motor output becomes 0 % by making the value of Torque Limit(Address 34, 35) as 0.</p>
+<p>It is possible to make duplicate set since the function of each bit is run by  the logic of ‘OR’. That is, if 0x05 (binary 00000101) is set, both Input Voltage Error and Overheating Error can be detected.
+If errors occur, in case of Alarm LED, the LED blinks; in case of Alarm Shutdown, the motor output becomes 0 % by resetting the value of Torque Limit(34) to 0.</p>
 
 <h3 id="torque-enable-24"><a name="torque-enable"></a><strong><a href="#torque-enable-24">Torque Enable (24)</a></strong></h3>
 
@@ -4236,16 +4270,17 @@ If errors occur, in case of Alarm LED, the LED blinks; in case of Alarm Shutdown
   <tbody>
     <tr>
       <td style="text-align: center">0</td>
-      <td style="text-align: left">Keeps Torque from generating by interrupting the power of motor</td>
+      <td style="text-align: left">Turn off the torque(Free run state)</td>
     </tr>
     <tr>
       <td style="text-align: center">1</td>
-      <td style="text-align: left">Generates Torque by impressing the power to the motor.</td>
+      <td style="text-align: left">Turn on the torque and lock EEPROM area</td>
     </tr>
   </tbody>
 </table>
 
 <h3 id="led-25"><a name="led"></a><strong><a href="#led-25">LED (25)</a></strong></h3>
+<p>Turn on or turn off the LED on Dynamixel.</p>
 
 <table>
   <thead>
@@ -4256,7 +4291,7 @@ If errors occur, in case of Alarm LED, the LED blinks; in case of Alarm Shutdown
   </thead>
   <tbody>
     <tr>
-      <td style="text-align: center">0</td>
+      <td style="text-align: center">0(Default)</td>
       <td style="text-align: left">Turn OFF the LED</td>
     </tr>
     <tr>
@@ -4330,13 +4365,13 @@ The following diagram shows the relationship between output torque and position 
 
 <h3 id="goal-position-30"><a name="goal-position"></a><strong><a href="#goal-position-30">Goal Position (30)</a></strong></h3>
 <p>It is a position value of destination.
-0 to 1023 (0x3FF) is available.  The unit is 0.29 degree.
-If Goal Position is out of the range, Angle Limit Error Bit (Bit1) of Status Packet is returned as ‘1’ and Alarm is triggered as set in Alarm LED/Shutdown.</p>
+0 ~ 1,023 (0x3FF) is available.  The unit is 0.29°.
+If Goal Position is out of the range, Angle Limit Error Bit (Bit 1) of Status Packet is returned as ‘1’ and Alarm is triggered as set in Alarm LED/Shutdown.</p>
 
 <p><img src="/assets/images/dxl/dx/dx_series_goal_position.png" alt="" />
 The picture above is the front view of Dynamixel</p>
 
-<p class="notice"><code class="highlighter-rouge">Note</code> If it is set to Wheel Mode, this value is not used.</p>
+<p class="notice"><code class="highlighter-rouge">Note</code> If it is set to Wheel Mode, Goal Position value is not used.</p>
 
 <h3 id="moving-speed-32"><a name="moving-speed"></a><strong><a href="#moving-speed-32">Moving Speed (32)</a></strong></h3>
 <p>It is a moving speed to Goal Position.
@@ -4344,32 +4379,32 @@ The range and the unit of the value may vary depending on the operation mode.</p
 
 <ul>
   <li>
-    <p>Join Mode
-0~1023 (0X3FF) can be used, and the unit is about 0.111rpm.
-If it is set to 0, it means the maximum rpm of the motor is used without controlling the speed.
-If it is 1023, it is about 114rpm.
+    <p><strong>Join Mode</strong><br />
+0 ~ 1,023(0x3FF) can be used, and the unit is about 0.111rpm.<br />
+If it is set to 0, it means the maximum rpm of the motor is used without controlling the speed.<br />
+If it is 1023, it is about 114rpm.<br />
 For example, if it is set to 300, it is about 33.3 rpm.</p>
 
-    <p class="notice"><code class="highlighter-rouge">Note</code> Please check the maximum rpm of relevant model in Joint Mode.  Even if the motor is set to more than maximum rpm, it cannot generate the torque more than the maximum rpm.</p>
+    <p class="notice"><code class="highlighter-rouge">Note</code> Please check the maximum rpm of the Dynamixel. The motor cannot exceed the maximum rpm with the higher Moving Speed value.</p>
   </li>
   <li>
-    <p>Wheel Mode
-0~2047( 0X7FF) can be used, the unit is about 0.1%.
-If a value in the range of 0~1023 is used, it is stopped by setting to 0 while rotating to CCW direction.
-If a value in the range of 1024~2047 is used, it is stopped by setting to 1024 while rotating to CW direction.
-That is, the 10th bit becomes the direction bit to control the direction.
-In Wheel Mode, only the output control is possible, not speed.
+    <p><strong>Wheel Mode</strong><br />
+0 ~ 2,047(0x7FF) can be used, the unit is about 0.1%.<br />
+If a value in the range of 0 ~ 1,023 is used, it is stopped by setting to 0 while rotating to CCW direction.<br />
+If a value in the range of 1,024 ~ 2,047 is used, it is stopped by setting to 1,024 while rotating to CW direction.<br />
+That is, the 10th bit becomes the direction bit to control the direction.<br />
+In Wheel Mode, only the output control is possible, not speed.<br />
 For example, if it is set to 512, it means the output is controlled by 50% of the maximum output.</p>
   </li>
 </ul>
 
 <h3 id="torque-limit-34"><a name="torque-limit"></a><strong><a href="#torque-limit-34">Torque Limit (34)</a></strong></h3>
 <p>It is the value of the maximum torque limit.
-0 to 1023 (0x3FF) is available, and the unit is about 0.1%.
+0 ~ 1,023(0x3FF) is available, and the unit is about 0.1%.
 For example, if the value is 512, it is about 50%; that means only 50% of the maximum torque will be used.
 If the power is turned on, the value of Max Torque (Address 14, 15) is used as the initial value.</p>
 
-<p class="notice"><code class="highlighter-rouge">Note</code> If the function of Alarm Shutdown is triggered, the motor loses its torque because the value becomes 0. At this moment, if the value is changed to the value other than 0, the motor can be used again.</p>
+<p class="notice"><code class="highlighter-rouge">Note</code> If the function of Alarm Shutdown is triggered, the motor loses its torque because the value becomes 0. Once error conditions are resolved and this value is changed to the value other than 0, the motor can be operated again.</p>
 
 <h3 id="present-position-36"><a name="present-position"></a><strong><a href="#present-position-36">Present Position (36)</a></strong></h3>
 <p>It is the current position value of Dynamixel.
@@ -4381,22 +4416,24 @@ The picture above is the front view of Dynamixel.</p>
 <p class="notice--warning"><code class="highlighter-rouge">Caution</code> If it is set to Wheel Mode, the value cannot be used to measure the moving distance and the rotation frequency.</p>
 
 <h3 id="present-speed-38"><a name="present-speed"></a><strong><a href="#present-speed-38">Present Speed (38)</a></strong></h3>
-<p>It is the current moving speed.
-0~2047 (0X7FF) can be used.
-If a value is in the rage of 0~1023, it means that the motor rotates to the CCW direction.
-If a value is in the rage of 1024~2047, it means that the motor rotates to the CW direction.
-That is, the 10th bit becomes the direction bit to control the direction, and 0 and 1024 are equal.
+<p>It is the present moving speed.
+0~2,047 (0x7FF) can be used.
+If a value is in the rage of 0~1,023, it means that the motor rotates to the CCW direction.
+If a value is in the rage of 1,024~2,047, it means that the motor rotates to the CW direction.
+That is, the 10th bit becomes the direction bit to control the direction, and 0 and 1,024 are equal.
 The unit of this value varies depending on operation mode.</p>
 
 <ul>
   <li>
-    <p>Joint Mode
-The unit is about 0.111rpm.
+    <p>Joint Mode</p>
+
+    <p>The unit is about 0.111rpm.
 For example, if it is set to 300, it means that the motor is moving to the CCW direction at a rate of about 33.3rpm.</p>
   </li>
   <li>
-    <p>Wheel Mode
-The unit is about 0.1%.
+    <p>Wheel Mode</p>
+
+    <p>The unit is about 0.1%.
 For example, if it is set to 512, it means that the torque is controlled by 50% of the maximum torque to the CCW direction.</p>
   </li>
 </ul>
@@ -4404,9 +4441,9 @@ For example, if it is set to 512, it means that the torque is controlled by 50% 
 <h3 id="present-load-40"><a name="present-load"></a><strong><a href="#present-load-40">Present Load (40)</a></strong></h3>
 <p>It means currently applied load.
 The range of the value is 0~2047, and the unit is about 0.1%.
-If the value is 0~1023, it means the load works to the CCW direction.
-If the value is 1024~2047, it means the load works to the CW direction.
-That is, the 10th bit becomes the direction bit to control the direction, and 1024 is equal to 0.
+If the value is 0~1,023, it means the load works to the CCW direction.
+If the value is 1,024~2,047, it means the load works to the CW direction.
+That is, the 10th bit becomes the direction bit to control the direction, and 1,024 is equal to 0.
 For example, the value is 512, it means the load is detected in the direction of CCW about 50% of the maximum torque.</p>
 
 <table>
@@ -4433,11 +4470,12 @@ For example, the value is 512, it means the load is detected in the direction of
 <p class="notice"><code class="highlighter-rouge">Note</code> Present load is an inferred value based on the internal output value; not a measured value using torque sensor, etc. Therefore, it may be inaccurate for measuring weight or torque. It is recommended to use it for predicting the direction and size of the force being applied to the joint.</p>
 
 <h3 id="present-voltage-42"><a name="present-voltage"></a><strong><a href="#present-voltage-42">Present Voltage (42)</a></strong></h3>
-<p>It is the size of the current voltage supplied.
-This value is 10 times larger than the actual voltage. For example, when 10V is supplied, the data value is 100 (0x64)</p>
+<p>It is the size of the present voltage supplied.
+This value is 10 times larger than the actual voltage. For example, when 10V is supplied, the data value is 100 (0x64)
+If Present Voltage(42) value is out of range, Voltage Range Error Bit (Bit0) of Status Packet is returned as ‘1’ and Alarm is triggered and set the address 17 and set 1 to the Bit 0 of the address 18.</p>
 
 <h3 id="present-temperature-43"><a name="present-temperature"></a><strong><a href="#present-temperature-43">Present Temperature (43)</a></strong></h3>
-<p>It is the internal temperature of Dynamixel in Celsius.
+<p>It is the internal temperature of Dynamixel in Celsius.<br />
 Data value is identical to the actual temperature in Celsius. For example, if the data value is 85 (0x55), the current internal temperature is 85°C.</p>
 
 <h3 id="registered-instruction-44"><a name="registered-instruction"></a><strong><a href="#registered-instruction-44">Registered Instruction (44)</a></strong></h3>
@@ -4452,16 +4490,16 @@ Data value is identical to the actual temperature in Celsius. For example, if th
   <tbody>
     <tr>
       <td style="text-align: center">0</td>
-      <td style="text-align: left">There are no commands transmitted by REG_WRITE</td>
+      <td style="text-align: left">REG_WRITE instruction is not received</td>
     </tr>
     <tr>
       <td style="text-align: center">1</td>
-      <td style="text-align: left">There are commands transmitted by REG_WRITE</td>
+      <td style="text-align: left">REG_WRITE instruction is received</td>
     </tr>
   </tbody>
 </table>
 
-<p class="notice"><code class="highlighter-rouge">Note</code> If ACTION command is executed, the value is changed into 0.</p>
+<p class="notice"><code class="highlighter-rouge">Note</code> If ACTION instruction is executed, the value will be changed to 0.</p>
 
 <h3 id="moving-46"><a name="moving"></a><strong><a href="#moving-46">Moving (46)</a></strong></h3>
 
@@ -4508,8 +4546,7 @@ Data value is identical to the actual temperature in Celsius. For example, if th
 <p class="notice--warning"><code class="highlighter-rouge">Caution</code> If Lock is set to 1, the power must be turned off and then turned on again to change into 0.</p>
 
 <h3 id="punch-48"><a name="punch"></a><strong><a href="#punch-48">Punch (48)</a></strong></h3>
-<p>Current to drive motor is at minimum.
-Can choose vales from 0x20 to 0x3FF.</p>
+<p>Minimum current to drive motor. This value ranges from 0x20 to 0x3FF.</p>
 
 <h1 id="how-to-assemble"><a href="#how-to-assemble">How to Assemble</a></h1>
 

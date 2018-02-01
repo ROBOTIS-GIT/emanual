@@ -1,6 +1,7 @@
-Goal Acceleration(606) can be used to set a target acceleration. This value is used in Velocity Control Mode, Position Control Mode and Extended Position Control Mode. The profile control will be enabled when both Goal Acceleration(606) and Goal Velocity(600) are not '0'.
-Please refer to the [Goal Velocity(600)](#goal-velocity) for RPM conversion constant.
+목표 가속도 값을 설정할 수 있습니다.  
+`동작모드`가 속도 제어모드, 위치제어모드, 확장 위치제어모드 일 때 사용할 수 있습니다. Goal Acceleration 과 Goal Velocity의 값이 0이 아니어야, 프로파일 컨트롤을 합니다.  
+값의 범위는 -2,147,483,648 ~ 2,147,483,647 이며, 단위는 기어 전 단에 있는 모터를 기준으로 58,000 RPM<sup>2</sup>입니다. 변환계수는 Goal Velocity(600)를 참고하시기 바랍니다.
 
-|Value Range | Unit |
+|값의 범위 | 단위 |
 | :---: | :---: |
 |-2,147,483,647 ~ 2,147,483,647|58,000 RPM<sup>2</sup> @ Core Motor|

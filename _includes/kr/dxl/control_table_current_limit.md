@@ -1,1 +1,3 @@
-This value indicates maximum current(torque) output limit. Goal Current(102) can’t be configured with any values exceeding Current Limit(38). The Current Limit(38) is used in Torque Control Mode and Current-based Position Control Mode, therefore decreasing Current Limit(38) will result in decreasing torque of DYNAMIXEL. For more details, please refer to the Position PID Gain(80 ~ 84).
+전류(토크) 출력의 한계 값입니다.  
+Goal Current(102)에는 Current Limit(38)보다 큰 값을 쓸 수 없습니다. Current Limit(38)은 전류 제어 모드와 전류기반 위치 제어 모드에서 적용되는 제한 값으로써, 전류 출력을 낮추면 다이나믹셀의 토크가 감소합니다.  
+자세한 사항은 Position PID Gain(80 ~ 84)을 참고하세요.

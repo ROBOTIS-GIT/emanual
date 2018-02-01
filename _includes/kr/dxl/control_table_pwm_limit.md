@@ -1,5 +1,9 @@
-This value indicates maximum PWM output. Goal PWM(100) can’t be configured with any values exceeding PWM Limit(36). PWM Limit(36) is commonly used in all operating mode as an output limit, therefore decreasing PWM output will result in decreasing torque and velocity. For more details, please refer to the Gain section of each operating modes.
 
-|Values|Description|
+PWM 출력의 한계 값입니다.  
+Goal PWM(100)에는 PWM Limit(36)보다 큰 값을 쓸 수 없습니다.  
+PWM Limit(36)은 모든 제어모드에 공통으로 적용되는 출력 제한 값으로써, PWM 출력을 낮추면 다이나믹셀의 토크와 속도 모두 감소합니다.  
+자세한 사항은 해당 제어 모드의 Gain 부분을 참고하세요.
+
+|값|설명|
 |:---:|:---:|
-|0(0%) ~ 885(100%)|885 = 100[%] output|
+|0(0%) ~ 885(100%)|885 = 100[%] 출력|

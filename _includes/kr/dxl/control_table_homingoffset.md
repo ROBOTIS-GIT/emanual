@@ -1,9 +1,9 @@
-Users can adjust the Home position by setting Home Offset(20). The Homing Offset value is added to the Present Position(132).
-Present Position(132) = Actual Position + Homing Offset(20).
+‘0’ 점의 위치를 조절 할 수 있습니다. 이 값은 Present Position(132)에 더해지게 됩니다.  
+Present Position(132) = 실제 위치 + Homing Offset(20) 이 됩니다.
 
-|Unit|Value Range|Description|
+|단위|범위|설명|
 | :---: | :---: | :---: |
-|about 0.088&deg;|-1,044,479 ~ 1,044,479<br />(-255 ~ 255[rev])|4,096 resolution|
+|약 0.088&deg;|-1,044,479 ~ 1,044,479<br />(-255 ~ 255[rev])|4,096 분해능|
 
-`Note` In case of the Position Control Mode(Joint Mode) that rotates less than 360 degrees, any invalid Homing Offset(20) values will be ignored(valid range : -1,024 ~ 1,024).
+`Note` 1회전 내에서 제어하는 위치제어 모드(관절 모드)의 경우, Homing Offset(20)은 (-1024 ~ 1024) 범위보다 클 경우 무시됩니다.
 {: .notice}
