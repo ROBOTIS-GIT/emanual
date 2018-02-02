@@ -1,11 +1,11 @@
 
-|Item|TTL|RS-485|External Port|
+|항목|TTL|RS-485|외부포트|
 |:---:|:---:|:---:|:---:|
-|Pinout|`1` GND<br>`2` VDD<br>`3` DATA|`1` GND<br>`2` VDD<br>`3` DATA+<br>`4` DATA-|`1` GND<br>`2` VDD<br>`3` PORT 1<br>`4` PORT 2<br>`5` PORT 3|
-|Diagram|![](/assets/images/dxl/jst_b3beha_diagram.png)|![](/assets/images/dxl/jst_b4beha_diagram.png)|![](/assets/images/dxl/molex_5304705_diagram.png)|
-|Housing|[JST EHR-03]|[JST EHR-04]|![](/assets/images/dxl/molex_510210500.png)<br />[MOLEX 51021-0500]|
-|PCB Header|![](/assets/images/dxl/jst_b3beha.png)<br />[JST B3B-EH-A]|![](/assets/images/dxl/jst_b4beha.png)<br />[JST B4B-EH-A]|![](/assets/images/dxl/molex_530470510.png)<br />[MOLEX 53047-0510]|
-|Crimp Terminal|[JST SHE-001T-P0.6]|[JST SHE-001T-P0.6]|[MOLEX 50079-8100]|
+|핀 번호|`1` GND<br>`2` VDD<br>`3` DATA|`1` GND<br>`2` VDD<br>`3` DATA+<br>`4` DATA-|`1` GND<br>`2` VDD<br>`3` PORT 1<br>`4` PORT 2<br>`5` PORT 3|
+|다이어그램|![](/assets/images/dxl/jst_b3beha_diagram.png)|![](/assets/images/dxl/jst_b4beha_diagram.png)|![](/assets/images/dxl/molex_5304705_diagram.png)|
+|하우징|[JST EHR-03]|[JST EHR-04]|![](/assets/images/dxl/molex_510210500.png)<br />[MOLEX 51021-0500]|
+|PCB 헤더|![](/assets/images/dxl/jst_b3beha.png)<br />[JST B3B-EH-A]|![](/assets/images/dxl/jst_b4beha.png)<br />[JST B4B-EH-A]|![](/assets/images/dxl/molex_530470510.png)<br />[MOLEX 53047-0510]|
+|Crimp 터미널|[JST SHE-001T-P0.6]|[JST SHE-001T-P0.6]|[MOLEX 50079-8100]|
 |Wire Gauge|21 AWG|21 AWG|21 AWG|
 
 [JST EHR-03]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf

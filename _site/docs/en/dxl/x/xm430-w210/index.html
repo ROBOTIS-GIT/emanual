@@ -224,6 +224,10 @@ $(function() {
               
             
           
+            
+              <a href="http://localhost:4000/docs/kr/dxl/x/xm430-w210/" style="color: black;">Korean</a></button>
+            
+          
       </div>
       
       <input class="menu-btn" type="checkbox" id="menu-btn" />
@@ -4476,7 +4480,7 @@ Present Position(132) = Actual Position + Homing Offset(20).</p>
 <p class="notice"><code class="highlighter-rouge">Note</code> In case of the Position Control Mode(Joint Mode) that rotates less than 360 degrees, any invalid Homing Offset(20) values will be ignored(valid range : -1,024 ~ 1,024).</p>
 
 <h3 id="moving-threshold24"><a name="moving-threshold"></a><strong><a href="#moving-threshold24">Moving Threshold(24)</a></strong></h3>
-<p>This value helps to determine whether the Dynamixel is in motion or not.
+<p>This value helps to determine whether the Dynamixel is in motion or not.<br />
 When the absolute value of Present Velocity(128) is greater than the Moving Threshold(24), Moving(122) is set to ‘1’, otherwise it is cleared to ‘0’.</p>
 
 <table>
@@ -4502,7 +4506,10 @@ When the absolute value of Present Velocity(128) is greater than the Moving Thre
 </table>
 
 <h3 id="temperature-limit31"><a name="temperature-limit"></a><strong><a href="#temperature-limit31">Temperature Limit(31)</a></strong></h3>
-<p>This value limits operating temperature. When the Present Temperature(146) that indicates internal temperature of Dynamixel is greater than the Temperature Limit(31), the Over Heating Error Bit(0x04) and Hardware Error Bit(0x80) in the Hardware Error Status(70) will be set. If Overheating Error Bit(0x04) is configured in the Shutdown(63), Torque Enable(64) is cleared to ‘0’ and Torque will be disabled. For more details, please refer to the <a href="#shutdown">Shutdown(63)</a> section.</p>
+<p>This value limits operating temperature.<br />
+When the Present Temperature(146) that indicates internal temperature of Dynamixel is greater than the Temperature Limit(31), the Over Heating Error Bit(0x04) and Hardware Error Bit(0x80) in the Hardware Error Status(70) will be set.<br />
+If Overheating Error Bit(0x04) is configured in the Shutdown(63), Torque Enable(64) is cleared to ‘0’ and Torque will be disabled.<br />
+For more details, please refer to the <a href="#shutdown63">Shutdown(63)</a> section.</p>
 
 <table>
   <thead>
@@ -4638,7 +4645,7 @@ When current input voltage acquired from Present Input Voltage(144) exceeds the 
   </tbody>
 </table>
 
-<p><code class="highlighter-rouge">Note</code> Max Position Limit(48) and Min Position Limit(52) are only used in Position Control Mode with a single turn.</p>
+<p class="notice"><code class="highlighter-rouge">Note</code> Max Position Limit(48) and Min Position Limit(52) are only used in Position Control Mode with a single turn.</p>
 
 <h3 id="shutdown63"><a name="shutdown"></a><strong><a href="#shutdown63">Shutdown(63)</a></strong></h3>
 <p>The Dynamixel can protect itself by detecting dangerous situations that could occur during the operation.<br />
@@ -5148,7 +5155,10 @@ If the value of Bus Watchdog (98) is changed to ‘0’, Bus Watchdog Error will
 </table>
 
 <h3 id="profile-velocity112"><a name="profile-velocity"></a><strong><a href="#profile-velocity112">Profile Velocity(112)</a></strong></h3>
-<p>The Maximum velocity of Profile can be set with this value. Profile Velocity(112) can be used in all control modes except Torque Control Mode and Velocity Control Mode. Profile Velocity(112) cannot exceed Velocity Limit(44). Velocity Control Mode only uses Profile Acceleration(108) instead of Profile Velocity(112).</p>
+<p>The Maximum velocity of Profile can be set with this value.<br />
+Profile Velocity(112) can be used in all control modes except Torque Control Mode and Velocity Control Mode.<br />
+Profile Velocity(112) cannot exceed Velocity Limit(44).<br />
+Velocity Control Mode only uses Profile Acceleration(108) instead of Profile Velocity(112).</p>
 
 <table>
   <thead>
@@ -5167,11 +5177,22 @@ If the value of Bus Watchdog (98) is changed to ‘0’, Bus Watchdog Error will
   </tbody>
 </table>
 
-<p>The Profile is an acceleration/deceleration control method to reduce vibration, noise and load of the motor by controlling dramatically changing velocity and acceleration. It is also called Velocity Profile as it controls acceleration and deceleration based on velocity. DYNAMIXEL provides 4 different types of Profile. The following explains 4 Profiles and how to select them. Profiles are usually selected by a combination of Profile Velocity(112) and Profile Acceleration(108). Triangular and Trapezoidal Profiles exceptionally consider total travel distance(ΔPos, the distance difference between target position and current position) as an additional factor. For convenience, Profile Velocity(112) is abbreviated to V<sub>PRFL</sub> and Profile Acceleration(108) is abbreviated to V<sub>PRFL</sub>. ‘X’ stands for “Don’t Care” case.</p>
+<p>The Profile is an acceleration/deceleration control method to reduce vibration, noise and load of the motor by controlling dramatically changing velocity and acceleration.<br />
+It is also called Velocity Profile as it controls acceleration and deceleration based on velocity.<br />
+DYNAMIXEL provides 4 different types of Profile.<br />
+The following explains 4 Profiles and how to select them.<br />
+Profiles are usually selected by a combination of Profile Velocity(112) and Profile Acceleration(108).<br />
+Triangular and Trapezoidal Profiles exceptionally consider total travel distance(ΔPos, the distance difference between target position and current position) as an additional factor.<br />
+For convenience, Profile Velocity(112) is abbreviated to V<sub>PRFL</sub> and Profile Acceleration(108) is abbreviated to A<sub>PRFL</sub>.<br />
+‘X’ stands for “Don’t Care” case.</p>
 
 <p><img src="/assets/images/dxl/dxl_profiles.jpg" alt="" /></p>
 
-<p>When given Goal Position(116), Dynamixel’s profile creates target velocity trajectory based on current velocity(initial velocity of the Profile). When Dynamixel receives updated target position from a new Goal Position(116) while it is moving toward the previous Goal Position(116), velocity smoothly varies for the new target velocity trajectory. Maintaining velocity continuity while updating target velocity trajectory is called Velocity Override. For a simple calculation, let’s assume that the initial velocity of the Profile is ‘0’. The following explains how Profile processes Goal Position(116) instruction in Position Control mode, Extended Position Control Mode, Current-based Position Control Mode.</p>
+<p>When given Goal Position(116), Dynamixel’s profile creates target velocity trajectory based on current velocity(initial velocity of the Profile).<br />
+When Dynamixel receives updated target position from a new Goal Position(116) while it is moving toward the previous Goal Position(116), velocity smoothly varies for the new target velocity trajectory.<br />
+Maintaining velocity continuity while updating target velocity trajectory is called Velocity Override.<br />
+For a simple calculation, let’s assume that the initial velocity of the Profile is ‘0’.<br />
+The following explains how Profile processes Goal Position(116) instruction in Position Control mode, Extended Position Control Mode, Current-based Position Control Mode.</p>
 
 <ol>
   <li>An Instruction from the user is transmitted via Dynamixel bus, then registered to Goal Position(116).</li>
@@ -5402,13 +5423,13 @@ Goal Velocity(104) / Profile Acceleration(108) * t<sub>1</sub> = 64</p>
 </ol>
 
 <h3 id="position-trajectory140"><a name="position-trajectory"></a><strong><a href="#position-trajectory140">Position Trajectory(140)</a></strong></h3>
-<p>This is a target position trajectory created by Profile. This value is only used in Position Control Mode, Extended Position Control Mode and Current-based Position Control Mode. For more details, please refer to the <a href="#profile-velocity">Profile Velocity(112)</a>.</p>
+<p>This is a target position trajectory created by Profile. This value is only used in Position Control Mode, Extended Position Control Mode and Current-based Position Control Mode. For more details, please refer to the <a href="#profile-velocity112">Profile Velocity(112)</a>.</p>
 
 <h3 id="present-input-voltage144"><a name="present-input-voltage"></a><strong><a href="#present-input-voltage144">Present Input Voltage(144)</a></strong></h3>
 <p>This value indicates present voltage that is being supplied. For more details, please refer to the <a href="#max-voltage-limit">Max/Min Voltage Limit(32, 34)</a>.</p>
 
 <h3 id="present-temperature146"><a name="present-temperature"></a><strong><a href="#present-temperature146">Present Temperature(146)</a></strong></h3>
-<p>This value indicates internal temperature of Dynamixel. For more details, please refer to the <a href="#temperature-limit">Temperature Limit(31)</a>.</p>
+<p>This value indicates internal temperature of Dynamixel. For more details, please refer to the <a href="#temperature-limit31">Temperature Limit(31)</a>.</p>
 
 <h3 id="indirect-address-indirect-data"><a name="indirect-address"></a><a name="indirect-data"></a><strong><a href="#indirect-address">Indirect Address</a></strong>, <strong><a href="#indirect-data">Indirect Data</a></strong></h3>
 <p>Indirect Address and Indirect Data are useful when accessing two remote addresses in the Control Table as sequential addresses. Sequential addresses increase Instruction Packet efficiency. Addresses that can be defined as Indirect Address is limited to RAM area(Address 64 ~ 661).
@@ -5499,10 +5520,8 @@ As bearing set is rotating freely, therefore alignment is not required when asse
 </ul>
 
 <h4 id="r-manager-20-install">R+ Manager 2.0 Install</h4>
-<p>In order to change settings of DYNAMIXEL, R+ Manager 2.0 must be installed on your system.</p>
-
-<h4 id="basic-settings">Basic Settings</h4>
-<p>DYNAMIXEL has a default setting when manufactured. If you wish to change basic settings, run R+ Manager 2.0.</p>
+<p>In order to change settings of DYNAMIXEL, R+ Manager 2.0 must be installed on your system.<br />
+You can also use Dynamixel SDK or Dynamixel Workbench.</p>
 
 <h2 id="connector-information"><a href="#connector-information">Connector Information</a></h2>
 

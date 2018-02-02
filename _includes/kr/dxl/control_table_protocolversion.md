@@ -1,12 +1,14 @@
-Users can select Dynamixel protocol version (1.0 and 2.0).
-It is recommended to use an identical protocol version for multiple Dynamixels.
 
-|Value|Protocol Version|Compatible Dynamixels|
+다이나믹셀의 프로토콜 버전(1.0, 2.0)을 설정할 수 있습니다.  
+함께 사용할 다이나믹셀의 프로토콜 버전에 맞춰서 설정하세요.
+
+|값|프로토콜 버전|호환되는 다이나믹셀|
 | :---: | :---: | :---: |
-|1|1.0|AX Series, DX Series, RX Series, EX Series, MX Series with Firmware below v39|
-|2(default)|2.0|MX-28/64/106 with Firmware v39 or above, X Series, Pro Series|
+|1|1.0|AX 시리즈, DX 시리즈, RX 시리즈, EX 시리즈, MX 시리즈(펌웨어 v39 미만)|
+|2(기본값)|2.0|MX-28/64/106(펌웨어 v39 이상), X 시리즈, Pro 시리즈|
 
-`Note` The protocol 2.0 is greatly enhanced from the protocol 1.0. Accessing some of the Control Table area might be denied if protocol 1.0 is selected. This manual complies with protocol 2.0. Please refer to the [Protocol] section of e-Manual for more details about the protocol.
+`Note` 프로토콜 2.0은 프로토콜 1.0의 문제점을 대폭 개선한 버전입니다. 프로토콜 1.0을 사용할 경우, 컨트롤테이블의 일부 영역의 접근이 제한될 수 있습니다. 매뉴얼에서는 프로토콜 2.0을 기준으로 설명합니다. 프로토콜에 대한 자세한 사항은 [Protocol 1.0], [Protocol 2.0]을 참고해주세요.
 {: .notice}
 
-[Protocol]: /docs/en/dxl/protocol2/
+[Protocol 1.0]: /docs/kr/dxl/protocol1/
+[Protocol 2.0]: /docs/kr/dxl/protocol2/

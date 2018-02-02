@@ -1,4 +1,7 @@
-This value limits operating temperature. When the Present Temperature(146) that indicates internal temperature of Dynamixel is greater than the Temperature Limit(31), the Over Heating Error Bit(0x04) and Hardware Error Bit(0x80) in the Hardware Error Status(70) will be set. If Overheating Error Bit(0x04) is configured in the Shutdown(63), Torque Enable(64) is cleared to ‘0’ and Torque will be disabled. For more details, please refer to the [Shutdown(63)](#shutdown) section.
+This value limits operating temperature.  
+When the Present Temperature(146) that indicates internal temperature of Dynamixel is greater than the Temperature Limit(31), the Over Heating Error Bit(0x04) and Hardware Error Bit(0x80) in the Hardware Error Status(70) will be set.  
+If Overheating Error Bit(0x04) is configured in the Shutdown(63), Torque Enable(64) is cleared to ‘0’ and Torque will be disabled.  
+For more details, please refer to the [Shutdown(63)](#shutdown63) section.
 
 |Unit|Value Range|Description|
 | :---: | :---: | :---: |

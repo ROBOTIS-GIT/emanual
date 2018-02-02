@@ -1,10 +1,10 @@
-Goal Velocity(600) can be used to set a target velocity and this value cannot exceed Velocity Limit (32).
-In case of Position Control Mode or Extended Position Control Mode, Goal Velocity will be used to limit the velocity.
-However, if Goal Velocity is set to '0', Velocity Limit(32) will be used to limit the velocity. (Please refer to the block diagram of Position P Gain)
-The Goal Velocity stands for the RPM of the motor before the reduction gears and output RPM after the reduction gears can be calculated using below scale factor.
-Output RPM = Goal Velocity * Scale Factor
+Goal Velocity(600)을 통해, 목표 속도를 설정 할 수 있습니다. 이 값은 Velocity Limit(32) 보다 클 수 없습니다.  
+`동작모드`가 위치제어 모드 또는 확장 위치제어 모드일 경우, Goal Velocity(600)는 속도 제한값으로 사용됩니다.  
+예외적으로 Goal Velocity 값이 '0'일 경우에는 Velocity Limit(32)이 속도 제한값으로 사용됩니다. (Position P Gain 블록 다이어그램 참고)  
+여기서 속도는 기어 전 단에 있는 모터의 회전속도를 의미합니다. 기어 후 단의 다이나믹셀 회전속도는 아래 변환계수를 곱하여 계산 할 수 있습니다.  
+속도[RPM] = Goal Velocity 값 * 변환계수  
 
-|Model|Scale Factor(RPM)|
+|모델명|RPM 변환계수|
 | :---: | :---: |
 |H54-200-S500-R<br />H54-100-S500-R|0.00199234|
 |H42-20-S300-R|0.00329218|

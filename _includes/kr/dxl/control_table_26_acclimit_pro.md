@@ -1,6 +1,5 @@
-This value indicates acceleration limit. The Goal Velocity(600) can't exceed this value.
-Trying to write an exceeding value will fail and result in receiving a Limit Error Bit from the Status Packet.
+목표 가속도 값의 한계 값입니다. Goal Acceleration(606)은 이 값보다 큰 값을 쓸 수 없습니다. 이 값보다 큰 값을 쓰려 하면, 값이 써지지 않고, Status packet의 error 에 Limit error bit가 set 됩니다.
 
-|Value Range|
+|값의 범위|
 | :---: |
 |0 ~ 2,147,483,647|

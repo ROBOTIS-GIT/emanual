@@ -1,16 +1,15 @@
-It is the present moving speed.
-0~2,047 (0x7FF) can be used.
-If a value is in the rage of 0~1,023, it means that the motor rotates to the CCW direction.
-If a value is in the rage of 1,024~2,047, it means that the motor rotates to the CW direction.
-That is, the 10th bit becomes the direction bit to control the direction, and 0 and 1,024 are equal.
-The unit of this value varies depending on operation mode.
 
-+ Joint Mode
+현재 이동하는 속도입니다.  
+이 값은 0 ~ 2,047 (0x7FF) 까지 사용됩니다.  
+0 ~ 1,023 범위의 값이면 CCW 방향으로 회전한다는 의미입니다.  
+1,024 ~ 2,047 범위의 값이면 CW 방향으로 회전한다는 의미입니다.  
+즉, 10번째 bit가 방향을 제어하는 direction bit가 되며 0과 1,024는 같습니다.  
+이 값의 단위는 동작 모드에 따라 다릅니다.  
 
-  The unit is about 0.111rpm.
-  For example, if it is set to 300, it means that the motor is moving to the CCW direction at a rate of about 33.3rpm.
+- 관절 모드  
+  단위는 약 0.111rpm입니다.  
+  예를 들어, 300으로 설정된 경우 CCW방향 약 33.3rpm으로 이동 중이라는 의미입니다.
 
-+ Wheel Mode
-
-  The unit is about 0.1%.
-  For example, if it is set to 512, it means that the torque is controlled by 50% of the maximum torque to the CCW direction.
+- 바퀴 모드
+  단위는 약 0.1%입니다.  
+  예를 들어, 512로 설정된 경우 CCW방향 최대 출력 대비 약 50%로 제어 중이라는 의미입니다.

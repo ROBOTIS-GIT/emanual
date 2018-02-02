@@ -1,6 +1,9 @@
-This value indicates whether Dynamixel is in motion or not. If absolute value of Present Velocity(128) is greater than Moving Threshold(24), Moving(122) is set to '1'. Otherwise, it will be cleared to '0'. However, this value will always be set to '1' regardless of Present Velocity(128) while Profile is in progress with Goal Position(116) instruction.
 
-| Value | Description     |
-| :------------- | :------------- |
-| 0 | Movement is not detected |
-| 1 | Movement is detected, or Profile is in progress(Goal Position(116) instruction is being processed) |
+움직임의 유무를 나타냅니다.  
+Present Velocity(128)의 절대값이 Moving Threshold(24)보다 크면 Moving(122) 이 ‘1’이 되고, 적으면 ‘0’이 됩니다.  
+단 Profile 진행 중, 즉 Goal Position(116) 명령을 수행하는 중에는 Present Velocity(128)와 무관하게 ‘1’로 설정됩니다.
+
+| 값 | 설명     |
+| :---: | :------------- |
+| 0 | 움직임이 감지되지 않음 |
+| 1 | 움직임이 감지 되었거나, Profile 진행 중인 경우(Goal Position(116) 명령을 수행하는 중) |

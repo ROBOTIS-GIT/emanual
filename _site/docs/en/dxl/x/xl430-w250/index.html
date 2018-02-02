@@ -224,6 +224,10 @@ $(function() {
               
             
           
+            
+              <a href="http://localhost:4000/docs/kr/dxl/x/xl430-w250/" style="color: black;">Korean</a></button>
+            
+          
       </div>
       
       <input class="menu-btn" type="checkbox" id="menu-btn" />
@@ -4452,7 +4456,7 @@ Present Position(132) = Actual Position + Homing Offset(20).</p>
 <p class="notice"><code class="highlighter-rouge">Note</code> In case of the Position Control Mode(Joint Mode) that rotates less than 360 degrees, any invalid Homing Offset(20) values will be ignored(valid range : -1,024 ~ 1,024).</p>
 
 <h3 id="moving-threshold24"><a name="moving-threshold"></a><strong><a href="#moving-threshold24">Moving Threshold(24)</a></strong></h3>
-<p>This value helps to determine whether the Dynamixel is in motion or not.
+<p>This value helps to determine whether the Dynamixel is in motion or not.<br />
 When the absolute value of Present Velocity(128) is greater than the Moving Threshold(24), Moving(122) is set to ‘1’, otherwise it is cleared to ‘0’.</p>
 
 <table>
@@ -4478,7 +4482,10 @@ When the absolute value of Present Velocity(128) is greater than the Moving Thre
 </table>
 
 <h3 id="temperature-limit31"><a name="temperature-limit"></a><strong><a href="#temperature-limit31">Temperature Limit(31)</a></strong></h3>
-<p>This value limits operating temperature. When the Present Temperature(146) that indicates internal temperature of Dynamixel is greater than the Temperature Limit(31), the Over Heating Error Bit(0x04) and Hardware Error Bit(0x80) in the Hardware Error Status(70) will be set. If Overheating Error Bit(0x04) is configured in the Shutdown(63), Torque Enable(64) is cleared to ‘0’ and Torque will be disabled. For more details, please refer to the <a href="#shutdown">Shutdown(63)</a> section.</p>
+<p>This value limits operating temperature.<br />
+When the Present Temperature(146) that indicates internal temperature of Dynamixel is greater than the Temperature Limit(31), the Over Heating Error Bit(0x04) and Hardware Error Bit(0x80) in the Hardware Error Status(70) will be set.<br />
+If Overheating Error Bit(0x04) is configured in the Shutdown(63), Torque Enable(64) is cleared to ‘0’ and Torque will be disabled.<br />
+For more details, please refer to the <a href="#shutdown63">Shutdown(63)</a> section.</p>
 
 <table>
   <thead>
@@ -5344,13 +5351,13 @@ For example, the value is 512, it means the load is detected in the direction of
 </ol>
 
 <h3 id="position-trajectory140"><a name="position-trajectory"></a><strong><a href="#position-trajectory140">Position Trajectory(140)</a></strong></h3>
-<p>This is a target position trajectory created by Profile. This value is only used in Position Control Mode, Extended Position Control Mode and Current-based Position Control Mode. For more details, please refer to the <a href="#profile-velocity">Profile Velocity(112)</a>.</p>
+<p>This is a target position trajectory created by Profile. This value is only used in Position Control Mode, Extended Position Control Mode and Current-based Position Control Mode. For more details, please refer to the <a href="#profile-velocity112">Profile Velocity(112)</a>.</p>
 
 <h3 id="present-input-voltage144"><a name="present-input-voltage"></a><strong><a href="#present-input-voltage144">Present Input Voltage(144)</a></strong></h3>
 <p>This value indicates present voltage that is being supplied. For more details, please refer to the <a href="#max-voltage-limit">Max/Min Voltage Limit(32, 34)</a>.</p>
 
 <h3 id="present-temperature146"><a name="present-temperature"></a><strong><a href="#present-temperature146">Present Temperature(146)</a></strong></h3>
-<p>This value indicates internal temperature of Dynamixel. For more details, please refer to the <a href="#temperature-limit">Temperature Limit(31)</a>.</p>
+<p>This value indicates internal temperature of Dynamixel. For more details, please refer to the <a href="#temperature-limit31">Temperature Limit(31)</a>.</p>
 
 <h3 id="indirect-address-indirect-data"><a name="indirect-address"></a><a name="indirect-data"></a><strong><a href="#indirect-address">Indirect Address</a></strong>, <strong><a href="#indirect-data">Indirect Data</a></strong></h3>
 <p>Indirect Address and Indirect Data are useful when accessing two remote addresses in the Control Table as sequential addresses. Sequential addresses increase Instruction Packet efficiency. Addresses that can be defined as Indirect Address is limited to RAM area(Address 64 ~ 661).
@@ -5439,10 +5446,8 @@ As bearing set is rotating freely, therefore alignment is not required when asse
 </ul>
 
 <h4 id="r-manager-20-install">R+ Manager 2.0 Install</h4>
-<p>In order to change settings of DYNAMIXEL, R+ Manager 2.0 must be installed on your system.</p>
-
-<h4 id="basic-settings">Basic Settings</h4>
-<p>DYNAMIXEL has a default setting when manufactured. If you wish to change basic settings, run R+ Manager 2.0.</p>
+<p>In order to change settings of DYNAMIXEL, R+ Manager 2.0 must be installed on your system.<br />
+You can also use Dynamixel SDK or Dynamixel Workbench.</p>
 
 <h2 id="connector-information"><a href="#connector-information">Connector Information</a></h2>
 

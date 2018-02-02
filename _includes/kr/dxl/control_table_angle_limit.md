@@ -1,12 +1,13 @@
-The angle limit allows the motion to be restrained.
-The range and the unit of the value is the same as Goal Position(Address 30, 31).
-- CW Angle Limit: the minimum value of Goal Position(Address 30, 31)
-- CCW Angle Limit: the maximum value of Goal Position(Address 30, 31)
-The following two modes can be set pursuant to the value of CW and CCW.
+동작이 허용되는 각도를 설정할 수 있습니다. 값의 범위와 단위는 Goal Position(Address 30, 31)과 같습니다.
+- CW Angle Limit: Goal Position(Address 30, 31)의 최소 값
+- CCW Angle Limit: Goal Position(Address 30, 31)의 최대 값
 
-|Operation Type|CW / CCW|
+CW와 CCW의 값에 따라 다음의 2가지 동작 모드를 설정할 수 있습니다.
+
+|동작 방식|CW / CCW|
 | :-------------: | :-------------: |
-|Wheel Mode|both are 0|
-|Joint Mode|neither are 0|
+|바퀴 모드|둘 다 '0'일때|
+|관절 모드|둘 다 '0'이 아닐떄|
 
-The wheel mode can be used to wheel-type operation robots since motors of the robots spin infinitely. The joint mode can be used to multi-joints robot since the robots can be controlled with specific angles.
+바퀴 모드는 모터가 무한 회전을 하여 바퀴형 구동 로봇에 쓸 수 있습니다.  
+관절 모드는 특정 각도로 제어가 가능하여 다관절 로봇에 쓸 수 있습니다.

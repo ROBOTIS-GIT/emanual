@@ -2,7 +2,8 @@ It is the current position value of Dynamixel.
 The range of the value is 0~4095 (0xFFF), and the unit is 0.088 degree.
 
 ![](/assets/images/dxl/mx/mx_position.png)
-The picture above is the front view of Dynamixel.
+
+> The picture above is the front view of Dynamixel.
 
 In multi-turn mode, the range is from -28672 to 28672 with unit values dependent on Resolution Divider (0.088 * Resolution Divider)
 

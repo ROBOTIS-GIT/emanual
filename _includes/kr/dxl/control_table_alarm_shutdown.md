@@ -1,16 +1,21 @@
-Dynamixel can protect itself by detecting errors occur during the operation.
-The errors can be set are as the table below.
+다이나믹셀은 동작 중에 발생하는 위험 상황을 감지하여 스스로를 보호할 수 있습니다.  
+각 Bit의 기능은 ‘OR’의 논리로 적용되기 때문에 중복 설정이 가능합니다.  
+즉, Shutdown(63)이 ‘0x05’ (2 진수: 0000,0101)로 설정되었을 경우, Input Voltage Error(2 진수 : 0000,0001)와 Overheating Error(2 진수 : 0000,0100)가 발생하는 것을 모두 감지할 수 있습니다.  
+위험 상황이 감지되면, Torque Enable(64) 값이 ‘0’으로 변경되고 모터 출력은 0[%]가 됩니다.  
+제어기는 Status Packet의 Error 필드에 Hardware Error Bit(0x80)이 설정되었는지를 확인하거나, Hardware Error Status(70)을 통해서 현재 상태를 확인할 수 있습니다.  
+위험 상황이 감지된 후에는 REBOOT을 하지 않는 한, Torque Enable(64)을 ‘1’(Torque ON)로 설정할 수 없습니다.  
+Shutdown(63)에서 감지할 수 있는 위험 상황은 아래 표와 같습니다.
 
-|Bit   | Item     | Description     |
-| :-------------: | :-------------: | :------------- |
+|Bit   | 항목     | 설명     |
+| :---------: | :-------------: | :------------- |
 |Bit 7|0|-|
-|Bit 6|Instruction Error|When undefined Instruction is transmitted or the Action command is delivered without the reg_write command|
-|Bit 5|Overload Error|When the current load cannot be controlled with the set maximum torque|
-|Bit 4|CheckSum Error|When the Checksum of the transmitted Instruction Packet is invalid|
-|Bit 3|Range Error|When the command is given beyond the range of usage|
-|Bit 2|OverHeating Error|When the internal temperature is out of the range of operating temperature set in the Control Table|
-|Bit 1|Angle Limit Error|When Goal Position is written with the value that is not between CW Angle Limit and CCW Angle Limit|
-|Bit 0|Input Voltage Error|When the applied voltage is out of the range of operating voltage set in the Control Table|
+|Bit 6|Instruction Error|정의되지 않은 Instruction이 전송된 경우, 또는 reg_write명령없이 Action명령이 전달된 경우|
+|Bit 5|Overload Error|모터의 최대 출력으로 제어할 수 없는 하중이 지속적으로 적용되는 경우|
+|Bit 4|CheckSum Error|전송된 Instruction Packet의 ChecklSum이 맞지 않을 경우|
+|Bit 3|Range Error|해당 Address의 값의 범위를 벗어난 값을 Instruction Packet으로 보내는 경우|
+|Bit 2|OverHeating Error|내부 온도가 설정된 동작 온도 범위를 벗어난 경우|
+|Bit 1|Angle Limit Error|적용한 Goal Position이 설정한 CW/CCW Angle Limit 범위를 벗어난 경우|
+|Bit 0|Input Voltage Error|인가된 전압이 설정된 동작 전압 범위를 벗어났을 경우|
 
-It is possible to make duplicate set since the function of each bit is run by  the logic of ‘OR’. That is, if 0x05 (binary 00000101) is set, both Input Voltage Error and Overheating Error can be detected.
-If errors occur, in case of Alarm LED, the LED blinks; in case of Alarm Shutdown, the motor output becomes 0 % by resetting the value of Torque Limit(34) to 0.
+각 Bit의 기능은 ‘OR’의 논리로 적용되기 때문에 중복 설정이 가능합니다. 즉, 0x05 (2 진수: 00000101)로 설정되었을 경우 Input Voltage Error와 Overheating Error가 발생하는 것을 모두 감지할 수 있습니다.
+위험 상황이 발생하면 LED를 깜박이고, Torque Limit의 값을 0 으로 만들어서 모터 출력이 0%가 되도록 합니다.
