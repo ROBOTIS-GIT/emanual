@@ -1,5 +1,5 @@
 
-| Value | Description     |
+| 값 | 상세 설명    |
 | :-------------: | :------------- |
-|0|Turn off the torque(Free run state)|
-|1|Turn on the torque and lock EEPROM area|
+|0|Torque OFF(Free-run) 상태로 변경합니다|
+|1|Torque ON 상태로 변경하고 EEPROM 영역의 모든 데이터는 잠김상태로 변경됩니다|

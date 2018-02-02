@@ -1,8 +1,8 @@
 
-|Value|Description|
+|값|설명|
 | :---:| :---|
-|0|EEPROM area can be modified|
-|1|EEPROM area cannot be modified|
+|0|EEPROM 영역을 수정할 수 있습니다.|
+|1|EEPROM 영역을 수정하지 못합니다.|
 
-`Caution` If Lock is set to 1, the power must be turned off and then turned on again to change into 0.
+`주의` Lock이 1로 설정되면 전원을 껐다 켜야 0으로 바꿀 수 있습니다.
 {: .notice--warning}

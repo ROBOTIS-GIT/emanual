@@ -1,24 +1,23 @@
-## [Horn and Bearing Replacement](#horn-and-bearing-replacement)
+## [혼과 베어링 교체](#혼과-베어링-교체)
 
-The horn is installed on the front wheel gear serration of the DYNAMIXEL whereas the bearing set is installed on the back.
+혼은 다이나믹셀 정면의 출력축에 부착되어 있으며 베어링은 후면에 부착되어 있습니다.
 
 ![](/assets/images/dxl/x/horn_bearing.jpg)
 
-### Installing the Horn
+### 혼 조립하기
 
-Place the thrust horn washer into the actuator before inserting the horn.
-You must carefully align the horn to the wheel gear serration by aligning dots.
+혼을 끼워넣기 전에 혼 와셔를 넣어주어야 합니다.  
+아래 그림과 같이 혼과 기어의 마킹 위치에 맞추어 혼을 조립합니다.
 
 ![](/assets/images/dxl/x/horn_alignment.jpg)
 
-Once alignment is properly done, gently push the center of the horn toward the actuator.
-Make sure that the horn washer is in place as you tighten the bolt.
+혼을 끼워넣을 때 혼의 중심부를 밀면서 조립합니다.  
+이때 혼 와셔가 중심에서 벗어나지 않도록 하고 조립이 끝나면 볼트로 혼을 고정합니다.
 
+### 베어링 조립하기
 
-### Installing the Bearing Set
-
-You may need to remove the bearing set from the previous actuator and reinstall it into the new actuator.
-The bearing set can also be purchased separately.
-As bearing set is rotating freely, therefore alignment is not required when assembling to DYNAMIXEL.
+기존 다이나믹셀에서 사용하던 베어링을 새 다이나믹셀에 조립해야 할 경우 아래 방법을 따릅니다.  
+베어링은 쇼핑몰에서 별도로 구매할 수 있습니다.
+베어링은 혼과는 달리 구동축에 연결되지 않기 때문에 자유롭게 회전이 가능합니다.
 
 ![](/assets/images/dxl/x/bearing.jpg)

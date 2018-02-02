@@ -1,24 +1,27 @@
-Set the Dynamixel’s Secondary ID. Secondary ID(12) is a value to identify each Dynamixel, just like the ID(7).
-However, unlike ID(7), Secondary ID(12) is not a unique value.
-Therefore, Dynamixels with the same Secondary ID value form a group.
-The differences between Secondary ID(12) and ID(7) are as follows :
-1. Secondary ID(12) is not a unique value. i.e., a lot of Dynamixels may have the same Secondary ID value.
-2. ID(7) has a higher priority than Secondary ID(12). i.e., if Secondary ID(12) and ID(7) are the same, ID(7) will be applied first.
-3. The EEPROM area of the Control Table cannot be modified with Secondary ID(12). Only the RAM area can be modified.
-4. If Instruction Packet ID is the same as Secondary ID(12), the Status Packet will not be returned.
-5. If the value of Secondary ID(12) is 253 or higher, the Secondary ID function is deactivated.
 
-|Values|Description|
+Dynamixel의 Secondary ID를 설정합니다.  
+Secondary ID(12)는 ID(7)과 동일하게 다이나믹셀을 식별하기 위한 번호로 사용됩니다.  
+다만, Secondary ID(12)는 ID(7)과 달리 고유한 번호가 아닙니다.  
+따라서 동일한 Secondary ID 값을 갖은 다이나믹셀들은 하나의 그룹을 형성하게 됩니다.  
+Secondary ID(12)와 ID(7)의 차이는 다음과 같습니다.
+
+1. Secondary ID(12)는 ID(7)과 달리 고유 번호가 아닙니다. 즉, 다수의 다이나믹셀이 동일한 Secondary ID 값을 가질 수 있습니다.
+2. Secondary ID(12)보다 ID(7)의 우선순위가 높습니다. 따라서 Secondary ID(12)와 ID(7)가 같을 경우, ID(7)가 우선적으로 적용됩니다.
+3. Secondary ID(12)로는 컨트롤테이블의 EEPROM 영역을 변경할 수 없습니다. RAM 영역만 변경이 가능합니다.
+4. Instruction Packet의 ID가 Sencodary ID(12)와 같은 경우, Status Packet을 반환하지 않습니다.
+5. Secondary ID(12)의 값이 253 이상인 경우, Secondary ID 기능은 비활성화 됩니다.
+
+|값|세부 설명|
 | :---: | :---: |
-|0 ~ 252|Activate Secondary ID function|
-|253 ~ 255|Deactivate Secondary ID function, Default value ‘255’|
+|0 ~ 252|Secondary ID 기능 활성화|
+|253 ~ 255|Secondary ID 기능 비활성화, 초기값: ‘255’|
 
-The following are examples of operation when there are five Dynamixels with ID (7) set from 1 to 5.
-1. Set all five Dynamixels' Secondary ID(12) to '5'.
-2. Send Write Instruction Packet(ID = 1, LED(65) = 1).
-3. Turn on LED of Dynamixel with ID '1' and return the Status Packet.
-4. Send Write Instruction Packet(ID = 5, LED(65) = 1).
-5. Turn on LED on five Dynamixels. However, Status Packet of Dynamixel with ID ‘5’ will be returned.
-6. Set the Secondary ID(12) of all five Dynamixels to ‘100’.
-7. Send Write Instruction Packet(ID = 100, LED(65) = 0).
-8. Turn off LED on five Dynamixels. However, as there is no Dynamixel with ID ‘100’, Status Packet is not returned.
+다음은 ID(7)가 1부터 5로 설정된 5개의 다이나믹셀이 있는 경우에 대한 동작 예시입니다.
+1. 5개 다이나믹셀의 Secondary ID(12)를 모두 ‘5’로 동일하게 설정합니다.
+2. Write Instruction Packet(ID = 1, LED(65) = 1)을 전송합니다.
+3. ID가 ‘1’인 다이나믹셀은 LED를 켠 후, Status Packet을 반환합니다.
+4. Write Instruction Packet(ID = 5, LED(65) = 1)을 전송합니다.
+5. 5개의 다이나믹셀은 모두 LED를 켭니다. 단, Status Packet은 ID가 ‘5’인 다이나믹셀만 반환합니다.
+6. 5개 다이나믹셀의 Secondary ID(12)를 모두 ‘100’으로 동일하게 설정합니다.
+7. Write Instruction Packet(ID = 100, LED(65) = 0)을 전송합니다.
+8. 5개의 다이나믹셀은 모두 LED를 끕니다. 단, ID ‘100’인 다이나믹셀이 없으므로 Status Packet은 반환되지 않습니다.

@@ -1,1 +1,2 @@
-In case of Torque Control Mode, Goal Current(102) can be used to set a target current. This value sets a limit to current in Current-based Position Control mode. This value cannot exceed Current Limit(38).
+전류 제어 모드의 경우, Goal Current(102)를 통해 목표 전류를 설정할 수 있습니다.  
+전류기반 위치 제어 모드에서는 Current 제한값으로 사용됩니다. 이 값은 Current Limit(38)보다 클 수 없습니다.

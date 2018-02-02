@@ -1,6 +1,7 @@
-These values are maximum and minimum operating voltages.
-When current input voltage acquired from Present Input Voltage(623) exceeds the range of Max Voltage Limit(36) and Min Voltage Limit(40), Input Voltage Error Bit(Bit 0) in the Hardware Error Status(892) will be set to '1'. If Input Voltage Error Bit(Bit 0) is configured in the Shutdown(48) when Input Voltage Error occurs, Torque Enable(562) is cleared to ‘0’ and Torque will be disabled. For more details, please refer to the [Shutdown(48)](#shutdown) section.
+전압 동작 범위의 상한과 하한 값입니다. 상한과 하한 각각 0~400까지 사용 가능하며, 단위는 0.1V입니다.  
+예를 들어, 값이 80이면 8V입니다.  
+현재 전압 값이 이 범위를 벗어날 경우 Status Packet 중 ERROR의 Voltage Range Error Bit(Bit0)가 ‘1’로 설정되어 반환되고, Shutdown의 플래그(flag)중 입력 전압 에러(Input Voltage Error)가 설정되어 있다면 기능이 발휘됩니다.
 
-|Unit|Value Range|Description|
+|단위|값의 범위|설명|
 | :---: | :---: | :---: |
-|About 0.1V|0 ~ 400|0 ~ 40.0V|
+|약 0.1V|0 ~ 400|0 ~ 40.0V|

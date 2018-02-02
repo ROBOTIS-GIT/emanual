@@ -1,5 +1,5 @@
-If Present Velocity(615) is bigger than this value, Moving(610) is set to '1' and otherwise Moving(610) is cleared to '0'. This value determines whether Dynamixel is in motion or not.
+이 값보다 현재 속도가 높아지면, Moving(610) 이 1이 됩니다. 이 값보다 속도가 낮아지면, Moving(610) 이 0이 됩니다. 즉, 움직임 유무의 기준 속도 입니다.
 
-|Value Range|
+|값의 범위|
 | :---: |
 |0 ~ 2,147,483,647|

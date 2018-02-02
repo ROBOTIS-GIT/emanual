@@ -4024,7 +4024,7 @@ $(function() {
   </thead>
   <tbody>
     <tr>
-      <td style="text-align: center">1</td>
+      <td style="text-align: center">1(Default)</td>
       <td style="text-align: center">1M</td>
       <td style="text-align: center">0.000%</td>
     </tr>
@@ -4054,7 +4054,7 @@ $(function() {
       <td style="text-align: center">-2.124%</td>
     </tr>
     <tr>
-      <td style="text-align: center">34(Default)</td>
+      <td style="text-align: center">34</td>
       <td style="text-align: center">57600</td>
       <td style="text-align: center">0.794%</td>
     </tr>
@@ -4130,12 +4130,14 @@ The following two modes can be set pursuant to the value of CW and CCW.</li>
     <tr>
       <th style="text-align: center">Unit</th>
       <th style="text-align: center">Value Range</th>
+      <th> </th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <td style="text-align: center">About 1°C</td>
-      <td style="text-align: center">0 ~ 100</td>
+      <td style="text-align: center">0 ~ 99</td>
+      <td> </td>
     </tr>
   </tbody>
 </table>
@@ -4156,8 +4158,8 @@ The following two modes can be set pursuant to the value of CW and CCW.</li>
   <tbody>
     <tr>
       <td style="text-align: center">About 0.1V</td>
-      <td style="text-align: center">50 ~ 250</td>
-      <td style="text-align: center">5.0 ~ 25.0V</td>
+      <td style="text-align: center">50 ~ 160</td>
+      <td style="text-align: center">5.0 ~ 16.0V</td>
     </tr>
   </tbody>
 </table>
@@ -4381,21 +4383,21 @@ The range and the unit of the value may vary depending on the operation mode.</p
 
 <ul>
   <li>
-    <p>Join Mode
-0 ~ 1,023(0x3FF) can be used, and the unit is about 0.111rpm.
-If it is set to 0, it means the maximum rpm of the motor is used without controlling the speed.
-If it is 1023, it is about 114rpm.
+    <p><strong>Join Mode</strong><br />
+0 ~ 1,023(0x3FF) can be used, and the unit is about 0.111rpm.<br />
+If it is set to 0, it means the maximum rpm of the motor is used without controlling the speed.<br />
+If it is 1023, it is about 114rpm.<br />
 For example, if it is set to 300, it is about 33.3 rpm.</p>
 
     <p class="notice"><code class="highlighter-rouge">Note</code> Please check the maximum rpm of the Dynamixel. The motor cannot exceed the maximum rpm with the higher Moving Speed value.</p>
   </li>
   <li>
-    <p>Wheel Mode
-0 ~ 2,047(0x7FF) can be used, the unit is about 0.1%.
-If a value in the range of 0 ~ 1,023 is used, it is stopped by setting to 0 while rotating to CCW direction.
-If a value in the range of 1,024 ~ 2,047 is used, it is stopped by setting to 1,024 while rotating to CW direction.
-That is, the 10th bit becomes the direction bit to control the direction.
-In Wheel Mode, only the output control is possible, not speed.
+    <p><strong>Wheel Mode</strong><br />
+0 ~ 2,047(0x7FF) can be used, the unit is about 0.1%.<br />
+If a value in the range of 0 ~ 1,023 is used, it is stopped by setting to 0 while rotating to CCW direction.<br />
+If a value in the range of 1,024 ~ 2,047 is used, it is stopped by setting to 1,024 while rotating to CW direction.<br />
+That is, the 10th bit becomes the direction bit to control the direction.<br />
+In Wheel Mode, only the output control is possible, not speed.<br />
 For example, if it is set to 512, it means the output is controlled by 50% of the maximum output.</p>
   </li>
 </ul>
@@ -4418,22 +4420,24 @@ The picture above is the front view of Dynamixel.</p>
 <p class="notice--warning"><code class="highlighter-rouge">Caution</code> If it is set to Wheel Mode, the value cannot be used to measure the moving distance and the rotation frequency.</p>
 
 <h3 id="present-speed-38"><a name="present-speed"></a><strong><a href="#present-speed-38">Present Speed (38)</a></strong></h3>
-<p>It is the current moving speed.
-0~2047 (0X7FF) can be used.
-If a value is in the rage of 0~1023, it means that the motor rotates to the CCW direction.
-If a value is in the rage of 1024~2047, it means that the motor rotates to the CW direction.
-That is, the 10th bit becomes the direction bit to control the direction, and 0 and 1024 are equal.
+<p>It is the present moving speed.
+0~2,047 (0x7FF) can be used.
+If a value is in the rage of 0~1,023, it means that the motor rotates to the CCW direction.
+If a value is in the rage of 1,024~2,047, it means that the motor rotates to the CW direction.
+That is, the 10th bit becomes the direction bit to control the direction, and 0 and 1,024 are equal.
 The unit of this value varies depending on operation mode.</p>
 
 <ul>
   <li>
-    <p>Joint Mode
-The unit is about 0.111rpm.
+    <p>Joint Mode</p>
+
+    <p>The unit is about 0.111rpm.
 For example, if it is set to 300, it means that the motor is moving to the CCW direction at a rate of about 33.3rpm.</p>
   </li>
   <li>
-    <p>Wheel Mode
-The unit is about 0.1%.
+    <p>Wheel Mode</p>
+
+    <p>The unit is about 0.1%.
 For example, if it is set to 512, it means that the torque is controlled by 50% of the maximum torque to the CCW direction.</p>
   </li>
 </ul>
@@ -4441,9 +4445,9 @@ For example, if it is set to 512, it means that the torque is controlled by 50% 
 <h3 id="present-load-40"><a name="present-load"></a><strong><a href="#present-load-40">Present Load (40)</a></strong></h3>
 <p>It means currently applied load.
 The range of the value is 0~2047, and the unit is about 0.1%.
-If the value is 0~1023, it means the load works to the CCW direction.
-If the value is 1024~2047, it means the load works to the CW direction.
-That is, the 10th bit becomes the direction bit to control the direction, and 1024 is equal to 0.
+If the value is 0~1,023, it means the load works to the CCW direction.
+If the value is 1,024~2,047, it means the load works to the CW direction.
+That is, the 10th bit becomes the direction bit to control the direction, and 1,024 is equal to 0.
 For example, the value is 512, it means the load is detected in the direction of CCW about 50% of the maximum torque.</p>
 
 <table>
@@ -4470,11 +4474,12 @@ For example, the value is 512, it means the load is detected in the direction of
 <p class="notice"><code class="highlighter-rouge">Note</code> Present load is an inferred value based on the internal output value; not a measured value using torque sensor, etc. Therefore, it may be inaccurate for measuring weight or torque. It is recommended to use it for predicting the direction and size of the force being applied to the joint.</p>
 
 <h3 id="present-voltage-42"><a name="present-voltage"></a><strong><a href="#present-voltage-42">Present Voltage (42)</a></strong></h3>
-<p>It is the size of the current voltage supplied.
-This value is 10 times larger than the actual voltage. For example, when 10V is supplied, the data value is 100 (0x64)</p>
+<p>It is the size of the present voltage supplied.
+This value is 10 times larger than the actual voltage. For example, when 10V is supplied, the data value is 100 (0x64)
+If Present Voltage(42) value is out of range, Voltage Range Error Bit (Bit0) of Status Packet is returned as ‘1’ and Alarm is triggered and set the address 17 and set 1 to the Bit 0 of the address 18.</p>
 
 <h3 id="present-temperature-43"><a name="present-temperature"></a><strong><a href="#present-temperature-43">Present Temperature (43)</a></strong></h3>
-<p>It is the internal temperature of Dynamixel in Celsius.
+<p>It is the internal temperature of Dynamixel in Celsius.<br />
 Data value is identical to the actual temperature in Celsius. For example, if the data value is 85 (0x55), the current internal temperature is 85°C.</p>
 
 <h3 id="registered-instruction-44"><a name="registered-instruction"></a><strong><a href="#registered-instruction-44">Registered Instruction (44)</a></strong></h3>
@@ -4489,16 +4494,16 @@ Data value is identical to the actual temperature in Celsius. For example, if th
   <tbody>
     <tr>
       <td style="text-align: center">0</td>
-      <td style="text-align: left">There are no commands transmitted by REG_WRITE</td>
+      <td style="text-align: left">REG_WRITE instruction is not received</td>
     </tr>
     <tr>
       <td style="text-align: center">1</td>
-      <td style="text-align: left">There are commands transmitted by REG_WRITE</td>
+      <td style="text-align: left">REG_WRITE instruction is received</td>
     </tr>
   </tbody>
 </table>
 
-<p class="notice"><code class="highlighter-rouge">Note</code> If ACTION command is executed, the value is changed into 0.</p>
+<p class="notice"><code class="highlighter-rouge">Note</code> If ACTION instruction is executed, the value will be changed to 0.</p>
 
 <h3 id="moving-46"><a name="moving"></a><strong><a href="#moving-46">Moving (46)</a></strong></h3>
 
@@ -4545,8 +4550,7 @@ Data value is identical to the actual temperature in Celsius. For example, if th
 <p class="notice--warning"><code class="highlighter-rouge">Caution</code> If Lock is set to 1, the power must be turned off and then turned on again to change into 0.</p>
 
 <h3 id="punch-48"><a name="punch"></a><strong><a href="#punch-48">Punch (48)</a></strong></h3>
-<p>Current to drive motor is at minimum.
-Can choose vales from 0x20 to 0x3FF.</p>
+<p>Minimum current to drive motor. This value ranges from 0x20 to 0x3FF.</p>
 
 <h1 id="how-to-assemble"><a href="#how-to-assemble">How to Assemble</a></h1>
 

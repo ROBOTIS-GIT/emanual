@@ -1,9 +1,13 @@
-This value indicates maximum Profile Acceleration(108). Profile Acceleration(108) can’t be configured with any values exceeding Acceleration Limit(40). Profile Acceleration(108) is used in all operating mode except PWM Control Mode in order to generate a target trajectory. For more details, please refer to the Profile Velocity(112).
+Profile Acceleration(108)의 한계 값입니다.  
+Profile Acceleration(108)에는 Acceleration Limit(40)보다 큰 값을 쓸 수 없습니다.  
+Profile Acceleration(108)은 전류 제어 모드를 제외한 모든 제어 모드에서 목표 궤적을 생성하는데 사용됩니다.  
+자세한 설명은 Profile Velocity(112)을 참고하세요.
 
-|Unit|Value Range|
+|단위|값의 범위|
 | :---: | :---: |
 |214.577 Rev/min<sup>2</sup>|0 ~ 32,767|
 
-`Note` Bit information of the Error field in the Status Packet is different from protocol 1.0 and protocol 2.0. This manual complies with protocol 2.0. Please refer to the [Protocol] section of e-Manual for more details about the protocol.
+`참고` Status Packet의 Error필드의 비트정보는 프로토콜 1.0과 2.0이 다릅니다. 여기서는 프로토콜 2.0을 기준으로 설명합니다. 자세한 사항은 [프로토콜]을 참조하세요.
+{: .notice}
 
-[Protocol]: /docs/en/dxl/protocol1/#error
+[프로토콜]: /docs/en/dxl/protocol1/#error
