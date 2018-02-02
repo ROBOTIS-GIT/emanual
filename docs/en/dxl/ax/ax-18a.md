@@ -244,4 +244,4 @@ Each data in the Control Table is restored to initial values when the DYNAMIXEL 
 
 [Two's complement]: #
 
-[Compatibility Guide]: http://en.robotis.com/BlueAD/board.php?bbs_id=faq&mode=view&bbs_no=47&page=1&key=&keyword=&sort=&scate=
+[Compatibility Guide]: http://en.robotis.com/service/compatibility_table.php?cate=d
