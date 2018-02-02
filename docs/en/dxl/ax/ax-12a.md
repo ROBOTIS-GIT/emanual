@@ -11,7 +11,8 @@ sidebar:
   nav: "ax-12a"
 ---
 
-![](/assets/images/dxl/ax/ax-12+_product.png)![](/assets/images/dxl/ax/ax-12a_product.png)
+![](/assets/images/dxl/ax/ax-12+_product.png)
+![](/assets/images/dxl/ax/ax-12a_product.png)
 
 > AX-12+, AX-12A
 
@@ -19,7 +20,7 @@ sidebar:
 {: .notice}
 
 `Note` AX-12A is a new version of the AX-12+ with the same performance but more advanced external design. Only the AX-12A is now being sold.
-{: .notice}
+{: .notice--warning}
 
 # [Specifications](#specifications)
 
@@ -47,7 +48,7 @@ sidebar:
 
 {% include en/dxl/control_table_protocol1.md %}
 
-## [Control Table of EEPROM Area](#control-table-of-eeprom-area)
+## [EEPROM 영역](#eeprom-영역)
 
 | Address | Size<br>(Byte) | Data Name                                   | Description                        | Access | Initial<br />Value |
 |:--------|:---------------|:--------------------------------------------|:-----------------------------------|:-------|:-------------------|
@@ -67,7 +68,7 @@ sidebar:
 | 18      | 1              | [Shutdown](#shutdown)                       | Shutdown Error Information         | RW     | 36                 |
 
 
-## [Control Table of RAM Area](#control-table-of-ram-area)
+## [RAM 영역](#ram-영역)
 
 | Address | Size<br>(Byte) | Data Name                                       | Description                  | Access | Initial<br />Value |
 |:--------|:---------------|:------------------------------------------------|:-----------------------------|:-------|:-------------------|
@@ -226,6 +227,5 @@ Baud Rate determines serial communication speed between a controller and DYNAMIX
 
 {% include en/dxl/485_ttl_connection.md %}
 
-[Two's complement]: #
 
-[Compatibility Guide]: http://en.robotis.com/BlueAD/board.php?bbs_id=faq&mode=view&bbs_no=47&page=1&key=&keyword=&sort=&scate=
+[Compatibility Guide]: http://en.robotis.com/service/compatibility_table.php?cate=d

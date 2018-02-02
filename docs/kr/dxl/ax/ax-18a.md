@@ -19,7 +19,7 @@ sidebar:
 `주의` AX-18A 는  AX-18F 와 동일한 성능에 외형을 개선한 모델입니다. 현재는 AX-18A만 판매중 입니다.
 {: .notice--warning}
 
-# [주요 사양 요약](#주요-사양-요약)
+# [주요 사양](#주요-사양)
 
 | 항목            | 내용                                                                        |
 |:----------------|:----------------------------------------------------------------------------|
@@ -40,12 +40,12 @@ sidebar:
 | Feedback        | Position, Temperature, Load, Input Voltage, etc                             |
 | Material        | Engineering Plastic                                                         |
 
-`Note` Stall Torque 는 순간적으로 낼수있는 최대정지토크를 의미합니다. 실제구동위해 로봇을 설계하신다면 Stall Torque의 1/5 이하의 로드가 걸리도록 설계하셔야 안정적인 움직임이 가능합니다.
+`Note` Stall Torque 는 순간적으로 낼수있는 최대정지토크를 의미합니다. 실제 구동을 위해 로봇을 설계하신다면 Stall Torque의 1/5 이하의 로드가 걸리도록 설계하셔야 안정적인 움직임이 가능합니다.
 {: .notice}
 
 {% include kr/dxl/control_table_protocol1.md %}
 
-## [Control Table of EEPROM Area](#control-table-of-eeprom-area)
+## [EEPROM 영역](#eeprom-영역)
 
 | 주소 | 크기(Byte) | 명칭                                        | 의미                              | 접근 | 초기값 |
 |:-----|:-----------|:--------------------------------------------|:----------------------------------|:-----|:-------|
@@ -65,7 +65,7 @@ sidebar:
 | 18   | 1          | [Shutdown](#shutdown)                       | 알람용 셧 다운(Shut down) 기능    | RW   | 36     |
 
 
-## [Control Table of RAM Area](#control-table-of-ram-area)
+## [RAM 영역](#ram-영역)
 
 | 주소 | 크기(Byte) | 명칭                                            | 의미                       | 접근 | 초기값     |
 |:-----|:-----------|:------------------------------------------------|:---------------------------|:-----|:-----------|
@@ -89,7 +89,7 @@ sidebar:
 | 48   | 2          | [Punch](#punch)                                 | Punch 값의 바이트          | RW   | 32         |
 
 
-## [Address 기능 설명](#Address-기능-설명)
+## [컨트롤 테이블 설명](#컨트롤-테이블-설명)
 
 ### <a name="model-number"></a>**[Model Number (0)](#model-number-0)**
 다이나믹셀의 모델 번호입니다.
@@ -126,16 +126,7 @@ Baudrate(BPS) = 2,000,000 / (Value + 1)
 {% include kr/dxl/control_table_angle_limit.md %}
 
 ### <a name="temperature-limit"></a>**[Temperature Limit (11)](#temperature-limit-11)**
-
-동작 온도의 상한 값입니다.
-
-|    단위    |  범위  |  |
-|:----------:|:------:|::|
-| 약 1&deg;C | 0 ~ 99 |  |
-
-`주의` 온도 상한선을 초기값보다 높게 설정하지 마십시오. 온도 알람셧다운 발생시 20분이상 휴식하여 다이나믹셀의 온도를 충분히 낮춘후 사용해 주세요. 온도가 높은상태에서 사용시 제품이 손상될 수 있습니다.
-{: .notice--warning}
-
+{% include kr/dxl/control_table_temp_limit.md %}
 
 ### <a name="min-voltage-limit"></a><a name="max-voltage-limit"></a>**[Min/Max Voltage Limit (12, 13)](#minmax-voltage-limit-12-13)**
 {% include kr/dxl/control_table_volt_limit.md %}
@@ -198,7 +189,7 @@ Baudrate(BPS) = 2,000,000 / (Value + 1)
 {% include kr/dxl/control_table_punch.md %}
 
 
-# [조립 방법](#조립-방법)
+# [조립 예시](#조립-예시)
 
 ![](/assets/images/dxl/ax/ax_12a_frame_assembly_02.png)
 
@@ -215,11 +206,13 @@ Baudrate(BPS) = 2,000,000 / (Value + 1)
 `Note` [호환성 가이드]
 {: .notice}
 
-## [Quick Start](#quick-start)
+## [커넥터 정보](#커넥터-정보)
+{% include kr/dxl/molex_ttl.md %}
 
 ## [도면](#도면)
 
 ![](/assets/images/dxl/ax/ax-18a_dimension.png)
 
+{% include kr/dxl/485_ttl_connection.md %}
 
-[호환성 가이드]: http://en.robotis.com/BlueAD/board.php?bbs_id=faq&mode=view&bbs_no=47&page=1&key=&keyword=&sort=&scate=
+[호환성 가이드]: http://en.robotis.com/service/compatibility_table.php?cate=d

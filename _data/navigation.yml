@@ -501,9 +501,9 @@ main:
 #AX-12W sidebar
 ax-12w:
   - title: "Specifications"
-    titlekr: "스펙"
+    titlekr: "주요 사양"
     url: /dxl/ax/ax-12w/#specifications
-    urlkr: /dxl/ax/ax-12w/#스펙
+    urlkr: /dxl/ax/ax-12w/#주요-사양
   - title: "Control Table"
     titlekr: "컨트롤 테이블"
     url: /dxl/ax/ax-12w/#control-table
@@ -515,13 +515,21 @@ ax-12w:
         urlkr: /dxl/ax/ax-12w/#컨트롤-테이블-데이터-주소
         children:
           - title: "Area(EEPROM, RAM)"
+            titlekr: "영역 (EEPROM, RAM)"
             url: /dxl/ax/ax-12w/#area-eeprom-ram
+            urlkr: /dxl/ax/ax-12w/#영역-eeprom-ram
           - title: "Size"
+            titlekr: "크기"
             url: /dxl/ax/ax-12w/#size
+            urlkr: /dxl/ax/ax-12w/#크기
           - title: "Access"
+            titlekr: "접근권한"
             url: /dxl/ax/ax-12w/#access
+            urlkr: /dxl/ax/ax-12w/#접근권한
           - title: "Initial Value"
+            titlekr: "초기값"
             url: /dxl/ax/ax-12w/#initial-value
+            urlkr: /dxl/ax/ax-12w/#초기값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/ax/ax-12w/#control-table-of-eeprom-area
@@ -536,60 +544,88 @@ ax-12w:
         urlkr: /dxl/ax/ax-12w/#컨트롤-테이블-설명
         children:
           - title: "Model Number(0)"
+            titlekr: "Model Number(0)"
             url: /dxl/ax/ax-12w/#model-number-0
           - title: "Firmware Version(2)"
+            titlekr: "Firmware Version(2)"
             url: /dxl/ax/ax-12w/#firmware-version-2
           - title: "ID(3)"
+            titlekr: "ID(3)"
             url: /dxl/ax/ax-12w/#id-3
           - title: "Baud Rate(4)"
+            titlekr: "Baud Rate(4)"
             url: /dxl/ax/ax-12w/#baud-rate-4
           - title: "Return Delay Time(5)"
+            titlekr: "Return Delay Time(5)"
             url: /dxl/ax/ax-12w/#return-delay-time-5
           - title: "CW/CCW Angle Limit(6,8)"
+            titlekr: "CW/CCW Angle Limit(6,8)"
             url: /dxl/ax/ax-12w/#cwccw-angle-limit6-8
           - title: "Temperature Limit(11)"
+            titlekr: "Temperature Limit(11)"
             url: /dxl/ax/ax-12w/#temperature-limit-11
           - title: "Min/Max Voltage Limit(12,13)"
+            titlekr: "Min/Max Voltage Limit(12,13)"
             url: /dxl/ax/ax-12w/#minmax-voltage-limit-12-13
           - title: "Max Torque(14)"
+            titlekr: "Max Torque(14)"
             url: /dxl/ax/ax-12w/#max-torque-14
           - title: "Status Return Level(16)"
+            titlekr: "Status Return Level(16)"
             url: /dxl/ax/ax-12w/#status-return-level-16
           - title: "Alarm LED(17)"
+            titlekr: "Alarm LED(17)"
             url: /dxl/ax/ax-12w/#alarm-led17-shutdown18
           - title: "Shutdown(18)"
+            titlekr: "Shutdown(18)"
             url: /dxl/ax/ax-12w/#alarm-led17-shutdown18
           - title: "Torque Enable(24)"
+            titlekr: "Torque Enable(24)"
             url: /dxl/ax/ax-12w/#torque-enable-24
           - title: "LED(25)"
+            titlekr: "LED(25)"
             url: /dxl/ax/ax-12w/#led-25
           - title: "Compliance Margin(26,27)"
+            titlekr: "Compliance Margin(26,27)"
             url: /dxl/ax/ax-12w/#compliance-margin-26-27
           - title: "Compliance Slope(28,29)"
+            titlekr: "Compliance Slope(28,29)"
             url: /dxl/ax/ax-12w/#compliance-slope-28-29
           - title: "Goal Position(30)"
+            titlekr: "Goal Position(30)"
             url: /dxl/ax/ax-12w/#goal-position-30
           - title: "Moving Speed(32)"
+            titlekr: "Moving Speed(32)"
             url: /dxl/ax/ax-12w/#moving-speed-32
           - title: "Torque Limit(34)"
+            titlekr: "Torque Limit(34)"
             url: /dxl/ax/ax-12w/#torque-limit-34
           - title: "Present Position(36)"
+            titlekr: "Present Position(36)"
             url: /dxl/ax/ax-12w/#present-position-36
           - title: "Present Speed(38)"
+            titlekr: "Present Speed(38)"
             url: /dxl/ax/ax-12w/#present-speed-38
           - title: "Present Load(40)"
+            titlekr: "Present Load(40)"
             url: /dxl/ax/ax-12w/#present-load-40
           - title: "Present Voltage(42)"
+            titlekr: "Present Voltage(42)"
             url: /dxl/ax/ax-12w/#present-voltage-42
           - title: "Present Temperature(43)"
+            titlekr: "Present Temperature(43)"
             url: /dxl/ax/ax-12w/#present-temperature-43
           - title: "Registered Instruction(44)"
+            titlekr: "Registered Instruction(44)"
             url: /dxl/ax/ax-12w/#registered-instruction-44
           - title: "Moving(46)"
+            titlekr: "Moving(46)"
             url: /dxl/ax/ax-12w/#moving-46
           - title: "Lock(47)"
+            titlekr: "Lock(47)"
             url: /dxl/ax/ax-12w/#lock-47
           - title: "Punch(48)"
+            titlekr: "Punch(48)"
             url: /dxl/ax/ax-12w/#punch-48
   - title: "How to Assemble"
     titlekr: "조립 예시"
@@ -601,9 +637,9 @@ ax-12w:
     urlkr: /dxl/ax/ax-12w/#유지보수
     children:
       - title: "Horn, Bearing"
-        titlekr: "혼, 베어링"
+        titlekr: "혼과 베어링 교체"
         url: /dxl/ax/ax-12w/#horn-and-bearing-replacement
-        urlkr: /dxl/ax/ax-12w/#혼-베어링
+        urlkr: /dxl/ax/ax-12w/#혼과-베어링-교체
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/ax/ax-12w/#reference
@@ -618,16 +654,16 @@ ax-12w:
         url: /dxl/ax/ax-12w/#drawings
         urlkr: /dxl/ax/ax-12w/#도면
       - title: "Communication Circuit"
+        titlekr: "통신 회로"
         url: /dxl/ax/ax-12w/#communication-circuit
-      - title: "Pin Assignment"
-        url: /dxl/ax/ax-12w/#pin-assignment
+        urlkr: /dxl/ax/ax-12w/#통신-회로
 
 #AX-12A sidebar
 ax-12a:
   - title: "Specifications"
-    titlekr: "스펙"
+    titlekr: "주요 사양"
     url: /dxl/ax/ax-12a/#specifications
-    urlkr: /dxl/ax/ax-12a/#스펙
+    urlkr: /dxl/ax/ax-12a/#주요-사양
   - title: "Control Table"
     titlekr: "컨트롤 테이블"
     url: /dxl/ax/ax-12a/#control-table
@@ -639,13 +675,21 @@ ax-12a:
         urlkr: /dxl/ax/ax-12a/#컨트롤-테이블-데이터-주소
         children:
           - title: "Area(EEPROM, RAM)"
+            titlekr: "영역 (EEPROM, RAM)"
             url: /dxl/ax/ax-12a/#area-eeprom-ram
+            urlkr: /dxl/ax/ax-12a/#영역-eeprom-ram
           - title: "Size"
+            titlekr: "크기"
             url: /dxl/ax/ax-12a/#size
+            urlkr: /dxl/ax/ax-12a/#크기
           - title: "Access"
+            titlekr: "접근권한"
             url: /dxl/ax/ax-12a/#access
+            urlkr: /dxl/ax/ax-12a/#접근권한
           - title: "Initial Value"
+            titlekr: "초기값"
             url: /dxl/ax/ax-12a/#initial-value
+            urlkr: /dxl/ax/ax-12a/#초기값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/ax/ax-12a/#control-table-of-eeprom-area
@@ -725,9 +769,9 @@ ax-12a:
     urlkr: /dxl/ax/ax-12a/#유지보수
     children:
       - title: "Horn, Bearing"
-        titlekr: "혼, 베어링"
+        titlekr: "혼과 베어링 교체"
         url: /dxl/ax/ax-12a/#horn-and-bearing-replacement
-        urlkr: /dxl/ax/ax-12a/#혼-베어링
+        urlkr: /dxl/ax/ax-12a/#혼과-베어링-교체
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/ax/ax-12a/#reference
@@ -742,16 +786,16 @@ ax-12a:
         url: /dxl/ax/ax-12a/#drawings
         urlkr: /dxl/ax/ax-12a/#도면
       - title: "Communication Circuit"
+        titlekr: "통신 회로"
         url: /dxl/ax/ax-12a/#communication-circuit
-      - title: "Pin Assignment"
-        url: /dxl/ax/ax-12a/#pin-assignment
+        urlkr: /dxl/ax/ax-12a/#통신-회로
 
 #AX-18A sidebar
 ax-18a:
   - title: "Specifications"
-    titlekr: "스펙"
+    titlekr: "주요 사양"
     url: /dxl/ax/ax-18a/#specifications
-    urlkr: /dxl/ax/ax-18a/#스펙
+    urlkr: /dxl/ax/ax-18a/#주요-사양
   - title: "Control Table"
     titlekr: "컨트롤 테이블"
     url: /dxl/ax/ax-18a/#control-table
@@ -763,13 +807,21 @@ ax-18a:
         urlkr: /dxl/ax/ax-18a/#컨트롤-테이블-데이터-주소
         children:
           - title: "Area(EEPROM, RAM)"
+            titlekr: "영역 (EEPROM, RAM)"
             url: /dxl/ax/ax-18a/#area-eeprom-ram
+            urlkr: /dxl/ax/ax-18a/#영역-eeprom-ram
           - title: "Size"
+            titlekr: "크기"
             url: /dxl/ax/ax-18a/#size
+            urlkr: /dxl/ax/ax-18a/#크기
           - title: "Access"
+            titlekr: "접근권한"
             url: /dxl/ax/ax-18a/#access
+            urlkr: /dxl/ax/ax-18a/#접근권한
           - title: "Initial Value"
+            titlekr: "초기값"
             url: /dxl/ax/ax-18a/#initial-value
+            urlkr: /dxl/ax/ax-18a/#초기값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/ax/ax-18a/#control-table-of-eeprom-area
@@ -784,60 +836,88 @@ ax-18a:
         urlkr: /dxl/ax/ax-18a/#컨트롤-테이블-설명
         children:
           - title: "Model Number(0)"
+            titlekr: "Model Number(0)"
             url: /dxl/ax/ax-18a/#model-number-0
           - title: "Firmware Version(2)"
+            titlekr: "Firmware Version(2)"
             url: /dxl/ax/ax-18a/#firmware-version-2
           - title: "ID(3)"
+            titlekr: "ID(3)"
             url: /dxl/ax/ax-18a/#id-3
           - title: "Baud Rate(4)"
+            titlekr: "Baud Rate(4)"
             url: /dxl/ax/ax-18a/#baud-rate-4
           - title: "Return Delay Time(5)"
+            titlekr: "Return Delay Time(5)"
             url: /dxl/ax/ax-18a/#return-delay-time-5
           - title: "CW/CCW Angle Limit(6,8)"
+            titlekr: "CW/CCW Angle Limit(6,8)"
             url: /dxl/ax/ax-18a/#cwccw-angle-limit6-8
           - title: "Temperature Limit(11)"
+            titlekr: "Temperature Limit(11)"
             url: /dxl/ax/ax-18a/#temperature-limit-11
           - title: "Min/Max Voltage Limit(12,13)"
+            titlekr: "Min/Max Voltage Limit(12,13)"
             url: /dxl/ax/ax-18a/#minmax-voltage-limit-12-13
           - title: "Max Torque(14)"
+            titlekr: "Max Torque(14)"
             url: /dxl/ax/ax-18a/#max-torque-14
           - title: "Status Return Level(16)"
+            titlekr: "Status Return Level(16)"
             url: /dxl/ax/ax-18a/#status-return-level-16
           - title: "Alarm LED(17)"
+            titlekr: "Alarm LED(17)"
             url: /dxl/ax/ax-18a/#alarm-led17-shutdown18
           - title: "Shutdown(18)"
+            titlekr: "Shutdown(18)"
             url: /dxl/ax/ax-18a/#alarm-led17-shutdown18
           - title: "Torque Enable(24)"
+            titlekr: "Torque Enable(24)"
             url: /dxl/ax/ax-18a/#torque-enable-24
           - title: "LED(25)"
+            titlekr: "LED(25)"
             url: /dxl/ax/ax-18a/#led-25
           - title: "Compliance Margin(26,27)"
+            titlekr: "Compliance Margin(26,27)"
             url: /dxl/ax/ax-18a/#compliance-margin-26-27
           - title: "Compliance Slope(28,29)"
+            titlekr: "Compliance Slope(28,29)"
             url: /dxl/ax/ax-18a/#compliance-slope-28-29
           - title: "Goal Position(30)"
+            titlekr: "Goal Position(30)"
             url: /dxl/ax/ax-18a/#goal-position-30
           - title: "Moving Speed(32)"
+            titlekr: "Moving Speed(32)"
             url: /dxl/ax/ax-18a/#moving-speed-32
           - title: "Torque Limit(34)"
+            titlekr: "Torque Limit(34)"
             url: /dxl/ax/ax-18a/#torque-limit-34
           - title: "Present Position(36)"
+            titlekr: "Present Position(36)"
             url: /dxl/ax/ax-18a/#present-position-36
           - title: "Present Speed(38)"
+            titlekr: "Present Speed(38)"
             url: /dxl/ax/ax-18a/#present-speed-38
           - title: "Present Load(40)"
+            titlekr: "Present Load(40)"
             url: /dxl/ax/ax-18a/#present-load-40
           - title: "Present Voltage(42)"
+            titlekr: "Present Voltage(42)"
             url: /dxl/ax/ax-18a/#present-voltage-42
           - title: "Present Temperature(43)"
+            titlekr: "Present Temperature(43)"
             url: /dxl/ax/ax-18a/#present-temperature-43
           - title: "Registered Instruction(44)"
+            titlekr: "Registered Instruction(44)"
             url: /dxl/ax/ax-18a/#registered-instruction-44
           - title: "Moving(46)"
+            titlekr: "Moving(46)"
             url: /dxl/ax/ax-18a/#moving-46
           - title: "Lock(47)"
+            titlekr: "Lock(47)"
             url: /dxl/ax/ax-18a/#lock-47
           - title: "Punch(48)"
+            titlekr: "Punch(48)"
             url: /dxl/ax/ax-18a/#punch-48
   - title: "How to Assemble"
     titlekr: "조립 예시"
@@ -849,9 +929,9 @@ ax-18a:
     urlkr: /dxl/ax/ax-18a/#유지보수
     children:
       - title: "Horn, Bearing"
-        titlekr: "혼, 베어링"
+        titlekr: "혼과 베어링 교체"
         url: /dxl/ax/ax-18a/#horn-and-bearing-replacement
-        urlkr: /dxl/ax/ax-18a/#혼-베어링
+        urlkr: /dxl/ax/ax-18a/#혼과-베어링-교체
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/ax/ax-18a/#reference
@@ -866,16 +946,16 @@ ax-18a:
         url: /dxl/ax/ax-18a/#drawings
         urlkr: /dxl/ax/ax-18a/#도면
       - title: "Communication Circuit"
+        titlekr: "통신 회로"
         url: /dxl/ax/ax-18a/#communication-circuit
-      - title: "Pin Assignment"
-        url: /dxl/ax/ax-18a/#pin-assignment
+        urlkr: /dxl/ax/ax-18a/#통신-회로
 
 #ex-106+ sidebar
 ex-106+:
   - title: "Specifications"
-    titlekr: "스펙"
+    titlekr: "주요 사양"
     url: /dxl/ex/ex-106+/#specifications
-    urlkr: /dxl/ex/ex-106+/#스펙
+    urlkr: /dxl/ex/ex-106+/#주요-사양
   - title: "Control Table"
     titlekr: "컨트롤 테이블"
     url: /dxl/ex/ex-106+/#control-table
@@ -887,13 +967,21 @@ ex-106+:
         urlkr: /dxl/ex/ex-106+/#컨트롤-테이블-데이터-주소
         children:
           - title: "Area(EEPROM, RAM)"
+            titlekr: "영역 (EEPROM, RAM)"
             url: /dxl/ex/ex-106+/#area-eeprom-ram
+            urlkr: /dxl/ex/ex-106+/#영역-eeprom-ram
           - title: "Size"
+            titlekr: "크기"
             url: /dxl/ex/ex-106+/#size
+            urlkr: /dxl/ex/ex-106+/#크기
           - title: "Access"
+            titlekr: "접근권한"
             url: /dxl/ex/ex-106+/#access
+            urlkr: /dxl/ex/ex-106+/#접근권한
           - title: "Initial Value"
+            titlekr: "초기값"
             url: /dxl/ex/ex-106+/#initial-value
+            urlkr: /dxl/ex/ex-106+/#초기값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/ex/ex-106+/#control-table-of-eeprom-area
@@ -908,64 +996,94 @@ ex-106+:
         urlkr: /dxl/ex/ex-106+/#컨트롤-테이블-설명
         children:
           - title: "Model Number(0)"
+            titlekr: "Model Number(0)"
             url: /dxl/ex/ex-106+/#model-number-0
           - title: "Firmware Version(2)"
+            titlekr: "Firmware Version(2)"
             url: /dxl/ex/ex-106+/#firmware-version-2
           - title: "ID(3)"
+            titlekr: "ID(3)"
             url: /dxl/ex/ex-106+/#id-3
           - title: "Baud Rate(4)"
+            titlekr: "Baud Rate(4)"
             url: /dxl/ex/ex-106+/#baud-rate-4
           - title: "Return Delay Time(5)"
+            titlekr: "Return Delay Time(5)"
             url: /dxl/ex/ex-106+/#return-delay-time-5
           - title: "CW/CCW Angle Limit(6,8)"
+            titlekr: "CW/CCW Angle Limit(6,8)"
             url: /dxl/ex/ex-106+/#cwccw-angle-limit6-8
           - title: "Drive Mode(10)"
+            titlekr: "Drive Mode(10)"
             url: /dxl/ex/ex-106+/#drive-mode-10
           - title: "Temperature Limit(11)"
+            titlekr: "Temperature Limit(11)"
             url: /dxl/ex/ex-106+/#temperature-limit-11
           - title: "Min/Max Voltage Limit(12,13)"
+            titlekr: "Min/Max Voltage Limit(12,13)"
             url: /dxl/ex/ex-106+/#minmax-voltage-limit-12-13
           - title: "Max Torque(14)"
+            titlekr: "Max Torque(14)"
             url: /dxl/ex/ex-106+/#max-torque-14
           - title: "Status Return Level(16)"
+            titlekr: "Status Return Level(16)"
             url: /dxl/ex/ex-106+/#status-return-level-16
           - title: "Alarm LED(17)"
+            titlekr: "Alarm LED(17)"
             url: /dxl/ex/ex-106+/#alarm-led17-shutdown18
           - title: "Shutdown(18)"
+            titlekr: "Shutdown(18)"
             url: /dxl/ex/ex-106+/#alarm-led17-shutdown18
           - title: "Torque Enable(24)"
+            titlekr: "Torque Enable(24)"
             url: /dxl/ex/ex-106+/#torque-enable-24
           - title: "LED(25)"
+            titlekr: "LED(25)"
             url: /dxl/ex/ex-106+/#led-25
           - title: "Compliance Margin(26,27)"
+            titlekr: "Compliance Margin(26,27)"
             url: /dxl/ex/ex-106+/#compliance-margin-26-27
           - title: "Compliance Slope(28,29)"
+            titlekr: "Compliance Slope(28,29)"
             url: /dxl/ex/ex-106+/#compliance-slope-28-29
           - title: "Goal Position(30)"
+            titlekr: "Goal Position(30)"
             url: /dxl/ex/ex-106+/#goal-position-30
           - title: "Moving Speed(32)"
+            titlekr: "Moving Speed(32)"
             url: /dxl/ex/ex-106+/#moving-speed-32
           - title: "Torque Limit(34)"
+            titlekr: "Torque Limit(34)"
             url: /dxl/ex/ex-106+/#torque-limit-34
           - title: "Present Position(36)"
+            titlekr: "Present Position(36)"
             url: /dxl/ex/ex-106+/#present-position-36
           - title: "Present Speed(38)"
+            titlekr: "Present Speed(38)"
             url: /dxl/ex/ex-106+/#present-speed-38
           - title: "Present Load(40)"
+            titlekr: "Present Load(40)"
             url: /dxl/ex/ex-106+/#present-load-40
           - title: "Present Voltage(42)"
+            titlekr: "Present Voltage(42)"
             url: /dxl/ex/ex-106+/#present-voltage-42
           - title: "Present Temperature(43)"
+            titlekr: "Present Temperature(43)"
             url: /dxl/ex/ex-106+/#present-temperature-43
           - title: "Registered Instruction(44)"
+            titlekr: "Registered Instruction(44)"
             url: /dxl/ex/ex-106+/#registered-instruction-44
           - title: "Moving(46)"
+            titlekr: "Moving(46)"
             url: /dxl/ex/ex-106+/#moving-46
           - title: "Lock(47)"
+            titlekr: "Lock(47)"
             url: /dxl/ex/ex-106+/#lock-47
           - title: "Punch(48)"
+            titlekr: "Punch(48)"
             url: /dxl/ex/ex-106+/#punch-48
           - title: "Sensed Current(56)"
+            titlekr: "Sensed Current(56)"
             url: /dxl/ex/ex-106+/#sensed-current-56
   - title: "How to Assemble"
     titlekr: "조립 예시"
@@ -977,9 +1095,9 @@ ex-106+:
     urlkr: /dxl/ex/ex-106+/#유지보수
     children:
       - title: "Horn, Bearing"
-        titlekr: "혼, 베어링"
+        titlekr: "혼과 베어링 교체"
         url: /dxl/ex/ex-106+/#horn-and-bearing-replacement
-        urlkr: /dxl/ex/ex-106+/#혼-베어링
+        urlkr: /dxl/ex/ex-106+/#혼과-베어링-교체
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/ex/ex-106+/#reference
@@ -994,16 +1112,16 @@ ex-106+:
         url: /dxl/ex/ex-106+/#drawings
         urlkr: /dxl/ex/ex-106+/#도면
       - title: "Communication Circuit"
+        titlekr: "통신 회로"
         url: /dxl/ex/ex-106+/#communication-circuit
-      - title: "Pin Assignment"
-        url: /dxl/ex/ex-106+/#pin-assignment
+        urlkr: /dxl/ex/ex-106+/#통신-회로
 
 #dx-113 sidebar
 dx-113:
   - title: "Specifications"
-    titlekr: "스펙"
+    titlekr: "주요 사양"
     url: /dxl/dx/dx-113/#specifications
-    urlkr: /dxl/dx/dx-113/#스펙
+    urlkr: /dxl/dx/dx-113/#주요-사양
   - title: "Control Table"
     titlekr: "컨트롤 테이블"
     url: /dxl/dx/dx-113/#control-table
@@ -1015,13 +1133,21 @@ dx-113:
         urlkr: /dxl/dx/dx-113/#컨트롤-테이블-데이터-주소
         children:
           - title: "Area(EEPROM, RAM)"
+            titlekr: "영역 (EEPROM, RAM)"
             url: /dxl/dx/dx-113/#area-eeprom-ram
+            urlkr: /dxl/dx/dx-113/#영역-eeprom-ram
           - title: "Size"
+            titlekr: "크기"
             url: /dxl/dx/dx-113/#size
+            urlkr: /dxl/dx/dx-113/#크기
           - title: "Access"
+            titlekr: "접근권한"
             url: /dxl/dx/dx-113/#access
+            urlkr: /dxl/dx/dx-113/#접근권한
           - title: "Initial Value"
+            titlekr: "초기값"
             url: /dxl/dx/dx-113/#initial-value
+            urlkr: /dxl/dx/dx-113/#초기값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/dx/dx-113/#control-table-of-eeprom-area
@@ -1036,60 +1162,88 @@ dx-113:
         urlkr: /dxl/dx/dx-113/#컨트롤-테이블-설명
         children:
           - title: "Model Number(0)"
+            titlekr: "Model Number(0)"
             url: /dxl/dx/dx-113/#model-number-0
           - title: "Firmware Version(2)"
+            titlekr: "Firmware Version(2)"
             url: /dxl/dx/dx-113/#firmware-version-2
           - title: "ID(3)"
+            titlekr: "ID(3)"
             url: /dxl/dx/dx-113/#id-3
           - title: "Baud Rate(4)"
+            titlekr: "Baud Rate(4)"
             url: /dxl/dx/dx-113/#baud-rate-4
           - title: "Return Delay Time(5)"
+            titlekr: "Return Delay Time(5)"
             url: /dxl/dx/dx-113/#return-delay-time-5
           - title: "CW/CCW Angle Limit(6,8)"
+            titlekr: "CW/CCW Angle Limit(6,8)"
             url: /dxl/dx/dx-113/#cwccw-angle-limit6-8
           - title: "Temperature Limit(11)"
+            titlekr: "Temperature Limit(11)"
             url: /dxl/dx/dx-113/#temperature-limit-11
           - title: "Min/Max Voltage Limit(12,13)"
+            titlekr: "Min/Max Voltage Limit(12,13)"
             url: /dxl/dx/dx-113/#minmax-voltage-limit-12-13
           - title: "Max Torque(14)"
+            titlekr: "Max Torque(14)"
             url: /dxl/dx/dx-113/#max-torque-14
           - title: "Status Return Level(16)"
+            titlekr: "Status Return Level(16)"
             url: /dxl/dx/dx-113/#status-return-level-16
           - title: "Alarm LED(17)"
+            titlekr: "Alarm LED(17)"
             url: /dxl/dx/dx-113/#alarm-led17-shutdown18
           - title: "Shutdown(18)"
+            titlekr: "Shutdown(18)"
             url: /dxl/dx/dx-113/#alarm-led17-shutdown18
           - title: "Torque Enable(24)"
+            titlekr: "Torque Enable(24)"
             url: /dxl/dx/dx-113/#torque-enable-24
           - title: "LED(25)"
+            titlekr: "LED(25)"
             url: /dxl/dx/dx-113/#led-25
           - title: "Compliance Margin(26,27)"
+            titlekr: "Compliance Margin(26,27)"
             url: /dxl/dx/dx-113/#compliance-margin-26-27
           - title: "Compliance Slope(28,29)"
+            titlekr: "Compliance Slope(28,29)"
             url: /dxl/dx/dx-113/#compliance-slope-28-29
           - title: "Goal Position(30)"
+            titlekr: "Goal Position(30)"
             url: /dxl/dx/dx-113/#goal-position-30
           - title: "Moving Speed(32)"
+            titlekr: "Moving Speed(32)"
             url: /dxl/dx/dx-113/#moving-speed-32
           - title: "Torque Limit(34)"
+            titlekr: "Torque Limit(34)"
             url: /dxl/dx/dx-113/#torque-limit-34
           - title: "Present Position(36)"
+            titlekr: "Present Position(36)"
             url: /dxl/dx/dx-113/#present-position-36
           - title: "Present Speed(38)"
+            titlekr: "Present Speed(38)"
             url: /dxl/dx/dx-113/#present-speed-38
           - title: "Present Load(40)"
+            titlekr: "Present Load(40)"
             url: /dxl/dx/dx-113/#present-load-40
           - title: "Present Voltage(42)"
+            titlekr: "Present Voltage(42)"
             url: /dxl/dx/dx-113/#present-voltage-42
           - title: "Present Temperature(43)"
+            titlekr: "Present Temperature(43)"
             url: /dxl/dx/dx-113/#present-temperature-43
           - title: "Registered Instruction(44)"
+            titlekr: "Registered Instruction(44)"
             url: /dxl/dx/dx-113/#registered-instruction-44
           - title: "Moving(46)"
+            titlekr: "Moving(46)"
             url: /dxl/dx/dx-113/#moving-46
           - title: "Lock(47)"
+            titlekr: "Lock(47)"
             url: /dxl/dx/dx-113/#lock-47
           - title: "Punch(48)"
+            titlekr: "Punch(48)"
             url: /dxl/dx/dx-113/#punch-48
   - title: "How to Assemble"
     titlekr: "조립 예시"
@@ -1101,9 +1255,9 @@ dx-113:
     urlkr: /dxl/dx/dx-113/#유지보수
     children:
       - title: "Horn, Bearing"
-        titlekr: "혼, 베어링"
+        titlekr: "혼과 베어링 교체"
         url: /dxl/dx/dx-113/#horn-and-bearing-replacement
-        urlkr: /dxl/dx/dx-113/#혼-베어링
+        urlkr: /dxl/dx/dx-113/#혼과-베어링-교체
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/dx/dx-113/#reference
@@ -1118,16 +1272,16 @@ dx-113:
         url: /dxl/dx/dx-113/#drawings
         urlkr: /dxl/dx/dx-113/#도면
       - title: "Communication Circuit"
+        titlekr: "통신 회로"
         url: /dxl/dx/dx-113/#communication-circuit
-      - title: "Pin Assignment"
-        url: /dxl/dx/dx-113/#pin-assignment
+        urlkr: /dxl/dx/dx-113/#통신-회로
 
 #dx-116 sidebar
 dx-116:
   - title: "Specifications"
-    titlekr: "스펙"
+    titlekr: "주요 사양"
     url: /dxl/dx/dx-116/#specifications
-    urlkr: /dxl/dx/dx-116/#스펙
+    urlkr: /dxl/dx/dx-116/#주요-사양
   - title: "Control Table"
     titlekr: "컨트롤 테이블"
     url: /dxl/dx/dx-116/#control-table
@@ -1139,13 +1293,21 @@ dx-116:
         urlkr: /dxl/dx/dx-116/#컨트롤-테이블-데이터-주소
         children:
           - title: "Area(EEPROM, RAM)"
+            titlekr: "영역 (EEPROM, RAM)"
             url: /dxl/dx/dx-116/#area-eeprom-ram
+            urlkr: /dxl/dx/dx-116/#영역-eeprom-ram
           - title: "Size"
+            titlekr: "크기"
             url: /dxl/dx/dx-116/#size
+            urlkr: /dxl/dx/dx-116/#크기
           - title: "Access"
+            titlekr: "접근권한"
             url: /dxl/dx/dx-116/#access
+            urlkr: /dxl/dx/dx-116/#접근권한
           - title: "Initial Value"
+            titlekr: "초기값"
             url: /dxl/dx/dx-116/#initial-value
+            urlkr: /dxl/dx/dx-116/#초기값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/dx/dx-116/#control-table-of-eeprom-area
@@ -1160,60 +1322,88 @@ dx-116:
         urlkr: /dxl/dx/dx-116/#컨트롤-테이블-설명
         children:
           - title: "Model Number(0)"
+            titlekr: "Model Number(0)"
             url: /dxl/dx/dx-116/#model-number-0
           - title: "Firmware Version(2)"
+            titlekr: "Firmware Version(2)"
             url: /dxl/dx/dx-116/#firmware-version-2
           - title: "ID(3)"
+            titlekr: "ID(3)"
             url: /dxl/dx/dx-116/#id-3
           - title: "Baud Rate(4)"
+            titlekr: "Baud Rate(4)"
             url: /dxl/dx/dx-116/#baud-rate-4
           - title: "Return Delay Time(5)"
+            titlekr: "Return Delay Time(5)"
             url: /dxl/dx/dx-116/#return-delay-time-5
           - title: "CW/CCW Angle Limit(6,8)"
+            titlekr: "CW/CCW Angle Limit(6,8)"
             url: /dxl/dx/dx-116/#cwccw-angle-limit6-8
           - title: "Temperature Limit(11)"
+            titlekr: "Temperature Limit(11)"
             url: /dxl/dx/dx-116/#temperature-limit-11
           - title: "Min/Max Voltage Limit(12,13)"
+            titlekr: "Min/Max Voltage Limit(12,13)"
             url: /dxl/dx/dx-116/#minmax-voltage-limit-12-13
           - title: "Max Torque(14)"
+            titlekr: "Max Torque(14)"
             url: /dxl/dx/dx-116/#max-torque-14
           - title: "Status Return Level(16)"
+            titlekr: "Status Return Level(16)"
             url: /dxl/dx/dx-116/#status-return-level-16
           - title: "Alarm LED(17)"
+            titlekr: "Alarm LED(17)"
             url: /dxl/dx/dx-116/#alarm-led17-shutdown18
           - title: "Shutdown(18)"
+            titlekr: "Shutdown(18)"
             url: /dxl/dx/dx-116/#alarm-led17-shutdown18
           - title: "Torque Enable(24)"
+            titlekr: "Torque Enable(24)"
             url: /dxl/dx/dx-116/#torque-enable-24
           - title: "LED(25)"
+            titlekr: "LED(25)"
             url: /dxl/dx/dx-116/#led-25
           - title: "Compliance Margin(26,27)"
+            titlekr: "Compliance Margin(26,27)"
             url: /dxl/dx/dx-116/#compliance-margin-26-27
           - title: "Compliance Slope(28,29)"
+            titlekr: "Compliance Slope(28,29)"
             url: /dxl/dx/dx-116/#compliance-slope-28-29
           - title: "Goal Position(30)"
+            titlekr: "Goal Position(30)"
             url: /dxl/dx/dx-116/#goal-position-30
           - title: "Moving Speed(32)"
+            titlekr: "Moving Speed(32)"
             url: /dxl/dx/dx-116/#moving-speed-32
           - title: "Torque Limit(34)"
+            titlekr: "Torque Limit(34)"
             url: /dxl/dx/dx-116/#torque-limit-34
           - title: "Present Position(36)"
+            titlekr: "Present Position(36)"
             url: /dxl/dx/dx-116/#present-position-36
           - title: "Present Speed(38)"
+            titlekr: "Present Speed(38)"
             url: /dxl/dx/dx-116/#present-speed-38
           - title: "Present Load(40)"
+            titlekr: "Present Load(40)"
             url: /dxl/dx/dx-116/#present-load-40
           - title: "Present Voltage(42)"
+            titlekr: "Present Voltage(42)"
             url: /dxl/dx/dx-116/#present-voltage-42
           - title: "Present Temperature(43)"
+            titlekr: "Present Temperature(43)"
             url: /dxl/dx/dx-116/#present-temperature-43
           - title: "Registered Instruction(44)"
+            titlekr: "Registered Instruction(44)"
             url: /dxl/dx/dx-116/#registered-instruction-44
           - title: "Moving(46)"
+            titlekr: "Moving(46)"
             url: /dxl/dx/dx-116/#moving-46
           - title: "Lock(47)"
+            titlekr: "Lock(47)"
             url: /dxl/dx/dx-116/#lock-47
           - title: "Punch(48)"
+            titlekr: "Punch(48)"
             url: /dxl/dx/dx-116/#punch-48
   - title: "How to Assemble"
     titlekr: "조립 예시"
@@ -1225,9 +1415,9 @@ dx-116:
     urlkr: /dxl/dx/dx-116/#유지보수
     children:
       - title: "Horn, Bearing"
-        titlekr: "혼, 베어링"
+        titlekr: "혼과 베어링 교체"
         url: /dxl/dx/dx-116/#horn-and-bearing-replacement
-        urlkr: /dxl/dx/dx-116/#혼-베어링
+        urlkr: /dxl/dx/dx-116/#혼과-베어링-교체
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/dx/dx-116/#reference
@@ -1242,16 +1432,16 @@ dx-116:
         url: /dxl/dx/dx-116/#drawings
         urlkr: /dxl/dx/dx-116/#도면
       - title: "Communication Circuit"
+        titlekr: "통신 회로"
         url: /dxl/dx/dx-116/#communication-circuit
-      - title: "Pin Assignment"
-        url: /dxl/dx/dx-116/#pin-assignment
+        urlkr: /dxl/dx/dx-116/#통신-회로
 
 #dx-117 sidebar
 dx-117:
   - title: "Specifications"
-    titlekr: "스펙"
+    titlekr: "주요 사양"
     url: /dxl/dx/dx-117/#specifications
-    urlkr: /dxl/dx/dx-117/#스펙
+    urlkr: /dxl/dx/dx-117/#주요-사양
   - title: "Control Table"
     titlekr: "컨트롤 테이블"
     url: /dxl/dx/dx-117/#control-table
@@ -1263,13 +1453,21 @@ dx-117:
         urlkr: /dxl/dx/dx-117/#컨트롤-테이블-데이터-주소
         children:
           - title: "Area(EEPROM, RAM)"
+            titlekr: "영역 (EEPROM, RAM)"
             url: /dxl/dx/dx-117/#area-eeprom-ram
+            urlkr: /dxl/dx/dx-117/#영역-eeprom-ram
           - title: "Size"
+            titlekr: "크기"
             url: /dxl/dx/dx-117/#size
+            urlkr: /dxl/dx/dx-117/#크기
           - title: "Access"
+            titlekr: "접근권한"
             url: /dxl/dx/dx-117/#access
+            urlkr: /dxl/dx/dx-117/#접근권한
           - title: "Initial Value"
+            titlekr: "초기값"
             url: /dxl/dx/dx-117/#initial-value
+            urlkr: /dxl/dx/dx-117/#초기값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/dx/dx-117/#control-table-of-eeprom-area
@@ -1284,60 +1482,88 @@ dx-117:
         urlkr: /dxl/dx/dx-117/#컨트롤-테이블-설명
         children:
           - title: "Model Number(0)"
+            titlekr: "Model Number(0)"
             url: /dxl/dx/dx-117/#model-number-0
           - title: "Firmware Version(2)"
+            titlekr: "Firmware Version(2)"
             url: /dxl/dx/dx-117/#firmware-version-2
           - title: "ID(3)"
+            titlekr: "ID(3)"
             url: /dxl/dx/dx-117/#id-3
           - title: "Baud Rate(4)"
+            titlekr: "Baud Rate(4)"
             url: /dxl/dx/dx-117/#baud-rate-4
           - title: "Return Delay Time(5)"
+            titlekr: "Return Delay Time(5)"
             url: /dxl/dx/dx-117/#return-delay-time-5
           - title: "CW/CCW Angle Limit(6,8)"
+            titlekr: "CW/CCW Angle Limit(6,8)"
             url: /dxl/dx/dx-117/#cwccw-angle-limit6-8
           - title: "Temperature Limit(11)"
+            titlekr: "Temperature Limit(11)"
             url: /dxl/dx/dx-117/#temperature-limit-11
           - title: "Min/Max Voltage Limit(12,13)"
+            titlekr: "Min/Max Voltage Limit(12,13)"
             url: /dxl/dx/dx-117/#minmax-voltage-limit-12-13
           - title: "Max Torque(14)"
+            titlekr: "Max Torque(14)"
             url: /dxl/dx/dx-117/#max-torque-14
           - title: "Status Return Level(16)"
+            titlekr: "Status Return Level(16)"
             url: /dxl/dx/dx-117/#status-return-level-16
           - title: "Alarm LED(17)"
+            titlekr: "Alarm LED(17)"
             url: /dxl/dx/dx-117/#alarm-led17-shutdown18
           - title: "Shutdown(18)"
+            titlekr: "Shutdown(18)"
             url: /dxl/dx/dx-117/#alarm-led17-shutdown18
           - title: "Torque Enable(24)"
+            titlekr: "Torque Enable(24)"
             url: /dxl/dx/dx-117/#torque-enable-24
           - title: "LED(25)"
+            titlekr: "LED(25)"
             url: /dxl/dx/dx-117/#led-25
           - title: "Compliance Margin(26,27)"
+            titlekr: "Compliance Margin(26,27)"
             url: /dxl/dx/dx-117/#compliance-margin-26-27
           - title: "Compliance Slope(28,29)"
+            titlekr: "Compliance Slope(28,29)"
             url: /dxl/dx/dx-117/#compliance-slope-28-29
           - title: "Goal Position(30)"
+            titlekr: "Goal Position(30)"
             url: /dxl/dx/dx-117/#goal-position-30
           - title: "Moving Speed(32)"
+            titlekr: "Moving Speed(32)"
             url: /dxl/dx/dx-117/#moving-speed-32
           - title: "Torque Limit(34)"
+            titlekr: "Torque Limit(34)"
             url: /dxl/dx/dx-117/#torque-limit-34
           - title: "Present Position(36)"
+            titlekr: "Present Position(36)"
             url: /dxl/dx/dx-117/#present-position-36
           - title: "Present Speed(38)"
+            titlekr: "Present Speed(38)"
             url: /dxl/dx/dx-117/#present-speed-38
           - title: "Present Load(40)"
+            titlekr: "Present Load(40)"
             url: /dxl/dx/dx-117/#present-load-40
           - title: "Present Voltage(42)"
+            titlekr: "Present Voltage(42)"
             url: /dxl/dx/dx-117/#present-voltage-42
           - title: "Present Temperature(43)"
+            titlekr: "Present Temperature(43)"
             url: /dxl/dx/dx-117/#present-temperature-43
           - title: "Registered Instruction(44)"
+            titlekr: "Registered Instruction(44)"
             url: /dxl/dx/dx-117/#registered-instruction-44
           - title: "Moving(46)"
+            titlekr: "Moving(46)"
             url: /dxl/dx/dx-117/#moving-46
           - title: "Lock(47)"
+            titlekr: "Lock(47)"
             url: /dxl/dx/dx-117/#lock-47
           - title: "Punch(48)"
+            titlekr: "Punch(48)"
             url: /dxl/dx/dx-117/#punch-48
   - title: "How to Assemble"
     titlekr: "조립 예시"
@@ -1349,9 +1575,9 @@ dx-117:
     urlkr: /dxl/dx/dx-117/#유지보수
     children:
       - title: "Horn, Bearing"
-        titlekr: "혼, 베어링"
+        titlekr: "혼과 베어링 교체"
         url: /dxl/dx/dx-117/#horn-and-bearing-replacement
-        urlkr: /dxl/dx/dx-117/#혼-베어링
+        urlkr: /dxl/dx/dx-117/#혼과-베어링-교체
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/dx/dx-117/#reference
@@ -1366,16 +1592,16 @@ dx-117:
         url: /dxl/dx/dx-117/#drawings
         urlkr: /dxl/dx/dx-117/#도면
       - title: "Communication Circuit"
+        titlekr: "통신 회로"
         url: /dxl/dx/dx-117/#communication-circuit
-      - title: "Pin Assignment"
-        url: /dxl/dx/dx-117/#pin-assignment
+        urlkr: /dxl/dx/dx-117/#통신-회로
 
 #RX-10 sidebar
 rx-10:
   - title: "Specifications"
-    titlekr: "스펙"
+    titlekr: "주요 사양"
     url: /dxl/rx/rx-10/#specifications
-    urlkr: /dxl/rx/rx-10/#스펙
+    urlkr: /dxl/rx/rx-10/#주요-사양
   - title: "Control Table"
     titlekr: "컨트롤 테이블"
     url: /dxl/rx/rx-10/#control-table
@@ -1387,13 +1613,21 @@ rx-10:
         urlkr: /dxl/rx/rx-10/#컨트롤-테이블-데이터-주소
         children:
           - title: "Area(EEPROM, RAM)"
+            titlekr: "영역 (EEPROM, RAM)"
             url: /dxl/rx/rx-10/#area-eeprom-ram
+            urlkr: /dxl/rx/rx-10/#영역-eeprom-ram
           - title: "Size"
+            titlekr: "크기"
             url: /dxl/rx/rx-10/#size
+            urlkr: /dxl/rx/rx-10/#크기
           - title: "Access"
+            titlekr: "접근권한"
             url: /dxl/rx/rx-10/#access
+            urlkr: /dxl/rx/rx-10/#접근권한
           - title: "Initial Value"
+            titlekr: "초기값"
             url: /dxl/rx/rx-10/#initial-value
+            urlkr: /dxl/rx/rx-10/#초기값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/rx/rx-10/#control-table-of-eeprom-area
@@ -1408,60 +1642,88 @@ rx-10:
         urlkr: /dxl/rx/rx-10/#컨트롤-테이블-설명
         children:
           - title: "Model Number(0)"
+            titlekr: "Model Number(0)"
             url: /dxl/rx/rx-10/#model-number-0
           - title: "Firmware Version(2)"
+            titlekr: "Firmware Version(2)"
             url: /dxl/rx/rx-10/#firmware-version-2
           - title: "ID(3)"
+            titlekr: "ID(3)"
             url: /dxl/rx/rx-10/#id-3
           - title: "Baud Rate(4)"
+            titlekr: "Baud Rate(4)"
             url: /dxl/rx/rx-10/#baud-rate-4
           - title: "Return Delay Time(5)"
+            titlekr: "Return Delay Time(5)"
             url: /dxl/rx/rx-10/#return-delay-time-5
           - title: "CW/CCW Angle Limit(6,8)"
+            titlekr: "CW/CCW Angle Limit(6,8)"
             url: /dxl/rx/rx-10/#cwccw-angle-limit6-8
           - title: "Temperature Limit(11)"
+            titlekr: "Temperature Limit(11)"
             url: /dxl/rx/rx-10/#temperature-limit-11
           - title: "Min/Max Voltage Limit(12,13)"
+            titlekr: "Min/Max Voltage Limit(12,13)"
             url: /dxl/rx/rx-10/#minmax-voltage-limit-12-13
           - title: "Max Torque(14)"
+            titlekr: "Max Torque(14)"
             url: /dxl/rx/rx-10/#max-torque-14
           - title: "Status Return Level(16)"
+            titlekr: "Status Return Level(16)"
             url: /dxl/rx/rx-10/#status-return-level-16
           - title: "Alarm LED(17)"
+            titlekr: "Alarm LED(17)"
             url: /dxl/rx/rx-10/#alarm-led17-shutdown18
           - title: "Shutdown(18)"
+            titlekr: "Shutdown(18)"
             url: /dxl/rx/rx-10/#alarm-led17-shutdown18
           - title: "Torque Enable(24)"
+            titlekr: "Torque Enable(24)"
             url: /dxl/rx/rx-10/#torque-enable-24
           - title: "LED(25)"
+            titlekr: "LED(25)"
             url: /dxl/rx/rx-10/#led-25
           - title: "Compliance Margin(26,27)"
+            titlekr: "Compliance Margin(26,27)"
             url: /dxl/rx/rx-10/#compliance-margin-26-27
           - title: "Compliance Slope(28,29)"
+            titlekr: "Compliance Slope(28,29)"
             url: /dxl/rx/rx-10/#compliance-slope-28-29
           - title: "Goal Position(30)"
+            titlekr: "Goal Position(30)"
             url: /dxl/rx/rx-10/#goal-position-30
           - title: "Moving Speed(32)"
+            titlekr: "Moving Speed(32)"
             url: /dxl/rx/rx-10/#moving-speed-32
           - title: "Torque Limit(34)"
+            titlekr: "Torque Limit(34)"
             url: /dxl/rx/rx-10/#torque-limit-34
           - title: "Present Position(36)"
+            titlekr: "Present Position(36)"
             url: /dxl/rx/rx-10/#present-position-36
           - title: "Present Speed(38)"
+            titlekr: "Present Speed(38)"
             url: /dxl/rx/rx-10/#present-speed-38
           - title: "Present Load(40)"
+            titlekr: "Present Load(40)"
             url: /dxl/rx/rx-10/#present-load-40
           - title: "Present Voltage(42)"
+            titlekr: "Present Voltage(42)"
             url: /dxl/rx/rx-10/#present-voltage-42
           - title: "Present Temperature(43)"
+            titlekr: "Present Temperature(43)"
             url: /dxl/rx/rx-10/#present-temperature-43
           - title: "Registered Instruction(44)"
+            titlekr: "Registered Instruction(44)"
             url: /dxl/rx/rx-10/#registered-instruction-44
           - title: "Moving(46)"
+            titlekr: "Moving(46)"
             url: /dxl/rx/rx-10/#moving-46
           - title: "Lock(47)"
+            titlekr: "Lock(47)"
             url: /dxl/rx/rx-10/#lock-47
           - title: "Punch(48)"
+            titlekr: "Punch(48)"
             url: /dxl/rx/rx-10/#punch-48
   - title: "How to Assemble"
     titlekr: "조립 예시"
@@ -1473,9 +1735,9 @@ rx-10:
     urlkr: /dxl/rx/rx-10/#유지보수
     children:
       - title: "Horn, Bearing"
-        titlekr: "혼, 베어링"
+        titlekr: "혼과 베어링 교체"
         url: /dxl/rx/rx-10/#horn-and-bearing-replacement
-        urlkr: /dxl/rx/rx-10/#혼-베어링
+        urlkr: /dxl/rx/rx-10/#혼과-베어링-교체
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/rx/rx-10/#reference
@@ -1497,9 +1759,9 @@ rx-10:
 #RX-24F sidebar
 rx-24f:
   - title: "Specifications"
-    titlekr: "스펙"
+    titlekr: "주요 사양"
     url: /dxl/rx/rx-24f/#specifications
-    urlkr: /dxl/rx/rx-24f/#스펙
+    urlkr: /dxl/rx/rx-24f/#주요-사양
   - title: "Control Table"
     titlekr: "컨트롤 테이블"
     url: /dxl/rx/rx-24f/#control-table
@@ -1511,13 +1773,21 @@ rx-24f:
         urlkr: /dxl/rx/rx-24f/#컨트롤-테이블-데이터-주소
         children:
           - title: "Area(EEPROM, RAM)"
+            titlekr: "영역 (EEPROM, RAM)"
             url: /dxl/rx/rx-24f/#area-eeprom-ram
+            urlkr: /dxl/rx/rx-24f/#영역-eeprom-ram
           - title: "Size"
+            titlekr: "크기"
             url: /dxl/rx/rx-24f/#size
+            urlkr: /dxl/rx/rx-24f/#크기
           - title: "Access"
+            titlekr: "접근권한"
             url: /dxl/rx/rx-24f/#access
+            urlkr: /dxl/rx/rx-24f/#접근권한
           - title: "Initial Value"
+            titlekr: "초기값"
             url: /dxl/rx/rx-24f/#initial-value
+            urlkr: /dxl/rx/rx-24f/#초기값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/rx/rx-24f/#control-table-of-eeprom-area
@@ -1532,60 +1802,88 @@ rx-24f:
         urlkr: /dxl/rx/rx-24f/#컨트롤-테이블-설명
         children:
           - title: "Model Number(0)"
+            titlekr: "Model Number(0)"
             url: /dxl/rx/rx-24f/#model-number-0
           - title: "Firmware Version(2)"
+            titlekr: "Firmware Version(2)"
             url: /dxl/rx/rx-24f/#firmware-version-2
           - title: "ID(3)"
+            titlekr: "ID(3)"
             url: /dxl/rx/rx-24f/#id-3
           - title: "Baud Rate(4)"
+            titlekr: "Baud Rate(4)"
             url: /dxl/rx/rx-24f/#baud-rate-4
           - title: "Return Delay Time(5)"
+            titlekr: "Return Delay Time(5)"
             url: /dxl/rx/rx-24f/#return-delay-time-5
           - title: "CW/CCW Angle Limit(6,8)"
+            titlekr: "CW/CCW Angle Limit(6,8)"
             url: /dxl/rx/rx-24f/#cwccw-angle-limit6-8
           - title: "Temperature Limit(11)"
+            titlekr: "Temperature Limit(11)"
             url: /dxl/rx/rx-24f/#temperature-limit-11
           - title: "Min/Max Voltage Limit(12,13)"
+            titlekr: "Min/Max Voltage Limit(12,13)"
             url: /dxl/rx/rx-24f/#minmax-voltage-limit-12-13
           - title: "Max Torque(14)"
+            titlekr: "Max Torque(14)"
             url: /dxl/rx/rx-24f/#max-torque-14
           - title: "Status Return Level(16)"
+            titlekr: "Status Return Level(16)"
             url: /dxl/rx/rx-24f/#status-return-level-16
           - title: "Alarm LED(17)"
+            titlekr: "Alarm LED(17)"
             url: /dxl/rx/rx-24f/#alarm-led17-shutdown18
           - title: "Shutdown(18)"
+            titlekr: "Shutdown(18)"
             url: /dxl/rx/rx-24f/#alarm-led17-shutdown18
           - title: "Torque Enable(24)"
+            titlekr: "Torque Enable(24)"
             url: /dxl/rx/rx-24f/#torque-enable-24
           - title: "LED(25)"
+            titlekr: "LED(25)"
             url: /dxl/rx/rx-24f/#led-25
           - title: "Compliance Margin(26,27)"
+            titlekr: "Compliance Margin(26,27)"
             url: /dxl/rx/rx-24f/#compliance-margin-26-27
           - title: "Compliance Slope(28,29)"
+            titlekr: "Compliance Slope(28,29)"
             url: /dxl/rx/rx-24f/#compliance-slope-28-29
           - title: "Goal Position(30)"
+            titlekr: "Goal Position(30)"
             url: /dxl/rx/rx-24f/#goal-position-30
           - title: "Moving Speed(32)"
+            titlekr: "Moving Speed(32)"
             url: /dxl/rx/rx-24f/#moving-speed-32
           - title: "Torque Limit(34)"
+            titlekr: "Torque Limit(34)"
             url: /dxl/rx/rx-24f/#torque-limit-34
           - title: "Present Position(36)"
+            titlekr: "Present Position(36)"
             url: /dxl/rx/rx-24f/#present-position-36
           - title: "Present Speed(38)"
+            titlekr: "Present Speed(38)"
             url: /dxl/rx/rx-24f/#present-speed-38
           - title: "Present Load(40)"
+            titlekr: "Present Load(40)"
             url: /dxl/rx/rx-24f/#present-load-40
           - title: "Present Voltage(42)"
+            titlekr: "Present Voltage(42)"
             url: /dxl/rx/rx-24f/#present-voltage-42
           - title: "Present Temperature(43)"
+            titlekr: "Present Temperature(43)"
             url: /dxl/rx/rx-24f/#present-temperature-43
           - title: "Registered Instruction(44)"
+            titlekr: "Registered Instruction(44)"
             url: /dxl/rx/rx-24f/#registered-instruction-44
           - title: "Moving(46)"
+            titlekr: "Moving(46)"
             url: /dxl/rx/rx-24f/#moving-46
           - title: "Lock(47)"
+            titlekr: "Lock(47)"
             url: /dxl/rx/rx-24f/#lock-47
           - title: "Punch(48)"
+            titlekr: "Punch(48)"
             url: /dxl/rx/rx-24f/#punch-48
   - title: "How to Assemble"
     titlekr: "조립 예시"
@@ -1597,9 +1895,9 @@ rx-24f:
     urlkr: /dxl/rx/rx-24f/#유지보수
     children:
       - title: "Horn, Bearing"
-        titlekr: "혼, 베어링"
+        titlekr: "혼과 베어링 교체"
         url: /dxl/rx/rx-24f/#horn-and-bearing-replacement
-        urlkr: /dxl/rx/rx-24f/#혼-베어링
+        urlkr: /dxl/rx/rx-24f/#혼과-베어링-교체
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/rx/rx-24f/#reference
@@ -1614,16 +1912,16 @@ rx-24f:
         url: /dxl/rx/rx-24f/#drawings
         urlkr: /dxl/rx/rx-24f/#도면
       - title: "Communication Circuit"
+        titlekr: "통신 회로"
         url: /dxl/rx/rx-24f/#communication-circuit
-      - title: "Pin Assignment"
-        url: /dxl/rx/rx-24f/#pin-assignment
-
+        urlkr: /dxl/rx/rx-24f/#통신-회로
+        
 #RX-28 sidebar
 rx-28:
   - title: "Specifications"
-    titlekr: "스펙"
+    titlekr: "주요 사양"
     url: /dxl/rx/rx-28/#specifications
-    urlkr: /dxl/rx/rx-28/#스펙
+    urlkr: /dxl/rx/rx-28/#주요-사양
   - title: "Control Table"
     titlekr: "컨트롤 테이블"
     url: /dxl/rx/rx-28/#control-table
@@ -1635,13 +1933,21 @@ rx-28:
         urlkr: /dxl/rx/rx-28/#컨트롤-테이블-데이터-주소
         children:
           - title: "Area(EEPROM, RAM)"
+            titlekr: "영역 (EEPROM, RAM)"
             url: /dxl/rx/rx-28/#area-eeprom-ram
+            urlkr: /dxl/rx/rx-28/#영역-eeprom-ram
           - title: "Size"
+            titlekr: "크기"
             url: /dxl/rx/rx-28/#size
+            urlkr: /dxl/rx/rx-28/#크기
           - title: "Access"
+            titlekr: "접근권한"
             url: /dxl/rx/rx-28/#access
+            urlkr: /dxl/rx/rx-28/#접근권한
           - title: "Initial Value"
+            titlekr: "초기값"
             url: /dxl/rx/rx-28/#initial-value
+            urlkr: /dxl/rx/rx-28/#초기값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/rx/rx-28/#control-table-of-eeprom-area
@@ -1656,60 +1962,88 @@ rx-28:
         urlkr: /dxl/rx/rx-28/#컨트롤-테이블-설명
         children:
           - title: "Model Number(0)"
+            titlekr: "Model Number(0)"
             url: /dxl/rx/rx-28/#model-number-0
           - title: "Firmware Version(2)"
+            titlekr: "Firmware Version(2)"
             url: /dxl/rx/rx-28/#firmware-version-2
           - title: "ID(3)"
+            titlekr: "ID(3)"
             url: /dxl/rx/rx-28/#id-3
           - title: "Baud Rate(4)"
+            titlekr: "Baud Rate(4)"
             url: /dxl/rx/rx-28/#baud-rate-4
           - title: "Return Delay Time(5)"
+            titlekr: "Return Delay Time(5)"
             url: /dxl/rx/rx-28/#return-delay-time-5
           - title: "CW/CCW Angle Limit(6,8)"
+            titlekr: "CW/CCW Angle Limit(6,8)"
             url: /dxl/rx/rx-28/#cwccw-angle-limit6-8
           - title: "Temperature Limit(11)"
+            titlekr: "Temperature Limit(11)"
             url: /dxl/rx/rx-28/#temperature-limit-11
           - title: "Min/Max Voltage Limit(12,13)"
+            titlekr: "Min/Max Voltage Limit(12,13)"
             url: /dxl/rx/rx-28/#minmax-voltage-limit-12-13
           - title: "Max Torque(14)"
+            titlekr: "Max Torque(14)"
             url: /dxl/rx/rx-28/#max-torque-14
           - title: "Status Return Level(16)"
+            titlekr: "Status Return Level(16)"
             url: /dxl/rx/rx-28/#status-return-level-16
           - title: "Alarm LED(17)"
+            titlekr: "Alarm LED(17)"
             url: /dxl/rx/rx-28/#alarm-led17-shutdown18
           - title: "Shutdown(18)"
+            titlekr: "Shutdown(18)"
             url: /dxl/rx/rx-28/#alarm-led17-shutdown18
           - title: "Torque Enable(24)"
+            titlekr: "Torque Enable(24)"
             url: /dxl/rx/rx-28/#torque-enable-24
           - title: "LED(25)"
+            titlekr: "LED(25)"
             url: /dxl/rx/rx-28/#led-25
           - title: "Compliance Margin(26,27)"
+            titlekr: "Compliance Margin(26,27)"
             url: /dxl/rx/rx-28/#compliance-margin-26-27
           - title: "Compliance Slope(28,29)"
+            titlekr: "Compliance Slope(28,29)"
             url: /dxl/rx/rx-28/#compliance-slope-28-29
           - title: "Goal Position(30)"
+            titlekr: "Goal Position(30)"
             url: /dxl/rx/rx-28/#goal-position-30
           - title: "Moving Speed(32)"
+            titlekr: "Moving Speed(32)"
             url: /dxl/rx/rx-28/#moving-speed-32
           - title: "Torque Limit(34)"
+            titlekr: "Torque Limit(34)"
             url: /dxl/rx/rx-28/#torque-limit-34
           - title: "Present Position(36)"
+            titlekr: "Present Position(36)"
             url: /dxl/rx/rx-28/#present-position-36
           - title: "Present Speed(38)"
+            titlekr: "Present Speed(38)"
             url: /dxl/rx/rx-28/#present-speed-38
           - title: "Present Load(40)"
+            titlekr: "Present Load(40)"
             url: /dxl/rx/rx-28/#present-load-40
           - title: "Present Voltage(42)"
+            titlekr: "Present Voltage(42)"
             url: /dxl/rx/rx-28/#present-voltage-42
           - title: "Present Temperature(43)"
+            titlekr: "Present Temperature(43)"
             url: /dxl/rx/rx-28/#present-temperature-43
           - title: "Registered Instruction(44)"
+            titlekr: "Registered Instruction(44)"
             url: /dxl/rx/rx-28/#registered-instruction-44
           - title: "Moving(46)"
+            titlekr: "Moving(46)"
             url: /dxl/rx/rx-28/#moving-46
           - title: "Lock(47)"
+            titlekr: "Lock(47)"
             url: /dxl/rx/rx-28/#lock-47
           - title: "Punch(48)"
+            titlekr: "Punch(48)"
             url: /dxl/rx/rx-28/#punch-48
   - title: "How to Assemble"
     titlekr: "조립 예시"
@@ -1721,9 +2055,9 @@ rx-28:
     urlkr: /dxl/rx/rx-28/#유지보수
     children:
       - title: "Horn, Bearing"
-        titlekr: "혼, 베어링"
+        titlekr: "혼과 베어링 교체"
         url: /dxl/rx/rx-28/#horn-and-bearing-replacement
-        urlkr: /dxl/rx/rx-28/#혼-베어링
+        urlkr: /dxl/rx/rx-28/#혼과-베어링-교체
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/rx/rx-28/#reference
@@ -1738,16 +2072,16 @@ rx-28:
         url: /dxl/rx/rx-28/#drawings
         urlkr: /dxl/rx/rx-28/#도면
       - title: "Communication Circuit"
+        titlekr: "통신 회로"
         url: /dxl/rx/rx-28/#communication-circuit
-      - title: "Pin Assignment"
-        url: /dxl/rx/rx-28/#pin-assignment
+        urlkr: /dxl/rx/rx-28/#통신-회로
 
 #RX-64 sidebar
 rx-64:
   - title: "Specifications"
-    titlekr: "스펙"
+    titlekr: "주요 사양"
     url: /dxl/rx/rx-64/#specifications
-    urlkr: /dxl/rx/rx-64/#스펙
+    urlkr: /dxl/rx/rx-64/#주요-사양
   - title: "Control Table"
     titlekr: "컨트롤 테이블"
     url: /dxl/rx/rx-64/#control-table
@@ -1759,13 +2093,21 @@ rx-64:
         urlkr: /dxl/rx/rx-64/#컨트롤-테이블-데이터-주소
         children:
           - title: "Area(EEPROM, RAM)"
+            titlekr: "영역 (EEPROM, RAM)"
             url: /dxl/rx/rx-64/#area-eeprom-ram
+            urlkr: /dxl/rx/rx-64/#영역-eeprom-ram
           - title: "Size"
+            titlekr: "크기"
             url: /dxl/rx/rx-64/#size
+            urlkr: /dxl/rx/rx-64/#크기
           - title: "Access"
+            titlekr: "접근권한"
             url: /dxl/rx/rx-64/#access
+            urlkr: /dxl/rx/rx-64/#접근권한
           - title: "Initial Value"
+            titlekr: "초기값"
             url: /dxl/rx/rx-64/#initial-value
+            urlkr: /dxl/rx/rx-64/#초기값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/rx/rx-64/#control-table-of-eeprom-area
@@ -1780,60 +2122,88 @@ rx-64:
         urlkr: /dxl/rx/rx-64/#컨트롤-테이블-설명
         children:
           - title: "Model Number(0)"
+            titlekr: "Model Number(0)"
             url: /dxl/rx/rx-64/#model-number-0
           - title: "Firmware Version(2)"
+            titlekr: "Firmware Version(2)"
             url: /dxl/rx/rx-64/#firmware-version-2
           - title: "ID(3)"
+            titlekr: "ID(3)"
             url: /dxl/rx/rx-64/#id-3
           - title: "Baud Rate(4)"
+            titlekr: "Baud Rate(4)"
             url: /dxl/rx/rx-64/#baud-rate-4
           - title: "Return Delay Time(5)"
+            titlekr: "Return Delay Time(5)"
             url: /dxl/rx/rx-64/#return-delay-time-5
           - title: "CW/CCW Angle Limit(6,8)"
+            titlekr: "CW/CCW Angle Limit(6,8)"
             url: /dxl/rx/rx-64/#cwccw-angle-limit6-8
           - title: "Temperature Limit(11)"
+            titlekr: "Temperature Limit(11)"
             url: /dxl/rx/rx-64/#temperature-limit-11
           - title: "Min/Max Voltage Limit(12,13)"
+            titlekr: "Min/Max Voltage Limit(12,13)"
             url: /dxl/rx/rx-64/#minmax-voltage-limit-12-13
           - title: "Max Torque(14)"
+            titlekr: "Max Torque(14)"
             url: /dxl/rx/rx-64/#max-torque-14
           - title: "Status Return Level(16)"
+            titlekr: "Status Return Level(16)"
             url: /dxl/rx/rx-64/#status-return-level-16
           - title: "Alarm LED(17)"
+            titlekr: "Alarm LED(17)"
             url: /dxl/rx/rx-64/#alarm-led17-shutdown18
           - title: "Shutdown(18)"
+            titlekr: "Shutdown(18)"
             url: /dxl/rx/rx-64/#alarm-led17-shutdown18
           - title: "Torque Enable(24)"
+            titlekr: "Torque Enable(24)"
             url: /dxl/rx/rx-64/#torque-enable-24
           - title: "LED(25)"
+            titlekr: "LED(25)"
             url: /dxl/rx/rx-64/#led-25
           - title: "Compliance Margin(26,27)"
+            titlekr: "Compliance Margin(26,27)"
             url: /dxl/rx/rx-64/#compliance-margin-26-27
           - title: "Compliance Slope(28,29)"
+            titlekr: "Compliance Slope(28,29)"
             url: /dxl/rx/rx-64/#compliance-slope-28-29
           - title: "Goal Position(30)"
+            titlekr: "Goal Position(30)"
             url: /dxl/rx/rx-64/#goal-position-30
           - title: "Moving Speed(32)"
+            titlekr: "Moving Speed(32)"
             url: /dxl/rx/rx-64/#moving-speed-32
           - title: "Torque Limit(34)"
+            titlekr: "Torque Limit(34)"
             url: /dxl/rx/rx-64/#torque-limit-34
           - title: "Present Position(36)"
+            titlekr: "Present Position(36)"
             url: /dxl/rx/rx-64/#present-position-36
           - title: "Present Speed(38)"
+            titlekr: "Present Speed(38)"
             url: /dxl/rx/rx-64/#present-speed-38
           - title: "Present Load(40)"
+            titlekr: "Present Load(40)"
             url: /dxl/rx/rx-64/#present-load-40
           - title: "Present Voltage(42)"
+            titlekr: "Present Voltage(42)"
             url: /dxl/rx/rx-64/#present-voltage-42
           - title: "Present Temperature(43)"
+            titlekr: "Present Temperature(43)"
             url: /dxl/rx/rx-64/#present-temperature-43
           - title: "Registered Instruction(44)"
+            titlekr: "Registered Instruction(44)"
             url: /dxl/rx/rx-64/#registered-instruction-44
           - title: "Moving(46)"
+            titlekr: "Moving(46)"
             url: /dxl/rx/rx-64/#moving-46
           - title: "Lock(47)"
+            titlekr: "Lock(47)"
             url: /dxl/rx/rx-64/#lock-47
           - title: "Punch(48)"
+            titlekr: "Punch(48)"
             url: /dxl/rx/rx-64/#punch-48
   - title: "How to Assemble"
     titlekr: "조립 예시"
@@ -1845,9 +2215,9 @@ rx-64:
     urlkr: /dxl/rx/rx-64/#유지보수
     children:
       - title: "Horn, Bearing"
-        titlekr: "혼, 베어링"
+        titlekr: "혼과 베어링 교체"
         url: /dxl/rx/rx-64/#horn-and-bearing-replacement
-        urlkr: /dxl/rx/rx-64/#혼-베어링
+        urlkr: /dxl/rx/rx-64/#혼과-베어링-교체
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/rx/rx-64/#reference
@@ -1862,16 +2232,16 @@ rx-64:
         url: /dxl/rx/rx-64/#drawings
         urlkr: /dxl/rx/rx-64/#도면
       - title: "Communication Circuit"
+        titlekr: "통신 회로"
         url: /dxl/rx/rx-64/#communication-circuit
-      - title: "Pin Assignment"
-        url: /dxl/rx/rx-64/#pin-assignment
+        urlkr: /dxl/rx/rx-64/#통신-회로
 
 #MX-12W sidebar
 mx-12w:
   - title: "Specifications"
-    titlekr: "스펙"
+    titlekr: "주요 사양"
     url: /dxl/mx/mx-12w/#specifications
-    urlkr: /dxl/mx/mx-12w/#스펙
+    urlkr: /dxl/mx/mx-12w/#주요-사양
   - title: "Performance Graph"
     titlekr: "성능 그래프"
     url: /dxl/mx/mx-12w/#performance-graph
@@ -1887,13 +2257,21 @@ mx-12w:
         urlkr: /dxl/mx/mx-12w/#컨트롤-테이블-데이터-주소
         children:
           - title: "Area(EEPROM, RAM)"
+            titlekr: "영역 (EEPROM, RAM)"
             url: /dxl/mx/mx-12w/#area-eeprom-ram
+            urlkr: /dxl/mx/mx-12w/#영역-eeprom-ram
           - title: "Size"
+            titlekr: "크기"
             url: /dxl/mx/mx-12w/#size
+            urlkr: /dxl/mx/mx-12w/#크기
           - title: "Access"
+            titlekr: "접근권한"
             url: /dxl/mx/mx-12w/#access
+            urlkr: /dxl/mx/mx-12w/#접근권한
           - title: "Initial Value"
+            titlekr: "초기값"
             url: /dxl/mx/mx-12w/#initial-value
+            urlkr: /dxl/mx/mx-12w/#초기값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/mx/mx-12w/#control-table-of-eeprom-area
@@ -1908,64 +2286,94 @@ mx-12w:
         urlkr: /dxl/mx/mx-12w/#컨트롤-테이블-설명
         children:
           - title: "Model Number(0)"
+            titlekr: "Model Number(0)"
             url: /dxl/mx/mx-12w/#model-number-0
           - title: "Firmware Version(2)"
+            titlekr: "Firmware Version(2)"
             url: /dxl/mx/mx-12w/#firmware-version-2
           - title: "ID(3)"
+            titlekr: "ID(3)"
             url: /dxl/mx/mx-12w/#id-3
           - title: "Baud Rate(4)"
+            titlekr: "Baud Rate(4)"
             url: /dxl/mx/mx-12w/#baud-rate-4
           - title: "Return Delay Time(5)"
+            titlekr: "Return Delay Time(5)"
             url: /dxl/mx/mx-12w/#return-delay-time-5
           - title: "CW/CCW Angle Limit(6,8)"
+            titlekr: "CW/CCW Angle Limit(6,8)"
             url: /dxl/mx/mx-12w/#cwccw-angle-limit6-8
           - title: "Temperature Limit(11)"
+            titlekr: "Temperature Limit(11)"
             url: /dxl/mx/mx-12w/#temperature-limit-11
           - title: "Min/Max Voltage Limit(12,13)"
+            titlekr: "Min/Max Voltage Limit(12,13)"
             url: /dxl/mx/mx-12w/#minmax-voltage-limit-12-13
           - title: "Max Torque(14)"
+            titlekr: "Max Torque(14)"
             url: /dxl/mx/mx-12w/#max-torque-14
           - title: "Status Return Level(16)"
+            titlekr: "Status Return Level(16)"
             url: /dxl/mx/mx-12w/#status-return-level-16
           - title: "Alarm LED(17)"
+            titlekr: "Alarm LED(17)"
             url: /dxl/mx/mx-12w/#alarm-led17-shutdown18
           - title: "Shutdown(18)"
+            titlekr: "Shutdown(18)"
             url: /dxl/mx/mx-12w/#alarm-led17-shutdown18
           - title: "Multiturn Offset(20)"
+            titlekr: "Multiturn Offset(20)"
             url: /dxl/mx/mx-12w/#multi-turn-offset-20
           - title: "Resolution Divider(22)"
+            titlekr: "Resolution Divider(22)"
             url: /dxl/mx/mx-12w/#resolution-divider-22
           - title: "Torque Enable(24)"
+            titlekr: "Torque Enable(24)"
             url: /dxl/mx/mx-12w/#torque-enable-24
           - title: "LED(25)"
+            titlekr: "LED(25)"
             url: /dxl/mx/mx-12w/#led-25
           - title: "PID Gains(26,27,28)"
+            titlekr: "PID Gains(26,27,28)"
             url: /dxl/mx/mx-12w/#pid-gains-26-27-28
           - title: "Goal Position(30)"
+            titlekr: "Goal Position(30)"
             url: /dxl/mx/mx-12w/#goal-position-30
           - title: "Moving Speed(32)"
+            titlekr: "Moving Speed(32)"
             url: /dxl/mx/mx-12w/#moving-speed-32
           - title: "Torque Limit(34)"
+            titlekr: "Torque Limit(34)"
             url: /dxl/mx/mx-12w/#torque-limit-34
           - title: "Present Position(36)"
+            titlekr: "Present Position(36)"
             url: /dxl/mx/mx-12w/#present-position-36
           - title: "Present Speed(38)"
+            titlekr: "Present Speed(38)"
             url: /dxl/mx/mx-12w/#present-speed-38
           - title: "Present Load(40)"
+            titlekr: "Present Load(40)"
             url: /dxl/mx/mx-12w/#present-load-40
           - title: "Present Voltage(42)"
+            titlekr: "Present Voltage(42)"
             url: /dxl/mx/mx-12w/#present-voltage-42
           - title: "Present Temperature(43)"
+            titlekr: "Present Temperature(43)"
             url: /dxl/mx/mx-12w/#present-temperature-43
           - title: "Registered Instruction(44)"
+            titlekr: "Registered Instruction(44)"
             url: /dxl/mx/mx-12w/#registered-instruction-44
           - title: "Moving(46)"
+            titlekr: "Moving(46)"
             url: /dxl/mx/mx-12w/#moving-46
           - title: "Lock(47)"
+            titlekr: "Lock(47)"
             url: /dxl/mx/mx-12w/#lock-47
           - title: "Punch(48)"
+            titlekr: "Punch(48)"
             url: /dxl/mx/mx-12w/#punch-48
           - title: "Goal Acceleration(73)"
+            titlekr: "Goal Acceleration(73)"
             url: /dxl/mx/mx-12w/#goal-acceleration-73
   - title: "How to Assemble"
     titlekr: "조립 예시"
@@ -1977,9 +2385,9 @@ mx-12w:
     urlkr: /dxl/mx/mx-12w/#유지보수
     children:
       - title: "Horn, Bearing"
-        titlekr: "혼, 베어링"
+        titlekr: "혼과 베어링 교체"
         url: /dxl/mx/mx-12w/#horn-and-bearing-replacement
-        urlkr: /dxl/mx/mx-12w/#혼-베어링
+        urlkr: /dxl/mx/mx-12w/#혼과-베어링-교체
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/mx/mx-12w/#reference
@@ -1994,16 +2402,16 @@ mx-12w:
         url: /dxl/mx/mx-12w/#drawings
         urlkr: /dxl/mx/mx-12w/#도면
       - title: "Communication Circuit"
+        titlekr: "통신 회로"
         url: /dxl/mx/mx-12w/#communication-circuit
-      - title: "Pin Assignment"
-        url: /dxl/mx/mx-12w/#pin-assignment
+        urlkr: /dxl/mx/mx-12w/#통신-회로
 
 #MX-28 sidebar
 mx-28:
   - title: "Specifications"
-    titlekr: "스펙"
+    titlekr: "주요 사양"
     url: /dxl/mx/mx-28/#specifications
-    urlkr: /dxl/mx/mx-28/#스펙
+    urlkr: /dxl/mx/mx-28/#주요-사양
     children:
     - title: "Performance Graph"
       titlekr: "성능 그래프"
@@ -2020,13 +2428,21 @@ mx-28:
         urlkr: /dxl/mx/mx-28/#컨트롤-테이블-데이터-주소
         children:
           - title: "Area(EEPROM, RAM)"
+            titlekr: "영역 (EEPROM, RAM)"
             url: /dxl/mx/mx-28/#area-eeprom-ram
+            urlkr: /dxl/mx/mx-28/#영역-eeprom-ram
           - title: "Size"
+            titlekr: "크기"
             url: /dxl/mx/mx-28/#size
+            urlkr: /dxl/mx/mx-28/#크기
           - title: "Access"
+            titlekr: "접근권한"
             url: /dxl/mx/mx-28/#access
+            urlkr: /dxl/mx/mx-28/#접근권한
           - title: "Initial Value"
+            titlekr: "초기값"
             url: /dxl/mx/mx-28/#initial-value
+            urlkr: /dxl/mx/mx-28/#초기값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/mx/mx-28/#control-table-of-eeprom-area
@@ -2041,64 +2457,94 @@ mx-28:
         urlkr: /dxl/mx/mx-28/#컨트롤-테이블-설명
         children:
           - title: "Model Number(0)"
+            titlekr: "Model Number(0)"
             url: /dxl/mx/mx-28/#model-number-0
           - title: "Firmware Version(2)"
+            titlekr: "Firmware Version(2)"
             url: /dxl/mx/mx-28/#firmware-version-2
           - title: "ID(3)"
+            titlekr: "ID(3)"
             url: /dxl/mx/mx-28/#id-3
           - title: "Baud Rate(4)"
+            titlekr: "Baud Rate(4)"
             url: /dxl/mx/mx-28/#baud-rate-4
           - title: "Return Delay Time(5)"
+            titlekr: "Return Delay Time(5)"
             url: /dxl/mx/mx-28/#return-delay-time-5
           - title: "CW/CCW Angle Limit(6,8)"
+            titlekr: "CW/CCW Angle Limit(6,8)"
             url: /dxl/mx/mx-28/#cwccw-angle-limit6-8
           - title: "Temperature Limit(11)"
+            titlekr: "Temperature Limit(11)"
             url: /dxl/mx/mx-28/#temperature-limit-11
           - title: "Min/Max Voltage Limit(12,13)"
+            titlekr: "Min/Max Voltage Limit(12,13)"
             url: /dxl/mx/mx-28/#minmax-voltage-limit-12-13
           - title: "Max Torque(14)"
+            titlekr: "Max Torque(14)"
             url: /dxl/mx/mx-28/#max-torque-14
           - title: "Status Return Level(16)"
+            titlekr: "Status Return Level(16)"
             url: /dxl/mx/mx-28/#status-return-level-16
           - title: "Alarm LED(17)"
+            titlekr: "Alarm LED(17)"
             url: /dxl/mx/mx-28/#alarm-led17-shutdown18
           - title: "Shutdown(18)"
+            titlekr: "Shutdown(18)"
             url: /dxl/mx/mx-28/#alarm-led17-shutdown18
           - title: "Multiturn Offset(20)"
+            titlekr: "Multiturn Offset(20)"
             url: /dxl/mx/mx-28/#multi-turn-offset-20
           - title: "Resolution Divider(22)"
+            titlekr: "Resolution Divider(22)"
             url: /dxl/mx/mx-28/#resolution-divider-22
           - title: "Torque Enable(24)"
+            titlekr: "Torque Enable(24)"
             url: /dxl/mx/mx-28/#torque-enable-24
           - title: "LED(25)"
+            titlekr: "LED(25)"
             url: /dxl/mx/mx-28/#led-25
           - title: "PID Gains(26,27,28)"
+            titlekr: "PID Gains(26,27,28)"
             url: /dxl/mx/mx-28/#pid-gains-26-27-28
           - title: "Goal Position(30)"
+            titlekr: "Goal Position(30)"
             url: /dxl/mx/mx-28/#goal-position-30
           - title: "Moving Speed(32)"
+            titlekr: "Moving Speed(32)"
             url: /dxl/mx/mx-28/#moving-speed-32
           - title: "Torque Limit(34)"
+            titlekr: "Torque Limit(34)"
             url: /dxl/mx/mx-28/#torque-limit-34
           - title: "Present Position(36)"
+            titlekr: "Present Position(36)"
             url: /dxl/mx/mx-28/#present-position-36
           - title: "Present Speed(38)"
+            titlekr: "Present Speed(38)"
             url: /dxl/mx/mx-28/#present-speed-38
           - title: "Present Load(40)"
+            titlekr: "Present Load(40)"
             url: /dxl/mx/mx-28/#present-load-40
           - title: "Present Voltage(42)"
+            titlekr: "Present Voltage(42)"
             url: /dxl/mx/mx-28/#present-voltage-42
           - title: "Present Temperature(43)"
+            titlekr: "Present Temperature(43)"
             url: /dxl/mx/mx-28/#present-temperature-43
           - title: "Registered Instruction(44)"
+            titlekr: "Registered Instruction(44)"
             url: /dxl/mx/mx-28/#registered-instruction-44
           - title: "Moving(46)"
+            titlekr: "Moving(46)"
             url: /dxl/mx/mx-28/#moving-46
           - title: "Lock(47)"
+            titlekr: "Lock(47)"
             url: /dxl/mx/mx-28/#lock-47
           - title: "Punch(48)"
+            titlekr: "Punch(48)"
             url: /dxl/mx/mx-28/#punch-48
           - title: "Goal Acceleration(73)"
+            titlekr: "Goal Acceleration(73)"
             url: /dxl/mx/mx-28/#goal-acceleration-73
   - title: "How to Assemble"
     titlekr: "조립 예시"
@@ -2110,9 +2556,9 @@ mx-28:
     urlkr: /dxl/mx/mx-28/#유지보수
     children:
       - title: "Horn, Bearing"
-        titlekr: "혼, 베어링"
+        titlekr: "혼과 베어링 교체"
         url: /dxl/mx/mx-28/#horn-and-bearing-replacement
-        urlkr: /dxl/mx/mx-28/#혼-베어링
+        urlkr: /dxl/mx/mx-28/#혼과-베어링-교체
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/mx/mx-28/#reference
@@ -2127,16 +2573,16 @@ mx-28:
         url: /dxl/mx/mx-28/#drawings
         urlkr: /dxl/mx/mx-28/#도면
       - title: "Communication Circuit"
+        titlekr: "통신 회로"
         url: /dxl/mx/mx-28/#communication-circuit
-      - title: "Pin Assignment"
-        url: /dxl/mx/mx-28/#pin-assignment
+        urlkr: /dxl/mx/mx-28/#통신-회로
 
 #MX-64 sidebar
 mx-64:
   - title: "Specifications"
-    titlekr: "스펙"
+    titlekr: "주요 사양"
     url: /dxl/mx/mx-64/#specifications
-    urlkr: /dxl/mx/mx-64/#스펙
+    urlkr: /dxl/mx/mx-64/#주요-사양
     children:
     - title: "Performance Graph"
       titlekr: "성능 그래프"
@@ -2153,13 +2599,21 @@ mx-64:
         urlkr: /dxl/mx/mx-64/#컨트롤-테이블-데이터-주소
         children:
           - title: "Area(EEPROM, RAM)"
+            titlekr: "영역 (EEPROM, RAM)"
             url: /dxl/mx/mx-64/#area-eeprom-ram
+            urlkr: /dxl/mx/mx-64/#영역-eeprom-ram
           - title: "Size"
+            titlekr: "크기"
             url: /dxl/mx/mx-64/#size
+            urlkr: /dxl/mx/mx-64/#크기
           - title: "Access"
+            titlekr: "접근권한"
             url: /dxl/mx/mx-64/#access
+            urlkr: /dxl/mx/mx-64/#접근권한
           - title: "Initial Value"
+            titlekr: "초기값"
             url: /dxl/mx/mx-64/#initial-value
+            urlkr: /dxl/mx/mx-64/#초기값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/mx/mx-64/#control-table-of-eeprom-area
@@ -2174,70 +2628,103 @@ mx-64:
         urlkr: /dxl/mx/mx-64/#컨트롤-테이블-설명
         children:
           - title: "Model Number(0)"
+            titlekr: "Model Number(0)"
             url: /dxl/mx/mx-64/#model-number-0
           - title: "Firmware Version(2)"
+            titlekr: "Firmware Version(2)"
             url: /dxl/mx/mx-64/#firmware-version-2
           - title: "ID(3)"
+            titlekr: "ID(3)"
             url: /dxl/mx/mx-64/#id-3
           - title: "Baud Rate(4)"
+            titlekr: "Baud Rate(4)"
             url: /dxl/mx/mx-64/#baud-rate-4
           - title: "Return Delay Time(5)"
+            titlekr: "Return Delay Time(5)"
             url: /dxl/mx/mx-64/#return-delay-time-5
           - title: "CW/CCW Angle Limit(6,8)"
+            titlekr: "CW/CCW Angle Limit(6,8)"
             url: /dxl/mx/mx-64/#cwccw-angle-limit6-8
           - title: "Temperature Limit(11)"
+            titlekr: "Temperature Limit(11)"
             url: /dxl/mx/mx-64/#temperature-limit-11
           - title: "Min/Max Voltage Limit(12,13)"
+            titlekr: "Min/Max Voltage Limit(12,13)"
             url: /dxl/mx/mx-64/#minmax-voltage-limit-12-13
           - title: "Max Torque(14)"
+            titlekr: "Max Torque(14)"
             url: /dxl/mx/mx-64/#max-torque-14
           - title: "Status Return Level(16)"
+            titlekr: "Status Return Level(16)"
             url: /dxl/mx/mx-64/#status-return-level-16
           - title: "Alarm LED(17)"
+            titlekr: "Alarm LED(17)"
             url: /dxl/mx/mx-64/#alarm-led17-shutdown18
           - title: "Shutdown(18)"
+            titlekr: "Shutdown(18)"
             url: /dxl/mx/mx-64/#alarm-led17-shutdown18
           - title: "Multiturn Offset(20)"
+            titlekr: "Multiturn Offset(20)"
             url: /dxl/mx/mx-64/#multi-turn-offset-20
           - title: "Resolution Divider(22)"
+            titlekr: "Resolution Divider(22)"
             url: /dxl/mx/mx-64/#resolution-divider-22
           - title: "Torque Enable(24)"
+            titlekr: "Torque Enable(24)"
             url: /dxl/mx/mx-64/#torque-enable-24
           - title: "LED(25)"
+            titlekr: "LED(25)"
             url: /dxl/mx/mx-64/#led-25
           - title: "PID Gains(26,27,28)"
+            titlekr: "PID Gains(26,27,28)"
             url: /dxl/mx/mx-64/#pid-gains-26-27-28
           - title: "Goal Position(30)"
+            titlekr: "Goal Position(30)"
             url: /dxl/mx/mx-64/#goal-position-30
           - title: "Moving Speed(32)"
+            titlekr: "Moving Speed(32)"
             url: /dxl/mx/mx-64/#moving-speed-32
           - title: "Torque Limit(34)"
+            titlekr: "Torque Limit(34)"
             url: /dxl/mx/mx-64/#torque-limit-34
           - title: "Present Position(36)"
+            titlekr: "Present Position(36)"
             url: /dxl/mx/mx-64/#present-position-36
           - title: "Present Speed(38)"
+            titlekr: "Present Speed(38)"
             url: /dxl/mx/mx-64/#present-speed-38
           - title: "Present Load(40)"
+            titlekr: "Present Load(40)"
             url: /dxl/mx/mx-64/#present-load-40
           - title: "Present Voltage(42)"
+            titlekr: "Present Voltage(42)"
             url: /dxl/mx/mx-64/#present-voltage-42
           - title: "Present Temperature(43)"
+            titlekr: "Present Temperature(43)"
             url: /dxl/mx/mx-64/#present-temperature-43
           - title: "Registered Instruction(44)"
+            titlekr: "Registered Instruction(44)"
             url: /dxl/mx/mx-64/#registered-instruction-44
           - title: "Moving(46)"
+            titlekr: "Moving(46)"
             url: /dxl/mx/mx-64/#moving-46
           - title: "Lock(47)"
+            titlekr: "Lock(47)"
             url: /dxl/mx/mx-64/#lock-47
           - title: "Punch(48)"
+            titlekr: "Punch(48)"
             url: /dxl/mx/mx-64/#punch-48
           - title: "Current(68)"
+            titlekr: "Current(68)"
             url: /dxl/mx/mx-64/#current-68
           - title: "Torque Ctrl Enable(70)"
+            titlekr: "Torque Ctrl Enable(70)"
             url: /dxl/mx/mx-64/#torque-control-mode-enable-70
           - title: "Goal Torque(71)"
+            titlekr: "Goal Torque(71)"
             url: /dxl/mx/mx-64/#goal-torque-71
           - title: "Goal Acceleration(73)"
+            titlekr: "Goal Acceleration(73)"
             url: /dxl/mx/mx-64/#goal-acceleration-73
   - title: "How to Assemble"
     titlekr: "조립 예시"
@@ -2249,9 +2736,9 @@ mx-64:
     urlkr: /dxl/mx/mx-64/#유지보수
     children:
       - title: "Horn, Bearing"
-        titlekr: "혼, 베어링"
+        titlekr: "혼과 베어링 교체"
         url: /dxl/mx/mx-64/#horn-and-bearing-replacement
-        urlkr: /dxl/mx/mx-64/#혼-베어링
+        urlkr: /dxl/mx/mx-64/#혼과-베어링-교체
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/mx/mx-64/#reference
@@ -2266,16 +2753,16 @@ mx-64:
         url: /dxl/mx/mx-64/#drawings
         urlkr: /dxl/mx/mx-64/#도면
       - title: "Communication Circuit"
+        titlekr: "통신 회로"
         url: /dxl/mx/mx-64/#communication-circuit
-      - title: "Pin Assignment"
-        url: /dxl/mx/mx-64/#pin-assignment
+        urlkr: /dxl/mx/mx-64/#통신-회로
 
 #MX-106 sidebar
 mx-106:
   - title: "Specifications"
-    titlekr: "스펙"
+    titlekr: "주요 사양"
     url: /dxl/mx/mx-106/#specifications
-    urlkr: /dxl/mx/mx-106/#스펙
+    urlkr: /dxl/mx/mx-106/#주요-사양
     children:
     - title: "Performance Graph"
       titlekr: "성능 그래프"
@@ -2292,13 +2779,21 @@ mx-106:
         urlkr: /dxl/mx/mx-106/#컨트롤-테이블-데이터-주소
         children:
           - title: "Area(EEPROM, RAM)"
+            titlekr: "영역 (EEPROM, RAM)"
             url: /dxl/mx/mx-106/#area-eeprom-ram
+            urlkr: /dxl/mx/mx-106/#영역-eeprom-ram
           - title: "Size"
+            titlekr: "크기"
             url: /dxl/mx/mx-106/#size
+            urlkr: /dxl/mx/mx-106/#크기
           - title: "Access"
+            titlekr: "접근권한"
             url: /dxl/mx/mx-106/#access
+            urlkr: /dxl/mx/mx-106/#접근권한
           - title: "Initial Value"
+            titlekr: "초기값"
             url: /dxl/mx/mx-106/#initial-value
+            urlkr: /dxl/mx/mx-106/#초기값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/mx/mx-106/#control-table-of-eeprom-area
@@ -2313,72 +2808,106 @@ mx-106:
         urlkr: /dxl/mx/mx-106/#컨트롤-테이블-설명
         children:
           - title: "Model Number(0)"
+            titlekr: "Model Number(0)"
             url: /dxl/mx/mx-106/#model-number-0
           - title: "Firmware Version(2)"
+            titlekr: "Firmware Version(2)"
             url: /dxl/mx/mx-106/#firmware-version-2
           - title: "ID(3)"
+            titlekr: "ID(3)"
             url: /dxl/mx/mx-106/#id-3
           - title: "Baud Rate(4)"
+            titlekr: "Baud Rate(4)"
             url: /dxl/mx/mx-106/#baud-rate-4
           - title: "Return Delay Time(5)"
+            titlekr: "Return Delay Time(5)"
             url: /dxl/mx/mx-106/#return-delay-time-5
           - title: "CW/CCW Angle Limit(6,8)"
+            titlekr: "CW/CCW Angle Limit(6,8)"
             url: /dxl/mx/mx-106/#cwccw-angle-limit6-8
           - title: "Drive Mode(10)"
+            titlekr: "Drive Mode(10)"
             url: /dxl/mx/mx-106/#drive-mode-10
           - title: "Temperature Limit(11)"
+            titlekr: "Temperature Limit(11)"
             url: /dxl/mx/mx-106/#temperature-limit-11
           - title: "Min/Max Voltage Limit(12,13)"
+            titlekr: "Min/Max Voltage Limit(12,13)"
             url: /dxl/mx/mx-106/#minmax-voltage-limit-12-13
           - title: "Max Torque(14)"
+            titlekr: "Max Torque(14)"
             url: /dxl/mx/mx-106/#max-torque-14
           - title: "Status Return Level(16)"
+            titlekr: "Status Return Level(16)"
             url: /dxl/mx/mx-106/#status-return-level-16
           - title: "Alarm LED(17)"
+            titlekr: "Alarm LED(17)"
             url: /dxl/mx/mx-106/#alarm-led17-shutdown18
           - title: "Shutdown(18)"
+            titlekr: "Shutdown(18)"
             url: /dxl/mx/mx-106/#alarm-led17-shutdown18
           - title: "Multiturn Offset(20)"
+            titlekr: "Multiturn Offset(20)"
             url: /dxl/mx/mx-106/#multi-turn-offset-20
           - title: "Resolution Divider(22)"
+            titlekr: "Resolution Divider(22)"
             url: /dxl/mx/mx-106/#resolution-divider-22
           - title: "Torque Enable(24)"
+            titlekr: "Torque Enable(24)"
             url: /dxl/mx/mx-106/#torque-enable-24
           - title: "LED(25)"
+            titlekr: "LED(25)"
             url: /dxl/mx/mx-106/#led-25
           - title: "PID Gains(26,27,28)"
+            titlekr: "PID Gains(26,27,28)"
             url: /dxl/mx/mx-106/#pid-gains-26-27-28
           - title: "Goal Position(30)"
+            titlekr: "Goal Position(30)"
             url: /dxl/mx/mx-106/#goal-position-30
           - title: "Moving Speed(32)"
+            titlekr: "Moving Speed(32)"
             url: /dxl/mx/mx-106/#moving-speed-32
           - title: "Torque Limit(34)"
+            titlekr: "Torque Limit(34)"
             url: /dxl/mx/mx-106/#torque-limit-34
           - title: "Present Position(36)"
+            titlekr: "Present Position(36)"
             url: /dxl/mx/mx-106/#present-position-36
           - title: "Present Speed(38)"
+            titlekr: "Present Speed(38)"
             url: /dxl/mx/mx-106/#present-speed-38
           - title: "Present Load(40)"
+            titlekr: "Present Load(40)"
             url: /dxl/mx/mx-106/#present-load-40
           - title: "Present Voltage(42)"
+            titlekr: "Present Voltage(42)"
             url: /dxl/mx/mx-106/#present-voltage-42
           - title: "Present Temperature(43)"
+            titlekr: "Present Temperature(43)"
             url: /dxl/mx/mx-106/#present-temperature-43
           - title: "Registered Instruction(44)"
+            titlekr: "Registered Instruction(44)"
             url: /dxl/mx/mx-106/#registered-instruction-44
           - title: "Moving(46)"
+            titlekr: "Moving(46)"
             url: /dxl/mx/mx-106/#moving-46
           - title: "Lock(47)"
+            titlekr: "Lock(47)"
             url: /dxl/mx/mx-106/#lock-47
           - title: "Punch(48)"
+            titlekr: "Punch(48)"
             url: /dxl/mx/mx-106/#punch-48
           - title: "Current(68)"
+            titlekr: "Current(68)"
             url: /dxl/mx/mx-106/#current-68
           - title: "Torque Ctrl Enable(70)"
+            titlekr: "Torque Ctrl Enable(70)"
             url: /dxl/mx/mx-106/#torque-control-mode-enable-70
           - title: "Goal Torque(71)"
+            titlekr: "Goal Torque(71)"
             url: /dxl/mx/mx-106/#goal-torque-71
           - title: "Goal Acceleration(73)"
+            titlekr: "Goal Acceleration(73)"
             url: /dxl/mx/mx-106/#goal-acceleration-73
   - title: "How to Assemble"
     titlekr: "조립 예시"
@@ -2390,9 +2919,9 @@ mx-106:
     urlkr: /dxl/mx/mx-106/#유지보수
     children:
       - title: "Horn, Bearing"
-        titlekr: "혼, 베어링"
+        titlekr: "혼과 베어링 교체"
         url: /dxl/mx/mx-106/#horn-and-bearing-replacement
-        urlkr: /dxl/mx/mx-106/#혼-베어링
+        urlkr: /dxl/mx/mx-106/#혼과-베어링-교체
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/mx/mx-106/#reference
@@ -2407,16 +2936,16 @@ mx-106:
         url: /dxl/mx/mx-106/#drawings
         urlkr: /dxl/mx/mx-106/#도면
       - title: "Communication Circuit"
+        titlekr: "통신 회로"
         url: /dxl/mx/mx-106/#communication-circuit
-      - title: "Pin Assignment"
-        url: /dxl/mx/mx-106/#pin-assignment
+        urlkr: /dxl/mx/mx-106/#통신-회로
 
 #MX-28(2.0) sidebar
 mx-28-2:
   - title: "Specifications"
-    titlekr: "스펙"
+    titlekr: "주요 사양"
     url: /dxl/mx/mx-28-2/#specifications
-    urlkr: /dxl/mx/mx-28-2/#스펙
+    urlkr: /dxl/mx/mx-28-2/#주요-사양
     children:
     - title: "Performance Graph"
       titlekr: "성능 그래프"
@@ -2433,13 +2962,21 @@ mx-28-2:
         urlkr: /dxl/mx/mx-28-2/#컨트롤-테이블-데이터-주소
         children:
           - title: "Area(EEPROM, RAM)"
+            titlekr: "영역 (EEPROM, RAM)"
             url: /dxl/mx/mx-28-2/#area-eeprom-ram
+            urlkr: /dxl/mx/mx-28-2/#영역-eeprom-ram
           - title: "Size"
+            titlekr: "크기"
             url: /dxl/mx/mx-28-2/#size
+            urlkr: /dxl/mx/mx-28-2/#크기
           - title: "Access"
+            titlekr: "접근권한"
             url: /dxl/mx/mx-28-2/#access
+            urlkr: /dxl/mx/mx-28-2/#접근권한
           - title: "Initial Value"
+            titlekr: "초기값"
             url: /dxl/mx/mx-28-2/#initial-value
+            urlkr: /dxl/mx/mx-28-2/#초기값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/mx/mx-28-2/#control-table-of-eeprom-area
@@ -2462,9 +2999,9 @@ mx-28-2:
     urlkr: /dxl/mx/mx-28-2/#유지보수
     children:
       - title: "Horn, Bearing"
-        titlekr: "혼, 베어링"
+        titlekr: "혼과 베어링 교체"
         url: /dxl/mx/mx-28-2/#horn-and-bearing-replacement
-        urlkr: /dxl/mx/mx-28-2/#혼-베어링
+        urlkr: /dxl/mx/mx-28-2/#혼과-베어링-교체
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/mx/mx-28-2/#reference
@@ -2486,9 +3023,9 @@ mx-28-2:
 #MX-64(2.0) sidebar
 mx-64-2:
   - title: "Specifications"
-    titlekr: "스펙"
+    titlekr: "주요 사양"
     url: /dxl/mx/mx-64-2/#specifications
-    urlkr: /dxl/mx/mx-64-2/#스펙
+    urlkr: /dxl/mx/mx-64-2/#주요-사양
     children:
     - title: "Performance Graph"
       titlekr: "성능 그래프"
@@ -2505,13 +3042,21 @@ mx-64-2:
         urlkr: /dxl/mx/mx-64-2/#컨트롤-테이블-데이터-주소
         children:
           - title: "Area(EEPROM, RAM)"
+            titlekr: "영역 (EEPROM, RAM)"
             url: /dxl/mx/mx-64-2/#area-eeprom-ram
+            urlkr: /dxl/mx/mx-64-2/#영역-eeprom-ram
           - title: "Size"
+            titlekr: "크기"
             url: /dxl/mx/mx-64-2/#size
+            urlkr: /dxl/mx/mx-64-2/#크기
           - title: "Access"
+            titlekr: "접근권한"
             url: /dxl/mx/mx-64-2/#access
+            urlkr: /dxl/mx/mx-64-2/#접근권한
           - title: "Initial Value"
+            titlekr: "초기값"
             url: /dxl/mx/mx-64-2/#initial-value
+            urlkr: /dxl/mx/mx-64-2/#초기값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/mx/mx-64-2/#control-table-of-eeprom-area
@@ -2534,9 +3079,9 @@ mx-64-2:
     urlkr: /dxl/mx/mx-64-2/#유지보수
     children:
       - title: "Horn, Bearing"
-        titlekr: "혼, 베어링"
+        titlekr: "혼과 베어링 교체"
         url: /dxl/mx/mx-64-2/#horn-and-bearing-replacement
-        urlkr: /dxl/mx/mx-64-2/#혼-베어링
+        urlkr: /dxl/mx/mx-64-2/#혼과-베어링-교체
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/mx/mx-64-2/#reference
@@ -2558,9 +3103,9 @@ mx-64-2:
 #MX-106(2.0) sidebar
 mx-106-2:
   - title: "Specifications"
-    titlekr: "스펙"
+    titlekr: "주요 사양"
     url: /dxl/mx/mx-106-2/#specifications
-    urlkr: /dxl/mx/mx-106-2/#스펙
+    urlkr: /dxl/mx/mx-106-2/#주요-사양
     children:
     - title: "Performance Graph"
       titlekr: "성능 그래프"
@@ -2577,13 +3122,21 @@ mx-106-2:
         urlkr: /dxl/mx/mx-106-2/#컨트롤-테이블-데이터-주소
         children:
           - title: "Area(EEPROM, RAM)"
+            titlekr: "영역 (EEPROM, RAM)"
             url: /dxl/mx/mx-106-2/#area-eeprom-ram
+            urlkr: /dxl/mx/mx-106-2/#영역-eeprom-ram
           - title: "Size"
+            titlekr: "크기"
             url: /dxl/mx/mx-106-2/#size
+            urlkr: /dxl/mx/mx-106-2/#크기
           - title: "Access"
+            titlekr: "접근권한"
             url: /dxl/mx/mx-106-2/#access
+            urlkr: /dxl/mx/mx-106-2/#접근권한
           - title: "Initial Value"
+            titlekr: "초기값"
             url: /dxl/mx/mx-106-2/#initial-value
+            urlkr: /dxl/mx/mx-106-2/#초기값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/mx/mx-106-2/#control-table-of-eeprom-area
@@ -2606,9 +3159,9 @@ mx-106-2:
     urlkr: /dxl/mx/mx-106-2/#유지보수
     children:
       - title: "Horn, Bearing"
-        titlekr: "혼, 베어링"
+        titlekr: "혼과 베어링 교체"
         url: /dxl/mx/mx-106-2/#horn-and-bearing-replacement
-        urlkr: /dxl/mx/mx-106-2/#혼-베어링
+        urlkr: /dxl/mx/mx-106-2/#혼과-베어링-교체
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/mx/mx-106-2/#reference
@@ -2630,9 +3183,9 @@ mx-106-2:
 #XH430-V210 sidebar
 xh430-v210:
   - title: "Specifications"
-    titlekr: "스펙"
+    titlekr: "주요 사양"
     url: /dxl/x/xh430-v210/#specifications
-    urlkr: /dxl/x/xh430-v210/#스펙
+    urlkr: /dxl/x/xh430-v210/#주요-사양
     children:
       - title: "Performance Graph"
         titlekr: "성능 그래프"
@@ -2649,13 +3202,21 @@ xh430-v210:
         urlkr: /dxl/x/xh430-v210/#컨트롤-테이블-데이터-주소
         children:
           - title: "Area(EEPROM, RAM)"
+            titlekr: "영역 (EEPROM, RAM)"
             url: /dxl/x/xh430-v210/#area-eeprom-ram
+            urlkr: /dxl/x/xh430-v210/#영역-eeprom-ram
           - title: "Size"
+            titlekr: "크기"
             url: /dxl/x/xh430-v210/#size
+            urlkr: /dxl/x/xh430-v210/#크기
           - title: "Access"
+            titlekr: "접근권한"
             url: /dxl/x/xh430-v210/#access
+            urlkr: /dxl/x/xh430-v210/#접근권한
           - title: "Initial Value"
+            titlekr: "초기값"
             url: /dxl/x/xh430-v210/#initial-value
+            urlkr: /dxl/x/xh430-v210/#초기값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/x/xh430-v210/#control-table-of-eeprom-area
@@ -2687,9 +3248,9 @@ xh430-v210:
     urlkr: /dxl/x/xh430-v210/#유지보수
     children:
       - title: "Horn, Bearing"
-        titlekr: "혼, 베어링"
+        titlekr: "혼과 베어링 교체"
         url: /dxl/x/xh430-v210/#horn-and-bearing-replacement
-        urlkr: /dxl/x/xh430-v210/#혼-베어링
+        urlkr: /dxl/x/xh430-v210/#혼과-베어링-교체
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/x/xh430-v210/#reference
@@ -2711,9 +3272,9 @@ xh430-v210:
 #XH430-V350 sidebar
 xh430-v350:
   - title: "Specifications"
-    titlekr: "스펙"
+    titlekr: "주요 사양"
     url: /dxl/x/xh430-v350/#specifications
-    urlkr: /dxl/x/xh430-v350/#스펙
+    urlkr: /dxl/x/xh430-v350/#주요-사양
     children:
       - title: "Performance Graph"
         titlekr: "성능 그래프"
@@ -2730,13 +3291,21 @@ xh430-v350:
         urlkr: /dxl/x/xh430-v350/#컨트롤-테이블-데이터-주소
         children:
           - title: "Area(EEPROM, RAM)"
+            titlekr: "영역 (EEPROM, RAM)"
             url: /dxl/x/xh430-v350/#area-eeprom-ram
+            urlkr: /dxl/x/xh430-v350/#영역-eeprom-ram
           - title: "Size"
+            titlekr: "크기"
             url: /dxl/x/xh430-v350/#size
+            urlkr: /dxl/x/xh430-v350/#크기
           - title: "Access"
+            titlekr: "접근권한"
             url: /dxl/x/xh430-v350/#access
+            urlkr: /dxl/x/xh430-v350/#접근권한
           - title: "Initial Value"
+            titlekr: "초기값"
             url: /dxl/x/xh430-v350/#initial-value
+            urlkr: /dxl/x/xh430-v350/#초기값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/x/xh430-v350/#control-table-of-eeprom-area
@@ -2768,9 +3337,9 @@ xh430-v350:
     urlkr: /dxl/x/xh430-v350/#유지보수
     children:
       - title: "Horn, Bearing"
-        titlekr: "혼, 베어링"
+        titlekr: "혼과 베어링 교체"
         url: /dxl/x/xh430-v350/#horn-and-bearing-replacement
-        urlkr: /dxl/x/xh430-v350/#혼-베어링
+        urlkr: /dxl/x/xh430-v350/#혼과-베어링-교체
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/x/xh430-v350/#reference
@@ -2792,9 +3361,9 @@ xh430-v350:
 #XH430-W210 sidebar
 xh430-w210:
   - title: "Specifications"
-    titlekr: "스펙"
+    titlekr: "주요 사양"
     url: /dxl/x/xh430-w210/#specifications
-    urlkr: /dxl/x/xh430-w210/#스펙
+    urlkr: /dxl/x/xh430-w210/#주요-사양
     children:
       - title: "Performance Graph"
         titlekr: "성능 그래프"
@@ -2811,13 +3380,21 @@ xh430-w210:
         urlkr: /dxl/x/xh430-w210/#컨트롤-테이블-데이터-주소
         children:
           - title: "Area(EEPROM, RAM)"
+            titlekr: "영역 (EEPROM, RAM)"
             url: /dxl/x/xh430-w210/#area-eeprom-ram
+            urlkr: /dxl/x/xh430-w210/#영역-eeprom-ram
           - title: "Size"
+            titlekr: "크기"
             url: /dxl/x/xh430-w210/#size
+            urlkr: /dxl/x/xh430-w210/#크기
           - title: "Access"
+            titlekr: "접근권한"
             url: /dxl/x/xh430-w210/#access
+            urlkr: /dxl/x/xh430-w210/#접근권한
           - title: "Initial Value"
+            titlekr: "초기값"
             url: /dxl/x/xh430-w210/#initial-value
+            urlkr: /dxl/x/xh430-w210/#초기값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/x/xh430-w210/#control-table-of-eeprom-area
@@ -2849,9 +3426,9 @@ xh430-w210:
     urlkr: /dxl/x/xh430-w210/#유지보수
     children:
       - title: "Horn, Bearing"
-        titlekr: "혼, 베어링"
+        titlekr: "혼과 베어링 교체"
         url: /dxl/x/xh430-w210/#horn-and-bearing-replacement
-        urlkr: /dxl/x/xh430-w210/#혼-베어링
+        urlkr: /dxl/x/xh430-w210/#혼과-베어링-교체
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/x/xh430-w210/#reference
@@ -2873,9 +3450,9 @@ xh430-w210:
 #XH430-W350 sidebar
 xh430-w350:
   - title: "Specifications"
-    titlekr: "스펙"
+    titlekr: "주요 사양"
     url: /dxl/x/xh430-w350/#specifications
-    urlkr: /dxl/x/xh430-w350/#스펙
+    urlkr: /dxl/x/xh430-w350/#주요-사양
     children:
       - title: "Performance Graph"
         titlekr: "성능 그래프"
@@ -2892,13 +3469,21 @@ xh430-w350:
         urlkr: /dxl/x/xh430-w350/#컨트롤-테이블-데이터-주소
         children:
           - title: "Area(EEPROM, RAM)"
+            titlekr: "영역 (EEPROM, RAM)"
             url: /dxl/x/xh430-w350/#area-eeprom-ram
+            urlkr: /dxl/x/xh430-w350/#영역-eeprom-ram
           - title: "Size"
+            titlekr: "크기"
             url: /dxl/x/xh430-w350/#size
+            urlkr: /dxl/x/xh430-w350/#크기
           - title: "Access"
+            titlekr: "접근권한"
             url: /dxl/x/xh430-w350/#access
+            urlkr: /dxl/x/xh430-w350/#접근권한
           - title: "Initial Value"
+            titlekr: "초기값"
             url: /dxl/x/xh430-w350/#initial-value
+            urlkr: /dxl/x/xh430-w350/#초기값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/x/xh430-w350/#control-table-of-eeprom-area
@@ -2930,9 +3515,9 @@ xh430-w350:
     urlkr: /dxl/x/xh430-w350/#유지보수
     children:
       - title: "Horn, Bearing"
-        titlekr: "혼, 베어링"
+        titlekr: "혼과 베어링 교체"
         url: /dxl/x/xh430-w350/#horn-and-bearing-replacement
-        urlkr: /dxl/x/xh430-w350/#혼-베어링
+        urlkr: /dxl/x/xh430-w350/#혼과-베어링-교체
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/x/xh430-w350/#reference
@@ -2954,9 +3539,9 @@ xh430-w350:
 #XL320 sidebar
 xl320:
   - title: "Specifications"
-    titlekr: "스펙"
+    titlekr: "주요 사양"
     url: /dxl/x/xl320/#specifications
-    urlkr: /dxl/x/xl320/#스펙
+    urlkr: /dxl/x/xl320/#주요-사양
   - title: "Control Table"
     titlekr: "컨트롤 테이블"
     url: /dxl/x/xl320/#control-table
@@ -2968,13 +3553,21 @@ xl320:
         urlkr: /dxl/x/xl320/#컨트롤-테이블-데이터-주소
         children:
           - title: "Area(EEPROM, RAM)"
+            titlekr: "영역 (EEPROM, RAM)"
             url: /dxl/x/xl320/#area-eeprom-ram
+            urlkr: /dxl/x/xl320/#영역-eeprom-ram
           - title: "Size"
+            titlekr: "크기"
             url: /dxl/x/xl320/#size
+            urlkr: /dxl/x/xl320/#크기
           - title: "Access"
+            titlekr: "접근권한"
             url: /dxl/x/xl320/#access
+            urlkr: /dxl/x/xl320/#접근권한
           - title: "Initial Value"
+            titlekr: "초기값"
             url: /dxl/x/xl320/#initial-value
+            urlkr: /dxl/x/xl320/#초기값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/x/xl320/#control-table-of-eeprom-area
@@ -3000,9 +3593,9 @@ xl320:
 #XL430-W250 sidebar
 xl430-w250:
   - title: "Specifications"
-    titlekr: "스펙"
+    titlekr: "주요 사양"
     url: /dxl/x/xl430-w250/#specifications
-    urlkr: /dxl/x/xl430-w250/#스펙
+    urlkr: /dxl/x/xl430-w250/#주요-사양
     children:
       - title: "Performance Graph"
         titlekr: "성능 그래프"
@@ -3019,13 +3612,21 @@ xl430-w250:
         urlkr: /dxl/x/xl430-w250/#컨트롤-테이블-데이터-주소
         children:
           - title: "Area(EEPROM, RAM)"
+            titlekr: "영역 (EEPROM, RAM)"
             url: /dxl/x/xl430-w250/#area-eeprom-ram
+            urlkr: /dxl/x/xl430-w250/#영역-eeprom-ram
           - title: "Size"
+            titlekr: "크기"
             url: /dxl/x/xl430-w250/#size
+            urlkr: /dxl/x/xl430-w250/#크기
           - title: "Access"
+            titlekr: "접근권한"
             url: /dxl/x/xl430-w250/#access
+            urlkr: /dxl/x/xl430-w250/#접근권한
           - title: "Initial Value"
+            titlekr: "초기값"
             url: /dxl/x/xl430-w250/#initial-value
+            urlkr: /dxl/x/xl430-w250/#초기값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/x/xl430-w250/#control-table-of-eeprom-area
@@ -3057,9 +3658,9 @@ xl430-w250:
     urlkr: /dxl/x/xl430-w250/#유지보수
     children:
       - title: "Horn, Bearing"
-        titlekr: "혼, 베어링"
+        titlekr: "혼과 베어링 교체"
         url: /dxl/x/xl430-w250/#horn-and-bearing-replacement
-        urlkr: /dxl/x/xl430-w250/#혼-베어링
+        urlkr: /dxl/x/xl430-w250/#혼과-베어링-교체
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/x/xl430-w250/#reference
@@ -3081,9 +3682,9 @@ xl430-w250:
 #XM430-W210 sidebar
 xm430-w210:
   - title: "Specifications"
-    titlekr: "스펙"
+    titlekr: "주요 사양"
     url: /dxl/x/xm430-w210/#specifications
-    urlkr: /dxl/x/xm430-w210/#스펙
+    urlkr: /dxl/x/xm430-w210/#주요-사양
     children:
       - title: "Performance Graph"
         titlekr: "성능 그래프"
@@ -3100,13 +3701,21 @@ xm430-w210:
         urlkr: /dxl/x/xm430-w210/#컨트롤-테이블-데이터-주소
         children:
           - title: "Area(EEPROM, RAM)"
+            titlekr: "영역 (EEPROM, RAM)"
             url: /dxl/x/xm430-w210/#area-eeprom-ram
+            urlkr: /dxl/x/xm430-w210/#영역-eeprom-ram
           - title: "Size"
+            titlekr: "크기"
             url: /dxl/x/xm430-w210/#size
+            urlkr: /dxl/x/xm430-w210/#크기
           - title: "Access"
+            titlekr: "접근권한"
             url: /dxl/x/xm430-w210/#access
+            urlkr: /dxl/x/xm430-w210/#접근권한
           - title: "Initial Value"
+            titlekr: "초기값"
             url: /dxl/x/xm430-w210/#initial-value
+            urlkr: /dxl/x/xm430-w210/#초기값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/x/xm430-w210/#control-table-of-eeprom-area
@@ -3138,9 +3747,9 @@ xm430-w210:
     urlkr: /dxl/x/xm430-w210/#유지보수
     children:
       - title: "Horn, Bearing"
-        titlekr: "혼, 베어링"
+        titlekr: "혼과 베어링 교체"
         url: /dxl/x/xm430-w210/#horn-and-bearing-replacement
-        urlkr: /dxl/x/xm430-w210/#혼-베어링
+        urlkr: /dxl/x/xm430-w210/#혼과-베어링-교체
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/x/xm430-w210/#reference
@@ -3162,9 +3771,9 @@ xm430-w210:
 #XM430-W350 sidebar
 xm430-w350:
   - title: "Specifications"
-    titlekr: "스펙"
+    titlekr: "주요 사양"
     url: /dxl/x/xm430-w350/#specifications
-    urlkr: /dxl/x/xm430-w350/#스펙
+    urlkr: /dxl/x/xm430-w350/#주요-사양
     children:
       - title: "Performance Graph"
         titlekr: "성능 그래프"
@@ -3181,13 +3790,21 @@ xm430-w350:
         urlkr: /dxl/x/xm430-w350/#컨트롤-테이블-데이터-주소
         children:
           - title: "Area(EEPROM, RAM)"
+            titlekr: "영역 (EEPROM, RAM)"
             url: /dxl/x/xm430-w350/#area-eeprom-ram
+            urlkr: /dxl/x/xm430-w350/#영역-eeprom-ram
           - title: "Size"
+            titlekr: "크기"
             url: /dxl/x/xm430-w350/#size
+            urlkr: /dxl/x/xm430-w350/#크기
           - title: "Access"
+            titlekr: "접근권한"
             url: /dxl/x/xm430-w350/#access
+            urlkr: /dxl/x/xm430-w350/#접근권한
           - title: "Initial Value"
+            titlekr: "초기값"
             url: /dxl/x/xm430-w350/#initial-value
+            urlkr: /dxl/x/xm430-w350/#초기값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/x/xm430-w350/#control-table-of-eeprom-area
@@ -3219,9 +3836,9 @@ xm430-w350:
     urlkr: /dxl/x/xm430-w350/#유지보수
     children:
       - title: "Horn, Bearing"
-        titlekr: "혼, 베어링"
+        titlekr: "혼과 베어링 교체"
         url: /dxl/x/xm430-w350/#horn-and-bearing-replacement
-        urlkr: /dxl/x/xm430-w350/#혼-베어링
+        urlkr: /dxl/x/xm430-w350/#혼과-베어링-교체
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/x/xm430-w350/#reference
@@ -3243,9 +3860,9 @@ xm430-w350:
 #XM540-W150 sidebar
 xm540-w150:
   - title: "Specifications"
-    titlekr: "스펙"
+    titlekr: "주요 사양"
     url: /dxl/x/xm540-w150/#specifications
-    urlkr: /dxl/x/xm540-w150/#스펙
+    urlkr: /dxl/x/xm540-w150/#주요-사양
     children:
       - title: "Performance Graph"
         titlekr: "성능 그래프"
@@ -3262,13 +3879,21 @@ xm540-w150:
         urlkr: /dxl/x/xm540-w150/#컨트롤-테이블-데이터-주소
         children:
           - title: "Area(EEPROM, RAM)"
+            titlekr: "영역 (EEPROM, RAM)"
             url: /dxl/x/xm540-w150/#area-eeprom-ram
+            urlkr: /dxl/x/xm540-w150/#영역-eeprom-ram
           - title: "Size"
+            titlekr: "크기"
             url: /dxl/x/xm540-w150/#size
+            urlkr: /dxl/x/xm540-w150/#크기
           - title: "Access"
+            titlekr: "접근권한"
             url: /dxl/x/xm540-w150/#access
+            urlkr: /dxl/x/xm540-w150/#접근권한
           - title: "Initial Value"
+            titlekr: "초기값"
             url: /dxl/x/xm540-w150/#initial-value
+            urlkr: /dxl/x/xm540-w150/#초기값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/x/xm540-w150/#control-table-of-eeprom-area
@@ -3300,9 +3925,9 @@ xm540-w150:
     urlkr: /dxl/x/xm540-w150/#유지보수
     children:
       - title: "Horn, Bearing"
-        titlekr: "혼, 베어링"
+        titlekr: "혼과 베어링 교체"
         url: /dxl/x/xm540-w150/#horn-and-bearing-replacement
-        urlkr: /dxl/x/xm540-w150/#혼-베어링
+        urlkr: /dxl/x/xm540-w150/#혼과-베어링-교체
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/x/xm540-w150/#reference
@@ -3324,9 +3949,9 @@ xm540-w150:
 #XM540-W270 sidebar
 xm540-w270:
   - title: "Specifications"
-    titlekr: "스펙"
+    titlekr: "주요 사양"
     url: /dxl/x/xm540-w270/#specifications
-    urlkr: /dxl/x/xm540-w270/#스펙
+    urlkr: /dxl/x/xm540-w270/#주요-사양
     children:
       - title: "Performance Graph"
         titlekr: "성능 그래프"
@@ -3343,13 +3968,21 @@ xm540-w270:
         urlkr: /dxl/x/xm540-w270/#컨트롤-테이블-데이터-주소
         children:
           - title: "Area(EEPROM, RAM)"
+            titlekr: "영역 (EEPROM, RAM)"
             url: /dxl/x/xm540-w270/#area-eeprom-ram
+            urlkr: /dxl/x/xm540-w270/#영역-eeprom-ram
           - title: "Size"
+            titlekr: "크기"
             url: /dxl/x/xm540-w270/#size
+            urlkr: /dxl/x/xm540-w270/#크기
           - title: "Access"
+            titlekr: "접근권한"
             url: /dxl/x/xm540-w270/#access
+            urlkr: /dxl/x/xm540-w270/#접근권한
           - title: "Initial Value"
+            titlekr: "초기값"
             url: /dxl/x/xm540-w270/#initial-value
+            urlkr: /dxl/x/xm540-w270/#초기값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/x/xm540-w270/#control-table-of-eeprom-area
@@ -3381,9 +4014,9 @@ xm540-w270:
     urlkr: /dxl/x/xm540-w270/#유지보수
     children:
       - title: "Horn, Bearing"
-        titlekr: "혼, 베어링"
+        titlekr: "혼과 베어링 교체"
         url: /dxl/x/xm540-w270/#horn-and-bearing-replacement
-        urlkr: /dxl/x/xm540-w270/#혼-베어링
+        urlkr: /dxl/x/xm540-w270/#혼과-베어링-교체
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/x/xm540-w270/#reference
@@ -3405,9 +4038,9 @@ xm540-w270:
 #H42-20-S300-R sidebar
 h42-20-s300-r:
   - title: "Specifications"
-    titlekr: "스펙"
+    titlekr: "주요 사양"
     url: /dxl/pro/h42-20-s300-r/#specifications
-    urlkr: /dxl/pro/h42-20-s300-r/#스펙
+    urlkr: /dxl/pro/h42-20-s300-r/#주요-사양
     children:
       - title: "Performance Graph"
         titlekr: "성능 그래프"
@@ -3424,13 +4057,21 @@ h42-20-s300-r:
         urlkr: /dxl/pro/h42-20-s300-r/#컨트롤-테이블-데이터-주소
         children:
           - title: "Area(EEPROM, RAM)"
+            titlekr: "영역 (EEPROM, RAM)"
             url: /dxl/pro/h42-20-s300-r/#area-eeprom-ram
+            urlkr: /dxl/pro//#영역-eeprom-ram
           - title: "Size"
+            titlekr: "크기"
             url: /dxl/pro/h42-20-s300-r/#size
+            urlkr: /dxl/pro//#크기
           - title: "Access"
+            titlekr: "접근권한"
             url: /dxl/pro/h42-20-s300-r/#access
+            urlkr: /dxl/pro//#접근권한
           - title: "Initial Value"
+            titlekr: "초기값"
             url: /dxl/pro/h42-20-s300-r/#initial-value
+            urlkr: /dxl/pro//#초기값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/pro/h42-20-s300-r/#control-table-of-eeprom-area
@@ -3473,9 +4114,9 @@ h42-20-s300-r:
 #H54-100-S500-R sidebar
 h54-100-s500-r:
   - title: "Specifications"
-    titlekr: "스펙"
+    titlekr: "주요 사양"
     url: /dxl/pro/h54-100-s500-r/#specifications
-    urlkr: /dxl/pro/h54-100-s500-r/#스펙
+    urlkr: /dxl/pro/h54-100-s500-r/#주요-사양
     children:
       - title: "Performance Graph"
         titlekr: "성능 그래프"
@@ -3492,13 +4133,21 @@ h54-100-s500-r:
         urlkr: /dxl/pro/h54-100-s500-r/#컨트롤-테이블-데이터-주소
         children:
           - title: "Area(EEPROM, RAM)"
+            titlekr: "영역 (EEPROM, RAM)"
             url: /dxl/pro/h54-100-s500-r/#area-eeprom-ram
+            urlkr: /dxl/pro//#영역-eeprom-ram
           - title: "Size"
+            titlekr: "크기"
             url: /dxl/pro/h54-100-s500-r/#size
+            urlkr: /dxl/pro//#크기
           - title: "Access"
+            titlekr: "접근권한"
             url: /dxl/pro/h54-100-s500-r/#access
+            urlkr: /dxl/pro//#접근권한
           - title: "Initial Value"
+            titlekr: "초기값"
             url: /dxl/pro/h54-100-s500-r/#initial-value
+            urlkr: /dxl/pro//#초기값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/pro/h54-100-s500-r/#control-table-of-eeprom-area
@@ -3541,9 +4190,9 @@ h54-100-s500-r:
 #H54-200-S500-R sidebar
 h54-200-s500-r:
   - title: "Specifications"
-    titlekr: "스펙"
+    titlekr: "주요 사양"
     url: /dxl/pro/h54-200-s500-r/#specifications
-    urlkr: /dxl/pro/h54-200-s500-r/#스펙
+    urlkr: /dxl/pro/h54-200-s500-r/#주요-사양
     children:
       - title: "Performance Graph"
         titlekr: "성능 그래프"
@@ -3560,13 +4209,21 @@ h54-200-s500-r:
         urlkr: /dxl/pro/h54-200-s500-r/#컨트롤-테이블-데이터-주소
         children:
           - title: "Area(EEPROM, RAM)"
+            titlekr: "영역 (EEPROM, RAM)"
             url: /dxl/pro/h54-200-s500-r/#area-eeprom-ram
+            urlkr: /dxl/pro//#영역-eeprom-ram
           - title: "Size"
+            titlekr: "크기"
             url: /dxl/pro/h54-200-s500-r/#size
+            urlkr: /dxl/pro//#크기
           - title: "Access"
+            titlekr: "접근권한"
             url: /dxl/pro/h54-200-s500-r/#access
+            urlkr: /dxl/pro//#접근권한
           - title: "Initial Value"
+            titlekr: "초기값"
             url: /dxl/pro/h54-200-s500-r/#initial-value
+            urlkr: /dxl/pro//#초기값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/pro/h54-200-s500-r/#control-table-of-eeprom-area
@@ -3609,9 +4266,9 @@ h54-200-s500-r:
 #L42-10-S300-R sidebar
 l42-10-s300-r:
   - title: "Specifications"
-    titlekr: "스펙"
+    titlekr: "주요 사양"
     url: /dxl/pro/l42-10-s300-r/#specifications
-    urlkr: /dxl/pro/l42-10-s300-r/#스펙
+    urlkr: /dxl/pro/l42-10-s300-r/#주요-사양
     children:
       - title: "Performance Graph"
         titlekr: "성능 그래프"
@@ -3628,13 +4285,21 @@ l42-10-s300-r:
         urlkr: /dxl/pro/l42-10-s300-r/#컨트롤-테이블-데이터-주소
         children:
           - title: "Area(EEPROM, RAM)"
+            titlekr: "영역 (EEPROM, RAM)"
             url: /dxl/pro/l42-10-s300-r/#area-eeprom-ram
+            urlkr: /dxl/pro//#영역-eeprom-ram
           - title: "Size"
+            titlekr: "크기"
             url: /dxl/pro/l42-10-s300-r/#size
+            urlkr: /dxl/pro//#크기
           - title: "Access"
+            titlekr: "접근권한"
             url: /dxl/pro/l42-10-s300-r/#access
+            urlkr: /dxl/pro//#접근권한
           - title: "Initial Value"
+            titlekr: "초기값"
             url: /dxl/pro/l42-10-s300-r/#initial-value
+            urlkr: /dxl/pro//#초기값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/pro/l42-10-s300-r/#control-table-of-eeprom-area
@@ -3677,9 +4342,9 @@ l42-10-s300-r:
 #L54-30-S400-R sidebar
 l54-30-s400-r:
   - title: "Specifications"
-    titlekr: "스펙"
+    titlekr: "주요 사양"
     url: /dxl/pro/l54-30-s400-r/#specifications
-    urlkr: /dxl/pro/l54-30-s400-r/#스펙
+    urlkr: /dxl/pro/l54-30-s400-r/#주요-사양
     children:
       - title: "Performance Graph"
         titlekr: "성능 그래프"
@@ -3696,13 +4361,21 @@ l54-30-s400-r:
         urlkr: /dxl/pro/l54-30-s400-r/#컨트롤-테이블-데이터-주소
         children:
           - title: "Area(EEPROM, RAM)"
+            titlekr: "영역 (EEPROM, RAM)"
             url: /dxl/pro/l54-30-s400-r/#area-eeprom-ram
+            urlkr: /dxl/pro//#영역-eeprom-ram
           - title: "Size"
+            titlekr: "크기"
             url: /dxl/pro/l54-30-s400-r/#size
+            urlkr: /dxl/pro//#크기
           - title: "Access"
+            titlekr: "접근권한"
             url: /dxl/pro/l54-30-s400-r/#access
+            urlkr: /dxl/pro//#접근권한
           - title: "Initial Value"
+            titlekr: "초기값"
             url: /dxl/pro/l54-30-s400-r/#initial-value
+            urlkr: /dxl/pro//#초기값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/pro/l54-30-s400-r/#control-table-of-eeprom-area
@@ -3745,9 +4418,9 @@ l54-30-s400-r:
 #L54-30-S500-R sidebar
 l54-30-s500-r:
   - title: "Specifications"
-    titlekr: "스펙"
+    titlekr: "주요 사양"
     url: /dxl/pro/l54-30-s500-r/#specifications
-    urlkr: /dxl/pro/l54-30-s500-r/#스펙
+    urlkr: /dxl/pro/l54-30-s500-r/#주요-사양
     children:
       - title: "Performance Graph"
         titlekr: "성능 그래프"
@@ -3764,13 +4437,21 @@ l54-30-s500-r:
         urlkr: /dxl/pro/l54-30-s500-r/#컨트롤-테이블-데이터-주소
         children:
           - title: "Area(EEPROM, RAM)"
+            titlekr: "영역 (EEPROM, RAM)"
             url: /dxl/pro/l54-30-s500-r/#area-eeprom-ram
+            urlkr: /dxl/pro//#영역-eeprom-ram
           - title: "Size"
+            titlekr: "크기"
             url: /dxl/pro/l54-30-s500-r/#size
+            urlkr: /dxl/pro//#크기
           - title: "Access"
+            titlekr: "접근권한"
             url: /dxl/pro/l54-30-s500-r/#access
+            urlkr: /dxl/pro//#접근권한
           - title: "Initial Value"
+            titlekr: "초기값"
             url: /dxl/pro/l54-30-s500-r/#initial-value
+            urlkr: /dxl/pro//#초기값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/pro/l54-30-s500-r/#control-table-of-eeprom-area
@@ -3813,9 +4494,9 @@ l54-30-s500-r:
 #L54-50-S290-R sidebar
 l54-50-s290-r:
   - title: "Specifications"
-    titlekr: "스펙"
+    titlekr: "주요 사양"
     url: /dxl/pro/l54-50-s290-r/#specifications
-    urlkr: /dxl/pro/l54-50-s290-r/#스펙
+    urlkr: /dxl/pro/l54-50-s290-r/#주요-사양
     children:
       - title: "Performance Graph"
         titlekr: "성능 그래프"
@@ -3832,13 +4513,21 @@ l54-50-s290-r:
         urlkr: /dxl/pro/l54-50-s290-r/#컨트롤-테이블-데이터-주소
         children:
           - title: "Area(EEPROM, RAM)"
+            titlekr: "영역 (EEPROM, RAM)"
             url: /dxl/pro/l54-50-s290-r/#area-eeprom-ram
+            urlkr: /dxl/pro//#영역-eeprom-ram
           - title: "Size"
+            titlekr: "크기"
             url: /dxl/pro/l54-50-s290-r/#size
+            urlkr: /dxl/pro//#크기
           - title: "Access"
+            titlekr: "접근권한"
             url: /dxl/pro/l54-50-s290-r/#access
+            urlkr: /dxl/pro//#접근권한
           - title: "Initial Value"
+            titlekr: "초기값"
             url: /dxl/pro/l54-50-s290-r/#initial-value
+            urlkr: /dxl/pro//#초기값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/pro/l54-50-s290-r/#control-table-of-eeprom-area
@@ -3881,9 +4570,9 @@ l54-50-s290-r:
 #L54-50-S500-R sidebar
 l54-50-s500-r:
   - title: "Specifications"
-    titlekr: "스펙"
+    titlekr: "주요 사양"
     url: /dxl/pro/l54-50-s500-r/#specifications
-    urlkr: /dxl/pro/l54-50-s500-r/#스펙
+    urlkr: /dxl/pro/l54-50-s500-r/#주요-사양
     children:
       - title: "Performance Graph"
         titlekr: "성능 그래프"
@@ -3900,13 +4589,21 @@ l54-50-s500-r:
         urlkr: /dxl/pro/l54-50-s500-r/#컨트롤-테이블-데이터-주소
         children:
           - title: "Area(EEPROM, RAM)"
+            titlekr: "영역 (EEPROM, RAM)"
             url: /dxl/pro/l54-50-s500-r/#area-eeprom-ram
+            urlkr: /dxl/pro//#영역-eeprom-ram
           - title: "Size"
+            titlekr: "크기"
             url: /dxl/pro/l54-50-s500-r/#size
+            urlkr: /dxl/pro//#크기
           - title: "Access"
+            titlekr: "접근권한"
             url: /dxl/pro/l54-50-s500-r/#access
+            urlkr: /dxl/pro//#접근권한
           - title: "Initial Value"
+            titlekr: "초기값"
             url: /dxl/pro/l54-50-s500-r/#initial-value
+            urlkr: /dxl/pro//#초기값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/pro/l54-50-s500-r/#control-table-of-eeprom-area
@@ -3949,9 +4646,9 @@ l54-50-s500-r:
 #M42-10-S260-R sidebar
 m42-10-s260-r:
   - title: "Specifications"
-    titlekr: "스펙"
+    titlekr: "주요 사양"
     url: /dxl/pro/m42-10-s260-r/#specifications
-    urlkr: /dxl/pro/m42-10-s260-r/#스펙
+    urlkr: /dxl/pro/m42-10-s260-r/#주요-사양
     children:
       - title: "Performance Graph"
         titlekr: "성능 그래프"
@@ -3968,13 +4665,21 @@ m42-10-s260-r:
         urlkr: /dxl/pro/m42-10-s260-r/#컨트롤-테이블-데이터-주소
         children:
           - title: "Area(EEPROM, RAM)"
+            titlekr: "영역 (EEPROM, RAM)"
             url: /dxl/pro/m42-10-s260-r/#area-eeprom-ram
+            urlkr: /dxl/pro//#영역-eeprom-ram
           - title: "Size"
+            titlekr: "크기"
             url: /dxl/pro/m42-10-s260-r/#size
+            urlkr: /dxl/pro//#크기
           - title: "Access"
+            titlekr: "접근권한"
             url: /dxl/pro/m42-10-s260-r/#access
+            urlkr: /dxl/pro//#접근권한
           - title: "Initial Value"
+            titlekr: "초기값"
             url: /dxl/pro/m42-10-s260-r/#initial-value
+            urlkr: /dxl/pro//#초기값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/pro/m42-10-s260-r/#control-table-of-eeprom-area
@@ -4017,9 +4722,9 @@ m42-10-s260-r:
 #M54-40-S250-R sidebar
 m54-40-s250-r:
   - title: "Specifications"
-    titlekr: "스펙"
+    titlekr: "주요 사양"
     url: /dxl/pro/m54-40-s250-r/#specifications
-    urlkr: /dxl/pro/m54-40-s250-r/#스펙
+    urlkr: /dxl/pro/m54-40-s250-r/#주요-사양
     children:
       - title: "Performance Graph"
         titlekr: "성능 그래프"
@@ -4036,13 +4741,21 @@ m54-40-s250-r:
         urlkr: /dxl/pro/m54-40-s250-r/#컨트롤-테이블-데이터-주소
         children:
           - title: "Area(EEPROM, RAM)"
+            titlekr: "영역 (EEPROM, RAM)"
             url: /dxl/pro/m54-40-s250-r/#area-eeprom-ram
+            urlkr: /dxl/pro//#영역-eeprom-ram
           - title: "Size"
+            titlekr: "크기"
             url: /dxl/pro/m54-40-s250-r/#size
+            urlkr: /dxl/pro//#크기
           - title: "Access"
+            titlekr: "접근권한"
             url: /dxl/pro/m54-40-s250-r/#access
+            urlkr: /dxl/pro//#접근권한
           - title: "Initial Value"
+            titlekr: "초기값"
             url: /dxl/pro/m54-40-s250-r/#initial-value
+            urlkr: /dxl/pro//#초기값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/pro/m54-40-s250-r/#control-table-of-eeprom-area
@@ -4085,9 +4798,9 @@ m54-40-s250-r:
 #M54-60-S250-R sidebar
 m54-60-s250-r:
   - title: "Specifications"
-    titlekr: "스펙"
+    titlekr: "주요 사양"
     url: /dxl/pro/m54-60-s250-r/#specifications
-    urlkr: /dxl/pro/m54-60-s250-r/#스펙
+    urlkr: /dxl/pro/m54-60-s250-r/#주요-사양
     children:
       - title: "Performance Graph"
         titlekr: "성능 그래프"
@@ -4104,13 +4817,21 @@ m54-60-s250-r:
         urlkr: /dxl/pro/m54-60-s250-r/#컨트롤-테이블-데이터-주소
         children:
           - title: "Area(EEPROM, RAM)"
+            titlekr: "영역 (EEPROM, RAM)"
             url: /dxl/pro/m54-60-s250-r/#area-eeprom-ram
+            urlkr: /dxl/pro//#영역-eeprom-ram
           - title: "Size"
+            titlekr: "크기"
             url: /dxl/pro/m54-60-s250-r/#size
+            urlkr: /dxl/pro//#크기
           - title: "Access"
+            titlekr: "접근권한"
             url: /dxl/pro/m54-60-s250-r/#access
+            urlkr: /dxl/pro//#접근권한
           - title: "Initial Value"
+            titlekr: "초기값"
             url: /dxl/pro/m54-60-s250-r/#initial-value
+            urlkr: /dxl/pro//#초기값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/pro/m54-60-s250-r/#control-table-of-eeprom-area

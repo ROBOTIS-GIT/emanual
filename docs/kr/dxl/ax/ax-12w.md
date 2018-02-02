@@ -15,7 +15,7 @@ sidebar:
 
 > AX-12W
 
-# [주요 사양 요약](#주요-사양-요약)
+# [주요 사양](#주요-사양)
 
 | 항목            | 내용                                                                   |
 |:----------------|:-----------------------------------------------------------------------|
@@ -39,7 +39,7 @@ sidebar:
 {% include kr/dxl/control_table_protocol1.md %}
 
 
-## [Control Table of EEPROM Area](#control-table-of-eeprom-area)
+## [EEPROM 영역](#eeprom-영역)
 
 | 주소 | 크기(Byte) | 명칭                                        | 의미                              | 접근 | 초기값 |
 |:-----|:-----------|:--------------------------------------------|:----------------------------------|:-----|:-------|
@@ -59,7 +59,7 @@ sidebar:
 | 18   | 1          | [Shutdown](#shutdown)                       | 알람용 셧 다운(Shut down) 기능    | RW   | 36     |
 
 
-## [Control Table of RAM Area](#control-table-of-ram-area)
+## [RAM 영역](#ram-영역)
 
 | 주소 | 크기(Byte) | 명칭                                            | 의미                    | 접근 | 초기값     |
 |:-----|:-----------|:------------------------------------------------|:------------------------|:-----|:-----------|
@@ -83,18 +83,18 @@ sidebar:
 | 48   | 2          | [Punch](#punch)                                 | Punch 값의 바이트       | RW   | 32         |
 
 
-## [Address 기능 설명](#address-기능-설명)
+## [컨트롤 테이블 설명](#컨트롤-테이블-설명)
 
-### <a name="model-number"></a>**Model Number (0)**
+### <a name="model-number"></a>**[Model Number (0)](#model-number-0)**
 다이나믹셀의 모델 번호입니다.
 
-### <a name="firmware-version"></a>**Firmware Version (2)**
+### <a name="firmware-version"></a>**[Firmware Version (2)](#firmware-version-2)**
 다이나믹셀 펌웨어 버전입니다.
 
-### <a name="id"></a>**ID (3)**
+### <a name="id"></a>**[ID (3)](#id-3)**
 {% include kr/dxl/control_table_id.md %}
 
-### <a name="baud-rate"></a>**Baud Rate (4)**
+### <a name="baud-rate"></a>**[Baud Rate (4)](#baud-rate-4)**
 제어기와 통신하기 위한 통신 속도 입니다. 0~254 (0xFE) 까지 사용 가능하며 산출 공식은 다음과 같습니다.  
 Baudrate(BPS) = 2,000,000 / (Value + 1)
 
@@ -113,85 +113,77 @@ Baudrate(BPS) = 2,000,000 / (Value + 1)
 `참고` UART는 Baudrate 오차가 3% 이내이면 통신에 지장이 없습니다.
 {: .notice}
 
-### <a name="return-delay-time"></a>**Return Delay Time (5)**
+### <a name="return-delay-time"></a>**[Return Delay Time (5)](#return-delay-time-5)**
 {% include kr/dxl/control_table_return_delay_time.md %}
 
-### <a name="cw-angle-limit"></a><a name="ccw-angle-limit"></a>**CW/CCW Angle Limit(6, 8)**
+### <a name="cw-angle-limit"></a><a name="ccw-angle-limit"></a>**[CW/CCW Angle Limit(6, 8)](#cwccw-angle-limit6-8)**
 {% include kr/dxl/control_table_angle_limit.md %}
 
-### <a name="temperature-limit"></a>**The Highest Limit Temperature**
+### <a name="temperature-limit"></a>**[Temperature Limit (11)](#temperature-limit-11)**
+{% include kr/dxl/control_table_temp_limit.md %}
 
-동작 온도의 상한 값입니다.
-
-|    단위    |  범위  |  |
-|:----------:|:------:|::|
-| 약 1&deg;C | 0 ~ 99 |  |
-
-`주의` 온도 상한선을 초기값보다 높게 설정하지 마십시오. 온도 알람셧다운 발생시 20분이상 휴식하여 다이나믹셀의 온도를 충분히 낮춘후 사용해 주세요. 온도가 높은상태에서 사용시 제품이 손상될 수 있습니다.
-{: .notice--warning}
-
-### <a name="min-voltage-limit"></a><a name="max-voltage-limit"></a>**Min/Max Voltage Limit**
+### <a name="min-voltage-limit"></a><a name="max-voltage-limit"></a>**[Min/Max Voltage Limit (12, 13)](#minmax-voltage-limit-12-13)**
 {% include kr/dxl/control_table_volt_limit.md %}
 
-### <a name="max-torque"></a>**Max Torque**
+### <a name="max-torque"></a>**[Max Torque (14)](#max-torque-14)**
 {% include kr/dxl/control_table_max_torque.md %}
 
-### <a name="status-return-level"></a>**Status Return Level**
+### <a name="status-return-level"></a>**[Status Return Level (16)](#status-return-level-16)**
 {% include kr/dxl/control_table_status_return_lv.md %}
 
-### <a name="alarm-led"></a><a name="shutdown"></a>**Alarm LED / Alarm Shutdown**
+### <a name="alarm-led"></a><a name="shutdown"></a>**[Alarm LED(17), Shutdown(18)](#alarm-led17-shutdown18)**
 {% include kr/dxl/control_table_alarm_shutdown.md %}
 
-### <a name="torque-enable"></a>**Torque Enable**
+### <a name="torque-enable"></a>**[Torque Enable (24)](#torque-enable-24)**
 {% include kr/dxl/control_table_torque_enable.md %}
 
-### <a name="led"></a>**LED**
+### <a name="led"></a>**[LED (25)](#led-25)**
 {% include kr/dxl/control_table_led.md %}
 
-### <a name="cw-compliance-margin"></a><a name="ccw-compliance-margin"></a>**Compliance Margin**
+### <a name="cw-compliance-margin"></a><a name="ccw-compliance-margin"></a>**[Compliance Margin (26, 27)](#compliance-margin-26-27)**
 {% include kr/dxl/control_table_compliance_margin.md %}
 
-### <a name="cw-compliance-slope"></a><a name="ccw-compliance-slope"></a>**Compliance Slope**
+### <a name="cw-compliance-slope"></a><a name="ccw-compliance-slope"></a>**[Compliance Slope (28, 29)](#compliance-slope-28-29)**
 {% include kr/dxl/control_table_compliance_slope.md %}
 
-### <a name="goal-position"></a>**Goal Position**
+### <a name="goal-position"></a>**[Goal Position (30)](#goal-position-30)**
 {% include kr/dxl/control_table_dx_goal_position.md %}
 
-### <a name="moving-speed"></a>**Moving Speed**
+### <a name="moving-speed"></a>**[Moving Speed (32)](#moving-speed-32)**
 {% include kr/dxl/control_table_moving_speed.md %}
 
-### <a name="torque-limit"></a>**Torque Limit**
+### <a name="torque-limit"></a>**[Torque Limit (34)](#torque-limit-34)**
 {% include kr/dxl/control_table_torque_limit.md %}
 
-### <a name="present-position"></a>**Present Position**
+### <a name="present-position"></a>**[Present Position (36)](#present-position-36)**
 {% include kr/dxl/control_table_potentio_present_position.md %}
 
-### <a name="present-speed"></a>**Present Speed**
+### <a name="present-speed"></a>**[Present Speed (38)](#present-speed-38)**
 {% include kr/dxl/control_table_present_speed.md %}
 
-### <a name="present-load"></a>**Present Load**
+### <a name="present-load"></a>**[Present Load (40)](#present-load-40)**
 {% include kr/dxl/control_table_present_load.md %}
 
-### <a name="present-voltage"></a>**Present Voltage**
+### <a name="present-voltage"></a>**[Present Voltage (42)](#present-voltage-42)**
 {% include kr/dxl/control_table_present_volt.md %}
 
-### <a name="present temperature"></a>**Present Temperature**
+### <a name="present-temperature"></a>**[Present Temperature (43)](#present-temperature-43)**
 {% include kr/dxl/control_table_present_temp.md %}
 
-### <a name="registered-instruction"></a>**Registered Instruction**
+### <a name="registered-instruction"></a>**[Registered Instruction (44)](#registered-instruction-44)**
 {% include kr/dxl/control_table_reg_instruction.md %}
 
-### <a name="moving"></a>**Moving**
+### <a name="moving"></a>**[Moving (46)](#moving-46)**
 {% include kr/dxl/control_table_moving.md %}
 
-### <a name="lock"></a>**Lock**
+### <a name="lock"></a>**[Lock (47)](#lock-47)**
 {% include kr/dxl/control_table_lock.md %}
 
-### <a name="punch"></a>**Punch**
+### <a name="punch"></a>**[Punch (48)](#punch-48)**
 {% include kr/dxl/control_table_punch.md %}
 
 
-# [조립 방법](#조립-방법)
+# [조립 예시](#조립-예시)
 
 ![](/assets/images/dxl/ax/ax_series_frame_assembly_01.png)
 
@@ -206,11 +198,13 @@ Baudrate(BPS) = 2,000,000 / (Value + 1)
 `Note` [호환성 가이드]
 {: .notice}
 
-## [Quick Start](#quick-start)
+## [커넥터 정보](#커넥터-정보)
+{% include kr/dxl/molex_ttl.md %}
 
 ## [도면](#도면)
 
 ![](/assets/images/dxl/ax/ax-12w_dimension.png)
 
+{% include kr/dxl/485_ttl_connection.md %}
 
-[호환성 가이드]: http://en.robotis.com/BlueAD/board.php?bbs_id=faq&mode=view&bbs_no=47&page=1&key=&keyword=&sort=&scate=
+[호환성 가이드]: http://en.robotis.com/service/compatibility_table.php?cate=d

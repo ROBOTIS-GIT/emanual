@@ -3,8 +3,8 @@ Profile Velocity(112) can be used in all control modes except Torque Control Mod
 Profile Velocity(112) cannot exceed Velocity Limit(44).  
 Velocity Control Mode only uses Profile Acceleration(108) instead of Profile Velocity(112).
 
-|Unit|Value Range|Description|
-| :---: | :---: | :---: |
+|   Unit    |      Value Range       |             Description             |
+|:---------:|:----------------------:|:-----------------------------------:|
 | 0.229 rpm | 0 ~ Velocity Limit(44) | '0' stands for an infinite velocity |
 
 The Profile is an acceleration/deceleration control method to reduce vibration, noise and load of the motor by controlling dramatically changing velocity and acceleration.  
@@ -33,12 +33,12 @@ The following explains how Profile processes Goal Position(116) instruction in P
 6. Target velocity trajectory and target position trajectory from Profile are stored at Velocity Trajectory(136) and Position Trajectory(140) respectively.
 7. V<sub>PRFL_TRI</sub> of ③ and Travel time(t3) to reach Goal Position(116) is calculated as below.
 
-| Condition     | Types of Profile     |
-| :------------- | :------------- |
-| V<sub>PRFL</sub>(112) = 0 | Profile not used<br />(Step Instruction) |
-| (V<sub>PRFL</sub>(112) ≠ 0) & (A<sub>PRF</sub>(108) = 0) | Rectangular Profile |
-| (V<sub>PRFL</sub>(112) ≠ 0) & (A<sub>PRF</sub>(108) ≠ 0) & (V<sub>PRFL_TRI</sub> ≤ V<sub>PRFL</sub>(112)) | Triangular Profile |
-| (V<sub>PRFL</sub>(112) ≠ 0) & (A<sub>PRF</sub>(108) ≠ 0) & (V<sub>PRFL_TRI</sub> ＞ V<sub>PRFL</sub>(112)) | Trapezoidal Profile |
+| Condition                                                                                                  | Types of Profile                         |
+|:-----------------------------------------------------------------------------------------------------------|:-----------------------------------------|
+| V<sub>PRFL</sub>(112) = 0                                                                                  | Profile not used<br />(Step Instruction) |
+| (V<sub>PRFL</sub>(112) ≠ 0) & (A<sub>PRF</sub>(108) = 0)                                                   | Rectangular Profile                      |
+| (V<sub>PRFL</sub>(112) ≠ 0) & (A<sub>PRF</sub>(108) ≠ 0) & (V<sub>PRFL_TRI</sub> ≤ V<sub>PRFL</sub>(112))  | Triangular Profile                       |
+| (V<sub>PRFL</sub>(112) ≠ 0) & (A<sub>PRF</sub>(108) ≠ 0) & (V<sub>PRFL_TRI</sub> ＞ V<sub>PRFL</sub>(112)) | Trapezoidal Profile                      |
 
 ![](/assets/images/dxl/dxl_velocity_profiles.jpg)
 
@@ -48,7 +48,7 @@ The following explains how Profile processes Goal Position(116) instruction in P
 
 {% capture group_notice_03 %}
 `Note` Velocity Control Mode only uses Profile Acceleration(108). Step and Trapezoidal Profiles are supported. Velocity Override and Jerk control are supported as well. Acceleration time(t1) can be calculated as below equation.  
-Goal Velocity(104) / Profile Acceleration(108) * t<sub>1</sub> = 64
+t<sub>1</sub> = 64 * {Goal Velocity(104) / Profile Acceleration(108)}
 {% endcapture %}
 
 <div class="notice">

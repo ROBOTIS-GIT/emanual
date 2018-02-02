@@ -412,9 +412,6 @@
 <loc>http://localhost:4000/docs/en/platform/op/development/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/docs/kr/platform/op/development/</loc>
-</url>
-<url>
 <loc>http://localhost:4000/docs/en/parts/sensor/dms-80/</loc>
 </url>
 <url>
@@ -859,9 +856,6 @@
 <loc>http://localhost:4000/docs/en/platform/op/maintenance/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/docs/kr/platform/op/maintenance/</loc>
-</url>
-<url>
 <loc>http://localhost:4000/docs/en/software/rplus1/manager/</loc>
 </url>
 <url>
@@ -1210,9 +1204,6 @@
 <loc>http://localhost:4000/docs/en/platform/op/references/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/docs/kr/platform/op/references/</loc>
-</url>
-<url>
 <loc>http://localhost:4000/docs/kr/platform/robothand_mx28/</loc>
 </url>
 <url>
@@ -1277,9 +1268,6 @@
 </url>
 <url>
 <loc>http://localhost:4000/docs/en/platform/turtlebot3/simulation/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/docs/kr/platform/op/simulation/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/docs/en/platform/turtlebot3/slam/</loc>

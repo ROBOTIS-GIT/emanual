@@ -11,14 +11,14 @@ sidebar:
   nav: "rx-24f"
 ---
 
-# RX-24F
-
 ![](/assets/images/dxl/rx/rx-24f_product.png)
+
+> RX-24F
 
 `Warning` RX-24F 은 현재 단종되어 더 이상 판매되지 않습니다.
 {: .notice--warning}
 
-# [주요 사양 요약](#주요-사양-요약)
+# [주요 사양](#주요-사양)
 
 | 항목           | 내용     |
 | :------------- | :------------- |
@@ -40,18 +40,16 @@ sidebar:
 | Material | Full Metal Gear, Engineering Plastic Body |
 | Standby Current | 50mA |
 
-`Note`
-Stall Torque 는 순간적으로 낼수있는 최대정지토크를 의미합니다.
-실제구동위해 로봇을 설계하신다면 Stall Torque의 1/5 이하의 로드가 걸리도록 설계하셔야 안정적인 움직임이 가능합니다.
+`Note` Stall Torque 는 순간적으로 낼수있는 최대정지토크를 의미합니다.실제 구동을 위해 로봇을 설계하신다면 Stall Torque의 1/5 이하의 로드가 걸리도록 설계하셔야 안정적인 움직임이 가능합니다.
 {: .notice}
 
 
 {% include kr/dxl/control_table_protocol1.md %}
 
-## [Control Table of EEPROM Area](#control-table-of-eeprom-area)
+## [EEPROM 영역](#eeprom-영역)
 
-| 주소     | 크기(Byte)     | 명칭     | 의미    | 접근     | 초기값  |
-| :---------: | :-----------:  | :-----------: | :------------: | :--------: | :------------: |
+| 주소     | 크기<br>(Byte)     | 명칭     | 의미    | 접근     | 초기값  |
+| :---------: | :-----------:  | :----------- | :------------ | :--------: | :------------: |
 |0|2|[Model Number](#model-number)         | 모델 번호의 바이트      | R       | 24 |
 |2|1|[Firmware Version](#firmware-version)    |펌웨어 버전 정보|R|-|
 |3|1|[ID](#id)                  |다이나믹셀 ID      |RW|1|
@@ -68,10 +66,10 @@ Stall Torque 는 순간적으로 낼수있는 최대정지토크를 의미합니
 |18|1|[Shutdown](#shutdown)            |알람용 셧 다운(Shut down) 기능|RW|36|
 
 
-## [Control Table of RAM Area](#control-table-of-ram-area)
+## [RAM 영역](#ram-영역)
 
 | 주소     | 크기(Byte)     | 명칭    | 의미     | 접근    | 초기값   |
-| :---------: | :------------: | :-----------: | :-------------: | :--------: | :--------------: |
+| :---------: | :------------: | :----------- | :------------- | :--------: | :--------------: |
 |24|1|[Torque Enable](#torque-enable)            |토크 켜기|RW|0|
 |25|1|[LED](#led)                             |LED On/Off|RW|0|
 |26|1|[CW Compliance Margin](#cw-compliance-margin)   |CW Compliance Margin|RW|1|
@@ -80,7 +78,7 @@ Stall Torque 는 순간적으로 낼수있는 최대정지토크를 의미합니
 |29|1|[CCW Compliance Slope](#ccw-compliance-alope)   |CCW Compliance Slope|RW|32|
 |30|2|[Goal Position](#goal-position)                 |목표 위치 값의 바이트|RW|-|
 |32|2|[Moving Speed](#moving-speed)             |목표 속도 값의 바이트|RW|-|
-|34|2|[Torque Limit](#torque-limit)            |토크 한계 값의 바이트|RW|ADD 14&15|
+|34|2|[Torque Limit](#torque-limit)            |토크 한계 값의 바이트|RW|ADD 14\&15|
 |36|2|[Present Position](#present-position)     |현재 위치 값의 바이트|R|-|
 |38|2|[Present Speed](#present-speed)           |현재 속도 값의 바이트|R|-|
 |40|2|[Present Load](#present-load)             |현재 하중 값의 바이트|R|-|
@@ -92,7 +90,7 @@ Stall Torque 는 순간적으로 낼수있는 최대정지토크를 의미합니
 |48|2|[Punch](#punch)                   |Punch 값의 바이트|RW|32|
 
 
-## [Address 기능 설명](#address-기능-설명)
+## [컨트롤 테이블 설명](#컨트롤-테이블-설명)
 
 ### <a name="model-number"></a>**[Model Number (0)](#model-number-0)**
 다이나믹셀의 모델 번호입니다.
@@ -103,14 +101,11 @@ Stall Torque 는 순간적으로 낼수있는 최대정지토크를 의미합니
 ### <a name="id"></a>**[ID (3)](#id-3)**
 {% include kr/dxl/control_table_id.md %}
 
-
 ### <a name="baud-rate"></a>**[Baud Rate (4)](#baud-rate-4)**
 {% include kr/dxl/control_table_baudrate.md %}
 
-
 ### <a name="return-delay-time"></a>**[Return Delay Time (5)](#return-delay-time-5)**
 {% include kr/dxl/control_table_return_delay_time.md %}
-
 
 ### <a name="cw-angle-limit"></a><a name="ccw-angle-limit"></a>**[CW/CCW Angle Limit(6, 8)](#cwccw-angle-limit6-8)**
 {% include kr/dxl/control_table_angle_limit.md %}
@@ -178,77 +173,79 @@ Stall Torque 는 순간적으로 낼수있는 최대정지토크를 의미합니
 ### <a name="punch"></a>**[Punch (48)](#punch-48)**
 {% include kr/dxl/control_table_punch.md %}
 
-# [조립 방법](#조립-방법)
+# [조립 예시](#조립-예시)
 
 + FR07-B1 Option Frame
 
-![](/assets/images/dxl/rx/rx-28_of-28b.png)
+  ![](/assets/images/dxl/rx/rx-28_of-28b.png)
 
 + FR07-H1 Option Frame
 
-![](/assets/images/dxl/rx/rx-28_of-28h.png)
+  ![](/assets/images/dxl/rx/rx-28_of-28h.png)
 
 + FR07-S1 Option Frame
 
-![](/assets/images/dxl/rx/rx-28_of-28s.png)
+  ![](/assets/images/dxl/rx/rx-28_of-28s.png)
 
 + FR07-B101 Option Frame
 
-![](/assets/images/dxl/rx/rx-28_fr07-b101.png)
+  ![](/assets/images/dxl/rx/rx-28_fr07-b101.png)
 
 + FR07-F101, FR07-X101 Option Frame
 
-![](/assets/images/dxl/rx/rx-28_fr07-f101_fr07-x101.png)
+  ![](/assets/images/dxl/rx/rx-28_fr07-f101_fr07-x101.png)
 
 + FR07-H101 Option Frame
 
-![](/assets/images/dxl/rx/rx-28_fr07-h101.png)
+  ![](/assets/images/dxl/rx/rx-28_fr07-h101.png)
 
 + FR07-S101 Option Frame
 
-![](/assets/images/dxl/rx/rx-28_fr07-s101.png)
+  ![](/assets/images/dxl/rx/rx-28_fr07-s101.png)
 
 + HN07-N1 Horn
 
-![](/assets/images/dxl/rx/rx-28_hn07-n1.png)
+  ![](/assets/images/dxl/rx/rx-28_hn07-n1.png)
 
 + HN07-I1 Horn
 
-![](/assets/images/dxl/rx/rx-28_hn07-i1.png)
+  ![](/assets/images/dxl/rx/rx-28_hn07-i1.png)
 
 + HN07-T1 Horn
 
-![](/assets/images/dxl/rx/rx-28_hn07-t1.png)
+  ![](/assets/images/dxl/rx/rx-28_hn07-t1.png)
 
 + HN07-N101 Horn
 
-![](/assets/images/dxl/rx/rx-28_hn07-n101.png)
+  ![](/assets/images/dxl/rx/rx-28_hn07-n101.png)
 
 + HN07-I101 Horn
 
-![](/assets/images/dxl/rx/rx-28_hn07-i101.png)
+  ![](/assets/images/dxl/rx/rx-28_hn07-i101.png)
 
 + HN07-T101 Horn
 
-![](/assets/images/dxl/rx/rx-28_hn07-t101.png)
+  ![](/assets/images/dxl/rx/rx-28_hn07-t101.png)
 
 + 기구결합 : 아래는 옵션 프레임과 혼을 이용한 결합구조의 예입니다.
 
-![](/assets/images/dxl/rx/rx-10_combinations.png)
+  ![](/assets/images/dxl/rx/rx-10_combinations.png)
 
-# [Maintenance](#maintenance)
+# [유지보수](#유지보수)
 
 {% include kr/dxl/horn_bearing_replacement.md %}
 
-# [Reference](#reference)
+# [참고자료](#참고자료)
 
-`Note` [Compatibility Guide]
+`Note` [호환성 가이드]
 {: .notice}
+
+## [커넥터 정보](#커넥터-정보)
+{% include kr/dxl/molex_485.md %}
 
 ## [도면](#도면)
 
 {% include kr/dxl/485_ttl_connection.md %}
 
-[Two's complement]: #
 
-[Compatibility Guide]: http://en.robotis.com/BlueAD/board.php?bbs_id=faq&mode=view&bbs_no=47&page=1&key=&keyword=&sort=&scate=
+[호환성 가이드]: http://en.robotis.com/service/compatibility_table.php?cate=d
