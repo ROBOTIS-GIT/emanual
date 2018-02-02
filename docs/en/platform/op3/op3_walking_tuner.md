@@ -33,6 +33,6 @@ Please refer to [How to use walking tuner].
 
 <br>[&lt;&lt; Back](ROBOTIS-OP3-Tools.md)
 
-[op3_gui_demo]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/OP3-How-to-use-walking-tuner
-[op3_gui_demo]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_gui_demo
-[How to use walking tuner]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/OP3-How-to-use-walking-tuner
+[op3_gui_demo]:[OP3-How-to-use-walking-tuner.md]
+[op3_gui_demo]:[op3_gui_demo.md]
+[How to use walking tuner]:[OP3-How-to-use-walking-tuner.md]

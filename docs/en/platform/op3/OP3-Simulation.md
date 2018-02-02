@@ -4,5 +4,5 @@
 
 [&lt;&lt; Back](OP3_User's_Guide.md)
 
-[Gazebo installation]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/OP3-Gazebo-installation
-[How to execute Gazebo simulation]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/OP3-How-to-execute-Gazebo-simulation
+[Gazebo installation]:[OP3-Gazebo-installation.md]
+[How to execute Gazebo simulation]:[OP3-How-to-execute-Gazebo-simulation.md]

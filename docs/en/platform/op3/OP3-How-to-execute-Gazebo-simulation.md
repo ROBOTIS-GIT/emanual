@@ -30,7 +30,7 @@ $ roslaunch op3_manager op3_gazebo.launch
 
 
 [&lt;&lt; Back](OP3-User's-Guide.md)
-[op3_manager]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_manager
-[OP3 Tutorials]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/OP3-Tutorials
+[op3_manager]:[op3_manager.md]
+[OP3 Tutorials]:[OP3-Tutorials.md]
 [Controller File]:https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Common/blob/master/robotis_op3_gazebo/config/position_controller.yaml
 [World File]:https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Common/blob/master/robotis_op3_gazebo/worlds/empty.world

@@ -103,12 +103,12 @@ controller->startTimer();
 
 [&lt;&lt; Back]
 
-[Creating new robot manager]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/Creating-new-robot-manager
-[op3_action_module]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_action_module
-[op3_base_module]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_base_module
-[op3_head_control_module]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_head_control_module
-[op3_walking_module]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_walking_module
-[op3_online_walking_module]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_online_walking_module
-[open_cr_module]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/open_cr_module
+[Creating new robot manager]:[Creating-new-robot-manager.md]
+[op3_action_module]:[op3_action_module.md]
+[op3_base_module]:[op3_base_module.md]
+[op3_head_control_module]:[op3_head_control_module.md]
+[op3_walking_module]:[op3_walking_module.md]
+[op3_online_walking_module]:[op3_online_walking_module.md]
+[open_cr_module]:[open_cr_module.md]
 
 [&lt;&lt; Back]:[OP3-User's-Guide.md]

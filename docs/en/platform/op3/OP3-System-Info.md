@@ -49,10 +49,10 @@ System Configuration of ROBOTIS-OP3
 
 [&lt;&lt; Back](OP3-User's-Guide.md)
 
-[Intel NUC]:https://www.intel.com/content/www/us/en/products/boards-kits/nuc/kits.html)
-[User Guides]:https://www.linuxmint.com/documentation.php)
+[Intel NUC]:https://www.intel.com/content/www/us/en/products/boards-kits/nuc/kits.html
+[User Guides]:https://www.linuxmint.com/documentation.php
 [What is ROS?]:http://www.ros.org/about-ros/
-[Robot Operating System(ROS)]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/OP3-Robot-Operating-System
+[Robot Operating System(ROS)]:[OP3-Robot-Operating-System.md]
 [Logitech support specification]:http://support.logitech.com/en_ca/product/hd-pro-webcam-c920/specs
 [OpenCR H/W Specification]:https://github.com/ROBOTIS-GIT/OpenCR/wiki/Hardware_Specification  
 [e-Manual]:http://support.robotis.com/en/techsupport_eng.htm#product/actuator/dynamixel_x/xm_series/xm430-w350.htm  

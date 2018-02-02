@@ -164,7 +164,7 @@ Offset file contains offset angles of each joint(radian) to correct distortion a
 
 [&lt;&lt; Back](OP3-User's-Guide.md)
 
-[op3_manager]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_manager
+[op3_manager]:[op3_manager.md]
 [Robot Information file(.robot)]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/Creating-new-robot-manager#41-robot-information-file-robot
 [Joint initialize file(.yaml)]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/Creating-new-robot-manager#42-joint-initialize-file-yaml
-[How to use offset tuner]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/OP3-How-to-use-offset-tuner
+[How to use offset tuner]:[OP3-How-to-use-offset-tuner.md]

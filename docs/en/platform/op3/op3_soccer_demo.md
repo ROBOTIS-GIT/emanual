@@ -67,18 +67,18 @@ The followings are ROS APIs used only in the soccer demo.
 
 <br>[&lt;&lt; Back](op3_demo.md)
 
-[How to execute Default Demo]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/OP3-How-to-execute-Default-Demo
+[How to execute Default Demo]:[OP3-How-to-execute-Default-Demo.md]
 
-[std_msgs/String]:http://docs.ros.org/api/std_msgs/html/msg/String.html
-[std_msgs/String]:http://docs.ros.org/api/std_msgs/html/msg/String.html
-[sensor_msgs/Imu]:http://docs.ros.org/api/sensor_msgs/html/msg/Imu.html
-[sensor_msgs/Imu]:http://docs.ros.org/api/sensor_msgs/html/msg/Imu.html
-[ball_detector/circleSetStamped]:https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Demo/blob/master/ball_detector/msg/circleSetStamped.msg
-[sensor_msgs/JointState]:http://docs.ros.org/api/sensor_msgs/html/msg/JointState.html
-[robotis_controller_msgs/JointCtrlModule]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/JointCtrlModule.msg
-[robotis_controller_msgs/JointCtrlModule]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/JointCtrlModule.msg
-[std_msgs/Int32]:http://docs.ros.org/api/std_msgs/html/msg/Int32.html
-[sensor_msgs/JointState]:http://docs.ros.org/api/sensor_msgs/html/msg/JointState.html
-[std_msgs/String]:http://docs.ros.org/api/std_msgs/html/msg/String.html
-[op3_walking_module_msgs/WalkingParam]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_WalkingParam.msg
-[op3_walking_module_msgs/GetWalkingParam]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_GetWalkingParam.srv
+
+[std_msgs/String]:/docs/en/popup/std_msgs_string/
+[sensor_msgs/Imu]:/docs/en/popup/sensor_msgs_IMU_msg/
+
+[ball_detector/circleSetStamped]:/docs/en/popup/ball_detector_CircleSetStamped_msg/
+[sensor_msgs/JointState]:/docs/en/popup/sensor_msgs_JointState_msg/
+[robotis_controller_msgs/JointCtrlModule]:/docs/en/popup/JointCtrlModule.msg/
+
+[std_msgs/Int32]:/docs/en/popup/std_msgs_int32_message/
+[sensor_msgs/JointState]:/docs/en/sensor_msgs_JointState_msg/
+[std_msgs/String]:/docs/en/popup/std_msgs_string/
+[op3_walking_module_msgs/WalkingParam]:/docs/en/popup/op3_WalkingParam.msg/
+[op3_walking_module_msgs/GetWalkingParam]:/docs/en/popup/op3_GetWalkingParam.srv/

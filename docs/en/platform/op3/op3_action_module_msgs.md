@@ -2,13 +2,13 @@
 The followings are Messages and Services used for the [[op3_action_module]].  
 
 ### 2. ROS Message Type
-* [StartAction.msg]  
+* [StartAction.msg]{: .popup}
 
 ### 3. ROS Service Type
-* [IsRunning.srv]
+* [IsRunning.srv]{: .popup}
 
 <br>[&lt;&lt; Back]
 
-[StartAction.msg]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_StartAction.msg
-[IsRunning.srv]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_IsRunning.srv
+[StartAction.msg]:/docs/en/popup/op3_StartAction.msg/
+[IsRunning.srv]:/docs/en/popup/op3_IsRunning.srv/
 [&lt;&lt; Back]:[ROBOTIS-OP3-msgs.md]

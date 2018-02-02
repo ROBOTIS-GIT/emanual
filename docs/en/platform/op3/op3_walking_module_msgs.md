@@ -12,7 +12,7 @@ Messages and Services used in the [op3_walking_module]
 
 <br>[&lt;&lt; Back](ROBOTIS-OP3-msgs.md)
 
-[op3_walking_module]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_walking_module
-[WalkingParam.msg]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_WalkingParam.msg
-[GetWalkingParam.srv]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_GetWalkingParam.srv
-[SetWalkingParam.srv]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_SetWalkingParam.srv
+[op3_walking_module]:[op3_walking_module.md]
+[WalkingParam.msg]:/docs/en/popup/op3_WalkingParam.msg/
+[GetWalkingParam.srv]:/docs/en/popup/op3_GetWalkingParam.srv/
+[SetWalkingParam.srv]:/docs/en/popup/op3_SetWalkingParam.srv/

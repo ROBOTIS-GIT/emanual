@@ -7,8 +7,8 @@
 
 [&lt;&lt; Back](OP3_User's_Guide.md)
 
-[ROBOTIS-OP3]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/ROBOTIS-OP3
-[ROBOTIS-OP3-Common]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/ROBOTIS-OP3-Common
-[ROBOTIS-OP3-Demo]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/ROBOTIS-OP3-Demo
-[ROBOTIS-OP3-msgs]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/ROBOTIS-OP3-msgs
-[ROBOTIS-OP3-Tools]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/ROBOTIS-OP3-Tools
+[ROBOTIS-OP3]:[ROBOTIS-OP3.md]
+[ROBOTIS-OP3-Common]:[ROBOTIS-OP3-Common.md]
+[ROBOTIS-OP3-Demo]:[ROBOTIS-OP3-Demo.md]
+[ROBOTIS-OP3-msgs]: [ROBOTIS-OP3-msgs.md]
+[ROBOTIS-OP3-Tools]:[ROBOTIS-OP3-Tools.md]

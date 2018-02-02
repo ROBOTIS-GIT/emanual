@@ -20,14 +20,14 @@
 
 [&lt;&lt; Back](OP3-User's-Guide.md)  
 
-[ROBOTIS-OP3 Modules]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/ROBOTIS-OP3-Modules
-[op3_action_module]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_action_module
-[op3_base_module]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_base_module
-[op3_head_control_module]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_head_control_module
-[op3_walking_module]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_walking_module
-[op3_online_walking_module]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_online_walking_module
-[open_cr_module]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/open_cr_module
-[op3_manager]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_manager
-[op3_balance_control]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_balance_control
-[op3_localization]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_localization
-[op3_optimization]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_optimization
+[ROBOTIS-OP3 Modules]:[ROBOTIS-OP3-Modules.md]
+[op3_action_module]:[op3_action_module.md]
+[op3_base_module]:[op3_base_module.md]
+[op3_head_control_module]:[op3_head_control_module.md]
+[op3_walking_module]:[op3_walking_module.md]
+[op3_online_walking_module]:[op3_online_walking_module.md]
+[open_cr_module]:[open_cr_module.md]
+[op3_manager]:[op3_manager.md]
+[op3_balance_control]:[op3_balance_control.md]
+[op3_localization]:[op3_localization.md]
+[op3_optimization]:[op3_optimization.md]

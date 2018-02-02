@@ -116,5 +116,5 @@ After typing "help", the commend list will appear as shown below.
 [&lt;&lt; Back]
 
 
-[op3_action_module]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_action_module
+[op3_action_module]:[op3_action_module]
 [&lt;&lt; Back]:[ROBOTIS-OP3-Tools.md]

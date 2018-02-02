@@ -8,4 +8,4 @@
 
 <br>[&lt;&lt; Back](ROBOTIS-OP3.md)
 
-[op3_online_walking_module_msgs::GetPreviewMatrix]:(https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_GetPreviewMatrix.srv)
+[op3_online_walking_module_msgs::GetPreviewMatrix]:/docs/en/popup/op3_GetPreviewMatrix.srv/

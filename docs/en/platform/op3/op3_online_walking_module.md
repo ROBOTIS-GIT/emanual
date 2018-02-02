@@ -78,24 +78,24 @@ The Motion Module is used in the manager in the form of library.
 
 [&lt;&lt; Back](ROBOTIS-OP3-Modules.md)
 
-[op3_manager]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_manager
+[op3_manager]:[op3_manager.md]
 
-[Introduction to Humanoid Robotics]:(http://www.springer.com/gp/book/9783642545351)
-[std_msgs::Bool]:(http://docs.ros.org/api/std_msgs/html/msg/Bool.html)
-[op3_online_walking_module_msgs::JointPose]:(https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_JointPose.msg)
-[op3_online_walking_module_msgs::KinematicsPose]:(https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_KinematicsPose.msg)
-[op3_online_walking_module_msgs::FootStepCommand]:(https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_FootStepCommand.msg)
-[op3_online_walking_module_msgs::FootStepCommand]:(https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_FootStepCommand.msg)
-[op3_online_walking_module_msgs::WalkingParam]:(https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_online_WalkingParam.msg)
-[geometry_msgs::Pose]:(http://docs.ros.org/api/geometry_msgs/html/msg/Pose.html)  
-[std_msgs::Float64]:(http://docs.ros.org/api/std_msgs/html/msg/Float64.html)
-[op3_online_walking_module_msgs::Step2DArray]:(https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_Step2DArray.msg)
-[robotis_controller_msgs/StatusMsg]:(StatusMsg.msg)
-[std_msgs/String]:(http://docs.ros.org/api/std_msgs/html/msg/String.html)
-[geometry_msgs/PoseStamped]:(http://docs.ros.org/api/geometry_msgs/html/msg/PoseStamped.html)
-[op3_online_walking_module_msgs/GetJointPose]:(https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_GetJointPose.srv)
-[op3_online_walking_module_msgs/GetKinematicsPose]:(https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_KinematicsPose.msg)
-[op3_online_walking_module_msgs/GetPreviewMatrix]:(https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_GetPreviewMatrix.srv)
-[op3_online_walking_module_msgs/GetPreviewMatrix]:(https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_GetPreviewMatrix.srv)
+[Introduction to Humanoid Robotics]:http://www.springer.com/gp/book/9783642545351
+[std_msgs::Bool]:/docs/en/popup/std_msgs_bool_msg/
+[op3_online_walking_module_msgs::JointPose]:/docs/en/popup/op3_JointPose.msg
+[op3_online_walking_module_msgs::KinematicsPose]:/docs/en/popup/op3_KinematicsPose.msg
+[op3_online_walking_module_msgs::FootStepCommand]:/docs/en/popup/op3_FootStepCommand.msg
+[op3_online_walking_module_msgs::FootStepCommand]:/docs/en/popup/op3_FootStepCommand.msg
+[op3_online_walking_module_msgs::WalkingParam]:/docs/en/popup/op3_online_WalkingParam.msg
+[geometry_msgs::Pose]:/docs/en/popup/geometry_msgs_Pose_msg/  
+[std_msgs::Float64]:/docs/en/popup/std_msgs_Float64_msg/
+[op3_online_walking_module_msgs::Step2DArray]:/docs/en/popup/op3_Step2DArray.msg
+[robotis_controller_msgs/StatusMsg]:/docs/en/popup/StatusMsg.msg/
+[std_msgs/String]:/docs/en/popup/std_msgs_string/
+[geometry_msgs/PoseStamped]:/docs/en/popup/geometry_msgs_PoseStamped_msg/
+[op3_online_walking_module_msgs/GetJointPose]:/docs/en/popup/op3_GetJointPose.srv
+[op3_online_walking_module_msgs/GetKinematicsPose]:/docs/en/popup/op3_KinematicsPose.msg
+[op3_online_walking_module_msgs/GetPreviewMatrix]:/docs/en/popup/op3_GetPreviewMatrix.srv
+[op3_online_walking_module_msgs/GetPreviewMatrix]:/docs/en/popup/op3_GetPreviewMatrix.srv
 
-[Creating new robot manager]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/Creating-new-robot-manager
+[Creating new robot manager]:[Creating-new-robot-manager.md]

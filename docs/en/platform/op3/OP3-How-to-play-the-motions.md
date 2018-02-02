@@ -17,5 +17,5 @@ The `action_module` controls each joint of ROBOTIS-OP3.
 
 [&lt;&lt; Back](OP3-User's-Guide.md)
 
-[op3_action_module]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_action_module
-[How to create the motions]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_action_editor
+[op3_action_module]:[op3_action_module.md]
+[How to create the motions]:[op3_action_editor.md]

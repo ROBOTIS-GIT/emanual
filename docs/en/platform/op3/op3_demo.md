@@ -36,18 +36,22 @@ From the left, each button is assigned for Mode, Start, User and Reset.
 ROS APIs used in each demo will be explained in corresponding wiki pages.  
 
 #### 3.1 Subscribed Topics
-`/robotis/open_cr/button"`([std_msgs/String])  
+`/robotis/open_cr/button"`([std_msgs/String]{: .popup}
+)  
 &emsp;&emsp; The message in this topic is used to process button control.
 
 #### 3.2 Published Topics
-`/robotis/base/ini_pose`([std_msgs/String])  
+`/robotis/base/ini_pose`([std_msgs/String]{: .popup}
+)  
 &emsp;&emsp; The message in this topic is used for initial posture of ROBOTIS-OP3.
 
-`/robotis/sync_write_item`([std_msgs/String])  
+`/robotis/sync_write_item`([std_msgs/String]{: .popup}
+)  
 &emsp;&emsp; This topic has a message to sync write data on ROBOTIS-OP3   
 &emsp;&emsp; ex) LED controls
 
-`/play_sound_file`([std_msgs/String])  
+`/play_sound_file`([std_msgs/String]{: .popup}
+)  
 &emsp;&emsp; The message in this topic contains path of the voice file for verbal announcement.
 
 
@@ -67,4 +71,4 @@ Buttons on the back of ROBOTIS-OP3 can be used to select and play demo.
 
 <br>[&lt;&lt; Back](ROBOTIS-OP3-Demo.md)
 
-[std_msgs/String]:(http://docs.ros.org/api/std_msgs/html/msg/String.html)
+[std_msgs/String]:/docs/en/popup/std_msgs_string/

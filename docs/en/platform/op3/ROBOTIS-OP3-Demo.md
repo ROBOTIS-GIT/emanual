@@ -4,5 +4,5 @@
 
 [&lt;&lt; Back](OP3-User's-Guide.md)
 
-[ball_detector]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_ball_detector
-[op3_demo]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_demo
+[ball_detector]:[op3_ball_detector.md]
+[op3_demo]:[op3_demo.md]

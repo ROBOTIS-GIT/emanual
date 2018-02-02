@@ -13,18 +13,18 @@ Motion Module is used in the form of lib in the manager.
 
 ### 3. ROS API  
 #### 3.1 Subscribed Topics  
-`/robotis/action/page_num`([std_msgs/Int32])  
+`/robotis/action/page_num`([std_msgs/Int32]{: .popup})  
 &emsp;&emsp; The page number of action to run in the Module.  
 &emsp;&emsp; 1 ~ 255 : play action  
 &emsp;&emsp; -1 : stop action  
 &emsp;&emsp; -2 : brake action  
 
 #### 3.2 Published Topics  
-`/robotis/status`([robotis_controller_msgs/StatusMsg])  
+`/robotis/status`([robotis_controller_msgs/StatusMsg]{: .popup})  
 &emsp;&emsp; Message that describes status of action_module.  
 
 #### 3.3 Services  
-`/robotis/action/is_running`([op3_action_module_msgs/IsRunning])  
+`/robotis/action/is_running`([op3_action_module_msgs/IsRunning]{: .popup})  
 &emsp;&emsp; Service that checks whether the action is running or not.  
 
 
@@ -35,8 +35,8 @@ Motion Module is used in the form of lib in the manager.
 
 <br>[&lt;&lt; Back]
 
-[std_msgs/Int32]: http://docs.ros.org/api/std_msgs/html/msg/Int32.html
+[std_msgs/Int32]: /docs/en/popup/std_msgs_int32_message/
 
-[robotis_controller_msgs/StatusMsg]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/StatusMsg.msg
-[op3_action_module_msgs/IsRunning]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_IsRunning.srv
+[robotis_controller_msgs/StatusMsg]:/docs/en/popup/StatusMsg.msg/
+[op3_action_module_msgs/IsRunning]:/docs/en/popup/op3_IsRunning.srv/
 [&lt;&lt; Back]:[ROBOTIS-OP3-Modules.md]

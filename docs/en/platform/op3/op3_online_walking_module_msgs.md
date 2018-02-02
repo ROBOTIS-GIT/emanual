@@ -2,36 +2,36 @@
 Messages and Services used in the [op3_online_walking_module]  
 
 ### 2. ROS Message Type
-* [FootStepArray.msg](op3_FootStepArray.msg)  
-* [FootStepCommand.msg](op3_FootStepCommand.msg)  
-* [JointPose.msg](op3_JointPose.msg)  
-* [KinematicsPose.msg](op3_KinematicsPose.msg)  
-* [PreviewRequest.msg](op3_PreviewRequest.msg)  
-* [PreviewResponse.msg](op3_PreviewResponse.msg)  
-* [Step2D.msg](op3_Step2D.msg)  
-* [Step2DArray.msg](op3_Step2DArray.msg)  
-* [WalkingParam.msg](op3_online_WalkingParam.msg)  
+* [FootStepArray.msg]
+* [FootStepCommand.msg]
+* [JointPose.msg]
+* [KinematicsPose.msg]
+* [PreviewRequest.msg]
+* [PreviewResponse.msg]
+* [Step2D.msg]
+* [Step2DArray.msg]
+* [WalkingParam.msg]
 
 ### 3. ROS Service Type  
-* [GetJointPose.srv](op3_GetJointPose.srv)  
-* [GetKinematicsPose.srv](op3_GetKinematicsPose.srv)  
-* [GetPreviewMatrix.srv](op3_GetPreviewMatrix.srv)  
+* [GetJointPose.srv]
+* [GetKinematicsPose.srv]
+* [GetPreviewMatrix.srv]
 
 <br>[&lt;&lt; Back]
 
-[op3_online_walking_module]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_online_walking_module
-[FootStepArray.msg]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_FootStepArray.msg  
-[FootStepCommand.msg]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_FootStepCommand.msg
-[JointPose.msg]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_JointPose.msg  
-[KinematicsPose.msg]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_KinematicsPose.msg
-[PreviewRequest.msg]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_PreviewRequest.msg
-[PreviewResponse.msg]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_PreviewResponse.msg
-[Step2D.msg]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_Step2D.msg
-[Step2DArray.msg]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_Step2DArray.msg  
-[WalkingParam.msg]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_online_WalkingParam.msg  
+[op3_online_walking_module]:[op3_online_walking_module.md]
+[FootStepArray.msg]:/docs/en/popup/op3_FootStepArray.msg/  
+[FootStepCommand.msg]:/docs/en/popup/op3_FootStepCommand.msg/
+[JointPose.msg]:/docs/en/popup/op3_JointPose.msg/  
+[KinematicsPose.msg]:/docs/en/popup/op3_KinematicsPose.msg/
+[PreviewRequest.msg]:/docs/en/popup/op3_PreviewRequest.msg/
+[PreviewResponse.msg]:/docs/en/popup/op3_PreviewResponse.msg/
+[Step2D.msg]:/docs/en/popup/op3_Step2D.msg/
+[Step2DArray.msg]:/docs/en/popup/op3_Step2DArray.msg/
+[WalkingParam.msg]:/docs/en/popup/op3_online_WalkingParam.msg/  
 
-[GetJointPose.srv]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_GetJointPose.srv
-[GetKinematicsPose.srv]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_GetKinematicsPose.srv
-[GetPreviewMatrix.srv]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_GetPreviewMatrix.srv
+[GetJointPose.srv]:/docs/en/popup/op3_GetJointPose.srv/
+[GetKinematicsPose.srv]:/docs/en/popup/op3_GetKinematicsPose.srv/
+[GetPreviewMatrix.srv]:/docs/en/popup/op3_GetPreviewMatrix.srv/
 
 [&lt;&lt; Back]:[ROBOTIS-OP3-msgs.md]

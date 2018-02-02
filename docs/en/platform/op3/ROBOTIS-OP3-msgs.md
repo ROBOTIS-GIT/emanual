@@ -9,7 +9,7 @@
 
 
 [&lt;&lt; Back](OP3-User's-Guide.md)
-[op3_action_module_msgs]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_action_module_msgs
-[op3_walking_module_msgs]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_walking_module_msgs
-[op3_online_walking_module_msgs]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_online_walking_module_msgs
-[op3_offset_tuner_msgs]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_offset_tuner_msgs
+[op3_action_module_msgs]:[op3_action_module_msgs.md]
+[op3_walking_module_msgs]:[op3_walking_module_msgs.md]
+[op3_online_walking_module_msgs]:[op3_online_walking_module_msgs.md]
+[op3_offset_tuner_msgs]:[op3_offset_tuner_msgs.md]

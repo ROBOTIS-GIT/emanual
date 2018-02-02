@@ -74,9 +74,9 @@ This section explains how to control upgraded walking(download/run/test).
 
 [&lt;&lt; Back](OP3-User's-Guide.md)
 
-[op3_gui_demo]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_gui_demo
-[How to run op3_mamager]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/OP3-How-to-run-OP3's-program
-[How to use the Walking Tuner]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/OP3-How-to-use-walking-tuner
-[How to control head joints]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/OP3-How-to-control-the-head-joints
-[How to play the motions]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/OP3-How-to-play-the-motions
-[How to control upgraded walking(online walking)]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/OP3-How-to-control-upgraded-walking
+[op3_gui_demo]:[op3_gui_demo.md]
+[How to run op3_mamager]:[OP3-How-to-run-OP3's-program.md]
+[How to use the Walking Tuner]:[OP3-How-to-use-walking-tuner.md]
+[How to control head joints]:[OP3-How-to-control-the-head-joints.md]
+[How to play the motions]:[OP3-How-to-play-the-motions.md]
+[How to control upgraded walking(online walking)]:[OP3-How-to-control-upgraded-walking.md]

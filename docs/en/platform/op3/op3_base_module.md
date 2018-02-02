@@ -13,15 +13,15 @@ The Motion Module is used in the manager in the form of library.
 
 ### 3. ROS API  
 #### 3.1 Subscribed Topics  
-`/robotis/base/ini_pose`([std_msgs/String])  
+`/robotis/base/ini_pose`([std_msgs/String]{: .popup})  
 &emsp;&emsp; This message will have OP3 to take the initial posture(This command is effective even when the base module is inactive).  
 
 
 #### 3.2 Published Topics  
-`/robotis/enable_ctrl_module`([std_msgs/String])  
+`/robotis/enable_ctrl_module`([std_msgs/String]{: .popup})  
 &emsp;&emsp; This message activates `op3_base_module` to take the initial posture.  
 
-`/robotis/status`([robotis_controller_msgs/StatusMsg])  
+`/robotis/status`([robotis_controller_msgs/StatusMsg]{: .popup})  
 &emsp;&emsp; This message notifies the status of `op3_base_module`.  
 
 ### 4. Data  
@@ -38,10 +38,10 @@ The Motion Module is used in the manager in the form of library.
 
 [&lt;&lt; Back](ROBOTIS-OP3-Modules.md)
 
-[std_msgs/String]:(http://docs.ros.org/api/std_msgs/html/msg/String.html)
-[/op3_base_module/data/ini_pose.yaml]:(https://github.com/ROBOTIS-GIT/ROBOTIS-OP3/blob/master/op3_base_module/data/ini_pose.yaml)
+[std_msgs/String]:[std_msgs/String]: /docs/en/popup/std_msgs_string/
+[/op3_base_module/data/ini_pose.yaml]:https://github.com/ROBOTIS-GIT/ROBOTIS-OP3/blob/master/op3_base_module/data/ini_pose.yaml
 
-[Creating new robot manager]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/Creating-new-robot-manager
+[Creating new robot manager]:[Creating-new-robot-manager.md]
 
 [op3_manager]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_manager
-[robotis_controller_msgs/StatusMsg]:[StatusMsg.msg.md]
+[robotis_controller_msgs/StatusMsg]:/docs/en/popup/StatusMsg.msg/

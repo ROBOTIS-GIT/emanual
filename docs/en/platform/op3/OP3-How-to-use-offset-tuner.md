@@ -51,5 +51,5 @@ src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/RO
 
 [&lt;&lt; Back](OP3-User's-Guide.md)
 
-[op3_offset_tuner_server]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_offset_tuner_server
-[op3_offset_tuner_client]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_offset_tuner_client
+[op3_offset_tuner_server]:[op3_offset_tuner_server.md]
+[op3_offset_tuner_client]:[op3_offset_tuner_client.md]

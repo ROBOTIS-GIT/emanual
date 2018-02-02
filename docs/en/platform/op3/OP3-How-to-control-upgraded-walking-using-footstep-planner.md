@@ -74,6 +74,6 @@ This chapter explains upgraded walking and footstep planner.
 
 [&lt;&lt; Back](OP3-User's-Guide.md)
 
-[OP3-How-to-control-upgraded-walking]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/OP3-How-to-control-upgraded-walking
+[OP3-How-to-control-upgraded-walking]:[OP3-How-to-control-upgraded-walking.md]
 [humanoid_navigation]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/humanoid_navigation
 [op3_navigation]:https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Tools/tree/master/op3_navigation

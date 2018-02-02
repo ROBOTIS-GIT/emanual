@@ -34,24 +34,24 @@ The followings are ROS APIs used only in vision demo.
 
 
 #### 3.2 Published Topics
-`/robotis/enable_ctrl_module`([std_msgs/String])  
+`/robotis/enable_ctrl_module`([std_msgs/String]{: .popup})  
 &emsp;&emsp; This message configures control modules to operate ROBOTIS-OP3.  
 
-`/robotis/action/page_num`([std_msgs/Int32])  
+`/robotis/action/page_num`([std_msgs/Int32]{: .popup})  
 &emsp;&emsp; This message transfers page number to action_module to play specific actions.
 
-`/robotis/sync_write_item`([std_msgs/String])  
+`/robotis/sync_write_item`([std_msgs/String]{: .popup})  
 &emsp;&emsp; This topic has a message to sync write data on ROBOTIS-OP3  
 &emsp;&emsp; ex) LED controls  
 
-`/robotis/head_control/set_joint_states_offset`([sensor_msgs/JointState])  
+`/robotis/head_control/set_joint_states_offset`([sensor_msgs/JointState]{: .popup})  
 &emsp;&emsp; This message informs head_control_module about joint state offset to look at the face that is detected in the image.
 
 
 <br>[&lt;&lt; Back](op3_demo.md)
 
-[How to execute Default Demo]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/OP3-How-to-execute-Default-Demo
-[std_msgs/String]:http://docs.ros.org/api/std_msgs/html/msg/String.html
-[std_msgs/Int32]:http://docs.ros.org/api/std_msgs/html/msg/Int32.html
-[std_msgs/Int32MultiArray]:http://docs.ros.org/api/std_msgs/html/msg/Int32MultiArray.html
-[sensor_msgs/JointState]:http://docs.ros.org/api/sensor_msgs/html/msg/JointState.html
+[How to execute Default Demo]:[OP3-How-to-execute-Default-Demo.md]
+[std_msgs/String]:/docs/en/popup/std_msgs_string/
+[std_msgs/Int32]:/docs/en/popup/std_msgs_int32_message/
+[std_msgs/Int32MultiArray]:/docs/en/popup/std_msgs_Int32MultiArray_msg/
+[sensor_msgs/JointState]:/docs/en/popup/sensor_msgs_JointState_msg/

@@ -7,7 +7,7 @@
 
 [&lt;&lt; Back](OP3-User's-Guide.md)
 
-[How to run OP3's program]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/OP3-How-to-run-OP3's-program
-[How to play Basic Demo]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/OP3-How-to-execute-Default-Demo
-[How to use GUI program]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/OP3-How-to-execute-GUI-program
-[How to use offset tuner]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/OP3-How-to-use-offset-tuner
+[How to run OP3's program]:[OP3-How-to-run-OP3's-program.md]
+[How to play Basic Demo]:[OP3-How-to-execute-Default-Demo.md]
+[How to use GUI program]:[OP3-How-to-execute-GUI-program.md]
+[How to use offset tuner]:[OP3-How-to-use-offset-tuner.md]

@@ -22,4 +22,4 @@ Operator can get different camera view angle by controlling head joints.
 
 [&lt;&lt; Back](OP3-User's-Guide.md)
 
-[op3_head_control_module]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_head_control_module
+[op3_head_control_module]:[op3_head_control_module.md]

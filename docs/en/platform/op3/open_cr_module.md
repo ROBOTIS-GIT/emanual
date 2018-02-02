@@ -26,7 +26,7 @@ The Sensor Module is used in the manager in the form of library.
 <br>[[&lt;&lt; [Back](ROBOTIS-OP3-Modules.md)
 
 [OPENCR]:https://github.com/ROBOTIS-GIT/OpenCR/wiki/arduino_examples_op3
-[Creating new robot manager]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/Creating-new-robot-manager
-[robotis_controller_msgs/StatusMsg]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/StatusMsg.msg
-[sensor_msgs/Imu]:http://docs.ros.org/api/sensor_msgs/html/msg/Imu.html
-[std_msgs/String]:http://docs.ros.org/api/std_msgs/html/msg/String.html
+[Creating new robot manager]:[Creating-new-robot-manager.md]
+[robotis_controller_msgs/StatusMsg]:/docs/en/popup/StatusMsg.msg/
+[sensor_msgs/Imu]:/docs/en/popup/sensor_msgs_IMU_msg/
+[std_msgs/String]:/docs/en/popup/std_msgs_string/

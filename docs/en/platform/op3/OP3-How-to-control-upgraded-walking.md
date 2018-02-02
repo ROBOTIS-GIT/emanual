@@ -40,5 +40,5 @@ This page explains how to control upgraded walking(online walking).
 [&lt;&lt; Back](OP3-User's-Guide.md)
 
 [Introduction to Humanoid Robotics]:http://www.springer.com/gp/book/9783642545351
-[op3_online_walking_module]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_online_walking_module
-[Online walking using footstep planner]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/OP3-How-to-control-upgraded-walking-using-footstep-planner
+[op3_online_walking_module]:[op3_online_walking_module.md]
+[Online walking using footstep planner]:[OP3-How-to-control-upgraded-walking-using-footstep-planner.md]

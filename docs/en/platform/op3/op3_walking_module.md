@@ -98,12 +98,12 @@ The Motion Module is used in the manager in the form of library.
 [&lt;&lt; Back](ROBOTIS-OP3-Modules.md)
 
 
-[Creating new robot manager]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/Creating-new-robot-manager
-[std_msgs/String]:http://docs.ros.org/api/std_msgs/html/msg/String.html
-[op3_manager]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_manager
+[Creating new robot manager]:[Creating-new-robot-manager.md]
+[std_msgs/String]:/docs/en/popup/std_msgs_string/
+[op3_manager]:[op3_manager.md]
 
-[op3_walking_module_msgs/WalkingParam]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_WalkingParam.msg
-[WalkingParam.msg]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_WalkingParam.msg
-[robotis_controller_msgs/StatusMsg]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/StatusMsg.msg
-[op3_walking_module_msgs/GetWalkingParam]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_GetWalkingParam.srv
+[op3_walking_module_msgs/WalkingParam]:/docs/en/popup/op3_WalkingParam.msg/
+[WalkingParam.msg]:/docs/en/popup/op3_WalkingParam.msg/
+[robotis_controller_msgs/StatusMsg]:/docs/en/popup/StatusMsg.msg/
+[op3_walking_module_msgs/GetWalkingParam]:/docs/en/popup/op3_GetWalkingParam.srv/
 [/op3_walking_module/config/param.yaml]:https://github.com/ROBOTIS-GIT/ROBOTIS-OP3/blob/master/op3_walking_module/config/param.yaml  

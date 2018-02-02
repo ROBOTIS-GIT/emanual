@@ -3,5 +3,5 @@
 
 [&lt;&lt; Back](OP3-User's-Guide.md)
 
-[System Info]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/OP3-System-Info  
-[Robot Operating System(ROS)]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/OP3-Robot-Operating-System
+[System Info]:[OP3-System-Info.md]
+[Robot Operating System(ROS)]:[OP3-Robot-Operating-System.md]

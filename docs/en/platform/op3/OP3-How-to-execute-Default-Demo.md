@@ -114,6 +114,6 @@ Press the mode button thrice from demonstration ready mode to switch to interact
 
 [&lt;&lt; Back](OP3-User's-Guide.md)
 
-[op3_demo]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_demo
-[How to use walking tuner]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/OP3-How-to-use-walking-tuner
+[op3_demo]:[op3_demo.md]
+[How to use walking tuner]:[OP3-How-to-use-walking-tuner.md]
 [Face Tracker - ROS Package]:https://github.com/ROBOTIS-GIT/face_detection
