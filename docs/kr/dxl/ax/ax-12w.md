@@ -13,6 +13,8 @@ sidebar:
 
 ![](/assets/images/dxl/ax/ax-12w_product.jpg)
 
+> AX-12W
+
 # [주요 사양 요약](#주요-사양-요약)
 
 | 항목            | 내용                                                                   |
@@ -35,7 +37,6 @@ sidebar:
 | Material        | Engineering Plastic                                                    |
 
 {% include kr/dxl/control_table_protocol1.md %}
-
 
 
 ## [Control Table of EEPROM Area](#control-table-of-eeprom-area)
@@ -211,7 +212,5 @@ Baudrate(BPS) = 2,000,000 / (Value + 1)
 
 ![](/assets/images/dxl/ax/ax-12w_dimension.png)
 
-
-[Two's complement]: #
 
 [호환성 가이드]: http://en.robotis.com/BlueAD/board.php?bbs_id=faq&mode=view&bbs_no=47&page=1&key=&keyword=&sort=&scate=

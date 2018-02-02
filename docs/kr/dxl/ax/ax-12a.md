@@ -11,17 +11,16 @@ sidebar:
   nav: "ax-12a"
 ---
 
-# AX-12A
-
 ![](/assets/images/dxl/ax/ax-12+_product.png)
-
 ![](/assets/images/dxl/ax/ax-12a_product.png)
+
+> AX-12+, AX-12A
 
 `Note` AX-12+ 는 AX-12 에서 회로 및 재질과 휠 기어의 설계를 개선한 버전입니다.
 {: .notice}
 
-`Note` AX-12A 는  AX-12+ 와 동일한 성능에 외형을 개선한 모델입니다. 현재는 AX-12A 만 판매되고 있습니다
-{: .notice}
+`주의` AX-12A 는  AX-12+ 와 동일한 성능에 외형을 개선한 모델입니다. 현재는 AX-12A 만 판매되고 있습니다
+{: .notice--warning}
 
 # [주요 사양 요약](#주요-사양-요약)
 
@@ -44,9 +43,7 @@ sidebar:
 | Feedback        | Position, Temperature, Load, Input Voltage, etc                              |
 | Material        | Engineering Plastic                                                          |
 
-`Note`
-Stall Torque 는 순간적으로 낼수있는 최대정지토크를 의미합니다.
-실제구동위해 로봇을 설계하신다면 Stall Torque의 1/5 이하의 로드가 걸리도록 설계하셔야 안정적인 움직임이 가능합니다.
+`Note` Stall Torque 는 순간적으로 낼수있는 최대정지토크를 의미합니다. 실제구동위해 로봇을 설계하신다면 Stall Torque의 1/5 이하의 로드가 걸리도록 설계하셔야 안정적인 움직임이 가능합니다.
 {: .notice}
 
 {% include kr/dxl/control_table_protocol1.md %}
@@ -240,7 +237,5 @@ F3은 다음과 같은 방법으로 적용됩니다. F3은 AX-12A의 3면(좌,�
 
 ![](/assets/images/dxl/ax/ax-12a_dimension.png)
 
-
-[Two's complement]: #
 
 [호환성 가이드]: http://en.robotis.com/BlueAD/board.php?bbs_id=faq&mode=view&bbs_no=47&page=1&key=&keyword=&sort=&scate=

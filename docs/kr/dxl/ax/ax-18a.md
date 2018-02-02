@@ -11,13 +11,13 @@ sidebar:
   nav: "ax-18a"
 ---
 
-# AX-18A
-
 ![](/assets/images/dxl/ax/ax-18f_product.jpg)
 ![](/assets/images/dxl/ax/ax-18a_product.png)
 
-`Note` AX-18A 는  AX-18F 와 동일한 성능에 외형을 개선한 모델입니다. 현재는 AX-18A만 판매중 입니다.
-{: .notice}
+> AX-18F, AX-18A
+
+`주의` AX-18A 는  AX-18F 와 동일한 성능에 외형을 개선한 모델입니다. 현재는 AX-18A만 판매중 입니다.
+{: .notice--warning}
 
 # [주요 사양 요약](#주요-사양-요약)
 
@@ -40,8 +40,7 @@ sidebar:
 | Feedback        | Position, Temperature, Load, Input Voltage, etc                             |
 | Material        | Engineering Plastic                                                         |
 
-`Note` Stall Torque 는 순간적으로 낼수있는 최대정지토크를 의미합니다.
-실제구동위해 로봇을 설계하신다면 Stall Torque의 1/5 이하의 로드가 걸리도록 설계하셔야 안정적인 움직임이 가능합니다.
+`Note` Stall Torque 는 순간적으로 낼수있는 최대정지토크를 의미합니다. 실제구동위해 로봇을 설계하신다면 Stall Torque의 1/5 이하의 로드가 걸리도록 설계하셔야 안정적인 움직임이 가능합니다.
 {: .notice}
 
 {% include kr/dxl/control_table_protocol1.md %}
@@ -222,7 +221,5 @@ Baudrate(BPS) = 2,000,000 / (Value + 1)
 
 ![](/assets/images/dxl/ax/ax-18a_dimension.png)
 
-
-[Two's complement]: #
 
 [호환성 가이드]: http://en.robotis.com/BlueAD/board.php?bbs_id=faq&mode=view&bbs_no=47&page=1&key=&keyword=&sort=&scate=
