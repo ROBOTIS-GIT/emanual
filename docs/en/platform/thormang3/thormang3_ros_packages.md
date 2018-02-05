@@ -1978,7 +1978,7 @@ The following are Messages and Service used for the thormang3_offset_tuner_serve
 [laser_assembler/AssembleScan2]: /docs/en/popup/laser_assembler_AssembleScan2_srv/
 [How to execute Simple Demonstration]: /docs/en/platform/thormang3/thormang3_operation/#simple-demo
 [How to operate walking module]: /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_walking_module
-[thormang3_offset_tuner_client]: /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3-offset-tuner-client
+[thormang3_offset_tuner_client]: /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_offset_tuner_client
 [thormang3_manipulation_module_msgs/KinematicsPose]: /dosc/en/popup/KinematicsPose.msg/
 [KinematicsPose.msg]: /dosc/en/popup/KinematicsPose.msg/
 [thormang3_walking_module_msgs/GetReferenceStrpData]: /dosc/en/popup/GetReferenceStepData.srv/
