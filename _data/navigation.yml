@@ -5634,19 +5634,19 @@ h42-20-s300-r:
           - title: "Area(EEPROM, RAM)"
             titlekr: "영역 (EEPROM, RAM)"
             url: /dxl/pro/h42-20-s300-r/#area-eeprom-ram
-            urlkr: /dxl/pro//#영역-eeprom-ram
+            urlkr: /dxl/pro/h42-20-s300-r/#영역-eeprom-ram
           - title: "Size"
             titlekr: "크기"
             url: /dxl/pro/h42-20-s300-r/#size
-            urlkr: /dxl/pro//#크기
+            urlkr: /dxl/pro/h42-20-s300-r/#크기
           - title: "Access"
             titlekr: "접근권한"
             url: /dxl/pro/h42-20-s300-r/#access
-            urlkr: /dxl/pro//#접근권한
+            urlkr: /dxl/pro/h42-20-s300-r/#접근권한
           - title: "Initial Value"
             titlekr: "초기값"
             url: /dxl/pro/h42-20-s300-r/#initial-value
-            urlkr: /dxl/pro//#초기값
+            urlkr: /dxl/pro/h42-20-s300-r/#초기값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/pro/h42-20-s300-r/#control-table-of-eeprom-area
@@ -5728,7 +5728,7 @@ h42-20-s300-r:
           url: /dxl/pro/h42-20-s300-r/#position-p-gain594
         - title: "Goal Position(596)"
           titlekr: "Goal Position(596)"
-          url: /dxl/pro/h42-20-s300-r/#goal-position596
+          url: /dxl/pro/h42-20-s300-r/#goal-position
         - title: "Goal Velocity(600)"
           titlekr: "Goal Velocity(600)"
           url: /dxl/pro/h42-20-s300-r/#goal-velocity600
@@ -5743,7 +5743,7 @@ h42-20-s300-r:
           url: /dxl/pro/h42-20-s300-r/#moving610
         - title: "Present Position(611)"
           titlekr: "Present Position(611)"
-          url: /dxl/pro/h42-20-s300-r/#present-position611
+          url: /dxl/pro/h42-20-s300-r/#present-position
         - title: "Present Velocity(615)"
           titlekr: "Present Velocity(615)"
           url: /dxl/pro/h42-20-s300-r/#present-velocity615
@@ -5816,19 +5816,19 @@ h54-100-s500-r:
           - title: "Area(EEPROM, RAM)"
             titlekr: "영역 (EEPROM, RAM)"
             url: /dxl/pro/h54-100-s500-r/#area-eeprom-ram
-            urlkr: /dxl/pro//#영역-eeprom-ram
+            urlkr: /dxl/pro/h54-100-s500-r/#영역-eeprom-ram
           - title: "Size"
             titlekr: "크기"
             url: /dxl/pro/h54-100-s500-r/#size
-            urlkr: /dxl/pro//#크기
+            urlkr: /dxl/pro/h54-100-s500-r/#크기
           - title: "Access"
             titlekr: "접근권한"
             url: /dxl/pro/h54-100-s500-r/#access
-            urlkr: /dxl/pro//#접근권한
+            urlkr: /dxl/pro/h54-100-s500-r/#접근권한
           - title: "Initial Value"
             titlekr: "초기값"
             url: /dxl/pro/h54-100-s500-r/#initial-value
-            urlkr: /dxl/pro//#초기값
+            urlkr: /dxl/pro/h54-100-s500-r/#초기값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/pro/h54-100-s500-r/#control-table-of-eeprom-area
@@ -5910,7 +5910,7 @@ h54-100-s500-r:
           url: /dxl/pro/h54-100-s500-r/#position-p-gain594
         - title: "Goal Position(596)"
           titlekr: "Goal Position(596)"
-          url: /dxl/pro/h54-100-s500-r/#goal-position596
+          url: /dxl/pro/h54-100-s500-r/#goal-position
         - title: "Goal Velocity(600)"
           titlekr: "Goal Velocity(600)"
           url: /dxl/pro/h54-100-s500-r/#goal-velocity600
@@ -5925,7 +5925,7 @@ h54-100-s500-r:
           url: /dxl/pro/h54-100-s500-r/#moving610
         - title: "Present Position(611)"
           titlekr: "Present Position(611)"
-          url: /dxl/pro/h54-100-s500-r/#present-position611
+          url: /dxl/pro/h54-100-s500-r/#present-position
         - title: "Present Velocity(615)"
           titlekr: "Present Velocity(615)"
           url: /dxl/pro/h54-100-s500-r/#present-velocity615
@@ -5998,19 +5998,19 @@ h54-200-s500-r:
           - title: "Area(EEPROM, RAM)"
             titlekr: "영역 (EEPROM, RAM)"
             url: /dxl/pro/h54-200-s500-r/#area-eeprom-ram
-            urlkr: /dxl/pro//#영역-eeprom-ram
+            urlkr: /dxl/pro/h54-200-s500-r/#영역-eeprom-ram
           - title: "Size"
             titlekr: "크기"
             url: /dxl/pro/h54-200-s500-r/#size
-            urlkr: /dxl/pro//#크기
+            urlkr: /dxl/pro/h54-200-s500-r/#크기
           - title: "Access"
             titlekr: "접근권한"
             url: /dxl/pro/h54-200-s500-r/#access
-            urlkr: /dxl/pro//#접근권한
+            urlkr: /dxl/pro/h54-200-s500-r/#접근권한
           - title: "Initial Value"
             titlekr: "초기값"
             url: /dxl/pro/h54-200-s500-r/#initial-value
-            urlkr: /dxl/pro//#초기값
+            urlkr: /dxl/pro/h54-200-s500-r/#초기값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/pro/h54-200-s500-r/#control-table-of-eeprom-area
@@ -6092,7 +6092,7 @@ h54-200-s500-r:
           url: /dxl/pro/h54-200-s500-r/#position-p-gain594
         - title: "Goal Position(596)"
           titlekr: "Goal Position(596)"
-          url: /dxl/pro/h54-200-s500-r/#goal-position596
+          url: /dxl/pro/h54-200-s500-r/#goal-position
         - title: "Goal Velocity(600)"
           titlekr: "Goal Velocity(600)"
           url: /dxl/pro/h54-200-s500-r/#goal-velocity600
@@ -6107,7 +6107,7 @@ h54-200-s500-r:
           url: /dxl/pro/h54-200-s500-r/#moving610
         - title: "Present Position(611)"
           titlekr: "Present Position(611)"
-          url: /dxl/pro/h54-200-s500-r/#present-position611
+          url: /dxl/pro/h54-200-s500-r/#present-position
         - title: "Present Velocity(615)"
           titlekr: "Present Velocity(615)"
           url: /dxl/pro/h54-200-s500-r/#present-velocity615
@@ -6180,19 +6180,19 @@ l42-10-s300-r:
           - title: "Area(EEPROM, RAM)"
             titlekr: "영역 (EEPROM, RAM)"
             url: /dxl/pro/l42-10-s300-r/#area-eeprom-ram
-            urlkr: /dxl/pro//#영역-eeprom-ram
+            urlkr: /dxl/pro/l42-10-s300-r/#영역-eeprom-ram
           - title: "Size"
             titlekr: "크기"
             url: /dxl/pro/l42-10-s300-r/#size
-            urlkr: /dxl/pro//#크기
+            urlkr: /dxl/pro/l42-10-s300-r/#크기
           - title: "Access"
             titlekr: "접근권한"
             url: /dxl/pro/l42-10-s300-r/#access
-            urlkr: /dxl/pro//#접근권한
+            urlkr: /dxl/pro/l42-10-s300-r/#접근권한
           - title: "Initial Value"
             titlekr: "초기값"
             url: /dxl/pro/l42-10-s300-r/#initial-value
-            urlkr: /dxl/pro//#초기값
+            urlkr: /dxl/pro/l42-10-s300-r/#초기값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/pro/l42-10-s300-r/#control-table-of-eeprom-area
@@ -6268,7 +6268,7 @@ l42-10-s300-r:
           url: /dxl/pro/l42-10-s300-r/#position-pid-gain594-592-590
         - title: "Goal Position(596)"
           titlekr: "Goal Position(596)"
-          url: /dxl/pro/l42-10-s300-r/#goal-position596
+          url: /dxl/pro/l42-10-s300-r/#goal-position
         - title: "Goal Velocity(600)"
           titlekr: "Goal Velocity(600)"
           url: /dxl/pro/l42-10-s300-r/#goal-velocity600
@@ -6283,7 +6283,7 @@ l42-10-s300-r:
           url: /dxl/pro/l42-10-s300-r/#moving610
         - title: "Present Position(611)"
           titlekr: "Present Position(611)"
-          url: /dxl/pro/l42-10-s300-r/#present-position611
+          url: /dxl/pro/l42-10-s300-r/#present-position
         - title: "Present Velocity(615)"
           titlekr: "Present Velocity(615)"
           url: /dxl/pro/l42-10-s300-r/#present-velocity615
@@ -6356,19 +6356,19 @@ l54-30-s400-r:
           - title: "Area(EEPROM, RAM)"
             titlekr: "영역 (EEPROM, RAM)"
             url: /dxl/pro/l54-30-s400-r/#area-eeprom-ram
-            urlkr: /dxl/pro//#영역-eeprom-ram
+            urlkr: /dxl/pro/l54-30-s400-r/#영역-eeprom-ram
           - title: "Size"
             titlekr: "크기"
             url: /dxl/pro/l54-30-s400-r/#size
-            urlkr: /dxl/pro//#크기
+            urlkr: /dxl/pro/l54-30-s400-r/#크기
           - title: "Access"
             titlekr: "접근권한"
             url: /dxl/pro/l54-30-s400-r/#access
-            urlkr: /dxl/pro//#접근권한
+            urlkr: /dxl/pro/l54-30-s400-r/#접근권한
           - title: "Initial Value"
             titlekr: "초기값"
             url: /dxl/pro/l54-30-s400-r/#initial-value
-            urlkr: /dxl/pro//#초기값
+            urlkr: /dxl/pro/l54-30-s400-r/#초기값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/pro/l54-30-s400-r/#control-table-of-eeprom-area
@@ -6450,7 +6450,7 @@ l54-30-s400-r:
           url: /dxl/pro/l54-30-s400-r/#position-p-gain594
         - title: "Goal Position(596)"
           titlekr: "Goal Position(596)"
-          url: /dxl/pro/l54-30-s400-r/#goal-position596
+          url: /dxl/pro/l54-30-s400-r/#goal-position
         - title: "Goal Velocity(600)"
           titlekr: "Goal Velocity(600)"
           url: /dxl/pro/l54-30-s400-r/#goal-velocity600
@@ -6465,7 +6465,7 @@ l54-30-s400-r:
           url: /dxl/pro/l54-30-s400-r/#moving610
         - title: "Present Position(611)"
           titlekr: "Present Position(611)"
-          url: /dxl/pro/l54-30-s400-r/#present-position611
+          url: /dxl/pro/l54-30-s400-r/#present-position
         - title: "Present Velocity(615)"
           titlekr: "Present Velocity(615)"
           url: /dxl/pro/l54-30-s400-r/#present-velocity615
@@ -6538,19 +6538,19 @@ l54-30-s500-r:
           - title: "Area(EEPROM, RAM)"
             titlekr: "영역 (EEPROM, RAM)"
             url: /dxl/pro/l54-30-s500-r/#area-eeprom-ram
-            urlkr: /dxl/pro//#영역-eeprom-ram
+            urlkr: /dxl/pro/l54-30-s500-r/#영역-eeprom-ram
           - title: "Size"
             titlekr: "크기"
             url: /dxl/pro/l54-30-s500-r/#size
-            urlkr: /dxl/pro//#크기
+            urlkr: /dxl/pro/l54-30-s500-r/#크기
           - title: "Access"
             titlekr: "접근권한"
             url: /dxl/pro/l54-30-s500-r/#access
-            urlkr: /dxl/pro//#접근권한
+            urlkr: /dxl/pro/l54-30-s500-r/#접근권한
           - title: "Initial Value"
             titlekr: "초기값"
             url: /dxl/pro/l54-30-s500-r/#initial-value
-            urlkr: /dxl/pro//#초기값
+            urlkr: /dxl/pro/l54-30-s500-r/#초기값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/pro/l54-30-s500-r/#control-table-of-eeprom-area
@@ -6632,7 +6632,7 @@ l54-30-s500-r:
           url: /dxl/pro/l54-30-s500-r/#position-p-gain594
         - title: "Goal Position(596)"
           titlekr: "Goal Position(596)"
-          url: /dxl/pro/l54-30-s500-r/#goal-position596
+          url: /dxl/pro/l54-30-s500-r/#goal-position
         - title: "Goal Velocity(600)"
           titlekr: "Goal Velocity(600)"
           url: /dxl/pro/l54-30-s500-r/#goal-velocity600
@@ -6647,7 +6647,7 @@ l54-30-s500-r:
           url: /dxl/pro/l54-30-s500-r/#moving610
         - title: "Present Position(611)"
           titlekr: "Present Position(611)"
-          url: /dxl/pro/l54-30-s500-r/#present-position611
+          url: /dxl/pro/l54-30-s500-r/#present-position
         - title: "Present Velocity(615)"
           titlekr: "Present Velocity(615)"
           url: /dxl/pro/l54-30-s500-r/#present-velocity615
@@ -6720,19 +6720,19 @@ l54-50-s290-r:
           - title: "Area(EEPROM, RAM)"
             titlekr: "영역 (EEPROM, RAM)"
             url: /dxl/pro/l54-50-s290-r/#area-eeprom-ram
-            urlkr: /dxl/pro//#영역-eeprom-ram
+            urlkr: /dxl/pro/l54-50-s290-r/#영역-eeprom-ram
           - title: "Size"
             titlekr: "크기"
             url: /dxl/pro/l54-50-s290-r/#size
-            urlkr: /dxl/pro//#크기
+            urlkr: /dxl/pro/l54-50-s290-r/#크기
           - title: "Access"
             titlekr: "접근권한"
             url: /dxl/pro/l54-50-s290-r/#access
-            urlkr: /dxl/pro//#접근권한
+            urlkr: /dxl/pro/l54-50-s290-r/#접근권한
           - title: "Initial Value"
             titlekr: "초기값"
             url: /dxl/pro/l54-50-s290-r/#initial-value
-            urlkr: /dxl/pro//#초기값
+            urlkr: /dxl/pro/l54-50-s290-r/#초기값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/pro/l54-50-s290-r/#control-table-of-eeprom-area
@@ -6814,7 +6814,7 @@ l54-50-s290-r:
           url: /dxl/pro/l54-50-s290-r/#position-p-gain594
         - title: "Goal Position(596)"
           titlekr: "Goal Position(596)"
-          url: /dxl/pro/l54-50-s290-r/#goal-position596
+          url: /dxl/pro/l54-50-s290-r/#goal-position
         - title: "Goal Velocity(600)"
           titlekr: "Goal Velocity(600)"
           url: /dxl/pro/l54-50-s290-r/#goal-velocity600
@@ -6829,7 +6829,7 @@ l54-50-s290-r:
           url: /dxl/pro/l54-50-s290-r/#moving610
         - title: "Present Position(611)"
           titlekr: "Present Position(611)"
-          url: /dxl/pro/l54-50-s290-r/#present-position611
+          url: /dxl/pro/l54-50-s290-r/#present-position
         - title: "Present Velocity(615)"
           titlekr: "Present Velocity(615)"
           url: /dxl/pro/l54-50-s290-r/#present-velocity615
@@ -6902,19 +6902,19 @@ l54-50-s500-r:
           - title: "Area(EEPROM, RAM)"
             titlekr: "영역 (EEPROM, RAM)"
             url: /dxl/pro/l54-50-s500-r/#area-eeprom-ram
-            urlkr: /dxl/pro//#영역-eeprom-ram
+            urlkr: /dxl/pro/l54-50-s500-r/#영역-eeprom-ram
           - title: "Size"
             titlekr: "크기"
             url: /dxl/pro/l54-50-s500-r/#size
-            urlkr: /dxl/pro//#크기
+            urlkr: /dxl/pro/l54-50-s500-r/#크기
           - title: "Access"
             titlekr: "접근권한"
             url: /dxl/pro/l54-50-s500-r/#access
-            urlkr: /dxl/pro//#접근권한
+            urlkr: /dxl/pro/l54-50-s500-r/#접근권한
           - title: "Initial Value"
             titlekr: "초기값"
             url: /dxl/pro/l54-50-s500-r/#initial-value
-            urlkr: /dxl/pro//#초기값
+            urlkr: /dxl/pro/l54-50-s500-r/#초기값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/pro/l54-50-s500-r/#control-table-of-eeprom-area
@@ -6996,7 +6996,7 @@ l54-50-s500-r:
           url: /dxl/pro/l54-50-s500-r/#position-p-gain594
         - title: "Goal Position(596)"
           titlekr: "Goal Position(596)"
-          url: /dxl/pro/l54-50-s500-r/#goal-position596
+          url: /dxl/pro/l54-50-s500-r/#goal-position
         - title: "Goal Velocity(600)"
           titlekr: "Goal Velocity(600)"
           url: /dxl/pro/l54-50-s500-r/#goal-velocity600
@@ -7011,7 +7011,7 @@ l54-50-s500-r:
           url: /dxl/pro/l54-50-s500-r/#moving610
         - title: "Present Position(611)"
           titlekr: "Present Position(611)"
-          url: /dxl/pro/l54-50-s500-r/#present-position611
+          url: /dxl/pro/l54-50-s500-r/#present-position
         - title: "Present Velocity(615)"
           titlekr: "Present Velocity(615)"
           url: /dxl/pro/l54-50-s500-r/#present-velocity615
@@ -7084,19 +7084,19 @@ m42-10-s260-r:
           - title: "Area(EEPROM, RAM)"
             titlekr: "영역 (EEPROM, RAM)"
             url: /dxl/pro/m42-10-s260-r/#area-eeprom-ram
-            urlkr: /dxl/pro//#영역-eeprom-ram
+            urlkr: /dxl/pro/m42-10-s260-r/#영역-eeprom-ram
           - title: "Size"
             titlekr: "크기"
             url: /dxl/pro/m42-10-s260-r/#size
-            urlkr: /dxl/pro//#크기
+            urlkr: /dxl/pro/m42-10-s260-r/#크기
           - title: "Access"
             titlekr: "접근권한"
             url: /dxl/pro/m42-10-s260-r/#access
-            urlkr: /dxl/pro//#접근권한
+            urlkr: /dxl/pro/m42-10-s260-r/#접근권한
           - title: "Initial Value"
             titlekr: "초기값"
             url: /dxl/pro/m42-10-s260-r/#initial-value
-            urlkr: /dxl/pro//#초기값
+            urlkr: /dxl/pro/m42-10-s260-r/#초기값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/pro/m42-10-s260-r/#control-table-of-eeprom-area
@@ -7178,7 +7178,7 @@ m42-10-s260-r:
           url: /dxl/pro/m42-10-s260-r/#position-p-gain594
         - title: "Goal Position(596)"
           titlekr: "Goal Position(596)"
-          url: /dxl/pro/m42-10-s260-r/#goal-position596
+          url: /dxl/pro/m42-10-s260-r/#goal-position
         - title: "Goal Velocity(600)"
           titlekr: "Goal Velocity(600)"
           url: /dxl/pro/m42-10-s260-r/#goal-velocity600
@@ -7193,7 +7193,7 @@ m42-10-s260-r:
           url: /dxl/pro/m42-10-s260-r/#moving610
         - title: "Present Position(611)"
           titlekr: "Present Position(611)"
-          url: /dxl/pro/m42-10-s260-r/#present-position611
+          url: /dxl/pro/m42-10-s260-r/#present-position
         - title: "Present Velocity(615)"
           titlekr: "Present Velocity(615)"
           url: /dxl/pro/m42-10-s260-r/#present-velocity615
@@ -7266,19 +7266,19 @@ m54-40-s250-r:
           - title: "Area(EEPROM, RAM)"
             titlekr: "영역 (EEPROM, RAM)"
             url: /dxl/pro/m54-40-s250-r/#area-eeprom-ram
-            urlkr: /dxl/pro//#영역-eeprom-ram
+            urlkr: /dxl/pro/m54-40-s250-r/#영역-eeprom-ram
           - title: "Size"
             titlekr: "크기"
             url: /dxl/pro/m54-40-s250-r/#size
-            urlkr: /dxl/pro//#크기
+            urlkr: /dxl/pro/m54-40-s250-r/#크기
           - title: "Access"
             titlekr: "접근권한"
             url: /dxl/pro/m54-40-s250-r/#access
-            urlkr: /dxl/pro//#접근권한
+            urlkr: /dxl/pro/m54-40-s250-r/#접근권한
           - title: "Initial Value"
             titlekr: "초기값"
             url: /dxl/pro/m54-40-s250-r/#initial-value
-            urlkr: /dxl/pro//#초기값
+            urlkr: /dxl/pro/m54-40-s250-r/#초기값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/pro/m54-40-s250-r/#control-table-of-eeprom-area
@@ -7360,7 +7360,7 @@ m54-40-s250-r:
           url: /dxl/pro/m54-40-s250-r/#position-p-gain594
         - title: "Goal Position(596)"
           titlekr: "Goal Position(596)"
-          url: /dxl/pro/m54-40-s250-r/#goal-position596
+          url: /dxl/pro/m54-40-s250-r/#goal-position
         - title: "Goal Velocity(600)"
           titlekr: "Goal Velocity(600)"
           url: /dxl/pro/m54-40-s250-r/#goal-velocity600
@@ -7375,7 +7375,7 @@ m54-40-s250-r:
           url: /dxl/pro/m54-40-s250-r/#moving610
         - title: "Present Position(611)"
           titlekr: "Present Position(611)"
-          url: /dxl/pro/m54-40-s250-r/#present-position611
+          url: /dxl/pro/m54-40-s250-r/#present-position
         - title: "Present Velocity(615)"
           titlekr: "Present Velocity(615)"
           url: /dxl/pro/m54-40-s250-r/#present-velocity615
@@ -7448,19 +7448,19 @@ m54-60-s250-r:
           - title: "Area(EEPROM, RAM)"
             titlekr: "영역 (EEPROM, RAM)"
             url: /dxl/pro/m54-60-s250-r/#area-eeprom-ram
-            urlkr: /dxl/pro//#영역-eeprom-ram
+            urlkr: /dxl/pro/m54-60-s250-r/#영역-eeprom-ram
           - title: "Size"
             titlekr: "크기"
             url: /dxl/pro/m54-60-s250-r/#size
-            urlkr: /dxl/pro//#크기
+            urlkr: /dxl/pro/m54-60-s250-r/#크기
           - title: "Access"
             titlekr: "접근권한"
             url: /dxl/pro/m54-60-s250-r/#access
-            urlkr: /dxl/pro//#접근권한
+            urlkr: /dxl/pro/m54-60-s250-r/#접근권한
           - title: "Initial Value"
             titlekr: "초기값"
             url: /dxl/pro/m54-60-s250-r/#initial-value
-            urlkr: /dxl/pro//#초기값
+            urlkr: /dxl/pro/m54-60-s250-r/#초기값
       - title: "EEPROM Area"
         titlekr: "EEPROM 영역"
         url: /dxl/pro/m54-60-s250-r/#control-table-of-eeprom-area
@@ -7542,7 +7542,7 @@ m54-60-s250-r:
           url: /dxl/pro/m54-60-s250-r/#position-p-gain594
         - title: "Goal Position(596)"
           titlekr: "Goal Position(596)"
-          url: /dxl/pro/m54-60-s250-r/#goal-position596
+          url: /dxl/pro/m54-60-s250-r/#goal-position
         - title: "Goal Velocity(600)"
           titlekr: "Goal Velocity(600)"
           url: /dxl/pro/m54-60-s250-r/#goal-velocity600
@@ -7557,7 +7557,7 @@ m54-60-s250-r:
           url: /dxl/pro/m54-60-s250-r/#moving610
         - title: "Present Position(611)"
           titlekr: "Present Position(611)"
-          url: /dxl/pro/m54-60-s250-r/#present-position611
+          url: /dxl/pro/m54-60-s250-r/#present-position
         - title: "Present Velocity(615)"
           titlekr: "Present Velocity(615)"
           url: /dxl/pro/m54-60-s250-r/#present-velocity615
