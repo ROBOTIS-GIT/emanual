@@ -26,7 +26,7 @@
 |559|2|[Indirect Address 256](#indirect-address)      |간접 주소값 256                     |RW |889|
 
 
-## [RAM 영역 Control Table](#ram-영역-control-table)
+## [RAM 영역](#ram-영역)
 
 | 주소     | 크기<br />(Byte)     | 명칭     | 의미     | 접근     | 기본값     |
 | :-----: | :-------------: | :------------- | :------------- | :----: | :---: |
