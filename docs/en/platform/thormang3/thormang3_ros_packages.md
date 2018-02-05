@@ -1990,7 +1990,12 @@ The following are Messages and Service used for the thormang3_offset_tuner_serve
 
 [thormang3_action_module_msgs/StartAction]: /docs/en/popup/StartAction.msg/
 [thormang3_action_module_msgs/IsRunning]: /docs/en/popup/(thormang3_action_module_msgs)IsRunning.srv/
-[thormang3_offset_tuner_client]: /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3-offset-tuner-client
+[IsRunning.srv]: /docs/en/popup/(thormang3_action_module_msgs)IsRunning.srv/
+[sensor_msgs/PointCloud2]: /docs/en/popup/sensor_msgs_PointCloud2_msg/
+[laser_assembler/AssembleScan2]: /docs/en/popup/laser_assembler_AssembleScan2_srv/
+[How to execute Simple Demonstration]: /docs/en/platform/thormang3/thormang3_operation/#simple-demo
+[How to operate walking module]: /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_walking_module
+[thormang3_offset_tuner_client]: /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_offset_tuner_client
 [thormang3_manipulation_module_msgs/KinematicsPose]: /dosc/en/popup/KinematicsPose.msg/
 [thormang3_walking_module_msgs/GetReferenceStrpData]: /dosc/en/popup/GetReferenceStepData.srv/
 [thormang3_walking_module_msgs/AddStepDataArray]: /dosc/en/popup/AddStepDataArray.srv/
