@@ -231,4 +231,4 @@ Value 값이 250 이상인 경우 :
 ![](/assets/images/dxl/ax/ax-12w_dimension.png)
 
 
-[호환성 가이드]: http://en.robotis.com/service/compatibility_table.php?cate=d
+[호환성 가이드]: http://www.robotis.com/service/compatibility_table.php?cate=d
