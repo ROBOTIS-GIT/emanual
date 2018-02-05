@@ -5,7 +5,7 @@ ref: op3_robotis_ros_packages
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/op3/op3_wiki/robotis_ros_packages/
+permalink: /docs/en/platform/op3/robotis_ros_packages/
 sidebar:
   title: ROBOTIS-OP3
   nav: "op3"
@@ -28,7 +28,7 @@ sidebar:
  - #### Sensor Module
    1. [open_cr_module] : This module is required to use OpenCR as a sensor.  
 
-### [Op3 Manager]
+### [op3_manager]
   The package that controls OP3 using framework and various modules.   
 
 ### Others
@@ -79,7 +79,7 @@ sidebar:
 [op3_walking_module]:[op3_walking_module.md]
 [op3_online_walking_module]:[op3_online_walking_module.md]
 [open_cr_module]:[open_cr_module.md]
-[Op3 Manager]:[op3_manager.md]
+[op3_manager]:[op3_manager.md]
 [op3_balance_control]:[op3_balance_control.md]
 [op3_localization]:[op3_localization.md]
 [op3_optimization]:[op3_optimization.md]

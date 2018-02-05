@@ -1,33 +1,14 @@
----
-layout: archive
-lang: en
-ref: op3_recovery
-read_time: true
-share: true
-author_profile: false
-permalink: /docs/en/platform/op3/op3_wiki/recovery/
-sidebar:
-  title: ROBOTIS-OP3
-  nav: "op3"
----
-
-<div style="counter-reset: h1 6"></div>
-
-# [Recovery](#recovery)
-
-## [Manual Installation](#manual-installation)
-
-### Overview
+### 1. Overview
 This chapter explains how to install software and configure ROBOTIS OP3.
 
 
-### User Installation  
-#### OS Installation  
+### 2. User Installation  
+#### 2.1 OS Installation  
   OS Installation  
  - Linux Mint 18.1 Xfce
   > Reference : [How to Install Linux Mint]
 
-#### PC Setting
+#### 2.2 PC Setting
  - WiFi Hotspot
 	1. Click the Network icon from the bottom right corner of the system tray and select "Edit Connections...".
 	2. In the Network Connections window, click Add button.
@@ -96,14 +77,14 @@ This chapter explains how to install software and configure ROBOTIS OP3.
                      2. Select samba user
 
 
-#### ROS Installation & Environment Setup
+#### 2.3 ROS Installation & Environment Setup
 1. **ROS Installation**
     > Reference : [ROS Installation](http://wiki.ros.org/kinetic/Installation/Ubuntu)  
 
 2. **ROS Environment Setup**   
     > Reference : [ROS Environment and Network Settings](OP3_Robot_Operating_System#4_setup.md)  
 
-#### Installing additional applications for ROBOTIS ROS Package   
+#### 2.4 Installing additional applications for ROBOTIS ROS Package   
  Prerequisites for ROBOTIS ROS package  
   - ROBOTIS-OP3 : libncurses5-dev, v4l-utils
     ```
@@ -118,7 +99,7 @@ This chapter explains how to install software and configure ROBOTIS OP3.
     $ sudo apt install g++ git
     ```  
 
-#### Installing ROS packages for ROBOTIS-OP3
+#### 2.5 Installing ROS packages for ROBOTIS-OP3
 - face_detection  
     ROS Package used for vision demo  
     ```
@@ -154,7 +135,7 @@ This chapter explains how to install software and configure ROBOTIS OP3.
     $ sudo apt install ros-kinetic-qt-ros
     ```      
 
-#### Installing ROBOTIS ROS packages  
+#### 2.6 Installing ROBOTIS ROS packages  
  - ROBOTIS ROS Packages
    -  [DynamixelSDK] : SDK for Dynamixel  
    -  [ROBOTIS-Framerowk] : The package to use ROS (Robot Operating System) for robots assembled with ROBOTIS products.  
@@ -189,7 +170,7 @@ This chapter explains how to install software and configure ROBOTIS OP3.
       $ catkin_make
       ```
 
-#### ETC Setting  
+#### 2.8 ETC Setting  
 - Configure Shutdown Sound  
     1. Create `/etc/init.d/shutdown-snd` file.   
         Create the above file with a text editor.  
@@ -239,23 +220,10 @@ This chapter explains how to install software and configure ROBOTIS OP3.
     2. Go to General -> Buttons -> When power button is pressed and change the option to "Shutdown".    
 
 
-## [Recovery of ROBOTIS-OP3](#recovery-of-robotis-op3)
-
-### Overview
-This chapter explains how to recover ROBOTIS-OP3 softwares using recovery USB image.
-
-### CloneZilla recovery  
-Clonezilla is used to recover ROBOTIS-OP3 with the image file in the provided USB.  
-
-> Reference : [e-manual]
-
-### File
-* clonezilla-live-ROBOTIS-OP3_Recovery_171013.zip  
-    * [ [Download] ] - sourceforge.net  
 
 
 
-
+[&lt;&lt; Back](OP3-User's-Guide.md)
 
 [How to Install Linux Mint]:https://www.linuxmint.com/documentation/user-guide/Cinnamon/english_18.0.pdf
 [DynamixelSDK]:https://github.com/ROBOTIS-GIT/DynamixelSDK/wiki
@@ -267,7 +235,3 @@ Clonezilla is used to recover ROBOTIS-OP3 with the image file in the provided US
 [ROBOTIS-OP3-msgs]:[ROBOTIS-OP3-msgs.md]
 [ROBOTIS-OP3-Tools]:[ROBOTIS-OP3-Tools.md]
 [ROBOTIS-OP3-Common]:[ROBOTIS-OP3-Common.md]
-
-[e-manual]:http://support.robotis.com/en/product/darwin-op/operating/recovery/clonezilla_recovery.htm
-
-[Download]:https://downloads.sourceforge.net/project/darwinop/Software/Main%20Controller/Recovery%20USB/clonezilla-live-ROBOTIS-OP3_Recovery_171013.zip?r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fdarwinop%2Ffiles%2FSoftware%2FMain%2520Controller%2FRecovery%2520USB%2F&ts=1508126998&use_mirror=netix)

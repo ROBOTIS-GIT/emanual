@@ -53,12 +53,12 @@ sidebar:
 
     ![](/assets/images/platform/thormang3/thormang3_079.jpg)
 
-## [LiDAR IP Setting](#lidar-ip-setting)
+## [LIDAR IP Setting](#lidar-ip-setting)
 
 - Model : UTM-30LX-EW
 
 - Download IP address changing tool  
-  https://www.hokuyo-aut.jp/02sensor/07scanner/download/products/utm-30lx-ew/
+  [https://www.hokuyo-aut.jp/02sensor/07scanner/download/products/utm-30lx-ew/]
 
 - Reset the IP Setting  
   Pressing the button in the sensor’s body will reset the IP setting.
@@ -97,8 +97,8 @@ The following table shows the network settings after the reset.
 ## [Technical Specifications](#technical-specifications)
 
 1. PC
-  - [nuc5i5RYK](http://www.intel.com/content/www/us/en/nuc/products-overview.html)
-  - [Technical Product Specification](http://www.intel.com/content/www/us/en/support/boards-and-kits/000005545.html)
+  - [nuc5i5RYK]
+  - [Technical Product Specification]
 
     ![](/assets/images/platform/thormang3/thormang3_084.png)
 
@@ -110,40 +110,40 @@ The following table shows the network settings after the reset.
     ![](/assets/images/platform/thormang3/thormang3_085.jpg)
 
 3. Sensors
-  - 6-axis force-torque sensor([ATi Mini58-SI-2800-120](http://www.ati-ia.com/products/ft/ft_models.aspx?id=Mini58))
+  - 6-axis force-torque sensor([ATi Mini58-SI-2800-120])
 
     ![](/assets/images/platform/thormang3/thormang3_086.jpg)
 
-    - IMU sensor([MicroSrain 3DM-GX4-25](http://www.microstrain.com/inertial/3dm-gx4-25))
+    - IMU sensor([MicroSrain 3DM-GX4-25])
 
       ![](/assets/images/platform/thormang3/thormang3_087.jpg)
 
-    - LIDAR([Hokuyo UTM-30LX-EW](https://www.hokuyo-aut.jp/02sensor/07scanner/download/products/utm-30lx-ew/))
+    - LIDAR([Hokuyo UTM-30LX-EW])
 
       ![](/assets/images/platform/thormang3/thormang3_088.jpg)
    
-    - HD Camera([Logitech C920 HD](http://www.logitech.com/en-us/product/hd-pro-webcam-c920))
+    - HD Camera([Logitech C920 HD])
 
       ![](/assets/images/platform/thormang3/thormang3_089.jpg)
 
-    - Depth camera([Intel RealSense R200](https://software.intel.com/en-us/realsense/r200camera))
+    - Depth camera([Intel RealSense R200])
     
       ![](/assets/images/platform/thormang3/thormang3_090.jpg)
 
 4. Batteries
-  - LiPo 22.2V, 22000mAh x 1EA(http://www.maxamps.com/proddetail.php?prod=Lipo-22000-222-Pack)  
+  - LiPo 22.2V, 22000mAh x 1EA([http://www.maxamps.com/proddetail.php?prod=Lipo-22000-222-Pack])  
     xt60 plug
 
     ![](/assets/images/platform/thormang3/thormang3_091.jpg)
 
-    - LiPo 18.5V, 11000mAh x 1EA(http://www.maxamps.com/proddetail.php?prod=Lipo-11000-185-Pack)  
+    - LiPo 18.5V, 11000mAh x 1EA([http://www.maxamps.com/proddetail.php?prod=Lipo-11000-185-Pack])  
       no plug-12awg
 
       ![](/assets/images/platform/thormang3/thormang3_092.jpg)
 
 - Chargers(hitec smart charger h4, hitec e power box 30a)  
-  http://hitecrcd.com/products/chargers/dcdc-chargers/h4-dcdc-four-port-multi-charger/product  
-  http://hitecrcd.com/products/chargers/epowerbox-30-amp-power-supply/product
+  [http://hitecrcd.com/products/chargers/dcdc-chargers/h4-dcdc-four-port-multi-charger/product]
+  [http://hitecrcd.com/products/chargers/epowerbox-30-amp-power-supply/product]
  
   ![](/assets/images/platform/thormang3/thormang3_093.jpg)
 
@@ -347,3 +347,17 @@ The following table shows the network settings after the reset.
 [Balance Parameter]: /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3-walking-module-msgs
 [thormang3_foot_step_generator/data/balance_param.yaml]: /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3-foot-setp-generator
 [footstep_planner]: /docs/en/platform/thormang3/thormang3_ros_packages/#humanoid-navigation
+
+[https://www.hokuyo-aut.jp/02sensor/07scanner/download/products/utm-30lx-ew/]:https://www.hokuyo-aut.jp/02sensor/07scanner/download/products/utm-30lx-ew/
+
+[nuc5i5RYK]:http://www.intel.com/content/www/us/en/nuc/products-overview.html
+[Technical Product Specification]:http://www.intel.com/content/www/us/en/support/boards-and-kits/000005545.html
+[ATi Mini58-SI-2800-120]:http://www.ati-ia.com/products/ft/ft_models.aspx?id=Mini58
+[MicroSrain 3DM-GX4-25]:http://www.microstrain.com/inertial/3dm-gx4-25
+[Hokuyo UTM-30LX-EW]:https://www.hokuyo-aut.jp/02sensor/07scanner/download/products/utm-30lx-ew/
+[Logitech C920 HD]:http://www.logitech.com/en-us/product/hd-pro-webcam-c920
+[Intel RealSense R200]:https://software.intel.com/en-us/realsense/r200camera
+[http://www.maxamps.com/proddetail.php?prod=Lipo-22000-222-Pack]:http://www.maxamps.com/proddetail.php?prod=Lipo-22000-222-Pack
+[http://www.maxamps.com/proddetail.php?prod=Lipo-11000-185-Pack]:http://www.maxamps.com/proddetail.php?prod=Lipo-11000-185-Pack
+[http://hitecrcd.com/products/chargers/dcdc-chargers/h4-dcdc-four-port-multi-charger/product]:http://hitecrcd.com/products/chargers/dcdc-chargers/h4-dcdc-four-port-multi-charger/product    
+[http://hitecrcd.com/products/chargers/epowerbox-30-amp-power-supply/product]:http://hitecrcd.com/products/chargers/epowerbox-30-amp-power-supply/product

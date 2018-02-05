@@ -337,7 +337,7 @@ $ git clone https://github.com/ros-drivers/urg_c
 $ git clone https://github.com/ros-perception/laser_proc
 ```
 
-`Reference` : http://wiki.ros.org/urg_node
+`Reference` : [http://wiki.ros.org/urg_node]
 {: .notice}
 
 ### [ROS Packages for PPC](#ros-packages-for-ppc)
@@ -365,3 +365,5 @@ $ git clone https://github.com/ktossell/camera_umd
 [ROS Network Setup Reference]: http://wiki.ros.org/ROS/NetworkSetup
 [sbpl install instruction]: https://github.com/sbpl/sbpl
 [Link]: http://techtidings.blogspot.kr/2012/01/problem-with-libglso-on-64-bit-ubuntu.html
+[http://wiki.ros.org/urg_node]:http://wiki.ros.org/urg_node
+[http://wiki.ros.org/RealSense]:http://wiki.ros.org/RealSense

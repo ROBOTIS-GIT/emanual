@@ -5,7 +5,7 @@ ref: op3_recovery
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/op3/op3_wiki/recovery/
+permalink: /docs/en/platform/op3/recovery/
 sidebar:
   title: ROBOTIS-OP3
   nav: "op3"
@@ -270,4 +270,4 @@ Clonezilla is used to recover ROBOTIS-OP3 with the image file in the provided US
 
 [e-manual]:http://support.robotis.com/en/product/darwin-op/operating/recovery/clonezilla_recovery.htm
 
-[Download]:https://downloads.sourceforge.net/project/darwinop/Software/Main%20Controller/Recovery%20USB/clonezilla-live-ROBOTIS-OP3_Recovery_171013.zip?r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fdarwinop%2Ffiles%2FSoftware%2FMain%2520Controller%2FRecovery%2520USB%2F&ts=1508126998&use_mirror=netix)
+[ Download]:https://downloads.sourceforge.net/project/darwinop/Software/Main%20Controller/Recovery%20USB/clonezilla-live-ROBOTIS-OP3_Recovery_171013.zip?r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fdarwinop%2Ffiles%2FSoftware%2FMain%2520Controller%2FRecovery%2520USB%2F&ts=1508126998&use_mirror=netix)

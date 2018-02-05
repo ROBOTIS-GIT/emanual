@@ -5,7 +5,7 @@ ref: op3_simulation
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/op3/op3_wiki/simulation/
+permalink: /docs/en/platform/op3/simulation/
 sidebar:
   title: ROBOTIS-OP3
   nav: "op3"

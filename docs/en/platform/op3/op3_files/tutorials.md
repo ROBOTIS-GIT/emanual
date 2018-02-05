@@ -5,7 +5,7 @@ ref: op3_tutorials
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/op3/op3_wiki/tutorials/
+permalink: /docs/en/platform/op3/tutorials/
 sidebar:
   title: ROBOTIS-OP3
   nav: "op3"

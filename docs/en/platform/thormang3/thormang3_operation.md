@@ -20,7 +20,7 @@ sidebar:
 
 ### Time Synchronization (MPC)
 
-> Reference : [ROS network Setup, 5. Timing issues](http://wiki.ros.org/ROS/NetworkSetup#Timing_issues.2C_TF_complaining_about_extrapolation_into_the_future.3F)
+> Reference : [ROS network Setup, 5. Timing issues]
 
 1. Connect to the **MPC(Motion PC)**
     - via ssh  
@@ -76,7 +76,7 @@ sidebar:
 
     - via VNC  
 
-2. Launch [roscore](http://wiki.ros.org/roscore)  
+2. Launch [roscore]  
   Execute below command on the Terminal  
   ```bash
   $ roscore
@@ -86,7 +86,7 @@ sidebar:
 
 ### thormang3 sensors (PPC)
 1. Connect to the **PPC**  
-2. Execute [thormang3_sensors.launch](https://github.com/ROBOTIS-GIT/ROBOTIS-THORMANG-PPC/blob/master/thormang3_sensors/launch/thormang3_sensors.launch) file  
+2. Execute [thormang3_sensors.launch] file  
   ```
   $ roslaunch thormang3_sensors thormang3_sensors.launch
   ```
@@ -102,7 +102,7 @@ Turn on the actuator power before executing THORMANG3 Manager.
   $ sudo bash
   ```
 
-3. Execute [thormang3_manager.launch](https://github.com/ROBOTIS-GIT/ROBOTIS-THORMANG-MPC/blob/master/thormang3_manager/launch/thormang3_manager.launch) file  
+3. Execute [thormang3_manager.launch] file  
   ```bash
   # roslaunch thormang3_manager thormang3_manager.launch
   ```
@@ -227,8 +227,8 @@ Operating PC is used to control the robot from the outside.
 
 2. ROS(Robot Operating System)  
   - version : kinetic  
-  - installation(Desktop-Full) : [http://wiki.ros.org/kinetic/Installation/Ubuntu](http://wiki.ros.org/indigo/Installation/Ubuntu)  
-  - environment setting : [http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment](http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment)  
+  - installation(Desktop-Full) : [http://wiki.ros.org/kinetic/Installation/Ubuntu]
+  - environment setting : [http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment]
 
 3. ROBOTIS ROS Package  
   - `Reference` [OPC Installation]  
@@ -245,7 +245,7 @@ Operating PC is used to control the robot from the outside.
   > Gateway : 10.17.3.1
 
 - ROS network environment setting
-  - `Reference` [ROS Network Setup](http://wiki.ros.org/ROS/NetworkSetup)  
+  - `Reference` [ROS Network Setup]
 
 1. Open the bash file to configure environment  
   ```bash
@@ -279,15 +279,15 @@ Operating PC is used to control the robot from the outside.
 #### Related ROS Packages  
 1. RViz  
   RViz is a 3D visualization tool for robots. Rviz visualizes robot's posture, camera image, pointcloud and sensor data.  
-  > Reference : http://wiki.ros.org/rviz
+  > Reference : [http://wiki.ros.org/rviz]
 
 2. Robot Model  
   ROS uses URDF(Unified Robot Description Format) robot model information.  
-  > Reference : http://wiki.ros.org/urdf  
+  > Reference : [http://wiki.ros.org/urdf]  
 
 3. TF  
   TF is generated from Robot model information and each joint data. User can identify Robot's posture and relative position of each frame with TF.  
-  > Reference : http://wiki.ros.org/tf
+  > Reference : [http://wiki.ros.org/tf]
 
 4. Other sensor related Packages  
   uvc_camera, urg_node, etc.  
@@ -611,7 +611,7 @@ A walking example that follows StepData using [footstep_planner].
 
     ![](/assets/images/platform/thormang3/thormang3_074.jpg)
 
-[Usage]: /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_walking_module
+
 
 ## [Offset Tuner](#offset-tuner)
 
@@ -641,13 +641,26 @@ $ rosrun thormang3_offset_tuner_client thormang3_offset_tuner_client
 [PPC Installation]: /docs/en/platform/thormang3/getting_started/#ppc-installation
 [OPC Installation]: /docs/en/platform/thormang3/getting_started/#opc-installation
 
+[ROS network Setup, 5. Timing issues]:http://wiki.ros.org/ROS/NetworkSetup#Timing_issues.2C_TF_complaining_about_extrapolation_into_the_future.3F
+[roscore]:http://wiki.ros.org/roscore
+[thormang3_sensors.launch]:https://github.com/ROBOTIS-GIT/ROBOTIS-THORMANG-PPC/blob/master/thormang3_sensors/launch/thormang3_sensors.launch
+[thormang3_manager.launch]:https://github.com/ROBOTIS-GIT/ROBOTIS-THORMANG-MPC/blob/master/thormang3_manager/launch/thormang3_manager.launch
+
+[http://wiki.ros.org/kinetic/Installation/Ubuntu]:http://wiki.ros.org/indigo/Installation/Ubuntu
+[http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment]:http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment
+[ROS Network Setup]:http://wiki.ros.org/ROS/NetworkSetup  
 
 [How to execute Simple Demonstration]: /docs/en/platform/thormang3/thormang3_operation/#simple-demo
 
-[How to execute OPC's GUI program]: /docs/en/platform/thormang3/thormang3_operation/#gui-program 
+[How to execute OPC's GUI program]: /docs/en/platform/thormang3/thormang3_operation/#gui-program
 
 [Remote Control(GUI Demo)]: /docs/en/platform/thormang3/thormang3_operation/#gui-program
 [thormang3_walking_module]: /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_walking_module
 
 [thormang3_feet_ft_module]: /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_feet_ft_module
 [thormang3_manipulation_module]: /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_manipulation_module
+[Usage]: /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_walking_module
+
+[http://wiki.ros.org/rviz]:http://wiki.ros.org/rviz
+[http://wiki.ros.org/urdf]:http://wiki.ros.org/urdf
+[http://wiki.ros.org/tf]:http://wiki.ros.org/tf

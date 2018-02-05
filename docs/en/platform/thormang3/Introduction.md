@@ -20,8 +20,8 @@ Read this guide thouroughly before getting with THORMANG.
 ![](/assets/images/platform/thormang3/thormang3.png)
 
 - THORMANG3 3D files
-  - `Download ZIP` [thormang3_stp.zip](http://support.robotis.com/en/baggage_files/thormang3/thormang3_stp.zip)
-  - `Download ZIP` [sim_for_thormang3_stl.zip](http://support.robotis.com/en/baggage_files/thormang3/sim_for_thormang3_stl.zip)
+  - `Download ZIP` [thormang3_stp.zip]
+  - `Download ZIP` [sim_for_thormang3_stl.zip]
 
 ## [What is THORMANG3?](#what-is-thormang3)
 
@@ -97,3 +97,5 @@ ROBOTIS is not responsible for any damages or losses resulting from any accident
 [ROS Network Setup Reference]: http://wiki.ros.org/ROS/NetworkSetup
 [sbpl install instruction]: https://github.com/sbpl/sbpl
 [Link]: http://techtidings.blogspot.kr/2012/01/problem-with-libglso-on-64-bit-ubuntu.html
+[thormang3_stp.zip]:http://support.robotis.com/en/baggage_files/thormang3/thormang3_stp.zip
+[sim_for_thormang3_stl.zip]:http://support.robotis.com/en/baggage_files/thormang3/sim_for_thormang3_stl.zip

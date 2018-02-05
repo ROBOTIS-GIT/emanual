@@ -18,7 +18,7 @@ sidebar:
 ROS-Gazebo Package Installation
 
 ### Gazebo with ROS
-[Gazebo Tutorials](http://gazebosim.org/tutorials?cat=connect_ros)
+[Gazebo Tutorials]
 
 ### Additional Installation
 If ros-indigo-desktop-full was used to install, the following packages need to be installed.
@@ -58,3 +58,4 @@ $ roslaunch thormang3_gazebo robotis_world.launch
 [How to run THORMANG3's program]
 
 [How to run THORMANG3's program]: /docs/en/platform/thormang3/thormang3_operation/#thormang3-operation
+[Gazebo Tutorials]:http://gazebosim.org/tutorials?cat=connect_ros

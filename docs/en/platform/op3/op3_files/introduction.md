@@ -5,7 +5,7 @@ ref: op3_introduction
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/op3/op3_wiki/introduction/
+permalink: /docs/en/platform/op3/introduction/
 sidebar:
   title: ROBOTIS-OP3
   nav: "op3"
