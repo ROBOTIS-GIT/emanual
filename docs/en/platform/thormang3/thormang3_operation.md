@@ -1,11 +1,11 @@
 ---
 layout: archive
 lang: en
-ref: Thormang3_Operation
+ref: thormang3_operation
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/thormang3/Thormang3_Operation/
+permalink: /docs/en/platform/thormang3/thormang3_operation/
 sidebar:
   title: THORMANG3
   nav: "thormang3"
@@ -643,6 +643,8 @@ $ rosrun thormang3_offset_tuner_client thormang3_offset_tuner_client
 
 
 [How to execute Simple Demonstration]: /docs/en/platform/thormang3/thormang3_operation/#simple-demo
+
+[How to execute OPC's GUI program]: /docs/en/platform/thormang3/thormang3_operation/#gui-program 
 
 [Remote Control(GUI Demo)]: /docs/en/platform/thormang3/thormang3_operation/#gui-program
 [thormang3_walking_module]: /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_walking_module

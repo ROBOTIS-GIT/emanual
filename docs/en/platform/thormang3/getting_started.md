@@ -1,15 +1,17 @@
 ---
 layout: archive
 lang: en
-ref: thormang3_Getting_Started
+ref: thormang3_getting_started
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/thormang3/Getting_Started/
+permalink: /docs/en/platform/thormang3/getting_started/
 sidebar:
   title: THORMANG3
   nav: "thormang3"
 ---
+
+<div style="counter-reset: h1 2"></div>
 
 # [Getting Started](#getting-started)
 

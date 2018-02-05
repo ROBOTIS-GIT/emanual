@@ -5,7 +5,7 @@ ref: op3_getting_started
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/op3/getting_started/
+permalink: /docs/en/platform/op3/op3_wiki/getting_started/
 sidebar:
   title: ROBOTIS-OP3
   nav: "op3"
@@ -16,9 +16,6 @@ sidebar:
 # [Getting Started](#getting_started)
 
 ## [How to connect](#how-to-connect)
-
-### Overview  
-This chapter will explain how to connect to ROBOTIS-OP3.  
 
 ### Direct Connection  
 Keyboard and monitor are directly connected to ROBOTIS-OP3.  
@@ -58,9 +55,6 @@ Keyboard and monitor are directly connected to ROBOTIS-OP3.
     <img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_connection_vnc.png?raw=true"/>  
 
 ## [How to kill the demo program](#how-to-kill-the-demo-program)
-
-### Overview
-This chapter explains how to kill the demo program of ROBOTIS-OP3.  
 
 ### Kill demo program
 In order to terminate automatically executed demo program, enter below command in the terminal window.  

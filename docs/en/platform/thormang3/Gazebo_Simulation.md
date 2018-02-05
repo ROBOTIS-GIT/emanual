@@ -1,16 +1,16 @@
 ---
 layout: archive
 lang: en
-ref: thormang3_Gazebo_Simulation
+ref: thormang3_gazebo_simulation
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/thormang3/Gazebo_Simulation/
+permalink: /docs/en/platform/thormang3/gazebo_simulation/
 sidebar:
   title: THORMANG3
   nav: "thormang3"
 ---
-
+<div style="counter-reset: h1 5"></div>
 
 # [Gazebo Simulation](#gazebo-simulation)
 

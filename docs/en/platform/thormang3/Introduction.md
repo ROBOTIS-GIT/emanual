@@ -1,11 +1,11 @@
 ---
 layout: archive
 lang: en
-ref: thormang3_Introduction
+ref: thormang3_introduction
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/thormang3/Introduction/
+permalink: /docs/en/platform/thormang3/introduction/
 sidebar:
   title: THORMANG3
   nav: "thormang3"

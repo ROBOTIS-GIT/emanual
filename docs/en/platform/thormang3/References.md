@@ -1,16 +1,17 @@
 ---
 layout: archive
 lang: en
-ref: thormang3_References
+ref: thormang3_references
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/thormang3/References/
+permalink: /docs/en/platform/thormang3/references/
 sidebar:
   title: THORMANG3
   nav: "thormang3"
 ---
 
+<div style="counter-reset: h1 6"></div>
 
 # [References](#references)
 

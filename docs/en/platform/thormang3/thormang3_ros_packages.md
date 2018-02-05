@@ -1,18 +1,17 @@
 ---
 layout: archive
 lang: en
-ref: Thormang3_Ros_Packages
+ref: thormang3_ros_packages
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/thormang3/Thormang3_Ros_Packages/
+permalink: /docs/en/platform/thormang3/thormang3_ros_packages/
 sidebar:
   title: THORMANG3
   nav: "thormang3"
 ---
 
-<div style="counter-reset: h1 3">
-</div>
+<div style="counter-reset: h1 3"></div>
 
 # [THORMANG3 ROS Packages](#thormang3-ros-packages)
 

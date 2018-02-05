@@ -1,15 +1,17 @@
 ---
 layout: archive
 lang: en
-ref: thormang3_Quick_Start
+ref: thormang3_quick_start
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/thormang3/Quick_Start/
+permalink: /docs/en/platform/thormang3/quick_start/
 sidebar:
   title: THORMANG3
   nav: "thormang3"
 ---
+
+<div style="counter-reset: h1 1"></div>
 
 # [Quick Start](#quick-start)
 
