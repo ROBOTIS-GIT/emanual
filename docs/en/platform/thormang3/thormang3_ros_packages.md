@@ -1874,20 +1874,17 @@ After typing "help", the commend list will appear as shown below.
     ![](/assets/images/platform/thormang3/thormang3_042.jpg)
 
 5. Go to "walking_init" pose by typing "play"  
+6. Turn off the torque of ID 2, 4 and 8 by typing "off 2 4 8"  
 
     ![](/assets/images/platform/thormang3/thormang3_043.jpg)
 
-6. Turn off the torque of ID 2, 4 and 8 by typing "off 2 4 8"  
+7. After getting the desired pose turn torque on again by simple typing on. And insert the pose to step 1 by typing "i 1"  
 
     ![](/assets/images/platform/thormang3/thormang3_044.jpg)
 
-7. After getting the desired pose turn torque on again by simple typing on. And insert the pose to step 1 by typing "i 1"  
-
-    ![](/assets/images/platform/thormang3/thormang3_045.jpg)
-
 8. Edit "Pause Time", "Time" of STP1 and "Page Step" as shown below.  
 
-    ![](/assets/images/platform/thormang3/thormang3_046.png)
+    ![](/assets/images/platform/thormang3/thormang3_045.jpg)
 
 9. Type "play" and check the THORMANG3's action  
 

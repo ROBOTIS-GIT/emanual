@@ -21,7 +21,7 @@ Shutdown(63)에서 감지할 수 있는 위험 상황은 아래 표와 같습니
 {% capture control_table_shutdown %}
 `Note` Shutdown이 발생하면 다음과 같은 방법으로 다이나믹셀을 REBOOT 시킬 수 있습니다.
 1. H/W REBOOT : 전원을 껐다 켜는 방법
-2. S/W REBOOT : REBOOT Instruction 전송하는 방법(자세한 사항은 [Protocol 2.0, Reboot]을 참고해주세요.)
+2. S/W REBOOT : REBOOT Instruction 전송하는 방법(자세한 사항은 Protocol 2.0의 [Reboot]을 참고해주세요.)
 {% endcapture %}
 
 <div class="notice">{{ control_table_shutdown | markdownify }}</div>
@@ -29,4 +29,4 @@ Shutdown(63)에서 감지할 수 있는 위험 상황은 아래 표와 같습니
 `주의` Shutdown이 발생하면 1초 주기로 LED가 점멸합니다.(펌웨어 버전 41 이상)
 {: .notice--warning}
 
-[Protocol 2.0, Reboot]: /docs/en/dxl/protocol2/#reboot
+[Reboot]: /docs/kr/dxl/protocol2/#reboot

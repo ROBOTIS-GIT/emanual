@@ -2989,6 +2989,145 @@ mx-28-2:
         titlekr: "컨트롤 테이블 설명"
         url: /dxl/mx/mx-28-2/#control-table-description
         urlkr: /dxl/mx/mx-28-2/#컨트롤-테이블-설명
+        children:
+        - title: "Model Number(0)"
+          titlekr: "Model Number(0)"
+          url: /dxl/mx/mx-28-2/#model-number0
+        - title: "Firmware Version(6)"
+          titlekr: "Firmware Version(6)"
+          url: /dxl/mx/mx-28-2/#firmware-version6
+        - title: "ID(7)"
+          titlekr: "ID(7)"
+          url: /dxl/mx/mx-28-2/#id7
+        - title: "Baud Rate(8)"
+          titlekr: "Baud Rate(8)"
+          url: /dxl/mx/mx-28-2/#baud-rate8
+        - title: "Return Delay Time(9)"
+          titlekr: "Return Delay Time(9)"
+          url: /dxl/mx/mx-28-2/#return-delay-time9
+        - title: "Drive Mode(10)"
+          titlekr: "Drive Mode(10)"
+          url: /dxl/mx/mx-28-2/#drive-mode10
+        - title: "Operating Mode(11)"
+          titlekr: "Operating Mode(11)"
+          url: /dxl/mx/mx-28-2/#operating-mode11
+        - title: "Secondary(Shadow) ID(12)"
+          titlekr: "Secondary(Shadow) ID(12)"
+          url: /dxl/mx/mx-28-2/#secondaryshadow-id12
+        - title: "Protocol Version(13)"
+          titlekr: "Protocol Version(13)"
+          url: /dxl/mx/mx-28-2/#protocol-version13
+        - title: "Homing Offset(20)"
+          titlekr: "Homing Offset(20)"
+          url: /dxl/mx/mx-28-2/#homing-offset20
+        - title: "Moving Threshold(24)"
+          titlekr: "Moving Threshold(24)"
+          url: /dxl/mx/mx-28-2/#moving-threshold24
+        - title: "Temperature Limit(31)"
+          titlekr: "Temperature Limit(31)"
+          url: /dxl/mx/mx-28-2/#temperature-limit31
+        - title: "Min/Max Voltage Limit(32,34)"
+          titlekr: "Min/Max Voltage Limit(32,34)"
+          url: /dxl/mx/mx-28-2/#minmax-voltage-limit32-34
+        - title: "PWM Lmit(36)"
+          titlekr: "PWM Limit(36)"
+          url: /dxl/mx/mx-28-2/#pwm-limit36
+        - title: "Acceleration Limit(40)"
+          titlekr: "Acceleration Limit(40)"
+          url: /dxl/mx/mx-28-2/#acceleration-limit40
+        - title: "Velocity Limit(44)"
+          titlekr: "Velocity Limit(44)"
+          url: /dxl/mx/mx-28-2/#velocity-limit44
+        - title: "Min/Max Position Limit(48, 52)"
+          titlekr: "Min/Max Position Limit(48, 52)"
+          url: /dxl/mx/mx-28-2/#minmax-position-limit48-52
+        - title: "Shutdown(63)"
+          titlekr: "Shutdown(63)"
+          url: /dxl/mx/mx-28-2/#shutdown63
+        - title: "Torque Enable(64)"
+          titlekr: "Torque Enable(64)"
+          url: /dxl/mx/mx-28-2/#torque-enable64
+        - title: "LED(65)"
+          titlekr: "LED(65)"
+          url: /dxl/mx/mx-28-2/#led65
+        - title: "Status Return Level(68)"
+          titlekr: "Status Return Level(68)"
+          url: /dxl/mx/mx-28-2/#status-return-level68
+        - title: "Registered Instruction(69)"
+          titlekr: "Registered Instruction(69)"
+          url: /dxl/mx/mx-28-2/#registered-instruction69
+        - title: "Hardware Error Status(70)"
+          titlekr: "Hardware Error Status(70)"
+          url: /dxl/mx/mx-28-2/#hardware-error-status70
+        - title: "Velocity PI Gain(76, 78)"
+          titlekr: "Velocity PI Gain(76, 78)"
+          url: /dxl/mx/mx-28-2/#velocity-pi-gain76-78
+        - title: "Velocity PI Gain(76, 78)"
+          titlekr: "Velocity PI Gain(76, 78)"
+          url: /dxl/mx/mx-28-2/#velocity-pi-gain76-78
+        - title: "Position PID Gain(80, 82, 84)"
+          titlekr: "Position PID Gain(80, 82, 84)"
+          url: /dxl/mx/mx-28-2/#position-pid-gain80-82-84
+        - title: "Feedforward 1st/2nd Gains(88, 90)"
+          titlekr: "Feedforward 1st/2nd Gains(88, 90)"
+          url: /dxl/mx/mx-28-2/#feedforward-1st2nd-gains88-90
+        - title: "BUS Watchdog(98)"
+          titlekr: "BUS Watchdog(98)"
+          url: /dxl/mx/mx-28-2/#bus-watchdog98
+        - title: "Goal PWM(100)"
+          titlekr: "Goal PWM(100)"
+          url: /dxl/mx/mx-28-2/#goal-pwm100
+        - title: "Goal Velocity(104)"
+          titlekr: "Goal Velocity(104)"
+          url: /dxl/mx/mx-28-2/#goal-velocity104
+        - title: "Profile Acceleration(108)"
+          titlekr: "Profile Acceleration(108)"
+          url: /dxl/mx/mx-28-2/#profile-acceleration108
+        - title: "Profile Velocity(112)"
+          titlekr: "Profile Velocity(112)"
+          url: /dxl/mx/mx-28-2/#profile-velocity112
+        - title: "Goal Position(116)"
+          titlekr: "Goal Position(116)"
+          url: /dxl/mx/mx-28-2/#goal-position116
+        - title: "Realtime Tick(120)"
+          titlekr: "Realtime Tick(120)"
+          url: /dxl/mx/mx-28-2/#realtime-tick120
+        - title: "Moving(122)"
+          titlekr: "Moving(122)"
+          url: /dxl/mx/mx-28-2/#moving122
+        - title: "Moving Status(123)"
+          titlekr: "Moving Status(123)"
+          url: /dxl/mx/mx-28-2/#moving-status123
+        - title: "Present PWM(124)"
+          titlekr: "Present PWM(124)"
+          url: /dxl/mx/mx-28-2/#present-pwm124
+        - title: "Present Load(126)"
+          titlekr: "Present Load(126)"
+          url: /dxl/mx/mx-28-2/#present-load126
+        - title: "Present Velocity(128)"
+          titlekr: "Present Velocity(128)"
+          url: /dxl/mx/mx-28-2/#present-velocity128
+        - title: "Present Position(132)"
+          titlekr: "Present Position(132)"
+          url: /dxl/mx/mx-28-2/#present-position132
+        - title: "Velocity Trajectory(136)"
+          titlekr: "Velocity Trajectory(136)"
+          url: /dxl/mx/mx-28-2/#velocity-trajectory136
+        - title: "Position Trajectory(140)"
+          titlekr: "Position Trajectory(140)"
+          url: /dxl/mx/mx-28-2/#position-trajectory140
+        - title: "Present Input Voltage(144)"
+          titlekr: "Present Input Voltage(144)"
+          url: /dxl/mx/mx-28-2/#present-input-voltage144
+        - title: "Present Temperature(146)"
+          titlekr: "Present Temperature(146)"
+          url: /dxl/mx/mx-28-2/#present-temperature146
+        - title: "Indirect Address"
+          titlekr: "Indirect Address"
+          url: /dxl/mx/mx-28-2/#indirect-address
+        - title: "Indirect Data"
+          titlekr: "Indirect Data"
+          url: /dxl/mx/mx-28-2/#indirect-data
   - title: "How to Assemble"
     titlekr: "조립 예시"
     url: /dxl/mx/mx-28-2/#how-to-assemble
@@ -3069,6 +3208,148 @@ mx-64-2:
         titlekr: "컨트롤 테이블 설명"
         url: /dxl/mx/mx-64-2/#control-table-description
         urlkr: /dxl/mx/mx-64-2/#컨트롤-테이블-설명
+        children:
+        - title: "Model Number(0)"
+          titlekr: "Model Number(0)"
+          url: /dxl/mx/mx-64-2/#model-number0
+        - title: "Firmware Version(6)"
+          titlekr: "Firmware Version(6)"
+          url: /dxl/mx/mx-64-2/#firmware-version6
+        - title: "ID(7)"
+          titlekr: "ID(7)"
+          url: /dxl/mx/mx-64-2/#id7
+        - title: "Baud Rate(8)"
+          titlekr: "Baud Rate(8)"
+          url: /dxl/mx/mx-64-2/#baud-rate8
+        - title: "Return Delay Time(9)"
+          titlekr: "Return Delay Time(9)"
+          url: /dxl/mx/mx-64-2/#return-delay-time9
+        - title: "Drive Mode(10)"
+          titlekr: "Drive Mode(10)"
+          url: /dxl/mx/mx-64-2/#drive-mode10
+        - title: "Operating Mode(11)"
+          titlekr: "Operating Mode(11)"
+          url: /dxl/mx/mx-64-2/#operating-mode11
+        - title: "Secondary(Shadow) ID(12)"
+          titlekr: "Secondary(Shadow) ID(12)"
+          url: /dxl/mx/mx-64-2/#secondaryshadow-id12
+        - title: "Protocol Version(13)"
+          titlekr: "Protocol Version(13)"
+          url: /dxl/mx/mx-64-2/#protocol-version13
+        - title: "Homing Offset(20)"
+          titlekr: "Homing Offset(20)"
+          url: /dxl/mx/mx-64-2/#homing-offset20
+        - title: "Moving Threshold(24)"
+          titlekr: "Moving Threshold(24)"
+          url: /dxl/mx/mx-64-2/#moving-threshold24
+        - title: "Temperature Limit(31)"
+          titlekr: "Temperature Limit(31)"
+          url: /dxl/mx/mx-64-2/#temperature-limit31
+        - title: "Min/Max Voltage Limit(32,34)"
+          titlekr: "Min/Max Voltage Limit(32,34)"
+          url: /dxl/mx/mx-64-2/#minmax-voltage-limit32-34
+        - title: "PWM Lmit(36)"
+          titlekr: "PWM Limit(36)"
+          url: /dxl/mx/mx-64-2/#pwm-limit36
+        - title: "Current Lmit(38)"
+          titlekr: "Current Limit(38)"
+          url: /dxl/mx/mx-64-2/#current-limit38
+        - title: "Acceleration Limit(40)"
+          titlekr: "Acceleration Limit(40)"
+          url: /dxl/mx/mx-64-2/#acceleration-limit40
+        - title: "Velocity Limit(44)"
+          titlekr: "Velocity Limit(44)"
+          url: /dxl/mx/mx-64-2/#velocity-limit44
+        - title: "Min/Max Position Limit(48, 52)"
+          titlekr: "Min/Max Position Limit(48, 52)"
+          url: /dxl/mx/mx-64-2/#minmax-position-limit48-52
+        - title: "Shutdown(63)"
+          titlekr: "Shutdown(63)"
+          url: /dxl/mx/mx-64-2/#shutdown63
+        - title: "Torque Enable(64)"
+          titlekr: "Torque Enable(64)"
+          url: /dxl/mx/mx-64-2/#torque-enable64
+        - title: "LED(65)"
+          titlekr: "LED(65)"
+          url: /dxl/mx/mx-64-2/#led65
+        - title: "Status Return Level(68)"
+          titlekr: "Status Return Level(68)"
+          url: /dxl/mx/mx-64-2/#status-return-level68
+        - title: "Registered Instruction(69)"
+          titlekr: "Registered Instruction(69)"
+          url: /dxl/mx/mx-64-2/#registered-instruction69
+        - title: "Hardware Error Status(70)"
+          titlekr: "Hardware Error Status(70)"
+          url: /dxl/mx/mx-64-2/#hardware-error-status70
+        - title: "Velocity PI Gain(76, 78)"
+          titlekr: "Velocity PI Gain(76, 78)"
+          url: /dxl/mx/mx-64-2/#velocity-pi-gain76-78
+        - title: "Position PID Gain(80, 82, 84)"
+          titlekr: "Position PID Gain(80, 82, 84)"
+          url: /dxl/mx/mx-64-2/#position-pid-gain80-82-84
+        - title: "Feedforward 1st/2nd Gains(88, 90)"
+          titlekr: "Feedforward 1st/2nd Gains(88, 90)"
+          url: /dxl/mx/mx-64-2/#feedforward-1st2nd-gains88-90
+        - title: "BUS Watchdog(98)"
+          titlekr: "BUS Watchdog(98)"
+          url: /dxl/mx/mx-64-2/#bus-watchdog98
+        - title: "Goal PWM(100)"
+          titlekr: "Goal PWM(100)"
+          url: /dxl/mx/mx-64-2/#goal-pwm100
+        - title: "Goal Current(102)"
+          titlekr: "Goal Current(102)"
+          url: /dxl/mx/mx-64-2/#goal-current102
+        - title: "Goal Velocity(104)"
+          titlekr: "Goal Velocity(104)"
+          url: /dxl/mx/mx-64-2/#goal-velocity104
+        - title: "Profile Acceleration(108)"
+          titlekr: "Profile Acceleration(108)"
+          url: /dxl/mx/mx-64-2/#profile-acceleration108
+        - title: "Profile Velocity(112)"
+          titlekr: "Profile Velocity(112)"
+          url: /dxl/mx/mx-64-2/#profile-velocity112
+        - title: "Goal Position(116)"
+          titlekr: "Goal Position(116)"
+          url: /dxl/mx/mx-64-2/#goal-position116
+        - title: "Realtime Tick(120)"
+          titlekr: "Realtime Tick(120)"
+          url: /dxl/mx/mx-64-2/#realtime-tick120
+        - title: "Moving(122)"
+          titlekr: "Moving(122)"
+          url: /dxl/mx/mx-64-2/#moving122
+        - title: "Moving Status(123)"
+          titlekr: "Moving Status(123)"
+          url: /dxl/mx/mx-64-2/#moving-status123
+        - title: "Present PWM(124)"
+          titlekr: "Present PWM(124)"
+          url: /dxl/mx/mx-64-2/#present-pwm124
+        - title: "Present Load(126)"
+          titlekr: "Present Load(126)"
+          url: /dxl/mx/mx-64-2/#present-load126
+        - title: "Present Velocity(128)"
+          titlekr: "Present Velocity(128)"
+          url: /dxl/mx/mx-64-2/#present-velocity128
+        - title: "Present Position(132)"
+          titlekr: "Present Position(132)"
+          url: /dxl/mx/mx-64-2/#present-position132
+        - title: "Velocity Trajectory(136)"
+          titlekr: "Velocity Trajectory(136)"
+          url: /dxl/mx/mx-64-2/#velocity-trajectory136
+        - title: "Position Trajectory(140)"
+          titlekr: "Position Trajectory(140)"
+          url: /dxl/mx/mx-64-2/#position-trajectory140
+        - title: "Present Input Voltage(144)"
+          titlekr: "Present Input Voltage(144)"
+          url: /dxl/mx/mx-64-2/#present-input-voltage144
+        - title: "Present Temperature(146)"
+          titlekr: "Present Temperature(146)"
+          url: /dxl/mx/mx-64-2/#present-temperature146
+        - title: "Indirect Address"
+          titlekr: "Indirect Address"
+          url: /dxl/mx/mx-64-2/#indirect-address
+        - title: "Indirect Data"
+          titlekr: "Indirect Data"
+          url: /dxl/mx/mx-64-2/#indirect-data
   - title: "How to Assemble"
     titlekr: "조립 예시"
     url: /dxl/mx/mx-64-2/#how-to-assemble
@@ -3091,6 +3372,10 @@ mx-64-2:
         titlekr: "커넥터 정보"
         url: /dxl/mx/mx-64-2/#connector-information
         urlkr: /dxl/mx/mx-64-2/#커넥터-정보
+      - title: "Videos"
+        titlekr: "동영상"
+        url: /dxl/mx/mx-64-2/#videos
+        urlkr: /dxl/mx/mx-64-2/#동영상
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/mx/mx-64-2/#drawings
@@ -3149,6 +3434,148 @@ mx-106-2:
         titlekr: "컨트롤 테이블 설명"
         url: /dxl/mx/mx-106-2/#control-table-description
         urlkr: /dxl/mx/mx-106-2/#컨트롤-테이블-설명
+        children:
+        - title: "Model Number(0)"
+          titlekr: "Model Number(0)"
+          url: /dxl/mx/mx-106-2/#model-number0
+        - title: "Firmware Version(6)"
+          titlekr: "Firmware Version(6)"
+          url: /dxl/mx/mx-106-2/#firmware-version6
+        - title: "ID(7)"
+          titlekr: "ID(7)"
+          url: /dxl/mx/mx-106-2/#id7
+        - title: "Baud Rate(8)"
+          titlekr: "Baud Rate(8)"
+          url: /dxl/mx/mx-106-2/#baud-rate8
+        - title: "Return Delay Time(9)"
+          titlekr: "Return Delay Time(9)"
+          url: /dxl/mx/mx-106-2/#return-delay-time9
+        - title: "Drive Mode(10)"
+          titlekr: "Drive Mode(10)"
+          url: /dxl/mx/mx-106-2/#drive-mode10
+        - title: "Operating Mode(11)"
+          titlekr: "Operating Mode(11)"
+          url: /dxl/mx/mx-106-2/#operating-mode11
+        - title: "Secondary(Shadow) ID(12)"
+          titlekr: "Secondary(Shadow) ID(12)"
+          url: /dxl/mx/mx-106-2/#secondaryshadow-id12
+        - title: "Protocol Version(13)"
+          titlekr: "Protocol Version(13)"
+          url: /dxl/mx/mx-106-2/#protocol-version13
+        - title: "Homing Offset(20)"
+          titlekr: "Homing Offset(20)"
+          url: /dxl/mx/mx-106-2/#homing-offset20
+        - title: "Moving Threshold(24)"
+          titlekr: "Moving Threshold(24)"
+          url: /dxl/mx/mx-106-2/#moving-threshold24
+        - title: "Temperature Limit(31)"
+          titlekr: "Temperature Limit(31)"
+          url: /dxl/mx/mx-106-2/#temperature-limit31
+        - title: "Min/Max Voltage Limit(32,34)"
+          titlekr: "Min/Max Voltage Limit(32,34)"
+          url: /dxl/mx/mx-106-2/#minmax-voltage-limit32-34
+        - title: "PWM Lmit(36)"
+          titlekr: "PWM Limit(36)"
+          url: /dxl/mx/mx-106-2/#pwm-limit36
+        - title: "Current Lmit(38)"
+          titlekr: "Current Limit(38)"
+          url: /dxl/mx/mx-106-2/#current-limit38
+        - title: "Acceleration Limit(40)"
+          titlekr: "Acceleration Limit(40)"
+          url: /dxl/mx/mx-106-2/#acceleration-limit40
+        - title: "Velocity Limit(44)"
+          titlekr: "Velocity Limit(44)"
+          url: /dxl/mx/mx-106-2/#velocity-limit44
+        - title: "Min/Max Position Limit(48, 52)"
+          titlekr: "Min/Max Position Limit(48, 52)"
+          url: /dxl/mx/mx-106-2/#minmax-position-limit48-52
+        - title: "Shutdown(63)"
+          titlekr: "Shutdown(63)"
+          url: /dxl/mx/mx-106-2/#shutdown63
+        - title: "Torque Enable(64)"
+          titlekr: "Torque Enable(64)"
+          url: /dxl/mx/mx-106-2/#torque-enable64
+        - title: "LED(65)"
+          titlekr: "LED(65)"
+          url: /dxl/mx/mx-106-2/#led65
+        - title: "Status Return Level(68)"
+          titlekr: "Status Return Level(68)"
+          url: /dxl/mx/mx-106-2/#status-return-level68
+        - title: "Registered Instruction(69)"
+          titlekr: "Registered Instruction(69)"
+          url: /dxl/mx/mx-106-2/#registered-instruction69
+        - title: "Hardware Error Status(70)"
+          titlekr: "Hardware Error Status(70)"
+          url: /dxl/mx/mx-106-2/#hardware-error-status70
+        - title: "Velocity PI Gain(76, 78)"
+          titlekr: "Velocity PI Gain(76, 78)"
+          url: /dxl/mx/mx-106-2/#velocity-pi-gain76-78
+        - title: "Position PID Gain(80, 82, 84)"
+          titlekr: "Position PID Gain(80, 82, 84)"
+          url: /dxl/mx/mx-106-2/#position-pid-gain80-82-84
+        - title: "Feedforward 1st/2nd Gains(88, 90)"
+          titlekr: "Feedforward 1st/2nd Gains(88, 90)"
+          url: /dxl/mx/mx-106-2/#feedforward-1st2nd-gains88-90
+        - title: "BUS Watchdog(98)"
+          titlekr: "BUS Watchdog(98)"
+          url: /dxl/mx/mx-106-2/#bus-watchdog98
+        - title: "Goal PWM(100)"
+          titlekr: "Goal PWM(100)"
+          url: /dxl/mx/mx-106-2/#goal-pwm100
+        - title: "Goal Current(102)"
+          titlekr: "Goal Current(102)"
+          url: /dxl/mx/mx-106-2/#goal-current102
+        - title: "Goal Velocity(104)"
+          titlekr: "Goal Velocity(104)"
+          url: /dxl/mx/mx-106-2/#goal-velocity104
+        - title: "Profile Acceleration(108)"
+          titlekr: "Profile Acceleration(108)"
+          url: /dxl/mx/mx-106-2/#profile-acceleration108
+        - title: "Profile Velocity(112)"
+          titlekr: "Profile Velocity(112)"
+          url: /dxl/mx/mx-106-2/#profile-velocity112
+        - title: "Goal Position(116)"
+          titlekr: "Goal Position(116)"
+          url: /dxl/mx/mx-106-2/#goal-position116
+        - title: "Realtime Tick(120)"
+          titlekr: "Realtime Tick(120)"
+          url: /dxl/mx/mx-106-2/#realtime-tick120
+        - title: "Moving(122)"
+          titlekr: "Moving(122)"
+          url: /dxl/mx/mx-106-2/#moving122
+        - title: "Moving Status(123)"
+          titlekr: "Moving Status(123)"
+          url: /dxl/mx/mx-106-2/#moving-status123
+        - title: "Present PWM(124)"
+          titlekr: "Present PWM(124)"
+          url: /dxl/mx/mx-106-2/#present-pwm124
+        - title: "Present Load(126)"
+          titlekr: "Present Load(126)"
+          url: /dxl/mx/mx-106-2/#present-load126
+        - title: "Present Velocity(128)"
+          titlekr: "Present Velocity(128)"
+          url: /dxl/mx/mx-106-2/#present-velocity128
+        - title: "Present Position(132)"
+          titlekr: "Present Position(132)"
+          url: /dxl/mx/mx-106-2/#present-position132
+        - title: "Velocity Trajectory(136)"
+          titlekr: "Velocity Trajectory(136)"
+          url: /dxl/mx/mx-106-2/#velocity-trajectory136
+        - title: "Position Trajectory(140)"
+          titlekr: "Position Trajectory(140)"
+          url: /dxl/mx/mx-106-2/#position-trajectory140
+        - title: "Present Input Voltage(144)"
+          titlekr: "Present Input Voltage(144)"
+          url: /dxl/mx/mx-106-2/#present-input-voltage144
+        - title: "Present Temperature(146)"
+          titlekr: "Present Temperature(146)"
+          url: /dxl/mx/mx-106-2/#present-temperature146
+        - title: "Indirect Address"
+          titlekr: "Indirect Address"
+          url: /dxl/mx/mx-106-2/#indirect-address
+        - title: "Indirect Data"
+          titlekr: "Indirect Data"
+          url: /dxl/mx/mx-106-2/#indirect-data
   - title: "How to Assemble"
     titlekr: "조립 예시"
     url: /dxl/mx/mx-106-2/#how-to-assemble
@@ -3229,6 +3656,148 @@ xh430-v210:
         titlekr: "컨트롤 테이블 설명"
         url: /dxl/x/xh430-v210/#control-table-description
         urlkr: /dxl/x/xh430-v210/#컨트롤-테이블-설명
+        children:
+        - title: "Model Number(0)"
+          titlekr: "Model Number(0)"
+          url: /dxl/x/xh430-v210/#model-number0
+        - title: "Firmware Version(6)"
+          titlekr: "Firmware Version(6)"
+          url: /dxl/x/xh430-v210/#firmware-version6
+        - title: "ID(7)"
+          titlekr: "ID(7)"
+          url: /dxl/x/xh430-v210/#id7
+        - title: "Baud Rate(8)"
+          titlekr: "Baud Rate(8)"
+          url: /dxl/x/xh430-v210/#baud-rate8
+        - title: "Return Delay Time(9)"
+          titlekr: "Return Delay Time(9)"
+          url: /dxl/x/xh430-v210/#return-delay-time9
+        - title: "Drive Mode(10)"
+          titlekr: "Drive Mode(10)"
+          url: /dxl/x/xh430-v210/#drive-mode10
+        - title: "Operating Mode(11)"
+          titlekr: "Operating Mode(11)"
+          url: /dxl/x/xh430-v210/#operating-mode11
+        - title: "Secondary(Shadow) ID(12)"
+          titlekr: "Secondary(Shadow) ID(12)"
+          url: /dxl/x/xh430-v210/#secondaryshadow-id12
+        - title: "Protocol Version(13)"
+          titlekr: "Protocol Version(13)"
+          url: /dxl/x/xh430-v210/#protocol-version13
+        - title: "Homing Offset(20)"
+          titlekr: "Homing Offset(20)"
+          url: /dxl/x/xh430-v210/#homing-offset20
+        - title: "Moving Threshold(24)"
+          titlekr: "Moving Threshold(24)"
+          url: /dxl/x/xh430-v210/#moving-threshold24
+        - title: "Temperature Limit(31)"
+          titlekr: "Temperature Limit(31)"
+          url: /dxl/x/xh430-v210/#temperature-limit31
+        - title: "Min/Max Voltage Limit(32,34)"
+          titlekr: "Min/Max Voltage Limit(32,34)"
+          url: /dxl/x/xh430-v210/#minmax-voltage-limit32-34
+        - title: "PWM Lmit(36)"
+          titlekr: "PWM Limit(36)"
+          url: /dxl/x/xh430-v210/#pwm-limit36
+        - title: "Current Lmit(38)"
+          titlekr: "Current Limit(38)"
+          url: /dxl/x/xh430-v210/#current-limit38
+        - title: "Acceleration Limit(40)"
+          titlekr: "Acceleration Limit(40)"
+          url: /dxl/x/xh430-v210/#acceleration-limit40
+        - title: "Velocity Limit(44)"
+          titlekr: "Velocity Limit(44)"
+          url: /dxl/x/xh430-v210/#velocity-limit44
+        - title: "Min/Max Position Limit(48, 52)"
+          titlekr: "Min/Max Position Limit(48, 52)"
+          url: /dxl/x/xh430-v210/#minmax-position-limit48-52
+        - title: "Shutdown(63)"
+          titlekr: "Shutdown(63)"
+          url: /dxl/x/xh430-v210/#shutdown63
+        - title: "Torque Enable(64)"
+          titlekr: "Torque Enable(64)"
+          url: /dxl/x/xh430-v210/#torque-enable64
+        - title: "LED(65)"
+          titlekr: "LED(65)"
+          url: /dxl/x/xh430-v210/#led65
+        - title: "Status Return Level(68)"
+          titlekr: "Status Return Level(68)"
+          url: /dxl/x/xh430-v210/#status-return-level68
+        - title: "Registered Instruction(69)"
+          titlekr: "Registered Instruction(69)"
+          url: /dxl/x/xh430-v210/#registered-instruction69
+        - title: "Hardware Error Status(70)"
+          titlekr: "Hardware Error Status(70)"
+          url: /dxl/x/xh430-v210/#hardware-error-status70
+        - title: "Velocity PI Gain(76, 78)"
+          titlekr: "Velocity PI Gain(76, 78)"
+          url: /dxl/x/xh430-v210/#velocity-pi-gain76-78
+        - title: "Position PID Gain(80, 82, 84)"
+          titlekr: "Position PID Gain(80, 82, 84)"
+          url: /dxl/x/xh430-v210/#position-pid-gain80-82-84
+        - title: "Feedforward 1st/2nd Gains(88, 90)"
+          titlekr: "Feedforward 1st/2nd Gains(88, 90)"
+          url: /dxl/x/xh430-v210/#feedforward-1st2nd-gains88-90
+        - title: "BUS Watchdog(98)"
+          titlekr: "BUS Watchdog(98)"
+          url: /dxl/x/xh430-v210/#bus-watchdog98
+        - title: "Goal PWM(100)"
+          titlekr: "Goal PWM(100)"
+          url: /dxl/x/xh430-v210/#goal-pwm100
+        - title: "Goal Current(102)"
+          titlekr: "Goal Current(102)"
+          url: /dxl/x/xh430-v210/#goal-current102
+        - title: "Goal Velocity(104)"
+          titlekr: "Goal Velocity(104)"
+          url: /dxl/x/xh430-v210/#goal-velocity104
+        - title: "Profile Acceleration(108)"
+          titlekr: "Profile Acceleration(108)"
+          url: /dxl/x/xh430-v210/#profile-acceleration108
+        - title: "Profile Velocity(112)"
+          titlekr: "Profile Velocity(112)"
+          url: /dxl/x/xh430-v210/#profile-velocity112
+        - title: "Goal Position(116)"
+          titlekr: "Goal Position(116)"
+          url: /dxl/x/xh430-v210/#goal-position116
+        - title: "Realtime Tick(120)"
+          titlekr: "Realtime Tick(120)"
+          url: /dxl/x/xh430-v210/#realtime-tick120
+        - title: "Moving(122)"
+          titlekr: "Moving(122)"
+          url: /dxl/x/xh430-v210/#moving122
+        - title: "Moving Status(123)"
+          titlekr: "Moving Status(123)"
+          url: /dxl/x/xh430-v210/#moving-status123
+        - title: "Present PWM(124)"
+          titlekr: "Present PWM(124)"
+          url: /dxl/x/xh430-v210/#present-pwm124
+        - title: "Present Current(126)"
+          titlekr: "Present Current(126)"
+          url: /dxl/x/xh430-v210/#present-current126
+        - title: "Present Velocity(128)"
+          titlekr: "Present Velocity(128)"
+          url: /dxl/x/xh430-v210/#present-velocity128
+        - title: "Present Position(132)"
+          titlekr: "Present Position(132)"
+          url: /dxl/x/xh430-v210/#present-position132
+        - title: "Velocity Trajectory(136)"
+          titlekr: "Velocity Trajectory(136)"
+          url: /dxl/x/xh430-v210/#velocity-trajectory136
+        - title: "Position Trajectory(140)"
+          titlekr: "Position Trajectory(140)"
+          url: /dxl/x/xh430-v210/#position-trajectory140
+        - title: "Present Input Voltage(144)"
+          titlekr: "Present Input Voltage(144)"
+          url: /dxl/x/xh430-v210/#present-input-voltage144
+        - title: "Present Temperature(146)"
+          titlekr: "Present Temperature(146)"
+          url: /dxl/x/xh430-v210/#present-temperature146
+        - title: "Indirect Address"
+          titlekr: "Indirect Address"
+          url: /dxl/x/xh430-v210/#indirect-address
+        - title: "Indirect Data"
+          titlekr: "Indirect Data"
+          url: /dxl/x/xh430-v210/#indirect-data
   - title: "How to Assemble"
     titlekr: "조립 예시"
     url: /dxl/x/xh430-v210/#how-to-assemble
@@ -3318,6 +3887,148 @@ xh430-v350:
         titlekr: "컨트롤 테이블 설명"
         url: /dxl/x/xh430-v350/#control-table-description
         urlkr: /dxl/x/xh430-v350/#컨트롤-테이블-설명
+        children:
+        - title: "Model Number(0)"
+          titlekr: "Model Number(0)"
+          url: /dxl/x/xh430-v350/#model-number0
+        - title: "Firmware Version(6)"
+          titlekr: "Firmware Version(6)"
+          url: /dxl/x/xh430-v350/#firmware-version6
+        - title: "ID(7)"
+          titlekr: "ID(7)"
+          url: /dxl/x/xh430-v350/#id7
+        - title: "Baud Rate(8)"
+          titlekr: "Baud Rate(8)"
+          url: /dxl/x/xh430-v350/#baud-rate8
+        - title: "Return Delay Time(9)"
+          titlekr: "Return Delay Time(9)"
+          url: /dxl/x/xh430-v350/#return-delay-time9
+        - title: "Drive Mode(10)"
+          titlekr: "Drive Mode(10)"
+          url: /dxl/x/xh430-v350/#drive-mode10
+        - title: "Operating Mode(11)"
+          titlekr: "Operating Mode(11)"
+          url: /dxl/x/xh430-v350/#operating-mode11
+        - title: "Secondary(Shadow) ID(12)"
+          titlekr: "Secondary(Shadow) ID(12)"
+          url: /dxl/x/xh430-v350/#secondaryshadow-id12
+        - title: "Protocol Version(13)"
+          titlekr: "Protocol Version(13)"
+          url: /dxl/x/xh430-v350/#protocol-version13
+        - title: "Homing Offset(20)"
+          titlekr: "Homing Offset(20)"
+          url: /dxl/x/xh430-v350/#homing-offset20
+        - title: "Moving Threshold(24)"
+          titlekr: "Moving Threshold(24)"
+          url: /dxl/x/xh430-v350/#moving-threshold24
+        - title: "Temperature Limit(31)"
+          titlekr: "Temperature Limit(31)"
+          url: /dxl/x/xh430-v350/#temperature-limit31
+        - title: "Min/Max Voltage Limit(32,34)"
+          titlekr: "Min/Max Voltage Limit(32,34)"
+          url: /dxl/x/xh430-v350/#minmax-voltage-limit32-34
+        - title: "PWM Lmit(36)"
+          titlekr: "PWM Limit(36)"
+          url: /dxl/x/xh430-v350/#pwm-limit36
+        - title: "Current Lmit(38)"
+          titlekr: "Current Limit(38)"
+          url: /dxl/x/xh430-v350/#current-limit38
+        - title: "Acceleration Limit(40)"
+          titlekr: "Acceleration Limit(40)"
+          url: /dxl/x/xh430-v350/#acceleration-limit40
+        - title: "Velocity Limit(44)"
+          titlekr: "Velocity Limit(44)"
+          url: /dxl/x/xh430-v350/#velocity-limit44
+        - title: "Min/Max Position Limit(48, 52)"
+          titlekr: "Min/Max Position Limit(48, 52)"
+          url: /dxl/x/xh430-v350/#minmax-position-limit48-52
+        - title: "Shutdown(63)"
+          titlekr: "Shutdown(63)"
+          url: /dxl/x/xh430-v350/#shutdown63
+        - title: "Torque Enable(64)"
+          titlekr: "Torque Enable(64)"
+          url: /dxl/x/xh430-v350/#torque-enable64
+        - title: "LED(65)"
+          titlekr: "LED(65)"
+          url: /dxl/x/xh430-v350/#led65
+        - title: "Status Return Level(68)"
+          titlekr: "Status Return Level(68)"
+          url: /dxl/x/xh430-v350/#status-return-level68
+        - title: "Registered Instruction(69)"
+          titlekr: "Registered Instruction(69)"
+          url: /dxl/x/xh430-v350/#registered-instruction69
+        - title: "Hardware Error Status(70)"
+          titlekr: "Hardware Error Status(70)"
+          url: /dxl/x/xh430-v350/#hardware-error-status70
+        - title: "Velocity PI Gain(76, 78)"
+          titlekr: "Velocity PI Gain(76, 78)"
+          url: /dxl/x/xh430-v350/#velocity-pi-gain76-78
+        - title: "Position PID Gain(80, 82, 84)"
+          titlekr: "Position PID Gain(80, 82, 84)"
+          url: /dxl/x/xh430-v350/#position-pid-gain80-82-84
+        - title: "Feedforward 1st/2nd Gains(88, 90)"
+          titlekr: "Feedforward 1st/2nd Gains(88, 90)"
+          url: /dxl/x/xh430-v350/#feedforward-1st2nd-gains88-90
+        - title: "BUS Watchdog(98)"
+          titlekr: "BUS Watchdog(98)"
+          url: /dxl/x/xh430-v350/#bus-watchdog98
+        - title: "Goal PWM(100)"
+          titlekr: "Goal PWM(100)"
+          url: /dxl/x/xh430-v350/#goal-pwm100
+        - title: "Goal Current(102)"
+          titlekr: "Goal Current(102)"
+          url: /dxl/x/xh430-v350/#goal-current102
+        - title: "Goal Velocity(104)"
+          titlekr: "Goal Velocity(104)"
+          url: /dxl/x/xh430-v350/#goal-velocity104
+        - title: "Profile Acceleration(108)"
+          titlekr: "Profile Acceleration(108)"
+          url: /dxl/x/xh430-v350/#profile-acceleration108
+        - title: "Profile Velocity(112)"
+          titlekr: "Profile Velocity(112)"
+          url: /dxl/x/xh430-v350/#profile-velocity112
+        - title: "Goal Position(116)"
+          titlekr: "Goal Position(116)"
+          url: /dxl/x/xh430-v350/#goal-position116
+        - title: "Realtime Tick(120)"
+          titlekr: "Realtime Tick(120)"
+          url: /dxl/x/xh430-v350/#realtime-tick120
+        - title: "Moving(122)"
+          titlekr: "Moving(122)"
+          url: /dxl/x/xh430-v350/#moving122
+        - title: "Moving Status(123)"
+          titlekr: "Moving Status(123)"
+          url: /dxl/x/xh430-v350/#moving-status123
+        - title: "Present PWM(124)"
+          titlekr: "Present PWM(124)"
+          url: /dxl/x/xh430-v350/#present-pwm124
+        - title: "Present Current(126)"
+          titlekr: "Present Current(126)"
+          url: /dxl/x/xh430-v350/#present-current126
+        - title: "Present Velocity(128)"
+          titlekr: "Present Velocity(128)"
+          url: /dxl/x/xh430-v350/#present-velocity128
+        - title: "Present Position(132)"
+          titlekr: "Present Position(132)"
+          url: /dxl/x/xh430-v350/#present-position132
+        - title: "Velocity Trajectory(136)"
+          titlekr: "Velocity Trajectory(136)"
+          url: /dxl/x/xh430-v350/#velocity-trajectory136
+        - title: "Position Trajectory(140)"
+          titlekr: "Position Trajectory(140)"
+          url: /dxl/x/xh430-v350/#position-trajectory140
+        - title: "Present Input Voltage(144)"
+          titlekr: "Present Input Voltage(144)"
+          url: /dxl/x/xh430-v350/#present-input-voltage144
+        - title: "Present Temperature(146)"
+          titlekr: "Present Temperature(146)"
+          url: /dxl/x/xh430-v350/#present-temperature146
+        - title: "Indirect Address"
+          titlekr: "Indirect Address"
+          url: /dxl/x/xh430-v350/#indirect-address
+        - title: "Indirect Data"
+          titlekr: "Indirect Data"
+          url: /dxl/x/xh430-v350/#indirect-data
   - title: "How to Assemble"
     titlekr: "조립 예시"
     url: /dxl/x/xh430-v350/#how-to-assemble
@@ -3407,6 +4118,148 @@ xh430-w210:
         titlekr: "컨트롤 테이블 설명"
         url: /dxl/x/xh430-w210/#control-table-description
         urlkr: /dxl/x/xh430-w210/#컨트롤-테이블-설명
+        children:
+        - title: "Model Number(0)"
+          titlekr: "Model Number(0)"
+          url: /dxl/x/xh430-w210/#model-number0
+        - title: "Firmware Version(6)"
+          titlekr: "Firmware Version(6)"
+          url: /dxl/x/xh430-w210/#firmware-version6
+        - title: "ID(7)"
+          titlekr: "ID(7)"
+          url: /dxl/x/xh430-w210/#id7
+        - title: "Baud Rate(8)"
+          titlekr: "Baud Rate(8)"
+          url: /dxl/x/xh430-w210/#baud-rate8
+        - title: "Return Delay Time(9)"
+          titlekr: "Return Delay Time(9)"
+          url: /dxl/x/xh430-w210/#return-delay-time9
+        - title: "Drive Mode(10)"
+          titlekr: "Drive Mode(10)"
+          url: /dxl/x/xh430-w210/#drive-mode10
+        - title: "Operating Mode(11)"
+          titlekr: "Operating Mode(11)"
+          url: /dxl/x/xh430-w210/#operating-mode11
+        - title: "Secondary(Shadow) ID(12)"
+          titlekr: "Secondary(Shadow) ID(12)"
+          url: /dxl/x/xh430-w210/#secondaryshadow-id12
+        - title: "Protocol Version(13)"
+          titlekr: "Protocol Version(13)"
+          url: /dxl/x/xh430-w210/#protocol-version13
+        - title: "Homing Offset(20)"
+          titlekr: "Homing Offset(20)"
+          url: /dxl/x/xh430-w210/#homing-offset20
+        - title: "Moving Threshold(24)"
+          titlekr: "Moving Threshold(24)"
+          url: /dxl/x/xh430-w210/#moving-threshold24
+        - title: "Temperature Limit(31)"
+          titlekr: "Temperature Limit(31)"
+          url: /dxl/x/xh430-w210/#temperature-limit31
+        - title: "Min/Max Voltage Limit(32,34)"
+          titlekr: "Min/Max Voltage Limit(32,34)"
+          url: /dxl/x/xh430-w210/#minmax-voltage-limit32-34
+        - title: "PWM Lmit(36)"
+          titlekr: "PWM Limit(36)"
+          url: /dxl/x/xh430-w210/#pwm-limit36
+        - title: "Current Lmit(38)"
+          titlekr: "Current Limit(38)"
+          url: /dxl/x/xh430-w210/#current-limit38
+        - title: "Acceleration Limit(40)"
+          titlekr: "Acceleration Limit(40)"
+          url: /dxl/x/xh430-w210/#acceleration-limit40
+        - title: "Velocity Limit(44)"
+          titlekr: "Velocity Limit(44)"
+          url: /dxl/x/xh430-w210/#velocity-limit44
+        - title: "Min/Max Position Limit(48, 52)"
+          titlekr: "Min/Max Position Limit(48, 52)"
+          url: /dxl/x/xh430-w210/#minmax-position-limit48-52
+        - title: "Shutdown(63)"
+          titlekr: "Shutdown(63)"
+          url: /dxl/x/xh430-w210/#shutdown63
+        - title: "Torque Enable(64)"
+          titlekr: "Torque Enable(64)"
+          url: /dxl/x/xh430-w210/#torque-enable64
+        - title: "LED(65)"
+          titlekr: "LED(65)"
+          url: /dxl/x/xh430-w210/#led65
+        - title: "Status Return Level(68)"
+          titlekr: "Status Return Level(68)"
+          url: /dxl/x/xh430-w210/#status-return-level68
+        - title: "Registered Instruction(69)"
+          titlekr: "Registered Instruction(69)"
+          url: /dxl/x/xh430-w210/#registered-instruction69
+        - title: "Hardware Error Status(70)"
+          titlekr: "Hardware Error Status(70)"
+          url: /dxl/x/xh430-w210/#hardware-error-status70
+        - title: "Velocity PI Gain(76, 78)"
+          titlekr: "Velocity PI Gain(76, 78)"
+          url: /dxl/x/xh430-w210/#velocity-pi-gain76-78
+        - title: "Position PID Gain(80, 82, 84)"
+          titlekr: "Position PID Gain(80, 82, 84)"
+          url: /dxl/x/xh430-w210/#position-pid-gain80-82-84
+        - title: "Feedforward 1st/2nd Gains(88, 90)"
+          titlekr: "Feedforward 1st/2nd Gains(88, 90)"
+          url: /dxl/x/xh430-w210/#feedforward-1st2nd-gains88-90
+        - title: "BUS Watchdog(98)"
+          titlekr: "BUS Watchdog(98)"
+          url: /dxl/x/xh430-w210/#bus-watchdog98
+        - title: "Goal PWM(100)"
+          titlekr: "Goal PWM(100)"
+          url: /dxl/x/xh430-w210/#goal-pwm100
+        - title: "Goal Current(102)"
+          titlekr: "Goal Current(102)"
+          url: /dxl/x/xh430-w210/#goal-current102
+        - title: "Goal Velocity(104)"
+          titlekr: "Goal Velocity(104)"
+          url: /dxl/x/xh430-w210/#goal-velocity104
+        - title: "Profile Acceleration(108)"
+          titlekr: "Profile Acceleration(108)"
+          url: /dxl/x/xh430-w210/#profile-acceleration108
+        - title: "Profile Velocity(112)"
+          titlekr: "Profile Velocity(112)"
+          url: /dxl/x/xh430-w210/#profile-velocity112
+        - title: "Goal Position(116)"
+          titlekr: "Goal Position(116)"
+          url: /dxl/x/xh430-w210/#goal-position116
+        - title: "Realtime Tick(120)"
+          titlekr: "Realtime Tick(120)"
+          url: /dxl/x/xh430-w210/#realtime-tick120
+        - title: "Moving(122)"
+          titlekr: "Moving(122)"
+          url: /dxl/x/xh430-w210/#moving122
+        - title: "Moving Status(123)"
+          titlekr: "Moving Status(123)"
+          url: /dxl/x/xh430-w210/#moving-status123
+        - title: "Present PWM(124)"
+          titlekr: "Present PWM(124)"
+          url: /dxl/x/xh430-w210/#present-pwm124
+        - title: "Present Current(126)"
+          titlekr: "Present Current(126)"
+          url: /dxl/x/xh430-w210/#present-current126
+        - title: "Present Velocity(128)"
+          titlekr: "Present Velocity(128)"
+          url: /dxl/x/xh430-w210/#present-velocity128
+        - title: "Present Position(132)"
+          titlekr: "Present Position(132)"
+          url: /dxl/x/xh430-w210/#present-position132
+        - title: "Velocity Trajectory(136)"
+          titlekr: "Velocity Trajectory(136)"
+          url: /dxl/x/xh430-w210/#velocity-trajectory136
+        - title: "Position Trajectory(140)"
+          titlekr: "Position Trajectory(140)"
+          url: /dxl/x/xh430-w210/#position-trajectory140
+        - title: "Present Input Voltage(144)"
+          titlekr: "Present Input Voltage(144)"
+          url: /dxl/x/xh430-w210/#present-input-voltage144
+        - title: "Present Temperature(146)"
+          titlekr: "Present Temperature(146)"
+          url: /dxl/x/xh430-w210/#present-temperature146
+        - title: "Indirect Address"
+          titlekr: "Indirect Address"
+          url: /dxl/x/xh430-w210/#indirect-address
+        - title: "Indirect Data"
+          titlekr: "Indirect Data"
+          url: /dxl/x/xh430-w210/#indirect-data
   - title: "How to Assemble"
     titlekr: "조립 예시"
     url: /dxl/x/xh430-w210/#how-to-assemble
@@ -3496,6 +4349,148 @@ xh430-w350:
         titlekr: "컨트롤 테이블 설명"
         url: /dxl/x/xh430-w350/#control-table-description
         urlkr: /dxl/x/xh430-w350/#컨트롤-테이블-설명
+        children:
+        - title: "Model Number(0)"
+          titlekr: "Model Number(0)"
+          url: /dxl/x/xh430-w350/#model-number0
+        - title: "Firmware Version(6)"
+          titlekr: "Firmware Version(6)"
+          url: /dxl/x/xh430-w350/#firmware-version6
+        - title: "ID(7)"
+          titlekr: "ID(7)"
+          url: /dxl/x/xh430-w350/#id7
+        - title: "Baud Rate(8)"
+          titlekr: "Baud Rate(8)"
+          url: /dxl/x/xh430-w350/#baud-rate8
+        - title: "Return Delay Time(9)"
+          titlekr: "Return Delay Time(9)"
+          url: /dxl/x/xh430-w350/#return-delay-time9
+        - title: "Drive Mode(10)"
+          titlekr: "Drive Mode(10)"
+          url: /dxl/x/xh430-w350/#drive-mode10
+        - title: "Operating Mode(11)"
+          titlekr: "Operating Mode(11)"
+          url: /dxl/x/xh430-w350/#operating-mode11
+        - title: "Secondary(Shadow) ID(12)"
+          titlekr: "Secondary(Shadow) ID(12)"
+          url: /dxl/x/xh430-w350/#secondaryshadow-id12
+        - title: "Protocol Version(13)"
+          titlekr: "Protocol Version(13)"
+          url: /dxl/x/xh430-w350/#protocol-version13
+        - title: "Homing Offset(20)"
+          titlekr: "Homing Offset(20)"
+          url: /dxl/x/xh430-w350/#homing-offset20
+        - title: "Moving Threshold(24)"
+          titlekr: "Moving Threshold(24)"
+          url: /dxl/x/xh430-w350/#moving-threshold24
+        - title: "Temperature Limit(31)"
+          titlekr: "Temperature Limit(31)"
+          url: /dxl/x/xh430-w350/#temperature-limit31
+        - title: "Min/Max Voltage Limit(32,34)"
+          titlekr: "Min/Max Voltage Limit(32,34)"
+          url: /dxl/x/xh430-w350/#minmax-voltage-limit32-34
+        - title: "PWM Lmit(36)"
+          titlekr: "PWM Limit(36)"
+          url: /dxl/x/xh430-w350/#pwm-limit36
+        - title: "Current Lmit(38)"
+          titlekr: "Current Limit(38)"
+          url: /dxl/x/xh430-w350/#current-limit38
+        - title: "Acceleration Limit(40)"
+          titlekr: "Acceleration Limit(40)"
+          url: /dxl/x/xh430-w350/#acceleration-limit40
+        - title: "Velocity Limit(44)"
+          titlekr: "Velocity Limit(44)"
+          url: /dxl/x/xh430-w350/#velocity-limit44
+        - title: "Min/Max Position Limit(48, 52)"
+          titlekr: "Min/Max Position Limit(48, 52)"
+          url: /dxl/x/xh430-w350/#minmax-position-limit48-52
+        - title: "Shutdown(63)"
+          titlekr: "Shutdown(63)"
+          url: /dxl/x/xh430-w350/#shutdown63
+        - title: "Torque Enable(64)"
+          titlekr: "Torque Enable(64)"
+          url: /dxl/x/xh430-w350/#torque-enable64
+        - title: "LED(65)"
+          titlekr: "LED(65)"
+          url: /dxl/x/xh430-w350/#led65
+        - title: "Status Return Level(68)"
+          titlekr: "Status Return Level(68)"
+          url: /dxl/x/xh430-w350/#status-return-level68
+        - title: "Registered Instruction(69)"
+          titlekr: "Registered Instruction(69)"
+          url: /dxl/x/xh430-w350/#registered-instruction69
+        - title: "Hardware Error Status(70)"
+          titlekr: "Hardware Error Status(70)"
+          url: /dxl/x/xh430-w350/#hardware-error-status70
+        - title: "Velocity PI Gain(76, 78)"
+          titlekr: "Velocity PI Gain(76, 78)"
+          url: /dxl/x/xh430-w350/#velocity-pi-gain76-78
+        - title: "Position PID Gain(80, 82, 84)"
+          titlekr: "Position PID Gain(80, 82, 84)"
+          url: /dxl/x/xh430-w350/#position-pid-gain80-82-84
+        - title: "Feedforward 1st/2nd Gains(88, 90)"
+          titlekr: "Feedforward 1st/2nd Gains(88, 90)"
+          url: /dxl/x/xh430-w350/#feedforward-1st2nd-gains88-90
+        - title: "BUS Watchdog(98)"
+          titlekr: "BUS Watchdog(98)"
+          url: /dxl/x/xh430-w350/#bus-watchdog98
+        - title: "Goal PWM(100)"
+          titlekr: "Goal PWM(100)"
+          url: /dxl/x/xh430-w350/#goal-pwm100
+        - title: "Goal Current(102)"
+          titlekr: "Goal Current(102)"
+          url: /dxl/x/xh430-w350/#goal-current102
+        - title: "Goal Velocity(104)"
+          titlekr: "Goal Velocity(104)"
+          url: /dxl/x/xh430-w350/#goal-velocity104
+        - title: "Profile Acceleration(108)"
+          titlekr: "Profile Acceleration(108)"
+          url: /dxl/x/xh430-w350/#profile-acceleration108
+        - title: "Profile Velocity(112)"
+          titlekr: "Profile Velocity(112)"
+          url: /dxl/x/xh430-w350/#profile-velocity112
+        - title: "Goal Position(116)"
+          titlekr: "Goal Position(116)"
+          url: /dxl/x/xh430-w350/#goal-position116
+        - title: "Realtime Tick(120)"
+          titlekr: "Realtime Tick(120)"
+          url: /dxl/x/xh430-w350/#realtime-tick120
+        - title: "Moving(122)"
+          titlekr: "Moving(122)"
+          url: /dxl/x/xh430-w350/#moving122
+        - title: "Moving Status(123)"
+          titlekr: "Moving Status(123)"
+          url: /dxl/x/xh430-w350/#moving-status123
+        - title: "Present PWM(124)"
+          titlekr: "Present PWM(124)"
+          url: /dxl/x/xh430-w350/#present-pwm124
+        - title: "Present Current(126)"
+          titlekr: "Present Current(126)"
+          url: /dxl/x/xh430-w350/#present-current126
+        - title: "Present Velocity(128)"
+          titlekr: "Present Velocity(128)"
+          url: /dxl/x/xh430-w350/#present-velocity128
+        - title: "Present Position(132)"
+          titlekr: "Present Position(132)"
+          url: /dxl/x/xh430-w350/#present-position132
+        - title: "Velocity Trajectory(136)"
+          titlekr: "Velocity Trajectory(136)"
+          url: /dxl/x/xh430-w350/#velocity-trajectory136
+        - title: "Position Trajectory(140)"
+          titlekr: "Position Trajectory(140)"
+          url: /dxl/x/xh430-w350/#position-trajectory140
+        - title: "Present Input Voltage(144)"
+          titlekr: "Present Input Voltage(144)"
+          url: /dxl/x/xh430-w350/#present-input-voltage144
+        - title: "Present Temperature(146)"
+          titlekr: "Present Temperature(146)"
+          url: /dxl/x/xh430-w350/#present-temperature146
+        - title: "Indirect Address"
+          titlekr: "Indirect Address"
+          url: /dxl/x/xh430-w350/#indirect-address
+        - title: "Indirect Data"
+          titlekr: "Indirect Data"
+          url: /dxl/x/xh430-w350/#indirect-data
   - title: "How to Assemble"
     titlekr: "조립 예시"
     url: /dxl/x/xh430-w350/#how-to-assemble
@@ -3728,6 +4723,148 @@ xm430-w210:
         titlekr: "컨트롤 테이블 설명"
         url: /dxl/x/xm430-w210/#control-table-description
         urlkr: /dxl/x/xm430-w210/#컨트롤-테이블-설명
+        children:
+        - title: "Model Number(0)"
+          titlekr: "Model Number(0)"
+          url: /dxl/x/xm430-w210/#model-number0
+        - title: "Firmware Version(6)"
+          titlekr: "Firmware Version(6)"
+          url: /dxl/x/xm430-w210/#firmware-version6
+        - title: "ID(7)"
+          titlekr: "ID(7)"
+          url: /dxl/x/xm430-w210/#id7
+        - title: "Baud Rate(8)"
+          titlekr: "Baud Rate(8)"
+          url: /dxl/x/xm430-w210/#baud-rate8
+        - title: "Return Delay Time(9)"
+          titlekr: "Return Delay Time(9)"
+          url: /dxl/x/xm430-w210/#return-delay-time9
+        - title: "Drive Mode(10)"
+          titlekr: "Drive Mode(10)"
+          url: /dxl/x/xm430-w210/#drive-mode10
+        - title: "Operating Mode(11)"
+          titlekr: "Operating Mode(11)"
+          url: /dxl/x/xm430-w210/#operating-mode11
+        - title: "Secondary(Shadow) ID(12)"
+          titlekr: "Secondary(Shadow) ID(12)"
+          url: /dxl/x/xm430-w210/#secondaryshadow-id12
+        - title: "Protocol Version(13)"
+          titlekr: "Protocol Version(13)"
+          url: /dxl/x/xm430-w210/#protocol-version13
+        - title: "Homing Offset(20)"
+          titlekr: "Homing Offset(20)"
+          url: /dxl/x/xm430-w210/#homing-offset20
+        - title: "Moving Threshold(24)"
+          titlekr: "Moving Threshold(24)"
+          url: /dxl/x/xm430-w210/#moving-threshold24
+        - title: "Temperature Limit(31)"
+          titlekr: "Temperature Limit(31)"
+          url: /dxl/x/xm430-w210/#temperature-limit31
+        - title: "Min/Max Voltage Limit(32,34)"
+          titlekr: "Min/Max Voltage Limit(32,34)"
+          url: /dxl/x/xm430-w210/#minmax-voltage-limit32-34
+        - title: "PWM Lmit(36)"
+          titlekr: "PWM Limit(36)"
+          url: /dxl/x/xm430-w210/#pwm-limit36
+        - title: "Current Lmit(38)"
+          titlekr: "Current Limit(38)"
+          url: /dxl/x/xm430-w210/#current-limit38
+        - title: "Acceleration Limit(40)"
+          titlekr: "Acceleration Limit(40)"
+          url: /dxl/x/xm430-w210/#acceleration-limit40
+        - title: "Velocity Limit(44)"
+          titlekr: "Velocity Limit(44)"
+          url: /dxl/x/xm430-w210/#velocity-limit44
+        - title: "Min/Max Position Limit(48, 52)"
+          titlekr: "Min/Max Position Limit(48, 52)"
+          url: /dxl/x/xm430-w210/#minmax-position-limit48-52
+        - title: "Shutdown(63)"
+          titlekr: "Shutdown(63)"
+          url: /dxl/x/xm430-w210/#shutdown63
+        - title: "Torque Enable(64)"
+          titlekr: "Torque Enable(64)"
+          url: /dxl/x/xm430-w210/#torque-enable64
+        - title: "LED(65)"
+          titlekr: "LED(65)"
+          url: /dxl/x/xm430-w210/#led65
+        - title: "Status Return Level(68)"
+          titlekr: "Status Return Level(68)"
+          url: /dxl/x/xm430-w210/#status-return-level68
+        - title: "Registered Instruction(69)"
+          titlekr: "Registered Instruction(69)"
+          url: /dxl/x/xm430-w210/#registered-instruction69
+        - title: "Hardware Error Status(70)"
+          titlekr: "Hardware Error Status(70)"
+          url: /dxl/x/xm430-w210/#hardware-error-status70
+        - title: "Velocity PI Gain(76, 78)"
+          titlekr: "Velocity PI Gain(76, 78)"
+          url: /dxl/x/xm430-w210/#velocity-pi-gain76-78
+        - title: "Position PID Gain(80, 82, 84)"
+          titlekr: "Position PID Gain(80, 82, 84)"
+          url: /dxl/x/xm430-w210/#position-pid-gain80-82-84
+        - title: "Feedforward 1st/2nd Gains(88, 90)"
+          titlekr: "Feedforward 1st/2nd Gains(88, 90)"
+          url: /dxl/x/xm430-w210/#feedforward-1st2nd-gains88-90
+        - title: "BUS Watchdog(98)"
+          titlekr: "BUS Watchdog(98)"
+          url: /dxl/x/xm430-w210/#bus-watchdog98
+        - title: "Goal PWM(100)"
+          titlekr: "Goal PWM(100)"
+          url: /dxl/x/xm430-w210/#goal-pwm100
+        - title: "Goal Current(102)"
+          titlekr: "Goal Current(102)"
+          url: /dxl/x/xm430-w210/#goal-current102
+        - title: "Goal Velocity(104)"
+          titlekr: "Goal Velocity(104)"
+          url: /dxl/x/xm430-w210/#goal-velocity104
+        - title: "Profile Acceleration(108)"
+          titlekr: "Profile Acceleration(108)"
+          url: /dxl/x/xm430-w210/#profile-acceleration108
+        - title: "Profile Velocity(112)"
+          titlekr: "Profile Velocity(112)"
+          url: /dxl/x/xm430-w210/#profile-velocity112
+        - title: "Goal Position(116)"
+          titlekr: "Goal Position(116)"
+          url: /dxl/x/xm430-w210/#goal-position116
+        - title: "Realtime Tick(120)"
+          titlekr: "Realtime Tick(120)"
+          url: /dxl/x/xm430-w210/#realtime-tick120
+        - title: "Moving(122)"
+          titlekr: "Moving(122)"
+          url: /dxl/x/xm430-w210/#moving122
+        - title: "Moving Status(123)"
+          titlekr: "Moving Status(123)"
+          url: /dxl/x/xm430-w210/#moving-status123
+        - title: "Present PWM(124)"
+          titlekr: "Present PWM(124)"
+          url: /dxl/x/xm430-w210/#present-pwm124
+        - title: "Present Current(126)"
+          titlekr: "Present Current(126)"
+          url: /dxl/x/xm430-w210/#present-current126
+        - title: "Present Velocity(128)"
+          titlekr: "Present Velocity(128)"
+          url: /dxl/x/xm430-w210/#present-velocity128
+        - title: "Present Position(132)"
+          titlekr: "Present Position(132)"
+          url: /dxl/x/xm430-w210/#present-position132
+        - title: "Velocity Trajectory(136)"
+          titlekr: "Velocity Trajectory(136)"
+          url: /dxl/x/xm430-w210/#velocity-trajectory136
+        - title: "Position Trajectory(140)"
+          titlekr: "Position Trajectory(140)"
+          url: /dxl/x/xm430-w210/#position-trajectory140
+        - title: "Present Input Voltage(144)"
+          titlekr: "Present Input Voltage(144)"
+          url: /dxl/x/xm430-w210/#present-input-voltage144
+        - title: "Present Temperature(146)"
+          titlekr: "Present Temperature(146)"
+          url: /dxl/x/xm430-w210/#present-temperature146
+        - title: "Indirect Address"
+          titlekr: "Indirect Address"
+          url: /dxl/x/xm430-w210/#indirect-address
+        - title: "Indirect Data"
+          titlekr: "Indirect Data"
+          url: /dxl/x/xm430-w210/#indirect-data
   - title: "How to Assemble"
     titlekr: "조립 예시"
     url: /dxl/x/xm430-w210/#how-to-assemble
@@ -3817,6 +4954,148 @@ xm430-w350:
         titlekr: "컨트롤 테이블 설명"
         url: /dxl/x/xm430-w350/#control-table-description
         urlkr: /dxl/x/xm430-w350/#컨트롤-테이블-설명
+        children:
+        - title: "Model Number(0)"
+          titlekr: "Model Number(0)"
+          url: /dxl/x/xm430-w350/#model-number0
+        - title: "Firmware Version(6)"
+          titlekr: "Firmware Version(6)"
+          url: /dxl/x/xm430-w350/#firmware-version6
+        - title: "ID(7)"
+          titlekr: "ID(7)"
+          url: /dxl/x/xm430-w350/#id7
+        - title: "Baud Rate(8)"
+          titlekr: "Baud Rate(8)"
+          url: /dxl/x/xm430-w350/#baud-rate8
+        - title: "Return Delay Time(9)"
+          titlekr: "Return Delay Time(9)"
+          url: /dxl/x/xm430-w350/#return-delay-time9
+        - title: "Drive Mode(10)"
+          titlekr: "Drive Mode(10)"
+          url: /dxl/x/xm430-w350/#drive-mode10
+        - title: "Operating Mode(11)"
+          titlekr: "Operating Mode(11)"
+          url: /dxl/x/xm430-w350/#operating-mode11
+        - title: "Secondary(Shadow) ID(12)"
+          titlekr: "Secondary(Shadow) ID(12)"
+          url: /dxl/x/xm430-w350/#secondaryshadow-id12
+        - title: "Protocol Version(13)"
+          titlekr: "Protocol Version(13)"
+          url: /dxl/x/xm430-w350/#protocol-version13
+        - title: "Homing Offset(20)"
+          titlekr: "Homing Offset(20)"
+          url: /dxl/x/xm430-w350/#homing-offset20
+        - title: "Moving Threshold(24)"
+          titlekr: "Moving Threshold(24)"
+          url: /dxl/x/xm430-w350/#moving-threshold24
+        - title: "Temperature Limit(31)"
+          titlekr: "Temperature Limit(31)"
+          url: /dxl/x/xm430-w350/#temperature-limit31
+        - title: "Min/Max Voltage Limit(32,34)"
+          titlekr: "Min/Max Voltage Limit(32,34)"
+          url: /dxl/x/xm430-w350/#minmax-voltage-limit32-34
+        - title: "PWM Lmit(36)"
+          titlekr: "PWM Limit(36)"
+          url: /dxl/x/xm430-w350/#pwm-limit36
+        - title: "Current Lmit(38)"
+          titlekr: "Current Limit(38)"
+          url: /dxl/x/xm430-w350/#current-limit38
+        - title: "Acceleration Limit(40)"
+          titlekr: "Acceleration Limit(40)"
+          url: /dxl/x/xm430-w350/#acceleration-limit40
+        - title: "Velocity Limit(44)"
+          titlekr: "Velocity Limit(44)"
+          url: /dxl/x/xm430-w350/#velocity-limit44
+        - title: "Min/Max Position Limit(48, 52)"
+          titlekr: "Min/Max Position Limit(48, 52)"
+          url: /dxl/x/xm430-w350/#minmax-position-limit48-52
+        - title: "Shutdown(63)"
+          titlekr: "Shutdown(63)"
+          url: /dxl/x/xm430-w350/#shutdown63
+        - title: "Torque Enable(64)"
+          titlekr: "Torque Enable(64)"
+          url: /dxl/x/xm430-w350/#torque-enable64
+        - title: "LED(65)"
+          titlekr: "LED(65)"
+          url: /dxl/x/xm430-w350/#led65
+        - title: "Status Return Level(68)"
+          titlekr: "Status Return Level(68)"
+          url: /dxl/x/xm430-w350/#status-return-level68
+        - title: "Registered Instruction(69)"
+          titlekr: "Registered Instruction(69)"
+          url: /dxl/x/xm430-w350/#registered-instruction69
+        - title: "Hardware Error Status(70)"
+          titlekr: "Hardware Error Status(70)"
+          url: /dxl/x/xm430-w350/#hardware-error-status70
+        - title: "Velocity PI Gain(76, 78)"
+          titlekr: "Velocity PI Gain(76, 78)"
+          url: /dxl/x/xm430-w350/#velocity-pi-gain76-78
+        - title: "Position PID Gain(80, 82, 84)"
+          titlekr: "Position PID Gain(80, 82, 84)"
+          url: /dxl/x/xm430-w350/#position-pid-gain80-82-84
+        - title: "Feedforward 1st/2nd Gains(88, 90)"
+          titlekr: "Feedforward 1st/2nd Gains(88, 90)"
+          url: /dxl/x/xm430-w350/#feedforward-1st2nd-gains88-90
+        - title: "BUS Watchdog(98)"
+          titlekr: "BUS Watchdog(98)"
+          url: /dxl/x/xm430-w350/#bus-watchdog98
+        - title: "Goal PWM(100)"
+          titlekr: "Goal PWM(100)"
+          url: /dxl/x/xm430-w350/#goal-pwm100
+        - title: "Goal Current(102)"
+          titlekr: "Goal Current(102)"
+          url: /dxl/x/xm430-w350/#goal-current102
+        - title: "Goal Velocity(104)"
+          titlekr: "Goal Velocity(104)"
+          url: /dxl/x/xm430-w350/#goal-velocity104
+        - title: "Profile Acceleration(108)"
+          titlekr: "Profile Acceleration(108)"
+          url: /dxl/x/xm430-w350/#profile-acceleration108
+        - title: "Profile Velocity(112)"
+          titlekr: "Profile Velocity(112)"
+          url: /dxl/x/xm430-w350/#profile-velocity112
+        - title: "Goal Position(116)"
+          titlekr: "Goal Position(116)"
+          url: /dxl/x/xm430-w350/#goal-position116
+        - title: "Realtime Tick(120)"
+          titlekr: "Realtime Tick(120)"
+          url: /dxl/x/xm430-w350/#realtime-tick120
+        - title: "Moving(122)"
+          titlekr: "Moving(122)"
+          url: /dxl/x/xm430-w350/#moving122
+        - title: "Moving Status(123)"
+          titlekr: "Moving Status(123)"
+          url: /dxl/x/xm430-w350/#moving-status123
+        - title: "Present PWM(124)"
+          titlekr: "Present PWM(124)"
+          url: /dxl/x/xm430-w350/#present-pwm124
+        - title: "Present Current(126)"
+          titlekr: "Present Current(126)"
+          url: /dxl/x/xm430-w350/#present-current126
+        - title: "Present Velocity(128)"
+          titlekr: "Present Velocity(128)"
+          url: /dxl/x/xm430-w350/#present-velocity128
+        - title: "Present Position(132)"
+          titlekr: "Present Position(132)"
+          url: /dxl/x/xm430-w350/#present-position132
+        - title: "Velocity Trajectory(136)"
+          titlekr: "Velocity Trajectory(136)"
+          url: /dxl/x/xm430-w350/#velocity-trajectory136
+        - title: "Position Trajectory(140)"
+          titlekr: "Position Trajectory(140)"
+          url: /dxl/x/xm430-w350/#position-trajectory140
+        - title: "Present Input Voltage(144)"
+          titlekr: "Present Input Voltage(144)"
+          url: /dxl/x/xm430-w350/#present-input-voltage144
+        - title: "Present Temperature(146)"
+          titlekr: "Present Temperature(146)"
+          url: /dxl/x/xm430-w350/#present-temperature146
+        - title: "Indirect Address"
+          titlekr: "Indirect Address"
+          url: /dxl/x/xm430-w350/#indirect-address
+        - title: "Indirect Data"
+          titlekr: "Indirect Data"
+          url: /dxl/x/xm430-w350/#indirect-data
   - title: "How to Assemble"
     titlekr: "조립 예시"
     url: /dxl/x/xm430-w350/#how-to-assemble
@@ -3906,6 +5185,154 @@ xm540-w150:
         titlekr: "컨트롤 테이블 설명"
         url: /dxl/x/xm540-w150/#control-table-description
         urlkr: /dxl/x/xm540-w150/#컨트롤-테이블-설명
+        children:
+        - title: "Model Number(0)"
+          titlekr: "Model Number(0)"
+          url: /dxl/x/xm540-w150/#model-number0
+        - title: "Firmware Version(6)"
+          titlekr: "Firmware Version(6)"
+          url: /dxl/x/xm540-w150/#firmware-version6
+        - title: "ID(7)"
+          titlekr: "ID(7)"
+          url: /dxl/x/xm540-w150/#id7
+        - title: "Baud Rate(8)"
+          titlekr: "Baud Rate(8)"
+          url: /dxl/x/xm540-w150/#baud-rate8
+        - title: "Return Delay Time(9)"
+          titlekr: "Return Delay Time(9)"
+          url: /dxl/x/xm540-w150/#return-delay-time9
+        - title: "Drive Mode(10)"
+          titlekr: "Drive Mode(10)"
+          url: /dxl/x/xm540-w150/#drive-mode10
+        - title: "Operating Mode(11)"
+          titlekr: "Operating Mode(11)"
+          url: /dxl/x/xm540-w150/#operating-mode11
+        - title: "Secondary(Shadow) ID(12)"
+          titlekr: "Secondary(Shadow) ID(12)"
+          url: /dxl/x/xm540-w150/#secondaryshadow-id12
+        - title: "Protocol Version(13)"
+          titlekr: "Protocol Version(13)"
+          url: /dxl/x/xm540-w150/#protocol-version13
+        - title: "Homing Offset(20)"
+          titlekr: "Homing Offset(20)"
+          url: /dxl/x/xm540-w150/#homing-offset20
+        - title: "Moving Threshold(24)"
+          titlekr: "Moving Threshold(24)"
+          url: /dxl/x/xm540-w150/#moving-threshold24
+        - title: "Temperature Limit(31)"
+          titlekr: "Temperature Limit(31)"
+          url: /dxl/x/xm540-w150/#temperature-limit31
+        - title: "Min/Max Voltage Limit(32,34)"
+          titlekr: "Min/Max Voltage Limit(32,34)"
+          url: /dxl/x/xm540-w150/#minmax-voltage-limit32-34
+        - title: "PWM Lmit(36)"
+          titlekr: "PWM Limit(36)"
+          url: /dxl/x/xm540-w150/#pwm-limit36
+        - title: "Current Lmit(38)"
+          titlekr: "Current Limit(38)"
+          url: /dxl/x/xm540-w150/#current-limit38
+        - title: "Acceleration Limit(40)"
+          titlekr: "Acceleration Limit(40)"
+          url: /dxl/x/xm540-w150/#acceleration-limit40
+        - title: "Velocity Limit(44)"
+          titlekr: "Velocity Limit(44)"
+          url: /dxl/x/xm540-w150/#velocity-limit44
+        - title: "Min/Max Position Limit(48, 52)"
+          titlekr: "Min/Max Position Limit(48, 52)"
+          url: /dxl/x/xm540-w150/#minmax-position-limit48-52
+        - title: "External Port Mode 1,2,3(56,57,58)"
+          titlekr: "External Port Mode 1,2,3(56,57,58)"
+          url: /dxl/x/xm540-w150/#external-port-mode-12356-57-58
+        - title: "Shutdown(63)"
+          titlekr: "Shutdown(63)"
+          url: /dxl/x/xm540-w150/#shutdown63
+        - title: "Torque Enable(64)"
+          titlekr: "Torque Enable(64)"
+          url: /dxl/x/xm540-w150/#torque-enable64
+        - title: "LED(65)"
+          titlekr: "LED(65)"
+          url: /dxl/x/xm540-w150/#led65
+        - title: "Status Return Level(68)"
+          titlekr: "Status Return Level(68)"
+          url: /dxl/x/xm540-w150/#status-return-level68
+        - title: "Registered Instruction(69)"
+          titlekr: "Registered Instruction(69)"
+          url: /dxl/x/xm540-w150/#registered-instruction69
+        - title: "Hardware Error Status(70)"
+          titlekr: "Hardware Error Status(70)"
+          url: /dxl/x/xm540-w150/#hardware-error-status70
+        - title: "Velocity PI Gain(76, 78)"
+          titlekr: "Velocity PI Gain(76, 78)"
+          url: /dxl/x/xm540-w150/#velocity-pi-gain76-78
+        - title: "Position PID Gain(80, 82, 84)"
+          titlekr: "Position PID Gain(80, 82, 84)"
+          url: /dxl/x/xm540-w150/#position-pid-gain80-82-84
+        - title: "Feedforward 1st/2nd Gains(88, 90)"
+          titlekr: "Feedforward 1st/2nd Gains(88, 90)"
+          url: /dxl/x/xm540-w150/#feedforward-1st2nd-gains88-90
+        - title: "BUS Watchdog(98)"
+          titlekr: "BUS Watchdog(98)"
+          url: /dxl/x/xm540-w150/#bus-watchdog98
+        - title: "Goal PWM(100)"
+          titlekr: "Goal PWM(100)"
+          url: /dxl/x/xm540-w150/#goal-pwm100
+        - title: "Goal Current(102)"
+          titlekr: "Goal Current(102)"
+          url: /dxl/x/xm540-w150/#goal-current102
+        - title: "Goal Velocity(104)"
+          titlekr: "Goal Velocity(104)"
+          url: /dxl/x/xm540-w150/#goal-velocity104
+        - title: "Profile Acceleration(108)"
+          titlekr: "Profile Acceleration(108)"
+          url: /dxl/x/xm540-w150/#profile-acceleration108
+        - title: "Profile Velocity(112)"
+          titlekr: "Profile Velocity(112)"
+          url: /dxl/x/xm540-w150/#profile-velocity112
+        - title: "Goal Position(116)"
+          titlekr: "Goal Position(116)"
+          url: /dxl/x/xm540-w150/#goal-position116
+        - title: "Realtime Tick(120)"
+          titlekr: "Realtime Tick(120)"
+          url: /dxl/x/xm540-w150/#realtime-tick120
+        - title: "Moving(122)"
+          titlekr: "Moving(122)"
+          url: /dxl/x/xm540-w150/#moving122
+        - title: "Moving Status(123)"
+          titlekr: "Moving Status(123)"
+          url: /dxl/x/xm540-w150/#moving-status123
+        - title: "Present PWM(124)"
+          titlekr: "Present PWM(124)"
+          url: /dxl/x/xm540-w150/#present-pwm124
+        - title: "Present Current(126)"
+          titlekr: "Present Current(126)"
+          url: /dxl/x/xm540-w150/#present-current126
+        - title: "Present Velocity(128)"
+          titlekr: "Present Velocity(128)"
+          url: /dxl/x/xm540-w150/#present-velocity128
+        - title: "Present Position(132)"
+          titlekr: "Present Position(132)"
+          url: /dxl/x/xm540-w150/#present-position132
+        - title: "Velocity Trajectory(136)"
+          titlekr: "Velocity Trajectory(136)"
+          url: /dxl/x/xm540-w150/#velocity-trajectory136
+        - title: "Position Trajectory(140)"
+          titlekr: "Position Trajectory(140)"
+          url: /dxl/x/xm540-w150/#position-trajectory140
+        - title: "Present Input Voltage(144)"
+          titlekr: "Present Input Voltage(144)"
+          url: /dxl/x/xm540-w150/#present-input-voltage144
+        - title: "Present Temperature(146)"
+          titlekr: "Present Temperature(146)"
+          url: /dxl/x/xm540-w150/#present-temperature146
+        - title: "External Port Data 1,2,3"
+          titlekr: "External Port Data 1,2,3"
+          url: /dxl/x/xm540-w150/#external-port-data-123
+        - title: "Indirect Address"
+          titlekr: "Indirect Address"
+          url: /dxl/x/xm540-w150/#indirect-address
+        - title: "Indirect Data"
+          titlekr: "Indirect Data"
+          url: /dxl/x/xm540-w150/#indirect-data
   - title: "How to Assemble"
     titlekr: "조립 예시"
     url: /dxl/x/xm540-w150/#how-to-assemble
@@ -3995,6 +5422,154 @@ xm540-w270:
         titlekr: "컨트롤 테이블 설명"
         url: /dxl/x/xm540-w270/#control-table-description
         urlkr: /dxl/x/xm540-w270/#컨트롤-테이블-설명
+        children:
+        - title: "Model Number(0)"
+          titlekr: "Model Number(0)"
+          url: /dxl/x/xm540-w270/#model-number0
+        - title: "Firmware Version(6)"
+          titlekr: "Firmware Version(6)"
+          url: /dxl/x/xm540-w270/#firmware-version6
+        - title: "ID(7)"
+          titlekr: "ID(7)"
+          url: /dxl/x/xm540-w270/#id7
+        - title: "Baud Rate(8)"
+          titlekr: "Baud Rate(8)"
+          url: /dxl/x/xm540-w270/#baud-rate8
+        - title: "Return Delay Time(9)"
+          titlekr: "Return Delay Time(9)"
+          url: /dxl/x/xm540-w270/#return-delay-time9
+        - title: "Drive Mode(10)"
+          titlekr: "Drive Mode(10)"
+          url: /dxl/x/xm540-w270/#drive-mode10
+        - title: "Operating Mode(11)"
+          titlekr: "Operating Mode(11)"
+          url: /dxl/x/xm540-w270/#operating-mode11
+        - title: "Secondary(Shadow) ID(12)"
+          titlekr: "Secondary(Shadow) ID(12)"
+          url: /dxl/x/xm540-w270/#secondaryshadow-id12
+        - title: "Protocol Version(13)"
+          titlekr: "Protocol Version(13)"
+          url: /dxl/x/xm540-w270/#protocol-version13
+        - title: "Homing Offset(20)"
+          titlekr: "Homing Offset(20)"
+          url: /dxl/x/xm540-w270/#homing-offset20
+        - title: "Moving Threshold(24)"
+          titlekr: "Moving Threshold(24)"
+          url: /dxl/x/xm540-w270/#moving-threshold24
+        - title: "Temperature Limit(31)"
+          titlekr: "Temperature Limit(31)"
+          url: /dxl/x/xm540-w270/#temperature-limit31
+        - title: "Min/Max Voltage Limit(32,34)"
+          titlekr: "Min/Max Voltage Limit(32,34)"
+          url: /dxl/x/xm540-w270/#minmax-voltage-limit32-34
+        - title: "PWM Lmit(36)"
+          titlekr: "PWM Limit(36)"
+          url: /dxl/x/xm540-w270/#pwm-limit36
+        - title: "Current Lmit(38)"
+          titlekr: "Current Limit(38)"
+          url: /dxl/x/xm540-w270/#current-limit38
+        - title: "Acceleration Limit(40)"
+          titlekr: "Acceleration Limit(40)"
+          url: /dxl/x/xm540-w270/#acceleration-limit40
+        - title: "Velocity Limit(44)"
+          titlekr: "Velocity Limit(44)"
+          url: /dxl/x/xm540-w270/#velocity-limit44
+        - title: "Min/Max Position Limit(48, 52)"
+          titlekr: "Min/Max Position Limit(48, 52)"
+          url: /dxl/x/xm540-w270/#minmax-position-limit48-52
+        - title: "External Port Mode 1,2,3(56,57,58)"
+          titlekr: "External Port Mode 1,2,3(56,57,58)"
+          url: /dxl/x/xm540-w270/#external-port-mode-12356-57-58
+        - title: "Shutdown(63)"
+          titlekr: "Shutdown(63)"
+          url: /dxl/x/xm540-w270/#shutdown63
+        - title: "Torque Enable(64)"
+          titlekr: "Torque Enable(64)"
+          url: /dxl/x/xm540-w270/#torque-enable64
+        - title: "LED(65)"
+          titlekr: "LED(65)"
+          url: /dxl/x/xm540-w270/#led65
+        - title: "Status Return Level(68)"
+          titlekr: "Status Return Level(68)"
+          url: /dxl/x/xm540-w270/#status-return-level68
+        - title: "Registered Instruction(69)"
+          titlekr: "Registered Instruction(69)"
+          url: /dxl/x/xm540-w270/#registered-instruction69
+        - title: "Hardware Error Status(70)"
+          titlekr: "Hardware Error Status(70)"
+          url: /dxl/x/xm540-w270/#hardware-error-status70
+        - title: "Velocity PI Gain(76, 78)"
+          titlekr: "Velocity PI Gain(76, 78)"
+          url: /dxl/x/xm540-w270/#velocity-pi-gain76-78
+        - title: "Position PID Gain(80, 82, 84)"
+          titlekr: "Position PID Gain(80, 82, 84)"
+          url: /dxl/x/xm540-w270/#position-pid-gain80-82-84
+        - title: "Feedforward 1st/2nd Gains(88, 90)"
+          titlekr: "Feedforward 1st/2nd Gains(88, 90)"
+          url: /dxl/x/xm540-w270/#feedforward-1st2nd-gains88-90
+        - title: "BUS Watchdog(98)"
+          titlekr: "BUS Watchdog(98)"
+          url: /dxl/x/xm540-w270/#bus-watchdog98
+        - title: "Goal PWM(100)"
+          titlekr: "Goal PWM(100)"
+          url: /dxl/x/xm540-w270/#goal-pwm100
+        - title: "Goal Current(102)"
+          titlekr: "Goal Current(102)"
+          url: /dxl/x/xm540-w270/#goal-current102
+        - title: "Goal Velocity(104)"
+          titlekr: "Goal Velocity(104)"
+          url: /dxl/x/xm540-w270/#goal-velocity104
+        - title: "Profile Acceleration(108)"
+          titlekr: "Profile Acceleration(108)"
+          url: /dxl/x/xm540-w270/#profile-acceleration108
+        - title: "Profile Velocity(112)"
+          titlekr: "Profile Velocity(112)"
+          url: /dxl/x/xm540-w270/#profile-velocity112
+        - title: "Goal Position(116)"
+          titlekr: "Goal Position(116)"
+          url: /dxl/x/xm540-w270/#goal-position116
+        - title: "Realtime Tick(120)"
+          titlekr: "Realtime Tick(120)"
+          url: /dxl/x/xm540-w270/#realtime-tick120
+        - title: "Moving(122)"
+          titlekr: "Moving(122)"
+          url: /dxl/x/xm540-w270/#moving122
+        - title: "Moving Status(123)"
+          titlekr: "Moving Status(123)"
+          url: /dxl/x/xm540-w270/#moving-status123
+        - title: "Present PWM(124)"
+          titlekr: "Present PWM(124)"
+          url: /dxl/x/xm540-w270/#present-pwm124
+        - title: "Present Current(126)"
+          titlekr: "Present Current(126)"
+          url: /dxl/x/xm540-w270/#present-current126
+        - title: "Present Velocity(128)"
+          titlekr: "Present Velocity(128)"
+          url: /dxl/x/xm540-w270/#present-velocity128
+        - title: "Present Position(132)"
+          titlekr: "Present Position(132)"
+          url: /dxl/x/xm540-w270/#present-position132
+        - title: "Velocity Trajectory(136)"
+          titlekr: "Velocity Trajectory(136)"
+          url: /dxl/x/xm540-w270/#velocity-trajectory136
+        - title: "Position Trajectory(140)"
+          titlekr: "Position Trajectory(140)"
+          url: /dxl/x/xm540-w270/#position-trajectory140
+        - title: "Present Input Voltage(144)"
+          titlekr: "Present Input Voltage(144)"
+          url: /dxl/x/xm540-w270/#present-input-voltage144
+        - title: "Present Temperature(146)"
+          titlekr: "Present Temperature(146)"
+          url: /dxl/x/xm540-w270/#present-temperature146
+        - title: "External Port Data 1,2,3"
+          titlekr: "External Port Data 1,2,3"
+          url: /dxl/x/xm540-w270/#external-port-data-123
+        - title: "Indirect Address"
+          titlekr: "Indirect Address"
+          url: /dxl/x/xm540-w270/#indirect-address
+        - title: "Indirect Data"
+          titlekr: "Indirect Data"
+          url: /dxl/x/xm540-w270/#indirect-data
   - title: "How to Assemble"
     titlekr: "조립 예시"
     url: /dxl/x/xm540-w270/#how-to-assemble
@@ -4084,6 +5659,112 @@ h42-20-s300-r:
         titlekr: "컨트롤 테이블 설명"
         url: /dxl/pro/h42-20-s300-r/#control-table-description
         urlkr: /dxl/pro/h42-20-s300-r/#컨트롤-테이블-설명
+        children:
+        - title: "Model Number(0)"
+          titlekr: "Model Number(0)"
+          url: /dxl/pro/h42-20-s300-r/#model-number0
+        - title: "Firmware Version(6)"
+          titlekr: "Firmware Version(6)"
+          url: /dxl/pro/h42-20-s300-r/#firmware-version6
+        - title: "ID(7)"
+          titlekr: "ID(7)"
+          url: /dxl/pro/h42-20-s300-r/#id7
+        - title: "Baud Rate(8)"
+          titlekr: "Baud Rate(8)"
+          url: /dxl/pro/h42-20-s300-r/#baud-rate8
+        - title: "Return Delay Time(9)"
+          titlekr: "Return Delay Time(9)"
+          url: /dxl/pro/h42-20-s300-r/#return-delay-time9
+        - title: "Operating Mode(11)"
+          titlekr: "Operating Mode(11)"
+          url: /dxl/pro/h42-20-s300-r/#operating-mode11
+        - title: "Homing Offset(13)"
+          titlekr: "Homing Offset(13)"
+          url: /dxl/pro/h42-20-s300-r/#homing-offset13
+        - title: "Moving Threshold(17)"
+          titlekr: "Moving Threshold(17)"
+          url: /dxl/pro/h42-20-s300-r/#moving-threshold17
+        - title: "Temperature Limit(21)"
+          titlekr: "Temperature Limit(21)"
+          url: /dxl/pro/h42-20-s300-r/#temperature-limit21
+        - title: "Min/Max Voltage Limit(22, 24)"
+          titlekr: "Min/Max Voltage Limit(22, 24)"
+          url: /dxl/pro/h42-20-s300-r/#minmax-voltage-limit22-24
+        - title: "Acceleration Limit(26)"
+          titlekr: "Acceleration Limit(26)"
+          url: /dxl/pro/h42-20-s300-r/#acceleration-limit26
+        - title: "Torque Limit(30)"
+          titlekr: "Torque Limit(30)"
+          url: /dxl/pro/h42-20-s300-r/#torque-limit30
+        - title: "Velocity Limit(32)"
+          titlekr: "Velocity Limit(32)"
+          url: /dxl/pro/h42-20-s300-r/#velocity-limit32
+        - title: "Min/Max Position Limit(36, 40)"
+          titlekr: "Min/Max Position Limit(36, 40)"
+          url: /dxl/pro/h42-20-s300-r/#minmax-position-limit36-40
+        - title: "External Port Mode"
+          titlekr: "External Port Mode"
+          url: /dxl/pro/h42-20-s300-r/#external-port-mode
+        - title: "Shutdown(48)"
+          titlekr: "Shutdown(48)"
+          url: /dxl/pro/h42-20-s300-r/#shutdown48
+        - title: "Indirect Address"
+          titlekr: "Indirect Address"
+          url: /dxl/pro/h42-20-s300-r/#indirect-address
+        - title: "Indirect Data"
+          titlekr: "Indirect Data"
+          url: /dxl/pro/h42-20-s300-r/#indirect-data
+        - title: "Torque Enable(562)"
+          titlekr: "Torque Enable(562)"
+          url: /dxl/pro/h42-20-s300-r/#torque-enable562
+        - title: "RGB LED(563)"
+          titlekr: "RGB LED(563)"
+          url: /dxl/pro/h42-20-s300-r/#rgb-led563
+        - title: "Velocity PI Gain(586, 588)"
+          titlekr: "Velocity PI Gain(586, 588)"
+          url: /dxl/pro/h42-20-s300-r/#velocity-pi-gain586-588
+        - title: "Position P Gain(594)"
+          titlekr: "Position P Gain(594)"
+          url: /dxl/pro/h42-20-s300-r/#position-p-gain594
+        - title: "Goal Position(596)"
+          titlekr: "Goal Position(596)"
+          url: /dxl/pro/h42-20-s300-r/#goal-position596
+        - title: "Goal Velocity(600)"
+          titlekr: "Goal Velocity(600)"
+          url: /dxl/pro/h42-20-s300-r/#goal-velocity600
+        - title: "Goal Torque(604)"
+          titlekr: "Goal Torque(604)"
+          url: /dxl/pro/h42-20-s300-r/#goal-torque604
+        - title: "Goal Acceleration(606)"
+          titlekr: "Goal Acceleration(606)"
+          url: /dxl/pro/h42-20-s300-r/#goal-acceleration606
+        - title: "Moving(610)"
+          titlekr: "Moving(610)"
+          url: /dxl/pro/h42-20-s300-r/#moving610
+        - title: "Present Position(611)"
+          titlekr: "Present Position(611)"
+          url: /dxl/pro/h42-20-s300-r/#present-position611
+        - title: "Present Velocity(615)"
+          titlekr: "Present Velocity(615)"
+          url: /dxl/pro/h42-20-s300-r/#present-velocity615
+        - title: "Present Current(621)"
+          titlekr: "Present Current(621)"
+          url: /dxl/pro/h42-20-s300-r/#present-current621
+        - title: "Present Input Voltage(623)"
+          titlekr: "Present Input Voltage(623)"
+          url: /dxl/pro/h42-20-s300-r/#present-input-voltage623
+        - title: "Present Temperature(625)"
+          titlekr: "Present Temperature(625)"
+          url: /dxl/pro/h42-20-s300-r/#present-temperature625
+        - title: "Registered Instruction(890)"
+          titlekr: "Registered Instruction(890)"
+          url: /dxl/pro/h42-20-s300-r/#registered-instruction890
+        - title: "Status Return Level(891)"
+          titlekr: "Status Return Level(891)"
+          url: /dxl/pro/h42-20-s300-r/#status-return-level891
+        - title: "Hardware Error Status(892)"
+          titlekr: "Hardware Error Status(892)"
+          url: /dxl/pro/h42-20-s300-r/#hardware-error-status892
   - title: "How to Assemble"
     titlekr: "조립 예시"
     url: /dxl/pro/h42-20-s300-r/#how-to-assemble
@@ -4160,6 +5841,112 @@ h54-100-s500-r:
         titlekr: "컨트롤 테이블 설명"
         url: /dxl/pro/h54-100-s500-r/#control-table-description
         urlkr: /dxl/pro/h54-100-s500-r/#컨트롤-테이블-설명
+        children:
+        - title: "Model Number(0)"
+          titlekr: "Model Number(0)"
+          url: /dxl/pro/h54-100-s500-r/#model-number0
+        - title: "Firmware Version(6)"
+          titlekr: "Firmware Version(6)"
+          url: /dxl/pro/h54-100-s500-r/#firmware-version6
+        - title: "ID(7)"
+          titlekr: "ID(7)"
+          url: /dxl/pro/h54-100-s500-r/#id7
+        - title: "Baud Rate(8)"
+          titlekr: "Baud Rate(8)"
+          url: /dxl/pro/h54-100-s500-r/#baud-rate8
+        - title: "Return Delay Time(9)"
+          titlekr: "Return Delay Time(9)"
+          url: /dxl/pro/h54-100-s500-r/#return-delay-time9
+        - title: "Operating Mode(11)"
+          titlekr: "Operating Mode(11)"
+          url: /dxl/pro/h54-100-s500-r/#operating-mode11
+        - title: "Homing Offset(13)"
+          titlekr: "Homing Offset(13)"
+          url: /dxl/pro/h54-100-s500-r/#homing-offset13
+        - title: "Moving Threshold(17)"
+          titlekr: "Moving Threshold(17)"
+          url: /dxl/pro/h54-100-s500-r/#moving-threshold17
+        - title: "Temperature Limit(21)"
+          titlekr: "Temperature Limit(21)"
+          url: /dxl/pro/h54-100-s500-r/#temperature-limit21
+        - title: "Min/Max Voltage Limit(22, 24)"
+          titlekr: "Min/Max Voltage Limit(22, 24)"
+          url: /dxl/pro/h54-100-s500-r/#minmax-voltage-limit22-24
+        - title: "Acceleration Limit(26)"
+          titlekr: "Acceleration Limit(26)"
+          url: /dxl/pro/h54-100-s500-r/#acceleration-limit26
+        - title: "Torque Limit(30)"
+          titlekr: "Torque Limit(30)"
+          url: /dxl/pro/h54-100-s500-r/#torque-limit30
+        - title: "Velocity Limit(32)"
+          titlekr: "Velocity Limit(32)"
+          url: /dxl/pro/h54-100-s500-r/#velocity-limit32
+        - title: "Min/Max Position Limit(36, 40)"
+          titlekr: "Min/Max Position Limit(36, 40)"
+          url: /dxl/pro/h54-100-s500-r/#minmax-position-limit36-40
+        - title: "External Port Mode"
+          titlekr: "External Port Mode"
+          url: /dxl/pro/h54-100-s500-r/#external-port-mode
+        - title: "Shutdown(48)"
+          titlekr: "Shutdown(48)"
+          url: /dxl/pro/h54-100-s500-r/#shutdown48
+        - title: "Indirect Address"
+          titlekr: "Indirect Address"
+          url: /dxl/pro/h54-100-s500-r/#indirect-address
+        - title: "Indirect Data"
+          titlekr: "Indirect Data"
+          url: /dxl/pro/h54-100-s500-r/#indirect-data
+        - title: "Torque Enable(562)"
+          titlekr: "Torque Enable(562)"
+          url: /dxl/pro/h54-100-s500-r/#torque-enable562
+        - title: "RGB LED(563)"
+          titlekr: "RGB LED(563)"
+          url: /dxl/pro/h54-100-s500-r/#rgb-led563
+        - title: "Velocity PI Gain(586, 588)"
+          titlekr: "Velocity PI Gain(586, 588)"
+          url: /dxl/pro/h54-100-s500-r/#velocity-pi-gain586-588
+        - title: "Position P Gain(594)"
+          titlekr: "Position P Gain(594)"
+          url: /dxl/pro/h54-100-s500-r/#position-p-gain594
+        - title: "Goal Position(596)"
+          titlekr: "Goal Position(596)"
+          url: /dxl/pro/h54-100-s500-r/#goal-position596
+        - title: "Goal Velocity(600)"
+          titlekr: "Goal Velocity(600)"
+          url: /dxl/pro/h54-100-s500-r/#goal-velocity600
+        - title: "Goal Torque(604)"
+          titlekr: "Goal Torque(604)"
+          url: /dxl/pro/h54-100-s500-r/#goal-torque604
+        - title: "Goal Acceleration(606)"
+          titlekr: "Goal Acceleration(606)"
+          url: /dxl/pro/h54-100-s500-r/#goal-acceleration606
+        - title: "Moving(610)"
+          titlekr: "Moving(610)"
+          url: /dxl/pro/h54-100-s500-r/#moving610
+        - title: "Present Position(611)"
+          titlekr: "Present Position(611)"
+          url: /dxl/pro/h54-100-s500-r/#present-position611
+        - title: "Present Velocity(615)"
+          titlekr: "Present Velocity(615)"
+          url: /dxl/pro/h54-100-s500-r/#present-velocity615
+        - title: "Present Current(621)"
+          titlekr: "Present Current(621)"
+          url: /dxl/pro/h54-100-s500-r/#present-current621
+        - title: "Present Input Voltage(623)"
+          titlekr: "Present Input Voltage(623)"
+          url: /dxl/pro/h54-100-s500-r/#present-input-voltage623
+        - title: "Present Temperature(625)"
+          titlekr: "Present Temperature(625)"
+          url: /dxl/pro/h54-100-s500-r/#present-temperature625
+        - title: "Registered Instruction(890)"
+          titlekr: "Registered Instruction(890)"
+          url: /dxl/pro/h54-100-s500-r/#registered-instruction890
+        - title: "Status Return Level(891)"
+          titlekr: "Status Return Level(891)"
+          url: /dxl/pro/h54-100-s500-r/#status-return-level891
+        - title: "Hardware Error Status(892)"
+          titlekr: "Hardware Error Status(892)"
+          url: /dxl/pro/h54-100-s500-r/#hardware-error-status892
   - title: "How to Assemble"
     titlekr: "조립 예시"
     url: /dxl/pro/h54-100-s500-r/#how-to-assemble
@@ -4236,6 +6023,112 @@ h54-200-s500-r:
         titlekr: "컨트롤 테이블 설명"
         url: /dxl/pro/h54-200-s500-r/#control-table-description
         urlkr: /dxl/pro/h54-200-s500-r/#컨트롤-테이블-설명
+        children:
+        - title: "Model Number(0)"
+          titlekr: "Model Number(0)"
+          url: /dxl/pro/h54-200-s500-r/#model-number0
+        - title: "Firmware Version(6)"
+          titlekr: "Firmware Version(6)"
+          url: /dxl/pro/h54-200-s500-r/#firmware-version6
+        - title: "ID(7)"
+          titlekr: "ID(7)"
+          url: /dxl/pro/h54-200-s500-r/#id7
+        - title: "Baud Rate(8)"
+          titlekr: "Baud Rate(8)"
+          url: /dxl/pro/h54-200-s500-r/#baud-rate8
+        - title: "Return Delay Time(9)"
+          titlekr: "Return Delay Time(9)"
+          url: /dxl/pro/h54-200-s500-r/#return-delay-time9
+        - title: "Operating Mode(11)"
+          titlekr: "Operating Mode(11)"
+          url: /dxl/pro/h54-200-s500-r/#operating-mode11
+        - title: "Homing Offset(13)"
+          titlekr: "Homing Offset(13)"
+          url: /dxl/pro/h54-200-s500-r/#homing-offset13
+        - title: "Moving Threshold(17)"
+          titlekr: "Moving Threshold(17)"
+          url: /dxl/pro/h54-200-s500-r/#moving-threshold17
+        - title: "Temperature Limit(21)"
+          titlekr: "Temperature Limit(21)"
+          url: /dxl/pro/h54-200-s500-r/#temperature-limit21
+        - title: "Min/Max Voltage Limit(22, 24)"
+          titlekr: "Min/Max Voltage Limit(22, 24)"
+          url: /dxl/pro/h54-200-s500-r/#minmax-voltage-limit22-24
+        - title: "Acceleration Limit(26)"
+          titlekr: "Acceleration Limit(26)"
+          url: /dxl/pro/h54-200-s500-r/#acceleration-limit26
+        - title: "Torque Limit(30)"
+          titlekr: "Torque Limit(30)"
+          url: /dxl/pro/h54-200-s500-r/#torque-limit30
+        - title: "Velocity Limit(32)"
+          titlekr: "Velocity Limit(32)"
+          url: /dxl/pro/h54-200-s500-r/#velocity-limit32
+        - title: "Min/Max Position Limit(36, 40)"
+          titlekr: "Min/Max Position Limit(36, 40)"
+          url: /dxl/pro/h54-200-s500-r/#minmax-position-limit36-40
+        - title: "External Port Mode"
+          titlekr: "External Port Mode"
+          url: /dxl/pro/h54-200-s500-r/#external-port-mode
+        - title: "Shutdown(48)"
+          titlekr: "Shutdown(48)"
+          url: /dxl/pro/h54-200-s500-r/#shutdown48
+        - title: "Indirect Address"
+          titlekr: "Indirect Address"
+          url: /dxl/pro/h54-200-s500-r/#indirect-address
+        - title: "Indirect Data"
+          titlekr: "Indirect Data"
+          url: /dxl/pro/h54-200-s500-r/#indirect-data
+        - title: "Torque Enable(562)"
+          titlekr: "Torque Enable(562)"
+          url: /dxl/pro/h54-200-s500-r/#torque-enable562
+        - title: "RGB LED(563)"
+          titlekr: "RGB LED(563)"
+          url: /dxl/pro/h54-200-s500-r/#rgb-led563
+        - title: "Velocity PI Gain(586, 588)"
+          titlekr: "Velocity PI Gain(586, 588)"
+          url: /dxl/pro/h54-200-s500-r/#velocity-pi-gain586-588
+        - title: "Position P Gain(594)"
+          titlekr: "Position P Gain(594)"
+          url: /dxl/pro/h54-200-s500-r/#position-p-gain594
+        - title: "Goal Position(596)"
+          titlekr: "Goal Position(596)"
+          url: /dxl/pro/h54-200-s500-r/#goal-position596
+        - title: "Goal Velocity(600)"
+          titlekr: "Goal Velocity(600)"
+          url: /dxl/pro/h54-200-s500-r/#goal-velocity600
+        - title: "Goal Torque(604)"
+          titlekr: "Goal Torque(604)"
+          url: /dxl/pro/h54-200-s500-r/#goal-torque604
+        - title: "Goal Acceleration(606)"
+          titlekr: "Goal Acceleration(606)"
+          url: /dxl/pro/h54-200-s500-r/#goal-acceleration606
+        - title: "Moving(610)"
+          titlekr: "Moving(610)"
+          url: /dxl/pro/h54-200-s500-r/#moving610
+        - title: "Present Position(611)"
+          titlekr: "Present Position(611)"
+          url: /dxl/pro/h54-200-s500-r/#present-position611
+        - title: "Present Velocity(615)"
+          titlekr: "Present Velocity(615)"
+          url: /dxl/pro/h54-200-s500-r/#present-velocity615
+        - title: "Present Current(621)"
+          titlekr: "Present Current(621)"
+          url: /dxl/pro/h54-200-s500-r/#present-current621
+        - title: "Present Input Voltage(623)"
+          titlekr: "Present Input Voltage(623)"
+          url: /dxl/pro/h54-200-s500-r/#present-input-voltage623
+        - title: "Present Temperature(625)"
+          titlekr: "Present Temperature(625)"
+          url: /dxl/pro/h54-200-s500-r/#present-temperature625
+        - title: "Registered Instruction(890)"
+          titlekr: "Registered Instruction(890)"
+          url: /dxl/pro/h54-200-s500-r/#registered-instruction890
+        - title: "Status Return Level(891)"
+          titlekr: "Status Return Level(891)"
+          url: /dxl/pro/h54-200-s500-r/#status-return-level891
+        - title: "Hardware Error Status(892)"
+          titlekr: "Hardware Error Status(892)"
+          url: /dxl/pro/h54-200-s500-r/#hardware-error-status892
   - title: "How to Assemble"
     titlekr: "조립 예시"
     url: /dxl/pro/h54-200-s500-r/#how-to-assemble
@@ -4312,6 +6205,106 @@ l42-10-s300-r:
         titlekr: "컨트롤 테이블 설명"
         url: /dxl/pro/l42-10-s300-r/#control-table-description
         urlkr: /dxl/pro/l42-10-s300-r/#컨트롤-테이블-설명
+        children:
+        - title: "Model Number(0)"
+          titlekr: "Model Number(0)"
+          url: /dxl/pro/l42-10-s300-r/#model-number0
+        - title: "Firmware Version(6)"
+          titlekr: "Firmware Version(6)"
+          url: /dxl/pro/l42-10-s300-r/#firmware-version6
+        - title: "ID(7)"
+          titlekr: "ID(7)"
+          url: /dxl/pro/l42-10-s300-r/#id7
+        - title: "Baud Rate(8)"
+          titlekr: "Baud Rate(8)"
+          url: /dxl/pro/l42-10-s300-r/#baud-rate8
+        - title: "Return Delay Time(9)"
+          titlekr: "Return Delay Time(9)"
+          url: /dxl/pro/l42-10-s300-r/#return-delay-time9
+        - title: "Operating Mode(11)"
+          titlekr: "Operating Mode(11)"
+          url: /dxl/pro/l42-10-s300-r/#operating-mode11
+        - title: "Moving Threshold(17)"
+          titlekr: "Moving Threshold(17)"
+          url: /dxl/pro/l42-10-s300-r/#moving-threshold17
+        - title: "Temperature Limit(21)"
+          titlekr: "Temperature Limit(21)"
+          url: /dxl/pro/l42-10-s300-r/#temperature-limit21
+        - title: "Min/Max Voltage Limit(22, 24)"
+          titlekr: "Min/Max Voltage Limit(22, 24)"
+          url: /dxl/pro/l42-10-s300-r/#minmax-voltage-limit22-24
+        - title: "Acceleration Limit(26)"
+          titlekr: "Acceleration Limit(26)"
+          url: /dxl/pro/l42-10-s300-r/#acceleration-limit26
+        - title: "Torque Limit(30)"
+          titlekr: "Torque Limit(30)"
+          url: /dxl/pro/l42-10-s300-r/#torque-limit30
+        - title: "Velocity Limit(32)"
+          titlekr: "Velocity Limit(32)"
+          url: /dxl/pro/l42-10-s300-r/#velocity-limit32
+        - title: "Min/Max Position Limit(36, 40)"
+          titlekr: "Min/Max Position Limit(36, 40)"
+          url: /dxl/pro/l42-10-s300-r/#minmax-position-limit36-40
+        - title: "External Port Mode"
+          titlekr: "External Port Mode"
+          url: /dxl/pro/l42-10-s300-r/#external-port-mode
+        - title: "Shutdown(48)"
+          titlekr: "Shutdown(48)"
+          url: /dxl/pro/l42-10-s300-r/#shutdown48
+        - title: "Indirect Address"
+          titlekr: "Indirect Address"
+          url: /dxl/pro/l42-10-s300-r/#indirect-address
+        - title: "Indirect Data"
+          titlekr: "Indirect Data"
+          url: /dxl/pro/l42-10-s300-r/#indirect-data
+        - title: "Torque Enable(562)"
+          titlekr: "Torque Enable(562)"
+          url: /dxl/pro/l42-10-s300-r/#torque-enable562
+        - title: "RGB LED(563)"
+          titlekr: "RGB LED(563)"
+          url: /dxl/pro/l42-10-s300-r/#rgb-led563
+        - title: "Position PID Gain(594, 592, 590)"
+          titlekr: "Position PID Gain(594, 592, 590)"
+          url: /dxl/pro/l42-10-s300-r/#position-pid-gain594-592-590
+        - title: "Goal Position(596)"
+          titlekr: "Goal Position(596)"
+          url: /dxl/pro/l42-10-s300-r/#goal-position596
+        - title: "Goal Velocity(600)"
+          titlekr: "Goal Velocity(600)"
+          url: /dxl/pro/l42-10-s300-r/#goal-velocity600
+        - title: "Goal Torque(604)"
+          titlekr: "Goal Torque(604)"
+          url: /dxl/pro/l42-10-s300-r/#goal-torque604
+        - title: "Goal Acceleration(606)"
+          titlekr: "Goal Acceleration(606)"
+          url: /dxl/pro/l42-10-s300-r/#goal-acceleration606
+        - title: "Moving(610)"
+          titlekr: "Moving(610)"
+          url: /dxl/pro/l42-10-s300-r/#moving610
+        - title: "Present Position(611)"
+          titlekr: "Present Position(611)"
+          url: /dxl/pro/l42-10-s300-r/#present-position611
+        - title: "Present Velocity(615)"
+          titlekr: "Present Velocity(615)"
+          url: /dxl/pro/l42-10-s300-r/#present-velocity615
+        - title: "Present Current(621)"
+          titlekr: "Present Current(621)"
+          url: /dxl/pro/l42-10-s300-r/#present-current621
+        - title: "Present Input Voltage(623)"
+          titlekr: "Present Input Voltage(623)"
+          url: /dxl/pro/l42-10-s300-r/#present-input-voltage623
+        - title: "Present Temperature(625)"
+          titlekr: "Present Temperature(625)"
+          url: /dxl/pro/l42-10-s300-r/#present-temperature625
+        - title: "Registered Instruction(890)"
+          titlekr: "Registered Instruction(890)"
+          url: /dxl/pro/l42-10-s300-r/#registered-instruction890
+        - title: "Status Return Level(891)"
+          titlekr: "Status Return Level(891)"
+          url: /dxl/pro/l42-10-s300-r/#status-return-level891
+        - title: "Hardware Error Status(892)"
+          titlekr: "Hardware Error Status(892)"
+          url: /dxl/pro/l42-10-s300-r/#hardware-error-status892
   - title: "How to Assemble"
     titlekr: "조립 예시"
     url: /dxl/pro/l42-10-s300-r/#how-to-assemble
@@ -4388,6 +6381,112 @@ l54-30-s400-r:
         titlekr: "컨트롤 테이블 설명"
         url: /dxl/pro/l54-30-s400-r/#control-table-description
         urlkr: /dxl/pro/l54-30-s400-r/#컨트롤-테이블-설명
+        children:
+        - title: "Model Number(0)"
+          titlekr: "Model Number(0)"
+          url: /dxl/pro/l54-30-s400-r/#model-number0
+        - title: "Firmware Version(6)"
+          titlekr: "Firmware Version(6)"
+          url: /dxl/pro/l54-30-s400-r/#firmware-version6
+        - title: "ID(7)"
+          titlekr: "ID(7)"
+          url: /dxl/pro/l54-30-s400-r/#id7
+        - title: "Baud Rate(8)"
+          titlekr: "Baud Rate(8)"
+          url: /dxl/pro/l54-30-s400-r/#baud-rate8
+        - title: "Return Delay Time(9)"
+          titlekr: "Return Delay Time(9)"
+          url: /dxl/pro/l54-30-s400-r/#return-delay-time9
+        - title: "Operating Mode(11)"
+          titlekr: "Operating Mode(11)"
+          url: /dxl/pro/l54-30-s400-r/#operating-mode11
+        - title: "Homing Offset(13)"
+          titlekr: "Homing Offset(13)"
+          url: /dxl/pro/l54-30-s400-r/#homing-offset13
+        - title: "Moving Threshold(17)"
+          titlekr: "Moving Threshold(17)"
+          url: /dxl/pro/l54-30-s400-r/#moving-threshold17
+        - title: "Temperature Limit(21)"
+          titlekr: "Temperature Limit(21)"
+          url: /dxl/pro/l54-30-s400-r/#temperature-limit21
+        - title: "Min/Max Voltage Limit(22, 24)"
+          titlekr: "Min/Max Voltage Limit(22, 24)"
+          url: /dxl/pro/l54-30-s400-r/#minmax-voltage-limit22-24
+        - title: "Acceleration Limit(26)"
+          titlekr: "Acceleration Limit(26)"
+          url: /dxl/pro/l54-30-s400-r/#acceleration-limit26
+        - title: "Torque Limit(30)"
+          titlekr: "Torque Limit(30)"
+          url: /dxl/pro/l54-30-s400-r/#torque-limit30
+        - title: "Velocity Limit(32)"
+          titlekr: "Velocity Limit(32)"
+          url: /dxl/pro/l54-30-s400-r/#velocity-limit32
+        - title: "Min/Max Position Limit(36, 40)"
+          titlekr: "Min/Max Position Limit(36, 40)"
+          url: /dxl/pro/l54-30-s400-r/#minmax-position-limit36-40
+        - title: "External Port Mode"
+          titlekr: "External Port Mode"
+          url: /dxl/pro/l54-30-s400-r/#external-port-mode
+        - title: "Shutdown(48)"
+          titlekr: "Shutdown(48)"
+          url: /dxl/pro/l54-30-s400-r/#shutdown48
+        - title: "Indirect Address"
+          titlekr: "Indirect Address"
+          url: /dxl/pro/l54-30-s400-r/#indirect-address
+        - title: "Indirect Data"
+          titlekr: "Indirect Data"
+          url: /dxl/pro/l54-30-s400-r/#indirect-data
+        - title: "Torque Enable(562)"
+          titlekr: "Torque Enable(562)"
+          url: /dxl/pro/l54-30-s400-r/#torque-enable562
+        - title: "RGB LED(563)"
+          titlekr: "RGB LED(563)"
+          url: /dxl/pro/l54-30-s400-r/#rgb-led563
+        - title: "Velocity PI Gain(586, 588)"
+          titlekr: "Velocity PI Gain(586, 588)"
+          url: /dxl/pro/l54-30-s400-r/#velocity-pi-gain586-588
+        - title: "Position P Gain(594)"
+          titlekr: "Position P Gain(594)"
+          url: /dxl/pro/l54-30-s400-r/#position-p-gain594
+        - title: "Goal Position(596)"
+          titlekr: "Goal Position(596)"
+          url: /dxl/pro/l54-30-s400-r/#goal-position596
+        - title: "Goal Velocity(600)"
+          titlekr: "Goal Velocity(600)"
+          url: /dxl/pro/l54-30-s400-r/#goal-velocity600
+        - title: "Goal Torque(604)"
+          titlekr: "Goal Torque(604)"
+          url: /dxl/pro/l54-30-s400-r/#goal-torque604
+        - title: "Goal Acceleration(606)"
+          titlekr: "Goal Acceleration(606)"
+          url: /dxl/pro/l54-30-s400-r/#goal-acceleration606
+        - title: "Moving(610)"
+          titlekr: "Moving(610)"
+          url: /dxl/pro/l54-30-s400-r/#moving610
+        - title: "Present Position(611)"
+          titlekr: "Present Position(611)"
+          url: /dxl/pro/l54-30-s400-r/#present-position611
+        - title: "Present Velocity(615)"
+          titlekr: "Present Velocity(615)"
+          url: /dxl/pro/l54-30-s400-r/#present-velocity615
+        - title: "Present Current(621)"
+          titlekr: "Present Current(621)"
+          url: /dxl/pro/l54-30-s400-r/#present-current621
+        - title: "Present Input Voltage(623)"
+          titlekr: "Present Input Voltage(623)"
+          url: /dxl/pro/l54-30-s400-r/#present-input-voltage623
+        - title: "Present Temperature(625)"
+          titlekr: "Present Temperature(625)"
+          url: /dxl/pro/l54-30-s400-r/#present-temperature625
+        - title: "Registered Instruction(890)"
+          titlekr: "Registered Instruction(890)"
+          url: /dxl/pro/l54-30-s400-r/#registered-instruction890
+        - title: "Status Return Level(891)"
+          titlekr: "Status Return Level(891)"
+          url: /dxl/pro/l54-30-s400-r/#status-return-level891
+        - title: "Hardware Error Status(892)"
+          titlekr: "Hardware Error Status(892)"
+          url: /dxl/pro/l54-30-s400-r/#hardware-error-status892
   - title: "How to Assemble"
     titlekr: "조립 예시"
     url: /dxl/pro/l54-30-s400-r/#how-to-assemble
@@ -4464,6 +6563,112 @@ l54-30-s500-r:
         titlekr: "컨트롤 테이블 설명"
         url: /dxl/pro/l54-30-s500-r/#control-table-description
         urlkr: /dxl/pro/l54-30-s500-r/#컨트롤-테이블-설명
+        children:
+        - title: "Model Number(0)"
+          titlekr: "Model Number(0)"
+          url: /dxl/pro/l54-30-s500-r/#model-number0
+        - title: "Firmware Version(6)"
+          titlekr: "Firmware Version(6)"
+          url: /dxl/pro/l54-30-s500-r/#firmware-version6
+        - title: "ID(7)"
+          titlekr: "ID(7)"
+          url: /dxl/pro/l54-30-s500-r/#id7
+        - title: "Baud Rate(8)"
+          titlekr: "Baud Rate(8)"
+          url: /dxl/pro/l54-30-s500-r/#baud-rate8
+        - title: "Return Delay Time(9)"
+          titlekr: "Return Delay Time(9)"
+          url: /dxl/pro/l54-30-s500-r/#return-delay-time9
+        - title: "Operating Mode(11)"
+          titlekr: "Operating Mode(11)"
+          url: /dxl/pro/l54-30-s500-r/#operating-mode11
+        - title: "Homing Offset(13)"
+          titlekr: "Homing Offset(13)"
+          url: /dxl/pro/l54-30-s500-r/#homing-offset13
+        - title: "Moving Threshold(17)"
+          titlekr: "Moving Threshold(17)"
+          url: /dxl/pro/l54-30-s500-r/#moving-threshold17
+        - title: "Temperature Limit(21)"
+          titlekr: "Temperature Limit(21)"
+          url: /dxl/pro/l54-30-s500-r/#temperature-limit21
+        - title: "Min/Max Voltage Limit(22, 24)"
+          titlekr: "Min/Max Voltage Limit(22, 24)"
+          url: /dxl/pro/l54-30-s500-r/#minmax-voltage-limit22-24
+        - title: "Acceleration Limit(26)"
+          titlekr: "Acceleration Limit(26)"
+          url: /dxl/pro/l54-30-s500-r/#acceleration-limit26
+        - title: "Torque Limit(30)"
+          titlekr: "Torque Limit(30)"
+          url: /dxl/pro/l54-30-s500-r/#torque-limit30
+        - title: "Velocity Limit(32)"
+          titlekr: "Velocity Limit(32)"
+          url: /dxl/pro/l54-30-s500-r/#velocity-limit32
+        - title: "Min/Max Position Limit(36, 40)"
+          titlekr: "Min/Max Position Limit(36, 40)"
+          url: /dxl/pro/l54-30-s500-r/#minmax-position-limit36-40
+        - title: "External Port Mode"
+          titlekr: "External Port Mode"
+          url: /dxl/pro/l54-30-s500-r/#external-port-mode
+        - title: "Shutdown(48)"
+          titlekr: "Shutdown(48)"
+          url: /dxl/pro/l54-30-s500-r/#shutdown48
+        - title: "Indirect Address"
+          titlekr: "Indirect Address"
+          url: /dxl/pro/l54-30-s500-r/#indirect-address
+        - title: "Indirect Data"
+          titlekr: "Indirect Data"
+          url: /dxl/pro/l54-30-s500-r/#indirect-data
+        - title: "Torque Enable(562)"
+          titlekr: "Torque Enable(562)"
+          url: /dxl/pro/l54-30-s500-r/#torque-enable562
+        - title: "RGB LED(563)"
+          titlekr: "RGB LED(563)"
+          url: /dxl/pro/l54-30-s500-r/#rgb-led563
+        - title: "Velocity PI Gain(586, 588)"
+          titlekr: "Velocity PI Gain(586, 588)"
+          url: /dxl/pro/l54-30-s500-r/#velocity-pi-gain586-588
+        - title: "Position P Gain(594)"
+          titlekr: "Position P Gain(594)"
+          url: /dxl/pro/l54-30-s500-r/#position-p-gain594
+        - title: "Goal Position(596)"
+          titlekr: "Goal Position(596)"
+          url: /dxl/pro/l54-30-s500-r/#goal-position596
+        - title: "Goal Velocity(600)"
+          titlekr: "Goal Velocity(600)"
+          url: /dxl/pro/l54-30-s500-r/#goal-velocity600
+        - title: "Goal Torque(604)"
+          titlekr: "Goal Torque(604)"
+          url: /dxl/pro/l54-30-s500-r/#goal-torque604
+        - title: "Goal Acceleration(606)"
+          titlekr: "Goal Acceleration(606)"
+          url: /dxl/pro/l54-30-s500-r/#goal-acceleration606
+        - title: "Moving(610)"
+          titlekr: "Moving(610)"
+          url: /dxl/pro/l54-30-s500-r/#moving610
+        - title: "Present Position(611)"
+          titlekr: "Present Position(611)"
+          url: /dxl/pro/l54-30-s500-r/#present-position611
+        - title: "Present Velocity(615)"
+          titlekr: "Present Velocity(615)"
+          url: /dxl/pro/l54-30-s500-r/#present-velocity615
+        - title: "Present Current(621)"
+          titlekr: "Present Current(621)"
+          url: /dxl/pro/l54-30-s500-r/#present-current621
+        - title: "Present Input Voltage(623)"
+          titlekr: "Present Input Voltage(623)"
+          url: /dxl/pro/l54-30-s500-r/#present-input-voltage623
+        - title: "Present Temperature(625)"
+          titlekr: "Present Temperature(625)"
+          url: /dxl/pro/l54-30-s500-r/#present-temperature625
+        - title: "Registered Instruction(890)"
+          titlekr: "Registered Instruction(890)"
+          url: /dxl/pro/l54-30-s500-r/#registered-instruction890
+        - title: "Status Return Level(891)"
+          titlekr: "Status Return Level(891)"
+          url: /dxl/pro/l54-30-s500-r/#status-return-level891
+        - title: "Hardware Error Status(892)"
+          titlekr: "Hardware Error Status(892)"
+          url: /dxl/pro/l54-30-s500-r/#hardware-error-status892
   - title: "How to Assemble"
     titlekr: "조립 예시"
     url: /dxl/pro/l54-30-s500-r/#how-to-assemble
@@ -4540,6 +6745,112 @@ l54-50-s290-r:
         titlekr: "컨트롤 테이블 설명"
         url: /dxl/pro/l54-50-s290-r/#control-table-description
         urlkr: /dxl/pro/l54-50-s290-r/#컨트롤-테이블-설명
+        children:
+        - title: "Model Number(0)"
+          titlekr: "Model Number(0)"
+          url: /dxl/pro/l54-50-s290-r/#model-number0
+        - title: "Firmware Version(6)"
+          titlekr: "Firmware Version(6)"
+          url: /dxl/pro/l54-50-s290-r/#firmware-version6
+        - title: "ID(7)"
+          titlekr: "ID(7)"
+          url: /dxl/pro/l54-50-s290-r/#id7
+        - title: "Baud Rate(8)"
+          titlekr: "Baud Rate(8)"
+          url: /dxl/pro/l54-50-s290-r/#baud-rate8
+        - title: "Return Delay Time(9)"
+          titlekr: "Return Delay Time(9)"
+          url: /dxl/pro/l54-50-s290-r/#return-delay-time9
+        - title: "Operating Mode(11)"
+          titlekr: "Operating Mode(11)"
+          url: /dxl/pro/l54-50-s290-r/#operating-mode11
+        - title: "Homing Offset(13)"
+          titlekr: "Homing Offset(13)"
+          url: /dxl/pro/l54-50-s290-r/#homing-offset13
+        - title: "Moving Threshold(17)"
+          titlekr: "Moving Threshold(17)"
+          url: /dxl/pro/l54-50-s290-r/#moving-threshold17
+        - title: "Temperature Limit(21)"
+          titlekr: "Temperature Limit(21)"
+          url: /dxl/pro/l54-50-s290-r/#temperature-limit21
+        - title: "Min/Max Voltage Limit(22, 24)"
+          titlekr: "Min/Max Voltage Limit(22, 24)"
+          url: /dxl/pro/l54-50-s290-r/#minmax-voltage-limit22-24
+        - title: "Acceleration Limit(26)"
+          titlekr: "Acceleration Limit(26)"
+          url: /dxl/pro/l54-50-s290-r/#acceleration-limit26
+        - title: "Torque Limit(30)"
+          titlekr: "Torque Limit(30)"
+          url: /dxl/pro/l54-50-s290-r/#torque-limit30
+        - title: "Velocity Limit(32)"
+          titlekr: "Velocity Limit(32)"
+          url: /dxl/pro/l54-50-s290-r/#velocity-limit32
+        - title: "Min/Max Position Limit(36, 40)"
+          titlekr: "Min/Max Position Limit(36, 40)"
+          url: /dxl/pro/l54-50-s290-r/#minmax-position-limit36-40
+        - title: "External Port Mode"
+          titlekr: "External Port Mode"
+          url: /dxl/pro/l54-50-s290-r/#external-port-mode
+        - title: "Shutdown(48)"
+          titlekr: "Shutdown(48)"
+          url: /dxl/pro/l54-50-s290-r/#shutdown48
+        - title: "Indirect Address"
+          titlekr: "Indirect Address"
+          url: /dxl/pro/l54-50-s290-r/#indirect-address
+        - title: "Indirect Data"
+          titlekr: "Indirect Data"
+          url: /dxl/pro/l54-50-s290-r/#indirect-data
+        - title: "Torque Enable(562)"
+          titlekr: "Torque Enable(562)"
+          url: /dxl/pro/l54-50-s290-r/#torque-enable562
+        - title: "RGB LED(563)"
+          titlekr: "RGB LED(563)"
+          url: /dxl/pro/l54-50-s290-r/#rgb-led563
+        - title: "Velocity PI Gain(586, 588)"
+          titlekr: "Velocity PI Gain(586, 588)"
+          url: /dxl/pro/l54-50-s290-r/#velocity-pi-gain586-588
+        - title: "Position P Gain(594)"
+          titlekr: "Position P Gain(594)"
+          url: /dxl/pro/l54-50-s290-r/#position-p-gain594
+        - title: "Goal Position(596)"
+          titlekr: "Goal Position(596)"
+          url: /dxl/pro/l54-50-s290-r/#goal-position596
+        - title: "Goal Velocity(600)"
+          titlekr: "Goal Velocity(600)"
+          url: /dxl/pro/l54-50-s290-r/#goal-velocity600
+        - title: "Goal Torque(604)"
+          titlekr: "Goal Torque(604)"
+          url: /dxl/pro/l54-50-s290-r/#goal-torque604
+        - title: "Goal Acceleration(606)"
+          titlekr: "Goal Acceleration(606)"
+          url: /dxl/pro/l54-50-s290-r/#goal-acceleration606
+        - title: "Moving(610)"
+          titlekr: "Moving(610)"
+          url: /dxl/pro/l54-50-s290-r/#moving610
+        - title: "Present Position(611)"
+          titlekr: "Present Position(611)"
+          url: /dxl/pro/l54-50-s290-r/#present-position611
+        - title: "Present Velocity(615)"
+          titlekr: "Present Velocity(615)"
+          url: /dxl/pro/l54-50-s290-r/#present-velocity615
+        - title: "Present Current(621)"
+          titlekr: "Present Current(621)"
+          url: /dxl/pro/l54-50-s290-r/#present-current621
+        - title: "Present Input Voltage(623)"
+          titlekr: "Present Input Voltage(623)"
+          url: /dxl/pro/l54-50-s290-r/#present-input-voltage623
+        - title: "Present Temperature(625)"
+          titlekr: "Present Temperature(625)"
+          url: /dxl/pro/l54-50-s290-r/#present-temperature625
+        - title: "Registered Instruction(890)"
+          titlekr: "Registered Instruction(890)"
+          url: /dxl/pro/l54-50-s290-r/#registered-instruction890
+        - title: "Status Return Level(891)"
+          titlekr: "Status Return Level(891)"
+          url: /dxl/pro/l54-50-s290-r/#status-return-level891
+        - title: "Hardware Error Status(892)"
+          titlekr: "Hardware Error Status(892)"
+          url: /dxl/pro/l54-50-s290-r/#hardware-error-status892
   - title: "How to Assemble"
     titlekr: "조립 예시"
     url: /dxl/pro/l54-50-s290-r/#how-to-assemble
@@ -4616,6 +6927,112 @@ l54-50-s500-r:
         titlekr: "컨트롤 테이블 설명"
         url: /dxl/pro/l54-50-s500-r/#control-table-description
         urlkr: /dxl/pro/l54-50-s500-r/#컨트롤-테이블-설명
+        children:
+        - title: "Model Number(0)"
+          titlekr: "Model Number(0)"
+          url: /dxl/pro/l54-50-s500-r/#model-number0
+        - title: "Firmware Version(6)"
+          titlekr: "Firmware Version(6)"
+          url: /dxl/pro/l54-50-s500-r/#firmware-version6
+        - title: "ID(7)"
+          titlekr: "ID(7)"
+          url: /dxl/pro/l54-50-s500-r/#id7
+        - title: "Baud Rate(8)"
+          titlekr: "Baud Rate(8)"
+          url: /dxl/pro/l54-50-s500-r/#baud-rate8
+        - title: "Return Delay Time(9)"
+          titlekr: "Return Delay Time(9)"
+          url: /dxl/pro/l54-50-s500-r/#return-delay-time9
+        - title: "Operating Mode(11)"
+          titlekr: "Operating Mode(11)"
+          url: /dxl/pro/l54-50-s500-r/#operating-mode11
+        - title: "Homing Offset(13)"
+          titlekr: "Homing Offset(13)"
+          url: /dxl/pro/l54-50-s500-r/#homing-offset13
+        - title: "Moving Threshold(17)"
+          titlekr: "Moving Threshold(17)"
+          url: /dxl/pro/l54-50-s500-r/#moving-threshold17
+        - title: "Temperature Limit(21)"
+          titlekr: "Temperature Limit(21)"
+          url: /dxl/pro/l54-50-s500-r/#temperature-limit21
+        - title: "Min/Max Voltage Limit(22, 24)"
+          titlekr: "Min/Max Voltage Limit(22, 24)"
+          url: /dxl/pro/l54-50-s500-r/#minmax-voltage-limit22-24
+        - title: "Acceleration Limit(26)"
+          titlekr: "Acceleration Limit(26)"
+          url: /dxl/pro/l54-50-s500-r/#acceleration-limit26
+        - title: "Torque Limit(30)"
+          titlekr: "Torque Limit(30)"
+          url: /dxl/pro/l54-50-s500-r/#torque-limit30
+        - title: "Velocity Limit(32)"
+          titlekr: "Velocity Limit(32)"
+          url: /dxl/pro/l54-50-s500-r/#velocity-limit32
+        - title: "Min/Max Position Limit(36, 40)"
+          titlekr: "Min/Max Position Limit(36, 40)"
+          url: /dxl/pro/l54-50-s500-r/#minmax-position-limit36-40
+        - title: "External Port Mode"
+          titlekr: "External Port Mode"
+          url: /dxl/pro/l54-50-s500-r/#external-port-mode
+        - title: "Shutdown(48)"
+          titlekr: "Shutdown(48)"
+          url: /dxl/pro/l54-50-s500-r/#shutdown48
+        - title: "Indirect Address"
+          titlekr: "Indirect Address"
+          url: /dxl/pro/l54-50-s500-r/#indirect-address
+        - title: "Indirect Data"
+          titlekr: "Indirect Data"
+          url: /dxl/pro/l54-50-s500-r/#indirect-data
+        - title: "Torque Enable(562)"
+          titlekr: "Torque Enable(562)"
+          url: /dxl/pro/l54-50-s500-r/#torque-enable562
+        - title: "RGB LED(563)"
+          titlekr: "RGB LED(563)"
+          url: /dxl/pro/l54-50-s500-r/#rgb-led563
+        - title: "Velocity PI Gain(586, 588)"
+          titlekr: "Velocity PI Gain(586, 588)"
+          url: /dxl/pro/l54-50-s500-r/#velocity-pi-gain586-588
+        - title: "Position P Gain(594)"
+          titlekr: "Position P Gain(594)"
+          url: /dxl/pro/l54-50-s500-r/#position-p-gain594
+        - title: "Goal Position(596)"
+          titlekr: "Goal Position(596)"
+          url: /dxl/pro/l54-50-s500-r/#goal-position596
+        - title: "Goal Velocity(600)"
+          titlekr: "Goal Velocity(600)"
+          url: /dxl/pro/l54-50-s500-r/#goal-velocity600
+        - title: "Goal Torque(604)"
+          titlekr: "Goal Torque(604)"
+          url: /dxl/pro/l54-50-s500-r/#goal-torque604
+        - title: "Goal Acceleration(606)"
+          titlekr: "Goal Acceleration(606)"
+          url: /dxl/pro/l54-50-s500-r/#goal-acceleration606
+        - title: "Moving(610)"
+          titlekr: "Moving(610)"
+          url: /dxl/pro/l54-50-s500-r/#moving610
+        - title: "Present Position(611)"
+          titlekr: "Present Position(611)"
+          url: /dxl/pro/l54-50-s500-r/#present-position611
+        - title: "Present Velocity(615)"
+          titlekr: "Present Velocity(615)"
+          url: /dxl/pro/l54-50-s500-r/#present-velocity615
+        - title: "Present Current(621)"
+          titlekr: "Present Current(621)"
+          url: /dxl/pro/l54-50-s500-r/#present-current621
+        - title: "Present Input Voltage(623)"
+          titlekr: "Present Input Voltage(623)"
+          url: /dxl/pro/l54-50-s500-r/#present-input-voltage623
+        - title: "Present Temperature(625)"
+          titlekr: "Present Temperature(625)"
+          url: /dxl/pro/l54-50-s500-r/#present-temperature625
+        - title: "Registered Instruction(890)"
+          titlekr: "Registered Instruction(890)"
+          url: /dxl/pro/l54-50-s500-r/#registered-instruction890
+        - title: "Status Return Level(891)"
+          titlekr: "Status Return Level(891)"
+          url: /dxl/pro/l54-50-s500-r/#status-return-level891
+        - title: "Hardware Error Status(892)"
+          titlekr: "Hardware Error Status(892)"
+          url: /dxl/pro/l54-50-s500-r/#hardware-error-status892
   - title: "How to Assemble"
     titlekr: "조립 예시"
     url: /dxl/pro/l54-50-s500-r/#how-to-assemble
@@ -4692,6 +7109,112 @@ m42-10-s260-r:
         titlekr: "컨트롤 테이블 설명"
         url: /dxl/pro/m42-10-s260-r/#control-table-description
         urlkr: /dxl/pro/m42-10-s260-r/#컨트롤-테이블-설명
+        children:
+        - title: "Model Number(0)"
+          titlekr: "Model Number(0)"
+          url: /dxl/pro/m42-10-s260-r/#model-number0
+        - title: "Firmware Version(6)"
+          titlekr: "Firmware Version(6)"
+          url: /dxl/pro/m42-10-s260-r/#firmware-version6
+        - title: "ID(7)"
+          titlekr: "ID(7)"
+          url: /dxl/pro/m42-10-s260-r/#id7
+        - title: "Baud Rate(8)"
+          titlekr: "Baud Rate(8)"
+          url: /dxl/pro/m42-10-s260-r/#baud-rate8
+        - title: "Return Delay Time(9)"
+          titlekr: "Return Delay Time(9)"
+          url: /dxl/pro/m42-10-s260-r/#return-delay-time9
+        - title: "Operating Mode(11)"
+          titlekr: "Operating Mode(11)"
+          url: /dxl/pro/m42-10-s260-r/#operating-mode11
+        - title: "Homing Offset(13)"
+          titlekr: "Homing Offset(13)"
+          url: /dxl/pro/m42-10-s260-r/#homing-offset13
+        - title: "Moving Threshold(17)"
+          titlekr: "Moving Threshold(17)"
+          url: /dxl/pro/m42-10-s260-r/#moving-threshold17
+        - title: "Temperature Limit(21)"
+          titlekr: "Temperature Limit(21)"
+          url: /dxl/pro/m42-10-s260-r/#temperature-limit21
+        - title: "Min/Max Voltage Limit(22, 24)"
+          titlekr: "Min/Max Voltage Limit(22, 24)"
+          url: /dxl/pro/m42-10-s260-r/#minmax-voltage-limit22-24
+        - title: "Acceleration Limit(26)"
+          titlekr: "Acceleration Limit(26)"
+          url: /dxl/pro/m42-10-s260-r/#acceleration-limit26
+        - title: "Torque Limit(30)"
+          titlekr: "Torque Limit(30)"
+          url: /dxl/pro/m42-10-s260-r/#torque-limit30
+        - title: "Velocity Limit(32)"
+          titlekr: "Velocity Limit(32)"
+          url: /dxl/pro/m42-10-s260-r/#velocity-limit32
+        - title: "Min/Max Position Limit(36, 40)"
+          titlekr: "Min/Max Position Limit(36, 40)"
+          url: /dxl/pro/m42-10-s260-r/#minmax-position-limit36-40
+        - title: "External Port Mode"
+          titlekr: "External Port Mode"
+          url: /dxl/pro/m42-10-s260-r/#external-port-mode
+        - title: "Shutdown(48)"
+          titlekr: "Shutdown(48)"
+          url: /dxl/pro/m42-10-s260-r/#shutdown48
+        - title: "Indirect Address"
+          titlekr: "Indirect Address"
+          url: /dxl/pro/m42-10-s260-r/#indirect-address
+        - title: "Indirect Data"
+          titlekr: "Indirect Data"
+          url: /dxl/pro/m42-10-s260-r/#indirect-data
+        - title: "Torque Enable(562)"
+          titlekr: "Torque Enable(562)"
+          url: /dxl/pro/m42-10-s260-r/#torque-enable562
+        - title: "RGB LED(563)"
+          titlekr: "RGB LED(563)"
+          url: /dxl/pro/m42-10-s260-r/#rgb-led563
+        - title: "Velocity PI Gain(586, 588)"
+          titlekr: "Velocity PI Gain(586, 588)"
+          url: /dxl/pro/m42-10-s260-r/#velocity-pi-gain586-588
+        - title: "Position P Gain(594)"
+          titlekr: "Position P Gain(594)"
+          url: /dxl/pro/m42-10-s260-r/#position-p-gain594
+        - title: "Goal Position(596)"
+          titlekr: "Goal Position(596)"
+          url: /dxl/pro/m42-10-s260-r/#goal-position596
+        - title: "Goal Velocity(600)"
+          titlekr: "Goal Velocity(600)"
+          url: /dxl/pro/m42-10-s260-r/#goal-velocity600
+        - title: "Goal Torque(604)"
+          titlekr: "Goal Torque(604)"
+          url: /dxl/pro/m42-10-s260-r/#goal-torque604
+        - title: "Goal Acceleration(606)"
+          titlekr: "Goal Acceleration(606)"
+          url: /dxl/pro/m42-10-s260-r/#goal-acceleration606
+        - title: "Moving(610)"
+          titlekr: "Moving(610)"
+          url: /dxl/pro/m42-10-s260-r/#moving610
+        - title: "Present Position(611)"
+          titlekr: "Present Position(611)"
+          url: /dxl/pro/m42-10-s260-r/#present-position611
+        - title: "Present Velocity(615)"
+          titlekr: "Present Velocity(615)"
+          url: /dxl/pro/m42-10-s260-r/#present-velocity615
+        - title: "Present Current(621)"
+          titlekr: "Present Current(621)"
+          url: /dxl/pro/m42-10-s260-r/#present-current621
+        - title: "Present Input Voltage(623)"
+          titlekr: "Present Input Voltage(623)"
+          url: /dxl/pro/m42-10-s260-r/#present-input-voltage623
+        - title: "Present Temperature(625)"
+          titlekr: "Present Temperature(625)"
+          url: /dxl/pro/m42-10-s260-r/#present-temperature625
+        - title: "Registered Instruction(890)"
+          titlekr: "Registered Instruction(890)"
+          url: /dxl/pro/m42-10-s260-r/#registered-instruction890
+        - title: "Status Return Level(891)"
+          titlekr: "Status Return Level(891)"
+          url: /dxl/pro/m42-10-s260-r/#status-return-level891
+        - title: "Hardware Error Status(892)"
+          titlekr: "Hardware Error Status(892)"
+          url: /dxl/pro/m42-10-s260-r/#hardware-error-status892
   - title: "How to Assemble"
     titlekr: "조립 예시"
     url: /dxl/pro/m42-10-s260-r/#how-to-assemble
@@ -4768,6 +7291,112 @@ m54-40-s250-r:
         titlekr: "컨트롤 테이블 설명"
         url: /dxl/pro/m54-40-s250-r/#control-table-description
         urlkr: /dxl/pro/m54-40-s250-r/#컨트롤-테이블-설명
+        children:
+        - title: "Model Number(0)"
+          titlekr: "Model Number(0)"
+          url: /dxl/pro/m54-40-s250-r/#model-number0
+        - title: "Firmware Version(6)"
+          titlekr: "Firmware Version(6)"
+          url: /dxl/pro/m54-40-s250-r/#firmware-version6
+        - title: "ID(7)"
+          titlekr: "ID(7)"
+          url: /dxl/pro/m54-40-s250-r/#id7
+        - title: "Baud Rate(8)"
+          titlekr: "Baud Rate(8)"
+          url: /dxl/pro/m54-40-s250-r/#baud-rate8
+        - title: "Return Delay Time(9)"
+          titlekr: "Return Delay Time(9)"
+          url: /dxl/pro/m54-40-s250-r/#return-delay-time9
+        - title: "Operating Mode(11)"
+          titlekr: "Operating Mode(11)"
+          url: /dxl/pro/m54-40-s250-r/#operating-mode11
+        - title: "Homing Offset(13)"
+          titlekr: "Homing Offset(13)"
+          url: /dxl/pro/m54-40-s250-r/#homing-offset13
+        - title: "Moving Threshold(17)"
+          titlekr: "Moving Threshold(17)"
+          url: /dxl/pro/m54-40-s250-r/#moving-threshold17
+        - title: "Temperature Limit(21)"
+          titlekr: "Temperature Limit(21)"
+          url: /dxl/pro/m54-40-s250-r/#temperature-limit21
+        - title: "Min/Max Voltage Limit(22, 24)"
+          titlekr: "Min/Max Voltage Limit(22, 24)"
+          url: /dxl/pro/m54-40-s250-r/#minmax-voltage-limit22-24
+        - title: "Acceleration Limit(26)"
+          titlekr: "Acceleration Limit(26)"
+          url: /dxl/pro/m54-40-s250-r/#acceleration-limit26
+        - title: "Torque Limit(30)"
+          titlekr: "Torque Limit(30)"
+          url: /dxl/pro/m54-40-s250-r/#torque-limit30
+        - title: "Velocity Limit(32)"
+          titlekr: "Velocity Limit(32)"
+          url: /dxl/pro/m54-40-s250-r/#velocity-limit32
+        - title: "Min/Max Position Limit(36, 40)"
+          titlekr: "Min/Max Position Limit(36, 40)"
+          url: /dxl/pro/m54-40-s250-r/#minmax-position-limit36-40
+        - title: "External Port Mode"
+          titlekr: "External Port Mode"
+          url: /dxl/pro/m54-40-s250-r/#external-port-mode
+        - title: "Shutdown(48)"
+          titlekr: "Shutdown(48)"
+          url: /dxl/pro/m54-40-s250-r/#shutdown48
+        - title: "Indirect Address"
+          titlekr: "Indirect Address"
+          url: /dxl/pro/m54-40-s250-r/#indirect-address
+        - title: "Indirect Data"
+          titlekr: "Indirect Data"
+          url: /dxl/pro/m54-40-s250-r/#indirect-data
+        - title: "Torque Enable(562)"
+          titlekr: "Torque Enable(562)"
+          url: /dxl/pro/m54-40-s250-r/#torque-enable562
+        - title: "RGB LED(563)"
+          titlekr: "RGB LED(563)"
+          url: /dxl/pro/m54-40-s250-r/#rgb-led563
+        - title: "Velocity PI Gain(586, 588)"
+          titlekr: "Velocity PI Gain(586, 588)"
+          url: /dxl/pro/m54-40-s250-r/#velocity-pi-gain586-588
+        - title: "Position P Gain(594)"
+          titlekr: "Position P Gain(594)"
+          url: /dxl/pro/m54-40-s250-r/#position-p-gain594
+        - title: "Goal Position(596)"
+          titlekr: "Goal Position(596)"
+          url: /dxl/pro/m54-40-s250-r/#goal-position596
+        - title: "Goal Velocity(600)"
+          titlekr: "Goal Velocity(600)"
+          url: /dxl/pro/m54-40-s250-r/#goal-velocity600
+        - title: "Goal Torque(604)"
+          titlekr: "Goal Torque(604)"
+          url: /dxl/pro/m54-40-s250-r/#goal-torque604
+        - title: "Goal Acceleration(606)"
+          titlekr: "Goal Acceleration(606)"
+          url: /dxl/pro/m54-40-s250-r/#goal-acceleration606
+        - title: "Moving(610)"
+          titlekr: "Moving(610)"
+          url: /dxl/pro/m54-40-s250-r/#moving610
+        - title: "Present Position(611)"
+          titlekr: "Present Position(611)"
+          url: /dxl/pro/m54-40-s250-r/#present-position611
+        - title: "Present Velocity(615)"
+          titlekr: "Present Velocity(615)"
+          url: /dxl/pro/m54-40-s250-r/#present-velocity615
+        - title: "Present Current(621)"
+          titlekr: "Present Current(621)"
+          url: /dxl/pro/m54-40-s250-r/#present-current621
+        - title: "Present Input Voltage(623)"
+          titlekr: "Present Input Voltage(623)"
+          url: /dxl/pro/m54-40-s250-r/#present-input-voltage623
+        - title: "Present Temperature(625)"
+          titlekr: "Present Temperature(625)"
+          url: /dxl/pro/m54-40-s250-r/#present-temperature625
+        - title: "Registered Instruction(890)"
+          titlekr: "Registered Instruction(890)"
+          url: /dxl/pro/m54-40-s250-r/#registered-instruction890
+        - title: "Status Return Level(891)"
+          titlekr: "Status Return Level(891)"
+          url: /dxl/pro/m54-40-s250-r/#status-return-level891
+        - title: "Hardware Error Status(892)"
+          titlekr: "Hardware Error Status(892)"
+          url: /dxl/pro/m54-40-s250-r/#hardware-error-status892
   - title: "How to Assemble"
     titlekr: "조립 예시"
     url: /dxl/pro/m54-40-s250-r/#how-to-assemble
@@ -4844,6 +7473,112 @@ m54-60-s250-r:
         titlekr: "컨트롤 테이블 설명"
         url: /dxl/pro/m54-60-s250-r/#control-table-description
         urlkr: /dxl/pro/m54-60-s250-r/#컨트롤-테이블-설명
+        children:
+        - title: "Model Number(0)"
+          titlekr: "Model Number(0)"
+          url: /dxl/pro/m54-60-s250-r/#model-number0
+        - title: "Firmware Version(6)"
+          titlekr: "Firmware Version(6)"
+          url: /dxl/pro/m54-60-s250-r/#firmware-version6
+        - title: "ID(7)"
+          titlekr: "ID(7)"
+          url: /dxl/pro/m54-60-s250-r/#id7
+        - title: "Baud Rate(8)"
+          titlekr: "Baud Rate(8)"
+          url: /dxl/pro/m54-60-s250-r/#baud-rate8
+        - title: "Return Delay Time(9)"
+          titlekr: "Return Delay Time(9)"
+          url: /dxl/pro/m54-60-s250-r/#return-delay-time9
+        - title: "Operating Mode(11)"
+          titlekr: "Operating Mode(11)"
+          url: /dxl/pro/m54-60-s250-r/#operating-mode11
+        - title: "Homing Offset(13)"
+          titlekr: "Homing Offset(13)"
+          url: /dxl/pro/m54-60-s250-r/#homing-offset13
+        - title: "Moving Threshold(17)"
+          titlekr: "Moving Threshold(17)"
+          url: /dxl/pro/m54-60-s250-r/#moving-threshold17
+        - title: "Temperature Limit(21)"
+          titlekr: "Temperature Limit(21)"
+          url: /dxl/pro/m54-60-s250-r/#temperature-limit21
+        - title: "Min/Max Voltage Limit(22, 24)"
+          titlekr: "Min/Max Voltage Limit(22, 24)"
+          url: /dxl/pro/m54-60-s250-r/#minmax-voltage-limit22-24
+        - title: "Acceleration Limit(26)"
+          titlekr: "Acceleration Limit(26)"
+          url: /dxl/pro/m54-60-s250-r/#acceleration-limit26
+        - title: "Torque Limit(30)"
+          titlekr: "Torque Limit(30)"
+          url: /dxl/pro/m54-60-s250-r/#torque-limit30
+        - title: "Velocity Limit(32)"
+          titlekr: "Velocity Limit(32)"
+          url: /dxl/pro/m54-60-s250-r/#velocity-limit32
+        - title: "Min/Max Position Limit(36, 40)"
+          titlekr: "Min/Max Position Limit(36, 40)"
+          url: /dxl/pro/m54-60-s250-r/#minmax-position-limit36-40
+        - title: "External Port Mode"
+          titlekr: "External Port Mode"
+          url: /dxl/pro/m54-60-s250-r/#external-port-mode
+        - title: "Shutdown(48)"
+          titlekr: "Shutdown(48)"
+          url: /dxl/pro/m54-60-s250-r/#shutdown48
+        - title: "Indirect Address"
+          titlekr: "Indirect Address"
+          url: /dxl/pro/m54-60-s250-r/#indirect-address
+        - title: "Indirect Data"
+          titlekr: "Indirect Data"
+          url: /dxl/pro/m54-60-s250-r/#indirect-data
+        - title: "Torque Enable(562)"
+          titlekr: "Torque Enable(562)"
+          url: /dxl/pro/m54-60-s250-r/#torque-enable562
+        - title: "RGB LED(563)"
+          titlekr: "RGB LED(563)"
+          url: /dxl/pro/m54-60-s250-r/#rgb-led563
+        - title: "Velocity PI Gain(586, 588)"
+          titlekr: "Velocity PI Gain(586, 588)"
+          url: /dxl/pro/m54-60-s250-r/#velocity-pi-gain586-588
+        - title: "Position P Gain(594)"
+          titlekr: "Position P Gain(594)"
+          url: /dxl/pro/m54-60-s250-r/#position-p-gain594
+        - title: "Goal Position(596)"
+          titlekr: "Goal Position(596)"
+          url: /dxl/pro/m54-60-s250-r/#goal-position596
+        - title: "Goal Velocity(600)"
+          titlekr: "Goal Velocity(600)"
+          url: /dxl/pro/m54-60-s250-r/#goal-velocity600
+        - title: "Goal Torque(604)"
+          titlekr: "Goal Torque(604)"
+          url: /dxl/pro/m54-60-s250-r/#goal-torque604
+        - title: "Goal Acceleration(606)"
+          titlekr: "Goal Acceleration(606)"
+          url: /dxl/pro/m54-60-s250-r/#goal-acceleration606
+        - title: "Moving(610)"
+          titlekr: "Moving(610)"
+          url: /dxl/pro/m54-60-s250-r/#moving610
+        - title: "Present Position(611)"
+          titlekr: "Present Position(611)"
+          url: /dxl/pro/m54-60-s250-r/#present-position611
+        - title: "Present Velocity(615)"
+          titlekr: "Present Velocity(615)"
+          url: /dxl/pro/m54-60-s250-r/#present-velocity615
+        - title: "Present Current(621)"
+          titlekr: "Present Current(621)"
+          url: /dxl/pro/m54-60-s250-r/#present-current621
+        - title: "Present Input Voltage(623)"
+          titlekr: "Present Input Voltage(623)"
+          url: /dxl/pro/m54-60-s250-r/#present-input-voltage623
+        - title: "Present Temperature(625)"
+          titlekr: "Present Temperature(625)"
+          url: /dxl/pro/m54-60-s250-r/#present-temperature625
+        - title: "Registered Instruction(890)"
+          titlekr: "Registered Instruction(890)"
+          url: /dxl/pro/m54-60-s250-r/#registered-instruction890
+        - title: "Status Return Level(891)"
+          titlekr: "Status Return Level(891)"
+          url: /dxl/pro/m54-60-s250-r/#status-return-level891
+        - title: "Hardware Error Status(892)"
+          titlekr: "Hardware Error Status(892)"
+          url: /dxl/pro/m54-60-s250-r/#hardware-error-status892
   - title: "How to Assemble"
     titlekr: "조립 예시"
     url: /dxl/pro/m54-60-s250-r/#how-to-assemble
@@ -4873,104 +7608,154 @@ m54-60-s250-r:
 
 #Protocol 1.0 sidebar
 protocol1:
+  - title: "Communication Overview"
+    titlekr: "개요"
+    url: /dxl/protocol1/#communication-overview
+    urlkr: /dxl/protocol1/#개요
   - title: "Instruction Packet"
+    titlekr: "Instruction Packet"
     url: /dxl/protocol1/#instruction-packet
     children:
       - title: "Header"
+        titlekr: "Header"
         url: /dxl/protocol1/#header
       - title: "Packet ID"
+        titlekr: "Packet ID"
         url: /dxl/protocol1/#packet-id
       - title: "Length"
+        titlekr: "Length"
         url: /dxl/protocol1/#length
       - title: "Instruction"
+        titlekr: "Instruction"
         url: /dxl/protocol1/#instruction
       - title: "Parameters"
+        titlekr: "Parameters"
         url: /dxl/protocol1/#parameters
       - title: "Instruction Checksum"
+        titlekr: "Instruction Checksum"
         url: /dxl/protocol1/#instruction-checksum
   - title: "Status Packet"
-    url: /dxl/protocol1/#status-packet
+    titlekr: "Status Packet"
+    url: /dxl/protocol1/#status-packetreturn-packet
     children:
       - title: "Error"
+        titlekr: "Error"
         url: /dxl/protocol1/#error
       - title: "Status Checksum"
+        titlekr: "Status Checksum"
         url: /dxl/protocol1/#status-checksum
   - title: "Instruction Details"
+    titlekr: "Instruction의 종류"
     url: /dxl/protocol1/#instruction-details
+    urlkr: /dxl/protocol1/#instruction의-종류
     children:
       - title: "Ping"
+        titlekr: "Ping"
         url: /dxl/protocol1/#ping
       - title: "Read"
+        titlekr: "Read"
         url: /dxl/protocol1/#read
       - title: "Write"
+        titlekr: "Write"
         url: /dxl/protocol1/#write
       - title: "Reg Write"
+        titlekr: "Reg Write"
         url: /dxl/protocol1/#reg-write
       - title: "Action"
+        titlekr: "Action"
         url: /dxl/protocol1/#action
       - title: "Factory Reset"
+        titlekr: "Factory Reset"
         url: /dxl/protocol1/#factory-reset
       - title: "Sync Write"
+        titlekr: "Sync Write"
         url: /dxl/protocol1/#sync-write
       - title: "Bulk Read"
+        titlekr: "Bulk Read"
         url: /dxl/protocol1/#bulk-read
   - title: "More Packet Examples"
+    titlekr: "추가 예제"
     url: /dxl/protocol1/#more-packet-examples
-  - title: "Communication Overview"
-    url: /dxl/protocol1/#communication-overview
+    urlkr: /dxl/protocol1/#추가-예제
 
 #Protocol 2.0 sidebar
 protocol2:
   - title: "Instruction Packet"
+    titlekr: "Instruction Packet"
     url: /dxl/protocol2/#instruction-packet
     children:
       - title: "Header"
+        titlekr: "Header"
         url: /dxl/protocol2/#header
       - title: "Reserved"
+        titlekr: "Reserved"
         url: /dxl/protocol2/#reserved
       - title: "Packet ID"
+        titlekr: "Packet ID"
         url: /dxl/protocol2/#packet-id
       - title: "Packet Length"
+        titlekr: "Packet Length"
         url: /dxl/protocol2/#packet-length
       - title: "Instruction"
+        titlekr: "Instruction"
         url: /dxl/protocol2/#instruction
       - title: "Parameters"
+        titlekr: "Parameters"
         url: /dxl/protocol2/#parameters
       - title: "CRC"
+        titlekr: "CRC"
         url: /dxl/protocol2/#crc
   - title: "Status Packet"
+    titlekr: "Status Packet"
     url: /dxl/protocol2/#status-packet
     children:
       - title: "Error"
+        titlekr: "Error"
         url: /dxl/protocol2/#error
       - title: "Status Checksum"
+        titlekr: "Status Checksum"
         url: /dxl/protocol2/#status-checksum
   - title: "Packet Process"
+    titlekr: "Packet 처리"
     url: /dxl/protocol2/#packet-process
+    urlkr: /dxl/protocol2/#packet-처리
   - title: "Instruction Details"
+    titlekr: "Instruction의 종류"
     url: /dxl/protocol2/#instruction-details
+    urlkr: /dxl/protocol2/#instruction의-종류
     children:
       - title: "Ping"
+        titlekr: "Ping"
         url: /dxl/protocol2/#ping
       - title: "Read"
+        titlekr: "Read"
         url: /dxl/protocol2/#read
       - title: "Write"
+        titlekr: "Write"
         url: /dxl/protocol2/#write
       - title: "Reg Write"
+        titlekr: "Reg Write"
         url: /dxl/protocol2/#reg-write
       - title: "Action"
+        titlekr: "Action"
         url: /dxl/protocol2/#action
       - title: "Factory Reset"
+        titlekr: "Factory Reset"
         url: /dxl/protocol2/#factory-reset
       - title: "Reboot"
+        titlekr: "Reboot"
         url: /dxl/protocol2/#reboot
       - title: "Sync Read"
+        titlekr: "Sync Read"
         url: /dxl/protocol2/#sync-read
       - title: "Sync Write"
+        titlekr: "Sync Write"
         url: /dxl/protocol2/#sync-write
       - title: "Bulk Read"
+        titlekr: "Bulk Read"
         url: /dxl/protocol2/#bulk-read
       - title: "Bulk Write"
+        titlekr: "Bulk Write"
         url: /dxl/protocol2/#bulk-write
 
 #Ollo Bug Kit sidebar
