@@ -1944,7 +1944,7 @@ Messages and Services used in the [thormang3_walking_module].
   - [SetJointFeedBackGain.srv]{: .popup}
   - [StartWalking.srv]{: .popup}
 
-### [thormang3_head_control_module_msgs](#thormang3_head_control_module_msgs)
+### [thormang3_head_control_module_msgs](#thormang3_head_control_module_msgs) 
 
 Messages used in the [thormang3_head_control_module]
 
