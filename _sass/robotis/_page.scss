@@ -4,6 +4,7 @@ html {
 
 #main {
   margin: 0;
+  padding-bottom: 2em;
   
   @include breakpoint($max-width) {
     max-width: $max-width;
@@ -45,6 +46,7 @@ html {
     max-width: 100%;
     margin: 0 1em;
     padding: 0;
+    padding-bottom: 2em;
   }
   
   #container {

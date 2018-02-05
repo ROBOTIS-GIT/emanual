@@ -3,7 +3,7 @@ CW/CCW Angle Limit의 벗어난 값을 사용하게 되면 Status Packet 중 ERR
 
 ![](/assets/images/dxl/dx/dx_series_goal_position.png)
 
-> 위 그림은 해당 모델의 전면이 기준입니다.
+> 위 그림은 다이나믹셀을 정면에서 보았을 때의 그림입니다.
 
 `참고` 바퀴 모드로 설정되어 있는 경우 이 값은 사용되지 않습니다.
 {: .notice}

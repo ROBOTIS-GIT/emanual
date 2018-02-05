@@ -44,13 +44,16 @@ Profile이란 모터 구동 시 급격하게 변하는 속도와 가속도를 �
 
 ![](/assets/images/dxl/dxl_velocity_profiles.jpg)
 
-`Note` 급격한 가속도의 변화를 최소화하기 위해서 다이나믹셀은 Jerk를 관리하고 있습니다. 따라서 Profile에 의한 목표궤적의 정확한 완료시간은 t3 보다 다소 길어질 수 있습니다.(상기 그림의 t4)
+`Note` 급격한 가속도의 변화를 최소화하기 위해서 다이나믹셀은 Jerk를 관리하고 있습니다. 따라서 Profile에 의한 목표궤적의 정확한 완료시간은 t<sub>3</sub> 보다 다소 길어질 수 있습니다.(상기 그림의 t<sub>4</sub>)
 {: .notice}
 
 
 {% capture group_notice_03 %}
-`Note` 속도 제어 모드에서는 Profile Acceleration(108)만 적용됩니다. 제공되는 Profile의 형태는 Step과 Trapezoidal 2가지 입니다. Velocity Override 기능과 Jerk 관리 기능은 동일하게 동작합니다. 이때의 가속시간(t1)은 다음과 같습니다.
-Goal Velocity(104) / Profile Acceleration(108) * t<sub>1</sub> = 64
+`Note` 속도 제어 모드에서는 Profile Acceleration(108)만 적용됩니다.  
+제공되는 Profile의 형태는 Step과 Trapezoidal 2가지 입니다.  
+Velocity Override 기능과 Jerk 관리 기능은 동일하게 동작합니다.  
+이때의 가속시간(t<sub>1</sub>)은 다음과 같습니다.  
+**t<sub>1</sub> = 64 * {Goal Velocity(104) / Profile Acceleration(108)}**
 {% endcapture %}
 
 <div class="notice">

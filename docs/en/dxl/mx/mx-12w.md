@@ -41,7 +41,7 @@ sidebar:
 ## [Control Table of EEPROM Area](#control-table-of-eeprom-area)
 
 | Address     | Size<br>(Byte)     | Data Name     | Description     | Access     | Initial<br />Value     |
-| :------------- | :------------- | :------------- | :------------- | :------------- | :------------- |
+| :------------: | :------------: | :------------- | :------------- | :------------: | :------------: |
 |0|2|[Model Number](#model-number)         | Model Number       | R       | 104 |
 |2|1|[Firmware Version](#firmware-version)    |Firmware Version|R|-|
 |3|1|[ID](#id)                  |DYNAMIXEL ID      |RW|1|
@@ -63,7 +63,7 @@ sidebar:
 ## [Control Table of RAM Area](#control-table-of-ram-area)
 
 | Address     | Size<br>(Byte)     | Data Name     | Description     | Access     | Initial<br />Value     |
-| :------------- | :------------- | :------------- | :------------- | :------------- | :------------- |
+| :------------: | :------------: | :------------- | :------------- | :------------: | :------------: |
 |24|1|[Torque Enable](#torque-enable)            |Motor Torque On/Off|RW|0|
 |25|1|[LED](#led)                             |Status LED On/Off|RW|0|
 |26|1|[D Gain](#d-gain)   |Derivative Gain|RW|8|
@@ -244,4 +244,4 @@ For example, if it is set to 300 then the motor is moving to the CCW direction a
 ![](/assets/images/dxl/ax/ax-12w_dimension.png)
 
 
-[Compatibility Guide]: http://en.robotis.com/BlueAD/board.php?bbs_id=faq&mode=view&bbs_no=47&page=1&key=&keyword=&sort=&scate=
+[Compatibility Guide]: http://en.robotis.com/service/compatibility_table.php?cate=d
