@@ -103,7 +103,7 @@ Open a new terminal window and execute following commands.
 $ rosrun robot_upstart uninstall JOB_NAME
 ```
 
-## [How to restart the demo program](#how-to-restart-the-demo-pro)
+## [How to restart the demo program](#how-to-restart-the-demo-program)
 
 ### When to restart the demo
 - When camera has lost its connection due to electrical or mechanical issue.  
@@ -121,4 +121,4 @@ $ sudo service OP3-demo restart
 
 
 
-[robot_upstart]:http://wiki.ros.org/robot_upstart
+[robot_upstart]: http://wiki.ros.org/robot_upstart

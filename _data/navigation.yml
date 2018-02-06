@@ -8832,68 +8832,283 @@ op2:
 #ROBOTIS OP3 sidebar
 op3:
   - title: "Introduction"
-    url: /platform/op3/getting_started/#introduction
+    url: /platform/op3/introduction/#introduction
     children:
+    - title: "What is OP3?"
+      url: /platform/op3/introduction/#what-is-op3
     - title: "Safety Information"
-      url: /platform/op3/getting_started/#safety-information
+      url: /platform/op3/introduction/#safety-information
     - title: "Package Contents"
-      url: /platform/op3/getting_started/#package-contents
+      url: /platform/op3/introduction/#package-contents
     - title: "Layout"
-      url: /platform/op3/getting_started/#layout
+      url: /platform/op3/introduction/#layout
     - title: "Charging Battery"
-      url: /platform/op3/getting_started/#charging-battery
+      url: /platform/op3/introduction/#charging-battery
     - title: "Battery Hot Swap"
-      url: /platform/op3/getting_started/#battery-hot-swap
+      url: /platform/op3/introduction/#battery-hot-swap
   - title: "Quick Start"
-    url: /platform/op3/getting_started/#quick-start
+    url: /platform/op3/quick_start/#quick-start
     children:
     - title: "Power On"
-      url: /platform/op3/getting_started/#power-on
+      url: /platform/op3/quick_start/#power-on
     - title: "Execute Demo Program"
-      url: /platform/op3/getting_started/#execute-demo-program
+      url: /platform/op3/quick_start/#execute-demo-program
+      children:
+      - title: "Running Demonstration Programs"
+        url: /platform/op3/quick_start/#running-demonstration-programs
+      - title: "Demonstration Ready Mode"
+        url: /platform/op3/quick_start/#demonstration-ready-mode
+      - title: "Autonomous Mode"
+        url: /platform/op3/quick_start/#autonomous-mode
+      - title: "Interactive Motion Mode"
+        url: /platform/op3/quick_start/#interactive-motion-mode
+      - title: "Vision Processing Mode"
+        url: /platform/op3/quick_start/#vision-processing-mode
     - title: "Camera Calibration"
-      url: /platform/op3/getting_started/#camera-calibration
+      url: /platform/op3/quick_start/#camera-calibration
     - title: "Power Off"
-      url: /platform/op3/getting_started/#power-off
-  - title: "Programming Guide"
-    url: /platform/op3/getting_started/#programming-guide
+      url: /platform/op3/quick_start/#power-off
+    - title: "Programming Guide"
+      url: /platform/op3/quick_start/#programming-guide
+      children:
+      - title: "Connect to OP3"
+        url: /platform/op3/quick_start/#connect-to-op3
+      - title: "Development Environment"
+        url: /platform/op3/quick_start/#development-environment
+      - title: "Source Code"
+        url: /platform/op3/quick_start/#source-code
+      - title: "Framework"
+        url: /platform/op3/quick_start/#framework
+      - title: "Software Utilities"
+        url: /platform/op3/quick_start/#software-utilities
+      - title: "Recovery Software"
+        url: /platform/op3/quick_start/#recovery-software
+      - title: "Useful Information"
+        url: /platform/op3/quick_start/#useful-information
+    - title: "Miscellaneous"
+      url: /platform/op3/quick_start/#miscellaneous
+      children:
+      - title: "System Block Diagram"
+        url: /platform/op3/quick_start/#system-block-diagram
+      - title: "ID Map"
+        url: /platform/op3/quick_start/#id-map
+      - title: "Warranty"
+        url: /platform/op3/quick_start/#warranty
+    - title: "Sub Controller(OpenCR)"
+      url: /platform/op3/quick_start/#sub-controlleropencr
+      children:
+      - title: "Control Table"
+        url: /platform/op3/quick_start/#control-table
+      - title: "EEPROM Area"
+        url: /platform/op3/quick_start/#eeprom-area
+      - title: "RAM Area"
+        url: /platform/op3/quick_start/#ram-area
+      - title: "Address Function Help"
+        url: /platform/op3/quick_start/#address-function-help
+      - title: "GPIO Pin Assignments"
+        url: /platform/op3/quick_start/#gpio-pin-assignments
+  - title: "Getting Started"
+    url: /platform/op3/getting_started/#getting_started
     children:
-    - title: "Connect to OP3"
-      url: /platform/op3/getting_started/#connect-to-op3
-    - title: "Development Environment"
-      url: /platform/op3/getting_started/#development-environment
-    - title: "Source Code"
-      url: /platform/op3/getting_started/#source-code
-    - title: "Framework"
-      url: /platform/op3/getting_started/#framework
-    - title: "Software Utilities"
-      url: /platform/op3/getting_started/#software-utilities
-    - title: "Recovery Software"
-      url: /platform/op3/getting_started/#recovery-software
-    - title: "Useful Information"
-      url: /platform/op3/getting_started/#useful-information
-  - title: "Miscellaneous"
-    url: /platform/op3/getting_started/#miscellaneous
+    - title: "How to connect"
+      url: /platform/op3/getting_started/#how-to-connect
+    - title: "How to Kill the demo program"
+      url: /platform/op3/getting_started/#how-to-kill-the-demo-program
+    - title: "How to Restart the demo program"
+      url: /platform/op3/getting_started/#how-to-restart-the-demo-program
+  - title: "Robotis Ros Packages"
+    url: /platform/op3/robotis_ros_packages/#robotis-ros-packages
     children:
-    - title: "System Block Diagram"
-      url: /platform/op3/getting_started/#system-block-diagram
-    - title: "ID Map"
-      url: /platform/op3/getting_started/#id-map
-    - title: "Warranty"
-      url: /platform/op3/getting_started/#warranty
-  - title: "Sub Controller(OpenCR)"
-    url: /platform/op3/getting_started/#sub-controlleropencr
+    - title: "ROBOTIS OP3"
+      url: /platform/op3/robotis_ros_packages/#robotis-op3
+    - title: "ROBOTIS OP3 msgs"
+      url: /platform/op3/robotis_ros_packages/#robotis-op3-msgs
+    - title: "ROBOTIS OP3 Demo"
+      url: /platform/op3/robotis_ros_packages/#robotis-op3-Demo
+    - title: "ROBOTIS OP3 Common"
+      url: /platform/op3/robotis_ros_packages/#robotis-op3-common
+    - title: "ROBOTIS OP3 Tools"
+      url: /platform/op3/robotis_ros_packages/#robotis-op3-tools
+  - title: "Tutorials"
+    url: /platform/op3/tutorials/#tutorials
     children:
-    - title: "Control Table"
-      url: /platform/op3/getting_started/#control-table
-    - title: "EEPROM Area"
-      url: /platform/op3/getting_started/#eeprom-area
-    - title: "RAM Area"
-      url: /platform/op3/getting_started/#ram-area
-    - title: "Address Function Help"
-      url: /platform/op3/getting_started/#address-function-help
-    - title: "GPIO Pin Assignments"
-      url: /platform/op3/getting_started/#gpio-pin-assignments
+    - title: "How to run OP3's program"
+      url: /platform/op3/tutorials/#how-to-run-op3's-program
+    - title: "How to execute Default Demo"
+      url: /platform/op3/tutorials/#how-to-execute-default-demo
+    - title: "How to execute GUI program"
+      url: /platform/op3/tutorials/#how-to-execute-gui-program
+      children:
+      - title: "How to use walking tuner"
+        url: /platform/op3/tutorials/#how-to-use-walking-tuner
+      - title: "How to play the motions"
+        url: /platform/op3/tutorials/#how-to-play-the-motions
+      - title: "How to control the head joints"
+        url: /platform/op3/tutorials/#how-to-control-the-head-joints
+      - title: "How to control upgraded walking"
+        url: /platform/op3/tutorials/#how-to-control-upgraded-walkingonline-walking
+    - title: "How to use offset tuner"
+      url: /platform/op3/tutorials/#how-to-use-offset-tuner
+    - title: "How to create the motions"
+      url: /platform/op3/tutorials/#how-to-create-the-motions
+    - title: "How to use ball detector"
+      url: /platform/op3/tutorials/#how-to-use-ball-detector
+    - title: "How to control upgraded walking"
+      url: /platform/op3/tutorials/#how-to-control-upgraded-walking-using-footstep-planner
+  - title: "Simulation"
+    url: /platform/op3/simulation/#simulation
+    children:
+    - title: "Gazebo Installation"
+      url: /platform/op3/simulation/#gazebo-installation
+    - title: "How to execute Gazebo Simulation"
+      url: /platform/op3/simulation/#how-to-execute-gazebo-simulation
+  - title: "Hardware"
+    url: /platform/op3/hardware/#hardware
+    children:
+    - title: "Assemble Data"
+      url: /platform/op3/hardware/#assemble-data
+    - title: "Cover Skin Data"
+      url: /platform/op3/hardware/#cover-skin-data
+  - title: "Recovery"
+    url: /platform/op3/getting_started/#recovery
+  - title: "Manual Installation"
+    url: /platform/op3/getting_started/#manual-installation
+  - title: "Recovery of ROBOTIS-OP3"
+    url: /platform/op3/getting_started/#recovery-of-robotis-op3
+  - title: ""
+    url: /platform/op3/getting_started/#
+  - title: ""
+    url: /platform/op3/getting_started/#
+  - title: ""
+    url: /platform/op3/getting_started/#
+  - title: ""
+    url: /platform/op3/getting_started/#
+  - title: ""
+    url: /platform/op3/getting_started/#
+  - title: ""
+    url: /platform/op3/getting_started/#
+  - title: ""
+    url: /platform/op3/getting_started/#
+  - title: ""
+    url: /platform/op3/getting_started/#
+  - title: ""
+    url: /platform/op3/getting_started/#
+  - title: ""
+    url: /platform/op3/getting_started/#
+  - title: ""
+    url: /platform/op3/getting_started/#
+  - title: ""
+    url: /platform/op3/getting_started/#
+  - title: ""
+    url: /platform/op3/getting_started/#
+  - title: ""
+    url: /platform/op3/getting_started/#
+  - title: ""
+    url: /platform/op3/getting_started/#
+  - title: ""
+    url: /platform/op3/getting_started/#
+  - title: ""
+    url: /platform/op3/getting_started/#
+  - title: ""
+    url: /platform/op3/getting_started/#
+  - title: ""
+    url: /platform/op3/getting_started/#
+  - title: ""
+    url: /platform/op3/getting_started/#
+  - title: ""
+    url: /platform/op3/getting_started/#
+  - title: ""
+    url: /platform/op3/getting_started/#
+  - title: ""
+    url: /platform/op3/getting_started/#
+  - title: ""
+    url: /platform/op3/getting_started/#
+  - title: ""
+    url: /platform/op3/getting_started/#
+  - title: ""
+    url: /platform/op3/getting_started/#
+  - title: ""
+    url: /platform/op3/getting_started/#
+  - title: ""
+    url: /platform/op3/getting_started/#
+  - title: ""
+    url: /platform/op3/getting_started/#
+  - title: ""
+    url: /platform/op3/getting_started/#
+  - title: ""
+    url: /platform/op3/getting_started/#
+  - title: ""
+    url: /platform/op3/getting_started/#
+  - title: ""
+    url: /platform/op3/getting_started/#
+  - title: ""
+    url: /platform/op3/getting_started/#
+  - title: ""
+    url: /platform/op3/getting_started/#
+  - title: ""
+    url: /platform/op3/getting_started/#
+  - title: ""
+    url: /platform/op3/getting_started/#
+  - title: ""
+    url: /platform/op3/getting_started/#
+  - title: ""
+    url: /platform/op3/getting_started/#
+  - title: ""
+    url: /platform/op3/getting_started/#
+  - title: ""
+    url: /platform/op3/getting_started/#
+  - title: ""
+    url: /platform/op3/getting_started/#
+  - title: ""
+    url: /platform/op3/getting_started/#
+  - title: ""
+    url: /platform/op3/getting_started/#
+  - title: ""
+    url: /platform/op3/getting_started/#
+  - title: ""
+    url: /platform/op3/getting_started/#
+  - title: ""
+    url: /platform/op3/getting_started/#
+  - title: ""
+    url: /platform/op3/getting_started/#
+  - title: ""
+    url: /platform/op3/getting_started/#
+  - title: ""
+    url: /platform/op3/getting_started/#
+  - title: ""
+    url: /platform/op3/getting_started/#
+  - title: ""
+    url: /platform/op3/getting_started/#
+  - title: ""
+    url: /platform/op3/getting_started/#
+  - title: ""
+    url: /platform/op3/getting_started/#
+  - title: ""
+    url: /platform/op3/getting_started/#
+  - title: ""
+    url: /platform/op3/getting_started/#
+  - title: ""
+    url: /platform/op3/getting_started/#
+  - title: ""
+    url: /platform/op3/getting_started/#
+  - title: ""
+    url: /platform/op3/getting_started/#
+  - title: ""
+    url: /platform/op3/getting_started/#
+  - title: ""
+    url: /platform/op3/getting_started/#
+  - title: ""
+    url: /platform/op3/getting_started/#
+  - title: ""
+    url: /platform/op3/getting_started/#
+  - title: ""
+    url: /platform/op3/getting_started/#
+  - title: ""
+    url: /platform/op3/getting_started/#
+  - title: ""
+    url: /platform/op3/getting_started/#
+  - title: ""
+    url: /platform/op3/getting_started/#
 
 #THORMANG3
 thormang3:
