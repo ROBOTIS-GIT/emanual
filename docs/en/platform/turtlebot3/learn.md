@@ -41,14 +41,14 @@ This lecture is made by [the Construct](http://www.theconstructsim.com/)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/rV-POzbzoHc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-  - [ROS Courses](https://www.youtube.com/watch?v=ot_D9N-H4lQ&list=PLRG6WP3c31_VIFtFAxSke2NG_DumVZPgw) [KOR]
-  
-  English version will be comming soon.
+  - [ROS Courses](https://www.youtube.com/playlist?list=PLRG6WP3c31_VIFtFAxSke2NG_DumVZPgw) [KR]
+  - ROS Courses [EN] (English version will be comming soon.)
 
 ## [Books](#books)
 
 ![](/assets/images/platform/turtlebot3/learn/ros_robot_programming.png)
 
-  - [ROS Robot Programming](http://book.naver.com/bookdb/book_detail.nhn?bid=12443870) [KOR]
-
-   English, Chinese and Japanese version will be comming soon.
+  - ROS Robot Programming [EN] (comming soon)
+  - ROS Robot Programming [CN] (comming soon)
+  - [ROS Robot Programming](http://book.naver.com/bookdb/book_detail.nhn?bid=12443870) [KR]
+  - ROS Robot Programming [JP] (comming soon)
