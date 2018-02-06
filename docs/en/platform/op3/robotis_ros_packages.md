@@ -5,13 +5,13 @@ ref: op3_robotis_ros_packages
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/op3/op3_wiki/robotis_ros_packages/
+permalink: /docs/en/platform/op3/robotis_ros_packages/
 sidebar:
   title: ROBOTIS-OP3
   nav: "op3"
 ---
 
-<div style="counter-reset: h1 2"></div>
+<div style="counter-reset: h1 3"></div>
 
 # [Robotis Ros Packages](#robotis-ros-packages)
 

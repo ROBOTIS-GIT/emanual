@@ -5,13 +5,13 @@ ref: op3_hardware
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/op3/op3_wiki/hardware/
+permalink: /docs/en/platform/op3/hardware/
 sidebar:
   title: ROBOTIS-OP3
   nav: "op3"
 ---
 
-<div style="counter-reset: h1 5"></div>
+<div style="counter-reset: h1 6"></div>
 
 # [Hardware](#hardware)
 

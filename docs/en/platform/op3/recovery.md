@@ -5,13 +5,13 @@ ref: op3_recovery
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/op3/op3_wiki/recovery/
+permalink: /docs/en/platform/op3/recovery/
 sidebar:
   title: ROBOTIS-OP3
   nav: "op3"
 ---
 
-<div style="counter-reset: h1 6"></div>
+<div style="counter-reset: h1 7"></div>
 
 # [Recovery](#recovery)
 
