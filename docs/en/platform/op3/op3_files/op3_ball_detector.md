@@ -5,7 +5,7 @@ The package utilizes OpenCV library in order to search for a ball with a specifi
 
 ### 2. Getting started
 #### 2.1 Download & Build
- > Reference : [Installing ROBOTIS ROS Package](OP3_Recovery of ROBOTIS_OP3#24_installation_robotis_ros_packages.md)    
+ > Reference : [Installing ROBOTIS ROS Package]    
 
 #### 2.2 Run
 - Standalone   
@@ -19,7 +19,7 @@ Execute the program with a `.launch` file in order to load ROS parameters.
    ```
    $ roslaunch ball_detector ball_detector_from_usb_cam.launch
    ```
-  > Reference : [`usb_cam`](http://wiki.ros.org/usb_cam)  
+  > Reference : [`usb_cam`]  
   > Reference : The following software must be pre-installed to use `usb_cam` package.  
   > `$ sudo apt-get install v4l-utils`
 
@@ -77,7 +77,7 @@ Execute the program with a `.launch` file in order to load ROS parameters.
 
 `/filter_h_min`, `/filter_h_max`(int, default : )  
 &emsp;&emsp; Minimum and maximum value of H filter in HSV color representation  
-> Reference : [HSV color](https://en.wikipedia.org/wiki/HSL_and_HSV)
+> Reference : [HSV color]
 
 `/filter_s_min`, `/filter_s_max`(int, default : )  
 &emsp;&emsp; Minimum and maximum value of S filter in HSV color representation  
@@ -109,3 +109,6 @@ Execute the program with a `.launch` file in order to load ROS parameters.
 [std_msgs/Header]:/docs/en/popup/std_msgs_Header/
 [geometry_msgs/Point]:/docs/en/popup/geometry_msgs_Point_msg/
 [&lt;&lt; Back]:[ROBOTIS-OP3-Demo.md]
+[Installing ROBOTIS ROS Package]:OP3_Recovery_of_ROBOTIS_OP3#24_installation_robotis_ros_packages.md
+[`usb_cam`]:http://wiki.ros.org/usb_cam
+[HSV color]:https://en.wikipedia.org/wiki/HSL_and_HSV

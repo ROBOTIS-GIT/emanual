@@ -11,13 +11,13 @@ OP3 will use its camera to find and keep looking at the detected face.
 The followings are ROS APIs used only in vision demo.
 
 #### 3.1 Subscribed Topics
-`/face_tracker/command"`([std_msgs/String])  
+`/face_tracker/command"`([std_msgs/String]{: .popup})  
 &emsp;&emsp; This message controls vision demo
 
-`/robotis/open_cr/button"`([std_msgs/String])  
+`/robotis/open_cr/button"`([std_msgs/String]{: .popup})  
 &emsp;&emsp; This message processes button maneuver
 
-`/faceCoord"`([std_msgs/Int32MultiArray])  
+`/faceCoord"`([std_msgs/Int32MultiArray]{: .popup})  
 &emsp;&emsp; This message contains face information that ROBOTIS-OP3 will be looking at
 - faceCoord[0] : fps
 - faceCoord[1] : face size
@@ -50,7 +50,7 @@ The followings are ROS APIs used only in vision demo.
 
 <br>[&lt;&lt; Back](op3_demo.md)
 
-[How to execute Default Demo]:[OP3-How-to-execute-Default-Demo.md]
+[How to execute Default Demo]:OP3-How-to-execute-Default-Demo.md
 [std_msgs/String]:/docs/en/popup/std_msgs_string/
 [std_msgs/Int32]:/docs/en/popup/std_msgs_int32_message/
 [std_msgs/Int32MultiArray]:/docs/en/popup/std_msgs_Int32MultiArray_msg/

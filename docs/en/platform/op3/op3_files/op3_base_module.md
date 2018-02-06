@@ -5,7 +5,7 @@ This module is compiled to a library to be used in [op3_manager].
 
 ### 2. Getting started  
 #### 2.1 Download & Build  
- > Reference : [Installing ROBOTIS ROS Package](OP3_Recovery_of_ROBOTIS_OP3#24_installation_robotis_ros_packages)    
+ > Reference : [Installing ROBOTIS ROS Package]
 
 #### 2.2 Usage  
 The Motion Module is used in the manager in the form of library.  
@@ -45,3 +45,5 @@ The Motion Module is used in the manager in the form of library.
 
 [op3_manager]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_manager
 [robotis_controller_msgs/StatusMsg]:/docs/en/popup/StatusMsg.msg/
+
+[Installing ROBOTIS ROS Package]:OP3_Recovery_of_ROBOTIS_OP3#24_installation_robotis_ros_packages    

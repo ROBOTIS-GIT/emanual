@@ -4,7 +4,7 @@ OP3 will search for a colored ball that is defined by the user, and play with it
 
 ### 2. Getting started
 #### 2.1 Usage
- > Reference : [How to execute Default Demo](OP3-How-to-execute-Default-Demo.md)
+ > Reference : [How to execute Default Demo]
 
 
 ### 3. ROS API
@@ -12,52 +12,52 @@ The followings are ROS APIs used only in the soccer demo.
 
 #### 3.1 Subscribed Topics
 - Soccer demo  
-  `/ball_tracker/command"`([std_msgs/String])  
+  `/ball_tracker/command"`([std_msgs/String]{: .popup})  
   &emsp;&emsp; This message controls soccer demo
 
-  `/robotis/open_cr/button"`([std_msgs/String])  
+  `/robotis/open_cr/button"`([std_msgs/String]{: .popup})  
   &emsp;&emsp; This message processes button maneuver
 
-  `/robotis/open_cr/imu"`([sensor_msgs/Imu])  
+  `/robotis/open_cr/imu"`([sensor_msgs/Imu]{: .popup})  
   &emsp;&emsp; This message contains IMU data to detect when ROBOTIS-OP3 falls down.
 
 - Ball Tracking  
-  `/ball_detector_node/circle_set"`([ball_detector/circleSetStamped])  
+  `/ball_detector_node/circle_set"`([ball_detector/circleSetStamped]{: .popup})  
   &emsp;&emsp; This message contains location and size of the ball.
 
 
 - Ball Following  
-  `/robotis/goal_joint_states`([sensor_msgs/JointState])  
+  `/robotis/goal_joint_states`([sensor_msgs/JointState]{: .popup})  
   &emsp;&emsp; This message acquires current head joint states and use them to calculate for goal joint states to look at the ball.   
 
 
 
 #### 3.2 Published Topics
 - Soccer demo  
-  `/robotis/set_joint_ctrl_modules`([robotis_controller_msgs/JointCtrlModule])  
+  `/robotis/set_joint_ctrl_modules`([robotis_controller_msgs/JointCtrlModule]{: .popup})  
   &emsp;&emsp; This message configures joint control modules to operate ROBOTIS-OP3.  
 
-  `/robotis/action/page_num`([std_msgs/Int32])  
+  `/robotis/action/page_num`([std_msgs/Int32]{: .popup})  
   &emsp;&emsp; This message transfers page number to action_module to initiate actions such as kicking, standing up.  
 
 - Ball Tracking  
-  `/robotis/head_control/set_joint_states_offset`([sensor_msgs/JointState])  
+  `/robotis/head_control/set_joint_states_offset`([sensor_msgs/JointState]{: .popup})  
   &emsp;&emsp; This message informs head_control_module about joint state offset to look at the ball that is detected in the image.
 
-  `/robotis/head_control/scan_command`([std_msgs/String])  
+  `/robotis/head_control/scan_command`([std_msgs/String]{: .popup})  
   &emsp;&emsp; This message commands OP3 to look around for searching a ball.   
 
 - Ball Following  
-  `/robotis/walking/command"`([std_msgs/String])  
+  `/robotis/walking/command"`([std_msgs/String]{: .popup})  
   &emsp;&emsp; This message commands walking module of OP3 to walk toward the ball.
 
-  `/robotis/walking/set_params"`([op3_walking_module_msgs/WalkingParam])  
+  `/robotis/walking/set_params"`([op3_walking_module_msgs/WalkingParam]{: .popup})  
   &emsp;&emsp; This message configures walking parameters in the walking module to follow the ball.
 
 
 #### 3.3 Services
 - Ball Following  
-  `/robotis/walking/get_params`([op3_walking_module_msgs/GetWalkingParam])  
+  `/robotis/walking/get_params`([op3_walking_module_msgs/GetWalkingParam]{: .popup})  
   &emsp;&emsp; This service acquires walking parameters  
 
 
@@ -82,3 +82,5 @@ The followings are ROS APIs used only in the soccer demo.
 [std_msgs/String]:/docs/en/popup/std_msgs_string/
 [op3_walking_module_msgs/WalkingParam]:/docs/en/popup/op3_WalkingParam.msg/
 [op3_walking_module_msgs/GetWalkingParam]:/docs/en/popup/op3_GetWalkingParam.srv/
+
+[How to execute Default Demo]:OP3-How-to-execute-Default-Demo.md

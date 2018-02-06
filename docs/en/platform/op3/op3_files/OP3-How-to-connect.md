@@ -6,7 +6,8 @@ Keyboard and monitor are directly connected to ROBOTIS-OP3.
 
 
 ### 3. Remote Connection
-<img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_connection.png?raw=true"/>   
+
+![](/assets/images/platform/op3/op3_connection.png)
 
    **Connect to ROBOTIS-OP3 over the network.**  
 
@@ -27,15 +28,15 @@ Keyboard and monitor are directly connected to ROBOTIS-OP3.
     3. Select SSH as a connection type and then open it.
     4. Input ROBOTIS-OP3’s user name : robotis
     5. Input ROBOTIS-OP3’s password : 111111  
-    <img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_connection_ssh.png?raw=true"/>  
 
+    ![](/assets/images/platform/op3/op3_connection_ssh.png)
  - VNC
     1. Execute VNC client program (ex: Ultra VNC Viewer)
     2. Input ROBOTIS-OP3’s IP address : 10.42.0.1
     3. Input ROBOTIS-OP3’s password : 111111
     4. Accessing ROBOTIS-OP3 via remote desktop may result in slower performance.
-    <img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_connection_vnc.png?raw=true"/>  
 
+    ![](/assets/images/platform/op3/op3_connection_vnc.png)
 
 
 

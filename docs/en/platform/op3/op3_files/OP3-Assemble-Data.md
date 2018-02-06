@@ -4,8 +4,8 @@ ROBOTIS provides STP files for ROBOTIS-OP3 parts and assembly. Users can view fr
 
 
 ### 2. Description
-<img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_assemble_data.png?raw=true" height="30%"/>
 
+![](/assets/images/platform/op3/op3_assemble_data.png)
 
 ### 3. File
  > Reference : [Download]

@@ -2,24 +2,24 @@
 Messages and Services used in the [op3_online_walking_module]  
 
 ### 2. ROS Message Type
-* [FootStepArray.msg]
-* [FootStepCommand.msg]
-* [JointPose.msg]
-* [KinematicsPose.msg]
-* [PreviewRequest.msg]
-* [PreviewResponse.msg]
-* [Step2D.msg]
-* [Step2DArray.msg]
-* [WalkingParam.msg]
+* [FootStepArray.msg]{: .popup}
+* [FootStepCommand.msg]{: .popup}
+* [JointPose.msg]{: .popup}
+* [KinematicsPose.msg]{: .popup}
+* [PreviewRequest.msg]{: .popup}
+* [PreviewResponse.msg]{: .popup}
+* [Step2D.msg]{: .popup}
+* [Step2DArray.msg]{: .popup}
+* [WalkingParam.msg]{: .popup}
 
 ### 3. ROS Service Type  
-* [GetJointPose.srv]
-* [GetKinematicsPose.srv]
-* [GetPreviewMatrix.srv]
+* [GetJointPose.srv]{: .popup}
+* [GetKinematicsPose.srv]{: .popup}
+* [GetPreviewMatrix.srv]{: .popup}
 
 <br>[&lt;&lt; Back]
 
-[op3_online_walking_module]:[op3_online_walking_module.md]
+[op3_online_walking_module]:op3_online_walking_module.md
 [FootStepArray.msg]:/docs/en/popup/op3_FootStepArray.msg/  
 [FootStepCommand.msg]:/docs/en/popup/op3_FootStepCommand.msg/
 [JointPose.msg]:/docs/en/popup/op3_JointPose.msg/  
@@ -34,4 +34,4 @@ Messages and Services used in the [op3_online_walking_module]
 [GetKinematicsPose.srv]:/docs/en/popup/op3_GetKinematicsPose.srv/
 [GetPreviewMatrix.srv]:/docs/en/popup/op3_GetPreviewMatrix.srv/
 
-[&lt;&lt; Back]:[ROBOTIS-OP3-msgs.md]
+[&lt;&lt; Back]:ROBOTIS-OP3-msgs.md

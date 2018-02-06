@@ -1,11 +1,11 @@
 ### 1. Overview  
 `op3_manager` package applies ROBOTIS Framework to ROBOTIS OP3.  
 Refer to the below link to create a new robot manager.  
-> Reference : [Creating new robot manager](Creating_new_robot_manager.md)
+> Reference : [Creating new robot manager]
 
 ### 2. Getting started  
 #### 2.1 Download & Build  
- > Reference : [Installation ROBOTIS ROS Package](OP3_Recovery_of_ROBOTIS_OP3#24_installation_robotis_ros_packages.md)  
+ > Reference : [Installation ROBOTIS ROS Package]
 
 #### 2.2. Run  
 Execute the program with a `.launch` file in order to load ROS parameters.  
@@ -104,11 +104,11 @@ controller->startTimer();
 [&lt;&lt; Back]
 
 [Creating new robot manager]:[Creating-new-robot-manager.md]
-[op3_action_module]:[op3_action_module.md]
-[op3_base_module]:[op3_base_module.md]
-[op3_head_control_module]:[op3_head_control_module.md]
-[op3_walking_module]:[op3_walking_module.md]
-[op3_online_walking_module]:[op3_online_walking_module.md]
-[open_cr_module]:[open_cr_module.md]
-
-[&lt;&lt; Back]:[OP3-User's-Guide.md]
+[op3_action_module]:op3_action_module.md
+[op3_base_module]:op3_base_module.md
+[op3_head_control_module]:op3_head_control_module.md
+[op3_walking_module]:op3_walking_module.md
+[op3_online_walking_module]:op3_online_walking_module.md
+[open_cr_module]:open_cr_module.md
+[Installation ROBOTIS ROS Package]:OP3_Recovery_of_ROBOTIS_OP3#24_installation_robotis_ros_packages.md
+[&lt;&lt; Back]:OP3-User's-Guide.md

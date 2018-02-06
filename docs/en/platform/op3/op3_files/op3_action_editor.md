@@ -10,7 +10,7 @@ The action file contains 256 pages. Each page can store up to 7 stages (or steps
 
 ### 2. Getting started
 #### 2.1 Download & Build
- > Reference : [Installing ROBOTIS ROS Package](OP3_Recovery_of_ROBOTIS_OP3#24_installation_robotis_ros_packages.md)  
+ > Reference : [Installing ROBOTIS ROS Package]  
 
 #### 2.2 Run
 Execute the launch file.  
@@ -21,7 +21,8 @@ $ roslaunch op3_action_editor op3_action_editor.launch
 ```  
 
 #### 2.3 UI
-<img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-THORMANG3/thormang3_action_editor_tui.jpg?raw=true" width="100%" />  
+
+![](/assets/images/platform/op3/thormang3_action_editor_tui.jpg)
 
 **Page number**: Page number is the listed page number. If user wants to create a new action poses, user can use any empty page.  
 **Page title**: ROBOTIS recommends user to use a page title when creating a new action on an empty page.  
@@ -61,7 +62,8 @@ The below table shows the contents of the default action file.
 
 #### 2.5 Basic Command of Action Editor
 After typing "help", the commend list will appear as shown below.  
-<img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-THORMANG3/thormang3_action_editor_tui_command_list.jpg?raw=true" width="90%" />  
+
+![](/assets/images/platform/op3/thormang3_action_editor_tui_command_list.jpg)
 
 **exit**: exits the program.  
 **re**: refreshes the screen.  
@@ -87,28 +89,24 @@ After typing "help", the commend list will appear as shown below.
 #### 2.6 Example Action editing with op3_action_editor
 1) Run the op3_action_editor  
 2) Find the page where the "walking_init page" is by typing "list"  
-
-<img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/raw/master/wiki-images/ROBOTIS-THORMANG3/thormang3_action_editor_tui_action_editing_example1.jpg?raw=true" width="90%" />
+  ![](/assets/images/platform/op3/thormang3_action_editor_tui_action_editing_example1.jpg)
 
 3) Exit the list and go to any blank page by typing "page [x]"(for example, page 15).
-<img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/raw/master/wiki-images/ROBOTIS-THORMANG3/thormang3_action_editor_tui_action_editing_example2.jpg?raw=true" width="90%"/>  
+  ![](/assets/images/platform/op3/thormang3_action_editor_tui_action_editing_example2.jpg)
 
 4) And copy the page 1 to page [x].  
-<img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/raw/master/wiki-images/ROBOTIS-THORMANG3/thormang3_action_editor_tui_action_editing_example3.jpg?raw=true" width="90%"/>  
+  ![](/assets/images/platform/op3/thormang3_action_editor_tui_action_editing_example3.jpg)
 
-6) Go to "walking_init" pose by typing "play"  
+3) Go to "walking_init" pose by typing "play"  
 
 5) Turn off the torque of ID 2, 4 and 8 by typing "off 2 4 8"  
-
-<img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/raw/master/wiki-images/ROBOTIS-THORMANG3/thormang3_action_editor_tui_action_editing_example4.jpg?raw=true" width="90%"/>  
+  ![](/assets/images/platform/op3/thormang3_action_editor_tui_action_editing_example4.jpg)
 
 6) After getting the desired pose turn torque on again by simple typing on. And insert the pose to step 1 by typing "i 1"  
-
-<img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/raw/master/wiki-images/ROBOTIS-THORMANG3/thormang3_action_editor_tui_action_editing_example5.jpg?raw=true" width="90%"/>  
+  ![](/assets/images/platform/op3/thormang3_action_editor_tui_action_editing_example5.jpg)
 
 7) Edit "Pause Time", "Time" of STP1 and "Page Step" as shown below.  
-
-<img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/raw/master/wiki-images/ROBOTIS-THORMANG3/thormang3_action_editor_tui_action_editing_example6.jpg?raw=true" width="90%"/>  
+  ![](/assets/images/platform/op3/thormang3_action_editor_tui_action_editing_example6.jpg)
 
 8) Type "play" and check the ROBOTIS-OP3's action  
 
@@ -118,3 +116,5 @@ After typing "help", the commend list will appear as shown below.
 
 [op3_action_module]:[op3_action_module]
 [&lt;&lt; Back]:[ROBOTIS-OP3-Tools.md]
+
+[Installing ROBOTIS ROS Package]:OP3_Recovery_of_ROBOTIS_OP3#24_installation_robotis_ros_packages.md

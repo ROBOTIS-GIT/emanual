@@ -8,7 +8,7 @@ Walking tuner function is included in the [op3_gui_demo].
 
 ### 2. Getting started
 #### 2.1 Download & Build
- > Reference : [Installing ROBOTIS ROS Package](OP3_Recovery_of_ROBOTIS_OP3#24_installation_robotis_ros_packages.md)  
+ > Reference : [Installing ROBOTIS ROS Package]  
 
  > Reference : `libncurses5-dev` must be pre-installed in order to build `op3_walking_tuner`.  
     ```
@@ -25,14 +25,16 @@ $ roslaunch op3_walking_tuner op3_walking_tuner.launch
 
 
 #### 2.3 UI
-<img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_walk_tuner.png?raw=true" align="bottom"/>
 
+![](/assets/images/platform/op3/op3_walk_tuner.png)
 
 #### 2.4 Usage
 Please refer to [How to use walking tuner].
 
 <br>[&lt;&lt; Back](ROBOTIS-OP3-Tools.md)
 
-[op3_gui_demo]:[OP3-How-to-use-walking-tuner.md]
-[op3_gui_demo]:[op3_gui_demo.md]
-[How to use walking tuner]:[OP3-How-to-use-walking-tuner.md]
+[op3_gui_demo]:OP3-How-to-use-walking-tuner.md
+[op3_gui_demo]:op3_gui_demo.md
+[How to use walking tuner]:OP3-How-to-use-walking-tuner.md
+
+[Installing ROBOTIS ROS Package]:OP3_Recovery_of_ROBOTIS_OP3#24_installation_robotis_ros_packages.md

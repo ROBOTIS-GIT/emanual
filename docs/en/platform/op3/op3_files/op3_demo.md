@@ -6,7 +6,7 @@ Face detection and tracking will be demonstrated for vision.
 
 ### 2. Getting started
 #### 2.1 Download & Build
- > Reference : [Installing ROBOTIS ROS Package](OP3_Recovery_of_ROBOTIS_OP3#24_installation_robotis_ros_packages.md)  
+ > Reference : [Installing ROBOTIS ROS Package]  
 
 #### 2.2 Run
 - Execute `.launch` file to initiate demonstration  
@@ -16,7 +16,7 @@ Face detection and tracking will be demonstrated for vision.
 - With a successful launch of the program, OP3 will announce that it is ready for the demonstration.  
 
 #### 2.3 Usage
- > Reference : [How to execute Default Demo](OP3_How_to_execute_Default_Demo.md)  
+ > Reference : [How to execute Default Demo]
 
 - Button Functions  
 From the left, each button is assigned for Mode, Start, User and Reset.  
@@ -58,13 +58,13 @@ ROS APIs used in each demo will be explained in corresponding wiki pages.
 ### 4. Demo
 The followings are the list of available demonstration.  
 Buttons on the back of ROBOTIS-OP3 can be used to select and play demo.  
-#### 4.1 [Soccer Demo](op3_soccer_demo.md)
+#### 4.1 [Soccer Demo]
   OP3 will search for a colored ball selected by the user and play with it.
 
-#### 4.2 [Vision Demo](op3_vision_demo.md)
+#### 4.2 [Vision Demo]
   OP3 will detect face and trace it.
 
-#### 4.3 [Action Demo](op3_action_demo.md)
+#### 4.3 [Action Demo]
   OP3 will play sequence of pre-defined actions while speaking.
 
 
@@ -72,3 +72,8 @@ Buttons on the back of ROBOTIS-OP3 can be used to select and play demo.
 <br>[&lt;&lt; Back](ROBOTIS-OP3-Demo.md)
 
 [std_msgs/String]:/docs/en/popup/std_msgs_string/
+[Installing ROBOTIS ROS Package]:OP3_Recovery_of_ROBOTIS_OP3#24_installation_robotis_ros_packages.md
+[How to execute Default Demo]:OP3_How_to_execute_Default_Demo.md
+[Soccer Demo]:op3_soccer_demo.md
+[Vision Demo]:op3_vision_demo.md
+[Action Demo]:op3_action_demo.md

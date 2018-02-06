@@ -31,7 +31,7 @@ $ catkin_create_pkg thormang3_manager std_msgs roscpp
 #### 2.1. The Code
 Create below cpp file in the `thormang3_manager` package.
 
-:link: [_`thormang3_manager/src/thormang3_manager.cpp`_](https://github.com/ROBOTIS-GIT/ROBOTIS-THORMANG-MPC/blob/master/thormang3_manager/src/thormang3_manager.cpp)
+:link: [_`thormang3_manager/src/thormang3_manager.cpp`_]
 ```cpp
 #include "robotis_controller/robotis_controller.h"
 
@@ -56,13 +56,13 @@ int main(int argc, char **argv)
     ROS_INFO("manager->init");
     robotis_framework::RobotisController *controller = robotis_framework::RobotisController::getInstance();
 
-    /* Load ROS Parameter */
+    /* Load ROS Parameter*/
     std::string offset_file = nh.param<std::string>("offset_file_path", "");
     std::string robot_file  = nh.param<std::string>("robot_file_path", "");
 
     std::string init_file   = nh.param<std::string>("init_file_path", "");
 
-    /* gazebo simulation */
+    /* gazebo simulation*/
     controller->gazebo_mode_ = nh.param<bool>("gazebo", false);
     if(controller->gazebo_mode_ == true)
     {
@@ -89,10 +89,10 @@ int main(int argc, char **argv)
 
     sleep(1);
 
-    /* Add Sensor Module */
+    /* Add Sensor Module*/
     controller->addSensorModule((robotis_framework::SensorModule*)FeetForceTorqueSensor::getInstance());
 
-    /* Add Motion Module */
+    /* Add Motion Module*/
     controller->addMotionModule((robotis_framework::MotionModule*)BaseModule::getInstance());
     controller->addMotionModule((robotis_framework::MotionModule*)ActionModule::getInstance());
     controller->addMotionModule((robotis_framework::MotionModule*)ManipulationModule::getInstance());
@@ -239,7 +239,7 @@ Below is the contents of automatically generated `package.xml` file with removed
 
 </package>
 ```
-For more details about the `package.xml` file, please refer to [`catkin/package.xml`](http://wiki.ros.org/catkin/package.xml).
+For more details about the `package.xml` file, please refer to [`catkin/package.xml`].
 
 #### 3.2. `CMakeLists.txt`
 Below is the contents of automatically generated `CMakeLists.txt` file with removed comments and examples.
@@ -285,7 +285,7 @@ target_link_libraries(thormang3_manager
   ${catkin_LIBRARIES}
 )
 ```
-For more details about the `CMakeLists.txt` file, please refer to [`catkin_make/CMakeLists.txt`](http://wiki.ros.org/catkin/CMakeLists.txt).
+For more details about the `CMakeLists.txt` file, please refer to [`catkin_make/CMakeLists.txt`].
 
 #### 3.3. Build
 Now, run the catkin_make within the catkin_workspace
@@ -515,3 +515,8 @@ $ roslaunch thormang3_manager thormang3_manager.launch
 [&lt;&lt; Back]
 
 [&lt;&lt; Back]:[ROBOTIS-Framework-Documents.md]
+
+
+[_`thormang3_manager/src/thormang3_manager.cpp`_]:https://github.com/ROBOTIS-GIT/ROBOTIS-THORMANG-MPC/blob/master/thormang3_manager/src/thormang3_manager.cpp
+[`catkin/package.xml`]:http://wiki.ros.org/catkin/package.xml
+[`catkin_make/CMakeLists.txt`]:http://wiki.ros.org/catkin/CMakeLists.txt

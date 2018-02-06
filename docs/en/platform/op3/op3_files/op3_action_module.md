@@ -10,11 +10,11 @@ Action contains all joint angles per each time frame.
 
 ### 2. Getting started  
 #### 2.1 Download & Build  
- > Reference : [Installing ROBOTIS ROS Package](OP3_Recovery_of_ROBOTIS_OP3#24_installation_robotis_ros_packages.md)  
+ > Reference : [Installing ROBOTIS ROS Package]
 
 #### 2.2 Usage  
 Motion Module is used in the form of lib in the manager.  
-> Reference : [Creating new robot manager](Creating_new_robot_manager.md)
+> Reference : [Creating new robot manager]
 
 ### 3. ROS API  
 #### 3.1 Subscribed Topics  
@@ -41,7 +41,9 @@ Motion Module is used in the form of lib in the manager.
 <br>[&lt;&lt; Back]
 
 [std_msgs/Int32]: /docs/en/popup/std_msgs_int32_message/
+[Creating new robot manager]:Creating_new_robot_manager.md
+[Installing ROBOTIS ROS Package]:OP3_Recovery_of_ROBOTIS_OP3#24_installation_robotis_ros_packages.md  
 
 [robotis_controller_msgs/StatusMsg]:/docs/en/popup/StatusMsg.msg/
 [op3_action_module_msgs/IsRunning]:/docs/en/popup/op3_IsRunning.srv/
-[&lt;&lt; Back]:[ROBOTIS-OP3-Modules.md]
+[&lt;&lt; Back]:ROBOTIS-OP3-Modules.md

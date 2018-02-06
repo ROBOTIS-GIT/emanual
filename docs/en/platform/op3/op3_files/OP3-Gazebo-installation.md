@@ -19,4 +19,4 @@ If ros-indigo-desktop-full was used to install, the following packages need to b
 
 
 [Gazebo Tutorials]:http://gazebosim.org/tutorials?cat=connect_ros
-[ROBOTIS-OP3 Common]:[ROBOTIS-OP3-Common.md]
+[ROBOTIS-OP3 Common]:ROBOTIS-OP3-Common.md

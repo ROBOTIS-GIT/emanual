@@ -1,11 +1,12 @@
 ### 1. Overview   
 `op3_gui_demo` is a GUI software to control ROBOTIS-OP3.  
 Within this program, user can perform module settings, walking tuner, head joint control and play actions.  
-<img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_gui_diagram.png?raw=true" align="bottom"/>
+
+![](/assets/images/platform/op3/op3_gui_diagram.png)
 
 ### 2. Getting started
 #### 2.1 Download & Build
- > Reference : [Installing ROBOTIS ROS Package](OP3_Recovery_of_ROBOTIS_OP3#24_installation_robotis_ros_packages.md)  
+ > Reference : [Installing ROBOTIS ROS Package]
 
 #### 2.2 Run
 Execute the launch file.  
@@ -14,7 +15,8 @@ $ roslaunch op3_gui_demo op3_demo.launch
 ```  
 
 #### 2.3 UI
-<img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_gui.png?raw=true" align="bottom"/>
+
+![](/assets/images/platform/op3/op3_gui.png)
 
 #### 2.4 Usage
 > Reference : [How to execute GUI program]
@@ -84,5 +86,6 @@ $ roslaunch op3_gui_demo op3_demo.launch
 [op3_walking_module_msgs/WalkingParam]:/docs/en/popup/op3_WalkingParam.msg/
 [robotis_controller_msgs/GetJointModule]:/docs/en/popup/GetJointModule.srv/
 [op3_walking_module_msgs/GetWalkingParam]:/docs/en/popup/op3_GetWalkingParam.srv/
+[Installing ROBOTIS ROS Package]:OP3_Recovery_of_ROBOTIS_OP3#24_installation_robotis_ros_packages.md  
 
-[&lt;&lt; Back]:[ROBOTIS-OP3-Tools.md]
+[&lt;&lt; Back]:ROBOTIS-OP3-Tools.md
