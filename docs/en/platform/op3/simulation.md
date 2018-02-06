@@ -47,8 +47,8 @@ If Gazebo is running on the OPC, realtime factor can be decreased, therefore, it
 ```
 $ roslaunch robotis_op3_gazebo robotis_world.launch
 ```
-![op3_gazebo](https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_gazebo.png?raw=true)
 
+![](/assets/images/platform/op3/op3_gazebo.png)
 ### [op3_manager] for Gazebo  
 
 * Launch op3_manager for gazebo   

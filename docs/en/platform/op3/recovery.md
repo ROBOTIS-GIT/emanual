@@ -98,10 +98,10 @@ This chapter explains how to install software and configure ROBOTIS OP3.
 
 #### ROS Installation & Environment Setup
 1. **ROS Installation**
-    > Reference : [ROS Installation](http://wiki.ros.org/kinetic/Installation/Ubuntu)  
+    > Reference : [ROS Installation]  
 
 2. **ROS Environment Setup**   
-    > Reference : [ROS Environment and Network Settings](OP3_Robot_Operating_System#4_setup.md)  
+    > Reference : [ROS Environment and Network Settings]
 
 #### Installing additional applications for ROBOTIS ROS Package   
  Prerequisites for ROBOTIS ROS package  
@@ -135,7 +135,7 @@ This chapter explains how to install software and configure ROBOTIS OP3.
         ```   
         $ sudo apt install ros-kinetic-robot-upstart  
         ```  
-    - [Setting for automatic startup](OP3-How-to-kill-the-demo-program#31-start-demo-program-on-start.md)
+    - [Setting for automatic startup]
 
 
 - usb_cam  
@@ -267,7 +267,11 @@ Clonezilla is used to recover ROBOTIS-OP3 with the image file in the provided US
 [ROBOTIS-OP3-msgs]: [ROBOTIS-OP3-msgs.md]
 [ROBOTIS-OP3-Tools]: [ROBOTIS-OP3-Tools.md]
 [ROBOTIS-OP3-Common]: [ROBOTIS-OP3-Common.md]
+[ROS Environment and Network Settings]:OP3_Robot_Operating_System#4_setup.md
+[Setting for automatic startup]:OP3-How-to-kill-the-demo-program#31-start-demo-program-on-start.md
 
 [e-manual]: http://support.robotis.com/en/product/darwin-op/operating/recovery/clonezilla_recovery.htm
 
 [Download]: https://downloads.sourceforge.net/project/darwinop/Software/Main%20Controller/Recovery%20USB/clonezilla-live-ROBOTIS-OP3_Recovery_171013.zip?r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fdarwinop%2Ffiles%2FSoftware%2FMain%2520Controller%2FRecovery%2520USB%2F&ts=1508126998&use_mirror=netix)
+
+[ROS Installation]:http://wiki.ros.org/kinetic/Installation/Ubuntu
