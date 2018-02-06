@@ -11,8 +11,7 @@ sidebar:
   nav: "thormang3"
 ---
 
-<div style="counter-reset: h1 3">
-</div>
+<div style="counter-reset: h1 3"></div>
 
 # [THORMANG3 ROS Packages](#thormang3-ros-packages)
 
@@ -217,15 +216,15 @@ The motion file is edited with thormang3_action_editor
     If user send -1, the action will be stopped.  
     If user send -2, the action will be broken(stop immediately).
 
-  - `/robotis/action/start_action`([thormang3_action_module_msgs/StartAction])  
+  - `/robotis/action/start_action`([thormang3_action_module_msgs/StartAction]{: .popup})  
     The page number and joint names will be played.
 
 ##### Published Topics  
-  - `/robotis/status`([robotis_controller_msgs/StatusMsg])  
+  - `/robotis/status`([robotis_controller_msgs/StatusMsg]{: .popup})  
     The message indicates status of the action_module.
 
 ##### Services
-  - `/robotis/action/is_running`([thormang3_action_module_msgs/IsRunning])  
+  - `/robotis/action/is_running`([thormang3_action_module_msgs/IsRunning]{: .popup})  
     The service that checks whether THORMANG3's action is being played or not.
 
 ### [thormang3_base_module](#thormang3_base_module)
@@ -252,7 +251,7 @@ The motion file is edited with thormang3_action_editor
   - `/robotis/enable_ctrl_module`([std_msgs/String]{: .popup})  
     A base_module activation topic to take the initial posture.
 
-  - `/robotis/status`([robotis_controller_msgs/StatusMsg])  
+  - `/robotis/status`([robotis_controller_msgs/StatusMsg]{: .popup})  
     A message that contains the status of base_module.
 
 
@@ -271,21 +270,21 @@ THORMANG3 manipulation module for the upper body.
   - `/robotis/manipulation/ini_pose_msg` ([std_msgs/String]{: .popup})  
     A message to take the initial posture.
 
-  - `/robotis/manipulation/joint_pose_msg` ([thormang3_manipulation_module_msgs/JointPose])  
+  - `/robotis/manipulation/joint_pose_msg` ([thormang3_manipulation_module_msgs/JointPose]{: .popup})  
     A message to move to the target point in the Joint Space.
 
-  - `/robotis/manipulation/kinematics_pose_msg` ([thormang3_manipulation_module_msgs/KinematicsPose])  
+  - `/robotis/manipulation/kinematics_pose_msg` ([thormang3_manipulation_module_msgs/KinematicsPose]{: .popup})  
     A message to move to the target pose in the Task Space.
 
 ##### Published Topics
-  - `/robotis/status` ([robotis_controller_msgs/StatusMsg])  
+  - `/robotis/status` ([robotis_controller_msgs/StatusMsg]{: .popup})  
     A status message of THORMANG3
 
 ##### Services
-  - `/robotis/manipulation/get_joint_pose` ([thormang3_manipulation_module_msgs/GetJointPose])  
+  - `/robotis/manipulation/get_joint_pose` ([thormang3_manipulation_module_msgs/GetJointPose]{: .popup})  
     A service that reads the pose of specific joint.
 
-  - `/robotis/manipulation/get_kinematics_pose` ([thormang3_manipulation_module_msgs/GetKinematicsPose])  
+  - `/robotis/manipulation/get_kinematics_pose` ([thormang3_manipulation_module_msgs/GetKinematicsPose]{: .popup})  
     A service that reads the pose of end effector from a specific kinematics group.
 
 ### [thormang3_walking_module](#thormang3_walking_module)
@@ -294,7 +293,7 @@ THORMANG3 manipulation module for the upper body.
 
 As seen from the above figure, thormang3_walking_module is one of the MotionModules from ROS Framework.
 THROMANG3 can be controlled with Topics and Services.
-Users can designate almost all Step Parameters.([thormang3_walking_module_msgs/StepData])
+Users can designate almost all Step Parameters.([thormang3_walking_module_msgs/StepData]{: .popup})
 
 1. Pattern Generation
 
@@ -304,7 +303,7 @@ Users can designate almost all Step Parameters.([thormang3_walking_module_msgs/S
 
 2. Balance Algorithm
 
-    The balance algorithm is included as shown below.([thormang3_walking_module_msgs/BalanceParam])
+    The balance algorithm is included as shown below.([thormang3_walking_module_msgs/BalanceParam]{: .popup})
     ![](/assets/images/platform/thormang3/thormang3_walking_module_balance_diagram.jpg)
 
 #### Download & Build
@@ -315,30 +314,30 @@ Users can designate almost all Step Parameters.([thormang3_walking_module_msgs/S
 #### ROS API
 
 ##### Subscribed Topics
-  - `/robotis/sensor/imu/imu` ([sensor_msgs/Imu])  
+  - `/robotis/sensor/imu/imu` ([sensor_msgs/Imu]{: .popup})  
     Current data of the IMU Sensor
 
 ##### Published Topics
-  - `/robotis/status`([robotis_controller_msgs/StatusMsg])  
+  - `/robotis/status`([robotis_controller_msgs/StatusMsg]{: .popup})  
     Status message of THORMANG3
 
 ##### Services
-  - `/robotis/walking/get_reference_step_data`([thormang3_walking_module_msgs/GetReferenceStrpData])  
+  - `/robotis/walking/get_reference_step_data`([thormang3_walking_module_msgs/GetReferenceStrpData]{: .popup})  
     A service that collects current location of THORMANG3 in the Global from the Walking Module.
 
-  - `/robotis/walking/add_step_data`([thormang3_walking_module_msgs/AddStepDataArray])  
+  - `/robotis/walking/add_step_data`([thormang3_walking_module_msgs/AddStepDataArray]{: .popup})  
     A service that adds StepData created by the user.
 
-  - `/robotis/walking/walking_start`([thormang3_walking_module_msgs/WalkingStart])  
+  - `/robotis/walking/walking_start`([thormang3_walking_module_msgs/WalkingStart]{: .popup})  
     A service that commands to start walking.
 
-  - `/robotis/walking/is_running`([thormang3_walking_module_msgs/IsRunning])  
+  - `/robotis/walking/is_running`([thormang3_walking_module_msgs/IsRunning]{: .popup})  
     A service that checks whether THORMANG3 is walking or not.
 
-  - `/robotis/walking/set_balance_param`([thormang3_walking_module_msgs/SetBalanceParam])  
+  - `/robotis/walking/set_balance_param`([thormang3_walking_module_msgs/SetBalanceParam]{: .popup})  
     A service that can set Balance Algorithm parameters.
 
-  - `/robotis/walking/remove_existing_step_data`([thormang3_walking_module_msgs/RemoveExistingStepData])  
+  - `/robotis/walking/remove_existing_step_data`([thormang3_walking_module_msgs/RemoveExistingStepData]{: .popup})  
     A service that deletes existing StepData.
 
 ### [thormang3_head_control_module](#thormang3_head_control_module)
@@ -360,13 +359,13 @@ This module is to control the head. This module is included in the Thormang3 Man
   - `/robotis/head_control/move_lidar`([std_msgs/String]{: .popup})  
     The command moves the head in order to obtain Lidar data.
 
-  - `/robotis/head_control/move_lidar_with_range`([std_msgs/Float64])  
+  - `/robotis/head_control/move_lidar_with_range`([std_msgs/Float64]{: .popup})  
     This command scans up and down a given range at the current head position to generate 3D lidar data.
 
-  - `/robotis/head_control/set_joint_states`([sensor_msgs/JointState])  
+  - `/robotis/head_control/set_joint_states`([sensor_msgs/JointState]{: .popup})  
     The message controls joints that are connected to the head.
 
-  - `/robotis/head_control/set_joint_states_time`([thormang3_head_control_module_msgs/HeadJointPose])  
+  - `/robotis/head_control/set_joint_states_time`([thormang3_head_control_module_msgs/HeadJointPose]{: .popup})  
     The message moves head joints for given time.
 
 ##### Published Topics
@@ -374,7 +373,7 @@ This module is to control the head. This module is included in the Thormang3 Man
   - `/robotis/sensor/move_lidar`([std_msgs/String]{: .popup})  
     This message reports the head movement to the Node which assembles LiDAR data.
 
-  - `/robotis/status`([robotis_controller_msgs/StatusMsg])  
+  - `/robotis/status`([robotis_controller_msgs/StatusMsg]{: .popup})  
     The message indicates status of the head_control_module.
 
 
@@ -553,22 +552,22 @@ Acquired sensor values when the robot is hanging on the lift and standing on the
     FT Calibration Command
 
 2. Published Topics
-  - `/robotis/status` ([robotis_controller_msgs/StatusMsg])  
+  - `/robotis/status` ([robotis_controller_msgs/StatusMsg]{: .popup})  
     The status message of THORMANG3
 
-  - `/robotis/feet_ft/both_ft_value` ([thormang3_feet_ft_module_msgs/BothWrench])  
+  - `/robotis/feet_ft/both_ft_value` ([thormang3_feet_ft_module_msgs/BothWrench]{: .popup})  
     Both Wrench
 
-  - `/robotis/sensor/ft_right_foot/raw` ([geometry_msgs/WrenchStamped])  
+  - `/robotis/sensor/ft_right_foot/raw` ([geometry_msgs/WrenchStamped]{: .popup})  
     raw output from the force torque sensor on the right foot
 
-  - `/robotis/sensor/ft_right_foot/scaled` ([geometry_msgs/WrenchStamped])  
+  - `/robotis/sensor/ft_right_foot/scaled` ([geometry_msgs/WrenchStamped]{: .popup})  
     scaled output from the force torque sensor on the right foot
 
-  - `/robotis/sensor/ft_right_foot/raw`([geometry_msgs/WrenchStamped])  
+  - `/robotis/sensor/ft_right_foot/raw`([geometry_msgs/WrenchStamped]{: .popup})  
     raw output from the force torque sensor on the left foot
 
-  - `/robotis/sensor/ft_right_foot/scaled`([geometry_msgs/WrenchStamped])  
+  - `/robotis/sensor/ft_right_foot/scaled`([geometry_msgs/WrenchStamped]{: .popup})  
     scaled output from the force torque sensor on the left foot
 
 ### [thormang3_balance_control](#thormang3_balance_control)
@@ -915,12 +914,12 @@ DampingController right_foot_force_z_ctrl_
 DampingController right_foot_torque_roll_ctrl_
 ```
   - description : damping controller for foot using torque x on right foot
-  
+
 ```
 DampingController right_foot_torque_pitch_ctrl_
 ```
   - description : damping controller for foot using torque y on right foot
-  
+
 ```
 DampingController left_foot_force_x_ctrl_
 ```
@@ -930,17 +929,17 @@ DampingController left_foot_force_x_ctrl_
 DampingController left_foot_force_y_ctrl_
 ```
   - description : damping controller for foot using force y on left foot
-  
+
 ```
 DampingController left_foot_force_z_ctrl_
 ```
   - description : damping controller for foot using force z on left foot
-  
+
 ```
 DampingController left_foot_torque_roll_ctrl_
 ```
   - description : damping controller for foot using torque x on left foot
-  
+
 ```
 DampingController left_foot_torque_pitch_ctrl_
 ```
@@ -982,9 +981,9 @@ void setForceTorqueBalanceEnable(bool enable)
 
 ```
 void process(
-  int *balance_error, 
+  int *balance_error,
   Eigen::MatrixXd *robot_to_cob_modified,
-  Eigen::MatrixXd *robot_to_right_foot_modified, 
+  Eigen::MatrixXd *robot_to_right_foot_modified,
   Eigen::MatrixXd *robot_to_left_foot_modified)
 ```
   - arguments :
@@ -999,8 +998,8 @@ void process(
 
 ```
 void setDesiredPose(
-  const Eigen::MatrixXd &robot_to_cob, 
-  const Eigen::MatrixXd &robot_to_right_foot, 
+  const Eigen::MatrixXd &robot_to_cob,
+  const Eigen::MatrixXd &robot_to_right_foot,
   const Eigen::MatrixXd &robot_to_left_foot)
 ```
   - arguments :
@@ -1296,8 +1295,8 @@ This is the modified version of KumarRobotics/imu_3dm_gx4.
 
 ##### Published Topics
 
-`/robotis/sensor/imu/imu` ([sensor_msgs/Imu])
-  
+`/robotis/sensor/imu/imu` ([sensor_msgs/Imu]{: .popup})
+
 Present output of the IMU Sensor
 
 
@@ -1313,7 +1312,7 @@ The package also includes a node for assembling Laserscan(LaserScan to PointClou
 
   `Reference` : [PPC Installation]
   {: .notice}
-  
+
 #### Run
 
 Execute Launch file
@@ -1324,8 +1323,8 @@ $ roslaunch thormang3_sensors thormang3_sensors.launch
 
 - thormang3_sensors.launch
   - thormang3_pointcloud.launch
-    - scan_to_scan_filter_chain ([laser_filters](http://wiki.ros.org/laser_filters)) : Filter LaserScan topics
-    - laser_scan_assembler ([laser_assembler](http://wiki.ros.org/laser_assembler)) : The service assembles LaserScan
+    - scan_to_scan_filter_chain ([laser_filters]) : Filter LaserScan topics
+    - laser_scan_assembler ([laser_assembler]) : The service assembles LaserScan
     - assemble_laser_node (thormang3_sensors) : Create PointCloud from Assemble Service
   - thormang3_realsense.launch : Contains Intel RealSense configuration and launch the program.
   - thormang3_web_cam.launch : Contains Web Camera configuration and launch the program.
@@ -1341,12 +1340,12 @@ $ roslaunch thormang3_sensors thormang3_sensors.launch
 
 ##### Published Topics
 
-`/robotis/sensor/assembled_scan`([sensor_msgs/PointCloud2])  
+`/robotis/sensor/assembled_scan`([sensor_msgs/PointCloud2]{: .popup})  
   Assembled PointCloud
 
 ##### Services Called
 
-`/robotis/sensor/service/assemble_scan2`([laser_assembler/AssembleScan2])  
+`/robotis/sensor/service/assemble_scan2`([laser_assembler/AssembleScan2]{: .popup})  
   Get assembled PointCloud from the Service with LaserScan start/end parameters.
 
 ### [thormang3_simple_demo](#thormang3_simple_demo)
@@ -1359,7 +1358,7 @@ Thormang3 manipulation simple demonstration
 
   `Reference` : [PPC Installation]
   {: .notice}
-  
+
 ##### Run
 
 Reference : Manipulation Simple Demo from [How to execute Simple Demonstration]
@@ -1382,7 +1381,7 @@ Reference : Manipulation Simple Demo from [How to execute Simple Demonstration]
 `/robotis/manipulation/ini_pose_msg`([std_msgs/String]{: .popup})  
   The topic to take initial posture of the Manipulation Module
 
-`/robotis/manipulation/kinematics_pose_msg`([thormang3_manipulation_module_msgs/KinematicsPose])  
+`/robotis/manipulation/kinematics_pose_msg`([thormang3_manipulation_module_msgs/KinematicsPose]{: .popup})  
    The topic to take initial posture of the Manipulation Module
 
 #### thormang3_walking_demo
@@ -1393,7 +1392,7 @@ Thormang3 Walking simple demonstration
 
   `Reference` : [PPC Installation]
   {: .notice}
-  
+
 ##### Run
 
 `Reference` : Walking Simple Demo of [How to execute Simple Demonstration]
@@ -1402,7 +1401,7 @@ Thormang3 Walking simple demonstration
 
 ###### Subscribed Topics
 
-`/robotis/status`([robotis_controller_msgs/StatusMsg])  
+`/robotis/status`([robotis_controller_msgs/StatusMsg]{: .popup})  
   Status message of THORMANG3
 
 `robotis/walking_demo/command`([std_msgs/String]{: .popup})  
@@ -1418,21 +1417,21 @@ Thormang3 Walking simple demonstration
 
 ###### Services Called
 
-`/robotis/walking/get_reference_step_data`([thormang3_walking_module_msgs/GetReferenceStrpData])  
+`/robotis/walking/get_reference_step_data`([thormang3_walking_module_msgs/GetReferenceStrpData]{: .popup})  
   The service obtains current location of THORMANG3 from the Walking Module in the Global space.
 
-`/robotis/walking/add_step_data`([thormang3_walking_module_msgs/AddStepDataArray])  
+`/robotis/walking/add_step_data`([thormang3_walking_module_msgs/AddStepDataArray]{: .popup})  
   The service adds StepData created by the user.
 
-`/robotis/walking/set_balance_param`([thormang3_walking_module_msgs/SetBalanceParam])  
+`/robotis/walking/set_balance_param`([thormang3_walking_module_msgs/SetBalanceParam]{: .popup})  
   The service sets parameters related to the Balance Algorithm.
 
 ## [OPC Packages](#opc-packages)
 
 ### [humanoid_navigation](#humanoid_navigation)
 
-- `Reference` : http://wiki.ros.org/humanoid_navigation
-- `Source` : https://github.com/AravindaDP/humanoid_navigation
+- `Reference` : [http://wiki.ros.org/humanoid_navigation]
+- `Source` : [https://github.com/AravindaDP/humanoid_navigation]
 - `Prerequisite Packages` : map_server, humanoid_nav_msgs, nav_msgs, sbpl, etc
 
 - Packages Installation
@@ -1441,20 +1440,20 @@ Thormang3 Walking simple demonstration
 $ sudo apt-get install ros-kinetic-map-server
 $ sudo apt-get install ros-kinetic-humanoid-nav-msgs
 $ sudo apt-get install ros-kinetic-nav-msgs
-$ sudo apt-get install ros-kinetic-octomap 
+$ sudo apt-get install ros-kinetic-octomap
 $ sudo apt-get install ros-kinetic-octomap-msgs
 $ sudo apt-get install ros-kinetic-octomap-ros
 $ sudo apt-get install ros-kinetic-octomap-server
 ```
 
 - Building and Installing from source
-  - sbpl([https://github.com/sbpl/sbpl](https://github.com/sbpl/sbpl))
+  - sbpl([https://github.com/sbpl/sbpl])
 
 #### footstep_planner
 
 The footstep planner for humanoids or bipedal robots.
 
-- `Reference` : [http://wiki.ros.org/footstep_planner](http://wiki.ros.org/footstep_planner)
+- `Reference` : [http://wiki.ros.org/footstep_planner]
 
 ##### RUN
 
@@ -1470,11 +1469,11 @@ $ roslaunch footstep_planner thormang3_footstep_planner.launch
 
 #### gridmap_2d
 
-- `Reference` : [http://wiki.ros.org/gridmap_2d](http://wiki.ros.org/gridmap_2d)
+- `Reference` : [http://wiki.ros.org/gridmap_2d]
 
 #### humanoid_localization
 
-- `Reference` : [http://wiki.ros.org/humanoid_localization](http://wiki.ros.org/humanoid_localization)
+- `Reference` : [http://wiki.ros.org/humanoid_localization]
 
 ### [thormang3_demo](#thormang3_demo)
 
@@ -1500,27 +1499,27 @@ $ roslaunch thormang3_demo thormang3_demo.launch
   > id_joint : id and joint name tables
   > module_list : Module name displayed on each joint in the demo program.
   > module_button : Modules to configure with the manager (index : module name)
-  
+
 #### ROS API  
 
 ##### Subscribed Topics  
-`/robotis/feet_ft/both_ft_value`([thormang3_feet_ft_module_msgs/BothWrench])  
+`/robotis/feet_ft/both_ft_value`([thormang3_feet_ft_module_msgs/BothWrench]{: .popup})  
   FT value for calibration
 
-`/robotis/status`([robotis_controller_msgs/StatusMsg])  
+`/robotis/status`([robotis_controller_msgs/StatusMsg]{: .popup})  
   Status message of THORMANG3
 
-`/robotis/present_joint_ctrl_modules`([robotis_controller_msgs/JointCtrlModule])  
+`/robotis/present_joint_ctrl_modules`([robotis_controller_msgs/JointCtrlModule]{: .popup})  
   Joint modules that are currently in use
 
-`/robotis/present_joint_states`([sensor_msgs/JointState])  
+`/robotis/present_joint_states`([sensor_msgs/JointState]{: .popup})  
   Degree of each joint(Unit in Degree)
 
-`/robotis/demo/pose`([geometry_msgs/Pose](http://docs.ros.org/api/geometry_msgs/html/msg/Pose.html))  
+`/robotis/demo/pose`([geometry_msgs/Pose]{: .popup})  
   Pose that are used for Walking and Manipulation
 
 ##### Published Topics
-`/robotis/set_joint_ctrl_modules`([robotis_controller_msgs/JointCtrlModule])  
+`/robotis/set_joint_ctrl_modules`([robotis_controller_msgs/JointCtrlModule]{: .popup})  
   Configuring each joint modules (configure for each joint, Not recommended to use)
 
 `/robotis/enable_ctrl_module`([std_msgs/String]{: .popup})  
@@ -1535,42 +1534,42 @@ $ roslaunch thormang3_demo thormang3_demo.launch
 `/robotis/head_control/move_lidar`([std_msgs/String]{: .popup})  
   Head movement command for assembling LaserScan.
 
-`/robotis/head_control/set_joint_states`([sensor_msgs/JointState])  
+`/robotis/head_control/set_joint_states`([sensor_msgs/JointState]{: .popup})  
   Control for separate head joints
 
-`/robotis/demo/foot_step_marker`([visualization_msgs/MarkerArray](http://docs.ros.org/api/visualization_msgs/html/msg/MarkerArray.html))  
-  Visualized footstep messages created by [footstep_planner](http://wiki.ros.org/action/fullsearch/footstep_planner)
+`/robotis/demo/foot_step_marker`([visualization_msgs/MarkerArray]{: .popup})  
+  Visualized footstep messages created by [footstep_planner]
 
 `/robotis/manipulation/ini_pose_msg`([std_msgs/String]{: .popup})  
   Initial posture command for Manipulation
 
-`/robotis/manipulation/joint_pose_msg`([thormang3_manipulation_module_msgs/JointPose])  
+`/robotis/manipulation/joint_pose_msg`([thormang3_manipulation_module_msgs/JointPose]{: .popup})  
   Control the robot in Joint Space
 
-`/robotis/manipulation/kinematics_pose_msg`([thormang3_manipulation_module_msgs/KinematicsPose])  
+`/robotis/manipulation/kinematics_pose_msg`([thormang3_manipulation_module_msgs/KinematicsPose]{: .popup})  
   Control the robot in Task Space
 
-`/robotis/thormang3_foot_step_generator/walking_command`([thormang3_foot_step_generator/FootStepCommand])  
+`/robotis/thormang3_foot_step_generator/walking_command`([thormang3_foot_step_generator/FootStepCommand]{: .popup})  
   Create footsteps from the foot_step_generator with the walking parameter and direction.
 
-`/robotis/thormang3_foot_step_generator/footsteps_2d`([thormang3_foot_step_generator/Step2DArray])  
+`/robotis/thormang3_foot_step_generator/footsteps_2d`([thormang3_foot_step_generator/Step2DArray]{: .popup})  
   2D step array to create footsteps for THORMANG3
 
-`/robotis/thormang3_foot_step_generator/balance_command`([std_msgs/Bool](http://docs.ros.org/api/std_msgs/html/msg/Bool.html))  
+`/robotis/thormang3_foot_step_generator/balance_command`([std_msgs/Bool]{: .popup})  
   Balance On/Off of THORMANG3
 
 #### Services Called  
 
-`/robotis/get_present_joint_ctrl_modules`([robotis_controller_msgs/GetJointModule])  
+`/robotis/get_present_joint_ctrl_modules`([robotis_controller_msgs/GetJointModule]{: .popup})  
   Obtains module that is currently in use for each joint.
 
 `/plan_footsteps`([humanoid_nav_msgs/PlanFootsteps](http://docs.ros.org/api/humanoid_nav_msgs/html/srv/PlanFootsteps.html))  
   Creates footsteps from map and footstep_planner
 
-`/robotis/manipulation/get_joint_pose`([thormang3_manipulation_module_msgs/GetJointPose])  
+`/robotis/manipulation/get_joint_pose`([thormang3_manipulation_module_msgs/GetJointPose]{: .popup})  
   Obtains joint pose of selected manipulation group.
 
-`/robotis/manipulation/get_kinematics_pose`([thormang3_manipulation_module_msgs/GetKinematicsPose])  
+`/robotis/manipulation/get_kinematics_pose`([thormang3_manipulation_module_msgs/GetKinematicsPose]{: .popup})  
   Obtains end effector pose of selected manipulation group.
 
 #### Parameters  
@@ -1583,7 +1582,7 @@ $ roslaunch thormang3_demo thormang3_demo.launch
 The Node that can play a action script.  
 The default action script is in the "thormang3_action_script_player/script/action_script.yaml".  
 The user can specify the path of the action script file via rosparameter.  
-The thormang3_action_script_player is used with [thormang3_action_module](thormang3_action_module) and [ros_mpg321_player](https://github.com/ROBOTIS-GIT/ROBOTIS-Utility).  
+The thormang3_action_script_player is used with [thormang3_action_module] and [ros_mpg321_player].  
 
 #### Download & Build
 
@@ -1603,7 +1602,7 @@ $ rosrun thormang3_action_script_player thormang3_action_script_player
 The default action script file is in the "thormang3_action_script_player/script/action_script.yaml".  
 The action script has the following structure.  
 ```
-script2: 
+script2:
      cmd1: {cmd_name: play,  cmd_arg: 2}
      cmd2: {cmd_name: sleep, cmd_arg: 1800}
      cmd3: {cmd_name: mp3,   cmd_arg: "/home/robotis/Music/thormang_mp3/hello_kor.mp3"}
@@ -1615,7 +1614,7 @@ cmd# has two parameters. one is cmd_name, and the othrer is cmd_arg.
 There are below four cmd_name in the action script.  
 * **play** : "Play" cmd_name means to execute action. User can specify the page number to execute as cmd_arg.  
 * **mp3** : "mp3" cmd_name means to play sound file. User can specify the sound file path to play as cmd_arg.  
-  Because [ros_mpg321_player](https://github.com/ROBOTIS-GIT/ROBOTIS-Utility) is excuted in PPC, the sound file has to be in PPC.  
+  Because [ros_mpg321_player] is excuted in PPC, the sound file has to be in PPC.  
 * **wait** : "wait" cmd_name means to wait until finish of action playing. There is no cmd_arg for "wait" cmd_name.  
 * **sleep** : "sleep" cmd_name means to wait for a certain amount of time. User can specify the wait time as cmd_arg.  
 
@@ -1632,7 +1631,7 @@ There are below four cmd_name in the action script.
 
 The Node that can create a basic Step Data.  
 Based on the simple Parameter from Topic, the package creates StepData and transmit it to [thormang3_walking_module].  
-  
+
 #### Download & Build
 
   `Reference` : [OPC Installation]
@@ -1643,32 +1642,32 @@ Based on the simple Parameter from Topic, the package creates StepData and trans
 
 #### ROS API  
 ##### Subscribed Topics  
-`/robotis/status`([robotis_controller_msgs::Status])  
+`/robotis/status`([robotis_controller_msgs/Status]{: .popup})  
   Status message of THORMANG3
 
-`/robotis/thormang3_foot_step_generator/walking_command`([thormang3_foot_step_generator::FootStepCommand])  
+`/robotis/thormang3_foot_step_generator/walking_command`([thormang3_foot_step_generator/FootStepCommand]{: .popup})  
   The topic includes walking type and step length.  
 
-`/robotis/thormang3_foot_step_generator/footsteps_2d`([thormang3_foot_step_generator::Step2DArray])  
+`/robotis/thormang3_foot_step_generator/footsteps_2d`([thormang3_foot_step_generator/Step2DArray]{: .popup})  
   Planar walking step data contains x, y, theta and moving_foot_flag   
 
 ##### Services Called  
-`/robotis/walking/get_reference_step_data`([thormang3_walking_module_msgs::GetReferenceStepData])  
+`/robotis/walking/get_reference_step_data`([thormang3_walking_module_msgs/GetReferenceStepData]{: .popup})  
   The service obtains current location of THORMANG3 in the Global space from the Walking Module.  
 
-`/robotis/walking/add_step_data`([thormang3_walking_module_msgs::AddStepDataArray])  
+`/robotis/walking/add_step_data`([thormang3_walking_module_msgs/AddStepDataArray]{: .popup})  
   The service adds StepData created by the User.  
 
-`/robotis/walking/set_balance_param`([thormang3_walking_module_msgs::SetBalanceParam])  
+`/robotis/walking/set_balance_param`([thormang3_walking_module_msgs/SetBalanceParam]{: .popup})  
   The service initiates walking.  
 
-`/robotis/walking/is_running`([thormang3_walking_module_msgs::IsRunning])  
+`/robotis/walking/is_running`([thormang3_walking_module_msgs/IsRunning]{: .popup})  
   The service checks whether the robot is walking or not.  
 
 #### ROS Message Type  
-* [FootStepCommand.msg]
-* [Step2D.msg]
-* [Step2DArray.msg]
+* [FootStepCommand.msg]{: .popup}
+* [Step2D.msg]{: .popup}
+* [Step2DArray.msg]{: .popup}
 
 ### [thormang3_offset_tuner_client](#thormang3_offset_tuner_client)
 
@@ -1688,17 +1687,17 @@ $ rosrun thormang3_offset_tuner_client thormang3_offset_tuner_client
 #### ROS API
 
 ##### Published Topics
-`/robotis/offset_tuner/joint_offset_data`([thormang3_offset_tuner_msgs::JointOffsetData|JointOffsetData.msg])     
+`/robotis/offset_tuner/joint_offset_data`([thormang3_offset_tuner_msgs/JointOffsetData|JointOffsetData.msg]{: .popup})     
   The topic transfers Joint offset   
 
-`/robotis/offset_tuner/torque_enable`([thormang3_offset_tuner_msgs::JointTorqueOnOffArray|JointTorqueOnOffArray.msg])    
+`/robotis/offset_tuner/torque_enable`([thormang3_offset_tuner_msgs/JointTorqueOnOffArray|JointTorqueOnOffArray.msg]{: .popup})    
   The topic executes Torque on/off command   
 
-`/robotis/offset_tuner/command`([std_msgs::String](http://docs.ros.org/api/std_msgs/html/msg/String.html))    
+`/robotis/offset_tuner/command`([std_msgs/String]{: .popup})    
   The topic transfers other commands(save, initial posture, etc).   
 
 ##### Services
-`/robotis/offset_tuner/get_present_joint_offset_data`([thormang3_offset_tuner_msgs::GetPresentJointOffsetData|GetPresentJointOffsetData.srv])  
+`/robotis/offset_tuner/get_present_joint_offset_data`([thormang3_offset_tuner_msgs/GetPresentJointOffsetData|GetPresentJointOffsetData.srv]{: .popup})  
   The service obtains saved joint offset
 
 ##### Parameters  
@@ -1711,7 +1710,7 @@ $ rosrun thormang3_offset_tuner_client thormang3_offset_tuner_client
 
 Thormang3 URDF Model
 
-- Make a URDF Model : [URDF-ROS Wiki](http://wiki.ros.org/urdf)
+- Make a URDF Model : [URDF-ROS Wiki]:http://wiki.ros.org/urdf
 
 - Package
   - doc : document for Thormang3 joint & link information
@@ -1724,7 +1723,7 @@ Thormang3 URDF Model
 
 Thormang3 Gazebo Simulation
 
-- Gazebo with ROS : [Connect to ROS](http://gazebosim.org/tutorials?cat=connect_ros)
+- Gazebo with ROS : [Connect to ROS]:http://gazebosim.org/tutorials?cat=connect_ros
 
 - Package
   - config : ros controller for gazebo
@@ -1756,10 +1755,10 @@ $ roslaunch thormang3_offset_tuner_server thormang3_offset_tuner_server.launch
 `/robotis/base/send_tra`([std_msgs/String]{: .popup})  
   The topic informs the start and end of trajectory following.  
 
-`/robotis/offset_tuner/joint_offset_data`([thormang3_offset_tuner_msgs/JointOffsetData])  
+`/robotis/offset_tuner/joint_offset_data`([thormang3_offset_tuner_msgs/JointOffsetData]{: .popup})  
   The topic updates joint offset related parameters.  
 
-`/robotis/offset_tuner/torque_enable`([thormang3_offset_tuner_msgs/JointTorqueOnOffArray])  
+`/robotis/offset_tuner/torque_enable`([thormang3_offset_tuner_msgs/JointTorqueOnOffArray]{: .popup})  
   The topic transfers Torque enable/disable command for joints.
 
 `/robotis/offset_tuner/command`([std_msgs/String]{: .popup})  
@@ -1768,21 +1767,21 @@ $ roslaunch thormang3_offset_tuner_server thormang3_offset_tuner_server.launch
   - "ini_pose" : Take the initial posture for offset tuning  
 
 #### Services
-`robotis/offset_tuner/get_present_joint_offset_data`([thormang3_offset_tuner_msgs/GetPresentJointOffsetData])  
+`robotis/offset_tuner/get_present_joint_offset_data`([thormang3_offset_tuner_msgs/GetPresentJointOffsetData]{: .popup})  
   The service obtains current offset data from the [thormang3_offset_tuner_client].  
 
 ### [thormang3_action_editor](#thormang3_action_editor)
 
 THORMANG3 Action Editor Node   
 The action file can be edited by this action editor.   
-The action file will be used with [thormang3_action_module](thormang3_action_module).
+The action file will be used with [thormang3_action_module].
 
 #### Action File
 The action file is in the "thormang3_action_module/data" folder. The action file is a file that contains THORMANG3’s poses and time data.  
 The data is written that the positions of dynamixels which converted from original resolution to 4095 resolution.
 And the action file is binaries file you cannot view its contents directly. User can view its contents with thormang3_action_editor.  
 ROBOTIS currently supplies a default action file with the source code. They are located in "thormang3_action_module/data" directory.  
-  
+
 The action file contains 256 pages. Each page can store up to 7 stages (or steps) of action data. In the default action file provided not all pages are used. User can add user's own action by using of the empty pages.   
 
 #### Download & Build
@@ -1814,7 +1813,7 @@ $ roslaunch thormang3_action_editor thormang3_action_editor.launch
 - **STP7**: "STP7" column is the current position of the dynamixels which converted to 4095 resolution from its original resolution. "----" means that torque has been released.  
 - **PauseTime**: "PauseTime" is the pause for motion playback for step STP[x].  
 - **Time(x 8msec)** : "Time" is the time period for THORMANG3 to complete step STP[x]. Each time unit account for 8ms of time.  
-  
+
 It is strongly advised that when user tests user’s own newly-created or edited actions, there should be small incremental changes in position, speed/time, and pause values for the sake of THORMANG3's stability.  
 
 #### The Contents of The Default Action File
@@ -1870,7 +1869,7 @@ After typing "help", the commend list will appear as shown below.
     ![](/assets/images/platform/thormang3/thormang3_041.jpg)
 
 4. And copy the page 1 to page [x].  
-  
+
     ![](/assets/images/platform/thormang3/thormang3_042.jpg)
 
 5. Go to "walking_init" pose by typing "play"  
@@ -1895,71 +1894,71 @@ After typing "help", the commend list will appear as shown below.
 
 The followings are Messages and Services used for the [thormang3_action_module].
 
-- ROS Message Type : [StartAction.msg]
-- ROS Service Type : [IsRunning.srv]
+- ROS Message Type : [StartAction.msg]{: .popup}
+- ROS Service Type : [IsRunning.srv]{: .popup}
 
 ### [thormang3_feet_ft_module_msgs](#thormang3_feet_ft_module_msgs)
 
 Message used in the [thormang3_feet_ft_module].
 
-- ROS Message Type : [BothWrench.msg]
+- ROS Message Type : [BothWrench.msg]{: .popup}
 
 ### [thormang3_manipulation_module_msgs](#thormang3_manipulation_module_msgs)
 
 Messages and Services used in the [thormang3_manipulation_module]
 
 - ROS Message Type
-  - [JointPose.msg]
-  - [KinematicsPose.msg]
+  - [JointPose.msg]{: .popup}
+  - [KinematicsPose.msg]{: .popup}
 
 - ROS Service Type
-  - [GetJointPose.srv]
-  - [GetKinematicsPose.srv]
+  - [GetJointPose.srv]{: .popup}
+  - [GetKinematicsPose.srv]{: .popup}
 
 ### [thormang3_walking_module_msgs](#thormang3_walking_module_msgs)
 
 Messages and Services used in the [thormang3_walking_module].
 
 - ROS Message Type
-  - [BalanceParam.msg]
-  - [DampingBalanceParam.msg]
-  - [JointFeedBackGain.msg]
-  - [PoseXYZRPY.msg]
-  - [PoseZRPY.msg]
-  - [RobotPose.msg]
-  - [StepData.msg]
-  - [StepPositionData.msg]
-  - [StepTimeData.msg]
-  - [WalkingJointStatesStamped.msg]
+  - [BalanceParam.msg]{: .popup}
+  - [DampingBalanceParam.msg]{: .popup}
+  - [JointFeedBackGain.msg]{: .popup}
+  - [PoseXYZRPY.msg]{: .popup}
+  - [PoseZRPY.msg]{: .popup}
+  - [RobotPose.msg]{: .popup}
+  - [StepData.msg]{: .popup}
+  - [StepPositionData.msg]{: .popup}
+  - [StepTimeData.msg]{: .popup}
+  - [WalkingJointStatesStamped.msg]{: .popup}
 
 - ROS Service Type
-  - [AddStepDataArray.srv]
-  - [GetReferenceStepData.srv]
-  - [IsRunning.srv]
-  - [RemoveExistingStepData.srv]
-  - [SetBalanceParam.srv]
-  - [SetDampingBalanceParam.srv]
-  - [SetJointFeedBackGain.srv]
-  - [StartWalking.srv]
+  - [AddStepDataArray.srv]{: .popup}
+  - [GetReferenceStepData.srv]{: .popup}
+  - [IsRunning.srv]{: .popup}
+  - [RemoveExistingStepData.srv]{: .popup}
+  - [SetBalanceParam.srv]{: .popup}
+  - [SetDampingBalanceParam.srv]{: .popup}
+  - [SetJointFeedBackGain.srv]{: .popup}
+  - [StartWalking.srv]{: .popup}
 
 ### [thormang3_head_control_module_msgs](#thormang3_head_control_module_msgs)
 
 Messages used in the [thormang3_head_control_module]
 
-- ROS Message Type : [HeadJointPose.msg]
+- ROS Message Type : [HeadJointPose.msg]{: .popup}
 
 ### [thormang3_offset_tuner_msgs](#thormang3_offset_tuner_msgs)
 
 The following are Messages and Service used for the thormang3_offset_tuner_server and the [thormang3_offset_tuner_client].
 
 - ROS Message Type
-  - [JointOffsetData.msg]
-  - [JointOffsetPositionData.msg]
-  - [JointTorqueOnOff.msg]
-  - [JointTorqueOnOffArray.msg]
+  - [JointOffsetData.msg]{: .popup}
+  - [JointOffsetPositionData.msg]{: .popup}
+  - [JointTorqueOnOff.msg]{: .popup}
+  - [JointTorqueOnOffArray.msg]{: .popup}
 
 - ROS Service Type
-  - [GetPresentJointOffsetData.srv]
+  - [GetPresentJointOffsetData.srv]{: .popup}
 
 
 [MPC Installation]: /docs/en/platform/thormang3/getting_started/#mpc-installation
@@ -1967,86 +1966,116 @@ The following are Messages and Service used for the thormang3_offset_tuner_serve
 [OPC Installation]: /docs/en/platform/thormang3/getting_started/#opc-installation
 [std_msgs/Int32]: /docs/en/popup/std_msgs_int32_message/
 [std_msgs/String]: /docs/en/popup/std_msgs_string/
-[thormang3_action_module_msgs/StartAction]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/StartAction.msg
-[StartAction.msg]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/StartAction.msg
-[robotis_controller_msgs/StatusMsg]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/StatusMsg.msg
-[thormang3_action_module_msgs/IsRunning]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/(thormang3_action_module_msgs)IsRunning.srv
-[IsRunning.srv]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/(thormang3_action_module_msgs)IsRunning.srv
-[sensor_msgs/PointCloud2]: http://docs.ros.org/api/sensor_msgs/html/msg/PointCloud2.html
-[laser_assembler/AssembleScan2]: http://docs.ros.org/api/laser_assembler/html/srv/AssembleScans2.html
-[How to execute Simple Demonstration]: /docs/en/platform/thormang3/thormang3_operation/#simple-demo
-[How to operate walking module]: /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_walking_module
-[thormang3_offset_tuner_client]: /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3-offset-tuner-client
-[thormang3_manipulation_module_msgs/KinematicsPose]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/KinematicsPose.msg
-[KinematicsPose.msg]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/KinematicsPose.msg
-[thormang3_walking_module_msgs/GetReferenceStrpData]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/GetReferenceStepData.srv
-[GetReferenceStepData.srv]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/GetReferenceStepData.srv
-[thormang3_walking_module_msgs/AddStepDataArray]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/AddStepDataArray.srv
-[AddStepDataArray.srv]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/AddStepDataArray.srv
-[thormang3_walking_module_msgs/SetBalanceParam]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/SetBalanceParam.srv
-[SetBalanceParam.srv]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/SetBalanceParam.srv
-[thormang3_walking_module_msgs::IsRunning]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/IsRunning.srv
-[thormang3_feet_ft_module_msgs/BothWrench]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/BothWrench.msg
-[BothWrench.msg]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/BothWrench.msg
-[robotis_controller_msgs/JointCtrlModule]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/JointCtrlModule.msg
-[thormang3_manipulation_module_msgs/JointPose]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/JointPose.msg
-[JointPose.msg]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/JointPose.msg
-[thormang3_foot_step_generator/FootStepCommand]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/FootStepCommand.msg
-[thormang3_foot_step_generator/Step2DArray]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/Step2DArray.msg
-[robotis_controller_msgs/GetJointModule]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/GetJointModule.srv
-[thormang3_manipulation_module_msgs/GetJointPose]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/GetJointPose.srv
-[GetJointPose.srv]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/GetJointPose.srv
-[thormang3_manipulation_module_msgs/GetKinematicsPose]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/GetKinematicsPose.srv
-[GetKinematicsPose.srv]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/GetKinematicsPose.srv
-[thormang3_walking_module_msgs::GetReferenceStepData]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/GetReferenceStepData.srv
-[Remote Control(GUI Demo)]: /docs/en/platform/thormang3/thormang3_operation/#gui-program
+[std_msgs/Bool]: /docs/en/popup/std_msgs_bool_msg/
+[std_msgs/Float64]: /docs/en/popup/std_msgs_Float64_msg/
+
+[geometry_msgs/Pose]:/docs/en/popup/geometry_msgs_Pose_msg/
+[geometry_msgs/WrenchStamped]: /docs/en/popup/geometry_msgs_WrenchStamped_msg/
+
+[sensor_msgs/PointCloud2]: /docs/en/popup/sensor_msgs_PointCloud2_msg/
+[sensor_msgs/Imu]: /docs/en/popup/sensor_msgs_IMU_msg/
+[sensor_msgs/JointState]: /docs/en/popup/sensor_msgs_JointState_msg/
+
+[visualization_msgs/MarkerArray]:/docs/en/popup/visualization_msgs_MarkerArray_msg/
+
+[StartAction.msg]: /docs/en/popup/StartAction.msg/
+
+[robotis_controller_msgs/StatusMsg]: /docs/en/popup/StatusMsg.msg/
+[robotis_controller_msgs/JointCtrlModule]: /docs/en/popup/JointCtrlModule.msg/
+[robotis_controller_msgs/GetJointModule]: /docs/en/popup/GetJointModule.srv/
+[robotis_controller_msgs/Status]: /docs/en/popup/StatusMsg.msg/
+
+
+[thormang3_action_module_msgs/StartAction]: /docs/en/popup/StartAction.msg/
+[thormang3_action_module_msgs/IsRunning]: /docs/en/popup/(thormang3_action_module_msgs)IsRunning.srv/
+[thormang3_offset_tuner_client]: /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_offset_tuner_client
+[thormang3_manipulation_module_msgs/KinematicsPose]: /dosc/en/popup/KinematicsPose.msg/
+[thormang3_walking_module_msgs/GetReferenceStrpData]: /dosc/en/popup/GetReferenceStepData.srv/
+[thormang3_walking_module_msgs/AddStepDataArray]: /dosc/en/popup/AddStepDataArray.srv/
+[thormang3_walking_module_msgs/SetBalanceParam]: /dosc/en/popup/SetBalanceParam.srv/
+[thormang3_walking_module_msgs/IsRunning]: /dosc/en/popup/(thormang3_walking_module_msgs)IsRunning.srv/
+[thormang3_feet_ft_module_msgs/BothWrench]: /docs/en/popup/BothWrench.msg/
+[thormang3_manipulation_module_msgs/JointPose]: /docs/en/popup/JointPose.msg/
+[thormang3_foot_step_generator/FootStepCommand]: /docs/en/popup/FootStepCommand.msg/
+[thormang3_foot_step_generator/Step2DArray]: /docs/en/popup/Step2DArray.msg
+[thormang3_manipulation_module_msgs/GetJointPose]: /docs/en/popup/GetJointPose.srv/
+[thormang3_manipulation_module_msgs/GetKinematicsPose]: /docs/en/popup/GetKinematicsPose.srv/
+[thormang3_walking_module_msgs/GetReferenceStepData]: /docs/en/popup/GetReferenceStepData.srv/
 [thormang3_walking_module]: /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_walking_module
 [thormang3_action_module]: /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_action_module
 [thormang3_feet_ft_module]: /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_feet_ft_module
 [thormang3_manipulation_module]: /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_manipulation_module
 [thormang3_head_control_module]: /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_head_control_module
 [thormang3_offset_tuner_server]: /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3-offset-tuner-server
-[robotis_controller_msgs::Status]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/StatusMsg.msg
-[FootStepCommand.msg]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/FootStepCommand.msg
-[Step2D.msg]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/Step2D.msg
-[Step2DArray.msg]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/Step2DArray.msg
-[thormang3_offset_tuner_msgs::JointOffsetData|JointOffsetData.msg]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/JointOffsetData.msg
-[thormang3_offset_tuner_msgs/JointOffsetData]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/JointOffsetData.msg
-[JointOffsetData.msg]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/JointOffsetData.msg
-[JointOffsetPositionData.msg]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/JointOffsetPositionData.msg
-[thormang3_offset_tuner_msgs::JointTorqueOnOffArray|JointTorqueOnOffArray.msg]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/JointTorqueOnOffArray.msg
-[thormang3_offset_tuner_msgs/JointTorqueOnOffArray]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/JointTorqueOnOffArray.msg
-[JointTorqueOnOffArray.msg]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/JointTorqueOnOffArray.msg
-[thormang3_offset_tuner_msgs::GetPresentJointOffsetData|GetPresentJointOffsetData.srv]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/GetPresentJointOffsetData.srv
-[thormang3_offset_tuner_msgs/GetPresentJointOffsetData]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/GetPresentJointOffsetData.srv
-[GetPresentJointOffsetData.srv]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/GetPresentJointOffsetData.srv
-[BalanceParam.msg]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/BalanceParam.msg
-[DampingBalanceParam.msg]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/DampingBalanceParam.msg
-[JointFeedBackGain.msg]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/JointFeedBackGain.msg
-[PoseXYZRPY.msg]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/PoseXYZRPY.msg
-[PoseZRPY.msg]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/PoseZRPY.msg
-[RobotPose.msg]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/RobotPose.msg
-[StepData.msg]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/StepData.msg
-[StepPositionData.msg]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/StepPositionData.msg
-[StepTimeData.msg]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/StepTimeData.msg
-[WalkingJointStatesStamped.msg]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/WalkingJointStatesStamped.msg
-[RemoveExistingStepData.srv]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/RemoveExistingStepData.srv
-[SetDampingBalanceParam.srv]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/SetDampingBalanceParam.srv
-[SetJointFeedBackGain.srv]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/SetJointFeedBackGain.srv
-[StartWalking.srv]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/StartWalking.srv
-[HeadJointPose.msg]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/HeadJointPose.msg
-[JointTorqueOnOff.msg]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/JointTorqueOnOff.msg
-[sensor_msgs/Imu]: http://docs.ros.org/api/sensor_msgs/html/msg/Imu.html
-[thormang3_walking_module_msgs/WalkingStart]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/WalkingStart.srv
-[thormang3_walking_module_msgs/IsRunning]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/IsRunning.srv
-[thormang3_walking_module_msgs/RemoveExistingStepData]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/RemoveExistingStepData.srv
-[std_msgs/Float64]: http://docs.ros.org/api/std_msgs/html/msg/Float64.html
-[sensor_msgs/JointState]: http://docs.ros.org/api/sensor_msgs/html/msg/JointState.html
-[thormang3_head_control_module_msgs/HeadJointPose]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/HeadJointPose.msg
-[geometry_msgs/WrenchStamped]: http://docs.ros.org/api/geometry_msgs/html/msg/WrenchStamped.html
-[thormang3_walking_module_msgs/StepData]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/StepData.msg
-[thormang3_walking_module_msgs/BalanceParam]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/BalanceParam.msg
-[thormang3_foot_step_generator::FootStepCommand]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/FootStepCommand.msg
-[thormang3_foot_step_generator::Step2DArray]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/Step2DArray.msg
-[thormang3_walking_module_msgs::AddStepDataArray]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/AddStepDataArray.srv
-[thormang3_walking_module_msgs::SetBalanceParam]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/SetBalanceParam.srv
+[thormang3_offset_tuner_msgs/JointOffsetData|JointOffsetData.msg]: /docs/en/popup/JointOffsetData.msg/
+[thormang3_offset_tuner_msgs/JointOffsetData]: /docs/en/popup/JointOffsetData.msg/
+[thormang3_offset_tuner_msgs/JointTorqueOnOffArray|JointTorqueOnOffArray.msg]: /docs/en/popup/JointTorqueOnOffArray.msg/
+[thormang3_offset_tuner_msgs/JointTorqueOnOffArray]: /docs/en/popup/JointTorqueOnOffArray.msg/
+[thormang3_offset_tuner_msgs/GetPresentJointOffsetData|GetPresentJointOffsetData.srv]: /docs/en/popup/GetPresentJointOffsetData.srv/
+[thormang3_offset_tuner_msgs/GetPresentJointOffsetData]: /docs/en/popup/GetPresentJointOffsetData.srv/
+[thormang3_walking_module_msgs/WalkingStart]: /docs/en/popup/WalkingStart.srv/
+[thormang3_walking_module_msgs/IsRunning]: /docs/en/popup/(thormang3_walking_module_msgs)IsRunning.srv/
+[thormang3_walking_module_msgs/RemoveExistingStepData]: /docs/en/popup/RemoveExistingStepData.srv/
+[thormang3_head_control_module_msgs/HeadJointPose]: /docs/en/popup/HeadJointPose.msg
+[thormang3_walking_module_msgs/StepData]: /docs/en/popup/StepData.msg/
+[thormang3_walking_module_msgs/BalanceParam]: /docs/en/popup/BalanceParam.msg/
+[thormang3_foot_step_generator/FootStepCommand]: /docs/en/popup/FootStepCommand.msg/
+[thormang3_foot_step_generator/Step2DArray]: /docs/en/popup/Step2DArray.msg/
+[thormang3_walking_module_msgs/AddStepDataArray]: /docs/en/popup/AddStepDataArray.srv/
+[thormang3_walking_module_msgs/SetBalanceParam]: /docs/en/popup/SetBalanceParam.srv/
+
+[JointPose.msg]: /docs/en/popup/JointPose.msg/
+[JointOffsetData.msg]: /docs/en/popup/JointOffsetData.msg/
+[JointOffsetPositionData.msg]: /docs/en/popup/JointOffsetPositionData.msg/
+[JointTorqueOnOffArray.msg]: /docs/en/popup/JointTorqueOnOffArray.msg/
+[JointFeedBackGain.msg]: /docs/en/popup/JointFeedBackGain.msg/
+[JointTorqueOnOff.msg]: /docs/en/popup/JointTorqueOnOff.msg/
+
+[IsRunning.srv]: /docs/en/popup/(thormang3_action_module_msgs)IsRunning.srv/
+[laser_assembler/AssembleScan2]: /docs/en/popup/laser_assembler_AssembleScan2_srv/
+
+[How to execute Simple Demonstration]: /docs/en/platform/thormang3/thormang3_operation/#simple-demo
+[How to operate walking module]: /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_walking_module
+
+[KinematicsPose.msg]: /dosc/en/popup/KinematicsPose.msg/
+[GetReferenceStepData.srv]: /dosc/en/popup/GetReferenceStepData.srv/
+[AddStepDataArray.srv]: /dosc/en/popup/AddStepDataArray.srv/
+[SetBalanceParam.srv]: /dosc/en/popup/SetBalanceParam.srv/
+[BothWrench.msg]: /docs/en/popup/BothWrench.msg/
+[GetJointPose.srv]: /docs/en/popup/GetJointPose.srv/
+[GetKinematicsPose.srv]: /docs/en/popup/GetKinematicsPose.srv/
+[Remote Control(GUI Demo)]: /docs/en/platform/thormang3/thormang3_operation/#gui-program
+[FootStepCommand.msg]: /docs/en/popup/FootStepCommand.msg/
+[Step2D.msg]: /docs/en/popup/Step2D.msg/
+[Step2DArray.msg]: /docs/en/popup/Step2DArray.msg/
+[GetPresentJointOffsetData.srv]: /docs/en/popup/GetPresentJointOffsetData.srv/
+[BalanceParam.msg]: /docs/en/popup/BalanceParam.msg/
+[DampingBalanceParam.msg]: /docs/en/popup/DampingBalanceParam.msg/
+[PoseXYZRPY.msg]: /docs/en/popup/PoseXYZRPY.msg/
+[PoseZRPY.msg]: /docs/en/popup/PoseZRPY.msg/
+[RobotPose.msg]: /docs/en/popup/RobotPose.msg/
+[StepData.msg]: /docs/en/popup/StepData.msg/
+[StepPositionData.msg]: /docs/en/popup/StepPositionData.msg/
+[StepTimeData.msg]: /docs/en/popup/StepTimeData.msg/
+[WalkingJointStatesStamped.msg]: /docs/en/popup/WalkingJointStatesStamped.msg/
+[RemoveExistingStepData.srv]: /docs/en/popup/RemoveExistingStepData.srv/
+[SetDampingBalanceParam.srv]: /docs/en/popup/SetDampingBalanceParam.srv/
+[SetJointFeedBackGain.srv]: /docs/en/popup/SetJointFeedBackGain.srv/
+[StartWalking.srv]: /docs/en/popup/StartWalking.srv/
+[HeadJointPose.msg]: /docs/en/popup/HeadJointPose.msg/
+
+
+
+
+[laser_filters]:http://wiki.ros.org/laser_filters/
+[laser_assembler]:http://wiki.ros.org/laser_assembler/
+[http://wiki.ros.org/humanoid_navigation]:http://wiki.ros.org/humanoid_navigation
+[https://github.com/AravindaDP/humanoid_navigation]:https://github.com/AravindaDP/humanoid_navigation
+[https://github.com/sbpl/sbpl]:https://github.com/sbpl/sbpl
+[http://wiki.ros.org/footstep_planner]:http://wiki.ros.org/footstep_planner
+[http://wiki.ros.org/gridmap_2d]:http://wiki.ros.org/gridmap_2d
+[http://wiki.ros.org/humanoid_localization]:http://wiki.ros.org/humanoid_localization
+[footstep_planner]:http://wiki.ros.org/action/fullsearch/footstep_planner
+[ros_mpg321_player]:https://github.com/ROBOTIS-GIT/ROBOTIS-Utility
+[URDF-ROS Wiki]:http://wiki.ros.org/urdf
+[Connect to ROS]:http://gazebosim.org/tutorials?cat=connect_ros
