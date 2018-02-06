@@ -1,2 +1,3 @@
-It is the internal temperature of Dynamixel in Celsius.
-Data value is identical to the actual temperature in Celsius. For example, if the data value is 85 (0x55), the current internal temperature is 85&deg;C.
+
+내부의 온도이며 이 값의 단위는 섭씨 온도입니다.  
+예를 들어, 값이 85이면 현재 내부 온도는 85&deg;C 입니다.

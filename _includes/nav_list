@@ -7,12 +7,13 @@
     {% if page.lang=='kr' %}
       {% if nav.titlekr %}
         {% assign navtitle=nav.titlekr %}
+        {% if nav.urlkr %}
+          {% assign navurl=nav.urlkr %}
+        {% else %}
+          {% assign navurl=nav.url %}
+        {% endif %}
       {% else %}
         {% assign navtitle=null %}
-      {% endif %}
-      {% if nav.urlkr %}
-        {% assign navurl=nav.urlkr %}
-      {% else %}
         {% assign navurl=null %}
       {% endif %}
     {% else %}
@@ -28,90 +29,95 @@
       {% endif %}
     {% endif %}
 
-    {% if nav.children != null %}
-
-    <li class="has-children">
-      <input type="radio" name="toplevel" id="toplevel_{{ forloop.index0 }}" {{ active }}>
-      <label for="toplevel_{{ forloop.index0 }}">{{ navtitle }} [+]</label>
+    {% if navtitle==null %}
     {% else %}
 
-    <li>
-      <a href="{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ navurl }}" onclick="extendnav()">{{ navtitle }}</a>
-    </li>
-    {% endif %}
+      {% if nav.children != null %}
+      <li class="has-children">
+        <input type="radio" name="toplevel" id="toplevel_{{ forloop.index0 }}" {{ active }}>
+        <label for="toplevel_{{ forloop.index0 }}">{{ navtitle }} [+]</label>
 
-    {% if nav.children != null %}
-      <ul>
-      {% for child in nav.children %}
-        {% if child.url == page.url %}
-          {% assign active = "checked" %}
-        {% else %}
-          {% assign active = "" %}
-        {% endif %}
+      {% else %}
+      <li>
+        <a href="{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ navurl }}" onclick="extendnav()">{{ navtitle }}</a>
+      </li>
+      {% endif %}
 
-        {% if page.lang=='kr' %}
-          {% if child.titlekr %}
-            {% assign childtitle=child.titlekr %}
+      {% if nav.children != null %}
+        <ul>
+        {% for child in nav.children %}
+          {% if child.url == page.url %}
+            {% assign active = "checked" %}
           {% else %}
-            {% assign childtitle=null %}
+            {% assign active = "" %}
           {% endif %}
-          {% if child.urlkr %}
-            {% assign childurl=child.urlkr %}
-          {% else %}
-            {% assign childurl=null %}
-          {% endif %}
-        {% else %}
-          {% assign childtitle=child.title %}
-          {% assign childurl=child.url %}
-        {% endif %}
 
-        {% if child.children != null %}
-        <li class="has-children">
-          <input type="radio" name="sublevel" id="{{ childtitle }}" {{ active }}>
-          <label for="{{ childtitle }}">{{ childtitle }} [+]</label>
-        {% else %}
-        <li><a href="{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ childurl }}" onclick="extendnav()">{{ childtitle }}</a></li>
-        {% endif %}
-
-        {% if child.children != null %}
-          <ul>
-          {% for grandchild in child.children %}
-            {% if grandchild.url == page.url %}
-              {% assign active = "checked" %}
-            {% else %}
-              {% assign active = "" %}
-            {% endif %}
-
-            {% if page.lang=='kr' %}
-              {% if grandchild.titlekr %}
-                {% assign grandchildtitle=grandchild.titlekr %}
+          {% if page.lang=='kr' %}
+            {% if child.titlekr %}
+              {% assign childtitle=child.titlekr %}
+              {% if child.urlkr %}
+                {% assign childurl=child.urlkr %}
               {% else %}
-                {% assign grandchildtitle=null %}
-              {% endif %}
-              {% if grandchild.urlkr %}
-                {% assign grandchildurl=grandchild.urlkr %}
-              {% else %}
-                {% assign grandchildurl=null %}
+                {% assign childurl=child.url %}
               {% endif %}
             {% else %}
-              {% assign grandchildtitle=grandchild.title %}
-              {% assign grandchildurl=grandchild.url %}
+              {% assign childtitle=null %}
+              {% assign childurl=null %}
             {% endif %}
+          {% else %}
+            {% assign childtitle=child.title %}
+            {% assign childurl=child.url %}
+          {% endif %}
 
-            <li>
-              <a href="{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ grandchildurl }}" style="font-style:italic;" onclick="extendnav()">{{ grandchildtitle }}</a>
-            </li>
-          {% endfor %}
-          </ul>
-        {% endif %}
-        {% if child.children != null %}
-        </li>
-        {% endif %}
-      {% endfor %}
-      </ul>
-    {% endif %}
-    {% if nav.children != null %}
-    </li>
+          {% if child.children != null %}
+          <li class="has-children">
+            <input type="radio" name="sublevel" id="{{ childtitle }}" {{ active }}>
+            <label for="{{ childtitle }}">{{ childtitle }} [+]</label>
+          {% else %}
+          <li><a href="{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ childurl }}" onclick="extendnav()">{{ childtitle }}</a></li>
+          {% endif %}
+
+          {% if child.children != null %}
+            <ul>
+            {% for grandchild in child.children %}
+              {% if grandchild.url == page.url %}
+                {% assign active = "checked" %}
+              {% else %}
+                {% assign active = "" %}
+              {% endif %}
+
+              {% if page.lang=='kr' %}
+                {% if grandchild.titlekr %}
+                  {% assign grandchildtitle=grandchild.titlekr %}
+                  {% if grandchild.urlkr %}
+                    {% assign grandchildurl=grandchild.urlkr %}
+                  {% else %}
+                    {% assign grandchildurl=grandchild.url %}
+                  {% endif %}
+                {% else %}
+                  {% assign grandchildtitle=null %}
+                  {% assign grandchildurl=null %}
+                {% endif %}
+              {% else %}
+                {% assign grandchildtitle=grandchild.title %}
+                {% assign grandchildurl=grandchild.url %}
+              {% endif %}
+
+              <li>
+                <a href="{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ grandchildurl }}" style="font-style:italic;" onclick="extendnav()">{{ grandchildtitle }}</a>
+              </li>
+            {% endfor %}
+            </ul>
+          {% endif %}
+          {% if child.children != null %}
+          </li>
+          {% endif %}
+        {% endfor %}
+        </ul>
+      {% endif %}
+      {% if nav.children != null %}
+      </li>
+      {% endif %}
     {% endif %}
   {% endfor %}
   </ul>

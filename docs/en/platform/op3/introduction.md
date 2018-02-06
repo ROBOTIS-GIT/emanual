@@ -52,29 +52,29 @@ There are 1 RGB LED and 3 LEDs, 4 buttons on the back of OP3. From left to right
 
 - Hardware Spec Comparison
 
-||ROBOTIS OP2|ROBOTIS OP3|
-|:---:|:---:|:---:|
-|Actuator|MX-28|XM430-W350|
-|CPU|Intel Atom N2600<br />@1.6GHz dual core|Intel Core i3 processor<br />dual core|
-|RAM|2GB DDR3 SODIMM 1066MHz<br />(user-replaceable)|8GB DDR4 SODIMMs 2133MHz<br />(32GB maximum)<br />(user-replaceable)|
-|Storage|half-size mSATA module (32GB)<br />(user-replaceable)|M.2 SSD module (128GB)<br />(user-replaceable)|
-|Compatible OS|any Linux release (32-bit)<br />any Windows release (32-bit)|any Linux release (32-bit/64-bit)<br />any Windows release (32-bit/64-bit)|
-|Networking|Realtek 10/100/1000 Mbps Ethernet<br />802.11n (2.4GHz-only)|Intel 10/100/1000 Mbps Ethernet<br />802.11ac (2.4GHz, 5GHz)<br />Bluetooth 4.1|
-|Camera|Logitech C905 (1600x1200)|Logitech C920 (1920x1080)|
+|               |                         ROBOTIS OP2                          |                                   ROBOTIS OP3                                   |
+|:-------------:|:------------------------------------------------------------:|:-------------------------------------------------------------------------------:|
+|   Actuator    |                            MX-28                             |                                   XM430-W350                                    |
+|      CPU      |           Intel Atom N2600<br />@1.6GHz dual core            |                     Intel Core i3 processor<br />dual core                      |
+|      RAM      |       2GB DDR3 SODIMM 1066MHz<br />(user-replaceable)        |      8GB DDR4 SODIMMs 2133MHz<br />(32GB maximum)<br />(user-replaceable)       |
+|    Storage    |    half-size mSATA module (32GB)<br />(user-replaceable)     |                 M.2 SSD module (128GB)<br />(user-replaceable)                  |
+| Compatible OS | any Linux release (32-bit)<br />any Windows release (32-bit) |   any Linux release (32-bit/64-bit)<br />any Windows release (32-bit/64-bit)    |
+|  Networking   | Realtek 10/100/1000 Mbps Ethernet<br />802.11n (2.4GHz-only) | Intel 10/100/1000 Mbps Ethernet<br />802.11ac (2.4GHz, 5GHz)<br />Bluetooth 4.1 |
+|    Camera     |                  Logitech C905 (1600x1200)                   |                            Logitech C920 (1920x1080)                            |
 
 ROBOTIS OP3 is an affordable, miniature humanoid robot platform with advanced computational power, sophisticated sensors, high payload capacity, and dynamic motion ability to enable many exciting research and education activities.
 
 - Actuator Spec Comparisons
 
-||MX-28|XM430-W350|
-|:---:|:---:|:---:|
-|Weight|77g|82g|
-|Dimension|35.6mm x 50.6mm x 35.5mm|28.5mm x 46.5mm x 34.0mm|
-|Gear Ratio|193 : 1|353.5 : 1|
-|Stall Torque|2.5 N.m|4.1 N.m|
-|Stall Current|1.4 A|2.3 A|
-|No Load Speed|55 RPM|46 RPM|
-|Protocol|1.0 Only|1.0, 2.0|
+|               |          MX-28           |        XM430-W350        |
+|:-------------:|:------------------------:|:------------------------:|
+|    Weight     |           77g            |           82g            |
+|   Dimension   | 35.6mm x 50.6mm x 35.5mm | 28.5mm x 46.5mm x 34.0mm |
+|  Gear Ratio   |         193 : 1          |        353.5 : 1         |
+| Stall Torque  |         2.5 N.m          |         4.1 N.m          |
+| Stall Current |          1.4 A           |          2.3 A           |
+| No Load Speed |          55 RPM          |          46 RPM          |
+|   Protocol    |         1.0 Only         |         1.0, 2.0         |
 
 - XM430 series actuator is easier to assemble and maintain as well as supporting various control algorithms.
   - Reduced size and increased torque
@@ -86,26 +86,25 @@ ROBOTIS OP3 is an affordable, miniature humanoid robot platform with advanced co
 
 - ROBOTIS-OP3 Specifications
 
-||ROBOTIS OP3|
-|:---:|:---:|
-|Height|About 510mm|
-|Weight|About 3.5kg (without skin cover)|
-|DOF|20|
-|Actuator|XM430-W350-R|
-|Main Controller|INTEL NUC i3<br />Intel Core i3 processor dual core<br />8GB RAM DDR4 SODIMMs 2133MHz<br />128GB M.2 SSD|
-|Sub Controller|OpenCR|
-|Camera|Logitech C920 HD Pro Webcam|
-|IMU Sensor|3-Axis Gyroscope, 3-Axis Accelerometer, 3-Axis Magnetometer|
-|Battery|Lipo 3cell 11.1v 1800mA|
-|IO Device|RGB LED x 1, LED x 3 (Red, Green, Blue), Button x 4, Speaker x 1|
-|Installable OS|any Linux release (32-bit/64-bit)<br />any Windows release (32-bit/64-bit)|
-|Development<br />Environment|OS : Linux (64-bit)<br />C++, ROS, Dynamixel SDK|
+|                              |                                               ROBOTIS OP3                                                |
+|:----------------------------:|:--------------------------------------------------------------------------------------------------------:|
+|            Height            |                                               About 510mm                                                |
+|            Weight            |                                     About 3.5kg (without skin cover)                                     |
+|             DOF              |                                                    20                                                    |
+|           Actuator           |                                               XM430-W350-R                                               |
+|       Main Controller        | INTEL NUC i3<br />Intel Core i3 processor dual core<br />8GB RAM DDR4 SODIMMs 2133MHz<br />128GB M.2 SSD |
+|        Sub Controller        |                                                  OpenCR                                                  |
+|            Camera            |                                       Logitech C920 HD Pro Webcam                                        |
+|          IMU Sensor          |                       3-Axis Gyroscope, 3-Axis Accelerometer, 3-Axis Magnetometer                        |
+|           Battery            |                                         Lipo 3cell 11.1v 1800mA                                          |
+|          IO Device           |                     RGB LED x 1, LED x 3 (Red, Green, Blue), Button x 4, Speaker x 1                     |
+|        Installable OS        |                any Linux release (32-bit/64-bit)<br />any Windows release (32-bit/64-bit)                |
+| Development<br />Environment |                             OS : Linux (64-bit)<br />C++, ROS, Dynamixel SDK                             |
 
 
 ## [Safety Information](#safety-information)
 
-`Caution` ROBOTIS will not be responsible for any loss or damage whatsoever caused resulting from
-user’s negligence or misuse of the product.
+`Caution` ROBOTIS will not be responsible for any loss or damage whatsoever caused resulting from user’s negligence or misuse of the product.
 {: .notice--warning}
 
 - Read the instruction carefully before getting started.

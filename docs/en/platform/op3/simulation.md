@@ -13,7 +13,9 @@ sidebar:
 
 <div style="counter-reset: h1 5"></div>
 
-## [Gazebo installation](#Gazebo-installation)
+# [Simulation](#simulation)
+
+## [Gazebo Installation](#gazebo-installation)
 
 ### Overview
 ROS-Gazebo Package Installation
@@ -32,11 +34,7 @@ If ros-indigo-desktop-full was used to install, the following packages need to b
 # apt-get install ros-kinetic-gazebo-ros-control
 ```
 
-<div style="counter-reset: h1 4"></div>
-
-# [Simulation](#simulation)
-
-## [How to execute Gazebo simulation](#How-to-execute-Gazebo-simulation)
+## [How to execute Gazebo Simulation](#how-to-execute-gazebo-simulation)
 
 ### Overview  
 How to set up & execute gazebo simulation
@@ -71,10 +69,10 @@ $ roslaunch op3_manager op3_gazebo.launch
 
 
 
-[Gazebo Tutorials]:http://gazebosim.org/tutorials?cat=connect_ros
-[ROBOTIS-OP3 Common]:[ROBOTIS-OP3-Common.md]
+[Gazebo Tutorials]: http://gazebosim.org/tutorials?cat=connect_ros
+[ROBOTIS-OP3 Common]: [ROBOTIS-OP3-Common.md]
 
-[op3_manager]:[op3_manager.md]
-[OP3 Tutorials]:[OP3-Tutorials.md]
-[Controller File]:https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Common/blob/master/robotis_op3_gazebo/config/position_controller.yaml
-[World File]:https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Common/blob/master/robotis_op3_gazebo/worlds/empty.world
+[op3_manager]: [op3_manager.md]
+[OP3 Tutorials]: [OP3-Tutorials.md]
+[Controller File]: https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Common/blob/master/robotis_op3_gazebo/config/position_controller.yaml
+[World File]: https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Common/blob/master/robotis_op3_gazebo/worlds/empty.world

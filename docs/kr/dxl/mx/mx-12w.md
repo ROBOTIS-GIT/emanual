@@ -11,11 +11,11 @@ sidebar:
   nav: "mx-12w"
 ---
 
-# MX-12W
-
 ![](/assets/images/dxl/mx/mx-12_product.jpg)
 
-# [주요 사양 요약](#주요-사양-요약)
+> MX-12W
+
+# [주요 사양](#주요-사양)
 
 | 항목           | 내용    |
 | :------------- | :------------- |
@@ -42,10 +42,10 @@ sidebar:
 
 {% include kr/dxl/control_table_protocol1.md %}
 
-## [Control Table of EEPROM Area](#control-table-of-eeprom-area)
+## [EEPROM 영역](#eeprom-영역)
 
-| 주소     | 크기(Byte)     | 명칭     | 의미    | 접근     | 초기값  |
-| :------------- | :------------- | :------------- | :------------- | :------------- | :------------- |
+| 주소     | 크기<br>(Byte)     | 명칭     | 의미    | 접근     | 초기값  |
+| :---------: | :-----------:  | :----------- | :------------ | :--------: | :------------: |
 |0|2|[Model Number](#model-number)         | 모델 번호의 바이트      | R       | 104 |
 |2|1|[Firmware Version](#firmware-version)    |펌웨어 버전 정보|R|-|
 |3|1|[ID](#id)                  |다이나믹셀 ID     |RW|1|
@@ -64,10 +64,10 @@ sidebar:
 |22|1|[Resolution Divider](#resolution-divider) |해상도 디바이더|RW|1|
 
 
-## [Control Table of RAM Area](#control-table-of-ram-area)
+## [RAM 영역](#ram-영역)
 
-| 주소     | 크기(Byte)     | 명칭     | 의미    | 접근     | 초기값  |
-| :------------- | :------------- | :------------- | :------------- | :------------- | :------------- |
+| 주소     | 크기<br>(Byte)     | 명칭     | 의미    | 접근     | 초기값  |
+| :---------: | :-----------:  | :----------- | :------------ | :--------: | :------------: |
 |24|1|[Torque Enable](#torque-enable)            |토크 켜기|RW|0|
 |25|1|[LED](#led)                             |LED On/Off|RW|0|
 |26|1|[D Gain](#d-gain)   |Derivative Gain|RW|8|
@@ -75,7 +75,7 @@ sidebar:
 |28|1|[P Gain](#p-gain)   |Proportional Gain|RW|8|
 |30|2|[Goal Position](#goal-position)                 |목표 위치 값의 바이트|RW|-|
 |32|2|[Moving Speed](#moving-speed)             |목표 속도 값의 바이트|RW|-|
-|34|2|[Torque Limit](#torque-limit)            |토크 한계 값의 바이트|RW|ADD 14&15|
+|34|2|[Torque Limit](#torque-limit)            |토크 한계 값의 바이트|RW|ADD 14\&15|
 |36|2|[Present Position](#present-position)     |현재 위치 값의 바이트|R|-|
 |38|2|[Present Speed](#present-speed)           |현재 속도 값의 바이트|R|-|
 |40|2|[Present Load](#present-load)             |현재 하중 값의 바이트|R|-|
@@ -88,7 +88,7 @@ sidebar:
 |73|1|[Goal Acceleration](#goal-acceleration)   |목표 가속도값|RW|0|
 
 
-## [Address 기능 설명](#address-기능-설명)
+## [컨트롤 테이블 설명](#컨트롤-테이블-설명)
 
 ### <a name="model-number"></a>**[Model Number (0)](#model-number-0)**
  다이나믹셀의 모델 번호입니다.
@@ -150,19 +150,19 @@ Value 값이 250 이상인 경우 :
 {% include kr/dxl/control_table_mx_goal_position.md %}
 
 ### <a name="moving-speed"></a>**[Moving Speed (32)](#moving-speed-32)**
-- 관절 모드, 다중 회전 모드
-Goal Position으로 이동하는 속도입니다.
-0~1023 (0X3FF) 까지 사용되며, 단위는 약 0.916rpm입니다.
-0으로 설정하면 속도 제어를 하지 않고 모터의 최대 rpm을 사용한다는 의미입니다.
-1023의 경우 약 937.1rpm이 됩니다.
-예를 들어, 300으로 설정된 경우 약 274.8rpm입니다.
+- 관절 모드, 다중 회전 모드  
+  Goal Position으로 이동하는 속도입니다.  
+  0~1023 (0X3FF) 까지 사용되며, 단위는 약 0.916rpm입니다.  
+  0으로 설정하면 속도 제어를 하지 않고 모터의 최대 rpm을 사용한다는 의미입니다.  
+  1023의 경우 약 937.1rpm이 됩니다.  
+  예를 들어, 300으로 설정된 경우 약 274.8rpm입니다.
 
-- 바퀴 모드
-목표 방향으로 이동하는 속도입니다.
-0~2047( 0X7FF)까지 사용되며, 단위는 0.916rpm입니다.
-0~1023 범위의 값을 사용하면 CCW방향으로 회전하며 0으로 설정하면 정지합니다.
-1024~2047 범위의 값을 사용하면 CW방향으로 회전하며 1024으로 설정하면 정지합니다.
-즉, 10번째 bit가 방향을 제어하는 direction bit가 됩니다.
+- 바퀴 모드  
+  목표 방향으로 이동하는 속도입니다.  
+  0~2047( 0X7FF)까지 사용되며, 단위는 0.916rpm입니다.  
+  0~1023 범위의 값을 사용하면 CCW방향으로 회전하며 0으로 설정하면 정지합니다.  
+  1024~2047 범위의 값을 사용하면 CW방향으로 회전하며 1024으로 설정하면 정지합니다.  
+  즉, 10번째 bit가 방향을 제어하는 direction bit가 됩니다.
 
   `Note` 해당 모델의 최대 rpm을 확인하시기 바랍니다. 최대 rpm 이상을 설정해도 모터는 그 이상의 속도를 낼 수 없습니다.
   {: .notice}
@@ -174,12 +174,12 @@ Goal Position으로 이동하는 속도입니다.
 {% include kr/dxl/control_table_magnet_present_position.md %}
 
 ### <a name="present-speed"></a>**[Present Speed (38)](#present-speed-38)**
-현재  이동하는 속도입니다.
-이 값은 0~2047 (0X7FF) 까지 사용됩니다.
-0~1023 범위의 값이면 CCW방향으로 회전한다는 의미입니다.
-1024~2047 범위의 값이면 CW방향으로 회전한다는 의미입니다.
-즉, 10번째 bit가 방향을 제어하는 direction bit가 되며 0과 1024는 같습니다.
-이 값의 단위는 약 0.916rpm 입니다.
+현재  이동하는 속도입니다.  
+이 값은 0~2047 (0X7FF) 까지 사용됩니다.  
+0~1023 범위의 값이면 CCW방향으로 회전한다는 의미입니다.  
+1024~2047 범위의 값이면 CW방향으로 회전한다는 의미입니다.  
+즉, 10번째 bit가 방향을 제어하는 direction bit가 되며 0과 1024는 같습니다.  
+이 값의 단위는 약 0.916rpm 입니다.  
 예를 들어, 300으로 설정된 경우 CCW방향 약 274.8rpm으로 이동 중이라는 의미입니다
 
 ### <a name="present-load"></a>**[Present Load (40)](#present-load-40)**
@@ -206,18 +206,21 @@ Goal Position으로 이동하는 속도입니다.
 ### <a name="goal-acceleration"></a>**[Goal Acceleration (73)](#goal-acceleration-73)**
 {% include kr/dxl/control_table_goal_acceleration.md %}
 
-# [조립 방법](#조립-방법)
+# [조립 예시](#조립-예시)
 
 
 
-# [Maintenance](#maintenance)
+# [유지보수](#유지보수)
 
 {% include kr/dxl/horn_bearing_replacement.md %}
 
-# [Reference](#reference)
+# [참고자료](#참고자료)
 
-`Note` [Compatibility Guide]
+`Note` [호환성 가이드]
 {: .notice}
+
+## [커넥터 정보](#커넥터-정보)
+{% include kr/dxl/molex_ttl.md %}
 
 ## [Videos](#videos)
 
@@ -228,4 +231,4 @@ Goal Position으로 이동하는 속도입니다.
 ![](/assets/images/dxl/ax/ax-12w_dimension.png)
 
 
-[Compatibility Guide]: http://en.robotis.com/BlueAD/board.php?bbs_id=faq&mode=view&bbs_no=47&page=1&key=&keyword=&sort=&scate=
+[호환성 가이드]: http://www.robotis.com/service/compatibility_table.php?cate=d

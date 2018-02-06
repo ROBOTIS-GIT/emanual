@@ -1,23 +1,24 @@
-Drive Mode is availabe from the firmware version 38.
+다이나믹셀의 드라이브 모드를 설정합니다. 펌웨어 38 이상부터 지원합니다.
 
-|Bit|Item|Description|
+|Bit|항목|설명|
 | :---: | :---: | :---: |
-|Bit 2 ~ 7|N/A|Unused, always '0'|
-|Bit 1|Master/Slave Setting<br />(Dual Joint)|Master Mode(0): Operate as a Master Dynamixel<br />Slave Mode(1): Operate as a Slave Dynamixel|
-|Bit 0|Direction of Rotation|Normal Mode(0): CCW(Positive), CW(Negative)<br />Reverse Mode(1): CCW(Negative), CW(Positive)|
+|Bit 2 ~ 7|N/A|사용하지 않음, 항상 '0'|
+|Bit 1|마스터/슬레이브 설정<br />(듀얼 조인트)|마스터 모드(0): 마스터 다이나믹셀로 동작합니다.<br />슬레이브 모드(1): 슬레이브 다이나믹셀로 동작합니다.|
+|Bit 0(0x01)|회전 방향|일반 모드(0): 반시계방향(양수), 시계방향(음수)<br />역방향 모드(1): 반시계방향(양수), 시계방향(양수)|
 
-`Note` Setting Reverse mode('1') for Direction of Rotation, DYNAMIXEL will switch rotating direction. Therefore the direction of Position, Velocity, Current, PWM will be affected. This feature can be very useful when configuring symmetrical joint system or wheel system.
+`참고` 회전방향의 역방향 모드('1')를 설정하면, 다이나믹셀의 회전 방향이 변경됩니다. 따라서 Position, Velocity, Current, PWM의 방향이 모두 변경됩니다. 좌우 대칭적인 구조의 관절이나 바퀴 구동 시스템을 구성할 때 편리하게 사용할 수 있습니다.
 {: .notice}
 
-Master/Slave configuration (Dual joint) is a method to simultaneously control two Dynamixels like one Dynamixel. Master Dynamixel and Slave Dynamixel must be connected with a sync cable. Slave Dynamixel is directly controlled by the Master Dynamixel’s PWM signal transmitted through the sync cable. Therefore, the Slave Dynamixel’s Goal Position, Goal Velocity, Goal Current and Goal PWM are ignored.
+`마스터/슬레이브 설정(듀얼 조인트)`은 2개의 다이나믹셀을 1개의 다이나믹셀처럼 동시에 제어하기 위한 방법입니다. 마스터 다이나믹셀과 슬레이브 다이나믹셀은 동기화 케이블로 연결되어야 합니다. 슬레이브 다이나믹셀은 동기화 케이블을 통해 전달된 Master 다이나믹셀의 PWM 신호에 의해서 직접 제어됩니다. 따라서 슬레이브 다이나믹셀의 Goal Position, Goal Velocity, Goal Current, Goal PWM은 무시됩니다.
 
-![](/assets/images/dxl/ex/ex-106_dual.png)
+![](/assets/images/dxl/ex/ex-106_dual_kr.png)
 
-|Sync Cable|Description|
+|동기화 케이블|설명|
 | :---: | :---: |
-|Normal Mode Sync Cable|Slave Dynamixel is controlled by the Master Dynamixel’s PWM signal. Slave Dynamixel rotates to the same direction of the Master Dynamixel.|
-|Reverse Mode Sync Cable|Slave Dynamixel is controlled by the inverted PWM signal of the Master Dynamixel. Slave Dynamixel rotates to the opposite direction of the Master Dynamixel.|
+|일반 모드용 동기화 케이블|Slave 다이나믹셀은 Master 다이나믹셀의 PWM 신호에 의해서 제어됩니다. 즉, 마스터/슬레이브 다이나믹셀의 회전방향은 동일합니다.|
+|리버스 모드용 동기화 케이블|Slave 다이나믹셀은 Master 다이나믹셀의 반전된 PWM 신호에 의해서 제어됩니다. 즉, 마스터/슬레이브 다이나믹셀의 회전방향은 서로 반대방향이 됩니다.|
 
-`Note` In a dual master-slave configuration position information from the slave is ignored and the position of the dual configuration is based on the master in PWM control. When master and slave are not physically connected there could be a slight difference on the driven load. Use the frame shown in the below image to achieve dual configuration.
+`주의` Master와 Slave가 하드웨어적으로 연결되어있지않으면 로드차이에 의해 조금씩 다르게 구동됩니다. 아래와 같이 프레임으로 연결하신후 듀얼모드를 사용해주세요.
+{: .notice--warning}
 
 ![](/assets/images/dxl/ex/ex-106+_fr08-h110_fr08-d101.png)

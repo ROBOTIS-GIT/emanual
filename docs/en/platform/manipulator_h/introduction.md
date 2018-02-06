@@ -110,6 +110,7 @@ Information appearing in a CAUTION concerns the protection of personnel and equi
 |:---:|:---:|
 |DOF|6 DOF|
 |Payload|3kg|
+|Weight|5kg|
 |Operating voltage|24V|
 |Resolution|Joint 1 : -&pi;(rad) ~ &pi;(rad) , -251000 ~ 251000 (pulse)<br />Joint 2 : -&pi;(rad) ~ &pi;(rad) , -251000 ~ 251000 (pulse)<br />Joint 3 : -&pi;(rad) ~ &pi;(rad) , -251000 ~ 251000 (pulse)<br />Joint 4 : -&pi;(rad) ~ &pi;(rad) , -251000 ~ 251000 (pulse)<br />Joint 5 : -&pi;(rad) ~ &pi;(rad) , -151875 ~ 151875 (pulse)<br />Joint 6 : -&pi;(rad) ~ &pi;(rad) , -151875 ~ 151875 (pulse)|
 |Dynamixel Pro<br />Model Name|Joint 1, 2 : H54-200-S500-R<br />Joint 3, 4 : H54-100-S500-R<br />Joint 5, 6 : H42-20-S300-R|

@@ -13,7 +13,7 @@ sidebar:
 
 <div style="counter-reset: h1 1"></div>
 
-# [Basic Operation](#basic-operation)
+# [Quick Start](#quick-start)
 
 ## [Power On](#power-on)
 
@@ -178,14 +178,14 @@ Please perform below procedures in order to shutdown the computer inside ROBOTIS
 {: .notice}
 
 
-# [Programming Guide](#programming-guide)
+## [Programming Guide](#programming-guide)
 
-## [Connect to OP3](#connect-to-op3)
+### [Connect to OP3](#connect-to-op3)
 
 From your computer go to Wi-Fi Setting and set to obtain an IP address automatically using DHCP.  
 Then connect to ROBOTIS OP3 wifi network(SSID : ROBOTIS-OP3-share). Password is 11111111.
 
-### Example : SSH Client (for Windows)
+#### Example : SSH Client (for Windows)
 - Execute SSH client program (ex: PuTTY)
 - Input ROBOTIS OP3’s IP address: `10.42.0.1`
 - Select `SSH` as a connection type and open the connection.
@@ -194,14 +194,14 @@ Then connect to ROBOTIS OP3 wifi network(SSID : ROBOTIS-OP3-share). Password is 
 
 ![](/assets/images/platform/op3/op3_023.png)
 
-### Example: SSH Client (for Linux)
+#### Example: SSH Client (for Linux)
 - Open the terminal window.
 - Input the following SSH command with ROBOTIS OP3’s user name and IP address : `$ ssh robotis@10.42.0.1`
 - Input ROBOTIS OP3’s Password : `111111`
 
 ![](/assets/images/platform/op3/op3_024.png)
 
-### Example: VNC client (for Windows)
+#### Example: VNC client (for Windows)
 - Users who are familiar to graphical interface may use remote desktop softwares.
 - Execute VNC client program (ex: Ultra VNC Viewer)
 - Input the ROBOTIS OP3’s IP address : `10.42.0.1`
@@ -209,7 +209,7 @@ Then connect to ROBOTIS OP3 wifi network(SSID : ROBOTIS-OP3-share). Password is 
 
 ![](/assets/images/platform/op3/op3_025.png)
 
-## [Development Environment](#development-environment)
+### [Development Environment](#development-environment)
 
 The following is the list of tools for source code development.
 - OS : Linux (64-bit)
@@ -219,7 +219,7 @@ The following is the list of tools for source code development.
 For more detailed information, please refer to the [ROBOTIS OP3 WIKI](https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki).   
 https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki
 
-## [Source Code](#source-code)
+### [Source Code](#source-code)
 
 You may find the source code directory at `/robotis` from ROBOTIS OP3's PC.
 
@@ -238,7 +238,7 @@ You may obtain updated source code from the below GitHub links :
 - https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Tools
 - https://github.com/ROBOTIS-GIT/ROBOTIS-Utility
 
-## [Framework](#framework)
+### [Framework](#framework)
 
 The following flow diagram represent class breakdown and data pipelines.  
 You may modify the framework at “/home/robotis/catkin_ws/src/ROBOTIS-Framework”.  
@@ -247,7 +247,7 @@ https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki
 
 ![](/assets/images/platform/op3/op3_027.png)
 
-## [Software Utilities](#software-utilities)
+### [Software Utilities](#software-utilities)
 
 User who wishes to customize or diagnose ROBOTIS OP3 should establish a connection with the robot via SSH or Remote Desktop(VNC).
 The tools are located in the following directory :
@@ -257,14 +257,14 @@ In the directory you can find code for :
 
 ![](/assets/images/platform/op3/op3_028.png)
 
-## [Recovery Software](#recovery-software)
+### [Recovery Software](#recovery-software)
 
 The supplied USB thumb drive contains the software pre-installed to ROBOTIS OP3.  
 You may obtain updated software from the link below.  
 https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki  
 Software may be updated without prior notice. Please check for updates periodically.
 
-## [Useful Information](#useful-information)
+### [Useful Information](#useful-information)
 
 You can download other ROBOTIS OP3-related items and more detailed information from the wiki manual.  
 https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki
@@ -277,9 +277,9 @@ https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki
   - PuTTY : http://www.chiark.greenend.org.uk/~sgtatham/putty/
   - RealVNC : http://www.realvnc.com/
 
-# [Miscellaneous](#miscellaneous)
+## [Miscellaneous](#miscellaneous)
 
-## [System Block Diagram](#system-block-diagram)
+### [System Block Diagram](#system-block-diagram)
 
 The below diagram illustrates the overall system structure of ROBOTIS OP3.
 
@@ -293,13 +293,13 @@ The below diagram illustrates the overall system structure of ROBOTIS OP3.
   - Built-in dual stereo mics with noise reduction
   - H.264 video encoding
 
-## [ID Map](#id-map)
+### [ID Map](#id-map)
 
 The following diagram illustrates the default ID number of actuators in ROBOTIS OP3.
 
 ![](/assets/images/platform/op3/op3_030.png)
 
-## [Warranty](#warranty)
+### [Warranty](#warranty)
 
 **ROBOTIS OP3 includes the following warranty:**  
 
@@ -347,81 +347,81 @@ from ROBOTIS before their standard warranty period is over.
   Evaluation, maintenance and quality assurance of assembled robot can be provided by ROBOTIS only.  
   RMA is required and additional fee may apply. Service will not be rendered for seriously customized hardware.
 
-# [Sub Controller(OpenCR)](#sub-controlleropencr)
+## [Sub Controller(OpenCR)](#sub-controlleropencr)
 
-## [Control Table](#contrl-table)
+### [Control Table](#contrl-table)
 Control Table consists of data regarding the current status and operation of OpenCR. The user can control OpenCR by changing data of Control Table via Instruction packet.
 
-### EEPROM and RAM
+#### EEPROM and RAM
 Data in RAM area is reset to initial values whenever the power is turned on while data in EEPROM area is kept once values are set even if the power is turned off.
 
-### Address
+#### Address
 Represents the location of data. To read from or write data to the control table the user should assign the correct address in the Instruction packet.
 
-### Access
+#### Access
 OpenCR has two kinds of data: Read-only data, used mainly for sensing, and read-and-write data used for driving.
 
-### Initial Value
+#### Initial Value
 In case of data in the EEPROM Area, the initial values on the right side of the below Control Table are the factory default settings.  
 In case of data in the RAM Area, the initial values on the right side of the following control table are the ones when the power is turned on.
 
-### Highest/Lowest Byte
+#### Highest/Lowest Byte
 In the Control table, some data share the same name, but they are attached with (L) or (H) at the end of each name to distinguish the address. This data requires 16-bit, but it is divided into 8bit each for the addresses (low) and (high). These two addresses should be written with one Instruction Packet simutaneously.
 
-## [EEPROM Area](#eeprom-area)
+### [EEPROM Area](#eeprom-area)
 
-|Address|Name|Description|Access|Init Value|
-|:---:|:---:|:---:|:---:|:---:|
-|0 (0X00)|Model Number(L)|model number low byte|R|0(0X00)|
-|1 (0X01)|Model Number(H)|model number high byte|R|116 (0X74)|
-|2 (0X02)|Version of Firmware|firmware version|R|-|
-|3 (0X03)|ID|OpenCR ID|RW|200 (0XC8)|
-|4 (0X04)|Baud Rate|Dynamixel baud rate|RW|1 (0X01)|
-|5 (0X05)|Return Delay Time|Return Delay Time|RW|0 (0X0)|
-|16 (0X10)|Status Return Level|Status Return Level|RW|0 (0X00)|
+|  Address  |        Name         |      Description       | Access | Init Value |
+|:---------:|:-------------------:|:----------------------:|:------:|:----------:|
+| 0 (0X00)  |   Model Number(L)   | model number low byte  |   R    |  0(0X00)   |
+| 1 (0X01)  |   Model Number(H)   | model number high byte |   R    | 116 (0X74) |
+| 2 (0X02)  | Version of Firmware |    firmware version    |   R    |     -      |
+| 3 (0X03)  |         ID          |       OpenCR ID        |   RW   | 200 (0XC8) |
+| 4 (0X04)  |      Baud Rate      |  Dynamixel baud rate   |   RW   |  1 (0X01)  |
+| 5 (0X05)  |  Return Delay Time  |   Return Delay Time    |   RW   |  0 (0X0)   |
+| 16 (0X10) | Status Return Level |  Status Return Level   |   RW   |  0 (0X00)  |
 
 
-## [RAM Area](#ram-area)
+### [RAM Area](#ram-area)
 
-|Address|Name|Description|Access|Init Value|
-|:---:|:---:|:---:|:---:|:---:|
-|24 (0X18)|Dynamixel Power|Dynamixel On/Off|RW|0 (0X00)|
-|25 (0X19)|LED|LED Pannel On/Off|RW|0 (0X00)|
-|26 (0X1A)|LED_RGB(L)|LED 5 low byte|RW|0 (0X00)|
-|27 (0X1B)|LED_RGB(H)|LED 5 high byte|RW|0 (0X00)|
-|28 (0X1C)|Buzzer(L)|LED 6 low byte|RW|0 (0X00)|
-|29 (0X1D)|Buzzer(H)|LED 6 high byte|RW|0 (0X00)|
-|30 (0X1E)|Button|Button status|R|-|
-|31 (0X1F)|Voltage|Power Voltage|R|-|
-|32 (0X20)|Gyro_Z(L)|Gyroscope Z-axis low byte|R|-|
-|33 (0X21)|Gyro_Z(H)|Gyroscope Z-axis high byte|R|-|
-|34 (0X22)|Gyro_Y(L)|Gyroscope Y-axis low byte|R|-|
-|35 (0X23)|Gyro_Y(H)|Gyroscope Y-axis high byte|R|-|
-|36 (0X24)|Gyro_X(L)|Gyroscope X-axis low byte|R|-|
-|37 (0X25)|Gyro_X(H)|Gyroscope X-axis high byte|R|-|
-|38 (0X26)|ACC_X(L)|Accelerometer X-axis low byte|R|-|
-|39 (0X27)|ACC_X(H)|Accelerometer X-axis high byte|R|-|
-|40 (0X28)|ACC_Y(L)|Accelerometer Y-axis low byte|R|-|
-|41 (0X29)|ACC_Y(H)|Accelerometer Y-axis high byte|R|-|
-|42 (0X2A)|ACC_Z(L)|Accelerometer Z-axis low byte|R|-|
-|43 (0X2B)|ACC_Z(H)|Accelerometer Z-axis high byte|R|-|
-|44 (0X2C)|Roll(L)|IMU Roll low byte|R|-|
-|45 (0X2D)|Roll(H)|IMU Roll high byte|R|-|
-|46 (0X2E)|Pitch(L)|IMU Pitch low byte|R|-|
-|47 (0X2F)|Pitch(H)|IMU Pitch high byte|R|-|
-|48 (0X30)|Yaw(L)|IMU Yaw low byte|R|-|
-|49 (0x31)|Yaw(H)|IMU Yaw high byte|R|-|
-|50 (0X32)|IMU_Control|IMU Control|RW|0x00|
+|  Address  |      Name       |          Description           | Access | Init Value |
+|:---------:|:---------------:|:------------------------------:|:------:|:----------:|
+| 24 (0X18) | Dynamixel Power |        Dynamixel On/Off        |   RW   |  0 (0X00)  |
+| 25 (0X19) |       LED       |       LED Pannel On/Off        |   RW   |  0 (0X00)  |
+| 26 (0X1A) |   LED_RGB(L)    |         LED 5 low byte         |   RW   |  0 (0X00)  |
+| 27 (0X1B) |   LED_RGB(H)    |        LED 5 high byte         |   RW   |  0 (0X00)  |
+| 28 (0X1C) |    Buzzer(L)    |         LED 6 low byte         |   RW   |  0 (0X00)  |
+| 29 (0X1D) |    Buzzer(H)    |        LED 6 high byte         |   RW   |  0 (0X00)  |
+| 30 (0X1E) |     Button      |         Button status          |   R    |     -      |
+| 31 (0X1F) |     Voltage     |         Power Voltage          |   R    |     -      |
+| 32 (0X20) |    Gyro_Z(L)    |   Gyroscope Z-axis low byte    |   R    |     -      |
+| 33 (0X21) |    Gyro_Z(H)    |   Gyroscope Z-axis high byte   |   R    |     -      |
+| 34 (0X22) |    Gyro_Y(L)    |   Gyroscope Y-axis low byte    |   R    |     -      |
+| 35 (0X23) |    Gyro_Y(H)    |   Gyroscope Y-axis high byte   |   R    |     -      |
+| 36 (0X24) |    Gyro_X(L)    |   Gyroscope X-axis low byte    |   R    |     -      |
+| 37 (0X25) |    Gyro_X(H)    |   Gyroscope X-axis high byte   |   R    |     -      |
+| 38 (0X26) |    ACC_X(L)     | Accelerometer X-axis low byte  |   R    |     -      |
+| 39 (0X27) |    ACC_X(H)     | Accelerometer X-axis high byte |   R    |     -      |
+| 40 (0X28) |    ACC_Y(L)     | Accelerometer Y-axis low byte  |   R    |     -      |
+| 41 (0X29) |    ACC_Y(H)     | Accelerometer Y-axis high byte |   R    |     -      |
+| 42 (0X2A) |    ACC_Z(L)     | Accelerometer Z-axis low byte  |   R    |     -      |
+| 43 (0X2B) |    ACC_Z(H)     | Accelerometer Z-axis high byte |   R    |     -      |
+| 44 (0X2C) |     Roll(L)     |       IMU Roll low byte        |   R    |     -      |
+| 45 (0X2D) |     Roll(H)     |       IMU Roll high byte       |   R    |     -      |
+| 46 (0X2E) |    Pitch(L)     |       IMU Pitch low byte       |   R    |     -      |
+| 47 (0X2F) |    Pitch(H)     |      IMU Pitch high byte       |   R    |     -      |
+| 48 (0X30) |     Yaw(L)      |        IMU Yaw low byte        |   R    |     -      |
+| 49 (0x31) |     Yaw(H)      |       IMU Yaw high byte        |   R    |     -      |
+| 50 (0X32) |   IMU_Control   |          IMU Control           |   RW   |    0x00    |
 
-## [Address Function Help](#address-function-help)
+### [Address Function Help](#address-function-help)
 
-### Model Number
+#### Model Number
 Represents the Model Number.
 
-### Firmware Version
+#### Firmware Version
 Represents the firmware version.
 
-### ID
+#### ID
 Is a unique number to identify Dynamixel.  
 Values range from 0 (0x00) to 252 (0xFC), Value 254 (0xFE) is used as the Broadcast ID.  
 If the Broadcast ID is used to transmit Instruction Packet, then it can command to all Dynamixels.  
@@ -429,92 +429,92 @@ If the Broadcast ID is used to transmit Instruction Packet, then it can command 
 `Note` Do NOT assign an identical ID for DYNAMIXELs in the same network.
 {: .notice}
 
-### Baud Rate
+#### Baud Rate
 Represents the communication speed. 0 (0x00) to 254 (0xFE) can be used for it. This speed is calculated by using the below formula.  
 Speed(BPS) = 2000000/(Data+1)
 
-|Data|Set BPS|Target BPS|Tolerance|
-|:---:|:---:|:---:|:---:|
-|1|1000000.0|1000000.0|0.000 %|
-|3|500000.0|500000.0|0.000 %|
-|4|400000.0|400000.0|0.000 %|
-|7|250000.0|250000.0|0.000 %|
-|9|200000.0|200000.0|0.000 %|
-|16|117647.1|115200.0|-2.124 %|
-|34|57142.9|57600.0|0.794 %|
-|103|19230.8|19200.0|-0.160 %|
-|207|9615.4|9600.0|-0.160 %|
+| Data |  Set BPS  | Target BPS | Tolerance |
+|:----:|:---------:|:----------:|:---------:|
+|  1   | 1000000.0 | 1000000.0  |  0.000 %  |
+|  3   | 500000.0  |  500000.0  |  0.000 %  |
+|  4   | 400000.0  |  400000.0  |  0.000 %  |
+|  7   | 250000.0  |  250000.0  |  0.000 %  |
+|  9   | 200000.0  |  200000.0  |  0.000 %  |
+|  16  | 117647.1  |  115200.0  | -2.124 %  |
+|  34  |  57142.9  |  57600.0   |  0.794 %  |
+| 103  |  19230.8  |  19200.0   | -0.160 %  |
+| 207  |  9615.4   |   9600.0   | -0.160 %  |
 
 `Note` Maximum Baud Rate error of 3% is within the tolerance of UART communication.
 {: .notice}
 
-### Return Delay Time
+#### Return Delay Time
 
 Return Delay Time will set a timer to hold a Status Packet transmission for a received Instruction Packet.  
 This data has a multiplier of 2μsec, therefore set value will be multiplied by 2 microseconds.  
 For example, if Return Delay Time is set to 10, a Status Packet will be transmitted after 20 microseconds after receiving an Instruction Packet.  
 Available data values range from 0 (0x00) to 254 (0xFE).
 
-### Status Return Level
+#### Status Return Level
 Status Return Level decides whether to return a Status Packet or not for an Instruction Packet.  
 There are three options as below table.  
 If an Instruction Packet has a Broadcast ID, Status Packet will not be returned regardless of Status Return Level.
 
-|Value|Return of Status Packet|
-|:---:|:---:|
-|0|No return against all commands (Except PING Command)|
-|1|Return only for the READ command|
-|2|Return for all commands|
+| Value |               Return of Status Packet                |
+|:-----:|:----------------------------------------------------:|
+|   0   | No return against all commands (Except PING Command) |
+|   1   |           Return only for the READ command           |
+|   2   |               Return for all commands                |
 
 `Note` When Instruction packet is Broadcast ID, Status packet is not returned regardless of Status return level.
 {: .notice}
 
-### Dynamixel Power
+#### Dynamixel Power
 
-|Value|Meaning|
-|:---:|:---:|
-|0|Turn off the power of all Dynamixels connected to OpenCR.|
-|1|Turn on the power of all Dynamixels connected to OpenCR.|
+| Value |                          Meaning                          |
+|:-----:|:---------------------------------------------------------:|
+|   0   | Turn off the power of all Dynamixels connected to OpenCR. |
+|   1   | Turn on the power of all Dynamixels connected to OpenCR.  |
 
-### LED Pannel
+#### LED Pannel
 
-|BIT|7 ~ 3 |2|1|0|
-|:---:|:---:|:---:|:---:|:---:|
-|Value|X|LED3|LED2|LED1|
+|  BIT  | 7 ~ 3 |  2   |  1   |  0   |
+|:-----:|:-----:|:----:|:----:|:----:|
+| Value |   X   | LED3 | LED2 | LED1 |
 
 For each set bit, corresponding LED will be turned on.  
 For each reset bit, corresponding LED will be turned off.
 
-### LED_RGB
+#### LED_RGB
 
-|BIT|15|14 ~ 10|9 ~ 5|4 ~ 0|
-|:---:|:---:|:---:|:---:|:---:|
-|Value|X|LED_B|LED_G|LED_R|
+|  BIT  | 15 | 14 ~ 10 | 9 ~ 5 | 4 ~ 0 |
+|:-----:|:--:|:-------:|:-----:|:-----:|
+| Value | X  |  LED_B  | LED_G | LED_R |
 
 Chest LED is a tricolor LED and the color can be represented with RGB values.
 
-### Buzzer
+#### Buzzer
 
-|Value|Description|
-|:---:|:---:|
-|0 ~ 65535|Frequency(Hz) of Buzzer|
+|   Value   |       Description       |
+|:---------:|:-----------------------:|
+| 0 ~ 65535 | Frequency(Hz) of Buzzer |
 
 If the Buzzer value is set to 0, the buzzer will be turned off.
 
-### BUTTON STATUS
+#### BUTTON STATUS
 
-|BIT|7 ~ 4|3|2|1|0|
-|:---:|:---:|:---:|:---:|:---:|:---:|
-|Value|X|BUTTON_S4|BUTTON_S3|BUTTON_S2|BUTTON_S1|
+|  BIT  | 7 ~ 4 |     3     |     2     |     1     |     0     |
+|:-----:|:-----:|:---------:|:---------:|:---------:|:---------:|
+| Value |   X   | BUTTON_S4 | BUTTON_S3 | BUTTON_S2 | BUTTON_S1 |
 
 For each bit set to 1, the button is being pressed.  
 For each bit set to 0, the button is released.
 
-### VOLTAGE
+#### VOLTAGE
 This value stands for the input voltage of the controller with a multiplier of 10.  
 For example, when 10V is supplied to the controller, the Voltage value will be 100.
 
-### GYRO X/Y/Z
+#### GYRO X/Y/Z
 The following image represents the direction of Gyro axis of OpenCR.
 
 ![](/assets/images/platform/op3/opencr_gyro_axis.png)
@@ -525,7 +525,7 @@ The following graph shows relation between actual data value and angular velocit
 
 ![](/assets/images/platform/op3/opencr_angular_velocity_graph.png)
 
-### Acceleration X/Y/Z
+#### Acceleration X/Y/Z
 The following picture represents the direction of accelerometer axis of OpenCR.
 
 ![](/assets/images/platform/op3/opencr_acc_axis.png)
@@ -536,30 +536,30 @@ The following graph shows relation between actual data value and acceleration va
 
 ![](/assets/images/platform/op3/opencr_acc_graph.png)
 
-### IMU_Control
+#### IMU_Control
 
 This data controls roll / pitch / yaw offset values for the IMU sensor.
 
-|BIT|7 ~ 4|3|2|1|0|
-|:---:|:---:|:---:|:---:|:---:|:---:|
-|Value|X|Gyro|Yaw|Pitch|Roll|
+|  BIT  | 7 ~ 4 |  3   |  2  |   1   |  0   |
+|:-----:|:-----:|:----:|:---:|:-----:|:----:|
+| Value |   X   | Gyro | Yaw | Pitch | Roll |
 
 For each bit set to 1, corresponding roll, pitch, yaw, gyro values will be used for calculating offset values.  
 The calculation will take for 2 seconds and then each bit will be reset to 0.
 
-## [GPIO Pin Assignments](#gpio-pin-assignments)
+### [GPIO Pin Assignments](#gpio-pin-assignments)
 
 ![](/assets/images/platform/op3/opencr_gpio_pinout.png)
 
-|Pin|Assignments|
-|:---:|:---:|
-|PIN_LED_R|Red LED pin|
-|PIN_LED_G|Green LED pin|
-|PIN_LED_B|Blue LED pin|
-|PIN_LED_1|LED output 1|
-|PIN_LED_2|LED output 2|
-|PIN_LED_3|LED output 3|
-|PIN_BUTTON_S1|Button Input S1|
-|PIN_BUTTON_S2|Button Input S2|
-|PIN_BUTTON_S3|Button Input S3|
-|PIN_BUTTON_S4|Button Input S4 (Reset Dynamixel Power)|
+|      Pin      |               Assignments               |
+|:-------------:|:---------------------------------------:|
+|   PIN_LED_R   |               Red LED pin               |
+|   PIN_LED_G   |              Green LED pin              |
+|   PIN_LED_B   |              Blue LED pin               |
+|   PIN_LED_1   |              LED output 1               |
+|   PIN_LED_2   |              LED output 2               |
+|   PIN_LED_3   |              LED output 3               |
+| PIN_BUTTON_S1 |             Button Input S1             |
+| PIN_BUTTON_S2 |             Button Input S2             |
+| PIN_BUTTON_S3 |             Button Input S3             |
+| PIN_BUTTON_S4 | Button Input S4 (Reset Dynamixel Power) |

@@ -1,24 +1,39 @@
-# [Control Table](#control-table)
-The Control Table is a structure of data implemented in the DYNAMIXEL. Users can read a specific Data to get status of the DYNAMIXEL with Read Instruction Packets, and modify Data as well to control DYNAMIXEL with WRITE Instruction Packets.
 
-## [Control Table, Data, Address](#control-table-data-address)
-The Control Table is a structure that consists of multiple Data fields to store status of the DYNAMIXEL or to control the DYNAMIXEL. Users can check current status of the DYNAMIXEL by reading a specific Data from the Control Table with Read Instruction Packets. WRITE Instruction Packets enable users to control the DYNAMIXEL by changing specific Data in the Control Table. The Address is a unique value when accessing a specific Data in the Control Table with Instruction Packets. In order to read or write data, users must designate a specific Address in the Instruction Packet. Please refer to [Protocol 1.0] for more details about Instruction Packets.
+# [컨트롤 테이블](#컨트롤-테이블)
+Control Table은 다이나믹셀 내부에 존재하는 값으로서 다이나믹셀의 현재 상태와 구동에 관한 Data로 구성되어 있습니다.  
+사용자는 Instruction Packet을 통해 Control Table의 Data를 변경하는 방식으로 다이나믹셀을 제어할 수 있습니다.
 
-`Note` Two's complement is applied for the negative value. For more information, please refer to [Two's complement] from Wikipedia.
+## [컨트롤 테이블, 데이터, 주소](#컨트롤-테이블-데이터-주소)
+Control Table은 다이나믹셀의 상태와 제어를 위한 다수의 Data 필드로 구성된 집합체입니다.  
+사용자는 READ Instruction Packet을 통해 Control Table의 특정 Data를 읽어서 다이나믹셀의 상태를 파악할 수 있습니다.  
+또한 WRITE Instruction Packet을 통해 Control Table의 특정 Data를 변경함으로써 다이나믹셀을 제어할 수 있습니다.  
+Address는 Instruction Packet으로 Control Table의 특정 Data를 접근할 때 사용하는 고유값입니다.  
+다이나믹셀의 Data를 읽거나 쓰기 위해서는 Instruction Packet에 해당 Data의 Address를 지정해 주어야 합니다.  
+Packet에 대한 자세한 내용은 [Protocol 1.0]을 참고해주세요.
+
+`Note` 음수의 표현 방법은 2의 보수(Two’s complement) 규칙을 따릅니다. 2의 보수에 대한 자세한 설명은 위키피디아의 [Two's complement]를 참고하세요.
 {: .notice}
 
-### [Area (EEPROM, RAM)](#area-eeprom-ram)
-The Control Table is divided into 2 Areas. Data in the RAM Area is reset to initial values when the DYNAMIXEL is turned on (Volatile). On the other hand, modified data in the EEPROM Area keeps their values even when the DYNAMIXEL is turned off (Non-Volatile). Data in the EEPROM Area can only be changed or modified when the value of Torque Enable(24) is ‘0’ and Dynamixel is in idle state.
+### [영역 (EEPROM, RAM)](#영역-eeprom-ram)
+Control Table은 2가지 영역으로 구분됩니다. RAM Area에 위치한 Data는 전원이 인가될 때마다 다시 초기값으로 설정됩니다(Volatile).  
+반면 EEPROM Area에 위치한 Data는 값을 변경하면 전원이 꺼져도 그 값이 보존됩니다(Non-Volatile).  
+**EEPROM Area에 위치한 모든 Data는 Torque Enable(24)의 값이 '0'일 때만 변경할 수 있습니다.**
 
-### [Size](#size)
-The Size of data is 1 or 2 bytes depend on their usage. Please check the size of data when updating the data with an Instruction Packet. 2 bytes data will be saved according to [Little Endian].
+### [크기](#크기)
+Data의 Size는 용도에 따라 1 ~ 2 byte로 정해져 있습니다. Instruction Packet을 통해 Data를 변경할 때는 해당 Data의 Size를 확인하시기 바랍니다.  
+2 byte 데이터는 [Little Endian] 규칙에 의해 기록됩니다.
 
-### [Access](#access)
-The Control Table has two different access properties. ‘RW’ property stands for read and write access permission while ‘R’ stands for read only access permission. Data with the read only property cannot be changed by the WRITE Instruction. Read only property(‘R’) is generally used for measuring and monitoring purpose, and read write property(‘RW’) is used for controlling DYNAMIXEL.
+### [접근권한](#접근권한)
+Control Table의 Data는 2가지 접근 속성을 갖습니다. ‘RW’는 읽기와 쓰기 접근이 모두 가능합니다. 반면 ‘R’은 읽기 전용(Read Only) 속성을 갖습니다.  
+읽기 전용 속성의 Data는 WRITE Instruction으로 값이 변경되지 않습니다.  
+읽기 전용 속성(‘R’)은 주로 측정 또는 모니터링 용도로 사용되고, 읽기 쓰기 속성(‘RW’)은 다이나믹셀의 제어 용도로 사용됩니다.
 
-### [Initial Value](#initial-value)
-Each data in the Control Table is restored to initial values when the DYNAMIXEL is turned on. Default values in the EEPROM area are initial values of the DYNAMIXEL (factory default settings). If any values in the EEPROM area are modified by a user, modified values will be restored as initial values when the DYNAMIXEL is turned on. Initial Values in the RAM area are restored when the DYNAMIXEL is turned on.
+### [초기값](#초기값)
+다이나믹셀에 전원이 인가될 때, Control Table의 각 Data는 초기값으로 설정됩니다.  
+매뉴얼에 표기된 EEPROM 영역의 Default Value는 제품의 초기 설정값(공장 출하 설정값)입니다.  
+사용자가 변경한 경우, 초기값은 사용자가 변경한 값으로 적용됩니다.  
+RAM 영역의 Default Value 값은 전원이 인가되었을 때 설정되는 값입니다.
 
-[Protocol 1.0]: /docs/en/dxl/protocol1/
+[Protocol 1.0]: /docs/kr/dxl/protocol1/
 [Two's complement]: https://en.wikipedia.org/wiki/Two%27s_complement
 [Little Endian]: https://en.wikipedia.org/wiki/Endianness#Little

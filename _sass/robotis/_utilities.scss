@@ -6,6 +6,10 @@
   font-size: 1em;
 }
 
+.popup {
+  color: #aa00ff;
+}
+
 .mfp-bg {
   opacity: 0.3;
 }
@@ -13,4 +17,8 @@
 .mfp-ajax-holder .mfp-content {
   top: 5%;
   width: 80%
+}
+
+.mfp-close-btn-in .mfp-close {
+  color: black;
 }

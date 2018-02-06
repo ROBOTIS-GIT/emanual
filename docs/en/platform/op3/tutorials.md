@@ -65,38 +65,39 @@ Control frequency, communication interface, baud rate, available devices and the
 - Default path of Robot File : `op3_manager/config/OP3.robot`
 
 - Contents
-  ```
+
+  ```bash
   [ control info ]
-   control_cycle = 8   # milliseconds
+  control_cycle = 8   # milliseconds
 
-   [ port info ]
-   # PORT NAME  | BAUDRATE  | DEFAULT JOINT
-   /dev/U2D2    | 2000000   | r_sho_pitch
+  [ port info ]
+  # PORT NAME  | BAUDRATE  | DEFAULT JOINT
+  /dev/U2D2    | 2000000   | r_sho_pitch
 
-   [ device info ]
-   # TYPE    | PORT NAME    | ID  | MODEL          | PROTOCOL | DEV NAME       | BULK READ ITEMS
-   dynamixel | /dev/U2D2    | 1   | XM-430         | 2.0      | r_sho_pitch    | present_position
-   dynamixel | /dev/U2D2    | 2   | XM-430         | 2.0      | l_sho_pitch    | present_position
-   dynamixel | /dev/U2D2    | 3   | XM-430         | 2.0      | r_sho_roll     | present_position
-   dynamixel | /dev/U2D2    | 4   | XM-430         | 2.0      | l_sho_roll     | present_position
-   dynamixel | /dev/U2D2    | 5   | XM-430         | 2.0      | r_el           | present_position
-   dynamixel | /dev/U2D2    | 6   | XM-430         | 2.0      | l_el           | present_position
-   dynamixel | /dev/U2D2    | 7   | XM-430         | 2.0      | r_hip_yaw      | present_position
-   dynamixel | /dev/U2D2    | 8   | XM-430         | 2.0      | l_hip_yaw      | present_position
-   dynamixel | /dev/U2D2    | 9   | XM-430         | 2.0      | r_hip_roll     | present_position
-   dynamixel | /dev/U2D2    | 10  | XM-430         | 2.0      | l_hip_roll     | present_position
-   dynamixel | /dev/U2D2    | 11  | XM-430         | 2.0      | r_hip_pitch    | present_position
-   dynamixel | /dev/U2D2    | 12  | XM-430         | 2.0      | l_hip_pitch    | present_position
-   dynamixel | /dev/U2D2    | 13  | XM-430         | 2.0      | r_knee         | present_position
-   dynamixel | /dev/U2D2    | 14  | XM-430         | 2.0      | l_knee         | present_position
-   dynamixel | /dev/U2D2    | 15  | XM-430         | 2.0      | r_ank_pitch    | present_position
-   dynamixel | /dev/U2D2    | 16  | XM-430         | 2.0      | l_ank_pitch    | present_position
-   dynamixel | /dev/U2D2    | 17  | XM-430         | 2.0      | r_ank_roll     | present_position
-   dynamixel | /dev/U2D2    | 18  | XM-430         | 2.0      | l_ank_roll     | present_position
-   dynamixel | /dev/U2D2    | 19  | XM-430         | 2.0      | head_pan       | present_position
-   dynamixel | /dev/U2D2    | 20  | XM-430         | 2.0      | head_tilt      | present_position
-   sensor    | /dev/U2D2    | 200 | OPEN-CR        | 2.0      | open-cr        | button, present_voltage, gyro_x, gyro_y, gyro_z, acc_x, acc_y, acc_z, roll, pitch, yaw
-   ```
+  [ device info ]
+  # TYPE    | PORT NAME    | ID  | MODEL          | PROTOCOL | DEV NAME       | BULK READ ITEMS
+  dynamixel | /dev/U2D2    | 1   | XM-430         | 2.0      | r_sho_pitch    | present_position
+  dynamixel | /dev/U2D2    | 2   | XM-430         | 2.0      | l_sho_pitch    | present_position
+  dynamixel | /dev/U2D2    | 3   | XM-430         | 2.0      | r_sho_roll     | present_position
+  dynamixel | /dev/U2D2    | 4   | XM-430         | 2.0      | l_sho_roll     | present_position
+  dynamixel | /dev/U2D2    | 5   | XM-430         | 2.0      | r_el           | present_position
+  dynamixel | /dev/U2D2    | 6   | XM-430         | 2.0      | l_el           | present_position
+  dynamixel | /dev/U2D2    | 7   | XM-430         | 2.0      | r_hip_yaw      | present_position
+  dynamixel | /dev/U2D2    | 8   | XM-430         | 2.0      | l_hip_yaw      | present_position
+  dynamixel | /dev/U2D2    | 9   | XM-430         | 2.0      | r_hip_roll     | present_position
+  dynamixel | /dev/U2D2    | 10  | XM-430         | 2.0      | l_hip_roll     | present_position
+  dynamixel | /dev/U2D2    | 11  | XM-430         | 2.0      | r_hip_pitch    | present_position
+  dynamixel | /dev/U2D2    | 12  | XM-430         | 2.0      | l_hip_pitch    | present_position
+  dynamixel | /dev/U2D2    | 13  | XM-430         | 2.0      | r_knee         | present_position
+  dynamixel | /dev/U2D2    | 14  | XM-430         | 2.0      | l_knee         | present_position
+  dynamixel | /dev/U2D2    | 15  | XM-430         | 2.0      | r_ank_pitch    | present_position
+  dynamixel | /dev/U2D2    | 16  | XM-430         | 2.0      | l_ank_pitch    | present_position
+  dynamixel | /dev/U2D2    | 17  | XM-430         | 2.0      | r_ank_roll     | present_position
+  dynamixel | /dev/U2D2    | 18  | XM-430         | 2.0      | l_ank_roll     | present_position
+  dynamixel | /dev/U2D2    | 19  | XM-430         | 2.0      | head_pan       | present_position
+  dynamixel | /dev/U2D2    | 20  | XM-430         | 2.0      | head_tilt      | present_position
+  sensor    | /dev/U2D2    | 200 | OPEN-CR        | 2.0      | open-cr        | button, present_voltage, gyro_x, gyro_y, gyro_z, acc_x, acc_y, acc_z, roll, pitch, yaw
+  ```
 
 > Reference : [Robot Information file(.robot)]  
 
@@ -196,22 +197,20 @@ There are three available demos; playing soccer, vision and sequence of various 
   ROBOTIS-OP3 begins to play demo when startup.  
 
 2. Manual Start  
-Connect to ROBOTIS-OP3 and open the terminal window.
-Acquire the root permission and execute the launch file.  
-Enter the following commands in the terminal.  
-_(password : 111111)_  
-The demo launch file executes `op3_demo` and `op3_manager`.  
+  Connect to ROBOTIS-OP3 and open the terminal window.
+  Acquire the root permission and execute the launch file.  
+  Enter the following commands in the terminal.  
+  _(password : 111111)_  
+  The demo launch file executes `op3_demo` and `op3_manager`.  
+
   ```
   $ sudo bash
   [sudo] password for robotis: 111111
   # roslaunch op3_demo demo.launch
-  ```  
+  ```
 
 #### Execution result
 Dynamixels of ROBOTIS-OP3 will be powered and take the initial posture.  
-
-
-
 
 
 ### Description
@@ -285,6 +284,7 @@ Press the mode button thrice from demonstration ready mode to switch to interact
     # play list
     default: [4, 41, 24, 23, 15, 1, 54, 27, 38]
     ```
+    
     - action_and_sound : Combined information of page number of action file and mp3 file path to play with  
       `action number : mp3 file path`  
 
@@ -318,10 +318,6 @@ Confirm that the joints used for walking are set as `walking_module`, then move 
  2. `stop` button : Stop walking. When stopped, walking related parameters will be reset.  
 
 <img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_gui_walking_tuner_03.png?raw=true" align="bottom" width="70%"/>  
-
-
-
-
 
 ##### Apply Parameters
  1. `Refresh` button : Acquire all parameter currently applied on `walking_module`.  
@@ -373,11 +369,13 @@ Operator can get different camera view angle by controlling head joints.
 <img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_gui_control_head_03.png?raw=true" align="bottom"/>    
 
 
-### [How to control upgraded walking(online walking)](#how-to-control-upgraded-walking(online-walking)
+### [How to control upgraded walking(online walking)](#how-to-control-upgraded-walkingonline-walking)
 
 #### 1. Overview   
 This page explains how to control upgraded walking(online walking).  
+
 > Reference 1 : [Introduction to Humanoid Robotics]
+
 > Reference 2 : [op3_online_walking_module]
 
 #### 2. Description
@@ -416,55 +414,54 @@ This page explains how to control upgraded walking(online walking).
 
 ## [How to use offset tuner](#how-to-use-offset-tuner)
 
-  ### Overview   
-  This chapter explains how to run the ROBOTIS-OP3 offset tuner program.  
-  `op3_offset_tuner_server` and `op3_offset_tuner_client` are used to adjust offsets of ROBOTIS-OP3.  
+### Overview   
+This chapter explains how to run the ROBOTIS-OP3 offset tuner program.  
+`op3_offset_tuner_server` and `op3_offset_tuner_client` are used to adjust offsets of ROBOTIS-OP3.  
 
-  > Reference : [op3_offset_tuner_server]  
-  > Reference2 : [op3_offset_tuner_client]
+> Reference : [op3_offset_tuner_server]  
+> Reference2 : [op3_offset_tuner_client]
 
-  <img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_offset_tuner_diagram.png?raw=true" align="bottom" width="100%"/>  
+<img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_offset_tuner_diagram.png?raw=true" align="bottom" width="100%"/>  
 
-  ### Run Offset Tuner Program   
+### Run Offset Tuner Program   
 
-  ### How to launch programs  
-  #### Launching server and client program separately
-  Offset Tuner is consisted of server and client programs so that other PC in the same ROS network can tune offsets.  
+### How to launch programs  
+#### Launching server and client program separately
+Offset Tuner is consisted of server and client programs so that other PC in the same ROS network can tune offsets.  
 
-  Execute the offset tuner server program first.  
-  (Other programs such as `op3_manager`, `op3_action_editor` and `op3_walking_tuner` should be terminated to run the offset tuner server).  
+Execute the offset tuner server program first.  
+(Other programs such as `op3_manager`, `op3_action_editor` and `op3_walking_tuner` should be terminated to run the offset tuner server).  
 
-  ```
-  $ roslaunch op3_offset_tuner_server op3_offset_tuner_server.launch
-  ```
+```
+$ roslaunch op3_offset_tuner_server op3_offset_tuner_server.launch
+```
 
-  After starting the offset tuner server, execute client GUI program from the identical PC or any PCs in the same ROS network.  
+After starting the offset tuner server, execute client GUI program from the identical PC or any PCs in the same ROS network.  
 
-  ```
-  $ rosrun op3_offset_tuner_client op3_offset_tuner_client
-  ```
+```
+$ rosrun op3_offset_tuner_client op3_offset_tuner_client
+```
 
-  #### Launching server and client program at once
-  Enter the following commands in the terminal window.
-  (Other programs such as `op3_manager`, `op3_action_editor` and `op3_walking_tuner` should be terminated to run the offset tuner.)
-  ```
-  $ roslaunch op3_offset_tuner_client op3_offset_tuner.launch
-  ```
+#### Launching server and client program at once
+Enter the following commands in the terminal window.
+(Other programs such as `op3_manager`, `op3_action_editor` and `op3_walking_tuner` should be terminated to run the offset tuner.)
+```
+$ roslaunch op3_offset_tuner_client op3_offset_tuner.launch
+```
 
 
 
-  ### Configuration Files
-  #### `op3_offset_tuner_server` configuration files  
-   - `offset.yaml` : Offset data and offset adjusting posture information are saved  
-   - `OP3.robot` : Description of ROBOTIS-OP3 is saved  
-   - `dxl_init_OP3.yaml` : Dynamixel configurations are saved and used for joint initialization  
+### Configuration Files
+#### `op3_offset_tuner_server` configuration files  
+ - `offset.yaml` : Offset data and offset adjusting posture information are saved  
+ - `OP3.robot` : Description of ROBOTIS-OP3 is saved  
+ - `dxl_init_OP3.yaml` : Dynamixel configurations are saved and used for joint initialization  
 
-  #### `op3_offset_tuner_client` configuration file  
-   - `joint_data.yaml` : GUI menu configuration file  
+#### `op3_offset_tuner_client` configuration file  
+ - `joint_data.yaml` : GUI menu configuration file  
 
-  ### 3. How to use Offset tuner client GUI program  
-  <img
-  src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-THORMANG3/How%20to%20use%20offset%20tuner_2.png?raw=true" align="bottom" width="100%"/>
+### 3. How to use Offset tuner client GUI program  
+<img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-THORMANG3/How%20to%20use%20offset%20tuner_2.png?raw=true" align="bottom" width="100%"/>
 
 ## [How to create the motions](#how-to-create-the-motions)
 
@@ -488,7 +485,7 @@ Execute the launch file.
 Before executing the `op3_action_editor` launch file, other programs should be terminated.  
 ```
 $ roslaunch op3_action_editor op3_action_editor.launch
-```  
+```
 
 #### UI
 <img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-THORMANG3/thormang3_action_editor_tui.jpg?raw=true" width="100%" />  
@@ -514,19 +511,19 @@ It is strongly advised that when user tests user’s own newly-created or edited
 The below table shows the contents of the default action file.  
 
 | page number | page title | brief description of page                             | number of pages |
-|-------------|------------|-------------------------------------------------------|-----------------|
-|      1      | walki_init | initial standing pose                                 |        1        |
-|      2      |    hello   | greeting                                              |        1        |
-|      3      |  thank_you | Thank you                                             |        1        |
-|      4      |     yes    | yes                                                   |        1        |
-|      5      |      no    | no                                                    |        1        |
-|      6      |  fighting  | fighting                                              |        1        |
-|      7      |    clap    | clap                                                  |        2        |
-|      9      |   S_H_RE   | ready for shaking hands                               |        1        |
-|     10      |     S_H    | shaking hands                                         |        1        |
-|     11      |   S_H_END  | move to initialpose fram ready pose for shaking hands |        1        |
-|     12      |  scanning  | looking around                                        |        1        |
-|     13      |  ceremony  | ceremony                                              |        1        |
+|:------------|:-----------|:------------------------------------------------------|:----------------|
+| 1           | walki_init | initial standing pose                                 | 1               |
+| 2           | hello      | greeting                                              | 1               |
+| 3           | thank_you  | Thank you                                             | 1               |
+| 4           | yes        | yes                                                   | 1               |
+| 5           | no         | no                                                    | 1               |
+| 6           | fighting   | fighting                                              | 1               |
+| 7           | clap       | clap                                                  | 2               |
+| 9           | S_H_RE     | ready for shaking hands                               | 1               |
+| 10          | S_H        | shaking hands                                         | 1               |
+| 11          | S_H_END    | move to initialpose fram ready pose for shaking hands | 1               |
+| 12          | scanning   | looking around                                        | 1               |
+| 13          | ceremony   | ceremony                                              | 1               |
 
 
 #### Basic Command of Action Editor
@@ -651,7 +648,7 @@ The description for each parameter will pop up when hovering the mouse cursor ov
 
     2. How to calibrate  
         - Set H(hue) value (color value) first with full range of S and V. Then set the range of S(saturation) and V(value) to remove the noise.  
-        *Hue is measured by degrees within the cylindrically represented color system. Therefore, the value 360 can be represented as 0, and the minimum value can have a bigger number than the maximum value.  (ex : min - 350 / max - 10 [Red area])   
+        *Hue is measured by degrees within the cylindrically represented color system. Therefore, the value 360 can be represented as 0, and the minimum value can have a bigger number than the maximum value.  (ex : min - 350 / max - 10 [Red area])
 
         - If you check the ‘use_second_filter’, you can get an image which is detected with two HSV variations.   
 
@@ -663,7 +660,7 @@ The description for each parameter will pop up when hovering the mouse cursor ov
 
         - After you set the HSV range, you could calibrate the threshold value to detect the edge better.*  
 
-## [How to control upgraded walking using footstep planner](#how-to-upgraded walking using footstep planner)
+## [How to control upgraded walking using footstep planner](#how-to-control-upgraded-walking-using-footstep-planner)
 
 ### Overview   
 This chapter explains upgraded walking and footstep planner.
@@ -680,30 +677,30 @@ This chapter explains upgraded walking and footstep planner.
         ```
         $ cd ~/catkin_ws/src
         $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Tools.git
-        ```  
+        ```
     - Build source
         ```
         $ cd ~/catkin_ws
         $ catkin_make
-        ```  
+        ```
 
 
 #### Run the program  
 1. op3_manager
    ```
    $ roslaunch op3_manager op3_manager.launch
-   ```  
+   ```
 
 2. op3_gui_demo and footstep planner
    ```
    $ roslaunch op3_gui_demo op3_demo_walking.launch
-   ```  
+   ```
 
 3. rviz for upgraded walking with footstep planner  
   If user want to launch a rviz in ROBOTIS-OP3, a monitor is connected to ROBOTIS-OP3.  
    ```
    $ roslaunch robotis_op3_description robotis_op3_walking.launch
-   ```  
+   ```
 
 #### Walking with footstep planner
 - Preparation : Set the module and move to the tab
@@ -723,7 +720,7 @@ This chapter explains upgraded walking and footstep planner.
 
   <img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_online_walking_footstep_01.png?raw=true" align="bottom"/>      
 
-   ** **  
+
    4. Set a interactive marker in rviz 3d screen and Move the marker to the target pose of feet.   
 
   <img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_online_walking_footstep_02.png?raw=true" align="bottom"/>  
@@ -744,31 +741,31 @@ This chapter explains upgraded walking and footstep planner.
 
 
 
-[op3_manager]:[op3_manager.md]
-[Robot Information file(.robot)]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/Creating-new-robot-manager#41-robot-information-file-robot
-[Joint initialize file(.yaml)]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/Creating-new-robot-manager#42-joint-initialize-file-yaml
-[How to use offset tuner]:[OP3-How-to-use-offset-tuner.md]
+[op3_manager]: [op3_manager.md]
+[Robot Information file(.robot)]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/Creating-new-robot-manager#41-robot-information-file-robot
+[Joint initialize file(.yaml)]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/Creating-new-robot-manager#42-joint-initialize-file-yaml
+[How to use offset tuner]: [OP3-How-to-use-offset-tuner.md]
 
 
-[op3_demo]:[op3_demo.md]
-[How to use walking tuner]:[OP3-How-to-use-walking-tuner.md]
-[Face Tracker - ROS Package]:https://github.com/ROBOTIS-GIT/face_detection
+[op3_demo]: [op3_demo.md]
+[How to use walking tuner]: [OP3-How-to-use-walking-tuner.md]
+[Face Tracker - ROS Package]: https://github.com/ROBOTIS-GIT/face_detection
 
-[op3_action_module]:[op3_action_module.md]
-[How to create the motions]:[op3_action_editor.md]
+[op3_action_module]: [op3_action_module.md]
+[How to create the motions]: [op3_action_editor.md]
 
-[op3_head_control_module]:[op3_head_control_module.md]
+[op3_head_control_module]: [op3_head_control_module.md]
 
-[Introduction to Humanoid Robotics]:http://www.springer.com/gp/book/9783642545351
-[op3_online_walking_module]:[op3_online_walking_module.md]
-[Online walking using footstep planner]:[OP3-How-to-control-upgraded-walking-using-footstep-planner.md]
+[Introduction to Humanoid Robotics]: http://www.springer.com/gp/book/9783642545351
+[op3_online_walking_module]: [op3_online_walking_module.md]
+[Online walking using footstep planner]: [OP3-How-to-control-upgraded-walking-using-footstep-planner.md]
 
-[op3_offset_tuner_server]:[op3_offset_tuner_server.md]
-[op3_offset_tuner_client]:[op3_offset_tuner_client.md]
+[op3_offset_tuner_server]: [op3_offset_tuner_server.md]
+[op3_offset_tuner_client]: [op3_offset_tuner_client.md]
 
-[op3_action_module]:[op3_action_module]
+[op3_action_module]: [op3_action_module]
 
 
-[OP3-How-to-control-upgraded-walking]:[OP3-How-to-control-upgraded-walking.md]
-[humanoid_navigation]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/humanoid_navigation
-[op3_navigation]:https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Tools/tree/master/op3_navigation
+[OP3-How-to-control-upgraded-walking]: [OP3-How-to-control-upgraded-walking.md]
+[humanoid_navigation]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/humanoid_navigation
+[op3_navigation]: https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Tools/tree/master/op3_navigation

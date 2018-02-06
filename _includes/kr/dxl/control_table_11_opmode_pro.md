@@ -1,7 +1,7 @@
 
-|Value|Operating Mode| Description     |
+|값|동작 모드| 설명     |
 | :---- | :------------------------------ | :------------------------------------------- |
-| 0 | Torque Control Mode | This mode only controls Torque. Speed and Position will not be controlled.|
-| 1 | Velocity Control Mode | This mode controls Velocity and Torque. Position will not be controlled. |
-| 3(Default) | Position Control Mode  |  This mode controls Position, Velocity and Torque. |
-| 4 | Extended Position Control Mode  |  This mode controls Position, Velocity and Torque. Multi-turn is enabled. |
+| 0 | 토크 제어 모드 | 토크를 제어합니다. 속도와 위치는 제어하지 않습니다.|
+| 1 | 속도 제어 모드 | 토크와 속도를 제어 할 수 있습니다. 위치는 제어하지 않습니다.|
+| 3(기본값) | 위치 제어 모드  | 위치와 속도와 토크를 제어 할 수 있습니다.|
+| 4 | 확장 위치 제어 모드  | 위치와 속도와 토크를 제어할 수 있습니다. 위치 제어 모드와 동일하지만, Position limit이 없습니다. 즉, 제어 범위가 0~360&deg;가 아닌, multi turn position control이 가능해 집니다.|

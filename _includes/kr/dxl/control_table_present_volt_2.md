@@ -1,1 +1,2 @@
-This value indicates present voltage that is being supplied. For more details, please refer to the [Max/Min Voltage Limit(32, 34)](#max-voltage-limit).
+
+현재 공급되는 전압입니다. 자세한 사항은 [Max/Min Voltage Limit(32, 34)](#max-voltage-limit32-34)를 참고하세요.

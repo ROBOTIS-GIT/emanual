@@ -1,8 +1,8 @@
-It exists in each direction of CW/CCW and sets the level of Torque near the goal position.
-Compliance Slope is set in 7 steps, the higher the value, the more flexibility is obtained.
-Data representative value is actually used value.  That is, even if the value is set to 25, 16 is used internally as the representative value.
+CW/CCW 방향 별로 존재하며 목표 위치 근처에서 출력의 정도를 설정합니다.  
+Compliance Slope는 총 7 단계로 설정할 수 있으며 값이 높을 수록 유연성이 좋아집니다.  
+Data 대표값은 실제로 사용되는 값입니다. 즉, 25로 설정되어도 대표값 16으로 내부에서는 사용됩니다.
 
-|Step| Data Value | Data Representative Value     |
+|단계| 데이터 값 | 데이터 대표값     |
 | :-------------: | :-------------: | :-------------: |
 |1|0(0x00) ~ 3(0x03)|2(0x02)|
 |2|4(0x04) ~ 7(0x07)|4(0x04)|
@@ -12,7 +12,6 @@ Data representative value is actually used value.  That is, even if the value is
 |6|64(0x40)~127(0x7F)|64(0x40)|
 |7|128(0x80)~254(0xFE)|128(0x80)|
 
-Compliance is to set the control flexibility of the motor.
-The following diagram shows the relationship between output torque and position of the motor.
+Compliance는 모터의 제어의 유연성을 설정하는 것입니다. 아래 그림은 위치와 모터의 출력 관계를 나타냅니다.
 
 ![](/assets/images/dxl/dxl_compliance.png)

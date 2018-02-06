@@ -1,7 +1,7 @@
-These values limit maximum and minimum target positions. The Goal Position(596) can't exceed these values.
-Trying to write an exceeding value will fail and result in receiving a Limit Error Bit from the Status Packet. In Extended Position Control Mode, these limits will be ignored.
+목표 위치의 상한과 하한 값입니다. Goal position(596)은 이 값보다 큰 값을 쓸 수 없습니다.  
+이 값보다 큰 값을 쓰려 하면 값이 써지지 않고, Status packet의 error 에 Limit error bit가 set 됩니다. 값의 범위는 -2,147,483,648 ~ 2,147,483,647 입니다. 동작모드가 `확장 위치 제어 모드`일 때는, Position Limit이 의미가 없어집니다.
 
-|Model Name|Value Range|
+|모델명|위치 제한값의 범위|
 | :---: | :---: |
 |H54-200-S500-R<br />H54-100-S500-R|-250,961 ~ 250,961|
 |H42-20-S300-R|-151,875 ~ 151,875|

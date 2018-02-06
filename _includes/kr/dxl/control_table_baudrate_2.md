@@ -1,6 +1,6 @@
-Baud Rate determines serial communication speed between a controller and DYNAMIXELs.
+제어기와 통신하기 위한 통신 속도 입니다.
 
-| Value     | Baud Rate     | Margin of Error     |
+| 값     | 통신 속도     | 오차율     |
 | :------------: | :------------: | :------------: |
 |7|4.5M|0.000%|
 |6|4M|0.000%|
@@ -11,5 +11,5 @@ Baud Rate determines serial communication speed between a controller and DYNAMIX
 |1(Default)|57,600| 0.000%|
 |0|9,600| 0.000%|
 
-`Note` Less than 3% of the baud rate error margin will not affect to UART communication.
+`참고` UART는 Baudrate 오차가 3% 이내이면 통신에 지장이 없습니다.
 {: .notice}

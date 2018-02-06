@@ -1,21 +1,13 @@
-## [Communication Circuit](#communication-circuit)
-To control the Dynamixel actuators, the main controller needs to convert its UART signals to the half duplex type. The recommended circuit diagram for this is shown below.
+## [통신 회로](#통신-회로)
+다이나믹셀을 제어하기 위해서는 제어기의 UART 신호를 Half duplex type으로 변환시켜 주어야 합니다. 다음은 그 권장 회로도입니다.
 
-### TTL Communication
+### [TTL 통신](#ttl-통신)
 ![](/assets/images/dxl/ttl_circuit.png)
 
-### RS-485 Communication
+### [RS-485 통신](#rs485-통신)
 ![](/assets/images/dxl/485_circuit.png)
 
-The power of Dynamixel is supplied via Pin1(-), Pin2(+).
-(The above circuit is built into Dynamixel-only controller.)
-In the above circuit diagram, the direction of data signal of TxD and RxD in the TTL Level is determined according to the level of DIRECTION 485 as follows:
-In case of DIRECTION485 Level = High: The signal of TxD is output to D+ and D-.
-In case of DIRECTION485 Level = Low: The signal of D+ and D- is output to RxD.
-
-## [Pin Assignment](#pin-assignment)
-The connector pin assignments are as the following. The two connectors on the Dynamixel are connected pin to pin, thus the Dynamixel can be operated with only one connector attached.
-
-![](/assets/images/dxl/connector_pin.png)
-
-![](/assets/images/dxl/485_connector_pin.png)
+전원은 Pin1(-), Pin2(+)를 통하여 다이나믹셀로 공급됩니다.(Dynamixel 전용 Controller에는 위의 회로가 내장되어 있습니다.)  
+위의 회로도에서 TTL Level의 TxD와 RxD는 DIRECTION 485의 Level에 따라 다음과 같이 Data 신호의 방향이 결정됩니다.  
+- DIRECTION485 Level =High인 경우: TxD의 신호가 D+, D-로 출력
+- DIRECTION485 Level =Low인 경우: D+, D-의 신호가 RxD로 입력

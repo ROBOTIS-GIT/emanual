@@ -1,3 +1,8 @@
+---
+layout: popup
+---
+
+
 ### 1. Overview  
 `op3_action_module` manages OP3 actions.  
 This module is compiled as a libary so that it can be loaded from the `op3_manager`.

@@ -1,19 +1,20 @@
-It is a moving speed to Goal Position.
-The range and the unit of the value may vary depending on the operation mode.
+이동하는 속도를 나타내며 이 값의 범위와 단위는 동작 모드에 따라 다릅니다.
 
-+ Join Mode
-  0 ~ 1,023(0x3FF) can be used, and the unit is about 0.111rpm.
-  If it is set to 0, it means the maximum rpm of the motor is used without controlling the speed.
-  If it is 1023, it is about 114rpm.
-  For example, if it is set to 300, it is about 33.3 rpm.
++ **관절 모드**
+  Goal Position으로 이동하는 속도입니다.  
+  0 ~ 1,023 (0x3FF) 까지 사용되며, 단위는 약 0.111rpm입니다.  
+  0으로 설정하면 속도 제어를 하지 않고 모터의 최대 rpm을 사용한다는 의미입니다.  
+  1,023의 경우 약 114rpm이 됩니다.  
+  예를 들어, 300으로 설정된 경우 약 33.3rpm입니다.
 
-  `Note` Please check the maximum rpm of the Dynamixel. The motor cannot exceed the maximum rpm with the higher Moving Speed value.
+  `Note` 해당 모델의 최대 rpm을 확인하시기 바랍니다. 최대 rpm 이상을 설정해도 모터는 그 이상의 속도를 낼 수 없습니다.
   {: .notice}
 
-+ Wheel Mode
-  0 ~ 2,047(0x7FF) can be used, the unit is about 0.1%.
-  If a value in the range of 0 ~ 1,023 is used, it is stopped by setting to 0 while rotating to CCW direction.
-  If a value in the range of 1,024 ~ 2,047 is used, it is stopped by setting to 1,024 while rotating to CW direction.
-  That is, the 10th bit becomes the direction bit to control the direction.
-  In Wheel Mode, only the output control is possible, not speed.
-  For example, if it is set to 512, it means the output is controlled by 50% of the maximum output.
++ **바퀴 모드**  
+  목표 방향으로 이동하는 속도입니다.  
+  0 ~ 2,047 (0x7FF)까지 사용되며, 단위는 약 0.1%입니다.  
+  0 ~ 1,023 범위의 값을 사용하면 CCW방향으로 회전하며 0으로 설정하면 정지합니다.  
+  1,024 ~ 2,047 범위의 값을 사용하면 CW방향으로 회전하며 1,024으로 설정하면 정지합니다.  
+  즉, 10번째 bit가 방향을 제어하는 direction bit가 됩니다.  
+  바퀴 모드는 속도 제어를 하지 않고 출력 제어만 가능합니다.  
+  예를 들어, 512로 설정된 경우 최대 출력 대비 약 50%로 제어한다는 의미입니다.

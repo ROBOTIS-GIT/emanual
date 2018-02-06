@@ -1,1 +1,2 @@
-Minimum current to drive motor. This value ranges from 0x20 to 0x3FF.
+
+구동시에 모터에 공급되는 최소 전류량 입니다. 초기값은 0x00이며 최고 0x3FF까지 설정할 수 있습니다.

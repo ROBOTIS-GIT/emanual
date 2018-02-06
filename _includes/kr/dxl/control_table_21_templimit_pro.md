@@ -1,8 +1,10 @@
-This value limits operating temperature. When the Present Temperature(625) that indicates internal temperature of Dynamixel is greater than the Temperature Limit(21), the Over Heating Error Bit(Bit 2) in the Hardware Error Status(892) will be set. If Overheating Error Bit(Bit 2) is configured in the Shutdown(48) when Over Heating Error occurs, Torque Enable(562) is cleared to ‘0’ and Torque will be disabled. For more details, please refer to the [Shutdown(48)](#shutdown) section.
+동작 온도의 상한 값입니다. 사용 범위는 0 ~ 100 이며, 단위는 섭씨 온도입니다.  
+예를 들어, 값이 80이면 80&deg;C 입니다.  
+내부 온도가 이 값을 넘으면 Status Packet 중 ERROR의 Over Heating Error Bit (Bit2) 가 ‘1’로 설정되어 반환되고, Shutdown의 플래그(flag)중 과열(Overheating)이 설정되어 있다면 기능이 발휘됩니다.
 
-|Unit|Value Range|Description|
+|단위|값의 범위|설명|
 | :---: | :---: | :---: |
-|About 1&deg;|0 ~ 100|0 ~ 100&deg;|
+|약 1&deg;|0 ~ 100|0 ~ 100&deg;|
 
-`Caution` Do not set the temperature lower/higher than the default value. When the temperature alarm shutdown occurs, wait 20 minutes to cool the temperature before re-use. Keep using the product when the temperature is high can cause severe damage.
+`주의` 온도 상한선을 초기값 보다 높게 설정하지 마십시오. 온도 알람셧다운 발생시 20분이상 휴식하여 다이나믹셀의 온도를 충분히 낮춘후 사용해 주세요. 온도가 높은상태에서 사용시 제품이 손상될 수 있습니다.
 {: .notice--warning}

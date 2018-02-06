@@ -1,10 +1,12 @@
-It is the operation range of voltage.
 
-|Unit|Value Range|Description|
-| :---: | :---: | :---: |
-|About 0.1V|50 ~ 160|5.0 ~ 16.0V|
+전압 동작 범위의 상한과 하한 값입니다.
 
-For example, if the value is 80, the voltage is 8V.
-If [Present Voltage(42)] is out of the range, Voltage Range Error Bit (Bit0) of Status Packet is returned as ‘1’ and Alarm is triggered as set in the addresses 17 and 18.
+|  단위   |   범위   |  상세설명   |
+|:-------:|:--------:|:-----------:|
+| 약 0.1V | 50 ~ 160 | 5.0 ~ 16.0V |
+
+상한과 하한 각각 50 ~ 250 (0x32 ~ 0xFA)까지 사용 가능하며, 단위는 0.1V입니다.
+예를 들어, 값이 120이면 12V입니다.
+[Present Voltage(42)] 현재 전압 값이 이 범위를 벗어날 경우 Status Packet 중 ERROR의 Voltage Range Error Bit(Bit0)가 ‘1’로 설정되어 반환되고, Alram LED(Address 17)과 Shutdown(Address 18)의 플래그(flag)중 입력 전압 에러(Input Voltage Error)가 설정되어 있다면 기능이 발휘됩니다.
 
 [Present Voltage(42)]: #present-voltage

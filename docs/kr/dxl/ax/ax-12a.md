@@ -11,91 +11,88 @@ sidebar:
   nav: "ax-12a"
 ---
 
-# AX-12A
-
 ![](/assets/images/dxl/ax/ax-12+_product.png)
-
 ![](/assets/images/dxl/ax/ax-12a_product.png)
+
+> AX-12+, AX-12A
 
 `Note` AX-12+ 는 AX-12 에서 회로 및 재질과 휠 기어의 설계를 개선한 버전입니다.
 {: .notice}
 
-`Note` AX-12A 는  AX-12+ 와 동일한 성능에 외형을 개선한 모델입니다. 현재는 AX-12A 만 판매되고 있습니다
-{: .notice}
+`주의` AX-12A 는  AX-12+ 와 동일한 성능에 외형을 개선한 모델입니다. 현재는 AX-12A 만 판매되고 있습니다
+{: .notice--warning}
 
-# [주요 사양 요약](#주요-사양-요약)
+# [주요 사양](#주요-사양)
 
-| 항목           | 내용     |
-| :------------- | :------------- |
-| 무게 | 53.5g(AX-12, AX-12+), 54.6g(AX-12A) |
-| 크기 | 32mm x 50mm x 40mm |
-| 최소 제어각 | 0.29&deg;  |
-| 모터 | Cored |
-| 기어비 | 254 : 1  |
-| Stall Torque | 1.5 N*m (at 12V, 1.5A) |
-| No Load Speed | 59rpm (at 12V) |
-| 동작 모드| 관절 모드 (0&deg; ~ 300&deg;) / 바퀴 모드(무한 회전)|
-| 동작 온도 | -5&deg;C ~ +70&deg;C |
-| 사용 전압 | 9.0 ~ 12.0V (**권장 전압 : 11.1V**) |
-| Command Signal | Digital Packet |
-| Protocol Type | Half Duplex Asynchronous Serial Communicationf<br />(8bit, 1stop, No Parity) |
-| Link (Physical) | TTL Level Multi Drop Bus(Daisy Chain Type Connector) |
-| ID | 254 ID (0~253) |
-| Feedback | Position, Temperature, Load, Input Voltage, etc |
-| Material | Engineering Plastic |
+| 항목            | 내용                                                                         |
+|:----------------|:-----------------------------------------------------------------------------|
+| 무게            | 53.5g(AX-12, AX-12+), 54.6g(AX-12A)                                          |
+| 크기            | 32mm x 50mm x 40mm                                                           |
+| 최소 제어각     | 0.29&deg;                                                                    |
+| 모터            | Cored                                                                        |
+| 기어비          | 254 : 1                                                                      |
+| Stall Torque    | 1.5 N*m (at 12V, 1.5A)                                                       |
+| No Load Speed   | 59rpm (at 12V)                                                               |
+| 동작 모드       | 관절 모드 (0&deg; ~ 300&deg;) / 바퀴 모드(무한 회전)                         |
+| 동작 온도       | -5&deg;C ~ +70&deg;C                                                         |
+| 사용 전압       | 9.0 ~ 12.0V (**권장 전압 : 11.1V**)                                          |
+| Command Signal  | Digital Packet                                                               |
+| Protocol Type   | Half Duplex Asynchronous Serial Communicationf<br />(8bit, 1stop, No Parity) |
+| Link (Physical) | TTL Level Multi Drop Bus(Daisy Chain Type Connector)                         |
+| ID              | 254 ID (0~253)                                                               |
+| Feedback        | Position, Temperature, Load, Input Voltage, etc                              |
+| Material        | Engineering Plastic                                                          |
 
-`Note`
-Stall Torque 는 순간적으로 낼수있는 최대정지토크를 의미합니다.
-실제구동위해 로봇을 설계하신다면 Stall Torque의 1/5 이하의 로드가 걸리도록 설계하셔야 안정적인 움직임이 가능합니다.
+`Note` Stall Torque 는 순간적으로 낼수있는 최대정지토크를 의미합니다. 실제 구동을 위해 로봇을 설계하신다면 Stall Torque의 1/5 이하의 로드가 걸리도록 설계하셔야 안정적인 움직임이 가능합니다.
 {: .notice}
 
 {% include kr/dxl/control_table_protocol1.md %}
 
-## [Control Table of EEPROM Area](#control-table-of-eeprom-area)
+## [EEPROM 영역](#eeprom-영역)
 
-| 주소     | 크기(Byte)     | 명칭    | 의미     | 접근     | 초기값     |
-| :------------- | :------------- | :------------- | :------------- | :------------- | :------------- |
-|0|2|[Model Number](#model-number)         | 모델 번호의 바이트     | R       | 12 |
-|2|1|[Firmware Version](#firmware-version)    |펌웨어 버전 정보|R|-|
-|3|1|[ID](#id)                  |다이나믹셀 ID      |RW|1|
-|4|1|[Baud Rate](#baud-rate)           |다이나믹셀 통신 속도|RW|1|
-|5|1|[Return Delay Time](#return-delay-time)   |응답 지연 시간|RW|250|
-|6|2|[CW Angle Limit](#cw-angle-limit)          |시계 방향 한계 각도 값의 바이트|RW|0|
-|8|2|[CCW Angle Limit](#ccw-angle-limit)          |반시계 방향 한계 각도 값의 바이트|RW|1023|
-|11|1|[Temperature Limit](#temperature-limit)   |내부 한계 온도|RW|70|
-|12|1|[Min Voltage Limit](#min-voltage-limit)   |최저 한계 전압|RW|60|
-|13|1|[Max Voltage Limit](#max-voltage-limit)   |최고 한계 전압|RW|140|
-|14|2|[Max Torque](#max-torque)           |토크 한계 값의 바이트|RW|1023|
-|16|1|[Status Return Level](#status-return-level)      |응답 레벨|RW|2|
-|17|1|[Alarm LED](#alarm-led)                             |알람용 LED 기능|RW|36|
-|18|1|[Shutdown](#shutdown)            |알람용 셧 다운(Shut down) 기능|RW|36|
-
-
-## [Control Table of RAM Area](#control-table-of-ram-area)
-
-| 주소     | 크기(Byte)     | 명칭     | 의미     | 접근    | 초기값     |
-| :------------- | :------------- | :------------- | :------------- | :------------- | :------------- |
-|24|1|[Torque Enable](#torque-enable)            |토크 켜기|RW|0|
-|25|1|[LED](#led)                             |Status LED On/Off|RW|0|
-|26|1|[CW Compliance Margin](#cw-compliance-margin)   |CW Compliance Margin|RW|1|
-|27|1|[CCW Compliance Margin](#ccw-compliance-margin)   |CCW Compliance Margin|RW|1|
-|28|1|[CW Compliance Slope](#cw-compliance-slope)   |CW Compliance Slope|RW|32|
-|29|1|[CCW Compliance Slope](#ccw-compliance-alope)   |CCW Compliance Slope|RW|32|
-|30|2|[Goal Position](#goal-position)                 |목표 위치 값의 바이트|RW|-|
-|32|2|[Moving Speed](#moving-speed)             |목표 속도 값의 바이트|RW|-|
-|34|2|[Torque Limit](#torque-limit)            |토크 한계 값의 바이트|RW|ADD 14&15|
-|36|2|[Present Position](#present-position)     |현재 위치 값의 바이트|R|-|
-|38|2|[Present Speed](#present-speed)           |현재 속도 값의 바이트|R|-|
-|40|2|[Present Load](#present-load)             |현재 하중 값의 바이트|R|-|
-|42|1|[Present Voltage](#present-voltage)       |현재 전압|R|-|
-|43|1|[Present Temperature](#present-temperature)|현재 온도|R|-|
-|44|1|[Registered](#registered)                 |Instruction의 등록 여부|R|0|
-|46|1|[Moving](#moving)                   |움직임 유무|R|0|
-|47|1|[Lock](#lock)                   |EEPROM 잠금|RW|0|
-|48|2|[Punch](#punch)                   |Punch 값의 바이트|RW|32|
+| 주소 | 크기(Byte) | 명칭                                        | 의미                              | 접근 | 초기값 |
+|:-----|:-----------|:--------------------------------------------|:----------------------------------|:-----|:-------|
+| 0    | 2          | [Model Number](#model-number)               | 모델 번호의 바이트                | R    | 12     |
+| 2    | 1          | [Firmware Version](#firmware-version)       | 펌웨어 버전 정보                  | R    | -      |
+| 3    | 1          | [ID](#id)                                   | 다이나믹셀 ID                     | RW   | 1      |
+| 4    | 1          | [Baud Rate](#baud-rate)                     | 다이나믹셀 통신 속도              | RW   | 1      |
+| 5    | 1          | [Return Delay Time](#return-delay-time)     | 응답 지연 시간                    | RW   | 250    |
+| 6    | 2          | [CW Angle Limit](#cw-angle-limit)           | 시계 방향 한계 각도 값의 바이트   | RW   | 0      |
+| 8    | 2          | [CCW Angle Limit](#ccw-angle-limit)         | 반시계 방향 한계 각도 값의 바이트 | RW   | 1023   |
+| 11   | 1          | [Temperature Limit](#temperature-limit)     | 내부 한계 온도                    | RW   | 70     |
+| 12   | 1          | [Min Voltage Limit](#min-voltage-limit)     | 최저 한계 전압                    | RW   | 60     |
+| 13   | 1          | [Max Voltage Limit](#max-voltage-limit)     | 최고 한계 전압                    | RW   | 140    |
+| 14   | 2          | [Max Torque](#max-torque)                   | 토크 한계 값의 바이트             | RW   | 1023   |
+| 16   | 1          | [Status Return Level](#status-return-level) | 응답 레벨                         | RW   | 2      |
+| 17   | 1          | [Alarm LED](#alarm-led)                     | 알람용 LED 기능                   | RW   | 36     |
+| 18   | 1          | [Shutdown](#shutdown)                       | 알람용 셧 다운(Shut down) 기능    | RW   | 36     |
 
 
-## [Address 기능 설명](#address-기능-설명)
+## [RAM 영역](#ram-영역)
+
+| 주소 | 크기(Byte) | 명칭                                            | 의미                    | 접근 | 초기값     |
+|:-----|:-----------|:------------------------------------------------|:------------------------|:-----|:-----------|
+| 24   | 1          | [Torque Enable](#torque-enable)                 | 토크 켜기               | RW   | 0          |
+| 25   | 1          | [LED](#led)                                     | Status LED On/Off       | RW   | 0          |
+| 26   | 1          | [CW Compliance Margin](#cw-compliance-margin)   | CW Compliance Margin    | RW   | 1          |
+| 27   | 1          | [CCW Compliance Margin](#ccw-compliance-margin) | CCW Compliance Margin   | RW   | 1          |
+| 28   | 1          | [CW Compliance Slope](#cw-compliance-slope)     | CW Compliance Slope     | RW   | 32         |
+| 29   | 1          | [CCW Compliance Slope](#ccw-compliance-alope)   | CCW Compliance Slope    | RW   | 32         |
+| 30   | 2          | [Goal Position](#goal-position)                 | 목표 위치 값의 바이트   | RW   | -          |
+| 32   | 2          | [Moving Speed](#moving-speed)                   | 목표 속도 값의 바이트   | RW   | -          |
+| 34   | 2          | [Torque Limit](#torque-limit)                   | 토크 한계 값의 바이트   | RW   | ADD 14\&15 |
+| 36   | 2          | [Present Position](#present-position)           | 현재 위치 값의 바이트   | R    | -          |
+| 38   | 2          | [Present Speed](#present-speed)                 | 현재 속도 값의 바이트   | R    | -          |
+| 40   | 2          | [Present Load](#present-load)                   | 현재 하중 값의 바이트   | R    | -          |
+| 42   | 1          | [Present Voltage](#present-voltage)             | 현재 전압               | R    | -          |
+| 43   | 1          | [Present Temperature](#present-temperature)     | 현재 온도               | R    | -          |
+| 44   | 1          | [Registered](#registered)                       | Instruction의 등록 여부 | R    | 0          |
+| 46   | 1          | [Moving](#moving)                               | 움직임 유무             | R    | 0          |
+| 47   | 1          | [Lock](#lock)                                   | EEPROM 잠금             | RW   | 0          |
+| 48   | 2          | [Punch](#punch)                                 | Punch 값의 바이트       | RW   | 32         |
+
+
+## [컨트롤 테이블 설명](#컨트롤-테이블-설명)
 
 ### <a name="model-number"></a>**[Model Number (0)](#model-number-0)**
 다이나믹셀의 모델 번호입니다.
@@ -107,7 +104,23 @@ Stall Torque 는 순간적으로 낼수있는 최대정지토크를 의미합니
 {% include kr/dxl/control_table_id.md %}
 
 ### <a name="baud-rate"></a>**[Baud Rate (4)](#baud-rate-4)**
-{% include kr/dxl/control_table_baudrate.md %}
+제어기와 통신하기 위한 통신 속도 입니다. 0~254 (0xFE) 까지 사용 가능하며 산출 공식은 다음과 같습니다.  
+Baudrate(BPS) = 2,000,000 / (Value + 1)
+
+|    값     | 통신속도(bps) | 오차율  |
+|:---------:|:-------------:|:-------:|
+| 1(기본값) |      1M       | 0.000%  |
+|     3     |    500,000    | 0.000%  |
+|     4     |    400,000    | 0.000%  |
+|     7     |    250,000    | 0.000%  |
+|     9     |    200,000    | 0.000%  |
+|    16     |    115200     | -2.124% |
+|    34     |     57600     | 0.794%  |
+|    103    |     19200     | -0.160% |
+|    207    |     9600      | -0.160% |
+
+`참고` UART는 Baudrate 오차가 3% 이내이면 통신에 지장이 없습니다.
+{: .notice}
 
 ### <a name="return-delay-time"></a>**[Return Delay Time (5)](#return-delay-time-5)**
 {% include kr/dxl/control_table_return_delay_time.md %}
@@ -119,7 +132,7 @@ Stall Torque 는 순간적으로 낼수있는 최대정지토크를 의미합니
 {% include kr/dxl/control_table_temp_limit.md %}
 
 ### <a name="min-voltage-limit"></a><a name="max-voltage-limit"></a>**[Min/Max Voltage Limit (12, 13)](#minmax-voltage-limit-12-13)**
-{% include kr/dxl/control_table_volt_limit_high.md %}
+{% include kr/dxl/control_table_volt_limit.md %}
 
 ### <a name="max-torque"></a>**[Max Torque (14)](#max-torque-14)**
 {% include kr/dxl/control_table_max_torque.md %}
@@ -152,90 +165,34 @@ Stall Torque 는 순간적으로 낼수있는 최대정지토크를 의미합니
 {% include kr/dxl/control_table_torque_limit.md %}
 
 ### <a name="present-position"></a>**[Present Position (36)](#present-position-36)**
-다이나믹셀의 현재 위치 값입니다.
-값의 범위는 0~1023 (0x3FF)이며 단위는 0.29도 입니다.
-
-![](/assets/images/dxl/dx/dx_series_goal_position.png)
-    <위 그림은 해당 모델의 전면이 기준입니다>
-
-`Caution` 바퀴 모드로 설정되어 있는 경우 이 값을 회전량 또는 움직인 거리를 측정하는 용도로 사용할 수 없습니다.
-{: .notice--warning}
+{% include kr/dxl/control_table_potentio_present_position.md %}
 
 ### <a name="present-speed"></a>**[Present Speed (38)](#present-speed-38)**
-현재  이동하는 속도입니다.
-이 값은 0~2047 (0x7FF) 까지 사용됩니다.
-0~1023 범위의 값이면 CCW방향으로 회전한다는 의미입니다.
-1024~2047 범위의 값이면 CW방향으로 회전한다는 의미입니다.
-즉, 10번째 bit가 방향을 제어하는 direction bit가 되며 0과 1024는 같습니다.
-이 값의 단위는 동작 모드에 따라 다릅니다.
-+ 관절 모드
-단위는 약 0.111rpm입니다.
-예를 들어, 300으로 설정된 경우 CCW방향 약 33.3rpm으로 이동 중이라는 의미입니다.
-+ 바퀴 모드
-단위는 약 0.1%입니다.
-예를 들어, 512로 설정된 경우 CCW방향 최대 출력 대비 약 50%로 제어 중이라는 의미입니다.
- 
+{% include kr/dxl/control_table_present_speed.md %}
 
 ### <a name="present-load"></a>**[Present Load (40)](#present-load-40)**
-현재 적용되는 하중을 의미합니다.
-이 값의 범위는 0~2047이며, 단위는 약 0.1%입니다.
-0~1023 범위의 값은 CCW방향으로 하중이 작용한다는 의미입니다.
-1024~2047 범위의 값은 CW방향으로 하중이 작용한다는 의미입니다.
-즉, 10번째 bit가 방향을 제어하는 direction bit가 되며, 1024는 0과 같습니다.
-예를 들어, 값이 512이면 CCW 방향으로 최대 출력 대비 약 50%로 하중이 감지된다는 의미입니다.
-
-| Bit | 15 ~ 11  | 10 | 9 ~ 0|
-| :----: | :---: | :---: | :---: |
-| Value | 0 | Load Direction | Data (Load Ratio)|
-
-`Note` CCW Load : Load Direction = 0, CW Load : Load Direction = 1
-{: .notice}
-
-`Note` 현재하중은 토크센서 등을 이용하여 측정된 값이 아니라 내부 출력 값을 기반으로 유추된 값 입니다.
-따라서 무게나 토크를 측정하는 용도로는 부정확 할 수 있습니다. 해당 관절에 가해지는 힘의 방향과 크기를 예측하는 용도로 사용하시기를 권장합니다
-{: .notice}
+{% include kr/dxl/control_table_present_load.md %}
 
 ### <a name="present-voltage"></a>**[Present Voltage (42)](#present-voltage-42)**
-현재 공급되고 있는 전압입니다.
-이 값의 단위는 0.1V입니다. 예를 들어, 값이 100이면 10V입니다.
+{% include kr/dxl/control_table_present_volt.md %}
 
 ### <a name="present-temperature"></a>**[Present Temperature (43)](#present-temperature-43)**
-내부의 온도입니다.
-이 값의 단위는 섭씨 온도입니다. 예를 들어, 값이 85이면 현재 내부 온도는 85℃ 입니다.
+{% include kr/dxl/control_table_present_temp.md %}
 
 ### <a name="registered-instruction"></a>**[Registered Instruction (44)](#registered-instruction-44)**
-
-| 값 | 의미     |
-| :-------------: | :------------- |
-|0|REG_WRITE로 전달된 명령이 없습니다.|
-|1|REG_WRITE로 전달된 명령이 있습니다.|
-
-`Note` ACTION 명령을 수행하면 이 값이 0으로 바뀝니다.
-{: .notice}
+{% include kr/dxl/control_table_reg_instruction.md %}
 
 ### <a name="moving"></a>**[Moving (46)](#moving-46)**
-
-|값 |의미 |
-| :---:| :---|
-|0|Goal position 명령 수행을 완료했습니다.|
-|1|Goal position 명령 수행 중입니다.|
+{% include kr/dxl/control_table_moving.md %}
 
 ### <a name="lock"></a>**[Lock (47)](#lock-47)**
-
-|값|의미|
-| :---:| :---|
-|0|EEPROM영역을 수정할 수 있습니다.|
-|1|EEPROM영역을 수정하지 못합니다.|
-
-`Caution` Lock이 1로 설정되면 전원을 껐다 켜야 0으로 바꿀 수 있습니다.
-{: .notice--warning}
+{% include kr/dxl/control_table_lock.md %}
 
 ### <a name="punch"></a>**[Punch (48)](#punch-48)**
-구동시에 모터에 공급되는 최소 전류량 입니다.
-초기값은 0x20이며 최고 0x3ff까지 설정할 수 있습니다.
+{% include kr/dxl/control_table_punch.md %}
 
 
-# [조립 방법](#조립-방법)
+# [조립 예시](#조립-예시)
 
 기본 제공 Frames
 
@@ -256,15 +213,17 @@ F3은 다음과 같은 방법으로 적용됩니다. F3은 AX-12A의 3면(좌,�
 
 ![](/assets/images/dxl/ax/ax_series_frame_assembly_02.png)
 
-# [Maintenance](#maintenance)
+# [유지보수](#유지보수)
 
 {% include kr/dxl/horn_bearing_replacement.md %}
 
-# [Reference](#reference)
+# [참고자료](#참고자료)
 
-`Note` [Compatibility Guide]
+`Note` [호환성 가이드]
 {: .notice}
 
+## [커넥터 정보](#커넥터-정보)
+{% include kr/dxl/molex_ttl.md %}
 
 ## [도면](#도면)
 
@@ -272,6 +231,4 @@ F3은 다음과 같은 방법으로 적용됩니다. F3은 AX-12A의 3면(좌,�
 
 {% include kr/dxl/485_ttl_connection.md %}
 
-[Two's complement]: #
-
-[Compatibility Guide]: http://en.robotis.com/BlueAD/board.php?bbs_id=faq&mode=view&bbs_no=47&page=1&key=&keyword=&sort=&scate=
+[호환성 가이드]: http://www.robotis.com/service/compatibility_table.php?cate=d

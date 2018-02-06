@@ -1,11 +1,12 @@
-This value indicates present Position. For more details, please refer to the [Goal Position(116)](#goal-position).
+현재 위치 값입니다. 자세한 사항은 [Goal Position(116)](#goal-position116)을 참고하세요.
 
 {% capture present_pos_notice_01 %}
-`Note` Present Position(132) represents 4 byte continuous range(-2,147,483,648 ~ 2,147,483,647) when Torque is turned off regardless of Operating Mode(11). However, Present Position(132) will be reset in those cases:
-1. Present Position(132) is reset with the value within 1 rev (0 ~ 4,095) when Operating Mode(11) is changed to Position Control Mode.
-2. Present Position(132) is reset with the value within 1 rev (0 ~ 4,095) when Torque is turned on in Position Control Mode.
+`Note` Present Position(132)은 Torque OFF 상태일 경우, Operating Mode(11)와 상관없이 4 byte(-2,147,483,648 ~ 2,147,483,647)의 범위를 연속적으로 표현합니다.  
+Present Position(132)의 값이 초기화되는 시점은 다음과 같습니다.
+1. Operating Mode(11)가 위치 제어 모드로 변경되는 시점에 1rev(0 ~ 4,095) 범위로 초기화
+2. 위치 제어 모드에서 Torque ON으로 변경되는 시점에 1rev(0 ~ 4,095) 범위로 초기화
 
-Reset Present Position(132) value can be affected by Homing Offset(20).
+Homing Offset(20)에 의해 초기화 되는 값은 변경될 수 있습니다.
 {% endcapture %}
 
 <div class="notice">

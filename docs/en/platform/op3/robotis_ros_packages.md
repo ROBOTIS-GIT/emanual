@@ -18,35 +18,35 @@ sidebar:
 ## [ROBOTIS OP3](#robotis-op3)
 
 ### [ROBOTIS-OP3 Modules]
- - #### Motion Module
-   1. [op3_action_module] : This module manages every joint actions.  
-   2. [op3_base_module] : This module manages initial pose and basic functions.  
-   3. [op3_head_control_module] : This module controls the head.  
-   4. [op3_walking_module] : This module controls walking.  
-   5. [op3_online_walking_module] : This module controls online-walking(upgraded walking).
+#### Motion Module
+1. [op3_action_module]{: .popup} : This module manages every joint actions.  
+2. [op3_base_module] : This module manages initial pose and basic functions.  
+3. [op3_head_control_module] : This module controls the head.  
+4. [op3_walking_module] : This module controls walking.  
+5. [op3_online_walking_module] : This module controls online-walking(upgraded walking).
 
- - #### Sensor Module
-   1. [open_cr_module] : This module is required to use OpenCR as a sensor.  
+#### Sensor Module
+1. [open_cr_module] : This module is required to use OpenCR as a sensor.  
 
-### [Op3 Manager]
-  The package that controls OP3 using framework and various modules.   
+### [OP3 Manager]
+The package that controls OP3 using framework and various modules.   
 
 ### Others
-  1. [op3_balance_control]
-  2. [op3_localization]
-  3. [op3_optimization]
+1. [op3_balance_control]
+2. [op3_localization]
+3. [op3_optimization]
 
 
 ## [ROBOTIS OP3 msgs](#robotis-op3-msgs)
 
 ### Module msgs
- 1. [op3_action_module_msgs] : This message/service is used for op3_action_module.  
- 2. [op3_walking_module_msgs] : This message/service is used for op3_walking_module.
- 3. [op3_online_walking_module_msgs] : his message/service is used for op3_online_walking_module.  
+1. [op3_action_module_msgs] : This message/service is used for op3_action_module.  
+2. [op3_walking_module_msgs] : This message/service is used for op3_walking_module.
+3. [op3_online_walking_module_msgs] : his message/service is used for op3_online_walking_module.  
 
 
 ### Tool msgs
- 1. [op3_offset_tuner_msgs] : This msessage/service is used for OP3 offset tunning.  
+1. [op3_offset_tuner_msgs] : This msessage/service is used for OP3 offset tunning.  
 
 ## [ROBOTIS OP3 Demo](#robotis-op3-Demo)
 
@@ -72,35 +72,35 @@ sidebar:
 
 
 
-[ROBOTIS-OP3 Modules]:[ROBOTIS-OP3-Modules.md]
-[op3_action_module]:[op3_action_module.md]
-[op3_base_module]:[op3_base_module.md]
-[op3_head_control_module]:[op3_head_control_module.md]
-[op3_walking_module]:[op3_walking_module.md]
-[op3_online_walking_module]:[op3_online_walking_module.md]
-[open_cr_module]:[open_cr_module.md]
-[Op3 Manager]:[op3_manager.md]
-[op3_balance_control]:[op3_balance_control.md]
-[op3_localization]:[op3_localization.md]
-[op3_optimization]:[op3_optimization.md]
+[ROBOTIS-OP3 Modules]: [ROBOTIS-OP3-Modules.md]
+[op3_action_module]: /docs/en/platform/op3/op3_files/op3_action_module/
+[op3_base_module]: [op3_base_module.md]
+[op3_head_control_module]: [op3_head_control_module.md]
+[op3_walking_module]: [op3_walking_module.md]
+[op3_online_walking_module]: [op3_online_walking_module.md]
+[open_cr_module]: [open_cr_module.md]
+[Op3 Manager]: [op3_manager.md]
+[op3_balance_control]: [op3_balance_control.md]
+[op3_localization]: [op3_localization.md]
+[op3_optimization]: [op3_optimization.md]
 
-[op3_action_module_msgs]:[op3_action_module_msgs.md]
-[op3_walking_module_msgs]:[op3_walking_module_msgs.md]
-[op3_online_walking_module_msgs]:[op3_online_walking_module_msgs.md]
-[op3_offset_tuner_msgs]:[op3_offset_tuner_msgs.md]
-
-
-
-[ball_detector]:[op3_ball_detector.md]
-[op3_demo]:[op3_demo.md]
+[op3_action_module_msgs]: [op3_action_module_msgs.md]
+[op3_walking_module_msgs]: [op3_walking_module_msgs.md]
+[op3_online_walking_module_msgs]: [op3_online_walking_module_msgs.md]
+[op3_offset_tuner_msgs]: [op3_offset_tuner_msgs.md]
 
 
-[robotis_op3_description]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/robotis_op3_description
-[robotis_op3_gazebo]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/robotis_op3_gazebo
+
+[ball_detector]: [op3_ball_detector.md]
+[op3_demo]: [op3_demo.md]
 
 
-[op3_action_editor]:[op3_action_editor.md]
-[op3_gui_demo]:[op3_gui_demo.md]
-[op3_offset_tuner_server]:[op3_offset_tuner_server.md]
-[op3_offset_tuner_client]:[op3_offset_tuner_client.md]
-[op3_walking_tuner]:[op3_walking_tuner.md]
+[robotis_op3_description]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/robotis_op3_description
+[robotis_op3_gazebo]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/robotis_op3_gazebo
+
+
+[op3_action_editor]: [op3_action_editor.md]
+[op3_gui_demo]: [op3_gui_demo.md]
+[op3_offset_tuner_server]: [op3_offset_tuner_server.md]
+[op3_offset_tuner_client]: [op3_offset_tuner_client.md]
+[op3_walking_tuner]: [op3_walking_tuner.md]

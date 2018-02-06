@@ -1,24 +1,28 @@
-Indirect Address and Indirect Data are useful when accessing two remote addresses in the Control Table as sequential addresses. Sequential addresses increase Instruction Packet efficiency. Addresses that can be defined as Indirect Address is limited to RAM area(Address 64 ~ 661).
-If specific address is allocated to Indirect Address, Indirect Address inherits features and properties of the Data from the specific Address. Property includes Size(Byte length), value range, and Access property(Read Only, Read/Write). For instance, allocating 65(Address of LED) to Indirect Address 1(168), Indirect Data 1(224) can perform exactly same as LED(65).
+Indirect Address와 Indirect Data 용도는 서로 떨어져있는 Control Table의 Address를 연속된 Address로 사용하기 위함입니다.  
+연속된 Address는 Instruction Packet을 효율성을 향상 시킵니다.  
+Indirect Address로 설정할 수 있는 Address는 RAM 영역(Address 64 ~ 661)으로 한정 됩니다.  
+Indirect Address에 특정 Address를 설정하면, Indirect Data는 특정한 Address에 해당하는 Data의 기능과 속성을 모두 상속받습니다.  
+동일한 속성이란 Size(Byte 길이), 값의 범위 그리고 Access(읽기 전용 속성, 읽기 쓰기 속성)를 모두 포함합니다.  
+즉, Indirect Address 1(168)에 65(LED의 Address)를 설정하면, Indirect Data 1(224)은 LED(65)와 동일한 기능을 수행하게 됩니다.
 
-`Example 1` Allocating Size 1 byte LED(65) to Indirect Data 1(224).
-1. Indirect Address 1(168) : change the value to '65' which is the address of LED.
-2. Set Indirect Data 1(224) to ‘1’ : LED(65) also becomes '1' and LED is turned on.
-3. Set Indirect Data 1(224) to ‘0’ : LED(65) also becomes ‘0’ and LED is turned off.
+`예제 1` 1 byte인 LED(65)를 Indirect Data 1(224)로 사용할 경우
+1. Indirect Address 1(168) : LED의 주소 ‘65’로 변경
+2. Indirect Data 1(224)를 ‘1’로 변경 : LED(65) 역시 ‘1’로 변경되면서 LED가 켜집니다.
+3. Indirect Data 1(224)를 ‘0’로 변경 : LED(65) 역시 ‘0’로 변경되면서 LED가 꺼집니다.
 
-`Example 2` Allocating Size 4 byte Goal Position(116) to Indirect Data 2(225), 4 sequential bytes have to be allocated.
-1. Indirect Address 2(170) : change the value to '116' which is the first address of Goal Position.
-2. Indirect Address 3(172) : change the value to '117' which is the second address of Goal Position.
-3. Indirect Address 4(174) : change the value to '118' which is the third address of Goal Position.
-4. Indirect Address 5(176) : change the value to '119' which is the fourth address of Goal Position.
-5. Set 4 byte value '1,024' to Indirect Data 2 : Goal Position(116) also becomes '1024' and Dynamixel moves.
+`예제 2` 4 byte인 Goal Position(116)을 Indirect Data 2(225)로 사용할 경우, 4 byte 모두 변경 해야함
+1. Indirect Address 2(170) : Goal Position의 첫 번째 주소 ‘116’으로 변경
+2. Indirect Address 3(172) : Goal Position의 두 번째 주소 ‘117’으로 변경
+3. Indirect Address 4(174) : Goal Position의 세 번째 주소 ‘118’으로 변경
+4. Indirect Address 5(176) : Goal Position의 네 번째 주소 ‘119’으로 변경
+5. Indirect Data 2에서 4 byte 값을 ‘1024’ 변경 : Goal Position(116) 역시 ‘1024’로 변경되고 다이나믹셀이 구동됩니다.
 
-| Indirect Address Range | Description     |
+| Indirect Address 범위 | 설명     |
 | :------------- | :------------- |
-| 64 ~ 661 | EEPROM address can't be assigned to Indirect Address |
+| 64 ~ 661 | Indirection Address는 EEPROM 영역을 지정할 수 없습니다. |
 
-`Note` In order to allocate Data in the Control Table longer than 2[byte] to Indirect Address, all address must be allocated to Indirect Address like the above Example 2.
+`Note` 2 byte 이상의 길이를 갖는 Control Table의 Data를 Indirect Address로 설정할 경우에는 `예제 2`와 같이 Control Table의 Data가 포함된 모든 Address를 Indirect Address로 설정해 주어야 정상동작합니다.
 {: .notice}
 
-`Note` Indirect Address 29 ~ 56 and Indirect Data 29 ~ 56 can only be accessed with Protocol 2.0.
+`Note` Indirect Address 29 ~ 56과 Indirect Data 29 ~ 56은 프로토콜 2.0으로만 접근할 수 있습니다.
 {: .notice}
