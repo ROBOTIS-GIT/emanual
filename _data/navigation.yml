@@ -9314,8 +9314,13 @@ turtlebot3:
     children:
     - title: "TurtleBot3"
       url: /platform/turtlebot3/overview/#turtlebot3
+  - title: "Notice"
+    url: /platform/turtlebot3/notice/#notice
+    children:
+    - title: "Notice"
+      url: /platform/turtlebot3/notice/#notice
     - title: "News"
-      url: /platform/turtlebot3/overview/#news
+      url: /platform/turtlebot3/notice/#news
   - title: "Features"
     url: /platform/turtlebot3/features/#features
     children:
@@ -9585,6 +9590,19 @@ turtlebot3:
       url: /platform/turtlebot3/friends/#turtlebot3-friends-real-turtlebot
     - title: "TurtleBot3 Friends: Carrier"
       url: /platform/turtlebot3/friends/#turtlebot3-friends-carrier
+  - title: "Learn"
+    url: /platform/turtlebot3/learn/#learn
+    children:
+    - title: "TurtleBot3 Simulation on ROS Indigo"
+      url: /platform/turtlebot3/learn/#turtlebot3-simulation-on-ros-indigo
+    - title: "TurtleBot3 Blockly"
+      url: /platform/turtlebot3/learn/#turtlebot3-blockly
+    - title: "The Construct"
+      url: /platform/turtlebot3/learn/#the-construct
+    - title: "Youtube Course"
+      url: /platform/turtlebot3/learn/#youtube-course
+    - title: "Books"
+      url: /platform/turtlebot3/learn/#books
   - title: "Appendix #OpenCR1.0"
     url: /platform/turtlebot3/appendix_opencr1_0/#appendix-opencr10
     children:
