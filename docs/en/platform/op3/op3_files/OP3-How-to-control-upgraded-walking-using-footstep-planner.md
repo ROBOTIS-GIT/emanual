@@ -44,8 +44,7 @@ This chapter explains upgraded walking and footstep planner.
 
   2. Select `Online Walking` tab of the gui demo program.
 
- <img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_online_walking_01.png?raw=true" align="bottom"/>   
-
+  ![](/assets/images/platform/op3/op3_online_walking_01.png)
 
 - Controlling walking of ROBOTIS-OP3
    1. Go to initial pose : click `Go to Initial Pose` button
@@ -54,26 +53,23 @@ This chapter explains upgraded walking and footstep planner.
 
    3. Set the walking parameters     
 
-  <img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_online_walking_footstep_01.png?raw=true" align="bottom"/>      
-
+  ![](/assets/images/platform/op3/op3_online_walking_footstep_01.png)
    ** **  
    4. Set a interactive marker in rviz 3d screen and Move the marker to the target pose of feet.   
 
-  <img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_online_walking_footstep_02.png?raw=true" align="bottom"/>  
+  ![](/assets/images/platform/op3/op3_online_walking_footstep_02.png)
 
-    <img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_online_walking_footstep_04.png?raw=true" align="bottom"/>    
-
+  ![](/assets/images/platform/op3/op3_online_walking_footstep_04.png)
    ** **  
    5. plan the path and send a walking message to ROBOTIS-OP3     
 
-  <img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_online_walking_footstep_03.png?raw=true" align="bottom"/>   
+  ![](/assets/images/platform/op3/op3_online_walking_footstep_03.png)
 
-   <img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_online_walking_footstep_05.png?raw=true" align="bottom"/>   
-
+   ![](/assets/images/platform/op3/op3_online_walking_footstep_05.png)
 
 
 [&lt;&lt; Back](OP3-User's-Guide.md)
 
-[OP3-How-to-control-upgraded-walking]:[OP3-How-to-control-upgraded-walking.md]
+[OP3-How-to-control-upgraded-walking]:OP3-How-to-control-upgraded-walking.md
 [humanoid_navigation]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/humanoid_navigation
 [op3_navigation]:https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Tools/tree/master/op3_navigation

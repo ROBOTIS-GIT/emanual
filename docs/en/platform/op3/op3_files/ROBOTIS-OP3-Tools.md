@@ -7,8 +7,8 @@
 [&lt;&lt; Back](OP3-User's-Guide.md)
 
 
-[op3_action_editor]:[op3_action_editor.md]
-[op3_gui_demo]:[op3_gui_demo.md]
-[op3_offset_tuner_server]:[op3_offset_tuner_server.md]
-[op3_offset_tuner_client]:[op3_offset_tuner_client.md]
-[op3_walking_tuner]:[op3_walking_tuner.md]
+[op3_action_editor]:op3_action_editor.md
+[op3_gui_demo]:op3_gui_demo.md
+[op3_offset_tuner_server]:op3_offset_tuner_server.md
+[op3_offset_tuner_client]:op3_offset_tuner_client.md
+[op3_walking_tuner]:op3_walking_tuner.md

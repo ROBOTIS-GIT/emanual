@@ -8,14 +8,15 @@ The `action_module` controls each joint of ROBOTIS-OP3.
 #### 2.1 How to play
  1. Set the module : Press the `action_module` button.  
  2. Select `Motion` tab of the gui demo program.
-  <img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_gui_action_01.png?raw=true" align="bottom"/>  
- 3. Click the action button to play  
-  <img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_gui_action_02.png?raw=true" align="bottom"/>  
 
+  ![](/assets/images/platform/op3/op3_gui_action_01.png)  
+ 3. Click the action button to play  
+
+  ![](/assets/images/platform/op3/op3_gui_action_02.png)  
 #### 2.2 Creating and editing actions for `action_module`  
   > Reference : [How to create the motions]
 
 [&lt;&lt; Back](OP3-User's-Guide.md)
 
-[op3_action_module]:[op3_action_module.md]
-[How to create the motions]:[op3_action_editor.md]
+[op3_action_module]:op3_action_module.md
+[How to create the motions]:op3_action_editor.md

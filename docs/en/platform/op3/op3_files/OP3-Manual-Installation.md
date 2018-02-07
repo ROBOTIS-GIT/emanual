@@ -79,10 +79,10 @@ This chapter explains how to install software and configure ROBOTIS OP3.
 
 #### 2.3 ROS Installation & Environment Setup
 1. **ROS Installation**
-    > Reference : [ROS Installation](http://wiki.ros.org/kinetic/Installation/Ubuntu)  
+    > Reference : [ROS Installation]  
 
 2. **ROS Environment Setup**   
-    > Reference : [ROS Environment and Network Settings](OP3_Robot_Operating_System#4_setup.md)  
+    > Reference : [ROS Environment and Network Settings]
 
 #### 2.4 Installing additional applications for ROBOTIS ROS Package   
  Prerequisites for ROBOTIS ROS package  
@@ -116,7 +116,7 @@ This chapter explains how to install software and configure ROBOTIS OP3.
         ```   
         $ sudo apt install ros-kinetic-robot-upstart  
         ```  
-    - [Setting for automatic startup](OP3-How-to-kill-the-demo-program#31-start-demo-program-on-start.md)
+    - [Setting for automatic startup]
 
 
 - usb_cam  
@@ -235,3 +235,6 @@ This chapter explains how to install software and configure ROBOTIS OP3.
 [ROBOTIS-OP3-msgs]:[ROBOTIS-OP3-msgs.md]
 [ROBOTIS-OP3-Tools]:[ROBOTIS-OP3-Tools.md]
 [ROBOTIS-OP3-Common]:[ROBOTIS-OP3-Common.md]
+[ROS Installation]:http://wiki.ros.org/kinetic/Installation/Ubuntu
+[ROS Environment and Network Settings]:OP3_Robot_Operating_System#4_setup.md
+[Setting for automatic startup]:OP3-How-to-kill-the-demo-program#31-start-demo-program-on-start.md

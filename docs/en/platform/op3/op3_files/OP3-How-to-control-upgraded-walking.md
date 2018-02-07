@@ -10,8 +10,7 @@ This page explains how to control upgraded walking(online walking).
 
    2. Select `Online Walking` tab of the gui demo program.
 
-  <img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_online_walking_01.png?raw=true" align="bottom"/>   
-
+  ![](/assets/images/platform/op3/op3_online_walking_01.png)
 
  - Controlling walking of ROBOTIS-OP3
     1. Go to initial pose : click `Go to Initial Pose` button
@@ -22,8 +21,7 @@ This page explains how to control upgraded walking(online walking).
 
     4. Send a walking command to `op3_manager`
 
-  <img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_online_walking_02.png?raw=true" align="bottom"/>  
-
+  ![](/assets/images/platform/op3/op3_online_walking_02.png)
 
     > Walking parameters
     >  - DSP ratio : double support phase ratio
@@ -40,5 +38,5 @@ This page explains how to control upgraded walking(online walking).
 [&lt;&lt; Back](OP3-User's-Guide.md)
 
 [Introduction to Humanoid Robotics]:http://www.springer.com/gp/book/9783642545351
-[op3_online_walking_module]:[op3_online_walking_module.md]
-[Online walking using footstep planner]:[OP3-How-to-control-upgraded-walking-using-footstep-planner.md]
+[op3_online_walking_module]:op3_online_walking_module.md
+[Online walking using footstep planner]:OP3-How-to-control-upgraded-walking-using-footstep-planner.md

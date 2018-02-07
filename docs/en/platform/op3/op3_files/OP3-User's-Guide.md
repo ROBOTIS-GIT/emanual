@@ -49,28 +49,28 @@
 <br>[&lt;&lt; Back](Home.md)
 
 [OP3 e-Manual]:http://support.robotis.com/en/techsupport_eng.htm#product/op3_main.htm
-[System Info]:[OP3-System-Info.md]
-[Robot Operating System(ROS)]:[OP3-Robot-Operating-System.md]
-[How to connect]:[OP3-How-to-connect.md]
-[How to kill the demo program]:[OP3-How-to-kill-the-demo-program.md]
-[How to restart the demo progam]:[OP3-How-to-restart-the-demo-program.md]
+[System Info]:OP3-System-Info.md
+[Robot Operating System(ROS)]:OP3-Robot-Operating-System.md
+[How to connect]:OP3-How-to-connect.md
+[How to kill the demo program]:OP3-How-to-kill-the-demo-program.md
+[How to restart the demo progam]:OP3-How-to-restart-the-demo-program.md
 
-[ROBOTIS-OP3]:[ROBOTIS-OP3.md]
-[ROBOTIS-OP3-msgs]:[ROBOTIS-OP3-msgs.md]
-[ROBOTIS-OP3-Demo]:[ROBOTIS-OP3-Demo.md]
-[ROBOTIS-OP3-Common]:[ROBOTIS-OP3-Common.md]
-[ROBOTIS-OP3-Tools]:[ROBOTIS-OP3-Tools.md]
-[How to run OP3's program]:[OP3-How-to-run-OP3's-program.md]
-[How to execute Default Demo]:[OP3-How-to-execute-Default-Demo.md]
-[How to execute GUI program]:[OP3-How-to-execute-GUI-program.md]
-[How to use walking tuner]:[OP3-How-to-use-walking-tuner.md]
-[How to play the motions]:[OP3-How-to-play-the-motions.md]
-[How to control the head joints]:[OP3-How-to-control-the-head-joints.md]
-[How to use offset tuner]:[OP3-How-to-use-offset-tuner.md]
-[How to create the motions]:[op3_action_editor.md]
-[Gazebo Installation]:[OP3-Gazebo-installation.md]
-[How to execute Gazebo simulation]:[OP3-How-to-execute-Gazebo-simulation.md]
-[Assemble Data]:[OP3-Assemble-Data.md]
-[Cover Skin Data]:[OP3-Cover-Skin-Data.md]
-[Manual Installation]:[OP3-Manual-Installation.md]
-[Recovery of ROBOTIS-OP3]:[OP3-Recovery-of-ROBOTIS-OP3.md]
+[ROBOTIS-OP3]:ROBOTIS-OP3.md
+[ROBOTIS-OP3-msgs]:ROBOTIS-OP3-msgs.md
+[ROBOTIS-OP3-Demo]:ROBOTIS-OP3-Demo.md
+[ROBOTIS-OP3-Common]:ROBOTIS-OP3-Common.md
+[ROBOTIS-OP3-Tools]:ROBOTIS-OP3-Tools.md
+[How to run OP3's program]:OP3-How-to-run-OP3's-program.md
+[How to execute Default Demo]:OP3-How-to-execute-Default-Demo.md
+[How to execute GUI program]:OP3-How-to-execute-GUI-program.md
+[How to use walking tuner]:OP3-How-to-use-walking-tuner.md
+[How to play the motions]:OP3-How-to-play-the-motions.md
+[How to control the head joints]:OP3-How-to-control-the-head-joints.md
+[How to use offset tuner]:OP3-How-to-use-offset-tuner.md
+[How to create the motions]:op3_action_editor.md
+[Gazebo Installation]:OP3-Gazebo-installation.md
+[How to execute Gazebo simulation]:OP3-How-to-execute-Gazebo-simulation.md
+[Assemble Data]:OP3-Assemble-Data.md
+[Cover Skin Data]:OP3-Cover-Skin-Data.md
+[Manual Installation]:OP3-Manual-Installation.md
+[Recovery of ROBOTIS-OP3]:OP3-Recovery-of-ROBOTIS-OP3.md

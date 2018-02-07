@@ -8,11 +8,11 @@ The GUI program provides various functions for ROBOTIS-OP3.
 
 > Reference : [op3_gui_demo]
 
-<img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_gui_diagram.png?raw=true" align="bottom" width="70%"/>
+![](/assets/images/platform/op3/op3_gui_diagram.png)
 
 ### 2. Getting started
 #### 2.1 Download & Build
- > Reference : [Installing ROBOTIS ROS Package](OP3_Recovery_of_ROBOTIS_OP3#24_installation_robotis_ros_packages.md)  
+ > Reference : [Installing ROBOTIS ROS Package]
 
 #### 2.2 Run the program
 There are three options to run the GUI program.
@@ -28,16 +28,15 @@ $ roslaunch op3_gui_demo op3_demo.launch
   > Reference : [How to run op3_mamager]
 
 #### 2.3 Execution result
-<img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_gui.png?raw=true" align="bottom"/>
 
-
+![](/assets/images/platform/op3/op3_gui.png)
 
 
 ### 3. Description
 #### 3.1 How to take the initial pose of ROBOTIS-OP3
 Clicking the button surrounded by the red dashed rectangle will let the `base_module` control each joint of ROBOTIS-OP3 and take the initial posture.
 
-<img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_gui_initial_pose.png?raw=true" align="bottom"/>
+![](/assets/images/platform/op3/op3_gui_initial_pose.png)
 
 #### 3.2 How to set the Module
 - Follow the below procedure to configure modules that control corresponding joint of ROBOTIS-OP3.  
@@ -49,12 +48,11 @@ Clicking the button surrounded by the red dashed rectangle will let the `base_mo
 
   2. Confirm from the joint status table below the module buttons that corresponding joints are set correctly.  
 
-    <img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_gui_set_module.png?raw=true" align="bottom"/>  
+  ![](/assets/images/platform/op3/op3_gui_set_module.png)
 
 - `Get Mode` button will report which module is assigned for each joint.  
 
-  <img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_gui_get_module.png?raw=true" align="bottom"/>  
-
+  ![](/assets/images/platform/op3/op3_gui_get_module.png)
 #### 3.3 [How to use the Walking Tuner]
 This section explains how to configure and tune walking parameters.
 Saved parameters are used in the basic demo.  
@@ -74,9 +72,10 @@ This section explains how to control upgraded walking(download/run/test).
 
 [&lt;&lt; Back](OP3-User's-Guide.md)
 
-[op3_gui_demo]:[op3_gui_demo.md]
-[How to run op3_mamager]:[OP3-How-to-run-OP3's-program.md]
-[How to use the Walking Tuner]:[OP3-How-to-use-walking-tuner.md]
-[How to control head joints]:[OP3-How-to-control-the-head-joints.md]
-[How to play the motions]:[OP3-How-to-play-the-motions.md]
-[How to control upgraded walking(online walking)]:[OP3-How-to-control-upgraded-walking.md]
+[op3_gui_demo]:op3_gui_demo.md
+[How to run op3_mamager]:OP3-How-to-run-OP3's-program.md
+[How to use the Walking Tuner]:OP3-How-to-use-walking-tuner.md
+[How to control head joints]:OP3-How-to-control-the-head-joints.md
+[How to play the motions]:OP3-How-to-play-the-motions.md
+[How to control upgraded walking(online walking)]:OP3-How-to-control-upgraded-walking.md
+[Installing ROBOTIS ROS Package]:OP3_Recovery_of_ROBOTIS_OP3#24_installation_robotis_ros_packages.md  

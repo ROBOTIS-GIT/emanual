@@ -72,35 +72,35 @@ sidebar:
 
 
 
-[ROBOTIS-OP3 Modules]:[ROBOTIS-OP3-Modules.md]
-[op3_action_module]:[op3_action_module.md]
-[op3_base_module]:[op3_base_module.md]
-[op3_head_control_module]:[op3_head_control_module.md]
-[op3_walking_module]:[op3_walking_module.md]
-[op3_online_walking_module]:[op3_online_walking_module.md]
-[open_cr_module]:[open_cr_module.md]
-[op3_manager]:[op3_manager.md]
-[op3_balance_control]:[op3_balance_control.md]
-[op3_localization]:[op3_localization.md]
-[op3_optimization]:[op3_optimization.md]
+[ROBOTIS-OP3 Modules]:ROBOTIS-OP3-Modules.md
+[op3_action_module]:op3_action_module.md
+[op3_base_module]:op3_base_module.md
+[op3_head_control_module]:op3_head_control_module.md
+[op3_walking_module]:op3_walking_module.md
+[op3_online_walking_module]:op3_online_walking_module.md
+[open_cr_module]:open_cr_module.md
+[op3_manager]:op3_manager.md
+[op3_balance_control]:op3_balance_control.md
+[op3_localization]:op3_localization.md
+[op3_optimization]:op3_optimization.md
 
-[op3_action_module_msgs]:[op3_action_module_msgs.md]
-[op3_walking_module_msgs]:[op3_walking_module_msgs.md]
-[op3_online_walking_module_msgs]:[op3_online_walking_module_msgs.md]
-[op3_offset_tuner_msgs]:[op3_offset_tuner_msgs.md]
+[op3_action_module_msgs]:op3_action_module_msgs.md
+[op3_walking_module_msgs]:op3_walking_module_msgs.md
+[op3_online_walking_module_msgs]:op3_online_walking_module_msgs.md
+[op3_offset_tuner_msgs]:op3_offset_tuner_msgs.md
 
 
 
-[ball_detector]:[op3_ball_detector.md]
-[op3_demo]:[op3_demo.md]
+[ball_detector]:op3_ball_detector.md
+[op3_demo]:op3_demo.md
 
 
 [robotis_op3_description]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/robotis_op3_description
 [robotis_op3_gazebo]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/robotis_op3_gazebo
 
 
-[op3_action_editor]:[op3_action_editor.md]
-[op3_gui_demo]:[op3_gui_demo.md]
-[op3_offset_tuner_server]:[op3_offset_tuner_server.md]
-[op3_offset_tuner_client]:[op3_offset_tuner_client.md]
-[op3_walking_tuner]:[op3_walking_tuner.md]
+[op3_action_editor]:op3_action_editor.md
+[op3_gui_demo]:op3_gui_demo.md
+[op3_offset_tuner_server]:op3_offset_tuner_server.md
+[op3_offset_tuner_client]:op3_offset_tuner_client.md
+[op3_walking_tuner]:op3_walking_tuner.md

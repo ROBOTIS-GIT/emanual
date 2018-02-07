@@ -4,7 +4,8 @@ This chapter explains installation and configuration of Robot Operating System(R
 
 
 ### 2. [What is ROS?]
-<a href="http://www.ros.org/about-ros"> <img src="http://www.ros.org/wp-content/uploads/2013/10/rosorg-logo1.png?raw=true" height="20%"/> </a>
+<a href="http://www.ros.org/about-ros">  ![](/assets/images/platform/op3/ros_image.png) </a>
+
 
 ### 3. How to install ROS
  - version : Kinetic  
@@ -76,7 +77,7 @@ This chapter explains installation and configuration of Robot Operating System(R
  2. robot_upstart  
     - This ROS Package is used to automatically execute ROS on startup.  
     - Link : [http://wiki.ros.org/robot_upstart]
-    - [How to setup auto start](OP3_How_to_kill_the_demo_program#31_start_demo_program_on_start.md)  
+    - [How to setup auto start]
 
  3. usb_cam  
     - USB Camera  
@@ -98,13 +99,15 @@ This chapter explains installation and configuration of Robot Operating System(R
 [ROBOTIS-Framerowk]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/ROBOTIS-Framework-Documents
 [ROBOTIS-Framerowk-msgs]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/ROBOTIS-Framework-Documents
 [ROBOTIS-Math]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/robotis_math
-[ROBOTIS-OP3]:[ROBOTIS-OP3.md]
-[ROBOTIS-OP3-Common]:[ROBOTIS-OP3-Common.md]
-[ROBOTIS-OP3-Demo]:[ROBOTIS-OP3-Demo.md]
-[ROBOTIS-OP3-msgs]: [ROBOTIS-OP3-msgs.md]
-[ROBOTIS-OP3-Tools]:[ROBOTIS-OP3-Tools.md]
+[ROBOTIS-OP3]:ROBOTIS-OP3.md
+[ROBOTIS-OP3-Common]:ROBOTIS-OP3-Common.md
+[ROBOTIS-OP3-Demo]:ROBOTIS-OP3-Demo.md
+[ROBOTIS-OP3-msgs]: ROBOTIS-OP3-msgs.md
+[ROBOTIS-OP3-Tools]:ROBOTIS-OP3-Tools.md
 [ROBOTIS-Utility]:
 [https://github.com/ROBOTIS-GIT/face_detection]:https://github.com/ROBOTIS-GIT/face_detection
 [std_msgs/Int32MultiArray]:/docs/en/popup/std_msgs_Int32MultiArray_msg/
 [http://wiki.ros.org/robot_upstart]:http://wiki.ros.org/robot_upstart  
 [http://wiki.ros.org/usb_cam]:http://wiki.ros.org/usb_cam  
+
+[How to setup auto start]:OP3_How_to_kill_the_demo_program#31_start_demo_program_on_start.md

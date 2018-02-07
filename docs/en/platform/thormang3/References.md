@@ -112,7 +112,7 @@ The following table shows the network settings after the reset.
 3. Sensors
   - 6-axis force-torque sensor([ATi Mini58-SI-2800-120])
 
-    ![](/assets/images/platform/thormang3/thormang3_086.jpg)
+      ![](/assets/images/platform/thormang3/thormang3_086.jpg)
 
     - IMU sensor([MicroSrain 3DM-GX4-25])
 
@@ -134,7 +134,7 @@ The following table shows the network settings after the reset.
   - LiPo 22.2V, 22000mAh x 1EA([http://www.maxamps.com/proddetail.php?prod=Lipo-22000-222-Pack])  
     xt60 plug
 
-    ![](/assets/images/platform/thormang3/thormang3_091.jpg)
+      ![](/assets/images/platform/thormang3/thormang3_091.jpg)
 
     - LiPo 18.5V, 11000mAh x 1EA([http://www.maxamps.com/proddetail.php?prod=Lipo-11000-185-Pack])  
       no plug-12awg
@@ -145,7 +145,7 @@ The following table shows the network settings after the reset.
   [http://hitecrcd.com/products/chargers/dcdc-chargers/h4-dcdc-four-port-multi-charger/product]
   [http://hitecrcd.com/products/chargers/epowerbox-30-amp-power-supply/product]
  
-  ![](/assets/images/platform/thormang3/thormang3_093.jpg)
+      ![](/assets/images/platform/thormang3/thormang3_093.jpg)
 
 ## [ID Map](#id-map)
 

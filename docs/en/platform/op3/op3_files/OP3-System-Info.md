@@ -1,6 +1,7 @@
 ### 1. Overview
 System Configuration of ROBOTIS-OP3  
-<img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_system_configuration.png?raw=true" height="30%"/>
+
+![](/assets/images/platform/op3/op3_system_configuration.png)
 
 ### 2. Main Controller(PC)
  - Specification  
@@ -18,7 +19,7 @@ System Configuration of ROBOTIS-OP3
 
 ### 3. Camera
 
-<img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/hd-pro-webcam-c920-feature-image.png?raw=true" align="bottom" width="30%"/>   
+![](/assets/images/platform/op3/hd-pro-webcam-c920-feature-image.png)
 
   * Model  
     Logitech C920
@@ -52,7 +53,7 @@ System Configuration of ROBOTIS-OP3
 [Intel NUC]:https://www.intel.com/content/www/us/en/products/boards-kits/nuc/kits.html
 [User Guides]:https://www.linuxmint.com/documentation.php
 [What is ROS?]:http://www.ros.org/about-ros/
-[Robot Operating System(ROS)]:[OP3-Robot-Operating-System.md]
+[Robot Operating System(ROS)]:OP3-Robot-Operating-System.md
 [Logitech support specification]:http://support.logitech.com/en_ca/product/hd-pro-webcam-c920/specs
 [OpenCR H/W Specification]:https://github.com/ROBOTIS-GIT/OpenCR/wiki/Hardware_Specification  
 [e-Manual]:http://support.robotis.com/en/techsupport_eng.htm#product/actuator/dynamixel_x/xm_series/xm430-w350.htm  

@@ -5,7 +5,7 @@ This chapter explains how to run the ROBOTIS-OP3 offset tuner program.
 > Reference : [op3_offset_tuner_server]  
 > Reference2 : [op3_offset_tuner_client]
 
-<img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_offset_tuner_diagram.png?raw=true" align="bottom" width="100%"/>  
+![](/assets/images/platform/op3/op3_offset_tuner_diagram.png)  
 
 ### 2. Run Offset Tuner Program   
 
@@ -45,9 +45,7 @@ $ roslaunch op3_offset_tuner_client op3_offset_tuner.launch
  - `joint_data.yaml` : GUI menu configuration file  
 
 ### 3. How to use Offset tuner client GUI program  
-<img
-src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-THORMANG3/How%20to%20use%20offset%20tuner_2.png?raw=true" align="bottom" width="100%"/>
-
+![](/assets/images/platform/op3/How to use offset tuner_2.png)  
 
 [&lt;&lt; Back](OP3-User's-Guide.md)
 

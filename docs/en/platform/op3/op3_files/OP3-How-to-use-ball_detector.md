@@ -21,16 +21,15 @@ $ roslaunch op3_demo demo.launch
     - Open `Dynamic Reconfigure`   
     Select `Plugins -> Configuration -> Dynamic Reconfigure`
 
-   <img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/ball_detector_node_01.png?raw=true"/>   
-
+   ![](/assets/images/platform/op3/ball_detector_node_01.png)  
     - Open `Image View`  
     Select `Plugins -> Visualization -> Image View`  
 
-   <img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/ball_detector_node_02.png?raw=true"/>  
-
+   ![](/assets/images/platform/op3/ball_detector_node_02.png)  
 2. Parameters    
 The description for each parameter will pop up when hovering the mouse cursor over each parameter.  
-    <img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/ball_detector_node_03.png?raw=true"/>   
+
+    ![](/assets/images/platform/op3/ball_detector_node_03.png)   
     - gaussian_blur_size: Size of Gaussian Blur Kernel (odd value)  
     - gaussian_blur_sigma: Std deviation of Gaussian Blur  
     - canny_edge_th: Threshold of the edge detector  
@@ -65,11 +64,10 @@ The description for each parameter will pop up when hovering the mouse cursor ov
 
         - If you check the ‘use_second_filter’, you can get an image which is detected with two HSV variations.   
 
-      <img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/ball_detector_node_04.png?raw=true"/>  
-
+      ![](/assets/images/platform/op3/ball_detector_node_04.png)  
         - If you check the ’debug_image’ you can check the HSV filtered, binary image.   
 
-      <img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/ball_detector_node_05.png?raw=true"/>  
+      ![](/assets/images/platform/op3/ball_detector_node_05.png)  
 
         - After you set the HSV range, you could calibrate the threshold value to detect the edge better.  
 

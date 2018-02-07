@@ -13,8 +13,6 @@ sidebar:
 
 <div style="counter-reset: h1 4"></div>
 
-
-
 # [Firmware Recovery](#firmware-recovery)
 
 When Dynamixel detection fails ensure is properly wired. If problems persists **restore Dynamixel firmware** (shown below).

@@ -2,12 +2,12 @@
 This package defines Messages and Service that are used in the [robotis_controller].
 
 ### 2. ROS Message Types
-* [JointCtrlModule.msg]
-* [StatusMsg.msg]
-* [SyncWriteItem.msg]
+* [JointCtrlModule.msg]{: .popup}
+* [StatusMsg.msg]{: .popup}
+* [SyncWriteItem.msg]{: .popup}
 
 ### 3. ROS Service Types
-* [GetJointModule.srv]
+* [GetJointModule.srv]{: .popup}
 
 
 <br>[&lt;&lt; Back](ROBOTIS_Framework.md)

@@ -29,11 +29,10 @@ $ sudo bash
 When `op3_manager` runs, robot moves to initial posture.  
 
 1. execution result screen  
-<img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_manager_01.png?raw=true" width="100%" />  
+![](/assets/images/platform/op3/op3_manager_01.png)  
 
 2. execution result of ROBOTIS-OP3  
-<img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_manager_02.png?raw=true" width="50%" />  
-
+![](/assets/images/platform/op3/op3_manager_02.png)  
 
 
 ### 3. Description
@@ -164,7 +163,7 @@ Offset file contains offset angles of each joint(radian) to correct distortion a
 
 [&lt;&lt; Back](OP3-User's-Guide.md)
 
-[op3_manager]:[op3_manager.md]
+[op3_manager]:op3_manager.md
 [Robot Information file(.robot)]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/Creating-new-robot-manager#41-robot-information-file-robot
 [Joint initialize file(.yaml)]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/Creating-new-robot-manager#42-joint-initialize-file-yaml
-[How to use offset tuner]:[OP3-How-to-use-offset-tuner.md]
+[How to use offset tuner]:OP3-How-to-use-offset-tuner.md

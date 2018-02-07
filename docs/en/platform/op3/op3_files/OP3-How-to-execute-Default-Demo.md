@@ -5,7 +5,7 @@ There are three available demos; playing soccer, vision and sequence of various 
 
 ### 2. Getting started
 #### 2.1 Download & Build
- > Reference : [Installing ROBOTIS ROS Package](OP3_Recovery_of_ROBOTIS_OP3#24_installation_robotis_ros_packages.md)  
+ > Reference : [Installing ROBOTIS ROS Package]
 
 #### 2.2 Run
 1. Auto Start  
@@ -117,3 +117,4 @@ Press the mode button thrice from demonstration ready mode to switch to interact
 [op3_demo]:[op3_demo.md]
 [How to use walking tuner]:[OP3-How-to-use-walking-tuner.md]
 [Face Tracker - ROS Package]:https://github.com/ROBOTIS-GIT/face_detection
+[Installing ROBOTIS ROS Package]:OP3_Recovery_of_ROBOTIS_OP3#24_installation_robotis_ros_packages.md  

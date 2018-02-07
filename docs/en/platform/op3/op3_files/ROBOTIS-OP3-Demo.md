@@ -4,5 +4,5 @@
 
 [&lt;&lt; Back](OP3-User's-Guide.md)
 
-[ball_detector]:[op3_ball_detector.md]
-[op3_demo]:[op3_demo.md]
+[ball_detector]:op3_ball_detector.md
+[op3_demo]:op3_demo.md
