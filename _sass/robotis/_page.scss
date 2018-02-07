@@ -148,6 +148,10 @@ html {
     }
     
     + div {
+      iframe {
+        margin-left: 1em;
+        margin-top: 0.1em;
+      }
       p, div {
         margin: 0.5em 0.5em 0 1em;
         word-wrap: break-word;
@@ -171,9 +175,6 @@ html {
         p {
           margin : 0 0.5em;
         }
-      }
-      div.fluid-width-video-wrapper {
-        margin-left: 0;
       }
     }
   }
@@ -190,6 +191,10 @@ html {
     }
 
     + div {
+      iframe {
+        margin-left: 1em;
+        margin-top: 0.1em;
+      }
       p, div {
         word-wrap: break-word;
         margin: 0.5em 0.5em 0 1em;
@@ -214,9 +219,6 @@ html {
           margin : 0 0.5em;
         }
       }
-      div.fluid-width-video-wrapper {
-        margin-left: 0;
-      }
     }
   }
 
@@ -232,6 +234,10 @@ html {
     }
 
     + div {
+      iframe {
+        margin-left: 2.3em;
+        margin-top: 0.1em;
+      }
       p, div {
         word-wrap: break-word;
         margin: 0.5em 0.5em 0 2.3em;
@@ -256,9 +262,6 @@ html {
           margin : 0 0.5em;
         }
       }
-      div.fluid-width-video-wrapper {
-        margin-left: 0;
-      }
     }
   }
 
@@ -273,6 +276,10 @@ html {
     }
 
     + div {
+      iframe {
+        margin-left: 3.5em;
+        margin-top: 0.1em;
+      }
       p, div {
         word-wrap: break-word;
         margin: 0.5em 0.5em 0 3.5em;
@@ -297,9 +304,6 @@ html {
           margin : 0 0.5em;
         }
       }
-      div.fluid-width-video-wrapper {
-        margin-left: 0;
-      }
     }
   }
 
@@ -309,6 +313,10 @@ html {
     font-style: italic;
     
     + div {
+      iframe {
+        margin-left: 4em;
+        margin-top: 0.1em;
+      }
       p, div {
         word-wrap: break-word;
         margin: 0.5em 0.5em 0 4em;
@@ -333,9 +341,6 @@ html {
           margin : 0 0.5em;
         }
       }
-      div.fluid-width-video-wrapper {
-        margin-left: 0;
-      }
     }
   }
 
@@ -344,6 +349,10 @@ html {
     font-size: $type-size-6;
     
     + div {
+      iframe {
+        margin-left: 6em;
+        margin-top: 0.1em;
+      }
       p, div {
         word-wrap: break-word;
         margin: 0.5em 0.5em 0 6em;
@@ -367,9 +376,6 @@ html {
         p {
           margin : 0 0.5em;
         }
-      }
-      div.fluid-width-video-wrapper {
-        margin-left: 0;
       }
     }
   }  

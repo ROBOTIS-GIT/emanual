@@ -18,7 +18,7 @@ Motion Module is used in the form of lib in the manager.
 
 ### 3. ROS API  
 #### 3.1 Subscribed Topics  
-`/robotis/action/page_num`([std_msgs/Int32]{: .popup})  
+`/robotis/action/page_num`([std_msgs/Int32]{: .popup2})  
 &emsp;&emsp; The page number of action to run in the Module.  
 &emsp;&emsp; 1 ~ 255 : play action  
 &emsp;&emsp; -1 : stop action  
@@ -42,6 +42,5 @@ Motion Module is used in the form of lib in the manager.
 
 [std_msgs/Int32]: /docs/en/popup/std_msgs_int32_message/
 
-[robotis_controller_msgs/StatusMsg]:/docs/en/popup/StatusMsg.msg/
-[op3_action_module_msgs/IsRunning]:/docs/en/popup/op3_IsRunning.srv/
-[&lt;&lt; Back]:[ROBOTIS-OP3-Modules.md]
+[robotis_controller_msgs/StatusMsg]: /docs/en/popup/StatusMsg.msg/
+[op3_action_module_msgs/IsRunning]: /docs/en/popup/op3_IsRunning.srv/
