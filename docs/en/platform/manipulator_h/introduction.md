@@ -322,7 +322,7 @@ The USB2Dynamixel sends ArmSDK commands to the Manipulator. Connect the USB2Dyna
 
 - Preparation Before using Robotis Manipulator SDK.  
   The following are pre-requisites for the ArmSDK.  
-  Eigen Package(http://eigen.tuxfamily.org, version 3.0.6 or Later)
+  Eigen Package([http://eigen.tuxfamily.org], version 3.0.6 or Later)
 
 - Installation Package
   - Download and unzip Eigen Package.
@@ -2243,3 +2243,5 @@ Total Mass : 5,551g
   - I1 : 1.9687159e+05
   - I2 : 4.0070622e+05
   - I3 : 4.7548066e+05
+
+[http://eigen.tuxfamily.org]:http://eigen.tuxfamily.org
