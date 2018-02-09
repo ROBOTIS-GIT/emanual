@@ -23,10 +23,8 @@ sidebar:
   - [TurtleBot3 Applications](https://github.com/ROBOTIS-GIT/turtlebot3_applications)
   - [TurtleBot3 Messages](https://github.com/ROBOTIS-GIT/turtlebot3_msgs)
 
-
 + OpenCR1.0 Firmware
-  - [TurtleBot3 Burger, Waffle and Friends](https://github.com/ROBOTIS-GIT/OpenCR)
-
+  - [TurtleBot3 Burger, Waffle. Waffle Pi and Friends](https://github.com/ROBOTIS-GIT/OpenCR)
 
 + Reference Software for TurtleBot3
   - [TurtleBot](https://github.com/turtlebot)
@@ -36,24 +34,28 @@ sidebar:
 
 ## [Hardware](#hardware)
 
-+ [Circuit and PCB Gerber]
-  - [OpenCR](https://github.com/ROBOTIS-GIT/OpenCR-Hardware)
++ Circuit and PCB Gerber
+  - [OpenCR1.0](https://github.com/ROBOTIS-GIT/OpenCR-Hardware)
 
 + TurtleBot3 Hardware
-  - [TurtleBot3 Burger Model](https://goo.gl/SZRdMd)
-  - [TurtleBot3 Waffle Model](https://goo.gl/wCDvVI)
-  - [TurtleBot3 OpenManipulator Chain Model](https://goo.gl/xgxh2G)
-  - [TurtleBot3 Segway Model](https://goo.gl/rbmqLB)
-  - [TurtleBot3 Conveyor Model](https://goo.gl/HSSqp7)
-  - [TurtleBot3 Monster Model](https://goo.gl/oW8UXY)
-  - [TurtleBot3 Tank Model](https://goo.gl/M722Ff)
-  - [TurtleBot3 Omni Model](https://goo.gl/2LBJik)
-  - [TurtleBot3 Mecanum Model](https://goo.gl/3aTdg9)
-  - [TurtleBot3 Bike Model](https://goo.gl/JMntH1)
-  - [TurtleBot3 Road Train Model](https://goo.gl/fsH5L2)
-  - [TurtleBot3 Real TurtleBot Model](https://goo.gl/wtcHxE)
-  - [TurtleBot3 Carrier Model](https://goo.gl/bXzBTJ)
+  - [TurtleBot3 Burger Model](http://www.robotis.com/service/download.php?no=676)
+  - [TurtleBot3 Waffle Model](http://www.robotis.com/service/download.php?no=677)
+  - [TurtleBot3 Waffle Pi Model](http://www.robotis.com/service/download.php?no=678)
+
++ TurtleBot3 Frineds Hardware  
+  - [TurtleBot3 OpenManipulator Chain Model](http://www.robotis.com/service/download.php?no=679)
+  - [TurtleBot3 Segway Model](http://www.robotis.com/service/download.php?no=680)
+  - [TurtleBot3 Conveyor Model](http://www.robotis.com/service/download.php?no=681)
+  - [TurtleBot3 Monster Model](http://www.robotis.com/service/download.php?no=682)
+  - [TurtleBot3 Tank Model](http://www.robotis.com/service/download.php?no=683)
+  - [TurtleBot3 Omni Model](http://www.robotis.com/service/download.php?no=684)
+  - [TurtleBot3 Mecanum Model](http://www.robotis.com/service/download.php?no=685)
+  - [TurtleBot3 Bike Model](http://www.robotis.com/service/download.php?no=686)
+  - [TurtleBot3 Road Train Model](http://www.robotis.com/service/download.php?no=687)
+  - [TurtleBot3 Real TurtleBot Model](http://www.robotis.com/service/download.php?no=688)
+  - [TurtleBot3 Carrier Model](http://www.robotis.com/service/download.php?no=689)
 
 + OpenManiapulator Hardware
-  - [OpenManiapulator Chain Model](https://goo.gl/Wv3KON)
-  - [OpenManiapulator SCARA Model](https://goo.gl/oVsK8m)
+  - [OpenManiapulator Chain Model](http://www.robotis.com/service/download.php?no=690)
+  - [OpenManiapulator SCARA Model](http://www.robotis.com/service/download.php?no=691)
+  - [OpenManiapulator SCARA Model](http://www.robotis.com/service/download.php?no=692)
