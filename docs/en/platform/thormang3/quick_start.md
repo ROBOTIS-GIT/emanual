@@ -223,7 +223,7 @@ ROBOTIS recommends users to connect with THROMANG3 via SSH client.
       - Connect the DC power supply to the battery charger.
       - Insert the AC plug of the DC power supply into the power socket.
 
-      ![](/assets/images/platform/thormang3/thormang3_025.jpg)
+    ![](/assets/images/platform/thormang3/thormang3_025.jpg)
 
 2. Power on and check the settings. See the below images. The different settings to match the settings by pressing the button.
 
@@ -236,7 +236,7 @@ ROBOTIS recommends users to connect with THROMANG3 via SSH client.
 4. Connect the yellow male charging connector to the female connector of the battery.  
   Connect the battery’s white balance connector to the cell balance connector(7 pin connector).
 
-      ![](/assets/images/platform/thormang3/thormang3_028.jpg)
+    ![](/assets/images/platform/thormang3/thormang3_028.jpg)
 
 5. Select channel A. Then, press and hold the START button when the cursor is on the “Charge” option. When the screen changes, press ENTER to start charging battery if configuration is fine.
 

@@ -15,7 +15,7 @@ sidebar:
 
 # [Tutorials](#tutorials)
 
-## [How to run OP3's program](#how-to-run-op3's-program)
+## [How to run OP3's program](#how-to-run-op3s-program)
 
 ### Overview   
 This chapter explains how to run the `op3_manager` that controls ROBOTIS-OP3.  
@@ -31,7 +31,7 @@ The `op3_manager` cooperates with other programs such as `op3_demo` and `op3_gui
 
 ### Getting started
 #### Download & Build
- > Reference : [Installing ROBOTIS ROS Package](OP3_Recovery_of_ROBOTIS_OP3#24_installation_robotis_ros_packages.md)  
+ > Reference : [Installing ROBOTIS ROS Package]
 
 
 #### Run
@@ -48,11 +48,11 @@ $ sudo bash
 When `op3_manager` runs, robot moves to initial posture.  
 
 1. execution result screen  
-<img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_manager_01.png?raw=true" width="100%" />  
 
+  ![](/assets/images/platform/op3/op3_manager_01.png)
 2. execution result of ROBOTIS-OP3  
-<img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_manager_02.png?raw=true" width="50%" />  
 
+  ![](/assets/images/platform/op3/op3_manager_02.png)
 
 
 ### Description
@@ -190,7 +190,7 @@ There are three available demos; playing soccer, vision and sequence of various 
 
 ### Getting started
 #### Download & Build
- > Reference : [Installing ROBOTIS ROS Package](OP3_Recovery_of_ROBOTIS_OP3#24_installation_robotis_ros_packages.md)  
+ > Reference : [Installing ROBOTIS ROS Package]
 
 #### Run
 1. Auto Start  
@@ -284,7 +284,7 @@ Press the mode button thrice from demonstration ready mode to switch to interact
     # play list
     default: [4, 41, 24, 23, 15, 1, 54, 27, 38]
     ```
-    
+
     - action_and_sound : Combined information of page number of action file and mp3 file path to play with  
       `action number : mp3 file path`  
 
@@ -308,23 +308,23 @@ Activate `walking_module` on the lower body part of ROBOTIS-OP3 for walking test
 Confirm that the joints used for walking are set as `walking_module`, then move to `Walking` tab.
 (When the walking module is activated, ROBOTIS-OP3 will take the initial posture for walking.)    
 
-<img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_gui_walking_tuner_01.png?raw=true" align="bottom" width="70%"/>  
+![](/assets/images/platform/op3/op3_gui_walking_tuner_01.png)
 
-<img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_gui_walking_tuner_02.png?raw=true" align="bottom" width="70%"/>  
-
+![](/assets/images/platform/op3/op3_gui_walking_tuner_02.png)
 
 ##### Start / Stop Walking  
  1. `start` button : Initiate walking  
  2. `stop` button : Stop walking. When stopped, walking related parameters will be reset.  
 
-<img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_gui_walking_tuner_03.png?raw=true" align="bottom" width="70%"/>  
+![](/assets/images/platform/op3/op3_gui_walking_tuner_03.png)
 
 ##### Apply Parameters
  1. `Refresh` button : Acquire all parameter currently applied on `walking_module`.  
  2. `Save` button : Save all parameter currently applied on `walking_module` as default parameter and use it for other program such as `op3_demo`.  
  3. `Apply` button : Apply modified parameters from the GUI to `walking_module`.  
 
-<img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_gui_walking_tuner_04.png?raw=true" align="bottom" width="70%"/>  
+![](/assets/images/platform/op3/op3_gui_walking_tuner_04.png)
+
 
 ### [How to play the motions](#how-to-play-the-motions)
 
@@ -338,10 +338,11 @@ The `action_module` controls each joint of ROBOTIS-OP3.
 ##### How to play
  1. Set the module : Press the `action_module` button.  
  2. Select `Motion` tab of the gui demo program.
-  <img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_gui_action_01.png?raw=true" align="bottom"/>  
- 3. Click the action button to play  
-  <img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_gui_action_02.png?raw=true" align="bottom"/>  
 
+  ![](/assets/images/platform/op3/op3_gui_action_01.png)
+ 3. Click the action button to play  
+
+  ![](/assets/images/platform/op3/op3_gui_action_02.png)
 ##### Creating and editing actions for `action_module`  
   > Reference : [How to create the motions]
 
@@ -357,17 +358,16 @@ Operator can get different camera view angle by controlling head joints.
 ##### Setting the Module : Click `head_control_module` button  
 
 ##### Select `Head Control` tab of the gui demo program.  
-<img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_gui_control_head_01.png?raw=true" align="bottom"/>  
 
+  ![](/assets/images/platform/op3/op3_gui_control_head_01.png)
 ##### Change the value for the specific joint.  
  1. Use the slide bar to control the head joint.  
  2. Enter desired values in the text box to control the head joint.  
  3. Bring the head joint to center position.  
 
-<img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_gui_control_head_02.png?raw=true" align="bottom"/>  
+  ![](/assets/images/platform/op3/op3_gui_control_head_02.png)
 
-<img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_gui_control_head_03.png?raw=true" align="bottom"/>    
-
+  ![](/assets/images/platform/op3/op3_gui_control_head_03.png)
 
 ### [How to control upgraded walking(online walking)](#how-to-control-upgraded-walkingonline-walking)
 
@@ -385,8 +385,8 @@ This page explains how to control upgraded walking(online walking).
 
    2. Select `Online Walking` tab of the gui demo program.
 
-  <img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_online_walking_01.png?raw=true" align="bottom"/>   
 
+  ![](/assets/images/platform/op3/op3_online_walking_01.png)
 
  - Controlling walking of ROBOTIS-OP3
     1. Go to initial pose : click `Go to Initial Pose` button
@@ -397,8 +397,8 @@ This page explains how to control upgraded walking(online walking).
 
     4. Send a walking command to `op3_manager`
 
-  <img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_online_walking_02.png?raw=true" align="bottom"/>  
 
+  ![](/assets/images/platform/op3/op3_online_walking_02.png)
 
     > Walking parameters
     >  - DSP ratio : double support phase ratio
@@ -421,7 +421,8 @@ This chapter explains how to run the ROBOTIS-OP3 offset tuner program.
 > Reference : [op3_offset_tuner_server]  
 > Reference2 : [op3_offset_tuner_client]
 
-<img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_offset_tuner_diagram.png?raw=true" align="bottom" width="100%"/>  
+
+  ![](/assets/images/platform/op3/op3_offset_tuner_diagram.png)
 
 ### Run Offset Tuner Program   
 
@@ -461,7 +462,8 @@ $ roslaunch op3_offset_tuner_client op3_offset_tuner.launch
  - `joint_data.yaml` : GUI menu configuration file  
 
 ### 3. How to use Offset tuner client GUI program  
-<img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-THORMANG3/How%20to%20use%20offset%20tuner_2.png?raw=true" align="bottom" width="100%"/>
+
+  ![](/assets/images/platform/op3/How to use offset tuner_2.png)
 
 ## [How to create the motions](#how-to-create-the-motions)
 
@@ -477,7 +479,7 @@ The action file contains 256 pages. Each page can store up to 7 stages (or steps
 
 ### Getting started
 #### Download & Build
- > Reference : [Installing ROBOTIS ROS Package](OP3_Recovery_of_ROBOTIS_OP3#24_installation_robotis_ros_packages.md)  
+ > Reference : [Installing ROBOTIS ROS Package]
 
 #### Run
 Execute the launch file.  
@@ -488,7 +490,8 @@ $ roslaunch op3_action_editor op3_action_editor.launch
 ```
 
 #### UI
-<img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-THORMANG3/thormang3_action_editor_tui.jpg?raw=true" width="100%" />  
+
+  ![](/assets/images/platform/op3/thormang3_action_editor_tui.jpg)
 
 **Page number**: Page number is the listed page number. If user wants to create a new action poses, user can use any empty page.  
 **Page title**: ROBOTIS recommends user to use a page title when creating a new action on an empty page.  
@@ -528,7 +531,8 @@ The below table shows the contents of the default action file.
 
 #### Basic Command of Action Editor
 After typing "help", the commend list will appear as shown below.  
-<img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-THORMANG3/thormang3_action_editor_tui_command_list.jpg?raw=true" width="90%" />  
+
+  ![](/assets/images/platform/op3/thormang3_action_editor_tui_command_list.jpg)
 
 **exit**: exits the program.  
 **re**: refreshes the screen.  
@@ -555,27 +559,32 @@ After typing "help", the commend list will appear as shown below.
 1) Run the op3_action_editor  
 2) Find the page where the "walking_init page" is by typing "list"  
 
-<img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/raw/master/wiki-images/ROBOTIS-THORMANG3/thormang3_action_editor_tui_action_editing_example1.jpg?raw=true" width="90%" />
+![](/assets/images/platform/op3/thormang3_action_editor_tui_action_editing_example1.jpg)
 
 3) Exit the list and go to any blank page by typing "page [x]"(for example, page 15).
-<img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/raw/master/wiki-images/ROBOTIS-THORMANG3/thormang3_action_editor_tui_action_editing_example2.jpg?raw=true" width="90%"/>  
+
+![](/assets/images/platform/op3/thormang3_action_editor_tui_action_editing_example2.jpg)
+
 
 4) And copy the page 1 to page [x].  
-<img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/raw/master/wiki-images/ROBOTIS-THORMANG3/thormang3_action_editor_tui_action_editing_example3.jpg?raw=true" width="90%"/>  
+
+![](/assets/images/platform/op3/thormang3_action_editor_tui_action_editing_example3.jpg)
 
 6) Go to "walking_init" pose by typing "play"  
 
 5) Turn off the torque of ID 2, 4 and 8 by typing "off 2 4 8"  
 
-<img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/raw/master/wiki-images/ROBOTIS-THORMANG3/thormang3_action_editor_tui_action_editing_example4.jpg?raw=true" width="90%"/>  
+
+![](/assets/images/platform/op3/thormang3_action_editor_tui_action_editing_example4.jpg)
 
 6) After getting the desired pose turn torque on again by simple typing on. And insert the pose to step 1 by typing "i 1"  
 
-<img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/raw/master/wiki-images/ROBOTIS-THORMANG3/thormang3_action_editor_tui_action_editing_example5.jpg?raw=true" width="90%"/>  
+
+![](/assets/images/platform/op3/thormang3_action_editor_tui_action_editing_example5.jpg)
 
 7) Edit "Pause Time", "Time" of STP1 and "Page Step" as shown below.  
 
-<img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/raw/master/wiki-images/ROBOTIS-THORMANG3/thormang3_action_editor_tui_action_editing_example6.jpg?raw=true" width="90%"/>  
+![](/assets/images/platform/op3/thormang3_action_editor_tui_action_editing_example6.jpg)
 
 8) Type "play" and check the ROBOTIS-OP3's action  
 
@@ -608,16 +617,18 @@ $ roslaunch op3_demo demo.launch
     - Open `Dynamic Reconfigure`   
     Select `Plugins -> Configuration -> Dynamic Reconfigure`
 
-   <img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/ball_detector_node_01.png?raw=true"/>   
+
+    ![](/assets/images/platform/op3/ball_detector_node_01.png)
 
     - Open `Image View`  
     Select `Plugins -> Visualization -> Image View`  
 
-   <img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/ball_detector_node_02.png?raw=true"/>  
-
+    ![](/assets/images/platform/op3/ball_detector_node_02.png)
 2. Parameters    
 The description for each parameter will pop up when hovering the mouse cursor over each parameter.  
-    <img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/ball_detector_node_03.png?raw=true"/>   
+
+    ![](/assets/images/platform/op3/ball_detector_node_03.png)
+
     - gaussian_blur_size: Size of Gaussian Blur Kernel (odd value)  
     - gaussian_blur_sigma: Std deviation of Gaussian Blur  
     - canny_edge_th: Threshold of the edge detector  
@@ -652,11 +663,13 @@ The description for each parameter will pop up when hovering the mouse cursor ov
 
         - If you check the ‘use_second_filter’, you can get an image which is detected with two HSV variations.   
 
-      <img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/ball_detector_node_04.png?raw=true"/>  
+      ![](/assets/images/platform/op3/ball_detector_node_04.png)
 
         - If you check the ’debug_image’ you can check the HSV filtered, binary image.   
 
-      <img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/ball_detector_node_05.png?raw=true"/>  
+      ![](/assets/images/platform/op3/ball_detector_node_05.png)
+
+
 
         - After you set the HSV range, you could calibrate the threshold value to detect the edge better.*  
 
@@ -665,7 +678,7 @@ The description for each parameter will pop up when hovering the mouse cursor ov
 ### Overview   
 This chapter explains upgraded walking and footstep planner.
 
-> Reference : [OP3-How-to-control-upgraded-walking]
+> Reference : [op3_how_to_control_upgraded_walking]
 
 ### Getting started  
 #### Installation
@@ -708,8 +721,7 @@ This chapter explains upgraded walking and footstep planner.
 
   2. Select `Online Walking` tab of the gui demo program.
 
- <img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_online_walking_01.png?raw=true" align="bottom"/>   
-
+   ![](/assets/images/platform/op3/op3_online_walking_01.png)
 
 - Controlling walking of ROBOTIS-OP3
    1. Go to initial pose : click `Go to Initial Pose` button
@@ -718,22 +730,18 @@ This chapter explains upgraded walking and footstep planner.
 
    3. Set the walking parameters     
 
-  <img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_online_walking_footstep_01.png?raw=true" align="bottom"/>      
-
+    ![](/assets/images/platform/op3/op3_online_walking_footstep_01.png)
 
    4. Set a interactive marker in rviz 3d screen and Move the marker to the target pose of feet.   
+    ![](/assets/images/platform/op3/op3_online_walking_footstep_02.png)
 
-  <img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_online_walking_footstep_02.png?raw=true" align="bottom"/>  
+    ![](/assets/images/platform/op3/op3_online_walking_footstep_04.png)
 
-    <img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_online_walking_footstep_04.png?raw=true" align="bottom"/>    
-
-   ** **  
    5. plan the path and send a walking message to ROBOTIS-OP3     
 
-  <img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_online_walking_footstep_03.png?raw=true" align="bottom"/>   
+    ![](/assets/images/platform/op3/op3_online_walking_footstep_03.png)
 
-   <img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_online_walking_footstep_05.png?raw=true" align="bottom"/>   
-
+    ![](/assets/images/platform/op3/op3_online_walking_footstep_05.png)
 
 
 
@@ -744,11 +752,11 @@ This chapter explains upgraded walking and footstep planner.
 [op3_manager]: [op3_manager.md]
 [Robot Information file(.robot)]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/Creating-new-robot-manager#41-robot-information-file-robot
 [Joint initialize file(.yaml)]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/Creating-new-robot-manager#42-joint-initialize-file-yaml
-[How to use offset tuner]: [OP3-How-to-use-offset-tuner.md]
-
+[How to use offset tuner]: [op3_how_to_use_offset_tuner.md]
+[Installing ROBOTIS ROS Package]:OP3_Recovery_of_ROBOTIS_OP3#24_installation_robotis_ros_packages.md  
 
 [op3_demo]: [op3_demo.md]
-[How to use walking tuner]: [OP3-How-to-use-walking-tuner.md]
+[How to use walking tuner]: [op3_how_to_use_walking_tuner.md]
 [Face Tracker - ROS Package]: https://github.com/ROBOTIS-GIT/face_detection
 
 [op3_action_module]: [op3_action_module.md]
@@ -758,7 +766,7 @@ This chapter explains upgraded walking and footstep planner.
 
 [Introduction to Humanoid Robotics]: http://www.springer.com/gp/book/9783642545351
 [op3_online_walking_module]: [op3_online_walking_module.md]
-[Online walking using footstep planner]: [OP3-How-to-control-upgraded-walking-using-footstep-planner.md]
+[Online walking using footstep planner]: [op3_how_to_control_upgraded_walking_using_footstep_planner.md]
 
 [op3_offset_tuner_server]: [op3_offset_tuner_server.md]
 [op3_offset_tuner_client]: [op3_offset_tuner_client.md]
@@ -766,6 +774,6 @@ This chapter explains upgraded walking and footstep planner.
 [op3_action_module]: [op3_action_module]
 
 
-[OP3-How-to-control-upgraded-walking]: [OP3-How-to-control-upgraded-walking.md]
+[op3_how_to_control_upgraded_walking]: [op3_how_to_control_upgraded_walking.md]
 [humanoid_navigation]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/humanoid_navigation
 [op3_navigation]: https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Tools/tree/master/op3_navigation

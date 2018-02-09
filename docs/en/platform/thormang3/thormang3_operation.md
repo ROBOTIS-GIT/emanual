@@ -330,7 +330,7 @@ Operating PC is used to control the robot from the outside.
   $ roslaunch thormang3_description thormang3_opc.launch
   ```
 
-  ![](/assets/images/platform/thormang3/thormang3_047.png)
+    ![](/assets/images/platform/thormang3/thormang3_047.png)
 
 ### [Remote Control(GUI Demo)](#remote-controlgui-demo)
 Demo program for remote control is provided.  
@@ -350,7 +350,7 @@ Walking, manipulation, head control are provided.
 4. Move to `Mode` tab  
 5. Click the mode at the top to activate  
 6. Check all joints are switched to selected mode.  
-  ![](/assets/images/platform/thormang3/thormang3_048.png)
+    ![](/assets/images/platform/thormang3/thormang3_048.png)
 
 7. Initial Posture  
   In order to operate the robot safely, the robot should be operated from the initial posture.  

@@ -158,7 +158,7 @@ main:
       url: /platform/op2/getting_started/
     - title: "OP3"
       titlekr: "OP3"
-      url: /platform/op3/getting_started/
+      url: /platform/op3/introduction/
     - titlekr: "로봇핸드 RX28"
       url: /platform/robothand_rx28/
     - titlekr: "로봇핸드 MX28"
@@ -7831,64 +7831,44 @@ ollo_bugkit:
 #Ollo Explorer
 ollo_explorer:
   - title: "Introduction"
-    titlekr: ""
+    titlekr: "시작하기"
     url: /edu/ollo/explorer/#introduction
-    urlkr: /edu/ollo/explorer/#
-      titlekr: ""
+    urlkr: /edu/ollo/explorer/#시작하기
   - title: "Part List"
-    titlekr: ""
-    - title: "Part List"
-      titlekrkr:
+    titlekr: "부품 리스트"
     url: /edu/ollo/explorer/#part-list
-    urlkr: /edu/ollo/explorer/#
-      titlekr: ""
+    urlkr: /edu/ollo/explorer/#부품-리스트
   - title: "Quick Start"
-    titlekr: ""
-    - title: "Quick Start"
-      titlekrkr:
+    titlekr: "작동하기"
     url: /edu/ollo/explorer/#quick-start
-    urlkr: /edu/ollo/explorer/#
-      titlekr: ""
+    urlkr: /edu/ollo/explorer/#작동하기
     children:
-      - title: "How to Play"
-      children:
-        -kr title: "How to Play
-        titlekr: ""
-        url: /edu/ollo/explorer/#how-to-play
-        urlkr: /edu/ollo/explorer/#
-          titlekr: ""
-      - title: "Select Program"
-        titlekr: ""
-        - title: "Select Program"
-          titlekrkr:
-        url: /edu/ollo/explorer/#select-program
-        urlkr: /edu/ollo/explorer/#
-          titlekr: ""
+    - title: "How to Play"
+      titlekr: "작동방법"
+      url: /edu/ollo/explorer/#how-to-play
+      urlkr: /edu/ollo/explorer/#작동방법
+    - title: "Select Program"
+      titlekr: "프로그램 선택 방법"
+      url: /edu/ollo/explorer/#select-program
+      urlkr: /edu/ollo/explorer/#프로그램-선택-방법
   - title: "Download"
-    titlekr: ""
-    - title: "Download"
-      titlekrkr: ""
+    titlekr: "다운로드"
     url: /edu/ollo/explorer/#download
-    urlkr: /edu/ollo/explorer/#
-      titlekr: ""
+    urlkr: /edu/ollo/explorer/#다운로드
 
 #Ollo Inventor
 ollo_inventor:
-  - title: "Introduction"
-  
-  #Ollo Inventor
-  ollo_inventor:
-    -kr title: "
-    url: /edu/ollo/inventor/#introduction
-  - title: "Part List"
-    url: /edu/ollo/inventor/#part-list
-  - title: "Quick Start"
-    url: /edu/ollo/inventor/#quick-start
-    children:
-      - title: "ZIGBee Wireless Control"
-        url: /edu/ollo/inventor/#zigbee-wireless-control
-  - title: "Download"
-    url: /edu/ollo/inventor/#download
+- title: "Introduction"
+  url: /edu/ollo/inventor/#introduction
+- title: "Part List"
+  url: /edu/ollo/inventor/#part-list
+- title: "Quick Start"
+  url: /edu/ollo/inventor/#quick-start
+  children:
+    - title: "ZIGBee Wireless Control"
+      url: /edu/ollo/inventor/#zigbee-wireless-control
+- title: "Download"
+  url: /edu/ollo/inventor/#download
 
 #DreamI Level1 sidebar
 dream1-1:
@@ -8980,23 +8960,23 @@ op3:
       url: /platform/op3/getting_started/#how-to-kill-the-demo-program
     - title: "How to Restart the demo program"
       url: /platform/op3/getting_started/#how-to-restart-the-demo-program
-  - title: "Robotis Ros Packages"
-    url: /platform/op3/robotis_ros_packages/#robotis-ros-packages
+  - title: "Robotis ROS Modules"
+    url: /platform/op3/robotis_ros_modules/#robotis-ros-packages
     children:
     - title: "ROBOTIS OP3"
-      url: /platform/op3/robotis_ros_packages/#robotis-op3
+      url: /platform/op3/robotis_ros_modules/#robotis-op3
     - title: "ROBOTIS OP3 msgs"
-      url: /platform/op3/robotis_ros_packages/#robotis-op3-msgs
+      url: /platform/op3/robotis_ros_modules/#robotis-op3-msgs
     - title: "ROBOTIS OP3 Demo"
-      url: /platform/op3/robotis_ros_packages/#robotis-op3-Demo
+      url: /platform/op3/robotis_ros_modules/#robotis-op3-Demo
     - title: "ROBOTIS OP3 Common"
-      url: /platform/op3/robotis_ros_packages/#robotis-op3-common
+      url: /platform/op3/robotis_ros_modules/#robotis-op3-common
     - title: "ROBOTIS OP3 Tools"
-      url: /platform/op3/robotis_ros_packages/#robotis-op3-tools
+      url: /platform/op3/robotis_ros_modules/#robotis-op3-tools
   - title: "Tutorials"
     url: /platform/op3/tutorials/#tutorials
     children:
-    - title: "How to run OP3's program"
+    - title: "How to run OP3 program"
       url: /platform/op3/tutorials/#how-to-run-op3's-program
     - title: "How to execute Default Demo"
       url: /platform/op3/tutorials/#how-to-execute-default-demo

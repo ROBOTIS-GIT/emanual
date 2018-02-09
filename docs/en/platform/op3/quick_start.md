@@ -132,7 +132,7 @@ ROBOTIS OP3 performs pre-programmed motions sequentially while talking.
 The new vision processing demo for ROBOTIS OP3 is “Face detection and tracking”. ROBOTIS OP3 is developed with ROS.  
 Therefore various ROS packages such as face detecting package can be applied for vision processing mode to track recognized face in front of the robot.  
 Please refer the below website link.  
-Face detecting : https://github.com/phil333/face_detection
+Face detecting : [https://github.com/phil333/face_detection]
 
 - Start Vision Processing Mode
   1. Press `MODE` button until LED 2(green) is lit. ROBOTIS OP3 will verbally announce “Vision processing mode”.
@@ -149,15 +149,15 @@ Face detecting : https://github.com/phil333/face_detection
 
 - ETC
   - Modifying parameters of the ‘face_detection’ package might improve recognition of the face. Please refer to the following website for more details.
-  - face_detection package : https://github.com/ROBOTIS-GIT/face_detection
-  - usb_cam package : http://wiki.ros.org/usb_cam
+  - face_detection package : [https://github.com/ROBOTIS-GIT/face_detection]
+  - usb_cam package : [http://wiki.ros.org/usb_cam]
 
 ## [Camera Calibration](#camera-calibration)
 
 If ambient light of ROBOTIS OP3 is either too dim or too bright, user can adjust camera setting for optimizing acquired image from the camera.  
 The color of the ball for soccer demo can also be modified from the setting.  
 Please refer to the wiki manual from below link.  
-https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki
+[https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki]
 
 ## [Power Off](#power-off)
 
@@ -216,8 +216,8 @@ The following is the list of tools for source code development.
 - Compiler : GNU project C and C++ Compiler, Catkin
 - Programming Language : C++
 
-For more detailed information, please refer to the [ROBOTIS OP3 WIKI](https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki).   
-https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki
+For more detailed information, please refer to the [ROBOTIS OP3 WIKI].   
+[https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki]
 
 ### [Source Code](#source-code)
 
@@ -227,23 +227,23 @@ You may find the source code directory at `/robotis` from ROBOTIS OP3's PC.
 
 The pre-installed source code may be updated without prior notice. Please check for updates periodically.
 You may obtain updated source code from the below GitHub links :
-- https://github.com/ROBOTIS-GIT/DynamixelSDK
-- https://github.com/ROBOTIS-GIT/ROBOTIS-Framework
-- https://github.com/ROBOTIS-GIT/ROBOTIS-Framework-msgs
-- https://github.com/ROBOTIS-GIT/ROBOTIS-Math
-- https://github.com/ROBOTIS-GIT/ROBOTIS-OP3
-- https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Common
-- https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Demo
-- https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-msgs
-- https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Tools
-- https://github.com/ROBOTIS-GIT/ROBOTIS-Utility
+- [https://github.com/ROBOTIS-GIT/DynamixelSDK]
+- [https://github.com/ROBOTIS-GIT/ROBOTIS-Framework]
+- [https://github.com/ROBOTIS-GIT/ROBOTIS-Framework-msgs]
+- [https://github.com/ROBOTIS-GIT/ROBOTIS-Math]
+- [https://github.com/ROBOTIS-GIT/ROBOTIS-OP3]
+- [https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Common]
+- [https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Demo]
+- [https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-msgs]
+- [https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Tools]
+- [https://github.com/ROBOTIS-GIT/ROBOTIS-Utility]
 
 ### [Framework](#framework)
 
 The following flow diagram represent class breakdown and data pipelines.  
 You may modify the framework at “/home/robotis/catkin_ws/src/ROBOTIS-Framework”.  
 For more information, please refer to the ROBOTIS OP3 WIKI.  
-https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki
+[https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki]
 
 ![](/assets/images/platform/op3/op3_027.png)
 
@@ -261,21 +261,21 @@ In the directory you can find code for :
 
 The supplied USB thumb drive contains the software pre-installed to ROBOTIS OP3.  
 You may obtain updated software from the link below.  
-https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki  
+[https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki]  
 Software may be updated without prior notice. Please check for updates periodically.
 
 ### [Useful Information](#useful-information)
 
 You can download other ROBOTIS OP3-related items and more detailed information from the wiki manual.  
-https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki
+[https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki]
 
 - For any inquiries send us an email.
   - International : `contactus2@robotis.com`
   - Korea : `korea@robotis.com`
 
 - Third party terminal client
-  - PuTTY : http://www.chiark.greenend.org.uk/~sgtatham/putty/
-  - RealVNC : http://www.realvnc.com/
+  - PuTTY : [http://www.chiark.greenend.org.uk/~sgtatham/putty/]
+  - RealVNC : [http://www.realvnc.com/]
 
 ## [Miscellaneous](#miscellaneous)
 
@@ -318,7 +318,7 @@ C. Core System Maintenance Service (by ROBOTIS) : 1 years
 D. Parts replacement for malfunctions during normal operation for 1 years.
 
 {% capture op2_warning_01 %}
-\* Please download RMA (Return Material Authorization)(http://en.robotis.com/index/service_04.php?tab=4)  
+\* Please download RMA (Return Material Authorization)([http://en.robotis.com/index/service_04.php?tab=4])  
 No return shipping will be accepted without a RMA number issued by ROBOTIS.
 
 \*\* Customers who require extended warranty period may purchase another "1 year warranty"
@@ -329,7 +329,7 @@ from ROBOTIS before their standard warranty period is over.
 
 **Important Notice:**  
 
-1. Product registration is required for all customers. http://support.robotis.com
+1. Product registration is required for all customers. [http://support.robotis.com]
 
 2. Parts replacement can only be done through RMA(Return Material Authorization) application.
 
@@ -563,3 +563,25 @@ The calculation will take for 2 seconds and then each bit will be reset to 0.
 | PIN_BUTTON_S2 |             Button Input S2             |
 | PIN_BUTTON_S3 |             Button Input S3             |
 | PIN_BUTTON_S4 | Button Input S4 (Reset Dynamixel Power) |
+
+
+[https://github.com/phil333/face_detection]:https://github.com/phil333/face_detection
+[https://github.com/ROBOTIS-GIT/face_detection]:https://github.com/ROBOTIS-GIT/face_detection
+[http://wiki.ros.org/usb_cam]:http://wiki.ros.org/usb_cam
+[https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki
+[ROBOTIS OP3 WIKI]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki
+[https://github.com/ROBOTIS-GIT/DynamixelSDK]:https://github.com/ROBOTIS-GIT/DynamixelSDK
+[https://github.com/ROBOTIS-GIT/ROBOTIS-Framework]:https://github.com/ROBOTIS-GIT/ROBOTIS-Framework
+[https://github.com/ROBOTIS-GIT/ROBOTIS-Framework-msgs]:https://github.com/ROBOTIS-GIT/ROBOTIS-Framework-msgs
+[https://github.com/ROBOTIS-GIT/ROBOTIS-Math]:https://github.com/ROBOTIS-GIT/ROBOTIS-Math
+[https://github.com/ROBOTIS-GIT/ROBOTIS-OP3]:https://github.com/ROBOTIS-GIT/ROBOTIS-OP3
+[https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Common]:https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Common
+[https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Demo]:https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Demo
+[https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-msgs]:https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-msgs
+[https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Tools]:https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Tools
+[https://github.com/ROBOTIS-GIT/ROBOTIS-Utility]:https://github.com/ROBOTIS-GIT/ROBOTIS-Utility
+
+[http://www.chiark.greenend.org.uk/~sgtatham/putty/]:http://www.chiark.greenend.org.uk/~sgtatham/putty/
+[http://www.realvnc.com/]:http://www.realvnc.com/
+[http://en.robotis.com/index/service_04.php?tab=4]:http://en.robotis.com/index/service_04.php?tab=4
+[http://support.robotis.com]:http://support.robotis.com
