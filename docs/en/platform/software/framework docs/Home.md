@@ -18,5 +18,5 @@
 
 ### **ROBOTIS OP3**
 - **[e-Manual](http://support.robotis.com/en/techsupport_eng.htm#product/robotis_op3.htm) (link)**
-- **[User's Guide](OP3-User's-Guide)**
+- **[User's Guide](op3_user's_guide)**
 <br><br>

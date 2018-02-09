@@ -67,20 +67,20 @@ The followings are ROS APIs used only in the soccer demo.
 
 <br>[&lt;&lt; Back](op3_demo.md)
 
-[How to execute Default Demo]:[OP3-How-to-execute-Default-Demo.md]
+[How to execute Default Demo]:[op3_how_to_execute_default_demo.md]
 
 
-[std_msgs/String]:/docs/en/popup/std_msgs_string/
-[sensor_msgs/Imu]:/docs/en/popup/sensor_msgs_IMU_msg/
+[std_msgs/String]: /docs/en/popup/std_msgs_string/
+[sensor_msgs/Imu]: /docs/en/popup/sensor_msgs_IMU_msg/
 
-[ball_detector/circleSetStamped]:/docs/en/popup/ball_detector_CircleSetStamped_msg/
-[sensor_msgs/JointState]:/docs/en/popup/sensor_msgs_JointState_msg/
-[robotis_controller_msgs/JointCtrlModule]:/docs/en/popup/JointCtrlModule.msg/
+[ball_detector/circleSetStamped]: /docs/en/popup/ball_detector_CircleSetStamped_msg/
+[sensor_msgs/JointState]: /docs/en/popup/sensor_msgs_JointState_msg/
+[robotis_controller_msgs/JointCtrlModule]: /docs/en/popup/JointCtrlModule.msg/
 
-[std_msgs/Int32]:/docs/en/popup/std_msgs_int32_message/
-[sensor_msgs/JointState]:/docs/en/sensor_msgs_JointState_msg/
-[std_msgs/String]:/docs/en/popup/std_msgs_string/
-[op3_walking_module_msgs/WalkingParam]:/docs/en/popup/op3_WalkingParam.msg/
-[op3_walking_module_msgs/GetWalkingParam]:/docs/en/popup/op3_GetWalkingParam.srv/
+[std_msgs/Int32]: /docs/en/popup/std_msgs_int32_message/
+[sensor_msgs/JointState]: /docs/en/sensor_msgs_JointState_msg/
+[std_msgs/String]: /docs/en/popup/std_msgs_string/
+[op3_walking_module_msgs/WalkingParam]: /docs/en/popup/op3_WalkingParam.msg/
+[op3_walking_module_msgs/GetWalkingParam]: /docs/en/popup/op3_GetWalkingParam.srv/
 
-[How to execute Default Demo]:OP3-How-to-execute-Default-Demo.md
+[How to execute Default Demo]:op3_how_to_execute_default_demo.md

@@ -262,13 +262,13 @@ Clonezilla is used to recover ROBOTIS-OP3 with the image file in the provided US
 [ROBOTIS-Framerowk]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/ROBOTIS-Framework-Documents
 [ROBOTIS-Framerowk-msgs]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/ROBOTIS-Framework-Documents
 [ROBOTIS-Math]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/robotis_math
-[ROBOTIS-OP3]: [ROBOTIS-OP3.md]
-[ROBOTIS-OP3-Demo]: [ROBOTIS-OP3-Demo.md]
-[ROBOTIS-OP3-msgs]: [ROBOTIS-OP3-msgs.md]
-[ROBOTIS-OP3-Tools]: [ROBOTIS-OP3-Tools.md]
-[ROBOTIS-OP3-Common]: [ROBOTIS-OP3-Common.md]
+[ROBOTIS-OP3]: [robotis_op3.md]
+[ROBOTIS-OP3-Demo]: [robotis_op3_demo.md]
+[ROBOTIS-OP3-msgs]: [robotis_op3_msgs.md]
+[ROBOTIS-OP3-Tools]: [robotis_op3_tools.md]
+[ROBOTIS-OP3-Common]: [robotis_op3_common.md]
 [ROS Environment and Network Settings]:OP3_Robot_Operating_System#4_setup.md
-[Setting for automatic startup]:OP3-How-to-kill-the-demo-program#31-start-demo-program-on-start.md
+[Setting for automatic startup]:op3_how_to_kill_the_demo_program#31-start-demo-program-on-start.md
 
 [e-manual]: http://support.robotis.com/en/product/darwin-op/operating/recovery/clonezilla_recovery.htm
 

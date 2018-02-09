@@ -102,13 +102,13 @@ Execute the program with a `.launch` file in order to load ROS parameters.
 
 <br>[&lt;&lt; Back]
 
-[std_msgs/Bool]:/docs/en/popup/std_msgs_bool_msg/
-[sensor_msgs/Image]:/docs/en/popup/sensor_msgs_Image/
-[sensor_msgs/CameraInfo]:/docs/en/popup/sensor_msgs_CameraInfo_msg/
-[ball_detector/circleSetStamped]:/docs/en/popup/ball_detector_CircleSetStamped_msg/
-[std_msgs/Header]:/docs/en/popup/std_msgs_Header/
-[geometry_msgs/Point]:/docs/en/popup/geometry_msgs_Point_msg/
-[&lt;&lt; Back]:[ROBOTIS-OP3-Demo.md]
+[std_msgs/Bool]: /docs/en/popup/std_msgs_bool_msg/
+[sensor_msgs/Image]: /docs/en/popup/sensor_msgs_Image/
+[sensor_msgs/CameraInfo]: /docs/en/popup/sensor_msgs_CameraInfo_msg/
+[ball_detector/circleSetStamped]: /docs/en/popup/ball_detector_CircleSetStamped_msg/
+[std_msgs/Header]: /docs/en/popup/std_msgs_Header/
+[geometry_msgs/Point]: /docs/en/popup/geometry_msgs_Point_msg/
+[&lt;&lt; Back]:[robotis_op3_demo.md]
 [Installing ROBOTIS ROS Package]:OP3_Recovery_of_ROBOTIS_OP3#24_installation_robotis_ros_packages.md
 [`usb_cam`]:http://wiki.ros.org/usb_cam
 [HSV color]:https://en.wikipedia.org/wiki/HSL_and_HSV

@@ -44,6 +44,6 @@ Motion Module is used in the form of lib in the manager.
 [Creating new robot manager]:Creating_new_robot_manager.md
 [Installing ROBOTIS ROS Package]:OP3_Recovery_of_ROBOTIS_OP3#24_installation_robotis_ros_packages.md  
 
-[robotis_controller_msgs/StatusMsg]:/docs/en/popup/StatusMsg.msg/
-[op3_action_module_msgs/IsRunning]:/docs/en/popup/op3_IsRunning.srv/
-[&lt;&lt; Back]:ROBOTIS-OP3-Modules.md
+[robotis_controller_msgs/StatusMsg]: /docs/en/popup/StatusMsg.msg/
+[op3_action_module_msgs/IsRunning]: /docs/en/popup/op3_IsRunning.srv/
+[&lt;&lt; Back]:robotis_op3_modules.md

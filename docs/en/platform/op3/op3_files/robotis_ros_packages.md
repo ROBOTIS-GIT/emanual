@@ -72,7 +72,7 @@ sidebar:
 
 
 
-[ROBOTIS-OP3 Modules]:ROBOTIS-OP3-Modules.md
+[ROBOTIS-OP3 Modules]:robotis_op3_modules.md
 [op3_action_module]:op3_action_module.md
 [op3_base_module]:op3_base_module.md
 [op3_head_control_module]:op3_head_control_module.md

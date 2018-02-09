@@ -58,12 +58,12 @@ $ roslaunch op3_offset_tuner_server op3_offset_tuner_server.launch
 <br>[&lt;&lt; Back]
 
 
-[std_msgs/String]:/docs/en/popup/std_msgs_string/
+[std_msgs/String]: /docs/en/popup/std_msgs_string/
 [op3_offset_tuner_client]:op3_offset_tuner_client.md
-[How to use offset tuner]:OP3-How-to-use-offset-tuner.md
-[op3_offset_tuner_msgs/JointOffsetData]:/docs/en/popup/JointOffsetData.msg/
-[op3_offset_tuner_msgs/JointTorqueOnOffArray]:/docs/en/popup/JointTorqueOnOffArray.msg/
-[op3_offset_tuner_msgs/GetPresentJointOffsetData]:/docs/en/popup/GetPresentJointOffsetData.srv/
+[How to use offset tuner]:op3_how_to_use_offset_tuner.md
+[op3_offset_tuner_msgs/JointOffsetData]: /docs/en/popup/JointOffsetData.msg/
+[op3_offset_tuner_msgs/JointTorqueOnOffArray]: /docs/en/popup/JointTorqueOnOffArray.msg/
+[op3_offset_tuner_msgs/GetPresentJointOffsetData]: /docs/en/popup/GetPresentJointOffsetData.srv/
 [Installing ROBOTIS ROS Package]:OP3_Recovery_of_ROBOTIS_OP3#24_installation_robotis_ros_packages.md  
 [How to use offset tuner]:OP3_How_to_use_offset_tuner.md
-[&lt;&lt; Back]:ROBOTIS-OP3-Tools.md
+[&lt;&lt; Back]:robotis_op3_tools.md

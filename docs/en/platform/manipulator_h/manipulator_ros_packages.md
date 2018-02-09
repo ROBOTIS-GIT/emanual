@@ -296,11 +296,11 @@ $ roslaunch manipulator_h_manager manipulator_h_manager.launch
 [std_msgs/Float64]: /docs/en/platform/popup/std_msgs_Float64_msg/
 [geometry_msgs/Pose]: /docs/en/platform/popup/geometry_msgs_Pose_msg/
 
-[robotis_controller_msgs/StatusMsg]:/docs/en/platform/popup/StatusMsg.msg/
-[manipulator_manipulation_module_msgs/JointPose]:/docs/en/platform/popup/JointPose.msg/
-[manipulator_manipulation_module_msgs/KinematicsPose]:/docs/en/platform/popup/KinematicsPose.msg/
-[manipulator_manipulation_module_msgs/GetJointPose]:/docs/en/platform/popup/GetJointPose.srv/
-[manipulator_manipulation_module_msgs/GetKinematicsPose]:/docs/en/platform/popup/GetKinematicsPose.srv/
+[robotis_controller_msgs/StatusMsg]: /docs/en/platform/popup/StatusMsg.msg/
+[manipulator_manipulation_module_msgs/JointPose]: /docs/en/platform/popup/JointPose.msg/
+[manipulator_manipulation_module_msgs/KinematicsPose]: /docs/en/platform/popup/KinematicsPose.msg/
+[manipulator_manipulation_module_msgs/GetJointPose]: /docs/en/platform/popup/GetJointPose.srv/
+[manipulator_manipulation_module_msgs/GetKinematicsPose]: /docs/en/platform/popup/GetKinematicsPose.srv/
 
 [Creating new robot manager]:Creating_new_robot_manager.md
 [manipulator_manager]:manipulator_manager.md

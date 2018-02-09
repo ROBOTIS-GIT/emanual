@@ -7,8 +7,8 @@ The followings are Messages and Services used for the [[op3_action_module]].
 ### 3. ROS Service Type
 * [IsRunning.srv]{: .popup}
 
-<br>[&lt;&lt; Back]
 
-[StartAction.msg]:/docs/en/popup/op3_StartAction.msg/
-[IsRunning.srv]:/docs/en/popup/op3_IsRunning.srv/
-[&lt;&lt; Back]:ROBOTIS-OP3-msgs.md
+
+[StartAction.msg]: /docs/en/popup/op3_StartAction.msg/
+[IsRunning.srv]: /docs/en/popup/op3_IsRunning.srv/
+[&lt;&lt; Back]:robotis_op3_msgs.md

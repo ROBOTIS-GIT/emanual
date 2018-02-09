@@ -76,16 +76,16 @@ $ roslaunch op3_gui_demo op3_demo.launch
 
 <br>[&lt;&lt; Back]
 
-[How to execute GUI program]:[OP3-How-to-execute-GUI-program.md]
+[How to execute GUI program]:[op3_how_to_execute_gui_program.md]
 
-[std_msgs/String]:/docs/en/popup/std_msgs_string/
-[std_msgs/Int32]:/docs/en/popup/std_msgs_int32_message/
-[robotis_controller_msgs/JointCtrlModule]:/docs/en/popup/JointCtrlModule.msg/
-[sensor_msgs/JointState]:/docs/en/popup/sensor_msgs_JointState_msg/
-[std_msgs/String]:/docs/en/popup/std_msgs_string/
-[op3_walking_module_msgs/WalkingParam]:/docs/en/popup/op3_WalkingParam.msg/
-[robotis_controller_msgs/GetJointModule]:/docs/en/popup/GetJointModule.srv/
-[op3_walking_module_msgs/GetWalkingParam]:/docs/en/popup/op3_GetWalkingParam.srv/
+[std_msgs/String]: /docs/en/popup/std_msgs_string/
+[std_msgs/Int32]: /docs/en/popup/std_msgs_int32_message/
+[robotis_controller_msgs/JointCtrlModule]: /docs/en/popup/JointCtrlModule.msg/
+[sensor_msgs/JointState]: /docs/en/popup/sensor_msgs_JointState_msg/
+[std_msgs/String]: /docs/en/popup/std_msgs_string/
+[op3_walking_module_msgs/WalkingParam]: /docs/en/popup/op3_WalkingParam.msg/
+[robotis_controller_msgs/GetJointModule]: /docs/en/popup/GetJointModule.srv/
+[op3_walking_module_msgs/GetWalkingParam]: /docs/en/popup/op3_GetWalkingParam.srv/
 [Installing ROBOTIS ROS Package]:OP3_Recovery_of_ROBOTIS_OP3#24_installation_robotis_ros_packages.md  
 
-[&lt;&lt; Back]:ROBOTIS-OP3-Tools.md
+[&lt;&lt; Back]:robotis_op3_tools.md

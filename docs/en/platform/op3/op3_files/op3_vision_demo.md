@@ -50,8 +50,8 @@ The followings are ROS APIs used only in vision demo.
 
 <br>[&lt;&lt; Back](op3_demo.md)
 
-[How to execute Default Demo]:OP3-How-to-execute-Default-Demo.md
-[std_msgs/String]:/docs/en/popup/std_msgs_string/
-[std_msgs/Int32]:/docs/en/popup/std_msgs_int32_message/
-[std_msgs/Int32MultiArray]:/docs/en/popup/std_msgs_Int32MultiArray_msg/
-[sensor_msgs/JointState]:/docs/en/popup/sensor_msgs_JointState_msg/
+[How to execute Default Demo]:op3_how_to_execute_default_demo.md
+[std_msgs/String]: /docs/en/popup/std_msgs_string/
+[std_msgs/Int32]: /docs/en/popup/std_msgs_int32_message/
+[std_msgs/Int32MultiArray]: /docs/en/popup/std_msgs_Int32MultiArray_msg/
+[sensor_msgs/JointState]: /docs/en/popup/sensor_msgs_JointState_msg/

@@ -31,10 +31,10 @@ $ roslaunch op3_walking_tuner op3_walking_tuner.launch
 #### 2.4 Usage
 Please refer to [How to use walking tuner].
 
-<br>[&lt;&lt; Back](ROBOTIS-OP3-Tools.md)
+<br>[&lt;&lt; Back](robotis_op3_tools.md)
 
-[op3_gui_demo]:OP3-How-to-use-walking-tuner.md
+[op3_gui_demo]:op3_how_to_use_walking_tuner.md
 [op3_gui_demo]:op3_gui_demo.md
-[How to use walking tuner]:OP3-How-to-use-walking-tuner.md
+[How to use walking tuner]:op3_how_to_use_walking_tuner.md
 
 [Installing ROBOTIS ROS Package]:OP3_Recovery_of_ROBOTIS_OP3#24_installation_robotis_ros_packages.md

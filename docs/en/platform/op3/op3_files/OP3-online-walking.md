@@ -21,5 +21,5 @@ This chapter explains upgraded walking and footstep planner.
 [op3_balance_control]:op3_balance_control.md
 [op3_localization]:op3_localization.md
 [op3_optimization]:op3_optimization.md
-[How to control upgraded walking(online walking)]:OP3-How-to-control-upgraded-walking.md
-[How to control upgraded walking using footstep planner]:OP3-How-to-control-upgraded-walking-using-footstep-planner.md
+[How to control upgraded walking(online walking)]:op3_how_to_control_upgraded_walking.md
+[How to control upgraded walking using footstep planner]:op3_how_to_control_upgraded_walking_using_footstep_planner.md

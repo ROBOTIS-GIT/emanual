@@ -69,9 +69,9 @@ Buttons on the back of ROBOTIS-OP3 can be used to select and play demo.
 
 
 
-<br>[&lt;&lt; Back](ROBOTIS-OP3-Demo.md)
+<br>[&lt;&lt; Back](robotis_op3_demo.md)
 
-[std_msgs/String]:/docs/en/popup/std_msgs_string/
+[std_msgs/String]: /docs/en/popup/std_msgs_string/
 [Installing ROBOTIS ROS Package]:OP3_Recovery_of_ROBOTIS_OP3#24_installation_robotis_ros_packages.md
 [How to execute Default Demo]:OP3_How_to_execute_Default_Demo.md
 [Soccer Demo]:op3_soccer_demo.md

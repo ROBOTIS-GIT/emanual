@@ -42,5 +42,5 @@ The followings are ROS APIs used only in action demo.
 [std_msgs/String]: /docs/en/popup/std_msgs_string/
 [std_msgs/Int32]: /docs/en/popup/std_msgs_int32_message/
 [How to execute Default Demo]:OP3_How_to_execute_Default_Demo.md
-[op3_action_module_msgs/IsRunning]:/docs/en/popup/op3_IsRunning.srv/
+[op3_action_module_msgs/IsRunning]: /docs/en/popup/op3_IsRunning.srv/
 [&lt;&lt; Back]:[op3_demo.md]

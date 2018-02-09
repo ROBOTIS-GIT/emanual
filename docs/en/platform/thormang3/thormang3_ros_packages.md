@@ -1969,14 +1969,14 @@ The following are Messages and Service used for the thormang3_offset_tuner_serve
 [std_msgs/Bool]: /docs/en/popup/std_msgs_bool_msg/
 [std_msgs/Float64]: /docs/en/popup/std_msgs_Float64_msg/
 
-[geometry_msgs/Pose]:/docs/en/popup/geometry_msgs_Pose_msg/
+[geometry_msgs/Pose]: /docs/en/popup/geometry_msgs_Pose_msg/
 [geometry_msgs/WrenchStamped]: /docs/en/popup/geometry_msgs_WrenchStamped_msg/
 
 [sensor_msgs/PointCloud2]: /docs/en/popup/sensor_msgs_PointCloud2_msg/
 [sensor_msgs/Imu]: /docs/en/popup/sensor_msgs_IMU_msg/
 [sensor_msgs/JointState]: /docs/en/popup/sensor_msgs_JointState_msg/
 
-[visualization_msgs/MarkerArray]:/docs/en/popup/visualization_msgs_MarkerArray_msg/
+[visualization_msgs/MarkerArray]: /docs/en/popup/visualization_msgs_MarkerArray_msg/
 
 [StartAction.msg]: /docs/en/popup/StartAction.msg/
 

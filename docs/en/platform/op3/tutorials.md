@@ -678,7 +678,7 @@ The description for each parameter will pop up when hovering the mouse cursor ov
 ### Overview   
 This chapter explains upgraded walking and footstep planner.
 
-> Reference : [OP3-How-to-control-upgraded-walking]
+> Reference : [op3_how_to_control_upgraded_walking]
 
 ### Getting started  
 #### Installation
@@ -752,11 +752,11 @@ This chapter explains upgraded walking and footstep planner.
 [op3_manager]: [op3_manager.md]
 [Robot Information file(.robot)]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/Creating-new-robot-manager#41-robot-information-file-robot
 [Joint initialize file(.yaml)]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/Creating-new-robot-manager#42-joint-initialize-file-yaml
-[How to use offset tuner]: [OP3-How-to-use-offset-tuner.md]
+[How to use offset tuner]: [op3_how_to_use_offset_tuner.md]
 [Installing ROBOTIS ROS Package]:OP3_Recovery_of_ROBOTIS_OP3#24_installation_robotis_ros_packages.md  
 
 [op3_demo]: [op3_demo.md]
-[How to use walking tuner]: [OP3-How-to-use-walking-tuner.md]
+[How to use walking tuner]: [op3_how_to_use_walking_tuner.md]
 [Face Tracker - ROS Package]: https://github.com/ROBOTIS-GIT/face_detection
 
 [op3_action_module]: [op3_action_module.md]
@@ -766,7 +766,7 @@ This chapter explains upgraded walking and footstep planner.
 
 [Introduction to Humanoid Robotics]: http://www.springer.com/gp/book/9783642545351
 [op3_online_walking_module]: [op3_online_walking_module.md]
-[Online walking using footstep planner]: [OP3-How-to-control-upgraded-walking-using-footstep-planner.md]
+[Online walking using footstep planner]: [op3_how_to_control_upgraded_walking_using_footstep_planner.md]
 
 [op3_offset_tuner_server]: [op3_offset_tuner_server.md]
 [op3_offset_tuner_client]: [op3_offset_tuner_client.md]
@@ -774,6 +774,6 @@ This chapter explains upgraded walking and footstep planner.
 [op3_action_module]: [op3_action_module]
 
 
-[OP3-How-to-control-upgraded-walking]: [OP3-How-to-control-upgraded-walking.md]
+[op3_how_to_control_upgraded_walking]: [op3_how_to_control_upgraded_walking.md]
 [humanoid_navigation]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/humanoid_navigation
 [op3_navigation]: https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Tools/tree/master/op3_navigation

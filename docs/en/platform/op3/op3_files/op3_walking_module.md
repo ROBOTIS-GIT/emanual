@@ -95,16 +95,16 @@ The Motion Module is used in the manager in the form of library.
 
    - d_gain: not yet implemented
 
-[&lt;&lt; Back](ROBOTIS-OP3-Modules.md)
+[&lt;&lt; Back](robotis_op3_modules.md)
 
 
-[Creating new robot manager]:Creating-new-robot-manager.md
-[std_msgs/String]:/docs/en/popup/std_msgs_string/
+[Creating new robot manager]:creating_new_robot_manager.md
+[std_msgs/String]: /docs/en/popup/std_msgs_string/
 [op3_manager]:op3_manager.md
 
-[op3_walking_module_msgs/WalkingParam]:/docs/en/popup/op3_WalkingParam.msg/
-[WalkingParam.msg]:/docs/en/popup/op3_WalkingParam.msg/
-[robotis_controller_msgs/StatusMsg]:/docs/en/popup/StatusMsg.msg/
-[op3_walking_module_msgs/GetWalkingParam]:/docs/en/popup/op3_GetWalkingParam.srv/
+[op3_walking_module_msgs/WalkingParam]: /docs/en/popup/op3_WalkingParam.msg/
+[WalkingParam.msg]: /docs/en/popup/op3_WalkingParam.msg/
+[robotis_controller_msgs/StatusMsg]: /docs/en/popup/StatusMsg.msg/
+[op3_walking_module_msgs/GetWalkingParam]: /docs/en/popup/op3_GetWalkingParam.srv/
 [/op3_walking_module/config/param.yaml]:https://github.com/ROBOTIS-GIT/ROBOTIS-OP3/blob/master/op3_walking_module/config/param.yaml
 [Installing ROBOTIS ROS Package]:OP3_Recovery_of_ROBOTIS_OP3#24_installation_robotis_ros_packages  
