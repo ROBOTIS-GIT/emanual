@@ -22,9 +22,6 @@
 <loc>http://localhost:4000/docs/en/popup/FootStepCommand.msg/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/docs/en/platform/thormang3/gazebo_simulation/</loc>
-</url>
-<url>
 <loc>http://localhost:4000/docs/en/popup/GetJointModule.srv/</loc>
 </url>
 <url>
@@ -38,6 +35,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/docs/en/popup/GetReferenceStepData.srv/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/docs/en/popup/HeadJointPose.msg/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/docs/en/platform/thormang3/introduction/</loc>
@@ -71,12 +71,6 @@
 </url>
 <url>
 <loc>http://localhost:4000/docs/en/popup/PoseZRPY.msg/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/docs/en/platform/thormang3/quick_start/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/docs/en/platform/thormang3/references/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/docs/en/popup/RemoveExistingStepData.srv/</loc>
@@ -668,6 +662,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/docs/en/platform/turtlebot3/friends/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/docs/en/platform/thormang3/gazebo_simulation/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/docs/en/parts/motor/gm-10a/</loc>
@@ -1465,6 +1462,9 @@
 <loc>http://localhost:4000/docs/en/platform/op3/quick_start/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/docs/en/platform/thormang3/quick_start/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/docs/en/software/dynamixel/dynamixel_sdk/quick_start_video/</loc>
 </url>
 <url>
@@ -1481,6 +1481,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/docs/en/platform/op/references/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/docs/en/platform/thormang3/references/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/docs/kr/platform/robothand_mx28/</loc>

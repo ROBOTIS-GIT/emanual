@@ -178,11 +178,8 @@ $(function() {
     		alignTop: true,
     		overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
     	});
-    });
-    $(document).ready(function() {
-
-    	$('.popup2').magnificPopup({
-    		type: 'ajax',
+      $('.popup2').magnificPopup({
+    		type: 'inline',
     		alignTop: true,
     		overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
     	});
@@ -193,8 +190,9 @@ $(function() {
   <body class="layout--archive">
 
     <!--[if lt IE 9]>
-<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please upgrade your browser to improve your experience.</div>
 <![endif]-->
+
     <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
@@ -3147,85 +3145,11 @@ $(function() {
     
 
       
-      <li class="has-children">
-        <input type="radio" name="toplevel" id="toplevel_0" >
-        <label for="toplevel_0">Introduction [+]</label>
-
       
-
-      
-        <ul>
-        
-          
-
-          
-
-          
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#what-is-thormang3" onclick="extendnav()">What is THORMANG3?</a></li>
-          
-
-          
-          
-        
-          
-
-          
-
-          
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#package-contents" onclick="extendnav()">Package Contents</a></li>
-          
-
-          
-          
-        
-          
-
-          
-
-          
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#layout" onclick="extendnav()">Layout</a></li>
-          
-
-          
-          
-        
-          
-
-          
-
-          
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#specifications" onclick="extendnav()">Specifications</a></li>
-          
-
-          
-          
-        
-          
-
-          
-
-          
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#safety-information" onclick="extendnav()">Safety Information</a></li>
-          
-
-          
-          
-        
-        </ul>
-      
-      
-      </li>
-      
-    
-  
-    
-
-    
-
       
       <li class="has-children">
         <input type="radio" name="toplevel" id="toplevel_1" >
-        <label for="toplevel_1">Quick Start [+]</label>
+        <label for="toplevel_1">1. Introduction [+]</label>
 
       
 
@@ -3237,7 +3161,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#unpacking" onclick="extendnav()">Unpacking</a></li>
+          <li><a href="http://localhost:4000/docs/en/platform/thormang3/introduction/#what-is-thormang3" onclick="extendnav()">1. What is THORMANG3?</a></li>
           
 
           
@@ -3248,7 +3172,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#power-on" onclick="extendnav()">Power On</a></li>
+          <li><a href="http://localhost:4000/docs/en/platform/thormang3/introduction/#package-contents" onclick="extendnav()">2. Package Contents</a></li>
           
 
           
@@ -3259,7 +3183,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#connect-to-thormang3" onclick="extendnav()">Connect to THORMANG3</a></li>
+          <li><a href="http://localhost:4000/docs/en/platform/thormang3/introduction/#layout" onclick="extendnav()">3. Layout</a></li>
           
 
           
@@ -3270,7 +3194,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#basic-operation" onclick="extendnav()">Basic Operation</a></li>
+          <li><a href="http://localhost:4000/docs/en/platform/thormang3/introduction/#specifications" onclick="extendnav()">4. Specifications</a></li>
           
 
           
@@ -3281,29 +3205,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#power-off" onclick="extendnav()">Power Off</a></li>
-          
-
-          
-          
-        
-          
-
-          
-
-          
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#battery-charge" onclick="extendnav()">Battery Charge</a></li>
-          
-
-          
-          
-        
-          
-
-          
-
-          
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#repacking" onclick="extendnav()">Repacking</a></li>
+          <li><a href="http://localhost:4000/docs/en/platform/thormang3/introduction/#safety-information" onclick="extendnav()">5. Safety Information</a></li>
           
 
           
@@ -3321,9 +3223,11 @@ $(function() {
     
 
       
+      
+      
       <li class="has-children">
         <input type="radio" name="toplevel" id="toplevel_2" >
-        <label for="toplevel_2">Getting Started [+]</label>
+        <label for="toplevel_2">2. Quick Start [+]</label>
 
       
 
@@ -3335,7 +3239,107 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#os-install" onclick="extendnav()">OS Install</a></li>
+          <li><a href="http://localhost:4000/docs/en/platform/thormang3/quick_start/#unpacking" onclick="extendnav()">1. Unpacking</a></li>
+          
+
+          
+          
+        
+          
+
+          
+
+          
+          <li><a href="http://localhost:4000/docs/en/platform/thormang3/quick_start/#power-on" onclick="extendnav()">2. Power On</a></li>
+          
+
+          
+          
+        
+          
+
+          
+
+          
+          <li><a href="http://localhost:4000/docs/en/platform/thormang3/quick_start/#connect-to-thormang3" onclick="extendnav()">3. Connect to THORMANG3</a></li>
+          
+
+          
+          
+        
+          
+
+          
+
+          
+          <li><a href="http://localhost:4000/docs/en/platform/thormang3/quick_start/#basic-operation" onclick="extendnav()">4. Basic Operation</a></li>
+          
+
+          
+          
+        
+          
+
+          
+
+          
+          <li><a href="http://localhost:4000/docs/en/platform/thormang3/quick_start/#power-off" onclick="extendnav()">5. Power Off</a></li>
+          
+
+          
+          
+        
+          
+
+          
+
+          
+          <li><a href="http://localhost:4000/docs/en/platform/thormang3/quick_start/#battery-charge" onclick="extendnav()">6. Battery Charge</a></li>
+          
+
+          
+          
+        
+          
+
+          
+
+          
+          <li><a href="http://localhost:4000/docs/en/platform/thormang3/quick_start/#repacking" onclick="extendnav()">7. Repacking</a></li>
+          
+
+          
+          
+        
+        </ul>
+      
+      
+      </li>
+      
+    
+  
+    
+
+    
+
+      
+      
+      
+      <li class="has-children">
+        <input type="radio" name="toplevel" id="toplevel_3" >
+        <label for="toplevel_3">3. Getting Started [+]</label>
+
+      
+
+      
+        <ul>
+        
+          
+
+          
+
+          
+          <li><a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#os-install" onclick="extendnav()">1. OS Install</a></li>
           
 
           
@@ -3347,8 +3351,8 @@ $(function() {
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="Network Setting" >
-            <label for="Network Setting">Network Setting [+]</label>
+            <input type="radio" name="sublevel" id="Getting Started_2" >
+            <label for="Getting Started_2">2. Network Setting [+]</label>
           
 
           
@@ -3381,7 +3385,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#ros-install" onclick="extendnav()">ROS Install</a></li>
+          <li><a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#ros-install" onclick="extendnav()">3. ROS Install</a></li>
           
 
           
@@ -3393,8 +3397,8 @@ $(function() {
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="ROS Environment Setting" >
-            <label for="ROS Environment Setting">ROS Environment Setting [+]</label>
+            <input type="radio" name="sublevel" id="Getting Started_4" >
+            <label for="Getting Started_4">4. ROS Environment Setting [+]</label>
           
 
           
@@ -3428,8 +3432,8 @@ $(function() {
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="ROBOTIS ROS Package Install" >
-            <label for="ROBOTIS ROS Package Install">ROBOTIS ROS Package Install [+]</label>
+            <input type="radio" name="sublevel" id="Getting Started_5" >
+            <label for="Getting Started_5">5. ROBOTIS ROS Package Install [+]</label>
           
 
           
@@ -3479,8 +3483,8 @@ $(function() {
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="Additional ROS Package Install" >
-            <label for="Additional ROS Package Install">Additional ROS Package Install [+]</label>
+            <input type="radio" name="sublevel" id="Getting Started_6" >
+            <label for="Getting Started_6">6. Additional ROS Package Install [+]</label>
           
 
           
@@ -3520,9 +3524,11 @@ $(function() {
     
 
       
+      
+      
       <li class="has-children">
-        <input type="radio" name="toplevel" id="toplevel_3" >
-        <label for="toplevel_3">THORMANG3 ROS Packages [+]</label>
+        <input type="radio" name="toplevel" id="toplevel_4" >
+        <label for="toplevel_4">4. THORMANG3 ROS Packages [+]</label>
 
       
 
@@ -3535,8 +3541,8 @@ $(function() {
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="MPC Packages" >
-            <label for="MPC Packages">MPC Packages [+]</label>
+            <input type="radio" name="sublevel" id="THORMANG3 ROS Packages_1" >
+            <label for="THORMANG3 ROS Packages_1">1. MPC Packages [+]</label>
           
 
           
@@ -3642,8 +3648,8 @@ $(function() {
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="PPC Packages" >
-            <label for="PPC Packages">PPC Packages [+]</label>
+            <input type="radio" name="sublevel" id="THORMANG3 ROS Packages_2" >
+            <label for="THORMANG3 ROS Packages_2">2. PPC Packages [+]</label>
           
 
           
@@ -3677,8 +3683,8 @@ $(function() {
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="OPC Packages" >
-            <label for="OPC Packages">OPC Packages [+]</label>
+            <input type="radio" name="sublevel" id="THORMANG3 ROS Packages_3" >
+            <label for="THORMANG3 ROS Packages_3">3. OPC Packages [+]</label>
           
 
           
@@ -3736,8 +3742,8 @@ $(function() {
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="Common Packages" >
-            <label for="Common Packages">Common Packages [+]</label>
+            <input type="radio" name="sublevel" id="THORMANG3 ROS Packages_4" >
+            <label for="THORMANG3 ROS Packages_4">4. Common Packages [+]</label>
           
 
           
@@ -3771,8 +3777,8 @@ $(function() {
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="Tools Packages" >
-            <label for="Tools Packages">Tools Packages [+]</label>
+            <input type="radio" name="sublevel" id="THORMANG3 ROS Packages_5" >
+            <label for="THORMANG3 ROS Packages_5">5. Tools Packages [+]</label>
           
 
           
@@ -3806,8 +3812,8 @@ $(function() {
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="THORMANG msgs Package" >
-            <label for="THORMANG msgs Package">THORMANG msgs Package [+]</label>
+            <input type="radio" name="sublevel" id="THORMANG3 ROS Packages_6" >
+            <label for="THORMANG3 ROS Packages_6">6. THORMANG msgs Package [+]</label>
           
 
           
@@ -3879,9 +3885,11 @@ $(function() {
     
 
       
+      
+      
       <li class="has-children">
-        <input type="radio" name="toplevel" id="toplevel_4" >
-        <label for="toplevel_4">THORMANG3 Operation [+]</label>
+        <input type="radio" name="toplevel" id="toplevel_5" >
+        <label for="toplevel_5">5. THORMANG3 Operation [+]</label>
 
       
 
@@ -3893,7 +3901,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#preparation" onclick="extendnav()">Preparation</a></li>
+          <li><a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#preparation" onclick="extendnav()">1. Preparation</a></li>
           
 
           
@@ -3904,7 +3912,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#simple-demo" onclick="extendnav()">Simple Demo</a></li>
+          <li><a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#simple-demo" onclick="extendnav()">2. Simple Demo</a></li>
           
 
           
@@ -3916,8 +3924,8 @@ $(function() {
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="GUI Program" >
-            <label for="GUI Program">GUI Program [+]</label>
+            <input type="radio" name="sublevel" id="THORMANG3 Operation_3" >
+            <label for="THORMANG3 Operation_3">3. GUI Program [+]</label>
           
 
           
@@ -3990,7 +3998,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#offset-tuner" onclick="extendnav()">Offset Tuner</a></li>
+          <li><a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#offset-tuner" onclick="extendnav()">4. Offset Tuner</a></li>
           
 
           
@@ -4008,52 +4016,11 @@ $(function() {
     
 
       
-      <li class="has-children">
-        <input type="radio" name="toplevel" id="toplevel_5" >
-        <label for="toplevel_5">Gazebo Simulation [+]</label>
-
       
-
-      
-        <ul>
-        
-          
-
-          
-
-          
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#install-gazebo" onclick="extendnav()">Install Gazebo</a></li>
-          
-
-          
-          
-        
-          
-
-          
-
-          
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#run-simulation" onclick="extendnav()">Run Simulation</a></li>
-          
-
-          
-          
-        
-        </ul>
-      
-      
-      </li>
-      
-    
-  
-    
-
-    
-
       
       <li class="has-children">
         <input type="radio" name="toplevel" id="toplevel_6" >
-        <label for="toplevel_6">References [+]</label>
+        <label for="toplevel_6">6. Gazebo Simulation [+]</label>
 
       
 
@@ -4065,7 +4032,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#router-setting" onclick="extendnav()">Router Setting</a></li>
+          <li><a href="http://localhost:4000/docs/en/platform/thormang3/gazebo_simulation/#install-gazebo" onclick="extendnav()">1. Install Gazebo</a></li>
           
 
           
@@ -4076,7 +4043,41 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#lidar-ip-setting" onclick="extendnav()">LiDAR IP Setting</a></li>
+          <li><a href="http://localhost:4000/docs/en/platform/thormang3/gazebo_simulation/#run-simulation" onclick="extendnav()">2. Run Simulation</a></li>
+          
+
+          
+          
+        
+        </ul>
+      
+      
+      </li>
+      
+    
+  
+    
+
+    
+
+      
+      
+      
+      <li class="has-children">
+        <input type="radio" name="toplevel" id="toplevel_7" >
+        <label for="toplevel_7">7. References [+]</label>
+
+      
+
+      
+        <ul>
+        
+          
+
+          
+
+          
+          <li><a href="http://localhost:4000/docs/en/platform/thormang3/references/#router-setting" onclick="extendnav()">1. Router Setting</a></li>
           
 
           
@@ -4087,7 +4088,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#system-block-diagram" onclick="extendnav()">System Block Diagram</a></li>
+          <li><a href="http://localhost:4000/docs/en/platform/thormang3/references/#lidar-ip-setting" onclick="extendnav()">2. LiDAR IP Setting</a></li>
           
 
           
@@ -4098,7 +4099,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#technical-specifications" onclick="extendnav()">Technical Specifications</a></li>
+          <li><a href="http://localhost:4000/docs/en/platform/thormang3/references/#system-block-diagram" onclick="extendnav()">3. System Block Diagram</a></li>
           
 
           
@@ -4109,7 +4110,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#id-map" onclick="extendnav()">ID Map</a></li>
+          <li><a href="http://localhost:4000/docs/en/platform/thormang3/references/#technical-specifications" onclick="extendnav()">4. Technical Specifications</a></li>
           
 
           
@@ -4120,7 +4121,18 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#physical-properties" onclick="extendnav()">Physical Properties</a></li>
+          <li><a href="http://localhost:4000/docs/en/platform/thormang3/references/#id-map" onclick="extendnav()">5. ID Map</a></li>
+          
+
+          
+          
+        
+          
+
+          
+
+          
+          <li><a href="http://localhost:4000/docs/en/platform/thormang3/references/#physical-properties" onclick="extendnav()">6. Physical Properties</a></li>
           
 
           

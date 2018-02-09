@@ -14,7 +14,7 @@ Action contains all joint angles per each time frame.
 
 #### 2.2 Usage  
 Motion Module is used in the form of lib in the manager.  
-> Reference : [Creating new robot manager](Creating_new_robot_manager.md)
+> Reference : [Creating new robot manager]{: .popup}
 
 ### 3. ROS API  
 #### 3.1 Subscribed Topics  
@@ -42,5 +42,6 @@ Motion Module is used in the form of lib in the manager.
 
 [std_msgs/Int32]: /docs/en/popup/std_msgs_int32_message/
 
+[Creating new robot manager]: /docs/en/platform/op3/op3_files/Creating_new_robot_manager/
 [robotis_controller_msgs/StatusMsg]: /docs/en/popup/StatusMsg.msg/
 [op3_action_module_msgs/IsRunning]: /docs/en/popup/op3_IsRunning.srv/

@@ -11,7 +11,11 @@ sidebar:
   nav: "turtlebot3"
 ---
 
+<div style="counter-reset: h1 1"></div>
+
 # [Notice](#notice)
+
+## [Publish](#publish)
 
   - 02/02/2018 [How to use LDS-01 of TurtleBot3](https://discourse.ros.org/t/tb3-how-to-use-lds-01-of-turtlebot3/3862)
   - 01/30/2018 [TurtleBot3 Basic operation demo](https://discourse.ros.org/t/tb3-turtlebot3-basic-operation-demo/3840)
@@ -48,7 +52,7 @@ sidebar:
   - 11/16/2016 [Payload Test of TurtleBot3](https://discourse.ros.org/t/tb3-payload-test-of-turtlebot3/827)
   - 10/13/2016 [Announcing TurtleBot3](https://discourse.ros.org/t/announcing-turtlebot3/623)
 
-# [News](#news)
+## [News](#news)
 
   - 11/30/2017 [Robot Gift Guide 2017, IEEE Spectrum](https://spectrum.ieee.org/automaton/robotics/home-robots/robot-gift-guide-2017)
   - 11/07/2017 [10 Memorable ROS-based Robots, Robotics Trends](http://roboticstrends.com/article/10_memorable_ros_based_robots)

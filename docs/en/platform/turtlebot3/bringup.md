@@ -11,7 +11,7 @@ sidebar:
   nav: "turtlebot3"
 ---
 
-<div style="counter-reset: h1 7"></div>
+<div style="counter-reset: h1 8"></div>
 
 # [Bringup](#bringup)
 

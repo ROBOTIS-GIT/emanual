@@ -11,7 +11,7 @@ sidebar:
   nav: "turtlebot3"
 ---
 
-<div style="counter-reset: h1 4"></div>
+<div style="counter-reset: h1 5"></div>
 
 # [PC Software Setup](#pc-software-setup)
 

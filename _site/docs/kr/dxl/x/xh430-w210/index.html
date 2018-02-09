@@ -178,11 +178,8 @@ $(function() {
     		alignTop: true,
     		overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
     	});
-    });
-    $(document).ready(function() {
-
-    	$('.popup2').magnificPopup({
-    		type: 'ajax',
+      $('.popup2').magnificPopup({
+    		type: 'inline',
     		alignTop: true,
     		overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
     	});
@@ -193,8 +190,9 @@ $(function() {
   <body class="layout--archive">
 
     <!--[if lt IE 9]>
-<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please upgrade your browser to improve your experience.</div>
 <![endif]-->
+
     <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
@@ -3417,9 +3415,11 @@ $(function() {
     
 
       
+      
+      
       <li class="has-children">
-        <input type="radio" name="toplevel" id="toplevel_0" >
-        <label for="toplevel_0">주요 사양 [+]</label>
+        <input type="radio" name="toplevel" id="toplevel_1" >
+        <label for="toplevel_1">1. 주요 사양 [+]</label>
 
       
 
@@ -3431,7 +3431,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#성능-그래프" onclick="extendnav()">성능 그래프</a></li>
+          <li><a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#성능-그래프" onclick="extendnav()">1. 성능 그래프</a></li>
           
 
           
@@ -3449,9 +3449,11 @@ $(function() {
     
 
       
+      
+      
       <li class="has-children">
-        <input type="radio" name="toplevel" id="toplevel_1" >
-        <label for="toplevel_1">컨트롤 테이블 [+]</label>
+        <input type="radio" name="toplevel" id="toplevel_2" >
+        <label for="toplevel_2">2. 컨트롤 테이블 [+]</label>
 
       
 
@@ -3464,8 +3466,8 @@ $(function() {
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="컨트롤 테이블, 데이터, 주소" >
-            <label for="컨트롤 테이블, 데이터, 주소">컨트롤 테이블, 데이터, 주소 [+]</label>
+            <input type="radio" name="sublevel" id="컨트롤 테이블_1" >
+            <label for="컨트롤 테이블_1">1. 컨트롤 테이블, 데이터, 주소 [+]</label>
           
 
           
@@ -3514,7 +3516,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#eeprom-영역" onclick="extendnav()">EEPROM 영역</a></li>
+          <li><a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#eeprom-영역" onclick="extendnav()">2. EEPROM 영역</a></li>
           
 
           
@@ -3525,7 +3527,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#ram-영역" onclick="extendnav()">RAM 영역</a></li>
+          <li><a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#ram-영역" onclick="extendnav()">3. RAM 영역</a></li>
           
 
           
@@ -3537,8 +3539,8 @@ $(function() {
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="컨트롤 테이블 설명" >
-            <label for="컨트롤 테이블 설명">컨트롤 테이블 설명 [+]</label>
+            <input type="radio" name="sublevel" id="컨트롤 테이블_4" >
+            <label for="컨트롤 테이블_4">4. 컨트롤 테이블 설명 [+]</label>
           
 
           
@@ -3938,52 +3940,11 @@ $(function() {
     
 
       
-      <li class="has-children">
-        <input type="radio" name="toplevel" id="toplevel_2" >
-        <label for="toplevel_2">조립 예시 [+]</label>
-
       
-
-      
-        <ul>
-        
-          
-
-          
-
-          
-          <li><a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#배선-예시" onclick="extendnav()">배선 예시</a></li>
-          
-
-          
-          
-        
-          
-
-          
-
-          
-          <li><a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#옵션프레임-조립" onclick="extendnav()">옵션프레임 조립</a></li>
-          
-
-          
-          
-        
-        </ul>
-      
-      
-      </li>
-      
-    
-  
-    
-
-    
-
       
       <li class="has-children">
         <input type="radio" name="toplevel" id="toplevel_3" >
-        <label for="toplevel_3">유지보수 [+]</label>
+        <label for="toplevel_3">3. 조립 예시 [+]</label>
 
       
 
@@ -3995,7 +3956,18 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#혼과-베어링-교체" onclick="extendnav()">혼과 베어링 교체</a></li>
+          <li><a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#배선-예시" onclick="extendnav()">1. 배선 예시</a></li>
+          
+
+          
+          
+        
+          
+
+          
+
+          
+          <li><a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#옵션프레임-조립" onclick="extendnav()">2. 옵션프레임 조립</a></li>
           
 
           
@@ -4013,9 +3985,11 @@ $(function() {
     
 
       
+      
+      
       <li class="has-children">
         <input type="radio" name="toplevel" id="toplevel_4" >
-        <label for="toplevel_4">참고자료 [+]</label>
+        <label for="toplevel_4">4. 유지보수 [+]</label>
 
       
 
@@ -4027,7 +4001,41 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#퀵스타트" onclick="extendnav()">퀵스타트</a></li>
+          <li><a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#혼과-베어링-교체" onclick="extendnav()">1. 혼과 베어링 교체</a></li>
+          
+
+          
+          
+        
+        </ul>
+      
+      
+      </li>
+      
+    
+  
+    
+
+    
+
+      
+      
+      
+      <li class="has-children">
+        <input type="radio" name="toplevel" id="toplevel_5" >
+        <label for="toplevel_5">5. 참고자료 [+]</label>
+
+      
+
+      
+        <ul>
+        
+          
+
+          
+
+          
+          <li><a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#퀵스타트" onclick="extendnav()">1. 퀵스타트</a></li>
           
 
           
@@ -4038,7 +4046,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#커넥터-정보" onclick="extendnav()">커넥터 정보</a></li>
+          <li><a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#커넥터-정보" onclick="extendnav()">2. 커넥터 정보</a></li>
           
 
           
@@ -4049,7 +4057,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#도면" onclick="extendnav()">도면</a></li>
+          <li><a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#도면" onclick="extendnav()">3. 도면</a></li>
           
 
           

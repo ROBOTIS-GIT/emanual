@@ -20,7 +20,7 @@ sidebar:
 ### [ROBOTIS-OP3 Modules]
 #### Motion Module
 1. [op3_action_module]{: .popup} : This module manages every joint actions.  
-2. [op3_base_module] : This module manages initial pose and basic functions.  
+2. [op3_base_module]{: .popup2} : This module manages initial pose and basic functions.  
 3. [op3_head_control_module] : This module controls the head.  
 4. [op3_walking_module] : This module controls walking.  
 5. [op3_online_walking_module] : This module controls online-walking(upgraded walking).

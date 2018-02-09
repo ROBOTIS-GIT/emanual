@@ -7761,60 +7761,124 @@ protocol2:
 #Ollo Bug Kit sidebar
 ollo_bugkit:
   - title: "Introduction"
+    titlekr: "버그 키트"
     url: /edu/ollo/bugkit/#introduction
+    urlkr: /edu/ollo/bugkit/#버그-키트
   - title: "Getting Started"
+    titlekr: "시작하기"
     url: /edu/ollo/bugkit/#getting-started
+    urlkr: /edu/ollo/bugkit/#시작하기
     children:
       - title: "Part List"
+        titlekr: "부품 리스트"
         url: /edu/ollo/bugkit/#part-list
+        urlkr: /edu/ollo/bugkit/#부품-리스트
       - title: "How to Play"
+        titlekr: "버그 작동하기"
         url: /edu/ollo/bugkit/#how-to-play
+        urlkr: /edu/ollo/bugkit/#버그-작동하기
       - title: "ZIGBee Wireless Control"
+        titlekr: "지그비 무선 조종"
         url: /edu/ollo/bugkit/#zigbee-wireless-control
+        urlkr: /edu/ollo/bugkit/#지그비-무선-조종
   - title: "Applications"
+    titlekr: "응용하기"
     url: /edu/ollo/bugkit/#applications
+    urlkr: /edu/ollo/bugkit/#응용하기
     children:
       - title: "Battle Bug"
+        titlekr: "배틀 버그 만들기"
         url: /edu/ollo/bugkit/#battle-bug
+        urlkr: /edu/ollo/bugkit/#배틀-버그-만들기
       - title: "Car"
+        titlekr: "자동차 만들기"
         url: /edu/ollo/bugkit/#car
+        urlkr: /edu/ollo/bugkit/#자동차-만들기
       - title: "Other Devices"
+        titlekr: "그 외의 장치 활용하기"
         url: /edu/ollo/bugkit/#other-devices
+        urlkr: /edu/ollo/bugkit/#그-외의-장치-활용하기
   - title: "Learning Program"
+    titlekr: "프로그래밍 학습"
     url: /edu/ollo/bugkit/#learning-program
+    urlkr: /edu/ollo/bugkit/#프로그래밍-학습
     children:
       - title: "Print on the Screen"
+        titlekr: "화면 출력하기"
         url: /edu/ollo/bugkit/#print-on-the-screen
+        urlkr: /edu/ollo/bugkit/#화면-출력하기
       - title: "Move the Bug"
+        titlekr: "버그 움직이기"
         url: /edu/ollo/bugkit/#move-the-bug
+        urlkr: /edu/ollo/bugkit/#버그-움직이기
       - title: "Line Tracing Bug"
+        titlekr: "버그 라인 따라가기"
         url: /edu/ollo/bugkit/#line-tracing-bug
+        urlkr: /edu/ollo/bugkit/#버그-라인-따라가기
       - title: "Sensing Bug"
+        titlekr: "센서에 반응하는 버그"
         url: /edu/ollo/bugkit/#sensing-bug
+        urlkr: /edu/ollo/bugkit/#센서에-반응하는-버그
       - title: "Control the Bug"
+        titlekr: "버그 조종하기"
         url: /edu/ollo/bugkit/#control-the-bug
+        urlkr: /edu/ollo/bugkit/#버그-조종하기
   - title: "Download"
+    titlekr: "다운로드"
     url: /edu/ollo/bugkit/#download
+    urlkr: /edu/ollo/bugkit/#다운로드
 
 #Ollo Explorer
 ollo_explorer:
   - title: "Introduction"
+    titlekr: ""
     url: /edu/ollo/explorer/#introduction
+    urlkr: /edu/ollo/explorer/#
+      titlekr: ""
   - title: "Part List"
+    titlekr: ""
+    - title: "Part List"
+      titlekrkr:
     url: /edu/ollo/explorer/#part-list
+    urlkr: /edu/ollo/explorer/#
+      titlekr: ""
   - title: "Quick Start"
+    titlekr: ""
+    - title: "Quick Start"
+      titlekrkr:
     url: /edu/ollo/explorer/#quick-start
+    urlkr: /edu/ollo/explorer/#
+      titlekr: ""
     children:
       - title: "How to Play"
+      children:
+        -kr title: "How to Play
+        titlekr: ""
         url: /edu/ollo/explorer/#how-to-play
+        urlkr: /edu/ollo/explorer/#
+          titlekr: ""
       - title: "Select Program"
+        titlekr: ""
+        - title: "Select Program"
+          titlekrkr:
         url: /edu/ollo/explorer/#select-program
+        urlkr: /edu/ollo/explorer/#
+          titlekr: ""
   - title: "Download"
+    titlekr: ""
+    - title: "Download"
+      titlekrkr: ""
     url: /edu/ollo/explorer/#download
+    urlkr: /edu/ollo/explorer/#
+      titlekr: ""
 
 #Ollo Inventor
 ollo_inventor:
   - title: "Introduction"
+  
+  #Ollo Inventor
+  ollo_inventor:
+    -kr title: "
     url: /edu/ollo/inventor/#introduction
   - title: "Part List"
     url: /edu/ollo/inventor/#part-list
@@ -8970,178 +9034,45 @@ op3:
     - title: "Cover Skin Data"
       url: /platform/op3/hardware/#cover-skin-data
   - title: "Recovery"
-    url: /platform/op3/getting_started/#recovery
-  - title: "Manual Installation"
-    url: /platform/op3/getting_started/#manual-installation
-  - title: "Recovery of ROBOTIS-OP3"
-    url: /platform/op3/getting_started/#recovery-of-robotis-op3
-  - title: ""
-    url: /platform/op3/getting_started/#
-  - title: ""
-    url: /platform/op3/getting_started/#
-  - title: ""
-    url: /platform/op3/getting_started/#
-  - title: ""
-    url: /platform/op3/getting_started/#
-  - title: ""
-    url: /platform/op3/getting_started/#
-  - title: ""
-    url: /platform/op3/getting_started/#
-  - title: ""
-    url: /platform/op3/getting_started/#
-  - title: ""
-    url: /platform/op3/getting_started/#
-  - title: ""
-    url: /platform/op3/getting_started/#
-  - title: ""
-    url: /platform/op3/getting_started/#
-  - title: ""
-    url: /platform/op3/getting_started/#
-  - title: ""
-    url: /platform/op3/getting_started/#
-  - title: ""
-    url: /platform/op3/getting_started/#
-  - title: ""
-    url: /platform/op3/getting_started/#
-  - title: ""
-    url: /platform/op3/getting_started/#
-  - title: ""
-    url: /platform/op3/getting_started/#
-  - title: ""
-    url: /platform/op3/getting_started/#
-  - title: ""
-    url: /platform/op3/getting_started/#
-  - title: ""
-    url: /platform/op3/getting_started/#
-  - title: ""
-    url: /platform/op3/getting_started/#
-  - title: ""
-    url: /platform/op3/getting_started/#
-  - title: ""
-    url: /platform/op3/getting_started/#
-  - title: ""
-    url: /platform/op3/getting_started/#
-  - title: ""
-    url: /platform/op3/getting_started/#
-  - title: ""
-    url: /platform/op3/getting_started/#
-  - title: ""
-    url: /platform/op3/getting_started/#
-  - title: ""
-    url: /platform/op3/getting_started/#
-  - title: ""
-    url: /platform/op3/getting_started/#
-  - title: ""
-    url: /platform/op3/getting_started/#
-  - title: ""
-    url: /platform/op3/getting_started/#
-  - title: ""
-    url: /platform/op3/getting_started/#
-  - title: ""
-    url: /platform/op3/getting_started/#
-  - title: ""
-    url: /platform/op3/getting_started/#
-  - title: ""
-    url: /platform/op3/getting_started/#
-  - title: ""
-    url: /platform/op3/getting_started/#
-  - title: ""
-    url: /platform/op3/getting_started/#
-  - title: ""
-    url: /platform/op3/getting_started/#
-  - title: ""
-    url: /platform/op3/getting_started/#
-  - title: ""
-    url: /platform/op3/getting_started/#
-  - title: ""
-    url: /platform/op3/getting_started/#
-  - title: ""
-    url: /platform/op3/getting_started/#
-  - title: ""
-    url: /platform/op3/getting_started/#
-  - title: ""
-    url: /platform/op3/getting_started/#
-  - title: ""
-    url: /platform/op3/getting_started/#
-  - title: ""
-    url: /platform/op3/getting_started/#
-  - title: ""
-    url: /platform/op3/getting_started/#
-  - title: ""
-    url: /platform/op3/getting_started/#
-  - title: ""
-    url: /platform/op3/getting_started/#
-  - title: ""
-    url: /platform/op3/getting_started/#
-  - title: ""
-    url: /platform/op3/getting_started/#
-  - title: ""
-    url: /platform/op3/getting_started/#
-  - title: ""
-    url: /platform/op3/getting_started/#
-  - title: ""
-    url: /platform/op3/getting_started/#
-  - title: ""
-    url: /platform/op3/getting_started/#
-  - title: ""
-    url: /platform/op3/getting_started/#
-  - title: ""
-    url: /platform/op3/getting_started/#
-  - title: ""
-    url: /platform/op3/getting_started/#
-  - title: ""
-    url: /platform/op3/getting_started/#
-  - title: ""
-    url: /platform/op3/getting_started/#
-  - title: ""
-    url: /platform/op3/getting_started/#
-  - title: ""
-    url: /platform/op3/getting_started/#
-  - title: ""
-    url: /platform/op3/getting_started/#
-  - title: ""
-    url: /platform/op3/getting_started/#
-  - title: ""
-    url: /platform/op3/getting_started/#
-  - title: ""
-    url: /platform/op3/getting_started/#
-  - title: ""
-    url: /platform/op3/getting_started/#
-  - title: ""
-    url: /platform/op3/getting_started/#
+    url: /platform/op3/recovery/
+    children:
+    - title: "Manual Installation"
+      url: /platform/op3/recovery/#manual-installation
+    - title: "Recovery of ROBOTIS-OP3"
+      url: /platform/op3/recovery/#recovery-of-robotis-op3
 
 #THORMANG3
 thormang3:
   - title: "Introduction"
-    url: /platform/thormang3/getting_started/#introduction
+    url: /platform/thormang3/introduction/#introduction
     children:
     - title: "What is THORMANG3?"
-      url: /platform/thormang3/getting_started/#what-is-thormang3
+      url: /platform/thormang3/introduction/#what-is-thormang3
     - title: "Package Contents"
-      url: /platform/thormang3/getting_started/#package-contents
+      url: /platform/thormang3/introduction/#package-contents
     - title: "Layout"
-      url: /platform/thormang3/getting_started/#layout
+      url: /platform/thormang3/introduction/#layout
     - title: "Specifications"
-      url: /platform/thormang3/getting_started/#specifications
+      url: /platform/thormang3/introduction/#specifications
     - title: "Safety Information"
-      url: /platform/thormang3/getting_started/#safety-information
+      url: /platform/thormang3/introduction/#safety-information
   - title: "Quick Start"
-    url: /platform/thormang3/getting_started/#quick-start
+    url: /platform/thormang3/quick_start/#quick-start
     children:
     - title: "Unpacking"
-      url: /platform/thormang3/getting_started/#unpacking
+      url: /platform/thormang3/quick_start/#unpacking
     - title: "Power On"
-      url: /platform/thormang3/getting_started/#power-on
+      url: /platform/thormang3/quick_start/#power-on
     - title: "Connect to THORMANG3"
-      url: /platform/thormang3/getting_started/#connect-to-thormang3
+      url: /platform/thormang3/quick_start/#connect-to-thormang3
     - title: "Basic Operation"
-      url: /platform/thormang3/getting_started/#basic-operation
+      url: /platform/thormang3/quick_start/#basic-operation
     - title: "Power Off"
-      url: /platform/thormang3/getting_started/#power-off
+      url: /platform/thormang3/quick_start/#power-off
     - title: "Battery Charge"
-      url: /platform/thormang3/getting_started/#battery-charge
+      url: /platform/thormang3/quick_start/#battery-charge
     - title: "Repacking"
-      url: /platform/thormang3/getting_started/#repacking
+      url: /platform/thormang3/quick_start/#repacking
   - title: "Getting Started"
     url: /platform/thormang3/getting_started/#getting-started
     children:
@@ -9285,27 +9216,27 @@ thormang3:
     - title: "Offset Tuner"
       url: /platform/thormang3/thormang3_operation/#offset-tuner
   - title: "Gazebo Simulation"
-    url: /platform/thormang3/thormang3_operation/#gazebo-simulation
+    url: /platform/thormang3/gazebo_simulation/#gazebo-simulation
     children:
     - title: "Install Gazebo"
-      url: /platform/thormang3/thormang3_operation/#install-gazebo
+      url: /platform/thormang3/gazebo_simulation/#install-gazebo
     - title: "Run Simulation"
-      url: /platform/thormang3/thormang3_operation/#run-simulation
+      url: /platform/thormang3/gazebo_simulation/#run-simulation
   - title: "References"
-    url: /platform/thormang3/thormang3_operation/#references
+    url: /platform/thormang3/references/#references
     children:
     - title: "Router Setting"
-      url: /platform/thormang3/thormang3_operation/#router-setting
+      url: /platform/thormang3/references/#router-setting
     - title: "LiDAR IP Setting"
-      url: /platform/thormang3/thormang3_operation/#lidar-ip-setting
+      url: /platform/thormang3/references/#lidar-ip-setting
     - title: "System Block Diagram"
-      url: /platform/thormang3/thormang3_operation/#system-block-diagram
+      url: /platform/thormang3/references/#system-block-diagram
     - title: "Technical Specifications"
-      url: /platform/thormang3/thormang3_operation/#technical-specifications
+      url: /platform/thormang3/references/#technical-specifications
     - title: "ID Map"
-      url: /platform/thormang3/thormang3_operation/#id-map
+      url: /platform/thormang3/references/#id-map
     - title: "Physical Properties"
-      url: /platform/thormang3/thormang3_operation/#physical-properties
+      url: /platform/thormang3/references/#physical-properties
 
 #TURTLEBOT3
 turtlebot3:
@@ -9317,8 +9248,8 @@ turtlebot3:
   - title: "Notice"
     url: /platform/turtlebot3/notice/#notice
     children:
-    - title: "Notice"
-      url: /platform/turtlebot3/notice/#notice
+    - title: "Publish"
+      url: /platform/turtlebot3/notice/#publish
     - title: "News"
       url: /platform/turtlebot3/notice/#news
   - title: "Features"
@@ -13019,29 +12950,53 @@ opencr10:
 
 rc-100:
   - title: "Introduction"
+    titlekr: "개요"
     url: /parts/communication/rc-100/#introduction
+    urlkr: /parts/communication/rc-100/#개요
   - title: "Specifications"
+    titlekr: "제품 사양"
     url: /parts/communication/rc-100/#specifications
+    urlkr: /parts/communication/rc-100/#제품-사양
   - title: "How to Use"
+    titlekr: "사용 방법"
     url: /parts/communication/rc-100/#how-to-use
+    urlkr: /parts/communication/rc-100/#사용-방법
   - title: "How to Connect"
+    titlekr: "연결하기"
     url: /parts/communication/rc-100/#how-to-connect
+    urlkr: /parts/communication/rc-100/#연결하기
   - title: "Check Communication Mode"
+    titlekr: "통신모드 확인하기"
     url: /parts/communication/rc-100/#check-communication-mode
+    urlkr: /parts/communication/rc-100/#통신모드-확인하기
   - title: "How to Set IR Channel"
+    titlekr: "적외선 통신채널 설정 방법"
     url: /parts/communication/rc-100/#how-to-set-ir-channel
+    urlkr: /parts/communication/rc-100/#적외선-통신채널-설정-방법
   - title: "Install ZIG-100/BT-100"
+    titlekr: "ZIG-100/BT-100 모듈 장착 방법"
     url: /parts/communication/rc-100/#install-zig-100bt-100
+    urlkr: /parts/communication/rc-100/#zig-100bt-100-모듈-장착-방법
   - title: "Set Broadcasting Channel"
+    titlekr: "브로드캐스트 채널 설정"
     url: /parts/communication/rc-100/#how-to-set-broadcasting-channel
+    urlkr: /parts/communication/rc-100/#브로드캐스트-채널-설정
   - title: "Code Map"
+    titlekr: "리모콘 코드 맵"
     url: /parts/communication/rc-100/#code-map
+    urlkr: /parts/communication/rc-100/#리모콘-코드-맵
   - title: "Communication Packet"
+    titlekr: "통신 패킷"
     url: /parts/communication/rc-100/#communication-packet
+    urlkr: /parts/communication/rc-100/#통신-패킷
   - title: "How to Insert Batteries"
+    titlekr: "건전지 넣는 방법"
     url: /parts/communication/rc-100/#how-to-insert-batteries
+    urlkr: /parts/communication/rc-100/#건전지-넣는-방법
   - title: "Tutorials"
+    titlekr: "활용 방법"
     url: /parts/communication/rc-100/#tutorials
+    urlkr: /parts/communication/rc-100/#활용-방법
 
 #ZIG-100/110 sidebar
 zig-110:

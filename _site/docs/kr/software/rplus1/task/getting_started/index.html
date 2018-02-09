@@ -178,11 +178,8 @@ $(function() {
     		alignTop: true,
     		overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
     	});
-    });
-    $(document).ready(function() {
-
-    	$('.popup2').magnificPopup({
-    		type: 'ajax',
+      $('.popup2').magnificPopup({
+    		type: 'inline',
     		alignTop: true,
     		overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
     	});
@@ -193,8 +190,9 @@ $(function() {
   <body class="layout--archive">
 
     <!--[if lt IE 9]>
-<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please upgrade your browser to improve your experience.</div>
 <![endif]-->
+
     <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
@@ -3417,41 +3415,11 @@ $(function() {
     
 
       
-      <li class="has-children">
-        <input type="radio" name="toplevel" id="toplevel_0" >
-        <label for="toplevel_0">개요 [+]</label>
-
       
-
-      
-        <ul>
-        
-          
-
-          
-
-          
-          <li><a href="http://localhost:4000/docs/kr/software/rplus1/task/getting_started/#설치하기" onclick="extendnav()">설치하기</a></li>
-          
-
-          
-          
-        
-        </ul>
-      
-      
-      </li>
-      
-    
-  
-    
-
-    
-
       
       <li class="has-children">
         <input type="radio" name="toplevel" id="toplevel_1" >
-        <label for="toplevel_1">시작하기 [+]</label>
+        <label for="toplevel_1">1. 개요 [+]</label>
 
       
 
@@ -3463,51 +3431,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/kr/software/rplus1/task/getting_started/#명령줄-만들기" onclick="extendnav()">명령줄 만들기</a></li>
-          
-
-          
-          
-        
-          
-
-          
-
-          
-          <li><a href="http://localhost:4000/docs/kr/software/rplus1/task/getting_started/#파라미터-만들기" onclick="extendnav()">파라미터 만들기</a></li>
-          
-
-          
-          
-        
-          
-
-          
-
-          
-          <li><a href="http://localhost:4000/docs/kr/software/rplus1/task/getting_started/#프로그램-다운로드" onclick="extendnav()">프로그램 다운로드</a></li>
-          
-
-          
-          
-        
-          
-
-          
-
-          
-          <li><a href="http://localhost:4000/docs/kr/software/rplus1/task/getting_started/#프로그램-결과-출력" onclick="extendnav()">프로그램 결과 출력</a></li>
-          
-
-          
-          
-        
-          
-
-          
-
-          
-          <li><a href="http://localhost:4000/docs/kr/software/rplus1/task/getting_started/#가상로봇-조종" onclick="extendnav()">가상로봇 조종</a></li>
+          <li><a href="http://localhost:4000/docs/kr/software/rplus1/task/getting_started/#설치하기" onclick="extendnav()">1. 설치하기</a></li>
           
 
           
@@ -3525,9 +3449,89 @@ $(function() {
     
 
       
+      
+      
       <li class="has-children">
         <input type="radio" name="toplevel" id="toplevel_2" >
-        <label for="toplevel_2">프로그래밍 [+]</label>
+        <label for="toplevel_2">2. 시작하기 [+]</label>
+
+      
+
+      
+        <ul>
+        
+          
+
+          
+
+          
+          <li><a href="http://localhost:4000/docs/kr/software/rplus1/task/getting_started/#명령줄-만들기" onclick="extendnav()">1. 명령줄 만들기</a></li>
+          
+
+          
+          
+        
+          
+
+          
+
+          
+          <li><a href="http://localhost:4000/docs/kr/software/rplus1/task/getting_started/#파라미터-만들기" onclick="extendnav()">2. 파라미터 만들기</a></li>
+          
+
+          
+          
+        
+          
+
+          
+
+          
+          <li><a href="http://localhost:4000/docs/kr/software/rplus1/task/getting_started/#프로그램-다운로드" onclick="extendnav()">3. 프로그램 다운로드</a></li>
+          
+
+          
+          
+        
+          
+
+          
+
+          
+          <li><a href="http://localhost:4000/docs/kr/software/rplus1/task/getting_started/#프로그램-결과-출력" onclick="extendnav()">4. 프로그램 결과 출력</a></li>
+          
+
+          
+          
+        
+          
+
+          
+
+          
+          <li><a href="http://localhost:4000/docs/kr/software/rplus1/task/getting_started/#가상로봇-조종" onclick="extendnav()">5. 가상로봇 조종</a></li>
+          
+
+          
+          
+        
+        </ul>
+      
+      
+      </li>
+      
+    
+  
+    
+
+    
+
+      
+      
+      
+      <li class="has-children">
+        <input type="radio" name="toplevel" id="toplevel_3" >
+        <label for="toplevel_3">3. 프로그래밍 [+]</label>
 
       
 
@@ -3540,8 +3544,8 @@ $(function() {
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="편집" >
-            <label for="편집">편집 [+]</label>
+            <input type="radio" name="sublevel" id="프로그래밍_1" >
+            <label for="프로그래밍_1">1. 편집 [+]</label>
           
 
           
@@ -3607,8 +3611,8 @@ $(function() {
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="명령어" >
-            <label for="명령어">명령어 [+]</label>
+            <input type="radio" name="sublevel" id="프로그래밍_2" >
+            <label for="프로그래밍_2">2. 명령어 [+]</label>
           
 
           
@@ -3754,8 +3758,8 @@ $(function() {
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="제어기 파라미터" >
-            <label for="제어기 파라미터">제어기 파라미터 [+]</label>
+            <input type="radio" name="sublevel" id="프로그래밍_3" >
+            <label for="프로그래밍_3">3. 제어기 파라미터 [+]</label>
           
 
           
@@ -3925,8 +3929,8 @@ $(function() {
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="모션 파라미터" >
-            <label for="모션 파라미터">모션 파라미터 [+]</label>
+            <input type="radio" name="sublevel" id="프로그래밍_4" >
+            <label for="프로그래밍_4">4. 모션 파라미터 [+]</label>
           
 
           
@@ -3976,8 +3980,8 @@ $(function() {
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="주변장치" >
-            <label for="주변장치">주변장치 [+]</label>
+            <input type="radio" name="sublevel" id="프로그래밍_5" >
+            <label for="프로그래밍_5">5. 주변장치 [+]</label>
           
 
           
@@ -4067,8 +4071,8 @@ $(function() {
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="다이나믹셀 파라미터" >
-            <label for="다이나믹셀 파라미터">다이나믹셀 파라미터 [+]</label>
+            <input type="radio" name="sublevel" id="프로그래밍_6" >
+            <label for="프로그래밍_6">6. 다이나믹셀 파라미터 [+]</label>
           
 
           
@@ -4206,8 +4210,8 @@ $(function() {
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="통합센서 S1" >
-            <label for="통합센서 S1">통합센서 S1 [+]</label>
+            <input type="radio" name="sublevel" id="프로그래밍_7" >
+            <label for="프로그래밍_7">7. 통합센서 S1 [+]</label>
           
 
           
@@ -4345,8 +4349,8 @@ $(function() {
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="적외선 센서 어레이" >
-            <label for="적외선 센서 어레이">적외선 센서 어레이 [+]</label>
+            <input type="radio" name="sublevel" id="프로그래밍_8" >
+            <label for="프로그래밍_8">8. 적외선 센서 어레이 [+]</label>
           
 
           
@@ -4419,7 +4423,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#변수" onclick="extendnav()">변수</a></li>
+          <li><a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#변수" onclick="extendnav()">9. 변수</a></li>
           
 
           
@@ -4431,8 +4435,8 @@ $(function() {
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="스마트앱 파라미터" >
-            <label for="스마트앱 파라미터">스마트앱 파라미터 [+]</label>
+            <input type="radio" name="sublevel" id="프로그래밍_10" >
+            <label for="프로그래밍_10">10. 스마트앱 파라미터 [+]</label>
           
 
           
@@ -4816,9 +4820,11 @@ $(function() {
     
 
       
+      
+      
       <li class="has-children">
-        <input type="radio" name="toplevel" id="toplevel_3" >
-        <label for="toplevel_3">기타 정보 [+]</label>
+        <input type="radio" name="toplevel" id="toplevel_4" >
+        <label for="toplevel_4">4. 기타 정보 [+]</label>
 
       
 
@@ -4830,7 +4836,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#제어기-선택" onclick="extendnav()">제어기 선택</a></li>
+          <li><a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#제어기-선택" onclick="extendnav()">1. 제어기 선택</a></li>
           
 
           
@@ -4841,7 +4847,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#룰-체크" onclick="extendnav()">룰 체크</a></li>
+          <li><a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#룰-체크" onclick="extendnav()">2. 룰 체크</a></li>
           
 
           
@@ -4852,7 +4858,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#에러-메세지" onclick="extendnav()">에러 메세지</a></li>
+          <li><a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#에러-메세지" onclick="extendnav()">3. 에러 메세지</a></li>
           
 
           

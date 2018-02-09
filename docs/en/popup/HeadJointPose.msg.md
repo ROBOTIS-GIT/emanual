@@ -1,3 +1,7 @@
+---
+layout: popup
+---
+  
 - File: `thormang3_head_control_module_msgs/HeadJointPose.msg`
 
 - Message Definition
