@@ -35,7 +35,7 @@ The TurtleBot brand is managed by [Open Robotics][open-robotics], which develops
 
 ## [Extensibility](#extensibility)
 
-TurtleBot3 encourages users to customize its mechanical structure with some alternative options: open source embedded board (as a control board), computer and sensors. Turtlebot3 Burger is a two-wheeled differential drive type platform but it is able to be structurally and mechanically customized in many ways: Cars, Bikes, Trailers and so on. Extend your ideas beyond imagination with various SBC, sensors and motors on a scalable structure.
+TurtleBot3 encourages users to customize its mechanical structure with some alternative options: open source embedded board (as a control board), computer and sensors. TurtleBot3 Burger is a two-wheeled differential drive type platform but it is able to be structurally and mechanically customized in many ways: Cars, Bikes, Trailers and so on. Extend your ideas beyond imagination with various SBC, sensors and motors on a scalable structure.
 
 ## [Modular Actuator for Mobile Robot](#modular-actuator-for-mobile-robot)
 
@@ -47,7 +47,7 @@ The control board is open-sourced in hardware wise and in software wise for ROS 
 
 ## [Strong Sensor Lineups](#strong-sensor-lineups)
 
-TurtleBot3 Burger uses enhanced 360&deg; LiDAR, 9-Axis Inertial Measurement Unit and precise encoder for your research and development. TurtleBot3 Waffle is equipped with an identical 360&deg; LiDAR as well but additionally proposes a powerful Intel® RealSense™ with the recognition SDK. This will be the best hardware solution for making a mobile robot.
+TurtleBot3 Burger uses enhanced 360&deg; LiDAR, 9-Axis Inertial Measurement Unit and precise encoder for your research and development. TurtleBot3 Waffle is equipped with an identical 360&deg; LiDAR as well but additionally proposes a powerful Intel® RealSense™ with the recognition SDK. TurtleBot3 Waffle Pi uses high utilized Raspberry Pi Camera. This will be the best hardware solution for making a mobile robot.
 
 ## [Open Source](#open-source)
 
