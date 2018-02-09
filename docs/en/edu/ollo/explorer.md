@@ -11,8 +11,6 @@ sidebar:
   nav: "ollo_explorer"
 ---
 
-# OLLO EXPLORER
-
 # [Introduction](#introduction)
 Create robots using the controllers and sensors.
 Through 12-session curriculum, learn scientific principle and physics theory such as power of robot, usage of sensors, speed and force, walking, and running etc. by experiment.

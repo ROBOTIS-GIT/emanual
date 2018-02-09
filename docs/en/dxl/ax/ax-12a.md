@@ -48,7 +48,7 @@ sidebar:
 
 {% include en/dxl/control_table_protocol1.md %}
 
-## [EEPROM 영역](#eeprom-영역)
+## [Control Table of EEPROM Area](#control-table-of-eeprom-area)
 
 | Address | Size<br>(Byte) | Data Name                                   | Description                        | Access | Initial<br />Value |
 |:--------|:---------------|:--------------------------------------------|:-----------------------------------|:-------|:-------------------|
@@ -68,7 +68,7 @@ sidebar:
 | 18      | 1              | [Shutdown](#shutdown)                       | Shutdown Error Information         | RW     | 36                 |
 
 
-## [RAM 영역](#ram-영역)
+## [Control Table of RAM Area](#control-table-of-ram-area)
 
 | Address | Size<br>(Byte) | Data Name                                       | Description                  | Access | Initial<br />Value |
 |:--------|:---------------|:------------------------------------------------|:-----------------------------|:-------|:-------------------|

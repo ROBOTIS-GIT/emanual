@@ -178,6 +178,11 @@ $(function() {
     		alignTop: true,
     		overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
     	});
+      $('.popup2').magnificPopup({
+    		type: 'inline',
+    		alignTop: true,
+    		overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
+    	});
     });
     </script>
   </head>
@@ -185,8 +190,9 @@ $(function() {
   <body class="layout--archive">
 
     <!--[if lt IE 9]>
-<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please upgrade your browser to improve your experience.</div>
 <![endif]-->
+
     <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
@@ -675,7 +681,7 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <a href="http://localhost:4000/docs/kr/platform/op3/getting_started/">OP3</a>
+                    <a href="http://localhost:4000/docs/kr/platform/op3/introduction/">OP3</a>
                   </li>
                 
               
@@ -2206,7 +2212,7 @@ $(function() {
               
                 
                   
-                    <a href="http://localhost:4000/docs/kr/platform/op3/getting_started/">OP3</a>
+                    <a href="http://localhost:4000/docs/kr/platform/op3/introduction/">OP3</a>
               
 
               
@@ -3410,7 +3416,7 @@ $(function() {
 
       
       <li>
-        <a href="http://localhost:4000/docs/kr/parts/controller/cm-200/#개요" onclick="extendnav()">개요</a>
+        <a href="http://localhost:4000/docs/kr/parts/controller/cm-200/#개요" onclick="extendnav()">1. 개요</a>
       </li>
       
 
@@ -3424,7 +3430,7 @@ $(function() {
 
       
       <li>
-        <a href="http://localhost:4000/docs/kr/parts/controller/cm-200/#제품-사양" onclick="extendnav()">제품 사양</a>
+        <a href="http://localhost:4000/docs/kr/parts/controller/cm-200/#제품-사양" onclick="extendnav()">2. 제품 사양</a>
       </li>
       
 
@@ -3438,7 +3444,7 @@ $(function() {
 
       
       <li>
-        <a href="http://localhost:4000/docs/kr/parts/controller/cm-200/#컨트롤-테이블" onclick="extendnav()">컨트롤 테이블</a>
+        <a href="http://localhost:4000/docs/kr/parts/controller/cm-200/#컨트롤-테이블" onclick="extendnav()">3. 컨트롤 테이블</a>
       </li>
       
 
@@ -3452,7 +3458,7 @@ $(function() {
 
       
       <li>
-        <a href="http://localhost:4000/docs/kr/parts/controller/cm-200/#각-부-명칭" onclick="extendnav()">각 부 명칭</a>
+        <a href="http://localhost:4000/docs/kr/parts/controller/cm-200/#각-부-명칭" onclick="extendnav()">4. 각 부 명칭</a>
       </li>
       
 
@@ -3466,7 +3472,7 @@ $(function() {
 
       
       <li>
-        <a href="http://localhost:4000/docs/kr/parts/controller/cm-200/#전원-연결" onclick="extendnav()">전원 연결</a>
+        <a href="http://localhost:4000/docs/kr/parts/controller/cm-200/#전원-연결" onclick="extendnav()">5. 전원 연결</a>
       </li>
       
 
@@ -3480,7 +3486,7 @@ $(function() {
 
       
       <li>
-        <a href="http://localhost:4000/docs/kr/parts/controller/cm-200/#작동-방법" onclick="extendnav()">작동 방법</a>
+        <a href="http://localhost:4000/docs/kr/parts/controller/cm-200/#작동-방법" onclick="extendnav()">6. 작동 방법</a>
       </li>
       
 
@@ -3508,74 +3514,11 @@ $(function() {
     
 
       
-      <li class="has-children">
-        <input type="radio" name="toplevel" id="toplevel_9" >
-        <label for="toplevel_9">초급 사용자 [+]</label>
-
       
-
-      
-        <ul>
-        
-          
-
-          
-
-          
-          <li><a href="http://localhost:4000/docs/kr/parts/controller/cm-200/#무선통신-연결하기" onclick="extendnav()">무선통신 연결하기</a></li>
-          
-
-          
-          
-        
-          
-
-          
-
-          
-          <li><a href="http://localhost:4000/docs/kr/parts/controller/cm-200/#r-smartiii-설치하기" onclick="extendnav()">R+ SmartIII 설치</a></li>
-          
-
-          
-          
-        
-          
-
-          
-
-          
-          <li><a href="http://localhost:4000/docs/kr/parts/controller/cm-200/#r-mtask-20-설치하기" onclick="extendnav()">R+ m.Task2.0 설치</a></li>
-          
-
-          
-          
-        
-          
-
-          
-
-          
-          <li><a href="http://localhost:4000/docs/kr/parts/controller/cm-200/#모션파일-다운로드" onclick="extendnav()">모션파일 다운로드</a></li>
-          
-
-          
-          
-        
-        </ul>
-      
-      
-      </li>
-      
-    
-  
-    
-
-    
-
       
       <li class="has-children">
         <input type="radio" name="toplevel" id="toplevel_10" >
-        <label for="toplevel_10">고급 사용자 [+]</label>
+        <label for="toplevel_10">10. 초급 사용자 [+]</label>
 
       
 
@@ -3587,7 +3530,40 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/kr/parts/controller/cm-200/#프로그래밍" onclick="extendnav()">프로그래밍</a></li>
+          <li><a href="http://localhost:4000/docs/kr/parts/controller/cm-200/#무선통신-연결하기" onclick="extendnav()">1. 무선통신 연결하기</a></li>
+          
+
+          
+          
+        
+          
+
+          
+
+          
+          <li><a href="http://localhost:4000/docs/kr/parts/controller/cm-200/#r-smartiii-설치하기" onclick="extendnav()">2. R+ SmartIII 설치</a></li>
+          
+
+          
+          
+        
+          
+
+          
+
+          
+          <li><a href="http://localhost:4000/docs/kr/parts/controller/cm-200/#r-mtask-20-설치하기" onclick="extendnav()">3. R+ m.Task2.0 설치</a></li>
+          
+
+          
+          
+        
+          
+
+          
+
+          
+          <li><a href="http://localhost:4000/docs/kr/parts/controller/cm-200/#모션파일-다운로드" onclick="extendnav()">4. 모션파일 다운로드</a></li>
           
 
           
@@ -3605,9 +3581,11 @@ $(function() {
     
 
       
+      
+      
       <li class="has-children">
         <input type="radio" name="toplevel" id="toplevel_11" >
-        <label for="toplevel_11">관리하기 [+]</label>
+        <label for="toplevel_11">11. 고급 사용자 [+]</label>
 
       
 
@@ -3619,7 +3597,41 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/kr/parts/controller/cm-200/#펌웨어-복구" onclick="extendnav()">펌웨어 복구</a></li>
+          <li><a href="http://localhost:4000/docs/kr/parts/controller/cm-200/#프로그래밍" onclick="extendnav()">1. 프로그래밍</a></li>
+          
+
+          
+          
+        
+        </ul>
+      
+      
+      </li>
+      
+    
+  
+    
+
+    
+
+      
+      
+      
+      <li class="has-children">
+        <input type="radio" name="toplevel" id="toplevel_12" >
+        <label for="toplevel_12">12. 관리하기 [+]</label>
+
+      
+
+      
+        <ul>
+        
+          
+
+          
+
+          
+          <li><a href="http://localhost:4000/docs/kr/parts/controller/cm-200/#펌웨어-복구" onclick="extendnav()">1. 펌웨어 복구</a></li>
           
 
           
@@ -3638,7 +3650,7 @@ $(function() {
 
       
       <li>
-        <a href="http://localhost:4000/docs/kr/parts/controller/cm-200/#참고자료" onclick="extendnav()">참고자료</a>
+        <a href="http://localhost:4000/docs/kr/parts/controller/cm-200/#참고자료" onclick="extendnav()">13. 참고자료</a>
       </li>
       
 
