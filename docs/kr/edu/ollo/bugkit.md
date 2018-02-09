@@ -135,7 +135,7 @@ RC-100 을 이용한 올로와 바이올로이드의 조종은 기본적으로 �
 ![](/assets/images/edu/ollo/battlebug_kr.png)
 
 ## [자동차 만들기](#자동차-만들기)
-올로 버그 키트에 [큰타이어 세트]를 추가 구매하시면 바퀴를 달아 자동차를 만드실 수 있습니다.
+올로 버그 키트에 "큰타이어 세트"를 추가 구매하시면 바퀴를 달아 자동차를 만드실 수 있습니다.
 
 ![](/assets/images/edu/ollo/linetracer_kr.png)
 
@@ -443,7 +443,7 @@ CM-100 의 바닥쪽 왼쪽 적외선 센서와 오른쪽 적외선 센서를 �
 
 ### 프로그램 다운로드
 
-- 프로그램 다운로드 절차는 [프로그램 다운로드 를 참고]하세요.
+- 프로그램 다운로드 절차는 [프로그램 다운로드]를 참고하세요.
 - 프로그래밍 결과 파일 :  [bug_linetracer.tsk]
 - [라인트레이서용 인쇄물 다운 받기]
 
@@ -477,13 +477,13 @@ CM-100 의 바닥쪽 왼쪽 적외선 센서와 오른쪽 적외선 센서를 �
 2. 중앙 적외선 센서에 물체가 감지되면 정지 함수 호출   
   프로그램 시작에 만약 명령어를 추가하여 중앙 적외선 센서 값이 200 보다 커지면(물체가 감지됨) 정지 함수를 호출합니다.
 
-  ![](/assets/images/edu/ollo/2-1-kr.png)
+    ![](/assets/images/edu/ollo/2-1-kr.png)
 
 3. 버그가 완전히 정지할 때까지 잠시 기다립니다.  
   소리 감지를 사용하기 위해서는 버그가 완전히 멈춰야 합니다. 버그의 모터 등이 움직이는 소리는 CM-100 의 마이크에 아주 크게 들리기 때문에 버그가 움직이고 있으면 소리가 감지되었다고 판단되기 때문입니다.  
   따라서 타이머를 사용하여 일정 시간 기다리는 코드를 추가해 줍니다. ([타이머의 자세한 설명은 여기 참조])
 
-  로드 명령어로 타이머에 타이머 값 1초를 넣어줍니다.
+    로드 명령어로 타이머에 타이머 값 1초를 넣어줍니다.
 
     ![](/assets/images/edu/ollo/3-1-2_kr.png)
 
@@ -511,7 +511,7 @@ CM-100 의 바닥쪽 왼쪽 적외선 센서와 오른쪽 적외선 센서를 �
 
 ### 프로그램 다운로드
 
-- 프로그램 다운로드 절차는 [프로그램 다운로드 를 참고]하세요.
+- 프로그램 다운로드 절차는 [프로그램 다운로드]를 참고하세요.
 - 프로그래밍 결과 파일 :  [bug_sensor.tsk]
 
 ### 프로그램 실행 및 결과
@@ -578,57 +578,63 @@ PC([RoboPlus Task] 프로그램), 조립된 버그 로봇, USB 다운로더([LN-
 
 ### 프로그램 다운로드
 
-- 프로그램 다운로드 절차는 [프로그램 다운로드 를 참고]하세요.
-- 프로그래밍 결과 파일 :  [bug_rc.tsk]
+- 프로그램 다운로드 절차는 [프로그램 다운로드]를 참고하세요.
+- 프로그래밍 결과 파일 : [bug_rc.tsk]
 
 ### 프로그램 실행 및 결과
 
 프로그램을 실행 시킨 후 RC-100 조종기로 전/후/좌/우로 조종해 보세요.
 
+# [다운로드](#다운로드)
+
+`다운로드` 태스크 코드 [OLLO_BUG_Product_KR.tsk](http://support.robotis.com/ko/baggage_files/ollo/bug/ollo_bug_product_kr.tsk)
+
+`Note` [태스크 코드 다운로드 방법]
+
+`Note` [기본 프로그램의 작동방법]
 
 [CM-100]: /docs/kr/parts/controller/cm-100/
 [감속모터]: /docs/kr/parts/motor/gm-10a/
 [USB 다운로더(LN-101)]: /docs/kr/parts/interface/ln-101/
-[프로그래밍 학습]: ???
-[OLLO_LineTrace.pdf]: ???
-[OLLO_PuzzleRacing.zip]: ???
+[프로그래밍 학습]: #프로그래밍-학습
+[OLLO_LineTrace.pdf]: http://support.robotis.com/ko/baggage_files/ollo/ollo_linetrace.pdf
+[OLLO_PuzzleRacing.zip]: http://support.robotis.com/ko/baggage_files/ollo/ollo_puzzle_racing_line.zip
 [RC-100]: /docs/kr/parts/communication/rc-100/
-[버그 기본 프로그램]: ???
-[태스크 코드로 제어하는 방법보기]: ???
-[RC-100 적외선 채널 바꾸는 방법 보기]: /docs/kr/parts/communication/rc-100/
+[버그 기본 프로그램]: #다운로드
+[태스크 코드로 제어하는 방법보기]: /docs/kr/software/rplus1/task/programming_02/#자동꺼짐-타이머
+[RC-100 적외선 채널 바꾸는 방법 보기]: /docs/kr/parts/communication/rc-100/#적외선-통신채널-설정-방법
 [서보모터]: /docs/kr/parts/motor/servo_motor/
 [ZIG-100/110]: /docs/kr/parts/communication/zig-110/
 [ZIG-110 set]: /docs/kr/parts/communication/zig-110/
-[제어기]: ???
-[큰타이어 세트]: ???
+[제어기]: /docs/kr/parts/controller/cm-100/
 [제어기(CM-100)]: /docs/kr/parts/controller/cm-100/
-[제어기 선택]: ???
-[프로그램 시작]: ???
-[무조건 반복]: ???
-[로드]: ???
-[중앙 적외선 센서]: ???
-[화면 출력]: ???
-[파라미터에 대한 설명]: ???
-[태스크 코드 다운로드 방법]: ???
+[제어기 선택]: /docs/kr/software/rplus1/task/task_misc/#제어기-선택
+[프로그램 시작]: /docs/kr/software/rplus1/task/programming_01/#프로그램-시작
+[무조건 반복]: /docs/kr/software/rplus1/task/programming_01/#무조건-반복
+[로드]: /docs/kr/software/rplus1/task/programming_01/#로드
+[중앙 적외선 센서]: /docs/kr/software/rplus1/task/programming_02/#왼쪽중앙오른쪽-적외선-센서
+[화면 출력]: /docs/kr/software/rplus1/task/getting_started/#프로그램-결과-출력
+[파라미터에 대한 설명]: /docs/kr/software/rplus1/task/getting_started/#파라미터-만들기
+[태스크 코드 다운로드 방법]: /docs/kr/faq/download_task_code/
 [RoboPlus Task]: /docs/kr/software/rplus1/task/getting_started/
 [LN-101]: /docs/kr/parts/interface/ln-101/
-[화면 출력하기 참조]: ???
-[함수에 대한 보다 자세한 설명은 여기를 참고하세요.]: ???
-[5. 복사/잘라내기/붙여넣기 참고]: ???
-[프로그램 다운로드]: ???
-[bug_move.tsk]: ???
-[버그 움직이기]: ???
-[만약 명령어에 대한 자세한 정보는 여기를 참고하세요.]: ???
-[bug_linetracer.tsk]: ???
-[라인트레이서용 인쇄물 다운 받기]: ???
-[버그 라인 따라가기]: ???
-[타이머의 자세한 설명은 여기 참조]: ???
-[조건 대기 명령어에 대한 보다 자세한 정보는 여기를 참고하세요.]: ???
-[소리감지 횟수에 대한 자세한 설명은 여기를 참고하세요.]: ???
-[bug_sensor.tsk]: ???
-[센서에 반응하는 버그]: ???
-[새 무선 데이터 도착에 대한 자세한 설명은 여기를 참고하세요.]: ???
-[변수에 대한 자세한 설명은 여기를 참고하세요.]: ???
-[계산 명령어에 대한 자세한 정보는 여기를 참고하세요.]: ???
-[RC-100 버튼 값에 대한 자세한 정보는 여기를 참고하세요.]: ???
-[bug_rc.tsk]: ???
+[화면 출력하기 참조]: /docs/kr/software/rplus1/task/getting_started/#프로그램-결과-출력
+[함수에 대한 보다 자세한 설명은 여기를 참고하세요.]: /docs/kr/software/rplus1/task/programming_01/#함수-만들기호출
+[5. 복사/잘라내기/붙여넣기 참고]: /docs/kr/software/rplus1/task/programming_01/#복사잘라내기붙여넣기
+[프로그램 다운로드]: /docs/kr/faq/download_task_code/
+[bug_move.tsk]: http://support.robotis.com/ko/baggage_files/ollo/tutorial/bug_move.tsk
+[버그 움직이기]: #버그-움직이기
+[만약 명령어에 대한 자세한 정보는 여기를 참고하세요.]: /docs/kr/software/rplus1/task/programming_01/#조건문
+[bug_linetracer.tsk]: http://support.robotis.com/ko/baggage_files/ollo/tutorial/bug_linetracer.tsk
+[라인트레이서용 인쇄물 다운 받기]: #올로-버그-로봇으로-할-수-있는-게임-예제
+[버그 라인 따라가기]: #버그-라인-따라가기
+[타이머의 자세한 설명은 여기 참조]: /docs/kr/software/rplus1/task/programming_02/#타이머
+[조건 대기 명령어에 대한 보다 자세한 정보는 여기를 참고하세요.]: /docs/kr/software/rplus1/task/programming_01/#조건-대기
+[소리감지 횟수에 대한 자세한 설명은 여기를 참고하세요.]: /docs/kr/software/rplus1/task/programming_02/#최종-소리감지-횟수
+[bug_sensor.tsk]: http://support.robotis.com/ko/baggage_files/ollo/tutorial/bug_sensor.tsk
+[센서에 반응하는 버그]: #센서에-반응하는-버그
+[새 무선 데이터 도착에 대한 자세한 설명은 여기를 참고하세요.]: /docs/kr/software/rplus1/task/programming_02/#새-무선-데이터
+[변수에 대한 자세한 설명은 여기를 참고하세요.]: /docs/kr/software/rplus1/task/programming_02/#변수
+[계산 명령어에 대한 자세한 정보는 여기를 참고하세요.]: /docs/kr/software/rplus1/task/programming_01/#계산
+[RC-100 버튼 값에 대한 자세한 정보는 여기를 참고하세요.]: /docs/kr/parts/communication/rc-100/#리모콘-코드-맵
+[bug_rc.tsk]: http://support.robotis.com/ko/baggage_files/ollo/tutorial/bug_rc.tsk

@@ -178,6 +178,11 @@ $(function() {
     		alignTop: true,
     		overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
     	});
+      $('.popup2').magnificPopup({
+    		type: 'inline',
+    		alignTop: true,
+    		overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
+    	});
     });
     </script>
   </head>
@@ -185,8 +190,9 @@ $(function() {
   <body class="layout--archive">
 
     <!--[if lt IE 9]>
-<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please upgrade your browser to improve your experience.</div>
 <![endif]-->
+
     <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
@@ -675,7 +681,7 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <a href="http://localhost:4000/docs/en/platform/op3/getting_started/">OP3</a>
+                    <a href="http://localhost:4000/docs/en/platform/op3/introduction/">OP3</a>
                   </li>
                 
               
@@ -2025,7 +2031,7 @@ $(function() {
               
                 
                   
-                    <a href="http://localhost:4000/docs/en/platform/op3/getting_started/">OP3</a>
+                    <a href="http://localhost:4000/docs/en/platform/op3/introduction/">OP3</a>
               
 
               
@@ -3140,7 +3146,7 @@ $(function() {
 
       
       <li>
-        <a href="http://localhost:4000/docs/en/dxl/ax/ax-12a/#specifications" onclick="extendnav()">Specifications</a>
+        <a href="http://localhost:4000/docs/en/dxl/ax/ax-12a/#specifications" onclick="extendnav()">1. Specifications</a>
       </li>
       
 
@@ -3153,9 +3159,11 @@ $(function() {
     
 
       
+      
+      
       <li class="has-children">
-        <input type="radio" name="toplevel" id="toplevel_1" >
-        <label for="toplevel_1">Control Table [+]</label>
+        <input type="radio" name="toplevel" id="toplevel_2" >
+        <label for="toplevel_2">2. Control Table [+]</label>
 
       
 
@@ -3168,8 +3176,8 @@ $(function() {
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="Control Table, Data, Address" >
-            <label for="Control Table, Data, Address">Control Table, Data, Address [+]</label>
+            <input type="radio" name="sublevel" id="Control Table_1" >
+            <label for="Control Table_1">1. Control Table, Data, Address [+]</label>
           
 
           
@@ -3218,7 +3226,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/dxl/ax/ax-12a/#control-table-of-eeprom-area" onclick="extendnav()">EEPROM Area</a></li>
+          <li><a href="http://localhost:4000/docs/en/dxl/ax/ax-12a/#control-table-of-eeprom-area" onclick="extendnav()">2. EEPROM Area</a></li>
           
 
           
@@ -3229,7 +3237,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/dxl/ax/ax-12a/#control-table-of-ram-area" onclick="extendnav()">RAM Area</a></li>
+          <li><a href="http://localhost:4000/docs/en/dxl/ax/ax-12a/#control-table-of-ram-area" onclick="extendnav()">3. RAM Area</a></li>
           
 
           
@@ -3241,8 +3249,8 @@ $(function() {
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="Control Table Description" >
-            <label for="Control Table Description">Control Table Description [+]</label>
+            <input type="radio" name="sublevel" id="Control Table_4" >
+            <label for="Control Table_4">4. Control Table Description [+]</label>
           
 
           
@@ -3491,7 +3499,7 @@ $(function() {
 
       
       <li>
-        <a href="http://localhost:4000/docs/en/dxl/ax/ax-12a/#how-to-assemble" onclick="extendnav()">How to Assemble</a>
+        <a href="http://localhost:4000/docs/en/dxl/ax/ax-12a/#how-to-assemble" onclick="extendnav()">3. How to Assemble</a>
       </li>
       
 
@@ -3504,9 +3512,11 @@ $(function() {
     
 
       
+      
+      
       <li class="has-children">
-        <input type="radio" name="toplevel" id="toplevel_3" >
-        <label for="toplevel_3">Maintenance [+]</label>
+        <input type="radio" name="toplevel" id="toplevel_4" >
+        <label for="toplevel_4">4. Maintenance [+]</label>
 
       
 
@@ -3518,7 +3528,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/dxl/ax/ax-12a/#horn-and-bearing-replacement" onclick="extendnav()">Horn, Bearing</a></li>
+          <li><a href="http://localhost:4000/docs/en/dxl/ax/ax-12a/#horn-and-bearing-replacement" onclick="extendnav()">1. Horn, Bearing</a></li>
           
 
           
@@ -3536,9 +3546,11 @@ $(function() {
     
 
       
+      
+      
       <li class="has-children">
-        <input type="radio" name="toplevel" id="toplevel_4" >
-        <label for="toplevel_4">Reference [+]</label>
+        <input type="radio" name="toplevel" id="toplevel_5" >
+        <label for="toplevel_5">5. Reference [+]</label>
 
       
 
@@ -3550,7 +3562,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/dxl/ax/ax-12a/#connector-information" onclick="extendnav()">Connector Information</a></li>
+          <li><a href="http://localhost:4000/docs/en/dxl/ax/ax-12a/#connector-information" onclick="extendnav()">1. Connector Information</a></li>
           
 
           
@@ -3561,7 +3573,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/dxl/ax/ax-12a/#drawings" onclick="extendnav()">Drawings</a></li>
+          <li><a href="http://localhost:4000/docs/en/dxl/ax/ax-12a/#drawings" onclick="extendnav()">2. Drawings</a></li>
           
 
           
@@ -3572,7 +3584,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/dxl/ax/ax-12a/#communication-circuit" onclick="extendnav()">Communication Circuit</a></li>
+          <li><a href="http://localhost:4000/docs/en/dxl/ax/ax-12a/#communication-circuit" onclick="extendnav()">3. Communication Circuit</a></li>
           
 
           
@@ -3710,7 +3722,7 @@ $(function() {
 <h3 id="initial-value"><a href="#initial-value">Initial Value</a></h3>
 <p>Each data in the Control Table is restored to initial values when the DYNAMIXEL is turned on. Default values in the EEPROM area are initial values of the DYNAMIXEL (factory default settings). If any values in the EEPROM area are modified by a user, modified values will be restored as initial values when the DYNAMIXEL is turned on. Initial Values in the RAM area are restored when the DYNAMIXEL is turned on.</p>
 
-<h2 id="eeprom-영역"><a href="#eeprom-영역">EEPROM 영역</a></h2>
+<h2 id="control-table-of-eeprom-area"><a href="#control-table-of-eeprom-area">Control Table of EEPROM Area</a></h2>
 
 <table>
   <thead>
@@ -3839,7 +3851,7 @@ $(function() {
   </tbody>
 </table>
 
-<h2 id="ram-영역"><a href="#ram-영역">RAM 영역</a></h2>
+<h2 id="control-table-of-ram-area"><a href="#control-table-of-ram-area">Control Table of RAM Area</a></h2>
 
 <table>
   <thead>

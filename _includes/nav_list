@@ -33,13 +33,21 @@
     {% else %}
 
       {% if nav.children != null %}
+      {% comment %}
+      {% if navurl == page.url %}
+        {% assign active = "checked" %}
+      {% else %}
+        {% assign active = "" %}
+      {% endif %}
+      {% endcomment %}
+      
       <li class="has-children">
-        <input type="radio" name="toplevel" id="toplevel_{{ forloop.index0 }}" {{ active }}>
-        <label for="toplevel_{{ forloop.index0 }}">{{ navtitle }} [+]</label>
+        <input type="radio" name="toplevel" id="toplevel_{{ forloop.index }}" {{ active }}>
+        <label for="toplevel_{{ forloop.index }}">{{ forloop.index }}. {{ navtitle }} [+]</label>
 
       {% else %}
       <li>
-        <a href="{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ navurl }}" onclick="extendnav()">{{ navtitle }}</a>
+        <a href="{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ navurl }}" onclick="extendnav()">{{ forloop.index }}. {{ navtitle }}</a>
       </li>
       {% endif %}
 
@@ -71,10 +79,10 @@
 
           {% if child.children != null %}
           <li class="has-children">
-            <input type="radio" name="sublevel" id="{{ childtitle }}" {{ active }}>
-            <label for="{{ childtitle }}">{{ childtitle }} [+]</label>
+            <input type="radio" name="sublevel" id="{{ navtitle }}_{{ forloop.index }}" {{ active }}>
+            <label for="{{ navtitle }}_{{ forloop.index }}">{{ forloop.index }}. {{ childtitle }} [+]</label>
           {% else %}
-          <li><a href="{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ childurl }}" onclick="extendnav()">{{ childtitle }}</a></li>
+          <li><a href="{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ childurl }}" onclick="extendnav()">{{ forloop.index }}. {{ childtitle }}</a></li>
           {% endif %}
 
           {% if child.children != null %}

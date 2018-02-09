@@ -176,7 +176,7 @@ $ cd ~/catkin_ws && catkin_make
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_OnShape.jpg)
 
-![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_Capture.jpg)
+![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_Capture.png)
 
 # [OpenManipulator SCARA](#openmanipulator-scara)
 

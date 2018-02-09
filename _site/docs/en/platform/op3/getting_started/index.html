@@ -178,6 +178,11 @@ $(function() {
     		alignTop: true,
     		overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
     	});
+      $('.popup2').magnificPopup({
+    		type: 'inline',
+    		alignTop: true,
+    		overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
+    	});
     });
     </script>
   </head>
@@ -185,8 +190,9 @@ $(function() {
   <body class="layout--archive">
 
     <!--[if lt IE 9]>
-<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please upgrade your browser to improve your experience.</div>
 <![endif]-->
+
     <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
@@ -675,7 +681,7 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <a href="http://localhost:4000/docs/en/platform/op3/getting_started/">OP3</a>
+                    <a href="http://localhost:4000/docs/en/platform/op3/introduction/">OP3</a>
                   </li>
                 
               
@@ -2025,7 +2031,7 @@ $(function() {
               
                 
                   
-                    <a href="http://localhost:4000/docs/en/platform/op3/getting_started/">OP3</a>
+                    <a href="http://localhost:4000/docs/en/platform/op3/introduction/">OP3</a>
               
 
               
@@ -3139,85 +3145,11 @@ $(function() {
     
 
       
-      <li class="has-children">
-        <input type="radio" name="toplevel" id="toplevel_0" >
-        <label for="toplevel_0">Introduction [+]</label>
-
       
-
-      
-        <ul>
-        
-          
-
-          
-
-          
-          <li><a href="http://localhost:4000/docs/en/platform/op3/getting_started/#safety-information" onclick="extendnav()">Safety Information</a></li>
-          
-
-          
-          
-        
-          
-
-          
-
-          
-          <li><a href="http://localhost:4000/docs/en/platform/op3/getting_started/#package-contents" onclick="extendnav()">Package Contents</a></li>
-          
-
-          
-          
-        
-          
-
-          
-
-          
-          <li><a href="http://localhost:4000/docs/en/platform/op3/getting_started/#layout" onclick="extendnav()">Layout</a></li>
-          
-
-          
-          
-        
-          
-
-          
-
-          
-          <li><a href="http://localhost:4000/docs/en/platform/op3/getting_started/#charging-battery" onclick="extendnav()">Charging Battery</a></li>
-          
-
-          
-          
-        
-          
-
-          
-
-          
-          <li><a href="http://localhost:4000/docs/en/platform/op3/getting_started/#battery-hot-swap" onclick="extendnav()">Battery Hot Swap</a></li>
-          
-
-          
-          
-        
-        </ul>
-      
-      
-      </li>
-      
-    
-  
-    
-
-    
-
       
       <li class="has-children">
         <input type="radio" name="toplevel" id="toplevel_1" >
-        <label for="toplevel_1">Quick Start [+]</label>
+        <label for="toplevel_1">1. Introduction [+]</label>
 
       
 
@@ -3229,7 +3161,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/op3/getting_started/#power-on" onclick="extendnav()">Power On</a></li>
+          <li><a href="http://localhost:4000/docs/en/platform/op3/introduction/#what-is-op3" onclick="extendnav()">1. What is OP3?</a></li>
           
 
           
@@ -3240,7 +3172,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/op3/getting_started/#execute-demo-program" onclick="extendnav()">Execute Demo Program</a></li>
+          <li><a href="http://localhost:4000/docs/en/platform/op3/introduction/#safety-information" onclick="extendnav()">2. Safety Information</a></li>
           
 
           
@@ -3251,7 +3183,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/op3/getting_started/#camera-calibration" onclick="extendnav()">Camera Calibration</a></li>
+          <li><a href="http://localhost:4000/docs/en/platform/op3/introduction/#package-contents" onclick="extendnav()">3. Package Contents</a></li>
           
 
           
@@ -3262,7 +3194,29 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/op3/getting_started/#power-off" onclick="extendnav()">Power Off</a></li>
+          <li><a href="http://localhost:4000/docs/en/platform/op3/introduction/#layout" onclick="extendnav()">4. Layout</a></li>
+          
+
+          
+          
+        
+          
+
+          
+
+          
+          <li><a href="http://localhost:4000/docs/en/platform/op3/introduction/#charging-battery" onclick="extendnav()">5. Charging Battery</a></li>
+          
+
+          
+          
+        
+          
+
+          
+
+          
+          <li><a href="http://localhost:4000/docs/en/platform/op3/introduction/#battery-hot-swap" onclick="extendnav()">6. Battery Hot Swap</a></li>
           
 
           
@@ -3279,10 +3233,12 @@ $(function() {
 
     
 
+      
+      
       
       <li class="has-children">
         <input type="radio" name="toplevel" id="toplevel_2" >
-        <label for="toplevel_2">Programming Guide [+]</label>
+        <label for="toplevel_2">2. Quick Start [+]</label>
 
       
 
@@ -3294,7 +3250,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/op3/getting_started/#connect-to-op3" onclick="extendnav()">Connect to OP3</a></li>
+          <li><a href="http://localhost:4000/docs/en/platform/op3/quick_start/#power-on" onclick="extendnav()">1. Power On</a></li>
           
 
           
@@ -3305,7 +3261,66 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/op3/getting_started/#development-environment" onclick="extendnav()">Development Environment</a></li>
+          <li class="has-children">
+            <input type="radio" name="sublevel" id="Quick Start_2" >
+            <label for="Quick Start_2">2. Execute Demo Program [+]</label>
+          
+
+          
+            <ul>
+            
+              
+
+              
+
+              <li>
+                <a href="http://localhost:4000/docs/en/platform/op3/quick_start/#running-demonstration-programs" style="font-style:italic;" onclick="extendnav()">Running Demonstration Programs</a>
+              </li>
+            
+              
+
+              
+
+              <li>
+                <a href="http://localhost:4000/docs/en/platform/op3/quick_start/#demonstration-ready-mode" style="font-style:italic;" onclick="extendnav()">Demonstration Ready Mode</a>
+              </li>
+            
+              
+
+              
+
+              <li>
+                <a href="http://localhost:4000/docs/en/platform/op3/quick_start/#autonomous-mode" style="font-style:italic;" onclick="extendnav()">Autonomous Mode</a>
+              </li>
+            
+              
+
+              
+
+              <li>
+                <a href="http://localhost:4000/docs/en/platform/op3/quick_start/#interactive-motion-mode" style="font-style:italic;" onclick="extendnav()">Interactive Motion Mode</a>
+              </li>
+            
+              
+
+              
+
+              <li>
+                <a href="http://localhost:4000/docs/en/platform/op3/quick_start/#vision-processing-mode" style="font-style:italic;" onclick="extendnav()">Vision Processing Mode</a>
+              </li>
+            
+            </ul>
+          
+          
+          </li>
+          
+        
+          
+
+          
+
+          
+          <li><a href="http://localhost:4000/docs/en/platform/op3/quick_start/#camera-calibration" onclick="extendnav()">3. Camera Calibration</a></li>
           
 
           
@@ -3316,7 +3331,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/op3/getting_started/#source-code" onclick="extendnav()">Source Code</a></li>
+          <li><a href="http://localhost:4000/docs/en/platform/op3/quick_start/#power-off" onclick="extendnav()">4. Power Off</a></li>
           
 
           
@@ -3327,10 +3342,74 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/op3/getting_started/#framework" onclick="extendnav()">Framework</a></li>
+          <li class="has-children">
+            <input type="radio" name="sublevel" id="Quick Start_5" >
+            <label for="Quick Start_5">5. Programming Guide [+]</label>
           
 
           
+            <ul>
+            
+              
+
+              
+
+              <li>
+                <a href="http://localhost:4000/docs/en/platform/op3/quick_start/#connect-to-op3" style="font-style:italic;" onclick="extendnav()">Connect to OP3</a>
+              </li>
+            
+              
+
+              
+
+              <li>
+                <a href="http://localhost:4000/docs/en/platform/op3/quick_start/#development-environment" style="font-style:italic;" onclick="extendnav()">Development Environment</a>
+              </li>
+            
+              
+
+              
+
+              <li>
+                <a href="http://localhost:4000/docs/en/platform/op3/quick_start/#source-code" style="font-style:italic;" onclick="extendnav()">Source Code</a>
+              </li>
+            
+              
+
+              
+
+              <li>
+                <a href="http://localhost:4000/docs/en/platform/op3/quick_start/#framework" style="font-style:italic;" onclick="extendnav()">Framework</a>
+              </li>
+            
+              
+
+              
+
+              <li>
+                <a href="http://localhost:4000/docs/en/platform/op3/quick_start/#software-utilities" style="font-style:italic;" onclick="extendnav()">Software Utilities</a>
+              </li>
+            
+              
+
+              
+
+              <li>
+                <a href="http://localhost:4000/docs/en/platform/op3/quick_start/#recovery-software" style="font-style:italic;" onclick="extendnav()">Recovery Software</a>
+              </li>
+            
+              
+
+              
+
+              <li>
+                <a href="http://localhost:4000/docs/en/platform/op3/quick_start/#useful-information" style="font-style:italic;" onclick="extendnav()">Useful Information</a>
+              </li>
+            
+            </ul>
+          
+          
+          </li>
           
         
           
@@ -3338,10 +3417,42 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/op3/getting_started/#software-utilities" onclick="extendnav()">Software Utilities</a></li>
+          <li class="has-children">
+            <input type="radio" name="sublevel" id="Quick Start_6" >
+            <label for="Quick Start_6">6. Miscellaneous [+]</label>
           
 
           
+            <ul>
+            
+              
+
+              
+
+              <li>
+                <a href="http://localhost:4000/docs/en/platform/op3/quick_start/#system-block-diagram" style="font-style:italic;" onclick="extendnav()">System Block Diagram</a>
+              </li>
+            
+              
+
+              
+
+              <li>
+                <a href="http://localhost:4000/docs/en/platform/op3/quick_start/#id-map" style="font-style:italic;" onclick="extendnav()">ID Map</a>
+              </li>
+            
+              
+
+              
+
+              <li>
+                <a href="http://localhost:4000/docs/en/platform/op3/quick_start/#warranty" style="font-style:italic;" onclick="extendnav()">Warranty</a>
+              </li>
+            
+            </ul>
+          
+          
+          </li>
           
         
           
@@ -3349,21 +3460,58 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/op3/getting_started/#recovery-software" onclick="extendnav()">Recovery Software</a></li>
+          <li class="has-children">
+            <input type="radio" name="sublevel" id="Quick Start_7" >
+            <label for="Quick Start_7">7. Sub Controller(OpenCR) [+]</label>
           
 
           
-          
-        
-          
+            <ul>
+            
+              
 
-          
+              
 
-          
-          <li><a href="http://localhost:4000/docs/en/platform/op3/getting_started/#useful-information" onclick="extendnav()">Useful Information</a></li>
-          
+              <li>
+                <a href="http://localhost:4000/docs/en/platform/op3/quick_start/#control-table" style="font-style:italic;" onclick="extendnav()">Control Table</a>
+              </li>
+            
+              
 
+              
+
+              <li>
+                <a href="http://localhost:4000/docs/en/platform/op3/quick_start/#eeprom-area" style="font-style:italic;" onclick="extendnav()">EEPROM Area</a>
+              </li>
+            
+              
+
+              
+
+              <li>
+                <a href="http://localhost:4000/docs/en/platform/op3/quick_start/#ram-area" style="font-style:italic;" onclick="extendnav()">RAM Area</a>
+              </li>
+            
+              
+
+              
+
+              <li>
+                <a href="http://localhost:4000/docs/en/platform/op3/quick_start/#address-function-help" style="font-style:italic;" onclick="extendnav()">Address Function Help</a>
+              </li>
+            
+              
+
+              
+
+              <li>
+                <a href="http://localhost:4000/docs/en/platform/op3/quick_start/#gpio-pin-assignments" style="font-style:italic;" onclick="extendnav()">GPIO Pin Assignments</a>
+              </li>
+            
+            </ul>
           
+          
+          </li>
           
         
         </ul>
@@ -3377,10 +3525,12 @@ $(function() {
 
     
 
+      
+      
       
       <li class="has-children">
         <input type="radio" name="toplevel" id="toplevel_3" >
-        <label for="toplevel_3">Miscellaneous [+]</label>
+        <label for="toplevel_3">3. Getting Started [+]</label>
 
       
 
@@ -3392,7 +3542,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/op3/getting_started/#system-block-diagram" onclick="extendnav()">System Block Diagram</a></li>
+          <li><a href="http://localhost:4000/docs/en/platform/op3/getting_started/#how-to-connect" onclick="extendnav()">1. How to connect</a></li>
           
 
           
@@ -3403,7 +3553,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/op3/getting_started/#id-map" onclick="extendnav()">ID Map</a></li>
+          <li><a href="http://localhost:4000/docs/en/platform/op3/getting_started/#how-to-kill-the-demo-program" onclick="extendnav()">2. How to Kill the demo program</a></li>
           
 
           
@@ -3414,7 +3564,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/op3/getting_started/#warranty" onclick="extendnav()">Warranty</a></li>
+          <li><a href="http://localhost:4000/docs/en/platform/op3/getting_started/#how-to-restart-the-demo-program" onclick="extendnav()">3. How to Restart the demo program</a></li>
           
 
           
@@ -3432,9 +3582,11 @@ $(function() {
     
 
       
+      
+      
       <li class="has-children">
         <input type="radio" name="toplevel" id="toplevel_4" >
-        <label for="toplevel_4">Sub Controller(OpenCR) [+]</label>
+        <label for="toplevel_4">4. Robotis ROS Modules [+]</label>
 
       
 
@@ -3446,7 +3598,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/op3/getting_started/#control-table" onclick="extendnav()">Control Table</a></li>
+          <li><a href="http://localhost:4000/docs/en/platform/op3/robotis_ros_modules/#robotis-op3" onclick="extendnav()">1. ROBOTIS OP3</a></li>
           
 
           
@@ -3457,7 +3609,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/op3/getting_started/#eeprom-area" onclick="extendnav()">EEPROM Area</a></li>
+          <li><a href="http://localhost:4000/docs/en/platform/op3/robotis_ros_modules/#robotis-op3-msgs" onclick="extendnav()">2. ROBOTIS OP3 msgs</a></li>
           
 
           
@@ -3468,7 +3620,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/op3/getting_started/#ram-area" onclick="extendnav()">RAM Area</a></li>
+          <li><a href="http://localhost:4000/docs/en/platform/op3/robotis_ros_modules/#robotis-op3-Demo" onclick="extendnav()">3. ROBOTIS OP3 Demo</a></li>
           
 
           
@@ -3479,7 +3631,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/op3/getting_started/#address-function-help" onclick="extendnav()">Address Function Help</a></li>
+          <li><a href="http://localhost:4000/docs/en/platform/op3/robotis_ros_modules/#robotis-op3-common" onclick="extendnav()">4. ROBOTIS OP3 Common</a></li>
           
 
           
@@ -3490,7 +3642,282 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/op3/getting_started/#gpio-pin-assignments" onclick="extendnav()">GPIO Pin Assignments</a></li>
+          <li><a href="http://localhost:4000/docs/en/platform/op3/robotis_ros_modules/#robotis-op3-tools" onclick="extendnav()">5. ROBOTIS OP3 Tools</a></li>
+          
+
+          
+          
+        
+        </ul>
+      
+      
+      </li>
+      
+    
+  
+    
+
+    
+
+      
+      
+      
+      <li class="has-children">
+        <input type="radio" name="toplevel" id="toplevel_5" >
+        <label for="toplevel_5">5. Tutorials [+]</label>
+
+      
+
+      
+        <ul>
+        
+          
+
+          
+
+          
+          <li><a href="http://localhost:4000/docs/en/platform/op3/tutorials/#how-to-run-op3's-program" onclick="extendnav()">1. How to run OP3 program</a></li>
+          
+
+          
+          
+        
+          
+
+          
+
+          
+          <li><a href="http://localhost:4000/docs/en/platform/op3/tutorials/#how-to-execute-default-demo" onclick="extendnav()">2. How to execute Default Demo</a></li>
+          
+
+          
+          
+        
+          
+
+          
+
+          
+          <li class="has-children">
+            <input type="radio" name="sublevel" id="Tutorials_3" >
+            <label for="Tutorials_3">3. How to execute GUI program [+]</label>
+          
+
+          
+            <ul>
+            
+              
+
+              
+
+              <li>
+                <a href="http://localhost:4000/docs/en/platform/op3/tutorials/#how-to-use-walking-tuner" style="font-style:italic;" onclick="extendnav()">How to use walking tuner</a>
+              </li>
+            
+              
+
+              
+
+              <li>
+                <a href="http://localhost:4000/docs/en/platform/op3/tutorials/#how-to-play-the-motions" style="font-style:italic;" onclick="extendnav()">How to play the motions</a>
+              </li>
+            
+              
+
+              
+
+              <li>
+                <a href="http://localhost:4000/docs/en/platform/op3/tutorials/#how-to-control-the-head-joints" style="font-style:italic;" onclick="extendnav()">How to control the head joints</a>
+              </li>
+            
+              
+
+              
+
+              <li>
+                <a href="http://localhost:4000/docs/en/platform/op3/tutorials/#how-to-control-upgraded-walkingonline-walking" style="font-style:italic;" onclick="extendnav()">How to control upgraded walking</a>
+              </li>
+            
+            </ul>
+          
+          
+          </li>
+          
+        
+          
+
+          
+
+          
+          <li><a href="http://localhost:4000/docs/en/platform/op3/tutorials/#how-to-use-offset-tuner" onclick="extendnav()">4. How to use offset tuner</a></li>
+          
+
+          
+          
+        
+          
+
+          
+
+          
+          <li><a href="http://localhost:4000/docs/en/platform/op3/tutorials/#how-to-create-the-motions" onclick="extendnav()">5. How to create the motions</a></li>
+          
+
+          
+          
+        
+          
+
+          
+
+          
+          <li><a href="http://localhost:4000/docs/en/platform/op3/tutorials/#how-to-use-ball-detector" onclick="extendnav()">6. How to use ball detector</a></li>
+          
+
+          
+          
+        
+          
+
+          
+
+          
+          <li><a href="http://localhost:4000/docs/en/platform/op3/tutorials/#how-to-control-upgraded-walking-using-footstep-planner" onclick="extendnav()">7. How to control upgraded walking</a></li>
+          
+
+          
+          
+        
+        </ul>
+      
+      
+      </li>
+      
+    
+  
+    
+
+    
+
+      
+      
+      
+      <li class="has-children">
+        <input type="radio" name="toplevel" id="toplevel_6" >
+        <label for="toplevel_6">6. Simulation [+]</label>
+
+      
+
+      
+        <ul>
+        
+          
+
+          
+
+          
+          <li><a href="http://localhost:4000/docs/en/platform/op3/simulation/#gazebo-installation" onclick="extendnav()">1. Gazebo Installation</a></li>
+          
+
+          
+          
+        
+          
+
+          
+
+          
+          <li><a href="http://localhost:4000/docs/en/platform/op3/simulation/#how-to-execute-gazebo-simulation" onclick="extendnav()">2. How to execute Gazebo Simulation</a></li>
+          
+
+          
+          
+        
+        </ul>
+      
+      
+      </li>
+      
+    
+  
+    
+
+    
+
+      
+      
+      
+      <li class="has-children">
+        <input type="radio" name="toplevel" id="toplevel_7" >
+        <label for="toplevel_7">7. Hardware [+]</label>
+
+      
+
+      
+        <ul>
+        
+          
+
+          
+
+          
+          <li><a href="http://localhost:4000/docs/en/platform/op3/hardware/#assemble-data" onclick="extendnav()">1. Assemble Data</a></li>
+          
+
+          
+          
+        
+          
+
+          
+
+          
+          <li><a href="http://localhost:4000/docs/en/platform/op3/hardware/#cover-skin-data" onclick="extendnav()">2. Cover Skin Data</a></li>
+          
+
+          
+          
+        
+        </ul>
+      
+      
+      </li>
+      
+    
+  
+    
+
+    
+
+      
+      
+      
+      <li class="has-children">
+        <input type="radio" name="toplevel" id="toplevel_8" >
+        <label for="toplevel_8">8. Recovery [+]</label>
+
+      
+
+      
+        <ul>
+        
+          
+
+          
+
+          
+          <li><a href="http://localhost:4000/docs/en/platform/op3/recovery/#manual-installation" onclick="extendnav()">1. Manual Installation</a></li>
+          
+
+          
+          
+        
+          
+
+          
+
+          
+          <li><a href="http://localhost:4000/docs/en/platform/op3/recovery/#recovery-of-robotis-op3" onclick="extendnav()">2. Recovery of ROBOTIS-OP3</a></li>
           
 
           
@@ -3518,1320 +3945,142 @@ $(function() {
     <a href="/blob/master/docs/en/platform/op3/getting_started.md" itemprop="sameAs" style="font-size:16px; float:right; margin: 10px 20px; text-decoration: none;">
       <i class="fa fa-fw fa-github" aria-hidden="true"></i> Edit on GitHub
     </a>
-    <h1 id="introduction"><a href="#introduction">Introduction</a></h1>
+    <div style="counter-reset: h1 2"></div>
 
-<h2 id="what-is-op3"><a href="#what-is-op3">What is OP3?</a></h2>
-<p>Open Platform Humanoid Project</p>
+<h1 id="getting-started"><a href="#getting_started">Getting Started</a></h1>
 
-<p><img src="/assets/images/platform/op3/op3_product.png" alt="" /></p>
+<h2 id="how-to-connect"><a href="#how-to-connect">How to connect</a></h2>
 
-<p>ROBOTIS OP3 is the latest miniature humanoid robot platform from ROBOTIS that succeeds ROBOTIS OP(aka “DARWIN OP”) and ROBOTIS OP2(aka “DARWIN 2” or “DARWIN OP2”). One of the noticeable changes of ROBOTIS OP3 is made in actuator by replacing MX-28 actuators with XM-430 actuators. Another significant change is also made in internal PC by replacing Atom based SBC(Single Board Computer) with Intel i3 based NUC. With the XM-430 which supports Dynamixel Protocol 2.0, OP3 has improved torque along with current based control and loaded with various functions. Intel NUC allows highly improved computing power that supports 64-bit OS and Bluetooth 4.1. In addition, OP3 is developed under ROS(Robot Operating System) to utilize various packages in ROS ecosystem. All these hardware improvements and ROS support allows developers to focus more on research and development compare to the preceding robots.</p>
+<h3 id="direct-connection">Direct Connection</h3>
+<p>Keyboard and monitor are directly connected to ROBOTIS-OP3.</p>
 
+<h3 id="remote-connection">Remote Connection</h3>
+
+<p><img src="/assets/images/platform/op3/op3_connection.png" alt="" /></p>
+
+<p><strong>Connect to ROBOTIS-OP3 over the network.</strong></p>
+
+<h4 id="connection-type">Connection Type</h4>
 <ul>
-  <li>Physical Differences from ROBOTIS OP2
-    <ul>
-      <li>ROBOTIS OP3 does not come with a design skin, however, 3D modeling files are provided in order to support 3D print for the default design skin.</li>
-    </ul>
-
-    <p><img src="/assets/images/platform/op3/op3_002.png" alt="" /></p>
+  <li>
+    <p>Via Wireless(WLAN)<br />
+ IP address will be automatically assigned when connecting to ROBOTIS-OP3-Share.<br />
+ After establishing Wi-Fi connection, use one of the connection methods described in the next section.
+ (<em>password : 111111</em>)</p>
+  </li>
+  <li>
+    <p>Via Wired(Ethernet) <br />
+ When using wired connection, connect ROBOTIS OP3 to the same Router with PC so that OP3 can be connected as a DHCP client.</p>
   </li>
 </ul>
 
-<p>OP3 looks quite different from OP2 as default skin is not provided. Users can download design skin files.<br />
-Downloaded skin files can be used for 3D printing.<br />
-ROBOTIS OP3 is loaded Intel NUC with i3 processor to achieve significant improvement in computing power.<br />
-OP3 supports HDMI and Display Port(DP) while OP2 only supports mini HDMI.<br />
-There are 1 RGB LED and 3 LEDs, 4 buttons on the back of OP3. From left to right, each button stands for Mode, Start, User, Reset.</p>
-
+<h4 id="how-to-connect-1">How to connect</h4>
 <ul>
-  <li>Here are some mechanical differences :
-    <ul>
-      <li>New mini HDMI port connector on the ROBOTIS OP2</li>
-      <li>Location of the ports</li>
-      <li>ROBOTIS OP3 no longer has the 3.5mm microphone and audio jacks</li>
-    </ul>
+  <li>SSH
+    <ol>
+      <li>Execute SSH client program (ex: PuTTY)</li>
+      <li>Input ROBOTIS-OP3’s IP address : 10.42.0.1</li>
+      <li>Select SSH as a connection type and then open it.</li>
+      <li>Input ROBOTIS-OP3’s user name : robotis</li>
+      <li>Input ROBOTIS-OP3’s password : 111111</li>
+    </ol>
 
-    <p><img src="/assets/images/platform/op3/op3_003.png" alt="" /></p>
-
-    <blockquote>
-      <p>Moderate changes have been made in the back panel of OP3.</p>
-    </blockquote>
+    <p><img src="/assets/images/platform/op3/op3_connection_ssh.png" alt="" /></p>
   </li>
-  <li>Advantages of developing with ROBOTIS OP3 compared to ROBOTIS OP2<br />
-As mentioned above, there are several changes in OP3 and advantages of the new OP3 are listed as follows:
-    <ul>
-      <li>New Actuators(higher torque)</li>
-      <li>Increase of SSD capacity</li>
-      <li>Increase of RAM capacity</li>
-      <li>Dramatic improvement in computational power</li>
-      <li>Replacing Mini HDMI with HDMI</li>
-      <li>User friendly sub-controller(CM-730 → OpenCR)</li>
-      <li>Improved camera</li>
-    </ul>
+  <li>VNC
+    <ol>
+      <li>Execute VNC client program (ex: Ultra VNC Viewer)</li>
+      <li>Input ROBOTIS-OP3’s IP address : 10.42.0.1</li>
+      <li>Input ROBOTIS-OP3’s password : 111111</li>
+      <li>Accessing ROBOTIS-OP3 via remote desktop may result in slower performance.</li>
+    </ol>
+
+    <p><img src="/assets/images/platform/op3/op3_connection_vnc.png" alt="" /></p>
+    <h2 id="how-to-kill-the-demo-program"><a href="#how-to-kill-the-demo-program">How to kill the demo program</a></h2>
   </li>
-  <li>Hardware Spec Comparison</li>
 </ul>
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: center"> </th>
-      <th style="text-align: center">ROBOTIS OP2</th>
-      <th style="text-align: center">ROBOTIS OP3</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: center">Actuator</td>
-      <td style="text-align: center">MX-28</td>
-      <td style="text-align: center">XM430-W350</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">CPU</td>
-      <td style="text-align: center">Intel Atom N2600<br />@1.6GHz dual core</td>
-      <td style="text-align: center">Intel Core i3 processor<br />dual core</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">RAM</td>
-      <td style="text-align: center">2GB DDR3 SODIMM 1066MHz<br />(user-replaceable)</td>
-      <td style="text-align: center">8GB DDR4 SODIMMs 2133MHz<br />(32GB maximum)<br />(user-replaceable)</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">Storage</td>
-      <td style="text-align: center">half-size mSATA module (32GB)<br />(user-replaceable)</td>
-      <td style="text-align: center">M.2 SSD module (128GB)<br />(user-replaceable)</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">Compatible OS</td>
-      <td style="text-align: center">any Linux release (32-bit)<br />any Windows release (32-bit)</td>
-      <td style="text-align: center">any Linux release (32-bit/64-bit)<br />any Windows release (32-bit/64-bit)</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">Networking</td>
-      <td style="text-align: center">Realtek 10/100/1000 Mbps Ethernet<br />802.11n (2.4GHz-only)</td>
-      <td style="text-align: center">Intel 10/100/1000 Mbps Ethernet<br />802.11ac (2.4GHz, 5GHz)<br />Bluetooth 4.1</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">Camera</td>
-      <td style="text-align: center">Logitech C905 (1600x1200)</td>
-      <td style="text-align: center">Logitech C920 (1920x1080)</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>ROBOTIS OP3 is an affordable, miniature humanoid robot platform with advanced computational power, sophisticated sensors, high payload capacity, and dynamic motion ability to enable many exciting research and education activities.</p>
-
-<ul>
-  <li>Actuator Spec Comparisons</li>
-</ul>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: center"> </th>
-      <th style="text-align: center">MX-28</th>
-      <th style="text-align: center">XM430-W350</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: center">Weight</td>
-      <td style="text-align: center">77g</td>
-      <td style="text-align: center">82g</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">Dimension</td>
-      <td style="text-align: center">35.6mm x 50.6mm x 35.5mm</td>
-      <td style="text-align: center">28.5mm x 46.5mm x 34.0mm</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">Gear Ratio</td>
-      <td style="text-align: center">193 : 1</td>
-      <td style="text-align: center">353.5 : 1</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">Stall Torque</td>
-      <td style="text-align: center">2.5 N.m</td>
-      <td style="text-align: center">4.1 N.m</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">Stall Current</td>
-      <td style="text-align: center">1.4 A</td>
-      <td style="text-align: center">2.3 A</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">No Load Speed</td>
-      <td style="text-align: center">55 RPM</td>
-      <td style="text-align: center">46 RPM</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">Protocol</td>
-      <td style="text-align: center">1.0 Only</td>
-      <td style="text-align: center">1.0, 2.0</td>
-    </tr>
-  </tbody>
-</table>
-
-<ul>
-  <li>XM430 series actuator is easier to assemble and maintain as well as supporting various control algorithms.
-    <ul>
-      <li>Reduced size and increased torque</li>
-      <li>Metal case with integrated assembly bolt taps</li>
-      <li>Hollow back case with cable cover</li>
-      <li>6 operating modes</li>
-      <li>Current-based torque control</li>
-      <li>Profile control for smooth motion planning</li>
-    </ul>
-  </li>
-  <li>ROBOTIS-OP3 Specifications</li>
-</ul>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: center"> </th>
-      <th style="text-align: center">ROBOTIS OP3</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: center">Height</td>
-      <td style="text-align: center">About 510mm</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">Weight</td>
-      <td style="text-align: center">About 3.5kg (without skin cover)</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">DOF</td>
-      <td style="text-align: center">20</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">Actuator</td>
-      <td style="text-align: center">XM430-W350-R</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">Main Controller</td>
-      <td style="text-align: center">INTEL NUC i3<br />Intel Core i3 processor dual core<br />8GB RAM DDR4 SODIMMs 2133MHz<br />128GB M.2 SSD</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">Sub Controller</td>
-      <td style="text-align: center">OpenCR</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">Camera</td>
-      <td style="text-align: center">Logitech C920 HD Pro Webcam</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">IMU Sensor</td>
-      <td style="text-align: center">3-Axis Gyroscope, 3-Axis Accelerometer, 3-Axis Magnetometer</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">Battery</td>
-      <td style="text-align: center">Lipo 3cell 11.1v 1800mA</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">IO Device</td>
-      <td style="text-align: center">RGB LED x 1, LED x 3 (Red, Green, Blue), Button x 4, Speaker x 1</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">Installable OS</td>
-      <td style="text-align: center">any Linux release (32-bit/64-bit)<br />any Windows release (32-bit/64-bit)</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">Development<br />Environment</td>
-      <td style="text-align: center">OS : Linux (64-bit)<br />C++, ROS, Dynamixel SDK</td>
-    </tr>
-  </tbody>
-</table>
-
-<h2 id="safety-information"><a href="#safety-information">Safety Information</a></h2>
-
-<p class="notice--warning"><code class="highlighter-rouge">Caution</code> ROBOTIS will not be responsible for any loss or damage whatsoever caused resulting from
-user’s negligence or misuse of the product.</p>
-
-<ul>
-  <li>Read the instruction carefully before getting started.</li>
-  <li>Not suitable for children under 15 years old.</li>
-  <li>Do not use any other tools other than those provided in the kit.</li>
-  <li>Keep the robot away from your face and body when the robot is operating.</li>
-  <li>Prevent from getting your fingers stuck between frames.</li>
-  <li>Do not place the robot near water, heat or fire.</li>
-  <li>Only use the battery and charger included in the kit.</li>
-  <li>Gears must be replaced after long excessive use.</li>
-</ul>
-
-<h2 id="package-contents"><a href="#package-contents">Package Contents</a></h2>
-
-<p>Check your ROBOTIS OP3 package for the following items.</p>
-
-<p><img src="/assets/images/platform/op3/op3_004.png" alt="" /></p>
-
-<p><img src="/assets/images/platform/op3/op3_005.png" alt="" /></p>
-
-<h2 id="layout"><a href="#layout">Layout</a></h2>
-
-<p><img src="/assets/images/platform/op3/op3_006.png" alt="" /></p>
-
-<p><img src="/assets/images/platform/op3/op3_007.png" alt="" /></p>
-
-<p class="notice--warning"><code class="highlighter-rouge">Caution</code> Layout of the front and back panel is subject to change depends on the selected built-in PC.</p>
-
-<h2 id="charging-battery"><a href="#charging-battery">Charging Battery</a></h2>
-
-<p>Please charge the battery pack according to the following procedure.</p>
-
-<p><img src="/assets/images/platform/op3/op3_008.png" alt="" /></p>
-
-<h2 id="battery-hot-swap"><a href="#battery-hot-swap">Battery Hot Swap</a></h2>
-
-<p>The battery of ROBOTIS-OP3 can be replaced without shutting down the robot.<br />
-To replace battery during operation, please follow the below procedure.</p>
-
-<p><img src="/assets/images/platform/op3/op3_009.png" alt="" /></p>
-
-<h1 id="quick-start"><a href="#quick-start">Quick Start</a></h1>
-
-<h2 id="power-on"><a href="#power-on">Power On</a></h2>
-
-<p>The following procedure takes you through the set up process.</p>
-
-<p><img src="/assets/images/platform/op3/op3_010.png" alt="" /></p>
-
-<p class="notice--warning"><code class="highlighter-rouge">Warning</code> Manually configuring ROBOTIS OP3’s ready pose other than the above pose may cause mechanical damages when posing for initial stance.</p>
-
-<p><img src="/assets/images/platform/op3/op3_011.png" alt="" /></p>
-
-<p>Connect the AC plug of the power adapter into a power outlet and plug the DC connector into ROBOTIS OP3’s DC jack.
-The DC jack is located on the back panel of ROBOTIS OP3.</p>
-
-<p><img src="/assets/images/platform/op3/op3_012.png" alt="" /></p>
-
-<p>You can select either the DC power supply or battery pack to power ROBOTIS OP3.<br />
-If you want to use the battery pack, please follow the below procedure.</p>
-<ol>
-  <li>Ensure the battery pack is fully charged.</li>
-  <li>Open the battery compartment door (unscrew the thumbscrew) and insert the battery pack.</li>
-  <li>Connect the battery cable to the battery power jack.</li>
-  <li>Close and secure the compartment door (screw the thumbscrew) afterwards.</li>
-  <li>Disconnect DC power supply.</li>
-</ol>
-
-<p class="notice"><code class="highlighter-rouge">Note</code> To prevent unexpected shutdown, ensure that ROBOTIS OP3 is connected with at least one active power source.</p>
-
-<p><img src="/assets/images/platform/op3/op3_013.png" alt="" /></p>
-
-<p>Pushing the power switch to the right will power up the ROBOTIS OP3 (to the right : power on, to the left : power off)</p>
-
-<p>Once Power is on, the following procedure will be sequentially executed.</p>
-
-<p><img src="/assets/images/platform/op3/op3_014.png" alt="" /></p>
-
-<h2 id="execute-demo-program"><a href="#execute-demo-program">Execute Demo Program</a></h2>
-
-<h3 id="running-demonstration-programs"><a href="#running-demonstration-programs">Running Demonstration Programs</a></h3>
-
-<p>ROBOTIS OP3 is loaded with the following pre-configured operation modes :</p>
-<ol>
-  <li>Demonstration-Ready Mode</li>
-  <li>Autonomous Soccer Mode</li>
-  <li>Vision Processing Mode</li>
-  <li>Interactive Motion Mode</li>
-</ol>
-
-<p>Demonstration-Ready mode is set as a default mode when ROBOTIS OP3 is turned on.</p>
-
-<p>Press <code class="highlighter-rouge">MODE</code> button to navigate the mode.<br />
-ROBOTIS OP3 will verbally announce the selected mode when pressing the button.<br />
-The indicating LED will also change its color to the corresponding operation mode.</p>
-
-<p>Press <code class="highlighter-rouge">START</code> button to run the selected mode.<br />
-After pressing <code class="highlighter-rouge">START</code> ROBOTIS OP3 will stand up and begin operations.</p>
-
-<p><img src="/assets/images/platform/op3/op3_015.png" alt="" /></p>
-
-<div class="notice--warning">
-<p><strong>RESET Button</strong>
-The <code class="highlighter-rouge">RESET</code> button only resets actuators and the OpenCR sub-controller, not the entire system. Please keep in mind that the demo program is still running in the main controller when <code class="highlighter-rouge">RESET</code> button is pressed.<br />
-Pressing <code class="highlighter-rouge">RESET</code> button will disable torque on all actuator. It is highly recommended to set ROBOTIS OP3 for kneeling pose before pressing <code class="highlighter-rouge">RESET</code> button or hold ROBOTIS OP3 using its carrying handle.</p>
+<h3 id="kill-demo-program">Kill demo program</h3>
+<p>In order to terminate automatically executed demo program, enter below command in the terminal window.</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>$ sudo service OP3-demo stop
+</code></pre>
 </div>
 
-<h3 id="demonstration-ready-mode"><a href="#demonstration-ready-mode">Demonstration Ready Mode</a></h3>
+<h3 id="running-demo-on-startup">Running demo on startup</h3>
+<p>This chapter describes settings for automatically executing demo on startup.<br />
+Autorun feature requires robot_upstart package from ROS.</p>
+<blockquote>
+  <p>Reference : <a href="http://wiki.ros.org/robot_upstart">robot_upstart</a></p>
+</blockquote>
 
-<p>The Demonstration-Ready mode is a default mode when ROBOTIS OP3 is turned on. LED 1 (red), LED 2 (green) and LED 3 (blue) will be lit.<br />
-The chest LED will switch the color from red to green while ROBOTIS OP3 verbally announces “Demonstration-ready mode”.<br />
-Now ROBOTIS OP3 is ready for action!<br />
-ROBOTIS OP3 stays in kneeling pose and does not move while in this mode.<br />
-This is the most recommended mode to change the power source.</p>
-
-<p><img src="/assets/images/platform/op3/op3_016.png" alt="" /></p>
-
-<h3 id="autonomous-mode"><a href="#autonomous-mode">Autonomous Mode</a></h3>
-
-<p>ROBOTIS OP3 follows and kicks a red ball (user can change the color of ball) and plays soccer by itself.<br />
-If ROBOTIS OP3 falls down (either on its back or belly) it will stand up and resume ball tracking, then pursuit.</p>
-
-<ul>
-  <li>Start Autonomous Soccer Mode
-    <ol>
-      <li>
-        <p>Press <code class="highlighter-rouge">MODE</code> button until LED1(red) is lit.<br />
-  ROBOTIS OP3 will verbally announce “Autonomous soccer mode”.</p>
-
-        <p><img src="/assets/images/platform/op3/op3_017.png" alt="" /></p>
-      </li>
-      <li>
-        <p>Press <code class="highlighter-rouge">START</code> button to begin.<br />
-  ROBOTIS OP3 will stand up and walk around to find the ball.ROBOTIS-OP3 will verbally announce “Start soccer demonstration”</p>
-      </li>
-      <li>
-        <p>When ROBOTIS OP3 sees a ball with the matching color, it will walk toward the ball.<br />
-  If ROBOTIS OP3 gets close enough to the ball, ROBOTIS OP3 will kick the ball with one of its feet.<br />
-  If ROBOTIS OP3 falls down during pursuit or kick, it will stand up and resume.</p>
-      </li>
-    </ol>
-  </li>
-  <li>Stop Autonomous Soccer Mode
-    <ul>
-      <li>Press <code class="highlighter-rouge">MODE</code> button until LED 3(blue) is lit. ROBOTIS OP3 will verbally announce “Interactive motion mode”.</li>
-    </ul>
-  </li>
-</ul>
-
-<h3 id="interactive-motion-mode"><a href="#interactive-motion-mode">Interactive Motion Mode</a></h3>
-
-<p>ROBOTIS OP3 performs pre-programmed motions sequentially while talking.</p>
-
-<ul>
-  <li>Start Interactive Motion Mode
-    <ol>
-      <li>
-        <p>Press <code class="highlighter-rouge">MODE</code> button until LED 3(blue) is lit. ROBOTIS OP3 will verbally announce “Interactive motion mode”.</p>
-
-        <p><img src="/assets/images/platform/op3/op3_019.png" alt="" /></p>
-      </li>
-      <li>Press <code class="highlighter-rouge">START</code> button to begin. ROBOTIS OP3 will stand up and announce “Start motion demonstration”.</li>
-      <li>ROBOTIS OP3 will perform following actions sequentially.</li>
-    </ol>
-
-    <p><img src="/assets/images/platform/op3/op3_020.png" alt="" /></p>
-  </li>
-  <li>Stop Interactive Motion Mode
-    <ul>
-      <li>If <code class="highlighter-rouge">MODE</code> button is pressed for at least 2 seconds, ROBOTIS-OP3 will return to demonstration-ready mode.</li>
-    </ul>
-  </li>
-</ul>
-
-<h3 id="vision-processing-mode"><a href="#vision-processing-mode">Vision Processing Mode</a></h3>
-
-<p>The new vision processing demo for ROBOTIS OP3 is “Face detection and tracking”. ROBOTIS OP3 is developed with ROS.<br />
-Therefore various ROS packages such as face detecting package can be applied for vision processing mode to track recognized face in front of the robot.<br />
-Please refer the below website link.<br />
-Face detecting : https://github.com/phil333/face_detection</p>
-
-<ul>
-  <li>Start Vision Processing Mode
-    <ol>
-      <li>
-        <p>Press <code class="highlighter-rouge">MODE</code> button until LED 2(green) is lit. ROBOTIS OP3 will verbally announce “Vision processing mode”.</p>
-
-        <p><img src="/assets/images/platform/op3/op3_018.png" alt="" /></p>
-      </li>
-      <li>Press <code class="highlighter-rouge">START</code> button to begin. ROBOTIS OP3 will verbally announce “Start vision processing demonstration” and stand up.</li>
-      <li>The target face should be located approximately 90cm(36”) away from ROBOTIS OP3.<br />
-  If ROBOTIS OP3 detects the target face, chest LED will be lit in white whereas the LED will be off if ROBOTIS OP3 doesn’t detect the face.<br />
-  ROBOTIS OP3 will keep track on the first recognized target face.</li>
-    </ol>
-  </li>
-  <li>Stop Vision Processing Mode
-    <ul>
-      <li>If <code class="highlighter-rouge">MODE</code> button is pressed for at least 2 seconds, ROBOTIS-OP3 will return to Demonstration-Ready mode.</li>
-    </ul>
-  </li>
-  <li>ETC
-    <ul>
-      <li>Modifying parameters of the ‘face_detection’ package might improve recognition of the face. Please refer to the following website for more details.</li>
-      <li>face_detection package : https://github.com/ROBOTIS-GIT/face_detection</li>
-      <li>usb_cam package : http://wiki.ros.org/usb_cam</li>
-    </ul>
-  </li>
-</ul>
-
-<h2 id="camera-calibration"><a href="#camera-calibration">Camera Calibration</a></h2>
-
-<p>If ambient light of ROBOTIS OP3 is either too dim or too bright, user can adjust camera setting for optimizing acquired image from the camera.<br />
-The color of the ball for soccer demo can also be modified from the setting.<br />
-Please refer to the wiki manual from below link.<br />
-https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki</p>
-
-<h2 id="power-off"><a href="#power-off">Power Off</a></h2>
-
-<p>Please perform below procedures in order to shutdown the computer inside ROBOTIS OP3.</p>
-
+<h4 id="start-demo-program-on-start">Start demo program on start</h4>
 <ol>
-  <li>
-    <p>Press PC power button which is located on the bottom side of the chest. ROBOTIS OP3 will verbally announce “bye-bye” and initiate shutdown process.</p>
-
-    <p><img src="/assets/images/platform/op3/op3_021.png" alt="" /></p>
-
-    <p>When the internal computer of ROBOTIS OP3 is turned off, blue LED at the chest will be off.<br />
- After the blue LED is turned off, shutdown the main power with the switch in the back of the robot.</p>
-  </li>
-  <li>
-    <p>If ROBOTIS OP3 does not announce “bye-bye” then you may need to force shutdown by holding the power button until the blue LED at the chest turns off.</p>
-  </li>
-</ol>
-
-<p><img src="/assets/images/platform/op3/op3_022.png" alt="" /></p>
-
-<p class="notice"><code class="highlighter-rouge">Note</code> If power supply is cut off before the blue LED is turned off, ROBOTIS OP3 may have problems in the next startup.</p>
-
-<h1 id="programming-guide"><a href="#programming-guide">Programming Guide</a></h1>
-
-<h2 id="connect-to-op3"><a href="#connect-to-op3">Connect to OP3</a></h2>
-
-<p>From your computer go to Wi-Fi Setting and set to obtain an IP address automatically using DHCP.<br />
-Then connect to ROBOTIS OP3 wifi network(SSID : ROBOTIS-OP3-share). Password is 11111111.</p>
-
-<h3 id="example--ssh-client-for-windows">Example : SSH Client (for Windows)</h3>
-<ul>
-  <li>Execute SSH client program (ex: PuTTY)</li>
-  <li>Input ROBOTIS OP3’s IP address: <code class="highlighter-rouge">10.42.0.1</code></li>
-  <li>Select <code class="highlighter-rouge">SSH</code> as a connection type and open the connection.</li>
-  <li>Input ROBOTIS OP3’s user name : <code class="highlighter-rouge">robotis</code></li>
-  <li>Input ROBOTIS OP3’s Password : <code class="highlighter-rouge">111111</code></li>
-</ul>
-
-<p><img src="/assets/images/platform/op3/op3_023.png" alt="" /></p>
-
-<h3 id="example-ssh-client-for-linux">Example: SSH Client (for Linux)</h3>
-<ul>
-  <li>Open the terminal window.</li>
-  <li>Input the following SSH command with ROBOTIS OP3’s user name and IP address : <code class="highlighter-rouge">$ ssh robotis@10.42.0.1</code></li>
-  <li>Input ROBOTIS OP3’s Password : <code class="highlighter-rouge">111111</code></li>
-</ul>
-
-<p><img src="/assets/images/platform/op3/op3_024.png" alt="" /></p>
-
-<h3 id="example-vnc-client-for-windows">Example: VNC client (for Windows)</h3>
-<ul>
-  <li>Users who are familiar to graphical interface may use remote desktop softwares.</li>
-  <li>Execute VNC client program (ex: Ultra VNC Viewer)</li>
-  <li>Input the ROBOTIS OP3’s IP address : <code class="highlighter-rouge">10.42.0.1</code></li>
-  <li>Input the ROBOTIS OP3’s Password : <code class="highlighter-rouge">111111</code></li>
-</ul>
-
-<p><img src="/assets/images/platform/op3/op3_025.png" alt="" /></p>
-
-<h2 id="development-environment"><a href="#development-environment">Development Environment</a></h2>
-
-<p>The following is the list of tools for source code development.</p>
-<ul>
-  <li>OS : Linux (64-bit)</li>
-  <li>Compiler : GNU project C and C++ Compiler, Catkin</li>
-  <li>Programming Language : C++</li>
-</ul>
-
-<p>For more detailed information, please refer to the <a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki">ROBOTIS OP3 WIKI</a>. <br />
-https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki</p>
-
-<h2 id="source-code"><a href="#source-code">Source Code</a></h2>
-
-<p>You may find the source code directory at <code class="highlighter-rouge">/robotis</code> from ROBOTIS OP3’s PC.</p>
-
-<p><img src="/assets/images/platform/op3/op3_026.png" alt="" /></p>
-
-<p>The pre-installed source code may be updated without prior notice. Please check for updates periodically. 
-You may obtain updated source code from the below GitHub links :</p>
-<ul>
-  <li>https://github.com/ROBOTIS-GIT/DynamixelSDK</li>
-  <li>https://github.com/ROBOTIS-GIT/ROBOTIS-Framework</li>
-  <li>https://github.com/ROBOTIS-GIT/ROBOTIS-Framework-msgs</li>
-  <li>https://github.com/ROBOTIS-GIT/ROBOTIS-Math</li>
-  <li>https://github.com/ROBOTIS-GIT/ROBOTIS-OP3</li>
-  <li>https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Common</li>
-  <li>https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Demo</li>
-  <li>https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-msgs</li>
-  <li>https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Tools</li>
-  <li>https://github.com/ROBOTIS-GIT/ROBOTIS-Utility</li>
-</ul>
-
-<h2 id="framework"><a href="#framework">Framework</a></h2>
-
-<p>The following flow diagram represent class breakdown and data pipelines.<br />
-You may modify the framework at “/home/robotis/catkin_ws/src/ROBOTIS-Framework”.<br />
-For more information, please refer to the ROBOTIS OP3 WIKI.<br />
-https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki</p>
-
-<p><img src="/assets/images/platform/op3/op3_027.png" alt="" /></p>
-
-<h2 id="software-utilities"><a href="#software-utilities">Software Utilities</a></h2>
-
-<p>User who wishes to customize or diagnose ROBOTIS OP3 should establish a connection with the robot via SSH or Remote Desktop(VNC).
-The tools are located in the following directory :
-home/robotis/catkin_ws/src/ROBOTIS-OP3/ROBOTIS-OP3-Tools</p>
-
-<p>In the directory you can find code for :</p>
-
-<p><img src="/assets/images/platform/op3/op3_028.png" alt="" /></p>
-
-<h2 id="recovery-software"><a href="#recovery-software">Recovery Software</a></h2>
-
-<p>The supplied USB thumb drive contains the software pre-installed to ROBOTIS OP3.<br />
-You may obtain updated software from the link below.<br />
-https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki<br />
-Software may be updated without prior notice. Please check for updates periodically.</p>
-
-<h2 id="useful-information"><a href="#useful-information">Useful Information</a></h2>
-
-<p>You can download other ROBOTIS OP3-related items and more detailed information from the wiki manual.<br />
-https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki</p>
-
-<ul>
-  <li>For any inquiries send us an email.
+  <li>Make a script for auto-run
+Open a new terminal window and execute below commands.<br />
+<em>(password : 111111)</em>
+    <div class="highlighter-rouge"><pre class="highlight"><code>$ rosrun robot_upstart install --job JOB_NAME --user root --master http://10.42.0.1 op3_demo/launch/demo.launch
+</code></pre>
+    </div>
     <ul>
-      <li>International : <code class="highlighter-rouge">contactus2@robotis.com</code></li>
-      <li>Korea : <code class="highlighter-rouge">korea@robotis.com</code></li>
+      <li>JOB_NAME : This item specifies job name to autorun. The job name will be registered on the service.<br />
+<strong>ex : OP3-demo</strong>
+        <div class="highlighter-rouge"><pre class="highlight"><code> rosrun robot_upstart install --job OP3-demo --user root --master http://10.42.0.1:11311 op3_demo/launch/demo.launch
+</code></pre>
+        </div>
+      </li>
+      <li>NOTE : Autorun program will be generated based on <code class="highlighter-rouge">op3_demo/launch/demo.launch</code>.</li>
     </ul>
   </li>
-  <li>Third party terminal client
+  <li>Modify the script
     <ul>
-      <li>PuTTY : http://www.chiark.greenend.org.uk/~sgtatham/putty/</li>
-      <li>RealVNC : http://www.realvnc.com/</li>
+      <li>open service file and modify the contents
+        <div class="highlighter-rouge"><pre class="highlight"><code> $ sudo xed /usr/sbin/OP3-demo-start
+</code></pre>
+        </div>
+      </li>
+    </ul>
+    <ul>
+      <li>from : <code class="highlighter-rouge">export ROS_HOSTNAME=$(hostname)</code></li>
+      <li>to : <code class="highlighter-rouge">export ROS_HOSTNAME=10.42.0.1</code></li>
     </ul>
   </li>
-</ul>
-
-<h1 id="miscellaneous"><a href="#miscellaneous">Miscellaneous</a></h1>
-
-<h2 id="system-block-diagram"><a href="#system-block-diagram">System Block Diagram</a></h2>
-
-<p>The below diagram illustrates the overall system structure of ROBOTIS OP3.</p>
-
-<p><img src="/assets/images/platform/op3/op3_029.png" alt="" /></p>
-
-<ol>
-  <li>Main Controller is powered by Intel i3 dual-core(Intel NUC i3)</li>
-  <li>Sub Controller is powered by STMicroelectronics Cortex-M7 32F746GT6 (clocked at 216MHz).</li>
-  <li>Camera
+  <li>Run the service
+    <div class="highlighter-rouge"><pre class="highlight"><code>$  sudo systemctl daemon-reload &amp;&amp; sudo systemctl start JOB_NAME
+</code></pre>
+    </div>
     <ul>
-      <li>1080p Full HD movie recording</li>
-      <li>Carl Zeiss® optics with 20-step autofocus</li>
-      <li>Built-in dual stereo mics with noise reduction</li>
-      <li>H.264 video encoding</li>
+      <li><code class="highlighter-rouge">daemontools</code> Installation : If <code class="highlighter-rouge">daemontools</code> is not installed on the system, execute below command.
+        <div class="highlighter-rouge"><pre class="highlight"><code>$ sudo apt install daemontools
+</code></pre>
+        </div>
+      </li>
     </ul>
   </li>
 </ol>
 
-<h2 id="id-map"><a href="#id-map">ID Map</a></h2>
-
-<p>The following diagram illustrates the default ID number of actuators in ROBOTIS OP3.</p>
-
-<p><img src="/assets/images/platform/op3/op3_030.png" alt="" /></p>
-
-<h2 id="warranty"><a href="#warranty">Warranty</a></h2>
-
-<p><strong>ROBOTIS OP3 includes the following warranty:</strong></p>
-
-<p>A. 90 days warranty against manufacture defects (RMA required) *</p>
-
-<p>B. Local Maintenance Service (by local partner) : 1 years **</p>
-<ul>
-  <li>Re-installation of S/W and firmware</li>
-  <li>Replacement for cable/gear/screw (RMA required – exempt from faulty return)</li>
-  <li>Replacement for faulty frame/cover/actuator (RMA required)</li>
-</ul>
-
-<p>C. Core System Maintenance Service (by ROBOTIS) : 1 years</p>
-<ul>
-  <li>Replacement for faulty PC/sub-boards (RMA required)</li>
-  <li>Maintenance for actuator/sub-boards (RMA required)</li>
-  <li>Maintenance for PC (RMA required, additional fee applies)</li>
-</ul>
-
-<p>D. Parts replacement for malfunctions during normal operation for 1 years.</p>
-
-<div class="notice--warning">
-<p>* Please download RMA (Return Material Authorization)(http://en.robotis.com/index/service_04.php?tab=4)<br />
-No return shipping will be accepted without a RMA number issued by ROBOTIS.</p>
-
-<p>** Customers who require extended warranty period may purchase another “1 year warranty”
-from ROBOTIS before their standard warranty period is over.</p>
+<h4 id="stop-demo-program-on-start">Stop demo program on start</h4>
+<p>Open a new terminal window and execute following commands.</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>$ rosrun robot_upstart uninstall JOB_NAME
+</code></pre>
 </div>
 
-<p><strong>Important Notice:</strong></p>
+<h2 id="how-to-restart-the-demo-program"><a href="#how-to-restart-the-demo-program">How to restart the demo program</a></h2>
 
-<ol>
-  <li>
-    <p>Product registration is required for all customers. http://support.robotis.com</p>
-  </li>
-  <li>
-    <p>Parts replacement can only be done through RMA(Return Material Authorization) application.</p>
-  </li>
-  <li>
-    <p>After the initial 90 days, shipping fee is not covered under warranty.</p>
-  </li>
-  <li>Warranty does NOT cover ordinary wear/tear, any accident or damage caused by followings.
-    <ul>
-      <li>Physical damage equivalent to dropping the robot from 20cm or higher</li>
-      <li>Disabling system safety function (DYNAMIXEL Overload Shutdown)</li>
-      <li>Dangerous movement (jump, roll, fi ght) or excessive operation without rest</li>
-      <li>Any liquid or unauthorized chemical material to the robot</li>
-      <li>Unauthorized power or electric shock applied to the robot</li>
-      <li>Improvising core system programming area.</li>
-    </ul>
-  </li>
-  <li>Direct check-up service<br />
-  Evaluation, maintenance and quality assurance of assembled robot can be provided by ROBOTIS only.<br />
-  RMA is required and additional fee may apply. Service will not be rendered for seriously customized hardware.</li>
-</ol>
+<h3 id="when-to-restart-the-demo">When to restart the demo</h3>
+<ul>
+  <li>When camera has lost its connection due to electrical or mechanical issue.</li>
+  <li>When USB2Dynamixel has lost its connection due to electrical or mechanical issue.</li>
+  <li>When resetting Dynamixel with Reset button due to Dynamixel error.</li>
+</ul>
 
-<h1 id="sub-controlleropencr"><a href="#sub-controlleropencr">Sub Controller(OpenCR)</a></h1>
+<h3 id="how-to-restart-the-demo">How to restart the demo</h3>
+<p>In order to restart autorun demo, execute following command in the terminal window.<br />
+<em>(password : 111111)</em></p>
 
-<h2 id="control-table"><a href="#contrl-table">Control Table</a></h2>
-<p>Control Table consists of data regarding the current status and operation of OpenCR. The user can control OpenCR by changing data of Control Table via Instruction packet.</p>
+<div class="highlighter-rouge"><pre class="highlight"><code>$ sudo service OP3-demo restart
+</code></pre>
+</div>
 
-<h3 id="eeprom-and-ram">EEPROM and RAM</h3>
-<p>Data in RAM area is reset to initial values whenever the power is turned on while data in EEPROM area is kept once values are set even if the power is turned off.</p>
-
-<h3 id="address">Address</h3>
-<p>Represents the location of data. To read from or write data to the control table the user should assign the correct address in the Instruction packet.</p>
-
-<h3 id="access">Access</h3>
-<p>OpenCR has two kinds of data: Read-only data, used mainly for sensing, and read-and-write data used for driving.</p>
-
-<h3 id="initial-value">Initial Value</h3>
-<p>In case of data in the EEPROM Area, the initial values on the right side of the below Control Table are the factory default settings.<br />
-In case of data in the RAM Area, the initial values on the right side of the following control table are the ones when the power is turned on.</p>
-
-<h3 id="highestlowest-byte">Highest/Lowest Byte</h3>
-<p>In the Control table, some data share the same name, but they are attached with (L) or (H) at the end of each name to distinguish the address. This data requires 16-bit, but it is divided into 8bit each for the addresses (low) and (high). These two addresses should be written with one Instruction Packet simutaneously.</p>
-
-<h2 id="eeprom-area"><a href="#eeprom-area">EEPROM Area</a></h2>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: center">Address</th>
-      <th style="text-align: center">Name</th>
-      <th style="text-align: center">Description</th>
-      <th style="text-align: center">Access</th>
-      <th style="text-align: center">Init Value</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: center">0 (0X00)</td>
-      <td style="text-align: center">Model Number(L)</td>
-      <td style="text-align: center">model number low byte</td>
-      <td style="text-align: center">R</td>
-      <td style="text-align: center">0(0X00)</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">1 (0X01)</td>
-      <td style="text-align: center">Model Number(H)</td>
-      <td style="text-align: center">model number high byte</td>
-      <td style="text-align: center">R</td>
-      <td style="text-align: center">116 (0X74)</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">2 (0X02)</td>
-      <td style="text-align: center">Version of Firmware</td>
-      <td style="text-align: center">firmware version</td>
-      <td style="text-align: center">R</td>
-      <td style="text-align: center">-</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">3 (0X03)</td>
-      <td style="text-align: center">ID</td>
-      <td style="text-align: center">OpenCR ID</td>
-      <td style="text-align: center">RW</td>
-      <td style="text-align: center">200 (0XC8)</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">4 (0X04)</td>
-      <td style="text-align: center">Baud Rate</td>
-      <td style="text-align: center">Dynamixel baud rate</td>
-      <td style="text-align: center">RW</td>
-      <td style="text-align: center">1 (0X01)</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">5 (0X05)</td>
-      <td style="text-align: center">Return Delay Time</td>
-      <td style="text-align: center">Return Delay Time</td>
-      <td style="text-align: center">RW</td>
-      <td style="text-align: center">0 (0X0)</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">16 (0X10)</td>
-      <td style="text-align: center">Status Return Level</td>
-      <td style="text-align: center">Status Return Level</td>
-      <td style="text-align: center">RW</td>
-      <td style="text-align: center">0 (0X00)</td>
-    </tr>
-  </tbody>
-</table>
-
-<h2 id="ram-area"><a href="#ram-area">RAM Area</a></h2>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: center">Address</th>
-      <th style="text-align: center">Name</th>
-      <th style="text-align: center">Description</th>
-      <th style="text-align: center">Access</th>
-      <th style="text-align: center">Init Value</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: center">24 (0X18)</td>
-      <td style="text-align: center">Dynamixel Power</td>
-      <td style="text-align: center">Dynamixel On/Off</td>
-      <td style="text-align: center">RW</td>
-      <td style="text-align: center">0 (0X00)</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">25 (0X19)</td>
-      <td style="text-align: center">LED</td>
-      <td style="text-align: center">LED Pannel On/Off</td>
-      <td style="text-align: center">RW</td>
-      <td style="text-align: center">0 (0X00)</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">26 (0X1A)</td>
-      <td style="text-align: center">LED_RGB(L)</td>
-      <td style="text-align: center">LED 5 low byte</td>
-      <td style="text-align: center">RW</td>
-      <td style="text-align: center">0 (0X00)</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">27 (0X1B)</td>
-      <td style="text-align: center">LED_RGB(H)</td>
-      <td style="text-align: center">LED 5 high byte</td>
-      <td style="text-align: center">RW</td>
-      <td style="text-align: center">0 (0X00)</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">28 (0X1C)</td>
-      <td style="text-align: center">Buzzer(L)</td>
-      <td style="text-align: center">LED 6 low byte</td>
-      <td style="text-align: center">RW</td>
-      <td style="text-align: center">0 (0X00)</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">29 (0X1D)</td>
-      <td style="text-align: center">Buzzer(H)</td>
-      <td style="text-align: center">LED 6 high byte</td>
-      <td style="text-align: center">RW</td>
-      <td style="text-align: center">0 (0X00)</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">30 (0X1E)</td>
-      <td style="text-align: center">Button</td>
-      <td style="text-align: center">Button status</td>
-      <td style="text-align: center">R</td>
-      <td style="text-align: center">-</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">31 (0X1F)</td>
-      <td style="text-align: center">Voltage</td>
-      <td style="text-align: center">Power Voltage</td>
-      <td style="text-align: center">R</td>
-      <td style="text-align: center">-</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">32 (0X20)</td>
-      <td style="text-align: center">Gyro_Z(L)</td>
-      <td style="text-align: center">Gyroscope Z-axis low byte</td>
-      <td style="text-align: center">R</td>
-      <td style="text-align: center">-</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">33 (0X21)</td>
-      <td style="text-align: center">Gyro_Z(H)</td>
-      <td style="text-align: center">Gyroscope Z-axis high byte</td>
-      <td style="text-align: center">R</td>
-      <td style="text-align: center">-</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">34 (0X22)</td>
-      <td style="text-align: center">Gyro_Y(L)</td>
-      <td style="text-align: center">Gyroscope Y-axis low byte</td>
-      <td style="text-align: center">R</td>
-      <td style="text-align: center">-</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">35 (0X23)</td>
-      <td style="text-align: center">Gyro_Y(H)</td>
-      <td style="text-align: center">Gyroscope Y-axis high byte</td>
-      <td style="text-align: center">R</td>
-      <td style="text-align: center">-</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">36 (0X24)</td>
-      <td style="text-align: center">Gyro_X(L)</td>
-      <td style="text-align: center">Gyroscope X-axis low byte</td>
-      <td style="text-align: center">R</td>
-      <td style="text-align: center">-</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">37 (0X25)</td>
-      <td style="text-align: center">Gyro_X(H)</td>
-      <td style="text-align: center">Gyroscope X-axis high byte</td>
-      <td style="text-align: center">R</td>
-      <td style="text-align: center">-</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">38 (0X26)</td>
-      <td style="text-align: center">ACC_X(L)</td>
-      <td style="text-align: center">Accelerometer X-axis low byte</td>
-      <td style="text-align: center">R</td>
-      <td style="text-align: center">-</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">39 (0X27)</td>
-      <td style="text-align: center">ACC_X(H)</td>
-      <td style="text-align: center">Accelerometer X-axis high byte</td>
-      <td style="text-align: center">R</td>
-      <td style="text-align: center">-</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">40 (0X28)</td>
-      <td style="text-align: center">ACC_Y(L)</td>
-      <td style="text-align: center">Accelerometer Y-axis low byte</td>
-      <td style="text-align: center">R</td>
-      <td style="text-align: center">-</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">41 (0X29)</td>
-      <td style="text-align: center">ACC_Y(H)</td>
-      <td style="text-align: center">Accelerometer Y-axis high byte</td>
-      <td style="text-align: center">R</td>
-      <td style="text-align: center">-</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">42 (0X2A)</td>
-      <td style="text-align: center">ACC_Z(L)</td>
-      <td style="text-align: center">Accelerometer Z-axis low byte</td>
-      <td style="text-align: center">R</td>
-      <td style="text-align: center">-</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">43 (0X2B)</td>
-      <td style="text-align: center">ACC_Z(H)</td>
-      <td style="text-align: center">Accelerometer Z-axis high byte</td>
-      <td style="text-align: center">R</td>
-      <td style="text-align: center">-</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">44 (0X2C)</td>
-      <td style="text-align: center">Roll(L)</td>
-      <td style="text-align: center">IMU Roll low byte</td>
-      <td style="text-align: center">R</td>
-      <td style="text-align: center">-</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">45 (0X2D)</td>
-      <td style="text-align: center">Roll(H)</td>
-      <td style="text-align: center">IMU Roll high byte</td>
-      <td style="text-align: center">R</td>
-      <td style="text-align: center">-</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">46 (0X2E)</td>
-      <td style="text-align: center">Pitch(L)</td>
-      <td style="text-align: center">IMU Pitch low byte</td>
-      <td style="text-align: center">R</td>
-      <td style="text-align: center">-</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">47 (0X2F)</td>
-      <td style="text-align: center">Pitch(H)</td>
-      <td style="text-align: center">IMU Pitch high byte</td>
-      <td style="text-align: center">R</td>
-      <td style="text-align: center">-</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">48 (0X30)</td>
-      <td style="text-align: center">Yaw(L)</td>
-      <td style="text-align: center">IMU Yaw low byte</td>
-      <td style="text-align: center">R</td>
-      <td style="text-align: center">-</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">49 (0x31)</td>
-      <td style="text-align: center">Yaw(H)</td>
-      <td style="text-align: center">IMU Yaw high byte</td>
-      <td style="text-align: center">R</td>
-      <td style="text-align: center">-</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">50 (0X32)</td>
-      <td style="text-align: center">IMU_Control</td>
-      <td style="text-align: center">IMU Control</td>
-      <td style="text-align: center">RW</td>
-      <td style="text-align: center">0x00</td>
-    </tr>
-  </tbody>
-</table>
-
-<h2 id="address-function-help"><a href="#address-function-help">Address Function Help</a></h2>
-
-<h3 id="model-number">Model Number</h3>
-<p>Represents the Model Number.</p>
-
-<h3 id="firmware-version">Firmware Version</h3>
-<p>Represents the firmware version.</p>
-
-<h3 id="id">ID</h3>
-<p>Is a unique number to identify Dynamixel.<br />
-Values range from 0 (0x00) to 252 (0xFC), Value 254 (0xFE) is used as the Broadcast ID.<br />
-If the Broadcast ID is used to transmit Instruction Packet, then it can command to all Dynamixels.</p>
-
-<p class="notice"><code class="highlighter-rouge">Note</code> Do NOT assign an identical ID for DYNAMIXELs in the same network.</p>
-
-<h3 id="baud-rate">Baud Rate</h3>
-<p>Represents the communication speed. 0 (0x00) to 254 (0xFE) can be used for it. This speed is calculated by using the below formula.<br />
-Speed(BPS) = 2000000/(Data+1)</p>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: center">Data</th>
-      <th style="text-align: center">Set BPS</th>
-      <th style="text-align: center">Target BPS</th>
-      <th style="text-align: center">Tolerance</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: center">1</td>
-      <td style="text-align: center">1000000.0</td>
-      <td style="text-align: center">1000000.0</td>
-      <td style="text-align: center">0.000 %</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">3</td>
-      <td style="text-align: center">500000.0</td>
-      <td style="text-align: center">500000.0</td>
-      <td style="text-align: center">0.000 %</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">4</td>
-      <td style="text-align: center">400000.0</td>
-      <td style="text-align: center">400000.0</td>
-      <td style="text-align: center">0.000 %</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">7</td>
-      <td style="text-align: center">250000.0</td>
-      <td style="text-align: center">250000.0</td>
-      <td style="text-align: center">0.000 %</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">9</td>
-      <td style="text-align: center">200000.0</td>
-      <td style="text-align: center">200000.0</td>
-      <td style="text-align: center">0.000 %</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">16</td>
-      <td style="text-align: center">117647.1</td>
-      <td style="text-align: center">115200.0</td>
-      <td style="text-align: center">-2.124 %</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">34</td>
-      <td style="text-align: center">57142.9</td>
-      <td style="text-align: center">57600.0</td>
-      <td style="text-align: center">0.794 %</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">103</td>
-      <td style="text-align: center">19230.8</td>
-      <td style="text-align: center">19200.0</td>
-      <td style="text-align: center">-0.160 %</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">207</td>
-      <td style="text-align: center">9615.4</td>
-      <td style="text-align: center">9600.0</td>
-      <td style="text-align: center">-0.160 %</td>
-    </tr>
-  </tbody>
-</table>
-
-<p class="notice"><code class="highlighter-rouge">Note</code> Maximum Baud Rate error of 3% is within the tolerance of UART communication.</p>
-
-<h3 id="return-delay-time">Return Delay Time</h3>
-
-<p>Return Delay Time will set a timer to hold a Status Packet transmission for a received Instruction Packet.<br />
-This data has a multiplier of 2μsec, therefore set value will be multiplied by 2 microseconds.<br />
-For example, if Return Delay Time is set to 10, a Status Packet will be transmitted after 20 microseconds after receiving an Instruction Packet.<br />
-Available data values range from 0 (0x00) to 254 (0xFE).</p>
-
-<h3 id="status-return-level">Status Return Level</h3>
-<p>Status Return Level decides whether to return a Status Packet or not for an Instruction Packet.<br />
-There are three options as below table.<br />
-If an Instruction Packet has a Broadcast ID, Status Packet will not be returned regardless of Status Return Level.</p>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: center">Value</th>
-      <th style="text-align: center">Return of Status Packet</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: center">0</td>
-      <td style="text-align: center">No return against all commands (Except PING Command)</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">1</td>
-      <td style="text-align: center">Return only for the READ command</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">2</td>
-      <td style="text-align: center">Return for all commands</td>
-    </tr>
-  </tbody>
-</table>
-
-<p class="notice"><code class="highlighter-rouge">Note</code> When Instruction packet is Broadcast ID, Status packet is not returned regardless of Status return level.</p>
-
-<h3 id="dynamixel-power">Dynamixel Power</h3>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: center">Value</th>
-      <th style="text-align: center">Meaning</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: center">0</td>
-      <td style="text-align: center">Turn off the power of all Dynamixels connected to OpenCR.</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">1</td>
-      <td style="text-align: center">Turn on the power of all Dynamixels connected to OpenCR.</td>
-    </tr>
-  </tbody>
-</table>
-
-<h3 id="led-pannel">LED Pannel</h3>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: center">BIT</th>
-      <th style="text-align: center">7 ~ 3</th>
-      <th style="text-align: center">2</th>
-      <th style="text-align: center">1</th>
-      <th style="text-align: center">0</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: center">Value</td>
-      <td style="text-align: center">X</td>
-      <td style="text-align: center">LED3</td>
-      <td style="text-align: center">LED2</td>
-      <td style="text-align: center">LED1</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>For each set bit, corresponding LED will be turned on.<br />
-For each reset bit, corresponding LED will be turned off.</p>
-
-<h3 id="led_rgb">LED_RGB</h3>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: center">BIT</th>
-      <th style="text-align: center">15</th>
-      <th style="text-align: center">14 ~ 10</th>
-      <th style="text-align: center">9 ~ 5</th>
-      <th style="text-align: center">4 ~ 0</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: center">Value</td>
-      <td style="text-align: center">X</td>
-      <td style="text-align: center">LED_B</td>
-      <td style="text-align: center">LED_G</td>
-      <td style="text-align: center">LED_R</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>Chest LED is a tricolor LED and the color can be represented with RGB values.</p>
-
-<h3 id="buzzer">Buzzer</h3>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: center">Value</th>
-      <th style="text-align: center">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: center">0 ~ 65535</td>
-      <td style="text-align: center">Frequency(Hz) of Buzzer</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>If the Buzzer value is set to 0, the buzzer will be turned off.</p>
-
-<h3 id="button-status">BUTTON STATUS</h3>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: center">BIT</th>
-      <th style="text-align: center">7 ~ 4</th>
-      <th style="text-align: center">3</th>
-      <th style="text-align: center">2</th>
-      <th style="text-align: center">1</th>
-      <th style="text-align: center">0</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: center">Value</td>
-      <td style="text-align: center">X</td>
-      <td style="text-align: center">BUTTON_S4</td>
-      <td style="text-align: center">BUTTON_S3</td>
-      <td style="text-align: center">BUTTON_S2</td>
-      <td style="text-align: center">BUTTON_S1</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>For each bit set to 1, the button is being pressed.<br />
-For each bit set to 0, the button is released.</p>
-
-<h3 id="voltage">VOLTAGE</h3>
-<p>This value stands for the input voltage of the controller with a multiplier of 10.<br />
-For example, when 10V is supplied to the controller, the Voltage value will be 100.</p>
-
-<h3 id="gyro-xyz">GYRO X/Y/Z</h3>
-<p>The following image represents the direction of Gyro axis of OpenCR.</p>
-
-<p><img src="/assets/images/platform/op3/opencr_gyro_axis.png" alt="" /></p>
-
-<p>Each arrow represents the orientation of gyroscope axis.<br />
-The data range is -2000dps ~ +2000dps.<br />
-The following graph shows relation between actual data value and angular velocity value.</p>
-
-<p><img src="/assets/images/platform/op3/opencr_angular_velocity_graph.png" alt="" /></p>
-
-<h3 id="acceleration-xyz">Acceleration X/Y/Z</h3>
-<p>The following picture represents the direction of accelerometer axis of OpenCR.</p>
-
-<p><img src="/assets/images/platform/op3/opencr_acc_axis.png" alt="" /></p>
-
-<p>Each arrow represents the orientation of accelerometer axis.<br />
-The data range is -2g ~ +2g.<br />
-The following graph shows relation between actual data value and acceleration value.</p>
-
-<p><img src="/assets/images/platform/op3/opencr_acc_graph.png" alt="" /></p>
-
-<h3 id="imu_control">IMU_Control</h3>
-
-<p>This data controls roll / pitch / yaw offset values for the IMU sensor.</p>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: center">BIT</th>
-      <th style="text-align: center">7 ~ 4</th>
-      <th style="text-align: center">3</th>
-      <th style="text-align: center">2</th>
-      <th style="text-align: center">1</th>
-      <th style="text-align: center">0</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: center">Value</td>
-      <td style="text-align: center">X</td>
-      <td style="text-align: center">Gyro</td>
-      <td style="text-align: center">Yaw</td>
-      <td style="text-align: center">Pitch</td>
-      <td style="text-align: center">Roll</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>For each bit set to 1, corresponding roll, pitch, yaw, gyro values will be used for calculating offset values.<br />
-The calculation will take for 2 seconds and then each bit will be reset to 0.</p>
-
-<h2 id="gpio-pin-assignments"><a href="#gpio-pin-assignments">GPIO Pin Assignments</a></h2>
-
-<p><img src="/assets/images/platform/op3/opencr_gpio_pinout.png" alt="" /></p>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: center">Pin</th>
-      <th style="text-align: center">Assignments</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: center">PIN_LED_R</td>
-      <td style="text-align: center">Red LED pin</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">PIN_LED_G</td>
-      <td style="text-align: center">Green LED pin</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">PIN_LED_B</td>
-      <td style="text-align: center">Blue LED pin</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">PIN_LED_1</td>
-      <td style="text-align: center">LED output 1</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">PIN_LED_2</td>
-      <td style="text-align: center">LED output 2</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">PIN_LED_3</td>
-      <td style="text-align: center">LED output 3</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">PIN_BUTTON_S1</td>
-      <td style="text-align: center">Button Input S1</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">PIN_BUTTON_S2</td>
-      <td style="text-align: center">Button Input S2</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">PIN_BUTTON_S3</td>
-      <td style="text-align: center">Button Input S3</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">PIN_BUTTON_S4</td>
-      <td style="text-align: center">Button Input S4 (Reset Dynamixel Power)</td>
-    </tr>
-  </tbody>
-</table>
 
   </div>
 </div>

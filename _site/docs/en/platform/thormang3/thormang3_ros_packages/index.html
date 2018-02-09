@@ -178,6 +178,11 @@ $(function() {
     		alignTop: true,
     		overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
     	});
+      $('.popup2').magnificPopup({
+    		type: 'inline',
+    		alignTop: true,
+    		overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
+    	});
     });
     </script>
   </head>
@@ -185,8 +190,9 @@ $(function() {
   <body class="layout--archive">
 
     <!--[if lt IE 9]>
-<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please upgrade your browser to improve your experience.</div>
 <![endif]-->
+
     <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
@@ -675,7 +681,7 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <a href="http://localhost:4000/docs/en/platform/op3/getting_started/">OP3</a>
+                    <a href="http://localhost:4000/docs/en/platform/op3/introduction/">OP3</a>
                   </li>
                 
               
@@ -2025,7 +2031,7 @@ $(function() {
               
                 
                   
-                    <a href="http://localhost:4000/docs/en/platform/op3/getting_started/">OP3</a>
+                    <a href="http://localhost:4000/docs/en/platform/op3/introduction/">OP3</a>
               
 
               
@@ -3139,85 +3145,11 @@ $(function() {
     
 
       
-      <li class="has-children">
-        <input type="radio" name="toplevel" id="toplevel_0" >
-        <label for="toplevel_0">Introduction [+]</label>
-
       
-
-      
-        <ul>
-        
-          
-
-          
-
-          
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#what-is-thormang3" onclick="extendnav()">What is THORMANG3?</a></li>
-          
-
-          
-          
-        
-          
-
-          
-
-          
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#package-contents" onclick="extendnav()">Package Contents</a></li>
-          
-
-          
-          
-        
-          
-
-          
-
-          
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#layout" onclick="extendnav()">Layout</a></li>
-          
-
-          
-          
-        
-          
-
-          
-
-          
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#specifications" onclick="extendnav()">Specifications</a></li>
-          
-
-          
-          
-        
-          
-
-          
-
-          
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#safety-information" onclick="extendnav()">Safety Information</a></li>
-          
-
-          
-          
-        
-        </ul>
-      
-      
-      </li>
-      
-    
-  
-    
-
-    
-
       
       <li class="has-children">
         <input type="radio" name="toplevel" id="toplevel_1" >
-        <label for="toplevel_1">Quick Start [+]</label>
+        <label for="toplevel_1">1. Introduction [+]</label>
 
       
 
@@ -3229,7 +3161,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#unpacking" onclick="extendnav()">Unpacking</a></li>
+          <li><a href="http://localhost:4000/docs/en/platform/thormang3/introduction/#what-is-thormang3" onclick="extendnav()">1. What is THORMANG3?</a></li>
           
 
           
@@ -3240,7 +3172,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#power-on" onclick="extendnav()">Power On</a></li>
+          <li><a href="http://localhost:4000/docs/en/platform/thormang3/introduction/#package-contents" onclick="extendnav()">2. Package Contents</a></li>
           
 
           
@@ -3251,7 +3183,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#connect-to-thormang3" onclick="extendnav()">Connect to THORMANG3</a></li>
+          <li><a href="http://localhost:4000/docs/en/platform/thormang3/introduction/#layout" onclick="extendnav()">3. Layout</a></li>
           
 
           
@@ -3262,7 +3194,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#basic-operation" onclick="extendnav()">Basic Operation</a></li>
+          <li><a href="http://localhost:4000/docs/en/platform/thormang3/introduction/#specifications" onclick="extendnav()">4. Specifications</a></li>
           
 
           
@@ -3273,29 +3205,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#power-off" onclick="extendnav()">Power Off</a></li>
-          
-
-          
-          
-        
-          
-
-          
-
-          
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#battery-charge" onclick="extendnav()">Battery Charge</a></li>
-          
-
-          
-          
-        
-          
-
-          
-
-          
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#repacking" onclick="extendnav()">Repacking</a></li>
+          <li><a href="http://localhost:4000/docs/en/platform/thormang3/introduction/#safety-information" onclick="extendnav()">5. Safety Information</a></li>
           
 
           
@@ -3313,9 +3223,11 @@ $(function() {
     
 
       
+      
+      
       <li class="has-children">
         <input type="radio" name="toplevel" id="toplevel_2" >
-        <label for="toplevel_2">Getting Started [+]</label>
+        <label for="toplevel_2">2. Quick Start [+]</label>
 
       
 
@@ -3327,7 +3239,107 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#os-install" onclick="extendnav()">OS Install</a></li>
+          <li><a href="http://localhost:4000/docs/en/platform/thormang3/quick_start/#unpacking" onclick="extendnav()">1. Unpacking</a></li>
+          
+
+          
+          
+        
+          
+
+          
+
+          
+          <li><a href="http://localhost:4000/docs/en/platform/thormang3/quick_start/#power-on" onclick="extendnav()">2. Power On</a></li>
+          
+
+          
+          
+        
+          
+
+          
+
+          
+          <li><a href="http://localhost:4000/docs/en/platform/thormang3/quick_start/#connect-to-thormang3" onclick="extendnav()">3. Connect to THORMANG3</a></li>
+          
+
+          
+          
+        
+          
+
+          
+
+          
+          <li><a href="http://localhost:4000/docs/en/platform/thormang3/quick_start/#basic-operation" onclick="extendnav()">4. Basic Operation</a></li>
+          
+
+          
+          
+        
+          
+
+          
+
+          
+          <li><a href="http://localhost:4000/docs/en/platform/thormang3/quick_start/#power-off" onclick="extendnav()">5. Power Off</a></li>
+          
+
+          
+          
+        
+          
+
+          
+
+          
+          <li><a href="http://localhost:4000/docs/en/platform/thormang3/quick_start/#battery-charge" onclick="extendnav()">6. Battery Charge</a></li>
+          
+
+          
+          
+        
+          
+
+          
+
+          
+          <li><a href="http://localhost:4000/docs/en/platform/thormang3/quick_start/#repacking" onclick="extendnav()">7. Repacking</a></li>
+          
+
+          
+          
+        
+        </ul>
+      
+      
+      </li>
+      
+    
+  
+    
+
+    
+
+      
+      
+      
+      <li class="has-children">
+        <input type="radio" name="toplevel" id="toplevel_3" >
+        <label for="toplevel_3">3. Getting Started [+]</label>
+
+      
+
+      
+        <ul>
+        
+          
+
+          
+
+          
+          <li><a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#os-install" onclick="extendnav()">1. OS Install</a></li>
           
 
           
@@ -3339,8 +3351,8 @@ $(function() {
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="Network Setting" >
-            <label for="Network Setting">Network Setting [+]</label>
+            <input type="radio" name="sublevel" id="Getting Started_2" >
+            <label for="Getting Started_2">2. Network Setting [+]</label>
           
 
           
@@ -3373,7 +3385,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#ros-install" onclick="extendnav()">ROS Install</a></li>
+          <li><a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#ros-install" onclick="extendnav()">3. ROS Install</a></li>
           
 
           
@@ -3385,8 +3397,8 @@ $(function() {
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="ROS Environment Setting" >
-            <label for="ROS Environment Setting">ROS Environment Setting [+]</label>
+            <input type="radio" name="sublevel" id="Getting Started_4" >
+            <label for="Getting Started_4">4. ROS Environment Setting [+]</label>
           
 
           
@@ -3420,8 +3432,8 @@ $(function() {
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="ROBOTIS ROS Package Install" >
-            <label for="ROBOTIS ROS Package Install">ROBOTIS ROS Package Install [+]</label>
+            <input type="radio" name="sublevel" id="Getting Started_5" >
+            <label for="Getting Started_5">5. ROBOTIS ROS Package Install [+]</label>
           
 
           
@@ -3471,8 +3483,8 @@ $(function() {
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="Additional ROS Package Install" >
-            <label for="Additional ROS Package Install">Additional ROS Package Install [+]</label>
+            <input type="radio" name="sublevel" id="Getting Started_6" >
+            <label for="Getting Started_6">6. Additional ROS Package Install [+]</label>
           
 
           
@@ -3512,9 +3524,11 @@ $(function() {
     
 
       
+      
+      
       <li class="has-children">
-        <input type="radio" name="toplevel" id="toplevel_3" >
-        <label for="toplevel_3">THORMANG3 ROS Packages [+]</label>
+        <input type="radio" name="toplevel" id="toplevel_4" >
+        <label for="toplevel_4">4. THORMANG3 ROS Packages [+]</label>
 
       
 
@@ -3527,8 +3541,8 @@ $(function() {
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="MPC Packages" >
-            <label for="MPC Packages">MPC Packages [+]</label>
+            <input type="radio" name="sublevel" id="THORMANG3 ROS Packages_1" >
+            <label for="THORMANG3 ROS Packages_1">1. MPC Packages [+]</label>
           
 
           
@@ -3634,8 +3648,8 @@ $(function() {
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="PPC Packages" >
-            <label for="PPC Packages">PPC Packages [+]</label>
+            <input type="radio" name="sublevel" id="THORMANG3 ROS Packages_2" >
+            <label for="THORMANG3 ROS Packages_2">2. PPC Packages [+]</label>
           
 
           
@@ -3669,8 +3683,8 @@ $(function() {
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="OPC Packages" >
-            <label for="OPC Packages">OPC Packages [+]</label>
+            <input type="radio" name="sublevel" id="THORMANG3 ROS Packages_3" >
+            <label for="THORMANG3 ROS Packages_3">3. OPC Packages [+]</label>
           
 
           
@@ -3728,8 +3742,8 @@ $(function() {
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="Common Packages" >
-            <label for="Common Packages">Common Packages [+]</label>
+            <input type="radio" name="sublevel" id="THORMANG3 ROS Packages_4" >
+            <label for="THORMANG3 ROS Packages_4">4. Common Packages [+]</label>
           
 
           
@@ -3763,8 +3777,8 @@ $(function() {
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="Tools Packages" >
-            <label for="Tools Packages">Tools Packages [+]</label>
+            <input type="radio" name="sublevel" id="THORMANG3 ROS Packages_5" >
+            <label for="THORMANG3 ROS Packages_5">5. Tools Packages [+]</label>
           
 
           
@@ -3798,8 +3812,8 @@ $(function() {
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="THORMANG msgs Package" >
-            <label for="THORMANG msgs Package">THORMANG msgs Package [+]</label>
+            <input type="radio" name="sublevel" id="THORMANG3 ROS Packages_6" >
+            <label for="THORMANG3 ROS Packages_6">6. THORMANG msgs Package [+]</label>
           
 
           
@@ -3871,9 +3885,11 @@ $(function() {
     
 
       
+      
+      
       <li class="has-children">
-        <input type="radio" name="toplevel" id="toplevel_4" >
-        <label for="toplevel_4">THORMANG3 Operation [+]</label>
+        <input type="radio" name="toplevel" id="toplevel_5" >
+        <label for="toplevel_5">5. THORMANG3 Operation [+]</label>
 
       
 
@@ -3885,7 +3901,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#preparation" onclick="extendnav()">Preparation</a></li>
+          <li><a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#preparation" onclick="extendnav()">1. Preparation</a></li>
           
 
           
@@ -3896,7 +3912,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#simple-demo" onclick="extendnav()">Simple Demo</a></li>
+          <li><a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#simple-demo" onclick="extendnav()">2. Simple Demo</a></li>
           
 
           
@@ -3908,8 +3924,8 @@ $(function() {
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="GUI Program" >
-            <label for="GUI Program">GUI Program [+]</label>
+            <input type="radio" name="sublevel" id="THORMANG3 Operation_3" >
+            <label for="THORMANG3 Operation_3">3. GUI Program [+]</label>
           
 
           
@@ -3982,7 +3998,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#offset-tuner" onclick="extendnav()">Offset Tuner</a></li>
+          <li><a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#offset-tuner" onclick="extendnav()">4. Offset Tuner</a></li>
           
 
           
@@ -4000,52 +4016,11 @@ $(function() {
     
 
       
-      <li class="has-children">
-        <input type="radio" name="toplevel" id="toplevel_5" >
-        <label for="toplevel_5">Gazebo Simulation [+]</label>
-
       
-
-      
-        <ul>
-        
-          
-
-          
-
-          
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#install-gazebo" onclick="extendnav()">Install Gazebo</a></li>
-          
-
-          
-          
-        
-          
-
-          
-
-          
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#run-simulation" onclick="extendnav()">Run Simulation</a></li>
-          
-
-          
-          
-        
-        </ul>
-      
-      
-      </li>
-      
-    
-  
-    
-
-    
-
       
       <li class="has-children">
         <input type="radio" name="toplevel" id="toplevel_6" >
-        <label for="toplevel_6">References [+]</label>
+        <label for="toplevel_6">6. Gazebo Simulation [+]</label>
 
       
 
@@ -4057,7 +4032,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#router-setting" onclick="extendnav()">Router Setting</a></li>
+          <li><a href="http://localhost:4000/docs/en/platform/thormang3/gazebo_simulation/#install-gazebo" onclick="extendnav()">1. Install Gazebo</a></li>
           
 
           
@@ -4068,7 +4043,41 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#lidar-ip-setting" onclick="extendnav()">LiDAR IP Setting</a></li>
+          <li><a href="http://localhost:4000/docs/en/platform/thormang3/gazebo_simulation/#run-simulation" onclick="extendnav()">2. Run Simulation</a></li>
+          
+
+          
+          
+        
+        </ul>
+      
+      
+      </li>
+      
+    
+  
+    
+
+    
+
+      
+      
+      
+      <li class="has-children">
+        <input type="radio" name="toplevel" id="toplevel_7" >
+        <label for="toplevel_7">7. References [+]</label>
+
+      
+
+      
+        <ul>
+        
+          
+
+          
+
+          
+          <li><a href="http://localhost:4000/docs/en/platform/thormang3/references/#router-setting" onclick="extendnav()">1. Router Setting</a></li>
           
 
           
@@ -4079,7 +4088,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#system-block-diagram" onclick="extendnav()">System Block Diagram</a></li>
+          <li><a href="http://localhost:4000/docs/en/platform/thormang3/references/#lidar-ip-setting" onclick="extendnav()">2. LiDAR IP Setting</a></li>
           
 
           
@@ -4090,7 +4099,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#technical-specifications" onclick="extendnav()">Technical Specifications</a></li>
+          <li><a href="http://localhost:4000/docs/en/platform/thormang3/references/#system-block-diagram" onclick="extendnav()">3. System Block Diagram</a></li>
           
 
           
@@ -4101,7 +4110,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#id-map" onclick="extendnav()">ID Map</a></li>
+          <li><a href="http://localhost:4000/docs/en/platform/thormang3/references/#technical-specifications" onclick="extendnav()">4. Technical Specifications</a></li>
           
 
           
@@ -4112,7 +4121,18 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#physical-properties" onclick="extendnav()">Physical Properties</a></li>
+          <li><a href="http://localhost:4000/docs/en/platform/thormang3/references/#id-map" onclick="extendnav()">5. ID Map</a></li>
+          
+
+          
+          
+        
+          
+
+          
+
+          
+          <li><a href="http://localhost:4000/docs/en/platform/thormang3/references/#physical-properties" onclick="extendnav()">6. Physical Properties</a></li>
           
 
           
@@ -4140,8 +4160,7 @@ $(function() {
     <a href="/blob/master/docs/en/platform/thormang3/thormang3_ros_packages.md" itemprop="sameAs" style="font-size:16px; float:right; margin: 10px 20px; text-decoration: none;">
       <i class="fa fa-fw fa-github" aria-hidden="true"></i> Edit on GitHub
     </a>
-    <div style="counter-reset: h1 3">
-</div>
+    <div style="counter-reset: h1 3"></div>
 
 <h1 id="thormang3-ros-packages"><a href="#thormang3-ros-packages">THORMANG3 ROS Packages</a></h1>
 
@@ -4375,27 +4394,27 @@ The motion file is edited with thormang3_action_editor</p>
 <h5 id="subscribed-topics">Subscribed Topics</h5>
 <ul>
   <li>
-    <p><code class="highlighter-rouge">/robotis/action/page_num</code>(<a href="/docs/en/popup/std_msgs_int32_message/" class="popup">std_msgs/Int32</a>)<br />
+    <p><code class="highlighter-rouge">/robotis/action/page_num</code> (<a href="/docs/en/popup/std_msgs_int32_message/" class="popup">std_msgs/Int32</a>)<br />
 The page number will be played.<br />
 If user send a page number between 1 ~ 255, the page will be played.<br />
 If user send -1, the action will be stopped.<br />
 If user send -2, the action will be broken(stop immediately).</p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">/robotis/action/start_action</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/StartAction.msg">thormang3_action_module_msgs/StartAction</a>)<br />
+    <p><code class="highlighter-rouge">/robotis/action/start_action</code> (<a href="/docs/en/popup/StartAction.msg/" class="popup">thormang3_action_module_msgs/StartAction</a>)<br />
 The page number and joint names will be played.</p>
   </li>
 </ul>
 
 <h5 id="published-topics">Published Topics</h5>
 <ul>
-  <li><code class="highlighter-rouge">/robotis/status</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/StatusMsg.msg">robotis_controller_msgs/StatusMsg</a>)<br />
+  <li><code class="highlighter-rouge">/robotis/status</code> (<a href="/docs/en/popup/StatusMsg.msg/" class="popup">robotis_controller_msgs/StatusMsg</a>)<br />
 The message indicates status of the action_module.</li>
 </ul>
 
 <h5 id="services">Services</h5>
 <ul>
-  <li><code class="highlighter-rouge">/robotis/action/is_running</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/(thormang3_action_module_msgs)IsRunning.srv">thormang3_action_module_msgs/IsRunning</a>)<br />
+  <li><code class="highlighter-rouge">/robotis/action/is_running</code> (<a href="/docs/en/popup/(thormang3_action_module_msgs)IsRunning.srv/" class="popup">thormang3_action_module_msgs/IsRunning</a>)<br />
 The service that checks whether THORMANG3’s action is being played or not.</li>
 </ul>
 
@@ -4415,18 +4434,18 @@ The service that checks whether THORMANG3’s action is being played or not.</li
 
 <h5 id="subscribed-topics-1">Subscribed Topics</h5>
 <ul>
-  <li><code class="highlighter-rouge">/robotis/base/ini_pose</code>(<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
+  <li><code class="highlighter-rouge">/robotis/base/ini_pose</code> (<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
 A command to take the initial posture(This command is effective even when the base module is inactive).</li>
 </ul>
 
 <h5 id="published-topics-1">Published Topics</h5>
 <ul>
   <li>
-    <p><code class="highlighter-rouge">/robotis/enable_ctrl_module</code>(<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
+    <p><code class="highlighter-rouge">/robotis/enable_ctrl_module</code> (<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
 A base_module activation topic to take the initial posture.</p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">/robotis/status</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/StatusMsg.msg">robotis_controller_msgs/StatusMsg</a>)<br />
+    <p><code class="highlighter-rouge">/robotis/status</code> (<a href="/docs/en/popup/StatusMsg.msg/" class="popup">robotis_controller_msgs/StatusMsg</a>)<br />
 A message that contains the status of base_module.</p>
   </li>
 </ul>
@@ -4448,29 +4467,29 @@ A message that contains the status of base_module.</p>
 A message to take the initial posture.</p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">/robotis/manipulation/joint_pose_msg</code> (<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/JointPose.msg">thormang3_manipulation_module_msgs/JointPose</a>)<br />
+    <p><code class="highlighter-rouge">/robotis/manipulation/joint_pose_msg</code> (<a href="/docs/en/popup/JointPose.msg/" class="popup">thormang3_manipulation_module_msgs/JointPose</a>)<br />
 A message to move to the target point in the Joint Space.</p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">/robotis/manipulation/kinematics_pose_msg</code> (<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/KinematicsPose.msg">thormang3_manipulation_module_msgs/KinematicsPose</a>)<br />
+    <p><code class="highlighter-rouge">/robotis/manipulation/kinematics_pose_msg</code> (<a href="/docs/en/popup/KinematicsPose.msg/" class="popup">thormang3_manipulation_module_msgs/KinematicsPose</a>)<br />
 A message to move to the target pose in the Task Space.</p>
   </li>
 </ul>
 
 <h5 id="published-topics-2">Published Topics</h5>
 <ul>
-  <li><code class="highlighter-rouge">/robotis/status</code> (<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/StatusMsg.msg">robotis_controller_msgs/StatusMsg</a>)<br />
+  <li><code class="highlighter-rouge">/robotis/status</code> (<a href="/docs/en/popup/StatusMsg.msg/" class="popup">robotis_controller_msgs/StatusMsg</a>)<br />
 A status message of THORMANG3</li>
 </ul>
 
 <h5 id="services-1">Services</h5>
 <ul>
   <li>
-    <p><code class="highlighter-rouge">/robotis/manipulation/get_joint_pose</code> (<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/GetJointPose.srv">thormang3_manipulation_module_msgs/GetJointPose</a>)<br />
+    <p><code class="highlighter-rouge">/robotis/manipulation/get_joint_pose</code> (<a href="/docs/en/popup/GetJointPose.srv/" class="popup">thormang3_manipulation_module_msgs/GetJointPose</a>)<br />
 A service that reads the pose of specific joint.</p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">/robotis/manipulation/get_kinematics_pose</code> (<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/GetKinematicsPose.srv">thormang3_manipulation_module_msgs/GetKinematicsPose</a>)<br />
+    <p><code class="highlighter-rouge">/robotis/manipulation/get_kinematics_pose</code> (<a href="/docs/en/popup/GetKinematicsPose.srv/" class="popup">thormang3_manipulation_module_msgs/GetKinematicsPose</a>)<br />
 A service that reads the pose of end effector from a specific kinematics group.</p>
   </li>
 </ul>
@@ -4481,7 +4500,7 @@ A service that reads the pose of end effector from a specific kinematics group.<
 
 <p>As seen from the above figure, thormang3_walking_module is one of the MotionModules from ROS Framework.
 THROMANG3 can be controlled with Topics and Services.
-Users can designate almost all Step Parameters.(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/StepData.msg">thormang3_walking_module_msgs/StepData</a>)</p>
+Users can designate almost all Step Parameters.(<a href="/docs/en/popup/StepData.msg/" class="popup">thormang3_walking_module_msgs/StepData</a>)</p>
 
 <ol>
   <li>
@@ -4494,7 +4513,7 @@ Users can designate almost all Step Parameters.(<a href="https://github.com/ROBO
   <li>
     <p>Balance Algorithm</p>
 
-    <p>The balance algorithm is included as shown below.(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/BalanceParam.msg">thormang3_walking_module_msgs/BalanceParam</a>)
+    <p>The balance algorithm is included as shown below.(<a href="/docs/en/popup/BalanceParam.msg/" class="popup">thormang3_walking_module_msgs/BalanceParam</a>)
  <img src="/assets/images/platform/thormang3/thormang3_walking_module_balance_diagram.jpg" alt="" /></p>
   </li>
 </ol>
@@ -4507,40 +4526,40 @@ Users can designate almost all Step Parameters.(<a href="https://github.com/ROBO
 
 <h5 id="subscribed-topics-3">Subscribed Topics</h5>
 <ul>
-  <li><code class="highlighter-rouge">/robotis/sensor/imu/imu</code> (<a href="http://docs.ros.org/api/sensor_msgs/html/msg/Imu.html">sensor_msgs/Imu</a>)<br />
+  <li><code class="highlighter-rouge">/robotis/sensor/imu/imu</code> (<a href="/docs/en/popup/sensor_msgs_IMU_msg/" class="popup">sensor_msgs/Imu</a>)<br />
 Current data of the IMU Sensor</li>
 </ul>
 
 <h5 id="published-topics-3">Published Topics</h5>
 <ul>
-  <li><code class="highlighter-rouge">/robotis/status</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/StatusMsg.msg">robotis_controller_msgs/StatusMsg</a>)<br />
+  <li><code class="highlighter-rouge">/robotis/status</code> (<a href="/docs/en/popup/StatusMsg.msg/" class="popup">robotis_controller_msgs/StatusMsg</a>)<br />
 Status message of THORMANG3</li>
 </ul>
 
 <h5 id="services-2">Services</h5>
 <ul>
   <li>
-    <p><code class="highlighter-rouge">/robotis/walking/get_reference_step_data</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/GetReferenceStepData.srv">thormang3_walking_module_msgs/GetReferenceStrpData</a>)<br />
+    <p><code class="highlighter-rouge">/robotis/walking/get_reference_step_data</code> (<a href="/docs/en/popup/GetReferenceStepData.srv/" class="popup">thormang3_walking_module_msgs/GetReferenceStrpData</a>)<br />
 A service that collects current location of THORMANG3 in the Global from the Walking Module.</p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">/robotis/walking/add_step_data</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/AddStepDataArray.srv">thormang3_walking_module_msgs/AddStepDataArray</a>)<br />
+    <p><code class="highlighter-rouge">/robotis/walking/add_step_data</code> (<a href="/docs/en/popup/AddStepDataArray.srv/" class="popup">thormang3_walking_module_msgs/AddStepDataArray</a>)<br />
 A service that adds StepData created by the user.</p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">/robotis/walking/walking_start</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/WalkingStart.srv">thormang3_walking_module_msgs/WalkingStart</a>)<br />
+    <p><code class="highlighter-rouge">/robotis/walking/walking_start</code> (<a href="/docs/en/popup/WalkingStart.srv/" class="popup">thormang3_walking_module_msgs/WalkingStart</a>)<br />
 A service that commands to start walking.</p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">/robotis/walking/is_running</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/IsRunning.srv">thormang3_walking_module_msgs/IsRunning</a>)<br />
+    <p><code class="highlighter-rouge">/robotis/walking/is_running</code> (<a href="/docs/en/popup/(thormang3_walking_module_msgs)IsRunning.srv/" class="popup">thormang3_walking_module_msgs/IsRunning</a>)<br />
 A service that checks whether THORMANG3 is walking or not.</p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">/robotis/walking/set_balance_param</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/SetBalanceParam.srv">thormang3_walking_module_msgs/SetBalanceParam</a>)<br />
+    <p><code class="highlighter-rouge">/robotis/walking/set_balance_param</code> (<a href="/docs/en/popup/SetBalanceParam.srv/" class="popup">thormang3_walking_module_msgs/SetBalanceParam</a>)<br />
 A service that can set Balance Algorithm parameters.</p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">/robotis/walking/remove_existing_step_data</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/RemoveExistingStepData.srv">thormang3_walking_module_msgs/RemoveExistingStepData</a>)<br />
+    <p><code class="highlighter-rouge">/robotis/walking/remove_existing_step_data</code> (<a href="/docs/en/popup/RemoveExistingStepData.srv/" class="popup">thormang3_walking_module_msgs/RemoveExistingStepData</a>)<br />
 A service that deletes existing StepData.</p>
   </li>
 </ul>
@@ -4561,19 +4580,19 @@ A service that deletes existing StepData.</p>
 
 <ul>
   <li>
-    <p><code class="highlighter-rouge">/robotis/head_control/move_lidar</code>(<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
+    <p><code class="highlighter-rouge">/robotis/head_control/move_lidar</code> (<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
 The command moves the head in order to obtain Lidar data.</p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">/robotis/head_control/move_lidar_with_range</code>(<a href="http://docs.ros.org/api/std_msgs/html/msg/Float64.html">std_msgs/Float64</a>)<br />
+    <p><code class="highlighter-rouge">/robotis/head_control/move_lidar_with_range</code> (<a href="/docs/en/popup/std_msgs_Float64_msg/" class="popup">std_msgs/Float64</a>)<br />
 This command scans up and down a given range at the current head position to generate 3D lidar data.</p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">/robotis/head_control/set_joint_states</code>(<a href="http://docs.ros.org/api/sensor_msgs/html/msg/JointState.html">sensor_msgs/JointState</a>)<br />
+    <p><code class="highlighter-rouge">/robotis/head_control/set_joint_states</code> (<a href="/docs/en/popup/sensor_msgs_JointState_msg/" class="popup">sensor_msgs/JointState</a>)<br />
 The message controls joints that are connected to the head.</p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">/robotis/head_control/set_joint_states_time</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/HeadJointPose.msg">thormang3_head_control_module_msgs/HeadJointPose</a>)<br />
+    <p><code class="highlighter-rouge">/robotis/head_control/set_joint_states_time</code> (<a href="/docs/en/popup/HeadJointPose.msg" class="popup">thormang3_head_control_module_msgs/HeadJointPose</a>)<br />
 The message moves head joints for given time.</p>
   </li>
 </ul>
@@ -4582,11 +4601,11 @@ The message moves head joints for given time.</p>
 
 <ul>
   <li>
-    <p><code class="highlighter-rouge">/robotis/sensor/move_lidar</code>(<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
+    <p><code class="highlighter-rouge">/robotis/sensor/move_lidar</code> (<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
 This message reports the head movement to the Node which assembles LiDAR data.</p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">/robotis/status</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/StatusMsg.msg">robotis_controller_msgs/StatusMsg</a>)<br />
+    <p><code class="highlighter-rouge">/robotis/status</code> (<a href="/docs/en/popup/StatusMsg.msg/" class="popup">robotis_controller_msgs/StatusMsg</a>)<br />
 The message indicates status of the head_control_module.</p>
   </li>
 </ul>
@@ -4802,7 +4821,7 @@ Acquired sensor values when the robot is hanging on the lift and standing on the
   </li>
   <li>Published Topics
     <ul>
-      <li><code class="highlighter-rouge">/robotis/status</code> (<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/StatusMsg.msg">robotis_controller_msgs/StatusMsg</a>)<br />
+      <li><code class="highlighter-rouge">/robotis/status</code> (<a href="/docs/en/popup/StatusMsg.msg/" class="popup">robotis_controller_msgs/StatusMsg</a>)<br />
  The status message of THORMANG3</li>
     </ul>
   </li>
@@ -4810,23 +4829,23 @@ Acquired sensor values when the robot is hanging on the lift and standing on the
 
 <ul>
   <li>
-    <p><code class="highlighter-rouge">/robotis/feet_ft/both_ft_value</code> (<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/BothWrench.msg">thormang3_feet_ft_module_msgs/BothWrench</a>)<br />
+    <p><code class="highlighter-rouge">/robotis/feet_ft/both_ft_value</code> (<a href="/docs/en/popup/BothWrench.msg/" class="popup">thormang3_feet_ft_module_msgs/BothWrench</a>)<br />
 Both Wrench</p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">/robotis/sensor/ft_right_foot/raw</code> (<a href="http://docs.ros.org/api/geometry_msgs/html/msg/WrenchStamped.html">geometry_msgs/WrenchStamped</a>)<br />
+    <p><code class="highlighter-rouge">/robotis/sensor/ft_right_foot/raw</code> (<a href="/docs/en/popup/geometry_msgs_WrenchStamped_msg/" class="popup">geometry_msgs/WrenchStamped</a>)<br />
 raw output from the force torque sensor on the right foot</p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">/robotis/sensor/ft_right_foot/scaled</code> (<a href="http://docs.ros.org/api/geometry_msgs/html/msg/WrenchStamped.html">geometry_msgs/WrenchStamped</a>)<br />
+    <p><code class="highlighter-rouge">/robotis/sensor/ft_right_foot/scaled</code> (<a href="/docs/en/popup/geometry_msgs_WrenchStamped_msg/" class="popup">geometry_msgs/WrenchStamped</a>)<br />
 scaled output from the force torque sensor on the right foot</p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">/robotis/sensor/ft_right_foot/raw</code>(<a href="http://docs.ros.org/api/geometry_msgs/html/msg/WrenchStamped.html">geometry_msgs/WrenchStamped</a>)<br />
+    <p><code class="highlighter-rouge">/robotis/sensor/ft_right_foot/raw</code> (<a href="/docs/en/popup/geometry_msgs_WrenchStamped_msg/" class="popup">geometry_msgs/WrenchStamped</a>)<br />
 raw output from the force torque sensor on the left foot</p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">/robotis/sensor/ft_right_foot/scaled</code>(<a href="http://docs.ros.org/api/geometry_msgs/html/msg/WrenchStamped.html">geometry_msgs/WrenchStamped</a>)<br />
+    <p><code class="highlighter-rouge">/robotis/sensor/ft_right_foot/scaled</code> (<a href="/docs/en/popup/geometry_msgs_WrenchStamped_msg/" class="popup">geometry_msgs/WrenchStamped</a>)<br />
 scaled output from the force torque sensor on the left foot</p>
   </li>
 </ul>
@@ -5413,9 +5432,9 @@ scaled output from the force torque sensor on the left foot</p>
 </ul>
 
 <div class="highlighter-rouge"><pre class="highlight"><code>void process(
-  int *balance_error, 
+  int *balance_error,
   Eigen::MatrixXd *robot_to_cob_modified,
-  Eigen::MatrixXd *robot_to_right_foot_modified, 
+  Eigen::MatrixXd *robot_to_right_foot_modified,
   Eigen::MatrixXd *robot_to_left_foot_modified)
 </code></pre>
 </div>
@@ -5435,8 +5454,8 @@ scaled output from the force torque sensor on the left foot</p>
 </ul>
 
 <div class="highlighter-rouge"><pre class="highlight"><code>void setDesiredPose(
-  const Eigen::MatrixXd &amp;robot_to_cob, 
-  const Eigen::MatrixXd &amp;robot_to_right_foot, 
+  const Eigen::MatrixXd &amp;robot_to_cob,
+  const Eigen::MatrixXd &amp;robot_to_right_foot,
   const Eigen::MatrixXd &amp;robot_to_left_foot)
 </code></pre>
 </div>
@@ -5838,7 +5857,7 @@ This is the modified version of KumarRobotics/imu_3dm_gx4.</p>
 
 <h5 id="published-topics-5">Published Topics</h5>
 
-<p><code class="highlighter-rouge">/robotis/sensor/imu/imu</code> (<a href="http://docs.ros.org/api/sensor_msgs/html/msg/Imu.html">sensor_msgs/Imu</a>)</p>
+<p><code class="highlighter-rouge">/robotis/sensor/imu/imu</code> (<a href="/docs/en/popup/sensor_msgs_IMU_msg/" class="popup">sensor_msgs/Imu</a>)</p>
 
 <p>Present output of the IMU Sensor</p>
 
@@ -5867,8 +5886,8 @@ The package also includes a node for assembling Laserscan(LaserScan to PointClou
     <ul>
       <li>thormang3_pointcloud.launch
         <ul>
-          <li>scan_to_scan_filter_chain (<a href="http://wiki.ros.org/laser_filters">laser_filters</a>) : Filter LaserScan topics</li>
-          <li>laser_scan_assembler (<a href="http://wiki.ros.org/laser_assembler">laser_assembler</a>) : The service assembles LaserScan</li>
+          <li>scan_to_scan_filter_chain (<a href="http://wiki.ros.org/laser_filters/">laser_filters</a>) : Filter LaserScan topics</li>
+          <li>laser_scan_assembler (<a href="http://wiki.ros.org/laser_assembler/">laser_assembler</a>) : The service assembles LaserScan</li>
           <li>assemble_laser_node (thormang3_sensors) : Create PointCloud from Assemble Service</li>
         </ul>
       </li>
@@ -5882,19 +5901,19 @@ The package also includes a node for assembling Laserscan(LaserScan to PointClou
 
 <h5 id="subscribed-topics-5">Subscribed Topics</h5>
 
-<p><code class="highlighter-rouge">/robotis/sensor/move_lidar</code>(<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
+<p><code class="highlighter-rouge">/robotis/sensor/move_lidar</code> (<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
   Configures start and end time to assemble LaserScan<br />
   Set the start time when receiving start message.<br />
   Set the end time and assemble Pointcloud when receiving end message.</p>
 
 <h5 id="published-topics-6">Published Topics</h5>
 
-<p><code class="highlighter-rouge">/robotis/sensor/assembled_scan</code>(<a href="http://docs.ros.org/api/sensor_msgs/html/msg/PointCloud2.html">sensor_msgs/PointCloud2</a>)<br />
+<p><code class="highlighter-rouge">/robotis/sensor/assembled_scan</code> (<a href="/docs/en/popup/sensor_msgs_PointCloud2_msg/" class="popup">sensor_msgs/PointCloud2</a>)<br />
   Assembled PointCloud</p>
 
 <h5 id="services-called">Services Called</h5>
 
-<p><code class="highlighter-rouge">/robotis/sensor/service/assemble_scan2</code>(<a href="http://docs.ros.org/api/laser_assembler/html/srv/AssembleScans2.html">laser_assembler/AssembleScan2</a>)<br />
+<p><code class="highlighter-rouge">/robotis/sensor/service/assemble_scan2</code> (<a href="/docs/en/popup/laser_assembler_AssembleScan2_srv/" class="popup">laser_assembler/AssembleScan2</a>)<br />
   Get assembled PointCloud from the Service with LaserScan start/end parameters.</p>
 
 <h3 id="thormang3_simple_demo"><a href="#thormang3_simple_demo">thormang3_simple_demo</a></h3>
@@ -5920,16 +5939,16 @@ The package also includes a node for assembling Laserscan(LaserScan to PointClou
 
 <h6 id="published-topics-7">Published Topics</h6>
 
-<p><code class="highlighter-rouge">/robotis/base/ini_pose</code>(<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
+<p><code class="highlighter-rouge">/robotis/base/ini_pose</code> (<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
   The topic to take initial posture of the Base Module</p>
 
-<p><code class="highlighter-rouge">/robotis/enable_ctrl_module</code>(<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
+<p><code class="highlighter-rouge">/robotis/enable_ctrl_module</code> (<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
   The topic to set upper body of the robot with the Manipulation Module</p>
 
-<p><code class="highlighter-rouge">/robotis/manipulation/ini_pose_msg</code>(<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
+<p><code class="highlighter-rouge">/robotis/manipulation/ini_pose_msg</code> (<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
   The topic to take initial posture of the Manipulation Module</p>
 
-<p><code class="highlighter-rouge">/robotis/manipulation/kinematics_pose_msg</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/KinematicsPose.msg">thormang3_manipulation_module_msgs/KinematicsPose</a>)<br />
+<p><code class="highlighter-rouge">/robotis/manipulation/kinematics_pose_msg</code> (<a href="/docs/en/popup/KinematicsPose.msg/" class="popup">thormang3_manipulation_module_msgs/KinematicsPose</a>)<br />
    The topic to take initial posture of the Manipulation Module</p>
 
 <h4 id="thormang3_walking_demo">thormang3_walking_demo</h4>
@@ -5948,29 +5967,29 @@ The package also includes a node for assembling Laserscan(LaserScan to PointClou
 
 <h6 id="subscribed-topics-7">Subscribed Topics</h6>
 
-<p><code class="highlighter-rouge">/robotis/status</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/StatusMsg.msg">robotis_controller_msgs/StatusMsg</a>)<br />
+<p><code class="highlighter-rouge">/robotis/status</code> (<a href="/docs/en/popup/StatusMsg.msg/" class="popup">robotis_controller_msgs/StatusMsg</a>)<br />
   Status message of THORMANG3</p>
 
-<p><code class="highlighter-rouge">robotis/walking_demo/command</code>(<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
+<p><code class="highlighter-rouge">robotis/walking_demo/command</code> (<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
   Command for walking simple demo</p>
 
 <h6 id="published-topics-8">Published Topics</h6>
 
-<p><code class="highlighter-rouge">robotis/base/ini_pose</code>(<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
+<p><code class="highlighter-rouge">robotis/base/ini_pose</code> (<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
   The command delivered to the thormang3_base_module to take the initial posture.</p>
 
-<p><code class="highlighter-rouge">/robotis/enable_ctrl_module</code>(<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
+<p><code class="highlighter-rouge">/robotis/enable_ctrl_module</code> (<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
   The topic to set lower body of the robot with the Walking Module.</p>
 
 <h6 id="services-called-1">Services Called</h6>
 
-<p><code class="highlighter-rouge">/robotis/walking/get_reference_step_data</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/GetReferenceStepData.srv">thormang3_walking_module_msgs/GetReferenceStrpData</a>)<br />
+<p><code class="highlighter-rouge">/robotis/walking/get_reference_step_data</code> (<a href="/docs/en/popup/GetReferenceStepData.srv/" class="popup">thormang3_walking_module_msgs/GetReferenceStrpData</a>)<br />
   The service obtains current location of THORMANG3 from the Walking Module in the Global space.</p>
 
-<p><code class="highlighter-rouge">/robotis/walking/add_step_data</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/AddStepDataArray.srv">thormang3_walking_module_msgs/AddStepDataArray</a>)<br />
+<p><code class="highlighter-rouge">/robotis/walking/add_step_data</code> (<a href="/docs/en/popup/AddStepDataArray.srv/" class="popup">thormang3_walking_module_msgs/AddStepDataArray</a>)<br />
   The service adds StepData created by the user.</p>
 
-<p><code class="highlighter-rouge">/robotis/walking/set_balance_param</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/SetBalanceParam.srv">thormang3_walking_module_msgs/SetBalanceParam</a>)<br />
+<p><code class="highlighter-rouge">/robotis/walking/set_balance_param</code> (<a href="/docs/en/popup/SetBalanceParam.srv/" class="popup">thormang3_walking_module_msgs/SetBalanceParam</a>)<br />
   The service sets parameters related to the Balance Algorithm.</p>
 
 <h2 id="opc-packages"><a href="#opc-packages">OPC Packages</a></h2>
@@ -5978,8 +5997,8 @@ The package also includes a node for assembling Laserscan(LaserScan to PointClou
 <h3 id="humanoid_navigation"><a href="#humanoid_navigation">humanoid_navigation</a></h3>
 
 <ul>
-  <li><code class="highlighter-rouge">Reference</code> : http://wiki.ros.org/humanoid_navigation</li>
-  <li><code class="highlighter-rouge">Source</code> : https://github.com/AravindaDP/humanoid_navigation</li>
+  <li><code class="highlighter-rouge">Reference</code> : <a href="http://wiki.ros.org/humanoid_navigation">http://wiki.ros.org/humanoid_navigation</a></li>
+  <li><code class="highlighter-rouge">Source</code> : <a href="https://github.com/AravindaDP/humanoid_navigation">https://github.com/AravindaDP/humanoid_navigation</a></li>
   <li>
     <p><code class="highlighter-rouge">Prerequisite Packages</code> : map_server, humanoid_nav_msgs, nav_msgs, sbpl, etc</p>
   </li>
@@ -5989,7 +6008,7 @@ The package also includes a node for assembling Laserscan(LaserScan to PointClou
 <div class="highlighter-rouge"><pre class="highlight"><code>$ sudo apt-get install ros-kinetic-map-server
 $ sudo apt-get install ros-kinetic-humanoid-nav-msgs
 $ sudo apt-get install ros-kinetic-nav-msgs
-$ sudo apt-get install ros-kinetic-octomap 
+$ sudo apt-get install ros-kinetic-octomap
 $ sudo apt-get install ros-kinetic-octomap-msgs
 $ sudo apt-get install ros-kinetic-octomap-ros
 $ sudo apt-get install ros-kinetic-octomap-server
@@ -6070,73 +6089,73 @@ module_button : Modules to configure with the manager (index : module name)</p>
 <h4 id="ros-api-10">ROS API</h4>
 
 <h5 id="subscribed-topics-8">Subscribed Topics</h5>
-<p><code class="highlighter-rouge">/robotis/feet_ft/both_ft_value</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/BothWrench.msg">thormang3_feet_ft_module_msgs/BothWrench</a>)<br />
+<p><code class="highlighter-rouge">/robotis/feet_ft/both_ft_value</code> (<a href="/docs/en/popup/BothWrench.msg/" class="popup">thormang3_feet_ft_module_msgs/BothWrench</a>)<br />
   FT value for calibration</p>
 
-<p><code class="highlighter-rouge">/robotis/status</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/StatusMsg.msg">robotis_controller_msgs/StatusMsg</a>)<br />
+<p><code class="highlighter-rouge">/robotis/status</code> (<a href="/docs/en/popup/StatusMsg.msg/" class="popup">robotis_controller_msgs/StatusMsg</a>)<br />
   Status message of THORMANG3</p>
 
-<p><code class="highlighter-rouge">/robotis/present_joint_ctrl_modules</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/JointCtrlModule.msg">robotis_controller_msgs/JointCtrlModule</a>)<br />
+<p><code class="highlighter-rouge">/robotis/present_joint_ctrl_modules</code> (<a href="/docs/en/popup/JointCtrlModule.msg/" class="popup">robotis_controller_msgs/JointCtrlModule</a>)<br />
   Joint modules that are currently in use</p>
 
-<p><code class="highlighter-rouge">/robotis/present_joint_states</code>(<a href="http://docs.ros.org/api/sensor_msgs/html/msg/JointState.html">sensor_msgs/JointState</a>)<br />
+<p><code class="highlighter-rouge">/robotis/present_joint_states</code> (<a href="/docs/en/popup/sensor_msgs_JointState_msg/" class="popup">sensor_msgs/JointState</a>)<br />
   Degree of each joint(Unit in Degree)</p>
 
-<p><code class="highlighter-rouge">/robotis/demo/pose</code>(<a href="http://docs.ros.org/api/geometry_msgs/html/msg/Pose.html">geometry_msgs/Pose</a>)<br />
+<p><code class="highlighter-rouge">/robotis/demo/pose</code> (<a href="/docs/en/popup/geometry_msgs_Pose_msg/" class="popup">geometry_msgs/Pose</a>)<br />
   Pose that are used for Walking and Manipulation</p>
 
 <h5 id="published-topics-9">Published Topics</h5>
-<p><code class="highlighter-rouge">/robotis/set_joint_ctrl_modules</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/JointCtrlModule.msg">robotis_controller_msgs/JointCtrlModule</a>)<br />
+<p><code class="highlighter-rouge">/robotis/set_joint_ctrl_modules</code> (<a href="/docs/en/popup/JointCtrlModule.msg/" class="popup">robotis_controller_msgs/JointCtrlModule</a>)<br />
   Configuring each joint modules (configure for each joint, Not recommended to use)</p>
 
-<p><code class="highlighter-rouge">/robotis/enable_ctrl_module</code>(<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
+<p><code class="highlighter-rouge">/robotis/enable_ctrl_module</code> (<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
   Configure modules to control</p>
 
-<p><code class="highlighter-rouge">/robotis/base/ini_pose</code>(<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
+<p><code class="highlighter-rouge">/robotis/base/ini_pose</code> (<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
   Initial posture of Thormang3</p>
 
-<p><code class="highlighter-rouge">/robotis/feet_ft/ft_calib_command</code>(<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
+<p><code class="highlighter-rouge">/robotis/feet_ft/ft_calib_command</code> (<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
   FT Calibration related command</p>
 
-<p><code class="highlighter-rouge">/robotis/head_control/move_lidar</code>(<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
+<p><code class="highlighter-rouge">/robotis/head_control/move_lidar</code> (<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
   Head movement command for assembling LaserScan.</p>
 
-<p><code class="highlighter-rouge">/robotis/head_control/set_joint_states</code>(<a href="http://docs.ros.org/api/sensor_msgs/html/msg/JointState.html">sensor_msgs/JointState</a>)<br />
+<p><code class="highlighter-rouge">/robotis/head_control/set_joint_states</code> (<a href="/docs/en/popup/sensor_msgs_JointState_msg/" class="popup">sensor_msgs/JointState</a>)<br />
   Control for separate head joints</p>
 
-<p><code class="highlighter-rouge">/robotis/demo/foot_step_marker</code>(<a href="http://docs.ros.org/api/visualization_msgs/html/msg/MarkerArray.html">visualization_msgs/MarkerArray</a>)<br />
+<p><code class="highlighter-rouge">/robotis/demo/foot_step_marker</code> (<a href="/docs/en/popup/visualization_msgs_MarkerArray_msg/" class="popup">visualization_msgs/MarkerArray</a>)<br />
   Visualized footstep messages created by <a href="http://wiki.ros.org/action/fullsearch/footstep_planner">footstep_planner</a></p>
 
-<p><code class="highlighter-rouge">/robotis/manipulation/ini_pose_msg</code>(<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
+<p><code class="highlighter-rouge">/robotis/manipulation/ini_pose_msg</code> (<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
   Initial posture command for Manipulation</p>
 
-<p><code class="highlighter-rouge">/robotis/manipulation/joint_pose_msg</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/JointPose.msg">thormang3_manipulation_module_msgs/JointPose</a>)<br />
+<p><code class="highlighter-rouge">/robotis/manipulation/joint_pose_msg</code> (<a href="/docs/en/popup/JointPose.msg/" class="popup">thormang3_manipulation_module_msgs/JointPose</a>)<br />
   Control the robot in Joint Space</p>
 
-<p><code class="highlighter-rouge">/robotis/manipulation/kinematics_pose_msg</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/KinematicsPose.msg">thormang3_manipulation_module_msgs/KinematicsPose</a>)<br />
+<p><code class="highlighter-rouge">/robotis/manipulation/kinematics_pose_msg</code> (<a href="/docs/en/popup/KinematicsPose.msg/" class="popup">thormang3_manipulation_module_msgs/KinematicsPose</a>)<br />
   Control the robot in Task Space</p>
 
-<p><code class="highlighter-rouge">/robotis/thormang3_foot_step_generator/walking_command</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/FootStepCommand.msg">thormang3_foot_step_generator/FootStepCommand</a>)<br />
+<p><code class="highlighter-rouge">/robotis/thormang3_foot_step_generator/walking_command</code> (<a href="/docs/en/popup/FootStepCommand.msg/" class="popup">thormang3_foot_step_generator/FootStepCommand</a>)<br />
   Create footsteps from the foot_step_generator with the walking parameter and direction.</p>
 
-<p><code class="highlighter-rouge">/robotis/thormang3_foot_step_generator/footsteps_2d</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/Step2DArray.msg">thormang3_foot_step_generator/Step2DArray</a>)<br />
+<p><code class="highlighter-rouge">/robotis/thormang3_foot_step_generator/footsteps_2d</code> (<a href="/docs/en/popup/Step2DArray.msg" class="popup">thormang3_foot_step_generator/Step2DArray</a>)<br />
   2D step array to create footsteps for THORMANG3</p>
 
-<p><code class="highlighter-rouge">/robotis/thormang3_foot_step_generator/balance_command</code>(<a href="http://docs.ros.org/api/std_msgs/html/msg/Bool.html">std_msgs/Bool</a>)<br />
+<p><code class="highlighter-rouge">/robotis/thormang3_foot_step_generator/balance_command</code> (<a href="/docs/en/popup/std_msgs_bool_msg/" class="popup">std_msgs/Bool</a>)<br />
   Balance On/Off of THORMANG3</p>
 
 <h4 id="services-called-2">Services Called</h4>
 
-<p><code class="highlighter-rouge">/robotis/get_present_joint_ctrl_modules</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/GetJointModule.srv">robotis_controller_msgs/GetJointModule</a>)<br />
+<p><code class="highlighter-rouge">/robotis/get_present_joint_ctrl_modules</code> (<a href="/docs/en/popup/GetJointModule.srv/" class="popup">robotis_controller_msgs/GetJointModule</a>)<br />
   Obtains module that is currently in use for each joint.</p>
 
-<p><code class="highlighter-rouge">/plan_footsteps</code>(<a href="http://docs.ros.org/api/humanoid_nav_msgs/html/srv/PlanFootsteps.html">humanoid_nav_msgs/PlanFootsteps</a>)<br />
+<p><code class="highlighter-rouge">/plan_footsteps</code> (<a href="http://docs.ros.org/api/humanoid_nav_msgs/html/srv/PlanFootsteps.html">humanoid_nav_msgs/PlanFootsteps</a>)<br />
   Creates footsteps from map and footstep_planner</p>
 
-<p><code class="highlighter-rouge">/robotis/manipulation/get_joint_pose</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/GetJointPose.srv">thormang3_manipulation_module_msgs/GetJointPose</a>)<br />
+<p><code class="highlighter-rouge">/robotis/manipulation/get_joint_pose</code> (<a href="/docs/en/popup/GetJointPose.srv/" class="popup">thormang3_manipulation_module_msgs/GetJointPose</a>)<br />
   Obtains joint pose of selected manipulation group.</p>
 
-<p><code class="highlighter-rouge">/robotis/manipulation/get_kinematics_pose</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/GetKinematicsPose.srv">thormang3_manipulation_module_msgs/GetKinematicsPose</a>)<br />
+<p><code class="highlighter-rouge">/robotis/manipulation/get_kinematics_pose</code> (<a href="/docs/en/popup/GetKinematicsPose.srv/" class="popup">thormang3_manipulation_module_msgs/GetKinematicsPose</a>)<br />
   Obtains end effector pose of selected manipulation group.</p>
 
 <h4 id="parameters">Parameters</h4>
@@ -6149,7 +6168,7 @@ module_button : Modules to configure with the manager (index : module name)</p>
 <p>The Node that can play a action script.<br />
 The default action script is in the “thormang3_action_script_player/script/action_script.yaml”.<br />
 The user can specify the path of the action script file via rosparameter.<br />
-The thormang3_action_script_player is used with <a href="thormang3_action_module">thormang3_action_module</a> and <a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Utility">ros_mpg321_player</a>.</p>
+The thormang3_action_script_player is used with <a href="/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_action_module">thormang3_action_module</a> and <a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Utility">ros_mpg321_player</a>.</p>
 
 <h4 id="download--build-13">Download &amp; Build</h4>
 
@@ -6169,7 +6188,7 @@ The thormang3_action_script_player is used with <a href="thormang3_action_module
 <h4 id="how-to-write-action-script">How to write action script</h4>
 <p>The default action script file is in the “thormang3_action_script_player/script/action_script.yaml”.<br />
 The action script has the following structure.</p>
-<div class="highlighter-rouge"><pre class="highlight"><code>script2: 
+<div class="highlighter-rouge"><pre class="highlight"><code>script2:
      cmd1: {cmd_name: play,  cmd_arg: 2}
      cmd2: {cmd_name: sleep, cmd_arg: 1800}
      cmd3: {cmd_name: mp3,   cmd_arg: "/home/robotis/Music/thormang_mp3/hello_kor.mp3"}
@@ -6190,7 +6209,7 @@ Because <a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Utility">ros_mpg321_play
 
 <h4 id="ros-api-11">ROS API</h4>
 <h5 id="subscribed-topics-9">Subscribed Topics</h5>
-<p><code class="highlighter-rouge">/robotis/demo/action_index</code>(<a href="/docs/en/popup/std_msgs_int32_message/" class="popup">std_msgs/Int32</a>)<br />
+<p><code class="highlighter-rouge">/robotis/demo/action_index</code> (<a href="/docs/en/popup/std_msgs_int32_message/" class="popup">std_msgs/Int32</a>)<br />
   The action script number to play.</p>
 
 <h5 id="parameters-1">Parameters</h5>
@@ -6213,33 +6232,33 @@ Based on the simple Parameter from Topic, the package creates StepData and trans
 
 <h4 id="ros-api-12">ROS API</h4>
 <h5 id="subscribed-topics-10">Subscribed Topics</h5>
-<p><code class="highlighter-rouge">/robotis/status</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/StatusMsg.msg">robotis_controller_msgs::Status</a>)<br />
+<p><code class="highlighter-rouge">/robotis/status</code> (<a href="/docs/en/popup/StatusMsg.msg/" class="popup">robotis_controller_msgs/Status</a>)<br />
   Status message of THORMANG3</p>
 
-<p><code class="highlighter-rouge">/robotis/thormang3_foot_step_generator/walking_command</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/FootStepCommand.msg">thormang3_foot_step_generator::FootStepCommand</a>)<br />
+<p><code class="highlighter-rouge">/robotis/thormang3_foot_step_generator/walking_command</code> (<a href="/docs/en/popup/FootStepCommand.msg/" class="popup">thormang3_foot_step_generator/FootStepCommand</a>)<br />
   The topic includes walking type and step length.</p>
 
-<p><code class="highlighter-rouge">/robotis/thormang3_foot_step_generator/footsteps_2d</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/Step2DArray.msg">thormang3_foot_step_generator::Step2DArray</a>)<br />
+<p><code class="highlighter-rouge">/robotis/thormang3_foot_step_generator/footsteps_2d</code> (<a href="/docs/en/popup/Step2DArray.msg" class="popup">thormang3_foot_step_generator/Step2DArray</a>)<br />
   Planar walking step data contains x, y, theta and moving_foot_flag</p>
 
 <h5 id="services-called-3">Services Called</h5>
-<p><code class="highlighter-rouge">/robotis/walking/get_reference_step_data</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/GetReferenceStepData.srv">thormang3_walking_module_msgs::GetReferenceStepData</a>)<br />
+<p><code class="highlighter-rouge">/robotis/walking/get_reference_step_data</code> (<a href="/docs/en/popup/GetReferenceStepData.srv/" class="popup">thormang3_walking_module_msgs/GetReferenceStepData</a>)<br />
   The service obtains current location of THORMANG3 in the Global space from the Walking Module.</p>
 
-<p><code class="highlighter-rouge">/robotis/walking/add_step_data</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/AddStepDataArray.srv">thormang3_walking_module_msgs::AddStepDataArray</a>)<br />
+<p><code class="highlighter-rouge">/robotis/walking/add_step_data</code> (<a href="/docs/en/popup/AddStepDataArray.srv/" class="popup">thormang3_walking_module_msgs/AddStepDataArray</a>)<br />
   The service adds StepData created by the User.</p>
 
-<p><code class="highlighter-rouge">/robotis/walking/set_balance_param</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/SetBalanceParam.srv">thormang3_walking_module_msgs::SetBalanceParam</a>)<br />
+<p><code class="highlighter-rouge">/robotis/walking/set_balance_param</code> (<a href="/docs/en/popup/SetBalanceParam.srv/" class="popup">thormang3_walking_module_msgs/SetBalanceParam</a>)<br />
   The service initiates walking.</p>
 
-<p><code class="highlighter-rouge">/robotis/walking/is_running</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/IsRunning.srv">thormang3_walking_module_msgs::IsRunning</a>)<br />
+<p><code class="highlighter-rouge">/robotis/walking/is_running</code> (<a href="/docs/en/popup/(thormang3_walking_module_msgs)IsRunning.srv/" class="popup">thormang3_walking_module_msgs/IsRunning</a>)<br />
   The service checks whether the robot is walking or not.</p>
 
 <h4 id="ros-message-type">ROS Message Type</h4>
 <ul>
-  <li><a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/FootStepCommand.msg">FootStepCommand.msg</a></li>
-  <li><a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/Step2D.msg">Step2D.msg</a></li>
-  <li><a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/Step2DArray.msg">Step2DArray.msg</a></li>
+  <li><a href="/docs/en/popup/FootStepCommand.msg/" class="popup">FootStepCommand.msg</a></li>
+  <li><a href="/docs/en/popup/Step2D.msg/" class="popup">Step2D.msg</a></li>
+  <li><a href="/docs/en/popup/Step2DArray.msg/" class="popup">Step2DArray.msg</a></li>
 </ul>
 
 <h3 id="thormang3_offset_tuner_client"><a href="#thormang3_offset_tuner_client">thormang3_offset_tuner_client</a></h3>
@@ -6259,17 +6278,17 @@ It is used with the <a href="/docs/en/platform/thormang3/thormang3_ros_packages/
 <h4 id="ros-api-13">ROS API</h4>
 
 <h5 id="published-topics-10">Published Topics</h5>
-<p><code class="highlighter-rouge">/robotis/offset_tuner/joint_offset_data</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/JointOffsetData.msg">thormang3_offset_tuner_msgs::JointOffsetData|JointOffsetData.msg</a>)   <br />
+<p><code class="highlighter-rouge">/robotis/offset_tuner/joint_offset_data</code> (<a href="/docs/en/popup/JointOffsetData.msg/" class="popup">thormang3_offset_tuner_msgs/JointOffsetData|JointOffsetData.msg</a>)   <br />
   The topic transfers Joint offset</p>
 
-<p><code class="highlighter-rouge">/robotis/offset_tuner/torque_enable</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/JointTorqueOnOffArray.msg">thormang3_offset_tuner_msgs::JointTorqueOnOffArray|JointTorqueOnOffArray.msg</a>)  <br />
+<p><code class="highlighter-rouge">/robotis/offset_tuner/torque_enable</code> (<a href="/docs/en/popup/JointTorqueOnOffArray.msg/" class="popup">thormang3_offset_tuner_msgs/JointTorqueOnOffArray|JointTorqueOnOffArray.msg</a>)  <br />
   The topic executes Torque on/off command</p>
 
-<p><code class="highlighter-rouge">/robotis/offset_tuner/command</code>(<a href="http://docs.ros.org/api/std_msgs/html/msg/String.html">std_msgs::String</a>)  <br />
+<p><code class="highlighter-rouge">/robotis/offset_tuner/command</code> (<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)  <br />
   The topic transfers other commands(save, initial posture, etc).</p>
 
 <h5 id="services-3">Services</h5>
-<p><code class="highlighter-rouge">/robotis/offset_tuner/get_present_joint_offset_data</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/GetPresentJointOffsetData.srv">thormang3_offset_tuner_msgs::GetPresentJointOffsetData|GetPresentJointOffsetData.srv</a>)<br />
+<p><code class="highlighter-rouge">/robotis/offset_tuner/get_present_joint_offset_data</code> (<a href="/docs/en/popup/GetPresentJointOffsetData.srv/" class="popup">thormang3_offset_tuner_msgs/GetPresentJointOffsetData|GetPresentJointOffsetData.srv</a>)<br />
   The service obtains saved joint offset</p>
 
 <h5 id="parameters-2">Parameters</h5>
@@ -6284,7 +6303,7 @@ It is used with the <a href="/docs/en/platform/thormang3/thormang3_ros_packages/
 
 <ul>
   <li>
-    <p>Make a URDF Model : <a href="http://wiki.ros.org/urdf">URDF-ROS Wiki</a></p>
+    <p>Make a URDF Model : <a href="http://wiki.ros.org/urdf">URDF-ROS Wiki</a>:http://wiki.ros.org/urdf</p>
   </li>
   <li>
     <p>Package</p>
@@ -6304,7 +6323,7 @@ It is used with the <a href="/docs/en/platform/thormang3/thormang3_ros_packages/
 
 <ul>
   <li>
-    <p>Gazebo with ROS : <a href="http://gazebosim.org/tutorials?cat=connect_ros">Connect to ROS</a></p>
+    <p>Gazebo with ROS : <a href="http://gazebosim.org/tutorials?cat=connect_ros">Connect to ROS</a>:http://gazebosim.org/tutorials?cat=connect_ros</p>
   </li>
   <li>
     <p>Package</p>
@@ -6322,7 +6341,7 @@ It is used with the <a href="/docs/en/platform/thormang3/thormang3_ros_packages/
 
 <p>THORMANG3 Offset Tuner Node <br />
 Data related to the Offset can be Tuned, Loaded and Saved. <br />
-It is used with the <a href="/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3-offset-tuner-client">thormang3_offset_tuner_client</a>.</p>
+It is used with the <a href="/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_offset_tuner_client">thormang3_offset_tuner_client</a>.</p>
 
 <h4 id="download--build-16">Download &amp; Build</h4>
 
@@ -6337,31 +6356,31 @@ It is used with the <a href="/docs/en/platform/thormang3/thormang3_ros_packages/
 <h4 id="ros-api-14">ROS API</h4>
 
 <h5 id="subscribed-topics-11">Subscribed Topics</h5>
-<p><code class="highlighter-rouge">/robotis/base/send_tra</code>(<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
+<p><code class="highlighter-rouge">/robotis/base/send_tra</code> (<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
   The topic informs the start and end of trajectory following.</p>
 
-<p><code class="highlighter-rouge">/robotis/offset_tuner/joint_offset_data</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/JointOffsetData.msg">thormang3_offset_tuner_msgs/JointOffsetData</a>)<br />
+<p><code class="highlighter-rouge">/robotis/offset_tuner/joint_offset_data</code> (<a href="/docs/en/popup/JointOffsetData.msg/" class="popup">thormang3_offset_tuner_msgs/JointOffsetData</a>)<br />
   The topic updates joint offset related parameters.</p>
 
-<p><code class="highlighter-rouge">/robotis/offset_tuner/torque_enable</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/JointTorqueOnOffArray.msg">thormang3_offset_tuner_msgs/JointTorqueOnOffArray</a>)<br />
+<p><code class="highlighter-rouge">/robotis/offset_tuner/torque_enable</code> (<a href="/docs/en/popup/JointTorqueOnOffArray.msg/" class="popup">thormang3_offset_tuner_msgs/JointTorqueOnOffArray</a>)<br />
   The topic transfers Torque enable/disable command for joints.</p>
 
-<p><code class="highlighter-rouge">/robotis/offset_tuner/command</code>(<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
-  The topic transfers command to the <a href="/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3-offset-tuner-client">thormang3_offset_tuner_client</a>.</p>
+<p><code class="highlighter-rouge">/robotis/offset_tuner/command</code> (<a href="/docs/en/popup/std_msgs_string/" class="popup">std_msgs/String</a>)<br />
+  The topic transfers command to the <a href="/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_offset_tuner_client">thormang3_offset_tuner_client</a>.</p>
 <ul>
   <li>“save”     : Saves current offset to yaml</li>
   <li>“ini_pose” : Take the initial posture for offset tuning</li>
 </ul>
 
 <h4 id="services-4">Services</h4>
-<p><code class="highlighter-rouge">robotis/offset_tuner/get_present_joint_offset_data</code>(<a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/GetPresentJointOffsetData.srv">thormang3_offset_tuner_msgs/GetPresentJointOffsetData</a>)<br />
-  The service obtains current offset data from the <a href="/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3-offset-tuner-client">thormang3_offset_tuner_client</a>.</p>
+<p><code class="highlighter-rouge">robotis/offset_tuner/get_present_joint_offset_data</code> (<a href="/docs/en/popup/GetPresentJointOffsetData.srv/" class="popup">thormang3_offset_tuner_msgs/GetPresentJointOffsetData</a>)<br />
+  The service obtains current offset data from the <a href="/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_offset_tuner_client">thormang3_offset_tuner_client</a>.</p>
 
 <h3 id="thormang3_action_editor"><a href="#thormang3_action_editor">thormang3_action_editor</a></h3>
 
 <p>THORMANG3 Action Editor Node <br />
 The action file can be edited by this action editor. <br />
-The action file will be used with <a href="thormang3_action_module">thormang3_action_module</a>.</p>
+The action file will be used with <a href="/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_action_module">thormang3_action_module</a>.</p>
 
 <h4 id="action-file">Action File</h4>
 <p>The action file is in the “thormang3_action_module/data” folder. The action file is a file that contains THORMANG3’s poses and time data.<br />
@@ -6562,8 +6581,8 @@ For example, if user wants to make a new robot pose, user simply turns any dynam
 <p>The followings are Messages and Services used for the <a href="/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_action_module">thormang3_action_module</a>.</p>
 
 <ul>
-  <li>ROS Message Type : <a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/StartAction.msg">StartAction.msg</a></li>
-  <li>ROS Service Type : <a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/(thormang3_action_module_msgs)IsRunning.srv">IsRunning.srv</a></li>
+  <li>ROS Message Type : <a href="/docs/en/popup/StartAction.msg/" class="popup">StartAction.msg</a></li>
+  <li>ROS Service Type : <a href="/docs/en/popup/(thormang3_action_module_msgs)IsRunning.srv/" class="popup">IsRunning.srv</a></li>
 </ul>
 
 <h3 id="thormang3_feet_ft_module_msgs"><a href="#thormang3_feet_ft_module_msgs">thormang3_feet_ft_module_msgs</a></h3>
@@ -6571,7 +6590,7 @@ For example, if user wants to make a new robot pose, user simply turns any dynam
 <p>Message used in the <a href="/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_feet_ft_module">thormang3_feet_ft_module</a>.</p>
 
 <ul>
-  <li>ROS Message Type : <a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/BothWrench.msg">BothWrench.msg</a></li>
+  <li>ROS Message Type : <a href="/docs/en/popup/BothWrench.msg/" class="popup">BothWrench.msg</a></li>
 </ul>
 
 <h3 id="thormang3_manipulation_module_msgs"><a href="#thormang3_manipulation_module_msgs">thormang3_manipulation_module_msgs</a></h3>
@@ -6581,14 +6600,14 @@ For example, if user wants to make a new robot pose, user simply turns any dynam
 <ul>
   <li>ROS Message Type
     <ul>
-      <li><a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/JointPose.msg">JointPose.msg</a></li>
-      <li><a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/KinematicsPose.msg">KinematicsPose.msg</a></li>
+      <li><a href="/docs/en/popup/JointPose.msg/" class="popup">JointPose.msg</a></li>
+      <li><a href="/docs/en/popup/KinematicsPose.msg/" class="popup">KinematicsPose.msg</a></li>
     </ul>
   </li>
   <li>ROS Service Type
     <ul>
-      <li><a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/GetJointPose.srv">GetJointPose.srv</a></li>
-      <li><a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/GetKinematicsPose.srv">GetKinematicsPose.srv</a></li>
+      <li><a href="/docs/en/popup/GetJointPose.srv/" class="popup">GetJointPose.srv</a></li>
+      <li><a href="/docs/en/popup/GetKinematicsPose.srv/" class="popup">GetKinematicsPose.srv</a></li>
     </ul>
   </li>
 </ul>
@@ -6600,28 +6619,28 @@ For example, if user wants to make a new robot pose, user simply turns any dynam
 <ul>
   <li>ROS Message Type
     <ul>
-      <li><a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/BalanceParam.msg">BalanceParam.msg</a></li>
-      <li><a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/DampingBalanceParam.msg">DampingBalanceParam.msg</a></li>
-      <li><a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/JointFeedBackGain.msg">JointFeedBackGain.msg</a></li>
-      <li><a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/PoseXYZRPY.msg">PoseXYZRPY.msg</a></li>
-      <li><a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/PoseZRPY.msg">PoseZRPY.msg</a></li>
-      <li><a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/RobotPose.msg">RobotPose.msg</a></li>
-      <li><a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/StepData.msg">StepData.msg</a></li>
-      <li><a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/StepPositionData.msg">StepPositionData.msg</a></li>
-      <li><a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/StepTimeData.msg">StepTimeData.msg</a></li>
-      <li><a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/WalkingJointStatesStamped.msg">WalkingJointStatesStamped.msg</a></li>
+      <li><a href="/docs/en/popup/BalanceParam.msg/" class="popup">BalanceParam.msg</a></li>
+      <li><a href="/docs/en/popup/DampingBalanceParam.msg/" class="popup">DampingBalanceParam.msg</a></li>
+      <li><a href="/docs/en/popup/JointFeedBackGain.msg/" class="popup">JointFeedBackGain.msg</a></li>
+      <li><a href="/docs/en/popup/PoseXYZRPY.msg/" class="popup">PoseXYZRPY.msg</a></li>
+      <li><a href="/docs/en/popup/PoseZRPY.msg/" class="popup">PoseZRPY.msg</a></li>
+      <li><a href="/docs/en/popup/RobotPose.msg/" class="popup">RobotPose.msg</a></li>
+      <li><a href="/docs/en/popup/StepData.msg/" class="popup">StepData.msg</a></li>
+      <li><a href="/docs/en/popup/StepPositionData.msg/" class="popup">StepPositionData.msg</a></li>
+      <li><a href="/docs/en/popup/StepTimeData.msg/" class="popup">StepTimeData.msg</a></li>
+      <li><a href="/docs/en/popup/WalkingJointStatesStamped.msg/" class="popup">WalkingJointStatesStamped.msg</a></li>
     </ul>
   </li>
   <li>ROS Service Type
     <ul>
-      <li><a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/AddStepDataArray.srv">AddStepDataArray.srv</a></li>
-      <li><a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/GetReferenceStepData.srv">GetReferenceStepData.srv</a></li>
-      <li><a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/(thormang3_action_module_msgs)IsRunning.srv">IsRunning.srv</a></li>
-      <li><a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/RemoveExistingStepData.srv">RemoveExistingStepData.srv</a></li>
-      <li><a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/SetBalanceParam.srv">SetBalanceParam.srv</a></li>
-      <li><a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/SetDampingBalanceParam.srv">SetDampingBalanceParam.srv</a></li>
-      <li><a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/SetJointFeedBackGain.srv">SetJointFeedBackGain.srv</a></li>
-      <li><a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/StartWalking.srv">StartWalking.srv</a></li>
+      <li><a href="/docs/en/popup/AddStepDataArray.srv/" class="popup">AddStepDataArray.srv</a></li>
+      <li><a href="/docs/en/popup/GetReferenceStepData.srv/" class="popup">GetReferenceStepData.srv</a></li>
+      <li><a href="/docs/en/popup/(thormang3_action_module_msgs)IsRunning.srv/" class="popup">IsRunning.srv</a></li>
+      <li><a href="/docs/en/popup/RemoveExistingStepData.srv/" class="popup">RemoveExistingStepData.srv</a></li>
+      <li><a href="/docs/en/popup/SetBalanceParam.srv/" class="popup">SetBalanceParam.srv</a></li>
+      <li><a href="/docs/en/popup/SetDampingBalanceParam.srv/" class="popup">SetDampingBalanceParam.srv</a></li>
+      <li><a href="/docs/en/popup/SetJointFeedBackGain.srv/" class="popup">SetJointFeedBackGain.srv</a></li>
+      <li><a href="/docs/en/popup/StartWalking.srv/" class="popup">StartWalking.srv</a></li>
     </ul>
   </li>
 </ul>
@@ -6631,25 +6650,25 @@ For example, if user wants to make a new robot pose, user simply turns any dynam
 <p>Messages used in the <a href="/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_head_control_module">thormang3_head_control_module</a></p>
 
 <ul>
-  <li>ROS Message Type : <a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/HeadJointPose.msg">HeadJointPose.msg</a></li>
+  <li>ROS Message Type : <a href="/docs/en/popup/HeadJointPose.msg/" class="popup">HeadJointPose.msg</a></li>
 </ul>
 
 <h3 id="thormang3_offset_tuner_msgs"><a href="#thormang3_offset_tuner_msgs">thormang3_offset_tuner_msgs</a></h3>
 
-<p>The following are Messages and Service used for the thormang3_offset_tuner_server and the <a href="/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3-offset-tuner-client">thormang3_offset_tuner_client</a>.</p>
+<p>The following are Messages and Service used for the thormang3_offset_tuner_server and the <a href="/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_offset_tuner_client">thormang3_offset_tuner_client</a>.</p>
 
 <ul>
   <li>ROS Message Type
     <ul>
-      <li><a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/JointOffsetData.msg">JointOffsetData.msg</a></li>
-      <li><a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/JointOffsetPositionData.msg">JointOffsetPositionData.msg</a></li>
-      <li><a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/JointTorqueOnOff.msg">JointTorqueOnOff.msg</a></li>
-      <li><a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/JointTorqueOnOffArray.msg">JointTorqueOnOffArray.msg</a></li>
+      <li><a href="/docs/en/popup/JointOffsetData.msg/" class="popup">JointOffsetData.msg</a></li>
+      <li><a href="/docs/en/popup/JointOffsetPositionData.msg/" class="popup">JointOffsetPositionData.msg</a></li>
+      <li><a href="/docs/en/popup/JointTorqueOnOff.msg/" class="popup">JointTorqueOnOff.msg</a></li>
+      <li><a href="/docs/en/popup/JointTorqueOnOffArray.msg/" class="popup">JointTorqueOnOffArray.msg</a></li>
     </ul>
   </li>
   <li>ROS Service Type
     <ul>
-      <li><a href="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/GetPresentJointOffsetData.srv">GetPresentJointOffsetData.srv</a></li>
+      <li><a href="/docs/en/popup/GetPresentJointOffsetData.srv/" class="popup">GetPresentJointOffsetData.srv</a></li>
     </ul>
   </li>
 </ul>
