@@ -13,6 +13,7 @@ sidebar:
 
 # [Notice](#notice)
 
+  - 02/08/2018 [ROS Robot Programming, A Handbook is written by TurtleBot3 Developers](http://community.robotsource.org/t/download-the-ros-robot-programming-book-for-free/51/)
   - 02/02/2018 [How to use LDS-01 of TurtleBot3](https://discourse.ros.org/t/tb3-how-to-use-lds-01-of-turtlebot3/3862)
   - 01/30/2018 [TurtleBot3 Basic operation demo](https://discourse.ros.org/t/tb3-turtlebot3-basic-operation-demo/3840)
   - 01/26/2018 [TurtleBot3 projects in KAIST](https://discourse.ros.org/t/turtlebot3-projects-in-kaist/3794)
