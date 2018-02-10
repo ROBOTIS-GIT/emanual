@@ -9517,8 +9517,10 @@ turtlebot3:
   - title: "Video"
     url: /platform/turtlebot3/video/#video
     children:
-    - title: "Video from open source team"
+    - title: "Video from Open Source Team"
       url: /platform/turtlebot3/video/#video-from-open-source-team
+    - title: "Video from ROBOTIS Channel"
+      url: /platform/turtlebot3/video/#video-from-robotis-channel      
   - title: "Appendix #OpenCR1.0"
     url: /platform/turtlebot3/appendix_opencr1_0/#appendix-opencr10
     children:
