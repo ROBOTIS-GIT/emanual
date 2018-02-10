@@ -9516,6 +9516,9 @@ turtlebot3:
       url: /platform/turtlebot3/learn/#books
   - title: "Video"
     url: /platform/turtlebot3/video/#video
+    children:
+    - title: "Video from open source team"
+      url: /platform/turtlebot3/video/#video-from-open-source-team
   - title: "Appendix #OpenCR1.0"
     url: /platform/turtlebot3/appendix_opencr1_0/#appendix-opencr10
     children:
