@@ -224,7 +224,7 @@ https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver
 
   - [Install Arduino IDE and OpenCR](http://emanual.robotis.com/docs/en/parts/controller/opencr10/#arduino-ide)
 
-### Download firmware
+### Download firmware and run
 
 1. After connecting USB to PC, select Tools -> Board -> OpenCR Board in Arduino IDE.
 1. Change Tools-> Port to the port to which the board is connected.  
