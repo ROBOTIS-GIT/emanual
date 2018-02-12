@@ -25,6 +25,7 @@ The Camera Module can be used to take high-definition video, as well as stills p
 
 ## [Specifications](#specifications)
 
+
 ### [Hardware Specifications](#hardware-specifications)
 
 | Items                          | Specifications                                                                            |
@@ -105,15 +106,19 @@ The Camera Module can be used to take high-definition video, as well as stills p
 
 Here is the detail specification document: [Raspberry Pi Camera Module v2 Datasheet](https://www.raspberrypi.org/documentation/hardware/camera/README.md)
 
+
 ## [Raspberry Pi Camera for TurtleBot3](#raspberry-pi-camera-for-turtlebot3)
 
 The Raspberry Pi Camera Module v2 is applied on TurtleBot3 Waffle Pi.
 
+
 ![](/assets/images/platform/turtlebot3/hardware_setup/turtlebot3_models.png)
+
 
 ## [Introduction Video](#introduction-video)
 
 The TurtleBot3 Waffle Pi uses Raspberry Pi Camera Module v2 as a default vision sensor. Check this video out that shows how Raspberry Pi Camera Module v2 can be used in TurtleBot3 Waffle Pi.
+
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/AyZ5lcz5IzM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
@@ -122,9 +127,11 @@ The TurtleBot3 Waffle Pi uses Raspberry Pi Camera Module v2 as a default vision 
 
 [Raspberry Pi Camera packages](https://github.com/UbiquityRobotics/raspicam_node) enable the use of Raspberry Pi Camera Module v1.x and v2.x with ROS. Below table describes packages required to operate Raspberry Pi Camera. You will be guided to install these packaged in the next section.
 
+
 | Package                                                                  | Description                                                          |
 | ------------------------------------------------------------------------ | :------------------------------------------------------------------: |
 | [Raspberry Pi Camera](https://github.com/UbiquityRobotics/raspicam_node) | Underlying library driver for communicating with Raspberry Pi Camera |
+
 
 ### [Installation](#installation)
 
@@ -135,17 +142,61 @@ $ sudo raspi-config
 ```
 
 
+![](/assets/images/platform/turtlebot3/appendix_raspi_cam/pi-cam-hardware-setting-1.png)
+
+
+Select **3 Interfacing Options**
+
+
+![](/assets/images/platform/turtlebot3/appendix_raspi_cam/pi-cam-hardware-setting-2.png)
+
+
+Select **P1 Camera**
+
+
+![](/assets/images/platform/turtlebot3/appendix_raspi_cam/pi-cam-hardware-setting-3.png)
+
+
+Enable camera interface
+
+
+![](/assets/images/platform/turtlebot3/appendix_raspi_cam/pi-cam-hardware-setting-4.png)
+
+
+Enable camera interface
+
+
+![](/assets/images/platform/turtlebot3/appendix_raspi_cam/pi-cam-hardware-setting-5.png)
+
+
+After reboot Raspberry Pi ,to test that the system is installed and working, try the following command:
+
+
+``` bash
+$ raspistill -v -o test.jpg
+```
+
+The display should show a five-second preview from the camera and then take a picture, saved to the file *test.jpg*
+
 
 **[TurtleBot]** The following commands will install relevant Raspberry Pi Camera packages on your ROS system.
 
 ``` bash
 $ cd ~/catkin_ws/src
 $ git clone https://github.com/UbiquityRobotics/raspicam_node.git
+$ sudo apt-get install ros-kinetic-compressed-image-transport ros-kinetic-camera-info-manager
+$ cd ~/catkin_ws && catkin_make
 ```
 
 ### [Run raspicam Node](#run-raspicam-node)
 
 **[TurtleBot]** Run the following command
+
+``` bash
+$ roslaunch turtlebot3_bringup turtlebot3_rpicamera.launch
+```
+
+or
 
 ``` bash
 $ roslaunch raspicam_node camerav2_1280x960.launch
