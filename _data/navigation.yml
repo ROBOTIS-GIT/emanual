@@ -13041,6 +13041,33 @@ opencr10:
     - title: "Install Windows Driver"
       url: /parts/controller/opencr10/#install-windows-driver
 
+opencm7:
+  - titlekr: "개요"
+    urlkr: /parts/controller/opencm7/#개요
+  - titlekr: "주요 사양"
+    urlkr: /parts/controller/opencm7/#주요-사양
+  - titlekr: "각 부 명칭"
+    urlkr: /parts/controller/opencm7/#각-부-명칭
+  - titlekr: "전원 연결"
+    urlkr: /parts/controller/opencm7/#전원-연결
+  - titlekr: "작동 방법"
+    urlkr: /parts/controller/opencm7/#작동-방법
+  - titlekr: "무선 통신 모듈 연결하기"
+    urlkr: /parts/controller/opencm7/#무선-통신-모듈-연결하기
+  - titlekr: "스마트폰 연결"
+    urlkr: /parts/controller/opencm7/#스마트폰-연결
+  - titlekr: "PC 연결"
+    urlkr: /parts/controller/opencm7/#pc-연결
+  - titlekr: "컨트롤 테이블"
+    urlkr: /parts/controller/opencm7/#컨트롤-테이블
+    children:
+    - titlekr: "EEPROM 영역"
+      urlkr: /parts/controller/opencm7/#eeprom-영역
+    - titlekr: "RAM 영역"
+      urlkr: /parts/controller/opencm7/#ram-영역
+    - titlekr: "Address 기능 설명"
+      urlkr: /parts/controller/opencm7/#address-기능-설명
+
 rc-100:
   - title: "Introduction"
     titlekr: "개요"
