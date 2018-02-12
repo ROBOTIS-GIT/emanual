@@ -40,7 +40,7 @@ sidebar:
 
  ![img](/assets/images/parts/motor/servo_motor_01.png)
 
-# [핀 배치도](#핀-배치도)
+# [핀 배열](#핀-배열)
 
 ![img](/assets/images/parts/motor/servo_motor_pinout.png)
 

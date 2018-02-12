@@ -67,12 +67,12 @@ sidebar:
 [적외선 센서]: /docs/kr/parts/sensor/irss-10/
 [LED 모듈]: /docs/kr/parts/display/lm-10/
 [접촉 센서]: /docs/kr/parts/sensor/ts-10/
-[예제 태스크 코드의 다운로드 방법]:???
+[예제 태스크 코드의 다운로드 방법]: /docs/kr/faq/download_task_code/
 [DREAM2_L4_Orgel_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l4_orgel_kr.tskx
 [DREAM2_L4_CleanupRobot_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l4_cleanuprobot_kr.tskx
 [DREAM2_L4_CleanupRobot_KR(RC).tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l4_cleanuprobot_kr(rc).tskx
-[DREAM2_L4_Truck_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l3_fourwheeled_kr.tskx
-[DREAM2_L4_Truck_KR(RC).tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l3_fourwheeled_kr(rc).tskx
+[DREAM2_L4_Truck_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l4_truck_kr.tskx
+[DREAM2_L4_Truck_KR(RC).tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l4_truck_kr(rc).tskx
 [DREAM2_L4_BumperCar_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l4_bumpercar_kr.tskx
 [DREAM2_L4_BumperCar_KR(RC).tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l4_bumpercar_kr(rc).tskx
 [DREAM2_L4_ProbingCar_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l4_probingcar_kr.tskx
