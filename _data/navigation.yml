@@ -9402,6 +9402,8 @@ turtlebot3:
         url: /platform/turtlebot3/bringup/#turtlebot3-burger
       - title: "TurtleBot3 Waffle"
         url: /platform/turtlebot3/bringup/#turtlebot3-waffle
+      - title: "TurtleBot3 Waffle Pi"
+        url: /platform/turtlebot3/bringup/#turtlebot3-waffle-pi
   - title: "Teleoperation"
     url: /platform/turtlebot3/teleoperation/#teleoperation
     children:
@@ -9423,6 +9425,8 @@ turtlebot3:
       url: /platform/turtlebot3/teleoperation/#leap-motion
     - title: "Myo"
       url: /platform/turtlebot3/teleoperation/#myo
+  - title: "Example"
+    url: /platform/turtlebot3/example/#example
   - title: "SLAM"
     url: /platform/turtlebot3/slam/#slam
     children:
@@ -9602,6 +9606,33 @@ turtlebot3:
         url: /platform/turtlebot3/appendix_realsense/#optional-to-try-as-the-example-video-shows
     - title: "References"
       url: /platform/turtlebot3/appendix_realsense/#references
+  - title: "Appendix #Raspberry Pi Camera"
+    url: /platform/turtlebot3/appendix_raspi_cam/#appendix-raspberry-pi-camera
+    children:
+    - title: "Overview"
+      url: /platform/turtlebot3/appendix_raspi_cam/#overview
+    - title: "Specifications"
+      url: /platform/turtlebot3/appendix_raspi_cam/#specifications
+      children:
+      - title: "Hardware Specifications"
+        url: /platform/turtlebot3/appendix_raspi_cam/#hardware-specifications
+      - title: "Hardware features"
+        url: /platform/turtlebot3/appendix_raspi_cam/#hardware-features
+      - title: "Software features"
+        url: /platform/turtlebot3/appendix_raspi_cam/#software-features
+      - title: "Mechanical Drawing"
+        url: /platform/turtlebot3/appendix_raspi_cam/#mechanical-drawing
+    - title: "Raspberry Pi Camera for TurtleBot3"
+      url: /platform/turtlebot3/appendix_raspi_cam/#raspberry-pi-camera-for-turtlebot3
+    - title: "Introduction Video"
+      url: /platform/turtlebot3/appendix_raspi_cam/#introduction-video
+    - title: "User Guide"
+      url: /platform/turtlebot3/appendix_raspi_cam/#user-guide
+      children:
+      - title: "Run raspicam Node"
+        url: /platform/turtlebot3/appendix_raspi_cam/#run-raspicam-node
+    - title: "References"
+      url: /platform/turtlebot3/appendix_raspi_cam/#references
   - title: "Appendix #OpenSource"
     url: /platform/turtlebot3/appendix_opensource/#appendix-opensource
     children:
