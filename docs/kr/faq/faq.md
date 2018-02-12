@@ -5,7 +5,7 @@ ref: faq
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/kr/faq
+permalink: /docs/kr/faq/
 sidebar:
   title: FAQ
   nav: "faq"
