@@ -9524,6 +9524,17 @@ turtlebot3:
       url: /platform/turtlebot3/teleoperation/#myo
   - title: "Example"
     url: /platform/turtlebot3/example/#example
+    children:
+    - title: "rqt common plugin"
+      url: /platform/turtlebot3/example/#rqt-common-plugin
+    - title: "Interactive Markers"
+      url: /platform/turtlebot3/example/#interactive-markers
+    - title: "Obstacle Detection"
+      url: /platform/turtlebot3/example/#obstacle-detection
+    - title: "Point Operation"
+      url: /platform/turtlebot3/example/#point-operation     
+    - title: "Patrol"
+      url: /platform/turtlebot3/example/#patrol   
   - title: "SLAM"
     url: /platform/turtlebot3/slam/#slam
     children:
@@ -9649,7 +9660,6 @@ turtlebot3:
       url: /platform/turtlebot3/appendix_dynamixel/#overview
     - title: "Specifications"
       url: /platform/turtlebot3/appendix_dynamixel/#specifications
-
   - title: "Appendix #LDS-01"
     url: /platform/turtlebot3/appendix_lds_01/#appendix-lds01
     children:
