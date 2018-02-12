@@ -60,13 +60,13 @@ sidebar:
 
 5. Execute the task code -> Your robot will move. Turn on the controller and execute the downloaded task code.
 
-### Videos
+# [Videos](#videos)
 
-#### Download RoboPlus Program (for CM-100)
+## Download RoboPlus Program (for CM-100)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/3mDP9BW-Q0E" frameborder="0" allowfullscreen></iframe>
 
-#### Setting Up the Port
+## Setting Up the Port
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UlD4C1XMsgo" frameborder="0" allowfullscreen></iframe>
 

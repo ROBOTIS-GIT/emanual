@@ -252,6 +252,7 @@ main:
         url: /edu/iot/iot-2/
     - title: "BIOLOID"
       titlekr: "바이올로이드"
+      urlkr: /edu/bioloid/
       children:
       - title: "Beginner Level"
         titlekr: "초급"
@@ -7831,9 +7832,9 @@ ollo_bugkit:
 #Ollo Explorer
 ollo_explorer:
   - title: "Introduction"
-    titlekr: "시작하기"
+    titlekr: "개요"
     url: /edu/ollo/explorer/#introduction
-    urlkr: /edu/ollo/explorer/#시작하기
+    urlkr: /edu/ollo/explorer/#개요
   - title: "Part List"
     titlekr: "부품 리스트"
     url: /edu/ollo/explorer/#part-list
@@ -7859,174 +7860,270 @@ ollo_explorer:
 #Ollo Inventor
 ollo_inventor:
 - title: "Introduction"
+  titlekr: "개요"
   url: /edu/ollo/inventor/#introduction
+  urlkr: /edu/ollo/inventor/#개요
 - title: "Part List"
+  titlekr: "부품 리스트"
   url: /edu/ollo/inventor/#part-list
+  urlkr: /edu/ollo/inventor/#부품-리스트
 - title: "Quick Start"
+  titlekr: "작동하기"
   url: /edu/ollo/inventor/#quick-start
+  urlkr: /edu/ollo/inventor/#작동하기
   children:
-    - title: "ZIGBee Wireless Control"
-      url: /edu/ollo/inventor/#zigbee-wireless-control
+  - title: "ZIGBee Wireless Control"
+    titlekr: "지그비 무선 조종"
+    url: /edu/ollo/inventor/#zigbee-wireless-control
+    urlkr: /edu/ollo/inventor/#지그비-무선-조종
 - title: "Download"
+  titlekr: "다운로드"
   url: /edu/ollo/inventor/#download
+  urlkr: /edu/ollo/inventor/#다운로드
+
+#Ollo 4단계
+ollo-4:
+- titlekr: "개요"
+  urlkr: /edu/ollo/ollo-4/#개요
+- titlekr: "부품 리스트"
+  urlkr: /edu/ollo/ollo-4/#부품-리스트
+- titlekr: "작동하기"
+  urlkr: /edu/ollo/ollo-4/#작동하기
+  children:
+  - titlekr: "지그비 무선 조종"
+    urlkr: /edu/ollo/ollo-4/#지그비-무선-조종
+- titlekr: "다운로드"
+  urlkr: /edu/ollo/ollo-4/#다운로드
 
 #DreamI Level1 sidebar
 dream1-1:
-  - titlekr: "개요"
-    urlkr: /edu/dream/dream1-1/#개요
-  - titlekr: "부품 리스트"
-    urlkr: /edu/dream/dream1-1/#부품-리스트
+- titlekr: "개요"
+  urlkr: /edu/dream/dream1-1/#개요
+- titlekr: "부품 리스트"
+  urlkr: /edu/dream/dream1-1/#부품-리스트
 
 #DreamI Level2 sidebar
 dream1-2:
-  - title: "Introduction"
-    titlekr: "개요"
-    url: /edu/dream/dream1-2/#introduction
-    urlkr: /edu/dream/dream1-2/#개요
-  - title: "Part List"
-    titlekr: "부품 리스트"
-    url: /edu/dream/dream1-2/#part-list
-    urlkr: /edu/dream/dream1-2/#부품-리스트
-  - title: "Quick Start"
-    titlekr: "작동하기"
-    url: /edu/dream/dream1-2/#quick-start
-    urlkr: /edu/dream/dream1-2/#작동하기
-    children:
-      - title: "How to Play"
-        titlekr: "작동방법"
-        url: /edu/dream/dream1-2/#how-to-play
-        urlkr: /edu/dream/dream1-2/#작동방법
-      - title: "Select Program"
-        titlekr: "프로그램 선택방법"
-        url: /edu/dream/dream1-2/#select-program
-        urlkr: /edu/dream/dream1-2/#프로그램-선택방법
-  - title: "Examples"
-    titlekr: "교안예제"
-    url: /edu/dream/dream1-2/#examples
-    urlkr: /edu/dream/dream1-2/#교안예제
+- title: "Introduction"
+  titlekr: "개요"
+  url: /edu/dream/dream1-2/#introduction
+  urlkr: /edu/dream/dream1-2/#개요
+- title: "Part List"
+  titlekr: "부품 리스트"
+  url: /edu/dream/dream1-2/#part-list
+  urlkr: /edu/dream/dream1-2/#부품-리스트
+- title: "Quick Start"
+  titlekr: "작동하기"
+  url: /edu/dream/dream1-2/#quick-start
+  urlkr: /edu/dream/dream1-2/#작동하기
+  children:
+  - title: "How to Play"
+    titlekr: "작동방법"
+    url: /edu/dream/dream1-2/#how-to-play
+    urlkr: /edu/dream/dream1-2/#작동방법
+  - title: "Select Program"
+    titlekr: "프로그램 선택방법"
+    url: /edu/dream/dream1-2/#select-program
+    urlkr: /edu/dream/dream1-2/#프로그램-선택방법
+- title: "Examples"
+  titlekr: "교안예제"
+  url: /edu/dream/dream1-2/#examples
+  urlkr: /edu/dream/dream1-2/#교안예제
 
 #DreamI Level3 sidebar
 dream1-3:
-  - title: "Introduction"
-    titlekr: "개요"
-    url: /edu/dream/dream1-3/#introduction
-    urlkr: /edu/dream/dream1-3/#개요
-  - title: "Part List"
-    titlekr: "부품 리스트"
-    url: /edu/dream/dream1-3/#part-list
-    urlkr: /edu/dream/dream1-3/#부품-리스트
-  - title: "Examples"
-    titlekr: "교안예제"
-    url: /edu/dream/dream1-3/#examples
-    urlkr: /edu/dream/dream1-3/#교안예제
+- title: "Introduction"
+  titlekr: "개요"
+  url: /edu/dream/dream1-3/#introduction
+  urlkr: /edu/dream/dream1-3/#개요
+- title: "Part List"
+  titlekr: "부품 리스트"
+  url: /edu/dream/dream1-3/#part-list
+  urlkr: /edu/dream/dream1-3/#부품-리스트
+- title: "Examples"
+  titlekr: "교안예제"
+  url: /edu/dream/dream1-3/#examples
+  urlkr: /edu/dream/dream1-3/#교안예제
 
 #DreamI Level4 sidebar
 dream1-4:
-  - title: "Introduction"
-    titlekr: "개요"
-    url: /edu/dream/dream1-4/#introduction
-    urlkr: /edu/dream/dream1-4/#개요
-  - title: "Part List"
-    titlekr: "부품 리스트"
-    url: /edu/dream/dream1-4/#part-list
-    urlkr: /edu/dream/dream1-4/#부품-리스트
-  - title: "Examples"
-    titlekr: "교안예제"
-    url: /edu/dream/dream1-4/#examples
-    urlkr: /edu/dream/dream1-4/#교안예제
+- title: "Introduction"
+  titlekr: "개요"
+  url: /edu/dream/dream1-4/#introduction
+  urlkr: /edu/dream/dream1-4/#개요
+- title: "Part List"
+  titlekr: "부품 리스트"
+  url: /edu/dream/dream1-4/#part-list
+  urlkr: /edu/dream/dream1-4/#부품-리스트
+- title: "Examples"
+  titlekr: "교안예제"
+  url: /edu/dream/dream1-4/#examples
+  urlkr: /edu/dream/dream1-4/#교안예제
 
 #Dream Set A sidebar
 dream-a:
-  - title: "Introduction"
-    url: /edu/dream/dream-a/#introduction
-  - title: "Part List"
-    url: /edu/dream/dream-a/#part-list
-  - title: "Quick Start"
-    url: /edu/dream/dream-a/#quick-start
-    children:
-      - title: "How to Play"
-        url: /edu/dream/dream-a/#how-to-play
-      - title: "Select Program"
-        url: /edu/dream/dream-a/#select-program
-  - title: "Examples"
-    url: /edu/dream/dream-a/#examples
+- title: "Introduction"
+  url: /edu/dream/dream-a/#introduction
+- title: "Part List"
+  url: /edu/dream/dream-a/#part-list
+- title: "Quick Start"
+  url: /edu/dream/dream-a/#quick-start
+  children:
+  - title: "How to Play"
+    url: /edu/dream/dream-a/#how-to-play
+  - title: "Select Program"
+    url: /edu/dream/dream-a/#select-program
+- title: "Examples"
+  url: /edu/dream/dream-a/#examples
 
 #Dream Set B sidebar
 dream-b:
-  - title: "Introduction"
-    url: /edu/dream/dream-b/#introduction
-  - title: "Part List"
-    url: /edu/dream/dream-b/#part-list
-  - title: "Examples"
-    url: /edu/dream/dream-b/#examples
+- title: "Introduction"
+  url: /edu/dream/dream-b/#introduction
+- title: "Part List"
+  url: /edu/dream/dream-b/#part-list
+- title: "Examples"
+  url: /edu/dream/dream-b/#examples
 
 dream2-1:
-  - titlekr: "개요"
-    urlkr: /edu/dream/dream2-1/#개요
-  - titlekr: "부품 리스트"
-    urlkr: /edu/dream/dream2-1/#부품-리스트
+- titlekr: "개요"
+  urlkr: /edu/dream/dream2-1/#개요
+- titlekr: "부품 리스트"
+  urlkr: /edu/dream/dream2-1/#부품-리스트
 
 dream2-2:
-  - titlekr: "개요"
-    urlkr: /edu/dream/dream2-2/#개요
-  - titlekr: "부품 리스트"
-    urlkr: /edu/dream/dream2-2/#부품-리스트
-  - titlekr: "작동하기"
-    urlkr: /edu/dream/dream2-2/#작동하기
-    children:
-    - titlekr: "작동방법"
-      urlkr: /edu/dream/dream2-2/#작동방법
-    - titlekr: "프로그램 선택 방법"
-      urlkr: /edu/dream/dream2-2/#프로그램-선택-방법
-  - titlekr: "교안예제"
-    urlkr: /edu/dream/dream2-2/#교안예제
-    children:
-    - titlekr: "통합 예제 프로그램"
-      urlkr: /edu/dream/dream2-2/#통합-예제-프로그램
-    - titlekr: "단원별 예제 프로그램"
-      urlkr: /edu/dream/dream2-2/#단원별-예제-프로그램
+- titlekr: "개요"
+  urlkr: /edu/dream/dream2-2/#개요
+- titlekr: "부품 리스트"
+  urlkr: /edu/dream/dream2-2/#부품-리스트
+- titlekr: "작동하기"
+  urlkr: /edu/dream/dream2-2/#작동하기
+  children:
+  - titlekr: "작동방법"
+    urlkr: /edu/dream/dream2-2/#작동방법
+  - titlekr: "프로그램 선택 방법"
+    urlkr: /edu/dream/dream2-2/#프로그램-선택-방법
+- titlekr: "교안예제"
+  urlkr: /edu/dream/dream2-2/#교안예제
+  children:
+  - titlekr: "통합 예제 프로그램"
+    urlkr: /edu/dream/dream2-2/#통합-예제-프로그램
+  - titlekr: "단원별 예제 프로그램"
+    urlkr: /edu/dream/dream2-2/#단원별-예제-프로그램
 
 dream2-3:
-  - titlekr: "개요"
-    urlkr: /edu/dream/dream2-3/#개요
-  - titlekr: "부품 리스트"
-    urlkr: /edu/dream/dream2-3/#부품-리스트
-  - titlekr: "교안예제"
-    urlkr: /edu/dream/dream2-3/#교안예제
+- titlekr: "개요"
+  urlkr: /edu/dream/dream2-3/#개요
+- titlekr: "부품 리스트"
+  urlkr: /edu/dream/dream2-3/#부품-리스트
+- titlekr: "교안예제"
+  urlkr: /edu/dream/dream2-3/#교안예제
 
 dream2-4:
-  - titlekr: "개요"
-    urlkr: /edu/dream/dream2-4/#개요
-  - titlekr: "부품 리스트"
-    urlkr: /edu/dream/dream2-4/#부품-리스트
-  - titlekr: "교안예제"
-    urlkr: /edu/dream/dream2-4/#교안예제
+- titlekr: "개요"
+  urlkr: /edu/dream/dream2-4/#개요
+- titlekr: "부품 리스트"
+  urlkr: /edu/dream/dream2-4/#부품-리스트
+- titlekr: "교안예제"
+  urlkr: /edu/dream/dream2-4/#교안예제
 
 dream2-5:
-  - titlekr: "개요"
-    urlkr: /edu/dream/dream2-5/#개요
-  - titlekr: "부품 리스트"
-    urlkr: /edu/dream/dream2-5/#부품-리스트
-  - titlekr: "교안예제"
-    urlkr: /edu/dream/dream2-5/#교안예제
+- titlekr: "개요"
+  urlkr: /edu/dream/dream2-5/#개요
+- titlekr: "부품 리스트"
+  urlkr: /edu/dream/dream2-5/#부품-리스트
+- titlekr: "교안예제"
+  urlkr: /edu/dream/dream2-5/#교안예제
 
-#SmartIII Level2 sidebar
+smart1-1:
+- titlekr: "개요"
+  urlkr: /edu/smart/smart1-1/#개요
+- titlekr: "부품 리스트"
+  urlkr: /edu/smart/smart1-1/#부품-리스트
+- titlekr: "작동하기"
+  urlkr: /edu/smart/smart1-1/#작동하기
+- titlekr: "교안예제"
+  urlkr: /edu/smart/smart1-1/#교안예제
+
+smart1-2:
+- titlekr: "개요"
+  urlkr: /edu/smart/smart1-2/#개요
+- titlekr: "부품 리스트"
+  urlkr: /edu/smart/smart1-2/#부품-리스트
+- titlekr: "작동하기"
+  urlkr: /edu/smart/smart1-2/#작동하기
+- titlekr: "교안예제"
+  urlkr: /edu/smart/smart1-2/#교안예제
+
+smart1-3:
+- titlekr: "개요"
+  urlkr: /edu/smart/smart1-3/#개요
+- titlekr: "부품 리스트"
+  urlkr: /edu/smart/smart1-3/#부품-리스트
+- titlekr: "작동하기"
+  urlkr: /edu/smart/smart1-3/#작동하기
+- titlekr: "교안예제"
+  urlkr: /edu/smart/smart1-3/#교안예제
+
+smart2-1:
+- titlekr: "개요"
+  urlkr: /edu/smart/smart2-1/#개요
+- titlekr: "부품 리스트"
+  urlkr: /edu/smart/smart2-1/#부품-리스트
+- titlekr: "작동하기"
+  urlkr: /edu/smart/smart2-1/#작동하기
+- titlekr: "교안예제"
+  urlkr: /edu/smart/smart2-1/#교안예제
+  
+smart2-2:
+- titlekr: "개요"
+  urlkr: /edu/smart/smart2-2/#개요
+- titlekr: "부품 리스트"
+  urlkr: /edu/smart/smart2-2/#부품-리스트
+- titlekr: "작동하기"
+  urlkr: /edu/smart/smart2-2/#작동하기
+- titlekr: "교안예제"
+  urlkr: /edu/smart/smart2-2/#교안예제
+
+smart3-1:
+- titlekr: "개요"
+  urlkr: /edu/smart/smart3-1/#개요
+- titlekr: "부품 리스트"
+  urlkr: /edu/smart/smart3-1/#부품-리스트
+- titlekr: "작동하기"
+  urlkr: /edu/smart/smart3-1/#작동하기
+- titlekr: "교안예제"
+  urlkr: /edu/smart/smart3-1/#교안예제
+
 smart3-2:
-  - titlekr: "부품 목록"
-    urlkr: /edu/smart/smart3-2/#부품-목록
-  - titlekr: "작동하기"
-    urlkr: /edu/smart/smart3-2/#작동하기
-    children:
-      - titlekr: "R+ Smart 3 설치"
-        urlkr: /edu/smart/smart3-2/#r-smartiii-설치하기
-      - titlekr: "R+ m.Task 2.0 설치"
-        urlkr: /edu/smart/smart3-2/#r-mtask-20-설치하기
-      - titlekr: "모션파일 다운로드"
-        urlkr: /edu/smart/smart3-2/#모션파일-다운로드
-      - titlekr: "블루투스 연결"
-        urlkr: /edu/smart/smart3-2/#블루투스-연결하기
-  - titlekr: "교안예제"
-    urlkr: /edu/smart/smart3-2/#교안예제
+- titlekr: "개요"
+  urlkr: /edu/smart/smart3-2/#개요
+- titlekr: "부품 목록"
+  urlkr: /edu/smart/smart3-2/#부품-목록
+- titlekr: "작동하기"
+  urlkr: /edu/smart/smart3-2/#작동하기
+- titlekr: "교안예제"
+  urlkr: /edu/smart/smart3-2/#교안예제
+
+smart3-3:
+- titlekr: "개요"
+  urlkr: /edu/smart/smart3-3/#개요
+- titlekr: "부품 목록"
+  urlkr: /edu/smart/smart3-3/#부품-목록
+- titlekr: "작동하기"
+  urlkr: /edu/smart/smart3-3/#작동하기
+- titlekr: "교안예제"
+  urlkr: /edu/smart/smart3-3/#교안예제
+
+smart3-4:
+- titlekr: "개요"
+  urlkr: /edu/smart/smart3-4/#개요
+- titlekr: "부품 목록"
+  urlkr: /edu/smart/smart3-4/#부품-목록
+- titlekr: "작동하기"
+  urlkr: /edu/smart/smart3-4/#작동하기
+- titlekr: "교안예제"
+  urlkr: /edu/smart/smart3-4/#교안예제
 
 iot-1:
   - titlekr: "개요"
@@ -9098,27 +9195,27 @@ thormang3:
     - title: "MPC Packages"
       url: /platform/thormang3/thormang3_ros_packages/#mpc-packages
       children:
-      - title: "Manager"
+      - title: "thormang3_manager"
         url: /platform/thormang3/thormang3_ros_packages/#thormang3_manager
-      - title: "Kinematics & Dynamics"
+      - title: "thormang3_kinematics_dynamics"
         url: /platform/thormang3/thormang3_ros_packages/#thormang3_kinematics_dynamics
-      - title: "Action Module"
+      - title: "thormang3_action_module"
         url: /platform/thormang3/thormang3_ros_packages/#thormang3_action_module
-      - title: "Base Module"
+      - title: thormang3_base_module"
         url: /platform/thormang3/thormang3_ros_packages/#thormang3_base_module
-      - title: "Manipulation Module"
+      - title: "thormang3_manipulation_module"
         url: /platform/thormang3/thormang3_ros_packages/#thormang3_manipulation_module
-      - title: "Walking Module"
+      - title: "thormang3_walking_module"
         url: /platform/thormang3/thormang3_ros_packages/#thormang3_walking_module
-      - title: "Head Control Module"
+      - title: "thormang3_head_control_module"
         url: /platform/thormang3/thormang3_ros_packages/#thormang3_head_control_module
-      - title: "FT Sensor"
+      - title: "ati_ft_sensor"
         url: /platform/thormang3/thormang3_ros_packages/#ati_ft_sensor
-      - title: "Feet FT Module"
+      - title: "thormang3_feet_ft_module"
         url: /platform/thormang3/thormang3_ros_packages/#thormang3_feet_ft_module
-      - title: "Balance Control"
+      - title: "thormang3_balance_control"
         url: /platform/thormang3/thormang3_ros_packages/#thormang3_balance_control
-      - title: "IMU"
+      - title: "imu-3dm-gx4"
         url: /platform/thormang3/thormang3_ros_packages/#imu-3dm-gx4
     - title: "PPC Packages"
       url: /platform/thormang3/thormang3_ros_packages/#ppc-packages
@@ -10758,12 +10855,21 @@ dynamixel_wizard:
 
 #Task Code Download sidebar
 download_task_code:
-  - title: "Preparation"
-    url: /docs/en/faq/download_task_code/#preparation
-  - title: "Download"
-    url: /docs/en/faq/download_task_code/#download
-  - title: "Videos"
-    url: /docs/en/faq/download_task_code/#videos
+- title: "Download Task Code"
+  titlekr: "태스크 코드 다운로드"
+  url: /faq/download_task_code/#download-task-code
+  urlkr: /faq/download_task_code/#태스크-코드-다운로드
+  children:
+  - title: "CM-5"
+    titlekr: "CM-5"
+    url: /faq/download_task_code/#cm-5
+  - title: "CM-100"
+    titlekr: "CM-100"
+    url: /faq/download_task_code/#cm-100
+- title: "Videos"
+  titlekr: "동영상"
+  url: /faq/download_task_code/#videos
+  urlkr: /faq/download_task_code/#동영상
 
 #R+ Manager 2.0 sidebar
 rplusmanager2:
@@ -12964,6 +13070,33 @@ opencr10:
     - title: "Install Windows Driver"
       url: /parts/controller/opencr10/#install-windows-driver
 
+opencm7:
+  - titlekr: "개요"
+    urlkr: /parts/controller/opencm7/#개요
+  - titlekr: "주요 사양"
+    urlkr: /parts/controller/opencm7/#주요-사양
+  - titlekr: "각 부 명칭"
+    urlkr: /parts/controller/opencm7/#각-부-명칭
+  - titlekr: "전원 연결"
+    urlkr: /parts/controller/opencm7/#전원-연결
+  - titlekr: "작동 방법"
+    urlkr: /parts/controller/opencm7/#작동-방법
+  - titlekr: "무선 통신 모듈 연결하기"
+    urlkr: /parts/controller/opencm7/#무선-통신-모듈-연결하기
+  - titlekr: "스마트폰 연결"
+    urlkr: /parts/controller/opencm7/#스마트폰-연결
+  - titlekr: "PC 연결"
+    urlkr: /parts/controller/opencm7/#pc-연결
+  - titlekr: "컨트롤 테이블"
+    urlkr: /parts/controller/opencm7/#컨트롤-테이블
+    children:
+    - titlekr: "EEPROM 영역"
+      urlkr: /parts/controller/opencm7/#eeprom-영역
+    - titlekr: "RAM 영역"
+      urlkr: /parts/controller/opencm7/#ram-영역
+    - titlekr: "Address 기능 설명"
+      urlkr: /parts/controller/opencm7/#address-기능-설명
+
 rc-100:
   - title: "Introduction"
     titlekr: "개요"
@@ -13017,103 +13150,191 @@ rc-100:
 #ZIG-100/110 sidebar
 zig-110:
   - title: "Introduction"
+    titlekr: "개요"
     url: /parts/communication/zig-110/#introduction
+    urlkr: /parts/communication/zig-110/#개요
   - title: "Specifications"
+    titlekr: "제품 사양"
     url: /parts/communication/zig-110/#specifications
+    urlkr: /parts/communication/zig-110/#제품-사양
   - title: "How to Use"
+    titlekr: "사용 방법"
     url: /parts/communication/zig-110/#how-to-use
+    urlkr: /parts/communication/zig-110/#사용-방법
   - title: "Communication Mode"
+    titlekr: "통신 모드"
     url: /parts/communication/zig-110/#communication-mode
+    urlkr: /parts/communication/zig-110/#통신-모드
   - title: "Pinout"
+    titlekr: "핀 배열"
     url: /parts/communication/zig-110/#pinout
+    urlkr: /parts/communication/zig-110/#핀-배열
   - title: "Tutorials"
+    titlekr: "활용 방법"
     url: /parts/communication/zig-110/#tutorials
+    urlkr: /parts/communication/zig-110/#활용-방법
 
 #BT-100/110 sidebar
 bt-110:
   - title: "Introduction"
+    titlekr: "개요"
     url: /parts/communication/bt-110/#introduction
+    urlkr: /parts/communication/bt-110/#개요
   - title: "Specifications"
+    titlekr: "제품 사양"
     url: /parts/communication/bt-110/#specifications
+    urlkr: /parts/communication/bt-110/#제품-사양
   - title: "Pinout"
+    titlekr: "핀 배열"
     url: /parts/communication/bt-110/#pinout
+    urlkr: /parts/communication/bt-110/#핀-배열
 
 #BT-210 sidebar
 bt-210:
   - title: "Introduction"
+    titlekr: "개요"
     url: /parts/communication/bt-210/#introduction
+    urlkr: /parts/communication/bt-210/#개요
   - title: "Specifications"
+    titlekr: "제품 사양"
     url: /parts/communication/bt-210/#specifications
+    urlkr: /parts/communication/bt-210/#제품-사양
   - title: "Communication Mode"
+    titlekr: "통신 모드"
     url: /parts/communication/bt-210/#communication-mode
+    urlkr: /parts/communication/bt-210/#통신-모드
+  - title: "BT-210 Setting"
+    titlekr: "BT-210 설정하기"
+    url: /parts/communication/bt-210/#bt-210-setting
+    urlkr: /parts/communication/bt-210/#bt-210-설정하기
+  - title: "AT Commands"
+    titlekr: "AT 명령어"
+    url: /parts/communication/bt-210/#at-commands
+    urlkr: /parts/communication/bt-210/#at-명령어
   - title: "Pinout"
+    titlekr: "핀 배열"
     url: /parts/communication/bt-210/#pinout
+    urlkr: /parts/communication/bt-210/#핀-배열
 
 #BT-410 sidebar
 bt-410:
   - title: "Introduction"
+    titlekr: "개요"
     url: /parts/communication/bt-410/#introduction
+    urlkr: /parts/communication/bt-410/#개요
   - title: "Specifications"
+    titlekr: "제품 사양"
     url: /parts/communication/bt-410/#specifications
+    urlkr: /parts/communication/bt-410/#제품-사양
   - title: "Compatibility"
+    titlekr: "호환성"
     url: /parts/communication/bt-410/#compatibility
+    urlkr: /parts/communication/bt-410/#호환성
   - title: "Communication Mode"
+    titlekr: "통신 모드"
     url: /parts/communication/bt-410/#communication-mode
+    urlkr: /parts/communication/bt-410/#통신-모드
   - title: "BT-410 Setting"
+    titlekr: "BT-410 설정하기"
     url: /parts/communication/bt-410/#bt-410-setting
+    urlkr: /parts/communication/bt-410/#bt-410-설정하기
   - title: "AT Commands"
+    titlekr: "AT 명령어"
     url: /parts/communication/bt-410/#at-commands
+    urlkr: /parts/communication/bt-410/#at-명령어
   - title: "Pinout"
+    titlekr: "핀 배열"
     url: /parts/communication/bt-410/#pinout
+    urlkr: /parts/communication/bt-410/#핀-배열
 
 #BT-410 Dongle sidebar
 bt-410-dongle:
   - title: "Introduction"
+    titlekr: "개요"
     url: /parts/communication/bt-410-dongle/#introduction
+    urlkr: /parts/communication/bt-410-dongle/#개요
   - title: "Specifications"
+    titlekr: "제품 사양"
     url: /parts/communication/bt-410-dongle/#specifications
+    urlkr: /parts/communication/bt-410-dongle/#제품-사양
   - title: "Compatibility"
+    titlekr: "호환성"
     url: /parts/communication/bt-410-dongle/#compatibility
+    urlkr: /parts/communication/bt-410-dongle/#호환성
   - title: "Communication Mode"
+    titlekr: "통신 모드"
     url: /parts/communication/bt-410-dongle/#communication-mode
+    urlkr: /parts/communication/bt-410-dongle/#통신-모드
   - title: "BT-410 Dongle Setting"
+    titlekr: "BT-410 동글 설정하기"
     url: /parts/communication/bt-410-dongle/#bt-410-dongle-setting
+    urlkr: /parts/communication/bt-410-dongle/#bt-410-동글-설정하기
   - title: "AT Commands"
+    titlekr: "AT 명령어"
     url: /parts/communication/bt-410-dongle/#at-commands
+    urlkr: /parts/communication/bt-410-dongle/#at-명령어
   - title: "Check Driver"
+    titlekr: "드라이버 설치 확인방법"
     url: /parts/communication/bt-410-dongle/#check-driver
+    urlkr: /parts/communication/bt-410-dongle/#드라이버-설치-확인방법
   - title: "Install Driver Manually"
+    titlekr: "드라이버 수동 설치"
     url: /parts/communication/bt-410-dongle/#install-driver-manually
+    urlkr: /parts/communication/bt-410-dongle/#드라이버-수동-설치
 
 #ZIG2Serial sidebar
 zig2serial:
   - title: "Introduction"
+    titlekr: "개요"
     url: /parts/communication/zig2serial/#introduction
+    urlkr: /parts/communication/zig2serial/#개요
   - title: "Specifications"
+    titlekr: "제품 사양"
     url: /parts/communication/zig2serial/#specifications
+    urlkr: /parts/communication/zig2serial/#제품-사양
   - title: "Layout"
+    titlekr: "각 부 명칭"
     url: /parts/communication/zig2serial/#layout
+    urlkr: /parts/communication/zig2serial/#각-부-명칭
   - title: "Pinout"
+    titlekr: "핀 배열"
     url: /parts/communication/zig2serial/#pinout
+    urlkr: /parts/communication/zig2serial/#핀-배열
   - title: "How To Use"
+    titlekr: "사용 방법"
     url: /parts/communication/zig2serial/#how-to-use
+    urlkr: /parts/communication/zig2serial/#사용-방법
   - title: "Tutorials"
+    titlekr: "활용 방법"
     url: /parts/communication/zig2serial/#tutorials
+    urlkr: /parts/communication/zig2serial/#활용-방법
   - title: "Circuit"
+    titlekr: "회로도"
     url: /parts/communication/zig2serial/#circuit
+    urlkr: /parts/communication/zig2serial/#회로도
   - title: "Videos"
+    titlekr: "동영상"
     url: /parts/communication/zig2serial/#videos
+    urlkr: /parts/communication/zig2serial/#동영상
 
 #LM-10 sidebar
 lm-10:
   - title: "Introduction"
+    titlekr: "개요"
     url: /parts/display/lm-10/#introduction
+    urlkr: /parts/display/lm-10/#개요
   - title: "Pinout"
+    titlekr: "핀 배열"
     url: /parts/display/lm-10/#pinout
+    urlkr: /parts/display/lm-10/#핀-배열
   - title: "Tutorials"
+    titlekr: "활용 방법"
     url: /parts/display/lm-10/#tutorials
+    urlkr: /parts/display/lm-10/#활용-방법
   - title: "Videos"
+    titlekr: "동영상"
     url: /parts/display/lm-10/#videos
+    urlkr: /parts/display/lm-10/#동영상
 
 #DMS-80 sidebar
 dms-80:
@@ -13358,124 +13579,199 @@ tms-10:
 #Geared Motor sidebar
 gm-10a:
   - title: "Introduction"
+    titlekr: "개요"
     url: /parts/motor/gm-10a/#introduction
+    urlkr: /parts/motor/gm-10a/#개요
   - title: "Specifications"
+    titlekr: "제품 사양"
     url: /parts/motor/gm-10a/#specifications
+    urlkr: /parts/motor/gm-10a/#제품-사양
   - title: "Pinout"
+    titlekr: "핀 배열"
     url: /parts/motor/gm-10a/#pinout
+    urlkr: /parts/motor/gm-10a/#핀-배열
   - title: "Tutorials"
+    titlekr: "사용 방법"
     url: /parts/motor/gm-10a/#tutorials
+    urlkr: /parts/motor/gm-10a/#사용-방법
   - title: "Videos"
+    titlekr: "동영상"
     url: /parts/motor/gm-10a/#videos
+    urlkr: /parts/motor/gm-10a/#동영상
 
 #High Speed Geared Motor sidebar
 h_speed_geared_motor:
   - title: "Introduction"
+    titlekr: "개요"
     url: /parts/motor/h_speed_geared_motor/#introduction
+    urlkr: /parts/motor/h_speed_geared_motor/#개요
   - title: "Specifications"
+    titlekr: "제품 사양"
     url: /parts/motor/h_speed_geared_motor/#specifications
+    urlkr: /parts/motor/h_speed_geared_motor/#제품-사양
   - title: "Pinout"
+    titlekr: "핀 배열"
     url: /parts/motor/h_speed_geared_motor/#pinout
+    urlkr: /parts/motor/h_speed_geared_motor/#핀-배열
   - title: "Tutorials"
+    titlekr: "사용 방법"
     url: /parts/motor/h_speed_geared_motor/#tutorials
+    urlkr: /parts/motor/h_speed_geared_motor/#사용-방법
   - title: "Videos"
+    titlekr: "동영상"
     url: /parts/motor/h_speed_geared_motor/#videos
+    urlkr: /parts/motor/h_speed_geared_motor/#동영상
 
 #Low Speed Geared Motor sidebar
 l_speed_geared_motor:
   - title: "Introduction"
+    titlekr: "개요"
     url: /parts/motor/l_speed_geared_motor/#introduction
+    urlkr: /parts/motor/l_speed_geared_motor/#개요
   - title: "Specifications"
+    titlekr: "제품 사양"
     url: /parts/motor/l_speed_geared_motor/#specifications
+    urlkr: /parts/motor/l_speed_geared_motor/#제품-사양
   - title: "Pinout"
+    titlekr: "핀 배열"
     url: /parts/motor/l_speed_geared_motor/#pinout
+    urlkr: /parts/motor/l_speed_geared_motor/#핀-배열
   - title: "Tutorials"
+    titlekr: "사용 방법"
     url: /parts/motor/l_speed_geared_motor/#tutorials
+    urlkr: /parts/motor/l_speed_geared_motor/#사용-방법
   - title: "Videos"
+    titlekr: "동영상"
     url: /parts/motor/l_speed_geared_motor/#videos
+    urlkr: /parts/motor/l_speed_geared_motor/#동영상
 
 #Servo Motor sidebar
 servo_motor:
   - title: "Introduction"
+    titlekr: "개요"
     url: /parts/motor/servo_motor/#introduction
+    urlkr: /parts/motor/servo_motor/#개요
   - title: "Specifications"
+    titlekr: "제품 사양"
     url: /parts/motor/servo_motor/#specifications
+    urlkr: /parts/motor/servo_motor/#제품-사양
   - title: "Pinout"
+    titlekr: "핀 배열"
     url: /parts/motor/servo_motor/#pinout
+    urlkr: /parts/motor/servo_motor/#핀-배열
   - title: "Tutorials"
+    titlekr: "사용 방법"
     url: /parts/motor/servo_motor/#tutorials
+    urlkr: /parts/motor/servo_motor/#사용-방법
   - title: "Videos"
+    titlekr: "동영상"
     url: /parts/motor/servo_motor/#videos
+    urlkr: /parts/motor/servo_motor/#동영상
 
 #LN-101 sidebar
 ln-101:
   - title: "Introduction"
+    titlekr: "개요"
     url: /parts/interface/ln-101/#introduction
+    urlkr: /parts/interface/ln-101/#개요
   - title: "How to Use"
     url: /parts/interface/ln-101/#how-to-use
   - title: "Check Driver"
+    titlekr: "드라이버 설치 확인"
     url: /parts/interface/ln-101/#check-driver
+    urlkr: /parts/interface/ln-101/#드라이버-설치-확인
   - title: "Install Driver Manually"
+    titlekr: "드라이버 수동 설치"
     url: /parts/interface/ln-101/#install-driver-manually
+    urlkr: /parts/interface/ln-101/#드라이버-수동-설치
   - title: "Videos"
+    titlekr: "동영상"
     url: /parts/interface/ln-101/#videos
+    urlkr: /parts/interface/ln-101/#동영상
 
 #USB2Dynamixel sidebar
 usb2dynamixel:
   - title: "Introduction"
+    titlekr: "개요"
     url: /parts/interface/usb2dynamixel/#introduction
+    urlkr: /parts/interface/usb2dynamixel/#개요
   - title: "How to Use"
     url: /parts/interface/usb2dynamixel/#how-to-use
   - title: "Layout"
+    titlekr: "각 부 명칭"
     url: /parts/interface/usb2dynamixel/#layout
+    urlkr: /parts/interface/usb2dynamixel/#각-부-명칭
   - title: "Select Communication Mode"
+    titlekr: "통신모드 선택 방법"
     url: /parts/interface/usb2dynamixel/#select-communication-mode
+    urlkr: /parts/interface/usb2dynamixel/#통신모드-선택-방법
   - title: "Tutorials"
+    titlekr: "사용 방법"
     url: /parts/interface/usb2dynamixel/#tutorials
+    urlkr: /parts/interface/usb2dynamixel/#사용-방법
   - title: "Supply Power"
+    titlekr: "전원 공급"
     url: /parts/interface/usb2dynamixel/#supply-power
+    urlkr: /parts/interface/usb2dynamixel/#전원-공급
   - title: "Check Driver"
+    titlekr: "드라이버 설치 확인"
     url: /parts/interface/usb2dynamixel/#check-driver
+    urlkr: /parts/interface/usb2dynamixel/#드라이버-설치-확인
   - title: "Install Driver Manually"
+    titlekr: "드라이버 수동 설치"
     url: /parts/interface/usb2dynamixel/#install-driver-manually
+    urlkr: /parts/interface/usb2dynamixel/#드라이버-수동-설치
   - title: "Videos"
+    titlekr: "동영상"
     url: /parts/interface/usb2dynamixel/#videos
+    urlkr: /parts/interface/usb2dynamixel/#동영상
 
 #U2D2 sidebar
 u2d2:
   - title: "Introduction"
+    titlekr: "개요"
     url: /parts/interface/u2d2/#introduction
+    urlkr: /parts/interface/u2d2/#개요
   - title: "How to Use"
+    titlekr: "사용 방법"
     url: /parts/interface/u2d2/#how-to-use
+    urlkr: /parts/interface/u2d2/#사용-방법
   - title: "Specifications"
+    titlekr: "제품 사양"
     url: /parts/interface/u2d2/#specifications
+    urlkr: /parts/interface/u2d2/#제품-사양
   - title: "Layout"
+    titlekr: "각 부 명칭"
     url: /parts/interface/u2d2/#layout
+    urlkr: /parts/interface/u2d2/#각-부-명칭
   - title: "Baudrate"
+    titlekr: "통신속도"
     url: /parts/interface/u2d2/#baudrate
+    urlkr: /parts/interface/u2d2/#통신속도
   - title: "Supply Power"
+    titlekr: "전원 공급"
     url: /parts/interface/u2d2/#supply-power
+    urlkr: /parts/interface/u2d2/#전원-공급
   - title: "Pinouts"
+    titlekr: "핀 배열"
     url: /parts/interface/u2d2/#pinouts
+    urlkr: /parts/interface/u2d2/#핀-배열
   - title: "Data Flow Control"
+    titlekr: "데이터 통신방법"
     url: /parts/interface/u2d2/#data-flow-control
+    urlkr: /parts/interface/u2d2/#데이터-통신방법
   - title: "Software"
+    titlekr: "소프트웨어와 활용"
     url: /parts/interface/u2d2/#software
+    urlkr: /parts/interface/u2d2/#소프트웨어와-활용
   - title: "Additional Features"
+    titlekr: "추가정보"
     url: /parts/interface/u2d2/#additional-features
+    urlkr: /parts/interface/u2d2/#추가정보
 
 #FAQ sidebar
 faq:
-  - title: "DYNAMIXEL"
-    url:
-  - title: "Platform"
-    url:
-  - title: "Eductation"
-    url:
-  - title: "Software"
-    url:
-  - title: "Parts"
-    url:
+
 
 contents-guide:
   - title: "Contents Guide"
