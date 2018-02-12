@@ -15,13 +15,40 @@ sidebar:
 
 # [Appendix #LDS-01](#appendix-lds01)
 
-![](/assets/images/platform/turtlebot3/appendix_lds/lds.png)
-
 ## [Overview](#overview)
 
-360 Laser Distance Sensor LDS-01 is used for both TurtleBot3 Burger and TurtleBot3 Waffle. The LDS-01(LASER Distance Sensor) is a sensor which collects a set of distance data and send them to the host for the Simultaneous Localization and Mapping (SLAM) technique.
+![](/assets/images/platform/turtlebot3/appendix_lds/lds.png)
+
+- 360 Laser Distance Sensor LDS-01 is a 2D laser scanner capable of sensing 360 degrees that collects a set of data around the robot to use for SLAM (Simultaneous Localization and Mapping) and Navigation.
+- The LDS-01 is used for TurtleBot3 Burger, Waffle and Waffle Pi models.
+- It supports USB interface(USB2LDS) and is easy to install on a PC.
+- It supports UART interface for embedded baord.
+
+## [Introduction Video](#introduction-video)
+
+[Video #01] How to use the LDS-01
+- 0. Specification
+- 1. ROS
+- 2. Windows, Linux, macOS
+- 3. Embedded Board
+- 4. SLAM and Navigation
+- 5. Self-Parking
+- 6. 3D Sensing
+- 7. for Makers
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/wmZQoTdtioY" frameborder="0" allowfullscreen></iframe>
+
+[Video #02] Laser Distance Sensor (LDS) Example.
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/9oic8aT3wIc" frameborder="0" allowfullscreen></iframe>
+
+[Video #03] ROS Hector SLAM demo using only a 360 Laser Distance Sensor LDS-01 made by HLDS (Hitachi-LG Data Storage).
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/s7CflpA6TOo" frameborder="0" allowfullscreen></iframe>
+
+[Video #04] ROS Gmapping and Cartographer SLAM demo using TurtleBot3 and 360 Laser Distance Sensor LDS-01.
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/lkW4-dG2BCY" frameborder="0" allowfullscreen></iframe>
 
 ## [Specifications](#specifications)
 
@@ -57,7 +84,7 @@ sidebar:
 
 The following link contains information about basic performance, measurement performance, mechanism layout, optical path, data information, pin description and commands.
 
-Here is the detail specification document : [pdf](/assets/docs/LDS_Basic_Specification.pdf)
+Here is the detail specification document : [PDF](/assets/docs/LDS_Basic_Specification.pdf)
 
 **Note :** The 360 Laser Distance Sensor LDS-01 for TurtleBot3 uses molex 51021-0800 and 53048-0810 instead of the basic housing and connector.
 {: .notice--info}
@@ -65,51 +92,144 @@ Here is the detail specification document : [pdf](/assets/docs/LDS_Basic_Specifi
 - [for LDS] [Molex 51021-0800](http://www.molex.com/pdm_docs/sd/510210800_sd.pdf)
 - [for USB2LDS] [Molex 53048-0810](http://www.molex.com/pdm_docs/sd/530480810_sd.pdf)
 
-
-
 ## [LDS for TurtleBot3](#lds-for-turtlebot3)
 
-The 360 Laser Distance Sensor LDS-01 is used for both TurtleBot3 Burger and TurtleBot3 Waffle.
+The LDS-01 is used for TurtleBot3 Burger, Waffle and Waffle Pi models.
 
 ![](/assets/images/platform/turtlebot3/hardware_setup/turtlebot3_models.png)
 
-## [Introduction Video](#introduction-video)
 
-ROS Hector SLAM demo using only a 360 Laser Distance Sensor LDS-01 made by HLDS (Hitachi-LG Data Storage).
-
-<iframe width="640" height="360" src="https://www.youtube.com/embed/s7CflpA6TOo" frameborder="0" allowfullscreen></iframe>
-
-ROS Gmapping and Cartographer SLAM demo using TurtleBot3 and 360 Laser Distance Sensor LDS-01.
-
-<iframe width="640" height="360" src="https://www.youtube.com/embed/lkW4-dG2BCY" frameborder="0" allowfullscreen></iframe>
-
-## [User Guide](#user-guide)
+## [User Guide (for ROS)](#user-guide-ros)
 
 We are offering [ROS package for LSD](http://wiki.ros.org/hls_lfcd_lds_driver). The hls_lfcd_lds_driver package provides a driver for "HLS(Hitachi-LG Sensor) LFCD LDS(Laser Distance Sensor)".
 
 **Note :** Due to firmware update (after buy it on Oct. 2017), the sensor is running directly when power in on.
 {: .notice--info}
 
-### [Installation](#installation)
+### Installation
 
 ``` bash
 $ sudo apt-get install ros-kinetic-hls-lfcd-lds-driver
 ```
 
-### [Set Permission for HLS-LFCD LDS](#set-permission-for-hlslfcd-lds)
+### Set Permission for LDS-01
 
 ``` bash
 $ sudo chmod a+rw /dev/ttyUSB0
 ```
 
-### [Run hlds_laser_publisher Node](#run-hldslaserpublisher-node)
+### Run hlds_laser_publisher Node
 
 ``` bash
 $ roslaunch hls_lfcd_lds_driver hlds_laser.launch
 ```
 
-### [Run hlds_laser_publisher Node with RViz](#run-hldslaserpublisher-node-with-rviz)
+### Run hlds_laser_publisher Node with RViz
 
 ``` bash
 $ roslaunch hls_lfcd_lds_driver view_hlds_laser.launch
 ```
+
+## [User Guide (for Driver)](#user-guide-driver)
+
+- In addition to ROS, the LDS-01 supports Windows, Linux, and MacOS development environments for general purposes.
+- The software requirement is:
+  - GCC (for Linux and macOS), MinGW (for Windows)
+  - Boost library (Lib for boost system, tested on v1.66.0)
+
+### Download
+
+- Download the LDS-01's driver
+
+``` bash
+$ git clone https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver.git
+```
+
+or you can download directly on web browser at github repository below:
+
+https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver
+
+- Install dependent software and libraries for each development environment
+  - GCC (for Linux and macOS), [MinGW](https://sourceforge.net/projects/mingw/files/) (for Windows)
+  - [Boost library](http://www.boost.org/users/download/)
+
+### Build
+
+``` bash
+$ cd hls_lfcd_lds_driver/applications/lds_driver/
+$ make
+```
+
+The makefile used here is set for Linux. Windows and macOS should be changed according to their development environment.
+
+### Run
+
+``` bash
+$ ./lds_driver
+r[359]=0.438000,r[358]=0.385000,r[357]=0.379000,...
+```
+
+You can see the raw data in the terminal when you run the driver of LDS-01. Please check the source code for details.
+
+## [User Guide (for GUI)](#user-guide-gui)
+
+- We provide a basic GUI tool for visually checking the data of the LDS-01.
+- It supports Linux, Windows, and macOS.
+- The software requirement is:
+  - Qt Creator and Libs (tested on Qt Creator v4.5.0 and Qt Libs v5.10.0)
+  - GCC (for Linux and macOS), MinGW (for Windows), This can be installed together while installing Qt.
+  - Boost library (Lib for boost system, tested on v1.66.0)
+
+### Download
+
+- Download the LDS-01's driver and GUI source code.
+
+``` bash
+$ git clone https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver.git
+```
+
+or you can download directly on web browser at github repository below:
+
+https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver
+
+- Install dependent software and libraries for each development environment
+  - [Qt - Open Source Version](https://www.qt.io/download)
+  - GCC (for Linux and macOS), [MinGW](https://sourceforge.net/projects/mingw/files/) (for Windows)
+  - [Boost library](http://www.boost.org/users/download/)
+
+### Build
+
+- Run the Qt Creator 
+- Open file (<kbd>Ctrl</kbd>-<kbd>O</kbd>) the lds_polar_graph.pro file (hls_lfcd_lds_driver/applications/lds_polar_graph/lds_polar_graph.pro)
+- Change the [input your portname](https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver/blob/cf866c6b80060ab9270a664d665d287afcca2c10/applications/lds_polar_graph/lds_polar_graph.cpp#L47) of source code 
+- Build all (<kbd>Ctrl</kbd>-<kbd>Shift</kbd>-<kbd>B</kbd>)
+
+### Run
+
+- Run the application (<kbd>Ctrl</kbd>-<kbd>R</kbd>)
+
+![](/assets/images/platform/turtlebot3/appendix_lds/lds_gui.png)
+
+## [User Guide (for Embedded Board)](#user-guide-embedded-board)
+
+- We provide a way to connect to an embedded board.
+- The data of the LDS-01 can be used on the embedded board like OpenCR and Arduino, and it can be confirmed on the LCD as a graph like below.
+ 
+### Preparations
+- It does not provide a dedicated interface board, but you can connect it to the power and UART of the embedded board as shown below.
+
+![](/assets/images/platform/turtlebot3/appendix_lds/lds_lines.png)
+
+- OpenCR develops and downloads firmware through the Arduino IDE. Therefore, you must install the Arduino IDE in advance and install the OpenCR board package. Install through the following link document.
+
+  - [Install Arduino IDE and OpenCR](http://emanual.robotis.com/docs/en/parts/controller/opencr10/#arduino-ide)
+
+### Download firmware
+
+1. After connecting USB to PC, select Tools -> Board -> OpenCR Board in Arduino IDE.
+1. Change Tools-> Port to the port to which the board is connected.  
+1. In the Arduino IDE Examples, select the firmware for LDS (File -> Examples -> OpenCR -> Etc -> LDS -> drawLDS).
+1. Click on the icon in the Arduino IDE that displays the red circle to build and download the firmware. When the download is completed, the firmware is automatically executed.
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/7wKyW6yLNSg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+

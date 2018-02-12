@@ -9548,11 +9548,14 @@ turtlebot3:
       url: /platform/turtlebot3/appendix_dynamixel/#overview
     - title: "Specifications"
       url: /platform/turtlebot3/appendix_dynamixel/#specifications
+
   - title: "Appendix #LDS-01"
     url: /platform/turtlebot3/appendix_lds_01/#appendix-lds01
     children:
     - title: "Overview"
       url: /platform/turtlebot3/appendix_lds_01/#overview
+    - title: "Introduction Video"
+      url: /platform/turtlebot3/appendix_lds_01/#introduction-video
     - title: "Specifications"
       url: /platform/turtlebot3/appendix_lds_01/#specifications
       children:
@@ -9564,19 +9567,14 @@ turtlebot3:
       url: /platform/turtlebot3/appendix_lds_01/#detail-specification-document
     - title: "LDS for TurtleBot3"
       url: /platform/turtlebot3/appendix_lds_01/#lds-for-turtlebot3
-    - title: "Introduction Video"
-      url: /platform/turtlebot3/appendix_lds_01/#introduction-video
-    - title: "User Guide"
-      url: /platform/turtlebot3/appendix_lds_01/#user-guide
-      children:
-      - title: "Installation"
-        url: /platform/turtlebot3/appendix_lds_01/#installation
-      - title: "Set Permission for HLS-LFCD LDS"
-        url: /platform/turtlebot3/appendix_lds_01/#set-permission-for-hlslfcd-lds
-      - title: "Run hlds_laser_publisher Node"
-        url: /platform/turtlebot3/appendix_lds_01/#run-hldslaserpublisher-node
-      - title: "Run hlds_laser_publisher Node with RViz"
-        url: /platform/turtlebot3/appendix_lds_01/#run-hldslaserpublisher-node-with-rviz
+    - title: "User Guide (for ROS)"
+      url: /platform/turtlebot3/appendix_lds_01/#user-guide-ros
+    - title: "User Guide (for Driver)"
+      url: /platform/turtlebot3/appendix_lds_01/#user-guide-driver
+    - title: "User Guide (for GUI)"
+      url: /platform/turtlebot3/appendix_lds_01/#user-guide-gui
+    - title: "User Guide (for Embedded Board)"
+      url: /platform/turtlebot3/appendix_lds_01/#user-guide-embedded-board
   - title: "Appendix #RealSense™"
     url: /platform/turtlebot3/appendix_realsense/#appendix-realsense
     children:
