@@ -9609,7 +9609,32 @@ turtlebot3:
     - title: "References"
       url: /platform/turtlebot3/appendix_realsense/#references
   - title: "Appendix #Raspberry Pi Camera"
-    url: /platform/turtlebot3/example/#appendix_raspi_cam
+    url: /platform/turtlebot3/appendix_raspi_cam/#appendix-raspberry-pi-camera
+    children:
+    - title: "Overview"
+      url: /platform/turtlebot3/appendix_raspi_cam/#overview
+    - title: "Specifications"
+      url: /platform/turtlebot3/appendix_raspi_cam/#specifications
+      children:
+      - title: "Hardware Specifications"
+        url: /platform/turtlebot3/appendix_raspi_cam/#hardware-specifications
+      - title: "Hardware features"
+        url: /platform/turtlebot3/appendix_raspi_cam/#hardware-features
+      - title: "Software features"
+        url: /platform/turtlebot3/appendix_raspi_cam/#software-features
+      - title: "Mechanical Drawing"
+        url: /platform/turtlebot3/appendix_raspi_cam/#mechanical-drawing
+    - title: "Raspberry Pi Camera for TurtleBot3"
+      url: /platform/turtlebot3/appendix_raspi_cam/#raspberry-pi-camera-for-turtlebot3
+    - title: "Introduction Video"
+      url: /platform/turtlebot3/appendix_raspi_cam/#introduction-video
+    - title: "User Guide"
+      url: /platform/turtlebot3/appendix_raspi_cam/#user-guide
+      children:
+      - title: "Run raspicam Node"
+        url: /platform/turtlebot3/appendix_raspi_cam/#run-raspicam-node
+    - title: "References"
+      url: /platform/turtlebot3/appendix_raspi_cam/#references
   - title: "Appendix #OpenSource"
     url: /platform/turtlebot3/appendix_opensource/#appendix-opensource
     children:
