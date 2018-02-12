@@ -550,6 +550,9 @@
 <loc>http://localhost:4000/docs/en/faq/download_task_code/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/docs/kr/faq/download_task_code/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/docs/en/edu/dream/dream-a/</loc>
 </url>
 <url>
@@ -658,7 +661,7 @@
 <loc>http://localhost:4000/docs/en/platform/turtlebot3/faq/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/docs/kr/faq</loc>
+<loc>http://localhost:4000/docs/kr/faq/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/docs/en/platform/turtlebot3/features/</loc>
@@ -716,9 +719,6 @@
 </url>
 <url>
 <loc>http://localhost:4000/docs/kr/platform/op2/getting_started/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/docs/kr/platform/op3/getting_started/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/docs/kr/platform/thormang3/getting_started/</loc>
@@ -800,6 +800,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/docs/kr/platform/manipulator_h/introduction/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/docs/kr/platform/op3/introduction/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/docs/en/edu/ollo/inventor/</loc>
@@ -1336,6 +1339,9 @@
 <loc>http://localhost:4000/docs/en/parts/controller/opencr10/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/docs/kr/parts/controller/opencr10/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/docs/en/platform/turtlebot3/opencr1_0_software_setup/</loc>
 </url>
 <url>
@@ -1507,10 +1513,10 @@
 <loc>http://localhost:4000/docs/en/platform/software/robotis_framework/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/docs/en/platform/op3/robotis_ros_modules/</loc>
+<loc>http://localhost:4000/docs/en/platform/op3/robotis_ros_packages/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/docs/en/platform/op3/robotis_ros_packages/</loc>
+<loc>http://localhost:4000/docs/en/platform/op3/robotis_ros_modules/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/docs/en/platform/turtlebot3/rpi3_software_setup/</loc>
@@ -1678,13 +1684,7 @@
 <loc>http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/docs/kr/platform/thormang3/thormang3_operation/</loc>
-</url>
-<url>
 <loc>http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/docs/kr/platform/thormang3/thormang3_ros_packages/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/docs/kr/parts/sensor/tms-10/</loc>
@@ -1715,6 +1715,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/docs/kr/parts/interface/usb2dynamixel/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/docs/en/platform/turtlebot3/video/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/docs/en/popup/visualization_msgs_MarkerArray_msg/</loc>

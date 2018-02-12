@@ -94,6 +94,9 @@ $ roslaunch turtlebot3_bringup turtlebot3_realsense.launch
 $ roslaunch turtlebot3_bringup turtlebot3_core.launch
 ```
 
+**Note :** Before you use Intel® RealSense™, please check related appendix [Intel® RealSense™](http://emanual.robotis.com/docs/en/platform/turtlebot3/appendix_realsense/#installation)
+{: .notice--info}
+
 **Note :** If `lost sync with device` error message is displayed on the terminal window, sensor devices of the TurtleBot3 might not be securely connected.
 {: .notice--info}
 
@@ -118,10 +121,13 @@ $ roslaunch turtlebot3_bringup turtlebot3_robot.launch
 **Tip :** If you want to launch Lidar sensor, Raspberry Pi Camera and core separately, please use below commands.
 
 ``` bash
-$ roslaunch raspicam_node camerav2_1280x960.launch
+$ roslaunch turtlebot3_bringup turtlebot3_rpicamera.launch
 $ roslaunch turtlebot3_bringup turtlebot3_lidar.launch
 $ roslaunch turtlebot3_bringup turtlebot3_core.launch
 ```
+
+**Note :** Before you use Raspberry Pi Camera, please check related appendix [Raspberry Pi Camera](http://emanual.robotis.com/docs/en/platform/turtlebot3/appendix_raspi_cam/#installation)
+{: .notice--info}
 
 **Note :** If `lost sync with device` error message is displayed on the terminal window, sensor devices of the TurtleBot3 might not be securely connected.
 {: .notice--info}

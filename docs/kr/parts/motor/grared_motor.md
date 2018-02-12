@@ -33,7 +33,7 @@ sidebar:
   - 안전장치(클러치) 장착
 
 
-# [핀 배치도](#핀-배치도)
+# [핀 배열](#핀-배열)
 
 ![img](/assets/images/parts/motor/gm-10_pinout.png)
 
