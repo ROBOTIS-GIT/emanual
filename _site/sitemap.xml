@@ -661,7 +661,7 @@
 <loc>http://localhost:4000/docs/en/platform/turtlebot3/faq/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/docs/kr/faq</loc>
+<loc>http://localhost:4000/docs/kr/faq/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/docs/en/platform/turtlebot3/features/</loc>
@@ -1513,10 +1513,10 @@
 <loc>http://localhost:4000/docs/en/platform/software/robotis_framework/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/docs/en/platform/op3/robotis_ros_modules/</loc>
+<loc>http://localhost:4000/docs/en/platform/op3/robotis_ros_packages/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/docs/en/platform/op3/robotis_ros_packages/</loc>
+<loc>http://localhost:4000/docs/en/platform/op3/robotis_ros_modules/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/docs/en/platform/turtlebot3/rpi3_software_setup/</loc>
@@ -1715,6 +1715,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/docs/kr/parts/interface/usb2dynamixel/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/docs/en/platform/turtlebot3/video/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/docs/en/popup/visualization_msgs_MarkerArray_msg/</loc>

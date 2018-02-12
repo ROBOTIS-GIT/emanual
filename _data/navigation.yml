@@ -9195,27 +9195,27 @@ thormang3:
     - title: "MPC Packages"
       url: /platform/thormang3/thormang3_ros_packages/#mpc-packages
       children:
-      - title: "Manager"
+      - title: "thormang3_manager"
         url: /platform/thormang3/thormang3_ros_packages/#thormang3_manager
-      - title: "Kinematics & Dynamics"
+      - title: "thormang3_kinematics_dynamics"
         url: /platform/thormang3/thormang3_ros_packages/#thormang3_kinematics_dynamics
-      - title: "Action Module"
+      - title: "thormang3_action_module"
         url: /platform/thormang3/thormang3_ros_packages/#thormang3_action_module
-      - title: "Base Module"
+      - title: thormang3_base_module"
         url: /platform/thormang3/thormang3_ros_packages/#thormang3_base_module
-      - title: "Manipulation Module"
+      - title: "thormang3_manipulation_module"
         url: /platform/thormang3/thormang3_ros_packages/#thormang3_manipulation_module
-      - title: "Walking Module"
+      - title: "thormang3_walking_module"
         url: /platform/thormang3/thormang3_ros_packages/#thormang3_walking_module
-      - title: "Head Control Module"
+      - title: "thormang3_head_control_module"
         url: /platform/thormang3/thormang3_ros_packages/#thormang3_head_control_module
-      - title: "FT Sensor"
+      - title: "ati_ft_sensor"
         url: /platform/thormang3/thormang3_ros_packages/#ati_ft_sensor
-      - title: "Feet FT Module"
+      - title: "thormang3_feet_ft_module"
         url: /platform/thormang3/thormang3_ros_packages/#thormang3_feet_ft_module
-      - title: "Balance Control"
+      - title: "thormang3_balance_control"
         url: /platform/thormang3/thormang3_ros_packages/#thormang3_balance_control
-      - title: "IMU"
+      - title: "imu-3dm-gx4"
         url: /platform/thormang3/thormang3_ros_packages/#imu-3dm-gx4
     - title: "PPC Packages"
       url: /platform/thormang3/thormang3_ros_packages/#ppc-packages
