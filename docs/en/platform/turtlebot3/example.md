@@ -27,10 +27,11 @@ sidebar:
 **Tip :** The example is supposed to be running on the remote PC. **Follow the instruction on your Remote PC**.
 {: .notice--info}
 
-<iframe width="1280" height="720" src="https://www.youtube.com/embed/Xg1pKFQY5p4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Xg1pKFQY5p4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 
-## [rqt_graph](#rqt_graph)
+## [rqt common plugin](#rqt-common-plugin)
 The rqt is a Qt-based framework for GUI development for ROS. The rqt is a tool that allows users to easily see the topic status by displaying all the topics in the topic list. There are topic names, types, bandwidth, Hz, value in GUI
 
 **[Remote PC]** Run the rqt.
@@ -73,7 +74,7 @@ If you want to see more detail topic message, click the `▶` button next to eac
 
 In addition, you can monitor topics through rqt whenever you have a topic added.
 
-## [Interactive Markers](#Interactive markers)
+## [Interactive Markers](#interactive-markers)
 
 Turtlebot3 can be moved by interactive markers on RViz. You can move the turtlebot3 to rotate or linear using interactive markers.
 
@@ -109,7 +110,7 @@ $ rosrun rviz rviz -d `rospack find turtlebot3_example`/rviz/turtlebot3_interact
 ```
 
 
-## [Obstacle](#Obstacle)
+## [Obstacle Detection](#obstacle-detection)
 
 Turtlebot3 can be moved or stopped by LDS data. When the turtlebot3 moves, it stops when it detects an obstacle ahead.
 
@@ -118,7 +119,7 @@ Turtlebot3 can be moved or stopped by LDS data. When the turtlebot3 moves, it st
 $ rosrun turtlebot3_example turtlebot3_obstacle.py
 ```
 
-## [Pointoperaion](#pointoperation)
+## [Point operaion](#point-operation)
 
 Turtlebot3 can be moved by 2D point(x,y) and z-angular. For example, if you insert (0.5, 0.3, 60), turtlebot3 moves to point (x = 0.5m, y = 0.3m) and then rotates 60 deg.
 
