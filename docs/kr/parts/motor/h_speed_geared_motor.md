@@ -35,7 +35,7 @@ sidebar:
   - 양쪽 축 출력
   - 안전장치(클러치) 장착
 
-# [핀 배치도](#핀-배치도)
+# [핀 배열](#핀-배열)
 
 ![img](/assets/images/parts/motor/h_speed_geared_motor_pinout.png)
 
