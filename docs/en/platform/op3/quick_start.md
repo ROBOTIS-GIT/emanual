@@ -22,7 +22,7 @@ The following procedure takes you through the set up process.
 ![](/assets/images/platform/op3/op3_010.png)
 
 `Warning` Manually configuring ROBOTIS OP3’s ready pose other than the above pose may cause mechanical damages when posing for initial stance.
- {: .notice--warning}
+{: .notice--warning}
 
 ![](/assets/images/platform/op3/op3_011.png)
 
