@@ -15,7 +15,7 @@ sidebar:
 
 # [Tutorials](#tutorials)
 
-## [How to run OP3's program](#how-to-run-op3's-program)
+## [How to run OP3's program](#how-to-run-op3s-program)
 
 ### Overview   
 This chapter explains how to run the `op3_manager` that controls ROBOTIS-OP3.  

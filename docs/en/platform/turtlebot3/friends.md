@@ -11,7 +11,7 @@ sidebar:
   nav: "turtlebot3"
 ---
 
-<div style="counter-reset: h1 15"></div>
+<div style="counter-reset: h1 17"></div>
 
 # [Friends](#friends)
 
@@ -69,7 +69,7 @@ E-Mail : ost@robotis.com
 
 ## [TurtleBot3 Friends: OpenManipulator Chain](#turtlebot3-friends-openmanipulator-chain)
 
-![](assets/images/platform/turtlebot3/friends/friends_open_manipulator_waffle.png)
+![](/assets/images/platform/turtlebot3/friends/friends_open_manipulator_waffle.png)
 
 * Type: Manipulator 4 DOF + 1 Gripper
 * Features: Compatible with TurtleBot3 Waffle and it has linear gripper for pick and place.
@@ -90,7 +90,7 @@ E-Mail : ost@robotis.com
 
 ## [TurtleBot3 Friends: Segway](#turtlebot3-friends-segway)
 
-![](assets/images/platform/turtlebot3/friends/friends_segway.png)
+![](/assets/images/platform/turtlebot3/friends/friends_segway.png)
 
 * Type: Segway robot
 * Features: Balancing with only two DYNAMIXEL by applying PID controller.
@@ -113,7 +113,7 @@ E-Mail : ost@robotis.com
 
 ## [TurtleBot3 Friends: Conveyor](#turtlebot3-friends-conveyor)
 
-![](assets/images/platform/turtlebot3/friends/friends_conveyor.png)
+![](/assets/images/platform/turtlebot3/friends/friends_conveyor.png)
 
 * Type: 4 Wheel parallel translation vehicle
 * Features: 4 Joints and 4 wheels will become a futuristic technology on transportation society by overcoming fuel-consuming mechanics.
@@ -127,7 +127,7 @@ E-Mail : ost@robotis.com
 
 ## [TurtleBot3 Friends: Monster](#turtlebot3-friends-monster)
 
-![](assets/images/platform/turtlebot3/friends/friends_monster.png)
+![](/assets/images/platform/turtlebot3/friends/friends_monster.png)
 
 * Type: 4WD Car
 * Features: 4 Big wheels let it be strong in the rough terrain or even a big difference of elevation.
@@ -143,7 +143,7 @@ E-Mail : ost@robotis.com
 ## [TurtleBot3 Friends: Tank](#turtlebot3-friends-tank)
 
 
-![](assets/images/platform/turtlebot3/friends/friends_tank.png)
+![](/assets/images/platform/turtlebot3/friends/friends_tank.png)
 
 * Type: Caterpillar
 * Features: Caterpillar units which are connected and assembled on sprocket wheels make it be strong in the rough terrain.
@@ -158,7 +158,7 @@ E-Mail : ost@robotis.com
 ## [TurtleBot3 Friends: Omni](#turtlebot3-friends-omni)
 
 
-![](assets/images/platform/turtlebot3/friends/friends_omni.png)
+![](/assets/images/platform/turtlebot3/friends/friends_omni.png)
 
 * Type: Omni wheel
 * Features: Omni wheels have additional discs around the circumference make it laterally driveable.
@@ -173,7 +173,7 @@ E-Mail : ost@robotis.com
 ## [TurtleBot3 Friends: Mecanum](#turtlebot3-friends-mecanum)
 
 
-![](assets/images/platform/turtlebot3/friends/friends_mecanum.png)
+![](/assets/images/platform/turtlebot3/friends/friends_mecanum.png)
 
 * Type: Mecanum wheel
 * Features: Mecanum wheels have additional discs around the circumference make it laterally driveable.
@@ -186,7 +186,7 @@ E-Mail : ost@robotis.com
 ## [TurtleBot3 Friends: Bike](#turtlebot3-friends-bike)
 
 
-![](assets/images/platform/turtlebot3/friends/friends_bike.png)
+![](/assets/images/platform/turtlebot3/friends/friends_bike.png)
 
 * Type: 3-DOF Motorcycle
 * Features: Cute 3-wheeled bikey reveals its existence on the "Car" film as a brother of the "Car".
@@ -199,7 +199,7 @@ E-Mail : ost@robotis.com
 ## [TurtleBot3 Friends: Road Train](#turtlebot3-friends-road-train)
 
 
-![](assets/images/platform/turtlebot3/friends/friends_road_train.png)
+![](/assets/images/platform/turtlebot3/friends/friends_road_train.png)
 
 * Type: Road train
 * Features: Road train can connect vehicles and it can serve various things! 
@@ -214,7 +214,7 @@ E-Mail : ost@robotis.com
 ## [TurtleBot3 Friends: Real TurtleBot](#turtlebot3-friends-real-turtlebot)
 
 
-![](assets/images/platform/turtlebot3/friends/friends_real.png)
+![](/assets/images/platform/turtlebot3/friends/friends_real.png)
 
 * Type: 8-DOF legged robot (a.k.a. Real TurtleBot)
 * Features: A real TurtleBot will make most of the fanpics in the turtlebot society!.
@@ -230,7 +230,7 @@ E-Mail : ost@robotis.com
 
 ## [TurtleBot3 Friends: Carrier](#turtlebot3-friends-carrier)
 
-![](assets/images/platform/turtlebot3/friends/friends_carrier.png)
+![](/assets/images/platform/turtlebot3/friends/friends_carrier.png)
 
 * Type: 2 Wheel mobile based platform as service robot
 * Features: 2 wheeled mobile platform will serve whatever you wants.

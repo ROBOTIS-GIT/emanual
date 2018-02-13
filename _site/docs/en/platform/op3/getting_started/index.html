@@ -178,6 +178,11 @@ $(function() {
     		alignTop: true,
     		overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
     	});
+      $('.popup2').magnificPopup({
+    		type: 'inline',
+    		alignTop: true,
+    		overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
+    	});
     });
     </script>
   </head>
@@ -185,8 +190,9 @@ $(function() {
   <body class="layout--archive">
 
     <!--[if lt IE 9]>
-<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please upgrade your browser to improve your experience.</div>
 <![endif]-->
+
     <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
@@ -222,14 +228,6 @@ $(function() {
           
             
               
-            
-          
-            
-              
-            
-          
-            
-              <a href="http://localhost:4000/docs/kr/platform/op3/getting_started/" style="color: black;">Korean</a></button>
             
           
       </div>
@@ -679,7 +677,7 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <a href="http://localhost:4000/docs/en/platform/op3/getting_started/">OP3</a>
+                    <a href="http://localhost:4000/docs/en/platform/op3/introduction/">OP3</a>
                   </li>
                 
               
@@ -2029,7 +2027,7 @@ $(function() {
               
                 
                   
-                    <a href="http://localhost:4000/docs/en/platform/op3/getting_started/">OP3</a>
+                    <a href="http://localhost:4000/docs/en/platform/op3/introduction/">OP3</a>
               
 
               
@@ -3143,9 +3141,11 @@ $(function() {
     
 
       
+      
+      
       <li class="has-children">
-        <input type="radio" name="toplevel" id="toplevel_0" >
-        <label for="toplevel_0">Introduction [+]</label>
+        <input type="radio" name="toplevel" id="toplevel_1" >
+        <label for="toplevel_1">1. Introduction [+]</label>
 
       
 
@@ -3157,7 +3157,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/op3/introduction/#what-is-op3" onclick="extendnav()">What is OP3?</a></li>
+          <li><a href="http://localhost:4000/docs/en/platform/op3/introduction/#what-is-op3" onclick="extendnav()">1. What is OP3?</a></li>
           
 
           
@@ -3168,7 +3168,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/op3/introduction/#safety-information" onclick="extendnav()">Safety Information</a></li>
+          <li><a href="http://localhost:4000/docs/en/platform/op3/introduction/#safety-information" onclick="extendnav()">2. Safety Information</a></li>
           
 
           
@@ -3179,7 +3179,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/op3/introduction/#package-contents" onclick="extendnav()">Package Contents</a></li>
+          <li><a href="http://localhost:4000/docs/en/platform/op3/introduction/#package-contents" onclick="extendnav()">3. Package Contents</a></li>
           
 
           
@@ -3190,7 +3190,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/op3/introduction/#layout" onclick="extendnav()">Layout</a></li>
+          <li><a href="http://localhost:4000/docs/en/platform/op3/introduction/#layout" onclick="extendnav()">4. Layout</a></li>
           
 
           
@@ -3201,7 +3201,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/op3/introduction/#charging-battery" onclick="extendnav()">Charging Battery</a></li>
+          <li><a href="http://localhost:4000/docs/en/platform/op3/introduction/#charging-battery" onclick="extendnav()">5. Charging Battery</a></li>
           
 
           
@@ -3212,7 +3212,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/op3/introduction/#battery-hot-swap" onclick="extendnav()">Battery Hot Swap</a></li>
+          <li><a href="http://localhost:4000/docs/en/platform/op3/introduction/#battery-hot-swap" onclick="extendnav()">6. Battery Hot Swap</a></li>
           
 
           
@@ -3230,9 +3230,11 @@ $(function() {
     
 
       
+      
+      
       <li class="has-children">
-        <input type="radio" name="toplevel" id="toplevel_1" >
-        <label for="toplevel_1">Quick Start [+]</label>
+        <input type="radio" name="toplevel" id="toplevel_2" >
+        <label for="toplevel_2">2. Quick Start [+]</label>
 
       
 
@@ -3244,7 +3246,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/op3/quick_start/#power-on" onclick="extendnav()">Power On</a></li>
+          <li><a href="http://localhost:4000/docs/en/platform/op3/quick_start/#power-on" onclick="extendnav()">1. Power On</a></li>
           
 
           
@@ -3256,8 +3258,8 @@ $(function() {
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="Execute Demo Program" >
-            <label for="Execute Demo Program">Execute Demo Program [+]</label>
+            <input type="radio" name="sublevel" id="Quick Start_2" >
+            <label for="Quick Start_2">2. Execute Demo Program [+]</label>
           
 
           
@@ -3314,7 +3316,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/op3/quick_start/#camera-calibration" onclick="extendnav()">Camera Calibration</a></li>
+          <li><a href="http://localhost:4000/docs/en/platform/op3/quick_start/#camera-calibration" onclick="extendnav()">3. Camera Calibration</a></li>
           
 
           
@@ -3325,7 +3327,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/op3/quick_start/#power-off" onclick="extendnav()">Power Off</a></li>
+          <li><a href="http://localhost:4000/docs/en/platform/op3/quick_start/#power-off" onclick="extendnav()">4. Power Off</a></li>
           
 
           
@@ -3337,8 +3339,8 @@ $(function() {
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="Programming Guide" >
-            <label for="Programming Guide">Programming Guide [+]</label>
+            <input type="radio" name="sublevel" id="Quick Start_5" >
+            <label for="Quick Start_5">5. Programming Guide [+]</label>
           
 
           
@@ -3412,8 +3414,8 @@ $(function() {
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="Miscellaneous" >
-            <label for="Miscellaneous">Miscellaneous [+]</label>
+            <input type="radio" name="sublevel" id="Quick Start_6" >
+            <label for="Quick Start_6">6. Miscellaneous [+]</label>
           
 
           
@@ -3455,8 +3457,8 @@ $(function() {
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="Sub Controller(OpenCR)" >
-            <label for="Sub Controller(OpenCR)">Sub Controller(OpenCR) [+]</label>
+            <input type="radio" name="sublevel" id="Quick Start_7" >
+            <label for="Quick Start_7">7. Sub Controller(OpenCR) [+]</label>
           
 
           
@@ -3520,63 +3522,11 @@ $(function() {
     
 
       
-      <li class="has-children">
-        <input type="radio" name="toplevel" id="toplevel_2" >
-        <label for="toplevel_2">Getting Started [+]</label>
-
       
-
-      
-        <ul>
-        
-          
-
-          
-
-          
-          <li><a href="http://localhost:4000/docs/en/platform/op3/getting_started/#how-to-connect" onclick="extendnav()">How to connect</a></li>
-          
-
-          
-          
-        
-          
-
-          
-
-          
-          <li><a href="http://localhost:4000/docs/en/platform/op3/getting_started/#how-to-kill-the-demo-program" onclick="extendnav()">How to Kill the demo program</a></li>
-          
-
-          
-          
-        
-          
-
-          
-
-          
-          <li><a href="http://localhost:4000/docs/en/platform/op3/getting_started/#how-to-restart-the-demo-program" onclick="extendnav()">How to Restart the demo program</a></li>
-          
-
-          
-          
-        
-        </ul>
-      
-      
-      </li>
-      
-    
-  
-    
-
-    
-
       
       <li class="has-children">
         <input type="radio" name="toplevel" id="toplevel_3" >
-        <label for="toplevel_3">Robotis Ros Packages [+]</label>
+        <label for="toplevel_3">3. Getting Started [+]</label>
 
       
 
@@ -3588,7 +3538,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/op3/robotis_ros_packages/#robotis-op3" onclick="extendnav()">ROBOTIS OP3</a></li>
+          <li><a href="http://localhost:4000/docs/en/platform/op3/getting_started/#how-to-connect" onclick="extendnav()">1. How to connect</a></li>
           
 
           
@@ -3599,7 +3549,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/op3/robotis_ros_packages/#robotis-op3-msgs" onclick="extendnav()">ROBOTIS OP3 msgs</a></li>
+          <li><a href="http://localhost:4000/docs/en/platform/op3/getting_started/#how-to-kill-the-demo-program" onclick="extendnav()">2. How to Kill the demo program</a></li>
           
 
           
@@ -3610,29 +3560,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/op3/robotis_ros_packages/#robotis-op3-Demo" onclick="extendnav()">ROBOTIS OP3 Demo</a></li>
-          
-
-          
-          
-        
-          
-
-          
-
-          
-          <li><a href="http://localhost:4000/docs/en/platform/op3/robotis_ros_packages/#robotis-op3-common" onclick="extendnav()">ROBOTIS OP3 Common</a></li>
-          
-
-          
-          
-        
-          
-
-          
-
-          
-          <li><a href="http://localhost:4000/docs/en/platform/op3/robotis_ros_packages/#robotis-op3-tools" onclick="extendnav()">ROBOTIS OP3 Tools</a></li>
+          <li><a href="http://localhost:4000/docs/en/platform/op3/getting_started/#how-to-restart-the-demo-program" onclick="extendnav()">3. How to Restart the demo program</a></li>
           
 
           
@@ -3650,9 +3578,11 @@ $(function() {
     
 
       
+      
+      
       <li class="has-children">
         <input type="radio" name="toplevel" id="toplevel_4" >
-        <label for="toplevel_4">Tutorials [+]</label>
+        <label for="toplevel_4">4. Robotis ROS Modules [+]</label>
 
       
 
@@ -3664,7 +3594,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/op3/tutorials/#how-to-run-op3's-program" onclick="extendnav()">How to run OP3's program</a></li>
+          <li><a href="http://localhost:4000/docs/en/platform/op3/robotis_ros_modules/#robotis-op3" onclick="extendnav()">1. ROBOTIS OP3</a></li>
           
 
           
@@ -3675,7 +3605,85 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/op3/tutorials/#how-to-execute-default-demo" onclick="extendnav()">How to execute Default Demo</a></li>
+          <li><a href="http://localhost:4000/docs/en/platform/op3/robotis_ros_modules/#robotis-op3-msgs" onclick="extendnav()">2. ROBOTIS OP3 msgs</a></li>
+          
+
+          
+          
+        
+          
+
+          
+
+          
+          <li><a href="http://localhost:4000/docs/en/platform/op3/robotis_ros_modules/#robotis-op3-Demo" onclick="extendnav()">3. ROBOTIS OP3 Demo</a></li>
+          
+
+          
+          
+        
+          
+
+          
+
+          
+          <li><a href="http://localhost:4000/docs/en/platform/op3/robotis_ros_modules/#robotis-op3-common" onclick="extendnav()">4. ROBOTIS OP3 Common</a></li>
+          
+
+          
+          
+        
+          
+
+          
+
+          
+          <li><a href="http://localhost:4000/docs/en/platform/op3/robotis_ros_modules/#robotis-op3-tools" onclick="extendnav()">5. ROBOTIS OP3 Tools</a></li>
+          
+
+          
+          
+        
+        </ul>
+      
+      
+      </li>
+      
+    
+  
+    
+
+    
+
+      
+      
+      
+      <li class="has-children">
+        <input type="radio" name="toplevel" id="toplevel_5" >
+        <label for="toplevel_5">5. Tutorials [+]</label>
+
+      
+
+      
+        <ul>
+        
+          
+
+          
+
+          
+          <li><a href="http://localhost:4000/docs/en/platform/op3/tutorials/#how-to-run-op3's-program" onclick="extendnav()">1. How to run OP3 program</a></li>
+          
+
+          
+          
+        
+          
+
+          
+
+          
+          <li><a href="http://localhost:4000/docs/en/platform/op3/tutorials/#how-to-execute-default-demo" onclick="extendnav()">2. How to execute Default Demo</a></li>
           
 
           
@@ -3687,8 +3695,8 @@ $(function() {
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="How to execute GUI program" >
-            <label for="How to execute GUI program">How to execute GUI program [+]</label>
+            <input type="radio" name="sublevel" id="Tutorials_3" >
+            <label for="Tutorials_3">3. How to execute GUI program [+]</label>
           
 
           
@@ -3737,7 +3745,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/op3/tutorials/#how-to-use-offset-tuner" onclick="extendnav()">How to use offset tuner</a></li>
+          <li><a href="http://localhost:4000/docs/en/platform/op3/tutorials/#how-to-use-offset-tuner" onclick="extendnav()">4. How to use offset tuner</a></li>
           
 
           
@@ -3748,7 +3756,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/op3/tutorials/#how-to-create-the-motions" onclick="extendnav()">How to create the motions</a></li>
+          <li><a href="http://localhost:4000/docs/en/platform/op3/tutorials/#how-to-create-the-motions" onclick="extendnav()">5. How to create the motions</a></li>
           
 
           
@@ -3759,7 +3767,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/op3/tutorials/#how-to-use-ball-detector" onclick="extendnav()">How to use ball detector</a></li>
+          <li><a href="http://localhost:4000/docs/en/platform/op3/tutorials/#how-to-use-ball-detector" onclick="extendnav()">6. How to use ball detector</a></li>
           
 
           
@@ -3770,50 +3778,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/op3/tutorials/#how-to-control-upgraded-walking-using-footstep-planner" onclick="extendnav()">How to control upgraded walking</a></li>
-          
-
-          
-          
-        
-        </ul>
-      
-      
-      </li>
-      
-    
-  
-    
-
-    
-
-      
-      <li class="has-children">
-        <input type="radio" name="toplevel" id="toplevel_5" >
-        <label for="toplevel_5">Simulation [+]</label>
-
-      
-
-      
-        <ul>
-        
-          
-
-          
-
-          
-          <li><a href="http://localhost:4000/docs/en/platform/op3/simulation/#gazebo-installation" onclick="extendnav()">Gazebo Installation</a></li>
-          
-
-          
-          
-        
-          
-
-          
-
-          
-          <li><a href="http://localhost:4000/docs/en/platform/op3/simulation/#how-to-execute-gazebo-simulation" onclick="extendnav()">How to execute Gazebo Simulation</a></li>
+          <li><a href="http://localhost:4000/docs/en/platform/op3/tutorials/#how-to-control-upgraded-walking-using-footstep-planner" onclick="extendnav()">7. How to control upgraded walking</a></li>
           
 
           
@@ -3830,10 +3795,12 @@ $(function() {
 
     
 
+      
+      
       
       <li class="has-children">
         <input type="radio" name="toplevel" id="toplevel_6" >
-        <label for="toplevel_6">Hardware [+]</label>
+        <label for="toplevel_6">6. Simulation [+]</label>
 
       
 
@@ -3845,7 +3812,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/op3/hardware/#assemble-data" onclick="extendnav()">Assemble Data</a></li>
+          <li><a href="http://localhost:4000/docs/en/platform/op3/simulation/#gazebo-installation" onclick="extendnav()">1. Gazebo Installation</a></li>
           
 
           
@@ -3856,7 +3823,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/op3/hardware/#cover-skin-data" onclick="extendnav()">Cover Skin Data</a></li>
+          <li><a href="http://localhost:4000/docs/en/platform/op3/simulation/#how-to-execute-gazebo-simulation" onclick="extendnav()">2. How to execute Gazebo Simulation</a></li>
           
 
           
@@ -3874,908 +3841,43 @@ $(function() {
     
 
       
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#recovery" onclick="extendnav()">Recovery</a>
-      </li>
-      
-
-      
-      
-    
-  
-    
-
-    
-
-      
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#manual-installation" onclick="extendnav()">Manual Installation</a>
-      </li>
-      
-
-      
-      
-    
-  
-    
-
-    
-
-      
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#recovery-of-robotis-op3" onclick="extendnav()">Recovery of ROBOTIS-OP3</a>
-      </li>
-      
-
-      
-      
-    
-  
-    
-
-    
-
-      
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#" onclick="extendnav()"></a>
-      </li>
-      
-
-      
-      
-    
-  
-    
-
-    
-
-      
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#" onclick="extendnav()"></a>
-      </li>
-      
-
-      
-      
-    
-  
-    
-
-    
-
-      
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#" onclick="extendnav()"></a>
-      </li>
-      
-
-      
-      
-    
-  
-    
-
-    
-
-      
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#" onclick="extendnav()"></a>
-      </li>
-      
-
-      
-      
-    
-  
-    
-
-    
-
-      
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#" onclick="extendnav()"></a>
-      </li>
-      
-
-      
-      
-    
-  
-    
-
-    
-
-      
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#" onclick="extendnav()"></a>
-      </li>
-      
-
-      
-      
-    
-  
-    
-
-    
-
-      
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#" onclick="extendnav()"></a>
-      </li>
-      
-
-      
-      
-    
-  
-    
-
-    
-
-      
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#" onclick="extendnav()"></a>
-      </li>
-      
-
-      
-      
-    
-  
-    
-
-    
-
-      
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#" onclick="extendnav()"></a>
-      </li>
-      
-
-      
-      
-    
-  
-    
-
-    
-
-      
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#" onclick="extendnav()"></a>
-      </li>
-      
-
-      
-      
-    
-  
-    
-
-    
-
-      
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#" onclick="extendnav()"></a>
-      </li>
-      
-
-      
-      
-    
-  
-    
-
-    
-
-      
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#" onclick="extendnav()"></a>
-      </li>
-      
-
-      
-      
-    
-  
-    
-
-    
-
-      
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#" onclick="extendnav()"></a>
-      </li>
-      
-
-      
-      
-    
-  
-    
-
-    
-
-      
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#" onclick="extendnav()"></a>
-      </li>
-      
-
-      
-      
-    
-  
-    
-
-    
-
-      
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#" onclick="extendnav()"></a>
-      </li>
-      
-
-      
-      
-    
-  
-    
-
-    
-
-      
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#" onclick="extendnav()"></a>
-      </li>
-      
-
-      
-      
-    
-  
-    
-
-    
-
-      
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#" onclick="extendnav()"></a>
-      </li>
-      
-
-      
-      
-    
-  
-    
-
-    
-
-      
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#" onclick="extendnav()"></a>
-      </li>
-      
-
-      
-      
-    
-  
-    
-
-    
-
-      
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#" onclick="extendnav()"></a>
-      </li>
-      
-
-      
-      
-    
-  
-    
-
-    
-
-      
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#" onclick="extendnav()"></a>
-      </li>
-      
-
-      
-      
-    
-  
-    
-
-    
-
-      
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#" onclick="extendnav()"></a>
-      </li>
-      
-
-      
-      
-    
-  
-    
-
-    
-
-      
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#" onclick="extendnav()"></a>
-      </li>
-      
-
-      
-      
-    
-  
-    
-
-    
-
-      
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#" onclick="extendnav()"></a>
-      </li>
-      
-
-      
-      
-    
-  
-    
-
-    
-
-      
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#" onclick="extendnav()"></a>
-      </li>
-      
-
-      
-      
-    
-  
-    
-
-    
-
-      
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#" onclick="extendnav()"></a>
-      </li>
-      
-
-      
-      
-    
-  
-    
-
-    
-
-      
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#" onclick="extendnav()"></a>
-      </li>
-      
-
-      
-      
-    
-  
-    
-
-    
-
-      
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#" onclick="extendnav()"></a>
-      </li>
-      
-
-      
-      
-    
-  
-    
-
-    
-
-      
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#" onclick="extendnav()"></a>
-      </li>
-      
-
-      
-      
-    
-  
-    
-
-    
-
-      
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#" onclick="extendnav()"></a>
-      </li>
-      
-
-      
-      
-    
-  
-    
-
-    
-
-      
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#" onclick="extendnav()"></a>
-      </li>
-      
-
-      
-      
-    
-  
-    
-
-    
-
-      
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#" onclick="extendnav()"></a>
-      </li>
-      
-
-      
-      
-    
-  
-    
-
-    
-
-      
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#" onclick="extendnav()"></a>
-      </li>
-      
-
-      
-      
-    
-  
-    
-
-    
-
-      
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#" onclick="extendnav()"></a>
-      </li>
-      
-
-      
-      
-    
-  
-    
-
-    
-
-      
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#" onclick="extendnav()"></a>
-      </li>
-      
-
-      
-      
-    
-  
-    
-
-    
-
-      
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#" onclick="extendnav()"></a>
-      </li>
-      
-
-      
-      
-    
-  
-    
-
-    
-
-      
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#" onclick="extendnav()"></a>
-      </li>
-      
-
-      
-      
-    
-  
-    
-
-    
-
-      
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#" onclick="extendnav()"></a>
-      </li>
-      
-
-      
-      
-    
-  
-    
-
-    
-
-      
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#" onclick="extendnav()"></a>
-      </li>
-      
-
-      
-      
-    
-  
-    
-
-    
-
-      
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#" onclick="extendnav()"></a>
-      </li>
-      
-
-      
-      
-    
-  
-    
-
-    
-
-      
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#" onclick="extendnav()"></a>
-      </li>
-      
-
-      
-      
-    
-  
-    
-
-    
-
-      
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#" onclick="extendnav()"></a>
-      </li>
-      
-
-      
-      
-    
-  
-    
-
-    
-
-      
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#" onclick="extendnav()"></a>
-      </li>
-      
-
-      
-      
-    
-  
-    
-
-    
-
-      
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#" onclick="extendnav()"></a>
-      </li>
-      
-
-      
-      
-    
-  
-    
-
-    
-
-      
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#" onclick="extendnav()"></a>
-      </li>
-      
-
-      
-      
-    
-  
-    
-
-    
-
-      
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#" onclick="extendnav()"></a>
-      </li>
-      
-
-      
-      
-    
-  
-    
-
-    
-
-      
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#" onclick="extendnav()"></a>
-      </li>
-      
-
-      
-      
-    
-  
-    
-
-    
-
-      
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#" onclick="extendnav()"></a>
-      </li>
-      
-
-      
-      
-    
-  
-    
-
-    
-
-      
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#" onclick="extendnav()"></a>
-      </li>
-      
-
-      
-      
-    
-  
-    
-
-    
-
-      
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#" onclick="extendnav()"></a>
-      </li>
-      
-
-      
-      
-    
-  
-    
-
-    
-
-      
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#" onclick="extendnav()"></a>
-      </li>
-      
-
-      
-      
-    
-  
-    
-
-    
-
-      
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#" onclick="extendnav()"></a>
-      </li>
-      
-
-      
-      
-    
-  
-    
-
-    
-
-      
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#" onclick="extendnav()"></a>
-      </li>
-      
-
-      
-      
-    
-  
-    
-
-    
-
-      
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#" onclick="extendnav()"></a>
-      </li>
-      
-
-      
-      
-    
-  
-    
-
-    
-
-      
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#" onclick="extendnav()"></a>
-      </li>
-      
-
-      
-      
-    
-  
-    
-
-    
-
-      
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#" onclick="extendnav()"></a>
-      </li>
-      
-
-      
-      
-    
-  
-    
-
-    
-
-      
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#" onclick="extendnav()"></a>
-      </li>
       
-
-      
-      
-    
-  
-    
-
-    
-
-      
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#" onclick="extendnav()"></a>
-      </li>
-      
-
-      
-      
-    
-  
-    
-
-    
-
-      
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#" onclick="extendnav()"></a>
-      </li>
-      
-
-      
       
-    
-  
-    
-
-    
+      <li class="has-children">
+        <input type="radio" name="toplevel" id="toplevel_7" >
+        <label for="toplevel_7">7. Hardware [+]</label>
 
-      
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#" onclick="extendnav()"></a>
-      </li>
       
 
-      
       
-    
-  
-    
+        <ul>
+        
+          
 
-    
+          
 
-      
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#" onclick="extendnav()"></a>
-      </li>
-      
+          
+          <li><a href="http://localhost:4000/docs/en/platform/op3/hardware/#assemble-data" onclick="extendnav()">1. Assemble Data</a></li>
+          
 
-      
-      
-    
-  
-    
+          
+          
+        
+          
 
-    
+          
 
-      
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#" onclick="extendnav()"></a>
-      </li>
-      
+          
+          <li><a href="http://localhost:4000/docs/en/platform/op3/hardware/#cover-skin-data" onclick="extendnav()">2. Cover Skin Data</a></li>
+          
 
+          
+          
+        
+        </ul>
       
-      
-    
-  
-    
-
-    
-
       
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#" onclick="extendnav()"></a>
       </li>
-      
-
-      
       
     
   
@@ -4784,68 +3886,43 @@ $(function() {
     
 
       
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#" onclick="extendnav()"></a>
-      </li>
-      
-
       
       
-    
-  
-    
-
-    
+      <li class="has-children">
+        <input type="radio" name="toplevel" id="toplevel_8" >
+        <label for="toplevel_8">8. Recovery [+]</label>
 
       
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#" onclick="extendnav()"></a>
-      </li>
-      
 
       
-      
-    
-  
-    
+        <ul>
+        
+          
 
-    
+          
 
-      
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#" onclick="extendnav()"></a>
-      </li>
-      
+          
+          <li><a href="http://localhost:4000/docs/en/platform/op3/recovery/#manual-installation" onclick="extendnav()">1. Manual Installation</a></li>
+          
 
-      
-      
-    
-  
-    
+          
+          
+        
+          
 
-    
+          
 
-      
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#" onclick="extendnav()"></a>
-      </li>
-      
+          
+          <li><a href="http://localhost:4000/docs/en/platform/op3/recovery/#recovery-of-robotis-op3" onclick="extendnav()">2. Recovery of ROBOTIS-OP3</a></li>
+          
 
-      
+          
+          
+        
+        </ul>
       
-    
-  
-    
-
-    
-
       
-      <li>
-        <a href="http://localhost:4000/docs/en/platform/op3/getting_started/#" onclick="extendnav()"></a>
       </li>
-      
-
-      
       
     
   
@@ -4874,7 +3951,8 @@ $(function() {
 <p>Keyboard and monitor are directly connected to ROBOTIS-OP3.</p>
 
 <h3 id="remote-connection">Remote Connection</h3>
-<p><img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_connection.png?raw=true" /></p>
+
+<p><img src="/assets/images/platform/op3/op3_connection.png" alt="" /></p>
 
 <p><strong>Connect to ROBOTIS-OP3 over the network.</strong></p>
 
@@ -4903,7 +3981,7 @@ $(function() {
       <li>Input ROBOTIS-OP3’s password : 111111</li>
     </ol>
 
-    <p><img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_connection_ssh.png?raw=true" /></p>
+    <p><img src="/assets/images/platform/op3/op3_connection_ssh.png" alt="" /></p>
   </li>
   <li>VNC
     <ol>
@@ -4913,11 +3991,10 @@ $(function() {
       <li>Accessing ROBOTIS-OP3 via remote desktop may result in slower performance.</li>
     </ol>
 
-    <p><img src="https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/blob/master/wiki-images/ROBOTIS-OP3/op3_connection_vnc.png?raw=true" /></p>
+    <p><img src="/assets/images/platform/op3/op3_connection_vnc.png" alt="" /></p>
+    <h2 id="how-to-kill-the-demo-program"><a href="#how-to-kill-the-demo-program">How to kill the demo program</a></h2>
   </li>
 </ul>
-
-<h2 id="how-to-kill-the-demo-program"><a href="#how-to-kill-the-demo-program">How to kill the demo program</a></h2>
 
 <h3 id="kill-demo-program">Kill demo program</h3>
 <p>In order to terminate automatically executed demo program, enter below command in the terminal window.</p>

@@ -35,7 +35,7 @@ sidebar:
 **Tip :** The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is Ctrl-Alt-T.
 {: .notice--info}
 
-**[TurtleBot Burger]**
+**[TurtleBot Burger & Waffle Pi]**
 
 ``` bash
 $ sudo apt-get update
@@ -67,15 +67,34 @@ $ wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/instal
 
 **[TurtleBot]** The next step is to install dependent packages for TurtleBot3 control.
 
-``` bash
-$ sudo apt-get install ros-kinetic-joy ros-kinetic-teleop-twist-joy ros-kinetic-teleop-twist-keyboard ros-kinetic-laser-proc ros-kinetic-rgbd-launch ros-kinetic-depthimage-to-laserscan ros-kinetic-rosserial-arduino ros-kinetic-rosserial-python ros-kinetic-rosserial-server ros-kinetic-rosserial-client ros-kinetic-rosserial-msgs ros-kinetic-amcl ros-kinetic-map-server ros-kinetic-move-base ros-kinetic-urdf ros-kinetic-xacro ros-kinetic-compressed-image-transport ros-kinetic-rqt-image-view ros-kinetic-gmapping ros-kinetic-navigation ros-kinetic-interactive-marker
-```
+Download packages from github
 
 ``` bash
 $ cd ~/catkin_ws/src
 $ git clone https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver.git
 $ git clone https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
 $ git clone https://github.com/ROBOTIS-GIT/turtlebot3.git
+```
+
+**Note :** If you want to use Intel® RealSense™ or Raspberry Pi Camera, please check related appendix [Intel® RealSense™](http://emanual.robotis.com/docs/en/platform/turtlebot3/appendix_realsense/#realsense) or [Raspberry Pi Camera](http://emanual.robotis.com/docs/en/platform/turtlebot3/appendix_raspi_cam/#appendix-raspberry-pi-camera)
+{: .notice--info}
+
+Delete some packages that are used in Remote PC
+
+``` bash
+$ cd ~/catkin_ws/src/turtlebot3
+$ sudo rm -r turtlebot3_description/ turtlebot3_teleop/ turtlebot3_navigation/ turtlebot3_slam/ turtlebot3_example/
+```
+
+Download dependent packages
+
+``` bash
+$ sudo apt-get install ros-kinetic-rosserial-python ros-kinetic-tf
+```
+
+Build packages
+
+``` bash
 $ cd ~/catkin_ws && catkin_make
 ```
 

@@ -11,7 +11,7 @@ sidebar:
   nav: "turtlebot3"
 ---
 
-<div style="counter-reset: h1 3"></div>
+<div style="counter-reset: h1 4"></div>
 
 # [Hardware Setup](#hardware-setup)
 
@@ -40,6 +40,7 @@ TurtleBot3 has two different models: `Burger`, `Waffle` and `Waffle Pi`. The fol
 | Wheel                 | 2      | 2      | 2         |
 | Tire                  | 2      | 2      | 2         |
 | Ball Caster           | 1      | 2      | 2         |
+| Camera Bracket        | 0      | 0      | 1         |
 
 ### [Motor](#motor)
 
@@ -57,12 +58,20 @@ TurtleBot3 has two different models: `Burger`, `Waffle` and `Waffle Pi`. The fol
 | Intel® Joule™  | 0      | 1      | 0         |
 | USB2LDS        | 1      | 1      | 1         |
 
+### [Remote Controller](#remote-controller)
+
+| Part Name                     | Burger | Waffle | Waffle Pi |
+| :---------------------------- | :----: | :----: | :-------: |
+| BT-410 Set (Bluetooth 4, BLE) | 0      | 0      | 2         |
+| RC-100B (Remote Controller)   | 0      | 0      | 1         |
+
 ### [Sensor](#sensor)
 
-| Part Name              | Burger | Waffle | Waffle Pi |
-| :--------------------- | :----: | :----: | :-------: |
-| LDS (HLS-LFCD2)        | 1      | 1      | 1         |
-| Intel® Realsense™ R200 | 0      | 1      | 0         |
+| Part Name                       | Burger | Waffle | Waffle Pi |
+| :------------------------------ | :----: | :----: | :-------: |
+| LDS (HLS-LFCD2)                 | 1      | 1      | 1         |
+| Intel® Realsense™ R200          | 0      | 1      | 0         |
+| Raspberry Pi Camera Module v2.1 | 0      | 0      | 1         |
 
 ### [Memory](#memory)
 
@@ -79,14 +88,16 @@ TurtleBot3 has two different models: `Burger`, `Waffle` and `Waffle Pi`. The fol
 | Li-Po Battery Extension Cable | 1      | 1      | 1         |
 | DYNAMIXEL to OpenCR Cable     | 2      | 2      | 2         |
 | USB Cable                     | 2      | 2      | 2         |
+| Camera Cable                  | 0      | 0      | 1         |
 
 ### [Power](power)
 
-| Part Name                  | Burger | Waffle | Waffle Pi |
-| :------------------------- | :----: | :----: | :-------: |
-| SMPS 12V5A                 | 1      | 1      | 1         |
-| A/C Cord                   | 1      | 1      | 1         |
-| LIPO Battery 11.1V 1800mAh | 1      | 1      | 1         |
+| Part Name                   | Burger | Waffle | Waffle Pi |
+| :-------------------------- | :----: | :----: | :-------: |
+| SMPS 12V5A                  | 1      | 1      | 1         |
+| A/C Cord                    | 1      | 1      | 1         |
+| LIPO Battery 11.1V 1,800mAh | 1      | 1      | 1         |
+| LIPO Battery Charger        | 1      | 1      | 1         |
 
 ### [Tools](tools)
 
@@ -95,7 +106,6 @@ TurtleBot3 has two different models: `Burger`, `Waffle` and `Waffle Pi`. The fol
 | Screw driver         | 1      | 1      | 1         |
 | Rivet tool           | 1      | 1      | 1         |
 | USB3.0 HUB           | 0      | 1      | 0         |
-| LIPO Battery charger | 1      | 1      | 1         |
 
 ### [Miscellaneous](miscellaneous)
 
@@ -127,7 +137,7 @@ TurtleBots3 is delivered as unassembled parts in the boxes. Follow the instructi
 
 - `Download PDF` [Assembly manual for TurtleBot3 Burger](https://drive.google.com/open?id=1tg1Kjz8jt3UtGvxCKRxn4CxdHCnCyK7_)
 - `Download PDF` [Assembly manual for TurtleBot3 Waffle](https://drive.google.com/open?id=1DGWuv8c9Fo2giQMvpTTDJWZTkfYxMbxn)
-- `Download PDF` [Assembly manual for TurtleBot3 Waffle Pi](https://drive.google.com/open?id=1MUubRouz8kvMLFl8IgLZ36b6QweZ5Na0)
+- `Download PDF` [Assembly manual for TurtleBot3 Waffle Pi](https://drive.google.com/open?id=17lOFQrsVRCbtPidy_xvcPoHpRZw3unwC)
 
 ## [Assembly Video](#assembly-video)
 

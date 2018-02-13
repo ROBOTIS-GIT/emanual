@@ -125,7 +125,7 @@ Can reset system, change device name, and set SLAVE address, but **CANNOT** chan
 
 9. After searching for available devices with "AT+BTINQ" command, use returned MAC address to pair with the device. For example, in order to pair with above searched device, use "ATD" command followed by the MAC address: "ATDDBE7DF00512B".
 
-## [AT Commands](#at-commands)
+# [AT Commands](#at-commands)
 
 The followings are AT terminal commands for the BT-410 Dongle.
 

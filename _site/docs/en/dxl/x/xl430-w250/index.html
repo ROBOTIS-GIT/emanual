@@ -178,6 +178,11 @@ $(function() {
     		alignTop: true,
     		overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
     	});
+      $('.popup2').magnificPopup({
+    		type: 'inline',
+    		alignTop: true,
+    		overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
+    	});
     });
     </script>
   </head>
@@ -185,8 +190,9 @@ $(function() {
   <body class="layout--archive">
 
     <!--[if lt IE 9]>
-<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please upgrade your browser to improve your experience.</div>
 <![endif]-->
+
     <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
@@ -675,7 +681,7 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <a href="http://localhost:4000/docs/en/platform/op3/getting_started/">OP3</a>
+                    <a href="http://localhost:4000/docs/en/platform/op3/introduction/">OP3</a>
                   </li>
                 
               
@@ -2025,7 +2031,7 @@ $(function() {
               
                 
                   
-                    <a href="http://localhost:4000/docs/en/platform/op3/getting_started/">OP3</a>
+                    <a href="http://localhost:4000/docs/en/platform/op3/introduction/">OP3</a>
               
 
               
@@ -3139,9 +3145,11 @@ $(function() {
     
 
       
+      
+      
       <li class="has-children">
-        <input type="radio" name="toplevel" id="toplevel_0" >
-        <label for="toplevel_0">Specifications [+]</label>
+        <input type="radio" name="toplevel" id="toplevel_1" >
+        <label for="toplevel_1">1. Specifications [+]</label>
 
       
 
@@ -3153,7 +3161,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/dxl/x/xl430-w250/#performance-graph" onclick="extendnav()">Performance Graph</a></li>
+          <li><a href="http://localhost:4000/docs/en/dxl/x/xl430-w250/#performance-graph" onclick="extendnav()">1. Performance Graph</a></li>
           
 
           
@@ -3171,9 +3179,11 @@ $(function() {
     
 
       
+      
+      
       <li class="has-children">
-        <input type="radio" name="toplevel" id="toplevel_1" >
-        <label for="toplevel_1">Control Table [+]</label>
+        <input type="radio" name="toplevel" id="toplevel_2" >
+        <label for="toplevel_2">2. Control Table [+]</label>
 
       
 
@@ -3186,8 +3196,8 @@ $(function() {
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="Control Table, Data, Address" >
-            <label for="Control Table, Data, Address">Control Table, Data, Address [+]</label>
+            <input type="radio" name="sublevel" id="Control Table_1" >
+            <label for="Control Table_1">1. Control Table, Data, Address [+]</label>
           
 
           
@@ -3236,7 +3246,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/dxl/x/xl430-w250/#control-table-of-eeprom-area" onclick="extendnav()">EEPROM Area</a></li>
+          <li><a href="http://localhost:4000/docs/en/dxl/x/xl430-w250/#control-table-of-eeprom-area" onclick="extendnav()">2. EEPROM Area</a></li>
           
 
           
@@ -3247,7 +3257,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/dxl/x/xl430-w250/#control-table-of-ram-area" onclick="extendnav()">RAM Area</a></li>
+          <li><a href="http://localhost:4000/docs/en/dxl/x/xl430-w250/#control-table-of-ram-area" onclick="extendnav()">3. RAM Area</a></li>
           
 
           
@@ -3258,50 +3268,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/dxl/x/xl430-w250/#control-table-description" onclick="extendnav()">Control Table Description</a></li>
-          
-
-          
-          
-        
-        </ul>
-      
-      
-      </li>
-      
-    
-  
-    
-
-    
-
-      
-      <li class="has-children">
-        <input type="radio" name="toplevel" id="toplevel_2" >
-        <label for="toplevel_2">How to Assemble [+]</label>
-
-      
-
-      
-        <ul>
-        
-          
-
-          
-
-          
-          <li><a href="http://localhost:4000/docs/en/dxl/x/xl430-w250/#wiring-through-back-case" onclick="extendnav()">Wiring through Back Case</a></li>
-          
-
-          
-          
-        
-          
-
-          
-
-          
-          <li><a href="http://localhost:4000/docs/en/dxl/x/xl430-w250/#option-frame-assembly" onclick="extendnav()">Option Frame Assembly</a></li>
+          <li><a href="http://localhost:4000/docs/en/dxl/x/xl430-w250/#control-table-description" onclick="extendnav()">4. Control Table Description</a></li>
           
 
           
@@ -3318,10 +3285,12 @@ $(function() {
 
     
 
+      
+      
       
       <li class="has-children">
         <input type="radio" name="toplevel" id="toplevel_3" >
-        <label for="toplevel_3">Maintenance [+]</label>
+        <label for="toplevel_3">3. How to Assemble [+]</label>
 
       
 
@@ -3333,7 +3302,18 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/dxl/x/xl430-w250/#horn-and-bearing-replacement" onclick="extendnav()">Horn, Bearing</a></li>
+          <li><a href="http://localhost:4000/docs/en/dxl/x/xl430-w250/#wiring-through-back-case" onclick="extendnav()">1. Wiring through Back Case</a></li>
+          
+
+          
+          
+        
+          
+
+          
+
+          
+          <li><a href="http://localhost:4000/docs/en/dxl/x/xl430-w250/#option-frame-assembly" onclick="extendnav()">2. Option Frame Assembly</a></li>
           
 
           
@@ -3351,9 +3331,11 @@ $(function() {
     
 
       
+      
+      
       <li class="has-children">
         <input type="radio" name="toplevel" id="toplevel_4" >
-        <label for="toplevel_4">Reference [+]</label>
+        <label for="toplevel_4">4. Maintenance [+]</label>
 
       
 
@@ -3365,7 +3347,41 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/dxl/x/xl430-w250/#quick-start" onclick="extendnav()">Quick Start</a></li>
+          <li><a href="http://localhost:4000/docs/en/dxl/x/xl430-w250/#horn-and-bearing-replacement" onclick="extendnav()">1. Horn, Bearing</a></li>
+          
+
+          
+          
+        
+        </ul>
+      
+      
+      </li>
+      
+    
+  
+    
+
+    
+
+      
+      
+      
+      <li class="has-children">
+        <input type="radio" name="toplevel" id="toplevel_5" >
+        <label for="toplevel_5">5. Reference [+]</label>
+
+      
+
+      
+        <ul>
+        
+          
+
+          
+
+          
+          <li><a href="http://localhost:4000/docs/en/dxl/x/xl430-w250/#quick-start" onclick="extendnav()">1. Quick Start</a></li>
           
 
           
@@ -3376,7 +3392,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/dxl/x/xl430-w250/#connector-information" onclick="extendnav()">Connector Information</a></li>
+          <li><a href="http://localhost:4000/docs/en/dxl/x/xl430-w250/#connector-information" onclick="extendnav()">2. Connector Information</a></li>
           
 
           
@@ -3387,7 +3403,7 @@ $(function() {
           
 
           
-          <li><a href="http://localhost:4000/docs/en/dxl/x/xl430-w250/#drawings" onclick="extendnav()">Drawings</a></li>
+          <li><a href="http://localhost:4000/docs/en/dxl/x/xl430-w250/#drawings" onclick="extendnav()">3. Drawings</a></li>
           
 
           
@@ -5162,8 +5178,8 @@ If the value of Bus Watchdog (98) is changed to ‘0’, Bus Watchdog Error will
 
 <div class="notice">
   
-<p><code class="highlighter-rouge">Note</code> Velocity Control Mode only uses Profile Acceleration(108). Step and Trapezoidal Profiles are supported. Velocity Override and Jerk control are supported as well. Acceleration time(t1) can be calculated as below equation.
-<img src="/assets/images/dxl/x/equation_01.gif" alt="" /></p>
+<p><code class="highlighter-rouge">Note</code> Velocity Control Mode only uses Profile Acceleration(108). Step and Trapezoidal Profiles are supported. Velocity Override and Jerk control are supported as well.   Acceleration time(t<sub>1</sub>) can be calculated as below equation.<br />
+<strong>t<sub>1</sub> = 64 x {Goal Velocity(104) / Profile Acceleration(108)}</strong></p>
 
 </div>
 
