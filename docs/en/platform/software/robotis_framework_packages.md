@@ -1,17 +1,17 @@
 ---
 layout: archive
 lang: en
-ref: software_robotis_framework
+ref: software_robotis_framework_packages
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/software/robotis_framework/
+permalink: /docs/en/platform/software/robotis_framework_packages/
 sidebar:
   title: ROBOTIS-FRAMEWORK
   nav: "robotis-framework"
 ---
 
-# [Robotis Framework](#robotis-framework)
+# [Robotis Framework Packages](#robotis-framework-packages)
 
 ## [DynamixelSDK](#dynamixelsdk)
 
@@ -22,9 +22,11 @@ Please refer to the below link for more information about the Dynamixel SDK.
 
 > Reference : [ROBOTIS Dynamixel SDK Documents]
 
-## [robotis_controller](#robotis_controller)
+## [Robotis Framework](#robotis-framework)
 
-### Overview
+### [robotis_controller](#robotis_controller)
+
+#### Overview
 
 This is the main package that controls THORMANG3. This package is responsible for following functions.
 
@@ -45,9 +47,9 @@ This is the main package that controls THORMANG3. This package is responsible fo
 Please refer to the below link to create the Robot Manager that uses `robotis_controller` package.  
 > Reference : [Creating new robot manager]
 
-### ROS API
+#### ROS API
 
-#### Subscribed Topics
+##### Subscribed Topics
 `/robotis/write_control_table` ([robotis_controller_msgs/WriteControlTable]{: .popup})  
 &emsp;&emsp; The message can write multiple item values to a specific joint by using Sync Write.  
 
@@ -76,25 +78,25 @@ Please refer to the below link to create the Robot Manager that uses `robotis_co
 `/robotis/present_joint_ctrl_modules` ([robotis_controller_msgs/JointCtrlModule]{: .popup})  
 &emsp;&emsp; The message publishes current status of motion module that controls each joint.   
 
-#### Services
+##### Services
 `/robotis/get_present_joint_ctrl_modules` ([robotis_controller_msgs/GetJointModule]{: .popup})  
 &emsp;&emsp; The service to get the configuration of motion module that controls each joint.  
 
-## [robotis_device](#robotis_device)
+### [robotis_device](#robotis_device)
 
-### Overview
+#### Overview
 This is the package that manages device information of ROBOTIS robots. This package is used when reading device information with the robot information file from the [`robotis_controller`] package.
 
-### Devices
+#### Devices
 
 The package is consisted of `devices` folder that contains directories for each device and each device directory contains `.device` file that saves device information. In order to add a new device, go to the relevant directory for the device and append the device information to the `.device` file. The following is the content of each device file.
 
-#### dynamixel
+##### dynamixel
 Device information file for dynamixel type is consisted of three sessions. The name of session is specified between '[' and ']'.
 Comments start with '#' and any texts after '#' will not be considered as source code.
 The following is the option that can be configured in each session.
 
-##### device info
+###### device info
 ```
 [device info]
 model_name  = H54-200-S500-R
@@ -103,7 +105,7 @@ device_type = dynamixel
 - `model_name` : Model name of the device.
 - `device_type` : Type of the device. Type can be either `dynamixel` or `sensor`.
 
-##### type info
+###### type info
 ```
 [type info]
 torque_to_current_value_ratio   = 9.09201
@@ -148,7 +150,7 @@ Values can be deleted for unused variables. However, depending on the control me
 - `position_i_gain_item_name` : Name of the I gain item of position PID control
 - `position_p_gain_item_name` : Name of the P gain item of position PID control
 
-##### control table
+###### control table
 ```
 [control table]
 # addr | item name                | length | access | memory |   min value   |  max value  | signed
@@ -169,14 +171,14 @@ Values can be deleted for unused variables. However, depending on the control me
 - `max value` : Maximum data value of the Item.
 - `signed` : Y for signed Item data, N for unsigned Item data.
 
-## [robotis_framework_common](#robotis_framework_common)
+### [robotis_framework_common](#robotis_framework_common)
 
-### Overview
+#### Overview
 The package contains commonly used Headers for the ROBOTIS Framework.
 
-### Description
+#### Description
 
-#### singleton.h
+##### singleton.h
 
 Singleton pattern template
 
@@ -223,25 +225,27 @@ template <class T> T* Singleton<T>::unique_instance_ = NULL;
 #endif /* ROBOTIS_FRAMEWORK_COMMON_SINGLETON_H_ */
 ```
 
-#### motion_module.h
+##### motion_module.h
 Please refer to the below link for the instruction of creating the new Motion Module.  
 > Reference : [Creating new motion module]
 
-#### sensor_module.h
+##### sensor_module.h
 Please refer to the below link for the instruction of creating the new Sensor Module.  
 > Reference : [Creating new sensor module]
 
-## [robotis_controller_msgs](#robotis-controller-msgs)
+## [ROBOTIS Framework msgs](#robotis-framework-msgs)
 
-### Overview
+### [robotis_controller_msgs](#robotis-controller-msgs)
+
+#### Overview
 This package defines Messages and Service that are used in the [robotis_controller].
 
-### ROS Message Types
+#### ROS Message Types
 * [JointCtrlModule.msg]{: .popup}
 * [StatusMsg.msg]{: .popup}
 * [SyncWriteItem.msg]{: .popup}
 
-### ROS Service Types
+#### ROS Service Types
 * [GetJointModule.srv]{: .popup}
 
 
