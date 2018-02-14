@@ -22,7 +22,7 @@ ROBOTIS DREAM II Level 2 teaches you the basics of how a robot moves, which incl
 
 # [Part List](#part-list)
 
-![](assets/images/edu/dream/dream2/ROBOTIS_DREAMⅡ_LV2_EN_PartList.jpg)
+![](/assets/images/edu/dream/dream2/ROBOTIS_DREAMⅡ_LV2_EN_PartList.jpg)
 
 - [CM-150]
 - [Geared Motor]
