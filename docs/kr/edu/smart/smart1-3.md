@@ -52,7 +52,7 @@ sidebar:
 
 {% capture smart1-3_01 %}
 각 예제의 조립 방법이나 실행 시 동작에 관한 내용은 교육키트 3단계 교안을 참고하세요.  
-또한  [예제 태스크 코드의 다운로드 방법은 여기를 참고하세요.]  
+또한  예제 태스크 코드의 다운로드 방법은 [태스크 코드 다운로드]를 참고하세요.  
 다운로드시 필요한 [BT-210] 은 1단계 구성품에 포함되어 있습니다. 분실시 쇼핑몰에서 별도 구매 해주세요.
 {% endcapture %}
 
@@ -60,21 +60,21 @@ sidebar:
 
 1. 단원별 예제 프로그램
 
-|                                    로봇                                     |                                                                     태스크 코드                                                                      | 설명                                                                        |
-|:---------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------:|:----------------------------------------------------------------------------|
-|     1. 스마트 탐사차<br />![](/assets/images/edu/smart/3._explorer.png)     |                              [Download][01_SMART_L3_SMARTEXPLORER_KR.tsk]<br />[Download][02_SMART_L3_tts_test_KR.tsk]                               | -로봇 예제 프로그램<br />-프로그래밍 예제 프로그램                          |
-|      2. 말하는 로봇<br /> ![](/assets/images/edu/smart/3._talking.png)      |                        [Download][01_SMART_L3_TALKINGROBOT_KR.tsk]<br />[Download][02_SMART_L3_speechrecognition_test_KR.tsk]                        | -로봇 예제 프로그램<br />-프로그래밍 예제 프로그램                          |
-|     3. 스마트 4족 로봇<br />![](/assets/images/edu/smart/3._ruped.png)      |     [Download][01_SMART_L3_QUADRUPEDROBOT_KR.tsk]<br />[Download][02_SMART_L3_motion_test_KR.tsk]<br />[Download][SMART_L3_QUADRUPEDROBOT.mtnx]      | -로봇 예제 프로그램<br />-프로그래밍 예제 프로그램<br />-로봇 모션 프로그램 |
-|      4. 스마트 강아지<br />![](/assets/images/edu/smart/3._puppy.png)       |          [Download][01_SMART_L3_SMARTPUPPY_KR.tsk]<br />[Download][02_SMART_L3_audio_test_KR.tsk]<br />[Download][SMART_L3_SMARTPUPPY.mtnx]          | -로봇 예제 프로그램<br />-프로그래밍 예제 프로그램<br />-로봇 모션 프로그램 |
-| 5. 스마트 변신 로봇<br />![](/assets/images/edu/smart/3._transfomation.png) | [Download][01_SMART_L3_TRANSFORMATIONROBOT_KR.tsk]<br />[Download][02_SMART_L3_video_test_KR.tsk]<br />[Download][SMART_L3_TRANSFORMATIONROBOT.mtnx] | -로봇 예제 프로그램<br />-프로그래밍 예제 프로그램<br />-로봇 모션 프로그램 |
-|     6. 스마트 드로이드<br />![](/assets/images/edu/smart/3._droid.png)      |         [Download][01_SMART_L3_SMARTDROID_KR.tsk]<br />[Download][02_SMART_L3_gesture_test_KR.tsk]<br />[Download][SMART_L3_SMARTDROID.mtnx]         | -로봇 예제 프로그램<br />-프로그래밍 예제 프로그램<br />-로봇 모션 프로그램 |
+|                                    로봇                                     |                                                                     태스크 코드                                                                      |
+|:---------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------:|
+|     1. 스마트 탐사차<br />![](/assets/images/edu/smart/3._explorer.png)     |                              [로봇 예제 프로그램][01_SMART_L3_SMARTEXPLORER_KR.tsk]<br />[프로그래밍 예제 프로그램][02_SMART_L3_tts_test_KR.tsk]                               |
+|      2. 말하는 로봇<br /> ![](/assets/images/edu/smart/3._talking.png)      |                        [로봇 예제 프로그램][01_SMART_L3_TALKINGROBOT_KR.tsk]<br />[프로그래밍 예제 프로그램][02_SMART_L3_speechrecognition_test_KR.tsk]                        |
+|     3. 스마트 4족 로봇<br />![](/assets/images/edu/smart/3._ruped.png)      |     [로봇 예제 프로그램][01_SMART_L3_QUADRUPEDROBOT_KR.tsk]<br />[프로그래밍 예제 프로그램][02_SMART_L3_motion_test_KR.tsk]<br />[로봇 모션 프로그램][SMART_L3_QUADRUPEDROBOT.mtnx]      |
+|      4. 스마트 강아지<br />![](/assets/images/edu/smart/3._puppy.png)       |          [로봇 예제 프로그램][01_SMART_L3_SMARTPUPPY_KR.tsk]<br />[프로그래밍 예제 프로그램][02_SMART_L3_audio_test_KR.tsk]<br />[로봇 모션 프로그램][SMART_L3_SMARTPUPPY.mtnx]          |
+| 5. 스마트 변신 로봇<br />![](/assets/images/edu/smart/3._transfomation.png) | [로봇 예제 프로그램][01_SMART_L3_TRANSFORMATIONROBOT_KR.tsk]<br />[프로그래밍 예제 프로그램][02_SMART_L3_video_test_KR.tsk]<br />[로봇 모션 프로그램][SMART_L3_TRANSFORMATIONROBOT.mtnx] |
+|     6. 스마트 드로이드<br />![](/assets/images/edu/smart/3._droid.png)      |         [로봇 예제 프로그램][01_SMART_L3_SMARTDROID_KR.tsk]<br />[프로그래밍 예제 프로그램][02_SMART_L3_gesture_test_KR.tsk]<br />[로봇 모션 프로그램][SMART_L3_SMARTDROID.mtnx]         |
 
 
 [R+SMART]: /docs/kr/software/mobile_app/rplussmart/#r-smart-다운로드설치
 [스마트 앱 파라미터 사용법 바로가기]: /docs/kr/software/rplus1/task/task_misc/#스마트앱-파라미터
 [R+ SMART 설치 및 예제 다운로드 방법 바로가기]: /docs/kr/software/mobile_app/rplussmart/#r-smart-다운로드설치
 [스마트3단계 교안예제]: #교안예제
-[예제 태스크 코드의 다운로드 방법은 여기를 참고하세요.]: /docs/kr/faq/download_task_code/
+[태스크 코드 다운로드]: /docs/kr/faq/download_task_code/
 [BT-210]: /docs/kr/parts/communication/bt-210/
 [01_SMART_L3_SMARTEXPLORER_KR.tsk]: http://support.robotis.com/ko/baggage_files/smart/01_smart_l3_smartexplorer_kr.tsk
 [02_SMART_L3_tts_test_KR.tsk]: http://support.robotis.com/ko/baggage_files/smart/02_smart_l3_tts_test_kr.tsk

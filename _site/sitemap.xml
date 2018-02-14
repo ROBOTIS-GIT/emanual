@@ -142,6 +142,9 @@
 <loc>http://localhost:4000/docs/en/platform/turtlebot3/appendix_opensource/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/docs/en/platform/turtlebot3/appendix_raspi_cam/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/docs/en/platform/turtlebot3/appendix_realsense/</loc>
 </url>
 <url>
@@ -649,6 +652,9 @@
 <loc>http://localhost:4000/docs/en/platform/manipulator_h/example/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/docs/en/platform/turtlebot3/example/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/docs/en/edu/ollo/explorer/</loc>
 </url>
 <url>
@@ -1069,13 +1075,13 @@
 <loc>http://localhost:4000/docs/en/platform/turtlebot3/manipulation/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/docs/en/platform/manipulator_h/manipulator_ros_packages/</loc>
+<loc>http://localhost:4000/docs/en/platform/manipulator_h/manipulator_ros/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/docs/en/platform/manipulator_h/manipulator_sdk_programming/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/docs/en/platform/manipulator_h/mass_property/</loc>
+<loc>http://localhost:4000/docs/en/platform/manipulator_h/manipulator_sdk_programming/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/docs/en/software/dynamixel/dynamixel_sdk/sample_code/matlab_broadcast_ping_protocol_2_0/</loc>
@@ -1510,7 +1516,7 @@
 <loc>http://localhost:4000/docs/kr/platform/robothand_rx28/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/docs/en/platform/software/robotis_framework/</loc>
+<loc>http://localhost:4000/docs/en/platform/software/robotis_framework_packages/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/docs/en/platform/op3/robotis_ros_packages/</loc>
