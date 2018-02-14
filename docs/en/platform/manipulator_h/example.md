@@ -218,7 +218,7 @@ These 4 functions allows the directional keys to control cursor location.
   ```
 
   > Sets convergence for IK. 1st value to determine solution; second value maximum allowed.
-
+  &emsp;  
 
   ```cpp
   gvdGoalCalculationAngleRad.resize(gpRobotisArm->GetRobotInfo()->size())

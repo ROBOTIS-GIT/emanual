@@ -15,10 +15,11 @@ sidebar:
 
 # [Introduction](#introduction)
 
-ROBOTIS DREAM II Level 2 teaches you the basics of how a robot moves, which includes the usage of sensors, speed and force, gait, and drive. This level comes with 12 chapters to help you understand the scientific and physical theory using experiments as you build the robots chapter by chapter.
+ROBOTIS DREAM II Level 2 teaches you the basics of how a robot moves, which includes the usage of sensors, speed and force, gait, and drive.  
+This level comes with 12 chapters to help you understand the scientific and physical theory using experiments as you build the robots chapter by chapter.
 
 `Caution` ROBOTIS DREAM II Level 2 requires parts from ROBOTIS DREAM II Level 1. Please make sure to purchase Level 1 first to build the robots in Level 2. The controller ([CM-150]) in ROBOTIS DREAM II level 2 contains a "Comprehensive Program" that can make the robot move without downloading a program. To program or download a program you will need the USB Cable included in the ROBOTIS DREAM II Level 1. If you want to build and program your robots using more parts and peripheral devices, please purchase the ROBOTIS DREAM II Level 3 or necessary parts separately.
-
+{: .notice}
 
 # [Part List](#part-list)
 
@@ -68,7 +69,7 @@ For more information assembly and operation, please refer to the ROBOTIS II DREA
 
 1. Integrated example program
 - This program is basically included in the main controller when you purchase the goods.
-- Please refer to the Operating Method to see how to use this program.
+- Please refer to the Operating Method to see how to use this program.  
   `Download` [DREAM2_L2_Total_EN.tsk]
 
 2. Example program of each chapter

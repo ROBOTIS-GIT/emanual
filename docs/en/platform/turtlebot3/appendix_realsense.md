@@ -105,7 +105,7 @@ $ cd catkin_ws && catkin_make -j2
 $ sudo apt-get install ros-kinetic-realsense-camera
 ```
 
-### [Run realsense_camera Node](#run-realsensecamera-node)
+### [Run realsense_camera Node](#run-realsense_camera-node)
 
 **[TurtleBot]** Run the following command
 

@@ -9765,7 +9765,7 @@ turtlebot3:
       - title: "Installation"
         url: /platform/turtlebot3/appendix_realsense/#installation
       - title: "Run realsense_camera Node"
-        url: /platform/turtlebot3/appendix_realsense/#run-realsensecamera-node
+        url: /platform/turtlebot3/appendix_realsense/#run-realsense_camera-node
       - title: "(Optional) To Try as the Example Video Shows"
         url: /platform/turtlebot3/appendix_realsense/#optional-to-try-as-the-example-video-shows
     - title: "References"
