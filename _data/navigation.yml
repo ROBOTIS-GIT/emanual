@@ -8030,9 +8030,13 @@ dream2-2:
   url: /edu/dream/dream2-2/#examples
   urlkr: /edu/dream/dream2-2/#교안예제
   children:
-  - titlekr: "통합 예제 프로그램"
+  - title: "Integrated Examples"
+    titlekr: "통합 예제 프로그램"
+    url: /edu/dream/dream2-2/#integrated-example-program
     urlkr: /edu/dream/dream2-2/#통합-예제-프로그램
-  - titlekr: "단원별 예제 프로그램"
+  - title: "Chapter Examples"
+    titlekr: "단원별 예제 프로그램"
+    url: /edu/dream/dream2-2/#example-program-of-each-chapter
     urlkr: /edu/dream/dream2-2/#단원별-예제-프로그램
 
 dream2-3:

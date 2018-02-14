@@ -67,12 +67,12 @@ ROBOTIS DREAM II level 2 comes with a "Comprehensive Program" in the controller 
 For more information assembly and operation, please refer to the ROBOTIS II DREAM Level 2 workbook. The controller initially comes with the comprehensive program pre-installed in it. To create your own program or download, click here to read more on [How to Download Task code]. You will need the USB cable to download the programs. This is included in ROBOTIS DREAM II Level 1.
 {: .notice}
 
-1. Integrated example program
+## [Integrated Example Program](#integrated-example-program)
 - This program is basically included in the main controller when you purchase the goods.
 - Please refer to the Operating Method to see how to use this program.  
   `Download` [DREAM2_L2_Total_EN.tsk]
 
-2. Example program of each chapter
+## [Example program of each chapter](#example-program-of-each-chapter)
 
 |Robot|TASK Code|
 | :---: | :---: |
