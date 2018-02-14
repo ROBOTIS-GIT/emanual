@@ -98,11 +98,11 @@ The controller initially comes with the comprehensive program for DREAM II Level
 |23. Sports Car<br />![](/assets/images/edu/dream/dream2/dream2-3_sportscar.jpg)|[Download][ex_23]|
 |24. Imagine<br />![](/assets/images/edu/dream/dream2/dream2-3_imagine.jpg)|[Download][ex_24]|
 
+
 [CM-150]: /docs/en/parts/controller/cm-150/
 [Geared Motor]: /docs/en/parts/motor/geared_motor/
 [Servo Motor]: /docs/en/parts/motor/servo_motor/
 [Remote Control (RC-100B)]: /docs/en/parts/communication/rc-100/
-[IR Receiver]: 
 [USB Downloader(LN-101)]: /docs/en/parts/interface/ln-101/
 [Powersave Timer]: /docs/en/software/rplus1/task/programming_02/#powersave-timer
 [How to Download Task code]: /docs/en/faq/download_task_code/
