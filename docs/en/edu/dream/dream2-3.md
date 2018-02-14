@@ -36,18 +36,18 @@ For more information, assembly and operation, please refer to the ROBOTIS DREAM 
 
 |Robot|TASK Code|
 | :---: | :---: |
-|1. Security Robot<br />![](/assets/images/edu/dream/dream2-3_security.jpg)|[Download][ex_01]|
-|2. Sound Detecting Robot<br />![](/assets/images/edu/dream/dream2-3_noisemeter.jpg)|[Download][ex_02]|
-|3. Four-Wheeled Car<br />![](/assets/images/edu/dream/dream2-3_fourwheeled.jpg)|[Download][ex_03]|
-|4. Money Box<br />![](/assets/images/edu/dream/dream2-3_moneybox.jpg)|[Download][ex_04]|
-|5. Roly Poly<br />![](/assets/images/edu/dream/dream2-3_rolypoly.jpg)|[Download][ex_05]|
-|6. Passcode Safe<br />![](/assets/images/edu/dream/dream2-3_passcodesafe.jpg)|[Download][ex_06]|
-|7. Motorcycle<br />![](/assets/images/edu/dream/dream2-3_motorcycle.jpg)|[Download][ex_07]|
-|8. Cannon<br />![](/assets/images/edu/dream/dream2-3_cannon.jpg)|[Download][ex_08]|
-|9. Airplane<br />![](/assets/images/edu/dream/dream2-3_airplane.jpg)|[Download][ex_09]|
-|10. Robot Arm<br />![](/assets/images/edu/dream/dream2-3_robotarm.jpg)|[Download][ex_10]|
-|11. Sports Car<br />![](/assets/images/edu/dream/dream2-3_sportscar.jpg)|[Download][ex_11]|
-|12. Imagine<br />![](/assets/images/edu/dream/dream2-3_imagine.jpg)|[Download][ex_12]|
+|1. Security Robot<br />![](/assets/images/edu/dream/dream2/dream2-3_security.jpg)|[Download][ex_01]|
+|2. Sound Detecting Robot<br />![](/assets/images/edu/dream/dream2/dream2-3_noisemeter.jpg)|[Download][ex_02]|
+|3. Four-Wheeled Car<br />![](/assets/images/edu/dream/dream2/dream2-3_fourwheeled.jpg)|[Download][ex_03]|
+|4. Money Box<br />![](/assets/images/edu/dream/dream2/dream2-3_moneybox.jpg)|[Download][ex_04]|
+|5. Roly Poly<br />![](/assets/images/edu/dream/dream2/dream2-3_rolypoly.jpg)|[Download][ex_05]|
+|6. Passcode Safe<br />![](/assets/images/edu/dream/dream2/dream2-3_passcodesafe.jpg)|[Download][ex_06]|
+|7. Motorcycle<br />![](/assets/images/edu/dream/dream2/dream2-3_motorcycle.jpg)|[Download][ex_07]|
+|8. Cannon<br />![](/assets/images/edu/dream/dream2/dream2-3_cannon.jpg)|[Download][ex_08]|
+|9. Airplane<br />![](/assets/images/edu/dream/dream2/dream2-3_airplane.jpg)|[Download][ex_09]|
+|10. Robot Arm<br />![](/assets/images/edu/dream/dream2/dream2-3_robotarm.jpg)|[Download][ex_10]|
+|11. Sports Car<br />![](/assets/images/edu/dream/dream2/dream2-3_sportscar.jpg)|[Download][ex_11]|
+|12. Imagine<br />![](/assets/images/edu/dream/dream2/dream2-3_imagine.jpg)|[Download][ex_12]|
 
 [Servo Motor]: /docs/en/parts/motor/servo_motor/
 [Remote Control (RC-100B)]: /docs/en/parts/communication/rc-100/
