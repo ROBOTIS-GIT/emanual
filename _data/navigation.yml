@@ -210,9 +210,11 @@ main:
         url: /edu/dream/dream-a/
       - title: "SET B"
         url: /edu/dream/dream-b/
-    - titlekr: "드림 II"
+    - title: "Dream II"
+      titlekr: "드림 II"
       children:
-      - titlekr: "1단계 교육키트"
+      - title: "LEVEL 1"
+        titlekr: "1단계 교육키트"
         url: /edu/dream/dream2-1/
       - titlekr: "2단계 교육키트"
         url: /edu/dream/dream2-2/
@@ -7986,9 +7988,13 @@ dream-b:
   url: /edu/dream/dream-b/#examples
 
 dream2-1:
-- titlekr: "개요"
+- title: "Introduction"
+  titlekr: "개요"
+  url: /edu/dream/dream2-1/#introduction
   urlkr: /edu/dream/dream2-1/#개요
-- titlekr: "부품 리스트"
+- title: "Part List"
+  titlekr: "부품 리스트"
+  url: /edu/dream/dream2-1/#part-list
   urlkr: /edu/dream/dream2-1/#부품-리스트
 
 dream2-2:
