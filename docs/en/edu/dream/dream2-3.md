@@ -30,7 +30,6 @@ ROBOTIS DREAM II LEVEL 3 consists of robot examples that can be controlled using
 # [Examples](#examples)
 
 For more information, assembly and operation, please refer to the ROBOTIS DREAM II Level 3 workbook. You must download the program for each chapter. To create your own program or download, click here to read more on [How to Download Task code]. You will need the USB cable to download the programs. This is included in ROBOTIS DREAM II Level 1.
-{: .notice}
 
 1. Example program of each chapter
 
