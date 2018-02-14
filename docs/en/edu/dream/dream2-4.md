@@ -52,6 +52,7 @@ For more information, assembly and operation, please refer to the ROBOTIS DREAM 
 [CM-150]: /docs/en/parts/controller/cm-150/ 
 [Servo Motor]: /docs/en/parts/motor/servo_motor/
 [IR Sensor]: /docs/en/parts/sensor/irss-10/
+[LED Module]: /docs/en/parts/display/lm-10/
 [Touch Sensor]: /docs/en/parts/sensor/ts-10/
 [How to Download Task code]: /docs/en/faq/download_task_code/
 [ex_01]: http://support.robotis.com/en/baggage_files/dream/dream_l3_musicbox_en.tsk
