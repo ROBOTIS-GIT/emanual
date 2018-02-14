@@ -15,9 +15,16 @@ sidebar:
 
 # [Introduction](#introduction)
 
-ROBOTIS DREAM II School Set consists of DREAM II Jump Kit, Level 2 & Level 3 Part Kits with a PDF Assembly Manual for 20+ Robot Configurations. The assembly manual of 20+ project lessons can be viewed using the FREE R+Design Application which can be downloaded on iOS & Google PLAY Stores. The R+Design App is compatible with Windows, Mac OS, Android and iOS. DREAM II School Set Workbook including Level 2 & Level 3 examples can be purchased separately: Curriculum consists of 24 Lesson Plans which are mapped to National and State Standards (NGSS). With the DREAM II School Set Curriculum, students learn about the basic components of robotics, scientific principles of robotic movement and technical & mechanical principles of robotics education. Lesson Plans within the Basic Components of Robotics include subjects focusing on the use of Infrared (IR) Sensors, Mics & Batteries. Lessons focus on specific scientific principles such as the Principles of Velocity, Elastic Force, Inertia, and Acceleration, Mechanical Engineering Principles such as Four-Wheeled Drive & Engine Systems.
+ROBOTIS DREAM II School Set consists of DREAM II Jump Kit, Level 2 & Level 3 Part Kits with a PDF Assembly Manual for 20+ Robot Configurations.  
+The assembly manual of 20+ project lessons can be viewed using the FREE R+Design Application which can be downloaded on iOS & Google PLAY Stores.  
+The R+Design App is compatible with Windows, Mac OS, Android and iOS.  
+DREAM II School Set Workbook including Level 2 & Level 3 examples can be purchased separately: Curriculum consists of 24 Lesson Plans which are mapped to National and State Standards (NGSS).  
+With the DREAM II School Set Curriculum, students learn about the basic components of robotics, scientific principles of robotic movement and technical & mechanical principles of robotics education.  
+Lesson Plans within the Basic Components of Robotics include subjects focusing on the use of Infrared (IR) Sensors, Mics & Batteries.  
+Lessons focus on specific scientific principles such as the Principles of Velocity, Elastic Force, Inertia, and Acceleration, Mechanical Engineering Principles such as Four-Wheeled Drive & Engine Systems.
 
 `Caution` The controller ([CM-150]) in ROBOTIS DREAM II School Set comes with a "Comprehensive Program" that can make the robot move without downloading a program, for DREAM II Level 2 examples (first 12 examples). For the DREAM II Level 3 examples (examples 13 through 24), you should download individual program in the controller. To program or download a program you will need the USB Cable included in the ROBOTIS DREAM II School Set. If you want to build and program your robots using more parts and peripheral devices, please purchase the ROBOTIS DREAM II Level 4 and 5.
+{: .notice}
 
 # [Part List](#part-list)
 
@@ -31,9 +38,12 @@ ROBOTIS DREAM II School Set consists of DREAM II Jump Kit, Level 2 & Level 3 Par
 
 # [Quick Start](#quick-start)
 
-ROBOTIS DREAM II School Set comes with a "Comprehensive Program" in the controller that can make the robot move without downloading a program. This comprehensive program works for DREAM II Level 2 example robots. For DREAM II Level 3 examples, please download the individual program referring to the “Examples” tab below.
+ROBOTIS DREAM II School Set comes with a "Comprehensive Program" in the controller that can make the robot move without downloading a program.  
+This comprehensive program works for DREAM II Level 2 example robots.  
+For DREAM II Level 3 examples, please download the individual program referring to the “Examples” tab below.
 
 `Caution` The comprehensive program in the controller will be overwritten when downloading a program. Therefore, you must download the program using [USB Downloader(LN-101)].
+{: .notice}
 
 ## [How to Play - Comprehensive Program](#how-to-play)
 
@@ -96,7 +106,7 @@ The controller initially comes with the comprehensive program for DREAM II Level
 |21. Airplane<br />![](/assets/images/edu/dream/dream2/dream2-3_airplane.jpg)|[Download][ex_21]|
 |22. Robot Arm<br />![](/assets/images/edu/dream/dream2/dream2-3_robotarm.jpg)|[Download][ex_22]|
 |23. Sports Car<br />![](/assets/images/edu/dream/dream2/dream2-3_sportscar.jpg)|[Download][ex_23]|
-|24. Imagine<br />![](/assets/images/edu/dream/dream2/dream2-3_imagine.jpg)|[Download][ex_24]|
+|24. Imagine<br />![](/assets/images/edu/dream/dream2/dream2-3_imagine.jpg)|-|
 
 
 [CM-150]: /docs/en/parts/controller/cm-150/
@@ -107,16 +117,27 @@ The controller initially comes with the comprehensive program for DREAM II Level
 [Powersave Timer]: /docs/en/software/rplus1/task/programming_02/#powersave-timer
 [How to Download Task code]: /docs/en/faq/download_task_code/
 [DREAM2_L2_Total_EN.tsk]: http://support.robotis.com/en/baggage_files/dream/dream_l2_total_en.tsk
-[ex_01]: http://support.robotis.com/en/baggage_files/dream/dream_l2_elephant_en.tsk
-[ex_02]: http://support.robotis.com/en/baggage_files/dream/dream_l2_flower_firefly_en.tsk
-[ex_03]: http://support.robotis.com/en/baggage_files/dream/dream_l2_avoider_en.tsk
-[ex_04]: http://support.robotis.com/en/baggage_files/dream/dream_l2_seal_en.tsk
-[ex_05]: http://support.robotis.com/en/baggage_files/dream/dream_l2_beetle_en.tsk
-[ex_06]: http://support.robotis.com/en/baggage_files/dream/dream_l2_raccoon_en.tsk
-[ex_07]: http://support.robotis.com/en/baggage_files/dream/dream_l2_scorpion_en.tsk
-[ex_08]: http://support.robotis.com/en/baggage_files/dream/dream_l2_puppy_en.tsk
-[ex_09]: http://support.robotis.com/en/baggage_files/dream/dream_l2_squirrel_en.tsk
-[ex_10]: http://support.robotis.com/en/baggage_files/dream/dream_l2_buffalo_en.tsk
-[ex_11]: http://support.robotis.com/en/baggage_files/dream/dream_l2_crocodile_en.tsk
-[ex_12]: http://support.robotis.com/en/baggage_files/dream/dream_l2_distancesensor_en.tsk
+[ex_01]: http://support.robotis.com/en/baggage_files/dream/dream2_l2_elephant_en.tskx
+[ex_02]: http://support.robotis.com/en/baggage_files/dream/dream2_l2_flower_firefly_en.tskx
+[ex_03]: http://support.robotis.com/en/baggage_files/dream/dream2_l2_avoider_en.tskx
+[ex_04]: http://support.robotis.com/en/baggage_files/dream/dream2_l2_seal_en.tskx
+[ex_05]: http://support.robotis.com/en/baggage_files/dream/dream2_l2_beetle_en.tskx
+[ex_06]: http://support.robotis.com/en/baggage_files/dream/dream2_l2_raccoon_en.tskx
+[ex_07]: http://support.robotis.com/en/baggage_files/dream/dream2_l2_scorpion_en.tskx
+[ex_08]: http://support.robotis.com/en/baggage_files/dream/dream2_l2_puppy_en.tskx
+[ex_09]: http://support.robotis.com/en/baggage_files/dream/dream2_l2_squirrel_en.tskx
+[ex_10]: http://support.robotis.com/en/baggage_files/dream/dream2_l2_buffalo_en.tskx
+[ex_11]: http://support.robotis.com/en/baggage_files/dream/dream2_l2_crocodile_en.tskx
+[ex_12]: http://support.robotis.com/en/baggage_files/dream/dream2_l2_distancesensor_en.tskx
+[ex_13]: http://support.robotis.com/en/baggage_files/dream/dream2_l3_security_en.tskx
+[ex_14]: http://support.robotis.com/en/baggage_files/dream/dream2_l3_noisemeter_en.tskx
+[ex_15]: http://support.robotis.com/en/baggage_files/dream/dream2_l3_fourwheel_en.tskx
+[ex_16]: http://support.robotis.com/en/baggage_files/dream/dream2_l3_coinbank_en.tskx
+[ex_17]: http://support.robotis.com/en/baggage_files/dream/dream2_l3_tumblingdoll_en.tskx
+[ex_18]: http://support.robotis.com/en/baggage_files/dream/dream2_l3_dialsafe_en.tskx
+[ex_19]: http://support.robotis.com/en/baggage_files/dream/dream2_l3_motorcycle_en.tskx
+[ex_20]: http://support.robotis.com/en/baggage_files/dream/dream2_l3_cannon_en.tskx
+[ex_21]: http://support.robotis.com/en/baggage_files/dream/dream2_l3_airplane_en.tskx
+[ex_22]: http://support.robotis.com/en/baggage_files/dream/dream2_l3_manipulator_en.tskx
+[ex_23]: http://support.robotis.com/en/baggage_files/dream/dream2_l3_sportscar_en.tskx
 [power_button]: /assets/images/edu/ollo/ollo_lvl2_001.jpg

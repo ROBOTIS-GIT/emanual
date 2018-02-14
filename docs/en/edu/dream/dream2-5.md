@@ -49,15 +49,15 @@ For more information assembly and operation, please refer to the ROBOTIS DREAM I
 [CM-150]: /docs/en/parts/controller/cm-150/
 [BT-410]: /docs/en/parts/communication/bt-410/
 [How to Download Task code]: /docs/en/faq/download_task_code/
-[ex_01]: http://support.robotis.com/en/baggage_files/dream/dream_l4_tank_en.tsk
-[ex_02]: http://support.robotis.com/en/baggage_files/dream/dream_l4_robotknight_en.tsk
-[ex_03]: http://support.robotis.com/en/baggage_files/dream/dream_l4_warrobot_en.tsk
-[ex_04]: http://support.robotis.com/en/baggage_files/dream/dream_l4_hockeyrobot_en.tskk
-[ex_05]: http://support.robotis.com/en/baggage_files/dream/dream_l4_excavator_en.tsk
-[ex_06]: http://support.robotis.com/en/baggage_files/dream/dream_l4_laddertruck_en.tsk
-[ex_07]: http://support.robotis.com/en/baggage_files/dream/dream_l4_forklift_en.tsk
-[ex_08]: http://support.robotis.com/en/baggage_files/dream/dream_l4_boxer_en.tsk
-[ex_09]: http://support.robotis.com/en/baggage_files/dream/dream_l4_bulldozer_en.tsk
-[ex_10]: http://support.robotis.com/en/baggage_files/dream/dream_l4_dribbler_en.tsk
-[ex_11]: http://support.robotis.com/en/baggage_files/dream/dream_l4_explorer_en.tsk
-[ex_12]: http://support.robotis.com/en/baggage_files/dream/dream_l4_transporter_en.tsk
+[ex_01]: http://support.robotis.com/en/baggage_files/dream/dream2_l5_tank_en.tskx
+[ex_02]: http://support.robotis.com/en/baggage_files/dream/dream2_l5_robotknight_en.tskx
+[ex_03]: http://support.robotis.com/en/baggage_files/dream/dream2_l5_warrobot_en.tskx
+[ex_04]: http://support.robotis.com/en/baggage_files/dream/dream2_l5_hockeyrobot_en.tskx
+[ex_05]: http://support.robotis.com/en/baggage_files/dream/dream2_l5_excavator_en.tskx
+[ex_06]: http://support.robotis.com/en/baggage_files/dream/dream2_l5_laddertruck_en.tskx
+[ex_07]: http://support.robotis.com/en/baggage_files/dream/dream2_l5_forklift_en.tskx
+[ex_08]: http://support.robotis.com/en/baggage_files/dream/dream2_l5_boxer_en.tskx
+[ex_09]: http://support.robotis.com/en/baggage_files/dream/dream2_l5_bulldozer_en.tskx
+[ex_10]: http://support.robotis.com/en/baggage_files/dream/dream2_l5_dribbler_en.tskx
+[ex_11]: http://support.robotis.com/en/baggage_files/dream/dream2_l5_explorer_en.tskx
+[ex_12]: http://support.robotis.com/en/baggage_files/dream/dream2_l5_transporter_en.tskx

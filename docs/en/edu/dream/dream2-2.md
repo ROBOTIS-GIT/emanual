@@ -86,24 +86,23 @@ For more information assembly and operation, please refer to the ROBOTIS II DREA
 |9. Squirrel<br />![](/assets/images/edu/dream/dream1-2_squirrel.jpg)|[Download][ex_09]|
 |10. Buffalo<br />![](/assets/images/edu/dream/dream1-2_buffalo.jpg)|[Download][ex_10]|
 |11. Crocodile<br />![](/assets/images/edu/dream/dream1-2_crocodile.jpg)|[Download][ex_11]|
-|12. Imagine<br />![](/assets/images/edu/dream/dream1-2_imagine.jpg)|[Download][ex_12]|
+|12. Imagine<br />![](/assets/images/edu/dream/dream1-2_imagine.jpg)|-|
 
 [CM-150]: /docs/en/parts/controller/cm-150/
 [Geared Motor]: /docs/en/parts/motor/geared_motor/
 [USB Downloader(LN-101)]: /docs/en/parts/interface/ln-101/
 [Powersave Timer]: /docs/en/software/rplus1/task/programming_02/#powersave-timer
 [How to Download Task code]: /docs/en/faq/download_task_code/
-[DREAM2_L2_Total_EN.tsk]: http://support.robotis.com/en/baggage_files/dream/dream_l2_total_en.tsk
-[ex_01]: http://support.robotis.com/en/baggage_files/dream/dream_l2_elephant_en.tsk
-[ex_02]: http://support.robotis.com/en/baggage_files/dream/dream_l2_flower_firefly_en.tsk
-[ex_03]: http://support.robotis.com/en/baggage_files/dream/dream_l2_avoider_en.tsk
-[ex_04]: http://support.robotis.com/en/baggage_files/dream/dream_l2_seal_en.tsk
-[ex_05]: http://support.robotis.com/en/baggage_files/dream/dream_l2_beetle_en.tsk
-[ex_06]: http://support.robotis.com/en/baggage_files/dream/dream_l2_raccoon_en.tsk
-[ex_07]: http://support.robotis.com/en/baggage_files/dream/dream_l2_scorpion_en.tsk
-[ex_08]: http://support.robotis.com/en/baggage_files/dream/dream_l2_puppy_en.tsk
-[ex_09]: http://support.robotis.com/en/baggage_files/dream/dream_l2_squirrel_en.tsk
-[ex_10]: http://support.robotis.com/en/baggage_files/dream/dream_l2_buffalo_en.tsk
-[ex_11]: http://support.robotis.com/en/baggage_files/dream/dream_l2_crocodile_en.tsk
-[ex_12]: http://support.robotis.com/en/baggage_files/dream/dream_l2_distancesensor_en.tsk
+[DREAM2_L2_Total_EN.tsk]: http://support.robotis.com/en/baggage_files/dream/dream2_l2_total_en.tskx
+[ex_01]: http://support.robotis.com/en/baggage_files/dream/dream2_l2_elephant_en.tskx
+[ex_02]: http://support.robotis.com/en/baggage_files/dream/dream2_l2_flower_firefly_en.tskx
+[ex_03]: http://support.robotis.com/en/baggage_files/dream/dream2_l2_avoider_en.tskx
+[ex_04]: http://support.robotis.com/en/baggage_files/dream/dream2_l2_seal_en.tskx
+[ex_05]: http://support.robotis.com/en/baggage_files/dream/dream2_l2_beetle_en.tskx
+[ex_06]: http://support.robotis.com/en/baggage_files/dream/dream2_l2_raccoon_en.tskx
+[ex_07]: http://support.robotis.com/en/baggage_files/dream/dream2_l2_scorpion_en.tskx
+[ex_08]: http://support.robotis.com/en/baggage_files/dream/dream2_l2_puppy_en.tskx
+[ex_09]: http://support.robotis.com/en/baggage_files/dream/dream2_l2_squirrel_en.tskx
+[ex_10]: http://support.robotis.com/en/baggage_files/dream/dream2_l2_buffalo_en.tskx
+[ex_11]: http://support.robotis.com/en/baggage_files/dream/dream2_l2_crocodile_en.tskx
 [power_button]: /assets/images/edu/ollo/ollo_lvl2_001.jpg
