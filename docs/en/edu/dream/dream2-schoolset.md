@@ -45,7 +45,7 @@ For DREAM II Level 3 examples, please download the individual program referring 
 `Caution` The comprehensive program in the controller will be overwritten when downloading a program. Therefore, you must download the program using [USB Downloader(LN-101)].
 {: .notice}
 
-## [How to Play - Comprehensive Program](#how-to-play)
+## [How to Play(Comprehensive Program)](#how-to-playcomprehensive-program)
 
 - If the button on the controller is pressed sequentially, the musical notes are played. Depending on the pressed number, the installed program can be selected.
 - The default setting for [Powersave Timer] is 5 minutes when the controller is activated.

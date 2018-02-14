@@ -216,14 +216,20 @@ main:
       - title: "LEVEL 1"
         titlekr: "1단계 교육키트"
         url: /edu/dream/dream2-1/
-      - titlekr: "2단계 교육키트"
+      - title: "LEVEL 2"
+        titlekr: "2단계 교육키트"
         url: /edu/dream/dream2-2/
-      - titlekr: "3단계 교육키트"
+      - title: "LEVEL 3"
+        titlekr: "3단계 교육키트"
         url: /edu/dream/dream2-3/
-      - titlekr: "4단계 교육키트"
+      - title: "LEVEL 4"
+        titlekr: "4단계 교육키트"
         url: /edu/dream/dream2-4/
-      - titlekr: "5단계 교육키트"
+      - title: "LEVEL 5"
+        titlekr: "5단계 교육키트"
         url: /edu/dream/dream2-5/
+      - title: "School Set"
+        url: /edu/dream/dream2-schoolset/
     - titlekr: "스마트 I"
       children:
       - titlekr: "1단계 교육키트"
@@ -7998,18 +8004,30 @@ dream2-1:
   urlkr: /edu/dream/dream2-1/#부품-리스트
 
 dream2-2:
-- titlekr: "개요"
+- title: "Introduction"
+  titlekr: "개요"
+  url: /edu/dream/dream2-2/#introduction
   urlkr: /edu/dream/dream2-2/#개요
-- titlekr: "부품 리스트"
+- title: "Part List"
+  titlekr: "부품 리스트"
+  url: /edu/dream/dream2-2/#part-list
   urlkr: /edu/dream/dream2-2/#부품-리스트
-- titlekr: "작동하기"
+- title: "Quick Start"
+  titlekr: "작동하기"
+  url: /edu/dream/dream2-2/#quick-start
   urlkr: /edu/dream/dream2-2/#작동하기
   children:
-  - titlekr: "작동방법"
+  - title: "How to Play"
+    titlekr: "작동방법"
+    url: /edu/dream/dream2-2/#how-to-play
     urlkr: /edu/dream/dream2-2/#작동방법
-  - titlekr: "프로그램 선택 방법"
+  - title: "Select Program"
+    titlekr: "프로그램 선택 방법"
+    url: /edu/dream/dream2-2/#select-program
     urlkr: /edu/dream/dream2-2/#프로그램-선택-방법
-- titlekr: "교안예제"
+- title: "Examples"
+  titlekr: "교안예제"
+  url: /edu/dream/dream2-2/#examples
   urlkr: /edu/dream/dream2-2/#교안예제
   children:
   - titlekr: "통합 예제 프로그램"
@@ -8018,28 +8036,61 @@ dream2-2:
     urlkr: /edu/dream/dream2-2/#단원별-예제-프로그램
 
 dream2-3:
-- titlekr: "개요"
+- title: "Introduction"
+  titlekr: "개요"
+  url: /edu/dream/dream2-3/#introduction
   urlkr: /edu/dream/dream2-3/#개요
-- titlekr: "부품 리스트"
+- title: "Part List"
+  titlekr: "부품 리스트"
+  url: /edu/dream/dream2-3/#part-list
   urlkr: /edu/dream/dream2-3/#부품-리스트
-- titlekr: "교안예제"
+- title: "Examples"
+  titlekr: "교안예제"
+  url: /edu/dream/dream2-3/#examples
   urlkr: /edu/dream/dream2-3/#교안예제
 
 dream2-4:
-- titlekr: "개요"
+- title: "Introduction"
+  titlekr: "개요"
+  url: /edu/dream/dream2-4/#introduction
   urlkr: /edu/dream/dream2-4/#개요
-- titlekr: "부품 리스트"
+- title: "Part List"
+  titlekr: "부품 리스트"
+  url: /edu/dream/dream2-4/#part-list
   urlkr: /edu/dream/dream2-4/#부품-리스트
-- titlekr: "교안예제"
+- title: "Examples"
+  titlekr: "교안예제"
+  url: /edu/dream/dream2-4/#examples
   urlkr: /edu/dream/dream2-4/#교안예제
 
 dream2-5:
-- titlekr: "개요"
+- title: "Introduction"
+  titlekr: "개요"
+  url: /edu/dream/dream2-5/#introduction
   urlkr: /edu/dream/dream2-5/#개요
-- titlekr: "부품 리스트"
+- title: "Part List"
+  titlekr: "부품 리스트"
+  url: /edu/dream/dream2-5/#part-list
   urlkr: /edu/dream/dream2-5/#부품-리스트
-- titlekr: "교안예제"
+- title: "Examples"
+  titlekr: "교안예제"
+  url: /edu/dream/dream2-5/#examples
   urlkr: /edu/dream/dream2-5/#교안예제
+
+dream2-schoolset:
+- title: "Introduction"
+  url: /edu/dream/dream2-schoolset/#introduction
+- title: "Part List"
+  url: /edu/dream/dream2-schoolset/#part-list
+- title: "Quick Start"
+  url: /edu/dream/dream2-schoolset/#quick-start
+  children:
+  - title: "How to Play"
+    url: /edu/dream/dream2-schoolset/#how-to-playcomprehensive-program
+  - title: "Select Program"
+    url: /edu/dream/dream2-schoolset/#select-program
+- title: "Examples"
+  url: /edu/dream/dream2-schoolset/#examples
 
 smart1-1:
 - titlekr: "개요"
