@@ -17,7 +17,7 @@ sidebar:
 
 ROBOTIS DREAM II School Set consists of DREAM II Jump Kit, Level 2 & Level 3 Part Kits with a PDF Assembly Manual for 20+ Robot Configurations. The assembly manual of 20+ project lessons can be viewed using the FREE R+Design Application which can be downloaded on iOS & Google PLAY Stores. The R+Design App is compatible with Windows, Mac OS, Android and iOS. DREAM II School Set Workbook including Level 2 & Level 3 examples can be purchased separately: Curriculum consists of 24 Lesson Plans which are mapped to National and State Standards (NGSS). With the DREAM II School Set Curriculum, students learn about the basic components of robotics, scientific principles of robotic movement and technical & mechanical principles of robotics education. Lesson Plans within the Basic Components of Robotics include subjects focusing on the use of Infrared (IR) Sensors, Mics & Batteries. Lessons focus on specific scientific principles such as the Principles of Velocity, Elastic Force, Inertia, and Acceleration, Mechanical Engineering Principles such as Four-Wheeled Drive & Engine Systems.
 
-`Caution` The controller (CM-150) in ROBOTIS DREAM II School Set comes with a "Comprehensive Program" that can make the robot move without downloading a program, for DREAM II Level 2 examples (first 12 examples). For the DREAM II Level 3 examples (examples 13 through 24), you should download individual program in the controller. To program or download a program you will need the USB Cable included in the ROBOTIS DREAM II School Set. If you want to build and program your robots using more parts and peripheral devices, please purchase the ROBOTIS DREAM II Level 4 and 5.
+`Caution` The controller ([CM-150]) in ROBOTIS DREAM II School Set comes with a "Comprehensive Program" that can make the robot move without downloading a program, for DREAM II Level 2 examples (first 12 examples). For the DREAM II Level 3 examples (examples 13 through 24), you should download individual program in the controller. To program or download a program you will need the USB Cable included in the ROBOTIS DREAM II School Set. If you want to build and program your robots using more parts and peripheral devices, please purchase the ROBOTIS DREAM II Level 4 and 5.
 
 # [Part List](#part-list)
 
@@ -100,9 +100,9 @@ The controller initially comes with the comprehensive program for DREAM II Level
 
 [CM-150]: /docs/en/parts/controller/cm-150/
 [Geared Motor]: /docs/en/parts/motor/geared_motor/
-[Servo Motor]:
-[Remote Control (RC-100B)]:
-[IR Receiver]:
+[Servo Motor]: /docs/en/parts/motor/servo_motor/
+[Remote Control (RC-100B)]: /docs/en/parts/communication/rc-100/
+[IR Receiver]: 
 [USB Downloader(LN-101)]: /docs/en/parts/interface/ln-101/
 [Powersave Timer]: /docs/en/software/rplus1/task/programming_02/#powersave-timer
 [How to Download Task code]: /docs/en/faq/download_task_code/
