@@ -80,11 +80,28 @@ The TurtleBot3 Waffle uses Intel® RealSense™ Camera R200 as a default vision 
 **Warning!** There are installation prerequisites for the Intel® RealSense™ package installation in http://wiki.ros.org/librealsense
 {: .notice--warning}
 
-**[TurtleBot]** The following commands will install relevant Intel® RealSense™ packages on your ROS system.
+**[TurtleBot]** The following commands will install relevant Intel® RealSense™ library.
 
 ``` bash
 $ sudo apt-get install linux-headers-generic
 $ sudo apt-get install ros-kinetic-librealsense
+```
+
+**[TurtleBot]** To run the Intel® RealSense™ with ROS, the following package is needed. There are stable and unstable version packages. Choose one and install it.
+
+#### [Stable]
+
+``` bash
+$ cd catkin_ws/src
+$ git clone https://github.com/intel-ros/realsense.git
+$ cd realsense
+$ git checkout 1.8.0
+$ cd catkin_ws && catkin_make -j2
+```
+
+#### [Unstable]
+
+``` bash
 $ sudo apt-get install ros-kinetic-realsense-camera
 ```
 
