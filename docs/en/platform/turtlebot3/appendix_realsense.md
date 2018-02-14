@@ -92,6 +92,7 @@ $ sudo apt-get install ros-kinetic-librealsense
 #### [Stable]
 
 ``` bash
+$ cd catkin_ws/src
 $ git clone https://github.com/intel-ros/realsense.git
 $ cd realsense
 $ git checkout 1.8.0
