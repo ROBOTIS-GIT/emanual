@@ -24,7 +24,7 @@
 
 
 
-<meta name="description" content="Page not found. Your pixels are in another canvas.">
+<meta name="description" content="e-Manual wiki">
 
 
 
@@ -40,8 +40,6 @@
   <meta property="og:url" content="http://localhost:4000/404.html">
 
 
-
-  <meta property="og:description" content="Page not found. Your pixels are in another canvas.">
 
 
 
@@ -189,7 +187,7 @@ $(function() {
     </script>
   </head>
 
-  <body class="layout--archive">
+  <body class="layout--splash">
 
     <!--[if lt IE 9]>
 <div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please upgrade your browser to improve your experience.</div>
@@ -227,6 +225,18 @@ $(function() {
         
         
         <button class="switch_ko_en" id="switch_ko_en">
+          
+            
+              
+            
+          
+            
+              
+            
+          
+            
+              <a href="http://localhost:4000/docs/kr/" style="color: black;">Korean</a></button>
+            
           
       </div>
       
@@ -3077,54 +3087,21 @@ $(function() {
 
     
 
-
-
-<script>
-  var side_nav = document.getElementById("sidebar");
-  var offset = 105;
-
-  window.onscroll = function () {
-    stickynav()
-  };
-  
-  function stickynav() {
-    if (window.pageYOffset > offset) {
-      sidebar.classList.add("sticky_sidebar");
-    }
-    else {
-      sidebar.classList.remove("sticky_sidebar");
-    }
-  }
-  
-  var toggle = 0;
-  var mobile_width = 960;
-  
-  function extendnav() {
-    if (document.body.clientWidth < mobile_width ) {
-      if (toggle == 0) {
-        sidebar.classList.add("extend_sidebar");
-        toggle = 1;
-      }
-      else {
-        sidebar.classList.remove("extend_sidebar");
-        toggle = 0;
-      }
-    }
-  }
-</script>
-
 <div id="main" role="main">
-  
+  <article class="splash" itemscope itemtype="http://schema.org/CreativeWork">
+    
+    
+    
+    
 
-  <button class="nav_button" id="nav_button" onclick="extendnav()">ToC</button>
-  <button class="backtotop" id="backtotop"><a href="#">&#9650;<br />TOP</a></button>
-  <div class="archive" id="archive">
-    <a href="/blob/master/_pages/404.md" itemprop="sameAs" style="font-size:16px; float:right; margin: 10px 20px; text-decoration: none;">
-      <i class="fa fa-fw fa-github" aria-hidden="true"></i> Edit on GitHub
-    </a>
-    <p>Sorry, but the page you were trying to view does not exist — perhaps you can try searching for it above.</p>
+    <section class="page__content" itemprop="text">
+      <a href="/blob/master/_pages/404.md" itemprop="sameAs" style="font-size:16px;float:right;">
+        <i class="fa fa-fw fa-github" aria-hidden="true"></i> Edit on GitHub
+      </a>
+      <p>Sorry, but the page you were trying to view does not exist — perhaps you can try searching for it above.</p>
 
-  </div>
+    </section>
+  </article>
 </div>
 
 

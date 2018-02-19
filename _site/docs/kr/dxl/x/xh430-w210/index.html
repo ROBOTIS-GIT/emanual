@@ -5114,7 +5114,7 @@ $(function() {
 
 </div>
 
-<p class="notice"><code class="highlighter-rouge">Note</code> PWM이란Pulse Width Modulation(펄스 폭 변조)의 약자로 펄스의 폭(PWM Duty)을 변경시키는 변조방식을 뜻합니다. 모터 제어 분야에서는 펄스의 폭을 변경하여 모터에 공급되는 평균 전압을 제어하는 용도로 폭넓게 사용되고 있습니다. 따라서 PWM 제어 모드는 Goal PWM(100)을 이용하여 모터에 공급되는 전압을 제어하는 제어 방식을 뜻합니다. PWM 모드는 다이나믹셀AX, RX 시리즈의 바퀴모드와 유사합니다.</p>
+<p class="notice"><code class="highlighter-rouge">Note</code> PWM이란Pulse Width Modulation(펄스 폭 변조)의 약자로 펄스의 폭(PWM Duty)을 변경시키는 변조방식을 뜻합니다. 모터 제어 분야에서는 펄스의 폭을 변경하여 모터에 공급되는 평균 전압을 제어하는 용도로 폭넓게 사용되고 있습니다. 따라서 PWM 제어 모드는 <a href="#goal-pwm100">Goal PWM(100)</a>을 이용하여 모터에 공급되는 전압을 제어하는 제어 방식을 뜻합니다. PWM 모드는 다이나믹셀AX, RX 시리즈의 바퀴모드와 유사합니다.</p>
 
 <h3 id="secondaryshadow-id-12"><a name="secondary-shadow-id"></a><strong>Secondary(Shadow) ID (12)</strong></h3>
 <p>Dynamixel의 Secondary ID를 설정합니다. Secondary ID(12)는 ID(7)과 동일하게 다이나믹셀을 식별하기 위한 번호로 사용됩니다. 다만, Secondary ID(12)는 ID(7)과 달리 고유한 번호가 아닙니다. 따라서 동일한 Secondary ID 값을 갖은 다이나믹셀들은 하나의 그룹을 형성하게 됩니다. Secondary ID(12)와 ID(7)의 차이는 다음과 같습니다.</p>
@@ -5236,7 +5236,7 @@ Present Position(132) = 실제 위치 + Homing Offset(20) 이 됩니다.</p>
 </table>
 
 <h3 id="temperature-limit-31"><a name="temperature-limit"></a><strong>Temperature Limit (31)</strong></h3>
-<p>동작 온도의 상한 값입니다. 다이나믹셀의 현재 내부온도를 나타내는 Present Temperature(146)가 Temperature Limit(31)보다 높아지면 Hardware Error Status(70)의 Over Heating Error Bit(0x04)와 Hardware Error Bit(0x80)이 설정됩니다. Shutdown(63)에 Overheating Error Bit(0x04)가 설정된 경우, Torque Enable(64)은 ‘0’이 되고 Torque가 OFF됩니다. 자세한 설명은 Shutdown(63)을 참고하세요.</p>
+<p>동작 온도의 상한 값입니다. 다이나믹셀의 현재 내부온도를 나타내는 Present Temperature(146)가 Temperature Limit(31)보다 높아지면 Hardware Error Status(70)의 Over Heating Error Bit(0x04)와 Hardware Error Bit(0x80)이 설정됩니다. Shutdown(63)에 Overheating Error Bit(0x04)가 설정된 경우, Torque Enable(64)은 ‘0’이 되고 Torque가 OFF됩니다. 자세한 설명은 <a href="#shutdown63">Shutdown(63)</a>을 참고하세요.</p>
 
 <table>
   <thead>
@@ -5261,7 +5261,7 @@ Present Position(132) = 실제 위치 + Homing Offset(20) 이 됩니다.</p>
 </table>
 
 <h3 id="max-voltage-limit-32-min-voltage-limit-34"><a name="max-voltage-limit"></a><a name="min-voltage-limit"></a><strong>Max Voltage Limit (32), Min Voltage Limit (34)</strong></h3>
-<p>동작 전압의 상한 값과 하한 값입니다. 다이나믹셀에 현재 인가된 전압을 나타내는 Present Input Voltage(144)가 Max Voltage Limit(32)와 Min Voltage Limit(34)의 범위를 벗어날 경우, Hardware Error Status(70)의 Voltage Range Error Bit(0x01)와 Hardware Error Bit(0x80)이 설정됩니다. Shutdown(63)에 Input Voltage Error Bit(0x10)가 설정된 경우, Torque Enable(64)은 ‘0’이 되고 Torque가 OFF 됩니다. 자세한 설명은 Shutdown(63)을 참고하세요.</p>
+<p>동작 전압의 상한 값과 하한 값입니다. 다이나믹셀에 현재 인가된 전압을 나타내는 Present Input Voltage(144)가 Max Voltage Limit(32)와 Min Voltage Limit(34)의 범위를 벗어날 경우, Hardware Error Status(70)의 Voltage Range Error Bit(0x01)와 Hardware Error Bit(0x80)이 설정됩니다. Shutdown(63)에 Input Voltage Error Bit(0x10)가 설정된 경우, Torque Enable(64)은 ‘0’이 되고 Torque가 OFF 됩니다. 자세한 설명은 <a href="#shutdown63">Shutdown(63)</a>을 참고하세요.</p>
 
 <table>
   <thead>
@@ -5360,7 +5360,7 @@ Present Position(132) = 실제 위치 + Homing Offset(20) 이 됩니다.</p>
 <p class="notice"><code class="highlighter-rouge">Note</code> Status Packet의 Error필드의 비트정보는 프로토콜 1.0과 2.0이 다릅니다. 여기서는 프로토콜 2.0을 기준으로 설명합니다. 자세한 사항은 e-Manual의 프로토콜을 참고해주세요.</p>
 
 <h3 id="velocity-limit-44"><a name="velocity-limit"></a><strong>Velocity Limit (44)</strong></h3>
-<p>Goal Velocity(104)와 Profile Velocity(112)의 한계 값입니다. 자세한 설명은 Profile Velocity(112)을 참고하세요.</p>
+<p><a href="#goal-velocity104">Goal Velocity(104)</a>와 Profile Velocity(112)의 한계 값입니다. 자세한 설명은 Profile Velocity(112)을 참고하세요.</p>
 
 <table>
   <thead>
@@ -5565,7 +5565,7 @@ Present Position(132) = 실제 위치 + Homing Offset(20) 이 됩니다.</p>
 <p>다이나믹셀이 REG_WRITE Instruction Packet을 수신한 경우 ‘1’로 설정되고, ACTION Instruction Packet을 수행하면 ‘0’으로 변경됩니다.</p>
 
 <h3 id="hardware-error-status-70"><a name="hardware-error-status"></a><strong>Hardware Error Status (70)</strong></h3>
-<p>하드웨어의 에러 상태를 나타냅니다. 자세한 사항은 Shutdown(63)을 참고하세요.</p>
+<p>하드웨어의 에러 상태를 나타냅니다. 자세한 사항은 <a href="#shutdown63">Shutdown(63)</a>을 참고하세요.</p>
 
 <h3 id="velocity-i-gain-76-velocity-p-gain-78"><a name="velocity-i-gain"></a><a name="velocity-p-gain"></a><strong>Velocity I Gain (76), Velocity P Gain (78)</strong></h3>
 <p>속도 제어 모드에서 동작하는 속도 제어기의 Gain 입니다. Control Table의 Gain과 다이나믹셀 내부 제어기의 Gain은 다음은 같은 관계를 갖습니다.
@@ -5772,7 +5772,7 @@ Present Position(132) = 실제 위치 + Homing Offset(20) 이 됩니다.</p>
 </table>
 
 <h3 id="goal-current102"><a name="goal-current"></a><strong><a href="#goal-current102">Goal Current(102)</a></strong></h3>
-<p>전류 제어 모드의 경우, Goal Current(102)를 통해 목표 전류를 설정할 수 있습니다. 전류기반 위치 제어 모드에서는 Current 제한값으로 사용됩니다. 이 값은 Current Limit(38)보다 클 수 없습니다.</p>
+<p>전류 제어 모드의 경우, <a href="#goal-current102">Goal Current(102)</a>를 통해 목표 전류를 설정할 수 있습니다. 전류기반 위치 제어 모드에서는 Current 제한값으로 사용됩니다. 이 값은 Current Limit(38)보다 클 수 없습니다.</p>
 
 <table>
   <thead>
@@ -5828,7 +5828,7 @@ Present Position(132) = 실제 위치 + Homing Offset(20) 이 됩니다.</p>
 <p class="notice"><code class="highlighter-rouge">Note</code> Profile Acceleration(108)과 Goal Velocity(104)를 동시에 변경할 경우, 변경된 Profile Acceleration(108)이 적용되어 Goal Velocity(104)가 수행됩니다.</p>
 
 <h3 id="profile-acceleration-108"><a name="profile-acceleration"></a><strong>Profile Acceleration (108)</strong></h3>
-<p>Profile의 가속도를 설정합니다. Profile Acceleration(108)은 전류 제어 모드를 제외한 모든 제어 모드에서 적용 가능합니다. Profile Acceleration(108)은 Acceleration Limit(40)보다 클 수 없습니다. 자세한 사항은 Profile Velocity(112)를 참고하세요.</p>
+<p>Profile의 가속도를 설정합니다. Profile Acceleration(108)은 전류 제어 모드를 제외한 모든 제어 모드에서 적용 가능합니다. Profile Acceleration(108)은 Acceleration Limit(40)보다 클 수 없습니다. 자세한 사항은 <a href="#profile-velocity112">Profile Velocity(112)</a>를 참고하세요.</p>
 
 <table>
   <thead>
@@ -5877,7 +5877,7 @@ Present Position(132) = 실제 위치 + Homing Offset(20) 이 됩니다.</p>
   </tbody>
 </table>
 
-<p>Profile이란 모터 구동 시 급격하게 변하는 속도와 가속도를 조절함으로써 진동, 소음 및 모터의 부하를 줄이는 가감속 제어 방법입니다. 일반적으로 속도에 근거하여 가감속을 제어하기 때문에 Velocity Profile이라고 불립니다. 다이나믹셀은 4가지 형태의 Profile을 제공합니다. 다음은 4가지 종류의 Profile과 Profile의 선택 방법을 표시합니다. 기본적으로 Profile의 선택은 Profile Velocity(112)와 Profile Acceleration(108)의 조합에 의해서 결정됩니다. 예외적으로 Triangle과 Trapezoidal Profile은 총 이동거리(ΔPos, 목표위치와 현재위치의 차이)가 추가로 고려되어 선택됩니다. 편의상 Profile Velocity(112)를 VPRFL, Profile Acceleration(108)을 APRFL로 표기합니다. ‘X’는 “상관없음”(Don’t Care)를 뜻합니다.</p>
+<p>Profile이란 모터 구동 시 급격하게 변하는 속도와 가속도를 조절함으로써 진동, 소음 및 모터의 부하를 줄이는 가감속 제어 방법입니다. 일반적으로 속도에 근거하여 가감속을 제어하기 때문에 Velocity Profile이라고 불립니다. 다이나믹셀은 4가지 형태의 Profile을 제공합니다. 다음은 4가지 종류의 Profile과 Profile의 선택 방법을 표시합니다. 기본적으로 Profile의 선택은 Profile Velocity(112)와 Profile Acceleration(108)의 조합에 의해서 결정됩니다. 예외적으로 Triangle과 Trapezoidal Profile은 총 이동거리(ΔPos, 목표위치와 현재위치의 차이)가 추가로 고려되어 선택됩니다. 편의상 <a href="#profile-velocity112">Profile Velocity(112)</a>를 VPRFL, Profile Acceleration(108)을 APRFL로 표기합니다. ‘X’는 “상관없음”(Don’t Care)를 뜻합니다.</p>
 
 <p><img src="/assets/images/dxl/x/dxl_profiles.jpg" alt="" /></p>
 
@@ -5934,7 +5934,7 @@ Present Position(132) = 실제 위치 + Homing Offset(20) 이 됩니다.</p>
 </div>
 
 <h3 id="goal-position-116"><a name="goal-position"></a><strong>Goal Position (116)</strong></h3>
-<p>Goal Position(116)을 통해 목표위치를 설정할 수 있습니다. 모든 다이나믹셀은 Horn을 정면에서 바라봤을 때 CCW(Counter Clockwise) 방향이 증가 방향이고, CW(Clockwise) 방향이 감소 방향입니다. Goal Position(116)에 도달하는 방식은 다이나믹셀이 제공하는 4가지 형태의 Profile에 따라 달라집니다. Profile에 대한 자세한 내용은 Profile Velocity(112)를 참고하세요.</p>
+<p>Goal Position(116)을 통해 목표위치를 설정할 수 있습니다. 모든 다이나믹셀은 Horn을 정면에서 바라봤을 때 CCW(Counter Clockwise) 방향이 증가 방향이고, CW(Clockwise) 방향이 감소 방향입니다. Goal Position(116)에 도달하는 방식은 다이나믹셀이 제공하는 4가지 형태의 Profile에 따라 달라집니다. Profile에 대한 자세한 내용은 <a href="#profile-velocity112">Profile Velocity(112)</a>를 참고하세요.</p>
 
 <p><img src="/assets/images/dxl/x/dxl_goal_position.jpg" alt="" /></p>
 
@@ -6071,13 +6071,13 @@ Present Position(132) = 실제 위치 + Homing Offset(20) 이 됩니다.</p>
 </table>
 
 <h3 id="present-pwm-124"><a name="present-pwm"></a><strong>Present PWM (124)</strong></h3>
-<p>현재 PWM 값입니다. 자세한 사항은 Goal PWM(100)을 참고하세요.</p>
+<p>현재 PWM 값입니다. 자세한 사항은 <a href="#goal-pwm100">Goal PWM(100)</a>을 참고하세요.</p>
 
 <h3 id="present-current-126"><a name="present-current"></a><strong>Present Current (126)</strong></h3>
-<p>현재 전류 값입니다. 자세한 사항은 Goal Current(102)를 참고하세요.</p>
+<p>현재 전류 값입니다. 자세한 사항은 <a href="#goal-current102">Goal Current(102)</a>를 참고하세요.</p>
 
 <h3 id="present-velocity-128"><a name="present-velocity"></a><strong>Present Velocity (128)</strong></h3>
-<p>현재 속도 값입니다. 자세한 사항은 Goal Velocity(104)(#goal-velocity)를 참고하세요.</p>
+<p>현재 속도 값입니다. 자세한 사항은 <a href="#goal-velocity104">Goal Velocity(104)</a>를 참고하세요.</p>
 
 <h3 id="present-position-132"><a name="present-position"></a><strong>Present Position (132)</strong></h3>
 <p>현재 위치 값입니다. 자세한 사항은 Goal Position(116)을 참고하세요.</p>
@@ -6095,14 +6095,14 @@ Present Position(132) = 실제 위치 + Homing Offset(20) 이 됩니다.</p>
 </div>
 
 <h3 id="velocity-trajectory-136"><a name="velocity-trajectory"></a><strong>Velocity Trajectory (136)</strong></h3>
-<p>Profile에 의해 생성된 목표 속도 궤적입니다. 제어 모드에 따라 동작 방식이 다음과 같이 달라집니다. 자세한 사항은 Profile Velocity(112)를 참고하세요.</p>
+<p>Profile에 의해 생성된 목표 속도 궤적입니다. 제어 모드에 따라 동작 방식이 다음과 같이 달라집니다. 자세한 사항은 <a href="#profile-velocity112">Profile Velocity(112)</a>를 참고하세요.</p>
 <ol>
-  <li>속도 제어 모드 : Profile이 종료되면 Velocity Trajectory(136)은 Goal Velocity(104)와 동일해 집니다.</li>
-  <li>위치 제어 모드, 확장 위치 제어 모드, 전류기반 위치 제어 모드 : Position Trajectory(140)을 생성하기 위한 목표 속도 궤적입니다. Profile이 종료되면 Velocity Trajectory(136)은 ‘0’이 됩니다.</li>
+  <li>속도 제어 모드 : Profile이 종료되면 <a href="#velocity-trajectory136">Velocity Trajectory(136)</a>은 <a href="#goal-velocity104">Goal Velocity(104)</a>와 동일해 집니다.</li>
+  <li>위치 제어 모드, 확장 위치 제어 모드, 전류기반 위치 제어 모드 : <a href="#position-trajectory140">Position Trajectory(140)</a>을 생성하기 위한 목표 속도 궤적입니다. Profile이 종료되면 <a href="#velocity-trajectory136">Velocity Trajectory(136)</a>은 ‘0’이 됩니다.</li>
 </ol>
 
 <h3 id="position-trajectory-140"><a name="position-trajectory"></a><strong>Position Trajectory (140)</strong></h3>
-<p>Profile에 의해 생성된 목표 위치 궤적입니다. 위치 제어 모드, 확장 위치 제어 모드, 전류기반 위치 제어 모드에서만 동작 합니다. 자세한 사항은 Profile Velocity(112)를 참고하세요.</p>
+<p>Profile에 의해 생성된 목표 위치 궤적입니다. 위치 제어 모드, 확장 위치 제어 모드, 전류기반 위치 제어 모드에서만 동작 합니다. 자세한 사항은 <a href="#profile-velocity112">Profile Velocity(112)</a>를 참고하세요.</p>
 
 <h3 id="present-input-voltage-144"><a name="present-input-voltage"></a><strong>Present Input Voltage (144)</strong></h3>
 <p>현재 공급되는 전압입니다. 자세한 사항은 Max/Min Voltage Limit(32, 34)를 참고하세요.</p>
