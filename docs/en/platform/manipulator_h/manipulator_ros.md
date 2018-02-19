@@ -305,5 +305,5 @@ $ roslaunch manipulator_h_manager manipulator_h_manager.launch
 [manipulator_manipulation_module_msgs/GetJointPose]: /docs/en/platform/popup/GetJointPose.srv/
 [manipulator_manipulation_module_msgs/GetKinematicsPose]: /docs/en/platform/popup/GetKinematicsPose.srv/
 
-[Creating new robot manager]:Creating_new_robot_manager.md
-[manipulator_manager]:manipulator_manager.md
+[Creating new robot manager]: /docs/en/platform/software/tutorials/#creating-new-robot-manager/
+[manipulator_manager]: #manipulator_manager

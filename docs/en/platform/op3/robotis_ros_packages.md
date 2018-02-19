@@ -1,11 +1,11 @@
 ---
 layout: archive
 lang: en
-ref: op3_robotis_ros_modules
+ref: op3_robotis_ros_packages
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/op3/robotis_ros_modules/
+permalink: /docs/en/platform/op3/robotis_ros_packages/
 sidebar:
   title: ROBOTIS-OP3
   nav: "op3"
@@ -21,7 +21,7 @@ sidebar:
 
 #### Motion Module
 
-##### [op3_action_module]
+##### [op3_action_module](#op3_action_module)
 
 ###### Overview  
 `op3_action_module` manages OP3 actions.  
@@ -61,7 +61,7 @@ Action contains all joint angles per each time frame.
 
 
 
-##### [op3_base_module]
+##### [op3_base_module](#op3_base_module)
 
 ###### Overview  
 `op3_base_module` is a module for initial posture.  
@@ -100,7 +100,7 @@ This module is compiled to a library to be used in [op3_manager].
    - via_pose : Angle of every joint for each waypoint(unit in degree, array structure)  
    - tar_pose : Target joint angles for initial posture
 
-##### [op3_head_control_module]
+##### [op3_head_control_module](#op3_head_control_module)
 
 ###### Overview
 This chapter explains the module to control OP3's head.  
@@ -131,7 +131,7 @@ This module is compiled to a library to be used in [op3_manager].
   `/robotis/status`([robotis_controller_msgs/StatusMsg]{: .popup})  
   &emsp;&emsp; This message notifies the status of head_control_module.  
 
-##### [op3_walking_module]
+##### [op3_walking_module](#op3_walking_module)
 
 ###### Overview
 This chapter explains the module to control OP3 walking.  
@@ -175,55 +175,55 @@ This module is compiled to a library to be used in [op3_manager].
    - x_offset: offset in the x-direction (front and back) [m]  
 
      ![](/assets/images/platform/op3/op3_walking_module_image142.jpg)
-     
+
    - y_offset: offset in the y-direction (left and right) [m]  
 
      ![](/assets/images/platform/op3/op3_walking_module_image143.jpg)
-     
+
    - z_offset: offset in the z-direction (up and down) [m]  
 
      ![](/assets/images/platform/op3/op3_walking_module_image144.jpg)
-     
+
    - roll_offset: roll offset (x-coordinate) [degree]  
 
      ![](/assets/images/platform/op3/op3_walking_module_image145.jpg)
-     
+
    - pitch_offset: pitch offset (y-coordinate) [degree]  
 
      ![](/assets/images/platform/op3/op3_walking_module_image146.jpg)
-     
+
    - yaw_offset: yaw offset (z-coordinate) [degree]  
 
      ![](/assets/images/platform/op3/op3_walking_module_image2.gif)
-     
+
    - hip_pitch_offset: pitch offset (y-coordinate) at the hip level. Values are for Dynamixel position values for hip pitch joints. [degree]  
 
      ![](/assets/images/platform/op3/op3_walking_module_image147.jpg)
-    
+
    - period_time: Time required for ROBOTIS-OP3 to complete two full steps (left and right foot) [ms]  
 
      ![](/assets/images/platform/op3/op3_walking_module_image148.jpg)
-     
+
    - dsp_ratio: Time ratio of the period when both feet are touching the ground to the period of walking cycle.  
 
      ![](/assets/images/platform/op3/op3_walking_module_image149.jpg)
-     
+
    - foot_height: foot elevation during walk [m]  
 
      ![](/assets/images/platform/op3/op3_walking_module_image152.jpg)
-     
+
    - swing_right_left: swing to either left or right during walk [m]
 
      ![](/assets/images/platform/op3/op3_walking_module_image153.jpg)
-     
+
    - swing_top_down: up and down body swing during walk [m]  
 
      ![](/assets/images/platform/op3/op3_walking_module_image154.jpg)
-     
+
    - pelvis_offset: roll offset (x-coordinate) at the pelvis level. Values are for Dynamixel position values for hip roll joints [degree]  
 
      ![](/assets/images/platform/op3/op3_walking_module_image155.jpg)
-     
+
    - arm_swing_gain: Arm swing gain with respect to Step forward/back. If the left foot moves forward then the right arm swings.
 
    - balance_hip_roll_gain: Gain with respect to the gyroscope roll
@@ -244,7 +244,7 @@ This module is compiled to a library to be used in [op3_manager].
 
 
 
-##### [op3_online_walking_module]
+##### [op3_online_walking_module](#op3_online_walking_module)
 
 ###### Overview
 This chapter explains the module to control OP3's walking.  
@@ -327,7 +327,7 @@ The Motion Module is used in the manager in the form of library.
 ##### Sensor Module
 
 
-##### [open_cr_module]
+##### [open_cr_module](#open_cr_module)
 
 ###### Overview
 This chapter introduces the module that utilizes OpenCR as sensor and IO interface.
@@ -360,7 +360,7 @@ The package that controls OP3 using framework and various modules.
 
 ### Others
 
-#### [op3_balance_control]
+#### [op3_balance_control](#op3_balance_control)
 
 ##### Overview  
 `op3_balance_control` is a library for balance control.  
@@ -369,7 +369,7 @@ Currently, this library is not implemented because of sensors (ft & IMU).
 We will update how to used is library.  
 
 
-#### [op3_localization]
+#### [op3_localization](#op3_localization)
 
 ##### Overview  
 `op3_localization` is ros node for localization.  
@@ -388,7 +388,7 @@ This node publish TF data from /world to /body_link.
 
 
 
-#### [op3_optimization]
+#### [op3_optimization](#op3_optimization)
 
 
 ##### Overview  
@@ -601,7 +601,7 @@ The following are Messages and Service used for the [op3_offset_tuner_server] an
  - Button Functions  
  From the left, each button is assigned for Mode, Start, User and Reset.  
    - Mode button  
-     - short press : In Ready Mode, mode button switches to the next demo(soccer → vision → action)  
+     - short press : In Ready Mode, mode button switches to the next demo(soccer ??vision ??action)  
      - long press : While playing a specific demo, press and hold the mode button to return to demo Ready Mode.  
 
    - Start button  
@@ -691,7 +691,7 @@ The following are Messages and Service used for the [op3_offset_tuner_server] an
  This chapter explains how to create and edit action file used in the [op3_action_module] of ROBOTIS-OP3.   
 
 ###### Action File
- The action file contains ROBOTIS-OP3’s poses and time data. The current position describes positions of Dynamixels which converted from actual Dynamixel resolution to 4095 resolution. The action file is written as binary file so users can read its contents with op3_action_editor. ROBOTIS currently provides a default action file with source code. It is located in "op3_action_module/data" directory.  
+ The action file contains ROBOTIS-OP3?�s poses and time data. The current position describes positions of Dynamixels which converted from actual Dynamixel resolution to 4095 resolution. The action file is written as binary file so users can read its contents with op3_action_editor. ROBOTIS currently provides a default action file with source code. It is located in "op3_action_module/data" directory.  
 
  The action file contains 256 pages. Each page can store up to 7 stages (or steps) of action data. The default action file does not use all pages and user can add own actions by writing them on the empty page.   
 
@@ -717,16 +717,16 @@ The following are Messages and Service used for the [op3_offset_tuner_server] an
  **Current position**: The current position describes position of Dynamixel which converted from actual Dynamixel resolution to 4095 resolution. This data is represented by STP7 in op3_action_editor. Sometimes the position may be read as ---- in op3_action_editor. This means position of the Dynamixel has not been read (or torque is off).
  If user turns the Dynamixel off, current position cannot be read until turn it back on.
  User can turn off the torque of specific Dynamixels. This is very convenient when acquiring position values directly from Dynamixels for a new robot posture instead of calculating those values. To do that, turn off the torque of desired Dynamixels, then make a posture and hold the robot joint by hand until turn the torque back on. The robot will be remaining at current posture and user can read position values of corresponding Dynamixels.  
- **Steps or stages**: Each page can store up to 7 steps, from STP0 to STP6. However, some actions may be required more than 7 stages to perform completely. This can be resolved by simply using multiple pages and link them with “Next”.  
- **Next**: “Next” indicates whether to continue action on a different page. To continue actions, just list the page number where the action is to be continued. Number 0 indicates that action does not continue onto another page (default value). Linking page does not have to have the numerical order.  
- **Play Count**: “Play Count” is the number of times the action of the page is to be played.  
- **Exit**: There might be some cases when an action has to be stopped. In these cases, the robot may be in unstable position. “Exit” is much like "Next", so "Exit" should be linked to a page where ROBOTIS-OP3 can return to a stable pose. If "Exit" is 0, it means that there is no linked exit page (default value).  
- Tip: When calling an action requires multiple pages, ROBOTIS strongly suggests user to call the action from the starting page. For example, “clap” starts at page 7 and ends at page 8. This means you should call page 7 when calling “clap.” Calling the page 8 may cause unexpected behavior of the robot.  
+ **Steps or stages**: Each page can store up to 7 steps, from STP0 to STP6. However, some actions may be required more than 7 stages to perform completely. This can be resolved by simply using multiple pages and link them with ?�Next??  
+ **Next**: ?�Next??indicates whether to continue action on a different page. To continue actions, just list the page number where the action is to be continued. Number 0 indicates that action does not continue onto another page (default value). Linking page does not have to have the numerical order.  
+ **Play Count**: ?�Play Count??is the number of times the action of the page is to be played.  
+ **Exit**: There might be some cases when an action has to be stopped. In these cases, the robot may be in unstable position. ?�Exit??is much like "Next", so "Exit" should be linked to a page where ROBOTIS-OP3 can return to a stable pose. If "Exit" is 0, it means that there is no linked exit page (default value).  
+ Tip: When calling an action requires multiple pages, ROBOTIS strongly suggests user to call the action from the starting page. For example, ?�clap??starts at page 7 and ends at page 8. This means you should call page 7 when calling ?�clap.??Calling the page 8 may cause unexpected behavior of the robot.  
  **STP7**: "STP7" column is the current position of the Dynamixel which converted to 4095 resolution from its original resolution. "----" means that torque has been released.  
  **PauseTime**: "PauseTime" is the pause duration period for motion playback for step STP[x].  
  **Time(x 8msec)** : "Time" is the time period for ROBOTIS-OP3 to complete step STP[x]. Each time unit account for 8ms of time.  
 
- It is strongly advised that when user tests user’s own newly-created or edited actions, there should be small incremental changes in position, speed/time, and pause values for the sake of ROBOTIS-OP3's stability.  
+ It is strongly advised that when user tests user?�s own newly-created or edited actions, there should be small incremental changes in position, speed/time, and pause values for the sake of ROBOTIS-OP3's stability.  
 
 
 ###### The Contents of The Default Action File
@@ -770,7 +770,7 @@ The following are Messages and Service used for the [op3_offset_tuner_server] an
  **m [index] [index2]**: moves data from [index2] to [index].  
  **d [index]**: deletes data from STP[index]. Moves data from STP[index] to STP[index - 1].  
  **on/off**: turns on/off torque from all Dynamixels.  
- **on/off [index1] [index2] [index3] …** : turns torque on/off from ID[index1] ID[index2] ID[index3]. For example off 20 releases torque from ID20. Notice that STP7 for ID20 will read [----]. Typing on 20 turns torque from ID20 on again and the screen outputs the current position data of ID20.  
+ **on/off [index1] [index2] [index3] ??** : turns torque on/off from ID[index1] ID[index2] ID[index3]. For example off 20 releases torque from ID20. Notice that STP7 for ID20 will read [----]. Typing on 20 turns torque from ID20 on again and the screen outputs the current position data of ID20.  
 
 
 
@@ -1010,23 +1010,9 @@ The following are Messages and Service used for the [op3_offset_tuner_server] an
 
 
 
-
-
-
-
-
-[ROBOTIS-OP3 Modules]: robotis_op3_modules.md
-[op3_action_module]: /docs/en/platform/op3/op3_files/op3_action_module/
-[op3_base_module]: op3_base_module.md
-[op3_head_control_module]: op3_head_control_module.md
-[op3_walking_module]: op3_walking_module.md
-[op3_online_walking_module]: op3_online_walking_module.md
-[open_cr_module]: open_cr_module.md
-[Op3 Manager]: op3_manager.md
-[op3_balance_control]: op3_balance_control.md
-[op3_localization]: op3_localization.md
-[op3_optimization]: op3_optimization.md
-
+[op3_action_module]: #op3_action_module
+[op3_walking_module]: #op3_walking_module
+[op3_online_walking_module]: #op3_online_walking_module
 
 [std_msgs/Int32]: /docs/en/popup/std_msgs_int32_message/
 [std_msgs/String]: /docs/en/popup/std_msgs_string/
@@ -1055,7 +1041,7 @@ The following are Messages and Service used for the [op3_offset_tuner_server] an
 [WalkingParam.msg]: /docs/en/popup/op3_WalkingParam.msg/
 
 [op3_walking_module_msgs/GetWalkingParam]: /docs/en/popup/op3_GetWalkingParam.srv/
-[/op3_walking_module/config/param.yaml]:https://github.com/ROBOTIS-GIT/ROBOTIS-OP3/blob/master/op3_walking_module/config/param.yaml
+[/op3_walking_module/config/param.yaml]: https://github.com/ROBOTIS-GIT/ROBOTIS-OP3/blob/master/op3_walking_module/config/param.yaml
 
 [op3_online_walking_module_msgs/JointPose]: /docs/en/popup/op3_JointPose.msg/
 [op3_online_walking_module_msgs/KinematicsPose]: /docs/en/popup/op3_KinematicsPose.msg/
@@ -1067,12 +1053,12 @@ The following are Messages and Service used for the [op3_offset_tuner_server] an
 [op3_online_walking_module_msgs/GetPreviewMatrix]: /docs/en/popup/op3_GetPreviewMatrix.srv/
 
 
-[Creating new robot manager]:Creating_new_robot_manager.md
-[op3_manager]:op3_manager.md
+[Creating new robot manager]: /docs/en/platform/software/tutorials/#creating-new-robot-manager/
 
-[OPENCR]:https://github.com/ROBOTIS-GIT/OpenCR/wiki/arduino_examples_op3
-[Introduction to Humanoid Robotics]:http://www.springer.com/gp/book/9783642545351
-[/op3_base_module/data/ini_pose.yaml]:https://github.com/ROBOTIS-GIT/ROBOTIS-OP3/blob/master/op3_base_module/data/ini_pose.yaml
+
+[OPENCR]: https://github.com/ROBOTIS-GIT/OpenCR/wiki/arduino_examples_op3
+[Introduction to Humanoid Robotics]: http://www.springer.com/gp/book/9783642545351
+[/op3_base_module/data/ini_pose.yaml]: https://github.com/ROBOTIS-GIT/ROBOTIS-OP3/blob/master/op3_base_module/data/ini_pose.yaml
 
 
 
@@ -1097,8 +1083,8 @@ The following are Messages and Service used for the [op3_offset_tuner_server] an
 [GetKinematicsPose.srv]: /docs/en/popup/op3_GetKinematicsPose.srv/
 [GetPreviewMatrix.srv]: /docs/en/popup/op3_GetPreviewMatrix.srv/
 
-[op3_offset_tuner_server]: op3_offset_tuner_server.md
-[op3_offset_tuner_client]: op3_offset_tuner_client.md
+[op3_offset_tuner_server]: #op3_offset_tuner_server
+[op3_offset_tuner_client]: #op3_offset_tuner_client
 
 [JointOffsetData.msg]: /docs/en/popup/op3_JointOffsetData.msg/
 [JointOffsetPositionData.msg]: /docs/en/popup/op3_JointOffsetPositionData.msg/
@@ -1114,16 +1100,12 @@ The following are Messages and Service used for the [op3_offset_tuner_server] an
 [`usb_cam`]:http://wiki.ros.org/usb_cam
 [HSV color]:https://en.wikipedia.org/wiki/HSL_and_HSV
 
-[How to execute Default Demo]:OP3_How_to_execute_Default_Demo.md
+[How to execute Default Demo]: /docs/en/platform/op3/tutorials/#how-to-exectue-default-demo/
+[How to execute GUI program]: /docs/en/platform/op3/tutorials/#how-to-exectue-gui-program/
+
 
 [URDF-ROS Wiki]:http://wiki.ros.org/urdf
 [Connect to ROS]:http://gazebosim.org/tutorials?cat=connect_ros
-[op3_action_module]:op3_action_module
-
-[How to execute GUI program]:op3_how_to_execute_gui_program.md
-
-[op3_offset_tuner_client]:op3_offset_tuner_client.md
-[op3_offset_tuner_server]:op3_offset_tuner_server.md
 
 [op3_offset_tuner_msgs/JointOffsetData]: /docs/en/popup/JointOffsetData.msg/
 [op3_offset_tuner_msgs/JointOffsetData]: /docs/en/popup/op3_JointOffsetData.msg/
@@ -1133,8 +1115,8 @@ The following are Messages and Service used for the [op3_offset_tuner_server] an
 [op3_offset_tuner_msgs/GetPresentJointOffsetData]: /docs/en/popup/op3_GetPresentJointOffsetData.srv/
 
 
-[op3_gui_demo]:op3_gui_demo.md
-[How to use walking tuner]:op3_how_to_use_walking_tuner.md
-[How to use offset tuner]:op3_how_to_use_offset_tuner.md
+[op3_gui_demo]:#op3_gui_demo
+[How to use walking tuner]: /docs/en/platform/op3/tutorials/#how-to-use-walking-tuner/
+[How to use offset tuner]: /docs/en/platform/op3/tutorials/#how-to-use-offset-tuner/
 
-[Installing ROBOTIS ROS Package]:OP3_Recovery_of_ROBOTIS_OP3#24_installation_robotis_ros_packages.md
+[Installing ROBOTIS ROS Package]: /docs/en/platform/op3/recovery/#installing-robotis-ros-packages/

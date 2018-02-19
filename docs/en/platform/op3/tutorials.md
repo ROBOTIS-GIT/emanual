@@ -217,7 +217,7 @@ Dynamixels of ROBOTIS-OP3 will be powered and take the initial posture.
 #### Button Functions
 From the left, each button is assigned for Mode, Start, User and Reset.  
   - Mode button
-    - short press : In Ready Mode, mode button switches to the next demo(soccer → vision → action)
+    - short press : In Ready Mode, mode button switches to the next demo(soccer ??vision ??action)
     - long press : While demo is running, press and hold the mode button to switch to Ready Mode.  
 
   - Start button
@@ -297,6 +297,7 @@ Press the mode button thrice from demonstration ready mode to switch to interact
 ## [How to execute GUI program](#how-to-execute-gui-program)
 
 ### [How to use walking tuner](#how-to-use-walking-tuner)
+
 #### Overview   
 This chapter explains how to configure walking parameters and test them with ROBOTIS-OP3.  
 Basic demo uses saved walking parameters.  
@@ -371,15 +372,15 @@ Operator can get different camera view angle by controlling head joints.
 
 ### [How to control upgraded walking(online walking)](#how-to-control-upgraded-walkingonline-walking)
 
-#### 1. Overview   
+#### Overview   
 This page explains how to control upgraded walking(online walking).  
 
 > Reference 1 : [Introduction to Humanoid Robotics]
 
 > Reference 2 : [op3_online_walking_module]
 
-#### 2. Description
-##### 2.1 How to
+#### Description
+##### How to
  - Preparation : Set the module and move to the tab
    1. Setting the module : Click `online_walking_module` button
 
@@ -409,7 +410,7 @@ This page explains how to control upgraded walking(online walking).
     >  - Body Offset : desired body offset
     >  - Foot Distance : desired foot distance between left and right foot
 
-#### 3. Online walking using footstep planner
+#### Online walking using footstep planner
   > Reference : [Online walking using footstep planner]  
 
 ## [How to use offset tuner](#how-to-use-offset-tuner)
@@ -461,7 +462,7 @@ $ roslaunch op3_offset_tuner_client op3_offset_tuner.launch
 #### `op3_offset_tuner_client` configuration file  
  - `joint_data.yaml` : GUI menu configuration file  
 
-### 3. How to use Offset tuner client GUI program  
+### How to use Offset tuner client GUI program  
 
   ![](/assets/images/platform/op3/How to use offset tuner_2.png)
 
@@ -472,7 +473,7 @@ ROBOTIS-OP3 Action Editor Node
 This chapter explains how to create and edit action file used in the [op3_action_module] of ROBOTIS-OP3.   
 
 #### Action File
-The action file contains ROBOTIS-OP3’s poses and time data. The current position describes positions of Dynamixels which converted from actual Dynamixel resolution to 4095 resolution. The action file is written as binary file so users can read its contents with op3_action_editor. ROBOTIS currently provides a default action file with source code. It is located in "op3_action_module/data" directory.  
+The action file contains ROBOTIS-OP3?�s poses and time data. The current position describes positions of Dynamixels which converted from actual Dynamixel resolution to 4095 resolution. The action file is written as binary file so users can read its contents with op3_action_editor. ROBOTIS currently provides a default action file with source code. It is located in "op3_action_module/data" directory.  
 
 The action file contains 256 pages. Each page can store up to 7 stages (or steps) of action data. The default action file does not use all pages and user can add own actions by writing them on the empty page.   
 
@@ -498,16 +499,16 @@ $ roslaunch op3_action_editor op3_action_editor.launch
 **Current position**: The current position describes position of Dynamixel which converted from actual Dynamixel resolution to 4095 resolution. This data is represented by STP7 in op3_action_editor. Sometimes the position may be read as ---- in op3_action_editor. This means position of the Dynamixel has not been read (or torque is off).
 If user turns the Dynamixel off, current position cannot be read until turn it back on.
 User can turn off the torque of specific Dynamixels. This is very convenient when acquiring position values directly from Dynamixels for a new robot posture instead of calculating those values. To do that, turn off the torque of desired Dynamixels, then make a posture and hold the robot joint by hand until turn the torque back on. The robot will be remaining at current posture and user can read position values of corresponding Dynamixels.  
-**Steps or stages**: Each page can store up to 7 steps, from STP0 to STP6. However, some actions may be required more than 7 stages to perform completely. This can be resolved by simply using multiple pages and link them with “Next”.  
-**Next**: “Next” indicates whether to continue action on a different page. To continue actions, just list the page number where the action is to be continued. Number 0 indicates that action does not continue onto another page (default value). Linking page does not have to have the numerical order.  
-**Play Count**: “Play Count” is the number of times the action of the page is to be played.  
-**Exit**: There might be some cases when an action has to be stopped. In these cases, the robot may be in unstable position. “Exit” is much like "Next", so "Exit" should be linked to a page where ROBOTIS-OP3 can return to a stable pose. If "Exit" is 0, it means that there is no linked exit page (default value).  
-Tip: When calling an action requires multiple pages, ROBOTIS strongly suggests user to call the action from the starting page. For example, “clap” starts at page 7 and ends at page 8. This means you should call page 7 when calling “clap.” Calling the page 8 may cause unexpected behavior of the robot.  
+**Steps or stages**: Each page can store up to 7 steps, from STP0 to STP6. However, some actions may be required more than 7 stages to perform completely. This can be resolved by simply using multiple pages and link them with ?�Next??  
+**Next**: ?�Next??indicates whether to continue action on a different page. To continue actions, just list the page number where the action is to be continued. Number 0 indicates that action does not continue onto another page (default value). Linking page does not have to have the numerical order.  
+**Play Count**: ?�Play Count??is the number of times the action of the page is to be played.  
+**Exit**: There might be some cases when an action has to be stopped. In these cases, the robot may be in unstable position. ?�Exit??is much like "Next", so "Exit" should be linked to a page where ROBOTIS-OP3 can return to a stable pose. If "Exit" is 0, it means that there is no linked exit page (default value).  
+Tip: When calling an action requires multiple pages, ROBOTIS strongly suggests user to call the action from the starting page. For example, ?�clap??starts at page 7 and ends at page 8. This means you should call page 7 when calling ?�clap.??Calling the page 8 may cause unexpected behavior of the robot.  
 **STP7**: "STP7" column is the current position of the Dynamixel which converted to 4095 resolution from its original resolution. "----" means that torque has been released.  
 **PauseTime**: "PauseTime" is the pause duration period for motion playback for step STP[x].  
 **Time(x 8msec)** : "Time" is the time period for ROBOTIS-OP3 to complete step STP[x]. Each time unit account for 8ms of time.  
 
-It is strongly advised that when user tests user’s own newly-created or edited actions, there should be small incremental changes in position, speed/time, and pause values for the sake of ROBOTIS-OP3's stability.  
+It is strongly advised that when user tests user?�s own newly-created or edited actions, there should be small incremental changes in position, speed/time, and pause values for the sake of ROBOTIS-OP3's stability.  
 
 
 #### The Contents of The Default Action File
@@ -551,7 +552,7 @@ After typing "help", the commend list will appear as shown below.
 **m [index] [index2]**: moves data from [index2] to [index].  
 **d [index]**: deletes data from STP[index]. Moves data from STP[index] to STP[index - 1].  
 **on/off**: turns on/off torque from all Dynamixels.  
-**on/off [index1] [index2] [index3] …** : turns torque on/off from ID[index1] ID[index2] ID[index3]. For example off 20 releases torque from ID20. Notice that STP7 for ID20 will read [----]. Typing on 20 turns torque from ID20 on again and the screen outputs the current position data of ID20.  
+**on/off [index1] [index2] [index3] ??** : turns torque on/off from ID[index1] ID[index2] ID[index3]. For example off 20 releases torque from ID20. Notice that STP7 for ID20 will read [----]. Typing on 20 turns torque from ID20 on again and the screen outputs the current position data of ID20.  
 
 
 
@@ -661,11 +662,11 @@ The description for each parameter will pop up when hovering the mouse cursor ov
         - Set H(hue) value (color value) first with full range of S and V. Then set the range of S(saturation) and V(value) to remove the noise.  
         *Hue is measured by degrees within the cylindrically represented color system. Therefore, the value 360 can be represented as 0, and the minimum value can have a bigger number than the maximum value.  (ex : min - 350 / max - 10 [Red area])
 
-        - If you check the ‘use_second_filter’, you can get an image which is detected with two HSV variations.   
+        - If you check the ?�use_second_filter?? you can get an image which is detected with two HSV variations.   
 
       ![](/assets/images/platform/op3/ball_detector_node_04.png)
 
-        - If you check the ’debug_image’ you can check the HSV filtered, binary image.   
+        - If you check the ?�debug_image??you can check the HSV filtered, binary image.   
 
       ![](/assets/images/platform/op3/ball_detector_node_05.png)
 
@@ -749,29 +750,27 @@ This chapter explains upgraded walking and footstep planner.
 
 
 
-[op3_manager]: [op3_manager.md]
+[op3_manager]:#op3_manager
 [Robot Information file(.robot)]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/Creating-new-robot-manager#41-robot-information-file-robot
 [Joint initialize file(.yaml)]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/Creating-new-robot-manager#42-joint-initialize-file-yaml
-[How to use offset tuner]: [op3_how_to_use_offset_tuner.md]
+[How to use offset tuner]: #how-to-use-offset-tuner
 [Installing ROBOTIS ROS Package]:OP3_Recovery_of_ROBOTIS_OP3#24_installation_robotis_ros_packages.md  
 
-[op3_demo]: [op3_demo.md]
-[How to use walking tuner]: [op3_how_to_use_walking_tuner.md]
+[op3_demo]: /docs/en/platform/op3/robotis_ros_packages/#op3-demo/
+[How to use walking tuner]: #how-to-use-walking-tuner
 [Face Tracker - ROS Package]: https://github.com/ROBOTIS-GIT/face_detection
 
-[op3_action_module]: [op3_action_module.md]
-[How to create the motions]: [op3_action_editor.md]
+[op3_action_module]: /docs/en/platform/op3/robotis_ros_packages/#op3_action_module/
+[How to create the motions]: #how-to-create-the-motions
 
-[op3_head_control_module]: [op3_head_control_module.md]
+[op3_head_control_module]: /docs/en/platform/op3/robotis_ros_packages/#op3_head_control_module/
 
 [Introduction to Humanoid Robotics]: http://www.springer.com/gp/book/9783642545351
-[op3_online_walking_module]: [op3_online_walking_module.md]
+[op3_online_walking_module]:/docs/en/platform/op3/robotis_ros_packages/#op3_online_walking_module/
 [Online walking using footstep planner]: [op3_how_to_control_upgraded_walking_using_footstep_planner.md]
 
-[op3_offset_tuner_server]: [op3_offset_tuner_server.md]
-[op3_offset_tuner_client]: [op3_offset_tuner_client.md]
-
-[op3_action_module]: [op3_action_module]
+[op3_offset_tuner_server]: /docs/en/platform/op3/robotis_ros_packages/#op3_offset_tuner_server/
+[op3_offset_tuner_client]: /docs/en/platform/op3/robotis_ros_packages/#op3_offset_tuner_client/
 
 
 [op3_how_to_control_upgraded_walking]: [op3_how_to_control_upgraded_walking.md]
