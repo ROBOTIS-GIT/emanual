@@ -57,5 +57,5 @@ $ roslaunch thormang3_gazebo robotis_world.launch
 - Please refer to below tutorials for the rest procedures.   
 [How to run THORMANG3's program]
 
-[How to run THORMANG3's program]: /docs/en/platform/thormang3/thormang3_operation/#thormang3-operation/
+[How to run THORMANG3's program]: /docs/en/platform/thormang3/thormang3_operation/#thormang3-operation
 [Gazebo Tutorials]:http://gazebosim.org/tutorials?cat=connect_ros
