@@ -17,6 +17,7 @@ header:
 
 - [Previous e-Manual] will be served as well.
 - New ROBOTIS Community [Forum] is available. Please checkout the [Forum] if you have any issue with ROBOTIS Products.
+- 한국어 사용자는 [`한글 매뉴얼`]을 참조하세요.
 
 # Quick References
 
@@ -55,7 +56,7 @@ header:
 ## Compatibility Guide
 - [Controller](/docs/en/parts/controller/controller_compatibility/)
 
-
+[`한글 매뉴얼`]: http://emanual.robotis.com/docs/kr/
 [AX-12W]: /docs/en/dxl/ax/ax-12w/#control-table-of-eeprom-area
 [AX-12+/12A]: /docs/en/dxl/ax/ax-12a/#control-table-of-eeprom-area
 [AX-18F/18A]: /docs/en/dxl/ax/ax-18a/#control-table-of-eeprom-area

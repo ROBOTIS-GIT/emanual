@@ -1,11 +1,11 @@
 ---
 layout: archive
 lang: en
-ref: manipulator_h_example
+ref: manipulator_h_examples
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/manipulator_h/example/
+permalink: /docs/en/platform/manipulator_h/examples/
 sidebar:
   title: MANIPULATOR-H
   nav: "manipulator_h"

@@ -13,9 +13,9 @@ sidebar:
 
 <div style="counter-reset: h1 6"></div>
 
-# [ROBOTIS MANIPULATOR ROS](#robotis-maipulator-ros)
+# [ROBOTIS MANIPULATOR ROS](#robotis-manipulator-ros)
 
-## [ROBOTIS MANIPULATOR Common](#robotis-maniulator-common)
+## [ROBOTIS MANIPULATOR Common](#robotis-manipulator-common)
 
 ### robotis_manipulator_bringup   
 
@@ -38,7 +38,7 @@ sidebar:
 
 GUI program using `qt creater`
 
-## [ROBOTIS MANIPULATOR Module](#robotis-maniulator-common)
+## [ROBOTIS MANIPULATOR Module](#robotis-manipulator-module)
 
 
 ### [manipulator_base_module](#manipulator_base_module)
@@ -231,7 +231,7 @@ launch parameters
 `robot_file_path` (string, default: "")  
 &emsp;&emsp; The file `.robot` 's path that includes robot information.
 
-## [How to exectue ROS Package](#how-to-exectue-ros-package)
+## [How to Execute ROS Package](#how-to-execute-ros-package)
 
 ### [How to run ROBOTIS MANIPULATOR](#how-to-run-robotis-manipulator)
 
@@ -295,16 +295,13 @@ $ roslaunch manipulator_h_manager manipulator_h_manager.launch
 ```
 
 
-
 [std_msgs/String]: /docs/en/platform/popup/std_msgs_string/
 [std_msgs/Float64]: /docs/en/platform/popup/std_msgs_Float64_msg/
 [geometry_msgs/Pose]: /docs/en/platform/popup/geometry_msgs_Pose_msg/
-
 [robotis_controller_msgs/StatusMsg]: /docs/en/platform/popup/StatusMsg.msg/
 [manipulator_manipulation_module_msgs/JointPose]: /docs/en/platform/popup/JointPose.msg/
 [manipulator_manipulation_module_msgs/KinematicsPose]: /docs/en/platform/popup/KinematicsPose.msg/
 [manipulator_manipulation_module_msgs/GetJointPose]: /docs/en/platform/popup/GetJointPose.srv/
 [manipulator_manipulation_module_msgs/GetKinematicsPose]: /docs/en/platform/popup/GetKinematicsPose.srv/
-
 [Creating new robot manager]: /docs/en/platform/software/tutorials/#creating-new-robot-manager
 [manipulator_manager]: /docs/en/platform/manipulator_h/manipulator_ros/#manipulator_manager
