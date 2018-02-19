@@ -558,7 +558,7 @@ $ sudo apt-get install ros-kinetic-qt-build
 
 1. Send command to Dynamixel
 
-    Let's operate the Dynamixel using GUI. We easily change a ID, Operating Mode and Baudrate by seperated widget and access all address using combobox widget. If we change motor position, first we push a **Torque Enable** button. **NOTE: SOME ADDRESS VALUES CAN BE APPLIED AFTER TORQUE ON. IF YOU WANT MORE INFORMATION, PLEASE FOLLOW THE LINK [E-MANUAL](http://emanual.robotis.com/docs/en/dxl/x/xm430-w210/))**
+    Let's operate the Dynamixel using GUI. We easily change a ID, Operating Mode and Baudrate by seperated widget and access all address using combobox widget. If we change motor position, first we push a **Torque Enable** button. **NOTE: SOME ADDRESS VALUES CAN BE APPLIED AFTER TORQUE ON. IF YOU WANT MORE INFORMATION, PLEASE FOLLOW THE LINK [E-MANUAL](http://emanual.robotis.com/docs/en/dxl/x/xm430-w210/)**
 
     ![](/assets/images/sw/dynamixel/dynamixel_workbench/gui_torque_enable.jpg)
 
