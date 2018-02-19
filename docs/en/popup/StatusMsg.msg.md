@@ -5,18 +5,18 @@ layout: popup
 - File: `robotis_controller_msgs/StatusMsg.msg`
 
 - Message Definition
- ```
- # Status Constants
- uint8 STATUS_UNKNOWN = 0
- uint8 STATUS_INFO = 1
- uint8 STATUS_WARN = 2
- uint8 STATUS_ERROR = 3
+  ```
+  # Status Constants
+  uint8 STATUS_UNKNOWN = 0
+  uint8 STATUS_INFO = 1
+  uint8 STATUS_WARN = 2
+  uint8 STATUS_ERROR = 3
 
- std_msgs/Header header
- uint8 type
- string module_name
- string status_msg
- ```
+  std_msgs/Header header
+  uint8 type
+  string module_name
+  string status_msg
+  ```
 
 - Description
 This message is used to identify the status of each module.

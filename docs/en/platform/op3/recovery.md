@@ -154,7 +154,7 @@ This chapter explains how to install software and configure ROBOTIS OP3.
     $ sudo apt install ros-kinetic-qt-ros
     ```      
 
-#### [Installing ROBOTIS ROS packages](#installing-robotis-ros-packages)  
+#### [Installing ROBOTIS ROS Package](#installing-robotis-ros-package)  
 
  - ROBOTIS ROS Packages
    -  [DynamixelSDK] : SDK for Dynamixel  
@@ -259,20 +259,19 @@ Clonezilla is used to recover ROBOTIS-OP3 with the image file in the provided US
 
 
 [How to Install Linux Mint]: https://www.linuxmint.com/documentation/user-guide/Cinnamon/english_18.0.pdf
-[DynamixelSDK]: https://github.com/ROBOTIS-GIT/DynamixelSDK/wiki
-[ROBOTIS-Framerowk]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/ROBOTIS-Framework-Documents
-[ROBOTIS-Framerowk-msgs]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/ROBOTIS-Framework-Documents
-[ROBOTIS-Math]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/robotis_math
-[ROBOTIS-OP3]: /docs/en/platform/op3/robotis_ros_packages/#robotis-op3/
-[ROBOTIS-OP3-Demo]: /docs/en/platform/op3/robotis_ros_packages/#robotis-op3-demo/
-[ROBOTIS-OP3-msgs]: /docs/en/platform/op3/robotis_ros_packages/#robotis-op3-msgs/
-[ROBOTIS-OP3-Tools]: /docs/en/platform/op3/robotis_ros_packages/#robotis-op3-tools/
-[ROBOTIS-OP3-Common]: /docs/en/platform/op3/robotis_ros_packages/#robotis-op3-common/
-[ROS Environment and Network Settings]:OP3_Robot_Operating_System#4_setup.md
-[Setting for automatic startup]:op3_how_to_kill_the_demo_program#31-start-demo-program-on-start.md
 
-[e-manual]: http://support.robotis.com/en/product/darwin-op/operating/recovery/clonezilla_recovery.htm
 
+[ROBOTIS-OP3]: /docs/en/platform/op3/robotis_ros_packages/#robotis-op3
+[ROBOTIS-OP3-Demo]: /docs/en/platform/op3/robotis_ros_packages/#robotis-op3-demo
+[ROBOTIS-OP3-msgs]: /docs/en/platform/op3/robotis_ros_packages/#robotis-op3-msgs
+[ROBOTIS-OP3-Tools]: /docs/en/platform/op3/robotis_ros_packages/#robotis-op3-tools
+[ROBOTIS-OP3-Common]: /docs/en/platform/op3/robotis_ros_packages/#robotis-op3-common
+[ROS Environment and Network Settings]: OP3_Robot_Operating_System#4_setup.md
+[Setting for automatic startup]: /docs/en/platform/op3/getting_started/#how-to-kill-the-demo-program
+[e-manual]: /docs/en/platform/op/maintenance/#clonezilla-recovery
 [Download]: https://downloads.sourceforge.net/project/darwinop/Software/Main%20Controller/Recovery%20USB/clonezilla-live-ROBOTIS-OP3_Recovery_171013.zip?r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fdarwinop%2Ffiles%2FSoftware%2FMain%2520Controller%2FRecovery%2520USB%2F&ts=1508126998&use_mirror=netix)
-
-[ROS Installation]:http://wiki.ros.org/kinetic/Installation/Ubuntu
+[ROS Installation]: /docs/en/platform/op3/recovery/#installing-robotis-ros-packages
+[DynamixelSDK]: /docs/en/platform/software/robotis_framework_packages/#dynamixelsdk
+[ROBOTIS-Framerowk]: /docs/en/platform/software/robotis_framework_packages/#robotis-framework
+[ROBOTIS-Framerowk-msgs]: /docs/en/platform/software/robotis_framework_packages/#robotis-framework-msgs
+[ROBOTIS-Math]: /docs/en/platform/common/robotis_math/#robotis-math

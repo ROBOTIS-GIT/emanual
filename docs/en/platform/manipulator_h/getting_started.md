@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/manipulator_h/getting_started/
 sidebar:
-  title: Manipulator-H
+  title: MANIPULATOR-H
   nav: "manipulator_h"
 ---
 
@@ -210,4 +210,4 @@ The USB2Dynamixel sends ArmSDK commands to the Manipulator. Connect the USB2Dyna
   - Once preparations are complete press the F7 key to compile and build.
 
 
-[http://eigen.tuxfamily.org]:http://eigen.tuxfamily.org
+[http://eigen.tuxfamily.org]: http://eigen.tuxfamily.org

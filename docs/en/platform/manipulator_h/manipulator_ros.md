@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/manipulator_h/manipulator_ros/
 sidebar:
-  title: Manipulator-H
+  title: MANIPULATOR-H
   nav: "manipulator_h"
 ---
 
@@ -277,18 +277,19 @@ How to execute Gazebo simulation
 
 #### How to execute Gazebo
 * Load Robotis Manipulator in Gazebo
-```   
+```
 $ roslaunch manipulator_h_gazebo manipulator_h_gazebo.launch   
-```   
+```
 
 #### [manipulator_manager] for Gazebo
 * Set up the `manipulator_h_manager.launch` for Gazebo simulation      
-```   
-    <param name="gazebo"                   value="false"     type="bool"/>
-    <param name="gazebo_robot_name"        value="robotis_manipulator_h" />
+```
+<param name="gazebo"                   value="false"     type="bool"/>
+<param name="gazebo_robot_name"        value="robotis_manipulator_h" />
 ```
 
 * manipulator_h_manager execution   
+
 ```
 $ roslaunch manipulator_h_manager manipulator_h_manager.launch
 ```
@@ -305,5 +306,5 @@ $ roslaunch manipulator_h_manager manipulator_h_manager.launch
 [manipulator_manipulation_module_msgs/GetJointPose]: /docs/en/platform/popup/GetJointPose.srv/
 [manipulator_manipulation_module_msgs/GetKinematicsPose]: /docs/en/platform/popup/GetKinematicsPose.srv/
 
-[Creating new robot manager]: /docs/en/platform/software/tutorials/#creating-new-robot-manager/
-[manipulator_manager]: #manipulator_manager
+[Creating new robot manager]: /docs/en/platform/software/tutorials/#creating-new-robot-manager
+[manipulator_manager]: /docs/en/platform/manipulator_h/manipulator_ros/#manipulator_manager
