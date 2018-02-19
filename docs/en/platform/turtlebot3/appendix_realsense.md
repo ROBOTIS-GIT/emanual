@@ -92,6 +92,7 @@ $ sudo apt-get install ros-kinetic-librealsense
 #### [Stable]
 
 ``` bash
+$ cd catkin_ws/src
 $ git clone https://github.com/intel-ros/realsense.git
 $ cd realsense
 $ git checkout 1.8.0
@@ -104,7 +105,7 @@ $ cd catkin_ws && catkin_make -j2
 $ sudo apt-get install ros-kinetic-realsense-camera
 ```
 
-### [Run realsense_camera Node](#run-realsensecamera-node)
+### [Run realsense_camera Node](#run-realsense_camera-node)
 
 **[TurtleBot]** Run the following command
 

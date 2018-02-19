@@ -71,29 +71,29 @@ RC-100 을 이용한 올로와 바이올로이드의 조종은 기본적으로 �
 ## [교안 예제(교육키트 4단계)](#교안-예제(교육키트-4단계)
 
 각 예제의 조립 방법이나 실행 시 동작에 관한 내용은 교육키트 4단계 교안을 참고하세요.   
-또한, [예제 태스크 코드의 다운로드 방법은 여기를 참고하세요.]  
+또한, 예제 태스크 코드의 다운로드 방법은 [태스크 코드 다운로드]를 참고하세요.  
 {: .notice}
 
 |I-1|태스크 코드|설명|
 | :---: | :-----: | :--- |
-|1. 로봇 축구<br />![](/assets/images/edu/ollo/l4_hockey_kr.jpg)|[Download][OLLO_L4_SoccerASM_KR.tsk]<br />[Download][OLLO_L4_Soccer_KR.tsk]|-조립 확인용 예제 프로그램<br />-로봇 예제 프로그램|
-|2. 라인트레이서<br /> ![](/assets/images/edu/ollo/l4_line-tracer_kr.jpg)|[Download][OLLO_L4_LinetracerASM_KR.tsk]<br />[Download][OLLO_L4_Linetracer_KR.tsk]|-조립 확인용 예제 프로그램<br />-로봇 예제 프로그램|
-|3. 로봇 얼굴<br />![](/assets/images/edu/ollo/l4_face_kr.jpg)|[Download][OLLO_L4_FaceASM_KR.tsk]<br />[Download][OLLO_L4_FaceExam_KR.tsk]<br />[Download][OLLO_L4_Face_KR.tsk]|-조립 확인용 예제 프로그램<br />-프로그래밍 예제 프로그램<br />-로봇 예제 프로그램|
-|4. 미로 탈출 로봇<br />![](/assets/images/edu/ollo/l4_micro-mouse_kr.jpg)|[Download][CM100_L4_MicroMouseASM_KR.tsk]<br />[Download][OLLO_L4_MicroMouse_KR.tsk]<br />|-조립 확인용 예제 프로그램<br />-로봇 예제 프로그램|
+|1. 로봇 축구<br />![](/assets/images/edu/ollo/l4_hockey_kr.jpg)|[Download][OLLO_L4_SoccerASM_KR.tsk]<br />[Download][OLLO_L4_Soccer_KR.tsk]|-조립 확인용 예제 프로그램<br />- 로봇 예제 프로그램|
+|2. 라인트레이서<br /> ![](/assets/images/edu/ollo/l4_line-tracer_kr.jpg)|[Download][OLLO_L4_LinetracerASM_KR.tsk]<br />[Download][OLLO_L4_Linetracer_KR.tsk]|-조립 확인용 예제 프로그램<br />- 로봇 예제 프로그램|
+|3. 로봇 얼굴<br />![](/assets/images/edu/ollo/l4_face_kr.jpg)|[Download][OLLO_L4_FaceASM_KR.tsk]<br />[Download][OLLO_L4_FaceExam_KR.tsk]<br />[Download][OLLO_L4_Face_KR.tsk]|-조립 확인용 예제 프로그램<br />-프로그래밍 예제 프로그램<br />- 로봇 예제 프로그램|
+|4. 미로 탈출 로봇<br />![](/assets/images/edu/ollo/l4_micro-mouse_kr.jpg)|[Download][CM100_L4_MicroMouseASM_KR.tsk]<br />[Download][OLLO_L4_MicroMouse_KR.tsk]<br />|-조립 확인용 예제 프로그램<br />- 로봇 예제 프로그램|
 
 |I-2|태스크 코드|설명|
 | :---: | :-----: | :--- |
-|5. 회전목마<br />![](/assets/images/edu/ollo/l4_carousel_kr.jpg)|[Download][OLLO_L4_CarouselASM_KR.tsk]<br />[Download][OLLO_L4_CarouselExam1_KR.tsk]<br />[Download][OLLO_L4_CarouselExam2_KR.tsk]<br />[Download][OLLO_L4_Carousel_KR.tsk]|-조립 확인용 예제 프로그램<br />-프로그래밍 예제 프로그램<br />-프로그래밍 예제 프로그램2<br />-로봇 예제 프로그램|
-|6. 탐사 로봇<br />![](/assets/images/edu/ollo/l4_gripper_kr.jpg)|[Download][OLLO_L4_ExplorerASM_KR.tsk]<br />[Download][OLLO_L4_Explorer_KR.tsk]|-조립 확인용 예제 프로그램<br />-로봇 예제 프로그램|
+|5. 회전목마<br />![](/assets/images/edu/ollo/l4_carousel_kr.jpg)|[Download][OLLO_L4_CarouselASM_KR.tsk]<br />[Download][OLLO_L4_CarouselExam1_KR.tsk]<br />[Download][OLLO_L4_CarouselExam2_KR.tsk]<br />[Download][OLLO_L4_Carousel_KR.tsk]|-조립 확인용 예제 프로그램<br />-프로그래밍 예제 프로그램<br />-프로그래밍 예제 프로그램2<br />- 로봇 예제 프로그램|
+|6. 탐사 로봇<br />![](/assets/images/edu/ollo/l4_gripper_kr.jpg)|[Download][OLLO_L4_ExplorerASM_KR.tsk]<br />[Download][OLLO_L4_Explorer_KR.tsk]|-조립 확인용 예제 프로그램<br />- 로봇 예제 프로그램|
 |7. 지게차<br />![](/assets/images/edu/ollo/l4_forklift_kr.jpg)|[Download][OLLO_L4_ForkliftASM_KR.tsk]<br />[Download][OLLO_L4_Forklift_KR.tsk]|-조립 확인용 예제 프로그램<br />- 로봇 예제 프로그램|
-|8. 전투 로봇<br />![](/assets/images/edu/ollo/l4_war_robot_kr.jpg)|[Download][OLLO_L4_WarRobotASM_KR.tsk]<br />[Download][OLLO_L4_WarRobot_KR.tsk]|-조립 확인용 예제 프로그램<br />-로봇 예제 프로그램|
+|8. 전투 로봇<br />![](/assets/images/edu/ollo/l4_war_robot_kr.jpg)|[Download][OLLO_L4_WarRobotASM_KR.tsk]<br />[Download][OLLO_L4_WarRobot_KR.tsk]|-조립 확인용 예제 프로그램<br />- 로봇 예제 프로그램|
 
 |I-3|태스크 코드|설명|
 | :---: | :-----: | :--- |
-|9. 덤프 트럭<br />![](/assets/images/edu/ollo/l4_truck_kr.jpg)|[Download][OLLO_L4_DumpTruckASM_KR.tsk]<br />[Download][OLLO_L4_DumpTruck_KR.tsk]|-조립 확인용 예제 프로그램<br />-로봇 예제 프로그램|
-|10. 춤추는 로봇<br />![](/assets/images/edu/ollo/l4_dancer_kr.jpg)|[Download][OLLO_L4_DanceRobotASM_KR.tsk]<br />[Download][OLLO_L4_DanceRobotExam_KR.tsk]<br />[Download][OLLO_L4_DanceRobot_KR.tsk]|-조립 확인용 예제 프로그램<br />-프로그래밍 예제 프로그램<br />-로봇 예제 프로그램|
-|11. 줄타는 원숭이<br />![](/assets/images/edu/ollo/l4_ropedancer_kr.jpg)|[Download][OLLO_L4_MonkeyASM_KR.tsk]<br />[Download][OLLO_L4_Monkey_KR.tsk]|-조립 확인용 예제 프로그램<br />-로봇 예제 프로그램|
-|12. 토끼와 거북이<br />![](/assets/images/edu/ollo/l4_rabbit_turtle_kr.jpg)|[Download][OLLO_L4_RabbitTurtleASM_KR.tsk]<br />[Download][OLLO_L4_RabbitTurtle_KR.tsk]|-조립 확인용 예제 프로그램<br />-로봇 예제 프로그램|
+|9. 덤프 트럭<br />![](/assets/images/edu/ollo/l4_truck_kr.jpg)|[Download][OLLO_L4_DumpTruckASM_KR.tsk]<br />[Download][OLLO_L4_DumpTruck_KR.tsk]|-조립 확인용 예제 프로그램<br />- 로봇 예제 프로그램|
+|10. 춤추는 로봇<br />![](/assets/images/edu/ollo/l4_dancer_kr.jpg)|[Download][OLLO_L4_DanceRobotASM_KR.tsk]<br />[Download][OLLO_L4_DanceRobotExam_KR.tsk]<br />[Download][OLLO_L4_DanceRobot_KR.tsk]|-조립 확인용 예제 프로그램<br />-프로그래밍 예제 프로그램<br />- 로봇 예제 프로그램|
+|11. 줄타는 원숭이<br />![](/assets/images/edu/ollo/l4_ropedancer_kr.jpg)|[Download][OLLO_L4_MonkeyASM_KR.tsk]<br />[Download][OLLO_L4_Monkey_KR.tsk]|-조립 확인용 예제 프로그램<br />- 로봇 예제 프로그램|
+|12. 토끼와 거북이<br />![](/assets/images/edu/ollo/l4_rabbit_turtle_kr.jpg)|[Download][OLLO_L4_RabbitTurtleASM_KR.tsk]<br />[Download][OLLO_L4_RabbitTurtle_KR.tsk]|-조립 확인용 예제 프로그램<br />- 로봇 예제 프로그램|
 
 
 [고속 감속 모터]: /docs/kr/parts/motor/h_speed_geared_motor/
@@ -101,7 +101,7 @@ RC-100 을 이용한 올로와 바이올로이드의 조종은 기본적으로 �
 [ZIG-110 set]: /docs/kr/parts/communication/zig-110/
 [RC-100]: /docs/kr/parts/communication/rc-100/
 [제어기]: /docs/kr/parts/controller/controller_compatibility/
-[예제 태스크 코드의 다운로드 방법은 여기를 참고하세요.]: /docs/kr/faq/download_task_code/
+[태스크 코드 다운로드]: /docs/kr/faq/download_task_code/
 [OLLO_L4_SoccerASM_KR.tsk]: http://support.robotis.com/ko/baggage_files/ollo/edu_4th/ollo_l4_soccerasm_kr.tsk
 [OLLO_L4_Soccer_KR.tsk]: http://support.robotis.com/ko/baggage_files/ollo/edu_4th/ollo_l4_soccer_kr.tsk
 [OLLO_L4_LinetracerASM_KR.tsk]: http://support.robotis.com/ko/baggage_files/ollo/edu_4th/ollo_l4_linetracerasm_kr.tsk
