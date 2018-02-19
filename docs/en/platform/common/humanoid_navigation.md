@@ -13,8 +13,8 @@ sidebar:
 
 # [Humanoid Navigation](#humanoid_navigation)
 
-> Reference : [http://wiki.ros.org/humanoid_navigation](http://wiki.ros.org/humanoid_navigation)  
-> Source : [https://github.com/AravindaDP/humanoid_navigation](https://github.com/AravindaDP/humanoid_navigation)
+> Reference : [http://wiki.ros.org/humanoid_navigation]
+> Source : [https://github.com/AravindaDP/humanoid_navigation]
 
 ## Prerequisite Packages : map_server, humanoid_nav_msgs, nav_msgs, sbpl, etc
   * Installation packages
@@ -30,13 +30,13 @@ $ sudo apt-get install ros-kinetic-octomap-server
   * Building and Installing from source
     * sbpl  
 
-     > Reference : [https://github.com/sbpl/sbpl](https://github.com/sbpl/sbpl)
+     > Reference : [https://github.com/sbpl/sbpl]
 
 
 ## 1. footstep_planner  
 ### 1.1 Overview  
 The footstep planner for humanoids or bipedal robots.  
-> Reference : [http://wiki.ros.org/footstep_planner](http://wiki.ros.org/footstep_planner)
+> Reference : [http://wiki.ros.org/footstep_planner]
 
 ### 1.2 Getting started  
 1. RUN
@@ -50,7 +50,14 @@ The footstep planner for humanoids or bipedal robots.
  - config/planning_params.yaml : Configuration of planner parameters  
 
 ## 2. gridmap_2d  
-> Reference : [http://wiki.ros.org/gridmap_2d](http://wiki.ros.org/gridmap_2d)
+> Reference : [http://wiki.ros.org/gridmap_2d]
 
 ## 3. humanoid_localization  
-> Reference : [http://wiki.ros.org/humanoid_localization](http://wiki.ros.org/humanoid_localization)
+> Reference : [http://wiki.ros.org/humanoid_localization]
+
+[http://wiki.ros.org/humanoid_navigation]: http://wiki.ros.org/humanoid_navigation  
+[https://github.com/AravindaDP/humanoid_navigation]: https://github.com/AravindaDP/humanoid_navigation
+[https://github.com/sbpl/sbpl]: https://github.com/sbpl/sbpl
+[http://wiki.ros.org/footstep_planner]: http://wiki.ros.org/footstep_planner
+[http://wiki.ros.org/gridmap_2d]: http://wiki.ros.org/gridmap_2d
+[http://wiki.ros.org/humanoid_localization]: http://wiki.ros.org/humanoid_localization
