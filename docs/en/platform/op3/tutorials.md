@@ -750,29 +750,33 @@ This chapter explains upgraded walking and footstep planner.
 
 
 
-[op3_manager]:#op3_manager
-[Robot Information file(.robot)]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/Creating-new-robot-manager#41-robot-information-file-robot
-[Joint initialize file(.yaml)]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/Creating-new-robot-manager#42-joint-initialize-file-yaml
-[How to use offset tuner]: #how-to-use-offset-tuner
-[Installing ROBOTIS ROS Package]:OP3_Recovery_of_ROBOTIS_OP3#24_installation_robotis_ros_packages.md  
+[op3_manager]:/docs/en/platform/op3/robotis_ros_packages/#op3-manager
+[Robot Information file(.robot)]: /docs/en/platform/software/tutorials/#creating-new-robot-manager
+[Joint initialize file(.yaml)]: /docs/en/platform/software/tutorials/#creating-new-robot-manager
+[How to use offset tuner]: /docs/en/platform/op3/tutorials/#how-to-use-offset-tuner
+[Installing ROBOTIS ROS Package]:/docs/en/platform/op3/recovery/#installing-robotis-ros-packages
 
-[op3_demo]: /docs/en/platform/op3/robotis_ros_packages/#op3-demo/
-[How to use walking tuner]: #how-to-use-walking-tuner
-[Face Tracker - ROS Package]: https://github.com/ROBOTIS-GIT/face_detection
+[op3_demo]: /docs/en/platform/op3/robotis_ros_packages/#op3-demo
+[How to use walking tuner]: /docs/en/platform/op3/tutorials/#how-to-use-walking-tuner
 
-[op3_action_module]: /docs/en/platform/op3/robotis_ros_packages/#op3_action_module/
-[How to create the motions]: #how-to-create-the-motions
 
-[op3_head_control_module]: /docs/en/platform/op3/robotis_ros_packages/#op3_head_control_module/
+[op3_action_module]: /docs/en/platform/op3/robotis_ros_packages/#op3_action_module
+[How to create the motions]: /docs/en/platform/op3/tutorials/#how-to-create-the-motions
+
+[op3_head_control_module]: /docs/en/platform/op3/robotis_ros_packages/#op3_head_control_module
 
 [Introduction to Humanoid Robotics]: http://www.springer.com/gp/book/9783642545351
-[op3_online_walking_module]:/docs/en/platform/op3/robotis_ros_packages/#op3_online_walking_module/
-[Online walking using footstep planner]: [op3_how_to_control_upgraded_walking_using_footstep_planner.md]
 
-[op3_offset_tuner_server]: /docs/en/platform/op3/robotis_ros_packages/#op3_offset_tuner_server/
-[op3_offset_tuner_client]: /docs/en/platform/op3/robotis_ros_packages/#op3_offset_tuner_client/
+[op3_online_walking_module]:/docs/en/platform/op3/robotis_ros_packages/#op3_online_walking_module
+[Online walking using footstep planner]: /docs/en/platform/op3/tutorials/#how-to-control-upgraded-walking-using-footstep-planner
+
+[op3_offset_tuner_server]: /docs/en/platform/op3/robotis_ros_packages/#op3_offset_tuner_server
+[op3_offset_tuner_client]: /docs/en/platform/op3/robotis_ros_packages/#op3_offset_tuner_client
+
+[op3_how_to_control_upgraded_walking]: /docs/en/platform/op3/tutorials/#how-to-control-upgraded-walkingonline-walking
+
+[humanoid_navigation]: /docs/en/platform/common/humanoid_navigation/#humanoid_navigation
 
 
-[op3_how_to_control_upgraded_walking]: [op3_how_to_control_upgraded_walking.md]
-[humanoid_navigation]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/humanoid_navigation
 [op3_navigation]: https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Tools/tree/master/op3_navigation
+[Face Tracker - ROS Package]: https://github.com/ROBOTIS-GIT/face_detection

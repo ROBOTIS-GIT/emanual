@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/manipulator_h/getting_started/
 sidebar:
-  title: Manipulator-H
+  title: MANIPULATOR-H
   nav: "manipulator_h"
 ---
 

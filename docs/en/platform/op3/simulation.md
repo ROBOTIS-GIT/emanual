@@ -70,10 +70,8 @@ $ roslaunch op3_manager op3_gazebo.launch
 
 
 [Gazebo Tutorials]: http://gazebosim.org/tutorials?cat=connect_ros
-[ROBOTIS OP3 Common]: /docs/en/platform/op3/robotis_ros_packages/#robotis-op3-common/
-
-[op3_manager]: [op3_manager.md]
-
+[ROBOTIS OP3 Common]: /docs/en/platform/op3/robotis_ros_packages/#robotis-op3-common
+[op3_manager]: /docs/en/platform/op3/robotis_ros_packages/#op3-manager
 [OP3 Tutorials]: /docs/en/platform/op3/tutorials/#tutorials
-[Controller File]: https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Common/blob/master/robotis_op3_gazebo/config/position_controller.yaml
-[World File]: https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Common/blob/master/robotis_op3_gazebo/worlds/empty.world
+[Controller File]: /docs/en/popup/position_controller.yaml/
+[World File]: /docs/en/popup/robotis_op3_gazebo_worlds_empty.world/
