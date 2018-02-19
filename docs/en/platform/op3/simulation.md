@@ -24,7 +24,7 @@ ROS-Gazebo Package Installation
 [Gazebo Tutorials]
 
 ### Download Package
-[ROBOTIS-OP3 Common]
+[ROBOTIS OP3 Common]
 
 ### Additional Installation
 If ros-indigo-desktop-full was used to install, the following packages need to be installed.
@@ -70,9 +70,10 @@ $ roslaunch op3_manager op3_gazebo.launch
 
 
 [Gazebo Tutorials]: http://gazebosim.org/tutorials?cat=connect_ros
-[ROBOTIS-OP3 Common]: [robotis_op3_common.md]
+[ROBOTIS OP3 Common]: /docs/en/platform/op3/robotis_ros_packages/#robotis-op3-common/
 
 [op3_manager]: [op3_manager.md]
-[OP3 Tutorials]: [op3_tutorials.md]
+
+[OP3 Tutorials]: /docs/en/platform/op3/tutorials/#tutorials
 [Controller File]: https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Common/blob/master/robotis_op3_gazebo/config/position_controller.yaml
 [World File]: https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Common/blob/master/robotis_op3_gazebo/worlds/empty.world

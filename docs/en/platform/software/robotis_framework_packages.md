@@ -249,9 +249,9 @@ This package defines Messages and Service that are used in the [robotis_controll
 * [GetJointModule.srv]{: .popup}
 
 
-[Creating new motion module]:Creating_new_motion_module.md
-[Creating new sensor module]:Creating_new_sensor_module.md
-[Creating new robot manager]:Creating_new_robot_manager.md
+[Creating new motion module]: /docs/en/platform/software/tutorials/#creating-new-motion-module/
+[Creating new sensor module]: /docs/en/platform/software/tutorials/#creating-new-sensor-module/
+[Creating new robot manager]: /docs/en/platform/software/tutorials/#creating-new-robot-manager/
 
 [std_msgs/String]: /docs/en/popup/std_msgs_string/
 [sensor_msgs/JointState]: /docs/en/popup/sensor_msgs_JointState_msg/
@@ -263,9 +263,9 @@ This package defines Messages and Service that are used in the [robotis_controll
 [ROBOTIS Dynamixel SDK Documents]:https://github.com/ROBOTIS-GIT/DynamixelSDK/wiki
 
 
-[`robotis_controller`]:robotis_controller.md
+[`robotis_controller`]: #robotis_controller
 
-[robotis_controller]: robotis_controller.md
+[robotis_controller]:  #robotis_controller
 [JointCtrlModule.msg]: /docs/en/popup/JointCtrlModule.msg/
 [StatusMsg.msg]: /docs/en/popup/StatusMsg.msg/
 [SyncWriteItem.msg]: /docs/en/popup/SyncWriteItem.msg/

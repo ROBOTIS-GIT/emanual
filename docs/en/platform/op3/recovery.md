@@ -154,7 +154,8 @@ This chapter explains how to install software and configure ROBOTIS OP3.
     $ sudo apt install ros-kinetic-qt-ros
     ```      
 
-#### Installing ROBOTIS ROS packages  
+#### [Installing ROBOTIS ROS packages](#installing-robotis-ros-packages)  
+
  - ROBOTIS ROS Packages
    -  [DynamixelSDK] : SDK for Dynamixel  
    -  [ROBOTIS-Framerowk] : The package to use ROS (Robot Operating System) for robots assembled with ROBOTIS products.  
@@ -262,11 +263,11 @@ Clonezilla is used to recover ROBOTIS-OP3 with the image file in the provided US
 [ROBOTIS-Framerowk]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/ROBOTIS-Framework-Documents
 [ROBOTIS-Framerowk-msgs]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/ROBOTIS-Framework-Documents
 [ROBOTIS-Math]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/robotis_math
-[ROBOTIS-OP3]: [robotis_op3.md]
-[ROBOTIS-OP3-Demo]: [robotis_op3_demo.md]
-[ROBOTIS-OP3-msgs]: [robotis_op3_msgs.md]
-[ROBOTIS-OP3-Tools]: [robotis_op3_tools.md]
-[ROBOTIS-OP3-Common]: [robotis_op3_common.md]
+[ROBOTIS-OP3]: /docs/en/platform/op3/robotis_ros_packages/#robotis-op3/
+[ROBOTIS-OP3-Demo]: /docs/en/platform/op3/robotis_ros_packages/#robotis-op3-demo/
+[ROBOTIS-OP3-msgs]: /docs/en/platform/op3/robotis_ros_packages/#robotis-op3-msgs/
+[ROBOTIS-OP3-Tools]: /docs/en/platform/op3/robotis_ros_packages/#robotis-op3-tools/
+[ROBOTIS-OP3-Common]: /docs/en/platform/op3/robotis_ros_packages/#robotis-op3-common/
 [ROS Environment and Network Settings]:OP3_Robot_Operating_System#4_setup.md
 [Setting for automatic startup]:op3_how_to_kill_the_demo_program#31-start-demo-program-on-start.md
 
