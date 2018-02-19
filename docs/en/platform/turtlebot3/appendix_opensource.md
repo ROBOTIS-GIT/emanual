@@ -58,4 +58,4 @@ sidebar:
 + OpenManiapulator Hardware
   - [OpenManiapulator Chain Model](http://www.robotis.com/service/download.php?no=690)
   - [OpenManiapulator SCARA Model](http://www.robotis.com/service/download.php?no=691)
-  - [OpenManiapulator SCARA Model](http://www.robotis.com/service/download.php?no=692)
+  - [OpenManiapulator Link Model](http://www.robotis.com/service/download.php?no=692)
