@@ -176,6 +176,6 @@ The CAD data is released to the [Onshape], which is a full-cloud 3D CAD editor. 
 - [TurtleBot3 Waffle Pi 3D Model](http://www.robotis.com/service/download.php?no=678)
 
 
-[Onshape]: https://cad.onshape.com/documents?filter=recently-opened&column=modifiedAt&order=desc&viewMode=0&q=turtlebot3
+[Onshape]: https://cad.onshape.com/documents?nodeId=3&resourceType=filter&column=promotedAt&order=desc&viewMode=0&q=turtlebot3
 [Open Robotics]: http://www.osrfoundation.org/
 [ROBOTIS]: http://www.robotis.com
