@@ -1223,32 +1223,24 @@ $ roslaunch thormang3_manager thormang3_manager.launch
 
 
 
-[`robotis_frameowrk_common`]: /docs/en/platform/software/robotis_framework_packages/#robotis_framework_common/
-[`robotis_controller`]: /docs/en/platform/software/robotis_framework_packages/#robotis_controller/
+[`robotis_frameowrk_common`]: /docs/en/platform/software/robotis_framework_packages/#robotis_framework_common
+[`robotis_controller`]: /docs/en/platform/software/robotis_framework_packages/#robotis_controller
+[_`motion_module_tutorial/include/motion_module_tutorial/motion_module_tutorial.h`_]: /docs/en/popup/motion_module_tutorial.h/
+[_`motion_module_tutorial/src/motion_module_tutorial/motion_module_tutorial.cpp`_]: /docs/en/popup/motion_module_tutorial.cpp/
+[_`motion_module_tutorial/package.xml`_]: /docs/en/popup/motion_module_tutorial_package.xml/
+[_`motion_module_tutorial/CMakeLists.txt`_]: /docs/en/popup/motion_module_tutorial_CMakeLists.txt/
 
-[_`motion_module_tutorial/include/motion_module_tutorial/motion_module_tutorial.h`_]: https://github.com/ROBOTIS-GIT/ROBOTIS-THORMANG-MPC/blob/master/motion_module_tutorial/include/motion_module_tutorial/motion_module_tutorial.h
 
-[_`motion_module_tutorial/src/motion_module_tutorial/motion_module_tutorial.cpp`_]: https://github.com/ROBOTIS-GIT/ROBOTIS-THORMANG-MPC/blob/master/motion_module_tutorial/src/motion_module_tutorial/motion_module_tutorial.cpp  
+[_`sensor_module_tutorial/include/sensor_module_tutorial/sensor_module_tutorial.h`_]: /docs/en/popup/sensor_module_tutorial.h/   
+[_`sensor_module_tutorial/src/sensor_module_tutorial/sensor_module_tutorial.cpp`_]: /docs/en/popup/sensor_module_tutorial.cpp/
+[`sensor_module_tutorial/package.xml`]: /docs/en/popup/sensor_module_tutorial_package.xml/
+[`sensor_module_tutorial/CMakeLists.txt`]: /docs/en/popup/sensor_module_tutorial_CMakeLists.txt/
 
-[_`motion_module_tutorial/package.xml`_]: https://github.com/ROBOTIS-GIT/ROBOTIS-THORMANG-MPC/blob/master/motion_module_tutorial/package.xml
-[`catkin/package.xml`]:http://wiki.ros.org/catkin/package.xml
 
-[_`motion_module_tutorial/CMakeLists.txt`_]: https://github.com/ROBOTIS-GIT/ROBOTIS-THORMANG-MPC/blob/master/motion_module_tutorial/CMakeLists.txt
+[_`thormang3_manager/src/thormang3_manager.cpp`_]: /docs/en/popup/thormang3_manager.cpp/
+
+
 [`catkin_make/CMakeLists.txt`]: http://wiki.ros.org/catkin/CMakeLists.txt
-
-
-[`robotis_controller`]: /docs/en/platform/software/robotis_framework_packages/#robotis_controller/
-[_`sensor_module_tutorial/include/sensor_module_tutorial/sensor_module_tutorial.h`_]:https://github.com/ROBOTIS-GIT/ROBOTIS-THORMANG-MPC/blob/master/sensor_module_tutorial/include/sensor_module_tutorial/sensor_module_tutorial.h   
-[_`sensor_module_tutorial/src/sensor_module_tutorial/sensor_module_tutorial.cpp`_]:https://github.com/ROBOTIS-GIT/ROBOTIS-THORMANG-MPC/blob/master/sensor_module_tutorial/src/sensor_module_tutorial/sensor_module_tutorial.cpp
-[`sensor_module_tutorial/package.xml`]:https://github.com/ROBOTIS-GIT/ROBOTIS-THORMANG-MPC/blob/master/sensor_module_tutorial/package.xml
 [`catkin/package.xml`]:http://wiki.ros.org/catkin/package.xml
-[`catkin/package.xml`]:http://wiki.ros.org/catkin/package.xml
-[`sensor_module_tutorial/CMakeLists.txt`]:https://github.com/ROBOTIS-GIT/ROBOTIS-THORMANG-MPC/blob/master/sensor_module_tutorial/CMakeLists.txt
-[`catkin_make/CMakeLists.txt`]:http://wiki.ros.org/catkin/CMakeLists.txt
 
-[_`thormang3_manager/src/thormang3_manager.cpp`_]:https://github.com/ROBOTIS-GIT/ROBOTIS-THORMANG-MPC/blob/master/thormang3_manager/src/thormang3_manager.cpp
-[`catkin/package.xml`]:http://wiki.ros.org/catkin/package.xml
-[`catkin_make/CMakeLists.txt`]:http://wiki.ros.org/catkin/CMakeLists.txt
-
-
-[Creating new robot manager]: #creating-new-robot-manager
+[Creating new robot manager]: /docs/en/platform/software/tutorials/#creating-new-robot-manager

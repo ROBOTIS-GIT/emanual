@@ -7,15 +7,15 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/manipulator_h/manipulator_ros/
 sidebar:
-  title: Manipulator-H
+  title: MANIPULATOR-H
   nav: "manipulator_h"
 ---
 
 <div style="counter-reset: h1 6"></div>
 
-# [ROBOTIS MANIPULATOR ROS](#robotis-maipulator-ros)
+# [ROBOTIS MANIPULATOR ROS](#robotis-manipulator-ros)
 
-## [ROBOTIS MANIPULATOR Common](#robotis-maniulator-common)
+## [ROBOTIS MANIPULATOR Common](#robotis-manipulator-common)
 
 ### robotis_manipulator_bringup   
 
@@ -38,7 +38,7 @@ sidebar:
 
 GUI program using `qt creater`
 
-## [ROBOTIS MANIPULATOR Module](#robotis-maniulator-common)
+## [ROBOTIS MANIPULATOR Module](#robotis-manipulator-module)
 
 
 ### [manipulator_base_module](#manipulator_base_module)
@@ -231,7 +231,7 @@ launch parameters
 `robot_file_path` (string, default: "")  
 &emsp;&emsp; The file `.robot` 's path that includes robot information.
 
-## [How to exectue ROS Package](#how-to-exectue-ros-package)
+## [How to Execute ROS Package](#how-to-execute-ros-package)
 
 ### [How to run ROBOTIS MANIPULATOR](#how-to-run-robotis-manipulator)
 
@@ -277,33 +277,31 @@ How to execute Gazebo simulation
 
 #### How to execute Gazebo
 * Load Robotis Manipulator in Gazebo
-```   
+```
 $ roslaunch manipulator_h_gazebo manipulator_h_gazebo.launch   
-```   
+```
 
 #### [manipulator_manager] for Gazebo
 * Set up the `manipulator_h_manager.launch` for Gazebo simulation      
-```   
-    <param name="gazebo"                   value="false"     type="bool"/>
-    <param name="gazebo_robot_name"        value="robotis_manipulator_h" />
+```
+<param name="gazebo"                   value="false"     type="bool"/>
+<param name="gazebo_robot_name"        value="robotis_manipulator_h" />
 ```
 
 * manipulator_h_manager execution   
+
 ```
 $ roslaunch manipulator_h_manager manipulator_h_manager.launch
 ```
 
 
-
 [std_msgs/String]: /docs/en/platform/popup/std_msgs_string/
 [std_msgs/Float64]: /docs/en/platform/popup/std_msgs_Float64_msg/
 [geometry_msgs/Pose]: /docs/en/platform/popup/geometry_msgs_Pose_msg/
-
 [robotis_controller_msgs/StatusMsg]: /docs/en/platform/popup/StatusMsg.msg/
 [manipulator_manipulation_module_msgs/JointPose]: /docs/en/platform/popup/JointPose.msg/
 [manipulator_manipulation_module_msgs/KinematicsPose]: /docs/en/platform/popup/KinematicsPose.msg/
 [manipulator_manipulation_module_msgs/GetJointPose]: /docs/en/platform/popup/GetJointPose.srv/
 [manipulator_manipulation_module_msgs/GetKinematicsPose]: /docs/en/platform/popup/GetKinematicsPose.srv/
-
-[Creating new robot manager]: /docs/en/platform/software/tutorials/#creating-new-robot-manager/
-[manipulator_manager]: #manipulator_manager
+[Creating new robot manager]: /docs/en/platform/software/tutorials/#creating-new-robot-manager
+[manipulator_manager]: /docs/en/platform/manipulator_h/manipulator_ros/#manipulator_manager

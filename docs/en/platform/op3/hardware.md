@@ -27,7 +27,7 @@ ROBOTIS provides STP files for ROBOTIS-OP3 parts and assembly. Users can view fr
 ![](/assets/images/platform/op3/op3_assemble_data.png)
 
 ### File
- > Reference : [Download]
+ > Reference : [Download](https://github.com/ROBOTIS-GIT/ROBOTIS-OP-Series-Data/blob/master/ROBOTIS-OP3/Hardware/Mechanics/Part)
 
 ## [Cover Skin Data](#cover-skin-data)
 
@@ -39,11 +39,4 @@ ROBOTIS provides STP files for ROBOTIS-OP3 parts and assembly. Users can view fr
 
  ![](/assets/images/platform/op3/ROBOTIS_OP3-Skin_Ver1.png)![](/assets/images/platform/op3/ROBOTIS-OP3-Skin_THORMANG3-Style.png)
 ### File
-  > Reference : [Download]
-
-
-
-
-[Download]:https://github.com/ROBOTIS-GIT/ROBOTIS-OP-Series-Data/blob/master/ROBOTIS-OP3/Hardware/Mechanics/Part
-
-[Download]:https://github.com/ROBOTIS-GIT/ROBOTIS-OP-Series-Data/tree/master/ROBOTIS-OP3/Hardware/Mechanics/Skin
+  > Reference : [Download](https://github.com/ROBOTIS-GIT/ROBOTIS-OP-Series-Data/tree/master/ROBOTIS-OP3/Hardware/Mechanics/Skin)
