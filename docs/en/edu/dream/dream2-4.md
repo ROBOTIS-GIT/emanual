@@ -39,18 +39,18 @@ For more information, assembly and operation, please refer to the ROBOTIS DREAM 
 
 |Robot|TASK Code|
 | :---: | :---: |
-|1. Music Box<br />![](/assets/images/edu/dream/dream1-3_orgol.jpg)|[예제 프로그램][ex_01]|
-|2. Cleaning Robot<br />![](/assets/images/edu/dream/dream1-3_cleaningrobot.jpg)|[예제 프로그램][ex_02]<br>[조종기 프로그램][ex_02-1]|
-|3. Truck<br />![](/assets/images/edu/dream/dream1-3_truck.jpg)|[예제 프로그램][ex_03]<br>[조종기 프로그램][ex_03-1]|
-|4. Bumper Car<br />![](/assets/images/edu/dream/dream1-3_bumpercar.jpg)|[예제 프로그램][ex_04]<br>[조종기 프로그램][ex_04-1]|
-|5. Probing Car<br />![](/assets/images/edu/dream/dream1-3_probingcar.jpg)|[예제 프로그램][ex_05]|
-|6. Electric Guitar<br />![](/assets/images/edu/dream/dream1-3_guitar.jpg)|[예제 프로그램][ex_06]|
-|7. Flag Game Robot<br />![](/assets/images/edu/dream/dream1-3_flaggame.jpg)|[예제 프로그램][ex_07]|
-|8. Crane<br />![](/assets/images/edu/dream/dream1-3_crane.jpg)|[예제 프로그램][ex_08]<br>[조종기 프로그램][ex_08-1]|
-|9. Drunken Basket<br />![](/assets/images/edu/dream/dream1-3_basket.jpg)|[예제 프로그램][ex_09]|
-|10. Viking<br />![](/assets/images/edu/dream/dream1-3_viking.jpg)|[예제 프로그램][ex_10]|
-|11. Whac-A-Mole<br />![](/assets/images/edu/dream/dream1-3_whacamole.jpg)|[예제 프로그램][ex_11]|
-|12. Goblin Robot<br />![](/assets/images/edu/dream/dream1-3_goblin.jpg)|[예제 프로그램][ex_12]|
+|1. Music Box<br />![](/assets/images/edu/dream/dream1-3_orgol.jpg)|[Download][ex_01]|
+|2. Cleaning Robot<br />![](/assets/images/edu/dream/dream1-3_cleaningrobot.jpg)|[Download][ex_02]<br>[Download remote control program][ex_02-1]|
+|3. Truck<br />![](/assets/images/edu/dream/dream1-3_truck.jpg)|[Download][ex_03]<br>[Download remote control program][ex_03-1]|
+|4. Bumper Car<br />![](/assets/images/edu/dream/dream1-3_bumpercar.jpg)|[Download][ex_04]<br>[Download remote control program][ex_04-1]|
+|5. Probing Car<br />![](/assets/images/edu/dream/dream1-3_probingcar.jpg)|[Download][ex_05]|
+|6. Electric Guitar<br />![](/assets/images/edu/dream/dream1-3_guitar.jpg)|[Download][ex_06]|
+|7. Flag Game Robot<br />![](/assets/images/edu/dream/dream1-3_flaggame.jpg)|[Download][ex_07]|
+|8. Crane<br />![](/assets/images/edu/dream/dream1-3_crane.jpg)|[Download][ex_08]<br>[Download remote control program][ex_08-1]|
+|9. Drunken Basket<br />![](/assets/images/edu/dream/dream1-3_basket.jpg)|[Download][ex_09]|
+|10. Viking<br />![](/assets/images/edu/dream/dream1-3_viking.jpg)|[Download][ex_10]|
+|11. Whac-A-Mole<br />![](/assets/images/edu/dream/dream1-3_whacamole.jpg)|[Download][ex_11]|
+|12. Goblin Robot<br />![](/assets/images/edu/dream/dream1-3_goblin.jpg)|[Download][ex_12]|
 
 [CM-150]: /docs/en/parts/controller/cm-150/ 
 [Servo Motor]: /docs/en/parts/motor/servo_motor/
