@@ -291,7 +291,7 @@ main:
       - title: "DYNAMIXEL SDK"
         titlekr: "다이나믹셀 SDK"
         url: /software/dynamixel/dynamixel_sdk/overview/
-      - title: "Dynamixel-Workbench"
+      - title: "DYNAMIXEL-Workbench"
         titlekr: "다이나믹셀 워크벤치"
         url: /software/dynamixel/dynamixel_workbench/
     - title: "Mobile Apps"
@@ -12263,43 +12263,43 @@ dynamixel_sdk:
 #Dynamixel-Workbench sidebar
 dynamixel_workbench:
   - title: "Introduction"
-    url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#introduction
+    url: /software/dynamixel/dynamixel_workbench/#introduction
   - title: "Installation"
-    url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#installation
+    url: /software/dynamixel/dynamixel_workbench/#installation
   - title: "Supported Dynamixels"
-    url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#supported-dynamixels
+    url: /software/dynamixel/dynamixel_workbench/#supported-dynamixels
   - title: "Package Description"
-    url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#package-description
+    url: /software/dynamixel/dynamixel_workbench/#package-description
     children:
     - title: "Single Manager"
-      url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#single-manager
+      url: /software/dynamixel/dynamixel_workbench/#single-manager
     - title: "Controllers"
-      url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#controllers
+      url: /software/dynamixel/dynamixel_workbench/#controllers
     - title: "Operators"
-      url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#operators
+      url: /software/dynamixel/dynamixel_workbench/#operators
     - title: "Toolbox"
-      url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#toolbox
+      url: /software/dynamixel/dynamixel_workbench/#toolbox
   - title: "Tutorials"
-    url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#tutorials
+    url: /software/dynamixel/dynamixel_workbench/#tutorials
     children:
     - title: "Single Manager"
-      url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#single-manager-tutorials
+      url: /software/dynamixel/dynamixel_workbench/#single-manager-tutorials
       children:
       - title: "Command line"
-        url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#command-line
+        url: /software/dynamixel/dynamixel_workbench/#command-line
       - title: "GUI"
-        url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#gui
+        url: /software/dynamixel/dynamixel_workbench/#gui
     - title: "Controllers"
-      url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#controllers-tutorials
+      url: /software/dynamixel/dynamixel_workbench/#controllers-tutorials
       children:
       - title: "Position"
-        url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#position-controller
+        url: /software/dynamixel/dynamixel_workbench/#position-controller
       - title: "Velocity"
-        url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#velocity-controller
+        url: /software/dynamixel/dynamixel_workbench/#velocity-controller
       - title: "Torque"
-        url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#torque-controller
+        url: /software/dynamixel/dynamixel_workbench/#torque-controller
       - title: "Multi port"
-        url: /software/dynamixel/dynamixel_workbench/dynamixel_workbench/#multi-port-controller
+        url: /software/dynamixel/dynamixel_workbench/#multi-port-controller
 
 #ZIGBEE SDK sidebar
 zigbee_sdk:
