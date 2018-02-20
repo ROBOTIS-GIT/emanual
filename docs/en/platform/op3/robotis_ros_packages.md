@@ -457,7 +457,7 @@ controller->addMotionModule((MotionModule*) WalkingModule::getInstance());
 controller->startTimer();
 
 ...
-```  
+```
 
 ### Others
 
@@ -484,13 +484,7 @@ This node publish TF data from /world to /body_link.
 `/robotis/pelvis_pose_reset`([std_msgs/String]{: .popup})  
 &emsp;&emsp; This message will reset the body_link pose to default value.  
 
-
-
-
-
-
 #### [op3_optimization](#op3_optimization)
-
 
 ##### Overview  
 `op3_optimization` is ros node for online walking pattern generation.  
@@ -499,10 +493,6 @@ This node publish TF data from /world to /body_link.
 ###### Service Server  
 `/robotis/get_preview_matrix`([op3_online_walking_module_msgs/GetPreviewMatrix]{: .popup})  
 &emsp;&emsp; This service will return preview control matrix for online walking pattern generation.  
-
-
-
-
 
 ## [ROBOTIS OP3 msgs](#robotis-op3-msgs)
 
@@ -568,10 +558,6 @@ The following are Messages and Service used for the [op3_offset_tuner_server] an
 
 ##### ROS Service Type  
  * [GetPresentJointOffsetData.srv]{: .popup}
-
-
-
-
 
 ### [ROBOTIS OP3 Demo](#robotis-op3-Demo)
 
@@ -807,7 +793,7 @@ The following are Messages and Service used for the [op3_offset_tuner_server] an
  Before executing the `op3_action_editor` launch file, other programs should be terminated.  
  ```
  $ roslaunch op3_action_editor op3_action_editor.launch
- ```  
+ ```
 
 ###### UI
 
@@ -833,20 +819,20 @@ The following are Messages and Service used for the [op3_offset_tuner_server] an
 ###### The Contents of The Default Action File
  The below table shows the contents of the default action file.  
 
- | page number | page title | brief description of page                             | number of pages |
- |-------------|------------|-------------------------------------------------------|-----------------|
- |      1      | walki_init | initial standing pose                                 |        1        |
- |      2      |    hello   | greeting                                              |        1        |
- |      3      |  thank_you | Thank you                                             |        1        |
- |      4      |     yes    | yes                                                   |        1        |
- |      5      |      no    | no                                                    |        1        |
- |      6      |  fighting  | fighting                                              |        1        |
- |      7      |    clap    | clap                                                  |        2        |
- |      9      |   S_H_RE   | ready for shaking hands                               |        1        |
- |     10      |     S_H    | shaking hands                                         |        1        |
- |     11      |   S_H_END  | move to initialpose fram ready pose for shaking hands |        1        |
- |     12      |  scanning  | looking around                                        |        1        |
- |     13      |  ceremony  | ceremony                                              |        1        |
+| page number | page title | brief description of page                             | number of pages |
+|-------------|------------|-------------------------------------------------------|-----------------|
+|      1      | walki_init | initial standing pose                                 |        1        |
+|      2      |    hello   | greeting                                              |        1        |
+|      3      |  thank_you | Thank you                                             |        1        |
+|      4      |     yes    | yes                                                   |        1        |
+|      5      |      no    | no                                                    |        1        |
+|      6      |  fighting  | fighting                                              |        1        |
+|      7      |    clap    | clap                                                  |        2        |
+|      9      |   S_H_RE   | ready for shaking hands                               |        1        |
+|     10      |     S_H    | shaking hands                                         |        1        |
+|     11      |   S_H_END  | move to initialpose fram ready pose for shaking hands |        1        |
+|     12      |  scanning  | looking around                                        |        1        |
+|     13      |  ceremony  | ceremony                                              |        1        |
 
 
 ###### Basic Command of Action Editor
@@ -916,7 +902,7 @@ The following are Messages and Service used for the [op3_offset_tuner_server] an
  Execute the launch file.  
  ```
  $ roslaunch op3_gui_demo op3_demo.launch
- ```  
+ ```
 
 ###### UI
 
@@ -996,7 +982,7 @@ The following are Messages and Service used for the [op3_offset_tuner_server] an
  Before executing the `op3_offset_tuner_server` launch file, other programs should be terminated.    
  ```
  $ roslaunch op3_offset_tuner_server op3_offset_tuner_server.launch
- ```  
+ ```
 
 ###### Usage
  > Reference : [How to use offset tuner]  
@@ -1049,7 +1035,7 @@ The following are Messages and Service used for the [op3_offset_tuner_server] an
 ###### Run
  ```
  $ rosrun op3_offset_tuner_client op3_offset_tuner_client
- ```  
+ ```
 
 ###### Usage
  > Reference : [How to use offset tuner]
@@ -1091,7 +1077,7 @@ The following are Messages and Service used for the [op3_offset_tuner_server] an
   > Reference : `libncurses5-dev` must be pre-installed in order to build `op3_walking_tuner`.  
      ```
      $ sudo apt install libncurses5-dev
-     ```  
+     ```
 
 ###### Run
  Execute the launch file.  
@@ -1099,7 +1085,7 @@ The following are Messages and Service used for the [op3_offset_tuner_server] an
  Before executing the `op3_walking_tuner` launch file, other programs should be terminated.  
  ```
  $ roslaunch op3_walking_tuner op3_walking_tuner.launch
- ```  
+ ```
 
 
 ###### UI
