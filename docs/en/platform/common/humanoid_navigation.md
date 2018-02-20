@@ -33,12 +33,12 @@ $ sudo apt-get install ros-kinetic-octomap-server
      > Reference : [https://github.com/sbpl/sbpl]
 
 
-## 1. footstep_planner  
-### 1.1 Overview  
+## footstep_planner  
+### Overview  
 The footstep planner for humanoids or bipedal robots.  
 > Reference : [http://wiki.ros.org/footstep_planner]
 
-### 1.2 Getting started  
+### Getting started  
 1. RUN
    ```
    $ roslaunch footstep_planner thormang3_footstep_planner.launch
@@ -49,10 +49,10 @@ The footstep planner for humanoids or bipedal robots.
  - config/planning_params_thormang3.yaml  
  - config/planning_params.yaml : Configuration of planner parameters  
 
-## 2. gridmap_2d  
+## gridmap_2d  
 > Reference : [http://wiki.ros.org/gridmap_2d]
 
-## 3. humanoid_localization  
+## humanoid_localization  
 > Reference : [http://wiki.ros.org/humanoid_localization]
 
 [http://wiki.ros.org/humanoid_navigation]: http://wiki.ros.org/humanoid_navigation  
