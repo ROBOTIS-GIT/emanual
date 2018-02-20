@@ -11,7 +11,7 @@ sidebar:
   nav: "mgss-10"
 ---
 
-![](/assets/images/parts/sensors/mgss-10_product.gif)
+![](/assets/images/parts/sensors/mgss-10_product.png)
 
 > Magnetic Sensor(MGSS-10)
 
