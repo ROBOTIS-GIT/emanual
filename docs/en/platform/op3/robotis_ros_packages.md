@@ -13,11 +13,11 @@ sidebar:
 
 <div style="counter-reset: h1 3"></div>
 
-# [ROBOTIS ROS packages](#robotis-ros-packages)
+# [ROBOTIS ROS Packages](#robotis-ros-packages)
 
-## [Robotis OP3](#robotis-op3)
+## [ROBOTIS OP3](#robotis-op3)
 
-### [Robotis ROS Modules](#robotis-ros-modules)
+### [ROBOTIS ROS Modules](#robotis-ros-modules)
 
 #### Motion Module
 
@@ -1117,21 +1117,16 @@ The following are Messages and Service used for the [op3_offset_tuner_server] an
 [op3_walking_module]: /docs/en/platform/op3/robotis_ros_packages/#op3_walking_module
 [op3_online_walking_module]: /docs/en/platform/op3/robotis_ros_packages/#op3_online_walking_module
 
-
-
-
 [std_msgs/Int32]: /docs/en/popup/std_msgs_int32_message/
 [std_msgs/String]: /docs/en/popup/std_msgs_string/
 [std_msgs/Bool]: /docs/en/popup/std_msgs_bool_msg/
 [std_msgs/Float64]: /docs/en/popup/std_msgs_Float64_msg/
 [std_msgs/Header]: /docs/en/popup/std_msgs_Header/
 
-
 [sensor_msgs/JointState]: /docs/en/popup/sensor_msgs_JointState_msg/
 [sensor_msgs/Imu]: /docs/en/popup/sensor_msgs_IMU_msg/
 [sensor_msgs/Image]: /docs/en/popup/sensor_msgs_Image/
 [sensor_msgs/CameraInfo]: /docs/en/popup/sensor_msgs_CameraInfo_msg/
-
 
 [geometry_msgs/Pose]: /docs/en/popup/geometry_msgs_Pose_msg/  
 [geometry_msgs/PoseStamped]: /docs/en/popup/geometry_msgs_PoseStamped_msg/
@@ -1202,8 +1197,8 @@ The following are Messages and Service used for the [op3_offset_tuner_server] an
 
 [geometry_msgs/Point]: /docs/en/popup/geometry_msgs_Point_msg/
 
-[`usb_cam`]:http://wiki.ros.org/usb_cam
-[HSV color]:https://en.wikipedia.org/wiki/HSL_and_HSV
+[`usb_cam`]: http://wiki.ros.org/usb_cam
+[HSV color]: https://en.wikipedia.org/wiki/HSL_and_HSV
 
 [How to execute Default Demo]: /docs/en/platform/op3/tutorials/#how-to-exectue-default-demo
 [How to execute GUI program]: /docs/en/platform/op3/tutorials/#how-to-exectue-gui-program

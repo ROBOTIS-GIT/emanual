@@ -750,11 +750,11 @@ This chapter explains upgraded walking and footstep planner.
 
 
 
-[op3_manager]:/docs/en/platform/op3/robotis_ros_packages/#op3-manager
+[op3_manager]: /docs/en/platform/op3/robotis_ros_packages/#op3-manager
 [Robot Information file(.robot)]: /docs/en/platform/software/tutorials/#creating-new-robot-manager
 [Joint initialize file(.yaml)]: /docs/en/platform/software/tutorials/#creating-new-robot-manager
 [How to use offset tuner]: /docs/en/platform/op3/tutorials/#how-to-use-offset-tuner
-[Installing ROBOTIS ROS Package]:/docs/en/platform/op3/recovery/#installing-robotis-ros-packages
+[Installing ROBOTIS ROS Package]: /docs/en/platform/op3/recovery/#installing-robotis-ros-packages
 
 [op3_demo]: /docs/en/platform/op3/robotis_ros_packages/#op3-demo
 [How to use walking tuner]: /docs/en/platform/op3/tutorials/#how-to-use-walking-tuner
@@ -767,7 +767,7 @@ This chapter explains upgraded walking and footstep planner.
 
 [Introduction to Humanoid Robotics]: http://www.springer.com/gp/book/9783642545351
 
-[op3_online_walking_module]:/docs/en/platform/op3/robotis_ros_packages/#op3_online_walking_module
+[op3_online_walking_module]: /docs/en/platform/op3/robotis_ros_packages/#op3_online_walking_module
 [Online walking using footstep planner]: /docs/en/platform/op3/tutorials/#how-to-control-upgraded-walking-using-footstep-planner
 
 [op3_offset_tuner_server]: /docs/en/platform/op3/robotis_ros_packages/#op3_offset_tuner_server

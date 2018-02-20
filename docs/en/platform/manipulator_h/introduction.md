@@ -11,8 +11,6 @@ sidebar:
   nav: "manipulator_h"
 ---
 
-# Manipulator-H
-
 ![](/assets/images/platform/manipulator/manipulator_product.gif)
 
 # [Introduction](#introduction)
