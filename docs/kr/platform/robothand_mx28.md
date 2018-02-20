@@ -264,7 +264,7 @@ Hand 데모 프로그램 예제가 구현되어 있습니다.
 [MX-28]: /docs/kr/dxl/mx/mx-28/
 [CM-700]: /docs/kr/parts/controller/cm-700/
 [LN-101]: /docs/kr/parts/interface/ln-101/
-[데모 프로그램 설치 방법]: #robot-hand-프로그래밍
+[데모 프로그램 설치 방법]: #로봇핸드-프로그래밍
 [로보플러스 터미널]: /docs/kr/software/rplus1/terminal/
 [다이나믹셀과 통신하기 위한 프로토콜]: /docs/kr/dxl/protocol1/
 [Dynamixel SDK]: /docs/en/software/dynamixel/dynamixel_sdk/overview/
