@@ -17,12 +17,12 @@ sidebar:
   ```
   ---
   layout: archive
-  lang: en    > 영어(en), 한글(kr), 일어(jp), 중국어(cn)
+  lang: kr    > 영어(en), 한글(kr), 일어(jp), 중국어(cn)
   ref: thormang3_getting_started    > 컨텐츠의 주제(각 언어별로 ref가 같아야 함.)
   read_time: true
   share: true
   author_profile: false
-  permalink: /docs/en/platform/thormang3/getting_started/   > /파일위치/파일명/
+  permalink: /docs/kr/platform/thormang3/getting_started/   > /파일위치/파일명/
   sidebar:
     title: THORMANG3    > 제품명
     nav: "thormang3"    > 내비게이션 참조명(navigation.yml파일 참조)

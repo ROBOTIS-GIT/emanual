@@ -271,8 +271,6 @@ main:
       - title: "ROBOTIS STEM"
         titlekr: "STEM 키트"
         url: /edu/bioloid/stem/
-      - titlekr: "STEM 아카데미"
-        url: /edu/bioloid/stem_academy/
       - title: "ROBOTIS PREMIUM"
         titlekr: "프리미엄"
         url: /edu/bioloid/premium/
