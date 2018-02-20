@@ -267,7 +267,7 @@ Hand 데모 프로그램 예제가 구현되어 있습니다.
 [LN-101]: /docs/kr/parts/interface/ln-101/
 [홈페이지 자료실]: http://www.robotis.com/service/downloadcenter.php
 [LN-101 드라이버 설치]: /docs/kr/parts/interface/ln-101/#드라이버-설치-확인-방법
-[데모 프로그램 설치 방법]: #robot-hand-프로그래밍
+[데모 프로그램 설치 방법]: #로봇핸드-프로그래밍
 [로보플러스 터미널]: /docs/kr/software/rplus1/terminal/
 [다이나믹셀과 통신하기 위한 프로토콜]: /docs/kr/dxl/protocol1/
 [Dynamixel SDK]: /docs/en/software/dynamixel/dynamixel_sdk/overview/

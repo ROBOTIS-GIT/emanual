@@ -9177,6 +9177,48 @@ op3:
     - title: "Recovery of ROBOTIS-OP3"
       url: /platform/op3/recovery/#recovery-of-robotis-op3
 
+robothand_rx28:
+  - titlekr: "개요"
+    urlkr: /platform/robothand_rx28/#개요
+  - titlekr: "주요 사양"
+    urlkr: /platform/robothand_rx28/#주요-사양
+  - titlekr: "시작하기"
+    urlkr: /platform/robothand_rx28/#시작하기
+    children:
+    - titlekr: "제품 구성"
+      urlkr: /platform/robothand_rx28/#제품-구성
+    - titlekr: "설치"
+      urlkr: /platform/robothand_rx28/#설치
+    - titlekr: "작동"
+      urlkr: /platform/robothand_rx28/#작동
+  - titlekr: "로봇핸드 프로그래밍"
+    urlkr: /platform/robothand_rx28/#로봇핸드-프로그래밍
+  - titlekr: "유용한 정보"
+    urlkr: /platform/robothand_rx28/#유용한-정보
+  - titlekr: "다운로드"
+    urlkr: /platform/robothand_rx28/#다운로드
+  
+robothand_mx28:
+  - titlekr: "개요"
+    urlkr: /platform/robothand_mx28/#개요
+  - titlekr: "주요 사양"
+    urlkr: /platform/robothand_mx28/#주요-사양
+  - titlekr: "시작하기"
+    urlkr: /platform/robothand_mx28/#시작하기
+    children:
+    - titlekr: "제품 구성"
+      urlkr: /platform/robothand_mx28/#제품-구성
+    - titlekr: "설치"
+      urlkr: /platform/robothand_mx28/#설치
+    - titlekr: "작동"
+      urlkr: /platform/robothand_mx28/#작동
+  - titlekr: "로봇핸드 프로그래밍"
+    urlkr: /platform/robothand_mx28/#로봇핸드-프로그래밍
+  - titlekr: "유용한 정보"
+    urlkr: /platform/robothand_mx28/#유용한-정보
+  - titlekr: "다운로드"
+    urlkr: /platform/robothand_mx28/#다운로드
+
 #THORMANG3
 thormang3:
   - title: "Introduction"
