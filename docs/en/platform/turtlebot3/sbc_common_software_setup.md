@@ -16,7 +16,7 @@ sidebar:
 
 # [SBC Software Setup](#sbc-software-setup)
 
-## [Install ROS and Packages (Burger and Waffle)](#install-ros-and-packages-burger-and-waffle)
+## [Install ROS and Packages (Burger, Waffle and Waffle Pi)](#install-ros-and-packages-burger-waffle-and-waffle-pi)
 
 **Warning :** The contents in this chapter corresponds to the SBC of `TurtleBot3` (Raspberry Pi 3 or Intel® Joule™) which will be the main computer of TurtleBot3. Do **NOT** apply this instruction to your Remote PC (your desktop PC or laptop).
 {: .notice--warning}
@@ -63,6 +63,10 @@ $ wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/instal
 **Note :** In order to see which packages are installed, please check this link out. [install_ros_kinetic](https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic.sh)
 {: .notice--info}
 
+### [Third Method](#third-method)
+
+**Comming Soon**
+
 ### [Install Dependent Packages](#install-dependent-packages)
 
 **[TurtleBot]** The next step is to install dependent packages for TurtleBot3 control.
@@ -92,6 +96,9 @@ Download dependent packages
 $ sudo apt-get install ros-kinetic-rosserial-python ros-kinetic-tf
 ```
 
+**Note :** After install packages, please reboot Raspberry Pi or Intel® Joule™.
+{: .notice--info}
+
 Build packages
 
 ``` bash
@@ -100,7 +107,7 @@ $ cd ~/catkin_ws && catkin_make
 
 If catkin_make command is completed without any errors, the preparation for TurtleBot3 is done.
 
-## [USB Settings (Burger and Waffle)](#usb-settings-burger-and-waffle)
+## [USB Settings (Burger, Waffle and Waffle Pi)](#usb-settings-burger-waffle-and-waffle-pi)
 
 **[TurtleBot]** The following commands allow to use USB port for OpenCR1.0 without acquiring root permission.
 
@@ -108,7 +115,7 @@ If catkin_make command is completed without any errors, the preparation for Turt
 $ rosrun turtlebot3_bringup create_udev_rules
 ```
 
-## [Network Configuration (Burger and Waffle)](#network-configuration-burger-and-waffle)
+## [Network Configuration (Burger, Waffle and Waffle Pi)](#network-configuration-burger-waffle-and-waffle-pi)
 
 ![](/assets/images/platform/turtlebot3/software/network_configuration.png)
 

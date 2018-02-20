@@ -271,8 +271,6 @@ main:
       - title: "ROBOTIS STEM"
         titlekr: "STEM 키트"
         url: /edu/bioloid/stem/
-      - titlekr: "STEM 아카데미"
-        url: /edu/bioloid/stem_academy/
       - title: "ROBOTIS PREMIUM"
         titlekr: "프리미엄"
         url: /edu/bioloid/premium/
@@ -9118,19 +9116,19 @@ op3:
       url: /platform/op3/getting_started/#how-to-kill-the-demo-program
     - title: "How to Restart the demo program"
       url: /platform/op3/getting_started/#how-to-restart-the-demo-program
-  - title: "Robotis ROS Modules"
-    url: /platform/op3/robotis_ros_modules/#robotis-ros-packages
+  - title: "Robotis ROS Packages"
+    url: /platform/op3/robotis_ros_packages/#robotis-ros-packages
     children:
     - title: "ROBOTIS OP3"
-      url: /platform/op3/robotis_ros_modules/#robotis-op3
+      url: /platform/op3/robotis_ros_packages/#robotis-op3
     - title: "ROBOTIS OP3 msgs"
-      url: /platform/op3/robotis_ros_modules/#robotis-op3-msgs
+      url: /platform/op3/robotis_ros_packages/#robotis-op3-msgs
     - title: "ROBOTIS OP3 Demo"
-      url: /platform/op3/robotis_ros_modules/#robotis-op3-Demo
+      url: /platform/op3/robotis_ros_packages/#robotis-op3-Demo
     - title: "ROBOTIS OP3 Common"
-      url: /platform/op3/robotis_ros_modules/#robotis-op3-common
+      url: /platform/op3/robotis_ros_packages/#robotis-op3-common
     - title: "ROBOTIS OP3 Tools"
-      url: /platform/op3/robotis_ros_modules/#robotis-op3-tools
+      url: /platform/op3/robotis_ros_packages/#robotis-op3-tools
   - title: "Tutorials"
     url: /platform/op3/tutorials/#tutorials
     children:
@@ -9178,6 +9176,48 @@ op3:
       url: /platform/op3/recovery/#manual-installation
     - title: "Recovery of ROBOTIS-OP3"
       url: /platform/op3/recovery/#recovery-of-robotis-op3
+
+robothand_rx28:
+  - titlekr: "개요"
+    urlkr: /platform/robothand_rx28/#개요
+  - titlekr: "주요 사양"
+    urlkr: /platform/robothand_rx28/#주요-사양
+  - titlekr: "시작하기"
+    urlkr: /platform/robothand_rx28/#시작하기
+    children:
+    - titlekr: "제품 구성"
+      urlkr: /platform/robothand_rx28/#제품-구성
+    - titlekr: "설치"
+      urlkr: /platform/robothand_rx28/#설치
+    - titlekr: "작동"
+      urlkr: /platform/robothand_rx28/#작동
+  - titlekr: "로봇핸드 프로그래밍"
+    urlkr: /platform/robothand_rx28/#로봇핸드-프로그래밍
+  - titlekr: "유용한 정보"
+    urlkr: /platform/robothand_rx28/#유용한-정보
+  - titlekr: "다운로드"
+    urlkr: /platform/robothand_rx28/#다운로드
+  
+robothand_mx28:
+  - titlekr: "개요"
+    urlkr: /platform/robothand_mx28/#개요
+  - titlekr: "주요 사양"
+    urlkr: /platform/robothand_mx28/#주요-사양
+  - titlekr: "시작하기"
+    urlkr: /platform/robothand_mx28/#시작하기
+    children:
+    - titlekr: "제품 구성"
+      urlkr: /platform/robothand_mx28/#제품-구성
+    - titlekr: "설치"
+      urlkr: /platform/robothand_mx28/#설치
+    - titlekr: "작동"
+      urlkr: /platform/robothand_mx28/#작동
+  - titlekr: "로봇핸드 프로그래밍"
+    urlkr: /platform/robothand_mx28/#로봇핸드-프로그래밍
+  - titlekr: "유용한 정보"
+    urlkr: /platform/robothand_mx28/#유용한-정보
+  - titlekr: "다운로드"
+    urlkr: /platform/robothand_mx28/#다운로드
 
 #THORMANG3
 thormang3:
@@ -9494,25 +9534,27 @@ turtlebot3:
   - title: "SBC Software Setup"
     url: /platform/turtlebot3/sbc_software_setup/#sbc-software-setup
     children:
-    - title: "Install Linux on TurtleBot3 Burger (Raspberry Pi 3)"
-      url: /platform/turtlebot3/rpi3_software_setup/#install-linux-on-turtlebot3-burger-raspberry-pi-3
+    - title: "Install Linux on TurtleBot3 Burger and Waffle Pi (Raspberry Pi 3)"
+      url: /platform/turtlebot3/rpi3_software_setup/#install-linux-on-turtlebot3-burger-and-waffle-pi-raspberry-pi-3
     - title: "[Short] Install Linux on TurtleBot3 Waffle (Intel® Joule™)"
       url: /platform/turtlebot3/joule_software_setup/#short-install-linux-on-turtlebot3-waffle-intel-joule
     - title: "[Long] Install Linux on TurtleBot3 Waffle (Intel® Joule™)"
       url: /platform/turtlebot3/joule_software_setup/#long-install-linux-on-turtlebot3-waffle-intel-joule
-    - title: "Install ROS and Packages (Burger and Waffle)"
-      url: /platform/turtlebot3/sbc_common_software_setup/#install-ros-and-packages-burger-and-waffle
+    - title: "Install ROS and Packages (Burger, Waffle and Waffle Pi)"
+      url: /platform/turtlebot3/sbc_common_software_setup/#install-ros-and-packages-burger-waffle-and-waffle-pi
       children:
       - title: "First Method"
         url: /platform/turtlebot3/sbc_common_software_setup/#first-method
       - title: "Second Method"
         url: /platform/turtlebot3/sbc_common_software_setup/#second-method
+      - title: "Third Method"
+        url: /platform/turtlebot3/sbc_common_software_setup/#third-method
       - title: "Install Dependent Packages"
         url: /platform/turtlebot3/sbc_common_software_setup/#install-dependent-packages
-    - title: "USB Settings (Burger and Waffle)"
-      url: /platform/turtlebot3/sbc_common_software_setup/#usb-settings-burger-and-waffle
-    - title: "Network Configuration (Burger and Waffle)"
-      url: /platform/turtlebot3/sbc_common_software_setup/#network-configuration-burger-and-waffle
+    - title: "USB Settings (Burger, Waffle and Waffle Pi)"
+      url: /platform/turtlebot3/sbc_common_software_setup/#usb-settings-burger-waffle-and-waffle-pi
+    - title: "Network Configuration (Burger, Waffle and Waffle Pi)"
+      url: /platform/turtlebot3/sbc_common_software_setup/#network-configuration-burger-waffle-and-waffle-pi
   - title: "OpenCR1.0 Software Setup"
     url: /platform/turtlebot3/opencr1_0_software_setup/#opencr10-software-setup
     children:
