@@ -9494,25 +9494,27 @@ turtlebot3:
   - title: "SBC Software Setup"
     url: /platform/turtlebot3/sbc_software_setup/#sbc-software-setup
     children:
-    - title: "Install Linux on TurtleBot3 Burger (Raspberry Pi 3)"
-      url: /platform/turtlebot3/rpi3_software_setup/#install-linux-on-turtlebot3-burger-raspberry-pi-3
+    - title: "Install Linux on TurtleBot3 Burger and Waffle Pi (Raspberry Pi 3)"
+      url: /platform/turtlebot3/rpi3_software_setup/#install-linux-on-turtlebot3-burger-and-waffle-pi-raspberry-pi-3
     - title: "[Short] Install Linux on TurtleBot3 Waffle (Intel® Joule™)"
       url: /platform/turtlebot3/joule_software_setup/#short-install-linux-on-turtlebot3-waffle-intel-joule
     - title: "[Long] Install Linux on TurtleBot3 Waffle (Intel® Joule™)"
       url: /platform/turtlebot3/joule_software_setup/#long-install-linux-on-turtlebot3-waffle-intel-joule
-    - title: "Install ROS and Packages (Burger and Waffle)"
-      url: /platform/turtlebot3/sbc_common_software_setup/#install-ros-and-packages-burger-and-waffle
+    - title: "Install ROS and Packages (Burger, Waffle and Waffle Pi)"
+      url: /platform/turtlebot3/sbc_common_software_setup/#install-ros-and-packages-burger-waffle-and-waffle-pi
       children:
       - title: "First Method"
         url: /platform/turtlebot3/sbc_common_software_setup/#first-method
       - title: "Second Method"
         url: /platform/turtlebot3/sbc_common_software_setup/#second-method
+      - title: "Third Method"
+        url: /platform/turtlebot3/sbc_common_software_setup/#third-method
       - title: "Install Dependent Packages"
         url: /platform/turtlebot3/sbc_common_software_setup/#install-dependent-packages
-    - title: "USB Settings (Burger and Waffle)"
-      url: /platform/turtlebot3/sbc_common_software_setup/#usb-settings-burger-and-waffle
-    - title: "Network Configuration (Burger and Waffle)"
-      url: /platform/turtlebot3/sbc_common_software_setup/#network-configuration-burger-and-waffle
+    - title: "USB Settings (Burger, Waffle and Waffle Pi)"
+      url: /platform/turtlebot3/sbc_common_software_setup/#usb-settings-burger-waffle-and-waffle-pi
+    - title: "Network Configuration (Burger, Waffle and Waffle Pi)"
+      url: /platform/turtlebot3/sbc_common_software_setup/#network-configuration-burger-waffle-and-waffle-pi
   - title: "OpenCR1.0 Software Setup"
     url: /platform/turtlebot3/opencr1_0_software_setup/#opencr10-software-setup
     children:
