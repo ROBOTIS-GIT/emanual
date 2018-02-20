@@ -34,9 +34,9 @@ Carefully remove the fuse with a pair of tweezers. Afterwards carefully insert a
 
 You can find [Assembly], [Wiring] and [Fabrication] manuals here courtesy of [RoMeLa].
  
-[Assembly]: http://ncu.dl.sourceforge.net/project/darwinop/Hardware/Mechanics/Physical%20Information/DARwIn%20OP%20Assembly%20Manual.pdf
-[Wiring]: http://ncu.dl.sourceforge.net/project/darwinop/Hardware/Mechanics/Physical%20Information/DARwIn%20OP%20Wiring%20Manual.pdf
-[Fabrication]: http://ncu.dl.sourceforge.net/project/darwinop/Hardware/Mechanics/Physical%20Information/DARwIn%20OP%20Fabrication%20Manual.pdf
+[Assembly]: http://excellmedia.dl.sourceforge.net/project/darwinop/Hardware/Mechanics/Physical%20Information/DARwIn%20OP%20Assembly%20Manual.pdf
+[Wiring]: http://excellmedia.dl.sourceforge.net/project/darwinop/Hardware/Mechanics/Physical%20Information/DARwIn%20OP%20Wiring%20Manual.pdf
+[Fabrication]: http://excellmedia.dl.sourceforge.net/project/darwinop/Hardware/Mechanics/Physical%20Information/DARwIn%20OP%20Fabrication%20Manual.pdf
 [RoMeLa]: http://www.romela.org/
 
 ### Maintenance
