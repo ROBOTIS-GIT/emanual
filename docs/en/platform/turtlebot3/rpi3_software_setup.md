@@ -15,7 +15,7 @@ sidebar:
 
 # [SBC Software Setup](#sbc-software-setup)
 
-## [Install Linux on TurtleBot3 Burger (Raspberry Pi 3)](#install-linux-on-turtlebot3-burger-raspberry-pi-3)
+## [Install Linux on TurtleBot3 Burger and Waffle Pi (Raspberry Pi 3)](#install-linux-on-turtlebot3-burger-and-waffle-pi-raspberry-pi-3)
 
 **Warning :** The SDcard should have at least **8 GB** of empty space in order to install Linux on TurtleBot3.
 {: .notice--warning}
