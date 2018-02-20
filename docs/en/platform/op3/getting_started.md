@@ -15,7 +15,7 @@ sidebar:
 
 # [Getting Started](#getting_started)
 
-## [How to connect](#how-to-connect)
+## [How to Connect](#how-to-connect)
 
 ### Direct Connection  
 Keyboard and monitor are directly connected to ROBOTIS-OP3.  

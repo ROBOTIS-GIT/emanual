@@ -565,23 +565,23 @@ The calculation will take for 2 seconds and then each bit will be reset to 0.
 | PIN_BUTTON_S4 | Button Input S4 (Reset Dynamixel Power) |
 
 
-[https://github.com/phil333/face_detection]:https://github.com/phil333/face_detection
-[https://github.com/ROBOTIS-GIT/face_detection]:https://github.com/ROBOTIS-GIT/face_detection
-[http://wiki.ros.org/usb_cam]:http://wiki.ros.org/usb_cam
-[https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki
-[ROBOTIS OP3 WIKI]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki
-[https://github.com/ROBOTIS-GIT/DynamixelSDK]:https://github.com/ROBOTIS-GIT/DynamixelSDK
-[https://github.com/ROBOTIS-GIT/ROBOTIS-Framework]:https://github.com/ROBOTIS-GIT/ROBOTIS-Framework
-[https://github.com/ROBOTIS-GIT/ROBOTIS-Framework-msgs]:https://github.com/ROBOTIS-GIT/ROBOTIS-Framework-msgs
-[https://github.com/ROBOTIS-GIT/ROBOTIS-Math]:https://github.com/ROBOTIS-GIT/ROBOTIS-Math
-[https://github.com/ROBOTIS-GIT/ROBOTIS-OP3]:https://github.com/ROBOTIS-GIT/ROBOTIS-OP3
-[https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Common]:https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Common
-[https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Demo]:https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Demo
-[https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-msgs]:https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-msgs
-[https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Tools]:https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Tools
-[https://github.com/ROBOTIS-GIT/ROBOTIS-Utility]:https://github.com/ROBOTIS-GIT/ROBOTIS-Utility
+[https://github.com/phil333/face_detection]: https://github.com/phil333/face_detection
+[https://github.com/ROBOTIS-GIT/face_detection]: https://github.com/ROBOTIS-GIT/face_detection
+[http://wiki.ros.org/usb_cam]: http://wiki.ros.org/usb_cam
+[https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki
+[ROBOTIS OP3 WIKI]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki
+[https://github.com/ROBOTIS-GIT/DynamixelSDK]: https://github.com/ROBOTIS-GIT/DynamixelSDK
+[https://github.com/ROBOTIS-GIT/ROBOTIS-Framework]: https://github.com/ROBOTIS-GIT/ROBOTIS-Framework
+[https://github.com/ROBOTIS-GIT/ROBOTIS-Framework-msgs]: https://github.com/ROBOTIS-GIT/ROBOTIS-Framework-msgs
+[https://github.com/ROBOTIS-GIT/ROBOTIS-Math]: https://github.com/ROBOTIS-GIT/ROBOTIS-Math
+[https://github.com/ROBOTIS-GIT/ROBOTIS-OP3]: https://github.com/ROBOTIS-GIT/ROBOTIS-OP3
+[https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Common]: https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Common
+[https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Demo]: https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Demo
+[https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-msgs]: https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-msgs
+[https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Tools]: https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Tools
+[https://github.com/ROBOTIS-GIT/ROBOTIS-Utility]: https://github.com/ROBOTIS-GIT/ROBOTIS-Utility
 
-[http://www.chiark.greenend.org.uk/~sgtatham/putty/]:http://www.chiark.greenend.org.uk/~sgtatham/putty/
-[http://www.realvnc.com/]:http://www.realvnc.com/
-[http://en.robotis.com/index/service_04.php?tab=4]:http://en.robotis.com/index/service_04.php?tab=4
-[http://support.robotis.com]:http://support.robotis.com
+[http://www.chiark.greenend.org.uk/~sgtatham/putty/]: http://www.chiark.greenend.org.uk/~sgtatham/putty/
+[http://www.realvnc.com/]: http://www.realvnc.com/
+[http://en.robotis.com/index/service_04.php?tab=4]: http://en.robotis.com/index/service_04.php?tab=4
+[http://support.robotis.com]: http://support.robotis.com

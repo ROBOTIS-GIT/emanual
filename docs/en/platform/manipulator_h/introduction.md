@@ -7,11 +7,9 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/manipulator_h/introduction/
 sidebar:
-  title: Manipulator-H
+  title: MANIPULATOR-H
   nav: "manipulator_h"
 ---
-
-# Manipulator-H
 
 ![](/assets/images/platform/manipulator/manipulator_product.gif)
 

@@ -90,7 +90,7 @@ For more information assembly and operation, please refer to the ROBOTIS II DREA
 |12. Imagine<br />![](/assets/images/edu/dream/dream1-2_imagine.jpg)|-|
 
 [CM-150]: /docs/en/parts/controller/cm-150/
-[Geared Motor]: /docs/en/parts/motor/geared_motor/
+[Geared Motor]: /docs/en/parts/motor/gm-10a/
 [USB Downloader(LN-101)]: /docs/en/parts/interface/ln-101/
 [Powersave Timer]: /docs/en/software/rplus1/task/programming_02/#powersave-timer
 [How to Download Task code]: /docs/en/faq/download_task_code/

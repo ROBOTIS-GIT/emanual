@@ -13,11 +13,11 @@ sidebar:
 
 <div style="counter-reset: h1 3"></div>
 
-# [ROBOTIS ROS packages](#robotis-ros-packages)
+# [ROBOTIS ROS Packages](#robotis-ros-packages)
 
-## [Robotis OP3](#robotis-op3)
+## [ROBOTIS OP3](#robotis-op3)
 
-### [Robotis ROS Modules](#robotis-ros-modules)
+### [ROBOTIS ROS Modules](#robotis-ros-modules)
 
 #### Motion Module
 
@@ -356,7 +356,108 @@ The Sensor Module is used in the manager in the form of library.
 
 
 ### [OP3 Manager](#op3-manager)
-The package that controls OP3 using framework and various modules.   
+
+#### Overview  
+`op3_manager` package applies ROBOTIS Framework to ROBOTIS OP3.  
+Refer to the below link to create a new robot manager.  
+> Reference : [Creating new robot manager]
+
+#### Getting started  
+##### Download & Build  
+ > Reference : [Installation ROBOTIS ROS Package]
+
+##### Run  
+Execute the program with a `.launch` file in order to load ROS parameters.  
+The command should be executed under the root account to configure the attribute of Thread.  
+`op3_manager` has a direct control over ROBOTIS-OP3, therefore other control programs such as `op3_walking_tuner` and `op3_action_editor` should not be running.  
+Before executing the `op3_manager` launch file, other programs should be terminated.  
+```
+$ sudo bash  
+[sudo] password for robotis:   
+# roslaunch op3_manager op3_manager.launch  
+```
+
+#### ROS API  
+##### Parameters  
+launch parameters  
+
+`gazebo` (bool, default: false)  
+&emsp;&emsp; Configure whether to run the program in gazebo mode.  
+
+`gazebo_robot_name` (string, default: "")  
+&emsp;&emsp; Configure the robot name for joint_state topic name when running in gazebo mode.  
+&emsp;&emsp; ex) If `op3` is the `gazebo_robot_name`, `/op3/joint_states` will be subscribed.
+
+`offset_file_path` (string, default: "")  
+&emsp;&emsp; This path indicates the location of the file that contains offset data of each joint and initial posture data for offset adjustment.
+
+`robot_file_path` (string, default: "")  
+&emsp;&emsp; This path indicates the location of .robot file that contains robot description data.
+
+`init_file_path` (string, default: "")  
+&emsp;&emsp; This path indicates the location of the file that contains initialization information of each joint.
+
+`device_name` (string, default: "/dev/ttyUSB0")  
+&emsp;&emsp; This port name is used to open the communication port of OpenCR that manages Dynamixel power supply.
+
+`baud_rate` (int, default: "2000000")  
+&emsp;&emsp; This baud rate is used to open the communication port of OpenCR that manages Dynamixel power supply.
+
+#### Modules  
+This chapter explains various modules in `op3_manager`.  
+Actual control is processed within each modules.  
+
+##### Motion Module
+ 1. [op3_action_module] : This manages every joint actions.  
+ 2. [op3_base_module] : This module manages initial posture and basic functions.  
+ 3. [op3_head_control_module] : This module controls OP3 head.  
+ 4. [op3_walking_module] : This module controls walking.  
+ 5. [op3_online_walking_module] : This module controls upgraded walking.  
+
+
+##### Sensor Module  
+ 1. [open_cr_module] : This module is required to use OpenCR as a sensor.  
+
+
+#### Source  
+Structure of `op3_manager`  
+ - Initialize with Robot file(`.robot`)and Joint initialize file (`.yaml`).  
+ - Apply offset file(`.yaml`).  
+ - Add modules(each module manages calculation for control or sensor related functions).  
+ - Initiate timer in the controller.  
+ - According to the frequency stated in the `.robot` file, exchange data with Dynamixels and OpenCR.
+
+
+```
+...
+
+// initialize robot
+if (controller->initialize(g_robot_file, g_init_file) == false)
+{
+  ROS_ERROR("ROBOTIS Controller Initialize Fail!");
+  return -1;
+}
+
+// load offset
+if (g_offset_file != "")
+  controller->loadOffset(g_offset_file);
+
+sleep(1);
+
+/* Add Sensor Module */
+controller->addSensorModule((SensorModule*) OpenCRModule::getInstance());
+
+/* Add Motion Module */
+controller->addMotionModule((MotionModule*) ActionModule::getInstance());
+controller->addMotionModule((MotionModule*) BaseModule::getInstance());
+controller->addMotionModule((MotionModule*) HeadControlModule::getInstance());
+controller->addMotionModule((MotionModule*) WalkingModule::getInstance());
+
+// start timer
+controller->startTimer();
+
+...
+```  
 
 ### Others
 
@@ -1010,9 +1111,11 @@ The following are Messages and Service used for the [op3_offset_tuner_server] an
 
 
 
-[op3_action_module]: #op3_action_module
-[op3_walking_module]: #op3_walking_module
-[op3_online_walking_module]: #op3_online_walking_module
+[op3_action_module]: /docs/en/platform/op3/robotis_ros_packages/#op3_action_module
+[op3_base_module]: /docs/en/platform/op3/robotis_ros_packages/#op3_base_module
+[op3_head_control_module]: /docs/en/platform/op3/robotis_ros_packages/#op3_head_control_module
+[op3_walking_module]: /docs/en/platform/op3/robotis_ros_packages/#op3_walking_module
+[op3_online_walking_module]: /docs/en/platform/op3/robotis_ros_packages/#op3_online_walking_module
 
 [std_msgs/Int32]: /docs/en/popup/std_msgs_int32_message/
 [std_msgs/String]: /docs/en/popup/std_msgs_string/
@@ -1020,12 +1123,10 @@ The following are Messages and Service used for the [op3_offset_tuner_server] an
 [std_msgs/Float64]: /docs/en/popup/std_msgs_Float64_msg/
 [std_msgs/Header]: /docs/en/popup/std_msgs_Header/
 
-
 [sensor_msgs/JointState]: /docs/en/popup/sensor_msgs_JointState_msg/
 [sensor_msgs/Imu]: /docs/en/popup/sensor_msgs_IMU_msg/
 [sensor_msgs/Image]: /docs/en/popup/sensor_msgs_Image/
 [sensor_msgs/CameraInfo]: /docs/en/popup/sensor_msgs_CameraInfo_msg/
-
 
 [geometry_msgs/Pose]: /docs/en/popup/geometry_msgs_Pose_msg/  
 [geometry_msgs/PoseStamped]: /docs/en/popup/geometry_msgs_PoseStamped_msg/
@@ -1041,7 +1142,7 @@ The following are Messages and Service used for the [op3_offset_tuner_server] an
 [WalkingParam.msg]: /docs/en/popup/op3_WalkingParam.msg/
 
 [op3_walking_module_msgs/GetWalkingParam]: /docs/en/popup/op3_GetWalkingParam.srv/
-[/op3_walking_module/config/param.yaml]: https://github.com/ROBOTIS-GIT/ROBOTIS-OP3/blob/master/op3_walking_module/config/param.yaml
+
 
 [op3_online_walking_module_msgs/JointPose]: /docs/en/popup/op3_JointPose.msg/
 [op3_online_walking_module_msgs/KinematicsPose]: /docs/en/popup/op3_KinematicsPose.msg/
@@ -1053,12 +1154,11 @@ The following are Messages and Service used for the [op3_offset_tuner_server] an
 [op3_online_walking_module_msgs/GetPreviewMatrix]: /docs/en/popup/op3_GetPreviewMatrix.srv/
 
 
-[Creating new robot manager]: /docs/en/platform/software/tutorials/#creating-new-robot-manager/
+[Creating new robot manager]: /docs/en/platform/software/tutorials/#creating-new-robot-manager
 
 
-[OPENCR]: https://github.com/ROBOTIS-GIT/OpenCR/wiki/arduino_examples_op3
+
 [Introduction to Humanoid Robotics]: http://www.springer.com/gp/book/9783642545351
-[/op3_base_module/data/ini_pose.yaml]: https://github.com/ROBOTIS-GIT/ROBOTIS-OP3/blob/master/op3_base_module/data/ini_pose.yaml
 
 
 
@@ -1083,8 +1183,8 @@ The following are Messages and Service used for the [op3_offset_tuner_server] an
 [GetKinematicsPose.srv]: /docs/en/popup/op3_GetKinematicsPose.srv/
 [GetPreviewMatrix.srv]: /docs/en/popup/op3_GetPreviewMatrix.srv/
 
-[op3_offset_tuner_server]: #op3_offset_tuner_server
-[op3_offset_tuner_client]: #op3_offset_tuner_client
+[op3_offset_tuner_server]: /docs/en/platform/op3/robotis_ros_packages/#op3_offset_tuner_server
+[op3_offset_tuner_client]: /docs/en/platform/op3/robotis_ros_packages/#op3_offset_tuner_client
 
 [JointOffsetData.msg]: /docs/en/popup/op3_JointOffsetData.msg/
 [JointOffsetPositionData.msg]: /docs/en/popup/op3_JointOffsetPositionData.msg/
@@ -1097,15 +1197,15 @@ The following are Messages and Service used for the [op3_offset_tuner_server] an
 
 [geometry_msgs/Point]: /docs/en/popup/geometry_msgs_Point_msg/
 
-[`usb_cam`]:http://wiki.ros.org/usb_cam
-[HSV color]:https://en.wikipedia.org/wiki/HSL_and_HSV
+[`usb_cam`]: http://wiki.ros.org/usb_cam
+[HSV color]: https://en.wikipedia.org/wiki/HSL_and_HSV
 
-[How to execute Default Demo]: /docs/en/platform/op3/tutorials/#how-to-exectue-default-demo/
-[How to execute GUI program]: /docs/en/platform/op3/tutorials/#how-to-exectue-gui-program/
+[How to execute Default Demo]: /docs/en/platform/op3/tutorials/#how-to-exectue-default-demo
+[How to execute GUI program]: /docs/en/platform/op3/tutorials/#how-to-exectue-gui-program
 
 
-[URDF-ROS Wiki]:http://wiki.ros.org/urdf
-[Connect to ROS]:http://gazebosim.org/tutorials?cat=connect_ros
+[URDF-ROS Wiki]: http://wiki.ros.org/urdf
+[Connect to ROS]: http://gazebosim.org/tutorials?cat=connect_ros
 
 [op3_offset_tuner_msgs/JointOffsetData]: /docs/en/popup/JointOffsetData.msg/
 [op3_offset_tuner_msgs/JointOffsetData]: /docs/en/popup/op3_JointOffsetData.msg/
@@ -1114,9 +1214,13 @@ The following are Messages and Service used for the [op3_offset_tuner_server] an
 [op3_offset_tuner_msgs/GetPresentJointOffsetData]: /docs/en/popup/GetPresentJointOffsetData.srv/
 [op3_offset_tuner_msgs/GetPresentJointOffsetData]: /docs/en/popup/op3_GetPresentJointOffsetData.srv/
 
+[op3_gui_demo]: /docs/en/platform/op3/robotis_ros_packages/#op3_gui_demo
+[How to use walking tuner]: /docs/en/platform/op3/tutorials/#how-to-use-walking-tuner
+[How to use offset tuner]: /docs/en/platform/op3/tutorials/#how-to-use-offset-tuner
 
-[op3_gui_demo]:#op3_gui_demo
-[How to use walking tuner]: /docs/en/platform/op3/tutorials/#how-to-use-walking-tuner/
-[How to use offset tuner]: /docs/en/platform/op3/tutorials/#how-to-use-offset-tuner/
+[Installing ROBOTIS ROS Package]: /docs/en/platform/op3/recovery/#installing-robotis-ros-packages
 
-[Installing ROBOTIS ROS Package]: /docs/en/platform/op3/recovery/#installing-robotis-ros-packages/
+[/op3_walking_module/config/param.yaml]: /docs/en/popup/op3_walking_module_param.yaml/
+[/op3_base_module/data/ini_pose.yaml]: /docs/en/popup/op3_base_module_ini_pose.yaml/
+
+[OPENCR]: /docs/en/platform/common/arduino_examples_op3/#opencr-op3

@@ -643,8 +643,8 @@ $ rosrun thormang3_offset_tuner_client thormang3_offset_tuner_client
 
 [ROS network Setup, 5. Timing issues]:http://wiki.ros.org/ROS/NetworkSetup#Timing_issues.2C_TF_complaining_about_extrapolation_into_the_future.3F
 [roscore]:http://wiki.ros.org/roscore
-[thormang3_sensors.launch]:https://github.com/ROBOTIS-GIT/ROBOTIS-THORMANG-PPC/blob/master/thormang3_sensors/launch/thormang3_sensors.launch
-[thormang3_manager.launch]:https://github.com/ROBOTIS-GIT/ROBOTIS-THORMANG-MPC/blob/master/thormang3_manager/launch/thormang3_manager.launch
+[thormang3_sensors.launch]: /docs/en/popup/thormang3_sensors.launch
+[thormang3_manager.launch]: /docs/en/popup/thormang3_manager.launch
 
 [http://wiki.ros.org/kinetic/Installation/Ubuntu]:http://wiki.ros.org/indigo/Installation/Ubuntu
 [http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment]:http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment
