@@ -22,4 +22,4 @@ This service acquires parameters that are applied on op3_online_walking_module.
 * `KinematicsPose pose`([op3_online_walking_module_msgs/KinematicsPose](op3_KinematicsPose.msg))     
 &emsp;&emsp; For details, refer to [KinematicsPose.msg](op3_KinematicsPose.msg).
 
-[&lt;&lt; Back](op3_online_walking_module_msgs.md)
+

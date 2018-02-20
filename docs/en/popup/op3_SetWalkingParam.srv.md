@@ -22,4 +22,4 @@ This service configures parameters in `op3_walking_module` for walking control.
 * `bool result`   
 &emsp;&emsp;
 
-<br>[&lt;&lt; Back](op3_walking_module_msgs.md)
+

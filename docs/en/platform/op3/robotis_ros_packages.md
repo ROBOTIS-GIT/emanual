@@ -1120,8 +1120,8 @@ The following are Messages and Service used for the [op3_offset_tuner_server] an
 [std_msgs/Int32]: /docs/en/popup/std_msgs_int32_message/
 [std_msgs/String]: /docs/en/popup/std_msgs_string/
 [std_msgs/Bool]: /docs/en/popup/std_msgs_bool_msg/
-[std_msgs/Float64]: /docs/en/popup/std_msgs_Float64_msg/
-[std_msgs/Header]: /docs/en/popup/std_msgs_Header/
+[std_msgs/Float64]: /docs/en/popup/std_msgs_float64_msg/
+[std_msgs/Header]: /docs/en/popup/std_msgs_header/
 
 [sensor_msgs/JointState]: /docs/en/popup/sensor_msgs_JointState_msg/
 [sensor_msgs/Imu]: /docs/en/popup/sensor_msgs_IMU_msg/

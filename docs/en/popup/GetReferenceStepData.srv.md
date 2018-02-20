@@ -13,8 +13,8 @@ layout: popup
 
 
 - Description
-A service that acquires current status of THORMANG3 from the [thormang3_walking_module](thormang3_walking_module).
-System time and pose of current [thormang3_walking_module](thormang3_walking_module) are provided in StepData format.
+A service that acquires current status of THORMANG3 from the [thormang3_walking_module].
+System time and pose of current [thormang3_walking_module] are provided in StepData format.
 &emsp;
 
   - Request
@@ -22,8 +22,10 @@ System time and pose of current [thormang3_walking_module](thormang3_walking_mod
 &emsp;&emsp;
 
   - Response
-* `StepData reference_step_data`([thormang3_walking_module_msgs/StepData](StepData.msg))
+* `StepData reference_step_data`([thormang3_walking_module_msgs/StepData])
 &emsp;&emsp; Reference Step Data
 
-<br>
-[[&lt;&lt; Back|thormang3_walking_module_msgs]]
+
+
+[thormang3_walking_module] : /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_walking_module
+[thormang3_walking_module_msgs/StepData]: /docs/en/popup/StepData.msg/

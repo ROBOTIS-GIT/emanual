@@ -21,7 +21,7 @@ layout: popup
 - Description
 This message is used to identify the status of each module.
 
-* `header` ([`std_msgs/Header`](http://docs.ros.org/api/std_msgs/html/msg/Header.html))
+* `header` ([`std_msgs/Header`])
 &emsp;&emsp; This field specifies recorded time of the status message.
 
 * `type`
@@ -36,3 +36,5 @@ This message is used to identify the status of each module.
 
 * `status_msg`
 &emsp;&emsp; This field contains contents of the status message.
+
+[`std_msgs/Header`]: /docs/en/popup/std_msgs_header/

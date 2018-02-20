@@ -88,7 +88,7 @@ The Motion Module is used in the manager in the form of library.
 [op3_online_walking_module_msgs/FootStepCommand]: /docs/en/popup/op3_FootStepCommand.msg/
 [op3_online_walking_module_msgs/WalkingParam]: /docs/en/popup/op3_online_WalkingParam.msg/
 [geometry_msgs/Pose]: /docs/en/popup/geometry_msgs_Pose_msg/  
-[std_msgs/Float64]: /docs/en/popup/std_msgs_Float64_msg/
+[std_msgs/Float64]: /docs/en/popup/std_msgs_float64_msg/
 [op3_online_walking_module_msgs/Step2DArray]: /docs/en/popup/op3_Step2DArray.msg/
 [robotis_controller_msgs/StatusMsg]: /docs/en/popup/StatusMsg.msg/
 [std_msgs/String]: /docs/en/popup/std_msgs_string/

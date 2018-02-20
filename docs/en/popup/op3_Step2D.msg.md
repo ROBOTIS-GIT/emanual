@@ -22,5 +22,5 @@ layout: popup
 * `moving_foot`    
 &emsp;&emsp; swing leg   
 
-<br>
-[&lt;&lt; Back](op3_online_walking_module_msgs.md)
+
+

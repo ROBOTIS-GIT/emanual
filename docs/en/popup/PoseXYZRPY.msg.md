@@ -40,5 +40,5 @@ Given x, y, z, roll, pitch and yaw, Transformation Matrix can be calculated as s
 * ` float32 yaw`
 &emsp;&emsp;a rotation angle of z
 
-<br>
-[[&lt;&lt; Back|thormang3_walking_module_msgs]]
+
+

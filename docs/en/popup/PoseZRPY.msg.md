@@ -14,7 +14,7 @@ layout: popup
 
 - Description
 This message is developed to define a pose of COB in the StepData.
-X and Y of COB are determined by the [thormang3_walking_module](thormang3_walking_module).
+X and Y of COB are determined by the [thormang3_walking_module].
 
 * ` float32 z`
 &emsp;&emsp; position of z
@@ -28,5 +28,4 @@ X and Y of COB are determined by the [thormang3_walking_module](thormang3_walkin
 * ` float32 yaw`
 &emsp;&emsp; a rotation angle of z
 
-<br>
-[[&lt;&lt; Back|thormang3_walking_module_msgs]]
+[thormang3_walking_module] : /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_walking_module

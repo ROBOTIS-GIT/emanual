@@ -142,10 +142,11 @@ The following table shows the network settings after the reset.
       ![](/assets/images/platform/thormang3/thormang3_092.jpg)
 
 - Chargers(hitec smart charger h4, hitec e power box 30a)  
-  [http://hitecrcd.com/products/chargers/dcdc-chargers/h4-dcdc-four-port-multi-charger/product]
+  [http://hitecrcd.com/products/chargers/dcdc-chargers/h4-dcdc-four-port-multi-charger/product]   
+
   [http://hitecrcd.com/products/chargers/epowerbox-30-amp-power-supply/product]
- 
-      ![](/assets/images/platform/thormang3/thormang3_093.jpg)
+
+  ![](/assets/images/platform/thormang3/thormang3_093.jpg)
 
 ## [ID Map](#id-map)
 
@@ -194,7 +195,7 @@ The following table shows the network settings after the reset.
 |24-26|57|-33|0|23-25|57|33|0|
 |26-26_2|-57|0|-87|25-25_2|-57|0|-87|
 
-### [Mass & Inertia](#mass-inertia)
+### [Mass & Inertia](#mass-&-inertia)
 
 #### Whole robot
 
@@ -242,7 +243,7 @@ The following table shows the network settings after the reset.
 
 ![](/assets/images/platform/thormang3/thormang3_110.jpg)
 
-### [Joint & Angle Limit](#joint-angle-limit)
+### [Joint & Angle Limit](#joint-&-angle-limit)
 
 ![](/assets/images/platform/thormang3/thormang3_111.jpg)
 

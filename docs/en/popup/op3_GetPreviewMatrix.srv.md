@@ -22,4 +22,4 @@ This service acquires parameters that are applied on op3_online_walking_module.
 * `PreviewResponse res`([op3_walking_module_msgs/PreviewResponse](op3_PreviewResponse.msg))   
 &emsp;&emsp; For details, refer to [PreviewResponse.msg](op3_PreviewResponse.msg).  
 
-<br>[&lt;&lt; Back](op3_online_walking_module_msgs.md)
+

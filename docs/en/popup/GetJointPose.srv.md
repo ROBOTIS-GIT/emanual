@@ -22,5 +22,5 @@ A service to read a pose of a specific joint.
 * `joint_value`
 &emsp;&emsp; Pose value from the joint.
 
-<br>
-[[&lt;&lt; Back|thormang3_manipulation_module_msgs]]
+
+

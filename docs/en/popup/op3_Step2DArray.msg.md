@@ -17,5 +17,5 @@ layout: popup
 * `footsteps_2d`    
 &emsp;&emsp; foot step data   
 
-<br>
-[&lt;&lt; Back](op3_online_walking_module_msgs.md)
+
+
