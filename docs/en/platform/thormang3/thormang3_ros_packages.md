@@ -50,7 +50,6 @@ $ sudo bash
   - **ft_data_path (string, default: "")** : This path indicates the location of the file that contains calibration matrix and unloaded voltage information of the FT sensor.
   - **ft_calibration_data_path (string, default: "")** : This path indicates the location of the file that contains the reference value for FT sensor calibration.
 
-
 ### [thormang3_kinematics_dynamics](#thormang3-kinematics-dynamics)
 
 `thormang3_kinematics_dynamics` is a kinematics and dynamics library that provides joint & link information and basic robotics function. To use this library, it is necessary to set the `CMakeList.txt` and `package.xml` of each module
@@ -800,7 +799,7 @@ void setCurrentFootForceTorqueSensorOutput(
   double r_torque_roll_Nm, double r_torque_pitch_Nm, double r_torque_yaw_Nm,  
   double l_force_x_N,      double l_force_y_N,       double l_force_z_N,  
   double l_torque_roll_Nm, double l_torque_pitch_Nm, double l_torque_yaw_Nm)
-```  
+```
   - arguments :
       - r_force_x_N : current x directional force on right foot with respect to robot's local coordinate
       - r_force_y_N : current y directional force on right foot with respect to robot's local coordinate
@@ -823,7 +822,7 @@ void setMaximumAdjustment(
   double cob_roll_max_adjustment_rad, double cob_pitch_max_adjustment_rad, double cob_yaw_max_adjustment_rad,  
   double foot_x_max_adjustment_m, double foot_y_max_adjustment_m, double foot_z_max_adjustment_m,  
   double foot_roll_max_adjustment_rad, double foot_pitch_max_adjustment_rad, double foot_yaw_max_adjustment_rad)
-```  
+```
   - arguments :
       - cob_x_max_adjustment_m : the maximum x directinal linear modification of center of body
       - cob_y_max_adjustment_m : the maximum y directinal linear modification of center of body
@@ -1301,7 +1300,6 @@ This is the modified version of KumarRobotics/imu_3dm_gx4.
 
 Present output of the IMU Sensor
 
-
 ## [PPC Packages](#ppc-packages)
 
 ### [thormang3_sensors](#thormang3-sensors)
@@ -1621,6 +1619,7 @@ There are below four cmd_name in the action script.
 * **sleep** : "sleep" cmd_name means to wait for a certain amount of time. User can specify the wait time as cmd_arg.  
 
 #### ROS API  
+
 ##### Subscribed Topics  
 `/robotis/demo/action_index` ([std_msgs/Int32]{: .popup})  
   The action script number to play.  
@@ -1643,6 +1642,7 @@ Based on the simple Parameter from Topic, the package creates StepData and trans
 > Reference : [How to operate walking module]
 
 #### ROS API  
+
 ##### Subscribed Topics  
 `/robotis/status` ([robotis_controller_msgs/Status]{: .popup})  
   Status message of THORMANG3
@@ -1888,7 +1888,6 @@ After typing "help", the commend list will appear as shown below.
     ![](/assets/images/platform/thormang3/thormang3_045.jpg)
 
 9. Type "play" and check the THORMANG3's action  
-
 
 ## [THORMANG msgs Package](#thormang-msgs-package)
 

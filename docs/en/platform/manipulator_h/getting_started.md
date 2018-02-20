@@ -100,7 +100,7 @@ The USB2Dynamixel sends ArmSDK commands to the Manipulator. Connect the USB2Dyna
 
 ## [Manipulator Test](#manipulator-test)
 
-- Test the arm with Dynamixel Wizard to check for any anomalies. DynamixelWizard is included in RoboPlus suite. RoboPlus can be downloaded from ROBOTIS home page’s Support -> Downloads(http://www.robotis.com/xe/download).  
+- Test the arm with Dynamixel Wizard to check for any anomalies. DynamixelWizard is included in RoboPlus suite. RoboPlus can be downloaded from ROBOTIS home page’s Support -> Downloads([http://www.robotis.com/xe/download]).  
 
 `Caution` Do NOT download RoboPlus v2.0. Use RoboPlus v1.0 for Manipulator-H.
 {: .notice--warning}
@@ -211,3 +211,4 @@ The USB2Dynamixel sends ArmSDK commands to the Manipulator. Connect the USB2Dyna
 
 
 [http://eigen.tuxfamily.org]: http://eigen.tuxfamily.org
+[http://www.robotis.com/xe/download]: http://www.robotis.com/xe/download
