@@ -9116,19 +9116,19 @@ op3:
       url: /platform/op3/getting_started/#how-to-kill-the-demo-program
     - title: "How to Restart the demo program"
       url: /platform/op3/getting_started/#how-to-restart-the-demo-program
-  - title: "Robotis ROS Modules"
-    url: /platform/op3/robotis_ros_modules/#robotis-ros-packages
+  - title: "Robotis ROS Packages"
+    url: /platform/op3/robotis_ros_packages/#robotis-ros-packages
     children:
     - title: "ROBOTIS OP3"
-      url: /platform/op3/robotis_ros_modules/#robotis-op3
+      url: /platform/op3/robotis_ros_packages/#robotis-op3
     - title: "ROBOTIS OP3 msgs"
-      url: /platform/op3/robotis_ros_modules/#robotis-op3-msgs
+      url: /platform/op3/robotis_ros_packages/#robotis-op3-msgs
     - title: "ROBOTIS OP3 Demo"
-      url: /platform/op3/robotis_ros_modules/#robotis-op3-Demo
+      url: /platform/op3/robotis_ros_packages/#robotis-op3-Demo
     - title: "ROBOTIS OP3 Common"
-      url: /platform/op3/robotis_ros_modules/#robotis-op3-common
+      url: /platform/op3/robotis_ros_packages/#robotis-op3-common
     - title: "ROBOTIS OP3 Tools"
-      url: /platform/op3/robotis_ros_modules/#robotis-op3-tools
+      url: /platform/op3/robotis_ros_packages/#robotis-op3-tools
   - title: "Tutorials"
     url: /platform/op3/tutorials/#tutorials
     children:
