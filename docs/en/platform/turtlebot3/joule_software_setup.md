@@ -48,60 +48,60 @@ In this section, the Alternative Ubuntu Desktop 16.04 LTS will be installed on I
 
 **[Intel® Joule™]** Installation will be proceeded as shown in below images. When Joule is turned on, monitor will blink about 3 times after 5 seconds, and print menu screen. Press <kbd>F7</kbd> to go to `Boot Manager`.
 
-![](/assets/images/platform/turtlebot3/preparation/j1.JPG)
+![](/assets/images/platform/turtlebot3/preparation/j1.jpg)
 
 **[Intel® Joule™]** Select <kbd>USB Device</kbd>.
 
-![](/assets/images/platform/turtlebot3/preparation/j2.JPG)
+![](/assets/images/platform/turtlebot3/preparation/j2.jpg)
 
-![](/assets/images/platform/turtlebot3/preparation/j3.JPG)
+![](/assets/images/platform/turtlebot3/preparation/j3.jpg)
 
-![](/assets/images/platform/turtlebot3/preparation/j4.JPG)
+![](/assets/images/platform/turtlebot3/preparation/j4.jpg)
 
-![](/assets/images/platform/turtlebot3/preparation/j5.JPG)
+![](/assets/images/platform/turtlebot3/preparation/j5.jpg)
 
 **[Intel® Joule™]** Select <kbd>Erase disk and install Ubuntu</kbd> then <kbd>continue</kbd>.
 
-![](/assets/images/platform/turtlebot3/preparation/j6.JPG)
+![](/assets/images/platform/turtlebot3/preparation/j6.jpg)
 
 **[Intel® Joule™]** `Intel® Joule™` has two different disk drives: 16GB micro SD Card and 16GB eMMC. In this instruction, it is highly recommended to install `Alternarive Ubuntu for Joule` on the `16GB eMMC`. Select `MMC/SD card #2 (mmcblk1) - 15.7 GB MMC 016G32` then <kbd>continue</kbd>.
 
-![](/assets/images/platform/turtlebot3/preparation/j7.JPG)
+![](/assets/images/platform/turtlebot3/preparation/j7.jpg)
 
-![](/assets/images/platform/turtlebot3/preparation/j8.JPG)
+![](/assets/images/platform/turtlebot3/preparation/j8.jpg)
 
 **[Intel® Joule™]** Installation will take about 10 minutes.
 
-![](/assets/images/platform/turtlebot3/preparation/j9.JPG)
+![](/assets/images/platform/turtlebot3/preparation/j9.jpg)
 
 **[Intel® Joule™]** When installation is completed, click <kbd>Restart Now</kbd>.
 
-![](/assets/images/platform/turtlebot3/preparation/j10.JPG)
+![](/assets/images/platform/turtlebot3/preparation/j10.jpg)
 
 **[Intel® Joule™]** Remove bootable USB drive from Joule.
 
-![](/assets/images/platform/turtlebot3/preparation/j11.JPG)
+![](/assets/images/platform/turtlebot3/preparation/j11.jpg)
 
 **[Intel® Joule™]** Don't press any key. It will boot from <kbd>16GB eMMC</kbd> which is a default boot device.
 
-![](/assets/images/platform/turtlebot3/preparation/j12.JPG)
+![](/assets/images/platform/turtlebot3/preparation/j12.jpg)
 
-![](/assets/images/platform/turtlebot3/preparation/j13.JPG)
+![](/assets/images/platform/turtlebot3/preparation/j13.jpg)
 
-![](/assets/images/platform/turtlebot3/preparation/j14.JPG)
+![](/assets/images/platform/turtlebot3/preparation/j14.jpg)
 
 **[Intel® Joule™]** Finish the rest of settings.
 
-![](/assets/images/platform/turtlebot3/preparation/j15.JPG)
+![](/assets/images/platform/turtlebot3/preparation/j15.jpg)
 
-![](/assets/images/platform/turtlebot3/preparation/j16.JPG)
+![](/assets/images/platform/turtlebot3/preparation/j16.jpg)
 
-![](/assets/images/platform/turtlebot3/preparation/j17.JPG)
+![](/assets/images/platform/turtlebot3/preparation/j17.jpg)
 
-![](/assets/images/platform/turtlebot3/preparation/j18.JPG)
+![](/assets/images/platform/turtlebot3/preparation/j18.jpg)
 
-![](/assets/images/platform/turtlebot3/preparation/j19.JPG)
+![](/assets/images/platform/turtlebot3/preparation/j19.jpg)
 
-![](/assets/images/platform/turtlebot3/preparation/j20.JPG)
+![](/assets/images/platform/turtlebot3/preparation/j20.jpg)
 
-![](/assets/images/platform/turtlebot3/preparation/j21.JPG)
+![](/assets/images/platform/turtlebot3/preparation/j21.jpg)
