@@ -541,7 +541,7 @@ The following are Messages and Service used for the [op3_offset_tuner_server] an
 ##### ROS Service Type  
  * [GetPresentJointOffsetData.srv]{: .popup}
 
-### [ROBOTIS OP3 Demo](#robotis-op3-Demo)
+### [ROBOTIS OP3 Demo](#robotis-op3-demo)
 
 #### [ball_detector](#ball-detector)
 
@@ -583,7 +583,7 @@ The following are Messages and Service used for the [op3_offset_tuner_server] an
  &emsp;&emsp; The message in this topic contains camera information of the corresponding input image.  
 
 ###### Published Topics  
- `~/image_out`([sensor_mgsg/Image]{: .popup})  
+ `~/image_out`([sensor_msgs/Image]{: .popup})  
  &emsp;&emsp; The message in this topic contains an output image after the ball searching process.  
 
  `~/camera_info`([sensor_msgs/CameraInfo]{: .popup})  
@@ -781,16 +781,16 @@ The following are Messages and Service used for the [op3_offset_tuner_server] an
  **Current position**: The current position describes position of Dynamixel which converted from actual Dynamixel resolution to 4095 resolution. This data is represented by STP7 in op3_action_editor. Sometimes the position may be read as ---- in op3_action_editor. This means position of the Dynamixel has not been read (or torque is off).
  If user turns the Dynamixel off, current position cannot be read until turn it back on.
  User can turn off the torque of specific Dynamixels. This is very convenient when acquiring position values directly from Dynamixels for a new robot posture instead of calculating those values. To do that, turn off the torque of desired Dynamixels, then make a posture and hold the robot joint by hand until turn the torque back on. The robot will be remaining at current posture and user can read position values of corresponding Dynamixels.  
- **Steps or stages**: Each page can store up to 7 steps, from STP0 to STP6. However, some actions may be required more than 7 stages to perform completely. This can be resolved by simply using multiple pages and link them with ?�Next??  
- **Next**: ?�Next??indicates whether to continue action on a different page. To continue actions, just list the page number where the action is to be continued. Number 0 indicates that action does not continue onto another page (default value). Linking page does not have to have the numerical order.  
- **Play Count**: ?�Play Count??is the number of times the action of the page is to be played.  
- **Exit**: There might be some cases when an action has to be stopped. In these cases, the robot may be in unstable position. ?�Exit??is much like "Next", so "Exit" should be linked to a page where ROBOTIS-OP3 can return to a stable pose. If "Exit" is 0, it means that there is no linked exit page (default value).  
- Tip: When calling an action requires multiple pages, ROBOTIS strongly suggests user to call the action from the starting page. For example, ?�clap??starts at page 7 and ends at page 8. This means you should call page 7 when calling ?�clap.??Calling the page 8 may cause unexpected behavior of the robot.  
+ **Steps or stages**: Each page can store up to 7 steps, from STP0 to STP6. However, some actions may be required more than 7 stages to perform completely. This can be resolved by simply using multiple pages and link them with
+ **Next**: Next indicates whether to continue action on a different page. To continue actions, just list the page number where the action is to be continued. Number 0 indicates that action does not continue onto another page (default value). Linking page does not have to have the numerical order.  
+ **Play Count**: Play Count is the number of times the action of the page is to be played.  
+ **Exit**: There might be some cases when an action has to be stopped. In these cases, the robot may be in unstable position. Exit is much like "Next", so "Exit" should be linked to a page where ROBOTIS-OP3 can return to a stable pose. If "Exit" is 0, it means that there is no linked exit page (default value).  
+ Tip: When calling an action requires multiple pages, ROBOTIS strongly suggests user to call the action from the starting page. For example, clap starts at page 7 and ends at page 8. This means you should call page 7 when calling clap. Calling the page 8 may cause unexpected behavior of the robot.  
  **STP7**: "STP7" column is the current position of the Dynamixel which converted to 4095 resolution from its original resolution. "----" means that torque has been released.  
  **PauseTime**: "PauseTime" is the pause duration period for motion playback for step STP[x].  
  **Time(x 8msec)** : "Time" is the time period for ROBOTIS-OP3 to complete step STP[x]. Each time unit account for 8ms of time.  
 
- It is strongly advised that when user tests user?�s own newly-created or edited actions, there should be small incremental changes in position, speed/time, and pause values for the sake of ROBOTIS-OP3's stability.  
+ It is strongly advised that when user tests user's own newly-created or edited actions, there should be small incremental changes in position, speed/time, and pause values for the sake of ROBOTIS-OP3's stability.  
 
 ###### The Contents of The Default Action File
  The below table shows the contents of the default action file.  
@@ -1060,6 +1060,8 @@ The following are Messages and Service used for the [op3_offset_tuner_server] an
 [op3_head_control_module]: /docs/en/platform/op3/robotis_ros_packages/#op3_head_control_module
 [op3_walking_module]: /docs/en/platform/op3/robotis_ros_packages/#op3_walking_module
 [op3_online_walking_module]: /docs/en/platform/op3/robotis_ros_packages/#op3_online_walking_module
+[open_cr_module]: /docs/en/platform/op3/robotis_ros_packages/#open-cr-module
+
 
 [std_msgs/Int32]: /docs/en/popup/std_msgs_int32_message/
 [std_msgs/String]: /docs/en/popup/std_msgs_string/

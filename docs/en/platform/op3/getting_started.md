@@ -13,7 +13,7 @@ sidebar:
 
 <div style="counter-reset: h1 2"></div>
 
-# [Getting Started](#getting_started)
+# [Getting Started](#getting-started)
 
 ## [How to Connect](#how-to-connect)
 

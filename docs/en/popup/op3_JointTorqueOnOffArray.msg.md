@@ -12,8 +12,9 @@ layout: popup
 - Description
 The message to turn on/off the torque of each joint
 
-* `JointTorqueOnOff[] torque_enable_data`([op3_offset_tuner_msgs/JointTorqueOnOff](op3_JointTorqueOnOff.msg))   
+* `JointTorqueOnOff[] torque_enable_data`([op3_offset_tuner_msgs/JointTorqueOnOff])   
 &emsp;&emsp; Array data of the joint to enable/disable torque  
 
 
 
+[op3_offset_tuner_msgs/JointTorqueOnOff]: /docs/en/popup/op3_JointTorqueOnOff.msg/

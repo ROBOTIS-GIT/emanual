@@ -19,8 +19,10 @@ This service acquires parameters that are applied on current op3_walking_module.
 &emsp;&emsp;
 
   - Response
-* `WalkingParam parameters`([op3_walking_module_msgs/WalkingParam](op3_WalkingParam.msg))   
+* `WalkingParam parameters`([op3_walking_module_msgs/WalkingParam])   
 &emsp;&emsp; Parameters that are appplied on current op3_walking_module.   
-&emsp;&emsp; For details, refer to [WalkingParam.msg](op3_WalkingParam.msg).  
+&emsp;&emsp; For details, refer to [WalkingParam.msg].  
 
 
+[op3_walking_module_msgs/WalkingParam]: /docs/en/popup/op3_WalkingParam.msg/
+[WalkingParam.msg]: /docs/en/popup/op3_WalkingParam.msg/
