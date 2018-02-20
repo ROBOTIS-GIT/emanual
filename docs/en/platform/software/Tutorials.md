@@ -15,7 +15,7 @@ sidebar:
 
 # [Tutorials](#tutorials)
 
-## [Creating new motion module](#creating-new-motion_module)
+## [Creating new motion module](#creating-new-motion-module)
 
 Instructions for applying ROBOTIS Framework to the new robot.
 
@@ -390,7 +390,7 @@ Please refer to the below link for creating a new Robot Manager and addi101012ng
 
 ## [Creating new sensor module](#creating-new-sensor-module)
 
-**Description**: This is the tutorial for creating a new sensor module inherited from the `SensorModule` class of [`robotis_frameowrk_common`](robotis_framework_common) package.
+**Description**: This is the tutorial for creating a new sensor module inherited from the `SensorModule` class of [`robotis_frameowrk_common`] package.
 
 **[ Table of Contents ]**  
 
@@ -1223,8 +1223,8 @@ $ roslaunch thormang3_manager thormang3_manager.launch
 
 
 
-[`robotis_frameowrk_common`]: /docs/en/platform/software/robotis_framework_packages/#robotis_framework_common
-[`robotis_controller`]: /docs/en/platform/software/robotis_framework_packages/#robotis_controller
+[`robotis_frameowrk_common`]: /docs/en/platform/software/robotis_framework_packages/#robotis-framework-common
+[`robotis_controller`]: /docs/en/platform/software/robotis_framework_packages/#robotis-controller
 [_`motion_module_tutorial/include/motion_module_tutorial/motion_module_tutorial.h`_]: /docs/en/popup/motion_module_tutorial.h/
 [_`motion_module_tutorial/src/motion_module_tutorial/motion_module_tutorial.cpp`_]: /docs/en/popup/motion_module_tutorial.cpp/
 [_`motion_module_tutorial/package.xml`_]: /docs/en/popup/motion_module_tutorial_package.xml/
