@@ -1,6 +1,17 @@
 ---
-layout: popup
+layout: archive
+lang: en
+ref: msgs_PoseZRPY_msg
+read_time: true
+share: true
+author_profile: false
+permalink: /docs/en/platform/msgs/PoseZRPY_msg/
+sidebar:
+  title: MSGS
+  nav: "msgs"
 ---
+
+# [PoseZRPY_msg](#posezrpy-msg)
 
 - File: `thormang3_walking_module_msgs/PoseZRPY.msg`
 

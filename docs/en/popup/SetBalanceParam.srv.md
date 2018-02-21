@@ -42,4 +42,4 @@ A service that can modify Balance Algorithm Parameter.
 
 
 
-[thormang3_walking_module_msgs/BalanceParam]: /docs/en/popup/BalanceParam.msg/
+[thormang3_walking_module_msgs/BalanceParam]: /docs/en/platform/msgs/BalanceParm_msg/#balanceparam-msg

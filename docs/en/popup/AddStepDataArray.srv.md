@@ -40,4 +40,4 @@ A service to add StepData to [thormang3_walking_module].
 | ROBOT_IS_WALKING_NOW       | 0x400 | The Thormang3 is walking now.                  |
 
 [thormang3_walking_module]: /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_walking_module
-[thormang3_walking_module_msgs/StepData]: /docs/en/popup/StepData.msg/
+[thormang3_walking_module_msgs/StepData]: /docs/en/platform/msgs/StepData_msg/#stepdata-msg

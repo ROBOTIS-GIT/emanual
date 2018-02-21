@@ -90,4 +90,4 @@ This message will be used for debugging
     * ` float32 l_present_an_r`
 &emsp;&emsp; the present angle in radian of left ankle roll joint
 
-[std_msgs/Header]: /docs/en/popup/std_msgs_header/
+[std_msgs/Header]: /docs/en/platform/msgs/std_msgs_header/#std-msgs-header

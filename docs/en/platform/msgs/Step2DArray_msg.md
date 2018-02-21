@@ -1,6 +1,17 @@
 ---
-layout: popup
+layout: archive
+lang: en
+ref: msgs_Step2DArray_msg
+read_time: true
+share: true
+author_profile: false
+permalink: /docs/en/platform/msgs/Step2DArray_msg/
+sidebar:
+  title: MSGS
+  nav: "msgs"
 ---
+
+# [Step2DArray_msg](#step2darray-msg)
 
 - File: `thormang3_foot_step_generator/Step2DArray.msg`
 
@@ -16,4 +27,4 @@ Planar StepData defined by the User.
 &emsp;&emsp; Planar StepData defined by the User.
 
 
-[thormang3_foot_step_generator/Step2D]: /docs/en/platform/msgs/Step2D_msg/#step2d-msg
+[thormang3_foot_step_generator/Step2D]: /docs/en/popup/Step2D.msg/

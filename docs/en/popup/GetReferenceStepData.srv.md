@@ -27,5 +27,6 @@ System time and pose of current [thormang3_walking_module] are provided in StepD
 
 
 
-[thormang3_walking_module]: /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_walking_module
-[thormang3_walking_module_msgs/StepData]: /docs/en/popup/StepData.msg/
+[thormang3_walking_module]: /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3-walking-module
+
+[thormang3_walking_module_msgs/StepData]: /docs/en/platform/msgs/StepData_msg/#stepdata-msg

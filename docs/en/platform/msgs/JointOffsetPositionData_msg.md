@@ -1,6 +1,17 @@
 ---
-layout: popup
+layout: archive
+lang: en
+ref: msgs_JointOffsetPositionData_msg
+read_time: true
+share: true
+author_profile: false
+permalink: /docs/en/platform/msgs/JointOffsetPositionData_msg/
+sidebar:
+  title: MSGS
+  nav: "msgs"
 ---
+
+# [JointOffsetPositionData_msg](#jointoffsetpositiondata-msg)
 
 - File: `thormang3_offset_tuner_msgs/JointOffsetPositionData.msg`
 
@@ -17,7 +28,7 @@ layout: popup
  ```
 
 - Description
-This message is used when creating [GetPresentJointOffsetData.srv].
+This message is used when creating [GetPresentJointOffsetData.srv]{: .popup}.
 
     * ` string  joint_name`
 &emsp;&emsp; joint name
@@ -34,4 +45,4 @@ This message is used when creating [GetPresentJointOffsetData.srv].
     * ` int32   d_gain`
 &emsp;&emsp; D Gain of the joint Position(Not used for THORMANG3)
 
-[GetPresentJointOffsetData.srv]: /docs/en/platform/msgs/GetPresentJointOffsetData_srv/#getpresentjointoffsetdata-srv
+[GetPresentJointOffsetData.srv]: /docs/en/popup/GetPresentJointOffsetData.srv/

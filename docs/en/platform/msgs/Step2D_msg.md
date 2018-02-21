@@ -1,6 +1,17 @@
 ---
-layout: popup
+layout: archive
+lang: en
+ref: msgs_Step2D_msg
+read_time: true
+share: true
+author_profile: false
+permalink: /docs/en/platform/msgs/Step2D_msg/
+sidebar:
+  title: MSGS
+  nav: "msgs"
 ---
+
+# [Step2D_msg](#step2d-msg)
 
 - File: `thormang3_foot_step_generator/Step2D.msg`
 
@@ -16,9 +27,9 @@ layout: popup
 
 
 - Description
-The message creates [Step2DArray.msg].
+The message creates [Step2DArray.msg]{: . popup}.
 
-    * `geometry_msgs/Pose2D  step2d`([geometry_msgs/Pose2D])
+    * `geometry_msgs/Pose2D  step2d`([geometry_msgs/Pose2D]{: . popup})
 &emsp;&emsp; 2D Position and orientation of the foot for upcoming step.
 
     * `uint8    moving_foot`
@@ -27,5 +38,5 @@ The message creates [Step2DArray.msg].
 &emsp;&emsp; - RIGHT_FOOT_SWING : Right Foot Move
 &emsp;&emsp; - STANDING         : Standing
 
-[Step2DArray.msg]: /docs/en/platform/msgs/Step2DArray_msg/#step2Darray-msg
-[geometry_msgs/Pose2D]: /docs/en/platform/msgs/gemetry_msgs_Pose2D_msg/#gemetry-msgs-pose2d-msg
+[Step2DArray.msg]: /docs/en/popup/Step2DArray.msg/
+[geometry_msgs/Pose2D]: /docs/en/popup/gemetry_msgs_Pose2D_msg/
