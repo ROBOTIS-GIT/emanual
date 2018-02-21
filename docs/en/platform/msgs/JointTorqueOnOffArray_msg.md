@@ -1,6 +1,17 @@
 ---
-layout: popup
+layout: archive
+lang: en
+ref: msgs_JointTorqueOnOffArray_msg
+read_time: true
+share: true
+author_profile: false
+permalink: /docs/en/platform/msgs/JointTorqueOnOffArray_msg/
+sidebar:
+  title: MSGS
+  nav: "msgs"
 ---
+
+# [JointTorqueOnOffArray_msg](#jointtorqueonoffarray-msg)
 
 - File: `thormang3_offset_tuner_msgs/JointTorqueOnOffArray.msg`
 
