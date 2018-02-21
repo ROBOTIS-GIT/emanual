@@ -27,14 +27,16 @@ sidebar:
 ## [Introduction Video](#introduction-video)
 
 [Video #01] How to use the LDS-01
-- 0. Specification
-- 1. ROS
-- 2. Windows, Linux, macOS
-- 3. Embedded Board
-- 4. SLAM and Navigation
-- 5. Self-Parking
-- 6. 3D Sensing
-- 7. for Makers
+
+- Contents
+  1. Specification
+  1. ROS
+  1. Windows, Linux, macOS
+  1. Embedded Board
+  1. SLAM and Navigation
+  1. Self-Parking
+  1. 3D Sensing
+  1. for Makers
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/wmZQoTdtioY" frameborder="0" allowfullscreen></iframe>
 
@@ -55,7 +57,7 @@ sidebar:
 ### [General Specifications](#general-specifications)
 
 | Items                    | Specifications                                                     |
-|--------------------------|--------------------------------------------------------------------|
+| ------------------------ | ------------------------------------------------------------------ |
 | Operating supply voltage | 5V DC ±5%                                                          |
 | Light source             | Semiconductor Laser Diode(λ=785nm)                                 |
 | LASER safety             | IEC60825-1 Class 1                                                 |
@@ -69,16 +71,16 @@ sidebar:
 
 ### [Measurement Performance Specifications](#measurement-performance-specifications)
 
-| Items                              | Specifications|
-|------------------------------------|---------------|
-| Distance Range                     | 120 ~ 3,500mm |
-| Distance Accuracy (120mm ~ 499mm)  | ±15mm         |
-| Distance Accuracy(500mm ~ 3,500mm) | ±5.0%         |
-| Distance Precision(120mm ~ 499mm)  | ±10mm         |
-| Distance Precision(500mm ~ 3,500mm)| ±3.5%         |
-| Scan Rate                          | 300±10 rpm    |
-| Angular Range                      | 360°          |
-| Angular Resolution                 | 1°            |
+| Items                               | Specifications |
+| ----------------------------------- | -------------- |
+| Distance Range                      | 120 ~ 3,500mm  |
+| Distance Accuracy (120mm ~ 499mm)   | ±15mm          |
+| Distance Accuracy(500mm ~ 3,500mm)  | ±5.0%          |
+| Distance Precision(120mm ~ 499mm)   | ±10mm          |
+| Distance Precision(500mm ~ 3,500mm) | ±3.5%          |
+| Scan Rate                           | 300±10 rpm     |
+| Angular Range                       | 360°           |
+| Angular Resolution                  | 1°             |
 
 ## [Detail Specification Document](#detail-specification-document)
 
@@ -99,7 +101,7 @@ The LDS-01 is used for TurtleBot3 Burger, Waffle and Waffle Pi models.
 ![](/assets/images/platform/turtlebot3/hardware_setup/turtlebot3_models.png)
 
 
-## [User Guide (for ROS)](#user-guide-ros)
+## [User Guide (for ROS)](#user-guide-for-ros)
 
 We are offering [ROS package for LSD](http://wiki.ros.org/hls_lfcd_lds_driver). The hls_lfcd_lds_driver package provides a driver for "HLS(Hitachi-LG Sensor) LFCD LDS(Laser Distance Sensor)".
 
@@ -130,7 +132,7 @@ $ roslaunch hls_lfcd_lds_driver hlds_laser.launch
 $ roslaunch hls_lfcd_lds_driver view_hlds_laser.launch
 ```
 
-## [User Guide (for Driver)](#user-guide-driver)
+## [User Guide (for Driver)](#user-guide-for-driver)
 
 - In addition to ROS, the LDS-01 supports Windows, Linux, and MacOS development environments for general purposes.
 - The software requirement is:
@@ -171,7 +173,7 @@ r[359]=0.438000,r[358]=0.385000,r[357]=0.379000,...
 
 You can see the raw data in the terminal when you run the driver of LDS-01. Please check the source code for details.
 
-## [User Guide (for GUI)](#user-guide-gui)
+## [User Guide (for GUI)](#user-guide-for-gui)
 
 - We provide a basic GUI tool for visually checking the data of the LDS-01.
 - It supports Linux, Windows, and macOS.
@@ -210,7 +212,7 @@ https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver
 
 ![](/assets/images/platform/turtlebot3/appendix_lds/lds_gui.png)
 
-## [User Guide (for Embedded Board)](#user-guide-embedded-board)
+## [User Guide (for Embedded Board)](#user-guide-for-embedded-board)
 
 - We provide a way to connect to an embedded board.
 - The data of the LDS-01 can be used on the embedded board like OpenCR and Arduino, and it can be confirmed on the LCD as a graph like below.
