@@ -185,6 +185,37 @@ $(function() {
     	});
     });
     </script>
+    <script>
+      // var side_nav = document.getElementById("sidebar");
+      var offset = 105;
+    
+      window.onscroll = function () {
+        stickynav()
+      };
+      
+      function stickynav() {
+        if (window.pageYOffset > offset) {
+          sidebar__left.classList.add("sticky_sidebar");
+        }
+        else {
+          sidebar__left.classList.remove("sticky_sidebar");
+        }
+      }
+    </script>
+    <script>
+      var toggle = 0;
+      
+      function extendnav() {
+        if (toggle == 0) {
+          sidebar__left.classList.add("extend_sidebar");
+          toggle = 1;
+        }
+        else {
+          sidebar__left.classList.remove("extend_sidebar");
+          toggle = 0;
+        }
+      }
+    </script>
   </head>
 
   <body class="layout--home">
@@ -224,8 +255,10 @@ $(function() {
         <!-- end of Google Translation -->  
         
         
-        <button class="switch_ko_en" id="switch_ko_en">
-          
+        
+        
+        
+        <a href=""><button class="switch_ko_en" id="switch_ko_en">N/A</button></a>
       </div>
       
       <input class="menu-btn" type="checkbox" id="menu-btn" />
@@ -1640,132 +1673,12 @@ $(function() {
 
 
 
-<script>
-  var side_nav = document.getElementById("sidebar");
-  var offset = 105;
-
-  window.onscroll = function () {
-    stickynav()
-  };
-  
-  function stickynav() {
-    if (window.pageYOffset > offset) {
-      sidebar.classList.add("sticky_sidebar");
-    }
-    else {
-      sidebar.classList.remove("sticky_sidebar");
-    }
-  }
-  
-  var toggle = 0;
-  var mobile_width = 960;
-  
-  function extendnav() {
-    if (document.body.clientWidth < mobile_width ) {
-      if (toggle == 0) {
-        sidebar.classList.add("extend_sidebar");
-        toggle = 1;
-      }
-      else {
-        sidebar.classList.remove("extend_sidebar");
-        toggle = 0;
-      }
-    }
-  }
-</script>
-
 <div id="main" role="main">
-  
-  <div class="sidebar__left" id="sidebar">
-  
-
-<div itemscope itemtype="http://schema.org/Person">
-
-  
-
-  <div class="author__content">
-    <h3 class="author__name" itemprop="name">Your Name</h3>
-    
-      <p class="author__bio" itemprop="description">
-        I am an amazing person.
-      </p>
-    
-  </div>
-
-  <div class="author__urls-wrapper">
-    <button class="btn btn--inverse">Follow</button>
-    <ul class="author__urls social-icons">
-      
-        <li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
-          <i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> <span itemprop="name">Somewhere</span>
-        </li>
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      <!--
-  <li>
-    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs">
-      <i class="fa fa-fw" aria-hidden="true"></i> Custom Social Profile Link
-    </a>
-  </li>
--->
-    </ul>
-  </div>
-</div>
-
-  
-  </div>
-
-
   <button class="nav_button" id="nav_button" onclick="extendnav()">ToC</button>
-  <button class="backtotop" id="backtotop"><a href="#">&#9650;<br />TOP</a></button>
+  <a href="#"><button class="backtotop" id="backtotop">&#9650;<br />TOP</button></a>
+  <div class="sidebar__left" id="sidebar__left">
+  
+  </div>
   <div class="archive" id="archive">
     <a href="/blob/master/docs/help.html" itemprop="sameAs" style="font-size:16px; float:right; margin: 10px 20px; text-decoration: none;">
       <i class="fa fa-fw fa-github" aria-hidden="true"></i> Edit on GitHub
