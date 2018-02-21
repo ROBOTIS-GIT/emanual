@@ -5,8 +5,7 @@ layout: popup
 - File : `sensor_msgs/PointCloud2.msg`
 - Raw Message Definition
 
-  ```c
-
+  ```
   # This message holds a collection of N-dimensional points, which may
   # contain additional information such as normals, intensity, etc. The
   # point data is stored as a binary blob, its layout described by the

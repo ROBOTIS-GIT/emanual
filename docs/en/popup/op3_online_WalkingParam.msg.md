@@ -26,5 +26,5 @@ layout: popup
 * `zmp_offset_y`    
 &emsp;&emsp; ZMP offset for y-direction   
 
-<br>
-[&lt;&lt; Back](op3_online_walking_module_msgs.md)
+
+

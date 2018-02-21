@@ -11,6 +11,7 @@ layout: popup
 
  int32[]                moving_foot
  geometry_msgs/Pose2D[] data
+
  ```
 
 - Description

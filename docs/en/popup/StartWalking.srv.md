@@ -27,5 +27,5 @@ A service to start walking THORMANG3 with existing StepData.
 | NO_STEP_DATA               | 0x10  | There is no step data.                       |
 | ROBOT_IS_WALKING_NOW       | 0x400 | The Thormang3 is walking now.                |
 
-<br>
-[[&lt;&lt; Back|thormang3_walking_module_msgs]]
+
+

@@ -151,7 +151,7 @@ Above configuration has to be repeatedly done whenever a new terminal window is 
     $ source ~/.bashrc
     ```
 
-#### Example setting for OPC
+#### [Example setting for OPC](#example-setting-for-opc)
 
 1. Open the bash file with an editor to apply configuration.
     ```
@@ -350,11 +350,11 @@ $ cd ~/catkin_ws/src
 $ git clone https://github.com/ktossell/camera_umd
 ```
 
-`Reference` : http://wiki.ros.org/uvc_camera
+`Reference` : [http://wiki.ros.org/uvc_camera]
 {: .notice}
 
 #### realsense
-`Reference` : http://wiki.ros.org/RealSense
+`Reference` : [http://wiki.ros.org/RealSense]
 {: .notice}
 
 
@@ -366,4 +366,6 @@ $ git clone https://github.com/ktossell/camera_umd
 [sbpl install instruction]: https://github.com/sbpl/sbpl
 [Link]: http://techtidings.blogspot.kr/2012/01/problem-with-libglso-on-64-bit-ubuntu.html
 [http://wiki.ros.org/urg_node]:http://wiki.ros.org/urg_node
+[http://wiki.ros.org/RealSense]:http://wiki.ros.org/RealSense
+[http://wiki.ros.org/uvc_camera]:http://wiki.ros.org/uvc_camera
 [http://wiki.ros.org/RealSense]:http://wiki.ros.org/RealSense

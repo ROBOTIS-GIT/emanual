@@ -22,5 +22,5 @@ If the time is set to 0, the speed is automatically configured proportional to t
 * `time`
 &emsp;&emsp; movement time to reach the target value
 
-<br>
-[[&lt;&lt; Back|thormang3_manipulation_module_msgs]]
+
+

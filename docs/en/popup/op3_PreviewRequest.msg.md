@@ -17,5 +17,5 @@ layout: popup
 * `lipm_height`    
 &emsp;&emsp; linear inverted pendulum length   
 
-<br>
-[&lt;&lt; Back](op3_online_walking_module_msgs.md)
+
+

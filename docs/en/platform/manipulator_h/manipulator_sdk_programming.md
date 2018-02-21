@@ -56,7 +56,7 @@ The Set_CIRC function generates a 3-point coordinates for the robot’s circular
 When moving by the generated trajectory from TrajectorGenerator class’s instance just use NextStep function from MotionPlay. MotionPlay class accounts trajectoryGenerator class.  
 The control period from MotionPlay default value is 8ms but can be changed with SetTimePeriod. If TimePeriod is 0 then 8ms default value is applied.
 
-### Pro_Arm_Comm_Win
+### Pro Arm Comm Win
 Pro_Arm_Comm_Win utilizes DYNAMIXEL 2.0 Protocol from the Windows version of DYNAMIXEL SDK. Pro_Arm_Comm_Win’s functions utilizes DYNAMIXEL Pro’s control (i.e. read/write Control Table values).  
 This is useful when writing separate code.
 
