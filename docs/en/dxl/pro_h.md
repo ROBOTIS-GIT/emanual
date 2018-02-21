@@ -1,16 +1,11 @@
 ---
-layout: splash
+layout: archive
 lang: en
 ref: pro_h-series
 permalink: /docs/en/dxl/pro_h/
-header:
-  overlay_color:
-  overlay_image:
-  cta_label:
-  cta_url:
-  caption:
-  intro:
-    - excerpt: 'DYNAMIXEL PRO-H Series'
+sidebar:
+  title: DYNAMIXEL PRO-H Series
+  nav: ""
 ---
 
 

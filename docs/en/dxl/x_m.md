@@ -1,16 +1,11 @@
 ---
-layout: splash
+layout: archive
 lang: en
 ref: xm-series
 permalink: /docs/en/dxl/x_m/
-header:
-  overlay_color:
-  overlay_image:
-  cta_label:
-  cta_url:
-  caption:
-  intro:
-    - excerpt: 'DYNAMIXEL XM Series'
+sidebar:
+  title: DYNAMIXEL XM Series
+  nav: ""
 ---
 
 

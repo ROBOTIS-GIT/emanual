@@ -21,17 +21,6 @@ Instructions for applying ROBOTIS Framework to the new robot.
 
 **Description**: This is the tutorial for creating a new motion module inherited from the `MotionModule` class of [`robotis_frameowrk_common`] package.
 
-**[ Table of Contents ]**  
-
->1. [**Overview**](#1-overview)
->2. [**Writing the Motion Module**](#2-writing-the-motion-module)  
->    2.1. [The Code](#21-the-code)  
->    2.2. [The Code Explained](#22-the-code-explained)  
->3. [**Building your package**](#3-building-your-package)  
->    3.1. [`package.xml`](#31-packagexml)  
->    3.2. [`CMakeLists.txt`](#32-cmakeliststxt)  
->    3.3. [Build](#33-build)  
->4. [**Add Created Motion Module to `robotis_controller`**](#4-add-created-motion-module-to-robotiscontroller)  
 
 ### Overview
 "Motion Module" calculates target position(or target velocity or target current) of each joint. If the Motion Module is created and added to the `RobotisController` of the [`robotis_controller`] pacakge, `RobotisController` periodically calls process() function from the Motion Module and saves calculated value to the `result_` of the Motion Module. Once the `RobotisController` completes calculation for all registered Motion Modules, it obtains `result_` from the Motion Module for each joint and transfers the value to each joint.  
@@ -40,6 +29,7 @@ The following is the example of creating a simple Motion Module.
 
 ### Writing the Motion Module
 Go to the directory to create the `motion_module_tutorial` package and create the package:
+
 ```
 $ cd ~/catkin_ws/src/ROBOTIS-THORMANG-MPC
 $ catkin_create_pkg motion_module_tutorial std_msgs roscpp
@@ -48,7 +38,7 @@ $ catkin_create_pkg motion_module_tutorial std_msgs roscpp
 #### The Code
 Write below header and cpp files in the `motion_module_tutorial` package.
 
-:link: [_`motion_module_tutorial/include/motion_module_tutorial/motion_module_tutorial.h`_]
+`link` [motion_module_tutorial/include/motion_module_tutorial/motion_module_tutorial.h]
 
 ```cpp
 #ifndef MOTION_MODULE_TUTORIAL_MOTION_MODULE_TUTORIAL_H_
@@ -98,7 +88,8 @@ public:
 ```
 
 
-:link: [_`motion_module_tutorial/src/motion_module_tutorial/motion_module_tutorial.cpp`_]
+`link` [motion_module_tutorial/src/motion_module_tutorial/motion_module_tutorial.cpp]
+
 ```cpp
 #include <stdio.h>
 #include "motion_module_tutorial/motion_module_tutorial.h"
@@ -189,6 +180,7 @@ bool MotionModuleTutorial::isRunning()
 ##### The Code Explanation
 Let's look into the code section by section.
 Motion Module is based on the Singleton Pattern.
+
 ```cpp
 ...
 class MotionModuleTutorial
@@ -197,9 +189,11 @@ class MotionModuleTutorial
 {
 ...
 ```
+
 As each Instance of Motion Module Class does the same work, Singleton Pattern is used to reduce the number of Instances.
 
 The constructor initializes the unique name and the control mode of Motion Module, as well as the repository for the result of process() function.
+
 ```cpp
 ...
 MotionModuleTutorial::MotionModuleTutorial()
@@ -217,6 +211,7 @@ MotionModuleTutorial::MotionModuleTutorial()
 ```
 
 Next, boost::thread is used for the Motion Module to subscribe control topics independant from the main thread.
+
 ```cpp
 ...
 #include <boost/thread.hpp>
@@ -226,6 +221,7 @@ Next, boost::thread is used for the Motion Module to subscribe control topics in
     void queueThread();
 ...
 ```
+
 ```cpp
 ...
 void MotionModuleTutorial::initialize(const int control_cycle_msec, robotis_framework::Robot *robot)
@@ -235,9 +231,11 @@ void MotionModuleTutorial::initialize(const int control_cycle_msec, robotis_fram
 }
 ...
 ```
+
 initialize() function is called only once when the Robot Manager registers Motion Module to the RobotisController.
 
 The example of subscriber and publisher looks like below.
+
 ```cpp
 ...
   /* sample subscriber & publisher */
@@ -245,6 +243,7 @@ The example of subscriber and publisher looks like below.
   ros::Publisher pub1_;
 ...
 ```
+
 ```cpp
 ...
 void MotionModuleTutorial::queueThread()
@@ -277,6 +276,7 @@ void MotionModuleTutorial::topicCallback(const std_msgs::Int16::ConstPtr &msg)
 ```
 
 When updating configuration of Motion Module for each joint, previously configured Motion Module could be running. Therefore, the function that checks the status of Motion Module is required along with the function that stops the Motion Module.
+
 ```cpp
 ...
 void MotionModuleTutorial::stop()
@@ -292,6 +292,7 @@ bool MotionModuleTutorial::isRunning()
 ```
 
 Finally, below is the process() function that is periodically called by the RobotisController.
+
 ```cpp
 ...
 void MotionModuleTutorial::process(std::map<std::string, robotis_framework::Dynamixel *> dxls,
@@ -315,6 +316,7 @@ void MotionModuleTutorial::process(std::map<std::string, robotis_framework::Dyna
 }
 ...
 ```
+
 After obtaining current and target values from the argument dxls, calculated values are saved to the result.
 
 ### Building your package
@@ -323,7 +325,8 @@ If the package is created with the `catkin_create_pkg` command, `package.xml` an
 #### `package.xml`
 The following is the cleaned up code of the `package.xml` file:
 
-:link: [_`motion_module_tutorial/package.xml`_]  
+`link` [`motion_module_tutorial/package.xml`]  
+
 ```xml
 <?xml version="1.0"?>
 <package>
@@ -344,13 +347,15 @@ The following is the cleaned up code of the `package.xml` file:
 
 </package>
 ```
+
 Please refer to the [`catkin/package.xml`] for more details about the `package.xml` file.
 
 #### `CMakeLists.txt`
 The following is the cleaned up code of the `CMakeLists.txt` file:  
 
-:link: [_`motion_module_tutorial/CMakeLists.txt`_]
-```CMake
+`link` [`motion_module_tutorial/CMakeLists.txt`]
+
+```
 cmake_minimum_required(VERSION 2.8.3)
 project(motion_module_tutorial)
 
@@ -375,10 +380,12 @@ add_library(motion_module_tutorial
   src/${PROJECT_NAME}/motion_module_tutorial.cpp
 )
 ```
+
 Please refer to the [`catkin_make/CMakeLists.txt`] for more details about the `CMakeLists.txt` file.
 
 #### Build
 Run `catkin_make` within the catkin workspace:
+
 ```
 $ cd ~/catkin_ws
 $ catkin_make
@@ -392,18 +399,6 @@ Please refer to the below link for creating a new Robot Manager and addi101012ng
 
 **Description**: This is the tutorial for creating a new sensor module inherited from the `SensorModule` class of [`robotis_frameowrk_common`] package.
 
-**[ Table of Contents ]**  
-
->1. [**Overview**](#1-overview)
->2. [**Writing the Sensor Module**](#2-writing-the-sensor-module)  
->    2.1. [The Code](#21-the-code)  
->    2.2. [The Code Explained](#22-the-code-explained)  
->3. [**Building your package**](#3-building-your-package)  
->    3.1. [`package.xml`](#31-packagexml)  
->    3.2. [`CMakeLists.txt`](#32-cmakeliststxt)  
->    3.3. [Build](#33-build)  
->4. [**Add Created Sensor Module to `robotis_controller`**](#4-add-created-sensor-module-to-robotiscontroller)  
-
 ### Overview
 "Sensor Module" processes obtained values from the sensor module.
 If the Sensor Module is created and added to the robotis_controller of the [`robotis_controller`] pacakge, [`robotis_controller`] periodically calls process() function from the Sensor Module and saves calculated value to the `sensor_result_` of the [`robotis_controller`]. Once the robotis_controller completes calculation for all registered Sensor Modules, it transfers the result to the Motion Module.
@@ -412,14 +407,16 @@ The following is the example of creating a simple Sensor Module.
 
 ### Writing the Sensor Module
 Go to the directory to create the `sensor_module_tutorial` package and create the package:
+
 ```
 $ cd ~/catkin_ws/src/ROBOTIS-THORMANG-MPC
 $ catkin_create_pkg sensor_module_tutorial std_msgs roscpp
 ```
+
 #### The Code
 Write below header and cpp files in the `sensor_module_tutorial` package.
 
-:link: [_`sensor_module_tutorial/include/sensor_module_tutorial/sensor_module_tutorial.h`_]
+`link` [`sensor_module_tutorial/include/sensor_module_tutorial/sensor_module_tutorial.h`]
 
 ```cpp
 #ifndef SENSOR_MODULE_TUTORIAL_SENSOR_MODULE_TUTORIAL_H_
@@ -467,7 +464,8 @@ public:
 ```
 
 
-:link: [_`sensor_module_tutorial/src/sensor_module_tutorial/sensor_module_tutorial.cpp`_]
+`link` [`sensor_module_tutorial/src/sensor_module_tutorial/sensor_module_tutorial.cpp`]
+
 ```cpp
 #include <stdio.h>
 #include "sensor_module_tutorial/sensor_module_tutorial.h"
@@ -534,6 +532,7 @@ void SensorModuleTutorial::process(std::map<std::string, robotis_framework::Dyna
 
 #### The Code Explanation
 Let's look into the code section by section. Sensor Module is based on the Singleton Pattern.
+
 ```cpp
 ...
 class SensorModuleTutorial
@@ -541,10 +540,12 @@ class SensorModuleTutorial
     public robotis_framework::Singleton<SensorModuleTutorial>
 {
 ...
+
 ```
 As each Instance of Sensor Module Class does the same work, Singleton Pattern is used to reduce the number of Instances.
 
 The constructor initializes the unique name and the control mode of Sensor Module, as well as the repository for the result of process() function.
+
 ```cpp
 ...
 SensorModuleTutorial::SensorModuleTutorial()
@@ -558,6 +559,7 @@ SensorModuleTutorial::SensorModuleTutorial()
 ```
 
 Next, boost::thread is used for the Sensor Module to subscribe control topics independant from the main thread.
+
 ```cpp
 ...
 #include <boost/thread.hpp>
@@ -577,9 +579,11 @@ void SensorModuleTutorial::initialize(const int control_cycle_msec, robotis_fram
 }
 ...
 ```
+
 initialize() function is called only once when the Robot Manager registers Sensor Module to the RobotisController.
 
 The example of subscriber and publisher looks like below.
+
 ```cpp
 ...
   /* sample subscriber & publisher */
@@ -620,6 +624,7 @@ void SensorModuleTutorial::topicCallback(const std_msgs::Int16::ConstPtr &msg)
 ```
 
 Finally, below is the process() function that is periodically called by the RobotisController.
+
 ```cpp
 ...
 void SensorModuleTutorial::process(std::map<std::string, robotis_framework::Dynamixel *> dxls,
@@ -634,6 +639,7 @@ void SensorModuleTutorial::process(std::map<std::string, robotis_framework::Dyna
 }
 ...
 ```
+
 After Bulk Reading current and target values from the argument `dxls`, calculated values are saved to the result.
 
 ### Building your package
@@ -641,7 +647,8 @@ If the package is created with the catkin_create_pkg command, package.xml and CM
 
 #### `package.xml`
 The following is the cleaned up code of the `package.xml` file:  
-:link: [`sensor_module_tutorial/package.xml`]
+`link` [`sensor_module_tutorial/package.xml`]
+
 ```xml
 <?xml version="1.0"?>
 <package>
@@ -662,12 +669,14 @@ The following is the cleaned up code of the `package.xml` file:
 
 </package>
 ```
+
 Please refer to the [`catkin/package.xml`] for more details about the `package.xml` file.
 
 #### `CMakeLists.txt`
 The following is the cleaned up code of the `CMakeLists.txt` file:  
-:link: [`sensor_module_tutorial/CMakeLists.txt`]
-```CMake
+`link` [`sensor_module_tutorial/CMakeLists.txt`]
+
+```
 cmake_minimum_required(VERSION 2.8.3)
 project(sensor_module_tutorial)
 
@@ -692,10 +701,12 @@ add_library(sensor_module_tutorial
   src/${PROJECT_NAME}/sensor_module_tutorial.cpp
 )
 ```
+
 Please refer to the [`catkin_make/CMakeLists.txt`] for more details about the `CMakeLists.txt` file.
 
 #### Build
 Run `catkin_make` within the catkin workspace:
+
 ```
 $ cd ~/catkin_ws
 $ catkin_make
@@ -732,6 +743,7 @@ The Robot Manager is a package to apply ROBOTIS Framework to a new robot. In thi
 
 ### Create the Robot Manager Node
 Go to the directory where Robot Manager package will be created, then create a manager package:
+
 ```
 $ cd ~/catkin_ws/src/ROBOTIS-THORMANG-MPC
 $ catkin_create_pkg thormang3_manager std_msgs roscpp
@@ -740,7 +752,8 @@ $ catkin_create_pkg thormang3_manager std_msgs roscpp
 #### The Code
 Create below cpp file in the `thormang3_manager` package.
 
-:link: [_`thormang3_manager/src/thormang3_manager.cpp`_]
+`link` [`thormang3_manager/src/thormang3_manager.cpp`]
+
 ```cpp
 #include "robotis_controller/robotis_controller.h"
 
@@ -821,6 +834,7 @@ int main(int argc, char **argv)
 
 #### The Code Analysis
 Let's look into the code.  
+
 ```cpp
 #include "robotis_controller/robotis_controller.h"
 
@@ -835,9 +849,11 @@ Let's look into the code.
 #include "thormang3_walking_module/walking_module.h"
 ...
 ```
+
 Include headers of sensor modules and motion modules that will be used in the Robot Manager.
 
 Load ROS Parameters from configuration files.
+
 ```cpp
 ...
     /* Load ROS Parameter */
@@ -847,6 +863,7 @@ Load ROS Parameters from configuration files.
 ```
 
 If "gazebo" is set to true in the ROS Parameters, set the controller to gazebo mode.
+
 ```cpp
 ...
     /* gazebo simulation */
@@ -863,6 +880,7 @@ If "gazebo" is set to true in the ROS Parameters, set the controller to gazebo m
 
 If the essential robot information file is missing from the ROS Parameters, the program will be terminated.
 RobotisController is initialized with the information from the ROS Parameters.
+
 ```cpp
 ...
     if(robot_file == "")
@@ -883,6 +901,7 @@ RobotisController is initialized with the information from the ROS Parameters.
 ```
 
 Add sensor modules and motion modules to RobotisController.
+
 ```cpp
 ...
     /* Add Sensor Module */
@@ -898,6 +917,7 @@ Add sensor modules and motion modules to RobotisController.
 ```
 
 Start the Timer of RobotisController to call Process() function periodically while program is running.
+
 ```cpp
 ...
     controller->startTimer();
@@ -947,12 +967,14 @@ Below is the contents of automatically generated `package.xml` file with removed
   <run_depend>robotis_controller</run_depend>
 
 </package>
+
 ```
 For more details about the `package.xml` file, please refer to [`catkin/package.xml`].
 
 #### `CMakeLists.txt`
 Below is the contents of automatically generated `CMakeLists.txt` file with removed comments and examples.
-```CMake
+
+```
 cmake_minimum_required(VERSION 2.8.3)
 project(thormang3_manager)
 
@@ -994,10 +1016,12 @@ target_link_libraries(thormang3_manager
   ${catkin_LIBRARIES}
 )
 ```
+
 For more details about the `CMakeLists.txt` file, please refer to [`catkin_make/CMakeLists.txt`].
 
 #### Build
 Now, run the catkin_make within the catkin_workspace
+
 ```
 $ cd ~/catkin_ws
 $ catkin_make
@@ -1030,6 +1054,7 @@ Each line consists of seven field data as shown below and they describe properti
 * BULK READ ITEMS : The item list to be read in bulk from the device (',' is a field delimiter)
 
 ##### `.robot` file example
+
 ```
 [ control info ]
 control_cycle = 8   # milliseconds
@@ -1053,6 +1078,7 @@ dynamixel | /dev/ttyUSB1 | 4   | H54-100-S500-R | 2.0      | l_arm_sh_r   | pres
 #### Joint initialize file (`.yaml`)
 
 ##### Format
+
 ```
 JOINT_NAME1 :   
    CTRL_TABLE_ITEM_NAME1 : VALUE  
@@ -1063,6 +1089,7 @@ JOINT_NAME2 :
 ```
 
 ##### Joint initialize file example
+
 ```
 r_arm_sh_p1 :   # H54-100-S500-R
    return_delay_time     :  10    # item name : value
@@ -1113,6 +1140,7 @@ r_arm_sh_r  :   # H54-100-S500-R
 ```
 
 #### Offset file (`.yaml`)
+
 ```
 offset:
   head_p: 0
@@ -1184,6 +1212,7 @@ init_pose_for_offset_tuner:
 Create the `.launch` file to pass the configuration file paths as parameters when running the Robot Manager.
 
 #### `.launch` file  
+
 ```xml
 <?xml version="1.0" ?>
 
@@ -1217,6 +1246,7 @@ Create the `.launch` file to pass the configuration file paths as parameters whe
 
 #### Run
 Execute the `.launch` file with the `roslaunch` command.
+
 ```
 $ roslaunch thormang3_manager thormang3_manager.launch
 ```
@@ -1225,19 +1255,19 @@ $ roslaunch thormang3_manager thormang3_manager.launch
 
 [`robotis_frameowrk_common`]: /docs/en/platform/software/robotis_framework_packages/#robotis-framework-common
 [`robotis_controller`]: /docs/en/platform/software/robotis_framework_packages/#robotis-controller
-[_`motion_module_tutorial/include/motion_module_tutorial/motion_module_tutorial.h`_]: /docs/en/popup/motion_module_tutorial.h/
-[_`motion_module_tutorial/src/motion_module_tutorial/motion_module_tutorial.cpp`_]: /docs/en/popup/motion_module_tutorial.cpp/
-[_`motion_module_tutorial/package.xml`_]: /docs/en/popup/motion_module_tutorial_package.xml/
-[_`motion_module_tutorial/CMakeLists.txt`_]: /docs/en/popup/motion_module_tutorial_CMakeLists.txt/
+[motion_module_tutorial/include/motion_module_tutorial/motion_module_tutorial.h]: /docs/en/popup/motion_module_tutorial.h/
+[motion_module_tutorial/src/motion_module_tutorial/motion_module_tutorial.cpp]: /docs/en/popup/motion_module_tutorial.cpp/
+[`motion_module_tutorial/package.xml`]: /docs/en/popup/motion_module_tutorial_package.xml/
+[`motion_module_tutorial/CMakeLists.txt`]: /docs/en/popup/motion_module_tutorial_CMakeLists.txt/
 
 
-[_`sensor_module_tutorial/include/sensor_module_tutorial/sensor_module_tutorial.h`_]: /docs/en/popup/sensor_module_tutorial.h/   
-[_`sensor_module_tutorial/src/sensor_module_tutorial/sensor_module_tutorial.cpp`_]: /docs/en/popup/sensor_module_tutorial.cpp/
+[`sensor_module_tutorial/include/sensor_module_tutorial/sensor_module_tutorial.h`]: /docs/en/popup/sensor_module_tutorial.h/   
+[`sensor_module_tutorial/src/sensor_module_tutorial/sensor_module_tutorial.cpp`]: /docs/en/popup/sensor_module_tutorial.cpp/
 [`sensor_module_tutorial/package.xml`]: /docs/en/popup/sensor_module_tutorial_package.xml/
 [`sensor_module_tutorial/CMakeLists.txt`]: /docs/en/popup/sensor_module_tutorial_CMakeLists.txt/
 
 
-[_`thormang3_manager/src/thormang3_manager.cpp`_]: /docs/en/popup/thormang3_manager.cpp/
+[`thormang3_manager/src/thormang3_manager.cpp`]: /docs/en/popup/thormang3_manager.cpp/
 
 
 [`catkin_make/CMakeLists.txt`]: http://wiki.ros.org/catkin/CMakeLists.txt

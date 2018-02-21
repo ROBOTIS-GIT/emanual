@@ -62,7 +62,7 @@ $ rosrun rosserial_python serial_node.py __name:=turtlebot3_core _port:=/dev/tty
 ```bash
 $ rostopic echo /imu
 
-header:
+
   seq: 179
   stamp:
     secs: 1486448047
