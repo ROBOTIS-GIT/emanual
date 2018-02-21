@@ -185,6 +185,37 @@ $(function() {
     	});
     });
     </script>
+    <script>
+      // var side_nav = document.getElementById("sidebar");
+      var offset = 105;
+    
+      window.onscroll = function () {
+        stickynav()
+      };
+      
+      function stickynav() {
+        if (window.pageYOffset > offset) {
+          sidebar__left.classList.add("sticky_sidebar");
+        }
+        else {
+          sidebar__left.classList.remove("sticky_sidebar");
+        }
+      }
+    </script>
+    <script>
+      var toggle = 0;
+      
+      function extendnav() {
+        if (toggle == 0) {
+          sidebar__left.classList.add("extend_sidebar");
+          toggle = 1;
+        }
+        else {
+          sidebar__left.classList.remove("extend_sidebar");
+          toggle = 0;
+        }
+      }
+    </script>
   </head>
 
   <body class="layout--splash">
@@ -224,20 +255,10 @@ $(function() {
         <!-- end of Google Translation -->  
         
         
-        <button class="switch_ko_en" id="switch_ko_en">
-          
-            
-              
-            
-          
-            
-              
-            
-          
-            
-              <a href="http://localhost:4000/docs/kr/" style="color: black;">Korean</a></button>
-            
-          
+        
+        
+        
+        <a href="http://localhost:4000/docs/kr/"><button class="switch_ko_en" id="switch_ko_en">Korean</button></a>
       </div>
       
       <input class="menu-btn" type="checkbox" id="menu-btn" />
