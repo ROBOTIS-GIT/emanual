@@ -28,7 +28,15 @@ This chapter explains installation and configuration of Robot Operating System(R
  - Installation(Desktop-Full)  
    > Reference : [ROS Installation - WIKI]  
      - For Linux Mint user  
-     - If you want to install ROS in Linux mint, you should type ```sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu xenial main" > /etc/apt/sources.list.d/ros-latest.list'``` instead of ```sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'``` in the step of [```Setup your sources.list```]
+     - If you want to install ROS in Linux mint, you should type 
+      ```
+      sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu xenial main" > /etc/apt/sources.list.d/ros-latest.list'
+      ```
+      instead of
+      ```
+      sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+      ```
+      in the step of [`Setup your sources.list`]
 
 
 ## SetUp
@@ -59,6 +67,7 @@ This chapter explains installation and configuration of Robot Operating System(R
      ```
 
      > Reference : In order to operate ROS in a network with multiple PCs, addresses of the ROS_MASTER_URI and the ROS_IP have to be replaced with the `core` PC's IP address and the remote PC's IP address respectively.  
+
      > Reference : If Hotspot is configured, use "10.42.0.1". Otherwise, use "localhost" instead of IP address.
        - ROS_MASTER_URI=http://localhost:11311
        - ROS_IP=localhost
@@ -102,15 +111,15 @@ This chapter explains installation and configuration of Robot Operating System(R
       ```
       $ sudo apt install v4l-utils
       ```  
-[std_msgs/Int32MultiArray]: /docs/en/popup/std_msgs_int32MultiArray_msg/
+[std_msgs/Int32MultiArray]: /docs/en/popup/std_msgs_Int32MultiArray_msg/
 
 
-[https://github.com/ROBOTIS-GIT/face_detection]:https://github.com/ROBOTIS-GIT/face_detection
-[What is ROS?]:http://www.ros.org/about-ros/
-[ROS Installation - WIKI]:http://wiki.ros.org/kinetic/Installation/Ubuntu
-[```Setup your sources.list```]:http://wiki.ros.org/kinetic/Installation/Ubuntu#Installation.2BAC8-Ubuntu.2BAC8-Sources.Setup_your_sources.list
-[http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment]:http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment
-[ROS Network Setup]:http://wiki.ros.org/ROS/NetworkSetup
+[https://github.com/ROBOTIS-GIT/face_detection]: https://github.com/ROBOTIS-GIT/face_detection
+[What is ROS?]: http://www.ros.org/about-ros/
+[ROS Installation - WIKI]: http://wiki.ros.org/kinetic/Installation/Ubuntu
+[`Setup your sources.list`]: http://wiki.ros.org/kinetic/Installation/Ubuntu#Installation.2BAC8-Ubuntu.2BAC8-Sources.Setup_your_sources.list
+[http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment]: http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment
+[ROS Network Setup]: http://wiki.ros.org/ROS/NetworkSetup
 [DynamixelSDK]: /docs/en/platform/software/robotis_framework_packages/#dynamixelsdk
 [ROBOTIS-Framerowk]: /docs/en/platform/software/robotis_framework_packages/#robotis-framework
 [ROBOTIS-Framerowk-msgs]: /docs/en/platform/software/robotis_framework_packages/#robotis-framework-msgs
@@ -120,6 +129,6 @@ This chapter explains installation and configuration of Robot Operating System(R
 [ROBOTIS-OP3-msgs]: /docs/en/platform/op3/robotis_ros_packages/#robotis-op3-msgs
 [ROBOTIS-OP3-Tools]: /docs/en/platform/op3/robotis_ros_packages/#robotis-op3-tools
 [ROBOTIS-OP3-Common]: /docs/en/platform/op3/robotis_ros_packages/#robotis-op3-common
-[http://wiki.ros.org/robot_upstart]:http://wiki.ros.org/robot_upstart
-[How to setup auto start]:OP3-How-to-kill-the-demo-program#31-start-demo-program-on-start
-[http://wiki.ros.org/usb_cam]:http://wiki.ros.org/usb_cam
+[http://wiki.ros.org/robot_upstart]: http://wiki.ros.org/robot_upstart
+[How to setup auto start]: OP3-How-to-kill-the-demo-program#31-start-demo-program-on-start
+[http://wiki.ros.org/usb_cam]: http://wiki.ros.org/usb_cam

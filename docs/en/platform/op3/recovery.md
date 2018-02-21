@@ -264,7 +264,7 @@ Clonezilla is used to recover ROBOTIS-OP3 with the image file in the provided US
 [ROBOTIS-OP3-msgs]: /docs/en/platform/op3/robotis_ros_packages/#robotis-op3-msgs
 [ROBOTIS-OP3-Tools]: /docs/en/platform/op3/robotis_ros_packages/#robotis-op3-tools
 [ROBOTIS-OP3-Common]: /docs/en/platform/op3/robotis_ros_packages/#robotis-op3-common
-[ROS Environment and Network Settings]: /docs/en/platform/common/#op3-robot-operating-system
+[ROS Environment and Network Settings]: /docs/en/platform/common/op3_robot_operating_system/#op3-robot-operating-system
 [Setting for automatic startup]: /docs/en/platform/op3/getting_started/#how-to-kill-the-demo-program
 [e-manual]: /docs/en/platform/op/maintenance/#clonezilla-recovery
 
