@@ -1,16 +1,11 @@
 ---
-layout: splash
+layout: archive
 lang: en
 ref: sensor_parts
 permalink: /docs/en/parts/sensor/
-header:
-  overlay_color:
-  overlay_image:
-  cta_label:
-  cta_url:
-  caption:
-  intro:
-    - excerpt: 'Parts-Sensor'
+sidebar:
+  title: Parts-Sensor
+  nav: ""
 ---
 
 # [IR Sensor(IRSS-10)](#ir-sensorirss-10)

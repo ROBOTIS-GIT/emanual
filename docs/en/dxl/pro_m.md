@@ -1,16 +1,11 @@
 ---
-layout: splash
+layout: archive
 lang: en
 ref: pro_m-series
 permalink: /docs/en/dxl/pro_m/
-header:
-  overlay_color:
-  overlay_image:
-  cta_label:
-  cta_url:
-  caption:
-  intro:
-    - excerpt: 'DYNAMIXEL PRO-M Series'
+sidebar:
+  title: DYNAMIXEL PRO-M Series
+  nav: ""
 ---
 
 

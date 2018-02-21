@@ -115,9 +115,6 @@
 <loc>http://emanual.robotis.com/docs/en/popup/SyncWriteItem.msg/</loc>
 </url>
 <url>
-<loc>http://emanual.robotis.com/docs/en/platform/software/tutorials/</loc>
-</url>
-<url>
 <loc>http://emanual.robotis.com/docs/en/popup/WalkingJointStatesStamped.msg/</loc>
 </url>
 <url>
@@ -1862,6 +1859,9 @@
 </url>
 <url>
 <loc>http://emanual.robotis.com/docs/en/platform/op3/tutorials/</loc>
+</url>
+<url>
+<loc>http://emanual.robotis.com/docs/en/platform/software/tutorials/</loc>
 </url>
 <url>
 <loc>http://emanual.robotis.com/docs/en/parts/interface/u2d2/</loc>

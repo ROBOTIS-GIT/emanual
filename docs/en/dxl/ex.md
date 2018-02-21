@@ -1,16 +1,11 @@
 ---
-layout: splash
+layout: archive
 lang: en
 ref: ex-series
 permalink: /docs/en/dxl/ex/
-header:
-  overlay_color:
-  overlay_image:
-  cta_label:
-  cta_url:
-  caption:
-  intro:
-    - excerpt: 'DYNAMIXEL EX Series'
+sidebar:
+  title: DYNAMIXEL EX Series
+  nav: ""
 ---
 
 

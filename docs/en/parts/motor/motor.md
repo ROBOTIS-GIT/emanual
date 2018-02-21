@@ -1,16 +1,11 @@
 ---
-layout: splash
+layout: archive
 lang: en
 ref: motor_parts
 permalink: /docs/en/parts/motor/
-header:
-  overlay_color:
-  overlay_image:
-  cta_label:
-  cta_url:
-  caption:
-  intro:
-    - excerpt: 'Parts-Motor'
+sidebar:
+  title: Parts-Motor
+  nav: ""
 ---
 
 # [Geared Motor(GM-10A)](#geared-motorgm-10a)
