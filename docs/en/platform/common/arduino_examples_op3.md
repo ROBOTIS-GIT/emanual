@@ -30,11 +30,7 @@ To update OpenCR's firmware, open the front cover of OP3 and connect USB to PC a
 
 After connecting USB, select Tools-> Board-> OpenCR Board in Arduino IDE.
 
-![](http://turtlebot3.robotis.com/en/latest/_images/ide5.png)
-
 Change Tools-> Port to the port to which the board is connected.
-
-![](https://camo.githubusercontent.com/718a761491631c1b84dbcfd3c7d34bcedff8e94c/687474703a2f2f747572746c65626f74332e72656164746865646f63732e696f2f656e2f6c61746573742f5f696d616765732f696465362e706e67)
 
 In the Arduino IDE Examples, select the firmware for OP3.
 

@@ -13,6 +13,7 @@ layout: popup
  uint8 LEFT_FOOT_SWING  = 1 # Left foot constant
  uint8 RIGHT_FOOT_SWING = 2 # Right foot constant
  uint8 STANDING         = 3 # Standing constant
+ 
  ```
 
 - Description
@@ -21,6 +22,3 @@ layout: popup
 &emsp;&emsp; foot step data      
 * `moving_foot`    
 &emsp;&emsp; swing leg   
-
-<br>
-[&lt;&lt; Back](op3_online_walking_module_msgs.md)

@@ -26,7 +26,7 @@ A service that can modify joint feedback gain.
 &emsp;&emsp; The gains are gradually updated based on configured time.
 &emsp;&emsp; 0 or negative value will update the joint feedback gain immediately.
 
-* `JointFeedBackGain feedback_gain`([thormang3_walking_module_msgs/JointFeedBackGain](JointFeedBackGain.msg))
+* `JointFeedBackGain feedback_gain`([thormang3_walking_module_msgs/JointFeedBackGain]{: .popup})
 &emsp;&emsp; The joint feedback gain to be applied
 
   - Response
@@ -40,5 +40,6 @@ A service that can modify joint feedback gain.
 | PREV_REQUEST_IS_NOT_FINISHED   | 0x20  | The previous request is not finished.         |
 
 
-<br>
-[[&lt;&lt; Back|thormang3_walking_module_msgs]]
+
+
+[thormang3_walking_module_msgs/JointFeedBackGain]: /docs/en/popup/JointFeedBackGain.msg/

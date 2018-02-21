@@ -22,5 +22,5 @@ If `time` is set to 0, the moving speed is automatically configured proportional
 * `time`
 &emsp;&emsp; movement time to reach the target pose
 
-<br>
-[[&lt;&lt; Back|thormang3_manipulation_module_msgs]]
+
+

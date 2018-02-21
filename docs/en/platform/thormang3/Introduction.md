@@ -90,12 +90,5 @@ ROBOTIS is not responsible for any damages or losses resulting from any accident
 - Gears must be replaced after long excessive use.
 
 
-[Install Ubuntu Desktop]: http://www.ubuntu.com/download/desktop/install-ubuntu-desktop
-[DIR-806A Product Manual]: ftp://ftp.dlink.ru/pub/Router/DIR-806A/Data_sh/
-[Install ROS]: http://wiki.ros.org/kinetic/Installation/Ubuntu
-[Environment Setting Reference]: http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment
-[ROS Network Setup Reference]: http://wiki.ros.org/ROS/NetworkSetup
-[sbpl install instruction]: https://github.com/sbpl/sbpl
-[Link]: http://techtidings.blogspot.kr/2012/01/problem-with-libglso-on-64-bit-ubuntu.html
 [thormang3_stp.zip]:http://support.robotis.com/en/baggage_files/thormang3/thormang3_stp.zip
 [sim_for_thormang3_stl.zip]:http://support.robotis.com/en/baggage_files/thormang3/sim_for_thormang3_stl.zip

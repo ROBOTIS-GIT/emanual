@@ -16,7 +16,7 @@ layout: popup
  ```
 
 - Description
-This message is used when creating [GetPresentJointOffsetData.srv](GetPresentJointOffsetData.srv).
+This message is used when creating [GetPresentJointOffsetData.srv]{: .popup}.
 
 * ` string  joint_name`
 &emsp;&emsp; joint name
@@ -33,5 +33,4 @@ This message is used when creating [GetPresentJointOffsetData.srv](GetPresentJoi
 * ` int32   d_gain`
 &emsp;&emsp; D Gain of the joint Position(Not used for THORMANG3)
 
-<br>
-[[&lt;&lt; Back|thormang3_offset_tuner_msgs]]
+[GetPresentJointOffsetData.srv]: /docs/en/popup/GetPresentJointOffsetData.srv/

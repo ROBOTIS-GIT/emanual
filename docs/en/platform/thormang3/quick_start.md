@@ -276,12 +276,3 @@ ROBOTIS recommends users to connect with THROMANG3 via SSH client.
 6. Cover the case with the sponge and close the lid.
 
     ![](/assets/images/platform/thormang3/thormang3_036.jpg)
-
-
-[Install Ubuntu Desktop]: http://www.ubuntu.com/download/desktop/install-ubuntu-desktop
-[DIR-806A Product Manual]: ftp://ftp.dlink.ru/pub/Router/DIR-806A/Data_sh/
-[Install ROS]: http://wiki.ros.org/kinetic/Installation/Ubuntu
-[Environment Setting Reference]: http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment
-[ROS Network Setup Reference]: http://wiki.ros.org/ROS/NetworkSetup
-[sbpl install instruction]: https://github.com/sbpl/sbpl
-[Link]: http://techtidings.blogspot.kr/2012/01/problem-with-libglso-on-64-bit-ubuntu.html

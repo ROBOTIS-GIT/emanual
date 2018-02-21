@@ -22,7 +22,7 @@ A service that can modify Balance Algorithm Parameter.
 &emsp;&emsp; The Parameter is gradually updated based on configured time.
 &emsp;&emsp; 0 or negative value will update the Balance Parameter immediately.
 
-* `DampingBalanceParam balance_param`([thormang3_walking_module_msgs/DampingBalanceParam](DampingBalanceParam.msg))
+* `DampingBalanceParam balance_param`([thormang3_walking_module_msgs/DampingBalanceParam]{: .popup})
 &emsp;&emsp; The Balance Parameter to be applied
 
   - Response
@@ -37,5 +37,6 @@ A service that can modify Balance Algorithm Parameter.
 | TIME_CONST_IS_ZERO_OR_NEGATIVE | 0x40  | One or some time constant is zero or negative |
 
 
-<br>
-[[&lt;&lt; Back|thormang3_walking_module_msgs]]
+
+
+[thormang3_walking_module_msgs/DampingBalanceParam]: /docs/en/popup/DampingBalanceParam.msg/

@@ -15,14 +15,14 @@ layout: popup
 
 
 - Description
-A service to add StepData to [thormang3_walking_module](thormang3_walking_module).
+A service to add StepData to [thormang3_walking_module].
 
   - Request
 * `bool       auto_start`
 &emsp;&emsp; A flag to initiate walking after adding StepData.
 * `bool       remove_existing_step_data`
 &emsp;&emsp; A flag to delete existing StepData.
-* `StepData[] step_data_array`([thormang3_walking_module_msgs/StepData](StepData.msg))
+* `StepData[] step_data_array`([thormang3_walking_module_msgs/StepData])
 &emsp;&emsp; An array of StepData to be added
 
 &emsp;
@@ -39,5 +39,5 @@ A service to add StepData to [thormang3_walking_module](thormang3_walking_module
 | PROBLEM_IN_TIME_DATA       | 0x08  | There is some problem in "Step Position Data". |
 | ROBOT_IS_WALKING_NOW       | 0x400 | The Thormang3 is walking now.                  |
 
-<br>
-[[&lt;&lt; Back|thormang3_walking_module_msgs]]
+[thormang3_walking_module] : /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_walking_module
+[thormang3_walking_module_msgs/StepData]: /docs/en/popup/StepData.msg/
