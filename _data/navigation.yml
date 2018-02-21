@@ -271,8 +271,6 @@ main:
       - title: "ROBOTIS STEM"
         titlekr: "STEM 키트"
         url: /edu/bioloid/stem/
-      - titlekr: "STEM 아카데미"
-        url: /edu/bioloid/stem_academy/
       - title: "ROBOTIS PREMIUM"
         titlekr: "프리미엄"
         url: /edu/bioloid/premium/
@@ -9118,19 +9116,19 @@ op3:
       url: /platform/op3/getting_started/#how-to-kill-the-demo-program
     - title: "How to Restart the demo program"
       url: /platform/op3/getting_started/#how-to-restart-the-demo-program
-  - title: "Robotis ROS Modules"
-    url: /platform/op3/robotis_ros_modules/#robotis-ros-packages
+  - title: "Robotis ROS Packages"
+    url: /platform/op3/robotis_ros_packages/#robotis-ros-packages
     children:
     - title: "ROBOTIS OP3"
-      url: /platform/op3/robotis_ros_modules/#robotis-op3
+      url: /platform/op3/robotis_ros_packages/#robotis-op3
     - title: "ROBOTIS OP3 msgs"
-      url: /platform/op3/robotis_ros_modules/#robotis-op3-msgs
+      url: /platform/op3/robotis_ros_packages/#robotis-op3-msgs
     - title: "ROBOTIS OP3 Demo"
-      url: /platform/op3/robotis_ros_modules/#robotis-op3-Demo
+      url: /platform/op3/robotis_ros_packages/#robotis-op3-Demo
     - title: "ROBOTIS OP3 Common"
-      url: /platform/op3/robotis_ros_modules/#robotis-op3-common
+      url: /platform/op3/robotis_ros_packages/#robotis-op3-common
     - title: "ROBOTIS OP3 Tools"
-      url: /platform/op3/robotis_ros_modules/#robotis-op3-tools
+      url: /platform/op3/robotis_ros_packages/#robotis-op3-tools
   - title: "Tutorials"
     url: /platform/op3/tutorials/#tutorials
     children:
@@ -9178,6 +9176,48 @@ op3:
       url: /platform/op3/recovery/#manual-installation
     - title: "Recovery of ROBOTIS-OP3"
       url: /platform/op3/recovery/#recovery-of-robotis-op3
+
+robothand_rx28:
+  - titlekr: "개요"
+    urlkr: /platform/robothand_rx28/#개요
+  - titlekr: "주요 사양"
+    urlkr: /platform/robothand_rx28/#주요-사양
+  - titlekr: "시작하기"
+    urlkr: /platform/robothand_rx28/#시작하기
+    children:
+    - titlekr: "제품 구성"
+      urlkr: /platform/robothand_rx28/#제품-구성
+    - titlekr: "설치"
+      urlkr: /platform/robothand_rx28/#설치
+    - titlekr: "작동"
+      urlkr: /platform/robothand_rx28/#작동
+  - titlekr: "로봇핸드 프로그래밍"
+    urlkr: /platform/robothand_rx28/#로봇핸드-프로그래밍
+  - titlekr: "유용한 정보"
+    urlkr: /platform/robothand_rx28/#유용한-정보
+  - titlekr: "다운로드"
+    urlkr: /platform/robothand_rx28/#다운로드
+  
+robothand_mx28:
+  - titlekr: "개요"
+    urlkr: /platform/robothand_mx28/#개요
+  - titlekr: "주요 사양"
+    urlkr: /platform/robothand_mx28/#주요-사양
+  - titlekr: "시작하기"
+    urlkr: /platform/robothand_mx28/#시작하기
+    children:
+    - titlekr: "제품 구성"
+      urlkr: /platform/robothand_mx28/#제품-구성
+    - titlekr: "설치"
+      urlkr: /platform/robothand_mx28/#설치
+    - titlekr: "작동"
+      urlkr: /platform/robothand_mx28/#작동
+  - titlekr: "로봇핸드 프로그래밍"
+    urlkr: /platform/robothand_mx28/#로봇핸드-프로그래밍
+  - titlekr: "유용한 정보"
+    urlkr: /platform/robothand_mx28/#유용한-정보
+  - titlekr: "다운로드"
+    urlkr: /platform/robothand_mx28/#다운로드
 
 #THORMANG3
 thormang3:

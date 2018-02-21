@@ -33,15 +33,15 @@ sidebar:
 
 ## 사용 예시
 
-![img](/assets/images/parts/communication/bt-410_dongle_product.jpg)
+![img](/assets/images/parts/communication/bt-410_dongle_01.png)
 
 `주의` 제어기의 전원이 반드시 꺼져있는 상태에서 제품을 연결해주세요. 전원이 켜져있는 상태에서 연결시, 오동작 및 고장을 일으킬 수 있습니다. 
-{: .notice-warning}
+{: .notice--warning}
 
 
 # [제품 사양](#제품-사양)
 
-|     항목      |                      설명                      |
+|     항목      |                      세부 내용                      |
 |:-------------:|:----------------------------------------------:|
 |     무게      |                      7.5g                      |
 |     크기      |             50.5mm x 20mm x 10.5mm             |
