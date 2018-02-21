@@ -15,7 +15,7 @@ layout: popup
 This service acquires parameters that are applied on op3_online_walking_module.  
 
   - Request  
-* `PreviewRequest req`([op3_walking_module_msgs/PreviewRequest]()   
+* `PreviewRequest req`([op3_walking_module_msgs/PreviewRequest])
 &emsp;&emsp; For details, refer to [PreviewRequest.msg].  
 
   - Response

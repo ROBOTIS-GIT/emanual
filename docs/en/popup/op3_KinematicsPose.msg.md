@@ -19,6 +19,3 @@ layout: popup
 &emsp;&emsp; movement time   
 * `pose`    
 &emsp;&emsp; target pose   
-
-
-[
