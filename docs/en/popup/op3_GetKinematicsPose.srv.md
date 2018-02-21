@@ -5,7 +5,8 @@ layout: popup
 - File: `online_walking_module_msgs/GetKinematicsPose.srv`
 
 - Message Definition
- ```
+
+ ```c
  string    name
  ---
  op3_online_walking_module_msgs/KinematicsPose pose
@@ -15,11 +16,11 @@ layout: popup
 This service acquires parameters that are applied on op3_online_walking_module.  
 
   - Request  
-* ` string    name`   
+    * ` string    name`   
 &emsp;&emsp; group name (such as body, left_foot, right_foot)
 
   - Response
-* `KinematicsPose pose`([op3_online_walking_module_msgs/KinematicsPose])     
+    * `KinematicsPose pose`([op3_online_walking_module_msgs/KinematicsPose])     
 &emsp;&emsp; For details, refer to [KinematicsPose.msg].
 
 

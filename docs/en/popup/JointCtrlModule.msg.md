@@ -13,8 +13,8 @@ layout: popup
 - Description
  The message designates motion modules that controls specific joints.
 
-* `joint_name`
+    * `joint_name`
 &emsp;&emsp; Name of the joints to be designated with motion modules.
 
-* `module_name`
+    * `module_name`
 &emsp;&emsp; Name of the motion module to control each joint.

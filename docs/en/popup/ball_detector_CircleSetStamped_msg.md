@@ -4,7 +4,7 @@ layout: popup
 
 - File : `ball_detector/circleSetStamped`
 
- ```
+ ```c
   # This represents the set of detected circles
 
   #timestamp and frame id of the image frame

@@ -6,7 +6,7 @@ layout: popup
 
 - Message Definition
 
- ```
+ ```c
    int32 LEFT_FOOT  = 0 # Left foot constant
    int32 RIGHT_FOOT = 1 # Right foot constant
 
@@ -17,7 +17,7 @@ layout: popup
 
 - Description
 
-* `moving_foot`   
+    * `moving_foot`   
 &emsp;&emsp; swing foot name      
-* `data`    
+    * `data`    
 &emsp;&emsp; target pose   

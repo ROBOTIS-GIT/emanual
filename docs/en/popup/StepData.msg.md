@@ -5,13 +5,13 @@ layout: popup
 - File: `thormang3_walking_module_msgs/StepData.msg`
 
 - Message Definition
- ```
+ ```c
  StepPositionData position_data
  StepTimeData     time_data
  ```
 
 - Description
-The format of StepData used in the [thormang3_walking_module] .
+The format of StepData used in the [thormang3_walking_module].
 Users can define most parameters required for the StepData.
 &emsp;
 

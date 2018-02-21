@@ -14,10 +14,10 @@ layout: popup
 A service to start walking THORMANG3 with existing StepData.
 
   - Request
-* `empty`
+    * `empty`
 
   - Response
-* ` int32 result`
+    * ` int32 result`
 &emsp;&emsp; Result of the "WalkingStart" Service.
 
 | Name                       | Value | Description                                  |
@@ -26,6 +26,3 @@ A service to start walking THORMANG3 with existing StepData.
 | NOT_ENABLED_WALKING_MODULE | 0x02  | The thormang3_walking_module is not enabled. |
 | NO_STEP_DATA               | 0x10  | There is no step data.                       |
 | ROBOT_IS_WALKING_NOW       | 0x400 | The Thormang3 is walking now.                |
-
-
-

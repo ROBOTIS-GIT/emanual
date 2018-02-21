@@ -5,7 +5,7 @@ layout: popup
 - File: `thormang3_walking_module_msgs/StepPositionData.msg`
 
 - Message Definition
- ```
+ ```c
  int16       moving_foot
  int16       LFootMove = 1 # Left foot constant
  int16       RFootMove = 2 # Right foot constant

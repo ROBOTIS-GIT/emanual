@@ -6,7 +6,7 @@ layout: popup
 
 - Message Definition
 
- ```
+ ```c
  ---
  StepData reference_step_data
  ```
@@ -18,14 +18,14 @@ System time and pose of current [thormang3_walking_module] are provided in StepD
 &emsp;
 
   - Request
-* `empty`
+    * `empty`
 &emsp;&emsp;
 
   - Response
-* `StepData reference_step_data`([thormang3_walking_module_msgs/StepData])
+    * `StepData reference_step_data`([thormang3_walking_module_msgs/StepData])
 &emsp;&emsp; Reference Step Data
 
 
 
-[thormang3_walking_module] : /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_walking_module
+[thormang3_walking_module]: /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_walking_module
 [thormang3_walking_module_msgs/StepData]: /docs/en/popup/StepData.msg/

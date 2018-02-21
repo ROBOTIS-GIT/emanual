@@ -5,7 +5,7 @@ layout: popup
 - File: `op3_walking_module_msgs/GetPreviewMatrix.srv`
 
 - Message Definition
- ```
+ ```c
  op3_online_walking_module_msgs/PreviewRequest req
  ---
  op3_online_walking_module_msgs/PreviewResponse res
@@ -15,11 +15,11 @@ layout: popup
 This service acquires parameters that are applied on op3_online_walking_module.  
 
   - Request  
-* `PreviewRequest req`([op3_walking_module_msgs/PreviewRequest])
+    * `PreviewRequest req`([op3_walking_module_msgs/PreviewRequest])
 &emsp;&emsp; For details, refer to [PreviewRequest.msg].  
 
   - Response
-* `PreviewResponse res`([op3_walking_module_msgs/PreviewResponse])   
+    * `PreviewResponse res`([op3_walking_module_msgs/PreviewResponse])   
 &emsp;&emsp; For details, refer to [PreviewResponse.msg].  
 
 

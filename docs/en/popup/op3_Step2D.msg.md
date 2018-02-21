@@ -6,7 +6,7 @@ layout: popup
 
 - Message Definition
 
- ```
+ ```c
    geometry_msgs/Pose2D step2d   # step pose as relative offset to last leg
 
    uint8 moving_foot   
@@ -19,7 +19,7 @@ layout: popup
 
 - Description
 
-* `step2d`   
+    * `step2d`   
 &emsp;&emsp; foot step data      
-* `moving_foot`    
+    * `moving_foot`    
 &emsp;&emsp; swing leg   

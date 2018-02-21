@@ -5,7 +5,8 @@ layout: popup
 - File: `thormang3_walking_module_msgs/DampingBalanceParam.msg`
 
 - Message Definition
-```
+
+```c
    float32 cob_x_offset_m
    float32 cob_y_offset_m
 
