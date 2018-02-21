@@ -9108,7 +9108,7 @@ op3:
       - title: "GPIO Pin Assignments"
         url: /platform/op3/quick_start/#gpio-pin-assignments
   - title: "Getting Started"
-    url: /platform/op3/getting_started/#getting_started
+    url: /platform/op3/getting_started/#getting-started
     children:
     - title: "How to connect"
       url: /platform/op3/getting_started/#how-to-connect
@@ -9782,13 +9782,13 @@ turtlebot3:
     - title: "LDS for TurtleBot3"
       url: /platform/turtlebot3/appendix_lds_01/#lds-for-turtlebot3
     - title: "User Guide (for ROS)"
-      url: /platform/turtlebot3/appendix_lds_01/#user-guide-ros
+      url: /platform/turtlebot3/appendix_lds_01/#user-guide-for-ros
     - title: "User Guide (for Driver)"
-      url: /platform/turtlebot3/appendix_lds_01/#user-guide-driver
+      url: /platform/turtlebot3/appendix_lds_01/#user-guide-for-driver
     - title: "User Guide (for GUI)"
-      url: /platform/turtlebot3/appendix_lds_01/#user-guide-gui
+      url: /platform/turtlebot3/appendix_lds_01/#user-guide-for-gui
     - title: "User Guide (for Embedded Board)"
-      url: /platform/turtlebot3/appendix_lds_01/#user-guide-embedded-board
+      url: /platform/turtlebot3/appendix_lds_01/#user-guide-for-embedded-board
   - title: "Appendix #RealSense™"
     url: /platform/turtlebot3/appendix_realsense/#appendix-realsense
     children:

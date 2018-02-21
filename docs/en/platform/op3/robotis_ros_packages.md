@@ -347,7 +347,7 @@ Refer to the below link to create a new robot manager.
 
 #### Getting started  
 ##### Download & Build  
- > Reference : [Installation ROBOTIS ROS Package]
+ > Reference : [Installing ROBOTIS ROS Package]
 
 ##### Run  
 Execute the program with a `.launch` file in order to load ROS parameters.  
