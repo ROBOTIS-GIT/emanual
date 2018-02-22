@@ -15,12 +15,9 @@ layout: popup
 A message to move to a specific pose in the Task Space.
 If `time` is set to 0, the moving speed is automatically configured proportional to the moving distance.
 
-* `name`
+    * `name`
 &emsp;&emsp; target kinematics group
-* `pose`
+    * `pose`
 &emsp;&emsp; target Pose
-* `time`
+    * `time`
 &emsp;&emsp; movement time to reach the target pose
-
-
-

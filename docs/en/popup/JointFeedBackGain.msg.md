@@ -6,7 +6,7 @@ layout: popup
 
 - Message Definition
 
-  ```
+  ```c
   float32 r_leg_hip_y_p_gain
   float32 r_leg_hip_r_p_gain
   float32 r_leg_hip_p_p_gain

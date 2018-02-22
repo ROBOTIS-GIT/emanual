@@ -5,7 +5,7 @@ layout: popup
 - File: `op3_walking_module_msgs/WalkingParam.msg`]
 - Message Definition
 
- ```
+ ```c
  ####### walking init pose #######
  float32 init_x_offset
  float32 init_y_offset

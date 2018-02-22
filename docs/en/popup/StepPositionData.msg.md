@@ -5,7 +5,7 @@ layout: popup
 - File: `thormang3_walking_module_msgs/StepPositionData.msg`
 
 - Message Definition
- ```
+ ```c
  int16       moving_foot
  int16       LFootMove = 1 # Left foot constant
  int16       RFootMove = 2 # Right foot constant
@@ -43,14 +43,14 @@ Position related Step Data Parameters
 * ` float32     torso_yaw_angle_rad`
 &emsp;&emsp; ~~Waist target angle for upcoming step. Unit in rad~~ (Not supported. This parameter is not used.)
 
-* `PoseXYZRPY  left_foot_pose`([thormang3_walking_module_msgs/PoseXYZRPY]{: .popup})
+* `PoseXYZRPY  left_foot_pose`([thormang3_walking_module_msgs/PoseXYZRPY])
 &emsp;&emsp; Target pose of the left foot for upcoming step. Unit in meter, rad.
 
-* `PoseXYZRPY  right_foot_pose`([thormang3_walking_module_msgs/PoseXYZRPY]{: .popup})
+* `PoseXYZRPY  right_foot_pose`([thormang3_walking_module_msgs/PoseXYZRPY])
 &emsp;&emsp; Target pose of the right foot for upcoming step. Unit in meter, rad.
 
-* `PoseZRPY    body_pose` ([thormang3_walking_module_msgs/PoseZRPY]{: .popup})
+* `PoseZRPY    body_pose` ([thormang3_walking_module_msgs/PoseZRPY])
 &emsp;&emsp; The target COB for upcoming step. Unit in meter, rad.
 
-[thormang3_walking_module_msgs/PoseXYZRPY]: /docs/en/popup/PoseXYZRPY.msg/
-[thormang3_walking_module_msgs/PoseZRPY]: /docs/en/popup/PoseZRPY.msg/
+[thormang3_walking_module_msgs/PoseXYZRPY]: /docs/en/platform/msgs/PoseXYZRPY_msg/#posexyzrpy_msg
+[thormang3_walking_module_msgs/PoseZRPY]: /docs/en/platform/msgs/PoseZRPY_msg/#posezrpy-msg

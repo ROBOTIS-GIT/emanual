@@ -17,7 +17,7 @@ layout: popup
 - Description
 Command with parameters to create stepdata.
 
-* ` string   command`
+    * ` string   command`
 &emsp;&emsp; direction of walking
 &emsp;&emsp; - "forward"    : forward walking
 &emsp;&emsp; - "backward"   : backward walking
@@ -26,11 +26,11 @@ Command with parameters to create stepdata.
 &emsp;&emsp; - "left"       : leftward walking
 &emsp;&emsp; - "right"      : rightward walking
 
-* ` int32    step_num`
+    * ` int32    step_num`
 &emsp;&emsp; Number of steps
-* ` float64  step_length`
+    * ` float64  step_length`
 &emsp;&emsp; Step length of forward/backward walking(Unit in meter)
-* ` float64  side_step_length`
+    * ` float64  side_step_length`
 &emsp;&emsp; Step length of rightward/leftward walking(Unit in meter)
-* ` float64  step_angle_rad`
+    * ` float64  step_angle_rad`
 &emsp;&emsp; Step length of turn right/left walking(Unit in rad)
