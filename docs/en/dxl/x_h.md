@@ -1,16 +1,11 @@
 ---
-layout: splash
+layout: archive
 lang: en
 ref: xh-series
 permalink: /docs/en/dxl/x_h/
-header:
-  overlay_color:
-  overlay_image:
-  cta_label:
-  cta_url:
-  caption:
-  intro:
-    - excerpt: 'DYNAMIXEL XH Series'
+sidebar:
+  title: DYNAMIXEL XH Series
+  nav: ""
 ---
 
 

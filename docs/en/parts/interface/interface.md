@@ -1,16 +1,11 @@
 ---
-layout: splash
+layout: archive
 lang: en
 ref: interface_parts
 permalink: /docs/en/parts/interface/
-header:
-  overlay_color:
-  overlay_image:
-  cta_label:
-  cta_url:
-  caption:
-  intro:
-    - excerpt: 'Parts-Interface'
+sidebar:
+  title: Parts-Interface
+  nav: ""
 ---
 
 # [USB Downloader(LN-101)](#usb-downloaderln-101)
