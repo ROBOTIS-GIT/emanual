@@ -104,3 +104,58 @@ Then, you can use SSH following command in [Remote PC].
 ```
 
 ![](/assets/images/platform/turtlebot3/faq/connection_ssh.png)
+
+
+**Timesync between TurtleBot3 and RemotePC**
+----------------------------------------------------
+
+First, you have to install ``ntp``
+
+[TurtleBot] and [RemotePC]
+
+
+``` bash
+  sudo apt-get install ntp
+```
+
+Second, create script file
+
+[TurtleBot] and [RemotePC]
+
+
+``` bash
+  $ nano ~/timesync
+```
+
+Third, Copy and paste below texts. (xxx.xxx.xx.xx : IP)
+
+[TurtleBot] and [RemotePC]
+
+
+``` bash
+  #! /bin/sh
+  sudo date --set='-2 secs'
+  sudo ntpdate xxx.xxx.xx.xx
+  sudo hwclock -w
+  {RemotePC's name}(xxx.xxx.xx.xx)
+```
+
+Forth, Add permission to the script file
+
+[TurtleBot] and [RemotePC]
+
+
+``` bash 
+  $ sudo chmod +x timesync
+```
+
+Fifth, Run the scrip file
+
+[TurtleBot] and [RemotePC]
+
+
+``` bash 
+  $ sudo service ntp stop
+  $ ~/timesync
+```
+
