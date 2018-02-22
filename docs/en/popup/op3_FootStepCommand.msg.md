@@ -32,5 +32,5 @@ layout: popup
 * `step_angle`    
 &emsp;&emsp; walking angle per one rotation step       
 
-<br>
-[&lt;&lt; Back](op3_online_walking_module_msgs.md)
+
+

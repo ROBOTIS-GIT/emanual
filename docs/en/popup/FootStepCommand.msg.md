@@ -34,7 +34,3 @@ Command with parameters to create stepdata.
 &emsp;&emsp; Step length of rightward/leftward walking(Unit in meter)
 * ` float64  step_angle_rad`
 &emsp;&emsp; Step length of turn right/left walking(Unit in rad)
-
-
-<br>
-[&lt;&lt; Back](thormang3_foot_step_generator)

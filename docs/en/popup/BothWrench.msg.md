@@ -12,7 +12,7 @@ layout: popup
  ```
 
 - Description
-This message is used when publishing values to calibrate FT sensors in the [thormang3_feet_ft_module](thormang3_feet_ft_module).
+This message is used when publishing values to calibrate FT sensors in the [thormang3_feet_ft_module].
 
 * ` string name`
 &emsp;&emsp; name
@@ -23,5 +23,5 @@ This message is used when publishing values to calibrate FT sensors in the [thor
 * `geometry_msgs/Wrench left`
 &emsp;&emsp; average output from the force torque sensor on the left foot
 
-<br>
-[[&lt;&lt; Back|thormang3_feet_ft_module_msgs]]
+
+[thormang3_feet_ft_module]: /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3-feet-ft-module

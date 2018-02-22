@@ -12,9 +12,8 @@ layout: popup
 - Description
 Planar StepData defined by the User.
 
-* `Step2D[] footsteps_2d`([thormang3_foot_step_generator::Step2D](Step2D.msg))
+* `Step2D[] footsteps_2d`([thormang3_foot_step_generator/Step2D]{: .popup})
 &emsp;&emsp; Planar StepData defined by the User.
 
 
-<br>
-[&lt;&lt; Back](thormang3_foot_step_generator)
+[thormang3_foot_step_generator/Step2D]: /docs/en/popup/Step2D.msg/

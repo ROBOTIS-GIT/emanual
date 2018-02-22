@@ -31,5 +31,5 @@ layout: popup
 * `P`   
 &emsp;&emsp; Riccati Equation's solution P      
 
-<br>
-[&lt;&lt; Back](op3_online_walking_module_msgs.md)
+
+

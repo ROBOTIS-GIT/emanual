@@ -24,7 +24,7 @@ Please refer to the below link for more information about the Dynamixel SDK.
 
 ## [Robotis Framework](#robotis-framework)
 
-### [robotis_controller](#robotis_controller)
+### [robotis_controller](#robotis-controller)
 
 #### Overview
 
@@ -82,7 +82,7 @@ Please refer to the below link to create the Robot Manager that uses `robotis_co
 `/robotis/get_present_joint_ctrl_modules` ([robotis_controller_msgs/GetJointModule]{: .popup})  
 &emsp;&emsp; The service to get the configuration of motion module that controls each joint.  
 
-### [robotis_device](#robotis_device)
+### [robotis_device](#robotis-device)
 
 #### Overview
 This is the package that manages device information of ROBOTIS robots. This package is used when reading device information with the robot information file from the [`robotis_controller`] package.
@@ -171,7 +171,7 @@ Values can be deleted for unused variables. However, depending on the control me
 - `max value` : Maximum data value of the Item.
 - `signed` : Y for signed Item data, N for unsigned Item data.
 
-### [robotis_framework_common](#robotis_framework_common)
+### [robotis_framework_common](#robotis-framework-common)
 
 #### Overview
 The package contains commonly used Headers for the ROBOTIS Framework.
@@ -263,8 +263,8 @@ This package defines Messages and Service that are used in the [robotis_controll
 [ROBOTIS Dynamixel SDK Documents]: http://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_sdk/overview/
 
 
-[`robotis_controller`]: /docs/en/platform/software/robotis_framework_packages/#robotis_controller
-[robotis_controller]:  /docs/en/platform/software/robotis_framework_packages/#robotis_controller
+[`robotis_controller`]: /docs/en/platform/software/robotis_framework_packages/#robotis-controller
+[robotis_controller]:  /docs/en/platform/software/robotis_framework_packages/#robotis-controller
 
 [JointCtrlModule.msg]: /docs/en/popup/JointCtrlModule.msg/
 [StatusMsg.msg]: /docs/en/popup/StatusMsg.msg/

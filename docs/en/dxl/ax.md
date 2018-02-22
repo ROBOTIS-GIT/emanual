@@ -1,16 +1,11 @@
 ---
-layout: splash
+layout: archive
 lang: en
 ref: ax-series
 permalink: /docs/en/dxl/ax/
-header:
-  overlay_color:
-  overlay_image:
-  cta_label:
-  cta_url:
-  caption:
-  intro:
-    - excerpt: 'DYNAMIXEL AX Series'
+sidebar:
+  title: DYNAMIXEL AX Series
+  nav: ""
 ---
 
 

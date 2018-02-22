@@ -206,7 +206,7 @@ manipulator base module
   > * arguments : start joint id, end joint id, target position, target orientation, max iteration, calculation error
   > * return value : true or false
 
-### [manipulator_manager](#manipulator_manager)
+### [manipulator_manager](#manipulator-manager)
 
 #### Overview
 `manipulator_manager` is a package to apply ROBOTIS Framework to ROBOTIS Manipulator.   
@@ -295,13 +295,13 @@ $ roslaunch manipulator_h_manager manipulator_h_manager.launch
 ```
 
 
-[std_msgs/String]: /docs/en/platform/popup/std_msgs_string/
-[std_msgs/Float64]: /docs/en/platform/popup/std_msgs_Float64_msg/
-[geometry_msgs/Pose]: /docs/en/platform/popup/geometry_msgs_Pose_msg/
-[robotis_controller_msgs/StatusMsg]: /docs/en/platform/popup/StatusMsg.msg/
-[manipulator_manipulation_module_msgs/JointPose]: /docs/en/platform/popup/JointPose.msg/
-[manipulator_manipulation_module_msgs/KinematicsPose]: /docs/en/platform/popup/KinematicsPose.msg/
-[manipulator_manipulation_module_msgs/GetJointPose]: /docs/en/platform/popup/GetJointPose.srv/
-[manipulator_manipulation_module_msgs/GetKinematicsPose]: /docs/en/platform/popup/GetKinematicsPose.srv/
+[std_msgs/String]: /docs/en/popup/std_msgs_string/
+[std_msgs/Float64]: /docs/en/popup/std_msgs_float64_msg/
+[geometry_msgs/Pose]: /docs/en/popup/geometry_msgs_Pose_msg/
+[robotis_controller_msgs/StatusMsg]: /docs/en/popup/StatusMsg.msg/
+[manipulator_manipulation_module_msgs/JointPose]: /docs/en/popup/JointPose.msg/
+[manipulator_manipulation_module_msgs/KinematicsPose]: /docs/en/popup/KinematicsPose.msg/
+[manipulator_manipulation_module_msgs/GetJointPose]: /docs/en/popup/GetJointPose.srv/
+[manipulator_manipulation_module_msgs/GetKinematicsPose]: /docs/en/popup/GetKinematicsPose.srv/
 [Creating new robot manager]: /docs/en/platform/software/tutorials/#creating-new-robot-manager
-[manipulator_manager]: /docs/en/platform/manipulator_h/manipulator_ros/#manipulator_manager
+[manipulator_manager]: /docs/en/platform/manipulator_h/manipulator_ros/#manipulator-manager

@@ -26,7 +26,7 @@ A service that can modify Balance Algorithm Parameter.
 &emsp;&emsp; The Parameter is gradually updated based on configured time.
 &emsp;&emsp; 0 or negative value will update the Balance Parameter immediately.
 
-* `BalanceParam balance_param`([thormang3_walking_module_msgs/BalanceParam](BalanceParam.msg))
+* `BalanceParam balance_param`([thormang3_walking_module_msgs/BalanceParam])
 &emsp;&emsp; The Balance Parameter to be applied
 
   - Response
@@ -40,5 +40,6 @@ A service that can modify Balance Algorithm Parameter.
 | PREV_REQUEST_IS_NOT_FINISHED   | 0x20  | The previous request is not finished.         |
 
 
-<br>
-[[&lt;&lt; Back|thormang3_walking_module_msgs]]
+
+
+[thormang3_walking_module_msgs/BalanceParam]: /docs/en/popup/BalanceParam.msg/

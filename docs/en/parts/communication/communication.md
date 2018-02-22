@@ -1,16 +1,11 @@
 ---
-layout: splash
+layout: archive
 lang: en
 ref: communication_parts
 permalink: /docs/en/parts/communication/
-header:
-  overlay_color:
-  overlay_image:
-  cta_label:
-  cta_url:
-  caption:
-  intro:
-    - excerpt: 'Parts-Communication'
+sidebar:
+  title: Parts-Communication
+  nav: ""
 ---
 
 # [RC-100A/100B](#rc-100a100b)

@@ -39,7 +39,7 @@ layout: popup
 These are goal position of each joint of leg.
 This message will be used for debugging
 
-* `Header header`([std_msgs/Header](http://docs.ros.org/api/std_msgs/html/msg/Header.html))
+* `Header header`([std_msgs/Header])
 &emsp;&emsp; header
 * ` float32 r_goal_hip_y`
 &emsp;&emsp; the desired angle in radian of right hip yaw joint
@@ -90,5 +90,4 @@ This message will be used for debugging
 * ` float32 l_present_an_r`
 &emsp;&emsp; the present angle in radian of left ankle roll joint
 
-<br>
-[[&lt;&lt; Back|thormang3_walking_module_msgs]]
+[std_msgs/Header]: /docs/en/popup/std_msgs_header/

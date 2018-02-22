@@ -44,6 +44,37 @@
     	});
     });
     </script>
+    <script>
+      // var side_nav = document.getElementById("sidebar");
+      var offset = 105;
+    
+      window.onscroll = function () {
+        stickynav()
+      };
+      
+      function stickynav() {
+        if (window.pageYOffset > offset) {
+          sidebar__left.classList.add("sticky_sidebar");
+        }
+        else {
+          sidebar__left.classList.remove("sticky_sidebar");
+        }
+      }
+    </script>
+    <script>
+      var toggle = 0;
+      
+      function extendnav() {
+        if (toggle == 0) {
+          sidebar__left.classList.add("extend_sidebar");
+          toggle = 1;
+        }
+        else {
+          sidebar__left.classList.remove("extend_sidebar");
+          toggle = 0;
+        }
+      }
+    </script>
   </head>
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">

@@ -16,7 +16,7 @@ layout: popup
  ```
 
 - Description
-This message is used when creating [GetPresentJointOffsetData.srv](op3_GetPresentJointOffsetData.srv).  
+This message is used when creating [GetPresentJointOffsetData.srv].  
 
 * ` string  joint_name`  
 &emsp;&emsp; joint name  
@@ -33,4 +33,5 @@ This message is used when creating [GetPresentJointOffsetData.srv](op3_GetPresen
 * ` int32   d_gain`  
 &emsp;&emsp; D Gain of the joint Position(Not used)  
 
-[&lt;&lt; Back](op3_offset_tuner_msgs.md)
+
+[GetPresentJointOffsetData.srv]: /docs/en/popup/op3_GetPresentJointOffsetData.srv/

@@ -62,9 +62,9 @@ $ roslaunch op3_manager op3_gazebo.launch
 ### To improve gazebo simulation
 
 * Change joint gain   
-[Controller File]
+[Controller File]{: .popup}
 * Edit physics engine   
-[World File]
+[World File]{: .popup}
 
 
 

@@ -1,16 +1,14 @@
 ---
-layout: splash
+layout: archive
 lang: en
-ref: education
+ref: steam
+read_time: true
+share: true
+author_profile: false
 permalink: /docs/en/edu/
-header:
-  overlay_color:
-  overlay_image:
-  cta_label:
-  cta_url:
-  caption:
-  intro:
-    - excerpt: 'STEAM'
+sidebar:
+  title: STEAM
+  nav: ""
 ---
 
 # [OLLO](#ollo)

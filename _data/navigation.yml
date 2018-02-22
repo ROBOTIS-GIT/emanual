@@ -9108,7 +9108,7 @@ op3:
       - title: "GPIO Pin Assignments"
         url: /platform/op3/quick_start/#gpio-pin-assignments
   - title: "Getting Started"
-    url: /platform/op3/getting_started/#getting_started
+    url: /platform/op3/getting_started/#getting-started
     children:
     - title: "How to connect"
       url: /platform/op3/getting_started/#how-to-connect

@@ -1,16 +1,11 @@
 ---
-layout: splash
+layout: archive
 lang: en
 ref: display_parts
 permalink: /docs/en/parts/display/
-header:
-  overlay_color:
-  overlay_image:
-  cta_label:
-  cta_url:
-  caption:
-  intro:
-    - excerpt: 'Parts-Display'
+sidebar:
+  title: Parts-Display
+  nav: ""
 ---
 
 # [LED Module](#led-module)
