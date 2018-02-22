@@ -11,7 +11,7 @@ sidebar:
   nav: "common"
 ---
 
-# [Humanoid Navigation](#humanoid_navigation)
+# [Humanoid Navigation](#humanoid-navigation)
 
 > Reference : [http://wiki.ros.org/humanoid_navigation]
 > Source : [https://github.com/AravindaDP/humanoid_navigation]

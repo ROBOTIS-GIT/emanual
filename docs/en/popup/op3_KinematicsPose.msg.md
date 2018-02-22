@@ -5,7 +5,7 @@ layout: popup
 - File: `op3_online_walking_module_msgs/KinematicsPose.msg`
 
 - Message Definition
- ```
+ ```c
  string   name
  float64  mov_time
  geometry_msgs/Pose pose
@@ -13,12 +13,9 @@ layout: popup
 
 - Description
 
-* `name`   
+    * `name`   
 &emsp;&emsp; target group name      
-* `mov_time`    
+    * `mov_time`    
 &emsp;&emsp; movement time   
-* `pose`    
+    * `pose`    
 &emsp;&emsp; target pose   
-
-
-[

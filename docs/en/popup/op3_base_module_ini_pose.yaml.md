@@ -2,7 +2,7 @@
 layout: popup
 ---
 
-```
+```c
 # time parameter
 
 mov_time : 4.0		# movement time

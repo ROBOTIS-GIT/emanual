@@ -2,7 +2,7 @@
 layout: popup
 ---
 
-```
+```c
 <?xml version="1.0"?>
 <package>
   <name>sensor_module_tutorial</name>

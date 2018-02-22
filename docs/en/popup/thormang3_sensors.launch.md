@@ -1,7 +1,7 @@
 ---
 layout: popup
 ---
-```
+```c
 <?xml version="1.0"?>
 
 <launch>

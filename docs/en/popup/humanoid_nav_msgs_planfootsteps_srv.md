@@ -6,7 +6,7 @@ layout: popup
 
 - Message Definition
 
-  ```
+  ```c
   geometry_msgs/Pose2D start
   geometry_msgs/Pose2D goal
   ---
@@ -20,7 +20,7 @@ layout: popup
   ```
 - Compact Message Definition
 
-  ```
+  ```c
   geometry_msgs/Pose2D start
   geometry_msgs/Pose2D goal
   bool result

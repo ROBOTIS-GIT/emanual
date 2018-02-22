@@ -14,10 +14,10 @@ layout: popup
 A service to delete existing StepData.
 
   - Request
-* `empty`
+    * `empty`
 
   - Response
-* ` int32 result`
+    * ` int32 result`
 &emsp;&emsp; Result of the "RemoveExistingStepData" Service
 
 | Name                       | Value | Description                                    |
