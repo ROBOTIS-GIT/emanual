@@ -21,7 +21,7 @@ sidebar:
 
 #### Motion Module
 
-##### [op3_action_module](#op3_action_module)
+##### [op3_action_module](#op3-action-module)
 
 ###### Overview  
 `op3_action_module` manages OP3 actions.  
@@ -644,7 +644,7 @@ The following are Messages and Service used for the [op3_offset_tuner_server] an
 
 ###### using the `dynamic_reconfigure`
 
-#### [op3_demo](#op3_demo)
+#### [op3_demo](#op3-demo)
 
 ##### Overview
  Basic demonstrations of OP3 are playing soccer, vision and sequence of various actions.  

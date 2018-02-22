@@ -23,7 +23,7 @@ sidebar:
 - Description
 Planar StepData defined by the User.
 
-    * `Step2D[] footsteps_2d`([thormang3_foot_step_generator/Step2D])
+    * `Step2D[] footsteps_2d`([thormang3_foot_step_generator/Step2D]{: .popup})
 &emsp;&emsp; Planar StepData defined by the User.
 
 

@@ -23,7 +23,7 @@ This service acquires parameters that are applied on op3_online_walking_module.
 &emsp;&emsp; For details, refer to [PreviewResponse.msg].  
 
 
-[op3_walking_module_msgs/PreviewRequest]: /docs/en/popup/op3_PreviewRequest.msg/
-[PreviewRequest.msg]: /docs/en/popup/op3_PreviewRequest.msg/
-[op3_walking_module_msgs/PreviewResponse]: /docs/en/popup/op3_PreviewResponse.msg
-[PreviewResponse.msg]: /docs/en/popup/op3_PreviewResponse.msg
+[op3_walking_module_msgs/PreviewRequest]: /docs/en/platform/msgs/op3_PreviewRequest_msg/#op3-previewrequest-msg
+[PreviewRequest.msg]: /docs/en/platform/msgs/op3_PreviewRequest_msg/#op3-previewrequest-msg
+[op3_walking_module_msgs/PreviewResponse]: /docs/en/platform/msgs/op3_PreviewResponse_msg/#op3-previewresponse-msg
+[PreviewResponse.msg]: /docs/en/platform/msgs/op3_PreviewResponse_msg/#op3-previewresponse-msg

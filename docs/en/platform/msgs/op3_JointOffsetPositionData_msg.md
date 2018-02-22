@@ -1,6 +1,17 @@
 ---
-layout: popup
+layout: archive
+lang: en
+ref: msgs_op3_JointOffsetPositionData_msg
+read_time: true
+share: true
+author_profile: false
+permalink: /docs/en/platform/msgs/op3_JointOffsetPositionData_msg/
+sidebar:
+  title: MSGS
+  nav: "msgs"
 ---
+
+# [op3_JointOffsetPositionData_msg](#op3-jointoffsetpositiondata-msg)
 
 - File: `op3_offset_tuner_msgs/JointOffsetPositionData.msg`
 
@@ -16,7 +27,7 @@ layout: popup
  ```
 
 - Description
-This message is used when creating [GetPresentJointOffsetData.srv].  
+This message is used when creating [GetPresentJointOffsetData.srv]{: .popup}.  
 
     * ` string  joint_name`  
 &emsp;&emsp; joint name  
@@ -34,4 +45,4 @@ This message is used when creating [GetPresentJointOffsetData.srv].
 &emsp;&emsp; D Gain of the joint Position(Not used)  
 
 
-[GetPresentJointOffsetData.srv]: /docs/en/platform/msgs/op3_GetPresentJointOffsetData_srv/#op3-getpresentjointoffsetdata-srv
+[GetPresentJointOffsetData.srv]: /docs/en/popup/op3_GetPresentJointOffsetData.srv/

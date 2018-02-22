@@ -17,4 +17,4 @@ The message to turn on/off the torque of each joint
 
 
 
-[op3_offset_tuner_msgs/JointTorqueOnOff]: /docs/en/popup/op3_JointTorqueOnOff.msg/
+[op3_offset_tuner_msgs/JointTorqueOnOff]: /docs/en/platform/msgs/op3_JointTorqueOnOff_msg/#op3-jointtorqueonoff-msg

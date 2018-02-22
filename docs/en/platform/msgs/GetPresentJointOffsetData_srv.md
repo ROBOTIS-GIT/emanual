@@ -31,4 +31,4 @@ The service to get offset data of each joint.
     * `JointOffsetPositionData[] present_data_array`([thormang3_offset_tuner_msgs/JointOffsetPositionData]{: .popup})
 &emsp;&emsp; Array of the offset parameter data of each joint
 
-[thormang3_offset_tuner_msgs/JointOffsetPositionData]: /docs/en/popup/JointOffsetPositionData_msg/
+[thormang3_offset_tuner_msgs/JointOffsetPositionData]: /docs/en/popup/JointOffsetPositionData.msg/

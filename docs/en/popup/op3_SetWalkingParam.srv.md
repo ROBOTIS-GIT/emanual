@@ -23,5 +23,5 @@ This service configures parameters in `op3_walking_module` for walking control.
 &emsp;&emsp;
 
 
-[op3_walking_module_msgs/WalkingParam]: /docs/en/popup/op3_WalkingParam.msg/
-[WalkingParam.msg]: /docs/en/popup/op3_WalkingParam.msg/
+[op3_walking_module_msgs/WalkingParam]: /docs/en/platform/msgs/op3_WalkingParam_msg/#op3-walkingparam-msg
+[WalkingParam.msg]: /docs/en/platform/msgs/op3_WalkingParam_msg/#op3-walkingparam-msg

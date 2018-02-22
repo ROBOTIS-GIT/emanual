@@ -19,4 +19,4 @@ The message used to create [JointTorqueOnOffArray.msg]
 
 
 
-[JointTorqueOnOffArray.msg]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/op3_JointTorqueOnOffArray.msg
+[JointTorqueOnOffArray.msg]: /docs/en/platform/msgs/op3_JointTorqueOnOffArray_msg/#op3-jointtorqueonoffarray-msg
