@@ -61,7 +61,7 @@ GEM
       jemoji (~> 0.8)
     minitest (5.10.2)
     multipart-post (2.0.0)
-    nokogiri (1.8.0)
+    nokogiri (1.8.2)
       mini_portile2 (~> 2.2.0)
     octokit (4.7.0)
       sawyer (~> 0.8.0, >= 0.5.3)
