@@ -24,9 +24,6 @@ The `op3_manager` cooperates with other programs such as `op3_demo` and `op3_gui
 
 > Reference : [op3_manager]
 
-#### Diagram
-[diagram image]  
-
 
 
 ### Getting started
