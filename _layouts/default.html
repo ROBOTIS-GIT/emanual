@@ -75,6 +75,18 @@
         }
       }
     </script>
+    <script>
+      function copyurl(item)
+        {
+          // location.href = item.href;
+          var copiedurl = decodeURI(item.href);
+          var tempurl = $('<input>').val(copiedurl).appendTo('body').select();
+          document.execCommand('copy');
+          console.log(copiedurl);
+          // document.getElementById(id).href;
+          // document.execCommand('copy');
+        }
+    </script>
   </head>
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">

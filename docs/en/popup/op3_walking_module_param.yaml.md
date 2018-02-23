@@ -1,7 +1,7 @@
 ---
 layout: popup
 ---
-```
+```c
 x_offset: -0.02
 y_offset: 0.015
 z_offset: 0.035

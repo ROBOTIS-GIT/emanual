@@ -6,7 +6,7 @@ layout: popup
 
 
 - Message Definition
- ```
+ ```c
  float32           updating_duration
  JointFeedBackGain feedback_gain
  ---
@@ -21,16 +21,16 @@ layout: popup
 A service that can modify joint feedback gain.
 
   - Request
-* ` float32      updating_duration`
+    * ` float32      updating_duration`
 &emsp;&emsp; Time duration when updating joint feedback gain.
 &emsp;&emsp; The gains are gradually updated based on configured time.
 &emsp;&emsp; 0 or negative value will update the joint feedback gain immediately.
 
-* `JointFeedBackGain feedback_gain`([thormang3_walking_module_msgs/JointFeedBackGain]{: .popup})
+    * `JointFeedBackGain feedback_gain`([thormang3_walking_module_msgs/JointFeedBackGain])
 &emsp;&emsp; The joint feedback gain to be applied
 
   - Response
-* ` int32 result`
+    * ` int32 result`
 &emsp;&emsp; Result of the "SetJointFeedBackGain" Service
 
 | Name                           | Value | Description                                   |
@@ -42,4 +42,4 @@ A service that can modify joint feedback gain.
 
 
 
-[thormang3_walking_module_msgs/JointFeedBackGain]: /docs/en/popup/JointFeedBackGain.msg/
+[thormang3_walking_module_msgs/JointFeedBackGain]: /docs/en/platform/msgs/JointFeedBackGain_msg/#jointfeedbackgain-msg

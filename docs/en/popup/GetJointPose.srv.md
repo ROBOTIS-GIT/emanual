@@ -15,12 +15,9 @@ layout: popup
 A service to read a pose of a specific joint.
 
   - Request
-* `joint_name`
+    * `joint_name`
 &emsp;&emsp; Name of the joint to request pose data.
 
   - Response
-* `joint_value`
+    * `joint_value`
 &emsp;&emsp; Pose value from the joint.
-
-
-
