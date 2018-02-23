@@ -760,22 +760,22 @@ This chapter explains upgraded walking and footstep planner.
 [How to use walking tuner]: /docs/en/platform/op3/tutorials/#how-to-use-walking-tuner
 
 
-[op3_action_module]: /docs/en/platform/op3/robotis_ros_packages/#op3_action_module
+[op3_action_module]: /docs/en/platform/op3/robotis_ros_packages/#op3-action-module
 [How to create the motions]: /docs/en/platform/op3/tutorials/#how-to-create-the-motions
 
-[op3_head_control_module]: /docs/en/platform/op3/robotis_ros_packages/#op3_head_control_module
+[op3_head_control_module]: /docs/en/platform/op3/robotis_ros_packages/#op3-head-control-module
 
 [Introduction to Humanoid Robotics]: http://www.springer.com/gp/book/9783642545351
 
-[op3_online_walking_module]: /docs/en/platform/op3/robotis_ros_packages/#op3_online_walking_module
+[op3_online_walking_module]: /docs/en/platform/op3/robotis_ros_packages/#op3-online-walking-module
 [Online walking using footstep planner]: /docs/en/platform/op3/tutorials/#how-to-control-upgraded-walking-using-footstep-planner
 
-[op3_offset_tuner_server]: /docs/en/platform/op3/robotis_ros_packages/#op3_offset_tuner_server
-[op3_offset_tuner_client]: /docs/en/platform/op3/robotis_ros_packages/#op3_offset_tuner_client
+[op3_offset_tuner_server]: /docs/en/platform/op3/robotis_ros_packages/#op3-offset-tuner-server
+[op3_offset_tuner_client]: /docs/en/platform/op3/robotis_ros_packages/#op3-offset-tuner-client
 
 [op3_how_to_control_upgraded_walking]: /docs/en/platform/op3/tutorials/#how-to-control-upgraded-walkingonline-walking
 
-[humanoid_navigation]: /docs/en/platform/common/humanoid_navigation/#humanoid_navigation
+[humanoid_navigation]: /docs/en/platform/common/humanoid_navigation/#humanoid-navigation
 
 
 [op3_navigation]: https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Tools/tree/master/op3_navigation

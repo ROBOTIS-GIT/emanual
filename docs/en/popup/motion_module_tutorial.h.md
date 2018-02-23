@@ -2,7 +2,7 @@
 layout: popup
 ---
 
-```
+```c
 /*******************************************************************************
  * Copyright (c) 2016, ROBOTIS CO., LTD.
  * All rights reserved.
