@@ -1,11 +1,11 @@
 ---
 layout: archive
 lang: en
-ref: turtlebot3_pc_software_setup
+ref: turtlebot3_pc_setup
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/turtlebot3/pc_software_setup/
+permalink: /docs/en/platform/turtlebot3/pc_setup/
 sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
@@ -13,7 +13,7 @@ sidebar:
 
 <div style="counter-reset: h1 5"></div>
 
-# [PC Software Setup](#pc-software-setup)
+# [PC Setup](#pc-setup)
 
 ![](/assets/images/platform/turtlebot3/software/remote_pc_and_turtlebot.png)
 
@@ -40,8 +40,6 @@ If you need more help for installing Ubuntu, check out the step-by-step guide fr
 **[Remote PC]** There are two ways to install [ROS][ros]. If you prefer manual installation, please take the second method.
 In order to develop source code from the remote PC, please configure ROS environment after completing ROS installation.
 
-### [First Method](#first-method)
-
 Install [ROS][ros] by using a simple installation script file
 
 **Tip :** The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`-`Alt`-`T`.
@@ -53,19 +51,13 @@ $ sudo apt-get upgrade
 $ wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic.sh && chmod 755 ./install_ros_kinetic.sh && bash ./install_ros_kinetic.sh
 ```
 
-### [Second Method](#second-method)
-
-You can start from "[1.2 Setup your sources.list][12-setup-your-sourceslist]" and keep following the instruction until "[1.7 Getting rosinstall][17-getting-rosinstall]" from below ROS installation instruction link.
-
-- http://wiki.ros.org/kinetic/Installation/Ubuntu
-
 **Note :** In order to check which packages are installed, please check this link out. [install_ros_kinetic](https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic.sh)
 {: .notice--info}
 
-### [Configure ROS Environment](#configure-ros-environment)
-If you are going to modify or develop source code from the remote PC, you'll have to configure ROS environment. Simple instructions are described in the below link and it will take a couple minutes.
+If you want more detail about installation of ROS, please following the link below.
 
-- [ROS Environment](http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment)
+- [Install ROS on Ubuntu](http://wiki.ros.org/kinetic/Installation/Ubuntu)
+
 
 ## [Install Dependent packages](#install-dependent-packages)
 
