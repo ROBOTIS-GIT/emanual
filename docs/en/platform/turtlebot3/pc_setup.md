@@ -37,10 +37,7 @@ If you need more help for installing Ubuntu, check out the step-by-step guide fr
 
 ![](/assets/images/platform/turtlebot3/logo_ros.png)
 
-**[Remote PC]** There are two ways to install [ROS][ros]. If you prefer manual installation, please take the second method.
 In order to develop source code from the remote PC, please configure ROS environment after completing ROS installation.
-
-Install [ROS][ros] by using a simple installation script file
 
 **Tip :** The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`-`Alt`-`T`.
 {: .notice--info}
@@ -54,14 +51,17 @@ $ wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/instal
 **Note :** In order to check which packages are installed, please check this link out. [install_ros_kinetic](https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic.sh)
 {: .notice--info}
 
-If you want more detail about installation of ROS, please following the link below.
+**Note :** After install ROS, please reboot RemotePC.
+{: .notice--info}
+
+If you prefer manual installation, please following the link below.
 
 - [Install ROS on Ubuntu](http://wiki.ros.org/kinetic/Installation/Ubuntu)
 
 
 ## [Install Dependent packages](#install-dependent-packages)
 
-**[Remote PC]** The next step is to install dependent packages for TurtleBot3 control.
+The next step is to install dependent packages for TurtleBot3 control.
 
 ``` bash
 $ sudo apt-get install ros-kinetic-joy ros-kinetic-teleop-twist-joy ros-kinetic-teleop-twist-keyboard ros-kinetic-laser-proc ros-kinetic-rgbd-launch ros-kinetic-depthimage-to-laserscan ros-kinetic-rosserial-arduino ros-kinetic-rosserial-python ros-kinetic-rosserial-server ros-kinetic-rosserial-client ros-kinetic-rosserial-msgs ros-kinetic-amcl ros-kinetic-map-server ros-kinetic-move-base ros-kinetic-urdf ros-kinetic-xacro ros-kinetic-compressed-image-transport ros-kinetic-rqt-image-view ros-kinetic-gmapping ros-kinetic-navigation ros-kinetic-interactive-markers
@@ -83,7 +83,7 @@ If catkin_make command is completed without any errors, the preparation for Turt
 
 ROS requires IP addresses in order to communicate between TurtleBot3 and the remote PC.
 
-**[Remote PC]** Enter the below command on the terminal window of the remote PC to find out the IP address of the remote PC.
+Enter the below command on the terminal window of the remote PC to find out the IP address of the remote PC.
 
 ``` bash
 $ ifconfig
@@ -93,7 +93,7 @@ Text strings in the rectangle is the IP address of the `Remote PC`.
 
 ![](/assets/images/platform/turtlebot3/software/network_configuration2.png)
 
-**[Remote PC]** Enter the below command.
+Enter the below command.
 
 ``` bash
 $ gedit ~/.bashrc
@@ -103,7 +103,7 @@ Modify the address of `localhost` with the IP address acquired from the above te
 
 ![](/assets/images/platform/turtlebot3/software/network_configuration3.png)
 
-**[Remote PC]** Then, source the bashrc with below command.
+Then, source the bashrc with below command.
 
 ``` bash
 $ source ~/.bashrc
