@@ -9555,43 +9555,43 @@ turtlebot3:
       url: /platform/turtlebot3/sbc_common_software_setup/#usb-settings-burger-waffle-and-waffle-pi
     - title: "Network Configuration (Burger, Waffle and Waffle Pi)"
       url: /platform/turtlebot3/sbc_common_software_setup/#network-configuration-burger-waffle-and-waffle-pi
-  - title: "OpenCR1.0 Software Setup"
-    url: /platform/turtlebot3/opencr1_0_software_setup/#opencr10-software-setup
+  - title: "OpenCR Setup"
+    url: /platform/turtlebot3/opencr_setup/#opencr-setup
     children:
     - title: "ArduinoIDE Settings for OpenCR1.0"
-      url: /platform/turtlebot3/opencr1_0_software_setup/#arduinoide-settings-for-opencr10
+      url: /platform/turtlebot3/opencr_setup/#arduinoide-settings-for-opencr10
       children:
       - title: "USB Port Settings"
-        url: /platform/turtlebot3/opencr1_0_software_setup/#usb-port-settings
+        url: /platform/turtlebot3/opencr_setup/#usb-port-settings
       - title: "Compiler Settings"
-        url: /platform/turtlebot3/opencr1_0_software_setup/#compiler-settings
+        url: /platform/turtlebot3/opencr_setup/#compiler-settings
       - title: "Install Arduino IDE"
-        url: /platform/turtlebot3/opencr1_0_software_setup/#install-arduino-ide
+        url: /platform/turtlebot3/opencr_setup/#install-arduino-ide
       - title: "Run Arduino IDE"
-        url: /platform/turtlebot3/opencr1_0_software_setup/#run-arduino-ide
+        url: /platform/turtlebot3/opencr_setup/#run-arduino-ide
       - title: "Porting OpenCR1.0 to Arduino IDE"
-        url: /platform/turtlebot3/opencr1_0_software_setup/#porting-opencr10-to-arduino-ide
+        url: /platform/turtlebot3/opencr_setup/#porting-opencr10-to-arduino-ide
         children:
         - title: "Preferences"
-          url: /platform/turtlebot3/opencr1_0_software_setup/#preferences
+          url: /platform/turtlebot3/opencr_setup/#preferences
         - title: "Install OpenCR1.0 Package from Boards Manager"
-          url: /platform/turtlebot3/opencr1_0_software_setup/#install-opencr10-package-from-boards-manager
+          url: /platform/turtlebot3/opencr_setup/#install-opencr10-package-from-boards-manager
         - title: "Port Setting"
-          url: /platform/turtlebot3/opencr1_0_software_setup/#port-setting
+          url: /platform/turtlebot3/opencr_setup/#port-setting
       - title: "Writing Bootloader (can be skipped)"
-        url: /platform/turtlebot3/opencr1_0_software_setup/#writing-bootloader-can-be-skipped
+        url: /platform/turtlebot3/opencr_setup/#writing-bootloader-can-be-skipped
         children:
         - title: "Programmer Setting"
-          url: /platform/turtlebot3/opencr1_0_software_setup/#programmer-setting
+          url: /platform/turtlebot3/opencr_setup/#programmer-setting
         - title: "Entering the DFU Mode"
-          url: /platform/turtlebot3/opencr1_0_software_setup/#entering-the-dfu-mode
+          url: /platform/turtlebot3/opencr_setup/#entering-the-dfu-mode
         - title: "Download the Bootloader"
-          url: /platform/turtlebot3/opencr1_0_software_setup/#download-the-bootloader
+          url: /platform/turtlebot3/opencr_setup/#download-the-bootloader
     - title: "OpenCR1.0 Firmware Settings for ROS"
-      url: /platform/turtlebot3/opencr1_0_software_setup/#opencr10-firmware-settings-for-ros
+      url: /platform/turtlebot3/opencr_setup/#opencr10-firmware-settings-for-ros
       children:
       - title: "Add TurtleBot3 Firmware to OpenCR1.0"
-        url: /platform/turtlebot3/opencr1_0_software_setup/#add-turtlebot3-firmware-to-opencr10
+        url: /platform/turtlebot3/opencr_setup/#add-turtlebot3-firmware-to-opencr10
   - title: "Bringup"
     url: /platform/turtlebot3/bringup/#bringup
     children:

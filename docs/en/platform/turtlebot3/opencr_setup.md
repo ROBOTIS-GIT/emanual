@@ -1,11 +1,11 @@
 ---
 layout: archive
 lang: en
-ref: turtlebot3_opencr1_0_software_setup
+ref: turtlebot3_opencr_setup
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/turtlebot3/opencr1_0_software_setup/
+permalink: /docs/en/platform/turtlebot3/opencr_setup/
 sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
@@ -13,7 +13,7 @@ sidebar:
 
 <div style="counter-reset: h1 7"></div>
 
-# [OpenCR1.0 Software Setup](#opencr10-software-setup)
+# [OpenCR Setup](#opencr-setup)
 
 ![](/assets/images/platform/turtlebot3/software/remote_pc_and_turtlebot.png)
 
