@@ -3823,10 +3823,10 @@ xh430-v210:
     url: /dxl/x/xh430-v210/#maintenance
     urlkr: /dxl/x/xh430-v210/#유지보수
     children:
-      - title: "Horn, Bearing"
-        titlekr: "혼과 베어링 교체"
-        url: /dxl/x/xh430-v210/#horn-and-bearing-replacement
-        urlkr: /dxl/x/xh430-v210/#혼과-베어링-교체
+      - title: "Horn, Gear Replacement"
+        titlekr: "혼과 기어 교체"
+        url: /dxl/x/xh430-v210/#horn-and-gear-replacement
+        urlkr: /dxl/x/xh430-v210/#혼과-기어-교체
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/x/xh430-v210/#reference
@@ -4054,10 +4054,10 @@ xh430-v350:
     url: /dxl/x/xh430-v350/#maintenance
     urlkr: /dxl/x/xh430-v350/#유지보수
     children:
-      - title: "Horn, Bearing"
-        titlekr: "혼과 베어링 교체"
-        url: /dxl/x/xh430-v350/#horn-and-bearing-replacement
-        urlkr: /dxl/x/xh430-v350/#혼과-베어링-교체
+      - title: "Horn, Gear Replacement"
+        titlekr: "혼과 기어 교체"
+        url: /dxl/x/xh430-v350/#horn-and-gear-replacement
+        urlkr: /dxl/x/xh430-v350/#혼과-기어-교체
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/x/xh430-v350/#reference
@@ -4285,10 +4285,10 @@ xh430-w210:
     url: /dxl/x/xh430-w210/#maintenance
     urlkr: /dxl/x/xh430-w210/#유지보수
     children:
-      - title: "Horn, Bearing"
-        titlekr: "혼과 베어링 교체"
-        url: /dxl/x/xh430-w210/#horn-and-bearing-replacement
-        urlkr: /dxl/x/xh430-w210/#혼과-베어링-교체
+      - title: "Horn, Gear Replacement"
+        titlekr: "혼과 기어 교체"
+        url: /dxl/x/xh430-w210/#horn-and-gear-replacement
+        urlkr: /dxl/x/xh430-w210/#혼과-기어-교체
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/x/xh430-w210/#reference
@@ -4516,10 +4516,10 @@ xh430-w350:
     url: /dxl/x/xh430-w350/#maintenance
     urlkr: /dxl/x/xh430-w350/#유지보수
     children:
-      - title: "Horn, Bearing"
-        titlekr: "혼과 베어링 교체"
-        url: /dxl/x/xh430-w350/#horn-and-bearing-replacement
-        urlkr: /dxl/x/xh430-w350/#혼과-베어링-교체
+      - title: "Horn, Gear Replacement"
+        titlekr: "혼과 기어 교체"
+        url: /dxl/x/xh430-w350/#horn-and-gear-replacement
+        urlkr: /dxl/x/xh430-w350/#혼과-기어-교체
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/x/xh430-w350/#reference
@@ -4659,10 +4659,10 @@ xl430-w250:
     url: /dxl/x/xl430-w250/#maintenance
     urlkr: /dxl/x/xl430-w250/#유지보수
     children:
-      - title: "Horn, Bearing"
-        titlekr: "혼과 베어링 교체"
-        url: /dxl/x/xl430-w250/#horn-and-bearing-replacement
-        urlkr: /dxl/x/xl430-w250/#혼과-베어링-교체
+      - title: "Horn, Gear Replacement"
+        titlekr: "혼과 기어 교체"
+        url: /dxl/x/xl430-w250/#horn-and-gear-replacement
+        urlkr: /dxl/x/xl430-w250/#혼과-기어-교체
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/x/xl430-w250/#reference
@@ -4890,10 +4890,10 @@ xm430-w210:
     url: /dxl/x/xm430-w210/#maintenance
     urlkr: /dxl/x/xm430-w210/#유지보수
     children:
-      - title: "Horn, Bearing"
-        titlekr: "혼과 베어링 교체"
-        url: /dxl/x/xm430-w210/#horn-and-bearing-replacement
-        urlkr: /dxl/x/xm430-w210/#혼과-베어링-교체
+      - title: "Horn, Gear Replacement"
+        titlekr: "혼과 기어 교체"
+        url: /dxl/x/xm430-w210/#horn-and-gear-replacement
+        urlkr: /dxl/x/xm430-w210/#혼과-기어-교체
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/x/xm430-w210/#reference
@@ -5121,10 +5121,10 @@ xm430-w350:
     url: /dxl/x/xm430-w350/#maintenance
     urlkr: /dxl/x/xm430-w350/#유지보수
     children:
-      - title: "Horn, Bearing"
-        titlekr: "혼과 베어링 교체"
-        url: /dxl/x/xm430-w350/#horn-and-bearing-replacement
-        urlkr: /dxl/x/xm430-w350/#혼과-베어링-교체
+      - title: "Horn, Gear Replacement"
+        titlekr: "혼과 기어 교체"
+        url: /dxl/x/xm430-w350/#horn-and-gear-replacement
+        urlkr: /dxl/x/xm430-w350/#혼과-기어-교체
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/x/xm430-w350/#reference
@@ -5358,10 +5358,10 @@ xm540-w150:
     url: /dxl/x/xm540-w150/#maintenance
     urlkr: /dxl/x/xm540-w150/#유지보수
     children:
-      - title: "Horn, Bearing"
-        titlekr: "혼과 베어링 교체"
-        url: /dxl/x/xm540-w150/#horn-and-bearing-replacement
-        urlkr: /dxl/x/xm540-w150/#혼과-베어링-교체
+      - title: "Horn, Gear Replacement"
+        titlekr: "혼과 기어 교체"
+        url: /dxl/x/xm540-w150/#horn-and-gear-replacement
+        urlkr: /dxl/x/xm540-w150/#혼과-기어-교체
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/x/xm540-w150/#reference
@@ -5595,10 +5595,10 @@ xm540-w270:
     url: /dxl/x/xm540-w270/#maintenance
     urlkr: /dxl/x/xm540-w270/#유지보수
     children:
-      - title: "Horn, Bearing"
-        titlekr: "혼과 베어링 교체"
-        url: /dxl/x/xm540-w270/#horn-and-bearing-replacement
-        urlkr: /dxl/x/xm540-w270/#혼과-베어링-교체
+      - title: "Horn, Gear Replacement"
+        titlekr: "혼과 기어 교체"
+        url: /dxl/x/xm540-w270/#horn-and-gear-replacement
+        urlkr: /dxl/x/xm540-w270/#혼과-기어-교체
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/x/xm540-w270/#reference
