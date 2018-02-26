@@ -9513,24 +9513,17 @@ turtlebot3:
       url: /platform/turtlebot3/hardware_setup/#basic-operation
     - title: "Open Source Hardware"
       url: /platform/turtlebot3/hardware_setup/#open-source-hardware
-  - title: "PC Software Setup"
-    url: /platform/turtlebot3/pc_software_setup/#pc-software-setup
+  - title: "PC Setup"
+    url: /platform/turtlebot3/pc_setup/#pc-setup
     children:
     - title: "Install Ubuntu on Remote PC (Desktop or Laptop PC)"
-      url: /platform/turtlebot3/pc_software_setup/#install-ubuntu-on-remote-pc-desktop-or-laptop-pc
+      url: /platform/turtlebot3/pc_setup/#install-ubuntu-on-remote-pc-desktop-or-laptop-pc
     - title: "Install ROS on Remote PC"
-      url: /platform/turtlebot3/pc_software_setup/#install-ros-on-remote-pc
-      children:
-      - title: "First Method"
-        url: /platform/turtlebot3/pc_software_setup/#first-method
-      - title: "Second Method"
-        url: /platform/turtlebot3/pc_software_setup/#second-method
-      - title: "Configure ROS Environment"
-        url: /platform/turtlebot3/pc_software_setup/#configure-ros-environment
+      url: /platform/turtlebot3/pc_setup/#install-ros-on-remote-pc
     - title: "Install Dependent Packages"
-      url: /platform/turtlebot3/pc_software_setup/#install-dependent-packages
+      url: /platform/turtlebot3/pc_setup/#install-dependent-packages
     - title: "Network Configuration"
-      url: /platform/turtlebot3/pc_software_setup/#network-configuration
+      url: /platform/turtlebot3/pc_setup/#network-configuration
   - title: "SBC Software Setup"
     url: /platform/turtlebot3/sbc_software_setup/#sbc-software-setup
     children:
