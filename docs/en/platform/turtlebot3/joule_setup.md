@@ -41,9 +41,9 @@ In this section, the Alternative Ubuntu Desktop 16.04 LTS will be installed on I
 [alternative-installubuntu-desktop-1604-lts]: https://developer.ubuntu.com/core/get-started/intel-joule#alternative-install:-ubuntu-desktop-16.04-lts
 
 
-If you need more step for installation, please follow below link
+If you need following step for installation, please refer to below link
 
-  - [Step by step to install Ubuntu](http://emanual.robotis.com/docs/en/platform/turtlebot3/#step_by_step_to_install_ubuntu_on_joule)
+  - [Step by step to install Ubuntu](http://emanual.robotis.com/docs/en/platform/turtlebot3/step_by_step_to_install_ubuntu_on_joule)
 
 ### [Install ROS](#install-ros)
 
@@ -141,8 +141,10 @@ Texts in the rectangle is the IP address of the `TurtleBot`.
 Enter the following command.
 
 ``` bash
-$ gedit ~/.bashrc
+$ nano ~/.bashrc
 ```
+
+Press ' `alt+/` ' to end line of the file.
 
 Replace the `localhost` in the ROS_MASTER_URI address with the IP address acquired from [Remote PC Network Configuration](http://emanual.robotis.com/docs/en/platform/turtlebot3/pc_setup/#network-configuration). Also replace the `localhost` in the ROS_HOSTNAME address with the IP address acquired from the above terminal window, which is the IP address of TurtleBot3.
 

@@ -96,8 +96,10 @@ Text strings in the rectangle is the IP address of the `Remote PC`.
 Enter the below command.
 
 ``` bash
-$ gedit ~/.bashrc
+$ nano ~/.bashrc
 ```
+
+Press ' `alt+/` ' to end line of the file.
 
 Modify the address of `localhost` with the IP address acquired from the above terminal window.
 

@@ -9528,22 +9528,21 @@ turtlebot3:
     url: /platform/turtlebot3/sbc_setup/#sbc-setup
     children:
     - title: "Raspberry Pi 3"
-      url: /platform/turtlebot3/rpi3_setup/#raspberry-pi-3-setup
+      url: /platform/turtlebot3/raspberry_pi_3_setup/#raspberry-pi-3-setup
       children:
       - title: "Install Linux(Ubuntu MATE)"
-        url: /platform/turtlebot3/rpi3_setup/#install-linux-ubuntu-mate
+        url: /platform/turtlebot3/raspberry_pi_3_setup/#install-linux-ubuntu-mate
         children:
         - title: "Install ROS"
-          url: /platform/turtlebot3/rpi3_setup/#install-ros
+          url: /platform/turtlebot3/raspberry_pi_3_setup/#install-ros
         - title: "Install Dependent Packages"
-          url: /platform/turtlebot3/rpi3_setup/#install-dependent-packages
+          url: /platform/turtlebot3/raspberry_pi_3_setup/#install-dependent-packages
         - title: "USB Settings"
-          url: /platform/turtlebot3/rpi3_setup/#usb-settings
+          url: /platform/turtlebot3/raspberry_pi_3_setup/#usb-settings
         - title: "Network Configuration"
-          url: /platform/turtlebot3/rpi3_setup/#network-configuration
+          url: /platform/turtlebot3/raspberry_pi_3_setup/#network-configuration
       - title: "Install Linux based on Raspbian"
-        url: /platform/turtlebot3/rpi3_setup/#install-linux-based-on-raspbian
-    children:
+        url: /platform/turtlebot3/raspberry_pi_3_setup/#install-linux-based-on-raspbian
     - title: "Intel Joule"
       url: /platform/turtlebot3/joule_setup/#joule-setup
       children:
