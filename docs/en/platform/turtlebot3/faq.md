@@ -93,14 +93,14 @@ or you can use following commands
   sudo ufw allow ssh
 ```
 
-Before start to connect SSH, you need to check host computer's name. Redbox in below image shows it.
+Before start to connect SSH, you need to check host name. Redbox in below image shows it.
 
 ![](/assets/images/platform/turtlebot3/faq/computer_name.png)
 
 Then, you can use SSH following command in [Remote PC].
 
 ``` bash
-  ssh {computer's name}@xxx.xxx.xx.xx
+  ssh ${HOSTNAME}@xxx.xxx.xx.xx
 ```
 
 ![](/assets/images/platform/turtlebot3/faq/connection_ssh.png)
