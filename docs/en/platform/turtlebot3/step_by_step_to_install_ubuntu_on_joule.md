@@ -11,7 +11,8 @@ sidebar:
   nav: "turtlebot3"
 ---
 
-<div style="counter-reset: h1 7"></div>
+<div style="counter-reset: h1 6"></div>
+<div style="counter-reset: h2 2"></div>
 
 ## [Step by Step to install Ubuntu](#step-by-step-to-install-ubuntu)
 
