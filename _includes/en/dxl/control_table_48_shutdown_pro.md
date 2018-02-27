@@ -6,9 +6,9 @@ The Dynamixel can protect itself by detecting dangerous situations that could oc
 |Bit 6|-|-|
 |Bit 5|Overload Error(default)|Detect persistent load that exceeds maximum output|
 |Bit 4|Electrical Shock Error(default)|Detect electric shock on the circuit or insufficient power to operate the motor|
-|Bit 3|Motor Encoder Error|Detect malfunction of the motor encoder|
-|Bit 2|OverHeating Error(default)|Detect internal temperature exceeds the configured operating temperature|
-|Bit 1|Motor Hall Sensor Error|Motor hall sensor value exceeds normal range|
+|Bit 3|Motor Encoder Error(default)|Detect malfunction of the motor encoder|
+|Bit 2|OverHeating Error|Detect internal temperature exceeds the configured operating temperature|
+|Bit 1|Motor Hall Sensor Error(default)|Motor hall sensor value exceeds normal range|
 |Bit 0|Input Voltage Error|Detect input voltage exceeds the configured operating voltage|
 
 `Note` If Shutdown occurs, use below method to reboot Dynamixels.

@@ -9,9 +9,9 @@
 |Bit 6|-|-|
 |Bit 5|Overload Error(기본값)|모터의 최대 출력으로 제어 할 수 없는 하중이 지속적으로 적용되는 경우|
 |Bit 4|Electrical Shock Error(기본값)|전기적으로 회로가 충격을 받거나, 입력 전력이 부족해서, 모터가 정상동작하지 못하는 경우|
-|Bit 3|Motor Encoder Error|모터의 엔코더가 동작하지 않을 경우|
-|Bit 2|OverHeating Error(기본값)|내부 온도가 설정된 동작 온도 범위를 벗어난 경우|
-|Bit 1|Motor Hall Sensor Error|모터의 홀센서 값이 정상 범위를 벗어났을 경우|
+|Bit 3|Motor Encoder Error(기본값)|모터의 엔코더가 동작하지 않을 경우|
+|Bit 2|OverHeating Error|내부 온도가 설정된 동작 온도 범위를 벗어난 경우|
+|Bit 1|Motor Hall Sensor Error(기본값)|모터의 홀센서 값이 정상 범위를 벗어났을 경우|
 |Bit 0|Input Voltage Error|인가된 전압이 설정된 동작 전압 범위를 벗어났을 경우|
 
 {% capture shutdown_01 %}
@@ -20,7 +20,7 @@
 2. S/W REBOOT : REBOOT Instruction 전송하는 방법(자세한 사항은 [프로토콜]을 참고해주세요.)
 {% endcapture %}
 
-<div class="notice">{{ shutdown_01 || markdownify }}</div>
+<div class="notice">{{ shutdown_01 | markdownify }}</div>
 
 Shutdown이 발생하면 1초 주기로 LED가 점멸합니다.(펌웨어 버전 41 이상)
 {: .notice}

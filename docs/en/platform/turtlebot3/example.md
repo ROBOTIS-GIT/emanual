@@ -119,7 +119,7 @@ Turtlebot3 can be moved or stopped by LDS data. When the turtlebot3 moves, it st
 $ rosrun turtlebot3_example turtlebot3_obstacle.py
 ```
 
-## [Point operaion](#point-operation)
+## [Point operation](#point-operation)
 
 Turtlebot3 can be moved by 2D point(x,y) and z-angular. For example, if you insert (0.5, 0.3, 60), turtlebot3 moves to point (x = 0.5m, y = 0.3m) and then rotates 60 deg.
 

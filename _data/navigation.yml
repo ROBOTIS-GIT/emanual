@@ -3823,10 +3823,10 @@ xh430-v210:
     url: /dxl/x/xh430-v210/#maintenance
     urlkr: /dxl/x/xh430-v210/#유지보수
     children:
-      - title: "Horn, Bearing"
-        titlekr: "혼과 베어링 교체"
-        url: /dxl/x/xh430-v210/#horn-and-bearing-replacement
-        urlkr: /dxl/x/xh430-v210/#혼과-베어링-교체
+      - title: "Horn, Gear Replacement"
+        titlekr: "혼과 기어 교체"
+        url: /dxl/x/xh430-v210/#horn-and-gear-replacement
+        urlkr: /dxl/x/xh430-v210/#혼과-기어-교체
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/x/xh430-v210/#reference
@@ -4054,10 +4054,10 @@ xh430-v350:
     url: /dxl/x/xh430-v350/#maintenance
     urlkr: /dxl/x/xh430-v350/#유지보수
     children:
-      - title: "Horn, Bearing"
-        titlekr: "혼과 베어링 교체"
-        url: /dxl/x/xh430-v350/#horn-and-bearing-replacement
-        urlkr: /dxl/x/xh430-v350/#혼과-베어링-교체
+      - title: "Horn, Gear Replacement"
+        titlekr: "혼과 기어 교체"
+        url: /dxl/x/xh430-v350/#horn-and-gear-replacement
+        urlkr: /dxl/x/xh430-v350/#혼과-기어-교체
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/x/xh430-v350/#reference
@@ -4285,10 +4285,10 @@ xh430-w210:
     url: /dxl/x/xh430-w210/#maintenance
     urlkr: /dxl/x/xh430-w210/#유지보수
     children:
-      - title: "Horn, Bearing"
-        titlekr: "혼과 베어링 교체"
-        url: /dxl/x/xh430-w210/#horn-and-bearing-replacement
-        urlkr: /dxl/x/xh430-w210/#혼과-베어링-교체
+      - title: "Horn, Gear Replacement"
+        titlekr: "혼과 기어 교체"
+        url: /dxl/x/xh430-w210/#horn-and-gear-replacement
+        urlkr: /dxl/x/xh430-w210/#혼과-기어-교체
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/x/xh430-w210/#reference
@@ -4516,10 +4516,10 @@ xh430-w350:
     url: /dxl/x/xh430-w350/#maintenance
     urlkr: /dxl/x/xh430-w350/#유지보수
     children:
-      - title: "Horn, Bearing"
-        titlekr: "혼과 베어링 교체"
-        url: /dxl/x/xh430-w350/#horn-and-bearing-replacement
-        urlkr: /dxl/x/xh430-w350/#혼과-베어링-교체
+      - title: "Horn, Gear Replacement"
+        titlekr: "혼과 기어 교체"
+        url: /dxl/x/xh430-w350/#horn-and-gear-replacement
+        urlkr: /dxl/x/xh430-w350/#혼과-기어-교체
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/x/xh430-w350/#reference
@@ -4659,10 +4659,10 @@ xl430-w250:
     url: /dxl/x/xl430-w250/#maintenance
     urlkr: /dxl/x/xl430-w250/#유지보수
     children:
-      - title: "Horn, Bearing"
-        titlekr: "혼과 베어링 교체"
-        url: /dxl/x/xl430-w250/#horn-and-bearing-replacement
-        urlkr: /dxl/x/xl430-w250/#혼과-베어링-교체
+      - title: "Horn, Gear Replacement"
+        titlekr: "혼과 기어 교체"
+        url: /dxl/x/xl430-w250/#horn-and-gear-replacement
+        urlkr: /dxl/x/xl430-w250/#혼과-기어-교체
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/x/xl430-w250/#reference
@@ -4890,10 +4890,10 @@ xm430-w210:
     url: /dxl/x/xm430-w210/#maintenance
     urlkr: /dxl/x/xm430-w210/#유지보수
     children:
-      - title: "Horn, Bearing"
-        titlekr: "혼과 베어링 교체"
-        url: /dxl/x/xm430-w210/#horn-and-bearing-replacement
-        urlkr: /dxl/x/xm430-w210/#혼과-베어링-교체
+      - title: "Horn, Gear Replacement"
+        titlekr: "혼과 기어 교체"
+        url: /dxl/x/xm430-w210/#horn-and-gear-replacement
+        urlkr: /dxl/x/xm430-w210/#혼과-기어-교체
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/x/xm430-w210/#reference
@@ -5121,10 +5121,10 @@ xm430-w350:
     url: /dxl/x/xm430-w350/#maintenance
     urlkr: /dxl/x/xm430-w350/#유지보수
     children:
-      - title: "Horn, Bearing"
-        titlekr: "혼과 베어링 교체"
-        url: /dxl/x/xm430-w350/#horn-and-bearing-replacement
-        urlkr: /dxl/x/xm430-w350/#혼과-베어링-교체
+      - title: "Horn, Gear Replacement"
+        titlekr: "혼과 기어 교체"
+        url: /dxl/x/xm430-w350/#horn-and-gear-replacement
+        urlkr: /dxl/x/xm430-w350/#혼과-기어-교체
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/x/xm430-w350/#reference
@@ -5358,10 +5358,10 @@ xm540-w150:
     url: /dxl/x/xm540-w150/#maintenance
     urlkr: /dxl/x/xm540-w150/#유지보수
     children:
-      - title: "Horn, Bearing"
-        titlekr: "혼과 베어링 교체"
-        url: /dxl/x/xm540-w150/#horn-and-bearing-replacement
-        urlkr: /dxl/x/xm540-w150/#혼과-베어링-교체
+      - title: "Horn, Gear Replacement"
+        titlekr: "혼과 기어 교체"
+        url: /dxl/x/xm540-w150/#horn-and-gear-replacement
+        urlkr: /dxl/x/xm540-w150/#혼과-기어-교체
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/x/xm540-w150/#reference
@@ -5595,10 +5595,10 @@ xm540-w270:
     url: /dxl/x/xm540-w270/#maintenance
     urlkr: /dxl/x/xm540-w270/#유지보수
     children:
-      - title: "Horn, Bearing"
-        titlekr: "혼과 베어링 교체"
-        url: /dxl/x/xm540-w270/#horn-and-bearing-replacement
-        urlkr: /dxl/x/xm540-w270/#혼과-베어링-교체
+      - title: "Horn, Gear Replacement"
+        titlekr: "혼과 기어 교체"
+        url: /dxl/x/xm540-w270/#horn-and-gear-replacement
+        urlkr: /dxl/x/xm540-w270/#혼과-기어-교체
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/x/xm540-w270/#reference
@@ -9513,85 +9513,87 @@ turtlebot3:
       url: /platform/turtlebot3/hardware_setup/#basic-operation
     - title: "Open Source Hardware"
       url: /platform/turtlebot3/hardware_setup/#open-source-hardware
-  - title: "PC Software Setup"
-    url: /platform/turtlebot3/pc_software_setup/#pc-software-setup
+  - title: "PC Setup"
+    url: /platform/turtlebot3/pc_setup/#pc-setup
     children:
     - title: "Install Ubuntu on Remote PC (Desktop or Laptop PC)"
-      url: /platform/turtlebot3/pc_software_setup/#install-ubuntu-on-remote-pc-desktop-or-laptop-pc
+      url: /platform/turtlebot3/pc_setup/#install-ubuntu-on-remote-pc-desktop-or-laptop-pc
     - title: "Install ROS on Remote PC"
-      url: /platform/turtlebot3/pc_software_setup/#install-ros-on-remote-pc
-      children:
-      - title: "First Method"
-        url: /platform/turtlebot3/pc_software_setup/#first-method
-      - title: "Second Method"
-        url: /platform/turtlebot3/pc_software_setup/#second-method
-      - title: "Configure ROS Environment"
-        url: /platform/turtlebot3/pc_software_setup/#configure-ros-environment
+      url: /platform/turtlebot3/pc_setup/#install-ros-on-remote-pc
     - title: "Install Dependent Packages"
-      url: /platform/turtlebot3/pc_software_setup/#install-dependent-packages
+      url: /platform/turtlebot3/pc_setup/#install-dependent-packages
     - title: "Network Configuration"
-      url: /platform/turtlebot3/pc_software_setup/#network-configuration
-  - title: "SBC Software Setup"
-    url: /platform/turtlebot3/sbc_software_setup/#sbc-software-setup
+      url: /platform/turtlebot3/pc_setup/#network-configuration
+  - title: "SBC Setup"
+    url: /platform/turtlebot3/sbc_setup/#sbc-setup
     children:
-    - title: "Install Linux on TurtleBot3 Burger and Waffle Pi (Raspberry Pi 3)"
-      url: /platform/turtlebot3/rpi3_software_setup/#install-linux-on-turtlebot3-burger-and-waffle-pi-raspberry-pi-3
-    - title: "[Short] Install Linux on TurtleBot3 Waffle (Intel® Joule™)"
-      url: /platform/turtlebot3/joule_software_setup/#short-install-linux-on-turtlebot3-waffle-intel-joule
-    - title: "[Long] Install Linux on TurtleBot3 Waffle (Intel® Joule™)"
-      url: /platform/turtlebot3/joule_software_setup/#long-install-linux-on-turtlebot3-waffle-intel-joule
-    - title: "Install ROS and Packages (Burger, Waffle and Waffle Pi)"
-      url: /platform/turtlebot3/sbc_common_software_setup/#install-ros-and-packages-burger-waffle-and-waffle-pi
+    - title: "Raspberry Pi 3"
+      url: /platform/turtlebot3/raspberry_pi_3_setup/#raspberry-pi-3-setup
       children:
-      - title: "First Method"
-        url: /platform/turtlebot3/sbc_common_software_setup/#first-method
-      - title: "Second Method"
-        url: /platform/turtlebot3/sbc_common_software_setup/#second-method
-      - title: "Third Method"
-        url: /platform/turtlebot3/sbc_common_software_setup/#third-method
-      - title: "Install Dependent Packages"
-        url: /platform/turtlebot3/sbc_common_software_setup/#install-dependent-packages
-    - title: "USB Settings (Burger, Waffle and Waffle Pi)"
-      url: /platform/turtlebot3/sbc_common_software_setup/#usb-settings-burger-waffle-and-waffle-pi
-    - title: "Network Configuration (Burger, Waffle and Waffle Pi)"
-      url: /platform/turtlebot3/sbc_common_software_setup/#network-configuration-burger-waffle-and-waffle-pi
-  - title: "OpenCR1.0 Software Setup"
-    url: /platform/turtlebot3/opencr1_0_software_setup/#opencr10-software-setup
+      - title: "Install Linux(Ubuntu MATE)"
+        url: /platform/turtlebot3/raspberry_pi_3_setup/#install-linux-ubuntu-mate
+        children:
+        - title: "Install ROS"
+          url: /platform/turtlebot3/raspberry_pi_3_setup/#install-ros
+        - title: "Install Dependent Packages"
+          url: /platform/turtlebot3/raspberry_pi_3_setup/#install-dependent-packages
+        - title: "USB Settings"
+          url: /platform/turtlebot3/raspberry_pi_3_setup/#usb-settings
+        - title: "Network Configuration"
+          url: /platform/turtlebot3/raspberry_pi_3_setup/#network-configuration
+      - title: "Install Linux based on Raspbian"
+        url: /platform/turtlebot3/raspberry_pi_3_setup/#install-linux-based-on-raspbian
+    - title: "Intel Joule"
+      url: /platform/turtlebot3/joule_setup/#joule-setup
+      children:
+      - title: "Install Linux(Ubuntu)"
+        url: /platform/turtlebot3/joule_setup/#install-linux-ubuntu
+        children:
+        - title: "Install ROS"
+          url: /platform/turtlebot3/joule_setup/#install-ros
+        - title: "Install Dependent Packages"
+          url: /platform/turtlebot3/joule_setup/#install-dependent-packages
+        - title: "USB Settings"
+          url: /platform/turtlebot3/joule_setup/#usb-settings
+        - title: "Network Configuration"
+          url: /platform/turtlebot3/joule_setup/#network-configuration
+  - title: "OpenCR Setup"
+    url: /platform/turtlebot3/opencr_setup/#opencr-setup
     children:
     - title: "ArduinoIDE Settings for OpenCR1.0"
-      url: /platform/turtlebot3/opencr1_0_software_setup/#arduinoide-settings-for-opencr10
+      url: /platform/turtlebot3/opencr_setup/#arduinoide-settings-for-opencr10
       children:
       - title: "USB Port Settings"
-        url: /platform/turtlebot3/opencr1_0_software_setup/#usb-port-settings
+        url: /platform/turtlebot3/opencr_setup/#usb-port-settings
       - title: "Compiler Settings"
-        url: /platform/turtlebot3/opencr1_0_software_setup/#compiler-settings
+        url: /platform/turtlebot3/opencr_setup/#compiler-settings
       - title: "Install Arduino IDE"
-        url: /platform/turtlebot3/opencr1_0_software_setup/#install-arduino-ide
+        url: /platform/turtlebot3/opencr_setup/#install-arduino-ide
       - title: "Run Arduino IDE"
-        url: /platform/turtlebot3/opencr1_0_software_setup/#run-arduino-ide
+        url: /platform/turtlebot3/opencr_setup/#run-arduino-ide
       - title: "Porting OpenCR1.0 to Arduino IDE"
-        url: /platform/turtlebot3/opencr1_0_software_setup/#porting-opencr10-to-arduino-ide
+        url: /platform/turtlebot3/opencr_setup/#porting-opencr10-to-arduino-ide
         children:
         - title: "Preferences"
-          url: /platform/turtlebot3/opencr1_0_software_setup/#preferences
+          url: /platform/turtlebot3/opencr_setup/#preferences
         - title: "Install OpenCR1.0 Package from Boards Manager"
-          url: /platform/turtlebot3/opencr1_0_software_setup/#install-opencr10-package-from-boards-manager
+          url: /platform/turtlebot3/opencr_setup/#install-opencr10-package-from-boards-manager
         - title: "Port Setting"
-          url: /platform/turtlebot3/opencr1_0_software_setup/#port-setting
+          url: /platform/turtlebot3/opencr_setup/#port-setting
       - title: "Writing Bootloader (can be skipped)"
-        url: /platform/turtlebot3/opencr1_0_software_setup/#writing-bootloader-can-be-skipped
+        url: /platform/turtlebot3/opencr_setup/#writing-bootloader-can-be-skipped
         children:
         - title: "Programmer Setting"
-          url: /platform/turtlebot3/opencr1_0_software_setup/#programmer-setting
+          url: /platform/turtlebot3/opencr_setup/#programmer-setting
         - title: "Entering the DFU Mode"
-          url: /platform/turtlebot3/opencr1_0_software_setup/#entering-the-dfu-mode
+          url: /platform/turtlebot3/opencr_setup/#entering-the-dfu-mode
         - title: "Download the Bootloader"
-          url: /platform/turtlebot3/opencr1_0_software_setup/#download-the-bootloader
+          url: /platform/turtlebot3/opencr_setup/#download-the-bootloader
     - title: "OpenCR1.0 Firmware Settings for ROS"
-      url: /platform/turtlebot3/opencr1_0_software_setup/#opencr10-firmware-settings-for-ros
+      url: /platform/turtlebot3/opencr_setup/#opencr10-firmware-settings-for-ros
       children:
       - title: "Add TurtleBot3 Firmware to OpenCR1.0"
-        url: /platform/turtlebot3/opencr1_0_software_setup/#add-turtlebot3-firmware-to-opencr10
+        url: /platform/turtlebot3/opencr_setup/#add-turtlebot3-firmware-to-opencr10
   - title: "Bringup"
     url: /platform/turtlebot3/bringup/#bringup
     children:
@@ -12886,86 +12888,152 @@ cm-700:
 #CM-900 Controller sidebar
 cm-900:
   - title: "Introduction"
+    titlekr: "개요"
     url: /parts/controller/cm-900/#introduction
+    urlkr: /parts/controller/cm-900/#개요
   - title: "Specifications"
+    titlekr: "주요 사양"
     url: /parts/controller/cm-900/#specifications
+    urlkr: /parts/controller/cm-900/#주요-사양
   - title: "Layout"
+    titlekr: "각 부 명칭"
     url: /parts/controller/cm-900/#layout
+    urlkr: /parts/controller/cm-900/#각-부-명칭
   - title: "USB Driver Install"
+    titlekr: "USB 드라이버 설치"
     url: /parts/controller/cm-900/#usb-driver-install
+    urlkr: /parts/controller/cm-900/#cm-900-usb-드라이버-설치
   - title: "Instructions"
+    titlekr: "소프트웨어 사용법"
     url: /parts/controller/cm-900/#instructions
+    urlkr: /parts/controller/cm-900/#소프트웨어-사용법
   - title: "Downloads"
+    titlekr: "다운로드"
     url: /parts/controller/cm-900/#downloads
+    urlkr: /parts/controller/cm-900/#cm-900-소프트웨어-다운로드
 
 #OpenCM 9.04 sidebar
 opencm904:
   - title: "Introduction"
+    titlekr: "개요"
     url: /parts/controller/opencm904/#introduction
+    urlkr: /parts/controller/opencm904/#개요
   - title: "Specifications"
+    titlekr: "제품 사양"
     url: /parts/controller/opencm904/#specifications
+    urlkr: /parts/controller/opencm904/#제품-사양
   - title: "Control Table"
+    titlekr: "컨트롤 테이블"
     url: /parts/controller/opencm904/#control-table
+    urlkr: /parts/controller/opencm904/#컨트롤-테이블
   - title: "Hardware"
+    titlekr: "하드웨어"
     url: /parts/controller/opencm904/#hardware
+    urlkr: /parts/controller/opencm904/#하드웨어
     children:
     - title: "Memory Map"
       url: /parts/controller/opencm904/#memory-map
     - title: "Block Diagram"
+      titlekr: "블럭 다이어그램"
       url: /parts/controller/opencm904/#block-diagram
+      urlkr: /parts/controller/opencm904/#블럭-다이어그램
     - title: "Layout / Pin Map"
+      titlekr: "각 부 명칭"
       url: /parts/controller/opencm904/#layoutpin-map
+      urlkr: /parts/controller/opencm904/#각-부-명칭
       children:
       - title: "Power Switch"
+        titlekr: "전원 스위치"
         url: /parts/controller/opencm904/#power-switch
+        urlkr: /parts/controller/opencm904/#전원-스위치
       - title: "Serial Battery Socket"
+        titlekr: "직렬 배터리 소켓"
         url: /parts/controller/opencm904/#serial-battery-socket
+        urlkr: /parts/controller/opencm904/#직렬-배터리-소켓
       - title: "Dynamixel TTL Socket"
+        titlekr: "다이나믹셀 TTL 소켓"
         url: /parts/controller/opencm904/#dynamixel-ttl-3-pin
+        urlkr: /parts/controller/opencm904/#다이나믹셀-ttl-소켓
       - title: "Communication Port"
+        titlekr: "통신포트"
         url: /parts/controller/opencm904/#communication-port
+        urlkr: /parts/controller/opencm904/#통신포트
       - title: "User Button"
+        titlekr: "사용자 버튼"
         url: /parts/controller/opencm904/#user-button
+        urlkr: /parts/controller/opencm904/#사용자-버튼
       - title: "Ext ADC Ref Jumper"
+        titlekr: "외부 ADC 기준전압 점퍼"
         url: /parts/controller/opencm904/#ext-adc-ref-jumper
+        urlkr: /parts/controller/opencm904/#외부-adc-기준전압-점퍼
       - title: "Micro-B USB"
+        titlekr: "Micro-B USB"
         url: /parts/controller/opencm904/#micro-b-usb
+        urlkr: /parts/controller/opencm904/#micro-b-usb
       - title: "Status LED"
+        titlekr: "상태"
         url: /parts/controller/opencm904/#status-led
+        urlkr: /parts/controller/opencm904/#상태-led
       - title: "Reset Button"
+        titlekr: "리셋 버튼"
         url: /parts/controller/opencm904/#reset-button
+        urlkr: /parts/controller/opencm904/#리셋-버튼
       - title: "JTAG/SWD Pin"
+        titlekr: "JTAG/SWD Pin"
         url: /parts/controller/opencm904/#jtagswd-4-pin
+        urlkr: /parts/controller/opencm904/#jtagswd-4-pin
       - title: "5 Pin Port"
+        titlekr: "5핀 포트"
         url: /parts/controller/opencm904/#5-pin-port
+        urlkr: /parts/controller/opencm904/#5핀-포트
       - title: "I/O Header"
+        titlekr: "입출력 IO헤더"
         url: /parts/controller/opencm904/#io-header
+        urlkr: /parts/controller/opencm904/#입출력-io헤더
     - title: "Pin Name Definition"
       url: /parts/controller/opencm904/#pin-name-definition
     - title: "Pin Function Definition"
       url: /parts/controller/opencm904/#pin-function-definition
   - title: "Connecting Power"
+    titlekr: "전원 연결 방법"
     url: /parts/controller/opencm904/#connecting-power
+    urlkr: /parts/controller/opencm904/#전원-연결-방법
   - title: "Switch Assembly(Type A)"
+    titlekr: "A타입 전원 스위치 추가하기"
     url: /parts/controller/opencm904/#switch-assemblytype-a
+    urlkr: /parts/controller/opencm904/#a타입-전원-스위치-추가하기
   - title: "Connector Assembly(Type A)"
+    titlekr: "A타입 다이나믹셀 TTL 커넥터 추가하기"
     url: /parts/controller/opencm904/#connector-assemblytype-a
+    urlkr: /parts/controller/opencm904/#a타입-다이나믹셀-ttl-커넥터-추가하기
   - title: "Development Environment"
+    titlekr: "소프트웨어 개발환경"
     url: /parts/controller/opencm904/#development-environment
+    urlkr: /parts/controller/opencm904/#소프트웨어-개발환경
     children:
     - title: "Softwares"
       url: /parts/controller/opencm904/#softwares
     - title: "OpenCM IDE"
+      titlekr: "OpenCM IDE"
       url: /parts/controller/opencm904/#opencm-ide
+      urlkr: /parts/controller/opencm904/#opencm-ide
     - title: "Arduino IDE"
+      titlekr: "아두이노 IDE"
       url: /parts/controller/opencm904/#arduino-ide
+      urlkr: /parts/controller/opencm904/#아두이도-ide
       children:
       - title: "Install on Linux"
+        titlekr: "리눅스에 설치하기"
         url: /parts/controller/opencm904/#install-on-linux
+        urlkr: /parts/controller/opencm904/#리눅스에-설치하기
       - title: "Install on Mac"
+        titlekr: "맥에 설치하기"
         url: /parts/controller/opencm904/#install-on-mac
+        urlkr: /parts/controller/opencm904/#맥에-설치하기
       - title: "Install on Windows"
+        titlekr: "윈도우즈에 설치하기"
         url: /parts/controller/opencm904/#install-on-windows
+        urlkr: /parts/controller/opencm904/#윈도우즈에-설치하기
     - title: "DynamixelWorkbench"
       url: /parts/controller/opencm904/#dynamixelworkbench
       children:
@@ -13001,35 +13069,57 @@ opencm904:
     - title: "0.96\" OLED LCD"
       url: /parts/controller/opencm904/#096-oled-lcd
   - title: "Downloads"
+    titlekr: "다운로드"
     url: /parts/controller/opencm904/#downloads
+    urlkr: /parts/controller/opencm904/#다운로드
   - title: "References"
+    titlekr: "참고자료"
     url: /parts/controller/opencm904/#references
+    urlkr: /parts/controller/opencm904/#참고자료
     children:
     - title: "Recovery Mode"
       url: /parts/controller/opencm904/#recovery-mode
     - title: "Install Windows Driver"
       url: /parts/controller/opencm904/#install-windows-driver
     - title: "Dimension"
+      titlekr: "도면"
       url: /parts/controller/opencm904/#dimension
+      urlkr: /parts/controller/opencm904/#도면
 
 #OpenCM 485 EXP sidebar
 opencm485exp:
   - title: "Introduction"
+    titlekr: "개요"
     url: /parts/controller/opencm485exp/#introduction
+    urlkr: /parts/controller/opencm485exp/#개요
   - title: "Specifications"
+    titlekr: "주요 사양"
     url: /parts/controller/opencm485exp/#specifications
+    urlkr: /parts/controller/opencm485exp/#주요-사양
   - title: "Layout"
+    titlekr: "각 부 명칭"
     url: /parts/controller/opencm485exp/#layout
+    urlkr: /parts/controller/opencm485exp/#각-부-명칭
   - title: "Connecting OpenCM9.04"
+    titlekr: "OpenCM과 연결하기"
     url: /parts/controller/opencm485exp/#connecting-opencm904
+    urlkr: /parts/controller/opencm485exp/#485-확장보드와-opencm-연결하기
   - title: "Power Circuit Connection"
+    titlekr: "전원 연결 회로"
     url: /parts/controller/opencm485exp/#power-circuit-connection
+    urlkr: /parts/controller/opencm485exp/#전원-연결-회로
   - title: "EXP Board Programming"
+    titlekr: "EXP 보드 프로그래밍"
     url: /parts/controller/opencm485exp/#exp-board-programming
+    urlkr: /parts/controller/opencm485exp/#opencm-485-확장보드-프로그래밍
   - title: "Button & LED"
+    titlekr: "버튼 및 LED 활용"
     url: /parts/controller/opencm485exp/#button--led
+    urlkr: /parts/controller/opencm485exp/#버튼-및-led-활용
   - title: "Downloads"
+    titlekr: "다운로드"
     url: /parts/controller/opencm485exp/#downloads
+    urlkr: /parts/controller/opencm485exp/#다운로드
 
 #OpenCR sidebar
 opencr10:

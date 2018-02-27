@@ -610,7 +610,7 @@ digitalWrite(13, HIGH); //13번핀에 HIGH를 출력합니다.
 digitalWrite(13,LOW); //13번핀에 LOW를 출력합니다.
 ```
 
-핀 13번이 LOW일 때 GND(-극)이 되어서 전류가 흐르기 때문에 LED가 켜집니다. 반드로 HIGH가 핀13번이 3.3V가 되어서 전류가 흐를수 없기 때문에 LED가 꺼집니다.
+핀 13번이 LOW일 때 GND(-극)이 되어서 전류가 흐르기 때문에 LED가 켜집니다. HIGH가 핀13번이 3.3V가 되어서 전류가 흐를수 없기 때문에 LED가 꺼집니다.
 이러한 원리로 LED가 깜빡이는 스케치 코드를 작성합니다.
 
 ```c
@@ -621,7 +621,7 @@ void setup(){
 void loop(){
   digitalWrite(13, HIGH);
   delay(100); //0.1 초 지연
-  delay(100); //0.1 초 지연
+  digitalWrite(13, LOW);
   delay(100); //0.1 초 지연
 }
 ```
