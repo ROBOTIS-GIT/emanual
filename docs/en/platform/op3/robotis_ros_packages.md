@@ -845,18 +845,18 @@ The following are Messages and Service used for the [op3_offset_tuner_server] an
  4) And copy the page 1 to page [x].  
    ![](/assets/images/platform/op3/thormang3_action_editor_tui_action_editing_example3.jpg)
 
- 3) Go to "walking_init" pose by typing "play"  
+ 5) Go to "walking_init" pose by typing "play"  
 
- 5) Turn off the torque of ID 2, 4 and 8 by typing "off 2 4 8"  
+ 6) Turn off the torque of ID 2, 4 and 8 by typing "off 2 4 8"  
    ![](/assets/images/platform/op3/thormang3_action_editor_tui_action_editing_example4.jpg)
 
- 6) After getting the desired pose turn torque on again by simple typing on. And insert the pose to step 1 by typing "i 1"  
+ 7) After getting the desired pose turn torque on again by simple typing on. And insert the pose to step 1 by typing "i 1"  
    ![](/assets/images/platform/op3/thormang3_action_editor_tui_action_editing_example5.jpg)
 
- 7) Edit "Pause Time", "Time" of STP1 and "Page Step" as shown below.  
+ 8) Edit "Pause Time", "Time" of STP1 and "Page Step" as shown below.  
    ![](/assets/images/platform/op3/thormang3_action_editor_tui_action_editing_example6.jpg)
 
- 8) Type "play" and check the ROBOTIS-OP3's action  
+ 9) Type "play" and check the ROBOTIS-OP3's action  
 
 #### [op3_gui_demo](#op3-gui-demo)
 

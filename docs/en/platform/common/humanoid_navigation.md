@@ -17,21 +17,30 @@ sidebar:
 > Source : [https://github.com/AravindaDP/humanoid_navigation]
 
 ## Prerequisite Packages : map_server, humanoid_nav_msgs, nav_msgs, sbpl, etc
-  * Installation packages
-```
-$ sudo apt-get install ros-kinetic-map-server
-$ sudo apt-get install ros-kinetic-humanoid-nav-msgs
-$ sudo apt-get install ros-kinetic-nav-msgs
-$ sudo apt-get install ros-kinetic-octomap
-$ sudo apt-get install ros-kinetic-octomap-msgs
-$ sudo apt-get install ros-kinetic-octomap-ros
-$ sudo apt-get install ros-kinetic-octomap-server
-```
-  * Building and Installing from source
-    * sbpl  
+Package for footstep planner.
+- Installation prerequisite packages
+  ```
+  $ sudo apt-get install ros-kinetic-map-server
+  $ sudo apt-get install ros-kinetic-humanoid-nav-msgs
+  $ sudo apt-get install ros-kinetic-nav-msgs
+  $ sudo apt-get install ros-kinetic-octomap
+  $ sudo apt-get install ros-kinetic-octomap-msgs
+  $ sudo apt-get install ros-kinetic-octomap-ros
+  $ sudo apt-get install ros-kinetic-octomap-server
+  ```  
 
-     > Reference : [https://github.com/sbpl/sbpl]
+- Installation library from sources
+  * sbpl  
 
+    > Reference : [https://github.com/sbpl/sbpl]
+
+
+- Installation humanoid_navigation
+  ```
+  $ cd ~/catkin_ws/src
+  $ git clone https://github.com/AravindaDP/humanoid_navigation.git
+  $ cd ~/catkin_ws
+  ```
 
 ## footstep_planner  
 ### Overview  
