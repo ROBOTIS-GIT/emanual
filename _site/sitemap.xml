@@ -1030,7 +1030,7 @@
 <loc>http://localhost:4000/docs/en/software/dynamixel/dynamixel_sdk/library_setup/java_windows/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/docs/en/platform/turtlebot3/joule_software_setup/</loc>
+<loc>http://localhost:4000/docs/en/platform/turtlebot3/joule_setup/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/docs/en/dxl/pro/l42-10-s300-r/</loc>
@@ -1522,7 +1522,7 @@
 <loc>http://localhost:4000/docs/kr/parts/controller/opencr10/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/docs/en/platform/turtlebot3/opencr1_0_software_setup/</loc>
+<loc>http://localhost:4000/docs/en/platform/turtlebot3/opencr_setup/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/docs/en/platform/openmanipulator/</loc>
@@ -1543,7 +1543,7 @@
 <loc>http://localhost:4000/docs/kr/software/dynamixel/dynamixel_sdk/overview/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/docs/en/platform/turtlebot3/pc_software_setup/</loc>
+<loc>http://localhost:4000/docs/en/platform/turtlebot3/pc_setup/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/docs/en/parts/sensor/pir-10/</loc>
@@ -1723,7 +1723,7 @@
 <loc>http://localhost:4000/docs/en/platform/op3/robotis_ros_packages/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/docs/en/platform/turtlebot3/rpi3_software_setup/</loc>
+<loc>http://localhost:4000/docs/en/platform/turtlebot3/rpi3_setup/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/docs/kr/software/mobile_app/rplusiot/</loc>
@@ -1762,10 +1762,7 @@
 <loc>http://localhost:4000/docs/kr/dxl/rx/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/docs/en/platform/turtlebot3/sbc_common_software_setup/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/docs/en/platform/turtlebot3/sbc_software_setup/</loc>
+<loc>http://localhost:4000/docs/en/platform/turtlebot3/sbc_setup/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/docs/en/software/rplus2/scratch/</loc>
@@ -1883,6 +1880,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/docs/kr/edu/bioloid/stem/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/docs/en/platform/turtlebot3/step_by_step_to_install_ubuntu_on_joule/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/docs/en/software/rplus2/task/</loc>
