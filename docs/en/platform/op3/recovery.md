@@ -15,7 +15,7 @@ sidebar:
 
 # [Recovery](#recovery)
 
-## [Manual Installation](#manual-installation)
+## [OP3 Manual Installation](#op3-manual-installation)
 
 ### Overview
 This chapter explains how to install software and configure ROBOTIS OP3.
@@ -28,17 +28,17 @@ This chapter explains how to install software and configure ROBOTIS OP3.
   > Reference : [How to Install Linux Mint]
 
 #### PC Setting
- - WiFi Hotspot
-	1. Click the Network icon from the bottom right corner of the system tray and select "Edit Connections...".
-	2. In the Network Connections window, click Add button.
-	3. In the Choose a Connection Type window, select Wi-Fi from the Hardware group.
-	4. Click Create... button.
-	5. Modify the Connection name to "OP3-Hotspot" in the new window.
-	6. Change the SSID to "ROBOTIS-OP3-share" in the Wi-Fi tab.
-	7. Select Hotspot Mode and click Save button.
-	8. Close the Network Connections window.
-	9. Click the Network icon from the bottom right corner of the system tray and select "Connect to Hidden Wi-Fi Network...".
-	10. Select OP3-Hotspot for the Connection in the Hidden Wi-Fi network and click Connect button.
+- WiFi Hotspot
+ 1. Click the Network icon from the bottom right corner of the system tray and select "Edit Connections...".
+ 2. In the Network Connections window, click Add button.
+ 3. In the Choose a Connection Type window, select Wi-Fi from the Hardware group.
+ 4. Click Create... button.
+ 5. Modify the Connection name to "OP3-Hotspot" in the new window.
+ 6. Change the SSID to "ROBOTIS-OP3-share" in the Wi-Fi tab.
+ 7. Select Hotspot Mode and click Save button.
+ 8. Close the Network Connections window.
+ 9. Click the Network icon from the bottom right corner of the system tray and select "Connect to Hidden Wi-Fi Network...".
+ 10. Select OP3-Hotspot for the Connection in the Hidden Wi-Fi network and click Connect button.
 
 
 - Other Settings
@@ -104,18 +104,22 @@ This chapter explains how to install software and configure ROBOTIS OP3.
 
 #### Installing additional applications for ROBOTIS ROS Package   
  Prerequisites for ROBOTIS ROS package  
-  - ROBOTIS-OP3 : libncurses5-dev, v4l-utils
-    ```
-    $ sudo apt install libncurses5-dev
-    ```  
-  - ROBOTIS-Utility : madplay, mpg321  
-    ```
-    $ sudo apt install madplay mpg321
-    ```
-  - ETC : g++, git
-    ```
-    $ sudo apt install g++ git
-    ```  
+ - ROBOTIS-OP3 : libncurses5-dev, v4l-utils
+   ```
+   $ sudo apt install libncurses5-dev v4l-utils
+   ```  
+ - ROBOTIS-ROBOTIS-Optimization : scilab
+   ```
+   $ sudo apt install scilab
+   ```   
+ - ROBOTIS-Utility : madplay, mpg321  
+   ```
+   $ sudo apt install madplay mpg321
+   ```
+ - ETC : g++, git
+   ```
+   $ sudo apt install g++ git
+   ```  
 
 #### Installing ROS packages for ROBOTIS-OP3
 - face_detection  
@@ -166,6 +170,7 @@ This chapter explains how to install software and configure ROBOTIS OP3.
    -  [ROBOTIS-OP3-Tools] : This package contains useful tools for ROBOTIS-OP3
    -  [ROBOTIS-OP3-Common]
    -  ROBOTIS-Utility   
+   -  ROBOTIS-Optimization
 
  - How to install ROBOTIS ROS packages
    - Download sources from Github.  
@@ -181,6 +186,7 @@ This chapter explains how to install software and configure ROBOTIS OP3.
       $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Tools.git
       $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Common.git
       $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-Utility.git
+      $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-Optimization.git
       ```
 
    - Build downloaded sources.  
