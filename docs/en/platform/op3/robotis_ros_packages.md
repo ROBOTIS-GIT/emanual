@@ -533,10 +533,10 @@ Messages and Services used in the [op3_online_walking_module]
 The following are Messages and Service used for the [op3_offset_tuner_server] and the [op3_offset_tuner_client].  
 
 ##### ROS Message Type
- * [JointOffsetData.msg]{: .popup}
- * [JointOffsetPositionData.msg]{: .popup}
- * [JointTorqueOnOff.msg]{: .popup}
- * [JointTorqueOnOffArray.msg]{: .popup}
+* [JointOffsetData.msg]{: .popup}
+* [JointOffsetPositionData.msg]{: .popup}
+* [JointTorqueOnOff.msg]{: .popup}
+* [JointTorqueOnOffArray.msg]{: .popup}
 
 ##### ROS Service Type  
  * [GetPresentJointOffsetData.srv]{: .popup}
@@ -546,8 +546,8 @@ The following are Messages and Service used for the [op3_offset_tuner_server] an
 #### [ball_detector](#ball-detector)
 
 ##### Overview
- This chapter explain ball detecting package for ROBOTIS OP3's vision demonstration.  
- The package utilizes OpenCV library in order to search for a ball with a specific color.
+This chapter explain ball detecting package for ROBOTIS OP3's vision demonstration.  
+The package utilizes OpenCV library in order to search for a ball with a specific color.
 
 ##### Getting started
 
@@ -555,88 +555,88 @@ The following are Messages and Service used for the [op3_offset_tuner_server] an
   > Reference : [Installing ROBOTIS ROS Package]    
 
 ###### Run
- - Standalone   
- Execute the program with a `.launch` file in order to load ROS parameters of ball_detector.  
-    ```
-    $ roslaunch ball_detector ball_detector.launch
-    ```
+- Standalone   
+Execute the program with a `.launch` file in order to load ROS parameters of ball_detector.  
+  ```
+  $ roslaunch ball_detector ball_detector.launch
+  ```
 
- - Launch with usb_cam package  
- Execute the program with a `.launch` file in order to load ROS parameters.  
-    ```
-    $ roslaunch ball_detector ball_detector_from_usb_cam.launch
-    ```
-   > Reference : [`usb_cam`]  
-   > Reference : The following software must be pre-installed to use `usb_cam` package.  
-   > `$ sudo apt-get install v4l-utils`
+- Launch with usb_cam package  
+Execute the program with a `.launch` file in order to load ROS parameters.  
+  ```
+  $ roslaunch ball_detector ball_detector_from_usb_cam.launch
+  ```
+ > Reference : [`usb_cam`]  
+ > Reference : The following software must be pre-installed to use `usb_cam` package.  
+ > `$ sudo apt-get install v4l-utils`
 
 ##### ROS API
 
 ###### Subscribed Topics  
- `~/enable`([std_msgs/Bool]{: .popup})  
- &emsp;&emsp; OP3 will start searching for a ball with a `True` message, and stop with a `False` message.  
+`~/enable`([std_msgs/Bool]{: .popup})  
+&emsp;&emsp; OP3 will start searching for a ball with a `True` message, and stop with a `False` message.  
 
- `~/image_in`([sensor_msgs/Image]{: .popup})  
- &emsp;&emsp; The message in this topic contains camera input image for ball searching.  
+`~/image_in`([sensor_msgs/Image]{: .popup})  
+&emsp;&emsp; The message in this topic contains camera input image for ball searching.  
 
- `~/cameraInfo_in`([sensor_msgs/CameraInfo]{: .popup})  
- &emsp;&emsp; The message in this topic contains camera information of the corresponding input image.  
+`~/cameraInfo_in`([sensor_msgs/CameraInfo]{: .popup})  
+&emsp;&emsp; The message in this topic contains camera information of the corresponding input image.  
 
 ###### Published Topics  
- `~/image_out`([sensor_msgs/Image]{: .popup})  
- &emsp;&emsp; The message in this topic contains an output image after the ball searching process.  
+`~/image_out`([sensor_msgs/Image]{: .popup})  
+&emsp;&emsp; The message in this topic contains an output image after the ball searching process.  
 
- `~/camera_info`([sensor_msgs/CameraInfo]{: .popup})  
- &emsp;&emsp; The message in this topic contains camera information of the output image.  
+`~/camera_info`([sensor_msgs/CameraInfo]{: .popup})  
+&emsp;&emsp; The message in this topic contains camera information of the output image.  
 
- `~/circle_set`([ball_detector/circleSetStamped]{: .popup})  
- &emsp;&emsp; Detected ball information
-   - `header`([std_msgs/Header]{: .popup}) : Header information
-   - `circles`([geometry_msgs/Point]{: .popup}) : Detecetd balls
-     - `x` X coordinate of the center of ball in the image coordinate system
-     - `y` Y coordinate of the center of ball in the image coordinate system
-     - `z` Radius of the detected ball
+`~/circle_set`([ball_detector/circleSetStamped]{: .popup})  
+&emsp;&emsp; Detected ball information
+ - `header`([std_msgs/Header]{: .popup}) : Header information
+ - `circles`([geometry_msgs/Point]{: .popup}) : Detecetd balls
+   - `x` X coordinate of the center of ball in the image coordinate system
+   - `y` Y coordinate of the center of ball in the image coordinate system
+   - `z` Radius of the detected ball
 
 ##### Parameters
- `/yaml_path`(string, default : "")  
- &emsp;&emsp; The path of the yaml file that saves parameters.
+`/yaml_path`(string, default : "")  
+&emsp;&emsp; The path of the yaml file that saves parameters.
 
- `/gaussian_blur_size`(int, default : )  
- &emsp;&emsp;   
+`/gaussian_blur_size`(int, default : )  
+&emsp;&emsp;   
 
- `/gaussian_blur_sigma`(double, default : )  
- &emsp;&emsp;   
+`/gaussian_blur_sigma`(double, default : )  
+&emsp;&emsp;   
 
- `/canny_edge_th`(double, default : )  
- &emsp;&emsp;   
+`/canny_edge_th`(double, default : )  
+&emsp;&emsp;   
 
- `/hough_accum_resolution`(double, default : )  
- &emsp;&emsp;   
+`/hough_accum_resolution`(double, default : )  
+&emsp;&emsp;   
 
- `/min_circle_dist`(double, default : )  
- &emsp;&emsp;   
+`/min_circle_dist`(double, default : )  
+&emsp;&emsp;   
 
- `/hough_accum_th`(double, default : )  
- &emsp;&emsp;   
+`/hough_accum_th`(double, default : )  
+&emsp;&emsp;   
 
- `/min_radius`, `/max_radius`(int, default : )  
- &emsp;&emsp; Minimum and maximum radius of the ball to detect
+`/min_radius`, `/max_radius`(int, default : )  
+&emsp;&emsp; Minimum and maximum radius of the ball to detect
 
- `/filter_h_min`, `/filter_h_max`(int, default : )  
- &emsp;&emsp; Minimum and maximum value of H filter in HSV color representation  
- > Reference : [HSV color]
+`/filter_h_min`, `/filter_h_max`(int, default : )  
+&emsp;&emsp; Minimum and maximum value of H filter in HSV color representation  
+> Reference : [HSV color]
 
- `/filter_s_min`, `/filter_s_max`(int, default : )  
- &emsp;&emsp; Minimum and maximum value of S filter in HSV color representation  
+`/filter_s_min`, `/filter_s_max`(int, default : )  
+&emsp;&emsp; Minimum and maximum value of S filter in HSV color representation  
 
- `/filter_v_min`, `/filter_v_max`(int, default : )  
- &emsp;&emsp; Minimum and maximum value of V filter in HSV color representation  
+`/filter_v_min`, `/filter_v_max`(int, default : )  
+&emsp;&emsp; Minimum and maximum value of V filter in HSV color representation  
 
- `/use_second_filter`(bool, default : )  
- &emsp;&emsp; Enable second color filter  
+`/use_second_filter`(bool, default : )  
+&emsp;&emsp; Enable second color filter  
 
- `/filter_debug`(bool, default : )  
- &emsp;&emsp; Enable output image for debugging  
+`/filter_debug`(bool, default : )  
+&emsp;&emsp; Enable output image for debugging  
 
 ##### How to change the parameters
 
@@ -647,9 +647,9 @@ The following are Messages and Service used for the [op3_offset_tuner_server] an
 #### [op3_demo](#op3-demo)
 
 ##### Overview
- Basic demonstrations of OP3 are playing soccer, vision and sequence of various actions.  
- Playing soccer and action sequence are originated from OP2.  
- Face detection and tracking will be demonstrated for vision.  
+Basic demonstrations of OP3 are playing soccer, vision and sequence of various actions.  
+Playing soccer and action sequence are originated from OP2.  
+Face detection and tracking will be demonstrated for vision.  
 
 ##### Getting started
 
@@ -657,11 +657,11 @@ The following are Messages and Service used for the [op3_offset_tuner_server] an
   > Reference : [Installing ROBOTIS ROS Package]  
 
 ###### Run
- - Execute `.launch` file to initiate demonstration  
-   ```
-   $ roslaunch op3_demo demo.launch
-   ```
- - With a successful launch of the program, OP3 will announce that it is ready for the demonstration.  
+- Execute `.launch` file to initiate demonstration  
+ ```
+ $ roslaunch op3_demo demo.launch
+ ```
+- With a successful launch of the program, OP3 will announce that it is ready for the demonstration.  
 
 ###### Usage
   > Reference : [How to execute Default Demo]
@@ -684,80 +684,76 @@ The following are Messages and Service used for the [op3_offset_tuner_server] an
  ROS APIs used in each demo will be explained in corresponding wiki pages.  
 
 ###### Subscribed Topics
- `/robotis/open_cr/button"`([std_msgs/String]{: .popup}
- )  
- &emsp;&emsp; The message in this topic is used to process button control.
+`/robotis/open_cr/button"`([std_msgs/String]{: .popup})  
+&emsp;&emsp; The message in this topic is used to process button control.
 
 ###### Published Topics
- `/robotis/base/ini_pose`([std_msgs/String]{: .popup}
- )  
- &emsp;&emsp; The message in this topic is used for initial posture of ROBOTIS-OP3.
+`/robotis/base/ini_pose`([std_msgs/String]{: .popup})  
+&emsp;&emsp; The message in this topic is used for initial posture of ROBOTIS-OP3.
 
- `/robotis/sync_write_item`([std_msgs/String]{: .popup}
- )  
- &emsp;&emsp; This topic has a message to sync write data on ROBOTIS-OP3   
- &emsp;&emsp; ex) LED controls
+`/robotis/sync_write_item`([std_msgs/String]{: .popup})  
+&emsp;&emsp; This topic has a message to sync write data on ROBOTIS-OP3   
+&emsp;&emsp; ex) LED controls
 
- `/play_sound_file`([std_msgs/String]{: .popup}
- )  
- &emsp;&emsp; The message in this topic contains path of the voice file for verbal announcement.
+`/play_sound_file`([std_msgs/String]{: .popup})  
+&emsp;&emsp; The message in this topic contains path of the voice file for verbal announcement.
 
 ##### Demos
- The followings are the list of available demonstration.  
- Buttons on the back of ROBOTIS-OP3 can be used to select and play demo.  
+The followings are the list of available demonstration.  
+Buttons on the back of ROBOTIS-OP3 can be used to select and play demo.  
 ###### [Soccer Demo](#soccer-demo)
-   OP3 will search for a colored ball selected by the user and play with it.
+OP3 will search for a colored ball selected by the user and play with it.
 
 ###### [Vision Demo](#vision-demo)
-   OP3 will detect face and trace it.
+OP3 will detect face and trace it.
 
 ###### [Action Demo](#action-demo)
-   OP3 will play sequence of pre-defined actions while speaking.
+OP3 will play sequence of pre-defined actions while speaking.
 
 ### [ROBOTIS OP3 Common](#robotis-op3-common)
 
 #### [robotis_op3_description](#robotis-op3-description)
 
 ##### Overview
- ROBOTIS OP3 URDF Model  
+ROBOTIS OP3 URDF Model  
 
- ![](/assets/images/platform/op3/op3_urdf_rviz.png)
+![](/assets/images/platform/op3/op3_urdf_rviz.png)
 
 ##### Make a URDF Model
- [URDF-ROS Wiki]
+[URDF-ROS Wiki]
 
 ##### Package
- `doc` : document for ROBOTIS OP3 joint & link information   
- `launch` : launch file to execute Rviz   
- `stl` : STL files of ROBOTIS OP3's each parts   
- `src` : ROS node for Rviz to publish imaginary gripper joint   
- `urdf` : urdf & xacro files for Thormang3 model
+`doc` : document for ROBOTIS OP3 joint & link information   
+`launch` : launch file to execute Rviz   
+`stl` : STL files of ROBOTIS OP3's each parts   
+`src` : ROS node for Rviz to publish imaginary gripper joint   
+`urdf` : urdf & xacro files for Thormang3 model
 
 #### [robotis_op3_gazebo](#robotis-op3-gazebo)
 
 ##### Overview
- ROBOTIS OP3 Gazebo Simulation
+ROBOTIS OP3 Gazebo Simulation
 
 ##### Gazebo with ROS
- [Connect to ROS]
+[Connect to ROS]
 
 ##### Package
- `config` : ROS controller for gazebo   
- `launch` : launch files to execute gazebo simulation   
- `worlds` : simulation environments   
+`config` : ROS controller for gazebo   
+`launch` : launch files to execute gazebo simulation   
+`worlds` : simulation environments   
 
 ### [ROBOTIS OP3 Tools](#robotis-op3-tools)
 
 #### [op3_action_editor](#op3-action-editor)
 
 ##### Overview   
- ROBOTIS-OP3 Action Editor Node   
- This chapter explains how to create and edit action file used in the [op3_action_module] of ROBOTIS-OP3.   
+ROBOTIS-OP3 Action Editor Node   
+This chapter explains how to create and edit action file used in the [op3_action_module] of ROBOTIS-OP3.   
 
 ###### Action File
- The action file contains ROBOTIS-OP3?�s poses and time data. The current position describes positions of Dynamixels which converted from actual Dynamixel resolution to 4095 resolution. The action file is written as binary file so users can read its contents with op3_action_editor. ROBOTIS currently provides a default action file with source code. It is located in "op3_action_module/data" directory.  
+The action file contains ROBOTIS-OP3?�s poses and time data. The current position describes positions of Dynamixels which converted from actual Dynamixel resolution to 4095 resolution. The action file is written as binary file so users can read its contents with op3_action_editor. ROBOTIS currently provides a default action file with source code. It is located in "op3_action_module/data" directory.  
 
- The action file contains 256 pages. Each page can store up to 7 stages (or steps) of action data. The default action file does not use all pages and user can add own actions by writing them on the empty page.   
+The action file contains 256 pages. Each page can store up to 7 stages (or steps) of action data. The default action file does not use all pages and user can add own actions by writing them on the empty page.   
 
 ##### Getting started
 
@@ -765,35 +761,35 @@ The following are Messages and Service used for the [op3_offset_tuner_server] an
   > Reference : [Installing ROBOTIS ROS Package]  
 
 ###### Run
- Execute the launch file.  
-  `op3_action_editor` has a direct control over ROBOTIS-OP3, therefore other control programs such as `op3_manager`, `op3_offset_tuner` and `op3_walking_tuner` should not be running.  
- Before executing the `op3_action_editor` launch file, other programs should be terminated.  
- ```
- $ roslaunch op3_action_editor op3_action_editor.launch
- ```
+Execute the launch file.  
+`op3_action_editor` has a direct control over ROBOTIS-OP3, therefore other control programs such as `op3_manager`, `op3_offset_tuner` and `op3_walking_tuner` should not be running.  
+Before executing the `op3_action_editor` launch file, other programs should be terminated.  
+```
+$ roslaunch op3_action_editor op3_action_editor.launch
+```
 
 ###### UI
 
- ![](/assets/images/platform/op3/thormang3_action_editor_tui.jpg)
+![](/assets/images/platform/op3/thormang3_action_editor_tui.jpg)
 
- **Page number**: Page number is the listed page number. If user wants to create a new action poses, user can use any empty page.  
- **Page title**: ROBOTIS recommends user to use a page title when creating a new action on an empty page.  
- **Current position**: The current position describes position of Dynamixel which converted from actual Dynamixel resolution to 4095 resolution. This data is represented by STP7 in op3_action_editor. Sometimes the position may be read as ---- in op3_action_editor. This means position of the Dynamixel has not been read (or torque is off).
- If user turns the Dynamixel off, current position cannot be read until turn it back on.
- User can turn off the torque of specific Dynamixels. This is very convenient when acquiring position values directly from Dynamixels for a new robot posture instead of calculating those values. To do that, turn off the torque of desired Dynamixels, then make a posture and hold the robot joint by hand until turn the torque back on. The robot will be remaining at current posture and user can read position values of corresponding Dynamixels.  
- **Steps or stages**: Each page can store up to 7 steps, from STP0 to STP6. However, some actions may be required more than 7 stages to perform completely. This can be resolved by simply using multiple pages and link them with
- **Next**: Next indicates whether to continue action on a different page. To continue actions, just list the page number where the action is to be continued. Number 0 indicates that action does not continue onto another page (default value). Linking page does not have to have the numerical order.  
- **Play Count**: Play Count is the number of times the action of the page is to be played.  
- **Exit**: There might be some cases when an action has to be stopped. In these cases, the robot may be in unstable position. Exit is much like "Next", so "Exit" should be linked to a page where ROBOTIS-OP3 can return to a stable pose. If "Exit" is 0, it means that there is no linked exit page (default value).  
- Tip: When calling an action requires multiple pages, ROBOTIS strongly suggests user to call the action from the starting page. For example, clap starts at page 7 and ends at page 8. This means you should call page 7 when calling clap. Calling the page 8 may cause unexpected behavior of the robot.  
- **STP7**: "STP7" column is the current position of the Dynamixel which converted to 4095 resolution from its original resolution. "----" means that torque has been released.  
- **PauseTime**: "PauseTime" is the pause duration period for motion playback for step STP[x].  
- **Time(x 8msec)** : "Time" is the time period for ROBOTIS-OP3 to complete step STP[x]. Each time unit account for 8ms of time.  
+**Page number**: Page number is the listed page number. If user wants to create a new action poses, user can use any empty page.  
+**Page title**: ROBOTIS recommends user to use a page title when creating a new action on an empty page.  
+**Current position**: The current position describes position of Dynamixel which converted from actual Dynamixel resolution to 4095 resolution. This data is represented by STP7 in op3_action_editor. Sometimes the position may be read as ---- in op3_action_editor. This means position of the Dynamixel has not been read (or torque is off).
+If user turns the Dynamixel off, current position cannot be read until turn it back on.
+User can turn off the torque of specific Dynamixels. This is very convenient when acquiring position values directly from Dynamixels for a new robot posture instead of calculating those values. To do that, turn off the torque of desired Dynamixels, then make a posture and hold the robot joint by hand until turn the torque back on. The robot will be remaining at current posture and user can read position values of corresponding Dynamixels.  
+**Steps or stages**: Each page can store up to 7 steps, from STP0 to STP6. However, some actions may be required more than 7 stages to perform completely. This can be resolved by simply using multiple pages and link them with
+**Next**: Next indicates whether to continue action on a different page. To continue actions, just list the page number where the action is to be continued. Number 0 indicates that action does not continue onto another page (default value). Linking page does not have to have the numerical order.  
+**Play Count**: Play Count is the number of times the action of the page is to be played.  
+**Exit**: There might be some cases when an action has to be stopped. In these cases, the robot may be in unstable position. Exit is much like "Next", so "Exit" should be linked to a page where ROBOTIS-OP3 can return to a stable pose. If "Exit" is 0, it means that there is no linked exit page (default value).  
+Tip: When calling an action requires multiple pages, ROBOTIS strongly suggests user to call the action from the starting page. For example, clap starts at page 7 and ends at page 8. This means you should call page 7 when calling clap. Calling the page 8 may cause unexpected behavior of the robot.  
+**STP7**: "STP7" column is the current position of the Dynamixel which converted to 4095 resolution from its original resolution. "----" means that torque has been released.  
+**PauseTime**: "PauseTime" is the pause duration period for motion playback for step STP[x].  
+**Time(x 8msec)** : "Time" is the time period for ROBOTIS-OP3 to complete step STP[x]. Each time unit account for 8ms of time.  
 
- It is strongly advised that when user tests user's own newly-created or edited actions, there should be small incremental changes in position, speed/time, and pause values for the sake of ROBOTIS-OP3's stability.  
+It is strongly advised that when user tests user's own newly-created or edited actions, there should be small incremental changes in position, speed/time, and pause values for the sake of ROBOTIS-OP3's stability.  
 
 ###### The Contents of The Default Action File
- The below table shows the contents of the default action file.  
+The below table shows the contents of the default action file.  
 
 | page number | page title | brief description of page                             | number of pages |
 |-------------|------------|-------------------------------------------------------|-----------------|
@@ -811,71 +807,76 @@ The following are Messages and Service used for the [op3_offset_tuner_server] an
 |     13      |  ceremony  | ceremony                                              |        1        |
 
 ###### Basic Command of Action Editor
- After typing "help", the commend list will appear as shown below.  
+After typing "help", the commend list will appear as shown below.  
 
- ![](/assets/images/platform/op3/thormang3_action_editor_tui_command_list.jpg)
+![](/assets/images/platform/op3/thormang3_action_editor_tui_command_list.jpg)
 
- **exit**: exits the program.  
- **re**: refreshes the screen.  
- **b**: moves to the previous page.  
- **n**: moves to the next page.  
- **page [index]**: moves to the [index] page. For example typing page 5 outputs data from page 5 on screen.  
- **list**: outputs a list of pages.  
- **new**: initializes current page by clearing all actuator position data.  
- **copy [index]**: copies data from page [index] to current page. For example if you are on page 5 and want to copy page 9 then type copy 9.  
- **set [value]**: sets position value on chosen actuator. For example If you want ID19 (head pan) to have a value of 512 then using the keyboard's directional keys place the cursor on ID19 and type set 512.  
- **save**: saves any changes you've made. the saved motion file (motion_4096.bin can be found at "op3_action_module/data")  
- **play**: plays motion(s) of current page.  
- **name**: changes the name of the current page. You can view the name of the page at the top right portion of the screen. For example, page 2 is titled hello; to change the name type name and press the "ENTER" key. "name:" will appear at the bottom of the screen. Input the desired name for the page, good for instance, and press the "ENTER" key again.  
- **i**: inserts data from STP7 to STP0. Moves data from STP[x] to STP[x + 1] if any.  
- **i [index]**: inserts data from STP7 to STP[index]. Moves data from STP[index] to STP[index + 1] if any.  
- **m [index] [index2]**: moves data from [index2] to [index].  
- **d [index]**: deletes data from STP[index]. Moves data from STP[index] to STP[index - 1].  
- **on/off**: turns on/off torque from all Dynamixels.  
- **on/off [index1] [index2] [index3] ??** : turns torque on/off from ID[index1] ID[index2] ID[index3]. For example off 20 releases torque from ID20. Notice that STP7 for ID20 will read [----]. Typing on 20 turns torque from ID20 on again and the screen outputs the current position data of ID20.  
+**exit**: exits the program.  
+**re**: refreshes the screen.  
+**b**: moves to the previous page.  
+**n**: moves to the next page.  
+**page [index]**: moves to the [index] page. For example typing page 5 outputs data from page 5 on screen.  
+**list**: outputs a list of pages.  
+**new**: initializes current page by clearing all actuator position data.  
+**copy [index]**: copies data from page [index] to current page. For example if you are on page 5 and want to copy page 9 then type copy 9.  
+**set [value]**: sets position value on chosen actuator. For example If you want ID19 (head pan) to have a value of 512 then using the keyboard's directional keys place the cursor on ID19 and type set 512.  
+**save**: saves any changes you've made. the saved motion file (motion_4096.bin can be found at "op3_action_module/data")  
+**play**: plays motion(s) of current page.  
+**name**: changes the name of the current page. You can view the name of the page at the top right portion of the screen. For example, page 2 is titled hello; to change the name type name and press the "ENTER" key. "name:" will appear at the bottom of the screen. Input the desired name for the page, good for instance, and press the "ENTER" key again.  
+**i**: inserts data from STP7 to STP0. Moves data from STP[x] to STP[x + 1] if any.  
+**i [index]**: inserts data from STP7 to STP[index]. Moves data from STP[index] to STP[index + 1] if any.  
+**m [index] [index2]**: moves data from [index2] to [index].  
+**d [index]**: deletes data from STP[index]. Moves data from STP[index] to STP[index - 1].  
+**on/off**: turns on/off torque from all Dynamixels.  
+**on/off [index1] [index2] [index3] ??** : turns torque on/off from ID[index1] ID[index2] ID[index3]. For example off 20 releases torque from ID20. Notice that STP7 for ID20 will read [----]. Typing on 20 turns torque from ID20 on again and the screen outputs the current position data of ID20.  
 
 ###### Example Action editing with op3_action_editor
- 1) Run the op3_action_editor  
- 2) Find the page where the "walking_init page" is by typing "list"  
-   ![](/assets/images/platform/op3/thormang3_action_editor_tui_action_editing_example1.jpg)
+1. Run the op3_action_editor  
+2. Find the page where the "walking_init page" is by typing "list"  
 
- 3) Exit the list and go to any blank page by typing "page [x]"(for example, page 15).
-   ![](/assets/images/platform/op3/thormang3_action_editor_tui_action_editing_example2.jpg)
+    ![](/assets/images/platform/op3/thormang3_action_editor_tui_action_editing_example1.jpg)
 
- 4) And copy the page 1 to page [x].  
-   ![](/assets/images/platform/op3/thormang3_action_editor_tui_action_editing_example3.jpg)
+3. Exit the list and go to any blank page by typing "page [x]"(for example, page 15).
 
- 5) Go to "walking_init" pose by typing "play"  
+    ![](/assets/images/platform/op3/thormang3_action_editor_tui_action_editing_example2.jpg)
 
- 6) Turn off the torque of ID 2, 4 and 8 by typing "off 2 4 8"  
-   ![](/assets/images/platform/op3/thormang3_action_editor_tui_action_editing_example4.jpg)
+4. And copy the page 1 to page [x].  
 
- 7) After getting the desired pose turn torque on again by simple typing on. And insert the pose to step 1 by typing "i 1"  
-   ![](/assets/images/platform/op3/thormang3_action_editor_tui_action_editing_example5.jpg)
+    ![](/assets/images/platform/op3/thormang3_action_editor_tui_action_editing_example3.jpg)
 
- 8) Edit "Pause Time", "Time" of STP1 and "Page Step" as shown below.  
-   ![](/assets/images/platform/op3/thormang3_action_editor_tui_action_editing_example6.jpg)
+5. Go to "walking_init" pose by typing "play"  
+6. Turn off the torque of ID 2, 4 and 8 by typing "off 2 4 8"  
 
- 9) Type "play" and check the ROBOTIS-OP3's action  
+    ![](/assets/images/platform/op3/thormang3_action_editor_tui_action_editing_example4.jpg)
+
+7. After getting the desired pose turn torque on again by simple typing on. And insert the pose to step 1 by typing "i 1"  
+
+    ![](/assets/images/platform/op3/thormang3_action_editor_tui_action_editing_example5.jpg)
+
+8. Edit "Pause Time", "Time" of STP1 and "Page Step" as shown below.  
+
+    ![](/assets/images/platform/op3/thormang3_action_editor_tui_action_editing_example6.jpg)
+
+9. Type "play" and check the ROBOTIS-OP3's action  
 
 #### [op3_gui_demo](#op3-gui-demo)
 
 ##### Overview   
- `op3_gui_demo` is a GUI software to control ROBOTIS-OP3.  
- Within this program, user can perform module settings, walking tuner, head joint control and play actions.  
+`op3_gui_demo` is a GUI software to control ROBOTIS-OP3.  
+Within this program, user can perform module settings, walking tuner, head joint control and play actions.  
 
- ![](/assets/images/platform/op3/op3_gui_diagram.png)
+![](/assets/images/platform/op3/op3_gui_diagram.png)
 
 ##### Getting started
 
 ###### Download & Build
-  > Reference : [Installing ROBOTIS ROS Package]
+> Reference : [Installing ROBOTIS ROS Package]
 
 ###### Run
- Execute the launch file.  
- ```
- $ roslaunch op3_gui_demo op3_demo.launch
- ```
+Execute the launch file.  
+```
+$ roslaunch op3_gui_demo op3_demo.launch
+```
 
 ###### UI
 
@@ -887,173 +888,173 @@ The following are Messages and Service used for the [op3_offset_tuner_server] an
 ##### ROS API
 
 ###### Subscribed Topics
- `/robotis/status`([std_msgs/String]{: .popup})  
- &emsp;&emsp; This message describes status of ROBOTIS-OP3.
+`/robotis/status`([std_msgs/String]{: .popup})  
+&emsp;&emsp; This message describes status of ROBOTIS-OP3.
 
- `/robotis/present_joint_ctrl_modules`([robotis_controller_msgs/JointCtrlModule]{: .popup})  
- &emsp;&emsp; This message reports which module is currently in use for ROBOTIS-OP3.
+`/robotis/present_joint_ctrl_modules`([robotis_controller_msgs/JointCtrlModule]{: .popup})  
+&emsp;&emsp; This message reports which module is currently in use for ROBOTIS-OP3.
 
- `/robotis/head_control/present_joint_states`([sensor_msgs/JointState]{: .popup})  
- &emsp;&emsp; This message reports present angles for each joint.  
+`/robotis/head_control/present_joint_states`([sensor_msgs/JointState]{: .popup})  
+&emsp;&emsp; This message reports present angles for each joint.  
 
 ###### Published Topics
- `/robotis/base/ini_pose`([std_msgs/String]{: .popup})  
- &emsp;&emsp; This message will have ROBOTIS-OP3 to take the initial posture.
+`/robotis/base/ini_pose`([std_msgs/String]{: .popup})  
+&emsp;&emsp; This message will have ROBOTIS-OP3 to take the initial posture.
 
- `/robotis/enable_ctrl_module`([std_msgs/String]{: .popup})  
- &emsp;&emsp; This message notifies framework to activate a specific module for ROBOTIS-OP3.  
+`/robotis/enable_ctrl_module`([std_msgs/String]{: .popup})  
+&emsp;&emsp; This message notifies framework to activate a specific module for ROBOTIS-OP3.  
 
- `/robotis/sync_write_item`([std_msgs/String]{: .popup})  
- &emsp;&emsp; This message contains data to be written to ROBOTIS-OP3 with the Sync Write command.  
- &emsp;&emsp; ex) LED control
+`/robotis/sync_write_item`([std_msgs/String]{: .popup})  
+&emsp;&emsp; This message contains data to be written to ROBOTIS-OP3 with the Sync Write command.  
+&emsp;&emsp; ex) LED control
 
- `/robotis/head_control/set_joint_states_offset`([sensor_msgs/JointState]{: .popup})  
- &emsp;&emsp; This message controls head joints.
+`/robotis/head_control/set_joint_states_offset`([sensor_msgs/JointState]{: .popup})  
+&emsp;&emsp; This message controls head joints.
 
- `/play_sound_file`([std_msgs/String]{: .popup})  
- &emsp;&emsp; This message contains the path of voice files for speaking.
+`/play_sound_file`([std_msgs/String]{: .popup})  
+&emsp;&emsp; This message contains the path of voice files for speaking.
 
- `/robotis/walking/command"`([std_msgs/String]{: .popup})  
- &emsp;&emsp; This message commands walking module of ROBOTIS-OP3.
+`/robotis/walking/command"`([std_msgs/String]{: .popup})  
+&emsp;&emsp; This message commands walking module of ROBOTIS-OP3.
 
- `/robotis/walking/set_params"`([op3_walking_module_msgs/WalkingParam]{: .popup})  
- &emsp;&emsp; This message configures walking parameters of the walking module.
+`/robotis/walking/set_params"`([op3_walking_module_msgs/WalkingParam]{: .popup})  
+&emsp;&emsp; This message configures walking parameters of the walking module.
 
- `/robotis/action/page_num`([std_msgs/Int32]{: .popup})  
- &emsp;&emsp; This message transfers page number to action_module to play actions.
+`/robotis/action/page_num`([std_msgs/Int32]{: .popup})  
+&emsp;&emsp; This message transfers page number to action_module to play actions.
 
 ###### Services
- `/robotis/get_present_joint_ctrl_modules`([robotis_controller_msgs/GetJointModule]{: .popup})  
- &emsp;&emsp; This service acquires which module is currently in use for ROBOTIS-OP3.  
+`/robotis/get_present_joint_ctrl_modules`([robotis_controller_msgs/GetJointModule]{: .popup})  
+&emsp;&emsp; This service acquires which module is currently in use for ROBOTIS-OP3.  
 
- `/robotis/walking/get_params`([op3_walking_module_msgs/GetWalkingParam]{: .popup})  
- &emsp;&emsp; This service acquires walking parameters.  
+`/robotis/walking/get_params`([op3_walking_module_msgs/GetWalkingParam]{: .popup})  
+&emsp;&emsp; This service acquires walking parameters.  
 
 ##### Parameters
- `/demo_config`(string, default : "/op3_gui_demo/config/demo_config.yaml")  
- &emsp;&emsp; This yaml file saves joint names, available modules, list of module preset button.  
+`/demo_config`(string, default : "/op3_gui_demo/config/demo_config.yaml")  
+&emsp;&emsp; This yaml file saves joint names, available modules, list of module preset button.  
 
 #### [op3_offset_tuner_server](#op3-offset-tuner-server)
 
 ##### Overview   
- ROBOTIS-OP3 Offset Tuner Node   
- Data related to the Offset can be Tuned, Loaded and Saved.   
- It is used with the [op3_offset_tuner_client].  
+ROBOTIS-OP3 Offset Tuner Node   
+Data related to the Offset can be Tuned, Loaded and Saved.   
+It is used with the [op3_offset_tuner_client].  
 
 ##### Getting started
 
 ###### Download & Build
-  > Reference : [Installing ROBOTIS ROS Package]  
+> Reference : [Installing ROBOTIS ROS Package]  
 
 ###### Run
- Execute the launch file to start offset tuner server.  
- `op3_offset_tuner_server` has a direct control over ROBOTIS-OP3, therefore other control programs such as `op3_manager`, `op3_action_editor` and `op3_walking_tuner` should not be running.
- Before executing the `op3_offset_tuner_server` launch file, other programs should be terminated.    
- ```
- $ roslaunch op3_offset_tuner_server op3_offset_tuner_server.launch
- ```
+Execute the launch file to start offset tuner server.  
+`op3_offset_tuner_server` has a direct control over ROBOTIS-OP3, therefore other control programs such as `op3_manager`, `op3_action_editor` and `op3_walking_tuner` should not be running.
+Before executing the `op3_offset_tuner_server` launch file, other programs should be terminated.    
+```
+$ roslaunch op3_offset_tuner_server op3_offset_tuner_server.launch
+```
 
 ###### Usage
- > Reference : [How to use offset tuner]  
+> Reference : [How to use offset tuner]  
 
 ##### ROS API
 
 ###### Subscribed Topics
- * `/robotis/base/send_tra`([std_msgs/String]{: .popup})  
- &emsp;&emsp; The topic informs the start and end of trajectory following.  
+* `/robotis/base/send_tra`([std_msgs/String]{: .popup})  
+&emsp;&emsp; The topic informs the start and end of trajectory following.  
 
- * `/robotis/offset_tuner/joint_offset_data`([op3_offset_tuner_msgs/JointOffsetData]{: .popup})  
- &emsp;&emsp; The topic updates joint offset related parameters.  
+* `/robotis/offset_tuner/joint_offset_data`([op3_offset_tuner_msgs/JointOffsetData]{: .popup})  
+&emsp;&emsp; The topic updates joint offset related parameters.  
 
- * `/robotis/offset_tuner/torque_enable`([op3_offset_tuner_msgs/JointTorqueOnOffArray]{: .popup})  
- &emsp;&emsp; The topic transfers Torque enable/disable command for joints.
+* `/robotis/offset_tuner/torque_enable`([op3_offset_tuner_msgs/JointTorqueOnOffArray]{: .popup})  
+&emsp;&emsp; The topic transfers Torque enable/disable command for joints.
 
- * `/robotis/offset_tuner/command`([std_msgs/String]{: .popup})  
- &emsp;&emsp; The topic transfers command to the [op3_offset_tuner_client].  
- &emsp;&emsp; - "save"     : Saves current offset to yaml  
- &emsp;&emsp; - "ini_pose" : Take the initial posture for offset tuning  
+* `/robotis/offset_tuner/command`([std_msgs/String]{: .popup})  
+&emsp;&emsp; The topic transfers command to the [op3_offset_tuner_client].  
+&emsp;&emsp; - "save"     : Saves current offset to yaml  
+&emsp;&emsp; - "ini_pose" : Take the initial posture for offset tuning  
 
 ###### Services
- * `robotis/offset_tuner/get_present_joint_offset_data`([op3_offset_tuner_msgs/GetPresentJointOffsetData]{: .popup})  
- &emsp;&emsp; The service obtains current offset data from the [op3_offset_tuner_client].  
+* `robotis/offset_tuner/get_present_joint_offset_data`([op3_offset_tuner_msgs/GetPresentJointOffsetData]{: .popup})  
+&emsp;&emsp; The service obtains current offset data from the [op3_offset_tuner_client].  
 
 ###### Parameters
- `/offset_path`(string, default : "")  
- &emsp;&emsp; The yaml file path to save offsets.   
+`/offset_path`(string, default : "")  
+&emsp;&emsp; The yaml file path to save offsets.   
 
- `/robot_file_path`(string, default : "")  
- &emsp;&emsp; This path indicates the location of .robot file that contains robot description data.  
+`/robot_file_path`(string, default : "")  
+&emsp;&emsp; This path indicates the location of .robot file that contains robot description data.  
 
- `/init_file_path`(string, default : "")  
- &emsp;&emsp; This path indicates the location of the file that contains initialization information of each joint.  
+`/init_file_path`(string, default : "")  
+&emsp;&emsp; This path indicates the location of the file that contains initialization information of each joint.  
 
 #### [op3_offset_tuner_client](#op3-offset-tuner-client)
 
 ##### Overview
- The GUI Node that can adjust offset of ROBOTIS-OP3.  
- It is used with the [op3_offset_tuner_server].  
+The GUI Node that can adjust offset of ROBOTIS-OP3.  
+It is used with the [op3_offset_tuner_server].  
 
 ##### Getting started
 
 ###### Download & Build
-  > Reference : [Installing ROBOTIS ROS Package]
+> Reference : [Installing ROBOTIS ROS Package]
 
 ###### Run
- ```
- $ rosrun op3_offset_tuner_client op3_offset_tuner_client
- ```
+```
+$ rosrun op3_offset_tuner_client op3_offset_tuner_client
+```
 
 ###### Usage
- > Reference : [How to use offset tuner]
+> Reference : [How to use offset tuner]
 
 ##### ROS API
 
 ###### Published Topics
- `/robotis/offset_tuner/joint_offset_data`([op3_offset_tuner_msgs/JointOffsetData]{: .popup})            
- &emsp;&emsp; The topic transfers Joint offset   
+`/robotis/offset_tuner/joint_offset_data`([op3_offset_tuner_msgs/JointOffsetData]{: .popup})            
+&emsp;&emsp; The topic transfers Joint offset   
 
- `/robotis/offset_tuner/torque_enable`([op3_offset_tuner_msgs/JointTorqueOnOffArray]{: .popup})    
- &emsp;&emsp; The topic executes Torque on/off command   
+`/robotis/offset_tuner/torque_enable`([op3_offset_tuner_msgs/JointTorqueOnOffArray]{: .popup})    
+&emsp;&emsp; The topic executes Torque on/off command   
 
- `/robotis/offset_tuner/command`([std_msgs/String]{: .popup})    
- &emsp;&emsp; The topic transfers other commands(save, initial posture, etc).   
+`/robotis/offset_tuner/command`([std_msgs/String]{: .popup})    
+&emsp;&emsp; The topic transfers other commands(save, initial posture, etc).   
 
 ###### Services
- `/robotis/offset_tuner/get_present_joint_offset_data`([op3_offset_tuner_msgs/GetPresentJointOffsetData]{: .popup})  
- &emsp;&emsp; The service obtains saved joint offset
+`/robotis/offset_tuner/get_present_joint_offset_data`([op3_offset_tuner_msgs/GetPresentJointOffsetData]{: .popup})  
+&emsp;&emsp; The service obtains saved joint offset
 
 #### [op3_walking_tuner](#op3-walking-tuner)
 
 ##### Overview   
- This Node tunes walking parameters of ROBOTIS-OP3.  
- Walking tuner function is included in the [op3_gui_demo].  
- `op3_walking_tuner` runs on a terminal window while [op3_gui_demo] creates its own GUI window.    
+This Node tunes walking parameters of ROBOTIS-OP3.  
+Walking tuner function is included in the [op3_gui_demo].  
+`op3_walking_tuner` runs on a terminal window while [op3_gui_demo] creates its own GUI window.    
 
 ##### Getting started
 
 ###### Download & Build
-  > Reference : [Installing ROBOTIS ROS Package]  
+> Reference : [Installing ROBOTIS ROS Package]  
 
-  > Reference : `libncurses5-dev` must be pre-installed in order to build `op3_walking_tuner`.  
-     ```
-     $ sudo apt install libncurses5-dev
-     ```
+> Reference : `libncurses5-dev` must be pre-installed in order to build `op3_walking_tuner`.  
+   ```
+   $ sudo apt install libncurses5-dev
+   ```
 
 ###### Run
- Execute the launch file.  
- `op3_walking_tuner` has a direct control over ROBOTIS-OP3, therefore other control programs such as `op3_manager`, `op3_action_editor` and `op3_offset_tuner_server` should not be running.  
- Before executing the `op3_walking_tuner` launch file, other programs should be terminated.  
- ```
- $ roslaunch op3_walking_tuner op3_walking_tuner.launch
- ```
+Execute the launch file.  
+`op3_walking_tuner` has a direct control over ROBOTIS-OP3, therefore other control programs such as `op3_manager`, `op3_action_editor` and `op3_offset_tuner_server` should not be running.  
+Before executing the `op3_walking_tuner` launch file, other programs should be terminated.  
+```
+$ roslaunch op3_walking_tuner op3_walking_tuner.launch
+```
 
 
 ###### UI
 
- ![](/assets/images/platform/op3/op3_walk_tuner.png)
+![](/assets/images/platform/op3/op3_walk_tuner.png)
 
 ###### Usage
- Please refer to [How to use walking tuner].
+Please refer to [How to use walking tuner].
 
 [op3_action_module]: /docs/en/platform/op3/robotis_ros_packages/#op3_action_module
 [op3_base_module]: /docs/en/platform/op3/robotis_ros_packages/#op3_base_module

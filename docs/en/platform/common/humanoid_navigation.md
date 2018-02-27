@@ -16,7 +16,13 @@ sidebar:
 > Reference : [http://wiki.ros.org/humanoid_navigation]
 > Source : [https://github.com/AravindaDP/humanoid_navigation]
 
-## Prerequisite Packages : map_server, humanoid_nav_msgs, nav_msgs, sbpl, etc
+## Prerequisite Packages
+- map_server
+- humanoid_nav_msgs
+- nav_msgs
+- sbpl
+- etc
+
 Package for footstep planner.
 - Installation prerequisite packages
   ```

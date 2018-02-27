@@ -6,21 +6,20 @@ layout: popup
 
 - Message Definition
 
- ```c
-   int16       moving_foot
-   int16       LFootMove = 1 # Left foot constant
-   int16       RFootMove = 2 # Right foot constant
-   int16       NFootMove = 3 # No foot constant
+  ```c
+  int16       moving_foot
+  int16       LFootMove = 1 # Left foot constant
+  int16       RFootMove = 2 # Right foot constant
+  int16       NFootMove = 3 # No foot constant
 
-   ### Unit [meter, rad]
-   float32     foot_z_swap
-   float32     body_z_swap
-   float32     torso_yaw_angle_rad
-   PoseXYZRPY  left_foot_pose
-   PoseXYZRPY  right_foot_pose
-   PoseZRPY    body_pose
-
- ```
+  ### Unit [meter, rad]
+  float32     foot_z_swap
+  float32     body_z_swap
+  float32     torso_yaw_angle_rad
+  PoseXYZRPY  left_foot_pose
+  PoseXYZRPY  right_foot_pose
+  PoseZRPY    body_pose
+  ```
 
 - Description
 Position related Step Data Parameters
@@ -33,19 +32,19 @@ Position related Step Data Parameters
 
 
 
-* ` float32     foot_z_swap`
+* `float32     foot_z_swap`
 &emsp;&emsp; The swept distance by the foot on the Z axis while THORMANG3 is walking. Unit in meter.
 &emsp;&emsp;
 
-![foot_z_wap](/assets/images/platform/op3/op3_walking_module_image152.jpg)
+  ![foot_z_wap](/assets/images/platform/op3/op3_walking_module_image152.jpg)
 
-* ` float32     body_z_swap`
+* `float32     body_z_swap`
 &emsp;&emsp; The swept distance by the body on the Z axis while THORMANG3 is walking. Unit in meter.
 &emsp;&emsp;
 
-![body_z_wap](/assets/images/platform/op3/op3_walking_module_image154.jpg)
+  ![body_z_wap](/assets/images/platform/op3/op3_walking_module_image154.jpg)
 
-* ` float32     torso_yaw_angle_rad`
+* `float32     torso_yaw_angle_rad`
 &emsp;&emsp; ~~Waist target angle for upcoming step. Unit in rad~~ (Not supported. This parameter is not used.)
 
 * `PoseXYZRPY  left_foot_pose`([thormang3_walking_module_msgs/PoseXYZRPY])
