@@ -9543,7 +9543,6 @@ turtlebot3:
           url: /platform/turtlebot3/raspberry_pi_3_setup/#network-configuration
       - title: "Install Linux based on Raspbian"
         url: /platform/turtlebot3/raspberry_pi_3_setup/#install-linux-based-on-raspbian
-    children:
     - title: "Intel Joule"
       url: /platform/turtlebot3/joule_setup/#joule-setup
       children:
