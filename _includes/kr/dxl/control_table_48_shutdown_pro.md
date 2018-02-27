@@ -20,7 +20,7 @@
 2. S/W REBOOT : REBOOT Instruction 전송하는 방법(자세한 사항은 [프로토콜]을 참고해주세요.)
 {% endcapture %}
 
-<div class="notice">{{ shutdown_01 || markdownify }}</div>
+<div class="notice">{{ shutdown_01 | markdownify }}</div>
 
 Shutdown이 발생하면 1초 주기로 LED가 점멸합니다.(펌웨어 버전 41 이상)
 {: .notice}

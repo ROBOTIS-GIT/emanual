@@ -1687,6 +1687,9 @@
 <loc>http://localhost:4000/docs/en/software/dynamixel/dynamixel_sdk/quick_start_video/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/docs/en/platform/turtlebot3/raspberry_pi_3_setup/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/docs/en/parts/communication/rc-100/</loc>
 </url>
 <url>
@@ -1721,9 +1724,6 @@
 </url>
 <url>
 <loc>http://localhost:4000/docs/en/platform/op3/robotis_ros_packages/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/docs/en/platform/turtlebot3/rpi3_setup/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/docs/kr/software/mobile_app/rplusiot/</loc>
