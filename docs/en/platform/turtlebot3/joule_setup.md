@@ -12,6 +12,7 @@ sidebar:
 ---
 
 <div style="counter-reset: h1 6"></div>
+<div style="counter-reset: h2 1"></div>
 
 # [Joule Setup](#joule-setup)
 
