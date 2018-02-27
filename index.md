@@ -22,11 +22,13 @@ header:
 # Quick References
 
 ## TurtleBot3
-- [Remote PC Software Setup](/docs/en/platform/turtlebot3/pc_software_setup/)
-- [SBC Software Setup](/docs/en/platform/turtlebot3/rpi3_software_setup/)
-- [Bringup Burger](/docs/en/platform/turtlebot3/bringup/#turtlebot3-burger)
-- [Bringup Waffle](/docs/en/platform/turtlebot3/bringup/#turtlebot3-waffle)
-- [SLAM](/docs/en/platform/turtlebot3/slam/)
+- [PC Setup](http://emanual.robotis.com/docs/en/platform/turtlebot3/pc_setup/)
+- [Raspberry Pi Setup](http://emanual.robotis.com/docs/en/platform/turtlebot3/raspberry_pi_3_setup/)
+- [Intel Joule Setup](http://emanual.robotis.com/docs/en/platform/turtlebot3/joule_setup/)
+- [Bringup Burger](http://emanual.robotis.com/docs/en/platform/turtlebot3/bringup/#turtlebot3-burger)
+- [Bringup Waffle](http://emanual.robotis.com/docs/en/platform/turtlebot3/bringup/#turtlebot3-waffle)
+- [Bringup Waffle Pi](http://emanual.robotis.com/docs/en/platform/turtlebot3/bringup/#turtlebot3-waffle-pi)
+- [SLAM](http://emanual.robotis.com/docs/en/platform/turtlebot3/slam/)
 
 ## DYNAMIXEL SDK
 - [SDK Download](https://github.com/ROBOTIS-GIT/DynamixelSDK/releases)
