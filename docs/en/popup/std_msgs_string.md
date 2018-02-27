@@ -2,7 +2,7 @@
 layout: popup
 ---
 
-- File `std_msgs/String.msg`
+- File : `std_msgs/String.msg`
 - Raw Message Definition
 
   ```c
