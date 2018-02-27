@@ -24,9 +24,6 @@ The `op3_manager` cooperates with other programs such as `op3_demo` and `op3_gui
 
 > Reference : [op3_manager]
 
-#### Diagram
-[diagram image]  
-
 
 
 ### Getting started
@@ -296,15 +293,71 @@ Press the mode button thrice from demonstration ready mode to switch to interact
 
 ## [How to execute GUI program](#how-to-execute-gui-program)
 
-### [How to use walking tuner](#how-to-use-walking-tuner)
+### Overview   
+The GUI program provides various functions for ROBOTIS-OP3.
+- Take OP3 to the initial posture
+- Configure various modules in the OP3  
+- Save and edit walking parameters  
+- Control the head joint of the OP3  
+- Play action files in the OP3  
 
-#### Overview   
+> Reference : [op3_gui_demo]  
+
+![](/assets/images/platform/op3/op3_gui_diagram.png)
+
+### Getting started
+#### Download & Build
+ > Reference : [Installing ROBOTIS ROS Package]
+
+#### Run the program
+There are three options to run the GUI program.
+1. Connect input devices and display device directly to ROBOTIS-OP3 and run the GUI program on the robot.  
+2. Use VNC from a remote PC to obtain control over the OP3 SBC(Intel NUC) and initiate the GUI program remotely.  
+3. Run the GUI program on a remote PC in the same ROS network with ROBOTIS-OP3.  
+Open the terminal window and enter the following command.
+`op3_manager` should be running before executing GUI demo program.
+
+```
+$ roslaunch op3_gui_demo op3_demo.launch
+```  
+  > Reference : [How to run op3_manager]
+
+#### Execution result
+
+![](/assets/images/platform/op3/op3_gui.png)
+
+
+
+### Description
+#### How to take the initial pose of ROBOTIS-OP3
+Clicking the button surrounded by the red dashed rectangle will let the `base_module` control each joint of ROBOTIS-OP3 and take the initial posture.
+
+![](/assets/images/platform/op3/op3_gui_initial_pose.png)
+
+#### How to set the Module
+- Follow the below procedure to configure modules that control corresponding joint of ROBOTIS-OP3.  
+  1. Click the module button to configure.  
+    - `none`  
+    - `head_control_module`  
+    - `action_module`  
+    - `walking_module`  
+
+  2. Confirm from the joint status table below the module buttons that corresponding joints are set correctly.  
+
+![](/assets/images/platform/op3/op3_gui_set_module.png)
+- `Get Mode` button will report which module is assigned for each joint.  
+
+![](/assets/images/platform/op3/op3_gui_get_module.png)
+
+#### [How to use walking tuner](#how-to-use-walking-tuner)
+
+##### Overview   
 This chapter explains how to configure walking parameters and test them with ROBOTIS-OP3.  
 Basic demo uses saved walking parameters.  
 
 
-#### Description
-##### Setting Module
+##### Description
+###### Setting Module
 Activate `walking_module` on the lower body part of ROBOTIS-OP3 for walking test.   
 Confirm that the joints used for walking are set as `walking_module`, then move to `Walking` tab.
 (When the walking module is activated, ROBOTIS-OP3 will take the initial posture for walking.)    
@@ -313,13 +366,13 @@ Confirm that the joints used for walking are set as `walking_module`, then move 
 
 ![](/assets/images/platform/op3/op3_gui_walking_tuner_02.png)
 
-##### Start / Stop Walking  
+###### Start / Stop Walking  
  1. `start` button : Initiate walking  
  2. `stop` button : Stop walking. When stopped, walking related parameters will be reset.  
 
 ![](/assets/images/platform/op3/op3_gui_walking_tuner_03.png)
 
-##### Apply Parameters
+###### Apply Parameters
  1. `Refresh` button : Acquire all parameter currently applied on `walking_module`.  
  2. `Save` button : Save all parameter currently applied on `walking_module` as default parameter and use it for other program such as `op3_demo`.  
  3. `Apply` button : Apply modified parameters from the GUI to `walking_module`.  
@@ -327,16 +380,16 @@ Confirm that the joints used for walking are set as `walking_module`, then move 
 ![](/assets/images/platform/op3/op3_gui_walking_tuner_04.png)
 
 
-### [How to play the motions](#how-to-play-the-motions)
+#### [How to play the motions](#how-to-play-the-motions)
 
-#### Overview   
+##### Overview   
 This chapter explains how to play predefined actions.  
 The `action_module` controls each joint of ROBOTIS-OP3.  
 
 > Reference : [op3_action_module]
 
-#### Description
-##### How to play
+##### Description
+###### How to play
  1. Set the module : Press the `action_module` button.  
  2. Select `Motion` tab of the gui demo program.
 
@@ -344,24 +397,24 @@ The `action_module` controls each joint of ROBOTIS-OP3.
  3. Click the action button to play  
 
   ![](/assets/images/platform/op3/op3_gui_action_02.png)
-##### Creating and editing actions for `action_module`  
+###### Creating and editing actions for `action_module`  
   > Reference : [How to create the motions]
 
-### [How to control the head joints](#how-to-control-the-head-joints)
+#### [How to control the head joints](#how-to-control-the-head-joints)
 
-#### Overview   
+##### Overview   
 This chapter explains how to control the head joint of ROBOTIS-OP3.  
 Operator can get different camera view angle by controlling head joints.  
 
 > Reference : [op3_head_control_module]
 
-#### Head Joint Control  
-##### Setting the Module : Click `head_control_module` button  
+##### Head Joint Control  
+###### Setting the Module : Click `head_control_module` button  
 
-##### Select `Head Control` tab of the gui demo program.  
+###### Select `Head Control` tab of the gui demo program.  
 
   ![](/assets/images/platform/op3/op3_gui_control_head_01.png)
-##### Change the value for the specific joint.  
+###### Change the value for the specific joint.  
  1. Use the slide bar to control the head joint.  
  2. Enter desired values in the text box to control the head joint.  
  3. Bring the head joint to center position.  
@@ -370,17 +423,17 @@ Operator can get different camera view angle by controlling head joints.
 
   ![](/assets/images/platform/op3/op3_gui_control_head_03.png)
 
-### [How to control upgraded walking(online walking)](#how-to-control-upgraded-walkingonline-walking)
+#### [How to control upgraded walking(online walking)](#how-to-control-upgraded-walkingonline-walking)
 
-#### Overview   
+##### Overview   
 This page explains how to control upgraded walking(online walking).  
 
 > Reference 1 : [Introduction to Humanoid Robotics]
 
 > Reference 2 : [op3_online_walking_module]
 
-#### Description
-##### How to
+##### Description
+###### How to
  - Preparation : Set the module and move to the tab
    1. Setting the module : Click `online_walking_module` button
 
@@ -410,7 +463,7 @@ This page explains how to control upgraded walking(online walking).
     >  - Body Offset : desired body offset
     >  - Foot Distance : desired foot distance between left and right foot
 
-#### Online walking using footstep planner
+##### Online walking using footstep planner
   > Reference : [Online walking using footstep planner]  
 
 ## [How to use offset tuner](#how-to-use-offset-tuner)
@@ -618,13 +671,13 @@ $ roslaunch op3_demo demo.launch
     - Open `Dynamic Reconfigure`   
     Select `Plugins -> Configuration -> Dynamic Reconfigure`
 
-
     ![](/assets/images/platform/op3/ball_detector_node_01.png)
 
     - Open `Image View`  
     Select `Plugins -> Visualization -> Image View`  
 
     ![](/assets/images/platform/op3/ball_detector_node_02.png)
+
 2. Parameters    
 The description for each parameter will pop up when hovering the mouse cursor over each parameter.  
 
@@ -757,6 +810,7 @@ This chapter explains upgraded walking and footstep planner.
 [Installing ROBOTIS ROS Package]: /docs/en/platform/op3/recovery/#installing-robotis-ros-packages
 
 [op3_demo]: /docs/en/platform/op3/robotis_ros_packages/#robotis-op3-demo
+[op3_gui_demo]: /docs/en/platform/op3/robotis_ros_packages/#op3_gui_demo
 [How to use walking tuner]: /docs/en/platform/op3/tutorials/#how-to-use-walking-tuner
 
 
@@ -776,7 +830,7 @@ This chapter explains upgraded walking and footstep planner.
 [op3_how_to_control_upgraded_walking]: /docs/en/platform/op3/tutorials/#how-to-control-upgraded-walkingonline-walking
 
 [humanoid_navigation]: /docs/en/platform/common/humanoid_navigation/#humanoid-navigation
-
+[How to run op3_manager]: /docs/en/platform/op3/robotis_ros_packages/#op3-manager
 
 [op3_navigation]: https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Tools/tree/master/op3_navigation
 [Face Tracker - ROS Package]: https://github.com/ROBOTIS-GIT/face_detection
