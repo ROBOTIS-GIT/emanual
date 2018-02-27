@@ -1,11 +1,11 @@
 ---
 layout: archive
 lang: en
-ref: turtlebot3_rpi3_setup
+ref: turtlebot3_raspberry_pi_3_setup
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/turtlebot3/rpi3_setup/
+permalink: /docs/en/platform/turtlebot3/raspberry_pi_3_setup/
 sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
@@ -13,7 +13,7 @@ sidebar:
 
 <div style="counter-reset: h1 6"></div>
 
-# [Raspberry Pi 3 Setup](#raspberry-pi-3-setup)
+# [Raspberry Pi 3 Setup](#raspberry_pi_3_setup)
 
 ## [Install Linux(Ubuntu MATE)](#install-linux-ubuntu-mate)
 
@@ -142,8 +142,10 @@ Texts in the rectangle is the IP address of the `TurtleBot`.
 Enter the following command.
 
 ``` bash
-$ gedit ~/.bashrc
+$ nano ~/.bashrc
 ```
+
+Press ' `alt+/` ' to end line of the file.
 
 Replace the `localhost` in the ROS_MASTER_URI address with the IP address acquired from [Remote PC Network Configuration](http://emanual.robotis.com/docs/en/platform/turtlebot3/pc_setup/#network-configuration). Also replace the `localhost` in the ROS_HOSTNAME address with the IP address acquired from the above terminal window, which is the IP address of TurtleBot3.
 
