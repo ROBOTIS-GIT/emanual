@@ -287,7 +287,7 @@ $sudo apt-get install ia32-libs
 아래 그림에서 가리키는 다운로드 버튼을 클릭합니다.  
 다운로드가 시작되는 동안 보드의 녹색 LED가 계속 켜집니다. 다운로드가 끝나면 보드가 리셋되고 Blink 예제가 실행되면서 LED가 깜빡입니다
 
-`Note` 만약에 다운로드 버튼을 클릭하고도 보드의 녹색 Status LED가 켜지지 않는다면 User button을 누른상태에서 USB를 PC와 연결하십시요. 보드 전원이 들어오면서 녹색 LED가 계속 켜지면 다운로드를 다시 시작하십시요. 자세한 설명은 긴급 복구 모드(강제 다운로드)편을 참조하세요. 
+`Note` 만약에 다운로드 버튼을 클릭하고도 보드의 녹색 Status LED가 켜지지 않는다면 User button을 누른상태에서 USB를 PC와 연결하십시요. 보드 전원이 들어오면서 녹색 LED가 계속 켜지면 다운로드를 다시 시작하십시요. 자세한 설명은 긴급 복구 모드(강제 다운로드)편을 참조하세요.
 {:. notice}
 
 ![img](/assets/images/sw/opencm_ide/opencm_ide_038.png)
@@ -511,7 +511,7 @@ OpenCM9.04의 User Button을 누른상태에서 USB 케이블로 PC와 직접 �
 2. 동작 확인
     ROBOTIS OpenCM의 예제 --> 07. Sensors --> IR_Read 를 오픈합니다.  
     다운로드 후에 시리얼 모니터를 열고 물체(흰색에서 최대입니다)를 갖다 대면 아래와 같이 ADC값을 볼 수 있습니다.
-    
+
     ![img](/assets/images/sw/opencm_ide/opencm9.04_sensor4.png)
 
 3. 동작 코드
@@ -556,7 +556,7 @@ OpenCM9.04의 User Button을 누른상태에서 USB 케이블로 PC와 직접 �
 
 2. 동작 코드
     예제-> 07. Sensors -> OLLO_Gyro_Read 예제를 다운로드 한 뒤 시리얼 모니터를 열면 아래와 같이 X, Y축 회전 가속도 값을 ADC로 확인 할 수 있습니다.  
-    
+
     X축핀이 연결된 포트1번과 Y축핀이 연결된 포트2를 초기화하고 루프에서 60ms 주기로 X, Y축의 회전 가속도를 ADC값으로 읽습니다.
 
     ![img](/assets/images/sw/opencm_ide/opencm9.04_sensor13.png)
@@ -575,7 +575,7 @@ OpenCM9.04의 User Button을 누른상태에서 USB 케이블로 PC와 직접 �
 2. 동작 확인
     파일 -> 예제 -> 07. Sensors 예제 중에 OLLO_LED_Blink 를 다운로드 후 실행하면 양쪽 LED가 교대로 깜빡이는 것을 확인할 수 있습니다.  
     LED 모듈은 ADC 핀이 필요 없으므로 SIG1, 2번 핀만 활용하면 됩니다. 아래와 같이 setup()에서 포트 3번을 초기화하면 LED 모듈을 사용할 수 있습니다.  
-    
+
     ![img](/assets/images/sw/opencm_ide/opencm9.04_sensor15.png)
 
 ### [접촉 센서](#접촉-센서)
@@ -589,9 +589,9 @@ OpenCM9.04의 User Button을 누른상태에서 USB 케이블로 PC와 직접 �
     OLLO 라이브러리의 OLLO_TOUCH_Read를 다운로드 한 뒤 시리얼 모니터를 오픈하면 결과를 확인 할 수 있습니다. 1이면 버튼이 누르지 않은 상태이고 버튼을 누르면 0값이 출력됩니다.  
     터치 센서 역시 5핀 중에 가운데 3개의 핀만 활용합니다. ADC 핀은 디지털 입력으로 선언해서 사용하는 것을 추천합니다.  
     터치 센서 내부적으로 Pull-down회로가 없기 때문에 Pull-down 옵션으로 INPUT_PULLDOWN을 선언해야 합니다.   OLLO 라이브러리는 내부적으로 이러한 방식으로 5핀센서의 핀을 초기화합니다.  
-    
+
     ![img](/assets/images/sw/opencm_ide/opencm9.04_sensor16.png)
-    
+
     ![img](/assets/images/sw/opencm_ide/opencm9.04_sensor17.png)
 
 ## [디지털 입출력](#디지털-입출력)
@@ -610,7 +610,7 @@ digitalWrite(13, HIGH); //13번핀에 HIGH를 출력합니다.
 digitalWrite(13,LOW); //13번핀에 LOW를 출력합니다.
 ```
 
-핀 13번이 LOW일 때 GND(-극)이 되어서 전류가 흐르기 때문에 LED가 켜집니다. HIGH가 핀13번이 3.3V가 되어서 전류가 흐를수 없기 때문에 LED가 꺼집니다.
+핀 13번이 LOW일 때 GND(-극)이 되어서 전류가 흐르기 때문에 LED가 켜집니다. 반대로 핀 13번이 HIGH일 때는 3.3V가 되어 전류가 흐를수 없기 때문에 LED가 꺼집니다.
 이러한 원리로 LED가 깜빡이는 스케치 코드를 작성합니다.
 
 ```c
@@ -675,7 +675,7 @@ void loop(){
   delay(100);  
 }  
 ```
- 
+
 위의 회로를 아래와 같이 풀업 회로로 변경하면 반대로 동작합니다. 버튼이 눌러지면 LOW가 감지되고 떨어지면 HIGH가 감지됩니다.  
 버튼이 떨어졌을 때 HIGH가 감지되는 것은 풀업 저항과 연결된 3.3V전압이 때문입니다.  
 

@@ -27,5 +27,5 @@ The message creates [Step2DArray.msg].
 &emsp;&emsp; - RIGHT_FOOT_SWING : Right Foot Move
 &emsp;&emsp; - STANDING         : Standing
 
-[Step2DArray.msg]: /docs/en/platform/msgs/Step2DArray_msg/#step2Darray-msg
-[geometry_msgs/Pose2D]: /docs/en/platform/msgs/gemetry_msgs_Pose2D_msg/#gemetry-msgs-pose2d-msg
+[Step2DArray.msg]: /docs/en/platform/msgs/Step2DArray_msg/#step2darray-msg
+[geometry_msgs/Pose2D]: /docs/en/platform/msgs/geometry_msgs_Pose2D_msg/#geometry-msgs-pose2d-msg
