@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/op3/getting_started/
 sidebar:
-  title: ROBOTIS-OP3
+  title: ROBOTIS OP3
   nav: "op3"
 ---
 
