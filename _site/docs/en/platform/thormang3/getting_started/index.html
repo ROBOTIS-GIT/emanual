@@ -223,10 +223,16 @@ $(function() {
           var copiedurl = decodeURI(item.href);
           var tempurl = $('<input>').val(copiedurl).appendTo('body').select();
           document.execCommand('copy');
-          console.log(copiedurl);
+          // console.log(copiedurl);
           // document.getElementById(id).href;
           // document.execCommand('copy');
         }
+    </script>
+    <script>
+      function movetopage(targeturl)
+      {
+        location.href=targeturl;
+      }
     </script>
   </head>
 
@@ -3207,18 +3213,14 @@ $(function() {
     
 
       
-      
-      
       <li class="has-children">
-        <input type="radio" name="toplevel" id="toplevel_1" >
-        <label for="toplevel_1">1. Introduction [+]</label>
-
+        <input type="radio" name="toplevel" id="toplevel_1">
+        <label for="toplevel_1"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/en/platform/thormang3/introduction/#introduction');">1. Introduction</button> [+]</label>
       
 
       
         <ul>
         
-          
 
           
 
@@ -3229,7 +3231,6 @@ $(function() {
           
           
         
-          
 
           
 
@@ -3240,7 +3241,6 @@ $(function() {
           
           
         
-          
 
           
 
@@ -3251,7 +3251,6 @@ $(function() {
           
           
         
-          
 
           
 
@@ -3262,7 +3261,6 @@ $(function() {
           
           
         
-          
 
           
 
@@ -3285,18 +3283,14 @@ $(function() {
     
 
       
-      
-      
       <li class="has-children">
-        <input type="radio" name="toplevel" id="toplevel_2" >
-        <label for="toplevel_2">2. Quick Start [+]</label>
-
+        <input type="radio" name="toplevel" id="toplevel_2">
+        <label for="toplevel_2"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/en/platform/thormang3/quick_start/#quick-start');">2. Quick Start</button> [+]</label>
       
 
       
         <ul>
         
-          
 
           
 
@@ -3307,7 +3301,6 @@ $(function() {
           
           
         
-          
 
           
 
@@ -3318,7 +3311,6 @@ $(function() {
           
           
         
-          
 
           
 
@@ -3329,7 +3321,6 @@ $(function() {
           
           
         
-          
 
           
 
@@ -3340,7 +3331,6 @@ $(function() {
           
           
         
-          
 
           
 
@@ -3351,7 +3341,6 @@ $(function() {
           
           
         
-          
 
           
 
@@ -3362,7 +3351,6 @@ $(function() {
           
           
         
-          
 
           
 
@@ -3385,18 +3373,14 @@ $(function() {
     
 
       
-      
-      
       <li class="has-children">
-        <input type="radio" name="toplevel" id="toplevel_3" >
-        <label for="toplevel_3">3. Getting Started [+]</label>
-
+        <input type="radio" name="toplevel" id="toplevel_3">
+        <label for="toplevel_3"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/en/platform/thormang3/getting_started/#getting-started');">3. Getting Started</button> [+]</label>
       
 
       
         <ul>
         
-          
 
           
 
@@ -3407,14 +3391,13 @@ $(function() {
           
           
         
-          
 
           
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="Getting Started_2" >
-            <label for="Getting Started_2">2. Network Setting [+]</label>
+            <input type="radio" name="sublevel" id="Getting Started_2">
+            <label for="Getting Started_2"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/en/platform/thormang3/getting_started/#network-setting');">2. Network Setting</button> [+]</label>
           
 
           
@@ -3442,7 +3425,6 @@ $(function() {
           </li>
           
         
-          
 
           
 
@@ -3453,14 +3435,13 @@ $(function() {
           
           
         
-          
 
           
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="Getting Started_4" >
-            <label for="Getting Started_4">4. ROS Environment Setting [+]</label>
+            <input type="radio" name="sublevel" id="Getting Started_4">
+            <label for="Getting Started_4"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/en/platform/thormang3/getting_started/#ros-environment-setting');">4. ROS Environment Setting</button> [+]</label>
           
 
           
@@ -3488,14 +3469,13 @@ $(function() {
           </li>
           
         
-          
 
           
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="Getting Started_5" >
-            <label for="Getting Started_5">5. ROBOTIS ROS Package Install [+]</label>
+            <input type="radio" name="sublevel" id="Getting Started_5">
+            <label for="Getting Started_5"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/en/platform/thormang3/getting_started/#robotis-ros-package-install');">5. ROBOTIS ROS Package Install</button> [+]</label>
           
 
           
@@ -3539,14 +3519,13 @@ $(function() {
           </li>
           
         
-          
 
           
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="Getting Started_6" >
-            <label for="Getting Started_6">6. Additional ROS Package Install [+]</label>
+            <input type="radio" name="sublevel" id="Getting Started_6">
+            <label for="Getting Started_6"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/en/platform/thormang3/getting_started/#additional-ros-package-install');">6. Additional ROS Package Install</button> [+]</label>
           
 
           
@@ -3586,25 +3565,21 @@ $(function() {
     
 
       
-      
-      
       <li class="has-children">
-        <input type="radio" name="toplevel" id="toplevel_4" >
-        <label for="toplevel_4">4. THORMANG3 ROS Packages [+]</label>
-
+        <input type="radio" name="toplevel" id="toplevel_4">
+        <label for="toplevel_4"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3-ros-packages');">4. THORMANG3 ROS Packages</button> [+]</label>
       
 
       
         <ul>
         
-          
 
           
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="THORMANG3 ROS Packages_1" >
-            <label for="THORMANG3 ROS Packages_1">1. MPC Packages [+]</label>
+            <input type="radio" name="sublevel" id="THORMANG3 ROS Packages_1">
+            <label for="THORMANG3 ROS Packages_1"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#mpc-packages');">1. MPC Packages</button> [+]</label>
           
 
           
@@ -3704,14 +3679,13 @@ $(function() {
           </li>
           
         
-          
 
           
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="THORMANG3 ROS Packages_2" >
-            <label for="THORMANG3 ROS Packages_2">2. PPC Packages [+]</label>
+            <input type="radio" name="sublevel" id="THORMANG3 ROS Packages_2">
+            <label for="THORMANG3 ROS Packages_2"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#ppc-packages');">2. PPC Packages</button> [+]</label>
           
 
           
@@ -3739,14 +3713,13 @@ $(function() {
           </li>
           
         
-          
 
           
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="THORMANG3 ROS Packages_3" >
-            <label for="THORMANG3 ROS Packages_3">3. OPC Packages [+]</label>
+            <input type="radio" name="sublevel" id="THORMANG3 ROS Packages_3">
+            <label for="THORMANG3 ROS Packages_3"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#opc-packages');">3. OPC Packages</button> [+]</label>
           
 
           
@@ -3798,14 +3771,13 @@ $(function() {
           </li>
           
         
-          
 
           
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="THORMANG3 ROS Packages_4" >
-            <label for="THORMANG3 ROS Packages_4">4. Common Packages [+]</label>
+            <input type="radio" name="sublevel" id="THORMANG3 ROS Packages_4">
+            <label for="THORMANG3 ROS Packages_4"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#common-packages');">4. Common Packages</button> [+]</label>
           
 
           
@@ -3833,14 +3805,13 @@ $(function() {
           </li>
           
         
-          
 
           
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="THORMANG3 ROS Packages_5" >
-            <label for="THORMANG3 ROS Packages_5">5. Tools Packages [+]</label>
+            <input type="radio" name="sublevel" id="THORMANG3 ROS Packages_5">
+            <label for="THORMANG3 ROS Packages_5"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#tools-packages');">5. Tools Packages</button> [+]</label>
           
 
           
@@ -3868,14 +3839,13 @@ $(function() {
           </li>
           
         
-          
 
           
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="THORMANG3 ROS Packages_6" >
-            <label for="THORMANG3 ROS Packages_6">6. THORMANG msgs Package [+]</label>
+            <input type="radio" name="sublevel" id="THORMANG3 ROS Packages_6">
+            <label for="THORMANG3 ROS Packages_6"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang-msgs-package');">6. THORMANG msgs Package</button> [+]</label>
           
 
           
@@ -3947,18 +3917,14 @@ $(function() {
     
 
       
-      
-      
       <li class="has-children">
-        <input type="radio" name="toplevel" id="toplevel_5" >
-        <label for="toplevel_5">5. THORMANG3 Operation [+]</label>
-
+        <input type="radio" name="toplevel" id="toplevel_5">
+        <label for="toplevel_5"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#thormang3-operation');">5. THORMANG3 Operation</button> [+]</label>
       
 
       
         <ul>
         
-          
 
           
 
@@ -3969,7 +3935,6 @@ $(function() {
           
           
         
-          
 
           
 
@@ -3980,14 +3945,13 @@ $(function() {
           
           
         
-          
 
           
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="THORMANG3 Operation_3" >
-            <label for="THORMANG3 Operation_3">3. GUI Program [+]</label>
+            <input type="radio" name="sublevel" id="THORMANG3 Operation_3">
+            <label for="THORMANG3 Operation_3"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#gui-program');">3. GUI Program</button> [+]</label>
           
 
           
@@ -4055,7 +4019,6 @@ $(function() {
           </li>
           
         
-          
 
           
 
@@ -4078,18 +4041,14 @@ $(function() {
     
 
       
-      
-      
       <li class="has-children">
-        <input type="radio" name="toplevel" id="toplevel_6" >
-        <label for="toplevel_6">6. Gazebo Simulation [+]</label>
-
+        <input type="radio" name="toplevel" id="toplevel_6">
+        <label for="toplevel_6"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/en/platform/thormang3/gazebo_simulation/#gazebo-simulation');">6. Gazebo Simulation</button> [+]</label>
       
 
       
         <ul>
         
-          
 
           
 
@@ -4100,7 +4059,6 @@ $(function() {
           
           
         
-          
 
           
 
@@ -4123,18 +4081,14 @@ $(function() {
     
 
       
-      
-      
       <li class="has-children">
-        <input type="radio" name="toplevel" id="toplevel_7" >
-        <label for="toplevel_7">7. References [+]</label>
-
+        <input type="radio" name="toplevel" id="toplevel_7">
+        <label for="toplevel_7"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/en/platform/thormang3/references/#references');">7. References</button> [+]</label>
       
 
       
         <ul>
         
-          
 
           
 
@@ -4145,7 +4099,6 @@ $(function() {
           
           
         
-          
 
           
 
@@ -4156,7 +4109,6 @@ $(function() {
           
           
         
-          
 
           
 
@@ -4167,7 +4119,6 @@ $(function() {
           
           
         
-          
 
           
 
@@ -4178,7 +4129,6 @@ $(function() {
           
           
         
-          
 
           
 
@@ -4189,7 +4139,6 @@ $(function() {
           
           
         
-          
 
           
 

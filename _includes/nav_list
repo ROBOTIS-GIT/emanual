@@ -33,18 +33,9 @@
     {% else %}
 
       {% if nav.children != null %}
-      {% comment %}
-      {% if navurl == page.url %}
-        {% assign active = "checked" %}
-      {% else %}
-        {% assign active = "" %}
-      {% endif %}
-      {% endcomment %}
-      
       <li class="has-children">
-        <input type="radio" name="toplevel" id="toplevel_{{ forloop.index }}" {{ active }}>
-        <label for="toplevel_{{ forloop.index }}">{{ forloop.index }}. {{ navtitle }} [+]</label>
-
+        <input type="radio" name="toplevel" id="toplevel_{{ forloop.index }}">
+        <label for="toplevel_{{ forloop.index }}"><button class="tocLevel1" onclick="movetopage('{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ navurl }}');">{{ forloop.index }}. {{ navtitle }}</button> [+]</label>
       {% else %}
       <li>
         <a href="{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ navurl }}">{{ forloop.index }}. {{ navtitle }}</a>
@@ -54,11 +45,6 @@
       {% if nav.children != null %}
         <ul>
         {% for child in nav.children %}
-          {% if child.url == page.url %}
-            {% assign active = "checked" %}
-          {% else %}
-            {% assign active = "" %}
-          {% endif %}
 
           {% if page.lang=='kr' %}
             {% if child.titlekr %}
@@ -79,8 +65,8 @@
 
           {% if child.children != null %}
           <li class="has-children">
-            <input type="radio" name="sublevel" id="{{ navtitle }}_{{ forloop.index }}" {{ active }}>
-            <label for="{{ navtitle }}_{{ forloop.index }}">{{ forloop.index }}. {{ childtitle }} [+]</label>
+            <input type="radio" name="sublevel" id="{{ navtitle }}_{{ forloop.index }}">
+            <label for="{{ navtitle }}_{{ forloop.index }}"><button class="tocLevel2" onclick="movetopage('{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ childurl }}');">{{ forloop.index }}. {{ childtitle }}</button> [+]</label>
           {% else %}
           <li><a href="{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ childurl }}">{{ forloop.index }}. {{ childtitle }}</a></li>
           {% endif %}

@@ -223,10 +223,16 @@ $(function() {
           var copiedurl = decodeURI(item.href);
           var tempurl = $('<input>').val(copiedurl).appendTo('body').select();
           document.execCommand('copy');
-          console.log(copiedurl);
+          // console.log(copiedurl);
           // document.getElementById(id).href;
           // document.execCommand('copy');
         }
+    </script>
+    <script>
+      function movetopage(targeturl)
+      {
+        location.href=targeturl;
+      }
     </script>
   </head>
 
@@ -3221,25 +3227,21 @@ $(function() {
     
 
       
-      
-      
       <li class="has-children">
-        <input type="radio" name="toplevel" id="toplevel_2" >
-        <label for="toplevel_2">2. Control Table [+]</label>
-
+        <input type="radio" name="toplevel" id="toplevel_2">
+        <label for="toplevel_2"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/en/dxl/ex/ex-106+/#control-table');">2. Control Table</button> [+]</label>
       
 
       
         <ul>
         
-          
 
           
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="Control Table_1" >
-            <label for="Control Table_1">1. Control Table, Data, Address [+]</label>
+            <input type="radio" name="sublevel" id="Control Table_1">
+            <label for="Control Table_1"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/en/dxl/ex/ex-106+/#control-table-data-address');">1. Control Table, Data, Address</button> [+]</label>
           
 
           
@@ -3283,7 +3285,6 @@ $(function() {
           </li>
           
         
-          
 
           
 
@@ -3294,7 +3295,6 @@ $(function() {
           
           
         
-          
 
           
 
@@ -3305,14 +3305,13 @@ $(function() {
           
           
         
-          
 
           
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="Control Table_4" >
-            <label for="Control Table_4">4. Control Table Description [+]</label>
+            <input type="radio" name="sublevel" id="Control Table_4">
+            <label for="Control Table_4"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/en/dxl/ex/ex-106+/#control-table-description');">4. Control Table Description</button> [+]</label>
           
 
           
@@ -3590,18 +3589,14 @@ $(function() {
     
 
       
-      
-      
       <li class="has-children">
-        <input type="radio" name="toplevel" id="toplevel_4" >
-        <label for="toplevel_4">4. Maintenance [+]</label>
-
+        <input type="radio" name="toplevel" id="toplevel_4">
+        <label for="toplevel_4"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/en/dxl/ex/ex-106+/#maintenance');">4. Maintenance</button> [+]</label>
       
 
       
         <ul>
         
-          
 
           
 
@@ -3624,18 +3619,14 @@ $(function() {
     
 
       
-      
-      
       <li class="has-children">
-        <input type="radio" name="toplevel" id="toplevel_5" >
-        <label for="toplevel_5">5. Reference [+]</label>
-
+        <input type="radio" name="toplevel" id="toplevel_5">
+        <label for="toplevel_5"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/en/dxl/ex/ex-106+/#reference');">5. Reference</button> [+]</label>
       
 
       
         <ul>
         
-          
 
           
 
@@ -3646,7 +3637,6 @@ $(function() {
           
           
         
-          
 
           
 
@@ -3657,7 +3647,6 @@ $(function() {
           
           
         
-          
 
           
 
