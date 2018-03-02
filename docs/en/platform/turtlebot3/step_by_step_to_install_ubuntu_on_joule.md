@@ -1,20 +1,8 @@
 ---
-layout: archive
-lang: en
-ref: turtlebot3_step_by_step_to_install_ubuntu_on_joule
-read_time: true
-share: true
-author_profile: false
-permalink: /docs/en/platform/turtlebot3/step_by_step_to_install_ubuntu_on_joule/
-sidebar:
-  title: TurtleBot3
-  nav: "turtlebot3"
+layout: popup
 ---
 
-<div style="counter-reset: h1 6"></div>
-<div style="counter-reset: h2 2"></div>
-
-## [Step by Step to install Ubuntu](#step-by-step-to-install-ubuntu)
+# [Step by Step to install Ubuntu](#step-by-step-to-install-ubuntu)
 
 **[Intel® Joule™]** Connect `micro HDMI to HDMI cable`, `power connector supplied by OpenCR1.0`, `USB devices` including `Bootable USB drive`, `mouse` and `keyboard`. You might need a USB hub to plug multiple USB devices into Joule.
 
