@@ -1,7 +1,7 @@
 .page__footer {
   // @include full();
   /* sticky footer fix start */
-  position: relative;
+  position: fixed;
   bottom: 0;
   width: 100%;
   clear: both;
