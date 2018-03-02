@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/op3/robotis_ros_packages/
 sidebar:
-  title: ROBOTIS-OP3
+  title: ROBOTIS OP3
   nav: "op3"
 ---
 

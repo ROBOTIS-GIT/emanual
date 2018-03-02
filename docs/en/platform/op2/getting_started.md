@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/op2/getting_started/
 sidebar:
-  title: ROBOTIS-OP2
+  title: ROBOTIS OP2
   nav: "op2"
 ---
 
