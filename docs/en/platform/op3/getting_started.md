@@ -53,6 +53,7 @@ Keyboard and monitor are directly connected to ROBOTIS-OP3.
     4. Accessing ROBOTIS-OP3 via remote desktop may result in slower performance.
 
     ![](/assets/images/platform/op3/op3_connection_vnc.png)
+    
 ## [How to kill the demo program](#how-to-kill-the-demo-program)
 
 ### Kill demo program

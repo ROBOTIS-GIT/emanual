@@ -223,10 +223,16 @@ $(function() {
           var copiedurl = decodeURI(item.href);
           var tempurl = $('<input>').val(copiedurl).appendTo('body').select();
           document.execCommand('copy');
-          console.log(copiedurl);
+          // console.log(copiedurl);
           // document.getElementById(id).href;
           // document.execCommand('copy');
         }
+    </script>
+    <script>
+      function movetopage(targeturl)
+      {
+        location.href=targeturl;
+      }
     </script>
   </head>
 
@@ -3207,18 +3213,14 @@ $(function() {
     
 
       
-      
-      
       <li class="has-children">
-        <input type="radio" name="toplevel" id="toplevel_1" >
-        <label for="toplevel_1">1. Introduction [+]</label>
-
+        <input type="radio" name="toplevel" id="toplevel_1">
+        <label for="toplevel_1"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/en/platform/op3/introduction/#introduction');">1. Introduction</button> [+]</label>
       
 
       
         <ul>
         
-          
 
           
 
@@ -3229,7 +3231,6 @@ $(function() {
           
           
         
-          
 
           
 
@@ -3240,7 +3241,6 @@ $(function() {
           
           
         
-          
 
           
 
@@ -3251,7 +3251,6 @@ $(function() {
           
           
         
-          
 
           
 
@@ -3262,7 +3261,6 @@ $(function() {
           
           
         
-          
 
           
 
@@ -3273,7 +3271,6 @@ $(function() {
           
           
         
-          
 
           
 
@@ -3296,18 +3293,14 @@ $(function() {
     
 
       
-      
-      
       <li class="has-children">
-        <input type="radio" name="toplevel" id="toplevel_2" >
-        <label for="toplevel_2">2. Quick Start [+]</label>
-
+        <input type="radio" name="toplevel" id="toplevel_2">
+        <label for="toplevel_2"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/en/platform/op3/quick_start/#quick-start');">2. Quick Start</button> [+]</label>
       
 
       
         <ul>
         
-          
 
           
 
@@ -3318,14 +3311,13 @@ $(function() {
           
           
         
-          
 
           
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="Quick Start_2" >
-            <label for="Quick Start_2">2. Execute Demo Program [+]</label>
+            <input type="radio" name="sublevel" id="Quick Start_2">
+            <label for="Quick Start_2"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/en/platform/op3/quick_start/#execute-demo-program');">2. Execute Demo Program</button> [+]</label>
           
 
           
@@ -3377,7 +3369,6 @@ $(function() {
           </li>
           
         
-          
 
           
 
@@ -3388,7 +3379,6 @@ $(function() {
           
           
         
-          
 
           
 
@@ -3399,14 +3389,13 @@ $(function() {
           
           
         
-          
 
           
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="Quick Start_5" >
-            <label for="Quick Start_5">5. Programming Guide [+]</label>
+            <input type="radio" name="sublevel" id="Quick Start_5">
+            <label for="Quick Start_5"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/en/platform/op3/quick_start/#programming-guide');">5. Programming Guide</button> [+]</label>
           
 
           
@@ -3474,14 +3463,13 @@ $(function() {
           </li>
           
         
-          
 
           
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="Quick Start_6" >
-            <label for="Quick Start_6">6. Miscellaneous [+]</label>
+            <input type="radio" name="sublevel" id="Quick Start_6">
+            <label for="Quick Start_6"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/en/platform/op3/quick_start/#miscellaneous');">6. Miscellaneous</button> [+]</label>
           
 
           
@@ -3517,14 +3505,13 @@ $(function() {
           </li>
           
         
-          
 
           
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="Quick Start_7" >
-            <label for="Quick Start_7">7. Sub Controller(OpenCR) [+]</label>
+            <input type="radio" name="sublevel" id="Quick Start_7">
+            <label for="Quick Start_7"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/en/platform/op3/quick_start/#sub-controlleropencr');">7. Sub Controller(OpenCR)</button> [+]</label>
           
 
           
@@ -3588,18 +3575,14 @@ $(function() {
     
 
       
-      
-      
       <li class="has-children">
-        <input type="radio" name="toplevel" id="toplevel_3" >
-        <label for="toplevel_3">3. Getting Started [+]</label>
-
+        <input type="radio" name="toplevel" id="toplevel_3">
+        <label for="toplevel_3"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/en/platform/op3/getting_started/#getting-started');">3. Getting Started</button> [+]</label>
       
 
       
         <ul>
         
-          
 
           
 
@@ -3610,7 +3593,6 @@ $(function() {
           
           
         
-          
 
           
 
@@ -3621,7 +3603,6 @@ $(function() {
           
           
         
-          
 
           
 
@@ -3644,18 +3625,14 @@ $(function() {
     
 
       
-      
-      
       <li class="has-children">
-        <input type="radio" name="toplevel" id="toplevel_4" >
-        <label for="toplevel_4">4. Robotis ROS Packages [+]</label>
-
+        <input type="radio" name="toplevel" id="toplevel_4">
+        <label for="toplevel_4"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/en/platform/op3/robotis_ros_packages/#robotis-ros-packages');">4. Robotis ROS Packages</button> [+]</label>
       
 
       
         <ul>
         
-          
 
           
 
@@ -3666,7 +3643,6 @@ $(function() {
           
           
         
-          
 
           
 
@@ -3677,7 +3653,6 @@ $(function() {
           
           
         
-          
 
           
 
@@ -3688,7 +3663,6 @@ $(function() {
           
           
         
-          
 
           
 
@@ -3699,7 +3673,6 @@ $(function() {
           
           
         
-          
 
           
 
@@ -3722,29 +3695,24 @@ $(function() {
     
 
       
-      
-      
       <li class="has-children">
-        <input type="radio" name="toplevel" id="toplevel_5" >
-        <label for="toplevel_5">5. Tutorials [+]</label>
-
+        <input type="radio" name="toplevel" id="toplevel_5">
+        <label for="toplevel_5"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/en/platform/op3/tutorials/#tutorials');">5. Tutorials</button> [+]</label>
       
 
       
         <ul>
         
-          
 
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/op3/tutorials/#how-to-run-op3's-program">1. How to run OP3 program</a></li>
+          <li><a href="http://localhost:4000/docs/en/platform/op3/tutorials/#how-to-run-op3s-program">1. How to run OP3 program</a></li>
           
 
           
           
         
-          
 
           
 
@@ -3755,14 +3723,13 @@ $(function() {
           
           
         
-          
 
           
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="Tutorials_3" >
-            <label for="Tutorials_3">3. How to execute GUI program [+]</label>
+            <input type="radio" name="sublevel" id="Tutorials_3">
+            <label for="Tutorials_3"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/en/platform/op3/tutorials/#how-to-execute-gui-program');">3. How to execute GUI program</button> [+]</label>
           
 
           
@@ -3806,7 +3773,6 @@ $(function() {
           </li>
           
         
-          
 
           
 
@@ -3817,7 +3783,6 @@ $(function() {
           
           
         
-          
 
           
 
@@ -3828,7 +3793,6 @@ $(function() {
           
           
         
-          
 
           
 
@@ -3839,7 +3803,6 @@ $(function() {
           
           
         
-          
 
           
 
@@ -3862,18 +3825,14 @@ $(function() {
     
 
       
-      
-      
       <li class="has-children">
-        <input type="radio" name="toplevel" id="toplevel_6" >
-        <label for="toplevel_6">6. Simulation [+]</label>
-
+        <input type="radio" name="toplevel" id="toplevel_6">
+        <label for="toplevel_6"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/en/platform/op3/simulation/#simulation');">6. Simulation</button> [+]</label>
       
 
       
         <ul>
         
-          
 
           
 
@@ -3884,7 +3843,6 @@ $(function() {
           
           
         
-          
 
           
 
@@ -3907,18 +3865,14 @@ $(function() {
     
 
       
-      
-      
       <li class="has-children">
-        <input type="radio" name="toplevel" id="toplevel_7" >
-        <label for="toplevel_7">7. Hardware [+]</label>
-
+        <input type="radio" name="toplevel" id="toplevel_7">
+        <label for="toplevel_7"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/en/platform/op3/hardware/#hardware');">7. Hardware</button> [+]</label>
       
 
       
         <ul>
         
-          
 
           
 
@@ -3929,7 +3883,6 @@ $(function() {
           
           
         
-          
 
           
 
@@ -3952,18 +3905,14 @@ $(function() {
     
 
       
-      
-      
       <li class="has-children">
-        <input type="radio" name="toplevel" id="toplevel_8" >
-        <label for="toplevel_8">8. Recovery [+]</label>
-
+        <input type="radio" name="toplevel" id="toplevel_8">
+        <label for="toplevel_8"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/en/platform/op3/recovery/');">8. Recovery</button> [+]</label>
       
 
       
         <ul>
         
-          
 
           
 
@@ -3974,7 +3923,6 @@ $(function() {
           
           
         
-          
 
           
 
@@ -4054,9 +4002,10 @@ $(function() {
     </ol>
 
     <p><img src="/assets/images/platform/op3/op3_connection_vnc.png" alt="" /></p>
-    <h2 id="how-to-kill-the-demo-program"><a href="#how-to-kill-the-demo-program">How to kill the demo program</a></h2>
   </li>
 </ul>
+
+<h2 id="how-to-kill-the-demo-program"><a href="#how-to-kill-the-demo-program">How to kill the demo program</a></h2>
 
 <h3 id="kill-demo-program">Kill demo program</h3>
 <p>In order to terminate automatically executed demo program, enter below command in the terminal window.</p>

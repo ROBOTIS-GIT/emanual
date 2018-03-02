@@ -223,10 +223,16 @@ $(function() {
           var copiedurl = decodeURI(item.href);
           var tempurl = $('<input>').val(copiedurl).appendTo('body').select();
           document.execCommand('copy');
-          console.log(copiedurl);
+          // console.log(copiedurl);
           // document.getElementById(id).href;
           // document.execCommand('copy');
         }
+    </script>
+    <script>
+      function movetopage(targeturl)
+      {
+        location.href=targeturl;
+      }
     </script>
   </head>
 
@@ -3402,18 +3408,14 @@ $(function() {
     
 
       
-      
-      
       <li class="has-children">
-        <input type="radio" name="toplevel" id="toplevel_1" >
-        <label for="toplevel_1">1. 개요 [+]</label>
-
+        <input type="radio" name="toplevel" id="toplevel_1">
+        <label for="toplevel_1"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/kr/software/rplus1/task/getting_started/#개요');">1. 개요</button> [+]</label>
       
 
       
         <ul>
         
-          
 
           
 
@@ -3436,18 +3438,14 @@ $(function() {
     
 
       
-      
-      
       <li class="has-children">
-        <input type="radio" name="toplevel" id="toplevel_2" >
-        <label for="toplevel_2">2. 시작하기 [+]</label>
-
+        <input type="radio" name="toplevel" id="toplevel_2">
+        <label for="toplevel_2"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/kr/software/rplus1/task/getting_started/#시작하기');">2. 시작하기</button> [+]</label>
       
 
       
         <ul>
         
-          
 
           
 
@@ -3458,7 +3456,6 @@ $(function() {
           
           
         
-          
 
           
 
@@ -3469,7 +3466,6 @@ $(function() {
           
           
         
-          
 
           
 
@@ -3480,7 +3476,6 @@ $(function() {
           
           
         
-          
 
           
 
@@ -3491,7 +3486,6 @@ $(function() {
           
           
         
-          
 
           
 
@@ -3514,25 +3508,21 @@ $(function() {
     
 
       
-      
-      
       <li class="has-children">
-        <input type="radio" name="toplevel" id="toplevel_3" >
-        <label for="toplevel_3">3. 프로그래밍 [+]</label>
-
+        <input type="radio" name="toplevel" id="toplevel_3">
+        <label for="toplevel_3"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#프로그래밍');">3. 프로그래밍</button> [+]</label>
       
 
       
         <ul>
         
-          
 
           
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="프로그래밍_1" >
-            <label for="프로그래밍_1">1. 편집 [+]</label>
+            <input type="radio" name="sublevel" id="프로그래밍_1">
+            <label for="프로그래밍_1"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#편집');">1. 편집</button> [+]</label>
           
 
           
@@ -3592,14 +3582,13 @@ $(function() {
           </li>
           
         
-          
 
           
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="프로그래밍_2" >
-            <label for="프로그래밍_2">2. 명령어 [+]</label>
+            <input type="radio" name="sublevel" id="프로그래밍_2">
+            <label for="프로그래밍_2"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#명령어');">2. 명령어</button> [+]</label>
           
 
           
@@ -3739,14 +3728,13 @@ $(function() {
           </li>
           
         
-          
 
           
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="프로그래밍_3" >
-            <label for="프로그래밍_3">3. 제어기 파라미터 [+]</label>
+            <input type="radio" name="sublevel" id="프로그래밍_3">
+            <label for="프로그래밍_3"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#제어기-파라미터');">3. 제어기 파라미터</button> [+]</label>
           
 
           
@@ -3910,14 +3898,13 @@ $(function() {
           </li>
           
         
-          
 
           
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="프로그래밍_4" >
-            <label for="프로그래밍_4">4. 모션 파라미터 [+]</label>
+            <input type="radio" name="sublevel" id="프로그래밍_4">
+            <label for="프로그래밍_4"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#모션-파라미터');">4. 모션 파라미터</button> [+]</label>
           
 
           
@@ -3961,14 +3948,13 @@ $(function() {
           </li>
           
         
-          
 
           
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="프로그래밍_5" >
-            <label for="프로그래밍_5">5. 주변장치 [+]</label>
+            <input type="radio" name="sublevel" id="프로그래밍_5">
+            <label for="프로그래밍_5"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#주변장치');">5. 주변장치</button> [+]</label>
           
 
           
@@ -4052,14 +4038,13 @@ $(function() {
           </li>
           
         
-          
 
           
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="프로그래밍_6" >
-            <label for="프로그래밍_6">6. 다이나믹셀 파라미터 [+]</label>
+            <input type="radio" name="sublevel" id="프로그래밍_6">
+            <label for="프로그래밍_6"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#다이나믹셀-파라미터');">6. 다이나믹셀 파라미터</button> [+]</label>
           
 
           
@@ -4191,14 +4176,13 @@ $(function() {
           </li>
           
         
-          
 
           
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="프로그래밍_7" >
-            <label for="프로그래밍_7">7. 통합센서 S1 [+]</label>
+            <input type="radio" name="sublevel" id="프로그래밍_7">
+            <label for="프로그래밍_7"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#통합센서-s1');">7. 통합센서 S1</button> [+]</label>
           
 
           
@@ -4330,14 +4314,13 @@ $(function() {
           </li>
           
         
-          
 
           
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="프로그래밍_8" >
-            <label for="프로그래밍_8">8. 적외선 센서 어레이 [+]</label>
+            <input type="radio" name="sublevel" id="프로그래밍_8">
+            <label for="프로그래밍_8"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#적외선-센서-어레이');">8. 적외선 센서 어레이</button> [+]</label>
           
 
           
@@ -4405,7 +4388,6 @@ $(function() {
           </li>
           
         
-          
 
           
 
@@ -4416,14 +4398,13 @@ $(function() {
           
           
         
-          
 
           
 
           
           <li class="has-children">
-            <input type="radio" name="sublevel" id="프로그래밍_10" >
-            <label for="프로그래밍_10">10. 스마트앱 파라미터 [+]</label>
+            <input type="radio" name="sublevel" id="프로그래밍_10">
+            <label for="프로그래밍_10"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#스마트앱-파라미터');">10. 스마트앱 파라미터</button> [+]</label>
           
 
           
@@ -4807,18 +4788,14 @@ $(function() {
     
 
       
-      
-      
       <li class="has-children">
-        <input type="radio" name="toplevel" id="toplevel_4" >
-        <label for="toplevel_4">4. 기타 정보 [+]</label>
-
+        <input type="radio" name="toplevel" id="toplevel_4">
+        <label for="toplevel_4"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#기타-정보');">4. 기타 정보</button> [+]</label>
       
 
       
         <ul>
         
-          
 
           
 
@@ -4829,7 +4806,6 @@ $(function() {
           
           
         
-          
 
           
 
@@ -4840,7 +4816,6 @@ $(function() {
           
           
         
-          
 
           
 
