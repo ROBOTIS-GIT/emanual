@@ -82,10 +82,16 @@
           var copiedurl = decodeURI(item.href);
           var tempurl = $('<input>').val(copiedurl).appendTo('body').select();
           document.execCommand('copy');
-          console.log(copiedurl);
+          // console.log(copiedurl);
           // document.getElementById(id).href;
           // document.execCommand('copy');
         }
+    </script>
+    <script>
+      function movetopage(targeturl)
+      {
+        location.href=targeturl;
+      }
     </script>
   </head>
 

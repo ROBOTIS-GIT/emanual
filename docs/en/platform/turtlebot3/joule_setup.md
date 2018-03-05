@@ -44,7 +44,9 @@ In this section, the Alternative Ubuntu Desktop 16.04 LTS will be installed on I
 
 If you need following step for installation, please refer to below link
 
-  - [Step by step to install Ubuntu](http://emanual.robotis.com/docs/en/platform/turtlebot3/step_by_step_to_install_ubuntu_on_joule)
+  - [Step by step to install Ubuntu]{: .popup}
+
+[Step by step to install Ubuntu]: /docs/en/platform/turtlebot3/step_by_step_to_install_ubuntu_on_joule
 
 ### [Install ROS](#install-ros)
 

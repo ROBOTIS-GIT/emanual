@@ -12,18 +12,6 @@ div.highlighter-rouge {
   border-radius: 5px;
   background-color: #000;
   
-  &:before {
-    position: absolute;
-    top: 0;
-    right: 1em;
-    background-color: #000;
-    content: "\f121";
-    font-family: "fontawesome" !important;
-    font-size: 0.8em;
-    text-transform: none;
-    speak: none;
-  }
-  
   .highlight {
     overflow-x: auto;
     padding-bottom: 0.5em;

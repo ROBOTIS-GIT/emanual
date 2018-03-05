@@ -1,5 +1,9 @@
 .nav__list {
   overflow-y:auto;
+  height: 85vh;
+}
+
+.sticky_sidebar nav {
   height: 95vh;
 }
 
@@ -145,4 +149,30 @@
   font-size: 1em;
   font-weight: bold;
   text-transform: uppercase;
+}
+
+.tocLevel1 {
+  border: none;
+  background-color: inherit;
+  font-size: inherit;
+  font-weight: bold;
+  overflow: hidden;
+  white-space: nowrap;
+  max-width: 260px;
+  text-overflow: ellipsis;
+  
+  :hover {
+    background-color: inherit;
+  }
+}
+
+.tocLevel2 {
+  border: none;
+  background-color: inherit;
+  font-size: inherit;
+  color: inherit;
+  
+  :hover {
+    background-color: inherit;
+  }
 }
