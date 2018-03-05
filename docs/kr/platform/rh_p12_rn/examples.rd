@@ -33,3 +33,35 @@
 ```
 
 ## [윈도우 예제](#윈도우-예제)
+
+
+![img](/assets/images/platform/rh_p12_rn/windows_example_run.png)
+
+
+![img](/assets/images/platform/rh_p12_rn/windows_example_position_mode.png)
+
+
+![img](/assets/images/platform/rh_p12_rn/windows_example_torque_mode.png)
+
+
+
+# [리눅스 예제](#리눅스-예제)
+
+
+![img](/assets/images/platform/rh_p12_rn/linux_example_run.png)
+
+
+![img](/assets/images/platform/rh_p12_rn/linux_example_position_mode.png)
+
+
+![img](/assets/images/platform/rh_p12_rn/linux_example_torque_mode.png)
+
+
+
+# [ROS GUI 예제](#ROS-GUI-예제)
+
+
+![img](/assets/images/platform/rh_p12_rn/ros_example_position_mode.png)
+
+
+![img](/assets/images/platform/rh_p12_rn/ros_example_torque_mode.png)
