@@ -1,14 +1,14 @@
 ---
 layout: archive
 lang: en
-ref: software_robotis_framework_packages
+ref: robotis_framework_packages
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/software/robotis_framework_packages/
+permalink: /docs/en/software/robotis_framework_packages/
 sidebar:
-  title: ROBOTIS-FRAMEWORK
-  nav: "robotis-framework"
+  title: ROBOTIS Framework Packages
+  nav: "robotis_framework_packages"
 ---
 
 # [Robotis Framework Packages](#robotis-framework-packages)
@@ -24,7 +24,7 @@ Please refer to the below link for more information about the Dynamixel SDK.
 
 ## [Robotis Framework](#robotis-framework)
 
-### [robotis_controller](#robotis-controller)
+### [robotis_controller](#robotis_controller)
 
 #### Overview
 
@@ -82,10 +82,10 @@ Please refer to the below link to create the Robot Manager that uses `robotis_co
 `/robotis/get_present_joint_ctrl_modules` ([robotis_controller_msgs/GetJointModule]{: .popup})  
 &emsp;&emsp; The service to get the configuration of motion module that controls each joint.  
 
-### [robotis_device](#robotis-device)
+### [robotis_device](#robotis_device)
 
 #### Overview
-This is the package that manages device information of ROBOTIS robots. This package is used when reading device information with the robot information file from the [`robotis_controller`] package.
+This is the package that manages device information of ROBOTIS robots. This package is used when reading device information with the robot information file from the [robotis_controller] package.
 
 #### Devices
 
@@ -171,7 +171,7 @@ Values can be deleted for unused variables. However, depending on the control me
 - `max value` : Maximum data value of the Item.
 - `signed` : Y for signed Item data, N for unsigned Item data.
 
-### [robotis_framework_common](#robotis-framework-common)
+### [robotis_framework_common](#robotis_framework_common)
 
 #### Overview
 The package contains commonly used Headers for the ROBOTIS Framework.
@@ -235,7 +235,7 @@ Please refer to the below link for the instruction of creating the new Sensor Mo
 
 ## [ROBOTIS Framework msgs](#robotis-framework-msgs)
 
-### [robotis_controller_msgs](#robotis-controller-msgs)
+### [robotis_controller_msgs](#robotis_controller_msgs)
 
 #### Overview
 This package defines Messages and Service that are used in the [robotis_controller].
@@ -249,23 +249,17 @@ This package defines Messages and Service that are used in the [robotis_controll
 * [GetJointModule.srv]{: .popup}
 
 
-[Creating new motion module]: /docs/en/platform/software/tutorials/#creating-new-motion-module
-[Creating new sensor module]: /docs/en/platform/software/tutorials/#creating-new-sensor-module
-[Creating new robot manager]: /docs/en/platform/software/tutorials/#creating-new-robot-manager
-
+[Creating new motion module]: /docs/en/software/robotis_framework_packages/tutorials/#creating-new-motion-module
+[Creating new sensor module]: /docs/en/software/robotis_framework_packages/tutorials/#creating-new-sensor-module
+[Creating new robot manager]: /docs/en/software/robotis_framework_packages/tutorials/#creating-new-robot-manager
 [std_msgs/String]: /docs/en/popup/std_msgs_string/
 [sensor_msgs/JointState]: /docs/en/popup/sensor_msgs_JointState_msg/
 [robotis_controller_msgs/WriteControlTable]: /docs/en/popup/WriteControlTable.msg/
 [robotis_controller_msgs/SyncWriteItem]: /docs/en/popup/SyncWriteItem.msg/
 [robotis_controller_msgs/JointCtrlModule]: /docs/en/popup/JointCtrlModule.msg/
 [robotis_controller_msgs/GetJointModule]: /docs/en/popup/GetJointModule.srv/
-
 [ROBOTIS Dynamixel SDK Documents]: http://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_sdk/overview/
-
-
-[`robotis_controller`]: /docs/en/platform/software/robotis_framework_packages/#robotis-controller
-[robotis_controller]:  /docs/en/platform/software/robotis_framework_packages/#robotis-controller
-
+[robotis_controller]: /docs/en/software/robotis_framework_packages/#robotis-controller
 [JointCtrlModule.msg]: /docs/en/popup/JointCtrlModule.msg/
 [StatusMsg.msg]: /docs/en/popup/StatusMsg.msg/
 [SyncWriteItem.msg]: /docs/en/popup/SyncWriteItem.msg/

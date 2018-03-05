@@ -368,6 +368,8 @@ main:
     - title: "OpenCM IDE"
       titlekr: "OpenCM IDE"
       url: /software/opencm_ide/getting_started/
+    - title: "ROBOTIS Framework Packages"
+      url: /software/robotis_framework_packages/
   - title: "PARTS"
     titlekr: "부품"
     children:
@@ -12024,6 +12026,36 @@ opencmide:
       titlekr: "Utilities"
       url: /software/opencm_ide/api_reference/#utilities
       urlkr: /software/opencm_ide/api_reference/#utilities
+
+robotis_framework_packages:
+  - title: "ROBOTIS Framework Packages"
+    url: /software/robotis_framework_packages/#robotis-framework-packages
+    children:
+    - title: "DynamixelSDK"
+      url: /software/robotis_framework_packages/#dynamixelsdk
+    - title: "Robotis Framework"
+      url: /software/robotis_framework_packages/#robotis-framework
+      children:
+      - title: "robotis_controller"
+        url: /software/robotis_framework_packages/#robotis_controller
+      - title: "robotis_device"
+        url: /software/robotis_framework_packages/#robotis_device
+      - title: "robotis_framework_common"
+        url: /software/robotis_framework_packages/#robotis_framework_common
+    - title: "ROBOTIS Framework msgs"
+      url: /software/robotis_framework_packages/#robotis-framework-msgs
+      children:
+      - title: "robotis_controller_msgs"
+        url: /software/robotis_framework_packages/#robotis_controller_msgs
+  - title: "Tutorials"
+    url: /software/robotis_framework_packages/tutorials/#tutorials
+    children:
+    - title: "Creating new motion module"
+      url: /software/robotis_framework_packages/tutorials/#creating-new-motion-module
+    - title: "Creating new sensor module"
+      url: /software/robotis_framework_packages/tutorials/#creating-new-sensor-module
+    - title: "Creating new robot manager"
+      url: /software/robotis_framework_packages/tutorials/#creating-new-robot-manager
 
 #DYNAMIXEL SDK sidebar
 dynamixel_sdk:
