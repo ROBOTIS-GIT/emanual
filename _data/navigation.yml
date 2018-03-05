@@ -9731,40 +9731,13 @@ turtlebot3:
   - title: "OpenCR Setup"
     url: /platform/turtlebot3/opencr_setup/#opencr-setup
     children:
-    - title: "ArduinoIDE Settings for OpenCR1.0"
-      url: /platform/turtlebot3/opencr_setup/#arduinoide-settings-for-opencr10
+    - title: "OpenCR1.0 Firmware Upload for TB3"
+      url: /platform/turtlebot3/opencr_setup/#opencr10-firmware-upload-for-tb3
       children:
-      - title: "USB Port Settings"
-        url: /platform/turtlebot3/opencr_setup/#usb-port-settings
-      - title: "Compiler Settings"
-        url: /platform/turtlebot3/opencr_setup/#compiler-settings
-      - title: "Install Arduino IDE"
-        url: /platform/turtlebot3/opencr_setup/#install-arduino-ide
-      - title: "Run Arduino IDE"
-        url: /platform/turtlebot3/opencr_setup/#run-arduino-ide
-      - title: "Porting OpenCR1.0 to Arduino IDE"
-        url: /platform/turtlebot3/opencr_setup/#porting-opencr10-to-arduino-ide
-        children:
-        - title: "Preferences"
-          url: /platform/turtlebot3/opencr_setup/#preferences
-        - title: "Install OpenCR1.0 Package from Boards Manager"
-          url: /platform/turtlebot3/opencr_setup/#install-opencr10-package-from-boards-manager
-        - title: "Port Setting"
-          url: /platform/turtlebot3/opencr_setup/#port-setting
-      - title: "Writing Bootloader (can be skipped)"
-        url: /platform/turtlebot3/opencr_setup/#writing-bootloader-can-be-skipped
-        children:
-        - title: "Programmer Setting"
-          url: /platform/turtlebot3/opencr_setup/#programmer-setting
-        - title: "Entering the DFU Mode"
-          url: /platform/turtlebot3/opencr_setup/#entering-the-dfu-mode
-        - title: "Download the Bootloader"
-          url: /platform/turtlebot3/opencr_setup/#download-the-bootloader
-    - title: "OpenCR1.0 Firmware Settings for ROS"
-      url: /platform/turtlebot3/opencr_setup/#opencr10-firmware-settings-for-ros
-      children:
-      - title: "Add TurtleBot3 Firmware to OpenCR1.0"
-        url: /platform/turtlebot3/opencr_setup/#add-turtlebot3-firmware-to-opencr10
+      - title: "Shell Script"
+        url: /platform/turtlebot3/opencr_setup/#shell-script
+      - title: "Arduino IDE"
+        url: /platform/turtlebot3/opencr_setup/#arduino-ide
   - title: "Bringup"
     url: /platform/turtlebot3/bringup/#bringup
     children:
