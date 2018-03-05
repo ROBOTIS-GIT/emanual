@@ -33,7 +33,7 @@ sidebar:
 | 스트로크            | 0 ~ 108mm                                                                                      |
 | 감속비              | 1295.7 : 1                                                                                     |
 | 최대 파지력         | 170N                                                                                           |
-| 권장 반하중       | 5kg                                                                                            |
+| 권장 가반하중       | 5kg                                                                                            |
 | 동작 온도           | -5&deg;C ~ 55&deg;C                                                                            |
 | 사용 전압           | 24V                                                                                            |
 | Command Signal      | Digital Packet                                                                                 |
