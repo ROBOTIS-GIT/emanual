@@ -85,4 +85,6 @@ sidebar:
 
 ### [Actuator](#actuator)
 
-- [Dynamixel X series](http://en.robotis.com/index/product.php?cate_code=10121110)
+- [Dynamixel XL430](/docs/en/dxl/x/xl430-w250/)
+
+- [Dynamixel XM430](/docs/en/dxl/x/xm430-w210/)
