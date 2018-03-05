@@ -13205,17 +13205,6 @@ opencm904:
         titlekr: "윈도우즈에 설치하기"
         url: /parts/controller/opencm904/#install-on-windows
         urlkr: /parts/controller/opencm904/#윈도우즈에-설치하기
-    - title: "DynamixelWorkbench"
-      url: /parts/controller/opencm904/#dynamixelworkbench
-      children:
-      - title: "APIs"
-        url: /parts/controller/opencm904/#apis
-      - title: "Example 1. Find Dynamixel"
-        url: /parts/controller/opencm904/#find-dynamixel
-      - title: "Example 2. Position"
-        url: /parts/controller/opencm904/#position
-      - title: "Example 3. Speed"
-        url: /parts/controller/opencm904/#speed
   - title: "Examples"
     url: /parts/controller/opencm904/#examples
     children:
@@ -13229,6 +13218,13 @@ opencm904:
       url: /parts/controller/opencm904/#pwm
     - title: "EEPROM"
       url: /parts/controller/opencm904/#eeprom
+    - title: "DynamixelWorkbench"
+      url: /parts/controller/opencm904/#dynamixelworkbench
+      children:
+      - title: "APIs"
+        url: /parts/controller/opencm904/#apis
+      - title: "Workebench Examples"
+        url: /parts/controller/opencm904/#workbench-examples
     - title: "Servo"
       url: /parts/controller/opencm904/#servo
     - title: "SD Card"
