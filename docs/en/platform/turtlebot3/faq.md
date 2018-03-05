@@ -149,7 +149,7 @@ Dynamixel, so you have to connect only one Dynamixel at a time.
 
 ![](/assets/images/platform/turtlebot3/faq/dynamixel_setup_2.png)
 
-2. Change Dynamixel Setting
+1. Change Dynamixel Setting
 
 When the serial monitor is executed, a menu for the Dynamixel setup is displayed as shown in
 As shown in below image. TurtleBot3 consists of two Dynamixel actuators on the left and right respectively, so
@@ -168,7 +168,7 @@ When the setup is completed, `OK` message is printed.
 
 ![](/assets/images/platform/turtlebot3/faq/dynamixel_setup_5.png)
 
-3. Dynamixel Test
+1. Dynamixel Test
 
 Complete the setup procedure and verify if the change has been properly made. If you select one
 of the test menu for the motor, the connected Dynamixel with correct configuration will iterate
