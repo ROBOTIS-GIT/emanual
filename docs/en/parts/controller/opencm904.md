@@ -34,7 +34,7 @@ sidebar:
 - 3 types are available: Type A & Type B & Type C. The difference between Type A,Type B, Type C is the availability of the connectors. (Refer to the image and table above.)  
   (OpenCM9.04 Accessory Set can be purchased to acquire all the necessary connector to upgrade Type A to Type B Type C.)  [OpenCM9.04 Accessory Set](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2394)
 
-`Note` Refer to the DARWIN-MINI for controller recovery (type C-only) [DARWIN-MINI Controller Firmware Update]
+`Note` Refer to the ROBOTIS-MINI for controller recovery (type C-only) [ROBOTIS-MINI Controller Firmware Update]
 {: .notice}
 
 `Caution` Please **DISCONNECT** OpenCM9.04 and OpenCM 485 Expansion board when updating or recovering Dynamixel firmware.
@@ -73,20 +73,20 @@ sidebar:
 # [Control Table](#control-table)
 Control Table consists of data regarding the current status and operation of controller. The user can control controller by changing data of Control Table via Instruction packet.
 
-- EEPROM and RAM  
+- **EEPROM and RAM**  
   Data in RAM area is reset to initial values whenever the power is turned on while data in EEPROM area is kept once values are set even if the power is turned off.
 
-- Address  
+- **Address**  
   Represents the location of data. To read from or write data to the control table the user should assign the correct address in the Instruction packet.
 
-- Access  
+- **Access**  
   Controller has two kinds of data: Read-only data, used mainly for sensing, and read-and-write data used for driving.
 
-- Initial Value  
+- **Initial Value**  
   In case of data in the EEPROM Area, the initial values on the right side of the below Control Table are the factory default settings.  
   In case of data in the RAM Area, the initial values on the right side of the following control table are the ones when the power is turned on.
 
-- Size  
+- **Size**  
   The Size of data varies from 1 ~ 4 bytes depend on their usage. Please check the size of data when updating the data with an Instruction Packet.
 
 ## [EEPROM Area](#eeprom-area)
@@ -2334,7 +2334,7 @@ void testscrolltext(void) {
 [Top Gerber]: http://support.robotis.com/en/baggage_files/opencm/opencm9.04__rev_1.0(131009)-top.pdf
 [Bottom Gerber]: http://support.robotis.com/en/baggage_files/opencm/opencm9.04__rev_1.0(131009)-bottom.pdf
 [Gerber]: http://support.robotis.com/en/baggage_files/opencm/opencm9.04__rev_1.0(131009)-gerber.pdf
-[DARWIN-MINI Controller Firmware Update]: /docs/en/edu/mini/#firmware-update
+[ROBOTIS-MINI Controller Firmware Update]: /docs/en/edu/mini/#firmware-update
 [Arduino IDE]: /docs/en/parts/controller/opencm904/#arduino-ide
 [OpenCM IDE]: http://emanual.robotis.com/docs/en/software/opencm_ide/getting_started/
 [Dynamixel SDK]: /docs/en/software/dynamixel/dynamixel_sdk/overview/

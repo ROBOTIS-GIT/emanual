@@ -368,6 +368,8 @@ main:
     - title: "OpenCM IDE"
       titlekr: "OpenCM IDE"
       url: /software/opencm_ide/getting_started/
+    - title: "ROBOTIS Framework Packages"
+      url: /software/robotis_framework_packages/
   - title: "PARTS"
     titlekr: "부품"
     children:
@@ -11998,6 +12000,36 @@ opencmide:
       url: /software/opencm_ide/api_reference/#utilities
       urlkr: /software/opencm_ide/api_reference/#utilities
 
+robotis_framework_packages:
+  - title: "ROBOTIS Framework Packages"
+    url: /software/robotis_framework_packages/#robotis-framework-packages
+    children:
+    - title: "DynamixelSDK"
+      url: /software/robotis_framework_packages/#dynamixelsdk
+    - title: "Robotis Framework"
+      url: /software/robotis_framework_packages/#robotis-framework
+      children:
+      - title: "robotis_controller"
+        url: /software/robotis_framework_packages/#robotis_controller
+      - title: "robotis_device"
+        url: /software/robotis_framework_packages/#robotis_device
+      - title: "robotis_framework_common"
+        url: /software/robotis_framework_packages/#robotis_framework_common
+    - title: "ROBOTIS Framework msgs"
+      url: /software/robotis_framework_packages/#robotis-framework-msgs
+      children:
+      - title: "robotis_controller_msgs"
+        url: /software/robotis_framework_packages/#robotis_controller_msgs
+  - title: "Tutorials"
+    url: /software/robotis_framework_packages/tutorials/#tutorials
+    children:
+    - title: "Creating new motion module"
+      url: /software/robotis_framework_packages/tutorials/#creating-new-motion-module
+    - title: "Creating new sensor module"
+      url: /software/robotis_framework_packages/tutorials/#creating-new-sensor-module
+    - title: "Creating new robot manager"
+      url: /software/robotis_framework_packages/tutorials/#creating-new-robot-manager
+
 #DYNAMIXEL SDK sidebar
 dynamixel_sdk:
   - title: "Overview"
@@ -13178,17 +13210,6 @@ opencm904:
         titlekr: "윈도우즈에 설치하기"
         url: /parts/controller/opencm904/#install-on-windows
         urlkr: /parts/controller/opencm904/#윈도우즈에-설치하기
-    - title: "DynamixelWorkbench"
-      url: /parts/controller/opencm904/#dynamixelworkbench
-      children:
-      - title: "APIs"
-        url: /parts/controller/opencm904/#apis
-      - title: "Example 1. Find Dynamixel"
-        url: /parts/controller/opencm904/#find-dynamixel
-      - title: "Example 2. Position"
-        url: /parts/controller/opencm904/#position
-      - title: "Example 3. Speed"
-        url: /parts/controller/opencm904/#speed
   - title: "Examples"
     url: /parts/controller/opencm904/#examples
     children:
@@ -13202,6 +13223,13 @@ opencm904:
       url: /parts/controller/opencm904/#pwm
     - title: "EEPROM"
       url: /parts/controller/opencm904/#eeprom
+    - title: "DynamixelWorkbench"
+      url: /parts/controller/opencm904/#dynamixelworkbench
+      children:
+      - title: "APIs"
+        url: /parts/controller/opencm904/#apis
+      - title: "Workebench Examples"
+        url: /parts/controller/opencm904/#workbench-examples
     - title: "Servo"
       url: /parts/controller/opencm904/#servo
     - title: "SD Card"
