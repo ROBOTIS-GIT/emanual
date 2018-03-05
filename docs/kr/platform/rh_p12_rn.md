@@ -238,10 +238,10 @@ External Port 의 용도는 External Port Mode (44, 45, 46, 47) 에 의해서 �
 
 ### <a name="shutdown"></a>**[Shutdown(48)](#shutdown48)**
 다이나믹셀 프로는 동작 중에 발생하는 위험 상황을 감지하여 스스로를 보호할 수 있습니다. 각 Bit의 기능은 ‘OR’ 논리로 적용되기 때문에 중복 설정이 가능합니다.  
-즉 Shutdown(48)이 ‘0x05’(2진수 : 000,0101)로 설정되었을 경우, Input Voltage Error(2진수 : 0000,0001)와 Over Heating Error(2진수 : 0000,0100)가 발생하는 것을 모두 감지할 수 있습니다.  
-위험상황이 감지되면, Torque Enable(562) 값이 ‘0’으로 변경되고 모터 출력은 0%가 됩니다.  
+즉 [Shutdown(48)]이 ‘0x05’(2진수 : 000,0101)로 설정되었을 경우, Input Voltage Error(2진수 : 0000,0001)와 Over Heating Error(2진수 : 0000,0100)가 발생하는 것을 모두 감지할 수 있습니다.  
+위험상황이 감지되면, [Torque Enable(562)] 값이 ‘0’으로 변경되고 모터 출력은 0%가 됩니다.  
 위험상황이 감지된 후에는 REBOOT을 하지 않는 한, Torque Enable(562)을 ‘1’(Torque ON)로 설정할 수 없습니다.  
-Shutdown(48)에서 감지할 수 있는 위험 상황은 아래 표와 같습니다. Shutdown(48)의 초기값은 0x30 (2진수 : 0011,0000) 입니다.
+[Shutdown(48)]에서 감지할 수 있는 위험 상황은 아래 표와 같습니다. [Shutdown(48)]의 초기값은 0x30 (2진수 : 0011,0000) 입니다.
 
 |Bit   | 명칭     | 상세 설명     |
 | :-------------: | :-------------: | :------------- |
@@ -394,3 +394,4 @@ Goal Velocity(600)가 ‘0’인 경우, Profile 이 비활성화 되어 Goal Ac
 
 
 [PDF]: http://support.robotis.com/en/baggage_files/dynamixel/rh-p12-rn.pdf
+[Torque Enable(562)]: #torque-enable562

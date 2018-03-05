@@ -25,7 +25,7 @@ sidebar:
 | MCU                    | ST CORTEX-M4 (STM32F405 @ 168Mhz, 32bit)                                                       |
 | Position Sensor        | Contactless Absolute Encoder (12bit, 360&deg;)<br />Maker : ams(www.ams.com), Part No : AS5045 |
 | Motor                  | Coreless                                                                                       |
-| Baud Rate              | 9,600 bps ~ 10.5 Mbps                                                                             |
+| Baud Rate              | 9,600 bps ~ 10.5 Mbps                                                                          |
 | Control Algorithm      | PID Control                                                                                    |
 | Degree of Precision    | 0.088&deg;                                                                                     |
 | Operating Mode         | Current Control Mode<br />Current based Position Control Mode                                  |
@@ -33,7 +33,7 @@ sidebar:
 | Stroke                 | 0 ~ 108mm                                                                                      |
 | Gear Ratio             | 1295.7 : 1                                                                                     |
 | Maximum Gripping Force | 170N                                                                                           |
-| Rated Load             | 5kg                                                                                            |
+| Recommended Payload    | 5kg                                                                                            |
 | Operating Temperature  | -5&deg;C ~ 55&deg;C                                                                            |
 | Nominal Voltage        | 24V                                                                                            |
 | Command Signal         | Digital Packet                                                                                 |
@@ -116,15 +116,15 @@ sidebar:
 
 ## [Control Table Description](#control-table-description)
 
-`Caution` Data in the EEPROM Area can only be written when the value of Torque Enable(562) is cleared to ‘0’.
+`Caution` Data in the EEPROM Area can only be written when the value of [Torque Enable(562)] is cleared to ‘0’.
 {: .notice--warning}
 
 ### <a name="model-number"></a>**[Model Number(0)](#model-number0)**
 This address stores model number of the RH-P12-RN.
 
-| Model Name | Model Number |
-| :--------: | :----------: |
-|RH-P12-RN | 35073 (0x8901) |
+| Model Name |  Model Number  |
+|:----------:|:--------------:|
+| RH-P12-RN  | 35073 (0x8901) |
 
 ### <a name="firmware-version"></a>**[Firmware Version(6)](#firmware-version6)**
 This address stores firmware version of the RH-P12-RN.
@@ -157,17 +157,17 @@ This address stores firmware version of the RH-P12-RN.
 
 ### <a name="acceleration-limit"></a>**[Acceleration Limit(26)](#acceleration-limit26)**
 This data indicates maximum value of Goal Acceleration(606).  
-Goal Acceleration(606) can’t be configured with any values exceeding the Acceleration Limit(26).  
+[Goal Acceleration(606)] can’t be configured with any values exceeding the [Acceleration Limit(26)].  
 
 Attempting to write an exceeding value will result transmitting Data Limit Error(0x06) in the Error field of the Status Packet.  
-Goal Acceleration(606) is used in all operating mode except Current(Torque) Control Mode in order to generate a target trajectory.
+[Goal Acceleration(606)] is used in all operating mode except Current(Torque) Control Mode in order to generate a target trajectory.
 
 |            Unit             |    Value Range    |
 |:---------------------------:|:-----------------:|
 | 214.577 Rev/min<sup>2</sup> | 0 ~ 2,147,483,647 |
 
 ### <a name="pwm-limit"></a>**[Torque Limit(30)](#torque-limit30)**
-This value indicates torque limit. Goal Torque(604) can't exceed this value.  
+This value indicates torque limit. [Goal Torque(604)] can't exceed this value.  
 Attempting to write an exceeding value will fail and result in receiving a Limit Error Bit from the Status Packet.
 
 |     Unit      | Value Range |
@@ -197,19 +197,19 @@ Attempting to write an exceeding value will fail and result in receiving a Limit
 External ports that can be used for various purposes are provided.  
 The property of each port is configured by the External Port Mode (44, 45, 46, 47) and data of external port is controlled by the External Port Data(626, 628, 630, 632).
 
-|External Port Mode|Mode|Description|
-| :---: | :---: | :---: |
-|0(default)|AI(Analogue Input)|Converts External Port signal to 12[bit] digital value|
-|1|DO_PP(Digital Output Push-Pull)|Use External Port as a digital output port(3.3V level)|
-|2|DI_PU(Digital Input Pull-Up)|Use External Port as a digital input port<br />Floating connection will be considered as '1'|
-|3|DI_PD(Digital Input Pull-Down)|Use External Port as a digital input port<br />Floating connection will be considered as '0'|
+| External Port Mode |              Mode               |                                         Description                                          |
+|:------------------:|:-------------------------------:|:--------------------------------------------------------------------------------------------:|
+|     0(default)     |       AI(Analogue Input)        |                    Converts External Port signal to 12[bit] digital value                    |
+|         1          | DO_PP(Digital Output Push-Pull) |                    Use External Port as a digital output port(3.3V level)                    |
+|         2          |  DI_PU(Digital Input Pull-Up)   | Use External Port as a digital input port<br />Floating connection will be considered as '1' |
+|         3          | DI_PD(Digital Input Pull-Down)  | Use External Port as a digital input port<br />Floating connection will be considered as '0' |
 
-|External Port Mode|Access|Details|Electrical Characteristics|
-| :---: | :---: | :---: | :---: |
-|Common|-|-|0 ~ 3.3[V], 0 ~ 5[mA]<br />VESD(HBM) : 2[kV]|
-|0(AI)|Read|Converts External Port signal to digital value<br />External Data = signal x (4,095 / 3.3)|Resolution : 12[bit] (0 ~ 4,095)|
-|1(DO_PP)|Write|0 : Set External Port output to 0[V]<br />1 : Set External Port output to 3.3[V]|Output High level(VOH) : 2.4 [V] (min)<br />Output Low level(VOL) : 0.5 [V] (max)|
-|2(DI_PU)<br />3 (DI_PD)|Read|0: External Port input is 0[V]<br />1 : External Port input is 3.3[V]|Input High level(VIH) : 2.3 [V] (min)<br />Input Low level(VIL) : 1.0 [V] (max)<br />Pull-Up/Down : 40 [kΩ] (typ)|
+|   External Port Mode    | Access |                                          Details                                           |                                            Electrical Characteristics                                             |
+|:-----------------------:|:------:|:------------------------------------------------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------:|
+|         Common          |   -    |                                             -                                              |                                   0 ~ 3.3[V], 0 ~ 5[mA]<br />VESD(HBM) : 2[kV]                                    |
+|          0(AI)          |  Read  | Converts External Port signal to digital value<br />External Data = signal x (4,095 / 3.3) |                                         Resolution : 12[bit] (0 ~ 4,095)                                          |
+|        1(DO_PP)         | Write  |      0 : Set External Port output to 0[V]<br />1 : Set External Port output to 3.3[V]      |                 Output High level(VOH) : 2.4 [V] (min)<br />Output Low level(VOL) : 0.5 [V] (max)                 |
+| 2(DI_PU)<br />3 (DI_PD) |  Read  |           0: External Port input is 0[V]<br />1 : External Port input is 3.3[V]            | Input High level(VIH) : 2.3 [V] (min)<br />Input Low level(VIL) : 1.0 [V] (max)<br />Pull-Up/Down : 40 [kΩ] (typ) |
 
 ※ VESD(HBM) : ESD(Electrostatic Discharge) Voltage(human body model)
 
@@ -232,24 +232,24 @@ Remove bolts and cover plate to reveal External Port connector.
 
 ![](/assets/images/platform/rh_p12_rn/rh_p12_rn_external_port_pinout.png)
 
-|Pin 1|Pin 2|Pin 3|Pin 4|Pin 5|Pin 6|
-| :---: | :---: | :---: | :---: | :---: | :---: |
-|GND|3.3V|PORT1|PORT2|PORT3|PORT4|
+| Pin 1 | Pin 2 | Pin 3 | Pin 4 | Pin 5 | Pin 6 |
+|:-----:|:-----:|:-----:|:-----:|:-----:|:-----:|
+|  GND  | 3.3V  | PORT1 | PORT2 | PORT3 | PORT4 |
 
 
 ### <a name="shutdown"></a>**[Shutdown(48)](#shutdown48)**
-The Dynamixel can protect itself by detecting dangerous situations that could occur during the operation. Each Bit is inclusively processed with the ‘OR’ logic, therefore, multiple options can be generated. For instance, when ‘0x05’ (binary : 00000101) is defined as Shutdown(48), Dynamixel can detect both Input Voltage Error(binary : 00000001) and Overheating Error(binary : 00000100). If those errors are detected, Torque Enable(562) is cleared to ‘0’ and the motor output becomes 0[%]. In order to reuse Dynamixel Pro in shutdown status, REBOOT has to be done. The followings are detectable situations.
+The Dynamixel can protect itself by detecting dangerous situations that could occur during the operation. Each Bit is inclusively processed with the ‘OR’ logic, therefore, multiple options can be generated. For instance, when ‘0x05’ (binary : 00000101) is defined as [Shutdown(48)], Dynamixel can detect both Input Voltage Error(binary : 00000001) and Overheating Error(binary : 00000100). If those errors are detected, [Torque Enable(562)] is cleared to ‘0’ and the motor output becomes 0[%]. In order to reuse Dynamixel Pro in shutdown status, REBOOT has to be done. The followings are detectable situations.
 
-|Bit   | Item     | Description     |
-| :-------------: | :-------------: | :------------- |
-|Bit 7|-|Unused, Always 0|
-|Bit 6|-|Unused, Always 0|
-|Bit 5|Overload Error(Default)|Detect persistent load that exceeds maximum output|
-|Bit 4|Electrical Shock Error(Default)|Detect electric shock on the circuit or insufficient power to operate the motor|
-|Bit 3|Motor Encoder Error|Detect malfunction of the motor encoder|
-|Bit 2|OverHeating Error|Detect internal temperature exceeds the configured operating temperature|
-|Bit 1|-|Unused, Always 0|
-|Bit 0|Input Voltage Error|Detect input voltage exceeds the configured operating voltage|
+|  Bit  |              Item               | Description                                                                     |
+|:-----:|:-------------------------------:|:--------------------------------------------------------------------------------|
+| Bit 7 |                -                | Unused, Always 0                                                                |
+| Bit 6 |                -                | Unused, Always 0                                                                |
+| Bit 5 |     Overload Error(Default)     | Detect persistent load that exceeds maximum output                              |
+| Bit 4 | Electrical Shock Error(Default) | Detect electric shock on the circuit or insufficient power to operate the motor |
+| Bit 3 |       Motor Encoder Error       | Detect malfunction of the motor encoder                                         |
+| Bit 2 |        OverHeating Error        | Detect internal temperature exceeds the configured operating temperature        |
+| Bit 1 |                -                | Unused, Always 0                                                                |
+| Bit 0 |       Input Voltage Error       | Detect input voltage exceeds the configured operating voltage                   |
 
 {% capture rh_p12_rn_01 %}
 `Note` If Shutdown occurs, use below method to reboot Dynamixels.
@@ -294,17 +294,17 @@ When the instruction from the user is received by the gripper, it takes followin
 This value indicates the position to move.  
 The range of value is between Min Position Limit(40) and Max Position Limit(36) with initial value of 0 ~ 1,150(0x47E) respectively.
 
-|Model|Goal Position = 0|Goal Position = 740|
-| :-------: | :--------: | :--------: |
-|RH-P12-RN|![](/assets/images/platform/rh_p12_rn/rh_p12_rn_position_open.png)|![](/assets/images/platform/rh_p12_rn/rh_p12_rn_position_close.png)|
+|   Model   |                         Goal Position = 0                          |                         Goal Position = 740                         |
+|:---------:|:------------------------------------------------------------------:|:-------------------------------------------------------------------:|
+| RH-P12-RN | ![](/assets/images/platform/rh_p12_rn/rh_p12_rn_position_open.png) | ![](/assets/images/platform/rh_p12_rn/rh_p12_rn_position_close.png) |
 
 
 ### <a name="goal-velocity"></a>**[Goal Velocity(600)](#goal-velocity600)**
 Goal Velocity is only used for Current-based Position Control mode to set the maximum speed of Profile.  
 If Goal Velocity(600) is set to '0', Profile is disabled and use the maximum RPM of motor.
 
-|Unit|Value Range|
-| :---: | :---: |
+|   Unit    |               Value Range                |
+|:---------:|:----------------------------------------:|
 | 0.114 rpm | -Velocity Limit(32) ~ Velocity Limit(32) |
 
 `Note` The maximum velocity and maximum torque of DYNAMIXEL is affected by supplying voltage. Therefore, if supplying voltage changes, so does the maximum velocity. This manual complies with recommended supply voltage(24[V]).
@@ -316,23 +316,23 @@ If Goal Velocity(600) is set to '0', Profile is disabled and use the maximum RPM
 ### <a name="goal-torque"></a>**[Goal Torque(604)](#goal-torque604)**
 Goal Torque is used for other purposes according to Operating Mode(11).
 
-|Operating Mode|Goal Torque|
-|:---:|:---:|
-|0 (Torque Control Mode)|Goal Torque is used as Target Torque value|
-|5 (Current-based Position Control Mode)|Goal Torque is used as Maximum Torque value|
+|             Operating Mode              |                 Goal Torque                 |
+|:---------------------------------------:|:-------------------------------------------:|
+|         0 (Torque Control Mode)         | Goal Torque is used as Target Torque value  |
+| 5 (Current-based Position Control Mode) | Goal Torque is used as Maximum Torque value |
 
-Also, Goal Torque(604) cannot exceed Torque Limit(30).
+Also, [Goal Torque(604)] cannot exceed Torque Limit(30).
 
-|Unit|Value Range|
-| :---: | :---: |
+|     Unit      |             Value Range              |
+|:-------------:|:------------------------------------:|
 | about 4.02 mA | -Torque Limit(30) ~ Torque Limit(30) |
 
 ### <a name="goal-acceleration"></a>**[Goal Acceleration(606)](#goal-acceleration606)**
 Goal Acceleration  is only used for Current-based Position Control mode to set the acceleration of Profile.  
-If Goal Velocity(600) is set to '0', Profile is disabled and Goal Acceleration(606) is not applied.
+If [Goal Velocity(600)] is set to '0', Profile is disabled and [Goal Acceleration(606)] is not applied.
 
-|Unit|Value Range|
-| :---: | :---: |
+|            Unit             |        Value Range         |
+|:---------------------------:|:--------------------------:|
 | 214.577 Rev/min<sup>2</sup> | 0 ~ Acceleration Limit(26) |
 
 ### <a name="moving"></a>**[Moving(610)](#moving610)**
@@ -341,9 +341,9 @@ If Goal Velocity(600) is set to '0', Profile is disabled and Goal Acceleration(6
 ### <a name="present-position"></a>**[Present Position(611)](#present-position611)**
 This value indicates present Position.
 
-|Model|Goal Position = 0|Goal Position = 740|
-| :-------: | :--------: | :--------: |
-|RH-P12-RN|![](/assets/images/platform/rh_p12_rn/rh_p12_rn_position_open.png)|![](/assets/images/platform/rh_p12_rn/rh_p12_rn_position_close.png)|
+|   Model   |                         Goal Position = 0                          |                         Goal Position = 740                         |
+|:---------:|:------------------------------------------------------------------:|:-------------------------------------------------------------------:|
+| RH-P12-RN | ![](/assets/images/platform/rh_p12_rn/rh_p12_rn_position_open.png) | ![](/assets/images/platform/rh_p12_rn/rh_p12_rn_position_close.png) |
 
 ### <a name="present-velocity"></a>**[Present Velocity(615)](#present-velocity615)**
 This value indicates present Velocity.
@@ -388,3 +388,8 @@ This value indicates present internal Temperature. For more details, please refe
 
 
 [PDF]: http://support.robotis.com/en/baggage_files/dynamixel/rh-p12-rn.pdf
+[Torque Enable(562)]: #torque-enable562
+[Goal Torque(604)]: #goal-torque604
+[Acceleration Limit(26)]: #acceleration-limit26
+[Goal Acceleration(606)]: #goal-acceleration606
+[Goal Velocity(600)]: #goal-velocity600
