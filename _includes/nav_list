@@ -44,6 +44,7 @@
 
       {% if nav.children != null %}
         <ul>
+        {% assign child_index = 0 %}
         {% for child in nav.children %}
 
           {% if page.lang=='kr' %}
@@ -64,11 +65,15 @@
           {% endif %}
 
           {% if child.children != null %}
-          <li class="has-children">
-            <input type="radio" name="sublevel" id="{{ navtitle }}_{{ forloop.index }}">
-            <label for="{{ navtitle }}_{{ forloop.index }}"><button class="tocLevel2" onclick="movetopage('{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ childurl }}');">{{ forloop.index }}. {{ childtitle }}</button> [+]</label>
+            {% assign child_index = child_index | plus: 1 %}
+            <li class="has-children">
+              <input type="radio" name="sublevel" id="{{ navtitle }}_{{ child_index }}">
+              <label for="{{ navtitle }}_{{ child_index }}"><button class="tocLevel2" onclick="movetopage('{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ childurl }}');">{{ child_index }}. {{ childtitle }}</button> [+]</label>
           {% else %}
-          <li><a href="{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ childurl }}">{{ forloop.index }}. {{ childtitle }}</a></li>
+            {% if childtitle != null %}
+              {% assign child_index = child_index | plus: 1 %}
+              <li><a href="{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ childurl }}">{{ child_index }}. {{ childtitle }}</a></li>
+            {% endif %}
           {% endif %}
 
           {% if child.children != null %}
@@ -97,9 +102,12 @@
                 {% assign grandchildurl=grandchild.url %}
               {% endif %}
 
-              <li>
-                <a href="{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ grandchildurl }}" style="font-style:italic;">{{ grandchildtitle }}</a>
-              </li>
+              {% if grandchildtitle != null %}
+                <li>
+                  <a href="{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ grandchildurl }}" style="font-style:italic;">{{ grandchildtitle }}</a>
+                </li>
+              {% endif %}
+              
             {% endfor %}
             </ul>
           {% endif %}

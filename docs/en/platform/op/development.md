@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/op/development/
 sidebar:
-  title: DARwIn-OP
+  title: ROBOTIS OP
   nav: "op"
 ---
 
@@ -240,10 +240,10 @@ Discards data received but not read.
 Writes up to numPacket bytes from the buffer pointed packet to CM730 port.
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|packet|unsigned char*|write buffer pointer|
-|numPacket|int|the number of bytes to write|
+|   Name    |      Type      |         Description          |
+|:---------:|:--------------:|:----------------------------:|
+|  packet   | unsigned char* |     write buffer pointer     |
+| numPacket |      int       | the number of bytes to write |
 
 - Return : On success, the number of bytes written is returned. On error, -1 is returned.
  
@@ -252,10 +252,10 @@ Writes up to numPacket bytes from the buffer pointed packet to CM730 port.
 Attempts to read up to numPacket bytes from CM730 port into the buffer starting at packet.
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|packet|unsigned char*|read buffer pointer|
-|numPacket|int|the number of bytes to read|
+|   Name    |      Type      |         Description         |
+|:---------:|:--------------:|:---------------------------:|
+|  packet   | unsigned char* |     read buffer pointer     |
+| numPacket |      int       | the number of bytes to read |
 
 - Return : On success, the number of bytes read is returned. On error, -1 is returned.
  
@@ -300,9 +300,9 @@ Returns high-priority Semaphore.
 Sets packet reception timeout.
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|lenPacket|int|Waits for Packet bytes|
+|   Name    | Type |      Description       |
+|:---------:|:----:|:----------------------:|
+| lenPacket | int  | Waits for Packet bytes |
 
 - Return : None
  
@@ -322,9 +322,9 @@ Gets Packet timeout occurence.
 Sets timeout refresh in control table.
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|msec|int|refresh time|
+| Name | Type | Description  |
+|:----:|:----:|:------------:|
+| msec | int  | refresh time |
 
 - Return : None
  
@@ -344,9 +344,9 @@ Gets refresh timeout occurence.
 makes the calling process sleep until msec milliseconds have elapsed.
 - Arguments 
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|msec|int|timeout setting value (milliseconds)|
+| Name | Type |             Description              |
+|:----:|:----:|:------------------------------------:|
+| msec | int  | timeout setting value (milliseconds) |
 
 - Return : None
  
@@ -362,101 +362,101 @@ Class platform porting is necessary for proper functionality.
 
 Output message of during link between Dynamixel and CM730.
 
-|Name|Description|
-|:---:|:---:|
-|SUCCESS|Successful communicationa with Dynamixel|
-|TX_CORRUPT|Problems with Instruction Packet|
-|TX_FAIL|Port error, failed to send Instruction Packet|
-|RX_FAIL|Port error, failed to receive Status Packet|
-|RX_TIMEOUT|Timeout Status, failed to receive Packet (please check connections)|
-|RX_CORRUPT|Status Packet error (bad communications link)|
+|    Name    |                             Description                             |
+|:----------:|:-------------------------------------------------------------------:|
+|  SUCCESS   |              Successful communicationa with Dynamixel               |
+| TX_CORRUPT |                  Problems with Instruction Packet                   |
+|  TX_FAIL   |            Port error, failed to send Instruction Packet            |
+|  RX_FAIL   |             Port error, failed to receive Status Packet             |
+| RX_TIMEOUT | Timeout Status, failed to receive Packet (please check connections) |
+| RX_CORRUPT |            Status Packet error (bad communications link)            |
  
 ###### Error bit flag
 
 Status Packet Error flag
 
-|Name|Value|Bit|Description|
-|:---:|:---:|:---:|:---:|
-|INPUT_VOLTAGE|1 (0x01)|1|Input Voltage range in over the limit.|
-|ANGLE_LIMIT|2 (0x02)|2|Set Angle limit problem(s).|
-|OVERHEATING|4 (0x04)|3|Internal overheating.|
-|RANGE|8 (0x08)|4|Set value(s) out of range.|
-|CHECKSUM|16 (0x10)|5|Instruction Packet Checksum error.|
-|OVERLOAD|32 (0x20)|6|Excessive load detected.|
-|INSTRUCTION|64 (0x40)|7|Invalis Instruction Packet Instruction.|
+|     Name      |   Value   | Bit |               Description               |
+|:-------------:|:---------:|:---:|:---------------------------------------:|
+| INPUT_VOLTAGE | 1 (0x01)  |  1  | Input Voltage range in over the limit.  |
+|  ANGLE_LIMIT  | 2 (0x02)  |  2  |       Set Angle limit problem(s).       |
+|  OVERHEATING  | 4 (0x04)  |  3  |          Internal overheating.          |
+|     RANGE     | 8 (0x08)  |  4  |       Set value(s) out of range.        |
+|   CHECKSUM    | 16 (0x10) |  5  |   Instruction Packet Checksum error.    |
+|   OVERLOAD    | 32 (0x20) |  6  |        Excessive load detected.         |
+|  INSTRUCTION  | 64 (0x40) |  7  | Invalis Instruction Packet Instruction. |
  
 ###### Special ID#
 
 Special ID's
 
-|Name|Value|Description|
-|:---:|:---:|:---:|
-|ID_CM|200|ID for Sub Controller|
-|ID_BROADCAST|254|Communication with all connected device|
+|     Name     | Value |               Description               |
+|:------------:|:-----:|:---------------------------------------:|
+|    ID_CM     |  200  |          ID for Sub Controller          |
+| ID_BROADCAST |  254  | Communication with all connected device |
  
 ###### Address#
 
 Control Table Address
 
-|Name|Address|Description|
-|:---:|:---:|:---:|
-|P_MODEL_NUMBER_L|0 (0x0)|Lowest byte of model number|
-|P_MODEL_NUMBER_H|1 (0x1)|Highest byte of model number|
-|P_VERSION|2 (0x2)|Information on the version of firmware
-|P_ID|3 (0x3)|ID of CM730
-|P_BAUD_RATE|4 (0x4)|Baud Rate of CM730
-|P_RETURN_DELAY_TIME|5 (0x5)|Retrun Delay Time
-|P_RETURN_LEVEL|16 (0x10)|Status Return Level
-|P_DXL_POWER|24 (0x18)|Dynamixel Power
-|P_LED_PANNEL|25 (0x19)|LED of back pannel
-|P_LED_HEAD_L|26 (0x1A)|Low byte of Head LED
-|P_LED_HEAD_H|27 (0x1B)|High byte of Head LED
-|P_LED_EYE_L|28 (0x1C)|Low byte of Eye LED
-|P_LED_EYE_H|29 (0x1D)|High byte of Eye LED
-|P_BUTTON|30 (0x1E)|Button
-|P_GYRO_Z_L|38 (0x26)|Low byte of Gyro Z-axis
-|P_GYRO_Z_H|39 (0x27)|High byte of Gyro Z-axis
-|P_GYRO_Y_L|40 (0x28)|Low byte of Gyro Y-axis
-|P_GYRO_Y_H|41 (0x29)|High byte of Gyro Y-axis
-|P_GYRO_X_L|42 (0x2A)|Low byte of Gyro X-axis
-|P_GYRO_X_H|43 (0x2B)|High byte of Gyro X-axis
-|P_ACCEL_X_L|44 (0x2C)|Low byte of Accelerometer X-axis
-|P_ACCEL_X_H|45 (0x2D)|High byte of Accelerometer X-axis
-|P_ACCEL_Y_L|46 (0x2E)|Low byte of Accelerometer Y-axis
-|P_ACCEL_Y_H|47 (0x2F)|High byte of Accelerometer Y-axis
-|P_ACCEL_Z_L|48 (0x30)|Low byte of Accelerometer Z-axis
-|P_ACCEL_Z_H|49 (0x31)|High byte of Accelerometer Z-axis
-|P_VOLTAGE|50 (0x32)|Present Voltage
-|P_LEFT_MIC_L|51 (0x33)|Low byte of Left Mic. ADC value
-|P_LEFT_MIC_H|52 (0x34)|High byte of Left Mic. ADC value
-|P_ADC2_L|53 (0x35)|Low byte of ADC 2
-|P_ADC2_H|54 (0x36)|High byte of ADC 2
-|P_ADC3_L|55 (0x37)|Low byte of ADC 3
-|P_ADC3_H|56 (0x38)|High byte of ADC 3
-|P_ADC4_L|57 (0x39)|Low byte of ADC 4
-|P_ADC4_H|58 (0x3A)|High byte of ADC 4
-|P_ADC5_L|59 (0x3B)|Low byte of ADC 5
-|P_ADC5_H|60 (0x3C)|High byte of ADC 5
-|P_ADC6_L|61 (0x3D)|Low byte of ADC 6
-|P_ADC6_H|62 (0x3E)|High byte of ADC 6
-|P_ADC7_L|63 (0x3F)|Low byte of ADC 7
-|P_ADC7_H|64 (0x40)|High byte of ADC 7
-|P_ADC8_L|65 (0x41)|Low byte of ADC 8
-|P_ADC8_H|66 (0x42)|High byte of ADC 8
-|P_RIGHT_MIC_L|67 (0x43)|Low byte of Right Mic. ADC value
-|P_RIGHT_MIC_H|68 (0x44)|High byte of Right Mic. ADC value
-|P_ADC10_L|69 (0x45)|Low byte of ADC 10
-|P_ADC10_H|70 (0x46)|High byte of ADC 10
-|P_ADC11_L|71 (0x47)|Low byte of ADC 11
-|P_ADC11_H|72 (0x48)|High byte of ADC 11
-|P_ADC12_L|73 (0x49)|Low byte of ADC 12
-|P_ADC12_H|74 (0x50)|High byte of ADC 12
-|P_ADC13_L|75 (0x51)|Low byte of ADC 13
-|P_ADC13_H|76 (0x52)|High byte of ADC 13
-|P_ADC14_L|77 (0x53)|Low byte of ADC 14
-|P_ADC14_H|78 (0x54)|High byte of ADC 14
-|P_ADC15_L|79 (0x55)|Low byte of ADC 15
-|P_ADC15_H|80 (0x56)|High byte of ADC 15
+|        Name         |  Address  |              Description               |
+|:-------------------:|:---------:|:--------------------------------------:|
+|  P_MODEL_NUMBER_L   |  0 (0x0)  |      Lowest byte of model number       |
+|  P_MODEL_NUMBER_H   |  1 (0x1)  |      Highest byte of model number      |
+|      P_VERSION      |  2 (0x2)  | Information on the version of firmware |
+|        P_ID         |  3 (0x3)  |              ID of CM730               |
+|     P_BAUD_RATE     |  4 (0x4)  |           Baud Rate of CM730           |
+| P_RETURN_DELAY_TIME |  5 (0x5)  |           Retrun Delay Time            |
+|   P_RETURN_LEVEL    | 16 (0x10) |          Status Return Level           |
+|     P_DXL_POWER     | 24 (0x18) |            Dynamixel Power             |
+|    P_LED_PANNEL     | 25 (0x19) |           LED of back pannel           |
+|    P_LED_HEAD_L     | 26 (0x1A) |          Low byte of Head LED          |
+|    P_LED_HEAD_H     | 27 (0x1B) |         High byte of Head LED          |
+|     P_LED_EYE_L     | 28 (0x1C) |          Low byte of Eye LED           |
+|     P_LED_EYE_H     | 29 (0x1D) |          High byte of Eye LED          |
+|      P_BUTTON       | 30 (0x1E) |                 Button                 |
+|     P_GYRO_Z_L      | 38 (0x26) |        Low byte of Gyro Z-axis         |
+|     P_GYRO_Z_H      | 39 (0x27) |        High byte of Gyro Z-axis        |
+|     P_GYRO_Y_L      | 40 (0x28) |        Low byte of Gyro Y-axis         |
+|     P_GYRO_Y_H      | 41 (0x29) |        High byte of Gyro Y-axis        |
+|     P_GYRO_X_L      | 42 (0x2A) |        Low byte of Gyro X-axis         |
+|     P_GYRO_X_H      | 43 (0x2B) |        High byte of Gyro X-axis        |
+|     P_ACCEL_X_L     | 44 (0x2C) |    Low byte of Accelerometer X-axis    |
+|     P_ACCEL_X_H     | 45 (0x2D) |   High byte of Accelerometer X-axis    |
+|     P_ACCEL_Y_L     | 46 (0x2E) |    Low byte of Accelerometer Y-axis    |
+|     P_ACCEL_Y_H     | 47 (0x2F) |   High byte of Accelerometer Y-axis    |
+|     P_ACCEL_Z_L     | 48 (0x30) |    Low byte of Accelerometer Z-axis    |
+|     P_ACCEL_Z_H     | 49 (0x31) |   High byte of Accelerometer Z-axis    |
+|      P_VOLTAGE      | 50 (0x32) |            Present Voltage             |
+|    P_LEFT_MIC_L     | 51 (0x33) |    Low byte of Left Mic. ADC value     |
+|    P_LEFT_MIC_H     | 52 (0x34) |    High byte of Left Mic. ADC value    |
+|      P_ADC2_L       | 53 (0x35) |           Low byte of ADC 2            |
+|      P_ADC2_H       | 54 (0x36) |           High byte of ADC 2           |
+|      P_ADC3_L       | 55 (0x37) |           Low byte of ADC 3            |
+|      P_ADC3_H       | 56 (0x38) |           High byte of ADC 3           |
+|      P_ADC4_L       | 57 (0x39) |           Low byte of ADC 4            |
+|      P_ADC4_H       | 58 (0x3A) |           High byte of ADC 4           |
+|      P_ADC5_L       | 59 (0x3B) |           Low byte of ADC 5            |
+|      P_ADC5_H       | 60 (0x3C) |           High byte of ADC 5           |
+|      P_ADC6_L       | 61 (0x3D) |           Low byte of ADC 6            |
+|      P_ADC6_H       | 62 (0x3E) |           High byte of ADC 6           |
+|      P_ADC7_L       | 63 (0x3F) |           Low byte of ADC 7            |
+|      P_ADC7_H       | 64 (0x40) |           High byte of ADC 7           |
+|      P_ADC8_L       | 65 (0x41) |           Low byte of ADC 8            |
+|      P_ADC8_H       | 66 (0x42) |           High byte of ADC 8           |
+|    P_RIGHT_MIC_L    | 67 (0x43) |    Low byte of Right Mic. ADC value    |
+|    P_RIGHT_MIC_H    | 68 (0x44) |   High byte of Right Mic. ADC value    |
+|      P_ADC10_L      | 69 (0x45) |           Low byte of ADC 10           |
+|      P_ADC10_H      | 70 (0x46) |          High byte of ADC 10           |
+|      P_ADC11_L      | 71 (0x47) |           Low byte of ADC 11           |
+|      P_ADC11_H      | 72 (0x48) |          High byte of ADC 11           |
+|      P_ADC12_L      | 73 (0x49) |           Low byte of ADC 12           |
+|      P_ADC12_H      | 74 (0x50) |          High byte of ADC 12           |
+|      P_ADC13_L      | 75 (0x51) |           Low byte of ADC 13           |
+|      P_ADC13_H      | 76 (0x52) |          High byte of ADC 13           |
+|      P_ADC14_L      | 77 (0x53) |           Low byte of ADC 14           |
+|      P_ADC14_H      | 78 (0x54) |          High byte of ADC 14           |
+|      P_ADC15_L      | 79 (0x55) |           Low byte of ADC 15           |
+|      P_ADC15_H      | 80 (0x56) |          High byte of ADC 15           |
   
 ##### Constructions#
 
@@ -464,9 +464,9 @@ Control Table Address
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|platform|PlatformCM730|-|
+|   Name   |     Type      | Description |
+|:--------:|:-------------:|:-----------:|
+| platform | PlatformCM730 |      -      |
  
 ##### Methods#
 
@@ -487,10 +487,10 @@ Releases CM-730.
 Check the existance of Dynamixel with selected id.
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|id|int|Dynamixel ID for checking|
-|error|int*|Status packet error|
+| Name  | Type |        Description        |
+|:-----:|:----:|:-------------------------:|
+|  id   | int  | Dynamixel ID for checking |
+| error | int* |    Status packet error    |
 
 - Return : Communication Result
  
@@ -499,11 +499,11 @@ Check the existance of Dynamixel with selected id.
 Reads unit byte from CM-730 Control Table value
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|address|int|Control Table address|
-|pValue|int*|saves read values|
-|error|int*|Status packet error|
+|  Name   | Type |      Description      |
+|:-------:|:----:|:---------------------:|
+| address | int  | Control Table address |
+| pValue  | int* |   saves read values   |
+|  error  | int* |  Status packet error  |
 
 - Return : Communication Result
  
@@ -512,12 +512,12 @@ Reads unit byte from CM-730 Control Table value
 Reads unit byte from CM-730 Control Table value
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|id|int|Dynamixel ID|
-|address|int|Control Table address|
-|pValue|int*|saves read values|
-|error|int*|Status packet error|
+|  Name   | Type |      Description      |
+|:-------:|:----:|:---------------------:|
+|   id    | int  |     Dynamixel ID      |
+| address | int  | Control Table address |
+| pValue  | int* |   saves read values   |
+|  error  | int* |  Status packet error  |
 
 - Return : Communication Result
  
@@ -527,11 +527,11 @@ Reads 2 bytes from CM-730 Control Table value
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|address|int|Control Table address|
-|pValue|int*|saves read values|
-|error|int*|Status packet error|
+|  Name   | Type |      Description      |
+|:-------:|:----:|:---------------------:|
+| address | int  | Control Table address |
+| pValue  | int* |   saves read values   |
+|  error  | int* |  Status packet error  |
 
 - Return : Communication Result
  
@@ -541,12 +541,12 @@ Reads 2 bytes from CM-730 Control Table value
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|id|int|Dynamixel ID|
-|address|int|Control Table address|
-|pValue|int*|saves read values|
-|error|int*|Status packet error|
+|  Name   | Type |      Description      |
+|:-------:|:----:|:---------------------:|
+|   id    | int  |     Dynamixel ID      |
+| address | int  | Control Table address |
+| pValue  | int* |   saves read values   |
+|  error  | int* |  Status packet error  |
 
 - Return : Communication Result
  
@@ -556,12 +556,12 @@ Reads 2 bytes from CM-730 Control Table value
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|start_addr|int|Control table start address|
-|end_addr|int|Control table end address|
-|table|unsigned char*|Read data buffer|
-|error|int*|Status packet error|
+|    Name    |      Type      |         Description         |
+|:----------:|:--------------:|:---------------------------:|
+| start_addr |      int       | Control table start address |
+|  end_addr  |      int       |  Control table end address  |
+|   table    | unsigned char* |      Read data buffer       |
+|   error    |      int*      |     Status packet error     |
 
 - Return : Communication Result
  
@@ -570,13 +570,13 @@ Reads 2 bytes from CM-730 Control Table value
 Reads CM-730 Control Table value from start_addr to end_addr
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|id|int|Dynamixel ID|
-|start_addr|int|Control table start address|
-|end_addr|int|Control table end address|
-|table|unsigned char*|Read data buffer|
-|error|int*|Status packet error|
+|    Name    |      Type      |         Description         |
+|:----------:|:--------------:|:---------------------------:|
+|     id     |      int       |        Dynamixel ID         |
+| start_addr |      int       | Control table start address |
+|  end_addr  |      int       |  Control table end address  |
+|   table    | unsigned char* |      Read data buffer       |
+|   error    |      int*      |     Status packet error     |
 
 - Return : Communication Result
  
@@ -585,11 +585,11 @@ Reads CM-730 Control Table value from start_addr to end_addr
 Writes unit byte to CM-730 Control Table
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|address|int|Control Table address|
-|value|int|write value|
-|error|int*|Status packet error|
+|  Name   | Type |      Description      |
+|:-------:|:----:|:---------------------:|
+| address | int  | Control Table address |
+|  value  | int  |      write value      |
+|  error  | int* |  Status packet error  |
 
 - Return : Communication Result
  
@@ -599,12 +599,12 @@ Writes unit byte to CM-730 Control Table
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|id|int|Dynamixel ID|
-|address|int|Control Table address|
-|value|int|write value|
-|error|int*|Status packet error|
+|  Name   | Type |      Description      |
+|:-------:|:----:|:---------------------:|
+|   id    | int  |     Dynamixel ID      |
+| address | int  | Control Table address |
+|  value  | int  |      write value      |
+|  error  | int* |  Status packet error  |
 
 - Return : Communication Result
  
@@ -613,11 +613,11 @@ Writes unit byte to CM-730 Control Table
 Writes 2 bytes to CM-730 Control Table
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|address|int|Control Table address|
-|value|int|write value|
-|error|int*|Status packet error|
+|  Name   | Type |      Description      |
+|:-------:|:----:|:---------------------:|
+| address | int  | Control Table address |
+|  value  | int  |      write value      |
+|  error  | int* |  Status packet error  |
 
 - Return : Communication Result
  
@@ -627,12 +627,12 @@ Writes 2 bytes to CM-730 Control Table
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|id|int|Dynamixel ID|
-|address|int|Control Table address|
-|value|int|write value|
-|error|int*|Status packet error|
+|  Name   | Type |      Description      |
+|:-------:|:----:|:---------------------:|
+|   id    | int  |     Dynamixel ID      |
+| address | int  | Control Table address |
+|  value  | int  |      write value      |
+|  error  | int* |  Status packet error  |
 
 - Return : Communication Result
  
@@ -640,12 +640,12 @@ Writes 2 bytes to CM-730 Control Table
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|start_addr|int|-|
-|each_length|int|-|
-|number|int|-|
-|pParam|int*|-| 
+|    Name     | Type | Description |
+|:-----------:|:----:|:-----------:|
+| start_addr  | int  |      -      |
+| each_length | int  |      -      |
+|   number    | int  |      -      |
+|   pParam    | int* |      -      |
 
 - Return : Communication Result
  
@@ -653,10 +653,10 @@ Writes 2 bytes to CM-730 Control Table
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|lowbyte|int	 |-|
-|highbyte|int	 |-|
+|   Name   | Type | Description |
+|:--------:|:----:|:-----------:|
+| lowbyte  | int  |      -      |
+| highbyte | int  |      -      |
 
 - Return : 2 bytes integer value
  
@@ -664,9 +664,9 @@ Writes 2 bytes to CM-730 Control Table
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|word|int	 |-|
+| Name | Type | Description |
+|:----:|:----:|:-----------:|
+| word | int  |      -      |
 
 - Return : low byte
  
@@ -674,9 +674,9 @@ Writes 2 bytes to CM-730 Control Table
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|word|int	 |-|
+| Name | Type | Description |
+|:----:|:----:|:-----------:|
+| word | int  |      -      |
 
 - Return : high byte
  
@@ -684,11 +684,11 @@ Writes 2 bytes to CM-730 Control Table
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|red|int	 |-|
-|green|int	 |-|
-|blue|int	 |-|
+| Name  | Type | Description |
+|:-----:|:----:|:-----------:|
+|  red  | int  |      -      |
+| green | int  |      -      |
+| blue  | int  |      -      |
 
 - Return : color value
 
@@ -728,9 +728,9 @@ The maximum number of an array
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|mat|const Matrix3D&|copy Matrix3D|
+| Name |      Type       |  Description  |
+|:----:|:---------------:|:-------------:|
+| mat  | const Matrix3D& | copy Matrix3D |
   
 ##### Data Members
 
@@ -757,9 +757,9 @@ Computes inverses.
 Convertion and scaling
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|scale|Vector3D&|x, y, z coordinates scaling factor|
+| Name  |   Type    |            Description             |
+|:-----:|:---------:|:----------------------------------:|
+| scale | Vector3D& | x, y, z coordinates scaling factor |
 
 - Return : None
  
@@ -768,10 +768,10 @@ Convertion and scaling
 Rotation conversion.
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|angle|double|rotating angle (in degree units)|
-|axis|Vector3D&|rotating axis|
+| Name  |   Type    |           Description            |
+|:-----:|:---------:|:--------------------------------:|
+| angle |  double   | rotating angle (in degree units) |
+| axis  | Vector3D& |          rotating axis           |
 
 - Return : None
  
@@ -780,10 +780,10 @@ Rotation conversion.
 Motion conversion.
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|angle|double|rotating angle (in degree units)|
-|axis|Vector3D&|rotating axis|
+| Name  |   Type    |           Description            |
+|:-----:|:---------:|:--------------------------------:|
+| angle |  double   | rotating angle (in degree units) |
+| axis  | Vector3D& |          rotating axis           |
 
 - Return : None
  
@@ -792,9 +792,9 @@ Motion conversion.
 Point conversion.
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|point|Point3D&|point conversion|
+| Name  |   Type   |   Description    |
+|:-----:|:--------:|:----------------:|
+| point | Point3D& | point conversion |
 
 - Return : Conversion results
 
@@ -804,10 +804,10 @@ Clears conversion information of position and angle information (defaults to exi
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|point|Point3D&|Origin coordinates (x, y, z)|
-|angle|Vector3D&|Rotating axis (x, y, z)|
+| Name  |   Type    |         Description          |
+|:-----:|:---------:|:----------------------------:|
+| point | Point3D&  | Origin coordinates (x, y, z) |
+| angle | Vector3D& |   Rotating axis (x, y, z)    |
 
 - Return : None
  
@@ -854,18 +854,18 @@ Point2D point class for 2D operations
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|x|double|x-coordinate|
-|y|double|y-coordinate|
+| Name |  Type  | Description  |
+|:----:|:------:|:------------:|
+|  x   | double | x-coordinate |
+|  y   | double | y-coordinate |
  
 ###### Point2D( const Point2D &point )
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|point|const Point2D&|copies Point|
+| Name  |      Type      | Description  |
+|:-----:|:--------------:|:------------:|
+| point | const Point2D& | copies Point |
  
 ##### Data Members
 
@@ -884,10 +884,10 @@ Point2D point class for 2D operations
 Returns the distance between 2 points
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|pt1|Point2D&|Point1 distance|
-|pt2|Point2D&|Point2 distance|
+| Name |   Type   |   Description   |
+|:----:|:--------:|:---------------:|
+| pt1  | Point2D& | Point1 distance |
+| pt2  | Point2D& | Point2 distance |
 
 - Return : Distance between 2 points
  
@@ -933,19 +933,19 @@ Point3D point class for 3D operations
 
 - Arguments
  
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|x|double|x-coordinate|
-|y|double|y-coordinate|
-|z|double|z-coordinate|
+| Name |  Type  | Description  |
+|:----:|:------:|:------------:|
+|  x   | double | x-coordinate |
+|  y   | double | y-coordinate |
+|  z   | double | z-coordinate |
  
 ###### Point3D( const Point3D &point )
 
 - Arguments
  
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|point|const Point3D&|copies Point|
+| Name  |      Type      | Description  |
+|:-----:|:--------------:|:------------:|
+| point | const Point3D& | copies Point |
  
 ##### Data Members
 
@@ -969,10 +969,10 @@ Returns the distance between 2 points.
 
 - Arguments
  
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|pt1|Point3D&|Point1 distance|
-|pt2|Point3D&|Point2 distance|
+| Name |   Type   |   Description   |
+|:----:|:--------:|:---------------:|
+| pt1  | Point3D& | Point1 distance |
+| pt2  | Point3D& | Point2 distance |
 
 - Return : distance between 2 points
  
@@ -1018,28 +1018,28 @@ Vector class point for 3D operations
 
 - Arguments
  
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|x|double|x-coordinate|
-|y|double|y-coordinate|
-|z|double|z-coordinate|
+| Name |  Type  | Description  |
+|:----:|:------:|:------------:|
+|  x   | double | x-coordinate |
+|  y   | double | y-coordinate |
+|  z   | double | z-coordinate |
  
 ###### Vector3D( const Point3D &pt1, const Point3D &pt2 )
 
 - Arguments
  
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|pt1|const Point3D&|Vector initial position|
-|pt2|const Point3D&|Vector final position|
+| Name |      Type      |       Description       |
+|:----:|:--------------:|:-----------------------:|
+| pt1  | const Point3D& | Vector initial position |
+| pt2  | const Point3D& |  Vector final position  |
  
 ###### Vector3D( const Vector3D &vector )
 
 - Arguments
  
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|vector|const Vector3D&|copies Vector|
+|  Name  |      Type       |  Description  |
+|:------:|:---------------:|:-------------:|
+| vector | const Vector3D& | copies Vector |
  
 ##### Data Members
 
@@ -1074,9 +1074,9 @@ Normalizes the vector
 Performs vector dot products
 - Arguments
  
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|vector|Vector3D&|Vector dot product|
+|  Name  |   Type    |    Description     |
+|:------:|:---------:|:------------------:|
+| vector | Vector3D& | Vector dot product |
  
 - Return : Returns dot products
  
@@ -1085,9 +1085,9 @@ Performs vector dot products
 Performs vector cross products
 - Arguments
  
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|vector|const Vector3D&|vector cross product|
+|  Name  |      Type       |     Description      |
+|:------:|:---------------:|:--------------------:|
+| vector | const Vector3D& | vector cross product |
  
 - Return : Returns cross products
  
@@ -1096,9 +1096,9 @@ Performs vector cross products
 Computes the angle between vectors
 - Arguments
  
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|vector|Vector3D&|Angles between vectors|
+|  Name  |   Type    |      Description       |
+|:------:|:---------:|:----------------------:|
+| vector | Vector3D& | Angles between vectors |
  
 - Return : Value (0 ~ 180) in degrees.
  
@@ -1107,10 +1107,10 @@ Computes the angle between vectors
 Returns the angle between vectors axes
 - Arguments
  
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|vector|Vector3D&|Angle between Vector|
-|axis|Vector3D&|Angle between coordinates axes|
+|  Name  |   Type    |          Description           |
+|:------:|:---------:|:------------------------------:|
+| vector | Vector3D& |      Angle between Vector      |
+|  axis  | Vector3D& | Angle between coordinates axes |
  
 - Return : Value (-180 ~ 180) in degrees
  
@@ -1184,12 +1184,12 @@ Motion Class shares data between classes
 
 enum value can be used with Compliance Slope
 
-|Name|Value|
-|:---:|:---:|
-|SLOPE_HARD|16|
-|SLOPE_DEFAULT|32|
-|SLOPE_SOFT|64|
-|SLOPE_EXTRASOFT|128|
+|      Name       | Value |
+|:---------------:|:-----:|
+|   SLOPE_HARD    |  16   |
+|  SLOPE_DEFAULT  |  32   |
+|   SLOPE_SOFT    |  64   |
+| SLOPE_EXTRASOFT |  128  |
  
 ##### Constructions
 
@@ -1205,10 +1205,10 @@ Sets ID's in Joint Enable.
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|id|int|Joint ID|
-|enable|bool|use availability|
+|  Name  | Type |   Description    |
+|:------:|:----:|:----------------:|
+|   id   | int  |     Joint ID     |
+| enable | bool | use availability |
 
 - Return : None
  
@@ -1219,9 +1219,9 @@ Head ID = { ID_HEAD_PAN, ID_HEAD_TILT }
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|enable|bool|use availability|
+|  Name  | Type |   Description    |
+|:------:|:----:|:----------------:|
+| enable | bool | use availability |
 
 - Return : None
  
@@ -1232,9 +1232,9 @@ Right Arm ID = { ID_R_SHOULDER_PITCH, ID_R_SHOULDER_ROLL, ID_R_ELBOW }
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|enable|bool|use availability|
+|  Name  | Type |   Description    |
+|:------:|:----:|:----------------:|
+| enable | bool | use availability |
 
 - Return : None
  
@@ -1245,9 +1245,9 @@ Left Arm ID = { ID_L_SHOULDER_PITCH, ID_L_SHOULDER_ROLL, ID_L_ELBOW }
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|enable|bool|use availability|
+|  Name  | Type |   Description    |
+|:------:|:----:|:----------------:|
+| enable | bool | use availability |
 
 - Return : None
  
@@ -1258,9 +1258,9 @@ Right Leg ID = { ID_R_HIP_YAW, ID_R_HIP_ROLL, ID_R_HIP_PITCH, ID_R_KNEE, ID_R_AN
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|enable|bool|use availability|
+|  Name  | Type |   Description    |
+|:------:|:----:|:----------------:|
+| enable | bool | use availability |
 
 - Return : None
  
@@ -1271,9 +1271,9 @@ Left Leg ID = { ID_L_HIP_YAW, ID_L_HIP_ROLL, ID_L_HIP_PITCH, ID_L_KNEE, ID_L_ANK
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|enable|bool|use availability|
+|  Name  | Type |   Description    |
+|:------:|:----:|:----------------:|
+| enable | bool | use availability |
 
 - Return : None
  
@@ -1285,9 +1285,9 @@ Left Arm ID = { ID_L_SHOULDER_PITCH, ID_L_SHOULDER_ROLL, ID_L_ELBOW }
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|enable|bool|use availability|
+|  Name  | Type |   Description    |
+|:------:|:----:|:----------------:|
+| enable | bool | use availability |
 
 - Return : None
  
@@ -1299,9 +1299,9 @@ Left Leg ID = { ID_L_HIP_YAW, ID_L_HIP_ROLL, ID_L_HIP_PITCH, ID_L_KNEE, ID_L_ANK
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|enable|bool	|use availability|
+|  Name  | Type |   Description    |
+|:------:|:----:|:----------------:|
+| enable | bool | use availability |
 
 - Return : None
  
@@ -1315,9 +1315,9 @@ Left Leg ID = { ID_L_HIP_YAW, ID_L_HIP_ROLL, ID_L_HIP_PITCH, ID_L_KNEE, ID_L_ANK
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|enable|bool|use availability|
+|  Name  | Type |   Description    |
+|:------:|:----:|:----------------:|
+| enable | bool | use availability |
 
 - Return : None
  
@@ -1332,9 +1332,9 @@ Left Leg ID = { ID_L_HIP_YAW, ID_L_HIP_ROLL, ID_L_HIP_PITCH, ID_L_KNEE, ID_L_ANK
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|enable|bool	|use availability|
+|  Name  | Type |   Description    |
+|:------:|:----:|:----------------:|
+| enable | bool | use availability |
 
 - Return : None
  
@@ -1344,9 +1344,9 @@ Returns the ID(s) of Joint Enable.
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|id|int|determines use availability of joint ID|
+| Name | Type |               Description               |
+|:----:|:----:|:---------------------------------------:|
+|  id  | int  | determines use availability of joint ID |
 
 - Return : true/false
  
@@ -1356,10 +1356,10 @@ Sets ID joint value.
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|id|int|sets joint ID|
-|value|int|sets motor value|
+| Name  | Type |   Description    |
+|:-----:|:----:|:----------------:|
+|  id   | int  |  sets joint ID   |
+| value | int  | sets motor value |
 
 - Return : None
  
@@ -1369,9 +1369,9 @@ Returns ID joint value.
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|id|int|returns joint ID|
+| Name | Type |   Description    |
+|:----:|:----:|:----------------:|
+|  id  | int  | returns joint ID |
 
 - Return : Motor value set
  
@@ -1381,10 +1381,10 @@ Sets ID joint angle.
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|id|int|sets joint ID|
-|angle|double|sets angle value|
+| Name  |  Type  |   Description    |
+|:-----:|:------:|:----------------:|
+|  id   |  int   |  sets joint ID   |
+| angle | double | sets angle value |
 
 - Return : None
  
@@ -1394,9 +1394,9 @@ Returns ID joint angle.
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|id|int|returns joint ID|
+| Name | Type |   Description    |
+|:----:|:----:|:----------------:|
+|  id  | int  | returns joint ID |
 
 - Return : Angle value set
  
@@ -1406,10 +1406,10 @@ Sets ID joint angle in radians.
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|id|int|sets joint ID|
-|radian|double|sets angle value in radians|
+|  Name  |  Type  |         Description         |
+|:------:|:------:|:---------------------------:|
+|   id   |  int   |        sets joint ID        |
+| radian | double | sets angle value in radians |
 
 - Return : None
  
@@ -1419,9 +1419,9 @@ Returns ID joint angle in radians.
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|id|int|returns joint ID|
+| Name | Type |   Description    |
+|:----:|:----:|:----------------:|
+|  id  | int  | returns joint ID |
 
 - Return : Sets angle values in radians
  
@@ -1431,11 +1431,11 @@ Sets ID of CW/CCW (clockwise/counterclockwise) compliance slopes.
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|id|int|sets Joint ID|
-|cwSlope|int|sets CW (clockwise) compliance slope value|
-|ccwSlope|int|sets CCW (counterclockwise) compliance slope value|
+|   Name   | Type |                    Description                     |
+|:--------:|:----:|:--------------------------------------------------:|
+|    id    | int  |                   sets Joint ID                    |
+| cwSlope  | int  |     sets CW (clockwise) compliance slope value     |
+| ccwSlope | int  | sets CCW (counterclockwise) compliance slope value |
 
 - Return : None
  
@@ -1445,10 +1445,10 @@ Sets ID of CW compliance slope.
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|id|int|sets joint ID|
-|cwSlope|int|sets CW compliance slope value|
+|  Name   | Type |          Description           |
+|:-------:|:----:|:------------------------------:|
+|   id    | int  |         sets joint ID          |
+| cwSlope | int  | sets CW compliance slope value |
 
 - Return : None
  
@@ -1458,9 +1458,9 @@ Returns CW compliance slope.
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|id|int|returns joint ID|
+| Name | Type |   Description    |
+|:----:|:----:|:----------------:|
+|  id  | int  | returns joint ID |
 
 - Return : Sets CW compliance slope value
  
@@ -1470,10 +1470,10 @@ Sets ID of CCW compliance slope.
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|id|int|sets joint ID|
-|ccwSlope|int|sets CCW compliance slope value|
+|   Name   | Type |           Description           |
+|:--------:|:----:|:-------------------------------:|
+|    id    | int  |          sets joint ID          |
+| ccwSlope | int  | sets CCW compliance slope value |
 
 - Return : None
  
@@ -1483,9 +1483,9 @@ Returns ID of CCW Compliance Slope.
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|id|int|returns Joint ID|
+| Name | Type |   Description    |
+|:----:|:----:|:----------------:|
+|  id  | int  | returns Joint ID |
 
 - Return : Sets CCW Compliance Slope value
 
@@ -1550,70 +1550,70 @@ Robot Kinematics class information
 
 Maximum values of each properties.
 
-|Name|Value|Description|
-|:---:|:---:|:---:|
-|MAXNUM_PAGE|256|Maximum number of page|
-|MAXNUM_STEP|7|Maximum number of step|
-|MAXNUM_NAME|13|Maximum length of page name|
+|    Name     | Value |         Description         |
+|:-----------:|:-----:|:---------------------------:|
+| MAXNUM_PAGE |  256  |   Maximum number of page    |
+| MAXNUM_STEP |   7   |   Maximum number of step    |
+| MAXNUM_NAME |  13   | Maximum length of page name |
  
 ###### Schedule type (enum)
 
-|Name|Value|Description|
-|:---:|:---:|:---:|
-|SPEED_BASE_SCHEDULE|0x0|-|
-|TIME_BASE_SCHEDULE|0x0a|-|
+|        Name         | Value | Description |
+|:-------------------:|:-----:|:-----------:|
+| SPEED_BASE_SCHEDULE |  0x0  |      -      |
+| TIME_BASE_SCHEDULE  | 0x0a  |      -      |
  
 ###### Bit mask (enum)
 
 Position value bit mask.
 
-|Name|Value|Description|
-|:---:|:---:|:---:|
-|RANGE_BIT_MASK|0x03FF|Position value bit mask|
-|INVALID_BIT_MASK|0x4000|Invalid position value bit mask|
-|TORQUE_OFF_BIT_MASK|0x2000|Torque off bit mask|
+|        Name         | Value  |           Description           |
+|:-------------------:|:------:|:-------------------------------:|
+|   RANGE_BIT_MASK    | 0x03FF |     Position value bit mask     |
+|  INVALID_BIT_MASK   | 0x4000 | Invalid position value bit mask |
+| TORQUE_OFF_BIT_MASK | 0x2000 |       Torque off bit mask       |
  
 ###### struct PAGEHEADER
 
 Header structure. (total 64 bytes)
 
-|Name|Type|Length|Description|
-|:---:|:---:|:---:|:---:|
-|name|unsigned char[]|14|page name|
-|reserved1|unsigned char|1|reserved 1|
-|repeat|unsigned char|1|repeat count|
-|schedule|unsigned char|1|schedule|
-|reserved2|unsigned char[]|3|reserved 2|
-|stepnum|unsigned char|1|Number of step|
-|reserved3|unsigned char|1|reserved 3|
-|speed|unsigned char|1|Speed|
-|reserved4|unsigned char|1|reserved 4|
-|accel|unsigned char|1|Acceleration time|
-|next|unsigned char|1|Link to next|
-|exit|unsigned char|1|Link to exit|
-|reserved5|unsigned char[]|4|reserved 5|
-|checksum|unsigned char|1|checksum|
-|slope|unsigned char[]|31|CW/CCW compliance slope|
-|reserved6|unsigned char|1|reserved 6|
+|   Name    |      Type       | Length |       Description       |
+|:---------:|:---------------:|:------:|:-----------------------:|
+|   name    | unsigned char[] |   14   |        page name        |
+| reserved1 |  unsigned char  |   1    |       reserved 1        |
+|  repeat   |  unsigned char  |   1    |      repeat count       |
+| schedule  |  unsigned char  |   1    |        schedule         |
+| reserved2 | unsigned char[] |   3    |       reserved 2        |
+|  stepnum  |  unsigned char  |   1    |     Number of step      |
+| reserved3 |  unsigned char  |   1    |       reserved 3        |
+|   speed   |  unsigned char  |   1    |          Speed          |
+| reserved4 |  unsigned char  |   1    |       reserved 4        |
+|   accel   |  unsigned char  |   1    |    Acceleration time    |
+|   next    |  unsigned char  |   1    |      Link to next       |
+|   exit    |  unsigned char  |   1    |      Link to exit       |
+| reserved5 | unsigned char[] |   4    |       reserved 5        |
+| checksum  |  unsigned char  |   1    |        checksum         |
+|   slope   | unsigned char[] |   31   | CW/CCW compliance slope |
+| reserved6 |  unsigned char  |   1    |       reserved 6        |
  
 ###### struct STEP
 
 Step Structure (total 64 bytes)
 
-|Name|Type|Length|Description|
-|:---:|:---:|:---:|:---:|
-|position|unsigned short[]|62|Joint position|
-|pause|unsigned char|1|Pause time|
-|time|unsigned char|1|Time|
+|   Name   |       Type       | Length |  Description   |
+|:--------:|:----------------:|:------:|:--------------:|
+| position | unsigned short[] |   62   | Joint position |
+|  pause   |  unsigned char   |   1    |   Pause time   |
+|   time   |  unsigned char   |   1    |      Time      |
  
 ###### struct PAGE
 
 Page Structure (total 512 bytes)
 
-|Name|Type|Length|Description|
-|:---:|:---:|:---:|:---:|
-|header|PAGEHEADER|64|Joint position|
-|step|STEP[]|448|Pause time|
+|  Name  |    Type    | Length |  Description   |
+|:------:|:----------:|:------:|:--------------:|
+| header | PAGEHEADER |   64   | Joint position |
+|  step  |   STEP[]   |  448   |   Pause time   |
  
 ##### Data Members
 
@@ -1650,9 +1650,9 @@ Load action information from designated action file.
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|filename|char*|Action file name to be read|
+|   Name   | Type  |         Description         |
+|:--------:|:-----:|:---------------------------:|
+| filename | char* | Action file name to be read |
 
 - Return : On success, true is returned. On fail, false is returned.
  
@@ -1662,9 +1662,9 @@ Create a file with assigned file name and save action information.
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|filename|char*|file name of the action file to create|
+|   Name   | Type  |              Description               |
+|:--------:|:-----:|:--------------------------------------:|
+| filename | char* | file name of the action file to create |
 
 - Return : On success, true is returned. On fail, false is returned.
  
@@ -1674,9 +1674,9 @@ Play action in the page.
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|iPage|int|page number of the action to play|
+| Name  | Type |            Description            |
+|:-----:|:----:|:---------------------------------:|
+| iPage | int  | page number of the action to play |
 
 - Return : On success, true is returned. On fail, false is returned.
  
@@ -1686,9 +1686,9 @@ Play the action in the page name.
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|namePage|char*|page name of the action to play|
+|   Name   | Type  |           Description           |
+|:--------:|:-----:|:-------------------------------:|
+| namePage | char* | page name of the action to play |
 
 - Return : On success, true is returned. On fail, false is returned.
  
@@ -1696,10 +1696,10 @@ Play the action in the page name.
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|index|int	 |-|
-|pPage|PAGE*	 |-|
+| Name  | Type  | Description |
+|:-----:|:-----:|:-----------:|
+| index |  int  |      -      |
+| pPage | PAGE* |      -      |
 
 - Return : On success, true is returned. On fail, false is returned.
  
@@ -1724,10 +1724,10 @@ Stop playback.
 
 - Arguments 
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|iPage|int*	 |-|
-|iStep|int*	 |-|
+| Name  | Type | Description |
+|:-----:|:----:|:-----------:|
+| iPage | int* |      -      |
+| iStep | int* |      -      |
 
 - Return : On action is running, true is returned. On action is stoped, false is returned.
  
@@ -1735,10 +1735,10 @@ Stop playback.
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|index|int	 |-|
-|pPage|PAGE*	 |-|
+| Name  | Type  | Description |
+|:-----:|:-----:|:-----------:|
+| index |  int  |      -      |
+| pPage | PAGE* |      -      |
 
 - Return : On success, true is returned. On fail, false is returned.
  
@@ -1746,10 +1746,10 @@ Stop playback.
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|index|int	 |-|
-|pPage|PAGE*	 |-|
+| Name  | Type  | Description |
+|:-----:|:-----:|:-----------:|
+| index |  int  |      -      |
+| pPage | PAGE* |      -      |
 
 - Return : On success, true is returned. On fail, false is returned.
  
@@ -1757,9 +1757,9 @@ Stop playback.
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|pPage|PAGE*	 |-|
+| Name  | Type  | Description |
+|:-----:|:-----:|:-----------:|
+| pPage | PAGE* |      -      |
 
 - Return : None
 
@@ -1825,10 +1825,10 @@ Method to initialize variables and move head to default position.
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|pan|double|pan angle value|
-|tilt|double|tilt angle value|
+| Name |  Type  |   Description    |
+|:----:|:------:|:----------------:|
+| pan  | double | pan angle value  |
+| tilt | double | tilt angle value |
 
 - Return : None
  
@@ -1836,10 +1836,10 @@ Method to initialize variables and move head to default position.
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|pan|double|pan angle value|
-|tilt|double|tilt angle value|
+| Name |  Type  |   Description    |
+|:----:|:------:|:----------------:|
+| pan  | double | pan angle value  |
+| tilt | double | tilt angle value |
 
 - Return : None
  
@@ -1852,9 +1852,9 @@ Method to initialize variables and move head to default position.
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|err|Point2D	 |-|
+| Name |  Type   | Description |
+|:----:|:-------:|:-----------:|
+| err  | Point2D |      -      |
 
 - Return : None
  
@@ -1867,9 +1867,9 @@ Method to initialize variables and move head to default position.
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|ini|minIni*	 |-|
+| Name |  Type   | Description |
+|:----:|:-------:|:-----------:|
+| ini  | minIni* |      -      |
 
 - Return : None
  
@@ -1877,10 +1877,10 @@ Method to initialize variables and move head to default position.
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|ini|minIni*	|-|
-|section|const std::string&	|-|
+|  Name   |        Type        | Description |
+|:-------:|:------------------:|:-----------:|
+|   ini   |      minIni*       |      -      |
+| section | const std::string& |      -      |
  
 - Return : None
  
@@ -1888,9 +1888,9 @@ Method to initialize variables and move head to default position.
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|ini|minIni*	 |-|
+| Name |  Type   | Description |
+|:----:|:-------:|:-----------:|
+| ini  | minIni* |      -      |
 
 - Return : None
  
@@ -1898,10 +1898,10 @@ Method to initialize variables and move head to default position.
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|ini|minIni*	 |-|
-|section|const std::string&	 |-|
+|  Name   |        Type        | Description |
+|:-------:|:------------------:|:-----------:|
+|   ini   |      minIni*       |      -      |
+| section | const std::string& |      -      |
 
 - Return : None
 
@@ -1913,12 +1913,12 @@ Method to initialize variables and move head to default position.
 
 Phase number
 
-|Name|Value|
-|:---:|:---:|
-|PHASE0|0|
-|PHASE1|1|
-|PHASE2|2|
-|PHASE3|3|
+|  Name  | Value |
+|:------:|:-----:|
+| PHASE0 |   0   |
+| PHASE1 |   1   |
+| PHASE2 |   2   |
+| PHASE3 |   3   |
  
 ##### Data Members
 
@@ -2024,9 +2024,9 @@ Initialize.
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|ini|minIni*|-|
+| Name |  Type   | Description |
+|:----:|:-------:|:-----------:|
+| ini  | minIni* |      -      |
 
 - Return : None
  
@@ -2034,10 +2034,10 @@ Initialize.
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|ini|minIni*|-|
-|section|const std::string&|-|
+|  Name   |        Type        | Description |
+|:-------:|:------------------:|:-----------:|
+|   ini   |      minIni*       |      -      |
+| section | const std::string& |      -      |
  
 - Return : None
  
@@ -2045,9 +2045,9 @@ Initialize.
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|ini|minIni*|-|
+| Name |  Type   | Description |
+|:----:|:-------:|:-----------:|
+| ini  | minIni* |      -      |
 
 - Return : None
  
@@ -2055,10 +2055,10 @@ Initialize.
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|ini|minIni*|-|
-|section|const std::string&|-|
+|  Name   |        Type        | Description |
+|:-------:|:------------------:|:-----------:|
+|   ini   |      minIni*       |      -      |
+| section | const std::string& |      -      |
 
 - Return : None
 
@@ -2081,9 +2081,9 @@ Initialize.
 
 - Arguments 
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|cm730|CM730*|-|
+| Name  |  Type  | Description |
+|:-----:|:------:|:-----------:|
+| cm730 | CM730* |      -      |
 
 - Return : On success, true is returned. On fail, false is returned.
  
@@ -2107,9 +2107,9 @@ Enable the motion manager
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|enable|bool|-|
+|  Name  | Type | Description |
+|:------:|:----:|:-----------:|
+| enable | bool |      -      |
 
 - Return : None
  
@@ -2126,9 +2126,9 @@ Manager updates Motion Module.
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|module|MotionModule*|updates Motion Module|
+|  Name  |     Type      |      Description      |
+|:------:|:-------------:|:---------------------:|
+| module | MotionModule* | updates Motion Module |
 
 - Return : None
  
@@ -2138,9 +2138,9 @@ Removes Motion Module from Manager.
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|module|MotionModule*|removes Motion Module|
+|  Name  |     Type      |      Description      |
+|:------:|:-------------:|:---------------------:|
+| module | MotionModule* | removes Motion Module |
 
 - Return : None
  
@@ -2215,9 +2215,9 @@ Process
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|ball_pos|Point2D	 |-|
+|   Name   |  Type   | Description |
+|:--------:|:-------:|:-----------:|
+| ball_pos | Point2D |      -      |
 
 - Return : None
 
@@ -2245,9 +2245,9 @@ Process
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|ini|minIni*	 |-|
+| Name |  Type   | Description |
+|:----:|:-------:|:-----------:|
+| ini  | minIni* |      -      |
 
 - Return : None
  
@@ -2255,10 +2255,10 @@ Process
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|ini|minIni*	|-|
-|section|const std::string&	|-|
+|  Name   |        Type        | Description |
+|:-------:|:------------------:|:-----------:|
+|   ini   |      minIni*       |      -      |
+| section | const std::string& |      -      |
  
 - Return : None
  
@@ -2266,9 +2266,9 @@ Process
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|ini|minIni*	 |-|
+| Name |  Type   | Description |
+|:----:|:-------:|:-----------:|
+| ini  | minIni* |      -      |
 
 - Return : None
  
@@ -2276,10 +2276,10 @@ Process
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|ini|minIni*	 |-|
-|section|const std::string&	 |-|
+|  Name   |        Type        | Description |
+|:-------:|:------------------:|:-----------:|
+|   ini   |      minIni*       |      -      |
+| section | const std::string& |      -      |
 
 - Return : None
  
@@ -2287,9 +2287,9 @@ Process
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|ini|minIni*	 |-|
+| Name |  Type   | Description |
+|:----:|:-------:|:-----------:|
+| ini  | minIni* |      -      |
 
 - Return : None
  
@@ -2297,10 +2297,10 @@ Process
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|ini|minIni*|-|
-|section|const std::string&|-|
+|  Name   |        Type        | Description |
+|:-------:|:------------------:|:-----------:|
+|   ini   |      minIni*       |      -      |
+| section | const std::string& |      -      |
 
 - Return : None
  
@@ -2308,9 +2308,9 @@ Process
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|ini|minIni*	 |-|
+| Name |  Type   | Description |
+|:----:|:-------:|:-----------:|
+| ini  | minIni* |      -      |
 
 - Return : None
  
@@ -2318,9 +2318,9 @@ Process
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|camImg|Image*|-|
+|  Name  |  Type  | Description |
+|:------:|:------:|:-----------:|
+| camImg | Image* |      -      |
 
 - Return : None
 
@@ -2336,14 +2336,14 @@ Process
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|hue|int|Hue value|
-|hue_tol|int|Tolerance in hue (differential) +-|
-|min_sat|int|Minimum saturation (chroma) value|
-|min_val|int|Minimum brightness (lumina) value|
-|min_per|double|Minimum color pixel filtering|
-|max_per|double|Maximum color pixel filtering|
+|  Name   |  Type  |            Description             |
+|:-------:|:------:|:----------------------------------:|
+|   hue   |  int   |             Hue value              |
+| hue_tol |  int   | Tolerance in hue (differential) +- |
+| min_sat |  int   | Minimum saturation (chroma) value  |
+| min_val |  int   | Minimum brightness (lumina) value  |
+| min_per | double |   Minimum color pixel filtering    |
+| max_per | double |   Maximum color pixel filtering    |
  
 ##### Data Members
 
@@ -2374,9 +2374,9 @@ Process
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|ini|minIni*|-|
+| Name |  Type   | Description |
+|:----:|:-------:|:-----------:|
+| ini  | minIni* |      -      |
 
 - Return : None
  
@@ -2384,10 +2384,10 @@ Process
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|ini|minIni*|-|
-|section|const std::string&|-|
+|  Name   |        Type        | Description |
+|:-------:|:------------------:|:-----------:|
+|   ini   |      minIni*       |      -      |
+| section | const std::string& |      -      |
 
 - Return : None
  
@@ -2395,9 +2395,9 @@ Process
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|ini|minIni*|-|
+| Name |  Type   | Description |
+|:----:|:-------:|:-----------:|
+| ini  | minIni* |      -      |
 
 - Return : None
  
@@ -2405,10 +2405,10 @@ Process
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|ini|minIni*|-|
-|section|const std::string&|-|
+|  Name   |        Type        | Description |
+|:-------:|:------------------:|:-----------:|
+|   ini   |      minIni*       |      -      |
+| section | const std::string& |      -      |
 
 - Return : None
  
@@ -2416,9 +2416,9 @@ Process
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|hsv_img|Image*|-|
+|  Name   |  Type  | Description |
+|:-------:|:------:|:-----------:|
+| hsv_img | Image* |      -      |
 
 - Return : Finds position through color.
 
@@ -2430,11 +2430,11 @@ Process
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|width|int|Image pixel width|
-|height|int|Image pixel height|
-|pixelsize|int|bytes of pixel|
+|   Name    | Type |    Description     |
+|:---------:|:----:|:------------------:|
+|   width   | int  | Image pixel width  |
+|  height   | int  | Image pixel height |
+| pixelsize | int  |   bytes of pixel   |
  
 ##### Data Members
 
@@ -2491,10 +2491,10 @@ Process
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|width|int|Image buffer pixel width|
-|height|int|Image buffer pixel height|
+|  Name  | Type |        Description        |
+|:------:|:----:|:-------------------------:|
+| width  | int  | Image buffer pixel width  |
+| height | int  | Image buffer pixel height |
  
 ##### Data Members
 
@@ -2518,9 +2518,9 @@ Process
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|buf|FrameBuffer*|-|
+| Name |     Type     | Description |
+|:----:|:------------:|:-----------:|
+| buf  | FrameBuffer* |      -      |
 
 - Return : None
  
@@ -2528,9 +2528,9 @@ Process
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|buf|FrameBuffer*|-|
+| Name |     Type     | Description |
+|:----:|:------------:|:-----------:|
+| buf  | FrameBuffer* |      -      |
 
 - Return : None
  
@@ -2538,9 +2538,9 @@ Process
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|img|Image*|-|
+| Name |  Type  | Description |
+|:----:|:------:|:-----------:|
+| img  | Image* |      -      |
 
 - Return : None
  
@@ -2548,9 +2548,9 @@ Process
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|src|Image*|-|
+| Name |  Type  | Description |
+|:----:|:------:|:-----------:|
+| src  | Image* |      -      |
  	 	 
 - Return : None
  
@@ -2558,9 +2558,9 @@ Process
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|img|Image*|-|
+| Name |  Type  | Description |
+|:----:|:------:|:-----------:|
+| img  | Image* |      -      |
 
 - Return : None
  
@@ -2568,9 +2568,9 @@ Process
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|src|Image*|-|
+| Name |  Type  | Description |
+|:----:|:------:|:-----------:|
+| src  | Image* |      -      |
  	 	 
 - Return : None
  
@@ -2578,9 +2578,9 @@ Process
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|img|Image*|-|
+| Name |  Type  | Description |
+|:----:|:------:|:-----------:|
+| img  | Image* |      -      |
 
 - Return : None
  
@@ -2588,9 +2588,9 @@ Process
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|img|Image*|-|
+| Name |  Type  | Description |
+|:----:|:------:|:-----------:|
+| img  | Image* |      -      |
 
 - Return : None
 
@@ -2648,9 +2648,9 @@ If, necessary, you may create your own platform-dependent sources. For examaple,
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|filename|const char*|action script file name|
+|   Name   |    Type     |       Description       |
+|:--------:|:-----------:|:-----------------------:|
+| filename | const char* | action script file name |
 
 - Return : None
  
@@ -2658,9 +2658,9 @@ If, necessary, you may create your own platform-dependent sources. For examaple,
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|filename|const char*|mp3 file name|
+|   Name   |    Type     |  Description  |
+|:--------:|:-----------:|:-------------:|
+| filename | const char* | mp3 file name |
 
 - Return : None
 
@@ -2704,9 +2704,9 @@ method to obtain global reference for Instance.
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|deviceIndex|int|-|
+|    Name     | Type | Description |
+|:-----------:|:----:|:-----------:|
+| deviceIndex | int  |      -      |
 
 - Return : On success, 1 is returned.
  
@@ -2714,9 +2714,9 @@ method to obtain global reference for Instance.
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|control|int|-|
+|  Name   | Type | Description |
+|:-------:|:----:|:-----------:|
+| control | int  |      -      |
 
 - Return : control's value.
  
@@ -2724,10 +2724,10 @@ method to obtain global reference for Instance.
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|control|int|-|
-|value|int|-|
+|  Name   | Type | Description |
+|:-------:|:----:|:-----------:|
+| control | int  |      -      |
+|  value  | int  |      -      |
 
 - Return : On success, 0 is returned. On fail, -1 is returned.
  
@@ -2735,9 +2735,9 @@ method to obtain global reference for Instance.
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|control|int|-|
+|  Name   | Type | Description |
+|:-------:|:----:|:-----------:|
+| control | int  |      -      |
 
 - Return : On success, 0 is returned. On fail, -1 is returned.
  
@@ -2745,9 +2745,9 @@ method to obtain global reference for Instance.
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|ini|minIni*|-|
+| Name |  Type   | Description |
+|:----:|:-------:|:-----------:|
+| ini  | minIni* |      -      |
 
 - Return : None
  
@@ -2755,9 +2755,9 @@ method to obtain global reference for Instance.
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|ini|minIni*|-|
+| Name |  Type   | Description |
+|:----:|:-------:|:-----------:|
+| ini  | minIni* |      -      |
 
 - Return : None
  
@@ -2765,9 +2765,9 @@ method to obtain global reference for Instance.
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|newset|const CameraSettings&|-|
+|  Name  |         Type          | Description |
+|:------:|:---------------------:|:-----------:|
+| newset | const CameraSettings& |      -      |
 
 - Return : None
  
@@ -2780,9 +2780,9 @@ method to obtain global reference for Instance.
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|isAuto|int|-|
+|  Name  | Type | Description |
+|:------:|:----:|:-----------:|
+| isAuto | int  |      -      |
 
 - Return : None
  
@@ -2804,9 +2804,9 @@ method to obtain global reference for Instance.
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|name|const char*|port name|
+| Name |    Type     | Description |
+|:----:|:-----------:|:-----------:|
+| name | const char* |  port name  |
 
 
 ##### Methods
@@ -2815,9 +2815,9 @@ method to obtain global reference for Instance.
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|name|const char*|port name|
+| Name |    Type     | Description |
+|:----:|:-----------:|:-----------:|
+| name | const char* |  port name  |
 
 - Return : None
  
@@ -2845,10 +2845,10 @@ method to obtain global reference for Instance.
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|packet|unsigned char*|-|
-|numPacket|int|packet length in byte|
+|   Name    |      Type      |      Description      |
+|:---------:|:--------------:|:---------------------:|
+|  packet   | unsigned char* |           -           |
+| numPacket |      int       | packet length in byte |
 
 - Return : Number of sending bytes
  
@@ -2856,10 +2856,10 @@ method to obtain global reference for Instance.
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|packet|unsigned char*|-|
-|numPacket|int|packet length in byte|
+|   Name    |      Type      |      Description      |
+|:---------:|:--------------:|:---------------------:|
+|  packet   | unsigned char* |           -           |
+| numPacket |      int       | packet length in byte |
 
 - Return : Number of reading bytes
  
@@ -2897,9 +2897,9 @@ method to obtain global reference for Instance.
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|lenPacket|int|-|
+|   Name    | Type | Description |
+|:---------:|:----:|:-----------:|
+| lenPacket | int  |      -      |
 
 - Return : None
  
@@ -2917,9 +2917,9 @@ method to obtain global reference for Instance.
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|msec|int|timeout value|
+| Name | Type |  Description  |
+|:----:|:----:|:-------------:|
+| msec | int  | timeout value |
 
 - Return : None
  
@@ -2937,9 +2937,9 @@ method to obtain global reference for Instance.
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|Miliseconds|int|sleep time in miliseconds|
+|    Name     | Type |        Description        |
+|:-----------:|:----:|:-------------------------:|
+| Miliseconds | int  | sleep time in miliseconds |
 
 - Return : None
 
@@ -2951,9 +2951,9 @@ method to obtain global reference for Instance.
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|manager|MotionManager*|-|
+|  Name   |      Type      | Description |
+|:-------:|:--------------:|:-----------:|
+| manager | MotionManager* |      -      |
 
 - Return : None
  
@@ -2976,9 +2976,9 @@ method to obtain global reference for Instance.
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|Miliseconds|int|-|
+|    Name     | Type | Description |
+|:-----------:|:----:|:-----------:|
+| Miliseconds | int  |      -      |
 
 - Return : None
 
@@ -3009,9 +3009,9 @@ method to obtain global reference for Instance.
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|port|const int|-|
+| Name |   Type    | Description |
+|:----:|:---------:|:-----------:|
+| port | const int |      -      |
 
 - Return : On success, true is returned. On fail, false is returned.
  
@@ -3024,9 +3024,9 @@ method to obtain global reference for Instance.
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|new_socket|LinuxSocket&|-|
+|    Name    |     Type     | Description |
+|:----------:|:------------:|:-----------:|
+| new_socket | LinuxSocket& |      -      |
 
 - Return : On success, true is returned. On fail, false is returned.
  
@@ -3034,10 +3034,10 @@ method to obtain global reference for Instance.
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|host|const std::string|-|
-|port|const int|-|
+| Name |       Type        | Description |
+|:----:|:-----------------:|:-----------:|
+| host | const std::string |      -      |
+| port |     const int     |      -      |
  
 - Return : On success, true is returned. On fail, false is returned.
  
@@ -3045,9 +3045,9 @@ method to obtain global reference for Instance.
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|s|const std::string|-|
+| Name |       Type        | Description |
+|:----:|:-----------------:|:-----------:|
+|  s   | const std::string |      -      |
 
 - Return : On success, true is returned. On fail, false is returned.
  
@@ -3055,10 +3055,10 @@ method to obtain global reference for Instance.
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|data|void*|-|
-|length|int|-|
+|  Name  | Type  | Description |
+|:------:|:-----:|:-----------:|
+|  data  | void* |      -      |
+| length |  int  |      -      |
 
 - Return : On success, true is returned. On fail, false is returned.
  
@@ -3066,9 +3066,9 @@ method to obtain global reference for Instance.
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|s|std::string&|-|
+| Name |     Type     | Description |
+|:----:|:------------:|:-----------:|
+|  s   | std::string& |      -      |
 
 - Return
  
@@ -3076,10 +3076,10 @@ method to obtain global reference for Instance.
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|data|void*|-|
-|length|int|-|
+|  Name  | Type  | Description |
+|:------:|:-----:|:-----------:|
+|  data  | void* |      -      |
+| length |  int  |      -      |
 
 - Return
  
@@ -3087,9 +3087,9 @@ method to obtain global reference for Instance.
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|b|const bool|-|
+| Name |    Type    | Description |
+|:----:|:----------:|:-----------:|
+|  b   | const bool |      -      |
 
 - Return : None
  
@@ -3106,9 +3106,9 @@ method to obtain global reference for Instance.
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|s|std::string|-|
+| Name |    Type     | Description |
+|:----:|:-----------:|:-----------:|
+|  s   | std::string |      -      |
 
 
 ##### Methods
@@ -3130,9 +3130,9 @@ method to obtain global reference for Instance.
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|s|std::string|-|
+| Name |    Type     | Description |
+|:----:|:-----------:|:-----------:|
+|  s   | std::string |      -      |
 
 
 ##### Methods
@@ -3141,9 +3141,9 @@ method to obtain global reference for Instance.
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|sock|LinuxServer&|-|
+| Name |     Type     | Description |
+|:----:|:------------:|:-----------:|
+| sock | LinuxServer& |      -      |
 
 - Return : None.
  
@@ -3151,10 +3151,10 @@ method to obtain global reference for Instance.
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|data|unsigned char*|-|
-|length|int|-|
+|  Name  |      Type      | Description |
+|:------:|:--------------:|:-----------:|
+|  data  | unsigned char* |      -      |
+| length |      int       |      -      |
 
 - Return : On success, true is returned. On fail, false is returned.
  
@@ -3162,10 +3162,10 @@ method to obtain global reference for Instance.
 
 - Arguments
 
-|Name|Type|Description|
-|:---:|:---:|:---:|
-|data|unsigned char*|-|
-|length|int|-|
+|  Name  |      Type      | Description |
+|:------:|:--------------:|:-----------:|
+|  data  | unsigned char* |      -      |
+| length |      int       |      -      |
 
 - Return
  
@@ -3475,14 +3475,14 @@ Under default values for the ball DARWIN-OP would view a blue ball like the imag
  
 The following table represents change in values from red ball (default) to blue ball
 
-||red (default)|blue (new values)|reference blue (from Color and White Balance Calibration)|
-|:---:|:---:|:---:|:---:|
-|Hue|356|217|225|
-|Tolerance|15|15|15|
-|Minimum Saturation|50|43|45|
-|Minimum Value|10|0|0|
-|Gain|255|255|255|
-|Exposure|1000|1000|1000|
+|                    | red (default) | blue (new values) | reference blue (from Color and White Balance Calibration) |
+|:------------------:|:-------------:|:-----------------:|:---------------------------------------------------------:|
+|        Hue         |      356      |        217        |                            225                            |
+|     Tolerance      |      15       |        15         |                            15                             |
+| Minimum Saturation |      50       |        43         |                            45                             |
+|   Minimum Value    |      10       |         0         |                             0                             |
+|        Gain        |      255      |        255        |                            255                            |
+|      Exposure      |     1000      |       1000        |                           1000                            |
 
 `Note` Remember that these values are in accordance to the HSV color space. The values assigned for the colors are arbitrary and you may choose any values to suit your needs.
 {: .notice}
@@ -4002,19 +4002,19 @@ Please use whichever program is most convenient for you. However, you may end up
 ##### Contents and description of the motion file used for the demo programs.
 Although there are many pages occupied with data. Not all pages are actually set in motion by DARWIN-OP. here is a list of the pages used along with a brief description of each page.
 
-|page number|page title|brief description of page|number of pages|notes|
-|:---:|:---:|:---:|:---:|:---:|
-|1|init|DARWIN-OP initial standing pose|1||
-|4|hi|DARWIN-OP bowing greet|1||
-|12|rk|DARWIN-OP doing a right kick (from Soccer mode)|1||
-|13|lk|DARWIN-OP doing a left kick (from Soccer mode)|1||
-|15|sit down|DARWIN-OP on its knees|1||
-|23|d1|DARWIN-OP "yes, go!" (from Interactive mode)|1||
-|24|d2|DARWIN-OP "wow!" (from Iteractive mode)|1||
-|27|d3|DARWIN-OP "ooops!" (from Interactive mode)|1||
-|38|d2|DARWIN-OP "bye bye" (from Interactive mode)|2 (38 and 39)|starting page|
-|41|talk2|DARWIN-OP "introduction" (partial, from Interactive mode)|7 (41 through 47)|starting page|
-|54|init|DARWIN-OP "clap please" (from Interactive mode)|4 (54,55,56,58)|starting page, excludes page 57|
+| page number | page title |                 brief description of page                 |  number of pages  |              notes              |
+|:-----------:|:----------:|:---------------------------------------------------------:|:-----------------:|:-------------------------------:|
+|      1      |    init    |              DARWIN-OP initial standing pose              |         1         |                                 |
+|      4      |     hi     |                  DARWIN-OP bowing greet                   |         1         |                                 |
+|     12      |     rk     |      DARWIN-OP doing a right kick (from Soccer mode)      |         1         |                                 |
+|     13      |     lk     |      DARWIN-OP doing a left kick (from Soccer mode)       |         1         |                                 |
+|     15      |  sit down  |                  DARWIN-OP on its knees                   |         1         |                                 |
+|     23      |     d1     |       DARWIN-OP "yes, go!" (from Interactive mode)        |         1         |                                 |
+|     24      |     d2     |          DARWIN-OP "wow!" (from Iteractive mode)          |         1         |                                 |
+|     27      |     d3     |        DARWIN-OP "ooops!" (from Interactive mode)         |         1         |                                 |
+|     38      |     d2     |        DARWIN-OP "bye bye" (from Interactive mode)        |   2 (38 and 39)   |          starting page          |
+|     41      |   talk2    | DARWIN-OP "introduction" (partial, from Interactive mode) | 7 (41 through 47) |          starting page          |
+|     54      |    init    |      DARWIN-OP "clap please" (from Interactive mode)      |  4 (54,55,56,58)  | starting page, excludes page 57 |
  
  
 #### Getting Started with Action Editor

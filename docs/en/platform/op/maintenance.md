@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/op/maintenance/
 sidebar:
-  title: DARwIn-OP
+  title: ROBOTIS OP
   nav: "op"
 ---
 
