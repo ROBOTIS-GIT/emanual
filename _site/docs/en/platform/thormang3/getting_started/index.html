@@ -223,10 +223,16 @@ $(function() {
           var copiedurl = decodeURI(item.href);
           var tempurl = $('<input>').val(copiedurl).appendTo('body').select();
           document.execCommand('copy');
-          console.log(copiedurl);
+          // console.log(copiedurl);
           // document.getElementById(id).href;
           // document.execCommand('copy');
         }
+    </script>
+    <script>
+      function movetopage(targeturl)
+      {
+        location.href=targeturl;
+      }
     </script>
   </head>
 
@@ -698,7 +704,7 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <a href="http://localhost:4000/docs/en/platform/op/getting_started/">*OP</a>
+                    <a href="http://localhost:4000/docs/en/platform/op/getting_started/">*ROBOTIS OP</a>
                   </li>
                 
               
@@ -708,7 +714,7 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <a href="http://localhost:4000/docs/en/platform/op2/getting_started/">OP2</a>
+                    <a href="http://localhost:4000/docs/en/platform/op2/getting_started/">ROBOTIS OP2</a>
                   </li>
                 
               
@@ -718,7 +724,17 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <a href="http://localhost:4000/docs/en/platform/op3/introduction/">OP3</a>
+                    <a href="http://localhost:4000/docs/en/platform/op3/introduction/">ROBOTIS OP3</a>
+                  </li>
+                
+              
+            
+              
+              
+              
+                
+                  <li class="mobile_depth_2">
+                    <a href="http://localhost:4000/docs/en/platform/rh_p12_rn/">RH-P12-RN</a>
                   </li>
                 
               
@@ -750,7 +766,7 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <a href="http://localhost:4000/docs/en/platform/thormang3/introduction/">Thormang3</a>
+                    <a href="http://localhost:4000/docs/en/platform/thormang3/introduction/">THORMANG3</a>
                   </li>
                 
               
@@ -1015,7 +1031,7 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <a href="http://localhost:4000/docs/en/edu/mini/">MINI</a>
+                    <a href="http://localhost:4000/docs/en/edu/mini/">ROBOTIS MINI</a>
                   </li>
                 
               
@@ -1257,6 +1273,16 @@ $(function() {
                 
                   <li class="mobile_depth_2">
                     <a href="http://localhost:4000/docs/en/software/opencm_ide/getting_started/">OpenCM IDE</a>
+                  </li>
+                
+              
+            
+              
+              
+              
+                
+                  <li class="mobile_depth_2">
+                    <a href="http://localhost:4000/docs/en/software/robotis_framework_packages/">ROBOTIS Framework Packages</a>
                   </li>
                 
               
@@ -2089,7 +2115,7 @@ $(function() {
               
                 
                   
-                    <a href="http://localhost:4000/docs/en/platform/op/getting_started/"><font color=#ccc>*OP</font></a>
+                    <a href="http://localhost:4000/docs/en/platform/op/getting_started/"><font color=#ccc>*ROBOTIS OP</font></a>
               
 
               
@@ -2102,7 +2128,7 @@ $(function() {
               
                 
                   
-                    <a href="http://localhost:4000/docs/en/platform/op2/getting_started/">OP2</a>
+                    <a href="http://localhost:4000/docs/en/platform/op2/getting_started/">ROBOTIS OP2</a>
               
 
               
@@ -2115,7 +2141,20 @@ $(function() {
               
                 
                   
-                    <a href="http://localhost:4000/docs/en/platform/op3/introduction/">OP3</a>
+                    <a href="http://localhost:4000/docs/en/platform/op3/introduction/">ROBOTIS OP3</a>
+              
+
+              
+
+            </div>
+            
+              <div class="dropdown-content-wrapper">
+              
+
+              
+                
+                  
+                    <a href="http://localhost:4000/docs/en/platform/rh_p12_rn/">RH-P12-RN</a>
               
 
               
@@ -2159,7 +2198,7 @@ $(function() {
               
                 
                   
-                    <a href="http://localhost:4000/docs/en/platform/thormang3/introduction/">Thormang3</a>
+                    <a href="http://localhost:4000/docs/en/platform/thormang3/introduction/">THORMANG3</a>
               
 
               
@@ -2512,7 +2551,7 @@ $(function() {
               
                 
                   
-                    <a href="http://localhost:4000/docs/en/edu/mini/">MINI</a>
+                    <a href="http://localhost:4000/docs/en/edu/mini/">ROBOTIS MINI</a>
               
 
               
@@ -2775,6 +2814,19 @@ $(function() {
                 
                   
                     <a href="http://localhost:4000/docs/en/software/opencm_ide/getting_started/">OpenCM IDE</a>
+              
+
+              
+
+            </div>
+            
+              <div class="dropdown-content-wrapper">
+              
+
+              
+                
+                  
+                    <a href="http://localhost:4000/docs/en/software/robotis_framework_packages/">ROBOTIS Framework Packages</a>
               
 
               
@@ -3207,67 +3259,75 @@ $(function() {
     
 
       
-      
-      
       <li class="has-children">
-        <input type="radio" name="toplevel" id="toplevel_1" >
-        <label for="toplevel_1">1. Introduction [+]</label>
-
+        <input type="radio" name="toplevel" id="toplevel_1">
+        <label for="toplevel_1"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/en/platform/thormang3/introduction/#introduction');">1. Introduction</button> [+]</label>
       
 
       
         <ul>
         
-          
+        
 
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/introduction/#what-is-thormang3">1. What is THORMANG3?</a></li>
+            
+              
+              <li><a href="http://localhost:4000/docs/en/platform/thormang3/introduction/#what-is-thormang3">1. What is THORMANG3?</a></li>
+            
           
 
           
           
         
-          
 
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/introduction/#package-contents">2. Package Contents</a></li>
-          
-
-          
-          
-        
-          
-
-          
-
-          
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/introduction/#layout">3. Layout</a></li>
+            
+              
+              <li><a href="http://localhost:4000/docs/en/platform/thormang3/introduction/#package-contents">2. Package Contents</a></li>
+            
           
 
           
           
         
-          
 
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/introduction/#specifications">4. Specifications</a></li>
+            
+              
+              <li><a href="http://localhost:4000/docs/en/platform/thormang3/introduction/#layout">3. Layout</a></li>
+            
           
 
           
           
         
-          
 
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/introduction/#safety-information">5. Safety Information</a></li>
+            
+              
+              <li><a href="http://localhost:4000/docs/en/platform/thormang3/introduction/#specifications">4. Specifications</a></li>
+            
+          
+
+          
+          
+        
+
+          
+
+          
+            
+              
+              <li><a href="http://localhost:4000/docs/en/platform/thormang3/introduction/#safety-information">5. Safety Information</a></li>
+            
           
 
           
@@ -3285,89 +3345,101 @@ $(function() {
     
 
       
-      
-      
       <li class="has-children">
-        <input type="radio" name="toplevel" id="toplevel_2" >
-        <label for="toplevel_2">2. Quick Start [+]</label>
-
+        <input type="radio" name="toplevel" id="toplevel_2">
+        <label for="toplevel_2"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/en/platform/thormang3/quick_start/#quick-start');">2. Quick Start</button> [+]</label>
       
 
       
         <ul>
         
-          
+        
 
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/quick_start/#unpacking">1. Unpacking</a></li>
+            
+              
+              <li><a href="http://localhost:4000/docs/en/platform/thormang3/quick_start/#unpacking">1. Unpacking</a></li>
+            
           
 
           
           
         
-          
 
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/quick_start/#power-on">2. Power On</a></li>
-          
-
-          
-          
-        
-          
-
-          
-
-          
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/quick_start/#connect-to-thormang3">3. Connect to THORMANG3</a></li>
+            
+              
+              <li><a href="http://localhost:4000/docs/en/platform/thormang3/quick_start/#power-on">2. Power On</a></li>
+            
           
 
           
           
         
-          
 
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/quick_start/#basic-operation">4. Basic Operation</a></li>
-          
-
-          
-          
-        
-          
-
-          
-
-          
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/quick_start/#power-off">5. Power Off</a></li>
+            
+              
+              <li><a href="http://localhost:4000/docs/en/platform/thormang3/quick_start/#connect-to-thormang3">3. Connect to THORMANG3</a></li>
+            
           
 
           
           
         
-          
 
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/quick_start/#battery-charge">6. Battery Charge</a></li>
+            
+              
+              <li><a href="http://localhost:4000/docs/en/platform/thormang3/quick_start/#basic-operation">4. Basic Operation</a></li>
+            
           
 
           
           
         
-          
 
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/quick_start/#repacking">7. Repacking</a></li>
+            
+              
+              <li><a href="http://localhost:4000/docs/en/platform/thormang3/quick_start/#power-off">5. Power Off</a></li>
+            
+          
+
+          
+          
+        
+
+          
+
+          
+            
+              
+              <li><a href="http://localhost:4000/docs/en/platform/thormang3/quick_start/#battery-charge">6. Battery Charge</a></li>
+            
+          
+
+          
+          
+        
+
+          
+
+          
+            
+              
+              <li><a href="http://localhost:4000/docs/en/platform/thormang3/quick_start/#repacking">7. Repacking</a></li>
+            
           
 
           
@@ -3385,36 +3457,36 @@ $(function() {
     
 
       
-      
-      
       <li class="has-children">
-        <input type="radio" name="toplevel" id="toplevel_3" >
-        <label for="toplevel_3">3. Getting Started [+]</label>
-
+        <input type="radio" name="toplevel" id="toplevel_3">
+        <label for="toplevel_3"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/en/platform/thormang3/getting_started/#getting-started');">3. Getting Started</button> [+]</label>
       
 
       
         <ul>
         
-          
+        
 
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#os-install">1. OS Install</a></li>
+            
+              
+              <li><a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#os-install">1. OS Install</a></li>
+            
           
 
           
           
         
-          
 
           
 
           
-          <li class="has-children">
-            <input type="radio" name="sublevel" id="Getting Started_2" >
-            <label for="Getting Started_2">2. Network Setting [+]</label>
+            
+            <li class="has-children">
+              <input type="radio" name="sublevel" id="Getting Started_2">
+              <label for="Getting Started_2"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/en/platform/thormang3/getting_started/#network-setting');">2. Network Setting</button> [+]</label>
           
 
           
@@ -3424,17 +3496,23 @@ $(function() {
 
               
 
-              <li>
-                <a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#access-point-setting" style="font-style:italic;">Access Point Setting</a>
-              </li>
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#access-point-setting" style="font-style:italic;">Access Point Setting</a>
+                </li>
+              
+              
             
               
 
               
 
-              <li>
-                <a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#pc-setting" style="font-style:italic;">PC Setting</a>
-              </li>
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#pc-setting" style="font-style:italic;">PC Setting</a>
+                </li>
+              
+              
             
             </ul>
           
@@ -3442,25 +3520,27 @@ $(function() {
           </li>
           
         
-          
 
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#ros-install">3. ROS Install</a></li>
+            
+              
+              <li><a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#ros-install">3. ROS Install</a></li>
+            
           
 
           
           
         
-          
 
           
 
           
-          <li class="has-children">
-            <input type="radio" name="sublevel" id="Getting Started_4" >
-            <label for="Getting Started_4">4. ROS Environment Setting [+]</label>
+            
+            <li class="has-children">
+              <input type="radio" name="sublevel" id="Getting Started_4">
+              <label for="Getting Started_4"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/en/platform/thormang3/getting_started/#ros-environment-setting');">4. ROS Environment Setting</button> [+]</label>
           
 
           
@@ -3470,17 +3550,23 @@ $(function() {
 
               
 
-              <li>
-                <a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#network-setting-example" style="font-style:italic;">Network Setting Example</a>
-              </li>
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#network-setting-example" style="font-style:italic;">Network Setting Example</a>
+                </li>
+              
+              
             
               
 
               
 
-              <li>
-                <a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#time-synchronization" style="font-style:italic;">Time Synchronization</a>
-              </li>
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#time-synchronization" style="font-style:italic;">Time Synchronization</a>
+                </li>
+              
+              
             
             </ul>
           
@@ -3488,14 +3574,14 @@ $(function() {
           </li>
           
         
-          
 
           
 
           
-          <li class="has-children">
-            <input type="radio" name="sublevel" id="Getting Started_5" >
-            <label for="Getting Started_5">5. ROBOTIS ROS Package Install [+]</label>
+            
+            <li class="has-children">
+              <input type="radio" name="sublevel" id="Getting Started_5">
+              <label for="Getting Started_5"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/en/platform/thormang3/getting_started/#robotis-ros-package-install');">5. ROBOTIS ROS Package Install</button> [+]</label>
           
 
           
@@ -3505,33 +3591,45 @@ $(function() {
 
               
 
-              <li>
-                <a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#mpc-installation" style="font-style:italic;">MPC Installation</a>
-              </li>
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#mpc-installation" style="font-style:italic;">MPC Installation</a>
+                </li>
+              
+              
             
               
 
               
 
-              <li>
-                <a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#ppc-installation" style="font-style:italic;">PPC Installation</a>
-              </li>
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#ppc-installation" style="font-style:italic;">PPC Installation</a>
+                </li>
+              
+              
             
               
 
               
 
-              <li>
-                <a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#opc-installation" style="font-style:italic;">OPC Installation</a>
-              </li>
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#opc-installation" style="font-style:italic;">OPC Installation</a>
+                </li>
+              
+              
             
               
 
               
 
-              <li>
-                <a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#update" style="font-style:italic;">Update</a>
-              </li>
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#update" style="font-style:italic;">Update</a>
+                </li>
+              
+              
             
             </ul>
           
@@ -3539,14 +3637,14 @@ $(function() {
           </li>
           
         
-          
 
           
 
           
-          <li class="has-children">
-            <input type="radio" name="sublevel" id="Getting Started_6" >
-            <label for="Getting Started_6">6. Additional ROS Package Install [+]</label>
+            
+            <li class="has-children">
+              <input type="radio" name="sublevel" id="Getting Started_6">
+              <label for="Getting Started_6"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/en/platform/thormang3/getting_started/#additional-ros-package-install');">6. Additional ROS Package Install</button> [+]</label>
           
 
           
@@ -3556,378 +3654,23 @@ $(function() {
 
               
 
-              <li>
-                <a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#ros-packages-for-mpc" style="font-style:italic;">ROS Packages for MPC</a>
-              </li>
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#ros-packages-for-mpc" style="font-style:italic;">ROS Packages for MPC</a>
+                </li>
+              
+              
             
               
 
               
 
-              <li>
-                <a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#ros-packages-for-ppc" style="font-style:italic;">ROS Packages for PPC</a>
-              </li>
-            
-            </ul>
-          
-          
-          </li>
-          
-        
-        </ul>
-      
-      
-      </li>
-      
-    
-  
-    
-
-    
-
-      
-      
-      
-      <li class="has-children">
-        <input type="radio" name="toplevel" id="toplevel_4" >
-        <label for="toplevel_4">4. THORMANG3 ROS Packages [+]</label>
-
-      
-
-      
-        <ul>
-        
-          
-
-          
-
-          
-          <li class="has-children">
-            <input type="radio" name="sublevel" id="THORMANG3 ROS Packages_1" >
-            <label for="THORMANG3 ROS Packages_1">1. MPC Packages [+]</label>
-          
-
-          
-            <ul>
-            
               
-
+                <li>
+                  <a href="http://localhost:4000/docs/en/platform/thormang3/getting_started/#ros-packages-for-ppc" style="font-style:italic;">ROS Packages for PPC</a>
+                </li>
               
-
-              <li>
-                <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_manager" style="font-style:italic;">thormang3_manager</a>
-              </li>
-            
               
-
-              
-
-              <li>
-                <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_kinematics_dynamics" style="font-style:italic;">thormang3_kinematics_dynamics</a>
-              </li>
-            
-              
-
-              
-
-              <li>
-                <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_action_module" style="font-style:italic;">thormang3_action_module</a>
-              </li>
-            
-              
-
-              
-
-              <li>
-                <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_base_module" style="font-style:italic;">thormang3_base_module"</a>
-              </li>
-            
-              
-
-              
-
-              <li>
-                <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_manipulation_module" style="font-style:italic;">thormang3_manipulation_module</a>
-              </li>
-            
-              
-
-              
-
-              <li>
-                <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_walking_module" style="font-style:italic;">thormang3_walking_module</a>
-              </li>
-            
-              
-
-              
-
-              <li>
-                <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_head_control_module" style="font-style:italic;">thormang3_head_control_module</a>
-              </li>
-            
-              
-
-              
-
-              <li>
-                <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#ati_ft_sensor" style="font-style:italic;">ati_ft_sensor</a>
-              </li>
-            
-              
-
-              
-
-              <li>
-                <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_feet_ft_module" style="font-style:italic;">thormang3_feet_ft_module</a>
-              </li>
-            
-              
-
-              
-
-              <li>
-                <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_balance_control" style="font-style:italic;">thormang3_balance_control</a>
-              </li>
-            
-              
-
-              
-
-              <li>
-                <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#imu-3dm-gx4" style="font-style:italic;">imu-3dm-gx4</a>
-              </li>
-            
-            </ul>
-          
-          
-          </li>
-          
-        
-          
-
-          
-
-          
-          <li class="has-children">
-            <input type="radio" name="sublevel" id="THORMANG3 ROS Packages_2" >
-            <label for="THORMANG3 ROS Packages_2">2. PPC Packages [+]</label>
-          
-
-          
-            <ul>
-            
-              
-
-              
-
-              <li>
-                <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_sensors" style="font-style:italic;">thormang3_sensors</a>
-              </li>
-            
-              
-
-              
-
-              <li>
-                <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_simple_demo" style="font-style:italic;">thormang3_simple_demo</a>
-              </li>
-            
-            </ul>
-          
-          
-          </li>
-          
-        
-          
-
-          
-
-          
-          <li class="has-children">
-            <input type="radio" name="sublevel" id="THORMANG3 ROS Packages_3" >
-            <label for="THORMANG3 ROS Packages_3">3. OPC Packages [+]</label>
-          
-
-          
-            <ul>
-            
-              
-
-              
-
-              <li>
-                <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#humanoid_navigation" style="font-style:italic;">humanoid_navigation</a>
-              </li>
-            
-              
-
-              
-
-              <li>
-                <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_demo" style="font-style:italic;">thormang3_demo</a>
-              </li>
-            
-              
-
-              
-
-              <li>
-                <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_action_script_player" style="font-style:italic;">thormang3_action_script_player</a>
-              </li>
-            
-              
-
-              
-
-              <li>
-                <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_foot_step_generator" style="font-style:italic;">thormang3_foot_step_generator</a>
-              </li>
-            
-              
-
-              
-
-              <li>
-                <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_offset_tuner_client" style="font-style:italic;">thormang3_offset_tuner_client</a>
-              </li>
-            
-            </ul>
-          
-          
-          </li>
-          
-        
-          
-
-          
-
-          
-          <li class="has-children">
-            <input type="radio" name="sublevel" id="THORMANG3 ROS Packages_4" >
-            <label for="THORMANG3 ROS Packages_4">4. Common Packages [+]</label>
-          
-
-          
-            <ul>
-            
-              
-
-              
-
-              <li>
-                <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_description" style="font-style:italic;">thormang3_description</a>
-              </li>
-            
-              
-
-              
-
-              <li>
-                <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_gazebo" style="font-style:italic;">thormang3_gazebo</a>
-              </li>
-            
-            </ul>
-          
-          
-          </li>
-          
-        
-          
-
-          
-
-          
-          <li class="has-children">
-            <input type="radio" name="sublevel" id="THORMANG3 ROS Packages_5" >
-            <label for="THORMANG3 ROS Packages_5">5. Tools Packages [+]</label>
-          
-
-          
-            <ul>
-            
-              
-
-              
-
-              <li>
-                <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_offset_tuner_server" style="font-style:italic;">thormang3_offset_tuner_server</a>
-              </li>
-            
-              
-
-              
-
-              <li>
-                <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_action_editor" style="font-style:italic;">thormang3_action_editor</a>
-              </li>
-            
-            </ul>
-          
-          
-          </li>
-          
-        
-          
-
-          
-
-          
-          <li class="has-children">
-            <input type="radio" name="sublevel" id="THORMANG3 ROS Packages_6" >
-            <label for="THORMANG3 ROS Packages_6">6. THORMANG msgs Package [+]</label>
-          
-
-          
-            <ul>
-            
-              
-
-              
-
-              <li>
-                <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_action_module_msgs" style="font-style:italic;">thormang3_action_module_msgs</a>
-              </li>
-            
-              
-
-              
-
-              <li>
-                <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_feet_ft_module_msgs" style="font-style:italic;">thormang3_fee_ft_module_msgs</a>
-              </li>
-            
-              
-
-              
-
-              <li>
-                <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_manipulation_module_msgs" style="font-style:italic;">thormang3_manipulation_module_msgs</a>
-              </li>
-            
-              
-
-              
-
-              <li>
-                <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_walking_module_msgs" style="font-style:italic;">thormang3_walking_module_msgs</a>
-              </li>
-            
-              
-
-              
-
-              <li>
-                <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_head_control_module_msgs" style="font-style:italic;">thormang3_head_control_module_msgs</a>
-              </li>
-            
-              
-
-              
-
-              <li>
-                <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_offset_tuner_msgs" style="font-style:italic;">thormang3_offset_tuner_msgs</a>
-              </li>
             
             </ul>
           
@@ -3947,47 +3690,23 @@ $(function() {
     
 
       
-      
-      
       <li class="has-children">
-        <input type="radio" name="toplevel" id="toplevel_5" >
-        <label for="toplevel_5">5. THORMANG3 Operation [+]</label>
-
+        <input type="radio" name="toplevel" id="toplevel_4">
+        <label for="toplevel_4"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3-ros-packages');">4. THORMANG3 ROS Packages</button> [+]</label>
       
 
       
         <ul>
         
-          
-
-          
-
-          
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#preparation">1. Preparation</a></li>
-          
-
-          
-          
         
-          
 
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#simple-demo">2. Simple Demo</a></li>
-          
-
-          
-          
-        
-          
-
-          
-
-          
-          <li class="has-children">
-            <input type="radio" name="sublevel" id="THORMANG3 Operation_3" >
-            <label for="THORMANG3 Operation_3">3. GUI Program [+]</label>
+            
+            <li class="has-children">
+              <input type="radio" name="sublevel" id="THORMANG3 ROS Packages_1">
+              <label for="THORMANG3 ROS Packages_1"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#mpc-packages');">1. MPC Packages</button> [+]</label>
           
 
           
@@ -3997,57 +3716,122 @@ $(function() {
 
               
 
-              <li>
-                <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#what-is-opc" style="font-style:italic;">What is OPC</a>
-              </li>
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_manager" style="font-style:italic;">thormang3_manager</a>
+                </li>
+              
+              
             
               
 
               
 
-              <li>
-                <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#visualized-monitoring" style="font-style:italic;">Visualized Monitoring</a>
-              </li>
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_kinematics_dynamics" style="font-style:italic;">thormang3_kinematics_dynamics</a>
+                </li>
+              
+              
             
               
 
               
 
-              <li>
-                <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#remote-controlgui-demo" style="font-style:italic;">Remote Control(GUI Demo)</a>
-              </li>
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_action_module" style="font-style:italic;">thormang3_action_module</a>
+                </li>
+              
+              
             
               
 
               
 
-              <li>
-                <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#calibrate-ft-sensors" style="font-style:italic;">Calibrate FT Sensors</a>
-              </li>
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_base_module" style="font-style:italic;">thormang3_base_module"</a>
+                </li>
+              
+              
             
               
 
               
 
-              <li>
-                <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#operate-head-module" style="font-style:italic;">Operate Head Module</a>
-              </li>
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_manipulation_module" style="font-style:italic;">thormang3_manipulation_module</a>
+                </li>
+              
+              
             
               
 
               
 
-              <li>
-                <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#operate-manipulation-module" style="font-style:italic;">Operate Manipulation Module</a>
-              </li>
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_walking_module" style="font-style:italic;">thormang3_walking_module</a>
+                </li>
+              
+              
             
               
 
               
 
-              <li>
-                <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#operate-walking-module" style="font-style:italic;">Operate Walking Module</a>
-              </li>
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_head_control_module" style="font-style:italic;">thormang3_head_control_module</a>
+                </li>
+              
+              
+            
+              
+
+              
+
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#ati_ft_sensor" style="font-style:italic;">ati_ft_sensor</a>
+                </li>
+              
+              
+            
+              
+
+              
+
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_feet_ft_module" style="font-style:italic;">thormang3_feet_ft_module</a>
+                </li>
+              
+              
+            
+              
+
+              
+
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_balance_control" style="font-style:italic;">thormang3_balance_control</a>
+                </li>
+              
+              
+            
+              
+
+              
+
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#imu-3dm-gx4" style="font-style:italic;">imu-3dm-gx4</a>
+                </li>
+              
+              
             
             </ul>
           
@@ -4055,12 +3839,439 @@ $(function() {
           </li>
           
         
-          
 
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#offset-tuner">4. Offset Tuner</a></li>
+            
+            <li class="has-children">
+              <input type="radio" name="sublevel" id="THORMANG3 ROS Packages_2">
+              <label for="THORMANG3 ROS Packages_2"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#ppc-packages');">2. PPC Packages</button> [+]</label>
+          
+
+          
+            <ul>
+            
+              
+
+              
+
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_sensors" style="font-style:italic;">thormang3_sensors</a>
+                </li>
+              
+              
+            
+              
+
+              
+
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_simple_demo" style="font-style:italic;">thormang3_simple_demo</a>
+                </li>
+              
+              
+            
+            </ul>
+          
+          
+          </li>
+          
+        
+
+          
+
+          
+            
+            <li class="has-children">
+              <input type="radio" name="sublevel" id="THORMANG3 ROS Packages_3">
+              <label for="THORMANG3 ROS Packages_3"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#opc-packages');">3. OPC Packages</button> [+]</label>
+          
+
+          
+            <ul>
+            
+              
+
+              
+
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#humanoid_navigation" style="font-style:italic;">humanoid_navigation</a>
+                </li>
+              
+              
+            
+              
+
+              
+
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_demo" style="font-style:italic;">thormang3_demo</a>
+                </li>
+              
+              
+            
+              
+
+              
+
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_action_script_player" style="font-style:italic;">thormang3_action_script_player</a>
+                </li>
+              
+              
+            
+              
+
+              
+
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_foot_step_generator" style="font-style:italic;">thormang3_foot_step_generator</a>
+                </li>
+              
+              
+            
+              
+
+              
+
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_offset_tuner_client" style="font-style:italic;">thormang3_offset_tuner_client</a>
+                </li>
+              
+              
+            
+            </ul>
+          
+          
+          </li>
+          
+        
+
+          
+
+          
+            
+            <li class="has-children">
+              <input type="radio" name="sublevel" id="THORMANG3 ROS Packages_4">
+              <label for="THORMANG3 ROS Packages_4"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#common-packages');">4. Common Packages</button> [+]</label>
+          
+
+          
+            <ul>
+            
+              
+
+              
+
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_description" style="font-style:italic;">thormang3_description</a>
+                </li>
+              
+              
+            
+              
+
+              
+
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_gazebo" style="font-style:italic;">thormang3_gazebo</a>
+                </li>
+              
+              
+            
+            </ul>
+          
+          
+          </li>
+          
+        
+
+          
+
+          
+            
+            <li class="has-children">
+              <input type="radio" name="sublevel" id="THORMANG3 ROS Packages_5">
+              <label for="THORMANG3 ROS Packages_5"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#tools-packages');">5. Tools Packages</button> [+]</label>
+          
+
+          
+            <ul>
+            
+              
+
+              
+
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_offset_tuner_server" style="font-style:italic;">thormang3_offset_tuner_server</a>
+                </li>
+              
+              
+            
+              
+
+              
+
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_action_editor" style="font-style:italic;">thormang3_action_editor</a>
+                </li>
+              
+              
+            
+            </ul>
+          
+          
+          </li>
+          
+        
+
+          
+
+          
+            
+            <li class="has-children">
+              <input type="radio" name="sublevel" id="THORMANG3 ROS Packages_6">
+              <label for="THORMANG3 ROS Packages_6"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang-msgs-package');">6. THORMANG msgs Package</button> [+]</label>
+          
+
+          
+            <ul>
+            
+              
+
+              
+
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_action_module_msgs" style="font-style:italic;">thormang3_action_module_msgs</a>
+                </li>
+              
+              
+            
+              
+
+              
+
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_feet_ft_module_msgs" style="font-style:italic;">thormang3_fee_ft_module_msgs</a>
+                </li>
+              
+              
+            
+              
+
+              
+
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_manipulation_module_msgs" style="font-style:italic;">thormang3_manipulation_module_msgs</a>
+                </li>
+              
+              
+            
+              
+
+              
+
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_walking_module_msgs" style="font-style:italic;">thormang3_walking_module_msgs</a>
+                </li>
+              
+              
+            
+              
+
+              
+
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_head_control_module_msgs" style="font-style:italic;">thormang3_head_control_module_msgs</a>
+                </li>
+              
+              
+            
+              
+
+              
+
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_offset_tuner_msgs" style="font-style:italic;">thormang3_offset_tuner_msgs</a>
+                </li>
+              
+              
+            
+            </ul>
+          
+          
+          </li>
+          
+        
+        </ul>
+      
+      
+      </li>
+      
+    
+  
+    
+
+    
+
+      
+      <li class="has-children">
+        <input type="radio" name="toplevel" id="toplevel_5">
+        <label for="toplevel_5"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#thormang3-operation');">5. THORMANG3 Operation</button> [+]</label>
+      
+
+      
+        <ul>
+        
+        
+
+          
+
+          
+            
+              
+              <li><a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#preparation">1. Preparation</a></li>
+            
+          
+
+          
+          
+        
+
+          
+
+          
+            
+              
+              <li><a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#simple-demo">2. Simple Demo</a></li>
+            
+          
+
+          
+          
+        
+
+          
+
+          
+            
+            <li class="has-children">
+              <input type="radio" name="sublevel" id="THORMANG3 Operation_3">
+              <label for="THORMANG3 Operation_3"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#gui-program');">3. GUI Program</button> [+]</label>
+          
+
+          
+            <ul>
+            
+              
+
+              
+
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#what-is-opc" style="font-style:italic;">What is OPC</a>
+                </li>
+              
+              
+            
+              
+
+              
+
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#visualized-monitoring" style="font-style:italic;">Visualized Monitoring</a>
+                </li>
+              
+              
+            
+              
+
+              
+
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#remote-controlgui-demo" style="font-style:italic;">Remote Control(GUI Demo)</a>
+                </li>
+              
+              
+            
+              
+
+              
+
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#calibrate-ft-sensors" style="font-style:italic;">Calibrate FT Sensors</a>
+                </li>
+              
+              
+            
+              
+
+              
+
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#operate-head-module" style="font-style:italic;">Operate Head Module</a>
+                </li>
+              
+              
+            
+              
+
+              
+
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#operate-manipulation-module" style="font-style:italic;">Operate Manipulation Module</a>
+                </li>
+              
+              
+            
+              
+
+              
+
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#operate-walking-module" style="font-style:italic;">Operate Walking Module</a>
+                </li>
+              
+              
+            
+            </ul>
+          
+          
+          </li>
+          
+        
+
+          
+
+          
+            
+              
+              <li><a href="http://localhost:4000/docs/en/platform/thormang3/thormang3_operation/#offset-tuner">4. Offset Tuner</a></li>
+            
           
 
           
@@ -4078,34 +4289,36 @@ $(function() {
     
 
       
-      
-      
       <li class="has-children">
-        <input type="radio" name="toplevel" id="toplevel_6" >
-        <label for="toplevel_6">6. Gazebo Simulation [+]</label>
-
+        <input type="radio" name="toplevel" id="toplevel_6">
+        <label for="toplevel_6"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/en/platform/thormang3/gazebo_simulation/#gazebo-simulation');">6. Gazebo Simulation</button> [+]</label>
       
 
       
         <ul>
         
-          
+        
 
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/gazebo_simulation/#install-gazebo">1. Install Gazebo</a></li>
+            
+              
+              <li><a href="http://localhost:4000/docs/en/platform/thormang3/gazebo_simulation/#install-gazebo">1. Install Gazebo</a></li>
+            
           
 
           
           
         
-          
 
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/gazebo_simulation/#run-simulation">2. Run Simulation</a></li>
+            
+              
+              <li><a href="http://localhost:4000/docs/en/platform/thormang3/gazebo_simulation/#run-simulation">2. Run Simulation</a></li>
+            
           
 
           
@@ -4123,78 +4336,88 @@ $(function() {
     
 
       
-      
-      
       <li class="has-children">
-        <input type="radio" name="toplevel" id="toplevel_7" >
-        <label for="toplevel_7">7. References [+]</label>
-
+        <input type="radio" name="toplevel" id="toplevel_7">
+        <label for="toplevel_7"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/en/platform/thormang3/references/#references');">7. References</button> [+]</label>
       
 
       
         <ul>
         
-          
+        
 
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/references/#router-setting">1. Router Setting</a></li>
+            
+              
+              <li><a href="http://localhost:4000/docs/en/platform/thormang3/references/#router-setting">1. Router Setting</a></li>
+            
           
 
           
           
         
-          
 
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/references/#lidar-ip-setting">2. LiDAR IP Setting</a></li>
-          
-
-          
-          
-        
-          
-
-          
-
-          
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/references/#system-block-diagram">3. System Block Diagram</a></li>
+            
+              
+              <li><a href="http://localhost:4000/docs/en/platform/thormang3/references/#lidar-ip-setting">2. LiDAR IP Setting</a></li>
+            
           
 
           
           
         
-          
 
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/references/#technical-specifications">4. Technical Specifications</a></li>
-          
-
-          
-          
-        
-          
-
-          
-
-          
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/references/#id-map">5. ID Map</a></li>
+            
+              
+              <li><a href="http://localhost:4000/docs/en/platform/thormang3/references/#system-block-diagram">3. System Block Diagram</a></li>
+            
           
 
           
           
         
-          
 
           
 
           
-          <li><a href="http://localhost:4000/docs/en/platform/thormang3/references/#physical-properties">6. Physical Properties</a></li>
+            
+              
+              <li><a href="http://localhost:4000/docs/en/platform/thormang3/references/#technical-specifications">4. Technical Specifications</a></li>
+            
+          
+
+          
+          
+        
+
+          
+
+          
+            
+              
+              <li><a href="http://localhost:4000/docs/en/platform/thormang3/references/#id-map">5. ID Map</a></li>
+            
+          
+
+          
+          
+        
+
+          
+
+          
+            
+              
+              <li><a href="http://localhost:4000/docs/en/platform/thormang3/references/#physical-properties">6. Physical Properties</a></li>
+            
           
 
           

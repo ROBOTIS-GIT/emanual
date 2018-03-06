@@ -6,12 +6,14 @@ Indirect Address Table에 특정 주소를 세팅하면, Indirect Data Table은 
 Control Table Item의 모든 byte를 Indirect Address로 세팅 해주어야 정상 동작합니다.  
 예를 들어, Indirect Data 2를 Goal Position(596)으로 사용하고 싶을 땐, 아래와 같이 세팅해야 합니다.
 
-`예제 1` 1 바이트 LED(563)를 Indirect Data 1(634)에 할당하기.
+#### 예제 1
+1 바이트 LED(563)를 Indirect Data 1(634)에 할당하기.
 1. Indirect Address 1(49) : RED LED의 주소값인 `563`으로 변경.
 2. Indirect Data 1(634)을 '1'로 변경 : LED Red(563)값 또한 '1'로 변경되며 붉은색 LED가 켜짐.
 3. Indirect Data 1(634)을 '0'로 변경 : LED Red(563)값 또한 '0'로 변경도며 LED가 꺼짐.
 
-`예제 2` 4 바이트 길이의 Goal Position(596)를 Indirect Data 2(635)에 할당하기 위해서는 반드시 연속된 4 바이트를 모두 할당해야 함.
+#### 예제 2
+4 바이트 길이의 Goal Position(596)를 Indirect Data 2(635)에 할당하기 위해서는 반드시 연속된 4 바이트를 모두 할당해야 함.
 1. Indirect Address 2(51) : 값을 Goal Position의 첫번째 주소인 '596'로 변경.
 2. Indirect Address 3(53) : 값을 Goal Position의 두번째 주소인 '597'로 변경.
 3. Indirect Address 4(55) : 값을 Goal Position의 세번째 주소인 '598'로 변경.

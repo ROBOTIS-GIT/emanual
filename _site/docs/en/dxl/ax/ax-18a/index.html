@@ -223,10 +223,16 @@ $(function() {
           var copiedurl = decodeURI(item.href);
           var tempurl = $('<input>').val(copiedurl).appendTo('body').select();
           document.execCommand('copy');
-          console.log(copiedurl);
+          // console.log(copiedurl);
           // document.getElementById(id).href;
           // document.execCommand('copy');
         }
+    </script>
+    <script>
+      function movetopage(targeturl)
+      {
+        location.href=targeturl;
+      }
     </script>
   </head>
 
@@ -698,7 +704,7 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <a href="http://localhost:4000/docs/en/platform/op/getting_started/">*OP</a>
+                    <a href="http://localhost:4000/docs/en/platform/op/getting_started/">*ROBOTIS OP</a>
                   </li>
                 
               
@@ -708,7 +714,7 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <a href="http://localhost:4000/docs/en/platform/op2/getting_started/">OP2</a>
+                    <a href="http://localhost:4000/docs/en/platform/op2/getting_started/">ROBOTIS OP2</a>
                   </li>
                 
               
@@ -718,7 +724,17 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <a href="http://localhost:4000/docs/en/platform/op3/introduction/">OP3</a>
+                    <a href="http://localhost:4000/docs/en/platform/op3/introduction/">ROBOTIS OP3</a>
+                  </li>
+                
+              
+            
+              
+              
+              
+                
+                  <li class="mobile_depth_2">
+                    <a href="http://localhost:4000/docs/en/platform/rh_p12_rn/">RH-P12-RN</a>
                   </li>
                 
               
@@ -750,7 +766,7 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <a href="http://localhost:4000/docs/en/platform/thormang3/introduction/">Thormang3</a>
+                    <a href="http://localhost:4000/docs/en/platform/thormang3/introduction/">THORMANG3</a>
                   </li>
                 
               
@@ -1015,7 +1031,7 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <a href="http://localhost:4000/docs/en/edu/mini/">MINI</a>
+                    <a href="http://localhost:4000/docs/en/edu/mini/">ROBOTIS MINI</a>
                   </li>
                 
               
@@ -1257,6 +1273,16 @@ $(function() {
                 
                   <li class="mobile_depth_2">
                     <a href="http://localhost:4000/docs/en/software/opencm_ide/getting_started/">OpenCM IDE</a>
+                  </li>
+                
+              
+            
+              
+              
+              
+                
+                  <li class="mobile_depth_2">
+                    <a href="http://localhost:4000/docs/en/software/robotis_framework_packages/">ROBOTIS Framework Packages</a>
                   </li>
                 
               
@@ -2089,7 +2115,7 @@ $(function() {
               
                 
                   
-                    <a href="http://localhost:4000/docs/en/platform/op/getting_started/"><font color=#ccc>*OP</font></a>
+                    <a href="http://localhost:4000/docs/en/platform/op/getting_started/"><font color=#ccc>*ROBOTIS OP</font></a>
               
 
               
@@ -2102,7 +2128,7 @@ $(function() {
               
                 
                   
-                    <a href="http://localhost:4000/docs/en/platform/op2/getting_started/">OP2</a>
+                    <a href="http://localhost:4000/docs/en/platform/op2/getting_started/">ROBOTIS OP2</a>
               
 
               
@@ -2115,7 +2141,20 @@ $(function() {
               
                 
                   
-                    <a href="http://localhost:4000/docs/en/platform/op3/introduction/">OP3</a>
+                    <a href="http://localhost:4000/docs/en/platform/op3/introduction/">ROBOTIS OP3</a>
+              
+
+              
+
+            </div>
+            
+              <div class="dropdown-content-wrapper">
+              
+
+              
+                
+                  
+                    <a href="http://localhost:4000/docs/en/platform/rh_p12_rn/">RH-P12-RN</a>
               
 
               
@@ -2159,7 +2198,7 @@ $(function() {
               
                 
                   
-                    <a href="http://localhost:4000/docs/en/platform/thormang3/introduction/">Thormang3</a>
+                    <a href="http://localhost:4000/docs/en/platform/thormang3/introduction/">THORMANG3</a>
               
 
               
@@ -2512,7 +2551,7 @@ $(function() {
               
                 
                   
-                    <a href="http://localhost:4000/docs/en/edu/mini/">MINI</a>
+                    <a href="http://localhost:4000/docs/en/edu/mini/">ROBOTIS MINI</a>
               
 
               
@@ -2775,6 +2814,19 @@ $(function() {
                 
                   
                     <a href="http://localhost:4000/docs/en/software/opencm_ide/getting_started/">OpenCM IDE</a>
+              
+
+              
+
+            </div>
+            
+              <div class="dropdown-content-wrapper">
+              
+
+              
+                
+                  
+                    <a href="http://localhost:4000/docs/en/software/robotis_framework_packages/">ROBOTIS Framework Packages</a>
               
 
               
@@ -3221,25 +3273,23 @@ $(function() {
     
 
       
-      
-      
       <li class="has-children">
-        <input type="radio" name="toplevel" id="toplevel_2" >
-        <label for="toplevel_2">2. Control Table [+]</label>
-
+        <input type="radio" name="toplevel" id="toplevel_2">
+        <label for="toplevel_2"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/en/dxl/ax/ax-18a/#control-table');">2. Control Table</button> [+]</label>
       
 
       
         <ul>
         
-          
+        
 
           
 
           
-          <li class="has-children">
-            <input type="radio" name="sublevel" id="Control Table_1" >
-            <label for="Control Table_1">1. Control Table, Data, Address [+]</label>
+            
+            <li class="has-children">
+              <input type="radio" name="sublevel" id="Control Table_1">
+              <label for="Control Table_1"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/en/dxl/ax/ax-18a/#control-table-data-address');">1. Control Table, Data, Address</button> [+]</label>
           
 
           
@@ -3249,33 +3299,45 @@ $(function() {
 
               
 
-              <li>
-                <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#area-eeprom-ram" style="font-style:italic;">Area(EEPROM, RAM)</a>
-              </li>
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#area-eeprom-ram" style="font-style:italic;">Area(EEPROM, RAM)</a>
+                </li>
+              
+              
             
               
 
               
 
-              <li>
-                <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#size" style="font-style:italic;">Size</a>
-              </li>
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#size" style="font-style:italic;">Size</a>
+                </li>
+              
+              
             
               
 
               
 
-              <li>
-                <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#access" style="font-style:italic;">Access</a>
-              </li>
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#access" style="font-style:italic;">Access</a>
+                </li>
+              
+              
             
               
 
               
 
-              <li>
-                <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#initial-value" style="font-style:italic;">Initial Value</a>
-              </li>
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#initial-value" style="font-style:italic;">Initial Value</a>
+                </li>
+              
+              
             
             </ul>
           
@@ -3283,36 +3345,40 @@ $(function() {
           </li>
           
         
-          
 
           
 
           
-          <li><a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#control-table-of-eeprom-area">2. EEPROM Area</a></li>
-          
-
-          
-          
-        
-          
-
-          
-
-          
-          <li><a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#control-table-of-ram-area">3. RAM Area</a></li>
+            
+              
+              <li><a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#control-table-of-eeprom-area">2. EEPROM Area</a></li>
+            
           
 
           
           
         
-          
 
           
 
           
-          <li class="has-children">
-            <input type="radio" name="sublevel" id="Control Table_4" >
-            <label for="Control Table_4">4. Control Table Description [+]</label>
+            
+              
+              <li><a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#control-table-of-ram-area">3. RAM Area</a></li>
+            
+          
+
+          
+          
+        
+
+          
+
+          
+            
+            <li class="has-children">
+              <input type="radio" name="sublevel" id="Control Table_4">
+              <label for="Control Table_4"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/en/dxl/ax/ax-18a/#control-table-description');">4. Control Table Description</button> [+]</label>
           
 
           
@@ -3322,225 +3388,309 @@ $(function() {
 
               
 
-              <li>
-                <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#model-number-0" style="font-style:italic;">Model Number(0)</a>
-              </li>
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#model-number-0" style="font-style:italic;">Model Number(0)</a>
+                </li>
+              
+              
             
               
 
               
 
-              <li>
-                <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#firmware-version-2" style="font-style:italic;">Firmware Version(2)</a>
-              </li>
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#firmware-version-2" style="font-style:italic;">Firmware Version(2)</a>
+                </li>
+              
+              
             
               
 
               
 
-              <li>
-                <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#id-3" style="font-style:italic;">ID(3)</a>
-              </li>
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#id-3" style="font-style:italic;">ID(3)</a>
+                </li>
+              
+              
             
               
 
               
 
-              <li>
-                <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#baud-rate-4" style="font-style:italic;">Baud Rate(4)</a>
-              </li>
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#baud-rate-4" style="font-style:italic;">Baud Rate(4)</a>
+                </li>
+              
+              
             
               
 
               
 
-              <li>
-                <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#return-delay-time-5" style="font-style:italic;">Return Delay Time(5)</a>
-              </li>
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#return-delay-time-5" style="font-style:italic;">Return Delay Time(5)</a>
+                </li>
+              
+              
             
               
 
               
 
-              <li>
-                <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#cwccw-angle-limit6-8" style="font-style:italic;">CW/CCW Angle Limit(6,8)</a>
-              </li>
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#cwccw-angle-limit6-8" style="font-style:italic;">CW/CCW Angle Limit(6,8)</a>
+                </li>
+              
+              
             
               
 
               
 
-              <li>
-                <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#temperature-limit-11" style="font-style:italic;">Temperature Limit(11)</a>
-              </li>
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#temperature-limit-11" style="font-style:italic;">Temperature Limit(11)</a>
+                </li>
+              
+              
             
               
 
               
 
-              <li>
-                <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#minmax-voltage-limit-12-13" style="font-style:italic;">Min/Max Voltage Limit(12,13)</a>
-              </li>
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#minmax-voltage-limit-12-13" style="font-style:italic;">Min/Max Voltage Limit(12,13)</a>
+                </li>
+              
+              
             
               
 
               
 
-              <li>
-                <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#max-torque-14" style="font-style:italic;">Max Torque(14)</a>
-              </li>
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#max-torque-14" style="font-style:italic;">Max Torque(14)</a>
+                </li>
+              
+              
             
               
 
               
 
-              <li>
-                <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#status-return-level-16" style="font-style:italic;">Status Return Level(16)</a>
-              </li>
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#status-return-level-16" style="font-style:italic;">Status Return Level(16)</a>
+                </li>
+              
+              
             
               
 
               
 
-              <li>
-                <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#alarm-led17-shutdown18" style="font-style:italic;">Alarm LED(17)</a>
-              </li>
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#alarm-led17-shutdown18" style="font-style:italic;">Alarm LED(17)</a>
+                </li>
+              
+              
             
               
 
               
 
-              <li>
-                <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#alarm-led17-shutdown18" style="font-style:italic;">Shutdown(18)</a>
-              </li>
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#alarm-led17-shutdown18" style="font-style:italic;">Shutdown(18)</a>
+                </li>
+              
+              
             
               
 
               
 
-              <li>
-                <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#torque-enable-24" style="font-style:italic;">Torque Enable(24)</a>
-              </li>
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#torque-enable-24" style="font-style:italic;">Torque Enable(24)</a>
+                </li>
+              
+              
             
               
 
               
 
-              <li>
-                <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#led-25" style="font-style:italic;">LED(25)</a>
-              </li>
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#led-25" style="font-style:italic;">LED(25)</a>
+                </li>
+              
+              
             
               
 
               
 
-              <li>
-                <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#compliance-margin-26-27" style="font-style:italic;">Compliance Margin(26,27)</a>
-              </li>
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#compliance-margin-26-27" style="font-style:italic;">Compliance Margin(26,27)</a>
+                </li>
+              
+              
             
               
 
               
 
-              <li>
-                <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#compliance-slope-28-29" style="font-style:italic;">Compliance Slope(28,29)</a>
-              </li>
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#compliance-slope-28-29" style="font-style:italic;">Compliance Slope(28,29)</a>
+                </li>
+              
+              
             
               
 
               
 
-              <li>
-                <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#goal-position-30" style="font-style:italic;">Goal Position(30)</a>
-              </li>
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#goal-position-30" style="font-style:italic;">Goal Position(30)</a>
+                </li>
+              
+              
             
               
 
               
 
-              <li>
-                <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#moving-speed-32" style="font-style:italic;">Moving Speed(32)</a>
-              </li>
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#moving-speed-32" style="font-style:italic;">Moving Speed(32)</a>
+                </li>
+              
+              
             
               
 
               
 
-              <li>
-                <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#torque-limit-34" style="font-style:italic;">Torque Limit(34)</a>
-              </li>
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#torque-limit-34" style="font-style:italic;">Torque Limit(34)</a>
+                </li>
+              
+              
             
               
 
               
 
-              <li>
-                <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#present-position-36" style="font-style:italic;">Present Position(36)</a>
-              </li>
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#present-position-36" style="font-style:italic;">Present Position(36)</a>
+                </li>
+              
+              
             
               
 
               
 
-              <li>
-                <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#present-speed-38" style="font-style:italic;">Present Speed(38)</a>
-              </li>
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#present-speed-38" style="font-style:italic;">Present Speed(38)</a>
+                </li>
+              
+              
             
               
 
               
 
-              <li>
-                <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#present-load-40" style="font-style:italic;">Present Load(40)</a>
-              </li>
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#present-load-40" style="font-style:italic;">Present Load(40)</a>
+                </li>
+              
+              
             
               
 
               
 
-              <li>
-                <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#present-voltage-42" style="font-style:italic;">Present Voltage(42)</a>
-              </li>
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#present-voltage-42" style="font-style:italic;">Present Voltage(42)</a>
+                </li>
+              
+              
             
               
 
               
 
-              <li>
-                <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#present-temperature-43" style="font-style:italic;">Present Temperature(43)</a>
-              </li>
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#present-temperature-43" style="font-style:italic;">Present Temperature(43)</a>
+                </li>
+              
+              
             
               
 
               
 
-              <li>
-                <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#registered-instruction-44" style="font-style:italic;">Registered Instruction(44)</a>
-              </li>
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#registered-instruction-44" style="font-style:italic;">Registered Instruction(44)</a>
+                </li>
+              
+              
             
               
 
               
 
-              <li>
-                <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#moving-46" style="font-style:italic;">Moving(46)</a>
-              </li>
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#moving-46" style="font-style:italic;">Moving(46)</a>
+                </li>
+              
+              
             
               
 
               
 
-              <li>
-                <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#lock-47" style="font-style:italic;">Lock(47)</a>
-              </li>
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#lock-47" style="font-style:italic;">Lock(47)</a>
+                </li>
+              
+              
             
               
 
               
 
-              <li>
-                <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#punch-48" style="font-style:italic;">Punch(48)</a>
-              </li>
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#punch-48" style="font-style:italic;">Punch(48)</a>
+                </li>
+              
+              
             
             </ul>
           
@@ -3574,23 +3724,23 @@ $(function() {
     
 
       
-      
-      
       <li class="has-children">
-        <input type="radio" name="toplevel" id="toplevel_4" >
-        <label for="toplevel_4">4. Maintenance [+]</label>
-
+        <input type="radio" name="toplevel" id="toplevel_4">
+        <label for="toplevel_4"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/en/dxl/ax/ax-18a/#maintenance');">4. Maintenance</button> [+]</label>
       
 
       
         <ul>
         
-          
+        
 
           
 
           
-          <li><a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#horn-and-bearing-replacement">1. Horn, Bearing</a></li>
+            
+              
+              <li><a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#horn-and-bearing-replacement">1. Horn, Bearing</a></li>
+            
           
 
           
@@ -3608,45 +3758,49 @@ $(function() {
     
 
       
-      
-      
       <li class="has-children">
-        <input type="radio" name="toplevel" id="toplevel_5" >
-        <label for="toplevel_5">5. Reference [+]</label>
-
+        <input type="radio" name="toplevel" id="toplevel_5">
+        <label for="toplevel_5"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/en/dxl/ax/ax-18a/#reference');">5. Reference</button> [+]</label>
       
 
       
         <ul>
         
-          
+        
 
           
 
           
-          <li><a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#connector-information">1. Connector Information</a></li>
+            
+              
+              <li><a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#connector-information">1. Connector Information</a></li>
+            
           
 
           
           
         
-          
 
           
 
           
-          <li><a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#drawings">2. Drawings</a></li>
+            
+              
+              <li><a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#drawings">2. Drawings</a></li>
+            
           
 
           
           
         
-          
 
           
 
           
-          <li><a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#communication-circuit">3. Communication Circuit</a></li>
+            
+              
+              <li><a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#communication-circuit">3. Communication Circuit</a></li>
+            
           
 
           

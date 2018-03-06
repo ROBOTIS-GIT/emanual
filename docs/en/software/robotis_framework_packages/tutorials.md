@@ -1,14 +1,14 @@
 ---
 layout: archive
 lang: en
-ref: software_tutorials
+ref: robotis_framework_packages_tutorials
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/software/tutorials/
+permalink: /docs/en/software/robotis_framework_packages/tutorials/
 sidebar:
-  title: ROBOTIS-FRAMEWORK
-  nav: "robotis-framework"
+  title: ROBOTIS Framework Packages
+  nav: "robotis_framework_packages"
 ---
 
 <div style="counter-reset: h1 1"></div>
@@ -19,11 +19,11 @@ sidebar:
 
 Instructions for applying ROBOTIS Framework to the new robot.
 
-**Description**: This is the tutorial for creating a new motion module inherited from the `MotionModule` class of [`robotis_frameowrk_common`] package.
+**Description**: This is the tutorial for creating a new motion module inherited from the `MotionModule` class of [robotis_frameowrk_common] package.
 
 
 ### Overview
-"Motion Module" calculates target position(or target velocity or target current) of each joint. If the Motion Module is created and added to the `RobotisController` of the [`robotis_controller`] pacakge, `RobotisController` periodically calls process() function from the Motion Module and saves calculated value to the `result_` of the Motion Module. Once the `RobotisController` completes calculation for all registered Motion Modules, it obtains `result_` from the Motion Module for each joint and transfers the value to each joint.  
+"Motion Module" calculates target position(or target velocity or target current) of each joint. If the Motion Module is created and added to the `RobotisController` of the [robotis_controller] pacakge, `RobotisController` periodically calls process() function from the Motion Module and saves calculated value to the `result_` of the Motion Module. Once the `RobotisController` completes calculation for all registered Motion Modules, it obtains `result_` from the Motion Module for each joint and transfers the value to each joint.  
 
 The following is the example of creating a simple Motion Module.  
 
@@ -325,7 +325,7 @@ If the package is created with the `catkin_create_pkg` command, `package.xml` an
 #### `package.xml`
 The following is the cleaned up code of the `package.xml` file:
 
-`link` [`motion_module_tutorial/package.xml`]  
+`link` [motion_module_tutorial/package.xml]  
 
 ```xml
 <?xml version="1.0"?>
@@ -348,12 +348,12 @@ The following is the cleaned up code of the `package.xml` file:
 </package>
 ```
 
-Please refer to the [`catkin/package.xml`] for more details about the `package.xml` file.
+Please refer to the [catkin/package.xml] for more details about the `package.xml` file.
 
 #### `CMakeLists.txt`
 The following is the cleaned up code of the `CMakeLists.txt` file:  
 
-`link` [`motion_module_tutorial/CMakeLists.txt`]
+`link` [motion_module_tutorial/CMakeLists.txt]
 
 ```
 cmake_minimum_required(VERSION 2.8.3)
@@ -381,7 +381,7 @@ add_library(motion_module_tutorial
 )
 ```
 
-Please refer to the [`catkin_make/CMakeLists.txt`] for more details about the `CMakeLists.txt` file.
+Please refer to the [catkin_make/CMakeLists.txt] for more details about the `CMakeLists.txt` file.
 
 #### Build
 Run `catkin_make` within the catkin workspace:
@@ -397,11 +397,11 @@ Please refer to the below link for creating a new Robot Manager and addi101012ng
 
 ## [Creating new sensor module](#creating-new-sensor-module)
 
-**Description**: This is the tutorial for creating a new sensor module inherited from the `SensorModule` class of [`robotis_frameowrk_common`] package.
+**Description**: This is the tutorial for creating a new sensor module inherited from the `SensorModule` class of [robotis_frameowrk_common] package.
 
 ### Overview
 "Sensor Module" processes obtained values from the sensor module.
-If the Sensor Module is created and added to the robotis_controller of the [`robotis_controller`] pacakge, [`robotis_controller`] periodically calls process() function from the Sensor Module and saves calculated value to the `sensor_result_` of the [`robotis_controller`]. Once the robotis_controller completes calculation for all registered Sensor Modules, it transfers the result to the Motion Module.
+If the Sensor Module is created and added to the robotis_controller of the [robotis_controller] pacakge, [robotis_controller] periodically calls process() function from the Sensor Module and saves calculated value to the `sensor_result_` of the [robotis_controller]. Once the robotis_controller completes calculation for all registered Sensor Modules, it transfers the result to the Motion Module.
 
 The following is the example of creating a simple Sensor Module.  
 
@@ -416,7 +416,7 @@ $ catkin_create_pkg sensor_module_tutorial std_msgs roscpp
 #### The Code
 Write below header and cpp files in the `sensor_module_tutorial` package.
 
-`link` [`sensor_module_tutorial/include/sensor_module_tutorial/sensor_module_tutorial.h`]
+`link` [sensor_module_tutorial/include/sensor_module_tutorial/sensor_module_tutorial.h]
 
 ```cpp
 #ifndef SENSOR_MODULE_TUTORIAL_SENSOR_MODULE_TUTORIAL_H_
@@ -464,7 +464,7 @@ public:
 ```
 
 
-`link` [`sensor_module_tutorial/src/sensor_module_tutorial/sensor_module_tutorial.cpp`]
+`link` [sensor_module_tutorial/src/sensor_module_tutorial/sensor_module_tutorial.cpp]
 
 ```cpp
 #include <stdio.h>
@@ -647,7 +647,7 @@ If the package is created with the catkin_create_pkg command, package.xml and CM
 
 #### `package.xml`
 The following is the cleaned up code of the `package.xml` file:  
-`link` [`sensor_module_tutorial/package.xml`]
+`link` [sensor_module_tutorial/package.xml]
 
 ```xml
 <?xml version="1.0"?>
@@ -670,11 +670,11 @@ The following is the cleaned up code of the `package.xml` file:
 </package>
 ```
 
-Please refer to the [`catkin/package.xml`] for more details about the `package.xml` file.
+Please refer to the [catkin/package.xml] for more details about the `package.xml` file.
 
 #### `CMakeLists.txt`
 The following is the cleaned up code of the `CMakeLists.txt` file:  
-`link` [`sensor_module_tutorial/CMakeLists.txt`]
+`link` [sensor_module_tutorial/CMakeLists.txt]
 
 ```
 cmake_minimum_required(VERSION 2.8.3)
@@ -702,7 +702,7 @@ add_library(sensor_module_tutorial
 )
 ```
 
-Please refer to the [`catkin_make/CMakeLists.txt`] for more details about the `CMakeLists.txt` file.
+Please refer to the [catkin_make/CMakeLists.txt] for more details about the `CMakeLists.txt` file.
 
 #### Build
 Run `catkin_make` within the catkin workspace:
@@ -752,7 +752,7 @@ $ catkin_create_pkg thormang3_manager std_msgs roscpp
 #### The Code
 Create below cpp file in the `thormang3_manager` package.
 
-`link` [`thormang3_manager/src/thormang3_manager.cpp`]
+`link` [thormang3_manager/src/thormang3_manager.cpp]
 
 ```cpp
 #include "robotis_controller/robotis_controller.h"
@@ -969,7 +969,7 @@ Below is the contents of automatically generated `package.xml` file with removed
 </package>
 
 ```
-For more details about the `package.xml` file, please refer to [`catkin/package.xml`].
+For more details about the `package.xml` file, please refer to [catkin/package.xml].
 
 #### `CMakeLists.txt`
 Below is the contents of automatically generated `CMakeLists.txt` file with removed comments and examples.
@@ -1017,7 +1017,7 @@ target_link_libraries(thormang3_manager
 )
 ```
 
-For more details about the `CMakeLists.txt` file, please refer to [`catkin_make/CMakeLists.txt`].
+For more details about the `CMakeLists.txt` file, please refer to [catkin_make/CMakeLists.txt].
 
 #### Build
 Now, run the catkin_make within the catkin_workspace
@@ -1253,24 +1253,17 @@ $ roslaunch thormang3_manager thormang3_manager.launch
 
 
 
-[`robotis_frameowrk_common`]: /docs/en/platform/software/robotis_framework_packages/#robotis-framework-common
-[`robotis_controller`]: /docs/en/platform/software/robotis_framework_packages/#robotis-controller
+[robotis_frameowrk_common]: /docs/en/platform/software/robotis_framework_packages/#robotis_framework_common
+[robotis_controller]: /docs/en/platform/software/robotis_framework_packages/#robotis_controller
 [motion_module_tutorial/include/motion_module_tutorial/motion_module_tutorial.h]: /docs/en/popup/motion_module_tutorial.h/
 [motion_module_tutorial/src/motion_module_tutorial/motion_module_tutorial.cpp]: /docs/en/popup/motion_module_tutorial.cpp/
-[`motion_module_tutorial/package.xml`]: /docs/en/popup/motion_module_tutorial_package.xml/
-[`motion_module_tutorial/CMakeLists.txt`]: /docs/en/popup/motion_module_tutorial_CMakeLists.txt/
-
-
-[`sensor_module_tutorial/include/sensor_module_tutorial/sensor_module_tutorial.h`]: /docs/en/popup/sensor_module_tutorial.h/   
-[`sensor_module_tutorial/src/sensor_module_tutorial/sensor_module_tutorial.cpp`]: /docs/en/popup/sensor_module_tutorial.cpp/
-[`sensor_module_tutorial/package.xml`]: /docs/en/popup/sensor_module_tutorial_package.xml/
-[`sensor_module_tutorial/CMakeLists.txt`]: /docs/en/popup/sensor_module_tutorial_CMakeLists.txt/
-
-
-[`thormang3_manager/src/thormang3_manager.cpp`]: /docs/en/popup/thormang3_manager.cpp/
-
-
-[`catkin_make/CMakeLists.txt`]: http://wiki.ros.org/catkin/CMakeLists.txt
-[`catkin/package.xml`]:http://wiki.ros.org/catkin/package.xml
-
+[motion_module_tutorial/package.xml]: /docs/en/popup/motion_module_tutorial_package.xml/
+[motion_module_tutorial/CMakeLists.txt]: /docs/en/popup/motion_module_tutorial_CMakeLists.txt/
+[sensor_module_tutorial/include/sensor_module_tutorial/sensor_module_tutorial.h]: /docs/en/popup/sensor_module_tutorial.h/   
+[sensor_module_tutorial/src/sensor_module_tutorial/sensor_module_tutorial.cpp]: /docs/en/popup/sensor_module_tutorial.cpp/
+[sensor_module_tutorial/package.xml]: /docs/en/popup/sensor_module_tutorial_package.xml/
+[sensor_module_tutorial/CMakeLists.txt]: /docs/en/popup/sensor_module_tutorial_CMakeLists.txt/
+[thormang3_manager/src/thormang3_manager.cpp]: /docs/en/popup/thormang3_manager.cpp/
+[catkin_make/CMakeLists.txt]: http://wiki.ros.org/catkin/CMakeLists.txt
+[catkin/package.xml]: http://wiki.ros.org/catkin/package.xml
 [Creating new robot manager]: /docs/en/platform/software/tutorials/#creating-new-robot-manager

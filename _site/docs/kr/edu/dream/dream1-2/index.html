@@ -223,10 +223,16 @@ $(function() {
           var copiedurl = decodeURI(item.href);
           var tempurl = $('<input>').val(copiedurl).appendTo('body').select();
           document.execCommand('copy');
-          console.log(copiedurl);
+          // console.log(copiedurl);
           // document.getElementById(id).href;
           // document.execCommand('copy');
         }
+    </script>
+    <script>
+      function movetopage(targeturl)
+      {
+        location.href=targeturl;
+      }
     </script>
   </head>
 
@@ -698,7 +704,7 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <a href="http://localhost:4000/docs/kr/platform/op/getting_started/">*OP</a>
+                    <a href="http://localhost:4000/docs/kr/platform/op/getting_started/">*로보티즈 OP</a>
                   </li>
                 
               
@@ -708,7 +714,7 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <a href="http://localhost:4000/docs/kr/platform/op2/getting_started/">OP2</a>
+                    <a href="http://localhost:4000/docs/kr/platform/op2/getting_started/">로보티즈 OP2</a>
                   </li>
                 
               
@@ -718,7 +724,17 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <a href="http://localhost:4000/docs/kr/platform/op3/introduction/">OP3</a>
+                    <a href="http://localhost:4000/docs/kr/platform/op3/introduction/">로보티즈 OP3</a>
+                  </li>
+                
+              
+            
+              
+              
+              
+                
+                  <li class="mobile_depth_2">
+                    <a href="http://localhost:4000/docs/kr/platform/rh_p12_rn/">RH-P12-RN</a>
                   </li>
                 
               
@@ -1121,7 +1137,7 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <a href="http://localhost:4000/docs/kr/edu/mini/">미니</a>
+                    <a href="http://localhost:4000/docs/kr/edu/mini/">로보티즈 미니</a>
                   </li>
                 
               
@@ -1252,8 +1268,8 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <input type="radio" name="sublevel" id="소프트웨어R+ 2.0">
-                    <label for="소프트웨어R+ 2.0">R+ 2.0</label>
+                    <input type="radio" name="sublevel" id="소프트웨어로보플러스 2.0">
+                    <label for="소프트웨어로보플러스 2.0">로보플러스 2.0</label>
                     <ul>
                     
                       
@@ -1301,8 +1317,8 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <input type="radio" name="sublevel" id="소프트웨어R+ 모바일">
-                    <label for="소프트웨어R+ 모바일">R+ 모바일</label>
+                    <input type="radio" name="sublevel" id="소프트웨어로보플러스 모바일">
+                    <label for="소프트웨어로보플러스 모바일">로보플러스 모바일</label>
                     <ul>
                     
                       
@@ -1380,6 +1396,12 @@ $(function() {
                   <li class="mobile_depth_2">
                     <a href="http://localhost:4000/docs/kr/software/opencm_ide/getting_started/">OpenCM IDE</a>
                   </li>
+                
+              
+            
+              
+              
+              
                 
               
             
@@ -2219,7 +2241,7 @@ $(function() {
               
                 
                   
-                    <a href="http://localhost:4000/docs/kr/platform/op/getting_started/"><font color=#ccc>*OP</font></a>
+                    <a href="http://localhost:4000/docs/kr/platform/op/getting_started/"><font color=#ccc>*로보티즈 OP</font></a>
               
 
               
@@ -2232,7 +2254,7 @@ $(function() {
               
                 
                   
-                    <a href="http://localhost:4000/docs/kr/platform/op2/getting_started/">OP2</a>
+                    <a href="http://localhost:4000/docs/kr/platform/op2/getting_started/">로보티즈 OP2</a>
               
 
               
@@ -2245,7 +2267,20 @@ $(function() {
               
                 
                   
-                    <a href="http://localhost:4000/docs/kr/platform/op3/introduction/">OP3</a>
+                    <a href="http://localhost:4000/docs/kr/platform/op3/introduction/">로보티즈 OP3</a>
+              
+
+              
+
+            </div>
+            
+              <div class="dropdown-content-wrapper">
+              
+
+              
+                
+                  
+                    <a href="http://localhost:4000/docs/kr/platform/rh_p12_rn/">RH-P12-RN</a>
               
 
               
@@ -2689,7 +2724,7 @@ $(function() {
               
                 
                   
-                    <a href="http://localhost:4000/docs/kr/edu/mini/">미니</a>
+                    <a href="http://localhost:4000/docs/kr/edu/mini/">로보티즈 미니</a>
               
 
               
@@ -2829,7 +2864,7 @@ $(function() {
 
               
                 
-                <a>R+ 2.0</a>
+                <a>로보플러스 2.0</a>
               
 
               
@@ -2880,7 +2915,7 @@ $(function() {
 
               
                 
-                <a>R+ 모바일</a>
+                <a>로보플러스 모바일</a>
               
 
               
@@ -2964,6 +2999,15 @@ $(function() {
                 
                   
                     <a href="http://localhost:4000/docs/kr/software/opencm_ide/getting_started/">OpenCM IDE</a>
+              
+
+              
+
+            </div>
+            
+              <div class="dropdown-content-wrapper">
+              
+
               
 
               
@@ -3430,34 +3474,36 @@ $(function() {
     
 
       
-      
-      
       <li class="has-children">
-        <input type="radio" name="toplevel" id="toplevel_3" >
-        <label for="toplevel_3">3. 작동하기 [+]</label>
-
+        <input type="radio" name="toplevel" id="toplevel_3">
+        <label for="toplevel_3"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/kr/edu/dream/dream1-2/#작동하기');">3. 작동하기</button> [+]</label>
       
 
       
         <ul>
         
-          
+        
 
           
 
           
-          <li><a href="http://localhost:4000/docs/kr/edu/dream/dream1-2/#작동방법">1. 작동방법</a></li>
+            
+              
+              <li><a href="http://localhost:4000/docs/kr/edu/dream/dream1-2/#작동방법">1. 작동방법</a></li>
+            
           
 
           
           
         
-          
 
           
 
           
-          <li><a href="http://localhost:4000/docs/kr/edu/dream/dream1-2/#프로그램-선택방법">2. 프로그램 선택방법</a></li>
+            
+              
+              <li><a href="http://localhost:4000/docs/kr/edu/dream/dream1-2/#프로그램-선택방법">2. 프로그램 선택방법</a></li>
+            
           
 
           
