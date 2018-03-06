@@ -58,11 +58,106 @@ $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 
 ## [Gazebo (3D)](#gazebo-3d)
 
+<iframe width="640" height="360" src="https://www.youtube.com/embed/xXM5r_SVkWM" frameborder="0" allowfullscreen></iframe>
+
 ### [Gazebo standalone](#gazebo-standalone)
 
-### [Connect ROS](#connect-ros)
+1. Install library for gazebo7 development
 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/xXM5r_SVkWM" frameborder="0" allowfullscreen></iframe>
+``` bash
+$ sudo apt-get install libgazebo7-dev
+```
+
+1. Add gazebo plugin path
+
+``` bash
+$ export GAZEBO_PLUGIN_PATH=$GAZEBO_PLUGIN_PATH:${turtlebot3_gazebo_plugin}/build
+$ export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:${turtlebot3_gazebo_plugin}/models
+```
+
+1. Make and Build
+
+``` bash
+$ cd ${turtlebot3_gazebo_plugin}/build
+$ cmake ..
+$ make
+```
+
+1. Excute
+
+**Tip :** TB3_MODEL = `burger`, `waffle`, `waffle_pi` 
+{: .notice--info}
+
+``` bash
+$ cd ${turtlebot3_gazebo_plugin}
+$ gazebo worlds/turtlebot3_${TB3_MODEL}.world
+```
+
+1. Teleoperation with keyboard
+
+```
+w - set linear velocity up 
+x - set linear velocity down
+d - set angular velocity up
+a - set angular velocity down
+s - set all velocity to zero
+```
+
+1. Topic subscribe command
+
+  - Show all topic
+
+``` bash
+$ gz topic -l
+```
+
+  - Subscribe scan data
+
+``` bash
+$ gz topic -e /gazebo/default/user/turtlebot3_${TB3_MODEL}/lidar/hls_lfcd_lds/scan
+```
+
+  - Subscribe image data
+
+  **Waffle**
+
+``` bash
+$ gz topic -e /gazebo/default/user/turtlebot3_waffle/image/intel_realsense_r200/image
+```
+
+  **Waffle Pi**
+``` bash
+$ gz topic -e /gazebo/default/user/turtlebot3_waffle_pi/image/raspberry_pi_cam/image
+```
+
+1. Excute listener
+
+``` bash
+$ cd ${turtlebot3_gazebo_plugin}/build
+$ ./lidar_listener ${TB3_MODEL}
+```
+
+``` bash
+$ cd ${turtlebot3_gazebo_plugin}/build
+$ ./image_listener ${TB3_MODEL}
+```
+
+- Reference 
+
+  [Gazebo API](http://osrf-distributions.s3.amazonaws.com/gazebo/api/dev/index.html)
+
+  [How to contribute model](http://gazebosim.org/tutorials?tut=model_contrib&cat=build_robot)
+  [How to make model](http://gazebosim.org/tutorials?tut=build_model&cat=build_robot)
+
+  [Tutorial for making Hello World plugin](http://gazebosim.org/tutorials?tut=plugins_hello_world&cat=write_plugin)
+  [Tutorial for making model plugin](http://gazebosim.org/tutorials?cat=guided_i&tut=guided_i5)
+  [Tutorial for making sensor plugin](http://gazebosim.org/tutorials?tut=contact_sensor)
+
+  [Tutorial for topic subscription](http://gazebosim.org/tutorials?tut=topics_subscribed)
+
+  [Example of Wide-Angle Camera](http://gazebosim.org/tutorials?tut=wide_angle_camera&branch=wideanglecamera)
+
+### [Connect ROS](#connect-ros)
 
 **Tip :** The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`-`Alt`-`T`.
 {: .notice--info}
@@ -72,8 +167,11 @@ $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 
 You should set Turtlebot3 model parameter. Select either burger or waffle for the model parameter in the below command.
 
+**Tip :** TB3_MODEL = `burger`, `waffle`, `waffle_pi` 
+{: .notice--info}
+
 ``` bash
-$ export TURTLEBOT3_MODEL=burger
+$ export TURTLEBOT3_MODEL=${TB3_MODEL}
 ```
 
 Below command will load TurtleBot3 on the default Gazebo environment `TurtleBot3 empty world`.
