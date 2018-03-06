@@ -1927,7 +1927,7 @@ rx-24f:
         titlekr: "통신 회로"
         url: /dxl/rx/rx-24f/#communication-circuit
         urlkr: /dxl/rx/rx-24f/#통신-회로
-        
+
 #RX-28 sidebar
 rx-28:
   - title: "Specifications"
@@ -8138,7 +8138,7 @@ smart2-1:
   urlkr: /edu/smart/smart2-1/#작동하기
 - titlekr: "교안예제"
   urlkr: /edu/smart/smart2-1/#교안예제
-  
+
 smart2-2:
 - titlekr: "개요"
   urlkr: /edu/smart/smart2-2/#개요
@@ -9184,7 +9184,9 @@ op3:
 
 rh_p12_rn:
   - title: "Introduction"
+    titlekr: "개요"
     url: /platform/rh_p12_rn/#introduction
+    urlkr: /platform/rh_p12_rn/#개요
   - title: "Specifications"
     titlekr: "주요 사양"
     url: /platform/rh_p12_rn/#specifications
@@ -9349,6 +9351,31 @@ rh_p12_rn:
       titlekr: "도면"
       url: /platform/rh_p12_rn/#drawings
       urlkr: /platform/rh_p12_rn/#도면
+  - title: "Examples"
+    titlekr: "예제"
+    url: /platform/rh_p12_rn/examples/#examples
+    urlkr: /platform/rh_p12_rn/examples/#예제
+    children:
+    - title: "Device Setup(RH-P12-RN)"
+      titlekr: "장치 설정(RH-P12-RN)"
+      url: /platform/rh_p12_rn/examples/#device-setuprh-p12-rn
+      urlkr: /platform/rh_p12_rn/examples/#장치-설정rh-p12-rn
+    - title: "Communication Port Setup"
+      titlekr: "통신포트 설정"
+      url: /platform/rh_p12_rn/examples/#communication-port-setup
+      urlkr: /platform/rh_p12_rn/examples/#통신포트-설정
+    - title: "Windows Example"
+      titlekr: "윈도우즈 예제"
+      url: /platform/rh_p12_rn/examples/#windows-example
+      urlkr: /platform/rh_p12_rn/examples/#윈도우즈-예제
+    - title: "Linux Example"
+      titlekr: "리눅스 예제"
+      url: /platform/rh_p12_rn/examples/#linux-example
+      urlkr: /platform/rh_p12_rn/examples/#리눅스-예제
+    - title: "ROS GUI Example"
+      titlekr: "ROS GUI 예제"
+      url: /platform/rh_p12_rn/examples/#ros-gui-example
+      urlkr: /platform/rh_p12_rn/examples/#ros-gui-예제
 
 robothand_rx28:
   - titlekr: "개요"
@@ -9370,7 +9397,7 @@ robothand_rx28:
     urlkr: /platform/robothand_rx28/#유용한-정보
   - titlekr: "다운로드"
     urlkr: /platform/robothand_rx28/#다운로드
-  
+
 robothand_mx28:
   - titlekr: "개요"
     urlkr: /platform/robothand_mx28/#개요
@@ -9733,40 +9760,13 @@ turtlebot3:
   - title: "OpenCR Setup"
     url: /platform/turtlebot3/opencr_setup/#opencr-setup
     children:
-    - title: "ArduinoIDE Settings for OpenCR1.0"
-      url: /platform/turtlebot3/opencr_setup/#arduinoide-settings-for-opencr10
+    - title: "OpenCR1.0 Firmware Upload for TB3"
+      url: /platform/turtlebot3/opencr_setup/#opencr10-firmware-upload-for-tb3
       children:
-      - title: "USB Port Settings"
-        url: /platform/turtlebot3/opencr_setup/#usb-port-settings
-      - title: "Compiler Settings"
-        url: /platform/turtlebot3/opencr_setup/#compiler-settings
-      - title: "Install Arduino IDE"
-        url: /platform/turtlebot3/opencr_setup/#install-arduino-ide
-      - title: "Run Arduino IDE"
-        url: /platform/turtlebot3/opencr_setup/#run-arduino-ide
-      - title: "Porting OpenCR1.0 to Arduino IDE"
-        url: /platform/turtlebot3/opencr_setup/#porting-opencr10-to-arduino-ide
-        children:
-        - title: "Preferences"
-          url: /platform/turtlebot3/opencr_setup/#preferences
-        - title: "Install OpenCR1.0 Package from Boards Manager"
-          url: /platform/turtlebot3/opencr_setup/#install-opencr10-package-from-boards-manager
-        - title: "Port Setting"
-          url: /platform/turtlebot3/opencr_setup/#port-setting
-      - title: "Writing Bootloader (can be skipped)"
-        url: /platform/turtlebot3/opencr_setup/#writing-bootloader-can-be-skipped
-        children:
-        - title: "Programmer Setting"
-          url: /platform/turtlebot3/opencr_setup/#programmer-setting
-        - title: "Entering the DFU Mode"
-          url: /platform/turtlebot3/opencr_setup/#entering-the-dfu-mode
-        - title: "Download the Bootloader"
-          url: /platform/turtlebot3/opencr_setup/#download-the-bootloader
-    - title: "OpenCR1.0 Firmware Settings for ROS"
-      url: /platform/turtlebot3/opencr_setup/#opencr10-firmware-settings-for-ros
-      children:
-      - title: "Add TurtleBot3 Firmware to OpenCR1.0"
-        url: /platform/turtlebot3/opencr_setup/#add-turtlebot3-firmware-to-opencr10
+      - title: "Shell Script"
+        url: /platform/turtlebot3/opencr_setup/#shell-script
+      - title: "Arduino IDE"
+        url: /platform/turtlebot3/opencr_setup/#arduino-ide
   - title: "Bringup"
     url: /platform/turtlebot3/bringup/#bringup
     children:
@@ -9810,9 +9810,9 @@ turtlebot3:
     - title: "Obstacle Detection"
       url: /platform/turtlebot3/example/#obstacle-detection
     - title: "Point Operation"
-      url: /platform/turtlebot3/example/#point-operation     
+      url: /platform/turtlebot3/example/#point-operation
     - title: "Patrol"
-      url: /platform/turtlebot3/example/#patrol   
+      url: /platform/turtlebot3/example/#patrol
   - title: "SLAM"
     url: /platform/turtlebot3/slam/#slam
     children:
@@ -9910,7 +9910,7 @@ turtlebot3:
     - title: "Video from Open Source Team"
       url: /platform/turtlebot3/video/#video-from-open-source-team
     - title: "Video from ROBOTIS Channel"
-      url: /platform/turtlebot3/video/#video-from-robotis-channel      
+      url: /platform/turtlebot3/video/#video-from-robotis-channel
   - title: "Appendix #OpenCR1.0"
     url: /platform/turtlebot3/appendix_opencr1_0/#appendix-opencr10
     children:
@@ -11815,7 +11815,7 @@ mtask20:
 mtask:
   - titlekr: "다운로드"
     urlkr: /software/rplus_mobile/mtask/#다운로드
-    
+
 rplusmdesign:
   - title: "Download"
     titlekr: "다운로드"
@@ -13976,7 +13976,7 @@ pir-10:
     titlekr: "핀 배열 정보"
     url: /parts/sensor/cs-10/#pinout
     urlkr: /parts/sensor/cs-10/#핀-배열-정보
-    
+
 tms-10:
   - titlekr: "개요"
     urlkr: /parts/sensor/tms-10/#개요
