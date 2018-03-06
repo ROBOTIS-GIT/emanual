@@ -153,7 +153,7 @@
 
 .tocLevel1 {
   border: none;
-  background-color: inherit;
+  background-color: transparent;
   font-size: inherit;
   font-weight: bold;
   overflow: hidden;
@@ -170,10 +170,10 @@
 
 .tocLevel2 {
   border: none;
-  background-color: inherit;
+  background-color: transparent;
   font-size: inherit;
   color: inherit;
-  
+
   :hover {
     background-color: inherit;
   }
