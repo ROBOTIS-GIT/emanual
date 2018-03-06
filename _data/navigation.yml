@@ -255,6 +255,10 @@ main:
         url: /edu/smart/smart3-1/
       - titlekr: "2단계 교육키트"
         url: /edu/smart/smart3-2/
+      - titlekr: "3단계 교육키트"
+        url: /edu/smart/smart3-3/
+      - titlekr: "4단계 교육키트"
+        url: /edu/smart/smart3-4/
     - titlekr: "IoT"
       children:
       - titlekr: "1단계 교육키트"
