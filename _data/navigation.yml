@@ -9809,6 +9809,11 @@ turtlebot3:
       url: /platform/turtlebot3/simulation/#stage-2d
     - title: "Gazebo (3D)"
       url: /platform/turtlebot3/simulation/#gazebo-3d
+      children:
+      - title: "Gazebo standalone"
+        url: /platform/turtlebot3/simulation/#gazebo-standalone
+      - title: "Connect ROS"
+        url: /platform/turtlebot3/simulation/#connect-ros
   - title: "Manipulation"
     url: /platform/turtlebot3/manipulation/#manipulation
     children:
