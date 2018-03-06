@@ -11,6 +11,8 @@ sidebar:
   nav: "rh_p12_rn"
 ---
 
+<div style="counter-reset: h1 5"></div>
+
 # [Examples](#examples)
 
 ## [Device Setup(RH-P12-RN)](#device-setuprh-p12-rn)
