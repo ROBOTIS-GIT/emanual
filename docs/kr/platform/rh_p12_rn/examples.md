@@ -34,6 +34,14 @@
 
 ## [윈도우 예제](#윈도우-예제)
 
+### 다운로드 방법
+GIT client 프로그램으로 https://github.com/ROBOTIS-GIT/RH-P12-RN_Example 다운로드 혹은
+https://github.com/ROBOTIS-GIT/RH-P12-RN_Example/archive/master.zip 파일 다운로드 후 압축 해제
+
+### 빌드 및 실행
+윈도우 예제는 Visual Studio 2017 로 작성되었음.  
+Visual Studio 를 설치하고, RH-P12-RN_Example\win64\RH-P12-RN-Example.sln 파일을 더블클릭하여 솔루션을 열고, 솔루션 빌드 후 실행.
+
 윈도우 예제를 실행하면 아래와 같이 연결된 장치의 포트 이름과 Baudrate 가 표시되며 실행 됨.  
 실행에 실패할 경우 실패 메시지를 확인하고, 장치 설정 혹은 통신 포트 설정을 변경해야 함.  
 ![img](/assets/images/platform/rh_p12_rn/windows_example_run.png)
@@ -73,6 +81,22 @@
 
 # [리눅스 예제](#리눅스-예제)
 
+## 다운로드 방법
+```
+$ git clone https://github.com/ROBOTIS-GIT/RH-P12-RN_Example
+```
+
+## 빌드 방법
+```
+$ cd RH-P12-RN_Example/linux64
+$ make
+```
+
+## 실행 방법
+```
+$ ./rh-p12-rn_example
+```
+
 리눅스 예제를 실행하면 아래와 같이 연결된 장치의 포트 이름과 Baudrate 가 표시되며 실행 됨.  
 실행에 실패할 경우 실패 메시지를 확인하고, 장치 설정 혹은 통신 포트 설정을 변경해야 함.  
 ![img](/assets/images/platform/rh_p12_rn/linux_example_run.png)
@@ -87,6 +111,28 @@
 
 
 # [ROS GUI 예제](#ROS-GUI-예제)
+
+## 다운로드 방법
+```
+$ cd ~/catkin_ws/src
+$ git clone https://github.com/ROBOTIS-GIT/RH-P12-RN
+```
+
+## 빌드 방법
+```
+$ cd ~/catkin_ws
+$ catkin_make
+```
+
+## 실행 방법
+터미널을 띄워 아래 명령으로 manager 실행
+```
+$ roslaunch rh_p12_rn_manager rh_p12_rn_manager.launch
+```
+새로운 터미널을 띄워 아래 명령으로 GUI 예제 실행
+```
+$ rosrun rh_p12_rn_gui rh_p12_rn_gui
+```
 
 장치가 전류기반 위치 제어 모드로 실행 중일 경우 ROS GUI 예제 화면은 아래와 같음.  
 ![img](/assets/images/platform/rh_p12_rn/ros_example_position_mode.png)
