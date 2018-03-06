@@ -58,6 +58,10 @@ $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 
 ## [Gazebo (3D)](#gazebo-3d)
 
+### [Gazebo standalone](#gazebo-standalone)
+
+### [Connect ROS](#connect-ros)
+
 <iframe width="640" height="360" src="https://www.youtube.com/embed/xXM5r_SVkWM" frameborder="0" allowfullscreen></iframe>
 
 **Tip :** The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`-`Alt`-`T`.
@@ -75,7 +79,7 @@ $ export TURTLEBOT3_MODEL=burger
 Below command will load TurtleBot3 on the default Gazebo environment `TurtleBot3 empty world`.
 
 ``` bash
-$ roslaunch turtlebot3_gazebo turtlebot3_empty_world.launch
+$ roslaunch turtlebot3_gazebo_ros turtlebot3_empty_world.launch
 ```
 
 ![](/assets/images/platform/turtlebot3/simulation/turtlebot3_empty_world.png)
@@ -85,7 +89,7 @@ If you wish to load more interesting map, please use below command instead of ab
   
 ``` bash
 $ export TURTLEBOT3_MODEL=burger
-$ roslaunch turtlebot3_gazebo turtlebot3_world.launch
+$ roslaunch turtlebot3_gazebo_ros turtlebot3_world.launch
 ```
 
 ![](/assets/images/platform/turtlebot3/simulation/turtlebot3_world_bugger.png)
@@ -102,14 +106,14 @@ In order to run TurtleBot3 simulation that autonomously navigates around the map
 
 ``` bash
 $ export TURTLEBOT3_MODEL=burger
-$ roslaunch turtlebot3_gazebo turtlebot3_simulation.launch
+$ roslaunch turtlebot3_gazebo_ros turtlebot3_simulation.launch
 ```
 
 RViz visualizes published topics while simulation is running. You can launch RViz in a new terminal window by entering below command.
 
 ``` bash
 $ export TURTLEBOT3_MODEL=burger
-$ roslaunch turtlebot3_gazebo turtlebot3_gazebo_rviz.launch
+$ roslaunch turtlebot3_gazebo_ros turtlebot3_gazebo_rviz.launch
 ```
 
 ![](/assets/images/platform/turtlebot3/simulation/turtlebot3_gazebo_rviz.png)
