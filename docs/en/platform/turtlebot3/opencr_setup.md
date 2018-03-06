@@ -23,6 +23,9 @@ sidebar:
 
 ## [OpenCR1.0 Firmware Upload for TB3](#opencr10-firmware-upload-for-tb3)
 
+**Note :** You can choose one of methods for uploading firmware. But we highly recommend to use **shell script**.
+{: .notice--info}
+
 ### [Shell Script](shell-script)
   
 **Note :** This instruction was tested on `Ubuntu 16.04`, `Ubuntu Mate`, `Linux Mint` or `Raspbian` and OpenCR1.0 software setup can be done from `Intel® Joule™`, `Raspberry Pi 3`.
