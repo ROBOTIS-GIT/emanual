@@ -61,7 +61,7 @@ OpenManipulator is composed by [Dynamixel X series](http://en.robotis.com/index/
 
 [Parts of OpenManipulator](https://docs.google.com/a/robotis.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit?usp=sharing)
 
-[DYI Manual](https://drive.google.com/open?id=10yICYuNPtQtcNRvFmuLjtDIPLLMivdcM)
+[DIY Manual](https://drive.google.com/open?id=1c5U0v2dQhYiulqiWI0VQMameG82WCc-4rl6J6zlQejA)
 
 [CAD Files](https://goo.gl/NsqJMu)
 
