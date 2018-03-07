@@ -81,6 +81,7 @@
 <link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="ROBOTIS e-Manual Feed">
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- <script src="/assets/js/plugins/jquery.fitvids.js"></script> -->
 
 <!-- http://t.co/dKP3o1e -->
 <meta name="HandheldFriendly" content="True">
@@ -3562,6 +3563,21 @@ $(function() {
 
 <!-- end custom footer snippets -->
         
+<script>
+$reference = $(".archive");
+$(window).resize(function() {
+  var newWidth = $reference.width() * 0.90;
+
+  // Resize all videos according to aspect ratio
+  $("iframe").each(
+    function(index, elem) {
+      elem.setAttribute("width", (newWidth).toFixed());
+      elem.setAttribute("height", (newWidth*0.56).toFixed());
+    }
+  );
+// Kick off one resize to fix all videos on page load
+}).resize();
+</script>
 
 <div class="page__footer-copyright">&copy; 2018 ROBOTIS. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 

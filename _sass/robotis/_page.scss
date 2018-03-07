@@ -134,7 +134,7 @@ html {
   }
   
   @mixin mobile_indentation {
-    padding-left: 0.5em;
+    padding-left: 1em;
     word-wrap: break-word;
     
     li > ul, ol, p, div {
@@ -208,7 +208,7 @@ html {
         margin: 0.5em 0.5em 0 2em;
       }
       ul, ol {
-        margin: 0.5em 0.5em 0 1em;
+        margin: 0.5em 0.5em 0 1.5em;
         @include mobile_indentation;
         blockquote {
           margin: 0.5em 0;
