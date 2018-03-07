@@ -160,8 +160,6 @@ When the CM-5 controller is connected to RoboPlus Manager, the following screen 
 
 The controller and its peripheral devices are listed in the left window.  In the right window is the "controller management" window.  
 If the controller's firmware version is older than that of RoboPlus Manager, it can be updated. (Please refer to the [Firmware Update](#firmware-update) section)
- 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/YurHoS-sSvk" frameborder="0" allowfullscreen></iframe>
 
 #### General/Detail Search
 
@@ -195,8 +193,6 @@ When the CM-510 controller is connected to RoboPlus Manager, the following scree
  
 The controller and its peripheral devices are listed in the left window.  In the right window is the "controller management" window.  
 If the controller's firmware version is older than that of RoboPlus Manager, it can be updated. (Please refer to the [Firmware Update](#firmware-update) section)
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ZAstC0VRqYA" frameborder="0" allowfullscreen></iframe>
 
 #### General/Detail Search
 
@@ -250,8 +246,6 @@ When the CM-530 controller is connected to RoboPlus Manager, the following scree
  
 The controller and its peripheral devices are listed in the left window.  In the right window is the "controller management" window.  
 If the controller's firmware version is older than that of RoboPlus Manager, it can be updated. (Please refer to the [Firmware Update](#firmware-update) section)
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/w2k7dIKIqB8" frameborder="0" allowfullscreen></iframe>
 
 #### General/Detail Search
 
@@ -309,8 +303,6 @@ When the CM-700 controller is connected to RoboPlus Manager, the following scree
  
 The controller and its peripheral devices are listed in the left window.  In the right window is the "controller management" window.  (Please refer to the "Test" page).  
 If the controller's firmware version is older than that of RoboPlus Manager, it can be updated.  (Please refer to the [Firmware Update](#firmware-update) section)
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_ZFpFSpPhbU" frameborder="0" allowfullscreen></iframe>
 
 #### General/Detail Search
 
@@ -518,15 +510,15 @@ This parameter is used to set the actuator's compliance slope.
 - Even if you set the higher value, it will resist with more and more power if it is strayed too much from target position.
 - Compliance Slope will be changed into 7 Data representative values according to the input Data. In other words, if you input 25, in real operation, 16 -the representative value of 25-, will be used.  
 
-|Level|Real Data Value|Representative Data Value|
-|:---:|:---:|:---:|
-|1|0 (0x00) ~ 3(0x03)|2 (0x02)|
-|2|4(0x04) ~ 7(0x07)|4 (0x04)|
-|3|8(0x08)~15(0x0F)|8 (0x08)|
-|4|16(0x10)~31(0x1F)|16 (0x10)|
-|5|32(0x20)~63(0x3F)|32 (0x20)|
-|6|64(0x40)~127(0x7F)|64 (0x40)|
-|7|128(0x80)~254(0xFE)|128 (0x80)|
+| Level |   Real Data Value   | Representative Data Value |
+|:-----:|:-------------------:|:-------------------------:|
+|   1   | 0 (0x00) ~ 3(0x03)  |         2 (0x02)          |
+|   2   |  4(0x04) ~ 7(0x07)  |         4 (0x04)          |
+|   3   |  8(0x08)~15(0x0F)   |         8 (0x08)          |
+|   4   |  16(0x10)~31(0x1F)  |         16 (0x10)         |
+|   5   |  32(0x20)~63(0x3F)  |         32 (0x20)         |
+|   6   | 64(0x40)~127(0x7F)  |         64 (0x40)         |
+|   7   | 128(0x80)~254(0xFE) |        128 (0x80)         |
 
 - Appropriate Compliance Slope, Power control, and the Compliance Margin values will make it possible to create smoother movement.
  
@@ -868,15 +860,15 @@ For `IR Sensor Array` Paramenters to determine IR array obstacle values
 - In the IR array if each IR sensor detected black value is lower than the set black valuethe values will be assigned as shown below; the LED turns on.
 - Output values are in decimal number.
 
-|Binary value|Decimal value|Black detection|
-|:---:|:---:|:---:|
-|0000001|1|Black detection for IR sensor #1|
-|0000010|2|Black detection for IR sensor #2|
-|0000100|4|Black detection for IR sensor #3|
-|0001000|8|Black detection for IR sensor #4|
-|0010000|16|Black detection for IR sensor #5|
-|0100000|32|Black detection for IR sensor #6|
-|1000000|64|Black detection for IR sensor #7|
+| Binary value | Decimal value |         Black detection          |
+|:------------:|:-------------:|:--------------------------------:|
+|   0000001    |       1       | Black detection for IR sensor #1 |
+|   0000010    |       2       | Black detection for IR sensor #2 |
+|   0000100    |       4       | Black detection for IR sensor #3 |
+|   0001000    |       8       | Black detection for IR sensor #4 |
+|   0010000    |      16       | Black detection for IR sensor #5 |
+|   0100000    |      32       | Black detection for IR sensor #6 |
+|   1000000    |      64       | Black detection for IR sensor #7 |
  
 #### Corresponding RoboPlus Task Command
 
@@ -945,14 +937,6 @@ Follow these steps to manage the Zig-100 module through RoboPlus Manager using Z
 [managing information of each controller]: /docs/en/software/rplus1/manager/#controllers
 [controller information]: /docs/en/parts/controller/controller_compatibility/
 [ID Setup]: /docs/en/software/rplus1/manager/#id-setup
-
-
-
-
-
-
-
-
 [Dynamixel Management]: /docs/en/edu/bioloid/beginner/#dynamixel-management
 [Changing the Movement Mode]: /docs/en/edu/bioloid/beginner/#dynamixel-management
 [Temperature]: /docs/en/software/rplus1/task/programming_02/#temperature

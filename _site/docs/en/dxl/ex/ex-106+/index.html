@@ -5001,6 +5001,7 @@ In case of DIRECTION485 Level = Low: The signal of D+ and D- is output to RxD</p
 $reference = $(".archive");
 $(window).resize(function() {
   var newWidth = $reference.width() * 0.90;
+  if (newWidth > 640) { newWidth = 640; }
 
   // Resize all videos according to aspect ratio
   $("iframe").each(
