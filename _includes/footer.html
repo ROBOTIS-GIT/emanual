@@ -20,5 +20,20 @@
   </ul>
 </div>
 {% endcomment %}
+<script>
+$reference = $(".archive");
+$(window).resize(function() {
+  var newWidth = $reference.width() * 0.90;
+
+  // Resize all videos according to aspect ratio
+  $("iframe").each(
+    function(index, elem) {
+      elem.setAttribute("width", (newWidth).toFixed());
+      elem.setAttribute("height", (newWidth*0.56).toFixed());
+    }
+  );
+// Kick off one resize to fix all videos on page load
+}).resize();
+</script>
 
 <div class="page__footer-copyright">&copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}. {{ site.data.ui-text[site.locale].powered_by | default: "Powered by" }} <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
