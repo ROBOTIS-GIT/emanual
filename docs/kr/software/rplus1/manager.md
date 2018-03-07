@@ -261,8 +261,6 @@ RoboPlus Manager는 인터넷을 통해 새 버전의 펌웨어를 자동으로 
 왼쪽 창에서는 제어기와 제어기에 연결된 주변장치 목록을 확인할 수 있으며, 오른쪽 창에서는 제어기 관리창을 확인할 수 있습니다.  
 제어기의 펌웨어가 로보플러스 매니저가 가지고있는 펌웨어 버전보다 낮다면, 제어기의 펌웨어를 업데이트 할 수 있습니다. ([제어기 펌웨어 업데이트] 참조)
 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/YurHoS-sSvk" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-
 #### 일반/상세 검색
 
 {% include kr/software/rplus1/general_detail_search.md %}
@@ -295,8 +293,6 @@ RoboPlus Manager는 인터넷을 통해 새 버전의 펌웨어를 자동으로 
 
 왼쪽 창에서는 제어기와 제어기에 연결된 주변장치 목록을 확인할 수 있으며, 오른쪽 창에서는 제어기 관리창을 확인할 수 있습니다.  
 제어기의 펌웨어가 로보플러스 매니저가 가지고있는 펌웨어 버전보다 낮다면, 제어기의 펌웨어를 업데이트 할 수 있습니다. [(제어기 펌웨어 업데이트] 참조)
-
-<iframe width="640" height="360" src="https://www.youtube.com/embed/ZAstC0VRqYA" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
 #### 일반/상세 검색
 
@@ -350,8 +346,6 @@ RoboPlus Manager는 인터넷을 통해 새 버전의 펌웨어를 자동으로 
 
 왼쪽 창에서는 제어기와 제어기에 연결된 주변장치 목록을 확인할 수 있으며, 오른쪽 창에서는 제어기 관리창을 확인할 수 있습니다.  
 제어기의 펌웨어가 로보플러스 매니저가 가지고있는 펌웨어 버전보다 낮다면, 제어기의 펌웨어를 업데이트 할 수 있습니다. [제어기 펌웨어 업데이트] 참조)
-
-<iframe width="640" height="360" src="https://www.youtube.com/embed/w2k7dIKIqB8" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
 #### 일반/상세 검색
 
@@ -1068,7 +1062,7 @@ AX-S1에는 버저가 장착되어 있습니다. 버저 울림 시간을 설정�
 [제어기별 관리방법]: #제어기
 [펌웨어복구]: #펌웨어-복구
 [OpenCM9.04 펌웨어복구]: /docs/kr/software/opencm_ide/getting_started/#복구-모드
-[CM150, CM200 해결방법]: /docs/kr/parts/controller/cm-150/#???
-[OpenCM9.04 해결방법]: /docs/kr/parts/controller/opencm904/#???
+[CM150, CM200 해결방법]: /docs/kr/faq/usb_driver_install/
+[OpenCM9.04 해결방법]: /docs/kr/software/opencm_ide/getting_started/#소프트웨어-설치
 [제어기 펌웨어 업데이트]: #펌웨어-업데이트
 [Zig2Serial - Zig100 연결하기]: /docs/kr/parts/communication/zig2serial/#사용-방법

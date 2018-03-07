@@ -754,6 +754,12 @@
 <loc>http://localhost:4000/docs/en/platform/manipulator_h/examples/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/docs/en/platform/rh_p12_rn/examples/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/docs/kr/platform/rh_p12_rn/examples/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/docs/en/edu/ollo/explorer/</loc>
 </url>
 <url>
@@ -1958,6 +1964,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/docs/kr/parts/interface/usb2dynamixel/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/docs/kr/faq/usb_driver_install/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/docs/en/platform/turtlebot3/video/</loc>

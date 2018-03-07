@@ -2,7 +2,11 @@
 
 {% case site.analytics.provider %}
 {% when "google" %}
-  {% include /analytics-providers/google.html %}
+  {% if page.lang=='kr' %}
+    {% include /analytics-providers/google_kr.html %}
+  {% else %}
+    {% include /analytics-providers/google.html %}
+  {% endif %}
 {% when "google-universal" %}
   {% include /analytics-providers/google-universal.html %}
 {% when "custom" %}
