@@ -54,17 +54,17 @@ Install Visual Studio and open the solution with `RH-P12-RN_Example\win64\RH-P12
 Upon successful execution of the Windows example, the communication port and the baudrate of connected device are listed as shown in the below image.  
 If execution fails, confirm the error message to configure the device or communication port properly.
 
-![img](/assets/images/platform/rh_p12_rn/windows_example_run.png)
+![img](/assets/images/platform/rh_p12_rn/windows_example_execute.png)
 
 If RH-P12-RN is configured as **Current-based Position Control Mode**, below image will be displayed.  
 
 ![img](/assets/images/platform/rh_p12_rn/windows_example_position_mode.png)
 
-If RH-P12-RN is configured as **Torque Control Mode**, below image will be displayed.  
+If RH-P12-RN is configured as **Current Control Mode**, below image will be displayed.  
 
-![img](/assets/images/platform/rh_p12_rn/windows_example_torque_mode.png)
+![img](/assets/images/platform/rh_p12_rn/windows_example_current_mode.png)
 
-* The Up/Down `Direction` keys can be used to move the cursor in the menu.  
+* The Up/Down `Cursor` keys can be used to move the cursor in the menu.  
 * `Space` key will check/uncheck options in the MODE / TORQUE / CONTROL menu.  
 * Shortcut keys in the parenthesis can check/uncheck options.
 * In order to change PARAMETERS value, `[` and `]` keys increase/decrease by 1 whereas `{` and `}` keys increase/decrease by 10.  
@@ -72,7 +72,7 @@ If RH-P12-RN is configured as **Torque Control Mode**, below image will be displ
 Each option is described as belows.
 
 `++ MODE ++`
-* (C) torque control mode : Torque Control Mode is used when checked
+* (C) current control mode : Current Control Mode is used when checked
 * (P) current based position control mode : Current-based Position Control Mode is used when checked
 
 `++ TORQUE ++`
@@ -85,10 +85,10 @@ Each option is described as belows.
 * (G) go to goal position : goal position in the PARAMETERS will be applied immediately when checked.
 
 `++ PARAMETERS ++`
-* goal torque : Current value will be written in the goal torque address of the RH-P12-RN.
-* goal velocity : Current value will be written in the goal velocity address of the RH-P12-RN.
-* goal acceleration : Current value will be written in the goal acceleration address of the RH-P12-RN.
-* goal position : Current value will be written in the goal position address of the RH-P12-RN when **(G) go to goal position** is checked.
+* goal current : Setting value will be written in the goal current address of the RH-P12-RN.
+* goal velocity : Setting value will be written in the goal velocity address of the RH-P12-RN.
+* goal acceleration : Setting value will be written in the goal acceleration address of the RH-P12-RN.
+* goal position : Setting value will be written in the goal position address of the RH-P12-RN when **(G) go to goal position** is checked.
 
 
 ## [Linux Example](#linux-example)
@@ -112,15 +112,15 @@ $ ./rh-p12-rn_example
 Upon successful execution of the Linux example, the communication port and the baudrate of connected device are listed as shown in the below image.  
 If execution fails, confirm the error message to configure the device or communication port properly.  
 
-![img](/assets/images/platform/rh_p12_rn/linux_example_run.png)
+![img](/assets/images/platform/rh_p12_rn/linux_example_execute.png)
 
 If RH-P12-RN is configured as **Current-based Position Control Mode**, below image will be displayed.  
 
 ![img](/assets/images/platform/rh_p12_rn/linux_example_position_mode.png)
 
-If RH-P12-RN is configured as **Torque Control Mode**, below image will be displayed.  
+If RH-P12-RN is configured as **Current Control Mode**, below image will be displayed.  
 
-![img](/assets/images/platform/rh_p12_rn/linux_example_torque_mode.png)
+![img](/assets/images/platform/rh_p12_rn/linux_example_current_mode.png)
 
 Each option is identical to the [Windows Example]
 
@@ -154,9 +154,9 @@ If RH-P12-RN is configured as **Current-based Position Control Mode**, below GUI
 
 ![img](/assets/images/platform/rh_p12_rn/ros_example_position_mode.png)
 
-If RH-P12-RN is configured as **Torque Control Mode**, below GUI window will be displayed.  
+If RH-P12-RN is configured as **Current Control Mode**, below GUI window will be displayed.  
 
-![img](/assets/images/platform/rh_p12_rn/ros_example_torque_mode.png)
+![img](/assets/images/platform/rh_p12_rn/ros_example_current_mode.png)
 
 Each option is identical to the [Windows Example]
 
