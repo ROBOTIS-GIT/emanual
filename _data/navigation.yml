@@ -9264,9 +9264,9 @@ rh_p12_rn:
         - title: "Acceleration Limit(26)"
           titlekr: "Acceleration Limit(26)"
           url: /platform/rh_p12_rn/#acceleration-limit26
-        - title: "Torque Limit(30)"
-          titlekr: "Torque Limit(30)"
-          url: /platform/rh_p12_rn/#torque-limit30
+        - title: "Current Limit(30)"
+          titlekr: "Current Limit(30)"
+          url: /platform/rh_p12_rn/#current-limit30
         - title: "Velocity Limit(32)"
           titlekr: "Velocity Limit(32)"
           url: /platform/rh_p12_rn/#velocity-limit32
@@ -9300,9 +9300,9 @@ rh_p12_rn:
         - title: "Goal Velocity(600)"
           titlekr: "Goal Velocity(600)"
           url: /platform/rh_p12_rn/#goal-velocity600
-        - title: "Goal Torque(604)"
-          titlekr: "Goal Torque(604)"
-          url: /platform/rh_p12_rn/#goal-torque604
+        - title: "Goal Current(604)"
+          titlekr: "Goal Current(604)"
+          url: /platform/rh_p12_rn/#goal-current604
         - title: "Goal Acceleration(606)"
           titlekr: "Goal Acceleration(606)"
           url: /platform/rh_p12_rn/#goal-acceleration606
