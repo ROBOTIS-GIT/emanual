@@ -62,7 +62,7 @@ $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 
 ### [Gazebo standalone](#gazebo-standalone)
 
-1. Install library for gazebo7 development
+1. Install library for Gazebo7
 
 ``` bash
 $ sudo apt-get install libgazebo7-dev
@@ -78,12 +78,16 @@ $ export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:${turtlebot3_gazebo_plugin}/models
 1. Make and Build
 
 ``` bash
-$ cd ${turtlebot3_gazebo_plugin}/build
+$ cd ${turtlebot3_gazebo_plugin}
+$ mkdir build
+$ cd build
 $ cmake ..
 $ make
 ```
 
-1. Excute
+1. Excute plugin
+
+You should set Turtlebot3 model parameter. Select either burger or waffle for the model parameter in the below command.
 
 **Tip :** TB3_MODEL = `burger`, `waffle`, `waffle_pi` 
 {: .notice--info}
@@ -93,7 +97,7 @@ $ cd ${turtlebot3_gazebo_plugin}
 $ gazebo worlds/turtlebot3_${TB3_MODEL}.world
 ```
 
-1. Teleoperation with keyboard
+1. Teleoperation by keyboard
 
 ```
 w - set linear velocity up 
@@ -155,8 +159,6 @@ $ ./image_listener ${TB3_MODEL}
 
   [Tutorial for topic subscription](http://gazebosim.org/tutorials?tut=topics_subscribed)
 
-  [Example of Wide-Angle Camera](http://gazebosim.org/tutorials?tut=wide_angle_camera&branch=wideanglecamera)
-
 ### [Connect ROS](#connect-ros)
 
 **Tip :** The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`-`Alt`-`T`.
@@ -164,6 +166,11 @@ $ ./image_listener ${TB3_MODEL}
 
 **Warning :** If you are running Gazebo for the first time on your `Remote PC`, it takes a bit longer than usual.
 {: .notice--warning}
+
+
+#### [Simulate in Various World](#simulate-in-various-world)
+
+1. Empty World
 
 You should set Turtlebot3 model parameter. Select either burger or waffle for the model parameter in the below command.
 
@@ -182,11 +189,12 @@ $ roslaunch turtlebot3_gazebo_ros turtlebot3_empty_world.launch
 
 ![](/assets/images/platform/turtlebot3/simulation/turtlebot3_empty_world.png)
 
-If you wish to load more interesting map, please use below command instead of above command.  
+1. Turtlebot3 World
+
 `TurtleBot3 world` is a map consists of simple objects that makes up the shape of TurtleBot3 symbol.  
   
 ``` bash
-$ export TURTLEBOT3_MODEL=burger
+$ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ roslaunch turtlebot3_gazebo_ros turtlebot3_world.launch
 ```
 
@@ -194,24 +202,74 @@ $ roslaunch turtlebot3_gazebo_ros turtlebot3_world.launch
 
 ![](/assets/images/platform/turtlebot3/simulation/turtlebot3_world_waffle.png)
 
-In order to control TurtleBot3 with a keyboard, please launch teleoperation feature with below command in a new terminal window.
+1. TurtleBot3 House
+
+`TurtleBot3 House` is a map made with house drawings.
+
+``` bash
+$ export TURTLEBOT3_MODEL=${TB3_MODEL}
+$ roslaunch turtlebot3_gazebo_ros turtlebot3_house.launch
+```
+
+#### [Control TurtleBot3](#control-turtlebot3)
+
+1. Teleoperation by a keyboard
+
+In order to control a TurtleBot3 with a keyboard, please launch teleoperation feature with below command in a new terminal window.
 
 ``` bash
 $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 ```
+2. Collision avoidance
 
-In order to run TurtleBot3 simulation that autonomously navigates around the map, open a new terminal window and enter below command.
+In order to autonomously drive a TurtleBot3 around the **TurtleBot3 World**, open a new terminal window and enter below command.
 
 ``` bash
-$ export TURTLEBOT3_MODEL=burger
-$ roslaunch turtlebot3_gazebo_ros turtlebot3_simulation.launch
+$ export TURTLEBOT3_MODEL=${TB3_MODEL}
+$ roslaunch turtlebot3_gazebo_ros turtlebot3_world.launch
 ```
+
+``` bash
+$ export TURTLEBOT3_MODEL=${TB3_MODEL}
+$ roslaunch turtlebot3_gazebo_ros turtlebot3_drive.launch
+```
+
+#### [Open Rviz](#open-rviz)
 
 RViz visualizes published topics while simulation is running. You can launch RViz in a new terminal window by entering below command.
 
 ``` bash
-$ export TURTLEBOT3_MODEL=burger
+$ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ roslaunch turtlebot3_gazebo_ros turtlebot3_gazebo_rviz.launch
 ```
 
 ![](/assets/images/platform/turtlebot3/simulation/turtlebot3_gazebo_rviz.png)
+
+#### [SLAM by Multiple TurtleBot3s](#slam-by-multiple-turtlebot3s)
+
+1. Call three TurtleBot3s in TurtleBot3 House
+
+``` bash
+$ roslaunch turtlebot3_gazebo_ros multi_turtlebot3.launch
+```
+
+1. Excute SLAM
+
+``` bash
+$ roslaunch turtlebot3_gazebo_ros multi_turtlebot3_slam.launch ns:=tb3_0
+$ roslaunch turtlebot3_gazebo_ros multi_turtlebot3_slam.launch ns:=tb3_1
+$ roslaunch turtlebot3_gazebo_ros multi_turtlebot3_slam.launch ns:=tb3_2
+```
+
+1. Merge Map data from each TurtleBot3's map data
+
+``` bash
+$ sudo apt-get install ros-kinetic-multirobot-map-merge
+$ roslaunch turtlebot3_gazebo_ros multi_map_merge.launch 
+```
+
+1. Open Rviz
+
+``` bash
+$ rosrun rviz rviz -d `rospack find turtlebot3_gazebo_ros`/rviz/multi_turtlebot3_slam.rviz
+```
