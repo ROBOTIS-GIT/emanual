@@ -137,7 +137,7 @@ When you run MAVLink Generator, a GUI screen will appear, select the XML file al
 
 The final generated communication code can be seen in the link below.
 
-[https://github.com/ROBOTIS-GIT/OpenCR/tree/master/arduino/opencr_bootloader/common/msg/mavlink](https://github.com/ROBOTIS-GIT/OpenCR/tree/master/arduino/opencr_bootloader/common/msg/mavlink)
+[https://github.com/ROBOTIS-GIT/OpenCR/tree/master/arduino/opencr_develop/opencr_bootloader/common/msg/mavlink](https://github.com/ROBOTIS-GIT/OpenCR/tree/master/arduino/opencr_develop/opencr_bootloader/common/msg/mavlink)
 
 The commands for the boot loader to download and execute the firmware through the MavLink protocol are as follows.
 
