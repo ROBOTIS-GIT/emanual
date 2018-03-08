@@ -13471,6 +13471,15 @@ opencr10:
         url: /parts/controller/opencr10/#flame-sensor
       - title: "Joystic Sensor"
         url: /parts/controller/opencr10/#joystic-sensor
+    - title: "Dynamixel Workbench"
+      url: /parts/controller/opencr10/#dynamixel-workbench
+      children:
+      - title: "Find Dynamixel"
+        url: /parts/controller/opencr10/#find-dynamixel
+      - title: "Position"
+        url: /parts/controller/opencr10/#position
+      - title: "Speed"
+        url: /parts/controller/opencr10/#speed
     - title: "OpenManipulator"
       url: /parts/controller/opencr10/#openmanipulator
       children:
