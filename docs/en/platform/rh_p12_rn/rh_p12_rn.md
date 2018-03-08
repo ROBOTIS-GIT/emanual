@@ -166,7 +166,7 @@ Attempting to write an exceeding value will result transmitting Data Limit Error
 |:---------------------------:|:-----------------:|
 | 214.577 Rev/min<sup>2</sup> | 0 ~ 2,147,483,647 |
 
-### <a name="pwm-limit"></a>**[Current Limit(30)](#current-limit30)**
+### <a name="current-limit"></a>**[Current Limit(30)](#current-limit30)**
 This value indicates maximum current limit. [Goal Current(604)] can't be configured with any values exceeding [Current Limit(30)].  
 Attempting to write an exceeding value will fail and result in receiving a Limit Error Bit from the Status Packet.
 
