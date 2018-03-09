@@ -213,7 +213,7 @@ main:
         url: /edu/dream/dream-a/
       - title: "SET B"
         url: /edu/dream/dream-b/
-    - title: "Dream II"
+    - title: "DREAM II"
       titlekr: "드림 II"
       children:
       - title: "LEVEL 1"
@@ -265,6 +265,8 @@ main:
         url: /edu/iot/iot-1/
       - titlekr: "2단계 교육키트"
         url: /edu/iot/iot-2/
+    - titlekr: "자동차 로봇"
+      urlkr: /edu/car/
     - title: "BIOLOID"
       titlekr: "바이올로이드"
       urlkr: /edu/bioloid/
@@ -513,6 +515,29 @@ main:
     titlekr: "FAQ"
     url: /faq/
     urlkr: /faq/
+
+all-dynamixel:
+  - title: "AX Series"
+    titlekr: "AX Series"
+    url: /dxl/#ax-series
+  - title: "EX Series"
+    titlekr: "EX Series"
+    url: /dxl/#ex-series
+  - title: "DX Series"
+    titlekr: "DX Series"
+    url: /dxl/#dx-series
+  - title: "RX Series"
+    titlekr: "RX Series"
+    url: /dxl/#rx-series
+  - title: "MX Series"
+    titlekr: "MX Series"
+    url: /dxl/#mx-series
+  - title: "X Series"
+    titlekr: "X Series"
+    url: /dxl/#x-series
+  - title: "PRO Series"
+    titlekr: "PRO Serie"
+    url: /dxl/#pro-m-series
 
 #AX-12W sidebar
 ax-12w:
@@ -7910,6 +7935,16 @@ ollo-4:
 - titlekr: "다운로드"
   urlkr: /edu/ollo/ollo-4/#다운로드
 
+dream:
+- title: "DREAM"
+  titlekr: "로보티즈 드림"
+  url: /edu/dream/#dream
+  urlkr: /edu/dream/#로보티즈-드림
+- title: "DREAM II"
+  titlekr: "로보티즈 드림 II"
+  url: /edu/dream/#dream-ii
+  urlkr: /edu/dream/#로보티즈-드림-ii
+
 #DreamI Level1 sidebar
 dream1-1:
 - titlekr: "개요"
@@ -8192,6 +8227,10 @@ smart3-4:
   urlkr: /edu/smart/smart3-4/#작동하기
 - titlekr: "교안예제"
   urlkr: /edu/smart/smart3-4/#교안예제
+
+iot:
+  - title: "로보티즈 IoT"
+    urlkr: /edu/iot/#로보티즈-iot
 
 iot-1:
   - titlekr: "개요"
