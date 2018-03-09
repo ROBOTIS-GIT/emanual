@@ -384,10 +384,10 @@ This value indicates present internal Temperature. For more details, please refe
 {% include en/dxl/molex_485_pro.md %}
 
 ## [Drawings](#drawings)
-`Download` [PDF]
+`Download` [RH-P12-RN(PDF).zip](http://www.robotis.com/service/download.php?no=740)  
+`Download` [RH-P12-RN(STP).zip](http://www.robotis.com/service/download.php?no=741)
 
 
-[PDF]: http://support.robotis.com/en/baggage_files/dynamixel/rh-p12-rn.pdf
 [Torque Enable(562)]: #torque-enable562
 [Goal Current(604)]: #goal-current604
 [Acceleration Limit(26)]: #acceleration-limit26
