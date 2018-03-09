@@ -41,8 +41,11 @@ $ cd ~/catkin_ws && catkin_make
 
 `TurtleBot3 fake node` is a very simple simulation node that can be run without having an actual robot. You can even control the virtual TurtleBot3 in RViz with a teleop node.
 
+**Tip :** TB3_MODEL = `burger`, `waffle`, `waffle_pi` 
+{: .notice--info}
+
 ``` bash
-$ export TURTLEBOT3_MODEL=burger
+$ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ roslaunch turtlebot3_fake turtlebot3_fake.launch
 ```
 
@@ -60,7 +63,7 @@ $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/xXM5r_SVkWM" frameborder="0" allowfullscreen></iframe>
 
-### [Gazebo standalone](#gazebo-standalone)
+### [Gazebo Plugin](#gazebo-plugin)
 
 1. Install library for Gazebo7
 
@@ -151,10 +154,13 @@ $ ./image_listener ${TB3_MODEL}
   [Gazebo API](http://osrf-distributions.s3.amazonaws.com/gazebo/api/dev/index.html)
 
   [How to contribute model](http://gazebosim.org/tutorials?tut=model_contrib&cat=build_robot)
+
   [How to make model](http://gazebosim.org/tutorials?tut=build_model&cat=build_robot)
 
   [Tutorial for making Hello World plugin](http://gazebosim.org/tutorials?tut=plugins_hello_world&cat=write_plugin)
+
   [Tutorial for making model plugin](http://gazebosim.org/tutorials?cat=guided_i&tut=guided_i5)
+  
   [Tutorial for making sensor plugin](http://gazebosim.org/tutorials?tut=contact_sensor)
 
   [Tutorial for topic subscription](http://gazebosim.org/tutorials?tut=topics_subscribed)
@@ -245,6 +251,18 @@ $ roslaunch turtlebot3_gazebo_ros turtlebot3_gazebo_rviz.launch
 
 ![](/assets/images/platform/turtlebot3/simulation/turtlebot3_gazebo_rviz.png)
 
+#### [SLAM by TurtleBot3](#slam-by-turtlebot3)
+
+In gazebo simulation, we can use SLAM package that we used for the actual TurtleBot3
+
+[Instruction for SLAM](/docs/en/platform/turtlebot3/slam/#slam)
+
+#### [Navigation by TurtleBot3](#navigation-by-turtlebot3)
+
+In gazebo simulation, we can use navigation package that we used for the actual TurtleBot3
+
+[Instruction for navigation](/docs/en/platform/turtlebot3/navigation/#navigation)
+
 #### [SLAM by Multiple TurtleBot3s](#slam-by-multiple-turtlebot3s)
 
 1. Call three TurtleBot3s in TurtleBot3 House
@@ -272,4 +290,10 @@ $ roslaunch turtlebot3_gazebo_ros multi_map_merge.launch
 
 ``` bash
 $ rosrun rviz rviz -d `rospack find turtlebot3_gazebo_ros`/rviz/multi_turtlebot3_slam.rviz
+```
+
+1. Teleoperation by keyboard
+
+``` bash
+$ rosrun turtlebot3_teleop turtlebot3_teleop_key cmd_vel:=tb3_0/cmd_vel
 ```
