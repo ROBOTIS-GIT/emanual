@@ -390,7 +390,8 @@ Goal Velocity(600)가 ‘0’인 경우, Profile 이 비활성화 되어 Goal Ac
 {% include kr/dxl/molex_485_pro.md %}
 
 ## [도면](#도면)
-`Download` [PDF]
+`Download` [RH-P12-RN(PDF).zip](http://www.robotis.com/service/download.php?no=740)  
+`Download` [RH-P12-RN(STP).zip](http://www.robotis.com/service/download.php?no=741)
 
 
 [PDF]: http://support.robotis.com/en/baggage_files/dynamixel/rh-p12-rn.pdf
