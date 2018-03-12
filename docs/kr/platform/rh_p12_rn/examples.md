@@ -11,6 +11,8 @@ sidebar:
   nav: "rh_p12_rn"
 ---
 
+<div style="counter-reset: h1 5"></div>
+
 # [예제](#예제)
 
 ## [장치 설정(RH-P12-RN)](#장치-설정rh-p12-rn)
