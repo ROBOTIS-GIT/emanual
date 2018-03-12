@@ -32,10 +32,11 @@ Gazebo 에서 RH-P12-RN 을 불러오기 위한 명령
 ```
 $ roslaunch rh_p12_rn_gazebo rh_p12_rn_gazebo.launch
 ```
-Gazebo 의 Play 버튼을 누릅니다.
+Gazebo 의 Play 버튼을 누릅니다.  
 ![](/assets/images/platform/rh_p12_rn/gazebo_play_button.png)  
 
-움직임을 확인하기 위해 아래의 명령을 입력합니다.   
+움직임을 확인하기 위해 터미널을 열고 아래의 명령을 입력합니다.   
+  
 손가락을 열린 상태로 보내는 명령
 ```
 $ rostopic pub -1 /rh_p12_rn/rh_p12_rn_position/command std_msgs/Float64 "data: 0.0"
