@@ -9419,6 +9419,21 @@ rh_p12_rn:
       titlekr: "ROS GUI 예제"
       url: /platform/rh_p12_rn/examples/#ros-gui-example
       urlkr: /platform/rh_p12_rn/examples/#ros-gui-예제
+  - title: "Gazebo Simulation"
+    titlekr: "Gazebo 시뮬레이션"
+    url: /platform/rh_p12_rn/gazebo/#gazebo-simulation
+    urlkr: /platform/rh_p12_rn/gazebo/#gazebo-시뮬레이션
+    children:
+    - title: "Gazebo Install"
+      titlekr: "Gazebo 설치"
+      url: /platform/rh_p12_rn/gazebo/#gazebo-simulation
+      urlkr: /platform/rh_p12_rn/gazebo/#gazebo-시뮬레이션
+    - title: "Run Simulator"
+      titlekr: "시뮬레이터 실행"
+      url: /platform/rh_p12_rn/gazebo/#run-simulator
+      urlkr: /platform/rh_p12_rn/gazebo/#시뮬레이터-실행
+
+
 
 robothand_rx28:
   - titlekr: "개요"
