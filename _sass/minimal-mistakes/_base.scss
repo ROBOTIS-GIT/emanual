@@ -27,6 +27,11 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
   font-family: $header-font-family;
   font-weight: bold;
+
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
 }
 
 h1 {
@@ -50,6 +55,22 @@ h2 {
     counter-increment: h2;
     content: counter(h1) ". " counter(h2) ". ";
   }
+
+  ~ p {
+    margin-left: 0.5em;
+  }
+
+  ~ ul {
+    margin-left: 0.5em;
+  }
+
+  ~ ol {
+    margin-left: 0.5em;
+  }
+  
+  ~ table {
+    margin-left: 0.5em;
+  }
 }
 
 h3 {
@@ -62,6 +83,22 @@ h3 {
     counter-increment: h3;
     content: counter(h1) ". " counter(h2) ". " counter(h3) ". ";
   }
+
+  ~ p {
+    margin-left: 1em;
+  }
+
+  ~ ul {
+    margin-left: 1em;
+  }
+
+  ~ ol {
+    margin-left: 1em;
+  }
+  
+  ~ table {
+    margin-left: 1em;
+  }
 }
 
 h4 {
@@ -73,23 +110,82 @@ h4 {
     counter-increment: h4;
     content: counter(h1) ". " counter(h2) ". " counter(h3) ". " counter(h4) ". ";
   }
+
+  ~ p {
+    margin-left: 1.5em;
+  }
+
+  ~ ul {
+    margin-left: 1.5em;
+  }
+
+  ~ ol {
+    margin-left: 1.5em;
+  }
+  
+  ~ table {
+    margin-left: 1.5em;
+  }
 }
 
 h5 {
+  margin-left: 2em;
   font-size: $type-size-6;
   font-style: italic;
+  
+  ~ p {
+    margin-left: 2em;
+  }
+
+  ~ ul {
+    margin-left: 2em;
+  }
+
+  ~ ol {
+    margin-left: 2em;
+  }
+  
+  ~ table {
+    margin-left: 2em;
+  }
 }
 
 h6 {
+  margin-left: 2.3em;
   font-size: $type-size-7;
+  
+  ~ p {
+    margin-left: 2.3em;
+  }
+
+  ~ ul {
+    margin-left: 2.3em;
+  }
+
+  ~ ol {
+    margin-left: 2.3em;
+  }
+  
+  ~ table {
+    margin-left: 2.3em;
+  }
 }
 
 small, .small {
   font-size: $type-size-7;
 }
 
+li {
+  font-size: $type-size-5;
+
+  > ul {
+   margin-left: 0;
+ }
+}
+
 p {
   margin-bottom: 1.3em;
+  font-size: 0.8em;
 }
 
 u,
@@ -170,7 +266,7 @@ figcaption > code,
 td > code {
   padding-top: 0.1rem;
   padding-bottom: 0.1rem;
-  font-size: $type-size-5;
+  font-size: 0.8em;
   background: $code-background-color;
   border: 1px solid $lighter-gray;
   border-radius: $border-radius;

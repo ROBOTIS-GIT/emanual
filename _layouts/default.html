@@ -12,6 +12,87 @@
   <head>
     {% include head.html %}
     {% include head/custom.html %}
+    <script>
+      var toggle_google = 0;
+      var mobile_width = 960;
+      
+      function extendgoogletool() {
+        if (toggle_google == 0) {
+          google_tools.classList.add("extend_googletools");
+          switch_ko_en.classList.add("show_switch_ko_en");
+          toggle_google = 1;
+        }
+        else {
+          google_tools.classList.remove("extend_googletools");
+          switch_ko_en.classList.remove("show_switch_ko_en");
+          toggle_google = 0;
+        }
+      }
+    </script>
+    <script>
+    $(document).ready(function() {
+
+    	$('.popup').magnificPopup({
+    		type: 'ajax',
+    		alignTop: true,
+    		overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
+    	});
+      $('.popup2').magnificPopup({
+    		type: 'inline',
+    		alignTop: true,
+    		overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
+    	});
+    });
+    </script>
+    <script>
+      // var side_nav = document.getElementById("sidebar");
+      var offset = 105;
+    
+      window.onscroll = function () {
+        stickynav()
+      };
+      
+      function stickynav() {
+        if (window.pageYOffset > offset) {
+          sidebar__left.classList.add("sticky_sidebar");
+        }
+        else {
+          sidebar__left.classList.remove("sticky_sidebar");
+        }
+      }
+    </script>
+    <script>
+      var toggle = 0;
+      
+      function extendnav() {
+        if (toggle == 0) {
+          sidebar__left.classList.add("extend_sidebar");
+          toggle = 1;
+        }
+        else {
+          sidebar__left.classList.remove("extend_sidebar");
+          toggle = 0;
+        }
+      }
+    </script>
+    <script>
+      function copyurl(item)
+        {
+          // location.href = item.href;
+          var copiedurl = decodeURI(item.href);
+          var tempurl = $('<input>').val(copiedurl).appendTo('body').select();
+          document.execCommand('copy');
+          // console.log(copiedurl);
+          // document.getElementById(id).href;
+          // document.execCommand('copy');
+        }
+    </script>
+    <script>
+      function movetopage(targeturl)
+      {
+        location.href=targeturl;
+      }
+    </script>
   </head>
 
   <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">

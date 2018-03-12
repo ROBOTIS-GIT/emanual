@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/kr/software/rplus1/task/programming_01/
 sidebar:
-  title: R+ Task 1.0
+  title: 로보플러스 태스크 1.0
   nav: "rplustask1"
 ---
 
@@ -40,7 +40,7 @@ RoboPlus Task는 프로그램 코드에서 잘라내기, 복사, 삭제, 주석�
 ### [줄 삽입](#줄-삽입)
 프로그램 코드에 빈 줄을 삽입하는 방법은 다음과 같습니다.
 
-- 삽입하고자 하는 명령줄 위를 선택한 후 스페이스바(SpaceBar)를 입력합니다.
+- 삽입하고자 하는 명령줄 위를 선택한 후 `스페이스바`(SpaceBar)를 입력합니다.
 - 삽입하고자 하는 명령줄 위를 선택한 후 마우스 오른쪽 버튼을 눌러 '줄 삽입' 명령을 실행합니다.
 
   ![줄 삽입][insert-line]
@@ -58,7 +58,7 @@ RoboPlus Task는 프로그램 코드에서 잘라내기, 복사, 삭제, 주석�
 
   ![줄 지우기][delete_delete]
 
-### [줄 활성/비활성](#줄-활성-비활성)
+### [줄 활성/비활성](#줄-활성비활성)
 프로그램 코드에서 명령줄을 활성, 비활성시키는 방법은 다음과 같습니다.
 
 - 활성, 혹은 비활성하고자 하는 명령줄을 선택한 후  마우스 오른쪽 버튼을 눌러 '줄 활성/비활성' 명령을 실행합니다.
@@ -69,25 +69,35 @@ RoboPlus Task는 프로그램 코드에서 잘라내기, 복사, 삭제, 주석�
 - 활성화 되어있는 줄에서 이 명령을 실행하면 비활성 상태로 바뀌며, 비활성 상태에 있는 줄에서 이 명령을 실행하면 활성화 상태로 바뀌게 됩니다.
 - 주로 프로그램 작성 중 테스트를 위해 잠시 명령을 실행하지 않도록 하는 등의 목적으로 많이 사용됩니다.
 
-### [복사/잘라내기/붙여넣기](#복사-잘라내기-붙여넣기)
-
-#### 잘라내기
-
-  하나의 줄을 선택하거나, 여러줄을 선택한 후 마우스 오른쪽 버튼을 눌러 잘라내기 명령을 실행합니다. 잘라내기를 실행한 줄은 지워지며, 그 내용은 임시 저장소에 저장됩니다. 잘라내기 명령을 실행하는 순간, 기존에 임시 저장소에 저장되어 있던 내용은 삭제됩니다. 단축키는 컨트롤(Ctrl) + X 입니다.
-
-  ![잘라내기][cut]
+### [복사/잘라내기/붙여넣기](#복사잘라내기붙여넣기)
 
 #### 복사하기
 
-하나의 줄을 선택하거나, 여러줄을 선택한 후 마우스 오른쪽 버튼을 눌러 복사 명령을 실행합니다. 복사하기를 실행한 줄은 그대로 남아있으며, 그 내용은 임시 저장소에 저장됩니다. 복사하기 명령을 실행하는 순간, 기존에 임시 저장소에 저장되어 있던 내용은 삭제됩니다. 단축키는 컨트롤(Ctrl) + C 입니다.
+- 하나의 줄을 선택하거나, 여러줄을 선택한 후 마우스 오른쪽 버튼을 눌러 복사 명령을 실행합니다. 
+- 복사하기를 실행한 줄은 그대로 남아있으며, 그 내용은 임시 저장소에 저장됩니다. 
+- 복사하기 명령을 실행하는 순간, 기존에 임시 저장소에 저장되어 있던 내용은 삭제됩니다. 
+- 단축키는 `컨트롤(Ctrl)` + `C` 입니다.
 
-  ![복사하기][copy]
+![복사하기][copy]
+
+#### 잘라내기
+
+- 하나의 줄을 선택하거나, 여러줄을 선택한 후 마우스 오른쪽 버튼을 눌러 잘라내기 명령을 실행합니다. 
+- 잘라내기를 실행한 줄은 지워지며, 그 내용은 임시 저장소에 저장됩니다. 
+- 잘라내기 명령을 실행하는 순간, 기존에 임시 저장소에 저장되어 있던 내용은 삭제됩니다. 
+- 단축키는 `컨트롤(Ctrl)` + `X` 입니다.
+
+![잘라내기][cut]
 
 #### 붙여넣기
 
-임시 저장소에 데이터가 저장되어 있는 경우 실행할 수 있습니다. 붙여넣기를 실행 할 명령줄을 선택한 후 마우스 오른쪽 버튼을 눌러 붙여넣기 명령을 실행합니다. 붙여넣기를 하여도 임시 저장소의 내용은 그대로 남아있으며, 따라서 같은 내용을 여러번 붙여넣을 수 있습니다. 만약 빈 명령줄이 아닌, 기존에 선택된 내용 위에 붙여넣기를 하면 덮어쓰기가 됩니다. 단축키는 컨트롤(Ctrl) + V 입니다.
+- 임시 저장소에 데이터가 저장되어 있는 경우 실행할 수 있습니다. 
+- 붙여넣기를 실행 할 명령줄을 선택한 후 마우스 오른쪽 버튼을 눌러 붙여넣기 명령을 실행합니다. 
+- 붙여넣기를 하여도 임시 저장소의 내용은 그대로 남아있으며, 따라서 같은 내용을 여러번 붙여넣을 수 있습니다. 
+- 만약 빈 명령줄이 아닌, 기존에 선택된 내용 위에 붙여넣기를 하면 덮어쓰기가 됩니다. 
+- 단축키는 `컨트롤(Ctrl)` + `V` 입니다.
 
-  ![붙여넣기][paste]
+![붙여넣기][paste]
 
 ### [이름찾기](#이름찾기)
 프로그램 코드에서 사용한 요소의 찾기 기능을 지원합니다.
@@ -121,10 +131,12 @@ RoboPlus Task는 프로그램 코드에서 잘라내기, 복사, 삭제, 주석�
 프로그램 수행 중에 이 문장을 만나면 그대로 프로그램이 종료됩니다. 프로그램이 종료되는 경우는 다음과 같습니다.
 
 1. 프로그램 시작의 구간을 다 수행한 경우 (자연 종료)
-  ![자연종료][end01]
+  
+    ![자연종료][end01]
 
 2. 프로그램 강제 종료를 만났을 경우 (강제 종료)
-  ![강제종료][end02]
+  
+    ![강제종료][end02]
 
 #### 사용법
 
@@ -136,7 +148,7 @@ RoboPlus Task는 프로그램 코드에서 잘라내기, 복사, 삭제, 주석�
 
 ![종료예제][end_example]
 
-### [구간 시작/끝](#구간-시작-끝)
+### [구간 시작/끝](#구간-시작끝)
 구간이란 여러 개의 명령문을 묶어놓은 것을 의미합니다. 구간 시작부터 끝까지 같은 명령문에 영향 받습니다. C언어의 '{', '}'와 같은 개념입니다.
 
 #### 사용법
@@ -155,7 +167,6 @@ RoboPlus Task는 프로그램 코드에서 잘라내기, 복사, 삭제, 주석�
 - 콜백 함수
 - 함수
 
-
 만약에 실행문이 한줄일 경우에는 구간기호가 생략 될 수 있다.
 
 ![생략][omitted]
@@ -166,7 +177,7 @@ RoboPlus Task는 프로그램 코드에서 잘라내기, 복사, 삭제, 주석�
 
 ![구간예제][section_example]
 
-### [주석/메모](#주석-메모)
+### [주석/메모](#주석메모)
 프로그램 코드 내에 주석이나 메모를 삽입할 수 있습니다. 주석이나 메모를 적절히 사용하면, 나중에 코드를 다시 해석할 때 매우 유용합니다. 잊기 쉬운 내용이나, 중요한 내용을 표시할 때 주로 사용합니다. 주석은  프로그램 실행에 아무런 영향을 주지 않습니다. C언어의 한 줄 주석처리 기호인 '//'와 같은 개념입니다. (C언어의 여러 줄 주석 처리 기호인 '/*', '*/'는 지원하지 않습니다.)
 
 #### 사용법
@@ -194,8 +205,8 @@ RoboPlus Task는 프로그램 코드에서 잘라내기, 복사, 삭제, 주석�
     - 곱셈(*): 두 값을 곱합니다.
     - 나눗셈(/): 앞에서 뒤의 값을 나눕니다. (나머지는 무시되어 사라지고 몫만 결과로 나옵니다.)
 - 비트(bit) 연산 (2진수 연산을 의미합니다.)
-    - AND(&): 두 비트를 AND연산 합니다.
-    - OR(|): 두 비트를 OR연산 합니다.
+    - AND(\&): 두 비트를 AND연산 합니다.
+    - OR(\|): 두 비트를 OR연산 합니다.
 
 #### 사용법
 
@@ -207,7 +218,7 @@ RoboPlus Task는 프로그램 코드에서 잘라내기, 복사, 삭제, 주석�
 
 ![파라미터 선택][select_parameter]
 
-예제
+#### 예제
 
 10과 20을 더해서 화면출력하는 예제입니다.
 
@@ -238,7 +249,7 @@ RoboPlus Task는 프로그램 코드에서 잘라내기, 복사, 삭제, 주석�
 
 ![예제02][load_example02]
 
-### [레이블/점프](#레이블-점프)
+### [레이블/점프](#레이블점프)
 레이블과 점프는 프로그램 분기를 위해 사용됩니다. 프로그램 분기란, 프로그램 수행 순서를 바꾸는 것입니다. 점프는 프로그램 분기를 실행하고, 레이블은 분기할 위치를 지정합니다. C언어의 label/goto와 같은 개념입니다.
 
 ![레이블][label_jump]
@@ -267,7 +278,7 @@ RoboPlus Task는 프로그램 코드에서 잘라내기, 복사, 삭제, 주석�
 
 프로그램을 시작하자마자 '실행분기'레이블로 점프하여 루틴2를 실행하게 됩니다.
 
-  ![점프 예제][jump_example]
+![점프 예제][jump_example]
 
 ### [조건문](#조건문)
 조건의 참, 거짓 결과에 따라 프로그램 흐름을 분기하는 명령입니다.
@@ -284,19 +295,18 @@ RoboPlus Task는 프로그램 코드에서 잘라내기, 복사, 삭제, 주석�
 
 - == : 두 비교 값이 같다면 참입니다.
 - != : 두 비교 값이 다르다면 참입니다.
-- >= : 비교 값1이 비교 값2보다 크거나 같다면 참입니다.
-- > : 비교 값1이 비교 값2보다 크다면 참입니다.
+- &gt;= : 비교 값1이 비교 값2보다 크거나 같다면 참입니다.
+- &gt; : 비교 값1이 비교 값2보다 크다면 참입니다.
 - <= : 비교 값1이 비교 값2보다 작거나 같다면 참입니다.
 - < : 비교 값1이 비교 값2보다 작다면 참입니다.
 
-조건절은 연결 연산자에 의해 연결되어 복합 조건절로 사용할 수 있습니다.
-복합 조건절은 다음과 같이 3부분으로 구성되고, 차례대로 조건절1, 연결 연산자, 조건절2입니다.
-
+조건절은 연결 연산자에 의해 연결되어 복합 조건절로 사용할 수 있습니다.  
+복합 조건절은 다음과 같이 3부분으로 구성되고, 차례대로 조건절1, 연결 연산자, 조건절2입니다.  
 연결 연산자의 종류는 다음과 같습니다.
 
 - **then** : 아무 조건절도 연결하지 않습니다.
-- **AND(&&)**: 두 조건절의 결과를 AND연산합니다.
-- **OR(||)**: 두 조건절의 결과를 OR연산합니다.
+- **AND(\&\&)**: 두 조건절의 결과를 AND연산합니다.
+- **OR(\|\|)**: 두 조건절의 결과를 OR연산합니다.
 
 복합 조건절은 제한 없이 연결될 수 있으며 앞에서부터 차례대로 연산되어 최종 값은 참과 거짓으로 표현됩니다.
 
@@ -304,7 +314,6 @@ RoboPlus Task는 프로그램 코드에서 잘라내기, 복사, 삭제, 주석�
 
 - '아니면 만약'과 '아니면'은 반드시 먼저 '만약'이 나와야 합니다.
 - 각 구문은 명령 묶음인 구간이 반드시 필요합니다. (단, 실행 문이 1줄일 경우에는 별도로 구간 표시를 하지않아도 자동으로 구간으로 인식합니다.)
-
 
 #### 예제
 
@@ -344,162 +353,190 @@ RoboPlus Task는 프로그램 코드에서 잘라내기, 복사, 삭제, 주석�
 프로그램 출력 화면에 변수 값이 30이 될 때까지 화면 출력을 반복합니다.
 
 ### [횟수 반복](#횟수-반복)
+
+구간내의 명령줄을 횟수만큼 반복시킵니다. 시작 값과 끝 값을 설정하면 지정한 변수를 1씩 증가시키면서 반복합니다. 반복횟수는 다음의 식으로 알 수 있습니다.
+
+```
+반복횟수 = 끝값 - 시작값 + 1
+```
+
+C언어의 for구문과 같은 개념입니다.
+
+#### 사용법
+
+명령 수행에 필요한 3개의 파라미터(변수, 시작값, 끝값)를 적절히 선택합니다.
+
+![횟수 반복_1][for_1]
+
+시작값은 끝값보다 작아야 합니다. **만약, 시작값보다 끝값이 크다면 단 한번도 반복하지 않습니다.**
+명령 묶음인 구간이 반드시 필요합니다. (단, 실행 문이 1줄일 경우에는 별도로 구간 표시를 하지않아도 자동으로 구간을 인식합니다.)
+
+![횟수 반복_2][for_2]
+
+반복 구문을 강제로 빠져나오려면 반복 끝내기를 사용합니다.
+
+#### 예제
+
+감지된 소리 횟수만큼 반복하는 예제입니다.
+
+![횟수 반복 예제][for_example]
+
 ### [반복 끝내기](#반복-끝내기)
+
+행 중인 반복을 무조건 종료하고 싶을 때 사용합니다.
+C언어의 break구문과 같은 개념입니다.
+
+![반복 끝내기][break]
+
+#### 사용법
+
+반드시 반복구문 안에 존재해야 합니다.
+
+#### 예제
+
+숫자 10을 계속 화면출력하다가, 중앙 적외선 센서값이 400보다 클 때 반복 끝내기를 실행하고 화면에 30을 출력합니다.
+
+![반복 끝내기 예제][break_example]
+
 ### [조건 대기](#조건-대기)
+
+조건절이 참인 동안 프로그램 수행을 멈춥니다.
+C언어의 while 구문과 같은 개념입니다.
+
+#### 사용법
+
+명령 묶음인 구간이 필요 없이 적절한 조건을 설정합니다.
+
+#### 예제
+
+타이머가 완료될 때까지 기다리는 예제입니다.
+
+![조건 대기][stand_example]
+
 ### [함수 강제종료](#함수-강제종료)
-### [함수 만들기/호출](#함수-만들기-호출)
+
+함수 내에서 함수 강제 종료 명령을 만나면, 실행 중인 함수를 즉시 종료하고, 함수를 호출한 곳으로 돌아갑니다.
+C언어의 return과 같은 개념입니다.
+
+![함수 강제종료][return]
+
+#### 사용법
+
+일반 함수와 콜백 함수 내부에서만 사용할 수 있습니다.
+
+#### 예제
+
+프로그램 시작 후 사용자 함수를 계속 실행합니다. 사용자 함수 내부에는 함수 강제 종료 명령(복귀)이 있어, 마지막 3줄을 실행하지 않고 함수를 종료합니다.
+
+![함수 강제종료 예제][return_example]
+
+### [함수 만들기/호출](#함수-만들기호출)
+
+동일한 코드가 반복 되거나, 특정 코드 영역을 역할 단위로 구분하고자 하는 경우, 그 내용을 함수로 만들 수 있으며, 필요한 곳에서 호출하여 사용할 수 있습니다. C언어의 함수와 같은 개념입니다. 단, C언어의 함수와 달리 리턴값과 인자가 없습니다.
+함수를 적절히 활용하면 프로그램의 흐름을 쉽게 파악할 수 있으며, 특히 반복적인 동작을 함수로 대체하면 프로그램 코드 사용량을 크게 줄일 수 있습니다.
+만들어진 함수는 호출을 함으로써 실행할 수 있으며, 함수가 종료되면 호출한 위치로 다시 되돌아와서 프로그램을 계속 진행합니다.
+
+![함수 만들기/호출][function_1]
+
+#### 사용법
+
+* 함수를 만들때 이름은 다음의 규칙을 지켜야 합니다.
+  * 함수 이름은 중복될 수 없습니다.
+  * 함수는 다른 함수, 혹은 프로그램 구문 안에 만들어질 수 없으며, 가장 바깥쪽에 만들어 합니다.
+  * 함수의 이름은 띄어쓰기와 특수 기호(!, @, #, $등)를 사용할 수 없습니다.
+* 함수의 이름은 첫 글자로 숫자를 사용할 수 없습니다.
+* 함수 이름 입력시 키보드의 ESC키를 누르면 취소됩니다.
+* 함수 이름 입력시 키보드의 ENTER키를 누르면 입력이 완료됩니다.
+* 호출할 함수 선택시 키보드의 ESC키를 누르면 취소됩니다.
+* 호출할 함수 선택시 목록을 선택하거나 키보드의 ENTER키를 누르면 입력이 완료됩니다.
+
+  ![함수 만들기/호출 사용법][function_2]
+
+함수 내에서 자기 자신을 호출할 수 없습니다.
+
+  ![함수 만들기/호출 사용법][function_3]
+
+#### 예제
+
+프로그램을 시작한 후 전진, 후진, 우회전하기, 좌회전하기 함수를 계속 실행합니다.
+
+![함수 만들기/호출 사용법][function_example]
+
 ### [콜백 함수](#콜백-함수)
 
-## [제어기 파라미터](#제어기-파라미터)
+콜백(Callback) 함수는 일반 함수 및 메인 프로그램 루틴과 독립적으로 동작하는 함수이며, 일정한 시간마다 스스로 실행됩니다. 따라서 과도한 실행 시간을 요하는 코드를 넣을 수 없으며, 이를 위해 반복문 사용, 변수 사용량, 파라미터 호출 횟수, 코드 용량 등에 제한을 두고 있습니다.
 
-### [보낼 무선 데이터](#보낼-무선-데이터)
-### [받은 무선 데이터](#받은-무선-데이터)
-### [새 무선 데이터](#새-무선-데이터)
-### [임의의 숫자](#임의의-숫자)
-### [Aux LED](#aux-led)
-### [버튼](#버튼)
-### [타이머](#타이머)
-### [정밀타이머](#정밀타이머)
-### [상대 로봇 무선ID](#상대-로봇-무선ID)
-### [내 로봇 무선ID](#내-로봇-무선ID)
-### [화면출력/줄바꿈](#화면출력-줄바꿈)
-### [적외선 센서](#적외선-센서)
-### [부저 종류](#부저-종류)
-### [부저 울림시간](#부저-울림시간)
-### [최종 소리감지 횟수](#최종-소리감지-횟수)
-### [실시간 소리감지 횟수](#실시간-소리감지-횟수)
-### [시작버튼 눌림횟수](#시작버튼-눌림횟수)
-### [자동꺼짐 타이머](#자동꺼짐-타이머)
-### [RC-100 채널](#rc-100-채널)
+#### 사용법
 
-## [스마트앱 파라미터](#스마트앱-파라미터)
+* 콜백 함수는 다른 함수, 혹은 프로그램 구문 안에 만들어질 수 없으며, 가장 바깥쪽에 만들어 합니다.
+* 콜백 함수는 오직 1개만 존재할 수 있습니다.
+* 콜백 함수는 이름이 없으며, 호출되지 않습니다.
 
-## [모션 파라미터](#모션-파라미터)
+#### 제한 사항
 
-### [모션 페이지](#모션-페이지)
-### [모션 상태](#모션-상태)
-### [관절 오프셋](#관절-오프셋)
-### [관절 LED 자동켜기](#관절-led-자동켜기)
+* 무조건 반복, 조건 반복, 횟수 반복, 레이블, 점프, 함수 호출 등의 명령어를 사용 할 수 없습니다.
+* 다이나믹셀과 같은 외부장치와의 통신 횟수에 제약이 있습니다. ( 2회를 넘을 수 없습니다.)
+* 코드 크기에 제약이 있습니다. (최대 512byte)
 
-## [주변장치](#주변장치)
+#### 예제
 
-### [감속모터](#감속모터)
-### [서보모터](#서보모터)
-### [접촉센서](#접촉센서)
-### [LED모듈](#led모듈)
-### [적외선센서](#적외선센서)
-### [컬러센서](#컬러센서)
-### [자석센서](#자석센서)
-### [절대거리센서](#절대거리센서)
-### [사용자 장치](#사용자-장치)
+콜백 함수에서 주기적으로 받은 무선 데이터를 변수에 저장하는 예제입니다
 
-## [다이나믹셀:액츄에이터](#다이나믹셀-액츄에이터)
-
-### [모터 켜기](#모터-켜기)
-### [LED](#led)
-### [CW/CCW Margin](#cw-ccw-margin)
-### [CW/CCW Slope](#cw-ccw-slope)
-### [목표 위치](#목표-위치)
-### [이동 속도](#이동-속도)
-### [힘 조절](#힘-조절)
-### [현재 위치](#현재-위치)
-### [현재 속도](#현재-속도)
-### [현재 하중](#현재-하중)
-### [전압](#전압)
-### [온도](#온도)
-### [움직임 유무](#움직임-유무)
-
-## [다이나믹셀:EX액츄에이터](#다이나믹셀-ex액츄에이터)
-
-### [모터 켜기](#모터-켜기)
-### [LED](#led)
-### [CW/CCW Margin](#cw-ccw-margin)
-### [CW/CCW Slope](#cw-ccw-slope)
-### [목표 위치](#목표-위치)
-### [이동 속도](#이동-속도)
-### [힘 조절](#힘-조절)
-### [현재 위치](#현재-위치)
-### [현재 속도](#현재-속도)
-### [현재 하중](#현재-하중)
-### [전압](#전압)
-### [온도](#온도)
-### [움직임 유무](#움직임-유무)
-### [소모 전류량](#소모-전류량)
-
-## [다이나믹셀:MX액츄에이터](#다이나믹셀-mx액츄에이터)
-
-### [모터 켜기](#모터-켜기)
-### [LED](#led)
-### [PID 제어](#pid-제어)
-### [목표 위치](#목표-위치)
-### [이동 속도](#이동-속도)
-### [힘 조절](#힘-조절)
-### [현재 위치](#현재-위치)
-### [현재 속도](#현재-속도)
-### [현재 하중](#현재-하중)
-### [전압](#전압)
-### [온도](#온도)
-### [움직임 유무](#움직임-유무)
-### [소모 전류량](#소모-전류량)
-
-## [통합센서(S1)](#통합센서-s1-)
-
-### [거리센서 값](#거리센서-값)
-### [조명 밝기](#조명-밝기)
-### [물체감지](#물체감지)
-### [조명감지](#조명감지)
-### [소리 크기](#소리-크기)
-### [최대 소리 크기](#최대-소리-크기)
-### [소리감지 횟수](#소리감지-횟수)
-### [소리발생 시간](#소리발생-시간)
-### [부저 음계](#부저-음계)
-### [부저 울림시간](#부저-울림시간)
-### [새 리모컨 데이터](#새-리모컨-데이터)
-### [받은 리모컨 데이터](#받은-리모컨-데이터)
-### [보낼 리모컨 데이터](#보낼-리모컨-데이터)
-### [물체감지 기준값](#물체감지-기준값)
-### [조명감지 기준값](#조명감지-기준값)
-
-## [적외선 센서 어레이](#적외선-센서-어레이)
-### [적외선 센서 값](#적외선-센서-값)
-### [부저 음계](#부저-음계)
-### [부저 울림시간](#부저-울림시간)
-### [감지 기준값 자동설정](#감지-기준값-자동설정)
-### [적외선 물체감지](#적외선-물체감지)
-### [적외선감지 기준값](#적외선감지-기준값)
-
-## [직접 지정](#직접-지정)
+![콜백함수 예제][callback_example]
 
 
-[ctrl-select]: /emanual/assets/images/sw/rplus1/roboplus_task_022.png
-[sft-select]: /emanual/assets/images/sw/rplus1/roboplus_task_023.png
-[select-all]: /emanual/assets/images/sw/rplus1/roboplus_task_024.png
-[insert-line]: /emanual/assets/images/sw/rplus1/roboplus_task_025.png
-[delete_backspace]: /emanual/assets/images/sw/rplus1/roboplus_task_026.png
-[delete_delete]: /emanual/assets/images/sw/rplus1/roboplus_task_027.png
-[activate]: /emanual/assets/images/sw/rplus1/roboplus_task_028.png
-[cut]: /emanual/assets/images/sw/rplus1/roboplus_task_029.png
-[copy]: /emanual/assets/images/sw/rplus1/roboplus_task_030.png
-[paste]: /emanual/assets/images/sw/rplus1/roboplus_task_031.png
-[search_name]: /emanual/assets/images/sw/rplus1/roboplus_task_032.png
-[search_next]: /emanual/assets/images/sw/rplus1/roboplus_task_033.png
-[main]: /emanual/assets/images/sw/rplus1/roboplus_task_034.png
-[end01]: /emanual/assets/images/sw/rplus1/roboplus_task_035.png
-[end02]: /emanual/assets/images/sw/rplus1/roboplus_task_036.png
-[end_example]: /emanual/assets/images/sw/rplus1/roboplus_task_037.png
-[section]: /emanual/assets/images/sw/rplus1/roboplus_task_038.png
-[omitted]: /emanual/assets/images/sw/rplus1/roboplus_task_039.png
-[section_example]: /emanual/assets/images/sw/rplus1/roboplus_task_040.png
-[comment]: /emanual/assets/images/sw/rplus1/roboplus_task_041.png
-[math]: /emanual/assets/images/sw/rplus1/roboplus_task_042.png
-[select_operator]: /emanual/assets/images/sw/rplus1/roboplus_task_043.png
-[select_parameter]: /emanual/assets/images/sw/rplus1/roboplus_task_044.png
-[math_example]: /emanual/assets/images/sw/rplus1/roboplus_task_045.png
-[load]: /emanual/assets/images/sw/rplus1/roboplus_task_046.png
-[select_load]: /emanual/assets/images/sw/rplus1/roboplus_task_047.png
-[load_example01]: /emanual/assets/images/sw/rplus1/roboplus_task_048.png
-[load_example02]: /emanual/assets/images/sw/rplus1/roboplus_task_049.png
-[label_jump]: /emanual/assets/images/sw/rplus1/roboplus_task_050.png
-[jump_label]: /emanual/assets/images/sw/rplus1/roboplus_task_051.png
-[jump_label_target]: /emanual/assets/images/sw/rplus1/roboplus_task_052.png
-[jump_example]: /emanual/assets/images/sw/rplus1/roboplus_task_053.png
+[ctrl-select]: /assets/images/sw/rplus1/task/roboplus_task_022.png
+[sft-select]: /assets/images/sw/rplus1/task/roboplus_task_023.png
+[select-all]: /assets/images/sw/rplus1/task/roboplus_task_024.png
+[insert-line]: /assets/images/sw/rplus1/task/roboplus_task_025.png
+[delete_backspace]: /assets/images/sw/rplus1/task/roboplus_task_026.png
+[delete_delete]: /assets/images/sw/rplus1/task/roboplus_task_027.png
+[activate]: /assets/images/sw/rplus1/task/roboplus_task_028.png
+[cut]: /assets/images/sw/rplus1/task/roboplus_task_029.png
+[copy]: /assets/images/sw/rplus1/task/roboplus_task_030.png
+[paste]: /assets/images/sw/rplus1/task/roboplus_task_031.png
+[search_name]: /assets/images/sw/rplus1/task/roboplus_task_032.png
+[search_next]: /assets/images/sw/rplus1/task/roboplus_task_033.png
+[main]: /assets/images/sw/rplus1/task/roboplus_task_034.png
+[end01]: /assets/images/sw/rplus1/task/roboplus_task_035.png
+[end02]: /assets/images/sw/rplus1/task/roboplus_task_036.png
+[end_example]: /assets/images/sw/rplus1/task/roboplus_task_037.png
+[section]: /assets/images/sw/rplus1/task/roboplus_task_038.png
+[omitted]: /assets/images/sw/rplus1/task/roboplus_task_039.png
+[section_example]: /assets/images/sw/rplus1/task/roboplus_task_040.png
+[comment]: /assets/images/sw/rplus1/task/roboplus_task_041.png
+[math]: /assets/images/sw/rplus1/task/roboplus_task_042.png
+[select_operator]: /assets/images/sw/rplus1/task/roboplus_task_043.png
+[select_parameter]: /assets/images/sw/rplus1/task/roboplus_task_044.png
+[math_example]: /assets/images/sw/rplus1/task/roboplus_task_045.png
+[load]: /assets/images/sw/rplus1/task/roboplus_task_046.png
+[select_load]: /assets/images/sw/rplus1/task/roboplus_task_047.png
+[load_example01]: /assets/images/sw/rplus1/task/roboplus_task_048.png
+[load_example02]: /assets/images/sw/rplus1/task/roboplus_task_049.png
+[label_jump]: /assets/images/sw/rplus1/task/roboplus_task_050.png
+[jump_label]: /assets/images/sw/rplus1/task/roboplus_task_051.png
+[jump_label_target]: /assets/images/sw/rplus1/task/roboplus_task_052.png
+[jump_example]: /assets/images/sw/rplus1/task/roboplus_task_053.png
+[if_condition]: /assets/images/sw/rplus1/task/roboplus_task_054.png
+[compare_operator]: /assets/images/sw/rplus1/task/roboplus_task_055.png
+[complex_operator]: /assets/images/sw/rplus1/task/roboplus_task_056.png
+[connect_operator_type]: /assets/images/sw/rplus1/task/roboplus_task_057.png
+[if]: /assets/images/sw/rplus1/task/roboplus_task_058.png
+[if_example]: /assets/images/sw/rplus1/task/roboplus_task_059.png
+[while]: /assets/images/sw/rplus1/task/roboplus_task_060.png
+[while_example]: /assets/images/sw/rplus1/task/roboplus_task_061.png
+[while_if]: /assets/images/sw/rplus1/task/roboplus_task_062.png
+[while_if_example]: /assets/images/sw/rplus1/task/roboplus_task_063.png
+[for_1]: /assets/images/sw/rplus1/task/roboplus_task_064.png
+[for_2]: /assets/images/sw/rplus1/task/roboplus_task_065.png
+[for_example]: /assets/images/sw/rplus1/task/roboplus_task_066.png
+[break]: /assets/images/sw/rplus1/task/roboplus_task_068.png
+[break_example]: /assets/images/sw/rplus1/task/roboplus_task_069.png
+[stand_example]: /assets/images/sw/rplus1/task/roboplus_task_070.png
+[return]: /assets/images/sw/rplus1/task/roboplus_task_071.png
+[return_example]: /assets/images/sw/rplus1/task/roboplus_task_072.png
+[function_1]: /assets/images/sw/rplus1/task/roboplus_task_073.png
+[function_2]: /assets/images/sw/rplus1/task/roboplus_task_074.png
+[function_3]: /assets/images/sw/rplus1/task/roboplus_task_075.png
+[function_example]: /assets/images/sw/rplus1/task/roboplus_task_076.png
+[callback_example]: /assets/images/sw/rplus1/task/roboplus_task_077.png

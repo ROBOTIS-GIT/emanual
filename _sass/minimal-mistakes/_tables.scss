@@ -4,9 +4,9 @@
 
 table {
   margin-bottom: 1em;
-  width: 100%;
+  width: auto;
   font-family: $global-font-family;
-  font-size: $type-size-6;
+  font-size: 0.75em;
   border-collapse: collapse;
   border: 1px solid $light-gray;
 
@@ -15,12 +15,14 @@ table {
   }
 }
 
+/*
 table.gsc-search-box {
   margin-bottom: 0;
   width: 100%;
   font-size: $type-size-6;
   border: 0px;
 }
+*/
 
 thead {
   background-color: $lighter-gray;
@@ -40,9 +42,11 @@ td {
   border-right: 1px solid $light-gray;
 }
 
+/*
 td.gsc-input {
   border: 0px;
 }
+*/
 
 tr, td, th {
   vertical-align: middle;

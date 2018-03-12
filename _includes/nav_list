@@ -1,179 +1,127 @@
 {% assign navigation = site.data.navigation[include.nav] %}
-
 <nav class="nav__list">
 
-  {% if page.sidebar.title %}<a href={{ page.permalink | absolute_url }} style="font-size:$type-size-6; color: #2174b6;">{{ page.sidebar.title }}</a>{% endif %}
+  {% if page.sidebar.title %}<a href={{ page.permalink | absolute_url }} style="font-size:$type-size-6; color: #2174b6; text-decoration: none; font-weight: bold;">{{ page.sidebar.title }}</a>{% endif %}
   <ul class="nav__items">
   {% for nav in navigation %}
     {% if page.lang=='kr' %}
       {% if nav.titlekr %}
         {% assign navtitle=nav.titlekr %}
+        {% if nav.urlkr %}
+          {% assign navurl=nav.urlkr %}
+        {% else %}
+          {% assign navurl=nav.url %}
+        {% endif %}
       {% else %}
-        {% assign navtitle=nav.title %}
-      {% endif %}
-      {% if nav.urlkr %}
-        {% assign navurl=nav.urlkr %}
-      {% else %}
-        {% assign navurl=nav.url %}
-      {% endif %}
-    {% elsif page.lang=='jp' %}
-      {% if nav.titlejp %}
-        {% assign navtitle=nav.titlejp %}
-      {% else %}
-        {% assign navtitle=nav.title %}
-      {% endif %}
-      {% if nav.urljp %}
-        {% assign navurl=nav.urljp %}
-      {% else %}
-        {% assign navurl=nav.url %}
-      {% endif %}
-    {% elsif page.lang=='cn' %}
-      {% if nav.titlecn %}
-        {% assign navtitle=nav.titlecn %}
-      {% else %}
-        {% assign navtitle=nav.title %}
-      {% endif %}
-      {% if nav.urlcn %}
-        {% assign navurl=nav.urlcn %}
-      {% else %}
-        {% assign navurl=nav.url %}
+        {% assign navtitle=null %}
+        {% assign navurl=null %}
       {% endif %}
     {% else %}
-      {% assign navtitle=nav.title %}
-      {% assign navurl=nav.url %}
+      {% if nav.title %}
+        {% assign navtitle=nav.title %}
+      {% else %}
+        {% assign navtitle=null %}
+      {% endif %}
+      {% if nav.url %}
+        {% assign navurl=nav.url %}
+      {% else %}
+        {% assign navurl=null %}
+      {% endif %}
     {% endif %}
 
-    {% if nav.children != null %}
-
-    <li class="has-children">
-      <input type="checkbox" name="toplevel_{{ forloop.index0 }}" id="toplevel_{{ forloop.index0 }}">
-      <label for="toplevel_{{ forloop.index0 }}">{{ navtitle }}</label>
+    {% if navtitle==null %}
     {% else %}
 
-    <li>
-      <a href="{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ navurl }}">{{ navtitle }}</a>
-    </li>
-    {% endif %}
+      {% if nav.children != null %}
+      <li class="has-children">
+        <input type="radio" name="toplevel" id="toplevel_{{ forloop.index }}">
+        <label for="toplevel_{{ forloop.index }}"><button class="tocLevel1" onclick="movetopage('{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ navurl }}');">{{ forloop.index }}. {{ navtitle }}</button> [+]</label>
+      {% else %}
+      <li>
+        <a href="{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ navurl }}">{{ forloop.index }}. {{ navtitle }}</a>
+      </li>
+      {% endif %}
 
-    {% if nav.children != null %}
-      <ul>
-      {% for child in nav.children %}
-        {% comment %} set "active" class on current page {% endcomment %}
-        {% if child.url == page.url %}
-          {% assign active = "active" %}
-        {% else %}
-          {% assign active = "" %}
-        {% endif %}
+      {% if nav.children != null %}
+        <ul>
+        {% assign child_index = 0 %}
+        {% for child in nav.children %}
 
-        {% if page.lang=='kr' %}
-          {% if child.titlekr %}
-            {% assign childtitle=child.titlekr %}
-          {% else %}
-            {% assign childtitle=child.title %}
-          {% endif %}
-          {% if child.urlkr %}
-            {% assign childurl=child.urlkr %}
-          {% else %}
-            {% assign childurl=child.url %}
-          {% endif %}
-        {% elsif page.lang=='jp' %}
-          {% if child.titlejp %}
-            {% assign childtitle=child.titlejp %}
-          {% else %}
-            {% assign childtitle=child.title %}
-          {% endif %}
-          {% if child.urljp %}
-            {% assign childurl=child.urljp %}
-          {% else %}
-            {% assign childurl=child.url %}
-          {% endif %}
-        {% elsif page.lang=='cn' %}
-          {% if child.titlecn %}
-            {% assign childtitle=child.titlecn %}
-          {% else %}
-            {% assign childtitle=child.title %}
-          {% endif %}
-          {% if child.urlcn %}
-            {% assign childurl=child.urlcn %}
-          {% else %}
-            {% assign childurl=child.url %}
-          {% endif %}
-        {% else %}
-          {% assign childtitle=child.title %}
-          {% assign childurl=child.url %}
-        {% endif %}
-
-        {% if child.children != null %}
-        <li class="has-children">
-          <input type="checkbox" name="sublevel_{{ forloop.index0 }}" id="sublevel_{{ forloop.index0 }}">
-          <label for="sublevel_{{ forloop.index0 }}">{{ childtitle }}</label>
-        {% else %}
-        <li><a href="{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ childurl }}" class="{{ active }}">{{ childtitle }}</a></li>
-        {% endif %}
-
-        {% if child.children != null %}
-          <ul>
-          {% for grandchild in child.children %}
-            {% comment %} set "active" class on current page {% endcomment %}
-            {% if grandchild.url == page.url %}
-              {% assign active = "active" %}
-            {% else %}
-              {% assign active = "" %}
-            {% endif %}
-
-            {% if page.lang=='kr' %}
-              {% if grandchild.titlekr %}
-                {% assign grandchildtitle=grandchild.titlekr %}
+          {% if page.lang=='kr' %}
+            {% if child.titlekr %}
+              {% assign childtitle=child.titlekr %}
+              {% if child.urlkr %}
+                {% assign childurl=child.urlkr %}
               {% else %}
-                {% assign grandchildtitle=grandchild.title %}
-              {% endif %}
-              {% if grandchild.urlkr %}
-                {% assign grandchildurl=grandchild.urlkr %}
-              {% else %}
-                {% assign grandchildurl=grandchild.url %}
-              {% endif %}
-            {% elsif page.lang=='jp' %}
-              {% if grandchild.titlejp %}
-                {% assign grandchildtitle=grandchild.titlejp %}
-              {% else %}
-                {% assign grandchildtitle=grandchild.title %}
-              {% endif %}
-              {% if grandchild.urljp %}
-                {% assign grandchildurl=grandchild.urljp %}
-              {% else %}
-                {% assign grandchildurl=grandchild.url %}
-              {% endif %}
-            {% elsif page.lang=='cn' %}
-              {% if grandchild.titlecn %}
-                {% assign grandchildtitle=grandchild.titlecn %}
-              {% else %}
-                {% assign grandchildtitle=grandchild.title %}
-              {% endif %}
-              {% if grandchild.urlcn %}
-                {% assign grandchildurl=grandchild.urlcn %}
-              {% else %}
-                {% assign grandchildurl=grandchild.url %}
+                {% assign childurl=child.url %}
               {% endif %}
             {% else %}
-              {% assign grandchildtitle=grandchild.title %}
-              {% assign grandchildurl=grandchild.url %}
+              {% assign childtitle=null %}
+              {% assign childurl=null %}
             {% endif %}
+          {% else %}
+            {% assign childtitle=child.title %}
+            {% assign childurl=child.url %}
+          {% endif %}
 
-            <li>
-              <a href="{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ grandchildurl }}" class="{{ active }}" style="font-style:italic;">{{ grandchildtitle }}</a>
-            </li>
-          {% endfor %}
-          </ul>
-        {% endif %}
-        {% if child.children != null %}
-        </li>
-        {% endif %}
-      {% endfor %}
-      </ul>
-    {% endif %}
-    {% if nav.children != null %}
-    </li>
+          {% if child.children != null %}
+            {% assign child_index = child_index | plus: 1 %}
+            <li class="has-children">
+              <input type="radio" name="sublevel" id="{{ navtitle }}_{{ child_index }}">
+              <label for="{{ navtitle }}_{{ child_index }}"><button class="tocLevel2" onclick="movetopage('{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ childurl }}');">{{ child_index }}. {{ childtitle }}</button> [+]</label>
+          {% else %}
+            {% if childtitle != null %}
+              {% assign child_index = child_index | plus: 1 %}
+              <li><a href="{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ childurl }}">{{ child_index }}. {{ childtitle }}</a></li>
+            {% endif %}
+          {% endif %}
+
+          {% if child.children != null %}
+            <ul>
+            {% for grandchild in child.children %}
+              {% if grandchild.url == page.url %}
+                {% assign active = "checked" %}
+              {% else %}
+                {% assign active = "" %}
+              {% endif %}
+
+              {% if page.lang=='kr' %}
+                {% if grandchild.titlekr %}
+                  {% assign grandchildtitle=grandchild.titlekr %}
+                  {% if grandchild.urlkr %}
+                    {% assign grandchildurl=grandchild.urlkr %}
+                  {% else %}
+                    {% assign grandchildurl=grandchild.url %}
+                  {% endif %}
+                {% else %}
+                  {% assign grandchildtitle=null %}
+                  {% assign grandchildurl=null %}
+                {% endif %}
+              {% else %}
+                {% assign grandchildtitle=grandchild.title %}
+                {% assign grandchildurl=grandchild.url %}
+              {% endif %}
+
+              {% if grandchildtitle != null %}
+                <li>
+                  <a href="{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ grandchildurl }}" style="font-style:italic;">{{ grandchildtitle }}</a>
+                </li>
+              {% endif %}
+              
+            {% endfor %}
+            </ul>
+          {% endif %}
+          {% if child.children != null %}
+          </li>
+          {% endif %}
+        {% endfor %}
+        </ul>
+      {% endif %}
+      {% if nav.children != null %}
+      </li>
+      {% endif %}
     {% endif %}
   {% endfor %}
   </ul>
+  <a href="#" style="font-size:$type-size-6; color: #2174b6; text-decoration: none; font-weight: bold;">Back to Top &#9650;</a>
 </nav>

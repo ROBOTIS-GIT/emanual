@@ -11,7 +11,7 @@ sidebar:
   nav: "thormang3"
 ---
 
-![](/emanual/assets/images/platform/thormang3/thormang3.png)
+<div style="counter-reset: h1 2"></div>
 
 # [Getting Started](#getting-started)
 
@@ -27,7 +27,7 @@ Ubuntu 16.04 LTS is installed on PCs in the THORMANG3 and the PC for Remote Cont
 
 This section explains how to configure the network for MPC(Motion PC) and PPC(Perception PC) of the robot, as well as the Wi-Fi switch and the OPC(Operating PC).
 
-![](/emanual/assets/images/platform/thormang3/THORMANG3_network_map.png)
+![](/assets/images/platform/thormang3/THORMANG3_network_map.png)
 
 ### [Access Point Setting](#access-point-setting)
 
@@ -38,8 +38,8 @@ This section explains how to configure the network for MPC(Motion PC) and PPC(Pe
   - user : admin
   - password : admin
 
-`Note` [DIR-806A Product Manual]
-{: .notice}
+    `Reference` [DIR-806A Product Manual]
+    {: .notice}
 
 #### AP Server
 
@@ -151,7 +151,7 @@ Above configuration has to be repeatedly done whenever a new terminal window is 
     $ source ~/.bashrc
     ```
 
-#### Example setting for OPC
+#### [Example setting for OPC](#example-setting-for-opc)
 
 1. Open the bash file with an editor to apply configuration.
     ```
@@ -247,7 +247,7 @@ Install the ROBOTIS ROS Package from the MPC. The ROS Package is installed by de
     $ catkin_make -j1
     ```
 
-3. :heavy_exclamation_mark: Find ft_calibration_data.yaml and ft_data.yaml from provided USB and copy them to thormang3_manager/config/.
+3. Find *ft_calibration_data.yaml* and *ft_data.yaml* from provided USB and copy them to `thormang3_manager/config/`.
 
 ### [PPC Installation](#ppc-installation)
 
@@ -301,7 +301,7 @@ Install the ROBOTIS ROS Package from the OPC.
 
 3. Troubling Shot for `libGL` in 64bit Ubuntu
 
-    `Note` Reference : [Link]
+    `Reference` : [Link]
     {: .notice}
 
 
@@ -337,7 +337,7 @@ $ git clone https://github.com/ros-drivers/urg_c
 $ git clone https://github.com/ros-perception/laser_proc
 ```
 
-`Note` Reference : http://wiki.ros.org/urg_node
+`Reference` : [http://wiki.ros.org/urg_node]
 {: .notice}
 
 ### [ROS Packages for PPC](#ros-packages-for-ppc)
@@ -350,11 +350,11 @@ $ cd ~/catkin_ws/src
 $ git clone https://github.com/ktossell/camera_umd
 ```
 
-`Note` Reference : http://wiki.ros.org/uvc_camera
+`Reference` : [http://wiki.ros.org/uvc_camera]
 {: .notice}
 
 #### realsense
-`Note` Reference : http://wiki.ros.org/RealSense
+`Reference` : [http://wiki.ros.org/RealSense]
 {: .notice}
 
 
@@ -365,3 +365,7 @@ $ git clone https://github.com/ktossell/camera_umd
 [ROS Network Setup Reference]: http://wiki.ros.org/ROS/NetworkSetup
 [sbpl install instruction]: https://github.com/sbpl/sbpl
 [Link]: http://techtidings.blogspot.kr/2012/01/problem-with-libglso-on-64-bit-ubuntu.html
+[http://wiki.ros.org/urg_node]:http://wiki.ros.org/urg_node
+[http://wiki.ros.org/RealSense]:http://wiki.ros.org/RealSense
+[http://wiki.ros.org/uvc_camera]:http://wiki.ros.org/uvc_camera
+[http://wiki.ros.org/RealSense]:http://wiki.ros.org/RealSense

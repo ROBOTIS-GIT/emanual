@@ -11,45 +11,15 @@
  */
 
 @mixin notice($notice-color) {
-  margin: 2em 0 !important;  /* override*/
+  margin-bottom: 1em !important;
+  margin-right: 0.5em !important;
   padding: 1em;
   font-family: $global-font-family;
-  font-size: 16px !important;
+  font-size: 0.9em !important;
   text-indent: initial; /* override*/
   background-color: mix(#fff, $notice-color, 90%);
   border-radius: $border-radius;
   box-shadow: 0 1px 1px rgba($notice-color, 0.25);
-
-  h4 {
-    margin-top: 0 !important; /* override*/
-    margin-bottom: 0.75em;
-  }
-
-  @at-root .page__content #{&} h4 {
-    /* using at-root to override .page-content h4 font size*/
-    margin-bottom: 0;
-    font-size: 1em;
-  }
-
-  p {
-    &:last-child {
-      margin-bottom: 0 !important; /* override*/
-    }
-  }
-
-  h4 + p {
-    /* remove space above paragraphs that appear directly after notice headline*/
-    margin-top: 0;
-    padding-top: 0;
-  }
-
-  a {
-    color: $notice-color;
-
-    &:hover {
-      color: mix(#000, $notice-color, 40%);
-    }
-  }
 
   code {
     background-color: mix(#fff, $notice-color, 95%)
@@ -58,42 +28,72 @@
   ul {
     &:last-child {
       margin-bottom: 0; /* override*/
+      margin-left: 0;
     }
+  }
+}
+
+@mixin notice-margin {
+  p, ol {
+    margin-left: 0 !important;
   }
 }
 
 /* Default notice */
 
 .notice {
-  @include notice($light-gray);
+  @include notice($gray);
+  @include notice-margin;
 }
 
 /* Primary notice */
 
 .notice--primary {
   @include notice($primary-color);
+  @include notice-margin;
 }
 
 /* Info notice */
 
 .notice--info {
   @include notice($info-color);
+  @include notice-margin;
 }
 
 /* Warning notice */
 
 .notice--warning {
   @include notice($warning-color);
+  @include notice-margin;
 }
 
 /* Success notice */
 
 .notice--success {
   @include notice($success-color);
+  @include notice-margin;
 }
 
 /* Danger notice */
 
 .notice--danger {
   @include notice($danger-color);
+  @include notice-margin;
+}
+
+p>code, a>code, li>code, td>code {
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  font-family: $monospace;
+  font-size: 0.8em;
+  white-space: nowrap;
+  border: 1px solid #000;
+  border-radius: $border-radius;
+  background-color: $code-background-color;
+  box-shadow: $box-shadow;
+  
+  &:before, &:after {
+    letter-spacing: -0.2em;
+    content: "\00a0";
+  }
 }

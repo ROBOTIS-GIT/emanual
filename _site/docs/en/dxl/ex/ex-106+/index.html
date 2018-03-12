@@ -19,7 +19,7 @@
 
 
 
-<title>ROBOTIS e-Manual</title>
+<title>EX-106+</title>
 
 
 
@@ -36,8 +36,8 @@
 <meta property="og:title" content="ROBOTIS e-Manual">
 
 
-  <link rel="canonical" href="http://localhost:4000/emanual/docs/en/dxl/ex/ex-106+/">
-  <meta property="og:url" content="http://localhost:4000/emanual/docs/en/dxl/ex/ex-106+/">
+  <link rel="canonical" href="http://localhost:4000/docs/en/dxl/ex/ex-106+/">
+  <meta property="og:url" content="http://localhost:4000/docs/en/dxl/ex/ex-106+/">
 
 
 
@@ -65,7 +65,7 @@
       "@context" : "http://schema.org",
       "@type" : "Person",
       "name" : "ROBOTIS",
-      "url" : "http://localhost:4000/emanual",
+      "url" : "http://localhost:4000",
       "sameAs" : null
     }
   </script>
@@ -78,7 +78,10 @@
 <!-- end SEO -->
 
 
-<link href="http://localhost:4000/emanual/feed.xml" type="application/atom+xml" rel="alternate" title="ROBOTIS e-Manual Feed">
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="ROBOTIS e-Manual Feed">
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- <script src="/assets/js/plugins/jquery.fitvids.js"></script> -->
 
 <!-- http://t.co/dKP3o1e -->
 <meta name="HandheldFriendly" content="True">
@@ -86,7 +89,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="http://localhost:4000/emanual/assets/css/main.css">
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
 
 <!--[if lte IE 9]>
   <style>
@@ -106,43 +109,1566 @@
 <meta http-equiv="cleartype" content="on">
 
     <!-- start custom head snippets -->
+<script>
+$(function() {
+  return $("h1, h2, h3, h4, h5, h6").each(function(i, el) {
+    var $el, icon, id;
+    $el = $(el);
+    id = $el.attr('id');
+    icon = '<i class="fa fa-link"></i>';
+    if (id) {
+      return $el.append($("<a />").addClass("header-link").attr("href", "#" + decodeURI(id)).attr("onclick", "copyurl(this);").html(icon));
+    }
+  });
+});
 
+$(function(){
+  $('h1').each(function(){
+    $(this).addClass('class-h1');
+  });
+  $('h2').each(function(){
+    $(this).addClass('class-h2');
+  });
+  $('h3').each(function(){
+    $(this).addClass('class-h3');
+  });
+  $('h4').each(function(){
+    $(this).addClass('class-h4');
+  });
+  $('h5').each(function(){
+    $(this).addClass('class-h5');
+  });
+  $('h6').each(function(){
+    $(this).addClass('class-h6');
+  });
+});
+
+$(function() {
+    $('h1, h2, h3, h4, h5, h6').each(function(i, e) {
+        $(e).nextUntil('h1, h2, h3, h4, h5, h6').wrapAll('<div>');
+    });
+
+});
+</script>
 <!-- insert favicons. use http://realfavicongenerator.net/ -->
-
+<link rel="shortcut icon" type="image/x-icon" href="//www.robotis.com/img/common/favicon_16x16_ver1701.ico">
 <!-- end custom head snippets -->
+
+    <script>
+      var toggle_google = 0;
+      var mobile_width = 960;
+      
+      function extendgoogletool() {
+        if (toggle_google == 0) {
+          google_tools.classList.add("extend_googletools");
+          switch_ko_en.classList.add("show_switch_ko_en");
+          toggle_google = 1;
+        }
+        else {
+          google_tools.classList.remove("extend_googletools");
+          switch_ko_en.classList.remove("show_switch_ko_en");
+          toggle_google = 0;
+        }
+      }
+    </script>
+    <script>
+    $(document).ready(function() {
+
+    	$('.popup').magnificPopup({
+    		type: 'ajax',
+    		alignTop: true,
+    		overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
+    	});
+      $('.popup2').magnificPopup({
+    		type: 'inline',
+    		alignTop: true,
+    		overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
+    	});
+    });
+    </script>
+    <script>
+      // var side_nav = document.getElementById("sidebar");
+      var offset = 105;
+    
+      window.onscroll = function () {
+        stickynav()
+      };
+      
+      function stickynav() {
+        if (window.pageYOffset > offset) {
+          sidebar__left.classList.add("sticky_sidebar");
+        }
+        else {
+          sidebar__left.classList.remove("sticky_sidebar");
+        }
+      }
+    </script>
+    <script>
+      var toggle = 0;
+      
+      function extendnav() {
+        if (toggle == 0) {
+          sidebar__left.classList.add("extend_sidebar");
+          toggle = 1;
+        }
+        else {
+          sidebar__left.classList.remove("extend_sidebar");
+          toggle = 0;
+        }
+      }
+    </script>
+    <script>
+      function copyurl(item)
+        {
+          // location.href = item.href;
+          var copiedurl = decodeURI(item.href);
+          var tempurl = $('<input>').val(copiedurl).appendTo('body').select();
+          document.execCommand('copy');
+          // console.log(copiedurl);
+          // document.getElementById(id).href;
+          // document.execCommand('copy');
+        }
+    </script>
+    <script>
+      function movetopage(targeturl)
+      {
+        location.href=targeturl;
+      }
+    </script>
   </head>
 
   <body class="layout--archive">
 
     <!--[if lt IE 9]>
-<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please upgrade your browser to improve your experience.</div>
 <![endif]-->
+
     <div class="masthead">
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> contents
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
-      <nav id="site-nav" class="greedy-nav">
-        <a class="site-title" href="http://localhost:4000/emanual/"><img src="/emanual/assets/images/robotis_logo.gif" style="padding-right:10px;">e-Manual</a>
+      <a class="site-title" href="http://localhost:4000/"><img class="logo" id="logo" src="/assets/images/robotis_emanual_logo.png"></a>
+      <!-- Google Custom Search -->
+      <form class="searchbox" method="get" id="site_search">
+        <script>
+          (function() {
+            var cx = '003548387656725317882:3pwl9jljqvi';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+          })();
+        </script>
+        <gcse:search></gcse:search>
+      </form>
+      <!-- end of Google Custom Search -->
+      <button class="google_button" id="google_button" onclick="extendgoogletool()"><img src="https://www.google.com/images/cleardot.gif" class="goog-te-gadget-icon" alt="" style="background-image: url(&quot;https://translate.googleapis.com/translate_static/img/te_ctrl3.gif&quot;); background-position: -65px 0px;"></button>
+      <div class="google_tools" id="google_tools">
+        <!-- Google Translation -->
+        <div id="google_translate_element"></div><script type="text/javascript">
+        function googleTranslateElementInit() {
+          new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'ar,de,es,fr,hi,ja,ko,pt,ru,sv,th,tr,vi,zh-CN', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, multilanguagePage: true, gaTrack: true, gaId: 'UA-83196341'}, 'google_translate_element');
+        }
+        </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        <!-- end of Google Translation -->
         
-        
-          <a href="http://localhost:4000/emanual/docs/en/dxl/ex/ex-106+/" class="en" style="color: #134268;padding-right:10px;">[en]</a>
-        
-<<<<<<< HEAD
 
-        <form method="get" id="site_search" style="margin:0 0 0 0; position:absolute; right:0; width:30%;">
-          <input type="text" id="search_box" name="query" placeholder="Search" style="padding:0 10px; margin-bottom:0;">
-=======
-        <form method="get" style="margin:0 0 0 0; position:absolute; right:0; width:30%;">
-          <input type="text" id="tipue_search_input" name="q" placeholder="Search" style="padding:0 10px; margin-bottom:0;">
->>>>>>> contents
-        </form>
-      </nav>
+        
+        
+        
+        <a href="http://localhost:4000/docs/kr/dxl/ex/ex-106+/"><button class="switch_ko_en" id="switch_ko_en">Korean</button></a>
+      </div>
+
+      <input class="menu-btn" type="checkbox" id="menu-btn" />
+      <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <ul class="mobile_nav__items">
+        
+
+          
+
+          
+          <li class="mobile_depth_1">
+            <input type="checkbox" name="mobile_nav_depth_1" id="DYNAMIXEL">
+            <label for="DYNAMIXEL">DYNAMIXEL</label>
+            <ul>
+            
+              
+
+              
+                
+                  <li class="mobile_depth_2">
+                    <input type="radio" name="sublevel" id="DYNAMIXELAX Series">
+                    <label for="DYNAMIXELAX Series">AX Series</label>
+                    <ul>
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/dxl/ax/ax-12w/" class="">AX-12W</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/dxl/ax/ax-12a/" class="">AX-12/12+/12A</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/" class="">AX-18F/18A</a>
+                        </li>
+                      
+                    
+                    </ul>
+                  </li>
+                
+              
+            
+              
+
+              
+                
+                  <li class="mobile_depth_2">
+                    <input type="radio" name="sublevel" id="DYNAMIXEL*EX Series">
+                    <label for="DYNAMIXEL*EX Series">*EX Series</label>
+                    <ul>
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/" class="">*EX-106+</a>
+                        </li>
+                      
+                    
+                    </ul>
+                  </li>
+                
+              
+            
+              
+
+              
+                
+                  <li class="mobile_depth_2">
+                    <input type="radio" name="sublevel" id="DYNAMIXEL*DX Series">
+                    <label for="DYNAMIXEL*DX Series">*DX Series</label>
+                    <ul>
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/dxl/dx/dx-113/" class="">*DX-113</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/dxl/dx/dx-116/" class="">*DX-116</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/dxl/dx/dx-117/" class="">*DX-117</a>
+                        </li>
+                      
+                    
+                    </ul>
+                  </li>
+                
+              
+            
+              
+
+              
+                
+                  <li class="mobile_depth_2">
+                    <input type="radio" name="sublevel" id="DYNAMIXEL*RX Series">
+                    <label for="DYNAMIXEL*RX Series">*RX Series</label>
+                    <ul>
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/dxl/rx/rx-10/" class="">*RX-10</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/dxl/rx/rx-24f/" class="">*RX-24F</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/dxl/rx/rx-28/" class="">*RX-28</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/dxl/rx/rx-64/" class="">*RX-64</a>
+                        </li>
+                      
+                    
+                    </ul>
+                  </li>
+                
+              
+            
+              
+
+              
+                
+                  <li class="mobile_depth_2">
+                    <input type="radio" name="sublevel" id="DYNAMIXELMX Series">
+                    <label for="DYNAMIXELMX Series">MX Series</label>
+                    <ul>
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/dxl/mx/mx-12w/" class="">MX-12W</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/dxl/mx/mx-28/" class="">MX-28T/R/AT/AR</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/dxl/mx/mx-28-2/" class="">MX-28T/R/AT/AR(2.0)</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/dxl/mx/mx-64/" class="">MX-64T/R/AT/AR</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/dxl/mx/mx-64-2/" class="">MX-64T/R/AT/AR(2.0)</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/dxl/mx/mx-106/" class="">MX-106T/R</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/dxl/mx/mx-106-2/" class="">MX-106T/R(2.0)</a>
+                        </li>
+                      
+                    
+                    </ul>
+                  </li>
+                
+              
+            
+              
+
+              
+                
+                  <li class="mobile_depth_2">
+                    <input type="radio" name="sublevel" id="DYNAMIXELX Series">
+                    <label for="DYNAMIXELX Series">X Series</label>
+                    <ul>
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/dxl/x/xl320/" class="">XL320</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/dxl/x/xl430-w250/" class="">XL430-W250</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/dxl/x/xm430-w210/" class="">XM430-W210</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/dxl/x/xm430-w350/" class="">XM430-W350</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/dxl/x/xm540-w150/" class="">XM540-W150</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/dxl/x/xm540-w270/" class="">XM540-W270</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/dxl/x/xh430-w210/" class="">XH430-W210</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/dxl/x/xh430-w350/" class="">XH430-W350</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/dxl/x/xh430-v210/" class="">XH430-V210</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/dxl/x/xh430-v350/" class="">XH430-V350</a>
+                        </li>
+                      
+                    
+                    </ul>
+                  </li>
+                
+              
+            
+              
+
+              
+                
+                  <li class="mobile_depth_2">
+                    <input type="radio" name="sublevel" id="DYNAMIXELPRO Series">
+                    <label for="DYNAMIXELPRO Series">PRO Series</label>
+                    <ul>
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/dxl/pro/h54-200-s500-r/" class="">H54-200-S500-R</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/dxl/pro/h54-100-s500-r/" class="">H54-100-S500-R</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/dxl/pro/h42-20-s300-r/" class="">H42-20-S300-R</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/dxl/pro/m54-60-s250-r/" class="">M54-60-S250-R</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/dxl/pro/m54-40-s250-r/" class="">M54-40-S250-R</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/dxl/pro/m42-10-s260-r/" class="">M42-10-S260-R</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/dxl/pro/l54-50-s500-r/" class="">*L54-50-S500-R</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/dxl/pro/l54-50-s290-r/" class="">*L54-50-S290-R</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/dxl/pro/l54-30-s500-r/" class="">*L54-30-S500-R</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/dxl/pro/l54-30-s400-r/" class="">*L54-30-S400-R</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/dxl/pro/l42-10-s300-r/" class="">*L42-10-S300-R</a>
+                        </li>
+                      
+                    
+                    </ul>
+                  </li>
+                
+              
+            
+              
+
+              
+                
+                  <li class="mobile_depth_2">
+                    <a href="http://localhost:4000/docs/en/dxl/protocol1/">Procotol 1.0</a>
+                  </li>
+                
+              
+            
+              
+
+              
+                
+                  <li class="mobile_depth_2">
+                    <a href="http://localhost:4000/docs/en/dxl/protocol2/">Protocol 2.0</a>
+                  </li>
+                
+              
+            
+            </ul>
+          
+
+          
+          </li>
+          
+        
+
+          
+
+          
+          <li class="mobile_depth_1">
+            <input type="checkbox" name="mobile_nav_depth_1" id="PLATFORM">
+            <label for="PLATFORM">PLATFORM</label>
+            <ul>
+            
+              
+
+              
+                
+                  <li class="mobile_depth_2">
+                    <a href="http://localhost:4000/docs/en/platform/op/getting_started/">*ROBOTIS OP</a>
+                  </li>
+                
+              
+            
+              
+
+              
+                
+                  <li class="mobile_depth_2">
+                    <a href="http://localhost:4000/docs/en/platform/op2/getting_started/">ROBOTIS OP2</a>
+                  </li>
+                
+              
+            
+              
+
+              
+                
+                  <li class="mobile_depth_2">
+                    <a href="http://localhost:4000/docs/en/platform/op3/introduction/">ROBOTIS OP3</a>
+                  </li>
+                
+              
+            
+              
+
+              
+                
+                  <li class="mobile_depth_2">
+                    <a href="http://localhost:4000/docs/en/platform/rh_p12_rn/">RH-P12-RN</a>
+                  </li>
+                
+              
+            
+              
+
+              
+                
+              
+            
+              
+
+              
+                
+              
+            
+              
+
+              
+                
+                  <li class="mobile_depth_2">
+                    <a href="http://localhost:4000/docs/en/platform/manipulator_h/introduction/">Manipulator-H</a>
+                  </li>
+                
+              
+            
+              
+
+              
+                
+                  <li class="mobile_depth_2">
+                    <a href="http://localhost:4000/docs/en/platform/thormang3/introduction/">THORMANG3</a>
+                  </li>
+                
+              
+            
+              
+
+              
+                
+                  <li class="mobile_depth_2">
+                    <a href="http://localhost:4000/docs/en/platform/turtlebot3/overview/">TurtleBot3</a>
+                  </li>
+                
+              
+            
+              
+
+              
+                
+                  <li class="mobile_depth_2">
+                    <a href="http://localhost:4000/docs/en/platform/openmanipulator/">OpenManipulator</a>
+                  </li>
+                
+              
+            
+            </ul>
+          
+
+          
+          </li>
+          
+        
+
+          
+
+          
+          <li class="mobile_depth_1">
+            <input type="checkbox" name="mobile_nav_depth_1" id="STEAM">
+            <label for="STEAM">STEAM</label>
+            <ul>
+            
+              
+
+              
+                
+                  <li class="mobile_depth_2">
+                    <input type="radio" name="sublevel" id="STEAM*OLLO">
+                    <label for="STEAM*OLLO">*OLLO</label>
+                    <ul>
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/edu/ollo/bugkit/" class="">*BUG KIT</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/edu/ollo/explorer/" class="">*EXPLORER</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/edu/ollo/inventor/" class="">*INVENTOR</a>
+                        </li>
+                      
+                    
+                      
+                      
+                    
+                    </ul>
+                  </li>
+                
+              
+            
+              
+
+              
+                
+                  <li class="mobile_depth_2">
+                    <input type="radio" name="sublevel" id="STEAMDREAM">
+                    <label for="STEAMDREAM">DREAM</label>
+                    <ul>
+                    
+                      
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/edu/dream/dream1-2/" class="">LEVEL 2</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/edu/dream/dream1-3/" class="">LEVEL 3</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/edu/dream/dream1-4/" class="">LEVEL 4</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/edu/dream/dream-a/" class="">SET A</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/edu/dream/dream-b/" class="">SET B</a>
+                        </li>
+                      
+                    
+                    </ul>
+                  </li>
+                
+              
+            
+              
+
+              
+                
+                  <li class="mobile_depth_2">
+                    <input type="radio" name="sublevel" id="STEAMDream II">
+                    <label for="STEAMDream II">Dream II</label>
+                    <ul>
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/edu/dream/dream2-1/" class="">LEVEL 1</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/edu/dream/dream2-2/" class="">LEVEL 2</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/edu/dream/dream2-3/" class="">LEVEL 3</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/edu/dream/dream2-4/" class="">LEVEL 4</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/edu/dream/dream2-5/" class="">LEVEL 5</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/edu/dream/dream2-schoolset/" class="">School Set</a>
+                        </li>
+                      
+                    
+                    </ul>
+                  </li>
+                
+              
+            
+              
+
+              
+                
+              
+            
+              
+
+              
+                
+              
+            
+              
+
+              
+                
+              
+            
+              
+
+              
+                
+              
+            
+              
+
+              
+                
+                  <li class="mobile_depth_2">
+                    <input type="radio" name="sublevel" id="STEAMBIOLOID">
+                    <label for="STEAMBIOLOID">BIOLOID</label>
+                    <ul>
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/edu/bioloid/beginner/" class="">Beginner Level</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/edu/bioloid/comprehensive/" class="">Comprehensive Level</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/edu/bioloid/stem/" class="">ROBOTIS STEM</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/edu/bioloid/premium/" class="">ROBOTIS PREMIUM</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/edu/bioloid/gp/" class="">ROBOTIS GP</a>
+                        </li>
+                      
+                    
+                    </ul>
+                  </li>
+                
+              
+            
+              
+
+              
+                
+                  <li class="mobile_depth_2">
+                    <a href="http://localhost:4000/docs/en/edu/mini/">ROBOTIS MINI</a>
+                  </li>
+                
+              
+            
+            </ul>
+          
+
+          
+          </li>
+          
+        
+
+          
+
+          
+          <li class="mobile_depth_1">
+            <input type="checkbox" name="mobile_nav_depth_1" id="SOFTWARE">
+            <label for="SOFTWARE">SOFTWARE</label>
+            <ul>
+            
+              
+
+              
+                
+                  <li class="mobile_depth_2">
+                    <input type="radio" name="sublevel" id="SOFTWAREDYNAMIXEL">
+                    <label for="SOFTWAREDYNAMIXEL">DYNAMIXEL</label>
+                    <ul>
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/software/dynamixel/dynamixel_sdk/overview/" class="">DYNAMIXEL SDK</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/software/dynamixel/dynamixel_workbench/" class="">DYNAMIXEL-Workbench</a>
+                        </li>
+                      
+                    
+                    </ul>
+                  </li>
+                
+              
+            
+              
+
+              
+                
+                  <li class="mobile_depth_2">
+                    <input type="radio" name="sublevel" id="SOFTWAREMobile Apps">
+                    <label for="SOFTWAREMobile Apps">Mobile Apps</label>
+                    <ul>
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/software/mobile_app/mini_app/" class="">ROBOTIS MINI</a>
+                        </li>
+                      
+                    
+                    </ul>
+                  </li>
+                
+              
+            
+              
+
+              
+                
+                  <li class="mobile_depth_2">
+                    <input type="radio" name="sublevel" id="SOFTWARER+ 1.0">
+                    <label for="SOFTWARER+ 1.0">R+ 1.0</label>
+                    <ul>
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/software/rplus1/task/getting_started/" class="">R+ Task</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/software/rplus1/manager/" class="">R+ Manager</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/software/rplus1/motion/" class="">R+ Motion</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/software/rplus1/dynamixel_wizard/" class="">Dynamixel Wizard</a>
+                        </li>
+                      
+                    
+                    </ul>
+                  </li>
+                
+              
+            
+              
+
+              
+                
+                  <li class="mobile_depth_2">
+                    <input type="radio" name="sublevel" id="SOFTWARER+ 2.0">
+                    <label for="SOFTWARER+ 2.0">R+ 2.0</label>
+                    <ul>
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/software/rplus2/task/" class="">R+ Task 2.0</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/software/rplus2/manager/" class="">R+ Manager 2.0</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/software/rplus2/motion/" class="">R+ Motion 2.0</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/software/rplus2/design/" class="">R+ Design 2.0</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/software/rplus2/scratch/" class="">R+ Scratch</a>
+                        </li>
+                      
+                    
+                    </ul>
+                  </li>
+                
+              
+            
+              
+
+              
+                
+                  <li class="mobile_depth_2">
+                    <input type="radio" name="sublevel" id="SOFTWARER+ Mobile">
+                    <label for="SOFTWARER+ Mobile">R+ Mobile</label>
+                    <ul>
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/software/rplus_mobile/mmotion/" class="">R+ m.Motion 2.0</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/software/rplus_mobile/mdesign/" class="">R+ m.Design</a>
+                        </li>
+                      
+                    
+                    </ul>
+                  </li>
+                
+              
+            
+              
+
+              
+                
+                  <li class="mobile_depth_2">
+                    <input type="radio" name="sublevel" id="SOFTWAREEMBEDDED SDK">
+                    <label for="SOFTWAREEMBEDDED SDK">EMBEDDED SDK</label>
+                    <ul>
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/software/embedded_sdk/embedded_c_cm510/" class="">Embedded C(CM-510/700)</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/software/embedded_sdk/embedded_c_cm530/" class="">Embedded C(CM-530)</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/software/embedded_sdk/zigbee_sdk/" class="">ZIGBEE SDK</a>
+                        </li>
+                      
+                    
+                    </ul>
+                  </li>
+                
+              
+            
+              
+
+              
+                
+                  <li class="mobile_depth_2">
+                    <a href="http://localhost:4000/docs/en/software/opencm_ide/getting_started/">OpenCM IDE</a>
+                  </li>
+                
+              
+            
+              
+
+              
+                
+                  <li class="mobile_depth_2">
+                    <a href="http://localhost:4000/docs/en/software/robotis_framework_packages/">ROBOTIS Framework Packages</a>
+                  </li>
+                
+              
+            
+            </ul>
+          
+
+          
+          </li>
+          
+        
+
+          
+
+          
+          <li class="mobile_depth_1">
+            <input type="checkbox" name="mobile_nav_depth_1" id="PARTS">
+            <label for="PARTS">PARTS</label>
+            <ul>
+            
+              
+
+              
+                
+                  <li class="mobile_depth_2">
+                    <input type="radio" name="sublevel" id="PARTSController">
+                    <label for="PARTSController">Controller</label>
+                    <ul>
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/parts/controller/cm-100/" class="">*CM-100A</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/parts/controller/cm-150/" class="">CM-150</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/parts/controller/cm-200/" class="">CM-200</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/parts/controller/cm-5/" class="">*CM-5</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/parts/controller/cm-510/" class="">*CM-510</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/parts/controller/cm-530/" class="">CM-530</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/parts/controller/cm-700/" class="">CM-700</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/parts/controller/cm-900/" class="">*CM-900</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/parts/controller/opencm904/" class="">OpenCM 9.04</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/parts/controller/opencm485exp/" class="">OpenCM 485 EXP</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/parts/controller/opencr10/" class="">OpenCR</a>
+                        </li>
+                      
+                    
+                    </ul>
+                  </li>
+                
+              
+            
+              
+
+              
+                
+                  <li class="mobile_depth_2">
+                    <input type="radio" name="sublevel" id="PARTSCommunication">
+                    <label for="PARTSCommunication">Communication</label>
+                    <ul>
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/parts/communication/rc-100/" class="">RC-100A/100B</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/parts/communication/zig-110/" class="">*ZIG-100/110A</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/parts/communication/bt-110/" class="">*BT-100/110A</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/parts/communication/bt-210/" class="">BT-210</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/parts/communication/bt-410/" class="">BT-410</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/parts/communication/bt-410-dongle/" class="">BT-410 Dongle</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/parts/communication/zig2serial/" class="">ZIG2Serial</a>
+                        </li>
+                      
+                    
+                    </ul>
+                  </li>
+                
+              
+            
+              
+
+              
+                
+                  <li class="mobile_depth_2">
+                    <input type="radio" name="sublevel" id="PARTSMotors">
+                    <label for="PARTSMotors">Motors</label>
+                    <ul>
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/parts/motor/gm-10a/" class="">Geared Motor(GM-10A)</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/parts/motor/h_speed_geared_motor/" class="">*High Speed Geared Motor</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/parts/motor/l_speed_geared_motor/" class="">Low Speed Geared Motor</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/parts/motor/servo_motor/" class="">Servo Motor(SM-10)</a>
+                        </li>
+                      
+                    
+                    </ul>
+                  </li>
+                
+              
+            
+              
+
+              
+                
+                  <li class="mobile_depth_2">
+                    <input type="radio" name="sublevel" id="PARTSInterface">
+                    <label for="PARTSInterface">Interface</label>
+                    <ul>
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/parts/interface/ln-101/" class="">LN-101</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/parts/interface/usb2dynamixel/" class="">USB2DYNAMIXEL</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/parts/interface/u2d2/" class="">U2D2</a>
+                        </li>
+                      
+                    
+                    </ul>
+                  </li>
+                
+              
+            
+              
+
+              
+                
+                  <li class="mobile_depth_2">
+                    <input type="radio" name="sublevel" id="PARTSSensors">
+                    <label for="PARTSSensors">Sensors</label>
+                    <ul>
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/parts/sensor/irss-10/" class="">IR Sensor(IRSS-10)</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/parts/sensor/dms-80/" class="">Distance Sensor(DMS-80)</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/parts/sensor/ts-10/" class="">Touch Sensor(TS-10)</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/parts/sensor/ax-s1/" class="">*Integrated Sensor(AX-S1)</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/parts/sensor/gs-12/" class="">Gyro Sensor(GS-12)</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/parts/sensor/ir-array/" class="">IR Array Sensor</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/parts/sensor/cs-10/" class="">Color Sensor(CS-10)</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/parts/sensor/mgss-10/" class="">Magnetic Sensor(MGSS-10)</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/parts/sensor/tps-10/" class="">Temperature Sensor(TPS-10)</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/parts/sensor/pir-10/" class="">Motion Sensor(PIR-10)</a>
+                        </li>
+                      
+                    
+                      
+                      
+                    
+                      
+                      
+                    
+                    </ul>
+                  </li>
+                
+              
+            
+              
+
+              
+                
+                  <li class="mobile_depth_2">
+                    <input type="radio" name="sublevel" id="PARTSDisplay">
+                    <label for="PARTSDisplay">Display</label>
+                    <ul>
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/parts/display/lm-10/" class="">LED Module(LM-10)</a>
+                        </li>
+                      
+                    
+                    </ul>
+                  </li>
+                
+              
+            
+            </ul>
+          
+
+          
+          </li>
+          
+        
+
+          
+
+          
+          <li class="mobile_depth_1">
+            <a href="http://localhost:4000/docs/en/faq/">FAQ</a>
+          </li>
+          
+
+          
+        
+        </ul>
+
     </div>
 
-    <div class="container">
+    <div class="container" id="container">
       
         
 
@@ -160,8 +1686,6 @@
               
 
               
-
-              
                 
                 <a>AX Series</a>
               
@@ -172,28 +1696,22 @@
                   
 
                   
-
-                  
                     
-                      <a href="http://localhost:4000/emanual/docs/en/dxl/ax/ax-12w/">AX-12W</a>
+                      <a href="http://localhost:4000/docs/en/dxl/ax/ax-12w/">AX-12W</a>
                     
                 
                   
 
                   
-
-                  
                     
-                      <a href="http://localhost:4000/emanual/docs/en/dxl/ax/ax-12a/">AX-12/12+/12A</a>
+                      <a href="http://localhost:4000/docs/en/dxl/ax/ax-12a/">AX-12/12+/12A</a>
                     
                 
                   
 
                   
-
-                  
                     
-                      <a href="http://localhost:4000/emanual/docs/en/dxl/ax/ax-18a/">AX-18F/18A</a>
+                      <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/">AX-18F/18A</a>
                     
                 
               </div>
@@ -205,10 +1723,8 @@
               
 
               
-
-              
                 
-                <a>EX Series</a>
+                <a><font color=#cccccc>*EX Series</font></a>
               
 
               
@@ -217,10 +1733,8 @@
                   
 
                   
-
-                  
                     
-                      <a href="http://localhost:4000/emanual/docs/en/dxl/ex/ex-106+/">EX-106+</a>
+                      <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/"><font color=#cccccc>*EX-106+</font></a>
                     
                 
               </div>
@@ -232,10 +1746,8 @@
               
 
               
-
-              
                 
-                <a>DX Series</a>
+                <a><font color=#cccccc>*DX Series</font></a>
               
 
               
@@ -244,25 +1756,22 @@
                   
 
                   
-
-                  
-                    <a>DX-113</a>
+                    
+                      <a href="http://localhost:4000/docs/en/dxl/dx/dx-113/"><font color=#cccccc>*DX-113</font></a>
                     
                 
                   
 
                   
-
-                  
-                    <a>DX-116</a>
+                    
+                      <a href="http://localhost:4000/docs/en/dxl/dx/dx-116/"><font color=#cccccc>*DX-116</font></a>
                     
                 
                   
 
                   
-
-                  
-                    <a>DX-117</a>
+                    
+                      <a href="http://localhost:4000/docs/en/dxl/dx/dx-117/"><font color=#cccccc>*DX-117</font></a>
                     
                 
               </div>
@@ -274,10 +1783,8 @@
               
 
               
-
-              
                 
-                <a>RX Series</a>
+                <a><font color=#cccccc>*RX Series</font></a>
               
 
               
@@ -286,33 +1793,29 @@
                   
 
                   
-
-                  
-                    <a>RX-10</a>
+                    
+                      <a href="http://localhost:4000/docs/en/dxl/rx/rx-10/"><font color=#cccccc>*RX-10</font></a>
                     
                 
                   
 
                   
-
-                  
-                    <a>RX-24F</a>
+                    
+                      <a href="http://localhost:4000/docs/en/dxl/rx/rx-24f/"><font color=#cccccc>*RX-24F</font></a>
                     
                 
                   
 
                   
-
-                  
-                    <a>RX-28</a>
+                    
+                      <a href="http://localhost:4000/docs/en/dxl/rx/rx-28/"><font color=#cccccc>*RX-28</font></a>
                     
                 
                   
 
                   
-
-                  
-                    <a>RX-64</a>
+                    
+                      <a href="http://localhost:4000/docs/en/dxl/rx/rx-64/"><font color=#cccccc>*RX-64</font></a>
                     
                 
               </div>
@@ -321,8 +1824,6 @@
             </div>
             
               <div class="dropdown-content-wrapper">
-              
-
               
 
               
@@ -336,33 +1837,50 @@
                   
 
                   
-
-                  
-                    <a>MX-12W</a>
+                    
+                      <a href="http://localhost:4000/docs/en/dxl/mx/mx-12w/">MX-12W</a>
                     
                 
                   
 
                   
-
-                  
-                    <a>MX-28T/R/AT/AR</a>
+                    
+                      <a href="http://localhost:4000/docs/en/dxl/mx/mx-28/">MX-28T/R/AT/AR</a>
                     
                 
                   
 
                   
-
-                  
-                    <a>MX-64T/R/AT/AR</a>
+                    
+                      <a href="http://localhost:4000/docs/en/dxl/mx/mx-28-2/">MX-28T/R/AT/AR(2.0)</a>
                     
                 
                   
 
                   
+                    
+                      <a href="http://localhost:4000/docs/en/dxl/mx/mx-64/">MX-64T/R/AT/AR</a>
+                    
+                
+                  
 
                   
-                    <a>MX-106T/R</a>
+                    
+                      <a href="http://localhost:4000/docs/en/dxl/mx/mx-64-2/">MX-64T/R/AT/AR(2.0)</a>
+                    
+                
+                  
+
+                  
+                    
+                      <a href="http://localhost:4000/docs/en/dxl/mx/mx-106/">MX-106T/R</a>
+                    
+                
+                  
+
+                  
+                    
+                      <a href="http://localhost:4000/docs/en/dxl/mx/mx-106-2/">MX-106T/R(2.0)</a>
                     
                 
               </div>
@@ -371,8 +1889,6 @@
             </div>
             
               <div class="dropdown-content-wrapper">
-              
-
               
 
               
@@ -386,66 +1902,71 @@
                   
 
                   
-
-                  
-                    <a>XL320</a>
+                    
+                      <a href="http://localhost:4000/docs/en/dxl/x/xl320/">XL320</a>
                     
                 
                   
 
                   
-
-                  
-                    <a>XL430-W250</a>
+                    
+                      <a href="http://localhost:4000/docs/en/dxl/x/xl430-w250/">XL430-W250</a>
                     
                 
                   
 
                   
-
-                  
-                    <a>XM430-W210</a>
+                    
+                      <a href="http://localhost:4000/docs/en/dxl/x/xm430-w210/">XM430-W210</a>
                     
                 
                   
 
                   
-
-                  
-                    <a>XM430-W350</a>
+                    
+                      <a href="http://localhost:4000/docs/en/dxl/x/xm430-w350/">XM430-W350</a>
                     
                 
                   
 
                   
-
-                  
                     
-                      <a href="http://localhost:4000/emanual/docs/en/dxl/x/xh430-w210/">XH430-W210</a>
+                      <a href="http://localhost:4000/docs/en/dxl/x/xm540-w150/">XM540-W150</a>
                     
                 
                   
 
                   
-
-                  
-                    <a>XH430-W350</a>
+                    
+                      <a href="http://localhost:4000/docs/en/dxl/x/xm540-w270/">XM540-W270</a>
                     
                 
                   
 
                   
-
-                  
-                    <a>XH430-V210</a>
+                    
+                      <a href="http://localhost:4000/docs/en/dxl/x/xh430-w210/">XH430-W210</a>
                     
                 
                   
 
                   
+                    
+                      <a href="http://localhost:4000/docs/en/dxl/x/xh430-w350/">XH430-W350</a>
+                    
+                
+                  
 
                   
-                    <a>XH430-V350</a>
+                    
+                      <a href="http://localhost:4000/docs/en/dxl/x/xh430-v210/">XH430-V210</a>
+                    
+                
+                  
+
+                  
+                    
+                      <a href="http://localhost:4000/docs/en/dxl/x/xh430-v350/">XH430-V350</a>
                     
                 
               </div>
@@ -457,10 +1978,115 @@
               
 
               
+                
+                <a>PRO Series</a>
+              
+
+              
+              <div class="dropdown-2nd-content">
+                
+                  
+
+                  
+                    
+                      <a href="http://localhost:4000/docs/en/dxl/pro/h54-200-s500-r/">H54-200-S500-R</a>
+                    
+                
+                  
+
+                  
+                    
+                      <a href="http://localhost:4000/docs/en/dxl/pro/h54-100-s500-r/">H54-100-S500-R</a>
+                    
+                
+                  
+
+                  
+                    
+                      <a href="http://localhost:4000/docs/en/dxl/pro/h42-20-s300-r/">H42-20-S300-R</a>
+                    
+                
+                  
+
+                  
+                    
+                      <a href="http://localhost:4000/docs/en/dxl/pro/m54-60-s250-r/">M54-60-S250-R</a>
+                    
+                
+                  
+
+                  
+                    
+                      <a href="http://localhost:4000/docs/en/dxl/pro/m54-40-s250-r/">M54-40-S250-R</a>
+                    
+                
+                  
+
+                  
+                    
+                      <a href="http://localhost:4000/docs/en/dxl/pro/m42-10-s260-r/">M42-10-S260-R</a>
+                    
+                
+                  
+
+                  
+                    
+                      <a href="http://localhost:4000/docs/en/dxl/pro/l54-50-s500-r/"><font color=#cccccc>*L54-50-S500-R</font></a>
+                    
+                
+                  
+
+                  
+                    
+                      <a href="http://localhost:4000/docs/en/dxl/pro/l54-50-s290-r/"><font color=#cccccc>*L54-50-S290-R</font></a>
+                    
+                
+                  
+
+                  
+                    
+                      <a href="http://localhost:4000/docs/en/dxl/pro/l54-30-s500-r/"><font color=#cccccc>*L54-30-S500-R</font></a>
+                    
+                
+                  
+
+                  
+                    
+                      <a href="http://localhost:4000/docs/en/dxl/pro/l54-30-s400-r/"><font color=#cccccc>*L54-30-S400-R</font></a>
+                    
+                
+                  
+
+                  
+                    
+                      <a href="http://localhost:4000/docs/en/dxl/pro/l42-10-s300-r/"><font color=#cccccc>*L42-10-S300-R</font></a>
+                    
+                
+              </div>
+              
+
+            </div>
+            
+              <div class="dropdown-content-wrapper">
+              
 
               
                 
-                <a>PRO Series</a>
+                  
+                    <a href="http://localhost:4000/docs/en/dxl/protocol1/">Procotol 1.0</a>
+              
+
+              
+
+            </div>
+            
+              <div class="dropdown-content-wrapper">
+              
+
+              
+                
+                  
+                    <a href="http://localhost:4000/docs/en/dxl/protocol2/">Protocol 2.0</a>
               
 
               
@@ -488,10 +2114,9 @@
               
 
               
-
-              
                 
-                <a>OP</a>
+                  
+                    <a href="http://localhost:4000/docs/en/platform/op/getting_started/"><font color=#cccccc>*ROBOTIS OP</font></a>
               
 
               
@@ -499,84 +2124,38 @@
             </div>
             
               <div class="dropdown-content-wrapper">
-              
-
-              
-
-              
-                
-                <a>OP2</a>
-              
-
-              
-
-            </div>
-            
-              <div class="dropdown-content-wrapper">
-              
-
-              
-
-              
-                
-                <a>OP3</a>
-              
-
-              
-
-            </div>
-            
-              <div class="dropdown-content-wrapper">
-              
-
-              
-
-              
-                
-                <a>Hand RX28</a>
-              
-
-              
-
-            </div>
-            
-              <div class="dropdown-content-wrapper">
-              
-
-              
-
-              
-                
-                <a>Hand MX28</a>
-              
-
-              
-
-            </div>
-            
-              <div class="dropdown-content-wrapper">
-              
-
-              
-
-              
-                
-                <a>Manipulator-H</a>
-              
-
-              
-
-            </div>
-            
-              <div class="dropdown-content-wrapper">
-              
-
               
 
               
                 
                   
-                    <a href="http://localhost:4000/emanual/docs/en/platform/thormang3/getting_started/">Thormang3</a>
+                    <a href="http://localhost:4000/docs/en/platform/op2/getting_started/">ROBOTIS OP2</a>
+              
+
+              
+
+            </div>
+            
+              <div class="dropdown-content-wrapper">
+              
+
+              
+                
+                  
+                    <a href="http://localhost:4000/docs/en/platform/op3/introduction/">ROBOTIS OP3</a>
+              
+
+              
+
+            </div>
+            
+              <div class="dropdown-content-wrapper">
+              
+
+              
+                
+                  
+                    <a href="http://localhost:4000/docs/en/platform/rh_p12_rn/">RH-P12-RN</a>
               
 
               
@@ -589,8 +2168,64 @@
               
 
               
+
+            </div>
+            
+              <div class="dropdown-content-wrapper">
+              
+
+              
+
+              
+
+            </div>
+            
+              <div class="dropdown-content-wrapper">
+              
+
+              
                 
-                <a>TurtleBot3</a>
+                  
+                    <a href="http://localhost:4000/docs/en/platform/manipulator_h/introduction/">Manipulator-H</a>
+              
+
+              
+
+            </div>
+            
+              <div class="dropdown-content-wrapper">
+              
+
+              
+                
+                  
+                    <a href="http://localhost:4000/docs/en/platform/thormang3/introduction/">THORMANG3</a>
+              
+
+              
+
+            </div>
+            
+              <div class="dropdown-content-wrapper">
+              
+
+              
+                
+                  
+                    <a href="http://localhost:4000/docs/en/platform/turtlebot3/overview/">TurtleBot3</a>
+              
+
+              
+
+            </div>
+            
+              <div class="dropdown-content-wrapper">
+              
+
+              
+                
+                  
+                    <a href="http://localhost:4000/docs/en/platform/openmanipulator/">OpenManipulator</a>
               
 
               
@@ -607,7 +2242,7 @@
         <div class="dropdown">
           
           <button class="dropbtn">
-            EDUCATION
+            STEAM
           </button>
           
 
@@ -618,10 +2253,8 @@
               
 
               
-
-              
                 
-                <a>OLLO</a>
+                <a><font color=#cccccc>*OLLO</font></a>
               
 
               
@@ -630,34 +2263,27 @@
                   
 
                   
-
-                  
-                    <a>Bug Kit</a>
+                    
+                      <a href="http://localhost:4000/docs/en/edu/ollo/bugkit/"><font color=#cccccc>*BUG KIT</font></a>
                     
                 
                   
 
                   
-
-                  
-                    <a>Level 2 Kit</a>
+                    
+                      <a href="http://localhost:4000/docs/en/edu/ollo/explorer/"><font color=#cccccc>*EXPLORER</font></a>
                     
                 
                   
 
                   
-
-                  
-                    <a>Level 3 Kit</a>
+                    
+                      <a href="http://localhost:4000/docs/en/edu/ollo/inventor/"><font color=#cccccc>*INVENTOR</font></a>
                     
                 
                   
 
                   
-
-                  
-                    <a>Level 4 Kit</a>
-                    
                 
               </div>
               
@@ -668,10 +2294,8 @@
               
 
               
-
-              
                 
-                <a>Dream I</a>
+                <a>DREAM</a>
               
 
               
@@ -680,33 +2304,40 @@
                   
 
                   
+                
+                  
 
                   
-                    <a>Level 1</a>
+                    
+                      <a href="http://localhost:4000/docs/en/edu/dream/dream1-2/">LEVEL 2</a>
                     
                 
                   
 
                   
-
-                  
-                    <a>Level 2</a>
+                    
+                      <a href="http://localhost:4000/docs/en/edu/dream/dream1-3/">LEVEL 3</a>
                     
                 
                   
 
                   
-
-                  
-                    <a>Level 3</a>
+                    
+                      <a href="http://localhost:4000/docs/en/edu/dream/dream1-4/">LEVEL 4</a>
                     
                 
                   
 
                   
+                    
+                      <a href="http://localhost:4000/docs/en/edu/dream/dream-a/">SET A</a>
+                    
+                
+                  
 
                   
-                    <a>Level 4</a>
+                    
+                      <a href="http://localhost:4000/docs/en/edu/dream/dream-b/">SET B</a>
                     
                 
               </div>
@@ -715,8 +2346,6 @@
             </div>
             
               <div class="dropdown-content-wrapper">
-              
-
               
 
               
@@ -730,25 +2359,43 @@
                   
 
                   
-
-                  
-                    <a>Level 1</a>
+                    
+                      <a href="http://localhost:4000/docs/en/edu/dream/dream2-1/">LEVEL 1</a>
                     
                 
                   
 
                   
-
-                  
-                    <a>Level 2</a>
+                    
+                      <a href="http://localhost:4000/docs/en/edu/dream/dream2-2/">LEVEL 2</a>
                     
                 
                   
 
                   
+                    
+                      <a href="http://localhost:4000/docs/en/edu/dream/dream2-3/">LEVEL 3</a>
+                    
+                
+                  
 
                   
-                    <a>Level 3</a>
+                    
+                      <a href="http://localhost:4000/docs/en/edu/dream/dream2-4/">LEVEL 4</a>
+                    
+                
+                  
+
+                  
+                    
+                      <a href="http://localhost:4000/docs/en/edu/dream/dream2-5/">LEVEL 5</a>
+                    
+                
+                  
+
+                  
+                    
+                      <a href="http://localhost:4000/docs/en/edu/dream/dream2-schoolset/">School Set</a>
                     
                 
               </div>
@@ -757,8 +2404,6 @@
             </div>
             
               <div class="dropdown-content-wrapper">
-              
-
               
 
               
@@ -769,17 +2414,11 @@
                   
 
                   
-
-                  
                 
                   
 
                   
-
-                  
                 
-                  
-
                   
 
                   
@@ -790,8 +2429,6 @@
             </div>
             
               <div class="dropdown-content-wrapper">
-              
-
               
 
               
@@ -802,17 +2439,11 @@
                   
 
                   
-
-                  
                 
                   
 
                   
-
-                  
                 
-                  
-
                   
 
                   
@@ -823,8 +2454,6 @@
             </div>
             
               <div class="dropdown-content-wrapper">
-              
-
               
 
               
@@ -835,11 +2464,15 @@
                   
 
                   
+                
+                  
 
                   
                 
                   
 
+                  
+                
                   
 
                   
@@ -852,11 +2485,6 @@
               <div class="dropdown-content-wrapper">
               
 
-              
-
-              
-                
-                <a>IoT</a>
               
 
               
@@ -865,18 +2493,10 @@
                   
 
                   
-
-                  
-                    <a>Level 1</a>
-                    
                 
                   
 
                   
-
-                  
-                    <a>Level 2</a>
-                    
                 
               </div>
               
@@ -887,10 +2507,8 @@
               
 
               
-
-              
                 
-                <a>Bioloid</a>
+                <a>BIOLOID</a>
               
 
               
@@ -899,49 +2517,36 @@
                   
 
                   
-
-                  
-                    <a>Entry Level</a>
+                    
+                      <a href="http://localhost:4000/docs/en/edu/bioloid/beginner/">Beginner Level</a>
                     
                 
                   
 
                   
-
-                  
-                    <a>Advanced Level</a>
+                    
+                      <a href="http://localhost:4000/docs/en/edu/bioloid/comprehensive/">Comprehensive Level</a>
                     
                 
                   
 
                   
-
-                  
-                    <a>STEM Kit</a>
+                    
+                      <a href="http://localhost:4000/docs/en/edu/bioloid/stem/">ROBOTIS STEM</a>
                     
                 
                   
 
                   
-
-                  
-                    <a>STEM Academy</a>
+                    
+                      <a href="http://localhost:4000/docs/en/edu/bioloid/premium/">ROBOTIS PREMIUM</a>
                     
                 
                   
 
                   
-
-                  
-                    <a>Premium</a>
                     
-                
-                  
-
-                  
-
-                  
-                    <a>GP</a>
+                      <a href="http://localhost:4000/docs/en/edu/bioloid/gp/">ROBOTIS GP</a>
                     
                 
               </div>
@@ -953,10 +2558,9 @@
               
 
               
-
-              
                 
-                <a>MINI</a>
+                  
+                    <a href="http://localhost:4000/docs/en/edu/mini/">ROBOTIS MINI</a>
               
 
               
@@ -984,6 +2588,34 @@
               
 
               
+                
+                <a>DYNAMIXEL</a>
+              
+
+              
+              <div class="dropdown-2nd-content">
+                
+                  
+
+                  
+                    
+                      <a href="http://localhost:4000/docs/en/software/dynamixel/dynamixel_sdk/overview/">DYNAMIXEL SDK</a>
+                    
+                
+                  
+
+                  
+                    
+                      <a href="http://localhost:4000/docs/en/software/dynamixel/dynamixel_workbench/">DYNAMIXEL-Workbench</a>
+                    
+                
+              </div>
+              
+
+            </div>
+            
+              <div class="dropdown-content-wrapper">
+              
 
               
                 
@@ -996,25 +2628,16 @@
                   
 
                   
-
-                  
-                    <a>R+ SMART</a>
-                    
                 
                   
 
                   
-
-                  
-                    <a>R+ IoT</a>
-                    
                 
                   
 
                   
-
-                  
-                    <a>ROBOTIS MINI</a>
+                    
+                      <a href="http://localhost:4000/docs/en/software/mobile_app/mini_app/">ROBOTIS MINI</a>
                     
                 
               </div>
@@ -1023,8 +2646,6 @@
             </div>
             
               <div class="dropdown-content-wrapper">
-              
-
               
 
               
@@ -1038,41 +2659,29 @@
                   
 
                   
-
-                  
-                    <a>R+ Task</a>
+                    
+                      <a href="http://localhost:4000/docs/en/software/rplus1/task/getting_started/">R+ Task</a>
                     
                 
                   
 
                   
-
-                  
-                    <a>R+ Manager</a>
+                    
+                      <a href="http://localhost:4000/docs/en/software/rplus1/manager/">R+ Manager</a>
                     
                 
                   
 
                   
-
-                  
-                    <a>R+ Motion</a>
+                    
+                      <a href="http://localhost:4000/docs/en/software/rplus1/motion/">R+ Motion</a>
                     
                 
                   
 
                   
-
-                  
-                    <a>R+ Design</a>
                     
-                
-                  
-
-                  
-
-                  
-                    <a>R+ Wizard</a>
+                      <a href="http://localhost:4000/docs/en/software/rplus1/dynamixel_wizard/">Dynamixel Wizard</a>
                     
                 
               </div>
@@ -1081,8 +2690,6 @@
             </div>
             
               <div class="dropdown-content-wrapper">
-              
-
               
 
               
@@ -1096,41 +2703,36 @@
                   
 
                   
-
-                  
-                    <a>R+ Task 2.0</a>
+                    
+                      <a href="http://localhost:4000/docs/en/software/rplus2/task/">R+ Task 2.0</a>
                     
                 
                   
 
                   
-
-                  
-                    <a>R+ Manager 2.0</a>
+                    
+                      <a href="http://localhost:4000/docs/en/software/rplus2/manager/">R+ Manager 2.0</a>
                     
                 
                   
 
                   
-
-                  
-                    <a>R+ Motion 2.0</a>
+                    
+                      <a href="http://localhost:4000/docs/en/software/rplus2/motion/">R+ Motion 2.0</a>
                     
                 
                   
 
                   
-
-                  
-                    <a>R+ Design 2.0</a>
+                    
+                      <a href="http://localhost:4000/docs/en/software/rplus2/design/">R+ Design 2.0</a>
                     
                 
                   
 
                   
-
-                  
-                    <a>R+ Scratch</a>
+                    
+                      <a href="http://localhost:4000/docs/en/software/rplus2/scratch/">R+ Scratch</a>
                     
                 
               </div>
@@ -1139,8 +2741,6 @@
             </div>
             
               <div class="dropdown-content-wrapper">
-              
-
               
 
               
@@ -1154,33 +2754,23 @@
                   
 
                   
+                
+                  
 
                   
-                    <a>R+ m.Task</a>
+                
+                  
+
+                  
+                    
+                      <a href="http://localhost:4000/docs/en/software/rplus_mobile/mmotion/">R+ m.Motion 2.0</a>
                     
                 
                   
 
                   
-
-                  
-                    <a>R+ m.Task 2.0</a>
                     
-                
-                  
-
-                  
-
-                  
-                    <a>R+ m.Motion 2.0</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>R+ m.Design</a>
+                      <a href="http://localhost:4000/docs/en/software/rplus_mobile/mdesign/">R+ m.Design</a>
                     
                 
               </div>
@@ -1192,10 +2782,9 @@
               
 
               
-
-              
                 
-                <a>SDK</a>
+                  
+                    <a href="http://localhost:4000/docs/en/software/embedded_sdk/">EMBEDDED SDK</a>
               
 
               
@@ -1204,25 +2793,22 @@
                   
 
                   
-
-                  
-                    <a>Embedded C</a>
+                    
+                      <a href="http://localhost:4000/docs/en/software/embedded_sdk/embedded_c_cm510/">Embedded C(CM-510/700)</a>
                     
                 
                   
 
                   
-
-                  
-                    <a>DYNAMIXEL SDK</a>
+                    
+                      <a href="http://localhost:4000/docs/en/software/embedded_sdk/embedded_c_cm530/">Embedded C(CM-530)</a>
                     
                 
                   
 
                   
-
-                  
-                    <a>Wireless SDK</a>
+                    
+                      <a href="http://localhost:4000/docs/en/software/embedded_sdk/zigbee_sdk/">ZIGBEE SDK</a>
                     
                 
               </div>
@@ -1234,10 +2820,22 @@
               
 
               
+                
+                  
+                    <a href="http://localhost:4000/docs/en/software/opencm_ide/getting_started/">OpenCM IDE</a>
+              
+
+              
+
+            </div>
+            
+              <div class="dropdown-content-wrapper">
+              
 
               
                 
-                <a>OpenCM IDE</a>
+                  
+                    <a href="http://localhost:4000/docs/en/software/robotis_framework_packages/">ROBOTIS Framework Packages</a>
               
 
               
@@ -1265,10 +2863,9 @@
               
 
               
-
-              
                 
-                <a>Controller</a>
+                  
+                    <a href="http://localhost:4000/docs/en/parts/controller/controller_compatibility/">Controller</a>
               
 
               
@@ -1277,82 +2874,78 @@
                   
 
                   
-
-                  
-                    <a>CM-100A</a>
+                    
+                      <a href="http://localhost:4000/docs/en/parts/controller/cm-100/"><font color=#cccccc>*CM-100A</font></a>
                     
                 
                   
 
                   
-
-                  
-                    <a>CM-150</a>
+                    
+                      <a href="http://localhost:4000/docs/en/parts/controller/cm-150/">CM-150</a>
                     
                 
                   
 
                   
-
-                  
                     
-                      <a href="http://localhost:4000/emanual/docs/en/parts/controller/cm-200/">CM-200</a>
+                      <a href="http://localhost:4000/docs/en/parts/controller/cm-200/">CM-200</a>
                     
                 
                   
 
                   
-
-                  
-                    <a>CM-5</a>
+                    
+                      <a href="http://localhost:4000/docs/en/parts/controller/cm-5/"><font color=#cccccc>*CM-5</font></a>
                     
                 
                   
 
                   
-
-                  
-                    <a>CM-510</a>
+                    
+                      <a href="http://localhost:4000/docs/en/parts/controller/cm-510/"><font color=#cccccc>*CM-510</font></a>
                     
                 
                   
 
                   
-
-                  
-                    <a>CM-530</a>
+                    
+                      <a href="http://localhost:4000/docs/en/parts/controller/cm-530/">CM-530</a>
                     
                 
                   
 
                   
-
-                  
-                    <a>CM-700</a>
+                    
+                      <a href="http://localhost:4000/docs/en/parts/controller/cm-700/">CM-700</a>
                     
                 
                   
 
                   
-
-                  
-                    <a>CM-900</a>
+                    
+                      <a href="http://localhost:4000/docs/en/parts/controller/cm-900/"><font color=#cccccc>*CM-900</font></a>
                     
                 
                   
 
                   
-
-                  
-                    <a>OpenCM</a>
+                    
+                      <a href="http://localhost:4000/docs/en/parts/controller/opencm904/">OpenCM 9.04</a>
                     
                 
                   
 
                   
+                    
+                      <a href="http://localhost:4000/docs/en/parts/controller/opencm485exp/">OpenCM 485 EXP</a>
+                    
+                
+                  
 
                   
-                    <a>OpenCR</a>
+                    
+                      <a href="http://localhost:4000/docs/en/parts/controller/opencr10/">OpenCR</a>
                     
                 
               </div>
@@ -1361,8 +2954,6 @@
             </div>
             
               <div class="dropdown-content-wrapper">
-              
-
               
 
               
@@ -1376,49 +2967,50 @@
                   
 
                   
-
-                  
-                    <a>RC-100A/100B</a>
+                    
+                      <a href="http://localhost:4000/docs/en/parts/communication/rc-100/">RC-100A/100B</a>
                     
                 
                   
 
                   
-
-                  
-                    <a>ZIG-100/110A</a>
+                    
+                      <a href="http://localhost:4000/docs/en/parts/communication/zig-110/"><font color=#cccccc>*ZIG-100/110A</font></a>
                     
                 
                   
 
                   
-
-                  
-                    <a>BT-100/110A</a>
+                    
+                      <a href="http://localhost:4000/docs/en/parts/communication/bt-110/"><font color=#cccccc>*BT-100/110A</font></a>
                     
                 
                   
 
                   
-
-                  
-                    <a>BT-210</a>
+                    
+                      <a href="http://localhost:4000/docs/en/parts/communication/bt-210/">BT-210</a>
                     
                 
                   
 
                   
-
-                  
-                    <a>BT-410</a>
+                    
+                      <a href="http://localhost:4000/docs/en/parts/communication/bt-410/">BT-410</a>
                     
                 
                   
 
                   
+                    
+                      <a href="http://localhost:4000/docs/en/parts/communication/bt-410-dongle/">BT-410 Dongle</a>
+                    
+                
+                  
 
                   
-                    <a>ZIG2Serial</a>
+                    
+                      <a href="http://localhost:4000/docs/en/parts/communication/zig2serial/">ZIG2Serial</a>
                     
                 
               </div>
@@ -1427,8 +3019,6 @@
             </div>
             
               <div class="dropdown-content-wrapper">
-              
-
               
 
               
@@ -1442,33 +3032,29 @@
                   
 
                   
-
-                  
-                    <a>GM-10A</a>
+                    
+                      <a href="http://localhost:4000/docs/en/parts/motor/gm-10a/">Geared Motor(GM-10A)</a>
                     
                 
                   
 
                   
-
-                  
-                    <a>High Speed Geared Motor</a>
+                    
+                      <a href="http://localhost:4000/docs/en/parts/motor/h_speed_geared_motor/"><font color=#cccccc>*High Speed Geared Motor</font></a>
                     
                 
                   
 
                   
-
-                  
-                    <a>Low Speed Geared Motor</a>
+                    
+                      <a href="http://localhost:4000/docs/en/parts/motor/l_speed_geared_motor/">Low Speed Geared Motor</a>
                     
                 
                   
 
                   
-
-                  
-                    <a>SM-10</a>
+                    
+                      <a href="http://localhost:4000/docs/en/parts/motor/servo_motor/">Servo Motor(SM-10)</a>
                     
                 
               </div>
@@ -1477,8 +3063,6 @@
             </div>
             
               <div class="dropdown-content-wrapper">
-              
-
               
 
               
@@ -1492,17 +3076,22 @@
                   
 
                   
-
-                  
-                    <a>LN-101</a>
+                    
+                      <a href="http://localhost:4000/docs/en/parts/interface/ln-101/">LN-101</a>
                     
                 
                   
 
                   
+                    
+                      <a href="http://localhost:4000/docs/en/parts/interface/usb2dynamixel/">USB2DYNAMIXEL</a>
+                    
+                
+                  
 
                   
-                    <a>USB2DYNAMIXEL</a>
+                    
+                      <a href="http://localhost:4000/docs/en/parts/interface/u2d2/">U2D2</a>
                     
                 
               </div>
@@ -1511,8 +3100,6 @@
             </div>
             
               <div class="dropdown-content-wrapper">
-              
-
               
 
               
@@ -1526,98 +3113,80 @@
                   
 
                   
-
-                  
-                    <a>IR Sensor</a>
+                    
+                      <a href="http://localhost:4000/docs/en/parts/sensor/irss-10/">IR Sensor(IRSS-10)</a>
                     
                 
                   
 
                   
-
-                  
-                    <a>Distance Sensor</a>
+                    
+                      <a href="http://localhost:4000/docs/en/parts/sensor/dms-80/">Distance Sensor(DMS-80)</a>
                     
                 
                   
 
                   
-
-                  
-                    <a>Touch Sensor</a>
+                    
+                      <a href="http://localhost:4000/docs/en/parts/sensor/ts-10/">Touch Sensor(TS-10)</a>
                     
                 
                   
 
                   
-
-                  
-                    <a>Integrated Sensor</a>
+                    
+                      <a href="http://localhost:4000/docs/en/parts/sensor/ax-s1/"><font color=#cccccc>*Integrated Sensor(AX-S1)</font></a>
                     
                 
                   
 
                   
-
-                  
-                    <a>Gyro Sensor</a>
+                    
+                      <a href="http://localhost:4000/docs/en/parts/sensor/gs-12/">Gyro Sensor(GS-12)</a>
                     
                 
                   
 
                   
-
-                  
-                    <a>IR Array Sensor</a>
+                    
+                      <a href="http://localhost:4000/docs/en/parts/sensor/ir-array/">IR Array Sensor</a>
                     
                 
                   
 
                   
-
-                  
-                    <a>Color Sensor</a>
+                    
+                      <a href="http://localhost:4000/docs/en/parts/sensor/cs-10/">Color Sensor(CS-10)</a>
                     
                 
                   
 
                   
-
-                  
-                    <a>Magnetic Sensor</a>
+                    
+                      <a href="http://localhost:4000/docs/en/parts/sensor/mgss-10/">Magnetic Sensor(MGSS-10)</a>
                     
                 
                   
 
                   
-
-                  
-                    <a>Temperature Sensor</a>
+                    
+                      <a href="http://localhost:4000/docs/en/parts/sensor/tps-10/">Temperature Sensor(TPS-10)</a>
                     
                 
                   
 
                   
-
-                  
-                    <a>Motion Sensor</a>
+                    
+                      <a href="http://localhost:4000/docs/en/parts/sensor/pir-10/">Motion Sensor(PIR-10)</a>
                     
                 
                   
 
                   
-
-                  
-                    <a>Illuminance Sensor</a>
-                    
                 
                   
 
                   
-
-                  
-                    <a>Temp/Humid Sensor</a>
-                    
                 
               </div>
               
@@ -1625,8 +3194,6 @@
             </div>
             
               <div class="dropdown-content-wrapper">
-              
-
               
 
               
@@ -1640,9 +3207,8 @@
                   
 
                   
-
-                  
-                    <a>LM-10</a>
+                    
+                      <a href="http://localhost:4000/docs/en/parts/display/lm-10/">LED Module(LM-10)</a>
                     
                 
               </div>
@@ -1662,7 +3228,7 @@
           <button class="dropbtn">
             
               
-                <a href="http://localhost:4000/emanual/docs/en/faq" style="color:#fff;text-decoration:none;">
+                <a href="http://localhost:4000/docs/en/faq/" style="color:#fff;text-decoration:none;">
               FAQ</a>
             
           </button>
@@ -1673,1580 +3239,12 @@
         </div>
       
     </div>
-<<<<<<< HEAD
+
     <div>
-      <ul id="search_results"></ul>
+      <ul id="search_results" style="margin: 0; background-color: #ffebeb"></ul>
     </div>
-
   </div>
 </div>
-
-<script src="/emanual/assets/js/lunr.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="/emanual/assets/js/search.js"></script>
-=======
-  <div class="masthead__inner-wrap">
-    <div class="masthead__menu">
-      <nav id="site-nav" class="greedy-nav">
-        <a class="site-title" href="http://localhost:4000/emanual/"><img src="/emanual/assets/images/robotis_logo.gif" style="padding-right:10px;">e-Manual</a>
-        
-        
-          <a href="http://localhost:4000/emanual/docs/en/dxl/ex/ex-106+/" class="en" style="color: #134268;padding-right:10px;">[en]</a>
-        
-
-        <form method="get" id="site_search" style="margin:0 0 0 0; position:absolute; right:0; width:30%;">
-          <input type="text" id="search_box" name="query" placeholder="Search" style="padding:0 10px; margin-bottom:0;">
-        </form>
-      </nav>
-    </div>
-
-    <div class="container">
-      
-        
-
-        <div class="dropdown">
-          
-          <button class="dropbtn">
-            DYNAMIXEL
-          </button>
-          
-
-          
-            <div class="dropdown-content">
-            
-              <div class="dropdown-content-wrapper">
-              
-
-              
-
-              
-                
-                <a>AX Series</a>
-              
-
-              
-              <div class="dropdown-2nd-content">
-                
-                  
-
-                  
-
-                  
-                    
-                      <a href="http://localhost:4000/emanual/docs/en/dxl/ax/ax-12w/">AX-12W</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    
-                      <a href="http://localhost:4000/emanual/docs/en/dxl/ax/ax-12a/">AX-12/12+/12A</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    
-                      <a href="http://localhost:4000/emanual/docs/en/dxl/ax/ax-18a/">AX-18F/18A</a>
-                    
-                
-              </div>
-              
-
-            </div>
-            
-              <div class="dropdown-content-wrapper">
-              
-
-              
-
-              
-                
-                <a>EX Series</a>
-              
-
-              
-              <div class="dropdown-2nd-content">
-                
-                  
-
-                  
-
-                  
-                    
-                      <a href="http://localhost:4000/emanual/docs/en/dxl/ex/ex-106+/">EX-106+</a>
-                    
-                
-              </div>
-              
-
-            </div>
-            
-              <div class="dropdown-content-wrapper">
-              
-
-              
-
-              
-                
-                <a>DX Series</a>
-              
-
-              
-              <div class="dropdown-2nd-content">
-                
-                  
-
-                  
-
-                  
-                    <a>DX-113</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>DX-116</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>DX-117</a>
-                    
-                
-              </div>
-              
-
-            </div>
-            
-              <div class="dropdown-content-wrapper">
-              
-
-              
-
-              
-                
-                <a>RX Series</a>
-              
-
-              
-              <div class="dropdown-2nd-content">
-                
-                  
-
-                  
-
-                  
-                    <a>RX-10</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>RX-24F</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>RX-28</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>RX-64</a>
-                    
-                
-              </div>
-              
-
-            </div>
-            
-              <div class="dropdown-content-wrapper">
-              
-
-              
-
-              
-                
-                <a>MX Series</a>
-              
-
-              
-              <div class="dropdown-2nd-content">
-                
-                  
-
-                  
-
-                  
-                    <a>MX-12W</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>MX-28T/R/AT/AR</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>MX-64T/R/AT/AR</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>MX-106T/R</a>
-                    
-                
-              </div>
-              
-
-            </div>
-            
-              <div class="dropdown-content-wrapper">
-              
-
-              
-
-              
-                
-                <a>X Series</a>
-              
-
-              
-              <div class="dropdown-2nd-content">
-                
-                  
-
-                  
-
-                  
-                    <a>XL320</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>XL430-W250</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>XM430-W210</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>XM430-W350</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    
-                      <a href="http://localhost:4000/emanual/docs/en/dxl/x/xh430-w210/">XH430-W210</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>XH430-W350</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>XH430-V210</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>XH430-V350</a>
-                    
-                
-              </div>
-              
-
-            </div>
-            
-              <div class="dropdown-content-wrapper">
-              
-
-              
-
-              
-                
-                <a>PRO Series</a>
-              
-
-              
-
-            </div>
-            
-            </div>
-          
-
-        </div>
-      
-        
-
-        <div class="dropdown">
-          
-          <button class="dropbtn">
-            PLATFORM
-          </button>
-          
-
-          
-            <div class="dropdown-content">
-            
-              <div class="dropdown-content-wrapper">
-              
-
-              
-
-              
-                
-                <a>OP</a>
-              
-
-              
-
-            </div>
-            
-              <div class="dropdown-content-wrapper">
-              
-
-              
-
-              
-                
-                <a>OP2</a>
-              
-
-              
-
-            </div>
-            
-              <div class="dropdown-content-wrapper">
-              
-
-              
-
-              
-                
-                <a>OP3</a>
-              
-
-              
-
-            </div>
-            
-              <div class="dropdown-content-wrapper">
-              
-
-              
-
-              
-                
-                <a>Hand RX28</a>
-              
-
-              
-
-            </div>
-            
-              <div class="dropdown-content-wrapper">
-              
-
-              
-
-              
-                
-                <a>Hand MX28</a>
-              
-
-              
-
-            </div>
-            
-              <div class="dropdown-content-wrapper">
-              
-
-              
-
-              
-                
-                <a>Manipulator-H</a>
-              
-
-              
-
-            </div>
-            
-              <div class="dropdown-content-wrapper">
-              
-
-              
-
-              
-                
-                  
-                    <a href="http://localhost:4000/emanual/docs/en/platform/thormang3/getting_started/">Thormang3</a>
-              
-
-              
-
-            </div>
-            
-              <div class="dropdown-content-wrapper">
-              
-
-              
-
-              
-                
-                <a>TurtleBot3</a>
-              
-
-              
-
-            </div>
-            
-            </div>
-          
-
-        </div>
-      
-        
-
-        <div class="dropdown">
-          
-          <button class="dropbtn">
-            EDUCATION
-          </button>
-          
-
-          
-            <div class="dropdown-content">
-            
-              <div class="dropdown-content-wrapper">
-              
-
-              
-
-              
-                
-                <a>OLLO</a>
-              
-
-              
-              <div class="dropdown-2nd-content">
-                
-                  
-
-                  
-
-                  
-                    <a>Bug Kit</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>Level 2 Kit</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>Level 3 Kit</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>Level 4 Kit</a>
-                    
-                
-              </div>
-              
-
-            </div>
-            
-              <div class="dropdown-content-wrapper">
-              
-
-              
-
-              
-                
-                <a>Dream I</a>
-              
-
-              
-              <div class="dropdown-2nd-content">
-                
-                  
-
-                  
-
-                  
-                    <a>Level 1</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>Level 2</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>Level 3</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>Level 4</a>
-                    
-                
-              </div>
-              
-
-            </div>
-            
-              <div class="dropdown-content-wrapper">
-              
-
-              
-
-              
-                
-                <a>Dream II</a>
-              
-
-              
-              <div class="dropdown-2nd-content">
-                
-                  
-
-                  
-
-                  
-                    <a>Level 1</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>Level 2</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>Level 3</a>
-                    
-                
-              </div>
-              
-
-            </div>
-            
-              <div class="dropdown-content-wrapper">
-              
-
-              
-
-              
-
-              
-              <div class="dropdown-2nd-content">
-                
-                  
-
-                  
-
-                  
-                
-                  
-
-                  
-
-                  
-                
-                  
-
-                  
-
-                  
-                
-              </div>
-              
-
-            </div>
-            
-              <div class="dropdown-content-wrapper">
-              
-
-              
-
-              
-
-              
-              <div class="dropdown-2nd-content">
-                
-                  
-
-                  
-
-                  
-                
-                  
-
-                  
-
-                  
-                
-                  
-
-                  
-
-                  
-                
-              </div>
-              
-
-            </div>
-            
-              <div class="dropdown-content-wrapper">
-              
-
-              
-
-              
-
-              
-              <div class="dropdown-2nd-content">
-                
-                  
-
-                  
-
-                  
-                
-                  
-
-                  
-
-                  
-                
-              </div>
-              
-
-            </div>
-            
-              <div class="dropdown-content-wrapper">
-              
-
-              
-
-              
-                
-                <a>IoT</a>
-              
-
-              
-              <div class="dropdown-2nd-content">
-                
-                  
-
-                  
-
-                  
-                    <a>Level 1</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>Level 2</a>
-                    
-                
-              </div>
-              
-
-            </div>
-            
-              <div class="dropdown-content-wrapper">
-              
-
-              
-
-              
-                
-                <a>Bioloid</a>
-              
-
-              
-              <div class="dropdown-2nd-content">
-                
-                  
-
-                  
-
-                  
-                    <a>Entry Level</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>Advanced Level</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>STEM Kit</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>STEM Academy</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>Premium</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>GP</a>
-                    
-                
-              </div>
-              
-
-            </div>
-            
-              <div class="dropdown-content-wrapper">
-              
-
-              
-
-              
-                
-                <a>MINI</a>
-              
-
-              
-
-            </div>
-            
-            </div>
-          
-
-        </div>
-      
-        
-
-        <div class="dropdown">
-          
-          <button class="dropbtn">
-            SOFTWARE
-          </button>
-          
-
-          
-            <div class="dropdown-content">
-            
-              <div class="dropdown-content-wrapper">
-              
-
-              
-
-              
-                
-                <a>Mobile Apps</a>
-              
-
-              
-              <div class="dropdown-2nd-content">
-                
-                  
-
-                  
-
-                  
-                    <a>R+ SMART</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>R+ IoT</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>ROBOTIS MINI</a>
-                    
-                
-              </div>
-              
-
-            </div>
-            
-              <div class="dropdown-content-wrapper">
-              
-
-              
-
-              
-                
-                <a>R+ 1.0</a>
-              
-
-              
-              <div class="dropdown-2nd-content">
-                
-                  
-
-                  
-
-                  
-                    <a>R+ Task</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>R+ Manager</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>R+ Motion</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>R+ Design</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>R+ Wizard</a>
-                    
-                
-              </div>
-              
-
-            </div>
-            
-              <div class="dropdown-content-wrapper">
-              
-
-              
-
-              
-                
-                <a>R+ 2.0</a>
-              
-
-              
-              <div class="dropdown-2nd-content">
-                
-                  
-
-                  
-
-                  
-                    <a>R+ Task 2.0</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>R+ Manager 2.0</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>R+ Motion 2.0</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>R+ Design 2.0</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>R+ Scratch</a>
-                    
-                
-              </div>
-              
-
-            </div>
-            
-              <div class="dropdown-content-wrapper">
-              
-
-              
-
-              
-                
-                <a>R+ Mobile</a>
-              
-
-              
-              <div class="dropdown-2nd-content">
-                
-                  
-
-                  
-
-                  
-                    <a>R+ m.Task</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>R+ m.Task 2.0</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>R+ m.Motion 2.0</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>R+ m.Design</a>
-                    
-                
-              </div>
-              
-
-            </div>
-            
-              <div class="dropdown-content-wrapper">
-              
-
-              
-
-              
-                
-                <a>SDK</a>
-              
-
-              
-              <div class="dropdown-2nd-content">
-                
-                  
-
-                  
-
-                  
-                    <a>Embedded C</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>DYNAMIXEL SDK</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>Wireless SDK</a>
-                    
-                
-              </div>
-              
-
-            </div>
-            
-              <div class="dropdown-content-wrapper">
-              
-
-              
-
-              
-                
-                <a>OpenCM IDE</a>
-              
-
-              
-
-            </div>
-            
-            </div>
-          
-
-        </div>
-      
-        
-
-        <div class="dropdown">
-          
-          <button class="dropbtn">
-            PARTS
-          </button>
-          
-
-          
-            <div class="dropdown-content">
-            
-              <div class="dropdown-content-wrapper">
-              
-
-              
-
-              
-                
-                <a>Controller</a>
-              
-
-              
-              <div class="dropdown-2nd-content">
-                
-                  
-
-                  
-
-                  
-                    <a>CM-100A</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>CM-150</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    
-                      <a href="http://localhost:4000/emanual/docs/en/parts/controller/cm-200/">CM-200</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>CM-5</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>CM-510</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>CM-530</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>CM-700</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>CM-900</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>OpenCM</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>OpenCR</a>
-                    
-                
-              </div>
-              
-
-            </div>
-            
-              <div class="dropdown-content-wrapper">
-              
-
-              
-
-              
-                
-                <a>Communication</a>
-              
-
-              
-              <div class="dropdown-2nd-content">
-                
-                  
-
-                  
-
-                  
-                    <a>RC-100A/100B</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>ZIG-100/110A</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>BT-100/110A</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>BT-210</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>BT-410</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>ZIG2Serial</a>
-                    
-                
-              </div>
-              
-
-            </div>
-            
-              <div class="dropdown-content-wrapper">
-              
-
-              
-
-              
-                
-                <a>Motors</a>
-              
-
-              
-              <div class="dropdown-2nd-content">
-                
-                  
-
-                  
-
-                  
-                    <a>GM-10A</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>High Speed Geared Motor</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>Low Speed Geared Motor</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>SM-10</a>
-                    
-                
-              </div>
-              
-
-            </div>
-            
-              <div class="dropdown-content-wrapper">
-              
-
-              
-
-              
-                
-                <a>Interface</a>
-              
-
-              
-              <div class="dropdown-2nd-content">
-                
-                  
-
-                  
-
-                  
-                    <a>LN-101</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>USB2DYNAMIXEL</a>
-                    
-                
-              </div>
-              
-
-            </div>
-            
-              <div class="dropdown-content-wrapper">
-              
-
-              
-
-              
-                
-                <a>Sensors</a>
-              
-
-              
-              <div class="dropdown-2nd-content">
-                
-                  
-
-                  
-
-                  
-                    <a>IR Sensor</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>Distance Sensor</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>Touch Sensor</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>Integrated Sensor</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>Gyro Sensor</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>IR Array Sensor</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>Color Sensor</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>Magnetic Sensor</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>Temperature Sensor</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>Motion Sensor</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>Illuminance Sensor</a>
-                    
-                
-                  
-
-                  
-
-                  
-                    <a>Temp/Humid Sensor</a>
-                    
-                
-              </div>
-              
-
-            </div>
-            
-              <div class="dropdown-content-wrapper">
-              
-
-              
-
-              
-                
-                <a>Display</a>
-              
-
-              
-              <div class="dropdown-2nd-content">
-                
-                  
-
-                  
-
-                  
-                    <a>LM-10</a>
-                    
-                
-              </div>
-              
-
-            </div>
-            
-            </div>
-          
-
-        </div>
-      
-        
-
-        <div class="dropdown">
-          
-          <button class="dropbtn">
-            
-              
-                <a href="http://localhost:4000/emanual/docs/en/faq" style="color:#fff;text-decoration:none;">
-              FAQ</a>
-            
-          </button>
-          
-
-          
-
-        </div>
-      
-    </div>
-    <div>
-      <ul id="search_results"></ul>
-    </div>
-
-  </div>
-</div>
-
-<script src="/emanual/assets/js/lunr.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="/emanual/assets/js/search.js"></script>
->>>>>>> contents_app
-=======
-
-  </div>
-</div>
->>>>>>> contents
 
 
     
@@ -3254,52 +3252,614 @@
 
 
 <div id="main" role="main">
+  <button class="nav_button" id="nav_button" onclick="extendnav()">ToC</button>
+  <a href="#"><button class="backtotop" id="backtotop">&#9650;<br />TOP</button></a>
+  <div class="sidebar__left" id="sidebar__left">
   
-  <div class="sidebar sticky">
-  
-  
     
       
-      
-      
-    
-      
-      
-      
-    
-    
-<<<<<<< HEAD
-      
-
 <nav class="nav__list">
 
-  <a href=http://localhost:4000/emanual/docs/en/dxl/ex/ex-106+/ style="font-size:$type-size-6; color: #2174b6;">EX-106+</a>
+  <a href=http://localhost:4000/docs/en/dxl/ex/ex-106+/ style="font-size:$type-size-6; color: #2174b6; text-decoration: none; font-weight: bold;">EX-106+</a>
   <ul class="nav__items">
   
-  </ul>
-</nav>
-=======
+    
+
+    
+
+      
+      <li>
+        <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#specifications">1. Specifications</a>
+      </li>
       
 
-<nav class="nav__list">
+      
+      
+    
+  
+    
 
-  <a href=http://localhost:4000/emanual/docs/en/dxl/ex/ex-106+/ style="font-size:$type-size-6; color: #2174b6;">EX-106+</a>
-  <ul class="nav__items">
+    
+
+      
+      <li class="has-children">
+        <input type="radio" name="toplevel" id="toplevel_2">
+        <label for="toplevel_2"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/en/dxl/ex/ex-106+/#control-table');">2. Control Table</button> [+]</label>
+      
+
+      
+        <ul>
+        
+        
+
+          
+
+          
+            
+            <li class="has-children">
+              <input type="radio" name="sublevel" id="Control Table_1">
+              <label for="Control Table_1"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/en/dxl/ex/ex-106+/#control-table-data-address');">1. Control Table, Data, Address</button> [+]</label>
+          
+
+          
+            <ul>
+            
+              
+
+              
+
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#area-eeprom-ram" style="font-style:italic;">Area(EEPROM, RAM)</a>
+                </li>
+              
+              
+            
+              
+
+              
+
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#size" style="font-style:italic;">Size</a>
+                </li>
+              
+              
+            
+              
+
+              
+
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#access" style="font-style:italic;">Access</a>
+                </li>
+              
+              
+            
+              
+
+              
+
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#initial-value" style="font-style:italic;">Initial Value</a>
+                </li>
+              
+              
+            
+            </ul>
+          
+          
+          </li>
+          
+        
+
+          
+
+          
+            
+              
+              <li><a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#control-table-of-eeprom-area">2. EEPROM Area</a></li>
+            
+          
+
+          
+          
+        
+
+          
+
+          
+            
+              
+              <li><a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#control-table-of-ram-area">3. RAM Area</a></li>
+            
+          
+
+          
+          
+        
+
+          
+
+          
+            
+            <li class="has-children">
+              <input type="radio" name="sublevel" id="Control Table_4">
+              <label for="Control Table_4"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/en/dxl/ex/ex-106+/#control-table-description');">4. Control Table Description</button> [+]</label>
+          
+
+          
+            <ul>
+            
+              
+
+              
+
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#model-number-0" style="font-style:italic;">Model Number(0)</a>
+                </li>
+              
+              
+            
+              
+
+              
+
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#firmware-version-2" style="font-style:italic;">Firmware Version(2)</a>
+                </li>
+              
+              
+            
+              
+
+              
+
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#id-3" style="font-style:italic;">ID(3)</a>
+                </li>
+              
+              
+            
+              
+
+              
+
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#baud-rate-4" style="font-style:italic;">Baud Rate(4)</a>
+                </li>
+              
+              
+            
+              
+
+              
+
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#return-delay-time-5" style="font-style:italic;">Return Delay Time(5)</a>
+                </li>
+              
+              
+            
+              
+
+              
+
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#cwccw-angle-limit6-8" style="font-style:italic;">CW/CCW Angle Limit(6,8)</a>
+                </li>
+              
+              
+            
+              
+
+              
+
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#drive-mode-10" style="font-style:italic;">Drive Mode(10)</a>
+                </li>
+              
+              
+            
+              
+
+              
+
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#temperature-limit-11" style="font-style:italic;">Temperature Limit(11)</a>
+                </li>
+              
+              
+            
+              
+
+              
+
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#minmax-voltage-limit-12-13" style="font-style:italic;">Min/Max Voltage Limit(12,13)</a>
+                </li>
+              
+              
+            
+              
+
+              
+
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#max-torque-14" style="font-style:italic;">Max Torque(14)</a>
+                </li>
+              
+              
+            
+              
+
+              
+
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#status-return-level-16" style="font-style:italic;">Status Return Level(16)</a>
+                </li>
+              
+              
+            
+              
+
+              
+
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#alarm-led17-shutdown18" style="font-style:italic;">Alarm LED(17)</a>
+                </li>
+              
+              
+            
+              
+
+              
+
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#alarm-led17-shutdown18" style="font-style:italic;">Shutdown(18)</a>
+                </li>
+              
+              
+            
+              
+
+              
+
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#torque-enable-24" style="font-style:italic;">Torque Enable(24)</a>
+                </li>
+              
+              
+            
+              
+
+              
+
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#led-25" style="font-style:italic;">LED(25)</a>
+                </li>
+              
+              
+            
+              
+
+              
+
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#compliance-margin-26-27" style="font-style:italic;">Compliance Margin(26,27)</a>
+                </li>
+              
+              
+            
+              
+
+              
+
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#compliance-slope-28-29" style="font-style:italic;">Compliance Slope(28,29)</a>
+                </li>
+              
+              
+            
+              
+
+              
+
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#goal-position-30" style="font-style:italic;">Goal Position(30)</a>
+                </li>
+              
+              
+            
+              
+
+              
+
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#moving-speed-32" style="font-style:italic;">Moving Speed(32)</a>
+                </li>
+              
+              
+            
+              
+
+              
+
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#torque-limit-34" style="font-style:italic;">Torque Limit(34)</a>
+                </li>
+              
+              
+            
+              
+
+              
+
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#present-position-36" style="font-style:italic;">Present Position(36)</a>
+                </li>
+              
+              
+            
+              
+
+              
+
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#present-speed-38" style="font-style:italic;">Present Speed(38)</a>
+                </li>
+              
+              
+            
+              
+
+              
+
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#present-load-40" style="font-style:italic;">Present Load(40)</a>
+                </li>
+              
+              
+            
+              
+
+              
+
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#present-voltage-42" style="font-style:italic;">Present Voltage(42)</a>
+                </li>
+              
+              
+            
+              
+
+              
+
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#present-temperature-43" style="font-style:italic;">Present Temperature(43)</a>
+                </li>
+              
+              
+            
+              
+
+              
+
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#registered-instruction-44" style="font-style:italic;">Registered Instruction(44)</a>
+                </li>
+              
+              
+            
+              
+
+              
+
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#moving-46" style="font-style:italic;">Moving(46)</a>
+                </li>
+              
+              
+            
+              
+
+              
+
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#lock-47" style="font-style:italic;">Lock(47)</a>
+                </li>
+              
+              
+            
+              
+
+              
+
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#punch-48" style="font-style:italic;">Punch(48)</a>
+                </li>
+              
+              
+            
+              
+
+              
+
+              
+                <li>
+                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#sensed-current-56" style="font-style:italic;">Sensed Current(56)</a>
+                </li>
+              
+              
+            
+            </ul>
+          
+          
+          </li>
+          
+        
+        </ul>
+      
+      
+      </li>
+      
+    
+  
+    
+
+    
+
+      
+      <li>
+        <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#how-to-assemble">3. How to Assemble</a>
+      </li>
+      
+
+      
+      
+    
+  
+    
+
+    
+
+      
+      <li class="has-children">
+        <input type="radio" name="toplevel" id="toplevel_4">
+        <label for="toplevel_4"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/en/dxl/ex/ex-106+/#maintenance');">4. Maintenance</button> [+]</label>
+      
+
+      
+        <ul>
+        
+        
+
+          
+
+          
+            
+              
+              <li><a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#horn-and-bearing-replacement">1. Horn, Bearing</a></li>
+            
+          
+
+          
+          
+        
+        </ul>
+      
+      
+      </li>
+      
+    
+  
+    
+
+    
+
+      
+      <li class="has-children">
+        <input type="radio" name="toplevel" id="toplevel_5">
+        <label for="toplevel_5"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/en/dxl/ex/ex-106+/#reference');">5. Reference</button> [+]</label>
+      
+
+      
+        <ul>
+        
+        
+
+          
+
+          
+            
+              
+              <li><a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#connector-information">1. Connector Information</a></li>
+            
+          
+
+          
+          
+        
+
+          
+
+          
+            
+              
+              <li><a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#drawings">2. Drawings</a></li>
+            
+          
+
+          
+          
+        
+
+          
+
+          
+            
+              
+              <li><a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#communication-circuit">3. Communication Circuit</a></li>
+            
+          
+
+          
+          
+        
+        </ul>
+      
+      
+      </li>
+      
+    
   
   </ul>
+  <a href="#" style="font-size:$type-size-6; color: #2174b6; text-decoration: none; font-weight: bold;">Back to Top &#9650;</a>
 </nav>
->>>>>>> contents
 
     
   
   </div>
-
-
-  <div class="archive">
-    <a href="/blob/master/docs/en/dxl/ex/ex-106+.md" itemprop="sameAs" style="font-size:16px;float:right;">
+  <div class="archive" id="archive">
+    <a href="/blob/master/docs/en/dxl/ex/ex-106+.md" itemprop="sameAs" style="font-size:16px; float:right; margin: 10px 20px; text-decoration: none;">
       <i class="fa fa-fw fa-github" aria-hidden="true"></i> Edit on GitHub
     </a>
-    <p><img src="/emanual/assets/images/dxl/ex/ex-106_product.png" alt="" /></p>
+    <p><img src="/assets/images/dxl/ex/ex-106_product.png" alt="" /></p>
+
+<blockquote>
+  <p>EX-106+</p>
+</blockquote>
 
 <p class="notice--warning"><code class="highlighter-rouge">Warning</code> EX-106+ has been discontinued.</p>
 
@@ -3347,7 +3907,7 @@
     </tr>
     <tr>
       <td style="text-align: left">Operating Temperature</td>
-      <td style="text-align: left">-5°C ~ +80°F</td>
+      <td style="text-align: left">-5°C ~ +80°C</td>
     </tr>
     <tr>
       <td style="text-align: left">Input Voltage</td>
@@ -3411,134 +3971,134 @@
 <table>
   <thead>
     <tr>
-      <th style="text-align: left">Address</th>
-      <th style="text-align: left">Size(Byte)</th>
+      <th style="text-align: center">Address</th>
+      <th style="text-align: center">Size<br />(Byte)</th>
       <th style="text-align: left">Data Name</th>
       <th style="text-align: left">Description</th>
-      <th style="text-align: left">Access</th>
-      <th style="text-align: left">Initial Value</th>
+      <th style="text-align: center">Access</th>
+      <th style="text-align: center">Initial<br />Value</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align: left">0</td>
-      <td style="text-align: left">2</td>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">2</td>
       <td style="text-align: left"><a href="#model-number">Model Number</a></td>
       <td style="text-align: left">Model Number</td>
-      <td style="text-align: left">R</td>
-      <td style="text-align: left">107</td>
+      <td style="text-align: center">R</td>
+      <td style="text-align: center">107</td>
     </tr>
     <tr>
-      <td style="text-align: left">2</td>
-      <td style="text-align: left">1</td>
+      <td style="text-align: center">2</td>
+      <td style="text-align: center">1</td>
       <td style="text-align: left"><a href="#firmware-version">Firmware Version</a></td>
       <td style="text-align: left">Firmware Version</td>
-      <td style="text-align: left">R</td>
-      <td style="text-align: left">-</td>
+      <td style="text-align: center">R</td>
+      <td style="text-align: center">-</td>
     </tr>
     <tr>
-      <td style="text-align: left">3</td>
-      <td style="text-align: left">1</td>
+      <td style="text-align: center">3</td>
+      <td style="text-align: center">1</td>
       <td style="text-align: left"><a href="#id">ID</a></td>
       <td style="text-align: left">DYNAMIXEL ID</td>
-      <td style="text-align: left">RW</td>
-      <td style="text-align: left">1</td>
+      <td style="text-align: center">RW</td>
+      <td style="text-align: center">1</td>
     </tr>
     <tr>
-      <td style="text-align: left">4</td>
-      <td style="text-align: left">1</td>
+      <td style="text-align: center">4</td>
+      <td style="text-align: center">1</td>
       <td style="text-align: left"><a href="#baud-rate">Baud Rate</a></td>
       <td style="text-align: left">Communication Speed</td>
-      <td style="text-align: left">RW</td>
-      <td style="text-align: left">34</td>
+      <td style="text-align: center">RW</td>
+      <td style="text-align: center">34</td>
     </tr>
     <tr>
-      <td style="text-align: left">5</td>
-      <td style="text-align: left">1</td>
+      <td style="text-align: center">5</td>
+      <td style="text-align: center">1</td>
       <td style="text-align: left"><a href="#return-delay-time">Return Delay Time</a></td>
       <td style="text-align: left">Response Delay Time</td>
-      <td style="text-align: left">RW</td>
-      <td style="text-align: left">250</td>
+      <td style="text-align: center">RW</td>
+      <td style="text-align: center">250</td>
     </tr>
     <tr>
-      <td style="text-align: left">6</td>
-      <td style="text-align: left">2</td>
+      <td style="text-align: center">6</td>
+      <td style="text-align: center">2</td>
       <td style="text-align: left"><a href="#cw-angle-limit">CW Angle Limit</a></td>
       <td style="text-align: left">Clockwise Angle Limit</td>
-      <td style="text-align: left">RW</td>
-      <td style="text-align: left">0</td>
+      <td style="text-align: center">RW</td>
+      <td style="text-align: center">0</td>
     </tr>
     <tr>
-      <td style="text-align: left">8</td>
-      <td style="text-align: left">2</td>
+      <td style="text-align: center">8</td>
+      <td style="text-align: center">2</td>
       <td style="text-align: left"><a href="#ccw-angle-limit">CCW Angle Limit</a></td>
       <td style="text-align: left">Counter-Clockwise Angle Limit</td>
-      <td style="text-align: left">RW</td>
-      <td style="text-align: left">4095</td>
+      <td style="text-align: center">RW</td>
+      <td style="text-align: center">4095</td>
     </tr>
     <tr>
-      <td style="text-align: left">10</td>
-      <td style="text-align: left">1</td>
+      <td style="text-align: center">10</td>
+      <td style="text-align: center">1</td>
       <td style="text-align: left"><a href="#drive-mode">Drive Mode</a></td>
       <td style="text-align: left">Dual Mode Setting</td>
-      <td style="text-align: left">RW</td>
-      <td style="text-align: left">0</td>
+      <td style="text-align: center">RW</td>
+      <td style="text-align: center">0</td>
     </tr>
     <tr>
-      <td style="text-align: left">11</td>
-      <td style="text-align: left">1</td>
+      <td style="text-align: center">11</td>
+      <td style="text-align: center">1</td>
       <td style="text-align: left"><a href="#temperature-limit">Temperature Limit</a></td>
       <td style="text-align: left">Maximum Internal Temperature Limit</td>
-      <td style="text-align: left">RW</td>
-      <td style="text-align: left">80</td>
+      <td style="text-align: center">RW</td>
+      <td style="text-align: center">80</td>
     </tr>
     <tr>
-      <td style="text-align: left">12</td>
-      <td style="text-align: left">1</td>
+      <td style="text-align: center">12</td>
+      <td style="text-align: center">1</td>
       <td style="text-align: left"><a href="#min-voltage-limit">Min Voltage Limit</a></td>
       <td style="text-align: left">Minimum Input Voltage Limit</td>
-      <td style="text-align: left">RW</td>
-      <td style="text-align: left">60</td>
+      <td style="text-align: center">RW</td>
+      <td style="text-align: center">60</td>
     </tr>
     <tr>
-      <td style="text-align: left">13</td>
-      <td style="text-align: left">1</td>
+      <td style="text-align: center">13</td>
+      <td style="text-align: center">1</td>
       <td style="text-align: left"><a href="#max-voltage-limit">Max Voltage Limit</a></td>
       <td style="text-align: left">Maximum Input Voltage Limit</td>
-      <td style="text-align: left">RW</td>
-      <td style="text-align: left">240</td>
+      <td style="text-align: center">RW</td>
+      <td style="text-align: center">240</td>
     </tr>
     <tr>
-      <td style="text-align: left">14</td>
-      <td style="text-align: left">2</td>
+      <td style="text-align: center">14</td>
+      <td style="text-align: center">2</td>
       <td style="text-align: left"><a href="#max-torque">Max Torque</a></td>
       <td style="text-align: left">Maximun Torque</td>
-      <td style="text-align: left">RW</td>
-      <td style="text-align: left">1023</td>
+      <td style="text-align: center">RW</td>
+      <td style="text-align: center">1023</td>
     </tr>
     <tr>
-      <td style="text-align: left">16</td>
-      <td style="text-align: left">1</td>
+      <td style="text-align: center">16</td>
+      <td style="text-align: center">1</td>
       <td style="text-align: left"><a href="#status-return-level">Status Return Level</a></td>
       <td style="text-align: left">Select Types of Status Return</td>
-      <td style="text-align: left">RW</td>
-      <td style="text-align: left">2</td>
+      <td style="text-align: center">RW</td>
+      <td style="text-align: center">2</td>
     </tr>
     <tr>
-      <td style="text-align: left">17</td>
-      <td style="text-align: left">1</td>
+      <td style="text-align: center">17</td>
+      <td style="text-align: center">1</td>
       <td style="text-align: left"><a href="#alarm-led">Alarm LED</a></td>
       <td style="text-align: left">LED for Alarm</td>
-      <td style="text-align: left">RW</td>
-      <td style="text-align: left">36</td>
+      <td style="text-align: center">RW</td>
+      <td style="text-align: center">36</td>
     </tr>
     <tr>
-      <td style="text-align: left">18</td>
-      <td style="text-align: left">1</td>
+      <td style="text-align: center">18</td>
+      <td style="text-align: center">1</td>
       <td style="text-align: left"><a href="#shutdown">Shutdown</a></td>
       <td style="text-align: left">Shutdown Error Information</td>
-      <td style="text-align: left">RW</td>
-      <td style="text-align: left">36</td>
+      <td style="text-align: center">RW</td>
+      <td style="text-align: center">36</td>
     </tr>
   </tbody>
 </table>
@@ -3548,185 +4108,185 @@
 <table>
   <thead>
     <tr>
-      <th style="text-align: left">Address</th>
-      <th style="text-align: left">Size(Byte)</th>
+      <th style="text-align: center">Address</th>
+      <th style="text-align: center">Size<br />(Byte)</th>
       <th style="text-align: left">Data Name</th>
       <th style="text-align: left">Description</th>
-      <th style="text-align: left">Access</th>
-      <th style="text-align: left">Initial Value</th>
+      <th style="text-align: center">Access</th>
+      <th style="text-align: center">Initial<br />Value</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align: left">24</td>
-      <td style="text-align: left">1</td>
+      <td style="text-align: center">24</td>
+      <td style="text-align: center">1</td>
       <td style="text-align: left"><a href="#torque-enable">Torque Enable</a></td>
       <td style="text-align: left">Motor Torque On/Off</td>
-      <td style="text-align: left">RW</td>
-      <td style="text-align: left">0</td>
+      <td style="text-align: center">RW</td>
+      <td style="text-align: center">0</td>
     </tr>
     <tr>
-      <td style="text-align: left">25</td>
-      <td style="text-align: left">1</td>
+      <td style="text-align: center">25</td>
+      <td style="text-align: center">1</td>
       <td style="text-align: left"><a href="#led">LED</a></td>
       <td style="text-align: left">Status LED On/Off</td>
-      <td style="text-align: left">RW</td>
-      <td style="text-align: left">0</td>
+      <td style="text-align: center">RW</td>
+      <td style="text-align: center">0</td>
     </tr>
     <tr>
-      <td style="text-align: left">26</td>
-      <td style="text-align: left">1</td>
+      <td style="text-align: center">26</td>
+      <td style="text-align: center">1</td>
       <td style="text-align: left"><a href="#cw-compliance-margin">CW Compliance Margin</a></td>
       <td style="text-align: left">CW Compliance Margin</td>
-      <td style="text-align: left">RW</td>
-      <td style="text-align: left">1</td>
+      <td style="text-align: center">RW</td>
+      <td style="text-align: center">1</td>
     </tr>
     <tr>
-      <td style="text-align: left">27</td>
-      <td style="text-align: left">1</td>
+      <td style="text-align: center">27</td>
+      <td style="text-align: center">1</td>
       <td style="text-align: left"><a href="#ccw-compliance-margin">CCW Compliance Margin</a></td>
       <td style="text-align: left">CCW Compliance Margin</td>
-      <td style="text-align: left">RW</td>
-      <td style="text-align: left">1</td>
+      <td style="text-align: center">RW</td>
+      <td style="text-align: center">1</td>
     </tr>
     <tr>
-      <td style="text-align: left">28</td>
-      <td style="text-align: left">1</td>
+      <td style="text-align: center">28</td>
+      <td style="text-align: center">1</td>
       <td style="text-align: left"><a href="#cw-compliance-slope">CW Compliance Slope</a></td>
       <td style="text-align: left">CW Compliance Slope</td>
-      <td style="text-align: left">RW</td>
-      <td style="text-align: left">32</td>
+      <td style="text-align: center">RW</td>
+      <td style="text-align: center">32</td>
     </tr>
     <tr>
-      <td style="text-align: left">29</td>
-      <td style="text-align: left">1</td>
+      <td style="text-align: center">29</td>
+      <td style="text-align: center">1</td>
       <td style="text-align: left"><a href="#ccw-compliance-alope">CCW Compliance Slope</a></td>
       <td style="text-align: left">CCW Compliance Slope</td>
-      <td style="text-align: left">RW</td>
-      <td style="text-align: left">32</td>
+      <td style="text-align: center">RW</td>
+      <td style="text-align: center">32</td>
     </tr>
     <tr>
-      <td style="text-align: left">30</td>
-      <td style="text-align: left">2</td>
+      <td style="text-align: center">30</td>
+      <td style="text-align: center">2</td>
       <td style="text-align: left"><a href="#goal-position">Goal Position</a></td>
       <td style="text-align: left">Target Position</td>
-      <td style="text-align: left">RW</td>
-      <td style="text-align: left">-</td>
+      <td style="text-align: center">RW</td>
+      <td style="text-align: center">-</td>
     </tr>
     <tr>
-      <td style="text-align: left">32</td>
-      <td style="text-align: left">2</td>
+      <td style="text-align: center">32</td>
+      <td style="text-align: center">2</td>
       <td style="text-align: left"><a href="#moving-speed">Moving Speed</a></td>
       <td style="text-align: left">Moving Speed</td>
-      <td style="text-align: left">RW</td>
-      <td style="text-align: left">-</td>
+      <td style="text-align: center">RW</td>
+      <td style="text-align: center">-</td>
     </tr>
     <tr>
-      <td style="text-align: left">34</td>
-      <td style="text-align: left">2</td>
+      <td style="text-align: center">34</td>
+      <td style="text-align: center">2</td>
       <td style="text-align: left"><a href="#torque-limit">Torque Limit</a></td>
       <td style="text-align: left">Torque Limit(Goal Torque)</td>
-      <td style="text-align: left">RW</td>
-      <td style="text-align: left">ADD 14&amp;15</td>
+      <td style="text-align: center">RW</td>
+      <td style="text-align: center">ADD 14&amp;15</td>
     </tr>
     <tr>
-      <td style="text-align: left">36</td>
-      <td style="text-align: left">2</td>
+      <td style="text-align: center">36</td>
+      <td style="text-align: center">2</td>
       <td style="text-align: left"><a href="#present-position">Present Position</a></td>
       <td style="text-align: left">Present Position</td>
-      <td style="text-align: left">R</td>
-      <td style="text-align: left">-</td>
+      <td style="text-align: center">R</td>
+      <td style="text-align: center">-</td>
     </tr>
     <tr>
-      <td style="text-align: left">38</td>
-      <td style="text-align: left">2</td>
+      <td style="text-align: center">38</td>
+      <td style="text-align: center">2</td>
       <td style="text-align: left"><a href="#present-speed">Present Speed</a></td>
       <td style="text-align: left">Present Speed</td>
-      <td style="text-align: left">R</td>
-      <td style="text-align: left">-</td>
+      <td style="text-align: center">R</td>
+      <td style="text-align: center">-</td>
     </tr>
     <tr>
-      <td style="text-align: left">40</td>
-      <td style="text-align: left">2</td>
+      <td style="text-align: center">40</td>
+      <td style="text-align: center">2</td>
       <td style="text-align: left"><a href="#present-load">Present Load</a></td>
       <td style="text-align: left">Present Load</td>
-      <td style="text-align: left">R</td>
-      <td style="text-align: left">-</td>
+      <td style="text-align: center">R</td>
+      <td style="text-align: center">-</td>
     </tr>
     <tr>
-      <td style="text-align: left">42</td>
-      <td style="text-align: left">1</td>
+      <td style="text-align: center">42</td>
+      <td style="text-align: center">1</td>
       <td style="text-align: left"><a href="#present-voltage">Present Voltage</a></td>
       <td style="text-align: left">Present Voltage</td>
-      <td style="text-align: left">R</td>
-      <td style="text-align: left">-</td>
+      <td style="text-align: center">R</td>
+      <td style="text-align: center">-</td>
     </tr>
     <tr>
-      <td style="text-align: left">43</td>
-      <td style="text-align: left">1</td>
+      <td style="text-align: center">43</td>
+      <td style="text-align: center">1</td>
       <td style="text-align: left"><a href="#present-temperature">Present Temperature</a></td>
       <td style="text-align: left">Present Temperature</td>
-      <td style="text-align: left">R</td>
-      <td style="text-align: left">-</td>
+      <td style="text-align: center">R</td>
+      <td style="text-align: center">-</td>
     </tr>
     <tr>
-      <td style="text-align: left">44</td>
-      <td style="text-align: left">1</td>
+      <td style="text-align: center">44</td>
+      <td style="text-align: center">1</td>
       <td style="text-align: left"><a href="#registered">Registered</a></td>
       <td style="text-align: left">If Instruction is registered</td>
-      <td style="text-align: left">R</td>
-      <td style="text-align: left">0</td>
+      <td style="text-align: center">R</td>
+      <td style="text-align: center">0</td>
     </tr>
     <tr>
-      <td style="text-align: left">46</td>
-      <td style="text-align: left">1</td>
+      <td style="text-align: center">46</td>
+      <td style="text-align: center">1</td>
       <td style="text-align: left"><a href="#moving">Moving</a></td>
       <td style="text-align: left">Movement Status</td>
-      <td style="text-align: left">R</td>
-      <td style="text-align: left">0</td>
+      <td style="text-align: center">R</td>
+      <td style="text-align: center">0</td>
     </tr>
     <tr>
-      <td style="text-align: left">47</td>
-      <td style="text-align: left">1</td>
+      <td style="text-align: center">47</td>
+      <td style="text-align: center">1</td>
       <td style="text-align: left"><a href="#lock">Lock</a></td>
       <td style="text-align: left">Locking EEPROM</td>
-      <td style="text-align: left">RW</td>
-      <td style="text-align: left">0</td>
+      <td style="text-align: center">RW</td>
+      <td style="text-align: center">0</td>
     </tr>
     <tr>
-      <td style="text-align: left">48</td>
-      <td style="text-align: left">2</td>
+      <td style="text-align: center">48</td>
+      <td style="text-align: center">2</td>
       <td style="text-align: left"><a href="#punch">Punch</a></td>
       <td style="text-align: left">Minimum Current Threshold</td>
-      <td style="text-align: left">RW</td>
-      <td style="text-align: left">0</td>
+      <td style="text-align: center">RW</td>
+      <td style="text-align: center">0</td>
     </tr>
     <tr>
-      <td style="text-align: left">56</td>
-      <td style="text-align: left">2</td>
+      <td style="text-align: center">56</td>
+      <td style="text-align: center">2</td>
       <td style="text-align: left"><a href="#sensed-current">Sensed Current</a></td>
       <td style="text-align: left">Consuming Current</td>
-      <td style="text-align: left">R</td>
-      <td style="text-align: left">-</td>
+      <td style="text-align: center">R</td>
+      <td style="text-align: center">-</td>
     </tr>
   </tbody>
 </table>
 
 <h2 id="control-table-description"><a href="#control-table-description">Control Table Description</a></h2>
 
-<h3 id="model-number-0"><a name="model-number"></a><strong>Model Number (0)</strong></h3>
+<h3 id="model-number-0"><a name="model-number"></a><strong><a href="#model-number-0">Model Number (0)</a></strong></h3>
 <p>This address stores model number of the DYNAMIXEL.</p>
 
-<h3 id="firmware-version-2"><a name="firmware-version"></a><strong>Firmware Version (2)</strong></h3>
+<h3 id="firmware-version-2"><a name="firmware-version"></a><strong><a href="#firmware-version-2">Firmware Version (2)</a></strong></h3>
 <p>This address stores firmware version of the DYNAMIXEL.</p>
 
-<h3 id="id-3"><a name="id"></a><strong>ID (3)</strong></h3>
+<h3 id="id-3"><a name="id"></a><strong><a href="#id-3">ID (3)</a></strong></h3>
 <p>The ID is a unique value in the network to identify each DYNAMIXEL with an Instruction Packet.
  0~252 (0xFC) values can be used as an ID, and 254(0xFE) is occupied as a broadcast ID. The Broadcast ID(254, 0xFE) can send an Instruction Packet to all connected DYNAMIXELs simultaneously.</p>
 
 <p class="notice"><code class="highlighter-rouge">Note</code> Please avoid using an identical ID for multiple DYNAMIXELs. You may face communication failure or may not be able to detect Dynamixels with an identical ID.</p>
 
-<h3 id="baud-rate-4"><a name="baud-rate"></a><strong>Baud Rate (4)</strong></h3>
+<h3 id="baud-rate-4"><a name="baud-rate"></a><strong><a href="#baud-rate-4">Baud Rate (4)</a></strong></h3>
 <p>Baud Rate determines serial communication speed between a controller and DYNAMIXELs.</p>
 
 <table>
@@ -3739,7 +4299,7 @@
   </thead>
   <tbody>
     <tr>
-      <td style="text-align: center">1(Default)</td>
+      <td style="text-align: center">1</td>
       <td style="text-align: center">1M</td>
       <td style="text-align: center">0.000%</td>
     </tr>
@@ -3769,7 +4329,7 @@
       <td style="text-align: center">-2.124%</td>
     </tr>
     <tr>
-      <td style="text-align: center">34</td>
+      <td style="text-align: center">34(Default)</td>
       <td style="text-align: center">57600</td>
       <td style="text-align: center">0.794%</td>
     </tr>
@@ -3788,7 +4348,7 @@
 
 <p class="notice"><code class="highlighter-rouge">Note</code> Less than 3% of the baud rate error margin will not affect to UART communication.</p>
 
-<h3 id="return-delay-time-5"><a name="return-delay-time"></a><strong>Return Delay Time (5)</strong></h3>
+<h3 id="return-delay-time-5"><a name="return-delay-time"></a><strong><a href="#return-delay-time-5">Return Delay Time (5)</a></strong></h3>
 <p>After the DYNAMIXEL receives an Instruction Packet, it delays transmitting the Status Packet for Return Delay Time (9). For instance, if the Return Delay Time(9) is set to ‘10’, the Status Packet will be returned after 20[μsec] when the Instruction Packet is received.</p>
 
 <table>
@@ -3813,7 +4373,7 @@
   </tbody>
 </table>
 
-<h3 id="cwccw-angle-limit6-8"><a name="cw-angle-limit"></a><a name="ccw-angle-limit"></a><strong>CW/CCW Angle Limit(6, 8)</strong></h3>
+<h3 id="cwccw-angle-limit-6-8"><a name="cw-angle-limit"></a><a name="ccw-angle-limit"></a><strong><a href="#cwccw-angle-limit-6-8">CW/CCW Angle Limit (6, 8)</a></strong></h3>
 <p>The angle limit allows the motion to be restrained.
 The range and the unit of the value is the same as Goal Position(Address 30, 31).
 CW Angle Limit: the minimum value of Goal Position(Address 30, 31)
@@ -3841,35 +4401,55 @@ The following two modes can be set pursuant to the value of CW and CCW.</p>
 
 <p>The wheel mode can be used to wheel-type operation robots since motors of the robots spin infinitely. The joint mode can be used to multi-joints robot since the robots can be controlled with specific angles.</p>
 
-<h3 id="drive-mode10"><a name="drive-mode"></a><strong>Drive Mode(10)</strong></h3>
-<p>| Bit | Name | Description |
-| :—–: | :—–: | :—–: |
-|Bit 2~7|N/A|-|
-|Bit 1|Master/Slave Mode|0: Master mode, 1 : Slave mode|
-|Bit 0|Normal/Reverse Mode|0: Normal mode, 1: Reverse mode|</p>
+<h3 id="drive-mode-10"><a name="drive-mode"></a><strong><a href="#drive-mode-10">Drive Mode (10)</a></strong></h3>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Bit</th>
+      <th style="text-align: center">Item</th>
+      <th style="text-align: center">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">Bit 2 ~ 7</td>
+      <td style="text-align: center">N/A</td>
+      <td style="text-align: center">-</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Bit 1</td>
+      <td style="text-align: center">Master/Slave Mode</td>
+      <td style="text-align: center">0: Master Mode<br />1 : Slave Mode</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Bit 0</td>
+      <td style="text-align: center">Normal/Reverse Mode</td>
+      <td style="text-align: center">0: Normal Mode<br />1: Reverse mode</td>
+    </tr>
+  </tbody>
+</table>
 
 <ul>
   <li>
-    <p>Master Mode</p>
-
-    <p>In case of being used as dual joints, it is set to designate as master.</p>
+    <p>Master Mode
+In case of being used as dual joints, it is set to designate as master.</p>
   </li>
   <li>
-    <p>Slave Mode</p>
-
-    <p>In case of being used as dual joints, it is set to designate as slave.</p>
+    <p>Slave Mode
+In case of being used as dual joints, it is set to designate as slave.</p>
   </li>
   <li>
-    <p>General Mode</p>
-
-    <p>Sets the direction of rotation to set direction. Reads normal data values from position.</p>
+    <p>General Mode
+Sets the direction of rotation to set direction.
+Reads normal data values from position.</p>
   </li>
   <li>
-    <p>Reverse Mode</p>
+    <p>Reverse Mode
+Sets the direction of rotation  opposite to set direction.
+Reads inverse data values from position.</p>
 
-    <p>Sets the direction of rotation  opposite to set direction. Reads inverse data values from position.</p>
-
-    <p class="notice"><code class="highlighter-rouge">Note</code> Reverse mode is to change the actual rotation direction reversely. It can be used conveniently when the robot with symmetrical joints layout is built.</p>
+    <p class="notice"><code class="highlighter-rouge">Note</code> Reverse mode is to reverse the rotational direction. It can be used conveniently when a symmetrical joint is required.</p>
   </li>
 </ul>
 
@@ -3882,24 +4462,45 @@ Next, the motors must be connected to each other using synchronization cable.</p
   <li>Reverse mode synch cable: Drives PWM signals in reverse.</li>
 </ul>
 
-<p><img src="/emanual/assets/images/dxl/ex/ex-106_dual.png" alt="" /></p>
+<p><img src="/assets/images/dxl/ex/ex-106_dual.png" alt="" /></p>
 
 <p class="notice"><code class="highlighter-rouge">Note</code> Slave is synchronized by directly receiving the control command through synchronization cable from Master.  Slave Mode unit responds to communication through command packets, but data related to motor drive are processed only through the synchronization.</p>
 
-<h3 id="the-highest-limit-temperature"><a name="temperature-limit"></a><strong>The Highest Limit Temperature</strong></h3>
+<p><code class="highlighter-rouge">Note</code> In a dual master-slave configuration position information from the slave is ignored and the position of the dual configuration is based on the master in PWM control. When master and slave are not physically connected there could be a slight difference on the driven load. Use the frame shown in the below image to achieve dual configuration.</p>
+
+<p><img src="/assets/images/dxl/ex/ex-106+_fr08-h110_fr08-d101.png" alt="" /></p>
+
+<h3 id="temperature-limit-11"><a name="temperature-limit"></a><strong><a href="#temperature-limit-11">Temperature Limit (11)</a></strong></h3>
 <p class="notice--warning"><code class="highlighter-rouge">Caution</code> Do not set the temperature lower/higher than the default value. When the temperature alarm shutdown occurs, wait 20 minutes to cool the temperature before re-use. Using the product when the temperature is high may and can cause damage.</p>
 
-<h3 id="minmax-voltage-limit"><a name="min-voltage-limit"></a><a name="max-voltage-limit"></a><strong>Min/Max Voltage Limit</strong></h3>
-<p>It is the operation range of voltage.
-50 to 250 (0x32 ~ 0x96) can be used.  The unit is 0.1V.
-For example, if the value is 80, it is 8V.
-If Present Voltage (Address42) is out of the range, Voltage Range Error Bit (Bit0) of Status Packet is returned as ‘1’ and Alarm is triggered as set in the addresses 17 and 18.</p>
+<h3 id="minmax-voltage-limit-12-13"><a name="min-voltage-limit"></a><a name="max-voltage-limit"></a><strong><a href="#minmax-voltage-limit-12-13">Min/Max Voltage Limit (12, 13)</a></strong></h3>
+<p>It is the operation range of voltage.</p>
 
-<h3 id="max-torque"><a name="max-torque"></a><strong>Max Torque</strong></h3>
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Unit</th>
+      <th style="text-align: center">Value Range</th>
+      <th style="text-align: center">Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">About 0.1V</td>
+      <td style="text-align: center">50 ~ 250</td>
+      <td style="text-align: center">5.0 ~ 25.0V</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>For example, if the value is 80, the voltage is 8V.
+If <a href="#present-voltage">Present Voltage(42)</a> is out of the range, Voltage Range Error Bit (Bit0) of Status Packet is returned as ‘1’ and Alarm is triggered as set in the addresses 17 and 18.</p>
+
+<h3 id="max-torque-14"><a name="max-torque"></a><strong><a href="#max-torque-14">Max Torque (14)</a></strong></h3>
 <p>It is the torque value of maximum output. 0 to 1023 (0x3FF) can be used, and the unit is about 0.1%.
 For example, Data 1023 (0x3FF) means that Dynamixel will use 100% of the maximum torque it can produce while Data 512 (0x200) means that Dynamixel will use 50% of the maximum torque. When the power is turned on, Torque Limit (Addresses 34 and 35) uses the value as the initial value.</p>
 
-<h3 id="status-return-level"><a name="status-return-level"></a><strong>Status Return Level</strong></h3>
+<h3 id="status-return-level-16"><a name="status-return-level"></a><strong><a href="#status-return-level-16">Status Return Level (16)</a></strong></h3>
 <p>It decides how to return Status Packet. There are three ways like the below table.</p>
 
 <table>
@@ -3927,7 +4528,7 @@ For example, Data 1023 (0x3FF) means that Dynamixel will use 100% of the maximum
 
 <p>When Instruction Packet is Broadcast ID, Status Packet is not returned regardless of Status Return Level.</p>
 
-<h3 id="alarm-led--alarm-shutdown"><a name="alarm-led"></a><a name="shutdown"></a><strong>Alarm LED / Alarm Shutdown</strong></h3>
+<h3 id="alarm-led17-shutdown18"><a name="alarm-led"></a><a name="shutdown"></a><strong><a href="#alarm-led17-shutdown18">Alarm LED(17), Shutdown(18)</a></strong></h3>
 <p>Dynamixel can protect itself by detecting errors occur during the operation.
 The errors can be set are as the table below.</p>
 
@@ -3986,7 +4587,7 @@ The errors can be set are as the table below.</p>
 <p>It is possible to make duplicate set since the function of each bit is run by  the logic of ‘OR’. That is, if 0X05 (binary 00000101) is set, both Input Voltage Error and Overheating Error can be detected.
 If errors occur, in case of Alarm LED, the LED blinks; in case of Alarm Shutdown, the motor output becomes 0 % by making the value of Torque Limit(Address 34, 35) as 0.</p>
 
-<h3 id="torque-enable"><a name="torque-enable"></a><strong>Torque Enable</strong></h3>
+<h3 id="torque-enable-24"><a name="torque-enable"></a><strong><a href="#torque-enable-24">Torque Enable (24)</a></strong></h3>
 
 <table>
   <thead>
@@ -4007,7 +4608,7 @@ If errors occur, in case of Alarm LED, the LED blinks; in case of Alarm Shutdown
   </tbody>
 </table>
 
-<h3 id="led"><a name="led"></a><strong>LED</strong></h3>
+<h3 id="led-25"><a name="led"></a><strong><a href="#led-25">LED (25)</a></strong></h3>
 
 <table>
   <thead>
@@ -4028,12 +4629,12 @@ If errors occur, in case of Alarm LED, the LED blinks; in case of Alarm Shutdown
   </tbody>
 </table>
 
-<h3 id="compliance-margin"><a name="cw-compliance-margin"></a><a name="ccw-compliance-margin"></a><strong>Compliance Margin</strong></h3>
+<h3 id="compliance-margin-26-27"><a name="cw-compliance-margin"></a><a name="ccw-compliance-margin"></a><strong><a href="#compliance-margin-26-27">Compliance Margin (26, 27)</a></strong></h3>
 <p>It exists in each direction of CW/CCW and means the error between goal position and present position.
 The range of the value is 0~255, and the unit is the same as Goal Position.(Address 30,31)
 The greater the value, the more difference occurs.</p>
 
-<h3 id="compliance-slope"><a name="cw-compliance-slope"></a><a name="ccw-compliance-slope"></a><strong>Compliance Slope</strong></h3>
+<h3 id="compliance-slope-28-29"><a name="cw-compliance-slope"></a><a name="ccw-compliance-slope"></a><strong><a href="#compliance-slope-28-29">Compliance Slope (28, 29)</a></strong></h3>
 <p>It exists in each direction of CW/CCW and sets the level of Torque near the goal position.
 Compliance Slope is set in 7 steps, the higher the value, the more flexibility is obtained.
 Data representative value is actually used value.  That is, even if the value is set to 25, 16 is used internally as the representative value.</p>
@@ -4088,19 +4689,19 @@ Data representative value is actually used value.  That is, even if the value is
 <p>Compliance is to set the control flexibility of the motor.
 The following diagram shows the relationship between output torque and position of the motor.</p>
 
-<p><img src="/emanual/assets/images/dxl/dxl_compliance.png" alt="" /></p>
+<p><img src="/assets/images/dxl/dxl_compliance.png" alt="" /></p>
 
-<h3 id="goal-position"><a name="goal-position"></a><strong>Goal Position</strong></h3>
+<h3 id="goal-position-30"><a name="goal-position"></a><strong><a href="#goal-position-30">Goal Position (30)</a></strong></h3>
 <p>It is a position value of destination.
 0 to 1023 (0x3FF) is available.  The unit is 0.29 degree.
 If Goal Position is out of the range, Angle Limit Error Bit (Bit1) of Status Packet is returned as ‘1’ and Alarm is triggered as set in Alarm LED/Shutdown.</p>
 
-<p><img src="/emanual/assets/images/dxl/ex/ex-106_goal_position.png" alt="" />
+<p><img src="/assets/images/dxl/ex/ex-106_goal_position.png" alt="" />
 The picture above is the front view of Dynamixel</p>
 
 <p class="notice"><code class="highlighter-rouge">Note</code> If it is set to Wheel Mode, this value is not used.</p>
 
-<h3 id="moving-speed"><a name="moving-speed"></a><strong>Moving Speed</strong></h3>
+<h3 id="moving-speed-32"><a name="moving-speed"></a><strong><a href="#moving-speed-32">Moving Speed (32)</a></strong></h3>
 <p>It is a moving speed to Goal Position.
 The range and the unit of the value may vary depending on the operation mode.</p>
 
@@ -4111,8 +4712,6 @@ The range and the unit of the value may vary depending on the operation mode.</p
 If it is set to 0, it means the maximum rpm of the motor is used without controlling the speed.
 If it is 1023, it is about 114rpm.
 For example, if it is set to 300, it is about 33.3 rpm.</p>
-
-    <p class="notice"><code class="highlighter-rouge">Note</code> Please check the maximum rpm of relevant model in Joint Mode.  Even if the motor is set to more than maximum rpm, it cannot generate the torque more than the maximum rpm.</p>
   </li>
   <li>
     <p>Wheel Mode
@@ -4125,7 +4724,9 @@ For example, if it is set to 512, it means the output is controlled by 50% of th
   </li>
 </ul>
 
-<h3 id="torque-limit"><a name="torque-limit"></a><strong>Torque Limit</strong></h3>
+<p class="notice"><code class="highlighter-rouge">Note</code> Please check the maximum rpm of the Dynamixel. The motor cannot exceed the maximum rpm with the higher Moving Speed value.</p>
+
+<h3 id="torque-limit-34"><a name="torque-limit"></a><strong><a href="#torque-limit-34">Torque Limit (34)</a></strong></h3>
 <p>It is the value of the maximum torque limit.
 0 to 1023 (0x3FF) is available, and the unit is about 0.1%.
 For example, if the value is 512, it is about 50%; that means only 50% of the maximum torque will be used.
@@ -4133,11 +4734,11 @@ If the power is turned on, the value of Max Torque (Address 14, 15) is used as t
 
 <p class="notice"><code class="highlighter-rouge">Note</code> If the function of Alarm Shutdown is triggered, the motor loses its torque because the value becomes 0. At this moment, if the value is changed to the value other than 0, the motor can be used again.</p>
 
-<h3 id="present-position"><a name="present-position"></a><strong>Present Position</strong></h3>
+<h3 id="present-position-36"><a name="present-position"></a><strong><a href="#present-position-36">Present Position (36)</a></strong></h3>
 <p>It is the current position value of Dynamixel.
 The range of the value is 0~1023 (0x3FF), and the unit is 0.29 degree.</p>
 
-<p><img src="/emanual/assets/images/dxl/ex/ex-106_goal_position.png" alt="" />
+<p><img src="/assets/images/dxl/ex/ex-106_goal_position.png" alt="" />
 The picture above is the front view of Dynamixel.</p>
 
 <ul>
@@ -4151,7 +4752,7 @@ For example, The value is changed from 5000 to 10000, (10000 - 5000) x 0.06 = 30
   </li>
 </ul>
 
-<h3 id="present-speed"><a name="present-speed"></a><strong>Present Speed</strong></h3>
+<h3 id="present-speed-38"><a name="present-speed"></a><strong><a href="#present-speed-38">Present Speed (38)</a></strong></h3>
 <p>It is the current moving speed.
 0~2047 (0X7FF) can be used.
 If a value is in the rage of 0~1023, it means that the motor rotates to the CCW direction.
@@ -4172,7 +4773,7 @@ For example, if it is set to 512, it means that the torque is controlled by 50% 
   </li>
 </ul>
 
-<h3 id="present-load"><a name="present-load"></a><strong>Present Load</strong></h3>
+<h3 id="present-load-40"><a name="present-load"></a><strong><a href="#present-load-40">Present Load (40)</a></strong></h3>
 <p>It means currently applied load.
 The range of the value is 0~2047, and the unit is about 0.1%.
 If the value is 0~1023, it means the load works to the CCW direction.
@@ -4203,15 +4804,15 @@ For example, the value is 512, it means the load is detected in the direction of
 
 <p class="notice"><code class="highlighter-rouge">Note</code> Present load is an inferred value based on the internal output value; not a measured value using torque sensor, etc. Therefore, it may be inaccurate for measuring weight or torque. It is recommended to use it for predicting the direction and size of the force being applied to the joint.</p>
 
-<h3 id="present-voltage"><a name="present-voltage"></a><strong>Present Voltage</strong></h3>
+<h3 id="present-voltage-42"><a name="present-voltage"></a><strong><a href="#present-voltage-42">Present Voltage (42)</a></strong></h3>
 <p>It is the size of the current voltage supplied.
 This value is 10 times larger than the actual voltage. For example, when 10V is supplied, the data value is 100 (0x64)</p>
 
-<h3 id="present-temperature"><a name="present temperature"></a><strong>Present Temperature</strong></h3>
+<h3 id="present-temperature-43"><a name="present-temperature"></a><strong><a href="#present-temperature-43">Present Temperature (43)</a></strong></h3>
 <p>It is the internal temperature of Dynamixel in Celsius.
 Data value is identical to the actual temperature in Celsius. For example, if the data value is 85 (0x55), the current internal temperature is 85°C.</p>
 
-<h3 id="registered-instruction"><a name="registered-instruction"></a><strong>Registered Instruction</strong></h3>
+<h3 id="registered-instruction-44"><a name="registered-instruction"></a><strong><a href="#registered-instruction-44">Registered Instruction (44)</a></strong></h3>
 
 <table>
   <thead>
@@ -4234,7 +4835,7 @@ Data value is identical to the actual temperature in Celsius. For example, if th
 
 <p class="notice"><code class="highlighter-rouge">Note</code> If ACTION command is executed, the value is changed into 0.</p>
 
-<h3 id="moving"><a name="moving"></a><strong>Moving</strong></h3>
+<h3 id="moving-46"><a name="moving"></a><strong><a href="#moving-46">Moving (46)</a></strong></h3>
 
 <table>
   <thead>
@@ -4255,7 +4856,7 @@ Data value is identical to the actual temperature in Celsius. For example, if th
   </tbody>
 </table>
 
-<h3 id="lock"><a name="lock"></a><strong>Lock</strong></h3>
+<h3 id="lock-47"><a name="lock"></a><strong><a href="#lock-47">Lock (47)</a></strong></h3>
 
 <table>
   <thead>
@@ -4278,11 +4879,11 @@ Data value is identical to the actual temperature in Celsius. For example, if th
 
 <p class="notice--warning"><code class="highlighter-rouge">Caution</code> If Lock is set to 1, the power must be turned off and then turned on again to change into 0.</p>
 
-<h3 id="punch"><a name="punch"></a><strong>Punch</strong></h3>
+<h3 id="punch-48"><a name="punch"></a><strong><a href="#punch-48">Punch (48)</a></strong></h3>
 <p>Current to drive motor is at minimum.
 Can choose vales from 0x20 to 0x3FF.</p>
 
-<h3 id="sensed-current"><a name="sensed-current"></a><strong>Sensed Current</strong></h3>
+<h3 id="sensed-current-56"><a name="sensed-current"></a><strong><a href="#sensed-current-56">Sensed Current (56)</a></strong></h3>
 <p>It is the amount of current in use. The range from 0 to 1023 is used, and the unit is 10mA. The value less than 512 means the motor consumes the current and torques to the direction of CCW. The value greater than 512 means the motor consumes the current and torques to the direction of CW. 512 is equal to 0mA, and it means there is no torque from the motor.</p>
 
 <p>For example, if the value is 612, the motor torques to the direction of CW and consumes 1000mA(612-512=100 =&gt; 100x10mA = 1,000mA).</p>
@@ -4291,13 +4892,13 @@ Can choose vales from 0x20 to 0x3FF.</p>
 
 <h1 id="how-to-assemble"><a href="#how-to-assemble">How to Assemble</a></h1>
 
-<p><img src="/emanual/assets/images/dxl/ax/ax_12a_frame_assembly_02.png" alt="" /></p>
+<p><img src="/assets/images/dxl/ax/ax_12a_frame_assembly_02.png" alt="" /></p>
 
-<p><img src="/emanual/assets/images/dxl/ax/ax_series_frame_assembly_01.png" alt="" /></p>
+<p><img src="/assets/images/dxl/ax/ax_series_frame_assembly_01.png" alt="" /></p>
 
-<p><img src="/emanual/assets/images/dxl/ax/ax_series_frame_assembly_02.png" alt="" /></p>
+<p><img src="/assets/images/dxl/ax/ax_series_frame_assembly_02.png" alt="" /></p>
 
-<p><img src="/emanual/assets/images/dxl/ex/ex-106+_combination.png" alt="" /></p>
+<p><img src="/assets/images/dxl/ex/ex-106+_combination.png" alt="" /></p>
 
 <h1 id="maintenance"><a href="#maintenance">Maintenance</a></h1>
 
@@ -4305,14 +4906,14 @@ Can choose vales from 0x20 to 0x3FF.</p>
 
 <p>The horn is installed on the front wheel gear serration of the DYNAMIXEL whereas the bearing set is installed on the back.</p>
 
-<p><img src="/emanual/assets/images/dxl/x/horn_bearing.jpg" alt="" /></p>
+<p><img src="/assets/images/dxl/mx/horn_bearing.jpg" alt="" /></p>
 
 <h3 id="installing-the-horn">Installing the Horn</h3>
 
 <p>Place the thrust horn washer into the actuator before inserting the horn.
 You must carefully align the horn to the wheel gear serration by aligning dots.</p>
 
-<p><img src="/emanual/assets/images/dxl/x/horn_alignment.jpg" alt="" /></p>
+<p><img src="/assets/images/dxl/mx/horn_alignment.jpg" alt="" /></p>
 
 <p>Once alignment is properly done, gently push the center of the horn toward the actuator.
 Make sure that the horn washer is in place as you tighten the bolt.</p>
@@ -4323,37 +4924,67 @@ Make sure that the horn washer is in place as you tighten the bolt.</p>
 The bearing set can also be purchased separately.
 As bearing set is rotating freely, therefore alignment is not required when assembling to DYNAMIXEL.</p>
 
-<p><img src="/emanual/assets/images/dxl/x/bearing.jpg" alt="" /></p>
+<p><img src="/assets/images/dxl/mx/bearing.jpg" alt="" /></p>
 
 <h1 id="reference"><a href="#reference">Reference</a></h1>
 
-<p class="notice"><code class="highlighter-rouge">Note</code> <a href="http://en.robotis.com/BlueAD/board.php?bbs_id=faq&amp;mode=view&amp;bbs_no=47&amp;page=1&amp;key=&amp;keyword=&amp;sort=&amp;scate=">Compatibility Guide</a></p>
+<p class="notice"><code class="highlighter-rouge">Note</code> <a href="http://en.robotis.com/service/compatibility_table.php?cate=d">Compatibility Guide</a></p>
 
-<h2 id="quick-start"><a href="#quick-start">Quick Start</a></h2>
+<h2 id="connector-information"><a href="#connector-information">Connector Information</a></h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Item</th>
+      <th style="text-align: center">RS-485</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">Pinout</td>
+      <td style="text-align: center"><code class="highlighter-rouge">1</code> GND<br /><code class="highlighter-rouge">2</code> VDD<br /><code class="highlighter-rouge">3</code> DATA+<br /><code class="highlighter-rouge">4</code> DATA-</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Diagram</td>
+      <td style="text-align: center"><img src="/assets/images/dxl/molex_22035045_diagram.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Housing</td>
+      <td style="text-align: center"><img src="/assets/images/dxl/molex_50375043.png" alt="" /><br /><a href="http://www.molex.com/molex/products/datasheet.jsp?part=active/0050375043_CRIMP_HOUSINGS.xml">MOLEX 50-37-5043</a></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">PCB Header</td>
+      <td style="text-align: center"><img src="/assets/images/dxl/molex_22035045.png" alt="" /><br /><a href="http://www.molex.com/molex/products/datasheet.jsp?part=active/0022035045_PCB_HEADERS.xml">MOLEX 22-03-5045</a></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Crimp Terminal</td>
+      <td style="text-align: center"><a href="http://www.molex.com/molex/products/datasheet.jsp?part=active/0008701039_CRIMP_TERMINALS.xml">MOLEX 80-70-1039</a></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Wire Gauge</td>
+      <td style="text-align: center">21 AWG</td>
+    </tr>
+  </tbody>
+</table>
 
 <h2 id="drawings"><a href="#drawings">Drawings</a></h2>
 
-<p><img src="/emanual/assets/images/dxl/ax/ax-18a_dimension.png" alt="" /></p>
+<p><img src="/assets/images/dxl/ax/ax-18a_dimension.png" alt="" /></p>
 
 <h2 id="communication-circuit"><a href="#communication-circuit">Communication Circuit</a></h2>
 <p>To control the Dynamixel actuators, the main controller needs to convert its UART signals to the half duplex type. The recommended circuit diagram for this is shown below.</p>
 
 <h3 id="ttl-communication">TTL Communication</h3>
-<p><img src="/emanual/assets/images/dxl/ttl_circuit.png" alt="" /></p>
+<p><img src="/assets/images/dxl/ttl_circuit.png" alt="" /></p>
 
 <h3 id="rs-485-communication">RS-485 Communication</h3>
-<p><img src="/emanual/assets/images/dxl/485_circuit.jpg" alt="" /></p>
+<p><img src="/assets/images/dxl/485_circuit.png" alt="" /></p>
 
-<p>The power of Dynamixel is supplied via Pin1(-), Pin2(+).
-(The above circuit is built into Dynamixel-only controller.)
-In the above circuit diagram, the direction of data signal of TxD and RxD in the TTL Level is determined according to the level of DIRECTION 485 as follows:
-In case of DIRECTION485 Level = High: The signal of TxD is output to D+ and D-.
-In case of DIRECTION485 Level = Low: The signal of D+ and D- is output to RxD.</p>
-
-<h2 id="pin-assignment"><a href="#pin-assignment">Pin Assignment</a></h2>
-<p>The connector pin assignments are as the following. The two connectors on the Dynamixel are connected pin to pin, thus the AX-12 can be operated with only one connector attached.</p>
-
-<p><img src="/emanual/assets/images/dxl/connector_pin.png" alt="" /></p>
+<p>The power of Dynamixel is supplied via Pin1(-), Pin2(+).<br />
+(The above circuit is built into Dynamixel-only controller.)<br />
+In the above circuit diagram, the direction of data signal of TxD and RxD in the TTL Level is determined according to the level of DIRECTION 485 as follows:<br />
+In case of DIRECTION485 Level = High: The signal of TxD is output to D+ and D-<br />
+In case of DIRECTION485 Level = Low: The signal of D+ and D- is output to RxD</p>
 
 
   </div>
@@ -4366,13 +4997,48 @@ In case of DIRECTION485 Level = Low: The signal of D+ and D- is output to RxD.</
 
 <!-- end custom footer snippets -->
         
+<script>
+$reference = $(".archive");
+$(window).resize(function() {
+  var newWidth = $reference.width() * 0.90;
+  if (newWidth > 640) { newWidth = 640; }
 
-<div class="page__footer-copyright">&copy; 2017 ROBOTIS. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+  // Resize all videos according to aspect ratio
+  $("iframe").each(
+    function(index, elem) {
+      elem.setAttribute("width", (newWidth).toFixed());
+      elem.setAttribute("height", (newWidth*0.56).toFixed());
+    }
+  );
+// Kick off one resize to fix all videos on page load
+}).resize();
+</script>
+
+<div class="page__footer-copyright">&copy; 2018 ROBOTIS. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>
 
-    <script src="http://localhost:4000/emanual/assets/js/main.min.js"></script>
+    <script src="http://localhost:4000/assets/js/main.min.js"></script>
+
+
+
+
+  
+    <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-83196341-13']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+  
+
+
 
 
 

@@ -9,9 +9,9 @@ $(document).ready(function(){
       $('body').css('margin-bottom', $('.page__footer').outerHeight(true));
     },
     didResize = false;
-
+  
   bumpIt();
-
+  
   $(window).resize(function() {
     didResize = true;
   });

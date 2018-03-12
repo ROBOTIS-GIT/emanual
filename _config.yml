@@ -11,8 +11,8 @@ title                    : "ROBOTIS e-Manual"
 title_separator          : "-"
 name                     : "ROBOTIS"
 description              : "e-Manual wiki"
-url                      : "https://robotis-git.github.io"
-baseurl                  : "/emanual"
+url                      : "http://emanual.robotis.com"
+baseurl                  : 
 repository               : ROBOTIS-Git/emanual
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
@@ -70,9 +70,10 @@ social:
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "custom"
+  provider               : "google" # false (default), "google", "google-universal", "custom"
   google:
-    tracking_id          :
+    tracking_id          : "UA-83196341-13"
+    tracking_id_kr       : "UA-83196341-14"
 
 
 # Site Author
@@ -121,7 +122,6 @@ exclude:
   - .bundle
   - .jekyll-assets-cache
   - .sass-cache
-  - assets/js/plugins
   - assets/js/_main.js
   - assets/js/vendor
   - Capfile
@@ -172,14 +172,14 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
+#paginate: 5 # amount of posts to show
+#paginate_path: /page:num/
 timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
-gems:
-  - jekyll-paginate
+plugins:
+#  - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
@@ -187,7 +187,7 @@ gems:
 
 # mimic GitHub Pages with --safe
 whitelist:
-  - jekyll-paginate
+#  - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
