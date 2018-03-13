@@ -222,6 +222,12 @@ However we highly recommend to simulate robots along `ROS`.
     $ sudo apt-get install libgazebo7-dev
     ```
 
+1. Download source code from github
+
+    ``` bash
+    $ git clone https://github.com/ROBOTIS-GIT/turtlebot3_gazebo_plugin
+    ```
+
 1. Add gazebo plugin path in `.bashrc` file
 
     ``` bash
@@ -230,7 +236,7 @@ However we highly recommend to simulate robots along `ROS`.
 
     add two lines
 
-    **Tip :** turtlebot3_gazebo_plugin path = ~/catkin_ws/src/turtlebot3_simulations/turtlebot3_gazebo_plugin
+    **Tip :** turtlebot3_gazebo_plugin path = ~/turtlebot3_gazebo_plugin
     {: .notice--info}
 
     ```
