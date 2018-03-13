@@ -218,10 +218,6 @@ For example, if it is set to 300 then the motor is moving to the CCW direction a
 ### <a name="goal-acceleration"></a>**[Goal Acceleration (73)](#goal-acceleration-73)**
 {% include en/dxl/control_table_goal_acceleration.md %}
 
-# [How to Assemble](#how-to-assemble)
-
-
-
 # [Maintenance](#maintenance)
 
 {% include en/dxl/horn_bearing_replacement.md %}

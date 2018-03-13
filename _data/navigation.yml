@@ -1794,8 +1794,6 @@ rx-10:
         urlkr: /dxl/rx/rx-10/#도면
       - title: "Communication Circuit"
         url: /dxl/rx/rx-10/#communication-circuit
-      - title: "Pin Assignment"
-        url: /dxl/rx/rx-10/#pin-assignment
 
 #RX-24F sidebar
 rx-24f:
@@ -2283,10 +2281,6 @@ mx-12w:
     titlekr: "주요 사양"
     url: /dxl/mx/mx-12w/#specifications
     urlkr: /dxl/mx/mx-12w/#주요-사양
-  - title: "Performance Graph"
-    titlekr: "성능 그래프"
-    url: /dxl/mx/mx-12w/#performance-graph
-    urlkr: /dxl/mx/mx-12w/#성능-그래프
   - title: "Control Table"
     titlekr: "컨트롤 테이블"
     url: /dxl/mx/mx-12w/#control-table
@@ -2416,10 +2410,6 @@ mx-12w:
           - title: "Goal Acceleration(73)"
             titlekr: "Goal Acceleration(73)"
             url: /dxl/mx/mx-12w/#goal-acceleration-73
-  - title: "How to Assemble"
-    titlekr: "조립 예시"
-    url: /dxl/mx/mx-12w/#how-to-assemble
-    urlkr: /dxl/mx/mx-12w/#조립-예시
   - title: "Maintenance"
     titlekr: "유지보수"
     url: /dxl/mx/mx-12w/#maintenance
@@ -3197,8 +3187,6 @@ mx-28-2:
         urlkr: /dxl/mx/mx-28-2/#도면
       - title: "Communication Circuit"
         url: /dxl/mx/mx-28-2/#communication-circuit
-      - title: "Pin Assignment"
-        url: /dxl/mx/mx-28-2/#pin-assignment
 
 #MX-64(2.0) sidebar
 mx-64-2:
@@ -3364,9 +3352,9 @@ mx-64-2:
         - title: "Present PWM(124)"
           titlekr: "Present PWM(124)"
           url: /dxl/mx/mx-64-2/#present-pwm124
-        - title: "Present Load(126)"
-          titlekr: "Present Load(126)"
-          url: /dxl/mx/mx-64-2/#present-load126
+        - title: "Present Current(126)"
+          titlekr: "Present Current(126)"
+          url: /dxl/mx/mx-64-2/#present-current126
         - title: "Present Velocity(128)"
           titlekr: "Present Velocity(128)"
           url: /dxl/mx/mx-64-2/#present-velocity128
@@ -3423,8 +3411,6 @@ mx-64-2:
         urlkr: /dxl/mx/mx-64-2/#도면
       - title: "Communication Circuit"
         url: /dxl/mx/mx-64-2/#communication-circuit
-      - title: "Pin Assignment"
-        url: /dxl/mx/mx-64-2/#pin-assignment
 
 #MX-106(2.0) sidebar
 mx-106-2:
@@ -3590,9 +3576,9 @@ mx-106-2:
         - title: "Present PWM(124)"
           titlekr: "Present PWM(124)"
           url: /dxl/mx/mx-106-2/#present-pwm124
-        - title: "Present Load(126)"
-          titlekr: "Present Load(126)"
-          url: /dxl/mx/mx-106-2/#present-load126
+        - title: "Present Current(126)"
+          titlekr: "Present Current(126)"
+          url: /dxl/mx/mx-106-2/#present-current126
         - title: "Present Velocity(128)"
           titlekr: "Present Velocity(128)"
           url: /dxl/mx/mx-106-2/#present-velocity128
@@ -3645,8 +3631,6 @@ mx-106-2:
         urlkr: /dxl/mx/mx-106-2/#도면
       - title: "Communication Circuit"
         url: /dxl/mx/mx-106-2/#communication-circuit
-      - title: "Pin Assignment"
-        url: /dxl/mx/mx-106-2/#pin-assignment
 
 #XH430-V210 sidebar
 xh430-v210:
