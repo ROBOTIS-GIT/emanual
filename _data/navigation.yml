@@ -9303,9 +9303,9 @@ rh_p12_rn:
         - title: "Acceleration Limit(26)"
           titlekr: "Acceleration Limit(26)"
           url: /platform/rh_p12_rn/#acceleration-limit26
-        - title: "Torque Limit(30)"
-          titlekr: "Torque Limit(30)"
-          url: /platform/rh_p12_rn/#torque-limit30
+        - title: "Current Limit(30)"
+          titlekr: "Current Limit(30)"
+          url: /platform/rh_p12_rn/#current-limit30
         - title: "Velocity Limit(32)"
           titlekr: "Velocity Limit(32)"
           url: /platform/rh_p12_rn/#velocity-limit32
@@ -9339,9 +9339,9 @@ rh_p12_rn:
         - title: "Goal Velocity(600)"
           titlekr: "Goal Velocity(600)"
           url: /platform/rh_p12_rn/#goal-velocity600
-        - title: "Goal Torque(604)"
-          titlekr: "Goal Torque(604)"
-          url: /platform/rh_p12_rn/#goal-torque604
+        - title: "Goal Current(604)"
+          titlekr: "Goal Current(604)"
+          url: /platform/rh_p12_rn/#goal-current604
         - title: "Goal Acceleration(606)"
           titlekr: "Goal Acceleration(606)"
           url: /platform/rh_p12_rn/#goal-acceleration606
@@ -9419,6 +9419,21 @@ rh_p12_rn:
       titlekr: "ROS GUI 예제"
       url: /platform/rh_p12_rn/examples/#ros-gui-example
       urlkr: /platform/rh_p12_rn/examples/#ros-gui-예제
+  - title: "Gazebo Simulation"
+    titlekr: "Gazebo 시뮬레이션"
+    url: /platform/rh_p12_rn/gazebo/#gazebo-simulation
+    urlkr: /platform/rh_p12_rn/gazebo/#gazebo-시뮬레이션
+    children:
+    - title: "Gazebo Install"
+      titlekr: "Gazebo 설치"
+      url: /platform/rh_p12_rn/gazebo/#gazebo-simulation
+      urlkr: /platform/rh_p12_rn/gazebo/#gazebo-시뮬레이션
+    - title: "Run Simulator"
+      titlekr: "시뮬레이터 실행"
+      url: /platform/rh_p12_rn/gazebo/#run-simulator
+      urlkr: /platform/rh_p12_rn/gazebo/#시뮬레이터-실행
+
+
 
 robothand_rx28:
   - titlekr: "개요"
