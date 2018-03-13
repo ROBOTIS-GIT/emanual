@@ -36,17 +36,12 @@ The Navigation locates TurtleBot3 to the calculated position in the map by combi
 {: .notice--info}
 
 **[Remote PC]** Launch the navigation file.
-If you have TurtleBot3 Burger,
+
+**Tip :** TB3_MODEL = `burger`, `waffle`, `waffle_pi` 
+{: .notice--info}
 
 ``` bash
-$ export TURTLEBOT3_MODEL=burger
-$ roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/map.yaml
-```
-
-If you have TurtleBot3 Waffle,
-
-``` bash
-$ export TURTLEBOT3_MODEL=waffle
+$ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/map.yaml
 ```
 

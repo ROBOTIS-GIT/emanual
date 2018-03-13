@@ -84,18 +84,11 @@ Turtlebot3 can be moved by interactive markers on RViz. You can move the turtleb
 **[Remote PC]** Open a new terminal and launch the remote file.
 If you have TurtleBot3 Burger,
 
+**Tip :** TB3_MODEL = `burger`, `waffle`, `waffle_pi` 
+{: .notice--info}
+
 ``` bash
-$ export TURTLEBOT3_MODEL=burger
-```
-or Waffle
-``` bash
-$ export TURTLEBOT3_MODEL=waffle
-```
-or Waffle_pi
-``` bash
-$ export TURTLEBOT3_MODEL=waffle_pi
-```
-``` bash
+$ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ roslaunch turtlebot3_bringup turtlebot3_remote.launch
 ```
 
