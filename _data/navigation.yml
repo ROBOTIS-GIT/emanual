@@ -9841,10 +9841,23 @@ turtlebot3:
     - title: "Gazebo (3D)"
       url: /platform/turtlebot3/simulation/#gazebo-3d
       children:
-      - title: "Gazebo Plugin"
-        url: /platform/turtlebot3/simulation/#gazebo-plugin
-      - title: "Connect ROS"
-        url: /platform/turtlebot3/simulation/#connect-ros
+      - title: "ROS packages for Gazebo"
+        url: /platform/turtlebot3/simulation/#ros-packages-for-gazebo
+        children:
+        - title: "Simulate in Various World"
+          url: /platform/turtlebot3/simulation/#simulate-in-various-world
+        - title: "Drive TurtleBot3"
+          url: /platform/turtlebot3/simulation/#drive-turtlebot3
+        - title: "Open Rviz"
+          url: /platform/turtlebot3/simulation/#open-rviz
+        - title: "SLAM by TurtleBot3"
+          url: /platform/turtlebot3/simulation/#slam-by-turtlebot3
+        - title: "Navigation of TurtleBot3"
+          url: /platform/turtlebot3/simulation/#navigation-of-turtlebot3
+        - title: "Open Rviz"
+          url: /platform/turtlebot3/simulation/#slam-by-multiple-turtlebot3s
+      - title: "SLAM by Multiple TurtleBot3s"
+        url: /platform/turtlebot3/simulation/#standalone-gazebo-plugin
   - title: "Manipulation"
     url: /platform/turtlebot3/manipulation/#manipulation
     children:
