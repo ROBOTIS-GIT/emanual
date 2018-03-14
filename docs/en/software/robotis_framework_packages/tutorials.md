@@ -1253,8 +1253,8 @@ $ roslaunch thormang3_manager thormang3_manager.launch
 
 
 
-[robotis_frameowrk_common]: /docs/en/platform/software/robotis_framework_packages/#robotis_framework_common
-[robotis_controller]: /docs/en/platform/software/robotis_framework_packages/#robotis_controller
+[robotis_frameowrk_common]: /docs/en/software/robotis_framework_packages/#robotis_framework_common
+[robotis_controller]: /docs/en/software/robotis_framework_packages/#robotis_controller
 [motion_module_tutorial/include/motion_module_tutorial/motion_module_tutorial.h]: /docs/en/popup/motion_module_tutorial.h/
 [motion_module_tutorial/src/motion_module_tutorial/motion_module_tutorial.cpp]: /docs/en/popup/motion_module_tutorial.cpp/
 [motion_module_tutorial/package.xml]: /docs/en/popup/motion_module_tutorial_package.xml/
@@ -1266,4 +1266,4 @@ $ roslaunch thormang3_manager thormang3_manager.launch
 [thormang3_manager/src/thormang3_manager.cpp]: /docs/en/popup/thormang3_manager.cpp/
 [catkin_make/CMakeLists.txt]: http://wiki.ros.org/catkin/CMakeLists.txt
 [catkin/package.xml]: http://wiki.ros.org/catkin/package.xml
-[Creating new robot manager]: /docs/en/platform/software/tutorials/#creating-new-robot-manager
+[Creating new robot manager]: /docs/en/software/robotis_framework_packages/tutorials/#creating-new-robot-manager

@@ -793,8 +793,8 @@ This chapter explains upgraded walking and footstep planner.
 
 
 [op3_manager]: /docs/en/platform/op3/robotis_ros_packages/#op3-manager
-[Robot Information file(.robot)]: /docs/en/platform/software/tutorials/#creating-new-robot-manager
-[Joint initialize file(.yaml)]: /docs/en/platform/software/tutorials/#creating-new-robot-manager
+[Robot Information file(.robot)]: /docs/en/software/robotis_framework_packages/tutorials/#creating-new-robot-manager
+[Joint initialize file(.yaml)]: /docs/en/software/robotis_framework_packages/tutorials/#creating-new-robot-manager
 [How to use offset tuner]: /docs/en/platform/op3/tutorials/#how-to-use-offset-tuner
 [Installing ROBOTIS ROS Package]: /docs/en/platform/op3/recovery/#installing-robotis-ros-packages
 
