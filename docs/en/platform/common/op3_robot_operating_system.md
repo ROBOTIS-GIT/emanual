@@ -120,9 +120,9 @@ This chapter explains installation and configuration of Robot Operating System(R
 [`Setup your sources.list`]: http://wiki.ros.org/kinetic/Installation/Ubuntu#Installation.2BAC8-Ubuntu.2BAC8-Sources.Setup_your_sources.list
 [http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment]: http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment
 [ROS Network Setup]: http://wiki.ros.org/ROS/NetworkSetup
-[DynamixelSDK]: /docs/en/platform/software/robotis_framework_packages/#dynamixelsdk
-[ROBOTIS-Framerowk]: /docs/en/platform/software/robotis_framework_packages/#robotis-framework
-[ROBOTIS-Framerowk-msgs]: /docs/en/platform/software/robotis_framework_packages/#robotis-framework-msgs
+[DynamixelSDK]: /docs/en/software/robotis_framework_packages/#dynamixelsdk
+[ROBOTIS-Framerowk]: /docs/en/software/robotis_framework_packages/#robotis-framework
+[ROBOTIS-Framerowk-msgs]: /docs/en/software/robotis_framework_packages/#robotis-framework-msgs
 [ROBOTIS-Math]: /docs/en/platform/common/robotis_math/#robotis-math
 [ROBOTIS-OP3]: /docs/en/platform/op3/robotis_ros_packages/#robotis-op3
 [ROBOTIS-OP3-Demo]: /docs/en/platform/op3/robotis_ros_packages/#robotis-op3-demo

@@ -1086,7 +1086,7 @@ Please refer to [How to use walking tuner].
 [op3_online_walking_module_msgs/GetJointPose]: /docs/en/popup/op3_GetJointPose.srv/
 [op3_online_walking_module_msgs/GetKinematicsPose]: /docs/en/popup/op3_KinematicsPose.msg/
 [op3_online_walking_module_msgs/GetPreviewMatrix]: /docs/en/popup/op3_GetPreviewMatrix.srv/
-[Creating new robot manager]: /docs/en/platform/software/tutorials/#creating-new-robot-manager
+[Creating new robot manager]: /docs/en/software/robotis_framework_packages/tutorials/#creating-new-robot-manager
 [Introduction to Humanoid Robotics]: http://www.springer.com/gp/book/9783642545351
 [StartAction.msg]: /docs/en/popup/op3_StartAction.msg/
 [IsRunning.srv]: /docs/en/popup/op3_IsRunning.srv/
