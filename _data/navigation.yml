@@ -9878,6 +9878,24 @@ turtlebot3:
       url: /platform/turtlebot3/simulation/#stage-2d
     - title: "Gazebo (3D)"
       url: /platform/turtlebot3/simulation/#gazebo-3d
+      children:
+      - title: "ROS packages for Gazebo"
+        url: /platform/turtlebot3/simulation/#ros-packages-for-gazebo
+        children:
+        - title: "Simulate in Various World"
+          url: /platform/turtlebot3/simulation/#simulate-in-various-world
+        - title: "Drive TurtleBot3"
+          url: /platform/turtlebot3/simulation/#drive-turtlebot3
+        - title: "Open Rviz"
+          url: /platform/turtlebot3/simulation/#open-rviz
+        - title: "SLAM by TurtleBot3"
+          url: /platform/turtlebot3/simulation/#slam-by-turtlebot3
+        - title: "Navigation of TurtleBot3"
+          url: /platform/turtlebot3/simulation/#navigation-of-turtlebot3
+        - title: "Open Rviz"
+          url: /platform/turtlebot3/simulation/#slam-by-multiple-turtlebot3s
+      - title: "SLAM by Multiple TurtleBot3s"
+        url: /platform/turtlebot3/simulation/#standalone-gazebo-plugin
   - title: "Manipulation"
     url: /platform/turtlebot3/manipulation/#manipulation
     children:
@@ -13504,6 +13522,15 @@ opencr10:
         url: /parts/controller/opencr10/#flame-sensor
       - title: "Joystic Sensor"
         url: /parts/controller/opencr10/#joystic-sensor
+    - title: "Dynamixel Workbench"
+      url: /parts/controller/opencr10/#dynamixel-workbench
+      children:
+      - title: "Find Dynamixel"
+        url: /parts/controller/opencr10/#find-dynamixel
+      - title: "Position"
+        url: /parts/controller/opencr10/#position
+      - title: "Speed"
+        url: /parts/controller/opencr10/#speed
     - title: "OpenManipulator"
       url: /parts/controller/opencr10/#openmanipulator
       children:

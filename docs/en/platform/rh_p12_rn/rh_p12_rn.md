@@ -29,8 +29,8 @@ sidebar:
 | Control Algorithm      | PID Control                                                                                    |
 | Degree of Precision    | 0.088&deg;                                                                                     |
 | Operating Mode         | Current Control Mode<br />Current based Position Control Mode                                  |
-| Weight                 | 510g                                                                                           |
-| Stroke                 | 0 ~ 108mm                                                                                      |
+| Weight                 | 500g                                                                                           |
+| Stroke                 | 0 ~ 109mm                                                                                      |
 | Gear Ratio             | 1295.7 : 1                                                                                     |
 | Maximum Gripping Force | 170N                                                                                           |
 | Recommended Payload    | 5kg                                                                                            |
