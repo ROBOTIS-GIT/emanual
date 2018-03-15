@@ -82,7 +82,7 @@ $ roslaunch turtlebot3_bringup turtlebot3_robot.launch
 **[Remote PC]** Move to turtlebot3_follower source directory
 
 ``` bash
-$ cd ~/catkin_ws/src/turtlebot3_applications/turtlebot3_follower/src
+$ cd ~/catkin_ws/src/turtlebot3_applications/turtlebot3_follower/scripts
 ```
 
 **[Remote PC]** Launch turtlebot3_follow_filter with below command.
