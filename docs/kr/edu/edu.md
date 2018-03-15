@@ -1,16 +1,14 @@
 ---
-layout: splash
+layout: archive
 lang: kr
-ref: education
+ref: steam
+read_time: true
+share: true
+author_profile: false
 permalink: /docs/kr/edu/
-header:
-  overlay_color:
-  overlay_image:
-  cta_label:
-  cta_url:
-  caption:
-  intro:
-    - excerpt: '교육키트'
+sidebar:
+  title: 교육키트
+  nav: ""
 ---
 
 # [올로](#올로)
@@ -23,13 +21,13 @@ header:
 
 |1단계 교육키트|2단계 교육키트|3단계 교육키트|4단계 교육키트|
 |:---:|:---:|:---:|:---:|
-|[![](/assets/images/edu/dream/dream_l1.jpg)](/docs/kr/edu/dream/dream1-1/) | [![](/assets/images/edu/dream/dream_l2.jpg)](/docs/kr/edu/dream/dream1-2/) | [![](/assets/images/edu/dream/dream_l3.jpg)](/docs/kr/edu/dream/dream1-3/)| [![](/assets/images/edu/dream/dream_l4.jpg)](/docs/kr/edu/dream/dream1-4/)| 
+|[![](/assets/images/edu/dream/dream_l1.jpg)](/docs/kr/edu/dream/dream1-1/) | [![](/assets/images/edu/dream/dream_l2.jpg)](/docs/kr/edu/dream/dream1-2/) | [![](/assets/images/edu/dream/dream_l3.jpg)](/docs/kr/edu/dream/dream1-3/)| [![](/assets/images/edu/dream/dream_l4.jpg)](/docs/kr/edu/dream/dream1-4/)|
 
 # [드림 II](#드림-ii)
 
 |1단계 교육키트|2단계 교육키트|3단계 교육키트|4단계 교육키트|5단계 교육키트|
 |:---:|:---:|:---:|:---:|:---:|
-|[![](/assets/images/edu/dream/dream2/robotis_dreamⅡ_lv1_tn_110_kr.jpg)](/docs/kr/edu/dream/dream2-1/) | [![](/assets/images/edu/dream/dream2/robotis_dreamⅡ_lv2_tn_110_kr.jpg)](/docs/kr/edu/dream/dream2-2/) | [![](/assets/images/edu/dream/dream2/robotis_dreamⅡ_lv3_tn_110_kr.jpg)](/docs/kr/edu/dream/dream2-3/)| [![](/assets/images/edu/dream/dream2/robotis_dream2_lv4_tn_110_kr.jpg)](/docs/kr/edu/dream/dream2-4/)| [![](/assets/images/edu/dream/dream2/robotis_dream2_lv5_tn_110_kr.jpg)](/docs/kr/edu/dream/dream2-5/)| 
+|[![](/assets/images/edu/dream/dream2/robotis_dreamⅡ_lv1_tn_110_kr.jpg)](/docs/kr/edu/dream/dream2-1/) | [![](/assets/images/edu/dream/dream2/robotis_dreamⅡ_lv2_tn_110_kr.jpg)](/docs/kr/edu/dream/dream2-2/) | [![](/assets/images/edu/dream/dream2/robotis_dreamⅡ_lv3_tn_110_kr.jpg)](/docs/kr/edu/dream/dream2-3/)| [![](/assets/images/edu/dream/dream2/robotis_dream2_lv4_tn_110_kr.jpg)](/docs/kr/edu/dream/dream2-4/)| [![](/assets/images/edu/dream/dream2/robotis_dream2_lv5_tn_110_kr.jpg)](/docs/kr/edu/dream/dream2-5/)|
 
 # [스마트 I](#스마트-i)
 
@@ -45,9 +43,9 @@ header:
 
 # [스마트 III](#스마트-iii)
 
-|1단계 교육키트|2단계 교육키트|
-|:---:|:---:|
-|[![](/assets/images/edu/smart/smart3_1.jpg)](/docs/kr/edu/smart/smart3-1/) | [![](/assets/images/edu/smart/smart3_2.jpg)](/docs/kr/edu/smart/smart3-2/) |
+|1단계 교육키트|2단계 교육키트|3단계 교육키트|4단계 교육키트|
+|:---:|:---:|:---:|:---:|
+|[![](/assets/images/edu/smart/smart3_1.jpg)](/docs/kr/edu/smart/smart3-1/) | [![](/assets/images/edu/smart/smart3_2.jpg)](/docs/kr/edu/smart/smart3-2/) |[![](/assets/images/edu/smart/smart3_3.jpg)](/docs/kr/edu/smart/smart3-3/) | [![](/assets/images/edu/smart/smart3_4.jpg)](/docs/kr/edu/smart/smart3-4/) |
 
 # [IoT](#iot)
 
