@@ -213,7 +213,7 @@ main:
         url: /edu/dream/dream-a/
       - title: "SET B"
         url: /edu/dream/dream-b/
-    - title: "Dream II"
+    - title: "DREAM II"
       titlekr: "드림 II"
       children:
       - title: "LEVEL 1"
@@ -265,6 +265,8 @@ main:
         url: /edu/iot/iot-1/
       - titlekr: "2단계 교육키트"
         url: /edu/iot/iot-2/
+    - titlekr: "자동차 로봇"
+      urlkr: /edu/car/
     - title: "BIOLOID"
       titlekr: "바이올로이드"
       urlkr: /edu/bioloid/
@@ -513,6 +515,29 @@ main:
     titlekr: "FAQ"
     url: /faq/
     urlkr: /faq/
+
+all-dynamixel:
+  - title: "AX Series"
+    titlekr: "AX Series"
+    url: /dxl/#ax-series
+  - title: "EX Series"
+    titlekr: "EX Series"
+    url: /dxl/#ex-series
+  - title: "DX Series"
+    titlekr: "DX Series"
+    url: /dxl/#dx-series
+  - title: "RX Series"
+    titlekr: "RX Series"
+    url: /dxl/#rx-series
+  - title: "MX Series"
+    titlekr: "MX Series"
+    url: /dxl/#mx-series
+  - title: "X Series"
+    titlekr: "X Series"
+    url: /dxl/#x-series
+  - title: "PRO Series"
+    titlekr: "PRO Serie"
+    url: /dxl/#pro-m-series
 
 #AX-12W sidebar
 ax-12w:
@@ -1769,8 +1794,6 @@ rx-10:
         urlkr: /dxl/rx/rx-10/#도면
       - title: "Communication Circuit"
         url: /dxl/rx/rx-10/#communication-circuit
-      - title: "Pin Assignment"
-        url: /dxl/rx/rx-10/#pin-assignment
 
 #RX-24F sidebar
 rx-24f:
@@ -2258,10 +2281,6 @@ mx-12w:
     titlekr: "주요 사양"
     url: /dxl/mx/mx-12w/#specifications
     urlkr: /dxl/mx/mx-12w/#주요-사양
-  - title: "Performance Graph"
-    titlekr: "성능 그래프"
-    url: /dxl/mx/mx-12w/#performance-graph
-    urlkr: /dxl/mx/mx-12w/#성능-그래프
   - title: "Control Table"
     titlekr: "컨트롤 테이블"
     url: /dxl/mx/mx-12w/#control-table
@@ -2391,10 +2410,6 @@ mx-12w:
           - title: "Goal Acceleration(73)"
             titlekr: "Goal Acceleration(73)"
             url: /dxl/mx/mx-12w/#goal-acceleration-73
-  - title: "How to Assemble"
-    titlekr: "조립 예시"
-    url: /dxl/mx/mx-12w/#how-to-assemble
-    urlkr: /dxl/mx/mx-12w/#조립-예시
   - title: "Maintenance"
     titlekr: "유지보수"
     url: /dxl/mx/mx-12w/#maintenance
@@ -3172,8 +3187,6 @@ mx-28-2:
         urlkr: /dxl/mx/mx-28-2/#도면
       - title: "Communication Circuit"
         url: /dxl/mx/mx-28-2/#communication-circuit
-      - title: "Pin Assignment"
-        url: /dxl/mx/mx-28-2/#pin-assignment
 
 #MX-64(2.0) sidebar
 mx-64-2:
@@ -3339,9 +3352,9 @@ mx-64-2:
         - title: "Present PWM(124)"
           titlekr: "Present PWM(124)"
           url: /dxl/mx/mx-64-2/#present-pwm124
-        - title: "Present Load(126)"
-          titlekr: "Present Load(126)"
-          url: /dxl/mx/mx-64-2/#present-load126
+        - title: "Present Current(126)"
+          titlekr: "Present Current(126)"
+          url: /dxl/mx/mx-64-2/#present-current126
         - title: "Present Velocity(128)"
           titlekr: "Present Velocity(128)"
           url: /dxl/mx/mx-64-2/#present-velocity128
@@ -3398,8 +3411,6 @@ mx-64-2:
         urlkr: /dxl/mx/mx-64-2/#도면
       - title: "Communication Circuit"
         url: /dxl/mx/mx-64-2/#communication-circuit
-      - title: "Pin Assignment"
-        url: /dxl/mx/mx-64-2/#pin-assignment
 
 #MX-106(2.0) sidebar
 mx-106-2:
@@ -3565,9 +3576,9 @@ mx-106-2:
         - title: "Present PWM(124)"
           titlekr: "Present PWM(124)"
           url: /dxl/mx/mx-106-2/#present-pwm124
-        - title: "Present Load(126)"
-          titlekr: "Present Load(126)"
-          url: /dxl/mx/mx-106-2/#present-load126
+        - title: "Present Current(126)"
+          titlekr: "Present Current(126)"
+          url: /dxl/mx/mx-106-2/#present-current126
         - title: "Present Velocity(128)"
           titlekr: "Present Velocity(128)"
           url: /dxl/mx/mx-106-2/#present-velocity128
@@ -3620,8 +3631,6 @@ mx-106-2:
         urlkr: /dxl/mx/mx-106-2/#도면
       - title: "Communication Circuit"
         url: /dxl/mx/mx-106-2/#communication-circuit
-      - title: "Pin Assignment"
-        url: /dxl/mx/mx-106-2/#pin-assignment
 
 #XH430-V210 sidebar
 xh430-v210:
@@ -7910,6 +7919,16 @@ ollo-4:
 - titlekr: "다운로드"
   urlkr: /edu/ollo/ollo-4/#다운로드
 
+dream:
+- title: "DREAM"
+  titlekr: "로보티즈 드림"
+  url: /edu/dream/#dream
+  urlkr: /edu/dream/#로보티즈-드림
+- title: "DREAM II"
+  titlekr: "로보티즈 드림 II"
+  url: /edu/dream/#dream-ii
+  urlkr: /edu/dream/#로보티즈-드림-ii
+
 #DreamI Level1 sidebar
 dream1-1:
 - titlekr: "개요"
@@ -8192,6 +8211,10 @@ smart3-4:
   urlkr: /edu/smart/smart3-4/#작동하기
 - titlekr: "교안예제"
   urlkr: /edu/smart/smart3-4/#교안예제
+
+iot:
+  - title: "로보티즈 IoT"
+    urlkr: /edu/iot/#로보티즈-iot
 
 iot-1:
   - titlekr: "개요"
@@ -9264,9 +9287,9 @@ rh_p12_rn:
         - title: "Acceleration Limit(26)"
           titlekr: "Acceleration Limit(26)"
           url: /platform/rh_p12_rn/#acceleration-limit26
-        - title: "Torque Limit(30)"
-          titlekr: "Torque Limit(30)"
-          url: /platform/rh_p12_rn/#torque-limit30
+        - title: "Current Limit(30)"
+          titlekr: "Current Limit(30)"
+          url: /platform/rh_p12_rn/#current-limit30
         - title: "Velocity Limit(32)"
           titlekr: "Velocity Limit(32)"
           url: /platform/rh_p12_rn/#velocity-limit32
@@ -9300,9 +9323,9 @@ rh_p12_rn:
         - title: "Goal Velocity(600)"
           titlekr: "Goal Velocity(600)"
           url: /platform/rh_p12_rn/#goal-velocity600
-        - title: "Goal Torque(604)"
-          titlekr: "Goal Torque(604)"
-          url: /platform/rh_p12_rn/#goal-torque604
+        - title: "Goal Current(604)"
+          titlekr: "Goal Current(604)"
+          url: /platform/rh_p12_rn/#goal-current604
         - title: "Goal Acceleration(606)"
           titlekr: "Goal Acceleration(606)"
           url: /platform/rh_p12_rn/#goal-acceleration606
@@ -9380,6 +9403,21 @@ rh_p12_rn:
       titlekr: "ROS GUI 예제"
       url: /platform/rh_p12_rn/examples/#ros-gui-example
       urlkr: /platform/rh_p12_rn/examples/#ros-gui-예제
+  - title: "Gazebo Simulation"
+    titlekr: "Gazebo 시뮬레이션"
+    url: /platform/rh_p12_rn/gazebo/#gazebo-simulation
+    urlkr: /platform/rh_p12_rn/gazebo/#gazebo-시뮬레이션
+    children:
+    - title: "Gazebo Install"
+      titlekr: "Gazebo 설치"
+      url: /platform/rh_p12_rn/gazebo/#gazebo-simulation
+      urlkr: /platform/rh_p12_rn/gazebo/#gazebo-시뮬레이션
+    - title: "Run Simulator"
+      titlekr: "시뮬레이터 실행"
+      url: /platform/rh_p12_rn/gazebo/#run-simulator
+      urlkr: /platform/rh_p12_rn/gazebo/#시뮬레이터-실행
+
+
 
 robothand_rx28:
   - titlekr: "개요"

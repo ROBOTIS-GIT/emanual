@@ -29,8 +29,8 @@ sidebar:
 | Control Algorithm      | PID Control                                                                                    |
 | Degree of Precision    | 0.088&deg;                                                                                     |
 | Operating Mode         | Current Control Mode<br />Current based Position Control Mode                                  |
-| Weight                 | 510g                                                                                           |
-| Stroke                 | 0 ~ 108mm                                                                                      |
+| Weight                 | 500g                                                                                           |
+| Stroke                 | 0 ~ 109mm                                                                                      |
 | Gear Ratio             | 1295.7 : 1                                                                                     |
 | Maximum Gripping Force | 170N                                                                                           |
 | Recommended Payload    | 5kg                                                                                            |
@@ -63,7 +63,7 @@ sidebar:
 |   22    |       2        | [Max Voltage Limit](#max-voltage-limit)     | Maximum Input Voltage Limit               |   RW   |        400         |
 |   24    |       2        | [Min Voltage Limit](#min-voltage-limit)     | Minimum Input Voltage Limit               |   RW   |        150         |
 |   26    |       4        | [Acceleration Limit](#acceleration-limit)   | Maximum Accleration Limit                 |   RW   |        255         |
-|   30    |       2        | [Torque Limit](#torque-limit)               | Maximum Torque Limit                      |   RW   |        820         |
+|   30    |       2        | [Current Limit](#current-limit)             | Maximum Current Limit                     |   RW   |        820         |
 |   32    |       4        | [Velocity Limit](#velocity-limit)           | Maximum Velocity Limit                    |   RW   |        100         |
 |   36    |       4        | [Max Position Limit](#max-position-limit)   | Maximum Position Limit                    |   RW   |        1150        |
 |   40    |       4        | [Min Position Limit](#min-position-limit)   | Minimum Position Limit                    |   RW   |         0          |
@@ -92,7 +92,7 @@ sidebar:
 |   594   |       2        | [Position P Gain](#position-p-gain)               | P Gain of Position             |   RW   |         -          |
 |   596   |       4        | [Goal Position](#goal-position)                   | Target Position Value          |   RW   |         -          |
 |   600   |       4        | [Goal Velocity](#goal-velocity)                   | Target Velocity Value          |   RW   |         0          |
-|   604   |       2        | [Goal Torque](#goal-torque)                       | Target Current Value           |   RW   |         0          |
+|   604   |       2        | [Goal Current](#goal-current)                     | Target Current Value           |   RW   |         0          |
 |   606   |       4        | [Goal Acceleration](#goal-acceleration)           | Target Acceleration Value      |   RW   |         0          |
 |   610   |       1        | [Moving](#moving)                                 | Movement Status                |   R    |         -          |
 |   611   |       4        | [Present Position](#present-position)             | Present Position Value         |   R    |         -          |
@@ -142,9 +142,9 @@ This address stores firmware version of the RH-P12-RN.
 
 | Value      | Operating Mode                      | Description                                                              |
 |:-----------|:------------------------------------|:-------------------------------------------------------------------------|
-| 0          | Torque Control Mode                 | Dynamixel only controls Current(Torque) regardless of speed and position |
+| 0          | Current Control Mode                | This mode only controls Current regardless of speed and position.        |
 | 1 ~ 4      | Reserved                            | -                                                                        |
-| 5(Default) | Current based Position Control Mode | This mode controls both Position and Current(Torque).                    |
+| 5(Default) | Current based Position Control Mode | This mode controls both Position and Current.                            |
 
 ### <a name="moving-threshold"></a>**[Moving Threshold(17)](#moving-threshold17)**
 {% include en/dxl/control_table_17_movingthreshold_pro.md %}
@@ -160,14 +160,14 @@ This data indicates maximum value of Goal Acceleration(606).
 [Goal Acceleration(606)] can’t be configured with any values exceeding the [Acceleration Limit(26)].  
 
 Attempting to write an exceeding value will result transmitting Data Limit Error(0x06) in the Error field of the Status Packet.  
-[Goal Acceleration(606)] is used in all operating mode except Current(Torque) Control Mode in order to generate a target trajectory.
+[Goal Acceleration(606)] is used in all operating mode except Current Control Mode in order to generate a target trajectory.
 
 |            Unit             |    Value Range    |
 |:---------------------------:|:-----------------:|
 | 214.577 Rev/min<sup>2</sup> | 0 ~ 2,147,483,647 |
 
-### <a name="pwm-limit"></a>**[Torque Limit(30)](#torque-limit30)**
-This value indicates torque limit. [Goal Torque(604)] can't exceed this value.  
+### <a name="current-limit"></a>**[Current Limit(30)](#current-limit30)**
+This value indicates maximum current limit. [Goal Current(604)] can't be configured with any values exceeding [Current Limit(30)].  
 Attempting to write an exceeding value will fail and result in receiving a Limit Error Bit from the Status Packet.
 
 |     Unit      | Value Range |
@@ -279,7 +279,7 @@ When the instruction from the user is received by the gripper, it takes followin
 1. An Instruction from the user is transferred to the gripper, then registered to Goal Position(596).
 2. Goal Position(596) is converted to Target Position Trajectory and Target Velocity Trajectory by Goal Velocity(600) and Goal Acceleration(606).
 3. The PID controller calculates Target Current based on the Target Trajectory.
-4. Goal Torque(605) sets a limit on the calculated Target Current to decide final Target Current.
+4. Goal Current(604) sets a limit on the calculated Target Current to decide final Target Current.
 5. Current controller decides PWM output to be applied to the motor based on the final Target Current.
 6. The final PWM output is delivered to the motor through an Inverter, and the gripper is driven.
 7. Results are stored at Present Position(611), Present Velocity(615) and Present Current(621).
@@ -307,25 +307,25 @@ If Goal Velocity(600) is set to '0', Profile is disabled and use the maximum RPM
 |:---------:|:----------------------------------------:|
 | 0.114 rpm | -Velocity Limit(32) ~ Velocity Limit(32) |
 
-`Note` The maximum velocity and maximum torque of DYNAMIXEL is affected by supplying voltage. Therefore, if supplying voltage changes, so does the maximum velocity. This manual complies with recommended supply voltage(24[V]).
+`Note` The maximum velocity and maximum current of DYNAMIXEL is affected by supplying voltage. Therefore, if supplying voltage changes, so does the maximum velocity. This manual complies with recommended supply voltage(24[V]).
 {: .notice}
 
 `Note` Please check the maximum rpm of the Dynamixel. The motor cannot exceed the maximum rpm with the higher Moving Speed value.
 {: .notice}
 
-### <a name="goal-torque"></a>**[Goal Torque(604)](#goal-torque604)**
-Goal Torque is used for other purposes according to Operating Mode(11).
+### <a name="goal-current"></a>**[Goal Current(604)](#goal-current604)**
+Goal Current is used for other purposes according to Operating Mode(11).
 
-|             Operating Mode              |                 Goal Torque                 |
-|:---------------------------------------:|:-------------------------------------------:|
-|         0 (Torque Control Mode)         | Goal Torque is used as Target Torque value  |
-| 5 (Current-based Position Control Mode) | Goal Torque is used as Maximum Torque value |
+|             Operating Mode              |                  Goal Current                 |
+|:---------------------------------------:|:---------------------------------------------:|
+| 0 (Current Control Mode)                | Goal Current is used as Target Current value  |
+| 5 (Current-based Position Control Mode) | Goal Current is used as Maximum Current value |
 
-Also, [Goal Torque(604)] cannot exceed Torque Limit(30).
+Also, [Goal Current(604)] cannot exceed Current Limit(30).
 
-|     Unit      |             Value Range              |
-|:-------------:|:------------------------------------:|
-| about 4.02 mA | -Torque Limit(30) ~ Torque Limit(30) |
+|     Unit      |              Value Range               |
+|:-------------:|:--------------------------------------:|
+| about 4.02 mA | -Current Limit(30) ~ Current Limit(30) |
 
 ### <a name="goal-acceleration"></a>**[Goal Acceleration(606)](#goal-acceleration606)**
 Goal Acceleration  is only used for Current-based Position Control mode to set the acceleration of Profile.  
@@ -384,12 +384,12 @@ This value indicates present internal Temperature. For more details, please refe
 {% include en/dxl/molex_485_pro.md %}
 
 ## [Drawings](#drawings)
-`Download` [PDF]
+`Download` [RH-P12-RN(PDF).zip](http://www.robotis.com/service/download.php?no=740)  
+`Download` [RH-P12-RN(STP).zip](http://www.robotis.com/service/download.php?no=741)
 
 
-[PDF]: http://support.robotis.com/en/baggage_files/dynamixel/rh-p12-rn.pdf
 [Torque Enable(562)]: #torque-enable562
-[Goal Torque(604)]: #goal-torque604
+[Goal Current(604)]: #goal-current604
 [Acceleration Limit(26)]: #acceleration-limit26
 [Goal Acceleration(606)]: #goal-acceleration606
 [Goal Velocity(600)]: #goal-velocity600

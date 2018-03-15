@@ -2,14 +2,14 @@
 
 혼은 다이나믹셀 정면의 출력축에 부착되어 있으며 베어링은 후면에 부착되어 있습니다.
 
-![](/assets/images/dxl/x/horn_bearing.jpg)
+![](/assets/images/dxl/mx/horn_bearing.jpg)
 
 ### 혼 조립하기
 
 혼을 끼워넣기 전에 혼 와셔를 넣어주어야 합니다.  
 아래 그림과 같이 혼과 기어의 마킹 위치에 맞추어 혼을 조립합니다.
 
-![](/assets/images/dxl/x/horn_alignment.jpg)
+![](/assets/images/dxl/mx/horn_alignment.jpg)
 
 혼을 끼워넣을 때 혼의 중심부를 밀면서 조립합니다.  
 이때 혼 와셔가 중심에서 벗어나지 않도록 하고 조립이 끝나면 볼트로 혼을 고정합니다.
@@ -20,4 +20,4 @@
 베어링은 쇼핑몰에서 별도로 구매할 수 있습니다.
 베어링은 혼과는 달리 구동축에 연결되지 않기 때문에 자유롭게 회전이 가능합니다.
 
-![](/assets/images/dxl/x/bearing.jpg)
+![](/assets/images/dxl/mx/bearing.jpg)
