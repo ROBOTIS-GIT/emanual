@@ -114,7 +114,7 @@ $ rosrun turtlebot3_follower follower.py
 **[TurtleBot]** Launch the Raspberry Pi cam V2
 
 ``` bash
-$ roslaunch raspicam_node camerav2_1280x960.launch
+$ roslaunch turtlebot3_bringup turtlebot3_rpicamera.launch
 ```
 
 **[Remote PC]** Launch Panorama with below command.
