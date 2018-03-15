@@ -168,7 +168,7 @@ $ sudo pip install --upgrade pip
 
 **[Remote PC]** Move to turtlebot3_automatic_parking source directory.
 ```bash
-$ cd ~/catkin_ws/src/turtlebot3_applications/turtlebot3_automatic_parking/src
+$ cd ~/catkin_ws/src/turtlebot3_applications/turtlebot3_automatic_parking/scripts
 ```
 
 **[Remote PC]** To make it executable.
