@@ -61,7 +61,7 @@ $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 
 ## [Gazebo (3D)](#gazebo-3d)
 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/xXM5r_SVkWM" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UzOoJ6a_mOg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ### [ROS packages for Gazebo](#ros-packages-for-gazebo)
 
@@ -88,7 +88,7 @@ $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
     Below command will load TurtleBot3 on the default Gazebo environment `TurtleBot3 empty world`.
 
     ``` bash
-    $ roslaunch turtlebot3_gazebo_ros turtlebot3_empty_world.launch
+    $ roslaunch turtlebot3_gazebo turtlebot3_empty_world.launch
     ```
 
     ![](/assets/images/platform/turtlebot3/simulation/turtlebot3_empty_world.png)
@@ -99,7 +99,7 @@ $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
      
     ``` bash
     $ export TURTLEBOT3_MODEL=${TB3_MODEL}
-    $ roslaunch turtlebot3_gazebo_ros turtlebot3_world.launch
+    $ roslaunch turtlebot3_gazebo turtlebot3_world.launch
     ```
 
     ![](/assets/images/platform/turtlebot3/simulation/turtlebot3_world_bugger.png)
@@ -112,7 +112,7 @@ $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 
     ``` bash
     $ export TURTLEBOT3_MODEL=${TB3_MODEL}
-    $ roslaunch turtlebot3_gazebo_ros turtlebot3_house.launch
+    $ roslaunch turtlebot3_gazebo turtlebot3_house.launch
     ```
 
     ![](/assets/images/platform/turtlebot3/simulation/turtlebot3_house.png)
@@ -134,12 +134,12 @@ $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 
     ``` bash
     $ export TURTLEBOT3_MODEL=${TB3_MODEL}
-    $ roslaunch turtlebot3_gazebo_ros turtlebot3_world.launch
+    $ roslaunch turtlebot3_gazebo turtlebot3_world.launch
     ```
 
     ``` bash
     $ export TURTLEBOT3_MODEL=${TB3_MODEL}
-    $ roslaunch turtlebot3_gazebo_ros turtlebot3_drive.launch
+    $ roslaunch turtlebot3_gazebo turtlebot3_drive.launch
     ```
 
 #### [Open Rviz](#open-rviz)
@@ -148,7 +148,7 @@ RViz visualizes published topics while simulation is running. You can launch RVi
 
 ``` bash
 $ export TURTLEBOT3_MODEL=${TB3_MODEL}
-$ roslaunch turtlebot3_gazebo_ros turtlebot3_gazebo_rviz.launch
+$ roslaunch turtlebot3_gazebo turtlebot3_gazebo_rviz.launch
 ```
 
 ![](/assets/images/platform/turtlebot3/simulation/turtlebot3_gazebo_rviz.png)
@@ -170,28 +170,28 @@ In gazebo simulation, we can use navigation package that we used for the actual 
 1. Call three TurtleBot3s in TurtleBot3 House
 
     ``` bash
-    $ roslaunch turtlebot3_gazebo_ros multi_turtlebot3.launch
+    $ roslaunch turtlebot3_gazebo multi_turtlebot3.launch
     ```
 
 1. Excute SLAM
 
     ``` bash
-    $ roslaunch turtlebot3_gazebo_ros multi_turtlebot3_slam.launch ns:=tb3_0
-    $ roslaunch turtlebot3_gazebo_ros multi_turtlebot3_slam.launch ns:=tb3_1
-    $ roslaunch turtlebot3_gazebo_ros multi_turtlebot3_slam.launch ns:=tb3_2
+    $ roslaunch turtlebot3_gazebo multi_turtlebot3_slam.launch ns:=tb3_0
+    $ roslaunch turtlebot3_gazebo multi_turtlebot3_slam.launch ns:=tb3_1
+    $ roslaunch turtlebot3_gazebo multi_turtlebot3_slam.launch ns:=tb3_2
     ```
 
 1. Merge Map data from each TurtleBot3's map data
 
     ``` bash
     $ sudo apt-get install ros-kinetic-multirobot-map-merge
-    $ roslaunch turtlebot3_gazebo_ros multi_map_merge.launch 
+    $ roslaunch turtlebot3_gazebo multi_map_merge.launch 
     ```
 
 1. Open Rviz
 
     ``` bash
-    $ rosrun rviz rviz -d `rospack find turtlebot3_gazebo_ros`/rviz/multi_turtlebot3_slam.rviz
+    $ rosrun rviz rviz -d `rospack find turtlebot3_gazebo`/rviz/multi_turtlebot3_slam.rviz
     ```
 
 1. Teleoperation by keyboard
