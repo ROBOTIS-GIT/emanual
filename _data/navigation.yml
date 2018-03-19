@@ -75,8 +75,8 @@ main:
     - title: "X Series"
       titlekr: "X 시리즈"
       children:
-      - title: "XL320"
-        titlekr: "XL320"
+      - title: "XL-320"
+        titlekr: "XL-320"
         url: /dxl/x/xl320/
       - title: "XL430-W250"
         titlekr: "XL430-W250"
