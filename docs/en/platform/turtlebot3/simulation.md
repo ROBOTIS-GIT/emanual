@@ -139,7 +139,7 @@ $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 
     ``` bash
     $ export TURTLEBOT3_MODEL=${TB3_MODEL}
-    $ roslaunch turtlebot3_gazebo turtlebot3_drive.launch
+    $ roslaunch turtlebot3_gazebo turtlebot3_simulation.launch
     ```
 
 #### [Open Rviz](#open-rviz)
