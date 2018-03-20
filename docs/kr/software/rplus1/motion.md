@@ -53,9 +53,9 @@ sidebar:
 대부분의 RoboPlus 설치 실패의 원인은 사용자 PC환경에 따른 .NET FrameWork 자동 설치 실패 입니다.  
 따라서 사용자가 직접 .NET FrameWork 3.5를 수동으로 설치 하셔야 합니다.  
 .NET FrameWork 3.5를 수동으로 설치 하기 전에 Windows installer 3.1이상이 설치 되어 있어야 합니다.  
- 
+
 Windows installer와 .NET Framework는 마이크로 소프트 다운로드 센터에서 다운로드가 가능합니다.  
- 
+
 - `다운로드` [Windows installer 3.1](http://www.microsoft.com/downloads/details.aspx?FamilyID=889482fc-5f56-4a38-b838-de776fd4138c&DisplayLang=ko)
 - `다운로드` [.NET Framework 3.5](http://www.microsoft.com/downloads/details.aspx?FamilyID=d0e5dea7-ac26-4ad7-b68c-fe5076bba986&DisplayLang=ko)
 
@@ -319,9 +319,9 @@ Windows installer와 .NET Framework는 마이크로 소프트 다운로드 센�
 - **역기구학** : 수학적으로 계산하는 방법으로 포즈를 만들 수 있습니다.
 
 {% capture motion_01 %}
-`Note` 
-- 포즈 유틸리티는 반드시 로봇 정보가 필요합니다. 즉, 리스트에 없는 로봇은 사용할 수 없습니다. 
-- 로봇에 따라 3D 로봇이나 미러/역기구학 기능을 지원하지 않을 수 있습니다. 
+`Note`
+- 포즈 유틸리티는 반드시 로봇 정보가 필요합니다. 즉, 리스트에 없는 로봇은 사용할 수 없습니다.
+- 로봇에 따라 3D 로봇이나 미러/역기구학 기능을 지원하지 않을 수 있습니다.
 - 포즈 유틸리티는 3D 그래픽 기술을 사용하므로 그래픽 사양이 좋지 않은 시스템에서는 프로그램 속도가 느려질 수 있습니다.
 {% endcapture %}
 
@@ -333,7 +333,7 @@ Windows installer와 .NET Framework는 마이크로 소프트 다운로드 센�
 
 포즈 유틸리티를 사용하기 위해서는 먼저 포즈 유틸리티를 적용할 로봇을 선택하여야 합니다. 로봇 이름의 리스트를 선택하면 적용할 로봇을 선택할 수 있습니다.
 
-`Note` 리스트에 없는 로봇은 포즈 유틸리티를 사용할 수 없습니다.사용자 로봇의 경우는 [기본 포즈 편집기](#기본-포즈-편집기)로만 모션을 만들어야 합니다. 
+`Note` 리스트에 없는 로봇은 포즈 유틸리티를 사용할 수 없습니다.사용자 로봇의 경우는 [기본 포즈 편집기](#기본-포즈-편집기)로만 모션을 만들어야 합니다.
 {: .notice}
 
 ![img](/assets/images/sw/rplus1/motion/poseutility_robotselect.png)
@@ -390,9 +390,9 @@ Windows installer와 .NET Framework는 마이크로 소프트 다운로드 센�
 
 1. 교환하기
     교환하기는 로봇의 좌측과 우측 포즈를 서로 교환하여 거울을 보듯이 정 반대의 포즈를 만들기 위해 사용합니다.
-    
+
     ![img](/assets/images/sw/rplus1/motion/poseutility_mirror_exchange.jpg)
-    
+
     ![img](/assets/images/sw/rplus1/motion/poseutility_mirror1.png)
 
 2. 대칭
@@ -605,7 +605,7 @@ Origin은 X, Y, Z의 좌표가 (0, 0, 0)임을 의미합니다.
 
 ![img](/assets/images/sw/rplus1/motion/pageeditor.png)
 
-### <a name-"페이지-선택"></a>[페이지 선택](#페이지-선택)
+### <a name="페이지-선택"></a>[페이지 선택](#페이지-선택)
 
 마우스로 해당 페이지를 클릭하면 1개의 페이지를 선택할 수 있습니다. 여러 개의 페이지를 선택하는 방법은 다음과 같습니다.
 
@@ -613,7 +613,7 @@ Origin은 X, Y, Z의 좌표가 (0, 0, 0)임을 의미합니다.
 
   ![img](/assets/images/sw/rplus1/motion/page_selection_2.png)
 
-  - 마우스로 드래그(Drag)합
+  - 마우스로 드래그(Drag)하거나
   - Shift키를 누른 상태에서 다른 페이지를 선택
 
 - 개별적으로 여러 페이지를 선택
@@ -734,7 +734,7 @@ Origin은 X, Y, Z의 좌표가 (0, 0, 0)임을 의미합니다.
 1. 로봇을 연결하여 로봇 모션 창을 띄웁니다.
 
   ![img](/assets/images/sw/rplus1/motion/conn_connectmenu.png)
-  
+
   ![img](/assets/images/sw/rplus1/motion/rmfm_robotmotion.png)
 
 2. 로봇 모션 창을 선택한 후, 다른 이름으로 저장하기 메뉴를 선택합니다.
@@ -747,7 +747,7 @@ Origin은 X, Y, Z의 좌표가 (0, 0, 0)임을 의미합니다.
 같은 로봇을 여러 대 만들었을 때, 같은 모션을 실행해도 로봇의 자세는 조금씩 차이가 있습니다. 그 이유는 모터의 위치 편차와 조립 상의 오차때문입니다. 이 차이로 인해 어떤 로봇은 넘어지기도 합니다.  
 모션 오프셋 개념을 사용하면 모션을 수정하지 않고 로봇마다의 차이를 적용하여 같은 모션을 쓸 수 있습니다.
 
-`Note` 일반적으로 모션 오프셋은 무시할 정도로 작습니다. 하지만, 휴머노이드와 같이 중심을 잡기 어려운 로봇에서는 이 문제가 매우 크게 나타날 수 있습니다. 
+`Note` 일반적으로 모션 오프셋은 무시할 정도로 작습니다. 하지만, 휴머노이드와 같이 중심을 잡기 어려운 로봇에서는 이 문제가 매우 크게 나타날 수 있습니다.
 {: .notice}
 
 ### 모션 오프셋 편집
@@ -932,8 +932,8 @@ culture속성을 줘서 언어별로 보여지게 할 수 있는데, RoboPlus Mo
 | 없음   | 영어 혹은 그 외의 언어 |
 
 ```xml
-<Name>Premium Humanoid A-type</Name> 
-<Name culture=”kor”> Bioloid Premium Type A</Name> 
+<Name>Premium Humanoid A-type</Name>
+<Name culture=”kor”> Bioloid Premium Type A</Name>
 ```
 
 > 바이올로이드 프리미엄 A타입의 예

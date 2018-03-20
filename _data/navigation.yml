@@ -266,10 +266,10 @@ main:
       - titlekr: "2단계 교육키트"
         url: /edu/iot/iot-2/
     - titlekr: "자동차 로봇"
-      urlkr: /edu/car/
+      url: /edu/car/
     - title: "BIOLOID"
       titlekr: "바이올로이드"
-      urlkr: /edu/bioloid/
+      url: /edu/bioloid/
       children:
       - title: "Beginner Level"
         titlekr: "초급"
@@ -8599,11 +8599,11 @@ bioloid-premium:
     - title: "Custom Motions(Create)"
       titlekr: "사용자 모션 추가하기(모션 만들기)"
       url: /edu/bioloid/premium/#custom-motions-create
-      urlkr: /edu/bioloid/premium/#사용자-모션-추가하기모션-만들기
+      urlkr: /edu/bioloid/premium/#사용자-모션-추가모션-만들기
     - title: "Custom Motions(Task Code)"
       titlekr: "사용자 모션 추가하기(태스크 코드)"
       url: /edu/bioloid/premium/#custom-motions-task-code
-      urlkr: /edu/bioloid/premium/#사용자-모션-추가하기태스크-코드
+      urlkr: /edu/bioloid/premium/#사용자-모션-추가태스크-코드
     - title: "Gripper Control"
       titlekr: "그리퍼 제어"
       url: /edu/bioloid/premium/#gripper-control
@@ -13283,7 +13283,7 @@ opencm904:
     - title: "Arduino IDE"
       titlekr: "아두이노 IDE"
       url: /parts/controller/opencm904/#arduino-ide
-      urlkr: /parts/controller/opencm904/#아두이도-ide
+      urlkr: /parts/controller/opencm904/#아두이노-ide
       children:
       - title: "Install on Linux"
         titlekr: "리눅스에 설치하기"
