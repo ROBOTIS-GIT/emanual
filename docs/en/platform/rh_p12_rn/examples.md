@@ -53,6 +53,19 @@ Download from [https://github.com/ROBOTIS-GIT/RH-P12-RN_Example](https://github.
 Windows example is written on Visual Studio 2017.  
 Install Visual Studio and open the solution with `RH-P12-RN_Example\win64\RH-P12-RN-Example.sln`. Then build solution and run.  
 
+Below error message might appear due to the difference of Windows SDK version.
+
+```
+error MSB8036: The Windows SDK version 10.0.14393.0 was not found.  
+Install the required version of Windows SDK or change the SDK version  
+in the project property pages or by right-clicking the solution  
+and selecting "Retarget solution".
+```
+
+In order to resolve the above error, open the property page from the project and select installed Windows SDK version, then rebuild the code.
+
+![img](/assets/images/platform/rh_p12_rn/windows_sdk_ver_en.png)
+
 Upon successful execution of the Windows example, the communication port and the baudrate of connected device are listed as shown in the below image.  
 If execution fails, confirm the error message to configure the device or communication port properly.
 
@@ -95,6 +108,23 @@ Each option is described as belows.
 
 ## [Linux Example](#linux-example)
 
+### Preperation
+Dynamixel SDK should be installed in advance. Please enter below commands to install Dynamixel SDK.
+
+```
+$ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK
+$ cd DynamixelSDK/c++/build/linux64
+$ sudo make install
+```
+
+Below command will register USER_ID to dialout group in order to gain access to /dev/ttyUSB0
+
+```
+$ sudo usermod -aG dialout USER_ID  
+```
+
+Restart or log out and log in to validate the change.
+
 ### Download
 ```
 $ git clone https://github.com/ROBOTIS-GIT/RH-P12-RN_Example
@@ -128,9 +158,20 @@ Each option is identical to the [Windows Example]
 
 ## [ROS GUI Example](#ros-gui-example)
 
+Below command will register USER_ID to dialout group in order to gain access to /dev/ttyUSB0
+
+```
+$ sudo usermod -aG dialout USER_ID
+```
+
+Restart or log out and log in to validate the change.
+
 ### Download
 ```
 $ cd ~/catkin_ws/src
+$ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK
+$ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-Framework
+$ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-Framework-msgs
 $ git clone https://github.com/ROBOTIS-GIT/RH-P12-RN
 ```
 

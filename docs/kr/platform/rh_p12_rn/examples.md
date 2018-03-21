@@ -54,12 +54,17 @@ GIT client 프로그램으로 [https://github.com/ROBOTIS-GIT/RH-P12-RN_Example]
 윈도우 예제는 Visual Studio 2017 로 작성되었음.  
 Visual Studio 를 설치하고, RH-P12-RN_Example\win64\RH-P12-RN-Example.sln 파일을 더블클릭하여 솔루션을 열고, 솔루션 빌드 후 실행.
 
-Windows SDK 버전이 달라서 아래와 같은 에러가 발생할 경우 
+Windows SDK 버전이 달라서 아래와 같은 에러가 발생할 경우
+
 ```
-error MSB8036: Windows SDK 버전 10.0.14393.0을(를) 찾을 수 없습니다. 필요한 버전의 Windows SDK를 설치하거나, 솔루션을 마우스 오른쪽 단추로 클릭하고 [솔루션 대상 변경]을 선택하거나 프로젝트 속성 페이지에서 SDK 버전을 변경하세요.
+error MSB8036: Windows SDK 버전 10.0.14393.0을(를) 찾을 수 없습니다.  
+필요한 버전의 Windows SDK를 설치하거나,  
+솔루션을 마우스 오른쪽 단추로 클릭하고 [솔루션 대상 변경]을 선택하거나  
+프로젝트 속성 페이지에서 SDK 버전을 변경하세요.
 ```
 
 프로젝트의 속성 페이지에서 아래와 같이 Windows SDK 버전을 설치된 버전으로 변경 후 다시 빌드 후 실행.  
+
 ![img](/assets/images/platform/rh_p12_rn/windows_sdk_ver.png)
 
 
@@ -107,6 +112,7 @@ error MSB8036: Windows SDK 버전 10.0.14393.0을(를) 찾을 수 없습니다. 
 
 ### 준비
 Dynamixel SDK 가 설치되어 있어야 함. 아래와 같이 다운로드 받아 설치할 것.
+
 ```
 $ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK
 $ cd DynamixelSDK/c++/build/linux64
@@ -114,10 +120,12 @@ $ sudo make install
 ```
 
 /dev/ttyUSB0 의 접근 권한을 얻기 위해 아래 명령을 입력 (USER_ID 를 dialout 그룹에 등록하는 명령)
+
 ```
 $ sudo usermod -aG dialout USER_ID  
 ```
-이제 리눅스를 재시작하거나 로그아웃 후 다시 로그인 하면 USER_ID 가 dialout 그룹에 등록되어 /dev/ttyUSB0 의 접근 권한을 얻게 됨. 
+
+이제 리눅스를 재시작하거나 로그아웃 후 다시 로그인 하면 USER_ID 가 dialout 그룹에 등록되어 /dev/ttyUSB0 의 접근 권한을 얻게 됨.
 
 ### 다운로드
 
@@ -157,9 +165,9 @@ $ ./rh-p12-rn_example
 ### 준비
 /dev/ttyUSB0 의 접근 권한을 얻기 위해 아래 명령을 입력 (USER_ID 를 dialout 그룹에 등록하는 명령)
 ```
-$ sudo usermod -aG dialout USER_ID  
+$ sudo usermod -aG dialout USER_ID
 ```
-이제 리눅스를 재시작하거나 로그아웃 후 다시 로그인 하면 USER_ID 가 dialout 그룹에 등록되어 /dev/ttyUSB0 의 접근 권한을 얻게 됨. 
+이제 리눅스를 재시작하거나 로그아웃 후 다시 로그인 하면 USER_ID 가 dialout 그룹에 등록되어 /dev/ttyUSB0 의 접근 권한을 얻게 됨.
 
 ### 다운로드
 ```
