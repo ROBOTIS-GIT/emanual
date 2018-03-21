@@ -5,5 +5,5 @@ The relationship between torque, current, and goal torque is shown below.
 
 |Model|Formula|
 | :---: | :---: |
-|PRO 54 | A = V * 33,000 / 2,048<br />A : Current[mA]<br />V : Present Current/Goal Torque |
-|PRO 42 | A = V * 8,250 / 2,048<br />A : Current[mA]<br />V : Present Current/Goal Torque |
+|PRO 54 | A = C x 33,000 &divide; 2,048<br />A = Current on Motor Coil[mA]<br />C = Present Current(621) or Goal Torque(604) |
+|PRO 42 | A = C x 8,250 &divide; 2,048<br />A = Current on Motor Coil[mA]<br />C = Present Current(621) or Goal Torque(604) |
