@@ -215,11 +215,11 @@ External Port 의 용도는 External Port Mode (44, 45, 46, 47) 에 의해서 �
 
 {% capture control_table_externalportdata_warning %}
 `경고` External Port 는 전기적으로 절연되어 있지 않기 때문에, 전기적 사양을 준수하시기 바랍니다.  
-전기적 사양을 초과하거나 신호 연결에 문제가 있는 경우, Dynamixel이 손상될 수 있으므로 각별한 주의가 요구됩니다. External Port를 사용할 때 다음 사항들을 주의하시기 바랍니다. 
-- 정전기(ESD), 단락(Short circuit), 단선(Open circuit) 등에 의한 전기적인 충격이 발생하지 않도록 주의해 주십시오. 
-- External Port 커넥터로 물이나 먼지가 유입되지 않도록 주의해 주십시오. 
-- External Port를 사용하지 않을 때는 케이블을 제거해 주십시오. 
-- External Port에 신호를 연결/해제 할 때는 전원이 꺼진 상태에서 진행해 주십시오. 
+전기적 사양을 초과하거나 신호 연결에 문제가 있는 경우, Dynamixel이 손상될 수 있으므로 각별한 주의가 요구됩니다. External Port를 사용할 때 다음 사항들을 주의하시기 바랍니다.
+- 정전기(ESD), 단락(Short circuit), 단선(Open circuit) 등에 의한 전기적인 충격이 발생하지 않도록 주의해 주십시오.
+- External Port 커넥터로 물이나 먼지가 유입되지 않도록 주의해 주십시오.
+- External Port를 사용하지 않을 때는 케이블을 제거해 주십시오.
+- External Port에 신호를 연결/해제 할 때는 전원이 꺼진 상태에서 진행해 주십시오.
 - External Port 의 GNDext 핀과 Dynamixel 커넥터의 GND핀을 직접 연결하지 마십시오. 전원 노이즈가 External Port로 유입될 수 있습니다.
 {% endcapture %}
 
@@ -255,8 +255,8 @@ External Port 의 용도는 External Port Mode (44, 45, 46, 47) 에 의해서 �
 |Bit 0|Input Voltage Error|인가된 전압이 설정된 동작 전압 범위를 벗어났을 경우|
 
 {% capture rh_p12_rn_01 %}
-`Note` Shutdown 이 발생하면 다음과 같은 방법으로 다이나믹셀을 REBOOT 시킬 수 있습니다. 
-1. H/W REBOOT : 전원을 껐다 켜는 방법 
+`Note` Shutdown 이 발생하면 다음과 같은 방법으로 다이나믹셀을 REBOOT 시킬 수 있습니다.
+1. H/W REBOOT : 전원을 껐다 켜는 방법
 2. S/W REBOOT : REBOOT Instruction Packet 을 전송하는 방법 (자세한 사항은 e-Manual의 [프로토콜]을 참고해 주세요)
 {% endcapture %}
 
@@ -387,7 +387,21 @@ Goal Velocity(600)가 ‘0’인 경우, Profile 이 비활성화 되어 Goal Ac
 
 ## [커넥터 정보](#커넥터-정보)
 
-{% include kr/dxl/molex_485_pro.md %}
+|항목|RS-485|외부포트|
+|:---:|:---:|:---:|
+|핀 번호|`1` GND<br>`2` VDD<br>`3` DATA+<br>`4` DATA-|`1` GND<br>`2` VDD<br>`3` PORT 1<br>`4` PORT 2<br>`5` PORT 3<br>`6` PORT 4|
+|다이어그램|![](/assets/images/dxl/jst_b4beha_diagram.png)|![](/assets/images/dxl/molex_5304706_diagram.png)|
+|하우징|[JST EHR-04]|![](/assets/images/dxl/molex_510210600.png)<br />[MOLEX 51021-0600]|
+|PCB 헤더|![](/assets/images/dxl/jst_b4beha.png)<br />[JST B4B-EH-A]|![](/assets/images/dxl/molex_530470610.png)<br />[MOLEX 53047-0610]|
+|Crimp 터미널|[JST SHE-001T-P0.6]|[MOLEX 50079-8100]|
+|Wire Gauge|21 AWG|21 AWG|
+
+[JST EHR-04]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
+[JST B4B-EH-A]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
+[JST SHE-001T-P0.6]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
+[MOLEX 51021-0600]: http://www.molex.com/molex/products/datasheet.jsp?part=active/0510210600_CRIMP_HOUSINGS.xml
+[MOLEX 53047-0610]: http://www.molex.com/molex/products/datasheet.jsp?part=active/0530470610_PCB_HEADERS.xml
+[MOLEX 50079-8100]: http://www.molex.com/molex/products/datasheet.jsp?part=active/0500798100_CRIMP_TERMINALS.xml
 
 ## [도면](#도면)
 `Download` [RH-P12-RN(PDF).zip](http://www.robotis.com/service/download.php?no=740)  
