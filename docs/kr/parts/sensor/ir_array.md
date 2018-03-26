@@ -11,9 +11,9 @@ sidebar:
   nav: "ir-array"
 ---
 
-![](/assets/images/parts/sensors/_mg_8531.jpg)
+![](/assets/images/parts/sensors/ir-array_product_01.jpg)
 
-![](/assets/images/parts/sensors/_mg_8530.jpg)
+![](/assets/images/parts/sensors/ir-array_product_02.jpg)
 
 > 적외선 센서 어레이 (IR ARRAY)
 
@@ -51,8 +51,8 @@ sidebar:
 ![](/assets/images/parts/sensors/ir-array_02.png)
 
 - 3Pin 커넥터를 통해 전원이 공급되는 상태에서 정면 우측 버튼을 한번 누르면 일곱 LED가 반짝이면서 검은 색 감지 기준값 자동 찾기를 진행합니다.  
-- 버튼을 다시 한번 누르면 검은 색 감지 기준값 자동 찾기가 끝나면서 일곱 적외선 센서의 검은 색 감지 기준값이 자동으로 설정됩니다. 
-- 자동설정된 기준값 = (MAX_VALUE + 2 * MIN_VALUE) / 3 입니다. 
+- 버튼을 다시 한번 누르면 검은 색 감지 기준값 자동 찾기가 끝나면서 일곱 적외선 센서의 검은 색 감지 기준값이 자동으로 설정됩니다.
+- 자동설정된 기준값 = (MAX_VALUE + 2 * MIN_VALUE) / 3 입니다.
 - 그중 MAX_VALUE는 버튼이 두번 눌린 사이 적외선 센서 최대 감지값 이고 MIN_VALUE는 버튼이 두번 눌린 사이 적외선 센서 최소 감지값입니다.
 
 ## [RESET](#reset)
@@ -88,68 +88,68 @@ Control Table 에는 명칭이 같지만 (L) 과 (H) 가 뒤에 붙어서 Addres
 
 ## [EEPROM 영역](#eeprom-영역)
 
-| 주소      | 데이터명                                  | 설명                                     | 접근 | 초기값     |  |
-|:----------|:------------------------------------------|:-----------------------------------------|:-----|:-----------|:-|
-| 0 (0X00)  | [Model Number(L)](#Ax_S1_Address_00)      | 모델 번호의 하위 바이트                  | R    | 74 (0X4A)  |  |
-| 1 (0X01)  | [Model Number(H)](#Ax_S1_Address_02)      | 모델 번호의 상위 바이트                  | R    | 1 (0X01)   |  |
-| 2 (0X02)  | [Version of Firmware](#Ax_S1_Address_03)  | 펌웨어 버전 정보                         | R    | -          |  |
-| 3 (0X03)  | [ID](#Ax_S1_Address_03)                   | 다이나믹셀 ID                            | RW   | 100 (0X64) |  |
-| 4 (0X04)  | [Baud Rate](#Ax_S1_Address_04)            | 다이나믹셀 통신 속도                     | RW   | 1 (0X01)   |  |
-| 5 (0X05)  | [Return Delay Time](#Ax_S1_Address_05)    | 응답 지연 시간                           | RW   | 250 (0XFA) |  |
-| 6 (0X06)  | [IR Threshold_L 1](#IR_ARRAY_Address_06) | 1번 적외선 물체감지 기준값의 하위 바이트 | RW   | 16 (0X10)  |  |
-| 7 (0X07)  | [IR Threshold_H 1](#IR_ARRAY_Address_06)  | 1번 적외선 물체감지 기준값의 상위 바이트 | RW   | 3 (0X03)   |  |
-| 8 (0X08)  | [IR Threshold_L 2](#IR_ARRAY_Address_06) | 2번 적외선 물체감지 기준값의 하위 바이트 | RW   | 16 (0X10)  |  |
-| 9 (0X09)  | [IR Threshold_H 2](#IR_ARRAY_Address_06)  | 2번 적외선 물체감지 기준값의 상위 바이트 | RW   | 3 (0X03)   |  |
-| 10 (0X0A) | [IR Threshold_L 3](#IR_ARRAY_Address_06) | 3번 적외선 물체감지 기준값의 하위 바이트 | RW   | 16 (0X10)  |  |
-| 11 (0X0B) | [IR Threshold_H 3](#IR_ARRAY_Address_06)  | 3번 적외선 물체감지 기준값의 상위 바이트 | RW   | 3 (0X03)   |  |
-| 12 (0X0C) | [IR Threshold_L 4](#IR_ARRAY_Address_06) | 4번 적외선 물체감지 기준값의 하위 바이트 | RW   | 16 (0X10)  |  |
-| 13 (0X0D) | [IR Threshold_H 4](#IR_ARRAY_Address_06)  | 4번 적외선 물체감지 기준값의 상위 바이트 | RW   | 3 (0X03)   |  |
-| 14 (0X0E) | [IR Threshold_L 5](#IR_ARRAY_Address_06) | 5번 적외선 물체감지 기준값의 하위 바이트 | RW   | 16 (0X10)  |  |
-| 15 (0X0F) | [IR Threshold_H 5](#IR_ARRAY_Address_06)  | 5번 적외선 물체감지 기준값의 상위 바이트 | RW   | 3 (0X03)   |  |
-| 16 (0X10) | [Status Return Level](#Ax_S1_Address_10)  | 응답 레벨                                | RW   | 2 (0X02)   |  |
-| 17 (0X11) | [IR Threshold_L 6](#IR_ARRAY_Address_06) | 6번 적외선 물체감지 기준값의 하위 바이트 | RW   | 16 (0X10)  |  |
-| 18 (0X12) | [IR Threshold_H 6](#IR_ARRAY_Address_06)  | 6번 적외선 물체감지 기준값의 상위 바이트 | RW   | 3 (0X03)   |  |
-| 20 (0X14) | [ IR Threshold_L 7](#IR_ARRAY_Address_06) | 7번 적외선 물체감지 기준값의 하위 바이트 | RW   | 16 (0X10)  |  |
-| 21 (0X15) | [IR Threshold_H 7](#IR_ARRAY_Address_06)  | 7번 적외선 물체감지 기준값의 상위 바이트 | RW   | 3 (0X03)   |  |
+| 주소      | 데이터명                                  | 설명                                     | 접근 | 초기값     |
+|:----------|:------------------------------------------|:-----------------------------------------|:-----|:-----------|
+| 0 (0X00)  | [Model Number(L)](#Ax_S1_Address_00)      | 모델 번호의 하위 바이트                  | R    | 74 (0X4A)  |
+| 1 (0X01)  | [Model Number(H)](#Ax_S1_Address_02)      | 모델 번호의 상위 바이트                  | R    | 1 (0X01)   |
+| 2 (0X02)  | [Version of Firmware](#Ax_S1_Address_03)  | 펌웨어 버전 정보                         | R    | -          |
+| 3 (0X03)  | [ID](#Ax_S1_Address_03)                   | 다이나믹셀 ID                            | RW   | 100 (0X64) |
+| 4 (0X04)  | [Baud Rate](#Ax_S1_Address_04)            | 다이나믹셀 통신 속도                     | RW   | 1 (0X01)   |
+| 5 (0X05)  | [Return Delay Time](#Ax_S1_Address_05)    | 응답 지연 시간                           | RW   | 250 (0XFA) |
+| 6 (0X06)  | [IR Threshold_L 1](#IR_ARRAY_Address_06) | 1번 적외선 물체감지 기준값의 하위 바이트 | RW   | 16 (0X10)  |
+| 7 (0X07)  | [IR Threshold_H 1](#IR_ARRAY_Address_06)  | 1번 적외선 물체감지 기준값의 상위 바이트 | RW   | 3 (0X03)   |
+| 8 (0X08)  | [IR Threshold_L 2](#IR_ARRAY_Address_06) | 2번 적외선 물체감지 기준값의 하위 바이트 | RW   | 16 (0X10)  |
+| 9 (0X09)  | [IR Threshold_H 2](#IR_ARRAY_Address_06)  | 2번 적외선 물체감지 기준값의 상위 바이트 | RW   | 3 (0X03)   |
+| 10 (0X0A) | [IR Threshold_L 3](#IR_ARRAY_Address_06) | 3번 적외선 물체감지 기준값의 하위 바이트 | RW   | 16 (0X10)  |
+| 11 (0X0B) | [IR Threshold_H 3](#IR_ARRAY_Address_06)  | 3번 적외선 물체감지 기준값의 상위 바이트 | RW   | 3 (0X03)   |
+| 12 (0X0C) | [IR Threshold_L 4](#IR_ARRAY_Address_06) | 4번 적외선 물체감지 기준값의 하위 바이트 | RW   | 16 (0X10)  |
+| 13 (0X0D) | [IR Threshold_H 4](#IR_ARRAY_Address_06)  | 4번 적외선 물체감지 기준값의 상위 바이트 | RW   | 3 (0X03)   |
+| 14 (0X0E) | [IR Threshold_L 5](#IR_ARRAY_Address_06) | 5번 적외선 물체감지 기준값의 하위 바이트 | RW   | 16 (0X10)  |
+| 15 (0X0F) | [IR Threshold_H 5](#IR_ARRAY_Address_06)  | 5번 적외선 물체감지 기준값의 상위 바이트 | RW   | 3 (0X03)   |
+| 16 (0X10) | [Status Return Level](#Ax_S1_Address_10)  | 응답 레벨                                | RW   | 2 (0X02)   |
+| 17 (0X11) | [IR Threshold_L 6](#IR_ARRAY_Address_06) | 6번 적외선 물체감지 기준값의 하위 바이트 | RW   | 16 (0X10)  |
+| 18 (0X12) | [IR Threshold_H 6](#IR_ARRAY_Address_06)  | 6번 적외선 물체감지 기준값의 상위 바이트 | RW   | 3 (0X03)   |
+| 20 (0X14) | [ IR Threshold_L 7](#IR_ARRAY_Address_06) | 7번 적외선 물체감지 기준값의 하위 바이트 | RW   | 16 (0X10)  |
+| 21 (0X15) | [IR Threshold_H 7](#IR_ARRAY_Address_06)  | 7번 적외선 물체감지 기준값의 상위 바이트 | RW   | 3 (0X03)   |
 
 ## [RAM 영역](#ram-영역)
 
-| 주소      | 데이터명                                     | 설명                                     | 접근 | 초기값    |  |
-|:----------|:---------------------------------------------|:-----------------------------------------|:-----|:----------|:-|
-| 24 (0X18) | [IR Fire Data_L 1](#IR_ARRAY_Address_24)     | 1번 적외선 센서값의 하위 바이트          | R    | -         |  |
-| 25 (0X19) | [IR Fire Data_H 1](#IR_ARRAY_Address_24)     | 1번 적외선 센서값의 상위 바이트          | R    | -         |  |
-| 26 (0X1A) | [IR Fire Data_L 2](#IR_ARRAY_Address_24)     | 2번 적외선 센서값의 하위 바이트          | R    | -         |  |
-| 27 (0X1B) | [IR Fire Data_H 2](#IR_ARRAY_Address_24)     | 2번 적외선 센서값의 상위 바이트          | R    | -         |  |
-| 28 (0X1C) | [IR Fire Data_L 3](#IR_ARRAY_Address_24)     | 3번 적외선 센서값의 하위 바이트          | R    | -         |  |
-| 29 (0X1D) | [IR Fire Data_H 3](#IR_ARRAY_Address_24)     | 3번 적외선 센서값의 상위 바이트          | R    | -         |  |
-| 30 (0X1E) | [IR Fire Data_L 4](#IR_ARRAY_Address_24)     | 4번 적외선 센서값의 하위 바이트          | R    | -         |  |
-| 31 (0X1F) | [IR Fire Data_H 4](#IR_ARRAY_Address_24)     | 4번 적외선 센서값의 상위 바이트          | R    | -         |  |
-| 32 (0X20) | [IR Fire Data_L 5](#IR_ARRAY_Address_24)     | 5번 적외선 센서값의 하위 바이트          | R    | -         |  |
-| 33 (0X21) | [IR Fire Data_H 5](#IR_ARRAY_Address_24)     | 5번 적외선 센서값의 상위 바이트          | R    | -         |  |
-| 34 (0X22) | [IR Fire Data_L 6](#IR_ARRAY_Address_24)     | 6번 적외선 센서값의 하위 바이트          | R    | -         |  |
-| 35 (0X23) | [IR Fire Data_H 6](#IR_ARRAY_Address_24)     | 6번 적외선 센서값의 상위 바이트          | R    | -         |  |
-| 36 (0X24) | [IR Fire Data_L 7](#IR_ARRAY_Address_24)     | 7번 적외선 센서값의 하위 바이트          | R    | -         |  |
-| 37 (0X25) | [IR Fire Data_H 7](#IR_ARRAY_Address_24)     | 7번 적외선 센서값의 상위 바이트          | R    | -         |  |
-| 40 (0X28) | [Buzzer Data 0](#Ax_S1_Address_28)           | 버저 음계                                | RW   | -         |  |
-| 41 (0X29) | [Buzzer Data 1](#Ax_S1_Address_29)           | 버저 울림 시간                           | RW   | -         |  |
-| 42 (0X2A) | [AUTO Threshold](#IR_ARRAY_Address_42)       | 자동으로 물체감지 기준값 찾는 모드       | RW   | 0 (0X00)  |  |
-| 43 (0X2B) | [IR Obstacle Detected](#IR_ARRAY_Address_43) | 적외선 물체 감지 유무                    | R    |           |  |
-| 44 (0X2C) | [Registered](#Ax_S1_Address_2C)              | Instruction의 등록 여부                  | RW   | 0 (0X00)  |  |
-| 47 (0X2F) | [Lock](#Ax_S1_Address_2F)                    | EEPROM 잠금                              | RW   | 0 (0X00)  |  |
-| 48 (0X30) | [IR Threshold_L 1](#IR_ARRAY_Address_48)     | 1번 적외선 물체감지 기준값의 하위 바이트 | RW   | 16 (0X10) |  |
-| 49 (0X31) | [IR Threshold_H 1](#IR_ARRAY_Address_48)     | 1번 적외선 물체감지 기준값의 상위 바이트 | RW   | 3 (0X03)  |  |
-| 50 (0X32) | [IR Threshold_L 2](#IR_ARRAY_Address_48)     | 2번 적외선 물체감지 기준값의 하위 바이트 | RW   | 16 (0X10) |  |
-| 51 (0X33) | [IR Threshold_H 2](#IR_ARRAY_Address_48)     | 2번 적외선 물체감지 기준값의 상위 바이트 | RW   | 3 (0X03)  |  |
-| 52 (0X34) | [IR Threshold_L 3](#IR_ARRAY_Address_48)     | 3번 적외선 물체감지 기준값의 하위 바이트 | RW   | 16 (0X10) |  |
-| 53 (0X35) | [IR Threshold_H 3](#IR_ARRAY_Address_48)     | 3번 적외선 물체감지 기준값의 상위 바이트 | RW   | 3 (0X03)  |  |
-| 54 (0X36) | [IR Threshold_L 4](#IR_ARRAY_Address_48)     | 4번 적외선 물체감지 기준값의 하위 바이트 | RW   | 16 (0X10) |  |
-| 55 (0X37) | [IR Threshold_H 4](#IR_ARRAY_Address_48)     | 4번 적외선 물체감지 기준값의 상위 바이트 | RW   | 3 (0X03)  |  |
-| 56 (0X38) | [IR Threshold_L 5](#IR_ARRAY_Address_48)     | 5번 적외선 물체감지 기준값의 하위 바이트 | RW   | 16 (0X10) |  |
-| 57 (0X39) | [IR Threshold_H 5](#IR_ARRAY_Address_48)     | 5번 적외선 물체감지 기준값의 상위 바이트 | RW   | 3 (0X03)  |  |
-| 58 (0X3A) | [IR Threshold_L 6](#IR_ARRAY_Address_48)     | 6번 적외선 물체감지 기준값의 하위 바이트 | RW   | 16 (0X10) |  |
-| 59 (0X3B) | [IR Threshold_H 6](#IR_ARRAY_Address_48)     | 6번 적외선 물체감지 기준값의 상위 바이트 | RW   | 3 (0X03)  |  |
-| 60 (0X3C) | [IR Threshold_L 7](#IR_ARRAY_Address_48)     | 7번 적외선 물체감지 기준값의 하위 바이트 | RW   | 16 (0X10) |  |
-| 61 (0X3D) | [IR Threshold_H 7](#IR_ARRAY_Address_48)     | 7번 적외선 물체감지 기준값의 상위 바이트 | RW   | 3 (0X03)  |  |
+| 주소      | 데이터명                                     | 설명                                     | 접근 | 초기값    |
+|:----------|:---------------------------------------------|:-----------------------------------------|:-----|:----------|
+| 24 (0X18) | [IR Fire Data_L 1](#IR_ARRAY_Address_24)     | 1번 적외선 센서값의 하위 바이트          | R    | -         |
+| 25 (0X19) | [IR Fire Data_H 1](#IR_ARRAY_Address_24)     | 1번 적외선 센서값의 상위 바이트          | R    | -         |
+| 26 (0X1A) | [IR Fire Data_L 2](#IR_ARRAY_Address_24)     | 2번 적외선 센서값의 하위 바이트          | R    | -         |
+| 27 (0X1B) | [IR Fire Data_H 2](#IR_ARRAY_Address_24)     | 2번 적외선 센서값의 상위 바이트          | R    | -         |
+| 28 (0X1C) | [IR Fire Data_L 3](#IR_ARRAY_Address_24)     | 3번 적외선 센서값의 하위 바이트          | R    | -         |
+| 29 (0X1D) | [IR Fire Data_H 3](#IR_ARRAY_Address_24)     | 3번 적외선 센서값의 상위 바이트          | R    | -         |
+| 30 (0X1E) | [IR Fire Data_L 4](#IR_ARRAY_Address_24)     | 4번 적외선 센서값의 하위 바이트          | R    | -         |
+| 31 (0X1F) | [IR Fire Data_H 4](#IR_ARRAY_Address_24)     | 4번 적외선 센서값의 상위 바이트          | R    | -         |
+| 32 (0X20) | [IR Fire Data_L 5](#IR_ARRAY_Address_24)     | 5번 적외선 센서값의 하위 바이트          | R    | -         |
+| 33 (0X21) | [IR Fire Data_H 5](#IR_ARRAY_Address_24)     | 5번 적외선 센서값의 상위 바이트          | R    | -         |
+| 34 (0X22) | [IR Fire Data_L 6](#IR_ARRAY_Address_24)     | 6번 적외선 센서값의 하위 바이트          | R    | -         |
+| 35 (0X23) | [IR Fire Data_H 6](#IR_ARRAY_Address_24)     | 6번 적외선 센서값의 상위 바이트          | R    | -         |
+| 36 (0X24) | [IR Fire Data_L 7](#IR_ARRAY_Address_24)     | 7번 적외선 센서값의 하위 바이트          | R    | -         |
+| 37 (0X25) | [IR Fire Data_H 7](#IR_ARRAY_Address_24)     | 7번 적외선 센서값의 상위 바이트          | R    | -         |
+| 40 (0X28) | [Buzzer Data 0](#Ax_S1_Address_28)           | 버저 음계                                | RW   | -         |
+| 41 (0X29) | [Buzzer Data 1](#Ax_S1_Address_29)           | 버저 울림 시간                           | RW   | -         |
+| 42 (0X2A) | [AUTO Threshold](#IR_ARRAY_Address_42)       | 자동으로 물체감지 기준값 찾는 모드       | RW   | 0 (0X00)  |
+| 43 (0X2B) | [IR Obstacle Detected](#IR_ARRAY_Address_43) | 적외선 물체 감지 유무                    | R    |           |
+| 44 (0X2C) | [Registered](#Ax_S1_Address_2C)              | Instruction의 등록 여부                  | RW   | 0 (0X00)  |
+| 47 (0X2F) | [Lock](#Ax_S1_Address_2F)                    | EEPROM 잠금                              | RW   | 0 (0X00)  |
+| 48 (0X30) | [IR Threshold_L 1](#IR_ARRAY_Address_48)     | 1번 적외선 물체감지 기준값의 하위 바이트 | RW   | 16 (0X10) |
+| 49 (0X31) | [IR Threshold_H 1](#IR_ARRAY_Address_48)     | 1번 적외선 물체감지 기준값의 상위 바이트 | RW   | 3 (0X03)  |
+| 50 (0X32) | [IR Threshold_L 2](#IR_ARRAY_Address_48)     | 2번 적외선 물체감지 기준값의 하위 바이트 | RW   | 16 (0X10) |
+| 51 (0X33) | [IR Threshold_H 2](#IR_ARRAY_Address_48)     | 2번 적외선 물체감지 기준값의 상위 바이트 | RW   | 3 (0X03)  |
+| 52 (0X34) | [IR Threshold_L 3](#IR_ARRAY_Address_48)     | 3번 적외선 물체감지 기준값의 하위 바이트 | RW   | 16 (0X10) |
+| 53 (0X35) | [IR Threshold_H 3](#IR_ARRAY_Address_48)     | 3번 적외선 물체감지 기준값의 상위 바이트 | RW   | 3 (0X03)  |
+| 54 (0X36) | [IR Threshold_L 4](#IR_ARRAY_Address_48)     | 4번 적외선 물체감지 기준값의 하위 바이트 | RW   | 16 (0X10) |
+| 55 (0X37) | [IR Threshold_H 4](#IR_ARRAY_Address_48)     | 4번 적외선 물체감지 기준값의 상위 바이트 | RW   | 3 (0X03)  |
+| 56 (0X38) | [IR Threshold_L 5](#IR_ARRAY_Address_48)     | 5번 적외선 물체감지 기준값의 하위 바이트 | RW   | 16 (0X10) |
+| 57 (0X39) | [IR Threshold_H 5](#IR_ARRAY_Address_48)     | 5번 적외선 물체감지 기준값의 상위 바이트 | RW   | 3 (0X03)  |
+| 58 (0X3A) | [IR Threshold_L 6](#IR_ARRAY_Address_48)     | 6번 적외선 물체감지 기준값의 하위 바이트 | RW   | 16 (0X10) |
+| 59 (0X3B) | [IR Threshold_H 6](#IR_ARRAY_Address_48)     | 6번 적외선 물체감지 기준값의 상위 바이트 | RW   | 3 (0X03)  |
+| 60 (0X3C) | [IR Threshold_L 7](#IR_ARRAY_Address_48)     | 7번 적외선 물체감지 기준값의 하위 바이트 | RW   | 16 (0X10) |
+| 61 (0X3D) | [IR Threshold_H 7](#IR_ARRAY_Address_48)     | 7번 적외선 물체감지 기준값의 상위 바이트 | RW   | 3 (0X03)  |
 
 
 ## [컨트롤 테이블 설명](#컨트롤-테이블-설명)
@@ -169,7 +169,7 @@ Control Table 에는 명칭이 같지만 (L) 과 (H) 가 뒤에 붙어서 Addres
 ### <a name="return-delay-time"></a>Return Delay Time (5)
 {% include kr/dxl/control_table_return_delay_time.md %}
 
-### <a name=ir-threshold"></a>검은 색 감지 기준값
+### <a name="ir-threshold"></a>검은 색 감지 기준값
 
 IR #1 ~ #7의 검은색 값을 설정합니다.
 적외선 센서값과  검은색 감지 기준값에 따라, 아래와 같이 행동합니다.
@@ -220,7 +220,8 @@ IR ARRAY의 각 적외선 센서의 감지 값이 검은 색 감지 기준값보
 | 0    | REG_WRITE로 전달된 명령이 없습니다. |
 | 1    | REG_WRITE로 전달된 명령이 있습니다. |
 
-`Note` ACTION 명령을 수행하면 이 값이 0으로 바뀝니다. {: .notice}
+`Note` ACTION 명령을 수행하면 이 값이 0으로 바뀝니다.
+{: .notice}
 
 ### <a name="lock"></a>Lock
 
@@ -229,7 +230,7 @@ IR ARRAY의 각 적외선 센서의 감지 값이 검은 색 감지 기준값보
 | 0    | EEPROM영역을 수정할 수 있습니다. |
 | 1    | EEPROM영역을 수정하지 못합니다.  |
 
-`주의` Lock이 1로 설정되면 전원을 껐다 켜야 0으로 바꿀 수 있습니다. 
+`주의` Lock이 1로 설정되면 전원을 껐다 켜야 0으로 바꿀 수 있습니다.
 {: .notice--warning}
 
 [다이나믹셀의 통신]: /docs/kr/dxl/protocol1/#communication-overview
