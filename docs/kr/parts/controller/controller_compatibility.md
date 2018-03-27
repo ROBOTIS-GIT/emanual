@@ -86,7 +86,7 @@ sidebar:
 |R+ 1.0|O|O|O|O|O|O|O|X|O(X)|X|X|
 |R+ 2.0|O|O|O|O|O|O|O|X|O(X)|O|X|
 |OpenCM IDE|X|X|X|X|X|X|X|X|O|X|X|
-|아두이노 IDE|X|X|X|X|X|X|X|X|O|X|O|
+|아두이노 IDE|X|X|X|X|X|X|X|X|O|O|O|
 |스크래치2.0|X|O|X|X|X|X|X|X|X|O|X|
 
 [ln-101]: /docs/kr/parts/interface/ln-101/

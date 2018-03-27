@@ -86,7 +86,7 @@ sidebar:
 |R+ 1.0|O|O|O|O|O|O|O|X|O(X)|X|X|
 |R+ 2.0|O|O|O|O|O|O|O|X|O(X)|O|X|
 |OpenCM IDE|X|X|X|X|X|X|X|X|O|X|X|
-|Arduino IDE|X|X|X|X|X|X|X|X|O|X|O|
+|Arduino IDE|X|X|X|X|X|X|X|X|O|O|O|
 |Scratch2.0|X|O|X|X|X|X|X|X|X|O|X|
 
 
