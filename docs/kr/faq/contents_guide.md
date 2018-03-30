@@ -108,7 +108,7 @@ sidebar:
 1. 글상자로 묶고자 하는 문단의 첫번째에 "&#123;% capture group_notice_01 %&#125;"를 넣고 마지막 숫자 01은 다른 그룹 글상자의 이름과 겹치지 않게 사용한 그룹 글상자의 숫자만큼 증가시켜줍니다.
 2. 글상자로 묶고자 하는 문단의 마지막 줄에 "&#123;% endcapture %&#125;"를 추가합니다.
 3. 글상자를 넣고자하는 부분에 아래의 코드를 추가하고 글상자의 유형에 따라 notice를 notice--info, notice--warning 등으로 변경한 뒤 group_notice_01의 01을 해당 그룹 글상자의 숫자와 맞춰줍니다.
-4. &lt;div class="notice"&gt;&#123;&#123; group_notice_01 | markdownify &#125;&#125;&lt;/div&gt;&#123;% endcapture %&#125;
+4. &lt;div class="notice"&gt;&#123;&#123; group_notice_01 \| markdownify &#125;&#125;&lt;/div&gt;&#123;% endcapture %&#125;
 {% endcapture %}
 
 <div class="notice">{{ group_notice_01 | markdownify }}</div>

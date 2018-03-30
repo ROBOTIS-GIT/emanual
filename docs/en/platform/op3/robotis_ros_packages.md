@@ -104,7 +104,7 @@ This module is compiled to a library to be used in [op3_manager].
 - Download & Build
   > Reference : [Installing ROBOTIS ROS Package]    
 
-- Usage
+- Usage  
   The Motion Module is used in the manager in the form of library.  
   > Reference : [Creating new robot manager]
 
