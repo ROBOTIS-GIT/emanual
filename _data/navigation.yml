@@ -107,6 +107,7 @@ main:
         url: /dxl/x/xh430-v350/
     - title: "PRO Series"
       titlekr: "PRO 시리즈"
+      url: /dxl/pro/
       children:
       - title: "H54-200-S500-R"
         titlekr: "H54-200-S500-R"
@@ -266,10 +267,10 @@ main:
       - titlekr: "2단계 교육키트"
         url: /edu/iot/iot-2/
     - titlekr: "자동차 로봇"
-      urlkr: /edu/car/
+      url: /edu/car/
     - title: "BIOLOID"
       titlekr: "바이올로이드"
-      urlkr: /edu/bioloid/
+      url: /edu/bioloid/
       children:
       - title: "Beginner Level"
         titlekr: "초급"
@@ -745,61 +746,117 @@ ax-12a:
         urlkr: /dxl/ax/ax-12a/#컨트롤-테이블-설명
         children:
           - title: "Model Number(0)"
+            titlekr: "Model Number(0)"
             url: /dxl/ax/ax-12a/#model-number-0
+            urlkr: /dxl/ax/ax-12a/#model-number-0
           - title: "Firmware Version(2)"
+            titlekr: "Firmware Version(2)"
             url: /dxl/ax/ax-12a/#firmware-version-2
+            urlkr: /dxl/ax/ax-12a/#firmware-version-2
           - title: "ID(3)"
+            titlekr: "ID(3)"
             url: /dxl/ax/ax-12a/#id-3
+            urlkr: /dxl/ax/ax-12a/#id-3
           - title: "Baud Rate(4)"
+            titlekr: "Baud Rate(4)"
             url: /dxl/ax/ax-12a/#baud-rate-4
+            urlkr: /dxl/ax/ax-12a/#baud-rate-4
           - title: "Return Delay Time(5)"
+            titlekr: "Return Delay Time(5)"
             url: /dxl/ax/ax-12a/#return-delay-time-5
+            urlkr: /dxl/ax/ax-12a/#return-delay-time-5
           - title: "CW/CCW Angle Limit(6,8)"
+            titlekr: "CW/CCW Angle Limit(6,8)"
             url: /dxl/ax/ax-12a/#cwccw-angle-limit6-8
+            urlkr: /dxl/ax/ax-12a/#cwccw-angle-limit6-8
           - title: "Temperature Limit(11)"
+            titlekr: "Temperature Limit(11)"
             url: /dxl/ax/ax-12a/#temperature-limit-11
+            urlkr: /dxl/ax/ax-12a/#temperature-limit-11
           - title: "Min/Max Voltage Limit(12,13)"
+            titlekr: "Min/Max Voltage Limit(12,13)"
             url: /dxl/ax/ax-12a/#minmax-voltage-limit-12-13
+            urlkr: /dxl/ax/ax-12a/#minmax-voltage-limit-12-13
           - title: "Max Torque(14)"
+            titlekr: "Max Torque(14)"
             url: /dxl/ax/ax-12a/#max-torque-14
+            urlkr: /dxl/ax/ax-12a/#max-torque-14
           - title: "Status Return Level(16)"
+            titlekr: "Status Return Level(16)"
             url: /dxl/ax/ax-12a/#status-return-level-16
+            urlkr: /dxl/ax/ax-12a/#status-return-level-16
           - title: "Alarm LED(17)"
+            titlekr: "Alarm LED(17)"
             url: /dxl/ax/ax-12a/#alarm-led17-shutdown18
+            urlkr: /dxl/ax/ax-12a/#alarm-led17-shutdown18
           - title: "Shutdown(18)"
+            titlekr: "Shutdown(18)"
             url: /dxl/ax/ax-12a/#alarm-led17-shutdown18
+            urlkr: /dxl/ax/ax-12a/#alarm-led17-shutdown18
           - title: "Torque Enable(24)"
+            titlekr: "Torque Enable(24)"
             url: /dxl/ax/ax-12a/#torque-enable-24
+            urlkr: /dxl/ax/ax-12a/#torque-enable-24
           - title: "LED(25)"
+            titlekr: "LED(25)"
             url: /dxl/ax/ax-12a/#led-25
+            urlkr: /dxl/ax/ax-12a/#led-25
           - title: "Compliance Margin(26,27)"
+            titlekr: "Compliance Margin(26,27)"
             url: /dxl/ax/ax-12a/#compliance-margin-26-27
+            urlkr: /dxl/ax/ax-12a/#compliance-margin-26-27
           - title: "Compliance Slope(28,29)"
+            titlekr: "Compliance Slope(28,29)"
             url: /dxl/ax/ax-12a/#compliance-slope-28-29
+            urlkr: /dxl/ax/ax-12a/#compliance-slope-28-29
           - title: "Goal Position(30)"
+            titlekr: "Goal Position(30)"
             url: /dxl/ax/ax-12a/#goal-position-30
+            urlkr: /dxl/ax/ax-12a/#goal-position-30
           - title: "Moving Speed(32)"
+            titlekr: "Moving Speed(32)"
             url: /dxl/ax/ax-12a/#moving-speed-32
+            urlkr: /dxl/ax/ax-12a/#moving-speed-32
           - title: "Torque Limit(34)"
+            titlekr: "Torque Limit(34)"
             url: /dxl/ax/ax-12a/#torque-limit-34
+            urlkr: /dxl/ax/ax-12a/#torque-limit-34
           - title: "Present Position(36)"
+            titlekr: "Present Position(36)"
             url: /dxl/ax/ax-12a/#present-position-36
+            urlkr: /dxl/ax/ax-12a/#present-position-36
           - title: "Present Speed(38)"
+            titlekr: "Present Speed(38)"
             url: /dxl/ax/ax-12a/#present-speed-38
+            urlkr: /dxl/ax/ax-12a/#present-speed-38
           - title: "Present Load(40)"
+            titlekr: "Present Load(40)"
             url: /dxl/ax/ax-12a/#present-load-40
+            urlkr: /dxl/ax/ax-12a/#present-load-40
           - title: "Present Voltage(42)"
+            titlekr: "Present Voltage(42)"
             url: /dxl/ax/ax-12a/#present-voltage-42
+            urlkr: /dxl/ax/ax-12a/#present-voltage-42
           - title: "Present Temperature(43)"
+            titlekr: "Present Temperature(43)"
             url: /dxl/ax/ax-12a/#present-temperature-43
+            urlkr: /dxl/ax/ax-12a/#present-temperature-43
           - title: "Registered Instruction(44)"
+            titlekr: "Registered Instruction(44)"
             url: /dxl/ax/ax-12a/#registered-instruction-44
+            urlkr: /dxl/ax/ax-12a/#registered-instruction-44
           - title: "Moving(46)"
+            titlekr: "Moving(46)"
             url: /dxl/ax/ax-12a/#moving-46
+            urlkr: /dxl/ax/ax-12a/#moving-46
           - title: "Lock(47)"
+            titlekr: "Lock(47)"
             url: /dxl/ax/ax-12a/#lock-47
+            urlkr: /dxl/ax/ax-12a/#lock-47
           - title: "Punch(48)"
+            titlekr: "Punch(48)"
             url: /dxl/ax/ax-12a/#punch-48
+            urlkr: /dxl/ax/ax-12a/#punch-48
   - title: "How to Assemble"
     titlekr: "조립 예시"
     url: /dxl/ax/ax-12a/#how-to-assemble
@@ -8599,11 +8656,11 @@ bioloid-premium:
     - title: "Custom Motions(Create)"
       titlekr: "사용자 모션 추가하기(모션 만들기)"
       url: /edu/bioloid/premium/#custom-motions-create
-      urlkr: /edu/bioloid/premium/#사용자-모션-추가하기모션-만들기
+      urlkr: /edu/bioloid/premium/#사용자-모션-추가모션-만들기
     - title: "Custom Motions(Task Code)"
       titlekr: "사용자 모션 추가하기(태스크 코드)"
       url: /edu/bioloid/premium/#custom-motions-task-code
-      urlkr: /edu/bioloid/premium/#사용자-모션-추가하기태스크-코드
+      urlkr: /edu/bioloid/premium/#사용자-모션-추가태스크-코드
     - title: "Gripper Control"
       titlekr: "그리퍼 제어"
       url: /edu/bioloid/premium/#gripper-control
@@ -13283,7 +13340,7 @@ opencm904:
     - title: "Arduino IDE"
       titlekr: "아두이노 IDE"
       url: /parts/controller/opencm904/#arduino-ide
-      urlkr: /parts/controller/opencm904/#아두이도-ide
+      urlkr: /parts/controller/opencm904/#아두이노-ide
       children:
       - title: "Install on Linux"
         titlekr: "리눅스에 설치하기"
