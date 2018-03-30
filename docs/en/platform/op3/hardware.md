@@ -40,3 +40,15 @@ ROBOTIS provides STP files for ROBOTIS-OP3 parts and assembly. Users can view fr
  ![](/assets/images/platform/op3/ROBOTIS_OP3-Skin_Ver1.png)![](/assets/images/platform/op3/ROBOTIS-OP3-Skin_THORMANG3-Style.png)
 ### File
   > Reference : [Download](https://github.com/ROBOTIS-GIT/ROBOTIS-OP-Series-Data/tree/master/ROBOTIS-OP3/Hardware/Mechanics/Skin)
+
+## [Electronics Data](#electronic_data)
+### Main Controller : Intel NUC i3  
+### Sub Controller : [OpenCR](/docs/en/parts/controller/opencr10/)  
+### Boards
+- [OP3 LED AMP Board](https://github.com/ROBOTIS-GIT/ROBOTIS-OP-Series-Data/blob/master/ROBOTIS-OP3/Hardware/Electronics/Boards/OP3_LED-AMP_Board_170213.pdf)
+- [OP3 GPIO Board](https://github.com/ROBOTIS-GIT/ROBOTIS-OP-Series-Data/blob/master/ROBOTIS-OP3/Hardware/Electronics/Boards/OP3_GPIO_Board_170213.pdf)
+- [JST 4P EXT Board](https://github.com/ROBOTIS-GIT/ROBOTIS-OP-Series-Data/blob/master/ROBOTIS-OP3/Hardware/Electronics/Boards/JST_4P_EXT_5Port_Board_170213.pdf)
+
+### ETC
+- USB Camera : [Logitech C920](https://github.com/ROBOTIS-GIT/ROBOTIS-OP-Series-Data/blob/master/ROBOTIS-OP3/Hardware/Electronics/Logitech%20C920.pdf)
+- [Speaker](https://github.com/ROBOTIS-GIT/ROBOTIS-OP-Series-Data/blob/master/ROBOTIS-OP3/Hardware/Electronics/ROBOTIS-OP3_Speaker.pdf)

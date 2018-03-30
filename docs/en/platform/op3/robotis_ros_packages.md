@@ -711,7 +711,7 @@ OP3 will play sequence of pre-defined actions while speaking.
 
 ## [ROBOTIS OP3 Common](#robotis-op3-common)
 
-### [robotis_op3_description](#robotis-op3-description)
+### [op3_description](#op3-description)
 
 #### Overview
 ROBOTIS OP3 URDF Model  
@@ -728,7 +728,7 @@ ROBOTIS OP3 URDF Model
 `src` : ROS node for Rviz to publish imaginary gripper joint   
 `urdf` : urdf & xacro files for Thormang3 model
 
-### [robotis_op3_gazebo](#robotis-op3-gazebo)
+### [op3_gazebo](#op3-gazebo)
 
 #### Overview
 ROBOTIS OP3 Gazebo Simulation

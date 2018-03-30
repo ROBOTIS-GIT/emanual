@@ -95,6 +95,16 @@ This chapter explains how to install software and configure ROBOTIS OP3.
                      1. Select Only allow access to specific users
                      2. Select samba user
 
+     - Apache(for web_setting_tool)
+        1. Install web server(APACHE2)
+            ```
+            $ sudo apt install apache2
+            ```
+        2. Check the default page from a web browser  
+            - http://10.42.0.1  
+
+
+
 #### ROS Installation & Environment Setup
 1. **ROS Installation**
     > Reference : [ROS Installation]  
@@ -157,6 +167,36 @@ This chapter explains how to install software and configure ROBOTIS OP3.
     $ sudo apt install ros-kinetic-qt-ros
     ```      
 
+- [humanoid_navigation]  
+    Package for footstep planner.
+    - Installation prerequisite packages
+        ```
+        $ sudo apt-get install ros-kinetic-map-server
+        $ sudo apt-get install ros-kinetic-humanoid-nav-msgs
+        $ sudo apt-get install ros-kinetic-nav-msgs
+        $ sudo apt-get install ros-kinetic-octomap
+        $ sudo apt-get install ros-kinetic-octomap-msgs
+        $ sudo apt-get install ros-kinetic-octomap-ros
+        $ sudo apt-get install ros-kinetic-octomap-server
+        ```  
+
+    - Installation library from sources
+        * sbpl  
+
+          > Reference : [https://github.com/sbpl/sbpl]
+
+    - Installation humanoid_navigation
+        ```
+        $ cd ~/catkin_ws/src
+        $ git clone https://github.com/ROBOTIS-GIT/humanoid_navigation.git
+        $ cd ~/catkin_ws
+        ```  
+    - [rosbridge_server], [web_video_server]    
+      Packages for web_setting_tool  
+      ```
+      $ sudo apt install ros-kinetic-rosbridge-server ros-kinetic-web-video-server
+      ```
+
 #### [Installing ROBOTIS ROS Package](#installing-robotis-ros-package)  
 
  - ROBOTIS ROS Packages
@@ -195,7 +235,18 @@ This chapter explains how to install software and configure ROBOTIS OP3.
       $ catkin_make
       ```
 
-#### ETC Setting  
+#### ETC Setting   
+- Configure web_setting_tool  
+    1. Copy files from ROBOTIS-OP3-Tools folder to the web server folder : github
+        ```
+        $ cd ~/catkin_ws/src/ROBOTIS-OP3-Tools/op3_web_setting
+        $ sudo cp -r ./html /var/www
+        ```   
+    2. Check the default page from a web browser  
+        - http://10.42.0.1  
+        ![](/assets/images/platform/op3/op3_web_setting_01.png)
+    3. [How to use Web Setting Tool]  
+
 - Configure Shutdown Sound  
     1. Create `/etc/init.d/shutdown-snd` file.   
         Create the above file with a text editor.  
@@ -249,14 +300,56 @@ This chapter explains how to install software and configure ROBOTIS OP3.
 ### Overview
 This chapter explains how to recover ROBOTIS-OP3 softwares using recovery USB image.
 
+
 ### CloneZilla recovery  
 Clonezilla is used to recover ROBOTIS-OP3 with the image file in the provided USB.  
 
 > Reference : [e-manual]
 
+#### How to make a recovery USB media   
+- format an USB memory(above 4GB)  
+- Download the ROBOTIS-OP3 Recovery image  
+  - Latest version : clonezilla-live-ROBOTIS-OP3_Recovery_171013.zip   
+  - [ [Download] ] - sourceforge.net   
+- extract the compressed file to the root folder of a USB memory  
+  folder tree looks like below.
+```
+  	.
+  	|-- boot
+  	|   `-- grub
+  	|-- EFI
+  	|   |-- boot
+  	|   `-- images
+  	|-- home
+  	|   `-- partimag
+  	|       `-- ROBOTIS-OP3_transcend
+  	|-- live
+  	|-- syslinux
+  	`-- utils
+```
+
+#### How to recover ROBOTIS-OP3
+- Go to boot manager : Press **F10**  
+	![](/assets/images/platform/op3/op3_recovery_01.jpg)  
+- Select the boot device : Recovery USB media  
+	![](/assets/images/platform/op3/op3_recovery_02.jpg)  
+- Select the image : clonezilla live with img ROBOTIS-OP3_Transcend (Default settings, VGA 1024x768)  
+	![](/assets/images/platform/op3/op3_recovery_03.jpg)  
+- confirm to continue : type `y` and ENTER  
+	![](/assets/images/platform/op3/op3_recovery_04.jpg)  
+- confirm to continue : type `y` and ENTER  
+	![](/assets/images/platform/op3/op3_recovery_05.jpg)  
+- check the progress  
+	![](/assets/images/platform/op3/op3_recovery_06.jpg)  
+- turn off or reboot ROBOTIS-OP3  
+	![](/assets/images/platform/op3/op3_recovery_08.jpg)  
+
+
 ### File
 * clonezilla-live-ROBOTIS-OP3_Recovery_171013.zip  
     * [ [Download] ] - sourceforge.net  
+
+
 
 
 
@@ -281,3 +374,9 @@ Clonezilla is used to recover ROBOTIS-OP3 with the image file in the provided US
 [ROBOTIS-Framerowk]: /docs/en/software/robotis_framework_packages/#robotis-framework
 [ROBOTIS-Framerowk-msgs]: /docs/en/software/robotis_framework_packages/#robotis-framework-msgs
 [ROBOTIS-Math]: /docs/en/platform/common/robotis_math/#robotis-math
+
+[humanoid_navigation]: /docs/en/platform/thormang3/thormang3_ros_packages/#humanoid_navigation
+[https://github.com/sbpl/sbpl]: https://github.com/sbpl/sbpl
+[rosbridge_server]: http://wiki.ros.org/rosbridge_server
+[web_video_server]: http://wiki.ros.org/web_video_server
+[How to use Web Setting Tool]: /docs/en/software/robotis_framework_packages/#how-to-use-web-setting-tool
