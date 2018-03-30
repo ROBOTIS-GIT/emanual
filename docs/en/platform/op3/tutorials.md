@@ -393,7 +393,7 @@ The `action_module` controls each joint of ROBOTIS-OP3.
 2. Select `Motion` tab of the gui demo program.
 
     ![](/assets/images/platform/op3/op3_gui_action_01.png)
-  
+
 3. Click the action button to play  
 
     ![](/assets/images/platform/op3/op3_gui_action_02.png)
@@ -656,11 +656,11 @@ $ roslaunch op3_demo demo.launch
 #### How to change the parameters  
 1. Dynamic Reconfigure and Image View  
     - run the `rqt`  
-        
+
       ```
       $ rqt
       ```
-        
+
     - Open `Dynamic Reconfigure`   
       Select `Plugins -> Configuration -> Dynamic Reconfigure`
 
@@ -732,14 +732,14 @@ This chapter explains upgraded walking and footstep planner.
 
 - [op3_navigation]
     - Download source
-      
+
       ```
       $ cd ~/catkin_ws/src
       $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Tools.git
       ```
-      
+
     - Build source
-      
+
       ```
       $ cd ~/catkin_ws
       $ catkin_make
@@ -747,13 +747,13 @@ This chapter explains upgraded walking and footstep planner.
 
 #### Run the program  
 1. op3_manager
-   
+
     ```
     $ roslaunch op3_manager op3_manager.launch
     ```
 
 2. op3_gui_demo and footstep planner
-   
+
     ```
     $ roslaunch op3_gui_demo op3_demo_walking.launch
     ```
@@ -761,7 +761,7 @@ This chapter explains upgraded walking and footstep planner.
 3. rviz for upgraded walking with footstep planner. If user want to launch a rviz in ROBOTIS-OP3, a monitor is connected to ROBOTIS-OP3.  
 
     ```
-    $ roslaunch robotis_op3_description robotis_op3_walking.launch
+    $ roslaunch op3_description robotis_op3_walking.launch
     ```
 
 #### Walking with footstep planner
@@ -790,6 +790,120 @@ This chapter explains upgraded walking and footstep planner.
     ![](/assets/images/platform/op3/op3_online_walking_footstep_03.png)
 
     ![](/assets/images/platform/op3/op3_online_walking_footstep_05.png)
+
+## [How to use Web Setting Tool](#how-to-use-web-setting-tool)
+
+### Overview   
+  This chapter explains how to set the parameters of ROBOTIS-OP3 through a web page.
+
+  > Reference : [ROBOT WEB TOOL]  
+  > Reference : [web_video_server]   
+  > Reference : [rosbridge_server]  
+
+
+### Getting started  
+#### Installation
+- web_video_server  
+  ```
+  $ sudo apt install ros-kinetic-web-video-server
+  ```
+
+- rosbridge_server  
+  ```
+  $ sudo apt install ros-kinetic-rosbridge-server
+  ```
+
+- Update and build source
+  - ROBOTIS-OP3-Demo  
+    ```
+    $ cd ~/catkin_ws/src/ROBOTIS-OP3-Demo
+    $ git pull
+    ```
+
+  - ROBOTIS-OP3-Tools  
+    ```
+    $ cd ~/catkin_ws/src/ROBOTIS-OP3-Tools
+    $ git pull
+    ```
+
+  - Build source  
+    ```
+    $ cd ~/catkin_ws
+    $ catkin_make
+    ```
+
+
+- Setup the Web Server
+  - Install web server(APACHE2)
+    ```
+    $ sudo apt install apache2
+    ```
+  - Check the default page from a web browser
+    - http://10.42.0.1
+
+
+- Copy files from ROBOTIS-OP3-Tools folder to the web server folder : github
+  ```
+  $ cd ~/catkin_ws/src/ROBOTIS-OP3-Tools/op3_web_setting
+  $ sudo cp -r ./html /var/www
+  ```  
+
+
+#### How to connect ROBOTIS-OP3 WiFi
+Connect to ROBOTIS-OP3 WiFi with below information
+- WiFi ssid : ROBOTIS-OP3-Share
+- password : _11111111_  
+  For security reasons, it is recommended to change the WiFi password.
+
+  > Reference : [How to connect]  
+
+
+#### How to run web setting tool
+-  How to run the packages manually for web server
+ ```
+ $ roslaunch op3_web_setting_tool web_setting_server.launch
+ ```
+
+
+#### How to set parameters
+##### Menu  
+
+![](/assets/images/platform/op3/op3_web_setting_01.png)
+
+1. Demo : Control default demo of ROBOTIS-OP3.    
+2. Soccer : Setting for ball_detector.   
+3. Vision : View the status of the detected face.    
+4. Action : Testing ROBOTIS-OP3 actions.   
+5. Camera : Change the parameters of ROBOTIS-OP3 camera.  
+
+##### Ball Detector parameters  
+  ![](/assets/images/platform/op3/op3_web_setting_02.png)
+  > Modified parameter values will be saved automatically.  
+
+  - gaussian blur size: Size of Gaussian Blur Kernel (odd value)  
+  - gaussian blur sigma: Standard deviation of Gaussian Blur  
+  - canny edge threshold: Threshold of the edge detector  
+  - hough accum resolution: Resolution of the Hough accumulator, in terms of inverse ratio of image resolution  
+  - min circle distance: Minimum distance between circles  
+  - hough accum threshold: Accumulator threshold to decide center detection  
+  - min radius: Minimum circle radius allowed, pixels. (if unknown, set to 0 as a default.)  
+  - max radius: Maximum circle radius allowed, pixels. (if unknown, set to 0 as a default.)
+  - ellipse size: Ellipse size    
+  - Hue min: Minimum threshold of H filter  
+  - Hue max: Maximum threshold of H filter  
+  - Saturation min: Minimum threshold of S filter  
+  - Saturation max: Maximum threshold of S filter  
+  - Value min: Minimum threshold of V filter  
+  - Value max: Maximum threshold of V filter  
+  - Debug image: Show filtered image to debug  
+  - Normal image : Show normal image
+  - Reset parameters : reset all of parameters
+
+  > Reference : [detail of parameter]  
+
+##### Camera Setting parameters  
+  ![](/assets/images/platform/op3/op3_web_setting_03.png)
+  > Modified parameter values will be saved automatically.  
 
 
 [op3_manager]: /docs/en/platform/op3/robotis_ros_packages/#op3-manager
@@ -823,3 +937,8 @@ This chapter explains upgraded walking and footstep planner.
 
 [op3_navigation]: https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Tools/tree/master/op3_navigation
 [Face Tracker - ROS Package]: https://github.com/ROBOTIS-GIT/face_detection
+[ROBOT WEB TOOL]: robotwebtools.org/
+[web_video_server]: http://wiki.ros.org/rosbridge_server  
+[rosbridge_server]: http://wiki.ros.org/web_video_server
+[How to connect]: /docs/en/platform/op3/quick_start/#example--ssh-client-for-windows
+[detail of parameter]: /docs/en/platform/op3/tutorials/#how-to-use-ball-detector
