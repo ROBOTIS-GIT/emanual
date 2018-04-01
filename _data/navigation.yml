@@ -9244,6 +9244,8 @@ op3:
       url: /platform/op3/tutorials/#how-to-use-ball-detector
     - title: "How to control upgraded walking"
       url: /platform/op3/tutorials/#how-to-control-upgraded-walking-using-footstep-planner
+    - title: "How to use Web Setting Tool"
+      url: /platform/op3/tutorials/#how-to-use-web-setting-tool
   - title: "Simulation"
     url: /platform/op3/simulation/#simulation
     children:
@@ -9258,6 +9260,8 @@ op3:
       url: /platform/op3/hardware/#assemble-data
     - title: "Cover Skin Data"
       url: /platform/op3/hardware/#cover-skin-data
+    - title: "Electronics Data"
+      url: /platform/op3/hardware/#electronics-data
   - title: "Recovery"
     url: /platform/op3/recovery/
     children:
