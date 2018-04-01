@@ -8229,16 +8229,6 @@ smart2-2:
 - titlekr: "교안예제"
   urlkr: /edu/smart/smart2-2/#교안예제
 
-smart2-3:
-- titlekr: "개요"
-  urlkr: /edu/smart/smart2-3/#개요
-- titlekr: "부품 리스트"
-  urlkr: /edu/smart/smart2-3/#부품-리스트
-- titlekr: "작동하기"
-  urlkr: /edu/smart/smart2-3/#작동하기
-- titlekr: "교안예제"
-  urlkr: /edu/smart/smart2-3/#교안예제
-
 smart3-1:
 - titlekr: "개요"
   urlkr: /edu/smart/smart3-1/#개요
@@ -9254,6 +9244,8 @@ op3:
       url: /platform/op3/tutorials/#how-to-use-ball-detector
     - title: "How to control upgraded walking"
       url: /platform/op3/tutorials/#how-to-control-upgraded-walking-using-footstep-planner
+    - title: "How to use Web Setting Tool"
+      url: /platform/op3/tutorials/#how-to-use-web-setting-tool
   - title: "Simulation"
     url: /platform/op3/simulation/#simulation
     children:
@@ -9268,6 +9260,8 @@ op3:
       url: /platform/op3/hardware/#assemble-data
     - title: "Cover Skin Data"
       url: /platform/op3/hardware/#cover-skin-data
+    - title: "Electronics Data"
+      url: /platform/op3/hardware/#electronics-data
   - title: "Recovery"
     url: /platform/op3/recovery/
     children:
