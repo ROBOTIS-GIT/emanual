@@ -104,7 +104,7 @@ This module is compiled to a library to be used in [op3_manager].
 - Download & Build
   > Reference : [Installing ROBOTIS ROS Package]    
 
-- Usage
+- Usage  
   The Motion Module is used in the manager in the form of library.  
   > Reference : [Creating new robot manager]
 
@@ -711,7 +711,7 @@ OP3 will play sequence of pre-defined actions while speaking.
 
 ## [ROBOTIS OP3 Common](#robotis-op3-common)
 
-### [robotis_op3_description](#robotis-op3-description)
+### [op3_description](#op3-description)
 
 #### Overview
 ROBOTIS OP3 URDF Model  
@@ -728,7 +728,7 @@ ROBOTIS OP3 URDF Model
 `src` : ROS node for Rviz to publish imaginary gripper joint   
 `urdf` : urdf & xacro files for Thormang3 model
 
-### [robotis_op3_gazebo](#robotis-op3-gazebo)
+### [op3_gazebo](#op3-gazebo)
 
 #### Overview
 ROBOTIS OP3 Gazebo Simulation

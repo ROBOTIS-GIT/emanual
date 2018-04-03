@@ -27,7 +27,7 @@ ROS-Gazebo Package Installation
 [ROBOTIS OP3 Common]
 
 ### Additional Installation
-If ros-indigo-desktop-full was used to install, the following packages need to be installed.
+If ros-kinetic-desktop-full was used to install, the following packages need to be installed.
 ```
 # apt-get install ros-kinetic-ros-control
 # apt-get install ros-kinetic-ros-controllers
@@ -45,7 +45,7 @@ If Gazebo is running on the OPC, realtime factor can be decreased, therefore, it
 ### How to execute  
 * The command to call ROBOTIS-OP3 in Gazebo
 ```
-$ roslaunch robotis_op3_gazebo robotis_world.launch
+$ roslaunch op3_gazebo robotis_world.launch
 ```
 
 ![](/assets/images/platform/op3/op3_gazebo.png)
@@ -70,7 +70,7 @@ $ roslaunch op3_manager op3_gazebo.launch
 
 
 [Gazebo Tutorials]: http://gazebosim.org/tutorials?cat=connect_ros
-[ROBOTIS OP3 Common]: /docs/en/platform/op3/robotis_ros_packages/#robotis-op3-common
+[ROBOTIS OP3 Common]: /docs/en/platform/op3/robotis_ros_packages/#op3-common
 [op3_manager]: /docs/en/platform/op3/robotis_ros_packages/#op3-manager
 [OP3 Tutorials]: /docs/en/platform/op3/tutorials/#tutorials
 [Controller File]: /docs/en/popup/position_controller.yaml/
