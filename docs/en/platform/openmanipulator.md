@@ -13,6 +13,8 @@ sidebar:
 
 # [Introduction](#introduction)
 
+![](/assets/images/platform/openmanipulator/OpenManipulator.png)
+
 ![](/assets/images/platform/openmanipulator/OpenManipulator_Introduction.jpg)
 
 ROS-enabled OpenManipulator is a full open robot platform consisting of **OpenSoftware**​, **OpenHardware** and **OpenCR(Embedded board)​**.
@@ -28,7 +30,7 @@ The OpenManipulator can also be controlled via [OpenCR] (Open-source Control mod
 
 ## Examples
 
-OpenManipulator is composed by [Dynamixel X series](http://en.robotis.com/index/product.php?cate_code=101210) and [3D printing parts](https://cad.onshape.com/documents/9442f03bd8ccac084fda9dd3/w/039e8dbd53e0782540ea5b0d/e/9d3986b1e15cd5dce9557032). Dynamixel has a modular form and adopts daisy chain method. This allows users to easily change and add joints for some torque and degree of freedom they need. Moreover, growing 3D printing technology makes anyone can make anything they want with low cost and rapid time. We suggest some examples of links and safety parts. Taking advantage of these advantages, we are planning a total of seven different types of OpenManipulator.
+OpenManipulator is composed by [Dynamixel X series](http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/) and [3D printing parts](https://cad.onshape.com/documents/9442f03bd8ccac084fda9dd3/w/039e8dbd53e0782540ea5b0d/e/9d3986b1e15cd5dce9557032). Dynamixel has a modular form and adopts daisy chain method. This allows users to easily change and add joints for some torque and degree of freedom they need. Moreover, growing 3D printing technology makes anyone can make anything they want with low cost and rapid time. We suggest some examples of links and safety parts. Taking advantage of these advantages, we are planning a total of seven different types of OpenManipulator.
 
 ## Related Video
 
@@ -36,6 +38,8 @@ OpenManipulator is composed by [Dynamixel X series](http://en.robotis.com/index/
 <p><a href="https://vimeo.com/236147296">ROSCon 2017 Vancouver Day 1: Introducing OpenManipulator; the full open robot platform</a> from <a href="https://vimeo.com/osrfoundation">OSRF</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
 # [OpenManipulator Chain](#openmanipulator-chain)
+
+![](/assets/images/platform/openmanipulator/OpenManipulator_chain.png)
 
 ## [Specification of Chain](#specification-of-chain)
 
@@ -182,6 +186,8 @@ $ cd ~/catkin_ws && catkin_make
 
 # [OpenManipulator SCARA](#openmanipulator-scara)
 
+![](/assets/images/platform/openmanipulator/OpenManipulator_SCARA.png)
+
 ## [Specification Of SCARA](#specification-of-scara)
 
 |                     | Unit    | Chain with XM430-W350                   |
@@ -225,6 +231,8 @@ $ cd ~/catkin_ws && catkin_make
 ![](/assets/images/platform/openmanipulator/OpenManipulator_SCARA_Capture.png)
 
 # [OpenManipulator Link](#openmanipulator-link)
+
+![](/assets/images/platform/openmanipulator/OpenManipulator_Link.png)
 
 ## [Specification of Link](#specification-of-link)
 
