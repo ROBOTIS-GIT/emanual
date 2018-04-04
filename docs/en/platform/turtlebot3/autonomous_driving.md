@@ -20,15 +20,7 @@ sidebar:
 
 We are currently doing several projects related with the keywords: Autonomous Driving and TurtleBot3s
 
-## [TurtleBot3 Auto](#turtlebot3-auto)
-
-In the video, TurtleBot3 gets its eye by attaching a $40 Raspberry Pi Camera and adopts open source from MIT DuckieTown engineering to track the lane.
-
-<iframe width="640" height="360" src="https://www.youtube.com/embed/1V33iEu4ylw" frameborder="0" allowfullscreen></iframe>
-
-and soon (In January, 2018), official autonomous driving package for turtlebot3 will be released.
-
-## [Join in AutoRace](#join-in-autorace)
+## [TurtleBot3 AutoRace](#turtlebot3-autorace)
 
 ![](/assets/images/platform/turtlebot3/autonomous_driving/autorace_rbiz_challenge_2017_robots_1.png)
 
@@ -41,11 +33,13 @@ Get opened source of what is participated in each competitions!
 
 ![](/assets/images/platform/turtlebot3/autonomous_driving/autorace_rbiz_challenge_2017_robots_2.png)
 
-- Details of track map and referee system (with sources provided)
+- Official release of TurtleBot3 AutoRace
 
-  - [track map](https://github.com/ROBOTIS-GIT/autorace_track)
+  - [AutoRace source code](http://wiki.ros.org/turtlebot3_autorace)
 
-  - [referee system](https://github.com/ROBOTIS-GIT/autorace_referee)
+  - [AutoRace track](https://github.com/ROBOTIS-GIT/autorace_track)
+
+  - [AutoRace referee system](https://github.com/ROBOTIS-GIT/autorace_referee)
 
 - Participants sources
 
@@ -67,9 +61,33 @@ Get opened source of what is participated in each competitions!
 | 14    | Cena              | retire                                                             |
 | 15    | TogetherChaChaCha | retire                                                             |
 
+#### [Videos](videos)
+- TurtleBot3 AutoRace Tutorial
+Tutorial 1: Traffic Light
 
-- Videos
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yp7MVZCiaWs" frameborder="0" allowfullscreen></iframe>
 
+Tutorial 2: Lane Tracking
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1RBOfPWdpsc" frameborder="0" allowfullscreen></iframe>
+
+Tutorial 3: Parking
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ValFotgBfC0" frameborder="0" allowfullscreen></iframe>
+
+Tutorial 4: Node Optimization
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YpjHOzx432M" frameborder="0" allowfullscreen></iframe>
+
+Tutorial 5: Level Crossing
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MBDMBq6IDd4" frameborder="0" allowfullscreen></iframe>
+
+Tutorial 6: Tunnel
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ezkwAs1kVkM" frameborder="0" allowfullscreen></iframe>
+
+- TurtleBot3 AutoRace 2017 Teaser
 Official Teaser #1
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9Wnu8If1eS4" frameborder="0" allowfullscreen></iframe>
@@ -82,6 +100,8 @@ Official Final Video
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/DWDBAHHQi_k" frameborder="0" allowfullscreen></iframe>
 
+- TurtleBot3 AutoRace 2017 Challengers
+
 Video - Team RealRiceThief (1st Place)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/szhllE1T_cg" frameborder="0" allowfullscreen></iframe>
@@ -89,3 +109,9 @@ Video - Team RealRiceThief (1st Place)
 Video - Team Sherlotics (Introduction video)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dzjsLFj62HE" frameborder="0" allowfullscreen></iframe>
+
+## [Prequel](#prequel)
+
+TurtleBot3 was tested its driving autonomy under the open source from MIT DuckieTown engineering.
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/1V33iEu4ylw" frameborder="0" allowfullscreen></iframe>
