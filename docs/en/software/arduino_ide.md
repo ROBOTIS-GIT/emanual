@@ -365,14 +365,14 @@ Click Tools → Burn Bootloader to download the bootloader.
 [Dynamixel SDK]: /docs/en/software/dynamixel/dynamixel_sdk/overview/
 [Dynamixel Workbench]: /docs/en/software/dynamixel/dynamixel_workbench/
 
-[LED]: /docs/en/popup/opencm904_ex_led.md
-[Button]: /docs/en/popup/opencm904_ex_button.md
-[Buzzer]: /docs/en/popup/opencm904_ex_buzzer.md
-[PWM]: /docs/en/popup/opencm904_ex_pwm.md
-[EEPROM]: /docs/en/popup/opencm904_ex_eeprom.md
-[DynamixelWorkbench]: /docs/en/popup/opencm904_ex_dynamixelworkbench.md
-[Servo]: /docs/en/popup/opencm904_ex_servo.md
-[SD Card]: /docs/en/popup/opencm904_ex_sdcard.md
-[MS5540S]: /docs/en/popup/opencm904_ex_ms5540s.md
-[MPU6050 DMP]: /docs/en/popup/opencm904_ex_mpu6050dmp.md
-[0.96" OLED LCD]: /docs/en/popup/opencm904_ex_oled.md
+[LED]: /docs/en/popup/opencm904_ex_led/
+[Button]: /docs/en/popup/opencm904_ex_button/
+[Buzzer]: /docs/en/popup/opencm904_ex_buzzer/
+[PWM]: /docs/en/popup/opencm904_ex_pwm/
+[EEPROM]: /docs/en/popup/opencm904_ex_eeprom/
+[DynamixelWorkbench]: /docs/en/popup/opencm904_ex_dynamixelworkbench/
+[Servo]: /docs/en/popup/opencm904_ex_servo/
+[SD Card]: /docs/en/popup/opencm904_ex_sdcard/
+[MS5540S]: /docs/en/popup/opencm904_ex_ms5540s/
+[MPU6050 DMP]: /docs/en/popup/opencm904_ex_mpu6050dmp/
+[0.96" OLED LCD]: /docs/en/popup/opencm904_ex_oled/
