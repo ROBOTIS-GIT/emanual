@@ -61,8 +61,7 @@ Get opened source of what is participated in each competitions!
 | 14    | Cena              | retire                                                             |
 | 15    | TogetherChaChaCha | retire                                                             |
 
-#### [Videos](videos)
-- TurtleBot3 AutoRace Tutorial
+#### [TurtleBot3 AutoRace Tutorial](turtlebot3-autorace-tutorial)
 Tutorial 1: Traffic Light
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/yp7MVZCiaWs" frameborder="0" allowfullscreen></iframe>
@@ -87,7 +86,7 @@ Tutorial 6: Tunnel
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ezkwAs1kVkM" frameborder="0" allowfullscreen></iframe>
 
-- TurtleBot3 AutoRace 2017 Teaser
+#### [TurtleBot3 AutoRace 2017 Teaser](turtlebot3_autorace_2017_teaser)
 Official Teaser #1
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9Wnu8If1eS4" frameborder="0" allowfullscreen></iframe>
@@ -100,7 +99,7 @@ Official Final Video
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/DWDBAHHQi_k" frameborder="0" allowfullscreen></iframe>
 
-- TurtleBot3 AutoRace 2017 Challengers
+#### [TurtleBot3 AutoRace 2017 Challengers](turtlebot3_autorace_2017_challengers)
 
 Video - Team RealRiceThief (1st Place)
 
