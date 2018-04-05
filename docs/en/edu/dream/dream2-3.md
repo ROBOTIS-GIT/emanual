@@ -58,6 +58,7 @@ For more information, assembly and operation, please refer to the ROBOTIS DREAM 
 |11. Sports Car<br />![](/assets/images/edu/dream/dream2/dream2-3_sportscar.jpg)|[Download][ex_11]|
 |12. Imagine<br />![](/assets/images/edu/dream/dream2/dream2-3_imagine.jpg)|-|
 
+[CM-150]: /docs/en/parts/controller/cm-150/
 [Servo Motor]: /docs/en/parts/motor/servo_motor/
 [Remote Control (RC-100B)]: /docs/en/parts/communication/rc-100/
 [How to Download Task code]: /docs/en/faq/download_task_code/
