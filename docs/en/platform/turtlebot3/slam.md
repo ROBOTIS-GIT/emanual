@@ -54,20 +54,14 @@ The SLAM is a well-known feature of TurtleBot from its predecessors. The video h
 {: .notice--info}
 
 **[Remote PC]** Open a new terminal and launch the SLAM file.
-If you have TurtleBot3 Burger,
+
+**Tip :** TB3_MODEL = `burger`, `waffle`, `waffle_pi` 
+{: .notice--info}
 
 ``` bash
-$ export TURTLEBOT3_MODEL=burger
+$ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ roslaunch turtlebot3_slam turtlebot3_slam.launch
 ```
-
-If you have TurtleBot3 Waffle,
-
-``` bash
-$ export TURTLEBOT3_MODEL=waffle
-$ roslaunch turtlebot3_slam turtlebot3_slam.launch
-```
-
 
 **[Remote PC]** Visualize the model in 3D with RViz.
 

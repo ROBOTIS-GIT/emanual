@@ -30,7 +30,7 @@ sidebar:
 | Input Voltage          | 9.0 ~ 12.0V (**Recommended : 11.1V**)                                       |
 | Command Signal         | Digital Packet                                                              |
 | Protocol Type          | Half Duplex Asynchronous Serial Communication<br />(8bit, 1stop, No Parity) |
-| Physical Connection    | TTL Level Multi Drop Bus(Daisy Chain Type Connector)                        |
+| Physical Connection    | TTL Level Multi Drop Bus                        |
 | ID                     | 0 ~ 253                                                                     |
 | Feedback               | Position, Temperature, Load, Input Voltage, etc                             |
 | Material               | Engineering Plastic                                                         |

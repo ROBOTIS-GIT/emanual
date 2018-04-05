@@ -4438,6 +4438,7 @@ Data value is identical to the actual temperature in Celsius. For example, if th
 $reference = $(".archive");
 $(window).resize(function() {
   var newWidth = $reference.width() * 0.90;
+  if (newWidth > 640) { newWidth = 640; }
 
   // Resize all videos according to aspect ratio
   $("iframe").each(

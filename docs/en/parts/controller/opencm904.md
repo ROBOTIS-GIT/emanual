@@ -18,7 +18,7 @@ sidebar:
 > OpenCM 9.04
 
 - OpenCM9.04 Types Package
- 	
+
 |         Item         | OpenCM9.04 A Type | OpenCM9.04 B Type | OpenCM9.04 C Type |
 |:--------------------:|:-----------------:|:-----------------:|:-----------------:|
 |     Power Switch     |         X         |         1         |         1         |
@@ -161,7 +161,7 @@ OpenCM9.04’s block diagram is shown below. OpenCM9.04’s schematic is based o
 The power schematic is designed to cascade through 5V and 3.3V regulators. 5V is supplied to TTL bus and 3.3V is supplied to microcontrollers, 5-pin port and 4-pin communication port.  
 OpenCM9.04 supports USB2.0 FS. Micro-B connector is used to download the program or perform data communication.  
 Pin 11(TX1) & Pin 12(RX1) cannot be used simultaneously because USART Channel 1 is assigned to DYNAMIXEL TTL Bus.  
-USART channel 1 is registered under Dynamixel TTL Bus and cannot be used simultaneously with pin 11(TX1) & 12(RX1). 
+USART channel 1 is registered under Dynamixel TTL Bus and cannot be used simultaneously with pin 11(TX1) & 12(RX1).
 
 ![](/assets/images/parts/controller/opencm904/opencm904_01.png)
 
@@ -173,7 +173,7 @@ USART channel 1 is registered under Dynamixel TTL Bus and cannot be used simulta
 ### [Power Switch](#power-switch)
 Switch used to control the power supplied to the board and DYNAMIXEL on/off. (Note: the board is always powered ON when USB cable is connected.)
 ### [Serial Battery Socket](#serial-battery-socket)
-Connects two LBS-04 Lithium-ion battery. 
+Connects two LBS-04 Lithium-ion battery.
 
 `Caution` Do NOT charge the battery while its connected to the board because the user will short the circuit. Be sure to disconnect from the board when charging the battery.
 {: .notice--warning}
@@ -182,7 +182,7 @@ Connects two LBS-04 Lithium-ion battery.
 Port for daisy chaining Dynamixels that use 3-pin cables (Dynamixel TTL Bus).
 
 ### [Communication Port](#communication-port)
-Used from wired/wireless communication using peripheral devices (i.e. BT-210, BT-110A, ZIG-110A, LN-101, etc). OpenCM9.04’s 4-pin communication port uses Serial2(USART2). 
+Used from wired/wireless communication using peripheral devices (i.e. BT-210, BT-110A, ZIG-110A, LN-101, etc). OpenCM9.04’s 4-pin communication port uses Serial2(USART2).
 
 ![](/assets/images/parts/controller/opencm904/opencm904_03.png)
 
@@ -206,7 +206,7 @@ Used from wired/wireless communication using peripheral devices (i.e. BT-210, BT
 
 ### [User Button](#user-button)
 A button that can be controlled/programmed by the user. Can be used as pin 23 or BOARD_BUTTON_PIN. It can be initialized in setup() as pinMode(23, INPUT_PULLDOWN).  
-If OpenCM9.04 does not download the program, connect the USB cable while holding down the “User Button”. Status LED will stay lit and the download will be initiated. 
+If OpenCM9.04 does not download the program, connect the USB cable while holding down the “User Button”. Status LED will stay lit and the download will be initiated.
 
 ![](/assets/images/parts/controller/opencm904/opencm904_08.png)
 
@@ -218,7 +218,7 @@ Analog Reference voltage can be modified. Please refer to [I/O header section](#
 ### [Micro-B USB](#micro-b-usb)
 Used to download programs onto OpenCM9.04 and used to communicate with other devices via USB while simultaneously supplying 5V to the board.  
 Upon connecting the battery, 5V power from USB is automatically disconnected and power is supplied from the battery.  
-If excessive current is drawn, internal fuse cuts off the current drawn from the 5V USB connection to protect the user’s PC from damage. 
+If excessive current is drawn, internal fuse cuts off the current drawn from the 5V USB connection to protect the user’s PC from damage.
 
 ![](/assets/images/parts/controller/opencm904/opencm904_09.png)
 
@@ -234,14 +234,14 @@ Imitates the CPU to reset.
 
 ### [JTAG/SWD 4 PIN](#jtagswd-4-pin)
 Used to connect ST-LINK or other In-Circuit Debugger/Programmer.  
-JTAG/SWD 4-pin port can be used for various developments by advanced users. ST-LINK connection example is shown below. 
+JTAG/SWD 4-pin port can be used for various developments by advanced users. ST-LINK connection example is shown below.
 
 ![](/assets/images/parts/controller/opencm904/opencm904_11.png)
 
 > Example: ST-LINK and OpenCM9.04 connection
 
 ### [5-pin Port](#5-pin-port)
-Used to connect ROBOTIS 5-pin devices (modules). 
+Used to connect ROBOTIS 5-pin devices (modules).
 
 ![](/assets/images/parts/controller/opencm904/opencm904_12.png)
 
@@ -331,12 +331,12 @@ All of OpenCM9.04’s GPIO pins can internally “pull-up” or “pull-down” 
 - **X** : Dynamixel TTL Bus’s TX pin.
 - **L** : Dynamixel TTL Bus’s RX pin.
 - **D16** : Digital I/O Pin.
-- **D17** : Digital I/O Pin. 
-- **D18** : Digital I/O Pin. 
+- **D17** : Digital I/O Pin.
+- **D18** : Digital I/O Pin.
 - **D19** : Digital I/O Pin. Can be used for SPI channel 2’s SCK clock pin.
 - **D20** : Digital I/O Pin. Can be used for SPI channel 2’s MOSI pin.
 - **D21** : Digital I/O Pin. Can be used for SPI channel 2’s MOSI pin.
-- **D22** : Digital I/O Pin. Maximum output current is 3mA and maximum toggle speed is 2Mhz. 
+- **D22** : Digital I/O Pin. Maximum output current is 3mA and maximum toggle speed is 2Mhz.
 - **D23** : Digital I/O Pin. It’s connected to User Button. If the power is supplied while User Button is pressed, the board initiates Emergency Recovery (Download) Mode. Maximum output current is 3mA and maximum toggle speed is 2Mhz.
 - **D24** : Digital I/O Pin. Can be used as I2C channel 2’s SCL pin or USART3(Serial3)’s TX pin.
 - **D25** : Digital I/O Pin. Can be used as I2C channel 2’s SDA pin or USART3(Serial3)’s RX pin.
@@ -428,7 +428,7 @@ extern const Pin2PortMapArray g_Pin2PortMapArray[]=
 
 OpenCM board can be powered using 3 types of voltage input:
 1. LBS-40 battery socket
-2. Power supplied via +- header pins 
+2. Power supplied via +- header pins
 3. Micro-B USB cable
 
 ![](/assets/images/parts/controller/opencm904/opencm904_17.png)
@@ -443,7 +443,7 @@ We recommend using 2 LBS-40 batteries when operating the XL-320.
 
 > LBS-40 battery
 
-We recommend using +- pin to power Dynamixels other than XL-320. 
+We recommend using +- pin to power Dynamixels other than XL-320.
 
 ![](/assets/images/parts/controller/opencm904/opencm904_19.png)
 
@@ -453,20 +453,20 @@ As displayed in the image below, connect towards the end of both +,- and it can 
 (If you see the back side of OpenCM9.04, the +,- in the center is connected as displayed in image A. So, please connect as in the image below)
 
 ![](/assets/images/parts/controller/opencm904/opencm904_20.jpg)
-    
+
 > Picture A
 
 ![](/assets/images/parts/controller/opencm904/opencm904_21.jpg)
 
 > Example : Power Connection
- 
+
 - `Example` Power supply cable ([Link](http://www.robotsource.org/bs/bd.php?bt=forum_CM9DeveloperWorld&bt_id=583))
- 
+
 Avoid connecting power to the battery socket and +- pin (shown below). Do not connect an
 incorrect battery to the battery socket. Only connect LBS-40 onto the battery socket.
- 
+
 ![](/assets/images/parts/controller/opencm904/opencm904_22.jpg)
- 
+
 > CAUTION: Remove either the battery connector or +-header-pin power
 
 ![](/assets/images/parts/controller/opencm904/opencm904_23.jpg)
@@ -546,7 +546,7 @@ sudo apt-get install libncurses5-dev:i386
 
 #### Install the Arduino IDE
 
-Download the latest version of Arduino IDE from the official arduino homepage, and install it. Currently, the OpenCR will be on service in the version 1.6.4 or later.
+Download the latest version of Arduino IDE from the official arduino homepage, and install it. Currently, the OpenCM9.04 will be on service in the version 1.6.4 or later.
 
 [https://www.arduino.cc/en/Main/Software](https://www.arduino.cc/en/Main/Software)
 
@@ -713,7 +713,7 @@ The value of COM1 may be different depending on the environment connected to the
 
 It is a built-in LED test on the OpenCM9.04 board.
 
-### Test 
+### Test
 There are 1 LED available in OpenCM9.04, The LED connected to base 14 of Arduino.  
 When the built-in LED pin is output as High / Low, the LED turns on / off.
 
@@ -787,7 +787,7 @@ Buzzer can be driven using Arduino tone API. Buzzer-enabled pins are available o
 
 
 ### Arduino code
-The following example shows a change to the Buzzer pin in the basic tone example provided by Arduino, which uses the Buzzer to play the melody. 
+The following example shows a change to the Buzzer pin in the basic tone example provided by Arduino, which uses the Buzzer to play the melody.
 
 ```c++
 #include "pitches.h"
@@ -905,7 +905,7 @@ void loop() {
     Serial.print("\t");
     Serial.print(EEPROM.read(2));
     Serial.println("\t");
-   
+
     tTime = millis();
   }
 
@@ -950,7 +950,7 @@ class DynamixelWorkbench
   ~DynamixelWorkbench();
 
   bool begin(const char* device_name = "/dev/ttyUSB0", uint32_t baud_rate = 57600);
- 
+
   bool scan(uint8_t *get_id, uint8_t *get_id_num = 0, uint8_t range = 200);
   bool ping(uint8_t id, uint16_t *get_model_number = 0);
 
@@ -1044,10 +1044,10 @@ After get Dynamixels, you can check ID and Baudrate of its.
 
 DynamixelWorkbench dxl_wb;
 
-void setup() 
+void setup()
 {
   Serial.begin(57600);
-  while(!Serial); // Open a Serial Monitor 
+  while(!Serial); // Open a Serial Monitor
 
   uint8_t scanned_id[16] = {0, };
   uint8_t dxl_cnt = 0;
@@ -1072,7 +1072,7 @@ void setup()
   Serial.println("End");
 }
 
-void loop() 
+void loop()
 {
 
 }
@@ -1116,7 +1116,7 @@ If Dynamixel is set correctly, **goalPosition** function make it move to positio
 
 DynamixelWorkbench dxl_wb;
 
-void setup() 
+void setup()
 {
   Serial.begin(57600);
   while(!Serial); // Open a Serial Monitor
@@ -1127,10 +1127,10 @@ void setup()
   dxl_wb.jointMode(DXL_ID);
 }
 
-void loop() 
+void loop()
 {
   dxl_wb.goalPosition(DXL_ID, 0);
-  
+
   delay(2000);
 
   dxl_wb.goalPosition(DXL_ID, 2000);
@@ -1177,7 +1177,7 @@ If Dynamixel is set correctly, **goalSpeed** function make it turn to position.
 
 DynamixelWorkbench dxl_wb;
 
-void setup() 
+void setup()
 {
   Serial.begin(57600);
   while(!Serial); // Open a Serial Monitor
@@ -1188,10 +1188,10 @@ void setup()
   dxl_wb.wheelMode(DXL_ID);
 }
 
-void loop() 
+void loop()
 {
   dxl_wb.goalSpeed(DXL_ID, 300);
-  
+
   delay(3000);
 
   dxl_wb.goalSpeed(DXL_ID, -300);
@@ -1202,10 +1202,10 @@ void loop()
 
 ## [Servo](#servo)
 
-- Servo library is used to drive RC servo for RC. 
-- RC Servo Library uses OpenCM9.04 hardware timer and can be used by connecting to PWM output pin. 
-- A2 to D14 pins are PWM output pins. 
-- Be careful when using Servo library because other functions using hardware timer can not be used at the same time. 
+- Servo library is used to drive RC servo for RC.
+- RC Servo Library uses OpenCM9.04 hardware timer and can be used by connecting to PWM output pin.
+- A2 to D14 pins are PWM output pins.
+- Be careful when using Servo library because other functions using hardware timer can not be used at the same time.
 - See the list below for the hardware and channels used.
 
 ```c++
@@ -1256,7 +1256,8 @@ The Arduino IDE includes an SD card control library using the SPI library. OpenC
 ### Connection
 
 - SD Card Connection(SPI port)
-![](/assets/images/parts/controller/opencm904/sdcard_bb.png)
+
+  ![](/assets/images/parts/controller/opencm904/sdcard_bb.png)
 
 ### Arduino code
 The cardInfo example from the SD library and displays the file list after initializing the SD card. OpenCM9.04 SPI1 is used, and CS pin is used as No. 4.
@@ -1353,7 +1354,7 @@ void loop(void) {
 
 ## [MS5540S](#ms5540s)
 
-The MS5540S is a sensor that can measure water pressure and can calculate the depth in water by measuring the water pressure. SPI communication is used. 
+The MS5540S is a sensor that can measure water pressure and can calculate the depth in water by measuring the water pressure. SPI communication is used.
 
 ### Connection
 
@@ -1388,7 +1389,7 @@ void setup() {
 void loop() {
   // put your main code here, to run repeatedly:
   static uint32_t pre_time[2];
-   
+
   if( (millis() - pre_time[0]) >= 10 )
   {
     pre_time[0] = millis();
@@ -1409,7 +1410,7 @@ void loop() {
 // MS5540S
 ////////////////////////////////////////////
 
-#define FRESH_WATER  1000.0 // [kg/m^3] 
+#define FRESH_WATER  1000.0 // [kg/m^3]
 #define SEA_WATER    1030.0 // [kg/m^3]
 
 
@@ -1426,7 +1427,7 @@ float x = sin(lat_rad)*sin(lat_rad);
 
 /*---------------------------------------------------------------------------
      TITLE   : ms5540s_reset
-     WORK    : 
+     WORK    :
      ARG     : void
      RET     : void
 ---------------------------------------------------------------------------*/
@@ -1440,7 +1441,7 @@ void ms5540s_reset() //this function keeps the sketch a little shorter
 
 /*---------------------------------------------------------------------------
      TITLE   : ms5540s_setup
-     WORK    : 
+     WORK    :
      ARG     : void
      RET     : void
 ---------------------------------------------------------------------------*/
@@ -1455,7 +1456,7 @@ void ms5540s_setup() {
 
 /*---------------------------------------------------------------------------
      TITLE   : ms5540s_loop
-     WORK    : 
+     WORK    :
      ARG     : void
      RET     : void
 ---------------------------------------------------------------------------*/
@@ -1559,7 +1560,7 @@ void ms5540s_loop()
       c5 = (word2 >> 6) | ((word1 & 0x1) << 10);
       c6 = (word2 & 0x3F);
       ms5540s_reset();//resets the sensor
-              
+
       //Temperature:
       SPI.transfer(0x0F); //send first byte of command to get temperature value
       SPI.transfer(0x20); //send second byte of command to get temperature value
@@ -1582,7 +1583,7 @@ void ms5540s_loop()
       tempLSB = SPI.transfer(0x00); //send dummy byte to read second byte of value
       D2 = tempMSB | tempLSB; //combine first and second byte of value
       ms5540s_reset();//resets the sensor
-      
+
      //Pressure:
       SPI.transfer(0x0F); //send first byte of command to get pressure value
       SPI.transfer(0x40); //send second byte of command to get pressure value
@@ -1604,10 +1605,10 @@ void ms5540s_loop()
       presMSB = presMSB << 8; //shift first byte
       presLSB = SPI.transfer(0x00); //send dummy byte to read second byte of value
       D1 = presMSB | presLSB;   
-          
+
       UT1 = (c5 * 8) + 20224;   //calculate calibration temperature
       //calculate actual temperature
-      dT =(D2 - UT1); 
+      dT =(D2 - UT1);
       TEMP = 200 + ((dT * (c6 + 50))/1024);
       //TEMP = 20 + (dT * c6);
       //calculate temperature compensated pressure
@@ -1631,10 +1632,10 @@ void ms5540s_loop()
       //if(PCOMP2 < 1013.25) PCOMP2 = 0;
 
       TEMPREAL = TEMP/10;
-      
+
       dT2 = dT - ((dT >> 7 * dT >> 7) >> 3);
       TEMPCOMP = (200 + (dT2*(c6+100) >>11))/10;
-      
+
       if(water_type == FRESH_WATER)
       {
         DEPTH = PCOMP2 * 1.019716 / 1000;   // 1000mb = bar
@@ -1695,20 +1696,20 @@ Enable the DMP function of MPU6050 and output Roll / Pitch / Yaw value in serial
 
 MPU6050 mpu;
 
-void setup() 
+void setup()
 {
   Serial.begin(115200);
-  
+
   dmpDataReady();
   dmp_setup();
 }
 
-void loop() 
+void loop()
 {
   static uint32_t tTime[4];
-  
+
   dmp_loop();
-      
+
   if( (millis() - tTime[2]) >= 50 )
   {
     tTime[2] = millis();
@@ -1726,7 +1727,7 @@ void loop()
 /////////////////////////////////////////
 /*---------------------------------------------------------------------------
      TITLE   : dmpDataReady
-     WORK    : 
+     WORK    :
      ARG     : void
      RET     : void
 ---------------------------------------------------------------------------*/
@@ -1736,13 +1737,13 @@ void dmpDataReady() {
 
 /*---------------------------------------------------------------------------
      TITLE   : dmp_setup
-     WORK    : 
+     WORK    :
      ARG     : void
      RET     : void
 ---------------------------------------------------------------------------*/
 void dmp_setup() {
     I2Cdev::begin(400);
- 
+
     // initialize device
     Serial.println(F("Initializing I2C devices..."));
     mpu.initialize();
@@ -1798,7 +1799,7 @@ void dmp_setup() {
 
 /*---------------------------------------------------------------------------
      TITLE   : dmp_loop
-     WORK    : 
+     WORK    :
      ARG     : void
      RET     : void
 ---------------------------------------------------------------------------*/
@@ -1829,11 +1830,11 @@ void dmp_loop() {
 
         // read a packet from FIFO
         mpu.getFIFOBytes(fifoBuffer, packetSize);
-        
+
         // track FIFO count here in case there is > 1 packet available
         // (this lets us immediately read more without waiting for an interrupt)
         fifoCount -= packetSize;
-    
+
         // display Euler angles in degrees
         mpu.dmpGetQuaternion(&q, fifoBuffer);
         mpu.dmpGetGravity(&gravity, &q);
@@ -1883,8 +1884,8 @@ This is an example for our Monochrome OLEDs based on SSD1306 drivers
 This example is for a 128x64 size display using I2C to communicate
 3 pins are required to interface (2 I2C and one reset)
 
-Adafruit invests time and resources providing this open source code, 
-please support Adafruit and open-source hardware by purchasing 
+Adafruit invests time and resources providing this open source code,
+please support Adafruit and open-source hardware by purchasing
 products from Adafruit!
 
 Written by Limor Fried/Ladyada  for Adafruit Industries.  
@@ -1905,8 +1906,8 @@ Adafruit_SSD1306 display(-1);
 #define YPOS 1
 #define DELTAY 2
 
-#define LOGO16_GLCD_HEIGHT 16 
-#define LOGO16_GLCD_WIDTH  16 
+#define LOGO16_GLCD_HEIGHT 16
+#define LOGO16_GLCD_WIDTH  16
 static const unsigned char PROGMEM logo16_glcd_bmp[] =
 { B00000000, B11000000,
   B00000001, B11000000,
@@ -1935,7 +1936,7 @@ void setup()   {
   // by default, we'll generate the high voltage from the 3.3v line internally! (neat!)
   display.begin(SSD1306_SWITCHCAPVCC, 0x3C);  // initialize with the I2C addr 0x3D (for the 128x64)
   // init done
-  
+
   // Show image buffer on the display hardware.
   // Since the buffer is intialized with an Adafruit splashscreen
   // internally, this will display the splashscreen.
@@ -1995,7 +1996,7 @@ void setup()   {
   testdrawtriangle();
   delay(2000);
   display.clearDisplay();
-   
+
   testfilltriangle();
   delay(2000);
   display.clearDisplay();
@@ -2032,9 +2033,9 @@ void setup()   {
 
   // invert the display
   display.invertDisplay(true);
-  delay(1000); 
+  delay(1000);
   display.invertDisplay(false);
-  delay(1000); 
+  delay(1000);
   display.clearDisplay();
 
   // draw a bitmap icon and 'animate' movement
@@ -2042,18 +2043,18 @@ void setup()   {
 }
 
 void loop() {
-  
+
 }
 
 void testdrawbitmap(const uint8_t *bitmap, uint8_t w, uint8_t h) {
   uint8_t icons[NUMFLAKES][3];
- 
+
   // initialize
   for (uint8_t f=0; f< NUMFLAKES; f++) {
     icons[f][XPOS] = random(display.width());
     icons[f][YPOS] = 0;
     icons[f][DELTAY] = random(5) + 1;
-    
+
     Serial.print("x: ");
     Serial.print(icons[f][XPOS], DEC);
     Serial.print(" y: ");
@@ -2069,7 +2070,7 @@ void testdrawbitmap(const uint8_t *bitmap, uint8_t w, uint8_t h) {
     }
     display.display();
     delay(200);
-    
+
     // then erase it + move it
     for (uint8_t f=0; f< NUMFLAKES; f++) {
       display.drawBitmap(icons[f][XPOS], icons[f][YPOS], bitmap, w, h, BLACK);
@@ -2160,7 +2161,7 @@ void testfillroundrect(void) {
     delay(1);
   }
 }
-   
+
 void testdrawrect(void) {
   for (int16_t i=0; i<display.height()/2; i+=2) {
     display.drawRect(i, i, display.width()-2*i, display.height()-2*i, WHITE);
@@ -2181,7 +2182,7 @@ void testdrawline() {
     delay(1);
   }
   delay(250);
-  
+
   display.clearDisplay();
   for (int16_t i=0; i<display.width(); i+=4) {
     display.drawLine(0, display.height()-1, i, 0, WHITE);
@@ -2194,7 +2195,7 @@ void testdrawline() {
     delay(1);
   }
   delay(250);
-  
+
   display.clearDisplay();
   for (int16_t i=display.width()-1; i>=0; i-=4) {
     display.drawLine(display.width()-1, display.height()-1, i, 0, WHITE);
@@ -2215,7 +2216,7 @@ void testdrawline() {
     delay(1);
   }
   for (int16_t i=0; i<display.width(); i+=4) {
-    display.drawLine(display.width()-1, 0, i, display.height()-1, WHITE); 
+    display.drawLine(display.width()-1, 0, i, display.height()-1, WHITE);
     display.display();
     delay(1);
   }
@@ -2230,7 +2231,7 @@ void testscrolltext(void) {
   display.println("scroll");
   display.display();
   delay(1);
- 
+
   display.startscrollright(0x00, 0x0F);
   delay(2000);
   display.stopscroll();
@@ -2253,8 +2254,8 @@ void testscrolltext(void) {
 
 # [Downloads](#downloads)
 
-- `Download ZIP` [OpenCM 9.04 Manual](http://www.robotis.com/download/doc/controller/OpenCM9.04_en/OpenCM9.04_manual_en.zip)
-- `Download PDF` [PCB Schematic](http://support.robotis.com/en/baggage_files/opencm/opencm904_rev_10_final_schematic.pdf)
+- `Download ZIP` [OpenCM 9.04 Manual]
+- `Download PDF` [PCB Schematic]
 - `Download PDF` [Top Gerber]
 - `Download PDF` [Bottom Gerber]
 - `Download PDF` [Gerber]
@@ -2267,11 +2268,11 @@ void testscrolltext(void) {
 
 - If you download the wrong firmware and it does not work, you can force download using recovery mode. Once you have downloaded the normal example, it will be restored and you will be able to download it again..
 
-- While holding down the User Button of OpenCM9.04, connect directly to PC with USB cable. Remove all other power sources and connect only to USB while holding down the User Button. 
+- While holding down the User Button of OpenCM9.04, connect directly to PC with USB cable. Remove all other power sources and connect only to USB while holding down the User Button.
 
   ![](/assets/images/parts/controller/opencm904/user_button.jpg)
 
-- If you enter recovery mode as shown below, the green LED remains on. When the download is completed normally, the board is reset and the LED is turned off. 
+- If you enter recovery mode as shown below, the green LED remains on. When the download is completed normally, the board is reset and the LED is turned off.
 
   ![](/assets/images/parts/controller/opencm904/recovery_led.jpg)
 
@@ -2285,9 +2286,9 @@ void testscrolltext(void) {
 - To install the USB driver, connect the PC and OpenCM9.04 via the USB cable as shown below.
 - However, if you connect with multiple USB devices on the USB hub, avoid as much as possible and recommend a direct connection to the PC as possible. Sometimes the download fails if there is not enough current on the hub.
 
-![](/assets/images/parts/controller/opencm904/connect_pc.png)
+  ![](/assets/images/parts/controller/opencm904/connect_pc.png)
 
-### Install Driver 
+### Install Driver
 
 - For Window 8 or 10, go to "PC settings -> Update and recovery -> Recovery -> Advanced startup -> Troubleshoot -> Advanced options -> Startup Settings -> Restart -> Select 7) Disable driver signature enforcement, and then restart" and then install using Run as administrator.
 - In the previous step, connecting the OpenCM board to the PC will make a device called “ROBOTIS Virtual COM Port” appear in the Device Manager.
@@ -2331,6 +2332,8 @@ void testscrolltext(void) {
 [BT-210]: /docs/en/parts/communication/bt-210/
 [Automatic Turn-off]: /docs/en/software/rplus1/task/programming_02/#powersave-timer
 [Firmware Update]: /docs/en/software/rplus1/manager/#firmware-update
+[OpenCM 9.04 Manual]: http://www.robotis.com/download/doc/controller/OpenCM9.04_en/OpenCM9.04_manual_en.zip
+[PCB Schematic]: http://support.robotis.com/en/baggage_files/opencm/opencm904_rev_10_final_schematic.pdf
 [Top Gerber]: http://support.robotis.com/en/baggage_files/opencm/opencm9.04__rev_1.0(131009)-top.pdf
 [Bottom Gerber]: http://support.robotis.com/en/baggage_files/opencm/opencm9.04__rev_1.0(131009)-bottom.pdf
 [Gerber]: http://support.robotis.com/en/baggage_files/opencm/opencm9.04__rev_1.0(131009)-gerber.pdf

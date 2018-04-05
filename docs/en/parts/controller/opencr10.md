@@ -137,7 +137,7 @@ When you run MAVLink Generator, a GUI screen will appear, select the XML file al
 
 The final generated communication code can be seen in the link below.
 
-[https://github.com/ROBOTIS-GIT/OpenCR/tree/master/arduino/opencr_bootloader/common/msg/mavlink](https://github.com/ROBOTIS-GIT/OpenCR/tree/master/arduino/opencr_bootloader/common/msg/mavlink)
+[https://github.com/ROBOTIS-GIT/OpenCR/tree/master/arduino/opencr_develop/opencr_bootloader/common/msg/mavlink](https://github.com/ROBOTIS-GIT/OpenCR/tree/master/arduino/opencr_develop/opencr_bootloader/common/msg/mavlink)
 
 The commands for the boot loader to download and execute the firmware through the MavLink protocol are as follows.
 
@@ -1265,7 +1265,7 @@ void loop()
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/z2AbTL7R6rg" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
-### [Capacitive Sensor](#capacitive-sensor)
+### [Capacitive Touch Sensor](#capacitive-touch-sensor)
 It is capacitive touch sensor test on the OpenCR board.
 
 ![](/assets/images/parts/controller/opencr10/cap_sensor.jpg)
@@ -1436,9 +1436,9 @@ void loop()
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7fOIeFTg7bY" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
-### [Workbench Examples](#workbench-examples)
+## [Dynamixel Workbench](#dynamixel-workbench)
 
-#### [Find Dynamixel](#find-dynamixel)
+### [Find Dynamixel](#find-dynamixel)
 
 When you get a Dynamixel first, you need to know what ID and Baud rate is.
 This example find out ID and Baud rate of connected Dynamixels.
@@ -1510,7 +1510,7 @@ void loop()
 }
 ```
 
-#### [Position](#position)
+### [Position](#position)
 
 This example shows position control using Dynamixel. You need to set parameters of BAUDRATE and ID.  
 **begin** function set an portHandler and packetHandler. **ping** function get an item of connected Dynamixel.  
@@ -1571,7 +1571,7 @@ void loop()
 }
 ```
 
-#### [Speed](#speed)
+### [Speed](#speed)
 
 This example shows velocity control using Dynamixel. You need to set parameters of BAUDRATE and ID.  
 **begin** function set an portHandler and packetHandler. **ping** function get an item of connected Dynamixel.  

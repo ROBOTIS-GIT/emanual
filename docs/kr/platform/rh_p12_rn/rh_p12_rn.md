@@ -28,9 +28,9 @@ sidebar:
 | 통신 속도           | 9,600 bps ~ 10.5 Mbps                                                                          |
 | 제어 알고리즘       | PID Control                                                                                    |
 | 정밀도              | 0.088&deg;                                                                                     |
-| 동작 모드           | 전류(토크)제어 모드<br />전류기반 위치제어 모드                                                |
-| 무게                | 510g                                                                                           |
-| 스트로크            | 0 ~ 108mm                                                                                      |
+| 동작 모드           | 전류제어 모드<br />전류기반 위치제어 모드                                                |
+| 무게                | 500g                                                                                           |
+| 스트로크            | 0 ~ 109mm                                                                                      |
 | 감속비              | 1295.7 : 1                                                                                     |
 | 최대 파지력         | 170N                                                                                           |
 | 권장 가반하중       | 5kg                                                                                            |
@@ -63,7 +63,7 @@ sidebar:
 |   22    |       2        | [Max Voltage Limit](#max-voltage-limit)     | Maximum Input Voltage Limit               |   RW   |        400         |
 |   24    |       2        | [Min Voltage Limit](#min-voltage-limit)     | Minimum Input Voltage Limit               |   RW   |        150         |
 |   26    |       4        | [Acceleration Limit](#acceleration-limit)   | Maximum Accleration Limit                 |   RW   |        255         |
-|   30    |       2        | [Torque Limit](#torque-limit)               | Maximum Torque Limit                      |   RW   |        820         |
+|   30    |       2        | [Current Limit](#current-limit)             | Maximum Current Limit                     |   RW   |        820         |
 |   32    |       4        | [Velocity Limit](#velocity-limit)           | Maximum Velocity Limit                    |   RW   |        100         |
 |   36    |       4        | [Max Position Limit](#max-position-limit)   | Maximum Position Limit                    |   RW   |        1150        |
 |   40    |       4        | [Min Position Limit](#min-position-limit)   | Minimum Position Limit                    |   RW   |         0          |
@@ -92,7 +92,7 @@ sidebar:
 |   594   |       2        | [Position P Gain](#position-p-gain)               | P Gain of Position             |   RW   |         -          |
 |   596   |       4        | [Goal Position](#goal-position)                   | Target Position Value          |   RW   |         -          |
 |   600   |       4        | [Goal Velocity](#goal-velocity)                   | Target Velocity Value          |   RW   |         0          |
-|   604   |       2        | [Goal Torque](#goal-torque)                       | Target Current Value           |   RW   |         0          |
+|   604   |       2        | [Goal Current](#goal-current)                     | Target Current Value           |   RW   |         0          |
 |   606   |       4        | [Goal Acceleration](#goal-acceleration)           | Target Acceleration Value      |   RW   |         0          |
 |   610   |       1        | [Moving](#moving)                                 | Movement Status                |   R    |         -          |
 |   611   |       4        | [Present Position](#present-position)             | Present Position Value         |   R    |         -          |
@@ -143,9 +143,9 @@ RH-P12-RN의 펌웨어 버전입니다.
 
 | Value      | Operating Mode         | Description                                           |
 |:-----------|:-----------------------|:------------------------------------------------------|
-| 0          | 토크제어 모드          | 속도와 위치는 제어하지 않고, 전류(토크)를 제어합니다. |
+| 0          | 전류제어 모드            | 속도와 위치는 제어하지 않고, 전류를 제어합니다.            |
 | 1 ~ 4      | Reserved               | -                                                     |
-| 5(Default) | 전류기반 위치제어 모드 | 위치와 전류(토크)를 제어합니다.                       |
+| 5(Default) | 전류기반 위치제어 모드    | 위치와 전류를 제어합니다.                                |
 
 ### <a name="moving-threshold"></a>**[Moving Threshold(17)](#moving-threshold17)**
 {% include kr/dxl/control_table_17_movingthreshold_pro.md %}
@@ -166,9 +166,9 @@ Goal Acceleration(606)은 전류 제어 모드를 제외한 모든 제어 모드
 |:---------------------------:|:-----------------:|
 | 214.577 Rev/min<sup>2</sup> | 0 ~ 2,147,483,647 |
 
-### <a name="pwm-limit"></a>**[Torque Limit(30)](#torque-limit30)**
-목표 토크 값의 한계 값입니다.  
-Goal Torque(604)은 이 값보다 큰 값을 쓸 수 없습니다.  
+### <a name="current-limit"></a>**[Current Limit(30)](#current-limit30)**
+목표 전류 값의 한계 값입니다.  
+Goal Current(604)은 이 값보다 큰 값을 쓸 수 없습니다.  
 이 값보다 큰 값을 쓰려 하면, 값이 써지지 않고, Status packet의 error 에 Limit error bit가 set 됩니다.
 
 |     단위      | 값의 범위 |
@@ -180,7 +180,7 @@ Goal Torque(604)은 이 값보다 큰 값을 쓸 수 없습니다.
 Goal Velocity(600)은 이 값보다 큰 값을 쓸 수 없습니다.  
 이 값보다 큰 값을 쓰려 하면, 값이 써지지 않고, Status packet의 error 에 Limit error bit가 set 됩니다.
 
-|   단위    |     값의 범위     |
+|   단위    |     값의 범위      |
 |:---------:|:-----------------:|
 | 0.114 RPM | 0 ~ 2,147,483,647 |
 
@@ -215,11 +215,11 @@ External Port 의 용도는 External Port Mode (44, 45, 46, 47) 에 의해서 �
 
 {% capture control_table_externalportdata_warning %}
 `경고` External Port 는 전기적으로 절연되어 있지 않기 때문에, 전기적 사양을 준수하시기 바랍니다.  
-전기적 사양을 초과하거나 신호 연결에 문제가 있는 경우, Dynamixel이 손상될 수 있으므로 각별한 주의가 요구됩니다. External Port를 사용할 때 다음 사항들을 주의하시기 바랍니다. 
-- 정전기(ESD), 단락(Short circuit), 단선(Open circuit) 등에 의한 전기적인 충격이 발생하지 않도록 주의해 주십시오. 
-- External Port 커넥터로 물이나 먼지가 유입되지 않도록 주의해 주십시오. 
-- External Port를 사용하지 않을 때는 케이블을 제거해 주십시오. 
-- External Port에 신호를 연결/해제 할 때는 전원이 꺼진 상태에서 진행해 주십시오. 
+전기적 사양을 초과하거나 신호 연결에 문제가 있는 경우, Dynamixel이 손상될 수 있으므로 각별한 주의가 요구됩니다. External Port를 사용할 때 다음 사항들을 주의하시기 바랍니다.
+- 정전기(ESD), 단락(Short circuit), 단선(Open circuit) 등에 의한 전기적인 충격이 발생하지 않도록 주의해 주십시오.
+- External Port 커넥터로 물이나 먼지가 유입되지 않도록 주의해 주십시오.
+- External Port를 사용하지 않을 때는 케이블을 제거해 주십시오.
+- External Port에 신호를 연결/해제 할 때는 전원이 꺼진 상태에서 진행해 주십시오.
 - External Port 의 GNDext 핀과 Dynamixel 커넥터의 GND핀을 직접 연결하지 마십시오. 전원 노이즈가 External Port로 유입될 수 있습니다.
 {% endcapture %}
 
@@ -255,8 +255,8 @@ External Port 의 용도는 External Port Mode (44, 45, 46, 47) 에 의해서 �
 |Bit 0|Input Voltage Error|인가된 전압이 설정된 동작 전압 범위를 벗어났을 경우|
 
 {% capture rh_p12_rn_01 %}
-`Note` Shutdown 이 발생하면 다음과 같은 방법으로 다이나믹셀을 REBOOT 시킬 수 있습니다. 
-1. H/W REBOOT : 전원을 껐다 켜는 방법 
+`Note` Shutdown 이 발생하면 다음과 같은 방법으로 다이나믹셀을 REBOOT 시킬 수 있습니다.
+1. H/W REBOOT : 전원을 껐다 켜는 방법
 2. S/W REBOOT : REBOOT Instruction Packet 을 전송하는 방법 (자세한 사항은 e-Manual의 [프로토콜]을 참고해 주세요)
 {% endcapture %}
 
@@ -283,7 +283,7 @@ K<sub>P</sub>D, K<sub>P</sub>I, K<sub>P</sub>P 는 각각 Position D Gain, Posit
 1. 사용자의 위치값 변경 요청이Goal Position(596)에 등록됩니다.
 2. Goal Position(596)은 Goal Velocity(600)와 Goal Acceleration(606)에 의해서 목표 위치 궤적과 목표 속도 궤적으로 변경됩니다. (Profile)
 3. PID 제어기는 목표 궤적을 기반으로 목표 전류(Target Current)를 계산합니다.
-4. Goal Torque(605)는 계산된 목표 전류(Target Current)를 제한하여 최종 목표 전류를 결정합니다.
+4. Goal Current(604)는 계산된 목표 전류(Target Current)를 제한하여 최종 목표 전류를 결정합니다.
 5. 전류 제어기는 최종 목표 전류를 기반으로 모터에 인가할 PWM 출력을 결정합니다.
 6. 최종 PWM 값은 Inverter 를 통해 모터에 적용되고, 감속기를 거쳐 그리퍼의 손가락이 구동됩니다.
 7. 구동 결과는 Present Position(611), Present Velocity(615), Present Current(621)에 표기됩니다.
@@ -313,19 +313,19 @@ Goal Velocity(600)가 ‘0’인 경우, Profile 은 비활성화 되며, 속도
 `Note` 해당 모델의 최대 RPM을 확인하시기 바랍니다. Goal Velocity(600)를 최대 RPM 이상으로 설정해도 모터는 최대 RPM 이상의 속도를 낼 수 없습니다.
 {: .notice}
 
-### <a name="goal-torque"></a>**[Goal Torque(604)](#goal-torque604)**
+### <a name="goal-current"></a>**[Goal Current(604)](#goal-current604)**
 Operating Mode(11) 에 따라 다른 의미로 사용됩니다.
 
-|Operating Mode|Goal Torque|
-|:---:|:---:|
-|0 (토크제어 모드)|Goal Torque(604)값이 목표 토크값으로 사용됩니다.|
-|5 (전류기반 위치제어 모드)|Goal Torque(604)값이 토크 제한값으로 사용됩니다.|
+| Operating Mode          | Goal Current                                 |
+|:------------------------|:---------------------------------------------|
+| 0 (전류제어 모드)         | Goal Current(604)값이 목표 전류값으로 사용됩니다.|
+| 5 (전류기반 위치제어 모드) | Goal Current(604)값이 최대 전류값으로 사용됩니다.|
 
-Goal Torque(604)는 Torque Limit(30) 보다 큰 값을 사용할 수 없습니다.
+Goal Current(604)는 Current Limit(30) 보다 큰 값을 사용할 수 없습니다.
 
-|단위|값의 범위|
-| :---: | :---: |
-| 약 4.02 mA | -Torque Limit(30) ~ Torque Limit(30) |
+|     단위    |                값의 범위                |
+| :--------: | :------------------------------------: |
+| 약 4.02 mA | -Current Limit(30) ~ Current Limit(30) |
 
 ### <a name="goal-acceleration"></a>**[Goal Acceleration(606)](#goal-acceleration606)**
 전류기반 위치 제어 모드에서만 사용되며, Profile 의 가속도를 설정합니다.  
@@ -387,10 +387,25 @@ Goal Velocity(600)가 ‘0’인 경우, Profile 이 비활성화 되어 Goal Ac
 
 ## [커넥터 정보](#커넥터-정보)
 
-{% include kr/dxl/molex_485_pro.md %}
+|항목|RS-485|외부포트|
+|:---:|:---:|:---:|
+|핀 번호|`1` GND<br>`2` VDD<br>`3` DATA+<br>`4` DATA-|`1` GND<br>`2` VDD<br>`3` PORT 1<br>`4` PORT 2<br>`5` PORT 3<br>`6` PORT 4|
+|다이어그램|![](/assets/images/dxl/jst_b4beha_diagram.png)|![](/assets/images/dxl/molex_5304706_diagram.png)|
+|하우징|[JST EHR-04]|![](/assets/images/dxl/molex_510210600.png)<br />[MOLEX 51021-0600]|
+|PCB 헤더|![](/assets/images/dxl/jst_b4beha.png)<br />[JST B4B-EH-A]|![](/assets/images/dxl/molex_530470610.png)<br />[MOLEX 53047-0610]|
+|Crimp 터미널|[JST SHE-001T-P0.6]|[MOLEX 50079-8100]|
+|Wire Gauge|21 AWG|21 AWG|
+
+[JST EHR-04]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
+[JST B4B-EH-A]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
+[JST SHE-001T-P0.6]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
+[MOLEX 51021-0600]: http://www.molex.com/molex/products/datasheet.jsp?part=active/0510210600_CRIMP_HOUSINGS.xml
+[MOLEX 53047-0610]: http://www.molex.com/molex/products/datasheet.jsp?part=active/0530470610_PCB_HEADERS.xml
+[MOLEX 50079-8100]: http://www.molex.com/molex/products/datasheet.jsp?part=active/0500798100_CRIMP_TERMINALS.xml
 
 ## [도면](#도면)
-`Download` [PDF]
+`Download` [RH-P12-RN(PDF).zip](http://www.robotis.com/service/download.php?no=740)  
+`Download` [RH-P12-RN(STP).zip](http://www.robotis.com/service/download.php?no=741)
 
 
 [PDF]: http://support.robotis.com/en/baggage_files/dynamixel/rh-p12-rn.pdf

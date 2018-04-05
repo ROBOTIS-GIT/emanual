@@ -75,8 +75,8 @@ main:
     - title: "X Series"
       titlekr: "X 시리즈"
       children:
-      - title: "XL320"
-        titlekr: "XL320"
+      - title: "XL-320"
+        titlekr: "XL-320"
         url: /dxl/x/xl320/
       - title: "XL430-W250"
         titlekr: "XL430-W250"
@@ -107,6 +107,7 @@ main:
         url: /dxl/x/xh430-v350/
     - title: "PRO Series"
       titlekr: "PRO 시리즈"
+      url: /dxl/pro/
       children:
       - title: "H54-200-S500-R"
         titlekr: "H54-200-S500-R"
@@ -213,7 +214,7 @@ main:
         url: /edu/dream/dream-a/
       - title: "SET B"
         url: /edu/dream/dream-b/
-    - title: "Dream II"
+    - title: "DREAM II"
       titlekr: "드림 II"
       children:
       - title: "LEVEL 1"
@@ -265,9 +266,11 @@ main:
         url: /edu/iot/iot-1/
       - titlekr: "2단계 교육키트"
         url: /edu/iot/iot-2/
+    - titlekr: "자동차 로봇"
+      url: /edu/car/
     - title: "BIOLOID"
       titlekr: "바이올로이드"
-      urlkr: /edu/bioloid/
+      url: /edu/bioloid/
       children:
       - title: "Beginner Level"
         titlekr: "초급"
@@ -372,6 +375,9 @@ main:
     - title: "OpenCM IDE"
       titlekr: "OpenCM IDE"
       url: /software/opencm_ide/getting_started/
+    - title: "Arduino IDE"
+      titlekr: "아두이노 IDE"
+      url: /software/arduino_ide/
     - title: "ROBOTIS Framework Packages"
       url: /software/robotis_framework_packages/
   - title: "PARTS"
@@ -513,6 +519,29 @@ main:
     titlekr: "FAQ"
     url: /faq/
     urlkr: /faq/
+
+all-dynamixel:
+  - title: "AX Series"
+    titlekr: "AX Series"
+    url: /dxl/#ax-series
+  - title: "EX Series"
+    titlekr: "EX Series"
+    url: /dxl/#ex-series
+  - title: "DX Series"
+    titlekr: "DX Series"
+    url: /dxl/#dx-series
+  - title: "RX Series"
+    titlekr: "RX Series"
+    url: /dxl/#rx-series
+  - title: "MX Series"
+    titlekr: "MX Series"
+    url: /dxl/#mx-series
+  - title: "X Series"
+    titlekr: "X Series"
+    url: /dxl/#x-series
+  - title: "PRO Series"
+    titlekr: "PRO Serie"
+    url: /dxl/#pro-m-series
 
 #AX-12W sidebar
 ax-12w:
@@ -720,61 +749,117 @@ ax-12a:
         urlkr: /dxl/ax/ax-12a/#컨트롤-테이블-설명
         children:
           - title: "Model Number(0)"
+            titlekr: "Model Number(0)"
             url: /dxl/ax/ax-12a/#model-number-0
+            urlkr: /dxl/ax/ax-12a/#model-number-0
           - title: "Firmware Version(2)"
+            titlekr: "Firmware Version(2)"
             url: /dxl/ax/ax-12a/#firmware-version-2
+            urlkr: /dxl/ax/ax-12a/#firmware-version-2
           - title: "ID(3)"
+            titlekr: "ID(3)"
             url: /dxl/ax/ax-12a/#id-3
+            urlkr: /dxl/ax/ax-12a/#id-3
           - title: "Baud Rate(4)"
+            titlekr: "Baud Rate(4)"
             url: /dxl/ax/ax-12a/#baud-rate-4
+            urlkr: /dxl/ax/ax-12a/#baud-rate-4
           - title: "Return Delay Time(5)"
+            titlekr: "Return Delay Time(5)"
             url: /dxl/ax/ax-12a/#return-delay-time-5
+            urlkr: /dxl/ax/ax-12a/#return-delay-time-5
           - title: "CW/CCW Angle Limit(6,8)"
+            titlekr: "CW/CCW Angle Limit(6,8)"
             url: /dxl/ax/ax-12a/#cwccw-angle-limit6-8
+            urlkr: /dxl/ax/ax-12a/#cwccw-angle-limit6-8
           - title: "Temperature Limit(11)"
+            titlekr: "Temperature Limit(11)"
             url: /dxl/ax/ax-12a/#temperature-limit-11
+            urlkr: /dxl/ax/ax-12a/#temperature-limit-11
           - title: "Min/Max Voltage Limit(12,13)"
+            titlekr: "Min/Max Voltage Limit(12,13)"
             url: /dxl/ax/ax-12a/#minmax-voltage-limit-12-13
+            urlkr: /dxl/ax/ax-12a/#minmax-voltage-limit-12-13
           - title: "Max Torque(14)"
+            titlekr: "Max Torque(14)"
             url: /dxl/ax/ax-12a/#max-torque-14
+            urlkr: /dxl/ax/ax-12a/#max-torque-14
           - title: "Status Return Level(16)"
+            titlekr: "Status Return Level(16)"
             url: /dxl/ax/ax-12a/#status-return-level-16
+            urlkr: /dxl/ax/ax-12a/#status-return-level-16
           - title: "Alarm LED(17)"
+            titlekr: "Alarm LED(17)"
             url: /dxl/ax/ax-12a/#alarm-led17-shutdown18
+            urlkr: /dxl/ax/ax-12a/#alarm-led17-shutdown18
           - title: "Shutdown(18)"
+            titlekr: "Shutdown(18)"
             url: /dxl/ax/ax-12a/#alarm-led17-shutdown18
+            urlkr: /dxl/ax/ax-12a/#alarm-led17-shutdown18
           - title: "Torque Enable(24)"
+            titlekr: "Torque Enable(24)"
             url: /dxl/ax/ax-12a/#torque-enable-24
+            urlkr: /dxl/ax/ax-12a/#torque-enable-24
           - title: "LED(25)"
+            titlekr: "LED(25)"
             url: /dxl/ax/ax-12a/#led-25
+            urlkr: /dxl/ax/ax-12a/#led-25
           - title: "Compliance Margin(26,27)"
+            titlekr: "Compliance Margin(26,27)"
             url: /dxl/ax/ax-12a/#compliance-margin-26-27
+            urlkr: /dxl/ax/ax-12a/#compliance-margin-26-27
           - title: "Compliance Slope(28,29)"
+            titlekr: "Compliance Slope(28,29)"
             url: /dxl/ax/ax-12a/#compliance-slope-28-29
+            urlkr: /dxl/ax/ax-12a/#compliance-slope-28-29
           - title: "Goal Position(30)"
+            titlekr: "Goal Position(30)"
             url: /dxl/ax/ax-12a/#goal-position-30
+            urlkr: /dxl/ax/ax-12a/#goal-position-30
           - title: "Moving Speed(32)"
+            titlekr: "Moving Speed(32)"
             url: /dxl/ax/ax-12a/#moving-speed-32
+            urlkr: /dxl/ax/ax-12a/#moving-speed-32
           - title: "Torque Limit(34)"
+            titlekr: "Torque Limit(34)"
             url: /dxl/ax/ax-12a/#torque-limit-34
+            urlkr: /dxl/ax/ax-12a/#torque-limit-34
           - title: "Present Position(36)"
+            titlekr: "Present Position(36)"
             url: /dxl/ax/ax-12a/#present-position-36
+            urlkr: /dxl/ax/ax-12a/#present-position-36
           - title: "Present Speed(38)"
+            titlekr: "Present Speed(38)"
             url: /dxl/ax/ax-12a/#present-speed-38
+            urlkr: /dxl/ax/ax-12a/#present-speed-38
           - title: "Present Load(40)"
+            titlekr: "Present Load(40)"
             url: /dxl/ax/ax-12a/#present-load-40
+            urlkr: /dxl/ax/ax-12a/#present-load-40
           - title: "Present Voltage(42)"
+            titlekr: "Present Voltage(42)"
             url: /dxl/ax/ax-12a/#present-voltage-42
+            urlkr: /dxl/ax/ax-12a/#present-voltage-42
           - title: "Present Temperature(43)"
+            titlekr: "Present Temperature(43)"
             url: /dxl/ax/ax-12a/#present-temperature-43
+            urlkr: /dxl/ax/ax-12a/#present-temperature-43
           - title: "Registered Instruction(44)"
+            titlekr: "Registered Instruction(44)"
             url: /dxl/ax/ax-12a/#registered-instruction-44
+            urlkr: /dxl/ax/ax-12a/#registered-instruction-44
           - title: "Moving(46)"
+            titlekr: "Moving(46)"
             url: /dxl/ax/ax-12a/#moving-46
+            urlkr: /dxl/ax/ax-12a/#moving-46
           - title: "Lock(47)"
+            titlekr: "Lock(47)"
             url: /dxl/ax/ax-12a/#lock-47
+            urlkr: /dxl/ax/ax-12a/#lock-47
           - title: "Punch(48)"
+            titlekr: "Punch(48)"
             url: /dxl/ax/ax-12a/#punch-48
+            urlkr: /dxl/ax/ax-12a/#punch-48
   - title: "How to Assemble"
     titlekr: "조립 예시"
     url: /dxl/ax/ax-12a/#how-to-assemble
@@ -1769,8 +1854,6 @@ rx-10:
         urlkr: /dxl/rx/rx-10/#도면
       - title: "Communication Circuit"
         url: /dxl/rx/rx-10/#communication-circuit
-      - title: "Pin Assignment"
-        url: /dxl/rx/rx-10/#pin-assignment
 
 #RX-24F sidebar
 rx-24f:
@@ -2258,10 +2341,6 @@ mx-12w:
     titlekr: "주요 사양"
     url: /dxl/mx/mx-12w/#specifications
     urlkr: /dxl/mx/mx-12w/#주요-사양
-  - title: "Performance Graph"
-    titlekr: "성능 그래프"
-    url: /dxl/mx/mx-12w/#performance-graph
-    urlkr: /dxl/mx/mx-12w/#성능-그래프
   - title: "Control Table"
     titlekr: "컨트롤 테이블"
     url: /dxl/mx/mx-12w/#control-table
@@ -2391,10 +2470,6 @@ mx-12w:
           - title: "Goal Acceleration(73)"
             titlekr: "Goal Acceleration(73)"
             url: /dxl/mx/mx-12w/#goal-acceleration-73
-  - title: "How to Assemble"
-    titlekr: "조립 예시"
-    url: /dxl/mx/mx-12w/#how-to-assemble
-    urlkr: /dxl/mx/mx-12w/#조립-예시
   - title: "Maintenance"
     titlekr: "유지보수"
     url: /dxl/mx/mx-12w/#maintenance
@@ -3172,8 +3247,6 @@ mx-28-2:
         urlkr: /dxl/mx/mx-28-2/#도면
       - title: "Communication Circuit"
         url: /dxl/mx/mx-28-2/#communication-circuit
-      - title: "Pin Assignment"
-        url: /dxl/mx/mx-28-2/#pin-assignment
 
 #MX-64(2.0) sidebar
 mx-64-2:
@@ -3339,9 +3412,9 @@ mx-64-2:
         - title: "Present PWM(124)"
           titlekr: "Present PWM(124)"
           url: /dxl/mx/mx-64-2/#present-pwm124
-        - title: "Present Load(126)"
-          titlekr: "Present Load(126)"
-          url: /dxl/mx/mx-64-2/#present-load126
+        - title: "Present Current(126)"
+          titlekr: "Present Current(126)"
+          url: /dxl/mx/mx-64-2/#present-current126
         - title: "Present Velocity(128)"
           titlekr: "Present Velocity(128)"
           url: /dxl/mx/mx-64-2/#present-velocity128
@@ -3398,8 +3471,6 @@ mx-64-2:
         urlkr: /dxl/mx/mx-64-2/#도면
       - title: "Communication Circuit"
         url: /dxl/mx/mx-64-2/#communication-circuit
-      - title: "Pin Assignment"
-        url: /dxl/mx/mx-64-2/#pin-assignment
 
 #MX-106(2.0) sidebar
 mx-106-2:
@@ -3565,9 +3636,9 @@ mx-106-2:
         - title: "Present PWM(124)"
           titlekr: "Present PWM(124)"
           url: /dxl/mx/mx-106-2/#present-pwm124
-        - title: "Present Load(126)"
-          titlekr: "Present Load(126)"
-          url: /dxl/mx/mx-106-2/#present-load126
+        - title: "Present Current(126)"
+          titlekr: "Present Current(126)"
+          url: /dxl/mx/mx-106-2/#present-current126
         - title: "Present Velocity(128)"
           titlekr: "Present Velocity(128)"
           url: /dxl/mx/mx-106-2/#present-velocity128
@@ -3620,8 +3691,6 @@ mx-106-2:
         urlkr: /dxl/mx/mx-106-2/#도면
       - title: "Communication Circuit"
         url: /dxl/mx/mx-106-2/#communication-circuit
-      - title: "Pin Assignment"
-        url: /dxl/mx/mx-106-2/#pin-assignment
 
 #XH430-V210 sidebar
 xh430-v210:
@@ -7910,6 +7979,16 @@ ollo-4:
 - titlekr: "다운로드"
   urlkr: /edu/ollo/ollo-4/#다운로드
 
+dream:
+- title: "DREAM"
+  titlekr: "로보티즈 드림"
+  url: /edu/dream/#dream
+  urlkr: /edu/dream/#로보티즈-드림
+- title: "DREAM II"
+  titlekr: "로보티즈 드림 II"
+  url: /edu/dream/#dream-ii
+  urlkr: /edu/dream/#로보티즈-드림-ii
+
 #DreamI Level1 sidebar
 dream1-1:
 - titlekr: "개요"
@@ -8192,6 +8271,10 @@ smart3-4:
   urlkr: /edu/smart/smart3-4/#작동하기
 - titlekr: "교안예제"
   urlkr: /edu/smart/smart3-4/#교안예제
+
+iot:
+  - title: "로보티즈 IoT"
+    urlkr: /edu/iot/#로보티즈-iot
 
 iot-1:
   - titlekr: "개요"
@@ -8576,11 +8659,11 @@ bioloid-premium:
     - title: "Custom Motions(Create)"
       titlekr: "사용자 모션 추가하기(모션 만들기)"
       url: /edu/bioloid/premium/#custom-motions-create
-      urlkr: /edu/bioloid/premium/#사용자-모션-추가하기모션-만들기
+      urlkr: /edu/bioloid/premium/#사용자-모션-추가모션-만들기
     - title: "Custom Motions(Task Code)"
       titlekr: "사용자 모션 추가하기(태스크 코드)"
       url: /edu/bioloid/premium/#custom-motions-task-code
-      urlkr: /edu/bioloid/premium/#사용자-모션-추가하기태스크-코드
+      urlkr: /edu/bioloid/premium/#사용자-모션-추가태스크-코드
     - title: "Gripper Control"
       titlekr: "그리퍼 제어"
       url: /edu/bioloid/premium/#gripper-control
@@ -9133,7 +9216,7 @@ op3:
     - title: "ROBOTIS OP3 msgs"
       url: /platform/op3/robotis_ros_packages/#robotis-op3-msgs
     - title: "ROBOTIS OP3 Demo"
-      url: /platform/op3/robotis_ros_packages/#robotis-op3-Demo
+      url: /platform/op3/robotis_ros_packages/#robotis-op3-demo
     - title: "ROBOTIS OP3 Common"
       url: /platform/op3/robotis_ros_packages/#robotis-op3-common
     - title: "ROBOTIS OP3 Tools"
@@ -9164,6 +9247,8 @@ op3:
       url: /platform/op3/tutorials/#how-to-use-ball-detector
     - title: "How to control upgraded walking"
       url: /platform/op3/tutorials/#how-to-control-upgraded-walking-using-footstep-planner
+    - title: "How to use Web Setting Tool"
+      url: /platform/op3/tutorials/#how-to-use-web-setting-tool
   - title: "Simulation"
     url: /platform/op3/simulation/#simulation
     children:
@@ -9178,6 +9263,8 @@ op3:
       url: /platform/op3/hardware/#assemble-data
     - title: "Cover Skin Data"
       url: /platform/op3/hardware/#cover-skin-data
+    - title: "Electronics Data"
+      url: /platform/op3/hardware/#electronics-data
   - title: "Recovery"
     url: /platform/op3/recovery/
     children:
@@ -9264,9 +9351,9 @@ rh_p12_rn:
         - title: "Acceleration Limit(26)"
           titlekr: "Acceleration Limit(26)"
           url: /platform/rh_p12_rn/#acceleration-limit26
-        - title: "Torque Limit(30)"
-          titlekr: "Torque Limit(30)"
-          url: /platform/rh_p12_rn/#torque-limit30
+        - title: "Current Limit(30)"
+          titlekr: "Current Limit(30)"
+          url: /platform/rh_p12_rn/#current-limit30
         - title: "Velocity Limit(32)"
           titlekr: "Velocity Limit(32)"
           url: /platform/rh_p12_rn/#velocity-limit32
@@ -9300,9 +9387,9 @@ rh_p12_rn:
         - title: "Goal Velocity(600)"
           titlekr: "Goal Velocity(600)"
           url: /platform/rh_p12_rn/#goal-velocity600
-        - title: "Goal Torque(604)"
-          titlekr: "Goal Torque(604)"
-          url: /platform/rh_p12_rn/#goal-torque604
+        - title: "Goal Current(604)"
+          titlekr: "Goal Current(604)"
+          url: /platform/rh_p12_rn/#goal-current604
         - title: "Goal Acceleration(606)"
           titlekr: "Goal Acceleration(606)"
           url: /platform/rh_p12_rn/#goal-acceleration606
@@ -9380,6 +9467,21 @@ rh_p12_rn:
       titlekr: "ROS GUI 예제"
       url: /platform/rh_p12_rn/examples/#ros-gui-example
       urlkr: /platform/rh_p12_rn/examples/#ros-gui-예제
+  - title: "Gazebo Simulation"
+    titlekr: "Gazebo 시뮬레이션"
+    url: /platform/rh_p12_rn/gazebo/#gazebo-simulation
+    urlkr: /platform/rh_p12_rn/gazebo/#gazebo-시뮬레이션
+    children:
+    - title: "Gazebo Install"
+      titlekr: "Gazebo 설치"
+      url: /platform/rh_p12_rn/gazebo/#gazebo-simulation
+      urlkr: /platform/rh_p12_rn/gazebo/#gazebo-시뮬레이션
+    - title: "Run Simulator"
+      titlekr: "시뮬레이터 실행"
+      url: /platform/rh_p12_rn/gazebo/#run-simulator
+      urlkr: /platform/rh_p12_rn/gazebo/#시뮬레이터-실행
+
+
 
 robothand_rx28:
   - titlekr: "개요"
@@ -9840,6 +9942,24 @@ turtlebot3:
       url: /platform/turtlebot3/simulation/#stage-2d
     - title: "Gazebo (3D)"
       url: /platform/turtlebot3/simulation/#gazebo-3d
+      children:
+      - title: "ROS packages for Gazebo"
+        url: /platform/turtlebot3/simulation/#ros-packages-for-gazebo
+        children:
+        - title: "Simulate in Various World"
+          url: /platform/turtlebot3/simulation/#simulate-in-various-world
+        - title: "Drive TurtleBot3"
+          url: /platform/turtlebot3/simulation/#drive-turtlebot3
+        - title: "Open Rviz"
+          url: /platform/turtlebot3/simulation/#open-rviz
+        - title: "SLAM by TurtleBot3"
+          url: /platform/turtlebot3/simulation/#slam-by-turtlebot3
+        - title: "Navigation of TurtleBot3"
+          url: /platform/turtlebot3/simulation/#navigation-of-turtlebot3
+        - title: "Open Rviz"
+          url: /platform/turtlebot3/simulation/#slam-by-multiple-turtlebot3s
+      - title: "SLAM by Multiple TurtleBot3s"
+        url: /platform/turtlebot3/simulation/#standalone-gazebo-plugin
   - title: "Manipulation"
     url: /platform/turtlebot3/manipulation/#manipulation
     children:
@@ -12031,6 +12151,56 @@ opencmide:
       url: /software/opencm_ide/api_reference/#utilities
       urlkr: /software/opencm_ide/api_reference/#utilities
 
+arduino_ide:
+  - title: "Introduction"
+    url: /software/arduino_ide/#introduction
+  - title: "Software Installation"
+    url: /software/arduino_ide/#software-installation
+    children:
+    - title: "Install on Linux"
+      url: /software/arduino_ide/#install-on-linux
+      children:
+      - title: "USB Port Settings"
+        url: /software/arduino_ide/#usb-port-settings
+      - title: "Compiler Settings"
+        url: /software/arduino_ide/#compiler-settings
+      - title: "Install Arduino IDE"
+        url: /software/arduino_ide/#install-arduino-idelinux
+      - title: "Run Arduino IDE"
+        url: /software/arduino_ide/#run-arduino-idelinux
+      - title: "Porting to Arduino IDE"
+        url: /software/arduino_ide/#porting-to-arduino-idelinux
+      - title: "Remove Modemmanager"
+        url: /software/arduino_ide/#remove-modemmanager
+    - title: "Install on Mac"
+      url: /software/arduino_ide/#install-on-mac
+      children:
+      - title: "Install Arduino IDE"
+        url: /software/arduino_ide/#install-arduino-idemac
+      - title: "Run Arduino IDE"
+        url: /software/arduino_ide/#run-arduino-idemac
+      - title: "Porting to Arduino IDE"
+        url: /software/arduino_ide/#porting-to-arduino-idemac
+    - title: "Install on Windows"
+      url: /software/arduino_ide/#install-on-windows
+      children:
+      - title: "Install Driver"
+        url: /software/arduino_ide/#install-driver
+      - title: "Install Arduino IDE"
+        url: /software/arduino_ide/#install-arduino-idewindows
+      - title: "Porting to Arduino IDE"
+        url: /software/arduino_ide/#porting-to-arduino-idewindows
+  - title: "Examples"
+    url: /software/arduino_ide/#examples
+    children:
+    - title: "OpenCM9.04 Examples"
+      url: /software/arduino_ide/#opencm904-examples
+  - title: "Advanced Users"
+    url: /software/arduino_ide/#advanced-users
+    children:
+    - title: "Writing Bootloader(OpenCR)"
+      url: /software/arduino_ide/#writing-bootloaderopencr
+
 robotis_framework_packages:
   - title: "ROBOTIS Framework Packages"
     url: /software/robotis_framework_packages/#robotis-framework-packages
@@ -13227,7 +13397,7 @@ opencm904:
     - title: "Arduino IDE"
       titlekr: "아두이노 IDE"
       url: /parts/controller/opencm904/#arduino-ide
-      urlkr: /parts/controller/opencm904/#아두이도-ide
+      urlkr: /parts/controller/opencm904/#아두이노-ide
       children:
       - title: "Install on Linux"
         titlekr: "리눅스에 설치하기"
@@ -13466,6 +13636,15 @@ opencr10:
         url: /parts/controller/opencr10/#flame-sensor
       - title: "Joystic Sensor"
         url: /parts/controller/opencr10/#joystic-sensor
+    - title: "Dynamixel Workbench"
+      url: /parts/controller/opencr10/#dynamixel-workbench
+      children:
+      - title: "Find Dynamixel"
+        url: /parts/controller/opencr10/#find-dynamixel
+      - title: "Position"
+        url: /parts/controller/opencr10/#position
+      - title: "Speed"
+        url: /parts/controller/opencr10/#speed
     - title: "OpenManipulator"
       url: /parts/controller/opencr10/#openmanipulator
       children:

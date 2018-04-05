@@ -390,7 +390,7 @@ XL-320을 제외한 3핀 TTL 다이나믹셀은 헤더의 +-핀 또는 배터리
 
   ![](/assets/images/parts/controller/opencm904/opencm9.04_14.png)
 
-USB 포트는 LBS-40 배터리 혹은  +-핀과 동시 연결해도 무방합니다.(차단회로 내장)  
+USB 포트는 LBS-40 배터리 혹은 +-핀과 동시 연결해도 무방합니다.(차단회로 내장)  
 +- 혹은 배터리로 공급되는 전압은 다이나믹셀의 권장 전압으로 사용하시길 추천합니다.  
 그 이상의 전압은 다이나믹셀의 수명을 단축시키거나 고장의 원인이 될 수 있습니다.  
 참고로 OpenCM9.04에 공급할 수 있는 최대 전압은 16V입니다. 그 이상의 전압은 OpenCM9.04의 부품들이 견디지 못할 수도 있습니다.  
@@ -420,7 +420,7 @@ OpenCM9.04의 다이나믹셀 TTL 3핀 홀은 기존 다이나믹셀 TTL 3핀과
 
 > OpenCM9.04 A타입은 2가지 종류의 3핀 커넥터를 모두 납땜할 수 있습니다
 
-  
+
 # [소프트웨어 개발환경](#소프트웨어-개발환경)
 
 - [Arduino IDE]
@@ -640,7 +640,7 @@ The value of COM1 may be different depending on the environment connected to the
 
 [악세서리 구매하기]: http://www.robotis.com/shop/item.php?it_id=902-0084-030
 [OpenCM9.04 C Type 펌웨어 복구하기]: /docs/kr/edu/mini/#로보티즈-미니-제어기-펌웨어-업데이트
-[Arduino IDE]: #arduino-ide
+[Arduino IDE]: #아두이노-ide
 [OpenCM IDE]: /docs/kr/software/opencm_ide/getting_started/
 [Dynamixel SDK]: /docs/kr/software/dynamixel/dynamixel_sdk/overview/
 [DynamixelWorkbench]: /docs/kr/software/dynamixel/dynamixel_workbench/

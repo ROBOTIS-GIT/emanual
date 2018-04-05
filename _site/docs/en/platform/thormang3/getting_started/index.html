@@ -4854,6 +4854,7 @@ $ git clone https://github.com/ktossell/camera_umd
 $reference = $(".archive");
 $(window).resize(function() {
   var newWidth = $reference.width() * 0.90;
+  if (newWidth > 640) { newWidth = 640; }
 
   // Resize all videos according to aspect ratio
   $("iframe").each(

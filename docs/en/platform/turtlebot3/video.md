@@ -17,6 +17,27 @@ sidebar:
 
 ## [Video from Open Source Team](#video-from-open-source-team)
 
+**[TurtleBot3 43 TurtleBot3 AutoRace Tutorial 6: Tunnel]**
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ezkwAs1kVkM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+**[TurtleBot3 42 TurtleBot3 AutoRace Tutorial 5: Level Crossing]**
+<iframe width="560" height="315" src="https://www.youtube.com/embed/MBDMBq6IDd4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+**[TurtleBot3 41 TurtleBot3 AutoRace Tutorial 4: Node Optimization]**
+<iframe width="560" height="315" src="https://www.youtube.com/embed/YpjHOzx432M" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+**[TurtleBot3 40 TurtleBot3 AutoRace Tutorial 3: Parking]**
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ValFotgBfC0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+**[TurtleBot3 39 TurtleBot3 AutoRace Tutorial 2: Lane Tracking]**
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1RBOfPWdpsc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+**[TurtleBot3 38 TurtleBot3 AutoRace Tutorial 1: Traffic Light]**
+<iframe width="560" height="315" src="https://www.youtube.com/embed/yp7MVZCiaWs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+**[TurtleBot3 37 Gazebo Simulation Tutorial]**
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UzOoJ6a_mOg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 **[TurtleBot3 36 Waffle Pi Camera]**
 <iframe width="560" height="315" src="https://www.youtube.com/embed/AyZ5lcz5IzM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 

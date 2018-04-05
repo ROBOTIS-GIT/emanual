@@ -19,22 +19,24 @@ sidebar:
 
 | 항목            | 내용                                                                   |
 |:----------------|:-----------------------------------------------------------------------|
-| 무게            | 52.9g                                                                  |
-| 크기            | 32mm x 50mm x 40mm                                                     |
-| 최소 제어각     | 0.29&deg;                                                              |
+| 무게            | 52.9 [g]                                                                  |
+| 크기            | 32 X 50 X 40 [mm]<br />1.26 X 1.97 X 1.57 [inch]                        |
+| 최소 제어각     | 0.29 [deg]                                                              |
 | 모터            | Cored                                                                  |
 | 기어비          | 32 : 1                                                                 |
-| No Load Speed   | 470rpm (at 12V, Wheel Mode)<br />54rpm (at 12.0V, Joint Mode)          |
-| 동작 모드       | 관절 모드 (0&deg; ~ 300&deg;) / 바퀴 모드(무한 회전)                   |
-| 동작 온도       | -5&deg;C ~ +70&deg;F                                                   |
-| 사용 전압       | 9.0 ~ 12.0V (**권장 전압 : 11.1V**)                                    |
+| Stall Torque    | 0.2 [N&middot;m] (at 12 [V], 1.4 [A])                                        |
+| No Load Speed   | 470 [rpm] (at 12.0 [V], Wheel Mode)<br />54 [rpm] (at 12.0 [V], Joint Mode)          |
+| 동작 모드       | 관절 모드 : 0 ~ 300 [deg]<br />바퀴 모드 : 무한 회전                   |
+| 동작 온도       | -5 ~ +70 [&deg;C]                                                   |
+| 사용 전압       | 9.0 ~ 12.0 [V] (**권장 전압 : 11.1 [V]**)                                    |
 | Command Signal  | Digital Packet                                                         |
 | Protocol Type   | Half Duplex Asynchronous Serial Communication (8bit, 1stop, No Parity) |
-| Link (Physical) | TTL Level Multi Drop Bus(Daisy Chain Type Connector)                   |
+| Link (Physical) | TTL Level Multi Drop Bus                   |
 | ID              | 254 ID (0~253)                                                         |
-| 통신 속도       | 7843 bps ~ 1 Mbps                                                      |
+| 통신 속도       | 7,843 ~ 1,000,000 [bps]                                                      |
 | Feedback        | Position, Temperature, Load, Input Voltage, etc                        |
-| Material        | Engineering Plastic                                                    |
+| 기어 재질   | Engineering Plastic(Full)                                               |
+| 케이스 재질        | Engineering Plastic(Front, Middle, Back)                               |
 
 {% include kr/dxl/control_table_protocol1.md %}
 

@@ -6445,6 +6445,7 @@ Dynamixel SDK 또는 Dynamixel Workbench를 이용할 수도 있습니다.</p>
 $reference = $(".archive");
 $(window).resize(function() {
   var newWidth = $reference.width() * 0.90;
+  if (newWidth > 640) { newWidth = 640; }
 
   // Resize all videos according to aspect ratio
   $("iframe").each(

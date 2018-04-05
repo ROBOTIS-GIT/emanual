@@ -67,7 +67,7 @@ sidebar:
 [3단계]: /docs/kr/edu/dream/dream1-3/
 [BT-210]: /docs/kr/parts/communication/bt-210/
 [RC-100B]: /docs/kr/parts/communication/rc-100/
-[예제 태스크 코드의 다운로드 방법]:???
+[예제 태스크 코드의 다운로드 방법]: /docs/kr/faq/download_task_code/
 [DREAM_L4_Tank_KR.tsk]: http://support.robotis.com/ko/baggage_files/dream/dream_l4_tank_kr.tsk
 [DREAM_L4_RobotKnight_KR.tsk]: http://support.robotis.com/ko/baggage_files/dream/dream_l4_robotknight_kr.tsk
 [DREAM_L4_WarRobot_KR.tsk]: http://support.robotis.com/ko/baggage_files/dream/dream_l4_warrobot_kr.tsk

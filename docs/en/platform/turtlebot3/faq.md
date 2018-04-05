@@ -131,48 +131,52 @@ Second, synchronize to NTP server
 **Turtlebot3 Setup Dynamixels**
 ----------------------------------------------------
 
+**Warning :** Please connect only **single** Dynamixel with OpenCR
+{: .notice--warning}
+
+
 1. Download Setup Firmware
 
-As shown in below image, from the example menu, go to turtlebot3 → turtlebot3_setup →
-turtlebot3_setup_motor, download the firmware to OpenCR board, and proceed with setting
-process. 
+    As shown in below image, from the example menu, go to turtlebot3 → turtlebot3_setup →
+    turtlebot3_setup_motor, download the firmware to OpenCR board, and proceed with setting
+    process. 
 
-After completing the setup, download the proper TurtleBot3 firmware to OpenCR.
+    After completing the setup, download the proper TurtleBot3 firmware to OpenCR.
 
-![](/assets/images/platform/turtlebot3/faq/dynamixel_setup_1.png)
+    ![](/assets/images/platform/turtlebot3/faq/dynamixel_setup_1.png)
 
-Click the Upload button on the Arduino IDE to download and once download is completed,
-Click the serial monitor icon on the upper right corner of the application as shown in next image.
+    Click the Upload button on the Arduino IDE to download and once download is completed,
+    Click the serial monitor icon on the upper right corner of the application as shown in next image.
 
-Connect the Dynamixel to the OpenCR. Note that this firmware only works with one
-Dynamixel, so you have to connect only one Dynamixel at a time.
+    Connect the Dynamixel to the OpenCR. Note that this firmware only works with one
+    Dynamixel, so you have to connect only one Dynamixel at a time.
 
-![](/assets/images/platform/turtlebot3/faq/dynamixel_setup_2.png)
+    ![](/assets/images/platform/turtlebot3/faq/dynamixel_setup_2.png)
 
 1. Change Dynamixel Setting
 
-When the serial monitor is executed, a menu for the Dynamixel setup is displayed as shown in
-As shown in below image. TurtleBot3 consists of two Dynamixel actuators on the left and right respectively, so
-select the Dynamixel based on the assembly position. To set up the left motor, enter `1`.
+    When the serial monitor is executed, a menu for the Dynamixel setup is displayed as shown in
+    As shown in below image. TurtleBot3 consists of two Dynamixel actuators on the left and right respectively, so
+    select the Dynamixel based on the assembly position. To set up the left motor, enter `1`.
 
-![](/assets/images/platform/turtlebot3/faq/dynamixel_setup_3.png)
+    ![](/assets/images/platform/turtlebot3/faq/dynamixel_setup_3.png)
 
-To prevent input mistakes, a confirmation menu is displayed once again. To proceed with the
-changes, enter 'Y'.
+    To prevent input mistakes, a confirmation menu is displayed once again. To proceed with the
+    changes, enter 'Y'.
 
-![](/assets/images/platform/turtlebot3/faq/dynamixel_setup_4.png)
+    ![](/assets/images/platform/turtlebot3/faq/dynamixel_setup_4.png)
 
-If you enter `Y`, the setup tool starts to search the connected Dynamixel using different
-baudrates, and ID. If a Dynamixel is found, it will be reset for the TurtleBot3 configuration.
-When the setup is completed, `OK` message is printed.
+    If you enter `Y`, the setup tool starts to search the connected Dynamixel using different
+    baudrates, and ID. If a Dynamixel is found, it will be reset for the TurtleBot3 configuration.
+    When the setup is completed, `OK` message is printed.
 
-![](/assets/images/platform/turtlebot3/faq/dynamixel_setup_5.png)
+    ![](/assets/images/platform/turtlebot3/faq/dynamixel_setup_5.png)
 
 1. Dynamixel Test
 
-Complete the setup procedure and verify if the change has been properly made. If you select one
-of the test menu for the motor, the connected Dynamixel with correct configuration will iterate
-the rotation in the clockwise and counterclockwise. To end the test, press the Enter key again. To
-test the left Dynamixel, enter `3` as shown in below image and enter `4` for the right Dynamixel.
+    Complete the setup procedure and verify if the change has been properly made. If you select one
+    of the test menu for the motor, the connected Dynamixel with correct configuration will iterate
+    the rotation in the clockwise and counterclockwise. To end the test, press the Enter key again. To
+    test the left Dynamixel, enter `3` as shown in below image and enter `4` for the right Dynamixel.
 
-![](/assets/images/platform/turtlebot3/faq/dynamixel_setup_6.png)
+    ![](/assets/images/platform/turtlebot3/faq/dynamixel_setup_6.png)

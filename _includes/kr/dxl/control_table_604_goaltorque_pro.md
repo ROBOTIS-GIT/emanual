@@ -5,5 +5,5 @@ Goal Torque(604)를 이용해, 목표 토크를 설정할 수 있습니다. 이 
 
 |모델명|변환 수식|
 | :---: | :---: |
-|PRO 54 | A = V * 33,000 / 2,048<br />A : 전류[mA]<br />V : Present Current/Goal Torque |
-|PRO 42 | A = V * 8,250 / 2,048<br />A : 전류[mA]<br />V : Present Current/Goal Torque |
+|PRO 54 | A = C x 33,000 &divide; 2,048<br />A = 권선전류[mA]<br />C = Present Current(621) or Goal Torque(604) |
+|PRO 42 | A = C x 8,250 &divide; 2,048<br />A = 권선전류[mA]<br />C = Present Current(621) or Goal Torque(604) |

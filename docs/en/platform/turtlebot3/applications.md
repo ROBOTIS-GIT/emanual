@@ -82,7 +82,7 @@ $ roslaunch turtlebot3_bringup turtlebot3_robot.launch
 **[Remote PC]** Move to turtlebot3_follower source directory
 
 ``` bash
-$ cd ~/catkin_ws/src/turtlebot3_applications/turtlebot3_follower/src
+$ cd ~/catkin_ws/src/turtlebot3_applications/turtlebot3_follower/scripts
 ```
 
 **[Remote PC]** Launch turtlebot3_follow_filter with below command.
@@ -114,7 +114,7 @@ $ rosrun turtlebot3_follower follower.py
 **[TurtleBot]** Launch the Raspberry Pi cam V2
 
 ``` bash
-$ roslaunch raspicam_node camerav2_1280x960.launch
+$ roslaunch turtlebot3_bringup turtlebot3_rpicamera.launch
 ```
 
 **[Remote PC]** Launch Panorama with below command.
@@ -168,7 +168,7 @@ $ sudo pip install --upgrade pip
 
 **[Remote PC]** Move to turtlebot3_automatic_parking source directory.
 ```bash
-$ cd ~/catkin_ws/src/turtlebot3_applications/turtlebot3_automatic_parking/src
+$ cd ~/catkin_ws/src/turtlebot3_applications/turtlebot3_automatic_parking/scripts
 ```
 
 **[Remote PC]** To make it executable.
