@@ -1256,7 +1256,8 @@ The Arduino IDE includes an SD card control library using the SPI library. OpenC
 ### Connection
 
 - SD Card Connection(SPI port)
-![](/assets/images/parts/controller/opencm904/sdcard_bb.png)
+
+  ![](/assets/images/parts/controller/opencm904/sdcard_bb.png)
 
 ### Arduino code
 The cardInfo example from the SD library and displays the file list after initializing the SD card. OpenCM9.04 SPI1 is used, and CS pin is used as No. 4.
@@ -2285,7 +2286,7 @@ void testscrolltext(void) {
 - To install the USB driver, connect the PC and OpenCM9.04 via the USB cable as shown below.
 - However, if you connect with multiple USB devices on the USB hub, avoid as much as possible and recommend a direct connection to the PC as possible. Sometimes the download fails if there is not enough current on the hub.
 
-![](/assets/images/parts/controller/opencm904/connect_pc.png)
+  ![](/assets/images/parts/controller/opencm904/connect_pc.png)
 
 ### Install Driver
 

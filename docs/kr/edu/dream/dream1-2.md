@@ -91,7 +91,7 @@ sidebar:
 | 12장 예제, 상상하세요 |   ![](/assets/images/edu/dream/dream1-2_imagine.jpg)    | [DREAM_L2_Distancesensor_KR.tsk] |
 
 
-[자동꺼짐타이머 바로가기]: #
+[자동꺼짐타이머 바로가기]: /docs/kr/software/rplus1/task/programming_02/#자동꺼짐-타이머
 [작동하기]: #작동하기
 [CM-150]: /docs/kr/parts/controller/cm-150/
 [감속모터]: /docs/kr/parts/motor/gm-10a/
