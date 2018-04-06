@@ -370,15 +370,15 @@ In the Control table, some data share the same name, but they are attached with 
 
 ### [EEPROM Area](#eeprom-area)
 
-|  Address  |        Name         |      Description       | Access | Init Value |
-|:---------:|:-------------------:|:----------------------:|:------:|:----------:|
-| 0 (0X00)  |   Model Number(L)   | model number low byte  |   R    |  0(0X00)   |
-| 1 (0X01)  |   Model Number(H)   | model number high byte |   R    | 116 (0X74) |
-| 2 (0X02)  | Version of Firmware |    firmware version    |   R    |     -      |
-| 3 (0X03)  |         ID          |       OpenCR ID        |   RW   | 200 (0XC8) |
-| 4 (0X04)  |      Baud Rate      |  Dynamixel baud rate   |   RW   |  1 (0X01)  |
-| 5 (0X05)  |  Return Delay Time  |   Return Delay Time    |   RW   |  0 (0X0)   |
-| 16 (0X10) | Status Return Level |  Status Return Level   |   RW   |  0 (0X00)  |
+|  Address  |        Name         |        Description         | Access | Init Value |
+|:---------:|:-------------------:|:--------------------------:|:------:|:----------:|
+| 0 (0X00)  |   Model Number(L)   |   model number low byte    |   R    |  0(0X00)   |
+| 1 (0X01)  |   Model Number(H)   |   model number high byte   |   R    | 116 (0X74) |
+| 2 (0X02)  | Version of Firmware |      firmware version      |   R    |     -      |
+| 3 (0X03)  |         ID          |          OpenCR ID         |   RW   | 200 (0XC8) |
+| 4 (0X04)  |      Baud Rate      |  Communication baud rate   |   RW   |  1 (0X01)  |
+| 5 (0X05)  |  Return Delay Time  |     Return Delay Time      |   RW   |  0 (0X0)   |
+| 16 (0X10) | Status Return Level |    Status Return Level     |   RW   |  0 (0X00)  |
 
 
 ### [RAM Area](#ram-area)
@@ -430,20 +430,18 @@ If the Broadcast ID is used to transmit Instruction Packet, then it can command 
 {: .notice}
 
 #### Baud Rate
-Represents the communication speed. 0 (0x00) to 254 (0xFE) can be used for it. This speed is calculated by using the below formula.  
-Speed(BPS) = 2000000/(Data+1)
+Represents the communication speed. 0 (0x00) to 7 (0x07) can be used for it.
 
 | Data |  Set BPS  | Target BPS | Tolerance |
 |:----:|:---------:|:----------:|:---------:|
-|  1   | 1000000.0 | 1000000.0  |  0.000 %  |
-|  3   | 500000.0  |  500000.0  |  0.000 %  |
-|  4   | 400000.0  |  400000.0  |  0.000 %  |
-|  7   | 250000.0  |  250000.0  |  0.000 %  |
-|  9   | 200000.0  |  200000.0  |  0.000 %  |
-|  16  | 117647.1  |  115200.0  | -2.124 %  |
-|  34  |  57142.9  |  57600.0   |  0.794 %  |
-| 103  |  19230.8  |  19200.0   | -0.160 %  |
-| 207  |  9615.4   |   9600.0   | -0.160 %  |
+|  0   | 9600      | 9600       |  0.000 %  |
+|  1   | 57600     | 57600      |  0.000 %  |
+|  2   | 115200    | 115200     |  0.000 %  |
+|  3   | 1000000   | 1000000    |  0.000 %  |
+|  4   | 2000000   | 2000000    |  0.000 %  |
+|  5   | 3000000   | 3000000    |  0.000 %  |
+|  6   | 4000000   | 4000000    |  0.000 %  |
+|  7   | 4500000   | 4500000    |  0.000 %  |
 
 `Note` Maximum Baud Rate error of 3% is within the tolerance of UART communication.
 {: .notice}
