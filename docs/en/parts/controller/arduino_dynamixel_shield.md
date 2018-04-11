@@ -45,7 +45,7 @@ Dynamixel Shield  was created to use RC100 and Dynamixel on arduino board. We pr
 
 {% capture shield_01 %}
 `Caution1` When uploading firmware using USB port, you should switch the UART SW(SW_2) to Upload mode. When you select the UART SW (SW_2) to Dynamixel mode, you can use Dynamixel but USB port.  
-`Caution2` If you are using a board that does not support SoftwareSerial(like SAMD, etc..), you cannot use pins 7 and 8 for UART purposes.
+`Caution2` If you are using a board that does not support SoftwareSerial(like SAMD, etc..), you cannot use pins 7 and 8 for UART purposes.  
 `Caution3` TTL, TTL (XL-430) and RS485 connectors are all connected in parallel in one serial.
 {% endcapture %}
 
