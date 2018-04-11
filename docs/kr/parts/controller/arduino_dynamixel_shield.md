@@ -143,9 +143,9 @@ dxl.begin(1000000, DXL_PACKET_VER_2_0);
   ```
 
   > addMotor 함수를 이용하여 추가한다.
- 
-## [사용 가능한 API 목록](#사용-가능한-api-목록)
 
+
+## [사용 가능한 API 목록](#사용-가능한-api-목록)
 ```c
 bool begin(uint32_t baud_rate = 57600, uint8_t protocol_version = DXL_PACKET_VER_2_0);
 
