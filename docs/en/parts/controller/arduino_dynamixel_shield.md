@@ -143,7 +143,8 @@ The shield library is based on the Dynamixel model and automatically refers to t
   ```
 
   > Add Dynamixel using **addMotor** function.
- 
+
+
 ## [Available APIs](#available-apis)
 
 ```c
