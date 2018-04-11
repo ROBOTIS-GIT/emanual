@@ -304,8 +304,6 @@ This chapter explains how to recover ROBOTIS-OP3 softwares using recovery USB im
 ### CloneZilla recovery  
 Clonezilla is used to recover ROBOTIS-OP3 with the image file in the provided USB.  
 
-> Reference : [e-manual]
-
 #### How to make a recovery USB media  
 - Format a USB drive(at least 4GB space should be available)  
 - Download the ROBOTIS-OP3 Recovery image  
@@ -314,17 +312,17 @@ Clonezilla is used to recover ROBOTIS-OP3 with the image file in the provided US
 - Extract the compressed file to the root folder of the USB drive. The folder structure looks like below.
   ```
   .
-  |-- boot
-  |   `-- grub
-  |-- EFI
-  |   |-- boot
-  |   `-- images
-  |-- home
-  |   `-- partimag
-  |       `-- ROBOTIS-OP3_transcend
-  |-- live
-  |-- syslinux
-  `-- utils
+  ├── boot
+  │   └── grub
+  ├── EFI
+  │   ├── boot
+  │   └── images
+  ├── home
+  │   └── partimag
+  │       └── ROBOTIS-OP3_transcend
+  ├── live
+  ├── syslinux
+  └── utils
   ```
 
 #### How to recover ROBOTIS-OP3
@@ -355,12 +353,12 @@ Clonezilla is used to recover ROBOTIS-OP3 with the image file in the provided US
 [ROBOTIS-OP3-msgs]: /docs/en/platform/op3/robotis_ros_packages/#robotis-op3-msgs
 [ROBOTIS-OP3-Tools]: /docs/en/platform/op3/robotis_ros_packages/#robotis-op3-tools
 [ROBOTIS-OP3-Common]: /docs/en/platform/op3/robotis_ros_packages/#robotis-op3-common
-[ROS Environment and Network Settings]: /docs/en/platform/common/op3_robot_operating_system/#op3-robot-operating-system
+[ROS Installation]: /docs/en/platform/common/op3_robot_operating_system/#how-to-install-ros
+[ROS Environment and Network Settings]: /docs/en/platform/common/op3_robot_operating_system/#setup
 [Setting for automatic startup]: /docs/en/platform/op3/getting_started/#how-to-kill-the-demo-program
 [e-manual]: /docs/en/platform/op3/recovery/#recovery-of-robotis-op3
 [sourceforge.net]: https://sourceforge.net/projects/darwinop/files/Software/Main%20Controller/Recovery%20USB/clonezilla-live-ROBOTIS-OP3_Recovery_180402.zip/download
 
-[ROS Installation]: /docs/en/platform/op3/recovery/#installing-robotis-ros-packages
 [DynamixelSDK]: /docs/en/software/robotis_framework_packages/#dynamixelsdk
 [ROBOTIS-Framerowk]: /docs/en/software/robotis_framework_packages/#robotis-framework
 [ROBOTIS-Framerowk-msgs]: /docs/en/software/robotis_framework_packages/#robotis-framework-msgs

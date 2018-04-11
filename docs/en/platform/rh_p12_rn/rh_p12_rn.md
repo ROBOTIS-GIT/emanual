@@ -31,7 +31,7 @@ sidebar:
 | Operating Mode         | Current Control Mode<br />Current based Position Control Mode                                  |
 | Weight                 | 500g                                                                                           |
 | Stroke                 | 0 ~ 109mm                                                                                      |
-| Gear Ratio             | 1295.7 : 1                                                                                     |
+| Gear Ratio             | 1181 : 1                                                                                       |
 | Maximum Gripping Force | 170N                                                                                           |
 | Recommended Payload    | 5kg                                                                                            |
 | Operating Temperature  | -5&deg;C ~ 55&deg;C                                                                            |
