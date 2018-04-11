@@ -304,8 +304,6 @@ This chapter explains how to recover ROBOTIS-OP3 softwares using recovery USB im
 ### CloneZilla recovery  
 Clonezilla is used to recover ROBOTIS-OP3 with the image file in the provided USB.  
 
-> Reference : [e-manual]
-
 #### How to make a recovery USB media  
 - Format a USB drive(at least 4GB space should be available)  
 - Download the ROBOTIS-OP3 Recovery image  
@@ -314,17 +312,17 @@ Clonezilla is used to recover ROBOTIS-OP3 with the image file in the provided US
 - Extract the compressed file to the root folder of the USB drive. The folder structure looks like below.
   ```
   .
-  |-- boot
-  |   `-- grub
-  |-- EFI
-  |   |-- boot
-  |   `-- images
-  |-- home
-  |   `-- partimag
-  |       `-- ROBOTIS-OP3_transcend
-  |-- live
-  |-- syslinux
-  `-- utils
+  ├── boot
+  │   └── grub
+  ├── EFI
+  │   ├── boot
+  │   └── images
+  ├── home
+  │   └── partimag
+  │       └── ROBOTIS-OP3_transcend
+  ├── live
+  ├── syslinux
+  └── utils
   ```
 
 #### How to recover ROBOTIS-OP3
