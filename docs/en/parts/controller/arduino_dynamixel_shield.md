@@ -49,7 +49,7 @@ Dynamixel Shield  was created to use RC100 and Dynamixel on arduino board. We pr
 `Caution3` TTL, TTL (XL-430) and RS485 connectors are all connected in parallel in one serial.
 {% endcapture %}
 
-<div class="notice--warning">{{ shield | markdownify }}</div>
+<div class="notice--warning">{{ shield_01 | markdownify }}</div>
 
 # [Connecting Power](#connecting-power)
 
@@ -127,15 +127,13 @@ dxl.begin(1000000, DXL_PACKET_VER_2_0);
 The shield library is based on the Dynamixel model and automatically refers to the address value, so you need to add the ID and model of the connected Dynamixel to know what the connected Dynamixel is.
 
 -	Automatic Setup
-
   ```c
   dxl.ping();
   ```
 
-  > Using *ping* function, automatically search from 1 to 31 and add connected Dynamixel.
+  > Using **ping** function, automatically search from 1 to 31 and add connected Dynamixel.
 
 -	Manual Setup
-
   ```c
   dxl.begin(1000000);
   delay(1000);
@@ -144,7 +142,7 @@ The shield library is based on the Dynamixel model and automatically refers to t
   dxl.addMotor(15, M_AX12);
   ```
 
-  > Add Dynamixel using *addMotor* function.
+  > Add Dynamixel using **addMotor** function.
  
 ## [Available APIs](#available-apis)
 

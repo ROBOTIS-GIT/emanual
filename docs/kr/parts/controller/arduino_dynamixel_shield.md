@@ -48,7 +48,7 @@ sidebar:
 `주의3` TTL, TTL (XL-430) and RS485 커넥터들은 병렬로 연결되어 하나의 serial을 사용한다.
 {% endcapture %}
 
-<div class="notice--warning">{{ shield | markdownify }}</div>
+<div class="notice--warning">{{ shield_01 | markdownify }}</div>
 
 # [전원 연결 방법](#전원-연결-방법)
 
@@ -127,7 +127,6 @@ dxl.begin(1000000, DXL_PACKET_VER_2_0);
 쉴드 라이브러리는 다이나믹셀의 모델을 기반으로 하여 자동으로 주소값을 참조하도록 되어 있기 때문에 연결된 다이나믹셀이 무엇인지 알기 위해서 연결된 다이나믹셀의 ID와 모델을 추가해야 한다.
 
 -	자동 추가
-
   ```c
   dxl.ping();
   ```
@@ -135,7 +134,6 @@ dxl.begin(1000000, DXL_PACKET_VER_2_0);
   > ping 함수를 이용하여 자동으로 1번 부터 31번까지 검색을 해서 연결된 다이나믹셀이 있으면 추가한다.
 
 -	수동 추가
-
   ```c
   dxl.begin(1000000);
   delay(1000);
