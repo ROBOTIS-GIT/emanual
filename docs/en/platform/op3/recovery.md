@@ -309,7 +309,7 @@ Clonezilla is used to recover ROBOTIS-OP3 with the image file in the provided US
 #### How to make a recovery USB media  
 - Format a USB drive(at least 4GB space should be available)  
 - Download the ROBOTIS-OP3 Recovery image  
-  - Latest version : clonezilla-live-ROBOTIS-OP3_Recovery_171013.zip   
+  - Latest version : clonezilla-live-ROBOTIS-OP3_Recovery_180402.zip   
   - `Download` [sourceforge.net]   
 - Extract the compressed file to the root folder of the USB drive. The folder structure looks like below.
   ```
@@ -345,7 +345,7 @@ Clonezilla is used to recover ROBOTIS-OP3 with the image file in the provided US
 
 
 ### File
-* clonezilla-live-ROBOTIS-OP3_Recovery_171013.zip  
+* clonezilla-live-ROBOTIS-OP3_Recovery_180402.zip  
     * `Download` [sourceforge.net]  
 
 
@@ -358,7 +358,7 @@ Clonezilla is used to recover ROBOTIS-OP3 with the image file in the provided US
 [ROS Environment and Network Settings]: /docs/en/platform/common/op3_robot_operating_system/#op3-robot-operating-system
 [Setting for automatic startup]: /docs/en/platform/op3/getting_started/#how-to-kill-the-demo-program
 [e-manual]: /docs/en/platform/op/maintenance/#clonezilla-recovery
-[sourceforge.net]: https://downloads.sourceforge.net/project/darwinop/Software/Main%20Controller/Recovery%20USB/clonezilla-live-ROBOTIS-OP3_Recovery_171013.zip?r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fdarwinop%2Ffiles%2FSoftware%2FMain%2520Controller%2FRecovery%2520USB%2F&ts=1508126998&use_mirror=netix)
+[sourceforge.net]: https://sourceforge.net/projects/darwinop/files/Software/Main%20Controller/Recovery%20USB/clonezilla-live-ROBOTIS-OP3_Recovery_180402.zip/download
 
 [ROS Installation]: /docs/en/platform/op3/recovery/#installing-robotis-ros-packages
 [DynamixelSDK]: /docs/en/software/robotis_framework_packages/#dynamixelsdk
