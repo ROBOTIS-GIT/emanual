@@ -5,7 +5,7 @@ ref: arduino_dynamixel_shield
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/kr/parts/controller/arduino_dynamixel_shield/
+permalink: /docs/en/parts/controller/arduino_dynamixel_shield/
 sidebar:
   title: Dynamixel Shield
   nav: "arduino_dynamixel_shield"
