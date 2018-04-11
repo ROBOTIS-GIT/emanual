@@ -13,7 +13,7 @@ sidebar:
 
 # [Introduction](#introduction)
 
-![](/assets/images/sw/dynamixel/dynamixel_workbench/dynamixel_workbench_intro.jpg)
+![](/assets/images/sw/dynamixel/dynamixel_workbench/DYNAMIXEL_WORKBENCH_LOGO.png)
 
 The **Dynamixel Workbench** metapackage contains four packages: **Single Manager**, **Controllers**, **Operators**, and **Toolbox**. The ***Single Manager*** package provides a program that can manage the entire Dynamixel series, including Dynamixel, Dynamixel X, and Dynamixel PRO, using the ***Toolbox*** library developed on the basis of [Dynamixel SDK](http://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_sdk/overview/). These packages not only show the status of Dynamixel, but also allow you to change Control Table address values via command line or GUI interface. The ***Controllers*** package introduces how to employ the Dynamixel on different operating mode with Dynamixel Workbench library(***Toolbox***).  In addition, the ***Operators*** demonstrates some straightforward examples by operating ***Controllers***.
 
@@ -299,6 +299,8 @@ $ sudo apt-get install ros-kinetic-qt-build
 {: .notice--info}
 
 ### [Command line](#command-line)
+
+![](/assets/images/sw/dynamixel/dynamixel_workbench/dynamixel_workbench_intro.jpg)
 
 1. Create a package
 

@@ -937,7 +937,7 @@ Connect to ROBOTIS-OP3 WiFi with below information
 
 [op3_navigation]: https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Tools/tree/master/op3_navigation
 [Face Tracker - ROS Package]: https://github.com/ROBOTIS-GIT/face_detection
-[ROBOT WEB TOOL]: robotwebtools.org/
+[ROBOT WEB TOOL]: http://robotwebtools.org/
 [web_video_server]: http://wiki.ros.org/rosbridge_server  
 [rosbridge_server]: http://wiki.ros.org/web_video_server
 [How to connect]: /docs/en/platform/op3/quick_start/#example--ssh-client-for-windows

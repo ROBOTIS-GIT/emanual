@@ -169,23 +169,23 @@ This chapter explains how to install software and configure ROBOTIS OP3.
 
 - [humanoid_navigation]  
     Package for footstep planner.
-    - Installation prerequisite packages
-        ```
-        $ sudo apt-get install ros-kinetic-map-server
-        $ sudo apt-get install ros-kinetic-humanoid-nav-msgs
-        $ sudo apt-get install ros-kinetic-nav-msgs
-        $ sudo apt-get install ros-kinetic-octomap
-        $ sudo apt-get install ros-kinetic-octomap-msgs
-        $ sudo apt-get install ros-kinetic-octomap-ros
-        $ sudo apt-get install ros-kinetic-octomap-server
-        ```  
+    - Install prerequisite packages
+      ```
+      $ sudo apt-get install ros-kinetic-map-server
+      $ sudo apt-get install ros-kinetic-humanoid-nav-msgs
+      $ sudo apt-get install ros-kinetic-nav-msgs
+      $ sudo apt-get install ros-kinetic-octomap
+      $ sudo apt-get install ros-kinetic-octomap-msgs
+      $ sudo apt-get install ros-kinetic-octomap-ros
+      $ sudo apt-get install ros-kinetic-octomap-server
+      ```  
 
-    - Installation library from sources
+    - Install library from sources
         * sbpl  
 
           > Reference : [https://github.com/sbpl/sbpl]
 
-    - Installation humanoid_navigation
+    - Install humanoid_navigation
         ```
         $ cd ~/catkin_ws/src
         $ git clone https://github.com/ROBOTIS-GIT/humanoid_navigation.git
@@ -197,7 +197,7 @@ This chapter explains how to install software and configure ROBOTIS OP3.
       $ sudo apt install ros-kinetic-rosbridge-server ros-kinetic-web-video-server
       ```
 
-#### [Installing ROBOTIS ROS Package](#installing-robotis-ros-package)  
+#### [Installing ROBOTIS ROS Packages](#installing-robotis-ros-packages)  
 
  - ROBOTIS ROS Packages
    -  [DynamixelSDK] : SDK for Dynamixel  
@@ -306,27 +306,26 @@ Clonezilla is used to recover ROBOTIS-OP3 with the image file in the provided US
 
 > Reference : [e-manual]
 
-#### How to make a recovery USB media   
-- format an USB memory(above 4GB)  
+#### How to make a recovery USB media  
+- Format a USB drive(at least 4GB space should be available)  
 - Download the ROBOTIS-OP3 Recovery image  
   - Latest version : clonezilla-live-ROBOTIS-OP3_Recovery_171013.zip   
-  - [ [Download] ] - sourceforge.net   
-- extract the compressed file to the root folder of a USB memory  
-  folder tree looks like below.
-```
-  	.
-  	|-- boot
-  	|   `-- grub
-  	|-- EFI
-  	|   |-- boot
-  	|   `-- images
-  	|-- home
-  	|   `-- partimag
-  	|       `-- ROBOTIS-OP3_transcend
-  	|-- live
-  	|-- syslinux
-  	`-- utils
-```
+  - `Download` [sourceforge.net]   
+- Extract the compressed file to the root folder of the USB drive. The folder structure looks like below.
+  ```
+  .
+  |-- boot
+  |   `-- grub
+  |-- EFI
+  |   |-- boot
+  |   `-- images
+  |-- home
+  |   `-- partimag
+  |       `-- ROBOTIS-OP3_transcend
+  |-- live
+  |-- syslinux
+  `-- utils
+  ```
 
 #### How to recover ROBOTIS-OP3
 - Go to boot manager : Press **F10**  
@@ -335,29 +334,22 @@ Clonezilla is used to recover ROBOTIS-OP3 with the image file in the provided US
 	![](/assets/images/platform/op3/op3_recovery_02.jpg)  
 - Select the image : clonezilla live with img ROBOTIS-OP3_Transcend (Default settings, VGA 1024x768)  
 	![](/assets/images/platform/op3/op3_recovery_03.jpg)  
-- confirm to continue : type `y` and ENTER  
+- Confirm to continue : enter `y`  
 	![](/assets/images/platform/op3/op3_recovery_04.jpg)  
-- confirm to continue : type `y` and ENTER  
+- Confirm to continue : enter `y`  
 	![](/assets/images/platform/op3/op3_recovery_05.jpg)  
-- check the progress  
+- Check the progress  
 	![](/assets/images/platform/op3/op3_recovery_06.jpg)  
-- turn off or reboot ROBOTIS-OP3  
+- Turn off or reboot ROBOTIS-OP3  
 	![](/assets/images/platform/op3/op3_recovery_08.jpg)  
 
 
 ### File
 * clonezilla-live-ROBOTIS-OP3_Recovery_171013.zip  
-    * [ [Download] ] - sourceforge.net  
-
-
-
-
-
+    * `Download` [sourceforge.net]  
 
 
 [How to Install Linux Mint]: https://www.linuxmint.com/documentation/user-guide/Cinnamon/english_18.0.pdf
-
-
 [ROBOTIS-OP3]: /docs/en/platform/op3/robotis_ros_packages/#robotis-op3
 [ROBOTIS-OP3-Demo]: /docs/en/platform/op3/robotis_ros_packages/#robotis-op3-demo
 [ROBOTIS-OP3-msgs]: /docs/en/platform/op3/robotis_ros_packages/#robotis-op3-msgs
@@ -366,10 +358,9 @@ Clonezilla is used to recover ROBOTIS-OP3 with the image file in the provided US
 [ROS Environment and Network Settings]: /docs/en/platform/common/op3_robot_operating_system/#op3-robot-operating-system
 [Setting for automatic startup]: /docs/en/platform/op3/getting_started/#how-to-kill-the-demo-program
 [e-manual]: /docs/en/platform/op/maintenance/#clonezilla-recovery
+[sourceforge.net]: https://downloads.sourceforge.net/project/darwinop/Software/Main%20Controller/Recovery%20USB/clonezilla-live-ROBOTIS-OP3_Recovery_171013.zip?r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fdarwinop%2Ffiles%2FSoftware%2FMain%2520Controller%2FRecovery%2520USB%2F&ts=1508126998&use_mirror=netix)
 
-[Download]: https://downloads.sourceforge.net/project/darwinop/Software/Main%20Controller/Recovery%20USB/clonezilla-live-ROBOTIS-OP3_Recovery_171013.zip?r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fdarwinop%2Ffiles%2FSoftware%2FMain%2520Controller%2FRecovery%2520USB%2F&ts=1508126998&use_mirror=netix)
-
-[ROS Installation]: /docs/en/platform/op3/recovery/#installing-robotis-ros-package
+[ROS Installation]: /docs/en/platform/op3/recovery/#installing-robotis-ros-packages
 [DynamixelSDK]: /docs/en/software/robotis_framework_packages/#dynamixelsdk
 [ROBOTIS-Framerowk]: /docs/en/software/robotis_framework_packages/#robotis-framework
 [ROBOTIS-Framerowk-msgs]: /docs/en/software/robotis_framework_packages/#robotis-framework-msgs

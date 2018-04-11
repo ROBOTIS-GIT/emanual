@@ -131,6 +131,10 @@ Second, synchronize to NTP server
 **Turtlebot3 Setup Dynamixels**
 ----------------------------------------------------
 
+**Warning :** Please connect only **single** Dynamixel with OpenCR
+{: .notice--warning}
+
+
 1. Download Setup Firmware
 
     As shown in below image, from the example menu, go to turtlebot3 → turtlebot3_setup →

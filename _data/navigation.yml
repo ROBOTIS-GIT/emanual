@@ -375,6 +375,9 @@ main:
     - title: "OpenCM IDE"
       titlekr: "OpenCM IDE"
       url: /software/opencm_ide/getting_started/
+    - title: "Arduino IDE"
+      titlekr: "아두이노 IDE"
+      url: /software/arduino_ide/
     - title: "ROBOTIS Framework Packages"
       url: /software/robotis_framework_packages/
   - title: "PARTS"
@@ -9213,7 +9216,7 @@ op3:
     - title: "ROBOTIS OP3 msgs"
       url: /platform/op3/robotis_ros_packages/#robotis-op3-msgs
     - title: "ROBOTIS OP3 Demo"
-      url: /platform/op3/robotis_ros_packages/#robotis-op3-Demo
+      url: /platform/op3/robotis_ros_packages/#robotis-op3-demo
     - title: "ROBOTIS OP3 Common"
       url: /platform/op3/robotis_ros_packages/#robotis-op3-common
     - title: "ROBOTIS OP3 Tools"
@@ -9244,6 +9247,8 @@ op3:
       url: /platform/op3/tutorials/#how-to-use-ball-detector
     - title: "How to control upgraded walking"
       url: /platform/op3/tutorials/#how-to-control-upgraded-walking-using-footstep-planner
+    - title: "How to use Web Setting Tool"
+      url: /platform/op3/tutorials/#how-to-use-web-setting-tool
   - title: "Simulation"
     url: /platform/op3/simulation/#simulation
     children:
@@ -9258,6 +9263,8 @@ op3:
       url: /platform/op3/hardware/#assemble-data
     - title: "Cover Skin Data"
       url: /platform/op3/hardware/#cover-skin-data
+    - title: "Electronics Data"
+      url: /platform/op3/hardware/#electronics-data
   - title: "Recovery"
     url: /platform/op3/recovery/
     children:
@@ -12143,6 +12150,56 @@ opencmide:
       titlekr: "Utilities"
       url: /software/opencm_ide/api_reference/#utilities
       urlkr: /software/opencm_ide/api_reference/#utilities
+
+arduino_ide:
+  - title: "Introduction"
+    url: /software/arduino_ide/#introduction
+  - title: "Software Installation"
+    url: /software/arduino_ide/#software-installation
+    children:
+    - title: "Install on Linux"
+      url: /software/arduino_ide/#install-on-linux
+      children:
+      - title: "USB Port Settings"
+        url: /software/arduino_ide/#usb-port-settings
+      - title: "Compiler Settings"
+        url: /software/arduino_ide/#compiler-settings
+      - title: "Install Arduino IDE"
+        url: /software/arduino_ide/#install-arduino-idelinux
+      - title: "Run Arduino IDE"
+        url: /software/arduino_ide/#run-arduino-idelinux
+      - title: "Porting to Arduino IDE"
+        url: /software/arduino_ide/#porting-to-arduino-idelinux
+      - title: "Remove Modemmanager"
+        url: /software/arduino_ide/#remove-modemmanager
+    - title: "Install on Mac"
+      url: /software/arduino_ide/#install-on-mac
+      children:
+      - title: "Install Arduino IDE"
+        url: /software/arduino_ide/#install-arduino-idemac
+      - title: "Run Arduino IDE"
+        url: /software/arduino_ide/#run-arduino-idemac
+      - title: "Porting to Arduino IDE"
+        url: /software/arduino_ide/#porting-to-arduino-idemac
+    - title: "Install on Windows"
+      url: /software/arduino_ide/#install-on-windows
+      children:
+      - title: "Install Driver"
+        url: /software/arduino_ide/#install-driver
+      - title: "Install Arduino IDE"
+        url: /software/arduino_ide/#install-arduino-idewindows
+      - title: "Porting to Arduino IDE"
+        url: /software/arduino_ide/#porting-to-arduino-idewindows
+  - title: "Examples"
+    url: /software/arduino_ide/#examples
+    children:
+    - title: "OpenCM9.04 Examples"
+      url: /software/arduino_ide/#opencm904-examples
+  - title: "Advanced Users"
+    url: /software/arduino_ide/#advanced-users
+    children:
+    - title: "Writing Bootloader(OpenCR)"
+      url: /software/arduino_ide/#writing-bootloaderopencr
 
 robotis_framework_packages:
   - title: "ROBOTIS Framework Packages"
