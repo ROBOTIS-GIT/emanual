@@ -357,7 +357,7 @@ Clonezilla is used to recover ROBOTIS-OP3 with the image file in the provided US
 [ROBOTIS-OP3-Common]: /docs/en/platform/op3/robotis_ros_packages/#robotis-op3-common
 [ROS Environment and Network Settings]: /docs/en/platform/common/op3_robot_operating_system/#op3-robot-operating-system
 [Setting for automatic startup]: /docs/en/platform/op3/getting_started/#how-to-kill-the-demo-program
-[e-manual]: /docs/en/platform/op/maintenance/#clonezilla-recovery
+[e-manual]: /docs/en/platform/op3/recovery/#recovery-of-robotis-op3
 [sourceforge.net]: https://sourceforge.net/projects/darwinop/files/Software/Main%20Controller/Recovery%20USB/clonezilla-live-ROBOTIS-OP3_Recovery_180402.zip/download
 
 [ROS Installation]: /docs/en/platform/op3/recovery/#installing-robotis-ros-packages
@@ -370,4 +370,4 @@ Clonezilla is used to recover ROBOTIS-OP3 with the image file in the provided US
 [https://github.com/sbpl/sbpl]: https://github.com/sbpl/sbpl
 [rosbridge_server]: http://wiki.ros.org/rosbridge_server
 [web_video_server]: http://wiki.ros.org/web_video_server
-[How to use Web Setting Tool]: /docs/en/software/robotis_framework_packages/#how-to-use-web-setting-tool
+[How to use Web Setting Tool]: /docs/en/platform/op3/tutorials/#how-to-use-web-setting-tool
