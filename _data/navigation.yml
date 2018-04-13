@@ -13725,6 +13725,24 @@ arduino_dynamixel_shield:
       url: /parts/controller/arduino_dynamixel_shield/#available-apis
       urlkr: /parts/controller/arduino_dynamixel_shield/#사용-가능한-api-목록
 
+u2d2_power_hub:
+  - title: "Introduction"
+    titlekr: "개요"
+    url: /parts/controller/u2d2_power_hub/#introduction
+    urlkr: /parts/controller/u2d2_power_hub/#개요
+  - title: "Specifications"
+    titlekr: "제품 사양"
+    url: /parts/controller/u2d2_power_hub/#specifications
+    urlkr: /parts/controller/u2d2_power_hub/#제품-사양
+  - title: "Layout"
+    titlekr: "각 부 명칭"
+    url: /parts/controller/u2d2_power_hub/#layout
+    urlkr: /parts/controller/u2d2_power_hub/#각-부-명칭
+  - title: "Cautions"
+    titlekr: "주의사항"
+    url: /parts/controller/u2d2_power_hub/#cautions
+    urlkr: /parts/controller/u2d2_power_hub/#주의사항
+
 opencm7:
   - titlekr: "개요"
     urlkr: /parts/controller/opencm7/#개요
