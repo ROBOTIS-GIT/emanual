@@ -94,5 +94,5 @@ sidebar:
 - `다운로드` [ROBOTIS R+Scratch]
 - `다운로드` [ROBOTCAR entry]
 
-[ROBOTIS_R+Scratch]: http://www.robotis.com/service/download.php?no=747
-[ROBOTCAR_entry]: http://www.robotis.com/service/download.php?no=746
+[ROBOTIS R+Scratch]: http://www.robotis.com/service/download.php?no=747
+[ROBOTCAR entry]: http://www.robotis.com/service/download.php?no=746
