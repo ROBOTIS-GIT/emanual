@@ -412,6 +412,8 @@ main:
       - title: "*CM-900"
         titlekr: "*CM-900"
         url: /parts/controller/cm-900/
+      - titlekr: "OpenCM7"
+        url: /parts/controller/opencm7/
       - title: "OpenCM 9.04"
         titlekr: "OpenCM 9.04"
         url: /parts/controller/opencm904/
