@@ -17,13 +17,13 @@ sidebar:
 
 ![](/assets/images/platform/turtlebot3/software/remote_pc_and_turtlebot.png)
 
-**Note :** This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+`Note` This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 {: .notice--info}
 
-**Warning :** Make sure to run the [Bringup](#bringup) instruction before performing Teleoperation.
+`Warning` Make sure to run the [Bringup](#bringup) instruction before performing Teleoperation.
 {: .notice--warning}
 
-**Warning :** Be careful when testing the robot on the table as the robot might fall.
+`Warning` Be careful when testing the robot on the table as the robot might fall.
 {: .notice--warning}
 
 **Tip :** The teleoperation is supposed to be running on the remote PC. **Follow the instruction on your Remote PC**.

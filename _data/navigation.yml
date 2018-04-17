@@ -9988,8 +9988,10 @@ turtlebot3:
       url: /platform/turtlebot3/applications/#turtlebot-follower-demo
     - title: "TurtleBot Panorama Demo Using Raspberry Pi Camera Module"
       url: /platform/turtlebot3/applications/#turtlebot-panorama-demo-using-raspberry-pi-camera-module
-    - title: "Automatic Docking"
+    - title: "Automatic Parking"
       url: /platform/turtlebot3/applications/#automatic-docking
+    - title: "Automatic Parking Vision"
+      url: /platform/turtlebot3/applications/#automatic-parking-vision
   - title: "Friends"
     url: /platform/turtlebot3/friends/#friends
     children:
