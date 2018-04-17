@@ -9989,7 +9989,7 @@ turtlebot3:
     - title: "TurtleBot Panorama Demo Using Raspberry Pi Camera Module"
       url: /platform/turtlebot3/applications/#turtlebot-panorama-demo-using-raspberry-pi-camera-module
     - title: "Automatic Parking"
-      url: /platform/turtlebot3/applications/#automatic-docking
+      url: /platform/turtlebot3/applications/#automatic-parking
     - title: "Automatic Parking Vision"
       url: /platform/turtlebot3/applications/#automatic-parking-vision
   - title: "Friends"
