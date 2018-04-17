@@ -17,18 +17,18 @@ sidebar:
 
 ![](/assets/images/platform/turtlebot3/software/remote_pc_and_turtlebot.png)
 
-**Note :** If you want to get more detail about OpenCR, Please contact an [OpenCR WiKi](/docs/en/parts/controller/opencr10/)
+`Note` If you want to get more detail about OpenCR, Please contact an [OpenCR WiKi](/docs/en/parts/controller/opencr10/)
 {: .notice--info}
 
 
 ## [OpenCR1.0 Firmware Upload for TB3](#opencr10-firmware-upload-for-tb3)
 
-**Note :** You can choose one of methods for uploading firmware. But we highly recommend to use **shell script**.
+`Note` You can choose one of methods for uploading firmware. But we highly recommend to use **shell script**.
 {: .notice--info}
 
 ### [Shell Script](shell-script)
   
-**Note :** This instruction was tested on `Ubuntu 16.04`, `Ubuntu Mate`, `Linux Mint` or `Raspbian` and OpenCR1.0 software setup can be done from `Intel® Joule™`, `Raspberry Pi 3`.
+`Note` This instruction was tested on `Ubuntu 16.04`, `Ubuntu Mate`, `Linux Mint` or `Raspbian` and OpenCR1.0 software setup can be done from `Intel® Joule™`, `Raspberry Pi 3`.
 {: .notice--info}
 
   - TurtleBot3 Burger
@@ -59,7 +59,7 @@ When firmware upload is completed, `jump_to_fw` text string will be printed on t
 
 ### [Arduino IDE](#arduino-ide)
 
-**Warning :** The contents in this chapter corresponds to the `Remote PC` (your desktop or laptop PC) which will control TurtleBot3. Do **NOT** apply this instruction to your TurtleBot3.
+`Warning` The contents in this chapter corresponds to the `Remote PC` (your desktop or laptop PC) which will control TurtleBot3. Do **NOT** apply this instruction to your TurtleBot3.
 {: .notice--warning}
 
 Before you following step, please setup Arduino IDE
@@ -83,7 +83,7 @@ If you have TurtleBot3 Waffle or Waffle Pi,
 
 ![](/assets/images/platform/turtlebot3/opencr/o3.png)
 
-**Note :** If error occurs while uploading firmware, go to `Tools` → `Port` and check if correct port is selected. Press `Reset` button on the OpenCR1.0 and try to upload the firmware again.
+`Note` If error occurs while uploading firmware, go to `Tools` → `Port` and check if correct port is selected. Press `Reset` button on the OpenCR1.0 and try to upload the firmware again.
 {: .notice--info}
   
 **[Remote PC]** When firmware upload is completed, `jump_to_fw` text string will be printed on the screen.

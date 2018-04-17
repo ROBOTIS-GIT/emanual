@@ -15,14 +15,14 @@ sidebar:
 
 # [Raspberry Pi 3 Setup](#raspberry_pi_3_setup)
 
-**Note :** There are two ways to install Linux and ROS to Raspberry Pi 3. 
+`Note` There are two ways to install Linux and ROS to Raspberry Pi 3. 
 - First method: If you prefer Ubuntu MATE, please take the first method [Install Ubuntu MATE](http://emanual.robotis.com/docs/en/platform/turtlebot3/raspberry_pi_3_setup/#install-linux-ubuntu-mate) below. This method should install the ROS and dependency packages after installing the Linux images. This instruction takes about 1 hours to install ROS and related packages for TurtleBot3.
 - Second method: We provide the Linux distro based on Raspbian. They are pre-installed with ROS and ROS-packages related TurtleBot3. It is available immediately without additional installation. If you want to use it, please take the second method [Install Linux based on Raspbian](http://emanual.robotis.com/docs/en/platform/turtlebot3/raspberry_pi_3_setup/#install-linux-based-on-raspbian) below. 
 {: .notice--info}
 
 ## [Install Ubuntu MATE](#install-linux-ubuntu-mate)
 
-**Warning :** The SDcard should have at least **8 GB** of empty space in order to install Linux on Raspberry Pi 3.
+`Warning` The SDcard should have at least **8 GB** of empty space in order to install Linux on Raspberry Pi 3.
 {: .notice--warning}
 
 **[Remote PC]** Download `Ubuntu MATE 16.04` on the Raspberry Pi 3 from the link below.
@@ -53,10 +53,10 @@ $ sudo ddrescue -D --force ubuntu-mate-16.04.2-desktop-armhf-raspberry-pi.img /d
 
 ### [Install ROS](#install-ros)
 
-**Warning :** The contents in this chapter corresponds to the Raspberry Pi 3 which will be the main computer of **TurtleBot3 Burger and Waffle Pi**. Do **NOT** apply this instruction to your Remote PC (your desktop PC or laptop).
+`Warning` The contents in this chapter corresponds to the Raspberry Pi 3 which will be the main computer of **TurtleBot3 Burger and Waffle Pi**. Do **NOT** apply this instruction to your Remote PC (your desktop PC or laptop).
 {: .notice--warning}
 
-**Note :** This instruction takes about 1 hours to install ROS and related packages for TurtleBot3. Elapsed time may vary depending on network environment.
+`Note` This instruction takes about 1 hours to install ROS and related packages for TurtleBot3. Elapsed time may vary depending on network environment.
 {: .notice--info}
 
 ![](/assets/images/platform/turtlebot3/logo_ros.png)
@@ -70,10 +70,10 @@ $ sudo apt-get upgrade
 $ wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic_rp3.sh && chmod 755 ./install_ros_kinetic_rp3.sh && bash ./install_ros_kinetic_rp3.sh
 ```
 
-**Note :** In order to check which packages are installed, please check this link out. [install_ros_kinetic_rp3](https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic_rp3.sh)
+`Note` In order to check which packages are installed, please check this link out. [install_ros_kinetic_rp3](https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic_rp3.sh)
 {: .notice--info}
 
-**Note :** After install ROS, please reboot Raspberry Pi 3.
+`Note` After install ROS, please reboot Raspberry Pi 3.
 {: .notice--info}
 
 If you prefer manual installation, please following the link below.
@@ -93,7 +93,7 @@ $ git clone https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
 $ git clone https://github.com/ROBOTIS-GIT/turtlebot3.git
 ```
 
-**Note :** If you want to use Raspberry Pi Camera, please check related appendix for [Raspberry Pi Camera](http://emanual.robotis.com/docs/en/platform/turtlebot3/appendix_raspi_cam/#appendix-raspberry-pi-camera)
+`Note` If you want to use Raspberry Pi Camera, please check related appendix for [Raspberry Pi Camera](http://emanual.robotis.com/docs/en/platform/turtlebot3/appendix_raspi_cam/#appendix-raspberry-pi-camera)
 {: .notice--info}
 
 Delete some packages that are only used in Remote PC
@@ -109,7 +109,7 @@ Install dependent packages
 $ sudo apt-get install ros-kinetic-rosserial-python ros-kinetic-tf
 ```
 
-**Note :** After install packages, please reboot Raspberry Pi 3.
+`Note` After install packages, please reboot Raspberry Pi 3.
 {: .notice--info}
 
 Build packages
@@ -166,7 +166,7 @@ $ source ~/.bashrc
 
 ## [Install Linux based on Raspbian](#install-linux-based-on-raspbian)
 
-**Warning :** The SDcard should have at least **16 GB** of empty space in order to install Linux on Raspberry Pi 3.
+`Warning` The SDcard should have at least **16 GB** of empty space in order to install Linux on Raspberry Pi 3.
 {: .notice--warning}
 
 ### Linux distro based on Raspbian for ROS Users

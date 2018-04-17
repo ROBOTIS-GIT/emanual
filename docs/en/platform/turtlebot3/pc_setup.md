@@ -17,10 +17,10 @@ sidebar:
 
 ![](/assets/images/platform/turtlebot3/software/remote_pc_and_turtlebot.png)
 
-**Warning :** The contents in this chapter corresponds to the `Remote PC` (your desktop or laptop PC) which will control TurtleBot3. Do NOT apply this instruction to your TurtleBot3.
+`Warning` The contents in this chapter corresponds to the `Remote PC` (your desktop or laptop PC) which will control TurtleBot3. Do NOT apply this instruction to your TurtleBot3.
 {: .notice--warning}
 
-**Note :** This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+`Note` This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 {: .notice--info}
 
 ## [Install Ubuntu on Remote PC (Desktop or Laptop PC)](#install-ubuntu-on-remote-pc-desktop-or-laptop-pc)
@@ -48,10 +48,10 @@ $ sudo apt-get upgrade
 $ wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic.sh && chmod 755 ./install_ros_kinetic.sh && bash ./install_ros_kinetic.sh
 ```
 
-**Note :** In order to check which packages are installed, please check this link out. [install_ros_kinetic](https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic.sh)
+`Note` In order to check which packages are installed, please check this link out. [install_ros_kinetic](https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic.sh)
 {: .notice--info}
 
-**Note :** After install ROS, please reboot RemotePC.
+`Note` After install ROS, please reboot RemotePC.
 {: .notice--info}
 
 If you prefer manual installation, please following the link below.

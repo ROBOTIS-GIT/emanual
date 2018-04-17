@@ -44,7 +44,7 @@ Get source codes and make friends! Go to `Examples` → `turtlebot3` → `turtle
 
 ![](/assets/images/platform/turtlebot3/friends/ide.png)
 
-**Note :** Any suggestions and ideas for TurtleBot3 Friends Project are always welcomed. Tell us about your creative TurtleBot3 Friends. We can introduce your friend to the world through this wiki page! :)
+`Note` Any suggestions and ideas for TurtleBot3 Friends Project are always welcomed. Tell us about your creative TurtleBot3 Friends. We can introduce your friend to the world through this wiki page! :)
 {: .notice--info}
 
 E-Mail : ost@robotis.com
@@ -96,14 +96,14 @@ E-Mail : ost@robotis.com
 * Features: Balancing with only two DYNAMIXEL by applying PID controller.
 * Components: Two Dynamixel X 430 Series (All for balancing), an OpenCR1.0 Board, TurtleBot3 Chassis and Battery, 3D printed chassis.
 
-**Note :** Two Dynamixel X 430 Series are need to be set on PWM Mode.
+`Note` Two Dynamixel X 430 Series are need to be set on PWM Mode.
 {: .notice--info}
 
 * [BOM](https://goo.gl/XPgJkZ)
 * [Hardware](http://www.robotis.com/service/download.php?no=680)
 * Software: `Examples` → `turtlebot3` → `turtlebot3_friends` → `turtlebot3_segway`
 
-**Note :** Filters library have to be downloaded and includes it arduino IDE. [Github Link](https://github.com/JonHub/Filters)
+`Note` Filters library have to be downloaded and includes it arduino IDE. [Github Link](https://github.com/JonHub/Filters)
 {: .notice--info}
 
 * Video:
