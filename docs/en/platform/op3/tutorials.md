@@ -48,6 +48,7 @@ $ roslaunch op3_bringup op3_bringup.launch
 ```
 
 > If `op3_bringup` package is not existed, update source to latest version
+
 ```
 $ cd ~/catkin_ws/src/ROBOTIS-OP3-Demo
 $ git pull
@@ -61,6 +62,7 @@ When `op3_bringup` runs, robot moves to initial posture.
 1. execution result screen  
 
     ![](/assets/images/platform/op3/op3_manager_01.png)  
+
     If you get an error for offset.yaml, run op3_offset_tuner(server and client) and save the offset.
     {: .notice}
 
