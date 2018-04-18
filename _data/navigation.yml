@@ -9226,8 +9226,8 @@ op3:
   - title: "Tutorials"
     url: /platform/op3/tutorials/#tutorials
     children:
-    - title: "How to run OP3 program"
-      url: /platform/op3/tutorials/#how-to-run-op3s-program
+    - title: "ROBOTIS-OP3 BringUp"
+      url: /platform/op3/tutorials/#robotis-op3-bringup
     - title: "How to execute Default Demo"
       url: /platform/op3/tutorials/#how-to-execute-default-demo
     - title: "How to execute GUI program"
