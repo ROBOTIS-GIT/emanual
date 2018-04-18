@@ -105,7 +105,7 @@ $ roslaunch op3_bringup op3_bringup_visualization.launch
 ```  
   ![](/assets/images/platform/op3/op3_bringup.png.png)  
 
-#### `op3_bringup_visualization.launch`
+#### op3_bringup_visualization.launch
 ```
 <?xml version="1.0" ?>
 <launch>
@@ -328,7 +328,6 @@ Press the mode button twice from demonstration ready mode to switch to vision pr
   When the demo begins, ROBOTIS-OP3 will announce "Start vision processing demonstration" and stand up to search for a face.  
   If a face is detected, RGB-LED on the chest and back turns into white color and OP3's head will follow the detected face.  
     > Reference : [Face Tracker - ROS Package]
-
 
 2. Return to Demonstration Ready Mode  
   Pressing and holding the mode button for 3 seconds will make ROBOTIS-OP3 to take the initial posture and return to Demonstration ready mode.  
