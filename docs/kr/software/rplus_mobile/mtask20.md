@@ -149,7 +149,7 @@ sidebar:
 2. 로봇의 연결 장치를 선택합니다 (처음 연결할 경우 블루투스 필터 2자리를 입력해야 합니다.)
 3. “확인” 버튼을 클릭합니다.
 4. 창이 닫히면 “다운로드”버튼을 클릭합니다.(BT-210을 사용할 경우 PIN번호[0000]를 입력해야 합니다.)
-  
+
     ![](/assets/images/sw/rplus_mobile/r+m_task2_19_kr.gif)
 
 5. 다운로드가 완료되면 제어기가 Task를 실행합니다.(일부 제어기의 경우 제어기가 Task를 실행하는 대신 종료합니다.)
@@ -302,8 +302,8 @@ R+ Task 2.0 매뉴얼의 [프로그래밍(파라미터)]를 참고하세요.
 - 시스템 최저 요구 사양
   - OS : Android 2.3이상
   - 하드웨어 : 1.2 dual-core CPU, 1GB RAM 이상, 블루투스 및 센서 내장 기기
- 
-- 통신 
+
+- 통신
   - BT-410 지원 (Android 4.4이상)
   - BT-210, BT-110 지원
 
@@ -313,7 +313,7 @@ R+ Task 2.0 매뉴얼의 [프로그래밍(파라미터)]를 참고하세요.
 - 시스템 최저 요구 사양
   - OS : iOS 8.0 이상
   - 하드웨어 : iPhone4S, iPod 5G, iPad mini, iPad 2 이상
- 
+
 - 통신 관련
   - BT-410 지원
   - BT-210, BT-110 지원 불가
@@ -439,7 +439,7 @@ PC에서 작성한 태스크 파일을 iOS 기기에 복사하여 사용할 수 
 ## R+ Task 2.0에서 블루투스 모듈을 사용할 수 있나요?
 
 - 제어기마다 지원하는 블루투스 모듈이 다르므로 각 블루투스 모듈의 사양서를 참고하세요.
-  - BT-110, BT-210, BT-410
+  - [BT-110], [BT-210], [BT-410]
 
 ## 제어기가 잘 연결되지 않습니다. 어떻게 해야 하나요?
 
@@ -455,6 +455,7 @@ PC에서 작성한 태스크 파일을 iOS 기기에 복사하여 사용할 수 
 [CM-530]: /docs/kr/parts/controller/cm-530/
 [CM-700]: /docs/kr/parts/controller/cm-700/
 [OpenCM9.04]: /docs/kr/parts/controller/opencm904/
+[OpenCM7.0]: /docs/kr/parts/controller/opencm7/
 [ROBOTIS DREAM]: /docs/kr/edu/dream/dream1-1/
 [ROBOTIS SMART]: /docs/kr/edu/smart/smart1-1/
 [ROBOTIS STEM]: /docs/kr/edu/bioloid/stem/
@@ -462,3 +463,6 @@ PC에서 작성한 태스크 파일을 iOS 기기에 복사하여 사용할 수 
 [ROBOTIS GP]: /docs/kr/edu/bioloid/gp/
 [ROBOTIS MINI]: /docs/kr/edu/mini/
 [ROBOTIS IoT]: /docs/kr/edu/iot/iot-1/
+[BT-110]: /docs/kr/parts/communication/bt-110/
+[BT-210]: /docs/kr/parts/communication/bt-210/
+[BT-410]: /docs/kr/parts/communication/bt-410/

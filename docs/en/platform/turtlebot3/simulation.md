@@ -17,10 +17,10 @@ sidebar:
 
 ![](/assets/images/platform/turtlebot3/software/remote_pc_and_turtlebot.png)
 
-**Warning :** The contents in this chapter corresponds to the `Remote PC` (your desktop or laptop PC) which will control TurtleBot3. Do **NOT** apply this instruction to your TurtleBot3.
+`Warning` The contents in this chapter corresponds to the `Remote PC` (your desktop or laptop PC) which will control TurtleBot3. Do **NOT** apply this instruction to your TurtleBot3.
 {: .notice--warning}
 
-**Note :** This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+`Note` This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 {: .notice--info}
 
 ## [TurtleBot3 Fake Node Implementation](#turtlebot3-fake-node-implementation)
@@ -30,7 +30,7 @@ sidebar:
 
 Install dependent packages for TurtleBot3 Simulation.
 
-**Note :** turtlebot3_simulation package requires [**TurtleBot3**](http://turtlebot3.robotis.com/en/latest/pc_software.html#install-dependent-packages) package as a prerequisite.
+`Note` turtlebot3_simulation package requires [**TurtleBot3**](http://turtlebot3.robotis.com/en/latest/pc_software.html#install-dependent-packages) package as a prerequisite.
 {: .notice--info}
 
 ``` bash
@@ -68,7 +68,7 @@ $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 **Tip :** The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`-`Alt`-`T`.
 {: .notice--info}
 
-**Warning :** If you are running Gazebo for the first time on your `Remote PC`, it takes a bit longer than usual.
+`Warning` If you are running Gazebo for the first time on your `Remote PC`, it takes a bit longer than usual.
 {: .notice--warning}
 
 
@@ -212,7 +212,7 @@ In gazebo simulation, we can use navigation package that we used for the actual 
 
 ### [Standalone Gazebo Plugin](#standalone-gazebo-plugin)
 
-**Note :** This tutorial is developed only for user who want to simulate TurtleBot3 without `ROS`. 
+`Note` This tutorial is developed only for user who want to simulate TurtleBot3 without `ROS`. 
 However we highly recommend to simulate robots along `ROS`.
 {: .notice--info}
 

@@ -15,16 +15,16 @@ sidebar:
 
 # [Navigation](#navigation)
 
-**Note :** This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame` version.
+`Note` This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame` version.
 {: .notice--info}
 
-**Warning :** Make sure to run the [Bringup](#bringup) instruction before performing Navigation.
+`Warning` Make sure to run the [Bringup](#bringup) instruction before performing Navigation.
 {: .notice--warning}
 
-**Warning :** The navigation uses the a data created in [SLAM](#slam). Please make sure to have a map data.
+`Warning` The navigation uses the a data created in [SLAM](#slam). Please make sure to have a map data.
 {: .notice--warning}
 
-**Warning :** Be careful when testing the robot on the table as the robot might fall.
+`Warning` Be careful when testing the robot on the table as the robot might fall.
 {: .notice--warning}
 
 The Navigation locates TurtleBot3 to the calculated position in the map by combining actual sensor data and anticipated position data.

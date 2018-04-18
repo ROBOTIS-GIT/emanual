@@ -412,6 +412,8 @@ main:
       - title: "*CM-900"
         titlekr: "*CM-900"
         url: /parts/controller/cm-900/
+      - titlekr: "OpenCM7"
+        url: /parts/controller/opencm7/
       - title: "OpenCM 9.04"
         titlekr: "OpenCM 9.04"
         url: /parts/controller/opencm904/
@@ -9986,8 +9988,10 @@ turtlebot3:
       url: /platform/turtlebot3/applications/#turtlebot-follower-demo
     - title: "TurtleBot Panorama Demo Using Raspberry Pi Camera Module"
       url: /platform/turtlebot3/applications/#turtlebot-panorama-demo-using-raspberry-pi-camera-module
-    - title: "Automatic Docking"
-      url: /platform/turtlebot3/applications/#automatic-docking
+    - title: "Automatic Parking"
+      url: /platform/turtlebot3/applications/#automatic-parking
+    - title: "Automatic Parking Vision"
+      url: /platform/turtlebot3/applications/#automatic-parking-vision
   - title: "Friends"
     url: /platform/turtlebot3/friends/#friends
     children:
@@ -13724,6 +13728,24 @@ arduino_dynamixel_shield:
       titlekr: "사용 가능한 API 목록"
       url: /parts/controller/arduino_dynamixel_shield/#available-apis
       urlkr: /parts/controller/arduino_dynamixel_shield/#사용-가능한-api-목록
+
+u2d2_power_hub:
+  - title: "Introduction"
+    titlekr: "개요"
+    url: /parts/controller/u2d2_power_hub/#introduction
+    urlkr: /parts/controller/u2d2_power_hub/#개요
+  - title: "Specifications"
+    titlekr: "제품 사양"
+    url: /parts/controller/u2d2_power_hub/#specifications
+    urlkr: /parts/controller/u2d2_power_hub/#제품-사양
+  - title: "Layout"
+    titlekr: "각 부 명칭"
+    url: /parts/controller/u2d2_power_hub/#layout
+    urlkr: /parts/controller/u2d2_power_hub/#각-부-명칭
+  - title: "Cautions"
+    titlekr: "주의사항"
+    url: /parts/controller/u2d2_power_hub/#cautions
+    urlkr: /parts/controller/u2d2_power_hub/#주의사항
 
 opencm7:
   - titlekr: "개요"
