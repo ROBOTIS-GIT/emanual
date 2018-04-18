@@ -61,7 +61,8 @@ When `op3_bringup` runs, robot moves to initial posture.
 1. execution result screen  
 
     ![](/assets/images/platform/op3/op3_manager_01.png)  
-    If you get an error for offset.yaml, run op3_offset_tuner(server and client) and save the offset.{: .notice}    
+    If you get an error for offset.yaml, run op3_offset_tuner(server and client) and save the offset.
+    {: .notice}
 
 2. execution result of ROBOTIS-OP3(Init pose in RVIZ)  
 
@@ -103,7 +104,7 @@ Type below commands in the terminal window for visualization.
 ```
 $ roslaunch op3_bringup op3_bringup_visualization.launch  
 ```  
-  ![](/assets/images/platform/op3/op3_bringup.png.png)  
+  ![](/assets/images/platform/op3/op3_bringup.png)  
 
 #### op3_bringup_visualization.launch
 ```
@@ -991,7 +992,7 @@ Connect to ROBOTIS-OP3 WiFi with below information
 [Installing ROBOTIS ROS Package]: /docs/en/platform/op3/recovery/#installing-robotis-ros-packages
 
 [op3_demo]: /docs/en/platform/op3/robotis_ros_packages/#robotis-op3-demo
-[op3_gui_demo]: /docs/en/platform/op3/robotis_ros_packages/#op3_gui_demo
+[op3_gui_demo]: /docs/en/platform/op3/robotis_ros_packages/#op3-gui-demo
 [How to use walking tuner]: /docs/en/platform/op3/tutorials/#how-to-use-walking-tuner
 
 
