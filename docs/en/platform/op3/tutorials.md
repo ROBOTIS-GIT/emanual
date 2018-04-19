@@ -94,11 +94,11 @@ When `op3_bringup` runs, robot moves to initial posture.
 
 ```  
 
-* op3_manager : framework to control of ROBOTIS-OP3
-  * Robot file : `op3_manager/config/OP3.robot`   
-  * Joint initialize file : `op3_manager/config/dxl_init_OP3.yaml`  
-  * Offset file : `op3_manager/config/offset.yaml`  
-* usb_cam_node : package for usb camera of ROBOTIS-OP3    
+- op3_manager : framework to control of ROBOTIS-OP3
+  - Robot file : `op3_manager/config/OP3.robot`   
+  - Joint initialize file : `op3_manager/config/dxl_init_OP3.yaml`  
+  - Offset file : `op3_manager/config/offset.yaml`  
+- usb_cam_node : package for usb camera of ROBOTIS-OP3    
 
 ### Visualization
 Type below commands in the terminal window for visualization.   
@@ -106,19 +106,22 @@ Type below commands in the terminal window for visualization.
 ```
 $ roslaunch op3_bringup op3_bringup_visualization.launch  
 ```  
-* rviz screen  
+- rviz screen  
 
   ![](/assets/images/platform/op3/op3_bringup_visualization_01.png)  
 
-  * TF Tree  
+  - TF Tree  
 
-  ![](/assets/images/platform/op3/op3_bringup_visualization_04.png)  
+    ![](/assets/images/platform/op3/op3_bringup_visualization_04.png)  
+
     If you want to see the TF Tree, follow the below instruction.
-    {: .notice}  
-    1. Launch `rqt`
-      ```
-      $ rqt
-      ```
+    {: .notice}
+
+    1. Launch `rqt`  
+        ```
+        $ rqt
+        ```
+
     2. select `Plugins -> Visualization -> TF Tree`  
 
 
@@ -144,11 +147,11 @@ $ roslaunch op3_bringup op3_bringup_visualization.launch
 </launch>
 ```
 
-* parameter  
-  * robot_description : robot model for TF and visualization in rviz    
-* joint_state_publisher : visualization of joint value of ROBOTIS-OP3  
-* robot_state_publisher : making TF message for robot model  
-* rviz : visualization tool  
+- parameter  
+  - robot_description : robot model for TF and visualization in rviz    
+- joint_state_publisher : visualization of joint value of ROBOTIS-OP3  
+- robot_state_publisher : making TF message for robot model  
+- rviz : visualization tool  
 
 ### Description
 This section explains configuration files used in `op3_manager`(within `op3_bringup.launch`).  
