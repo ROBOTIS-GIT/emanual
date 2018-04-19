@@ -106,7 +106,21 @@ Type below commands in the terminal window for visualization.
 ```
 $ roslaunch op3_bringup op3_bringup_visualization.launch  
 ```  
-  ![](/assets/images/platform/op3/op3_bringup.png)  
+* rviz screen  
+
+  ![](/assets/images/platform/op3/op3_bringup_visualization_01.png)  
+
+  * TF Tree  
+
+  ![](/assets/images/platform/op3/op3_bringup_visualization_04.png)  
+    If you want to see the TF Tree, follow the below instruction.
+    {: .notice}  
+    1. Launch `rqt`
+      ```
+      $ rqt
+      ```
+    2. select `Plugins -> Visualization -> TF Tree`  
+
 
 #### op3_bringup_visualization.launch
 ```
