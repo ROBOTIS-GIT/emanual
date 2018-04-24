@@ -11251,32 +11251,32 @@ rplusterminal:
 dynamixel_wizard:
   - title: "Introduction"
     titlekr: "개요"
-    url: /software/rplus1/dynamixe_wizard/#introduction
-    urlkr: /software/rplus1/dynamixe_wizard/#개요
+    url: /software/rplus1/dynamixel_wizard/#introduction
+    urlkr: /software/rplus1/dynamixel_wizard/#개요
   - title: "Connecting Dynamixel"
     titlekr: "다이나믹셀 연결"
-    url: /software/rplus1/dynamixe_wizard/#connecting-dynamixel
-    urlkr: /software/rplus1/dynamixe_wizard/#다이나믹셀-연결
+    url: /software/rplus1/dynamixel_wizard/#connecting-dynamixel
+    urlkr: /software/rplus1/dynamixel_wizard/#다이나믹셀-연결
   - title: "Firmware Update"
     titlekr: "펌웨어 업데이트"
-    url: /software/rplus1/dynamixe_wizard/#firmware-update
-    urlkr: /software/rplus1/dynamixe_wizard/#펌웨어-업데이트
+    url: /software/rplus1/dynamixel_wizard/#firmware-update
+    urlkr: /software/rplus1/dynamixel_wizard/#펌웨어-업데이트
   - title: "Firmware Recovery"
     titlekr: "펌웨어 복구"
-    url: /software/rplus1/dynamixe_wizard/#firmware-recovery
-    urlkr: /software/rplus1/dynamixe_wizard/#펌웨어-복구
+    url: /software/rplus1/dynamixel_wizard/#firmware-recovery
+    urlkr: /software/rplus1/dynamixel_wizard/#펌웨어-복구
   - title: "Test and Setup"
     titlekr: "테스트 및 설정"
-    url: /software/rplus1/dynamixe_wizard/#test-and-setup
-    urlkr: /software/rplus1/dynamixe_wizard/#테스트-및-설정
+    url: /software/rplus1/dynamixel_wizard/#test-and-setup
+    urlkr: /software/rplus1/dynamixel_wizard/#테스트-및-설정
   - title: "MX Series Calibration"
     titlekr: "MX 시리즈 보정하기"
-    url: /software/rplus1/dynamixe_wizard/#mx-series-calibration
-    urlkr: /software/rplus1/dynamixe_wizard/#mx-시리즈-보정하기
+    url: /software/rplus1/dynamixel_wizard/#mx-series-calibration
+    urlkr: /software/rplus1/dynamixel_wizard/#mx-시리즈-보정하기
   - title: "Videos"
     titlekr: "동영상"
-    url: /software/rplus1/dynamixe_wizard/#videos
-    urlkr: /software/rplus1/dynamixe_wizard/#동영상
+    url: /software/rplus1/dynamixel_wizard/#videos
+    urlkr: /software/rplus1/dynamixel_wizard/#동영상
 
 #Task Code Download sidebar
 download_task_code:
