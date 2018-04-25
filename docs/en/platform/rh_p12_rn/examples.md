@@ -24,7 +24,7 @@ In order to run the example, RH-P12-RN should be set as belows.
 To modify the control table values in Windows, [R+ Manager 2.0](http://emanual.robotis.com/docs/en/software/rplus2/manager/) can be used.
 In case of Linux, [DXL Monitor](http://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_sdk/sample_code/cpp_dxl_monitor/#cpp-dxl-monitor) in Dynamixel SDK example can be used to access control table.
 
-## [Communication POrt Setup](#communication-port-setup)
+## [Communication Port Setup](#communication-port-setup)
 The Serial COM Port for Windows example is set as "**COM4**".  
 Please change the Serial COM Port to COM4 in the Device Manager or modify the DEVICE_NAME in the example source code.  
 In case of Linux example, the communication port is set as "**/dev/ttyUSB0**".  
