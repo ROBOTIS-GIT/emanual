@@ -97,6 +97,13 @@ $ cd ~/catkin_ws && catkin_make
 
 If catkin_make command is completed without any errors, the preparation for TurtleBot3 is done.
 
+## [Add working environment](#add-working-environment)
+Add working environment to the .bashrc file
+
+``` bash
+$ echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
+$ source ~/.bashrc
+```
 
 ## [Network Configuration](#network-configuration)
 
