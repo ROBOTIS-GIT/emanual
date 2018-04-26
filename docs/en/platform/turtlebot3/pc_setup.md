@@ -42,10 +42,18 @@ In order to develop source code from the remote PC, please configure ROS environ
 **Tip :** The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`-`Alt`-`T`.
 {: .notice--info}
 
+### Setting up source.list and keys
+
+``` bash
+$ sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+$ sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 0xB01FA116
+```
+### Installing ros
+
 ``` bash
 $ sudo apt-get update
 $ sudo apt-get upgrade
-$ wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic.sh && chmod 755 ./install_ros_kinetic.sh && bash ./install_ros_kinetic.sh
+$ sudo apt-get install ros-kinetic-desktop-full
 ```
 
 `Note` In order to check which packages are installed, please check this link out. [install_ros_kinetic](https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic.sh)
@@ -58,6 +66,19 @@ If you prefer manual installation, please following the link below.
 
 - [Install ROS on Ubuntu](http://wiki.ros.org/kinetic/Installation/Ubuntu)
 
+## [Setting the ROS environment](#setting-the-ros-environment)
+
+``` bash
+$ source /opt/ros/kinetic/setup.bash
+$ echo "source /opt/ros/kinetic/setup.bash" >> ~/.bashrc
+$ source ~/.bashrc
+```
+
+## [Install rosinstall](#install-rosinstall)
+
+``` bash
+$ sudo apt-get install python-rosinstall
+```
 
 ## [Install Dependent packages](#install-dependent-packages)
 
@@ -76,6 +97,13 @@ $ cd ~/catkin_ws && catkin_make
 
 If catkin_make command is completed without any errors, the preparation for TurtleBot3 is done.
 
+## [Add working environment](#add-working-environment)
+Add working environment to the .bashrc file
+
+``` bash
+$ echo "source ~/catkin_ws/devel/setup.bash" >> ~/.bashrc
+$ source ~/.bashrc
+```
 
 ## [Network Configuration](#network-configuration)
 
