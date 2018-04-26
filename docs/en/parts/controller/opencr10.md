@@ -271,11 +271,12 @@ $ sudo apt-get install dfu-util
 ### [Enter DFU Mode](#enter-dfu-mode)
 To run OpenCR in DFU mode, please follow the instruction below.
 
-1. Hold down the `Reset` button.
-2. Press the `Boot` button.
-3. Release both buttons.
+1. Hold down the `Boot` button.
+2. Press the `Reset` button.
+3. Release the `Reset` button.
+4. Release the `Boot` button.
 
-OpenCR will enter the DFU mode by the built-in boot loader.
+OpenCR will enter the DFU mode after reset by the built-in boot loader.
 
 ![](/assets/images/parts/controller/opencr10/bootloader_19.png)
 
@@ -304,9 +305,10 @@ To execute the boot loader, please follow the instruction below.
 
 1. Hold down the `PUSH SW2` button.
 2. Press the `Reset` button.
-3. Release both buttons.
+3. Release the `Reset` button.
+4. Release the `PUSH SW2` button.
 
-OpenCR will execute enter the boot loader. When the boot loader is running, the STATUS LED blinks every 100ms.
+OpenCR will enter the boot loader after reset. When the boot loader is running, the STATUS LED blinks every 100ms.
 
 ![](/assets/images/parts/controller/opencr10/bootloader_19.png)
 
