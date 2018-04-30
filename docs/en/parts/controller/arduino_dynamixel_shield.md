@@ -12,7 +12,11 @@ sidebar:
 ---
 
 # [Introduction](#introduction)
+![](/assets/images/parts/controller/arduino_dynamixel_shield/with_arduino.png)
+
 Dynamixel Shield  was created to use RC100 and Dynamixel on arduino board. We provide dynamixel library for Dynamixel Shield, it can help you to use Dynamixel easily.
+
+**This product does not contain Arduino Uno. Also we do not sell Aruino Uno.**.
 
 # [Specifications](#specifications)
 
@@ -34,9 +38,10 @@ Dynamixel Shield  was created to use RC100 and Dynamixel on arduino board. We pr
 
 |Item|Description|Note|
 |:---:|:---:|:---:|
-|Dynamixel Port|TTL, TTL(XL-430), RS485|`Caution3`|
+|Dynamixel Port|TTL, TTL(XL-320), RS485|`Caution3`|
 |Power Switch|Power SW (Dynamixel Port Power Switch)|-|
 |UART Switch|UART SW (Upload or Dynamixel Select Switch)|`Caution1`|
+|Jumper Cap|Power Source Selection|Read 'Connecting Power'|
 
 -	Arduino pin #0/ #1 : Hardware serial port to control dynamixel
 - Arduino pin #2 : Control pin to select dynamixel direction
@@ -46,13 +51,13 @@ Dynamixel Shield  was created to use RC100 and Dynamixel on arduino board. We pr
 {% capture shield_01 %}
 `Caution1` When uploading firmware using USB port, you should switch the UART SW(SW_2) to Upload mode. When you select the UART SW (SW_2) to Dynamixel mode, you can use Dynamixel but USB port.  
 `Caution2` If you are using a board that does not support SoftwareSerial(like SAMD, etc..), you cannot use pins 7 and 8 for UART purposes.  
-`Caution3` TTL, TTL (XL-430) and RS485 connectors are all connected in parallel in one serial.
+`Caution3` TTL, TTL (XL-320) and RS485 connectors are all connected in parallel in one serial.
 {% endcapture %}
 
 <div class="notice--warning">{{ shield_01 | markdownify }}</div>
 
 # [Connecting Power](#connecting-power)
-
+x
 |Connect VIN|Disconnect VIN|
 |:---:|:---:|
 |![](/assets/images/parts/controller/arduino_dynamixel_shield/power_01.png)|![](/assets/images/parts/controller/arduino_dynamixel_shield/power_02.png)|
@@ -87,6 +92,9 @@ Dynamixel Shield  was created to use RC100 and Dynamixel on arduino board. We pr
 
 -	Support dynamixel protocol 1.0/2.0
 - Up to 16 Dynamixels can be controlled
+
+(Typically, each motor(XL-320 or XL430-W250) consumes 0.4 ~ 0.6A of current. )
+
 - Support SynWrite function
 - Support RC100 library
 - Serial communication using software serial library.
