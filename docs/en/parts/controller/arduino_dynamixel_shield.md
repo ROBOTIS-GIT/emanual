@@ -16,7 +16,8 @@ sidebar:
 
 Dynamixel Shield  was created to use RC100 and Dynamixel on arduino board. We provide dynamixel library for Dynamixel Shield, it can help you to use Dynamixel easily.
 
-**This product does not contain Arduino Uno. Also we do not sell Aruino Uno.**.
+**This product does not contain Arduino Uno. Arduino Uno should be purchased separately.**
+{: .notice--warning}
 
 # [Specifications](#specifications)
 
