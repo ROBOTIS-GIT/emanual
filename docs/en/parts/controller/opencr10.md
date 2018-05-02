@@ -202,7 +202,7 @@ void msg_process_vcp(void)
           break;
 
         ... omit ...
-        
+
        default:
          cmd_send_error(&msg, ERR_INVALID_CMD);
          break;
@@ -269,7 +269,14 @@ $ sudo apt-get install dfu-util
 ```
 
 ### [Enter DFU Mode](#enter-dfu-mode)
-To run OpenCR in DFU mode, press `Reset Button` while holding down `Boot Button` and OpenCR will enter the DFU mode by the built-in boot loader.
+To run OpenCR in DFU mode, please follow the instruction below.
+
+1. Hold down the `Boot` button.
+2. Press the `Reset` button.
+3. Release the `Reset` button.
+4. Release the `Boot` button.
+
+OpenCR will enter the DFU mode after reset by the built-in boot loader.
 
 ![](/assets/images/parts/controller/opencr10/bootloader_19.png)
 
@@ -293,9 +300,15 @@ $ sudo dfu-util -d 0483:df11 -a 0 -s 0x08000000 -D ./opencr_boot.bin
 
 ## [Firmware Recovery Mode](#firmware-recovery-mode)
 
-If the wrong firmware is downloaded and the board freezes or does not work, you must force the boot loader to run and download the normal firmware.
+If currupted or incompleted firmware is downloaded and the board freezes or does not work, you must enter the boot loader to be able to download the normal firmware.  
+To execute the boot loader, please follow the instruction below.
 
-To execute the boot loader, hold down PUSH SW2 on the board and press the reset button to execute the boot loader. When the boot loader is running, the STATUS LED blinks every 100ms.
+1. Hold down the `PUSH SW2` button.
+2. Press the `Reset` button.
+3. Release the `Reset` button.
+4. Release the `PUSH SW2` button.
+
+OpenCR will enter the boot loader after reset. When the boot loader is running, the STATUS LED blinks every 100ms.
 
 ![](/assets/images/parts/controller/opencr10/bootloader_19.png)
 
@@ -993,7 +1006,7 @@ void loop() {
     Serial.print("\t");
     Serial.print(EEPROM.read(2));
     Serial.println("\t");
-   
+
     tTime = millis();
   }
 
@@ -1071,14 +1084,14 @@ It is ambient light sensor test on the OpenCR board.
 
 - Specification
   - [ambient light sensor specification](https://www.dfrobot.com/wiki/index.php/DFRobot_Ambient_Light_Sensor_SKU:DFR0026#Application)
-  - Supply Voltage : 3.3V to 5V 
-  - Illumination range : 1 Lux to 6000 Lux 
+  - Supply Voltage : 3.3V to 5V
+  - Illumination range : 1 Lux to 6000 Lux
   - Interface : Analog
 
 #### Code
 LED turns off/on sequentially depending on the light received by the sensor.  
 LED turns off in bright place. If it is dark place, the LED turns on.  
-This sensor is an analog sensor, connect it to port A0. 
+This sensor is an analog sensor, connect it to port A0.
 
 ```c++
 #define BDPIN_LED_USER_1     23
@@ -1145,7 +1158,7 @@ It is tilt sensor test on the OpenCR.
 
 - Specification
   - [Tilt Sensor Specification](https://www.dfrobot.com/wiki/index.php/Digital_Tilt_Sensor_SKU:DFR0028)
-  - Supply Voltage : 3.3V to 5V 
+  - Supply Voltage : 3.3V to 5V
   - Interface : Digital
 
 #### Code
@@ -1195,7 +1208,7 @@ It is rotation sensor test on the OpenCR board.
 - Specification
   - [Rotation Sensor Specification](https://www.dfrobot.com/wiki/index.php/Digital_Tilt_Sensor_SKU:DFR0028)
   - Rotation Angle : 3600 degrees
-  - Supply Voltage : 3.3V to 5V 
+  - Supply Voltage : 3.3V to 5V
   - Interface : Analog
 
 #### Code
@@ -1277,7 +1290,7 @@ It is capacitive touch sensor test on the OpenCR board.
 
 - Specification
   - [Capacitive Touch Sensor Specification](https://www.dfrobot.com/wiki/index.php/DFRobot_Capacitive_Touch_Sensor_SKU:DFR0030)
-  - Supply Voltage : 3.3V to 5V 
+  - Supply Voltage : 3.3V to 5V
   - Interface : Digital
 
 #### Code
@@ -1338,13 +1351,13 @@ It is flame sensor test on the OpenCR board.
 
 - Pinouts
   - Blue : Signal
-  - Red : Vcc 
+  - Red : Vcc
   - Black : Gnd
 
 - Specification
   - [Flame Sensor Specification](https://www.dfrobot.com/wiki/index.php/Flame_sensor_SKU:_DFR0076)
   - Detection range : 20cm(4.8V) ~ 100cm(1V)
-  - Supply Voltage : 3.3V to 5V 
+  - Supply Voltage : 3.3V to 5V
   - Interface : Analog
 
 #### Code
@@ -1377,7 +1390,7 @@ void loop()
   else
   {
     digitalWrite(BDPIN_LED_USER_1, HIGH);
-  } 
+  }
 
   Serial.println(val,DEC);
   delay(100);
@@ -1476,10 +1489,10 @@ After get Dynamixels, you can check ID and Baudrate of its.
 
 DynamixelWorkbench dxl_wb;
 
-void setup() 
+void setup()
 {
   Serial.begin(57600);
-  while(!Serial); // Open a Serial Monitor 
+  while(!Serial); // Open a Serial Monitor
 
   uint8_t scanned_id[16] = {0, };
   uint8_t dxl_cnt = 0;
@@ -1504,7 +1517,7 @@ void setup()
   Serial.println("End");
 }
 
-void loop() 
+void loop()
 {
 
 }
@@ -1548,7 +1561,7 @@ If Dynamixel is set correctly, **goalPosition** function make it move to positio
 
 DynamixelWorkbench dxl_wb;
 
-void setup() 
+void setup()
 {
   Serial.begin(57600);
   while(!Serial); // Open a Serial Monitor
@@ -1559,10 +1572,10 @@ void setup()
   dxl_wb.jointMode(DXL_ID);
 }
 
-void loop() 
+void loop()
 {
   dxl_wb.goalPosition(DXL_ID, 0);
-  
+
   delay(2000);
 
   dxl_wb.goalPosition(DXL_ID, 2000);
@@ -1609,7 +1622,7 @@ If Dynamixel is set correctly, **goalSpeed** function make it turn to position.
 
 DynamixelWorkbench dxl_wb;
 
-void setup() 
+void setup()
 {
   Serial.begin(57600);
   while(!Serial); // Open a Serial Monitor
@@ -1620,10 +1633,10 @@ void setup()
   dxl_wb.wheelMode(DXL_ID);
 }
 
-void loop() 
+void loop()
 {
   dxl_wb.goalSpeed(DXL_ID, 300);
-  
+
   delay(3000);
 
   dxl_wb.goalSpeed(DXL_ID, -300);

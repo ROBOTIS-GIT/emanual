@@ -15,10 +15,10 @@ sidebar:
 
 # [SLAM](#slam)
 
-**Note :** This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+`Note` This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 {: .notice--info}
 
-**Warning :** Make sure to run the [Bringup][#bringup] instruction before performing SLAM.
+`Warning` Make sure to run the [Bringup][#bringup] instruction before performing SLAM.
 {: .notice--warning}
 
 **Tip :** It is recommended to use a joystick pad instead of the keyboard for easier control.

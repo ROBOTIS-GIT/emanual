@@ -91,8 +91,8 @@ sidebar:
 
 # [교육자료 다운로드](#교육자료-다운로드)
 
-- `Download` [RROBOTIS_R+Scratch]
-- `Download` [ROBOTCAR_entry]
+- `다운로드` [ROBOTIS R+Scratch]
+- `다운로드` [ROBOTCAR entry]
 
-[RROBOTIS_R+Scratch]: http://www.robotis.com/download/carrobot/ROBOTIS_R%2bScratch_Ver1621.pdf
-[ROBOTCAR_entry]: http://www.robotis.com/download/carrobot/ROBOTCAR_entry_Ver1621.pdf
+[ROBOTIS R+Scratch]: http://www.robotis.com/service/download.php?no=747
+[ROBOTCAR entry]: http://www.robotis.com/service/download.php?no=746

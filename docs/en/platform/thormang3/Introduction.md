@@ -45,6 +45,32 @@ computational power, sophisticated sensors, high payload capacity, and dynamic m
 
 ![](/assets/images/platform/thormang3/thormang3_001.jpg)
 
+{% capture package_warning %}
+`Caution` This package does not include the Operating PC and Power Supplies.
+Additional components may need to be purchased as described below.
+ - When operating THORMANG3 from a distance, one Operating PC is required.
+ - When operating THORMANG3 without batteries, two external power supplies (for actuators and internal PCs) are required.
+{% endcapture %}
+<div class="notice--warning">{{ package_warning | markdownify }}</div>
+
+Recommended Component Specifications
+1. Operating PC
+ - Usage : The main PC to remote control THORMANG3
+ - Requirements : Linux + ROS installed PC
+
+2. Power Supply for internal PCs
+ - Usage : Supplies power to PCs and peripheral devices when operating THORMANG3 with an external power source
+ - Requirements : 24V / 10A (at least)
+ - Recommended product : 24V 15A DC Universal Regulated Switching Power Supply 360W for CCTV, Radio, Computer Project  
+   ![](/assets/images/platform/thormang3/pc_power_supply.jpg)
+
+3. Power Supply for Actuators
+ - Usage : Supplies power to Dynamixel when operating THORMANG3 with an external power source.
+ - Requirements : 0 ~ 30V / 100A (at least)
+ - Recommended product : Instek PSW 30-108 Multi-Range DC Power Supply  
+   ![](/assets/images/platform/thormang3/actuator_power_supply.jpg)
+   
+
 ## [Layout](#layout)
 
 ![](/assets/images/platform/thormang3/thormang3_002.jpg)

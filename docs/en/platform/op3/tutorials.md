@@ -15,47 +15,146 @@ sidebar:
 
 # [Tutorials](#tutorials)
 
-## [How to run OP3's program](#how-to-run-op3s-program)
+## [ROBOTIS-OP3 Bringup](#robotis-op3-bringup)
 
 ### Overview   
-This chapter explains how to run the `op3_manager` that controls ROBOTIS-OP3.  
-Several modules are controlling ROBOTIS-OP3 and various topics and services transmit commands and report status.  
+This chapter explains how to run ROBOTIS-OP3. `op3_bringup` demo launches `op3_manager`.   
+Several modules of `op3_manager` are controlling ROBOTIS-OP3 and various topics and services transmit commands and report status.  
 The `op3_manager` cooperates with other programs such as `op3_demo` and `op3_gui_demo`.  
 
 > Reference : [op3_manager]
 
-
+#### Test environment
+ * Linux Mint 18.1 Serena(Base : Ubuntu Xenial)
+ * ROS Kinetic
 
 ### Getting started
 #### Download & Build
  > Reference : [Installing ROBOTIS ROS Package]
 
-
-#### Run
-Acquire root permission and execute the launch file.  
-Type below commands in the terminal window.  
-_(password : 111111)_  
+#### Stop the Linux service that run default demo
+ROBOTIS-OP3 runs default demo automatically. If you would run `op3_bringup` demo, you have to stop the default demo service.  
 
 ```
-$ sudo bash
+$ sudo service OP3-demo stop
 [sudo] password for robotis: 111111
-# roslaunch op3_manager op3_manager.launch
+```
+
+#### Bringup
+Type below commands in the terminal window.  
+
+```
+$ roslaunch op3_bringup op3_bringup.launch  
+```
+
+> If `op3_bringup` package is not existed, update source to latest version
+
+```
+$ cd ~/catkin_ws/src/ROBOTIS-OP3-Demo
+$ git pull
+$ cd ~/catkin_ws
+$ catkin_make
 ```
 
 #### Execution result
-When `op3_manager` runs, robot moves to initial posture.  
+When `op3_bringup` runs, robot moves to initial posture.  
 
 1. execution result screen  
 
-    ![](/assets/images/platform/op3/op3_manager_01.png)
+    ![](/assets/images/platform/op3/op3_manager_01.png)  
 
-2. execution result of ROBOTIS-OP3  
+    If you get an error for offset.yaml, run op3_offset_tuner(server and client) and save the offset.
+    {: .notice}
+
+2. execution result of ROBOTIS-OP3(Init pose in RVIZ)  
 
     ![](/assets/images/platform/op3/op3_manager_02.png)
 
+3. It's ready to move, now user can control ROBOTIS-OP3 using a program such as [op3_gui_demo].  
+
+4. If user turn off the program, press `ctrl+c` in terminal window.
+
+#### `op3_bringup.launch`
+```
+<?xml version="1.0" ?>
+<launch>        
+  <!-- OP3 Manager -->
+  <include file="$(find op3_manager)/launch/op3_manager.launch" />
+
+  <!-- UVC camera -->
+  <node pkg="usb_cam" type="usb_cam_node" name="usb_cam_node" output="screen">
+    <param name="video_device" type="string" value="/dev/video0" />
+    <param name="image_width" type="int" value="1280" />
+    <param name="image_height" type="int" value="720" />
+    <param name="framerate " type="int" value="30" />
+    <param name="camera_frame_id" type="string" value="cam_link" />
+    <param name="camera_name" type="string" value="camera" />
+  </node>
+</launch>
+
+```  
+
+- op3_manager : framework to control of ROBOTIS-OP3
+  - Robot file : `op3_manager/config/OP3.robot`   
+  - Joint initialize file : `op3_manager/config/dxl_init_OP3.yaml`  
+  - Offset file : `op3_manager/config/offset.yaml`  
+- usb_cam_node : package for usb camera of ROBOTIS-OP3    
+
+### Visualization
+Type below commands in the terminal window for visualization.   
+
+```
+$ roslaunch op3_bringup op3_bringup_visualization.launch  
+```  
+- rviz screen  
+
+  ![](/assets/images/platform/op3/op3_bringup_visualization_01.png)  
+
+  - TF Tree  
+
+    ![](/assets/images/platform/op3/op3_bringup_visualization_04.png)  
+
+    If you want to see the TF Tree, follow the below instruction.
+    {: .notice}
+
+    1. Launch `rqt`  
+        ```
+        $ rqt
+        ```
+
+    2. select `Plugins -> Visualization -> TF Tree`  
+
+
+#### op3_bringup_visualization.launch
+```
+<?xml version="1.0" ?>
+<launch>
+  <param name="robot_description" command="$(find xacro)/xacro.py '$(find op3_description)/urdf/robotis_op3.urdf.xacro'"/>
+
+  <!-- Send fake joint values and monitoring present joint angle -->
+  <node pkg="joint_state_publisher" type="joint_state_publisher" name="joint_state_publisher">
+    <param name="use_gui" value="TRUE"/>
+    <rosparam param="/source_list">[/robotis/present_joint_states]</rosparam>
+  </node>
+
+  <!-- Combine joint values -->
+  <node pkg="robot_state_publisher" type="state_publisher" name="robot_state_publisher">
+    <remap from="/joint_states" to="/robotis/present_joint_states" />
+  </node>
+
+  <!-- Show in Rviz   -->
+  <node pkg="rviz" type="rviz" name="rviz" args="-d $(find op3_bringup)/rviz/op3_bringup.rviz"/>
+</launch>
+```
+
+- parameter  
+  - robot_description : robot model for TF and visualization in rviz    
+- joint_state_publisher : visualization of joint value of ROBOTIS-OP3  
+- robot_state_publisher : making TF message for robot model  
+- rviz : visualization tool  
 
 ### Description
-This section explains configuration files used in `op3_manager`.  
+This section explains configuration files used in `op3_manager`(within `op3_bringup.launch`).  
 
 #### Robot file(`.robot`)  
 Information of the robot to operate.  
@@ -249,7 +348,6 @@ Press the mode button twice from demonstration ready mode to switch to vision pr
   When the demo begins, ROBOTIS-OP3 will announce "Start vision processing demonstration" and stand up to search for a face.  
   If a face is detected, RGB-LED on the chest and back turns into white color and OP3's head will follow the detected face.  
     > Reference : [Face Tracker - ROS Package]
-
 
 2. Return to Demonstration Ready Mode  
   Pressing and holding the mode button for 3 seconds will make ROBOTIS-OP3 to take the initial posture and return to Demonstration ready mode.  
@@ -907,13 +1005,13 @@ Connect to ROBOTIS-OP3 WiFi with below information
 
 
 [op3_manager]: /docs/en/platform/op3/robotis_ros_packages/#op3-manager
-[Robot Information file(.robot)]: /docs/en/software/robotis_framework_packages/tutorials/#creating-new-robot-manager
-[Joint initialize file(.yaml)]: /docs/en/software/robotis_framework_packages/tutorials/#creating-new-robot-manager
+[Robot Information file(.robot)]: /docs/en/software/robotis_framework_packages/tutorials/#robot-information-file-robot
+[Joint initialize file(.yaml)]: /docs/en/software/robotis_framework_packages/tutorials/#joint-initialize-file-yaml
 [How to use offset tuner]: /docs/en/platform/op3/tutorials/#how-to-use-offset-tuner
 [Installing ROBOTIS ROS Package]: /docs/en/platform/op3/recovery/#installing-robotis-ros-packages
 
 [op3_demo]: /docs/en/platform/op3/robotis_ros_packages/#robotis-op3-demo
-[op3_gui_demo]: /docs/en/platform/op3/robotis_ros_packages/#op3_gui_demo
+[op3_gui_demo]: /docs/en/platform/op3/robotis_ros_packages/#op3-gui-demo
 [How to use walking tuner]: /docs/en/platform/op3/tutorials/#how-to-use-walking-tuner
 
 

@@ -109,7 +109,7 @@ Then, you can use SSH following command in [Remote PC].
 **Timesync between TurtleBot3 and RemotePC**
 ----------------------------------------------------
 
-**Note :** This solution is subject to connect internet on your Turtlebot and RemotePC under same Network
+`Note` This solution is subject to connect internet on your Turtlebot and RemotePC under same Network
 {: .notice--info}
 
 First, you have to install ``ntpdate``
@@ -131,7 +131,7 @@ Second, synchronize to NTP server
 **Turtlebot3 Setup Dynamixels**
 ----------------------------------------------------
 
-**Warning :** Please connect only **single** Dynamixel with OpenCR
+`Warning` Please connect only **single** Dynamixel with OpenCR
 {: .notice--warning}
 
 
