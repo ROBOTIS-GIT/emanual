@@ -19,7 +19,7 @@
 
 
 
-<title>XL320</title>
+<title>XL-320</title>
 
 
 
@@ -501,7 +501,7 @@ $(function() {
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/dxl/x/xl320/" class="">XL320</a>
+                          <a href="http://localhost:4000/docs/en/dxl/x/xl320/" class="">XL-320</a>
                         </li>
                       
                     
@@ -903,8 +903,8 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <input type="radio" name="sublevel" id="STEAMDream II">
-                    <label for="STEAMDream II">Dream II</label>
+                    <input type="radio" name="sublevel" id="STEAMDREAM II">
+                    <label for="STEAMDREAM II">DREAM II</label>
                     <ul>
                     
                       
@@ -951,6 +951,12 @@ $(function() {
                     
                     </ul>
                   </li>
+                
+              
+            
+              
+
+              
                 
               
             
@@ -1283,6 +1289,16 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
+                    <a href="http://localhost:4000/docs/en/software/arduino_ide/">Arduino IDE</a>
+                  </li>
+                
+              
+            
+              
+
+              
+                
+                  <li class="mobile_depth_2">
                     <a href="http://localhost:4000/docs/en/software/robotis_framework_packages/">ROBOTIS Framework Packages</a>
                   </li>
                 
@@ -1367,6 +1383,9 @@ $(function() {
                         <li class="mobile_depth_3">
                           <a href="http://localhost:4000/docs/en/parts/controller/cm-900/" class="">*CM-900</a>
                         </li>
+                      
+                    
+                      
                       
                     
                       
@@ -1903,7 +1922,7 @@ $(function() {
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/dxl/x/xl320/">XL320</a>
+                      <a href="http://localhost:4000/docs/en/dxl/x/xl320/">XL-320</a>
                     
                 
                   
@@ -1979,7 +1998,8 @@ $(function() {
 
               
                 
-                <a>PRO Series</a>
+                  
+                    <a href="http://localhost:4000/docs/en/dxl/pro/">PRO Series</a>
               
 
               
@@ -2350,7 +2370,7 @@ $(function() {
 
               
                 
-                <a>Dream II</a>
+                <a>DREAM II</a>
               
 
               
@@ -2507,8 +2527,18 @@ $(function() {
               
 
               
+
+              
+
+            </div>
+            
+              <div class="dropdown-content-wrapper">
+              
+
+              
                 
-                <a>BIOLOID</a>
+                  
+                    <a href="http://localhost:4000/docs/en/edu/bioloid/">BIOLOID</a>
               
 
               
@@ -2835,6 +2865,19 @@ $(function() {
               
                 
                   
+                    <a href="http://localhost:4000/docs/en/software/arduino_ide/">Arduino IDE</a>
+              
+
+              
+
+            </div>
+            
+              <div class="dropdown-content-wrapper">
+              
+
+              
+                
+                  
                     <a href="http://localhost:4000/docs/en/software/robotis_framework_packages/">ROBOTIS Framework Packages</a>
               
 
@@ -2926,6 +2969,10 @@ $(function() {
                     
                       <a href="http://localhost:4000/docs/en/parts/controller/cm-900/"><font color=#cccccc>*CM-900</font></a>
                     
+                
+                  
+
+                  
                 
                   
 
@@ -3260,7 +3307,7 @@ $(function() {
       
 <nav class="nav__list">
 
-  <a href=http://localhost:4000/docs/en/dxl/x/xl320/ style="font-size:$type-size-6; color: #2174b6; text-decoration: none; font-weight: bold;">XL320</a>
+  <a href=http://localhost:4000/docs/en/dxl/x/xl320/ style="font-size:$type-size-6; color: #2174b6; text-decoration: none; font-weight: bold;">XL-320</a>
   <ul class="nav__items">
   
     
@@ -3473,7 +3520,7 @@ $(function() {
     </tr>
     <tr>
       <td style="text-align: left">Running Degree</td>
-      <td style="text-align: left">0° ~ 360°<br />Endless Turn</td>
+      <td style="text-align: left">0° ~ 300°<br />Endless Turn</td>
     </tr>
     <tr>
       <td style="text-align: left">Weight</td>
@@ -3965,34 +4012,12 @@ $(function() {
 </table>
 
 <h3 id="cwccw-angle-limit6-8"><a name="cw-angle-limit"></a><a name="ccw-angle-limit"></a><strong><a href="#cwccw-angle-limit6-8">CW/CCW Angle Limit(6, 8)</a></strong></h3>
-<p>The angle limit allows the motion to be restrained.
+<p>The angle limit allows the motion to be restrained.<br />
 The range and the unit of the value is the same as Goal Position(Address 30, 31).</p>
 <ul>
   <li>CW Angle Limit: the minimum value of Goal Position(Address 30, 31)</li>
-  <li>CCW Angle Limit: the maximum value of Goal Position(Address 30, 31)
-The following two modes can be set pursuant to the value of CW and CCW.</li>
+  <li>CCW Angle Limit: the maximum value of Goal Position(Address 30, 31)</li>
 </ul>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: center">Operation Type</th>
-      <th style="text-align: center">CW / CCW</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: center">Wheel Mode</td>
-      <td style="text-align: center">both are 0</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">Joint Mode</td>
-      <td style="text-align: center">neither are 0</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>The wheel mode can be used to wheel-type operation robots since motors of the robots spin infinitely. The joint mode can be used to multi-joints robot since the robots can be controlled with specific angles.</p>
 
 <h3 id="control-mode11"><a name="control-mode"></a><strong>Control Mode(11)</strong></h3>
 
@@ -4005,11 +4030,11 @@ The following two modes can be set pursuant to the value of CW and CCW.</li>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
       <td style="text-align: center">Wheel Mode</td>
     </tr>
     <tr>
-      <td style="text-align: center">1</td>
+      <td style="text-align: center">2</td>
       <td style="text-align: center">Joint Mode</td>
     </tr>
   </tbody>

@@ -11,11 +11,14 @@ sidebar:
   nav: "turtlebot3"
 ---
 
-<div style="counter-reset: h1 19"></div>
+<div style="counter-reset: h1 20"></div>
 
 # [Video](#video)
 
 ## [Video from Open Source Team](#video-from-open-source-team)
+
+**[TurtleBot3 44 Automatic Parking Vision]**
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dvpWdrD3bVs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 **[TurtleBot3 43 TurtleBot3 AutoRace Tutorial 6: Tunnel]**
 <iframe width="560" height="315" src="https://www.youtube.com/embed/ezkwAs1kVkM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
