@@ -55,11 +55,7 @@ $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/iHXZSLBJHMg" frameborder="0" allowfullscreen></iframe>
 
-## [Stage (2D)](#stage-2d)
-
-(TODO)
-
-## [Gazebo (3D)](#gazebo-3d)
+## [Gazebo (3D Simulator)](#gazebo-3d-simulator)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UzOoJ6a_mOg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
