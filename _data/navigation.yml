@@ -9729,8 +9729,14 @@ turtlebot3:
   - title: "Overview"
     url: /platform/turtlebot3/overview/#overview
     children:
+    - title: "TurtleBot"
+      url: /platform/turtlebot3/overview/#turtlebot
     - title: "TurtleBot3"
       url: /platform/turtlebot3/overview/#turtlebot3
+    - title: "TurtleBot3 Introduction Video"
+      url: /platform/turtlebot3/overview/#turtlebot3-introduction-video
+    - title: "TurtleBot3 Collaboration Project"
+      url: /platform/turtlebot3/overview/#turtlebot3-collaboration-project
   - title: "Notice"
     url: /platform/turtlebot3/notice/#notice
     children:
@@ -9940,10 +9946,8 @@ turtlebot3:
     children:
     - title: "TurtleBot3 Fake Node Implementation"
       url: /platform/turtlebot3/simulation/#turtlebot3-fake-node-implementation
-    - title: "Stage (2D)"
-      url: /platform/turtlebot3/simulation/#stage-2d
-    - title: "Gazebo (3D)"
-      url: /platform/turtlebot3/simulation/#gazebo-3d
+    - title: "Gazebo (3D Simulator)"
+      url: /platform/turtlebot3/simulation/#gazebo-3d-simulator
       children:
       - title: "ROS packages for Gazebo"
         url: /platform/turtlebot3/simulation/#ros-packages-for-gazebo
@@ -9992,6 +9996,13 @@ turtlebot3:
       url: /platform/turtlebot3/applications/#automatic-parking
     - title: "Automatic Parking Vision"
       url: /platform/turtlebot3/applications/#automatic-parking-vision
+  - title: "Competition"
+    url: /platform/turtlebot3/competition/#competition
+    children:
+    - title: "Online Competition on ROS Development Studio"
+      url: /platform/turtlebot3/competition/#online-competition-on-ros-development-studio
+    - title: "Offline Competition"
+      url: /platform/turtlebot3/competition/#offline-competition
   - title: "Friends"
     url: /platform/turtlebot3/friends/#friends
     children:
@@ -10022,12 +10033,12 @@ turtlebot3:
   - title: "Learn"
     url: /platform/turtlebot3/learn/#learn
     children:
-    - title: "TurtleBot3 Simulation on ROS Indigo"
-      url: /platform/turtlebot3/learn/#turtlebot3-simulation-on-ros-indigo
-    - title: "TurtleBot3 Blockly"
-      url: /platform/turtlebot3/learn/#turtlebot3-blockly
     - title: "The Construct"
       url: /platform/turtlebot3/learn/#the-construct
+    - title: "TurtleBot3 Blockly"
+      url: /platform/turtlebot3/learn/#turtlebot3-blockly
+    - title: "TurtleBot3 Simulation on ROS Indigo"
+      url: /platform/turtlebot3/learn/#turtlebot3-simulation-on-ros-indigo
     - title: "Youtube Course"
       url: /platform/turtlebot3/learn/#youtube-course
     - title: "Books"
