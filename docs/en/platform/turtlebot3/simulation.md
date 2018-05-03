@@ -89,7 +89,7 @@ $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 
     ![](/assets/images/platform/turtlebot3/simulation/turtlebot3_empty_world.png)
 
-1. Turtlebot3 World
+2. Turtlebot3 World
 
     `TurtleBot3 world` is a map consists of simple objects that makes up the shape of TurtleBot3 symbol.  
      
@@ -102,7 +102,7 @@ $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 
     ![](/assets/images/platform/turtlebot3/simulation/turtlebot3_world_waffle.png)
 
-1. TurtleBot3 House
+3. TurtleBot3 House
 
     `TurtleBot3 House` is a map made with house drawings.
 
@@ -124,15 +124,15 @@ $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
     ``` bash
     $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
     ```
-1. Collision avoidance
+2. Collision avoidance
 
     In order to autonomously drive a TurtleBot3 around the **TurtleBot3 World**, open a new terminal window and enter below command.
-
     ``` bash
     $ export TURTLEBOT3_MODEL=${TB3_MODEL}
     $ roslaunch turtlebot3_gazebo turtlebot3_world.launch
     ```
-
+    
+    Open a new terminal window and enter below command.
     ``` bash
     $ export TURTLEBOT3_MODEL=${TB3_MODEL}
     $ roslaunch turtlebot3_gazebo turtlebot3_simulation.launch
@@ -169,7 +169,7 @@ In gazebo simulation, we can use navigation package that we used for the actual 
     $ roslaunch turtlebot3_gazebo multi_turtlebot3.launch
     ```
 
-1. Excute SLAM
+2. Excute SLAM
 
     ``` bash
     $ roslaunch turtlebot3_gazebo multi_turtlebot3_slam.launch ns:=tb3_0
@@ -177,26 +177,26 @@ In gazebo simulation, we can use navigation package that we used for the actual 
     $ roslaunch turtlebot3_gazebo multi_turtlebot3_slam.launch ns:=tb3_2
     ```
 
-1. Merge Map data from each TurtleBot3's map data
+3. Merge Map data from each TurtleBot3's map data
 
     ``` bash
     $ sudo apt-get install ros-kinetic-multirobot-map-merge
     $ roslaunch turtlebot3_gazebo multi_map_merge.launch 
     ```
 
-1. Open Rviz
+4. Open Rviz
 
     ``` bash
     $ rosrun rviz rviz -d `rospack find turtlebot3_gazebo`/rviz/multi_turtlebot3_slam.rviz
     ```
 
-1. Teleoperation by keyboard
+5. Teleoperation by keyboard
 
     ``` bash
     $ rosrun turtlebot3_teleop turtlebot3_teleop_key cmd_vel:=tb3_0/cmd_vel
     ```
 
-1. Save a map
+6. Save a map
 
     ``` bash
     $ rosrun map_server map_saver -f ~/map
@@ -218,13 +218,13 @@ However we highly recommend to simulate robots along `ROS`.
     $ sudo apt-get install libgazebo7-dev
     ```
 
-1. Download source code from github
+2. Download source code from github
 
     ``` bash
     $ git clone https://github.com/ROBOTIS-GIT/turtlebot3_gazebo_plugin
     ```
 
-1. Add gazebo plugin path in `.bashrc` file
+3. Add gazebo plugin path in `.bashrc` file
 
     ``` bash
     $ nano ~/.bashrc
@@ -240,7 +240,7 @@ However we highly recommend to simulate robots along `ROS`.
     export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:${turtlebot3_gazebo_plugin path}/models
     ```
 
-1. Make and Build
+4. Make and Build
 
     ``` bash
     $ cd ${turtlebot3_gazebo_plugin path}
@@ -250,7 +250,7 @@ However we highly recommend to simulate robots along `ROS`.
     $ make
     ```
 
-1. Excute plugin
+5. Excute plugin
 
     You should set Turtlebot3 model parameter. Select either burger or waffle for the model parameter in the below command.
 
@@ -265,7 +265,7 @@ However we highly recommend to simulate robots along `ROS`.
 
     ![](/assets/images/platform/turtlebot3/simulation/gazebo_burger.png)
 
-1. Teleoperation by keyboard
+6. Teleoperation by keyboard
 
     ```
     w - set linear velocity up 
@@ -275,41 +275,42 @@ However we highly recommend to simulate robots along `ROS`.
     s - set all velocity to zero
     ```
 
-1. Topic subscribe command
+7. Topic subscribe command
 
-  - Show all topic
+    - Show all topic
 
-    ``` bash
-    $ gz topic -l 
-    ```
+      ``` bash
+      $ gz topic -l 
+      ```
 
-  - Subscribe scan data
+    - Subscribe scan data
 
-    ``` bash
-    $ gz topic -e /gazebo/default/user/turtlebot3_${TB3_MODEL}/lidar/hls_lfcd_lds/scan
-    ```
+      ``` bash
+      $ gz topic -e /gazebo/default/user/turtlebot3_${TB3_MODEL}/lidar/hls_lfcd_lds/scan
+      ```
 
-  - Subscribe image data
+    - Subscribe image data
 
-    **Waffle**
+      **Waffle**
 
-    ``` bash
-    $ gz topic -e /gazebo/default/user/turtlebot3_waffle/image/intel_realsense_r200/image
-    ```
+      ``` bash
+      $ gz topic -e /gazebo/default/user/turtlebot3_waffle/image/intel_realsense_r200/image
+      ```
 
-    **Waffle Pi**
+      **Waffle Pi**
 
       ``` bash
       $ gz topic -e /gazebo/default/user/turtlebot3_waffle_pi/image/raspberry_pi_cam/image
       ```
 
-1. Excute listener
+8. Excute listener
 
     ``` bash
     $ cd ${turtlebot3_gazebo_plugin}/build
     $ ./lidar_listener ${TB3_MODEL}
     ```
 
+    Open a new terminal window and enter below command.
     ``` bash
     $ cd ${turtlebot3_gazebo_plugin}/build
     $ ./image_listener ${TB3_MODEL}

@@ -43,10 +43,10 @@ We are preparing an online competition on [ROS Development Studio (RDS)][rds] wi
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/AamHifhvNMs" frameborder="0" allowfullscreen></iframe>
 
-- Video#1 https://youtu.be/5XERzM6ZfJg
-- Video#2 https://youtu.be/AamHifhvNMs
-- Video#3 https://youtu.be/72SDxhgmnBg
-- SourceCode https://github.com/arixrobotics/fira_maze
+- Video#1 [https://youtu.be/5XERzM6ZfJg](https://youtu.be/5XERzM6ZfJg)
+- Video#2 [https://youtu.be/AamHifhvNMs](https://youtu.be/AamHifhvNMs)
+- Video#3 [https://youtu.be/72SDxhgmnBg](https://youtu.be/72SDxhgmnBg)
+- SourceCode [https://github.com/arixrobotics/fira_maze](https://github.com/arixrobotics/fira_maze)
 
 ### Robosot (office task challenge) using TurtleBot3 @ FIRA Malaysia 2018
 
@@ -56,8 +56,8 @@ We are preparing an online competition on [ROS Development Studio (RDS)][rds] wi
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/OdLsbAMy7m0" frameborder="0" allowfullscreen></iframe>
 
-- "Monka" vs. "Ninja Turtle" https://youtu.be/OdLsbAMy7m0
-- "Turtle Machine" vs. "TurtleBot 6" https://youtu.be/L8PHxUR54dM
+- "Monka" vs. "Ninja Turtle" [https://youtu.be/OdLsbAMy7m0](https://youtu.be/OdLsbAMy7m0)
+- "Turtle Machine" vs. "TurtleBot 6" [https://youtu.be/L8PHxUR54dM](https://youtu.be/L8PHxUR54dM)
 - For more videos, please see the following [link](https://www.youtube.com/channel/UCqvqk6E7g4z5idx6yseR6Ug).
 
 ### Autonomous Mobile Robot Competition (Dankook University)
