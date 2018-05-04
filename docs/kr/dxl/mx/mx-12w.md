@@ -40,6 +40,8 @@ sidebar:
 | Material | Engineering Plastic |
 | Standby Current | 60mA |
 
+{% include kr/dxl/warning.md %}
+
 {% include kr/dxl/control_table_protocol1.md %}
 
 ## [EEPROM 영역](#eeprom-영역)
