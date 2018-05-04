@@ -36,6 +36,8 @@ sidebar:
 | Feedback | Position, Temperature, Load, Input Voltage, etc |
 | Material | Engineering Plastic |
 
+{% include en/dxl/warning.md %}
+
 {% include en/dxl/control_table_protocol1.md %}
 
 ## [Control Table of EEPROM Area](#control-table-of-eeprom-area)
