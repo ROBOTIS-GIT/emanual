@@ -87,3 +87,14 @@ If you have TurtleBot3 Waffle or Waffle Pi,
 {: .notice--info}
   
 **[Remote PC]** When firmware upload is completed, `jump_to_fw` text string will be printed on the screen.
+
+## [Basic Operation](#basic-operation)
+
+![](/assets/images/platform/turtlebot3/opencr/opencr_models.png)
+
+You can use `PUSH SW 1` and `PUSH SW 2` buttons to see whether your robot has been properly assembled. This process tests the left and right DYNAMIXELs and the OpenCR1.0 board.
+
+1. After assembling TurtleBot3, connect the battery to OpenCR1.0 and turn on the power switch. You can see that the `Power LED` of OpenCR1.0 turns on.
+2. Place the robot on the floor. For the test, safety radius of 1 meter (about 40 inches) is recommended.
+3. Press and hold `PUSH SW 1` for a few seconds to command the robot to move 30 centimeters (about 12 inches) forward.
+4. Press and hold `PUSH SW 2` for a few seconds to command the robot to rotate 180 degrees in place.
