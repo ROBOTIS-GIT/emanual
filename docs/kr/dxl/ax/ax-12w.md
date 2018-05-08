@@ -38,6 +38,8 @@ sidebar:
 | 기어 재질   | Engineering Plastic(Full)                                               |
 | 케이스 재질        | Engineering Plastic(Front, Middle, Back)                               |
 
+{% include kr/dxl/warning.md %}
+
 {% include kr/dxl/control_table_protocol1.md %}
 
 
