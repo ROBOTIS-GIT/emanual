@@ -154,17 +154,6 @@ If it is difficult to assemble with the assembly manual, please refer to the fol
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/1nTMyr4ybi0" frameborder="0" allowfullscreen></iframe>
 
-## [Basic Operation](#basic-operation)
-
-![](/assets/images/platform/turtlebot3/hardware_setup/opencr_models.png)
-
-You can use `PUSH SW 1` and `PUSH SW 2` buttons to see whether your robot has been properly assembled. This process tests the left and right DYNAMIXELs and the OpenCR1.0 board.
-
-1. After assembling TurtleBot3, connect the battery to OpenCR1.0 and turn on the power switch. You can see that the `Power LED` of OpenCR1.0 turns on.
-2. Place the robot on the floor. For the test, safety radius of 1 meter (about 40 inches) is recommended.
-3. Press and hold `PUSH SW 1` for a few seconds to command the robot to move 30 centimeters (about 12 inches) forward.
-4. Press and hold `PUSH SW 2` for a few seconds to command the robot to rotate 180 degrees in place.
-
 ## [Open Source Hardware](#open-source-hardware)
 
 Core components of Turtlebot3 are the followings: Chassis, Motors, Wheels, OpenCR1.0, SBC Computer, Sensor and Battery. The chassis are Waffle Plates that holds other components. The Waffle Plate plays an important role as a chassis although its size is as small as your palm. Waffle plate is manufactured with injection mold method to lower the manufacturing cost. However, the CAD data of waffle plate for 3D printing is also available via [Onshape]. Turtlebot3 Burger is a Two-wheeled differential drive type platform, but it is customizable structurally and mechanically in many ways: Cars, Bikes, Trailers and so on.
