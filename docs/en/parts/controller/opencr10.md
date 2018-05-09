@@ -52,30 +52,33 @@ The pins 0 to 21 are the same pin as the Arduino Uno, and thereafter they are ma
 
 ![](/assets/images/parts/controller/opencr10/arduino_pinmap_01.png)
 
-| Pin No. | Function |     1     |     2     |   3    |
-|:-------:|:--------:|:---------:|:---------:|:------:|
-|    0    | UART RXD | UART6_RX  |           |        |
-|    1    | UART TXD | UART6 TX  |           |        |
-|    2    |          |           |           | EXTI_0 |
-|    3    |   PWM    | TIM3_CH1  |           | EXTI_1 |
-|    4    |          |           |           | EXTI_2 |
-|    5    |   PWM    | TIM1_CH1  |           |        |
-|    6    |   PWM    | TIM2_CH3  |           |        |
-|    7    |          |           |           | EXTI_3 |
-|    8    |          |           |           | EXTI_4 |
-|    9    |   PWM    | TIM9_CH2  |           |        |
-|   10    | PWM/NSS  | TIM11_CH1 | SPI2_NSS  |        |
-|   11    | PWM/MOSI | TIM12_CH2 | SPI2_MOSI |        |
-|   12    |   MISO   |           | SPI2_MISO |        |
-|   13    |   SCK    |           | SPI2_SCK  |        |
-|   14    |   SDA    |           | I2C1_SDA  |        |
-|   15    |   SCL    |           | I2C1_SCL  |        |
-|   16    |   ADC    |    A0     |           |        |
-|   17    |   ADC    |    A1     |           |        |
-|   18    |   ADC    |    A2     |           |        |
-|   19    |   ADC    |    A3     |           |        |
-|   20    |   ADC    |    A4     |           |        |
-|   21    |   ADC    |    A5     |           |        |
+| Pin No. | Function |     1     |     2     |   3    | etc |
+|:-------:|:--------:|:---------:|:---------:|:------:|:---:|
+|    0    | UART RXD | UART6_RX  |           |        |`FT` |
+|    1    | UART TXD | UART6 TX  |           |        |`FT` |
+|    2    |          |           |           | EXTI_0 |`FT` |
+|    3    |   PWM    | TIM3_CH1  |           | EXTI_1 |`FT` |
+|    4    |          |           |           | EXTI_2 |`FT` |
+|    5    |   PWM    | TIM1_CH1  |           |        |`FT` |
+|    6    |   PWM    | TIM2_CH3  |           |        |`FT` |
+|    7    |          |           |           | EXTI_3 |`FT` |
+|    8    |          |           |           | EXTI_4 |`FT` |
+|    9    |   PWM    | TIM9_CH2  |           |        |`FT` |
+|   10    | PWM/NSS  | TIM11_CH1 | SPI2_NSS  |        |`FT` |
+|   11    | PWM/MOSI | TIM12_CH2 | SPI2_MOSI |        |`FT` |
+|   12    |   MISO   |           | SPI2_MISO |        |`FT` |
+|   13    |   SCK    |           | SPI2_SCK  |        |`FT` |
+|   14    |   SDA    |           | I2C1_SDA  |        |`FT` |
+|   15    |   SCL    |           | I2C1_SCL  |        |`FT` |
+|   16    |   ADC    |    A0     |           |        |`FT` |
+|   17    |   ADC    |    A1     |           |        |`FT` |
+|   18    |   ADC    |    A2     |           |        |`FT` |
+|   19    |   ADC    |    A3     |           |        |`FT` |
+|   20    |   ADC    |    A4     |           |        |`FT` |
+|   21    |   ADC    |    A5     |           |        |`FT` |
+
+`FT` pins are 5V tolerant except when in analog mode. The maximum injected current on FT pins are **-5mA**. Also total output current sunk / sourced by sum of all I/O pins are **120mA / -120mA** respectively.
+{: .notice}
 
 ## [User LED](#user-led)
 The OpenCR additional LEDs consist of four LEDs and are mapped to Arupinopin 22-25.
@@ -105,18 +108,21 @@ It has an 18-pin common GPIO expansion connector and is mapped to the GPIO pin o
 
 ![](/assets/images/parts/controller/opencr10/arduino_pinmap_05.png)
 
-| Pin Number | Arduino Pin | Pin Name      | Pin Number | Arduino Pin | Pin Name     |
-|:-----------|:------------|:--------------|:-----------|:------------|:-------------|
-| 1          | -           | 3.3V          | 2          | -           | GND          |
-| 3          | 50          | BDPIN_GPIO_1  | 4          | 51          | BDPIN_GPIO_1 |
-| 5          | 52          | BDPIN_GPIO_3  | 6          | 53          | BDPIN_GPIO_1 |
-| 7          | 54          | BDPIN_GPIO_5  | 8          | 55          | BDPIN_GPIO_1 |
-| 9          | 56          | BDPIN_GPIO_7  | 10         | 57          | BDPIN_GPIO_1 |
-| 11         | 58          | BDPIN_GPIO_9  | 12         | 59          | BDPIN_GPIO_1 |
-| 13         | 60          | BDPIN_GPIO_11 | 14         | 61          | BDPIN_GPIO_1 |
-| 15         | 62          | BDPIN_GPIO_13 | 16         | 63          | BDPIN_GPIO_1 |
-| 17         | 64          | BDPIN_GPIO_15 | 18         | 65          | BDPIN_GPIO_1 |
-| 19         | 66          | BDPIN_GPIO_17 | 20         | 67          | BDPIN_GPIO_1 |
+| Pin Number | Arduino Pin | Pin Name      | Pin Number | Arduino Pin | Pin Name     |etc |
+|:-----------|:------------|:--------------|:-----------|:------------|:-------------|:---|
+| 1          | -           | 3.3V          | 2          | -           | GND          |-   |
+| 3          | 50          | BDPIN_GPIO_1  | 4          | 51          | BDPIN_GPIO_1 |`FT`|
+| 5          | 52          | BDPIN_GPIO_3  | 6          | 53          | BDPIN_GPIO_1 |`FT`|
+| 7          | 54          | BDPIN_GPIO_5  | 8          | 55          | BDPIN_GPIO_1 |`FT`|
+| 9          | 56          | BDPIN_GPIO_7  | 10         | 57          | BDPIN_GPIO_1 |`FT`|
+| 11         | 58          | BDPIN_GPIO_9  | 12         | 59          | BDPIN_GPIO_1 |`FT`|
+| 13         | 60          | BDPIN_GPIO_11 | 14         | 61          | BDPIN_GPIO_1 |`FT`|
+| 15         | 62          | BDPIN_GPIO_13 | 16         | 63          | BDPIN_GPIO_1 |`FT`|
+| 17         | 64          | BDPIN_GPIO_15 | 18         | 65          | BDPIN_GPIO_1 |`FT`|
+| 19         | 66          | BDPIN_GPIO_17 | 20         | 67          | BDPIN_GPIO_1 |`FT`|
+
+`FT` pins are 5V tolerant except when in analog mode. The maximum injected current on FT pins are **-5mA**. Also total output current sunk / sourced by sum of all I/O pins are **120mA / -120mA** respectively.
+{: .notice}
 
 ## [OLLO Connector](#ollo-connector)
 
@@ -1674,7 +1680,7 @@ $ opencr_ld <Communication port> <Baudrate> <Firmware binary> <Firmware executio
 - Firmware execution status : In case of 1, the firmware will be executed after downloading the firmware. If it is not input or if it is 0, only downloading the firmware is performed.
 
   ![](/assets/images/parts/controller/opencr10/arduino_bin_export.png)
-  
+
   > Exporting compiled binary file fron Arduino IDE
 
 ### [Linux/Mac Example](#linuxmac-example)
