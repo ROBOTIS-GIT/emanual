@@ -13502,55 +13502,23 @@ opencr10:
     url: /parts/controller/opencr10/#introduction
   - title: "Specifications"
     url: /parts/controller/opencr10/#specifications
-  - title: "Hardware"
-    url: /parts/controller/opencr10/#hardware
+  - title: "Layout / Pin Map"
+    url: /parts/controller/opencr10/#layoutpin-map
     children:
-    - title: "Layout / Pin Map"
-      url: /parts/controller/opencr10/#layoutpin-map
-  - title: "Bootloader"
-    url: /parts/controller/opencr10/#bootloader
-    children:
-    - title: "Memory Map"
-      url: /parts/controller/opencr10/#memory-map
-    - title: "Boot Sequence"
-      url: /parts/controller/opencr10/#boot-sequence
-    - title: "Communication Protocol"
-      url: /parts/controller/opencr10/#communication-protocol
-      children:
-      - title: "MavLink"
-        url: /parts/controller/opencr10/#mavlink
-      - title: "Composition of Commands"
-        url: /parts/controller/opencr10/#composition-of-commands
-      - title: "Download Sequence"
-        url: /parts/controller/opencr10/#download-sequence
-      - title: "Message Processing"
-        url: /parts/controller/opencr10/#message-processing
-      - title: "Folder Structure"
-        url: /parts/controller/opencr10/#folder-structure
-    - title: "Update Bootloader(Linux)"
-      url: /parts/controller/opencr10/#update-bootloaderlinux
-      children:
-      - title: "Enter DFU Mode"
-        url: /parts/controller/opencr10/#enter-dfu-mode
-      - title: "Check Boot Mode"
-        url: /parts/controller/opencr10/#check-boot-mode
-      - title: "Update Bootloader"
-        url: /parts/controller/opencr10/#update-bootloader
-    - title: "Firmware Recovery Mode"
-      url: /parts/controller/opencr10/#firmware-recovery-mode
-  - title: "Downloader"
-    url: /parts/controller/opencr10/#downloader
-    children:
-    - title: "Usage"
-      url: /parts/controller/opencr10/#usage
-    - title: "Linux/Mac Example"
-      url: /parts/controller/opencr10/#linuxmac-example
-    - title: "Windows Example"
-      url: /parts/controller/opencr10/#windows-example
-    - title: "Execution Result"
-      url: /parts/controller/opencr10/#execution-result
-    - title: "Download Executable File"
-      url: /parts/controller/opencr10/#download-executable-file
+    - title: "Arduino Connector"
+      url: /parts/controller/opencr10/#arduino-connector
+    - title: "User LED"
+      url: /parts/controller/opencr10/#user-led
+    - title: "Dip Switch"
+      url: /parts/controller/opencr10/#dip-switch
+    - title: "GPIO"
+      url: /parts/controller/opencr10/#gpio
+    - title: "OLLO Connector"
+      url: /parts/controller/opencr10/#ollo-connector
+    - title: "Push Switch"
+      url: /parts/controller/opencr10/#push-switch
+    - title: "Pin Definition"
+      url: /parts/controller/opencr10/#pin-definition
   - title: "Arduino IDE"
     url: /parts/controller/opencr10/#arduino-ide
     children:
@@ -13591,23 +13559,6 @@ opencr10:
         url: /parts/controller/opencr10/#install-arduino-idewindows
       - title: "Porting to Arduino IDE"
         url: /parts/controller/opencr10/#porting-to-arduino-idewindows
-    - title: "Arduino Pinmap"
-      url: /parts/controller/opencr10/#arduino-pinmap
-      children:
-      - title: "Arduino Connector"
-        url: /parts/controller/opencr10/#arduino-connector
-      - title: "User LED"
-        url: /parts/controller/opencr10/#user-led
-      - title: "Dip Switch"
-        url: /parts/controller/opencr10/#dip-switch
-      - title: "GPIO"
-        url: /parts/controller/opencr10/#gpio
-      - title: "OLLO Connector"
-        url: /parts/controller/opencr10/#ollo-connector
-      - title: "Push Switch"
-        url: /parts/controller/opencr10/#push-switch
-      - title: "Pin Definition"
-        url: /parts/controller/opencr10/#pin-definition
   - title: "Examples"
     url: /parts/controller/opencr10/#examples
     children:
@@ -13665,6 +13616,50 @@ opencr10:
       url: /parts/controller/opencr10/#recovery-mode
     - title: "Install Windows Driver"
       url: /parts/controller/opencr10/#install-windows-driver
+  - title: "Bootloader"
+    url: /parts/controller/opencr10/#bootloader
+    children:
+    - title: "Memory Map"
+      url: /parts/controller/opencr10/#memory-map
+    - title: "Boot Sequence"
+      url: /parts/controller/opencr10/#boot-sequence
+    - title: "Communication Protocol"
+      url: /parts/controller/opencr10/#communication-protocol
+      children:
+      - title: "MavLink"
+        url: /parts/controller/opencr10/#mavlink
+      - title: "Composition of Commands"
+        url: /parts/controller/opencr10/#composition-of-commands
+      - title: "Download Sequence"
+        url: /parts/controller/opencr10/#download-sequence
+      - title: "Message Processing"
+        url: /parts/controller/opencr10/#message-processing
+      - title: "Folder Structure"
+        url: /parts/controller/opencr10/#folder-structure
+    - title: "Update Bootloader(Linux)"
+      url: /parts/controller/opencr10/#update-bootloaderlinux
+      children:
+      - title: "Enter DFU Mode"
+        url: /parts/controller/opencr10/#enter-dfu-mode
+      - title: "Check Boot Mode"
+        url: /parts/controller/opencr10/#check-boot-mode
+      - title: "Update Bootloader"
+        url: /parts/controller/opencr10/#update-bootloader
+    - title: "Firmware Recovery Mode"
+      url: /parts/controller/opencr10/#firmware-recovery-mode
+  - title: "Downloader"
+    url: /parts/controller/opencr10/#downloader
+    children:
+    - title: "Usage"
+      url: /parts/controller/opencr10/#usage
+    - title: "Linux/Mac Example"
+      url: /parts/controller/opencr10/#linuxmac-example
+    - title: "Windows Example"
+      url: /parts/controller/opencr10/#windows-example
+    - title: "Execution Result"
+      url: /parts/controller/opencr10/#execution-result
+    - title: "Download Executable File"
+      url: /parts/controller/opencr10/#download-executable-file
 
 arduino_dynamixel_shield:
   - title: "Introduction"
