@@ -1450,7 +1450,7 @@ $ roslaunch op3_read_write_demo op3_read_write.launch
   }
   ```
 
- If `/op3_manager` is running, take the initial posture for the demo and process the topic and service.  
+  If `/op3_manager` is running, take the initial posture for the demo and process the topic and service.  
 
   ```cpp
   readyToDemo();
