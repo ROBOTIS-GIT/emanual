@@ -10176,43 +10176,63 @@ turtlebot3:
 
 #OpenManipulator
 open_manipulator:
-  - title: "Introduction"
-    url: /platform/openmanipulator/#introduction
-  - title: "OpenManipulator Chain"
-    url: /platform/openmanipulator/#openmanipulator-chain
+  - title: "Overview"
+    url: /platform/openmanipulator/#overview
     children:
-    - title: "Specification"
-      url: /platform/openmanipulator/#specification-of-chain
-    - title: "Hardware Setup"
-      url: /platform/openmanipulator/#hardware-setup-of-chain
-    - title: "Software Setup"
-      url: /platform/openmanipulator/#software-setup-of-chain
-  - title: "OpenManipulator SCARA"
-    url: /platform/openmanipulator/#openmanipulator-scara
+    - title: "OpenSoftware"
+      url: /platform/openmanipulator/#opensoftware
+    - title: "OpenHardware"
+      url: /platform/openmanipulator/#openhardware
+    - title: "OpenCR (Embedded board)"
+      url: /platform/openmanipulator/#opencr-embedded-board
+    - title: "Dynamixel Examples"
+      url: /platform/openmanipulator/#dynamixel-examples
+    - title: "Introduction video"
+      url: /platform/openmanipulator/#introduction-video
+  - title: "Specification"
+    url: /platform/openmanipulator/#specification
     children:
-    - title: "Specification"
-      url: /platform/openmanipulator/#specification-of-scara
-    - title: "Hardware Setup"
-      url: /platform/openmanipulator/#hardware-setup-of-scara
-    - title: "Software Setup"
-      url: /platform/openmanipulator/#software-setup-of-scara
-  - title: "OpenManipulator Link"
-    url: /platform/openmanipulator/#openmanipulator-link
+    - title: "Hardware Specification"
+      url: /platform/openmanipulator/#hardware-specification
+    - title: "Dimension"
+      url: /platform/openmanipulator/#demension
+  - title: "Hardware Setup"
+    url: /platform/openmanipulator/#hardware-setup
+  - title: "Software Setup"
+    url: /platform/openmanipulator/#software-setup
     children:
-    - title: "Specification"
-      url: /platform/openmanipulator/#specification-of-link
-    - title: "Hardware Setup"
-      url: /platform/openmanipulator/#hardware-setup-of-link
-    - title: "Software Setup"
-      url: /platform/openmanipulator/#software-setup-of-link
-  - title: "OpenManipulator Planar"
-    url: /platform/openmanipulator/#openmanipulator-planar
-  - title: "OpenManipulator Delta"
-    url: /platform/openmanipulator/#openmanipulator-delta
-  - title: "OpenManipulator Stewart"
-    url: /platform/openmanipulator/#openmanipulator-stewart
-  - title: "OpenManipulator Linear"
-    url: /platform/openmanipulator/#openmanipulator-linear
+    - title: "ROS and Gazebo"
+      url: /platform/openmanipulator/#ros-and-gazebo
+    - title: "Arduino IDE"
+      url: /platform/openmanipulator/#arduino-ide
+  - title: "Simulation"
+    url: /platform/openmanipulator/#simulation
+    children:
+    - title: "Gazebo"
+      url: /platform/openmanipulator/#gazebo
+    - title: "Processing"
+      url: /platform/openmanipulator/#processing
+  - title: "Platform"
+    url: /platform/openmanipulator/#platform
+    children:
+    - title: "ROS"
+      url: /platform/openmanipulator/#ros
+    - title: "OpenCR with Arduino"
+      url: /platform/openmanipulator/#opencr-with-arduino
+  - title: "Mobile Manipulation"
+    url: /platform/openmanipulator/#mobile-manipulation
+  - title: "Friends"
+    url: /platform/openmanipulator/#friends
+    - title: "OpenManipulator Link"
+      url: /platform/openmanipulator/#openmanipulator-link
+    - title: "OpenManipulator Planar"
+      url: /platform/openmanipulator/#openmanipulator-planar
+    - title: "OpenManipulator Delta"
+      url: /platform/openmanipulator/#openmanipulator-delta
+    - title: "OpenManipulator Stewart"
+      url: /platform/openmanipulator/#openmanipulator-stewart
+    - title: "OpenManipulator Linear"
+      url: /platform/openmanipulator/#openmanipulator-linear
 
 #Manipulator-H
 manipulator_h:

@@ -11,43 +11,49 @@ sidebar:
   nav: "open_manipulator"
 ---
 
-# [Introduction](#introduction)
+# [Overview](#overview)
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator.png)
 
-![](/assets/images/platform/openmanipulator/OpenManipulator_Introduction.jpg)
-
 ROS-enabled OpenManipulator is a full open robot platform consisting of **OpenSoftware**​, **OpenHardware** and **OpenCR(Embedded board)​**.
 
-## OpenSoftware
+## [OpenSoftware](#opensoftware)
 OpenManipulator are based on ROS ​and OpenSource. ROS official hardware platform ,TurtleBot series has been supporting ‘TurtleBot Arm’. The OpenManipulator has full hardware compatibility with TurtleBot3​, and allows users to control it more easily by linking with the MoveIT! package. Even if you do not have a real robot, you can control the robot in the Gazebo simulator​.
 
-## OpenHardware
+## [OpenHardware](#openhardware)
 The OpenManipulator is oriented towards Open Hardware​. Most of the components except for some frames are uploaded as [STL files](https://cad.onshape.com/documents/9442f03bd8ccac084fda9dd3/w/039e8dbd53e0782540ea5b0d/e/9d3986b1e15cd5dce9557032) that can be 3d printing. This allows users to modify the length of the link and the design of the robot to suit the intended use. The open manipulator also uses the **Dynamixel X ​series** used in TurtleBot 3. Dynamixel has a modular form and adopts daisy chain method. This allows users to easily change and add joints for some torque and degree of freedom they need. Taking advantage of these advantages, we are planning a total of seven different types (For example, Chain, SCARA, Link, Planar, Delta, Stewart and Linear) of OpenManipulator.
 
-## OpenCR (Embedded board)
+![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_OnShape.jpg)
+
+## [OpenCR (Embedded board)](#opencr-embedded-board)
 The OpenManipulator can also be controlled via [OpenCR] (Open-source Control module for ROS), the control board of TurtleBot3. OpenCR's computing power and real-time control are used to support forward, inverse kinematics, and profile control examples. In addition, OpenCR can interoperate with many functions provided by ROS through message communication with ROS, which will evolve into ROS 2.0 in the future.
 
-## Examples
+![](/assets/images/platform/openmanipulator/OpenManipulator_Introduction.jpg)
+
+## [Dynamixel Examples](#dynamixel-examples)
 
 OpenManipulator is composed by [Dynamixel X series](http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/) and [3D printing parts](https://cad.onshape.com/documents/9442f03bd8ccac084fda9dd3/w/039e8dbd53e0782540ea5b0d/e/9d3986b1e15cd5dce9557032). Dynamixel has a modular form and adopts daisy chain method. This allows users to easily change and add joints for some torque and degree of freedom they need. Moreover, growing 3D printing technology makes anyone can make anything they want with low cost and rapid time. We suggest some examples of links and safety parts. Taking advantage of these advantages, we are planning a total of seven different types of OpenManipulator.
 
-## Related Video
+## [Introduction Video](#introduction-video)
 
 <iframe src="https://player.vimeo.com/video/236147296" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 <p><a href="https://vimeo.com/236147296">ROSCon 2017 Vancouver Day 1: Introducing OpenManipulator; the full open robot platform</a> from <a href="https://vimeo.com/osrfoundation">OSRF</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
-# [OpenManipulator Chain](#openmanipulator-chain)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/B2pnXtooKOg" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
-![](/assets/images/platform/openmanipulator/OpenManipulator_chain.png)
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Qhvk5cnX2hM" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
-## [Specification of Chain](#specification-of-chain)
+# [Specification](#specification)
+
+![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_Capture.png)
+
+## [Hardware Specification](#hardware-specification)
 
 |                     | Unit    | Chain with XM430-W350                   |
 | ------------------- | ------- | --------------------------------------- |
 | **Input Voltage**   | V       | 12                                      |
 | **DOF**             | -       | 5 (4 DOF + 1 DOF Gripper)               |
-| **Payload**         | g       | 1000 ~ 1300 (2.20 ~ 2.86)               |
+| **Payload**         | g       | 300 ~ 1000                              |
 | **Speed(Joint)**    | rad/sec | 4.82                                    |
 | **Weight**          | kg(lb)  | 0.7 (1.54)                              |
 | **Reach**           | mm (in) | 380 (14.9)                              |
@@ -57,11 +63,13 @@ OpenManipulator is composed by [Dynamixel X series](http://emanual.robotis.com/d
 | **Software**        | -       | ROS, Dynamixel SDK, Arduino, Processing |
 | **Main Controller** | -       | Laptop PC, OpenCR                       |
 
+## [Dimension](#dimension)
+
 ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_spec_side.png)
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_spec_gripper.jpg)
 
-## [Hardware Setup of Chain](#hardware-setup-of-chain)
+# [Hardware Setup](#hardware-setup)
 
 [Parts of OpenManipulator](https://docs.google.com/a/robotis.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit?usp=sharing)
 
@@ -69,23 +77,20 @@ OpenManipulator is composed by [Dynamixel X series](http://emanual.robotis.com/d
 
 [CAD Files](https://goo.gl/NsqJMu)
 
+![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_OnShape.jpg)
+
 * Items that are painted in purple are purchased on ROBOTIS SHOP
 * Items that are painted in green are purchased on shopping mall
 * Items that are painted in yellow are 3D printing parts
 
-## [Software Setup of Chain](#software-setup-of-chain)
+# [Software Setup](#software-setup)
 
-### ROS
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Qhvk5cnX2hM" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/B2pnXtooKOg" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+## [ROS and Gazebo](#ros-and-gazebo)
 
 - Install dependent packages for the OpenManipulator.
 
 ```
-$ sudo apt-get install ros-kinetic-ros-controllers ros-kinetic-gazebo* ros-kinetic-moveit* ros-kinetic-dynamixel-sdk ros-kinetic-dynamixel-workbench-toolbox ros-kinetic-robotis-math ros-kinetic-industrial-core 
+$ sudo apt-get install ros-kinetic-ros-controllers ros-kinetic-gazebo* ros-kinetic-moveit* ros-kinetic-dynamixel-sdk ros-kinetic-dynamixel-workbench-toolbox ros-kinetic-ar-track-alvar ros-kinetic-industrial-core 
 ```
 
 ```
@@ -96,33 +101,79 @@ $ cd ~/catkin_ws && catkin_make
 
 - If catkin_make command is completed without any errors, preparation for OpenManipulator is done.
 
-### Gazebo(3D)
+## [Arduino IDE](#arduino-ide)
 
-- Below command will load the OpenManipulator on Gazebo environment.
+  - [Arduino IDE for using OpenCR](/docs/en/parts/controller/opencr10/#arduino-ide)  
+
+# [Simulation](#gazebo-simulation)
+
+## [Gazebo](#gazebo)
+
+  `Note` This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+  {: .notice--info}
+
+- Load an OpenManipulator on Gazebo simulator and click `Play` button
 
   ```
   $ roslaunch open_manipulator_gazebo open_manipulator_gazebo.launch
   ```
 
-  ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_gazebo_1.jpg)
+  ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_gazebo_1.png)
 
-- In order to control OpenManipulator, please use topic publish with below command in a new terminal window.
+- Type `rostopic list` to check which topic is activated
 
   ```
-  $ rostopic pub /open_manipulator_chain/joint2_position/command std_msgs/Float64 "data: 1.0" --once
+  /clock
+  /gazebo/link_states
+  /gazebo/model_states
+  /gazebo/set_link_state
+  /gazebo/set_model_state
+  /open_manipulator/grip_joint_position/command
+  /open_manipulator/grip_joint_position/pid/parameter_descriptions
+  /open_manipulator/grip_joint_position/pid/parameter_updates
+  /open_manipulator/grip_joint_position/state
+  /open_manipulator/grip_joint_sub_position/command
+  /open_manipulator/grip_joint_sub_position/pid/parameter_descriptions
+  /open_manipulator/grip_joint_sub_position/pid/parameter_updates
+  /open_manipulator/grip_joint_sub_position/state
+  /open_manipulator/joint1_position/command
+  /open_manipulator/joint1_position/pid/parameter_descriptions
+  /open_manipulator/joint1_position/pid/parameter_updates
+  /open_manipulator/joint1_position/state
+  /open_manipulator/joint2_position/command
+  /open_manipulator/joint2_position/pid/parameter_descriptions
+  /open_manipulator/joint2_position/pid/parameter_updates
+  /open_manipulator/joint2_position/state
+  /open_manipulator/joint3_position/command
+  /open_manipulator/joint3_position/pid/parameter_descriptions
+  /open_manipulator/joint3_position/pid/parameter_updates
+  /open_manipulator/joint3_position/state
+  /open_manipulator/joint4_position/command
+  /open_manipulator/joint4_position/pid/parameter_descriptions
+  /open_manipulator/joint4_position/pid/parameter_updates
+  /open_manipulator/joint4_position/state
+  /open_manipulator/joint_states
+  /rosout
+  /rosout_agg
   ```
 
-  ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_gazebo_2.jpg)
+- OpenManipulator in Gazebo is controllered by ROS message. For example, below command publish joint position(radian)
 
-- In order to run OpenManipulator simulation with MoveIt!, open a new terminal window and enter below command.
+  ```
+  $ rostopic pub /open_manipulator/joint2_position/command std_msgs/Float64 "data: -1.0" --once
+  ```
+
+  ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_gazebo_2.png)
+
+- In order to run MoveIt!, open a new terminal window and enter below command
 
   ```
   $ roslaunch open_manipulator_moveit open_manipulator_demo.launch use_gazebo:=true
   ```
 
-  ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_moveit_sim_1.png)
+  ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_moveit_sim_1.jpg)
 
-  ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_moveit_sim_2.png)
+  ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_moveit_sim_2.jpg)
 
 - In order to control gripper, please use topic publish with below command in a new terminal window.
 
@@ -132,15 +183,61 @@ $ cd ~/catkin_ws && catkin_make
 
   ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_gripper.png)
 
-### Platform
+## [Processing](#processing)
 
-* Below command will load the OpenManipulator with DYNAMIXEL X-series.
+  - **Comming Soon**
 
- ```
- $ roslaunch open_manipulator_dynamixel_ctrl dynamixel_controller.launch
- ```
+  ![](/assets/images/platform/openmanipulator/OpenManipulator_chain_processing.png)
 
-- In order to run OpenManipulator simulation with MoveIt!, open a new terminal window and enter below command.
+# [Platform](#platform)
+
+## [ROS](#ros)
+
+- To load an OpenManipulator with DYNAMIXEL X-series(XM or XL), you can set a arguments what you configure your own Dynamixel.
+
+  ```
+  <launch>
+    <arg name="use_robot_name"         default="open_manipulator"/>
+    <arg name="device_name"            default="/dev/ttyUSB0"/>
+    <arg name="baud_rate"              default="1000000"/>
+    <arg name="protocol_version"       default="2.0"/>
+
+    <arg name="joint_controller"       default="position_mode"/>
+
+    <arg name="joint1_id"              default="1"/>
+    <arg name="joint2_id"              default="2"/>
+    <arg name="joint3_id"              default="3"/>
+    <arg name="joint4_id"              default="4"/>
+
+    <arg name="gripper_controller"     default="current_mode"/>
+
+    <arg name="gripper_id"             default="5"/>
+
+    <node pkg="open_manipulator_dynamixel_ctrl" type="dynamixel_controller" name="dynamixel_controller" required="true" output="screen">
+      <param name="robot_name"           value="$(arg use_robot_name)"/>
+      <param name="device_name"          value="$(arg device_name)"/>
+      <param name="baud_rate"            value="$(arg baud_rate)"/>
+      <param name="protocol_version"     value="$(arg protocol_version)"/>
+
+      <param name="joint_controller"     value="$(arg joint_controller)"/>
+
+      <param name="joint1_id"            value="$(arg joint1_id)"/>
+      <param name="joint2_id"            value="$(arg joint2_id)"/>
+      <param name="joint3_id"            value="$(arg joint3_id)"/>
+      <param name="joint4_id"            value="$(arg joint4_id)"/>
+
+      <param name="gripper_controller"   value="$(arg gripper_controller)"/>
+
+      <param name="gripper_id"           value="$(arg gripper_id)"/>
+    </node>
+  </launch>
+  ```
+
+  ```
+  $ roslaunch open_manipulator_dynamixel_ctrl dynamixel_controller.launch
+  ```
+
+- In order to run MoveIt!, open a new terminal window and enter below command.
 
   ```
   $ roslaunch open_manipulator_moveit open_manipulator_demo.launch
@@ -154,9 +251,16 @@ $ cd ~/catkin_ws && catkin_make
 
   ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_moveit_real_4.png)
 
-### TurtleBot3 Waffle with OpenManipulator Chain
+## [OpenCR with Arduino](#opencr-with-arduino)
 
-- Install dependent packages for the OpenManipulator.
+  - **Comming Soon**
+
+# [Mobile Manipulation](#mobile-manipulation)
+
+  **Tip :** You can get a more information about it in [Manipulation section of TurtleBot3](/docs/en/platform/turtlebot3/manipulation/#manipulation)
+  {: .notice--info}
+
+- Install dependent packages
 
   ```
   $ cd ~/catkin_ws/src
@@ -164,31 +268,36 @@ $ cd ~/catkin_ws && catkin_make
   $ cd ~/catkin_ws && catkin_make
   ```
 
-- Below command will load the TurtleBot3 Waffle with OpenManipulator on Rviz.
+- Load a TurtleBot3 Waffle or Waffle Pi with OpenManipulator on RViz.
+
+  **Tip :** TB3_MODEL =  `waffle`, `waffle_pi` 
+  {: .notice--info}
 
   ```
-  $ roslaunch open_manipulator_with_tb3 open_manipulator_chain_with_tb3_rviz.launch
+  $ export TURTLEBOT3_MODEL=${TB3_MODEL}
+  $ roslaunch open_manipulator_with_tb3 open_manipulator_with_tb3_rviz.launch
   ```
 
-![](/assets/images/platform/openmanipulator/TurtleBot3_with_Open_Manipulator.jpg)
+![](/assets/images/platform/openmanipulator/TurtleBot3_with_Open_Manipulator.png)
 
-### OpenCR
+# [Friends](#friends)
 
-![](/assets/images/platform/openmanipulator/OpenManipulator_chain_processing.png)
+  Friends List
 
-- [OpenCR Manual]
+  - [OpenManipulator SCARA](/docs/en/platform/openmanipulator/#openmanipulator-scara)
+  - [OpenManipulator Link](/docs/en/platform/openmanipulator/#openmanipulator-link)
+  - [OpenManipulator Planar](/docs/en/platform/openmanipulator/#openmanipulator-planar)
+  - [OpenManipulator Delta](/docs/en/platform/openmanipulator/#openmanipulator-delta)
+  - [OpenManipulator Stewart](/docs/en/platform/openmanipulator/#openmanipulator-stewart)
+  - [OpenManipulator Linear](/docs/en/platform/openmanipulator/#openmanipulator-linear)
 
-## Image of OpenManipulator Chain
-
-![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_OnShape.jpg)
-
-![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_Capture.png)
-
-# [OpenManipulator SCARA](#openmanipulator-scara)
+## [OpenManipulator SCARA](#openmanipulator-scara)
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_SCARA.png)
 
-## [Specification Of SCARA](#specification-of-scara)
+### Specification
+
+![](/assets/images/platform/openmanipulator/OpenManipulator_SCARA_Capture.png)
 
 |                     | Unit    | Chain with XM430-W350                   |
 | ------------------- | ------- | --------------------------------------- |
@@ -203,38 +312,37 @@ $ cd ~/catkin_ws && catkin_make
 | **Software**        | -       | ROS, Dynamixel SDK, Arduino, Processing |
 | **Main Controller** | -       | Laptop PC, OpenCR                       |
 
+### Dimension
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_SCARA_spec_side.png)
 
-## [Hardware Setup of SCARA](#hardware-setup-scara)
+### Hardware Setup
 
 [Parts of OpenManipulator](https://docs.google.com/a/robotis.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit?usp=sharing)
 
 [CAD Files](https://goo.gl/oVsK8m)
 
+![](/assets/images/platform/openmanipulator/OpenManipulator_SCARA_OnShape.png)
+
 * Items that are painted in purple are purchased on ROBOTIS SHOP
 * Items that are painted in green are purchased on shopping mall
 * Items that are painted in yellow are 3D printing parts
 
-## [Software Setup of SCARA](#software-setup-scara)
+### Software Setup
 
-### OpenCR
+  - **Comming Soon**
+
+### Video
 
  <iframe width="560" height="315" src="https://www.youtube.com/embed/4PK3I1JfSzc" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
-- [OpenCR Manual]
-
-## Image of OpenManipulator SCARA
-
-![](/assets/images/platform/openmanipulator/OpenManipulator_SCARA_OnShape.png)
-
-![](/assets/images/platform/openmanipulator/OpenManipulator_SCARA_Capture.png)
-
-# [OpenManipulator Link](#openmanipulator-link)
+## [OpenManipulator Link](#openmanipulator-link)
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_Link.png)
 
-## [Specification of Link](#specification-of-link)
+### Specification
+
+![](/assets/images/platform/openmanipulator/OpenManipulator_Link_Capture.png)
 
 |                          | Unit    | Chain with XM430-W350                   |
 | ------------------------ | ------- | --------------------------------------- |
@@ -250,45 +358,45 @@ $ cd ~/catkin_ws && catkin_make
 | **Software**             | -       | ROS, Dynamixel SDK, Arduino, Processing |
 | **Main Controller**      | -       | Laptop PC, OpenCR                       |
 
+### Dimension
+
 ![](/assets/images/platform/openmanipulator/OpenManipulator_Link_spec_side.png)
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_Link_spec_up.png)
 
-## [Hardware Setup of Link](#hardware-setup-of-link)
+### Hardware Setup
 
 [Parts of OpenManipulator](https://docs.google.com/a/robotis.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit?usp=sharing)
 
 [CAD Files](https://goo.gl/MJ6C8K)
 
+![](/assets/images/platform/openmanipulator/OpenManipulator_Link_OnShape.png)
+
 * Items that are painted in purple are purchased on ROBOTIS SHOP
 * Items that are painted in green are purchased on shopping mall
 * Items that are painted in yellow are 3D printing parts
 
-## [Software Setup of Link](#software-setup-of-link)
+### Software Setup
 
-### OpenCR
+  - **Comming Soon**
 
-- [OpenCR Manual]
+### Video
 
-## Image of OpenManipulator Link
+  - **Comming Soon**
 
-![](/assets/images/platform/openmanipulator/OpenManipulator_Link_OnShape.png)
-
-![](/assets/images/platform/openmanipulator/OpenManipulator_Link_Capture.png)
-
-# [OpenManipulator Planar](#openmanipulator-planar)
+## [OpenManipulator Planar](#openmanipulator-planar)
 
 **Be released in 2018**
 
-# [OpenManipulator Delta](#openmanipulator-delta)
+## [OpenManipulator Delta](#openmanipulator-delta)
 
 **Be released in 2018**
 
-# [OpenManipulator Stewart](#openmanipulator-stewart)
+## [OpenManipulator Stewart](#openmanipulator-stewart)
 
 **Be released in 2018**
 
-# [OpenManipulator Linear](#openmanipulator-linear)
+## [OpenManipulator Linear](#openmanipulator-linear)
 
 **Be released in 2018**
 
