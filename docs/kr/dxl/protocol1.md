@@ -21,28 +21,28 @@ sidebar:
 ## [Packet](#packet)
 
 Main Controller와 다이나믹셀은 Packet이라고 불리는 데이터를 주고 받으며 통신합니다. Packet에는 두 가지 종류가 있습니다. Main Controller가 다이나믹셀을 제어하기 위해 전송하는 Instruction Packet과 다이나믹셀이 Main Controller로 답변하는 Status Packet이 그것입니다.
- 
+
 ## [ID](#id)
 
 ID는 한 개의 버스에 여러 개의 다이나믹셀이 연결되었을 때 각각의 다이나믹셀들을 구별하기 위해 만든 고유 번호입니다.  
 Instruction Packet과 Status Packet에 ID를 넣음으로써 Main Controller는 제어하고자 하는 다이나믹셀만을 제어할 수 있습니다.
- 
+
 ## [Protocol](#protocol)
 
 다이나믹셀은 8 bit, 1 Stop bit, None Parity의 Asynchronous Serial 통신을 합니다.
- 
+
 만약 같은 ID 를 가진 다이나믹셀이 연결되었을 경우 Packet 충돌이 일어나서 통신에 문제를 일으키게 됩니다.  
 그러므로 ID가 같은 다이나믹셀이 존재하지 않도록 ID설정을 해야 합니다.
- 
+
 다이나믹셀의 ID 는 변경 가능합니다. 변경 방법은 [다이나믹셀 ID설정]을 참고하시기 바랍니다.  
 공장 출하시 초기 ID 는 1번 입니다.
- 
+
 ## [Half Duplex](#half-duplex)
 
 Half Duplex란 TxD, RxD를 하나의 선으로 공유하는 통신 방식으로 다이나믹셀은 Half Duplex 방식을 사용하고 있습니다.  
 보통 하나의 BUS에 여러 개의 통신 장치를 연결할 경우에 사용합니다.  
 여러 개의 장치가 송신하는 동안 그 외의 다른 모든 장치들은 입력 상태이어야 하기 때문에 통신 방향을 제어하는 Direction Port가 필요합니다.  
-다이나믹셀을 제어하는 Main Controller는 통신 방향을 입력으로 설정해 놓고 있다가 Instructon Packet을 전송하는 동안만 통신 방향을 출력으로 설정해야 합니다. 
+다이나믹셀을 제어하는 Main Controller는 통신 방향을 입력으로 설정해 놓고 있다가 Instructon Packet을 전송하는 동안만 통신 방향을 출력으로 설정해야 합니다.
 
 ![](/assets/images/dxl/halfduplex.png)
 
@@ -51,7 +51,7 @@ Half Duplex란 TxD, RxD를 하나의 선으로 공유하는 통신 방식으로 
 Half Duplex 통신 방식을 사용하기 위해 필요한 제어 방법입니다.  
 RS485 UART 에서는 송신이 끝나는 Timing 을 잘 맞춰서 Direction 을 수신 Mode 로 바꾸어야 합니다.  
 CPU 에서는 일반적으로 UART_STATUS 를 표시해주는 REGISTER 내에 다음과 같은 의미의 BIT 가 있습니다.
- 
+
 - **TXD_BUFFER_READY_BIT**: Transmission DATA 를 Buffer 에 적재할 수 있는 상태임을 뜻합니다. 상태는 SERIAL TX BUFFER 가 비어 있다는 의미이지, 이전에 전송한 데이터가 모두 CPU 밖으로 배출된 상태를 의미하는 것은 아닙니다.
 - **TXD_SHIFT_REGISTER_EMPTY_BIT**: Transmission Data 가 모두 CPU 밖으로 배출되었을 때 SET 됩니다.
 
@@ -82,10 +82,10 @@ while(!TXD_SHIFT_REGISTER_EMPTY_BIT); //Wait till last data bit has been sent
 DIRECTION_PORT = RX_DIRECTION; //Direction change to RXD
 EnableInterrupt(); // enable interrupt again
 ```
- 
+
 `Note` 주의할 부분은 LINE 8부터 LINE 12입니다. LINE 8이 필요한 이유는 그 시점에서 Interrupt 가 발생하여 Return Delay Time 보다 긴 시간 동안 Interrupt routine이 수행될 경우 Status Packet의 앞부분이 손상되기 때문입니다.
 {: .notice}
- 
+
 # [Byte to Byte Time](#byte-to-byte-time)
 
 Instruction Packet을 전송할 때 Byte와 Byte사이의 Delay Time을 의미하는데, 이 시간이 100msec가 넘을 경우 RX-64는 전송 장해가 발생한 것으로 간주하고, 다시 Packet의 header(0xff 0xff)를 기다립니다.
@@ -103,7 +103,7 @@ Instruction Packet은 제어기가 다이나믹셀에게 보내는 명령 데이
 Packet의 시작을 알리는 신호입니다.
 
 ## [Packet ID](#packet-id)
-Instruction Packet을 받을 다이나믹셀의 ID입니다. 
+Instruction Packet을 받을 다이나믹셀의 ID입니다.
 
   1. 일반 ID : 0 ~ 253 (0x00~0xFD), 254개를 사용할 수 있습니다.
   2. Broadcast ID : 254 (0xFE), 연결된 모든 다이나믹셀이 Instruction Packet의 명령을 수행하며 Status Packet은 반환되지 않습니다.
@@ -162,7 +162,7 @@ Checksum = ~ ( ID + Length + Instruction + Parameter1 + ... Parameter 3 )
 Packet의 시작을 알리는 신호입니다.
 
 ## [Packet ID](#packet-id)
-Status Packet을 전송하는 다이나믹셀의 ID입니다. 
+Status Packet을 전송하는 다이나믹셀의 ID입니다.
 
   1. 일반 ID : 0 ~ 253 (0x00~0xFD), 254개를 사용할 수 있습니다.
   2. Broadcast ID : 254 (0xFE), 연결된 모든 다이나믹셀이 Instruction Packet의 명령을 수행하며 Status Packet은 반환되지 않습니다.
@@ -338,7 +338,7 @@ ACTION 명령은 여러 개의 다이나믹셀들을 동시에 움직여야 하�
 ## [Factory Reset](#factory-reset)
 Control Table의 Data를 공장 출하 값 상태로 되돌려 놓습니다.
 
-`주의` RESET 명령을 사용하면 사용자가 EEPROM에 설정했던 값이 지워지므로 사용에 주의하시기 바랍니다.
+`주의` RESET 명령을 사용하면 사용자가 EEPROM에 설정했던 값이 지워지므로 사용에 주의하시기 바랍니다. Broadcast ID(0xFE)로 RESET 명령을 사용할 수 없습니다.
 {: .notice--warning}
 
 |Instruction|Length|Parameter|
