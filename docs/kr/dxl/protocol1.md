@@ -124,6 +124,7 @@ Packet의 길이로서 Instruction, Parameter, Checksum 항목의 데이터 길�
 |0x04|Reg Write|WRTE_DATA와 내용은 유사하나, 대기상태로 있다가 ACTION 명령이 도착해야 수행됨|>2|
 |0x05|Action|REG WRITE로 등록된 동작을 시작하라는 명령|0|
 |0x06|Factory Reset|다이나믹셀의 상태를 공장 출하 상태로 복귀시키는 명령|0|
+|0x08|Reboot|장치를 재부팅 시키는 Instruction|0|
 |0x83|Sync Write|한번에 여러 개의 다이나믹셀을 동시에 제어하고자 할때 사용되는 명령|>4|
 |0x92|Bulk Read|한번의 명령으로 여러 개의 다이나믹셀의 데이터를 순차적으로 읽음.<br>(이명령은 MX시리즈에서만 사용할 수 있습니다.)|>4|
 
@@ -338,7 +339,9 @@ ACTION 명령은 여러 개의 다이나믹셀들을 동시에 움직여야 하�
 ## [Factory Reset](#factory-reset)
 Control Table의 Data를 공장 출하 값 상태로 되돌려 놓습니다.
 
-`주의` RESET 명령을 사용하면 사용자가 EEPROM에 설정했던 값이 지워지므로 사용에 주의하시기 바랍니다. Broadcast ID(0xFE)로 RESET 명령을 사용할 수 없습니다.
+`주의` RESET 명령을 사용하면 사용자가 EEPROM에 설정했던 값이 지워지므로 사용에 주의하시기 바랍니다.<br>
+`주의` 일부 모델은 Broadcast ID(0xFE)로 RESET 명령을 사용할 수 없습니다.<br>
+대상 모델 : MX-12W(V41), MX-28(V40), MX-64(V40), MX-106(V40)
 {: .notice--warning}
 
 |Instruction|Length|Parameter|
@@ -360,6 +363,29 @@ Control Table의 Data를 공장 출하 값 상태로 되돌려 놓습니다.
 |H1|H2|ID|LEN|ERR|CKSM|
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |0xFF|0xFF|0x00|0x02|0x00|0xFD|
+
+## [Reboot](#reboot)
+
+### 설명
+- 장치를 재부팅 시키는 Instruction
+- 지원 모델 : MX-12W(V41), MX-28(V40), MX-64(V40), MX-106(V40), X 시리즈(XL-320 제외)
+
+### 예제
+
+#### 예제 설명
+- ID 1(XM430-W210)를 Reboot 시킬 경우
+
+#### Reboot Instruction Packet
+
+|H1|H2|ID|LEN|INST|CKSM|
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|0xFF|0xFF|0x01|0x02|0x08|0xF4|
+
+#### ID 1 Status Packet
+
+|H1|H2|ID|LEN|ERR|CKSM|
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|0xFF|0xFF|0x01|0x02|0x00|0xFC|
 
 ## [Sync Write](#sync-write)
 한번의 Instruction Packet전송으로 여러 개의 다이나믹셀들을 동시에 제어하고자 할 때 사용되는 명령어입니다.  
