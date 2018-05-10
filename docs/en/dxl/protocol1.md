@@ -293,7 +293,7 @@ This instruction is to execute the registered Reg Write instruction. The Action 
 ## [Factory Reset](#factory-reset)
 This instruction is to reset the Control Table of Dynamixel to the factory default values.
 
-`Caution` Please be careful as Reset instruction will erase saved custom values in the EEPROM.
+`Caution` Please be careful as Reset instruction will factory reset values in the EEPROM. Broadcast ID(0xFE) cannot be used for Reset instruction.
 {: .notice--warning}
 
 |Length|Instruction|Parameter|
