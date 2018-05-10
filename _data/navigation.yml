@@ -9823,8 +9823,6 @@ turtlebot3:
         url: /platform/turtlebot3/hardware_setup/#turtlebot3-burger
       - title: "TurtleBot3 Waffle"
         url: /platform/turtlebot3/hardware_setup/#turtlebot3-waffle
-    - title: "Basic Operation"
-      url: /platform/turtlebot3/hardware_setup/#basic-operation
     - title: "Open Source Hardware"
       url: /platform/turtlebot3/hardware_setup/#open-source-hardware
   - title: "PC Setup"
@@ -9881,6 +9879,8 @@ turtlebot3:
         url: /platform/turtlebot3/opencr_setup/#shell-script
       - title: "Arduino IDE"
         url: /platform/turtlebot3/opencr_setup/#arduino-ide
+    - title: "Basic Operation"
+      url: /platform/turtlebot3/opencr_setup/#basic-operation
   - title: "Bringup"
     url: /platform/turtlebot3/bringup/#bringup
     children:
