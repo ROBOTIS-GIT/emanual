@@ -1004,77 +1004,84 @@ Connect to ROBOTIS-OP3 WiFi with below information
   > Modified parameter values will be saved automatically.  
 
 
-## [Read-Write Tutorial](#op3-read-write-tutorial)
+## [Read-Write Tutorial](#read-write-tutorial)
 
 ### Overview   
-This chapter explains to user how to get joint angles of ROBOTIS-OP3 and how to set the values.  
+This chapter explains to user how to get joint angles of ROBOTIS-OP3 and how to set their values.  
 
 #### Framework Diagram
+
 ![](/assets/images/platform/op3/op3_manager_03.png)  
 
 This is a framework diagram. The framework(op3_manager) works in the following way.
+
 1. Initialization  
-2. Adding sensor and motion module  
-3. Starting a timer and Running a thread  
-  Executes the process function within the thread at a cycle of 8ms.
-  The process function performs the following operations according to the mode.   
-  - DirectControlMode : This mode controls the robot using topics received directly from the user.  
-    1. BulkRead RX : Received rx packet containing information of each joint from Dynamixel  
-	2. SyncWrite : transfer joint values to be controlled directly to the Dynamixels  
-    3. BulkRead TX : transmit tx packet to get information of dynamixel  	
-	4. Call `process()` function of each sensor module  
-	5. publish a topic that contains present & goal joint states  
-  - MotionModuleMode : This mode controls the robot using motion module.  
-    1. BulkRead RX : Received rx packet containing information of each joint from Dynamixel  
-	2. SyncWrite : transfer goal values(position, velocity, current, position pid gain, velocity pid gain) to the Dynamixels  
-    3. BulkRead TX : transmit tx packet to get information of dynamixel  
-	4. Call `process()` function of each sensor module  
-	5. Call `process()` function of each motion module  
-	6. publish a topic that contains present & goal joint states  
+2. Add sensors and motion modules  
+3. Start the timer and run threads  
+    Execute the process function within the thread at a cycle of 8ms.  
+    The process function performs the following operations according to the mode.  
+
+    - DirectControlMode : This mode directly controls the robot using topics received from the user.  
+
+      1. BulkRead RX : Received rx packet containing joint information of each Dynamixel  
+      2. SyncWrite : Transmit joint values to the multiple Dynamixels to control
+      3. BulkRead TX : Transmit tx packet to get information of dynamixel  	
+      4. Call `process()` function of each sensor module  
+      5. Publish a topic that contains present & goal joint states  
+
+    - MotionModuleMode : This mode controls the robot using motion module.  
+
+      1. BulkRead RX : Received rx packet containing joint information of each Dynamixel  
+      2. SyncWrite : Transmit goal values(position, velocity, current, position PID gain, velocity PID gain) to multiple Dynamixels  
+      3. BulkRead TX : Transmit tx packet to get information of dynamixel  
+      4. Call `process()` function of each sensor module  
+      5. Call `process()` function of each motion module  
+      6. Publish a topic that contains present & goal joint states  
 
 ### Description  
-#### How to get joint states  
- - inside of `op3_manager` : for `motion_module`  
-   If user creates and uses a motion_module, user can get additional information by adding a bulkread item.  
-   bulkread item is added by modifying [OP3.robot] file.   
-   In robotis_controller, when the process () function of each motion_module is called,
-   two arguments pass the imformation about joint.
-   `robot_-> dxls_` contains information about each joint and
-   `sensor_result_` contains information about the sensor.  
- - outside of `op3_manager` : for other ros pakcages  
-   The process function in robotis_controller reads the information of each joint and publishes it as a topic.  
-   - topic name : `/robotis/present_joint_states`  
-   - details : present position, present velocity, present effort, goal position, goal velocity, goal effort  
+#### How to Get Joint States  
+- `motion_module` uses joint states inside of the `op3_manager`.  
+  If user creates and uses a motion_module, user can get additional information by adding a bulkread item.  
+  bulkread item is added by modifying [OP3.robot] file.   
+  In robotis_controller, when the process() function of each motion_module is called,
+  two arguments pass the imformation about joint.
+  - `robot_-> dxls_` contains information about each joint.
+  - `sensor_result_` contains information about the sensor.  
+- Other ROS packages use joint states outside of the `op3_manager`.  
+  The process function in robotis_controller reads the information of each joint and publishes it as a topic.  
+  - topic name : `/robotis/present_joint_states`  
+  - Containing Information : present position, present velocity, present effort, goal position, goal velocity, goal effort  
 
 
-#### How to set joint states  
-op3_manager provides a way to control each joint of the robot through the following two methods.  
- - `robotis_controller`  
-    If the control mode of the robotis_controller is one of the two below, the user can directly control the joints of the robot using the `/ robotis / set_joint_states` topic.  
-    - DirectControlMode  
-    - none of the activating module under the MotionModuleMode  
- - `direct_control_module`  
-    User can direct control the joints of the robot using `direct_control_module` that is one of the motion modules.  
-	`direct_control_module` has a simple self-collision checking(check the distance between end-effector and COB).  
-	A topic name to control the robot is `/robotis/direct_control/set_joint_states`.  
+#### How to Set Joint States  
+op3_manager provides a way to control each joint of the robot with the following two methods.  
 
- > Reference : SyncWriteItem  
-   Framework provides `SyncWriteItem`, a way to write to devices aperiodically.  
-   If user send a `SyncWriteItem` message with the name of `/robotis/sync_write_item`, Framework try to sync-write to devices with those message.  
+- `robotis_controller`  
+  If the control mode of the robotis_controller meets one of the below two conditions, the user can directly control joints of the robot using the `/ robotis / set_joint_states` topic.  
+  - DirectControlMode  
+  - none of the activating module under the MotionModuleMode  
+- `direct_control_module`  
+  User can directly control joints of the robot using `direct_control_module` that is one of the motion modules.  
+  `direct_control_module` has a simple self-collision checking(check the distance between end-effector and COB).  
+  The topic name to control the robot is `/robotis/direct_control/set_joint_states`.  
 
-### Read-Write demo
+> Reference : SyncWriteItem  
+> Framework provides `SyncWriteItem`, a way to write to devices aperiodically.  
+> If user send a `SyncWriteItem` message with the name of `/robotis/sync_write_item`, Framework try to sync-write to devices with those message.  
+
+### Read-Write Demo
 #### Download & Build  
  > Reference : [Installing ROBOTIS ROS Package]
 
-#### How to run demo  
-stop the default demo  
+#### How to Run Demo  
+Stop the default demo  
 
 ```
 $ sudo service OP3-demo stop
 [sudo] password for robotis: 111111
 ```  
 
-run read-write demo  
+Run read-write demo  
 ```
 $ roslaunch op3_read_write_demo op3_read_write.launch
 ```
@@ -1122,9 +1129,8 @@ $ roslaunch op3_read_write_demo op3_read_write.launch
  - rqt_graph  
    ![](/assets/images/platform/op3/op3_read_write_graph.png)
 
-#### How to operate  
- - After run the demo  
-   ![execution_image]
+#### How to Operate  
+
  - Description : Buttons  
    From the left : `mode` button, `start` button, `user` button, `reset` button  
    - `mode` button : start read_write demo using `robotis_controller`  
@@ -1133,8 +1139,9 @@ $ roslaunch op3_read_write_demo op3_read_write.launch
    - `reset` button : torque off all joints  
 
 #### Source Code  
- - [read_write.cpp]  
- ```cpp
+- [read_write.cpp]  
+
+  ```cpp
   #include <ros/ros.h>
   #include <std_msgs/String.h>
   #include <sensor_msgs/JointState.h>
@@ -1422,10 +1429,11 @@ $ roslaunch op3_read_write_demo op3_read_write.launch
 
     sync_write_pub.publish(syncwrite_msg);
   }
- ```
+  ```
 
- - Explanation  
- The `main ()` function checks if the `/ op3_manager` node is running. Otherwise, wait for it to run.  
+- Code Explanation  
+  The `main ()` function checks if the `/op3_manager` node is running. Otherwise, wait for it to run.  
+
   ```cpp  
   // wait for starting of op3_manager
   std::string manager_name = "/op3_manager";
@@ -1442,7 +1450,8 @@ $ roslaunch op3_read_write_demo op3_read_write.launch
   }
   ```
 
- If `/ op3_manager` is running, take the initial posture for the demo and process the topic and service.  
+ If `/op3_manager` is running, take the initial posture for the demo and process the topic and service.  
+
   ```cpp
   readyToDemo();
 
@@ -1460,8 +1469,9 @@ $ roslaunch op3_read_write_demo op3_read_write.launch
   ```
 
   When the button on the back of ROBOTIS-OP3 is pressed, it is processed by the following function.   
-  If you press `mode`,` start` button starts demo, if you press `user` button, torque of all joints is turned on.  
+  `mode` and ` start` buttons will start demo. If you press `user` button, torque of all joint will be turned on.  
   Before starting the demo, the `readyToDemo()` function uses `SyncWriteItem` to turn off the right arm torque.  
+
   ```cpp
   void buttonHandlerCallback(const std_msgs::String::ConstPtr& msg)
   {
@@ -1489,7 +1499,8 @@ $ roslaunch op3_read_write_demo op3_read_write.launch
   ```  
 
   If `op3_manager` receives the present value of the joint, it is processed by the following function according to demo mode.  
-  Create a JointState message with the value of the left arm joint created by mirroring the value of the right arm joint and its value, and pass it to the `op3_manager` as a topic based on each demo.  
+  Create a JointState message with the value of the left arm joint created by mirroring the value of the right arm joint, and pass it to the `op3_manager` as a topic based on each demo.  
+
   ```cpp
   void jointstatesCallback(const sensor_msgs::JointState::ConstPtr& msg)
   {
@@ -1534,7 +1545,7 @@ $ roslaunch op3_read_write_demo op3_read_write.launch
     else if(control_module == DirectControlModule)
       write_joint_pub2.publish(write_msg);
   }
-```
+  ```
 
 
 [op3_manager]: /docs/en/platform/op3/robotis_ros_packages/#op3-manager

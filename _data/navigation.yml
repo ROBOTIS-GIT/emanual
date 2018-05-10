@@ -9251,6 +9251,8 @@ op3:
       url: /platform/op3/tutorials/#how-to-control-upgraded-walking-using-footstep-planner
     - title: "How to use Web Setting Tool"
       url: /platform/op3/tutorials/#how-to-use-web-setting-tool
+    - title: "Read-Write Tutorial"
+      url: /platform/op3/tutorials/#read-write-tutorial
   - title: "Simulation"
     url: /platform/op3/simulation/#simulation
     children:
