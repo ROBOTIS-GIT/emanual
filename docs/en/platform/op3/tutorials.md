@@ -1004,6 +1004,550 @@ Connect to ROBOTIS-OP3 WiFi with below information
   > Modified parameter values will be saved automatically.  
 
 
+## [Read-Write Tutorial](#read-write-tutorial)
+
+### Overview   
+This chapter explains to user how to get joint angles of ROBOTIS-OP3 and how to set their values.  
+
+#### Framework Diagram
+
+![](/assets/images/platform/op3/op3_manager_03.png)  
+
+This is a framework diagram. The framework(op3_manager) works in the following way.
+
+1. Initialization  
+2. Add sensors and motion modules  
+3. Start the timer and run threads  
+    Execute the process function within the thread at a cycle of 8ms.  
+    The process function performs the following operations according to the mode.  
+
+    - DirectControlMode : This mode directly controls the robot using topics received from the user.  
+
+      1. BulkRead RX : Received rx packet containing joint information of each Dynamixel  
+      2. SyncWrite : Transmit joint values to the multiple Dynamixels to control
+      3. BulkRead TX : Transmit tx packet to get information of dynamixel  	
+      4. Call `process()` function of each sensor module  
+      5. Publish a topic that contains present & goal joint states  
+
+    - MotionModuleMode : This mode controls the robot using motion module.  
+
+      1. BulkRead RX : Received rx packet containing joint information of each Dynamixel  
+      2. SyncWrite : Transmit goal values(position, velocity, current, position PID gain, velocity PID gain) to multiple Dynamixels  
+      3. BulkRead TX : Transmit tx packet to get information of dynamixel  
+      4. Call `process()` function of each sensor module  
+      5. Call `process()` function of each motion module  
+      6. Publish a topic that contains present & goal joint states  
+
+### Description  
+#### How to Get Joint States  
+- `motion_module` uses joint states inside of the `op3_manager`.  
+  If user creates and uses a motion_module, user can get additional information by adding a bulkread item.  
+  bulkread item is added by modifying [OP3.robot] file.   
+  In robotis_controller, when the process() function of each motion_module is called,
+  two arguments pass the imformation about joint.
+  - `robot_-> dxls_` contains information about each joint.
+  - `sensor_result_` contains information about the sensor.  
+- Other ROS packages use joint states outside of the `op3_manager`.  
+  The process function in robotis_controller reads the information of each joint and publishes it as a topic.  
+  - topic name : `/robotis/present_joint_states`  
+  - Containing Information : present position, present velocity, present effort, goal position, goal velocity, goal effort  
+
+
+#### How to Set Joint States  
+op3_manager provides a way to control each joint of the robot with the following two methods.  
+
+- `robotis_controller`  
+  If the control mode of the robotis_controller meets one of the below two conditions, the user can directly control joints of the robot using the `/ robotis / set_joint_states` topic.  
+  - DirectControlMode  
+  - none of the activating module under the MotionModuleMode  
+- `direct_control_module`  
+  User can directly control joints of the robot using `direct_control_module` that is one of the motion modules.  
+  `direct_control_module` has a simple self-collision checking(check the distance between end-effector and COB).  
+  The topic name to control the robot is `/robotis/direct_control/set_joint_states`.  
+
+> Reference : SyncWriteItem  
+> Framework provides `SyncWriteItem`, a way to write to devices aperiodically.  
+> If user send a `SyncWriteItem` message with the name of `/robotis/sync_write_item`, Framework try to sync-write to devices with those message.  
+
+### Read-Write Demo
+#### Download & Build  
+ > Reference : [Installing ROBOTIS ROS Package]
+
+#### How to Run Demo  
+Stop the default demo  
+
+```
+$ sudo service OP3-demo stop
+[sudo] password for robotis: 111111
+```  
+
+Run read-write demo  
+```
+$ roslaunch op3_read_write_demo op3_read_write.launch
+```
+
+#### `op3_read_write.launch`  
+```
+<?xml version="1.0" ?>
+<launch>    
+  <param name="gazebo"                   value="false"    type="bool"/>
+  <param name="gazebo_robot_name"        value="robotis_op3"/>
+
+  <param name="offset_file_path"         value="$(find op3_manager)/config/offset.yaml"/>
+  <param name="robot_file_path"          value="$(find op3_manager)/config/OP3.robot"/>
+  <param name="init_file_path"           value="$(find op3_manager)/config/dxl_init_OP3.yaml"/>
+  <param name="device_name"              value="/dev/ttyUSB0"/>
+
+  <param name="/robotis/direct_control/default_moving_time"     value="0.04"/>
+  <param name="/robotis/direct_control/default_moving_angle"    value="90"/>
+
+  <!-- OP3 Manager -->
+  <node pkg="op3_manager" type="op3_manager" name="op3_manager" output="screen">
+    <param name="angle_unit" value="30" />
+  </node>
+
+  <!-- OP3 Localization -->
+  <node pkg="op3_localization" type="op3_localization" name="op3_localization" output="screen"/>
+
+  <!-- OP3 Read-Write demo -->
+  <node pkg="op3_read_write_demo" type="read_write" name="op3_read_write" output="screen"/>
+</launch>
+```  
+ - parameters
+   - `gazebo` : parameter for gazebo simulation  
+   - `gazebo_robot_name` : robot name for gazebo simulation  
+   - `offset_file_path` : The file path containing the offset value of each joint, used by op3_manager.  
+   - `robot_file_path` : The file path containing the robot information  
+   - `init_file_path` : The file path containing the initial parameters of joints  
+   - `device_name` : device name to communicate with robot  
+   - `/robitis/direct_control/default_moving_time` : minimum moving time for direct_control_module  
+   - `/robitis/direct_control/default_moving_angle` : moving angle per 1 sec, used in direct_control_module  
+ - node  
+   - `op3_manager` : This node controls ROBOTIS-OP3 hardware  
+   - `op3_localization` : simple localization node for op3_online_walking
+   - `op3_read_write` : read-write demo, described in this chapter  
+ - rqt_graph  
+   ![](/assets/images/platform/op3/op3_read_write_graph.png)
+
+#### How to Operate  
+
+ - Description : Buttons  
+   From the left : `mode` button, `start` button, `user` button, `reset` button  
+   - `mode` button : start read_write demo using `robotis_controller`  
+   - `start` button : start read_write demo using `direct_control_module`  
+   - `user` button : torque on all joints  
+   - `reset` button : torque off all joints  
+
+#### Source Code  
+- [read_write.cpp]  
+
+  ```cpp
+  #include <ros/ros.h>
+  #include <std_msgs/String.h>
+  #include <sensor_msgs/JointState.h>
+
+  #include "robotis_controller_msgs/SetModule.h"
+  #include "robotis_controller_msgs/SyncWriteItem.h"
+
+  void buttonHandlerCallback(const std_msgs::String::ConstPtr& msg);
+  void jointstatesCallback(const sensor_msgs::JointState::ConstPtr& msg);
+  void readyToDemo();
+  void setModule(const std::string& module_name);
+  void goInitPose();
+  void setLED(int led);
+  bool checkManagerRunning(std::string& manager_name);
+  void torqueOnAll();
+  void torqueOff(const std::string& body_side);
+
+  enum ControlModule
+  {
+    None = 0,
+    Framework = 1,
+    DirectControlModule = 2,
+  };
+
+  const int SPIN_RATE = 30;
+  const bool DEBUG_PRINT = false;
+
+  ros::Publisher init_pose_pub;
+  ros::Publisher sync_write_pub;
+  ros::Publisher dxl_torque_pub;
+  ros::Publisher write_joint_pub;
+  ros::Publisher write_joint_pub2;
+  ros::Subscriber buttuon_sub;
+  ros::Subscriber read_joint_sub;
+
+  ros::ServiceClient set_joint_module_client;
+
+  int control_module = None;
+  bool demo_ready = false;
+
+  //node main
+  int main(int argc, char **argv)
+  {
+    //init ros
+    ros::init(argc, argv, "read_write");
+
+    ros::NodeHandle nh(ros::this_node::getName());
+
+    init_pose_pub = nh.advertise<std_msgs::String>("/robotis/base/ini_pose", 0);
+    sync_write_pub = nh.advertise<robotis_controller_msgs::SyncWriteItem>("/robotis/sync_write_item", 0);
+    dxl_torque_pub = nh.advertise<std_msgs::String>("/robotis/dxl_torque", 0);
+    write_joint_pub = nh.advertise<sensor_msgs::JointState>("/robotis/set_joint_states", 0);
+    write_joint_pub2 = nh.advertise<sensor_msgs::JointState>("/robotis/direct_control/set_joint_states", 0);
+
+    read_joint_sub = nh.subscribe("/robotis/present_joint_states", 1, jointstatesCallback);
+    buttuon_sub = nh.subscribe("/robotis/open_cr/button", 1, buttonHandlerCallback);
+
+    // service
+    set_joint_module_client = nh.serviceClient<robotis_controller_msgs::SetModule>("/robotis/set_present_ctrl_modules");
+
+    ros::start();
+
+    //set node loop rate
+    ros::Rate loop_rate(SPIN_RATE);
+
+    // wait for starting of op3_manager
+    std::string manager_name = "/op3_manager";
+    while (ros::ok())
+    {
+      ros::Duration(1.0).sleep();
+
+      if (checkManagerRunning(manager_name) == true)
+      {
+        break;
+        ROS_INFO_COND(DEBUG_PRINT, "Succeed to connect");
+      }
+      ROS_WARN("Waiting for op3 manager");
+    }
+
+    readyToDemo();
+
+    //node loop
+    while (ros::ok())
+    {
+      // process
+
+      //execute pending callbacks
+      ros::spinOnce();
+
+      //relax to fit output rate
+      loop_rate.sleep();
+    }
+
+    //exit program
+    return 0;
+  }
+
+  void buttonHandlerCallback(const std_msgs::String::ConstPtr& msg)
+  {
+    // starting demo using robotis_controller
+    if (msg->data == "start")
+    {
+      control_module = Framework;
+      ROS_INFO("Button : start | Framework");
+      readyToDemo();
+    }
+    // starting demo using direct_control_module
+    else if (msg->data == "mode")
+    {
+      control_module = DirectControlModule;
+      ROS_INFO("Button : mode | Direct control module");
+      readyToDemo();
+    }
+    // torque on all joints of ROBOTIS-OP3
+    else if (msg->data == "user")
+    {
+      torqueOnAll();
+      control_module = None;
+    }
+  }
+
+  void jointstatesCallback(const sensor_msgs::JointState::ConstPtr& msg)
+  {
+    if(control_module == None)
+      return;
+
+    sensor_msgs::JointState write_msg;
+    write_msg.header = msg->header;
+
+    for(int ix = 0; ix < msg->name.size(); ix++)
+    {
+      std::string joint_name = msg->name[ix];
+      double joint_position = msg->position[ix];
+
+      // mirror and copy joint angles from right to left
+      if(joint_name == "r_sho_pitch")
+      {
+        write_msg.name.push_back("r_sho_pitch");
+        write_msg.position.push_back(joint_position);
+        write_msg.name.push_back("l_sho_pitch");
+        write_msg.position.push_back(-joint_position);
+      }
+      if(joint_name == "r_sho_roll")
+      {
+        write_msg.name.push_back("r_sho_roll");
+        write_msg.position.push_back(joint_position);
+        write_msg.name.push_back("l_sho_roll");
+        write_msg.position.push_back(-joint_position);
+      }
+      if(joint_name == "r_el")
+      {
+        write_msg.name.push_back("r_el");
+        write_msg.position.push_back(joint_position);
+        write_msg.name.push_back("l_el");
+        write_msg.position.push_back(-joint_position);
+      }
+    }
+
+    // publish a message to set the joint angles
+    if(control_module == Framework)
+      write_joint_pub.publish(write_msg);
+    else if(control_module == DirectControlModule)
+      write_joint_pub2.publish(write_msg);
+  }
+
+  void readyToDemo()
+  {
+    ROS_INFO("Start Read-Write Demo");
+    // turn off LED
+    setLED(0x04);
+
+    torqueOnAll();
+    ROS_INFO("Torque on All joints");
+
+    // send message for going init posture
+    goInitPose();
+    ROS_INFO("Go Init pose");
+
+    // wait while ROBOTIS-OP3 goes to the init posture.
+    ros::Duration(4.0).sleep();
+
+    // turn on R/G/B LED [0x01 | 0x02 | 0x04]
+    setLED(control_module);
+
+    // change the module for demo
+    if(control_module == Framework)
+    {
+      setModule("none");
+      ROS_INFO("Change module to none");
+    }
+    else if(control_module == DirectControlModule)
+    {
+      setModule("direct_control_module");
+      ROS_INFO("Change module to direct_control_module");
+    }
+    else
+      return;
+
+    // torque off : right arm
+    torqueOff("right");
+    ROS_INFO("Torque off");
+  }
+
+  void goInitPose()
+  {
+    std_msgs::String init_msg;
+    init_msg.data = "ini_pose";
+
+    init_pose_pub.publish(init_msg);
+  }
+
+  void setLED(int led)
+  {
+    robotis_controller_msgs::SyncWriteItem syncwrite_msg;
+    syncwrite_msg.item_name = "LED";
+    syncwrite_msg.joint_name.push_back("open-cr");
+    syncwrite_msg.value.push_back(led);
+
+    sync_write_pub.publish(syncwrite_msg);
+  }
+
+  bool checkManagerRunning(std::string& manager_name)
+  {
+    std::vector<std::string> node_list;
+    ros::master::getNodes(node_list);
+
+    for (unsigned int node_list_idx = 0; node_list_idx < node_list.size(); node_list_idx++)
+    {
+      if (node_list[node_list_idx] == manager_name)
+        return true;
+    }
+
+    ROS_ERROR("Can't find op3_manager");
+    return false;
+  }
+
+  void setModule(const std::string& module_name)
+  {
+    robotis_controller_msgs::SetModule set_module_srv;
+    set_module_srv.request.module_name = module_name;
+
+    if (set_joint_module_client.call(set_module_srv) == false)
+    {
+      ROS_ERROR("Failed to set module");
+      return;
+    }
+
+    return ;
+  }
+
+  void torqueOnAll()
+  {
+    std_msgs::String check_msg;
+    check_msg.data = "check";
+
+    dxl_torque_pub.publish(check_msg);
+  }
+
+  void torqueOff(const std::string& body_side)
+  {
+    robotis_controller_msgs::SyncWriteItem syncwrite_msg;
+    int torque_value = 0;
+    syncwrite_msg.item_name = "torque_enable";
+
+    if(body_side == "right")
+    {
+      syncwrite_msg.joint_name.push_back("r_sho_pitch");
+      syncwrite_msg.value.push_back(torque_value);
+      syncwrite_msg.joint_name.push_back("r_sho_roll");
+      syncwrite_msg.value.push_back(torque_value);
+      syncwrite_msg.joint_name.push_back("r_el");
+      syncwrite_msg.value.push_back(torque_value);
+    }
+    else if(body_side == "left")
+    {
+      syncwrite_msg.joint_name.push_back("l_sho_pitch");
+      syncwrite_msg.value.push_back(torque_value);
+      syncwrite_msg.joint_name.push_back("l_sho_roll");
+      syncwrite_msg.value.push_back(torque_value);
+      syncwrite_msg.joint_name.push_back("l_el");
+      syncwrite_msg.value.push_back(torque_value);
+    }
+    else
+      return;
+
+    sync_write_pub.publish(syncwrite_msg);
+  }
+  ```
+
+- Code Explanation  
+  The `main ()` function checks if the `/op3_manager` node is running. Otherwise, wait for it to run.  
+
+  ```cpp  
+  // wait for starting of op3_manager
+  std::string manager_name = "/op3_manager";
+  while (ros::ok())
+  {
+    ros::Duration(1.0).sleep();
+
+    if (checkManagerRunning(manager_name) == true)
+    {
+      break;
+      ROS_INFO_COND(DEBUG_PRINT, "Succeed to connect");
+    }
+    ROS_WARN("Waiting for op3 manager");
+  }
+  ```
+
+ If `/op3_manager` is running, take the initial posture for the demo and process the topic and service.  
+
+  ```cpp
+  readyToDemo();
+
+  //node loop
+  while (ros::ok())
+  {
+    // process
+
+    //execute pending callbacks
+    ros::spinOnce();
+
+    //relax to fit output rate
+    loop_rate.sleep();
+  }
+  ```
+
+  When the button on the back of ROBOTIS-OP3 is pressed, it is processed by the following function.   
+  `mode` and ` start` buttons will start demo. If you press `user` button, torque of all joint will be turned on.  
+  Before starting the demo, the `readyToDemo()` function uses `SyncWriteItem` to turn off the right arm torque.  
+
+  ```cpp
+  void buttonHandlerCallback(const std_msgs::String::ConstPtr& msg)
+  {
+    // starting demo using robotis_controller
+    if (msg->data == "start")
+    {
+      control_module = Framework;
+      ROS_INFO("Button : start | Framework");
+      readyToDemo();
+    }
+    // starting demo using direct_control_module
+    else if (msg->data == "mode")
+    {
+      control_module = DirectControlModule;
+      ROS_INFO("Button : mode | Direct control module");
+      readyToDemo();
+    }
+    // torque on all joints of ROBOTIS-OP3
+    else if (msg->data == "user")
+    {
+      torqueOnAll();
+      control_module = None;
+    }
+  }
+  ```  
+
+  If `op3_manager` receives the present value of the joint, it is processed by the following function according to demo mode.  
+  Create a JointState message with the value of the left arm joint created by mirroring the value of the right arm joint, and pass it to the `op3_manager` as a topic based on each demo.  
+
+  ```cpp
+  void jointstatesCallback(const sensor_msgs::JointState::ConstPtr& msg)
+  {
+    if(control_module == None)
+      return;
+
+    sensor_msgs::JointState write_msg;
+    write_msg.header = msg->header;
+
+    for(int ix = 0; ix < msg->name.size(); ix++)
+    {
+      std::string joint_name = msg->name[ix];
+      double joint_position = msg->position[ix];
+
+      // mirror and copy joint angles from right to left
+      if(joint_name == "r_sho_pitch")
+      {
+        write_msg.name.push_back("r_sho_pitch");
+        write_msg.position.push_back(joint_position);
+        write_msg.name.push_back("l_sho_pitch");
+        write_msg.position.push_back(-joint_position);
+      }
+      if(joint_name == "r_sho_roll")
+      {
+        write_msg.name.push_back("r_sho_roll");
+        write_msg.position.push_back(joint_position);
+        write_msg.name.push_back("l_sho_roll");
+        write_msg.position.push_back(-joint_position);
+      }
+      if(joint_name == "r_el")
+      {
+        write_msg.name.push_back("r_el");
+        write_msg.position.push_back(joint_position);
+        write_msg.name.push_back("l_el");
+        write_msg.position.push_back(-joint_position);
+      }
+    }
+
+    // publish a message to set the joint angles
+    if(control_module == Framework)
+      write_joint_pub.publish(write_msg);
+    else if(control_module == DirectControlModule)
+      write_joint_pub2.publish(write_msg);
+  }
+  ```
+
+
 [op3_manager]: /docs/en/platform/op3/robotis_ros_packages/#op3-manager
 [Robot Information file(.robot)]: /docs/en/software/robotis_framework_packages/tutorials/#robot-information-file-robot
 [Joint initialize file(.yaml)]: /docs/en/software/robotis_framework_packages/tutorials/#joint-initialize-file-yaml
@@ -1040,3 +1584,4 @@ Connect to ROBOTIS-OP3 WiFi with below information
 [rosbridge_server]: http://wiki.ros.org/web_video_server
 [How to connect]: /docs/en/platform/op3/quick_start/#example--ssh-client-for-windows
 [detail of parameter]: /docs/en/platform/op3/tutorials/#how-to-use-ball-detector
+[read_write.cpp]: https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Demo/blob/master/op3_read_write_demo/src/read_write.cpp
