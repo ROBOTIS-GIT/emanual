@@ -86,7 +86,7 @@ EnableInterrupt(); // enable interrupt again
 `Note` 주의할 부분은 LINE 8부터 LINE 12입니다. LINE 8이 필요한 이유는 그 시점에서 Interrupt 가 발생하여 Return Delay Time 보다 긴 시간 동안 Interrupt routine이 수행될 경우 Status Packet의 앞부분이 손상되기 때문입니다.
 {: .notice}
 
-# [Byte to Byte Time](#byte-to-byte-time)
+## [Byte to Byte Time](#byte-to-byte-time)
 
 Instruction Packet을 전송할 때 Byte와 Byte사이의 Delay Time을 의미하는데, 이 시간이 100msec가 넘을 경우 RX-64는 전송 장해가 발생한 것으로 간주하고, 다시 Packet의 header(0xff 0xff)를 기다립니다.
 
@@ -339,10 +339,14 @@ ACTION 명령은 여러 개의 다이나믹셀들을 동시에 움직여야 하�
 ## [Factory Reset](#factory-reset)
 Control Table의 Data를 공장 출하 값 상태로 되돌려 놓습니다.
 
-`주의` RESET 명령을 사용하면 사용자가 EEPROM에 설정했던 값이 지워지므로 사용에 주의하시기 바랍니다.<br>
-`주의` 일부 모델은 Broadcast ID(0xFE)로 RESET 명령을 사용할 수 없습니다.<br>
-대상 모델 : MX-12W(V41), MX-28(V40), MX-64(V40), MX-106(V40)
-{: .notice--warning}
+{% capture reset_warning_01 %}
+`주의` RESET 명령을 사용하면 사용자가 EEPROM에 설정했던 값이 지워지므로 사용에 주의하시기 바랍니다.
+
+`주의` 일부 모델은 Broadcast ID(0xFE)로 RESET 명령을 사용할 수 없습니다.  
+  대상 모델 : MX-12W(V41), MX-28(V40), MX-64(V40), MX-106(V40)
+{% endcapture %}
+
+<div class="notice--warning">{{ reset_warning_01 | markdownify }}</div>
 
 |Length|Instruction|Parameter|
 |:---:|:---:|:---:|
@@ -377,15 +381,15 @@ Control Table의 Data를 공장 출하 값 상태로 되돌려 놓습니다.
 
 #### Reboot Instruction Packet
 
-|H1|H2|ID|LEN|INST|CKSM|
-|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0x01|0x02|0x08|0xF4|
+|  H1  |  H2  |  ID  | LEN  | INST | CKSM |
+|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0x01 | 0x02 | 0x08 | 0xF4 |
 
 #### ID 1 Status Packet
 
-|H1|H2|ID|LEN|ERR|CKSM|
-|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0x01|0x02|0x00|0xFC|
+|  H1  |  H2  |  ID  | LEN  | ERR  | CKSM |
+|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0x01 | 0x02 | 0x00 | 0xFC |
 
 ## [Sync Write](#sync-write)
 한번의 Instruction Packet전송으로 여러 개의 다이나믹셀들을 동시에 제어하고자 할 때 사용되는 명령어입니다.  
