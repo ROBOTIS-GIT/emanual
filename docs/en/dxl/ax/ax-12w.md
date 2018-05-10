@@ -35,6 +35,8 @@ sidebar:
 | Feedback               | Position, Temperature, Load, Input Voltage, etc                             |
 | Material               | Engineering Plastic                                                         |
 
+{% include en/dxl/warning.md %}
+
 # [Control Table](#control-table)
 The Control Table is a structure of data implemented in the DYNAMIXEL. Users can read a specific Data to get status of the DYNAMIXEL with Read Instruction Packets, and modify Data as well to control DYNAMIXEL with WRITE Instruction Packets.
 

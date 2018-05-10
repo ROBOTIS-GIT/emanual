@@ -15,25 +15,25 @@ sidebar:
 
 To control Dynamixel, communication should be established according to the protocol of Dynamixel.  Dynamixel is driven by receiving binary data. Examples of programs for the transmission of this kind of data are described in detail in the User’s Manual of the Dynamixel-only controller or the USB2Dynamixel.
 Thus, this manual describes only the method and protocol of communication used in Dynamixel on the assumption that Main Controller can transfer binary data.
- 
+
 ## [Packet](#packet)
 
 Main Controller and Dynamixel communicate each other by sending and receiving data called Packet. Packet has two kinds: Instruction Packet, which Main Controller sends to control Dynamixel, and Status Packet, which Dynamixel responses to Main Controller.
- 
+
 ## [ID](#id)
 
 ID is a specific number for distinction of each Dynamixel when several Dynamixels are linked to one bus.  
 By giving IDs to Instruction and Status Packets, Main Controller can control only the Dynamixel that you want to control
- 
+
 ## [Protocol](#protocol)
 
 Dynamixel does the Asynchronous Serial Communication with 8 bit, 1 Stop bit, and None Parity.
- 
+
 If Dynamixel with the same ID is connected, packet will collide and network problem will occur. Thus, set ID as such that there is no Dynamixel with the same ID.
- 
+
 ID of Dynamixel is changeable.
 For this change, please refer to [Changing IDs of Dynamixel]. The factory default setting ID is 1.
- 
+
 ## [Half Duplex](#half-duplex)
 
 Half duplex UART is a serial communication protocol where both TxD and RxD cannot be used at the same time. This method is generally used when many devices need to be connected to a single bus. Since more than one device are connected to the same bus, all the other devices need to be in input mode while one device is transmitting. The Main Controller that controllers the Dynamixel actuators sets the communication direction to input mode, and only when it is transmitting an Instruction Packet, it changes the direction to output mode.
@@ -43,7 +43,7 @@ Half duplex UART is a serial communication protocol where both TxD and RxD canno
 ## [Tx, Rx Direction](#tx-rx-direction)
 
 For Half Duplex UART, the transmission ending timing is important to change the direction to receiving mode. The bit definitions within the register that indicates UART_STATUS are as the following
- 
+
 - **TXD_BUFFER_READY_BIT**: Indicates that the transmission DATA can be loaded into the Buffer. Note that this only means that the SERIAL TX BUFFER is empty, and does not necessarily mean that the all the data transmitted before has left the CPU.
 - **TXD_SHIFT_REGISTER_EMPTY_BIT**: Set when all the Transmission Data has completed its transmission and left the CPU.
 
@@ -73,10 +73,10 @@ while(!TXD_SHIFT_REGISTER_EMPTY_BIT); //Wait till last data bit has been sent
 DIRECTION_PORT = RX_DIRECTION; //Direction change to RXD
 EnableInterrupt(); // enable interrupt again
 ```
- 
+
 `Note` Please note the important lines between LINE 8 and LINE 12. Line 8 is necessary since an interrupt here may cause a delay longer than the return delay time and corruption to the front of the status packet may occur.
 {: .notice}
- 
+
 # [Byte to Byte Time](#byte-to-byte-time)
 
 The delay time between bytes when sending an instruction packet. If the delay time is over 100ms, then the Dynamixel actuator recognizes this as a communication problem and waits for the next header (0xff 0xff) of a packet again.
@@ -181,9 +181,9 @@ Status Checksum is calculated according to the following formula.
 ## [Ping](#ping)
 This instruction requests the Status Packet from a specific ID. Even if Status Return Level(16) is 0, Dynamixel returns Status Packet all the time for Ping Instruction.
 
-|Instruction|Length|Parameter|
+|Length|Instruction|Parameter|
 |:---:|:---:|:---:|
-|0x01|0x02|-|
+|0x02|0x01|-|
 
 ### Example
 #### Conditions
@@ -204,9 +204,9 @@ This instruction requests the Status Packet from a specific ID. Even if Status R
 ## [Read](#read)
 This instruction is to read data in the Control Table of Dynamixel.
 
-|Instruction|Length|Param 1|Param 2|
+|Length|Instruction|Param 1|Param 2|
 |:---:|:---:|:---:|:---:|
-|0x02|0x04|Starting Address of the Data|Length of Data to read|
+|0x04|0x02|Starting Address of the Data|Length of Data to read|
 
 ### Example
 #### Conditions
@@ -227,9 +227,9 @@ This instruction is to read data in the Control Table of Dynamixel.
 ## [Write](#write)
 This instruction is to write data to the Control Table of DYNAMIXEL
 
-|Instruction|Length|Param 1|Param 2|Param 3|Param N+1|
+|Length|Instruction|Param 1|Param 2|Param 3|Param N+1|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|0x03|N + 3|Starting Address of the Data|1st Byte|2nd Byte|Nth Byte|
+|N + 3|0x03|Starting Address of the Data|1st Byte|2nd Byte|Nth Byte|
 
 ### Example
 #### Conditions
@@ -250,9 +250,9 @@ This instruction is to write data to the Control Table of DYNAMIXEL
   - Reg Write Instruction registers the Instruction Packet to a standby status, and sets Control table Registered Instruction to ‘1’.
   - When an Action Instruction is received, the registered Packet is executed, and sets Control Table Registered Instruction to ‘0’.
 
-|Instruction|Length|Param 1|Param 2|Param N+1|
+|Length|Instruction|Param 1|Param 2|Param N+1|
 |:---:|:---:|:---:|:---:|:---:|
-|0x04|N+3|Starting Address of the Data|1st Byte|Nth Byte|
+|N+3|0x04|Starting Address of the Data|1st Byte|Nth Byte|
 
 ### Example
 #### Conditions
@@ -273,9 +273,9 @@ This instruction is to write data to the Control Table of DYNAMIXEL
 ## [Action](#action)
 This instruction is to execute the registered Reg Write instruction. The Action instruction is useful when multiple Dynamixels are required to start moving at the same time. When several devices are controlled via communication, there is a minor time difference between enabling the first and last device. Dynamixel has resolved this problem by using Action instruction.
 
-|Instruction|Length|Parameter|
+|Length|Instruction|Parameter|
 |:---:|:---:|:---:|
-|0x05|0x02|-|
+|0x02|0x05|-|
 
 ### Example
 #### Conditions
@@ -296,9 +296,9 @@ This instruction is to reset the Control Table of Dynamixel to the factory defau
 `Caution` Please be careful as Reset instruction will erase saved custom values in the EEPROM.
 {: .notice--warning}
 
-|Instruction|Length|Parameter|
+|Length|Instruction|Parameter|
 |:---:|:---:|:---:|
-|0x06|0x02|-|
+|0x02|0x06|-|
 
 ### Example
 #### Conditions

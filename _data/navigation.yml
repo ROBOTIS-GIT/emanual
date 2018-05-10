@@ -9729,8 +9729,14 @@ turtlebot3:
   - title: "Overview"
     url: /platform/turtlebot3/overview/#overview
     children:
+    - title: "TurtleBot"
+      url: /platform/turtlebot3/overview/#turtlebot
     - title: "TurtleBot3"
       url: /platform/turtlebot3/overview/#turtlebot3
+    - title: "TurtleBot3 Introduction Video"
+      url: /platform/turtlebot3/overview/#turtlebot3-introduction-video
+    - title: "TurtleBot3 Collaboration Project"
+      url: /platform/turtlebot3/overview/#turtlebot3-collaboration-project
   - title: "Notice"
     url: /platform/turtlebot3/notice/#notice
     children:
@@ -9817,8 +9823,6 @@ turtlebot3:
         url: /platform/turtlebot3/hardware_setup/#turtlebot3-burger
       - title: "TurtleBot3 Waffle"
         url: /platform/turtlebot3/hardware_setup/#turtlebot3-waffle
-    - title: "Basic Operation"
-      url: /platform/turtlebot3/hardware_setup/#basic-operation
     - title: "Open Source Hardware"
       url: /platform/turtlebot3/hardware_setup/#open-source-hardware
   - title: "PC Setup"
@@ -9875,6 +9879,8 @@ turtlebot3:
         url: /platform/turtlebot3/opencr_setup/#shell-script
       - title: "Arduino IDE"
         url: /platform/turtlebot3/opencr_setup/#arduino-ide
+    - title: "Basic Operation"
+      url: /platform/turtlebot3/opencr_setup/#basic-operation
   - title: "Bringup"
     url: /platform/turtlebot3/bringup/#bringup
     children:
@@ -9940,27 +9946,12 @@ turtlebot3:
     children:
     - title: "TurtleBot3 Fake Node Implementation"
       url: /platform/turtlebot3/simulation/#turtlebot3-fake-node-implementation
-    - title: "Stage (2D)"
-      url: /platform/turtlebot3/simulation/#stage-2d
-    - title: "Gazebo (3D)"
-      url: /platform/turtlebot3/simulation/#gazebo-3d
+    - title: "Gazebo (3D Simulator)"
+      url: /platform/turtlebot3/simulation/#gazebo-3d-simulator
       children:
       - title: "ROS packages for Gazebo"
         url: /platform/turtlebot3/simulation/#ros-packages-for-gazebo
-        children:
-        - title: "Simulate in Various World"
-          url: /platform/turtlebot3/simulation/#simulate-in-various-world
-        - title: "Drive TurtleBot3"
-          url: /platform/turtlebot3/simulation/#drive-turtlebot3
-        - title: "Open Rviz"
-          url: /platform/turtlebot3/simulation/#open-rviz
-        - title: "SLAM by TurtleBot3"
-          url: /platform/turtlebot3/simulation/#slam-by-turtlebot3
-        - title: "Navigation of TurtleBot3"
-          url: /platform/turtlebot3/simulation/#navigation-of-turtlebot3
-        - title: "Open Rviz"
-          url: /platform/turtlebot3/simulation/#slam-by-multiple-turtlebot3s
-      - title: "SLAM by Multiple TurtleBot3s"
+      - title: "Standalone Gazebo Plugin"
         url: /platform/turtlebot3/simulation/#standalone-gazebo-plugin
   - title: "Manipulation"
     url: /platform/turtlebot3/manipulation/#manipulation
@@ -9992,6 +9983,13 @@ turtlebot3:
       url: /platform/turtlebot3/applications/#automatic-parking
     - title: "Automatic Parking Vision"
       url: /platform/turtlebot3/applications/#automatic-parking-vision
+  - title: "Competition"
+    url: /platform/turtlebot3/competition/#competition
+    children:
+    - title: "Online Competition on ROS Development Studio"
+      url: /platform/turtlebot3/competition/#online-competition-on-ros-development-studio
+    - title: "Offline Competition"
+      url: /platform/turtlebot3/competition/#offline-competition
   - title: "Friends"
     url: /platform/turtlebot3/friends/#friends
     children:
@@ -10022,12 +10020,12 @@ turtlebot3:
   - title: "Learn"
     url: /platform/turtlebot3/learn/#learn
     children:
-    - title: "TurtleBot3 Simulation on ROS Indigo"
-      url: /platform/turtlebot3/learn/#turtlebot3-simulation-on-ros-indigo
-    - title: "TurtleBot3 Blockly"
-      url: /platform/turtlebot3/learn/#turtlebot3-blockly
     - title: "The Construct"
       url: /platform/turtlebot3/learn/#the-construct
+    - title: "TurtleBot3 Blockly"
+      url: /platform/turtlebot3/learn/#turtlebot3-blockly
+    - title: "TurtleBot3 Simulation on ROS Indigo"
+      url: /platform/turtlebot3/learn/#turtlebot3-simulation-on-ros-indigo
     - title: "Youtube Course"
       url: /platform/turtlebot3/learn/#youtube-course
     - title: "Books"
@@ -11251,32 +11249,32 @@ rplusterminal:
 dynamixel_wizard:
   - title: "Introduction"
     titlekr: "개요"
-    url: /software/rplus1/dynamixe_wizard/#introduction
-    urlkr: /software/rplus1/dynamixe_wizard/#개요
+    url: /software/rplus1/dynamixel_wizard/#introduction
+    urlkr: /software/rplus1/dynamixel_wizard/#개요
   - title: "Connecting Dynamixel"
     titlekr: "다이나믹셀 연결"
-    url: /software/rplus1/dynamixe_wizard/#connecting-dynamixel
-    urlkr: /software/rplus1/dynamixe_wizard/#다이나믹셀-연결
+    url: /software/rplus1/dynamixel_wizard/#connecting-dynamixel
+    urlkr: /software/rplus1/dynamixel_wizard/#다이나믹셀-연결
   - title: "Firmware Update"
     titlekr: "펌웨어 업데이트"
-    url: /software/rplus1/dynamixe_wizard/#firmware-update
-    urlkr: /software/rplus1/dynamixe_wizard/#펌웨어-업데이트
+    url: /software/rplus1/dynamixel_wizard/#firmware-update
+    urlkr: /software/rplus1/dynamixel_wizard/#펌웨어-업데이트
   - title: "Firmware Recovery"
     titlekr: "펌웨어 복구"
-    url: /software/rplus1/dynamixe_wizard/#firmware-recovery
-    urlkr: /software/rplus1/dynamixe_wizard/#펌웨어-복구
+    url: /software/rplus1/dynamixel_wizard/#firmware-recovery
+    urlkr: /software/rplus1/dynamixel_wizard/#펌웨어-복구
   - title: "Test and Setup"
     titlekr: "테스트 및 설정"
-    url: /software/rplus1/dynamixe_wizard/#test-and-setup
-    urlkr: /software/rplus1/dynamixe_wizard/#테스트-및-설정
+    url: /software/rplus1/dynamixel_wizard/#test-and-setup
+    urlkr: /software/rplus1/dynamixel_wizard/#테스트-및-설정
   - title: "MX Series Calibration"
     titlekr: "MX 시리즈 보정하기"
-    url: /software/rplus1/dynamixe_wizard/#mx-series-calibration
-    urlkr: /software/rplus1/dynamixe_wizard/#mx-시리즈-보정하기
+    url: /software/rplus1/dynamixel_wizard/#mx-series-calibration
+    urlkr: /software/rplus1/dynamixel_wizard/#mx-시리즈-보정하기
   - title: "Videos"
     titlekr: "동영상"
-    url: /software/rplus1/dynamixe_wizard/#videos
-    urlkr: /software/rplus1/dynamixe_wizard/#동영상
+    url: /software/rplus1/dynamixel_wizard/#videos
+    urlkr: /software/rplus1/dynamixel_wizard/#동영상
 
 #Task Code Download sidebar
 download_task_code:
@@ -13504,55 +13502,23 @@ opencr10:
     url: /parts/controller/opencr10/#introduction
   - title: "Specifications"
     url: /parts/controller/opencr10/#specifications
-  - title: "Hardware"
-    url: /parts/controller/opencr10/#hardware
+  - title: "Layout / Pin Map"
+    url: /parts/controller/opencr10/#layoutpin-map
     children:
-    - title: "Layout / Pin Map"
-      url: /parts/controller/opencr10/#layoutpin-map
-  - title: "Bootloader"
-    url: /parts/controller/opencr10/#bootloader
-    children:
-    - title: "Memory Map"
-      url: /parts/controller/opencr10/#memory-map
-    - title: "Boot Sequence"
-      url: /parts/controller/opencr10/#boot-sequence
-    - title: "Communication Protocol"
-      url: /parts/controller/opencr10/#communication-protocol
-      children:
-      - title: "MavLink"
-        url: /parts/controller/opencr10/#mavlink
-      - title: "Composition of Commands"
-        url: /parts/controller/opencr10/#composition-of-commands
-      - title: "Download Sequence"
-        url: /parts/controller/opencr10/#download-sequence
-      - title: "Message Processing"
-        url: /parts/controller/opencr10/#message-processing
-      - title: "Folder Structure"
-        url: /parts/controller/opencr10/#folder-structure
-    - title: "Update Bootloader(Linux)"
-      url: /parts/controller/opencr10/#update-bootloaderlinux
-      children:
-      - title: "Enter DFU Mode"
-        url: /parts/controller/opencr10/#enter-dfu-mode
-      - title: "Check Boot Mode"
-        url: /parts/controller/opencr10/#check-boot-mode
-      - title: "Update Bootloader"
-        url: /parts/controller/opencr10/#update-bootloader
-    - title: "Firmware Recovery Mode"
-      url: /parts/controller/opencr10/#firmware-recovery-mode
-  - title: "Downloader"
-    url: /parts/controller/opencr10/#downloader
-    children:
-    - title: "Usage"
-      url: /parts/controller/opencr10/#usage
-    - title: "Linux/Mac Example"
-      url: /parts/controller/opencr10/#linuxmac-example
-    - title: "Windows Example"
-      url: /parts/controller/opencr10/#windows-example
-    - title: "Execution Result"
-      url: /parts/controller/opencr10/#execution-result
-    - title: "Download Executable File"
-      url: /parts/controller/opencr10/#download-executable-file
+    - title: "Arduino Connector"
+      url: /parts/controller/opencr10/#arduino-connector
+    - title: "User LED"
+      url: /parts/controller/opencr10/#user-led
+    - title: "Dip Switch"
+      url: /parts/controller/opencr10/#dip-switch
+    - title: "GPIO"
+      url: /parts/controller/opencr10/#gpio
+    - title: "OLLO Connector"
+      url: /parts/controller/opencr10/#ollo-connector
+    - title: "Push Switch"
+      url: /parts/controller/opencr10/#push-switch
+    - title: "Pin Definition"
+      url: /parts/controller/opencr10/#pin-definition
   - title: "Arduino IDE"
     url: /parts/controller/opencr10/#arduino-ide
     children:
@@ -13593,23 +13559,6 @@ opencr10:
         url: /parts/controller/opencr10/#install-arduino-idewindows
       - title: "Porting to Arduino IDE"
         url: /parts/controller/opencr10/#porting-to-arduino-idewindows
-    - title: "Arduino Pinmap"
-      url: /parts/controller/opencr10/#arduino-pinmap
-      children:
-      - title: "Arduino Connector"
-        url: /parts/controller/opencr10/#arduino-connector
-      - title: "User LED"
-        url: /parts/controller/opencr10/#user-led
-      - title: "Dip Switch"
-        url: /parts/controller/opencr10/#dip-switch
-      - title: "GPIO"
-        url: /parts/controller/opencr10/#gpio
-      - title: "OLLO Connector"
-        url: /parts/controller/opencr10/#ollo-connector
-      - title: "Push Switch"
-        url: /parts/controller/opencr10/#push-switch
-      - title: "Pin Definition"
-        url: /parts/controller/opencr10/#pin-definition
   - title: "Examples"
     url: /parts/controller/opencr10/#examples
     children:
@@ -13667,6 +13616,50 @@ opencr10:
       url: /parts/controller/opencr10/#recovery-mode
     - title: "Install Windows Driver"
       url: /parts/controller/opencr10/#install-windows-driver
+  - title: "Bootloader"
+    url: /parts/controller/opencr10/#bootloader
+    children:
+    - title: "Memory Map"
+      url: /parts/controller/opencr10/#memory-map
+    - title: "Boot Sequence"
+      url: /parts/controller/opencr10/#boot-sequence
+    - title: "Communication Protocol"
+      url: /parts/controller/opencr10/#communication-protocol
+      children:
+      - title: "MavLink"
+        url: /parts/controller/opencr10/#mavlink
+      - title: "Composition of Commands"
+        url: /parts/controller/opencr10/#composition-of-commands
+      - title: "Download Sequence"
+        url: /parts/controller/opencr10/#download-sequence
+      - title: "Message Processing"
+        url: /parts/controller/opencr10/#message-processing
+      - title: "Folder Structure"
+        url: /parts/controller/opencr10/#folder-structure
+    - title: "Update Bootloader(Linux)"
+      url: /parts/controller/opencr10/#update-bootloaderlinux
+      children:
+      - title: "Enter DFU Mode"
+        url: /parts/controller/opencr10/#enter-dfu-mode
+      - title: "Check Boot Mode"
+        url: /parts/controller/opencr10/#check-boot-mode
+      - title: "Update Bootloader"
+        url: /parts/controller/opencr10/#update-bootloader
+    - title: "Firmware Recovery Mode"
+      url: /parts/controller/opencr10/#firmware-recovery-mode
+  - title: "Downloader"
+    url: /parts/controller/opencr10/#downloader
+    children:
+    - title: "Usage"
+      url: /parts/controller/opencr10/#usage
+    - title: "Linux/Mac Example"
+      url: /parts/controller/opencr10/#linuxmac-example
+    - title: "Windows Example"
+      url: /parts/controller/opencr10/#windows-example
+    - title: "Execution Result"
+      url: /parts/controller/opencr10/#execution-result
+    - title: "Download Executable File"
+      url: /parts/controller/opencr10/#download-executable-file
 
 arduino_dynamixel_shield:
   - title: "Introduction"

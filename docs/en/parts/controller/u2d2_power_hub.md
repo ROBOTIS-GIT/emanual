@@ -14,13 +14,13 @@ sidebar:
 # [Introduction](#introduction)
 Combined with U2D2, it can supply various kinds of external power supply to supply stable power to Dynamixel.
 
-![](/assets/images/parts/controller/u2d2_power_hub/product_image.png)
+![](/assets/images/parts/controller/u2d2_power_hub/product_image.png)![](/assets/images/parts/controller/u2d2_power_hub/product_without_u2d2.png)
 
 # [Specifications](#specifications)
 
 |Item|Details|
 |:---:|:---:|
-|Maximum Voltage|24.0V|
+|Operaing Voltage|7.4V ~ 24.0V|
 |Maximum Current|10.0A|
 
 # [Layout](#layout)

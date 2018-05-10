@@ -46,6 +46,8 @@ sidebar:
 `Note` Stall torque is the maximum instantaneous and static  torque. Stable motions are possible with robots designed for loads with 1/5 or less of the stall torque.
 {: .notice}
 
+{% include en/dxl/warning.md %}
+
 {% include en/dxl/control_table_protocol1.md %}
 
 ## [Control Table of EEPROM Area](#control-table-of-eeprom-area)

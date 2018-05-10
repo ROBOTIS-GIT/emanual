@@ -15,8 +15,16 @@ sidebar:
 
 # [Notice](#notice)
 
+![](/assets/images/platform/turtlebot3/overview/turtlebot3_flyer_front_ver1806.png)
+
 ## [Publish](#publish)
 
+  - 04/27/2018 [Awesome TurtleBot3 Projects like BallBot Project](https://discourse.ros.org/t/awesome-turtlebot3-projects-like-ballbot-project/4629)
+  - 04/20/2018 [TurtleBot3 Automatic Parking under AR detection](https://discourse.ros.org/t/tb3-turtlebot3-automatic-parking-under-ar-detection/4476)
+  - 03/29/2018 [TurtleBot3 AutoRace 2017 Tutorial & Source Codes released](https://discourse.ros.org/t/tb3-turtlebot3-autorace-2017-tutorial-source-codes-released/4339)
+  - 03/17/2018 [TurtleBot3 Auto project](https://discourse.ros.org/t/tb3-turtlebot3-auto-project/1402)
+  - 03/15/2018 [Gazebo Simulation](https://discourse.ros.org/t/tb3-gazebo-simulation/4207)
+  - 02/19/2018 [Waffle Pi Launching Event!](https://discourse.ros.org/t/tb3-waffle-pi-launching-event/4005)
   - 02/08/2018 [ROS Robot Programming, A Handbook is written by TurtleBot3 Developers](http://community.robotsource.org/t/download-the-ros-robot-programming-book-for-free/51/)
   - 02/02/2018 [How to use LDS-01 of TurtleBot3](https://discourse.ros.org/t/tb3-how-to-use-lds-01-of-turtlebot3/3862)
   - 01/30/2018 [TurtleBot3 Basic operation demo](https://discourse.ros.org/t/tb3-turtlebot3-basic-operation-demo/3840)
