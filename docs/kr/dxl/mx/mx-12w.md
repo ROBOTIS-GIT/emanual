@@ -87,7 +87,9 @@ sidebar:
 |46|1|[Moving](#moving)                   |움직임 유무|R|0|
 |47|1|[Lock](#lock)                   |EEPROM 잠금|RW|0|
 |48|2|[Punch](#punch)                   |Punch 값의 바이트|RW|32|
+|50|2|[Realtime Tick](#realtime-tick)                   |Realtime Tick 값의 바이트|R|0|
 |73|1|[Goal Acceleration](#goal-acceleration)   |목표 가속도값|RW|0|
+
 
 
 ## [컨트롤 테이블 설명](#컨트롤-테이블-설명)
@@ -204,6 +206,12 @@ Value 값이 250 이상인 경우 :
 
 ### <a name="punch"></a>**[Punch (48)](#punch-48)**
 {% include kr/dxl/control_table_punch.md %}
+
+### <a name="realtime-tick"></a>**[Realtime-Tick (50)](#realtime-tick-50)**
+{% include kr/dxl/control_table_realtime_tick.md %}
+
+`Note` 펌웨어 버전 41 이상부터 사용 가능합니다.
+{: .notice}
 
 ### <a name="goal-acceleration"></a>**[Goal Acceleration (73)](#goal-acceleration-73)**
 {% include kr/dxl/control_table_goal_acceleration.md %}
