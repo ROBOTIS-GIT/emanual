@@ -1391,6 +1391,37 @@ void loop()
 
 - `e-Manual` [OpenCR Firmware Recovery](#firmware-recovery-mode)
 
+## [Install Windows Driver](#install-windows-driver)
+In Windows 10, device driver is usually installed automatically.  
+However, if ST DFU driver is not properly installed, OpenCR will not be able to burn new bootloader.  
+When failing to burn the bootloader in Arduino IDE with below error message, please reinstall the DFU driver as described below.
+
+```
+Cannot open DFU device 0483:df11
+No DFU capable USB device available
+Error while burning bootloader.
+```
+
+> Error Message from Arduino IDE while burning Bootloader.
+
+### Driver Installation
+
+1. Download Zadig from [http://zadig.akeo.ie/](http://zadig.akeo.ie/)
+
+2. Install and run Zadig.
+
+3. Go to `Options` > `List All Devices`.
+
+    ![](/assets/images/parts/controller/opencr10/zadig_01.png)
+
+4. Select **STM32 BOOTLOADER** and install **WinUSB** driver.
+
+    ![](/assets/images/parts/controller/opencr10/zadig_02.png)
+
+5. Enter Bootloader by holding `Boot` button and press `Reset` button and check the driver is correctly installed from the device manager.
+
+    ![](/assets/images/parts/controller/opencr10/dfu_device_manager.png)
+
 
 # [Bootloader](#bootloader)
 The bootloader is responsible for initializing the board and downloading and executing the firmware into flash memory.
