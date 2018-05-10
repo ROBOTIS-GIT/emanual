@@ -338,7 +338,7 @@ ACTION 명령은 여러 개의 다이나믹셀들을 동시에 움직여야 하�
 ## [Factory Reset](#factory-reset)
 Control Table의 Data를 공장 출하 값 상태로 되돌려 놓습니다.
 
-`주의` RESET 명령을 사용하면 사용자가 EEPROM에 설정했던 값이 지워지므로 사용에 주의하시기 바랍니다.
+`주의` RESET 명령을 사용하면 사용자가 EEPROM에 설정했던 값이 지워지므로 사용에 주의하시기 바랍니다. Broadcast ID(0xFE)로 RESET 명령을 사용할 수 없습니다.
 {: .notice--warning}
 
 |Length|Instruction|Parameter|
