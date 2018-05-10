@@ -1057,7 +1057,7 @@ This is a framework diagram. The framework(op3_manager) works in the following w
 op3_manager provides a way to control each joint of the robot with the following two methods.  
 
 - `robotis_controller`  
-  If the control mode of the robotis_controller meets one of the below two conditions, the user can directly control joints of the robot using the `/ robotis / set_joint_states` topic.  
+  If the control mode of the robotis_controller meets one of the below two conditions, the user can directly control joints of the robot using the `/robotis /set_joint_states` topic.  
   - DirectControlMode  
   - none of the activating module under the MotionModuleMode  
 - `direct_control_module`  
@@ -1133,8 +1133,8 @@ $ roslaunch op3_read_write_demo op3_read_write.launch
 
  - Description : Buttons  
    From the left : `mode` button, `start` button, `user` button, `reset` button  
-   - `mode` button : start read_write demo using `robotis_controller`  
-   - `start` button : start read_write demo using `direct_control_module`  
+   - `mode` button : start read_write demo using `direct_control_module`  
+   - `start` button : start read_write demo using `robotis_controller`  
    - `user` button : torque on all joints  
    - `reset` button : torque off all joints  
 
@@ -1450,7 +1450,7 @@ $ roslaunch op3_read_write_demo op3_read_write.launch
   }
   ```
 
- If `/op3_manager` is running, take the initial posture for the demo and process the topic and service.  
+  If `/op3_manager` is running, take the initial posture for the demo and process the topic and service.  
 
   ```cpp
   readyToDemo();
