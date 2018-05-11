@@ -43,6 +43,8 @@ OpenManipulator is composed by [Dynamixel X series](http://emanual.robotis.com/d
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Qhvk5cnX2hM" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/P82pZsqpBg0" frameborder="0" allowfullscreen></iframe>
+
 # [Specification](#specification)
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_Capture.png)

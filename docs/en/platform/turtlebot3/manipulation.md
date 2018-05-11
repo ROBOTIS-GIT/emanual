@@ -94,15 +94,11 @@ When firmware upload is completed, `jump_to_fw` text string will be printed on t
 
 ## [Bringup](#bringup)
 
-1. Upload `turtlebot3_with_open_manipulator_core.ino` to OpenCR
-
-  - [OpenCR Setup](/docs/en/parts/controller/platform/turtlebot3/manipulation/#opencr-setup)
-
-2. Bringup TurtleBot3 with OpenManipulator
+Bringup TurtleBot3 with OpenManipulator
 
   - [Bringup TurtleBot3](/docs/en/platform/turtlebot3/bringup/#bringup-turtlebot3)
 
-3. Get model
+And launch open_manipulator_with_tb3_model
 
   **Tip :** TB3_MODEL =  `waffle`, `waffle_pi` 
   {: .notice--info}
@@ -163,7 +159,7 @@ $ roslaunch open_manipulator_with_tb3_tools open_manipulator_with_tb3_manipulati
 In order to control gripper, please use topic publish with below command in a new terminal window.
 
 ```
-$ rostopic pub /robotis/open_manipulator/gripper std_msgs/String "data: 'grip_on'" --once
+$ rostopic pub /robotis/open_manipulator/gripper std_msgs/String "data: 'grip_off'" --once
 ```
 
 ![](/assets/images/platform/turtlebot3/manipulation/open_manipulator_gripper.png)
