@@ -369,13 +369,10 @@ Control Table의 Data를 공장 출하 값 상태로 되돌려 놓습니다.
 |0xFF|0xFF|0x00|0x02|0x00|0xFD|
 
 ## [Reboot](#reboot)
-
-### 설명
-- 장치를 재부팅 시키는 Instruction
+장치를 재부팅 시킵니다.
 - 지원 모델 : MX-12W(V41), MX-28(V40), MX-64(V40), MX-106(V40), X 시리즈(XL-320 제외)
 
 ### 예제
-
 #### 예제 설명
 - ID 1(XM430-W210)를 Reboot 시킬 경우
 
