@@ -87,7 +87,7 @@ OpenManipulator is composed by [Dynamixel X series](http://emanual.robotis.com/d
 
 ## [ROS and Gazebo](#ros-and-gazebo)
 
-- Install dependent packages for the OpenManipulator.
+Install dependent packages for the OpenManipulator.
 
 ```
 $ sudo apt-get install ros-kinetic-ros-controllers ros-kinetic-gazebo* ros-kinetic-moveit* ros-kinetic-dynamixel-sdk ros-kinetic-dynamixel-workbench-toolbox ros-kinetic-ar-track-alvar ros-kinetic-industrial-core 
@@ -99,101 +99,19 @@ $ git clone https://github.com/ROBOTIS-GIT/open_manipulator.git
 $ cd ~/catkin_ws && catkin_make 
 ```
 
-- If catkin_make command is completed without any errors, preparation for OpenManipulator is done.
+If catkin_make command is completed without any errors, preparation for OpenManipulator is done.
 
-## [Arduino IDE](#arduino-ide)
+Load an OpenManipulator on RViz.
 
-  - [Arduino IDE for using OpenCR](/docs/en/parts/controller/opencr10/#arduino-ide)  
+```
+$ roslaunch open_manipulator_description open_manipulator_rviz.launch 
+```
 
-# [Simulation](#gazebo-simulation)
+![](/assets/images/platform/openmanipulator/OpenManipulator_rviz.png)
 
-## [Gazebo](#gazebo)
+# [Bringup](#bringup)
 
-  `Note` This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
-  {: .notice--info}
-
-- Load an OpenManipulator on Gazebo simulator and click `Play` button
-
-  ```
-  $ roslaunch open_manipulator_gazebo open_manipulator_gazebo.launch
-  ```
-
-  ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_gazebo_1.png)
-
-- Type `rostopic list` to check which topic is activated
-
-  ```
-  /clock
-  /gazebo/link_states
-  /gazebo/model_states
-  /gazebo/set_link_state
-  /gazebo/set_model_state
-  /open_manipulator/grip_joint_position/command
-  /open_manipulator/grip_joint_position/pid/parameter_descriptions
-  /open_manipulator/grip_joint_position/pid/parameter_updates
-  /open_manipulator/grip_joint_position/state
-  /open_manipulator/grip_joint_sub_position/command
-  /open_manipulator/grip_joint_sub_position/pid/parameter_descriptions
-  /open_manipulator/grip_joint_sub_position/pid/parameter_updates
-  /open_manipulator/grip_joint_sub_position/state
-  /open_manipulator/joint1_position/command
-  /open_manipulator/joint1_position/pid/parameter_descriptions
-  /open_manipulator/joint1_position/pid/parameter_updates
-  /open_manipulator/joint1_position/state
-  /open_manipulator/joint2_position/command
-  /open_manipulator/joint2_position/pid/parameter_descriptions
-  /open_manipulator/joint2_position/pid/parameter_updates
-  /open_manipulator/joint2_position/state
-  /open_manipulator/joint3_position/command
-  /open_manipulator/joint3_position/pid/parameter_descriptions
-  /open_manipulator/joint3_position/pid/parameter_updates
-  /open_manipulator/joint3_position/state
-  /open_manipulator/joint4_position/command
-  /open_manipulator/joint4_position/pid/parameter_descriptions
-  /open_manipulator/joint4_position/pid/parameter_updates
-  /open_manipulator/joint4_position/state
-  /open_manipulator/joint_states
-  /rosout
-  /rosout_agg
-  ```
-
-- OpenManipulator in Gazebo is controllered by ROS message. For example, below command publish joint position(radian)
-
-  ```
-  $ rostopic pub /open_manipulator/joint2_position/command std_msgs/Float64 "data: -1.0" --once
-  ```
-
-  ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_gazebo_2.png)
-
-- In order to run MoveIt!, open a new terminal window and enter below command
-
-  ```
-  $ roslaunch open_manipulator_moveit open_manipulator_demo.launch use_gazebo:=true
-  ```
-
-  ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_moveit_sim_1.jpg)
-
-  ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_moveit_sim_2.jpg)
-
-- In order to control gripper, please use topic publish with below command in a new terminal window.
-
-  ```
-  $ rostopic pub /robotis/open_manipulator/gripper std_msgs/String "data: 'grip_on'" --once
-  ```
-
-  ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_gripper.png)
-
-## [Processing](#processing)
-
-  - **Comming Soon**
-
-  ![](/assets/images/platform/openmanipulator/OpenManipulator_chain_processing.png)
-
-# [Platform](#platform)
-
-## [ROS](#ros)
-
-- To load an OpenManipulator with DYNAMIXEL X-series(XM or XL), you can set a arguments what you configure your own Dynamixel.
+To load an OpenManipulator with DYNAMIXEL X-series(XM or XL), you can set a arguments what you configure your own Dynamixel
 
   ```
   <launch>
@@ -237,10 +155,48 @@ $ cd ~/catkin_ws && catkin_make
   $ roslaunch open_manipulator_dynamixel_ctrl dynamixel_controller.launch
   ```
 
-- In order to run MoveIt!, open a new terminal window and enter below command.
+Type `rostopic list` to check which topic is activated
 
   ```
-  $ roslaunch open_manipulator_moveit open_manipulator_demo.launch
+  /joint_states
+  /open_manipulator/goal_gripper_position
+  /open_manipulator/goal_joint_position
+  /rosout
+  /rosout_agg
+  ```  
+
+OpenManipulator is controllered by ROS message. For example, to use below command make publish joint position(radian)
+
+  ```
+  $ rostopic pub /open_manipulator/goal_joint_position sensor_msgs/JointState "header:
+  seq: 0
+  stamp: {secs: 0, nsecs: 0}
+  frame_id: ''
+name: ['']
+position: [0]
+velocity: [0]
+effort: [0]"
+  ```
+  or using RQT
+
+  ![](/assets/images/platform/openmanipulator/OpenManipulator_rqt.png)
+
+# [Manipulation](#manipulation)
+
+We provide manipulation layer to use MoveIt!. You can handle it using RViz or ROS messages
+
+  ```
+  $ roslaunch open_manipulator_moveit open_manipulator_demo.launch use_gazebo:=false
+  ```
+
+Below services are help you to manipulate OpenManipulator
+
+  ```
+  /open_manipulator/get_joint_position
+  /open_manipulator/get_kinematics_pose
+  /open_manipulator/set_gripper_position
+  /open_manipulator/set_joint_position
+  /open_manipulator/set_kinematics_pose
   ```
 
   ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_moveit_real_1.png)
@@ -251,16 +207,20 @@ $ cd ~/catkin_ws && catkin_make
 
   ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_moveit_real_4.png)
 
-## [OpenCR with Arduino](#opencr-with-arduino)
+In order to control gripper, please use topic publish with below command in a new terminal window
 
-  - **Comming Soon**
+  ```
+  $ rostopic pub /open_manipulator/gripper std_msgs/String "data: 'grip_on'" --once
+  ```
+
+  ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_gripper.png)
 
 # [Mobile Manipulation](#mobile-manipulation)
 
   **Tip :** You can get a more information about it in [Manipulation section of TurtleBot3](/docs/en/platform/turtlebot3/manipulation/#manipulation)
   {: .notice--info}
 
-- Install dependent packages
+Install dependent packages
 
   ```
   $ cd ~/catkin_ws/src
@@ -268,7 +228,7 @@ $ cd ~/catkin_ws && catkin_make
   $ cd ~/catkin_ws && catkin_make
   ```
 
-- Load a TurtleBot3 Waffle or Waffle Pi with OpenManipulator on RViz.
+Load a TurtleBot3 Waffle or Waffle Pi with OpenManipulator on RViz.
 
   **Tip :** TB3_MODEL =  `waffle`, `waffle_pi` 
   {: .notice--info}
@@ -279,6 +239,92 @@ $ cd ~/catkin_ws && catkin_make
   ```
 
 ![](/assets/images/platform/openmanipulator/TurtleBot3_with_Open_Manipulator.png)
+
+# [Simulation](#gazebo-simulation)
+
+## [Gazebo](#gazebo)
+
+  `Note` This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+  {: .notice--info}
+
+### [Spawn Model](#spawn-model)
+
+Load an OpenManipulator on Gazebo simulator and click `Play` button
+
+  ```
+  $ roslaunch open_manipulator_gazebo open_manipulator_gazebo.launch
+  ```
+
+  ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_gazebo_1.png)
+
+Type `rostopic list` to check which topic is activated
+
+  ```
+  /clock
+  /gazebo/link_states
+  /gazebo/model_states
+  /gazebo/set_link_state
+  /gazebo/set_model_state
+  /open_manipulator/grip_joint_position/command
+  /open_manipulator/grip_joint_position/pid/parameter_descriptions
+  /open_manipulator/grip_joint_position/pid/parameter_updates
+  /open_manipulator/grip_joint_position/state
+  /open_manipulator/grip_joint_sub_position/command
+  /open_manipulator/grip_joint_sub_position/pid/parameter_descriptions
+  /open_manipulator/grip_joint_sub_position/pid/parameter_updates
+  /open_manipulator/grip_joint_sub_position/state
+  /open_manipulator/joint1_position/command
+  /open_manipulator/joint1_position/pid/parameter_descriptions
+  /open_manipulator/joint1_position/pid/parameter_updates
+  /open_manipulator/joint1_position/state
+  /open_manipulator/joint2_position/command
+  /open_manipulator/joint2_position/pid/parameter_descriptions
+  /open_manipulator/joint2_position/pid/parameter_updates
+  /open_manipulator/joint2_position/state
+  /open_manipulator/joint3_position/command
+  /open_manipulator/joint3_position/pid/parameter_descriptions
+  /open_manipulator/joint3_position/pid/parameter_updates
+  /open_manipulator/joint3_position/state
+  /open_manipulator/joint4_position/command
+  /open_manipulator/joint4_position/pid/parameter_descriptions
+  /open_manipulator/joint4_position/pid/parameter_updates
+  /open_manipulator/joint4_position/state
+  /open_manipulator/joint_states
+  /rosout
+  /rosout_agg
+  ```
+
+OpenManipulator in Gazebo is controllered by ROS message. For example, to use below command make publish joint position(radian)
+
+  ```
+  $ rostopic pub /open_manipulator/joint2_position/command std_msgs/Float64 "data: -1.0" --once
+  ```
+
+  ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_gazebo_2.png)
+
+## [MoveIt!](#moveit)
+
+You can use MoveIt! to manipulate OpenManipulator. Please refer to [Manipulation part](/doc/en/platform/openmanipulator/#manipulation)
+
+  ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_moveit_sim_1.jpg)
+
+  ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_moveit_sim_2.jpg)
+
+  ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_gripper.png)
+
+# [Embedded board Setup](#embedded-board-setup)
+
+  - **Comming Soon**
+
+## [Arduino IDE](#arduino-ide)
+
+  - [Arduino IDE for using OpenCR](/docs/en/parts/controller/opencr10/#arduino-ide)
+
+## [Processing](#processing)
+
+  - [Download Processing](https://processing.org/download/)
+
+  ![](/assets/images/platform/openmanipulator/OpenManipulator_chain_processing.png)
 
 # [Friends](#friends)
 

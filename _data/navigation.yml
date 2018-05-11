@@ -9958,12 +9958,29 @@ turtlebot3:
   - title: "Manipulation"
     url: /platform/turtlebot3/manipulation/#manipulation
     children:
-    - title: "Gazebo (3D)"
-      url: /platform/turtlebot3/manipulation/#gazebo-3d
-    - title: "Platform"
-      url: /platform/turtlebot3/manipulation/#platform
-    - title: "TurtleBot3 Waffle with Open-Manipulator"
-      url: /platform/turtlebot3/manipulation/#turtlebot3-waffle-with-openmanipulator
+    - title: "Software Setup"
+      url: /platform/turtlebot3/manipulation/#software-setup
+    - title: "Hardware Setup"
+      url: /platform/turtlebot3/manipulation/#hardware-setup
+    - title: "OpenCR Setup"
+      url: /platform/turtlebot3/manipulation/#opencr-setup
+    - title: "Bringup"
+      url: /platform/turtlebot3/manipulation/#bringup
+    - title: "SLAM"
+      url: /platform/turtlebot3/manipulation/#slam
+    - title: "Navigation"
+      url: /platform/turtlebot3/manipulation/#navigation
+    - title: "Find AR marker"
+      url: /platform/turtlebot3/manipulation/#find-ar-marker
+    - title: "MoveIt!"
+      url: /platform/turtlebot3/manipulation/#moveit
+    - title: "Pick and Place"
+      url: /platform/turtlebot3/manipulation/#pick-and-place
+    - title: "Simulation"
+      url: /platform/turtlebot3/manipulation/#simulation
+      children:
+      - title: "Gazebo"
+        url: /platform/turtlebot3/manipulation/#gazebo
   - title: "Autonomous Driving"
     url: /platform/turtlebot3/autonomous_driving/#autonomous-driving
     children:
@@ -10203,26 +10220,36 @@ open_manipulator:
     children:
     - title: "ROS and Gazebo"
       url: /platform/openmanipulator/#ros-and-gazebo
-    - title: "Arduino IDE"
-      url: /platform/openmanipulator/#arduino-ide
+  - title: "Bringup"
+    url: /platform/openmanipulator/#bringup
+  - title: "Manipulation"
+    url: /platform/openmanipulator/#manipulation
+  - title: "Mobile Manipulation"
+    url: /platform/openmanipulator/#mobile-manipulation
   - title: "Simulation"
     url: /platform/openmanipulator/#simulation
     children:
     - title: "Gazebo"
       url: /platform/openmanipulator/#gazebo
-    - title: "Processing"
-      url: /platform/openmanipulator/#processing
-  - title: "Platform"
-    url: /platform/openmanipulator/#platform
-    children:
-    - title: "ROS"
-      url: /platform/openmanipulator/#ros
-    - title: "OpenCR with Arduino"
-      url: /platform/openmanipulator/#opencr-with-arduino
+      children:
+      - title: "Spawn Model"
+        url: /platform/openmanipulator/#spawn-model
+      - title: "MoveIt!"
+        url: /platform/openmanipulator/#moveit
   - title: "Mobile Manipulation"
     url: /platform/openmanipulator/#mobile-manipulation
+  - title: "Embedded board Setup"
+    url: /platform/openmanipulator/#embedded-board-setup
+    children:
+    - title: "Arduino IDE"
+      url: /platform/openmanipulator/#arduino-ide
+    - title: "Processing"
+      url: /platform/openmanipulator/#processing
   - title: "Friends"
     url: /platform/openmanipulator/#friends
+    children:
+    - title: "OpenManipulator SCARA"
+      url: /platform/openmanipulator/#openmanipulator-scara
     - title: "OpenManipulator Link"
       url: /platform/openmanipulator/#openmanipulator-link
     - title: "OpenManipulator Planar"

@@ -23,12 +23,14 @@ sidebar:
 
 ![](/assets/images/platform/turtlebot3/manipulation/tb3_with_opm_logo.png)
 
-<!-- <iframe width="640" height="360" src="https://www.youtube.com/embed/qbht0ssv8M0" frameborder="0" allowfullscreen></iframe> -->
-
-<!-- <iframe width="640" height="360" src="https://www.youtube.com/embed/Qhvk5cnX2hM" frameborder="0" allowfullscreen></iframe> -->
-
 `Tip` The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is Ctrl-Alt-T.
 {: .notice--info}
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/Qhvk5cnX2hM" frameborder="0" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/P82pZsqpBg0" frameborder="0" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DLOq8yNcCoE" frameborder="0" allowfullscreen></iframe>
 
 ## [Software Setup](#software-setup)
 
@@ -88,7 +90,101 @@ Click `Upload` button to upload the firmware to OpenCR1.0.
 `Note` If error occurs while uploading firmware, go to `Tools` → `Port` and check if correct port is selected. Press `Reset` button on the OpenCR1.0 and try to upload the firmware again.
 {: .notice--info}
   
-**[Remote PC]** When firmware upload is completed, `jump_to_fw` text string will be printed on the screen.
+When firmware upload is completed, `jump_to_fw` text string will be printed on the screen.
+
+## [Bringup](#bringup)
+
+1. Upload `turtlebot3_with_open_manipulator_core.ino` to OpenCR
+
+  - [OpenCR Setup](/docs/en/parts/controller/platform/turtlebot3/manipulation/#opencr-setup)
+
+2. Bringup TurtleBot3 with OpenManipulator
+
+  - [Bringup TurtleBot3](/docs/en/platform/turtlebot3/bringup/#bringup-turtlebot3)
+
+3. Get model
+
+  **Tip :** TB3_MODEL =  `waffle`, `waffle_pi` 
+  {: .notice--info}
+
+  ```bash
+  $ export TURTLEBOT3_MODEL=${TB3_MODEL}
+  $ roslaunch open_manipulator_with_tb3 open_manipulator_with_tb3_model.launch use_gazebo:=false
+  ```
+
+## [SLAM](#slam)
+
+![](/assets/images/platform/turtlebot3/manipulation/open_manipulator_slam.png)
+
+**Tip :** TB3_MODEL =  `waffle`, `waffle_pi` 
+{: .notice--info}
+
+```bash
+$ export TURTLEBOT3_MODEL=${TB3_MODEL}
+$ roslaunch open_manipulator_with_tb3_tools open_manipulator_with_tb3_slam.launch use_gazebo:=false open_rviz:=true
+```
+
+## [Navigation](#navigation)
+
+![](/assets/images/platform/turtlebot3/manipulation/open_manipulator_navigation.png)
+
+**Tip :** TB3_MODEL =  `waffle`, `waffle_pi` 
+{: .notice--info}
+
+```bash
+$ export TURTLEBOT3_MODEL=${TB3_MODEL}
+$ roslaunch open_manipulator_with_tb3_tools open_manipulator_with_tb3_navigation.launch use_gazebo:=false open_rviz:=true
+```
+
+## [Find AR marker](#find-ar-marker)
+
+  - [ar_track_alvar](http://wiki.ros.org/ar_track_alvar)
+
+```bash
+$ roslaunch open_manipulator_perception ar_pose.launch
+```
+
+## [MoveIt!](#moveit)
+
+In order to run MoveIt!, open a new terminal window and enter below command
+
+**Tip :** TB3_MODEL =  `waffle`, `waffle_pi` 
+{: .notice--info}
+
+```bash
+$ export TURTLEBOT3_MODEL=${TB3_MODEL}
+$ roslaunch open_manipulator_with_tb3_tools open_manipulator_with_tb3_manipulation.launch use_gazebo:=false open_rviz:=true
+```
+
+![](/assets/images/platform/turtlebot3/manipulation/open_manipulator_moveit_sim_1.jpg)
+
+![](/assets/images/platform/turtlebot3/manipulation/open_manipulator_moveit_sim_2.jpg)
+
+In order to control gripper, please use topic publish with below command in a new terminal window.
+
+```
+$ rostopic pub /robotis/open_manipulator/gripper std_msgs/String "data: 'grip_on'" --once
+```
+
+![](/assets/images/platform/turtlebot3/manipulation/open_manipulator_gripper.png)
+
+## [Pick and Place](#pick-and-place)
+
+![](/assets/images/platform/turtlebot3/manipulation/open_manipulator_pick.png)
+
+
+![](/assets/images/platform/turtlebot3/manipulation/open_manipulator_place.png)
+
+We provide example for mobile manipulation as pick and place. This example is launched by controller that is to automatically start and stop navigation stack, MoveIt!, pick and place launch file by communicating ROS messages.
+
+User can modified this node to apply their environments. 
+
+**Tip :** TB3_MODEL =  `waffle`, `waffle_pi` 
+{: .notice--info}
+
+```bash
+$ roslaunch open_manipulator_with_tb3_tools open_manipulator_with_tb3_controllerunch 
+```
 
 ## [Simulation](#simulation)
 
@@ -96,7 +192,11 @@ Click `Upload` button to upload the firmware to OpenCR1.0.
 
 Load an TurtleBot3 with OpenManipulator on Gazebo simulator and click `Play` button
 
+**Tip :** TB3_MODEL =  `waffle`, `waffle_pi` 
+{: .notice--info}
+
 ```bash
+$ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ roslaunch open_manipulator_gazebo open_manipulator_with_tb3_gazebo.launch
 ```
 
@@ -157,68 +257,10 @@ Type `rostopic list` to check which topic is activated
 /tf
 ```
 
-OpenManipulator in Gazebo is controllered by ROS message. For example, below command publish joint position(radian)
+OpenManipulator in Gazebo is controllered by ROS message. For example, to use below command make publish joint position(radian)
 
 ```
-$ rostopic pub /open_manipulator/joint4_position/command std_msgs/Float64 "data: 0.21" --once
+$ rostopic pub /joint4_position/command std_msgs/Float64 "data: 0.21" --once
 ```
 
-![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_gazebo_2.png)
 
-In order to run MoveIt!, open a new terminal window and enter below command
-
-```
-$ roslaunch open_manipulator_moveit open_manipulator_demo.launch use_gazebo:=true
-```
-
-![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_moveit_sim_1.jpg)
-
-![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_moveit_sim_2.jpg)
-
-In order to control gripper, please use topic publish with below command in a new terminal window.
-
-```
-$ rostopic pub /robotis/open_manipulator/gripper std_msgs/String "data: 'grip_on'" --once
-```
-
-![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_gripper.png)
-
-## [Platform](#platform)
-
-Below command will load the Open-Manipulator with DYNAMIXEL X-series.
-
-```bash
-$ roslaunch open_manipulator_dynamixel_ctrl dynamixel_controller.launch
-```
-
-In order to run Open-Manipulator simulation with MoveIt!, open a new terminal window and enter below command.
-
-```bash
-$ roslaunch open_manipulator_moveit open_manipulator_demo.launch
-```
-
-![](/assets/images/platform/turtlebot3/manipulation/open_manipulator_moveit_real_1.png)
-
-![](/assets/images/platform/turtlebot3/manipulation/open_manipulator_moveit_real_2.jpg)
-
-![](/assets/images/platform/turtlebot3/manipulation/open_manipulator_moveit_real_3.png)
-
-![](/assets/images/platform/turtlebot3/manipulation/open_manipulator_moveit_real_4.jpg)
-
-## [TurtleBot3 Waffle with Open-Manipulator](#turtlebot3-waffle-with-openmanipulator)
-
-Install dependent packages for the Open-Manipulator.
-
-```bash
-$ cd ~/catkin_ws/src
-$ git clone https://github.com/ROBOTIS-GIT/turtlebot3.git
-$ cd ~/catkin_ws && catkin_make
-```
-
-Below command will load the TurtleBot3 Waffle with Open-Manipulator on RViz.
-
-```bash
-$ roslaunch open_manipulator_with_tb3 open_manipulator_chain_with_tb3_rviz.launch
-```
-
-![](/assets/images/platform/turtlebot3/manipulation/TurtleBot3_with_Open_Manipulator.png)
