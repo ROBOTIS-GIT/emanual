@@ -124,6 +124,9 @@ It has an 18-pin common GPIO expansion connector and is mapped to the GPIO pin o
 `FT` pins are 5V tolerant except when in analog mode. The maximum injected current on FT pins are **-5mA**. Also total output current sunk / sourced by sum of all I/O pins are **120mA / -120mA** respectively.
 {: .notice}
 
+`Note` Typical pull-up / pull-down resistance is 40k&ohm;
+{: .notice}
+
 ## [OLLO Connector](#ollo-connector)
 
 ![](/assets/images/parts/controller/opencr10/arduino_pinmap_06.png)
@@ -153,6 +156,10 @@ External interrupts are assigned to the following pins and can be used with *att
 | 8        | 75          | OLLO_P4_ADC |
 
 ```c
+/*
+  EXTI_0 is assigned to Arduino PIN 2
+*/
+pinmode(2, INPUT_PULLDOWN); //set Arduino Pin 2 as input with pull-down
 attachInterrupt(0, changeDirection_EXIT_0, RISING);
 
 void changeDirection_EXIT_0(void){
