@@ -23,20 +23,20 @@ The development environment for OpenCR1.0 is wide open from Arduino IDE and Scra
 
 # [Specifications](#specifications)
 
-| Items               | Specifications                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-|:--------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Microcontroller     | STM32F746ZGT6 / 32-bit ARM Cortex®-M7 with  FPU (216MHz, 462DMIPS)                                                                                                                                                                                                                                                                                                                                                                                                  |
-| Sensors             | Gyroscope 3Axis, Accelerometer 3Axis, Magnetometer 3Axis (MPU9250)                                                                                                                                                                                                                                                                                                                                                                                                  |
-| Programmer          | ARM Cortex 10pin JTAG/SWD connector<br />USB Device Firmware Upgrade (DFU)<br />Serial                                                                                                                                                                                                                                                                                                                                                                              |
-| Digital I/O         | 32 pins (L 14, R 18) *Arduino connectivity<br />5Pin OLLO x 4<br />GPIO x 18 pins<br />PWM x 6<br />I2C x 1<br />SPI x 1                                                                                                                                                                                                                                                                                                                                            |
-| Analog INPUT        | ADC Channels (8bit) x 6                                                                                                                                                                                                                                                                                                                                                                                                                                             |
-| Communication Ports | USB x 1 (Micro-B USB connector/USB 2.0/Host/Peripheral/OTG)<br />TTL x 3 ([B3B-EH-A] / Dynamixel)<br />RS485 x 3 ([B4B-EH-A] / Dynamixel)<br />UART x 2 ([20010WS-04])<br />CAN x 1 ([20010WS-04])                                                                                                                                                                                                                                                                  |
-| LEDs and buttons    | LD2 (red/green) : USB communication<br />User LED x 4 : LD3 (red), LD4 (green), LD5 (blue)<br />User button  x 2                                                                                                                                                                                                                                                                                                                                                    |
-| Powers              | External input source<br />5 V (USB VBUS), 7-24 V (Battery or SMPS)<br />Default battery : LI-PO 11.1V 1,800mAh 19.98Wh<br />Default SMPS: 12V 5A<br />External output source<br />`*`12V max 5A([SMW250-02]), `*`5V max 4A([5267-02A]), 3.3V@800mA([20010WS-02])<br />External battery Port for RTC (Real Time Clock) ([Molex 53047-0210])<br />Power LED: LD1 (red, 3.3 V power on)<br />Reset button x 1 (for power reset of board)<br />Power on/off switch x 1 |
-| Dimensions          | 105(W) X 75(D) mm                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| Mass                | 60g                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Items               | Specifications                                                                                          |
+|:--------------------|:--------------------------------------------------------------------------------------------------------|
+| Microcontroller     | STM32F746ZGT6 / 32-bit ARM Cortex®-M7 with  FPU (216MHz, 462DMIPS)<br />[Reference Manual], [Datasheet] |
+| Sensors             | Gyroscope 3Axis, Accelerometer 3Axis, Magnetometer 3Axis (MPU9250)                                      |
+| Programmer          | ARM Cortex 10pin JTAG/SWD connector<br />USB Device Firmware Upgrade (DFU)<br />Serial                  |
+| Digital I/O         | 32 pins (L 14, R 18) *Arduino connectivity<br />5Pin OLLO x 4<br />GPIO x 18 pins<br />PWM x 6<br />I2C x 1<br />SPI x 1   |
+| Analog INPUT        | ADC Channels (10bit) x 6  `Max 12bit` `5V tolerant`                                                                        |
+| Communication Ports | USB x 1 (Micro-B USB connector/USB 2.0/Host/Peripheral/OTG)<br />TTL x 3 ([B3B-EH-A] / Dynamixel)<br />RS485 x 3 ([B4B-EH-A] / Dynamixel)<br />UART x 2 ([20010WS-04])<br />CAN x 1 ([20010WS-04])  |
+| LEDs and buttons    | LD2 (red/green) : USB communication<br />User LED x 4 : LD3 (red), LD4 (green), LD5 (blue)<br />User button  x 2           |
+| Powers              | External input source<br />5 V (USB VBUS), 7-24 V (Battery or SMPS)<br />Default battery : LI-PO 11.1V 1,800mAh 19.98Wh<br />Default SMPS: 12V 5A<br />External output source<br />`1`12V max 5A([SMW250-02]), `1`5V max 4A([5267-02A]), 3.3V@800mA([20010WS-02])<br />External battery Port for RTC (Real Time Clock) ([Molex 53047-0210])<br />Power LED: LD1 (red, 3.3 V power on)<br />Reset button x 1 (for power reset of board)<br />Power on/off switch x 1     |
+| Dimensions          | 105(W) X 75(D) mm  |
+| Mass                | 60g  |
 
-`*` 5V power source is supplied from regulated 12V output.
+`1` 5V power source is supplied from regulated 12V output.
 {: .notice}
 
 `Note` Hot swap power switch between "shore power"(12V, 5A SMPS) and "mobile power"(battery) from OpenCR1.0 board enables UPS(Uninterrupted Power Supply) feature.
@@ -81,7 +81,7 @@ The pins 0 to 21 are the same pin as the Arduino Uno, and thereafter they are ma
 {: .notice}
 
 ## [User LED](#user-led)
-The OpenCR additional LEDs consist of four LEDs and are mapped to Arupinopin 22-25.
+The OpenCR additional LEDs consist of four LEDs and are mapped to Arduino pin 22-25.
 
 ![](/assets/images/parts/controller/opencr10/arduino_pinmap_03.png)
 
@@ -124,6 +124,9 @@ It has an 18-pin common GPIO expansion connector and is mapped to the GPIO pin o
 `FT` pins are 5V tolerant except when in analog mode. The maximum injected current on FT pins are **-5mA**. Also total output current sunk / sourced by sum of all I/O pins are **120mA / -120mA** respectively.
 {: .notice}
 
+`Note` Typical pull-up / pull-down resistance is 40k&ohm;
+{: .notice}
+
 ## [OLLO Connector](#ollo-connector)
 
 ![](/assets/images/parts/controller/opencr10/arduino_pinmap_06.png)
@@ -153,6 +156,10 @@ External interrupts are assigned to the following pins and can be used with *att
 | 8        | 75          | OLLO_P4_ADC |
 
 ```c
+/*
+  EXTI_0 is assigned to Arduino PIN 2
+*/
+pinmode(2, INPUT_PULLDOWN); //set Arduino Pin 2 as input with pull-down
 attachInterrupt(0, changeDirection_EXIT_0, RISING);
 
 void changeDirection_EXIT_0(void){
@@ -1739,6 +1746,8 @@ opencr_ld.exe COM1 115200 ./opencrfw.bin 1
 
 - [https://github.com/ROBOTIS-GIT/OpenCR/tree/master/arduino/opencr_arduino/tools/opencr_tools_1.0.0](https://github.com/ROBOTIS-GIT/OpenCR/tree/master/arduino/opencr_arduino/tools/opencr_tools_1.0.0)
 
+[Reference Manual]: www.st.com/resource/en/reference_manual/dm00124865.pdf
+[Datasheet]: www.st.com/resource/en/datasheet/stm32f745ie.pdf
 [B3B-EH-A]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
 [B4B-EH-A]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
 [20010WS-04]: http://www.alldatasheet.com/datasheet-pdf/pdf/147797/YEONHO/20010WS-04000.html

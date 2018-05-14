@@ -77,7 +77,7 @@ EnableInterrupt(); // enable interrupt again
 `Note` Please note the important lines between LINE 8 and LINE 12. Line 8 is necessary since an interrupt here may cause a delay longer than the return delay time and corruption to the front of the status packet may occur.
 {: .notice}
 
-# [Byte to Byte Time](#byte-to-byte-time)
+## [Byte to Byte Time](#byte-to-byte-time)
 
 The delay time between bytes when sending an instruction packet. If the delay time is over 100ms, then the Dynamixel actuator recognizes this as a communication problem and waits for the next header (0xff 0xff) of a packet again.
 
@@ -106,15 +106,16 @@ Length = number of Parameters + 2
 ## [Instruction](#instruction)
 The field that defines the type of instruction.
 
-|Value|Instructions|Description|
-|:---:|:---:|:---:|
-|0x01|Ping|Instruction that checks whether the Packet has arrived to a device with the same ID as Packet ID|
-|0x02|Read|Instruction to read data from the Device|
-|0x03|Write|Instruction to write data on the Device|
-|0x04|Reg Write|Instruction that registers the Instruction Packet to a standby status; Packet is later executed through the Action instruction|
-|0x05|Action|Instruction that executes the Packet that was registered beforehand using Reg Write|
-|0x06|Factory Reset|Instruction that resets the Control Table to its initial factory default settings|
-|0x83|Sync Write|For multiple devices, Instruction to write data on the same Address with the same length at once|
+| Value | Instructions  |                                                          Description                                                           |
+|:-----:|:-------------:|:------------------------------------------------------------------------------------------------------------------------------:|
+| 0x01  |     Ping      |                Instruction that checks whether the Packet has arrived to a device with the same ID as Packet ID                |
+| 0x02  |     Read      |                                            Instruction to read data from the Device                                            |
+| 0x03  |     Write     |                                            Instruction to write data on the Device                                             |
+| 0x04  |   Reg Write   | Instruction that registers the Instruction Packet to a standby status; Packet is later executed through the Action instruction |
+| 0x05  |    Action     |                      Instruction that executes the Packet that was registered beforehand using Reg Write                       |
+| 0x06  | Factory Reset |                       Instruction that resets the Control Table to its initial factory default settings                        |
+| 0x83  |  Sync Write   |                For multiple devices, Instruction to write data on the same Address with the same length at once                |
+| 0x92  |   Bulk Read   |             For multiple devices, Instruction to write data on different Addresses with different lengths at once              |
 
 ## [Parameters](#parameters)
 Parameters are used when additional data is required for an instruction.
@@ -293,8 +294,14 @@ This instruction is to execute the registered Reg Write instruction. The Action 
 ## [Factory Reset](#factory-reset)
 This instruction is to reset the Control Table of Dynamixel to the factory default values.
 
-`Caution` Please be careful as Reset instruction will erase saved custom values in the EEPROM.
-{: .notice--warning}
+{% capture reset_warning_01 %}
+`Caution` Please be careful as Reset instruction will factory reset values in the EEPROM. 
+
+`Caution` Broadcast ID(0xFE) cannot be used for Reset instruction.  
+  Applied Products : MX-12W(V41), MX-28(V40), MX-64(V40), MX-106(V40)
+{% endcapture %}
+
+<div class="notice--warning">{{ reset_warning_01 | markdownify }}</div>
 
 |Length|Instruction|Parameter|
 |:---:|:---:|:---:|
@@ -315,6 +322,27 @@ This instruction is to reset the Control Table of Dynamixel to the factory defau
 |H1|H2|ID|LEN|ERR|CKSM|
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |0xFF|0xFF|0x00|0x02|0x00|0xFD|
+
+## [Reboot](#reboot)
+This instruction restarts Dynamixel.
+- Applied Products : MX-12W(V41), MX-28(V40), MX-64(V40), MX-106(V40), X-Series(except XL-320)
+
+### Example
+
+#### Conditions
+- ID 1(XM430-W210) : Reboot ID 1 Dynamixel
+
+#### Reboot Instruction Packet
+
+|  H1  |  H2  |  ID  | LEN  | INST | CKSM |
+|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0x01 | 0x02 | 0x08 | 0xF4 |
+
+#### ID 1 Status Packet
+
+|  H1  |  H2  |  ID  | LEN  | ERR  | CKSM |
+|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0x01 | 0x02 | 0x00 | 0xFC |
 
 ## [Sync Write](#sync-write)
 This instruction is used to control multiple Dynamixels simultaneously with a single Instruction Packet transmission. When this instruction is used, several instructions can be transmitted at once, so that the communication time is reduced when multiple Dynamixels are connected in a single channel. However, the SYNC WRITE instruction can only be used to a single address with an identical length of data over connected Dynamixels. ID should be transmitted as Broadcasting ID.
