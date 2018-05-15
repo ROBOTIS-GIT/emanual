@@ -302,7 +302,7 @@ Download the latest version of Arduino IDE from the official arduino homepage, a
 Then, extract the downloaded file to the desired folder and execute the installation file from the terminal. In this case, the example shown below makes the folder tools in the user’s top folder (~/). This folder will act as the Arduino IDE folder.
 
 ```bash
-$ cd ~/tools/arduino-1.16.0
+$ cd ~/tools/arduino-1.6.4
 $ ./install.sh
 ```
 
@@ -310,7 +310,7 @@ Set the file path of installed Arduino IDE as an absolute path named PATH in the
 
 ```bash
 $ gedit ~/.bashrc
-$ export PATH=$PATH:$HOME/tools/arduino-1.16.0
+$ export PATH=$PATH:$HOME/tools/arduino-1.6.4
 $ source ~/.bashrc
 ```
 
@@ -470,7 +470,7 @@ To use OpenCR's USB port as a serial port in Windows, you need a USB CDC driver.
 
 ### [Install Arduino IDE(Windows)](#install-arduino-idewindows)
 
-Download the latest version of Arduino IDE from the official arduino homepage, and install it. Currently, the OpenCR will be on service in the version 1.16.0 or later.
+Download the latest version of Arduino IDE from the official arduino homepage, and install it. Currently, the OpenCR will be on service in the version 1.6.4 or later.
 
 [https://www.arduino.cc/en/Main/Software](https://www.arduino.cc/en/Main/Software)
 
