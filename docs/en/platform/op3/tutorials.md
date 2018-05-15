@@ -1469,7 +1469,7 @@ $ roslaunch op3_read_write_demo op3_read_write.launch
   ```
 
   When the button on the back of ROBOTIS-OP3 is pressed, it is processed by the following function.   
-  `mode` and ` start` buttons will start demo. If you press `user` button, torque of all joint will be turned on.  
+  `mode` and `start` buttons will start demo. If you press `user` button, torque of all joint will be turned on.  
   Before starting the demo, the `readyToDemo()` function uses `SyncWriteItem` to turn off the right arm torque.  
 
   ```cpp
