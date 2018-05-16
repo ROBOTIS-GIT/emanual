@@ -339,13 +339,12 @@ ACTION 명령은 여러 개의 다이나믹셀들을 동시에 움직여야 하�
 ## [Factory Reset](#factory-reset)
 Control Table의 Data를 공장 출하 값 상태로 되돌려 놓습니다.
 
+
+{% capture reset_warning_01 %}
 `주의` RESET 명령을 사용하면 사용자가 EEPROM에 설정했던 값이 지워지므로 사용에 주의하시기 바랍니다.<br>
 `주의` 일부 모델은 Broadcast ID(0xFE)로 RESET 명령을 사용할 수 없습니다.<br>
 대상 모델 : MX-12W(V41), MX-28(V40), MX-64(V40), MX-106(V40)
-{: .notice--warning}
 
-`주의` 일부 모델은 Broadcast ID(0xFE)로 RESET 명령을 사용할 수 없습니다.  
-  대상 모델 : MX-12W(V41), MX-28(V40), MX-64(V40), MX-106(V40)
 {% endcapture %}
 
 <div class="notice--warning">{{ reset_warning_01 | markdownify }}</div>
