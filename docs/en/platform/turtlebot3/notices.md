@@ -1,11 +1,11 @@
 ---
 layout: archive
 lang: en
-ref: turtlebot3_notice
+ref: turtlebot3_notices
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/turtlebot3/notice/
+permalink: /docs/en/platform/turtlebot3/notices/
 sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
@@ -13,7 +13,7 @@ sidebar:
 
 <div style="counter-reset: h1 1"></div>
 
-# [Notice](#notice)
+# [Notices](#notices)
 
 ![](/assets/images/platform/turtlebot3/overview/turtlebot3_flyer_front_ver1806.png)
 

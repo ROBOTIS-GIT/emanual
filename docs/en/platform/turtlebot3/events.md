@@ -1,11 +1,11 @@
 ---
 layout: archive
 lang: en
-ref: turtlebot3_competition
+ref: turtlebot3_events
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/turtlebot3/competition/
+permalink: /docs/en/platform/turtlebot3/events/
 sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
@@ -13,7 +13,7 @@ sidebar:
 
 <div style="counter-reset: h1 17"></div>
 
-# [Competition](#competition)
+# [Competitions](#competitions)
 
 ## [Online Competition on ROS Development Studio](#online-competition-on-ros-development-studio)
 
