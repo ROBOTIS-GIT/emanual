@@ -20,10 +20,7 @@ sidebar:
 `Note` This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 {: .notice--info}
 
-`Warning` Make sure to run the [Bringup](#bringup) instruction before performing Teleoperation.
-{: .notice--warning}
-
-`Warning` Be careful when testing the robot on the table as the robot might fall.
+`Warning` Make sure to run the [Bringup](#bringup) instruction before performing examples, and be careful when testing the robot on the table as the robot might fall.
 {: .notice--warning}
 
 **Tip :** The teleoperation is supposed to be running on the remote PC. **Follow the instruction on your Remote PC**.
