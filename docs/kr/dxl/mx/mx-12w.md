@@ -85,7 +85,7 @@ sidebar:
 |46|1|[Moving](#moving)                   |움직임 유무|R|0|
 |47|1|[Lock](#lock)                   |EEPROM 잠금|RW|0|
 |48|2|[Punch](#punch)                   |Punch 값의 바이트|RW|32|
-|50|2|[Realtime Tick](#realtime-tick)                   |Realtime Tick 값의 바이트|R|0|
+|50|2|[Realtime Tick](#realtime-tick)                   |실시간 Tick|R|0|
 |73|1|[Goal Acceleration](#goal-acceleration)   |목표 가속도값|RW|0|
 
 

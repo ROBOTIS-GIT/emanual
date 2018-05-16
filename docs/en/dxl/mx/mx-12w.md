@@ -26,7 +26,7 @@ sidebar:
 | Dimensions (W x H x D) | 32mm x 50mm x 40mm |
 | Gear Ratio | 32 : 1  |
 | No Load Speed | 470rpm (at 12V) |
-| Operating Temperature | -5&deg;C ~ +80&deg;C |
+| Operating Temperature | -5&deg;C ~ +70&deg;C |
 | Input Voltage | 10 ~ 14.8V (**Recommended : 12V**) |
 | Standby Current | 60mA |
 | Command Signal | Digital Packet |
@@ -81,6 +81,7 @@ sidebar:
 |46|1|[Moving](#moving)                   |Movement Status|R|0|
 |47|1|[Lock](#lock)                   |Locking EEPROM|RW|0|
 |48|2|[Punch](#punch)                   |Minimum Current Threshold|RW|32|
+|50|2|[Realtime Tick](#realtime-tick)                   |Count Time in millisecond|R|0|
 |73|1|[Goal Acceleration](#goal-acceleration)   |Goal Acceleration|RW|0|
 
 
@@ -214,6 +215,9 @@ For example, if it is set to 300 then the motor is moving to the CCW direction a
 
 ### <a name="punch"></a>**[Punch (48)](#punch-48)**
 {% include en/dxl/control_table_punch.md %}
+
+### <a name="realtime-tick"></a>**[Realtime-Tick (50)](#realtime-tick-50)**
+{% include en/dxl/control_table_realtime_tick.md %}
 
 ### <a name="goal-acceleration"></a>**[Goal Acceleration (73)](#goal-acceleration-73)**
 {% include en/dxl/control_table_goal_acceleration.md %}
