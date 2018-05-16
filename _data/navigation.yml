@@ -7754,6 +7754,9 @@ protocol1:
       - title: "Factory Reset"
         titlekr: "Factory Reset"
         url: /dxl/protocol1/#factory-reset
+      - title: "Reboot"
+        titlekr: "Reboot"
+        url: /dxl/protocol1/#reboot
       - title: "Sync Write"
         titlekr: "Sync Write"
         url: /dxl/protocol1/#sync-write
