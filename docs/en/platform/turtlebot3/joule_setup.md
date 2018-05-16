@@ -16,6 +16,8 @@ sidebar:
 
 # [Joule Setup](#joule-setup)
 
+`Warning` Setup work requires Power and Time. Battery is not suitable. We recommend using SMPS (AC adapter) during this work.
+
 ## [Install Linux(Ubuntu)](#install-linux-ubuntu)
 
 In this section, the Alternative Ubuntu Desktop 16.04 LTS will be installed on Intel® Joule™.
