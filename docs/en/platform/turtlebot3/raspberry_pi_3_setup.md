@@ -64,6 +64,8 @@ $ sudo ddrescue -D --force ubuntu-mate-16.04.2-desktop-armhf-raspberry-pi.img /d
 **Tip :** The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is Ctrl-Alt-T.
 {: .notice--info}
 
+**[TurtleBot]** Install ROS
+
 ``` bash
 $ sudo apt-get update
 $ sudo apt-get upgrade
@@ -84,7 +86,7 @@ If you prefer manual installation, please following the link below.
 
 The next step is to install dependent packages for TurtleBot3 control.
 
-Download packages from github
+**[TurtleBot]** Download packages from github
 
 ``` bash
 $ cd ~/catkin_ws/src
@@ -96,14 +98,14 @@ $ git clone https://github.com/ROBOTIS-GIT/turtlebot3.git
 `Note` If you want to use Raspberry Pi Camera, please check related appendix for [Raspberry Pi Camera](http://emanual.robotis.com/docs/en/platform/turtlebot3/appendix_raspi_cam/#appendix-raspberry-pi-camera)
 {: .notice--info}
 
-Delete some packages that are only used in Remote PC
+**[TurtleBot]** Delete some packages that are not needed in TurtleBot SBC
 
 ``` bash
 $ cd ~/catkin_ws/src/turtlebot3
 $ sudo rm -r turtlebot3_description/ turtlebot3_teleop/ turtlebot3_navigation/ turtlebot3_slam/ turtlebot3_example/
 ```
 
-Install dependent packages
+**[TurtleBot]** Install dependent packages
 
 ``` bash
 $ sudo apt-get install ros-kinetic-rosserial-python ros-kinetic-tf
@@ -112,7 +114,7 @@ $ sudo apt-get install ros-kinetic-rosserial-python ros-kinetic-tf
 `Note` After install packages, please reboot Raspberry Pi 3.
 {: .notice--info}
 
-Build packages
+**[TurtleBot]** Build packages
 
 ``` bash
 $ cd ~/catkin_ws && catkin_make

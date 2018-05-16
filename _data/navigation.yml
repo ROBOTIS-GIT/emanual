@@ -10236,8 +10236,6 @@ open_manipulator:
         url: /platform/openmanipulator/#spawn-model
       - title: "MoveIt!"
         url: /platform/openmanipulator/#moveit
-  - title: "Mobile Manipulation"
-    url: /platform/openmanipulator/#mobile-manipulation
   - title: "Embedded board Setup"
     url: /platform/openmanipulator/#embedded-board-setup
     children:
