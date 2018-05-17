@@ -11,13 +11,14 @@ sidebar:
   nav: "turtlebot3"
 ---
 
-<div style="counter-reset: h1 22"></div>
+<div style="counter-reset: h1 21"></div>
+<div style="counter-reset: h2 0"></div>
 
-# [DYNAMIXEL](#appendix-dynamixel)
+## [DYNAMIXEL](#appendix-dynamixel)
 
 ![](/assets/images/platform/turtlebot3/appendix_dynamixel/dynamixel_x.jpg)
 
-## [Overview](#overview)
+### [Overview](#overview)
 
 `DYNAMIXEL X-Series` is a new line-up of high performance networked actuator module, which has been widely used for building various types of robots with reliability and expandability.
 Two different types of DYNAMIXEL is adopted in TurtleBot3 Burger and Waffle as they have different requirements.
@@ -43,7 +44,7 @@ DYNAMIXEL X-Series shares its design, therefore, users can replace actuators dep
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/gZWoyCvU-U8" frameborder="0" allowfullscreen></iframe>
 
-## [Specifications](#specifications)
+### [Specifications](#specifications)
 
 | Items          | [XL430-W250](http://support.robotis.com/en/product/actuator/dynamixel_x/xl_series/xl430-w250.htm) (for Burger) | [XM430-W210](http://support.robotis.com/en/product/actuator/dynamixel_x/xm_series/xm430-w210.htm) (for Waffle) |
 |:---------------|:---------------------------------------------|:---------------------------------------------------------------------------|

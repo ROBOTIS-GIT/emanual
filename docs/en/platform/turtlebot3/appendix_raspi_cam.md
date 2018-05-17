@@ -11,22 +11,23 @@ sidebar:
   nav: "turtlebot3"
 ---
 
-<div style="counter-reset: h1 25"></div>
+<div style="counter-reset: h1 21"></div>
+<div style="counter-reset: h2 4"></div>
 
-# [Raspberry Pi Camera](#appendix-raspberry-pi-camera)
+## [Raspberry Pi Camera](#appendix-raspberry-pi-camera)
 
 ![](/assets/images/platform/turtlebot3/appendix_raspi_cam/Pi-Camera-front.jpg)
 
-## [Overview](#overview)
+### [Overview](#overview)
 
 [The Raspberry Pi Camera Module v2](https://www.raspberrypi.org/products/camera-module-v2/) replaced the original Camera Module in April 2016. The v2 Camera Module has a Sony IMX219 8-megapixel sensor (compared to the 5-megapixel OmniVision OV5647 sensor of the original camera).
 The Camera Module can be used to take high-definition video, as well as stills photographs. It’s easy to use for beginners, but has plenty to offer advanced users if you’re looking to expand your knowledge. There are lots of examples online of people using it for time-lapse, slow-motion, and other video cleverness. You can also use the libraries we bundle with the camera to create effects.
 
 
-## [Specifications](#specifications)
+### [Specifications](#specifications)
 
 
-### [Hardware Specifications](#hardware-specifications)
+#### [Hardware Specifications](#hardware-specifications)
 
 | Items                          | Specifications                                                                            |
 | ------------------------------ | ----------------------------------------------------------------------------------------- |
@@ -55,7 +56,7 @@ The Camera Module can be used to take high-definition video, as well as stills p
 | Focal ratio (F-Stop)           | 2.0                                                                                       |
 
 
-### [Hardware features](#hardware-features)
+#### [Hardware features](#hardware-features)
 
 | Available                                                                       | Implemented                                                                                |
 | ------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------ |
@@ -84,7 +85,7 @@ The Camera Module can be used to take high-definition video, as well as stills p
 | Embedded 1.5V regulator for core power                                          | Yes                                                                                        |
 
 
-### [Software features](#software-features)
+#### [Software features](#software-features)
 
 
 | Software features             |                                                                                                                                                    |
@@ -99,7 +100,7 @@ The Camera Module can be used to take high-definition video, as well as stills p
 | Extra modes                   | demo, burst/timelapse, circular buffer, video with motion vectors, segmented video, live preview on 3D models                                      |
 
 
-### [Mechanical Drawing](#mechanical-drawing)
+#### [Mechanical Drawing](#mechanical-drawing)
 
   - Camera Module v2 [PDF](https://www.raspberrypi.org/documentation/hardware/camera/rpi-cam-v2_1-dimensions.pdf)
 
@@ -107,7 +108,7 @@ The Camera Module can be used to take high-definition video, as well as stills p
 Here is the detail specification document: [Raspberry Pi Camera Module v2 Datasheet](https://www.raspberrypi.org/documentation/hardware/camera/README.md)
 
 
-## [Raspberry Pi Camera for TurtleBot3](#raspberry-pi-camera-for-turtlebot3)
+### [Raspberry Pi Camera for TurtleBot3](#raspberry-pi-camera-for-turtlebot3)
 
 The Raspberry Pi Camera Module v2 is applied on TurtleBot3 Waffle Pi.
 
@@ -115,7 +116,7 @@ The Raspberry Pi Camera Module v2 is applied on TurtleBot3 Waffle Pi.
 ![](/assets/images/platform/turtlebot3/hardware_setup/turtlebot3_models.png)
 
 
-## [Introduction Video](#introduction-video)
+### [Introduction Video](#introduction-video)
 
 The TurtleBot3 Waffle Pi uses Raspberry Pi Camera Module v2 as a default vision sensor. Check this video out that shows how Raspberry Pi Camera Module v2 can be used in TurtleBot3 Waffle Pi.
 
@@ -123,7 +124,7 @@ The TurtleBot3 Waffle Pi uses Raspberry Pi Camera Module v2 as a default vision 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/AyZ5lcz5IzM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 
-## [User Guide](#user-guide)
+### [User Guide](#user-guide)
 
 [Raspberry Pi Camera packages](https://github.com/UbiquityRobotics/raspicam_node) enable the use of Raspberry Pi Camera Module v1.x and v2.x with ROS. Below table describes packages required to operate Raspberry Pi Camera. You will be guided to install these packaged in the next section.
 
@@ -133,7 +134,7 @@ The TurtleBot3 Waffle Pi uses Raspberry Pi Camera Module v2 as a default vision 
 | [Raspberry Pi Camera](https://github.com/UbiquityRobotics/raspicam_node) | Underlying library driver for communicating with Raspberry Pi Camera |
 
 
-### [Installation](#installation)
+#### [Installation](#installation)
 
 **[TurtleBot]** Setting up the camera hardware
 
@@ -188,7 +189,7 @@ $ sudo apt-get install ros-kinetic-compressed-image-transport ros-kinetic-camera
 $ cd ~/catkin_ws && catkin_make
 ```
 
-### [Run raspicam Node](#run-raspicam-node)
+#### [Run raspicam Node](#run-raspicam-node)
 
 **[TurtleBot]** Run the following command
 
@@ -215,7 +216,7 @@ $ rqt_image_view
 
 Once the gui application is appeared on the screen, you can select data topic name related to Raspberry Pi Camera from drop down menu at the top of the application.
 
-## [References](#references)
+### [References](#references)
 
 - [Raspberry Pi Camera Module Specifications](https://www.raspberrypi.org/documentation/hardware/camera/README.md)
 - [Hardware Configuration](https://www.raspberrypi.org/documentation/configuration/camera.md)

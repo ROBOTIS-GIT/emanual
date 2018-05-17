@@ -19,6 +19,8 @@ sidebar:
 
 ## [Publish](#publish)
 
+  - 05/16/2018 [1 Year of TurtleBot3: Call for Collaboration (by 23 MAY)](https://discourse.ros.org/t/1-year-of-turtlebot3-call-for-collaboration-by-23-may/4792)
+  - 05/11/2018 [TurtleBot3 with OpenManipulator is released](https://discourse.ros.org/t/turtlebot3-with-openmanipulator-is-released/4747)
   - 04/27/2018 [Awesome TurtleBot3 Projects like BallBot Project](https://discourse.ros.org/t/awesome-turtlebot3-projects-like-ballbot-project/4629)
   - 04/20/2018 [TurtleBot3 Automatic Parking under AR detection](https://discourse.ros.org/t/tb3-turtlebot3-automatic-parking-under-ar-detection/4476)
   - 03/29/2018 [TurtleBot3 AutoRace 2017 Tutorial & Source Codes released](https://discourse.ros.org/t/tb3-turtlebot3-autorace-2017-tutorial-source-codes-released/4339)

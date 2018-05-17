@@ -11,9 +11,10 @@ sidebar:
   nav: "turtlebot3"
 ---
 
-<div style="counter-reset: h1 10"></div>
+<div style="counter-reset: h1 8"></div>
+<div style="counter-reset: h2 2"></div>
 
-# [Basic Examples](#basic-examples)
+## [Basic Examples](#basic-examples)
 
 **NOTE:** This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 {: .notice--info}
@@ -26,7 +27,7 @@ sidebar:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Xg1pKFQY5p4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-## [Move using Interactive Markers](#move-using-interactive-markers)
+### [Move using Interactive Markers](#move-using-interactive-markers)
 
 TurtleBot3 can be moved by interactive markers on RViz. You can move the turtlebot3 to rotate or linear using interactive markers.
 
@@ -55,7 +56,7 @@ $ rosrun rviz rviz -d `rospack find turtlebot3_example`/rviz/turtlebot3_interact
 ```
 
 
-## [Obstacle Detection](#obstacle-detection)
+### [Obstacle Detection](#obstacle-detection)
 
 TurtleBot3 can be moved or stopped by LDS data. When the TurtleBot3 moves, it stops when it detects an obstacle ahead.
 
@@ -64,7 +65,7 @@ TurtleBot3 can be moved or stopped by LDS data. When the TurtleBot3 moves, it st
 $ rosrun turtlebot3_example turtlebot3_obstacle.py
 ```
 
-## [Point operation](#point-operation)
+### [Point operation](#point-operation)
 
 TurtleBot3 can be moved by 2D point(x,y) and z-angular. For example, if you insert (0.5, 0.3, 60), TurtleBot3 moves to point (x = 0.5m, y = 0.3m) and then rotates 60 deg.
 
@@ -73,7 +74,7 @@ TurtleBot3 can be moved by 2D point(x,y) and z-angular. For example, if you inse
 $ roslaunch turtlebot3_example turtlebot3_pointop_key.launch
 ```
 
-## [Patrol](#patrol)
+### [Patrol](#patrol)
 
 TurtleBot3 can be moved by custom routes. There are three routes(rectangle, triangle and circle). This example uses action topic. Action client translates patrol data(mode, area, count) to action server. And then action server translates `cmd_vel` to turtlebot3.
 

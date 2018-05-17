@@ -11,9 +11,10 @@ sidebar:
   nav: "turtlebot3"
 ---
 
-<div style="counter-reset: h1 5"></div>
+<div style="counter-reset: h1 6"></div>
+<div style="counter-reset: h2 0"></div>
 
-# [PC Setup](#pc-setup)
+## [PC Setup](#pc-setup)
 
 ![](/assets/images/platform/turtlebot3/software/remote_pc_and_turtlebot.png)
 
@@ -33,7 +34,7 @@ If you need more help for installing Ubuntu, check out the step-by-step guide fr
 
 - [Install ubuntu desktop](https://www.ubuntu.com/download/desktop/install-ubuntu-desktop)
 
-## [Install ROS on Remote PC](#install-ros-on-remote-pc)
+### [Install ROS on Remote PC](#install-ros-on-remote-pc)
 
 ![](/assets/images/platform/turtlebot3/logo_ros.png)
 
@@ -59,7 +60,7 @@ If you prefer manual installation, please following the link below.
 - [Install ROS on Ubuntu](http://wiki.ros.org/kinetic/Installation/Ubuntu)
 
 
-## [Install Dependent packages](#install-dependent-packages)
+### [Install Dependent packages](#install-dependent-packages)
 
 The next step is to install dependent packages for TurtleBot3 control.
 
@@ -77,7 +78,7 @@ $ cd ~/catkin_ws && catkin_make
 If catkin_make command is completed without any errors, the preparation for TurtleBot3 is done.
 
 
-## [Network Configuration](#network-configuration)
+### [Network Configuration](#network-configuration)
 
 ![](/assets/images/platform/turtlebot3/software/network_configuration.png)
 

@@ -11,6 +11,8 @@ sidebar:
   nav: "turtlebot3"
 ---
 
+<div style="counter-reset: h1 0"></div>
+
 # [Overview](#overview)
 
 ![](/assets/images/platform/turtlebot3/overview/turtlebot3_with_logo.png)
@@ -33,20 +35,20 @@ The TurtleBot3’s core technology is [SLAM][slam], [Navigation][navigation] and
 
 ## [TurtleBot3 Collaboration Project](#turtlebot3-collaboration-project)
 
-TurtleBot3 is a collaboration project among [Open Robotics][open_robotics], [ROBOTIS][robotis], and more partners like [The Construct][the_construct], [Intel][intel], [Onshape][onshape], [OROCA][oroca]. The Open Robotics is in charge of software and community activities, while ROBOTIS is in charge of manufacturing and global distribution. We need more partners who can provide technology, educational service or distribution in each country. For partnership, please fill out form [here][partners].
+TurtleBot3 is a collaboration project among [Open Robotics][open_robotics], [ROBOTIS][robotis], and more partners like [The Construct][the_construct], [Intel][intel], [Onshape][onshape], [OROCA][oroca], [AuTURBO][auturbo]. The Open Robotics is in charge of software and community activities, while ROBOTIS is in charge of manufacturing and global distribution. We need more partners who can provide technology, educational service or distribution in each country. For partnership, please fill out form [here][partners].
 
 ### TurtleBot3 Providers
 ![](/assets/images/platform/turtlebot3/logo_platform_providers.png)
 
-### TurtleBot3 Partners
+### TurtleBot3 Partners and Research Collaborators
 ![](/assets/images/platform/turtlebot3/logo_platform_sponsors.png)
 
 ### TurtleBot3 Distributors
 ![](/assets/images/platform/turtlebot3/logo_platform_players.png)
 
-<script type="text/javascript" src="https://embed.githubusercontent.com/view/geojson/turtlebot/map/master/Distributors.geojson?width=640"></script>
+<script type="text/javascript" src="https://embed.githubusercontent.com/view/geojson/turtlebot/map/master/Distributors.geojson"></script>
 
-\* For each collaboration member's web page, please use the following [here][turtlebot].
+\* For each collaboration member's web page, please use the following [here][partners].
 
 [turtlebot]: https://www.turtlebot.com/
 [ros]: http://www.ros.org/about-ros/
@@ -66,4 +68,5 @@ TurtleBot3 is a collaboration project among [Open Robotics][open_robotics], [ROB
 [intel]: http://www.intel.com/
 [onshape]: https://www.onshape.com/
 [oroca]: http://www.oroca.org/
+[auturbo]: https://github.com/AuTURBO/
 [partners]: https://www.turtlebot.com/partners

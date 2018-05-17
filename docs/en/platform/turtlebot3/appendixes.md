@@ -11,24 +11,24 @@ sidebar:
   nav: "turtlebot3"
 ---
 
-<div style="counter-reset: h1 19"></div>
+<div style="counter-reset: h1 20"></div>
 
 # [Appendixes](#appendixes)
 
 ## [DYNAMIXEL](#dynamixel)
-[DYNAMIXEL]
+- [DYNAMIXEL]
 
 ## [OpenCR1.0](#opencr10)
-[OpenCR]
+- [OpenCR]
 
 ## [LDS-01](#lds01)
-[LDS]
+- [LDS]
 
 ## [RealSense™](#realsense)
-[RealSense]
+- [RealSense]
 
 ## [Raspberry Pi Camera](#raspberry-pi-camera)
-[Raspberry Pi Camera]
+- [Raspberry Pi Camera]
 
 [DYNAMIXEL]: /docs/en/platform/turtlebot3/appendix_dynamixel/
 [OpenCR]: /docs/en/platform/turtlebot3/appendix_opencr1_0/

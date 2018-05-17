@@ -11,24 +11,22 @@ sidebar:
   nav: "turtlebot3"
 ---
 
-<div style="counter-reset: h1 12"></div>
+<div style="counter-reset: h1 9"></div>
 
 # [Navigation](#navigation)
 
 **NOTE:** This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame` version.
 {: .notice--info}
 
-**WARNING:** Make sure to run the [Bringup](#bringup) instruction before performing Navigation.
-{: .notice--warning}
-
-**WARNING:** The navigation uses the a data created in [SLAM](#slam). Please make sure to have a map data.
-{: .notice--warning}
-
-**WARNING:** Be careful when testing the robot on the table as the robot might fall.
-{: .notice--warning}
+{% capture warning_01 %}
+**WARNING:** 
+1. Make sure to run the [Bringup][Bringup] instruction before performing Navigation.
+2. The navigation uses the a data created in [SLAM][SLAM]. Please make sure to have a map data.
+3. Be careful when testing the robot on the table as the robot might fall.
+{% endcapture %}
+<div class="notice--warning">{{ warning_01 | markdownify }}</div>
 
 The Navigation locates TurtleBot3 to the calculated position in the map by combining actual sensor data and anticipated position data.
-
 
 ## [Perform Navigation](#perform-navigation)
 
@@ -69,3 +67,6 @@ If you wish to stop the robot before it reaches to the goal position, set the cu
 <iframe width="640" height="360" src="https://www.youtube.com/embed/VYlMywwYALU" frameborder="0" allowfullscreen></iframe>
 
 [Reference doc](http://wiki.ros.org/turtlebot_navigation/Tutorials/Autonomously%20navigate%20in%20a%20known%20map)
+
+[Bringup]: /docs/en/platform/turtlebot3/bringup/
+[SLAM]: /docs/en/platform/turtlebot3/slam/

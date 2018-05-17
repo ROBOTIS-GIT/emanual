@@ -11,9 +11,10 @@ sidebar:
   nav: "turtlebot3"
 ---
 
-<div style="counter-reset: h1 10"></div>
+<div style="counter-reset: h1 8"></div>
+<div style="counter-reset: h2 0"></div>
 
-# [Topic Monitor](#topic-monitor)
+## [Topic Monitor](#topic-monitor)
 
 **NOTE:** This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 {: .notice--info}

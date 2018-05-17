@@ -11,24 +11,24 @@ sidebar:
   nav: "turtlebot3"
 ---
 
-<div style="counter-reset: h1 19"></div>
+<div style="counter-reset: h1 5"></div>
 
 # [Setup](#setup)
 
 ## [PC Setup](#pc-setup)
-[PC Setup]: Install Linux, ROS and application packages for TurtleBot3 on your Remote PC.
+[PC Setup][PC Setup]: Install Linux, ROS and application packages for TurtleBot3 on your Remote PC.
 
 ## [SBC Setup](#sbc-setup)
-[SBC Setup]: Install Linux, ROS and hardware related packages to control the TurtleBot3 on your TurtleBot PC.
+[SBC Setup][SBC Setup]: Install Linux, ROS and hardware related packages to control the TurtleBot3 on your TurtleBot PC.
 
 ## [OpenCR Setup](#opencr-setup)
-[OpenCR Setup]: Upload latest firmware of TurtleBot3 to embedded board OpenCR.
+[OpenCR Setup][OpenCR Setup]: Upload latest firmware of TurtleBot3 to embedded board OpenCR.
 
 ## [Hardware Setup](#hardware-setup)
-[Hardware Setup]: TurtleBots3 is delivered as unassembled parts in the boxes. Follow the instructions to assemble TurtleBot3. At this time, the prepared SBC and OpenCR are mounted on the robot.
+[Hardware Setup][Hardware Setup]: TurtleBots3 is delivered as unassembled parts in the boxes. Follow the instructions to assemble TurtleBot3. At this time, the prepared SBC and OpenCR are mounted on the robot.
 
 ## [Compatible Devices](#compatible-devices)
-[Compatible Devices]: If you want to use other products instead of SBCs and Sensors included in the basic configuration, please refer to the this page.
+[Compatible Devices][Compatible Devices]: If you want to use other products instead of SBCs and Sensors included in the basic configuration, please refer to the this page.
 
 [PC Setup]: /docs/en/platform/turtlebot3/pc_setup/
 [SBC Setup]: /docs/en/platform/turtlebot3/sbc_setup/

@@ -11,7 +11,7 @@ sidebar:
   nav: "turtlebot3"
 ---
 
-<div style="counter-reset: h1 18"></div>
+<div style="counter-reset: h1 14"></div>
 
 # [Locomotion](#locomotion)
 

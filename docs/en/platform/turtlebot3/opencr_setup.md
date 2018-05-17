@@ -11,9 +11,10 @@ sidebar:
   nav: "turtlebot3"
 ---
 
-<div style="counter-reset: h1 7"></div>
+<div style="counter-reset: h1 6"></div>
+<div style="counter-reset: h2 2"></div>
 
-# [OpenCR Setup](#opencr-setup)
+## [OpenCR Setup](#opencr-setup)
 
 ![](/assets/images/platform/turtlebot3/software/remote_pc_and_turtlebot.png)
 
@@ -21,12 +22,12 @@ sidebar:
 {: .notice--info}
 
 
-## [OpenCR1.0 Firmware Upload for TB3](#opencr10-firmware-upload-for-tb3)
+### [OpenCR Firmware Upload for TB3](#opencr-firmware-upload-for-tb3)
 
 **NOTE:** You can choose one of methods for uploading firmware. But we highly recommend to use **shell script**.
 {: .notice--info}
 
-### [Shell Script](shell-script)
+#### [Shell Script](shell-script)
   
 **NOTE:** This instruction was tested on `Ubuntu 16.04`, `Ubuntu Mate`, `Linux Mint` or `Raspbian` and OpenCR1.0 software setup can be done from `Intel® Joule™`, `Raspberry Pi 3`.
 {: .notice--info}
@@ -57,7 +58,7 @@ $ wget https://github.com/ROBOTIS-GIT/OpenCR/raw/develop/arduino/opencr_release/
 
 When firmware upload is completed, `jump_to_fw` text string will be printed on the terminal.
 
-### [Arduino IDE](#arduino-ide)
+#### [Arduino IDE](#arduino-ide)
 
 **WARNING:** The contents in this chapter corresponds to the `Remote PC` (your desktop or laptop PC) which will control TurtleBot3. Do **NOT** apply this instruction to your TurtleBot3.
 {: .notice--warning}
@@ -88,7 +89,7 @@ If you have TurtleBot3 Waffle or Waffle Pi,
   
 **[Remote PC]** When firmware upload is completed, `jump_to_fw` text string will be printed on the screen.
 
-## [Basic Operation](#basic-operation)
+### [Basic Operation](#basic-operation)
 
 ![](/assets/images/platform/turtlebot3/opencr/opencr_models.png)
 

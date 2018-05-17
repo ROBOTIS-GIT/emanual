@@ -12,13 +12,14 @@ sidebar:
 ---
 
 <div style="counter-reset: h1 6"></div>
-<div style="counter-reset: h2 1"></div>
+<div style="counter-reset: h2 2"></div>
+<div style="counter-reset: h3 1"></div>
 
-# [Joule Setup](#joule-setup)
+### [Joule Setup](#joule-setup)
 
 **WARNING:** Setup work requires Power and Time. Battery is not suitable. We recommend using SMPS (AC adapter) during this work.
 
-## [Install Linux(Ubuntu)](#install-linux-ubuntu)
+#### [Install Linux (Ubuntu)](#install-linux-ubuntu)
 
 In this section, the Alternative Ubuntu Desktop 16.04 LTS will be installed on Intel® Joule™.
 
@@ -50,7 +51,7 @@ If you need following step for installation, please refer to below link
 
 [Step by step to install Ubuntu]: /docs/en/platform/turtlebot3/step_by_step_to_install_ubuntu_on_joule
 
-### [Install ROS](#install-ros)
+##### [Install ROS](#install-ros)
 
 **WARNING:** The contents in this chapter corresponds to the Intel® Joule™ which will be the main computer of **TurtleBot3 Waffle**. Do **NOT** apply this instruction to your Remote PC (your desktop PC or laptop).
 {: .notice--warning}
@@ -81,7 +82,7 @@ If you prefer manual installation, please following the link below.
 
 - [Install ROS on Ubuntu](http://wiki.ros.org/kinetic/Installation/Ubuntu)
 
-### [Install Dependent Packages](#install-dependent-packages)
+##### [Install Dependent Packages](#install-dependent-packages)
 
 The next step is to install dependent packages for TurtleBot3 control.
 
@@ -121,7 +122,7 @@ $ cd ~/catkin_ws && catkin_make
 
 If catkin_make command is completed without any errors, the preparation for TurtleBot3 is done.
 
-### [USB Settings](#usb-settings)
+##### [USB Settings](#usb-settings)
 
 **[TurtleBot]** The following commands allow to use USB port for OpenCR1.0 without acquiring root permission.
 
@@ -129,7 +130,7 @@ If catkin_make command is completed without any errors, the preparation for Turt
 $ rosrun turtlebot3_bringup create_udev_rules
 ```
 
-### [Network Configuration](#network-configuration)
+##### [Network Configuration](#network-configuration)
 
 ![](/assets/images/platform/turtlebot3/software/network_configuration.png)
 

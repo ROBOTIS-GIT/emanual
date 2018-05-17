@@ -11,7 +11,7 @@ sidebar:
   nav: "turtlebot3"
 ---
 
-<div style="counter-reset: h1 11"></div>
+<div style="counter-reset: h1 8"></div>
 
 # [SLAM](#slam)
 
@@ -21,7 +21,7 @@ sidebar:
 **TIP:** It is recommended to use a joystick pad instead of the keyboard for easier control.
 {: .notice--info}
 
-**WARNING:** Make sure to run the [Bringup][bringup] instruction before performing SLAM.
+**WARNING:** Make sure to run the [Bringup][Bringup] instruction before performing SLAM.
 {: .notice--warning}
 
 The Simultaneous Localization and Mapping, or SLAM, is a technique to draw a map by estimating current location in an arbitrary space.
@@ -85,4 +85,4 @@ $ rosrun map_server map_saver -f ~/map
 
 **map.pgm** and **map.yaml** files will be created in the `~/` ($HOME directory : `/home/<username>`) directory.
 
-[bringup]: /docs/en/platform/turtlebot3/bringup/
+[Bringup]: /docs/en/platform/turtlebot3/bringup/

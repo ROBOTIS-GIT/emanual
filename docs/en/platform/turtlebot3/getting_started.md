@@ -11,7 +11,7 @@ sidebar:
   nav: "turtlebot3"
 ---
 
-<div style="counter-reset: h1 19"></div>
+<div style="counter-reset: h1 4"></div>
 
 # [Getting Started](#getting-started)
 This document is for users who are new to TurtleBot3. It is an enormous amount of content, you can divide it as follows.

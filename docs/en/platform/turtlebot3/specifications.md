@@ -77,7 +77,7 @@ sidebar:
 - [Intel® Realsense™ R200](https://software.intel.com/en-us/RealSense/R200Camera)
 - [The Raspberry Pi Camera Module v2.1](https://www.raspberrypi.org/products/camera-module-v2/)
 
-### [Control Board](#control-board)
+### [Embedded Board](#Embedded-board)
 
 - [OpenCR1.0](/docs/en/platform/turtlebot3/appendix_opencr1_0/)
 

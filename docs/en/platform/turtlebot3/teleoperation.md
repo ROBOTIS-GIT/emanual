@@ -11,9 +11,10 @@ sidebar:
   nav: "turtlebot3"
 ---
 
-<div style="counter-reset: h1 9"></div>
+<div style="counter-reset: h1 8"></div>
+<div style="counter-reset: h2 1"></div>
 
-# [Teleoperation](#teleoperation)
+## [Teleoperation](#teleoperation)
 
 ![](/assets/images/platform/turtlebot3/software/remote_pc_and_turtlebot.png)
 
@@ -30,7 +31,7 @@ TurtleBot3 can be teleoperated by various devices. It is tested with several wir
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/Z4s18hlazb4" frameborder="0" allowfullscreen></iframe>
 
-## [Keyboard](#keyboard)
+### [Keyboard](#keyboard)
 
 **TIP:** The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is Ctrl-Alt-T.
 {: .notice--info}
@@ -58,11 +59,11 @@ $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
   CTRL-C to quit
 ```
 
-## [RC100](#rc100)
+### [RC100](#rc100)
 
 The settings for ROBOTIS RC100 controller is included in the OpenCR1.0 firmware.
 
-## [PS3 Joystick](#ps3-joystick)
+### [PS3 Joystick](#ps3-joystick)
 
 **[Remote PC]** Connect PS3 Joystick to the remote PC via Bluetooth or with USB cable.
 
@@ -78,7 +79,7 @@ $ sudo apt-get install ros-kinetic-joy ros-kinetic-joystick-drivers ros-kinetic-
 $ roslaunch teleop_twist_joy teleop.launch
 ```
 
-## [XBOX 360 Joystick](#xbox-360-joystick)
+### [XBOX 360 Joystick](#xbox-360-joystick)
 
 **[Remote PC]** Connect XBOX 360 Joystick to the remote PC with Wireless Adapter or USB cable.
 
@@ -95,7 +96,7 @@ $ sudo xboxdrv --silent
 $ roslaunch teleop_twist_joy teleop.launch
 ```
 
-## [Wii Remote](#wii-remote)
+### [Wii Remote](#wii-remote)
 
 **[Remote PC]** Connect Wii remote to the remote PC via Bluetooth.
 
@@ -118,16 +119,16 @@ $ rosrun wiimote wiimote_node
 $ rosrun wiimote teleop_wiimote
 ```
 
-## [Nunchuk](#nunchuk)
+### [Nunchuk](#nunchuk)
 
 (TODO)
 
-## [Android App](#android-app)
+### [Android App](#android-app)
 
 Download [ROS Teleop][ros-teleop] and run the application.
 
 
-## [LEAP Motion](#leap-motion)
+### [LEAP Motion](#leap-motion)
 
 **[Remote PC]** Connect LEAP motion to the remote PC via Bluetooth.
 
@@ -148,7 +149,7 @@ $ git clone git@github.com:warp1337/rosleapmotion.git
 $ rosrun leap_motion sender.py
 ```
 
-## [Myo](#myo)
+### [Myo](#myo)
 
 (TODO)
 

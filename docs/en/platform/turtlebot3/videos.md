@@ -11,11 +11,20 @@ sidebar:
   nav: "turtlebot3"
 ---
 
-<div style="counter-reset: h1 20"></div>
+<div style="counter-reset: h1 17"></div>
 
 # [Videos](#videos)
 
 ## [Videos from Open Source Team](#videos-from-open-source-team)
+
+**[TurtleBot3 47 Reinforcement Learning]**
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WADmP0wzLxs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+**[TurtleBot3 46 Pick and Place Tutorial by TurtleBot3 with OpenManipulator]**
+<iframe width="560" height="315" src="https://www.youtube.com/embed/DLOq8yNcCoE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+**[TurtleBot3 45 TurtleBot3 with OpenManipulator]**
+<iframe width="560" height="315" src="https://www.youtube.com/embed/P82pZsqpBg0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 **[TurtleBot3 44 Automatic Parking Vision]**
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dvpWdrD3bVs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -149,7 +158,7 @@ sidebar:
 **[Turtlebot3 01 Assembling and Example]**
 <iframe width="560" height="315" src="https://www.youtube.com/embed/o9d7NVC0A1Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-## [Videos from ROBOTIS Channel](#video-from-robotis-channel)
+## [Videos from ROBOTIS Channel](#videos-from-robotis-channel)
 
 **[TurtleBot3 AutoRace @RobotWorld 2017 R-BIZ Challenge]**
 <iframe width="560" height="315" src="https://www.youtube.com/embed/DWDBAHHQi_k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>

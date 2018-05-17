@@ -11,13 +11,15 @@ sidebar:
   nav: "turtlebot3"
 ---
 
-<div style="counter-reset: h1 4"></div>
+<div style="counter-reset: h1 6"></div>
+<div style="counter-reset: h2 3"></div>
 
-# [Hardware Setup](#hardware-setup)
+
+## [Hardware Setup](#hardware-setup)
 
 ![](/assets/images/platform/turtlebot3/hardware_setup/turtlebot3_models.png)
 
-## [Main Components](#main-components)
+### [Main Components](#main-components)
 
 ![](/assets/images/platform/turtlebot3/hardware_setup/turtlebot3_burger_components.png)
 
@@ -25,11 +27,11 @@ sidebar:
 
 ![](/assets/images/platform/turtlebot3/hardware_setup/turtlebot3_waffle_pi_components.png)
 
-## [Part List](#part-list)
+### [Part List](#part-list)
 
 TurtleBot3 has two different models: `Burger`, `Waffle` and `Waffle Pi`. The following list shows their components. The big differences between two models are the Motor, the SBC(Single Board Computer) and the Sensors.
 
-### [Chassis Parts](#chassis-parts)
+#### [Chassis Parts](#chassis-parts)
 
 | Part Name             | Burger | Waffle | Waffle Pi |
 | :-------------------- | :----: | :----: | :-------: |
@@ -42,14 +44,14 @@ TurtleBot3 has two different models: `Burger`, `Waffle` and `Waffle Pi`. The fol
 | Ball Caster           | 1      | 2      | 2         |
 | Camera Bracket        | 0      | 0      | 1         |
 
-### [Motor](#motor)
+#### [Motor](#motor)
 
 | Part Name                | Burger | Waffle | Waffle Pi |
 | :----------------------- | :----: | :----: | :-------: |
 | DYNAMIXEL (XL430-W250-T) | 2      | 0      | 0         |
 | DYNAMIXEL (XM430-W210-T) | 0      | 2      | 2         |
 
-### [Board](#board)
+#### [Board](#board)
 
 | Part Name      | Burger | Waffle | Waffle Pi |
 | :------------- | :----: | :----: | :-------: |
@@ -58,14 +60,14 @@ TurtleBot3 has two different models: `Burger`, `Waffle` and `Waffle Pi`. The fol
 | Intel® Joule™  | 0      | 1      | 0         |
 | USB2LDS        | 1      | 1      | 1         |
 
-### [Remote Controller](#remote-controller)
+#### [Remote Controller](#remote-controller)
 
 | Part Name                     | Burger | Waffle | Waffle Pi |
 | :---------------------------- | :----: | :----: | :-------: |
 | BT-410 Set (Bluetooth 4, BLE) | 0      | 0      | 2         |
 | RC-100B (Remote Controller)   | 0      | 0      | 1         |
 
-### [Sensor](#sensor)
+#### [Sensor](#sensor)
 
 | Part Name                       | Burger | Waffle | Waffle Pi |
 | :------------------------------ | :----: | :----: | :-------: |
@@ -73,13 +75,13 @@ TurtleBot3 has two different models: `Burger`, `Waffle` and `Waffle Pi`. The fol
 | Intel® Realsense™ R200          | 0      | 1      | 0         |
 | Raspberry Pi Camera Module v2.1 | 0      | 0      | 1         |
 
-### [Memory](#memory)
+#### [Memory](#memory)
 
 | Part Name    | Burger | Waffle | Waffle Pi |
 | :----------- | :----: | :----: | :-------: |
 | MicroSD Card | 1      | 0      | 1         |
 
-### [Cable](cable)
+#### [Cable](#cable)
 
 | Part Name                     | Burger | Waffle | Waffle Pi |
 | :---------------------------- | :----: | :----: | :-------: |
@@ -90,7 +92,7 @@ TurtleBot3 has two different models: `Burger`, `Waffle` and `Waffle Pi`. The fol
 | USB Cable                     | 2      | 2      | 2         |
 | Camera Cable                  | 0      | 0      | 1         |
 
-### [Power](power)
+#### [Power](#power)
 
 | Part Name                   | Burger | Waffle | Waffle Pi |
 | :-------------------------- | :----: | :----: | :-------: |
@@ -99,7 +101,7 @@ TurtleBot3 has two different models: `Burger`, `Waffle` and `Waffle Pi`. The fol
 | LIPO Battery 11.1V 1,800mAh | 1      | 1      | 1         |
 | LIPO Battery Charger        | 1      | 1      | 1         |
 
-### [Tools](tools)
+#### [Tools](#tools)
 
 | Part Name            | Burger | Waffle | Waffle Pi |
 | :------------------- | :----: | :----: | :-------: |
@@ -107,7 +109,7 @@ TurtleBot3 has two different models: `Burger`, `Waffle` and `Waffle Pi`. The fol
 | Rivet tool           | 1      | 1      | 1         |
 | USB3.0 HUB           | 0      | 1      | 0         |
 
-### [Miscellaneous](miscellaneous)
+#### [Miscellaneous](#miscellaneous)
 
 | Part Name       | Burger | Waffle | Waffle Pi |
 | :-------------- | :----: | :----: | :-------: |
@@ -129,9 +131,7 @@ TurtleBot3 has two different models: `Burger`, `Waffle` and `Waffle Pi`. The fol
 | Bracket         | 5      | 8      | 6         |
 | Adapter Plate   | 1      | 1      | 1         |
 
-
-
-## [Assembly Manual](#assembly-manual)
+### [Assembly Manual](#assembly-manual)
 
 TurtleBots3 is delivered as unassembled parts in the boxes. Follow the instructions to assemble TurtleBot3.
 
@@ -139,22 +139,22 @@ TurtleBots3 is delivered as unassembled parts in the boxes. Follow the instructi
 - `Download PDF` [Assembly manual for TurtleBot3 Waffle](http://www.robotis.com/service/download.php?no=749)
 - `Download PDF` [Assembly manual for TurtleBot3 Waffle Pi](http://www.robotis.com/service/download.php?no=750)
 
-## [Assembly Video](#assembly-video)
+### [Assembly Video](#assembly-video)
 
 If it is difficult to assemble with the assembly manual, please refer to the following assembly video.
 
 
-### [TurtleBot3 Burger](turtlebot3-burger)
+#### [TurtleBot3 Burger](#turtlebot3-burger)
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/rvm-m2ogrLA" frameborder="0" allowfullscreen></iframe>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5D9S_tcenL4" frameborder="0" allowfullscreen></iframe>
 
-### [TurtleBot3 Waffle](turtlebot3-waffle)
+#### [TurtleBot3 Waffle](#turtlebot3-waffle)
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/1nTMyr4ybi0" frameborder="0" allowfullscreen></iframe>
 
-## [Open Source Hardware](#open-source-hardware)
+### [Open Source Hardware](#open-source-hardware)
 
 Core components of Turtlebot3 are the followings: Chassis, Motors, Wheels, OpenCR1.0, SBC Computer, Sensor and Battery. The chassis are Waffle Plates that holds other components. The Waffle Plate plays an important role as a chassis although its size is as small as your palm. Waffle plate is manufactured with injection mold method to lower the manufacturing cost. However, the CAD data of waffle plate for 3D printing is also available via [Onshape]. Turtlebot3 Burger is a Two-wheeled differential drive type platform, but it is customizable structurally and mechanically in many ways: Cars, Bikes, Trailers and so on.
 
@@ -163,7 +163,6 @@ The CAD data is released to the [Onshape], which is a full-cloud 3D CAD editor. 
 - [TurtleBot3 Burger 3D Model](http://www.robotis.com/service/download.php?no=676)
 - [TurtleBot3 Waffle 3D Model](http://www.robotis.com/service/download.php?no=677)
 - [TurtleBot3 Waffle Pi 3D Model](http://www.robotis.com/service/download.php?no=678)
-
 
 [Onshape]: https://cad.onshape.com/documents?nodeId=3&resourceType=filter&column=promotedAt&order=desc&viewMode=0&q=turtlebot3
 [Open Robotics]: http://www.osrfoundation.org/

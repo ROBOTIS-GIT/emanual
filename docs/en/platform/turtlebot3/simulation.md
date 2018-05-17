@@ -11,17 +11,17 @@ sidebar:
   nav: "turtlebot3"
 ---
 
-<div style="counter-reset: h1 13"></div>
+<div style="counter-reset: h1 10"></div>
 
 # [Simulation](#simulation)
 
 ![](/assets/images/platform/turtlebot3/software/remote_pc_and_turtlebot.png)
 
-**WARNING:** The contents in this chapter corresponds to the `Remote PC` (your desktop or laptop PC) which will control TurtleBot3. Do **NOT** apply this instruction to your TurtleBot3.
-{: .notice--warning}
-
 **NOTE:** This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 {: .notice--info}
+
+**WARNING:** The contents in this chapter corresponds to the `Remote PC` (your desktop or laptop PC) which will control TurtleBot3. Do **NOT** apply this instruction to your TurtleBot3.
+{: .notice--warning}
 
 ## [TurtleBot3 Fake Node Implementation](#turtlebot3-fake-node-implementation)
 
