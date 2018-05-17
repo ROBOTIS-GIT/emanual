@@ -70,6 +70,11 @@ sidebar:
 - 2018-02-06
 <iframe width="560" height="315" src="https://www.youtube.com/embed/r3jviQvMP7Q" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
+**[Demo video of KAIST 'Introduction to Robotics' in 2017 Fall]**
+- by [KAIST](https://www.youtube.com/channel/UCFTzrl2oiXQulqzAGFi9zpA)
+- 2018-01-10
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ZsoKUnk4P9k" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 **[TurtleBot3 Voice Teleop Testing]**
 - by [Arif Rahman](https://www.youtube.com/user/arixrobotics)
 - 2017-11-30
