@@ -9485,8 +9485,6 @@ rh_p12_rn:
       url: /platform/rh_p12_rn/gazebo/#run-simulator
       urlkr: /platform/rh_p12_rn/gazebo/#시뮬레이터-실행
 
-
-
 robothand_rx28:
   - titlekr: "개요"
     urlkr: /platform/robothand_rx28/#개요
@@ -9740,12 +9738,12 @@ turtlebot3:
     - title: "TurtleBot3 Collaboration Project"
       url: /platform/turtlebot3/overview/#turtlebot3-collaboration-project
   - title: "Notices"
-    url: /platform/turtlebot3/notice/#notices
+    url: /platform/turtlebot3/notices/#notices
     children:
     - title: "Publish"
-      url: /platform/turtlebot3/notice/#publish
+      url: /platform/turtlebot3/notices/#publish
     - title: "News"
-      url: /platform/turtlebot3/notice/#news
+      url: /platform/turtlebot3/notices/#news
   - title: "Features"
     url: /platform/turtlebot3/features/#features
     children:
@@ -9788,8 +9786,8 @@ turtlebot3:
         url: /platform/turtlebot3/specifications/#sbcs
       - title: "Sensors"
         url: /platform/turtlebot3/specifications/#sensors
-      - title: "Control Board"
-        url: /platform/turtlebot3/specifications/#control-board
+      - title: "Embedded Board"
+        url: /platform/turtlebot3/specifications/#embedded-board
       - title: "Actuators"
         url: /platform/turtlebot3/specifications/#actuators
   - title: "Getting Started"
@@ -9826,13 +9824,13 @@ turtlebot3:
       children:
       - title: "Raspberry Pi 3"
         url: /platform/turtlebot3/raspberry_pi_3_setup/#raspberry-pi-3-setup
-      - title: "Intel Joule"
+      - title: "Intel Joule 570x"
         url: /platform/turtlebot3/joule_setup/#joule-setup
     - title: "OpenCR Setup"
       url: /platform/turtlebot3/opencr_setup/#opencr-setup
       children:
-      - title: "OpenCR1.0 Firmware Upload for TB3"
-        url: /platform/turtlebot3/opencr_setup/#opencr10-firmware-upload-for-tb3
+      - title: "OpenCR Firmware Upload for TB3"
+        url: /platform/turtlebot3/opencr_setup/#opencr-firmware-upload-for-tb3
       - title: "Basic Operation"
         url: /platform/turtlebot3/opencr_setup/#basic-operation
     - title: "Hardware Setup"
@@ -9853,15 +9851,14 @@ turtlebot3:
   - title: "Bringup"
     url: /platform/turtlebot3/bringup/#bringup
     children:
-    - title: "Bringup TurtleBot3"
-      url: /platform/turtlebot3/bringup/#bringup-turtlebot3
-      children:
-      - title: "TurtleBot3 Burger"
-        url: /platform/turtlebot3/bringup/#turtlebot3-burger
-      - title: "TurtleBot3 Waffle"
-        url: /platform/turtlebot3/bringup/#turtlebot3-waffle
-      - title: "TurtleBot3 Waffle Pi"
-        url: /platform/turtlebot3/bringup/#turtlebot3-waffle-pi
+    - title: "Run roscore"
+      url: /platform/turtlebot3/bringup/#run-roscore
+    - title: "Bringup a TurtleBot3 Burger"
+      url: /platform/turtlebot3/bringup/#bringup-a-turtlebot3-burger
+    - title: "Bringup a TurtleBot3 Waffle"
+      url: /platform/turtlebot3/bringup/#bringup-a-turtlebot3-waffle
+    - title: "Bringup a TurtleBot3 Waffle Pi"
+      url: /platform/turtlebot3/bringup/#bringup-a-turtlebot3-waffle-pi
   - title: "Basic Operation"
     url: /platform/turtlebot3/basic_operation/#basic-operation
     children:
@@ -10020,12 +10017,12 @@ turtlebot3:
     - title: "Books"
       url: /platform/turtlebot3/learn/#books
   - title: "Videos"
-    url: /platform/turtlebot3/video/#videos
+    url: /platform/turtlebot3/videos/#videos
     children:
-    - title: "Video from Open Source Team"
-      url: /platform/turtlebot3/video/#video-from-open-source-team
-    - title: "Video from ROBOTIS Channel"
-      url: /platform/turtlebot3/video/#video-from-robotis-channel
+    - title: "Videos from Open Source Team"
+      url: /platform/turtlebot3/videos/#videos-from-open-source-team
+    - title: "Videos from ROBOTIS Channel"
+      url: /platform/turtlebot3/videos/#videos-from-robotis-channel
   - title: "Projects"
     url: /platform/turtlebot3/projects/#projects
   - title: "Challenges"
