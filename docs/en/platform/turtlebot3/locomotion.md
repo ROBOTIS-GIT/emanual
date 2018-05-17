@@ -1,11 +1,11 @@
 ---
 layout: archive
 lang: en
-ref: friends
+ref: locomotion
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/turtlebot3/friends/
+permalink: /docs/en/platform/turtlebot3/locomotion/
 sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
@@ -13,13 +13,13 @@ sidebar:
 
 <div style="counter-reset: h1 18"></div>
 
-# [Friends](#friends)
+# [Locomotion](#locomotion)
 
 In the video, watch how TurtleBot3 can be assembled and reassembled with a few additional parts. The waffle plate which is the biggest part among TurtleBot3 components can be assembled in various sizes and shapes, thanks to its diverse holes for bolts and nuts.
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/o9d7NVC0A1Y" frameborder="0" allowfullscreen></iframe>
 
-With this openended component, handful of TurtleBot3 friends with various characteristics could be built. You can create a totally new robot that is never seen before.
+With this openended component, handful of TurtleBot3 friends with various characteristics could be built. You can create a totally new robot that is never seen before. Create a variety of robots based on open hardware and try out the new Locomotion.
 
 TurtleBot3 Friends List:
 

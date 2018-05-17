@@ -9968,6 +9968,33 @@ turtlebot3:
       url: /platform/turtlebot3/autonomous_driving/#autorace-rbiz-challenge-2018
   - title: "Machine Learning"
     url: /platform/turtlebot3/machine_learning/#machine-learning
+  - title: "Locomotion"
+    url: /platform/turtlebot3/locomotion/#locomotion
+    children:
+    - title: "TurtleBot3 Friends: Car"
+      url: /platform/turtlebot3/locomotion/#turtlebot3-friends-car
+    - title: "TurtleBot3 Friends: OpenManipulator Chain"
+      url: /platform/turtlebot3/locomotion/#turtlebot3-friends-openmanipulator-chain
+    - title: "TurtleBot3 Friends: Segway"
+      url: /platform/turtlebot3/locomotion/#turtlebot3-friends-segway
+    - title: "TurtleBot3 Friends: Conveyor"
+      url: /platform/turtlebot3/locomotion/#turtlebot3-friends-conveyor
+    - title: "TurtleBot3 Friends: Monster"
+      url: /platform/turtlebot3/locomotion/#turtlebot3-friends-monster
+    - title: "TurtleBot3 Friends: Tank"
+      url: /platform/turtlebot3/locomotion/#turtlebot3-friends-tank
+    - title: "TurtleBot3 Friends: Omni"
+      url: /platform/turtlebot3/locomotion/#turtlebot3-friends-omni
+    - title: "TurtleBot3 Friends: Mecanum"
+      url: /platform/turtlebot3/locomotion/#turtlebot3-friends-mecanum
+    - title: "TurtleBot3 Friends: Bike"
+      url: /platform/turtlebot3/locomotion/#turtlebot3-friends-bike
+    - title: "TurtleBot3 Friends: Road Train"
+      url: /platform/turtlebot3/locomotion/#turtlebot3-friends-road-train
+    - title: "TurtleBot3 Friends: Real TurtleBot"
+      url: /platform/turtlebot3/locomotion/#turtlebot3-friends-real-turtlebot
+    - title: "TurtleBot3 Friends: Carrier"
+      url: /platform/turtlebot3/locomotion/#turtlebot3-friends-carrier
   - title: "Applications"
     url: /platform/turtlebot3/applications/#applications
     children:
@@ -9979,33 +10006,6 @@ turtlebot3:
       url: /platform/turtlebot3/applications/#automatic-parking
     - title: "Automatic Parking Vision"
       url: /platform/turtlebot3/applications/#automatic-parking-vision
-  - title: "Friends"
-    url: /platform/turtlebot3/friends/#friends
-    children:
-    - title: "TurtleBot3 Friends: Car"
-      url: /platform/turtlebot3/friends/#turtlebot3-friends-car
-    - title: "TurtleBot3 Friends: OpenManipulator Chain"
-      url: /platform/turtlebot3/friends/#turtlebot3-friends-openmanipulator-chain
-    - title: "TurtleBot3 Friends: Segway"
-      url: /platform/turtlebot3/friends/#turtlebot3-friends-segway
-    - title: "TurtleBot3 Friends: Conveyor"
-      url: /platform/turtlebot3/friends/#turtlebot3-friends-conveyor
-    - title: "TurtleBot3 Friends: Monster"
-      url: /platform/turtlebot3/friends/#turtlebot3-friends-monster
-    - title: "TurtleBot3 Friends: Tank"
-      url: /platform/turtlebot3/friends/#turtlebot3-friends-tank
-    - title: "TurtleBot3 Friends: Omni"
-      url: /platform/turtlebot3/friends/#turtlebot3-friends-omni
-    - title: "TurtleBot3 Friends: Mecanum"
-      url: /platform/turtlebot3/friends/#turtlebot3-friends-mecanum
-    - title: "TurtleBot3 Friends: Bike"
-      url: /platform/turtlebot3/friends/#turtlebot3-friends-bike
-    - title: "TurtleBot3 Friends: Road Train"
-      url: /platform/turtlebot3/friends/#turtlebot3-friends-road-train
-    - title: "TurtleBot3 Friends: Real TurtleBot"
-      url: /platform/turtlebot3/friends/#turtlebot3-friends-real-turtlebot
-    - title: "TurtleBot3 Friends: Carrier"
-      url: /platform/turtlebot3/friends/#turtlebot3-friends-carrier
   - title: "Learn"
     url: /platform/turtlebot3/learn/#learn
     children:
@@ -10028,13 +10028,13 @@ turtlebot3:
       url: /platform/turtlebot3/video/#video-from-robotis-channel
   - title: "Projects"
     url: /platform/turtlebot3/projects/#projects
-  - title: "Events"
-    url: /platform/turtlebot3/events/#events
+  - title: "Challenges"
+    url: /platform/turtlebot3/challenges/#challenges
     children:
     - title: "Online Competition on ROS Development Studio"
-      url: /platform/turtlebot3/competition/#online-competition-on-ros-development-studio
+      url: /platform/turtlebot3/challenges/#online-competition-on-ros-development-studio
     - title: "Offline Competition"
-      url: /platform/turtlebot3/competition/#offline-competition
+      url: /platform/turtlebot3/challenges/#offline-competition
   - title: "Appendixes"
     url: /platform/turtlebot3/appendixes/#appendixes
     children:
