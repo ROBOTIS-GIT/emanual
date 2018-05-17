@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: turtlebot3_applications
+ref: applications
 read_time: true
 share: true
 author_profile: false

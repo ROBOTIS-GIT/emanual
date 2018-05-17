@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: turtlebot3_appendix_dynamixel
+ref: appendix_dynamixel
 read_time: true
 share: true
 author_profile: false

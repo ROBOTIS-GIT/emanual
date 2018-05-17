@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: turtlebot3_getting_started
+ref: getting_started
 read_time: true
 share: true
 author_profile: false

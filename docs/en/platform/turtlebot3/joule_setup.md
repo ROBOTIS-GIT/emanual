@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: turtlebot3_joule_setup
+ref: joule_setup
 read_time: true
 share: true
 author_profile: false

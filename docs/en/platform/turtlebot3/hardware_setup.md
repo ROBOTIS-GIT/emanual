@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: turtlebot3_hardware_setup
+ref: hardware_setup
 read_time: true
 share: true
 author_profile: false

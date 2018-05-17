@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: turtlebot3_appendix_realsense
+ref: appendix_realsense
 read_time: true
 share: true
 author_profile: false

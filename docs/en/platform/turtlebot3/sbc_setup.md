@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: turtlebot3_sbc_setup
+ref: sbc_setup
 read_time: true
 share: true
 author_profile: false

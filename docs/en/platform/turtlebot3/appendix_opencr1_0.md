@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: turtlebot3_appendix_opencr1_0
+ref: appendix_opencr1_0
 read_time: true
 share: true
 author_profile: false

@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: turtlebot3_pc_setup
+ref: pc_setup
 read_time: true
 share: true
 author_profile: false

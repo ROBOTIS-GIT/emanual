@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: turtlebot3_basic_examples
+ref: basic_examples
 read_time: true
 share: true
 author_profile: false

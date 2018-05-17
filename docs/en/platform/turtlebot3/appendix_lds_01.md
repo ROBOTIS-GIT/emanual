@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: turtlebot3_appendix_lds_01
+ref: appendix_lds_01
 read_time: true
 share: true
 author_profile: false

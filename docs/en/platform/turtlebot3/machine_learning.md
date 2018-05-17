@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: turtlebot3_machine_learning
+ref: machine_learning
 read_time: true
 share: true
 author_profile: false

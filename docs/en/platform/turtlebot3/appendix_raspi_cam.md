@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: turtlebot3_appendix_raspi_cam
+ref: appendix_raspi_cam
 read_time: true
 share: true
 author_profile: false

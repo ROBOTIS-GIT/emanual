@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: turtlebot3_autonomous_driving
+ref: autonomous_driving
 read_time: true
 share: true
 author_profile: false

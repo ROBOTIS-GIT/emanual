@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: turtlebot3_additional_sensors
+ref: additional_sensors
 read_time: true
 share: true
 author_profile: false

@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: turtlebot3_raspberry_pi_3_setup
+ref: raspberry_pi_3_setup
 read_time: true
 share: true
 author_profile: false

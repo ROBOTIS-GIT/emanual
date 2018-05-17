@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: turtlebot3_friends
+ref: friends
 read_time: true
 share: true
 author_profile: false
