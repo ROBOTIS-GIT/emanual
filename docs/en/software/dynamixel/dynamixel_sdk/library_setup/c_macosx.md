@@ -58,9 +58,9 @@ sidebar:
 * PC which is being sold recently only comes as 64bit platform.  
   The Makefile is located in the following folder: `[DynamixelSDK folder]/c/build/mac` folder for 64-bit platforms.  
   Please note that if you will be building the 64-bit example source, you should build the 64-bit library.
-
+<!--
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/c/mac/library_file/c6.png)
-
+-->
 * Go to the Makefile's directory located in `[DynamixelSDK folder]/c/build/mac` using $ `cd`.
 
 * To build the library file:  
@@ -68,9 +68,9 @@ sidebar:
   ``` bash
   $ make
   ```
-
+<!--
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/c/mac/library_file/c1.png)
-
+-->
 * If there is an error:  
 
   ``` bash
@@ -82,8 +82,9 @@ sidebar:
   ``` bash
   $ make clean
   ```
-
+<!--
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/c/mac/library_file/c2.png)
+-->
 
 ##### Copy (Install) the Library to the Root Directory
 
@@ -92,9 +93,9 @@ sidebar:
   ``` bash
   $ sudo make install
   ```
-
+<!--
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/c/mac/library_file/c3.png)
-
+-->
 * If there is an error:  
 
   ``` bash
@@ -112,17 +113,17 @@ sidebar:
   ``` bash
   $ sudo make uninstall
   ```
-
+<!--
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/c/mac/library_file/c4.png)
-
+-->
 * To recopy the library file to the root directory:  
 
   ``` bash
   $ sudo make reinstall
   ```
-
+<!--
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/c/mac/library_file/c5.png)
-
+-->
 * You will see the built library file in `[DynamixelSDK folder]/c/build/[linuxXX]/libdxl_mac_c.dylib`
 
 ### [Building and Running the Sample Code](#building-and-running-the-sample-code)
@@ -135,35 +136,36 @@ By doing above, each released Dynamixel SDK have latest library files in `[Dynam
   ``` bash
   $ cd [DynamixelSDK folder]/c/example/protocol1.0/read_write/mac
   ```
-
+<!--
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/c/mac/sample_code/exc4.png)
-
+-->
 * Build the executable file: 
 
   ``` bash
   $ make
   ```
-
+<!--
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/c/mac/sample_code/exc1.png)
-
+-->
 * If there is an error, `$ make clean` then `$ make` again.
 
 * To delete the executable file, `$ make clean`.
-
+<!--
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/c/mac/sample_code/exc2.png)
-
+-->
 * Access the port you will be using to communicate with Dynamixel: 
 
   ``` bash
   $ sudo chmod a+rw /dev/tty.usbserial-xxxx
   ```
-
+<!--
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/c/mac/sample_code/exc3.png)
-
+-->
 * Run the executable file: 
 
   ``` bash
   $ ./read_write
   ```
-
+<!--
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/c/mac/sample_code/exc5.png)
+-->
