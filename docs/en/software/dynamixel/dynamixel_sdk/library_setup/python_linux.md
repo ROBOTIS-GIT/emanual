@@ -34,47 +34,29 @@ sidebar:
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/python/linux/library_file/b1.png)
 
-### [Function Reference](#function-reference)
+### [Building the Library](#building-the-library)
 
-* The function reference file is located in `[DynamixelSDK folder]/python/dynamixel_functions_py/dynamixel_functions.py`
+* Run setup.py by entering following command on the command prompt (`python setup.py install`).
 
-  ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/python/linux/library_file/2.png)
+  ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/python/linux/library_file/py1.png)
 
-  ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/python/linux/library_file/1.png)
+  ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/python/linux/library_file/py3.png)
 
 ### [Building and Running the Sample Code](#building-and-running-the-sample-code)
 
-The Dynamixel SDK example code for Python uses the library files(.so for Linux) built in C language.
+The Dynamixel SDK example code for Python uses the library files built in previous step.
 
-Each released Dynamixel SDK have latest library files in `[DynamixelSDK folder]/c/build/[linuxXX]/dxl_xYY_c.so` which were built by its own source code.
+#### Run Example
 
-#### Build Example
+* Open `python` folder with `Atom`. Modify the settings that is needed for the Dynamixel control. 
 
-* Click `Open Folder...` in `Atom` 
-
-* Open `python` folder.
-
-  ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/python/linux/sample_code/2.png)
-
-* Modify library file path, considering your platform.
-
-  ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/python/linux/sample_code/3.png)
-
-* Adjust the values surrounded with red circle to proper value as shown in the comment.
-
-  ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/python/linux/sample_code/4.png)
+  ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/python/linux/sample_code/py5.png)
 
 
-#### Run example
+* Run `read_write.py` by double click
 
-* Make the port be able to be used
+  ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/python/linux/sample_code/py2.png)
 
-  ```bash
-  $ sudo chmod a+rw /dev/ttyUSB0
-  ```
+* Or run it manually through command prompt, using `cd`. 
 
-  ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/python/linux/sample_code/6.png)
-
-* Go to the folder `[DynamixelSDK folder]/python/protocol1_0/`, using `cd`, then run example code by typing `python read_write.py`. 
-
-  ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/python/linux/sample_code/7.png)
+  ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/python/linux/sample_code/py4.png)
