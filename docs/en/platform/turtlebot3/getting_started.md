@@ -19,7 +19,7 @@ This document is for users who are new to TurtleBot3. It is an enormous amount o
 ## [About TurtleBot3](#about-turtlebot3)
 First of all, acquire relevant information from the [Overview][Overview], [Notices][Notices], [Features][Features], and [Specifications][Specifications] pages to get an overall understanding of TurtleBot3.
 
-## [First steps for using TurtleBot3](#First-steps-for-using-turtlebot3)
+## [First steps for using TurtleBot3](#first-steps-for-using-turtlebot3)
 When you have finished understanding TurtleBot3 above, here are the software and hardware setups. Be aware that it is a time-saver to set up the SBC and your PC's software settings first, rather than assembling the robot. It is recommended that you proceed in the following order.
 
 1. [PC Setup][PC Setup]: Install Linux, ROS and application packages for TurtleBot3 on your Remote PC.

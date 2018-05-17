@@ -13,7 +13,7 @@ sidebar:
 
 <div style="counter-reset: h1 21"></div>
 
-# [Appendix #OpenCR1.0](#appendix-opencr10)
+# [OpenCR1.0](#appendix-opencr10)
 
 ![](/assets/images/platform/turtlebot3/appendix_opencr/opencr.png)
 
@@ -46,7 +46,7 @@ OpenCR1.0 will be the best solution for implementing your embedded control desig
 | Dimensions               | 105(W) X 75(D) mm                                                                                  |
 | Mass                     | 60g                                                                                                |
 
-`Note` Hot swap power switch between "shore power"(12V, 5A SMPS) and "mobile power"(battery) from OpenCR1.0 board enables UPS(Uninterrupted Power Supply) feature.
+**NOTE:** Hot swap power switch between "shore power"(12V, 5A SMPS) and "mobile power"(battery) from OpenCR1.0 board enables UPS(Uninterrupted Power Supply) feature.
 {: .notice}
 
 ## [User Guide](#user-guide)

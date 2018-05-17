@@ -17,7 +17,7 @@ sidebar:
 
 ![](/assets/images/platform/turtlebot3/features/features_with_icons.png)
 
-## [World's Most Popular ROS Platform](#world/'s-most-popular-ros-platform)
+## [World's Most Popular ROS Platform](#worlds-most-popular-ros-platform)
 
 `TurtleBot` is the most popular open source robot for education and research. The new generation `TurtleBot3` is a `small`, `low cost`, `fully programmable`, `ROS based mobile robot`. It is intended to be used for education, research, hobby and product prototyping.
 

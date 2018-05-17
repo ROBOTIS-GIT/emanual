@@ -15,20 +15,20 @@ sidebar:
 
 # [Basic Operation](#basic-operation)
 
-## [Topic Monitor](topic-monitor)
+## [Topic Monitor](#topic-monitor)
 [Topic Monitor]
 
-## [Teleoperation](teleoperation)
+## [Teleoperation](#teleoperation)
 [Teleoperation]
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/Z4s18hlazb4" frameborder="0" allowfullscreen></iframe>
 
-## [Basic Examples](basic-examples)
+## [Basic Examples](#basic-examples)
 [Basic Examples]
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Xg1pKFQY5p4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-## [Additional Sensors](additional-sensors)
+## [Additional Sensors](#additional-sensors)
 [Additional Sensors]
 
 [Topic Monitor]: /docs/en/platform/turtlebot3/topic_monitor/

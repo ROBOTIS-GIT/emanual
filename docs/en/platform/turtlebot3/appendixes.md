@@ -15,19 +15,19 @@ sidebar:
 
 # [Appendixes](#appendixes)
 
-## [Appendix #DYNAMIXEL](#appendix-dynamixel)
+## [DYNAMIXEL](#dynamixel)
 [DYNAMIXEL]
 
-## [Appendix #OpenCR1.0](#appendix-opencr10)
+## [OpenCR1.0](#opencr10)
 [OpenCR]
 
-## [Appendix #LDS-01](#appendix-lds01)
+## [LDS-01](#lds01)
 [LDS]
 
-## [Appendix #RealSense™](#appendix-realsense)
+## [RealSense™](#realsense)
 [RealSense]
 
-## [Appendix #Raspberry Pi Camera](#appendix-raspberry-pi-camera)
+## [Raspberry Pi Camera](#raspberry-pi-camera)
 [Raspberry Pi Camera]
 
 [DYNAMIXEL]: /docs/en/platform/turtlebot3/appendix_dynamixel/

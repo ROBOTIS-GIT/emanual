@@ -15,7 +15,7 @@ sidebar:
 
 # [OpenSource and Licenses](#opensource-licenses)
 
-## [OpenSource Software](#software)
+## [OpenSource Software](#opensource-software)
 
 + TurtleBot3 Software
   - [TurtleBot3](https://github.com/ROBOTIS-GIT/turtlebot3)
@@ -34,7 +34,7 @@ sidebar:
   - [LDS Driver](https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver)
   - [OpenManipulator](https://github.com/ROBOTIS-GIT/open_manipulator)
 
-## [OpenSource Hardware](#hardware)
+## [OpenSource Hardware](#opensource-hardware)
 
 + Circuit and PCB Gerber
   - [OpenCR1.0](https://github.com/ROBOTIS-GIT/OpenCR-Hardware)
@@ -62,16 +62,14 @@ sidebar:
   - [OpenManiapulator SCARA](http://www.robotis.com/service/download.php?no=691)
   - [OpenManiapulator Link](http://www.robotis.com/service/download.php?no=692)
 
-## [Licenses](#licenses)
-
-### [Software License](#software-license)
+## [Software License](#software-license)
 Main software is released under the [Apache license 2.0][apache_v2].
 However, some of the sources are under the licenses [3-Clause BSD License][bsd3] or [GPLv3][gpl_v3].
 
-### [Hardware License](#hardware-license)
+## [Hardware License](#hardware-license)
 TurtleBot3 is an open source hardware project as described by the [Open Source Hardware Statement of Principles and Definition v1.0][oshw].
 
-### [Documents License](#documents-license)
+## [Documents License](#documents-license)
 Documents are released under the [CC BY 4.0][ccl_v4].
 
 [apache_v2]: https://www.apache.org/licenses/LICENSE-2.0

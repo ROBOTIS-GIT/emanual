@@ -13,7 +13,7 @@ sidebar:
 
 <div style="counter-reset: h1 24"></div>
 
-# [Appendix #RealSense™](#appendix-realsense)
+# [RealSense™](#appendix-realsense)
 
 ![](/assets/images/platform/turtlebot3/appendix_realsense/realsense_r200.png)
 

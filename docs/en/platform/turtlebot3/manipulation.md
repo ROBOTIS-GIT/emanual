@@ -15,10 +15,10 @@ sidebar:
 
 # [Manipulation](#manipulation)
 
-`Note` This instruction was tested on `Ubuntu 16.04`, `Linux Mint 18.1` and `ROS Kinetic Kame`.
+**NOTE:** This instruction was tested on `Ubuntu 16.04`, `Linux Mint 18.1` and `ROS Kinetic Kame`.
 {: .notice--info}
 
-`Note` If you want more specfic information about OpenManipulator, please refer to the [OpenManipulator e-Manual](/docs/en/platform/openmanipulator/)
+**NOTE:** If you want more specfic information about OpenManipulator, please refer to the [OpenManipulator e-Manual](/docs/en/platform/openmanipulator/)
 {: .notice--info}
 
 ![](/assets/images/platform/turtlebot3/manipulation/tb3_with_opm_logo.png)
@@ -51,7 +51,7 @@ If catkin_make command is completed without any errors, the preparation for Open
 
 Load a TurtleBot3 Waffle or Waffle Pi with OpenManipulator on RViz.
 
-**Tip :** TB3_MODEL =  `waffle`, `waffle_pi` 
+**TIP:** TB3_MODEL =  `waffle`, `waffle_pi` 
 {: .notice--info}
 
 ```
@@ -87,7 +87,7 @@ Click `Upload` button to upload the firmware to OpenCR1.0.
 
 ![](/assets/images/platform/turtlebot3/manipulation/upload_core_1.png)
 
-`Note` If error occurs while uploading firmware, go to `Tools` → `Port` and check if correct port is selected. Press `Reset` button on the OpenCR1.0 and try to upload the firmware again.
+**NOTE:** If error occurs while uploading firmware, go to `Tools` → `Port` and check if correct port is selected. Press `Reset` button on the OpenCR1.0 and try to upload the firmware again.
 {: .notice--info}
   
 When firmware upload is completed, `jump_to_fw` text string will be printed on the screen.
@@ -100,7 +100,7 @@ Bringup TurtleBot3 with OpenManipulator
 
 And launch open_manipulator_with_tb3_model
 
-  **Tip :** TB3_MODEL =  `waffle`, `waffle_pi` 
+  **TIP:** TB3_MODEL =  `waffle`, `waffle_pi` 
   {: .notice--info}
 
   ```bash
@@ -112,7 +112,7 @@ And launch open_manipulator_with_tb3_model
 
 ![](/assets/images/platform/turtlebot3/manipulation/open_manipulator_slam.png)
 
-**Tip :** TB3_MODEL =  `waffle`, `waffle_pi` 
+**TIP:** TB3_MODEL =  `waffle`, `waffle_pi` 
 {: .notice--info}
 
 ```bash
@@ -124,7 +124,7 @@ $ roslaunch open_manipulator_with_tb3_tools open_manipulator_with_tb3_slam.launc
 
 ![](/assets/images/platform/turtlebot3/manipulation/open_manipulator_navigation.png)
 
-**Tip :** TB3_MODEL =  `waffle`, `waffle_pi` 
+**TIP:** TB3_MODEL =  `waffle`, `waffle_pi` 
 {: .notice--info}
 
 ```bash
@@ -144,7 +144,7 @@ $ roslaunch open_manipulator_perception ar_pose.launch
 
 In order to run MoveIt!, open a new terminal window and enter below command
 
-**Tip :** TB3_MODEL =  `waffle`, `waffle_pi` 
+**TIP:** TB3_MODEL =  `waffle`, `waffle_pi` 
 {: .notice--info}
 
 ```bash
@@ -175,7 +175,7 @@ We provide example for mobile manipulation as pick and place. This example is la
 
 User can modified this node to apply their environments. 
 
-**Tip :** TB3_MODEL =  `waffle`, `waffle_pi` 
+**TIP:** TB3_MODEL =  `waffle`, `waffle_pi` 
 {: .notice--info}
 
 ```bash
@@ -188,7 +188,7 @@ $ roslaunch open_manipulator_with_tb3_tools open_manipulator_with_tb3_controller
 
 Load an TurtleBot3 with OpenManipulator on Gazebo simulator and click `Play` button
 
-**Tip :** TB3_MODEL =  `waffle`, `waffle_pi` 
+**TIP:** TB3_MODEL =  `waffle`, `waffle_pi` 
 {: .notice--info}
 
 ```bash

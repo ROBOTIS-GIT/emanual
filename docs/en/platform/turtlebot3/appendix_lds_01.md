@@ -13,7 +13,7 @@ sidebar:
 
 <div style="counter-reset: h1 23"></div>
 
-# [Appendix #LDS-01](#appendix-lds01)
+# [LDS-01](#appendix-lds01)
 
 ## [Overview](#overview)
 
@@ -88,7 +88,7 @@ The following link contains information about basic performance, measurement per
 
 Here is the detail specification document : [PDF](/assets/docs/LDS_Basic_Specification.pdf)
 
-`Note` The 360 Laser Distance Sensor LDS-01 for TurtleBot3 uses molex 51021-0800 and 53048-0810 instead of the basic housing and connector.
+**NOTE:** The 360 Laser Distance Sensor LDS-01 for TurtleBot3 uses molex 51021-0800 and 53048-0810 instead of the basic housing and connector.
 {: .notice--info}
 
 - [for LDS] [Molex 51021-0800](http://www.molex.com/pdm_docs/sd/510210800_sd.pdf)
@@ -105,7 +105,7 @@ The LDS-01 is used for TurtleBot3 Burger, Waffle and Waffle Pi models.
 
 We are offering [ROS package for LSD](http://wiki.ros.org/hls_lfcd_lds_driver). The hls_lfcd_lds_driver package provides a driver for "HLS(Hitachi-LG Sensor) LFCD LDS(Laser Distance Sensor)".
 
-`Note` Due to firmware update (after buy it on Oct. 2017), the sensor is running directly when power in on.
+**NOTE:** Due to firmware update (after buy it on Oct. 2017), the sensor is running directly when power in on.
 {: .notice--info}
 
 ### Installation

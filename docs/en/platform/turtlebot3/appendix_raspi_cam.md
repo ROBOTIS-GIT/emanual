@@ -13,7 +13,7 @@ sidebar:
 
 <div style="counter-reset: h1 25"></div>
 
-# [Appendix #Raspberry Pi Camera](#appendix-raspberry-pi-camera)
+# [Raspberry Pi Camera](#appendix-raspberry-pi-camera)
 
 ![](/assets/images/platform/turtlebot3/appendix_raspi_cam/Pi-Camera-front.jpg)
 
