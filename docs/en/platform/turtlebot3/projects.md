@@ -17,7 +17,14 @@ sidebar:
 
 ---
 
-**[TurtleBot3 Episode #1: Ball Tracking]**
+**[[Robotclub] TB3 (Episode 2): Track and push ball to goal]**
+- by [Robotclub Malaysia](https://www.youtube.com/channel/UCLvvXbwPkostryBQt4MIbUw)
+- 2018-05-17
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nCL6YlAlYm4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+---
+
+**[[Robotclub] TB3 (Episode 1) : Ball Tracking]**
 - by [Robotclub Malaysia](https://www.youtube.com/channel/UCLvvXbwPkostryBQt4MIbUw)
 - 2018-05-07
 <iframe width="560" height="315" src="https://www.youtube.com/embed/RgOvX3rUsI4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
