@@ -115,7 +115,7 @@ The field that defines the type of instruction.
 | 0x05  |    Action     |                      Instruction that executes the Packet that was registered beforehand using Reg Write                       |
 | 0x06  | Factory Reset |                       Instruction that resets the Control Table to its initial factory default settings                        |
 | 0x83  |  Sync Write   |                For multiple devices, Instruction to write data on the same Address with the same length at once                |
-| 0x92  |   Bulk Read   |             For multiple devices, Instruction to write data on different Addresses with different lengths at once              |
+| 0x92  |   Bulk Read   |             For multiple devices, Instruction to write data on different Addresses with different lengths at once<br />This command can only be used with MX series.              |
 
 ## [Parameters](#parameters)
 Parameters are used when additional data is required for an instruction.
@@ -379,7 +379,7 @@ This instruction is used to control multiple Dynamixels simultaneously with a si
 {: .notice}
 
 ## [Bulk Read](#bulk-read)
-This instruction is used for reading values of multiple DYNAMIXELs simultaneously by sending a single Instruction Packet. The packet length is shortened compared to sending multiple READ commands, and the idle time between the status packets being returned is also shortened to save communication time. However, this cannot be used to read a single module. If an identical ID is designated multiple times, only the first designated parameter will be processed.
+This instruction is used for reading values of multiple `MX series` DYNAMIXELs simultaneously by sending a single Instruction Packet. The packet length is shortened compared to sending multiple READ commands, and the idle time between the status packets being returned is also shortened to save communication time. However, this cannot be used to read a single module. If an identical ID is designated multiple times, only the first designated parameter will be processed.
 
 |Item|Description|
 |:---:|:---|
@@ -422,19 +422,33 @@ When Bulk Read instruction is received, Dynamixel with ID 2 monitors the status 
 # [More Packet Examples](#more-packet-examples)
 
 ![](/assets/images/dxl/protocol1/protocol1_example_06.png)
+
 ![](/assets/images/dxl/protocol1/protocol1_example_07.png)
+
 ![](/assets/images/dxl/protocol1/protocol1_example_08.png)
+
 ![](/assets/images/dxl/protocol1/protocol1_example_09.png)
+
 ![](/assets/images/dxl/protocol1/protocol1_example_10.png)
+
 ![](/assets/images/dxl/protocol1/protocol1_example_11.png)
+
 ![](/assets/images/dxl/protocol1/protocol1_example_12.png)
+
 ![](/assets/images/dxl/protocol1/protocol1_example_13.png)
+
 ![](/assets/images/dxl/protocol1/protocol1_example_15.png)
+
 ![](/assets/images/dxl/protocol1/protocol1_example_16.png)
+
 ![](/assets/images/dxl/protocol1/protocol1_example_17.png)
+
 ![](/assets/images/dxl/protocol1/protocol1_example_18.png)
+
 ![](/assets/images/dxl/protocol1/protocol1_example_19.png)
+
 ![](/assets/images/dxl/protocol1/protocol1_example_20.png)
+
 ![](/assets/images/dxl/protocol1/protocol1_example_21.png)
 
 
