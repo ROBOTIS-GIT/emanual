@@ -51,7 +51,7 @@ sidebar:
 |    5    |       1        | [Return Delay Time](#return-delay-time)     | Response Delay Time                |   RW   |        250         |
 |    6    |       2        | [CW Angle Limit](#cw-angle-limit)           | Clockwise Angle Limit              |   RW   |         0          |
 |    8    |       2        | [CCW Angle Limit](#ccw-angle-limit)         | Counter-Clockwise Angle Limit      |   RW   |        4095        |
-|   11    |       1        | [Temperature Limit](#temperature-limit)     | Maximum Internal Temperature Limit |   RW   |         80         |
+|   11    |       1        | [Temperature Limit](#temperature-limit)     | Maximum Internal Temperature Limit |   RW   |         70         |
 |   12    |       1        | [Min Voltage Limit](#min-voltage-limit)     | Minimum Input Voltage Limit        |   RW   |         60         |
 |   13    |       1        | [Max Voltage Limit](#max-voltage-limit)     | Maximum Input Voltage Limit        |   RW   |        160         |
 |   14    |       2        | [Max Torque](#max-torque)                   | Maximun Torque                     |   RW   |        1023        |
