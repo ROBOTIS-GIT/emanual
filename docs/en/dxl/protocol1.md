@@ -114,6 +114,7 @@ The field that defines the type of instruction.
 | 0x04  |   Reg Write   | Instruction that registers the Instruction Packet to a standby status; Packet is later executed through the Action instruction |
 | 0x05  |    Action     |                      Instruction that executes the Packet that was registered beforehand using Reg Write                       |
 | 0x06  | Factory Reset |                       Instruction that resets the Control Table to its initial factory default settings                        |
+| 0x08  | Reboot        |                       Instruction that reboots Dynamixel(See applied products in the description)                             |
 | 0x83  |  Sync Write   |                For multiple devices, Instruction to write data on the same Address with the same length at once                |
 | 0x92  |   Bulk Read   |             For multiple devices, Instruction to write data on different Addresses with different lengths at once<br />This command can only be used with MX series.              |
 
