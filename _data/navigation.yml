@@ -10007,12 +10007,12 @@ turtlebot3:
     - title: "PC Setup"
       url: /platform/turtlebot3/pc_setup/#pc-setup
       children:
-      - title: "Install Ubuntu on Remote PC (Desktop or Laptop PC)"
-        url: /platform/turtlebot3/pc_setup/#install-ubuntu-on-remote-pc-desktop-or-laptop-pc
+      - title: "Install Ubuntu on Remote PC"
+        url: /platform/turtlebot3/pc_setup/#install-ubuntu-on-remote-pc
       - title: "Install ROS on Remote PC"
         url: /platform/turtlebot3/pc_setup/#install-ros-on-remote-pc
-      - title: "Install Dependent Packages"
-        url: /platform/turtlebot3/pc_setup/#install-dependent-packages
+      - title: "Install Dependent ROS Packages"
+        url: /platform/turtlebot3/pc_setup/#install-dependent-ros-packages
       - title: "Network Configuration"
         url: /platform/turtlebot3/pc_setup/#network-configuration
     - title: "SBC Setup"
