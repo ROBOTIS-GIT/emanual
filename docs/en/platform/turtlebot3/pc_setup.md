@@ -24,11 +24,11 @@ sidebar:
 **NOTE:** This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 {: .notice--info}
 
-## [Install Ubuntu on Remote PC (Desktop or Laptop PC)](#install-ubuntu-on-remote-pc-desktop-or-laptop-pc)
+### [Install Ubuntu on Remote PC](#install-ubuntu-on-remote)
 
-**[Remote PC]** Download `Ubuntu 16.04` on the remote PC from the following link.
+Download and install the `Ubuntu 16.04` on the `Remote PC (Desktop or Laptop PC)` from the following link.
 
-- [Download link](https://www.ubuntu.com/download/desktop)
+- [Download link][ubuntu_download_link]
 
 If you need more help for installing Ubuntu, check out the step-by-step guide from the link below.
 
@@ -38,10 +38,7 @@ If you need more help for installing Ubuntu, check out the step-by-step guide fr
 
 ![](/assets/images/platform/turtlebot3/logo_ros.png)
 
-In order to develop source code from the remote PC, please configure ROS environment after completing ROS installation.
-
-**TIP:** The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`-`Alt`-`T`.
-{: .notice--info}
+The following script will allow you to simplify the ROS installation procedure. Run the following command in a terminal window. The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`-`Alt`-`T`. After install ROS, please reboot Remote PC.
 
 ``` bash
 $ sudo apt-get update
@@ -49,18 +46,15 @@ $ sudo apt-get upgrade
 $ wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic.sh && chmod 755 ./install_ros_kinetic.sh && bash ./install_ros_kinetic.sh
 ```
 
-**NOTE:** In order to check which packages are installed, please check this link out. [install_ros_kinetic](https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic.sh)
-{: .notice--info}
-
-**NOTE:** After install ROS, please reboot RemotePC.
+**NOTE:** In order to check which packages are installed, please check this link out. [install_ros_kinetic.sh](https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic.sh)
 {: .notice--info}
 
 If you prefer manual installation, please following the link below.
 
-- [Install ROS on Ubuntu](http://wiki.ros.org/kinetic/Installation/Ubuntu)
+- [Manual installation of ROS Kinetic](http://wiki.ros.org/kinetic/Installation/Ubuntu)
 
 
-### [Install Dependent packages](#install-dependent-packages)
+### [Install Dependent ROS Packages](#install-dependent-ros-packages)
 
 The next step is to install dependent packages for TurtleBot3 control.
 
@@ -82,7 +76,7 @@ If catkin_make command is completed without any errors, the preparation for Turt
 
 ![](/assets/images/platform/turtlebot3/software/network_configuration.png)
 
-ROS requires IP addresses in order to communicate between TurtleBot3 and the remote PC.
+ROS requires IP addresses in order to communicate between TurtleBot PC and the remote PC. The remote PC and TurtleBot PC should be connected to the same wifi router.
 
 Enter the below command on the terminal window of the remote PC to find out the IP address of the remote PC.
 
@@ -112,6 +106,4 @@ Then, source the bashrc with below command.
 $ source ~/.bashrc
 ```
 
-[12-setup-your-sourceslist]: http://wiki.ros.org/kinetic/Installation/Ubuntu#Installation.2BAC8-Ubuntu.2BAC8-Sources.Setup_your_sources.list
-[17-getting-rosinstall]: http://wiki.ros.org/kinetic/Installation/Ubuntu#Getting_rosinstall
-[ros]: http://wiki.ros.org
+[ubuntu_download_link]: https://www.ubuntu.com/download/alternative-downloads
