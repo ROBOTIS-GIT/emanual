@@ -68,20 +68,29 @@ sidebar:
 ### [SBCs](#sbcs)
 
 - [Raspberry Pi 3 Model B](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/)
+  - TurtleBot3 Burger, Waffle Pi
 - [Raspberry Pi 3 Model B+](https://www.raspberrypi.org/products/raspberry-pi-3-model-b-plus/)
+  - Comming soon
 - [Intel® Joule™ 570x](http://ark.intel.com/products/96414/Intel-Joule-570x-Developer-Kit)
+  - TurtleBot3 Waffle
 
 ### [Sensors](#sensors)
 
 - [360 Laser Distance Sensor LDS-01](/docs/en/platform/turtlebot3/appendix_lds_01/)
+  - TurtleBot3 Burger, Waffle, Waffle Pi
 - [Intel® Realsense™ R200](https://software.intel.com/en-us/RealSense/R200Camera)
+  - TurtleBot3 Waffle
 - [The Raspberry Pi Camera Module v2.1](https://www.raspberrypi.org/products/camera-module-v2/)
+  - TurtleBot3 Waffle Pi
 
 ### [Embedded Board](#Embedded-board)
 
 - [OpenCR1.0](/docs/en/platform/turtlebot3/appendix_opencr1_0/)
+  - TurtleBot3 Burger, Waffle, Waffle Pi
 
 ### [Actuators](#actuators)
 
 - [Dynamixel XL430](/docs/en/dxl/x/xl430-w250/)
+  - TurtleBot3 Burger
 - [Dynamixel XM430](/docs/en/dxl/x/xm430-w210/)
+  - TurtleBot3 Waffle, Waffle Pi
