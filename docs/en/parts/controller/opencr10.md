@@ -111,15 +111,15 @@ It has an 18-pin common GPIO expansion connector and is mapped to the GPIO pin o
 | Pin Number | Arduino Pin | Pin Name      | Pin Number | Arduino Pin | Pin Name     |etc |
 |:-----------|:------------|:--------------|:-----------|:------------|:-------------|:---|
 | 1          | -           | 3.3V          | 2          | -           | GND          |-   |
-| 3          | 50          | BDPIN_GPIO_1  | 4          | 51          | BDPIN_GPIO_1 |`FT`|
-| 5          | 52          | BDPIN_GPIO_3  | 6          | 53          | BDPIN_GPIO_1 |`FT`|
-| 7          | 54          | BDPIN_GPIO_5  | 8          | 55          | BDPIN_GPIO_1 |`FT`|
-| 9          | 56          | BDPIN_GPIO_7  | 10         | 57          | BDPIN_GPIO_1 |`FT`|
-| 11         | 58          | BDPIN_GPIO_9  | 12         | 59          | BDPIN_GPIO_1 |`FT`|
-| 13         | 60          | BDPIN_GPIO_11 | 14         | 61          | BDPIN_GPIO_1 |`FT`|
-| 15         | 62          | BDPIN_GPIO_13 | 16         | 63          | BDPIN_GPIO_1 |`FT`|
-| 17         | 64          | BDPIN_GPIO_15 | 18         | 65          | BDPIN_GPIO_1 |`FT`|
-| 19         | 66          | BDPIN_GPIO_17 | 20         | 67          | BDPIN_GPIO_1 |`FT`|
+| 3          | 50          | BDPIN_GPIO_1  | 4          | 51          | BDPIN_GPIO_2 |`FT`|
+| 5          | 52          | BDPIN_GPIO_3  | 6          | 53          | BDPIN_GPIO_4 |`FT`|
+| 7          | 54          | BDPIN_GPIO_5  | 8          | 55          | BDPIN_GPIO_6 |`FT`|
+| 9          | 56          | BDPIN_GPIO_7  | 10         | 57          | BDPIN_GPIO_8 |`FT`|
+| 11         | 58          | BDPIN_GPIO_9  | 12         | 59          | BDPIN_GPIO_10|`FT`|
+| 13         | 60          | BDPIN_GPIO_11 | 14         | 61          | BDPIN_GPIO_12|`FT`|
+| 15         | 62          | BDPIN_GPIO_13 | 16         | 63          | BDPIN_GPIO_14|`FT`|
+| 17         | 64          | BDPIN_GPIO_15 | 18         | 65          | BDPIN_GPIO_16|`FT`|
+| 19         | 66          | BDPIN_GPIO_17 | 20         | 67          | BDPIN_GPIO_18|`FT`|
 
 `FT` pins are 5V tolerant except when in analog mode. The maximum injected current on FT pins are **-5mA**. Also total output current sunk / sourced by sum of all I/O pins are **120mA / -120mA** respectively.
 {: .notice}
@@ -302,7 +302,7 @@ Download the latest version of Arduino IDE from the official arduino homepage, a
 Then, extract the downloaded file to the desired folder and execute the installation file from the terminal. In this case, the example shown below makes the folder tools in the user’s top folder (~/). This folder will act as the Arduino IDE folder.
 
 ```bash
-$ cd ~/tools/arduino-1.16.0
+$ cd ~/tools/arduino-1.6.4
 $ ./install.sh
 ```
 
@@ -310,7 +310,7 @@ Set the file path of installed Arduino IDE as an absolute path named PATH in the
 
 ```bash
 $ gedit ~/.bashrc
-$ export PATH=$PATH:$HOME/tools/arduino-1.16.0
+$ export PATH=$PATH:$HOME/tools/arduino-1.6.4
 $ source ~/.bashrc
 ```
 
@@ -470,7 +470,7 @@ To use OpenCR's USB port as a serial port in Windows, you need a USB CDC driver.
 
 ### [Install Arduino IDE(Windows)](#install-arduino-idewindows)
 
-Download the latest version of Arduino IDE from the official arduino homepage, and install it. Currently, the OpenCR will be on service in the version 1.16.0 or later.
+Download the latest version of Arduino IDE from the official arduino homepage, and install it. Currently, the OpenCR will be on service in the version 1.6.4 or later.
 
 [https://www.arduino.cc/en/Main/Software](https://www.arduino.cc/en/Main/Software)
 

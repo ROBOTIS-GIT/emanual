@@ -30,7 +30,7 @@ sidebar:
 | 크기 | 32mm x 50mm x 40mm |
 | 기어비 | 32 : 1  |
 | No Load Speed | 470rpm (at 12V) |
-| 동작 온도 | -5&deg;C ~ +80&deg;C |
+| 동작 온도 | -5&deg;C ~ +70&deg;C |
 | 사용 전압 | 10 ~ 14.8V (**권장 전압 : 12V**) |
 | Command Signal | Digital Packet |
 | Protocol Type | Half Duplex Asynchronous Serial Communication<br />(8bit, 1stop, No Parity) |
@@ -87,7 +87,7 @@ sidebar:
 |46|1|[Moving](#moving)                   |움직임 유무|R|0|
 |47|1|[Lock](#lock)                   |EEPROM 잠금|RW|0|
 |48|2|[Punch](#punch)                   |Punch 값의 바이트|RW|32|
-|50|2|[Realtime Tick](#realtime-tick)                   |Realtime Tick 값의 바이트|R|0|
+|50|2|[Realtime Tick](#realtime-tick)                   |실시간 Tick|R|0|
 |73|1|[Goal Acceleration](#goal-acceleration)   |목표 가속도값|RW|0|
 
 

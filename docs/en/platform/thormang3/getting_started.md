@@ -222,7 +222,7 @@ This section introduces how to install the ROBOTIS ROS Package for THORMANG3.
 - ROBOTIS-THORMANG-OPC : ROS Packages for the Operating PC of THORMANG3
 - ROBOTIS-THORMANG-Common : Common ROS Packages for THORMANG3
 - ROBOTIS-THORMANG-msgs : ROS Messages used in the ROBOTIS THORMANG3 packages
-- ROBOTIS-THORMANG-Too
+- ROBOTIS-THORMANG-Tools
 
 ### [MPC Installation](#mpc-installation)
 
