@@ -62,7 +62,7 @@ TurtleBot3 is a collaboration project among [Open Robotics][open_robotics], [ROB
 [navigation]: https://en.wikipedia.org/wiki/Robot_navigation
 [manipulation]: https://en.wikipedia.org/wiki/Robotic_manipulation
 [openmanipulator]: http://emanual.robotis.com/docs/en/platform/openmanipulator/
-[open_robotics]: https://www.osrfoundation.org/
+[open_robotics]: https://www.openrobotics.org/
 [robotis]: http://www.robotis.com/
 [the_construct]: http://www.theconstructsim.com/
 [intel]: http://www.intel.com/
