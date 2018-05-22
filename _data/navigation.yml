@@ -142,18 +142,18 @@ main:
       - title: "*L42-10-S300-R"
         titlekr: "*L42-10-S300-R"
         url: /dxl/pro/l42-10-s300-r/
-    - title: "PRO Plus Series"
-      titlekr: "PRO Plus 시리즈"
-      children:
-      - title: "H54P-200-S500-R"
-        titlekr: "H54P-200-S500-R"
-        url: /dxl/pro_plus/h54p-200-s500-r/
-      - title: "H54P-100-S500-R"
-        titlekr: "H54P-100-S500-R"
-        url: /dxl/pro_plus/h54p-100-s500-r/
-      - title: "H42P-20-S300-R"
-        titlekr: "H42P-20-S300-R"
-        url: /dxl/pro_plus/h42p-20-s300-r/
+    # - title: "PRO Plus Series"
+    #   titlekr: "PRO Plus 시리즈"
+    #   children:
+    #   - title: "H54P-200-S500-R"
+    #     titlekr: "H54P-200-S500-R"
+    #     url: /dxl/pro_plus/h54p-200-s500-r/
+    #   - title: "H54P-100-S500-R"
+    #     titlekr: "H54P-100-S500-R"
+    #     url: /dxl/pro_plus/h54p-100-s500-r/
+    #   - title: "H42P-20-S300-R"
+    #     titlekr: "H42P-20-S300-R"
+    #     url: /dxl/pro_plus/h42p-20-s300-r/
     - title: "Procotol 1.0"
       titlekr: "프로토콜 1.0"
       url: /dxl/protocol1/
