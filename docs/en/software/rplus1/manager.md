@@ -68,7 +68,7 @@ Windows installer and .NET Framework can be downloaded from [Microsoft Download 
     - Check if the controller is connected to the PC. (See controller information for information on how to connect the controller.)
     - Check if the controller is turned on.  
     - Check if the correct communication port was chosen.
- 
+
 3. Start management. (Please refer to the [managing information of each controller].)
 
 
@@ -80,7 +80,7 @@ Firmware is the program installed in the controller, and is used to execute .tsk
 RoboPlus Manager automatically connects to the internet and searches for firmware updates.
 
 ![](/assets/images/sw/rplus1/manager/roboplus_manager_005.png)
- 
+
 ### Updating Controller Firmware
 
 1. When the controller is connected, the controller's firmware version will be retrieved. If a newer firmware is available, it will ask whether to download the latest firmware.
@@ -113,20 +113,20 @@ For CM-150 and CM-200, you will need the latest RoboPlus Manager (ver. 1.0.31.0 
 1. Connect the controller to the PC using LN-101.
 
     ![](/assets/images/parts/interface/ln101_connect.jpg)
- 
+
 2. Run RoboPlus Manager and open the controller firmware management wizard. On the menu bar, click the firmware management button to run the firmware wizard.  
     (CM-150 and CM-200 require some pre-steps prior to proceeding. Please refer to the message below.)
 
     ![](/assets/images/sw/rplus1/manager/roboplus_manager_011.gif)
-    
+
     ![](/assets/images/sw/rplus1/manager/roboplus_manager_012.gif)
- 
+
 3. Select the port number for connecting the controller.  
     Because the firmware is broken, the controller cannot be automatically found. So, you must manually select the port number the controller is connected to.  
     The controller cannot be found if the port is being used, so please close other programs before proceeding. Select the port number then click search.
 
     ![](/assets/images/sw/rplus1/manager/roboplus_manager_013.gif)
- 
+
 4. Turn OFF then turn ON the controller (this process can be skipped for CM-150 and CM-200).  
     Turn OFF and turn ON the controller to proceed with the recovery
 
@@ -135,7 +135,7 @@ For CM-150 and CM-200, you will need the latest RoboPlus Manager (ver. 1.0.31.0 
     Please check whether the model name is the same as the name of the connected controller (the version on the controller information is the version of the boot loader, not the firmware)
 
     ![](/assets/images/sw/rplus1/manager/roboplus_manager_014.gif)
- 
+
 6. Firmware Recovery
 
     ![](/assets/images/sw/rplus1/manager/roboplus_manager_015.gif)
@@ -190,7 +190,7 @@ If the controller's firmware version is older than that of RoboPlus Manager, it 
 When the CM-510 controller is connected to RoboPlus Manager, the following screen is displayed.
 
 ![](/assets/images/sw/rplus1/manager/roboplus_manager_018.png)
- 
+
 The controller and its peripheral devices are listed in the left window.  In the right window is the "controller management" window.  
 If the controller's firmware version is older than that of RoboPlus Manager, it can be updated. (Please refer to the [Firmware Update](#firmware-update) section)
 
@@ -221,7 +221,7 @@ If the controller's firmware version is older than that of RoboPlus Manager, it 
 #### Sound Count
 
 {% include en/software/rplus1/sound_count.md %}
- 
+
 #### Current Sound Count
 
 {% include en/software/rplus1/current_sound.md %}
@@ -229,7 +229,7 @@ If the controller's firmware version is older than that of RoboPlus Manager, it 
 #### Buzzer Index
 
 {% include en/software/rplus1/buzzer_index.md %}
- 
+
 #### Buzzer Time
 
 {% include en/software/rplus1/buzzer_time.md %}
@@ -243,7 +243,7 @@ If the controller's firmware version is older than that of RoboPlus Manager, it 
 When the CM-530 controller is connected to RoboPlus Manager, the following screen is displayed.
 
 ![](/assets/images/sw/rplus1/manager/roboplus_manager_019.png)
- 
+
 The controller and its peripheral devices are listed in the left window.  In the right window is the "controller management" window.  
 If the controller's firmware version is older than that of RoboPlus Manager, it can be updated. (Please refer to the [Firmware Update](#firmware-update) section)
 
@@ -278,7 +278,7 @@ If the controller's firmware version is older than that of RoboPlus Manager, it 
 #### Sound Count
 
 {% include en/software/rplus1/sound_count.md %}
- 
+
 #### Current Sound Count
 
 {% include en/software/rplus1/current_sound.md %}
@@ -286,7 +286,7 @@ If the controller's firmware version is older than that of RoboPlus Manager, it 
 #### Buzzer Index
 
 {% include en/software/rplus1/buzzer_index.md %}
- 
+
 #### Buzzer Time
 
 {% include en/software/rplus1/buzzer_time.md %}
@@ -300,7 +300,7 @@ If the controller's firmware version is older than that of RoboPlus Manager, it 
 When the CM-700 controller is connected to RoboPlus Manager, the following screen is displayed.
 
 ![](/assets/images/sw/rplus1/manager/roboplus_manager_020.png)
- 
+
 The controller and its peripheral devices are listed in the left window.  In the right window is the "controller management" window.  (Please refer to the "Test" page).  
 If the controller's firmware version is older than that of RoboPlus Manager, it can be updated.  (Please refer to the [Firmware Update](#firmware-update) section)
 
@@ -338,7 +338,7 @@ In the program as shown below, users can set up and test Dynamixels.
 - Choose an actuator to manage from the list on the left.
 - Parameters that can be set and tested for each device are shown in the table.  Clicking on a Dynamixel Name/ID  will call a subwindow to set or test the parameter. The subwindow simplifies the process of setting the parameter for the user.  
 - The image above is a screen shot of RoboPlus manager when the "Goal Position" parameter is clicked.  A subwindow is shown on the lower right hand corner when any row is clicked.  However, no subwindow will be displayed if only values need to be shown.
- 
+
 **NOTE** : When an actuator with an ID in ① is double clicked, the actuator is selected and its LED will blink for a moment. This is used to check where the actuator is located.
 {: .notice}
 
@@ -349,7 +349,7 @@ In the program as shown below, users can set up and test Dynamixels.
 
 Each Dynamixel has its own ID, and the controller manages each Dynamixel using its ID.  This parameter is used to manage the Dynamixel's ID.  
 (Please refer to [Dynamixel Management] for more information about changing ID)
- 
+
 #### Characteristics
 
 - Once this value is set, it will be saved, even when the power is turned off.
@@ -362,7 +362,7 @@ Each Dynamixel has its own ID, and the controller manages each Dynamixel using i
 
 This parameter is used to limit the position of the actuator or to set the movement mode.  
 (Please refer to [Changing the Movement Mode] for more information about changing Movement Mode)
- 
+
 #### Characteristics
 
 - Once this value is set, it will be saved even when the power is turned off.
@@ -380,7 +380,7 @@ This parameter is used to limit the position of the actuator or to set the movem
 ### [Drive Mode](#drive-mode)
 
 Tis parameter is used to set the drive mode of EX actuators.  Depending on the drive mode, the Ex actuator's special modes, such as dual mode and reverse mode can be used.  Please refer to EX-series Dual Mode Setting for detailed information about drive mode.  
- 
+
 #### Characteristics
 
 - Master/Slave and Normal/Reverse modes can be set.
@@ -393,22 +393,22 @@ Tis parameter is used to set the drive mode of EX actuators.  Depending on the d
 ### [Temperature Setting](#temperature-setting)
 
 This parameter is used to set the temperature limit for Dynamixel movement.
- 
+
 #### Characteristics
 
 - Once this value is set, it will be saved even when the power is turned off.
 - The actual temperature for the set value is displayed.
 - If the actuator's temperature goes over the limit, the LED will blink or the actuator will stop moving depending on the setting.  
 - Unless otherwise specified, it is recommended to use the default value.
- 
+
 ### [Temperature](#temperature)
 
 This parameter is used to read the Dynamixel's current temperature.
- 
+
 #### Characteristic
 
 - The Dynamixel's temperature is returned in real-time.
- 
+
 #### Corresponding RoboPlus Task Command
 
 - Parameter : [Temperature]
@@ -416,7 +416,7 @@ This parameter is used to read the Dynamixel's current temperature.
 ### [Voltage Setting](#voltage-setting)
 
 This parameter is used to set the voltage limit for Dynamixel movement.
- 
+
 #### Characteristics
 
 - Once this value is set, it will be saved even when the power is turned off.
@@ -428,11 +428,11 @@ This parameter is used to set the voltage limit for Dynamixel movement.
 ### [Voltage](#voltage)
 
 This parameter is used to read the Dynamixel's current voltage.
- 
+
 #### Characteristic
 
 - The Dynamixel's voltage is returned in real-time.
- 
+
 #### Corresponding RoboPlus Task Command
 
 - Parameter : [Voltage]
@@ -440,7 +440,7 @@ This parameter is used to read the Dynamixel's current voltage.
 ### [Alarm & Shutdown](#alarm--shutdown)
 
 The LED alarm or shutdown operation can be set for specific cases.
- 
+
 #### Parameter Characteristics
 
 - Once this value is set, it will be saved even when the power is turned off.
@@ -458,13 +458,13 @@ The LED alarm or shutdown operation can be set for specific cases.
 ### [Torque Enable](#torque-enable)
 
 This parameter is used to turn the actuator on or off.
- 
+
 #### Characteristics
 
 - If the value is 0, the actuator's torque  is turned off. i.e. the horn is free to rotate.   If the value is 1, the actuator's torque is turned on.
 - The torque can easily be turned on or off using the On/Off command.
 - If the goal position is set when the actuator is turned off, the actuator will automatically turn on and this parameter will be set to 1.
- 
+
 #### Corresponding RoboPlus Task Command
 
 - Parameter : [Torque Enable]
@@ -473,13 +473,13 @@ This parameter is used to turn the actuator on or off.
 ### [LED](#led)
 
 This parameter is used to turn the Dynamixel's LED on or off.
- 
+
 #### Characteristics
 
 - If the value is 0, the LED is turned off.  If the value is 1, it is turned on.
 - The LED can easily be turned on or off using the On/Off command.
 - The LED cannot be manipulated when the LED alarm is triggered.
- 
+
 #### Corresponding RoboPlus Task Command
 
 - Parameter : [LED]
@@ -488,12 +488,12 @@ This parameter is used to turn the Dynamixel's LED on or off.
 ### [CW/CCW Margin](#cwccw-margin)
 
 This parameter is used to set the actuator's compliance margin.
- 
+
 #### Parameter Characteristics
 
 - The margin designates the area around the goal position that receives no torque.
 - Set appropriate values for CW/CCW slope, "torque limit, " and "CW/CCW margin," for smoother movements.
- 
+
 #### Corresponding RoboPlus Task Command
 
 - Parameter : [CW/CCW Margin]
@@ -501,7 +501,7 @@ This parameter is used to set the actuator's compliance margin.
 ### [CW/CCW Slope](#cwccw-slope)
 
 This parameter is used to set the actuator's compliance slope.
- 
+
 #### Parameter Characteristics
 
 - The slope value will be created at both CW/CCW  directions, and the output level will be set near the target position.
@@ -521,7 +521,7 @@ This parameter is used to set the actuator's compliance slope.
 |   7   | 128(0x80)~254(0xFE) |        128 (0x80)         |
 
 - Appropriate Compliance Slope, Power control, and the Compliance Margin values will make it possible to create smoother movement.
- 
+
 #### Corresponding RoboPlus Task Command
 
 Parameter : [CW/CCW Slope]
@@ -529,7 +529,7 @@ Parameter : [CW/CCW Slope]
 ### [Goal Position](#goal-position)
 
 This parameter is used to set the actuator's goal position.
- 
+
 #### Characteristics
 
 - The value can be set using a jog dial.
@@ -537,7 +537,7 @@ This parameter is used to set the actuator's goal position.
 - The value is affected by "moving speed,"position limitation," "CW/CCW slope," and "CW/CCW margin" parameters.
 - Even when the torque is turned off, as soon as the value is set, it will be turned on.
 - When the "center position" button is pressed, the value is set to the center position.  
- 
+
 #### Corresponding RoboPlus Task Command
 
 - Parameter  : [Goal Position]
@@ -546,7 +546,7 @@ This parameter is used to set the actuator's goal position.
 ### [Moving Speed](#moving-speed)
 
 This parameter is used to set the speed of the actuator.
- 
+
 #### Characteristics
 
 - In joint mode, the speed is affected by "compliance slope" and "compliance margin" values.
@@ -554,7 +554,7 @@ This parameter is used to set the speed of the actuator.
 - In wheel mode (endless rotation mode), the speed and rotating direction depend on the "moving speed" value.
 - The movement mode can be set using the "position limitation" parameter.
 - The control used to set the speed is different for each mode.
- 
+
 #### Corresponding RoboPlus Task Command
 
 - Parameter :[Moving Speed]
@@ -563,11 +563,11 @@ This parameter is used to set the speed of the actuator.
 ### [Torque Limit](#torque-limit)
 
 This parameter is used to set the maximum load on the actuator.
- 
+
 #### Characteristic
 
 - The LED alarm may be triggered or the movement may be stopped depending on the torque limit, LED alarm, and shutdown settings.
- 
+
 #### Corresponding RoboPlus Task Command
 
 - Parameter : [Torque Limit]
@@ -575,11 +575,11 @@ This parameter is used to set the maximum load on the actuator.
 ### [Present Position](#present-position)
 
 This parameter is used to read the actuator's current position.
- 
+
 #### Characteristic
 
 - The value changes in real-time to reflect the actuator's movement.
- 
+
 #### Corresponding RoboPlus Task Command
 
 - Parameter  : [Present Position]
@@ -587,11 +587,11 @@ This parameter is used to read the actuator's current position.
 ### [Present Speed](#present-speed)
 
 This parameter is used to read the actuator's current speed.
- 
+
 #### Characteristic
 
 - The value changes in real-time to reflect the actuator's movement.
- 
+
 #### Corresponding RoboPlus Task Command
 
 - Parameter : [Present Speed]
@@ -599,12 +599,12 @@ This parameter is used to read the actuator's current speed.
 ### [Present Load](#present-load)
 
 This parameter is used to read the actuator's current load.
- 
+
 #### Characteristics
 
 - The value changes in real-time to reflect the actuator's movement.
 - When the motor is turned off, this value is meaningless.
- 
+
 #### RoboPlus Task Referring Command
 
 - Parameter : [Present Load]
@@ -612,11 +612,11 @@ This parameter is used to read the actuator's current load.
 ### [Moving](#moving)
 
 This parameter is used to determine whether the actuator is currently moving or not.
- 
+
 #### Characteristic
 
 - If the value is 0, it is not moving. If the value is 1, it is moving.
- 
+
 #### Corresponding RoboPlus Task Command
 
 - Parameter: [Moving]
@@ -624,7 +624,7 @@ This parameter is used to determine whether the actuator is currently moving or 
 ### [Sensed Current](#sensed-current)
 
 This parameter is used to check the current being consumed.
- 
+
 #### Characteristics
 
 ##### EX-Series
@@ -641,7 +641,7 @@ This parameter is used to check the current being consumed.
 - If current flows in the opposite direction then output values are smaller than 2,048
 - Current flow values are proportional to data values (value unit of 1 = 4.5mA units)
 - For example if data reads 2,148 then 2,148 - 2,048 = 100 -> 100 x 4.5mA = 450mA. The output current is 450mA in the normal direction.
- 
+
 #### Corresponding RoboPlus Task Command
 
 - Parameter  : [Sensed Current]
@@ -649,14 +649,14 @@ This parameter is used to check the current being consumed.
 ### [PID Gain](#pid-gain)
 
 For `MX-Series` actuator PID values read/write availability
- 
+
 #### Characteristics
 
 - P gain refers to the value of proportional band.
 - I gain refers to the value of integral action.
 - D Gain refers to the value of derivative action.
 - Gains values are in between 0~254.
- 
+
 #### Corresponding RoboPlus Task Command
 
 - Parameter : [PID Gain]
@@ -664,13 +664,13 @@ For `MX-Series` actuator PID values read/write availability
 ### [IR Left/Center/Right](#ir-leftcenterright)
 
 For `AX-S1` these parameters are used to read the DMS sensor value.
- 
+
 #### Characteristics
 
 - The current DMS sensor value of AX-S1 can be read.
 - The reflection angle of IR rays are measured, so objects the same distance away may return different values due to their color or surrounding light.
 - The sensor value is between 0 and 255.
- 
+
 #### Corresponding RoboPlus Task Command
 
 - Parameter : [IR Left/Center/Right]
@@ -678,13 +678,13 @@ For `AX-S1` these parameters are used to read the DMS sensor value.
 ### [Light Left/Center/Right](#light-leftcenterright)
 
 For `AX-S1` this parameter is used to read the light brightness.
- 
+
 #### Characteristics
 
 - The current light brightness value of AX-S1 can be read.
 - The infrared rays emitted by nearby light sources such as candles and light bulbs can be measured.
 - The sensor value is between 0 and 255.
- 
+
 #### Corresponding RoboPlus Task Command
 
 - Parameter : [Light Left/Center/Right]
@@ -692,13 +692,13 @@ For `AX-S1` this parameter is used to read the light brightness.
 ### [Object Detected](#object-detected)
 
 For `AX-S1` this parameter is used to determine whether an object is detected.
- 
+
 #### Characteristics
 
 - If an object is detected within a certain distance, specific bits are set as 1.
 - From the left, the first bit represents the left sensor, the second bit represents the center sensor, and the third bit represents the right sensor.
 - Values are returned as a combination of the bits.
- 
+
 #### RoboPlus Task Referring Command
 
 - Parameter : [Object Detected]
@@ -707,14 +707,14 @@ For `AX-S1` this parameter is used to determine whether an object is detected.
 ### [Object Detection Threshold](#object-detection-threshold)
 
 For `AX-S1` this parameter is used to set the object detection threshold.
- 
+
 #### Characteristics
 
 - Set the object detection threshold to be used when determining whether an object is detected or not.
 - The value is between 0 and 255.
 - There is a short-range detection mode and a long-distance detection mode.
 - The short-range detection mode is activated when the threshold value is set as.
- 
+
 #### Corresponding RoboPlus Task Command
 
 - Parameter : [Object Detection Threshold]
@@ -722,13 +722,13 @@ For `AX-S1` this parameter is used to set the object detection threshold.
 ### [Light Detected](#light-detected)
 
 For `AX-S1` this parameter is used to determine whether a light is detected.
- 
+
 #### Characteristics
 
 - If the AX-S1's IR sensor value is greater than the light detection threshold value, set the bits as 1.
 - From the left, the first bit represents the left sensor, the second bit represents the center sensor, and the third bit represents the right sensor.
 - Values are returned as a combination of the bits.
- 
+
 #### Corresponding RoboPlus Task Command
 
 - Parameter : [Light Detected]
@@ -737,12 +737,12 @@ For `AX-S1` this parameter is used to determine whether a light is detected.
 ### [Light Detection Threshold](#light-detection-threshold)
 
 For `AX-S1` this parameter is used to set the light detection threshold.
- 
+
 #### Characteristics
 
 - Set the threshold to be used when determining whether a light is detected or not.
 - The value is between 0 and 255.
- 
+
 #### Corresponding RoboPlus Task Command
 
 - Parameter : [Light Detection Threshold]
@@ -750,28 +750,28 @@ For `AX-S1` this parameter is used to set the light detection threshold.
 ### [Sound Data](#sound-data)
 
 For `AX-S1` this parameter is used to read the volume of the sound detected.
- 
+
 #### Characteristics
 
 - Reads the volume of the sound being detected by AX-S1.
 - If no sounds are detected, the returned  value will be near 127.  When sounds are detected, the value will change according to the volume. (The louder the sound, the more the value will fluctuate from 127 to 0 and 255 is not clear. Whether the value will go up or down to sound value.)
 - The value is between 0 and 255.
- 
+
 #### Corresponding RoboPlus Task Command
 
 - Parameter : [Sound Data]
- 
+
 ### [Sound Max Data](#sound-max-data)
 
 For `AX-S1` this parameter is used to read the volume of the loudest sound detected.
- 
+
 #### Characteristics
 
 - Reads the maximum sound data detected by AX-S1.
 - If the detected volume is louder than the volume of the loudest sound up to that point,  the max sound data is replaced with the detected value.
 - The value is between 0 and 255.
 - Because "Sound Max Data" is not initialized automatically, the user must reset it to 0 before use.
- 
+
 #### Corresponding RoboPlus Task Command
 
 - Parameter : [Sound Max Data]
@@ -779,13 +779,13 @@ For `AX-S1` this parameter is used to read the volume of the loudest sound detec
 ### [Sound Count](#sound-count)
 
 The`AX-S1` is equipped with a function to count sounds louder than a certain threshold.  For example, it is possible to count claps.  This parameter is used to read or initialize the number of detected sounds.  
- 
+
 #### Characteristics
 
 - "Sound Count" uses numbers between 0 and 255.
 - When sounds are no longer detected, the number of detected sounds will be input into the "Sound Count" parameter.  
 - Because "Sound Count" is not initialized automatically, the user must reset it to 0 before use.
- 
+
 #### Corresponding RoboPlus Task Command
 
 - Parameter : [Sound Count]
@@ -793,14 +793,14 @@ The`AX-S1` is equipped with a function to count sounds louder than a certain thr
 ### [Buzzer Index](#buzzer-index)
 
 `AX-S1` is equipped with a buzzer.  This parameter is used to set the musical note played by the buzzer.
- 
+
 #### Characteristics
 
 - After setting "Buzzer Time," set "Buzzer Index" to play a sound using the buzzer.
 - There are 52 musical notes that can be played (0-51).
 - There are 27 melodies that can be played (0-26).
 - Depending on what the "Buzzer Time" is set to, "Buzzer Index" can be set to play a musical note or a melody.
- 
+
 #### Corresponding RoboPlus Task Command
 
 - Parameter : [Buzzer Index]
@@ -808,7 +808,7 @@ The`AX-S1` is equipped with a function to count sounds louder than a certain thr
 ### [Buzzer Time](#buzzer-time)
 
 `AX-S1` is equipped with a buzzer.  This parameter is used to set how long the sound is played by the buzzer.
- 
+
 #### Characteristics
 
 - After setting "Buzzer Time," set "Buzzer Index" to play a sound using the buzzer.
@@ -816,7 +816,7 @@ The`AX-S1` is equipped with a function to count sounds louder than a certain thr
 - When it is set to 254, the sound will play without end.
 - When it is set to 255, melodies will be played.
 - When the melody finishes playing, "Buzzer Time" is reset to 0.
- 
+
 #### Corresponding RoboPlus Task Command
 
 - Parameter : [Buzzer Time]
@@ -824,13 +824,13 @@ The`AX-S1` is equipped with a function to count sounds louder than a certain thr
 ### [IR Sensor Value](#ir-sensor-value)
 
 For `IR Sensor Array` these parameters are used to read the current IR sensor value.
- 
+
 #### Characteristics
 
 - Can read IR array’s current sensor values.
 - The IR array’s receivers can detect walls and obstacles by measuring the amount of infrared reflection bouncing back. The closer the object the higher the value.
 - The sensor value is between 0 and 1023.
- 
+
 #### Corresponding RoboPlus Task Command
 
 - Parameter : [IR Sensor Value]
@@ -838,12 +838,12 @@ For `IR Sensor Array` these parameters are used to read the current IR sensor va
 ### [Auto Threshold Mode](#auto-threshold-mode)
 
 For `IR Sensor Array` Setting for start/set for automatic detection for set black.
- 
+
 #### Characteristics
 
 - Once LED’s blink when turned on and set values are on.
 - When crossing between white and black the IR sensors automatically set values.
-- Powers off when turned off. 
+- Powers off when turned off.
 
 ![](/assets/images/sw/rplus1/manager/roboplus_manager_022.png)
 
@@ -854,7 +854,7 @@ For `IR Sensor Array` Setting for start/set for automatic detection for set blac
 ### [IR Obstacle Detected](#ir-obstacle-detected)
 
 For `IR Sensor Array` Paramenters to determine IR array obstacle values
- 
+
 #### Characteristics
 
 - In the IR array if each IR sensor detected black value is lower than the set black valuethe values will be assigned as shown below; the LED turns on.
@@ -869,7 +869,7 @@ For `IR Sensor Array` Paramenters to determine IR array obstacle values
 |   0010000    |      16       | Black detection for IR sensor #5 |
 |   0100000    |      32       | Black detection for IR sensor #6 |
 |   1000000    |      64       | Black detection for IR sensor #7 |
- 
+
 #### Corresponding RoboPlus Task Command
 
 - Parameter : [IR Obstacle Detected]
@@ -877,7 +877,7 @@ For `IR Sensor Array` Paramenters to determine IR array obstacle values
 ### [Set IR Threshold](#set-ir-threshold)
 
 For `IR Sensor Array` Determine set values for black and white for the IR array.
- 
+
 #### Characteristics
 
 - Setting infrared values for presence of obstacles.
@@ -885,7 +885,7 @@ For `IR Sensor Array` Determine set values for black and white for the IR array.
 - Values range from 0 to 1,023.
 
 ![](/assets/images/sw/rplus1/manager/roboplus_manager_023.png)
- 
+
 #### Corresponding RoboPlus Task Command
 
 - Parameter : [Set IR Threshold]
@@ -893,7 +893,7 @@ For `IR Sensor Array` Determine set values for black and white for the IR array.
 ## [ZIG2Serial](#zig2serial)
 
 Follow these steps to manage the Zig-100 module through RoboPlus Manager using Zig2Serial.
- 
+
 1. Attach Zig-100 to Zig2Serial and connect Zig2Serial to the PC's serial port.(Please refer to [ZIG2Serial] for connection)  
     If your PC does not have a serial port, you may use USB2Dynamixel, as in the picture below.
 
@@ -931,9 +931,9 @@ Follow these steps to manage the Zig-100 module through RoboPlus Manager using Z
 
 [ZIG2Serial]: /docs/en/parts/communication/zig2serial/
 [RoboPlus]: http://en.robotis.com/BlueAD/board.php?bbs_id=downloads
-[Microsoft Download Center]: http://www.microsoft.com/downloads/Search.aspx?displaylang=ko
-[Windows installer 3.1]: http://www.microsoft.com/downloads/details.aspx?FamilyID=889482fc-5f56-4a38-b838-de776fd4138c&DisplayLang=ko
-[.NET Framework 3.5]: http://www.microsoft.com/downloads/details.aspx?FamilyID=d0e5dea7-ac26-4ad7-b68c-fe5076bba986&DisplayLang=ko
+[Microsoft Download Center]: http://www.microsoft.com/downloads/Search.aspx?displaylang=en
+[Windows installer 3.1]: http://www.microsoft.com/downloads/details.aspx?FamilyID=889482fc-5f56-4a38-b838-de776fd4138c&DisplayLang=en
+[.NET Framework 3.5]: http://www.microsoft.com/downloads/details.aspx?FamilyID=d0e5dea7-ac26-4ad7-b68c-fe5076bba986&DisplayLang=en
 [managing information of each controller]: /docs/en/software/rplus1/manager/#controllers
 [controller information]: /docs/en/parts/controller/controller_compatibility/
 [ID Setup]: /docs/en/software/rplus1/manager/#id-setup
