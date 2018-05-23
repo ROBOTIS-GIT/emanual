@@ -55,7 +55,7 @@ sidebar:
 |5|1|[Return Delay Time](#return-delay-time)   |응답 지연 시간|RW|250|
 |6|2|[CW Angle Limit](#cw-angle-limit)          |시계 방향 한계 각도 값의 바이트|RW|0|
 |8|2|[CCW Angle Limit](#ccw-angle-limit)          |반시계 방향 한계 각도 값의 바이트|RW|4095|
-|11|1|[Temperature Limit](#temperature-limit)   |내부 한계 온도|RW|80|
+|11|1|[Temperature Limit](#temperature-limit)   |내부 한계 온도|RW|70|
 |12|1|[Min Voltage Limit](#min-voltage-limit)   |최저 한계 전압|RW|60|
 |13|1|[Max Voltage Limit](#max-voltage-limit)   |최고 한계 전압|RW|160|
 |14|2|[Max Torque](#max-torque)           |토크 한계 값의 바이트|RW|1023|
