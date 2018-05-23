@@ -10097,17 +10097,17 @@ turtlebot3:
   - title: "SLAM"
     url: /platform/turtlebot3/slam/#slam
     children:
-    - title: "SLAM"
-      url: /platform/turtlebot3/slam/#slam
-    - title: "Create a Map with Teleoperation"
-      url: /platform/turtlebot3/slam/#create-a-map-with-teleoperation
+    - title: "Run the SLAM Nodes"
+      url: /platform/turtlebot3/slam/#run-the-slam-nodes
+    - title: "Run the Teleoperation Node"
+      url: /platform/turtlebot3/slam/#run-the-teleoperation-node
     - title: "Save the Map"
       url: /platform/turtlebot3/slam/#save-the-map
   - title: "Navigation"
     url: /platform/turtlebot3/navigation/#navigation
     children:
-    - title: "Perform Navigation"
-      url: /platform/turtlebot3/navigation/#perform-navigation
+    - title: "Run the Navigation Nodes"
+      url: /platform/turtlebot3/navigation/#run-the-navigation-nodes
   - title: "Simulation"
     url: /platform/turtlebot3/simulation/#simulation
     children:
