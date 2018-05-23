@@ -16,22 +16,26 @@ sidebar:
 # [Basic Operation](#basic-operation)
 
 ## [Topic Monitor](#topic-monitor)
-- [Topic Monitor]
+- [Topic Monitor][topic_monitor]: Display all the topics of TurtleBot3 using Topic Monitor plugin of RQT.
 
 ## [Teleoperation](#teleoperation)
-- [Teleoperation]
+- [Teleoperation][teleoperation]: Control the TurtleBot3 using wireless devices such as PS3, XBOX 360, ROBOTIS RC100 and etc.
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/Z4s18hlazb4" frameborder="0" allowfullscreen></iframe>
 
 ## [Basic Examples](#basic-examples)
-- [Basic Examples]
+- [Basic Examples][basic_examples]: It contains various basic examples such as the following.
+  - Move using Interative Marker on RViz
+  - Move and Stop using LDS
+  - Move to goal position
+  - Move to custom routes
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Xg1pKFQY5p4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## [Additional Sensors](#additional-sensors)
-- [Additional Sensors]
+- [Additional Sensors][additional_sensors]: Let's use IR sensor, ultrasonic sensor, switch, etc. in OpenCR of TurtleBot3.
 
-[Topic Monitor]: /docs/en/platform/turtlebot3/topic_monitor/
-[Teleoperation]: /docs/en/platform/turtlebot3/teleoperation/
-[Basic Examples]: /docs/en/platform/turtlebot3/basic_examples/
-[Additional Sensors]: /docs/en/platform/turtlebot3/additional_sensors/
+[topic_monitor]: /docs/en/platform/turtlebot3/topic_monitor/
+[teleoperation]: /docs/en/platform/turtlebot3/teleoperation/
+[basic_examples]: /docs/en/platform/turtlebot3/basic_examples/
+[additional_sensors]: /docs/en/platform/turtlebot3/additional_sensors/

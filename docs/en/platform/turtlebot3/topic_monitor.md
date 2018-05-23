@@ -16,16 +16,17 @@ sidebar:
 
 ## [Topic Monitor](#topic-monitor)
 
-**NOTE**: This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
-{: .notice--info}
+{% capture notice_01 %}
+**NOTE**: 
+- This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+- This examples are supposed to be running on the remote PC. Follow the instruction on your **Remote PC**.
+{% endcapture %}
+<div class="notice--info">{{ notice_01 | markdownify }}</div>
 
-**TIP**: The example is supposed to be running on the remote PC. **Follow the instruction on your Remote PC**.
-{: .notice--info}
-
-**WARNING**: Make sure to run the [Bringup](#bringup) instruction before performing examples, and be careful when testing the robot on the table as the robot might fall.
+**WARNING**: Make sure to run the [Bringup][bringup] instruction before performing this examples, and be careful when testing the robot on the table as the robot might fall.
 {: .notice--warning}
 
-The [rqt](http://wiki.ros.org/rqt) is a Qt-based framework for GUI development for ROS. The rqt is a tool that allows users to easily see the topic status by displaying all the topics in the topic list. There are topic names, types, bandwidth, Hz, value in GUI
+In order to check the topics of TurtleBot3, we will use [rqt][rqt] provided by ROS. The rqt is a Qt-based framework for GUI development for ROS. The rqt is a tool that allows users to easily see the topic status by displaying all the topics in the topic list. There are topic names, types, bandwidth, Hz, value in GUI
 
 **[Remote PC]** Run the rqt.
 ``` bash
@@ -49,11 +50,11 @@ If you want to see more detail topic message, click the `▶` button next to eac
 
 ![](/assets/images/platform/turtlebot3/example/rqt_4.png)
 
-- `/diagnostics` indicates a message the status of the components connected to the turtlebot3, such as a MPU9250, a DYNAMIXEL X, a HLS-LFCD-LDS, a battery and a OpenCR.
+- `/diagnostics` indicates a message the status of the components connected to the TurtleBot3, such as a MPU9250, a DYNAMIXEL X, a HLS-LFCD-LDS, a battery and a OpenCR.
 
 ![](/assets/images/platform/turtlebot3/example/rqt_5.png)
 
-- `/odom` indicates a message the odometry of the turtlebot3. This topic has orientation and position by the encoder data.  
+- `/odom` indicates a message the odometry of the TurtleBot3. This topic has orientation and position by the encoder data.  
 
 ![](/assets/images/platform/turtlebot3/example/rqt_6.png)
 
@@ -66,3 +67,6 @@ If you want to see more detail topic message, click the `▶` button next to eac
 ![](/assets/images/platform/turtlebot3/example/rqt_8.png)
 
 In addition, you can monitor topics through rqt whenever you have a topic added.
+
+[bringup]: /docs/en/platform/turtlebot3/bringup/#bringup
+[rqt]: http://wiki.ros.org/rqt
