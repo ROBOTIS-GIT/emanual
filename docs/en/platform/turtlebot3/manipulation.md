@@ -37,26 +37,31 @@ sidebar:
 Install dependent packages for the Open-Manipulator.
 
 ```bash
-$ sudo apt-get install ros-kinetic-ros-controllers ros-kinetic-gazebo* ros-kinetic-moveit* ros-kinetic-dynamixel-sdk ros-kinetic-dynamixel-workbench-toolbox ros-kinetic-ar-track-alvar ros-kinetic-industrial-core 
+$ sudo apt-get install ros-kinetic-ros-controllers ros-kinetic-gazebo* ros-kinetic-moveit* ros-kinetic-dynamixel-sdk ros-kinetic-dynamixel-workbench-toolbox ros-kinetic-ar-track-alvar ros-kinetic-ar-track-alvar-msgs ros-kinetic-industrial-core 
 ```
 
 ```bash
 $ cd ~/catkin_ws/src/
 $ git clone https://github.com/ROBOTIS-GIT/open_manipulator.git
+$ git clone https://github.com/ROBOTIS-GIT/open_manipulator_msgs.git
+$ git clone https://github.com/ROBOTIS-GIT/open_manipulator_perception.git
+$ git clone https://github.com/ROBOTIS-GIT/open_manipulator_with_tb3.git
+$ git clone https://github.com/ROBOTIS-GIT/open_manipulator_with_tb3_msgs.git
+$ git clone https://github.com/ROBOTIS-GIT/open_manipulator_with_tb3_simulations.git
 $ git clone https://github.com/ROBOTIS-GIT/turtlebot3.git
 $ cd ~/catkin_ws && catkin_make
 ```
 
-If catkin_make command is completed without any errors, the preparation for Open-Manipulator is done.
+If catkin_make command is completed without any errors, the preparation for OpenManipulator is done.
 
 Load a TurtleBot3 Waffle or Waffle Pi with OpenManipulator on RViz.
 
-**TIP**: TB3_MODEL =  `waffle`, `waffle_pi` 
+**TIP**: TB3_MODEL = `waffle`, `waffle_pi` 
 {: .notice--info}
 
 ```
 $ export TURTLEBOT3_MODEL=${TB3_MODEL}
-$ roslaunch open_manipulator_with_tb3 open_manipulator_with_tb3_rviz.launch
+$ roslaunch open_manipulator_with_tb3_description open_manipulator_with_tb3_rviz.launch 
 ```
 
 ![](/assets/images/platform/openmanipulator/TurtleBot3_with_Open_Manipulator.png)
@@ -105,7 +110,7 @@ And launch open_manipulator_with_tb3_model
 
   ```bash
   $ export TURTLEBOT3_MODEL=${TB3_MODEL}
-  $ roslaunch open_manipulator_with_tb3 open_manipulator_with_tb3_model.launch use_gazebo:=false
+  $ roslaunch open_manipulator_with_tb3_description open_manipulator_with_tb3_model.launch use_gazebo:=false
   ```
 
 ## [SLAM](#slam)
@@ -137,7 +142,7 @@ $ roslaunch open_manipulator_with_tb3_tools open_manipulator_with_tb3_navigation
   - [ar_track_alvar](http://wiki.ros.org/ar_track_alvar)
 
 ```bash
-$ roslaunch open_manipulator_perception ar_pose.launch
+$ roslaunch open_manipulator_ar_markers ar_pose.launch
 ```
 
 ## [MoveIt!](#moveit)
@@ -159,7 +164,7 @@ $ roslaunch open_manipulator_with_tb3_tools open_manipulator_with_tb3_manipulati
 In order to control gripper, please use topic publish with below command in a new terminal window.
 
 ```
-$ rostopic pub /robotis/open_manipulator/gripper std_msgs/String "data: 'grip_off'" --once
+$ rostopic pub /open_manipulator_with_tb3/gripper std_msgs/String "data: 'grip_off'" --once
 ```
 
 ![](/assets/images/platform/turtlebot3/manipulation/open_manipulator_gripper.png)
@@ -179,7 +184,7 @@ User can modified this node to apply their environments.
 {: .notice--info}
 
 ```bash
-$ roslaunch open_manipulator_with_tb3_tools open_manipulator_with_tb3_controllerunch 
+$ roslaunch open_manipulator_with_tb3_tools open_manipulator_with_tb3_controller.launch
 ```
 
 ## [Simulation](#simulation)
@@ -193,7 +198,7 @@ Load an TurtleBot3 with OpenManipulator on Gazebo simulator and click `Play` but
 
 ```bash
 $ export TURTLEBOT3_MODEL=${TB3_MODEL}
-$ roslaunch open_manipulator_gazebo open_manipulator_with_tb3_gazebo.launch
+$ roslaunch open_manipulator_with_tb3_gazebo open_manipulator_with_tb3_gazebo.launch 
 ```
 
 ![](/assets/images/platform/turtlebot3/manipulation/open_manipulator_gazebo_1.png)
