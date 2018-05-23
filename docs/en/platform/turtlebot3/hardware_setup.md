@@ -29,7 +29,7 @@ sidebar:
 
 ### [Part List](#part-list)
 
-TurtleBot3 has two different models: `Burger`, `Waffle` and `Waffle Pi`. The following list shows their components. The big differences between two models are the Motor, the SBC(Single Board Computer) and the Sensors.
+TurtleBot3 has three different models: `Burger`, `Waffle` and `Waffle Pi`. The following list shows their components. The big differences between three models are the Motor, the SBC (Single Board Computer) and the Sensors. The TurtleBot3 Waffle model is discontinued due to discontinuation of Intel® Joule™.
 
 #### [Chassis Parts](#chassis-parts)
 
@@ -156,14 +156,14 @@ If it is difficult to assemble with the assembly manual, please refer to the fol
 
 ### [Open Source Hardware](#open-source-hardware)
 
-Core components of Turtlebot3 are the followings: Chassis, Motors, Wheels, OpenCR1.0, SBC Computer, Sensor and Battery. The chassis are Waffle Plates that holds other components. The Waffle Plate plays an important role as a chassis although its size is as small as your palm. Waffle plate is manufactured with injection mold method to lower the manufacturing cost. However, the CAD data of waffle plate for 3D printing is also available via [Onshape]. Turtlebot3 Burger is a Two-wheeled differential drive type platform, but it is customizable structurally and mechanically in many ways: Cars, Bikes, Trailers and so on.
+Core components of Turtlebot3 are the followings: Chassis, Motors, Wheels, OpenCR, SBC, Sensors and Battery. The chassis are Waffle Plates that holds other components. The Waffle Plate plays an important role as a chassis although its size is as small as your palm. The Waffle Plate is manufactured with injection mold method to lower the manufacturing cost. However, the CAD data of Waffle Plate for 3D printing is also available via [Onshape][waffle_plate_on_onshape]. Turtlebot3 Burger is a Two-wheeled differential drive type platform, but it is customizable structurally and mechanically in many ways: Segway, Tank, Bike, Trailer and so on.
 
-The CAD data is released to the [Onshape], which is a full-cloud 3D CAD editor. Get access through a web browser from your PC or from portable devices. OnShape allows drawing and assemblying parts with co-workers.
+The CAD data is released to the Onshape, which is a full-cloud 3D CAD editor. Get access through a web browser from your PC or from portable devices. Onshape allows drawing and assemblying parts with co-workers.
 
 - [TurtleBot3 Burger 3D Model](http://www.robotis.com/service/download.php?no=676)
 - [TurtleBot3 Waffle 3D Model](http://www.robotis.com/service/download.php?no=677)
 - [TurtleBot3 Waffle Pi 3D Model](http://www.robotis.com/service/download.php?no=678)
 
-[Onshape]: https://cad.onshape.com/documents?nodeId=3&resourceType=filter&column=promotedAt&order=desc&viewMode=0&q=turtlebot3
+[waffle_plate_on_onshape]: https://cad.onshape.com/documents/2586c4659ef3e7078e91168b/w/14abf4cb615429a14a2732cc/e/6c94f199b347f8785a67b6f8
 [Open Robotics]: http://www.osrfoundation.org/
 [ROBOTIS]: http://www.robotis.com

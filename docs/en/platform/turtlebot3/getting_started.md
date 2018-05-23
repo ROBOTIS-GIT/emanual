@@ -30,7 +30,7 @@ When you have finished understanding TurtleBot3 above, here are the software and
 If you want to use other products instead of SBCs and Sensors included in the basic configuration, please refer to the [Compatible Devices][compatible_devices] page. 
 
 ## [Let's try the basic operation](#lets-try-the-basic-operation)
-Once you have completed the above steps, then run the robot through the provided [Bringup][bringup] package, and remotely move the robot through the teleoperation function. Next,let's check various sensors' value mounted on the robot or control the robot by referring to the [Basic Operation][basic_operation] page.
+Once you have completed the above steps, then run the robot through the provided [Bringup][bringup] package, and remotely move the robot through the teleoperation function. Next, let's check various sensors' value mounted on the robot or control the robot by referring to the [Basic Operation][basic_operation] page.
 
 - [Bringup][bringup]
 - [Basic Operation][basic_operation]
