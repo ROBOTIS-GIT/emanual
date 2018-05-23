@@ -379,6 +379,9 @@
 <loc>http://localhost:4000/docs/kr/parts/sensor/cds-10/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/docs/en/platform/turtlebot3/challenges/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/docs/en/parts/controller/cm-100/</loc>
 </url>
 <url>
@@ -772,9 +775,6 @@
 <loc>http://localhost:4000/docs/kr/software/embedded_sdk/embedded_c_cm530/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/docs/en/platform/turtlebot3/events/</loc>
-</url>
-<url>
 <loc>http://localhost:4000/docs/en/dxl/ex/ex-106+/</loc>
 </url>
 <url>
@@ -818,9 +818,6 @@
 </url>
 <url>
 <loc>http://localhost:4000/docs/en/software/dynamixel/dynamixel_sdk/frequently_asked_questionsfaq/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/docs/en/platform/turtlebot3/friends/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/docs/en/platform/rh_p12_rn/gazebo/</loc>
@@ -913,6 +910,9 @@
 <loc>http://localhost:4000/docs/kr/dxl/pro/h42-20-s300-r/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/docs/kr/dxl/pro_plus/h42p-20-s300-r/</loc>
+</url>
+<url>
 <loc>http://localhost:4000/docs/en/dxl/pro/h54-100-s500-r/</loc>
 </url>
 <url>
@@ -923,6 +923,12 @@
 </url>
 <url>
 <loc>http://localhost:4000/docs/kr/dxl/pro/h54-200-s500-r/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/docs/kr/dxl/pro_plus/h54p-100-s500-r/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/docs/kr/dxl/pro_plus/h54p-200-s500-r/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/docs/en/parts/motor/h_speed_geared_motor/</loc>
@@ -1205,6 +1211,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/docs/kr/parts/interface/ln-101/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/docs/en/platform/turtlebot3/locomotion/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/docs/en/dxl/pro/m42-10-s260-r/</loc>
