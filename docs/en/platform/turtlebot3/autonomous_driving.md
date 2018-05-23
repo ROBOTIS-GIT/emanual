@@ -15,7 +15,7 @@ sidebar:
 
 # [Autonomous Driving](#autonomous-driving)
 
-**NOTE:** Turtlebot3 has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+**NOTE**: Turtlebot3 has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 {: .notice--info}
 
 We are currently doing several projects related with the keywords: Autonomous Driving and TurtleBot3s

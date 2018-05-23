@@ -50,7 +50,7 @@ $ sudo apt-get install gnome-disk-utility
 
 <iframe width="640" height="480" src="https://www.youtube.com/embed/V_6GNyL6Dac" frameborder="0" allowfullscreen></iframe>
 
-**TIP:** It is recommended using `GNOME Disks`, but other applications such as `ddrescue` on Linux can be used.
+**TIP**: It is recommended using `GNOME Disks`, but other applications such as `ddrescue` on Linux can be used.
 {: .notice--info}
 
 ``` bash
@@ -59,14 +59,14 @@ $ unxz ubuntu-mate-16.04.2-desktop-armhf-raspberry-pi.img.xz
 $ sudo ddrescue -D --force ubuntu-mate-16.04.2-desktop-armhf-raspberry-pi.img /dev/sdx
 ```
 
-**TIP:** It is recommended using `GNOME Disks`, but other applications such as `Win32 Disk Imager` on Windows can be used. [Win32 Disk Imager](https://sourceforge.net/projects/win32diskimager/)
+**TIP**: It is recommended using `GNOME Disks`, but other applications such as `Win32 Disk Imager` on Windows can be used. [Win32 Disk Imager](https://sourceforge.net/projects/win32diskimager/)
 {: .notice--info}
 
 ##### [2) Install ROS on TurtleBot PC](#2-install-ros-on-turtlebot-pc)
 
 ![](/assets/images/platform/turtlebot3/logo_ros.png)
 
-**NOTE:** This instruction takes about 1 hours to install ROS and related packages for TurtleBot3. Elapsed time may vary depending on network environment.
+**NOTE**: This instruction takes about 1 hours to install ROS and related packages for TurtleBot3. Elapsed time may vary depending on network environment.
 {: .notice--info}
 
 **[TurtleBot]** The following script will allow you to simplify the ROS installation procedure. Run the following command in a terminal window on TurtleBot PC. The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`-`Alt`-`T`. After install ROS, please reboot TurtleBot PC.
@@ -77,7 +77,7 @@ $ sudo apt-get upgrade
 $ wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic_rp3.sh && chmod 755 ./install_ros_kinetic_rp3.sh && bash ./install_ros_kinetic_rp3.sh
 ```
 
-**NOTE:** In order to check which packages are installed, please check this link out. [install_ros_kinetic_rp3.sh](https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic_rp3.sh)
+**NOTE**: In order to check which packages are installed, please check this link out. [install_ros_kinetic_rp3.sh](https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic_rp3.sh)
 {: .notice--info}
 
 If you prefer manual installation, please following the link below.
@@ -97,7 +97,7 @@ $ git clone https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
 $ git clone https://github.com/ROBOTIS-GIT/turtlebot3.git
 ```
 
-**NOTE:** If you want to use Raspberry Pi Camera, please check related appendix for [Raspberry Pi Camera][appendix_raspi_cam]
+**NOTE**: If you want to use Raspberry Pi Camera, please check related appendix for [Raspberry Pi Camera][appendix_raspi_cam]
 {: .notice--info}
 
 **[TurtleBot]** Delete some packages that are not needed in TurtleBot PC
@@ -169,7 +169,7 @@ $ source ~/.bashrc
 
 #### [Install Linux based on Raspbian](#install-linux-based-on-raspbian)
 
-**WARNING:** The SDcard should have at least **16 GB** of empty space in order to install Linux on Raspberry Pi 3.
+**WARNING**: The SDcard should have at least **16 GB** of empty space in order to install Linux on Raspberry Pi 3.
 {: .notice--warning}
 
 We provide the Linux distro image based on Raspbian. They are pre-installed with ROS and ROS-packages related TurtleBot3. It supports the TurtleBot3 Burger and Waffle Pi model. In this distro image, non-free software like Wolfram, Mathematica, Minecraft Pi and Oracle Java SE are removed. 

@@ -17,7 +17,7 @@ sidebar:
 
 ### [Joule Setup](#joule-setup)
 
-**WARNING:** Setup work requires Power and Time. So battery is not suitable. We recommend using SMPS (AC adapter) during this work.
+**WARNING**: Setup work requires Power and Time. So battery is not suitable. We recommend using SMPS (AC adapter) during this work.
 {: .notice--warning}
 
 #### [Install Linux (Ubuntu)](#install-linux-ubuntu)
@@ -36,10 +36,10 @@ In this section, the Alternative Ubuntu Desktop 16.04 LTS will be installed on I
 
 - [BIOS update](https://software.intel.com/en-us/flashing-the-bios-on-joule)
 
-**WARNING:** Updating to the latest BIOS(1J2 or higher) may cause unexpected problem of `Intel® Joule™` with Ubuntu 16.04 LTS. Please use only the recommended [BIOS version #193][bios-version-193].
+**WARNING**: Updating to the latest BIOS(1J2 or higher) may cause unexpected problem of `Intel® Joule™` with Ubuntu 16.04 LTS. Please use only the recommended [BIOS version #193][bios-version-193].
 {: .notice--warning}
 
-**WARNING:** `Intel® Joule™` comes with `passive heatsink` in the package. It is recommended to use the heatsink. In order to operate Joule without the heatsink, please follow the extra [instruction](https://software.intel.com/en-us/node/721471)
+**WARNING**: `Intel® Joule™` comes with `passive heatsink` in the package. It is recommended to use the heatsink. In order to operate Joule without the heatsink, please follow the extra [instruction](https://software.intel.com/en-us/node/721471)
 {: .notice--warning}
 
 [bios-version-193]: https://downloadmirror.intel.com/26206/eng/joule-firmware-2017-02-19-193-public.zip
@@ -54,15 +54,15 @@ If you need following step for installation, please refer to below link
 
 #### [Install ROS](#install-ros)
 
-**WARNING:** The contents in this chapter corresponds to the Intel® Joule™ which will be the main computer of **TurtleBot3 Waffle**. Do **NOT** apply this instruction to your Remote PC (your desktop PC or laptop).
+**WARNING**: The contents in this chapter corresponds to the Intel® Joule™ which will be the main computer of **TurtleBot3 Waffle**. Do **NOT** apply this instruction to your Remote PC (your desktop PC or laptop).
 {: .notice--warning}
 
-**NOTE:** This instruction takes about 2 hours to install ROS and related packages for TurtleBot3. Elapsed time may vary depending on network environment.
+**NOTE**: This instruction takes about 2 hours to install ROS and related packages for TurtleBot3. Elapsed time may vary depending on network environment.
 {: .notice--info}
 
 ![](/assets/images/platform/turtlebot3/logo_ros.png)
 
-**TIP:** The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is Ctrl-Alt-T.
+**TIP**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is Ctrl-Alt-T.
 {: .notice--info}
 
 **[TurtleBot]** Install ROS
@@ -73,10 +73,10 @@ $ sudo apt-get upgrade
 $ wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic.sh && chmod 755 ./install_ros_kinetic.sh && bash ./install_ros_kinetic.sh
 ```
 
-**NOTE:** In order to check which packages are installed, please check this link out. [install_ros_kinetic](https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic.sh)
+**NOTE**: In order to check which packages are installed, please check this link out. [install_ros_kinetic](https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic.sh)
 {: .notice--info}
 
-**NOTE:** After install ROS, please reboot Intel® Joule™.
+**NOTE**: After install ROS, please reboot Intel® Joule™.
 {: .notice--info}
 
 If you prefer manual installation, please following the link below.
@@ -96,7 +96,7 @@ $ git clone https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
 $ git clone https://github.com/ROBOTIS-GIT/turtlebot3.git
 ```
 
-**NOTE:** If you want to use Intel® RealSense™, please check related appendix for [Intel® RealSense™](http://emanual.robotis.com/docs/en/platform/turtlebot3/appendix_realsense/#realsense)
+**NOTE**: If you want to use Intel® RealSense™, please check related appendix for [Intel® RealSense™](http://emanual.robotis.com/docs/en/platform/turtlebot3/appendix_realsense/#realsense)
 {: .notice--info}
 
 **[TurtleBot]** Delete some packages that are not needed in TurtleBot SBC
@@ -112,7 +112,7 @@ $ sudo rm -r turtlebot3_description/ turtlebot3_teleop/ turtlebot3_navigation/ t
 $ sudo apt-get install ros-kinetic-rosserial-python ros-kinetic-tf
 ```
 
-**NOTE:** After install packages, please reboot Intel® Joule™.
+**NOTE**: After install packages, please reboot Intel® Joule™.
 {: .notice--info}
 
 **[TurtleBot]** Build packages

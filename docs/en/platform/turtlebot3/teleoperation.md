@@ -18,13 +18,13 @@ sidebar:
 
 ![](/assets/images/platform/turtlebot3/software/remote_pc_and_turtlebot.png)
 
-**NOTE:** This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+**NOTE**: This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 {: .notice--info}
 
-**WARNING:** Make sure to run the [Bringup](#bringup) instruction before performing examples, and be careful when testing the robot on the table as the robot might fall.
+**WARNING**: Make sure to run the [Bringup](#bringup) instruction before performing examples, and be careful when testing the robot on the table as the robot might fall.
 {: .notice--warning}
 
-**TIP:** The teleoperation is supposed to be running on the remote PC. **Follow the instruction on your Remote PC**.
+**TIP**: The teleoperation is supposed to be running on the remote PC. **Follow the instruction on your Remote PC**.
 {: .notice--info}
 
 TurtleBot3 can be teleoperated by various devices. It is tested with several wireless devices such as PS3, XBOX 360, ROBOTIS RC100 and etc. Examples shown here(except the LEAP Motion) can be launched by ROS on Ubuntu mate 16.04 with Raspberry Pi 3 and OpenCR1.0 which controls DYNAMIXEL.
@@ -33,7 +33,7 @@ TurtleBot3 can be teleoperated by various devices. It is tested with several wir
 
 ### [Keyboard](#keyboard)
 
-**TIP:** The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is Ctrl-Alt-T.
+**TIP**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is Ctrl-Alt-T.
 {: .notice--info}
 
 **[Remote PC]** Launch the file for simple teleoperation test.

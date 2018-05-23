@@ -18,10 +18,10 @@ sidebar:
 This chapter shows some demos using Turtlebot3.
 In order to implement these demos, you have to install the turtlebot3_applications package.
 
-**NOTE:** Turtlebot3 has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+**NOTE**: Turtlebot3 has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 {: .notice--info}
 
-**TIP:** The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`-`Alt`-`T`.
+**TIP**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`-`Alt`-`T`.
 {: .notice--info}
 
 **[Remote PC]** Go to ROS source directory (/home/(user_name)/catkin_ws/src) and clone the turtlebot3_applications repository.
@@ -39,10 +39,10 @@ $ cd ~/catkin_ws && catkin_make
 
 ## [TurtleBot Follower Demo](#turtlebot-follower-demo)
 
-**NOTE:** The follower demo was implemented only using a 360 Laser Distance Sensor LDS-01. a classification algorithm is used based on previous fitting with samples of person and obstacles positions to take actions. It follows someone in front of the robot within a 50 centimeter range and 140 degrees.
+**NOTE**: The follower demo was implemented only using a 360 Laser Distance Sensor LDS-01. a classification algorithm is used based on previous fitting with samples of person and obstacles positions to take actions. It follows someone in front of the robot within a 50 centimeter range and 140 degrees.
 {: .notice--info}
 
-**NOTE:** Running the follower demo in an area with obstacles may not work well. Therefore, it is recommended to run the demo in an open area without obstacles.
+**NOTE**: Running the follower demo in an area with obstacles may not work well. Therefore, it is recommended to run the demo in an open area without obstacles.
 {: .notice--info}
 
 **[TurtleBot]** In order to run the demo, parameter in LIDAR launch file has to be modified. In the below example, Pluma is used to edit the launch file. In the param tag with frame_id as a name, replace `base_scan` to `odom` and save the file as shown in the below images.
@@ -56,7 +56,7 @@ $ pluma ~/catkin_ws/src/turtlebot3/turtlebot3_bringup/launch/turtlebot3_lidar.la
 
 ![](/assets/images/platform/turtlebot3/application/odom.png)
 
-**NOTE:** Turtlebot Follower Demo requires scikit-learn, NumPy and ScyPy packages.
+**NOTE**: Turtlebot Follower Demo requires scikit-learn, NumPy and ScyPy packages.
 {: .notice--info}
 
 **[Remote PC]** Install scikit-learn, NumPy and ScyPy packages with below commands.
@@ -102,13 +102,13 @@ $ rosrun turtlebot3_follower follower.py
 
 ## [TurtleBot Panorama Demo using Raspberry Pi Camera Module](#turtlebot-panorama-demo-using-raspberry-pi-camera-module)
 
-**NOTE:** The turtlebot3_panorama demo uses pano_ros for taking snapshots and stitching them together to create panoramic image.
+**NOTE**: The turtlebot3_panorama demo uses pano_ros for taking snapshots and stitching them together to create panoramic image.
 {: .notice--info}
 
-**NOTE:** Panorama demo requires to install Raspicam package. Instructions for installing this package can be found at [Gihub Link](https://github.com/UbiquityRobotics/raspicam_node)
+**NOTE**: Panorama demo requires to install Raspicam package. Instructions for installing this package can be found at [Gihub Link](https://github.com/UbiquityRobotics/raspicam_node)
 {: .notice--info}
 
-**NOTE:** Panorama demo requires to install OpenCV and cvbridge packages. Instructions for installing OpenCV can be found at [OpenCV Tutorial Link](http://docs.opencv.org/2.4/doc/tutorials/introduction/linux_install/linux_install.html)
+**NOTE**: Panorama demo requires to install OpenCV and cvbridge packages. Instructions for installing OpenCV can be found at [OpenCV Tutorial Link](http://docs.opencv.org/2.4/doc/tutorials/introduction/linux_install/linux_install.html)
 {: .notice--info}
 
 **[TurtleBot]** Launch the Raspberry Pi cam V2
@@ -151,10 +151,10 @@ $ rqt_image_view image:=/turtlebot3_panorama/panorama
 ![](/assets/images/platform/turtlebot3/application/panorama_view.png)
 
 ## [Automatic Parking](#automatic-parking)
-**NOTE:** The turtlebot3_automatic_parking demo was using a 360 laser Distance Sensor LDS-01 and a reflective tape. The LaserScan topic has intensity and distance data from LDS. The turtlebot3 uses this to locate the reflective tape.
+**NOTE**: The turtlebot3_automatic_parking demo was using a 360 laser Distance Sensor LDS-01 and a reflective tape. The LaserScan topic has intensity and distance data from LDS. The turtlebot3 uses this to locate the reflective tape.
 {: .notice--info}
 
-**NOTE:** The turtlebot3_automatic_parking demo requires NumPy package.
+**NOTE**: The turtlebot3_automatic_parking demo requires NumPy package.
 {: .notice--info}
 
 **[Remote PC]** Install NumPy package with below commands.
@@ -225,13 +225,13 @@ $ rosrun turtlebot3_automatic_parking automatic_parking.py
 /images/platform/turtlebot3/application/panorama_view.png)
 
 ## [Automatic Parking Vision](#automatic-parking-vision)
-**NOTE:** The turtlebot3_automatic_parking_vision uses raspberry pi camera and so the robot which is a default platform used for this demo is TurtleBot3 Waffle Pi. Since it parks from finding out AR marker on some wall, printed AR marker should be prepared. Whole process uses the image get from the camera, so if the process is not well being done, configure the parameters, such as brightness, contrast, etc.
+**NOTE**: The turtlebot3_automatic_parking_vision uses raspberry pi camera and so the robot which is a default platform used for this demo is TurtleBot3 Waffle Pi. Since it parks from finding out AR marker on some wall, printed AR marker should be prepared. Whole process uses the image get from the camera, so if the process is not well being done, configure the parameters, such as brightness, contrast, etc.
 {: .notice--info}
 
-**NOTE:** The turtlebot3_automatic_parking_vision uses rectified image based on image_proc nodes. To get rectified image, the robot should get optic calibration data for raspberry pi camera. (Every downloaded turtlebot3 packages already have the camera calibration data as raspberry pi camera v2 default.)
+**NOTE**: The turtlebot3_automatic_parking_vision uses rectified image based on image_proc nodes. To get rectified image, the robot should get optic calibration data for raspberry pi camera. (Every downloaded turtlebot3 packages already have the camera calibration data as raspberry pi camera v2 default.)
 {: .notice--info}
 
-**NOTE:** The turtlebot3_automatic_parking_vision package requires ar_track_alvar package.
+**NOTE**: The turtlebot3_automatic_parking_vision package requires ar_track_alvar package.
 {: .notice--info}
 
 **[Remote PC]** Install ar_track_alvar package by following commands.

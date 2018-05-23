@@ -15,11 +15,11 @@ sidebar:
 
 # [Navigation](#navigation)
 
-**NOTE:** This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame` version.
+**NOTE**: This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame` version.
 {: .notice--info}
 
 {% capture warning_01 %}
-**WARNING:** 
+**WARNING**: 
 1. Make sure to run the [Bringup][Bringup] instruction before performing Navigation.
 2. The navigation uses the a data created in [SLAM][SLAM]. Please make sure to have a map data.
 3. Be careful when testing the robot on the table as the robot might fall.
@@ -30,12 +30,12 @@ The Navigation locates TurtleBot3 to the calculated position in the map by combi
 
 ## [Perform Navigation](#perform-navigation)
 
-**TIP:** The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`-`Alt`-`T`.
+**TIP**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`-`Alt`-`T`.
 {: .notice--info}
 
 **[Remote PC]** Launch the navigation file.
 
-**TIP:** ${TB3_MODEL} = `burger`, `waffle`, `waffle_pi` 
+**TIP**: ${TB3_MODEL} = `burger`, `waffle`, `waffle_pi` 
 {: .notice--info}
 
 ``` bash

@@ -16,13 +16,13 @@ sidebar:
 
 ## [Topic Monitor](#topic-monitor)
 
-**NOTE:** This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+**NOTE**: This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 {: .notice--info}
 
-**TIP:** The example is supposed to be running on the remote PC. **Follow the instruction on your Remote PC**.
+**TIP**: The example is supposed to be running on the remote PC. **Follow the instruction on your Remote PC**.
 {: .notice--info}
 
-**WARNING:** Make sure to run the [Bringup](#bringup) instruction before performing examples, and be careful when testing the robot on the table as the robot might fall.
+**WARNING**: Make sure to run the [Bringup](#bringup) instruction before performing examples, and be careful when testing the robot on the table as the robot might fall.
 {: .notice--warning}
 
 The [rqt](http://wiki.ros.org/rqt) is a Qt-based framework for GUI development for ROS. The rqt is a tool that allows users to easily see the topic status by displaying all the topics in the topic list. There are topic names, types, bandwidth, Hz, value in GUI
@@ -33,7 +33,7 @@ $ rqt
 ```
 ![](/assets/images/platform/turtlebot3/example/rqt_1.png)
 
-**TIP:** If rqt is not displayed, select the `plugin` -> `Topics` -> `Topic Monitor`.
+**TIP**: If rqt is not displayed, select the `plugin` -> `Topics` -> `Topic Monitor`.
 {: .notice--info}
 
 When rqt is first run, the topic values are not monitored. To monitor the topic, click the checkbox next to each topic.

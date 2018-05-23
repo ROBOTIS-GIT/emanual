@@ -17,18 +17,18 @@ sidebar:
 
 ![](/assets/images/platform/turtlebot3/software/remote_pc_and_turtlebot.png)
 
-**NOTE:** This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+**NOTE**: This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 {: .notice--info}
 
 {% capture warning_01 %}
-**WARNING:** 
+**WARNING**: 
 1. This instruction is intended to be run on the remote PC. If you are following the instruction on **TurtleBot**, please do **NOT** run *roscore* command. 
 2. Make sure that IP address on each device is set correctly.
 3. When the battery voltage is lower than 11V, the buzzer alarm will continuously sound and actuators will be disabled. The battery must be recharged when the buzzer alarm sounds.
 {% endcapture %}
 <div class="notice--warning">{{ warning_01 | markdownify }}</div>
 
-**NOTE:** Before start bringup TurtleBot3, We recommend you add `export` command to `bashrc` depend on your TurtleBot3(`burger` or `waffle` or `waffle_pi`)
+**NOTE**: Before start bringup TurtleBot3, We recommend you add `export` command to `bashrc` depend on your TurtleBot3(`burger` or `waffle` or `waffle_pi`)
 {: .notice--info}
 
 ``` bash
@@ -42,7 +42,7 @@ sidebar:
 
 ## [Run roscore](#run-roscore)
 
-**NOTE:** The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`-`Alt`-`T`.
+**NOTE**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`-`Alt`-`T`.
 {: .notice--info}
 
 **[Remote PC]** Run roscore.
@@ -59,7 +59,7 @@ $ roscore
 $ roslaunch turtlebot3_bringup turtlebot3_robot.launch
 ```
 
-**TIP:** If you want to launch Lidar sensor and core separately, please use below commands.
+**TIP**: If you want to launch Lidar sensor and core separately, please use below commands.
 {: .notice--info}
 
 ``` bash
@@ -67,7 +67,7 @@ $ roslaunch turtlebot3_bringup turtlebot3_lidar.launch
 $ roslaunch turtlebot3_bringup turtlebot3_core.launch
 ```
 
-**NOTE:** If `lost sync with device` error message is displayed on the terminal window, the sensor device of TurtleBot3 might not be securely connected.
+**NOTE**: If `lost sync with device` error message is displayed on the terminal window, the sensor device of TurtleBot3 might not be securely connected.
 {: .notice--info}
 
 **[Remote PC]** Run RViz
@@ -88,7 +88,7 @@ $ rosrun rviz rviz -d `rospack find turtlebot3_description`/rviz/model.rviz
 $ roslaunch turtlebot3_bringup turtlebot3_robot.launch
 ```
 
-**TIP:** If you want to launch Lidar sensor, Intel® RealSense™ R200 and core separately, please use below commands.
+**TIP**: If you want to launch Lidar sensor, Intel® RealSense™ R200 and core separately, please use below commands.
 {: .notice--info}
 
 ``` bash
@@ -97,10 +97,10 @@ $ roslaunch turtlebot3_bringup turtlebot3_realsense.launch
 $ roslaunch turtlebot3_bringup turtlebot3_core.launch
 ```
 
-**NOTE:** Before you use Intel® RealSense™, please check related appendix [Intel® RealSense™](http://emanual.robotis.com/docs/en/platform/turtlebot3/appendix_realsense/#installation)
+**NOTE**: Before you use Intel® RealSense™, please check related appendix [Intel® RealSense™](http://emanual.robotis.com/docs/en/platform/turtlebot3/appendix_realsense/#installation)
 {: .notice--info}
 
-**NOTE:** If `lost sync with device` error message is displayed on the terminal window, sensor devices of the TurtleBot3 might not be securely connected.
+**NOTE**: If `lost sync with device` error message is displayed on the terminal window, sensor devices of the TurtleBot3 might not be securely connected.
 {: .notice--info}
 
 **[Remote PC]** Run RViz
@@ -121,7 +121,7 @@ $ rosrun rviz rviz -d `rospack find turtlebot3_description`/rviz/model.rviz
 $ roslaunch turtlebot3_bringup turtlebot3_robot.launch
 ```
 
-**TIP:** If you want to launch Lidar sensor, Raspberry Pi Camera and core separately, please use below commands.
+**TIP**: If you want to launch Lidar sensor, Raspberry Pi Camera and core separately, please use below commands.
 {: .notice--info}
 
 ``` bash
@@ -130,10 +130,10 @@ $ roslaunch turtlebot3_bringup turtlebot3_lidar.launch
 $ roslaunch turtlebot3_bringup turtlebot3_core.launch
 ```
 
-**NOTE:** Before you use Raspberry Pi Camera, please check related appendix [Raspberry Pi Camera](http://emanual.robotis.com/docs/en/platform/turtlebot3/appendix_raspi_cam/#installation)
+**NOTE**: Before you use Raspberry Pi Camera, please check related appendix [Raspberry Pi Camera](http://emanual.robotis.com/docs/en/platform/turtlebot3/appendix_raspi_cam/#installation)
 {: .notice--info}
 
-**NOTE:** If `lost sync with device` error message is displayed on the terminal window, sensor devices of the TurtleBot3 might not be securely connected.
+**NOTE**: If `lost sync with device` error message is displayed on the terminal window, sensor devices of the TurtleBot3 might not be securely connected.
 {: .notice--info}
 
 **[Remote PC]** Run RViz

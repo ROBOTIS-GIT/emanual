@@ -16,13 +16,13 @@ sidebar:
 
 ## [Basic Examples](#basic-examples)
 
-**NOTE:** This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+**NOTE**: This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 {: .notice--info}
 
-**WARNING:** Make sure to run the [Bringup](#bringup) instruction before performing examples, and be careful when testing the robot on the table as the robot might fall.
+**WARNING**: Make sure to run the [Bringup](#bringup) instruction before performing examples, and be careful when testing the robot on the table as the robot might fall.
 {: .notice--warning}
 
-**TIP:** The example is supposed to be running on the remote PC. **Follow the instruction on your Remote PC**.
+**TIP**: The example is supposed to be running on the remote PC. **Follow the instruction on your Remote PC**.
 {: .notice--info}
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Xg1pKFQY5p4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
@@ -31,13 +31,13 @@ sidebar:
 
 TurtleBot3 can be moved by interactive markers on RViz. You can move the turtlebot3 to rotate or linear using interactive markers.
 
-**TIP:** The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is Ctrl-Alt-T.
+**TIP**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is Ctrl-Alt-T.
 {: .notice--info}
 
 **[Remote PC]** Open a new terminal and launch the remote file.
 If you have TurtleBot3 Burger,
 
-**TIP:** TB3_MODEL = `burger`, `waffle`, `waffle_pi` 
+**TIP**: TB3_MODEL = `burger`, `waffle`, `waffle_pi` 
 {: .notice--info}
 
 ``` bash
