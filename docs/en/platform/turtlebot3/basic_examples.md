@@ -19,7 +19,7 @@ sidebar:
 {% capture notice_01 %}
 **NOTE**: 
 - This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
-- This examples are supposed to be running on the remote PC. Follow the instruction on your **Remote PC**.
+- This instruction is supposed to be running on the remote PC. Follow the instruction on your **Remote PC**.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
@@ -32,7 +32,10 @@ sidebar:
 
 The TurtleBot3 can be moved by [Interactive Markers][interactive_markers] on RViz. You can move the TurtleBot3 to rotate or linear using Interactive Markers.
 
-**[Remote PC]** Open a new terminal and launch the remote file. Before executing this command, you have to specify the model name of TurtleBot3. `${TB3_MODEL}` is the name of the model you are using in `burger`,` waffle`, or `waffle_pi`.
+**[Remote PC]** Open a new terminal and launch the remote file. 
+
+**TIP**: Before executing this command, you have to specify the model name of TurtleBot3. The `${TB3_MODEL}` is the name of the model you are using in `burger`,` waffle`, `waffle_pi`. If you want to permanently set the export settings, please refer to [Export TURTLEBOT3_MODEL][export_turtlebot3_model]{: .popup} page.
+{: .notice--success}
 
 **TIP**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`-`Alt`-`T`.
 {: .notice--info}
@@ -86,3 +89,4 @@ $ rosrun turtlebot3_example turtlebot3_client.py
 [bringup]: /docs/en/platform/turtlebot3/bringup/#bringup
 [interactive_markers]: http://wiki.ros.org/interactive_markers
 [tutorial_video]: https://youtu.be/Xg1pKFQY5p4
+[export_turtlebot3_model]: /docs/en/platform/turtlebot3/export_turtlebot3_model

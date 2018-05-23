@@ -16,17 +16,18 @@ sidebar:
 
 ## [Topic Monitor](#topic-monitor)
 
+**WARNING**: Be careful when running the robot on the table as the robot might fall.
+{: .notice--warning}
+
 {% capture notice_01 %}
 **NOTE**: 
-- This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
-- This examples are supposed to be running on the remote PC. Follow the instruction on your **Remote PC**.
+- This instructions were tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+- This instructions are supposed to be running on the remote PC. Please run the instructions below on your **Remote PC**.
+- Make sure to run the [Bringup](/docs/en/platform/turtlebot3/bringup/#bringup) instructions before running the instructions below.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
-**WARNING**: Make sure to run the [Bringup][bringup] instruction before performing this examples, and be careful when testing the robot on the table as the robot might fall.
-{: .notice--warning}
-
-In order to check the topics of TurtleBot3, we will use [rqt][rqt] provided by ROS. The rqt is a Qt-based framework for GUI development for ROS. The rqt is a tool that allows users to easily see the topic status by displaying all the topics in the topic list. There are topic names, types, bandwidth, Hz, value in GUI
+In order to check the topics of TurtleBot3, we will use [rqt][rqt] provided by ROS. The rqt is a Qt-based framework for GUI development for ROS. The rqt is a tool that allows users to easily see the topic status by displaying all the topics in the topic list. There are topic names, types, bandwidth, Hz, value in GUI.
 
 **[Remote PC]** Run the rqt.
 ``` bash
