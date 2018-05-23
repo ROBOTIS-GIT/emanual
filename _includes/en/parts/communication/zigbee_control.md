@@ -12,7 +12,7 @@
 
 OLLO and Bioloid both use the RC-100, which uses IR communication method. To upgrade to the Zigbee communication method, you must purchase the  ZIG-110 set separately. The ZIG-110 set includes one Zig-100 module, which is attached to the [RC-100], and one Zig-110 module which is attached to the [Controller].
 
-`Note` The modules in a single Zigbee set have been preconfigured to communicate with each other. Therefore, a module from one set may not work with a module from another set. Please be careful not to mix them up.
+**NOTE** : The modules in a single Zigbee set have been preconfigured to communicate with each other. Therefore, a module from one set may not work with a module from another set. Please be careful not to mix them up.
 {: .notice}
 
 |ZIG-100 installed in RC-100|ZIG-110 installed in CM-100|

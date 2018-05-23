@@ -35,7 +35,7 @@ RoboPlus is a software to create a customized programme for every ROBOTIS produc
 
 ![img_install](/assets/images/sw/roboplus_install_en.png)
 
-`Note` To execute RoboPlus, .NET FrameWork 3.5 or higher version is required. When installing RoboPlus, if the automatic installation of .NET FrameWork fails, .NET FrameWork must be installed separately.
+**NOTE** : To execute RoboPlus, .NET FrameWork 3.5 or higher version is required. When installing RoboPlus, if the automatic installation of .NET FrameWork fails, .NET FrameWork must be installed separately.
 {: .notice}
 
 ### RoboPlus Install Failure
@@ -339,10 +339,10 @@ In the program as shown below, users can set up and test Dynamixels.
 - Parameters that can be set and tested for each device are shown in the table.  Clicking on a Dynamixel Name/ID  will call a subwindow to set or test the parameter. The subwindow simplifies the process of setting the parameter for the user.  
 - The image above is a screen shot of RoboPlus manager when the "Goal Position" parameter is clicked.  A subwindow is shown on the lower right hand corner when any row is clicked.  However, no subwindow will be displayed if only values need to be shown.
  
-`Note` When an actuator with an ID in ① is double clicked, the actuator is selected and its LED will blink for a moment. This is used to check where the actuator is located.
+**NOTE** : When an actuator with an ID in ① is double clicked, the actuator is selected and its LED will blink for a moment. This is used to check where the actuator is located.
 {: .notice}
 
-`Note` Actuators can be managed in a group.
+**NOTE** : Actuators can be managed in a group.
 {: .notice}
 
 ### [ID Setup](#id-setup)

@@ -17,7 +17,7 @@ A `Task` is a set of motions to perform a certain actions. RoboPlus refers to th
 
 Task code files have a file extension _.tsk_, and the icon shown on the left.
 
-`Note` Task files from newer versions are not compatible with older versions.
+**NOTE** : Task files from newer versions are not compatible with older versions.
 {: .notice}
 
 ![R+Task][R+task]
@@ -38,7 +38,7 @@ RoboPlus is a software to create a customized programme for every ROBOTIS produc
 
 ![img_install][img_install]
 
-`Note` To execute RoboPlus, .NET FrameWork 3.5 or higher version is required. When installing RoboPlus, if the automatic installation of .NET FrameWork fails, .NET FrameWork must be installed separately.
+**NOTE** : To execute RoboPlus, .NET FrameWork 3.5 or higher version is required. When installing RoboPlus, if the automatic installation of .NET FrameWork fails, .NET FrameWork must be installed separately.
 {: .notice}
 
 ### RoboPlus Install Failure

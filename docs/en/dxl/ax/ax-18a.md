@@ -15,7 +15,7 @@ sidebar:
 
 > AX-18F, AX-18A
 
-`Note` AX-18A is a new version of the AX-18F with the same performance but more advanced external design.
+**NOTE** : AX-18A is a new version of the AX-18F with the same performance but more advanced external design.
 {: .notice}
 
 # [Specifications](#specifications)
@@ -39,7 +39,7 @@ sidebar:
 | Feedback               | Position, Temperature, Load, Input Voltage, etc                             |
 | Material               | Engineering Plastic                                                         |
 
-`Note` Stall torque is the maximum instantaneous and static  torque. Stable motions are possible with robots designed for loads with 1/5 or less of the stall torque.
+**NOTE** : Stall torque is the maximum instantaneous and static  torque. Stable motions are possible with robots designed for loads with 1/5 or less of the stall torque.
 {: .notice}
 
 {% include en/dxl/warning.md %}
@@ -50,7 +50,7 @@ The Control Table is a structure of data implemented in the DYNAMIXEL. Users can
 ## [Control Table, Data, Address](#control-table-data-address)
 The Control Table is a structure that consists of multiple Data fields to store status of the DYNAMIXEL or to control the DYNAMIXEL. Users can check current status of the DYNAMIXEL by reading a specific Data from the Control Table with Read Instruction Packets. WRITE Instruction Packets enable users to control the DYNAMIXEL by changing specific Data in the Control Table. The Address is a unique value when accessing a specific Data in the Control Table with Instruction Packets. In order to read or write data, users must designate a specific Address in the Instruction Packet. Please refer to [Protocol] for more details about Instruction Packets.
 
-`Note` Two's complement is applied for the negative value. For more information, please refer to [Two's complement] from Wikipedia.
+**NOTE** : Two's complement is applied for the negative value. For more information, please refer to [Two's complement] from Wikipedia.
 {: .notice--warning}
 
 ### [Area (EEPROM, RAM)](#area-eeprom-ram)
@@ -136,7 +136,7 @@ Each data in the Control Table is restored to initial values when the DYNAMIXEL 
 |    103     |   19200   |     -0.160%     |
 |    207     |   9600    |     -0.160%     |
 
-`Note` Less than 3% of the baud rate error margin will not affect to UART communication.
+**NOTE** : Less than 3% of the baud rate error margin will not affect to UART communication.
 {: .notice}
 
 
@@ -231,7 +231,7 @@ Each data in the Control Table is restored to initial values when the DYNAMIXEL 
 
 # [Reference](#reference)
 
-`Note` [Compatibility Guide]
+**NOTE** : [Compatibility Guide]
 {: .notice}
 
 ## [Connector Information](#connector-information)

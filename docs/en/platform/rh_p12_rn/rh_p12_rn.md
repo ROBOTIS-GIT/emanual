@@ -252,7 +252,7 @@ The Dynamixel can protect itself by detecting dangerous situations that could oc
 | Bit 0 |       Input Voltage Error       | Detect input voltage exceeds the configured operating voltage                   |
 
 {% capture rh_p12_rn_01 %}
-`Note` If Shutdown occurs, use below method to reboot Dynamixels.
+**NOTE** : If Shutdown occurs, use below method to reboot Dynamixels.
 1. H/W REBOOT : Turn off the power and turn on again
 2. S/W REBOOT : Transmit REBOOT Instruction (For more details, please refer to the [Protocol] section of e-Manual.)
 {% endcapture %}
@@ -286,7 +286,7 @@ When the instruction from the user is received by the gripper, it takes followin
 
 ![](/assets/images/platform/rh_p12_rn/rh_p12_rn_control_diagram.png)
 
-`Note` K<sub>P</sub>A stands for Anti-windup Gain which cannot be modified by users. For more details about the PID controller, please refer to the [PID Controller at wikipedia](http://en.wikipedia.org/wiki/PID_controller).
+**NOTE** : K<sub>P</sub>A stands for Anti-windup Gain which cannot be modified by users. For more details about the PID controller, please refer to the [PID Controller at wikipedia](http://en.wikipedia.org/wiki/PID_controller).
 {: .notice}
 
 
@@ -307,10 +307,10 @@ If Goal Velocity(600) is set to '0', Profile is disabled and use the maximum RPM
 |:---------:|:----------------------------------------:|
 | 0.114 rpm | -Velocity Limit(32) ~ Velocity Limit(32) |
 
-`Note` The maximum velocity and maximum current of DYNAMIXEL is affected by supplying voltage. Therefore, if supplying voltage changes, so does the maximum velocity. This manual complies with recommended supply voltage(24[V]).
+**NOTE** : The maximum velocity and maximum current of DYNAMIXEL is affected by supplying voltage. Therefore, if supplying voltage changes, so does the maximum velocity. This manual complies with recommended supply voltage(24[V]).
 {: .notice}
 
-`Note` Please check the maximum rpm of the Dynamixel. The motor cannot exceed the maximum rpm with the higher Moving Speed value.
+**NOTE** : Please check the maximum rpm of the Dynamixel. The motor cannot exceed the maximum rpm with the higher Moving Speed value.
 {: .notice}
 
 ### <a name="goal-current"></a>**[Goal Current(604)](#goal-current604)**

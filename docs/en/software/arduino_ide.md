@@ -144,7 +144,7 @@ This step shows the port setting for the program uploads. The OpenCR/OpenCM9.04 
 
 Select Tools → Port → /dev/ttyACM0.
 
-`Warning` The last digit value **0** in the string **/dev/ttyACM0** might be different depend on the USB connection environment.
+**WARNING** : The last digit value **0** in the string **/dev/ttyACM0** might be different depend on the USB connection environment.
 {: .notice--warning}
 
 ![](/assets/images/platform/turtlebot3/preparation/ide6.png)

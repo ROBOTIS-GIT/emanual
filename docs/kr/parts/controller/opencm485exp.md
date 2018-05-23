@@ -63,7 +63,7 @@ sidebar:
 
     ![](/assets/images/parts/controller/opencm904/opencm485exp-12.jpg)
 
-`Note` 다이나믹셀 펌웨어 업데이트 및 복구시 OpenCM9.04와 OpenCM 485 확장보드를 반드시 분리해주세요
+**NOTE** : 다이나믹셀 펌웨어 업데이트 및 복구시 OpenCM9.04와 OpenCM 485 확장보드를 반드시 분리해주세요
 {: .notice--warning}
 
 
@@ -78,7 +78,7 @@ OpenCM 485 확장보드는 기본적으로 OpenCM9.04 5V 전원 공급을 하며
 
 OpenCM 485 확장보드의 TTL/485 버스는 OpenCM9.04의 USART3(Serial3)을 통해서 다이나믹셀 버스가 구성됩니다.
 
-`Note` OpenCM9.04의 다이나믹셀 TTL BUS는 USART1(Serial1)과 연결되어 있습니다.
+**NOTE** : OpenCM9.04의 다이나믹셀 TTL BUS는 USART1(Serial1)과 연결되어 있습니다.
 {: .notice}
 
 ![](/assets/images/parts/controller/opencm904/opencm485exp_3.png)

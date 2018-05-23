@@ -97,7 +97,7 @@ If the robot has been incorrectly assembled to an extent where it may be severel
 
 ![](/assets/images/edu/bioloid/premium_operation_03.jpg)
 
-`Note` If you press a button on RC-100 before choosing a mode, the robot will enter remote control mode.
+**NOTE** : If you press a button on RC-100 before choosing a mode, the robot will enter remote control mode.
 {: .notice}
 
 #### Remote Control Mode
@@ -905,7 +905,7 @@ You can make your own sensor with simple control functions using the ADC port an
   4. GND
   5. OUT2 : 3.3V Output (Maximum Allowed Current 0.3A)
 
-`Note` Please use the 5P Cable when using other sensors. The 5P cable can be purchased from ROBOTIS.
+**NOTE** : Please use the 5P Cable when using other sensors. The 5P cable can be purchased from ROBOTIS.
 {: .notice}
 
 ### Controlling User’s Device

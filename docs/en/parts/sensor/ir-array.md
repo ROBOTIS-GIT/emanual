@@ -213,7 +213,7 @@ In the IR array if each IR sensor detected black value is lower than the set bla
 |0|There are no commands transmitted by REG_WRITE|
 |1|There are commands transmitted by REG_WRITE.|
  
-`Note` If ACTION command is executed, the value is changed into 0.
+**NOTE** : If ACTION command is executed, the value is changed into 0.
 {: .notice}
 
 ### <a name="lock"></a>Lock

@@ -16,10 +16,10 @@ sidebar:
 
 > AX-12+, AX-12A
 
-`Note` AX-12+ is the improved version of existing AX-12; the design of circuit, material, and wheel gear are specially improved.
+**NOTE** : AX-12+ is the improved version of existing AX-12; the design of circuit, material, and wheel gear are specially improved.
 {: .notice}
 
-`Note` AX-12A is a new version of the AX-12+ with the same performance but more advanced external design. Only the AX-12A is now being sold.
+**NOTE** : AX-12A is a new version of the AX-12+ with the same performance but more advanced external design. Only the AX-12A is now being sold.
 {: .notice--warning}
 
 # [Specifications](#specifications)
@@ -43,7 +43,7 @@ sidebar:
 | Feedback               | Position, Temperature, Load, Input Voltage, etc                             |
 | Material               | Engineering Plastic                                                         |
 
-`Note` Stall torque is the maximum instantaneous and static  torque. Stable motions are possible with robots designed for loads with 1/5 or less of the stall torque.
+**NOTE** : Stall torque is the maximum instantaneous and static  torque. Stable motions are possible with robots designed for loads with 1/5 or less of the stall torque.
 {: .notice}
 
 {% include en/dxl/warning.md %}
@@ -120,7 +120,7 @@ Baud Rate determines serial communication speed between a controller and DYNAMIX
 |    103     |     19200      |     -0.160%     |
 |    207     |      9600      |     -0.160%     |
 
-`Note` Less than 3% of the baud rate error margin will not affect to UART communication.
+**NOTE** : Less than 3% of the baud rate error margin will not affect to UART communication.
 {: .notice}
 
 ### <a name="return-delay-time"></a>**[Return Delay Time (5)](#return-delay-time-5)**
@@ -216,7 +216,7 @@ Baud Rate determines serial communication speed between a controller and DYNAMIX
 
 # [Reference](#reference)
 
-`Note` [Compatibility Guide]
+**NOTE** : [Compatibility Guide]
 {: .notice}
 
 ## [Connector Information](#connector-information)

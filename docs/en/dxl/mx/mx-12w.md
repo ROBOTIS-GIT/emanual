@@ -113,7 +113,7 @@ Baud Rate determines serial communication speed between a controller and DYNAMIX
 |103|19200| -0.160%|
 |207|9600| -0.160%|
 
-`Note` Less than 3% of the baud rate error margin will not affect to UART communication.
+**NOTE** : Less than 3% of the baud rate error margin will not affect to UART communication.
 {: .notice}
 
 For BPS over 250 values :
@@ -179,7 +179,7 @@ For BPS over 250 values :
   If a value in the range of 1024~2047 is used, it is stopped by setting to 1024 while rotating to CW direction.
   That is, the 10th bit becomes the direction bit to control the direction.
 
-  `Note` Wheel mode allows to check max rpm. Any values higher than max rpm will not take effect.
+  **NOTE** : Wheel mode allows to check max rpm. Any values higher than max rpm will not take effect.
   {: .notice}
 
 ### <a name="torque-limit"></a>**[Torque Limit (34)](#torque-limit-34)**
@@ -221,7 +221,7 @@ For example, if it is set to 300 then the motor is moving to the CCW direction a
 ### <a name="realtime-tick"></a>**[Realtime-Tick (50)](#realtime-tick-50)**
 {% include en/dxl/control_table_realtime_tick.md %}
 
-`Note` This feature is available from Firmware v41.
+**NOTE** : This feature is available from Firmware v41.
 {: .notice}
 
 ### <a name="goal-acceleration"></a>**[Goal Acceleration (73)](#goal-acceleration-73)**
@@ -233,7 +233,7 @@ For example, if it is set to 300 then the motor is moving to the CCW direction a
 
 # [Reference](#reference)
 
-`Note` [Compatibility Guide]
+**NOTE** : [Compatibility Guide]
 {: .notice}
 
 ## [Videos](#videos)

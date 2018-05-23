@@ -138,7 +138,7 @@ The following procedure takes you through the set up process.
   - Connect the battery pack cable to the battery power jack.
   - Disconnect DC power supply.
  
-  `Note` To prevent unexpected shut down ensure that DARWIN-OP is connected to at least 1 active power source.
+  **NOTE** : To prevent unexpected shut down ensure that DARWIN-OP is connected to at least 1 active power source.
   {: .notice}
  
     ![](/assets/images/platform/op/op_003.jpg)
@@ -181,7 +181,7 @@ The `RESET` button resets the actuators, not the entire robot. Please keep in mi
 
 This is the default mode when you turn DARWIN-OP on. LED 1 (red), LED 2 (blue) and LED 3 (green) are on; the head LED changes from green to amber and DARWIN-OP announces "demonstration-ready mode." DARWIN-OP is ready for action.
 
-`Note` DARWIN-OP remains in kneeling position and does not move under this mode. This is the best-suited mode to change power source.
+**NOTE** : DARWIN-OP remains in kneeling position and does not move under this mode. This is the best-suited mode to change power source.
 {: .notice}
  
 If you wish to completely end the demo program without turning DARWIn-OP off please refer here.
@@ -279,7 +279,7 @@ The following procedure to access color settings assumes a connection via wired 
 1. Ensure you have a proper connection with DARWIN-OP.
 2. Open up your computer's web browser.  
 
-  `Note` Please abstain from using Chrome web browser as it can cause memory leaks!
+  **NOTE** : Please abstain from using Chrome web browser as it can cause memory leaks!
   {: .notice}
 
 3. On the address line type: http://192.168.123.1:8080
@@ -351,5 +351,5 @@ DARWIN-OP’s head LED will blink on and off (OS shutdown). Once the head LED st
 
 ![](/assets/images/platform/op/op_035.jpg)
 
-`Note` If you cut the power off while the head LED blink, then DARWIN-OP may have problems turning on the next time.
+**NOTE** : If you cut the power off while the head LED blink, then DARWIN-OP may have problems turning on the next time.
 {: .notice}

@@ -295,7 +295,7 @@ Registers an interrupt handler on a pin. The interrupt will be triggered on a gi
   - FALLING : To trigger an interrupt when the pin transitions HIGH to LOW.
   - CHANGE : To trigger an interrupt when the pin transitions from LOW to HIGH or HIGH to LOW (i.e., when the pin changes).
  
-`Note` You should set the pin mode of your desired pin to an input mode (e.g. INPUT, INPUT_PULLUP, INPUT_PULLDOWN). Because the function will run in interrupt context, inside of it, delay() won’t work, and the value returned by millis() will not increment. Serial data received while in the function may be lost. You should declare as volatile any global variables that you modify within the attached function.
+**NOTE** : You should set the pin mode of your desired pin to an input mode (e.g. INPUT, INPUT_PULLUP, INPUT_PULLDOWN). Because the function will run in interrupt context, inside of it, delay() won’t work, and the value returned by millis() will not increment. Serial data received while in the function may be lost. You should declare as volatile any global variables that you modify within the attached function.
 {: .notice}
 
 #### Return Values
@@ -1170,7 +1170,7 @@ Library access to the emulated serial port is provided through the SerialUSB obj
 You can mostly use SerialUSB as a drop-in replacement for Serial1, Serial2, and Serial3.  
 
 {% capture opencm_warning_01 %} 
-`Warning`  
+**WARNING** :  
 The SerialUSB functionality includes a 50 millisecond timeout for writes, and does not try to detect if the USB host is “really” connected, or just enumerated and initialized.  
 This means that if you have a number of calls to one of the SerialUSB write() or print() functions in your code, and you are not monitoring SerialUSB on a computer, your program will run much slower than if it is being monitored or totally disconnected (run off of a battery).  
 You can avoid this behavior by deciphering the port status using the DTR and RTS line status (the behavior of these control lines is platform dependent and we no longer interpret them by default).  
@@ -1538,7 +1538,7 @@ Also See
 
 Returns the number of microseconds since the board began running the current program. This number will overflow (go back to zero), after approximately 70 minutes.
  
-`Note` There are 1,000 microseconds in a millisecond, and 1,000,000 microseconds in a second.
+**NOTE** : There are 1,000 microseconds in a millisecond, and 1,000,000 microseconds in a second.
 {: .notice}
  
 ```c
@@ -1685,7 +1685,7 @@ sensVal = min(sensVal, 100); // assigns sensVal to the smaller of sensVal or 100
  
 Perhaps counter-intuitively, max() is often used to constrain the lower end of a variable’s range, while min() is used to constrain the upper end of the range.
  
-`Warning` Because of the way min() is implemented, avoid using other functions inside the parentheses. It may lead to incorrect results:
+**WARNING** : Because of the way min() is implemented, avoid using other functions inside the parentheses. It may lead to incorrect results:
 
 min(a++, 100);   // avoid this - yields incorrect results
 a++;            // use this instead -
@@ -1723,7 +1723,7 @@ sensVal = max(senVal, 20); // assigns sensVal to the larger of sensVal or 20
  
 Perhaps counter-intuitively, max() is often used to constrain the lower end of a variable’s range, while min() is used to constrain the upper end of the range.
  
-`Warning` Because of the way max() is implemented, avoid using other functions inside the parentheses. It may lead to incorrect results:
+**WARNING** : Because of the way max() is implemented, avoid using other functions inside the parentheses. It may lead to incorrect results:
  
 max(a--, 0);   // avoid this - yields incorrect results
 a--;           // use this instead -
@@ -1753,7 +1753,7 @@ See Also
 - x : if x is greater than or equal to 0.
 - -x : if x is less than 0.
  
-`Warning` Because of the way abs() is implemented, avoid using other functions or causing side effects inside the parentheses, as it may lead to incorrect results:
+**WARNING** : Because of the way abs() is implemented, avoid using other functions or causing side effects inside the parentheses, as it may lead to incorrect results:
  
 abs(a++);   // avoid this - yields incorrect results
 abs(a);       // use this instead -

@@ -129,7 +129,7 @@ Click on the Download button as shown below. As the download begins the board’
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_015.png)
 
-`Note` If the power turns on for the board and the green LED is continuously turned on then restart the Download. Please refer to the Emergency Recovery Mode(Force Download) section.
+**NOTE** : If the power turns on for the board and the green LED is continuously turned on then restart the Download. Please refer to the Emergency Recovery Mode(Force Download) section.
 {: .notice}
 
 ### [MAC OS X](#mac-os-x)
@@ -190,10 +190,10 @@ Click on the Download button as shown below. As the download begins the board’
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_026.png)
 
-`Note` If the board’s green Status LED does not turn on even after clicking on the Download button, press on the User button and while keeping the button pressed connect the USB to the PC.
+**NOTE** : If the board’s green Status LED does not turn on even after clicking on the Download button, press on the User button and while keeping the button pressed connect the USB to the PC.
 {: .notice}
 
-`Note` If the power turns on for the board and the green LED is continuously turned on then restart the Download. Please refer to the Emergency Recovery Mode(Force Download) section.
+**NOTE** : If the power turns on for the board and the green LED is continuously turned on then restart the Download. Please refer to the Emergency Recovery Mode(Force Download) section.
 {: .notice}
 
 ### [Linux](#linux)
@@ -279,10 +279,10 @@ As the download begins the board’s green LED is continuously turned on. Once t
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_038.png)
 
-`Note` If the board’s green Status LED does not turn on even after clicking on the Download button, press on the User button and while keeping the button pressed connect the USB to the PC.
+**NOTE** : If the board’s green Status LED does not turn on even after clicking on the Download button, press on the User button and while keeping the button pressed connect the USB to the PC.
 {: .notice}
 
-`Note` If the power turns on for the board and the green LED is continuously turned on then restart the Download. Please refer to the Emergency Recovery Mode(Force Download) section.
+**NOTE** : If the power turns on for the board and the green LED is continuously turned on then restart the Download. Please refer to the Emergency Recovery Mode(Force Download) section.
 {: .notice}
 
 ## [Run Program](#run-program)

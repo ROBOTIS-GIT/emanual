@@ -47,7 +47,7 @@ SDK examples were tested with the following Dynamixels:
 > -- : Doesn't exist  
 > blank : Not tested yet
 
-`Note` The BulkRead function doesn't work with the AX, EX, or RX series
+**NOTE** : The BulkRead function doesn't work with the AX, EX, or RX series
 {: .notice}
 
 ### Power Requirements
@@ -60,7 +60,7 @@ SDK examples were tested with the following Dynamixels:
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/device_setup/dynamixel_setting/2.png)
 
-`Note` The X series' 4P connector is not compatible with the USB2Dynamixel connector.
+**NOTE** : The X series' 4P connector is not compatible with the USB2Dynamixel connector.
 {: .notice}
 
 To run the SDK examples, the following Dynamixel parameters need to be changed: 

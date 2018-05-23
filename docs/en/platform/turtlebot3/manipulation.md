@@ -15,10 +15,10 @@ sidebar:
 
 # [Manipulation](#manipulation)
 
-`Note` This instruction was tested on `Ubuntu 16.04`, `Linux Mint 18.1` and `ROS Kinetic Kame`.
+**NOTE** : This instruction was tested on `Ubuntu 16.04`, `Linux Mint 18.1` and `ROS Kinetic Kame`.
 {: .notice--info}
 
-`Note` If you want more specfic information about OpenManipulator, please refer to the [OpenManipulator e-Manual](/docs/en/platform/openmanipulator/)
+**NOTE** : If you want more specfic information about OpenManipulator, please refer to the [OpenManipulator e-Manual](/docs/en/platform/openmanipulator/)
 {: .notice--info}
 
 ![](/assets/images/platform/turtlebot3/manipulation/tb3_with_opm_logo.png)
@@ -87,7 +87,7 @@ Click `Upload` button to upload the firmware to OpenCR1.0.
 
 ![](/assets/images/platform/turtlebot3/manipulation/upload_core_1.png)
 
-`Note` If error occurs while uploading firmware, go to `Tools` → `Port` and check if correct port is selected. Press `Reset` button on the OpenCR1.0 and try to upload the firmware again.
+**NOTE** : If error occurs while uploading firmware, go to `Tools` → `Port` and check if correct port is selected. Press `Reset` button on the OpenCR1.0 and try to upload the firmware again.
 {: .notice--info}
   
 When firmware upload is completed, `jump_to_fw` text string will be printed on the screen.

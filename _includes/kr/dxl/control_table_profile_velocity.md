@@ -40,7 +40,7 @@ Profile이란 모터 구동 시 급격하게 변하는 속도와 가속도를 �
 
 
 {% capture group_notice_03 %}
-`Note` 속도 제어 모드에서는 Profile Acceleration(108)만 적용됩니다.  
+**NOTE** : 속도 제어 모드에서는 Profile Acceleration(108)만 적용됩니다.  
 제공되는 Profile의 형태는 Step과 Trapezoidal 2가지 입니다.  
 Velocity Override 기능과 Jerk 관리 기능은 동일하게 동작합니다.  
 이때의 가속시간(t<sub>1</sub>)은 다음과 같습니다.  

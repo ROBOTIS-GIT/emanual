@@ -12,5 +12,5 @@ Target position can be set with Goal Position(116). From the front view of Dynam
 | :---: | :---: |
 |0.088&deg;/Value| 1[rev] : 0 ~ 4,095 |
 
-`Note` If Profile Acceleration(108), Profile Velocity(112) and Goal Position(116) are modified simultaneously, Goal Position(116) is processed based on updated Profile Acceleration(108) and Profile Velocity(112).
+**NOTE** : If Profile Acceleration(108), Profile Velocity(112) and Goal Position(116) are modified simultaneously, Goal Position(116) is processed based on updated Profile Acceleration(108) and Profile Velocity(112).
 {: .notice}

@@ -12,7 +12,7 @@ The Dynamixel can protect itself by detecting dangerous situations that could oc
 |Bit 0|Input Voltage Error|Detect input voltage exceeds the configured operating voltage|
 
 {% capture shutdown_pro %}
-`Note` If Shutdown occurs, use below method to reboot Dynamixels.
+**NOTE** : If Shutdown occurs, use below method to reboot Dynamixels.
 1. H/W REBOOT : Turn off the power and turn on again
 2. S/W REBOOT : Transmit REBOOT Instruction (For more details, please refer to the [Protocol] section of e-Manual.)
 {% endcapture %}

@@ -64,7 +64,7 @@ The power of 5V mus be supplied to operate ZIG2Serial.  The power can be supplie
  
 If [USB2Dynamixel] products of Robotis are used, those products can be used without supplying separate power since the power is supplied from USB2Dynamixel to ZIG2Serial. 
 
-`Warning` If the resistor for external power connection is connected, please use after removing the resistor.
+**WARNING** : If the resistor for external power connection is connected, please use after removing the resistor.
 {: .notice--warning}
 
 ![](/assets/images/parts/communication/zig2serial_04.png)
@@ -87,7 +87,7 @@ The connection status must be changed to select the channel on the Zig2Serial.
 - The resistance on the R5 and R6 is 0Ω. Thus you can eliminate or short the lead.
 - The default setting of the Zig2Serial is set at channel #1 and R5, R6, and R7 are short. Easily select channel #1 and #4 by opening and shorting the lead on R7.
 
-`Note` When the ZIG-100 is mounted on the CM-5, the broadcast channel to set at #1. If the channel of the Zig2Serial is set differently, it will communicate with the CM-5 in broadcast communication mode.
+**NOTE** : When the ZIG-100 is mounted on the CM-5, the broadcast channel to set at #1. If the channel of the Zig2Serial is set differently, it will communicate with the CM-5 in broadcast communication mode.
 {: .notice}
 
 |Channel|Connection Status of the Zig2Serial|

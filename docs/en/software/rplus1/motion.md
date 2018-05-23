@@ -24,7 +24,7 @@ A motion file is identified by the icon below, and its file extension is .mtn.
 
 A task code file is a program while a motion file is data.  For better understanding, let us think about MP3 players and MP3 files. If there were no MP3 players, you will not be able to listen to music because MP3 file could not be played.  The result is the same when there is an MP3 player but no MP3 file.  If you want to make your robot move, you need a task code file.  If the task code downloaded into your robot uses motions, you must download the motion file as well.  If no motions are used in the task code, you do not need the motion file.
 
-`Note` To use motions in a task code, the motion file must be downloaded.
+**NOTE** : To use motions in a task code, the motion file must be downloaded.
 {: .notice}
  
 ![](/assets/images/sw/rplus1/motion/roboplus_motion_002.png)
@@ -45,7 +45,7 @@ RoboPlus is a software to create a customized programme for every ROBOTIS produc
 
 ![img_install](/assets/images/sw/roboplus_install_en.png)
 
-`Note` To execute RoboPlus, .NET FrameWork 3.5 or higher version is required. When installing RoboPlus, if the automatic installation of .NET FrameWork fails, .NET FrameWork must be installed separately.
+**NOTE** : To execute RoboPlus, .NET FrameWork 3.5 or higher version is required. When installing RoboPlus, if the automatic installation of .NET FrameWork fails, .NET FrameWork must be installed separately.
 {: .notice}
 
 ### RoboPlus Install Failure
@@ -326,7 +326,7 @@ The pose utility is a tool to easily create a pose based on previously supplied 
 
 Before using the pose utility, you must first select the robot. Click the robot's name on the list below to select an applicable robot.
  
-`Note` Pose utility cannot be used on a robot not on the list. In case of a user's robot, the motions of the robot must be created by [Basic Pose Editor](#basic-pose-editing).
+**NOTE** : Pose utility cannot be used on a robot not on the list. In case of a user's robot, the motions of the robot must be created by [Basic Pose Editor](#basic-pose-editing).
 {: .notice}
  
 ![](/assets/images/sw/rplus1/motion/roboplus_motion_037.png)
@@ -494,7 +494,7 @@ When Pose of Step is selected, the pose values on the data are changed, and if P
 
 Pose of Step means the steps on the `currently selected motion file.  That is, the pose changed in pose utility is reflected to the motion file immediately, while Pose of Step has been selected.
  
-`Note` Pose of Step is activated only when there are steps on the currently selected page. Pose of Robot is activated only when the robot is connected.
+**NOTE** : Pose of Step is activated only when there are steps on the currently selected page. Pose of Robot is activated only when the robot is connected.
 {: .notice}
 
 ##### Pose Execution/Capture
@@ -616,7 +616,7 @@ The following methods may be used to select multiple pages.
 
 Pages can be connected to each other if necessary.
  
-`Note` When data is exchanged using the Copy/Cut/Paste functions, page connection information is not exchanged.
+**NOTE** : When data is exchanged using the Copy/Cut/Paste functions, page connection information is not exchanged.
 {: .notice}
  
 #### Next Page
@@ -729,7 +729,7 @@ Transferring motion data from the controller to the PC is called "uploading."
 Offset is the difference from a standard value. Motion offset refers to the difference from the standard motion, and the robot that performs the standard motion is called the "Master Robot".  
 Even when robots of the same type are performing the same motions, there will be differences in their poses. This is due to discrepancies in motor locations and errors in assembly.  These differences may even cause some robots to fall down.  "Motion Offset" is used to resolve these differences.
 
-`Note` Generally, motion offset is small enough to be ignored. However, for robots that are sensitive to balance, such as humanoids, motion offset can be a source of critical problems.  
+**NOTE** : Generally, motion offset is small enough to be ignored. However, for robots that are sensitive to balance, such as humanoids, motion offset can be a source of critical problems.  
 {: .notice}
  
 ### Edit Motion Offset
@@ -865,7 +865,7 @@ Please choose the step that you want and press the enter key. Your robot will ta
 Users can make and operate their own robots usig RoboPlus Motion
 
 {% capture roboplus_motion_warning_01 %}
-`Warning` For this section, some previous knowledge on the following is required.
+**WARNING** : For this section, some previous knowledge on the following is required.
 - XML
 - 3D Graphics
 - C# Programming

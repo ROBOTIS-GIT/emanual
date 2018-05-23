@@ -240,7 +240,7 @@ Is a unique number to identify Dynamixel.
 Values range from 0 (0x00) to 253 (0xFD), Value 254 (0xFE) is used as the Broadcast ID.  
 If the Broadcast ID is used to transmit Instruction Packet, then it can command to all Dynamixels.  
 
-`Note` Please be careful not to duplicate the ID of connected Dynamixels.
+**NOTE** : Please be careful not to duplicate the ID of connected Dynamixels.
 {: .notice}
  
 ###### Baud Rate
@@ -259,7 +259,7 @@ Speed(BPS) = 2000000/(Data+1)
 |103|19230.8|19200.0|-0.160 %|
 |207|9615.4|9600.0|-0.160 %|
 
-`Note` Maximum Baud Rate error of 3% is within the tolerance of UART communication.
+**NOTE** : Maximum Baud Rate error of 3% is within the tolerance of UART communication.
 {: .notice}
  
 ###### Return Delay Time
@@ -276,7 +276,7 @@ Decides how to return Status packet. There are three possibilities:
 |1|Return only for the READ command|
 |2|Return for all commands|
 
-`Note` When Instruction packet is Broadcast ID, Status packet is not returned regardless of Status return level.
+**NOTE** : When Instruction packet is Broadcast ID, Status packet is not returned regardless of Status return level.
 {: .notice}
 
 ###### Dynamixel Power
@@ -447,7 +447,7 @@ If the Broadcast ID is used to transmit Instruction Packet, then it can command 
 when it's searched as Unknown Device, change the baudrate to 1(1000000).  
 Connect with DARWIN-OP after setting the ID as 111 for the right foot and 112 for the left.
  
-`Note` Please be careful not to duplicate the ID of connected Dynamixels.
+**NOTE** : Please be careful not to duplicate the ID of connected Dynamixels.
 {: .notice}
  
 ###### Baud Rate
@@ -466,7 +466,7 @@ Speed(BPS) = 2000000/(Data+1)
 |103|19230.8|19200.0|-0.160 %|
 |207|9615.4|9600.0|-0.160 %|
 
-`Note` Maximum Baud Rate error of 3% is within the tolerance of UART communication.
+**NOTE** : Maximum Baud Rate error of 3% is within the tolerance of UART communication.
 {: .notice}
  
 ###### Return Delay Time
@@ -483,7 +483,7 @@ Decides how to return Status packet. There are three possibilities:
 |1|Return only for the READ command|
 |2|Return for all commands|
 
-`Note` When Instruction packet is Broadcast ID, Status packet is not returned regardless of Status return level.
+**NOTE** : When Instruction packet is Broadcast ID, Status packet is not returned regardless of Status return level.
 {: .notice}
 
 ###### LED
@@ -520,7 +520,7 @@ Current input voltage. This value is 10 times larger than the actual voltage. Fo
 |0|There are no commands transmitted by REG_WRITE|
 |1|There are commands transmitted by REG_WRITE|
 
-`Note` If **ACTION** command is executed, the value is changed into 0.
+**NOTE** : If **ACTION** command is executed, the value is changed into 0.
 {: .notice}
  
 ###### Lock

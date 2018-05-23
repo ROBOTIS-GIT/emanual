@@ -204,7 +204,7 @@ Secondly, the buzzer can play special melodies.  If 255 is entered in buzzer rin
 |0|There are no commands transmitted by REG_WRITE|
 |1|There are commands transmitted by REG_WRITE.|
  
-`Note` If ACTION command is executed, the value is changed into 0.
+**NOTE** : If ACTION command is executed, the value is changed into 0.
 {: .notice}
  
 ### <a name="ir-arrived"></a>Arrival of New Remocon Data

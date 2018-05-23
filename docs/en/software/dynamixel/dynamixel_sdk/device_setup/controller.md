@@ -40,7 +40,7 @@ Adjust the signal interface so that you can communicate with your Dynamixel by f
 * RS485: Models with 4P connectors (DX-Series, RX-Series, EX-Series, MX-Series, X-Series, PRO-Series)
 * RS232: Models attached via serial connector (CM-5 controller, CM-510 controller, other UART devices)
 
-`Note` The X-Series' connector is different than the USB2Dynamixel's connector. Please check [the connector types of X-Series](http://emanual.robotis.com/docs/en/dxl/x/xm430-w210/#connector-information).
+**NOTE** : The X-Series' connector is different than the USB2Dynamixel's connector. Please check [the connector types of X-Series](http://emanual.robotis.com/docs/en/dxl/x/xm430-w210/#connector-information).
 {: .notice}
 
 Since the other signal ports, such as UART, I2C, etc., are in various conditions depending on the controller specification, modify SDK yourselves and optimize your codes to your own controllers.
@@ -89,7 +89,7 @@ and also in MCU:
 
 * [Installation in Linux](#installation-in-linux)
 
-`Note` The FTDI driver may not be compatible with some devices.
+**NOTE** : The FTDI driver may not be compatible with some devices.
 {: .notice}
 
 #### <a name="installation-in-windows"></a>[Installation in Windows](#installation-in-windows)

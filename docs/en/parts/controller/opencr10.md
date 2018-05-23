@@ -39,7 +39,7 @@ The development environment for OpenCR1.0 is wide open from Arduino IDE and Scra
 `1` 5V power source is supplied from regulated 12V output.
 {: .notice}
 
-`Note` Hot swap power switch between "shore power"(12V, 5A SMPS) and "mobile power"(battery) from OpenCR1.0 board enables UPS(Uninterrupted Power Supply) feature.
+**NOTE** : Hot swap power switch between "shore power"(12V, 5A SMPS) and "mobile power"(battery) from OpenCR1.0 board enables UPS(Uninterrupted Power Supply) feature.
 {: .notice}
 
 # [Layout/Pin Map](#layoutpin-map)
@@ -124,7 +124,7 @@ It has an 18-pin common GPIO expansion connector and is mapped to the GPIO pin o
 `FT` pins are 5V tolerant except when in analog mode. The maximum injected current on FT pins are **-5mA**. Also total output current sunk / sourced by sum of all I/O pins are **120mA / -120mA** respectively.
 {: .notice}
 
-`Note` Typical pull-up / pull-down resistance is 40k&ohm;
+**NOTE** : Typical pull-up / pull-down resistance is 40k&ohm;
 {: .notice}
 
 ## [OLLO Connector](#ollo-connector)
@@ -356,7 +356,7 @@ This step shows the port setting for the program uploads. The OpenCR should be c
 
 Select Tools → Port → /dev/ttyACM0.
 
-`Warning` The last digit value `0` in the string `/dev/ttyACM0` might be different depend on the USB connection environment.
+**WARNING** : The last digit value `0` in the string `/dev/ttyACM0` might be different depend on the USB connection environment.
 {: .notice--warning}
 
 ![](/assets/images/platform/turtlebot3/preparation/ide6.png)

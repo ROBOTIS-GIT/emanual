@@ -55,7 +55,7 @@ For details, please refer to the workbook included in the kit.
 |7 (Ti)|Chapter 3. Scorpion|![](/assets/images/edu/dream/dream1-2_scorpion.jpg)|
 |11 (Fa')|Chapter 4. Crocodile|![](/assets/images/edu/dream/dream1-2_crocodile.jpg)|
 
-`Note` Download the example program under the ROBOTIS DREAM Level 2 directory using the USB cable included in Level 1. The USB cable can also be purchased separactely.
+**NOTE** : Download the example program under the ROBOTIS DREAM Level 2 directory using the USB cable included in Level 1. The USB cable can also be purchased separactely.
 {: .notice}
 
 # [Examples](#examples)

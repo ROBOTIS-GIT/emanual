@@ -30,5 +30,5 @@ Control Table Item의 모든 byte를 Indirect Address로 세팅 해주어야 정
 `참고` 2바이트 이상의 데이터를 Indirect Address에 할당하기 위해서는 모든 데이터의 주소를 '예제 2'와 같이 Indirect Address에 할당해주어야 합니다.
 {: .notice}
 
-`Note` Indirect Address 29 ~ 56와 Indirect Data 29 ~ 56는 프로토콜 2.0에서만 접근할 수 있습니다.
+**NOTE** : Indirect Address 29 ~ 56와 Indirect Data 29 ~ 56는 프로토콜 2.0에서만 접근할 수 있습니다.
 {: .notice}

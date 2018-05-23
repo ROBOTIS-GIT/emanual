@@ -34,7 +34,7 @@ sidebar:
 - 3 types are available: Type A & Type B & Type C. The difference between Type A,Type B, Type C is the availability of the connectors. (Refer to the image and table above.)  
   (OpenCM9.04 Accessory Set can be purchased to acquire all the necessary connector to upgrade Type A to Type B Type C.)  [OpenCM9.04 Accessory Set](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2394)
 
-`Note` Refer to the ROBOTIS-MINI for controller recovery (type C-only) [ROBOTIS-MINI Controller Firmware Update]
+**NOTE** : Refer to the ROBOTIS-MINI for controller recovery (type C-only) [ROBOTIS-MINI Controller Firmware Update]
 {: .notice}
 
 `Caution` Please **DISCONNECT** OpenCM9.04 and OpenCM 485 Expansion board when updating or recovering Dynamixel firmware.
@@ -147,7 +147,7 @@ Control Table consists of data regarding the current status and operation of con
 |   409   |  1   |    Port 2 Color Sensor Value    |    Color Sensor Value on Port 2    |   R    |     -      |
 |   410   |  1   |    Port 3 Color Sensor Value    |    Color Sensor Value on Port 3    |   R    |     -      |
 
-`Note` Some Addresses of the Control Table can be tested with R+ Manager 2.0.
+**NOTE** : Some Addresses of the Control Table can be tested with R+ Manager 2.0.
 
 # [Hardware](#hardware)
 

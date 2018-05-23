@@ -58,7 +58,7 @@ ROBOTIS DREAM level 2 comes with a "Comprehensive Program" in the controller tha
 |11 (Fa')|Chapter 11. Crocodile|![](/assets/images/edu/dream/dream1-2_crocodile.jpg)|
 |12 (Sol')|Chapter 12. Imagine|![](/assets/images/edu/dream/dream1-2_imagine.jpg)|
 
-`Note` Download the example program under the ROBOTIS DREAM Level 2 directory using the USB cable included in Level 1. The USB cable can also be purchased separactely.
+**NOTE** : Download the example program under the ROBOTIS DREAM Level 2 directory using the USB cable included in Level 1. The USB cable can also be purchased separactely.
 {: .notice}
 
 # [Examples](#examples)
