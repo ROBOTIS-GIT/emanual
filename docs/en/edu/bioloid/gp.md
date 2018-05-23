@@ -38,7 +38,7 @@ sidebar:
 ### Downloading the Program
 
 - Program for type A is installed by default in CM-530.
-- You can find task codes and motion files for other actions on the [Default Program](#default-program) page.
+- You can find task codes and motion files for other actions on the [Download](#download) page.
 
 {% include en/parts/controller/cm510_530_turnon.md %}
 
@@ -52,7 +52,7 @@ sidebar:
 
 - Check whether the cables have been assembled on the outer part of the leg.
 
-`Note` If the robot has been incorrectly assembled to an extent where it may be severely damaged, a warning sound will be activated. Also, the LED of the motor with the problem will turn on and release its torque to prevent damage.
+**NOTE** : If the robot has been incorrectly assembled to an extent where it may be severely damaged, a warning sound will be activated. Also, the LED of the motor with the problem will turn on and release its torque to prevent damage.
 {: .notice}
 
 
@@ -64,7 +64,7 @@ sidebar:
 
 ![](/assets/images/edu/bioloid/premium_operation_03.jpg)
 
-`Note` Operating the robot with the RC-100 without selecting the mode will automatically start the soccer mode.
+**NOTE** : Operating the robot with the RC-100 without selecting the mode will automatically start the soccer mode.
 {: .notice}
 
 ![](/assets/images/edu/bioloid/premium_operation_04.jpg)
@@ -228,7 +228,7 @@ For more information on each sensors, please click on the names of the sensors.
 
 You can make your own sensor with simple control functions using the ADC port and OUT port on CM-510/CM-530.
 
-`Caution` Connecting poorly designed circuits may damage the controller. Please be sure to acquire sufficient knowledge about circuits beforehand.
+**CAUTION** : Connecting poorly designed circuits may damage the controller. Please be sure to acquire sufficient knowledge about circuits beforehand.
 {: .notice--warning}
 
 ### PIN Information
@@ -249,7 +249,7 @@ You can make your own sensor with simple control functions using the ADC port an
   4. GND
   5. OUT2 : 3.3V Output (Maximum Allowed Current 0.3A)
 
-`Note` Please use the 5P Cable when using other sensors. The 5P cable can be purchased from ROBOTIS.
+**NOTE** : Please use the 5P Cable when using other sensors. The 5P cable can be purchased from ROBOTIS.
 {: .notice}
 
 ### Controlling User’s Device

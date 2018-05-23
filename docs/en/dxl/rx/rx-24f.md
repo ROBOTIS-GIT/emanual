@@ -15,7 +15,7 @@ sidebar:
 
 > RX-24F
 
-`Warning` RX-24F has been discontinued.
+**WARNING** : RX-24F has been discontinued.
 {: .notice--warning}
 
 # [Specifications](#specifications)
@@ -238,7 +238,7 @@ sidebar:
 
 # [Reference](#reference)
 
-`Note` [Compatibility Guide]
+**NOTE** : [Compatibility Guide]
 {: .notice}
 
 ## [Connector Information](#connector-information)

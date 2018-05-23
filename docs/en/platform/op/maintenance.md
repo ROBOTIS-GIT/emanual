@@ -27,7 +27,7 @@ Once the sub-controller is exposed locate the fuse. The diagram below shows the 
  
 Carefully remove the fuse with a pair of tweezers. Afterwards carefully insert a new fuse.
  
-`Warning` Improper care during removal or insertion of the fuse may result in damage(s) to the fuse housing or/and other components of the sub-controller Cm-730.
+**WARNING** : Improper care during removal or insertion of the fuse may result in damage(s) to the fuse housing or/and other components of the sub-controller Cm-730.
 {: .notice--warning}
 
 ## [Hardware Maintenance](#hardware-maintenance)
@@ -165,7 +165,7 @@ You will need 2 separate 3-pin TTL cables (they come supplied with every DARWIN-
   ![](/assets/images/platform/op/op_236.jpg)
  
 6. Turn the switch on on DARWIN-OP and let Ubuntu load (this process may take up to 2 minutes).  
-  `Note` The head LED will remain green and will not turn amber. The demo program will not run automatically.
+  **NOTE** : The head LED will remain green and will not turn amber. The demo program will not run automatically.
  
 7. Connect to DARWIN-OP and run Dynamixel Monitor.  
   Once Dynamixel Monitor is running all actuators will show as "fail" even with the new MX-28 connected. Do not exit Dynamixel Monitor. Leave the program running.
@@ -178,7 +178,7 @@ You will need 2 separate 3-pin TTL cables (they come supplied with every DARWIN-
  
   ![](/assets/images/platform/op/op_238.jpg)
 
-  `Note` RoboPlus Manager does not currently support the CM-730 controller because it lacks the Serial Connector input.
+  **NOTE** : RoboPlus Manager does not currently support the CM-730 controller because it lacks the Serial Connector input.
  
 Once the baud rate value is set to 1 you may return to Dynamixel Monitor and type scan to verify success on baud rate change (the first attempt may show the new actuator as "fail" if so type scan again until "OK" shows on screen).
 
@@ -298,7 +298,7 @@ DARWIN-OP is back to normal again.
 
 Pick the method that most convenient for you.
  
-`Note` The reset all procedure at the end is necessary because DXL Monitor will set the angle limits on all Dynamixels. Setting angle limits is a robot safety mechanism to prevent joints from overextending, therefore preventing damage to the robot.
+**NOTE** : The reset all procedure at the end is necessary because DXL Monitor will set the angle limits on all Dynamixels. Setting angle limits is a robot safety mechanism to prevent joints from overextending, therefore preventing damage to the robot.
 {: .notice}
  
 Pressing the reset button on DARWIN-OP will reset settings of the sub-controller CM-730 to default values. For example:
@@ -333,7 +333,7 @@ To verify camera connection with Linux OS perform the following.
 
 If you do not see a '**video0**' device then you may need to replace the camera cable and/or camera. in such case you may replace the USB cable, the camera, or contact ROBOTIS for an arrangement.
  
-`Note` If you lose physical(mechanical) connection between the main controller and sub-controller, then you automatically lose camera connection. This is because the USB cable for the CM-730 and camera share the same molex connection.
+**NOTE** : If you lose physical(mechanical) connection between the main controller and sub-controller, then you automatically lose camera connection. This is because the USB cable for the CM-730 and camera share the same molex connection.
 {: .notice}
 
 ## [Self Maintenance Checklist](#self-maintenance-checklist)
@@ -357,7 +357,7 @@ You may run your own maintenance check should DARWIN-OP have some anomalies.
   - no, and CM-730 is not getting power
     > If that's the problem then post the problem here.
 
-  `Note` If the CM-730 does not get any power then the FitPC will not get any power.
+  **NOTE** : If the CM-730 does not get any power then the FitPC will not get any power.
   {: .notice}
  
 3. Does the head LED turn on?
@@ -472,7 +472,7 @@ You may run your own maintenance check should DARWIN-OP have some anomalies.
 
 #### Install Ubuntu 9.10
 
-`Note` Reference: http://www.fit-pc2.com/wiki/index.php?title=Installing_Ubuntu_9.10
+**NOTE** : Reference: http://www.fit-pc2.com/wiki/index.php?title=Installing_Ubuntu_9.10
 {: .notice}
 
 1. Prepare Installation Media
@@ -487,7 +487,7 @@ You may run your own maintenance check should DARWIN-OP have some anomalies.
   - Login using previously selected username and password
   - Reference : https://help.ubuntu.com/9.10/installation-guide/i386/index.html
  
-`Note` Please note that the command used in Linux operating system is case sensitive.
+**NOTE** : Please note that the command used in Linux operating system is case sensitive.
 {: .notice}
 
 3. Required system changes
@@ -610,7 +610,7 @@ Use **reset all** command.
 
 #### Install Linux Mint 9
 
-`Note` Reference: http://www.fit-pc.com/wiki/index.php/Installing_Linux_Mint_9
+**NOTE** : Reference: http://www.fit-pc.com/wiki/index.php/Installing_Linux_Mint_9
 {: .notice}
  
 1. Prepare Installation Media
@@ -624,7 +624,7 @@ Use **reset all** command.
   - Unplug USB CD-ROM / USB Flash drive and reboot
   - Login using previously selected username and password
 
-  `Note` Please note that the command used in Linux operating system is case sensitive.
+  **NOTE** : Please note that the command used in Linux operating system is case sensitive.
   {: .notice}
 
 3. Required system changes
@@ -744,7 +744,7 @@ Use **reset all** command.
 
 You can recover the operating system in DARWIN-OP via Clonezilla. The recovery software is the same as the factory-default preinstalled with DARWIN-OP.
 
-`Note` Download the recovery image from [here](http://sourceforge.net/projects/darwinop/files/Software/Main%20Controller/Recovery%20USB/)
+**NOTE** : Download the recovery image from [here](http://sourceforge.net/projects/darwinop/files/Software/Main%20Controller/Recovery%20USB/)
 {: .notice}
  
 - Choose recovery image  

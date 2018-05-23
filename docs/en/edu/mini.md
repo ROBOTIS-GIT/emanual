@@ -269,7 +269,7 @@ Like the task code, the motion data needs to be downloaded to the controller onc
   Port number for each port is written in white.
 
 {% capture mini_warning_02 %}
-`Caution`  
+**CAUTION** :  
 LED Module : Use ports `2` and `3`(LED will not light up when using ports `3` and `4`)  
 IR Sensor :  Use ports `1` and `4`  
 Color Sensor : Use ports `2` and `3`  

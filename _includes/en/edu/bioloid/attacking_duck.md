@@ -1,6 +1,6 @@
 Objective for this tutorial is to build an attacking duck which attacks approaching objects. Please refer to 2-2-11 Attacking Duck of the assembly manual and complete the hardware.
 
-`Caution` Do not approach your face near the robot when the power is on. You may get injured by the robot.
+**CAUTION** : Do not approach your face near the robot when the power is on. You may get injured by the robot.
 {: .notice--warning}
 
 ![Attacking_Duck-1][img_025]

@@ -5,5 +5,5 @@ If Goal Position is out of the range, Angle Limit Error Bit (Bit 1) of Status Pa
 ![](/assets/images/dxl/dx/dx_series_goal_position.png)
 The picture above is the front view of Dynamixel
 
-`Note` If it is set to Wheel Mode, Goal Position value is not used.
+**NOTE** : If it is set to Wheel Mode, Goal Position value is not used.
 {: .notice}

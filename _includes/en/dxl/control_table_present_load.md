@@ -9,8 +9,8 @@ For example, the value is 512, it means the load is detected in the direction of
 | :----: | :---: | :---: | :---: |
 | Value | 0 | Load Direction | Data (Load Ratio)|
 
-`Note` CCW Load : Load Direction = 0, CW Load : Load Direction = 1
+**NOTE** : CCW Load : Load Direction = 0, CW Load : Load Direction = 1
 {: .notice}
 
-`Note` Present load is an inferred value based on the internal output value; not a measured value using torque sensor, etc. Therefore, it may be inaccurate for measuring weight or torque. It is recommended to use it for predicting the direction and size of the force being applied to the joint.
+**NOTE** : Present load is an inferred value based on the internal output value; not a measured value using torque sensor, etc. Therefore, it may be inaccurate for measuring weight or torque. It is recommended to use it for predicting the direction and size of the force being applied to the joint.
 {: .notice}

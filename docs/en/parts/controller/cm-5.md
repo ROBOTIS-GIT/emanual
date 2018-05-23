@@ -17,7 +17,7 @@ sidebar:
 
 > CM-5
 
-`Note` CM-5 is discontinued.
+**NOTE** : CM-5 is discontinued.
 {: .notice}
 
 # [Specifications](#specifications)

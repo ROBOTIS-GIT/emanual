@@ -74,7 +74,7 @@ DIRECTION_PORT = RX_DIRECTION; //Direction change to RXD
 EnableInterrupt(); // enable interrupt again
 ```
 
-`Note` Please note the important lines between LINE 8 and LINE 12. Line 8 is necessary since an interrupt here may cause a delay longer than the return delay time and corruption to the front of the status packet may occur.
+**NOTE** : Please note the important lines between LINE 8 and LINE 12. Line 8 is necessary since an interrupt here may cause a delay longer than the return delay time and corruption to the front of the status packet may occur.
 {: .notice}
 
 ## [Byte to Byte Time](#byte-to-byte-time)
@@ -168,7 +168,7 @@ For example, when Status Packet is returned as below
 0xFF 0xFF 0x01 0x02 0x24 0xD8
 It means that the error of 0x24 occurs from Dynamixel whose ID is 01. Since 0x24 is 00100100 as binary, Bit5 and Bit2 become 1. In order words, Overload and Overheating Errors have occurred.
 
-`Note` The error types on the table above are related to actuators, and the contents may vary depending on the type of Dynamixel.
+**NOTE** : The error types on the table above are related to actuators, and the contents may vary depending on the type of Dynamixel.
 {: .notice}
 
 ## [Status Checksum](#status-checksum)
@@ -243,7 +243,7 @@ This instruction is to write data to the Control Table of DYNAMIXEL
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |0xFF|0xFF|0xFE|0x04|0x03|0x03|0x01|0xF6|
 
-`Note` Status Packet will not be returned if Broadcast ID(0xFE) is used.
+**NOTE** : Status Packet will not be returned if Broadcast ID(0xFE) is used.
 {: .notice}
 
 ## [Reg Write](#reg-write)
@@ -289,16 +289,16 @@ This instruction is to execute the registered Reg Write instruction. The Action 
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |0xFF|0xFF|0xFE|0x02|0x05|0xFA|
 
-`Note` Status Packet will not be returned if Broadcast ID(0xFE) is used.
+**NOTE** : Status Packet will not be returned if Broadcast ID(0xFE) is used.
 {: .notice}
 
 ## [Factory Reset](#factory-reset)
 This instruction is to reset the Control Table of Dynamixel to the factory default values.
 
 {% capture reset_warning_01 %}
-`Caution` Please be careful as Reset instruction will factory reset values in the EEPROM. 
+**CAUTION** : Please be careful as Reset instruction will factory reset values in the EEPROM. 
 
-`Caution` Broadcast ID(0xFE) cannot be used for Reset instruction.  
+**CAUTION** : Broadcast ID(0xFE) cannot be used for Reset instruction.  
   Applied Products : MX-12W(V41), MX-28(V40), MX-64(V40), MX-106(V40)
 {% endcapture %}
 
@@ -376,7 +376,7 @@ This instruction is used to control multiple Dynamixels simultaneously with a si
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |0xFF|0xFF|0xFE|0x0E|0x83|0x1E|0x04|0x00|0x10|0x00|0x50|0x01|0x01|0x20|0x02|0x60|0x03|0x67|
 
-`Note` Status Packet will not be returned if Broadcast ID(0xFE) is used.
+**NOTE** : Status Packet will not be returned if Broadcast ID(0xFE) is used.
 {: .notice}
 
 ## [Bulk Read](#bulk-read)
