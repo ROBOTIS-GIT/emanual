@@ -4,5 +4,5 @@ Dynamixel with a Present position of 2,048 with an offset of 1,024 will return a
 
 ![](/assets/images/dxl/mx/mx-12_multiturn_offset.jpg)
 
-`Note` This offset feature is only available in multi-turn mode.
+**NOTE** : This offset feature is only available in multi-turn mode.
 {: .notice}

@@ -4,7 +4,7 @@ The Control Table is a structure of data implemented in the DYNAMIXEL. Users can
 ## [Control Table, Data, Address](#control-table-data-address)
 The Control Table is a structure that consists of multiple Data fields to store status of the DYNAMIXEL or to control the DYNAMIXEL. Users can check current status of the DYNAMIXEL by reading a specific Data from the Control Table with Read Instruction Packets. WRITE Instruction Packets enable users to control the DYNAMIXEL by changing specific Data in the Control Table. The Address is a unique value when accessing a specific Data in the Control Table with Instruction Packets. In order to read or write data, users must designate a specific Address in the Instruction Packet. Please refer to [Protocol 2.0] for more details about Instruction Packets.
 
-`Note` Two's complement is applied for the negative value. For more information, please refer to [Two's complement] from Wikipedia.
+**NOTE** : Two's complement is applied for the negative value. For more information, please refer to [Two's complement] from Wikipedia.
 {: .notice}
 
 ### [Area (EEPROM, RAM)](#area-eeprom-ram)

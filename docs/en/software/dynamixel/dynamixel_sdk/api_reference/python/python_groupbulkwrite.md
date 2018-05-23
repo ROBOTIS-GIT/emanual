@@ -35,11 +35,11 @@ sidebar:
 | Methods                                                     | Description                                       |
 |:------------------------------------------------------------|:--------------------------------------------------|
 | **[groupBulkWrite](#groupbulkwrite)**                       | Initializes members of packet data pointer struct |
-| **[groupBulkWriteAddParam](#groupbulkwriteaddparam)**       | Adds parameter storage for read                   |
-| **[groupBulkWriteRemoveParam](#groupbulkwriteremoveparam)** | Removes parameter on the storage                  |
-| **[groupBulkWriteChangeParam](#groupbulkwritechangeparam)** | Changes parameter on the storage                  |
-| **[groupBulkWriteClearParam](#groupbulkwriteclearparam)**   | Clears parameter storage                          |
-| **[groupBulkWriteTxPacket](#groupbulkwritetxpacket)**       | Transmits packet to the number of Dynamixels      |
+| **[addParam](#addparam)**                                   | Adds parameter storage for read                   |
+| **[removeParam](#removeparam)**                             | Removes parameter on the storage                  |
+| **[changeParam](#changeparam)**                             | Changes parameter on the storage                  |
+| **[clearParam](#clearparam)**                               | Clears parameter storage                          |
+| **[txPacket](#txpacket)**                                   | Transmits packet to the number of Dynamixels      |
 
 - Enumerator
 
@@ -47,108 +47,99 @@ sidebar:
 
 #### Method References
 
-##### groupBulkWrite
+##### GroupBulkWrite
 - Syntax
 ``` python
-int groupBulkWrite(int port_num, int protocol_version)
+GroupBulkWrite(port, ph)
 ```
 - Parameters
 
-| Parameters       | Description      |
-|:-----------------|:-----------------|
-| port_num         | Port number      |
-| protocol_version | Protocol version |
+| Parameters       | Description            |
+|:-----------------|:-----------------------|
+| port             | PortHandler instance   |
+| ph               | PacketHandler instance |
 
 - Detailed Description
 
    This function initializes the parameters for packet construction. The function resizes groupData struct and initialzes struct members.
 
-##### groupBulkWriteAddParam
+##### addParam
 - Syntax
 ``` python
-bool groupBulkWriteAddParam(int group_num, int id, int start_address, int data_length, int data, int input_length)
-```
-- Parameters
-
-| Parameters    | Description       |
-|:--------------|:------------------|
-| group_num     | Group number      |
-| id            | Dynamixel ID      |
-| start_address | Start address     |
-| data_length   | Data length       |
-| data          | Data for write    |
-| input_length  | Input data length |
-
-- Detailed Description
-
-    This function pushes `id` into the Dynamixel ID list, and initializes #`group_num` parameter storage by setting `start_address` and `param_length`. The function deals with 1, 2 or 4 byte data only. The function returns false when the length of input data exceeds parameter or wrong length, or returns true.   
-
-
-##### groupBulkWriteRemoveParam
-- Syntax
-``` python
-void groupBulkWriteRemoveParam(int group_num, int id)
-```
-- Parameters
-
-| Parameters | Description  |
-|:-----------|:-------------|
-| group_num  | Group number |
-| id         | Dynamixel ID |
-
-- Detailed Description
-
-   This function removes `id` and its data for write in the #`group_num` Dynamixel ID list. The function returns false when no data is in the parameter storage, or returns true.
-
-
-##### groupBulkWriteChangeParam
-- Syntax
-``` python
- bool groupBulkWriteChangeParam(int group_num, int id, int start_address, int data_length, int data, int input_length, int data_pos)
+addParam(dxl_id, start_address, data_length, data)
 ```
 - Parameters
 
 | Parameters    | Description                |
 |:--------------|:---------------------------|
-| group_num     | Group number               |
-| id            | Dynamixel ID               |
+| dxl_id        | Dynamixel ID               |
+| start_address | Start address              |
+| data_length   | Data length                |
+| data          | Data for write             |
+
+- Detailed Description
+
+    This function pushes `dxl_id` into the Dynamixel ID list, and initializes parameter storage by setting `start_address` and `param_length`. The function deals with 1, 2 or 4 byte data only. The function returns false when the length of input data exceeds parameter or wrong length, or returns true.   
+
+
+##### removeParam
+- Syntax
+``` python
+removeParam(dxl_id)
+```
+- Parameters
+
+| Parameters    | Description                |
+|:--------------|:---------------------------|
+| dxl_id        | Dynamixel ID               |
+
+- Detailed Description
+
+   This function removes `dxl_id` and its data for write in the Dynamixel ID list. The function returns false when no data is in the parameter storage, or returns true.
+
+
+##### changeParam
+- Syntax
+``` python
+changeParam(dxl_id, start_address, data_length, data)
+```
+- Parameters
+
+| Parameters    | Description                |
+|:--------------|:---------------------------|
+| dxl_id        | Dynamixel ID               |
 | start_address | Start address              |
 | data_length   | Data length                |
 | data          | data for write             |
-| input_length  | Input data length          |
-| data_pos      | Data position in the array |
 
 - Detailed Description
 
-   This function pushes new `data_length` bytes data into #`group_num` parameter storage of same id. The function returns false when the target ID doesn’t exists in the ID list, or returns true.
+   This function pushes new `data_length` bytes data into parameter storage of same id. The function returns false when the target ID doesn’t exists in the ID list, or returns true.
 
-##### groupBulkWriteClearParam
+##### clearParam
 - Syntax
 ``` python
-void groupBulkWriteClearParam(int group_num)
+clearParam()
 ```
 - Parameters
 
-| Parameters | Description  |
-|:-----------|:-------------|
-| group_num  | Group number |
+None
+
 
 - Detailed Description
 
-   This function clears #`group_num` Dynamixel ID list.
+   This function clears Dynamixel ID list.
 
 
-##### groupBulkWriteTxPacket
+##### txPacket
 - Syntax
 ``` python
-int groupBulkWriteTxPacket(int group_num)
+txPacket()
 ```
 - Parameters
 
-| Parameters | Description  |
-|:-----------|:-------------|
-| group_num  | Group number |
+None
 
 - Detailed Description
 
-   This function transmits the packet by using `BulkWriteTxOnly` function. The communication result and the hardware error are available when the function is terminated.
+   This function transmits the packet by using `bulkWriteTxOnly` function. The communication result and the hardware error are available when the function is terminated.

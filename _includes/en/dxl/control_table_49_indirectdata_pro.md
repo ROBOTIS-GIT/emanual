@@ -23,8 +23,8 @@ Allocating Size 4 byte Goal Position(596) to Indirect Data 2(635), 4 sequential 
 |          638          |          599          |      0x12       |
 
 
-`Note` In order to allocate Data in the Control Table longer than 2[byte] to Indirect Address, all address must be allocated to Indirect Address like the above Example 2.
+**NOTE** : In order to allocate Data in the Control Table longer than 2[byte] to Indirect Address, all address must be allocated to Indirect Address like the above Example 2.
 {: .notice}
 
-`Note` Indirect Address 29 ~ 56 and Indirect Data 29 ~ 56 can only be accessed with Protocol 2.0.
+**NOTE** : Indirect Address 29 ~ 56 and Indirect Data 29 ~ 56 can only be accessed with Protocol 2.0.
 {: .notice}

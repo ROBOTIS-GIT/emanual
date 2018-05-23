@@ -25,7 +25,7 @@ If RoboPlus Terminal is started for the first time, the connection information i
  
 If `Setup` > `Connect` are executed while the communication port is not connected, the port selection window  can be seen as below.  Select serial port and communication speed connected to the controller and click "OK". 
 
-`Note` The basic connection speed of the controller is `57,600bps`.
+**NOTE** : The basic connection speed of the controller is `57,600bps`.
 {: .notice}
  
 ![](/assets/images/sw/rplus1/terminal/roboplus_terminal_002.png)

@@ -39,7 +39,7 @@ The development environment for OpenCR1.0 is wide open from Arduino IDE and Scra
 `1` 5V power source is supplied from regulated 12V output.
 {: .notice}
 
-`Note` Hot swap power switch between "shore power"(12V, 5A SMPS) and "mobile power"(battery) from OpenCR1.0 board enables UPS(Uninterrupted Power Supply) feature.
+**NOTE** : Hot swap power switch between "shore power"(12V, 5A SMPS) and "mobile power"(battery) from OpenCR1.0 board enables UPS(Uninterrupted Power Supply) feature.
 {: .notice}
 
 # [Layout/Pin Map](#layoutpin-map)
@@ -124,7 +124,7 @@ It has an 18-pin common GPIO expansion connector and is mapped to the GPIO pin o
 `FT` pins are 5V tolerant except when in analog mode. The maximum injected current on FT pins are **-5mA**. Also total output current sunk / sourced by sum of all I/O pins are **120mA / -120mA** respectively.
 {: .notice}
 
-`Note` Typical pull-up / pull-down resistance is 40k&ohm;
+**NOTE** : Typical pull-up / pull-down resistance is 40k&ohm;
 {: .notice}
 
 ## [OLLO Connector](#ollo-connector)
@@ -356,7 +356,7 @@ This step shows the port setting for the program uploads. The OpenCR should be c
 
 Select Tools → Port → /dev/ttyACM0.
 
-`Warning` The last digit value `0` in the string `/dev/ttyACM0` might be different depend on the USB connection environment.
+**WARNING** : The last digit value `0` in the string `/dev/ttyACM0` might be different depend on the USB connection environment.
 {: .notice--warning}
 
 ![](/assets/images/platform/turtlebot3/preparation/ide6.png)
@@ -371,7 +371,7 @@ $ sudo apt-get purge modemmanager
 
 ### [Writing Bootloader(Linux)](#writing-bootloaderlinux)
 
-`Caution` Update only if the boot loader version has been changed.
+**CAUTION** : Update only if the boot loader version has been changed.
 {: .notice--warning}
 
 The STM32F7xx, which is used for the main MCU on the OpenCR board, supports DFU(Device Firmware Upgrade). This enables the built-in bootloader of the MCU by itself to boot the DFU protocol by using USB, primarily for the bootloader initialization, the recovery mode, and the bootloader update. The biggest advantage to let the users be able to use bootloader with USB but no other JTAG equipment. Write the firmware by using the DFU mode which is embedded in MCU without writing / debugging equipment, such as STLink.
@@ -436,7 +436,7 @@ See if OpenCR Board is now on the list of Tools → Board. Click this to import 
 This step shows the port setting for the program uploads. The OpenCR should be connected to the PC and the OpenCR via the USB ports.  
 Select Tools → Port → /dev/cu.usbmodem1411
 
-`Caution` The value of `/dev/cu.usbmodem1411` may be different depending on the environment connected to the PC.
+**CAUTION** : The value of `/dev/cu.usbmodem1411` may be different depending on the environment connected to the PC.
 {: .notice--warning}
 
 ![](/assets/images/parts/controller/opencr10/arduino_mac_06.png)
@@ -495,7 +495,7 @@ https://raw.githubusercontent.com/ROBOTIS-GIT/OpenCR/master/arduino/opencr_relea
 This step shows the port setting for the program uploads. The OpenCR should be connected to the PC and the OpenCR via the USB ports.  
 Select Tools → Port → COM1.
 
-`Caution` The value of `COM1` may be different depending on the environment connected to the PC.
+**CAUTION** : The value of `COM1` may be different depending on the environment connected to the PC.
 {: .notice--warning}
 
 

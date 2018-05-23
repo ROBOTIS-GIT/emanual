@@ -22,7 +22,7 @@ sidebar:
 
 The SDK and SDK examples were developed based on the MX-28 and H54-200 PRO Dynamixels. 
 
-SDK examples were tested with the following Dynamixels:
+SDK examples were tested with the following Dynamixels: 
 
 |              | AX  | EX  | RX  | MX  | MX  |  X  |  X  | PRO |
 |:------------:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
@@ -47,7 +47,7 @@ SDK examples were tested with the following Dynamixels:
 > -- : Doesn't exist  
 > blank : Not tested yet
 
-`Note` The BulkRead function doesn't work with the AX, EX, or RX series
+**NOTE** : The BulkRead function doesn't work with the AX, EX, or RX series
 {: .notice}
 
 ### Power Requirements
@@ -60,17 +60,17 @@ SDK examples were tested with the following Dynamixels:
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/device_setup/dynamixel_setting/2.png)
 
-`Note` The X series' 4P connector is not compatible with the USB2Dynamixel connector.
+**NOTE** : The X series' 4P connector is not compatible with the USB2Dynamixel connector.
 {: .notice}
 
 To run the SDK examples, the following Dynamixel parameters need to be changed: 
 * ID = 1 (and 2, when the example uses two Dynamixels) 
-* Baud Rate = 1000000 bps (baud value = 1 for MX, 3 for PRO.)
+* Baud Rate = 57600 bps (baud value = 34 for MX, 1 for PRO.)
 
-To change Dynamixel parameters, use Dynamixel Wizard, which is part of ROBOTIS [RoboPlus](http://en.robotis.com/BlueAD/board.php?bbs_id=downloads&mode=view&bbs_no=1132559&page=1&key=&keyword=&sort=&scate=) suite of software.
+To change Dynamixel parameters, use Dynamixel Wizard, which is part of ROBOTIS [RoboPlus](http://www.robotis.us/roboplus2/) suite of software.
 
 ![](/assets/images/sw/sdk/dynamixel_sdk/device_setup/dynamixel_setting/3.png)
 
 ![](/assets/images/sw/sdk/dynamixel_sdk/device_setup/dynamixel_setting/4.png)
 
-Instructions on how to utilize Dynamixel Wizard are uploaded on the [e-manual](http://support.robotis.com/en/) → <kbd>Software Help</kbd> → <kbd>Dynamixel Wizard</kbd>.
+Instructions on how to utilize Dynamixel Wizard are uploaded on the [e-manual](http://emanual.robotis.com/docs/en/software/rplus2/manager/)

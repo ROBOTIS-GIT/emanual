@@ -17,7 +17,7 @@ sidebar:
 
 # [Introduction](#introduction)
 
-`Caution` AX-S1 is **DISCONTINUED**.
+**CAUTION** : AX-S1 is **DISCONTINUED**.
 {: .notice--warning}
 
 - AX-S1 is a sensor device, which plays the role of eyes and ears of robots.  Distance of an object, Brightness of surroundings, heat, and sound detection functions are included; additionally, IR remote control receptor and sound-making functions are included.  The configuration and the communication type of AX-S1 are equal to AX-12+'s, but it is not operated by servo motor.
@@ -204,7 +204,7 @@ Secondly, the buzzer can play special melodies.  If 255 is entered in buzzer rin
 |0|There are no commands transmitted by REG_WRITE|
 |1|There are commands transmitted by REG_WRITE.|
  
-`Note` If ACTION command is executed, the value is changed into 0.
+**NOTE** : If ACTION command is executed, the value is changed into 0.
 {: .notice}
  
 ### <a name="ir-arrived"></a>Arrival of New Remocon Data
@@ -219,7 +219,7 @@ If IR remocon data is received on the sensor, the new remocon data arrival value
 |0|EEPROM area can be modified.|
 |1|EEPROM area cannot be modified.|
  
-`Caution` If Lock is set to 1, the power must be turned off and then turned on again to change into 0.
+**CAUTION** : If Lock is set to 1, the power must be turned off and then turned on again to change into 0.
 {: .notice--warning}
  
 ### <a name="remote-rx-data"></a>Received Remocon Data

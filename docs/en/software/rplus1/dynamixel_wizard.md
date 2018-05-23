@@ -80,7 +80,7 @@ Dynamixel Wizard automatically detects a new firmware through internet and alway
 If any problems occur in Dynamixel firmware, Dynamixel Wizard can restore the firmware.
  
 {% capture wizard_warning_01 %}
-`Caution` Every data value will be initialized after the firmware restoration. Please check once again the ID and Baud rate before executing the program if you restored the firmware.  
+**CAUTION** : Every data value will be initialized after the firmware restoration. Please check once again the ID and Baud rate before executing the program if you restored the firmware.  
 Please check the mode on the USB2Dynamixel. 3 pin cables should be set to TTL and 4 pin cables should be set to the RS485 switch.
 {% endcapture %}
 

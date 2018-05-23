@@ -19,8 +19,8 @@ Below figure is a block diagram describing the position controller in Position C
 
 ![](/assets/images/dxl/position_controller_pid_gain.jpg)
 
-`Note` In case of PWM Control Mode, both PID controller and Feedforward controller are deactivated while Goal PWM(100) value is directly controlling the motor through an Inverter. In this manner, users can directly control the supplying voltage to the motor.
+**NOTE** : In case of PWM Control Mode, both PID controller and Feedforward controller are deactivated while Goal PWM(100) value is directly controlling the motor through an Inverter. In this manner, users can directly control the supplying voltage to the motor.
 {: .notice}
 
-`Note` K<sub>a</sub> is an Anti-windup Gain that cannot be modified by users.
+**NOTE** : K<sub>a</sub> is an Anti-windup Gain that cannot be modified by users.
 {: .notice}

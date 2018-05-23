@@ -33,97 +33,74 @@ sidebar:
 
 
 ``` python
-#!/usr/bin/env python
-# -*- coding: utf-8 -*-
-
-#
-# broadcast_ping.py
-#
-#  Created on: 2016. 6. 16.
-#      Author: Ryu Woon Jung (Leon)
-#
-
-#
-# *********     ping Example      *********
-#
-#
-# Available Dynamixel model on this example : All models using Protocol 2.0
-# This example is designed for using a Dynamixel PRO 54-200, and an USB2DYNAMIXEL.
-# To use another Dynamixel model, such as X series, see their details in E-Manual(support.robotis.com) and edit below variables yourself.
-# Be sure that Dynamixel PRO properties are already set as %% ID : 1 / Baudnum : 3 (Baudrate : 1000000 [1M])
-#
-
-import os, sys, ctypes
+import os
 
 if os.name == 'nt':
     import msvcrt
     def getch():
         return msvcrt.getch().decode()
 else:
-    import tty, termios
+    import sys, tty, termios
     fd = sys.stdin.fileno()
     old_settings = termios.tcgetattr(fd)
-    tty.setraw(sys.stdin.fileno())
     def getch():
-        return sys.stdin.read(1)
+        try:
+            tty.setraw(sys.stdin.fileno())
+            ch = sys.stdin.read(1)
+        finally:
+            termios.tcsetattr(fd, termios.TCSADRAIN, old_settings)
+        return ch
 
-os.sys.path.append('../dynamixel_functions_py')             # Path setting
-
-import dynamixel_functions as dynamixel                     # Uses Dynamixel SDK library
+from dynamixel_sdk import *                 # Uses Dynamixel SDK library
 
 # Protocol version
-PROTOCOL_VERSION            = 2                             # See which protocol version is used in the Dynamixel
+PROTOCOL_VERSION        = 2.0               # See which protocol version is used in the Dynamixel
 
 # Default setting
-DXL_ID                      = 1                             # Dynamixel ID: 1
-BAUDRATE                    = 1000000
-DEVICENAME                  = "/dev/ttyUSB0".encode('utf-8')        # Check which port is being used on your controller
-                                                            # ex) Windows: "COM1"   Linux: "/dev/ttyUSB0"
+BAUDRATE                = 57600             # Dynamixel default baudrate : 57600
+DEVICENAME              = '/dev/ttyUSB0'    # Check which port is being used on your controller
+                                            # ex) Windows: "COM1"   Linux: "/dev/ttyUSB0" Mac: "/dev/tty.usbserial-*"
 
-MAX_ID                      = 252                           # Maximum ID value
-COMM_SUCCESS                = 0                             # Communication Success result value
-COMM_TX_FAIL                = -1001                         # Communication Tx Failed
-
-# Initialize PortHandler Structs
+# Initialize PortHandler instance
 # Set the port path
 # Get methods and members of PortHandlerLinux or PortHandlerWindows
-port_num = dynamixel.portHandler(DEVICENAME)
+portHandler = PortHandler(DEVICENAME)
 
-# Initialize PacketHandler Structs
-dynamixel.packetHandler()
-
-dxl_comm_result = COMM_TX_FAIL                              # Communication result
+# Initialize PacketHandler instance
+# Set the protocol version
+# Get methods and members of Protocol1PacketHandler or Protocol2PacketHandler
+packetHandler = PacketHandler(PROTOCOL_VERSION)
 
 # Open port
-if dynamixel.openPort(port_num):
-    print("Succeeded to open the port!")
+if portHandler.openPort():
+    print("Succeeded to open the port")
 else:
-    print("Failed to open the port!")
+    print("Failed to open the port")
     print("Press any key to terminate...")
     getch()
     quit()
 
+
 # Set port baudrate
-if dynamixel.setBaudRate(port_num, BAUDRATE):
-    print("Succeeded to change the baudrate!")
+if portHandler.setBaudRate(BAUDRATE):
+    print("Succeeded to change the baudrate")
 else:
-    print("Failed to change the baudrate!")
+    print("Failed to change the baudrate")
     print("Press any key to terminate...")
     getch()
     quit()
 
 # Try to broadcast ping the Dynamixel
-dynamixel.broadcastPing(port_num, PROTOCOL_VERSION)
-if dynamixel.getLastTxRxResult(port_num, PROTOCOL_VERSION) != COMM_SUCCESS:
-    dynamixel.printTxRxResult(PROTOCOL_VERSION, dynamixel.getLastTxRxResult(port_num, PROTOCOL_VERSION))
+dxl_data_list, dxl_comm_result = packetHandler.broadcastPing(portHandler)
+if dxl_comm_result != COMM_SUCCESS:
+    print("%s" % packetHandler.getTxRxResult(dxl_comm_result))
 
-print("Detected Dynamixel : ")
-for id in range(0, MAX_ID):
-    if ctypes.c_ubyte(dynamixel.getBroadcastPingResult(port_num, PROTOCOL_VERSION, id)).value:
-        print("[ID:%03d]" % (id))
+print("Detected Dynamixel :")
+for dxl_id in dxl_data_list:
+    print("[ID:%03d] model version : %d | firmware version : %d" % (dxl_id, dxl_data_list.get(dxl_id)[0], dxl_data_list.get(dxl_id)[1]))
 
 # Close port
-dynamixel.closePort(port_num)
+portHandler.closePort()
 ```
 
 
@@ -145,70 +122,50 @@ else:
     def getch():
         return sys.stdin.read(1)
 
-os.sys.path.append('../dynamixel_functions_py')             # Path setting
-
-import dynamixel_functions as dynamixel                     # Uses Dynamixel SDK library
+from dynamixel_sdk import *                 # Uses Dynamixel SDK library
 ```
 
 `getch()` gets the input which is for example code control.
 
 `os.sys.path.append()` sets paths of function reference.
 
-This example uses `dynamixel_functions` library as `dynamixel` imported from `dynamixel_functions_py` package.
 
 ``` python
 # Protocol version
-PROTOCOL_VERSION            = 2                             # See which protocol version is used in the Dynamixel
+PROTOCOL_VERSION        = 2.0               # See which protocol version is used in the Dynamixel
 ```
 
 Dynamixel uses either or both protocols: Protocol 1.0 and Protocol 2.0. Choose one of the Protocol which is appropriate in the Dynamixel.
 
 ``` python
 # Default setting
-DXL_ID                      = 1                             # Dynamixel ID: 1
-BAUDRATE                    = 1000000
-DEVICENAME                  = "/dev/ttyUSB0".encode('utf-8')        # Check which port is being used on your controller
-                                                            # ex) Windows: "COM1"   Linux: "/dev/ttyUSB0"
+BAUDRATE                = 57600             # Dynamixel default baudrate : 57600
+DEVICENAME              = '/dev/ttyUSB0'    # Check which port is being used on your controller
+                                            # ex) Windows: "COM1"   Linux: "/dev/ttyUSB0" Mac: "/dev/tty.usbserial-*"
 ```
 
 Here we set some variables to let you freely change them and use them to run the example code.
 
 As the document previously said in [previous chapter](/docs/en/software/dynamixel/dynamixel_sdk/device_setup/dynamixel/#dynamixel), customize Dynamixel control table items, such as Dynamixel ID, communication `BAUDRATE`, and the `DEVICENAME`, on your own terms of needs. In particular, `BAUDRATE` and `DEVICENAME` have systematical dependencies on your controller, so make clear what kind of communication method you will use.
 
-``` python
-MAX_ID                      = 252                           # Maximum ID value
-```
-
-Dynamixel ID can be set with in the range from 1 to 252
 
 ``` python
-COMM_SUCCESS                = 0                             # Communication Success result value
-COMM_TX_FAIL                = -1001                         # Communication Tx Failed
-```
-
-Each of the variables above show the meaning of the communication result value.
-
-``` python
-# Initialize PortHandler Structs
+# Initialize PortHandler instance
 # Set the port path
 # Get methods and members of PortHandlerLinux or PortHandlerWindows
-port_num = dynamixel.portHandler(DEVICENAME)
+portHandler = PortHandler(DEVICENAME)
 ```
 
-`portHandler()` function sets port path as `DEVICENAME` and get `port_num`, and prepares an appropriate functions for port control in controller OS automatically. `port_num` would be used in many functions in the body of the code to specify the port for use.
+`portHandler()` function sets port path as `DEVICENAME` and get `PortHandler` instance, and prepares an appropriate functions for port control in controller OS automatically. `portHandler` would be used in many functions in the body of the code to specify the port for use.
 
 ``` python
-# Initialize PacketHandler Structs
-dynamixel.packetHandler()
+# Initialize PacketHandler instance
+# Set the protocol version
+# Get methods and members of Protocol1PacketHandler or Protocol2PacketHandler
+packetHandler = PacketHandler(PROTOCOL_VERSION)
 ```
 
 `packetHandler()` function initializes parameters used for packet construction and packet storing.
-
-``` python
-dxl_comm_result = COMM_TX_FAIL                              # Communication result
-```
-
-`dxl_comm_result` indicates which error has been occurred during packet communication.
 
 ``` python
 # Open port
@@ -221,7 +178,7 @@ else:
     quit()
 ```
 
-First, controller opens #`port_num` port to do serial communication with the Dynamixel. If it fails to open the port, the example will be terminated.
+First, controller opens port to do serial communication with the Dynamixel. If it fails to open the port, the example will be terminated.
 
 ``` python
 # Set port baudrate
@@ -234,21 +191,21 @@ else:
     quit()
 ```
 
-Secondly, the controller sets the communication `BAUDRATE` at #`port_num` port opened previously.
+Secondly, the controller sets the communication `BAUDRATE` at port opened previously.
 
 
 ``` python
 # Try to broadcast ping the Dynamixel
-dynamixel.broadcastPing(port_num, PROTOCOL_VERSION)
-if dynamixel.getLastTxRxResult(port_num, PROTOCOL_VERSION) != COMM_SUCCESS:
-    dynamixel.printTxRxResult(PROTOCOL_VERSION, dynamixel.getLastTxRxResult(port_num, PROTOCOL_VERSION))
+dxl_data_list, dxl_comm_result = packetHandler.broadcastPing(portHandler)
+if dxl_comm_result != COMM_SUCCESS:
+    print("%s" % packetHandler.getTxRxResult(dxl_comm_result))
 ```
 
-`broadcastPing()` function shows the connection between controller and each Dynamixels from ID 1 to ID 253 through #`port_num` port.
+`broadcastPing()` function shows the connection between controller and each Dynamixels from ID 1 to ID 253 through port.
 
 ``` python
 # Close port
-dynamixel.closePort(port_num)
+portHandler.closePort()
 ```
 
 Finally, port becomes disposed.

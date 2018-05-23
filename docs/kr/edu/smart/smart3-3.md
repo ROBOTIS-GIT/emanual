@@ -57,7 +57,7 @@ sidebar:
 
   ![](/assets/images/edu/smart/cm_200_7.jpg)
 
-  `Note` 예제 파일은 [3단계 교안예제] 페이지 또는 R+ SMARTIII앱 에서 얻을 수 있습니다.  
+  **NOTE** : 예제 파일은 [3단계 교안예제] 페이지 또는 R+ SMARTIII앱 에서 얻을 수 있습니다.  
   {: .notice}
 
 # [교안예제](#교안예제)

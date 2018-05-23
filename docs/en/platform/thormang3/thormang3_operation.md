@@ -122,7 +122,7 @@ Simple demo of the [thormang3_manipulation_module]
 
 #### Install & Build
 
-  `Note` Reference : [PPC Installation]
+  **NOTE** : Reference : [PPC Installation]
   {: .notice}
 
 #### Usage
@@ -172,7 +172,7 @@ Simple demo of the [thormang3_walking_module]
 
 #### Install & Build
 
-`Note` Reference : [PPC Installation]
+**NOTE** : Reference : [PPC Installation]
 {: .notice}
 
 #### Usage
@@ -366,7 +366,7 @@ Instructions about how to calibrate FT Sensors on THORMANG3's feet. Balance Algo
 
 #### Install & Build
 
-  `Note` Reference : [OPC Installation]
+  **NOTE** : Reference : [OPC Installation]
   {: .notice}
 
 #### Run
@@ -507,7 +507,7 @@ Structure looks like the below figure.
 
 ##### Install & Build
 
-  `Note` Reference : [OPC Installation]
+  **NOTE** : Reference : [OPC Installation]
   {: .notice}
 
 ##### Run
@@ -561,7 +561,7 @@ A walking example that follows StepData using [footstep_planner].
 
 ##### Install & Build
 
-  `Note` Reference : [OPC Installation]
+  **NOTE** : Reference : [OPC Installation]
   {: .notice}
 
 ##### Run

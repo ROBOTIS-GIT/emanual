@@ -106,7 +106,11 @@ The LDS-01 is used for TurtleBot3 Burger, Waffle and Waffle Pi models.
 
 We are offering [ROS package for LSD](http://wiki.ros.org/hls_lfcd_lds_driver). The hls_lfcd_lds_driver package provides a driver for "HLS(Hitachi-LG Sensor) LFCD LDS(Laser Distance Sensor)".
 
+<<<<<<< HEAD
+**NOTE** : Due to firmware update (after buy it on Oct. 2017), the sensor is running directly when power in on.
+=======
 **NOTE**: Due to firmware update (after buy it on Oct. 2017), the sensor is running directly when power in on.
+>>>>>>> contents_ost
 {: .notice--info}
 
 ### Installation
