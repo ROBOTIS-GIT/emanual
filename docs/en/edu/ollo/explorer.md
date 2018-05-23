@@ -31,7 +31,7 @@ Through 12-session curriculum, learn scientific principle and physics theory suc
 
 For the controller([CM-100]) included with OLLO Explorer, a comprehensive program which can be used without downloading is installed.
 
-`Caution` The comprehensive program in the controller will be overwritten when downloading a program. Therefore, you must download the program using [USB Downloader(LN-101)].
+**CAUTION** : The comprehensive program in the controller will be overwritten when downloading a program. Therefore, you must download the program using [USB Downloader(LN-101)].
 {: .notice--warning}
 
 If the button on the controller is pressed sequentially, the musical notes are played. Depending on the pressed number, the installed program can be selected.

@@ -5,7 +5,7 @@
 
 [ZIG-100/110] uses ZIGBee for wireless communication. ZIGBee, like Bluetooth, is the communication technology commonly used in Personal Area Network (PAN). The communication quality of ZIGBee is better than that of IR, so it allows many users to control their robots without interferences.
 
-`Caution` Please note that not all products include a zigbee module and may need to be purchased separately.
+**CAUTION** : Please note that not all products include a zigbee module and may need to be purchased separately.
 {: .notice--warning}
 
 ### Controller & ZIGBee

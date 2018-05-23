@@ -232,7 +232,7 @@ See if OpenCM9.04 Board is now on the list of Tools → Board. Click this to imp
 This step shows the port setting for the program uploads. The OpenCR/OpenCM9.04 should be connected to the PC via micro USB port.  
 Select Tools → Port → /dev/cu.usbmodem1411
 
-`Caution` The value of **/dev/cu.usbmodem1411** may be different depending on the environment connected to the PC.
+**CAUTION** : The value of **/dev/cu.usbmodem1411** may be different depending on the environment connected to the PC.
 {: .notice--warning}
 
 ![](/assets/images/parts/controller/opencr10/arduino_mac_06.png)
@@ -302,7 +302,7 @@ See if OpenCM9.04 Board is now on the list of Tools → Board. Click this to imp
 This step shows the port setting for the program uploads. The OpenCR/OpenCM9.04 should be connected to the PC via micro USB port.  
 Select Tools → Port → COM1.
 
-`Caution` The value of **COM1** may be different depending on the environment connected to the PC.
+**CAUTION** : The value of **COM1** may be different depending on the environment connected to the PC.
 {: .notice--warning}
 
 
@@ -326,7 +326,7 @@ Select Tools → Port → COM1.
 
 ## [Writing Bootloader(OpenCR)](#writing-bootloaderopencr)
 
-`Caution` Perform Bootloader update only when the OpenCR bootloader has been updated. The product already has the default bootloader.
+**CAUTION** : Perform Bootloader update only when the OpenCR bootloader has been updated. The product already has the default bootloader.
 {: .notice--warning}
 
 The STM32F7xx, which is used for the main MCU on the OpenCR board, supports DFU(Device Firmware Upgrade). This enables the built-in bootloader of the MCU by itself to boot the DFU protocol by using USB, primarily for the bootloader initialization, the recovery mode, and the bootloader update. The biggest advantage to let the users be able to use bootloader with USB but no other JTAG equipment. Write the firmware by using the DFU mode which is embedded in MCU without writing / debugging equipment, such as STLink.

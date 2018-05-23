@@ -22,7 +22,7 @@ Set A combines the parts from the existing products ROBOTIS DREAM Level 1 and Le
 - Assembly manual for all 23 robots available through RoboPlus Design SW.
 - Full workbook for students available (sold separately).
 
-`Caution` The controller([CM-150]) in ROBOTIS DREAM SET A contains a "Comprehensive Program" that can make the robot move without downloading a program. To program or download a program you will need the USB Cable included. If you want to build and program your robots using more parts and peripheral devices, please purchase the ROBOTIS DREAM SET B or necessary parts separately.
+**CAUTION** : The controller([CM-150]) in ROBOTIS DREAM SET A contains a "Comprehensive Program" that can make the robot move without downloading a program. To program or download a program you will need the USB Cable included. If you want to build and program your robots using more parts and peripheral devices, please purchase the ROBOTIS DREAM SET B or necessary parts separately.
 
 
 # [Part List](#part-list)
@@ -34,7 +34,7 @@ Set A combines the parts from the existing products ROBOTIS DREAM Level 1 and Le
 
 ROBOTIS DREAM SET A comes with a "Comprehensive Program" in the controller that can make the robot move without downloading a program.
 
-`Caution` The comprehensive program in the controller will be overwritten when downloading a program. Therefore, you must download the program using [USB Downloader(LN-101)].
+**CAUTION** : The comprehensive program in the controller will be overwritten when downloading a program. Therefore, you must download the program using [USB Downloader(LN-101)].
 {: .notice--warning}
 
 ## [How to Play](#how-to-play)

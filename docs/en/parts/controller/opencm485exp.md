@@ -54,7 +54,7 @@ sidebar:
     
 2. OpenCM9.04 is mounted onto OpenCM 485 EXP as shown below.
 
-    `Caution` The orientation of the connection must be correct.
+    **CAUTION** : The orientation of the connection must be correct.
     {: .notice--warning}
 
     ![](/assets/images/parts/controller/opencm904/opencm485exp_03.jpg)

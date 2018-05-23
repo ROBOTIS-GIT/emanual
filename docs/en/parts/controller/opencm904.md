@@ -37,7 +37,7 @@ sidebar:
 **NOTE** : Refer to the ROBOTIS-MINI for controller recovery (type C-only) [ROBOTIS-MINI Controller Firmware Update]
 {: .notice}
 
-`Caution` Please **DISCONNECT** OpenCM9.04 and OpenCM 485 Expansion board when updating or recovering Dynamixel firmware.
+**CAUTION** : Please **DISCONNECT** OpenCM9.04 and OpenCM 485 Expansion board when updating or recovering Dynamixel firmware.
 {: .notice--warning}
 
 # [Specifications](#specifications)
@@ -175,7 +175,7 @@ Switch used to control the power supplied to the board and DYNAMIXEL on/off. (No
 ### [Serial Battery Socket](#serial-battery-socket)
 Connects two LBS-04 Lithium-ion battery.
 
-`Caution` Do NOT charge the battery while its connected to the board because the user will short the circuit. Be sure to disconnect from the board when charging the battery.
+**CAUTION** : Do NOT charge the battery while its connected to the board because the user will short the circuit. Be sure to disconnect from the board when charging the battery.
 {: .notice--warning}
 
 ### [Dynamixel TTL 3 PIN](#dynamixel-ttl-3-pin)
@@ -351,7 +351,7 @@ All of OpenCM9.04’s GPIO pins can internally “pull-up” or “pull-down” 
 
 > Example: Changing default Analog Reference voltage(AREF) to 5V by modifying JP2
 
-`Caution` Check the pin supporting up to 5V once Analog Reference (AREF) has been modified to 5V.
+**CAUTION** : Check the pin supporting up to 5V once Analog Reference (AREF) has been modified to 5V.
 {: .notice--warning}
 
 ## [Pin Name Definition](#pin-name-definition)

@@ -530,7 +530,7 @@ Current input voltage. This value is 10 times larger than the actual voltage. Fo
 |0|EEPROM area can be modified|
 |1|EEPROM area cannot be modified|
  
-`Caution` If Lock is set to 1, the power must be turned off and then turned on again to change into 0.
+**CAUTION** : If Lock is set to 1, the power must be turned off and then turned on again to change into 0.
 {: .notice--warning}
 
 ### [Mechanical Specifications](#mechanical-specifications)

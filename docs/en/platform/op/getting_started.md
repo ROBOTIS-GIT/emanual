@@ -27,7 +27,7 @@ Congratulations on purchasing DARWIN-OP. DARWIN-OP will lead you to the robot wo
 
 ## [Safety Information](#safety-information)
 
-`Caution` Exercise safety when using this product. Robotis is not responsible, in any ways, for any accidents due to user negligence.
+**CAUTION** : Exercise safety when using this product. Robotis is not responsible, in any ways, for any accidents due to user negligence.
 {: .notice--warning}
  
 - Please read the instructions carefully before getting started.
@@ -73,10 +73,10 @@ Congratulations on purchasing DARWIN-OP. DARWIN-OP will lead you to the robot wo
 
 ![](/assets/images/platform/op/op_battery_charge_02.jpg)
 
-`Caution` If the connection is unstable, please unplug the battery pack completely and plug the battery pack again.
+**CAUTION** : If the connection is unstable, please unplug the battery pack completely and plug the battery pack again.
 {: .notice--warning}
  
-`Caution` Only use the supplied battery charger. Charging the battery pack with any other charger may cause damages.
+**CAUTION** : Only use the supplied battery charger. Charging the battery pack with any other charger may cause damages.
 {: .notice--warning}
 
 ## [Battery Hot Swap](#battery-hot-swap)
@@ -122,7 +122,7 @@ The following procedure takes you through the set up process.
 
     ![](/assets/images/platform/op/op_001.jpg)
 
-  `Caution` Setting DARWIN-OP in any position other than kneeling may cause physical damages.
+  **CAUTION** : Setting DARWIN-OP in any position other than kneeling may cause physical damages.
   {: .notice--warning}
  
 2. If DC power (12V) supply is used to provide power to DARWIN-OP  
@@ -174,7 +174,7 @@ To run each mode, press `START` button. After pressing `START` DARWIN-OP will st
 **RESET Button**  
 The `RESET` button resets the actuators, not the entire robot. Please keep in mind that the demo program is still running in the main controller.
 
-`Caution` The RESET button powers off all actuators. It is highly recommended that DARWIN-OP is set at kneeling position before pressing RESET or hold DARWIN-OP by its carrying handle. Pressing the RESET button while DARWIN-OP is moving may result in damages the the actuator(s) or/and robot itself.
+**CAUTION** : The RESET button powers off all actuators. It is highly recommended that DARWIN-OP is set at kneeling position before pressing RESET or hold DARWIN-OP by its carrying handle. Pressing the RESET button while DARWIN-OP is moving may result in damages the the actuator(s) or/and robot itself.
 {: .notice--warning}
  
 ### [Demonstration Ready Mode](#demonstration-ready-mode)

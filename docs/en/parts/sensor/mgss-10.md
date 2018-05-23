@@ -34,7 +34,7 @@ sidebar:
 
 ![](/assets/images/parts/sensors/mgss-10_01.png)
 
-`Caution` Won't be detected if the sensing distance is shorter than 5mm
+**CAUTION** : Won't be detected if the sensing distance is shorter than 5mm
 {: .notice--warning}
 
 # [Pinout](#pinout)
@@ -47,10 +47,10 @@ sidebar:
 4. VCC (3.3V)
 5. Not used
 
-`Caution` Cables can may be damaged when not properly connected (i.e. wrong orientation), or use of excessive force during connection.
+**CAUTION** : Cables can may be damaged when not properly connected (i.e. wrong orientation), or use of excessive force during connection.
 {: .notice--warning}
 
-`Caution` Make connections to the controlled while unpowered. Making connections while the controller is powered may cause it to malfunction or/and damage.
+**CAUTION** : Make connections to the controlled while unpowered. Making connections while the controller is powered may cause it to malfunction or/and damage.
 {: .notice--warning}
 
 # [Tutorials](#tutorials)

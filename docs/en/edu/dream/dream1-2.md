@@ -17,7 +17,7 @@ sidebar:
 
 ROBOTIS DREAM Level 2 teaches you the basics of how a robot moves, which includes the usage of sensors, speed and force, gait, and drive. This level comes with 12 chapters to help you understand the scientific and physical theory using experiments as you build the robots chapter by chapter.
 
-`Caution` ROBOTIS DREAM Level 2 requires parts from ROBOTIS DREAM Level 1. Please make sure to purchase Level 1 first to build the robots in Level 2. The controller([CM-150]) in ROBOTIS DREAM level 2 contains a "Comprehensive Program" that can make the robot move without downloading a program. To program or download a program you will need the USB Cable included in the ROBOTIS DREAM Level 1. If you want to build and program your robots using more parts and peripheral devices, please purchase the ROBOTIS DREAM Level 3 or necessary parts separately.
+**CAUTION** : ROBOTIS DREAM Level 2 requires parts from ROBOTIS DREAM Level 1. Please make sure to purchase Level 1 first to build the robots in Level 2. The controller([CM-150]) in ROBOTIS DREAM level 2 contains a "Comprehensive Program" that can make the robot move without downloading a program. To program or download a program you will need the USB Cable included in the ROBOTIS DREAM Level 1. If you want to build and program your robots using more parts and peripheral devices, please purchase the ROBOTIS DREAM Level 3 or necessary parts separately.
 
 
 # [Part List](#part-list)
@@ -31,7 +31,7 @@ ROBOTIS DREAM Level 2 teaches you the basics of how a robot moves, which include
 
 ROBOTIS DREAM level 2 comes with a "Comprehensive Program" in the controller that can make the robot move without downloading a program.
 
-`Caution` The comprehensive program in the controller will be overwritten when downloading a program. Therefore, you must download the program using [USB Downloader(LN-101)].
+**CAUTION** : The comprehensive program in the controller will be overwritten when downloading a program. Therefore, you must download the program using [USB Downloader(LN-101)].
 {: .notice--warning}
 
 ## [How to Play](#how-to-play)

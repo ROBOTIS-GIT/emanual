@@ -17,7 +17,7 @@ sidebar:
 
 > High Speed Geared Motor
 
-`Caution` High Speed Geared Motor is **DISCONTINUED**.
+**CAUTION** : High Speed Geared Motor is **DISCONTINUED**.
 {: .notice--warning}
 
 It is the motor used in OLLO; it is connected to CM-100, and the direction of spin and the speed of spin can be adjusted through port control.
@@ -41,7 +41,7 @@ It can be operated as general DC motors by connecting OLLO switch and the batter
 1. MOT-
 2. MOT+
 
-`Caution` Cables can be damaged when connected imporperly(i.e. wrong orientation), or when use excessive force during connection.
+**CAUTION** : Cables can be damaged when connected imporperly(i.e. wrong orientation), or when use excessive force during connection.
 {: .notice--warning}
 
 # [Tutorials](#tutorials)

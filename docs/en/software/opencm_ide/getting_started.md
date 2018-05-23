@@ -1321,7 +1321,7 @@ void loop(){
 ### Let us restrict the movement angle to 0~150 degrees.
 If the CCW Angle Limit is 0x3FF then it is 300 degrees, so we will send 0x200 which corresponds to 150 degrees using the writeByte() method.
 
-`Caution` If you set the CCW Angle Limit in number 8 to 0 then it will change to wheel mode and you will not be able to control the Goal position.
+**CAUTION** : If you set the CCW Angle Limit in number 8 to 0 then it will change to wheel mode and you will not be able to control the Goal position.
 {: .notice--warning}
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_124.png)

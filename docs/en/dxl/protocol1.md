@@ -296,9 +296,9 @@ This instruction is to execute the registered Reg Write instruction. The Action 
 This instruction is to reset the Control Table of Dynamixel to the factory default values.
 
 {% capture reset_warning_01 %}
-`Caution` Please be careful as Reset instruction will factory reset values in the EEPROM. 
+**CAUTION** : Please be careful as Reset instruction will factory reset values in the EEPROM. 
 
-`Caution` Broadcast ID(0xFE) cannot be used for Reset instruction.  
+**CAUTION** : Broadcast ID(0xFE) cannot be used for Reset instruction.  
   Applied Products : MX-12W(V41), MX-28(V40), MX-64(V40), MX-106(V40)
 {% endcapture %}
 

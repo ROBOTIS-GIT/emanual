@@ -38,7 +38,7 @@ sidebar:
 ### Downloading the Program
 
 - Program for type A is installed by default in CM-530.
-- You can find task codes and motion files for other actions on the [Default Program](#default-program) page.
+- You can find task codes and motion files for other actions on the [Download](#download) page.
 
 {% include en/parts/controller/cm510_530_turnon.md %}
 
@@ -228,7 +228,7 @@ For more information on each sensors, please click on the names of the sensors.
 
 You can make your own sensor with simple control functions using the ADC port and OUT port on CM-510/CM-530.
 
-`Caution` Connecting poorly designed circuits may damage the controller. Please be sure to acquire sufficient knowledge about circuits beforehand.
+**CAUTION** : Connecting poorly designed circuits may damage the controller. Please be sure to acquire sufficient knowledge about circuits beforehand.
 {: .notice--warning}
 
 ### PIN Information

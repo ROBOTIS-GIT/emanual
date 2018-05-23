@@ -63,7 +63,7 @@ high payload capacity, and dynamic motion ability to enable many exciting resear
 
 ## [Safety Information](#safety-information)
 
-`Caution` ROBOTIS will not be responsible for any loss or damage whatsoever caused resulting from
+**CAUTION** : ROBOTIS will not be responsible for any loss or damage whatsoever caused resulting from
 user’s negligence or misuse of the product.
 {: .notice--warning}
 
