@@ -27,7 +27,7 @@ sidebar:
 {% capture info_01 %}
 **NOTE:** There are two ways to install Linux and ROS to Raspberry Pi 3. 
 - First method: If you prefer Ubuntu MATE, please take the first method `Install Linux (Ubuntu MATE)` below. This method should install the ROS and dependency packages after installing the Linux images. This instruction takes about 1 hours to install ROS and related packages for TurtleBot3.
-- Second method: We provide the Linux distro based on Raspbian. They are pre-installed with ROS and ROS-packages related TurtleBot3. It is available immediately without additional installation. If you want to use it, please take the second method `Install Linux based on Raspbian` below. 
+- Second method: We provide the Linux distro image based on Raspbian. They are pre-installed with ROS and ROS-packages related TurtleBot3. It is available immediately without additional installation. If you want to use it, please take the second method `Install Linux based on Raspbian` below. 
 {% endcapture %}
 <div class="notice--info">{{ info_01 | markdownify }}</div>
 

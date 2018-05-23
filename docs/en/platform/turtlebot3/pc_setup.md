@@ -18,7 +18,7 @@ sidebar:
 
 ![](/assets/images/platform/turtlebot3/software/remote_pc_and_turtlebot.png)
 
-**WARNING:** The contents in this chapter corresponds to the `Remote PC` (your desktop or laptop PC) which will control TurtleBot3. Do NOT apply this instruction to your TurtleBot3.
+**WARNING:** The contents in this chapter corresponds to the `Remote PC` (your desktop or laptop PC) which will control TurtleBot3. Do **NOT** apply this instruction to your TurtleBot3.
 {: .notice--warning}
 
 **NOTE:** This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
@@ -26,7 +26,7 @@ sidebar:
 
 ### [Install Ubuntu on Remote PC](#install-ubuntu-on-remote)
 
-Download and install the `Ubuntu 16.04` on the `Remote PC (Desktop or Laptop PC)` from the following link.
+Download and install the `Ubuntu 16.04` on the `Remote PC (your desktop or laptop PC)` from the following link.
 
 - [Download link][ubuntu_download_link]
 
@@ -38,7 +38,7 @@ If you need more help for installing Ubuntu, check out the step-by-step guide fr
 
 ![](/assets/images/platform/turtlebot3/logo_ros.png)
 
-The following script will allow you to simplify the ROS installation procedure. Run the following command in a terminal window. The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`-`Alt`-`T`. After install ROS, please reboot Remote PC.
+The following script will allow you to simplify the ROS installation procedure. Run the following command in a terminal window. The terminal application can be found with the Ubuntu search icon on the top left corner of the screen, or you can use shortcut key for terminal is `Ctrl`-`Alt`-`T`. After install ROS, please reboot Remote PC.
 
 ``` bash
 $ sudo apt-get update
@@ -56,7 +56,7 @@ If you prefer manual installation, please following the link below.
 
 ### [Install Dependent ROS Packages](#install-dependent-ros-packages)
 
-The next step is to install dependent packages for TurtleBot3 control.
+The next step is to install dependent packages for TurtleBot3 control on Remote PC.
 
 ``` bash
 $ sudo apt-get install ros-kinetic-joy ros-kinetic-teleop-twist-joy ros-kinetic-teleop-twist-keyboard ros-kinetic-laser-proc ros-kinetic-rgbd-launch ros-kinetic-depthimage-to-laserscan ros-kinetic-rosserial-arduino ros-kinetic-rosserial-python ros-kinetic-rosserial-server ros-kinetic-rosserial-client ros-kinetic-rosserial-msgs ros-kinetic-amcl ros-kinetic-map-server ros-kinetic-move-base ros-kinetic-urdf ros-kinetic-xacro ros-kinetic-compressed-image-transport ros-kinetic-rqt-image-view ros-kinetic-gmapping ros-kinetic-navigation ros-kinetic-interactive-markers
@@ -69,7 +69,7 @@ $ git clone https://github.com/ROBOTIS-GIT/turtlebot3.git
 $ cd ~/catkin_ws && catkin_make
 ```
 
-If catkin_make command is completed without any errors, the preparation for TurtleBot3 is done.
+If `catkin_make` command is completed without any errors, the preparation for TurtleBot3 is done.
 
 
 ### [Network Configuration](#network-configuration)
@@ -94,9 +94,9 @@ Enter the below command.
 $ nano ~/.bashrc
 ```
 
-Press ' `alt+/` ' to end line of the file.
+Press `alt+/` to end line of the file.
 
-Modify the address of `localhost` with the IP address acquired from the above terminal window.
+Modify the address of `localhost` in the `ROS_MASTER_URI` and `ROS_HOSTNAME` with the IP address acquired from the above terminal window.
 
 ![](/assets/images/platform/turtlebot3/software/network_configuration3.png)
 
