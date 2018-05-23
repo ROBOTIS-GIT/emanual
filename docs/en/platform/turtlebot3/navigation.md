@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: turtlebot3_navigation
+ref: navigation
 read_time: true
 share: true
 author_profile: false
@@ -11,46 +11,38 @@ sidebar:
   nav: "turtlebot3"
 ---
 
-<div style="counter-reset: h1 12"></div>
+<div style="counter-reset: h1 9"></div>
 
 # [Navigation](#navigation)
 
-**NOTE** : This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame` version.
-{: .notice--info}
-
-**WARNING** : Make sure to run the [Bringup](#bringup) instruction before performing Navigation.
+**WARNING**: Be careful when running the robot on the table as the robot might fall.
 {: .notice--warning}
 
-**WARNING** : The navigation uses the a data created in [SLAM](#slam). Please make sure to have a map data.
-{: .notice--warning}
-
-**WARNING** : Be careful when testing the robot on the table as the robot might fall.
-{: .notice--warning}
+{% capture notice_01 %}
+**NOTE**: 
+- This instructions were tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+- This instructions are supposed to be running on the remote PC. Please run the instructions below on your **Remote PC**.
+- Make sure to run the [Bringup](/docs/en/platform/turtlebot3/bringup/#bringup) instructions before running the instructions below.
+- The navigation uses the a data created in [SLAM](/docs/en/platform/turtlebot3/slam/#slam). Please make sure to have a map data.
+{% endcapture %}
+<div class="notice--info">{{ notice_01 | markdownify }}</div>
 
 The Navigation locates TurtleBot3 to the calculated position in the map by combining actual sensor data and anticipated position data.
 
-
-## [Perform Navigation](#perform-navigation)
-
-**Tip :** The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`-`Alt`-`T`.
-{: .notice--info}
+## [Run the Navigation Nodes](#run-the-navigation-nodes)
 
 **[Remote PC]** Launch the navigation file.
 
-**Tip :** TB3_MODEL = `burger`, `waffle`, `waffle_pi` 
-{: .notice--info}
+**TIP**: Before executing this command, you have to specify the model name of TurtleBot3. The `${TB3_MODEL}` is the name of the model you are using in `burger`, `waffle`, `waffle_pi`. If you want to permanently set the export settings, please refer to [Export TURTLEBOT3_MODEL][export_turtlebot3_model]{: .popup} page.
+{: .notice--success}
+
+**TIP**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. The shortcut key for running the terminal is `Ctrl`-`Alt`-`T`.
+{: .notice--success}
 
 ``` bash
 $ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/map.yaml
 ```
-
-**[Remote PC]** Launch the Rviz.
-
-``` bash
-$ rosrun rviz rviz -d `rospack find turtlebot3_navigation`/rviz/turtlebot3_nav.rviz
-```
-
 **[Remote PC]** Before starting the navigation, RViz should be updated with initial location and pose of TurtleBot3. To upate the initial data, follow the instruction below.
 
 - Click the `2D Pose Estimate` button.
@@ -69,3 +61,6 @@ If you wish to stop the robot before it reaches to the goal position, set the cu
 <iframe width="640" height="360" src="https://www.youtube.com/embed/VYlMywwYALU" frameborder="0" allowfullscreen></iframe>
 
 [Reference doc](http://wiki.ros.org/turtlebot_navigation/Tutorials/Autonomously%20navigate%20in%20a%20known%20map)
+
+[Bringup]: /docs/en/platform/turtlebot3/bringup/
+[SLAM]: /docs/en/platform/turtlebot3/slam/

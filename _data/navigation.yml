@@ -9681,8 +9681,6 @@ rh_p12_rn:
       url: /platform/rh_p12_rn/gazebo/#run-simulator
       urlkr: /platform/rh_p12_rn/gazebo/#시뮬레이터-실행
 
-
-
 robothand_rx28:
   - titlekr: "개요"
     urlkr: /platform/robothand_rx28/#개요
@@ -9935,13 +9933,13 @@ turtlebot3:
       url: /platform/turtlebot3/overview/#turtlebot3-introduction-video
     - title: "TurtleBot3 Collaboration Project"
       url: /platform/turtlebot3/overview/#turtlebot3-collaboration-project
-  - title: "Notice"
-    url: /platform/turtlebot3/notice/#notice
+  - title: "Notices"
+    url: /platform/turtlebot3/notices/#notices
     children:
     - title: "Publish"
-      url: /platform/turtlebot3/notice/#publish
+      url: /platform/turtlebot3/notices/#publish
     - title: "News"
-      url: /platform/turtlebot3/notice/#news
+      url: /platform/turtlebot3/notices/#news
   - title: "Features"
     url: /platform/turtlebot3/features/#features
     children:
@@ -9975,170 +9973,141 @@ turtlebot3:
         url: /platform/turtlebot3/specifications/#data-of-turtlebot3-burger
       - title: "Data of TurtleBot3 Waffle"
         url: /platform/turtlebot3/specifications/#data-of-turtlebot3-waffle
+      - title: "Data of TurtleBot3 Waffle Pi"
+        url: /platform/turtlebot3/specifications/#data-of-turtlebot3-waffle-pi
     - title: "Components"
       url: /platform/turtlebot3/specifications/#components
       children:
-      - title: "SBC"
-        url: /platform/turtlebot3/specifications/#sbc
-      - title: "Sensor"
-        url: /platform/turtlebot3/specifications/#sensor
-      - title: "Control Board"
-        url: /platform/turtlebot3/specifications/#control-board
-      - title: "Actuator"
-        url: /platform/turtlebot3/specifications/#actuator
-  - title: "Hardware Setup"
-    url: /platform/turtlebot3/hardware_setup/#hardware-setup
+      - title: "SBCs"
+        url: /platform/turtlebot3/specifications/#sbcs
+      - title: "Sensors"
+        url: /platform/turtlebot3/specifications/#sensors
+      - title: "Embedded Board"
+        url: /platform/turtlebot3/specifications/#embedded-board
+      - title: "Actuators"
+        url: /platform/turtlebot3/specifications/#actuators
+  - title: "Getting Started"
+    url: /platform/turtlebot3/getting_started/#getting-started
     children:
-    - title: "Main Components"
-      url: /platform/turtlebot3/hardware_setup/#main-components
-    - title: "Part List"
-      url: /platform/turtlebot3/hardware_setup/#part-list
-      children:
-      - title: "Chassis Parts"
-        url: /platform/turtlebot3/hardware_setup/#chassis-parts
-      - title: "Motor"
-        url: /platform/turtlebot3/hardware_setup/#motor
-      - title: "Board"
-        url: /platform/turtlebot3/hardware_setup/#board
-      - title: "Sensor"
-        url: /platform/turtlebot3/hardware_setup/#sensor
-      - title: "Memory"
-        url: /platform/turtlebot3/hardware_setup/#memory
-      - title: "Cable"
-        url: /platform/turtlebot3/hardware_setup/#cable
-      - title: "Power"
-        url: /platform/turtlebot3/hardware_setup/#power
-      - title: "Tools"
-        url: /platform/turtlebot3/hardware_setup/#tools
-      - title: "Miscellaneous"
-        url: /platform/turtlebot3/hardware_setup/#miscellaneous
-    - title: "Assembly Manual"
-      url: /platform/turtlebot3/hardware_setup/#assembly-manual
-    - title: "Assembly Video"
-      url: /platform/turtlebot3/hardware_setup/#assembly-video
-      children:
-      - title: "TurtleBot3 Burger"
-        url: /platform/turtlebot3/hardware_setup/#turtlebot3-burger
-      - title: "TurtleBot3 Waffle"
-        url: /platform/turtlebot3/hardware_setup/#turtlebot3-waffle
-    - title: "Open Source Hardware"
-      url: /platform/turtlebot3/hardware_setup/#open-source-hardware
-  - title: "PC Setup"
-    url: /platform/turtlebot3/pc_setup/#pc-setup
+    - title: "About TurtleBot3"
+      url: /platform/turtlebot3/getting_started/#about-turtlebot3
+    - title: "First steps for using TurtleBot3"
+      url: /platform/turtlebot3/getting_started/#first-steps-for-using-turtlebot3
+    - title: "Let's try the basic operation"
+      url: /platform/turtlebot3/getting_started/#lets-try-the-basic-operation
+    - title: "Let's make TurtleBot3's various technologies my own"
+      url: /platform/turtlebot3/getting_started/#lets-make-turtlebot3s-various-technologies-my-own
+    - title: "Learn more and explore more use cases"
+      url: /platform/turtlebot3/getting_started/#learn-more-and-explore-more-use-cases
+    - title: "References and Contacts"
+      url: /platform/turtlebot3/getting_started/#references-and-contacts
+  - title: "Setup"
+    url: /platform/turtlebot3/setup/#setup
     children:
-    - title: "Install Ubuntu on Remote PC (Desktop or Laptop PC)"
-      url: /platform/turtlebot3/pc_setup/#install-ubuntu-on-remote-pc-desktop-or-laptop-pc
-    - title: "Install ROS on Remote PC"
-      url: /platform/turtlebot3/pc_setup/#install-ros-on-remote-pc
-    - title: "Install Dependent Packages"
-      url: /platform/turtlebot3/pc_setup/#install-dependent-packages
-    - title: "Network Configuration"
-      url: /platform/turtlebot3/pc_setup/#network-configuration
-  - title: "SBC Setup"
-    url: /platform/turtlebot3/sbc_setup/#sbc-setup
-    children:
-    - title: "Raspberry Pi 3"
-      url: /platform/turtlebot3/raspberry_pi_3_setup/#raspberry-pi-3-setup
+    - title: "PC Setup"
+      url: /platform/turtlebot3/pc_setup/#pc-setup
       children:
-      - title: "Install Linux(Ubuntu MATE)"
-        url: /platform/turtlebot3/raspberry_pi_3_setup/#install-linux-ubuntu-mate
-        children:
-        - title: "Install ROS"
-          url: /platform/turtlebot3/raspberry_pi_3_setup/#install-ros
-        - title: "Install Dependent Packages"
-          url: /platform/turtlebot3/raspberry_pi_3_setup/#install-dependent-packages
-        - title: "USB Settings"
-          url: /platform/turtlebot3/raspberry_pi_3_setup/#usb-settings
-        - title: "Network Configuration"
-          url: /platform/turtlebot3/raspberry_pi_3_setup/#network-configuration
-      - title: "Install Linux based on Raspbian"
-        url: /platform/turtlebot3/raspberry_pi_3_setup/#install-linux-based-on-raspbian
-    - title: "Intel Joule"
-      url: /platform/turtlebot3/joule_setup/#joule-setup
+      - title: "Install Ubuntu on Remote PC"
+        url: /platform/turtlebot3/pc_setup/#install-ubuntu-on-remote-pc
+      - title: "Install ROS on Remote PC"
+        url: /platform/turtlebot3/pc_setup/#install-ros-on-remote-pc
+      - title: "Install Dependent ROS Packages"
+        url: /platform/turtlebot3/pc_setup/#install-dependent-ros-packages
+      - title: "Network Configuration"
+        url: /platform/turtlebot3/pc_setup/#network-configuration
+    - title: "SBC Setup"
+      url: /platform/turtlebot3/sbc_setup/#sbc-setup
       children:
-      - title: "Install Linux(Ubuntu)"
-        url: /platform/turtlebot3/joule_setup/#install-linux-ubuntu
-        children:
-        - title: "Install ROS"
-          url: /platform/turtlebot3/joule_setup/#install-ros
-        - title: "Install Dependent Packages"
-          url: /platform/turtlebot3/joule_setup/#install-dependent-packages
-        - title: "USB Settings"
-          url: /platform/turtlebot3/joule_setup/#usb-settings
-        - title: "Network Configuration"
-          url: /platform/turtlebot3/joule_setup/#network-configuration
-  - title: "OpenCR Setup"
-    url: /platform/turtlebot3/opencr_setup/#opencr-setup
-    children:
-    - title: "OpenCR1.0 Firmware Upload for TB3"
-      url: /platform/turtlebot3/opencr_setup/#opencr10-firmware-upload-for-tb3
+      - title: "Raspberry Pi 3"
+        url: /platform/turtlebot3/raspberry_pi_3_setup/#raspberry-pi-3-setup
+      - title: "Intel Joule 570x"
+        url: /platform/turtlebot3/joule_setup/#joule-setup
+    - title: "OpenCR Setup"
+      url: /platform/turtlebot3/opencr_setup/#opencr-setup
       children:
-      - title: "Shell Script"
-        url: /platform/turtlebot3/opencr_setup/#shell-script
-      - title: "Arduino IDE"
-        url: /platform/turtlebot3/opencr_setup/#arduino-ide
-    - title: "Basic Operation"
-      url: /platform/turtlebot3/opencr_setup/#basic-operation
+      - title: "OpenCR Firmware Upload for TB3"
+        url: /platform/turtlebot3/opencr_setup/#opencr-firmware-upload-for-tb3
+      - title: "Basic Operation"
+        url: /platform/turtlebot3/opencr_setup/#basic-operation
+    - title: "Hardware Setup"
+      url: /platform/turtlebot3/hardware_setup/#hardware-setup
+      children:
+      - title: "Main Components"
+        url: /platform/turtlebot3/hardware_setup/#main-components
+      - title: "Part List"
+        url: /platform/turtlebot3/hardware_setup/#part-list
+      - title: "Assembly Manual"
+        url: /platform/turtlebot3/hardware_setup/#assembly-manual
+      - title: "Assembly Video"
+        url: /platform/turtlebot3/hardware_setup/#assembly-video
+      - title: "Open Source Hardware"
+        url: /platform/turtlebot3/hardware_setup/#open-source-hardware
+    - title: "Compatible Devices"
+      url: /platform/turtlebot3/compatible_devices/#compatible-devices
   - title: "Bringup"
     url: /platform/turtlebot3/bringup/#bringup
     children:
-    - title: "Bringup TurtleBot3"
-      url: /platform/turtlebot3/bringup/#bringup-turtlebot3
+    - title: "Run roscore"
+      url: /platform/turtlebot3/bringup/#run-roscore
+    - title: "Bringup a TurtleBot3 Burger"
+      url: /platform/turtlebot3/bringup/#bringup-a-turtlebot3-burger
+    - title: "Bringup a TurtleBot3 Waffle"
+      url: /platform/turtlebot3/bringup/#bringup-a-turtlebot3-waffle
+    - title: "Bringup a TurtleBot3 Waffle Pi"
+      url: /platform/turtlebot3/bringup/#bringup-a-turtlebot3-waffle-pi
+  - title: "Basic Operation"
+    url: /platform/turtlebot3/basic_operation/#basic-operation
+    children:
+    - title: "Topic Monitor"
+      url: /platform/turtlebot3/topic_monitor/#topic-monitor
+    - title: "Teleoperation"
+      url: /platform/turtlebot3/teleoperation/#teleoperation
       children:
-      - title: "TurtleBot3 Burger"
-        url: /platform/turtlebot3/bringup/#turtlebot3-burger
-      - title: "TurtleBot3 Waffle"
-        url: /platform/turtlebot3/bringup/#turtlebot3-waffle
-      - title: "TurtleBot3 Waffle Pi"
-        url: /platform/turtlebot3/bringup/#turtlebot3-waffle-pi
-  - title: "Teleoperation"
-    url: /platform/turtlebot3/teleoperation/#teleoperation
-    children:
-    - title: "Keyboard"
-      url: /platform/turtlebot3/teleoperation/#keyboard
-    - title: "RC100"
-      url: /platform/turtlebot3/teleoperation/#rc100
-    - title: "PS3 Joystick"
-      url: /platform/turtlebot3/teleoperation/#ps3-joystick
-    - title: "XBOX 360 Joystick"
-      url: /platform/turtlebot3/teleoperation/#xbox-360-joystick
-    - title: "Wii Remote"
-      url: /platform/turtlebot3/teleoperation/#wii-remote
-    - title: "Nunchuk"
-      url: /platform/turtlebot3/teleoperation/#nunchuk
-    - title: "Android App"
-      url: /platform/turtlebot3/teleoperation/#android-app
-    - title: "LEAP Motion"
-      url: /platform/turtlebot3/teleoperation/#leap-motion
-    - title: "Myo"
-      url: /platform/turtlebot3/teleoperation/#myo
-  - title: "Example"
-    url: /platform/turtlebot3/example/#example
-    children:
-    - title: "rqt common plugin"
-      url: /platform/turtlebot3/example/#rqt-common-plugin
-    - title: "Interactive Markers"
-      url: /platform/turtlebot3/example/#interactive-markers
-    - title: "Obstacle Detection"
-      url: /platform/turtlebot3/example/#obstacle-detection
-    - title: "Point Operation"
-      url: /platform/turtlebot3/example/#point-operation
-    - title: "Patrol"
-      url: /platform/turtlebot3/example/#patrol
+      - title: "Keyboard"
+        url: /platform/turtlebot3/teleoperation/#keyboard
+      - title: "RC100"
+        url: /platform/turtlebot3/teleoperation/#rc100
+      - title: "PS3 Joystick"
+        url: /platform/turtlebot3/teleoperation/#ps3-joystick
+      - title: "XBOX 360 Joystick"
+        url: /platform/turtlebot3/teleoperation/#xbox-360-joystick
+      - title: "Wii Remote"
+        url: /platform/turtlebot3/teleoperation/#wii-remote
+      - title: "Nunchuk"
+        url: /platform/turtlebot3/teleoperation/#nunchuk
+      - title: "Android App"
+        url: /platform/turtlebot3/teleoperation/#android-app
+      - title: "LEAP Motion"
+        url: /platform/turtlebot3/teleoperation/#leap-motion
+      - title: "Myo"
+        url: /platform/turtlebot3/teleoperation/#myo
+    - title: "Basic Examples"
+      url: /platform/turtlebot3/basic_examples/#basic-examples
+      children:
+      - title: "Move using Interactive Markers"
+        url: /platform/turtlebot3/basic_examples/#move-using-interactive-markers
+      - title: "Obstacle Detection"
+        url: /platform/turtlebot3/basic_examples/#obstacle-detection
+      - title: "Point Operation"
+        url: /platform/turtlebot3/basic_examples/#point-operation
+      - title: "Patrol"
+        url: /platform/turtlebot3/basic_examples/#patrol
+    - title: "Additional Sensors"
+      url: /platform/turtlebot3/additional_sensors/#additional-sensors
   - title: "SLAM"
     url: /platform/turtlebot3/slam/#slam
     children:
-    - title: "SLAM"
-      url: /platform/turtlebot3/slam/#slam
-    - title: "Create a Map with Teleoperation"
-      url: /platform/turtlebot3/slam/#create-a-map-with-teleoperation
+    - title: "Run the SLAM Nodes"
+      url: /platform/turtlebot3/slam/#run-the-slam-nodes
+    - title: "Run the Teleoperation Node"
+      url: /platform/turtlebot3/slam/#run-the-teleoperation-node
     - title: "Save the Map"
       url: /platform/turtlebot3/slam/#save-the-map
   - title: "Navigation"
     url: /platform/turtlebot3/navigation/#navigation
     children:
-    - title: "Perform Navigation"
-      url: /platform/turtlebot3/navigation/#perform-navigation
+    - title: "Run the Navigation Nodes"
+      url: /platform/turtlebot3/navigation/#run-the-navigation-nodes
   - title: "Simulation"
     url: /platform/turtlebot3/simulation/#simulation
     children:
@@ -10181,57 +10150,55 @@ turtlebot3:
     url: /platform/turtlebot3/autonomous_driving/#autonomous-driving
     children:
     - title: "TurtleBot3 Auto"
-      url: /platform/turtlebot3/autonomous_driving/#turtlebot3-auto
-    - title: "Join in AutoRace"
-      url: /platform/turtlebot3/autonomous_driving/#join-in-autorace
-      children:
-      - title: "AutoRace - RBIZ Challenge 2017"
-        url: /platform/turtlebot3/autonomous_driving/#autorace--rbiz-challenge-2017
+      url: /platform/turtlebot3/autonomous_driving/#turtlebot3-autorace
+    - title: "TurtleBot3 AutoRace Tutorial"
+      url: /platform/turtlebot3/autonomous_driving/#turtlebot3-autorace-tutorial
+    - title: "TurtleBot3 AutoRace Online Competition"
+      url: /platform/turtlebot3/autonomous_driving/#turtlebot3-autorace-online-competition
+    - title: "AutoRace - RBIZ Challenge 2017"
+      url: /platform/turtlebot3/autonomous_driving/#autorace-rbiz-challenge-2017
+    - title: "AutoRace - RBIZ Challenge 2018"
+      url: /platform/turtlebot3/autonomous_driving/#autorace-rbiz-challenge-2018
+  - title: "Machine Learning"
+    url: /platform/turtlebot3/machine_learning/#machine-learning
+  - title: "Locomotion"
+    url: /platform/turtlebot3/locomotion/#locomotion
+    children:
+    - title: "TurtleBot3 Friends: Car"
+      url: /platform/turtlebot3/locomotion/#turtlebot3-friends-car
+    - title: "TurtleBot3 Friends: OpenManipulator Chain"
+      url: /platform/turtlebot3/locomotion/#turtlebot3-friends-openmanipulator-chain
+    - title: "TurtleBot3 Friends: Segway"
+      url: /platform/turtlebot3/locomotion/#turtlebot3-friends-segway
+    - title: "TurtleBot3 Friends: Conveyor"
+      url: /platform/turtlebot3/locomotion/#turtlebot3-friends-conveyor
+    - title: "TurtleBot3 Friends: Monster"
+      url: /platform/turtlebot3/locomotion/#turtlebot3-friends-monster
+    - title: "TurtleBot3 Friends: Tank"
+      url: /platform/turtlebot3/locomotion/#turtlebot3-friends-tank
+    - title: "TurtleBot3 Friends: Omni"
+      url: /platform/turtlebot3/locomotion/#turtlebot3-friends-omni
+    - title: "TurtleBot3 Friends: Mecanum"
+      url: /platform/turtlebot3/locomotion/#turtlebot3-friends-mecanum
+    - title: "TurtleBot3 Friends: Bike"
+      url: /platform/turtlebot3/locomotion/#turtlebot3-friends-bike
+    - title: "TurtleBot3 Friends: Road Train"
+      url: /platform/turtlebot3/locomotion/#turtlebot3-friends-road-train
+    - title: "TurtleBot3 Friends: Real TurtleBot"
+      url: /platform/turtlebot3/locomotion/#turtlebot3-friends-real-turtlebot
+    - title: "TurtleBot3 Friends: Carrier"
+      url: /platform/turtlebot3/locomotion/#turtlebot3-friends-carrier
   - title: "Applications"
     url: /platform/turtlebot3/applications/#applications
     children:
     - title: "TurtleBot Follower Demo"
       url: /platform/turtlebot3/applications/#turtlebot-follower-demo
-    - title: "TurtleBot Panorama Demo Using Raspberry Pi Camera Module"
+    - title: "TurtleBot Panorama Demo using Raspberry Pi Camera Module"
       url: /platform/turtlebot3/applications/#turtlebot-panorama-demo-using-raspberry-pi-camera-module
     - title: "Automatic Parking"
       url: /platform/turtlebot3/applications/#automatic-parking
     - title: "Automatic Parking Vision"
       url: /platform/turtlebot3/applications/#automatic-parking-vision
-  - title: "Competition"
-    url: /platform/turtlebot3/competition/#competition
-    children:
-    - title: "Online Competition on ROS Development Studio"
-      url: /platform/turtlebot3/competition/#online-competition-on-ros-development-studio
-    - title: "Offline Competition"
-      url: /platform/turtlebot3/competition/#offline-competition
-  - title: "Friends"
-    url: /platform/turtlebot3/friends/#friends
-    children:
-    - title: "TurtleBot3 Friends: Car"
-      url: /platform/turtlebot3/friends/#turtlebot3-friends-car
-    - title: "TurtleBot3 Friends: OpenManipulator Chain"
-      url: /platform/turtlebot3/friends/#turtlebot3-friends-openmanipulator-chain
-    - title: "TurtleBot3 Friends: Segway"
-      url: /platform/turtlebot3/friends/#turtlebot3-friends-segway
-    - title: "TurtleBot3 Friends: Conveyor"
-      url: /platform/turtlebot3/friends/#turtlebot3-friends-conveyor
-    - title: "TurtleBot3 Friends: Monster"
-      url: /platform/turtlebot3/friends/#turtlebot3-friends-monster
-    - title: "TurtleBot3 Friends: Tank"
-      url: /platform/turtlebot3/friends/#turtlebot3-friends-tank
-    - title: "TurtleBot3 Friends: Omni"
-      url: /platform/turtlebot3/friends/#turtlebot3-friends-omni
-    - title: "TurtleBot3 Friends: Mecanum"
-      url: /platform/turtlebot3/friends/#turtlebot3-friends-mecanum
-    - title: "TurtleBot3 Friends: Bike"
-      url: /platform/turtlebot3/friends/#turtlebot3-friends-bike
-    - title: "TurtleBot3 Friends: Road Train"
-      url: /platform/turtlebot3/friends/#turtlebot3-friends-road-train
-    - title: "TurtleBot3 Friends: Real TurtleBot"
-      url: /platform/turtlebot3/friends/#turtlebot3-friends-real-turtlebot
-    - title: "TurtleBot3 Friends: Carrier"
-      url: /platform/turtlebot3/friends/#turtlebot3-friends-carrier
   - title: "Learn"
     url: /platform/turtlebot3/learn/#learn
     children:
@@ -10245,136 +10212,111 @@ turtlebot3:
       url: /platform/turtlebot3/learn/#youtube-course
     - title: "Books"
       url: /platform/turtlebot3/learn/#books
-  - title: "Video"
-    url: /platform/turtlebot3/video/#video
+  - title: "Videos"
+    url: /platform/turtlebot3/videos/#videos
     children:
-    - title: "Video from Open Source Team"
-      url: /platform/turtlebot3/video/#video-from-open-source-team
-    - title: "Video from ROBOTIS Channel"
-      url: /platform/turtlebot3/video/#video-from-robotis-channel
-  - title: "Appendix #OpenCR1.0"
-    url: /platform/turtlebot3/appendix_opencr1_0/#appendix-opencr10
+    - title: "Videos from Open Source Team"
+      url: /platform/turtlebot3/videos/#videos-from-open-source-team
+    - title: "Videos from ROBOTIS Channel"
+      url: /platform/turtlebot3/videos/#videos-from-robotis-channel
+  - title: "Projects"
+    url: /platform/turtlebot3/projects/#projects
+  - title: "Challenges"
+    url: /platform/turtlebot3/challenges/#challenges
     children:
-    - title: "Overview"
-      url: /platform/turtlebot3/appendix_opencr1_0/#overview
-    - title: "Specification"
-      url: /platform/turtlebot3/appendix_opencr1_0/#specification
-    - title: "User Guide"
-      url: /platform/turtlebot3/appendix_opencr1_0/#user-guide
+    - title: "Online Competition on ROS Development Studio"
+      url: /platform/turtlebot3/challenges/#online-competition-on-ros-development-studio
+    - title: "Offline Competition"
+      url: /platform/turtlebot3/challenges/#offline-competition
+  - title: "Appendixes"
+    url: /platform/turtlebot3/appendixes/#appendixes
+    children:
+    - title: "DYNAMIXEL"
+      url: /platform/turtlebot3/appendix_dynamixel/#appendix-dynamixel
       children:
-      - title: "Run serial_node package"
-        url: /platform/turtlebot3/appendix_opencr1_0/#run-serialnode-package
-      - title: "Testing"
-        url: /platform/turtlebot3/appendix_opencr1_0/#testing
-    - title: "Open Source Software"
-      url: /platform/turtlebot3/appendix_opencr1_0/#open-source-software
-    - title: "Open Source Hardware"
-      url: /platform/turtlebot3/appendix_opencr1_0/#open-source-hardware
-    - title: "e-Manual"
-      url: /platform/turtlebot3/appendix_opencr1_0/#e-manual
-  - title: "Appendix #DYNAMIXEL"
-    url: /platform/turtlebot3/appendix_dynamixel/#appendix-dynamixel
-    children:
-    - title: "Overview"
-      url: /platform/turtlebot3/appendix_dynamixel/#overview
-    - title: "Specifications"
-      url: /platform/turtlebot3/appendix_dynamixel/#specifications
-  - title: "Appendix #LDS-01"
-    url: /platform/turtlebot3/appendix_lds_01/#appendix-lds01
-    children:
-    - title: "Overview"
-      url: /platform/turtlebot3/appendix_lds_01/#overview
-    - title: "Introduction Video"
-      url: /platform/turtlebot3/appendix_lds_01/#introduction-video
-    - title: "Specifications"
-      url: /platform/turtlebot3/appendix_lds_01/#specifications
+      - title: "Overview"
+        url: /platform/turtlebot3/appendix_dynamixel/#overview
+      - title: "Specifications"
+        url: /platform/turtlebot3/appendix_dynamixel/#specifications
+    - title: "OpenCR1.0"
+      url: /platform/turtlebot3/appendix_opencr1_0/#appendix-opencr10
       children:
-      - title: "General Specifications"
-        url: /platform/turtlebot3/appendix_lds_01/#general-specifications
-      - title: "Measurement Performance Specifications"
-        url: /platform/turtlebot3/appendix_lds_01/#measurement-performance-specifications
-    - title: "Detail Specification Document"
-      url: /platform/turtlebot3/appendix_lds_01/#detail-specification-document
-    - title: "LDS for TurtleBot3"
-      url: /platform/turtlebot3/appendix_lds_01/#lds-for-turtlebot3
-    - title: "User Guide (for ROS)"
-      url: /platform/turtlebot3/appendix_lds_01/#user-guide-for-ros
-    - title: "User Guide (for Driver)"
-      url: /platform/turtlebot3/appendix_lds_01/#user-guide-for-driver
-    - title: "User Guide (for GUI)"
-      url: /platform/turtlebot3/appendix_lds_01/#user-guide-for-gui
-    - title: "User Guide (for Embedded Board)"
-      url: /platform/turtlebot3/appendix_lds_01/#user-guide-for-embedded-board
-  - title: "Appendix #RealSense™"
-    url: /platform/turtlebot3/appendix_realsense/#appendix-realsense
-    children:
-    - title: "Overview"
-      url: /platform/turtlebot3/appendix_realsense/#overview
-    - title: "Specifications"
-      url: /platform/turtlebot3/appendix_realsense/#specifications
+      - title: "Overview"
+        url: /platform/turtlebot3/appendix_opencr1_0/#overview
+      - title: "Specification"
+        url: /platform/turtlebot3/appendix_opencr1_0/#specification
+      - title: "User Guide"
+        url: /platform/turtlebot3/appendix_opencr1_0/#user-guide
+      - title: "Open Source Software"
+        url: /platform/turtlebot3/appendix_opencr1_0/#open-source-software
+      - title: "Open Source Hardware"
+        url: /platform/turtlebot3/appendix_opencr1_0/#open-source-hardware
+      - title: "e-Manual"
+        url: /platform/turtlebot3/appendix_opencr1_0/#e-manual
+    - title: "LDS-01"
+      url: /platform/turtlebot3/appendix_lds_01/#appendix-lds01
       children:
-      - title: "Technical Specifications"
-        url: /platform/turtlebot3/appendix_realsense/#technical-specifications
-      - title: "Minimum System Requirements"
-        url: /platform/turtlebot3/appendix_realsense/#minimum-system-requirements
-    - title: "Intel® RealSense™ R200 for TurtleBot3"
-      url: /platform/turtlebot3/appendix_realsense/#intel-realsense-r200-for-turtlebot3
-    - title: "Introduction Video"
-      url: /platform/turtlebot3/appendix_realsense/#introduction-video
-    - title: "User Guide"
-      url: /platform/turtlebot3/appendix_realsense/#user-guide
+      - title: "Overview"
+        url: /platform/turtlebot3/appendix_lds_01/#overview
+      - title: "Introduction Video"
+        url: /platform/turtlebot3/appendix_lds_01/#introduction-video
+      - title: "Specifications"
+        url: /platform/turtlebot3/appendix_lds_01/#specifications
+      - title: "Detail Specification Document"
+        url: /platform/turtlebot3/appendix_lds_01/#detail-specification-document
+      - title: "LDS for TurtleBot3"
+        url: /platform/turtlebot3/appendix_lds_01/#lds-for-turtlebot3
+      - title: "User Guide (for ROS)"
+        url: /platform/turtlebot3/appendix_lds_01/#user-guide-for-ros
+      - title: "User Guide (for Driver)"
+        url: /platform/turtlebot3/appendix_lds_01/#user-guide-for-driver
+      - title: "User Guide (for GUI)"
+        url: /platform/turtlebot3/appendix_lds_01/#user-guide-for-gui
+      - title: "User Guide (for Embedded Board)"
+        url: /platform/turtlebot3/appendix_lds_01/#user-guide-for-embedded-board
+    - title: "RealSense™"
+      url: /platform/turtlebot3/appendix_realsense/#appendix-realsense
       children:
-      - title: "Installation"
-        url: /platform/turtlebot3/appendix_realsense/#installation
-      - title: "Run realsense_camera Node"
-        url: /platform/turtlebot3/appendix_realsense/#run-realsense_camera-node
-      - title: "(Optional) To Try as the Example Video Shows"
-        url: /platform/turtlebot3/appendix_realsense/#optional-to-try-as-the-example-video-shows
-    - title: "References"
-      url: /platform/turtlebot3/appendix_realsense/#references
-  - title: "Appendix #Raspberry Pi Camera"
-    url: /platform/turtlebot3/appendix_raspi_cam/#appendix-raspberry-pi-camera
-    children:
-    - title: "Overview"
-      url: /platform/turtlebot3/appendix_raspi_cam/#overview
-    - title: "Specifications"
-      url: /platform/turtlebot3/appendix_raspi_cam/#specifications
+      - title: "Overview"
+        url: /platform/turtlebot3/appendix_realsense/#overview
+      - title: "Specifications"
+        url: /platform/turtlebot3/appendix_realsense/#specifications
+      - title: "Intel® RealSense™ R200 for TurtleBot3"
+        url: /platform/turtlebot3/appendix_realsense/#intel-realsense-r200-for-turtlebot3
+      - title: "Introduction Video"
+        url: /platform/turtlebot3/appendix_realsense/#introduction-video
+      - title: "User Guide"
+        url: /platform/turtlebot3/appendix_realsense/#user-guide
+      - title: "References"
+        url: /platform/turtlebot3/appendix_realsense/#references
+    - title: "Raspberry Pi Camera"
+      url: /platform/turtlebot3/appendix_raspi_cam/#appendix-raspberry-pi-camera
       children:
-      - title: "Hardware Specifications"
-        url: /platform/turtlebot3/appendix_raspi_cam/#hardware-specifications
-      - title: "Hardware features"
-        url: /platform/turtlebot3/appendix_raspi_cam/#hardware-features
-      - title: "Software features"
-        url: /platform/turtlebot3/appendix_raspi_cam/#software-features
-      - title: "Mechanical Drawing"
-        url: /platform/turtlebot3/appendix_raspi_cam/#mechanical-drawing
-    - title: "Raspberry Pi Camera for TurtleBot3"
-      url: /platform/turtlebot3/appendix_raspi_cam/#raspberry-pi-camera-for-turtlebot3
-    - title: "Introduction Video"
-      url: /platform/turtlebot3/appendix_raspi_cam/#introduction-video
-    - title: "User Guide"
-      url: /platform/turtlebot3/appendix_raspi_cam/#user-guide
-      children:
-      - title: "Run raspicam Node"
-        url: /platform/turtlebot3/appendix_raspi_cam/#run-raspicam-node
-    - title: "References"
-      url: /platform/turtlebot3/appendix_raspi_cam/#references
-  - title: "Appendix #OpenSource"
-    url: /platform/turtlebot3/appendix_opensource/#appendix-opensource
+      - title: "Overview"
+        url: /platform/turtlebot3/appendix_raspi_cam/#overview
+      - title: "Specifications"
+        url: /platform/turtlebot3/appendix_raspi_cam/#specifications
+      - title: "Raspberry Pi Camera for TurtleBot3"
+        url: /platform/turtlebot3/appendix_raspi_cam/#raspberry-pi-camera-for-turtlebot3
+      - title: "Introduction Video"
+        url: /platform/turtlebot3/appendix_raspi_cam/#introduction-video
+      - title: "User Guide"
+        url: /platform/turtlebot3/appendix_raspi_cam/#user-guide
+      - title: "References"
+        url: /platform/turtlebot3/appendix_raspi_cam/#references
+  - title: "OpenSource and Licenses"
+    url: /platform/turtlebot3/opensource/#opensource-licenses
     children:
-    - title: "Software"
-      url: /platform/turtlebot3/appendix_opensource/#software
-    - title: "Hardware"
-      url: /platform/turtlebot3/appendix_opensource/#hardware
-  - title: "License"
-    url: /platform/turtlebot3/license/#license
-    children:
+    - title: "OpenSource Software"
+      url: /platform/turtlebot3/opensource/#opensource-software
+    - title: "OpenSource Hardware"
+      url: /platform/turtlebot3/opensource/#opensource-hardware
     - title: "Software License"
-      url: /platform/turtlebot3/license/#software-license
+      url: /platform/turtlebot3/opensource/#software-license
     - title: "Hardware License"
-      url: /platform/turtlebot3/license/#hardware-license
+      url: /platform/turtlebot3/opensource/#hardware-license
     - title: "Documents License"
-      url: /platform/turtlebot3/license/#documents-license
+      url: /platform/turtlebot3/opensource/#documents-license
   - title: "FAQ"
     url: /platform/turtlebot3/faq/#faq
   - title: "Contact US"

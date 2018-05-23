@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: turtlebot3_simulation
+ref: simulation
 read_time: true
 share: true
 author_profile: false
@@ -11,26 +11,26 @@ sidebar:
   nav: "turtlebot3"
 ---
 
-<div style="counter-reset: h1 13"></div>
+<div style="counter-reset: h1 10"></div>
 
 # [Simulation](#simulation)
 
 ![](/assets/images/platform/turtlebot3/software/remote_pc_and_turtlebot.png)
 
-**WARNING** : The contents in this chapter corresponds to the `Remote PC` (your desktop or laptop PC) which will control TurtleBot3. Do **NOT** apply this instruction to your TurtleBot3.
-{: .notice--warning}
-
-**NOTE** : This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+**NOTE**: This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 {: .notice--info}
+
+**WARNING**: The contents in this chapter corresponds to the `Remote PC` (your desktop or laptop PC) which will control TurtleBot3. Do **NOT** apply this instruction to your TurtleBot3.
+{: .notice--warning}
 
 ## [TurtleBot3 Fake Node Implementation](#turtlebot3-fake-node-implementation)
 
-**Tip :** The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`-`Alt`-`T`.
+**TIP**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`-`Alt`-`T`.
 {: .notice--info}
 
 Install dependent packages for TurtleBot3 Simulation.
 
-**NOTE** : turtlebot3_simulation package requires [**TurtleBot3**](http://turtlebot3.robotis.com/en/latest/pc_software.html#install-dependent-packages) package as a prerequisite.
+**NOTE**: turtlebot3_simulation package requires [**TurtleBot3**](http://turtlebot3.robotis.com/en/latest/pc_software.html#install-dependent-packages) package as a prerequisite.
 {: .notice--info}
 
 ``` bash
@@ -41,7 +41,7 @@ $ cd ~/catkin_ws && catkin_make
 
 `TurtleBot3 fake node` is a very simple simulation node that can be run without having an actual robot. You can even control the virtual TurtleBot3 in RViz with a teleop node.
 
-**Tip :** TB3_MODEL = `burger`, `waffle`, `waffle_pi` 
+**TIP**: TB3_MODEL = `burger`, `waffle`, `waffle_pi` 
 {: .notice--info}
 
 ``` bash
@@ -61,10 +61,10 @@ $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 
 ### [ROS packages for Gazebo](#ros-packages-for-gazebo)
 
-**Tip :** The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`-`Alt`-`T`.
+**TIP**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`-`Alt`-`T`.
 {: .notice--info}
 
-**WARNING** : If you are running Gazebo for the first time on your `Remote PC`, it takes a bit longer than usual.
+**WARNING**: If you are running Gazebo for the first time on your `Remote PC`, it takes a bit longer than usual.
 {: .notice--warning}
 
 
@@ -74,7 +74,7 @@ $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 
     You should set Turtlebot3 model parameter. Select either burger or waffle for the model parameter in the below command.
 
-    **Tip :** TB3_MODEL = `burger`, `waffle`, `waffle_pi` 
+    **TIP**: TB3_MODEL = `burger`, `waffle`, `waffle_pi` 
     {: .notice--info}
 
     ``` bash
@@ -208,7 +208,7 @@ In gazebo simulation, we can use navigation package that we used for the actual 
 
 ### [Standalone Gazebo Plugin](#standalone-gazebo-plugin)
 
-**NOTE** : This tutorial is developed only for user who want to simulate TurtleBot3 without `ROS`. 
+**NOTE**: This tutorial is developed only for user who want to simulate TurtleBot3 without `ROS`. 
 However we highly recommend to simulate robots along `ROS`.
 {: .notice--info}
 
@@ -232,7 +232,7 @@ However we highly recommend to simulate robots along `ROS`.
 
     add two lines
 
-    **Tip :** turtlebot3_gazebo_plugin path = ~/turtlebot3_gazebo_plugin
+    **TIP**: turtlebot3_gazebo_plugin path = ~/turtlebot3_gazebo_plugin
     {: .notice--info}
 
     ```
@@ -254,7 +254,7 @@ However we highly recommend to simulate robots along `ROS`.
 
     You should set Turtlebot3 model parameter. Select either burger or waffle for the model parameter in the below command.
 
-    **Tip :** TB3_MODEL = `burger`, `waffle`, `waffle_pi` 
+    **TIP**: TB3_MODEL = `burger`, `waffle`, `waffle_pi` 
     {: .notice--info}
 
     ``` bash

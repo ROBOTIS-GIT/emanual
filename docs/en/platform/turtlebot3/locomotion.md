@@ -1,25 +1,25 @@
 ---
 layout: archive
 lang: en
-ref: turtlebot3_friends
+ref: locomotion
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/turtlebot3/friends/
+permalink: /docs/en/platform/turtlebot3/locomotion/
 sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
 ---
 
-<div style="counter-reset: h1 18"></div>
+<div style="counter-reset: h1 14"></div>
 
-# [Friends](#friends)
+# [Locomotion](#locomotion)
 
 In the video, watch how TurtleBot3 can be assembled and reassembled with a few additional parts. The waffle plate which is the biggest part among TurtleBot3 components can be assembled in various sizes and shapes, thanks to its diverse holes for bolts and nuts.
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/o9d7NVC0A1Y" frameborder="0" allowfullscreen></iframe>
 
-With this openended component, handful of TurtleBot3 friends with various characteristics could be built. You can create a totally new robot that is never seen before.
+With this openended component, handful of TurtleBot3 friends with various characteristics could be built. You can create a totally new robot that is never seen before. Create a variety of robots based on open hardware and try out the new Locomotion.
 
 TurtleBot3 Friends List:
 
@@ -44,7 +44,7 @@ Get source codes and make friends! Go to `Examples` → `turtlebot3` → `turtle
 
 ![](/assets/images/platform/turtlebot3/friends/ide.png)
 
-**NOTE** : Any suggestions and ideas for TurtleBot3 Friends Project are always welcomed. Tell us about your creative TurtleBot3 Friends. We can introduce your friend to the world through this wiki page! :)
+**NOTE**: Any suggestions and ideas for TurtleBot3 Friends Project are always welcomed. Tell us about your creative TurtleBot3 Friends. We can introduce your friend to the world through this wiki page! :)
 {: .notice--info}
 
 E-Mail : ost@robotis.com
@@ -96,14 +96,14 @@ E-Mail : ost@robotis.com
 * Features: Balancing with only two DYNAMIXEL by applying PID controller.
 * Components: Two Dynamixel X 430 Series (All for balancing), an OpenCR1.0 Board, TurtleBot3 Chassis and Battery, 3D printed chassis.
 
-**NOTE** : Two Dynamixel X 430 Series are need to be set on PWM Mode.
+**NOTE**: Two Dynamixel X 430 Series are need to be set on PWM Mode.
 {: .notice--info}
 
 * [BOM](https://goo.gl/XPgJkZ)
 * [Hardware](http://www.robotis.com/service/download.php?no=680)
 * Software: `Examples` → `turtlebot3` → `turtlebot3_friends` → `turtlebot3_segway`
 
-**NOTE** : Filters library have to be downloaded and includes it arduino IDE. [Github Link](https://github.com/JonHub/Filters)
+**NOTE**: Filters library have to be downloaded and includes it arduino IDE. [Github Link](https://github.com/JonHub/Filters)
 {: .notice--info}
 
 * Video:

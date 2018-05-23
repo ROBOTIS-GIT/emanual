@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: turtlebot3_autonomous_driving
+ref: autonomous_driving
 read_time: true
 share: true
 author_profile: false
@@ -11,11 +11,11 @@ sidebar:
   nav: "turtlebot3"
 ---
 
-<div style="counter-reset: h1 15"></div>
+<div style="counter-reset: h1 12"></div>
 
 # [Autonomous Driving](#autonomous-driving)
 
-**NOTE** : Turtlebot3 has been tested on <kbd>Ubuntu 16.04</kbd> and <kbd>ROS Kinetic Kame</kbd>.
+**NOTE**: Turtlebot3 has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 {: .notice--info}
 
 We are currently doing several projects related with the keywords: Autonomous Driving and TurtleBot3s
@@ -29,39 +29,7 @@ Whole robots and even the referee system in the field is run by ROS, so it would
 
 Get opened source of what is participated in each competitions!
 
-### [AutoRace - RBIZ Challenge 2017](#autorace--rbiz-challenge-2017)
-
-![](/assets/images/platform/turtlebot3/autonomous_driving/autorace_rbiz_challenge_2017_robots_2.png)
-
-- Official release of TurtleBot3 AutoRace
-
-  - [AutoRace source code](http://wiki.ros.org/turtlebot3_autorace)
-
-  - [AutoRace track](https://github.com/ROBOTIS-GIT/autorace_track)
-
-  - [AutoRace referee system](https://github.com/ROBOTIS-GIT/autorace_referee)
-
-- Participants sources
-
-| Place | Team              | Source link                                                        |
-| ----- | ----------------- | ------------------------------------------------------------------ |
-| 1     | RealRiceThief     | [Github](https://github.com/KoG-8/Turtlebot_RealRiceThief)         |
-| 2     | IronHeart         | [Github](https://github.com/kijongGil/Ironheart)                   |
-| 3     | Robit             | [Github](https://github.com/ROBIT-GIT/turtlebot3_autoRace_2017)    |
-| 4     | Loading           | [Github](https://github.com/AuTURBO/autorace2017-team-loading)    |
-| 5     | RunHoney          | [Github](https://github.com/AuTURBO/autorace2017-team-honey)             |
-| 6     | Sherlotics        | [Github](https://github.com/minbaekkim/turtlebot_autorace)         |
-| 7     | FastAndFurious    | [Github](https://github.com/kts006/deu_racer)                      |
-| 8     | BonoBono          | [Github](https://github.com/Gaeul/BonobonoTurtlebot)               |
-| 9     | BeginAgain        | [Github](https://github.com/yh-na/beginagain)                      |
-| 10    | Hanzo             | [Github](https://github.com/DeokYun/autorace)                      |
-| 11    | Codis             | will be released soon                                              |
-| 12    | Zero              | [Github](https://github.com/dongwan123/zero_turtlebot_competition) |
-| 13    | CanDynamix        | [Github](https://github.com/candynamix/can_dynamix)                |
-| 14    | Cena              | retire                                                             |
-| 15    | TogetherChaChaCha | retire                                                             |
-
-#### [TurtleBot3 AutoRace Tutorial](turtlebot3-autorace-tutorial)
+## [TurtleBot3 AutoRace Tutorial](#turtlebot3-autorace-tutorial)
 Tutorial 1: Traffic Light
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/yp7MVZCiaWs" frameborder="0" allowfullscreen></iframe>
@@ -109,8 +77,44 @@ Video - Team Sherlotics (Introduction video)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dzjsLFj62HE" frameborder="0" allowfullscreen></iframe>
 
-## [Prequel](#prequel)
-
 TurtleBot3 was tested its driving autonomy under the open source from MIT DuckieTown engineering.
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/1V33iEu4ylw" frameborder="0" allowfullscreen></iframe>
+
+## [TurtleBot3 AutoRace Online Competition](#turtlebot3-autorace-online-competition)
+- (Comming Soon)
+
+## [AutoRace - RBIZ Challenge 2017](#autorace-rbiz-challenge-2017)
+
+![](/assets/images/platform/turtlebot3/autonomous_driving/autorace_rbiz_challenge_2017_robots_2.png)
+
+- Official release of TurtleBot3 AutoRace
+
+  - [AutoRace source code](http://wiki.ros.org/turtlebot3_autorace)
+
+  - [AutoRace track](https://github.com/ROBOTIS-GIT/autorace_track)
+
+  - [AutoRace referee system](https://github.com/ROBOTIS-GIT/autorace_referee)
+
+- Participants sources
+
+| Place | Team              | Source link                                                        |
+| ----- | ----------------- | ------------------------------------------------------------------ |
+| 1     | RealRiceThief     | [Github](https://github.com/KoG-8/Turtlebot_RealRiceThief)         |
+| 2     | IronHeart         | [Github](https://github.com/kijongGil/Ironheart)                   |
+| 3     | Robit             | [Github](https://github.com/ROBIT-GIT/turtlebot3_autoRace_2017)    |
+| 4     | Loading           | [Github](https://github.com/AuTURBO/autorace2017-team-loading)     |
+| 5     | RunHoney          | [Github](https://github.com/AuTURBO/autorace2017-team-honey)       |
+| 6     | Sherlotics        | [Github](https://github.com/minbaekkim/turtlebot_autorace)         |
+| 7     | FastAndFurious    | [Github](https://github.com/kts006/deu_racer)                      |
+| 8     | BonoBono          | [Github](https://github.com/Gaeul/BonobonoTurtlebot)               |
+| 9     | BeginAgain        | [Github](https://github.com/yh-na/beginagain)                      |
+| 10    | Hanzo             | [Github](https://github.com/DeokYun/autorace)                      |
+| 11    | Codis             | will be released soon                                              |
+| 12    | Zero              | [Github](https://github.com/dongwan123/zero_turtlebot_competition) |
+| 13    | CanDynamix        | [Github](https://github.com/candynamix/can_dynamix)                |
+| 14    | Cena              | retire                                                             |
+| 15    | TogetherChaChaCha | retire                                                             |
+
+## [AutoRace - RBIZ Challenge 2018](#autorace-rbiz-challenge-2018)
+- (Comming Soon)

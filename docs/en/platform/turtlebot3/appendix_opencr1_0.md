@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: turtlebot3_appendix_opencr1_0
+ref: appendix_opencr1_0
 read_time: true
 share: true
 author_profile: false
@@ -12,12 +12,14 @@ sidebar:
 ---
 
 <div style="counter-reset: h1 21"></div>
+<div style="counter-reset: h2 1"></div>
 
-# [Appendix #OpenCR1.0](#appendix-opencr10)
+
+## [OpenCR1.0](#appendix-opencr10)
 
 ![](/assets/images/platform/turtlebot3/appendix_opencr/opencr.png)
 
-## [Overview](#overview)
+### [Overview](#overview)
 
 `OpenCR1.0` is a main controller board of the TurtleBot3. OpenCR1.0; Open-source Control module for ROS, is developed for ROS embedded systems to provide completely open-source hardware and software. Everything about the board; Schematics, PCB Gerber, BOM and the firmware source code for the TurtleBot3 are free to distribute under open-source licenses for users and the ROS community.
 
@@ -32,7 +34,7 @@ OpenCR1.0 will be the best solution for implementing your embedded control desig
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/-_kBfIS6wJs" frameborder="0" allowfullscreen></iframe>
 
-## [Specification](#specification)
+### [Specification](#specification)
 
 | Items                    | Specifications                                                                                     |
 |--------------------------|----------------------------------------------------------------------------------------------------|
@@ -46,18 +48,18 @@ OpenCR1.0 will be the best solution for implementing your embedded control desig
 | Dimensions               | 105(W) X 75(D) mm                                                                                  |
 | Mass                     | 60g                                                                                                |
 
-**NOTE** : Hot swap power switch between "shore power"(12V, 5A SMPS) and "mobile power"(battery) from OpenCR1.0 board enables UPS(Uninterrupted Power Supply) feature.
+**NOTE**: Hot swap power switch between "shore power"(12V, 5A SMPS) and "mobile power"(battery) from OpenCR1.0 board enables UPS(Uninterrupted Power Supply) feature.
 {: .notice}
 
-## [User Guide](#user-guide)
+### [User Guide](#user-guide)
 
-### [Run serial_node package](#run-serialnode-package)
+#### [Run serial_node package](#run-serialnode-package)
 
 ```bash
 $ rosrun rosserial_python serial_node.py __name:=turtlebot3_core _port:=/dev/ttyACM0 _baud:=115200
 ```
 
-### [Testing](#testing)
+#### [Testing](#testing)
 
 ```bash
 $ rostopic echo /imu
@@ -87,19 +89,19 @@ linear_acceleration_covariance: [0.03999999910593033, 0.0, 0.0, 0.0, 0.039999999
 ---
 ```
 
-## [Open Source Software](#open-source-software)
+### [Open Source Software](#open-source-software)
 
 You can modify the downloaded source code and share it with your friends.
 
 - OpenCR1.0 Software: [https://github.com/ROBOTIS-GIT/OpenCR](https://github.com/ROBOTIS-GIT/OpenCR)
 
-## [Open Source Hardware](#open-source-hardware)
+### [Open Source Hardware](#open-source-hardware)
 
 If you want to manufacture your own OpenCR1.0, you can download necessary files such as PCB Gerber, BOM. When the board is ready firmware source code can be burned into the MCU.
 
 - OpenCR1.0 Hardware: [https://github.com/ROBOTIS-GIT/OpenCR-Hardware](https://github.com/ROBOTIS-GIT/OpenCR-Hardware)
 
-## [e-Manual](#e-manual)
+### [e-Manual](#e-manual)
 
 - [OpenCR1.0 e-Manual]
 

@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: turtlebot3_specifications
+ref: specifications
 read_time: true
 share: true
 author_profile: false
@@ -19,7 +19,7 @@ sidebar:
 
 ## [Hardware Specifications](#hardware-specifications)
 
-| Items                              | Burger                                                              | Waffle                                                              | Waffle Pi                                                           |
+| Items                              | Burger                                                              | Waffle (Discontinued)                                               | Waffle Pi                                                           |
 | :--------------------------------- | :------------------------------------------------------------------ | :------------------------------------------------------------------ | :------------------------------------------------------------------ |
 | Maximum translational velocity     | 0.22 m/s                                                            | 0.26 m/s                                                            | 0.26 m/s                                                            |
 | Maximum rotational velocity        | 2.84 rad/s (162.72 deg/s)                                           | 1.82 rad/s (104.27 deg/s)                                           | 1.82 rad/s (104.27 deg/s)                                           |
@@ -29,7 +29,7 @@ sidebar:
 | Threshold of climbing              | 10 mm or lower                                                      | 10 mm or lower                                                      | 10 mm or lower                                                      |
 | Expected operating time            | 2h 30m                                                              | 2h                                                                  | 2h                                                                  |
 | Expected charging time             | 2h 30m                                                              | 2h 30m                                                              | 2h 30m                                                              |
-| SBC (Single Board Computers)       | Raspberry Pi 3 Model B                                              | Intel® Joule™                                                       | Raspberry Pi 3 Model B                                              |
+| SBC (Single Board Computers)       | Raspberry Pi 3 Model B                                              | Intel® Joule™ 570x                                                  | Raspberry Pi 3 Model B                                              |
 | MCU                                | 32-bit ARM Cortex®-M7 with FPU (216 MHz, 462 DMIPS)                 | 32-bit ARM Cortex®-M7 with FPU (216 MHz, 462 DMIPS)                 | 32-bit ARM Cortex®-M7 with FPU (216 MHz, 462 DMIPS)                 |
 | Remote Controller                  | -                                                                   | -                                                                   | RC-100B + BT-410 Set (Bluetooth 4, BLE)                             |
 | Actuator                           | Dynamixel XL430-W250                                                | Dynamixel XM430-W210                                                | Dynamixel XM430-W210                                                |
@@ -65,26 +65,32 @@ sidebar:
 
 ## [Components](#components)
 
-### [SBC](#sbc)
+### [SBCs](#sbcs)
 
 - [Raspberry Pi 3 Model B](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/)
+  - TurtleBot3 Burger, Waffle Pi
+- [Raspberry Pi 3 Model B+](https://www.raspberrypi.org/products/raspberry-pi-3-model-b-plus/)
+  - Comming soon
+- [Intel® Joule™ 570x](http://ark.intel.com/products/96414/Intel-Joule-570x-Developer-Kit)
+  - TurtleBot3 Waffle
 
-- [Intel® Joule™](http://ark.intel.com/products/96414/Intel-Joule-570x-Developer-Kit)
+### [Sensors](#sensors)
 
-### [Sensor](#sensor)
-
-- [360 Laser Distance Sensor LDS-01](http://turtlebot3.robotis.com/en/latest/appendix_lds.html)
-
+- [360 Laser Distance Sensor LDS-01](/docs/en/platform/turtlebot3/appendix_lds_01/)
+  - TurtleBot3 Burger, Waffle, Waffle Pi
 - [Intel® Realsense™ R200](https://software.intel.com/en-us/RealSense/R200Camera)
-
+  - TurtleBot3 Waffle
 - [The Raspberry Pi Camera Module v2.1](https://www.raspberrypi.org/products/camera-module-v2/)
+  - TurtleBot3 Waffle Pi
 
-### [Control Board](#control-board)
+### [Embedded Board](#Embedded-board)
 
-- [OpenCR1.0](http://turtlebot3.robotis.com/en/latest/appendix_opencr.html)
+- [OpenCR1.0](/docs/en/platform/turtlebot3/appendix_opencr1_0/)
+  - TurtleBot3 Burger, Waffle, Waffle Pi
 
-### [Actuator](#actuator)
+### [Actuators](#actuators)
 
 - [Dynamixel XL430](/docs/en/dxl/x/xl430-w250/)
-
+  - TurtleBot3 Burger
 - [Dynamixel XM430](/docs/en/dxl/x/xm430-w210/)
+  - TurtleBot3 Waffle, Waffle Pi

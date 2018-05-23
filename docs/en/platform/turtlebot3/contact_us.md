@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: turtlebot3_contact_us
+ref: contact_us
 read_time: true
 share: true
 author_profile: false
@@ -11,7 +11,7 @@ sidebar:
   nav: "turtlebot3"
 ---
 
-<div style="counter-reset: h1 29"></div>
+<div style="counter-reset: h1 23"></div>
 
 # [Contact US](#contact-us)
 

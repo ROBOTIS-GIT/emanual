@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: turtlebot3_learn
+ref: learn
 read_time: true
 share: true
 author_profile: false
@@ -11,7 +11,7 @@ sidebar:
   nav: "turtlebot3"
 ---
 
-<div style="counter-reset: h1 19"></div>
+<div style="counter-reset: h1 16"></div>
 
 # [Learn](#learn)
 
