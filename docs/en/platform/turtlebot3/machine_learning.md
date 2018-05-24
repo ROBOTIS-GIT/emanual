@@ -14,4 +14,5 @@ sidebar:
 <div style="counter-reset: h1 13"></div>
 
 # [Machine Learning](#machine-learning)
-- (Comming soon)
+
+- (Coming soon!)

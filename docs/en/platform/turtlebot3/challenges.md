@@ -24,12 +24,12 @@ We are preparing an online competition on [ROS Development Studio (RDS)][rds] wi
 #### TurtleBot3 AutoRace on RDS
 ![](/assets/images/platform/turtlebot3/competition/competition_autorace.png)
 
-- Comming soon.
+- Coming soon!
 
 #### Task Mission using TurtleBot3 and OpenManipulator on RDS
 ![](/assets/images/platform/turtlebot3/competition/competition_pick_and_place.png)
 
-- Comming soon.
+- Coming soon!
 
 ### [ROS Development Studio (RDS)](#ros-development-studio-RDS)
 
