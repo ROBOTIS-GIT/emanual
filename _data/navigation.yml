@@ -10097,17 +10097,23 @@ turtlebot3:
   - title: "SLAM"
     url: /platform/turtlebot3/slam/#slam
     children:
-    - title: "Run the SLAM Nodes"
-      url: /platform/turtlebot3/slam/#run-the-slam-nodes
-    - title: "Run the Teleoperation Node"
-      url: /platform/turtlebot3/slam/#run-the-teleoperation-node
-    - title: "Save the Map"
-      url: /platform/turtlebot3/slam/#save-the-map
+    - title: "Run SLAM Nodes"
+      url: /platform/turtlebot3/slam/#run-slam-nodes
+    - title: "Run Teleoperation Node"
+      url: /platform/turtlebot3/slam/#run-teleoperation-node
+    - title: "Save Map"
+      url: /platform/turtlebot3/slam/#save-map
+    - title: "Map"
+      url: /platform/turtlebot3/slam/#map
   - title: "Navigation"
     url: /platform/turtlebot3/navigation/#navigation
     children:
-    - title: "Run the Navigation Nodes"
-      url: /platform/turtlebot3/navigation/#run-the-navigation-nodes
+    - title: "Run Navigation Nodes"
+      url: /platform/turtlebot3/navigation/#run-navigation-nodes
+    - title: "Estimate Initial Pose"
+      url: /platform/turtlebot3/navigation/#estimate-initial-pose
+    - title: "Send Navigation Goal"
+      url: /platform/turtlebot3/navigation/#send-navigation-goal
   - title: "Simulation"
     url: /platform/turtlebot3/simulation/#simulation
     children:
