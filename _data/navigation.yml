@@ -10117,10 +10117,10 @@ turtlebot3:
   - title: "Simulation"
     url: /platform/turtlebot3/simulation/#simulation
     children:
-    - title: "TurtleBot3 Fake Node Implementation"
-      url: /platform/turtlebot3/simulation/#turtlebot3-fake-node-implementation
-    - title: "Gazebo (3D Simulator)"
-      url: /platform/turtlebot3/simulation/#gazebo-3d-simulator
+    - title: "TurtleBot3 Simulation using Fake Node"
+      url: /platform/turtlebot3/simulation/#turtlebot3-simulation-using-fake-node
+    - title: "TurtleBot3 Simulation using Gazebo"
+      url: /platform/turtlebot3/simulation/#turtlebot3-simulation-using-gazebo
       children:
       - title: "ROS packages for Gazebo"
         url: /platform/turtlebot3/simulation/#ros-packages-for-gazebo
@@ -10129,6 +10129,8 @@ turtlebot3:
   - title: "Manipulation"
     url: /platform/turtlebot3/manipulation/#manipulation
     children:
+    - title: "TurtleBot3 with OpenManipulator"
+      url: /platform/turtlebot3/manipulation/#turtlebot3-with-openmanipulator
     - title: "Software Setup"
       url: /platform/turtlebot3/manipulation/#software-setup
     - title: "Hardware Setup"
@@ -10149,9 +10151,6 @@ turtlebot3:
       url: /platform/turtlebot3/manipulation/#pick-and-place
     - title: "Simulation"
       url: /platform/turtlebot3/manipulation/#simulation
-      children:
-      - title: "Gazebo"
-        url: /platform/turtlebot3/manipulation/#gazebo
   - title: "Autonomous Driving"
     url: /platform/turtlebot3/autonomous_driving/#autonomous-driving
     children:
@@ -10161,9 +10160,9 @@ turtlebot3:
       url: /platform/turtlebot3/autonomous_driving/#turtlebot3-autorace-tutorial
     - title: "TurtleBot3 AutoRace Online Competition"
       url: /platform/turtlebot3/autonomous_driving/#turtlebot3-autorace-online-competition
-    - title: "AutoRace - RBIZ Challenge 2017"
+    - title: "AutoRace RBIZ Challenge 2017"
       url: /platform/turtlebot3/autonomous_driving/#autorace-rbiz-challenge-2017
-    - title: "AutoRace - RBIZ Challenge 2018"
+    - title: "AutoRace RBIZ Challenge 2018"
       url: /platform/turtlebot3/autonomous_driving/#autorace-rbiz-challenge-2018
   - title: "Machine Learning"
     url: /platform/turtlebot3/machine_learning/#machine-learning
