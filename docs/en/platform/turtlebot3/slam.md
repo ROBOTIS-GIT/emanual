@@ -152,43 +152,45 @@ Gmapping has many parameters to change performances for different environments. 
 
 This tuning guide give some tips for you to configue important parameters. If you want to change performances depends on your environments, this tips might be help you and save your time.
 
-- maxUrange (turtlebot3_slam/launch/turtlebot3_gmapping.launch)
+_**maxUrange**_ 
+- turtlebot3_slam/launch/turtlebot3_gmapping.launch
+- This param is set the maximum usable range of the lidar sensor.
 
-This param is set the maximum usable range of the lidar sensor.
+_**map_update_interval**_
+- turtlebot3_slam/launch/turtlebot3_gmapping.launch
+- How long (in seconds) between updates to the map. If this set low, map would be updated more often. But it requires greater computational load. Set this param depends on your environments.
 
-- map_update_interval (turtlebot3_slam/launch/turtlebot3_gmapping.launch)
+![](/assets/images/platform/turtlebot3/slam/tuning_map_update_interval.png)
 
-How long (in seconds) between updates to the map. If this set low, map would be updated more often. But it requires greater computational load. Set this param depends on your environments.
+_**minimumScore**_ 
+- turtlebot3_slam/launch/turtlebot3_gmapping.launch
+- Minimum score for considering the result of the scan matching. This param makes avoid jumping pose estimates.
+  If this set properly, you can watch below information.
 
-- minimumScore (turtlebot3_slam/launch/turtlebot3_gmapping.launch)
+  ```
+  Average Scan Matching Score=278.965
+  neff= 100
+  Registering Scans:Done
+  update frame 6
+  update ld=2.95935e-05 ad=0.000302522
+  Laser Pose= -0.0320253 -5.36882e-06 -3.14142
+  ```
 
-Minimum score for considering the result of the scan matching. This param makes avoid jumping pose estimates.
-If this set properly, you can watch below information.
+  If this set too high, you can watch below warning.
 
-```
-Average Scan Matching Score=278.965
-neff= 100
-Registering Scans:Done
-update frame 6
-update ld=2.95935e-05 ad=0.000302522
-Laser Pose= -0.0320253 -5.36882e-06 -3.14142
-```
+  ```
+  Scan Matching Failed, using odometry. Likelihood=0
+  lp:-0.0306155 5.75314e-06 -3.14151
+  op:-0.0306156 5.90277e-06 -3.14151
+  ```
 
-If this set too high, you can watch below warning.
+_**linearUpdate**_ 
+- turtlebot3_slam/launch/turtlebot3_gmapping.launch
+- When robot translates, a scan process each time.
 
-```
-Scan Matching Failed, using odometry. Likelihood=0
-lp:-0.0306155 5.75314e-06 -3.14151
-op:-0.0306156 5.90277e-06 -3.14151
-```
-
-- linearUpdate (turtlebot3_slam/launch/turtlebot3_gmapping.launch)
-
-When robot translates, a scan process each time.
-
-- angularUpdate (turtlebot3_slam/launch/turtlebot3_gmapping.launch)
-
-When robot rotates, a scan process each time. Setting this to be smaller than linearUpdate is better.
+_**angularUpdate**_ 
+- turtlebot3_slam/launch/turtlebot3_gmapping.launch
+- When robot rotates, a scan process each time. Setting this to be smaller than linearUpdate is better.
 
 ## [Save Map](#save-map)
 
