@@ -89,6 +89,68 @@ linear_acceleration_covariance: [0.03999999910593033, 0.0, 0.0, 0.0, 0.039999999
 ---
 ```
 
+### [Debugging](#debugging)
+
+`turtlebot3_core.ino` includes debugging code to check odometry, connected sensor and state of TurtleBot3 or Dynamixels.
+This might be help you to implement code and test it without ROS connection. 
+
+First, ready to [LN-101](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=1277&GC=GD0B0107) or any [USB to Serial converter](https://www.sparkfun.com/products/12731)
+
+![](/assets/images/platform/turtlebot3/appendix_opencr/debug_port.png)
+
+Second, open `turtlebot3_core_config.h` file and activate [DEBUG](https://github.com/ROBOTIS-GIT/OpenCR/blob/develop/arduino/opencr_arduino/opencr/libraries/turtlebot3/examples/turtlebot3_burger/turtlebot3_core/turtlebot3_core_config.h#L73). After that upload it to OpenCR.
+
+Third, connect converter to UART2 in OpenCR.
+
+Forth, download minicom and configure baudrate 57600 and port name.
+
+```sh
+$ sudo apt-get install minicom
+```
+
+```sh
+$ minicom -s
+```
+
+Fifth, press reset button then you can see how `turtlebot3_core.ino` start and some data.
+
+```sh
+Success to init Motor Driver
+Success to init Sensor
+Success to init Diagnosis
+Success to init Controller
+---------------------------------------
+EXTERNAL SENSORS
+---------------------------------------
+Bumper : 2
+Cliff : 204.00
+Sonar : 1.00
+Illumination : 480.00
+---------------------------------------
+OpenCR SENSORS
+---------------------------------------
+Battery : 12.15
+Button : 0
+IMU : 
+    w : 1.00
+    x : 0.00
+    y : -0.00
+    z : 0.00
+---------------------------------------
+DYNAMIXELS
+---------------------------------------
+Torque : 1
+Encoder(left) : 876
+Encoder(right) : 4001
+---------------------------------------
+TurtleBot3
+---------------------------------------
+Odometry : 
+         x : 0.00
+         y : 0.00
+     theta : 0.00
+```
+
 ### [Open Source Software](#open-source-software)
 
 You can modify the downloaded source code and share it with your friends.
