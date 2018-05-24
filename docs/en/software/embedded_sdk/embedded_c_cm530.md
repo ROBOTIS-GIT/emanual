@@ -17,10 +17,10 @@ It makes the users possible to develop their own firmware. The characteristics a
 - All the sources are written in C Language.
 - The examples of how to control each part of the controller directly are provided.
 
-`Note` If you want to use Embedded C, you need the knowledge of software and hardware. If you are a beginner, we recommend you use Embedded C after learing the software and the hardware.
+**NOTE** : If you want to use Embedded C, you need the knowledge of software and hardware. If you are a beginner, we recommend you use Embedded C after learing the software and the hardware.
 {: .notice}
 
-`Note` If you use Embedded C, you cannot use RoboPlus since the controller's firmware is changed. If you want to use RoboPlus again, you must restore the firmware using RoboPlus.
+**NOTE** : If you use Embedded C, you cannot use RoboPlus since the controller's firmware is changed. If you want to use RoboPlus again, you must restore the firmware using RoboPlus.
 {: .notice}
 
 # [CM-530](#cm-530)
@@ -36,7 +36,7 @@ It makes the users possible to develop their own firmware. The characteristics a
 
 ## [Getting Started](#getting-started)
 
-`Note` If an error occurs during installation in Windows 8.1.10, click HERE. Once downloading and unzipping are completed, copy the files to C:￦WinARM￦utils￦bin. (You can replace the existing file.) (EX error :/usr/bin/sh: fork: Resource temporarily unavailable)
+**NOTE** : If an error occurs during installation in Windows 8.1.10, click HERE. Once downloading and unzipping are completed, copy the files to C:￦WinARM￦utils￦bin. (You can replace the existing file.) (EX error :/usr/bin/sh: fork: Resource temporarily unavailable)
 {: .notice}
 
 ### [Install JRE](#install-jre)

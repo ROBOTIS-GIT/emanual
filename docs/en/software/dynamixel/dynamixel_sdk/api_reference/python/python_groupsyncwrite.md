@@ -34,12 +34,12 @@ sidebar:
 
 | Methods                                                      | Description                                       |
 |:-------------------------------------------------------------|:--------------------------------------------------|
-| **[groupSyncWrite](#groupsyncwrite)**                        | Initializes members of packet data pointer struct |
-| **[groupSyncWriteAddParam](#groupsyncwrite_addparam)**       | Adds parameter storage for read                   |
-| **[groupSyncWriteRemoveParam](#groupsyncwrite_removeparam)** | Removes parameter on the storage                  |
-| **[groupSyncWriteChangeParam](#groupsyncwrite_changeparam)** | Changes parameter on the storage                  |
-| **[groupSyncWriteClearParam](#groupsyncwrite_clearparam)**   | Clears parameter storage                          |
-| **[groupSyncWriteTxPacket](#groupsyncwrite_txpacket)**       | Transmits packet to the number of Dynamixels      |
+| **[GroupSyncWrite](#groupsyncwrite)**                        | Initializes members of packet data pointer struct |
+| **[addParam](#addparam)**                                    | Adds parameter storage for read                   |
+| **[removeParam](#removeparam)**                              | Removes parameter on the storage                  |
+| **[changeParam](#changeparam)**                              | Changes parameter on the storage                  |
+| **[clearParam](#clearparam)**                                | Clears parameter storage                          |
+| **[txPacket](#txpacket)**                                    | Transmits packet to the number of Dynamixels      |
 
 
 
@@ -49,17 +49,17 @@ sidebar:
 
 #### Method References
 
-##### groupSyncWrite
+##### GroupSyncWrite
 - Syntax
 ``` python
-int groupSyncWrite(int port_num, int protocol_version, int start_address, int data_length)
+GroupSyncWrite(port, ph, start_address, data_length)
 ```
 - Parameters
 
 | Parameters       | Description                                 |
 |:-----------------|:--------------------------------------------|
-| port_num         | Port number                                 |
-| protocol_version | Protocol version                            |
+| port_num         | PortHandler instance                        |
+| ph               | PacketHandler instance                      |
 | start_address    | Control table address to start writing data |
 | data_length      | Total data length                           |
 
@@ -68,66 +68,60 @@ int groupSyncWrite(int port_num, int protocol_version, int start_address, int da
    This function initializes the parameters for packet construction. The function resizes groupData struct and initialzes struct members.
 
 
-##### groupSyncWriteAddParam
+##### addParam
 - Syntax
 ``` python
-bool groupSyncWriteAddParam(int group_num, int id, int data, int input_length)
-```
-- Parameters
-
-| Parameters   | Description       |
-|:-------------|:------------------|
-| group_num    | Group number      |
-| id           | Dynamixel ID      |
-| data         | Data for write    |
-| input_length | Input data length |
-
-- Detailed Description
-
-   This function pushes `id` to the Dynamixel ID list, and initializes #`group_num` parameter storage by adding `input_length` bytes `data`. The function deals with 1, 2 or 4 byte data only. The function returns false when the length of input data exceeds parameter or wrong length, or returns true.
-
-
-##### groupSyncWriteRemoveParam
-- Syntax
-``` python
-void groupSyncWriteRemoveParam(int group_num, int id)
-```
-- Parameters
-
-| Parameters | Description  |
-|:-----------|:-------------|
-| group_num  | Group number |
-| id         | Dynamixel ID |
-
-- Detailed Description
-
-   This function removes `id` and its data for write in the #`group_num` Dynamixel ID list. The function returns false when no data is in the parameter storage, or returns true.
-
-
-##### groupSyncWriteChangeParam
-- Syntax
-``` python
-bool groupSyncWriteChangeParam(int group_num, int id, int data, int input_length, int data_pos)
+addParam(dxl_id, data)
 ```
 - Parameters
 
 | Parameters   | Description                |
 |:-------------|:---------------------------|
-| group_num    | Group number               |
-| id           | Dynamixel ID               |
+| dxl_id       | Dynamixel ID               |
 | data         | Data for write             |
-| input_length | Input data length          |
-| data_pos     | Data position in the array |
 
 - Detailed Description
 
-   This function pushes new `data_length` bytes `data` into #`group_num` parameter storage of same `id`. The function returns false when the target ID doesn’t exists in the ID list, or returns true.
+   This function pushes `dxl_id` to the Dynamixel ID list, and initializes parameter storage by adding `input_length` bytes `data`. The function deals with 1, 2 or 4 byte data only. The function returns false when the length of input data exceeds parameter or wrong length, or returns true.
 
 
-##### groupSyncWriteClearParam
+##### removeParam
 - Syntax
 ``` python
-void groupSyncWriteClearParam(int group_num)
+removeParam(dxl_id)
+```
+- Parameters
+
+| Parameters   | Description                |
+|:-------------|:---------------------------|
+| dxl_id       | Dynamixel ID               |
+
+- Detailed Description
+
+   This function removes `dxl_id` and its data for write in the Dynamixel ID list. The function returns false when no data is in the parameter storage, or returns true.
+
+
+##### changeParam
+- Syntax
+``` python
+changeParam(dxl_id, data)
+```
+- Parameters
+
+| Parameters   | Description                |
+|:-------------|:---------------------------|
+| dxl_id       | Dynamixel ID               |
+| data         | Data for write             |
+
+- Detailed Description
+
+   This function pushes new `data_length` bytes `data` into parameter storage of same `dxl_id`. The function returns false when the target ID doesn’t exists in the ID list, or returns true.
+
+
+##### clearParam
+- Syntax
+``` python
+clearParam()
 ```
 - Parameters
 
@@ -135,19 +129,17 @@ void groupSyncWriteClearParam(int group_num)
 
 - Detailed Description
 
-   This function clears #`group_num` Dynamixel ID list.
+   This function clears Dynamixel ID list.
 
 
-##### groupSyncWriteTxPacket
+##### txPacket
 - Syntax
 ``` python
-void groupSyncWriteTxPacket(int group_num)
+txPacket()
 ```
 - Parameters
 
-| Parameters | Description  |
-|:-----------|:-------------|
-| group_num  | Group number |
+None
 
 - Detailed Description
 

@@ -14,7 +14,7 @@ If the Bus Watchdog Error screen appears, the Goal Value (Goal PWM(100), Goal Cu
 Therefore, when a new value is written to the Goal Value, a Range Error will be returned via the Status packet.
 If the value of Bus Watchdog (98) is changed to '0', Bus Watchdog Error will be cleared.
 
-`Note` For details of Range Error, please refer to the protocol of the e-Manual.
+**NOTE** : For details of Range Error, please refer to the protocol of the e-Manual.
 {: .notice}
 
 The following are examples of the operation of the Bus Watchdog function.

@@ -30,7 +30,7 @@ sidebar:
 
 ### [Function Reference](#function-reference)
 
-When some error that are related with `.dll file version is higher than the MATLAB's version` is appeared, the `.dll` file should be rebuilt in lower version Visual Studio. Check how to build in the lower version environment [here](/docs/en/software/dynamixel/dynamixel_sdk/library_setup/labview_windows/#labview-windows) → <kbd>Building the Library</kbd> → `Platform Toolset`. 
+When some error that are related with `.dll file version is higher than the MATLAB's version` is appeared, the `.dll` file should be rebuilt in lower version Visual Studio.
 
 * The function reference file is located in `[DynamixelSDK folder]/matlab/m_basic_function/`
 

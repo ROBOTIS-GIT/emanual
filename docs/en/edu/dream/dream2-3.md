@@ -24,7 +24,7 @@ In chapter 12, it guides you for self-learning through “Create your own robot.
 To download, you should use the USB cable included in ROBOTIS DREAM II LEVEL 1.  
 If you want to build and program your robots using more parts and peripheral devices, please purchase the ROBOTIS DREAM II Level 4 or necessary parts separately.
 
-`Caution` ROBOTIS DREAM II Level 2 requires parts from ROBOTIS DREAM II Level 1. Please make sure to purchase Level 1 first to build the robots in Level 2. The controller ([CM-150]) in ROBOTIS DREAM II level 2 contains a "Comprehensive Program" that can make the robot move without downloading a program.  
+**CAUTION** : ROBOTIS DREAM II Level 2 requires parts from ROBOTIS DREAM II Level 1. Please make sure to purchase Level 1 first to build the robots in Level 2. The controller ([CM-150]) in ROBOTIS DREAM II level 2 contains a "Comprehensive Program" that can make the robot move without downloading a program.  
 To program or download a program you will need the USB Cable included in the ROBOTIS DREAM II Level 1.  
 If you want to build and program your robots using more parts and peripheral devices, please purchase the ROBOTIS DREAM II Level 3 or necessary parts separately.
 {: .notice}

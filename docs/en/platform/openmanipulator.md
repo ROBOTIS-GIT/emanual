@@ -250,7 +250,7 @@ Load a TurtleBot3 Waffle or Waffle Pi with OpenManipulator on RViz.
 
 ## [Gazebo](#gazebo)
 
-  `Note` This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+  **NOTE** : This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
   {: .notice--info}
 
 ### [Spawn Model](#spawn-model)

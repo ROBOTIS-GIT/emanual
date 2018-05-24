@@ -17,7 +17,7 @@ sidebar:
 
 태스크 코드 파일은 PC 에서 _.tsk_ 라는 확장자를 가지며 좌측과 같은 아이콘으로 표시됩니다.
 
-`Note` 상위버젼의 Task 파일은 하위버젼에서 호환되지 않습니다.
+**NOTE** : 상위버젼의 Task 파일은 하위버젼에서 호환되지 않습니다.
 {: .notice}
 
 ![R+태스크][R+task]
@@ -37,7 +37,7 @@ sidebar:
 
 ![img_install](/assets/images/sw/roboplus_install.png)
 
-`Note` 로보플러스를 실행하기 위해선 .NET FrameWork 3.5이상의 버전이 필요 합니다. 로보플러스 설치시 .NET FrameWork 자동설치가 실패할 경우엔 .NET FreameWork를 별도로 설치하세요.
+**NOTE** : 로보플러스를 실행하기 위해선 .NET FrameWork 3.5이상의 버전이 필요 합니다. 로보플러스 설치시 .NET FrameWork 자동설치가 실패할 경우엔 .NET FreameWork를 별도로 설치하세요.
 {: .notice}
 
 ### RoboPlus 설치 실패시

@@ -125,7 +125,7 @@ Offset refers to the difference of standard value. Even when assembling the same
 
 If a joint’s position is not as shown on the image and is crooked, use the torque ON/OFF function of the joint to adjust the joint into its correct initial position.
 
-`Caution` Please hold up the ROBOTIS-MINI to accurately check the position of the joints.Checking the position with the ROBOTIS-MINI on the ground may cause its legs or waist joints to alter.
+**CAUTION** : Please hold up the ROBOTIS-MINI to accurately check the position of the joints.Checking the position with the ROBOTIS-MINI on the ground may cause its legs or waist joints to alter.
 {: .notice--warning}
 
 Touch an ID to turn the respective joint’s torque OFF, and you will be able to physically move the joint. The image shown on the screen shows how the correct standard position of the joint should be.

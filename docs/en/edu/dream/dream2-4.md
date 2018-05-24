@@ -19,7 +19,7 @@ ROBOTIS DREAM Level II 4 comes with the controller and teaches you the principle
 This level will help you understand the flow chart to set up your ground work for programming.  
 Operate your robot using the sensors assembled in them or play games to experience how the sensors can be used in various ways.
 
-`Caution` ROBOTIS DREAM II Level 4 requires parts from ROBOTIS DREAM II Level 1, 2 and 3. Please make sure to purchase Level 1, 2 and 3 to build the robots in Level 4. Users must program the robots or download the program into the controller ([CM-150]) to operate the robot. To program or download a program you will need the USB Cable included in the ROBOTIS DREAM II Level 1. If you want to build and program your robots using more parts and peripheral devices, please purchase the ROBOTIS DREAM II Level 5 or necessary parts separately.
+**CAUTION** : ROBOTIS DREAM II Level 4 requires parts from ROBOTIS DREAM II Level 1, 2 and 3. Please make sure to purchase Level 1, 2 and 3 to build the robots in Level 4. Users must program the robots or download the program into the controller ([CM-150]) to operate the robot. To program or download a program you will need the USB Cable included in the ROBOTIS DREAM II Level 1. If you want to build and program your robots using more parts and peripheral devices, please purchase the ROBOTIS DREAM II Level 5 or necessary parts separately.
 {: .notice}
 
 # [Part List](#part-list)

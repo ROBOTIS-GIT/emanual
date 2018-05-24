@@ -176,7 +176,7 @@ This feature is currently being prepared and will be supported in upcoming updat
 
 6. Use the Goal Position control on the lower right corner to move the motor. 
 
-    `Warning` Take caution since the motor can suddenly move in the process of changing the value.
+    **WARNING** : Take caution since the motor can suddenly move in the process of changing the value.
     {: .notice--warning}
 
     ![](/assets/images/sw/rplus2/manager/roboplus_manager2_18.jpg)
@@ -192,7 +192,7 @@ This feature is currently being prepared and will be supported in upcoming updat
 
     ![](/assets/images/sw/rplus2/manager/roboplus_manager2_20.jpg)
 
-`Note` For further information about the Control Table, please refer to each Dynamixel.
+**NOTE** : For further information about the Control Table, please refer to each Dynamixel.
 {: .notice}
 
 ## [Controller Control Table](#controller-control-table)
@@ -253,7 +253,7 @@ This feature is currently being prepared and will be supported in upcoming updat
 
     ![](/assets/images/sw/rplus2/manager/roboplus_manager2_60.png)
 
-`Note` For more details on peripheral devices, please refer to R+ Task 2.0.
+**NOTE** : For more details on peripheral devices, please refer to R+ Task 2.0.
 {: .notice}
 
 

@@ -17,10 +17,10 @@ It makes the users possible to develop their own firmware. The characteristics a
 - All the sources are written in C Language.
 - The examples of how to control each part of the controller directly are provided.
 
-`Note` If you want to use Embedded C, you need the knowledge of software and hardware. If you are a beginner, we recommend you use Embedded C after learing the software and the hardware.
+**NOTE** : If you want to use Embedded C, you need the knowledge of software and hardware. If you are a beginner, we recommend you use Embedded C after learing the software and the hardware.
 {: .notice}
 
-`Note` If you use Embedded C, you cannot use RoboPlus since the controller's firmware is changed. If you want to use RoboPlus again, you must restore the firmware using RoboPlus.
+**NOTE** : If you use Embedded C, you cannot use RoboPlus since the controller's firmware is changed. If you want to use RoboPlus again, you must restore the firmware using RoboPlus.
 {: .notice}
 
 # [CM-510/700](#cm-510700)
@@ -838,7 +838,7 @@ The controller can be operated using RC-100.
   The received data by Zigbee Module can be read using zgb_rx_data() function.  
   If the received packet is RC-100 button, LEDs are turned on or off by controlling PORTC pursuant to pressed buttons of RC-100.
    
-  `Caution` Due to the UART sharing, there will be a system collision when you use both ZIGBee and serial communication library at the same time. If you want to use both of them at once, you must modify the source properly in advance.
+  **CAUTION** : Due to the UART sharing, there will be a system collision when you use both ZIGBee and serial communication library at the same time. If you want to use both of them at once, you must modify the source properly in advance.
   {: .notice--warning}
  
 - Result

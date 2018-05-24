@@ -18,5 +18,5 @@ Below figure is a block diagram describing the velocity controller in Velocity C
 ![](/assets/images/dxl/velocity_controller_pi_gain.jpg)
 
 
-`Note` K<sub>a</sub> stands for Anti-windup Gain and ‘β’ is a conversion coefficient of position and velocity that cannot be modified by users. For more details about the PID controller, please refer to the [PID Controller at wikipedia](http://en.wikipedia.org/wiki/PID_controller).
+**NOTE** : K<sub>a</sub> stands for Anti-windup Gain and ‘β’ is a conversion coefficient of position and velocity that cannot be modified by users. For more details about the PID controller, please refer to the [PID Controller at wikipedia](http://en.wikipedia.org/wiki/PID_controller).
 {: .notice}

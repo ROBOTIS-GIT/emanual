@@ -5,5 +5,5 @@ For example, the value is 512, it means the load is detected in the direction of
 | :---: | :-----------: | :---: |
 | 0.1%  | -1,000 ~ 1,000| Positive(CCW Load), Negative(CW Load) |
 
-`Note` Present load is an inferred value based on the internal output value; not a measured value using torque sensor, etc. Therefore, it may be inaccurate for measuring weight or torque. It is recommended to use it for predicting the direction and size of the force being applied to the joint.
+**NOTE** : Present load is an inferred value based on the internal output value; not a measured value using torque sensor, etc. Therefore, it may be inaccurate for measuring weight or torque. It is recommended to use it for predicting the direction and size of the force being applied to the joint.
 {: .notice}

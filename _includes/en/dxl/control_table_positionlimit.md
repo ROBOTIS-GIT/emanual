@@ -4,5 +4,5 @@ These values limit maximum and minimum target positions for Position Control Mod
 | :---: | :---: |
 |0.088&deg;|0 ~ 4,095(1 rotation)|
 
-`Note` Max Position Limit(48) and Min Position Limit(52) are only used in Position Control Mode with a single turn.
+**NOTE** : Max Position Limit(48) and Min Position Limit(52) are only used in Position Control Mode with a single turn.
 {: .notice}

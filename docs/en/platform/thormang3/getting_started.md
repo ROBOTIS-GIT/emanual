@@ -19,7 +19,7 @@ sidebar:
 
 Ubuntu 16.04 LTS is installed on PCs in the THORMANG3 and the PC for Remote Control Version.
 
-`Note` [Install Ubuntu Desktop]
+**NOTE** : [Install Ubuntu Desktop]
 {: .notice}
 
 
@@ -75,15 +75,15 @@ This section explains how to configure the network for MPC(Motion PC) and PPC(Pe
 
 ROS(Robot Operating System) is required in order to control THORMANG3. Currently THORMANG3 is developed and tested with Kinetic Kame version of ROS.
 
-`Note` [Install ROS]
+**NOTE** : [Install ROS]
 {: .notice}
 
 ## [ROS Environment Setting](#ros-environment-setting)
 
-`Note` [Environment Setting Reference]
+**NOTE** : [Environment Setting Reference]
 {: .notice}
 
-`Note` [ROS Network Setup Reference]
+**NOTE** : [ROS Network Setup Reference]
 {: .notice}
 
 ### [Network Setting Example](#network-setting-example)
@@ -282,10 +282,10 @@ Install the ROBOTIS ROS Package from the OPC.
 
 2. After installing all dependent packages, go to the workspace and build. Use j1 option when building for the first time.
 
-    `Note` Dependencies : qt-ros, map_server, nav_msgs, humanoid_nav_msgs, sbpl, octomap-ros
+    **NOTE** : Dependencies : qt-ros, map_server, nav_msgs, humanoid_nav_msgs, sbpl, octomap-ros
     {: .notice}
 
-    `Note` sbpl needs to be installed manually. Please follow the [sbpl install instruction].
+    **NOTE** : sbpl needs to be installed manually. Please follow the [sbpl install instruction].
     {: .notice}
 
     ```

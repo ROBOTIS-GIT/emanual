@@ -435,7 +435,7 @@ These 4 functions allows the directional keys to control cursor location.
 
 ## [SimplePtoP](#simpleptop)
 
-`Warning` Product may move fast with this example. When testing this example keep a safe distance while able to cut power off in case of undesired operation.
+**WARNING** : Product may move fast with this example. When testing this example keep a safe distance while able to cut power off in case of undesired operation.
 {: .notice--warning}
 
 SimplePtoP is the end effector’s move point (from P1 to P2).
@@ -530,7 +530,7 @@ MotionPlayer.Set_Time_Period(DEFAULT_Ctrl_TIME_PERIOD);
 
 ## [SimpleIK](#simpleik)
 
-`Warning` Use of this example may pose safety risks. When testing the example keep a safe distance while able to cut power off in case of undesired operation.
+**WARNING** : Use of this example may pose safety risks. When testing the example keep a safe distance while able to cut power off in case of undesired operation.
 {: .notice--warning}
 
 - Allows operation of end effector’s pose via position(X, Y, Z) and orientation(Roll, Pitch, Yaw). The keys for SimpleIK are q, w, e, r, t, y and a, s ,d ,f, g, h.
@@ -620,7 +620,7 @@ if(temp == 'q')
 Despite having errors and not being able to get the IK moving can be allowed. If 'Do you want make the Robot move? (Y/N)' appears onscreen press the y key to move the end
 effector in the X coordinate by +5mm. Then the joints pose(rad) are displayed.
 
-`Warning` Product may go to pose fast after pressing the Y key posing a safety risk. When testing the example keep a safe distance while able to cut power off in case of undesired operation.
+**WARNING** : Product may go to pose fast after pressing the Y key posing a safety risk. When testing the example keep a safe distance while able to cut power off in case of undesired operation.
 {: .notice--warning}
 
 When error is too large and IK is unrealizable 'No IK Solution‘ will be displayed the end effector will remain as is.
