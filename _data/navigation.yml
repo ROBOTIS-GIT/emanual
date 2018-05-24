@@ -10171,8 +10171,8 @@ turtlebot3:
     children:
     - title: "TurtleBot3 Friends: Car"
       url: /platform/turtlebot3/locomotion/#turtlebot3-friends-car
-    - title: "TurtleBot3 Friends: OpenManipulator Chain"
-      url: /platform/turtlebot3/locomotion/#turtlebot3-friends-openmanipulator-chain
+    - title: "TurtleBot3 Friends: OpenManipulator"
+      url: /platform/turtlebot3/locomotion/#turtlebot3-friends-openmanipulator
     - title: "TurtleBot3 Friends: Segway"
       url: /platform/turtlebot3/locomotion/#turtlebot3-friends-segway
     - title: "TurtleBot3 Friends: Conveyor"
@@ -10198,8 +10198,8 @@ turtlebot3:
     children:
     - title: "TurtleBot Follower Demo"
       url: /platform/turtlebot3/applications/#turtlebot-follower-demo
-    - title: "TurtleBot Panorama Demo using Raspberry Pi Camera Module"
-      url: /platform/turtlebot3/applications/#turtlebot-panorama-demo-using-raspberry-pi-camera-module
+    - title: "TurtleBot Panorama Demo"
+      url: /platform/turtlebot3/applications/#turtlebot-panorama-demo
     - title: "Automatic Parking"
       url: /platform/turtlebot3/applications/#automatic-parking
     - title: "Automatic Parking Vision"
@@ -10226,11 +10226,16 @@ turtlebot3:
       url: /platform/turtlebot3/videos/#videos-from-robotis-channel
   - title: "Projects"
     url: /platform/turtlebot3/projects/#projects
+    children:
+    - title: "TurtleBot3 Collaboration Project"
+      url: /platform/turtlebot3/projects/#turtlebot3-collaboration-project
+    - title: "TurtleBot3 Awesome Projects"
+      url: /platform/turtlebot3/projects/#turtlebot3-awesome-projects
   - title: "Challenges"
     url: /platform/turtlebot3/challenges/#challenges
     children:
-    - title: "Online Competition on ROS Development Studio"
-      url: /platform/turtlebot3/challenges/#online-competition-on-ros-development-studio
+    - title: "Online Competition on RDS"
+      url: /platform/turtlebot3/challenges/#online-competition-on-rds
     - title: "Offline Competition"
       url: /platform/turtlebot3/challenges/#offline-competition
   - title: "Appendixes"
