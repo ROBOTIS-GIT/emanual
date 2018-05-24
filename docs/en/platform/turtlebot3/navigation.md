@@ -101,9 +101,9 @@ Navigation stack has many parameters to change performances for different robots
 
 This tuning guide give some tips for you to configue important parameters. If you want to change performances depends on your environments, this tips might be help you and save your time.
 
-- inflation_radius (turtlebot3_navigation/param/costmap_common_param_$(model).yaml)
-
-This parameter makes inflation area from the obstacle. Path would be planned in order that it don't across this area. It is safe that to set this to be bigger than robot radius. For more information about it please following [page of costmap_2d wiki](http://wiki.ros.org/costmap_2d#Inflation). 
+_**inflation_radius**_
+- turtlebot3_navigation/param/costmap_common_param_$(model).yaml)
+- This parameter makes inflation area from the obstacle. Path would be planned in order that it don't across this area. It is safe that to set this to be bigger than robot radius. For more information about it please following [page of costmap_2d wiki](http://wiki.ros.org/costmap_2d#Inflation). 
 
 ![](/assets/images/platform/turtlebot3/navigation/tuning_inflation_radius.png)
 
