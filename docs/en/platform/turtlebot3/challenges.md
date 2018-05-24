@@ -15,7 +15,7 @@ sidebar:
 
 # [Challenges](#challenges)
 
-## [Online Competition on ROS Development Studio](#online-competition-on-ros-development-studio)
+## [Online Competition on RDS](#online-competition-on-rds)
 
 ### [Online Competition using TurtleBot3](#online-competition-using-turtlebot3)
 
@@ -72,7 +72,7 @@ We are preparing an online competition on [ROS Development Studio (RDS)][rds] wi
 
 ### [AutoRace - RBIZ Challenge 2018](#autorace-rbiz-challenge-2018)
 
-- Comming soon.
+- Coming soon!
 
 [rds]: http://www.theconstructsim.com/rds-ros-development-studio/
 [the_construct]: http://www.theconstructsim.com/
