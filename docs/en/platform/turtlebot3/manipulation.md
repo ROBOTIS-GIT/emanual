@@ -21,10 +21,23 @@ sidebar:
 **NOTE**: If you want more specfic information about OpenManipulator, please refer to the [OpenManipulator e-Manual](/docs/en/platform/openmanipulator/)
 {: .notice--info}
 
-![](/assets/images/platform/turtlebot3/manipulation/tb3_with_opm_logo.png)
+{% capture notice_02 %}
+**TIP**:
+- We are happy to announce a new ROS book: “ROS Robot Programming, A Handbook is written by TurtleBot3 Developers”. Now, this book has been published English and Chinese versions. This book contains the following:
+  - ROS Kinetic Kame: Basic concept, instructions and tools
+  - How to use sensor and actuator packages on ROS
+  - Embedded board for ROS: OpenCR
+  - SLAM & Navigation with TurtleBot3
+  - How to program a delivery robot using ROS Java
+  - OpenManipulator simulation using MoveIt! and Gazebo
+- Please refer to this book for more information on ROS, SLAM, and Navigation that are not covered in this e-manual. You can download the [pdf of this book](/docs/en/platform/turtlebot3/learn/#books).
+{% endcapture %}
+<div class="notice--success">{{ notice_02 | markdownify }}</div>
 
 `Tip` The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is Ctrl-Alt-T.
 {: .notice--info}
+
+![](/assets/images/platform/turtlebot3/manipulation/tb3_with_opm_logo.png)
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/Qhvk5cnX2hM" frameborder="0" allowfullscreen></iframe>
 
@@ -263,5 +276,4 @@ OpenManipulator in Gazebo is controllered by ROS message. For example, to use be
 ```
 $ rostopic pub /joint4_position/command std_msgs/Float64 "data: 0.21" --once
 ```
-
 

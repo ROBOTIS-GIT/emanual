@@ -16,6 +16,9 @@ sidebar:
 
 ## [Basic Examples](#basic-examples)
 
+**WARNING**: Make sure to run the [Bringup][bringup] instruction before performing this examples, and be careful when testing the robot on the table as the robot might fall.
+{: .notice--warning}
+
 {% capture notice_01 %}
 **NOTE**: 
 - This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
@@ -23,8 +26,18 @@ sidebar:
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
-**WARNING**: Make sure to run the [Bringup][bringup] instruction before performing this examples, and be careful when testing the robot on the table as the robot might fall.
-{: .notice--warning}
+{% capture notice_02 %}
+**TIP**:
+- We are happy to announce a new ROS book: “ROS Robot Programming, A Handbook is written by TurtleBot3 Developers”. Now, this book has been published English and Chinese versions. This book contains the following:
+  - ROS Kinetic Kame: Basic concept, instructions and tools
+  - How to use sensor and actuator packages on ROS
+  - Embedded board for ROS: OpenCR
+  - SLAM & Navigation with TurtleBot3
+  - How to program a delivery robot using ROS Java
+  - OpenManipulator simulation using MoveIt! and Gazebo
+- Please refer to this book for more information on ROS, SLAM, and Navigation that are not covered in this e-manual. You can download the [pdf of this book](/docs/en/platform/turtlebot3/learn/#books).
+{% endcapture %}
+<div class="notice--success">{{ notice_02 | markdownify }}</div>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Xg1pKFQY5p4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
