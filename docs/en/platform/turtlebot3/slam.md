@@ -146,24 +146,24 @@ $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 
 ![](/assets/images/platform/turtlebot3/slam/slam_running_for_mapping.png)
 
-## [Tuning guide](#tuning-guide)
+## [Tuning Guide](#tuning-guide)
 
-Gmapping has many parameters to change performances for different environments. You can get an information about whole parameters in [ROS WIKI](http://wiki.ros.org/gmapping) or refer chapter 11 in [ROS Robot Programming](https://community.robotsource.org/t/download-the-ros-robot-programming-book-for-free/51) book.
+Gmapping has many parameters to change performances for different environments. You can get an information about whole parameters in [ROS WiKi](http://wiki.ros.org/gmapping) or refer chapter 11 in [ROS Robot Programming](https://community.robotsource.org/t/download-the-ros-robot-programming-book-for-free/51) book.
 
 This tuning guide give some tips for you to configue important parameters. If you want to change performances depends on your environments, this tips might be help you and save your time.
 
 _**maxUrange**_ 
-- turtlebot3_slam/launch/turtlebot3_gmapping.launch
+- `turtlebot3_slam/launch/turtlebot3_gmapping.launch`
 - This param is set the maximum usable range of the lidar sensor.
 
 _**map_update_interval**_
-- turtlebot3_slam/launch/turtlebot3_gmapping.launch
+- `turtlebot3_slam/launch/turtlebot3_gmapping.launch`
 - How long (in seconds) between updates to the map. If this set low, map would be updated more often. But it requires greater computational load. Set this param depends on your environments.
 
 ![](/assets/images/platform/turtlebot3/slam/tuning_map_update_interval.png)
 
 _**minimumScore**_ 
-- turtlebot3_slam/launch/turtlebot3_gmapping.launch
+- `turtlebot3_slam/launch/turtlebot3_gmapping.launch`
 - Minimum score for considering the result of the scan matching. This param makes avoid jumping pose estimates.
   If this set properly, you can watch below information.
 
@@ -185,11 +185,11 @@ _**minimumScore**_
   ```
 
 _**linearUpdate**_ 
-- turtlebot3_slam/launch/turtlebot3_gmapping.launch
+- `turtlebot3_slam/launch/turtlebot3_gmapping.launch`
 - When robot translates, a scan process each time.
 
 _**angularUpdate**_ 
-- turtlebot3_slam/launch/turtlebot3_gmapping.launch
+- `turtlebot3_slam/launch/turtlebot3_gmapping.launch`
 - When robot rotates, a scan process each time. Setting this to be smaller than linearUpdate is better.
 
 ## [Save Map](#save-map)
