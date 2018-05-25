@@ -32,6 +32,8 @@ This chapter shows some demos using TurtleBot3. In order to implement these demo
 
 ``` bash
 $ cd ~/catkin_ws/src
+$ sudo apt-get install ros-kinetic-ar-track-alvar
+$ sudo apt-get install ros-kinetic-ar-track-alvar-msgs
 $ git clone https://github.com/ROBOTIS-GIT/turtlebot3_applications.git
 $ git clone https://github.com/ROBOTIS-GIT/turtlebot3_applications_msgs.git
 $ cd ~/catkin_ws && catkin_make
@@ -235,13 +237,6 @@ $ rosrun turtlebot3_automatic_parking automatic_parking.py
 - The `turtlebot3_automatic_parking_vision` package requires `ar_track_alvar` package.
 {% endcapture %}
 <div class="notice--info">{{ notice_05 | markdownify }}</div>
-
-**[Remote PC]** Install [ar_track_alvar][ar_track_alvar] package by following commands.
-
-``` bash
-$ sudo apt-get install ros-kinetic-ar-track-alvar
-$ sudo apt-get install ros-kinetic-ar-track-alvar-msgs
-```
 
 **[Remote PC]** Move to `turtlebot3_automatic_parking` source directory.
 ```bash
