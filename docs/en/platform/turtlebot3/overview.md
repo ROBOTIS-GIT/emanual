@@ -46,10 +46,12 @@ If you are interested in partnership with us to realize open source robotics, pl
 
 ### TurtleBot3 Partners and Research Collaborators
 ![](/assets/images/platform/turtlebot3/logo_platform_sponsors.png)
+
 \* Each collaboration member's web page can be found [here][partners].
 
 ### TurtleBot3 Distributors
 ![](/assets/images/platform/turtlebot3/logo_platform_players.png)
+
 \* Each collaboration member's web page can be found [here][partners].
 
 ### TurtleBot3 Map
