@@ -48,7 +48,7 @@ TurtleBot3 is a collaboration project among [Open Robotics][open_robotics], [ROB
 
 <script type="text/javascript" src="https://embed.githubusercontent.com/view/geojson/turtlebot/map/master/Distributors.geojson"></script>
 
-\* For each collaboration member's web page, please use the following [here][partners].
+\* Each collaboration member's web page can be found [here][partners].
 
 [turtlebot]: https://www.turtlebot.com/
 [ros]: http://www.ros.org/about-ros/

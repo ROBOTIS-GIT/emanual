@@ -14,29 +14,31 @@ sidebar:
 <div style="counter-reset: h1 4"></div>
 
 # [Getting Started](#getting-started)
-This document is for users who are new to TurtleBot3. It is an enormous amount of content, you can divide it as follows.
+This page is for users who are new to TurtleBot3. The manual has an enormous amount of content, but this page explains how information is divided.
 
 ## [About TurtleBot3](#about-turtlebot3)
-First of all, acquire relevant information from the [Overview][overview], [Notices][notices], [Features][features], and [Specifications][specifications] pages to get an overall understanding of TurtleBot3.
+First of all, collect information from the [Overview][overview], [Notices][notices], [Features][features], and [Specifications][specifications] pages to get an overall understanding of TurtleBot3.
 
 ## [First steps for using TurtleBot3](#first-steps-for-using-turtlebot3)
-When you have finished understanding TurtleBot3 above, here are the software and hardware setups. Be aware that it is a time-saver to set up the SBC and your PC's software settings first, rather than assembling the robot. It is recommended that you proceed in the following order.
+When you have enough understanding about TurtleBot3 from above step, here are the software and hardware setups. Be aware that it is a time-saver to set up the SBC and your PC first, rather than assembling the robot. It is recommended to proceed in the following order.
 
 1. [PC Setup][pc_setup]: Install Linux, ROS and application software for TurtleBot3 on your **Remote PC**.
 2. [SBC Setup][sbc_setup]: Install Linux, ROS and hardware related software to control the TurtleBot3 on your **TurtleBot PC**.
-3. [OpenCR Setup][opencr_setup]: Upload latest firmware of TurtleBot3 to embedded board OpenCR.
-4. [Hardware Setup][hardware_setup]: TurtleBots3 is delivered as unassembled parts in the boxes. Follow the instructions to assemble TurtleBot3. At this time, the prepared SBC and OpenCR are mounted on the robot.
+3. [OpenCR Setup][opencr_setup]: Upload latest firmware of TurtleBot3 to OpenCR embedded board.
+4. [Hardware Setup][hardware_setup]: TurtleBots3 is delivered as unassembled parts in the box. Follow the instructions to assemble TurtleBot3. Prepared SBC and OpenCR will be mounted on the robot.
 
-If you want to use other products instead of SBCs and Sensors included in the basic configuration, please refer to the [Compatible Devices][compatible_devices] page. 
+If you want to use other products instead of SBCs and Sensors included in the TurtleBot3 package, please refer to the [Compatible Devices][compatible_devices] page. 
 
 ## [Let's try the basic operation](#lets-try-the-basic-operation)
-Once you have completed the above steps, then run the robot through the provided [Bringup][bringup] package, and remotely move the robot through the teleoperation function. Next, let's check various sensors' value mounted on the robot or control the robot by referring to the [Basic Operation][basic_operation] page.
+Once you have completed the above steps, run the robot through the provided [Bringup][bringup] package, and remotely move the robot with the teleoperation feature.  
+Next, let's check various sensors' value mounted on the robot or learn how to control the robot by reading [Basic Operation][basic_operation] page.
 
 - [Bringup][bringup]
 - [Basic Operation][basic_operation]
 
-## [Let's make TurtleBot3's various technologies my own](#lets-make-turtlebot3s-various-technologies-my-own)
-The TurtleBot3’s core technology is [SLAM][slam], [Navigation][navigation] and [Manipulation][manipulation], making it suitable for home service robots. These can be operated through a real robot, and can also be operated in a virtual space through [Simulation][simulation]. Moreover, it can be implemented through TurtleBot3, such as [Autonomous Driving][autonomous_driving] and [Machine Learning][machine_learning]. In addition, we are introducing 12 different types of [Locomotion][locomotion] as TurtleBot3 Friends, as well as differential drive mobile robot. With this openended component, handful of TurtleBot3 friends with various characteristics could be built. You can create a totally new robot that is never seen before. Also interesting applications such as Follower Demo, Panorama Demo, and Automatic Parking are available. See the [Applications][applications] page.
+## [Keep TurtleBot3's various technologies with you](#keep-turtlebot3s-various-technologies-with-you)
+The TurtleBot3’s core technology is [SLAM][slam], [Navigation][navigation] and [Manipulation][manipulation], making it suitable for home service robots. These technologies can be applied either on a real robot or a virtual robot with [Simulation][simulation] feature.  
+Of course, they can be implemented in TurtleBot3, such as [Autonomous Driving][autonomous_driving] and [Machine Learning][machine_learning]. In addition, we are introducing 12 different types of [Locomotion][locomotion] as TurtleBot3 Friends, as well as differential drive mobile robot. With this openended component, handful of TurtleBot3 friends with various characteristics could be built. You can create a totally new robot that is never seen before. Also interesting applications such as Follower Demo, Panoramic Demo, and Automatic Parking are available. See [Applications][applications] page for more application examples.
 
 - [SLAM][slam]
 - [Navigation][navigation]
@@ -47,7 +49,7 @@ The TurtleBot3’s core technology is [SLAM][slam], [Navigation][navigation] and
 - [Locomotion][locomotion]
 - [Applications][applications]
 
-## [Learn more and explore more use cases](#learn-more-and-explore-more-use-cases)
+## [Learn and Explore more](#learn-and-explore-more)
 The above are just a few examples of using TurtleBot3. You can learn more and challenge yourself with the following information.
 
 You can [Learn][learn] more through the ROS courses provided by the Construct, the various lectures created by TurtleBot3 users, web content, YouTube courses, free books, and more. In addition, various [Videos][videos] produced by ROBOTIS will be helpful, and use cases using TurtleBot3 can be checked through various [Projects][projects] released by TurtleBot3 research collaborators and TurtleBot3 users. You can also try a variety of challenges through [Challenges][challenges].
@@ -58,7 +60,7 @@ You can [Learn][learn] more through the ROS courses provided by the Construct, t
 - [Challenges][challenges]
 
 ## [References and Contacts](#references-and-contacts)
-The [Appendixes][appendixes] contain information on components used in TurtleBot3 such as DYNAMIXEL, OpenCR and LDS. The open source used by TurtleBot3 is listed on [OpenSource and Licenses][opensource_and_licenses] page and this page contains information about each license. If you have any questions about TurtleBot3, please refer to our [FAQ][faq] and leave our [Contact information][contact_us].
+The [Appendixes][appendixes] contains information on components used in TurtleBot3 such as DYNAMIXEL, OpenCR and LDS. The open source used by TurtleBot3 is listed on [OpenSource and Licenses][opensource_and_licenses] page and this page contains information about each license. If you have any questions about TurtleBot3, please refer to our [FAQ][faq] or leave your [Contact information][contact_us].
 
 - [Appendixes][appendixes]
 - [OpenSource and Licenses][opensource_and_licenses]

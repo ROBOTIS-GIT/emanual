@@ -9995,10 +9995,10 @@ turtlebot3:
       url: /platform/turtlebot3/getting_started/#first-steps-for-using-turtlebot3
     - title: "Let's try the basic operation"
       url: /platform/turtlebot3/getting_started/#lets-try-the-basic-operation
-    - title: "Let's make TurtleBot3's various technologies my own"
-      url: /platform/turtlebot3/getting_started/#lets-make-turtlebot3s-various-technologies-my-own
-    - title: "Learn more and explore more use cases"
-      url: /platform/turtlebot3/getting_started/#learn-more-and-explore-more-use-cases
+    - title: "Keep TurtleBot3's various technologies with you"
+      url: /platform/turtlebot3/getting_started/#keep-turtlebot3s-various-technologies-with-you
+    - title: "Learn and Explore more"
+      url: /platform/turtlebot3/getting_started/#learn-and-explore-more
     - title: "References and Contacts"
       url: /platform/turtlebot3/getting_started/#references-and-contacts
   - title: "Setup"

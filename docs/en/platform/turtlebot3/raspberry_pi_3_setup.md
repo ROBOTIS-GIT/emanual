@@ -215,6 +215,7 @@ We provide the Linux distro image based on Raspbian. They are pre-installed with
 	export ROS_MASTER_URI=http://localhost:11311
 	export ROS_HOSTNAME=localhost
 	```
+
 	```
 	source ~/.bashrc
 	```
