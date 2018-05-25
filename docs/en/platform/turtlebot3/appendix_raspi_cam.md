@@ -203,7 +203,7 @@ or
 $ roslaunch raspicam_node camerav2_1280x960.launch
 ```
 
-While the raspicam node is running, you can view various data from Raspberry Pi Camera by launching rqt_image_view.
+While the raspicam node is running, you can view various data from Raspberry Pi Camera by launching `rqt_image_view`.
 
 **Warning!** Before you run Rviz in Remote PC, check your Raspberry Pi 3 and Remote PC whether they are connected.
 {: .notice--warning}

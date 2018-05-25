@@ -26,10 +26,23 @@ sidebar:
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
+{% capture notice_02 %}
+**TIP**:
+- We are happy to announce a new ROS book: “ROS Robot Programming, A Handbook is written by TurtleBot3 Developers”. Now, this book has been published English and Chinese versions. This book contains the following:
+  - ROS Kinetic Kame: Basic concept, instructions and tools
+  - How to use sensor and actuator packages on ROS
+  - Embedded board for ROS: OpenCR
+  - SLAM & Navigation with TurtleBot3
+  - How to program a delivery robot using ROS Java
+  - OpenManipulator simulation using MoveIt! and Gazebo
+- Please refer to this book for more information on ROS, SLAM, and Navigation that are not covered in this e-manual. You can download the [pdf of this book](/docs/en/platform/turtlebot3/learn/#books).
+{% endcapture %}
+<div class="notice--success">{{ notice_02 | markdownify }}</div>
+
 **TIP**: It is recommended to use a joystick pad instead of the keyboard for easier control. For more information on remote control, Please refer to [Teleoperation][teleoperation] page.
 {: .notice--success}
 
-The SLAM (Simultaneous Localization and Mapping) is a technique to draw a map by estimating current location in an arbitrary space. The SLAM is a well-known feature of TurtleBot from its predecessors. The video here shows you how accurately TurtleBot3 can draw a map with its compact and affordable platform.
+The **SLAM (Simultaneous Localization and Mapping)** is a technique to draw a map by estimating current location in an arbitrary space. The SLAM is a well-known feature of TurtleBot from its predecessors. The video here shows you how accurately TurtleBot3 can draw a map with its compact and affordable platform.
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/lkW4-dG2BCY" frameborder="0" allowfullscreen></iframe>
 
@@ -51,7 +64,7 @@ The SLAM (Simultaneous Localization and Mapping) is a technique to draw a map by
 * Duration: About 4 minutes
 * Distance: Total 15 meters
 
-## [Run the SLAM Nodes](#run-the-slam-nodes)
+## [Run SLAM Nodes](#run-slam-nodes)
 
 **[Remote PC]** Open a new terminal and launch the SLAM file.
 
@@ -108,24 +121,97 @@ $ source ~/catkin_ws/install_isolated/setup.bash
 $ roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=cartographer
 ```
 
-## [Run the Teleoperation Node](#run-the-teleoperation-node)
+## [Run Teleoperation Node](#run-teleoperation-node)
 
-**[Remote PC]** Open a new terminal and run the teleoperation node.
+**[Remote PC]** Open a new terminal and run the teleoperation node. The following command allows the user to control the robot to perform SLAM operation manually. It is important to avoid vigorous movements such as changing the speed too quickly or rotating too fast. When building a map using the robot, the robot should scan every corner of the environment to be measured. It requires some experiences to build a clean map, so let’s practice SLAM multiple times to build up know how. The mapping process is shown in figure below.
 
 ``` bash
 $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 ```
 
-## [Save the Map](#save-the-map)
+``` bash
+  Control Your Turtlebot3!
+  ---------------------------
+  Moving around:
+          w
+     a    s    d
+          x
 
-**[Remote PC]** Open a new terminal and run the map saver node.
+  w/x : increase/decrease linear velocity
+  a/d : increase/decrease angular velocity
+  space key, s : force stop
+
+  CTRL-C to quit
+```
+
+![](/assets/images/platform/turtlebot3/slam/slam_running_for_mapping.png)
+
+## [Tuning Guide](#tuning-guide)
+
+Gmapping has many parameters to change performances for different environments. You can get an information about whole parameters in [ROS WiKi](http://wiki.ros.org/gmapping) or refer chapter 11 in [ROS Robot Programming](https://community.robotsource.org/t/download-the-ros-robot-programming-book-for-free/51) book.
+
+This tuning guide give some tips for you to configue important parameters. If you want to change performances depends on your environments, this tips might be help you and save your time.
+
+_**maxUrange**_ 
+- `turtlebot3_slam/launch/turtlebot3_gmapping.launch`
+- This param is set the maximum usable range of the lidar sensor.
+
+_**map_update_interval**_
+- `turtlebot3_slam/launch/turtlebot3_gmapping.launch`
+- How long (in seconds) between updates to the map. If this set low, map would be updated more often. But it requires greater computational load. Set this param depends on your environments.
+
+![](/assets/images/platform/turtlebot3/slam/tuning_map_update_interval.png)
+
+_**minimumScore**_ 
+- `turtlebot3_slam/launch/turtlebot3_gmapping.launch`
+- Minimum score for considering the result of the scan matching. This param makes avoid jumping pose estimates.
+  If this set properly, you can watch below information.
+
+  ```
+  Average Scan Matching Score=278.965
+  neff= 100
+  Registering Scans:Done
+  update frame 6
+  update ld=2.95935e-05 ad=0.000302522
+  Laser Pose= -0.0320253 -5.36882e-06 -3.14142
+  ```
+
+  If this set too high, you can watch below warning.
+
+  ```
+  Scan Matching Failed, using odometry. Likelihood=0
+  lp:-0.0306155 5.75314e-06 -3.14151
+  op:-0.0306156 5.90277e-06 -3.14151
+  ```
+
+_**linearUpdate**_ 
+- `turtlebot3_slam/launch/turtlebot3_gmapping.launch`
+- When robot translates, a scan process each time.
+
+_**angularUpdate**_ 
+- `turtlebot3_slam/launch/turtlebot3_gmapping.launch`
+- When robot rotates, a scan process each time. Setting this to be smaller than linearUpdate is better.
+
+## [Save Map](#save-map)
+
+**[Remote PC]** Now that you have all the work done, let's run the `map_saver` node to create a map file. The map is drawn based on the robot's odometry, tf information, and scan information of the sensor when the robot moves. These data can be seen in the RViz from the previous example video. The created map is saved in the directory in which `map_saver` is runnig. Unless you specify the file name, it is stored as `map.pgm` and `map.yaml` file which contains map information.
 
 ``` bash
 $ rosrun map_server map_saver -f ~/map
 ```
 
-**map.pgm** and **map.yaml** files will be created in the `~/` ($HOME directory : `/home/<username>`) directory.
+The `-f` option refers to the folder and file name where the map file is saved. If `~/map` is used as an option, `map.pgm` and `map.yaml` will be saved in the map folder of user’s home folder `~/` ($HOME directory : `/home/<username>`).
 
+## [Map](#map)
 
+We will use the two-dimensional `Occupancy Grid Map (OGM)`, which is commonly used in the ROS community. The map obtained from the previous [Save Map](#save-map) section as shown in figure below, **white** is the free area in which the robot can move, **black** is the occupied area in which the robot can not move, and **gray** is the unknown area. This map is used in [Navigation][navigation].
+
+![](/assets/images/platform/turtlebot3/slam/map.png)
+
+The figure below shows the result of creating a large map using TurtleBot3. It took about an hour to create a map with a travel distance of about 350 meters.
+
+![](/assets/images/platform/turtlebot3/slam/large_map.png)
+
+[navigation]: /docs/en/platform/turtlebot3/navigation/#navigation
 [teleoperation]: /docs/en/platform/turtlebot3/teleoperation/#teleoperation
 [export_turtlebot3_model]: /docs/en/platform/turtlebot3/export_turtlebot3_model

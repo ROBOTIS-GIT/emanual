@@ -21,6 +21,8 @@ sidebar:
   - [TurtleBot3](https://github.com/ROBOTIS-GIT/turtlebot3)
   - [TurtleBot3 Messages](https://github.com/ROBOTIS-GIT/turtlebot3_msgs)
   - [TurtleBot3 Simulations](https://github.com/ROBOTIS-GIT/turtlebot3_simulations)
+  - [TurtleBot3 Applications](https://github.com/ROBOTIS-GIT/turtlebot3_applications)
+  - [TurtleBot3 Applications Messages](https://github.com/ROBOTIS-GIT/turtlebot3_applications_msgs)
   - [TurtleBot3 Autorace](https://github.com/ROBOTIS-GIT/turtlebot3_autorace)
   - [TurtleBot3 Deliver](https://github.com/ROBOTIS-GIT/turtlebot3_deliver)
 
@@ -33,10 +35,17 @@ sidebar:
   - [DYNAMIXEL Workbench](https://github.com/ROBOTIS-GIT/dynamixel-workbench)
   - [LDS Driver](https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver)
   - [OpenManipulator](https://github.com/ROBOTIS-GIT/open_manipulator)
+  - [OpenManipulator Messages](https://github.com/ROBOTIS-GIT/open_manipulator_msgs)
+  - [OpenManipulator Simulations](https://github.com/ROBOTIS-GIT/open_manipulator_simulations)
+  - [OpenManipulator Perceptions](https://github.com/ROBOTIS-GIT/open_manipulator_perceptions)
+  - [OpenManipulator with TB3](https://github.com/ROBOTIS-GIT/open_manipulator_with_tb3)
+  - [OpenManipulator with TB3 Messages](https://github.com/ROBOTIS-GIT/open_manipulator_with_tb3_msgs)
+  - [OpenManipulator with TB3 Simulations](https://github.com/ROBOTIS-GIT/open_manipulator_with_tb3_simulations)
+
 
 ## [OpenSource Hardware](#opensource-hardware)
 
-+ Circuit and PCB Gerber
++ Circuit and PCB Gerber Files
   - [OpenCR1.0](https://github.com/ROBOTIS-GIT/OpenCR-Hardware)
 
 + TurtleBot3 Hardware
