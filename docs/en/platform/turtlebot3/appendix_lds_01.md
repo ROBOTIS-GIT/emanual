@@ -22,7 +22,7 @@ sidebar:
 
 - 360 Laser Distance Sensor LDS-01 is a 2D laser scanner capable of sensing 360 degrees that collects a set of data around the robot to use for SLAM (Simultaneous Localization and Mapping) and Navigation.
 - The LDS-01 is used for TurtleBot3 Burger, Waffle and Waffle Pi models.
-- It supports USB interface(USB2LDS) and is easy to install on a PC.
+- It supports USB interface([USB2LDS][u2d2]) and is easy to install on a PC.
 - It supports UART interface for embedded baord.
 
 ### [Introduction Video](#introduction-video)
@@ -92,8 +92,8 @@ Here is the detail specification document : [PDF](/assets/docs/LDS_Basic_Specifi
 **NOTE**: The 360 Laser Distance Sensor LDS-01 for TurtleBot3 uses molex 51021-0800 and 53048-0810 instead of the basic housing and connector.
 {: .notice--info}
 
-- [for LDS] [Molex 51021-0800](http://www.molex.com/pdm_docs/sd/510210800_sd.pdf)
-- [for USB2LDS] [Molex 53048-0810](http://www.molex.com/pdm_docs/sd/530480810_sd.pdf)
+- [Connector for LDS] [Molex 51021-0800](http://www.molex.com/pdm_docs/sd/510210800_sd.pdf)
+- [Connector for USB2LDS] [Molex 53048-0810](http://www.molex.com/pdm_docs/sd/530480810_sd.pdf)
 
 ### [LDS for TurtleBot3](#lds-for-turtlebot3)
 
@@ -104,13 +104,9 @@ The LDS-01 is used for TurtleBot3 Burger, Waffle and Waffle Pi models.
 
 ### [User Guide (for ROS)](#user-guide-for-ros)
 
-We are offering [ROS package for LSD](http://wiki.ros.org/hls_lfcd_lds_driver). The hls_lfcd_lds_driver package provides a driver for "HLS(Hitachi-LG Sensor) LFCD LDS(Laser Distance Sensor)".
+We are offering [ROS package for LSD](http://wiki.ros.org/hls_lfcd_lds_driver). The hls_lfcd_lds_driver package provides a driver for **HLS(Hitachi-LG Sensor) LFCD LDS(Laser Distance Sensor)**.
 
-<<<<<<< HEAD
-**NOTE** : Due to firmware update (after buy it on Oct. 2017), the sensor is running directly when power in on.
-=======
 **NOTE**: Due to firmware update (after buy it on Oct. 2017), the sensor is running directly when power in on.
->>>>>>> contents_ost
 {: .notice--info}
 
 ### Installation
@@ -152,9 +148,8 @@ $ roslaunch hls_lfcd_lds_driver view_hlds_laser.launch
 $ git clone https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver.git
 ```
 
-or you can download directly on web browser at github repository below:
-
-https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver
+- Or you can download directly on web browser at github repository below:
+  - [https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver](https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver)
 
 - Install dependent software and libraries for each development environment
   - GCC (for Linux and macOS), [MinGW](https://sourceforge.net/projects/mingw/files/) (for Windows)
@@ -162,21 +157,21 @@ https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver
 
 #### Build
 
+- The makefile used here is set for Linux. Windows and macOS should be changed according to their development environment.
+ 
 ``` bash
 $ cd hls_lfcd_lds_driver/applications/lds_driver/
 $ make
 ```
 
-The makefile used here is set for Linux. Windows and macOS should be changed according to their development environment.
-
 #### Run
+
+- You can see the raw data in the terminal when you run the driver of LDS-01. Please check the source code for details.
 
 ``` bash
 $ ./lds_driver
 r[359]=0.438000,r[358]=0.385000,r[357]=0.379000,...
 ```
-
-You can see the raw data in the terminal when you run the driver of LDS-01. Please check the source code for details.
 
 ### [User Guide (for GUI)](#user-guide-for-gui)
 
@@ -195,9 +190,8 @@ You can see the raw data in the terminal when you run the driver of LDS-01. Plea
 $ git clone https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver.git
 ```
 
-or you can download directly on web browser at github repository below:
-
-https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver
+- Or you can download directly on web browser at github repository below:
+  - [https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver](https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver)
 
 - Install dependent software and libraries for each development environment
   - [Qt - Open Source Version](https://www.qt.io/download)
@@ -207,13 +201,13 @@ https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver
 #### Build
 
 - Run the Qt Creator 
-- Open file (<kbd>Ctrl</kbd>-<kbd>O</kbd>) the lds_polar_graph.pro file (hls_lfcd_lds_driver/applications/lds_polar_graph/lds_polar_graph.pro)
+- Open file (`Ctrl`-`O`) the `lds_polar_graph.pro` file (hls_lfcd_lds_driver/applications/lds_polar_graph/lds_polar_graph.pro)
 - Change the [input your portname](https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver/blob/cf866c6b80060ab9270a664d665d287afcca2c10/applications/lds_polar_graph/lds_polar_graph.cpp#L47) of source code 
-- Build all (<kbd>Ctrl</kbd>-<kbd>Shift</kbd>-<kbd>B</kbd>)
+- Build all (`Ctrl`-`Shift`-`B`)
 
 #### Run
 
-- Run the application (<kbd>Ctrl</kbd>-<kbd>R</kbd>)
+- Run the application (`Ctrl`-`R`)
 
 ![](/assets/images/platform/turtlebot3/appendix_lds/lds_gui.png)
 
@@ -233,10 +227,11 @@ https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver
 
 #### Download firmware and run
 
-1. After connecting USB to PC, select Tools -> Board -> OpenCR Board in Arduino IDE.
-1. Change Tools-> Port to the port to which the board is connected.  
-1. In the Arduino IDE Examples, select the firmware for LDS (File -> Examples -> OpenCR -> Etc -> LDS -> drawLDS).
-1. Click on the icon in the Arduino IDE that displays the red circle to build and download the firmware. When the download is completed, the firmware is automatically executed.
+1. After connecting USB to PC, select `Tools` -> `Board` -> `OpenCR Board` in Arduino IDE.
+1. Change `Tools`-> `Port` to the port to which the board is connected.  
+1. In the Arduino IDE Examples, select the firmware for LDS (`File` -> `Examples` -> `OpenCR` -> `Etc` -> `LDS` -> `drawLDS`).
+1. Click `Upload` icon in the Arduino IDE that displays the red circle to build and download the firmware. When the download is completed, the firmware is automatically executed.
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/7wKyW6yLNSg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
+[u2d2]: docs/en/parts/interface/u2d2/

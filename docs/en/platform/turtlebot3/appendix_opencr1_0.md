@@ -21,20 +21,23 @@ sidebar:
 
 ### [Overview](#overview)
 
-`OpenCR1.0` is a main controller board of the TurtleBot3. OpenCR1.0; Open-source Control module for ROS, is developed for ROS embedded systems to provide completely open-source hardware and software. Everything about the board; Schematics, PCB Gerber, BOM and the firmware source code for the TurtleBot3 are free to distribute under open-source licenses for users and the ROS community.
+`OpenCR` is a main controller board of the TurtleBot3. OpenCR; Open-source Control module for ROS, is developed for ROS embedded systems to provide completely open-source hardware and software. Everything about the board; Schematics, PCB Gerber, BOM and the firmware source code for the TurtleBot3 are free to distribute under open-source licenses for users and the ROS community.
 
-The STM32F7 series is a main chip inside the OpenCR1.0 board which is based on a very powerful ARM Cortex-M7 with floating point unit. The development environment for OpenCR1.0 is wide open from Arduino IDE and Scratch for young students to traditional firmware development for the expert.
+The STM32F7 series is a main chip inside the OpenCR board which is based on a very powerful ARM Cortex-M7 with floating point unit. The development environment for OpenCR is wide open from Arduino IDE and Scratch for young students to traditional firmware development for the expert.
 
-OpenCR1.0 provides digital and analog input/output pins that can interface with extension board or various sensors. Also, OpenCR1.0 features various communication interfaces: USB for connecting to PC, UART, SPI, I2C, CAN for other embedded devices.
+OpenCR provides digital and analog input/output pins that can interface with extension board or various sensors. Also, OpenCR features various communication interfaces: USB for connecting to PC, UART, SPI, I2C, CAN for other embedded devices.
 
-OpenCR1.0 can provide a best solution when using with a SBC. It supports 12V, 5V, 3.3V power outputs for SBCs and sensors. It also supports hot swap power inputs between battery and SMPS.
+OpenCR can provide a best solution when using with a SBC. It supports 12V, 5V, 3.3V power outputs for SBCs and sensors. It also supports hot swap power inputs between battery and SMPS.
 
-OpenCR1.0 will be the best solution for implementing your embedded control design.
+OpenCR will be the best solution for implementing your embedded control design.
 
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/-_kBfIS6wJs" frameborder="0" allowfullscreen></iframe>
 
-### [Specification](#specification)
+### [Specifications](#specifications)
+
+**NOTE**: Hot swap power switch between `shore power`(12V, 5A SMPS) and `mobile power`(battery) from OpenCR board enables UPS(Uninterrupted Power Supply) feature.
+{: .notice--info}
 
 | Items                    | Specifications                                                                                     |
 |--------------------------|----------------------------------------------------------------------------------------------------|
@@ -48,12 +51,9 @@ OpenCR1.0 will be the best solution for implementing your embedded control desig
 | Dimensions               | 105(W) X 75(D) mm                                                                                  |
 | Mass                     | 60g                                                                                                |
 
-**NOTE**: Hot swap power switch between "shore power"(12V, 5A SMPS) and "mobile power"(battery) from OpenCR1.0 board enables UPS(Uninterrupted Power Supply) feature.
-{: .notice}
-
 ### [User Guide](#user-guide)
 
-#### [Run serial_node package](#run-serialnode-package)
+#### [Run turtlebot3_core node](#run-turtlebot3-core-node)
 
 ```bash
 $ rosrun rosserial_python serial_node.py __name:=turtlebot3_core _port:=/dev/ttyACM0 _baud:=115200
@@ -63,7 +63,6 @@ $ rosrun rosserial_python serial_node.py __name:=turtlebot3_core _port:=/dev/tty
 
 ```bash
 $ rostopic echo /imu
-
 
   seq: 179
   stamp:
@@ -89,12 +88,12 @@ linear_acceleration_covariance: [0.03999999910593033, 0.0, 0.0, 0.0, 0.039999999
 ---
 ```
 
-### [Debugging](#debugging)
+#### [Debugging](#debugging)
 
 `turtlebot3_core.ino` includes debugging code to check odometry, connected sensor and state of TurtleBot3 or Dynamixels.
 This might be help you to implement code and test it without ROS connection. 
 
-**First**, ready to [LN-101](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=1277&GC=GD0B0107) or any [USB to Serial converter](https://www.sparkfun.com/products/12731)
+**First**, ready to [LN-101](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=1277&GC=GD0B0107) or any [USB to Serial converter](https://www.sparkfun.com/products/12731).
 
 ![](/assets/images/platform/turtlebot3/appendix_opencr/debug_port.png)
 
@@ -112,7 +111,7 @@ This might be help you to implement code and test it without ROS connection.
   $ minicom -s
   ```
 
-**Fifth**, press reset button then you can see how `turtlebot3_core.ino` start and some data.
+**Fifth**, press `reset` button of OpenCR then you can see how `turtlebot3_core.ino` start and some data.
 
 ```sh
 Success to init Motor Driver
@@ -155,17 +154,17 @@ Odometry :
 
 You can modify the downloaded source code and share it with your friends.
 
-- OpenCR1.0 Software: [https://github.com/ROBOTIS-GIT/OpenCR](https://github.com/ROBOTIS-GIT/OpenCR)
+- OpenCR Software: [https://github.com/ROBOTIS-GIT/OpenCR](https://github.com/ROBOTIS-GIT/OpenCR)
 
 ### [Open Source Hardware](#open-source-hardware)
 
-If you want to manufacture your own OpenCR1.0, you can download necessary files such as PCB Gerber, BOM. When the board is ready firmware source code can be burned into the MCU.
+If you want to manufacture your own OpenCR, you can download necessary files such as PCB Gerber, BOM. When the board is ready firmware source code can be burned into the MCU.
 
-- OpenCR1.0 Hardware: [https://github.com/ROBOTIS-GIT/OpenCR-Hardware](https://github.com/ROBOTIS-GIT/OpenCR-Hardware)
+- OpenCR Hardware: [https://github.com/ROBOTIS-GIT/OpenCR-Hardware](https://github.com/ROBOTIS-GIT/OpenCR-Hardware)
 
 ### [e-Manual](#e-manual)
 
-- [OpenCR1.0 e-Manual]
+- [OpenCR e-Manual]
 
 [B3B-EH-A]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
 [B4B-EH-A]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
@@ -175,4 +174,4 @@ If you want to manufacture your own OpenCR1.0, you can download necessary files 
 [5267-02A]: http://www.molex.com/molex/products/datasheet.jsp?part=active/0022035025_PCB_HEADERS.xml&channel=Products&Lang=en-US
 [20010WS-02]: http://www.alldatasheet.com/datasheet-pdf/pdf/147795/YEONHO/20010WS-02000.html
 [Molex 53047-0210]: http://www.molex.com/molex/products/datasheet.jsp?part=active/0530470210_PCB_HEADERS.xml
-[OpenCR1.0 e-Manual]: /docs/en/parts/controller/opencr10/
+[OpenCR e-Manual]: /docs/en/parts/controller/opencr10/
