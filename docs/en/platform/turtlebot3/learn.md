@@ -17,11 +17,11 @@ sidebar:
 
 ## [The Construct](#the-construct)
 
-This **MASTERING WITH ROS: TurtleBot3** lecture is made by [the Construct](http://www.theconstructsim.com/). Within this Course, you are going to learn how you can start working with the TurtleBot3 robot, explore its functionalitities, and how to build build some interesting ROS applications for it. If you want to learn more ROS, please check the [ROBOT IGNITE ACADEMY](http://www.theconstructsim.com/construct-learn-develop-robots-using-ros/robotigniteacademy_learnros/) that contains a series of online ROS tutorials tied to online simulations, giving you the tools and knowledge to understand and create any ROS based robotics development.
+This **MASTERING WITH ROS: TurtleBot3** lecture is made by [the Construct](http://www.theconstructsim.com/). Within this Course, you are going to learn how you can start working with the TurtleBot3 robot, explore its functionalitities, and how to build interesting ROS applications. If you want to learn more about ROS, please check the [ROBOT IGNITE ACADEMY](http://www.theconstructsim.com/construct-learn-develop-robots-using-ros/robotigniteacademy_learnros/) that contains series of online ROS tutorials tied to online simulations, giving you the tools and knowledge to understand and create any ROS based robotics development.
 
 ### MASTERING WITH ROS: TurtleBot3
 
-What you will learn via [MASTERING WITH ROS: TurtleBot3 (Python)](http://www.theconstructsim.com/construct-learn-develop-robots-using-ros/robotigniteacademy_learnros/ros-courses-library/mastering-with-ros-turtlebot3/):
+What you will learn from [MASTERING WITH ROS: TurtleBot3 (Python)](http://www.theconstructsim.com/construct-learn-develop-robots-using-ros/robotigniteacademy_learnros/ros-courses-library/mastering-with-ros-turtlebot3/):
 1. Basic Usage and control of the TurtleBot3 robot
 1. How to perform Navigation with TurtleBot3
 1. Follow a line with TurtleBot3
@@ -43,7 +43,7 @@ Programming with Blockly to run TurtleBot3 (This tutorial is builed by [Dabit In
 
 - [Blockly Wiki](https://turtlebot-3-blockly-wiki.readthedocs.io/en/latest/): A detailed documentation on how to use Blockly (free and open source software) with TurtleBot3.
 
-![](/assets/images/platform/turtlebot3/learn/turtlebot3_blockly_dabit_industries.gif)
+  ![](/assets/images/platform/turtlebot3/learn/turtlebot3_blockly_dabit_industries.gif)
 
 
 
@@ -58,7 +58,7 @@ TurtleBot3 simulator in Ubuntu 14.04 (This tutorial is builed by [Cyaninfinite](
 <iframe width="560" height="315" src="https://www.youtube.com/embed/rV-POzbzoHc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
   - [ROS Courses](https://www.youtube.com/playlist?list=PLRG6WP3c31_VIFtFAxSke2NG_DumVZPgw) [KR]
-  - ROS Courses [EN] (English version will be coming soon!)
+  - ROS Courses [EN] (English version is coming soon!)
 
 ## [Books](#books)
 

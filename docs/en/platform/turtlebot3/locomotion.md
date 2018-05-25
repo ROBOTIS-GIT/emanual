@@ -41,10 +41,10 @@ With this openended component, handful of TurtleBot3 friends with various charac
 
 - Get source codes and make friends! Go to `Examples` → `turtlebot3` → `turtlebot3_friends` on Arduino IDE for OpenCR.
 
-![](/assets/images/platform/turtlebot3/friends/ide.png)
+  ![](/assets/images/platform/turtlebot3/friends/ide.png)
 
-**NOTE**: Any suggestions and ideas for TurtleBot3 Friends Project are always welcomed. Tell us about your creative TurtleBot3 Friends. We can introduce your friend to the world through this wiki page! E-Mail: ost@robotis.com :)
-{: .notice--info}
+  **NOTE**: Any suggestions and ideas for TurtleBot3 Friends Project are always welcomed. Tell us about your creative TurtleBot3 Friends. We can introduce your friend to the world through this wiki page! E-Mail: ost@robotis.com :)
+  {: .notice--info}
 
 
 ## [TurtleBot3 Friends: Car](#turtlebot3-friends-car)
@@ -56,9 +56,9 @@ With this openended component, handful of TurtleBot3 friends with various charac
 - **Software**: `Examples` → `turtlebot3` → `turtlebot3_friends` → `turtlebot3_car`
 - **Video**:
 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/IkPexspUgKk" frameborder="0" allowfullscreen></iframe>
+  <iframe width="640" height="360" src="https://www.youtube.com/embed/IkPexspUgKk" frameborder="0" allowfullscreen></iframe>
 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/1V33iEu4ylw" frameborder="0" allowfullscreen></iframe>
+  <iframe width="640" height="360" src="https://www.youtube.com/embed/1V33iEu4ylw" frameborder="0" allowfullscreen></iframe>
 
 
 ## [TurtleBot3 Friends: OpenManipulator](#turtlebot3-friends-openmanipulator)
@@ -75,13 +75,13 @@ With this openended component, handful of TurtleBot3 friends with various charac
 - [Openmanipulator Wiki](/docs/en/platform/openmanipulator/)
 - **Video**:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Qhvk5cnX2hM" frameborder="0" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/Qhvk5cnX2hM" frameborder="0" allowfullscreen></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/qbht0ssv8M0" frameborder="0" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/qbht0ssv8M0" frameborder="0" allowfullscreen></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/P82pZsqpBg0" frameborder="0" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/P82pZsqpBg0" frameborder="0" allowfullscreen></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/DLOq8yNcCoE" frameborder="0" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/DLOq8yNcCoE" frameborder="0" allowfullscreen></iframe>
 
 ## [TurtleBot3 Friends: Segway](#turtlebot3-friends-segway)
 
@@ -102,7 +102,7 @@ With this openended component, handful of TurtleBot3 friends with various charac
 - **Software**: `Examples` → `turtlebot3` → `turtlebot3_friends` → `turtlebot3_segway`
 - **Video**:
 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/VAY-0xBOE2g" frameborder="0" allowfullscreen></iframe>
+  <iframe width="640" height="360" src="https://www.youtube.com/embed/VAY-0xBOE2g" frameborder="0" allowfullscreen></iframe>
 
 
 ## [TurtleBot3 Friends: Conveyor](#turtlebot3-friends-conveyor)
@@ -117,7 +117,7 @@ With this openended component, handful of TurtleBot3 friends with various charac
 - **Software**: `Examples` → `turtlebot3` → `turtlebot3_friends` → `turtlebot3_conveyor`
 - **Video**:
 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/uv2faO7GhXc" frameborder="0" allowfullscreen></iframe>
+  <iframe width="640" height="360" src="https://www.youtube.com/embed/uv2faO7GhXc" frameborder="0" allowfullscreen></iframe>
 
 
 ## [TurtleBot3 Friends: Monster](#turtlebot3-friends-monster)
@@ -132,7 +132,7 @@ With this openended component, handful of TurtleBot3 friends with various charac
 - **Software**: `Examples` → `turtlebot3` → `turtlebot3_friends` → `turtlebot3_monster`
 - **Video**:
 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/UqdwGLH1-cA" frameborder="0" allowfullscreen></iframe>
+  <iframe width="640" height="360" src="https://www.youtube.com/embed/UqdwGLH1-cA" frameborder="0" allowfullscreen></iframe>
 
 
 ## [TurtleBot3 Friends: Tank](#turtlebot3-friends-tank)
@@ -147,7 +147,7 @@ With this openended component, handful of TurtleBot3 friends with various charac
 - **Software**: `Examples` → `turtlebot3` → `turtlebot3_friends` → `turtlebot3_tank`
 - **Video**:
 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/vndnwpVEpVE" frameborder="0" allowfullscreen></iframe>
+  <iframe width="640" height="360" src="https://www.youtube.com/embed/vndnwpVEpVE" frameborder="0" allowfullscreen></iframe>
 
 
 ## [TurtleBot3 Friends: Omni](#turtlebot3-friends-omni)
@@ -162,7 +162,7 @@ With this openended component, handful of TurtleBot3 friends with various charac
 - **Software**: `Examples` → `turtlebot3` → `turtlebot3_friends` → `turtlebot3_omni`
 - **Video**:
 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/r8wRACM_ZbE" frameborder="0" allowfullscreen></iframe>
+  <iframe width="640" height="360" src="https://www.youtube.com/embed/r8wRACM_ZbE" frameborder="0" allowfullscreen></iframe>
 
 
 ## [TurtleBot3 Friends: Mecanum](#turtlebot3-friends-mecanum)
@@ -203,7 +203,7 @@ With this openended component, handful of TurtleBot3 friends with various charac
 - **Software**: `Examples` → `turtlebot3` → `turtlebot3_friends` → `turtlebot3_road_train`
 - **Video**:
 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/uhkq1w4YoEE" frameborder="0" allowfullscreen></iframe>
+  <iframe width="640" height="360" src="https://www.youtube.com/embed/uhkq1w4YoEE" frameborder="0" allowfullscreen></iframe>
 
 
 ## [TurtleBot3 Friends: Real TurtleBot](#turtlebot3-friends-real-turtlebot)
@@ -218,9 +218,9 @@ With this openended component, handful of TurtleBot3 friends with various charac
 - **Software**: `Examples` → `turtlebot3` → `turtlebot3_friends` → `turtlebot3_realturtlebot`
 - **Video**:
 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/KNWkAe0ob9g" frameborder="0" allowfullscreen></iframe>
+  <iframe width="640" height="360" src="https://www.youtube.com/embed/KNWkAe0ob9g" frameborder="0" allowfullscreen></iframe>
 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/vort-z9HDlU" frameborder="0" allowfullscreen></iframe>
+  <iframe width="640" height="360" src="https://www.youtube.com/embed/vort-z9HDlU" frameborder="0" allowfullscreen></iframe>
 
 ## [TurtleBot3 Friends: Carrier](#turtlebot3-friends-carrier)
 
@@ -234,6 +234,6 @@ With this openended component, handful of TurtleBot3 friends with various charac
 - **Software**: `Examples` → `turtlebot3` → `turtlebot3_waffle` → `turtlebot3_waffle`
 - **Video**:
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/5NYdgnzxykc" frameborder="0" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/5NYdgnzxykc" frameborder="0" allowfullscreen></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/u7qb8xiSiNg" frameborder="0" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/u7qb8xiSiNg" frameborder="0" allowfullscreen></iframe>
