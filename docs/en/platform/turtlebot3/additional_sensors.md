@@ -130,6 +130,7 @@ $ rosrun rosserial_python serial_node.py __name:=turtlebot3_core _port:=/dev/tty
 {: .notice--info}
 
 * Run with Turtlebot3
+
 **WARNING** : Make sure to run the [Bringup](#bringup) instruction before performing Example.
 {: .notice--warning}
 
@@ -168,6 +169,7 @@ $ rosrun rosserial_python serial_node.py __name:=turtlebot3_core _port:=/dev/tty
 {: .notice--info}
 
 * Run with Turtlebot3
+
 **WARNING** : Make sure to run the [Bringup](#bringup) instruction before performing Example.
 {: .notice--warning}
 
@@ -208,4 +210,5 @@ $ rosrun rosserial_python serial_node.py __name:=turtlebot3_core _port:=/dev/tty
 {: .notice--info}
 
 *  Run
+
 This example is allways active when connected led. the leds show a specific pattern depend on the linear and angular velocity of Turtlebot3.
