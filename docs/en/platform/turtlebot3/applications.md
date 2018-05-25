@@ -31,9 +31,9 @@ This chapter shows some demos using TurtleBot3. In order to implement these demo
 **[Remote PC]** Go to `catkin workspace` directory (/home/(user_name)/catkin_ws/src) and clone the turtlebot3_applications and turtlebot3_applications_msgs repository. Then run the `catkin_make` to build the new packages.
 
 ``` bash
-$ cd ~/catkin_ws/src
 $ sudo apt-get install ros-kinetic-ar-track-alvar
 $ sudo apt-get install ros-kinetic-ar-track-alvar-msgs
+$ cd ~/catkin_ws/src
 $ git clone https://github.com/ROBOTIS-GIT/turtlebot3_applications.git
 $ git clone https://github.com/ROBOTIS-GIT/turtlebot3_applications_msgs.git
 $ cd ~/catkin_ws && catkin_make
