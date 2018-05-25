@@ -10252,13 +10252,15 @@ turtlebot3:
         url: /platform/turtlebot3/appendix_dynamixel/#overview
       - title: "Specifications"
         url: /platform/turtlebot3/appendix_dynamixel/#specifications
+      - title: "Dynamixel SDK"
+        url: /platform/turtlebot3/appendix_dynamixel/#dynamixel-sdk
     - title: "OpenCR1.0"
       url: /platform/turtlebot3/appendix_opencr1_0/#appendix-opencr10
       children:
       - title: "Overview"
         url: /platform/turtlebot3/appendix_opencr1_0/#overview
-      - title: "Specification"
-        url: /platform/turtlebot3/appendix_opencr1_0/#specification
+      - title: "Specifications"
+        url: /platform/turtlebot3/appendix_opencr1_0/#specifications
       - title: "User Guide"
         url: /platform/turtlebot3/appendix_opencr1_0/#user-guide
       - title: "Open Source Software"
