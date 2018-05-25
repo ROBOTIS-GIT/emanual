@@ -35,27 +35,27 @@ Whole robots and even the referee system in the field is run by ROS, so it would
 
 - Tutorial 1: Traffic Light
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/yp7MVZCiaWs" frameborder="0" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/yp7MVZCiaWs" frameborder="0" allowfullscreen></iframe>
 
 - Tutorial 2: Lane Tracking
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/1RBOfPWdpsc" frameborder="0" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/1RBOfPWdpsc" frameborder="0" allowfullscreen></iframe>
 
 - Tutorial 3: Parking
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ValFotgBfC0" frameborder="0" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/ValFotgBfC0" frameborder="0" allowfullscreen></iframe>
 
 - Tutorial 4: Node Optimization
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/YpjHOzx432M" frameborder="0" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/YpjHOzx432M" frameborder="0" allowfullscreen></iframe>
 
 - Tutorial 5: Level Crossing
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/MBDMBq6IDd4" frameborder="0" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/MBDMBq6IDd4" frameborder="0" allowfullscreen></iframe>
 
 - Tutorial 6: Tunnel
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/ezkwAs1kVkM" frameborder="0" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/ezkwAs1kVkM" frameborder="0" allowfullscreen></iframe>
 
 
 ## [TurtleBot3 AutoRace Online Competition](#turtlebot3-autorace-online-competition)
@@ -64,9 +64,9 @@ Whole robots and even the referee system in the field is run by ROS, so it would
 
 - (Coming soon!)
 
-## [AutoRace RBIZ Challenge 2017](#autorace-rbiz-challenge-2017)
+  ## [AutoRace RBIZ Challenge 2017](#autorace-rbiz-challenge-2017)
 
-![](/assets/images/platform/turtlebot3/autonomous_driving/autorace_rbiz_challenge_2017_robots_2.png)
+  ![](/assets/images/platform/turtlebot3/autonomous_driving/autorace_rbiz_challenge_2017_robots_2.png)
 
 - Official release of TurtleBot3 AutoRace
 
@@ -77,7 +77,7 @@ Whole robots and even the referee system in the field is run by ROS, so it would
 - Participants sources
 
 | Place | Team              | Source link                                                        |
-| ----- | ----------------- | ------------------------------------------------------------------ |
+|:------|:------------------|:-------------------------------------------------------------------|
 | 1     | RealRiceThief     | [Github](https://github.com/KoG-8/Turtlebot_RealRiceThief)         |
 | 2     | IronHeart         | [Github](https://github.com/kijongGil/Ironheart)                   |
 | 3     | Robit             | [Github](https://github.com/ROBIT-GIT/turtlebot3_autoRace_2017)    |
@@ -98,29 +98,29 @@ Whole robots and even the referee system in the field is run by ROS, so it would
 
 - Official Teaser #1
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/9Wnu8If1eS4" frameborder="0" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/9Wnu8If1eS4" frameborder="0" allowfullscreen></iframe>
 
 - Official Teaser #2
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/47YnSBAssOM" frameborder="0" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/47YnSBAssOM" frameborder="0" allowfullscreen></iframe>
 
 - Official Final Video
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/DWDBAHHQi_k" frameborder="0" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/DWDBAHHQi_k" frameborder="0" allowfullscreen></iframe>
 
 ### [TurtleBot3 AutoRace 2017 Challengers](#turtlebot3-autorace-2017-challengers)
 
 - Video - Team RealRiceThief (1st Place)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/szhllE1T_cg" frameborder="0" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/szhllE1T_cg" frameborder="0" allowfullscreen></iframe>
 
 - Video - Team Sherlotics (Introduction video)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dzjsLFj62HE" frameborder="0" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/dzjsLFj62HE" frameborder="0" allowfullscreen></iframe>
 
 - TurtleBot3 was tested its driving autonomy under the open source from MIT DuckieTown engineering.
 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/1V33iEu4ylw" frameborder="0" allowfullscreen></iframe>
+  <iframe width="640" height="360" src="https://www.youtube.com/embed/1V33iEu4ylw" frameborder="0" allowfullscreen></iframe>
 
 
 ## [AutoRace RBIZ Challenge 2018](#autorace-rbiz-challenge-2018)
