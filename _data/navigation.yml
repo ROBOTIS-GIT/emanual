@@ -10046,9 +10046,9 @@ turtlebot3:
       url: /platform/turtlebot3/compatible_devices/#compatible-devices
       children:
       - title: "Computer"
-        url: /platform/turtlebot3/hardware_setup/#computer
+        url: /platform/turtlebot3/compatible_devices/#computer
       - title: "Sensors"
-        url: /platform/turtlebot3/hardware_setup/#sensors         
+        url: /platform/turtlebot3/compatible_devices/#sensors         
   - title: "Bringup"
     url: /platform/turtlebot3/bringup/#bringup
     children:
