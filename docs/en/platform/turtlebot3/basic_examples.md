@@ -20,7 +20,7 @@ sidebar:
 {: .notice--warning}
 
 {% capture notice_01 %}
-**NOTE**: 
+**NOTE**:
 - This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 - This instruction is supposed to be running on the remote PC. Follow the instruction on your **Remote PC**.
 {% endcapture %}
@@ -45,7 +45,7 @@ sidebar:
 
 The TurtleBot3 can be moved by [Interactive Markers][interactive_markers] on RViz. You can move the TurtleBot3 to rotate or linear using Interactive Markers.
 
-**[Remote PC]** Open a new terminal and launch the remote file. 
+**[Remote PC]** Open a new terminal and launch the remote file.
 
 **TIP**: Before executing this command, you have to specify the model name of TurtleBot3. The `${TB3_MODEL}` is the name of the model you are using in `burger`,` waffle`, `waffle_pi`. If you want to permanently set the export settings, please refer to [Export TURTLEBOT3_MODEL][export_turtlebot3_model]{: .popup} page.
 {: .notice--success}
@@ -72,9 +72,9 @@ $ rosrun rviz rviz -d `rospack find turtlebot3_example`/rviz/turtlebot3_interact
 
 The TurtleBot3 can be moved or stopped by LDS data. When the TurtleBot3 moves, it stops when it detects an obstacle ahead.
 
-**[Remote PC]** Run the obstacle file.
+**[Remote PC]** Launch the obstacle file.
 ``` bash
-$ rosrun turtlebot3_example turtlebot3_obstacle.py
+$ roslaunch turtlebot3_example turtlebot3_obstacle.launch
 ```
 
 ### [Point Operation](#point-operation)
@@ -90,13 +90,13 @@ $ roslaunch turtlebot3_example turtlebot3_pointop_key.launch
 
 The TurtleBot3 can be moved by custom routes. There are three routes(rectangle, triangle and circle). This example uses action topic. Action client translates patrol data(mode, area, count) to action server. And then action server translates `cmd_vel` to TurtleBot3. Please refer to the above [tutorial video][tutorial_video] for more detailed usage.
 
-**[Remote PC]** Run the patrol server file.
+**[Remote PC]** Launch the patrol server file.
 ``` bash
-$ rosrun turtlebot3_example turtlebot3_server.py
+$ rosrun turtlebot3_example turtlebot3_server
 ```
-**[Remote PC]** Run the patrol client file.
+**[Remote PC]** Launch the patrol client file.
 ``` bash
-$ rosrun turtlebot3_example turtlebot3_client.py
+$ roslaunch turtlebot3_example turtlebot3_client.launch
 ```
 
 [bringup]: /docs/en/platform/turtlebot3/bringup/#bringup
