@@ -23,7 +23,7 @@ sidebar:
 
 ## [Affordable Cost](#affordable-cost)
 
-TurtleBot was developed to meet the cost-conscious needs of schools, laboratories and companies. TurtleBot3 is the most affordable robot among the SLAM-able mobile robots equipped with a 360&deg Laser Distance Sensor LDS-01.
+TurtleBot was developed to meet the cost-conscious needs of schools, laboratories and companies. TurtleBot3 is the most affordable robot among the SLAM-able mobile robots equipped with a 360&deg; Laser Distance Sensor LDS-01.
 
 ## [Small Size](#small-size)
 
