@@ -1,11 +1,11 @@
 ---
 layout: archive
 lang: en
-ref: turtlebot3_notice
+ref: notices
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/turtlebot3/notice/
+permalink: /docs/en/platform/turtlebot3/notices/
 sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
@@ -13,12 +13,15 @@ sidebar:
 
 <div style="counter-reset: h1 1"></div>
 
-# [Notice](#notice)
+# [Notices](#notices)
 
 ![](/assets/images/platform/turtlebot3/overview/turtlebot3_flyer_front_ver1806.png)
 
 ## [Publish](#publish)
 
+  - 05/21/2018 [Reinforcement Learning with TB3!](https://discourse.ros.org/t/tb3-reinforcement-learning-with-tb3/4842)
+  - 05/16/2018 [1 Year of TurtleBot3: Call for Collaboration (by 23 MAY)](https://discourse.ros.org/t/1-year-of-turtlebot3-call-for-collaboration-by-23-may/4792)
+  - 05/11/2018 [TurtleBot3 with OpenManipulator is released](https://discourse.ros.org/t/turtlebot3-with-openmanipulator-is-released/4747)
   - 04/27/2018 [Awesome TurtleBot3 Projects like BallBot Project](https://discourse.ros.org/t/awesome-turtlebot3-projects-like-ballbot-project/4629)
   - 04/20/2018 [TurtleBot3 Automatic Parking under AR detection](https://discourse.ros.org/t/tb3-turtlebot3-automatic-parking-under-ar-detection/4476)
   - 03/29/2018 [TurtleBot3 AutoRace 2017 Tutorial & Source Codes released](https://discourse.ros.org/t/tb3-turtlebot3-autorace-2017-tutorial-source-codes-released/4339)
@@ -63,6 +66,7 @@ sidebar:
 
 ## [News](#news)
 
+  - 02/02/2018 [Video Friday: Waffle Robots, Laser vs. Drone, and TurtleBot Tutorials, IEEE Spectrum](https://spectrum.ieee.org/automaton/robotics/robotics-hardware/video-friday-waffle-robots-laser-vs-drone-turtlebot-tutorials)
   - 11/30/2017 [Robot Gift Guide 2017, IEEE Spectrum](https://spectrum.ieee.org/automaton/robotics/home-robots/robot-gift-guide-2017)
   - 11/07/2017 [10 Memorable ROS-based Robots, Robotics Trends](http://roboticstrends.com/article/10_memorable_ros_based_robots)
   - 11/07/2017 [TurtleBot 3 and Friends: A Lower Barrier of Entry for Exploring A.I. Robotics, ThomasNet](https://news.thomasnet.com/fullstory/40007572)
