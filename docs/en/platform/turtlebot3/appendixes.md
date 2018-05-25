@@ -16,22 +16,22 @@ sidebar:
 # [Appendixes](#appendixes)
 
 ## [DYNAMIXEL](#dynamixel)
-- [DYNAMIXEL]
+- [DYNAMIXEL][dynamixel]: Actuator of TurtleBot3
 
 ## [OpenCR1.0](#opencr10)
-- [OpenCR]
+- [OpenCR1.0][opencr]: Embedded Board of TurtleBot3
 
 ## [LDS-01](#lds01)
-- [LDS]
+- [LDS-01][lds]: Lidar Sensor of TurtleBot3
 
 ## [RealSense™](#realsense)
-- [RealSense]
+- [RealSense™][realsense]: Depth Camera of TurtleBot3 Waffle
 
 ## [Raspberry Pi Camera](#raspberry-pi-camera)
-- [Raspberry Pi Camera]
+- [Raspberry Pi Camera][raspberry pi camera]: Camera of TurtleBot3 Waffle Pi
 
-[DYNAMIXEL]: /docs/en/platform/turtlebot3/appendix_dynamixel/
-[OpenCR]: /docs/en/platform/turtlebot3/appendix_opencr1_0/
-[LDS]: /docs/en/platform/turtlebot3/appendix_lds_01/
-[RealSense]: /docs/en/platform/turtlebot3/appendix_realsense/
-[Raspberry Pi Camera]: /docs/en/platform/turtlebot3/appendix_raspi_cam/
+[dynamixel]: /docs/en/platform/turtlebot3/appendix_dynamixel/
+[opencr]: /docs/en/platform/turtlebot3/appendix_opencr1_0/
+[lds]: /docs/en/platform/turtlebot3/appendix_lds_01/
+[realsense]: /docs/en/platform/turtlebot3/appendix_realsense/
+[raspberry pi camera]: /docs/en/platform/turtlebot3/appendix_raspi_cam/
