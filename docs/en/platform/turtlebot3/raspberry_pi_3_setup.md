@@ -118,7 +118,7 @@ $ sudo apt-get install ros-kinetic-rosserial-python ros-kinetic-tf
 **[TurtleBot]** Build packages
 
 ``` bash
-$ cd ~/catkin_ws && catkin_make
+$ cd ~/catkin_ws && catkin_make -j1
 ```
 
 If `catkin_make` command is completed without any errors, the preparation for TurtleBot3 is done.
