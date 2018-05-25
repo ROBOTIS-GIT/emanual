@@ -1,12 +1,12 @@
 
 Profile의 최대 속도를 설정합니다.  
-Profile Velocity(112)는 전류 제어 모드와 속도 제어 모드를 제외한 모든 제어 모드에서 적용 가능합니다.  
+Profile Velocity(112)는 위치 제어 모드와 확장 위치 제어 보드에서만 가능합니다.  
 Profile Velocity(112)는 Velocity Limit(44)보다 클 수 없습니다.  
 참고로 속도 제어 모드에서는 Profile Velocity(112)는 적용되지 않고 Profile Acceleration(108)만 적용됩니다.
 
 |단위|범위|상세 설명|
 | :---: | :---: | :---: |
-| 0.229 rpm | 0 ~ Velocity Limit(44) | Profile Velocity(112)이 '0'인 경우, 무한대 속도를 뜻합니다. |
+| 0.229 [rev/min] | 0 ~ Velocity Limit(44) | Profile Velocity(112)이 '0'인 경우, 무한대 속도를 뜻합니다. |
 
 Profile이란 모터 구동 시 급격하게 변하는 속도와 가속도를 조절함으로써 진동, 소음 및 모터의 부하를 줄이는 가감속 제어 방법입니다.  
 일반적으로 속도에 근거하여 가감속을 제어하기 때문에 Velocity Profile이라고 불립니다.  

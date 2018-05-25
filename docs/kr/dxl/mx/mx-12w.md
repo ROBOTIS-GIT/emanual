@@ -19,26 +19,26 @@ sidebar:
 
 | 항목           | 내용    |
 | :------------- | :------------- |
-|MCU | ST CORTEX-M3 ( STM32F103C8 @ 72MHZ,32BIT)|
-|위치 센서 | Contactless absolute encoder (12BIT,360도) / Maker : ams (www.ams.com), Part No : AS5045|
+|MCU | ST CORTEX-M3 (STM32F103C8 @ 72MHZ, 32BIT)|
+|위치 센서 | Contactless absolute encoder (12BIT, 360 [°]) / Maker : ams (www.ams.com), Part No : AS5045|
 |모터 | Cored|
-| 통신속도       | 8000 bps ~ 4.5 Mbps       |
+| 통신속도       | 8,000 [bps] ~ 4.5 [Mbps]       |
 |제어 알고리즘 | PID CONTROL |
-| 최소 제어각 | 0.088&deg;  |
-| 동작 모드 | 관절 모드 (0° ~ 360°) / 바퀴 모드 (무한 회전)|
-| 무게 | 54.6g |
-| 크기 | 32mm x 50mm x 40mm |
+| 최소 제어각 | 0.088 [&deg;]  |
+| 동작 모드 | 관절 모드 (0 ~ 360 [°]) / 바퀴 모드 (무한 회전)|
+| 무게 | 54.6 [g] |
+| 크기 | 32 x 50 x 40 [mm] |
 | 기어비 | 32 : 1  |
-| No Load Speed | 470rpm (at 12V) |
-| 동작 온도 | -5&deg;C ~ +70&deg;C |
-| 사용 전압 | 10 ~ 14.8V (**권장 전압 : 12V**) |
+| No Load Speed | 470 [rev/min] (at 12V) |
+| 동작 온도 | -5 ~ +70 [&deg;C] |
+| 사용 전압 | 10 ~ 14.8 [V] (**권장 전압 : 12 [V]**) |
 | Command Signal | Digital Packet |
 | Protocol Type | Half Duplex Asynchronous Serial Communication<br />(8bit, 1stop, No Parity) |
 | Link (Physical) | TTL Level Multidrop Bus(Daisy Chain Type Connector) |
-| ID | 254 ID (0~253) |
+| ID | 254 ID (0 ~ 253) |
 | Feedback | Position, Temperature, Load, Input Voltage, etc |
 | Material | Engineering Plastic |
-| Standby Current | 60mA |
+| Standby Current | 60 [mA] |
 
 {% include kr/dxl/warning.md %}
 
@@ -110,9 +110,9 @@ Value 값이 250 이상인 경우 :
 
 | Value     | Baud Rate     | 오차     |
 | :------------: | :------------: | :------------: |
-|250|2,250,000|0.000%|
-|251|2,500,000|0.000%|
-|252|3,000,000|0.000%|
+|250|2,250,000|0.000 [%]|
+|251|2,500,000|0.000 [%]|
+|252|3,000,000|0.000 [%]|
 
 ### <a name="return-delay-time"></a>**[Return Delay Time (5)](#return-delay-time-5)**
 {% include kr/dxl/control_table_return_delay_time.md %}
@@ -156,19 +156,19 @@ Value 값이 250 이상인 경우 :
 ### <a name="moving-speed"></a>**[Moving Speed (32)](#moving-speed-32)**
 - 관절 모드, 다중 회전 모드  
   Goal Position으로 이동하는 속도입니다.  
-  0~1023 (0X3FF) 까지 사용되며, 단위는 약 0.916rpm입니다.  
-  0으로 설정하면 속도 제어를 하지 않고 모터의 최대 rpm을 사용한다는 의미입니다.  
-  1023의 경우 약 937.1rpm이 됩니다.  
-  예를 들어, 300으로 설정된 경우 약 274.8rpm입니다.
+  0 ~ 1,023 (0x3FF) 까지 사용되며, 단위는 약 0.916 [rev/min]입니다.  
+  0으로 설정하면 속도 제어를 하지 않고 모터의 최대 속도를 사용한다는 의미입니다.  
+  1,023의 경우 약 937.1 [rev/min]이 됩니다.  
+  예를 들어, 300으로 설정된 경우 약 274.8 [rev/min]입니다.
 
 - 바퀴 모드  
   목표 방향으로 이동하는 속도입니다.  
-  0~2047( 0X7FF)까지 사용되며, 단위는 0.916rpm입니다.  
-  0~1023 범위의 값을 사용하면 CCW방향으로 회전하며 0으로 설정하면 정지합니다.  
-  1024~2047 범위의 값을 사용하면 CW방향으로 회전하며 1024으로 설정하면 정지합니다.  
+  0 ~ 2,047( 0x7FF)까지 사용되며, 단위는 0.916 [rev/min]입니다.  
+  0 ~ 1,023 범위의 값을 사용하면 CCW 방향으로 회전하며 0으로 설정하면 정지합니다.  
+  1,024 ~ 2,047 범위의 값을 사용하면 CW 방향으로 회전하며 1,024으로 설정하면 정지합니다.  
   즉, 10번째 bit가 방향을 제어하는 direction bit가 됩니다.
 
-  `Note` 해당 모델의 최대 rpm을 확인하시기 바랍니다. 최대 rpm 이상을 설정해도 모터는 그 이상의 속도를 낼 수 없습니다.
+  `Note` 해당 모델의 최대 속도를 확인하시기 바랍니다. 최대 속도 이상을 설정해도 모터는 그 이상의 속도를 낼 수 없습니다.
   {: .notice}
 
 ### <a name="torque-limit"></a>**[Torque Limit (34)](#torque-limit-34)**
@@ -179,12 +179,12 @@ Value 값이 250 이상인 경우 :
 
 ### <a name="present-speed"></a>**[Present Speed (38)](#present-speed-38)**
 현재  이동하는 속도입니다.  
-이 값은 0~2047 (0X7FF) 까지 사용됩니다.  
-0~1023 범위의 값이면 CCW방향으로 회전한다는 의미입니다.  
-1024~2047 범위의 값이면 CW방향으로 회전한다는 의미입니다.  
-즉, 10번째 bit가 방향을 제어하는 direction bit가 되며 0과 1024는 같습니다.  
-이 값의 단위는 약 0.916rpm 입니다.  
-예를 들어, 300으로 설정된 경우 CCW방향 약 274.8rpm으로 이동 중이라는 의미입니다
+이 값은 0 ~ 2,047 (0x7FF) 까지 사용됩니다.  
+0 ~ 1,023 범위의 값이면 CCW 방향으로 회전한다는 의미입니다.  
+1,024 ~ 2,047 범위의 값이면 CW 방향으로 회전한다는 의미입니다.  
+즉, 10번째 bit가 방향을 제어하는 direction bit가 되며 0과 1,024는 같습니다.  
+이 값의 단위는 약 0.916 [rev/min] 입니다.  
+예를 들어, 300으로 설정된 경우 CCW방향 약 274.8 [rev/min]으로 이동 중이라는 의미입니다
 
 ### <a name="present-load"></a>**[Present Load (40)](#present-load-40)**
 {% include kr/dxl/control_table_present_load.md %}

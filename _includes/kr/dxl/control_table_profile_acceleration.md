@@ -3,4 +3,4 @@ Profile의 가속도를 설정합니다. Profile Acceleration(108)은 전류 제
 
 |단위|범위|상세 설명|
 | :---: | :---: | :---: |
-| 214.577 Rev/min<sup>2</sup> | 0 ~ Acceleration Limit(40) | Profile Acceleration(108)이 '0'인 경우, 무한대 가속도를 뜻합니다. |
+| 214.577 [rev/min²] | 0 ~ Acceleration Limit(40) | Profile Acceleration(108)이 '0'인 경우, 무한대 가속도를 뜻합니다. |

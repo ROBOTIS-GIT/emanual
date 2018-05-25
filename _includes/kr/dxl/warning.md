@@ -14,7 +14,7 @@
 ![](/assets/images/icon_warning.png)  
 **경고**  
 (상해나 제품 손상의 원인이 됩니다.)
-- 제품의 사용 환경을 준수하세요. (온도 : 5&deg;C ~ 55&deg;C)
+- 제품의 사용 환경을 준수하세요. (온도 : 5 ~ 55 [&deg;C])
 - 작동 중인 제품 내부로 칼날, 압정, 불씨 등을 흡입시키지 마세요.
 {% endcapture %}
 <div class="notice--warning">{{ dxl_caution | markdownify }}</div>
