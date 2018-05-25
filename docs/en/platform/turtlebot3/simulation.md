@@ -23,21 +23,13 @@ sidebar:
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
 {% capture notice_02 %}
-**TIP**:
-- We are happy to announce a new ROS book: “ROS Robot Programming, A Handbook is written by TurtleBot3 Developers”. Now, this book has been published English and Chinese versions. This book contains the following:
-  - ROS Kinetic Kame: Basic concept, instructions and tools
-  - How to use sensor and actuator packages on ROS
-  - Embedded board for ROS: OpenCR
-  - SLAM & Navigation with TurtleBot3
-  - How to program a delivery robot using ROS Java
-  - OpenManipulator simulation using MoveIt! and Gazebo
-- Please refer to this book for more information on ROS, SLAM, and Navigation that are not covered in this e-manual. You can download the [pdf of this book](/docs/en/platform/turtlebot3/learn/#books).
+{% include en/platform/turtlebot3/ros_book_info.md %}
 {% endcapture %}
 <div class="notice--success">{{ notice_02 | markdownify }}</div>
 
 TurtleBot3 supports development environment that can be programmed and developed with a virtual robot in the simulation. There are two development environments to do this, one is using fake node and 3D visualization tool RViz and the other is using the 3D robot simulator Gazebo. 
 
-The fake node method is suitable for testing related to the robot's model and movement, but it can not use sensors. If you need to test SLAM and Navigation, we recommend using Gazebo, which can use sensors such as IMU, LDS, and camera as virtual.
+The fake node method is suitable for testing with the robot model and movement, but it can not use sensors. If you need to test SLAM and Navigation, we recommend using Gazebo, which can use sensors such as IMU, LDS, and camera in the simulation.
 
 ## [TurtleBot3 Simulation using Fake Node](#turtlebot3-simulation-using-fake-node)
 
