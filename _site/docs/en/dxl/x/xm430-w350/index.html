@@ -669,41 +669,6 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <input type="radio" name="sublevel" id="DYNAMIXELPRO Plus Series">
-                    <label for="DYNAMIXELPRO Plus Series">PRO Plus Series</label>
-                    <ul>
-                    
-                      
-                      
-                        <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/dxl/pro_plus/h54-200-s500-r/" class="">H54-200-S500-R</a>
-                        </li>
-                      
-                    
-                      
-                      
-                        <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/dxl/pro_plus/h54-100-s500-r/" class="">H54-100-S500-R</a>
-                        </li>
-                      
-                    
-                      
-                      
-                        <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/dxl/pro_plus/h42-20-s300-r/" class="">H42-20-S300-R</a>
-                        </li>
-                      
-                    
-                    </ul>
-                  </li>
-                
-              
-            
-              
-
-              
-                
-                  <li class="mobile_depth_2">
                     <a href="http://localhost:4000/docs/en/dxl/protocol1/">Procotol 1.0</a>
                   </li>
                 
@@ -2115,43 +2080,6 @@ $(function() {
                   
                     
                       <a href="http://localhost:4000/docs/en/dxl/pro/l42-10-s300-r/"><font color=#cccccc>*L42-10-S300-R</font></a>
-                    
-                
-              </div>
-              
-
-            </div>
-            
-              <div class="dropdown-content-wrapper">
-              
-
-              
-                
-                <a>PRO Plus Series</a>
-              
-
-              
-              <div class="dropdown-2nd-content">
-                
-                  
-
-                  
-                    
-                      <a href="http://localhost:4000/docs/en/dxl/pro_plus/h54-200-s500-r/">H54-200-S500-R</a>
-                    
-                
-                  
-
-                  
-                    
-                      <a href="http://localhost:4000/docs/en/dxl/pro_plus/h54-100-s500-r/">H54-100-S500-R</a>
-                    
-                
-                  
-
-                  
-                    
-                      <a href="http://localhost:4000/docs/en/dxl/pro_plus/h42-20-s300-r/">H42-20-S300-R</a>
                     
                 
               </div>
@@ -4317,12 +4245,45 @@ $(function() {
   </tbody>
 </table>
 
+<div class="notice--danger">
+<p><img src="/assets/images/icon_warning.png" alt="" /><br />
+<strong>DANGER</strong><br />
+(May cause serious injury or death)</p>
+<ul>
+  <li>Never place items containing water, flammables, and solvents near product.</li>
+  <li>Never place fingers, arms, toes, and other body parts near product during operation.</li>
+  <li>Cut power off if product emits strange odors or smoke.</li>
+  <li>Keep product out of reach of children.</li>
+  <li>Check the power polarity before wiring.</li>
+</ul>
+</div>
+
+<div class="notice--warning">
+<p><img src="/assets/images/icon_warning.png" alt="" /><br />
+<strong>CAUTION</strong><br />
+(May cause injury or damage to product)</p>
+<ul>
+  <li>Do not operate product at temperature below 5 degrees or above 55 degrees.</li>
+  <li>Do not insert sharp blades nor pins during product operation.</li>
+</ul>
+</div>
+
+<div class="notice--danger">
+<p><img src="/assets/images/icon_warning.png" alt="" /><br />
+<strong>ATTENTION</strong><br />
+(May cause injury or damage to product)</p>
+<ul>
+  <li>Do not disassemble or modify product.</li>
+  <li>Do not drop or apply strong shock to product.</li>
+</ul>
+</div>
+
 <h2 id="performance-graph"><a href="#performance-graph">Performance Graph</a></h2>
 <p><img src="/assets/images/dxl/x/xm430_w350_performance_graph.jpg" alt="" /></p>
 
-<p class="notice"><code class="highlighter-rouge">Note</code> The max torque measurement method for the Stall Torque and Performance Graph is different. Stall torque is measured from the max torque that it can reach. This is generally how RC servos measure their torque. For the Performance graph with the N-T curves, it is measured with the load gradually increasing. The motor operation environment is closer to the performance graph, not stall torque method. This is probably why the performance graph is being broadly used in the industrial market. This is why the max torque of the performance grap can actually be less than the stall torque.</p>
+<p class="notice"><strong>NOTE</strong> : The max torque measurement method for the Stall Torque and Performance Graph is different. Stall torque is measured from the max torque that it can reach. This is generally how RC servos measure their torque. For the Performance graph with the N-T curves, it is measured with the load gradually increasing. The motor operation environment is closer to the performance graph, not stall torque method. This is probably why the performance graph is being broadly used in the industrial market. This is why the max torque of the performance grap can actually be less than the stall torque.</p>
 
-<p class="notice--warning"><code class="highlighter-rouge">Caution</code> When connecting to power supply, it is recommended using ROBOTIS controller or SMPS2DYNAMIXEL.
+<p class="notice--warning"><strong>CAUTION</strong> : When connecting to power supply, it is recommended using ROBOTIS controller or SMPS2DYNAMIXEL.
 Do not connect or disconnect DYNAMIXEL when power is being supplied.</p>
 
 <h1 id="control-table"><a href="#control-table">Control Table</a></h1>
@@ -4331,7 +4292,7 @@ Do not connect or disconnect DYNAMIXEL when power is being supplied.</p>
 <h2 id="control-table-data-address"><a href="#control-table-data-address">Control Table, Data, Address</a></h2>
 <p>The Control Table is a structure that consists of multiple Data fields to store status of the DYNAMIXEL or to control the DYNAMIXEL. Users can check current status of the DYNAMIXEL by reading a specific Data from the Control Table with Read Instruction Packets. WRITE Instruction Packets enable users to control the DYNAMIXEL by changing specific Data in the Control Table. The Address is a unique value when accessing a specific Data in the Control Table with Instruction Packets. In order to read or write data, users must designate a specific Address in the Instruction Packet. Please refer to <a href="/docs/en/dxl/protocol2/#status-packet">Protocol 2.0</a> for more details about Instruction Packets.</p>
 
-<p class="notice"><code class="highlighter-rouge">Note</code> Two’s complement is applied for the negative value. For more information, please refer to <a href="https://en.wikipedia.org/wiki/Two%27s_complement">Two’s complement</a> from Wikipedia.</p>
+<p class="notice"><strong>NOTE</strong> : Two’s complement is applied for the negative value. For more information, please refer to <a href="https://en.wikipedia.org/wiki/Two%27s_complement">Two’s complement</a> from Wikipedia.</p>
 
 <h3 id="area-eeprom-ram"><a href="#area-eeprom-ram">Area (EEPROM, RAM)</a></h3>
 <p>The Control Table is divided into 2 Areas. Data in the RAM Area is reset to initial values when the power is reset(Volatile). On the other hand, data in the EEPROM Area is maintained even when the DYNAMIXEL is powered off(Non-Volatile). <strong>Data in the EEPROM Area can only be written to if Torque Enable(64) is cleared to ‘0’(Off).</strong></p>
@@ -5019,11 +4980,11 @@ Do not connect or disconnect DYNAMIXEL when power is being supplied.</p>
   </tbody>
 </table>
 
-<p class="notice--warning"><code class="highlighter-rouge">Caution</code> Protocol 1.0 does not support addresses greater than 256. Therefore, Indirect Address 29 ~ 56 and Indirect Data 29 ~ 56 can only be accessed with Protocol 2.0.</p>
+<p class="notice--warning"><strong>CAUTION</strong> : Protocol 1.0 does not support addresses greater than 256. Therefore, Indirect Address 29 ~ 56 and Indirect Data 29 ~ 56 can only be accessed with Protocol 2.0.</p>
 
 <h2 id="control-table-description"><a href="#control-table-description">Control Table Description</a></h2>
 
-<p class="notice--warning"><code class="highlighter-rouge">Caution</code> Data in the EEPROM Area can only be written when the value of Torque Enable(64) is cleared to ‘0’.</p>
+<p class="notice--warning"><strong>CAUTION</strong> : Data in the EEPROM Area can only be written when the value of Torque Enable(64) is cleared to ‘0’.</p>
 
 <h3 id="model-number0"><a name="model-number"></a><strong><a href="#model-number0">Model Number(0)</a></strong></h3>
 <p>This address stores model number of the DYNAMIXEL.</p>
@@ -5035,7 +4996,7 @@ Do not connect or disconnect DYNAMIXEL when power is being supplied.</p>
 <p>The ID is a unique value in the network to identify each DYNAMIXEL with an Instruction Packet.
 0~252 (0xFC) values can be used as an ID, and 254(0xFE) is occupied as a broadcast ID. The Broadcast ID(254, 0xFE) can send an Instruction Packet to all connected DYNAMIXELs simultaneously.</p>
 
-<p class="notice"><code class="highlighter-rouge">Note</code> Please avoid using an identical ID for multiple DYNAMIXELs. You may face communication failure or may not be able to detect Dynamixels with an identical ID.</p>
+<p class="notice"><strong>NOTE</strong> : Please avoid using an identical ID for multiple DYNAMIXELs. You may face communication failure or may not be able to detect Dynamixels with an identical ID.</p>
 
 <h3 id="baud-rate8"><a name="baud-rate"></a><strong><a href="#baud-rate8">Baud Rate(8)</a></strong></h3>
 <p>Baud Rate determines serial communication speed between a controller and DYNAMIXELs.</p>
@@ -5092,7 +5053,7 @@ Do not connect or disconnect DYNAMIXEL when power is being supplied.</p>
   </tbody>
 </table>
 
-<p class="notice"><code class="highlighter-rouge">Note</code> Less than 3% of the baud rate error margin will not affect to UART communication.</p>
+<p class="notice"><strong>NOTE</strong> : Less than 3% of the baud rate error margin will not affect to UART communication.</p>
 
 <h3 id="return-delay-time9"><a name="return-delay-time"></a><strong><a href="#return-delay-time9">Return Delay Time(9)</a></strong></h3>
 <p>After the DYNAMIXEL receives an Instruction Packet, it delays transmitting the Status Packet for Return Delay Time (9). For instance, if the Return Delay Time(9) is set to ‘10’, the Status Packet will be returned after 20[μsec] when the Instruction Packet is received.</p>
@@ -5185,7 +5146,7 @@ Do not connect or disconnect DYNAMIXEL when power is being supplied.</p>
 
 <div class="notice">
   
-<p><code class="highlighter-rouge">Note</code> Switching Operating Mode will reset gains(PID, Feedfoward) properly to the selected Operating Mode. The profile generator and limits will also be reset.</p>
+<p><strong>NOTE</strong> : Switching Operating Mode will reset gains(PID, Feedfoward) properly to the selected Operating Mode. The profile generator and limits will also be reset.</p>
 <ol>
   <li>Profile Velocity(112), Profile Acceleration(108) : Reset to ‘0’</li>
   <li>Goal PWM(100), Goal Current(102) : Reset to PWM Limit(36), Current Limit(38) respectively</li>
@@ -5196,7 +5157,7 @@ Do not connect or disconnect DYNAMIXEL when power is being supplied.</p>
 
 </div>
 
-<p class="notice"><code class="highlighter-rouge">Note</code> PWM is the abbreviation for Pulse Width Modulation that modulates PWM Duty to control motors. The PWM Control Mode changes pulse width to control average supply voltage to the motor and this technique is widely used in the motor control field. Therefore, PWM Control Mode uses Goal PWM(100) value to control supply voltage for DYNAMIXEL. PWM Control Mode is similar to the Wheel Mode of DYNAMIXEL AX and RX series.</p>
+<p class="notice"><strong>NOTE</strong> : PWM is the abbreviation for Pulse Width Modulation that modulates PWM Duty to control motors. The PWM Control Mode changes pulse width to control average supply voltage to the motor and this technique is widely used in the motor control field. Therefore, PWM Control Mode uses Goal PWM(100) value to control supply voltage for DYNAMIXEL. PWM Control Mode is similar to the Wheel Mode of DYNAMIXEL AX and RX series.</p>
 
 <h3 id="secondaryshadow-id12"><a name="secondary-shadow-id"></a><strong><a href="#secondaryshadow-id-12">Secondary(Shadow) ID(12)</a></strong></h3>
 <p>Set the Dynamixel’s Secondary ID. Secondary ID(12) is a value to identify each Dynamixel, just like the ID(7).
@@ -5268,7 +5229,7 @@ It is recommended to use an identical protocol version for multiple Dynamixels.<
   </tbody>
 </table>
 
-<p class="notice"><code class="highlighter-rouge">Note</code> The protocol 2.0 is greatly enhanced from the protocol 1.0. Accessing some of the Control Table area might be denied if protocol 1.0 is selected. This manual complies with protocol 2.0. Please refer to the <a href="/docs/en/dxl/protocol1/#error">Protocol</a> section of e-Manual for more details about the protocol.</p>
+<p class="notice"><strong>NOTE</strong> : The protocol 2.0 is greatly enhanced from the protocol 1.0. Accessing some of the Control Table area might be denied if protocol 1.0 is selected. This manual complies with protocol 2.0. Please refer to the <a href="/docs/en/dxl/protocol1/#error">Protocol</a> section of e-Manual for more details about the protocol.</p>
 
 <h3 id="homing-offset20"><a name="homing-offset"></a><strong><a href="#homing-offset20">Homing Offset(20)</a></strong></h3>
 <p>Users can adjust the Home position by setting Home Offset(20). The Homing Offset value is added to the Present Position(132).
@@ -5291,7 +5252,7 @@ Present Position(132) = Actual Position + Homing Offset(20).</p>
   </tbody>
 </table>
 
-<p class="notice"><code class="highlighter-rouge">Note</code> In case of the Position Control Mode(Joint Mode) that rotates less than 360 degrees, any invalid Homing Offset(20) values will be ignored(valid range : -1,024 ~ 1,024).</p>
+<p class="notice"><strong>NOTE</strong> : In case of the Position Control Mode(Joint Mode) that rotates less than 360 degrees, any invalid Homing Offset(20) values will be ignored(valid range : -1,024 ~ 1,024).</p>
 
 <h3 id="moving-threshold24"><a name="moving-threshold"></a><strong><a href="#moving-threshold24">Moving Threshold(24)</a></strong></h3>
 <p>This value helps to determine whether the Dynamixel is in motion or not.<br />
@@ -5342,7 +5303,7 @@ For more details, please refer to the <a href="#shutdown63">Shutdown(63)</a> sec
   </tbody>
 </table>
 
-<p class="notice--warning"><code class="highlighter-rouge">Caution</code> Do not set the temperature lower/higher than the default value. When the temperature alarm shutdown occurs, wait 20 minutes to cool the temperature before re-use. Keep using the product when the temperature is high can cause severe damage.</p>
+<p class="notice--warning"><strong>CAUTION</strong> : Do not set the temperature lower/higher than the default value. When the temperature alarm shutdown occurs, wait 20 minutes to cool the temperature before re-use. Keep using the product when the temperature is high can cause severe damage.</p>
 
 <h3 id="minmax-voltage-limit32-34"><a name="max-voltage-limit"></a><a name="min-voltage-limit"></a><strong><a href="#minmax-voltage-limit32-34">Min/Max Voltage Limit(32, 34)</a></strong></h3>
 <p>These values are maximum and minimum operating voltages.
@@ -5401,7 +5362,7 @@ When current input voltage acquired from Present Input Voltage(144) exceeds the 
   </tbody>
 </table>
 
-<p class="notice"><code class="highlighter-rouge">Note</code> Current Limit(38) could be differ by each DYNAMIXEL so please check the Control Table.</p>
+<p class="notice"><strong>NOTE</strong> : Current Limit(38) could be differ by each DYNAMIXEL so please check the Control Table.</p>
 
 <h3 id="acceleration-limit40"><a name="acceleration-limit"></a><strong><a href="#acceleration-limit40">Acceleration Limit(40)</a></strong></h3>
 <p>This value indicates maximum Profile Acceleration(108). Profile Acceleration(108) can’t be configured with any values exceeding Acceleration Limit(40). Profile Acceleration(108) is used in all operating mode except PWM Control Mode in order to generate a target trajectory. For more details, please refer to the Profile Velocity(112).</p>
@@ -5421,7 +5382,7 @@ When current input voltage acquired from Present Input Voltage(144) exceeds the 
   </tbody>
 </table>
 
-<p><code class="highlighter-rouge">Note</code> Bit information of the Error field in the Status Packet is different from protocol 1.0 and protocol 2.0. This manual complies with protocol 2.0. Please refer to the <a href="/docs/en/dxl/protocol1/#error">Protocol</a> section of e-Manual for more details about the protocol.</p>
+<p><strong>NOTE</strong> : Bit information of the Error field in the Status Packet is different from protocol 1.0 and protocol 2.0. This manual complies with protocol 2.0. Please refer to the <a href="/docs/en/dxl/protocol1/#error">Protocol</a> section of e-Manual for more details about the protocol.</p>
 
 <h3 id="velocity-limit44"><a name="velocity-limit"></a><strong><a href="#velocity-limit44">Velocity Limit(44)</a></strong></h3>
 <p>This value indicates maximum velocity of Goal Velocity(104) and Profile Velocity(112). For more details, please refer to the Profile Velocity(112).</p>
@@ -5459,7 +5420,7 @@ When current input voltage acquired from Present Input Voltage(144) exceeds the 
   </tbody>
 </table>
 
-<p class="notice"><code class="highlighter-rouge">Note</code> Max Position Limit(48) and Min Position Limit(52) are only used in Position Control Mode with a single turn.</p>
+<p class="notice"><strong>NOTE</strong> : Max Position Limit(48) and Min Position Limit(52) are only used in Position Control Mode with a single turn.</p>
 
 <h3 id="shutdown63"><a name="shutdown"></a><strong><a href="#shutdown63">Shutdown(63)</a></strong></h3>
 <p>The Dynamixel can protect itself by detecting dangerous situations that could occur during the operation.<br />
@@ -5522,7 +5483,7 @@ The followings are detectable situations.</p>
 </table>
 
 <div class="notice">
-<p><code class="highlighter-rouge">Note</code> If Shutdown occurs, use below method to reboot Dynamixels.</p>
+<p><strong>NOTE</strong> : If Shutdown occurs, use below method to reboot Dynamixels.</p>
 <ol>
   <li>H/W REBOOT : Turn off the power and turn on again</li>
   <li>S/W REBOOT : Transmit REBOOT Instruction (For more details, please refer to the [Reboot] section of Protocol e-Manual.)</li>
@@ -5553,7 +5514,7 @@ The followings are detectable situations.</p>
   </tbody>
 </table>
 
-<p class="notice"><code class="highlighter-rouge">Note</code> Present Position(132) can be reset when Operating Mode(11) and Torque Enable(64) are updated. For more details, please refer to the Homing Offset(20) and Present Position(132).</p>
+<p class="notice"><strong>NOTE</strong> : Present Position(132) can be reset when Operating Mode(11) and Torque Enable(64) are updated. For more details, please refer to the Homing Offset(20) and Present Position(132).</p>
 
 <h3 id="led65"><a name="led"></a><strong><a href="#led65">LED(65)</a></strong></h3>
 <p>Turn on or turn off the LED on Dynamixel.</p>
@@ -5607,7 +5568,7 @@ The followings are detectable situations.</p>
   </tbody>
 </table>
 
-<p class="notice"><code class="highlighter-rouge">Note</code> If the ID of Instruction Packet is set to Broad Cast ID(0xFE), Status Packet will not be returned for READ and WRITE Instructions regardless of Status Return Level. For more details, please refer to the <code class="highlighter-rouge">Status Packet</code> section for <a href="/docs/en/dxl/protocol1/#status-packet">Protocol 1.0</a> or <a href="/docs/en/dxl/protocol2/#status-packet">Protocol 2.0</a>.</p>
+<p class="notice"><strong>NOTE</strong> : If the ID of Instruction Packet is set to Broad Cast ID(0xFE), Status Packet will not be returned for READ and WRITE Instructions regardless of Status Return Level. For more details, please refer to the <code class="highlighter-rouge">Status Packet</code> section for <a href="/docs/en/dxl/protocol1/#status-packet">Protocol 1.0</a> or <a href="/docs/en/dxl/protocol2/#status-packet">Protocol 2.0</a>.</p>
 
 <h3 id="registered-instruction69"><a name="registered-instruction"></a><strong><a href="#registered-instruction69">Registered Instruction(69)</a></strong></h3>
 
@@ -5630,7 +5591,7 @@ The followings are detectable situations.</p>
   </tbody>
 </table>
 
-<p class="notice"><code class="highlighter-rouge">Note</code> If ACTION instruction is executed, the value will be changed to 0.</p>
+<p class="notice"><strong>NOTE</strong> : If ACTION instruction is executed, the value will be changed to 0.</p>
 
 <h3 id="hardware-error-status70"><a name="hardware-error-status"></a><strong><a href="#hardware-error-status70">Hardware Error Status(70)</a></strong></h3>
 <p>This value indicates hardware error status.
@@ -5694,7 +5655,7 @@ The followings are detectable situations.</p>
 </table>
 
 <div class="notice">
-<p><code class="highlighter-rouge">Note</code> If Shutdown occurs, use below method to reboot Dynamixels.</p>
+<p><strong>NOTE</strong> : If Shutdown occurs, use below method to reboot Dynamixels.</p>
 <ol>
   <li>H/W REBOOT : Turn off the power and turn on again</li>
   <li>S/W REBOOT : Transmit REBOOT Instruction (For more details, please refer to the [Reboot] section of Protocol e-Manual.)</li>
@@ -5747,7 +5708,7 @@ The followings are detectable situations.</p>
 
 <p><img src="/assets/images/dxl/velocity_controller_pi_gain.jpg" alt="" /></p>
 
-<p class="notice"><code class="highlighter-rouge">Note</code> K<sub>a</sub> stands for Anti-windup Gain and ‘β’ is a conversion coefficient of position and velocity that cannot be modified by users. For more details about the PID controller, please refer to the <a href="http://en.wikipedia.org/wiki/PID_controller">PID Controller at wikipedia</a>.</p>
+<p class="notice"><strong>NOTE</strong> : K<sub>a</sub> stands for Anti-windup Gain and ‘β’ is a conversion coefficient of position and velocity that cannot be modified by users. For more details about the PID controller, please refer to the <a href="http://en.wikipedia.org/wiki/PID_controller">PID Controller at wikipedia</a>.</p>
 
 <h3 id="position-pid-gain80-82-84-feedforward-1st2nd-gains88-90"><a name="position-d-gain"></a><a name="position-i-gain"></a><a name="position-p-gain"></a><a name="feedforward-1st-gain"></a><a name="feedforward-2nd-gain"></a><a name="position-pid-gain80-82-84"></a><a name="feedforward-1st2nd-gains88-90"></a><strong>Position PID Gain(80, 82, 84), Feedforward 1st/2nd Gains(88, 90)</strong></h3>
 <p>These Gains are used in Position Control Mode and Extended Position Control Mode. Gains of Dynamixel’s internal controller can be calculated from Gains of the Control Table as shown below. The constant in each equations include sampling time. Position P Gain of Dynamixel’s internal controller is abbreviated to K<sub>P</sub>P and that of the Control Table is abbreviated to K<sub>P</sub>P<sub>(TBL)</sub>.</p>
@@ -5814,9 +5775,9 @@ The followings are detectable situations.</p>
 
 <p><img src="/assets/images/dxl/position_controller_pid_gain.jpg" alt="" /></p>
 
-<p class="notice"><code class="highlighter-rouge">Note</code> In case of PWM Control Mode, both PID controller and Feedforward controller are deactivated while Goal PWM(100) value is directly controlling the motor through an Inverter. In this manner, users can directly control the supplying voltage to the motor.</p>
+<p class="notice"><strong>NOTE</strong> : In case of PWM Control Mode, both PID controller and Feedforward controller are deactivated while Goal PWM(100) value is directly controlling the motor through an Inverter. In this manner, users can directly control the supplying voltage to the motor.</p>
 
-<p class="notice"><code class="highlighter-rouge">Note</code> K<sub>a</sub> is an Anti-windup Gain that cannot be modified by users.</p>
+<p class="notice"><strong>NOTE</strong> : K<sub>a</sub> is an Anti-windup Gain that cannot be modified by users.</p>
 
 <p>Below figure is a block diagram describing the current-based position controller in Current-based Position Control Mode. As Current-based Position Control Mode is quite similar to Position Control Mode, differences will be focused in the following steps. The differences are highlighted with a green marker in the block diagram as well.</p>
 <ol>
@@ -5830,7 +5791,7 @@ The followings are detectable situations.</p>
 
 <p><img src="/assets/images/dxl/current_position_controller_pid_gain.jpg" alt="" /></p>
 
-<p class="notice"><code class="highlighter-rouge">Note</code> K<sub>a</sub> is an Anti-windup Gain that cannot be modified by users. For more details about the PID controller and Feedforward controller, please refer to the <a href="http://en.wikipedia.org/wiki/PID_controller">PID Controller</a> and <a href="https://en.wikipedia.org/wiki/Feed_forward_(control)">Feed Forward</a>.</p>
+<p class="notice"><strong>NOTE</strong> : K<sub>a</sub> is an Anti-windup Gain that cannot be modified by users. For more details about the PID controller and Feedforward controller, please refer to the <a href="http://en.wikipedia.org/wiki/PID_controller">PID Controller</a> and <a href="https://en.wikipedia.org/wiki/Feed_forward_(control)">Feed Forward</a>.</p>
 
 <h3 id="bus-watchdog98"><a name="bus-watchdog"></a><strong><a href="#bus-watchdog98">Bus Watchdog(98)</a></strong></h3>
 <p>Bus Watchdog (98) is available from firmware v38. It is a safety device (Fail-safe) that stops the DYNAMIXEL if the communication between the controller and DYNAMIXEL communication (RS485, TTL) is disconnected due to an unspecified error.
@@ -5874,7 +5835,7 @@ If the Bus Watchdog Error screen appears, the Goal Value (Goal PWM(100), Goal Cu
 Therefore, when a new value is written to the Goal Value, a Range Error will be returned via the Status packet.
 If the value of Bus Watchdog (98) is changed to ‘0’, Bus Watchdog Error will be cleared.</p>
 
-<p class="notice"><code class="highlighter-rouge">Note</code> For details of Range Error, please refer to the protocol of the e-Manual.</p>
+<p class="notice"><strong>NOTE</strong> : For details of Range Error, please refer to the protocol of the e-Manual.</p>
 
 <p>The following are examples of the operation of the Bus Watchdog function.</p>
 <ol>
@@ -5924,7 +5885,7 @@ If the value of Bus Watchdog (98) is changed to ‘0’, Bus Watchdog Error will
   </tbody>
 </table>
 
-<p class="notice"><code class="highlighter-rouge">Note</code> Applying high current to the motor for long period of time might damage the motor.</p>
+<p class="notice"><strong>NOTE</strong> : Applying high current to the motor for long period of time might damage the motor.</p>
 
 <h3 id="goal-velocity104"><a name="goal-velocity"></a><strong><a href="#goal-velocity104">Goal Velocity(104)</a></strong></h3>
 <p>In case of Velocity Control Mode, Goal Velocity(104) can be used to set a target velocity. This value cannot exceed Velocity Limit(44). For now, Goal Velocity(104) is used for target velocity, but this value is not used to limit the velocity.</p>
@@ -5944,9 +5905,9 @@ If the value of Bus Watchdog (98) is changed to ‘0’, Bus Watchdog Error will
   </tbody>
 </table>
 
-<p class="notice"><code class="highlighter-rouge">Note</code> The maximum velocity and maximum torque of DYNAMIXEL is affected by supplying voltage. Therefore, if supplying voltage changes, so does the maximum velocity. This manual complies with recommended supply voltage(12[V]).</p>
+<p class="notice"><strong>NOTE</strong> : The maximum velocity and maximum torque of DYNAMIXEL is affected by supplying voltage. Therefore, if supplying voltage changes, so does the maximum velocity. This manual complies with recommended supply voltage(12[V]).</p>
 
-<p class="notice"><code class="highlighter-rouge">Note</code> If Profile Acceleration(108) and Goal Velocity(104) are modified simultaneously, modified Profile Acceleration(108) will be used to process Goal Velocity(104).</p>
+<p class="notice"><strong>NOTE</strong> : If Profile Acceleration(108) and Goal Velocity(104) are modified simultaneously, modified Profile Acceleration(108) will be used to process Goal Velocity(104).</p>
 
 <h3 id="profile-acceleration108"><a name="profile-acceleration"></a><strong><a href="#profile-acceleration108">Profile Acceleration(108)</a></strong></h3>
 <p>The acceleration of Profile can be set with this value. Profile Acceleration(108) can be used in all control modes except Torque Control Mode. Profile Acceleration(108) cannot exceed Acceleration Limit(40). For more details, please refer to the Profile Velocity(112).</p>
@@ -5995,12 +5956,9 @@ Velocity Control Mode only uses Profile Acceleration(108) instead of Profile Vel
 It is also called Velocity Profile as it controls acceleration and deceleration based on velocity.<br />
 DYNAMIXEL provides 4 different types of Profile.<br />
 The following explains 4 Profiles and how to select them.<br />
-Profiles are usually selected by a combination of Profile Velocity(112) and Profile Acceleration(108).<br />
-Triangular and Trapezoidal Profiles exceptionally consider total travel distance(ΔPos, the distance difference between target position and current position) as an additional factor.<br />
-For convenience, Profile Velocity(112) is abbreviated to V<sub>PRFL</sub> and Profile Acceleration(108) is abbreviated to A<sub>PRFL</sub>.<br />
-‘X’ stands for “Don’t Care” case.</p>
+Profiles are usually selected by a combination of Profile Velocity(112) and Profile Acceleration(108).</p>
 
-<p><img src="/assets/images/dxl/dxl_profiles.jpg" alt="" /></p>
+<p><img src="/assets/images/dxl/x/profile_types.png" alt="" /></p>
 
 <p>When given Goal Position(116), Dynamixel’s profile creates target velocity trajectory based on current velocity(initial velocity of the Profile).<br />
 When Dynamixel receives updated target position from a new Goal Position(116) while it is moving toward the previous Goal Position(116), velocity smoothly varies for the new target velocity trajectory.<br />
@@ -6015,7 +5973,6 @@ The following explains how Profile processes Goal Position(116) instruction in P
   <li>Selected Profile type is stored at Moving Status(123).(Refer to the Moving Status(123))</li>
   <li>Dynamixel is driven by the calculated target trajectory from Profile.</li>
   <li>Target velocity trajectory and target position trajectory from Profile are stored at Velocity Trajectory(136) and Position Trajectory(140) respectively.</li>
-  <li>V<sub>PRFL_TRI</sub> of ③ and Travel time(t3) to reach Goal Position(116) is calculated as below.</li>
 </ol>
 
 <table>
@@ -6035,23 +5992,17 @@ The following explains how Profile processes Goal Position(116) instruction in P
       <td style="text-align: left">Rectangular Profile</td>
     </tr>
     <tr>
-      <td style="text-align: left">(V<sub>PRFL</sub>(112) ≠ 0) &amp; (A<sub>PRF</sub>(108) ≠ 0) &amp; (V<sub>PRFL_TRI</sub> ≤ V<sub>PRFL</sub>(112))</td>
-      <td style="text-align: left">Triangular Profile</td>
-    </tr>
-    <tr>
-      <td style="text-align: left">(V<sub>PRFL</sub>(112) ≠ 0) &amp; (A<sub>PRF</sub>(108) ≠ 0) &amp; (V<sub>PRFL_TRI</sub> ＞ V<sub>PRFL</sub>(112))</td>
+      <td style="text-align: left">(V<sub>PRFL</sub>(112) ≠ 0) &amp; (A<sub>PRF</sub>(108) ≠ 0)</td>
       <td style="text-align: left">Trapezoidal Profile</td>
     </tr>
   </tbody>
 </table>
 
-<p><img src="/assets/images/dxl/dxl_velocity_profiles.jpg" alt="" /></p>
-
-<p class="notice"><code class="highlighter-rouge">Note</code> Dynamixel supports Jerk control in order to minimize dramatic change of acceleration. Therefore, actual travel time by the target trajectory of Profile could be longer than t3(t4 of above figure).</p>
+<p><img src="/assets/images/dxl/x/velocity_profile.png" alt="" /></p>
 
 <div class="notice">
   
-<p><code class="highlighter-rouge">Note</code> Velocity Control Mode only uses Profile Acceleration(108). Step and Trapezoidal Profiles are supported. Velocity Override and Jerk control are supported as well. Acceleration time(t1) can be calculated as below equation.<br />
+<p><strong>NOTE</strong> : Velocity Control Mode only uses Profile Acceleration(108). Step and Trapezoidal Profiles are supported. Velocity Override and Jerk control are supported as well. Acceleration time(t1) can be calculated as below equation.<br />
 t<sub>1</sub> = 64 * {Goal Velocity(104) / Profile Acceleration(108)}</p>
 
 </div>
@@ -6103,7 +6054,7 @@ t<sub>1</sub> = 64 * {Goal Velocity(104) / Profile Acceleration(108)}</p>
   </tbody>
 </table>
 
-<p class="notice"><code class="highlighter-rouge">Note</code> If Profile Acceleration(108), Profile Velocity(112) and Goal Position(116) are modified simultaneously, Goal Position(116) is processed based on updated Profile Acceleration(108) and Profile Velocity(112).</p>
+<p class="notice"><strong>NOTE</strong> : If Profile Acceleration(108), Profile Velocity(112) and Goal Position(116) are modified simultaneously, Goal Position(116) is processed based on updated Profile Acceleration(108) and Profile Velocity(112).</p>
 
 <h3 id="realtime-tick120"><a name="realtime-tick"></a><strong><a href="#realtime-tick120">Realtime Tick(120)</a></strong></h3>
 <p>This value indicates Dynamixel’s time.</p>
@@ -6219,7 +6170,7 @@ t<sub>1</sub> = 64 * {Goal Velocity(104) / Profile Acceleration(108)}</p>
 
 <div class="notice">
   
-<p><code class="highlighter-rouge">Note</code> Present Position(132) represents 4 byte continuous range(-2,147,483,648 ~ 2,147,483,647) when Torque is turned off regardless of Operating Mode(11). However, Present Position(132) will be reset in those cases:</p>
+<p><strong>NOTE</strong> : Present Position(132) represents 4 byte continuous range(-2,147,483,648 ~ 2,147,483,647) when Torque is turned off regardless of Operating Mode(11). However, Present Position(132) will be reset in those cases:</p>
 <ol>
   <li>Present Position(132) is reset with the value within 1 rev (0 ~ 4,095) when Operating Mode(11) is changed to Position Control Mode.</li>
   <li>Present Position(132) is reset with the value within 1 rev (0 ~ 4,095) when Torque is turned on in Position Control Mode.</li>
@@ -6280,9 +6231,9 @@ If specific address is allocated to Indirect Address, Indirect Address inherits 
   </tbody>
 </table>
 
-<p class="notice"><code class="highlighter-rouge">Note</code> In order to allocate Data in the Control Table longer than 2[byte] to Indirect Address, all address must be allocated to Indirect Address like the above Example 2.</p>
+<p class="notice"><strong>NOTE</strong> : In order to allocate Data in the Control Table longer than 2[byte] to Indirect Address, all address must be allocated to Indirect Address like the above Example 2.</p>
 
-<p class="notice"><code class="highlighter-rouge">Note</code> Indirect Address 29 ~ 56 and Indirect Data 29 ~ 56 can only be accessed with Protocol 2.0.</p>
+<p class="notice"><strong>NOTE</strong> : Indirect Address 29 ~ 56 and Indirect Data 29 ~ 56 can only be accessed with Protocol 2.0.</p>
 
 <h1 id="how-to-assemble"><a href="#how-to-assemble">How to Assemble</a></h1>
 
@@ -6293,7 +6244,7 @@ If specific address is allocated to Indirect Address, Indirect Address inherits 
 <p><img src="/assets/images/dxl/x/x-series_cable_assembly.png" alt="" /></p>
 
 <div class="notice--warning">
-<p><code class="highlighter-rouge">Caution</code> Dynamixel X-Series cable assembly through hollow case</p>
+<p><strong>CAUTION</strong> : Dynamixel X-Series cable assembly through hollow case</p>
 <ul>
   <li>Organize the entangled cable before assembling the back case.</li>
   <li>Do not assemble the back case with entangled cable. The entangled cable can be squashed by the case and cause communication error.</li>
@@ -6327,7 +6278,7 @@ Please follow the gear replacement instruction video.</p>
 
 <h1 id="reference"><a href="#reference">Reference</a></h1>
 
-<p class="notice"><code class="highlighter-rouge">Note</code> <a href="http://en.robotis.com/service/compatibility_table.php?cate=dxx">Compatibility Guide</a></p>
+<p class="notice"><strong>NOTE</strong> : <a href="http://en.robotis.com/service/compatibility_table.php?cate=dxx">Compatibility Guide</a></p>
 
 <h2 id="quick-start"><a href="#quick-start">Quick Start</a></h2>
 

@@ -92,12 +92,14 @@ OpenManipulator is composed by [Dynamixel X series](http://emanual.robotis.com/d
 Install dependent packages for the OpenManipulator.
 
 ```
-$ sudo apt-get install ros-kinetic-ros-controllers ros-kinetic-gazebo* ros-kinetic-moveit* ros-kinetic-dynamixel-sdk ros-kinetic-dynamixel-workbench-toolbox ros-kinetic-ar-track-alvar ros-kinetic-industrial-core 
+$ sudo apt-get install ros-kinetic-ros-controllers ros-kinetic-gazebo* ros-kinetic-moveit* ros-kinetic-dynamixel-sdk ros-kinetic-dynamixel-workbench-toolbox ros-kinetic-industrial-core 
 ```
 
 ```
 $ cd ~/catkin_ws/src/
 $ git clone https://github.com/ROBOTIS-GIT/open_manipulator.git
+$ git clone https://github.com/ROBOTIS-GIT/open_manipulator_msgs.git
+$ git clone https://github.com/ROBOTIS-GIT/open_manipulator_simulations.git
 $ cd ~/catkin_ws && catkin_make 
 ```
 
@@ -226,6 +228,8 @@ Install dependent packages
 
   ```
   $ cd ~/catkin_ws/src
+  $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_with_tb3.git
+  $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_with_tb3_msgs.git
   $ git clone https://github.com/ROBOTIS-GIT/turtlebot3.git
   $ cd ~/catkin_ws && catkin_make
   ```
@@ -237,7 +241,7 @@ Load a TurtleBot3 Waffle or Waffle Pi with OpenManipulator on RViz.
 
   ```
   $ export TURTLEBOT3_MODEL=${TB3_MODEL}
-  $ roslaunch open_manipulator_with_tb3 open_manipulator_with_tb3_rviz.launch
+  $ roslaunch open_manipulator_with_tb3_description open_manipulator_with_tb3_rviz.launch
   ```
 
 ![](/assets/images/platform/openmanipulator/TurtleBot3_with_Open_Manipulator.png)
@@ -246,7 +250,7 @@ Load a TurtleBot3 Waffle or Waffle Pi with OpenManipulator on RViz.
 
 ## [Gazebo](#gazebo)
 
-  `Note` This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+  **NOTE** : This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
   {: .notice--info}
 
 ### [Spawn Model](#spawn-model)

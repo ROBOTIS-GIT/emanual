@@ -27,7 +27,7 @@ Congratulations on purchasing DARWIN-OP. DARWIN-OP will lead you to the robot wo
 
 ## [Safety Information](#safety-information)
 
-`Caution` Exercise safety when using this product. Robotis is not responsible, in any ways, for any accidents due to user negligence.
+**CAUTION** : Exercise safety when using this product. Robotis is not responsible, in any ways, for any accidents due to user negligence.
 {: .notice--warning}
  
 - Please read the instructions carefully before getting started.
@@ -73,10 +73,10 @@ Congratulations on purchasing DARWIN-OP. DARWIN-OP will lead you to the robot wo
 
 ![](/assets/images/platform/op/op_battery_charge_02.jpg)
 
-`Caution` If the connection is unstable, please unplug the battery pack completely and plug the battery pack again.
+**CAUTION** : If the connection is unstable, please unplug the battery pack completely and plug the battery pack again.
 {: .notice--warning}
  
-`Caution` Only use the supplied battery charger. Charging the battery pack with any other charger may cause damages.
+**CAUTION** : Only use the supplied battery charger. Charging the battery pack with any other charger may cause damages.
 {: .notice--warning}
 
 ## [Battery Hot Swap](#battery-hot-swap)
@@ -122,7 +122,7 @@ The following procedure takes you through the set up process.
 
     ![](/assets/images/platform/op/op_001.jpg)
 
-  `Caution` Setting DARWIN-OP in any position other than kneeling may cause physical damages.
+  **CAUTION** : Setting DARWIN-OP in any position other than kneeling may cause physical damages.
   {: .notice--warning}
  
 2. If DC power (12V) supply is used to provide power to DARWIN-OP  
@@ -138,7 +138,7 @@ The following procedure takes you through the set up process.
   - Connect the battery pack cable to the battery power jack.
   - Disconnect DC power supply.
  
-  `Note` To prevent unexpected shut down ensure that DARWIN-OP is connected to at least 1 active power source.
+  **NOTE** : To prevent unexpected shut down ensure that DARWIN-OP is connected to at least 1 active power source.
   {: .notice}
  
     ![](/assets/images/platform/op/op_003.jpg)
@@ -174,14 +174,14 @@ To run each mode, press `START` button. After pressing `START` DARWIN-OP will st
 **RESET Button**  
 The `RESET` button resets the actuators, not the entire robot. Please keep in mind that the demo program is still running in the main controller.
 
-`Caution` The RESET button powers off all actuators. It is highly recommended that DARWIN-OP is set at kneeling position before pressing RESET or hold DARWIN-OP by its carrying handle. Pressing the RESET button while DARWIN-OP is moving may result in damages the the actuator(s) or/and robot itself.
+**CAUTION** : The RESET button powers off all actuators. It is highly recommended that DARWIN-OP is set at kneeling position before pressing RESET or hold DARWIN-OP by its carrying handle. Pressing the RESET button while DARWIN-OP is moving may result in damages the the actuator(s) or/and robot itself.
 {: .notice--warning}
  
 ### [Demonstration Ready Mode](#demonstration-ready-mode)
 
 This is the default mode when you turn DARWIN-OP on. LED 1 (red), LED 2 (blue) and LED 3 (green) are on; the head LED changes from green to amber and DARWIN-OP announces "demonstration-ready mode." DARWIN-OP is ready for action.
 
-`Note` DARWIN-OP remains in kneeling position and does not move under this mode. This is the best-suited mode to change power source.
+**NOTE** : DARWIN-OP remains in kneeling position and does not move under this mode. This is the best-suited mode to change power source.
 {: .notice}
  
 If you wish to completely end the demo program without turning DARWIn-OP off please refer here.
@@ -279,7 +279,7 @@ The following procedure to access color settings assumes a connection via wired 
 1. Ensure you have a proper connection with DARWIN-OP.
 2. Open up your computer's web browser.  
 
-  `Note` Please abstain from using Chrome web browser as it can cause memory leaks!
+  **NOTE** : Please abstain from using Chrome web browser as it can cause memory leaks!
   {: .notice}
 
 3. On the address line type: http://192.168.123.1:8080
@@ -351,5 +351,5 @@ DARWIN-OP’s head LED will blink on and off (OS shutdown). Once the head LED st
 
 ![](/assets/images/platform/op/op_035.jpg)
 
-`Note` If you cut the power off while the head LED blink, then DARWIN-OP may have problems turning on the next time.
+**NOTE** : If you cut the power off while the head LED blink, then DARWIN-OP may have problems turning on the next time.
 {: .notice}

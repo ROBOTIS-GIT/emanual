@@ -13,5 +13,5 @@ Goal Position(116)을 통해 목표위치를 설정할 수 있습니다. 모든 
 | :---: | :---: |
 |0.088 [&deg;]/각도값 1| 1 [rev] : 0 ~ 4,095 |
 
-`Note` Profile Acceleration(108), Profile Velocity(112)와 Goal Position(116)을 동시에 변경할 경우, 변경된 Profile Acceleration(108)과 Profile Velocity(112)가 적용되어 Goal Position(116)이 수행됩니다.
+**NOTE** : Profile Acceleration(108), Profile Velocity(112)와 Goal Position(116)을 동시에 변경할 경우, 변경된 Profile Acceleration(108)과 Profile Velocity(112)가 적용되어 Goal Position(116)이 수행됩니다.
 {: .notice}

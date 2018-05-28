@@ -202,7 +202,7 @@ Select the part you want to delete and press the "Delete" button that appears on
 1. When you select a part, the position(POS) and rotation(ROT) coordinates appear on the bottom, and the values can be modified directly in order to move or rotate the part.
 2. The bottom UI displays three axes which are in the same color as the axis that is represents in the gizmo. For example, if you want to move the part in the direction of the blue axis, you can change the value of the Z-axis shown in blue at the bottom UI.
 
-`Caution` When you move a part, only the selected part or the part containing the selected hole will move. Even if the part is connected to other parts using connecting parts(rivets, screws, etc.) it will still move separately, so if you wish to move multiple parts at once you much select them together (use gizmo) or create a group and then move the group.
+**CAUTION** : When you move a part, only the selected part or the part containing the selected hole will move. Even if the part is connected to other parts using connecting parts(rivets, screws, etc.) it will still move separately, so if you wish to move multiple parts at once you much select them together (use gizmo) or create a group and then move the group.
 {: .notice--warning}
 
 ## [Rotate Part](#rotate-part)

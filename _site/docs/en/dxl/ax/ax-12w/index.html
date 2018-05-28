@@ -669,41 +669,6 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <input type="radio" name="sublevel" id="DYNAMIXELPRO Plus Series">
-                    <label for="DYNAMIXELPRO Plus Series">PRO Plus Series</label>
-                    <ul>
-                    
-                      
-                      
-                        <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/dxl/pro_plus/h54-200-s500-r/" class="">H54-200-S500-R</a>
-                        </li>
-                      
-                    
-                      
-                      
-                        <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/dxl/pro_plus/h54-100-s500-r/" class="">H54-100-S500-R</a>
-                        </li>
-                      
-                    
-                      
-                      
-                        <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/dxl/pro_plus/h42-20-s300-r/" class="">H42-20-S300-R</a>
-                        </li>
-                      
-                    
-                    </ul>
-                  </li>
-                
-              
-            
-              
-
-              
-                
-                  <li class="mobile_depth_2">
                     <a href="http://localhost:4000/docs/en/dxl/protocol1/">Procotol 1.0</a>
                   </li>
                 
@@ -2115,43 +2080,6 @@ $(function() {
                   
                     
                       <a href="http://localhost:4000/docs/en/dxl/pro/l42-10-s300-r/"><font color=#cccccc>*L42-10-S300-R</font></a>
-                    
-                
-              </div>
-              
-
-            </div>
-            
-              <div class="dropdown-content-wrapper">
-              
-
-              
-                
-                <a>PRO Plus Series</a>
-              
-
-              
-              <div class="dropdown-2nd-content">
-                
-                  
-
-                  
-                    
-                      <a href="http://localhost:4000/docs/en/dxl/pro_plus/h54-200-s500-r/">H54-200-S500-R</a>
-                    
-                
-                  
-
-                  
-                    
-                      <a href="http://localhost:4000/docs/en/dxl/pro_plus/h54-100-s500-r/">H54-100-S500-R</a>
-                    
-                
-                  
-
-                  
-                    
-                      <a href="http://localhost:4000/docs/en/dxl/pro_plus/h42-20-s300-r/">H42-20-S300-R</a>
                     
                 
               </div>
@@ -4031,13 +3959,46 @@ $(function() {
   </tbody>
 </table>
 
+<div class="notice--danger">
+<p><img src="/assets/images/icon_warning.png" alt="" /><br />
+<strong>DANGER</strong><br />
+(May cause serious injury or death)</p>
+<ul>
+  <li>Never place items containing water, flammables, and solvents near product.</li>
+  <li>Never place fingers, arms, toes, and other body parts near product during operation.</li>
+  <li>Cut power off if product emits strange odors or smoke.</li>
+  <li>Keep product out of reach of children.</li>
+  <li>Check the power polarity before wiring.</li>
+</ul>
+</div>
+
+<div class="notice--warning">
+<p><img src="/assets/images/icon_warning.png" alt="" /><br />
+<strong>CAUTION</strong><br />
+(May cause injury or damage to product)</p>
+<ul>
+  <li>Do not operate product at temperature below 5 degrees or above 55 degrees.</li>
+  <li>Do not insert sharp blades nor pins during product operation.</li>
+</ul>
+</div>
+
+<div class="notice--danger">
+<p><img src="/assets/images/icon_warning.png" alt="" /><br />
+<strong>ATTENTION</strong><br />
+(May cause injury or damage to product)</p>
+<ul>
+  <li>Do not disassemble or modify product.</li>
+  <li>Do not drop or apply strong shock to product.</li>
+</ul>
+</div>
+
 <h1 id="control-table"><a href="#control-table">Control Table</a></h1>
 <p>The Control Table is a structure of data implemented in the DYNAMIXEL. Users can read a specific Data to get status of the DYNAMIXEL with Read Instruction Packets, and modify Data as well to control DYNAMIXEL with WRITE Instruction Packets.</p>
 
 <h2 id="control-table-data-address"><a href="#control-table-data-address">Control Table, Data, Address</a></h2>
 <p>The Control Table is a structure that consists of multiple Data fields to store status of the DYNAMIXEL or to control the DYNAMIXEL. Users can check current status of the DYNAMIXEL by reading a specific Data from the Control Table with Read Instruction Packets. WRITE Instruction Packets enable users to control the DYNAMIXEL by changing specific Data in the Control Table. The Address is a unique value when accessing a specific Data in the Control Table with Instruction Packets. In order to read or write data, users must designate a specific Address in the Instruction Packet. Please refer to [Protocol] for more details about Instruction Packets.</p>
 
-<p class="notice--warning"><code class="highlighter-rouge">Note</code> Two’s complement is applied for the negative value. For more information, please refer to [Two’s complement] from Wikipedia.</p>
+<p class="notice--warning"><strong>NOTE</strong> : Two’s complement is applied for the negative value. For more information, please refer to [Two’s complement] from Wikipedia.</p>
 
 <h3 id="area-eeprom-ram"><a href="#area-eeprom-ram">Area (EEPROM, RAM)</a></h3>
 <p>The Control Table is divided into 2 Areas. Data in the RAM Area is reset to initial values when the DYNAMIXEL is turned on (Volatile). On the other hand, modified data in the EEPROM Area keeps their values even when the DYNAMIXEL is turned off (Non-Volatile). Data in the EEPROM Area can only be changed when the value of Torque Enable(64) is cleared to ‘0’.</p>
@@ -4353,7 +4314,7 @@ $(function() {
 <p>The ID is a unique value in the network to identify each DYNAMIXEL with an Instruction Packet.
 0~252 (0xFC) values can be used as an ID, and 254(0xFE) is occupied as a broadcast ID. The Broadcast ID(254, 0xFE) can send an Instruction Packet to all connected DYNAMIXELs simultaneously.</p>
 
-<p class="notice"><code class="highlighter-rouge">Note</code> Please avoid using an identical ID for multiple DYNAMIXELs. You may face communication failure or may not be able to detect Dynamixels with an identical ID.</p>
+<p class="notice"><strong>NOTE</strong> : Please avoid using an identical ID for multiple DYNAMIXELs. You may face communication failure or may not be able to detect Dynamixels with an identical ID.</p>
 
 <h3 id="baud-rate-4"><a name="baud-rate"></a><strong><a href="#baud-rate-4">Baud Rate (4)</a></strong></h3>
 <p>Baud Rate determines serial communication speed between a controller and DYNAMIXELs.</p>
@@ -4415,7 +4376,7 @@ $(function() {
   </tbody>
 </table>
 
-<p class="notice"><code class="highlighter-rouge">Note</code> Less than 3% of the baud rate error margin will not affect to UART communication.</p>
+<p class="notice"><strong>NOTE</strong> : Less than 3% of the baud rate error margin will not affect to UART communication.</p>
 
 <h3 id="return-delay-time-5"><a name="return-delay-time"></a><strong><a href="#return-delay-time-5">Return Delay Time (5)</a></strong></h3>
 <p>After the DYNAMIXEL receives an Instruction Packet, it delays transmitting the Status Packet for Return Delay Time (9). For instance, if the Return Delay Time(9) is set to ‘10’, the Status Packet will be returned after 20[μsec] when the Instruction Packet is received.</p>
@@ -4486,7 +4447,7 @@ The following two modes can be set pursuant to the value of CW and CCW.</li>
   </tbody>
 </table>
 
-<p class="notice--warning"><code class="highlighter-rouge">Caution</code> Do not set the temperature lower/higher than the default value. When the temperature alarm shutdown occurs, wait 20 minutes to cool the temperature before re-use. Keep using the product when the temperature is high can cause severe damage.</p>
+<p class="notice--warning"><strong>CAUTION</strong> : Do not set the temperature lower/higher than the default value. When the temperature alarm shutdown occurs, wait 20 minutes to cool the temperature before re-use. Keep using the product when the temperature is high can cause severe damage.</p>
 
 <h3 id="minmax-voltage-limit-12-13"><a name="min-voltage-limit"></a><a name="max-voltage-limit"></a><strong><a href="#minmax-voltage-limit-12-13">Min/Max Voltage Limit (12, 13)</a></strong></h3>
 <p>It is the operation range of voltage.</p>
@@ -4545,7 +4506,7 @@ For example, Data 1,023 (0x3FF) means that Dynamixel will use 100% of the maximu
   </tbody>
 </table>
 
-<p class="notice"><code class="highlighter-rouge">Note</code> If the ID of Instruction Packet is set to Broad Cast ID(0xFE), Status Packet will not be returned for READ and WRITE Instructions regardless of Status Return Level. For more details, please refer to the <code class="highlighter-rouge">Status Packet</code> section for <a href="/docs/en/dxl/protocol1/#status-packet">Protocol 1.0</a> or <a href="/docs/en/dxl/protocol2/#status-packet">Protocol 2.0</a>.</p>
+<p class="notice"><strong>NOTE</strong> : If the ID of Instruction Packet is set to Broad Cast ID(0xFE), Status Packet will not be returned for READ and WRITE Instructions regardless of Status Return Level. For more details, please refer to the <code class="highlighter-rouge">Status Packet</code> section for <a href="/docs/en/dxl/protocol1/#status-packet">Protocol 1.0</a> or <a href="/docs/en/dxl/protocol2/#status-packet">Protocol 2.0</a>.</p>
 
 <h3 id="alarm-led17-shutdown18"><a name="alarm-led"></a><a name="shutdown"></a><strong><a href="#alarm-led17-shutdown18">Alarm LED(17), Shutdown(18)</a></strong></h3>
 <p>Dynamixel can protect itself by detecting errors occur during the operation.
@@ -4719,7 +4680,7 @@ If Goal Position is out of the range, Angle Limit Error Bit (Bit 1) of Status Pa
 <p><img src="/assets/images/dxl/dx/dx_series_goal_position.png" alt="" />
 The picture above is the front view of Dynamixel</p>
 
-<p class="notice"><code class="highlighter-rouge">Note</code> If it is set to Wheel Mode, Goal Position value is not used.</p>
+<p class="notice"><strong>NOTE</strong> : If it is set to Wheel Mode, Goal Position value is not used.</p>
 
 <h3 id="moving-speed-32"><a name="moving-speed"></a><strong><a href="#moving-speed-32">Moving Speed (32)</a></strong></h3>
 <p>It is a moving speed to Goal Position.
@@ -4733,7 +4694,7 @@ If it is set to 0, it means the maximum rpm of the motor is used without control
 If it is 1023, it is about 114rpm.<br />
 For example, if it is set to 300, it is about 33.3 rpm.</p>
 
-    <p class="notice"><code class="highlighter-rouge">Note</code> Please check the maximum rpm of the Dynamixel. The motor cannot exceed the maximum rpm with the higher Moving Speed value.</p>
+    <p class="notice"><strong>NOTE</strong> : Please check the maximum rpm of the Dynamixel. The motor cannot exceed the maximum rpm with the higher Moving Speed value.</p>
   </li>
   <li>
     <p><strong>Wheel Mode</strong><br />
@@ -4752,7 +4713,7 @@ For example, if it is set to 512, it means the output is controlled by 50% of th
 For example, if the value is 512, it is about 50%; that means only 50% of the maximum torque will be used.
 If the power is turned on, the value of Max Torque (Address 14, 15) is used as the initial value.</p>
 
-<p class="notice"><code class="highlighter-rouge">Note</code> If the function of Alarm Shutdown is triggered, the motor loses its torque because the value becomes 0. Once error conditions are resolved and this value is changed to the value other than 0, the motor can be operated again.</p>
+<p class="notice"><strong>NOTE</strong> : If the function of Alarm Shutdown is triggered, the motor loses its torque because the value becomes 0. Once error conditions are resolved and this value is changed to the value other than 0, the motor can be operated again.</p>
 
 <h3 id="present-position-36"><a name="present-position"></a><strong><a href="#present-position-36">Present Position (36)</a></strong></h3>
 <p>It is the current position value of Dynamixel.
@@ -4761,7 +4722,7 @@ The range of the value is 0~1023 (0x3FF), and the unit is 0.29 degree.</p>
 <p><img src="/assets/images/dxl/dx/dx_series_goal_position.png" alt="" />
 The picture above is the front view of Dynamixel.</p>
 
-<p class="notice--warning"><code class="highlighter-rouge">Caution</code> If it is set to Wheel Mode, the value cannot be used to measure the moving distance and the rotation frequency.</p>
+<p class="notice--warning"><strong>CAUTION</strong> : If it is set to Wheel Mode, the value cannot be used to measure the moving distance and the rotation frequency.</p>
 
 <h3 id="present-speed-38"><a name="present-speed"></a><strong><a href="#present-speed-38">Present Speed (38)</a></strong></h3>
 <p>It is the present moving speed.
@@ -4813,9 +4774,9 @@ For example, the value is 512, it means the load is detected in the direction of
   </tbody>
 </table>
 
-<p class="notice"><code class="highlighter-rouge">Note</code> CCW Load : Load Direction = 0, CW Load : Load Direction = 1</p>
+<p class="notice"><strong>NOTE</strong> : CCW Load : Load Direction = 0, CW Load : Load Direction = 1</p>
 
-<p class="notice"><code class="highlighter-rouge">Note</code> Present load is an inferred value based on the internal output value; not a measured value using torque sensor, etc. Therefore, it may be inaccurate for measuring weight or torque. It is recommended to use it for predicting the direction and size of the force being applied to the joint.</p>
+<p class="notice"><strong>NOTE</strong> : Present load is an inferred value based on the internal output value; not a measured value using torque sensor, etc. Therefore, it may be inaccurate for measuring weight or torque. It is recommended to use it for predicting the direction and size of the force being applied to the joint.</p>
 
 <h3 id="present-voltage-42"><a name="present-voltage"></a><strong><a href="#present-voltage-42">Present Voltage (42)</a></strong></h3>
 <p>It is the size of the present voltage supplied.
@@ -4847,7 +4808,7 @@ Data value is identical to the actual temperature in Celsius. For example, if th
   </tbody>
 </table>
 
-<p class="notice"><code class="highlighter-rouge">Note</code> If ACTION instruction is executed, the value will be changed to 0.</p>
+<p class="notice"><strong>NOTE</strong> : If ACTION instruction is executed, the value will be changed to 0.</p>
 
 <h3 id="moving46"><a name="moving"></a><strong><a href="#moving46">Moving(46)</a></strong></h3>
 
@@ -4891,7 +4852,7 @@ Data value is identical to the actual temperature in Celsius. For example, if th
   </tbody>
 </table>
 
-<p class="notice--warning"><code class="highlighter-rouge">Caution</code> If Lock is set to 1, the power must be turned off and then turned on again to change into 0.</p>
+<p class="notice--warning"><strong>CAUTION</strong> : If Lock is set to 1, the power must be turned off and then turned on again to change into 0.</p>
 
 <h3 id="punch48"><a name="punch"></a><strong><a href="#punch48">Punch(48)</a></strong></h3>
 <p>Minimum current to drive motor. This value ranges from 0x20 to 0x3FF.</p>
@@ -4930,7 +4891,7 @@ As bearing set is rotating freely, therefore alignment is not required when asse
 
 <h1 id="reference"><a href="#reference">Reference</a></h1>
 
-<p class="notice"><code class="highlighter-rouge">Note</code> <a href="http://en.robotis.com/service/compatibility_table.php?cate=d">Compatibility Guide</a></p>
+<p class="notice"><strong>NOTE</strong> : <a href="http://en.robotis.com/service/compatibility_table.php?cate=d">Compatibility Guide</a></p>
 
 <h2 id="connector-information"><a href="#connector-information">Connector Information</a></h2>
 

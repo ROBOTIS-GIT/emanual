@@ -46,7 +46,7 @@ computational power, sophisticated sensors, high payload capacity, and dynamic m
 ![](/assets/images/platform/thormang3/thormang3_001.jpg)
 
 {% capture package_warning %}
-`Caution` This package does not include the Operating PC and Power Supplies.
+**CAUTION** : This package does not include the Operating PC and Power Supplies.
 Additional components may need to be purchased as described below.
  - When operating THORMANG3 from a distance, one Operating PC is required.
  - When operating THORMANG3 without batteries, two external power supplies (for actuators and internal PCs) are required.

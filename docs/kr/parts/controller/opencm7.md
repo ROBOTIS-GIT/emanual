@@ -215,7 +215,7 @@ Google Play 에서 m.Task2를 설치해 주세요
 |298|2|Port 6 Brightness Sensor Value|6번 포트 조도 센서 값|R|-|
 
 
-`Note` R+ Manager 2.0을 통해서 제어기를 연결하면 컨트롤 테이블을 확인할 수 있습니다.
+**NOTE** : R+ Manager 2.0을 통해서 제어기를 연결하면 컨트롤 테이블을 확인할 수 있습니다.
 {: .notice}
 
 ## [Address 기능 설명](#address-기능-설명)

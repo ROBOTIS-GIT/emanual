@@ -248,7 +248,7 @@ ROBOTIS recommends users to connect with THROMANG3 via SSH client.
 
 7. Melody is played (when the battery is fully charged), press the ESC button and unplug all connectors.
 
-  `Note` Each 4 channels can be charged independently.
+  **NOTE** : Each 4 channels can be charged independently.
   {: .notice}
 
 ## [Repacking](#repacking)

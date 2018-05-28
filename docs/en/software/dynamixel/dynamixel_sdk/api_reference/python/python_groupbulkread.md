@@ -33,15 +33,15 @@ sidebar:
 
 | Methods                                                   | Description                                                |
 |:----------------------------------------------------------|:-----------------------------------------------------------|
-| **[groupBulkRead](#groupbulkread)**                       | Initializes members of packet data pointer struct          |
-| **[groupBulkReadAddParam](#groupbulkreadaddparam)**       | Adds parameter storage for read                            |
-| **[groupBulkReadRemoveParam](#groupbulkreadremoveparam)** | Removes parameter on the storage                           |
-| **[groupBulkReadClearParam](#groupbulkreadclearparam)**   | Clears parameter storage                                   |
-| **[groupBulkReadTxPacket](#groupbulkreadtxpacket)**       | Transmits packet to the number of Dynamixels               |
-| **[groupBulkReadRxPacket](#groupbulkreadrxpacket)**       | receives packet from the number of Dynamixels              |
-| **[groupBulkReadTxRxPacket](#groupbulkreadtxrxpacket)**   | Transmits and receives packet on the number of Dynamixels  |
-| **[groupBulkReadIsAvailable](#groupbulkreadisavailable)** | Checks whether there is available data in the data storage |
-| **[groupBulkReadGetData](#groupbulkreadgetdata)**         | Gets data from received packet                             |
+| **[GroupBulkRead](#groupbulkread)**                       | Initializes members of packet data pointer struct          |
+| **[addParam](#addparam)**                                 | Adds parameter storage for read                            |
+| **[removeParam](#removeparam)**                           | Removes parameter on the storage                           |
+| **[clearParam](#clearparam)**                             | Clears parameter storage                                   |
+| **[txPacket](#txpacket)**                                 | Transmits packet to the number of Dynamixels               |
+| **[rxPacket](#rxpacket)**                                 | receives packet from the number of Dynamixels              |
+| **[txRxPacket](#txrxpacket)**                             | Transmits and receives packet on the number of Dynamixels  |
+| **[isAvailable](#isavailable)**                           | Checks whether there is available data in the data storage |
+| **[getData](#getdata)**                                   | Gets data from received packet                             |
 
 
 - Enumerator
@@ -50,17 +50,17 @@ sidebar:
 
 #### Method References
 
-##### groupBulkRead
+##### GroupBulkRead
 - Syntax
 ``` python
-int groupBulkRead(int port_num, int protocol_version)
+GroupBulkRead(port, ph)
 ```
 - Parameters
 
-| Parameters       | Description      |
-|:-----------------|:-----------------|
-| port_num         | Port number      |
-| protocol_version | Protocol version |
+| Parameters       | Description            |
+|:-----------------|:-----------------------|
+| port             | PortHandler instance   |
+| ph               | PacketHandler instance |
 
 
 - Detailed Description
@@ -68,137 +68,126 @@ int groupBulkRead(int port_num, int protocol_version)
    This function initializes the parameters for packet construction. The function resizes groupData struct and initialzes struct members.
 
 
-##### groupBulkReadAddParam
+##### addParam
 - Syntax
 ``` python
-bool groupBulkReadAddParam(int group_num, int id, int start_address, int data_length)
+addParam(dxl_id, start_address, data_length)
 ```
 - Parameters
 
 | Parameters    | Description   |
 |:--------------|:--------------|
-| group_num     | Group number  |
-| id            | Dynamixel ID  |
+| dxl_id            | Dynamixel ID  |
 | start_address | Start address |
 | data_length   | Data length   |
 
 
 - Detailed Description
 
-   This function pushes `id` to the Dynamixel ID list, and initializes the parameter storage by `setting start_address` and `data_length`.
+   This function pushes `dxl_id` to the Dynamixel ID list, and initializes the parameter storage by `setting start_address` and `data_length`.
 
 
-##### groupBulkReadRemoveParam
+##### removeParam
 - Syntax
 ``` python
-void groupBulkReadRemoveParam(int group_num, int id)
+removeParam(dxl_id)
 ```
 - Parameters
 
-| Parameters | Description  |
-|:-----------|:-------------|
-| group_num  | Group number |
-| id         | Dynamixel ID |
+| Parameters  | Description                               |
+|:------------|:------------------------------------------|
+| dxl_id      | Dynamixel ID                              |
 
 - Detailed Description
 
-   This function removes target `id` in the #`group_num` Dynamixel ID list. It returns false when the class uses Protocol 1.0 .
+   This function removes target list of `dxl_id` from Dynamixel ID list. It returns false when the class uses Protocol 1.0 .
 
 
-##### groupBulkReadClearParam
+##### clearParam
 - Syntax
 ``` python
-void groupBulkReadClearParam(int group_num)
+clearParam()
 ```
 - Parameters
 
-| Parameters | Description  |
-|:-----------|:-------------|
-| group_num  | Group number |
+None
 
 - Detailed Description
 
-   This function clears the #`group_num` Dynamixel ID list. It returns false when the class uses Protocol 1.0, or returns true.
+   This function clears Dynamixel ID list. It returns false when the class uses Protocol 1.0, or returns true.
 
 
-##### groupBulkReadTxPacket
+##### txPacket
 - Syntax
 ``` python
-void groupBulkReadTxPacket(int group_num)
+txPacket()
 ```
 - Parameters
 
-| Parameters | Description  |
-|:-----------|:-------------|
-| group_num  | Group number |
+None
 
 - Detailed Description
 
-   This function transmits the packet by using `BulkReadTx` The communication result and the hardware error are available when the function is terminated.
+   This function transmits the packet by using `bulkReadTx` The communication result and the hardware error are available when the function is terminated.
 
 
-##### groupBulkReadRxPacket
+##### rxPacket
 - Syntax
 ``` python
-void groupBulkReadRxPacket(int group_num)
+rxPacket()
 ```
 - Parameters
 
-| Parameters | Description  |
-|:-----------|:-------------|
-| group_num  | Group number |
+None
 
 - Detailed Description
 
-   This function receives the packet by using `ReadRx` function. The communication result and the hardware error are available when the function is terminated.
+   This function receives the packet by using `readRx` function. The communication result and the hardware error are available when the function is terminated.
 
 
-##### groupBulkReadTxRxPacket
+##### txRxPacket
 - Syntax
 ``` python
-void groupBulkReadTxRxPacket(int group_num)
+txRxPacket()
 ```
 - Parameters
 
-| Parameters | Description  |
-|:-----------|:-------------|
-| group_num  | Group number |
+None
 
 - Detailed Description
 
-   This function transmits and receives the packet by using `groupBulkReadTxPacket` function and `groupBulkReadRxPacket` function. The communication result and the hardware error are available when the function is terminated.
+   This function transmits and receives the packet by using `txPacket` function and `rxPacket` function. The communication result and the hardware error are available when the function is terminated.
 
-##### groupBulkReadIsAvailable
+##### isAvailable
 - Syntax
 ``` python
-bool groupBulkReadIsAvailable(int group_num, int id, int address, int data_length)
+isAvailable(dxl_id, address, data_length)
 ```
 - Parameters
 
-| Parameters | Description                               |
-|:-----------|:------------------------------------------|
-| id         | Dynamixel ID                              |
-| address    | Address on the control table of Dynamixel |
-| data       | Packet data                               |
+| Parameters  | Description                               |
+|:------------|:------------------------------------------|
+| dxl_id      | Dynamixel ID                              |
+| address     | Address on the control table of Dynamixel |
+| data_length | data length                               |
 
 
 - Detailed Description
 
    This function checks whether there is available data in the data storage. It returns false when there is no data from target address, or returns true.
 
-##### groupBulkReadGetData
+##### getData
 - Syntax
 ``` python
-int groupBulkReadGetData(int group_num, int id, int address, int data_length)
+getData(dxl_id, address, data_length)
 ```
 - Parameters
 
 | Parameters  | Description                               |
 |:------------|:------------------------------------------|
-| group_num   | Group number                              |
-| id          | Dynamixel ID                              |
+| dxl_id      | Dynamixel ID                              |
 | address     | Address on the control table of Dynamixel |
-| data_length | Data length                               |
+| data_length | data length                               |
 
 
 - Detailed Description

@@ -180,7 +180,7 @@ The USB2Dynamixel sends ArmSDK commands to the Manipulator. Connect the USB2Dyna
  
 ## [Product Assembly](#product-assembly)
 
-`Note` The content below is based on an **optional** base plate and differs from the actual base plate.
+**NOTE** : The content below is based on an **optional** base plate and differs from the actual base plate.
 {: .notice}
 
 ![](/assets/images/platform/manipulator/manipulator_h_009.jpg)
@@ -209,7 +209,7 @@ The USB2Dynamixel sends ArmSDK commands to the Manipulator. Connect the USB2Dyna
 
 - Connect USB2Dynamixel to the hub with 4P cable; connect another port of the 4P hub to the extension.
 
-`Caution` Connect the USB2Dynamixel to the PC via USB hub. The USB hub acts as an isolator to protect the PC from any possible unexpected surges caused by arm action.
+**CAUTION** : Connect the USB2Dynamixel to the PC via USB hub. The USB hub acts as an isolator to protect the PC from any possible unexpected surges caused by arm action.
 {: .notice--warning}
 
 ## [USB2Dynamixel Setting](#usb2dynamixel-setting)
@@ -222,14 +222,14 @@ The USB2Dynamixel sends ArmSDK commands to the Manipulator. Connect the USB2Dyna
 |RS485|RX, 4-pin MX and Pro; communicate with 4-pin Dynamixel|
 |RS232|CM-5, CM-510; communicate with these controllers. Communicate with other RS-232 devices|
  
-`Note` The manipulator is based on RS-485 communications so make sure to set the dongle to 485.
+**NOTE** : The manipulator is based on RS-485 communications so make sure to set the dongle to 485.
 {: .notice}
 
 ## [Manipulator Test](#manipulator-test)
 
 - Test the arm with Dynamixel Wizard to check for any anomalies. DynamixelWizard is included in RoboPlus suite. RoboPlus can be downloaded from ROBOTIS home page’s Support -> Downloads(http://www.robotis.com/xe/download).  
 
-`Caution` Do NOT download RoboPlus v2.0. Use RoboPlus v1.0 for Manipulator-H.
+**CAUTION** : Do NOT download RoboPlus v2.0. Use RoboPlus v1.0 for Manipulator-H.
 {: .notice--warning}
 
   ![](/assets/images/platform/manipulator/manipulator_h_018.jpg)
@@ -240,7 +240,7 @@ The USB2Dynamixel sends ArmSDK commands to the Manipulator. Connect the USB2Dyna
  
 ### Operating the Manipulator
  
-`Danger` Before starting Dynamixel Wizard ensure the arm is fixed to the base plate; then extend the arm. Otherwise; it may cause physical harm.
+**DANGER** : Before starting Dynamixel Wizard ensure the arm is fixed to the base plate; then extend the arm. Otherwise; it may cause physical harm.
 {: .notice--danger}
 
 - USB2Dynamixel to the PC after wiring is complete. From the PC check the COM port number of USB2Dynamixel.
@@ -254,7 +254,7 @@ The USB2Dynamixel sends ArmSDK commands to the Manipulator. Connect the USB2Dyna
 - Select the Port Settings tab and click on the Advanced button-> change the latency time from 16 (default) to 1.
 - After changing the COM port settings supply the 24V to the arm (of course, this means wiring is complete).
 
-`Caution` Always ensure before powering on. While power is on do not change wires; otherwise it may cause undesired operations.
+**CAUTION** : Always ensure before powering on. While power is on do not change wires; otherwise it may cause undesired operations.
 {: .notice-warning}
  
   ![](/assets/images/platform/manipulator/manipulator_h_023.jpg)
@@ -757,7 +757,7 @@ These 4 functions allows the directional keys to control cursor location.
 
 ## [SimplePtoP](#simpleptop)
 
-`Warning` Product may move fast with this example. When testing this example keep a safe distance while able to cut power off in case of undesired operation.
+**WARNING** : Product may move fast with this example. When testing this example keep a safe distance while able to cut power off in case of undesired operation.
 {: .notice--warning}
 
 SimplePtoP is the end effector’s move point (from P1 to P2).
@@ -852,7 +852,7 @@ MotionPlayer.Set_Time_Period(DEFAULT_Ctrl_TIME_PERIOD);
 
 ## [SimpleIK](#simpleik)
 
-`Warning` Use of this example may pose safety risks. When testing the example keep a safe distance while able to cut power off in case of undesired operation.
+**WARNING** : Use of this example may pose safety risks. When testing the example keep a safe distance while able to cut power off in case of undesired operation.
 {: .notice--warning}
 
 - Allows operation of end effector’s pose via position(X, Y, Z) and orientation(Roll, Pitch, Yaw). The keys for SimpleIK are q, w, e, r, t, y and a, s ,d ,f, g, h.
@@ -942,7 +942,7 @@ if(temp == 'q')
 Despite having errors and not being able to get the IK moving can be allowed. If 'Do you want make the Robot move? (Y/N)' appears onscreen press the y key to move the end
 effector in the X coordinate by +5mm. Then the joints pose(rad) are displayed.
  
-`Warning` Product may go to pose fast after pressing the Y key posing a safety risk. When testing the example keep a safe distance while able to cut power off in case of undesired operation.
+**WARNING** : Product may go to pose fast after pressing the Y key posing a safety risk. When testing the example keep a safe distance while able to cut power off in case of undesired operation.
 {: .notice--warning}
  
 When error is too large and IK is unrealizable 'No IK Solution‘ will be displayed the end effector will remain as is.
@@ -1165,7 +1165,7 @@ This is useful when writing separate code.
 
 When Dynamixel detection fails ensure is properly wired. If problems persists **restore Dynamixel firmware** (shown below).
  
-`Warning` After firmware restoration you will need to set ID and baud rate values again. Always make sure to set USB2Dynamixel switch to “485.”
+**WARNING** : After firmware restoration you will need to set ID and baud rate values again. Always make sure to set USB2Dynamixel switch to “485.”
 {: .notice--warning}
  
 1. Restoring firmware

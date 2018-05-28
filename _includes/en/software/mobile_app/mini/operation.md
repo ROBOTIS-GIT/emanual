@@ -173,7 +173,7 @@ Touch the ‘Edit’ button to add, edit, or delete any voice command.
 
 - Touch the ‘Okay’ button to register the most similar word to the relevant voice command.
 
-`Caution` To delete a command added during the training, delete the voice command first and then re-register.
+**CAUTION** : To delete a command added during the training, delete the voice command first and then re-register.
 {: .notice--warning}
 
 `Voice Recognition Test` To check whether the registered voice command is recognized properly, use the MIC icon under the ‘Edit’ tab to test the word. This does not operate the robot.
@@ -189,7 +189,7 @@ Your robot can be controlled using the various Messengers in your smart device. 
 Messenger, uses the notification bar of your smart device to check whether the command corresponds to the message then runs the command if it is the same.
 Messenger uses the registered voice commands.
 
-`Caution` Your **Accessibility Setting** for the ROBOTIS-MINI  App must be enabled(Please refer to the ROBOTIS-MINI App Accessibility Setting). If your exact message is not displayed in the notification bar, you may not have access to your robot via Messenger.
+**CAUTION** : Your **Accessibility Setting** for the ROBOTIS-MINI  App must be enabled(Please refer to the ROBOTIS-MINI App Accessibility Setting). If your exact message is not displayed in the notification bar, you may not have access to your robot via Messenger.
 {: .notice--warning}
 
 ### Operate with Remocon

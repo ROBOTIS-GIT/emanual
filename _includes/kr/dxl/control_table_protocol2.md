@@ -11,7 +11,7 @@ Address는 Instruction Packet으로 Control Table의 특정 Data를 접근할 �
 다이나믹셀의 Data를 읽거나 쓰기 위해서는 Instruction Packet에 해당 Data의 Address를 지정해 주어야 합니다.  
 Packet에 대한 자세한 내용은 [Protocol 2.0]을 참고해주세요.
 
-`Note` 음수의 표현 방법은 2의 보수(Two’s complement) 규칙을 따릅니다. 2의 보수에 대한 자세한 설명은 위키피디아의 [Two's complement]를 참고하세요.
+**NOTE** : 음수의 표현 방법은 2의 보수(Two’s complement) 규칙을 따릅니다. 2의 보수에 대한 자세한 설명은 위키피디아의 [Two's complement]를 참고하세요.
 {: .notice}
 
 ### [영역 (EEPROM, RAM)](#영역-eeprom-ram)

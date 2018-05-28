@@ -6,5 +6,5 @@
 | :---: | :---: |
 |0.088 [&deg;]|0 ~ 4,095(1 회전)|
 
-`Note` Max Position Limit(48)와 Min Position Limit(52)는 1회전 내에서 제어하는 위치제어 모드(관절 모드)에서만 적용 됩니다.
+**NOTE** : Max Position Limit(48)와 Min Position Limit(52)는 1회전 내에서 제어하는 위치제어 모드(관절 모드)에서만 적용 됩니다.
 {: .notice}

@@ -10,5 +10,5 @@ CW/CCW Angle Limit의 벗어난 값을 사용하게 되면 Status Packet 중 ERR
 다중 회전 모드일 때 값의 범위는 -28,672 ~ 28,672로 늘어나게 되며 0에서부터 CW, CCW 각 방향으로 7바퀴씩 회전 할 수 있습니다.  
 만약 Resolution Divider와 같이 사용한다면 회전 횟수를 더 증가 시킬 수 있습니다.
 
-`Note` 휠 모드로 동작시에는 Goal Position값이 사용되지 않습니다.
+**NOTE** : 휠 모드로 동작시에는 Goal Position값이 사용되지 않습니다.
 {: .notice}

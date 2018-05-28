@@ -255,7 +255,7 @@ External Port 의 용도는 External Port Mode (44, 45, 46, 47) 에 의해서 �
 |Bit 0|Input Voltage Error|인가된 전압이 설정된 동작 전압 범위를 벗어났을 경우|
 
 {% capture rh_p12_rn_01 %}
-`Note` Shutdown 이 발생하면 다음과 같은 방법으로 다이나믹셀을 REBOOT 시킬 수 있습니다.
+**NOTE** : Shutdown 이 발생하면 다음과 같은 방법으로 다이나믹셀을 REBOOT 시킬 수 있습니다.
 1. H/W REBOOT : 전원을 껐다 켜는 방법
 2. S/W REBOOT : REBOOT Instruction Packet 을 전송하는 방법 (자세한 사항은 e-Manual의 [프로토콜]을 참고해 주세요)
 {% endcapture %}
@@ -290,7 +290,7 @@ K<sub>P</sub>D, K<sub>P</sub>I, K<sub>P</sub>P 는 각각 Position D Gain, Posit
 
 ![](/assets/images/platform/rh_p12_rn/rh_p12_rn_control_diagram.png)
 
-`Note` K<sub>P</sub>A는 Anti-windup Gain으로 사용자가 변경할 수 없습니다. PID제어기에 대한 설명은 다음의 사이트를 참고합니다. [PID 제어기(위키피디아)](http://en.wikipedia.org/wiki/PID_controller).
+**NOTE** : K<sub>P</sub>A는 Anti-windup Gain으로 사용자가 변경할 수 없습니다. PID제어기에 대한 설명은 다음의 사이트를 참고합니다. [PID 제어기(위키피디아)](http://en.wikipedia.org/wiki/PID_controller).
 {: .notice}
 
 ### <a name="goal-position">**[Goal Position(596)](#goal-position596)**
@@ -310,7 +310,7 @@ Goal Velocity(600)가 ‘0’인 경우, Profile 은 비활성화 되며, 속도
 | :---: | :---: |
 | 약 0.114 RPM | -Velocity Limit(32) ~ Velocity Limit(32) |
 
-`Note` 해당 모델의 최대 RPM을 확인하시기 바랍니다. Goal Velocity(600)를 최대 RPM 이상으로 설정해도 모터는 최대 RPM 이상의 속도를 낼 수 없습니다.
+**NOTE** : 해당 모델의 최대 RPM을 확인하시기 바랍니다. Goal Velocity(600)를 최대 RPM 이상으로 설정해도 모터는 최대 RPM 이상의 속도를 낼 수 없습니다.
 {: .notice}
 
 ### <a name="goal-current"></a>**[Goal Current(604)](#goal-current604)**

@@ -21,7 +21,7 @@ The following procedure takes you through the set up process.
 
 ![](/assets/images/platform/op3/op3_010.png)
 
-`Warning` Manually configuring ROBOTIS OP3’s ready pose other than the above pose may cause mechanical damages when posing for initial stance.
+**WARNING** : Manually configuring ROBOTIS OP3’s ready pose other than the above pose may cause mechanical damages when posing for initial stance.
 {: .notice--warning}
 
 ![](/assets/images/platform/op3/op3_011.png)
@@ -39,7 +39,7 @@ If you want to use the battery pack, please follow the below procedure.
 4. Close and secure the compartment door (screw the thumbscrew) afterwards.
 5. Disconnect DC power supply.
 
-`Note` To prevent unexpected shutdown, ensure that ROBOTIS OP3 is connected with at least one active power source.
+**NOTE** : To prevent unexpected shutdown, ensure that ROBOTIS OP3 is connected with at least one active power source.
 {: .notice}
 
 ![](/assets/images/platform/op3/op3_013.png)
@@ -174,7 +174,7 @@ Please perform below procedures in order to shutdown the computer inside ROBOTIS
 
   ![](/assets/images/platform/op3/op3_022.png)
 
-`Note` If power supply is cut off before the blue LED is turned off, ROBOTIS OP3 may have problems in the next startup.
+**NOTE** : If power supply is cut off before the blue LED is turned off, ROBOTIS OP3 may have problems in the next startup.
 {: .notice}
 
 
@@ -426,7 +426,7 @@ Is a unique number to identify Dynamixel.
 Values range from 0 (0x00) to 252 (0xFC), Value 254 (0xFE) is used as the Broadcast ID.  
 If the Broadcast ID is used to transmit Instruction Packet, then it can command to all Dynamixels.  
 
-`Note` Do NOT assign an identical ID for DYNAMIXELs in the same network.
+**NOTE** : Do NOT assign an identical ID for DYNAMIXELs in the same network.
 {: .notice}
 
 #### Baud Rate
@@ -443,7 +443,7 @@ Represents the communication speed. 0 (0x00) to 7 (0x07) can be used for it.
 |  6   | 4,000,000   | 4,000,000    |  0.000 %  |
 |  7   | 4,500,000   | 4,500,000    |  0.000 %  |
 
-`Note` Maximum Baud Rate error of 3% is within the tolerance of UART communication.
+**NOTE** : Maximum Baud Rate error of 3% is within the tolerance of UART communication.
 {: .notice}
 
 #### Return Delay Time
@@ -464,7 +464,7 @@ If an Instruction Packet has a Broadcast ID, Status Packet will not be returned 
 |   1   |           Return only for the READ command           |
 |   2   |               Return for all commands                |
 
-`Note` When Instruction packet is Broadcast ID, Status packet is not returned regardless of Status return level.
+**NOTE** : When Instruction packet is Broadcast ID, Status packet is not returned regardless of Status return level.
 {: .notice}
 
 #### Dynamixel Power

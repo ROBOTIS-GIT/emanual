@@ -54,7 +54,7 @@ sidebar:
     
 2. OpenCM9.04 is mounted onto OpenCM 485 EXP as shown below.
 
-    `Caution` The orientation of the connection must be correct.
+    **CAUTION** : The orientation of the connection must be correct.
     {: .notice--warning}
 
     ![](/assets/images/parts/controller/opencm904/opencm485exp_03.jpg)
@@ -79,7 +79,7 @@ OpenCM 485 EXP supplies 5V from OpenCM9.04 as default. JP1 can be used to determ
  
 OpenCM 485 EXP’s Dynamixel 485 bus operates as a Dynamixel bus using OpenCM9.04’s USART3(Serial3).
 
-`Note` OpenCM9.04’s Dynamixel TTL BUS is connected to USART1(Serial1).
+**NOTE** : OpenCM9.04’s Dynamixel TTL BUS is connected to USART1(Serial1).
 {: .notice}
 
 ![](/assets/images/parts/controller/opencm904/opencm485exp_07.gif)
