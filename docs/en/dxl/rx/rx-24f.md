@@ -15,7 +15,7 @@ sidebar:
 
 > RX-24F
 
-`Warning` RX-24F has been discontinued.
+**WARNING** : RX-24F has been discontinued.
 {: .notice--warning}
 
 # [Specifications](#specifications)
@@ -39,6 +39,8 @@ sidebar:
 | ID                     | 0 ~ 253                                                                     |
 | Feedback               | Position, Temperature, Load, Input Voltage, etc                             |
 | Material               | Full Metal Gear, Engineering Plastic Body                                   |
+
+{% include en/dxl/warning.md %}
 
 {% include en/dxl/control_table_protocol1.md %}
 
@@ -236,7 +238,7 @@ sidebar:
 
 # [Reference](#reference)
 
-`Note` [Compatibility Guide]
+**NOTE** : [Compatibility Guide]
 {: .notice}
 
 ## [Connector Information](#connector-information)

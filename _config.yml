@@ -73,6 +73,7 @@ analytics:
   provider               : "google" # false (default), "google", "google-universal", "custom"
   google:
     tracking_id          : "UA-83196341-13"
+    tracking_id_kr       : "UA-83196341-14"
 
 
 # Site Author
@@ -177,7 +178,7 @@ timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
-plugins:
+plugins_dir:
 #  - jekyll-paginate
   - jekyll-sitemap
   - jekyll-gist

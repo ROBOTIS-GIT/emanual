@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/op3/recovery/
 sidebar:
-  title: ROBOTIS-OP3
+  title: ROBOTIS OP3
   nav: "op3"
 ---
 
@@ -15,30 +15,30 @@ sidebar:
 
 # [Recovery](#recovery)
 
-## [Manual Installation](#manual-installation)
+## [OP3 Manual Installation](#op3-manual-installation)
 
 ### Overview
 This chapter explains how to install software and configure ROBOTIS OP3.
 
-
 ### User Installation  
+
 #### OS Installation  
   OS Installation  
  - Linux Mint 18.1 Xfce
   > Reference : [How to Install Linux Mint]
 
 #### PC Setting
- - WiFi Hotspot
-	1. Click the Network icon from the bottom right corner of the system tray and select "Edit Connections...".
-	2. In the Network Connections window, click Add button.
-	3. In the Choose a Connection Type window, select Wi-Fi from the Hardware group.
-	4. Click Create... button.
-	5. Modify the Connection name to "OP3-Hotspot" in the new window.
-	6. Change the SSID to "ROBOTIS-OP3-share" in the Wi-Fi tab.
-	7. Select Hotspot Mode and click Save button.
-	8. Close the Network Connections window.
-	9. Click the Network icon from the bottom right corner of the system tray and select "Connect to Hidden Wi-Fi Network...".
-	10. Select OP3-Hotspot for the Connection in the Hidden Wi-Fi network and click Connect button.
+- WiFi Hotspot
+ 1. Click the Network icon from the bottom right corner of the system tray and select "Edit Connections...".
+ 2. In the Network Connections window, click Add button.
+ 3. In the Choose a Connection Type window, select Wi-Fi from the Hardware group.
+ 4. Click Create... button.
+ 5. Modify the Connection name to "OP3-Hotspot" in the new window.
+ 6. Change the SSID to "ROBOTIS-OP3-share" in the Wi-Fi tab.
+ 7. Select Hotspot Mode and click Save button.
+ 8. Close the Network Connections window.
+ 9. Click the Network icon from the bottom right corner of the system tray and select "Connect to Hidden Wi-Fi Network...".
+ 10. Select OP3-Hotspot for the Connection in the Hidden Wi-Fi network and click Connect button.
 
 
 - Other Settings
@@ -95,6 +95,15 @@ This chapter explains how to install software and configure ROBOTIS OP3.
                      1. Select Only allow access to specific users
                      2. Select samba user
 
+     - Apache(for web_setting_tool)
+        1. Install web server(APACHE2)
+            ```
+            $ sudo apt install apache2
+            ```
+        2. Check the default page from a web browser  
+            - http://10.42.0.1  
+
+
 
 #### ROS Installation & Environment Setup
 1. **ROS Installation**
@@ -105,18 +114,22 @@ This chapter explains how to install software and configure ROBOTIS OP3.
 
 #### Installing additional applications for ROBOTIS ROS Package   
  Prerequisites for ROBOTIS ROS package  
-  - ROBOTIS-OP3 : libncurses5-dev, v4l-utils
-    ```
-    $ sudo apt install libncurses5-dev
-    ```  
-  - ROBOTIS-Utility : madplay, mpg321  
-    ```
-    $ sudo apt install madplay mpg321
-    ```
-  - ETC : g++, git
-    ```
-    $ sudo apt install g++ git
-    ```  
+ - ROBOTIS-OP3 : libncurses5-dev, v4l-utils
+   ```
+   $ sudo apt install libncurses5-dev v4l-utils
+   ```  
+ - ROBOTIS-ROBOTIS-Optimization : scilab
+   ```
+   $ sudo apt install scilab
+   ```   
+ - ROBOTIS-Utility : madplay, mpg321  
+   ```
+   $ sudo apt install madplay mpg321
+   ```
+ - ETC : g++, git
+   ```
+   $ sudo apt install g++ git
+   ```  
 
 #### Installing ROS packages for ROBOTIS-OP3
 - face_detection  
@@ -154,7 +167,38 @@ This chapter explains how to install software and configure ROBOTIS OP3.
     $ sudo apt install ros-kinetic-qt-ros
     ```      
 
-#### Installing ROBOTIS ROS packages  
+- [humanoid_navigation]  
+    Package for footstep planner.
+    - Install prerequisite packages
+      ```
+      $ sudo apt-get install ros-kinetic-map-server
+      $ sudo apt-get install ros-kinetic-humanoid-nav-msgs
+      $ sudo apt-get install ros-kinetic-nav-msgs
+      $ sudo apt-get install ros-kinetic-octomap
+      $ sudo apt-get install ros-kinetic-octomap-msgs
+      $ sudo apt-get install ros-kinetic-octomap-ros
+      $ sudo apt-get install ros-kinetic-octomap-server
+      ```  
+
+    - Install library from sources
+        * sbpl  
+
+          > Reference : [https://github.com/sbpl/sbpl]
+
+    - Install humanoid_navigation
+        ```
+        $ cd ~/catkin_ws/src
+        $ git clone https://github.com/ROBOTIS-GIT/humanoid_navigation.git
+        $ cd ~/catkin_ws
+        ```  
+    - [rosbridge_server], [web_video_server]    
+      Packages for web_setting_tool  
+      ```
+      $ sudo apt install ros-kinetic-rosbridge-server ros-kinetic-web-video-server
+      ```
+
+#### [Installing ROBOTIS ROS Packages](#installing-robotis-ros-packages)  
+
  - ROBOTIS ROS Packages
    -  [DynamixelSDK] : SDK for Dynamixel  
    -  [ROBOTIS-Framerowk] : The package to use ROS (Robot Operating System) for robots assembled with ROBOTIS products.  
@@ -166,6 +210,7 @@ This chapter explains how to install software and configure ROBOTIS OP3.
    -  [ROBOTIS-OP3-Tools] : This package contains useful tools for ROBOTIS-OP3
    -  [ROBOTIS-OP3-Common]
    -  ROBOTIS-Utility   
+   -  ROBOTIS-Optimization
 
  - How to install ROBOTIS ROS packages
    - Download sources from Github.  
@@ -181,6 +226,7 @@ This chapter explains how to install software and configure ROBOTIS OP3.
       $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Tools.git
       $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Common.git
       $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-Utility.git
+      $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-Optimization.git
       ```
 
    - Build downloaded sources.  
@@ -189,7 +235,18 @@ This chapter explains how to install software and configure ROBOTIS OP3.
       $ catkin_make
       ```
 
-#### ETC Setting  
+#### ETC Setting   
+- Configure web_setting_tool  
+    1. Copy files from ROBOTIS-OP3-Tools folder to the web server folder : github
+        ```
+        $ cd ~/catkin_ws/src/ROBOTIS-OP3-Tools/op3_web_setting
+        $ sudo cp -r ./html /var/www
+        ```   
+    2. Check the default page from a web browser  
+        - http://10.42.0.1  
+        ![](/assets/images/platform/op3/op3_web_setting_01.png)
+    3. [How to use Web Setting Tool]  
+
 - Configure Shutdown Sound  
     1. Create `/etc/init.d/shutdown-snd` file.   
         Create the above file with a text editor.  
@@ -238,40 +295,77 @@ This chapter explains how to install software and configure ROBOTIS OP3.
     1. Go to Start Button -> Settings -> Power Manager.
     2. Go to General -> Buttons -> When power button is pressed and change the option to "Shutdown".    
 
-
 ## [Recovery of ROBOTIS-OP3](#recovery-of-robotis-op3)
 
 ### Overview
 This chapter explains how to recover ROBOTIS-OP3 softwares using recovery USB image.
 
+
 ### CloneZilla recovery  
 Clonezilla is used to recover ROBOTIS-OP3 with the image file in the provided USB.  
 
-> Reference : [e-manual]
+#### How to make a recovery USB media  
+- Format a USB drive(at least 4GB space should be available)  
+- Download the ROBOTIS-OP3 Recovery image  
+  - Latest version : clonezilla-live-ROBOTIS-OP3_Recovery_180402.zip   
+  - `Download` [sourceforge.net]   
+- Extract the compressed file to the root folder of the USB drive. The folder structure looks like below.
+  ```
+  .
+  ├── boot
+  │   └── grub
+  ├── EFI
+  │   ├── boot
+  │   └── images
+  ├── home
+  │   └── partimag
+  │       └── ROBOTIS-OP3_transcend
+  ├── live
+  ├── syslinux
+  └── utils
+  ```
+
+#### How to recover ROBOTIS-OP3
+- Go to boot manager : Press **F10**  
+	![](/assets/images/platform/op3/op3_recovery_01.jpg)  
+- Select the boot device : Recovery USB media  
+	![](/assets/images/platform/op3/op3_recovery_02.jpg)  
+- Select the image : clonezilla live with img ROBOTIS-OP3_Transcend (Default settings, VGA 1024x768)  
+	![](/assets/images/platform/op3/op3_recovery_03.jpg)  
+- Confirm to continue : enter `y`  
+	![](/assets/images/platform/op3/op3_recovery_04.jpg)  
+- Confirm to continue : enter `y`  
+	![](/assets/images/platform/op3/op3_recovery_05.jpg)  
+- Check the progress  
+	![](/assets/images/platform/op3/op3_recovery_06.jpg)  
+- Turn off or reboot ROBOTIS-OP3  
+	![](/assets/images/platform/op3/op3_recovery_08.jpg)  
+
 
 ### File
-* clonezilla-live-ROBOTIS-OP3_Recovery_171013.zip  
-    * [ [Download] ] - sourceforge.net  
-
-
-
+* clonezilla-live-ROBOTIS-OP3_Recovery_180402.zip  
+    * `Download` [sourceforge.net]  
 
 
 [How to Install Linux Mint]: https://www.linuxmint.com/documentation/user-guide/Cinnamon/english_18.0.pdf
-[DynamixelSDK]: https://github.com/ROBOTIS-GIT/DynamixelSDK/wiki
-[ROBOTIS-Framerowk]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/ROBOTIS-Framework-Documents
-[ROBOTIS-Framerowk-msgs]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/ROBOTIS-Framework-Documents
-[ROBOTIS-Math]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/robotis_math
-[ROBOTIS-OP3]: [robotis_op3.md]
-[ROBOTIS-OP3-Demo]: [robotis_op3_demo.md]
-[ROBOTIS-OP3-msgs]: [robotis_op3_msgs.md]
-[ROBOTIS-OP3-Tools]: [robotis_op3_tools.md]
-[ROBOTIS-OP3-Common]: [robotis_op3_common.md]
-[ROS Environment and Network Settings]:OP3_Robot_Operating_System#4_setup.md
-[Setting for automatic startup]:op3_how_to_kill_the_demo_program#31-start-demo-program-on-start.md
+[ROBOTIS-OP3]: /docs/en/platform/op3/robotis_ros_packages/#robotis-op3
+[ROBOTIS-OP3-Demo]: /docs/en/platform/op3/robotis_ros_packages/#robotis-op3-demo
+[ROBOTIS-OP3-msgs]: /docs/en/platform/op3/robotis_ros_packages/#robotis-op3-msgs
+[ROBOTIS-OP3-Tools]: /docs/en/platform/op3/robotis_ros_packages/#robotis-op3-tools
+[ROBOTIS-OP3-Common]: /docs/en/platform/op3/robotis_ros_packages/#robotis-op3-common
+[ROS Installation]: /docs/en/platform/common/op3_robot_operating_system/#how-to-install-ros
+[ROS Environment and Network Settings]: /docs/en/platform/common/op3_robot_operating_system/#setup
+[Setting for automatic startup]: /docs/en/platform/op3/getting_started/#how-to-kill-the-demo-program
+[e-manual]: /docs/en/platform/op3/recovery/#recovery-of-robotis-op3
+[sourceforge.net]: https://sourceforge.net/projects/darwinop/files/Software/Main%20Controller/Recovery%20USB/clonezilla-live-ROBOTIS-OP3_Recovery_180402.zip/download
 
-[e-manual]: http://support.robotis.com/en/product/darwin-op/operating/recovery/clonezilla_recovery.htm
+[DynamixelSDK]: /docs/en/software/robotis_framework_packages/#dynamixelsdk
+[ROBOTIS-Framerowk]: /docs/en/software/robotis_framework_packages/#robotis-framework
+[ROBOTIS-Framerowk-msgs]: /docs/en/software/robotis_framework_packages/#robotis-framework-msgs
+[ROBOTIS-Math]: /docs/en/platform/common/robotis_math/#robotis-math
 
-[Download]: https://downloads.sourceforge.net/project/darwinop/Software/Main%20Controller/Recovery%20USB/clonezilla-live-ROBOTIS-OP3_Recovery_171013.zip?r=https%3A%2F%2Fsourceforge.net%2Fprojects%2Fdarwinop%2Ffiles%2FSoftware%2FMain%2520Controller%2FRecovery%2520USB%2F&ts=1508126998&use_mirror=netix)
-
-[ROS Installation]:http://wiki.ros.org/kinetic/Installation/Ubuntu
+[humanoid_navigation]: /docs/en/platform/thormang3/thormang3_ros_packages/#humanoid_navigation
+[https://github.com/sbpl/sbpl]: https://github.com/sbpl/sbpl
+[rosbridge_server]: http://wiki.ros.org/rosbridge_server
+[web_video_server]: http://wiki.ros.org/web_video_server
+[How to use Web Setting Tool]: /docs/en/platform/op3/tutorials/#how-to-use-web-setting-tool

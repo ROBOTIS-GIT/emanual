@@ -26,19 +26,22 @@
           new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'ar,de,es,fr,hi,ja,ko,pt,ru,sv,th,tr,vi,zh-CN', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, multilanguagePage: true, gaTrack: true, gaId: 'UA-83196341'}, 'google_translate_element');
         }
         </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-        <!-- end of Google Translation -->  
+        <!-- end of Google Translation -->
         {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %}
-        
-        <button class="switch_ko_en" id="switch_ko_en">
-          {% for switch in pages %}
-            {% if page.lang=='kr' %}
-              {% if switch.lang=='en' %}<a href="{{ switch.url | absolute_url }}" style="color: black;">English</a></button>{% else %}{% endif %}
-            {% else %}
-              {% if switch.lang=='kr' %}<a href="{{ switch.url | absolute_url }}" style="color: black;">Korean</a></button>{% else %}{% endif %}
-            {% endif %}
-          {% endfor %}
+
+        {% assign availablelanguage = "N/A" %}
+        {% assign availableurl = null %}
+        {% for available in pages %}
+          {% if page.lang=='kr' %}
+            {% if available.lang=='kr' %}{% elsif available.lang=='en' %}{% assign availableurl = available.url %}{% assign availablelanguage = "English" %}{% else %}{% assign availablelanguage = "N/A" %}{% endif %}
+          {% elsif page.lang=='en' %}
+            {% if available.lang=='en' %}{% elsif available.lang=='kr' %}{% assign availableurl = available.url %}{% assign availablelanguage = "Korean" %}{% else %}{% assign availablelanguage = "N/A" %}{% endif %}
+          {% else %}
+          {% endif %}
+        {% endfor %}
+        <a href="{{ availableurl | absolute_url }}"><button class="switch_ko_en" id="switch_ko_en">{{ availablelanguage }}</button></a>
       </div>
-      
+
       <input class="menu-btn" type="checkbox" id="menu-btn" />
       <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
         <ul class="mobile_nav__items">
@@ -91,7 +94,7 @@
                 {% assign depth2_title=null %}
                 {% assign depth2_url=null %}
               {% endif %}
-              
+
               {% if child.children != null %}
                 {% if depth2_title != null %}
                   <li class="mobile_depth_2">
@@ -215,7 +218,7 @@
                 {% if shoulderurl %}
                   {% if shoulderurl contains "://" %}<a href="{{ shoulderurl }}">{% else %}
                     <a href="{{ site.url }}{{ site.baseurl }}/docs/{{ page.lang }}{{ shoulderurl }}">{% endif %}{% else %}
-                <a>{% endif %}{% if shouldertitle contains '*' %}<font color=#ccc>{{ shouldertitle }}</font>{% else %}{{ shouldertitle }}{% endif %}</a>
+                <a>{% endif %}{% if shouldertitle contains '*' %}<font color=#cccccc>{{ shouldertitle }}</font>{% else %}{{ shouldertitle }}{% endif %}</a>
               {% endif %}
 
               {% if shoulder.children != null %}
@@ -245,7 +248,7 @@
                   {% if kneetitle %}
                     {% if kneeurl %}
                       {% if kneeurl contains "://" %}<a href="{{ kneeurl }}">{% else %}<a href="{{ site.url }}{{ site.baseurl }}/docs/{{ page.lang }}{{ kneeurl }}">{% endif %}{% else %}
-                        <a>{% endif %}{% if kneetitle contains '*' %}<font color=#ccc>{{ kneetitle }}</font>{% else %}{{ kneetitle }}{% endif %}</a>
+                        <a>{% endif %}{% if kneetitle contains '*' %}<font color=#cccccc>{{ kneetitle }}</font>{% else %}{{ kneetitle }}{% endif %}</a>
                     {% endif %}
                 {% endfor %}
               </div>
@@ -259,7 +262,7 @@
         </div>
       {% endfor %}
     </div>
-    
+
     <div>
       <ul id="search_results" style="margin: 0; background-color: #ffebeb"></ul>
     </div>

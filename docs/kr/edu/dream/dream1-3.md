@@ -69,7 +69,7 @@ sidebar:
 [적외선 센서]: /docs/kr/parts/sensor/irss-10/
 [LED 모듈]: /docs/kr/parts/display/lm-10/
 [접촉 센서]: /docs/kr/parts/sensor/ts-10/
-[예제 태스크 코드의 다운로드 방법]: ???
+[예제 태스크 코드의 다운로드 방법]: /docs/kr/faq/download_task_code/
 [DREAM_L3_Orgel_KR.tsk]: http://support.robotis.com/ko/baggage_files/dream/dream_l3_orgel_kr.tsk
 [DREAM_L3_CleanupRobot_KR.tsk]: http://support.robotis.com/ko/baggage_files/dream/dream_l3_cleanuprobot_kr.tsk
 [DREAM_L3_Truck_KR.tsk]: http://support.robotis.com/ko/baggage_files/dream/dream_l3_truck_kr.tsk

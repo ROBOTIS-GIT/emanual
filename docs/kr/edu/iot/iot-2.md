@@ -13,7 +13,7 @@ sidebar:
 
 # [개요](#개요)
 
-**로보티즈 IoT 2단계**는 일반적인 로봇의 형태를 벗어나 실생활에서 사용될 수 있는 사물인터넷(internet of things) 역할을 할 수 있는 장치를 구현한 교육용 솔루션입니다.   
+**로보티즈 IoT 2단계** 는 일반적인 로봇의 형태를 벗어나 실생활에서 사용될 수 있는 사물인터넷(internet of things) 역할을 할 수 있는 장치를 구현한 교육용 솔루션입니다.   
 로보티즈 IoT 2단계는 스마트기기로 코딩이 가능한 로보플러스 태스크2와 각종 센서를 활용하는 하드웨어를 통한 예제별 프로그램 실전학습이 가능한 DIY 교육용 키트입니다.  
 로보티즈 IoT 2단계는 총 12차시로 구성된 교재를 통해 12가지의 사물인터넷 예제를 구현하여 생활 속 장치의 필요성, DIY의 제작 등의 수업을 할 수 있고 스마트기기로 코딩이 가능한 로보플러스 태스크로 순서도 작성 방법, 코딩을 통한 프로그램학습, 응용하기 등의 과정을 제공합니다.   
 로보티즈 IoT 2단계에는 스마트 기기와 무선 통신이 가능한 블루투스 모듈이 포함되어 있습니다.  또한 조도센서, 동작감지센서, 온습도센서, 접촉센서, 자석센서, 감속모터 등이 포함되어 다양한 입출력 기능을 할 수 있습니다.  
@@ -21,6 +21,7 @@ sidebar:
 
 - [로보플러스 IoT 앱 설치 및 예제 실행]  
 - [R+IoT 앱 파라미터 사용법 바로가기]
+- [로보티즈 IoT 2단계 엔트리 교재 다운받기]
 
 # [부품 리스트](부품-리스트)
 
@@ -46,7 +47,7 @@ sidebar:
 
 - R+IoT를 실행하고 제어기의 버튼을 눌러 전원을 켜서 대기합니다. R+ 스크래치에서 해당 예제를 클릭하고 연결이 완료되면 프로그램이 실행됩니다.
 
-`Note` 예제 파일은 [교안예제] 에서 얻을 수 있습니다.  
+**NOTE** : 예제 파일은 [교안예제] 에서 얻을 수 있습니다.  
 {: .notice}  
 
 # [교안예제](#교안예제)
@@ -75,17 +76,18 @@ sidebar:
 |12. 약통 알람|![](/assets/images/edu/iot/iot_l2_12_medicinealarm_KR.png)|- 실습 파일 [Download][IoT_L2_12_MedicineAlarm(p)_KR]<br />- 완성 파일 [Download][IoT_L2_12_MedicineAlarm_KR]|
 
 
-[로보플러스 IoT 앱 설치 및 예제 실행]: ???
-[R+IoT 앱 파라미터 사용법 바로가기]: ???
-[OpenCM7.0]: ???
+[로보플러스 IoT 앱 설치 및 예제 실행]: /docs/kr/software/mobile_app/rplusiot/#r-iot-다운로드설치
+[R+IoT 앱 파라미터 사용법 바로가기]: /docs/kr/software/rplus1/task/task_misc/#스마트앱-파라미터
+[로보티즈 IoT 2단계 엔트리 교재 다운받기]: http://www.robotis.com/service/download.php?no=745
+[OpenCM7.0]: /docs/kr/parts/controller/opencm7/
 [서보모터]: /docs/kr/parts/motor/servo_motor/
 [적외선 센서]: /docs/kr/parts/sensor/irss-10/
 [LED 모듈]: /docs/kr/parts/display/lm-10/
-[스크래치2 오프라인 에디터, R+ 스크래치 설치 및 예제 실행 방법 바로가기]: ???
+[스크래치2 오프라인 에디터, R+ 스크래치 설치 및 예제 실행 방법 바로가기]: /docs/kr/software/mobile_app/rplusiot/#r-iot-다운로드설치
 [교안예제]: #교안예제
 [예제의 실행 방법]: /docs/kr/edu/ollo/bugkit/#태스크-코드-다운로드
-[R+IoT 설치 및 실행 방법 바로가기]: ???
-[R+m.task2 설치 및 실행 방법 바로가기]: ???
+[R+IoT 설치 및 실행 방법 바로가기]: /docs/kr/software/mobile_app/rplusiot/#r-iot-다운로드설치
+[R+m.task2 설치 및 실행 방법 바로가기]: /docs/kr/software/rplus_mobile/mtask20/
 [IoT_L2_1_Hello(p)_KR]: http://support.robotis.com/ko/baggage_files/iot/iot_l2_1_hello(p)_kr.tskx
 [IoT_L2_1_Hello_KR]: http://support.robotis.com/ko/baggage_files/iot/iot_l2_1_hello_kr.tskx
 [IoT_L2_2_MessageSignal(p)_KR]: http://support.robotis.com/ko/baggage_files/iot/iot_l2_2_messagesignal(p)_kr.tskx

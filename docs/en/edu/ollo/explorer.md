@@ -15,7 +15,7 @@ sidebar:
 Create robots using the controllers and sensors.
 Through 12-session curriculum, learn scientific principle and physics theory such as power of robot, usage of sensors, speed and force, walking, and running etc. by experiment.
 
-`Note` For OLLO Explorer, the instructor will download the program.  If you want to download and learn the program for yourself, you must purchase [USB Downloader(LN-101)] separately. If you want to build and program your robots using more peripheral devices, please purchase OLLO [Inventor].
+**NOTE** : For OLLO Explorer, the instructor will download the program.  If you want to download and learn the program for yourself, you must purchase [USB Downloader(LN-101)] separately. If you want to build and program your robots using more peripheral devices, please purchase OLLO [Inventor].
 {: .notice}
 
 # [Part List](#part-list)
@@ -31,7 +31,7 @@ Through 12-session curriculum, learn scientific principle and physics theory suc
 
 For the controller([CM-100]) included with OLLO Explorer, a comprehensive program which can be used without downloading is installed.
 
-`Caution` The comprehensive program in the controller will be overwritten when downloading a program. Therefore, you must download the program using [USB Downloader(LN-101)].
+**CAUTION** : The comprehensive program in the controller will be overwritten when downloading a program. Therefore, you must download the program using [USB Downloader(LN-101)].
 {: .notice--warning}
 
 If the button on the controller is pressed sequentially, the musical notes are played. Depending on the pressed number, the installed program can be selected.
@@ -52,7 +52,7 @@ Please refer to the learning material in the kit for more information.
 |7|Si|E-2<br>Chapter 4|![img_05][img_05]|
 |8|Do|E-3<br>Chapter 1|![img_09][img_09]|
 
-`Note` The example which cannot be selected by the comprehensive program must be downloaded using USB Downloader(LN101).
+**NOTE** : The example which cannot be selected by the comprehensive program must be downloaded using USB Downloader(LN101).
 {: .notice}
 
 # [Download](#download)

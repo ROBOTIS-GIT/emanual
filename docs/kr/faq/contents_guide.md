@@ -17,12 +17,12 @@ sidebar:
   ```
   ---
   layout: archive
-  lang: en    > 영어(en), 한글(kr), 일어(jp), 중국어(cn)
+  lang: kr    > 영어(en), 한글(kr), 일어(jp), 중국어(cn)
   ref: thormang3_getting_started    > 컨텐츠의 주제(각 언어별로 ref가 같아야 함.)
   read_time: true
   share: true
   author_profile: false
-  permalink: /docs/en/platform/thormang3/getting_started/   > /파일위치/파일명/
+  permalink: /docs/kr/platform/thormang3/getting_started/   > /파일위치/파일명/
   sidebar:
     title: THORMANG3    > 제품명
     nav: "thormang3"    > 내비게이션 참조명(navigation.yml파일 참조)
@@ -65,7 +65,7 @@ sidebar:
 ```
 
 ## [글상자](#글상자)
-`Note` 이와 같은 상자에 글을 입력하려면 아래와 같이 사용한다.
+**NOTE** : 이와 같은 상자에 글을 입력하려면 아래와 같이 사용한다.
 {: .notice}
 
 **notice--primary** 다양한 종류의 상자
@@ -84,7 +84,7 @@ sidebar:
 {: .notice--success}
 
 ```
-`Note` 이와 같은 상자에 글을 입력하려면 아래와 같이 사용한다.
+**NOTE** : 이와 같은 상자에 글을 입력하려면 아래와 같이 사용한다.
 {: .notice}
 
 **notice--primary** 다양한 종류의 상자
@@ -104,18 +104,18 @@ sidebar:
 ```
 
 {% capture group_notice_01 %}
-`Note` 여러줄짜리 글상자를 사용하려면 조금 복잡합니다.
+**NOTE** : 여러줄짜리 글상자를 사용하려면 조금 복잡합니다.
 1. 글상자로 묶고자 하는 문단의 첫번째에 "&#123;% capture group_notice_01 %&#125;"를 넣고 마지막 숫자 01은 다른 그룹 글상자의 이름과 겹치지 않게 사용한 그룹 글상자의 숫자만큼 증가시켜줍니다.
 2. 글상자로 묶고자 하는 문단의 마지막 줄에 "&#123;% endcapture %&#125;"를 추가합니다.
 3. 글상자를 넣고자하는 부분에 아래의 코드를 추가하고 글상자의 유형에 따라 notice를 notice--info, notice--warning 등으로 변경한 뒤 group_notice_01의 01을 해당 그룹 글상자의 숫자와 맞춰줍니다.
-4. &lt;div class="notice"&gt;&#123;&#123; group_notice_01 | markdownify &#125;&#125;&lt;/div&gt;&#123;% endcapture %&#125;
+4. &lt;div class="notice"&gt;&#123;&#123; group_notice_01 \| markdownify &#125;&#125;&lt;/div&gt;&#123;% endcapture %&#125;
 {% endcapture %}
 
 <div class="notice">{{ group_notice_01 | markdownify }}</div>
 
 ```
 {% capture group_notice_01 %}
-`Note` 여러줄짜리 예제입니다.
+**NOTE** : 여러줄짜리 예제입니다.
 1. 첫번째 문장
 2. 두번째 문장
 3. 세번째 문장

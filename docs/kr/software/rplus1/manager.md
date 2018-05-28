@@ -19,7 +19,7 @@ sidebar:
 - 제어기 및 주변 장치들의 상태를 점검합니다. [(테스트 기능)]
 - 사용에 필요한 모드 등을 설정할 수 있습니다. (설정 기능)
 
-`Note` 통신이 불안정하다면 전압레벨 차이 일수 있습니다. 연결된 장비 및 PC가 그라운드와 연결되어 있는지 확인해주세요.
+**NOTE** : 통신이 불안정하다면 전압레벨 차이 일수 있습니다. 연결된 장비 및 PC가 그라운드와 연결되어 있는지 확인해주세요.
 {: .notice}
 
 ![img](/assets/images/sw/rplus1/manager/roboplus_manager.png)
@@ -39,7 +39,7 @@ sidebar:
 
 ![img_install](/assets/images/sw/roboplus_install.png)
 
-`Note` 로보플러스를 실행하기 위해선 .NET FrameWork 3.5이상의 버전이 필요 합니다. 로보플러스 설치시 .NET FrameWork 자동설치가 실패할 경우엔 .NET FreameWork를 별도로 설치하세요.
+**NOTE** : 로보플러스를 실행하기 위해선 .NET FrameWork 3.5이상의 버전이 필요 합니다. 로보플러스 설치시 .NET FrameWork 자동설치가 실패할 경우엔 .NET FreameWork를 별도로 설치하세요.
 {: .notice}
 
 ### RoboPlus 설치 실패시
@@ -261,8 +261,6 @@ RoboPlus Manager는 인터넷을 통해 새 버전의 펌웨어를 자동으로 
 왼쪽 창에서는 제어기와 제어기에 연결된 주변장치 목록을 확인할 수 있으며, 오른쪽 창에서는 제어기 관리창을 확인할 수 있습니다.  
 제어기의 펌웨어가 로보플러스 매니저가 가지고있는 펌웨어 버전보다 낮다면, 제어기의 펌웨어를 업데이트 할 수 있습니다. ([제어기 펌웨어 업데이트] 참조)
 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/YurHoS-sSvk" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-
 #### 일반/상세 검색
 
 {% include kr/software/rplus1/general_detail_search.md %}
@@ -295,8 +293,6 @@ RoboPlus Manager는 인터넷을 통해 새 버전의 펌웨어를 자동으로 
 
 왼쪽 창에서는 제어기와 제어기에 연결된 주변장치 목록을 확인할 수 있으며, 오른쪽 창에서는 제어기 관리창을 확인할 수 있습니다.  
 제어기의 펌웨어가 로보플러스 매니저가 가지고있는 펌웨어 버전보다 낮다면, 제어기의 펌웨어를 업데이트 할 수 있습니다. [(제어기 펌웨어 업데이트] 참조)
-
-<iframe width="640" height="360" src="https://www.youtube.com/embed/ZAstC0VRqYA" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
 #### 일반/상세 검색
 
@@ -350,8 +346,6 @@ RoboPlus Manager는 인터넷을 통해 새 버전의 펌웨어를 자동으로 
 
 왼쪽 창에서는 제어기와 제어기에 연결된 주변장치 목록을 확인할 수 있으며, 오른쪽 창에서는 제어기 관리창을 확인할 수 있습니다.  
 제어기의 펌웨어가 로보플러스 매니저가 가지고있는 펌웨어 버전보다 낮다면, 제어기의 펌웨어를 업데이트 할 수 있습니다. [제어기 펌웨어 업데이트] 참조)
-
-<iframe width="640" height="360" src="https://www.youtube.com/embed/w2k7dIKIqB8" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
 #### 일반/상세 검색
 
@@ -430,7 +424,7 @@ RoboPlus Manager는 인터넷을 통해 새 버전의 펌웨어를 자동으로 
 
 ## [다이나믹셀](#다이나믹셀)
 
-`Note` `액츄에이터`는 다이나믹셀 중 모터를 말합니다. 액츄에이터의 종류는 AX, DX, RX, EX, MX, X, Pro 시리즈 등이 있으며, 제어기의 종류에 따라 연결할 수 있는 액츄에이터가 다를 수 있습니다. 
+**NOTE** : `액츄에이터`는 다이나믹셀 중 모터를 말합니다. 액츄에이터의 종류는 AX, DX, RX, EX, MX, X, Pro 시리즈 등이 있으며, 제어기의 종류에 따라 연결할 수 있는 액츄에이터가 다를 수 있습니다. 
 {: .notice}
 
 `AX-S1`은 여러가지 센서가 내장되어 있으며, 로보플러스 매니저를 통해 값을 확인하거나 기능을 설정할 수 있습니다.
@@ -448,10 +442,10 @@ RoboPlus Manager는 인터넷을 통해 새 버전의 펌웨어를 자동으로 
 - 각 장치에서 테스트 및 설정이 가능한 테이블을 볼 수 있습니다. 각 행을 클릭하여 사용자가 손쉽게 테스트 및 설정을 할 수 있는 보조 창을 호출할 수 있습니다. 보조창은 의미를 파악하기 어려운 수치값을, 사용자가 알아보기 쉽게 표현 해 주거나 설정을 쉽게 할 수 있도록 도와줍니다.
 - 위 화면은 '이동 속도'행을 클릭했을 경우 나타나는 화면입니다. 이동 속도 뿐만 아니라 각 행을 클릭했을 때 왼쪽 아래에 적절한 보조 창이 호출됩니다. 다만, 단순히 수치만을 표현하는 경우 보조 창이 뜨지 않을 수 있습니다.
 
-`Note` ① 위치의 ID를 가진 액츄에이터를 더블 클릭하면, 해당 ID를 가진 액츄에이터가 선택됨과 동시에 해당 액츄에이터의 LED가 잠시 깜박거립니다. 현재 관리하고 있는 액츄에이터 위치를 확인할 때 간단히 사용할 수 있습니다.
+**NOTE** : ① 위치의 ID를 가진 액츄에이터를 더블 클릭하면, 해당 ID를 가진 액츄에이터가 선택됨과 동시에 해당 액츄에이터의 LED가 잠시 깜박거립니다. 현재 관리하고 있는 액츄에이터 위치를 확인할 때 간단히 사용할 수 있습니다.
 {: .notice}
 
-`Note` 액츄에이터는 그룹 관리를 할 수 있습니다.
+**NOTE** : 액츄에이터는 그룹 관리를 할 수 있습니다.
 {: .notice}
 
 ### [ID 설정](#id-설정)
@@ -1068,7 +1062,7 @@ AX-S1에는 버저가 장착되어 있습니다. 버저 울림 시간을 설정�
 [제어기별 관리방법]: #제어기
 [펌웨어복구]: #펌웨어-복구
 [OpenCM9.04 펌웨어복구]: /docs/kr/software/opencm_ide/getting_started/#복구-모드
-[CM150, CM200 해결방법]: /docs/kr/parts/controller/cm-150/#???
-[OpenCM9.04 해결방법]: /docs/kr/parts/controller/opencm904/#???
+[CM150, CM200 해결방법]: /docs/kr/faq/usb_driver_install/
+[OpenCM9.04 해결방법]: /docs/kr/software/opencm_ide/getting_started/#소프트웨어-설치
 [제어기 펌웨어 업데이트]: #펌웨어-업데이트
 [Zig2Serial - Zig100 연결하기]: /docs/kr/parts/communication/zig2serial/#사용-방법

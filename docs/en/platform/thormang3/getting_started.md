@@ -19,7 +19,7 @@ sidebar:
 
 Ubuntu 16.04 LTS is installed on PCs in the THORMANG3 and the PC for Remote Control Version.
 
-`Note` [Install Ubuntu Desktop]
+**NOTE** : [Install Ubuntu Desktop]
 {: .notice}
 
 
@@ -75,15 +75,15 @@ This section explains how to configure the network for MPC(Motion PC) and PPC(Pe
 
 ROS(Robot Operating System) is required in order to control THORMANG3. Currently THORMANG3 is developed and tested with Kinetic Kame version of ROS.
 
-`Note` [Install ROS]
+**NOTE** : [Install ROS]
 {: .notice}
 
 ## [ROS Environment Setting](#ros-environment-setting)
 
-`Note` [Environment Setting Reference]
+**NOTE** : [Environment Setting Reference]
 {: .notice}
 
-`Note` [ROS Network Setup Reference]
+**NOTE** : [ROS Network Setup Reference]
 {: .notice}
 
 ### [Network Setting Example](#network-setting-example)
@@ -151,7 +151,7 @@ Above configuration has to be repeatedly done whenever a new terminal window is 
     $ source ~/.bashrc
     ```
 
-#### Example setting for OPC
+#### [Example setting for OPC](#example-setting-for-opc)
 
 1. Open the bash file with an editor to apply configuration.
     ```
@@ -222,7 +222,7 @@ This section introduces how to install the ROBOTIS ROS Package for THORMANG3.
 - ROBOTIS-THORMANG-OPC : ROS Packages for the Operating PC of THORMANG3
 - ROBOTIS-THORMANG-Common : Common ROS Packages for THORMANG3
 - ROBOTIS-THORMANG-msgs : ROS Messages used in the ROBOTIS THORMANG3 packages
-- ROBOTIS-THORMANG-Too
+- ROBOTIS-THORMANG-Tools
 
 ### [MPC Installation](#mpc-installation)
 
@@ -282,10 +282,10 @@ Install the ROBOTIS ROS Package from the OPC.
 
 2. After installing all dependent packages, go to the workspace and build. Use j1 option when building for the first time.
 
-    `Note` Dependencies : qt-ros, map_server, nav_msgs, humanoid_nav_msgs, sbpl, octomap-ros
+    **NOTE** : Dependencies : qt-ros, map_server, nav_msgs, humanoid_nav_msgs, sbpl, octomap-ros
     {: .notice}
 
-    `Note` sbpl needs to be installed manually. Please follow the [sbpl install instruction].
+    **NOTE** : sbpl needs to be installed manually. Please follow the [sbpl install instruction].
     {: .notice}
 
     ```
@@ -350,11 +350,11 @@ $ cd ~/catkin_ws/src
 $ git clone https://github.com/ktossell/camera_umd
 ```
 
-`Reference` : http://wiki.ros.org/uvc_camera
+`Reference` : [http://wiki.ros.org/uvc_camera]
 {: .notice}
 
 #### realsense
-`Reference` : http://wiki.ros.org/RealSense
+`Reference` : [http://wiki.ros.org/RealSense]
 {: .notice}
 
 
@@ -366,4 +366,6 @@ $ git clone https://github.com/ktossell/camera_umd
 [sbpl install instruction]: https://github.com/sbpl/sbpl
 [Link]: http://techtidings.blogspot.kr/2012/01/problem-with-libglso-on-64-bit-ubuntu.html
 [http://wiki.ros.org/urg_node]:http://wiki.ros.org/urg_node
+[http://wiki.ros.org/RealSense]:http://wiki.ros.org/RealSense
+[http://wiki.ros.org/uvc_camera]:http://wiki.ros.org/uvc_camera
 [http://wiki.ros.org/RealSense]:http://wiki.ros.org/RealSense

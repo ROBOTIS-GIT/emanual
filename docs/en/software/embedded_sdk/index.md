@@ -11,7 +11,6 @@ sidebar:
   nav: "embedded_sdk"
 ---
 
-- [Controller Embedded C]
 - [Dynamixel SDK]
 - [ZIGBEE SDK]
 
@@ -38,9 +37,9 @@ sidebar:
 |CM-Series|O|X|X|O|X|X|X|X|X|X|X|
 |OpenCM/CR|O|O|O|O|O|X|X|X|X|O|X|
 
-- [Download CM-510 SDK]
-- [Download CM-530 SDK]
-- [Download CM-700 SDK]
+- [Download CM-510 SDK], [Embedded C CM-510/700 Manual]
+- [Download CM-530 SDK], [Embedded C CM-530 Manual]
+- [Download CM-700 SDK], [Embedded C CM-510/700 Manual]
 
 # [Wireless Control SDK](#wireless-control-sdk)
 
@@ -64,3 +63,6 @@ sidebar:
 [Download CM-510 SDK]: http://support.robotis.com/en/baggage_files/embeded_c/embeded_c(cm510_v1.02).zip
 [Download CM-530 SDK]: http://support.robotis.com/en/baggage_files/embeded_c/embeddec_c(cm530_v1_02).zip
 [Download CM-700 SDK]: http://support.robotis.com/en/baggage_files/embeded_c/embeded_c(cm700_v1.02).zip
+
+[Embedded C CM-510/700 Manual]: /docs/en/software/embedded_sdk/embedded_c_cm510/
+[Embedded C CM-530 Manual]: /docs/en/software/embedded_sdk/embedded_c_cm530/

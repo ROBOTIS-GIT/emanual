@@ -86,7 +86,7 @@ sidebar:
 
 ### thormang3 sensors (PPC)
 1. Connect to the **PPC**  
-2. Execute [thormang3_sensors.launch] file  
+2. Execute [thormang3_sensors.launch]{: .popup} file  
   ```
   $ roslaunch thormang3_sensors thormang3_sensors.launch
   ```
@@ -102,11 +102,11 @@ Turn on the actuator power before executing THORMANG3 Manager.
   $ sudo bash
   ```
 
-3. Execute [thormang3_manager.launch] file  
+3. Execute [thormang3_manager.launch]{: .popup} file  
   ```bash
   # roslaunch thormang3_manager thormang3_manager.launch
   ```
-  > Reference :: [thormang3_manager]  
+  > Reference : [thormang3_manager]  
 
 4. If program is loaded, torque of the actuator will be turned on.  
 
@@ -122,7 +122,7 @@ Simple demo of the [thormang3_manipulation_module]
 
 #### Install & Build
 
-  `Note` Reference : [PPC Installation]
+  **NOTE** : Reference : [PPC Installation]
   {: .notice}
 
 #### Usage
@@ -172,7 +172,7 @@ Simple demo of the [thormang3_walking_module]
 
 #### Install & Build
 
-`Note` Reference : [PPC Installation]
+**NOTE** : Reference : [PPC Installation]
 {: .notice}
 
 #### Usage
@@ -233,7 +233,7 @@ Operating PC is used to control the robot from the outside.
 3. ROBOTIS ROS Package  
   - `Reference` [OPC Installation]  
   - [ROBOTIS-THORMANG-OPC]
-  - [ROSOTIS-THORMANG-Common]
+  - [ROBOTIS-THORMANG-Common]
 
 #### OPC Network setting  
 - `Reference` [Example Setting for OPC]  
@@ -366,7 +366,7 @@ Instructions about how to calibrate FT Sensors on THORMANG3's feet. Balance Algo
 
 #### Install & Build
 
-  `Note` Reference : [OPC Installation]
+  **NOTE** : Reference : [OPC Installation]
   {: .notice}
 
 #### Run
@@ -507,7 +507,7 @@ Structure looks like the below figure.
 
 ##### Install & Build
 
-  `Note` Reference : [OPC Installation]
+  **NOTE** : Reference : [OPC Installation]
   {: .notice}
 
 ##### Run
@@ -561,7 +561,7 @@ A walking example that follows StepData using [footstep_planner].
 
 ##### Install & Build
 
-  `Note` Reference : [OPC Installation]
+  **NOTE** : Reference : [OPC Installation]
   {: .notice}
 
 ##### Run
@@ -643,8 +643,8 @@ $ rosrun thormang3_offset_tuner_client thormang3_offset_tuner_client
 
 [ROS network Setup, 5. Timing issues]:http://wiki.ros.org/ROS/NetworkSetup#Timing_issues.2C_TF_complaining_about_extrapolation_into_the_future.3F
 [roscore]:http://wiki.ros.org/roscore
-[thormang3_sensors.launch]:https://github.com/ROBOTIS-GIT/ROBOTIS-THORMANG-PPC/blob/master/thormang3_sensors/launch/thormang3_sensors.launch
-[thormang3_manager.launch]:https://github.com/ROBOTIS-GIT/ROBOTIS-THORMANG-MPC/blob/master/thormang3_manager/launch/thormang3_manager.launch
+[thormang3_sensors.launch]: /docs/en/popup/thormang3_sensors.launch
+[thormang3_manager.launch]: /docs/en/popup/thormang3_manager.launch
 
 [http://wiki.ros.org/kinetic/Installation/Ubuntu]:http://wiki.ros.org/indigo/Installation/Ubuntu
 [http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment]:http://wiki.ros.org/ROS/Tutorials/InstallingandConfiguringROSEnvironment
@@ -655,12 +655,26 @@ $ rosrun thormang3_offset_tuner_client thormang3_offset_tuner_client
 [How to execute OPC's GUI program]: /docs/en/platform/thormang3/thormang3_operation/#gui-program
 
 [Remote Control(GUI Demo)]: /docs/en/platform/thormang3/thormang3_operation/#gui-program
-[thormang3_walking_module]: /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_walking_module
+[thormang3_walking_module]: /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3-walking-module
 
-[thormang3_feet_ft_module]: /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_feet_ft_module
-[thormang3_manipulation_module]: /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_manipulation_module
-[Usage]: /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3_walking_module
+[thormang3_feet_ft_module]: /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3-feet-ft-module
+[thormang3_manipulation_module]: /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3-manipulation-module
+[Usage]: /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3-walking-module
 
 [http://wiki.ros.org/rviz]:http://wiki.ros.org/rviz
 [http://wiki.ros.org/urdf]:http://wiki.ros.org/urdf
 [http://wiki.ros.org/tf]:http://wiki.ros.org/tf
+
+[thormang3_sensors]: /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3-sensors/
+[thormang3_manager]: /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3-manager/
+
+[ROBOTIS-THORMANG-OPC]: /docs/en/platform/thormang3/thormang3_ros_packages/#opc-packages
+[ROBOTIS-THORMANG-Common]: /docs/en/platform/thormang3/thormang3_ros_packages/#common-packages
+[Example Setting for OPC]: /docs/en/platform/thormang3/getting_started/#example-setting-for-opc
+
+[How to run THORMANG3's program]: /docs/en/platform/thormang3/thormang3_operation/#thormang3-operation
+
+[thormang3_demo]: /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3-demo
+[thormang3_foot_step_generator]: /docs/en/platform/thormang3/thormang3_ros_packages/#thormang3-foot-step-generator
+[How to calibrate feet ft sensors]: /docs/en/platform/thormang3/thormang3_operation/#calibrate-ft-sensors
+[footstep_planner]: /docs/en/platform/thormang3/thormang3_ros_packages/#footstep-planner

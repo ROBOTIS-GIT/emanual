@@ -19,14 +19,14 @@ In order for the robot to move, a motion file is required.  A suitable motion fi
 A motion file is identified by the icon below, and its file extension is .mtn.
 
 ![](/assets/images/sw/rplus1/motion/roboplus_motion_001.png)
- 
+
 ## What is the relationship between a motion and task code?
 
 A task code file is a program while a motion file is data.  For better understanding, let us think about MP3 players and MP3 files. If there were no MP3 players, you will not be able to listen to music because MP3 file could not be played.  The result is the same when there is an MP3 player but no MP3 file.  If you want to make your robot move, you need a task code file.  If the task code downloaded into your robot uses motions, you must download the motion file as well.  If no motions are used in the task code, you do not need the motion file.
 
-`Note` To use motions in a task code, the motion file must be downloaded.
+**NOTE** : To use motions in a task code, the motion file must be downloaded.
 {: .notice}
- 
+
 ![](/assets/images/sw/rplus1/motion/roboplus_motion_002.png)
 
 ## [Install](#install)
@@ -45,7 +45,7 @@ RoboPlus is a software to create a customized programme for every ROBOTIS produc
 
 ![img_install](/assets/images/sw/roboplus_install_en.png)
 
-`Note` To execute RoboPlus, .NET FrameWork 3.5 or higher version is required. When installing RoboPlus, if the automatic installation of .NET FrameWork fails, .NET FrameWork must be installed separately.
+**NOTE** : To execute RoboPlus, .NET FrameWork 3.5 or higher version is required. When installing RoboPlus, if the automatic installation of .NET FrameWork fails, .NET FrameWork must be installed separately.
 {: .notice}
 
 ### RoboPlus Install Failure
@@ -84,7 +84,7 @@ Multiple "File Motion" windows can be displayed at once.
     Choose the communication port to which the robot is connected.  If you don't know the port number, use the "Auto Searching" function.
 
     ![](/assets/images/sw/rplus1/motion/roboplus_motion_005.png)
- 
+
 3. Connect with the robot. Choose the "Connect Robot" menu.
 
     ![](/assets/images/sw/rplus1/motion/roboplus_motion_006.png)
@@ -96,10 +96,10 @@ Multiple "File Motion" windows can be displayed at once.
     - Is the controller compatible with RoboPlus Motion?
       - CM-100 is not compatible.
       - CM-5 is compatible only after a firmware upgrade.
- 
+
 4. Disconnect the Robot.  
     To disconnect from the robot, choose the "Exit" menu or simply close the window.
-    
+
     ![](/assets/images/sw/rplus1/motion/roboplus_motion_007.png)
 
 ## [Download Motion](#download-motion)
@@ -110,7 +110,7 @@ File motions can be converted into robot motions.
 - Click on the "Download Motion" menu and wait for the download to complete.
 
   ![](/assets/images/sw/rplus1/motion/roboplus_motion_008.png)
- 
+
 - Verify that the contents of the file motion have been copied to the robot motion as seen below.
 
   ![](/assets/images/sw/rplus1/motion/roboplus_motion_009.png)
@@ -124,20 +124,20 @@ File motions can be converted into robot motions.
 You can play the created motions. Search the page to play and click "Play Motion".
 
 ![](/assets/images/sw/rplus1/motion/roboplus_motion_010.png)
- 
+
 - Errors may occur when trying to play motions.
   - This error can be seen while working on a "Robot Motion" window. In this case, the page linked as Next or Exit has been modified, but the controller does not have enough memory to temporarily save it.
 
   ![](/assets/images/sw/rplus1/motion/roboplus_motion_011.png)
 
   > This can be solved by saving the page before execution.  If you proceed without saving, only the current page will be played.
- 
+
   - This error can be seen while working on a "File Motion" window. In this case, the data in the PC is not the controller, and the controller does not have enough memory  to temporarily save the Next or Exit page.
 
   ![](/assets/images/sw/rplus1/motion/roboplus_motion_012.png)
 
   > You can execute only the chosen page.  To play linked pages, you must download the motion to the robot.
- 
+
 ## [Stop Motion](#stop-motion)
 
 Stops the motion that is being carried out.
@@ -145,7 +145,7 @@ Stops the motion that is being carried out.
 ![](/assets/images/sw/rplus1/motion/roboplus_motion_013.png)
 
 "Stop Motion" does not stop execution right away. Instead, the "Exit" page is executed before stopping.  
- 
+
 ## [Emergency Stop](#emergency-stop)
 
 Stops the motion that is being carried out.
@@ -158,11 +158,11 @@ Unlike "Stop Motion," "Emergency Stop" halts execution immediately.
 # [Motion Editing](#motion-editing)
 
 Things to be aware of before editing motions are introduced here.
- 
+
 ## Setting the Dynamixel ID
 
 The motion player in the controller can control a total of 26 Dynamixels (from ID 0 to 25). Therefore, to create a motion with RoboPlus Motion, the ID of each Dynamixel must be between 0 and 25.
- 
+
 ## Control Priority
 
 Dynamixels may be controlled by both RoboPlus Motion and RoboPlus Task. Generally, the control priority is as follows:
@@ -173,7 +173,7 @@ In other words, once a motion is executed, the Dynamixel will be controlled by o
 There are 2 ways to change the control priority:
 - In the motion data : Use [ID Used/Not-Used](#set-id-usage-status) function.
 - In the task code : Use the [Joint Offset Parameter]. The advantage of this method is that the control priority may be changed according to the situation.
- 
+
 ## Dynamixel Auto Shutdown Function
 
 Dynamixels have an Auto Shutdown function. This function prevents Dynamixels from being damaged. The Auto Shutdown function will be triggered in the following situations.  
@@ -195,16 +195,16 @@ When creating a motion, the joint may not move. This is because the Auto Shutdow
 ## [Pose Editing](#pose-editing)
 
 A pose is the robot's position at a point in time.  It is a collection of motor position values required for the posture.   
- 
+
 ![](/assets/images/sw/rplus1/motion/roboplus_motion_015.png)
- 
+
 - `Pose of Step` refers to the data values of the pose.
 
 - `Pose of Robot` refers to the position values of the connected robot's joints. When the Pose of Robot is modified, the robot will move accordingly.  
 
 ### <a name="basic-pose-editing"></a>[Basic Pose Editing](#basic-pose-editing)
 
-The Basic Pose Editor is a simple editor that may be used for any type of robot. To change the number of ID's used at "Pose of Step," use the [ID Editing Function](#edit-all-page).
+The Basic Pose Editor is a simple editor that may be used for any type of robot. To change the number of ID's used at "Pose of Step," use the [ID Editing Function].
 
 ![](/assets/images/sw/rplus1/motion/roboplus_motion_016.png)
 
@@ -241,7 +241,7 @@ This function is only available in "Pose of Robot."
 If the torque is on, its position value will be shown. Otherwise, the value will be displayed as 'OFF'.  
 
 ![](/assets/images/sw/rplus1/motion/roboplus_motion_021.png)
- 
+
 The torque may be turned on or off through the following methods.
 - Press the "On" button to turn on the selected actuator.
 
@@ -268,7 +268,7 @@ To execute a pose, move "Pose of Step" to "Pose of Robot."
 ![](/assets/images/sw/rplus1/motion/roboplus_motion_026.png)
 
 ![](/assets/images/sw/rplus1/motion/roboplus_motion_027.png)
- 
+
 #### <a name="capture-pose"></a>[Capture Pose](#capture-pose)
 
 To "Capture"(Store) a pose, move "Pose of Robot" to "Pose of Step."
@@ -312,25 +312,25 @@ The pose utility is a tool to easily create a pose based on previously supplied 
 - Inverse Kinematics: The accurate positions of each joint can be calculated.
 
 {% capture motion_01 %}
-`Note`
-- Information regarding the robot are required to create a pose using the pose utility. Therefore, a robot not on the list cannot be used. 
-- Some robots may not support the functions listed above. 
+**NOTE** :
+- Information regarding the robot are required to create a pose using the pose utility. Therefore, a robot not on the list cannot be used.
+- Some robots may not support the functions listed above.
 - Because the pose utility uses 3D graphics, its performance depends on your graphic card.
 {% endcapture %}
 
 <div class="notice">{{ motion_01 | markdownify }}</div>
- 
+
 ![](/assets/images/sw/rplus1/motion/roboplus_motion_036.png)
- 
+
 #### [Select Robot](#select-robot)
 
 Before using the pose utility, you must first select the robot. Click the robot's name on the list below to select an applicable robot.
- 
-`Note` Pose utility cannot be used on a robot not on the list. In case of a user's robot, the motions of the robot must be created by [Basic Pose Editor](#basic-pose-editing).
+
+**NOTE** : Pose utility cannot be used on a robot not on the list. In case of a user's robot, the motions of the robot must be created by [Basic Pose Editor](#basic-pose-editing).
 {: .notice}
- 
+
 ![](/assets/images/sw/rplus1/motion/roboplus_motion_037.png)
- 
+
 - Select the name of robot to create a pose for.
 
 |Robot Name|Description|
@@ -348,7 +348,7 @@ Before using the pose utility, you must first select the robot. Click the robot'
 |Premium Humanoid|A-type	Bioloid Premium Humanoid|
 |Premium Humanoid|B-type	Bioloid Premium Humanoid|
 |Premium Humanoid|C-type	Bioloid Premium Humanoid|
- 
+
 - When the "Initial Pose" button is pressed, the robot will assume its initial position.
 
 #### [Control 3D Robot](#control-3d-robot)
@@ -356,9 +356,9 @@ Before using the pose utility, you must first select the robot. Click the robot'
 ##### Control View
 
 3D robot can be seen from various angle using the view control function.
- 
+
 ![](/assets/images/sw/rplus1/motion/roboplus_motion_038.png)
- 
+
 - **Zoom Fit** : The view angle is reset to the initial status.
 - **Select Objects** : The joints can be selected by the mouse cursor.
 - **Rotate the View** : The view can be rotated using the mouse. The same thing as above occurs when you press the wheel button of mouse and move.
@@ -370,30 +370,30 @@ Before using the pose utility, you must first select the robot. Click the robot'
 The number appeared on the robot are the ID of Dynamixel. If you place your mouse on the ID, the color of choosable Dynamixel is changed.
 
 ![](/assets/images/sw/rplus1/motion/roboplus_motion_039.png)
- 
+
 If you click the relevant joint, the joint value appears. The joint value is appeared as angle, not the motor value.
 
 ![](/assets/images/sw/rplus1/motion/roboplus_motion_040.png)
- 
+
 If you move the mouse to left and right  while pressing the left botton of the mouse, the value increases or decreases.  
 In case of 1,024-based control, the unit of the value is approximately 0.29(300 / 1,024), and in case of 4,096-base, it is approximately 0.06(250.92 / 4,096).
 
 #### [Mirror](#mirror)
 
 The mirror function provides two functions:  "exchange" and "symmetric." Press "Apply" after choosing the function to apply it to your robot.
- 
+
 1. Exchange  
     The robot's left side and right side are reversed to create a mirror image of the previous pose.
 
     ![](/assets/images/sw/rplus1/motion/roboplus_motion_041.jpg)
-    
+
     ![](/assets/images/sw/rplus1/motion/roboplus_motion_042.png)
- 
+
 2. Symmetry  
     A symmetric pose based on the selected side is created.
-    
+
     ![](/assets/images/sw/rplus1/motion/roboplus_motion_043.png)
-    
+
     ![](/assets/images/sw/rplus1/motion/roboplus_motion_044.png)
 
 #### [Inverse Kinematics](#inverse-kinematics)
@@ -405,19 +405,19 @@ Coordinates axis and origin on the View are shown as below, and the unit of the 
 Here, Origin means that the coordinates of  X, Y, Z is (0, 0, 0).
 
 ![](/assets/images/sw/rplus1/motion/roboplus_motion_045.png)
- 
+
 ##### Kinematics and Inverse Kinematics
 
 Kinematics is used to determine the location or movement of the end point from the angle or movement of the joint.  In other words, kinematics allows us to determine where the end points once the joint values have been decided. For example, suppose there is a manipulator with two joints in the same plane as shown below.  Using the angles of the joints, the coordinate (x,y) of the end point can be determined through kinematics.  Kinematics results in only one solution.
 
 ![](/assets/images/sw/rplus1/motion/roboplus_motion_046.png)
- 
+
 On the other hand, inverse kinematics may be used to determine the angle or movement of the joint from the location or movement of the end point.  For example, suppose again that there is a manipulator with two joints in the same plane coordinates.  If the end point (x,y) has been determined, there are 2 possible values for each joint as seen below.
 
 ![](/assets/images/sw/rplus1/motion/roboplus_motion_047.png)
 
 When using inverse kinematics, the coordinate (x,y) of the end point may be located at an unreachable distance from the origin or no solution may be obtained due to limitations on joint angles. If more joints are used, there may be infinitely many solutions.
- 
+
 ##### End Point Control
 
 When the user selects how much and in which direction to move the end point, the "Inverse Kinematics" function in the pose utility will calculate the values of each joint and move the end point automatically.  
@@ -428,18 +428,18 @@ This function needs a module executes "Inverse Kinematics" calculation.  Current
 - Bioloid Premium Humanoid Type C
 
 This subject is explained on the basis of Bioloid Premium Humanoid Type A.
- 
+
 ###### Select the end point
 - Walking Step : Located at the middle of both feet, used to move both feet.
 - Right Foot : Located at the center of the right foot, used to move only the right foot.
 - Left Foot : Located at the center of the left foot, used to move only the left foot.
 
   ![](/assets/images/sw/rplus1/motion/roboplus_motion_048.png)
- 
+
 ###### Initialize the end point
 
 The location of the end point is initialized.
- 
+
 ###### Move the end point
 
 The end point in 3D space can be controlled by 6 parameters.  Depending on the structure of robots, all the 6 paramters may not be appeared.  
@@ -459,7 +459,7 @@ To change the values, select relevant parameters, and then use the following met
   ![](/assets/images/sw/rplus1/motion/roboplus_motion_051.png)
 
 - Z(mm): it is moved to the Z-axis direction by the unit of mm.
-  
+
   ![](/assets/images/sw/rplus1/motion/roboplus_motion_052.png)
 
 - &phi;(&deg;): it is rotated based on the X-axis by the unit of angle.
@@ -493,8 +493,8 @@ When Pose of Step is selected, the pose values on the data are changed, and if P
 ##### Pose of Step and Pose of Robot
 
 Pose of Step means the steps on the `currently selected motion file.  That is, the pose changed in pose utility is reflected to the motion file immediately, while Pose of Step has been selected.
- 
-`Note` Pose of Step is activated only when there are steps on the currently selected page. Pose of Robot is activated only when the robot is connected.
+
+**NOTE** : Pose of Step is activated only when there are steps on the currently selected page. Pose of Robot is activated only when the robot is connected.
 {: .notice}
 
 ##### Pose Execution/Capture
@@ -524,19 +524,19 @@ To make a motion with more than 7 steps, you will need to [connect pages](#conne
 A new step is added at the bottom of the step list.
 
 ![](/assets/images/sw/rplus1/motion/roboplus_motion_059.png)
- 
+
 #### Insert Step
 
 A new step is inserted above the selected step.
 
 ![](/assets/images/sw/rplus1/motion/roboplus_motion_060.png)
- 
+
 #### Delete Step
 
 The selected step is deleted from the list.
 
 ![](/assets/images/sw/rplus1/motion/roboplus_motion_061.png)
- 
+
 #### Move Step
 
 The selected step may be moved up or down.
@@ -551,7 +551,7 @@ The selected step may be moved up or down.
 - The value can be changed using the upper scroll bar.
 
   ![](/assets/images/sw/rplus1/motion/roboplus_motion_063.png)
- 
+
 ### [Time](#time)
 
 - "Time" is the time between the time from the start of the current step to the end of the current step.
@@ -568,13 +568,13 @@ The selected step may be moved up or down.
 The selected step is copied.
 
 ![](/assets/images/sw/rplus1/motion/roboplus_motion_065.png)
- 
+
 #### Cut Step
 
 The selected step is cut.
 
 ![](/assets/images/sw/rplus1/motion/roboplus_motion_066.png)
- 
+
 #### Paste Step
 
 The copied or cut step is pasted.  The value in the selected step is overwritten.
@@ -593,20 +593,20 @@ Motion data consists of 255 pages. (Some controllers are limited to only 127 pag
 
 Click on a row to select a page.
 The following methods may be used to select multiple pages.
- 
+
 - To choose pages in consecutive order
 
   ![](/assets/images/sw/rplus1/motion/roboplus_motion_069.png)
 
   - Drag with mouse
   - Choose pages while holding down the "Shift" key.
- 
+
 - To choose pages separately
 
   ![](/assets/images/sw/rplus1/motion/roboplus_motion_070.png)
 
   - Choose pages while holding down the "Ctrl" key.
- 
+
 - To choose all pages
   - Press the button in the upper left corner
 
@@ -615,10 +615,10 @@ The following methods may be used to select multiple pages.
 ### <a name="conenct-page"></a>[Connect Page](#connect-page)
 
 Pages can be connected to each other if necessary.
- 
-`Note` When data is exchanged using the Copy/Cut/Paste functions, page connection information is not exchanged.
+
+**NOTE** : When data is exchanged using the Copy/Cut/Paste functions, page connection information is not exchanged.
 {: .notice}
- 
+
 #### Next Page
 
 A single page can have a maximum of 7 steps.  Therefore, some motions may not fit in one page.  To use multiple pages for one motion, designate the page to link to.
@@ -646,7 +646,7 @@ Enter the number of the exit page in the "Exit" column.
 The selected page is copied.
 
 ![](/assets/images/sw/rplus1/motion/roboplus_motion_076.png)
- 
+
 #### Cut Page
 
 The selected page is cut.
@@ -666,7 +666,7 @@ The copied or cut page is pasted.  The contents of selected page is overwritten.
 This is the number of times the current page is repeated during motion execution.
 
 ![](/assets/images/sw/rplus1/motion/roboplus_motion_079.png)
- 
+
 #### Speed Rate
 
 - This is the playback speed of the page during motion execution.  Unlike "Step Time," this applies to the entire page.
@@ -679,11 +679,11 @@ This is the number of times the current page is repeated during motion execution
 ### [Inertial Force Control](#inertial-force-control)
 
 Force is generated between steps. We call this force "inertial force," because it is the result of the law of inertia.  In general, inertial forces are created by acceleration, which is the change in speed.  That is, as acceleration increases, inertial force also increases, and as acceleration decreases, inertial force also decreases.  To reduce acceleration, increase or decrease the speed gradually, and to increase acceleration, change the speed drastically ."Ctrl Inertial Force" is used to control this acceleration.  Increase this value to increase or decrease the speed gradually, reducing the acceleration.
- 
+
 - The value is between 0 and 127. (Default is 32.)
 
   ![](/assets/images/sw/rplus1/motion/roboplus_motion_081.png)
-  
+
 - The closer the value is to 0, the greater the inertial force.
 - The closer the value is to 127, the lower the inertial force.
 
@@ -697,7 +697,7 @@ The pros and cons of different joint softness values are as follows:
 - When the joint softness is small  
   - Pro: Movement is stable.  Used for movements that require support, such as walking.
   - Con: Movement may look too rigid when performing fluid motions.
- 
+
 There are 7 joint softness levels.
 - Level 1: Almost none  (Not recommended)
 - Level 2: Very Low
@@ -717,7 +717,7 @@ Transferring motion data from the controller to the PC is called "uploading."
 1. Connect the robot to the PC to see the Robot Motion window.
 
     ![](/assets/images/sw/rplus1/motion/roboplus_motion_083.png)
-    
+
     ![](/assets/images/sw/rplus1/motion/roboplus_motion_084.png)
 
 2. After selecting the Robot Motion window, click on "Save As".
@@ -729,54 +729,54 @@ Transferring motion data from the controller to the PC is called "uploading."
 Offset is the difference from a standard value. Motion offset refers to the difference from the standard motion, and the robot that performs the standard motion is called the "Master Robot".  
 Even when robots of the same type are performing the same motions, there will be differences in their poses. This is due to discrepancies in motor locations and errors in assembly.  These differences may even cause some robots to fall down.  "Motion Offset" is used to resolve these differences.
 
-`Note` Generally, motion offset is small enough to be ignored. However, for robots that are sensitive to balance, such as humanoids, motion offset can be a source of critical problems.  
+**NOTE** : Generally, motion offset is small enough to be ignored. However, for robots that are sensitive to balance, such as humanoids, motion offset can be a source of critical problems.  
 {: .notice}
- 
+
 ### Edit Motion Offset
 
 Discrepancies in the location of robot joints can be fixed using the "Edit Motion Offset" function.
 
 When the menu is selected, the torque of all joints will be turned on to sustain its current position.  Therefore, it would be beneficial to execute this function when the robot is in a pose where the differences can be easily distinguished.   
-{: .notice} 
+{: .notice}
 
 ![](/assets/images/sw/rplus1/motion/roboplus_motion_086.png)
- 
+
 Select the joint to edit its value with the editor.  
 - Positive values indicate movement in the CCW direction.
 - Negative values indicate movement in the CW direction.
 
   ![](/assets/images/sw/rplus1/motion/roboplus_motion_087.png)
- 
+
 ### Initialize
 
 Initiaizes all values to 0.
 
 ![](/assets/images/sw/rplus1/motion/roboplus_motion_088.png)
- 
+
 ### Save
 
 Saves the current offset values.  The values are saved in the controller.
 
 ![](/assets/images/sw/rplus1/motion/roboplus_motion_089.png)
- 
+
 ### Save as File
 
 Saves the robot's current offset values as a file in the PC. The file extension of motion offset files is .ofs.
 
 ![](/assets/images/sw/rplus1/motion/roboplus_motion_090.png)
- 
+
 ### Download
 
 Motion Offset files(*.ofs) in the PC can be downloaded to the robot.
 
 ![](/assets/images/sw/rplus1/motion/roboplus_motion_091.png)
 
-## <a name="edit-all-page"></a>[Edit All Page](#edit-all-page)
+## [Edit All Page](#edit-all-page)
 
 "Edit All Page" is used to duplicate revisions on all pages. This function is required in the following situations:
 - To change all motor values simultaneously Changes the value of every motor at once.
 - To change ID usage status (whether it is being used or not)
- 
+
 ### [Set Resolution](#set-resolution)
 
 - The monitor's resolution can be set.
@@ -785,30 +785,30 @@ Motion Offset files(*.ofs) in the PC can be downloaded to the robot.
 - MX series have position control of 360 degrees.
 
 ![](/assets/images/sw/rplus1/motion/roboplus_motion_092.png)
- 
+
 - When the resolution value is set as 4,096, the default values in the basic pose editor will be automatically changed from 512 to 2,048.
 
 ![](/assets/images/sw/rplus1/motion/roboplus_motion_093.png)
- 
+
 ### <a name="set-id-usage-status"></a>[Set ID Usage Status](#set-id-usage-status)
 
 - RoboPlus Motion can handle the motions of robots with up to 26 motors. (Dynamixel ID between 0 and 25). Set whether an ID is being used to edit only the necessary ID's.
 
 ![](/assets/images/sw/rplus1/motion/roboplus_motion_094.png)
- 
+
 ### [Exchange ID](#exchange-id)
 
 The position values of the robot's joints can be easily exchanged.
 Select the 2 ID's to exchange, and then click "Exchange ID."
 
 ![](/assets/images/sw/rplus1/motion/roboplus_motion_095.png)
- 
+
 ### [Change All Values](#change-all-values)
 
 Use this function to change the value of the selected ID.
 
 ![](/assets/images/sw/rplus1/motion/roboplus_motion_096.png)
- 
+
 ### Apply Offset Values to All
 
 Offset is the difference from a standard value.  Use this function to add or subtract a value from all joints with the selected ID.
@@ -818,13 +818,13 @@ Offset is the difference from a standard value.  Use this function to add or sub
 ## [Keyboard Shortcuts](#keyboard-shortcuts)
 
 When creating robot motions, it is difficult to use the mouse and keyboard at the same time, while holding the robot with one hand.  Here, we introduce useful tips to make motions using only the keyboard.
- 
+
 ### Use arrow keys to move within the program
 
 Arrow keys can be used to move the focus between the Page Edit Window, Step Edit Window, and Pose Edit Window.
 
 ![](/assets/images/sw/rplus1/motion/roboplus_motion_098.png)
- 
+
 ### Change the Joint Values
 
 - Press the `[` or `]` keys to increase or decrease the joint value by 1.
@@ -837,7 +837,7 @@ This function is available in the following windows:
 - Pose of Step
 
   ![](/assets/images/sw/rplus1/motion/roboplus_motion_100.png)
-  
+
 - Pose of Robot
 
   ![](/assets/images/sw/rplus1/motion/roboplus_motion_101.png)
@@ -849,11 +849,11 @@ This function is available in the following windows:
 - 3D drawing of robot
 
   ![](/assets/images/sw/rplus1/motion/roboplus_motion_103.png)
- 
+
 ### Turn the torque on/off
 
 After selecting the joint, press the space bar to turn the torque on or off.
- 
+
 ### Moving robot according to each step  
 
 Please choose the step that you want and press the enter key. Your robot will take the pose of selected step. (This is available only at robot motion window )   
@@ -865,7 +865,7 @@ Please choose the step that you want and press the enter key. Your robot will ta
 Users can make and operate their own robots usig RoboPlus Motion
 
 {% capture roboplus_motion_warning_01 %}
-`Warning` For this section, some previous knowledge on the following is required.
+**WARNING** : For this section, some previous knowledge on the following is required.
 - XML
 - 3D Graphics
 - C# Programming
@@ -889,42 +889,42 @@ Robot Infromation file has all the information required for the use of RoboPlus 
 This file has extension of .rbt. Robot list in "Pose Utility" tab shows the .rbt file list of various robots showed in the e-manual.
 
 ![](/assets/images/sw/rplus1/motion/roboplus_motion_105.png)
- 
+
 Robot Information file is written in the format of XML. Users can read the files using Windows TextPad.
- 
+
 ![](/assets/images/sw/rplus1/motion/roboplus_motion_106.png)
- 
+
 #### &lt;General&gt;
 
 In this part, general information on the robot users making must be recorded.
- 
+
 
 #### &lt;Name&gt;
 
 Put in the name that will be shown on the robot list.  
 You can give different "culture" values to show different languages (only for languages supported by RoboPlus Motion)
- 
+
 |Value|Language|
 |:---:|:---:|
 |kor|Korean|
 |jpn|Japanese|
 |N/A|English or any other languages|
- 
+
 ```xml
-<Name>Premium Humanoid A-type</Name> 
-<Name culture=”kor”> Bioloid Premium Type A</Name> 
+<Name>Premium Humanoid A-type</Name>
+<Name culture=”kor”> Bioloid Premium Type A</Name>
 ```
-> Example of Bioloid Premium Type A 
- 
+> Example of Bioloid Premium Type A
+
 #### &lt;Motor&gt;
 
 Input information for the Dynamixels used in robots.
 - id: Dynamixel's ID
 - model: model type
 - init: position value for when "Initial Pose" button is pressed
- 
+
 ![](/assets/images/sw/rplus1/motion/roboplus_motion_105.png)
- 
+
 ```xml
 <Motor id="1" model="AX-12+" init="205"></Motor>
 <Motor id="2" model="AX-12+" init="818"></Motor>
@@ -947,13 +947,13 @@ Input information for the Dynamixels used in robots.
 ```
 
 > Example of Bioloid Premium Type A
- 
+
 #### &lt;Mirror&gt;
 
 Infromation needed for Mirror function. Not necessary if the function is not in use.
 
 ![](/assets/images/sw/rplus1/motion/roboplus_motion_108.jpg)
- 
+
 Only use for Dynamixels in symmetric positions. If there is no symmetrically positioned Dynamixles, do not input anything.
 - Right: Dynamixel IDs for devices on the right side
 - Left: Dynamixel IDs for devices on the left side
@@ -1025,7 +1025,7 @@ In this section, each part's information is included. The relationship between p
 Shown below are the 3D models of parts. These parts can be generated by various Computer Aided Design softwares. Users can add the parts created on their own in addition to the provided parts by ROBOTIS.  
 RoboPlus Motion only supports IGES(*.igs) format. ROBOTIS recommends to make data files small since if the data is too big, it will slow down the 3D display.  
 The following are the basic parts provided with RoboPlus.
- 
+
 |Name|Diagram|File|
 |:---:|:---:|:---:|
 |F1|![](/assets/images/sw/rplus1/motion/roboplus_motion_114.png)|f1.igs|
@@ -1062,15 +1062,15 @@ The following are the basic parts provided with RoboPlus.
 Users can use Plug-In SDK to add inverse kinematics computing module from "Pose Utility."
 Instruction is given using an example of developing C# from Visual Studio 2005. (Sample example included)
 - `Download ZIP` [PlugInSDK_Example.zip](http://support.robotis.com/en/baggage_files/zigbee_sdk/pluginsdk_example.zip)
- 
+
 #### Create Project
 
 Go to Visual Studio's menu and select `File` > `Create New` > `Project`. Then select `Visual C#` > `Windows` > `Classic Library` to create a new project.
- 
+
 #### Add Reference
 
 Go to Visual Studio's menu and select `Project` > `Add Reference`. When a window box pops up, click "Find" then select `Motion` > `PlugInSDK.dll` in the folder Roboplus is installed.(i.e, C:\Program Files\ROBOTIS\RoboPlus\Motion\PlugInSDK.dll)
- 
+
 #### Implement Interface
 
 Write command lines shown below in the Class file that is to be implemented. (i.e, Class1.cs)
@@ -1105,7 +1105,7 @@ This is the name to be printed on endpoint list.
 Users can either choose one form the endpoint list or run the interface shown below to see the result.
 - SelectedIndex: Index of endpoint
 - SelectedEndPoint: Name of endpoint
- 
+
 ##### X, Y, Z, Roll, Pitch, Yaw
 
 It's the data of location of end points from the origin.  
@@ -1118,13 +1118,13 @@ Roll signifies rotation in x-axis, Pitch is in y-axis, and Yaw z-axis.
 - MaxX, MaxY, MaxZ, MaxRoll, MaxPitch, MaxYaw: Maximum values for endpoints.
 - If the minimum and maximum values are set at the same value for an endpoint, such endpoint is considered as not in use and thus, does not show up on the list.
 - X, Y, Z, Roll, Pitch, Yaw: position values of endpoints.
- 
+
 ##### Reset
 
 By clicking the "reset" button on RoboPlus Motion,  users can default the position values of endpoints.
 
 ![](/assets/images/sw/rplus1/motion/roboplus_motion_144.png)
- 
+
 #### Add Plug-In
 
 If successful with building the project, copy the DLL file to the "PlugIn" folder inside the RoboPlus Motion folder. (For example, C:\Program Files\ROBOTIS\RoboPlus\Motion\PlugIn)  
@@ -1142,5 +1142,10 @@ In robot informational file (*.rbt), write DLL information that wil compute inve
 
 Run RoboPlus Motion and check if the (new) robot is operating properly.
 
+[RoboPlus]: http://en.robotis.com/BlueAD/board.php?bbs_id=downloads
 [Joint Offset Parameter]: /docs/en/software/rplus1/task/programming_02/#joint-offset
-[ID Editing Function]: ???
+[ID Editing Function]: #edit-all-page
+[Microsoft Download Center]: http://www.microsoft.com/downloads/Search.aspx?displaylang=en
+[Windows installer 3.1]: http://www.microsoft.com/downloads/details.aspx?FamilyID=889482fc-5f56-4a38-b838-de776fd4138c&DisplayLang=en
+[.NET Framework 3.5]: http://www.microsoft.com/downloads/details.aspx?FamilyID=d0e5dea7-ac26-4ad7-b68c-fe5076bba986&DisplayLang=en
+[Controller Information]: /docs/en/parts/controller/controller_compatibility/

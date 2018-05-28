@@ -5,7 +5,7 @@ layout: popup
 - File: `thormang3_offset_tuner_msgs/srv/GetPresentJointOffsetData.srv`
 
 - Message Definition
- ```
+ ```c
  ---
  JointOffsetPositionData[] present_data_array
  ```
@@ -14,11 +14,10 @@ layout: popup
 The service to get offset data of each joint.
 
   - Request
-* `empty`
+    * `empty`
 
   - Response
-* `JointOffsetPositionData[] present_data_array`([thormang3_offset_tuner_msgs/JointOffsetPositionData](JointOffsetPositionData.msg))
+    * `JointOffsetPositionData[] present_data_array`([thormang3_offset_tuner_msgs/JointOffsetPositionData])
 &emsp;&emsp; Array of the offset parameter data of each joint
 
-<br>
-[[&lt;&lt; Back|thormang3_offset_tuner_msgs]]
+[thormang3_offset_tuner_msgs/JointOffsetPositionData]: /docs/en/platform/msgs/JointOffsetPositionData_msg/#jointoffsetpositiondata-msg

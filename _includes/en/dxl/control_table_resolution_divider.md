@@ -18,5 +18,5 @@ For example, a Dynamixel with a Real Position of 2048 with a Resolution Divider 
 
 ![](/assets/images/dxl/mx/mx-12_res_divider.jpg)
 
-`Note` This feature is only applied in multi-turn mode and will be ignored in other modes.
+**NOTE** : This feature is only applied in multi-turn mode and will be ignored in other modes.
 {: .notice}

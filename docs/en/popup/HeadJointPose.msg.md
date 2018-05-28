@@ -1,11 +1,11 @@
 ---
 layout: popup
 ---
-  
+
 - File: `thormang3_head_control_module_msgs/HeadJointPose.msg`
 
 - Message Definition
-```
+```c
 float64               	 	mov_time
 sensor_msgs/JointState 		angle
 ```
@@ -18,6 +18,3 @@ Head joints move "angle" for "mov_time" sec(s).
   &emsp;&emsp; time(second) to move  
   * `sensor_msgs/JointState angle`  
   &emsp;&emsp; angle(radian) to move of head joints  
-
-<br>
-[[&lt;&lt; Back|thormang3_head_control_module_msgs]]

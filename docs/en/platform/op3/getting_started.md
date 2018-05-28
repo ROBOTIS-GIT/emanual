@@ -7,15 +7,15 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/op3/getting_started/
 sidebar:
-  title: ROBOTIS-OP3
+  title: ROBOTIS OP3
   nav: "op3"
 ---
 
 <div style="counter-reset: h1 2"></div>
 
-# [Getting Started](#getting_started)
+# [Getting Started](#getting-started)
 
-## [How to connect](#how-to-connect)
+## [How to Connect](#how-to-connect)
 
 ### Direct Connection  
 Keyboard and monitor are directly connected to ROBOTIS-OP3.  
@@ -53,6 +53,7 @@ Keyboard and monitor are directly connected to ROBOTIS-OP3.
     4. Accessing ROBOTIS-OP3 via remote desktop may result in slower performance.
 
     ![](/assets/images/platform/op3/op3_connection_vnc.png)
+    
 ## [How to kill the demo program](#how-to-kill-the-demo-program)
 
 ### Kill demo program

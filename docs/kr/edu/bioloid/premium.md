@@ -68,7 +68,7 @@ sidebar:
 
 - 자율 주행 모드에서 장애물을 인식하지 못할 경우
   > 절대 거리 센서의 케이블이 제대로 연결되어 있는지 확인합니다.
-  
+
 #### 로봇이 보행 중 쉽게 넘어지거나 걸음걸이가 불안합니다.
 - 로봇의 자세를 감지하는 자이로 센서가 제대로 동작하지 않습니다.
   > 조립서를 보고 자이로 센서가 올바르게 조립되었는지 확인합니다.
@@ -97,7 +97,7 @@ sidebar:
 
 ![](/assets/images/edu/bioloid/bp_act_4_1_KR.jpg)
 
-`Note` 모드를 선택하지 않고, 리모컨(RC-100) 버튼을 누르면 리모컨 조종 모드로 동작합니다.
+**NOTE** : 모드를 선택하지 않고, 리모컨(RC-100) 버튼을 누르면 리모컨 조종 모드로 동작합니다.
 {: .notice}
 
 #### 리모콘 조종 모드
@@ -334,18 +334,18 @@ sidebar:
 ### 태스크 코드 살펴 보기
 
 1. `자이로초기화` 함수 호출
-  
+
     ![](/assets/images/edu/bioloid/bp_tutorial_gyro_01_kr.png)
 
 2. 관절 오프셋 적용을 위한 밸런스페이지 실행    
   관절 오프셋이 적용되기 위해서는 모션이 실행되어야 합니다. 따라서 아무런 모션도 실행되고 있지 않은 상태에서는 자이로 센서에 의한 보정 값이 관절 오프셋에 입력되어도 적용이 되지 않기 때문에 밸런스페이지를 만들어서 아무런 모션도 실행되지 않을 때 실행하여 관절 오프셋이 항상 적용되도록 합니다.
-  
+
     ![](/assets/images/edu/bioloid/bp_tutorial_gyro_05_kr.png)
 
 3. `자이로초기화` 함수  
     - 자이로초기화 함수에는 약 0.128초 주기로 10번의 자이로 센서 값을 읽어와서 그 평균 값을 자이로 센서 기준값으로 저장합니다. (약 250 정도가 일반적인 기준값 임.)  
     - 만약 자이로 센서 값이 230 보다 작거나 270 보다 큰 경우에는 자이로 센서가 없는 것으로 간주하고 보정을 사용하지 않도록 설정합니다. (자이로 센서가 없거나 초기화 중 로봇이 많이 흔들린 경우)
-  
+
     ![](/assets/images/edu/bioloid/bp_tutorial_gyro_02_kr.png)
 
 4. 콜백 함수에서 보정값 계산  
@@ -353,7 +353,7 @@ sidebar:
     - 이 때 `자이로보정사용` 변수가 FALSE 이면 보정을 사용하지 않습니다. 따라서 메인 루틴에서 자이로 보정을 사용하지 않으려는 곳에 `자이로보정사용` 변수를 FALSE 로 설정하면 됩니다.
 
     ![](/assets/images/edu/bioloid/bp_tutorial_gyro_03_kr.png)  
-  
+
     - 계산된 보정 값을 관절 오프셋에 적용하여 로봇의 자세를 보정합니다. 앞/뒤 기울어짐을 보정하기 위해서는 무릎과 발목의 13, 14, 15, 16 번 관절을 사용하고, 좌/우 기울어짐을 보정하기 위해서는 발목과 허리의 9, 10, 17, 18 번 관절을 사용합니다.
 
     ![](/assets/images/edu/bioloid/bp_tutorial_gyro_04_kr.png)
@@ -399,7 +399,7 @@ RoboPlus Motion 프로그램을 사용하여 아래와 같은 4 가지 모션을
     ![](/assets/images/edu/bioloid/bp_tutorial_addmotion_10_kr.jpg)
 
 4. 위와 같이 로봇의 포즈를 설정하고 토크 온 버튼을 누르면 현재 로봇의 관절 값이 <로봇의 포즈> 에 자동으로 입력됩니다. 왼쪽 화살표 버튼을 누르면 현재 입력된 로봇의 관절 값을 <스텝의 포즈> 로 읽어올 수 있습니다.
-  
+
     ![](/assets/images/edu/bioloid/bp_tutorial_addmotion_03_kr.jpg)
 
 5. 멈춤 시간과 실행 시간을 조절합니다. ([스텝 멈춤/실행 시간의 자세한 정보는 여기를 참조하세요.])
@@ -411,11 +411,11 @@ RoboPlus Motion 프로그램을 사용하여 아래와 같은 4 가지 모션을
     ![](/assets/images/edu/bioloid/bp_tutorial_addmotion_05_kr.jpg)
 
 7. EXIT 페이지로 지정한 15번 페이지에 기본 자세로 돌아가기 위한 모션을 만들어 줍니다. 위의 오른쪽 공 막기 포즈와 같이 15번 모션 페이지에 스텝 3 개를 추가하여 각각 아래와 같은 포즈를 추가합니다.
-  
+
     ![](/assets/images/edu/bioloid/bp_tutorial_addmotion_06_kr.jpg)
 
 8. 추가 설정([반복 횟수, 재생 배속] 등). 각 페이지의 반복 횟수나 전체 속도 등을 추가로 설정할 수 있습니다.
-  
+
     ![](/assets/images/edu/bioloid/bp_tutorial_addmotion_07_kr.jpg)
 
 ### "왼쪽 공 막기" 모션 만들기
@@ -495,24 +495,24 @@ RoboPlus Motion 프로그램을 사용하여 아래와 같은 4 가지 모션을
 
 1. 그리퍼 제어 초기화
   그리퍼 제어를 위해 양 팔에 해당하는 관절들의 "관절 오프셋"에 1024 를 입력하여 모션 재생 시 양 팔 관절은 모션 데이터에 의한 제어를 받지 않도록 설정합니다. 그 외에 팔과 그리퍼의 움직임 속도, 그리퍼의 잡는 힘과 유연성 등의 값을 초기화 해 주고, 팔의 초기 자세를 잡아줍니다.  
-  
+
     ![](/assets/images/edu/bioloid/bp_tutorial_gripper_01_kr.png)  
 
 2. 콜백 함수(자이로 보정) 수정  
   콜백 함수에서 자이로 보정 값 적용 등을 위해 관절 오프셋을 사용하는 경우 그리퍼에 사용된 관절에 관절 오프셋을 설정하지 않도록 합니다. STEP 1 에서 그리퍼 제어 초기화를 위해 관절 오프셋을 1024 로 변경해 놓았는데, 이 값이 바뀌는 것을 막기 위함입니다.  
-  
+
     ![](/assets/images/edu/bioloid/bp_tutorial_gripper_04_kr.png)
 
 3. 그리퍼/팔 제어 함수  
   그리퍼와 팔을 제어하는 함수를 아래와 같이 작성합니다. 이 함수는 필요에 따라 모션 상태와 상관없이 호출하게 되면 그리퍼와 팔의 움직임을 제어합니다.
-    
+
     ![](/assets/images/edu/bioloid/bp_tutorial_gripper_02_kr.png)  
-    
+
     왼팔과 그리퍼 역시 위와 동일한 방법으로 함수를 작성해 줍니다.
 
 4. 리모컨으로 팔 및 그리퍼 제어  
   그리퍼 및 팔 제어 함수를 이용하여 리모컨으로 조종하는 코드를 추가합니다. 아래 코드는 [사용자 모션 추가(태스크 코드)] 부분을 참조하시면 도움이 됩니다.
-  
+
     ![](/assets/images/edu/bioloid/bp_tutorial_gripper_03_kr.png)  
 
 ### 다운로드 및 결과 확인
@@ -529,7 +529,7 @@ RoboPlus Motion 프로그램을 사용하여 아래와 같은 4 가지 모션을
 
 로보티즈 초급/종합 키트에서 사용되는 제어기인 CM-5 에 RoboPlus 프로그램을 사용하기 위해서는 반드시 펌웨어 업데이트가 필요합니다. 펌웨어 업데이트 방법은 RoboPlus Manager 의 펌웨어 업데이트를 참고하세요.
 {: .notice}
- 
+
 #### 태스크 코드 다운로드 준비
 
 1. 다운로드 할 태스크 코드 파일(*.tsk)을 RoboPlus Task에서 불러 옵니다.
@@ -546,32 +546,32 @@ RoboPlus Motion 프로그램을 사용하여 아래와 같은 4 가지 모션을
 
 1. PC와 제어기가 연결되어야 합니다.  
   태스크 코드를 다운로드하기 위해서는 PC와 제어기가 연결되어야 합니다. (연결 방법은 각 제어기 정보를 참고하세요.)
- 
+
 2. 사용할 통신 포트를 선택해야 합니다.  
   자동 찾기 기능을 이용하면 쉽게 통신 포트를 설정할 수 있습니다.
 
     ![](/assets/images/edu/bioloid/select_port.png)
 
-    RoboPlus Task 가 제어기를 찾지 못하면 아래와 같은 에러 메시지가 나타납니다. 
-    
+    RoboPlus Task 가 제어기를 찾지 못하면 아래와 같은 에러 메시지가 나타납니다.
+
     ![](/assets/images/edu/bioloid/cannot_find_controller.png)
 
     - PC와 제어기가 연결되어 있는지 확인합니다. (연결 방법은 각 제어기 정보를 참고하세요.)
     - 제어기의 전원이 켜져 있는지 확인합니다.
     - 제어기가 연결된 통신 포트가 바르게 선택되어 있는지 확인합니다.
- 
+
 3. 다운로드 메뉴를 선택합니다.
 
     ![](/assets/images/edu/bioloid/download_button.png)
 
     만약 프로그램에 오류가 있다면 오류를 찾아 수정해야 합니다. (룰 체크 에러 메시지 확인)
- 
+
 4. 다운로드를 진행합니다.
 
     ![](/assets/images/edu/bioloid/download_progress_bar.png)
 
     만약 다운로드에 실패했다면 처음부터 다시 시도합니다.
- 
+
 5. 태스크 코드(Task Code)를 실행한뒤 로봇의 동작을 실행 합니다.  
   제어기를 켜고 다운로드 한 태스크 코드를 실행합니다. (태스크 코드 실행 방법은 각 제어기 정보를 참고하세요.)
 
@@ -650,7 +650,7 @@ A타입에만 적용 가능하며, B와 C타입에 적용시에는, [로보플�
 |5+6+D+3|토크 오프|5+6+U+1|토크 온|
 |1 + U|앞으로 일어나기|1 + D|뒤로 일어나기|
 
-`Note` 4+U 와 4+L 은 같은 동작입니다.  마찬가지로 4+D와 4+R은 같은 동작입니다.
+**NOTE** : 4+U 와 4+L 은 같은 동작입니다.  마찬가지로 4+D와 4+R은 같은 동작입니다.
 {: .notice}
 
 ### [휴머노이드 축구](#휴머노이드-축구)
@@ -736,7 +736,6 @@ A타입에만 적용 가능하며, B와 C타입에 적용시에는, [로보플�
 |2.포크레인   <br />![](/assets/images/edu/bioloid/prm_excavator_kr.jpg)|  [Download][BIO_PRM_Excavator_ASM.pdf] 조립서 <br />[Download][BIO_PRM_Excavator_KR.tsk] 데모용 태스크 코드<br />[Download][BIO_PRM_Excavator_KR.mtn] 데모용 모션 파일<br/>[Download](http://www.robotis.com/video/BIO_PRM_Excavator.wmv) Video<br />`사용된 장치` CM-510/CM-530(1), AX-12+(8), 적외선 센서(1), 거리 센서(1)<br />`RoboPlus 문법`	함수, 호출, 로드, 계산, 무조건 반복, 만약, 아니면, 조건 대기<br />`알고리즘`	적외선 센서와 거리 센서 값에 따라 다이나믹셀 위치 제어<br />`동작 방법`<br />- 주행 경로 상에 장애물을 설치해 놓고 포크레인을 작동시킵니다.<br />- 전방에 물체가 감지되면 굴삭 작업을 하는 것을 확인합니다.<br/>물체를 든 상태에서 센서에 장애물이 감지되면, 감지된 방향으로 회전한 후 물체를 내려놓는 것을 확인합니다.|
 |3.로봇꽃    <br />![](/assets/images/edu/bioloid/prm_robotflower_kr.jpg)|  [Download][BIO_PRM_RobotFlower_ASM.pdf] 조립서 <br />[Download][BIO_PRM_RobotFlower_KR.tsk] 데모용 태스크 코드<br />[Download][BIO_PRM_RobotFlower_KR.mtn] 데모용 모션 파일<br/>[Download](http://www.robotis.com/video/BIO_PRM_RobotFlower.wmv) Video<br />`사용된 장치` CM-510/CM-530(1), AX-12+(6)<br />`RoboPlus 문법`	함수, 호출, 로드, 무조건 반복, 만약, 아니면, 조건 대기  <br />`알고리즘`	소리 감지 횟수에 따라 모션 제어<br />`동작 방법`<br />- 전원을 켜면 꽃잎을 펴고 춤추듯이 천천히 움직입니다.<br />- 박수 소리가 한번나면 꽃입을 천천히 오므립니다.<br/>박수 소리가 여러번나면 꽃입을 빨리 오므립니다.|
 |4.아기사슴   <br />![](/assets/images/edu/bioloid/prm_fawn_kr.jpg)|  [Download][BIO_PRM_Fawn_ASM.pdf] 조립서 <br />[Download][BIO_PRM_Fawn_KR.tsk] 데모용 태스크 코드<br/>[Download][BIO_PRM_Fawn_KR.mtn] 데모용 모션 파일<br />[Download](http://www.robotis.com/video/BIO_PRM_Fawn.wmv) Video<br />`사용된 장치` CM-510/CM-530(1), AX-12+(7), 적외선 센서(1)<br />`다이나믹셀 설정 값` AX-12+ ID[1]~ ID[7] : 관절모드<br />`RoboPlus 문법`	함수, 호출, 로드, 무조건 반복, 만약, 아니면 만약, 아니면, 조건 대기<br />`알고리즘`	적외선 센서 값에 따라 물체 인식<br />`동작 방법`<br />- 아무 변화가 없을 때, 아기 사슴은 앉아서 두리번거립니다.<br />- 얼굴에 물체를 대면, 그 물체를 계속 쫓아옵니다.|
-|5.거북이    <br />![](/assets/images/edu/bioloid/prm_tuttle_kr.jpg)|  [Download][BIO_PRM_Turtle_ASM.pdf] 조립서 <br />[Download][BIO_PRM_Turtle_KR.tsk] 데모용 태스크 코드<br/>[Download][BIO_PRM_Turtle_KR.mtn] 데모용 모션 파일<br />[Download](http://www.robotis.com/video/BIO_PRM_Turtle.wmv) Video<br />`사용된 장치` CM-510/CM-530(1), AX-12+(8), 적외선 센서(2), 거리 센서(1)<br />`다이나믹셀 설정 값`AX-12+ ID[1]~ ID[8] : 관절모드<br />`RoboPlus 문법`	함수, 호출, 로드, 무조건 반복, 만약, 아니면 만약, 아니면, 조건 대기<br />`알고리즘`	적외선 센서와 거리 센서 값에 따라 장애물 회피<br />`동작 방법`<br />- 보행 경로 상에 장애물을 설치해 놓고 거북이를 작동시킵니다.<br />- 거북이가 기어가다가 전방에 장애물을 만나면 피해가는 것을 확인합니다.|
 |5.거북이    <br />![](/assets/images/edu/bioloid/prm_tuttle_kr.jpg)|  [Download][BIO_PRM_Turtle_ASM.pdf] 조립서 <br />[Download][BIO_PRM_Turtle_KR.tsk] 데모용 태스크 코드<br/>[Download][BIO_PRM_Turtle_KR.mtn] 데모용 모션 파일<br />[Download](http://www.robotis.com/video/BIO_PRM_Turtle.wmv) Video<br />`사용된 장치` CM-510/CM-530(1), AX-12+(8), 적외선 센서(2), 거리 센서(1)<br />`다이나믹셀 설정 값`AX-12+ ID[1]~ ID[8] : 관절모드<br />`RoboPlus 문법`	함수, 호출, 로드, 무조건 반복, 만약, 아니면 만약, 아니면, 조건 대기<br />`알고리즘`	적외선 센서와 거리 센서 값에 따라 장애물 회피<br />`동작 방법`<br />- 보행 경로 상에 장애물을 설치해 놓고 거북이를 작동시킵니다.<br />- 거북이가 기어가다가 전방에 장애물을 만나면 피해가는 것을 확인합니다.|
 |6.거웍(GerWalk)     <br />![](/assets/images/edu/bioloid/prm_gerwalk_kr.jpg)|  [Download][BIO_PRM_GerWalk_ASM.pdf] 조립서 <br />[Download][BIO_PRM_GerWalk_KR.tsk] 데모용 태스크 코드<br/>[Download][BIO_PRM_GerWalk_KR.mtn] 데모용 모션 파일<br />[Download](http://www.robotis.com/video/BIO_PRM_GerWalk.wmv) Video<br />`사용된 장치` CM-510/CM-530(1), AX-12+(7), 적외선 센서(2), 거리 센서(1)<br />`다이나믹셀 설정 값`AX-12+ ID[1]~ ID[7] : 관절모드<br />`RoboPlus 문법`	함수, 호출, 로드, 무조건 반복, 만약, 아니면 만약, 아니면, 조건 반복<br />`알고리즘`	적외선 센서와 거리 센서 값에 따라 새의 보행 패턴 제어<br />`동작 방법`<br />- 보행 경로 상에 장애물을 설치해 놓고 거웍을 작동시킵니다.<br />- 보행 중 전방 및 좌우에 장애물이 감지되면 피해갑니다.|
 |7. 배틀드로이드      <br />![](/assets/images/edu/bioloid/prm_battledroid_kr.jpg)|  [Download][BIO_PRM_BattleDroid_ASM.pdf] 조립서 <br />[Download][BIO_PRM_BattleDroid_KR.tsk] 데모용 태스크 코드<br/>[Download][BIO_PRM_BattleDroid_KR.mtn] 데모용 모션 파일<br />[Download](http://www.robotis.com/video/BIO_PRM_BattleDroid.wmv) Video<br />`사용된 장치` CM-510/CM-530(1), AX-12+(8), 적외선 센서(1)<br />`다이나믹셀 설정 값`AX-12+ ID[1]~ ID[8] : 관절모드<br />`RoboPlus 문법`	변수, 함수, 호출, 로드, 계산, 무조건 반복, 만약, 아니면 만약, 아니면, 조건 대기<br />`알고리즘`	적외선 센서 값에 따라 다이나믹셀 제어<br />`동작 방법`<br />- 보행 경로 상에 장애물을 설치해 놓고 배틀 드로이드를 작동시킵니다.<br />- 보행 중에 장애물을 만나면 양 팔로 공격합니다.<br/>배틀 드로이드가 넘어졌을 때 전, 후면을 구분하여 스스로 일어납니다.|
@@ -848,14 +847,14 @@ CM-510, CM-530에서는 ADC포트와 OUT포트를 이용하여 간단히 제어�
   4. GND
   5. OUT2 : 3.3V 출력 가능 (최대 허용 전류 0.3A)
 
-참고 : 외부센서 사용시 5핀케이블을 사용해 주세요. [5핀 케이블]은 로보티즈 쇼핑몰에서 구매하실 수 있습니다.  
+참고 : 외부센서 사용시 5핀케이블을 사용해 주세요. 5핀 케이블은 로보티즈 쇼핑몰에서 구매하실 수 있습니다.  
 {: .notice}
 
 ### 사용자 장치 제어  
 
 #### 외부 출력 제어
 다음과 같은 LED 회로를 구성한다면, 1번 핀을 제어하여 LED를 껐다, 켤 수 있는 장치를 만들 수 있습니다. (제어기종류 및 LED의 종류에 따라 저항의 크기를 조정해야 합니다.)
-  
+ 
 ![](/assets/images/edu/bioloid/mcs_led_circuit_kr.png)
  
 RoboPlus Task에서 사용자 장치 OUT 포트에 High신호를 주는 방법은 다음과 같습니다.  
@@ -878,7 +877,7 @@ RoboPlus Task에서 사용자 장치 OUT 포트에 High신호를 주는 방법�
   ![](/assets/images/edu/bioloid/mcs_tilt_kr.png)  
  
 - Tilt센서의 왼쪽 핀은 5V VCC 입력핀, 가운데 핀은 아날로그 신호 출력핀, 오른쪽은 그라운드핀입니다. CM-510의 외부 포트에 서로 매칭되는 핀을 연결하여 주면 바로 사용할 수 있습니다. CM-510의 외부 포트 핀 정보를 참고하여 다음과 같이 연결하면 됩니 다.  
-  
+
   ![](/assets/images/edu/bioloid/mcs_cm-510_tilt_kr.png)  
  
 - 다음 예제와 같이 센서의 아날로그 출력값을 읽어와 로봇의 동작에 응용할 수 있습니다.  
@@ -962,7 +961,7 @@ B 타입 로봇에 그리퍼를 장착한 모습입니다.
 [BIO_PRM_RobotFlower_ASM.pdf]: http://www.robotis.com/download/doc/BIO_PRM_RobotFlower_ASM.pdf
 [BIO_PRM_RobotFlower_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_robotflower_kr.tsk
 [BIO_PRM_RobotFlower_KR.mtn]: http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_robotflower_kr.mtn
-[BIO_PRM_Fawn_ASM.pdf]: http://www.robotis.com/download/doc/BIO_PRM_Fawn_ASM.pdf 
+[BIO_PRM_Fawn_ASM.pdf]: http://www.robotis.com/download/doc/BIO_PRM_Fawn_ASM.pdf
 [BIO_PRM_Fawn_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_fawn_kr.tsk
 [BIO_PRM_Fawn_KR.mtn]: http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_fawn_kr.mtn
 [BIO_PRM_Turtle_ASM.pdf]: http://www.robotis.com/download/doc/BIO_PRM_Turtle_ASM.pdf
@@ -1004,22 +1003,14 @@ B 타입 로봇에 그리퍼를 장착한 모습입니다.
 [BIO_PRM_UserMotionExam_KR.mtn]: http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_usermotionexam_kr.mtn
 [BIO_PRM_GripperExam_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_gripperexam_kr.tsk
 [BIO_PRM_HumanoidTypeB_KR.mtn]: http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_humanoidtypeb_kr.mtn
-
-[스텝 멈춤/실행 시간의 자세한 정보는 여기를 참조하세요.]: http://emanual.robotis.com/docs/en/software/rplus1/motion/#???
-[반복 횟수, 재생 배속]:???
+[스텝 멈춤/실행 시간의 자세한 정보는 여기를 참조하세요.]: http://emanual.robotis.com/docs/kr/software/rplus1/motion/#스텝-멈춤-시간
+[반복 횟수, 재생 배속]: http://emanual.robotis.com/docs/kr/software/rplus1/motion/#페이지-반복속도-설정
 [자이로 센서를 이용한 보정]: #자이로-센서를-이용한-보정
-[사용자 모션 추가(모션 만들기)]: #사용자-모션-추가하기모션-만들기
-[사용자 모션 추가(태스크 코드)]: #사용자-모션-추가하기태스크-코드
-
-["모션 페이지" 파라미터에 대한 자세한 설명은 여기를 참고하세요.]:???
-[사용자 모션 추가(태스크 코드)]:???
-
+[사용자 모션 추가(모션 만들기)]: #사용자-모션-추가모션-만들기
+[사용자 모션 추가(태스크 코드)]: #사용자-모션-추가태스크-코드
+["모션 페이지" 파라미터에 대한 자세한 설명은 여기를 참고하세요.]: http://emanual.robotis.com/docs/kr/software/rplus1/task/programming_02/#모션-파라미터
 [그리퍼 장착]: #그리퍼-장착
-
-[다운로드 방법 참조]:???
-
-[RC-100 채널 바꾸는 방법 링크가기]:???
-[Zig2Serial 채널 바꾸는 방법 링크가기]:???
-[접촉 센서]: /docs/kr/parts/sensor/ts-10/ 
-[자세한 정보]:???
-[5핀 케이블]:???
+[다운로드 방법 참조]: #태스크-코드-다운로드-방법
+[RC-100 채널 바꾸는 방법 링크가기]: http://emanual.robotis.com/docs/kr/parts/communication/rc-100/#적외선-통신채널-설정-방법
+[Zig2Serial 채널 바꾸는 방법 링크가기]: http://emanual.robotis.com/docs/kr/parts/communication/zig2serial/#broadcast-채널-선택
+[접촉 센서]: /docs/kr/parts/sensor/ts-10/

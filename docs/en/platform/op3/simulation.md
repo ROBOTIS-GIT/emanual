@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/op3/simulation/
 sidebar:
-  title: ROBOTIS-OP3
+  title: ROBOTIS OP3
   nav: "op3"
 ---
 
@@ -24,10 +24,10 @@ ROS-Gazebo Package Installation
 [Gazebo Tutorials]
 
 ### Download Package
-[ROBOTIS-OP3 Common]
+[ROBOTIS OP3 Common]
 
 ### Additional Installation
-If ros-indigo-desktop-full was used to install, the following packages need to be installed.
+If ros-kinetic-desktop-full was used to install, the following packages need to be installed.
 ```
 # apt-get install ros-kinetic-ros-control
 # apt-get install ros-kinetic-ros-controllers
@@ -45,7 +45,7 @@ If Gazebo is running on the OPC, realtime factor can be decreased, therefore, it
 ### How to execute  
 * The command to call ROBOTIS-OP3 in Gazebo
 ```
-$ roslaunch robotis_op3_gazebo robotis_world.launch
+$ roslaunch op3_gazebo robotis_world.launch
 ```
 
 ![](/assets/images/platform/op3/op3_gazebo.png)
@@ -62,17 +62,16 @@ $ roslaunch op3_manager op3_gazebo.launch
 ### To improve gazebo simulation
 
 * Change joint gain   
-[Controller File]
+[Controller File]{: .popup}
 * Edit physics engine   
-[World File]
+[World File]{: .popup}
 
 
 
 
 [Gazebo Tutorials]: http://gazebosim.org/tutorials?cat=connect_ros
-[ROBOTIS-OP3 Common]: [robotis_op3_common.md]
-
-[op3_manager]: [op3_manager.md]
-[OP3 Tutorials]: [op3_tutorials.md]
-[Controller File]: https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Common/blob/master/robotis_op3_gazebo/config/position_controller.yaml
-[World File]: https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Common/blob/master/robotis_op3_gazebo/worlds/empty.world
+[ROBOTIS OP3 Common]: /docs/en/platform/op3/robotis_ros_packages/#op3-common
+[op3_manager]: /docs/en/platform/op3/robotis_ros_packages/#op3-manager
+[OP3 Tutorials]: /docs/en/platform/op3/tutorials/#tutorials
+[Controller File]: /docs/en/popup/position_controller.yaml/
+[World File]: /docs/en/popup/robotis_op3_gazebo_worlds_empty.world/

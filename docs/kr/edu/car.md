@@ -88,3 +88,11 @@ sidebar:
 ![](/assets/images/edu/car/carrobot_11.gif)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/bG-v-d0KbTc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+# [교육자료 다운로드](#교육자료-다운로드)
+
+- `다운로드` [ROBOTIS R+Scratch]
+- `다운로드` [ROBOTCAR entry]
+
+[ROBOTIS R+Scratch]: http://www.robotis.com/service/download.php?no=747
+[ROBOTCAR entry]: http://www.robotis.com/service/download.php?no=746

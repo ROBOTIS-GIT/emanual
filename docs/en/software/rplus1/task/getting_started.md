@@ -17,7 +17,7 @@ A `Task` is a set of motions to perform a certain actions. RoboPlus refers to th
 
 Task code files have a file extension _.tsk_, and the icon shown on the left.
 
-`Note` Task files from newer versions are not compatible with older versions.
+**NOTE** : Task files from newer versions are not compatible with older versions.
 {: .notice}
 
 ![R+Task][R+task]
@@ -38,7 +38,7 @@ RoboPlus is a software to create a customized programme for every ROBOTIS produc
 
 ![img_install][img_install]
 
-`Note` To execute RoboPlus, .NET FrameWork 3.5 or higher version is required. When installing RoboPlus, if the automatic installation of .NET FrameWork fails, .NET FrameWork must be installed separately.
+**NOTE** : To execute RoboPlus, .NET FrameWork 3.5 or higher version is required. When installing RoboPlus, if the automatic installation of .NET FrameWork fails, .NET FrameWork must be installed separately.
 {: .notice}
 
 ### RoboPlus Install Failure
@@ -204,9 +204,9 @@ Please refer to the table below to control the remote control with the  keyboard
 |6|Number Key(6)|
 
 [RoboPlus Task]: http://en.robotis.com/service/downloadpage.php?cate=software
-[Microsoft Download Center]: http://www.microsoft.com/downloads/Search.aspx?displaylang=ko
-[Windows installer 3.1]: http://www.microsoft.com/downloads/details.aspx?FamilyID=889482fc-5f56-4a38-b838-de776fd4138c&DisplayLang=ko
-[.NET Framework 3.5]: http://www.microsoft.com/downloads/details.aspx?FamilyID=d0e5dea7-ac26-4ad7-b68c-fe5076bba986&DisplayLang=ko
+[Microsoft Download Center]: http://www.microsoft.com/downloads/Search.aspx?displaylang=en
+[Windows installer 3.1]: http://www.microsoft.com/downloads/details.aspx?FamilyID=889482fc-5f56-4a38-b838-de776fd4138c&DisplayLang=en
+[.NET Framework 3.5]: http://www.microsoft.com/downloads/details.aspx?FamilyID=d0e5dea7-ac26-4ad7-b68c-fe5076bba986&DisplayLang=en
 [controller information]: /docs/en/parts/controller/controller_compatibility/
 [rule check error messages]: /docs/en/software/rplus1/task/task_misc/#rule-check
 [Error Messages]: /docs/en/software/rplus1/task/task_misc/#error-messages

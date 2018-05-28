@@ -113,7 +113,7 @@ This method utilizes BT-210 Bluetooth module or ZigBee (ZIG-110A Set + ZIG2Seria
 1. Go to the Scratch2Offline download page (https://scratch.mit.edu/scratch2download/)
 2. Download Adobe AIR and the Scratch Offline Editor for your OS.
 
-`Note` If Scratch2Offline is not installed, clicking on the “New Scratch” or “Open Scratch” buttons from R+ Scratch’s Home Screen will link to the Scratch2Offline download page.
+**NOTE** : If Scratch2Offline is not installed, clicking on the “New Scratch” or “Open Scratch” buttons from R+ Scratch’s Home Screen will link to the Scratch2Offline download page.
 {: .notice}
  
 ## Installing the ROBOTIS Virtual COM Port Driver

@@ -36,8 +36,8 @@
 <meta property="og:title" content="ROBOTIS e-Manual">
 
 
-  <link rel="canonical" href="http://localhost:4000/docs/help/">
-  <meta property="og:url" content="http://localhost:4000/docs/help/">
+  <link rel="canonical" href="http://emanual.robotis.com/docs/help/">
+  <meta property="og:url" content="http://emanual.robotis.com/docs/help/">
 
 
 
@@ -65,7 +65,7 @@
       "@context" : "http://schema.org",
       "@type" : "Person",
       "name" : "ROBOTIS",
-      "url" : "http://localhost:4000",
+      "url" : "http://emanual.robotis.com",
       "sameAs" : null
     }
   </script>
@@ -78,9 +78,10 @@
 <!-- end SEO -->
 
 
-<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="ROBOTIS e-Manual Feed">
+<link href="http://emanual.robotis.com/feed.xml" type="application/atom+xml" rel="alternate" title="ROBOTIS e-Manual Feed">
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<!-- <script src="/assets/js/plugins/jquery.fitvids.js"></script> -->
 
 <!-- http://t.co/dKP3o1e -->
 <meta name="HandheldFriendly" content="True">
@@ -88,7 +89,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
+<link rel="stylesheet" href="http://emanual.robotis.com/assets/css/main.css">
 
 <!--[if lte IE 9]>
   <style>
@@ -110,13 +111,13 @@
     <!-- start custom head snippets -->
 <script>
 $(function() {
-  return $("h2, h3, h4, h5, h6").each(function(i, el) {
+  return $("h1, h2, h3, h4, h5, h6").each(function(i, el) {
     var $el, icon, id;
     $el = $(el);
     id = $el.attr('id');
     icon = '<i class="fa fa-link"></i>';
     if (id) {
-      return $el.append($("<a />").addClass("header-link").attr("href", "#" + id).html(icon));
+      return $el.append($("<a />").addClass("header-link").attr("href", "#" + decodeURI(id)).attr("onclick", "copyurl(this);").html(icon));
     }
   });
 });
@@ -185,6 +186,55 @@ $(function() {
     	});
     });
     </script>
+    <script>
+      // var side_nav = document.getElementById("sidebar");
+      var offset = 105;
+    
+      window.onscroll = function () {
+        stickynav()
+      };
+      
+      function stickynav() {
+        if (window.pageYOffset > offset) {
+          sidebar__left.classList.add("sticky_sidebar");
+        }
+        else {
+          sidebar__left.classList.remove("sticky_sidebar");
+        }
+      }
+    </script>
+    <script>
+      var toggle = 0;
+      
+      function extendnav() {
+        if (toggle == 0) {
+          sidebar__left.classList.add("extend_sidebar");
+          toggle = 1;
+        }
+        else {
+          sidebar__left.classList.remove("extend_sidebar");
+          toggle = 0;
+        }
+      }
+    </script>
+    <script>
+      function copyurl(item)
+        {
+          // location.href = item.href;
+          var copiedurl = decodeURI(item.href);
+          var tempurl = $('<input>').val(copiedurl).appendTo('body').select();
+          document.execCommand('copy');
+          // console.log(copiedurl);
+          // document.getElementById(id).href;
+          // document.execCommand('copy');
+        }
+    </script>
+    <script>
+      function movetopage(targeturl)
+      {
+        location.href=targeturl;
+      }
+    </script>
   </head>
 
   <body class="layout--home">
@@ -196,7 +246,7 @@ $(function() {
     <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
-      <a class="site-title" href="http://localhost:4000/"><img class="logo" id="logo" src="/assets/images/robotis_emanual_logo.png"></a>
+      <a class="site-title" href="http://emanual.robotis.com/"><img class="logo" id="logo" src="/assets/images/robotis_emanual_logo.png"></a>
       <!-- Google Custom Search -->
       <form class="searchbox" method="get" id="site_search">
         <script>
@@ -221,13 +271,15 @@ $(function() {
           new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'ar,de,es,fr,hi,ja,ko,pt,ru,sv,th,tr,vi,zh-CN', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, multilanguagePage: true, gaTrack: true, gaId: 'UA-83196341'}, 'google_translate_element');
         }
         </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-        <!-- end of Google Translation -->  
+        <!-- end of Google Translation -->
+        
+
         
         
-        <button class="switch_ko_en" id="switch_ko_en">
-          
+        
+        <a href=""><button class="switch_ko_en" id="switch_ko_en">N/A</button></a>
       </div>
-      
+
       <input class="menu-btn" type="checkbox" id="menu-btn" />
       <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
         <ul class="mobile_nav__items">
@@ -242,55 +294,55 @@ $(function() {
             <ul>
             
               
-              
-              
-                
-              
-            
-              
-              
+
               
                 
               
             
               
-              
-              
-                
-              
-            
-              
-              
+
               
                 
               
             
               
-              
-              
-                
-              
-            
-              
-              
+
               
                 
               
             
               
-              
-              
-                
-              
-            
-              
-              
+
               
                 
               
             
               
+
               
+                
+              
+            
+              
+
+              
+                
+              
+            
+              
+
+              
+                
+              
+            
+              
+
+              
+                
+              
+            
+              
+
               
                 
               
@@ -312,55 +364,61 @@ $(function() {
             <ul>
             
               
-              
-              
-                
-              
-            
-              
-              
+
               
                 
               
             
               
-              
-              
-                
-              
-            
-              
-              
+
               
                 
               
             
               
-              
-              
-                
-              
-            
-              
-              
+
               
                 
               
             
               
-              
-              
-                
-              
-            
-              
-              
+
               
                 
               
             
               
+
               
+                
+              
+            
+              
+
+              
+                
+              
+            
+              
+
+              
+                
+              
+            
+              
+
+              
+                
+              
+            
+              
+
+              
+                
+              
+            
+              
+
               
                 
               
@@ -382,55 +440,61 @@ $(function() {
             <ul>
             
               
-              
-              
-                
-              
-            
-              
-              
+
               
                 
               
             
               
-              
-              
-                
-              
-            
-              
-              
+
               
                 
               
             
               
-              
-              
-                
-              
-            
-              
-              
+
               
                 
               
             
               
-              
-              
-                
-              
-            
-              
-              
+
               
                 
               
             
               
+
               
+                
+              
+            
+              
+
+              
+                
+              
+            
+              
+
+              
+                
+              
+            
+              
+
+              
+                
+              
+            
+              
+
+              
+                
+              
+            
+              
+
               
                 
               
@@ -452,43 +516,55 @@ $(function() {
             <ul>
             
               
-              
-              
-                
-              
-            
-              
-              
+
               
                 
               
             
               
-              
-              
-                
-              
-            
-              
-              
+
               
                 
               
             
               
-              
-              
-                
-              
-            
-              
-              
+
               
                 
               
             
               
+
               
+                
+              
+            
+              
+
+              
+                
+              
+            
+              
+
+              
+                
+              
+            
+              
+
+              
+                
+              
+            
+              
+
+              
+                
+              
+            
+              
+
               
                 
               
@@ -510,37 +586,37 @@ $(function() {
             <ul>
             
               
-              
-              
-                
-              
-            
-              
-              
+
               
                 
               
             
               
-              
-              
-                
-              
-            
-              
-              
+
               
                 
               
             
               
-              
+
               
                 
               
             
               
+
               
+                
+              
+            
+              
+
+              
+                
+              
+            
+              
+
               
                 
               
@@ -557,7 +633,7 @@ $(function() {
 
           
           <li class="mobile_depth_1">
-            <a href="http://localhost:4000/docs/"></a>
+            <a href="http://emanual.robotis.com/docs/"></a>
           </li>
           
 
@@ -936,247 +1012,6 @@ $(function() {
 
             </div>
             
-            </div>
-          
-
-        </div>
-      
-        
-
-        <div class="dropdown">
-          
-
-          
-            <div class="dropdown-content">
-            
-              <div class="dropdown-content-wrapper">
-              
-
-              
-
-              
-              <div class="dropdown-2nd-content">
-                
-                  
-
-                  
-                
-                  
-
-                  
-                
-                  
-
-                  
-                
-                  
-
-                  
-                
-              </div>
-              
-
-            </div>
-            
-              <div class="dropdown-content-wrapper">
-              
-
-              
-
-              
-              <div class="dropdown-2nd-content">
-                
-                  
-
-                  
-                
-                  
-
-                  
-                
-                  
-
-                  
-                
-                  
-
-                  
-                
-                  
-
-                  
-                
-                  
-
-                  
-                
-              </div>
-              
-
-            </div>
-            
-              <div class="dropdown-content-wrapper">
-              
-
-              
-
-              
-              <div class="dropdown-2nd-content">
-                
-                  
-
-                  
-                
-                  
-
-                  
-                
-                  
-
-                  
-                
-                  
-
-                  
-                
-                  
-
-                  
-                
-              </div>
-              
-
-            </div>
-            
-              <div class="dropdown-content-wrapper">
-              
-
-              
-
-              
-              <div class="dropdown-2nd-content">
-                
-                  
-
-                  
-                
-                  
-
-                  
-                
-                  
-
-                  
-                
-              </div>
-              
-
-            </div>
-            
-              <div class="dropdown-content-wrapper">
-              
-
-              
-
-              
-              <div class="dropdown-2nd-content">
-                
-                  
-
-                  
-                
-                  
-
-                  
-                
-                  
-
-                  
-                
-              </div>
-              
-
-            </div>
-            
-              <div class="dropdown-content-wrapper">
-              
-
-              
-
-              
-              <div class="dropdown-2nd-content">
-                
-                  
-
-                  
-                
-                  
-
-                  
-                
-              </div>
-              
-
-            </div>
-            
-              <div class="dropdown-content-wrapper">
-              
-
-              
-
-              
-              <div class="dropdown-2nd-content">
-                
-                  
-
-                  
-                
-                  
-
-                  
-                
-              </div>
-              
-
-            </div>
-            
-              <div class="dropdown-content-wrapper">
-              
-
-              
-
-              
-              <div class="dropdown-2nd-content">
-                
-                  
-
-                  
-                
-                  
-
-                  
-                
-                  
-
-                  
-                
-                  
-
-                  
-                
-                  
-
-                  
-                
-                  
-
-                  
-                
-              </div>
-              
-
-            </div>
-            
               <div class="dropdown-content-wrapper">
               
 
@@ -1215,23 +1050,6 @@ $(function() {
 
                   
                 
-              </div>
-              
-
-            </div>
-            
-              <div class="dropdown-content-wrapper">
-              
-
-              
-
-              
-              <div class="dropdown-2nd-content">
-                
-                  
-
-                  
-                
                   
 
                   
@@ -1256,31 +1074,6 @@ $(function() {
                   
 
                   
-                
-                  
-
-                  
-                
-                  
-
-                  
-                
-                  
-
-                  
-                
-              </div>
-              
-
-            </div>
-            
-              <div class="dropdown-content-wrapper">
-              
-
-              
-
-              
-              <div class="dropdown-2nd-content">
                 
                   
 
@@ -1331,6 +1124,14 @@ $(function() {
 
                   
                 
+                  
+
+                  
+                
+                  
+
+                  
+                
               </div>
               
 
@@ -1343,6 +1144,123 @@ $(function() {
 
               
               <div class="dropdown-2nd-content">
+                
+                  
+
+                  
+                
+                  
+
+                  
+                
+                  
+
+                  
+                
+              </div>
+              
+
+            </div>
+            
+              <div class="dropdown-content-wrapper">
+              
+
+              
+
+              
+              <div class="dropdown-2nd-content">
+                
+                  
+
+                  
+                
+                  
+
+                  
+                
+                  
+
+                  
+                
+              </div>
+              
+
+            </div>
+            
+              <div class="dropdown-content-wrapper">
+              
+
+              
+
+              
+              <div class="dropdown-2nd-content">
+                
+                  
+
+                  
+                
+                  
+
+                  
+                
+                  
+
+                  
+                
+                  
+
+                  
+                
+              </div>
+              
+
+            </div>
+            
+              <div class="dropdown-content-wrapper">
+              
+
+              
+
+              
+              <div class="dropdown-2nd-content">
+                
+                  
+
+                  
+                
+                  
+
+                  
+                
+              </div>
+              
+
+            </div>
+            
+              <div class="dropdown-content-wrapper">
+              
+
+              
+
+              
+
+            </div>
+            
+              <div class="dropdown-content-wrapper">
+              
+
+              
+
+              
+              <div class="dropdown-2nd-content">
+                
+                  
+
+                  
+                
+                  
+
+                  
                 
                   
 
@@ -1390,6 +1308,212 @@ $(function() {
 
               
               <div class="dropdown-2nd-content">
+                
+                  
+
+                  
+                
+                  
+
+                  
+                
+              </div>
+              
+
+            </div>
+            
+              <div class="dropdown-content-wrapper">
+              
+
+              
+
+              
+              <div class="dropdown-2nd-content">
+                
+                  
+
+                  
+                
+                  
+
+                  
+                
+                  
+
+                  
+                
+              </div>
+              
+
+            </div>
+            
+              <div class="dropdown-content-wrapper">
+              
+
+              
+
+              
+              <div class="dropdown-2nd-content">
+                
+                  
+
+                  
+                
+                  
+
+                  
+                
+                  
+
+                  
+                
+                  
+
+                  
+                
+              </div>
+              
+
+            </div>
+            
+              <div class="dropdown-content-wrapper">
+              
+
+              
+
+              
+              <div class="dropdown-2nd-content">
+                
+                  
+
+                  
+                
+                  
+
+                  
+                
+                  
+
+                  
+                
+                  
+
+                  
+                
+                  
+
+                  
+                
+              </div>
+              
+
+            </div>
+            
+              <div class="dropdown-content-wrapper">
+              
+
+              
+
+              
+              <div class="dropdown-2nd-content">
+                
+                  
+
+                  
+                
+                  
+
+                  
+                
+                  
+
+                  
+                
+                  
+
+                  
+                
+              </div>
+              
+
+            </div>
+            
+              <div class="dropdown-content-wrapper">
+              
+
+              
+
+              
+              <div class="dropdown-2nd-content">
+                
+                  
+
+                  
+                
+                  
+
+                  
+                
+                  
+
+                  
+                
+              </div>
+              
+
+            </div>
+            
+              <div class="dropdown-content-wrapper">
+              
+
+              
+
+              
+
+            </div>
+            
+              <div class="dropdown-content-wrapper">
+              
+
+              
+
+              
+
+            </div>
+            
+              <div class="dropdown-content-wrapper">
+              
+
+              
+
+              
+
+            </div>
+            
+            </div>
+          
+
+        </div>
+      
+        
+
+        <div class="dropdown">
+          
+
+          
+            <div class="dropdown-content">
+            
+              <div class="dropdown-content-wrapper">
+              
+
+              
+
+              
+              <div class="dropdown-2nd-content">
+                
+                  
+
+                  
                 
                   
 
@@ -1628,7 +1752,7 @@ $(function() {
         </div>
       
     </div>
-    
+
     <div>
       <ul id="search_results" style="margin: 0; background-color: #ffebeb"></ul>
     </div>
@@ -1640,132 +1764,12 @@ $(function() {
 
 
 
-<script>
-  var side_nav = document.getElementById("sidebar");
-  var offset = 105;
-
-  window.onscroll = function () {
-    stickynav()
-  };
-  
-  function stickynav() {
-    if (window.pageYOffset > offset) {
-      sidebar.classList.add("sticky_sidebar");
-    }
-    else {
-      sidebar.classList.remove("sticky_sidebar");
-    }
-  }
-  
-  var toggle = 0;
-  var mobile_width = 960;
-  
-  function extendnav() {
-    if (document.body.clientWidth < mobile_width ) {
-      if (toggle == 0) {
-        sidebar.classList.add("extend_sidebar");
-        toggle = 1;
-      }
-      else {
-        sidebar.classList.remove("extend_sidebar");
-        toggle = 0;
-      }
-    }
-  }
-</script>
-
 <div id="main" role="main">
-  
-  <div class="sidebar__left" id="sidebar">
-  
-
-<div itemscope itemtype="http://schema.org/Person">
-
-  
-
-  <div class="author__content">
-    <h3 class="author__name" itemprop="name">Your Name</h3>
-    
-      <p class="author__bio" itemprop="description">
-        I am an amazing person.
-      </p>
-    
-  </div>
-
-  <div class="author__urls-wrapper">
-    <button class="btn btn--inverse">Follow</button>
-    <ul class="author__urls social-icons">
-      
-        <li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
-          <i class="fa fa-fw fa-map-marker" aria-hidden="true"></i> <span itemprop="name">Somewhere</span>
-        </li>
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      <!--
-  <li>
-    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs">
-      <i class="fa fa-fw" aria-hidden="true"></i> Custom Social Profile Link
-    </a>
-  </li>
--->
-    </ul>
-  </div>
-</div>
-
-  
-  </div>
-
-
   <button class="nav_button" id="nav_button" onclick="extendnav()">ToC</button>
-  <button class="backtotop" id="backtotop"><a href="#">&#9650;<br />TOP</a></button>
+  <a href="#"><button class="backtotop" id="backtotop">&#9650;<br />TOP</button></a>
+  <div class="sidebar__left" id="sidebar__left">
+  
+  </div>
   <div class="archive" id="archive">
     <a href="/blob/master/docs/help.html" itemprop="sameAs" style="font-size:16px; float:right; margin: 10px 20px; text-decoration: none;">
       <i class="fa fa-fw fa-github" aria-hidden="true"></i> Edit on GitHub
@@ -1787,18 +1791,35 @@ $(function() {
 
 <!-- end custom footer snippets -->
         
+<script>
+$reference = $(".archive");
+$(window).resize(function() {
+  var newWidth = $reference.width() * 0.90;
+  if (newWidth > 640) { newWidth = 640; }
+
+  // Resize all videos according to aspect ratio
+  $("iframe").each(
+    function(index, elem) {
+      elem.setAttribute("width", (newWidth).toFixed());
+      elem.setAttribute("height", (newWidth*0.56).toFixed());
+    }
+  );
+// Kick off one resize to fix all videos on page load
+}).resize();
+</script>
 
 <div class="page__footer-copyright">&copy; 2018 ROBOTIS. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>
 
-    <script src="http://localhost:4000/assets/js/main.min.js"></script>
+    <script src="http://emanual.robotis.com/assets/js/main.min.js"></script>
 
 
 
 
-  <script type="text/javascript">
+  
+    <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-83196341-13']);
   _gaq.push(['_trackPageview']);
@@ -1809,6 +1830,8 @@ $(function() {
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
 </script>
+  
+
 
 
 

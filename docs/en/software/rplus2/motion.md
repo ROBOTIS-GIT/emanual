@@ -445,7 +445,7 @@ The Index Number of the Motion data downloaded on the controller must match the 
     ![](/assets/images/sw/rplus2/motion/roboplus_motion_073.gif)
  
 {% capture rplus2_motion_warning_01 %}
-`Caution` When copying data between Motion files
+**CAUTION** : When copying data between Motion files
 - Data that can be copied : joint value, Key-Frame, Motion Unit, and Motion.
 - If a data with the same name already exists in the new (blank) project, the data will not copy.
 - Copying must be proceeded in the order of Motion Unit -> Motion. If a Motion is copied without copying any Motion Units, an empty Motion will be pasted.
@@ -480,7 +480,7 @@ RoboPlus Motion 2.0 (R+ Motion 2.0) can also open the old RoboPlus Motion 1.0 fi
  
 ![](/assets/images/sw/rplus2/motion/roboplus_motion_077.gif)
  
-`Caution` After the mtn file is converted in an mtnx file, the storage capacity or Motion Index Number may be altered. Once you have converted the file, please check the Index Numbers again.
+**CAUTION** : After the mtn file is converted in an mtnx file, the storage capacity or Motion Index Number may be altered. Once you have converted the file, please check the Index Numbers again.
 {: .notice--warning}
 
 1. Run RoboPlus Motion (1.0)

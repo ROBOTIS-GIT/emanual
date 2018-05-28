@@ -15,13 +15,13 @@ sidebar:
 
 # [Example](#example)
 
-**Note :** This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+**NOTE** : This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 {: .notice--info}
 
-**Warning :** Make sure to run the [Bringup](#bringup) instruction before performing Example.
+**WARNING** : Make sure to run the [Bringup](#bringup) instruction before performing Example.
 {: .notice--warning}
 
-**Warning :** Be careful when testing the robot on the table as the robot might fall.
+**WARNING** : Be careful when testing the robot on the table as the robot might fall.
 {: .notice--warning}
 
 **Tip :** The example is supposed to be running on the remote PC. **Follow the instruction on your Remote PC**.
@@ -84,18 +84,11 @@ Turtlebot3 can be moved by interactive markers on RViz. You can move the turtleb
 **[Remote PC]** Open a new terminal and launch the remote file.
 If you have TurtleBot3 Burger,
 
+**Tip :** TB3_MODEL = `burger`, `waffle`, `waffle_pi` 
+{: .notice--info}
+
 ``` bash
-$ export TURTLEBOT3_MODEL=burger
-```
-or Waffle
-``` bash
-$ export TURTLEBOT3_MODEL=waffle
-```
-or Waffle_pi
-``` bash
-$ export TURTLEBOT3_MODEL=waffle_pi
-```
-``` bash
+$ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ roslaunch turtlebot3_bringup turtlebot3_remote.launch
 ```
 
@@ -119,7 +112,7 @@ Turtlebot3 can be moved or stopped by LDS data. When the turtlebot3 moves, it st
 $ rosrun turtlebot3_example turtlebot3_obstacle.py
 ```
 
-## [Point operaion](#point-operation)
+## [Point operation](#point-operation)
 
 Turtlebot3 can be moved by 2D point(x,y) and z-angular. For example, if you insert (0.5, 0.3, 60), turtlebot3 moves to point (x = 0.5m, y = 0.3m) and then rotates 60 deg.
 

@@ -46,14 +46,14 @@ sidebar:
 `주의` 제어기에 프로그램을 다운로드 받으면, 그전에 다운받은 프로그램은 지워집니다. 예제 동작시 음원이나 음성이 재생되는 것을 함께 확인하기 위해서는 스마트 기기의 미디어 볼륨을 반드시 키우고 실행하길 권장합니다.  
 {: .notice}
 
-`Note` 예제  task파일은 [스마트2단계 교안예제] 페이지 또는 R+ SMART앱 에서 얻을 수 있습니다.   
+**NOTE** : 예제  task파일은 [스마트2단계 교안예제] 페이지 또는 R+ SMART앱 에서 얻을 수 있습니다.   
 {: .notice}
 
 # [교안예제](#교안예제)
 
 {% capture smart1-2_01 %}
 각 예제의 조립 방법이나 실행 시 동작에 관한 내용은 교육키트 2단계 교안을 참고하세요.  
-또한  [예제 태스크 코드의 다운로드 방법은 여기를 참고하세요.]  
+또한  예제 태스크 코드의 다운로드 방법은 [태스크 코드 다운로드]를 참고하세요.  
 다운로드시 필요한 [BT-210] 은 1단계 구성품에 포함되어 있습니다. 분실시 쇼핑몰에서 별도 구매 해주세요.
 {% endcapture %}
 
@@ -61,14 +61,14 @@ sidebar:
 
 1. 단원별 예제 프로그램
 
-|로봇|태스크 코드|설명|
-| :---: | :-----: | :--- |
-|1. 룰렛 로봇<br />![](/assets/images/edu/smart/roulette.jpg)|[Download][01_SMART_L2_ROULETETTE_KR.tsk]<br />[Download][02_SMART_L2_Color_test_KR.tsk]|-로봇 예제 프로그램<br />-프로그래밍 예제 프로그램|
-|2. 스마트레이싱카<br /> ![](/assets/images/edu/smart/racingcar.jpg)|[Download][01_SMART_L2_RACINGCAR_KR.tsk]<br />[Download][02_SMART_L2_vibration_test_KR.tsk]|-로봇 예제 프로그램<br />-프로그래밍 예제 프로그램|
-|3. 금고<br />![](/assets/images/edu/smart/strongbox.jpg)|[Download][01_SMART_L2_STRONGBOX_KR.tsk]<br />[Download][02_SMART_L2_Touch_test_KR.tsk]|-로봇 예제 프로그램<br />-프로그래밍 예제 프로그램|
-|4. 검투사<br />![](/assets/images/edu/smart/gladiator.jpg)|[Download][01_SMART_L2_GLANDIATOR_KR.tsk]<br />[Download][02_SMART_L2_FaceDetecting_KR.tsk]<br />|-로봇 예제 프로그램<br />-프로그래밍 예제 프로그램|
-|5. 대포로봇<br />![](/assets/images/edu/smart/tank.jpg)|[Download][01_SMART_L2_TANK_KR.tsk]<br />[Download][02_SMART_L2_TILT_test_KR.tsk]|-프로그래밍 예제 프로그램<br />-로봇 예제 프로그램|
-|6. 알람시계<br />![](/assets/images/edu/smart/alarmclock.jpg)|[Download][01_SMART_L2_ALARMCLOCK_KR.tsk]<br />[Download][02_SMART_L2_Clock_test_KR.tsk]|-로봇 예제 프로그램<br />-프로그래밍 예제 프로그램|
+|로봇|태스크 코드|
+| :---: | :-----: |
+|1. 룰렛 로봇<br />![](/assets/images/edu/smart/roulette.jpg)|[로봇 예제 프로그램][01_SMART_L2_ROULETETTE_KR.tsk]<br />[프로그래밍 예제 프로그램][02_SMART_L2_Color_test_KR.tsk]|
+|2. 스마트레이싱카<br /> ![](/assets/images/edu/smart/racingcar.jpg)|[로봇 예제 프로그램][01_SMART_L2_RACINGCAR_KR.tsk]<br />[프로그래밍 예제 프로그램][02_SMART_L2_vibration_test_KR.tsk]|
+|3. 금고<br />![](/assets/images/edu/smart/strongbox.jpg)|[로봇 예제 프로그램][01_SMART_L2_STRONGBOX_KR.tsk]<br />[프로그래밍 예제 프로그램][02_SMART_L2_Touch_test_KR.tsk]|
+|4. 검투사<br />![](/assets/images/edu/smart/gladiator.jpg)|[로봇 예제 프로그램][01_SMART_L2_GLANDIATOR_KR.tsk]<br />[프로그래밍 예제 프로그램][02_SMART_L2_FaceDetecting_KR.tsk]|
+|5. 대포로봇<br />![](/assets/images/edu/smart/tank.jpg)|[로봇 예제 프로그램][01_SMART_L2_TANK_KR.tsk]<br />[프로그래밍 예제 프로그램][02_SMART_L2_TILT_test_KR.tsk]|
+|6. 알람시계<br />![](/assets/images/edu/smart/alarmclock.jpg)|[로봇 예제 프로그램][01_SMART_L2_ALARMCLOCK_KR.tsk]<br />[프로그래밍 예제 프로그램][02_SMART_L2_Clock_test_KR.tsk]|
 
 
 [R+SMART]: /docs/kr/software/mobile_app/rplussmart/#r-smart-다운로드설치
@@ -77,7 +77,7 @@ sidebar:
 [자석센서]: /docs/kr/parts/sensor/mgss-10/
 [R+ SMART 설치 및 예제 다운로드 방법 바로가기]: /docs/kr/software/mobile_app/rplussmart/#r-smart-다운로드설치
 [스마트2단계 교안예제]: #교안예제
-[예제 태스크 코드의 다운로드 방법은 여기를 참고하세요.]: /docs/kr/faq/download_task_code/
+[태스크 코드 다운로드]: /docs/kr/faq/download_task_code/
 [BT-210]: /docs/kr/parts/communication/bt-210/
 [01_SMART_L2_ROULETETTE_KR.tsk]: http://support.robotis.com/ko/baggage_files/smart/01_smart_l2_roulette_kr.tsk
 [02_SMART_L2_Color_test_KR.tsk]: http://support.robotis.com/ko/baggage_files/smart/02_smart_l2_color_test_kr.tsk

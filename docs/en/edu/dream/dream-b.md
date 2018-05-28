@@ -22,7 +22,7 @@ Set B combines the parts from the existing products ROBOTIS DREAM Level 3 and Le
 - Assembly manual for all 24 robots available through RoboPlus Design SW.
 - Full workbook for students available (sold separately).
 
-`Caution` ROBOTIS DREAM SET B requires parts from ROBOTIS DREAM SET A. Please make sure to purchase SET A  to build the robots in SET B. Users must program the robots or download the program into the controller([CM-150]) to operate the robot. To download programs, you will need the USB cable included in SET A.
+**CAUTION** : ROBOTIS DREAM SET B requires parts from ROBOTIS DREAM SET A. Please make sure to purchase SET A  to build the robots in SET B. Users must program the robots or download the program into the controller([CM-150]) to operate the robot. To download programs, you will need the USB cable included in SET A.
 
 # [Part List](#part-list)
 

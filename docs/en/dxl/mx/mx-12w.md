@@ -26,7 +26,7 @@ sidebar:
 | Dimensions (W x H x D) | 32mm x 50mm x 40mm |
 | Gear Ratio | 32 : 1  |
 | No Load Speed | 470rpm (at 12V) |
-| Operating Temperature | -5&deg;C ~ +80&deg;C |
+| Operating Temperature | -5&deg;C ~ +70&deg;C |
 | Input Voltage | 10 ~ 14.8V (**Recommended : 12V**) |
 | Standby Current | 60mA |
 | Command Signal | Digital Packet |
@@ -36,52 +36,55 @@ sidebar:
 | Feedback | Position, Temperature, Load, Input Voltage, etc |
 | Material | Engineering Plastic |
 
+{% include en/dxl/warning.md %}
+
 {% include en/dxl/control_table_protocol1.md %}
 
 ## [Control Table of EEPROM Area](#control-table-of-eeprom-area)
 
-| Address     | Size<br>(Byte)     | Data Name     | Description     | Access     | Initial<br />Value     |
-| :------------: | :------------: | :------------- | :------------- | :------------: | :------------: |
-|0|2|[Model Number](#model-number)         | Model Number       | R       | 104 |
-|2|1|[Firmware Version](#firmware-version)    |Firmware Version|R|-|
-|3|1|[ID](#id)                  |DYNAMIXEL ID      |RW|1|
-|4|1|[Baud Rate](#baud-rate)           |Communication Speed|RW|1|
-|5|1|[Return Delay Time](#return-delay-time)   |Response Delay Time|RW|250|
-|6|2|[CW Angle Limit](#cw-angle-limit)          |Clockwise Angle Limit|RW|0|
-|8|2|[CCW Angle Limit](#ccw-angle-limit)          |Counter-Clockwise Angle Limit|RW|4095|
-|11|1|[Temperature Limit](#temperature-limit)   |Maximum Internal Temperature Limit|RW|80|
-|12|1|[Min Voltage Limit](#min-voltage-limit)   |Minimum Input Voltage Limit|RW|60|
-|13|1|[Max Voltage Limit](#max-voltage-limit)   |Maximum Input Voltage Limit|RW|160|
-|14|2|[Max Torque](#max-torque)           |Maximun Torque|RW|1023|
-|16|1|[Status Return Level](#status-return-level)      |Select Types of Status Return|RW|2|
-|17|1|[Alarm LED](#alarm-led)                             |LED for Alarm|RW|36|
-|18|1|[Shutdown](#shutdown)            |Shutdown Error Information|RW|36|
-|20|2|[Multi Turn Offset](#multi-turn-offset)   |Adjust Position with Offset|RW|0|
-|22|1|[Resolution Divider](#resolution-divider) |Divider for Position Resolution|RW|1|
+| Address | Size<br>(Byte) | Data Name                                   | Description                        | Access | Initial<br />Value |
+|:-------:|:--------------:|:--------------------------------------------|:-----------------------------------|:------:|:------------------:|
+|    0    |       2        | [Model Number](#model-number)               | Model Number                       |   R    |        104         |
+|    2    |       1        | [Firmware Version](#firmware-version)       | Firmware Version                   |   R    |         -          |
+|    3    |       1        | [ID](#id)                                   | DYNAMIXEL ID                       |   RW   |         1          |
+|    4    |       1        | [Baud Rate](#baud-rate)                     | Communication Speed                |   RW   |         1          |
+|    5    |       1        | [Return Delay Time](#return-delay-time)     | Response Delay Time                |   RW   |        250         |
+|    6    |       2        | [CW Angle Limit](#cw-angle-limit)           | Clockwise Angle Limit              |   RW   |         0          |
+|    8    |       2        | [CCW Angle Limit](#ccw-angle-limit)         | Counter-Clockwise Angle Limit      |   RW   |        4095        |
+|   11    |       1        | [Temperature Limit](#temperature-limit)     | Maximum Internal Temperature Limit |   RW   |         70         |
+|   12    |       1        | [Min Voltage Limit](#min-voltage-limit)     | Minimum Input Voltage Limit        |   RW   |         60         |
+|   13    |       1        | [Max Voltage Limit](#max-voltage-limit)     | Maximum Input Voltage Limit        |   RW   |        160         |
+|   14    |       2        | [Max Torque](#max-torque)                   | Maximun Torque                     |   RW   |        1023        |
+|   16    |       1        | [Status Return Level](#status-return-level) | Select Types of Status Return      |   RW   |         2          |
+|   17    |       1        | [Alarm LED](#alarm-led)                     | LED for Alarm                      |   RW   |         36         |
+|   18    |       1        | [Shutdown](#shutdown)                       | Shutdown Error Information         |   RW   |         36         |
+|   20    |       2        | [Multi Turn Offset](#multi-turn-offset)     | Adjust Position with Offset        |   RW   |         0          |
+|   22    |       1        | [Resolution Divider](#resolution-divider)   | Divider for Position Resolution    |   RW   |         1          |
 
 
 ## [Control Table of RAM Area](#control-table-of-ram-area)
 
-| Address     | Size<br>(Byte)     | Data Name     | Description     | Access     | Initial<br />Value     |
-| :------------: | :------------: | :------------- | :------------- | :------------: | :------------: |
-|24|1|[Torque Enable](#torque-enable)            |Motor Torque On/Off|RW|0|
-|25|1|[LED](#led)                             |Status LED On/Off|RW|0|
-|26|1|[D Gain](#d-gain)   |Derivative Gain|RW|8|
-|27|1|[I Gain](#i-gain)   |Integral Gain|RW|0|
-|28|1|[P Gain](#p-gain)   |Proportional Gain|RW|8|
-|30|2|[Goal Position](#goal-position)                 |Target Position|RW|-|
-|32|2|[Moving Speed](#moving-speed)             |Moving Speed(Moving Velocity)|RW|-|
-|34|2|[Torque Limit](#torque-limit)            |Torque Limit(Goal Torque)|RW|ADD 14&amp;15|
-|36|2|[Present Position](#present-position)     |Present Position|R|-|
-|38|2|[Present Speed](#present-speed)           |Present Speed|R|-|
-|40|2|[Present Load](#present-load)             |Present Load|R|-|
-|42|1|[Present Voltage](#present-voltage)       |Present Voltage|R|-|
-|43|1|[Present Temperature](#present-temperature)|Present Temperature|R|-|
-|44|1|[Registered](#registered)                 |If Instruction is registered|R|0|
-|46|1|[Moving](#moving)                   |Movement Status|R|0|
-|47|1|[Lock](#lock)                   |Locking EEPROM|RW|0|
-|48|2|[Punch](#punch)                   |Minimum Current Threshold|RW|32|
-|73|1|[Goal Acceleration](#goal-acceleration)   |Goal Acceleration|RW|0|
+| Address | Size<br>(Byte) | Data Name                                   | Description                   | Access | Initial<br />Value |
+|:-------:|:--------------:|:--------------------------------------------|:------------------------------|:------:|:------------------:|
+|   24    |       1        | [Torque Enable](#torque-enable)             | Motor Torque On/Off           |   RW   |         0          |
+|   25    |       1        | [LED](#led)                                 | Status LED On/Off             |   RW   |         0          |
+|   26    |       1        | [D Gain](#d-gain)                           | Derivative Gain               |   RW   |         8          |
+|   27    |       1        | [I Gain](#i-gain)                           | Integral Gain                 |   RW   |         0          |
+|   28    |       1        | [P Gain](#p-gain)                           | Proportional Gain             |   RW   |         8          |
+|   30    |       2        | [Goal Position](#goal-position)             | Target Position               |   RW   |         -          |
+|   32    |       2        | [Moving Speed](#moving-speed)               | Moving Speed(Moving Velocity) |   RW   |         -          |
+|   34    |       2        | [Torque Limit](#torque-limit)               | Torque Limit(Goal Torque)     |   RW   |   ADD 14&amp;15    |
+|   36    |       2        | [Present Position](#present-position)       | Present Position              |   R    |         -          |
+|   38    |       2        | [Present Speed](#present-speed)             | Present Speed                 |   R    |         -          |
+|   40    |       2        | [Present Load](#present-load)               | Present Load                  |   R    |         -          |
+|   42    |       1        | [Present Voltage](#present-voltage)         | Present Voltage               |   R    |         -          |
+|   43    |       1        | [Present Temperature](#present-temperature) | Present Temperature           |   R    |         -          |
+|   44    |       1        | [Registered](#registered)                   | If Instruction is registered  |   R    |         0          |
+|   46    |       1        | [Moving](#moving)                           | Movement Status               |   R    |         0          |
+|   47    |       1        | [Lock](#lock)                               | Locking EEPROM                |   RW   |         0          |
+|   48    |       2        | [Punch](#punch)                             | Minimum Current Threshold     |   RW   |         32         |
+|   50    |       2        | [Realtime Tick](#realtime-tick)             | Count Time in millisecond     |   R    |         0          |
+|   73    |       1        | [Goal Acceleration](#goal-acceleration)     | Goal Acceleration             |   RW   |         0          |
 
 
 ## [Control Table Description](#control-table-description)
@@ -110,7 +113,7 @@ Baud Rate determines serial communication speed between a controller and DYNAMIX
 |103|19200| -0.160%|
 |207|9600| -0.160%|
 
-`Note` Less than 3% of the baud rate error margin will not affect to UART communication.
+**NOTE** : Less than 3% of the baud rate error margin will not affect to UART communication.
 {: .notice}
 
 For BPS over 250 values :
@@ -176,7 +179,7 @@ For BPS over 250 values :
   If a value in the range of 1024~2047 is used, it is stopped by setting to 1024 while rotating to CW direction.
   That is, the 10th bit becomes the direction bit to control the direction.
 
-  `Note` Wheel mode allows to check max rpm. Any values higher than max rpm will not take effect.
+  **NOTE** : Wheel mode allows to check max rpm. Any values higher than max rpm will not take effect.
   {: .notice}
 
 ### <a name="torque-limit"></a>**[Torque Limit (34)](#torque-limit-34)**
@@ -215,12 +218,14 @@ For example, if it is set to 300 then the motor is moving to the CCW direction a
 ### <a name="punch"></a>**[Punch (48)](#punch-48)**
 {% include en/dxl/control_table_punch.md %}
 
+### <a name="realtime-tick"></a>**[Realtime-Tick (50)](#realtime-tick-50)**
+{% include en/dxl/control_table_realtime_tick.md %}
+
+**NOTE** : This feature is available from Firmware v41.
+{: .notice}
+
 ### <a name="goal-acceleration"></a>**[Goal Acceleration (73)](#goal-acceleration-73)**
 {% include en/dxl/control_table_goal_acceleration.md %}
-
-# [How to Assemble](#how-to-assemble)
-
-
 
 # [Maintenance](#maintenance)
 
@@ -228,7 +233,7 @@ For example, if it is set to 300 then the motor is moving to the CCW direction a
 
 # [Reference](#reference)
 
-`Note` [Compatibility Guide]
+**NOTE** : [Compatibility Guide]
 {: .notice}
 
 ## [Videos](#videos)

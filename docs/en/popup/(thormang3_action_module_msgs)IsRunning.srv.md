@@ -20,6 +20,3 @@ A service that identifies whether THORMANG3's action is being played or not.
   - Response
 * `bool is_running`
 &emsp;&emsp; True will be returned if THORMANG3's action is being played. Otherwise, False will be returned.
-
-<br>
-[&lt;&lt; Back](thormang3_action_module_msgs.md)

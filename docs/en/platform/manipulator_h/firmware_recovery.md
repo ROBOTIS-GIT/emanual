@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/manipulator_h/firmware_recovery/
 sidebar:
-  title: Manipulator-H
+  title: MANIPULATOR-H
   nav: "manipulator_h"
 ---
 
@@ -17,7 +17,7 @@ sidebar:
 
 When Dynamixel detection fails ensure is properly wired. If problems persists **restore Dynamixel firmware** (shown below).
 
-`Warning` After firmware restoration you will need to set ID and baud rate values again. Always make sure to set USB2Dynamixel switch to “485.”
+**WARNING** : After firmware restoration you will need to set ID and baud rate values again. Always make sure to set USB2Dynamixel switch to “485.”
 {: .notice--warning}
 
 1. Restoring firmware

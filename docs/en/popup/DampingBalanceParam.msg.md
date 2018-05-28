@@ -5,31 +5,33 @@ layout: popup
 - File: `thormang3_walking_module_msgs/DampingBalanceParam.msg`
 
 - Message Definition
- ```
- float32 cob_x_offset_m
- float32 cob_y_offset_m
 
- float32 hip_roll_swap_angle_rad
+```c
+   float32 cob_x_offset_m
+   float32 cob_y_offset_m
 
- float32 gyro_gain
+   float32 hip_roll_swap_angle_rad
 
- float32 foot_roll_angle_gain
- float32 foot_pitch_angle_gain
+   float32 gyro_gain
 
- float32 foot_x_force_gain
- float32 foot_y_force_gain
- float32 foot_z_force_gain
- float32 foot_roll_torque_gain
- float32 foot_pitch_torque_gain
+   float32 foot_roll_angle_gain
+   float32 foot_pitch_angle_gain
 
- float32 foot_roll_angle_time_constant
- float32 foot_pitch_angle_time_constant
+   float32 foot_x_force_gain
+   float32 foot_y_force_gain
+   float32 foot_z_force_gain
+   float32 foot_roll_torque_gain
+   float32 foot_pitch_torque_gain
 
- float32 foot_x_force_time_constant
- float32 foot_y_force_time_constant
- float32 foot_z_force_time_constant
- float32 foot_roll_torque_time_constant
- float32 foot_pitch_torque_time_constant
+   float32 foot_roll_angle_time_constant
+   float32 foot_pitch_angle_time_constant
+
+   float32 foot_x_force_time_constant
+   float32 foot_y_force_time_constant
+   float32 foot_z_force_time_constant
+   float32 foot_roll_torque_time_constant
+   float32 foot_pitch_torque_time_constant
+
  ```
 
 - Description
@@ -84,6 +86,3 @@ Most algorithms are based on PD Control, therefore, gain and timeconstant are de
 &emsp;&emsp; Time constant for the Tx data acquired from the FT Sensor
 * ` float32 foot_pitch_torque_time_constant`
 &emsp;&emsp; Time constant for the Tz data acquired from the FT Sensor
-
-<br>
-[[&lt;&lt; Back|thormang3_walking_module_msgs]]

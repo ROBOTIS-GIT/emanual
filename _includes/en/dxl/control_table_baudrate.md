@@ -12,5 +12,5 @@ Baud Rate determines serial communication speed between a controller and DYNAMIX
 |103|19200| -0.160%|
 |207|9600| -0.160%|
 
-`Note` Less than 3% of the baud rate error margin will not affect to UART communication.
+**NOTE** : Less than 3% of the baud rate error margin will not affect to UART communication.
 {: .notice}

@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/op3/quick_start/
 sidebar:
-  title: ROBOTIS-OP3
+  title: ROBOTIS OP3
   nav: "op3"
 ---
 
@@ -21,7 +21,7 @@ The following procedure takes you through the set up process.
 
 ![](/assets/images/platform/op3/op3_010.png)
 
-`Warning` Manually configuring ROBOTIS OP3’s ready pose other than the above pose may cause mechanical damages when posing for initial stance.
+**WARNING** : Manually configuring ROBOTIS OP3’s ready pose other than the above pose may cause mechanical damages when posing for initial stance.
 {: .notice--warning}
 
 ![](/assets/images/platform/op3/op3_011.png)
@@ -39,7 +39,7 @@ If you want to use the battery pack, please follow the below procedure.
 4. Close and secure the compartment door (screw the thumbscrew) afterwards.
 5. Disconnect DC power supply.
 
-`Note` To prevent unexpected shutdown, ensure that ROBOTIS OP3 is connected with at least one active power source.
+**NOTE** : To prevent unexpected shutdown, ensure that ROBOTIS OP3 is connected with at least one active power source.
 {: .notice}
 
 ![](/assets/images/platform/op3/op3_013.png)
@@ -174,7 +174,7 @@ Please perform below procedures in order to shutdown the computer inside ROBOTIS
 
   ![](/assets/images/platform/op3/op3_022.png)
 
-`Note` If power supply is cut off before the blue LED is turned off, ROBOTIS OP3 may have problems in the next startup.
+**NOTE** : If power supply is cut off before the blue LED is turned off, ROBOTIS OP3 may have problems in the next startup.
 {: .notice}
 
 
@@ -370,15 +370,15 @@ In the Control table, some data share the same name, but they are attached with 
 
 ### [EEPROM Area](#eeprom-area)
 
-|  Address  |        Name         |      Description       | Access | Init Value |
-|:---------:|:-------------------:|:----------------------:|:------:|:----------:|
-| 0 (0X00)  |   Model Number(L)   | model number low byte  |   R    |  0(0X00)   |
-| 1 (0X01)  |   Model Number(H)   | model number high byte |   R    | 116 (0X74) |
-| 2 (0X02)  | Version of Firmware |    firmware version    |   R    |     -      |
-| 3 (0X03)  |         ID          |       OpenCR ID        |   RW   | 200 (0XC8) |
-| 4 (0X04)  |      Baud Rate      |  Dynamixel baud rate   |   RW   |  1 (0X01)  |
-| 5 (0X05)  |  Return Delay Time  |   Return Delay Time    |   RW   |  0 (0X0)   |
-| 16 (0X10) | Status Return Level |  Status Return Level   |   RW   |  0 (0X00)  |
+|  Address  |        Name         |        Description         | Access | Init Value |
+|:---------:|:-------------------:|:--------------------------:|:------:|:----------:|
+| 0 (0X00)  |   Model Number(L)   |   model number low byte    |   R    |  0(0X00)   |
+| 1 (0X01)  |   Model Number(H)   |   model number high byte   |   R    | 116 (0X74) |
+| 2 (0X02)  | Version of Firmware |      firmware version      |   R    |     -      |
+| 3 (0X03)  |         ID          |          OpenCR ID         |   RW   | 200 (0XC8) |
+| 4 (0X04)  |      Baud Rate      |  Communication baud rate   |   RW   |  1 (0X01)  |
+| 5 (0X05)  |  Return Delay Time  |     Return Delay Time      |   RW   |  0 (0X0)   |
+| 16 (0X10) | Status Return Level |    Status Return Level     |   RW   |  0 (0X00)  |
 
 
 ### [RAM Area](#ram-area)
@@ -426,26 +426,24 @@ Is a unique number to identify Dynamixel.
 Values range from 0 (0x00) to 252 (0xFC), Value 254 (0xFE) is used as the Broadcast ID.  
 If the Broadcast ID is used to transmit Instruction Packet, then it can command to all Dynamixels.  
 
-`Note` Do NOT assign an identical ID for DYNAMIXELs in the same network.
+**NOTE** : Do NOT assign an identical ID for DYNAMIXELs in the same network.
 {: .notice}
 
 #### Baud Rate
-Represents the communication speed. 0 (0x00) to 254 (0xFE) can be used for it. This speed is calculated by using the below formula.  
-Speed(BPS) = 2000000/(Data+1)
+Represents the communication speed. 0 (0x00) to 7 (0x07) can be used for it.
 
 | Data |  Set BPS  | Target BPS | Tolerance |
 |:----:|:---------:|:----------:|:---------:|
-|  1   | 1000000.0 | 1000000.0  |  0.000 %  |
-|  3   | 500000.0  |  500000.0  |  0.000 %  |
-|  4   | 400000.0  |  400000.0  |  0.000 %  |
-|  7   | 250000.0  |  250000.0  |  0.000 %  |
-|  9   | 200000.0  |  200000.0  |  0.000 %  |
-|  16  | 117647.1  |  115200.0  | -2.124 %  |
-|  34  |  57142.9  |  57600.0   |  0.794 %  |
-| 103  |  19230.8  |  19200.0   | -0.160 %  |
-| 207  |  9615.4   |   9600.0   | -0.160 %  |
+|  0   | 9,600      | 9,600       |  0.000 %  |
+|  1   | 57,600     | 57,600      |  0.000 %  |
+|  2   | 115,200    | 115,200     |  0.000 %  |
+|  3   | 1,000,000   | 1,000,000    |  0.000 %  |
+|  4   | 2,000,000   | 2,000,000    |  0.000 %  |
+|  5   | 3,000,000   | 3,000,000    |  0.000 %  |
+|  6   | 4,000,000   | 4,000,000    |  0.000 %  |
+|  7   | 4,500,000   | 4,500,000    |  0.000 %  |
 
-`Note` Maximum Baud Rate error of 3% is within the tolerance of UART communication.
+**NOTE** : Maximum Baud Rate error of 3% is within the tolerance of UART communication.
 {: .notice}
 
 #### Return Delay Time
@@ -466,7 +464,7 @@ If an Instruction Packet has a Broadcast ID, Status Packet will not be returned 
 |   1   |           Return only for the READ command           |
 |   2   |               Return for all commands                |
 
-`Note` When Instruction packet is Broadcast ID, Status packet is not returned regardless of Status return level.
+**NOTE** : When Instruction packet is Broadcast ID, Status packet is not returned regardless of Status return level.
 {: .notice}
 
 #### Dynamixel Power
@@ -565,23 +563,23 @@ The calculation will take for 2 seconds and then each bit will be reset to 0.
 | PIN_BUTTON_S4 | Button Input S4 (Reset Dynamixel Power) |
 
 
-[https://github.com/phil333/face_detection]:https://github.com/phil333/face_detection
-[https://github.com/ROBOTIS-GIT/face_detection]:https://github.com/ROBOTIS-GIT/face_detection
-[http://wiki.ros.org/usb_cam]:http://wiki.ros.org/usb_cam
-[https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki
-[ROBOTIS OP3 WIKI]:https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki
-[https://github.com/ROBOTIS-GIT/DynamixelSDK]:https://github.com/ROBOTIS-GIT/DynamixelSDK
-[https://github.com/ROBOTIS-GIT/ROBOTIS-Framework]:https://github.com/ROBOTIS-GIT/ROBOTIS-Framework
-[https://github.com/ROBOTIS-GIT/ROBOTIS-Framework-msgs]:https://github.com/ROBOTIS-GIT/ROBOTIS-Framework-msgs
-[https://github.com/ROBOTIS-GIT/ROBOTIS-Math]:https://github.com/ROBOTIS-GIT/ROBOTIS-Math
-[https://github.com/ROBOTIS-GIT/ROBOTIS-OP3]:https://github.com/ROBOTIS-GIT/ROBOTIS-OP3
-[https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Common]:https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Common
-[https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Demo]:https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Demo
-[https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-msgs]:https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-msgs
-[https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Tools]:https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Tools
-[https://github.com/ROBOTIS-GIT/ROBOTIS-Utility]:https://github.com/ROBOTIS-GIT/ROBOTIS-Utility
+[https://github.com/phil333/face_detection]: https://github.com/phil333/face_detection
+[https://github.com/ROBOTIS-GIT/face_detection]: https://github.com/ROBOTIS-GIT/face_detection
+[http://wiki.ros.org/usb_cam]: http://wiki.ros.org/usb_cam
+[https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki
+[ROBOTIS OP3 WIKI]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki
+[https://github.com/ROBOTIS-GIT/DynamixelSDK]: https://github.com/ROBOTIS-GIT/DynamixelSDK
+[https://github.com/ROBOTIS-GIT/ROBOTIS-Framework]: https://github.com/ROBOTIS-GIT/ROBOTIS-Framework
+[https://github.com/ROBOTIS-GIT/ROBOTIS-Framework-msgs]: https://github.com/ROBOTIS-GIT/ROBOTIS-Framework-msgs
+[https://github.com/ROBOTIS-GIT/ROBOTIS-Math]: https://github.com/ROBOTIS-GIT/ROBOTIS-Math
+[https://github.com/ROBOTIS-GIT/ROBOTIS-OP3]: https://github.com/ROBOTIS-GIT/ROBOTIS-OP3
+[https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Common]: https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Common
+[https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Demo]: https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Demo
+[https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-msgs]: https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-msgs
+[https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Tools]: https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Tools
+[https://github.com/ROBOTIS-GIT/ROBOTIS-Utility]: https://github.com/ROBOTIS-GIT/ROBOTIS-Utility
 
-[http://www.chiark.greenend.org.uk/~sgtatham/putty/]:http://www.chiark.greenend.org.uk/~sgtatham/putty/
-[http://www.realvnc.com/]:http://www.realvnc.com/
-[http://en.robotis.com/index/service_04.php?tab=4]:http://en.robotis.com/index/service_04.php?tab=4
-[http://support.robotis.com]:http://support.robotis.com
+[http://www.chiark.greenend.org.uk/~sgtatham/putty/]: http://www.chiark.greenend.org.uk/~sgtatham/putty/
+[http://www.realvnc.com/]: http://www.realvnc.com/
+[http://en.robotis.com/index/service_04.php?tab=4]: http://en.robotis.com/index/service_04.php?tab=4
+[http://support.robotis.com]: http://support.robotis.com

@@ -6,7 +6,6 @@ layout: popup
 - Raw Message Definition
 
   ```c
-
   # This message holds a collection of N-dimensional points, which may
   # contain additional information such as normals, intensity, etc. The
   # point data is stored as a binary blob, its layout described by the
@@ -33,12 +32,11 @@ layout: popup
   uint8[] data         # Actual point data, size is (row_step*height)
 
   bool is_dense        # True if there are no invalid points
-
- ```
+  ```
 
 - Compact Message Definition
 
-    ```
+  ```
   std_msgs/Header header
   uint32 height
   uint32 width
@@ -48,5 +46,4 @@ layout: popup
   uint32 row_step
   uint8[] data
   bool is_dense
-
-    ```
+  ```

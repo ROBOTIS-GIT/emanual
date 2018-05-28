@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: turtlebot3_autonomous_driving
+ref: autonomous_driving
 read_time: true
 share: true
 author_profile: false
@@ -11,51 +11,78 @@ sidebar:
   nav: "turtlebot3"
 ---
 
-<div style="counter-reset: h1 15"></div>
+<div style="counter-reset: h1 12"></div>
 
 # [Autonomous Driving](#autonomous-driving)
 
-**Note :** Turtlebot3 has been tested on <kbd>Ubuntu 16.04</kbd> and <kbd>ROS Kinetic Kame</kbd>.
-{: .notice--info}
+{% capture notice_01 %}
+**NOTE**: 
+- This instructions were tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+{% endcapture %}
+<div class="notice--info">{{ notice_01 | markdownify }}</div>
 
-We are currently doing several projects related with the keywords: Autonomous Driving and TurtleBot3s
+We are currently doing several projects related with the keywords: Autonomous Driving and TurtleBot3s.
 
-## [TurtleBot3 Auto](#turtlebot3-auto)
-
-In the video, TurtleBot3 gets its eye by attaching a $40 Raspberry Pi Camera and adopts open source from MIT DuckieTown engineering to track the lane.
-
-<iframe width="640" height="360" src="https://www.youtube.com/embed/1V33iEu4ylw" frameborder="0" allowfullscreen></iframe>
-
-and soon (In January, 2018), official autonomous driving package for turtlebot3 will be released.
-
-## [Join in AutoRace](#join-in-autorace)
+## [TurtleBot3 AutoRace](#turtlebot3-autorace)
 
 ![](/assets/images/platform/turtlebot3/autonomous_driving/autorace_rbiz_challenge_2017_robots_1.png)
 
-AutoRace is a competition for autonomous driving robot platforms. To provide various conditions for robot application development, the game gives as less structural regulation as possible. Entire contents are opened in software (source codes for referee system) wise and hardware (stp / dwg files of game map) wise.
-Whole robots and even the referee system in the field is run by ROS, so it would support to make many kinds of contents further.
+The AutoRace is a competition for autonomous driving robot platforms. To provide various conditions for robot application development, the game gives as less structural regulation as possible. Entire contents are opened in [software](https://github.com/ROBOTIS-GIT/autorace_referee) (source codes for referee system) wise and [hardware](https://github.com/ROBOTIS-GIT/autorace_track) (stp / dwg files of game map) wise.
 
-Get opened source of what is participated in each competitions!
+Whole robots and even the referee system in the field is run by ROS, so it would support to make many kinds of contents further. Get opened source of what is participated in each competitions!
 
-### [AutoRace - RBIZ Challenge 2017](#autorace--rbiz-challenge-2017)
+## [TurtleBot3 AutoRace Tutorial](#turtlebot3-autorace-tutorial)
 
-![](/assets/images/platform/turtlebot3/autonomous_driving/autorace_rbiz_challenge_2017_robots_2.png)
+- Tutorial 1: Traffic Light
 
-- Details of track map and referee system (with sources provided)
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/yp7MVZCiaWs" frameborder="0" allowfullscreen></iframe>
 
-  - [track map](https://github.com/ROBOTIS-GIT/autorace_track)
+- Tutorial 2: Lane Tracking
 
-  - [referee system](https://github.com/ROBOTIS-GIT/autorace_referee)
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/1RBOfPWdpsc" frameborder="0" allowfullscreen></iframe>
+
+- Tutorial 3: Parking
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/ValFotgBfC0" frameborder="0" allowfullscreen></iframe>
+
+- Tutorial 4: Node Optimization
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/YpjHOzx432M" frameborder="0" allowfullscreen></iframe>
+
+- Tutorial 5: Level Crossing
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/MBDMBq6IDd4" frameborder="0" allowfullscreen></iframe>
+
+- Tutorial 6: Tunnel
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/ezkwAs1kVkM" frameborder="0" allowfullscreen></iframe>
+
+
+## [TurtleBot3 AutoRace Online Competition](#turtlebot3-autorace-online-competition)
+
+![](/assets/images/platform/turtlebot3/competition/competition_autorace.png)
+
+- (Coming soon!)
+
+  ## [AutoRace RBIZ Challenge 2017](#autorace-rbiz-challenge-2017)
+
+  ![](/assets/images/platform/turtlebot3/autonomous_driving/autorace_rbiz_challenge_2017_robots_2.png)
+
+- Official release of TurtleBot3 AutoRace
+
+  - [AutoRace Source Code](http://wiki.ros.org/turtlebot3_autorace)
+  - [AutoRace Track](https://github.com/ROBOTIS-GIT/autorace_track)
+  - [AutoRace Referee System](https://github.com/ROBOTIS-GIT/autorace_referee)
 
 - Participants sources
 
 | Place | Team              | Source link                                                        |
-| ----- | ----------------- | ------------------------------------------------------------------ |
+|:------|:------------------|:-------------------------------------------------------------------|
 | 1     | RealRiceThief     | [Github](https://github.com/KoG-8/Turtlebot_RealRiceThief)         |
 | 2     | IronHeart         | [Github](https://github.com/kijongGil/Ironheart)                   |
 | 3     | Robit             | [Github](https://github.com/ROBIT-GIT/turtlebot3_autoRace_2017)    |
-| 4     | Loading           | [Github](https://github.com/AuTURBO/autorace2017-team-loading)    |
-| 5     | RunHoney          | [Github](https://github.com/AuTURBO/autorace2017-team-honey)             |
+| 4     | Loading           | [Github](https://github.com/AuTURBO/autorace2017-team-loading)     |
+| 5     | RunHoney          | [Github](https://github.com/AuTURBO/autorace2017-team-honey)       |
 | 6     | Sherlotics        | [Github](https://github.com/minbaekkim/turtlebot_autorace)         |
 | 7     | FastAndFurious    | [Github](https://github.com/kts006/deu_racer)                      |
 | 8     | BonoBono          | [Github](https://github.com/Gaeul/BonobonoTurtlebot)               |
@@ -67,25 +94,35 @@ Get opened source of what is participated in each competitions!
 | 14    | Cena              | retire                                                             |
 | 15    | TogetherChaChaCha | retire                                                             |
 
+### [TurtleBot3 AutoRace 2017 Teaser](#turtlebot3-autorace-2017-teaser)
 
-- Videos
+- Official Teaser #1
 
-Official Teaser #1
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/9Wnu8If1eS4" frameborder="0" allowfullscreen></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/9Wnu8If1eS4" frameborder="0" allowfullscreen></iframe>
+- Official Teaser #2
 
-Official Teaser #2
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/47YnSBAssOM" frameborder="0" allowfullscreen></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/47YnSBAssOM" frameborder="0" allowfullscreen></iframe>
+- Official Final Video
 
-Official Final Video
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/DWDBAHHQi_k" frameborder="0" allowfullscreen></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/DWDBAHHQi_k" frameborder="0" allowfullscreen></iframe>
+### [TurtleBot3 AutoRace 2017 Challengers](#turtlebot3-autorace-2017-challengers)
 
-Video - Team RealRiceThief (1st Place)
+- Video - Team RealRiceThief (1st Place)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/szhllE1T_cg" frameborder="0" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/szhllE1T_cg" frameborder="0" allowfullscreen></iframe>
 
-Video - Team Sherlotics (Introduction video)
+- Video - Team Sherlotics (Introduction video)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dzjsLFj62HE" frameborder="0" allowfullscreen></iframe>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/dzjsLFj62HE" frameborder="0" allowfullscreen></iframe>
+
+- TurtleBot3 was tested its driving autonomy under the open source from MIT DuckieTown engineering.
+
+  <iframe width="640" height="360" src="https://www.youtube.com/embed/1V33iEu4ylw" frameborder="0" allowfullscreen></iframe>
+
+
+## [AutoRace RBIZ Challenge 2018](#autorace-rbiz-challenge-2018)
+
+- (Coming Soon!)

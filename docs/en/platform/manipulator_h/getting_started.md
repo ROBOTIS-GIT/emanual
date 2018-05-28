@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/manipulator_h/getting_started/
 sidebar:
-  title: Manipulator-H
+  title: MANIPULATOR-H
   nav: "manipulator_h"
 ---
 
@@ -53,7 +53,7 @@ The USB2Dynamixel sends ArmSDK commands to the Manipulator. Connect the USB2Dyna
 
 ## [Product Assembly](#product-assembly)
 
-`Note` The content below is based on an **optional** base plate and differs from the actual base plate.
+**NOTE** : The content below is based on an **optional** base plate and differs from the actual base plate.
 {: .notice}
 
 ![](/assets/images/platform/manipulator/manipulator_h_009.jpg)
@@ -82,7 +82,7 @@ The USB2Dynamixel sends ArmSDK commands to the Manipulator. Connect the USB2Dyna
 
 - Connect USB2Dynamixel to the hub with 4P cable; connect another port of the 4P hub to the extension.
 
-`Caution` Connect the USB2Dynamixel to the PC via USB hub. The USB hub acts as an isolator to protect the PC from any possible unexpected surges caused by arm action.
+**CAUTION** : Connect the USB2Dynamixel to the PC via USB hub. The USB hub acts as an isolator to protect the PC from any possible unexpected surges caused by arm action.
 {: .notice--warning}
 
 ## [USB2Dynamixel Setting](#usb2dynamixel-setting)
@@ -95,14 +95,14 @@ The USB2Dynamixel sends ArmSDK commands to the Manipulator. Connect the USB2Dyna
 |RS485|RX, 4-pin MX and Pro; communicate with 4-pin Dynamixel|
 |RS232|CM-5, CM-510; communicate with these controllers. Communicate with other RS-232 devices|
 
-`Note` The manipulator is based on RS-485 communications so make sure to set the dongle to 485.
+**NOTE** : The manipulator is based on RS-485 communications so make sure to set the dongle to 485.
 {: .notice}
 
 ## [Manipulator Test](#manipulator-test)
 
-- Test the arm with Dynamixel Wizard to check for any anomalies. DynamixelWizard is included in RoboPlus suite. RoboPlus can be downloaded from ROBOTIS home page’s Support -> Downloads(http://www.robotis.com/xe/download).  
+- Test the arm with Dynamixel Wizard to check for any anomalies. DynamixelWizard is included in RoboPlus suite. RoboPlus can be downloaded from ROBOTIS home page’s Support -> Downloads([http://www.robotis.com/xe/download]).  
 
-`Caution` Do NOT download RoboPlus v2.0. Use RoboPlus v1.0 for Manipulator-H.
+**CAUTION** : Do NOT download RoboPlus v2.0. Use RoboPlus v1.0 for Manipulator-H.
 {: .notice--warning}
 
   ![](/assets/images/platform/manipulator/manipulator_h_018.jpg)
@@ -113,7 +113,7 @@ The USB2Dynamixel sends ArmSDK commands to the Manipulator. Connect the USB2Dyna
 
 ### Operating the Manipulator
 
-`Danger` Before starting Dynamixel Wizard ensure the arm is fixed to the base plate; then extend the arm. Otherwise; it may cause physical harm.
+**DANGER** : Before starting Dynamixel Wizard ensure the arm is fixed to the base plate; then extend the arm. Otherwise; it may cause physical harm.
 {: .notice--danger}
 
 - USB2Dynamixel to the PC after wiring is complete. From the PC check the COM port number of USB2Dynamixel.
@@ -127,7 +127,7 @@ The USB2Dynamixel sends ArmSDK commands to the Manipulator. Connect the USB2Dyna
 - Select the Port Settings tab and click on the Advanced button-> change the latency time from 16 (default) to 1.
 - After changing the COM port settings supply the 24V to the arm (of course, this means wiring is complete).
 
-`Caution` Always ensure before powering on. While power is on do not change wires; otherwise it may cause undesired operations.
+**CAUTION** : Always ensure before powering on. While power is on do not change wires; otherwise it may cause undesired operations.
 {: .notice-warning}
 
   ![](/assets/images/platform/manipulator/manipulator_h_023.jpg)
@@ -210,4 +210,5 @@ The USB2Dynamixel sends ArmSDK commands to the Manipulator. Connect the USB2Dyna
   - Once preparations are complete press the F7 key to compile and build.
 
 
-[http://eigen.tuxfamily.org]:http://eigen.tuxfamily.org
+[http://eigen.tuxfamily.org]: http://eigen.tuxfamily.org
+[http://www.robotis.com/xe/download]: http://www.robotis.com/xe/download

@@ -53,28 +53,27 @@ sidebar:
 
   ![](/assets/images/edu/smart/cm_200_7.jpg)
 
-  `Note` 예제 Task 파일은 [스마트II 2단계 교안예제] 페이지 또는 R+ SMARTII 앱 에서 얻을 수 있습니다.
+  **NOTE** : 예제 Task 파일은 [스마트II 2단계 교안예제] 페이지 또는 R+ SMARTII 앱 에서 얻을 수 있습니다.
   {: .notice}
 
 # [교안예제](#교안예제)
 
 {% capture smart2-2_01 %}
 각 예제의 조립 방법이나 실행 시 동작에 관한 내용은 교육키트 2단계 교안을 참고하세요.  
-또한, [예제 태스크 코드의 다운로드 방법은 여기를 참고하세요.]  
+또한, 예제 태스크 코드의 다운로드 방법은 [태스크 코드 다운로드]를 참고하세요.  
 다운로드시 필요한 [BT-210]은 1단계 구성품에 포함되어 있습니다. 분실시 쇼핑몰에서 별도구매 해주세요.
 {% endcapture %}
 
 <div class="notice">{{ smart2-2_01 | markdownify }}</div>
 
-
-|                                       로봇                                        |                                         태스크 코드                                         | 설명                                               |
-|:---------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------:|:---------------------------------------------------|
-|     1. 룰렛 로봇<br />![](/assets/images/edu/smart/01_smart2_l2_roulette.png)     |     [Download][01_SMARTII_L2_ROULETTE_KR]<br />[Download][02_SMARTII_L2_Color_test_KR]      | -로봇 예제 프로그램<br />-프로그래밍 예제 프로그램 |
-| 2. 스마트 레이싱카<br /> ![](/assets/images/edu/smart/01_smart2_l2_racingcar.png) |   [Download][01_SMARTII_L2_RACINGCAR_KR]<br />[Download][02_SMARTII_L2_Vibration_test_KR]   | -로봇 예제 프로그램<br />-프로그래밍 예제 프로그램 |
-|       3. 금고<br />![](/assets/images/edu/smart/01_smart2_l2_strongbox.png)       |     [Download][01_SMARTII_L2_STRONGBOX_KR]<br />[Download][02_SMARTII_L2_Touch_test_KR]     | -로봇 예제 프로그램<br />-프로그래밍 예제 프로그램 |
-|      4. 검투사<br />![](/assets/images/edu/smart/01_smart2_l2_gladiator.png)      | [Download][01_SMARTII_L2_GLADIATOR_KR]<br />[Download][02_SMARTII_L2_FaceDetecting_test_KR] | -로봇 예제 프로그램<br />-프로그래밍 예제 프로그램 |
-|       5. 대포로봇<br />![](/assets/images/edu/smart/01_smart2_l2_tank.png)        |        [Download][01_SMARTII_L2_TANK_KR]<br />[Download][02_SMARTII_L2_TILT_test_KR]        | -로봇 예제 프로그램<br />-프로그래밍 예제 프로그램 |
-|    6. 알람시계<br />![](/assets/images/edu/smart/01_smart2_l2_alarmclock.png)     |    [Download][01_SMARTII_L2_ALARMCLOCK_KR ]<br />[Download][02_SMARTII_L2_Clock_test_KR]    | -로봇 예제 프로그램<br />-프로그래밍 예제 프로그램 |
+|                                       로봇                                        |                                         태스크 코드                                         |
+|:---------------------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------:|
+|     1. 룰렛 로봇<br />![](/assets/images/edu/smart/01_smart2_l2_roulette.png)     |     [로봇 예제 프로그램][01_SMARTII_L2_ROULETTE_KR]<br />[프로그래밍 예제 프로그램][02_SMARTII_L2_Color_test_KR]      |
+| 2. 스마트 레이싱카<br /> ![](/assets/images/edu/smart/01_smart2_l2_racingcar.png) |   [로봇 예제 프로그램][01_SMARTII_L2_RACINGCAR_KR]<br />[프로그래밍 예제 프로그램][02_SMARTII_L2_Vibration_test_KR]   |
+|       3. 금고<br />![](/assets/images/edu/smart/01_smart2_l2_strongbox.png)       |     [로봇 예제 프로그램][01_SMARTII_L2_STRONGBOX_KR]<br />[프로그래밍 예제 프로그램][02_SMARTII_L2_Touch_test_KR]     |
+|      4. 검투사<br />![](/assets/images/edu/smart/01_smart2_l2_gladiator.png)      | [로봇 예제 프로그램][01_SMARTII_L2_GLADIATOR_KR]<br />[프로그래밍 예제 프로그램][02_SMARTII_L2_FaceDetecting_test_KR] |
+|       5. 대포로봇<br />![](/assets/images/edu/smart/01_smart2_l2_tank.png)        |        [로봇 예제 프로그램][01_SMARTII_L2_TANK_KR]<br />[프로그래밍 예제 프로그램][02_SMARTII_L2_TILT_test_KR]        |
+|    6. 알람시계<br />![](/assets/images/edu/smart/01_smart2_l2_alarmclock.png)     |    [로봇 예제 프로그램][01_SMARTII_L2_ALARMCLOCK_KR ]<br />[프로그래밍 예제 프로그램][02_SMARTII_L2_Clock_test_KR]    |
 
 
 [R+SMART2]: https://play.google.com/store/apps/details?id=com.robotis.smart2
@@ -83,7 +82,7 @@ sidebar:
 [자석센서 MGSS-10]: /docs/kr/parts/sensor/mgss-10/
 [R+ SMARTII 설치 및 예제 다운로드 방법 바로가기]: /docs/kr/software/mobile_app/rplussmart/#r-smart-다운로드설치
 [스마트II 2단계 교안예제]: #교안예제
-[예제 태스크 코드의 다운로드 방법은 여기를 참고하세요.]: /docs/kr/faq/download_task_code/
+[태스크 코드 다운로드]: /docs/kr/faq/download_task_code/
 [BT-210]: /docs/kr/parts/communication/bt-210/
 [01_SMARTII_L2_ROULETTE_KR]: http://support.robotis.com/ko/baggage_files/smart2/01_smart2_l2_roulette_kr.tsk
 [02_SMARTII_L2_Color_test_KR]: http://support.robotis.com/ko/baggage_files/smart2/02_smart2_l2_color_test_kr.tsk

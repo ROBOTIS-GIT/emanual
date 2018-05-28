@@ -22,18 +22,21 @@ sidebar:
 
 - Description
 
-   PortHandler dependent functions for serial communication.
+Base class for serial communication.
 
 - Members
 
-   None
+| Members             | Description                      |
+|:--------------------|:---------------------------------|
+| DEFAULT\_BAUDRATE\_ | :=1000000	Default Baudrate        |
+| is\_using\_         | Shows whether the port is in-use |
 
 
 - Methods
 
 | Methods                                     | Description                                                |
 |:--------------------------------------------|:-----------------------------------------------------------|
-| **[portHandle](#porthandler)**              | Initializes parameters for serial port control             |
+| **[PortHandler](#porthandler)**              | Initializes parameters for serial port control             |
 | **[openPort](#openport)**                   | Opens a serial port                                        |
 | **[closePort](#closeport)**                 | Closes a serial port                                       |
 | **[clearPort](#clearport)**                 | Refreshes a serial port                                    |
@@ -56,10 +59,10 @@ sidebar:
 
 #### Method References
 
-##### portHandler
+##### PortHandler
 - Syntax
 ``` python
-int portHandler(string port_name)
+PortHandler(port_name)
 ```
 - Parameters
 
@@ -69,18 +72,16 @@ int portHandler(string port_name)
 
 - Detailed Description
 
-   The function initializes the parameters for port control. At first, this checks if the port with same device name is set already in the `portData` pointer struct. If it exists, the function returns the port number as what it has. If not, the function finds any free port, resize `portData` struct and start to initialize struct members.
+   The function initializes the parameters for port control.
 
 ##### openPort
 - Syntax
 ``` python
-bool openPort(int port_num)
+openPort()
 ```
 - Parameters
 
-| Parameters | Description |
-|:-----------|:------------|
-| port_num   | Port number |
+None
 
 - Detailed Description
 
@@ -90,45 +91,40 @@ bool openPort(int port_num)
 ##### closePort
 - Syntax
 ``` python
-void closePort(int port_num)
+closePort()
 ```
 - Parameters
 
-| Parameters | Description |
-|:-----------|:------------|
-| port_num   | Port number |
+None
 
 - Detailed Description
 
-  This function closes the port by closing the file descriptor.
+  This function closes the port.
 
 
 ##### clearPort
 - Syntax
 ``` python
-void clearPort(int port_num)
+clearPort()
 ```
 - Parameters
 
-| Parameters | Description |
-|:-----------|:------------|
-| port_num   | Port number |
+None
 
 - Detailed Description
 
-  This function clears the port by flushing the file descriptor.
+  This function clears the port.
 
 
 ##### setPortName
 - Syntax
 ``` python
-void setPortName(int port_num, string port_name)
+setPortName(port_name)
 ```
 - Parameters
 
 | Parameters | Description |
 |:-----------|:------------|
-| port_num   | Port number |
 | port_name  | Port name   |
 
 - Detailed Description
@@ -139,13 +135,11 @@ void setPortName(int port_num, string port_name)
 ##### getPortName
 - Syntax
 ``` python
-string getPortName(int port_num)
+getPortName()
 ```
 - Parameters
 
-| Parameters | Description |
-|:-----------|:------------|
-| port_num   | Port number |
+None
 
 - Detailed Description
 
@@ -156,34 +150,31 @@ string getPortName(int port_num)
 - Syntax
 
 ``` python
-bool setBaudrate(int port_num, int baudrate)
+setBaudrate(baudrate)
 ```
 
 - Parameters
 
 | Parameters | Description     |
 |:-----------|:----------------|
-| port_num   | Port number     |
 | baudrate   | Target baudrate |
 
 
 - Description
 
-  This function converts `baudrate` to baudrate type value at first. Secondly, it closes the port with `closePort` function, and opens the port with `setupPort` function again. If the value of `baudrate` is not in the compatible baudrate list, the `setCustomBaudrate` function suggests the baudrate value which is closest of available baudrate value. Finally, it returns false.
+  This function checks whether the baudrate is available in selected operating system at first. If the baudrate is not available, it returns -1.
 
 
 ##### getBaudrate
 - Syntax
 
 ``` python
-int getBaudrate(int port_num)
+getBaudrate()
 ```
 
 - Parameters
 
-| Parameters | Description |
-|:-----------|:------------|
-| port_num   | Port number |
+None
 
 - Description
 
@@ -194,14 +185,12 @@ int getBaudrate(int port_num)
 - Syntax
 
 ``` python
-int getBytesAvailable(int port_num)
+getBytesAvailable()
 ```
 
 - Parameters
 
-| Parameters | Description |
-|:-----------|:------------|
-| port_num   | Port number |
+None
 
 - Description
 
@@ -212,35 +201,32 @@ int getBytesAvailable(int port_num)
 - Syntax
 
 ``` python
-int readPort(int port_num, int[] packet, int length)
+readPort(length)
 ```
 
 - Parameters
 
 | Parameters | Description                              |
 |:-----------|:-----------------------------------------|
-| port_num   | Port number                              |
-| packet     | The number of data bytes read previously |
 | length     | Byte length for read                     |
 
 
 - Description
 
-  This function gets length byte data from port buffer and returns a number of read data bytes. On end-of-file, 0 is returned, on error it returns -1.
+  This function gets the byte data from port buffer and returns the byte data.
 
 
 ##### writePort
 - Syntax
 
 ``` python
-int writePort(int port_num, int[] packet, int length)
+ writePort(packet)
 ```
 
 - Parameters
 
 | Parameters | Description                       |
 |:-----------|:----------------------------------|
-| port_num   | Port number                       |
 | packet     | The number of data bytes to write |
 | length     | Byte length for write             |
 
@@ -248,20 +234,19 @@ int writePort(int port_num, int[] packet, int length)
 
 - Description
 
-  This function transmits length byte, and returns how much the data was written. On error, it returns -1.
+  This function transmits byte data, and returns how much the data was written.
 
 
 ##### setPacketTimeout
 - Syntax
 
 ``` python
-void setPacketTimeout (int port_num, uint16_t packet_length)
+setPacketTimeout(packet_length)
 ```
 
 - Parameters
 | Parameters    | Description                  |
 |:--------------|:-----------------------------|
-| port_num      | Port number                  |
 | Packet_length | Target byte length for write |
 
 
@@ -270,18 +255,17 @@ void setPacketTimeout (int port_num, uint16_t packet_length)
   This function sets the start time when it transmits the packet, and set the timeout of packet transmission to be ready for deciding communication result.
 
 
-##### setPacketTimeoutMSec
+##### setPacketTimeoutMillis
 - Syntax
 
 ``` python
-void setPacketTimeoutMSec (int port_num, double msec)
+setPacketTimeoutMillis(msec)
 ```
 
 - Parameters
 
 | Parameters | Description |
 |:-----------|:------------|
-| port_num   | Port number |
 | msec       | Miliseconds |
 
 
@@ -293,14 +277,12 @@ void setPacketTimeoutMSec (int port_num, double msec)
 - Syntax
 
 ``` python
-bool isPacketTimeout(int port_num)
+isPacketTimeout()
 ```
 
 - Parameters
 
-| Parameters | Description |
-|:-----------|:------------|
-| port_num   | Port number |
+None
 
 - Description
 

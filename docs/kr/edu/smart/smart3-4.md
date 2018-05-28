@@ -52,38 +52,38 @@ sidebar:
 
   ![](/assets/images/edu/smart/cm_200_7.jpg)
 
-  `Note` 예제 파일은 [4단계 교안예제] 페이지 또는 R+ SMARTIII앱 에서 얻을 수 있습니다.  
+  **NOTE** : 예제 파일은 [4단계 교안예제] 페이지 또는 R+ SMARTIII앱 에서 얻을 수 있습니다.  
   {: .notice}
 
 # [교안예제](#교안예제)
 
 {% capture smart3-4_01 %}
 각 예제의 조립 방법이나 실행 시 동작에 관한 내용은 교육키트 2단계 교안을 참고하세요.  
-또한, [예제 태스크 코드의 다운로드 방법은 여기를 참고하세요.]  
+또한, 예제 태스크 코드의 다운로드 방법은 [태스크 코드 다운로드]를 참고하세요.  
 다운로드시 필요한 [BT-410]은 1단계 구성품에 포함되어 있습니다. 분실시 쇼핑몰에서 별도구매 해주세요.
 {% endcapture %}
 
 <div class="notice">{{ smart3-4_01 | markdownify }}</div>
 
 
-|로봇|태스크 코드|설명|
-| :---: | :-----: | :--- |
-|1. 컬러공장<br />![](/assets/images/edu/smart/200_smartiii_l4_1factory.png)|[Download][01_smart3_L4_Factory_kr.tskx]<br />[Download][03_smart3_L4_Factory_RC_kr.tskx]|-로봇 예제 프로그램<br />-조종기 프로그램|
-|2. 스마트 탐사차<br />![](/assets/images/edu/smart/200_smartiii_l4_2tongs_car.png)|[Download][01_smart3_L4_Smart_Explorer_kr.tskx]<br />[Download][03_smart3_L4_Smart_Explorer_RC_kr.tskx]|-로봇 예제 프로그램<br />-조종기 프로그램|
-|3. 4족 로봇<br />![](/assets/images/edu/smart/200_smartiii_l4_3fwrobot.png)|[Download][01_smart3_L4_Quadruped_Robot_kr.tskx]<br />[Download][smart3_L4_Quadruped_Robot_kr.mtnx]<br />[Download][03_smart3_L4_Quadruped_Robot_RC_kr.tskx]|-로봇 예제 프로그램<br />-모션 파일<br />-조종기 프로그램|
-|4. 춤추는 고릴라<br />![](/assets/images/edu/smart/200_smartiii_l4_4dj_gorilla.png)|[Download][01_smart3_L4_DJ_Gorilla_kr.tskx]<br />[Download][smart3_L4_DJ_Gorilla_kr.mtnx]<br />[Download][03_smart3_L4_DJ_Gorilla_RC_kr.tskx]|-로봇 예제 프로그램<br />-모션 파일<br />-조종기 프로그램|
-|5. 스마트 강아지<br />![](/assets/images/edu/smart/200_smartiii_l4_5puppy.png)|[Download][01_smart3_L4_Smart_Puppy_kr.tskx]<br />[Download][smart3_L4_Smart_Puppy_kr.mtnx]<br />[Download][03_smart3_L4_Smart_Puppy_RC_kr.tskx]|-로봇 예제 프로그램<br />-모션 파일<br />-조종기 프로그램|
-|6. 변신로봇<br />![](/assets/images/edu/smart/200_smartiii_l4_6transformer.png)|[Download][01_smart3_L4_Transformation_Robot_kr.tskx]<br />[Download][smart3_L4_Transformation_Robot_kr.mtnx]<br />[Download][03_smart3_L4_Transformation_Robot_RC_kr.tskx]|-로봇 예제 프로그램<br />-모션 파일<br />-조종기 프로그램|
-|7. 레전드 히어로<br />![](/assets/images/edu/smart/200_smartiii_l4_7hero.png)|[Download][01_smart3_L4_Hero.tskx]<br />[Download][smart3_L4_Hero_kr.mtnx]<br />[Download][03_smart3_L4_Hero_RC_kr.tskx]|-로봇 예제 프로그램<br />-모션 파일<br />-조종기 프로그램|
-|8. 드래곤<br />![](/assets/images/edu/smart/200_smartiii_l4_8dragon.png)|[Download][01_smart3_L4_Dragon_kr.tskx]<br />[Download][smart3_L4_Dragon.mtnx]<br />[Download][03_smart3_L4_Dragon_RC_kr.tskx]|-로봇 예제 프로그램<br />-모션 파일<br />-조종기 프로그램|
-|9. 슈퍼카<br />![](/assets/images/edu/smart/200_smartiii_l4_9super_car.png)|[Download][01_smart3_L4_Super_Car_kr.tskx]<br />[Download][03_smart3_L4_Super_Car_RC_kr.tskx]|-로봇 예제 프로그램<br />-조종기 프로그램|
+|로봇|태스크 코드|
+| :---: | :-----: |
+|1. 컬러공장<br />![](/assets/images/edu/smart/200_smartiii_l4_1factory.png)|[로봇 예제 프로그램][01_smart3_L4_Factory_kr.tskx]<br />[조종기 프로그램][03_smart3_L4_Factory_RC_kr.tskx]|
+|2. 스마트 탐사차<br />![](/assets/images/edu/smart/200_smartiii_l4_2tongs_car.png)|[로봇 예제 프로그램][01_smart3_L4_Smart_Explorer_kr.tskx]<br />[조종기 프로그램][03_smart3_L4_Smart_Explorer_RC_kr.tskx]|
+|3. 4족 로봇<br />![](/assets/images/edu/smart/200_smartiii_l4_3fwrobot.png)|[로봇 예제 프로그램][01_smart3_L4_Quadruped_Robot_kr.tskx]<br />[모션 파일][smart3_L4_Quadruped_Robot_kr.mtnx]<br />[조종기 프로그램][03_smart3_L4_Quadruped_Robot_RC_kr.tskx]|
+|4. 춤추는 고릴라<br />![](/assets/images/edu/smart/200_smartiii_l4_4dj_gorilla.png)|[로봇 예제 프로그램][01_smart3_L4_DJ_Gorilla_kr.tskx]<br />[모션 파일][smart3_L4_DJ_Gorilla_kr.mtnx]<br />[조종기 프로그램][03_smart3_L4_DJ_Gorilla_RC_kr.tskx]|
+|5. 스마트 강아지<br />![](/assets/images/edu/smart/200_smartiii_l4_5puppy.png)|[로봇 예제 프로그램][01_smart3_L4_Smart_Puppy_kr.tskx]<br />[모션 파일][smart3_L4_Smart_Puppy_kr.mtnx]<br />[조종기 프로그램][03_smart3_L4_Smart_Puppy_RC_kr.tskx]|
+|6. 변신로봇<br />![](/assets/images/edu/smart/200_smartiii_l4_6transformer.png)|[로봇 예제 프로그램][01_smart3_L4_Transformation_Robot_kr.tskx]<br />[모션 파일][smart3_L4_Transformation_Robot_kr.mtnx]<br />[조종기 프로그램][03_smart3_L4_Transformation_Robot_RC_kr.tskx]|
+|7. 레전드 히어로<br />![](/assets/images/edu/smart/200_smartiii_l4_7hero.png)|[로봇 예제 프로그램][01_smart3_L4_Hero.tskx]<br />[모션 파일][smart3_L4_Hero_kr.mtnx]<br />[조종기 프로그램][03_smart3_L4_Hero_RC_kr.tskx]|
+|8. 드래곤<br />![](/assets/images/edu/smart/200_smartiii_l4_8dragon.png)|[로봇 예제 프로그램][01_smart3_L4_Dragon_kr.tskx]<br />[모션 파일][smart3_L4_Dragon.mtnx]<br />[조종기 프로그램][03_smart3_L4_Dragon_RC_kr.tskx]|
+|9. 슈퍼카<br />![](/assets/images/edu/smart/200_smartiii_l4_9super_car.png)|[로봇 예제 프로그램][01_smart3_L4_Super_Car_kr.tskx]<br />[조종기 프로그램][03_smart3_L4_Super_Car_RC_kr.tskx]|
 
 
 [스마트 앱 파라미터 사용법 바로가기]: /docs/kr/software/rplus1/task/task_misc/#스마트앱-파라미터
 [서보 모터]: /docs/kr/parts/motor/servo_motor/
 [R+ SMARTIII 설치 및 예제 다운로드 방법 바로가기]: /docs/kr/software/mobile_app/rplussmart/#r-smart-다운로드설치
 [4단계 교안예제]: #교안예제
-[예제 태스크 코드의 다운로드 방법은 여기를 참고하세요.]: /docs/kr/faq/download_task_code/
+[태스크 코드 다운로드]: /docs/kr/faq/download_task_code/
 [BT-410]: /docs/kr/parts/communication/bt-410/
 [01_smart3_L4_Factory_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/01_smart3_l4_factory_kr.tskx
 [03_smart3_L4_Factory_RC_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/03_smart3_l4_factory_rc_kr.tskx
@@ -92,7 +92,7 @@ sidebar:
 [01_smart3_L4_Quadruped_Robot_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/01_smart3_l4_quadruped_robot_kr.tskx
 [smart3_L4_Quadruped_Robot_kr.mtnx]: http://support.robotis.com/ko/baggage_files/smart3/smart3_l4_quadruped_robot_kr.mtnx
 [03_smart3_L4_Quadruped_Robot_RC_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/03_smart3_l4_quadruped_robot_rc_kr.tskx
-[01_smart3_L4_DJ_Gorilla_kr.tskx]:http://support.robotis.com/ko/baggage_files/smart3/01_smart3_l4_dj_gorilla_kr.tskx
+[01_smart3_L4_DJ_Gorilla_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/01_smart3_l4_dj_gorilla_kr.tskx
 [smart3_L4_DJ_Gorilla_kr.mtnx]: http://support.robotis.com/ko/baggage_files/smart3/smart3_l4_dj_gorilla_kr.mtnx
 [03_smart3_L4_DJ_Gorilla_RC_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/03_smart3_l4_dj_gorilla_rc_kr.tskx
 [01_smart3_L4_Smart_Puppy_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/01_smart3_l4_smart_puppy_kr.tskx

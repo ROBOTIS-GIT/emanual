@@ -129,7 +129,7 @@ The field that indicates the processing result of Instruction Packet
 
 ### Packet Parameters
 
-`Note` Status Packet is received from each Device.
+**NOTE** : Status Packet is received from each Device.
 {: .notice}
 
 |Status Packet|Description|
@@ -383,7 +383,7 @@ The field that indicates the processing result of Instruction Packet
 |...|...|
 |Parameter 4+X|ID of the X-th Device|
 
-`Note` Status Packet is received from each Device.
+**NOTE** : Status Packet is received from each Device.
 {: .notice}
 
 |Status Packet|Description|
@@ -486,7 +486,7 @@ The field that indicates the processing result of Instruction Packet
 |Parameter 10|[2nd Device] High-order byte from the data|
 |...|...|
 
-`Note` Status Packet is received from each Device.
+**NOTE** : Status Packet is received from each Device.
 {: .notice}
 
 |Status Packet|Description|
@@ -522,7 +522,7 @@ The field that indicates the processing result of Instruction Packet
 
 |H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|ERR|PARAM1|CRC1|CRC2|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0xFD|0x00|0x02|0x05|0x00|0x55|0x00|0x24|0x8B|0x21|
+|0xFF|0xFF|0xFD|0x00|0x02|0x05|0x00|0x55|0x00|0x24|0x8B|0xA9|
 
 ## [Bulk Write](#bulk-write)
 

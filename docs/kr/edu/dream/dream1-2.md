@@ -62,7 +62,7 @@ sidebar:
 |   11 (높은 파)    |    11장 예제, 악어    |  ![](/assets/images/edu/dream/dream1-2_crocodile.jpg)   |
 |   12 (높은 솔)    | 12장 예제, 상상하세요 |   ![](/assets/images/edu/dream/dream1-2_imagine.jpg)    |
 
-`Note` USB케이블은 로보티즈 드림 1단계 구성품에 포함되어 있습니다.
+**NOTE** : USB케이블은 로보티즈 드림 1단계 구성품에 포함되어 있습니다.
 {: .notice}
 
 # [교안예제](#교안예제)
@@ -91,7 +91,7 @@ sidebar:
 | 12장 예제, 상상하세요 |   ![](/assets/images/edu/dream/dream1-2_imagine.jpg)    | [DREAM_L2_Distancesensor_KR.tsk] |
 
 
-[자동꺼짐타이머 바로가기]: #
+[자동꺼짐타이머 바로가기]: /docs/kr/software/rplus1/task/programming_02/#자동꺼짐-타이머
 [작동하기]: #작동하기
 [CM-150]: /docs/kr/parts/controller/cm-150/
 [감속모터]: /docs/kr/parts/motor/gm-10a/

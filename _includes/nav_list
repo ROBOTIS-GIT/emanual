@@ -1,7 +1,7 @@
 {% assign navigation = site.data.navigation[include.nav] %}
 <nav class="nav__list">
 
-  {% if page.sidebar.title %}<a href={{ page.permalink | absolute_url }} style="font-size:$type-size-6; color: #2174b6; text-decoration: none; font-weight: bold;" onclick="extendnav()">{{ page.sidebar.title }}</a>{% endif %}
+  {% if page.sidebar.title %}<a href={{ page.permalink | absolute_url }} style="font-size:$type-size-6; color: #2174b6; text-decoration: none; font-weight: bold;">{{ page.sidebar.title }}</a>{% endif %}
   <ul class="nav__items">
   {% for nav in navigation %}
     {% if page.lang=='kr' %}
@@ -33,32 +33,19 @@
     {% else %}
 
       {% if nav.children != null %}
-      {% comment %}
-      {% if navurl == page.url %}
-        {% assign active = "checked" %}
-      {% else %}
-        {% assign active = "" %}
-      {% endif %}
-      {% endcomment %}
-      
       <li class="has-children">
-        <input type="radio" name="toplevel" id="toplevel_{{ forloop.index }}" {{ active }}>
-        <label for="toplevel_{{ forloop.index }}">{{ forloop.index }}. {{ navtitle }} [+]</label>
-
+        <input type="radio" name="toplevel" id="toplevel_{{ forloop.index }}">
+        <label for="toplevel_{{ forloop.index }}"><button class="tocLevel1" onclick="movetopage('{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ navurl }}');">{{ forloop.index }}. {{ navtitle }}</button> [+]</label>
       {% else %}
       <li>
-        <a href="{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ navurl }}" onclick="extendnav()">{{ forloop.index }}. {{ navtitle }}</a>
+        <a href="{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ navurl }}">{{ forloop.index }}. {{ navtitle }}</a>
       </li>
       {% endif %}
 
       {% if nav.children != null %}
         <ul>
+        {% assign child_index = 0 %}
         {% for child in nav.children %}
-          {% if child.url == page.url %}
-            {% assign active = "checked" %}
-          {% else %}
-            {% assign active = "" %}
-          {% endif %}
 
           {% if page.lang=='kr' %}
             {% if child.titlekr %}
@@ -78,11 +65,15 @@
           {% endif %}
 
           {% if child.children != null %}
-          <li class="has-children">
-            <input type="radio" name="sublevel" id="{{ navtitle }}_{{ forloop.index }}" {{ active }}>
-            <label for="{{ navtitle }}_{{ forloop.index }}">{{ forloop.index }}. {{ childtitle }} [+]</label>
+            {% assign child_index = child_index | plus: 1 %}
+            <li class="has-children">
+              <input type="radio" name="sublevel" id="{{ navtitle }}_{{ child_index }}">
+              <label for="{{ navtitle }}_{{ child_index }}"><button class="tocLevel2" onclick="movetopage('{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ childurl }}');">{{ child_index }}. {{ childtitle }}</button> [+]</label>
           {% else %}
-          <li><a href="{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ childurl }}" onclick="extendnav()">{{ forloop.index }}. {{ childtitle }}</a></li>
+            {% if childtitle != null %}
+              {% assign child_index = child_index | plus: 1 %}
+              <li><a href="{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ childurl }}">{{ child_index }}. {{ childtitle }}</a></li>
+            {% endif %}
           {% endif %}
 
           {% if child.children != null %}
@@ -111,9 +102,12 @@
                 {% assign grandchildurl=grandchild.url %}
               {% endif %}
 
-              <li>
-                <a href="{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ grandchildurl }}" style="font-style:italic;" onclick="extendnav()">{{ grandchildtitle }}</a>
-              </li>
+              {% if grandchildtitle != null %}
+                <li>
+                  <a href="{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ grandchildurl }}" style="font-style:italic;">{{ grandchildtitle }}</a>
+                </li>
+              {% endif %}
+              
             {% endfor %}
             </ul>
           {% endif %}
@@ -129,5 +123,5 @@
     {% endif %}
   {% endfor %}
   </ul>
-  <a href="#" style="font-size:$type-size-6; color: #2174b6; text-decoration: none; font-weight: bold;" onclick="extendnav()">Back to Top &#9650;</a>
+  <a href="#" style="font-size:$type-size-6; color: #2174b6; text-decoration: none; font-weight: bold;">Back to Top &#9650;</a>
 </nav>

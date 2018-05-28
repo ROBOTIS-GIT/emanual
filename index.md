@@ -17,15 +17,18 @@ header:
 
 - [Previous e-Manual] will be served as well.
 - New ROBOTIS Community [Forum] is available. Please checkout the [Forum] if you have any issue with ROBOTIS Products.
+- 한국어 사용자는 [`한글 매뉴얼`]을 참조하세요.
 
 # Quick References
 
 ## TurtleBot3
-- [Remote PC Software Setup](/docs/en/platform/turtlebot3/pc_software_setup/)
-- [SBC Software Setup](/docs/en/platform/turtlebot3/rpi3_software_setup/)
-- [Bringup Burger](/docs/en/platform/turtlebot3/bringup/#turtlebot3-burger)
-- [Bringup Waffle](/docs/en/platform/turtlebot3/bringup/#turtlebot3-waffle)
-- [SLAM](/docs/en/platform/turtlebot3/slam/)
+- [PC Setup](http://emanual.robotis.com/docs/en/platform/turtlebot3/pc_setup/)
+- [Raspberry Pi Setup](http://emanual.robotis.com/docs/en/platform/turtlebot3/raspberry_pi_3_setup/)
+- [Intel Joule Setup](http://emanual.robotis.com/docs/en/platform/turtlebot3/joule_setup/)
+- [Bringup Burger](http://emanual.robotis.com/docs/en/platform/turtlebot3/bringup/#turtlebot3-burger)
+- [Bringup Waffle](http://emanual.robotis.com/docs/en/platform/turtlebot3/bringup/#turtlebot3-waffle)
+- [Bringup Waffle Pi](http://emanual.robotis.com/docs/en/platform/turtlebot3/bringup/#turtlebot3-waffle-pi)
+- [SLAM](http://emanual.robotis.com/docs/en/platform/turtlebot3/slam/)
 
 ## DYNAMIXEL SDK
 - [SDK Download](https://github.com/ROBOTIS-GIT/DynamixelSDK/releases)
@@ -55,7 +58,7 @@ header:
 ## Compatibility Guide
 - [Controller](/docs/en/parts/controller/controller_compatibility/)
 
-
+[`한글 매뉴얼`]: http://emanual.robotis.com/docs/kr/
 [AX-12W]: /docs/en/dxl/ax/ax-12w/#control-table-of-eeprom-area
 [AX-12+/12A]: /docs/en/dxl/ax/ax-12a/#control-table-of-eeprom-area
 [AX-18F/18A]: /docs/en/dxl/ax/ax-18a/#control-table-of-eeprom-area

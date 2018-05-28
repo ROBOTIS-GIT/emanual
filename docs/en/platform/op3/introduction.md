@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/op3/introduction/
 sidebar:
-  title: ROBOTIS-OP3
+  title: ROBOTIS OP3
   nav: "op3"
 ---
 
@@ -104,7 +104,7 @@ ROBOTIS OP3 is an affordable, miniature humanoid robot platform with advanced co
 
 ## [Safety Information](#safety-information)
 
-`Caution` ROBOTIS will not be responsible for any loss or damage whatsoever caused resulting from user’s negligence or misuse of the product.
+**CAUTION** : ROBOTIS will not be responsible for any loss or damage whatsoever caused resulting from user’s negligence or misuse of the product.
 {: .notice--warning}
 
 - Read the instruction carefully before getting started.
@@ -130,7 +130,7 @@ Check your ROBOTIS OP3 package for the following items.
 
 ![](/assets/images/platform/op3/op3_007.png)
 
-`Caution` Layout of the front and back panel is subject to change depends on the selected built-in PC.
+**CAUTION** : Layout of the front and back panel is subject to change depends on the selected built-in PC.
 {: .notice--warning}
 
 ## [Charging Battery](#charging-battery)

@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/op2/getting_started/
 sidebar:
-  title: ROBOTIS-OP2
+  title: ROBOTIS OP2
   nav: "op2"
 ---
 
@@ -63,7 +63,7 @@ high payload capacity, and dynamic motion ability to enable many exciting resear
 
 ## [Safety Information](#safety-information)
 
-`Caution` ROBOTIS will not be responsible for any loss or damage whatsoever caused resulting from
+**CAUTION** : ROBOTIS will not be responsible for any loss or damage whatsoever caused resulting from
 user’s negligence or misuse of the product.
 {: .notice--warning}
 
@@ -84,7 +84,7 @@ Check your ROBOTIS OP2 package for the following items.
 
 ![](/assets/images/platform/op2/op2_004.png)
 
-`Note` Korean version offers a different type of charger.
+**NOTE** : Korean version offers a different type of charger.
 {: .notice}
 
 ## [Layout](#layout)
@@ -395,7 +395,7 @@ Is a unique number to identify Dynamixel.
 Values range from 0 (0x00) to 253 (0xFD), Value 254 (0xFE) is used as the Broadcast ID.  
 If the Broadcast ID is used to transmit Instruction Packet, then it can command to all Dynamixels.  
 
-`Note` Please be careful not to duplicate the ID of connected Dynamixels.
+**NOTE** : Please be careful not to duplicate the ID of connected Dynamixels.
 {: .notice}
 
 ### Baud Rate
@@ -414,7 +414,7 @@ Speed(BPS) = 2000000/(Data+1)
 |103|19230.8|19200.0|-0.160 %|
 |207|9615.4|9600.0|-0.160 %|
 
-`Note` Maximum Baud Rate error of 3% is within the tolerance of UART communication.
+**NOTE** : Maximum Baud Rate error of 3% is within the tolerance of UART communication.
 {: .notice}
 
 ### Return Delay Time
@@ -431,7 +431,7 @@ Decides how to return Status packet. There are three possibilities:
 |1|Return only for the READ command|
 |2|Return for all commands|
 
-`Note` When Instruction packet is Broadcast ID, Status packet is not returned regardless of Status return level.
+**NOTE** : When Instruction packet is Broadcast ID, Status packet is not returned regardless of Status return level.
 {: .notice}
 
 ### Dynamixel Power

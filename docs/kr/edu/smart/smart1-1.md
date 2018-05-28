@@ -53,27 +53,27 @@ sidebar:
 
 ![](/assets/images/edu/smart/cm_200_7.jpg)
 
-`Note` 예제 파일은 [1단계 교안예제] 페이지 또는 R+ SMART앱 에서 얻을 수 있습니다.  
+**NOTE** : 예제 파일은 [1단계 교안예제] 페이지 또는 R+ SMART앱 에서 얻을 수 있습니다.  
 {: .notice}
 
 # [교안예제](#교안예제)
 
 {% capture smart1-1_01 %}
 각 예제의 조립 방법이나 실행 시 동작에 관한 내용은 교육키트 1단계 교안을 참고하세요.  
-만일, 프로그램을 직접 만들거나 다운로드 할 경우에 [예제 태스크 코드의 다운로드 방법은 여기를 참고하세요.]  
+만일, 프로그램을 직접 만들거나 다운로드 할 경우에 예제 태스크 코드의 다운로드 방법은 [태스크 코드 다운로드]를 참고하세요.  
 다운로드시 필요한 [BT-210] 은 1단계 구성품에 포함되어 있습니다. 분실시 쇼핑몰에서 별도 구매 해주세요.
 {% endcapture %}
 
 <div class="notice">{{ smart1-1_01 | markdownify }}</div>
 
-|로봇|태스크 코드|설명|
-| :---: | :-----: | :--- |
-|1. 바람개비 꽃<br />![](/assets/images/edu/smart/flower.jpg)|[Download][01_SMART_L1_Flower_KR.tsk]<br />[Download][02_SMART_L1_dB_test_KR.tsk]|-로봇 예제 프로그램<br />-프로그래밍 예제 프로그램|
-|2. 거미<br /> ![](/assets/images/edu/smart/spider.jpg)|[Download][01_SMART_L1_Spider_KR.tsk]<br />[Download][02_SMART_L1_Illumination_test_KR.tsk]|-로봇 예제 프로그램<br />-프로그래밍 예제 프로그램|
-|3. 지키미<br />![](/assets/images/edu/smart/gikimi.jpg)|[Download][01_SMART_L1_Gikimi_KR.tsk]<br />[Download][02_SMART_L1_MotionDetection_test_KR.tsk]|-로봇 예제 프로그램<br />-프로그래밍 예제 프로그램|
-|4. 꿀벌<br />![](/assets/images/edu/smart/dancingbee.jpg)|[Download][01_SMART_L1_Dancingbee_KR.tsk]<br />[Download][02_SMART_L1_Shake_KR.tsk]<br />|-로봇 예제 프로그램<br />-프로그래밍 예제 프로그램|
-|5. 청기백기<br />![](/assets/images/edu/smart/flag.jpg)|[Download][01_SMART_L1_Flag_KR.tsk]<br />[Download][02_SMART_L1_Image_test_KR.tsk]|-프로그래밍 예제 프로그램<br />-로봇 예제 프로그램|
-|6. 전자총<br />![](/assets/images/edu/smart/electrogungun.jpg)|[Download][01_SMART_L1_ElectroGun_KR.tsk]<br />[Download][02_SMART_L1_Character_test_KR.tsk]|-로봇 예제 프로그램<br />-프로그래밍 예제 프로그램|
+|로봇|태스크 코드|
+| :---: | :-----: |
+|1. 바람개비 꽃<br />![](/assets/images/edu/smart/flower.jpg)|[로봇 예제 프로그램][01_SMART_L1_Flower_KR.tsk]<br />[프로그래밍 예제 프로그램][02_SMART_L1_dB_test_KR.tsk]|
+|2. 거미<br /> ![](/assets/images/edu/smart/spider.jpg)|[로봇 예제 프로그램][01_SMART_L1_Spider_KR.tsk]<br />[프로그래밍 예제 프로그램][02_SMART_L1_Illumination_test_KR.tsk]|
+|3. 지키미<br />![](/assets/images/edu/smart/gikimi.jpg)|[로봇 예제 프로그램][01_SMART_L1_Gikimi_KR.tsk]<br />[프로그래밍 예제 프로그램][02_SMART_L1_MotionDetection_test_KR.tsk]|
+|4. 꿀벌<br />![](/assets/images/edu/smart/dancingbee.jpg)|[로봇 예제 프로그램][01_SMART_L1_Dancingbee_KR.tsk]<br />[프로그래밍 예제 프로그램][02_SMART_L1_Shake_KR.tsk]|
+|5. 청기백기<br />![](/assets/images/edu/smart/flag.jpg)|[로봇 예제 프로그램][01_SMART_L1_Flag_KR.tsk]<br />[프로그래밍 예제 프로그램][02_SMART_L1_Image_test_KR.tsk]|
+|6. 전자총<br />![](/assets/images/edu/smart/electrogungun.jpg)|[로봇 예제 프로그램][01_SMART_L1_ElectroGun_KR.tsk]<br />[프로그래밍 예제 프로그램][02_SMART_L1_Character_test_KR.tsk]|
 
 
 [R+SMART]: /docs/kr/software/mobile_app/rplussmart/#r-smart-다운로드설치
@@ -84,7 +84,7 @@ sidebar:
 [접촉센서]: /docs/kr/parts/sensor/ts-10/
 [R+ SMART 설치 및 예제 다운로드 방법 바로가기]: /docs/kr/software/mobile_app/rplussmart/#r-smart-다운로드설치
 [1단계 교안예제]: #교안예제
-[예제 태스크 코드의 다운로드 방법은 여기를 참고하세요.]: /docs/kr/faq/download_task_code/
+[태스크 코드 다운로드]: /docs/kr/faq/download_task_code/
 [01_SMART_L1_Flower_KR.tsk]: http://support.robotis.com/ko/baggage_files/smart/01_smart_l1_flower_kr.tsk
 [02_SMART_L1_dB_test_KR.tsk]: http://support.robotis.com/ko/baggage_files/smart/02_smart_l1_db_test_kr.tsk
 [01_SMART_L1_Spider_KR.tsk]: http://support.robotis.com/ko/baggage_files/smart/01_smart_l1_spider_kr.tsk

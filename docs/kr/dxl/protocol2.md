@@ -131,7 +131,7 @@ Instruction Packet 의 처리 결과를 나타냄
 
 ### Packet Parameters
 
-`Note` Status Packet is received from each Device.
+**NOTE** : Status Packet is received from each Device.
 {: .notice}
 
 |Status Packet|상세 설명|
@@ -520,7 +520,7 @@ Instruction Packet 의 처리 결과를 나타냄
 
 |H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|ERR|PARAM1|CRC1|CRC2|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0xFD|0x00|0x02|0x05|0x00|0x55|0x00|0x24|0x8B|0x21|
+|0xFF|0xFF|0xFD|0x00|0x02|0x05|0x00|0x55|0x00|0x24|0x8B|0xA9|
 
 ## [Bulk Write](#bulk-write)
 

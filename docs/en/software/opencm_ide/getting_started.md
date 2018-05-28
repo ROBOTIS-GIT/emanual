@@ -17,7 +17,7 @@ The `ROBOTIS OpenCM` is a development Software and download tool for the OpenCM9
 Sources of the ROBOTIS OpenCM are released under licenses of their respective authors.  
 Copyright (c)  ROBOTIS Co., Ltd. Modified or newly-created codes are released under the GNUGPL or LGPL licenses.  
 For more information on the OpenCM9.04 refer to the Appendix section of the e-manuals.  
- 
+
 - [GNU GPL](http://opensource.org/licenses/gpl-license.php)
 - [GNL LGPL](http://opensource.org/licenses/lgpl-license.php)
 
@@ -53,7 +53,7 @@ Download the latest version from the ROBOTIS E-manual(support.robotis.com) site 
 ![](/assets/images/sw/opencm_ide/opencm_ide_002.png)
 
 > Directory structure after unzipping the file
- 
+
 Note that the ROBOTIS OpenCM is a portable program that only needs to be unzipped and executed without the need for any separate installation process. If you wish to remove the program, you simply need to delete the directly fully.
 
 #### Connect the OpenCM9.04 to the PC
@@ -61,9 +61,9 @@ Note that the ROBOTIS OpenCM is a portable program that only needs to be unzippe
 For the installation of the USB driver, simply connect the OpenCM9.04 to the PC using the USB cable as shown below.
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_003.png)
-          
+
 > Figure 2.4.1-4 Connecting the OpenCM9.04 to the PC
- 
+
 However we do recommend you avoid connecting to a USB hub that is in use with many other USB devices, and instead you connect to the PC directly. There can be rare cases in which if there is not enough electric current from the USB hub then the download can fail.
 
 #### Driver Installation
@@ -72,11 +72,11 @@ For Window 8 or 10, go to "PC settings -> Update and recovery -> Recovery -> Adv
 In the previous step, connecting the OpenCM board to the PC will make a device called “ROBOTIS Virtual COM Port” appear in the Device Manager.
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_004.png)
- 
+
 Right-click on that device and select “Update Driver Software”.
 
-![](/assets/images/sw/opencm_ide/opencm_ide_005.png) 
- 
+![](/assets/images/sw/opencm_ide/opencm_ide_005.png)
+
 Next select “Browse my computer for driver software”.
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_006.png)
@@ -84,23 +84,23 @@ Next select “Browse my computer for driver software”.
 Click on “Browse” and select the directory that you unzipped above(ROBOTIS\drivers).
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_007.png)
- 
+
 Click Next and the installation proceeds.  
 If the USB driver is installed successfully, a message will appear that says “Windows has successfully updated your driver software” as shown below.
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_008.png)
- 
+
 At this stage it is important to check in the Device Manager what COM Port number the ROBOTIS Virtual COM Port has just been installed as.  
 Connecting to another USB port may change the COM Port number so if you connected to another port then check again and proceed to download.
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_009.png)
- 
+
 #### Run ROBOTIS_OpenCM.exe
 
 In the unzipped directory(\ROBOTIS) double-click on the file ROBOTIS_OpenCM.exe.
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_010.png)
- 
+
 This will execute the ROBOTIS OpenCM tool as shown below.
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_011.png)
@@ -110,26 +110,26 @@ This will execute the ROBOTIS OpenCM tool as shown below.
 Go to File → Examples → 01.Basics → b_Blink
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_012.png)
- 
+
 ##### Select the Board
 
 In Tools → Board, select ROBOTIS OpenCM9.04.
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_013.png)
- 
+
 ##### Select the Serial Port
 
 Make sure you select the COM Port number that you checked in the previous step.
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_014.png)
- 
+
 ##### Proceed to Download
 
 Click on the Download button as shown below. As the download begins the board’s green LED is continuously turned on. Once the download is complete the board resets and the Blink example is executed, and the LED blinks.
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_015.png)
- 
-`Note` If the power turns on for the board and the green LED is continuously turned on then restart the Download. Please refer to the Emergency Recovery Mode(Force Download) section.
+
+**NOTE** : If the power turns on for the board and the green LED is continuously turned on then restart the Download. Please refer to the Emergency Recovery Mode(Force Download) section.
 {: .notice}
 
 ### [MAC OS X](#mac-os-x)
@@ -139,61 +139,61 @@ Click on the Download button as shown below. As the download begins the board’
 Download the installation image file(dmg) for Mac OS X from the E-manual.
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_016.png)
- 
+
 When the download finishes, double-click on the dmg file below and proceed to Mount.
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_017.png)
- 
+
 After mounting, when an installation window appears, click on the Robotis icon with the mouse and drag it to Application.
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_018.png)
- 
+
 Then the installation will proceed as below.
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_019.png)
- 
+
 #### Run the ROBOTIS OpenCM
 
 Using Finder, look in the Application folder to find the ROBOTIS.app application package and double-click on it to run the program.
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_020.png)
- 
+
 As in the figure below, select the Open button.
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_021.png)
- 
+
 The ROBOTIS OpenCM is executed as shown below.
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_022.png)
- 
+
 #### Open the Example Blink
 
 Go to File → Examples → 01. Basics → b_Blink
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_023.png)
- 
+
 #### Select Board
 
 Select ROBOTIS OpenCM9.04.
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_024.png)
- 
+
 #### Select Serial Port.
 
 Select tty.usbmodemXXX. The number on the end is different for each PC.
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_025.png)
- 
+
 #### Proceed to Download
 
 Click on the Download button as shown below. As the download begins the board’s green LED is continuously turned on. Once the download is complete the board resets and the Blink example is executed, and the LED blinks.
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_026.png)
 
-`Note` If the board’s green Status LED does not turn on even after clicking on the Download button, press on the User button and while keeping the button pressed connect the USB to the PC.
+**NOTE** : If the board’s green Status LED does not turn on even after clicking on the Download button, press on the User button and while keeping the button pressed connect the USB to the PC.
 {: .notice}
 
-`Note` If the power turns on for the board and the green LED is continuously turned on then restart the Download. Please refer to the Emergency Recovery Mode(Force Download) section.
+**NOTE** : If the power turns on for the board and the green LED is continuously turned on then restart the Download. Please refer to the Emergency Recovery Mode(Force Download) section.
 {: .notice}
 
 ### [Linux](#linux)
@@ -204,7 +204,7 @@ If the Linux you are using is 32bit then download the Linux 32 bit package, and 
 After downloading, use the following command to unzip the file. The description below is an example for when using 32bit.
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_027.png)
- 
+
 If you unzip the file it will create a ROBOTIS folder as shown below.
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_028.png)
@@ -215,7 +215,7 @@ Same as for Arduino, the ROBOTIS OpenCM tool is a program that has been develope
 If it is installed then proceed to the next step. The way to check if JRE is installed is to use java –version in Terminal as shown below.
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_029.png)
- 
+
 If you get a message as above then you need to install JAVA JRE(Java Runtime Environment) or JDK.  
 Here is how you install openjdk-7-jre-headless.
 
@@ -244,27 +244,27 @@ If the installation completes successfully, the Processing trigger runs properly
 As shown below, double-clicking ROBOTIS_OpenCM or entering ./ROBOTIS_OpenCM in Terminal and pressing Enter will run the program.
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_032.png)
- 
+
 Click on the Execute button.
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_033.png)
- 
+
 Then the program will run as shown below.
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_034.png)
- 
+
 #### Open the Example Blink
 
 Go to File → Examples → 01. Basics → b_Blink
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_035.png)
- 
+
 #### Select Board
 
 In Tools → Board, select ROBOTIS OpenCM9.04.
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_036.png)
- 
+
 #### Select Serial Port
 
 The serial port is shown as ttyACMX, where X is a different number for each PC.  
@@ -279,16 +279,16 @@ As the download begins the board’s green LED is continuously turned on. Once t
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_038.png)
 
-`Note` If the board’s green Status LED does not turn on even after clicking on the Download button, press on the User button and while keeping the button pressed connect the USB to the PC.
+**NOTE** : If the board’s green Status LED does not turn on even after clicking on the Download button, press on the User button and while keeping the button pressed connect the USB to the PC.
 {: .notice}
 
-`Note` If the power turns on for the board and the green LED is continuously turned on then restart the Download. Please refer to the Emergency Recovery Mode(Force Download) section.
+**NOTE** : If the power turns on for the board and the green LED is continuously turned on then restart the Download. Please refer to the Emergency Recovery Mode(Force Download) section.
 {: .notice}
 
 ## [Run Program](#run-program)
 
 If you run the program the following screen appears.
- 
+
 ![](/assets/images/sw/opencm_ide/opencm_ide_039.png)
 
 |Item|Description|
@@ -305,7 +305,7 @@ If you run the program the following screen appears.
 |Status Bar|This is the field where it shows the progress of the requested function visually.|
 |Console|Shows the current cursor location’s line number and the selected board and COM Port.|
 |Tab Menu|This is the menu that you select when adding or removing a tab.|
- 
+
 ### A Look at Some Examples
 
 The ROBOTIS OpenCM IDE provides some simple examples of functions provided by the OpenCM hardware board, and you can check the File (e.g.)Examples menu to see the various examples shown below.
@@ -326,7 +326,7 @@ You can also modify or add to the Auto highlight function at any time in the key
 
 #### Using the Auto Format Function
 
-By using the function in Tools → Auto Format, codes that have been typed jumbled or messy are automatically organized neatly. 
+By using the function in Tools → Auto Format, codes that have been typed jumbled or messy are automatically organized neatly.
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_049.png)
 
@@ -334,7 +334,7 @@ Codes such as below are automatically organized neatly by pressing Ctrl+T.
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_050.png)
 
-#### Adding and Removing Comments 
+#### Adding and Removing Comments
 
 Select Edit → Comment/Uncomment as shown below or press the hotkey Ctrl+/ to comment the entire line, and press the hotkey again to uncomment the line.
 
@@ -348,7 +348,7 @@ If you select a block as shown above and then press Ctrl+/ it will comment the e
 
 If you press Ctrl+/ again it will uncomment the selected lines.
 
-#### Increase and Decrease Indent 
+#### Increase and Decrease Indent
 
 If you select Edit → Increase Indent/Decrease Indent you can control the indentation level from the current cursor. You can also press the hotkeys Ctrl+} to move one tab to the right, or press Ctrl+} to move one tab to the left.
 
@@ -361,40 +361,40 @@ Pressing Ctrl+} repeatedly will move the cursor to the right one tab at a time a
 ### Compile and Download
 
 After you write your code it is useful when programming to use the Compile menu in order to check that the code you wrote is grammatically correct and has no errors.
- 
+
 ![](/assets/images/sw/opencm_ide/opencm_ide_056.png)
- 
+
 If the build is successful then in the status window below in the build’s binary size section it will show the maximum binary size, and the share proportional to the size as 0%.  
 If you have modified the codes in the Core directory shown below, you must delete the Object files that were previously created.
- 
+
 **ROBOTIS\hardware\robotis\cores\robotis**
- 
+
 Do this by selecting the Tools → Clean Objects menu and then build again. It will take a long time to build the first time, but from the second time on it will be fast again since it will reuse the Object files from the first build.
- 
+
 ![](/assets/images/sw/opencm_ide/opencm_ide_057.png)
- 
+
 The Object files are saved in each corresponding board directory inside the Core directory shown below.
- 
+
 ![](/assets/images/sw/opencm_ide/opencm_ide_058.png)
- 
+
 If the whole code is compiled properly with no errors you can now download. Simply click on the down arrow and it will compile and download all at once.
- 
+
 ![](/assets/images/sw/opencm_ide/opencm_ide_059.png)
 
 When the download finishes successfully there will be a message that says Done downloading in the status bar and the downloaded code will be executes directly in OpenCM9.04.
- 
+
 ![](/assets/images/sw/opencm_ide/opencm_ide_060.png)
- 
+
 ### Using the Serial Monitor
 
 ROBOTIS OpenCM provides a terminal program, similar to Windows’s hyper terminal or TeraTerm, by default as an Add-on program.
- 
+
 ![](/assets/images/sw/opencm_ide/opencm_ide_061.png)
 
 If you wish to communicate with the selected COM1 port then click on the serial monitor icon located on the upper-right side of the toolbar to open the serial monitor. You can also use the hotkey Ctrl + Shift + M to open the serial monitor.
- 
+
 ![](/assets/images/sw/opencm_ide/opencm_ide_062.png)
- 
+
 ![](/assets/images/sw/opencm_ide/opencm_ide_063.png)
 
 ### Precautions Regarding the Serial Monitor
@@ -404,13 +404,13 @@ When OpenCM9.04 is downloading, USB communication will not be available. Do not 
 #### Preferences
 
 Manage your settings preferences in File → Preferences.
- 
+
 ![](/assets/images/sw/opencm_ide/opencm_ide_064.png)
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_065.png)
- 
+
 1. Sketchbook location : This is the user’s default work directory. Sketch files will be saved and opened from this directory.
- 
+
     ![](/assets/images/sw/opencm_ide/opencm_ide_066.png)
 
 2. Editor language: This changes the font of the program to a different language.
@@ -426,19 +426,19 @@ Manage your settings preferences in File → Preferences.
 ### Installing Libraries
 
 The installation method of libraries is the same as for Arduino. The library’s path is inside the IDE folder as libraries. ( ROBOTIS\libraries)
- 
+
 ![](/assets/images/sw/opencm_ide/opencm_ide_068.png)
- 
+
 In the case of Mac, access the path below.
 `Documents/ROBOTIS/libraries`
- 
+
 ![](/assets/images/sw/opencm_ide/opencm_ide_069.png)
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_070.png)
- 
+
 As above, organize the libraries folder so that inside there are files RC100.cpp, RC100.h with the same name as the folder RC100. You can put in code written with C file in the utility folder.  
 The examples folder is for sketch examples composed of the corresponding library. Examples are also organized as folders, and the folder name and the ino file name must be the same to be recognized.
-  
+
 ![](/assets/images/sw/opencm_ide/opencm_ide_071.png)
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_072.png)
@@ -449,14 +449,14 @@ If you are unable to download and the message “Board is not responding” show
 If you force the download once, the board should be recovered and normal downloads will be possible again.
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_073.png)
- 
+
 Hold down the User Button on the OpenCM9.04 and connect the board to a PC using an USB cable.  
 Please have any other power source disconnected, and just connect to the USB while having the User Button held down.
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_074.jpg)
 
 > Hold down the User Button when entering recovery mode.
- 
+
 When successful, the green LED should stay on as shown in the image below. When the download is completed the board will reset and the LED will turn off.
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_075.jpg)
@@ -470,8 +470,8 @@ If unable to download, you must remove any code that may disturb the USB interru
 In the CPU of EEPROM(Flash) Library OpenCM9.04, which is STM32F103CB, there is a 128kbyte flash memory.  
 The flash memory is where we save the programming in binary format and also run it. The flash memory is a non-volatile memory so even if the power is turned off the saved data does not disappear.  
 However flash reads and writes data by unit of a page so it can be relatively inconvenient for saving one or two bytes.  
-However its speed is fast. Therefore in OpenCM9.04 we have created a separate library called the EEPROM emulator to save user data in the unit of bytes. 
- 
+However its speed is fast. Therefore in OpenCM9.04 we have created a separate library called the EEPROM emulator to save user data in the unit of bytes.
+
 `Example`
 
 ```c
@@ -502,14 +502,14 @@ void loop(){
 If you compile the code above and download it, it will read the values of the EEPROM virtual addresses from 0~9 through Serial2 as shown below.  
 Since there are no data all values will be printed as 0xffff.  
 In contrast with the BKP, the initialization of the flash memory will set all bits to 1.
- 
+
 ![](/assets/images/sw/opencm_ide/opencm_ide_076.jpg)
- 
+
 Therefore 0xffff is printed. And pressing any key will input a value between 0~12 to the virtual addresses 0~9.  
 Now press the Reset button to restart.     
- 
+
 ![](/assets/images/sw/opencm_ide/opencm_ide_077.jpg)
- 
+
 Now we unplug the power and plug in again to check.
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_078.jpg)
@@ -520,7 +520,7 @@ All Robotis sensor modules can be connected to 5-pin ports. Please refer to the 
 For the A-type you will need to separately solder the 5-pin connector, but for the B-type and C-type the 5-pin connector will already be embedded.
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_079.png)
- 
+
 Please note that the pins assigned to the 5-pin are also shared with the 40-pin IO on both sides, so in the header you must not use the IO pins assigned to the ports used below.
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_080.jpg)
@@ -544,13 +544,13 @@ For example, if you connect the IR sensor to Port 1, you must not use Pins 2, 6,
 
 3. Operation Code  
     The IR sensor can perform IR sensing as long as it controls the pin that corresponds to the SIG2 and the ADC port. The OLLO library is already coded with this principle.
-    
+
     ![](/assets/images/sw/opencm_ide/opencm_ide_082.png)
-    
+
     Check that Pins 2, 6, 7 are assigned to Port 1. In setup(), initialize Pins 6, 7 that are assigned to SIG1,2 to LOW and initialize Pin 2 to analog input.
 
     ![](/assets/images/sw/opencm_ide/opencm_ide_083.png)
-   
+
     In function readIR, set SIG2(Pin 7) as HIGH to turn the transmitter LED as ON and if you read the analog value after 15us you can read the optimal ADC value.  
     And if you send SIG2 again as LOW then one cycle will be finished. It does not matter if there is nothing 30us afterwards.  
     The OLLO library is already coded with this principle so you can easily use it.
@@ -618,7 +618,7 @@ For example, if you connect the IR sensor to Port 1, you must not use Pins 2, 6,
     Since the touch sensor does not have an internal Pull-down circuit you must define INPUT_PULLDOWN as a Pull-down option. The OLLO library will internally initialize the pins of the 5-pin sensor in this way.
 
     ![](/assets/images/sw/opencm_ide/opencm_ide_090.png)
-    
+
     ![](/assets/images/sw/opencm_ide/opencm_ide_091.png)
 
 ## [Digital I/O](#digital-io)
@@ -645,7 +645,7 @@ void setup(){
 void loop(){
   digitalWrite(13, HIGH);
   delay(100); //delay of 0.1 second
-  delay(100); //delay of 0.1 second
+  digitalWrite(13, LOW);
   delay(100); //delay of 0.1 second
 }
 ```
@@ -672,7 +672,7 @@ Connect the button and pull-down resistor as shown below. Use Port 7 to receive 
 For digital input on the I/O Pin of OpenCM9.04 you must use pinMode(7, INPUT) in setup() to configure Pin 7 as INPUT. Then receive HIGH/LOW values with the function digitalRead() as shown below.
 
 ```c
-int value = digitalRead(7); // Reads Pin 7 and assigns it to the variable value 
+int value = digitalRead(7); // Reads Pin 7 and assigns it to the variable value
 ```
 
 Now it checks with the entire code. If the button is pressed then HIGH will be detected, and if the switch is separated then LOW will be detected.  
@@ -692,13 +692,13 @@ void loop(){
   delay(100);  
 }   
 ```
- 
+
 If you change the circuit above to a pull-up circuit as shown below, it will work in the opposite way. If the button is pressed then LOW will be detected, and if it is separated then HIGH will be detected.
 The reason why HIGH is detected when the button is separated is because there is a 3.3V voltage connected to the pull-up resistor.
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_096.jpg)
 
-### Let us receive digital input without either pull-up or pull-down resistors. 
+### Let us receive digital input without either pull-up or pull-down resistors.
 In OpenCM9.04 it is possible to configure a switch circuit in digital input without a pull-down or pull-up resistor. The 26 GPIO Pins in OpenCM9.04 have internal input Pull-up/Pull-down resistors that you can configure with the software.  
 If you need an internal pull-up you can configure as pinMode(7, INPUT_PULLUP) and if you need a pull-down circuit you can configure as pinMode(7, INPUT_PULLDOWN).  
 If you define as INPUT then it would mean digital input made as floating so there will need to be an exterior pull-up or pull-down circuit. Let us look at an example.  
@@ -744,11 +744,11 @@ void loop(){
 }
 ```
 
-### Let us receive an input using the User Button. 
+### Let us receive an input using the User Button.
 Similar to the built-in Status LED, there is a built-in User Button that can be used without the need to make a separate button circuit. If you look at the circuit diagram you can see the built-in pull-down input being used.
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_099.jpg)
-  
+
 The User Button is connected to Pin 23 so you can designate Pin 23 directly or use BOARD_BUTTON_PIN.
 
 ```c
@@ -798,8 +798,8 @@ The LED will blink with a 0.1 second interval. Note that using toggleLED() which
 For analog input, it is important to note that only Pins 0~9 located in the OpenCM9.04 silk screen’s ANALOG IN area will support analog input. Analog output is substituted by PWM Output using TIMER.
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_101.png)
- 
-### Pin 3 receives analog input by a variable resistor. 
+
+### Pin 3 receives analog input by a variable resistor.
 
 Connect a variable resistor to Pin 3 and a voltage of 3.3V as shown below.
 
@@ -811,7 +811,7 @@ For the analog input in Pin 3, use pinMode(3, INPUT_ANALOG) to configure the Pin
 int value = analogRead(3); // Reads analog input through Pin 0 and assigns it to the variable value.
 ```
 
-Here the value that is assigned to the variable value is a 12bit ADC value between 0 ~ 4,095. Let us output the ADC value that is read through the entire code. 
+Here the value that is assigned to the variable value is a 12bit ADC value between 0 ~ 4,095. Let us output the ADC value that is read through the entire code.
 
 ```c
 void setup(){
@@ -869,7 +869,7 @@ If you download to OpenCM9.04 it will make the Status LED repeatedly turn on and
 OpenCM9.04 has a total of 4 serial devices. There are Serial1, Serial2, Serial3, and SerialUSB, but Serial1 is assigned exclusively as a Dynamixel communication port so there are restrictions for using it. Serial 2 is for using Bluetooth devices with 4 pin ports such as BT-210 and BT-110A. Serial3 is shown at the back-side of the PCB as TX3(24), RX3(25).
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_107.png)
- 
+
 The SerialUSB is very important in OpenCM9.04. It performs the firmware download for ROBOTIS OpenCM and also performs data communication as do Serials 1,2,3. The instructions to use it is almost the same as for Serials 1,2,3.
 
 ### Let us send data using a serial device.
@@ -884,7 +884,7 @@ void setup(){
   Serial2.begin(57600);
 }
 void loop(){
-  //Test example code 
+  //Test example code
 }
 ```
 
@@ -935,7 +935,7 @@ This will print the value 128 of variable abc as a binary value. In the same way
 Serial2.println(3.14);
 ```
 
-This will print 3.14 as a Double type and then change lines. It will print to 2 decimal places. You can also define a variable Double and then print it. 
+This will print 3.14 as a Double type and then change lines. It will print to 2 decimal places. You can also define a variable Double and then print it.
 
 ```c
 double  var = 1.234;
@@ -1078,7 +1078,7 @@ double  var = 1.234;
 SerialUSB.println(var);  
 ```
 
-### Let us receive data using the Serial USB device. 
+### Let us receive data using the Serial USB device.
 We will implement an Echo function using the Serial USB device. When data comes to the Serial USB device through a char-type variable temp then we will save the data using the read() method and print right away using the print() method to implement the Echo function.
 
 ```c
@@ -1182,7 +1182,7 @@ The entire code is shown below.
 ![](/assets/images/sw/opencm_ide/opencm_ide_114.png)
 
 ## [Dynamixel Instructions](#dynamixel-instructions)
- 
+
 The Dynamixel used in the example below will be under the premise that ID=1 and the communication speed have all been initialized to 1Mbps. Even though the Dynamixel class has not been defined explicitly, we will assume that is has been predefined as shown below.
 
 ```c
@@ -1206,7 +1206,7 @@ SerialUSB.print(“ Firmware Ver : “);SerialUSB.println(vFirmware);
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_116.png)
 
-### We will read the internal temperature of AX-12A, for which the ID number is 1. 
+### We will read the internal temperature of AX-12A, for which the ID number is 1.
 The address value that corresponds to the internal temperature of AX-12A in the Control Table is shown below.
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_117.png)
@@ -1263,7 +1263,7 @@ void loop(){
 
 Since the Baud rate has been modified we need to initialize the Bus again to Dxl.begin(34).
 
-### Let us check whether the Dynamixel for which ID number is 1 has moved or not. 
+### Let us check whether the Dynamixel for which ID number is 1 has moved or not.
 We can check the current movement status of AX-12A by using the value 46(0x2E) in the Control Table.
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_120.png)
@@ -1321,7 +1321,7 @@ void loop(){
 ### Let us restrict the movement angle to 0~150 degrees.
 If the CCW Angle Limit is 0x3FF then it is 300 degrees, so we will send 0x200 which corresponds to 150 degrees using the writeByte() method.
 
-`Caution` If you set the CCW Angle Limit in number 8 to 0 then it will change to wheel mode and you will not be able to control the Goal position.
+**CAUTION** : If you set the CCW Angle Limit in number 8 to 0 then it will change to wheel mode and you will not be able to control the Goal position.
 {: .notice--warning}
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_124.png)
@@ -1358,8 +1358,8 @@ You need to turn the power off and then restart the power for the Max Torque to 
 
 ```c
 Moving Speed( Address 32(0x20) ) = 512(0x200)
-Goal Position( Address 30(0x1E) ) = 512 (0x200). We will access data by units of words as shown below. 
-Dxl.writeWord(1, 32, 512);  // Configure the speed as 57 RPM 
+Goal Position( Address 30(0x1E) ) = 512 (0x200). We will access data by units of words as shown below.
+Dxl.writeWord(1, 32, 512);  // Configure the speed as 57 RPM
 Dxl.writeWord(1, 30, 512);   // Move to location 180 degrees
 if( Dxl.getResult() == COMM_RXSUCCESS ){ // Check if the communication was successful...}
 ```
@@ -1428,14 +1428,14 @@ Please refer to the RC-100 for information on the RC-100 communication packet.
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_131.png)
 
-> Connecting OpenCM9.04 and the RC100 controller using ZigBee 
+> Connecting OpenCM9.04 and the RC100 controller using ZigBee
 
 ### Infrared connection using RC-100B + IR Receiver OIR-10
 Please refer to [IR-10] for information on infrared communication methods for RC-100A or RC-100B.
 
 [IR-10]: ???
 
-### Bluetooth connection using an Android smartphone + BT-210 
+### Bluetooth connection using an Android smartphone + BT-210
 For Android smartphones you can use the R+ m.Task application’s RC100 simulation to send RC-100 packets. You can download R+m.Task through Google Play.
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_132.png)
@@ -1488,7 +1488,7 @@ The entire code is shown below, and you can open the same code by selecting File
 ![](/assets/images/sw/opencm_ide/opencm_ide_134.png)
 
 ![](/assets/images/sw/opencm_ide/opencm_ide_135.png)
- 
+
 ### In the same way, we will make the Status LED blink using the OIR-10 Infrared receiver.
 We will initialize the Infrared communication mode to the number 2 as shown below.
 

@@ -15,12 +15,9 @@ layout: popup
 A message to move to a specific target point in the Joint Space.
 If the time is set to 0, the speed is automatically configured proportional to the moving distance.
 
-* `name`
+    * `name`
 &emsp;&emsp; target joint name
-* `value`
+    * `value`
 &emsp;&emsp; target joint value
-* `time`
+    * `time`
 &emsp;&emsp; movement time to reach the target value
-
-<br>
-[[&lt;&lt; Back|thormang3_manipulation_module_msgs]]

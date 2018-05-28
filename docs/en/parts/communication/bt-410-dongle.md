@@ -20,7 +20,7 @@ sidebar:
 BT-410 Dongle converts USB 2.0 interface and Bluetooth 4.0 Low Energy standard communication interface(Master).  
 If BT-410 Dongle is connected to the PC, it can be paired with a BT-410 Slave module to exchange data.  
 (Please refer to each product page for instructions)
- 
+
 **1. BT-410 Dongle Compatible Devices**
   - BT-410 SLAVE Module
 
@@ -30,8 +30,8 @@ If BT-410 Dongle is connected to the PC, it can be paired with a BT-410 Slave mo
   - BT-210 Slave Module
   - BT-100/110A
   - ZIG-100/110A
- 
-`Caution` 
+
+`Caution`
 Please make sure to turn off the controller before connecting the Bluetooth module. The device may cause malfunction or be damaged if connected while the controller is turned on.
 {: .notice--warning}
 
@@ -89,12 +89,12 @@ Can reset system, change device name, and set SLAVE address, but **CANNOT** chan
 1. Connect the BT-410 dongle to PC and check assigned port number from the Device Manager. Then connect using the Tera Term terminal program through the respective COM port.
 
     ![](/assets/images/parts/communication/bt-410_dongle_02.png)
-    
+
     - Run Tera Term terminal program and select `New Connection...` under the File menu.
-    - `Download` [Tera Term](http://www.robotis.com/download/software/teraterm-4.73.zip)
+    - `Download` [Tera Term](https://osdn.net/projects/ttssh2/releases/)
 
     ![](/assets/images/parts/communication/bt-410_dongle_03.png)
-    
+
 2. Select assigned COM port for BT-410 dongle.
 
     ![](/assets/images/parts/communication/bt-410_dongle_04.png)
@@ -146,20 +146,20 @@ The followings are AT terminal commands for the BT-410 Dongle.
   Enter "AT+BTAUTOPAIR=0"
 
     ![](/assets/images/parts/communication/bt-410_dongle_13.png)
- 
+
     A few seconds later, below message will be displayed.
- 
+
     ![](/assets/images/parts/communication/bt-410_dongle_14.png)
- 
+
 5. Enable Auto Pairing  
   Enter "AT+BTAUTOPAIR=1"
 
     ![](/assets/images/parts/communication/bt-410_dongle_15.png)
- 
+
     A few seconds later, below message will be displayed.
- 
+
     ![](/assets/images/parts/communication/bt-410_dongle_16.png)
- 
+
 6. Change Baudrate  
   AT+BTUART,baudrate,parity_bit,stop_bit  
   `Example` AT+BTUART,57600,n,1  
@@ -195,7 +195,7 @@ If you installed RoboPlus, FTDI Driver (USB2Dynamixel, USB Downloader (LN-101) d
 2. Decide the location of Driver. If RoboPlus S/W has been installed automatically, the driver is in LN101 folder of RoboPlus Installation folder. Or if you want to install the newest version, download the newest version VCP driver from [FTDI Driver Download] page.
 
     ![img_08][img_08]
-    
+
     ![img_09][img_09]
 
 3. Click the Next(N) button to start the installation. Installation of USB Serial Converter driver is completed.

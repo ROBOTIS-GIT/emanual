@@ -57,34 +57,34 @@ sidebar:
 
   ![](/assets/images/edu/smart/cm_200_7.jpg)
 
-  `Note` 예제 파일은 [3단계 교안예제] 페이지 또는 R+ SMARTIII앱 에서 얻을 수 있습니다.  
+  **NOTE** : 예제 파일은 [3단계 교안예제] 페이지 또는 R+ SMARTIII앱 에서 얻을 수 있습니다.  
   {: .notice}
 
 # [교안예제](#교안예제)
 
 {% capture smart3-3_01 %}
 각 예제의 조립 방법이나 실행 시 동작에 관한 내용은 교육키트 2단계 교안을 참고하세요.  
-또한, [예제 태스크 코드의 다운로드 방법은 여기를 참고하세요.]  
+또한, 예제 태스크 코드의 다운로드 방법은 [태스크 코드 다운로드]를 참고하세요.  
 다운로드시 필요한 [BT-410]은 1단계 구성품에 포함되어 있습니다. 분실시 쇼핑몰에서 별도구매 해주세요.
 {% endcapture %}
 
 <div class="notice">{{ smart3-3_01 | markdownify }}</div>
 
 
-|로봇|태스크 코드|설명|
-| :---: | :-----: | :--- |
-|1. 스노우모빌<br />![](/assets/images/edu/smart/200_1lifesaving_car.png)|[Download][01_smart3_L3_Snow_Mobile_kr.tskx]<br />[Download][03_smart3_L3_Snow_Mobile_RC_kr.tskx]|-로봇 예제 프로그램<br />-조종기 프로그램|
-|2. 더하기 게임<br />![](/assets/images/edu/smart/200_2counter.png)|[Download][01_smart3_L3_Add_Game_kr.tskx]<br />[Download][03_smart3_L3_Add_Game_RC_kr.tskx]|-로봇 예제 프로그램<br />-조종기 프로그램|
-|3. 스마트 금고<br />![](/assets/images/edu/smart/200_3robot_safe.png)|[Download][01_smart3_L3_Strong_Box_kr.tskx]<br />[Download][03_smart3_L3_Strong_Box_RC_kr.tskx]|-로봇 예제 프로그램<br />-조종기 프로그램|
-|4. 다연발 탱크<br />![](/assets/images/edu/smart/200_4cannon.png)|[Download][01_smart3_L3_Multiple_Roket_Tank_kr.tskx]<br />[Download][03_smart3_L3_Multiple_Roket_Tank_RC_kr.tskx]|-로봇 예제 프로그램<br />-조종기 프로그램|
-|5. 반딧불이<br />![](/assets/images/edu/smart/200_5firefly.png)|[Download][01_smart3_L3_Firefly_kr.tskx]<br />[Download][3_smart3_L3_Firefly_RC_kr.tskx]|-로봇 예제 프로그램<br />-조종기 프로그램|
-|6. 해양탐사선<br />![](/assets/images/edu/smart/200_6submarine.png)|[Download][01_smart3_L3_Research_Vessel_kr.tskx]<br />[Download][03_smart3_L3_Research_Vessel_RC_kr.tskx]|-로봇 예제 프로그램<br />-조종기 프로그램|
-|7. 농구 로봇<br />![](/assets/images/edu/smart/200_7basketball.png)|[Download][01_smart3_L3_Basketball_Bot_kr.tskx]<br />[Download][03_smart3_L3_Basketball_Bot_RC_kr.tskx]|-로봇 예제 프로그램<br />-조종기 프로그램|
-|8. 덤프트럭<br />![](/assets/images/edu/smart/200_8ump_truck.png)|[Download][01_smart3_L3_Dump_Truck_kr.tskx]<br />[Download][03_smart3_L3_Dump_Truck_RC_kr.tskx]|-로봇 예제 프로그램<br />-조종기 프로그램|
-|9. 스마트 지게카<br />![](/assets/images/edu/smart/200_9forklift.png)|[Download][01_smart3_L3_Forklift_kr.tskx]<br />[Download][03_smart3_L3_Forklift_RC_kr.tskx]|-로봇 예제 프로그램<br />-조종기 프로그램|
-|10. 플라스틱맨<br />![](/assets/images/edu/smart/200_10wolverine.png)|[Download][01_smart3_L3_Plastic_Man_kr.tskx]<br />[Download][03_smart3_L3_Plastic_Man_AI_kr.tskx]|-로봇 예제 프로그램<br />-자율 프로그램|
-|11. 지프차<br />![](/assets/images/edu/smart/200_11jeep.png)|[Download][01_smart3_L3_Jeep_Car_kr.tskx]<br />[Download][03_smart3_L3_Jeep_Car_RC_kr.tskx]|-로봇 예제 프로그램<br />-조종기 프로그램|
-|12. 타워크레인<br />![](/assets/images/edu/smart/200_12crane.png)|[Download][01_smart3_L3_Tower_Crane_kr.tskx]<br />[Download][03_smart3_L3_Tower_Crane_RC_kr.tskx]|-로봇 예제 프로그램<br />-조종기 프로그램|
+|로봇|태스크 코드|
+| :---: | :-----: |
+|1. 스노우모빌<br />![](/assets/images/edu/smart/200_1lifesaving_car.png)|[로봇 예제 프로그램][01_smart3_L3_Snow_Mobile_kr.tskx]<br />[조종기 프로그램][03_smart3_L3_Snow_Mobile_RC_kr.tskx]|
+|2. 더하기 게임<br />![](/assets/images/edu/smart/200_2counter.png)|[로봇 예제 프로그램][01_smart3_L3_Add_Game_kr.tskx]<br />[조종기 프로그램][03_smart3_L3_Add_Game_RC_kr.tskx]|
+|3. 스마트 금고<br />![](/assets/images/edu/smart/200_3robot_safe.png)|[로봇 예제 프로그램][01_smart3_L3_Strong_Box_kr.tskx]<br />[조종기 프로그램][03_smart3_L3_Strong_Box_RC_kr.tskx]|
+|4. 다연발 탱크<br />![](/assets/images/edu/smart/200_4cannon.png)|[로봇 예제 프로그램][01_smart3_L3_Multiple_Roket_Tank_kr.tskx]<br />[조종기 프로그램][03_smart3_L3_Multiple_Roket_Tank_RC_kr.tskx]|
+|5. 반딧불이<br />![](/assets/images/edu/smart/200_5firefly.png)|[로봇 예제 프로그램][01_smart3_L3_Firefly_kr.tskx]<br />[조종기 프로그램][3_smart3_L3_Firefly_RC_kr.tskx]|
+|6. 해양탐사선<br />![](/assets/images/edu/smart/200_6submarine.png)|[로봇 예제 프로그램][01_smart3_L3_Research_Vessel_kr.tskx]<br />[조종기 프로그램][03_smart3_L3_Research_Vessel_RC_kr.tskx]|
+|7. 농구 로봇<br />![](/assets/images/edu/smart/200_7basketball.png)|[로봇 예제 프로그램][01_smart3_L3_Basketball_Bot_kr.tskx]<br />[조종기 프로그램][03_smart3_L3_Basketball_Bot_RC_kr.tskx]|
+|8. 덤프트럭<br />![](/assets/images/edu/smart/200_8ump_truck.png)|[로봇 예제 프로그램][01_smart3_L3_Dump_Truck_kr.tskx]<br />[조종기 프로그램][03_smart3_L3_Dump_Truck_RC_kr.tskx]|
+|9. 스마트 지게카<br />![](/assets/images/edu/smart/200_9forklift.png)|[로봇 예제 프로그램][01_smart3_L3_Forklift_kr.tskx]<br />[조종기 프로그램][03_smart3_L3_Forklift_RC_kr.tskx]|
+|10. 플라스틱맨<br />![](/assets/images/edu/smart/200_10wolverine.png)|[로봇 예제 프로그램][01_smart3_L3_Plastic_Man_kr.tskx]<br />[자율 프로그램][03_smart3_L3_Plastic_Man_AI_kr.tskx]|
+|11. 지프차<br />![](/assets/images/edu/smart/200_11jeep.png)|[로봇 예제 프로그램][01_smart3_L3_Jeep_Car_kr.tskx]<br />[조종기 프로그램][03_smart3_L3_Jeep_Car_RC_kr.tskx]|
+|12. 타워크레인<br />![](/assets/images/edu/smart/200_12crane.png)|[로봇 예제 프로그램][01_smart3_L3_Tower_Crane_kr.tskx]<br />[조종기 프로그램][03_smart3_L3_Tower_Crane_RC_kr.tskx]|
 
 
 [스마트 앱 파라미터 사용법 바로가기]: /docs/kr/software/rplus1/task/task_misc/#스마트앱-파라미터
@@ -94,7 +94,7 @@ sidebar:
 [LED 모듈]: /docs/kr/parts/display/lm-10/
 [R+ SMARTIII 설치 및 예제 다운로드 방법 바로가기]: /docs/kr/software/mobile_app/rplussmart/#r-smart-다운로드설치
 [3단계 교안예제]: #교안예제
-[예제 태스크 코드의 다운로드 방법은 여기를 참고하세요.]: /docs/kr/faq/download_task_code/
+[태스크 코드 다운로드]: /docs/kr/faq/download_task_code/
 [BT-410]: /docs/kr/parts/communication/bt-410/
 [01_smart3_L3_Snow_Mobile_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/01_smart3_l2_dribble_bot_kr.tskx
 [03_smart3_L3_Snow_Mobile_RC_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/03_smart3_l2_dribble_bot_rc_kr.tskx

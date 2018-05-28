@@ -16,7 +16,7 @@ sidebar:
 
 > AX-12+, AX-12A
 
-`Note` AX-12+ 는 AX-12 에서 회로 및 재질과 휠 기어의 설계를 개선한 버전입니다.
+**NOTE** : AX-12+ 는 AX-12 에서 회로 및 재질과 휠 기어의 설계를 개선한 버전입니다.
 {: .notice}
 
 `주의` AX-12A 는  AX-12+ 와 동일한 성능에 외형을 개선한 모델입니다. 현재는 AX-12A 만 판매되고 있습니다
@@ -26,25 +26,28 @@ sidebar:
 
 | 항목            | 내용                                                                         |
 |:----------------|:-----------------------------------------------------------------------------|
-| 무게            | 53.5g(AX-12, AX-12+), 54.6g(AX-12A)                                          |
-| 크기            | 32mm x 50mm x 40mm                                                           |
-| 최소 제어각     | 0.29&deg;                                                                    |
+| 무게            | 53.5 [g](AX-12, AX-12+), 54.6 [g](AX-12A)                                          |
+| 크기            | 32 X 50 X 40 [mm]<br />1.26 X 1.97 X 1.57 [inch]                             |
+| 최소 제어각     | 0.29 [deg]                                                                    |
 | 모터            | Cored                                                                        |
 | 기어비          | 254 : 1                                                                      |
-| Stall Torque    | 1.5 N*m (at 12V, 1.5A)                                                       |
-| No Load Speed   | 59rpm (at 12V)                                                               |
-| 동작 모드       | 관절 모드 (0&deg; ~ 300&deg;) / 바퀴 모드(무한 회전)                         |
-| 동작 온도       | -5&deg;C ~ +70&deg;C                                                         |
-| 사용 전압       | 9.0 ~ 12.0V (**권장 전압 : 11.1V**)                                          |
+| Stall Torque    | 1.5 [N&middot;m] (at 12 [V], 1.5 [A])                                          |
+| No Load Speed   | 59 [rpm] (at 12 [V])                                                               |
+| 동작 모드       | 관절 모드 : 0 ~ 300 [deg]<br />바퀴 모드 : 무한 회전                   |
+| 동작 온도       | -5 ~ +70 [&deg;C]                                                   |
+| 사용 전압       | 9.0 ~ 12.0 [V] (**권장 전압 : 11.1 [V]**)                                    |
 | Command Signal  | Digital Packet                                                               |
 | Protocol Type   | Half Duplex Asynchronous Serial Communicationf<br />(8bit, 1stop, No Parity) |
-| Link (Physical) | TTL Level Multi Drop Bus(Daisy Chain Type Connector)                         |
+| Link (Physical) | TTL Level Multi Drop Bus                         |
 | ID              | 254 ID (0~253)                                                               |
 | Feedback        | Position, Temperature, Load, Input Voltage, etc                              |
-| Material        | Engineering Plastic                                                          |
+| 기어 재질   | Engineering Plastic(Full)                                               |
+| 케이스 재질        | Engineering Plastic(Front, Middle, Back)                               |
 
-`Note` Stall Torque 는 순간적으로 낼수있는 최대정지토크를 의미합니다. 실제 구동을 위해 로봇을 설계하신다면 Stall Torque의 1/5 이하의 로드가 걸리도록 설계하셔야 안정적인 움직임이 가능합니다.
+**NOTE** : Stall Torque 는 순간적으로 낼수있는 최대정지토크를 의미합니다. 실제 구동을 위해 로봇을 설계하신다면 Stall Torque의 1/5 이하의 로드가 걸리도록 설계하셔야 안정적인 움직임이 가능합니다.
 {: .notice}
+
+{% include kr/dxl/warning.md %}
 
 {% include kr/dxl/control_table_protocol1.md %}
 
@@ -219,7 +222,7 @@ F3은 다음과 같은 방법으로 적용됩니다. F3은 AX-12A의 3면(좌,�
 
 # [참고자료](#참고자료)
 
-`Note` [호환성 가이드]
+**NOTE** : [호환성 가이드]
 {: .notice}
 
 ## [커넥터 정보](#커넥터-정보)

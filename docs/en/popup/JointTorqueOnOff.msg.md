@@ -11,11 +11,10 @@ layout: popup
  ```
 
 - Description
-The message used to create [JointTorqueOnOffArray.msg](JointTorqueOnOffArray.msg)
-* ` string  joint_name`
+The message used to create [JointTorqueOnOffArray.msg]
+    * ` string  joint_name`
 &emsp;&emsp; joint name
-* `bool    torque_enable`
+    * `bool    torque_enable`
 &emsp;&emsp; true for torque on, false for torque off
 
-<br>
-[[&lt;&lt; Back|thormang3_offset_tuner_msgs]]
+[JointTorqueOnOffArray.msg]: /docs/en/platform/msgs/JointTorqueOnOffArray_msg/#jointtorqueonoffarray-msg

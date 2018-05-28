@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: turtlebot3_contact_us
+ref: contact_us
 read_time: true
 share: true
 author_profile: false
@@ -11,7 +11,7 @@ sidebar:
   nav: "turtlebot3"
 ---
 
-<div style="counter-reset: h1 28"></div>
+<div style="counter-reset: h1 23"></div>
 
 # [Contact US](#contact-us)
 
@@ -29,13 +29,13 @@ sidebar:
 
 ![](/assets/images/platform/turtlebot3/logo_robotis.png)
 
-[ROBOTIS](http://wwww.robotis.com/) was derived from a simple response to the question, "What is a Robot?".
+[ROBOTIS](http://www.robotis.com/) was derived from a simple response to the question, "What is a Robot?".
 
 Thus, **ROBOTIS** = "**ROBOT IS...**"
 
 There are many answers to this question, but we strive to develop and apply products that would impact our daily lives and make robots more personal rather than an intelligent appliance. Imaginations can become reality through personal robots.
 
-**US Office**
+**ROBOTIS US Office**
 
 * Address: 26228 Enterprise Ct Lake Forest, CA 92630, USA
 * Tel: +1-949-377-0377
@@ -43,30 +43,29 @@ There are many answers to this question, but we strive to develop and apply prod
 * Web: [http://en.robotis.com/](http://en.robotis.com/)
 * E-Mail: america@robotis.com
 
-**China Office**
+**ROBOTIS China Office**
 
 * Address: Room 1103, Building B, Jiajing Tiancheng, Chaoyang District, (100102) Beijing, China
 * Tel: +86-10-5726-7179
 * Web: [http://cn.robotis.com/](http://cn.robotis.com/)
 * E-Mail: china@robotis.com
 
-**Japan Office**
+**ROBOTIS Japan Office**
 
-* Address: BIZ SMART 8F,1 Chome-10-6 Kajichō, Chiyoda-ku, Tōkyō-to
-* Tel: +81-3-4330-3660
+* Address: Haruka Building 3F, 2 Chome−12-14, Kanda Ogawamachi, Chiyoda-ku, Tokyo-to, Japan
+* Tel: +81-3-6869-8804
 * Web: [http://jp.robotis.com/](http://jp.robotis.com/)
 * E-Mail: japan@robotis.com
 
-**Korea Office**
+**ROBOTIS Korea Office**
 
 * Address:	#1505, Gasan Digital-1ro 145 (Ace High End Tower 3), Geumchungu, Seoul, South Korea
 * Tel:	+82-70-8671-2609
 * Fax:	+82-70-8230-1336
-* Web: [http://wwww.robotis.com/](http://wwww.robotis.com/)
+* Web: [http://www.robotis.com/](http://www.robotis.com/)
 * E-Mail: ost@robotis.com
 
 ## [About OST (Open Source Team)](#about-ost-open-source-team)
-----------------------------
 
 ![](/assets/images/platform/turtlebot3/contact/open_source_team.jpg)
 
