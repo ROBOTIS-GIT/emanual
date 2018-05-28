@@ -2,7 +2,7 @@
 
 |단위|범위|
 | :---: | :---: |
-| 0.229 rpm | -Velocity Limit(44) ~ Velocity Limit(44) |
+| 0.229 [rev/min] | -Velocity Limit(44) ~ Velocity Limit(44) |
 
 **NOTE** : 다이나믹셀의 최대 속도와 최대 토크는 입력전압에 따라 달라집니다. 따라서 입력 전압에 따라 추종할 수 있는 최대 속도 역시 달라집니다. 매뉴얼에서는 권장전압을 기준으로 설명합니다.
 {: .notice}

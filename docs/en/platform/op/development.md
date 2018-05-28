@@ -194,7 +194,7 @@ The illustration above depicts the re-execution of the demo program
  
 {% capture op_notice_02 %}
 
-`Note`
+**NOTE** :
 1. the execute command is **./demo &** instead of the normal **./demo**
 2. the line below reads: **[1] 10223**
 

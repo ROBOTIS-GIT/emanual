@@ -6,6 +6,6 @@ Shutdown(63)에 Input Voltage Error Bit(0x10)가 설정된 경우, Torque Enable
 
 |단위|범위|상세설명|
 | :---: | :---: | :---: |
-|약 0.1V|95 ~ 160|9.5 ~ 16.0V|
+|약 0.1 [V]|95 ~ 160|9.5 ~ 16.0 [V]|
 
 [Shutdown(63)]: #shutdown63

@@ -312,7 +312,7 @@ The pose utility is a tool to easily create a pose based on previously supplied 
 - Inverse Kinematics: The accurate positions of each joint can be calculated.
 
 {% capture motion_01 %}
-`Note`
+**NOTE** :
 - Information regarding the robot are required to create a pose using the pose utility. Therefore, a robot not on the list cannot be used.
 - Some robots may not support the functions listed above.
 - Because the pose utility uses 3D graphics, its performance depends on your graphic card.
