@@ -17,7 +17,7 @@ sidebar:
 
 ## [TurtleBot3 Collaboration Project](#turtlebot3-collaboration-project)
 
-TurtleBot3 is a collaboration project among [Open Robotics][open_robotics], [ROBOTIS][robotis], and more partners like [The Construct][the_construct], [Intel][intel], [Onshape][onshape], [OROCA][oroca], [AuTURBO][auturbo]. The Open Robotics is in charge of software and community activities, while ROBOTIS is in charge of manufacturing and global distribution. 
+TurtleBot3 is a collaboration project among [Open Robotics][open_robotics], [ROBOTIS][robotis], and more partners like [The Construct][the_construct], [Intel][intel], [Onshape][onshape], [OROCA][oroca], [AuTURBO][auturbo], [ROS in Robotclub Malaysia][ros_in_robotclub_malaysia], [Astana Digital][astana digital], [Polariant Experiment][polariant_experiment]. The Open Robotics is in charge of software and community activities, while ROBOTIS is in charge of manufacturing and global distribution.
 
 The most important part of this TurtleBot3 collaboration project is open source based software, hardware, and content. We are encouraging more partners and research collaborators to participate in this project to enrich the robotics field. So we have prepared this page. This page is an introduction to **Awesome Projects** of TurtleBot3 **Partners** and **Research Collaborators**.
 
@@ -29,8 +29,12 @@ If you are interested in partnership with us to realize open source robotics, pl
 ### TurtleBot3 Partners and Research Collaborators
 ![](/assets/images/platform/turtlebot3/logo_platform_sponsors.png)
 
+\* Each collaboration member's web page can be found [here][partners].
+
 ### TurtleBot3 Distributors
 ![](/assets/images/platform/turtlebot3/logo_platform_players.png)
+
+\* Each collaboration member's web page can be found [here][partners].
 
 [open_robotics]: https://www.openrobotics.org/
 [robotis]: http://www.robotis.com/
@@ -39,19 +43,22 @@ If you are interested in partnership with us to realize open source robotics, pl
 [onshape]: https://www.onshape.com/
 [oroca]: http://www.oroca.org/
 [auturbo]: https://github.com/AuTURBO/
+[ros_in_robotclub_malaysia]: https://www.youtube.com/channel/UCLvvXbwPkostryBQt4MIbUw
+[astana digital]: https://www.youtube.com/channel/UCWiIY_zrKH-LMlx2GBWu3yA
+[polariant_experiment]: https://www.polariant.io/
 [partners]: https://www.turtlebot.com/partners
 
 
 ## [TurtleBot3 Awesome Projects](#turtlebot3-awesome-projects)
 
-**[[Robotclub] TB3 (Episode 2): Track and push ball to goal]**
-- by [Robotclub Malaysia](https://www.youtube.com/channel/UCLvvXbwPkostryBQt4MIbUw)
+**[Robotclub TB3 (Episode 2): Track and push ball to goal]**
+- by [ROS in Robotclub Malaysia](https://www.youtube.com/channel/UCLvvXbwPkostryBQt4MIbUw)
 - 2018-05-17
   <iframe width="560" height="315" src="https://www.youtube.com/embed/nCL6YlAlYm4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 
-**[[Robotclub] TB3 (Episode 1) : Ball Tracking]**
-- by [Robotclub Malaysia](https://www.youtube.com/channel/UCLvvXbwPkostryBQt4MIbUw)
+**[Robotclub TB3 (Episode 1) : Ball Tracking]**
+- by [ROS in Robotclub Malaysia](https://www.youtube.com/channel/UCLvvXbwPkostryBQt4MIbUw)
 - 2018-05-07
   <iframe width="560" height="315" src="https://www.youtube.com/embed/RgOvX3rUsI4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 

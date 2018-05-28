@@ -1746,8 +1746,8 @@ opencr_ld.exe COM1 115200 ./opencrfw.bin 1
 
 - [https://github.com/ROBOTIS-GIT/OpenCR/tree/master/arduino/opencr_arduino/tools/opencr_tools_1.0.0](https://github.com/ROBOTIS-GIT/OpenCR/tree/master/arduino/opencr_arduino/tools/opencr_tools_1.0.0)
 
-[Reference Manual]: www.st.com/resource/en/reference_manual/dm00124865.pdf
-[Datasheet]: www.st.com/resource/en/datasheet/stm32f745ie.pdf
+[Reference Manual]: http://www.st.com/resource/en/reference_manual/dm00124865.pdf
+[Datasheet]: http://www.st.com/resource/en/datasheet/stm32f745ie.pdf
 [B3B-EH-A]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
 [B4B-EH-A]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
 [20010WS-04]: http://www.alldatasheet.com/datasheet-pdf/pdf/147797/YEONHO/20010WS-04000.html

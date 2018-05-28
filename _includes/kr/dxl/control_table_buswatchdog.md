@@ -3,7 +3,7 @@ Bus Watchdog(98)은 특정할 수 없는 오류에 의해 제어기와 다이나
 
 |  | 값  | 설명 |
 | :---: | :---: | :------------- |
-| 단위 | 20[ms] | - |
+| 단위 | 20 [msec] | - |
 | 범위 | 0 | Bus Watchdog 기능 비활성화, Bus Watchdog Error 해제 |
 |범위| 1 ~ 127 | Bus Watchdog 활성화 |
 |범위| -1 | Bus Watchdog Error 상태 |
@@ -23,8 +23,8 @@ Bus Wathdog(98)의 값을 ‘0’으로 변경하면, Bus Watchdog Error는 해�
 다음은 Bus Watchdog 기능의 동작 예시입니다.
 1. Operating Mode(11)를 속도 제어 모드로 설정한 후, Torque Enable(64)를 ‘1’로 변경 합니다.
 2. Goal Velocity(104)에 ‘50’을 쓰면, 다이나믹셀은 CCW 방향으로 회전합니다.
-3. Bus Watchdog(98)의 값을 ‘100’(2,000[ms])으로 변경합니다.(Bus Watchdog 기능 활성화)
-4. 2,000[ms] 동안 Instruction packet이 수신되지 않으면, 다이나믹셀은 정지합니다. 정지할 때 Profile Acceleration(108)과 Profile Velocity(112)는 ‘0’으로 적용됩니다.
+3. Bus Watchdog(98)의 값을 ‘100’(2,000 [msec])으로 변경합니다.(Bus Watchdog 기능 활성화)
+4. 2,000 [msec] 동안 Instruction packet이 수신되지 않으면, 다이나믹셀은 정지합니다. 정지할 때 Profile Acceleration(108)과 Profile Velocity(112)는 ‘0’으로 적용됩니다.
 5. Bus Watchdog(98)의 값은 ‘-1’(Bus Watchdog Error)으로 변경됩니다. 이때 Goal Value의 접근속성(Access)은 모두 읽기전용(Read Only)으로 변경됩니다.
 6. Goal Velocity(104)에 ‘150’을 쓰면, Status Packet을 통해 Range Error가 회신합니다.
 7. Bus Watchdog(98)의 값을 ‘0’으로 변경하면, Bus Watchdog Error가 해제됩니다.
