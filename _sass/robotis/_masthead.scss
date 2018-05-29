@@ -1,6 +1,13 @@
 .logo {
-  padding: 10px;
-  border: 0px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  font-size: 14px;
+  vertical-align: middle;
+}
+
+.logo a:hover {
+  color: #CCF850
 }
 
 .masthead {
@@ -11,6 +18,8 @@
   &__inner-wrap {
     display: block;
     width: 100%;
+    height: 64px;
+    background-color: $top-bgcolor;
   }
 
   &__menu {
@@ -23,22 +32,38 @@
   float: left;
 }
 
-/*dropdown menu css*/
-$top-bgcolor: #333333;
-$top-hovercolor: #2581DC;
-$top-textcolor: white;
-$middle-bgcolor: #777777;
-$middle-hovercolor: #333333;
-$middle-textcolor: white;
-$bottom-bgcolor: #999999;
-$bottom-hovercolor: #333333;
-$bottom-textcolor: white;
+.community_link {
+  display: block;
+  float: right;
+  margin-right: 10px;
+  background-color: $top-bgcolor;
+  font-family: FontAleo;
+  height: 64px;
+  line-height: 60px;
+  
+  a {
+    font-size: 14px;
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+}
 
-// .mobile_very_top {
-//   position: absolute;
-//   right: 5%;
-//   margin-top: 4px;
-// }
+/*the container must be positioned relative:*/
+.local_navigation {
+  position: fixed;
+  margin-left: 290px;
+  width: 100%;
+  top: 64px;
+  z-index: 1;
+  background-color: #FAFAFA;
+}
+
+.local_navigation select {
+  border: 1px solid #ccc;
+  font-size: 16px;
+  height: 56px;
+  width: 268px;
+}
 
 .menu-icon {
   cursor: pointer;
@@ -216,18 +241,6 @@ $bottom-textcolor: white;
   display: block;
 }
 
-// .mobile_nav__items ul label,
-// .mobile_nav__items ul a {
-//   background: $middle-bgcolor;
-//   color: $middle-textcolor;
-//   font-size: 0.9em;
-//   padding: 3px;
-//   text-align: center;
-// }
-// .mobile_nav__items ul label:hover,
-// .mobile_nav__items ul a:hover {
-//   background: $middle-hovercolor;
-// }
 .mobile_nav__items > li:last-of-type > label,
 .mobile_nav__items > li:last-of-type > a,
 .mobile_nav__items > li > ul > li:last-of-type label,
@@ -235,26 +248,14 @@ $bottom-textcolor: white;
   box-shadow: none;
 }
 
-
-
-// .mobile_nav__items ul ul label,
-// .mobile_nav__items ul ul a {
-//   font-size: 0.9em;
-//   // padding-left: 30px;
-// }
-//
-// .mobile_nav__items ul ul ul label,
-// .mobile_nav__items ul ul ul a {
-//   // padding-left: 118px;
-// }
-
 .container {
-  clear: both;
+  // clear: both;
   display: block;
+  float: left;
   overflow: hidden;
   background-color: $top-bgcolor;
   font-family: Arial;
-  max-width: $max-width;
+  max-width: 600px;
   z-index: 900;
 }
 
@@ -270,11 +271,12 @@ $bottom-textcolor: white;
   color: $top-textcolor;
   padding: 14px 16px;
   background-color: $top-bgcolor;
-  height: 52px;
+  height: 64px;
 }
 
 .container a:hover, .dropdown:hover .dropbtn {
-    background-color: $top-hovercolor;
+    // background-color: $top-hovercolor;
+    color: #CCF850
 }
 
 .dropdown-content {
@@ -282,7 +284,7 @@ $bottom-textcolor: white;
     position: absolute;
     background-color: $middle-bgcolor;
     min-width: 150px;
-    z-index: 10;
+    z-index: 20;
 
     &-wrapper {
       float: none;
@@ -315,7 +317,7 @@ $bottom-textcolor: white;
     background-color: $bottom-bgcolor;
     min-width: 150px;
     box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
-    z-index: 2;
+    z-index: 20;
 }
 
 .dropdown-2nd-content a {

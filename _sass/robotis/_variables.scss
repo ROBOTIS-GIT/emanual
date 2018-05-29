@@ -4,9 +4,10 @@
   padding: 0;
 }
 
-$max-width  : 1920px;
+$max-width        : 1920px;
+$nominal-width    : 1300px;
 $mobile-landscape : 960px;
-$mobile-portrait : 500px;
+$mobile-portrait  : 500px;
 
 /* system typefaces */
 $serif                      : Georgia, Times, serif !default;
@@ -23,9 +24,12 @@ $times                      : Times, serif !default;
 $bodoni                     : "Bodoni MT", serif !default;
 $calisto                    : "Calisto MT", serif !default;
 $garamond                   : Garamond, serif !default;
+$titillium-webkit           : titillium-web, sans-serif !default;
 
-$global-font-family         : $sans-serif !default;
-$header-font-family         : $sans-serif !default;
+// $global-font-family         : $sans-serif !default;
+// $header-font-family         : $sans-serif !default;
+$global-font-family         : $titillium-webkit !default;
+$header-font-family         : $titillium-webkit !default;
 $caption-font-family        : $serif !default;
 
 $text-color                 : #333333 !default;
@@ -41,6 +45,17 @@ $danger-color               : #ee5f5b !default;
 $info-color                 : #52adc8 !default;
 $code-background-color      : #fafafa !default;
 $code-background-color-dark : $light-gray !default;
+
+/*dropdown menu css*/
+$top-bgcolor: #000;
+$top-hovercolor: #2581DC;
+$top-textcolor: #FFF;
+$middle-bgcolor: #000;
+$middle-hovercolor: #383838;
+$middle-textcolor: #FFF;
+$bottom-bgcolor: #383838;
+$bottom-hovercolor: #333333;
+$bottom-textcolor: white;
 
 /* type scale */
 $type-size-1                : 2.441em !default;  // ~39.056px

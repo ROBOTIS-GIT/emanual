@@ -31,7 +31,6 @@
     </script>
     <script>
     $(document).ready(function() {
-
     	$('.popup').magnificPopup({
     		type: 'ajax',
     		alignTop: true,
@@ -42,24 +41,34 @@
     		alignTop: true,
     		overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
     	});
+      $('#local_navigation_depth1').change(function() {
+        var depth1_selection = $('#local_navigation_depth1').val();
+        console.log(depth1_selection);
+      });
     });
     </script>
     <script>
       // var side_nav = document.getElementById("sidebar");
-      var offset = 105;
+      // var offset = 105;
     
       window.onscroll = function () {
-        stickynav()
+        var offset = 64 - window.scrollY;
+        if(offset < 0) { offset = 0; }
+        $('.sidebar__left').css('top', offset);
+        $('.local_navigation').css('top', offset);
+        console.log(offset);
+        // stickynav()
       };
       
-      function stickynav() {
-        if (window.pageYOffset > offset) {
-          sidebar__left.classList.add("sticky_sidebar");
-        }
-        else {
-          sidebar__left.classList.remove("sticky_sidebar");
-        }
-      }
+      // function stickynav() {
+      //   $('.sidebar__left').css('top', val(offset));
+      //   // if (window.pageYOffset > offset) {
+      //   //   sidebar__left.classList.add("sticky_sidebar");
+      //   // }
+      //   // else {
+      //   //   sidebar__left.classList.remove("sticky_sidebar");
+      //   // }
+      // }
     </script>
     <script>
       var toggle = 0;

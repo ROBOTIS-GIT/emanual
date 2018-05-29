@@ -2,22 +2,7 @@
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <a class="site-title" href="{{ '/' | absolute_url }}"><img class="logo" id="logo" src="/assets/images/robotis_emanual_logo.png"></a>
-      <!-- Google Custom Search -->
-      <form class="searchbox" method="get" id="site_search">
-        <script>
-          (function() {
-            var cx = '003548387656725317882:3pwl9jljqvi';
-            var gcse = document.createElement('script');
-            gcse.type = 'text/javascript';
-            gcse.async = true;
-            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(gcse, s);
-          })();
-        </script>
-        <gcse:search></gcse:search>
-      </form>
-      <!-- end of Google Custom Search -->
+      
       <button class="google_button" id="google_button" onclick="extendgoogletool()"><img src="https://www.google.com/images/cleardot.gif" class="goog-te-gadget-icon" alt="" style="background-image: url(&quot;https://translate.googleapis.com/translate_static/img/te_ctrl3.gif&quot;); background-position: -65px 0px;"></button>
       <div class="google_tools" id="google_tools">
         <!-- Google Translation -->
@@ -262,6 +247,57 @@
         </div>
       {% endfor %}
     </div>
+    
+    <div class="community_link">
+      <a href="http://www.robotis.com" style="margin-left: 10px;"><img class="logo" src="/assets/images/robotis_logo.png"> ROBOTIS</a>
+      <a href="https://community.robotsource.org/" style="margin-left: 10px;"><img class="logo" src="/assets/images/robotsource_logo.png"> Robot Source</a>
+      <a href="https://github.com/ROBOTIS-GIT" style="margin-left: 10px;"><img class="logo" src="/assets/images/github_logo.png"> GitHub</a>
+    </div>
+    
+    <div class="local_navigation">
+      <select id="local_navigation_depth1">
+        <option value = "default">Select Category</option>
+        {% for nav in site.data.navigation.main %}
+          {% if page.lang=='kr' %}
+            {% if nav.titlekr %}
+              {% assign depth1_title=nav.titlekr %}
+              {% assign depth1_url=nav.url %}
+            {% else %}
+              {% assign depth1_title=null %}
+              {% assign depth1_url=null %}
+            {% endif %}
+          {% elsif page.lang=='en' %}
+            {% if nav.title %}
+              {% assign depth1_title=nav.title %}
+              {% assign depth1_url=nav.url %}
+            {% else %}
+              {% assign depth1_title=null %}
+              {% assign depth1_url=null %}
+            {% endif %}
+          {% else %}
+            {% assign depth1_title=null %}
+            {% assign depth1_url=null %}
+          {% endif %}
+          <option value = "{{ depth1_title }}">{{ depth1_title }}</option>
+        {% endfor %}
+      </select>
+    </div>
+    <!-- Google Custom Search 
+    <form class="searchbox" method="get" id="site_search">
+      <script>
+        (function() {
+          var cx = '003548387656725317882:3pwl9jljqvi';
+          var gcse = document.createElement('script');
+          gcse.type = 'text/javascript';
+          gcse.async = true;
+          gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(gcse, s);
+        })();
+      </script>
+      <gcse:search></gcse:search>
+    </form>
+    end of Google Custom Search -->
 
     <div>
       <ul id="search_results" style="margin: 0; background-color: #ffebeb"></ul>

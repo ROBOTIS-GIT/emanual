@@ -92,18 +92,7 @@ html {
   }
   
   #backtotop {
-    display: block;
-    position: fixed;
-    width: 45px;
-    height: 50px;
     top: 13.2rem;
-    right: -5px;
-    background-color: white;
-    border: 1px solid mix(#fff, #000, 80%);
-    border-radius: $border-radius;
-    box-shadow: $box-shadow;
-    z-index: 100;
-    opacity: 0.8;
   }
   
   .extend_sidebar {

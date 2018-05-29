@@ -36,8 +36,8 @@
 <meta property="og:title" content="ROBOTIS e-Manual">
 
 
-  <link rel="canonical" href="http://emanual.robotis.com/docs/help/">
-  <meta property="og:url" content="http://emanual.robotis.com/docs/help/">
+  <link rel="canonical" href="http://localhost:4000/docs/help/">
+  <meta property="og:url" content="http://localhost:4000/docs/help/">
 
 
 
@@ -65,7 +65,7 @@
       "@context" : "http://schema.org",
       "@type" : "Person",
       "name" : "ROBOTIS",
-      "url" : "http://emanual.robotis.com",
+      "url" : "http://localhost:4000",
       "sameAs" : null
     }
   </script>
@@ -78,7 +78,7 @@
 <!-- end SEO -->
 
 
-<link href="http://emanual.robotis.com/feed.xml" type="application/atom+xml" rel="alternate" title="ROBOTIS e-Manual Feed">
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="ROBOTIS e-Manual Feed">
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <!-- <script src="/assets/js/plugins/jquery.fitvids.js"></script> -->
@@ -89,7 +89,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="http://emanual.robotis.com/assets/css/main.css">
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
 
 <!--[if lte IE 9]>
   <style>
@@ -173,7 +173,6 @@ $(function() {
     </script>
     <script>
     $(document).ready(function() {
-
     	$('.popup').magnificPopup({
     		type: 'ajax',
     		alignTop: true,
@@ -184,24 +183,34 @@ $(function() {
     		alignTop: true,
     		overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
     	});
+      $('#local_navigation_depth1').change(function() {
+        var depth1_selection = $('#local_navigation_depth1').val();
+        console.log(depth1_selection);
+      });
     });
     </script>
     <script>
       // var side_nav = document.getElementById("sidebar");
-      var offset = 105;
+      // var offset = 105;
     
       window.onscroll = function () {
-        stickynav()
+        var offset = 64 - window.scrollY;
+        if(offset < 0) { offset = 0; }
+        $('.sidebar__left').css('top', offset);
+        $('.local_navigation').css('top', offset);
+        console.log(offset);
+        // stickynav()
       };
       
-      function stickynav() {
-        if (window.pageYOffset > offset) {
-          sidebar__left.classList.add("sticky_sidebar");
-        }
-        else {
-          sidebar__left.classList.remove("sticky_sidebar");
-        }
-      }
+      // function stickynav() {
+      //   $('.sidebar__left').css('top', val(offset));
+      //   // if (window.pageYOffset > offset) {
+      //   //   sidebar__left.classList.add("sticky_sidebar");
+      //   // }
+      //   // else {
+      //   //   sidebar__left.classList.remove("sticky_sidebar");
+      //   // }
+      // }
     </script>
     <script>
       var toggle = 0;
@@ -246,23 +255,8 @@ $(function() {
     <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
-      <a class="site-title" href="http://emanual.robotis.com/"><img class="logo" id="logo" src="/assets/images/robotis_emanual_logo.png"></a>
-      <!-- Google Custom Search -->
-      <form class="searchbox" method="get" id="site_search">
-        <script>
-          (function() {
-            var cx = '003548387656725317882:3pwl9jljqvi';
-            var gcse = document.createElement('script');
-            gcse.type = 'text/javascript';
-            gcse.async = true;
-            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(gcse, s);
-          })();
-        </script>
-        <gcse:search></gcse:search>
-      </form>
-      <!-- end of Google Custom Search -->
+      <a class="site-title" href="http://localhost:4000/"><img class="logo" id="logo" src="/assets/images/robotis_emanual_logo.png"></a>
+      
       <button class="google_button" id="google_button" onclick="extendgoogletool()"><img src="https://www.google.com/images/cleardot.gif" class="goog-te-gadget-icon" alt="" style="background-image: url(&quot;https://translate.googleapis.com/translate_static/img/te_ctrl3.gif&quot;); background-position: -65px 0px;"></button>
       <div class="google_tools" id="google_tools">
         <!-- Google Translation -->
@@ -633,7 +627,7 @@ $(function() {
 
           
           <li class="mobile_depth_1">
-            <a href="http://emanual.robotis.com/docs/"></a>
+            <a href="http://localhost:4000/docs/"></a>
           </li>
           
 
@@ -1752,6 +1746,53 @@ $(function() {
         </div>
       
     </div>
+    
+    <div class="community_link">
+      <a href="http://www.robotis.com" style="margin-left: 10px;"><img class="logo" src="/assets/images/robotis_logo.png"> ROBOTIS</a>
+      <a href="https://community.robotsource.org/" style="margin-left: 10px;"><img class="logo" src="/assets/images/robotsource_logo.png"> Robot Source</a>
+      <a href="https://github.com/ROBOTIS-GIT" style="margin-left: 10px;"><img class="logo" src="/assets/images/github_logo.png"> GitHub</a>
+    </div>
+    
+    <div class="local_navigation">
+      <select id="local_navigation_depth1">
+        <option value = "default">Select Category</option>
+        
+          
+          <option value = ""></option>
+        
+          
+          <option value = ""></option>
+        
+          
+          <option value = ""></option>
+        
+          
+          <option value = ""></option>
+        
+          
+          <option value = ""></option>
+        
+          
+          <option value = ""></option>
+        
+      </select>
+    </div>
+    <!-- Google Custom Search 
+    <form class="searchbox" method="get" id="site_search">
+      <script>
+        (function() {
+          var cx = '003548387656725317882:3pwl9jljqvi';
+          var gcse = document.createElement('script');
+          gcse.type = 'text/javascript';
+          gcse.async = true;
+          gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(gcse, s);
+        })();
+      </script>
+      <gcse:search></gcse:search>
+    </form>
+    end of Google Custom Search -->
 
     <div>
       <ul id="search_results" style="margin: 0; background-color: #ffebeb"></ul>
@@ -1771,7 +1812,7 @@ $(function() {
   
   </div>
   <div class="archive" id="archive">
-    <a href="/blob/master/docs/help.html" itemprop="sameAs" style="font-size:16px; float:right; margin: 10px 20px; text-decoration: none;">
+    <a href="/blob/master/docs/help.html" itemprop="sameAs" style="font-size:16px; float:right; margin: 10px 40px; text-decoration: none;">
       <i class="fa fa-fw fa-github" aria-hidden="true"></i> Edit on GitHub
     </a>
     <h3 class="archive__subtitle">Recent Posts</h3>
@@ -1813,7 +1854,7 @@ $(window).resize(function() {
       </footer>
     </div>
 
-    <script src="http://emanual.robotis.com/assets/js/main.min.js"></script>
+    <script src="http://localhost:4000/assets/js/main.min.js"></script>
 
 
 

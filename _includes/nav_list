@@ -1,8 +1,25 @@
 {% assign navigation = site.data.navigation[include.nav] %}
 <nav class="nav__list">
 
-  {% if page.sidebar.title %}<a href={{ page.permalink | absolute_url }} style="font-size:$type-size-6; color: #2174b6; text-decoration: none; font-weight: bold;">{{ page.sidebar.title }}</a>{% endif %}
-  <ul class="nav__items">
+
+  <!-- Google Custom Search -->
+  <form class="searchbox" method="get" id="site_search">
+    <script>
+      (function() {
+        var cx = '003548387656725317882:3pwl9jljqvi';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+      })();
+    </script>
+    <gcse:search></gcse:search>
+  </form>
+  <!-- end of Google Custom Search -->
+
+  {% if page.sidebar.title %}<ul class="nav__items"><li><label><a href={{ page.permalink | absolute_url }} style="font-size:18px; color: #7a9c1b; text-decoration: none; font-weight: 600; line-height: 40px;">{{ page.sidebar.title }}</a></label></li>{% endif %}
   {% for nav in navigation %}
     {% if page.lang=='kr' %}
       {% if nav.titlekr %}
@@ -34,13 +51,14 @@
 
       {% if nav.children != null %}
       <li class="has-children">
-        <input type="radio" name="toplevel" id="toplevel_{{ forloop.index }}">
+        <input type="checkbox" name="toplevel" id="toplevel_{{ forloop.index }}">
         <label for="toplevel_{{ forloop.index }}"><button class="tocLevel1" onclick="movetopage('{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ navurl }}');">{{ forloop.index }}. {{ navtitle }}</button> [+]</label>
       {% else %}
       <li>
         <a href="{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ navurl }}">{{ forloop.index }}. {{ navtitle }}</a>
       </li>
       {% endif %}
+      {% assign parent_index = forloop.index %}
 
       {% if nav.children != null %}
         <ul>
@@ -67,12 +85,12 @@
           {% if child.children != null %}
             {% assign child_index = child_index | plus: 1 %}
             <li class="has-children">
-              <input type="radio" name="sublevel" id="{{ navtitle }}_{{ child_index }}">
-              <label for="{{ navtitle }}_{{ child_index }}"><button class="tocLevel2" onclick="movetopage('{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ childurl }}');">{{ child_index }}. {{ childtitle }}</button> [+]</label>
+              <input type="checkbox" name="sublevel" id="{{ navtitle }}_{{ child_index }}">
+              <label for="{{ navtitle }}_{{ child_index }}"><button class="tocLevel2" onclick="movetopage('{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ childurl }}');">{{ parent_index }}. {{ child_index }}. {{ childtitle }}</button> [+]</label>
           {% else %}
             {% if childtitle != null %}
               {% assign child_index = child_index | plus: 1 %}
-              <li><a href="{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ childurl }}">{{ child_index }}. {{ childtitle }}</a></li>
+              <li><a href="{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ childurl }}">{{ parent_index }}. {{ child_index }}. {{ childtitle }}</a></li>
             {% endif %}
           {% endif %}
 
@@ -104,7 +122,7 @@
 
               {% if grandchildtitle != null %}
                 <li>
-                  <a href="{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ grandchildurl }}" style="font-style:italic;">{{ grandchildtitle }}</a>
+                  <a href="{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ grandchildurl }}">- {{ grandchildtitle }}</a>
                 </li>
               {% endif %}
               
@@ -123,5 +141,4 @@
     {% endif %}
   {% endfor %}
   </ul>
-  <a href="#" style="font-size:$type-size-6; color: #2174b6; text-decoration: none; font-weight: bold;">Back to Top &#9650;</a>
 </nav>
