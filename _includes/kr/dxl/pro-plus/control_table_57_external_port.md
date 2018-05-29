@@ -15,9 +15,9 @@
 #### 외부 확장 포트의 위치 및 핀 기능
 아래와 같이 나사를 제거하고 커버를 들어내면 외부 확장 포트가 드러납니다.
 
-![](/assets/images/dxl/pro/pro_external_port.png)
+![](/assets/images/dxl/pro-plus/pro_external_port.png)
 
-![](/assets/images/dxl/pro/pro_external_port_pinout.png)
+![](/assets/images/dxl/pro-plus/pro_external_port_pinout.png)
 
 |핀 1|핀 2|핀 3|핀 4|핀 5|핀 6|
 | :---: | :---: | :---: | :---: | :---: | :---: |
