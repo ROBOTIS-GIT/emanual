@@ -10,7 +10,7 @@ Profile Velocity(112)는 Velocity Limit(44)보다 클 수 없습니다.
 
 Profile이란 모터 구동 시 급격하게 변하는 속도와 가속도를 조절함으로써 진동, 소음 및 모터의 부하를 줄이는 가감속 제어 방법입니다.  
 일반적으로 속도에 근거하여 가감속을 제어하기 때문에 Velocity Profile이라고 불립니다.  
-다이나믹셀은 3가지 형태의 Profile을 제공합니다. 다음은 3가지 종류의 Profile과 Profile의 선택 방법을 표시합니다.  
+다이나믹셀은 3가지 형태의 Profile을 제공합니다. 다음은 3가지 종류의 Profile을 표시합니다.  
 기본적으로 Profile의 선택은 Profile Velocity(112)와 Profile Acceleration(108)의 조합에 의해서 결정됩니다.  
 
 ![](/assets/images/dxl/x/profile_types.png)
@@ -42,7 +42,7 @@ Profile이란 모터 구동 시 급격하게 변하는 속도와 가속도를 �
 {% capture group_notice_03 %}
 **NOTE** : 속도 제어 모드에서는 Profile Acceleration(108)만 적용됩니다.  
 제공되는 Profile의 형태는 Step과 Trapezoidal 2가지 입니다.  
-Velocity Override 기능과 Jerk 관리 기능은 동일하게 동작합니다.  
+Velocity Override 기능은 동일하게 동작합니다.  
 이때의 가속시간(t<sub>1</sub>)은 다음과 같습니다.  
 **t<sub>1</sub> = 64 * {Goal Velocity(104) / Profile Acceleration(108)}**
 {% endcapture %}
