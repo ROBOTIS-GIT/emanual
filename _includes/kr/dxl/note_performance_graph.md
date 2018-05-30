@@ -16,4 +16,4 @@ Performance Graph는 N-T Curve라고도 불리며, 부하(load)를 점진적으�
 - 전원이 꺼진 상태에서 다이나믹셀과 전원을 연결하시고 스위치로 ON/OFF를 해주세요.
 {% endcapture %}
 
-<div class="notice--danger">{{ perform_graph_01 | markdownify }}</div>
+<div class="notice--danger">{{ perform_graph_02 | markdownify }}</div>
