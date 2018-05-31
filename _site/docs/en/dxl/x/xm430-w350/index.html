@@ -183,34 +183,51 @@ $(function() {
     		alignTop: true,
     		overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
     	});
-      $('#local_navigation_depth1').change(function() {
-        var depth1_selection = $('#local_navigation_depth1').val();
-        console.log(depth1_selection);
-      });
+      // $('#local_navigation_depth1').change(function() {
+      //   var depth1_selection = $('#local_navigation_depth1').val();
+      //   console.log(depth1_selection);
+      // });
+      
+      // var current_url = $(location).attr('href');
+      // console.log(current_url);
+      // current_url = current_url.split("/");
+      // console.log(current_url[5]);
+      // if(current_url[5] == "dxl") {
+      //   $('#DYNAMIXEL').prop("selected", "selected");
+      // }
+      // console.log(current_url[6]);
+      // console.log(current_url[7]);
+      // console.log(current_url[8]);
     });
     </script>
     <script>
-      // var side_nav = document.getElementById("sidebar");
-      // var offset = 105;
-    
+      $(function () {
+        var currentHash = window.location.href.split('#')[1];
+        $(document).scroll(function () {
+          $('.header-link').each(function () {
+            var top = window.pageYOffset;
+            var distance = top - $(this).offset().top;
+            var hash = $(this).attr('href');
+
+            if (distance < 30 && distance > -30 && currentHash != hash) {
+              console.log(currentHash);
+              currentHash = hash;
+              window.history.pushState(window.location.href, "title", currentHash);   //Update browser URL with current anchor
+              
+              $('#' + currentHash).attr('checked', true);
+            }
+          });
+        });
+      });
+    </script>
+    <script>
       window.onscroll = function () {
         var offset = 64 - window.scrollY;
         if(offset < 0) { offset = 0; }
-        $('.sidebar__left').css('top', offset);
-        $('.local_navigation').css('top', offset);
-        console.log(offset);
-        // stickynav()
+        $('.sidebar__left').css('top', offset);       //sticky sidebar
+        $('.local_navigation').css('top', offset);    //sticky local navigation
+        $('.searchbox').css('top', offset);           //sticky searchbox
       };
-      
-      // function stickynav() {
-      //   $('.sidebar__left').css('top', val(offset));
-      //   // if (window.pageYOffset > offset) {
-      //   //   sidebar__left.classList.add("sticky_sidebar");
-      //   // }
-      //   // else {
-      //   //   sidebar__left.classList.remove("sticky_sidebar");
-      //   // }
-      // }
     </script>
     <script>
       var toggle = 0;
@@ -1687,7 +1704,8 @@ $(function() {
 
         <div class="dropdown">
           
-          <button class="dropbtn">
+            
+              <button class="dropbtn">
             DYNAMIXEL
           </button>
           
@@ -2116,7 +2134,8 @@ $(function() {
 
         <div class="dropdown">
           
-          <button class="dropbtn">
+            
+              <button class="dropbtn">
             PLATFORM
           </button>
           
@@ -2255,7 +2274,8 @@ $(function() {
 
         <div class="dropdown">
           
-          <button class="dropbtn">
+            
+              <button class="dropbtn">
             STEAM
           </button>
           
@@ -2600,7 +2620,8 @@ $(function() {
 
         <div class="dropdown">
           
-          <button class="dropbtn">
+            
+              <button class="dropbtn">
             SOFTWARE
           </button>
           
@@ -2888,7 +2909,8 @@ $(function() {
 
         <div class="dropdown">
           
-          <button class="dropbtn">
+            
+              <button class="dropbtn">
             PARTS
           </button>
           
@@ -3266,12 +3288,10 @@ $(function() {
 
         <div class="dropdown">
           
-          <button class="dropbtn">
             
               
-                <a href="http://localhost:4000/docs/en/faq/" style="color:#fff;text-decoration:none;">
-              FAQ</a>
-            
+                <button class="dropbtn" onclick="movetopage('http://localhost:4000/docs/en/faq/');">
+            FAQ
           </button>
           
 
@@ -3287,31 +3307,34 @@ $(function() {
       <a href="https://github.com/ROBOTIS-GIT" style="margin-left: 10px;"><img class="logo" src="/assets/images/github_logo.png"> GitHub</a>
     </div>
     
+    <!-- local navigation
     <div class="local_navigation">
       <select id="local_navigation_depth1">
         <option value = "default">Select Category</option>
         
           
-          <option value = "DYNAMIXEL">DYNAMIXEL</option>
+          <option id="DYNAMIXEL" value = "DYNAMIXEL">DYNAMIXEL</option>
         
           
-          <option value = "PLATFORM">PLATFORM</option>
+          <option id="PLATFORM" value = "PLATFORM">PLATFORM</option>
         
           
-          <option value = "STEAM">STEAM</option>
+          <option id="STEAM" value = "STEAM">STEAM</option>
         
           
-          <option value = "SOFTWARE">SOFTWARE</option>
+          <option id="SOFTWARE" value = "SOFTWARE">SOFTWARE</option>
         
           
-          <option value = "PARTS">PARTS</option>
+          <option id="PARTS" value = "PARTS">PARTS</option>
         
           
-          <option value = "FAQ">FAQ</option>
+          <option id="FAQ" value = "FAQ">FAQ</option>
         
       </select>
     </div>
-    <!-- Google Custom Search 
+     -->
+     
+    <!-- Google Custom Search -->
     <form class="searchbox" method="get" id="site_search">
       <script>
         (function() {
@@ -3326,11 +3349,8 @@ $(function() {
       </script>
       <gcse:search></gcse:search>
     </form>
-    end of Google Custom Search -->
+    <!-- end of Google Custom Search -->
 
-    <div>
-      <ul id="search_results" style="margin: 0; background-color: #ffebeb"></ul>
-    </div>
   </div>
 </div>
 
@@ -3348,24 +3368,6 @@ $(function() {
       
 <nav class="nav__list">
 
-
-  <!-- Google Custom Search -->
-  <form class="searchbox" method="get" id="site_search">
-    <script>
-      (function() {
-        var cx = '003548387656725317882:3pwl9jljqvi';
-        var gcse = document.createElement('script');
-        gcse.type = 'text/javascript';
-        gcse.async = true;
-        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(gcse, s);
-      })();
-    </script>
-    <gcse:search></gcse:search>
-  </form>
-  <!-- end of Google Custom Search -->
-
   <ul class="nav__items"><li><label><a href=http://localhost:4000/docs/en/dxl/x/xm430-w350/ style="font-size:18px; color: #7a9c1b; text-decoration: none; font-weight: 600; line-height: 40px;">XM430-W350</a></label></li>
   
     
@@ -3373,9 +3375,10 @@ $(function() {
     
 
       
+      
       <li class="has-children">
-        <input type="checkbox" name="toplevel" id="toplevel_1">
-        <label for="toplevel_1"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/en/dxl/x/xm430-w350/#specifications');">1. Specifications</button> [+]</label>
+        <input type="checkbox" name="toplevel" id="#specifications">
+        <label for="#specifications"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/en/dxl/x/xm430-w350/#specifications');">1. Specifications</button></label>
       
       
 
@@ -3408,9 +3411,10 @@ $(function() {
     
 
       
+      
       <li class="has-children">
-        <input type="checkbox" name="toplevel" id="toplevel_2">
-        <label for="toplevel_2"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/en/dxl/x/xm430-w350/#control-table');">2. Control Table</button> [+]</label>
+        <input type="checkbox" name="toplevel" id="#control-table">
+        <label for="#control-table"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/en/dxl/x/xm430-w350/#control-table');">2. Control Table</button></label>
       
       
 
@@ -3423,9 +3427,12 @@ $(function() {
 
           
             
-            <li class="has-children">
-              <input type="checkbox" name="sublevel" id="Control Table_1">
-              <label for="Control Table_1"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/en/dxl/x/xm430-w350/#control-table-data-address');">2. 1. Control Table, Data, Address</button> [+]</label>
+              
+              
+              <li class="has-grandchildren">
+                <input type="checkbox" name="sublevel" id="#control-table-data-address">
+                <label for="#control-table-data-address"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/en/dxl/x/xm430-w350/#control-table-data-address');">2. 1. Control Table, Data, Address</button></label>
+            
           
 
           
@@ -3512,9 +3519,12 @@ $(function() {
 
           
             
-            <li class="has-children">
-              <input type="checkbox" name="sublevel" id="Control Table_4">
-              <label for="Control Table_4"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/en/dxl/x/xm430-w350/#control-table-description');">2. 4. Control Table Description</button> [+]</label>
+              
+              
+              <li class="has-grandchildren">
+                <input type="checkbox" name="sublevel" id="#control-table-description">
+                <label for="#control-table-description"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/en/dxl/x/xm430-w350/#control-table-description');">2. 4. Control Table Description</button></label>
+            
           
 
           
@@ -4055,9 +4065,10 @@ $(function() {
     
 
       
+      
       <li class="has-children">
-        <input type="checkbox" name="toplevel" id="toplevel_3">
-        <label for="toplevel_3"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/en/dxl/x/xm430-w350/#how-to-assemble');">3. How to Assemble</button> [+]</label>
+        <input type="checkbox" name="toplevel" id="#how-to-assemble">
+        <label for="#how-to-assemble"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/en/dxl/x/xm430-w350/#how-to-assemble');">3. How to Assemble</button></label>
       
       
 
@@ -4103,9 +4114,10 @@ $(function() {
     
 
       
+      
       <li class="has-children">
-        <input type="checkbox" name="toplevel" id="toplevel_4">
-        <label for="toplevel_4"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/en/dxl/x/xm430-w350/#maintenance');">4. Maintenance</button> [+]</label>
+        <input type="checkbox" name="toplevel" id="#maintenance">
+        <label for="#maintenance"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/en/dxl/x/xm430-w350/#maintenance');">4. Maintenance</button></label>
       
       
 
@@ -4138,9 +4150,10 @@ $(function() {
     
 
       
+      
       <li class="has-children">
-        <input type="checkbox" name="toplevel" id="toplevel_5">
-        <label for="toplevel_5"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/en/dxl/x/xm430-w350/#reference');">5. Reference</button> [+]</label>
+        <input type="checkbox" name="toplevel" id="#reference">
+        <label for="#reference"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/en/dxl/x/xm430-w350/#reference');">5. Reference</button></label>
       
       
 
@@ -6407,7 +6420,9 @@ You can also use Dynamixel SDK or Dynamixel Workbench.</p>
 </div>
 
 
-    <div class="page__footer">
+    
+    <div class="page__footer archive_footer">
+    
       <footer>
         <!-- start custom footer snippets -->
 

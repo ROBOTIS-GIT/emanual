@@ -1,8 +1,8 @@
 .searchbox {
-  position: absolute;
-  top: 0;
+  position: fixed;
+  top: 64px;
   left: 0;
-  max-width: 290px;
+  max-width: $sidebar_width;
   z-index: 10;
   // margin: 0.45em 0.5em 0.45em 0.45em;
 }
@@ -39,6 +39,10 @@
 
 .extend_googletools {
   right: 120px;
+}
+
+.gsc-adBlock {
+    display: none !important;
 }
 
 .cse .gsc-search-button input.gsc-search-button-v2,
@@ -78,4 +82,8 @@ input.gsc-search-button-v2 {
 
 .goog-te-gadget-icon {
   padding: 9px;
+}
+
+.gsc-resultsHeader, .gsc-above-wrapper-area-container, .gsc-result-info-container, .gsc-orderby-container, .gsc-table-cell-thumbnail, .gsc-table-cell-snippet-close, .gsc-twiddleRegionCell, .gsc-twiddle-opened, .gsc-configLabelCell, .gsc-table-result {
+  border: 0 !important;
 }

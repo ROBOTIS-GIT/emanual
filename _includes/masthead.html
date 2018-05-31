@@ -164,13 +164,13 @@
 
         <div class="dropdown">
           {% if headtitle %}
-          <button class="dropbtn">
             {% if headurl %}
               {% if headurl contains "://" %}
-                <a href="{{ headurl }}" style="color:#fff;text-decoration:none;">{% else %}
-                <a href="{{ site.url }}{{ site.baseurl }}/docs/{{ page.lang }}{{ headurl }}" style="color:#fff;text-decoration:none;">{% endif %}
-              {% endif %}{{headtitle}}{% if headurl %}</a>
-            {% endif %}
+                <button class="dropbtn" onclick="movetopage('{{ headurl }}');">{% else %}
+                <button class="dropbtn" onclick="movetopage('{{ site.url }}{{ site.baseurl }}/docs/{{ page.lang }}{{ headurl }}');">{% endif %}
+            {% else %}
+              <button class="dropbtn">
+            {% endif %}{{headtitle}}
           </button>
           {% endif %}
 
@@ -254,6 +254,7 @@
       <a href="https://github.com/ROBOTIS-GIT" style="margin-left: 10px;"><img class="logo" src="/assets/images/github_logo.png"> GitHub</a>
     </div>
     
+    <!-- local navigation
     <div class="local_navigation">
       <select id="local_navigation_depth1">
         <option value = "default">Select Category</option>
@@ -278,11 +279,13 @@
             {% assign depth1_title=null %}
             {% assign depth1_url=null %}
           {% endif %}
-          <option value = "{{ depth1_title }}">{{ depth1_title }}</option>
+          <option id="{{ depth1_title }}" value = "{{ depth1_title }}">{{ depth1_title }}</option>
         {% endfor %}
       </select>
     </div>
-    <!-- Google Custom Search 
+     -->
+     
+    <!-- Google Custom Search -->
     <form class="searchbox" method="get" id="site_search">
       <script>
         (function() {
@@ -297,10 +300,7 @@
       </script>
       <gcse:search></gcse:search>
     </form>
-    end of Google Custom Search -->
+    <!-- end of Google Custom Search -->
 
-    <div>
-      <ul id="search_results" style="margin: 0; background-color: #ffebeb"></ul>
-    </div>
   </div>
 </div>

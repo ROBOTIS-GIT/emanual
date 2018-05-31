@@ -919,9 +919,6 @@
 <loc>http://localhost:4000/docs/kr/dxl/pro/h42-20-s300-r/</loc>
 </url>
 <url>
-<loc>http://localhost:4000/docs/kr/dxl/pro_plus/h42p-20-s300-r/</loc>
-</url>
-<url>
 <loc>http://localhost:4000/docs/kr/dxl/pro/h54-100-s500-r(a)/</loc>
 </url>
 <url>
@@ -938,12 +935,6 @@
 </url>
 <url>
 <loc>http://localhost:4000/docs/kr/dxl/pro/h54-200-s500-r/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/docs/kr/dxl/pro_plus/h54p-100-s500-r/</loc>
-</url>
-<url>
-<loc>http://localhost:4000/docs/kr/dxl/pro_plus/h54p-200-s500-r/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/docs/en/parts/motor/h_speed_geared_motor/</loc>

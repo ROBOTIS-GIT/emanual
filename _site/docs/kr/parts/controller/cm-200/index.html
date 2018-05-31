@@ -183,34 +183,51 @@ $(function() {
     		alignTop: true,
     		overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
     	});
-      $('#local_navigation_depth1').change(function() {
-        var depth1_selection = $('#local_navigation_depth1').val();
-        console.log(depth1_selection);
-      });
+      // $('#local_navigation_depth1').change(function() {
+      //   var depth1_selection = $('#local_navigation_depth1').val();
+      //   console.log(depth1_selection);
+      // });
+      
+      // var current_url = $(location).attr('href');
+      // console.log(current_url);
+      // current_url = current_url.split("/");
+      // console.log(current_url[5]);
+      // if(current_url[5] == "dxl") {
+      //   $('#DYNAMIXEL').prop("selected", "selected");
+      // }
+      // console.log(current_url[6]);
+      // console.log(current_url[7]);
+      // console.log(current_url[8]);
     });
     </script>
     <script>
-      // var side_nav = document.getElementById("sidebar");
-      // var offset = 105;
-    
+      $(function () {
+        var currentHash = window.location.href.split('#')[1];
+        $(document).scroll(function () {
+          $('.header-link').each(function () {
+            var top = window.pageYOffset;
+            var distance = top - $(this).offset().top;
+            var hash = $(this).attr('href');
+
+            if (distance < 30 && distance > -30 && currentHash != hash) {
+              console.log(currentHash);
+              currentHash = hash;
+              window.history.pushState(window.location.href, "title", currentHash);   //Update browser URL with current anchor
+              
+              $('#' + currentHash).attr('checked', true);
+            }
+          });
+        });
+      });
+    </script>
+    <script>
       window.onscroll = function () {
         var offset = 64 - window.scrollY;
         if(offset < 0) { offset = 0; }
-        $('.sidebar__left').css('top', offset);
-        $('.local_navigation').css('top', offset);
-        console.log(offset);
-        // stickynav()
+        $('.sidebar__left').css('top', offset);       //sticky sidebar
+        $('.local_navigation').css('top', offset);    //sticky local navigation
+        $('.searchbox').css('top', offset);           //sticky searchbox
       };
-      
-      // function stickynav() {
-      //   $('.sidebar__left').css('top', val(offset));
-      //   // if (window.pageYOffset > offset) {
-      //   //   sidebar__left.classList.add("sticky_sidebar");
-      //   // }
-      //   // else {
-      //   //   sidebar__left.classList.remove("sticky_sidebar");
-      //   // }
-      // }
     </script>
     <script>
       var toggle = 0;
@@ -1835,7 +1852,8 @@ $(function() {
 
         <div class="dropdown">
           
-          <button class="dropbtn">
+            
+              <button class="dropbtn">
             다이나믹셀
           </button>
           
@@ -2264,7 +2282,8 @@ $(function() {
 
         <div class="dropdown">
           
-          <button class="dropbtn">
+            
+              <button class="dropbtn">
             플랫폼
           </button>
           
@@ -2411,7 +2430,8 @@ $(function() {
 
         <div class="dropdown">
           
-          <button class="dropbtn">
+            
+              <button class="dropbtn">
             교육키트
           </button>
           
@@ -2805,7 +2825,8 @@ $(function() {
 
         <div class="dropdown">
           
-          <button class="dropbtn">
+            
+              <button class="dropbtn">
             소프트웨어
           </button>
           
@@ -3101,7 +3122,8 @@ $(function() {
 
         <div class="dropdown">
           
-          <button class="dropbtn">
+            
+              <button class="dropbtn">
             부품
           </button>
           
@@ -3488,12 +3510,10 @@ $(function() {
 
         <div class="dropdown">
           
-          <button class="dropbtn">
             
               
-                <a href="http://localhost:4000/docs/kr/faq/" style="color:#fff;text-decoration:none;">
-              FAQ</a>
-            
+                <button class="dropbtn" onclick="movetopage('http://localhost:4000/docs/kr/faq/');">
+            FAQ
           </button>
           
 
@@ -3509,31 +3529,34 @@ $(function() {
       <a href="https://github.com/ROBOTIS-GIT" style="margin-left: 10px;"><img class="logo" src="/assets/images/github_logo.png"> GitHub</a>
     </div>
     
+    <!-- local navigation
     <div class="local_navigation">
       <select id="local_navigation_depth1">
         <option value = "default">Select Category</option>
         
           
-          <option value = "다이나믹셀">다이나믹셀</option>
+          <option id="다이나믹셀" value = "다이나믹셀">다이나믹셀</option>
         
           
-          <option value = "플랫폼">플랫폼</option>
+          <option id="플랫폼" value = "플랫폼">플랫폼</option>
         
           
-          <option value = "교육키트">교육키트</option>
+          <option id="교육키트" value = "교육키트">교육키트</option>
         
           
-          <option value = "소프트웨어">소프트웨어</option>
+          <option id="소프트웨어" value = "소프트웨어">소프트웨어</option>
         
           
-          <option value = "부품">부품</option>
+          <option id="부품" value = "부품">부품</option>
         
           
-          <option value = "FAQ">FAQ</option>
+          <option id="FAQ" value = "FAQ">FAQ</option>
         
       </select>
     </div>
-    <!-- Google Custom Search 
+     -->
+     
+    <!-- Google Custom Search -->
     <form class="searchbox" method="get" id="site_search">
       <script>
         (function() {
@@ -3548,11 +3571,8 @@ $(function() {
       </script>
       <gcse:search></gcse:search>
     </form>
-    end of Google Custom Search -->
+    <!-- end of Google Custom Search -->
 
-    <div>
-      <ul id="search_results" style="margin: 0; background-color: #ffebeb"></ul>
-    </div>
   </div>
 </div>
 
@@ -3569,24 +3589,6 @@ $(function() {
     
       
 <nav class="nav__list">
-
-
-  <!-- Google Custom Search -->
-  <form class="searchbox" method="get" id="site_search">
-    <script>
-      (function() {
-        var cx = '003548387656725317882:3pwl9jljqvi';
-        var gcse = document.createElement('script');
-        gcse.type = 'text/javascript';
-        gcse.async = true;
-        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(gcse, s);
-      })();
-    </script>
-    <gcse:search></gcse:search>
-  </form>
-  <!-- end of Google Custom Search -->
 
   <ul class="nav__items"><li><label><a href=http://localhost:4000/docs/kr/parts/controller/cm-200/ style="font-size:18px; color: #7a9c1b; text-decoration: none; font-weight: 600; line-height: 40px;">CM-200</a></label></li>
   
@@ -3700,9 +3702,10 @@ $(function() {
     
 
       
+      
       <li class="has-children">
-        <input type="checkbox" name="toplevel" id="toplevel_10">
-        <label for="toplevel_10"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/kr/parts/controller/cm-200/#초급-사용자');">10. 초급 사용자</button> [+]</label>
+        <input type="checkbox" name="toplevel" id="#초급-사용자">
+        <label for="#초급-사용자"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/kr/parts/controller/cm-200/#초급-사용자');">10. 초급 사용자</button></label>
       
       
 
@@ -3774,9 +3777,10 @@ $(function() {
     
 
       
+      
       <li class="has-children">
-        <input type="checkbox" name="toplevel" id="toplevel_11">
-        <label for="toplevel_11"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/kr/parts/controller/cm-200/#고급-사용자');">11. 고급 사용자</button> [+]</label>
+        <input type="checkbox" name="toplevel" id="#고급-사용자">
+        <label for="#고급-사용자"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/kr/parts/controller/cm-200/#고급-사용자');">11. 고급 사용자</button></label>
       
       
 
@@ -3809,9 +3813,10 @@ $(function() {
     
 
       
+      
       <li class="has-children">
-        <input type="checkbox" name="toplevel" id="toplevel_12">
-        <label for="toplevel_12"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/kr/parts/controller/cm-200/#관리하기');">12. 관리하기</button> [+]</label>
+        <input type="checkbox" name="toplevel" id="#관리하기">
+        <label for="#관리하기"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/kr/parts/controller/cm-200/#관리하기');">12. 관리하기</button></label>
       
       
 
@@ -4555,7 +4560,9 @@ $(function() {
 </div>
 
 
-    <div class="page__footer">
+    
+    <div class="page__footer archive_footer">
+    
       <footer>
         <!-- start custom footer snippets -->
 

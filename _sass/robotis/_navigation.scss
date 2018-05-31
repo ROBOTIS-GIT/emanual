@@ -1,6 +1,6 @@
 .nav__list {
   overflow-y:auto;
-  height: 85vh;
+  height: 100vh;
 }
 
 .sticky_sidebar nav {
@@ -8,10 +8,10 @@
 }
 
 .sidebar__left {
-  width: 290px;
+  width: $sidebar_width;
   height: 100vh;
   float: left;
-  top: 66px;
+  top: 64px;
   position: fixed;
   z-index: 9;
   word-wrap: break-word;
@@ -78,6 +78,7 @@
   /* by default hide all sub menus */
   display: none;
   margin-left: 0;
+  background-color: #F2F2F2;
 }
 
 .nav__items li {
@@ -86,6 +87,10 @@
   -ms-user-select: none;
   user-select: none;
   list-style: none;
+}
+
+.nav__items li ul li {
+  padding-right: 10px;
 }
 
 .nav__items input[type=checkbox] {
@@ -108,13 +113,73 @@
   // color: #ddd;
 }
 
-.nav__items input[type=checkbox]:checked + label::after {
-  /* show open folder icon if item is checked */
-  background-position: -32px 0;
+.has-children label::after, .has-children a::after, .has-grandchildren label::after, .has-grandchildren a::after {
+  /* icons */
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
-.nav__items input[type=checkbox]:checked + label + ul,
-.nav__items input[type=checkbox]:checked + label:nth-of-type(n) + ul {
+.has-children label::before, .has-children label::after {
+  left: 36px;
+  background: url(../images/icon.png) no-repeat 0 0;
+}
+
+.has-grandchildren label::before, .has-grandchildren label::after {
+  left: 36px;
+  background: url(../images/icon.png) no-repeat -16px 0;
+}
+
+.has-children label::after {
+  /* arrow icon */
+  left: 270px;
+  -webkit-transform: translateY(-50%) rotate(-90deg);
+  -moz-transform: translateY(-50%) rotate(-90deg);
+  -ms-transform: translateY(-50%) rotate(-90deg);
+  -o-transform: translateY(-50%) rotate(-90deg);
+  transform: translateY(-50%) rotate(-90deg);
+}
+
+.has-children input[type=checkbox]:checked + label::after {
+  /* show open folder icon if item is checked */
+  left: 270px;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.has-grandchildren label::after {
+  /* arrow icon */
+  left: 260px;
+  -webkit-transform: translateY(-50%) rotate(-90deg);
+  -moz-transform: translateY(-50%) rotate(-90deg);
+  -ms-transform: translateY(-50%) rotate(-90deg);
+  -o-transform: translateY(-50%) rotate(-90deg);
+  transform: translateY(-50%) rotate(-90deg);
+}
+
+.has-grandchildren input[type=checkbox]:checked + label::after {
+  /* show open folder icon if item is checked */
+  left: 260px;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.has-children input[type=checkbox]:checked + label + ul,
+.has-children input[type=checkbox]:checked + label:nth-of-type(n) + ul {
   /* use label:nth-of-type(n) to fix a bug on safari (<= 8.0.8) with multiple adjacent-sibling selectors*/
   /* show children when item is checked */
   display: block;
@@ -153,6 +218,9 @@
   font-weight: 200;
   color: #434445;
   background: #F2F2F2;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .nav__items > li > ul > li > ul > li a {
@@ -204,6 +272,7 @@
 
 .tocLevel2 {
   border: none;
+  max-width: $sidebar_width - 60;
   background-color: transparent;
   font-size: 14px;
   color: #434445;

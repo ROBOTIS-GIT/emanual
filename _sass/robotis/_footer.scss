@@ -6,7 +6,6 @@
   clear: both;
   height: auto;
   font-size: 14px;
-  margin-left: 290px;
   text-align: center;
   /* sticky footer fix end */
 
@@ -39,4 +38,13 @@
   .fa {
     color: mix(#fff, #7a8288, 25%);
   }
+}
+
+.archive_footer {
+  max-width: $max-width - $sidebar_width;
+  margin-left: $sidebar_width;
+}
+
+.splash_footer {
+  margin-left: 0;
 }

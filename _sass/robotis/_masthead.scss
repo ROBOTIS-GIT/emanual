@@ -6,10 +6,6 @@
   vertical-align: middle;
 }
 
-.logo a:hover {
-  color: #CCF850
-}
-
 .masthead {
   position: relative;
   margin: 0;
@@ -46,12 +42,16 @@
     color: #FFFFFF;
     text-decoration: none;
   }
+  a:hover {
+    color: #CCF850;
+  }
 }
 
 /*the container must be positioned relative:*/
 .local_navigation {
   position: fixed;
-  margin-left: 290px;
+  margin-left: $sidebar_width;
+  max-width: 1630px;
   width: 100%;
   top: 64px;
   z-index: 1;
