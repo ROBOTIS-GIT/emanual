@@ -1,4 +1,4 @@
-These values limit maximum and minimum target positions.  
+These values limit maximum and minimum desired positions.  
 The Goal Position(596) can't exceed these values.  
 Attempting to write an exceeding value will fail and result in receiving a Limit Error Bit from the Status Packet.  
 In Extended Position Control Mode, these limits will be ignored.

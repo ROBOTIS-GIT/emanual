@@ -1,4 +1,4 @@
-[Goal Acceleration(606)] can be used to set a target acceleration. This value is used in Velocity Control Mode, Position Control Mode and Extended Position Control Mode. The profile control will be enabled when both [Goal Acceleration(606)] and [Goal Velocity(600)] are not '0'.
+[Goal Acceleration(606)] can be used to set a desired acceleration. This value is used in Velocity Control Mode, Position Control Mode and Extended Position Control Mode. The profile control will be enabled when both [Goal Acceleration(606)] and [Goal Velocity(600)] are not '0'.
 Please refer to the [Goal Velocity(600)] for RPM conversion constant.
 
 |Value Range | Unit |

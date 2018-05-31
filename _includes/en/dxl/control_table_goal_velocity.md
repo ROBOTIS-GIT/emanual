@@ -1,4 +1,4 @@
-In case of Velocity Control Mode, Goal Velocity(104) can be used to set a target velocity. This value cannot exceed Velocity Limit(44). For now, Goal Velocity(104) is used for target velocity, but this value is not used to limit the velocity.
+In case of Velocity Control Mode, Goal Velocity(104) can be used to set a desired velocity. This value cannot exceed Velocity Limit(44). For now, Goal Velocity(104) is used for desired velocity, but this value is not used to limit the velocity.
 
 |Unit|Value Range|
 | :---: | :---: |
