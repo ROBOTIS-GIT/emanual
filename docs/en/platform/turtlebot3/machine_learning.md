@@ -21,18 +21,18 @@ This application is reinforcement learning with DQN (Deep Q-Learning). The reinf
 
 <iframe width="854" height="480" src="https://www.youtube.com/embed/WADmP0wzLxs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-This shows reinforcement learning with TurtleBot3 in gazebo.  
+This shows reinforcement learning with TurtleBot3 in gazebo. 
 This reinforcement learning is applied DQN(Deep Q-Learning) algorithm with LDS.  
 We are preparing a four-step reinforcement learning tutorial.
 
-## Step. 1 (No obstacle)
+## [Step. 1 (No Obstacle)](#step-1-no-obstacle)
 - (Coming soon!)
 
-## Step. 2 (Static obstacle)
+## [Step. 2 (Static Obstacle)](#step-2-static-obstacle)
 - (Coming soon!)
 
-## Step. 3 (Moving obstacle)
+## [Step. 3 (Moving Obstacle)](#step-3-moving-obstacle)
 - (Coming soon!)
 
-## Step. 4 (Combination obstacle)
+## [Step. 4 (Combination Obstacle)](#step-4-combination-obstacle)
 - (Coming soon!)
