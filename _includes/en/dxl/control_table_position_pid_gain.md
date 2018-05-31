@@ -10,9 +10,9 @@ These Gains are used in Position Control Mode and Extended Position Control Mode
 
 Below figure is a block diagram describing the position controller in Position Control Mode and Extended Position Control Mode. When the instruction from the user is received by Dynamixel, it takes following steps until driving the horn.
 1. An Instruction from the user is transmitted via Dynamixel bus, then registered to Goal Position(116).
-2. Goal Position(116) is converted to target position trajectory and target velocity trajectory by Profile Velocity(112) and Profile Acceleration(108).
-3. The target position trajectory and target velocity trajectory is stored at Position Trajectory(140) and Velocity Trajectory(136) respectively.
-4. Feedforward and PID controller calculate PWM output for the motor based on target trajectories.
+2. Goal Position(116) is converted to desired position trajectory and desired velocity trajectory by Profile Velocity(112) and Profile Acceleration(108).
+3. The desired position trajectory and desired velocity trajectory is stored at Position Trajectory(140) and Velocity Trajectory(136) respectively.
+4. Feedforward and PID controller calculate PWM output for the motor based on desired trajectories.
 5. Goal PWM(100) sets a limit on the calculated PWM output and decides the final PWM value.
 6. The final PWM value is applied to the motor through an Inverter, and the horn of Dynamixel is driven.
 7. Results are stored at Present Position(132), Present Velocity(128), Present PWM(124) and Present Current(126).

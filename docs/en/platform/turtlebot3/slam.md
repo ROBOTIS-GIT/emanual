@@ -22,6 +22,7 @@ sidebar:
 **NOTE**: 
 - This instructions were tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 - This instructions are supposed to be running on the remote PC. Please run the instructions below on your **Remote PC**.
+- The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. The shortcut key for running the terminal is `Ctrl`-`Alt`-`T`.
 - Make sure to run the [Bringup](/docs/en/platform/turtlebot3/bringup/#bringup) instructions before running the instructions below.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
@@ -63,24 +64,32 @@ The **SLAM (Simultaneous Localization and Mapping)** is a technique to draw a ma
 **TIP**: Before executing this command, you have to specify the model name of TurtleBot3. The `${TB3_MODEL}` is the name of the model you are using in `burger`, `waffle`, `waffle_pi`. If you want to permanently set the export settings, please refer to [Export TURTLEBOT3_MODEL][export_turtlebot3_model]{: .popup} page.
 {: .notice--success}
 
-**TIP**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. The shortcut key for running the terminal is `Ctrl`-`Alt`-`T`.
-{: .notice--success}
-
 ``` bash
 $ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
 ```
 
-{% capture notice_02 %}
+**TIP**: When you run the above command, the visualization tool RViz is also executed. If you want to run RViz separately, use one of the following commands.
+{: .notice--success}
+
+``` bash
+$ rviz -d `rospack find turtlebot3_slam`/rviz/turtlebot3_gmapping.rviz
+$ rviz -d `rospack find turtlebot3_slam`/rviz/turtlebot3_cartographer.rviz
+$ rviz -d `rospack find turtlebot3_slam`/rviz/turtlebot3_hector.rviz
+$ rviz -d `rospack find turtlebot3_slam`/rviz/turtlebot3_karto.rviz
+$ rviz -d `rospack find turtlebot3_slam`/rviz/turtlebot3_frontier_exploration.rviz
+```
+
+{% capture notice_03 %}
 **NOTE**: Support for various SLAM methods
 - TurtleBot3 supports Gmapping, Cartographer, Hector, and Karto among various SLAM methods. You can do this by changing the `slam_methods:=xxxxx` option.
 - The `slam_methods` options include `gmapping`, `cartographer`, `hector`, `karto`, `frontier_exploration`, and you can choose one of them.
 - For example, to use Karto, you can use the following:
 - $ roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=karto
 {% endcapture %}
-<div class="notice--info">{{ notice_02 | markdownify }}</div>
+<div class="notice--info">{{ notice_03 | markdownify }}</div>
 
-{% capture notice_03 %}
+{% capture notice_04 %}
 **NOTE**: Install dependency packages for SLAM packages
 - For `Gmapping`:
 - Packages related to Gmapping have already been installed on [PC Setup](/docs/en/platform/turtlebot3/pc_setup/#install-dependent-ros-packages) page.
@@ -94,9 +103,9 @@ $ roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
 - Frontier Exploration uses gmapping, and the following packages should be installed.
 - sudo apt-get install ros-kinetic-frontier-exploration ros-kinetic-navigation-stage
 {% endcapture %}
-<div class="notice--info">{{ notice_03 | markdownify }}</div>
+<div class="notice--info">{{ notice_04 | markdownify }}</div>
 
-**TIP**: The Cartographer package developed by Google supports 0.3.0 version in ROS Melodic, but 0.2.0 version in ROS Kinetic. If you need to work on ROS Kinetic, you should download and build the source code as follows. Please refer to [official wiki page](https://google-cartographer-ros.readthedocs.io/en/latest/#building-installation) for more detailed installation instructions.
+**TIP**: We tested on cartographer version 0.3.0. The Cartographer package developed by Google supports 0.3.0 version in ROS Melodic, but 0.2.0 version in ROS Kinetic. So if you need to work on ROS Kinetic, instead of downloading the binaries files, you should download and build the source code as follows. Please refer to [official wiki page](https://google-cartographer-ros.readthedocs.io/en/latest/#building-installation) for more detailed installation instructions.
 {: .notice--success}
 
 ```sh
@@ -109,6 +118,9 @@ $ src/cartographer/scripts/install_proto3.sh
 $ rm -rf protobuf/
 $ rosdep install --from-paths src --ignore-src -r -y --os=ubuntu:xenial
 $ catkin_make_isolated --install --use-ninja
+```
+
+```sh
 $ source ~/catkin_ws/install_isolated/setup.bash
 $ roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=cartographer
 ```
@@ -122,7 +134,7 @@ $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 ```
 
 ``` bash
-  Control Your Turtlebot3!
+  Control Your TurtleBot3!
   ---------------------------
   Moving around:
           w
