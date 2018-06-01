@@ -31,14 +31,14 @@
     {% if navtitle==null %}
     {% else %}
 
-      {% if nav.children != null %}
       {% assign toplevel_id = navurl | split: "/" %}
+      {% if nav.children != null %}
       <li class="has-children">
         <input type="checkbox" name="toplevel" id="{{ toplevel_id.last }}">
-        <label for="{{ toplevel_id.last }}"><button class="tocLevel1" onclick="movetopage('{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ navurl }}');">{{ forloop.index }}. {{ navtitle }}</button></label>
+        <label for="{{ toplevel_id.last }}"><button class="tocLevel1" id="{{ toplevel_id.last }}" onclick="movetopage('{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ navurl }}');">{{ forloop.index }}. {{ navtitle }}</button></label>
       {% else %}
       <li>
-        <a href="{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ navurl }}">{{ forloop.index }}. {{ navtitle }}</a>
+        <a id="{{ toplevel_id.last }}" href="{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ navurl }}">{{ forloop.index }}. {{ navtitle }}</a>
       </li>
       {% endif %}
       {% assign parent_index = forloop.index %}
@@ -75,18 +75,18 @@
           {% else %}
           {% endif %}
 
+          {% assign midlevel_id = childurl | split: "/" %}
           {% if child.children != null %}
             {% if childtitle != null %}
               {% assign child_index = child_index | plus: 1 %}
-              {% assign midlevel_id = childurl | split: "/" %}
               <li class="has-grandchildren">
                 <input type="checkbox" name="sublevel" id="{{ midlevel_id.last }}">
-                <label for="{{ midlevel_id.last }}"><button class="tocLevel2" onclick="movetopage('{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ childurl }}');">{{ parent_index }}. {{ child_index }}. {{ childtitle }}</button></label>
+                <label for="{{ midlevel_id.last }}"><button class="tocLevel2" id="{{ midlevel_id.last }}" onclick="movetopage('{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ childurl }}');">{{ parent_index }}. {{ child_index }}. {{ childtitle }}</button></label>
             {% endif %}
           {% else %}
             {% if childtitle != null %}
               {% assign child_index = child_index | plus: 1 %}
-              <li><a href="{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ childurl }}">{{ parent_index }}. {{ child_index }}. {{ childtitle }}</a></li>
+              <li><a id="{{ midlevel_id.last }}" href="{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ childurl }}">{{ parent_index }}. {{ child_index }}. {{ childtitle }}</a></li>
             {% endif %}
           {% endif %}
 

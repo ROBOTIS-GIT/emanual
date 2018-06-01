@@ -68,11 +68,10 @@
             var hash = $(this).attr('href');
 
             if (distance < 30 && distance > -30 && currentHash != hash) {
-              console.log(currentHash);
               currentHash = hash;
+              console.log(currentHash);
               window.history.pushState(window.location.href, "title", currentHash);   //Update browser URL with current anchor
-              
-              $('#' + currentHash).attr('checked', true);
+              // $('#' + currentHash).attr("color", "#FF6D6D"); //Syntax error
             }
           });
         });
@@ -103,15 +102,15 @@
     </script>
     <script>
       function copyurl(item)
-        {
-          // location.href = item.href;
-          var copiedurl = decodeURI(item.href);
-          var tempurl = $('<input>').val(copiedurl).appendTo('body').select();
-          document.execCommand('copy');
-          // console.log(copiedurl);
-          // document.getElementById(id).href;
-          // document.execCommand('copy');
-        }
+      {
+        // location.href = item.href;
+        var copiedurl = decodeURI(item.href);
+        var tempurl = $('<input>').val(copiedurl).appendTo('body').select();
+        document.execCommand('copy');
+        // console.log(copiedurl);
+        // document.getElementById(id).href;
+        // document.execCommand('copy');
+      }
     </script>
     <script>
       function movetopage(targeturl)

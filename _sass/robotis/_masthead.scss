@@ -47,6 +47,16 @@
   }
 }
 
+.community_link_medium {
+  display: none;
+  float: right;
+  margin-right: 10px;
+  background-color: $top-bgcolor;
+  font-family: FontAleo;
+  height: 64px;
+  line-height: 60px;
+}
+
 /*the container must be positioned relative:*/
 .local_navigation {
   position: fixed;

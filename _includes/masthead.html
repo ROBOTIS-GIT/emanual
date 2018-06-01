@@ -203,7 +203,7 @@
                 {% if shoulderurl %}
                   {% if shoulderurl contains "://" %}<a href="{{ shoulderurl }}">{% else %}
                     <a href="{{ site.url }}{{ site.baseurl }}/docs/{{ page.lang }}{{ shoulderurl }}">{% endif %}{% else %}
-                <a>{% endif %}{% if shouldertitle contains '*' %}<font color=#cccccc>{{ shouldertitle }}</font>{% else %}{{ shouldertitle }}{% endif %}</a>
+                <a>{% endif %}{% if shouldertitle contains '*' %}<i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>{{ shouldertitle | remove:'*' }}{% else %}{{ shouldertitle }}{% endif %}</a>
               {% endif %}
 
               {% if shoulder.children != null %}
@@ -233,7 +233,7 @@
                   {% if kneetitle %}
                     {% if kneeurl %}
                       {% if kneeurl contains "://" %}<a href="{{ kneeurl }}">{% else %}<a href="{{ site.url }}{{ site.baseurl }}/docs/{{ page.lang }}{{ kneeurl }}">{% endif %}{% else %}
-                        <a>{% endif %}{% if kneetitle contains '*' %}<font color=#cccccc>{{ kneetitle }}</font>{% else %}{{ kneetitle }}{% endif %}</a>
+                        <a>{% endif %}{% if kneetitle contains '*' %}<i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>{{ kneetitle | remove:'*' }}{% else %}{{ kneetitle }}{% endif %}</a>
                     {% endif %}
                 {% endfor %}
               </div>
@@ -252,6 +252,11 @@
       <a href="http://www.robotis.com" style="margin-left: 10px;"><img class="logo" src="/assets/images/robotis_logo.png"> ROBOTIS</a>
       <a href="https://community.robotsource.org/" style="margin-left: 10px;"><img class="logo" src="/assets/images/robotsource_logo.png"> Robot Source</a>
       <a href="https://github.com/ROBOTIS-GIT" style="margin-left: 10px;"><img class="logo" src="/assets/images/github_logo.png"> GitHub</a>
+    </div>
+    <div class="community_link_medium">
+      <a href="http://www.robotis.com"><img class="logo" src="/assets/images/robotis_logo.png"></a>
+      <a href="https://community.robotsource.org/"><img class="logo" src="/assets/images/robotsource_logo.png"></a>
+      <a href="https://github.com/ROBOTIS-GIT"><img class="logo" src="/assets/images/github_logo.png"></a>
     </div>
     
     <!-- local navigation
