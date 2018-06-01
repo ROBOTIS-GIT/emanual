@@ -20,72 +20,155 @@ html {
     display: block;
   }
   
-  .dropbtn {
+  .dropdown .dropbtn {
     padding: 14px 8px;
   }
   
   @media screen and (max-width: $mobile-landscape) {
     
     #main {
-      padding-top: 50px;
-      padding-bottom: 0px;
-      width: 95%;
+      padding: 0px;
+      width: auto;
       font-size: 14px;
-      
-      @media screen and (max-width: $mobile-portrait) {
-        font-size: 0.7em;
-        #logo {
-          max-width: 200px;
-          width: 50vw;
-        }
-      }
+    }
+    
+    .community_link_medium {
+      margin-right: 50px;
+    }
+    
+    .site-title {
+      float: none;
+    }
+    
+    .search_button {
+      display: block;
+    }
+    
+    .masthead__menu{
+      text-align: center;
     }
     
     #sidebar__left {
       float: none;
       width: 100%;
-      position: fixed;
+      height: auto;
+      position: absolute;
       left: -100%;
-      padding: 0 2em;
-      border: 1px solid #000;
-      border-radius: $border-radius;
-      background-color: #dcdcdc;
-      opacity: 0.95;
+      padding: 0 0;
+      border-bottom: 1px solid #323232;
+      background-color: $top-bgcolor;
       z-index: 9;
+    }
+    
+    .nav__items {
+      margin-top: 0;
+      background-color: $top-bgcolor;
+    }
+    
+    .nav__list {
+      height: auto;
+      padding-bottom: 0;
+    }
+    
+    .tocLevel1 {
+      color: $top-textcolor;
+    }
+    
+    .tocLevel2 {
+      color: $middle-textcolor;
+      max-width: 70%;
+    }
+    
+    .nav__items>li>a, .nav__items>li>label {
+      color: $top-textcolor;
+      border: 0;
+      border-top: 1px solid #323232;
+    }
+    
+    .nav__items ul label:hover,
+    .nav__items ul a:hover {
+      background-color: $mobile-hovercolor;
+    }
+    
+    .nav__items li ul li {
+      padding-right: 0;
+    }
+    
+    .nav__items>li>ul>li a, .nav__items>li>ul>li label {
+      background-color: $mobile-middle-bgcolor;
+      color: $middle-textcolor;
+    }
+    
+    .nav__items>li>ul>li>ul>li a {
+      background-color: $mobile-bottom-bgcolor;
+      color: $bottom-textcolor;
+    }
+    
+    .nav__items label:hover, .nav__items a:hover {
+      background-color: $mobile-hovercolor;
+    }
+        
+    .has-children input[type=checkbox]:checked+label::after {
+      left: 80%;
+    }
+    
+    .has-children label::after {
+      left: 80%;
+    }
+    
+    .has-grandchildren input[type=checkbox]:checked+label::after {
+      left: 75%;
+    }
+    
+    .has-grandchildren label::after {
+      left: 75%;
     }
     
     #archive {
       float: none;
       max-width: 100%;
-      margin: 0 1em;
-      margin-bottom: 5em;
-      padding: 0;
+      margin: 0;
+      padding: 1em;
       padding-bottom: 2em;
+      margin-top: 0;
     }
     
     #container {
       display: none;
     }
     
-    // #mobile_nav__items {
-    //   width: 100%;
-    //   height: auto;
-    //   opacity: 0.9;
-    //   z-index: 999;
-    // }
-    
     #site_search {
-      right: 45px;
-      max-width: 15em;
-      
-      @media screen and (max-width: $mobile-portrait) {
-        top: 30px;
-        right: 10px;
+      max-width: 100%;
+      display: none;
+      height: 40px;
+    }
+    
+    .gsc-results-wrapper-overlay {
+      padding: 1em !important;
+      height: 90% !important;
+      width: 90% !important;
+      top: 64px !important;
+      left: 5% !important;
+    }
+    
+    .gsc-search-button-v2 {
+      height: 35px !important;
+      width: 50px !important;
+      padding: 0px !important;
+    }
+    
+    .gsc-input-box {      
+      table {
+        height: 35px;
       }
     }
     
     .menu-icon {
       display: inline-block;;
+    }
+    
+    .archive_footer {
+      margin-left: 0;
     }
     
     #nav_button {
@@ -384,10 +467,29 @@ html {
           }
         }
       }
-    }  
+    }
     
-    table {
-      font-size: 0.65rem;
+    @media screen and (max-width: $mobile-portrait) {
+      
+      body {
+        margin-bottom: 50px;
+      }
+      
+      table {
+        font-size: 0.55rem;
+      }
+      
+      .community_link_medium {
+        display: none;
+      }
+      
+      .community_link_mobile {
+        display: flex;
+      }
+      
+      .page__footer {
+        font-size: 12px;
+      }
     }
   }
 }

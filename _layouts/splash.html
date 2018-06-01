@@ -16,7 +16,7 @@ layout: default
     {% if page.last_modified_at %}<meta itemprop="dateModified" content="{{ page.last_modified_at | date: "%B %d, %Y" }}">{% endif %}
 
     <section class="page__content" itemprop="text">
-      <a href="{{ site.github.repository_url }}/blob/master{{ site.branch }}/{{ page.path }}" itemprop="sameAs" style="font-size:16px;float:right;">
+      <a href="{{ site.github.repository_url }}/blob/master{{ site.branch }}/{{ page.path }}" itemprop="sameAs" style="font-size:16px;float:right;margin-right:40px;">
         <i class="fa fa-fw fa-github" aria-hidden="true"></i> Edit on GitHub
       </a>
       {{ content }}

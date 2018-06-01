@@ -156,6 +156,7 @@ $(function() {
 
     <script>
       var toggle_google = 0;
+      var toggle_search_tool = 0;
       var mobile_width = 960;
       
       function extendgoogletool() {
@@ -168,6 +169,19 @@ $(function() {
           google_tools.classList.remove("extend_googletools");
           switch_ko_en.classList.remove("show_switch_ko_en");
           toggle_google = 0;
+        }
+      }
+      
+      function extendsearchtool() {
+        if (toggle_search_tool == 0) {
+          $('#site_search').css('display', 'block');
+          $('#archive').css('margin-top', '40px');
+          toggle_search_tool = 1;
+        }
+        else {
+          $('#site_search').css('display', 'none');
+          $('#archive').css('margin-top', '0px');
+          toggle_search_tool = 0;
         }
       }
     </script>
@@ -271,6 +285,9 @@ $(function() {
     <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
+      <button class="search_button" onclick="extendsearchtool()">
+        <i class="fa fa-fw fa-search" style="font-size:20px;color:white;"></i>
+      </button>
       <a class="site-title" href="http://localhost:4000/"><img class="logo" id="logo" src="/assets/images/robotis_emanual_logo.png"></a>
       
       <button class="google_button" id="google_button" onclick="extendgoogletool()"><img src="https://www.google.com/images/cleardot.gif" class="goog-te-gadget-icon" alt="" style="background-image: url(&quot;https://translate.googleapis.com/translate_static/img/te_ctrl3.gif&quot;); background-position: -65px 0px;"></button>
@@ -1772,6 +1789,11 @@ $(function() {
       <a href="http://www.robotis.com"><img class="logo" src="/assets/images/robotis_logo.png"></a>
       <a href="https://community.robotsource.org/"><img class="logo" src="/assets/images/robotsource_logo.png"></a>
       <a href="https://github.com/ROBOTIS-GIT"><img class="logo" src="/assets/images/github_logo.png"></a>
+    </div>
+    <div class="community_link_mobile">
+      <button class="mobile_button" onclick="movetopage('http://www.robotis.com');" style="background-image: url(/assets/images/robotis_mobile_logo.png); width: 35%;">ROBOTIS</button>
+      <button class="mobile_button" onclick="movetopage('https://community.robotsource.org/');" style="background-image: url(/assets/images/robotsource_mobile_logo.png); width: 40%;">Robot Source</button>
+      <button class="mobile_button" onclick="movetopage('https://github.com/ROBOTIS-GIT');" style="background-image: url(/assets/images/github_mobile_logo.png); width: 30%;">GitHub</button>
     </div>
     
     <!-- local navigation

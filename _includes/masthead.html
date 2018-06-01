@@ -1,6 +1,9 @@
 <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
+      <button class="search_button" onclick="extendsearchtool()">
+        <i class="fa fa-fw fa-search" style="font-size:20px;color:white;"></i>
+      </button>
       <a class="site-title" href="{{ '/' | absolute_url }}"><img class="logo" id="logo" src="/assets/images/robotis_emanual_logo.png"></a>
       
       <button class="google_button" id="google_button" onclick="extendgoogletool()"><img src="https://www.google.com/images/cleardot.gif" class="goog-te-gadget-icon" alt="" style="background-image: url(&quot;https://translate.googleapis.com/translate_static/img/te_ctrl3.gif&quot;); background-position: -65px 0px;"></button>
@@ -56,7 +59,7 @@
           {% if nav.children != null %}
           <li class="mobile_depth_1">
             <input type="checkbox" name="mobile_nav_depth_1" id="{{ depth1_title }}">
-            <label for="{{ depth1_title }}">{{ depth1_title }}</label>
+            <label for="{{ depth1_title }}">{% if depth1_title contains '*' %}<i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>{{ depth1_title | remove:'*' }}{% else %}{{ depth1_title }}{% endif %}</label>
             <ul>
             {% for child in nav.children %}
               {% if page.lang=='kr' %}
@@ -84,7 +87,7 @@
                 {% if depth2_title != null %}
                   <li class="mobile_depth_2">
                     <input type="radio" name="sublevel" id="{{ depth1_title }}{{ depth2_title }}">
-                    <label for="{{ depth1_title }}{{ depth2_title }}">{{ depth2_title }}</label>
+                    <label for="{{ depth1_title }}{{ depth2_title }}">{% if depth2_title contains '*' %}<i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>{{ depth2_title | remove:'*' }}{% else %}{{ depth2_title }}{% endif %}</label>
                     <ul>
                     {% for grandchild in child.children %}
                       {% if page.lang=='kr' %}
@@ -109,7 +112,7 @@
                       {% endif %}
                       {% if depth3_title != null %}
                         <li class="mobile_depth_3">
-                          <a href="{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ depth3_url }}" class="{{ active }}">{{ depth3_title }}</a>
+                          <a href="{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ depth3_url }}" class="{{ active }}">{% if depth3_title contains '*' %}<i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>{{ depth3_title | remove:'*' }}{% else %}{{ depth3_title }}{% endif %}</a>
                         </li>
                       {% endif %}
                     {% endfor %}
@@ -257,6 +260,11 @@
       <a href="http://www.robotis.com"><img class="logo" src="/assets/images/robotis_logo.png"></a>
       <a href="https://community.robotsource.org/"><img class="logo" src="/assets/images/robotsource_logo.png"></a>
       <a href="https://github.com/ROBOTIS-GIT"><img class="logo" src="/assets/images/github_logo.png"></a>
+    </div>
+    <div class="community_link_mobile">
+      <button class="mobile_button" onclick="movetopage('http://www.robotis.com');" style="background-image: url(/assets/images/robotis_mobile_logo.png); width: 35%;">ROBOTIS</button>
+      <button class="mobile_button" onclick="movetopage('https://community.robotsource.org/');" style="background-image: url(/assets/images/robotsource_mobile_logo.png); width: 40%;">Robot Source</button>
+      <button class="mobile_button" onclick="movetopage('https://github.com/ROBOTIS-GIT');" style="background-image: url(/assets/images/github_mobile_logo.png); width: 30%;">GitHub</button>
     </div>
     
     <!-- local navigation

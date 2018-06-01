@@ -7,7 +7,7 @@
 $max-width        : 1920px;
 $nominal-width    : 1280px;
 $mobile-landscape : 960px;
-$mobile-portrait  : 500px;
+$mobile-portrait  : 600px;
 $sidebar_width    : 290px;
 
 /* system typefaces */
@@ -48,15 +48,20 @@ $code-background-color      : #fafafa !default;
 $code-background-color-dark : $light-gray !default;
 
 /*dropdown menu css*/
-$top-bgcolor: #000;
+$top-bgcolor: #000000;
 $top-hovercolor: #2581DC;
-$top-textcolor: #FFF;
-$middle-bgcolor: #000;
+$top-textcolor: #FFFFFF;
+$mobile-top-textcolor: #CCF850;
+$middle-bgcolor: #000000;
+$mobile-middle-bgcolor: #1D1D1D;
 $middle-hovercolor: #383838;
-$middle-textcolor: #FFF;
+$middle-textcolor: #FFFFFF;
 $bottom-bgcolor: #383838;
+$mobile-bottom-bgcolor: #323232;
 $bottom-hovercolor: #333333;
-$bottom-textcolor: white;
+$bottom-textcolor: #FFFFFF;
+$mobile-hovercolor: #434343;
+$mobile-hover-textcolor: #CCF850;
 
 /* type scale */
 $type-size-1                : 2.441em !default;  // ~39.056px

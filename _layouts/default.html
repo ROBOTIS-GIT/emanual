@@ -14,6 +14,7 @@
     {% include head/custom.html %}
     <script>
       var toggle_google = 0;
+      var toggle_search_tool = 0;
       var mobile_width = 960;
       
       function extendgoogletool() {
@@ -26,6 +27,19 @@
           google_tools.classList.remove("extend_googletools");
           switch_ko_en.classList.remove("show_switch_ko_en");
           toggle_google = 0;
+        }
+      }
+      
+      function extendsearchtool() {
+        if (toggle_search_tool == 0) {
+          $('#site_search').css('display', 'block');
+          $('#archive').css('margin-top', '40px');
+          toggle_search_tool = 1;
+        }
+        else {
+          $('#site_search').css('display', 'none');
+          $('#archive').css('margin-top', '0px');
+          toggle_search_tool = 0;
         }
       }
     </script>
