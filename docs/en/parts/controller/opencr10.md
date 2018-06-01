@@ -168,6 +168,7 @@ void changeDirection_EXIT_0(void){
 ```
 
 ## [UART(Serial)](#uartserial)
+
 | Class Instance      | Arduino Pin  | Hardware |
 |:--------------------|:-------------|:---------|
 | Serial              | USB          | USB      |
@@ -176,8 +177,8 @@ void changeDirection_EXIT_0(void){
 | Serial3             | DXL Port     | USART3   |
 | Serial4 (SerialBT2) | UART2        | UART8    |
 
-*Caution : Since Serial3 is used for Dynamixel, its usage differs from other serial.
-(For more information, please refer to DynamixelWorkbench.)*
+**CAUTION**: Since Serial3 is used for Dynamixel, its usage differs from other serial. (For more information, please refer to DynamixelWorkbench.)
+{: .notice--warning}
 
 
 ## [Pin Definition](#pin-definition)
