@@ -13743,6 +13743,10 @@ opencr10:
       url: /parts/controller/opencr10/#ollo-connector
     - title: "Push Switch"
       url: /parts/controller/opencr10/#push-switch
+    - title: "External Interrupt"
+      url: /parts/controller/opencr10/#external-interrupt
+    - title: "UART(Serial)"
+      url: /parts/controller/opencr10/#uartserial
     - title: "Pin Definition"
       url: /parts/controller/opencr10/#pin-definition
   - title: "Arduino IDE"
