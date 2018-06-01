@@ -14,6 +14,7 @@
     {% include head/custom.html %}
     <script>
       var toggle_google = 0;
+      var toggle_search_tool = 0;
       var mobile_width = 960;
       
       function extendgoogletool() {
@@ -28,10 +29,22 @@
           toggle_google = 0;
         }
       }
+      
+      function extendsearchtool() {
+        if (toggle_search_tool == 0) {
+          $('#site_search').css('display', 'block');
+          $('#archive').css('margin-top', '40px');
+          toggle_search_tool = 1;
+        }
+        else {
+          $('#site_search').css('display', 'none');
+          $('#archive').css('margin-top', '0px');
+          toggle_search_tool = 0;
+        }
+      }
     </script>
     <script>
     $(document).ready(function() {
-
     	$('.popup').magnificPopup({
     		type: 'ajax',
     		alignTop: true,
@@ -42,24 +55,50 @@
     		alignTop: true,
     		overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
     	});
+      // $('#local_navigation_depth1').change(function() {
+      //   var depth1_selection = $('#local_navigation_depth1').val();
+      //   console.log(depth1_selection);
+      // });
+      
+      // var current_url = $(location).attr('href');
+      // console.log(current_url);
+      // current_url = current_url.split("/");
+      // console.log(current_url[5]);
+      // if(current_url[5] == "dxl") {
+      //   $('#DYNAMIXEL').prop("selected", "selected");
+      // }
+      // console.log(current_url[6]);
+      // console.log(current_url[7]);
+      // console.log(current_url[8]);
     });
     </script>
     <script>
-      // var side_nav = document.getElementById("sidebar");
-      var offset = 105;
-    
+      $(function () {
+        var currentHash = window.location.href.split('#')[1];
+        $(document).scroll(function () {
+          $('.header-link').each(function () {
+            var top = window.pageYOffset;
+            var distance = top - $(this).offset().top;
+            var hash = $(this).attr('href');
+
+            if (distance < 30 && distance > -30 && currentHash != hash) {
+              currentHash = hash;
+              console.log(currentHash);
+              window.history.pushState(window.location.href, "title", currentHash);   //Update browser URL with current anchor
+              // $('#' + currentHash).attr("color", "#FF6D6D"); //Syntax error
+            }
+          });
+        });
+      });
+    </script>
+    <script>
       window.onscroll = function () {
-        stickynav()
+        var offset = 64 - window.scrollY;
+        if(offset < 0) { offset = 0; }
+        $('.sidebar__left').css('top', offset);       //sticky sidebar
+        $('.local_navigation').css('top', offset);    //sticky local navigation
+        $('.searchbox').css('top', offset);           //sticky searchbox
       };
-      
-      function stickynav() {
-        if (window.pageYOffset > offset) {
-          sidebar__left.classList.add("sticky_sidebar");
-        }
-        else {
-          sidebar__left.classList.remove("sticky_sidebar");
-        }
-      }
     </script>
     <script>
       var toggle = 0;
@@ -77,15 +116,15 @@
     </script>
     <script>
       function copyurl(item)
-        {
-          // location.href = item.href;
-          var copiedurl = decodeURI(item.href);
-          var tempurl = $('<input>').val(copiedurl).appendTo('body').select();
-          document.execCommand('copy');
-          // console.log(copiedurl);
-          // document.getElementById(id).href;
-          // document.execCommand('copy');
-        }
+      {
+        // location.href = item.href;
+        var copiedurl = decodeURI(item.href);
+        var tempurl = $('<input>').val(copiedurl).appendTo('body').select();
+        document.execCommand('copy');
+        // console.log(copiedurl);
+        // document.getElementById(id).href;
+        // document.execCommand('copy');
+      }
     </script>
     <script>
       function movetopage(targeturl)
@@ -102,7 +141,11 @@
 
     {{ content }}
 
-    <div class="page__footer">
+    {% if page.layout == 'archive' %}
+    <div class="page__footer archive_footer">
+    {% else %}
+    <div class="page__footer splash_footer">
+    {% endif %}
       <footer>
         {% include footer/custom.html %}
         {% include footer.html %}

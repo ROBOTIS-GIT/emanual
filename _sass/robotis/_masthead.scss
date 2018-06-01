@@ -1,6 +1,9 @@
 .logo {
-  padding: 10px;
-  border: 0px;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  font-size: 14px;
+  vertical-align: middle;
 }
 
 .masthead {
@@ -11,11 +14,12 @@
   &__inner-wrap {
     display: block;
     width: 100%;
+    height: 64px;
+    background-color: $top-bgcolor;
   }
 
   &__menu {
     display: block;
-
   }
 }
 
@@ -23,35 +27,102 @@
   float: left;
 }
 
-/*dropdown menu css*/
-$top-bgcolor: #333333;
-$top-hovercolor: #2581DC;
-$top-textcolor: white;
-$middle-bgcolor: #777777;
-$middle-hovercolor: #333333;
-$middle-textcolor: white;
-$bottom-bgcolor: #999999;
-$bottom-hovercolor: #333333;
-$bottom-textcolor: white;
+.search_button {
+  display: none;
+  position: absolute;
+  width: 36px;
+  height: 36px;
+  top: 10px;
+  left: 10px;
+  background-color: transparent;
+  border: 0;
+}
 
-// .mobile_very_top {
-//   position: absolute;
-//   right: 5%;
-//   margin-top: 4px;
-// }
+.extend_search_tool {
+  display: block;
+}
+
+.community_link {
+  display: block;
+  float: right;
+  margin-right: 10px;
+  background-color: $top-bgcolor;
+  font-family: FontAleo;
+  height: 64px;
+  line-height: 60px;
+  
+  a {
+    font-size: 14px;
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #CCF850;
+  }
+}
+
+.community_link_medium {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-right: 10px;
+  background-color: $top-bgcolor;
+  font-family: FontAleo;
+  height: 64px;
+  line-height: 60px;
+}
+
+.community_link_mobile {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  margin-right: 0;
+  width: 100%;
+  background-color: #ECECEC;
+  z-index: 10;
+}
+
+.mobile_button {
+  background-repeat: no-repeat;
+  background-position: 5px;
+  height: 50px;
+  border: 0;
+  text-align: left;
+  padding-left: 53px;
+  border-right: 1px solid #CFCFCF;
+}
+
+/*the container must be positioned relative:*/
+.local_navigation {
+  position: fixed;
+  margin-left: $sidebar_width;
+  max-width: 1630px;
+  width: 100%;
+  top: 64px;
+  z-index: 1;
+  background-color: #FAFAFA;
+}
+
+.local_navigation select {
+  border: 1px solid #ccc;
+  font-size: 16px;
+  height: 56px;
+  width: 268px;
+}
 
 .menu-icon {
   cursor: pointer;
   display: none;
   float: right;
-  padding: 24px 20px;
+  padding: 31px 20px;
   position: absolute;
   right: 0;
   user-select: none;
 }
 
 .menu-icon .navicon {
-  background: #333333;
+  background: $mobile-top-textcolor;
   display: block;
   height: 2px;
   position: relative;
@@ -61,7 +132,7 @@ $bottom-textcolor: white;
 
 .menu-icon .navicon:before,
 .menu-icon .navicon:after {
-  background: #333333;
+  background: $mobile-top-textcolor;
   content: '';
   display: block;
   height: 100%;
@@ -113,12 +184,9 @@ $bottom-textcolor: white;
   display: none;
   overflow: hidden;
   background-color: $top-bgcolor;
-  font-family: Arial;
-  padding: 10px 10px;
-  margin-top: 50px;
   width: 100%;
-  opacity: 0.95;
-  z-index: 10;
+  z-index: 20;
+  border-top: 1px solid #696969;
 }
 
 .mobile_nav__items ul {
@@ -147,48 +215,51 @@ $bottom-textcolor: white;
   position: relative;
   display: block;
   background: $top-bgcolor;
-  color: $top-textcolor;
-  font-size: 1em;
+  color: $mobile_top-textcolor;
+  font-size: 22px;
+  font-weight: 600;
   text-align: left;
-  box-shadow: inset 0 -1px #bbb9b9;
+  border-bottom: 1px solid #323232;
   padding: 2px 1em;
   text-decoration: none;
 }
 
 .mobile_depth_1 label:hover, .mobile_depth_1 a:hover {
-  background: $top-hovercolor;
+  background: $mobile-hovercolor;
   // color: #ddd;
 }
 
 .mobile_depth_2 label, .mobile_depth_2 a {
   position: relative;
   display: block;
-  background: $middle-bgcolor;
+  background: $mobile-middle-bgcolor;
   color: $middle-textcolor;
-  font-size: 0.8em;
+  font-size: 22px;
+  font-weight: 400;
   text-align: left;
-  padding: 2px 3em;
+  padding: 2px 1.5em;
   text-decoration: none;
 }
 
 .mobile_depth_2 label:hover, .mobile_depth_2 a:hover {
-  background: $middle-hovercolor;
+  background: $mobile-hovercolor;
   // color: #ddd;
 }
 
 .mobile_depth_3 label, .mobile_depth_3 a {
   position: relative;
   display: block;
-  background: $bottom-bgcolor;
+  background: $mobile-bottom-bgcolor;
   color: $bottom-textcolor;
-  font-size: 0.7em;
+  font-size: 18px;
+  font-weight: 200;
   text-align: left;
-  padding: 2px 6em;
+  padding: 2px 3em;
   text-decoration: none;
 }
 
 .mobile_depth_3 label:hover, .mobile_depth_3 a:hover {
-  background: $bottom-hovercolor;
+  background: $mobile-hovercolor;
   // color: #ddd;
 }
 
@@ -216,18 +287,6 @@ $bottom-textcolor: white;
   display: block;
 }
 
-// .mobile_nav__items ul label,
-// .mobile_nav__items ul a {
-//   background: $middle-bgcolor;
-//   color: $middle-textcolor;
-//   font-size: 0.9em;
-//   padding: 3px;
-//   text-align: center;
-// }
-// .mobile_nav__items ul label:hover,
-// .mobile_nav__items ul a:hover {
-//   background: $middle-hovercolor;
-// }
 .mobile_nav__items > li:last-of-type > label,
 .mobile_nav__items > li:last-of-type > a,
 .mobile_nav__items > li > ul > li:last-of-type label,
@@ -235,26 +294,14 @@ $bottom-textcolor: white;
   box-shadow: none;
 }
 
-
-
-// .mobile_nav__items ul ul label,
-// .mobile_nav__items ul ul a {
-//   font-size: 0.9em;
-//   // padding-left: 30px;
-// }
-//
-// .mobile_nav__items ul ul ul label,
-// .mobile_nav__items ul ul ul a {
-//   // padding-left: 118px;
-// }
-
 .container {
-  clear: both;
+  // clear: both;
   display: block;
+  float: left;
   overflow: hidden;
   background-color: $top-bgcolor;
   font-family: Arial;
-  max-width: $max-width;
+  max-width: 600px;
   z-index: 900;
 }
 
@@ -270,11 +317,12 @@ $bottom-textcolor: white;
   color: $top-textcolor;
   padding: 14px 16px;
   background-color: $top-bgcolor;
-  height: 52px;
+  height: 64px;
 }
 
 .container a:hover, .dropdown:hover .dropbtn {
-    background-color: $top-hovercolor;
+    // background-color: $top-hovercolor;
+    color: #CCF850
 }
 
 .dropdown-content {
@@ -282,7 +330,7 @@ $bottom-textcolor: white;
     position: absolute;
     background-color: $middle-bgcolor;
     min-width: 150px;
-    z-index: 10;
+    z-index: 20;
 
     &-wrapper {
       float: none;
@@ -315,7 +363,7 @@ $bottom-textcolor: white;
     background-color: $bottom-bgcolor;
     min-width: 150px;
     box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
-    z-index: 2;
+    z-index: 20;
 }
 
 .dropdown-2nd-content a {

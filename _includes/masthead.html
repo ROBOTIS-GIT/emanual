@@ -1,23 +1,11 @@
 <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
+      <button class="search_button" onclick="extendsearchtool()">
+        <i class="fa fa-fw fa-search" style="font-size:20px;color:white;"></i>
+      </button>
       <a class="site-title" href="{{ '/' | absolute_url }}"><img class="logo" id="logo" src="/assets/images/robotis_emanual_logo.png"></a>
-      <!-- Google Custom Search -->
-      <form class="searchbox" method="get" id="site_search">
-        <script>
-          (function() {
-            var cx = '003548387656725317882:3pwl9jljqvi';
-            var gcse = document.createElement('script');
-            gcse.type = 'text/javascript';
-            gcse.async = true;
-            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(gcse, s);
-          })();
-        </script>
-        <gcse:search></gcse:search>
-      </form>
-      <!-- end of Google Custom Search -->
+      
       <button class="google_button" id="google_button" onclick="extendgoogletool()"><img src="https://www.google.com/images/cleardot.gif" class="goog-te-gadget-icon" alt="" style="background-image: url(&quot;https://translate.googleapis.com/translate_static/img/te_ctrl3.gif&quot;); background-position: -65px 0px;"></button>
       <div class="google_tools" id="google_tools">
         <!-- Google Translation -->
@@ -71,7 +59,7 @@
           {% if nav.children != null %}
           <li class="mobile_depth_1">
             <input type="checkbox" name="mobile_nav_depth_1" id="{{ depth1_title }}">
-            <label for="{{ depth1_title }}">{{ depth1_title }}</label>
+            <label for="{{ depth1_title }}">{% if depth1_title contains '*' %}<i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>{{ depth1_title | remove:'*' }}{% else %}{{ depth1_title }}{% endif %}</label>
             <ul>
             {% for child in nav.children %}
               {% if page.lang=='kr' %}
@@ -99,7 +87,7 @@
                 {% if depth2_title != null %}
                   <li class="mobile_depth_2">
                     <input type="radio" name="sublevel" id="{{ depth1_title }}{{ depth2_title }}">
-                    <label for="{{ depth1_title }}{{ depth2_title }}">{{ depth2_title }}</label>
+                    <label for="{{ depth1_title }}{{ depth2_title }}">{% if depth2_title contains '*' %}<i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>{{ depth2_title | remove:'*' }}{% else %}{{ depth2_title }}{% endif %}</label>
                     <ul>
                     {% for grandchild in child.children %}
                       {% if page.lang=='kr' %}
@@ -124,7 +112,7 @@
                       {% endif %}
                       {% if depth3_title != null %}
                         <li class="mobile_depth_3">
-                          <a href="{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ depth3_url }}" class="{{ active }}">{{ depth3_title }}</a>
+                          <a href="{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ depth3_url }}" class="{{ active }}">{% if depth3_title contains '*' %}<i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>{{ depth3_title | remove:'*' }}{% else %}{{ depth3_title }}{% endif %}</a>
                         </li>
                       {% endif %}
                     {% endfor %}
@@ -179,13 +167,13 @@
 
         <div class="dropdown">
           {% if headtitle %}
-          <button class="dropbtn">
             {% if headurl %}
               {% if headurl contains "://" %}
-                <a href="{{ headurl }}" style="color:#fff;text-decoration:none;">{% else %}
-                <a href="{{ site.url }}{{ site.baseurl }}/docs/{{ page.lang }}{{ headurl }}" style="color:#fff;text-decoration:none;">{% endif %}
-              {% endif %}{{headtitle}}{% if headurl %}</a>
-            {% endif %}
+                <button class="dropbtn" onclick="movetopage('{{ headurl }}');">{% else %}
+                <button class="dropbtn" onclick="movetopage('{{ site.url }}{{ site.baseurl }}/docs/{{ page.lang }}{{ headurl }}');">{% endif %}
+            {% else %}
+              <button class="dropbtn">
+            {% endif %}{{headtitle}}
           </button>
           {% endif %}
 
@@ -218,7 +206,7 @@
                 {% if shoulderurl %}
                   {% if shoulderurl contains "://" %}<a href="{{ shoulderurl }}">{% else %}
                     <a href="{{ site.url }}{{ site.baseurl }}/docs/{{ page.lang }}{{ shoulderurl }}">{% endif %}{% else %}
-                <a>{% endif %}{% if shouldertitle contains '*' %}<font color=#cccccc>{{ shouldertitle }}</font>{% else %}{{ shouldertitle }}{% endif %}</a>
+                <a>{% endif %}{% if shouldertitle contains '*' %}<i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>{{ shouldertitle | remove:'*' }}{% else %}{{ shouldertitle }}{% endif %}</a>
               {% endif %}
 
               {% if shoulder.children != null %}
@@ -248,7 +236,7 @@
                   {% if kneetitle %}
                     {% if kneeurl %}
                       {% if kneeurl contains "://" %}<a href="{{ kneeurl }}">{% else %}<a href="{{ site.url }}{{ site.baseurl }}/docs/{{ page.lang }}{{ kneeurl }}">{% endif %}{% else %}
-                        <a>{% endif %}{% if kneetitle contains '*' %}<font color=#cccccc>{{ kneetitle }}</font>{% else %}{{ kneetitle }}{% endif %}</a>
+                        <a>{% endif %}{% if kneetitle contains '*' %}<i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>{{ kneetitle | remove:'*' }}{% else %}{{ kneetitle }}{% endif %}</a>
                     {% endif %}
                 {% endfor %}
               </div>
@@ -262,9 +250,70 @@
         </div>
       {% endfor %}
     </div>
-
-    <div>
-      <ul id="search_results" style="margin: 0; background-color: #ffebeb"></ul>
+    
+    <div class="community_link">
+      <a href="http://www.robotis.com" style="margin-left: 10px;"><img class="logo" src="/assets/images/robotis_logo.png"> ROBOTIS</a>
+      <a href="https://community.robotsource.org/" style="margin-left: 10px;"><img class="logo" src="/assets/images/robotsource_logo.png"> Robot Source</a>
+      <a href="https://github.com/ROBOTIS-GIT" style="margin-left: 10px;"><img class="logo" src="/assets/images/github_logo.png"> GitHub</a>
     </div>
+    <div class="community_link_medium">
+      <a href="http://www.robotis.com"><img class="logo" src="/assets/images/robotis_logo.png"></a>
+      <a href="https://community.robotsource.org/"><img class="logo" src="/assets/images/robotsource_logo.png"></a>
+      <a href="https://github.com/ROBOTIS-GIT"><img class="logo" src="/assets/images/github_logo.png"></a>
+    </div>
+    <div class="community_link_mobile">
+      <button class="mobile_button" onclick="movetopage('http://www.robotis.com');" style="background-image: url(/assets/images/robotis_mobile_logo.png); width: 35%;">ROBOTIS</button>
+      <button class="mobile_button" onclick="movetopage('https://community.robotsource.org/');" style="background-image: url(/assets/images/robotsource_mobile_logo.png); width: 40%;">Robot Source</button>
+      <button class="mobile_button" onclick="movetopage('https://github.com/ROBOTIS-GIT');" style="background-image: url(/assets/images/github_mobile_logo.png); width: 30%;">GitHub</button>
+    </div>
+    
+    <!-- local navigation
+    <div class="local_navigation">
+      <select id="local_navigation_depth1">
+        <option value = "default">Select Category</option>
+        {% for nav in site.data.navigation.main %}
+          {% if page.lang=='kr' %}
+            {% if nav.titlekr %}
+              {% assign depth1_title=nav.titlekr %}
+              {% assign depth1_url=nav.url %}
+            {% else %}
+              {% assign depth1_title=null %}
+              {% assign depth1_url=null %}
+            {% endif %}
+          {% elsif page.lang=='en' %}
+            {% if nav.title %}
+              {% assign depth1_title=nav.title %}
+              {% assign depth1_url=nav.url %}
+            {% else %}
+              {% assign depth1_title=null %}
+              {% assign depth1_url=null %}
+            {% endif %}
+          {% else %}
+            {% assign depth1_title=null %}
+            {% assign depth1_url=null %}
+          {% endif %}
+          <option id="{{ depth1_title }}" value = "{{ depth1_title }}">{{ depth1_title }}</option>
+        {% endfor %}
+      </select>
+    </div>
+     -->
+     
+    <!-- Google Custom Search -->
+    <form class="searchbox" method="get" id="site_search">
+      <script>
+        (function() {
+          var cx = '003548387656725317882:3pwl9jljqvi';
+          var gcse = document.createElement('script');
+          gcse.type = 'text/javascript';
+          gcse.async = true;
+          gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(gcse, s);
+        })();
+      </script>
+      <gcse:search></gcse:search>
+    </form>
+    <!-- end of Google Custom Search -->
+
   </div>
 </div>
