@@ -1,7 +1,7 @@
 {% assign navigation = site.data.navigation[include.nav] %}
 <nav class="nav__list">
 
-  {% if page.sidebar.title %}<ul class="nav__items"><li><label><a href={{ page.permalink | absolute_url }} style="font-size:18px; color: #CCF850; text-decoration: none; font-weight: 600; line-height: 40px;">{{ page.sidebar.title }}</a></label></li>{% endif %}
+  {% if page.sidebar.title %}<ul class="nav__items"><li><label><a href={{ page.permalink | absolute_url }} style="font-size:18px; color: #7a9c1b; text-decoration: none; font-weight: 600; line-height: 40px;">{{ page.sidebar.title }}</a></label></li>{% endif %}
   {% for nav in navigation %}
     {% if page.lang=='kr' %}
       {% if nav.titlekr %}
