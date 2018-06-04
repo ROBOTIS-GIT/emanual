@@ -52,11 +52,11 @@ html {
       float: none;
       width: 100%;
       height: auto;
-      position: absolute;
+      position: fixed;
       left: -100%;
       padding: 0 0;
       border-bottom: 1px solid #323232;
-      background-color: $top-bgcolor;
+      background-color: #ECECEC;
       z-index: 9;
     }
     
@@ -66,8 +66,8 @@ html {
     }
     
     .nav__list {
-      height: auto;
-      padding-bottom: 0;
+      height: 100vh;
+      padding-bottom: 5em;
     }
     
     .tocLevel1 {
