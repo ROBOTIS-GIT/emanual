@@ -471,6 +471,10 @@ html {
     
     @media screen and (max-width: $mobile-portrait) {
       
+      #main {
+        font-size: 60%;
+      }
+      
       body {
         margin-bottom: 50px;
       }
