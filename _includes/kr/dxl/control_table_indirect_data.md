@@ -15,7 +15,7 @@ Indirect Address에 특정 Address를 설정하면, Indirect Data는 특정한 A
 2. Indirect Address 3(172) : Goal Position의 두 번째 주소 ‘117’으로 변경
 3. Indirect Address 4(174) : Goal Position의 세 번째 주소 ‘118’으로 변경
 4. Indirect Address 5(176) : Goal Position의 네 번째 주소 ‘119’으로 변경
-5. Indirect Data 2에서 4 byte 값을 ‘1024’ 변경 : Goal Position(116) 역시 ‘1024’로 변경되고 다이나믹셀이 구동됩니다.
+5. Indirect Data 2에서 4 byte 값을 ‘1024’ 변경 : Goal Position(116) 역시 ‘1024’로 변경되고 장치가 구동됩니다.
 
 | Indirect Address 범위 | 설명     |
 | :------------- | :------------- |
