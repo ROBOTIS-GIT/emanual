@@ -1,4 +1,4 @@
-다이나믹셀은 다용도로 사용 가능한 External Port를 제공합니다.  
+장치는 다용도로 사용 가능한 External Port를 제공합니다.  
 External Port의 용도는 External Port Mode에 의해서 결정되고, External Port의 신호는 External Port Data(152 ~ 157)에 의해서 제어됩니다.  
 자세한 사항은 External Port Data(152 ~ 157)을 참고하세요.
 

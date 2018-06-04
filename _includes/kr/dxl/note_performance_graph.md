@@ -13,7 +13,7 @@ Performance Graph는 N-T Curve라고도 불리며, 부하(load)를 점진적으�
 {% capture perform_graph_02 %}
 **CAUTION** : **전원 공급시 주의사항**  
 - 안정적인 전원공급을 위해 로보티즈 제어기 나 SMPS2Dynamixel 통한 전원공급을 권장 드립니다.
-- 전원이 꺼진 상태에서 다이나믹셀과 전원을 연결하시고 스위치로 ON/OFF를 해주세요.
+- 전원이 꺼진 상태에서 장치와 전원을 연결하시고 스위치로 ON/OFF를 해주세요.
 {% endcapture %}
 
 <div class="notice--danger">{{ perform_graph_01 | markdownify }}</div>

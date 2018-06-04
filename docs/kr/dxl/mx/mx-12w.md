@@ -50,8 +50,8 @@ sidebar:
 | :---------: | :-----------:  | :----------- | :------------ | :--------: | :------------: |
 |0|2|[Model Number](#model-number)         | 모델 번호의 바이트      | R       | 104 |
 |2|1|[Firmware Version](#firmware-version)    |펌웨어 버전 정보|R|-|
-|3|1|[ID](#id)                  |다이나믹셀 ID     |RW|1|
-|4|1|[Baud Rate](#baud-rate)           |다이나믹셀 통신 속도|RW|1|
+|3|1|[ID](#id)                  |통신 ID     |RW|1|
+|4|1|[Baud Rate](#baud-rate)           |통신 속도|RW|1|
 |5|1|[Return Delay Time](#return-delay-time)   |응답 지연 시간|RW|250|
 |6|2|[CW Angle Limit](#cw-angle-limit)          |시계 방향 한계 각도 값의 바이트|RW|0|
 |8|2|[CCW Angle Limit](#ccw-angle-limit)          |반시계 방향 한계 각도 값의 바이트|RW|4095|
@@ -95,10 +95,10 @@ sidebar:
 ## [컨트롤 테이블 설명](#컨트롤-테이블-설명)
 
 ### <a name="model-number"></a>**[Model Number (0)](#model-number-0)**
- 다이나믹셀의 모델 번호입니다.
+ 장치의 모델 번호입니다.
 
 ### <a name="firmware-version"></a>**[Firmware Version (2)](#firmware-version-2)**
- 다이나믹셀 펌웨어 버전입니다.
+ 장치의 펌웨어 버전입니다.
 
 ### <a name="id"></a>**[ID (3)](#id-3)**
 {% include kr/dxl/control_table_id.md %}

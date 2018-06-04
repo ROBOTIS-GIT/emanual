@@ -1,19 +1,21 @@
 ---
 layout: archive
 lang: kr
-ref: h42-20-s300-r(a)
+ref: rh_p12_rn(a)
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/kr/dxl/pro/h42-20-s300-r(a)/
+permalink: /docs/kr/platform/rh_p12_rn(a)/
 sidebar:
-  title: H42-20-S300-R(A)
-  nav: "h42-20-s300-r(a)"
+  title: RH-P12-RN(A)
+  nav: "rh_p12_rn(a)"
 ---
 
-![](/assets/images/dxl/pro/h42-20-s300-r_product.jpg)
+# [개요](#개요)
 
-> H42-20-S300-R(A)
+![](/assets/images/platform/rh_p12_rn/rh-p12-rn_product.png)
+
+> RH_P12_RN(A)
 
 # [주요 사양](#주요-사양)
 
@@ -35,7 +37,7 @@ sidebar:
 | 사용 전압           | 24V                                                                                            |
 | Command Signal      | Digital Packet                                                                                 |
 | Protocol Type       | RS485 Asynchronous Serial Communication<br />(8bit, 1stop, No Parity)                          |
-| Physical Connection | RS485 Multidrop BUS                                                                            |
+| Physical Connection | RS485 Multidrop Bus                                                                            |
 | ID                  | 0 ~ 252                                                                                        |
 | Feedback            | Position, Velocity, Current, Temperature, Input Voltage, etc                                   |
 | Material            | Full Metal Gear, Metal Body                                                                    |
@@ -43,11 +45,6 @@ sidebar:
 | Peak Current        | 3.33A                                                                                          |
 
 {% include kr/dxl/warning.md %}
-
-## [성능 그래프](#성능-그래프)
-![](/assets/images/dxl/pro/h42-20-s300-r_performance_graph_2.png)
-
-{% include kr/dxl/note_performance_graph.md %}
 
 {% include kr/dxl/control_table_protocol2.md %}
 
@@ -58,11 +55,11 @@ sidebar:
 |  0   |       2        | [Model Number](#model-number)               | 보델 번호            |  R   | 51,201  |              -               | - |
 |  2   |       4        | [Model Information](#model-information)     | 모델 정보            |  R   |   -    |              -               | - |
 |  6   |       1        | [Firmware Version](#firmware-version)       | 펌웨어 버전          |  R   |   -    |              -               | - |
-|  7   |       1        | [ID](#id)                                   | 다이나믹셀 프로 ID   |  RW  |   1    |           0 ~ 252            | - |
-|  8   |       1        | [Baud Rate](#baud-rate)                     | 다이나믹셀 통신 속도  |  RW  |   1    |            0 ~ 9              | - |
+|  7   |       1        | [ID](#id)                                   | 통신 ID             |  RW  |   1    |           0 ~ 252            | - |
+|  8   |       1        | [Baud Rate](#baud-rate)                     | 통신 속도            |  RW  |   1    |            0 ~ 9              | - |
 |  9   |       1        | [Return Delay Time](#return-delay-time)     | 응답 지연 시간       |  RW  |  250   |           0 ~ 255            | 2 [μsec] |
 |  10  |       1        | [Drive Mode](#drive-mode)                   | 구동모드             |  RW  |   0    |            0 ~ 1             | - |
-|  11  |       1        | [Operating Mode](#operating-mode)           | 동작모드             |  RW  |   3    |       0, 1, 3, 4, 16         | - |
+|  11  |       1        | [Operating Mode](#operating-mode)           | 동작모드             |  RW  |   5    |            0, 5              | - |
 |  12  |       1        | [Sencondary ID](#secondary-id)              | 보조 ID              |  RW  |  255   |           0 ~ 255           | - |
 |  20  |       4        | [Homing Offset](#homing-offset)             | 0점 위치 조정 값     |  RW  |   0    | -2,147,483,648 ~<br> 2,147,483,647 | 1 [pulse] |
 |  24  |       4        | [Moving Threshold](#moving-threshold)       | 움직임 감지 기준 값  |  RW  |   50   | -2,147,483,648 ~<br> 2,147,483,647 | 0.01 [rev/min] |
@@ -70,11 +67,11 @@ sidebar:
 |  32  |       2        | [Max Voltage Limit](#max-voltage-limit)     | 최대 한계 전압       |  RW  |  350   |           0 ~ 350            | 0.1 [V] |
 |  34  |       2        | [Min Voltage Limit](#min-voltage-limit)     | 최소 한계 전압       |  RW  |  150   |           0 ~ 350            | 0.1 [V] |
 |  36  |       2        | [PWM Limit](#pwm-limit)                     | PWM 한계값           |  RW  | 2,009  |         0 ~ 2,009           | - |
-|  38  |       2        | [Current Limit](#current-limit)             | 최대 한계 전류       |  RW  |  4,500 |          0 ~ 4,500          | 1 [mA] |
-|  40  |       4        | [Acceleration Limit](#acceleration-limit)   | 가속도 최대 값       |  RW  | 10,765 |          0 ~ 4,306,173      | 1 [rev/min²] |
-|  44  |       4        | [Velocity Limit](#velocity-limit)           | 최대 속도 값         |  RW  |  2,920 |          0 ~ 2,920          | 0.01 [rev/min] |
-|  48  |       4        | [Max Position Limit](#max-position-limit)   | 최대 위치 제한 값    |  RW  | 303,454 | -303,750 ~<br> 303,750     | 1 [pulse] |
-|  52  |       4        | [Min Position Limit](#min-position-limit)   | 최소 위치 제한 값    |  RW  |-303,454 | -303,750 ~<br> 303,750     | 1 [pulse] |
+|  38  |       2        | [Current Limit](#current-limit)             | 최대 한계 전류       |  RW  |  1,984 |          0 ~ 1,984          | 1 [mA] |
+|  40  |       4        | [Acceleration Limit](#acceleration-limit)   | 가속도 최대 값       |  RW  |  3,447 |          0 ~ 1,378,788      | 1 [rev/min²] |
+|  44  |       4        | [Velocity Limit](#velocity-limit)           | 최대 속도 값         |  RW  |  2,970 |          0 ~ 2,970          | 0.01 [rev/min] |
+|  48  |       4        | [Max Position Limit](#max-position-limit)   | 최대 위치 제한 값    |  RW  |  1,150 |         0 ~<br> 1,150      | 1 [pulse] |
+|  52  |       4        | [Min Position Limit](#min-position-limit)   | 최소 위치 제한 값    |  RW  |   0    |          0 ~<br> 1,150     | 1 [pulse] |
 |  57  |       1        | [External Port Mode 2](#external-port-mode) | 외부 포트 모드 2     |  RW  |   3    |            0 ~ 3             | - |
 |  56  |       1        | [External Port Mode 1](#external-port-mode) | 외부 포트 모드 1     |  RW  |   3    |            0 ~ 3             | - |
 |  58  |       1        | [External Port Mode 3](#external-port-mode) | 외부 포트 모드 3     |  RW  |   3    |            0 ~ 3             | - |
@@ -138,17 +135,17 @@ sidebar:
 `주의` EEPROM Area에 존재하는 모든 Data는 Torque Enable(562)의 값이 ‘0’일 때만 변경할 수 있습니다.
 {: .notice--warning}
 
-**NOTE** : Dynamixel PRO(A)는 Dynmaxiel PRO의 개선된 firmware 입니다. 두 firmware의 Control table이 다르니, 사용 전에 Control table의 주소를 필히 확인해 주세요.
+**NOTE** : RH_P12_RN(A)는 RH_P12_RN의 개선된 firmware 입니다. 두 firmware의 Control table이 다르니, 사용 전에 Control table의 주소를 필히 확인해 주세요.
 
 ### <a name="model-number"></a>**[Model Number(0)](#model-number0)**
-다이나믹셀의 모델 번호입니다.
+RH-P12-RN(A)의 모델 번호입니다.
 
 |    모델명     |  Model Number  |
 |:-------------:|:--------------:|
-| H42-20-S300-R(A) | 51,201 (0xC801) |
+| RH_P12_RN(A)  | 35,074 (0x8902) |
 
 ### <a name="firmware-version"></a>**[Firmware Version(6)](#firmware-version6)**
-{% include kr/dxl/pro-plus/control_table_6_firmware_version.md %}
+RH-P12-RN(A)의 펌웨어 버전입니다.
 
 ### <a name="id"></a>**[ID(7)](#id7)**
 {% include kr/dxl/pro-plus/control_table_7_id.md %}
@@ -163,7 +160,13 @@ sidebar:
 {% include kr/dxl/pro-plus/control_table_10_drive_mode.md %}
 
 ### <a name="operating-mode"></a>**[Operating Mode(11)](#operating-mode11)**
-{% include kr/dxl/pro-plus/control_table_11_operating_mode.md %}
+장치의 제어 모드를 설정합니다. 각 제어 모드마다 특성이 다르기 때문에, 구현하려는 시스템에 적합한 제어 모드를 설정하시기 바랍니다.
+
+| Value      | Operating Mode         | Description                                 |
+|:-----------|:-----------------------|:--------------------------------------------|
+| 0          | 전류제어 모드           | 속도와 위치는 제어하지 않고, 전류를 제어합니다. |
+| 1 ~ 4      | Reserved               | -                                           |
+| 5(Default) | 전류기반 위치제어 모드   | 위치와 전류를 제어합니다.                     |
 
 ### <a name="secondary-id"></a>**[Secondary ID(12)](#secondary-id12)**
 {% include kr/dxl/pro-plus/control_table_12_secondary_id.md %}
@@ -188,35 +191,35 @@ sidebar:
 
 | 단위   | 범위 |
 | :---:  | :---: |
-| 1 [mA] | 0 ~ 4,500|
+| 1 [mA] | 0 ~ 1,984|
 
 ### <a name="acceleration-limit"></a>**[Acceleration Limit(40)](#acceleration-limit40)**
 프로파일 가속도 값의 한계 값입니다. Profile Acceleration(556)은 이 값보다 큰 값을 쓸 수 없습니다. 이 값보다 큰 값을 쓰려 하면, 값이 써지지 않고, Status packet의 error 에 Limit error bit가 set 됩니다.
 
 | 단위         | 범위           |
 | :---:        | :---:         |
-| 1 [rev/min²] | 0 ~ 4,306,173 |
+| 1 [rev/min²] | 0 ~ 1,378,788 |
 
 ### <a name="velocity-limit"></a>**[Velocity Limit(44)](#velocity-limit44)**
 목표 속도 값과 프로파일 속도 값의 한계 값입니다. Goal Velocity(552)와 Profile Velocity(560)는 이 값보다 큰 값을 쓸 수 없습니다. 이 값보다 큰 값을 쓰려 하면, 값이 써지지 않고, Status packet의 error 에 Limit error bit가 set 됩니다.
 
 | 단위            | 범위     |
 | :---:          | :---:     |
-| 0.01 [rev/min] | 0 ~ 2,920 |
+| 0.01 [rev/min] | 0 ~ 2,970 |
 
 ### <a name="max-position-limit"></a><a name="min-position-limit"></a>**[Max/Min Position Limit(48, 52)](#maxmin-position-limit48-52)**
-위치 제어 모드에서 목표 위치의 제한 값으로써, 1회전(-303,750 ~ 303,750) 범위 내에서 목표 위치를 제한 합니다.  
+전류 기반 위치 제어 모드에서 목표 위치의 제한 값으로써, 0 ~ 1,150 범위 내에서 목표 위치를 제한 합니다.  
 따라서 위치 제어 모드에서 Goal position(564)은 이 값보다 클 수 없습니다. 이 값보다 큰 값을 쓰려 하면, 값이 써지지 않고, Status packet의 error 에 Limit error bit가 set 됩니다.
 
 | 단위       | 값의 범위 |
-| :---:     | :---:              |
-| 1 [pulse] | -303,750 ~ 303,750 |
+| :---:     | :---:     |
+| 1 [pulse] | 0 ~ 1,150 |
 
 `주의` 동작 모드가 확장 위치 제어 모드일 때는 Position Limit이 적용되지 않습니다.
 {: .notice}
 
 ### <a name="external-port-mode"></a><a name="external-port-data"></a>**[External Port Mode](#external-port-mode)**, **[External Port Data](#external-port-data)**
-다이나믹셀 프로에는 다용도의 외부확장포트가 있습니다.
+장치에는 다용도의 외부확장포트가 있습니다.
 
 |항목   | 범위      |
 | :---: | :---:    |
@@ -233,9 +236,9 @@ sidebar:
 #### 외부 확장 포트의 위치 및 핀 기능
 아래와 같이 나사를 제거하고 커버를 들어내면 외부 확장 포트가 드러납니다.
 
-![](/assets/images/dxl/pro/pro_external_port.png)
+![](/assets/images/platform/rh_p12_rn/rh_p12_rn_external_port.png)
 
-![](/assets/images/dxl/pro/pro_external_port_pinout.png)
+![](/assets/images/platform/rh_p12_rn/rh_p12_rn_external_port_pinout.png)
 
 |핀 1|핀 2|핀 3|핀 4|핀 5|핀 6|
 | :---: | :---: | :---: | :---: | :---: | :---: |
@@ -287,13 +290,12 @@ sidebar:
 {% include kr/dxl/pro-plus/control_table_560_profile_velocity.md %}
 
 ### <a name="goal-position"></a>**[Goal Position(564)](#goal-position564)**
-Goal Position(564)을 통해 목표 위치를 설정 할 수 있습니다.
-이 값은 위치 제어 모드 일 때 Min Position limit(52) 에서 Max position limit(48) 까지 입력이 가능하고,
-확장 위치 제어 모드 일 때는 -2,147,483,648 에서 2,147,483,647 까지 입력이 가능합니다.
+이동시키고자 하는 곳의 위치 값입니다.  
+값의 범위는 Min Position Limit(40) ~ Max Position Limit(36) 이며, 초기값은 0 ~ 1,150 (0x47E) 입니다.
 
-|각도|위치값|방향|
-| :--------: | :--------: |:--------:|
-| -180 [&deg;]<hr>0 [&deg;]<hr>180 [&deg;]|-303,750<hr>0<hr>303,750|![](/assets/images/dxl/pro/angle_direction.png)|
+|모델명|Goal Position = 0|Goal Position = 740|
+| :-------: | :--------: | :--------: |
+|RH-P12-RN|![](/assets/images/platform/rh_p12_rn/rh_p12_rn_position_open.png)|![](/assets/images/platform/rh_p12_rn/rh_p12_rn_position_close.png)|
 
 ### <a name="realtime-tick"></a>**[Realtime Tick(568)](#realtime-tick568)**
 {% include kr/dxl/pro-plus/control_table_568_realtime_tick.md %}
@@ -314,7 +316,11 @@ Goal Position(564)을 통해 목표 위치를 설정 할 수 있습니다.
 {% include kr/dxl/pro-plus/control_table_576_present_velocity.md %}
 
 ### <a name="present-position"></a>**[Present Position(580)](#present-position580)**
-{% include kr/dxl/pro-plus/control_table_580_present_position.md %}
+장치의 현재 위치 값입니다.
+
+|Model|Goal Position = 0|Goal Position = 740|
+| :-------: | :--------: | :--------: |
+|RH-P12-RN|![](/assets/images/platform/rh_p12_rn/rh_p12_rn_position_open.png)|![](/assets/images/platform/rh_p12_rn/rh_p12_rn_position_close.png)|
 
 ### <a name="velocity-trajectory"></a>**[Velocity Trajectory(584)](#velocity-trajectory584)**
 {% include kr/dxl/pro-plus/control_table_584_velocity_trajectory.md %}
@@ -332,29 +338,33 @@ Goal Position(564)을 통해 목표 위치를 설정 할 수 있습니다.
 
 ## [옵션프레임 조립](#옵션프레임-조립)
 
-+ FRP42-H110K, FRP42-H120K Set
+![](/assets/images/platform/rh_p12_rn/rh-p12-rn_assembly.png)
 
-  ![](/assets/images/dxl/pro/frp42-h110k-h120k.png)
-
-# [유지보수](#유지보수)
 
 # [참고자료](#참고자료)
 
-**NOTE** : [다이나믹셀 프로 호환가이드]
-{: .notice}
-
-## [퀵스타트](#퀵스타트)
-
 ## [커넥터 정보](#커넥터-정보)
 
-{% include kr/dxl/molex_485_pro.md %}
+|항목|RS-485|외부포트|
+|:---:|:---:|:---:|
+|핀 번호|`1` GND<br>`2` VDD<br>`3` DATA+<br>`4` DATA-|`1` GND<br>`2` VDD<br>`3` PORT 1<br>`4` PORT 2<br>`5` PORT 3<br>`6` PORT 4|
+|다이어그램|![](/assets/images/dxl/jst_b4beha_diagram.png)|![](/assets/images/dxl/molex_5304706_diagram.png)|
+|하우징|[JST EHR-04]|![](/assets/images/dxl/molex_510210600.png)<br />[MOLEX 51021-0600]|
+|PCB 헤더|![](/assets/images/dxl/jst_b4beha.png)<br />[JST B4B-EH-A]|![](/assets/images/dxl/molex_530470610.png)<br />[MOLEX 53047-0610]|
+|Crimp 터미널|[JST SHE-001T-P0.6]|[MOLEX 50079-8100]|
+|Wire Gauge|21 AWG|21 AWG|
+
+[JST EHR-04]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
+[JST B4B-EH-A]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
+[JST SHE-001T-P0.6]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
+[MOLEX 51021-0600]: http://www.molex.com/molex/products/datasheet.jsp?part=active/0510210600_CRIMP_HOUSINGS.xml
+[MOLEX 53047-0610]: http://www.molex.com/molex/products/datasheet.jsp?part=active/0530470610_PCB_HEADERS.xml
+[MOLEX 50079-8100]: http://www.molex.com/molex/products/datasheet.jsp?part=active/0500798100_CRIMP_TERMINALS.xml
 
 ## [도면](#도면)
-`Download` [PDF], [DWG], [STEP], [IGES]
+`Download` [RH-P12-RN(PDF).zip](http://www.robotis.com/service/download.php?no=740)  
+`Download` [RH-P12-RN(STP).zip](http://www.robotis.com/service/download.php?no=741)
 
 
-[PDF]: http://www.robotis.com/service/download.php?no=496
-[DWG]: http://www.robotis.com/service/download.php?no=495
-[STEP]: http://www.robotis.com/service/download.php?no=497
-[IGES]: http://www.robotis.com/service/download.php?no=498
-[다이나믹셀 프로 호환가이드]: http://www.robotis.com/service/compatibility_table.php?cate=dpro
+[PDF]: http://support.robotis.com/en/baggage_files/dynamixel/rh-p12-rn.pdf
+[Torque Enable(562)]: #torque-enable562
