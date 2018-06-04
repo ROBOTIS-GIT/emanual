@@ -1,4 +1,4 @@
-Target position can be set with Goal Position(596). This value can't be smaller than the Min Position Limit(40) or larger than Max Position Limit(36).
+Desired position can be set with Goal Position(596). This value can't be smaller than the Min Position Limit(40) or larger than Max Position Limit(36).
 
 |Model|Angle Range|Position Range| Description |
 | :-------: | :--------: | :--------: | :--------: |

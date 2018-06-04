@@ -1,4 +1,4 @@
-Goal Velocity(600) can be used to set a target velocity and this value cannot exceed Velocity Limit (32).
+Goal Velocity(600) can be used to set a desired velocity and this value cannot exceed Velocity Limit (32).
 In case of Position Control Mode or Extended Position Control Mode, Goal Velocity will be used to limit the velocity.
 However, if Goal Velocity is set to '0', Velocity Limit(32) will be used to limit the velocity. (Please refer to the block diagram of Position P Gain)
 The Goal Velocity stands for the RPM of the motor before the reduction gears and output RPM after the reduction gears can be calculated using below scale factor.

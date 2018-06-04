@@ -37,10 +37,10 @@
 |586|2|[Velocity I Gain](#velocity-i-gain)          |I Gain of Velocity                         |RW |-|
 |588|2|[Velocity P Gain](#velocity-p-gain)          |P Gain of Velocity                         |RW |-|
 |594|2|[Position P Gain](#position-p-gain)          |P Gain of Position                         |RW |-|
-|596|4|[Goal Position](#goal-position)              |Target Position Value                      |RW |-|
-|600|4|[Goal Velocity](#goal-velocity)              |Target Velocity Value                      |RW |0|
-|604|2|[Goal Torque](#goal-torque)                  |Target Current Value                       |RW |0|
-|606|4|[Goal Acceleration](#goal-acceleration)      |Target Acceleration Value                  |RW |0|
+|596|4|[Goal Position](#goal-position)              |Desired Position Value                      |RW |-|
+|600|4|[Goal Velocity](#goal-velocity)              |Desired Velocity Value                      |RW |0|
+|604|2|[Goal Torque](#goal-torque)                  |Desired Current Value                       |RW |0|
+|606|4|[Goal Acceleration](#goal-acceleration)      |Desired Acceleration Value                  |RW |0|
 |610|1|[Moving](#moving)                            |Movement Status                            |R  |-|
 |611|4|[Present Position](#present-position)        |Present Position Value                     |R  |-|
 |615|4|[Present Velocity](#present-velocity)        |Present Velocity Value                     |R  |-|

@@ -1060,9 +1060,9 @@ op3_manager provides a way to control each joint of the robot with the following
   If the control mode of the robotis_controller meets one of the below two conditions, the user can directly control joints of the robot using the `/robotis /set_joint_states` topic.  
   - DirectControlMode  
   - none of the activating module under the MotionModuleMode  
-- `direct_control_module`  
+- `motion_module` : `direct_control_module`  
   User can directly control joints of the robot using `direct_control_module` that is one of the motion modules.  
-  `direct_control_module` has a simple self-collision checking(check the distance between end-effector and COB).  
+  Users can implement features in the motion module. `direct_control_module` has a simple self-collision checking(check the distance between end-effector and COB).  
   The topic name to control the robot is `/robotis/direct_control/set_joint_states`.  
 
 > Reference : SyncWriteItem  
@@ -1133,8 +1133,8 @@ $ roslaunch op3_read_write_demo op3_read_write.launch
 
  - Description : Buttons  
    From the left : `mode` button, `start` button, `user` button, `reset` button  
-   - `mode` button : start read_write demo using `direct_control_module`  
-   - `start` button : start read_write demo using `robotis_controller`  
+   - `mode` button : start read_write demo using `robotis_controller`  
+   - `start` button : start read_write demo using `direct_control_module`  
    - `user` button : torque on all joints  
    - `reset` button : torque off all joints  
 
@@ -1162,8 +1162,8 @@ $ roslaunch op3_read_write_demo op3_read_write.launch
   enum ControlModule
   {
     None = 0,
-    Framework = 1,
-    DirectControlModule = 2,
+    DirectControlModule = 1,
+    Framework = 2,
   };
 
   const int SPIN_RATE = 30;
@@ -1242,17 +1242,17 @@ $ roslaunch op3_read_write_demo op3_read_write.launch
   void buttonHandlerCallback(const std_msgs::String::ConstPtr& msg)
   {
     // starting demo using robotis_controller
-    if (msg->data == "start")
+    if (msg->data == "mode")
     {
       control_module = Framework;
-      ROS_INFO("Button : start | Framework");
+      ROS_INFO("Button : mode | Framework");
       readyToDemo();
     }
     // starting demo using direct_control_module
-    else if (msg->data == "mode")
+    else if (msg->data == "start")
     {
       control_module = DirectControlModule;
-      ROS_INFO("Button : mode | Direct control module");
+      ROS_INFO("Button : start | Direct control module");
       readyToDemo();
     }
     // torque on all joints of ROBOTIS-OP3
@@ -1476,17 +1476,17 @@ $ roslaunch op3_read_write_demo op3_read_write.launch
   void buttonHandlerCallback(const std_msgs::String::ConstPtr& msg)
   {
     // starting demo using robotis_controller
-    if (msg->data == "start")
+    if (msg->data == "mode")
     {
       control_module = Framework;
-      ROS_INFO("Button : start | Framework");
+      ROS_INFO("Button : mode | Framework");
       readyToDemo();
     }
     // starting demo using direct_control_module
-    else if (msg->data == "mode")
+    else if (msg->data == "start")
     {
       control_module = DirectControlModule;
-      ROS_INFO("Button : mode | Direct control module");
+      ROS_INFO("Button : start | Direct control module");
       readyToDemo();
     }
     // torque on all joints of ROBOTIS-OP3
