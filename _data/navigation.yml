@@ -10165,8 +10165,19 @@ turtlebot3:
     children:
     - title: "TurtleBot3 Auto"
       url: /platform/turtlebot3/autonomous_driving/#turtlebot3-autorace
-    - title: "TurtleBot3 AutoRace Tutorial"
-      url: /platform/turtlebot3/autonomous_driving/#turtlebot3-autorace-tutorial
+    - title: "TurtleBot3 AutoRace Tutorials"
+      url: /platform/turtlebot3/autonomous_driving/#turtlebot3-autorace-tutorials
+      children:
+      - title: "Tutorials: 1. Requirements"
+        url: /platform/turtlebot3/autonomous_driving/#tutorials-1-requirements
+      - title: "Tutorials: 2. Install Additional Dependent Packages"
+        url: /platform/turtlebot3/autonomous_driving/#tutorials-2-install-additional-dependent-packages
+      - title: "Tutorials: 3. Calibration"
+        url: /platform/turtlebot3/autonomous_driving/#tutorials-3-calibration
+      - title: "Tutorials: 4. Missions"
+        url: /platform/turtlebot3/autonomous_driving/#tutorials-4-missions
+      - title: "Tutorials: 5. Run Autonomous Driving"
+        url: /platform/turtlebot3/autonomous_driving/#tutorials-5-run-autonomous-driving
     - title: "TurtleBot3 AutoRace Online Competition"
       url: /platform/turtlebot3/autonomous_driving/#turtlebot3-autorace-online-competition
     - title: "AutoRace RBIZ Challenge 2017"
@@ -10175,6 +10186,15 @@ turtlebot3:
       url: /platform/turtlebot3/autonomous_driving/#autorace-rbiz-challenge-2018
   - title: "Machine Learning"
     url: /platform/turtlebot3/machine_learning/#machine-learning
+    children:
+    - title: "Step. 1 (No Obstacle)"
+      url: /platform/turtlebot3/machine_learning/#step-1-no-obstacle
+    - title: "Step. 2 (Static Obstacle)"
+      url: /platform/turtlebot3/machine_learning/#step-2-static-obstacle
+    - title: "Step. 3 (Moving Obstacle)"
+      url: /platform/turtlebot3/machine_learning/#step-3-moving-obstacle
+    - title: "Step.  (Combination Obstacle)"
+      url: /platform/turtlebot3/machine_learning/#step-4-combination-obstacle          
   - title: "Locomotion"
     url: /platform/turtlebot3/locomotion/#locomotion
     children:
@@ -12522,7 +12542,7 @@ dynamixel_sdk:
       - title: "C Bulk Read Protocol 2.0"
         url: /software/dynamixel/dynamixel_sdk/sample_code/c_bulk_read_write_protocol_2_0/#c-bulk-read-write-protocol-20
       - title: "C Indirect Address Protocol 2.0"
-        url: /software/dynamixel/dynamixel_sdk/sample_code/c_indirect_address_2_0/#c-indirect-address-protocol-20
+        url: /software/dynamixel/dynamixel_sdk/sample_code/c_indirect_address_protocol_2_0/#c-indirect-address-protocol-20
       - title: "C Ping Protocol 2.0"
         url: /software/dynamixel/dynamixel_sdk/sample_code/c_ping_protocol_2_0/#c-ping-protocol-20
       - title: "C Broadcast Ping Protocol 2.0"
@@ -12562,7 +12582,7 @@ dynamixel_sdk:
       - title: "CPP Bulk Read Protocol 2.0"
         url: /software/dynamixel/dynamixel_sdk/sample_code/cpp_bulk_read_write_protocol_2_0/#cpp-bulk-read-write-protocol-20
       - title: "CPP Indirect Address Protocol 2.0"
-        url: /software/dynamixel/dynamixel_sdk/sample_code/cpp_indirect_address_2_0/#cpp-indirect-address-protocol-20
+        url: /software/dynamixel/dynamixel_sdk/sample_code/cpp_indirect_address_protocol_2_0/#cpp-indirect-address-protocol-20
       - title: "CPP Ping Protocol 2.0"
         url: /software/dynamixel/dynamixel_sdk/sample_code/cpp_ping_protocol_2_0/#cpp-ping-protocol-20
       - title: "CPP Broadcast Ping Protocol 2.0"
@@ -13723,6 +13743,10 @@ opencr10:
       url: /parts/controller/opencr10/#ollo-connector
     - title: "Push Switch"
       url: /parts/controller/opencr10/#push-switch
+    - title: "External Interrupt"
+      url: /parts/controller/opencr10/#external-interrupt
+    - title: "UART(Serial)"
+      url: /parts/controller/opencr10/#uartserial
     - title: "Pin Definition"
       url: /parts/controller/opencr10/#pin-definition
   - title: "Arduino IDE"

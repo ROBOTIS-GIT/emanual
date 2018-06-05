@@ -19,6 +19,7 @@ sidebar:
 
 ## [Publish](#publish)
 
+  - 05/25/2018 [Announcing TurtleBot3 Software(v1.0.0) and Firmware(v1.2.0) Update](https://discourse.ros.org/t/announcing-turtlebot3-software-v1-0-0-and-firmware-v1-2-0-update/4888)
   - 05/21/2018 [Reinforcement Learning with TB3!](https://discourse.ros.org/t/tb3-reinforcement-learning-with-tb3/4842)
   - 05/16/2018 [1 Year of TurtleBot3: Call for Collaboration (by 23 MAY)](https://discourse.ros.org/t/1-year-of-turtlebot3-call-for-collaboration-by-23-may/4792)
   - 05/11/2018 [TurtleBot3 with OpenManipulator is released](https://discourse.ros.org/t/turtlebot3-with-openmanipulator-is-released/4747)

@@ -31,6 +31,12 @@
       margin-left: 0;
     }
   }
+  
+  img {
+    float: left;
+    padding: 0;
+    border: 0;
+  }
 }
 
 @mixin notice-margin {
