@@ -12542,7 +12542,7 @@ dynamixel_sdk:
       - title: "C Bulk Read Protocol 2.0"
         url: /software/dynamixel/dynamixel_sdk/sample_code/c_bulk_read_write_protocol_2_0/#c-bulk-read-write-protocol-20
       - title: "C Indirect Address Protocol 2.0"
-        url: /software/dynamixel/dynamixel_sdk/sample_code/c_indirect_address_2_0/#c-indirect-address-protocol-20
+        url: /software/dynamixel/dynamixel_sdk/sample_code/c_indirect_address_protocol_2_0/#c-indirect-address-protocol-20
       - title: "C Ping Protocol 2.0"
         url: /software/dynamixel/dynamixel_sdk/sample_code/c_ping_protocol_2_0/#c-ping-protocol-20
       - title: "C Broadcast Ping Protocol 2.0"
@@ -12582,7 +12582,7 @@ dynamixel_sdk:
       - title: "CPP Bulk Read Protocol 2.0"
         url: /software/dynamixel/dynamixel_sdk/sample_code/cpp_bulk_read_write_protocol_2_0/#cpp-bulk-read-write-protocol-20
       - title: "CPP Indirect Address Protocol 2.0"
-        url: /software/dynamixel/dynamixel_sdk/sample_code/cpp_indirect_address_2_0/#cpp-indirect-address-protocol-20
+        url: /software/dynamixel/dynamixel_sdk/sample_code/cpp_indirect_address_protocol_2_0/#cpp-indirect-address-protocol-20
       - title: "CPP Ping Protocol 2.0"
         url: /software/dynamixel/dynamixel_sdk/sample_code/cpp_ping_protocol_2_0/#cpp-ping-protocol-20
       - title: "CPP Broadcast Ping Protocol 2.0"

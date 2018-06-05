@@ -1,6 +1,7 @@
 .nav__list {
   overflow-y:auto;
-  height: 85vh;
+  height: 100vh;
+  padding-bottom: 40px;
 }
 
 .sticky_sidebar nav {
@@ -8,13 +9,17 @@
 }
 
 .sidebar__left {
-  width: 330px;
+  width: $sidebar_width;
   height: 100vh;
   float: left;
+  top: 64px;
   position: fixed;
   z-index: 9;
-  padding: 0.5em;
   word-wrap: break-word;
+  
+  ::-webkit-scrollbar {
+  display: none;
+  }
 }
 
 .sticky_sidebar {
@@ -41,8 +46,18 @@
 }
 
 .backtotop {
-  display: none;
-  color: black;
+  display: block;
+  position: fixed;
+  width: 45px;
+  height: 50px;
+  top: 10rem;
+  right: -5px;
+  background-color: white;
+  border: 1px solid mix(#fff, #000, 80%);
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
+  z-index: 100;
+  opacity: 0.8;
 }
 
 .nav_button {
@@ -52,15 +67,17 @@
 
 .nav__items {
   width: 100%;
+  margin-top: 55px;
   max-width: $mobile-landscape;
-  // background: #4d5158;
-  // margin: 4em auto;
+  background: #FAFAFA;
+  border-bottom: 1px solid #EBEBEB;
 }
 
 .nav__items ul {
   /* by default hide all sub menus */
   display: none;
   margin-left: 0;
+  background-color: #F2F2F2;
 }
 
 .nav__items li {
@@ -71,7 +88,11 @@
   list-style: none;
 }
 
-.nav__items input[type=radio] {
+.nav__items li ul li {
+  padding-right: 10px;
+}
+
+.nav__items input[type=checkbox] {
   /* hide native checkbox */
   position: absolute;
   opacity: 0;
@@ -91,13 +112,73 @@
   // color: #ddd;
 }
 
-.nav__items input[type=radio]:checked + label::after {
-  /* show open folder icon if item is checked */
-  background-position: -32px 0;
+.has-children label::after, .has-children a::after, .has-grandchildren label::after, .has-grandchildren a::after {
+  /* icons */
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
-.nav__items input[type=radio]:checked + label + ul,
-.nav__items input[type=radio]:checked + label:nth-of-type(n) + ul {
+.has-children label::before, .has-children label::after {
+  left: 36px;
+  background: url(../images/icon.png) no-repeat 0 0;
+}
+
+.has-grandchildren label::before, .has-grandchildren label::after {
+  left: 36px;
+  background: url(../images/icon.png) no-repeat -16px 0;
+}
+
+.has-children label::after {
+  /* arrow icon */
+  left: 270px;
+  -webkit-transform: translateY(-50%) rotate(-90deg);
+  -moz-transform: translateY(-50%) rotate(-90deg);
+  -ms-transform: translateY(-50%) rotate(-90deg);
+  -o-transform: translateY(-50%) rotate(-90deg);
+  transform: translateY(-50%) rotate(-90deg);
+}
+
+.has-children input[type=checkbox]:checked + label::after {
+  /* show open folder icon if item is checked */
+  left: 270px;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.has-grandchildren label::after {
+  /* arrow icon */
+  left: 260px;
+  -webkit-transform: translateY(-50%) rotate(-90deg);
+  -moz-transform: translateY(-50%) rotate(-90deg);
+  -ms-transform: translateY(-50%) rotate(-90deg);
+  -o-transform: translateY(-50%) rotate(-90deg);
+  transform: translateY(-50%) rotate(-90deg);
+}
+
+.has-grandchildren input[type=checkbox]:checked + label::after {
+  /* show open folder icon if item is checked */
+  left: 260px;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.has-children input[type=checkbox]:checked + label + ul,
+.has-children input[type=checkbox]:checked + label:nth-of-type(n) + ul {
   /* use label:nth-of-type(n) to fix a bug on safari (<= 8.0.8) with multiple adjacent-sibling selectors*/
   /* show children when item is checked */
   display: block;
@@ -120,17 +201,37 @@
 .nav__items > li > a,
 .nav__items > li > label {
   padding-left: 20px;
-  font-size: 1em;
-  font-weight: bold;
+  line-height: 40px;
+  font-size: 16px;
+  font-weight: 200;
+  color: #434445;
+  border: 1px solid #EBEBEB;
+  border-bottom-width: 0px;
 }
 
 .nav__items > li > ul > li a,
 .nav__items > li > ul > li label {
   padding-left: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  font-weight: 200;
+  color: #434445;
+  background: #F2F2F2;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .nav__items > li > ul > li > ul > li a {
   padding-left: 45px;
+  line-height: 23px;
+  font-size: 14px;
+  font-weight: 200;
+  font-style: italic;
+  color: #42759d;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .nav__title {
@@ -154,14 +255,14 @@
 .tocLevel1 {
   border: none;
   background-color: transparent;
-  font-size: inherit;
-  font-weight: bold;
+  font-size: 16px;
+  font-weight: 200;
+  color: #434445;
   overflow: hidden;
   white-space: nowrap;
-  max-width: 250px;
   text-overflow: ellipsis;
+  max-width: 250px;
   text-align: left;
-  color: #494e52;
 
   :hover {
     background-color: inherit;
@@ -170,9 +271,13 @@
 
 .tocLevel2 {
   border: none;
+  max-width: $sidebar_width - 60;
   background-color: transparent;
-  font-size: inherit;
-  color: inherit;
+  font-size: 14px;
+  color: #434445;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 
   :hover {
     background-color: inherit;

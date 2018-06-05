@@ -1,4 +1,4 @@
-현재 다이나믹셀 프로의 위치 값입니다. 자세한 사항은 [Goal Position(564)](#goal-position564)을 참고하세요.
+현재 장치의 위치 값입니다. 자세한 사항은 [Goal Position(564)](#goal-position564)을 참고하세요.
 
 {% capture present_pos_notice_01 %}
 `참고` Present Position(580)은 Torque OFF 상태일 경우, 동작 모드와 상관없이 4 byte(-2,147,483,648 ~ 2,147,483,647)의 범위를 연속적으로 표현합니다.

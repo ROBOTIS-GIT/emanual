@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'FontAleo';
+  src: url('#{$fa-font-path}/aleo-regular-webfont.woff');
+  src: url('#{$fa-font-path}/aleo-regular-webfont.eot') format('embedded-opentype'),
+    url('#{$fa-font-path}/aleo-regular-webfont.woff2') format('woff2'),
+    url('#{$fa-font-path}/aleo-regular-webfont.woff') format('woff'),
+    url('#{$fa-font-path}/aleo-regular-webfont.ttf') format('truetype'),
+    url('#{$fa-font-path}/aleo-regular-webfont.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}

@@ -36,8 +36,8 @@
 <meta property="og:title" content="ROBOTIS e-Manual">
 
 
-  <link rel="canonical" href="http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/">
-  <meta property="og:url" content="http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/">
+  <link rel="canonical" href="http://localhost:4000/docs/en/dxl/x/xm430-w350/">
+  <meta property="og:url" content="http://localhost:4000/docs/en/dxl/x/xm430-w350/">
 
 
 
@@ -65,7 +65,7 @@
       "@context" : "http://schema.org",
       "@type" : "Person",
       "name" : "ROBOTIS",
-      "url" : "http://emanual.robotis.com",
+      "url" : "http://localhost:4000",
       "sameAs" : null
     }
   </script>
@@ -78,7 +78,7 @@
 <!-- end SEO -->
 
 
-<link href="http://emanual.robotis.com/feed.xml" type="application/atom+xml" rel="alternate" title="ROBOTIS e-Manual Feed">
+<link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="ROBOTIS e-Manual Feed">
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <!-- <script src="/assets/js/plugins/jquery.fitvids.js"></script> -->
@@ -89,7 +89,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="http://emanual.robotis.com/assets/css/main.css">
+<link rel="stylesheet" href="http://localhost:4000/assets/css/main.css">
 
 <!--[if lte IE 9]>
   <style>
@@ -156,6 +156,7 @@ $(function() {
 
     <script>
       var toggle_google = 0;
+      var toggle_search_tool = 0;
       var mobile_width = 960;
       
       function extendgoogletool() {
@@ -170,10 +171,22 @@ $(function() {
           toggle_google = 0;
         }
       }
+      
+      function extendsearchtool() {
+        if (toggle_search_tool == 0) {
+          $('#site_search').css('display', 'block');
+          $('#archive').css('margin-top', '40px');
+          toggle_search_tool = 1;
+        }
+        else {
+          $('#site_search').css('display', 'none');
+          $('#archive').css('margin-top', '0px');
+          toggle_search_tool = 0;
+        }
+      }
     </script>
     <script>
     $(document).ready(function() {
-
     	$('.popup').magnificPopup({
     		type: 'ajax',
     		alignTop: true,
@@ -187,21 +200,34 @@ $(function() {
     });
     </script>
     <script>
-      // var side_nav = document.getElementById("sidebar");
-      var offset = 105;
-    
+      $(function () {
+        var currentHash = window.location.href.split('#')[1];
+        $(document).scroll(function () {
+          $('.header-link').each(function () {
+            var top = window.pageYOffset;
+            var distance = top - $(this).offset().top;
+            var hash = $(this).attr('href');
+
+            if (distance < 30 && distance > -30 && currentHash != hash) {
+              currentHash = hash;
+              console.log(currentHash);
+              window.history.pushState(window.location.href, "title", currentHash);   //Update browser URL with current anchor
+              // $('#' + currentHash).attr("color", "#FF6D6D"); //Syntax error
+            }
+          });
+        });
+      });
+    </script>
+    <script>
       window.onscroll = function () {
-        stickynav()
+        var offset = 64 - window.scrollY;
+        if(offset < 0) { offset = 0; }
+        $('.sidebar__left').css('top', offset);       //sticky sidebar
+        $('.extend_sidebar').css('top', offset);
+        $('.local_navigation').css('top', offset);    //sticky local navigation
+        $('.searchbox').css('top', offset);           //sticky searchbox
+        console.log(window.scrollY);
       };
-      
-      function stickynav() {
-        if (window.pageYOffset > offset) {
-          sidebar__left.classList.add("sticky_sidebar");
-        }
-        else {
-          sidebar__left.classList.remove("sticky_sidebar");
-        }
-      }
     </script>
     <script>
       var toggle = 0;
@@ -219,15 +245,15 @@ $(function() {
     </script>
     <script>
       function copyurl(item)
-        {
-          // location.href = item.href;
-          var copiedurl = decodeURI(item.href);
-          var tempurl = $('<input>').val(copiedurl).appendTo('body').select();
-          document.execCommand('copy');
-          // console.log(copiedurl);
-          // document.getElementById(id).href;
-          // document.execCommand('copy');
-        }
+      {
+        // location.href = item.href;
+        var copiedurl = decodeURI(item.href);
+        var tempurl = $('<input>').val(copiedurl).appendTo('body').select();
+        document.execCommand('copy');
+        // console.log(copiedurl);
+        // document.getElementById(id).href;
+        // document.execCommand('copy');
+      }
     </script>
     <script>
       function movetopage(targeturl)
@@ -246,23 +272,11 @@ $(function() {
     <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
-      <a class="site-title" href="http://emanual.robotis.com/"><img class="logo" id="logo" src="/assets/images/robotis_emanual_logo.png"></a>
-      <!-- Google Custom Search -->
-      <form class="searchbox" method="get" id="site_search">
-        <script>
-          (function() {
-            var cx = '003548387656725317882:3pwl9jljqvi';
-            var gcse = document.createElement('script');
-            gcse.type = 'text/javascript';
-            gcse.async = true;
-            gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-            var s = document.getElementsByTagName('script')[0];
-            s.parentNode.insertBefore(gcse, s);
-          })();
-        </script>
-        <gcse:search></gcse:search>
-      </form>
-      <!-- end of Google Custom Search -->
+      <button class="search_button" onclick="extendsearchtool()">
+        <i class="fa fa-fw fa-search" style="font-size:20px;color:white;"></i>
+      </button>
+      <a class="site-title" href="http://localhost:4000/"><img class="logo" id="logo" src="/assets/images/robotis_emanual_logo.png"></a>
+      
       <button class="google_button" id="google_button" onclick="extendgoogletool()"><img src="https://www.google.com/images/cleardot.gif" class="goog-te-gadget-icon" alt="" style="background-image: url(&quot;https://translate.googleapis.com/translate_static/img/te_ctrl3.gif&quot;); background-position: -65px 0px;"></button>
       <div class="google_tools" id="google_tools">
         <!-- Google Translation -->
@@ -277,7 +291,7 @@ $(function() {
         
         
         
-        <a href="http://emanual.robotis.com/docs/kr/dxl/x/xm430-w350/"><button class="switch_ko_en" id="switch_ko_en">Korean</button></a>
+        <a href="http://localhost:4000/docs/kr/dxl/x/xm430-w350/"><button class="switch_ko_en" id="switch_ko_en">Korean</button></a>
       </div>
 
       <input class="menu-btn" type="checkbox" id="menu-btn" />
@@ -305,21 +319,21 @@ $(function() {
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/dxl/ax/ax-12w/" class="">AX-12W</a>
+                          <a href="http://localhost:4000/docs/en/dxl/ax/ax-12w/" class="">AX-12W</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/dxl/ax/ax-12a/" class="">AX-12/12+/12A</a>
+                          <a href="http://localhost:4000/docs/en/dxl/ax/ax-12a/" class="">AX-12/12+/12A</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/dxl/ax/ax-18a/" class="">AX-18F/18A</a>
+                          <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/" class="">AX-18F/18A</a>
                         </li>
                       
                     
@@ -334,13 +348,13 @@ $(function() {
                 
                   <li class="mobile_depth_2">
                     <input type="radio" name="sublevel" id="DYNAMIXEL*EX Series">
-                    <label for="DYNAMIXEL*EX Series">*EX Series</label>
+                    <label for="DYNAMIXEL*EX Series"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>EX Series</label>
                     <ul>
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/dxl/ex/ex-106+/" class="">*EX-106+</a>
+                          <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>EX-106+</a>
                         </li>
                       
                     
@@ -355,27 +369,27 @@ $(function() {
                 
                   <li class="mobile_depth_2">
                     <input type="radio" name="sublevel" id="DYNAMIXEL*DX Series">
-                    <label for="DYNAMIXEL*DX Series">*DX Series</label>
+                    <label for="DYNAMIXEL*DX Series"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>DX Series</label>
                     <ul>
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/dxl/dx/dx-113/" class="">*DX-113</a>
+                          <a href="http://localhost:4000/docs/en/dxl/dx/dx-113/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>DX-113</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/dxl/dx/dx-116/" class="">*DX-116</a>
+                          <a href="http://localhost:4000/docs/en/dxl/dx/dx-116/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>DX-116</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/dxl/dx/dx-117/" class="">*DX-117</a>
+                          <a href="http://localhost:4000/docs/en/dxl/dx/dx-117/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>DX-117</a>
                         </li>
                       
                     
@@ -390,34 +404,34 @@ $(function() {
                 
                   <li class="mobile_depth_2">
                     <input type="radio" name="sublevel" id="DYNAMIXEL*RX Series">
-                    <label for="DYNAMIXEL*RX Series">*RX Series</label>
+                    <label for="DYNAMIXEL*RX Series"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>RX Series</label>
                     <ul>
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/dxl/rx/rx-10/" class="">*RX-10</a>
+                          <a href="http://localhost:4000/docs/en/dxl/rx/rx-10/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>RX-10</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/dxl/rx/rx-24f/" class="">*RX-24F</a>
+                          <a href="http://localhost:4000/docs/en/dxl/rx/rx-24f/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>RX-24F</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/dxl/rx/rx-28/" class="">*RX-28</a>
+                          <a href="http://localhost:4000/docs/en/dxl/rx/rx-28/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>RX-28</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/dxl/rx/rx-64/" class="">*RX-64</a>
+                          <a href="http://localhost:4000/docs/en/dxl/rx/rx-64/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>RX-64</a>
                         </li>
                       
                     
@@ -438,49 +452,49 @@ $(function() {
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/dxl/mx/mx-12w/" class="">MX-12W</a>
+                          <a href="http://localhost:4000/docs/en/dxl/mx/mx-12w/" class="">MX-12W</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/dxl/mx/mx-28/" class="">MX-28T/R/AT/AR</a>
+                          <a href="http://localhost:4000/docs/en/dxl/mx/mx-28/" class="">MX-28T/R/AT/AR</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/dxl/mx/mx-28-2/" class="">MX-28T/R/AT/AR(2.0)</a>
+                          <a href="http://localhost:4000/docs/en/dxl/mx/mx-28-2/" class="">MX-28T/R/AT/AR(2.0)</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/dxl/mx/mx-64/" class="">MX-64T/R/AT/AR</a>
+                          <a href="http://localhost:4000/docs/en/dxl/mx/mx-64/" class="">MX-64T/R/AT/AR</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/dxl/mx/mx-64-2/" class="">MX-64T/R/AT/AR(2.0)</a>
+                          <a href="http://localhost:4000/docs/en/dxl/mx/mx-64-2/" class="">MX-64T/R/AT/AR(2.0)</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/dxl/mx/mx-106/" class="">MX-106T/R</a>
+                          <a href="http://localhost:4000/docs/en/dxl/mx/mx-106/" class="">MX-106T/R</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/dxl/mx/mx-106-2/" class="">MX-106T/R(2.0)</a>
+                          <a href="http://localhost:4000/docs/en/dxl/mx/mx-106-2/" class="">MX-106T/R(2.0)</a>
                         </li>
                       
                     
@@ -501,70 +515,70 @@ $(function() {
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/dxl/x/xl320/" class="">XL-320</a>
+                          <a href="http://localhost:4000/docs/en/dxl/x/xl320/" class="">XL-320</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/dxl/x/xl430-w250/" class="">XL430-W250</a>
+                          <a href="http://localhost:4000/docs/en/dxl/x/xl430-w250/" class="">XL430-W250</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/dxl/x/xm430-w210/" class="">XM430-W210</a>
+                          <a href="http://localhost:4000/docs/en/dxl/x/xm430-w210/" class="">XM430-W210</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/" class="">XM430-W350</a>
+                          <a href="http://localhost:4000/docs/en/dxl/x/xm430-w350/" class="">XM430-W350</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/dxl/x/xm540-w150/" class="">XM540-W150</a>
+                          <a href="http://localhost:4000/docs/en/dxl/x/xm540-w150/" class="">XM540-W150</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/dxl/x/xm540-w270/" class="">XM540-W270</a>
+                          <a href="http://localhost:4000/docs/en/dxl/x/xm540-w270/" class="">XM540-W270</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/dxl/x/xh430-w210/" class="">XH430-W210</a>
+                          <a href="http://localhost:4000/docs/en/dxl/x/xh430-w210/" class="">XH430-W210</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/dxl/x/xh430-w350/" class="">XH430-W350</a>
+                          <a href="http://localhost:4000/docs/en/dxl/x/xh430-w350/" class="">XH430-W350</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/dxl/x/xh430-v210/" class="">XH430-V210</a>
+                          <a href="http://localhost:4000/docs/en/dxl/x/xh430-v210/" class="">XH430-V210</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/dxl/x/xh430-v350/" class="">XH430-V350</a>
+                          <a href="http://localhost:4000/docs/en/dxl/x/xh430-v350/" class="">XH430-V350</a>
                         </li>
                       
                     
@@ -585,77 +599,77 @@ $(function() {
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/dxl/pro/h54-200-s500-r/" class="">H54-200-S500-R</a>
+                          <a href="http://localhost:4000/docs/en/dxl/pro/h54-200-s500-r/" class="">H54-200-S500-R</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/dxl/pro/h54-100-s500-r/" class="">H54-100-S500-R</a>
+                          <a href="http://localhost:4000/docs/en/dxl/pro/h54-100-s500-r/" class="">H54-100-S500-R</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/dxl/pro/h42-20-s300-r/" class="">H42-20-S300-R</a>
+                          <a href="http://localhost:4000/docs/en/dxl/pro/h42-20-s300-r/" class="">H42-20-S300-R</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/dxl/pro/m54-60-s250-r/" class="">M54-60-S250-R</a>
+                          <a href="http://localhost:4000/docs/en/dxl/pro/m54-60-s250-r/" class="">M54-60-S250-R</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/dxl/pro/m54-40-s250-r/" class="">M54-40-S250-R</a>
+                          <a href="http://localhost:4000/docs/en/dxl/pro/m54-40-s250-r/" class="">M54-40-S250-R</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/dxl/pro/m42-10-s260-r/" class="">M42-10-S260-R</a>
+                          <a href="http://localhost:4000/docs/en/dxl/pro/m42-10-s260-r/" class="">M42-10-S260-R</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/dxl/pro/l54-50-s500-r/" class="">*L54-50-S500-R</a>
+                          <a href="http://localhost:4000/docs/en/dxl/pro/l54-50-s500-r/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>L54-50-S500-R</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/dxl/pro/l54-50-s290-r/" class="">*L54-50-S290-R</a>
+                          <a href="http://localhost:4000/docs/en/dxl/pro/l54-50-s290-r/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>L54-50-S290-R</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/dxl/pro/l54-30-s500-r/" class="">*L54-30-S500-R</a>
+                          <a href="http://localhost:4000/docs/en/dxl/pro/l54-30-s500-r/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>L54-30-S500-R</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/dxl/pro/l54-30-s400-r/" class="">*L54-30-S400-R</a>
+                          <a href="http://localhost:4000/docs/en/dxl/pro/l54-30-s400-r/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>L54-30-S400-R</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/dxl/pro/l42-10-s300-r/" class="">*L42-10-S300-R</a>
+                          <a href="http://localhost:4000/docs/en/dxl/pro/l42-10-s300-r/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>L42-10-S300-R</a>
                         </li>
                       
                     
@@ -669,7 +683,7 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <a href="http://emanual.robotis.com/docs/en/dxl/protocol1/">Procotol 1.0</a>
+                    <a href="http://localhost:4000/docs/en/dxl/protocol1/">Procotol 1.0</a>
                   </li>
                 
               
@@ -679,7 +693,7 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <a href="http://emanual.robotis.com/docs/en/dxl/protocol2/">Protocol 2.0</a>
+                    <a href="http://localhost:4000/docs/en/dxl/protocol2/">Protocol 2.0</a>
                   </li>
                 
               
@@ -705,7 +719,7 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <a href="http://emanual.robotis.com/docs/en/platform/op/getting_started/">*ROBOTIS OP</a>
+                    <a href="http://localhost:4000/docs/en/platform/op/getting_started/">*ROBOTIS OP</a>
                   </li>
                 
               
@@ -715,7 +729,7 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <a href="http://emanual.robotis.com/docs/en/platform/op2/getting_started/">ROBOTIS OP2</a>
+                    <a href="http://localhost:4000/docs/en/platform/op2/getting_started/">ROBOTIS OP2</a>
                   </li>
                 
               
@@ -725,7 +739,7 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <a href="http://emanual.robotis.com/docs/en/platform/op3/introduction/">ROBOTIS OP3</a>
+                    <a href="http://localhost:4000/docs/en/platform/op3/introduction/">ROBOTIS OP3</a>
                   </li>
                 
               
@@ -735,7 +749,7 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <a href="http://emanual.robotis.com/docs/en/platform/rh_p12_rn/">RH-P12-RN</a>
+                    <a href="http://localhost:4000/docs/en/platform/rh_p12_rn/">RH-P12-RN</a>
                   </li>
                 
               
@@ -757,7 +771,7 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <a href="http://emanual.robotis.com/docs/en/platform/manipulator_h/introduction/">Manipulator-H</a>
+                    <a href="http://localhost:4000/docs/en/platform/manipulator_h/introduction/">Manipulator-H</a>
                   </li>
                 
               
@@ -767,7 +781,7 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <a href="http://emanual.robotis.com/docs/en/platform/thormang3/introduction/">THORMANG3</a>
+                    <a href="http://localhost:4000/docs/en/platform/thormang3/introduction/">THORMANG3</a>
                   </li>
                 
               
@@ -777,7 +791,7 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <a href="http://emanual.robotis.com/docs/en/platform/turtlebot3/overview/">TurtleBot3</a>
+                    <a href="http://localhost:4000/docs/en/platform/turtlebot3/overview/">TurtleBot3</a>
                   </li>
                 
               
@@ -787,7 +801,7 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <a href="http://emanual.robotis.com/docs/en/platform/openmanipulator/">OpenManipulator</a>
+                    <a href="http://localhost:4000/docs/en/platform/openmanipulator/">OpenManipulator</a>
                   </li>
                 
               
@@ -814,27 +828,27 @@ $(function() {
                 
                   <li class="mobile_depth_2">
                     <input type="radio" name="sublevel" id="STEAM*OLLO">
-                    <label for="STEAM*OLLO">*OLLO</label>
+                    <label for="STEAM*OLLO"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>OLLO</label>
                     <ul>
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/edu/ollo/bugkit/" class="">*BUG KIT</a>
+                          <a href="http://localhost:4000/docs/en/edu/ollo/bugkit/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>BUG KIT</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/edu/ollo/explorer/" class="">*EXPLORER</a>
+                          <a href="http://localhost:4000/docs/en/edu/ollo/explorer/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>EXPLORER</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/edu/ollo/inventor/" class="">*INVENTOR</a>
+                          <a href="http://localhost:4000/docs/en/edu/ollo/inventor/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>INVENTOR</a>
                         </li>
                       
                     
@@ -861,35 +875,35 @@ $(function() {
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/edu/dream/dream1-2/" class="">LEVEL 2</a>
+                          <a href="http://localhost:4000/docs/en/edu/dream/dream1-2/" class="">LEVEL 2</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/edu/dream/dream1-3/" class="">LEVEL 3</a>
+                          <a href="http://localhost:4000/docs/en/edu/dream/dream1-3/" class="">LEVEL 3</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/edu/dream/dream1-4/" class="">LEVEL 4</a>
+                          <a href="http://localhost:4000/docs/en/edu/dream/dream1-4/" class="">LEVEL 4</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/edu/dream/dream-a/" class="">SET A</a>
+                          <a href="http://localhost:4000/docs/en/edu/dream/dream-a/" class="">SET A</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/edu/dream/dream-b/" class="">SET B</a>
+                          <a href="http://localhost:4000/docs/en/edu/dream/dream-b/" class="">SET B</a>
                         </li>
                       
                     
@@ -910,42 +924,42 @@ $(function() {
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/edu/dream/dream2-1/" class="">LEVEL 1</a>
+                          <a href="http://localhost:4000/docs/en/edu/dream/dream2-1/" class="">LEVEL 1</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/edu/dream/dream2-2/" class="">LEVEL 2</a>
+                          <a href="http://localhost:4000/docs/en/edu/dream/dream2-2/" class="">LEVEL 2</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/edu/dream/dream2-3/" class="">LEVEL 3</a>
+                          <a href="http://localhost:4000/docs/en/edu/dream/dream2-3/" class="">LEVEL 3</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/edu/dream/dream2-4/" class="">LEVEL 4</a>
+                          <a href="http://localhost:4000/docs/en/edu/dream/dream2-4/" class="">LEVEL 4</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/edu/dream/dream2-5/" class="">LEVEL 5</a>
+                          <a href="http://localhost:4000/docs/en/edu/dream/dream2-5/" class="">LEVEL 5</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/edu/dream/dream2-schoolset/" class="">School Set</a>
+                          <a href="http://localhost:4000/docs/en/edu/dream/dream2-schoolset/" class="">School Set</a>
                         </li>
                       
                     
@@ -996,35 +1010,35 @@ $(function() {
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/edu/bioloid/beginner/" class="">Beginner Level</a>
+                          <a href="http://localhost:4000/docs/en/edu/bioloid/beginner/" class="">Beginner Level</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/edu/bioloid/comprehensive/" class="">Comprehensive Level</a>
+                          <a href="http://localhost:4000/docs/en/edu/bioloid/comprehensive/" class="">Comprehensive Level</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/edu/bioloid/stem/" class="">ROBOTIS STEM</a>
+                          <a href="http://localhost:4000/docs/en/edu/bioloid/stem/" class="">ROBOTIS STEM</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/edu/bioloid/premium/" class="">ROBOTIS PREMIUM</a>
+                          <a href="http://localhost:4000/docs/en/edu/bioloid/premium/" class="">ROBOTIS PREMIUM</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/edu/bioloid/gp/" class="">ROBOTIS GP</a>
+                          <a href="http://localhost:4000/docs/en/edu/bioloid/gp/" class="">ROBOTIS GP</a>
                         </li>
                       
                     
@@ -1038,7 +1052,7 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <a href="http://emanual.robotis.com/docs/en/edu/mini/">ROBOTIS MINI</a>
+                    <a href="http://localhost:4000/docs/en/edu/mini/">ROBOTIS MINI</a>
                   </li>
                 
               
@@ -1071,14 +1085,14 @@ $(function() {
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_sdk/overview/" class="">DYNAMIXEL SDK</a>
+                          <a href="http://localhost:4000/docs/en/software/dynamixel/dynamixel_sdk/overview/" class="">DYNAMIXEL SDK</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_workbench/" class="">DYNAMIXEL-Workbench</a>
+                          <a href="http://localhost:4000/docs/en/software/dynamixel/dynamixel_workbench/" class="">DYNAMIXEL-Workbench</a>
                         </li>
                       
                     
@@ -1105,7 +1119,7 @@ $(function() {
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/software/mobile_app/mini_app/" class="">ROBOTIS MINI</a>
+                          <a href="http://localhost:4000/docs/en/software/mobile_app/mini_app/" class="">ROBOTIS MINI</a>
                         </li>
                       
                     
@@ -1126,28 +1140,28 @@ $(function() {
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/software/rplus1/task/getting_started/" class="">R+ Task</a>
+                          <a href="http://localhost:4000/docs/en/software/rplus1/task/getting_started/" class="">R+ Task</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/software/rplus1/manager/" class="">R+ Manager</a>
+                          <a href="http://localhost:4000/docs/en/software/rplus1/manager/" class="">R+ Manager</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/software/rplus1/motion/" class="">R+ Motion</a>
+                          <a href="http://localhost:4000/docs/en/software/rplus1/motion/" class="">R+ Motion</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/software/rplus1/dynamixel_wizard/" class="">Dynamixel Wizard</a>
+                          <a href="http://localhost:4000/docs/en/software/rplus1/dynamixel_wizard/" class="">Dynamixel Wizard</a>
                         </li>
                       
                     
@@ -1168,35 +1182,35 @@ $(function() {
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/software/rplus2/task/" class="">R+ Task 2.0</a>
+                          <a href="http://localhost:4000/docs/en/software/rplus2/task/" class="">R+ Task 2.0</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/software/rplus2/manager/" class="">R+ Manager 2.0</a>
+                          <a href="http://localhost:4000/docs/en/software/rplus2/manager/" class="">R+ Manager 2.0</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/software/rplus2/motion/" class="">R+ Motion 2.0</a>
+                          <a href="http://localhost:4000/docs/en/software/rplus2/motion/" class="">R+ Motion 2.0</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/software/rplus2/design/" class="">R+ Design 2.0</a>
+                          <a href="http://localhost:4000/docs/en/software/rplus2/design/" class="">R+ Design 2.0</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/software/rplus2/scratch/" class="">R+ Scratch</a>
+                          <a href="http://localhost:4000/docs/en/software/rplus2/scratch/" class="">R+ Scratch</a>
                         </li>
                       
                     
@@ -1223,14 +1237,14 @@ $(function() {
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/software/rplus_mobile/mmotion/" class="">R+ m.Motion 2.0</a>
+                          <a href="http://localhost:4000/docs/en/software/rplus_mobile/mmotion/" class="">R+ m.Motion 2.0</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/software/rplus_mobile/mdesign/" class="">R+ m.Design</a>
+                          <a href="http://localhost:4000/docs/en/software/rplus_mobile/mdesign/" class="">R+ m.Design</a>
                         </li>
                       
                     
@@ -1251,21 +1265,21 @@ $(function() {
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/software/embedded_sdk/embedded_c_cm510/" class="">Embedded C(CM-510/700)</a>
+                          <a href="http://localhost:4000/docs/en/software/embedded_sdk/embedded_c_cm510/" class="">Embedded C(CM-510/700)</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/software/embedded_sdk/embedded_c_cm530/" class="">Embedded C(CM-530)</a>
+                          <a href="http://localhost:4000/docs/en/software/embedded_sdk/embedded_c_cm530/" class="">Embedded C(CM-530)</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/software/embedded_sdk/zigbee_sdk/" class="">ZIGBEE SDK</a>
+                          <a href="http://localhost:4000/docs/en/software/embedded_sdk/zigbee_sdk/" class="">ZIGBEE SDK</a>
                         </li>
                       
                     
@@ -1279,7 +1293,7 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <a href="http://emanual.robotis.com/docs/en/software/opencm_ide/getting_started/">OpenCM IDE</a>
+                    <a href="http://localhost:4000/docs/en/software/opencm_ide/getting_started/">OpenCM IDE</a>
                   </li>
                 
               
@@ -1289,7 +1303,7 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <a href="http://emanual.robotis.com/docs/en/software/arduino_ide/">Arduino IDE</a>
+                    <a href="http://localhost:4000/docs/en/software/arduino_ide/">Arduino IDE</a>
                   </li>
                 
               
@@ -1299,7 +1313,7 @@ $(function() {
               
                 
                   <li class="mobile_depth_2">
-                    <a href="http://emanual.robotis.com/docs/en/software/robotis_framework_packages/">ROBOTIS Framework Packages</a>
+                    <a href="http://localhost:4000/docs/en/software/robotis_framework_packages/">ROBOTIS Framework Packages</a>
                   </li>
                 
               
@@ -1332,56 +1346,56 @@ $(function() {
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/parts/controller/cm-100/" class="">*CM-100A</a>
+                          <a href="http://localhost:4000/docs/en/parts/controller/cm-100/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>CM-100A</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/parts/controller/cm-150/" class="">CM-150</a>
+                          <a href="http://localhost:4000/docs/en/parts/controller/cm-150/" class="">CM-150</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/parts/controller/cm-200/" class="">CM-200</a>
+                          <a href="http://localhost:4000/docs/en/parts/controller/cm-200/" class="">CM-200</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/parts/controller/cm-5/" class="">*CM-5</a>
+                          <a href="http://localhost:4000/docs/en/parts/controller/cm-5/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>CM-5</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/parts/controller/cm-510/" class="">*CM-510</a>
+                          <a href="http://localhost:4000/docs/en/parts/controller/cm-510/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>CM-510</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/parts/controller/cm-530/" class="">CM-530</a>
+                          <a href="http://localhost:4000/docs/en/parts/controller/cm-530/" class="">CM-530</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/parts/controller/cm-700/" class="">CM-700</a>
+                          <a href="http://localhost:4000/docs/en/parts/controller/cm-700/" class="">CM-700</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/parts/controller/cm-900/" class="">*CM-900</a>
+                          <a href="http://localhost:4000/docs/en/parts/controller/cm-900/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>CM-900</a>
                         </li>
                       
                     
@@ -1391,21 +1405,21 @@ $(function() {
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/parts/controller/opencm904/" class="">OpenCM 9.04</a>
+                          <a href="http://localhost:4000/docs/en/parts/controller/opencm904/" class="">OpenCM 9.04</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/parts/controller/opencm485exp/" class="">OpenCM 485 EXP</a>
+                          <a href="http://localhost:4000/docs/en/parts/controller/opencm485exp/" class="">OpenCM 485 EXP</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/parts/controller/opencr10/" class="">OpenCR</a>
+                          <a href="http://localhost:4000/docs/en/parts/controller/opencr10/" class="">OpenCR</a>
                         </li>
                       
                     
@@ -1426,49 +1440,49 @@ $(function() {
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/parts/communication/rc-100/" class="">RC-100A/100B</a>
+                          <a href="http://localhost:4000/docs/en/parts/communication/rc-100/" class="">RC-100A/100B</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/parts/communication/zig-110/" class="">*ZIG-100/110A</a>
+                          <a href="http://localhost:4000/docs/en/parts/communication/zig-110/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>ZIG-100/110A</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/parts/communication/bt-110/" class="">*BT-100/110A</a>
+                          <a href="http://localhost:4000/docs/en/parts/communication/bt-110/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>BT-100/110A</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/parts/communication/bt-210/" class="">BT-210</a>
+                          <a href="http://localhost:4000/docs/en/parts/communication/bt-210/" class="">BT-210</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/parts/communication/bt-410/" class="">BT-410</a>
+                          <a href="http://localhost:4000/docs/en/parts/communication/bt-410/" class="">BT-410</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/parts/communication/bt-410-dongle/" class="">BT-410 Dongle</a>
+                          <a href="http://localhost:4000/docs/en/parts/communication/bt-410-dongle/" class="">BT-410 Dongle</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/parts/communication/zig2serial/" class="">ZIG2Serial</a>
+                          <a href="http://localhost:4000/docs/en/parts/communication/zig2serial/" class="">ZIG2Serial</a>
                         </li>
                       
                     
@@ -1489,28 +1503,28 @@ $(function() {
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/parts/motor/gm-10a/" class="">Geared Motor(GM-10A)</a>
+                          <a href="http://localhost:4000/docs/en/parts/motor/gm-10a/" class="">Geared Motor(GM-10A)</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/parts/motor/h_speed_geared_motor/" class="">*High Speed Geared Motor</a>
+                          <a href="http://localhost:4000/docs/en/parts/motor/h_speed_geared_motor/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>High Speed Geared Motor</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/parts/motor/l_speed_geared_motor/" class="">Low Speed Geared Motor</a>
+                          <a href="http://localhost:4000/docs/en/parts/motor/l_speed_geared_motor/" class="">Low Speed Geared Motor</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/parts/motor/servo_motor/" class="">Servo Motor(SM-10)</a>
+                          <a href="http://localhost:4000/docs/en/parts/motor/servo_motor/" class="">Servo Motor(SM-10)</a>
                         </li>
                       
                     
@@ -1531,21 +1545,21 @@ $(function() {
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/parts/interface/ln-101/" class="">LN-101</a>
+                          <a href="http://localhost:4000/docs/en/parts/interface/ln-101/" class="">LN-101</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/parts/interface/usb2dynamixel/" class="">USB2DYNAMIXEL</a>
+                          <a href="http://localhost:4000/docs/en/parts/interface/usb2dynamixel/" class="">USB2DYNAMIXEL</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/parts/interface/u2d2/" class="">U2D2</a>
+                          <a href="http://localhost:4000/docs/en/parts/interface/u2d2/" class="">U2D2</a>
                         </li>
                       
                     
@@ -1566,70 +1580,70 @@ $(function() {
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/parts/sensor/irss-10/" class="">IR Sensor(IRSS-10)</a>
+                          <a href="http://localhost:4000/docs/en/parts/sensor/irss-10/" class="">IR Sensor(IRSS-10)</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/parts/sensor/dms-80/" class="">Distance Sensor(DMS-80)</a>
+                          <a href="http://localhost:4000/docs/en/parts/sensor/dms-80/" class="">Distance Sensor(DMS-80)</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/parts/sensor/ts-10/" class="">Touch Sensor(TS-10)</a>
+                          <a href="http://localhost:4000/docs/en/parts/sensor/ts-10/" class="">Touch Sensor(TS-10)</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/parts/sensor/ax-s1/" class="">*Integrated Sensor(AX-S1)</a>
+                          <a href="http://localhost:4000/docs/en/parts/sensor/ax-s1/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>Integrated Sensor(AX-S1)</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/parts/sensor/gs-12/" class="">Gyro Sensor(GS-12)</a>
+                          <a href="http://localhost:4000/docs/en/parts/sensor/gs-12/" class="">Gyro Sensor(GS-12)</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/parts/sensor/ir-array/" class="">IR Array Sensor</a>
+                          <a href="http://localhost:4000/docs/en/parts/sensor/ir-array/" class="">IR Array Sensor</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/parts/sensor/cs-10/" class="">Color Sensor(CS-10)</a>
+                          <a href="http://localhost:4000/docs/en/parts/sensor/cs-10/" class="">Color Sensor(CS-10)</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/parts/sensor/mgss-10/" class="">Magnetic Sensor(MGSS-10)</a>
+                          <a href="http://localhost:4000/docs/en/parts/sensor/mgss-10/" class="">Magnetic Sensor(MGSS-10)</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/parts/sensor/tps-10/" class="">Temperature Sensor(TPS-10)</a>
+                          <a href="http://localhost:4000/docs/en/parts/sensor/tps-10/" class="">Temperature Sensor(TPS-10)</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/parts/sensor/pir-10/" class="">Motion Sensor(PIR-10)</a>
+                          <a href="http://localhost:4000/docs/en/parts/sensor/pir-10/" class="">Motion Sensor(PIR-10)</a>
                         </li>
                       
                     
@@ -1656,7 +1670,7 @@ $(function() {
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://emanual.robotis.com/docs/en/parts/display/lm-10/" class="">LED Module(LM-10)</a>
+                          <a href="http://localhost:4000/docs/en/parts/display/lm-10/" class="">LED Module(LM-10)</a>
                         </li>
                       
                     
@@ -1677,7 +1691,7 @@ $(function() {
 
           
           <li class="mobile_depth_1">
-            <a href="http://emanual.robotis.com/docs/en/faq/">FAQ</a>
+            <a href="http://localhost:4000/docs/en/faq/">FAQ</a>
           </li>
           
 
@@ -1693,7 +1707,8 @@ $(function() {
 
         <div class="dropdown">
           
-          <button class="dropbtn">
+            
+              <button class="dropbtn">
             DYNAMIXEL
           </button>
           
@@ -1716,44 +1731,21 @@ $(function() {
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/dxl/ax/ax-12w/">AX-12W</a>
+                      <a href="http://localhost:4000/docs/en/dxl/ax/ax-12w/">AX-12W</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/dxl/ax/ax-12a/">AX-12/12+/12A</a>
+                      <a href="http://localhost:4000/docs/en/dxl/ax/ax-12a/">AX-12/12+/12A</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/dxl/ax/ax-18a/">AX-18F/18A</a>
-                    
-                
-              </div>
-              
-
-            </div>
-            
-              <div class="dropdown-content-wrapper">
-              
-
-              
-                
-                <a><font color=#cccccc>*EX Series</font></a>
-              
-
-              
-              <div class="dropdown-2nd-content">
-                
-                  
-
-                  
-                    
-                      <a href="http://emanual.robotis.com/docs/en/dxl/ex/ex-106+/"><font color=#cccccc>*EX-106+</font></a>
+                      <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/">AX-18F/18A</a>
                     
                 
               </div>
@@ -1766,7 +1758,7 @@ $(function() {
 
               
                 
-                <a><font color=#cccccc>*DX Series</font></a>
+                <a><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>EX Series</a>
               
 
               
@@ -1776,21 +1768,7 @@ $(function() {
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/dxl/dx/dx-113/"><font color=#cccccc>*DX-113</font></a>
-                    
-                
-                  
-
-                  
-                    
-                      <a href="http://emanual.robotis.com/docs/en/dxl/dx/dx-116/"><font color=#cccccc>*DX-116</font></a>
-                    
-                
-                  
-
-                  
-                    
-                      <a href="http://emanual.robotis.com/docs/en/dxl/dx/dx-117/"><font color=#cccccc>*DX-117</font></a>
+                      <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>EX-106+</a>
                     
                 
               </div>
@@ -1803,7 +1781,7 @@ $(function() {
 
               
                 
-                <a><font color=#cccccc>*RX Series</font></a>
+                <a><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>DX Series</a>
               
 
               
@@ -1813,28 +1791,65 @@ $(function() {
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/dxl/rx/rx-10/"><font color=#cccccc>*RX-10</font></a>
+                      <a href="http://localhost:4000/docs/en/dxl/dx/dx-113/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>DX-113</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/dxl/rx/rx-24f/"><font color=#cccccc>*RX-24F</font></a>
+                      <a href="http://localhost:4000/docs/en/dxl/dx/dx-116/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>DX-116</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/dxl/rx/rx-28/"><font color=#cccccc>*RX-28</font></a>
+                      <a href="http://localhost:4000/docs/en/dxl/dx/dx-117/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>DX-117</a>
+                    
+                
+              </div>
+              
+
+            </div>
+            
+              <div class="dropdown-content-wrapper">
+              
+
+              
+                
+                <a><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>RX Series</a>
+              
+
+              
+              <div class="dropdown-2nd-content">
+                
+                  
+
+                  
+                    
+                      <a href="http://localhost:4000/docs/en/dxl/rx/rx-10/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>RX-10</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/dxl/rx/rx-64/"><font color=#cccccc>*RX-64</font></a>
+                      <a href="http://localhost:4000/docs/en/dxl/rx/rx-24f/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>RX-24F</a>
+                    
+                
+                  
+
+                  
+                    
+                      <a href="http://localhost:4000/docs/en/dxl/rx/rx-28/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>RX-28</a>
+                    
+                
+                  
+
+                  
+                    
+                      <a href="http://localhost:4000/docs/en/dxl/rx/rx-64/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>RX-64</a>
                     
                 
               </div>
@@ -1857,49 +1872,49 @@ $(function() {
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/dxl/mx/mx-12w/">MX-12W</a>
+                      <a href="http://localhost:4000/docs/en/dxl/mx/mx-12w/">MX-12W</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/dxl/mx/mx-28/">MX-28T/R/AT/AR</a>
+                      <a href="http://localhost:4000/docs/en/dxl/mx/mx-28/">MX-28T/R/AT/AR</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/dxl/mx/mx-28-2/">MX-28T/R/AT/AR(2.0)</a>
+                      <a href="http://localhost:4000/docs/en/dxl/mx/mx-28-2/">MX-28T/R/AT/AR(2.0)</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/dxl/mx/mx-64/">MX-64T/R/AT/AR</a>
+                      <a href="http://localhost:4000/docs/en/dxl/mx/mx-64/">MX-64T/R/AT/AR</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/dxl/mx/mx-64-2/">MX-64T/R/AT/AR(2.0)</a>
+                      <a href="http://localhost:4000/docs/en/dxl/mx/mx-64-2/">MX-64T/R/AT/AR(2.0)</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/dxl/mx/mx-106/">MX-106T/R</a>
+                      <a href="http://localhost:4000/docs/en/dxl/mx/mx-106/">MX-106T/R</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/dxl/mx/mx-106-2/">MX-106T/R(2.0)</a>
+                      <a href="http://localhost:4000/docs/en/dxl/mx/mx-106-2/">MX-106T/R(2.0)</a>
                     
                 
               </div>
@@ -1922,70 +1937,70 @@ $(function() {
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/dxl/x/xl320/">XL-320</a>
+                      <a href="http://localhost:4000/docs/en/dxl/x/xl320/">XL-320</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/dxl/x/xl430-w250/">XL430-W250</a>
+                      <a href="http://localhost:4000/docs/en/dxl/x/xl430-w250/">XL430-W250</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/dxl/x/xm430-w210/">XM430-W210</a>
+                      <a href="http://localhost:4000/docs/en/dxl/x/xm430-w210/">XM430-W210</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/">XM430-W350</a>
+                      <a href="http://localhost:4000/docs/en/dxl/x/xm430-w350/">XM430-W350</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/dxl/x/xm540-w150/">XM540-W150</a>
+                      <a href="http://localhost:4000/docs/en/dxl/x/xm540-w150/">XM540-W150</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/dxl/x/xm540-w270/">XM540-W270</a>
+                      <a href="http://localhost:4000/docs/en/dxl/x/xm540-w270/">XM540-W270</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/dxl/x/xh430-w210/">XH430-W210</a>
+                      <a href="http://localhost:4000/docs/en/dxl/x/xh430-w210/">XH430-W210</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/dxl/x/xh430-w350/">XH430-W350</a>
+                      <a href="http://localhost:4000/docs/en/dxl/x/xh430-w350/">XH430-W350</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/dxl/x/xh430-v210/">XH430-V210</a>
+                      <a href="http://localhost:4000/docs/en/dxl/x/xh430-v210/">XH430-V210</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/dxl/x/xh430-v350/">XH430-V350</a>
+                      <a href="http://localhost:4000/docs/en/dxl/x/xh430-v350/">XH430-V350</a>
                     
                 
               </div>
@@ -1999,7 +2014,7 @@ $(function() {
               
                 
                   
-                    <a href="http://emanual.robotis.com/docs/en/dxl/pro/">PRO Series</a>
+                    <a href="http://localhost:4000/docs/en/dxl/pro/">PRO Series</a>
               
 
               
@@ -2009,77 +2024,77 @@ $(function() {
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/dxl/pro/h54-200-s500-r/">H54-200-S500-R</a>
+                      <a href="http://localhost:4000/docs/en/dxl/pro/h54-200-s500-r/">H54-200-S500-R</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/dxl/pro/h54-100-s500-r/">H54-100-S500-R</a>
+                      <a href="http://localhost:4000/docs/en/dxl/pro/h54-100-s500-r/">H54-100-S500-R</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/dxl/pro/h42-20-s300-r/">H42-20-S300-R</a>
+                      <a href="http://localhost:4000/docs/en/dxl/pro/h42-20-s300-r/">H42-20-S300-R</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/dxl/pro/m54-60-s250-r/">M54-60-S250-R</a>
+                      <a href="http://localhost:4000/docs/en/dxl/pro/m54-60-s250-r/">M54-60-S250-R</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/dxl/pro/m54-40-s250-r/">M54-40-S250-R</a>
+                      <a href="http://localhost:4000/docs/en/dxl/pro/m54-40-s250-r/">M54-40-S250-R</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/dxl/pro/m42-10-s260-r/">M42-10-S260-R</a>
+                      <a href="http://localhost:4000/docs/en/dxl/pro/m42-10-s260-r/">M42-10-S260-R</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/dxl/pro/l54-50-s500-r/"><font color=#cccccc>*L54-50-S500-R</font></a>
+                      <a href="http://localhost:4000/docs/en/dxl/pro/l54-50-s500-r/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>L54-50-S500-R</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/dxl/pro/l54-50-s290-r/"><font color=#cccccc>*L54-50-S290-R</font></a>
+                      <a href="http://localhost:4000/docs/en/dxl/pro/l54-50-s290-r/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>L54-50-S290-R</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/dxl/pro/l54-30-s500-r/"><font color=#cccccc>*L54-30-S500-R</font></a>
+                      <a href="http://localhost:4000/docs/en/dxl/pro/l54-30-s500-r/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>L54-30-S500-R</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/dxl/pro/l54-30-s400-r/"><font color=#cccccc>*L54-30-S400-R</font></a>
+                      <a href="http://localhost:4000/docs/en/dxl/pro/l54-30-s400-r/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>L54-30-S400-R</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/dxl/pro/l42-10-s300-r/"><font color=#cccccc>*L42-10-S300-R</font></a>
+                      <a href="http://localhost:4000/docs/en/dxl/pro/l42-10-s300-r/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>L42-10-S300-R</a>
                     
                 
               </div>
@@ -2093,7 +2108,7 @@ $(function() {
               
                 
                   
-                    <a href="http://emanual.robotis.com/docs/en/dxl/protocol1/">Procotol 1.0</a>
+                    <a href="http://localhost:4000/docs/en/dxl/protocol1/">Procotol 1.0</a>
               
 
               
@@ -2106,7 +2121,7 @@ $(function() {
               
                 
                   
-                    <a href="http://emanual.robotis.com/docs/en/dxl/protocol2/">Protocol 2.0</a>
+                    <a href="http://localhost:4000/docs/en/dxl/protocol2/">Protocol 2.0</a>
               
 
               
@@ -2122,7 +2137,8 @@ $(function() {
 
         <div class="dropdown">
           
-          <button class="dropbtn">
+            
+              <button class="dropbtn">
             PLATFORM
           </button>
           
@@ -2136,7 +2152,7 @@ $(function() {
               
                 
                   
-                    <a href="http://emanual.robotis.com/docs/en/platform/op/getting_started/"><font color=#cccccc>*ROBOTIS OP</font></a>
+                    <a href="http://localhost:4000/docs/en/platform/op/getting_started/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>ROBOTIS OP</a>
               
 
               
@@ -2149,7 +2165,7 @@ $(function() {
               
                 
                   
-                    <a href="http://emanual.robotis.com/docs/en/platform/op2/getting_started/">ROBOTIS OP2</a>
+                    <a href="http://localhost:4000/docs/en/platform/op2/getting_started/">ROBOTIS OP2</a>
               
 
               
@@ -2162,7 +2178,7 @@ $(function() {
               
                 
                   
-                    <a href="http://emanual.robotis.com/docs/en/platform/op3/introduction/">ROBOTIS OP3</a>
+                    <a href="http://localhost:4000/docs/en/platform/op3/introduction/">ROBOTIS OP3</a>
               
 
               
@@ -2175,7 +2191,7 @@ $(function() {
               
                 
                   
-                    <a href="http://emanual.robotis.com/docs/en/platform/rh_p12_rn/">RH-P12-RN</a>
+                    <a href="http://localhost:4000/docs/en/platform/rh_p12_rn/">RH-P12-RN</a>
               
 
               
@@ -2206,7 +2222,7 @@ $(function() {
               
                 
                   
-                    <a href="http://emanual.robotis.com/docs/en/platform/manipulator_h/introduction/">Manipulator-H</a>
+                    <a href="http://localhost:4000/docs/en/platform/manipulator_h/introduction/">Manipulator-H</a>
               
 
               
@@ -2219,7 +2235,7 @@ $(function() {
               
                 
                   
-                    <a href="http://emanual.robotis.com/docs/en/platform/thormang3/introduction/">THORMANG3</a>
+                    <a href="http://localhost:4000/docs/en/platform/thormang3/introduction/">THORMANG3</a>
               
 
               
@@ -2232,7 +2248,7 @@ $(function() {
               
                 
                   
-                    <a href="http://emanual.robotis.com/docs/en/platform/turtlebot3/overview/">TurtleBot3</a>
+                    <a href="http://localhost:4000/docs/en/platform/turtlebot3/overview/">TurtleBot3</a>
               
 
               
@@ -2245,7 +2261,7 @@ $(function() {
               
                 
                   
-                    <a href="http://emanual.robotis.com/docs/en/platform/openmanipulator/">OpenManipulator</a>
+                    <a href="http://localhost:4000/docs/en/platform/openmanipulator/">OpenManipulator</a>
               
 
               
@@ -2261,7 +2277,8 @@ $(function() {
 
         <div class="dropdown">
           
-          <button class="dropbtn">
+            
+              <button class="dropbtn">
             STEAM
           </button>
           
@@ -2274,7 +2291,7 @@ $(function() {
 
               
                 
-                <a><font color=#cccccc>*OLLO</font></a>
+                <a><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>OLLO</a>
               
 
               
@@ -2284,21 +2301,21 @@ $(function() {
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/edu/ollo/bugkit/"><font color=#cccccc>*BUG KIT</font></a>
+                      <a href="http://localhost:4000/docs/en/edu/ollo/bugkit/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>BUG KIT</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/edu/ollo/explorer/"><font color=#cccccc>*EXPLORER</font></a>
+                      <a href="http://localhost:4000/docs/en/edu/ollo/explorer/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>EXPLORER</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/edu/ollo/inventor/"><font color=#cccccc>*INVENTOR</font></a>
+                      <a href="http://localhost:4000/docs/en/edu/ollo/inventor/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>INVENTOR</a>
                     
                 
                   
@@ -2329,35 +2346,35 @@ $(function() {
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/edu/dream/dream1-2/">LEVEL 2</a>
+                      <a href="http://localhost:4000/docs/en/edu/dream/dream1-2/">LEVEL 2</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/edu/dream/dream1-3/">LEVEL 3</a>
+                      <a href="http://localhost:4000/docs/en/edu/dream/dream1-3/">LEVEL 3</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/edu/dream/dream1-4/">LEVEL 4</a>
+                      <a href="http://localhost:4000/docs/en/edu/dream/dream1-4/">LEVEL 4</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/edu/dream/dream-a/">SET A</a>
+                      <a href="http://localhost:4000/docs/en/edu/dream/dream-a/">SET A</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/edu/dream/dream-b/">SET B</a>
+                      <a href="http://localhost:4000/docs/en/edu/dream/dream-b/">SET B</a>
                     
                 
               </div>
@@ -2380,42 +2397,42 @@ $(function() {
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/edu/dream/dream2-1/">LEVEL 1</a>
+                      <a href="http://localhost:4000/docs/en/edu/dream/dream2-1/">LEVEL 1</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/edu/dream/dream2-2/">LEVEL 2</a>
+                      <a href="http://localhost:4000/docs/en/edu/dream/dream2-2/">LEVEL 2</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/edu/dream/dream2-3/">LEVEL 3</a>
+                      <a href="http://localhost:4000/docs/en/edu/dream/dream2-3/">LEVEL 3</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/edu/dream/dream2-4/">LEVEL 4</a>
+                      <a href="http://localhost:4000/docs/en/edu/dream/dream2-4/">LEVEL 4</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/edu/dream/dream2-5/">LEVEL 5</a>
+                      <a href="http://localhost:4000/docs/en/edu/dream/dream2-5/">LEVEL 5</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/edu/dream/dream2-schoolset/">School Set</a>
+                      <a href="http://localhost:4000/docs/en/edu/dream/dream2-schoolset/">School Set</a>
                     
                 
               </div>
@@ -2538,7 +2555,7 @@ $(function() {
               
                 
                   
-                    <a href="http://emanual.robotis.com/docs/en/edu/bioloid/">BIOLOID</a>
+                    <a href="http://localhost:4000/docs/en/edu/bioloid/">BIOLOID</a>
               
 
               
@@ -2548,35 +2565,35 @@ $(function() {
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/edu/bioloid/beginner/">Beginner Level</a>
+                      <a href="http://localhost:4000/docs/en/edu/bioloid/beginner/">Beginner Level</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/edu/bioloid/comprehensive/">Comprehensive Level</a>
+                      <a href="http://localhost:4000/docs/en/edu/bioloid/comprehensive/">Comprehensive Level</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/edu/bioloid/stem/">ROBOTIS STEM</a>
+                      <a href="http://localhost:4000/docs/en/edu/bioloid/stem/">ROBOTIS STEM</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/edu/bioloid/premium/">ROBOTIS PREMIUM</a>
+                      <a href="http://localhost:4000/docs/en/edu/bioloid/premium/">ROBOTIS PREMIUM</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/edu/bioloid/gp/">ROBOTIS GP</a>
+                      <a href="http://localhost:4000/docs/en/edu/bioloid/gp/">ROBOTIS GP</a>
                     
                 
               </div>
@@ -2590,7 +2607,7 @@ $(function() {
               
                 
                   
-                    <a href="http://emanual.robotis.com/docs/en/edu/mini/">ROBOTIS MINI</a>
+                    <a href="http://localhost:4000/docs/en/edu/mini/">ROBOTIS MINI</a>
               
 
               
@@ -2606,7 +2623,8 @@ $(function() {
 
         <div class="dropdown">
           
-          <button class="dropbtn">
+            
+              <button class="dropbtn">
             SOFTWARE
           </button>
           
@@ -2629,14 +2647,14 @@ $(function() {
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_sdk/overview/">DYNAMIXEL SDK</a>
+                      <a href="http://localhost:4000/docs/en/software/dynamixel/dynamixel_sdk/overview/">DYNAMIXEL SDK</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_workbench/">DYNAMIXEL-Workbench</a>
+                      <a href="http://localhost:4000/docs/en/software/dynamixel/dynamixel_workbench/">DYNAMIXEL-Workbench</a>
                     
                 
               </div>
@@ -2667,7 +2685,7 @@ $(function() {
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/software/mobile_app/mini_app/">ROBOTIS MINI</a>
+                      <a href="http://localhost:4000/docs/en/software/mobile_app/mini_app/">ROBOTIS MINI</a>
                     
                 
               </div>
@@ -2690,28 +2708,28 @@ $(function() {
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/software/rplus1/task/getting_started/">R+ Task</a>
+                      <a href="http://localhost:4000/docs/en/software/rplus1/task/getting_started/">R+ Task</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/software/rplus1/manager/">R+ Manager</a>
+                      <a href="http://localhost:4000/docs/en/software/rplus1/manager/">R+ Manager</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/software/rplus1/motion/">R+ Motion</a>
+                      <a href="http://localhost:4000/docs/en/software/rplus1/motion/">R+ Motion</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/software/rplus1/dynamixel_wizard/">Dynamixel Wizard</a>
+                      <a href="http://localhost:4000/docs/en/software/rplus1/dynamixel_wizard/">Dynamixel Wizard</a>
                     
                 
               </div>
@@ -2734,35 +2752,35 @@ $(function() {
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/software/rplus2/task/">R+ Task 2.0</a>
+                      <a href="http://localhost:4000/docs/en/software/rplus2/task/">R+ Task 2.0</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/software/rplus2/manager/">R+ Manager 2.0</a>
+                      <a href="http://localhost:4000/docs/en/software/rplus2/manager/">R+ Manager 2.0</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/software/rplus2/motion/">R+ Motion 2.0</a>
+                      <a href="http://localhost:4000/docs/en/software/rplus2/motion/">R+ Motion 2.0</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/software/rplus2/design/">R+ Design 2.0</a>
+                      <a href="http://localhost:4000/docs/en/software/rplus2/design/">R+ Design 2.0</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/software/rplus2/scratch/">R+ Scratch</a>
+                      <a href="http://localhost:4000/docs/en/software/rplus2/scratch/">R+ Scratch</a>
                     
                 
               </div>
@@ -2793,14 +2811,14 @@ $(function() {
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/software/rplus_mobile/mmotion/">R+ m.Motion 2.0</a>
+                      <a href="http://localhost:4000/docs/en/software/rplus_mobile/mmotion/">R+ m.Motion 2.0</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/software/rplus_mobile/mdesign/">R+ m.Design</a>
+                      <a href="http://localhost:4000/docs/en/software/rplus_mobile/mdesign/">R+ m.Design</a>
                     
                 
               </div>
@@ -2814,7 +2832,7 @@ $(function() {
               
                 
                   
-                    <a href="http://emanual.robotis.com/docs/en/software/embedded_sdk/">EMBEDDED SDK</a>
+                    <a href="http://localhost:4000/docs/en/software/embedded_sdk/">EMBEDDED SDK</a>
               
 
               
@@ -2824,21 +2842,21 @@ $(function() {
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/software/embedded_sdk/embedded_c_cm510/">Embedded C(CM-510/700)</a>
+                      <a href="http://localhost:4000/docs/en/software/embedded_sdk/embedded_c_cm510/">Embedded C(CM-510/700)</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/software/embedded_sdk/embedded_c_cm530/">Embedded C(CM-530)</a>
+                      <a href="http://localhost:4000/docs/en/software/embedded_sdk/embedded_c_cm530/">Embedded C(CM-530)</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/software/embedded_sdk/zigbee_sdk/">ZIGBEE SDK</a>
+                      <a href="http://localhost:4000/docs/en/software/embedded_sdk/zigbee_sdk/">ZIGBEE SDK</a>
                     
                 
               </div>
@@ -2852,7 +2870,7 @@ $(function() {
               
                 
                   
-                    <a href="http://emanual.robotis.com/docs/en/software/opencm_ide/getting_started/">OpenCM IDE</a>
+                    <a href="http://localhost:4000/docs/en/software/opencm_ide/getting_started/">OpenCM IDE</a>
               
 
               
@@ -2865,7 +2883,7 @@ $(function() {
               
                 
                   
-                    <a href="http://emanual.robotis.com/docs/en/software/arduino_ide/">Arduino IDE</a>
+                    <a href="http://localhost:4000/docs/en/software/arduino_ide/">Arduino IDE</a>
               
 
               
@@ -2878,7 +2896,7 @@ $(function() {
               
                 
                   
-                    <a href="http://emanual.robotis.com/docs/en/software/robotis_framework_packages/">ROBOTIS Framework Packages</a>
+                    <a href="http://localhost:4000/docs/en/software/robotis_framework_packages/">ROBOTIS Framework Packages</a>
               
 
               
@@ -2894,7 +2912,8 @@ $(function() {
 
         <div class="dropdown">
           
-          <button class="dropbtn">
+            
+              <button class="dropbtn">
             PARTS
           </button>
           
@@ -2908,7 +2927,7 @@ $(function() {
               
                 
                   
-                    <a href="http://emanual.robotis.com/docs/en/parts/controller/controller_compatibility/">Controller</a>
+                    <a href="http://localhost:4000/docs/en/parts/controller/controller_compatibility/">Controller</a>
               
 
               
@@ -2918,56 +2937,56 @@ $(function() {
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/parts/controller/cm-100/"><font color=#cccccc>*CM-100A</font></a>
+                      <a href="http://localhost:4000/docs/en/parts/controller/cm-100/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>CM-100A</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/parts/controller/cm-150/">CM-150</a>
+                      <a href="http://localhost:4000/docs/en/parts/controller/cm-150/">CM-150</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/parts/controller/cm-200/">CM-200</a>
+                      <a href="http://localhost:4000/docs/en/parts/controller/cm-200/">CM-200</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/parts/controller/cm-5/"><font color=#cccccc>*CM-5</font></a>
+                      <a href="http://localhost:4000/docs/en/parts/controller/cm-5/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>CM-5</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/parts/controller/cm-510/"><font color=#cccccc>*CM-510</font></a>
+                      <a href="http://localhost:4000/docs/en/parts/controller/cm-510/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>CM-510</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/parts/controller/cm-530/">CM-530</a>
+                      <a href="http://localhost:4000/docs/en/parts/controller/cm-530/">CM-530</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/parts/controller/cm-700/">CM-700</a>
+                      <a href="http://localhost:4000/docs/en/parts/controller/cm-700/">CM-700</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/parts/controller/cm-900/"><font color=#cccccc>*CM-900</font></a>
+                      <a href="http://localhost:4000/docs/en/parts/controller/cm-900/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>CM-900</a>
                     
                 
                   
@@ -2978,21 +2997,21 @@ $(function() {
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/parts/controller/opencm904/">OpenCM 9.04</a>
+                      <a href="http://localhost:4000/docs/en/parts/controller/opencm904/">OpenCM 9.04</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/parts/controller/opencm485exp/">OpenCM 485 EXP</a>
+                      <a href="http://localhost:4000/docs/en/parts/controller/opencm485exp/">OpenCM 485 EXP</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/parts/controller/opencr10/">OpenCR</a>
+                      <a href="http://localhost:4000/docs/en/parts/controller/opencr10/">OpenCR</a>
                     
                 
               </div>
@@ -3015,49 +3034,49 @@ $(function() {
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/parts/communication/rc-100/">RC-100A/100B</a>
+                      <a href="http://localhost:4000/docs/en/parts/communication/rc-100/">RC-100A/100B</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/parts/communication/zig-110/"><font color=#cccccc>*ZIG-100/110A</font></a>
+                      <a href="http://localhost:4000/docs/en/parts/communication/zig-110/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>ZIG-100/110A</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/parts/communication/bt-110/"><font color=#cccccc>*BT-100/110A</font></a>
+                      <a href="http://localhost:4000/docs/en/parts/communication/bt-110/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>BT-100/110A</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/parts/communication/bt-210/">BT-210</a>
+                      <a href="http://localhost:4000/docs/en/parts/communication/bt-210/">BT-210</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/parts/communication/bt-410/">BT-410</a>
+                      <a href="http://localhost:4000/docs/en/parts/communication/bt-410/">BT-410</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/parts/communication/bt-410-dongle/">BT-410 Dongle</a>
+                      <a href="http://localhost:4000/docs/en/parts/communication/bt-410-dongle/">BT-410 Dongle</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/parts/communication/zig2serial/">ZIG2Serial</a>
+                      <a href="http://localhost:4000/docs/en/parts/communication/zig2serial/">ZIG2Serial</a>
                     
                 
               </div>
@@ -3080,28 +3099,28 @@ $(function() {
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/parts/motor/gm-10a/">Geared Motor(GM-10A)</a>
+                      <a href="http://localhost:4000/docs/en/parts/motor/gm-10a/">Geared Motor(GM-10A)</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/parts/motor/h_speed_geared_motor/"><font color=#cccccc>*High Speed Geared Motor</font></a>
+                      <a href="http://localhost:4000/docs/en/parts/motor/h_speed_geared_motor/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>High Speed Geared Motor</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/parts/motor/l_speed_geared_motor/">Low Speed Geared Motor</a>
+                      <a href="http://localhost:4000/docs/en/parts/motor/l_speed_geared_motor/">Low Speed Geared Motor</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/parts/motor/servo_motor/">Servo Motor(SM-10)</a>
+                      <a href="http://localhost:4000/docs/en/parts/motor/servo_motor/">Servo Motor(SM-10)</a>
                     
                 
               </div>
@@ -3124,21 +3143,21 @@ $(function() {
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/parts/interface/ln-101/">LN-101</a>
+                      <a href="http://localhost:4000/docs/en/parts/interface/ln-101/">LN-101</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/parts/interface/usb2dynamixel/">USB2DYNAMIXEL</a>
+                      <a href="http://localhost:4000/docs/en/parts/interface/usb2dynamixel/">USB2DYNAMIXEL</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/parts/interface/u2d2/">U2D2</a>
+                      <a href="http://localhost:4000/docs/en/parts/interface/u2d2/">U2D2</a>
                     
                 
               </div>
@@ -3161,70 +3180,70 @@ $(function() {
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/parts/sensor/irss-10/">IR Sensor(IRSS-10)</a>
+                      <a href="http://localhost:4000/docs/en/parts/sensor/irss-10/">IR Sensor(IRSS-10)</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/parts/sensor/dms-80/">Distance Sensor(DMS-80)</a>
+                      <a href="http://localhost:4000/docs/en/parts/sensor/dms-80/">Distance Sensor(DMS-80)</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/parts/sensor/ts-10/">Touch Sensor(TS-10)</a>
+                      <a href="http://localhost:4000/docs/en/parts/sensor/ts-10/">Touch Sensor(TS-10)</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/parts/sensor/ax-s1/"><font color=#cccccc>*Integrated Sensor(AX-S1)</font></a>
+                      <a href="http://localhost:4000/docs/en/parts/sensor/ax-s1/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>Integrated Sensor(AX-S1)</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/parts/sensor/gs-12/">Gyro Sensor(GS-12)</a>
+                      <a href="http://localhost:4000/docs/en/parts/sensor/gs-12/">Gyro Sensor(GS-12)</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/parts/sensor/ir-array/">IR Array Sensor</a>
+                      <a href="http://localhost:4000/docs/en/parts/sensor/ir-array/">IR Array Sensor</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/parts/sensor/cs-10/">Color Sensor(CS-10)</a>
+                      <a href="http://localhost:4000/docs/en/parts/sensor/cs-10/">Color Sensor(CS-10)</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/parts/sensor/mgss-10/">Magnetic Sensor(MGSS-10)</a>
+                      <a href="http://localhost:4000/docs/en/parts/sensor/mgss-10/">Magnetic Sensor(MGSS-10)</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/parts/sensor/tps-10/">Temperature Sensor(TPS-10)</a>
+                      <a href="http://localhost:4000/docs/en/parts/sensor/tps-10/">Temperature Sensor(TPS-10)</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/parts/sensor/pir-10/">Motion Sensor(PIR-10)</a>
+                      <a href="http://localhost:4000/docs/en/parts/sensor/pir-10/">Motion Sensor(PIR-10)</a>
                     
                 
                   
@@ -3255,7 +3274,7 @@ $(function() {
 
                   
                     
-                      <a href="http://emanual.robotis.com/docs/en/parts/display/lm-10/">LED Module(LM-10)</a>
+                      <a href="http://localhost:4000/docs/en/parts/display/lm-10/">LED Module(LM-10)</a>
                     
                 
               </div>
@@ -3272,12 +3291,10 @@ $(function() {
 
         <div class="dropdown">
           
-          <button class="dropbtn">
             
               
-                <a href="http://emanual.robotis.com/docs/en/faq/" style="color:#fff;text-decoration:none;">
-              FAQ</a>
-            
+                <button class="dropbtn" onclick="movetopage('http://localhost:4000/docs/en/faq/');">
+            FAQ
           </button>
           
 
@@ -3286,10 +3303,73 @@ $(function() {
         </div>
       
     </div>
-
-    <div>
-      <ul id="search_results" style="margin: 0; background-color: #ffebeb"></ul>
+    
+    <div class="community_link">
+      
+      <a href="http://en.robotis.com" style="margin-left: 10px;"><img class="logo" src="/assets/images/robotis_logo.png"> ROBOTIS</a>
+      
+      <a href="https://community.robotsource.org/" style="margin-left: 10px;"><img class="logo" src="/assets/images/robotsource_logo.png"> Robot Source</a>
+      <a href="https://github.com/ROBOTIS-GIT" style="margin-left: 10px;"><img class="logo" src="/assets/images/github_logo.png"> GitHub</a>
     </div>
+    <div class="community_link_medium">
+      
+      <a href="http://en.robotis.com"><img class="logo" src="/assets/images/robotis_logo.png"></a>
+      
+      <a href="https://community.robotsource.org/"><img class="logo" src="/assets/images/robotsource_logo.png"></a>
+      <a href="https://github.com/ROBOTIS-GIT"><img class="logo" src="/assets/images/github_logo.png"></a>
+    </div>
+    <div class="community_link_mobile">
+      
+      <button class="mobile_button" onclick="movetopage('http://en.robotis.com');" style="background-image: url(/assets/images/robotis_mobile_logo.png); width: 35%;">ROBOTIS</button>
+      
+      <button class="mobile_button" onclick="movetopage('https://community.robotsource.org/');" style="background-image: url(/assets/images/robotsource_mobile_logo.png); width: 40%;">Robot Source</button>
+      <button class="mobile_button" onclick="movetopage('https://github.com/ROBOTIS-GIT');" style="background-image: url(/assets/images/github_mobile_logo.png); width: 30%;">GitHub</button>
+    </div>
+    
+    <!-- local navigation
+    <div class="local_navigation">
+      <select id="local_navigation_depth1">
+        <option value = "default">Select Category</option>
+        
+          
+          <option id="DYNAMIXEL" value = "DYNAMIXEL">DYNAMIXEL</option>
+        
+          
+          <option id="PLATFORM" value = "PLATFORM">PLATFORM</option>
+        
+          
+          <option id="STEAM" value = "STEAM">STEAM</option>
+        
+          
+          <option id="SOFTWARE" value = "SOFTWARE">SOFTWARE</option>
+        
+          
+          <option id="PARTS" value = "PARTS">PARTS</option>
+        
+          
+          <option id="FAQ" value = "FAQ">FAQ</option>
+        
+      </select>
+    </div>
+     -->
+     
+    <!-- Google Custom Search -->
+    <form class="searchbox" method="get" id="site_search">
+      <script>
+        (function() {
+          var cx = '003548387656725317882:3pwl9jljqvi';
+          var gcse = document.createElement('script');
+          gcse.type = 'text/javascript';
+          gcse.async = true;
+          gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+          var s = document.getElementsByTagName('script')[0];
+          s.parentNode.insertBefore(gcse, s);
+        })();
+      </script>
+      <gcse:search></gcse:search>
+    </form>
+    <!-- end of Google Custom Search -->
+
   </div>
 </div>
 
@@ -3307,17 +3387,18 @@ $(function() {
       
 <nav class="nav__list">
 
-  <a href=http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/ style="font-size:$type-size-6; color: #2174b6; text-decoration: none; font-weight: bold;">XM430-W350</a>
-  <ul class="nav__items">
+  <ul class="nav__items"><li><label><a href=http://localhost:4000/docs/en/dxl/x/xm430-w350/ style="font-size:18px; color: #7a9c1b; text-decoration: none; font-weight: 600; line-height: 40px;">XM430-W350</a></label></li>
   
     
 
     
 
       
+      
       <li class="has-children">
-        <input type="radio" name="toplevel" id="toplevel_1">
-        <label for="toplevel_1"><button class="tocLevel1" onclick="movetopage('http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#specifications');">1. Specifications</button> [+]</label>
+        <input type="checkbox" name="toplevel" id="#specifications">
+        <label for="#specifications"><button class="tocLevel1" id="#specifications" onclick="movetopage('http://localhost:4000/docs/en/dxl/x/xm430-w350/#specifications');">1. Specifications</button></label>
+      
       
 
       
@@ -3328,9 +3409,10 @@ $(function() {
           
 
           
+          
             
               
-              <li><a href="http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#performance-graph">1. Performance Graph</a></li>
+              <li><a id="#performance-graph" href="http://localhost:4000/docs/en/dxl/x/xm430-w350/#performance-graph">1. 1. Performance Graph</a></li>
             
           
 
@@ -3349,9 +3431,11 @@ $(function() {
     
 
       
+      
       <li class="has-children">
-        <input type="radio" name="toplevel" id="toplevel_2">
-        <label for="toplevel_2"><button class="tocLevel1" onclick="movetopage('http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#control-table');">2. Control Table</button> [+]</label>
+        <input type="checkbox" name="toplevel" id="#control-table">
+        <label for="#control-table"><button class="tocLevel1" id="#control-table" onclick="movetopage('http://localhost:4000/docs/en/dxl/x/xm430-w350/#control-table');">2. Control Table</button></label>
+      
       
 
       
@@ -3362,10 +3446,13 @@ $(function() {
           
 
           
+          
             
-            <li class="has-children">
-              <input type="radio" name="sublevel" id="Control Table_1">
-              <label for="Control Table_1"><button class="tocLevel2" onclick="movetopage('http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#control-table-data-address');">1. Control Table, Data, Address</button> [+]</label>
+              
+              <li class="has-grandchildren">
+                <input type="checkbox" name="sublevel" id="#control-table-data-address">
+                <label for="#control-table-data-address"><button class="tocLevel2" id="#control-table-data-address" onclick="movetopage('http://localhost:4000/docs/en/dxl/x/xm430-w350/#control-table-data-address');">2. 1. Control Table, Data, Address</button></label>
+            
           
 
           
@@ -3377,7 +3464,7 @@ $(function() {
 
               
                 <li>
-                  <a href="http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#area-eeprom-ram" style="font-style:italic;">Area(EEPROM, RAM)</a>
+                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w350/#area-eeprom-ram">- Area(EEPROM, RAM)</a>
                 </li>
               
               
@@ -3388,7 +3475,7 @@ $(function() {
 
               
                 <li>
-                  <a href="http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#size" style="font-style:italic;">Size</a>
+                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w350/#size">- Size</a>
                 </li>
               
               
@@ -3399,7 +3486,7 @@ $(function() {
 
               
                 <li>
-                  <a href="http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#access" style="font-style:italic;">Access</a>
+                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w350/#access">- Access</a>
                 </li>
               
               
@@ -3410,7 +3497,7 @@ $(function() {
 
               
                 <li>
-                  <a href="http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#initial-value" style="font-style:italic;">Initial Value</a>
+                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w350/#initial-value">- Initial Value</a>
                 </li>
               
               
@@ -3425,9 +3512,10 @@ $(function() {
           
 
           
+          
             
               
-              <li><a href="http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#control-table-of-eeprom-area">2. EEPROM Area</a></li>
+              <li><a id="#control-table-of-eeprom-area" href="http://localhost:4000/docs/en/dxl/x/xm430-w350/#control-table-of-eeprom-area">2. 2. EEPROM Area</a></li>
             
           
 
@@ -3438,9 +3526,10 @@ $(function() {
           
 
           
+          
             
               
-              <li><a href="http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#control-table-of-ram-area">3. RAM Area</a></li>
+              <li><a id="#control-table-of-ram-area" href="http://localhost:4000/docs/en/dxl/x/xm430-w350/#control-table-of-ram-area">2. 3. RAM Area</a></li>
             
           
 
@@ -3451,10 +3540,13 @@ $(function() {
           
 
           
+          
             
-            <li class="has-children">
-              <input type="radio" name="sublevel" id="Control Table_4">
-              <label for="Control Table_4"><button class="tocLevel2" onclick="movetopage('http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#control-table-description');">4. Control Table Description</button> [+]</label>
+              
+              <li class="has-grandchildren">
+                <input type="checkbox" name="sublevel" id="#control-table-description">
+                <label for="#control-table-description"><button class="tocLevel2" id="#control-table-description" onclick="movetopage('http://localhost:4000/docs/en/dxl/x/xm430-w350/#control-table-description');">2. 4. Control Table Description</button></label>
+            
           
 
           
@@ -3466,7 +3558,7 @@ $(function() {
 
               
                 <li>
-                  <a href="http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#model-number0" style="font-style:italic;">Model Number(0)</a>
+                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w350/#model-number0">- Model Number(0)</a>
                 </li>
               
               
@@ -3477,7 +3569,7 @@ $(function() {
 
               
                 <li>
-                  <a href="http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#firmware-version6" style="font-style:italic;">Firmware Version(6)</a>
+                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w350/#firmware-version6">- Firmware Version(6)</a>
                 </li>
               
               
@@ -3488,7 +3580,7 @@ $(function() {
 
               
                 <li>
-                  <a href="http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#id7" style="font-style:italic;">ID(7)</a>
+                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w350/#id7">- ID(7)</a>
                 </li>
               
               
@@ -3499,7 +3591,7 @@ $(function() {
 
               
                 <li>
-                  <a href="http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#baud-rate8" style="font-style:italic;">Baud Rate(8)</a>
+                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w350/#baud-rate8">- Baud Rate(8)</a>
                 </li>
               
               
@@ -3510,7 +3602,7 @@ $(function() {
 
               
                 <li>
-                  <a href="http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#return-delay-time9" style="font-style:italic;">Return Delay Time(9)</a>
+                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w350/#return-delay-time9">- Return Delay Time(9)</a>
                 </li>
               
               
@@ -3521,7 +3613,7 @@ $(function() {
 
               
                 <li>
-                  <a href="http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#drive-mode10" style="font-style:italic;">Drive Mode(10)</a>
+                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w350/#drive-mode10">- Drive Mode(10)</a>
                 </li>
               
               
@@ -3532,7 +3624,7 @@ $(function() {
 
               
                 <li>
-                  <a href="http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#operating-mode11" style="font-style:italic;">Operating Mode(11)</a>
+                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w350/#operating-mode11">- Operating Mode(11)</a>
                 </li>
               
               
@@ -3543,7 +3635,7 @@ $(function() {
 
               
                 <li>
-                  <a href="http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#secondaryshadow-id12" style="font-style:italic;">Secondary(Shadow) ID(12)</a>
+                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w350/#secondaryshadow-id12">- Secondary(Shadow) ID(12)</a>
                 </li>
               
               
@@ -3554,7 +3646,7 @@ $(function() {
 
               
                 <li>
-                  <a href="http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#protocol-version13" style="font-style:italic;">Protocol Version(13)</a>
+                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w350/#protocol-version13">- Protocol Version(13)</a>
                 </li>
               
               
@@ -3565,7 +3657,7 @@ $(function() {
 
               
                 <li>
-                  <a href="http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#homing-offset20" style="font-style:italic;">Homing Offset(20)</a>
+                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w350/#homing-offset20">- Homing Offset(20)</a>
                 </li>
               
               
@@ -3576,7 +3668,7 @@ $(function() {
 
               
                 <li>
-                  <a href="http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#moving-threshold24" style="font-style:italic;">Moving Threshold(24)</a>
+                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w350/#moving-threshold24">- Moving Threshold(24)</a>
                 </li>
               
               
@@ -3587,7 +3679,7 @@ $(function() {
 
               
                 <li>
-                  <a href="http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#temperature-limit31" style="font-style:italic;">Temperature Limit(31)</a>
+                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w350/#temperature-limit31">- Temperature Limit(31)</a>
                 </li>
               
               
@@ -3598,7 +3690,7 @@ $(function() {
 
               
                 <li>
-                  <a href="http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#minmax-voltage-limit32-34" style="font-style:italic;">Min/Max Voltage Limit(32,34)</a>
+                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w350/#minmax-voltage-limit32-34">- Min/Max Voltage Limit(32,34)</a>
                 </li>
               
               
@@ -3609,7 +3701,7 @@ $(function() {
 
               
                 <li>
-                  <a href="http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#pwm-limit36" style="font-style:italic;">PWM Lmit(36)</a>
+                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w350/#pwm-limit36">- PWM Lmit(36)</a>
                 </li>
               
               
@@ -3620,7 +3712,7 @@ $(function() {
 
               
                 <li>
-                  <a href="http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#current-limit38" style="font-style:italic;">Current Lmit(38)</a>
+                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w350/#current-limit38">- Current Lmit(38)</a>
                 </li>
               
               
@@ -3631,7 +3723,7 @@ $(function() {
 
               
                 <li>
-                  <a href="http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#acceleration-limit40" style="font-style:italic;">Acceleration Limit(40)</a>
+                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w350/#acceleration-limit40">- Acceleration Limit(40)</a>
                 </li>
               
               
@@ -3642,7 +3734,7 @@ $(function() {
 
               
                 <li>
-                  <a href="http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#velocity-limit44" style="font-style:italic;">Velocity Limit(44)</a>
+                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w350/#velocity-limit44">- Velocity Limit(44)</a>
                 </li>
               
               
@@ -3653,7 +3745,7 @@ $(function() {
 
               
                 <li>
-                  <a href="http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#minmax-position-limit48-52" style="font-style:italic;">Min/Max Position Limit(48, 52)</a>
+                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w350/#minmax-position-limit48-52">- Min/Max Position Limit(48, 52)</a>
                 </li>
               
               
@@ -3664,7 +3756,7 @@ $(function() {
 
               
                 <li>
-                  <a href="http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#shutdown63" style="font-style:italic;">Shutdown(63)</a>
+                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w350/#shutdown63">- Shutdown(63)</a>
                 </li>
               
               
@@ -3675,7 +3767,7 @@ $(function() {
 
               
                 <li>
-                  <a href="http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#torque-enable64" style="font-style:italic;">Torque Enable(64)</a>
+                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w350/#torque-enable64">- Torque Enable(64)</a>
                 </li>
               
               
@@ -3686,7 +3778,7 @@ $(function() {
 
               
                 <li>
-                  <a href="http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#led65" style="font-style:italic;">LED(65)</a>
+                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w350/#led65">- LED(65)</a>
                 </li>
               
               
@@ -3697,7 +3789,7 @@ $(function() {
 
               
                 <li>
-                  <a href="http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#status-return-level68" style="font-style:italic;">Status Return Level(68)</a>
+                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w350/#status-return-level68">- Status Return Level(68)</a>
                 </li>
               
               
@@ -3708,7 +3800,7 @@ $(function() {
 
               
                 <li>
-                  <a href="http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#registered-instruction69" style="font-style:italic;">Registered Instruction(69)</a>
+                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w350/#registered-instruction69">- Registered Instruction(69)</a>
                 </li>
               
               
@@ -3719,7 +3811,7 @@ $(function() {
 
               
                 <li>
-                  <a href="http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#hardware-error-status70" style="font-style:italic;">Hardware Error Status(70)</a>
+                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w350/#hardware-error-status70">- Hardware Error Status(70)</a>
                 </li>
               
               
@@ -3730,7 +3822,7 @@ $(function() {
 
               
                 <li>
-                  <a href="http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#velocity-pi-gain76-78" style="font-style:italic;">Velocity PI Gain(76, 78)</a>
+                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w350/#velocity-pi-gain76-78">- Velocity PI Gain(76, 78)</a>
                 </li>
               
               
@@ -3741,7 +3833,7 @@ $(function() {
 
               
                 <li>
-                  <a href="http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#position-pid-gain80-82-84" style="font-style:italic;">Position PID Gain(80, 82, 84)</a>
+                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w350/#position-pid-gain80-82-84">- Position PID Gain(80, 82, 84)</a>
                 </li>
               
               
@@ -3752,7 +3844,7 @@ $(function() {
 
               
                 <li>
-                  <a href="http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#feedforward-1st2nd-gains88-90" style="font-style:italic;">Feedforward 1st/2nd Gains(88, 90)</a>
+                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w350/#feedforward-1st2nd-gains88-90">- Feedforward 1st/2nd Gains(88, 90)</a>
                 </li>
               
               
@@ -3763,7 +3855,7 @@ $(function() {
 
               
                 <li>
-                  <a href="http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#bus-watchdog98" style="font-style:italic;">BUS Watchdog(98)</a>
+                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w350/#bus-watchdog98">- BUS Watchdog(98)</a>
                 </li>
               
               
@@ -3774,7 +3866,7 @@ $(function() {
 
               
                 <li>
-                  <a href="http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#goal-pwm100" style="font-style:italic;">Goal PWM(100)</a>
+                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w350/#goal-pwm100">- Goal PWM(100)</a>
                 </li>
               
               
@@ -3785,7 +3877,7 @@ $(function() {
 
               
                 <li>
-                  <a href="http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#goal-current102" style="font-style:italic;">Goal Current(102)</a>
+                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w350/#goal-current102">- Goal Current(102)</a>
                 </li>
               
               
@@ -3796,7 +3888,7 @@ $(function() {
 
               
                 <li>
-                  <a href="http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#goal-velocity104" style="font-style:italic;">Goal Velocity(104)</a>
+                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w350/#goal-velocity104">- Goal Velocity(104)</a>
                 </li>
               
               
@@ -3807,7 +3899,7 @@ $(function() {
 
               
                 <li>
-                  <a href="http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#profile-acceleration108" style="font-style:italic;">Profile Acceleration(108)</a>
+                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w350/#profile-acceleration108">- Profile Acceleration(108)</a>
                 </li>
               
               
@@ -3818,7 +3910,7 @@ $(function() {
 
               
                 <li>
-                  <a href="http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#profile-velocity112" style="font-style:italic;">Profile Velocity(112)</a>
+                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w350/#profile-velocity112">- Profile Velocity(112)</a>
                 </li>
               
               
@@ -3829,7 +3921,7 @@ $(function() {
 
               
                 <li>
-                  <a href="http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#goal-position116" style="font-style:italic;">Goal Position(116)</a>
+                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w350/#goal-position116">- Goal Position(116)</a>
                 </li>
               
               
@@ -3840,7 +3932,7 @@ $(function() {
 
               
                 <li>
-                  <a href="http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#realtime-tick120" style="font-style:italic;">Realtime Tick(120)</a>
+                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w350/#realtime-tick120">- Realtime Tick(120)</a>
                 </li>
               
               
@@ -3851,7 +3943,7 @@ $(function() {
 
               
                 <li>
-                  <a href="http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#moving122" style="font-style:italic;">Moving(122)</a>
+                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w350/#moving122">- Moving(122)</a>
                 </li>
               
               
@@ -3862,7 +3954,7 @@ $(function() {
 
               
                 <li>
-                  <a href="http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#moving-status123" style="font-style:italic;">Moving Status(123)</a>
+                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w350/#moving-status123">- Moving Status(123)</a>
                 </li>
               
               
@@ -3873,7 +3965,7 @@ $(function() {
 
               
                 <li>
-                  <a href="http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#present-pwm124" style="font-style:italic;">Present PWM(124)</a>
+                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w350/#present-pwm124">- Present PWM(124)</a>
                 </li>
               
               
@@ -3884,7 +3976,7 @@ $(function() {
 
               
                 <li>
-                  <a href="http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#present-current126" style="font-style:italic;">Present Current(126)</a>
+                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w350/#present-current126">- Present Current(126)</a>
                 </li>
               
               
@@ -3895,7 +3987,7 @@ $(function() {
 
               
                 <li>
-                  <a href="http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#present-velocity128" style="font-style:italic;">Present Velocity(128)</a>
+                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w350/#present-velocity128">- Present Velocity(128)</a>
                 </li>
               
               
@@ -3906,7 +3998,7 @@ $(function() {
 
               
                 <li>
-                  <a href="http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#present-position132" style="font-style:italic;">Present Position(132)</a>
+                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w350/#present-position132">- Present Position(132)</a>
                 </li>
               
               
@@ -3917,7 +4009,7 @@ $(function() {
 
               
                 <li>
-                  <a href="http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#velocity-trajectory136" style="font-style:italic;">Velocity Trajectory(136)</a>
+                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w350/#velocity-trajectory136">- Velocity Trajectory(136)</a>
                 </li>
               
               
@@ -3928,7 +4020,7 @@ $(function() {
 
               
                 <li>
-                  <a href="http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#position-trajectory140" style="font-style:italic;">Position Trajectory(140)</a>
+                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w350/#position-trajectory140">- Position Trajectory(140)</a>
                 </li>
               
               
@@ -3939,7 +4031,7 @@ $(function() {
 
               
                 <li>
-                  <a href="http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#present-input-voltage144" style="font-style:italic;">Present Input Voltage(144)</a>
+                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w350/#present-input-voltage144">- Present Input Voltage(144)</a>
                 </li>
               
               
@@ -3950,7 +4042,7 @@ $(function() {
 
               
                 <li>
-                  <a href="http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#present-temperature146" style="font-style:italic;">Present Temperature(146)</a>
+                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w350/#present-temperature146">- Present Temperature(146)</a>
                 </li>
               
               
@@ -3961,7 +4053,7 @@ $(function() {
 
               
                 <li>
-                  <a href="http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#indirect-address" style="font-style:italic;">Indirect Address</a>
+                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w350/#indirect-address">- Indirect Address</a>
                 </li>
               
               
@@ -3972,7 +4064,7 @@ $(function() {
 
               
                 <li>
-                  <a href="http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#indirect-data" style="font-style:italic;">Indirect Data</a>
+                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w350/#indirect-data">- Indirect Data</a>
                 </li>
               
               
@@ -3995,9 +4087,11 @@ $(function() {
     
 
       
+      
       <li class="has-children">
-        <input type="radio" name="toplevel" id="toplevel_3">
-        <label for="toplevel_3"><button class="tocLevel1" onclick="movetopage('http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#how-to-assemble');">3. How to Assemble</button> [+]</label>
+        <input type="checkbox" name="toplevel" id="#how-to-assemble">
+        <label for="#how-to-assemble"><button class="tocLevel1" id="#how-to-assemble" onclick="movetopage('http://localhost:4000/docs/en/dxl/x/xm430-w350/#how-to-assemble');">3. How to Assemble</button></label>
+      
       
 
       
@@ -4008,9 +4102,10 @@ $(function() {
           
 
           
+          
             
               
-              <li><a href="http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#wiring-through-back-case">1. Wiring through Back Case</a></li>
+              <li><a id="#wiring-through-back-case" href="http://localhost:4000/docs/en/dxl/x/xm430-w350/#wiring-through-back-case">3. 1. Wiring through Back Case</a></li>
             
           
 
@@ -4021,9 +4116,10 @@ $(function() {
           
 
           
+          
             
               
-              <li><a href="http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#option-frame-assembly">2. Option Frame Assembly</a></li>
+              <li><a id="#option-frame-assembly" href="http://localhost:4000/docs/en/dxl/x/xm430-w350/#option-frame-assembly">3. 2. Option Frame Assembly</a></li>
             
           
 
@@ -4042,9 +4138,11 @@ $(function() {
     
 
       
+      
       <li class="has-children">
-        <input type="radio" name="toplevel" id="toplevel_4">
-        <label for="toplevel_4"><button class="tocLevel1" onclick="movetopage('http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#maintenance');">4. Maintenance</button> [+]</label>
+        <input type="checkbox" name="toplevel" id="#maintenance">
+        <label for="#maintenance"><button class="tocLevel1" id="#maintenance" onclick="movetopage('http://localhost:4000/docs/en/dxl/x/xm430-w350/#maintenance');">4. Maintenance</button></label>
+      
       
 
       
@@ -4055,9 +4153,10 @@ $(function() {
           
 
           
+          
             
               
-              <li><a href="http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#horn-and-gear-replacement">1. Horn, Gear Replacement</a></li>
+              <li><a id="#horn-and-gear-replacement" href="http://localhost:4000/docs/en/dxl/x/xm430-w350/#horn-and-gear-replacement">4. 1. Horn, Gear Replacement</a></li>
             
           
 
@@ -4076,9 +4175,11 @@ $(function() {
     
 
       
+      
       <li class="has-children">
-        <input type="radio" name="toplevel" id="toplevel_5">
-        <label for="toplevel_5"><button class="tocLevel1" onclick="movetopage('http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#reference');">5. Reference</button> [+]</label>
+        <input type="checkbox" name="toplevel" id="#reference">
+        <label for="#reference"><button class="tocLevel1" id="#reference" onclick="movetopage('http://localhost:4000/docs/en/dxl/x/xm430-w350/#reference');">5. Reference</button></label>
+      
       
 
       
@@ -4089,9 +4190,10 @@ $(function() {
           
 
           
+          
             
               
-              <li><a href="http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#quick-start">1. Quick Start</a></li>
+              <li><a id="#quick-start" href="http://localhost:4000/docs/en/dxl/x/xm430-w350/#quick-start">5. 1. Quick Start</a></li>
             
           
 
@@ -4102,9 +4204,10 @@ $(function() {
           
 
           
+          
             
               
-              <li><a href="http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#connector-information">2. Connector Information</a></li>
+              <li><a id="#connector-information" href="http://localhost:4000/docs/en/dxl/x/xm430-w350/#connector-information">5. 2. Connector Information</a></li>
             
           
 
@@ -4115,9 +4218,10 @@ $(function() {
           
 
           
+          
             
               
-              <li><a href="http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#drawings">3. Drawings</a></li>
+              <li><a id="#drawings" href="http://localhost:4000/docs/en/dxl/x/xm430-w350/#drawings">5. 3. Drawings</a></li>
             
           
 
@@ -4132,14 +4236,13 @@ $(function() {
     
   
   </ul>
-  <a href="#" style="font-size:$type-size-6; color: #2174b6; text-decoration: none; font-weight: bold;">Back to Top &#9650;</a>
 </nav>
 
     
   
   </div>
   <div class="archive" id="archive">
-    <a href="/blob/master/docs/en/dxl/x/xm430-w350.md" itemprop="sameAs" style="font-size:16px; float:right; margin: 10px 20px; text-decoration: none;">
+    <a href="/blob/master/docs/en/dxl/x/xm430-w350.md" itemprop="sameAs" style="font-size:1.3em; float:right; margin: 10px 40px; text-decoration: none;">
       <i class="fa fa-fw fa-github" aria-hidden="true"></i> Edit on GitHub
     </a>
     <p><img src="/assets/images/dxl/x/x_series_product.png" alt="" /></p>
@@ -4621,7 +4724,7 @@ Do not connect or disconnect DYNAMIXEL when power is being supplied.</p>
       <td style="text-align: center">100</td>
       <td style="text-align: center">2</td>
       <td style="text-align: left"><a href="#goal-pwm">Goal PWM</a></td>
-      <td style="text-align: left">Target PWM Value</td>
+      <td style="text-align: left">Desired PWM Value</td>
       <td style="text-align: center">RW</td>
       <td style="text-align: center">-</td>
     </tr>
@@ -4629,7 +4732,7 @@ Do not connect or disconnect DYNAMIXEL when power is being supplied.</p>
       <td style="text-align: center">102</td>
       <td style="text-align: center">2</td>
       <td style="text-align: left"><a href="#goal-current">Goal Current</a></td>
-      <td style="text-align: left">Target Current Value</td>
+      <td style="text-align: left">Desired Current Value</td>
       <td style="text-align: center">RW</td>
       <td style="text-align: center">-</td>
     </tr>
@@ -4637,7 +4740,7 @@ Do not connect or disconnect DYNAMIXEL when power is being supplied.</p>
       <td style="text-align: center">104</td>
       <td style="text-align: center">4</td>
       <td style="text-align: left"><a href="#goal-velocity">Goal Velocity</a></td>
-      <td style="text-align: left">Target Velocity Value</td>
+      <td style="text-align: left">Desired Velocity Value</td>
       <td style="text-align: center">RW</td>
       <td style="text-align: center">-</td>
     </tr>
@@ -4661,7 +4764,7 @@ Do not connect or disconnect DYNAMIXEL when power is being supplied.</p>
       <td style="text-align: center">116</td>
       <td style="text-align: center">4</td>
       <td style="text-align: left"><a href="#goal-position">Goal Position</a></td>
-      <td style="text-align: left">Target Position Value</td>
+      <td style="text-align: left">Desired Position Value</td>
       <td style="text-align: center">RW</td>
       <td style="text-align: center">-</td>
     </tr>
@@ -4725,7 +4828,7 @@ Do not connect or disconnect DYNAMIXEL when power is being supplied.</p>
       <td style="text-align: center">136</td>
       <td style="text-align: center">4</td>
       <td style="text-align: left"><a href="#velocity-trajectory">Velocity Trajectory</a></td>
-      <td style="text-align: left">Target Velocity Trajectory Generated by Profile</td>
+      <td style="text-align: left">Desired Velocity Trajectory Generated by Profile</td>
       <td style="text-align: center">R</td>
       <td style="text-align: center">-</td>
     </tr>
@@ -4733,7 +4836,7 @@ Do not connect or disconnect DYNAMIXEL when power is being supplied.</p>
       <td style="text-align: center">140</td>
       <td style="text-align: center">4</td>
       <td style="text-align: left"><a href="#position-trajectory">Position Trajectory</a></td>
-      <td style="text-align: left">Target Position Trajectory Generated by Profile</td>
+      <td style="text-align: left">Desired Position Trajectory Generated by Profile</td>
       <td style="text-align: center">R</td>
       <td style="text-align: center">-</td>
     </tr>
@@ -5365,7 +5468,7 @@ When current input voltage acquired from Present Input Voltage(144) exceeds the 
 <p class="notice"><strong>NOTE</strong> : Current Limit(38) could be differ by each DYNAMIXEL so please check the Control Table.</p>
 
 <h3 id="acceleration-limit40"><a name="acceleration-limit"></a><strong><a href="#acceleration-limit40">Acceleration Limit(40)</a></strong></h3>
-<p>This value indicates maximum Profile Acceleration(108). Profile Acceleration(108) can’t be configured with any values exceeding Acceleration Limit(40). Profile Acceleration(108) is used in all operating mode except PWM Control Mode in order to generate a target trajectory. For more details, please refer to the Profile Velocity(112).</p>
+<p>This value indicates maximum Profile Acceleration(108). Profile Acceleration(108) can’t be configured with any values exceeding Acceleration Limit(40). Profile Acceleration(108) is used in all operating mode except PWM Control Mode in order to generate a desired trajectory. For more details, please refer to the Profile Velocity(112).</p>
 
 <table>
   <thead>
@@ -5403,7 +5506,7 @@ When current input voltage acquired from Present Input Voltage(144) exceeds the 
 </table>
 
 <h3 id="minmax-position-limit48-52"><a name="max-position-limit"></a><a name="min-position-limit"></a><strong><a href="#minmax-position-limit48-52">Min/Max Position Limit(48, 52)</a></strong></h3>
-<p>These values limit maximum and minimum target positions for Position Control Mode(Joint Mode) within the range of 1 rotation(0 ~ 4,095). Therefore, Goal Position(116) should be configured within the position limit range. These values are not used in Extended Position Control Mode and Current-based Position Control Mode.</p>
+<p>These values limit maximum and minimum desired positions for Position Control Mode(Joint Mode) within the range of 1 rotation(0 ~ 4,095). Therefore, Goal Position(116) should be configured within the position limit range. These values are not used in Extended Position Control Mode and Current-based Position Control Mode.</p>
 
 <table>
   <thead>
@@ -5698,9 +5801,9 @@ The followings are detectable situations.</p>
 <p>Below figure is a block diagram describing the velocity controller in Velocity Control Mode. When the instruction transmitted from the user is received by DYNAMIXEL, it takes following steps until driving the horn.</p>
 <ol>
   <li>An Instruction from the user is transmitted via DYNAMIXEL bus, then registered to Goal Velocity(104).</li>
-  <li>Goal Velocity(104) is converted to target velocity trajectory by Profile Acceleration(108).</li>
-  <li>The target velocity trajectory is stored at Velocity Trajectory(136).</li>
-  <li>PI controller calculates PWM output for the motor based on the target velocity trajectory.</li>
+  <li>Goal Velocity(104) is converted to desired velocity trajectory by Profile Acceleration(108).</li>
+  <li>The desired velocity trajectory is stored at Velocity Trajectory(136).</li>
+  <li>PI controller calculates PWM output for the motor based on the desired velocity trajectory.</li>
   <li>Goal PWM(100) sets a limit on the calculated PWM output and decides the final PWM value.</li>
   <li>The final PWM value is applied to the motor through an Inverter, and the horn of DYNAMIXEL is driven.</li>
   <li>Results are stored at Present Position(132), Present Velocity(128), Present PWM(124) and Present Current(126).</li>
@@ -5765,9 +5868,9 @@ The followings are detectable situations.</p>
 <p>Below figure is a block diagram describing the position controller in Position Control Mode and Extended Position Control Mode. When the instruction from the user is received by Dynamixel, it takes following steps until driving the horn.</p>
 <ol>
   <li>An Instruction from the user is transmitted via Dynamixel bus, then registered to Goal Position(116).</li>
-  <li>Goal Position(116) is converted to target position trajectory and target velocity trajectory by Profile Velocity(112) and Profile Acceleration(108).</li>
-  <li>The target position trajectory and target velocity trajectory is stored at Position Trajectory(140) and Velocity Trajectory(136) respectively.</li>
-  <li>Feedforward and PID controller calculate PWM output for the motor based on target trajectories.</li>
+  <li>Goal Position(116) is converted to desired position trajectory and desired velocity trajectory by Profile Velocity(112) and Profile Acceleration(108).</li>
+  <li>The desired position trajectory and desired velocity trajectory is stored at Position Trajectory(140) and Velocity Trajectory(136) respectively.</li>
+  <li>Feedforward and PID controller calculate PWM output for the motor based on desired trajectories.</li>
   <li>Goal PWM(100) sets a limit on the calculated PWM output and decides the final PWM value.</li>
   <li>The final PWM value is applied to the motor through an Inverter, and the horn of Dynamixel is driven.</li>
   <li>Results are stored at Present Position(132), Present Velocity(128), Present PWM(124) and Present Current(126).</li>
@@ -5781,9 +5884,9 @@ The followings are detectable situations.</p>
 
 <p>Below figure is a block diagram describing the current-based position controller in Current-based Position Control Mode. As Current-based Position Control Mode is quite similar to Position Control Mode, differences will be focused in the following steps. The differences are highlighted with a green marker in the block diagram as well.</p>
 <ol>
-  <li>Feedforward and PID controller calculates target current based on target trajectory.</li>
-  <li>Goal Current(102) decides the final target current by setting a limit on the calculated target current.</li>
-  <li>Current controller calculates PWM output for the motor based on the final target current.</li>
+  <li>Feedforward and PID controller calculates desired current based on desired trajectory.</li>
+  <li>Goal Current(102) decides the final desired current by setting a limit on the calculated desired current.</li>
+  <li>Current controller calculates PWM output for the motor based on the final desired current.</li>
   <li>Goal PWM(100) sets a limit on the calculated PWM output and decides the final PWM value.</li>
   <li>The final PWM value is applied to the motor through an Inverter, and the horn of DYNAMIXEL is driven.</li>
   <li>Results are stored at Present Position(132), Present Velocity(128), Present PWM(124) and Present Current(126).</li>
@@ -5868,7 +5971,7 @@ If the value of Bus Watchdog (98) is changed to ‘0’, Bus Watchdog Error will
 </table>
 
 <h3 id="goal-current102"><a name="goal-current"></a><strong><a href="#goal-current102">Goal Current(102)</a></strong></h3>
-<p>In case of Torque Control Mode, Goal Current(102) can be used to set a target current. This value sets a limit to current in Current-based Position Control mode. This value cannot exceed Current Limit(38).</p>
+<p>In case of Torque Control Mode, Goal Current(102) can be used to set a desired current. This value sets a limit to current in Current-based Position Control mode. This value cannot exceed Current Limit(38).</p>
 
 <table>
   <thead>
@@ -5888,7 +5991,7 @@ If the value of Bus Watchdog (98) is changed to ‘0’, Bus Watchdog Error will
 <p class="notice"><strong>NOTE</strong> : Applying high current to the motor for long period of time might damage the motor.</p>
 
 <h3 id="goal-velocity104"><a name="goal-velocity"></a><strong><a href="#goal-velocity104">Goal Velocity(104)</a></strong></h3>
-<p>In case of Velocity Control Mode, Goal Velocity(104) can be used to set a target velocity. This value cannot exceed Velocity Limit(44). For now, Goal Velocity(104) is used for target velocity, but this value is not used to limit the velocity.</p>
+<p>In case of Velocity Control Mode, Goal Velocity(104) can be used to set a desired velocity. This value cannot exceed Velocity Limit(44). For now, Goal Velocity(104) is used for desired velocity, but this value is not used to limit the velocity.</p>
 
 <table>
   <thead>
@@ -5954,25 +6057,25 @@ Velocity Control Mode only uses Profile Acceleration(108) instead of Profile Vel
 
 <p>The Profile is an acceleration/deceleration control method to reduce vibration, noise and load of the motor by controlling dramatically changing velocity and acceleration.<br />
 It is also called Velocity Profile as it controls acceleration and deceleration based on velocity.<br />
-DYNAMIXEL provides 4 different types of Profile.<br />
-The following explains 4 Profiles and how to select them.<br />
+DYNAMIXEL provides 3 different types of Profile.<br />
+The following explains 3 Profiles.<br />
 Profiles are usually selected by a combination of Profile Velocity(112) and Profile Acceleration(108).</p>
 
 <p><img src="/assets/images/dxl/x/profile_types.png" alt="" /></p>
 
-<p>When given Goal Position(116), Dynamixel’s profile creates target velocity trajectory based on current velocity(initial velocity of the Profile).<br />
-When Dynamixel receives updated target position from a new Goal Position(116) while it is moving toward the previous Goal Position(116), velocity smoothly varies for the new target velocity trajectory.<br />
-Maintaining velocity continuity while updating target velocity trajectory is called Velocity Override.<br />
+<p>When given Goal Position(116), Dynamixel’s profile creates desired velocity trajectory based on current velocity(initial velocity of the Profile).<br />
+When Dynamixel receives updated desired position from a new Goal Position(116) while it is moving toward the previous Goal Position(116), velocity smoothly varies for the new desired velocity trajectory.<br />
+Maintaining velocity continuity while updating desired velocity trajectory is called Velocity Override.<br />
 For a simple calculation, let’s assume that the initial velocity of the Profile is ‘0’.<br />
 The following explains how Profile processes Goal Position(116) instruction in Position Control mode, Extended Position Control Mode, Current-based Position Control Mode.</p>
 
 <ol>
   <li>An Instruction from the user is transmitted via Dynamixel bus, then registered to Goal Position(116).</li>
   <li>Acceleration time(t1) is calculated from Profile Velocity(112) and Profile Acceleration(108).</li>
-  <li>Types of Profile is decided based on Profile Velocity(112), Profile Acceleration(108) and total travel distance(ΔPos, the distance difference between target position and current position).</li>
+  <li>Types of Profile is decided based on Profile Velocity(112), Profile Acceleration(108) and total travel distance(ΔPos, the distance difference between desired position and current position).</li>
   <li>Selected Profile type is stored at Moving Status(123).(Refer to the Moving Status(123))</li>
-  <li>Dynamixel is driven by the calculated target trajectory from Profile.</li>
-  <li>Target velocity trajectory and target position trajectory from Profile are stored at Velocity Trajectory(136) and Position Trajectory(140) respectively.</li>
+  <li>Dynamixel is driven by the calculated desired trajectory from Profile.</li>
+  <li>desired velocity trajectory and desired position trajectory from Profile are stored at Velocity Trajectory(136) and Position Trajectory(140) respectively.</li>
 </ol>
 
 <table>
@@ -6002,13 +6105,13 @@ The following explains how Profile processes Goal Position(116) instruction in P
 
 <div class="notice">
   
-<p><strong>NOTE</strong> : Velocity Control Mode only uses Profile Acceleration(108). Step and Trapezoidal Profiles are supported. Velocity Override and Jerk control are supported as well. Acceleration time(t1) can be calculated as below equation.<br />
+<p><strong>NOTE</strong> : Velocity Control Mode only uses Profile Acceleration(108). Step and Trapezoidal Profiles are supported. Velocity Override are supported as well. Acceleration time(t1) can be calculated as below equation.<br />
 t<sub>1</sub> = 64 * {Goal Velocity(104) / Profile Acceleration(108)}</p>
 
 </div>
 
 <h3 id="goal-position116"><a name="goal-position"></a><strong><a href="#goal-position116">Goal Position(116)</a></strong></h3>
-<p>Target position can be set with Goal Position(116). From the front view of Dynamixels, CCW is an increasing direction whereas CW is a decreasing direction. The way to reaching Goal Position(116) is differ by 4 Profiles provided by Dynamixels. Please refer to the Profile Velocity(112) for more details.</p>
+<p>Desired position can be set with Goal Position(116). From the front view of Dynamixels, CCW is an increasing direction whereas CW is a decreasing direction. The way to reaching Goal Position(116) is differ by 4 Profiles provided by Dynamixels. Please refer to the Profile Velocity(112) for more details.</p>
 
 <p><img src="/assets/images/dxl/x/dxl_goal_position.jpg" alt="" /></p>
 
@@ -6133,7 +6236,7 @@ t<sub>1</sub> = 64 * {Goal Velocity(104) / Profile Acceleration(108)}</p>
       <td style="text-align: center">Bit 3</td>
       <td style="text-align: center">0x08</td>
       <td style="text-align: center">Following Error</td>
-      <td style="text-align: center">Dynamixel fails to reach target position trajectory</td>
+      <td style="text-align: center">Dynamixel fails to reach desired position trajectory</td>
     </tr>
     <tr>
       <td style="text-align: center">Bit 2</td>
@@ -6151,7 +6254,7 @@ t<sub>1</sub> = 64 * {Goal Velocity(104) / Profile Acceleration(108)}</p>
       <td style="text-align: center">Bit 0</td>
       <td style="text-align: center">0x01</td>
       <td style="text-align: center">In-Position</td>
-      <td style="text-align: center">Dynamixel is reached to target position</td>
+      <td style="text-align: center">Dynamixel is reached to desired position</td>
     </tr>
   </tbody>
 </table>
@@ -6181,14 +6284,14 @@ t<sub>1</sub> = 64 * {Goal Velocity(104) / Profile Acceleration(108)}</p>
 </div>
 
 <h3 id="velocity-trajectory136"><a name="velocity-trajectory"></a><strong><a href="#velocity-trajectory136">Velocity Trajectory(136)</a></strong></h3>
-<p>This is a target velocity trajectory created by Profile. Operating method can be changed based on control mode. For more details, please refer to the Profile Velocity(112).</p>
+<p>This is a desired velocity trajectory created by Profile. Operating method can be changed based on control mode. For more details, please refer to the Profile Velocity(112).</p>
 <ol>
   <li><strong>Velocity Control Mode</strong> : When Profile reaches to the endpoint, Velocity Trajectory(136) becomes equal to Goal Velocity(104).</li>
   <li><strong>Position Control Mode, Extended Position Control Mode, Current-based Position Control Mode</strong> : Velocity Trajectory is used to create Position Trajectory(140). When Profile reaches to an endpoint, Velocity Trajectory(136) is cleared to ‘0’.</li>
 </ol>
 
 <h3 id="position-trajectory140"><a name="position-trajectory"></a><strong><a href="#position-trajectory140">Position Trajectory(140)</a></strong></h3>
-<p>This is a target position trajectory created by Profile. This value is only used in Position Control Mode, Extended Position Control Mode and Current-based Position Control Mode. For more details, please refer to the <a href="#profile-velocity112">Profile Velocity(112)</a>.</p>
+<p>This is a desired position trajectory created by Profile. This value is only used in Position Control Mode, Extended Position Control Mode and Current-based Position Control Mode. For more details, please refer to the <a href="#profile-velocity112">Profile Velocity(112)</a>.</p>
 
 <h3 id="present-input-voltage144"><a name="present-input-voltage"></a><strong><a href="#present-input-voltage144">Present Input Voltage(144)</a></strong></h3>
 <p>This value indicates present voltage that is being supplied. For more details, please refer to the <a href="#max-voltage-limit">Max/Min Voltage Limit(32, 34)</a>.</p>
@@ -6345,7 +6448,9 @@ You can also use Dynamixel SDK or Dynamixel Workbench.</p>
 </div>
 
 
-    <div class="page__footer">
+    
+    <div class="page__footer archive_footer">
+    
       <footer>
         <!-- start custom footer snippets -->
 
@@ -6373,7 +6478,7 @@ $(window).resize(function() {
       </footer>
     </div>
 
-    <script src="http://emanual.robotis.com/assets/js/main.min.js"></script>
+    <script src="http://localhost:4000/assets/js/main.min.js"></script>
 
 
 

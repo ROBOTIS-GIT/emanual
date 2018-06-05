@@ -1,10 +1,10 @@
 
-다이나믹셀의 드라이브 모드를 설정합니다.(펌웨어 v38 부터 지원)
+장치의 드라이브 모드를 설정합니다.(펌웨어 v38 부터 지원)
 
 |Bit|명칭|상세설명|
 | :---: | :---: | :---: |
 |Bit 2 ~ 7|N/A|미사용, 항상 '0'|
-|Bit 1|Master/Slave Setting<br />(Dual Joint)|Master Mode(0): 마스터 다이나믹셀로 동작합니다.<br />Slave Mode(1): 슬레이브 다이나믹셀로 동작합니다.|
+|Bit 1|Master/Slave Setting<br />(Dual Joint)|Master Mode(0): 마스터 장치로 동작합니다.<br />Slave Mode(1): 슬레이브 장치로 동작합니다.|
 |Bit 0|Direction of Rotation|Normal Mode(0): CCW(Positive), CW(Negative)<br />Reverse Mode(1): CCW(Negative), CW(Positive)|
 
 **NOTE** : Direction of rotation의 Reverse mode(‘1’)를 설정하면, Dynamixel의 회전 방향이 변경됩니다. 따라서 Position, Velocity, Current, PWM의 방향이 모두 변경됩니다. 좌우 대칭적인 구조의 관절이나 바퀴 구동 시스템을 구성할 때 편리하게 사용할 수 있습니다.
