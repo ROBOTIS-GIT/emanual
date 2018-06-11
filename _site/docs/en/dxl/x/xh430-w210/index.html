@@ -4386,8 +4386,13 @@ $(function() {
 
 <p class="notice"><strong>NOTE</strong> : The max torque measurement method for the Stall Torque and Performance Graph is different. Stall torque is measured from the max torque that it can reach. This is generally how RC servos measure their torque. For the Performance graph with the N-T curves, it is measured with the load gradually increasing. The motor operation environment is closer to the performance graph, not stall torque method. This is probably why the performance graph is being broadly used in the industrial market. This is why the max torque of the performance grap can actually be less than the stall torque.</p>
 
-<p class="notice--warning"><strong>CAUTION</strong> : When connecting to power supply, it is recommended using ROBOTIS controller or SMPS2DYNAMIXEL.
-Do not connect or disconnect DYNAMIXEL when power is being supplied.</p>
+<div class="notice--warning">
+<p><strong>CAUTION : When supplying power</strong></p>
+<ul>
+  <li>It is recommended using ROBOTIS controller or SMPS2DYNAMIXEL.</li>
+  <li>Do not connect or disconnect DYNAMIXEL when power is being supplied.</li>
+</ul>
+</div>
 
 <h1 id="control-table"><a href="#control-table">Control Table</a></h1>
 <p>The Control Table is a structure of data implemented in the DYNAMIXEL. Users can read a specific Data to get status of the DYNAMIXEL with Read Instruction Packets, and modify Data as well to control DYNAMIXEL with WRITE Instruction Packets.</p>
@@ -4796,7 +4801,7 @@ Do not connect or disconnect DYNAMIXEL when power is being supplied.</p>
       <td style="text-align: center">124</td>
       <td style="text-align: center">2</td>
       <td style="text-align: left"><a href="#present-pwm">Present PWM</a></td>
-      <td style="text-align: left">Current PWM Value</td>
+      <td style="text-align: left">Present PWM Value</td>
       <td style="text-align: center">R</td>
       <td style="text-align: center">-</td>
     </tr>
@@ -4804,7 +4809,7 @@ Do not connect or disconnect DYNAMIXEL when power is being supplied.</p>
       <td style="text-align: center">126</td>
       <td style="text-align: center">2</td>
       <td style="text-align: left"><a href="#present-current">Present Current</a></td>
-      <td style="text-align: left">Current Current Value</td>
+      <td style="text-align: left">Present Current Value</td>
       <td style="text-align: center">R</td>
       <td style="text-align: center">-</td>
     </tr>
@@ -4812,7 +4817,7 @@ Do not connect or disconnect DYNAMIXEL when power is being supplied.</p>
       <td style="text-align: center">128</td>
       <td style="text-align: center">4</td>
       <td style="text-align: left"><a href="#present-velocity">Present Velocity</a></td>
-      <td style="text-align: left">Current Velocity Value</td>
+      <td style="text-align: left">Present Velocity Value</td>
       <td style="text-align: center">R</td>
       <td style="text-align: center">-</td>
     </tr>
@@ -4820,7 +4825,7 @@ Do not connect or disconnect DYNAMIXEL when power is being supplied.</p>
       <td style="text-align: center">132</td>
       <td style="text-align: center">4</td>
       <td style="text-align: left"><a href="#present-position">Present Position</a></td>
-      <td style="text-align: left">Current Position Value</td>
+      <td style="text-align: left">Present Position Value</td>
       <td style="text-align: center">R</td>
       <td style="text-align: center">-</td>
     </tr>
@@ -4844,7 +4849,7 @@ Do not connect or disconnect DYNAMIXEL when power is being supplied.</p>
       <td style="text-align: center">144</td>
       <td style="text-align: center">2</td>
       <td style="text-align: left"><a href="#present-input-voltage">Present Input Voltage</a></td>
-      <td style="text-align: left">Current Input Voltage</td>
+      <td style="text-align: left">Present Input Voltage</td>
       <td style="text-align: center">R</td>
       <td style="text-align: center">-</td>
     </tr>
@@ -4852,7 +4857,7 @@ Do not connect or disconnect DYNAMIXEL when power is being supplied.</p>
       <td style="text-align: center">146</td>
       <td style="text-align: center">1</td>
       <td style="text-align: left"><a href="#present-temperature">Present Temperature</a></td>
-      <td style="text-align: left">Current Internal Temperature</td>
+      <td style="text-align: left">Present Internal Temperature</td>
       <td style="text-align: center">R</td>
       <td style="text-align: center">-</td>
     </tr>
@@ -6266,7 +6271,7 @@ t<sub>1</sub> = 64 * {Goal Velocity(104) / Profile Acceleration(108)}</p>
 <p>This value indicates current Current. For more details, please refer to the <a href="#goal-current">Goal Current(102)</a>.</p>
 
 <h3 id="present-velocity128"><a name="present-velocity"></a><strong><a href="#present-velocity128">Present Velocity(128)</a></strong></h3>
-<p>This value indicates current Velocity. For more details, please refer to the Goal Velocity(104)](#goal-velocity).</p>
+<p>This value indicates current Velocity. For more details, please refer to the <a href="#goal-velocity104">Goal Velocity(104)</a>.</p>
 
 <h3 id="present-position132"><a name="present-position"></a><strong><a href="#present-position132">Present Position(132)</a></strong></h3>
 <p>This value indicates present Position. For more details, please refer to the <a href="#goal-position">Goal Position(116)</a>.</p>
