@@ -75,7 +75,7 @@ manipulator base module
 ### [manipulator_base_module_msgs](#manipulator_base_module_msgs)
 
 #### Overview
-[[manipulator_base_module]]'s Message & Service  
+[manipulator_base_module](#manipulator_base_module)'s Message & Service  
 
 #### ROS Message Type
 * JointPose.msg   
