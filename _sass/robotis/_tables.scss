@@ -29,6 +29,10 @@ thead {
   border-bottom: 1px solid $light-gray;
 }
 
+tbody {
+  background-color: #FFFFFF;
+}
+
 th {
   padding: 0.5em;
   font-weight: bold;
@@ -40,6 +44,11 @@ td {
   padding: 0.5em;
   border-bottom: 1px solid $light-gray;
   border-right: 1px solid $light-gray;
+  
+  img {
+    padding: 0;
+    border: 0;
+  }
 }
 
 .gsc-input, .gsib_a, .gsib_b, .gsc-search-button, .gstl_50 {
