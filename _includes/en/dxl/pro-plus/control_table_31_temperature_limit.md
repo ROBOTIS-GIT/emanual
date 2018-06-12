@@ -5,7 +5,7 @@ For more details, please refer to the [Shutdown(63)] section.
 
 |Unit|Value Range|Description|
 | :---: | :---: | :---: |
-|About 1&deg;|0 ~ 100|0 ~ 100&deg;|
+|About 1 [&deg;C]|0 ~ 100|0 ~ 100 [&deg;C]|
 
 **CAUTION** : Do not set the temperature lower/higher than the default value. When the temperature alarm shutdown occurs, wait for 20 minutes to cool the temperature before reuse. Keep using the product with high temperature can cause severe damage to the device.
 {: .notice--warning}

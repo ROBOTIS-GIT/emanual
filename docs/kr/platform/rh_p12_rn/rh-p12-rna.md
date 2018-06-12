@@ -1,14 +1,14 @@
 ---
 layout: archive
 lang: kr
-ref: rh_p12_rn(a)
+ref: rh_p12_rna
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/kr/platform/rh_p12_rn(a)/
+permalink: /docs/kr/platform/rh_p12_rna/
 sidebar:
   title: RH-P12-RN(A)
-  nav: "rh_p12_rn(a)"
+  nav: "rh_p12_rna"
 ---
 
 # [개요](#개요)
@@ -46,96 +46,96 @@ sidebar:
 
 {% include kr/dxl/warning.md %}
 
-{% include kr/dxl/control_table_protocol2.md %}
+{% include kr/dxl/pro-plus/control_table.md %}
 
 ## [EEPROM 영역](#eeprom-영역)
 
-| 주소 | 크기<br>(Byte) | 명칭                                        | 의미                 | 접근 | 기본값 |             범위               | 단위 |
-|:----:|:--------------:|:--------------------------------------------|:--------------------|:----:|:------:|:----------------------------:|:------:|
-|  0   |       2        | [Model Number](#model-number)               | 보델 번호            |  R   | 51,201  |              -               | - |
-|  2   |       4        | [Model Information](#model-information)     | 모델 정보            |  R   |   -    |              -               | - |
-|  6   |       1        | [Firmware Version](#firmware-version)       | 펌웨어 버전          |  R   |   -    |              -               | - |
-|  7   |       1        | [ID](#id)                                   | 통신 ID             |  RW  |   1    |           0 ~ 252            | - |
-|  8   |       1        | [Baud Rate](#baud-rate)                     | 통신 속도            |  RW  |   1    |            0 ~ 9              | - |
-|  9   |       1        | [Return Delay Time](#return-delay-time)     | 응답 지연 시간       |  RW  |  250   |           0 ~ 255            | 2 [μsec] |
-|  10  |       1        | [Drive Mode](#drive-mode)                   | 구동모드             |  RW  |   0    |            0 ~ 1             | - |
-|  11  |       1        | [Operating Mode](#operating-mode)           | 동작모드             |  RW  |   5    |            0, 5              | - |
-|  12  |       1        | [Sencondary ID](#secondary-id)              | 보조 ID              |  RW  |  255   |           0 ~ 255           | - |
-|  20  |       4        | [Homing Offset](#homing-offset)             | 0점 위치 조정 값     |  RW  |   0    | -2,147,483,648 ~<br> 2,147,483,647 | 1 [pulse] |
-|  24  |       4        | [Moving Threshold](#moving-threshold)       | 움직임 감지 기준 값  |  RW  |   50   | -2,147,483,648 ~<br> 2,147,483,647 | 0.01 [rev/min] |
-|  31  |       1        | [Temperature Limit](#temperature-limit)     | 내부 한계 온도       |  RW  |   80   |           0 ~ 100            | 1 [℃] |
-|  32  |       2        | [Max Voltage Limit](#max-voltage-limit)     | 최대 한계 전압       |  RW  |  350   |           0 ~ 350            | 0.1 [V] |
-|  34  |       2        | [Min Voltage Limit](#min-voltage-limit)     | 최소 한계 전압       |  RW  |  150   |           0 ~ 350            | 0.1 [V] |
-|  36  |       2        | [PWM Limit](#pwm-limit)                     | PWM 한계값           |  RW  | 2,009  |         0 ~ 2,009           | - |
-|  38  |       2        | [Current Limit](#current-limit)             | 최대 한계 전류       |  RW  |  1,984 |          0 ~ 1,984          | 1 [mA] |
-|  40  |       4        | [Acceleration Limit](#acceleration-limit)   | 가속도 최대 값       |  RW  |  3,447 |          0 ~ 1,378,788      | 1 [rev/min²] |
-|  44  |       4        | [Velocity Limit](#velocity-limit)           | 최대 속도 값         |  RW  |  2,970 |          0 ~ 2,970          | 0.01 [rev/min] |
-|  48  |       4        | [Max Position Limit](#max-position-limit)   | 최대 위치 제한 값    |  RW  |  1,150 |         0 ~<br> 1,150      | 1 [pulse] |
-|  52  |       4        | [Min Position Limit](#min-position-limit)   | 최소 위치 제한 값    |  RW  |   0    |          0 ~<br> 1,150     | 1 [pulse] |
-|  57  |       1        | [External Port Mode 2](#external-port-mode) | 외부 포트 모드 2     |  RW  |   3    |            0 ~ 3             | - |
-|  56  |       1        | [External Port Mode 1](#external-port-mode) | 외부 포트 모드 1     |  RW  |   3    |            0 ~ 3             | - |
-|  58  |       1        | [External Port Mode 3](#external-port-mode) | 외부 포트 모드 3     |  RW  |   3    |            0 ~ 3             | - |
-|  59  |       1        | [External Port Mode 4](#external-port-mode) | 외부 포트 모드 4     |  RW  |   3    |            0 ~ 3             | - |
-|  63  |       1        | [Shutdown](#shutdown)                       | 셧다운 에러 정보     |  RW  |   52   |           0 ~ 255            | - |
-| 168  |       2        | [Indirect Address 1](#indirect-address)     | 간접 주소값 1        |  RW  |  634   |          512 ~ 1,023          | - |
-| 170  |       2        | [Indirect Address 2](#indirect-address)     | 간접 주소값 2        |  RW  |  635   |          512 ~ 1,023          | - |
-| 172  |       2        | [Indirect Address 3](#indirect-address)     | 간접 주소값 3        |  RW  |  636   |          512 ~ 1,023          | - |
-| ...  |      ...       | ...                                         | ...                 | ...  |  ...   |             ...               | ... |
-| 422  |       2        | [Indirect Address 128](#indirect-address)   | 간접 주소값 128      |  RW  |  761   |          512 ~ 1,023          | - |
+| 주소 | 크기<br>(Byte) | 명칭                                        |  접근 | 기본값 |             범위               | 단위 |
+|:----:|:--------------:|:--------------------------------------------|:----:|:------:|:----------------------------:|:------:|
+|  0   |       2        | [Model Number](#model-number)               |   R   | 51,201  |              -               | - |
+|  2   |       4        | [Model Information](#model-information)     |   R   |   -    |              -               | - |
+|  6   |       1        | [Firmware Version](#firmware-version)       |   R   |   -    |              -               | - |
+|  7   |       1        | [ID](#id)                                   |   RW  |   1    |           0 ~ 252            | - |
+|  8   |       1        | [Baud Rate](#baud-rate)                     |   RW  |   1    |            0 ~ 9              | - |
+|  9   |       1        | [Return Delay Time](#return-delay-time)     |   RW  |  250   |           0 ~ 255            | 2 [μsec] |
+|  10  |       1        | [Drive Mode](#drive-mode)                   |   RW  |   0    |            0 ~ 1             | - |
+|  11  |       1        | [Operating Mode](#operating-mode)           |   RW  |   5    |            0, 5              | - |
+|  12  |       1        | [Sencondary ID](#secondary-id)              |   RW  |  255   |           0 ~ 255           | - |
+|  20  |       4        | [Homing Offset](#homing-offset)             |   RW  |   0    | -2,147,483,648 ~<br> 2,147,483,647 | 1 [pulse] |
+|  24  |       4        | [Moving Threshold](#moving-threshold)       |   RW  |   50   | -2,147,483,648 ~<br> 2,147,483,647 | 0.01 [rev/min] |
+|  31  |       1        | [Temperature Limit](#temperature-limit)     |   RW  |   80   |           0 ~ 100            | 1 [℃] |
+|  32  |       2        | [Max Voltage Limit](#max-voltage-limit)     |   RW  |  350   |           0 ~ 350            | 0.1 [V] |
+|  34  |       2        | [Min Voltage Limit](#min-voltage-limit)     |   RW  |  150   |           0 ~ 350            | 0.1 [V] |
+|  36  |       2        | [PWM Limit](#pwm-limit)                     |   RW  | 2,009  |         0 ~ 2,009           | - |
+|  38  |       2        | [Current Limit](#current-limit)             |   RW  |  1,984 |          0 ~ 1,984          | 1 [mA] |
+|  40  |       4        | [Acceleration Limit](#acceleration-limit)   |   RW  |  3,447 |          0 ~ 1,378,788      | 1 [rev/min²] |
+|  44  |       4        | [Velocity Limit](#velocity-limit)           |   RW  |  2,970 |          0 ~ 2,970          | 0.01 [rev/min] |
+|  48  |       4        | [Max Position Limit](#max-position-limit)   |   RW  |  1,150 |         0 ~ 1,150      | 1 [pulse] |
+|  52  |       4        | [Min Position Limit](#min-position-limit)   |   RW  |   0    |          0 ~ 1,150     | 1 [pulse] |
+|  57  |       1        | [External Port Mode 2](#external-port-mode) |   RW  |   3    |            0 ~ 3             | - |
+|  56  |       1        | [External Port Mode 1](#external-port-mode) |   RW  |   3    |            0 ~ 3             | - |
+|  58  |       1        | [External Port Mode 3](#external-port-mode) |   RW  |   3    |            0 ~ 3             | - |
+|  59  |       1        | [External Port Mode 4](#external-port-mode) |   RW  |   3    |            0 ~ 3             | - |
+|  63  |       1        | [Shutdown](#shutdown)                       |   RW  |   52   |           0 ~ 255            | - |
+| 168  |       2        | [Indirect Address 1](#indirect-address)     |   RW  |  634   |          512 ~ 1,023          | - |
+| 170  |       2        | [Indirect Address 2](#indirect-address)     |   RW  |  635   |          512 ~ 1,023          | - |
+| 172  |       2        | [Indirect Address 3](#indirect-address)     |   RW  |  636   |          512 ~ 1,023          | - |
+| ...  |      ...       | ...                                         |  ...  |  ...   |             ...               | ... |
+| 422  |       2        | [Indirect Address 128](#indirect-address)   |   RW  |  761   |          512 ~ 1,023          | - |
 
 ## [RAM 영역](#ram-영역)
 
-| 주소 | 크기<br />(Byte) | 명칭                                              | 의미                    | 접근 | 기본값 |                        범위                            |  단위 |
-|:----:|:----------------:|:--------------------------------------------------|:------------------------|:----:|:------:|:---------------------------------------------------:|:------:|
-| 512  |        1         | [Torque Enable](#torque-enable)                   | 토크 On/Off             |  RW  |   0    |                        0 ~ 1                        | - |
-| 513  |        1         | [LED Red](#led-red)                               | Red LED 밝기 값         |  RW  |   0    |                       0 ~ 255                       | - |
-| 514  |        1         | [LED Green](#led-green)                           | Green LED 밝기 값       |  RW  |   0    |                       0 ~ 255                       | - |
-| 515  |        1         | [LED Blue](#led-blue)                             | Blue LED 밝기 값        |  RW  |   0    |                       0 ~ 255                       | - |
-| 516  |        1         | [Status Return Level](#status-return-level)       | 응답 레벨               |  RW  |   2    |                        0 ~ 2                        | - |
-| 517  |        1         | [Registered Instruction](#registered-instruction) | Instruction의 등록 여부 |  R   |   0    |                          -                          | - |
-| 518  |        1         | [Hardware Error Status](#hardware-error-status)   | 하드웨어 에러 상태       |  R   |   0    |                          -                          | - |
-| 524  |        2         | [Velocity I Gain](#velocity-i-gain)               | 속도 I 게인             |  RW  |   -    |                      0 ~ 32,767                      | - |
-| 526  |        2         | [Velocity P Gain](#velocity-p-gain)               | 속도 P 게인             |  RW  |   -    |                      0 ~ 32,767                      | - |
-| 528  |        2         | [Position D Gain](#position-p-gain)               | 위치 P 게인             |  RW  |   -    |                      0 ~ 32,767                      | - |
-| 532  |        2         | [Position P Gain](#position-p-gain)               | 위치 P 게인             |  RW  |   -    |                      0 ~ 32,767                      | - |
-| 530  |        2         | [Position I Gain](#position-p-gain)               | 위치 P 게인             |  RW  |   -    |                      0 ~ 32,767                      | - |
-| 536  |        2         | [Feedforward 2nd Gain](#feedforward-2nd-gain)     | 피드포워드 2차 게인     |  RW  |   -    |                      0 ~ 32,767                      | - |
-| 538  |        2         | [Feedforward 1st Gain](#feedforward-1st-gain)     | 피드포워드 1차 게인     |  RW  |   -    |                      0 ~ 32,767                      | - |
-| 546  |        1         | [Bus Watchdog](#bus-watchdog)                     | 통신 워치독 시간        |  RW  |   -    |                       0 ~ 127                       | 20 [msec] |
-| 548  |        2         | [Goal PWM](#goal-pwm)                             | 목표 PWM 값             |  RW  |   -    |         -PWM Limit(36) ~<br> PWM Limit(36)          | - |
-| 550  |        2         | [Goal Current](#goal-current)                     | 목표 전류값             |  RW  |   0    |     -Current Limit(38) ~<br> Current Limit(38)      | 1 [mA] |
-| 552  |        4         | [Goal Velocity](#goal-velocity)                   | 목표 속도값             |  RW  |   0    |    -Velocity Limit(44) ~<br> Velocity Limit(44)     | 0.01 [rev/min] |
-| 556  |        4         | [Profile Acceleration](#profile-acceleration)     | 프로파일 가속도 값      |  RW  |   0    |           0 ~<br> Acceleration Limit(40)            | 1 [rev/min²] |
-| 560  |        4         | [Profile Velocity](#profile-velocity)             | 프로파일 속도 값        |  RW  |   0    |             0 ~<br> Velocity Limit(44)              | 0.01 [rev/min] |
-| 564  |        4         | [Goal Position](#goal-position)                   | 목표 위치 값            |  RW  |   -    | Min Position Limit(52) ~<br> Max Position Limit(48) | 1[pulse] |
-| 568  |        2         | [Realtime Tick](#realtime-tick)                   | 실시간 타임 값          |  R   |   -    |                      0 ~ 32,767                     | 1 [msec] |
-| 570  |        1         | [Moving](#moving)                                 | 움직임 유무             |  R   |   -    |                          -                          | - |
-| 571  |        1         | [Moving Status](#moving-status)                   | 움직임 상태 값          |  R   |   -    |                          -                          | - |
-| 572  |        2         | [Present PWM](#present-pwm)                       | 현재 PWM 값             |  R   |   -    |                          -                          | - |
-| 574  |        2         | [Present Current](#present-current)               | 현재 전류 값            |  R   |   -    |                          -                          | 1 [mA] |
-| 576  |        4         | [Present Velocity](#present-velocity)             | 현재 속도 값            |  R   |   -    |                          -                          | 0.01 [rev/min] |
-| 580  |        4         | [Present Position](#present-position)             | 현재 위치 값            |  R   |   -    |                          -                          | 1 [pulse] |
-| 584  |        4         | [Velocity Trajectory](#velocity-trajectory)       | 속도 궤적 값            |  R   |   -    |                          -                          | 0.01 [rev/min] |
-| 588  |        4         | [Position Trajectory](#position-trajectory)       | 위치 궤적 값            |  R   |   -    |                          -                          | 1 [pulse] |
-| 592  |        2         | [Present Input Voltage](#present-input-voltage)   | 입력 전압               |  R   |   -    |                          -                          | 0.1 [V] |
-| 594  |        1         | [Present Temperature](#present-temperature)       | 현재 온도               |  R   |   -    |                          -                          | 1 [℃] |
-| 600  |        2         | [External Port Data 1](#external-port-data)       | 외부 포트 데이터 1      | R/RW |   0    |                       0 ~ 4095                      | - |
-| 602  |        2         | [External Port Data 2](#external-port-data)       | 외부 포트 데이터 2      | R/RW |   0    |                       0 ~ 4095                       | - |
-| 604  |        2         | [External Port Data 3](#external-port-data)       | 외부 포트 데이터 3      | R/RW |   0    |                       0 ~ 4095                       | - |
-| 606  |        2         | [External Port Data 4](#external-port-data)       | 외부 포트 데이터 4      | R/RW |   0    |                       0 ~ 4095                       | - |
-| 634  |        1         | [Indirect Data 1](#indirect-data)                 | 간접 주소 데이터 1      |  RW  |   0    |                       0 ~ 255                       | - |
-| 635  |        1         | [Indirect Data 2](#indirect-data)                 | 간접 주소 데이터 2      |  RW  |   0    |                       0 ~ 255                       | - |
-| 636  |        1         | [Indirect Data 3](#indirect-data)                 | 간접 주소 데이터 3      |  RW  |   0    |                       0 ~ 255                       | - |
-| ...  |       ...        | ...                                               | ...                    | ...  |  ...   |                         ...                         | ... |
-| 761  |        1         | [Indirect Data 128](#indirect-data)               | 간접 주소 데이터 128    |  RW  |   0    |                       0 ~ 255                       | - |
+| 주소 | 크기<br />(Byte) | 명칭                                              |  접근 | 기본값 |                        범위                            |  단위 |
+|:----:|:----------------:|:--------------------------------------------------|:----:|:------:|:---------------------------------------------------:|:------:|
+| 512  |        1         | [Torque Enable](#torque-enable)                   |   RW  |   0    |                        0 ~ 1                        | - |
+| 513  |        1         | [LED Red](#led-red)                               |   RW  |   0    |                       0 ~ 255                       | - |
+| 514  |        1         | [LED Green](#led-green)                           |   RW  |   0    |                       0 ~ 255                       | - |
+| 515  |        1         | [LED Blue](#led-blue)                             |   RW  |   0    |                       0 ~ 255                       | - |
+| 516  |        1         | [Status Return Level](#status-return-level)       |   RW  |   2    |                        0 ~ 2                        | - |
+| 517  |        1         | [Registered Instruction](#registered-instruction) |   R   |   0    |                          -                          | - |
+| 518  |        1         | [Hardware Error Status](#hardware-error-status)   |   R   |   0    |                          -                          | - |
+| 524  |        2         | [Velocity I Gain](#velocity-i-gain)               |   RW  |   -    |                      0 ~ 32,767                      | - |
+| 526  |        2         | [Velocity P Gain](#velocity-p-gain)               |   RW  |   -    |                      0 ~ 32,767                      | - |
+| 528  |        2         | [Position D Gain](#position-p-gain)               |   RW  |   -    |                      0 ~ 32,767                      | - |
+| 532  |        2         | [Position P Gain](#position-p-gain)               |   RW  |   -    |                      0 ~ 32,767                      | - |
+| 530  |        2         | [Position I Gain](#position-p-gain)               |   RW  |   -    |                      0 ~ 32,767                      | - |
+| 536  |        2         | [Feedforward 2nd Gain](#feedforward-2nd-gain)     |   RW  |   -    |                      0 ~ 32,767                      | - |
+| 538  |        2         | [Feedforward 1st Gain](#feedforward-1st-gain)     |   RW  |   -    |                      0 ~ 32,767                      | - |
+| 546  |        1         | [Bus Watchdog](#bus-watchdog)                     |   RW  |   -    |                       0 ~ 127                       | 20 [msec] |
+| 548  |        2         | [Goal PWM](#goal-pwm)                             |   RW  |   -    |         -PWM Limit(36) ~<br> PWM Limit(36)          | - |
+| 550  |        2         | [Goal Current](#goal-current)                     |   RW  |   0    |     -Current Limit(38) ~<br> Current Limit(38)      | 1 [mA] |
+| 552  |        4         | [Goal Velocity](#goal-velocity)                   |   RW  |   0    |    -Velocity Limit(44) ~<br> Velocity Limit(44)     | 0.01 [rev/min] |
+| 556  |        4         | [Profile Acceleration](#profile-acceleration)     |   RW  |   0    |           0 ~<br> Acceleration Limit(40)            | 1 [rev/min²] |
+| 560  |        4         | [Profile Velocity](#profile-velocity)             |   RW  |   0    |             0 ~<br> Velocity Limit(44)              | 0.01 [rev/min] |
+| 564  |        4         | [Goal Position](#goal-position)                   |   RW  |   -    | Min Position Limit(52) ~<br> Max Position Limit(48) | 1[pulse] |
+| 568  |        2         | [Realtime Tick](#realtime-tick)                   |   R   |   -    |                      0 ~ 32,767                     | 1 [msec] |
+| 570  |        1         | [Moving](#moving)                                 |   R   |   -    |                          -                          | - |
+| 571  |        1         | [Moving Status](#moving-status)                   |   R   |   -    |                          -                          | - |
+| 572  |        2         | [Present PWM](#present-pwm)                       |   R   |   -    |                          -                          | - |
+| 574  |        2         | [Present Current](#present-current)               |   R   |   -    |                          -                          | 1 [mA] |
+| 576  |        4         | [Present Velocity](#present-velocity)             |   R   |   -    |                          -                          | 0.01 [rev/min] |
+| 580  |        4         | [Present Position](#present-position)             |   R   |   -    |                          -                          | 1 [pulse] |
+| 584  |        4         | [Velocity Trajectory](#velocity-trajectory)       |   R   |   -    |                          -                          | 0.01 [rev/min] |
+| 588  |        4         | [Position Trajectory](#position-trajectory)       |   R   |   -    |                          -                          | 1 [pulse] |
+| 592  |        2         | [Present Input Voltage](#present-input-voltage)   |   R   |   -    |                          -                          | 0.1 [V] |
+| 594  |        1         | [Present Temperature](#present-temperature)       |   R   |   -    |                          -                          | 1 [℃] |
+| 600  |        2         | [External Port Data 1](#external-port-data)       |  R/RW |   0    |                       0 ~ 4095                      | - |
+| 602  |        2         | [External Port Data 2](#external-port-data)       |  R/RW |   0    |                       0 ~ 4095                       | - |
+| 604  |        2         | [External Port Data 3](#external-port-data)       |  R/RW |   0    |                       0 ~ 4095                       | - |
+| 606  |        2         | [External Port Data 4](#external-port-data)       |  R/RW |   0    |                       0 ~ 4095                       | - |
+| 634  |        1         | [Indirect Data 1](#indirect-data)                 |   RW  |   0    |                       0 ~ 255                       | - |
+| 635  |        1         | [Indirect Data 2](#indirect-data)                 |   RW  |   0    |                       0 ~ 255                       | - |
+| 636  |        1         | [Indirect Data 3](#indirect-data)                 |   RW  |   0    |                       0 ~ 255                       | - |
+| ...  |       ...        | ...                                               |  ...  |  ...   |                         ...                         | ... |
+| 761  |        1         | [Indirect Data 128](#indirect-data)               |   RW  |   0    |                       0 ~ 255                       | - |
 
 
 ## [컨트롤 테이블 설명](#컨트롤-테이블-설명)
 
-`주의` EEPROM Area에 존재하는 모든 Data는 Torque Enable(562)의 값이 ‘0’일 때만 변경할 수 있습니다.
+**주의**: EEPROM Area에 존재하는 모든 Data는 Torque Enable(512)의 값이 ‘0’일 때만 변경할 수 있습니다.
 {: .notice--warning}
 
-**NOTE** : RH_P12_RN(A)는 RH_P12_RN의 개선된 firmware 입니다. 두 firmware의 Control table이 다르니, 사용 전에 Control table의 주소를 필히 확인해 주세요.
+**주의**: RH_P12_RN(A)는 RH_P12_RN의 개선된 firmware 입니다. 두 firmware의 Control table이 다르니, 사용 전에 Control table의 주소를 필히 확인해 주세요.
 
 ### <a name="model-number"></a>**[Model Number(0)](#model-number0)**
 RH-P12-RN(A)의 모델 번호입니다.
@@ -253,7 +253,7 @@ RH-P12-RN(A)의 펌웨어 버전입니다.
 ### <a name="torque-enable"></a>**[Torque Enable(512)](#torque-enable512)**
 {% include kr/dxl/pro-plus/control_table_512_torque_enable.md %}
 
-### <a name="led"></a>**[RGB LED(513)](#rgb-led513)**
+### <a name="led"></a>**[RGB LED](#rgb-led)**
 {% include kr/dxl/pro-plus/control_table_513_led.md %}
 
 ### <a name="status-return-level"></a>**[Status Return Level(516)](#status-return-level516)**
