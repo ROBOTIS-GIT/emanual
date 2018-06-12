@@ -83,7 +83,7 @@ DIRECTION_PORT = RX_DIRECTION; //Direction change to RXD
 EnableInterrupt(); // enable interrupt again
 ```
 
-**NOTE** : 주의할 부분은 LINE 8부터 LINE 12입니다. LINE 8이 필요한 이유는 그 시점에서 Interrupt 가 발생하여 Return Delay Time 보다 긴 시간 동안 Interrupt routine이 수행될 경우 Status Packet의 앞부분이 손상되기 때문입니다.
+**주의**: 주의할 부분은 LINE 8부터 LINE 12입니다. LINE 8이 필요한 이유는 그 시점에서 Interrupt 가 발생하여 Return Delay Time 보다 긴 시간 동안 Interrupt routine이 수행될 경우 Status Packet의 앞부분이 손상되기 때문입니다.
 {: .notice}
 
 ## [Byte to Byte Time](#byte-to-byte-time)
@@ -196,7 +196,7 @@ ID 가 01 번인 RX-64로부터 0x24 의 Error가 발생했다는 것을 의미�
 0x24는 2 진수로 00100100 이므로 `Bit 5` 와 `Bit 2` 가 `1`이 된 것입니다.  
 즉, Overload Error 와 Overheating Error 가 발생되었다는 것을 알 수 있습니다.
 
-**NOTE** : 위 테이블에 나와있는 에러 종류는 액츄에이터와 관련된 사항이며, 다이나믹셀의 종류에 따라 내용이 다를 수 있습니다.
+**주의**: 위 테이블에 나와있는 에러 종류는 액츄에이터와 관련된 사항이며, 다이나믹셀의 종류에 따라 내용이 다를 수 있습니다.
 {: .notice}
 
 ## [Parameter]
@@ -216,7 +216,7 @@ Instruction Packet은 7종류의 명령들이 있습니다.
 또한 다이나믹셀은 Instruction Packet을 받아 명령을 수행한 뒤 그 결과를 Status Packet으로 Main Controller 에 응답합니다.  
 여기에서는 Instruction Packet의 각 명령 별로 사용 예를 기술하였습니다.
 
-**NOTE** : 아래 예제는 다이나믹셀 액츄에이터 RX-64를 기반으로 작성된 예제입니다. AX-12A, DX 등 다른 다이나믹셀도 동일한 명령으로 구성되어 있으므로, 같은 Packet 형식으로 사용할 수 있습니다.
+**주의**: 아래 예제는 다이나믹셀 액츄에이터 RX-64를 기반으로 작성된 예제입니다. AX-12A, DX 등 다른 다이나믹셀도 동일한 명령으로 구성되어 있으므로, 같은 Packet 형식으로 사용할 수 있습니다.
 {: .notice}
 
 ## [Ping](#ping)
@@ -285,7 +285,7 @@ Control Table에 Data를 쓰는 명령입니다.
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |0xFF|0xFF|0xFE|0x04|0x03|0x03|0x01|0xF6|
 
-**NOTE** : Broadcast ID(0xFE)가 사용될 경우 Status Packet은 반환되지 않습니다.
+**주의**: Broadcast ID(0xFE)가 사용될 경우 Status Packet은 반환되지 않습니다.
 {: .notice}
 
 ## [Reg Write](#reg-write)
@@ -319,7 +319,7 @@ REG_WRITE로 등록된 WRITE 작업을 수행하라는 명령입니다.
 ACTION 명령은 여러 개의 다이나믹셀들을 동시에 움직여야 하는 경우 사용합니다.  
 여러 개의 구동장치를 통신에 의해 제어할 때, 맨 처음 명령을 전달 받는 구동장치와 맨 마지막에 명령을 전달 받는 구동장치는 구동 시점에 약간의 시간 차이가 있는데, ACTION 명령은 이 문제를 해결합니다.  
 
-**NOTE** : Action 명령어를 사용할 경우 Status Packet은 반환되지 않습니다.
+**주의**: Action 명령어를 사용할 경우 Status Packet은 반환되지 않습니다.
 {: .notice}
 
 |Length|Instruction|Parameter|
@@ -341,8 +341,8 @@ Control Table의 Data를 공장 출하 값 상태로 되돌려 놓습니다.
 
 
 {% capture reset_warning_01 %}
-`주의` RESET 명령을 사용하면 사용자가 EEPROM에 설정했던 값이 지워지므로 사용에 주의하시기 바랍니다.<br>
-`주의` 일부 모델은 Broadcast ID(0xFE)로 RESET 명령을 사용할 수 없습니다.<br>
+**주의**: RESET 명령을 사용하면 사용자가 EEPROM에 설정했던 값이 지워지므로 사용에 주의하시기 바랍니다.<br>
+**주의**: 일부 모델은 Broadcast ID(0xFE)로 RESET 명령을 사용할 수 없습니다.<br>
 대상 모델 : MX-12W(V41), MX-28(V40), MX-64(V40), MX-106(V40)
 
 {% endcapture %}
@@ -423,7 +423,7 @@ Control Table의 Data를 공장 출하 값 상태로 되돌려 놓습니다.
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |0xFF|0xFF|0xFE|0x0E|0x83|0x1E|0x04|0x00|0x10|0x00|0x50|0x01|0x01|0x20|0x02|0x60|0x03|0x67|
 
-**NOTE** : Broadcast ID(0xFE)가 사용될 경우 Status Packet은 반환되지 않습니다.
+**주의**: Broadcast ID(0xFE)가 사용될 경우 Status Packet은 반환되지 않습니다.
 {: .notice}
 
 ## [Bulk Read](#bulk-read)

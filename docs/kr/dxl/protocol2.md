@@ -131,7 +131,7 @@ Instruction Packet 의 처리 결과를 나타냄
 
 ### Packet Parameters
 
-**NOTE** : Status Packet is received from each Device.
+**주의**: Status Packet is received from each Device.
 {: .notice}
 
 |Status Packet|상세 설명|
