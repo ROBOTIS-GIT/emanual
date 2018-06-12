@@ -78,6 +78,8 @@ The OpenManipulator has the advantage of being compatible with TurtleBot3 Waffle
 
 ## [Hardware Setup](#hardware-setup)
 
+- [CAD files](https://cad.onshape.com/documents/1535c2d7f05d4986e5ab539c/w/72b49bd8c74a47b010391012/e/454b64d637f42073514486f4) (TurtleBot3 Waffle Pi + OpenManipulator)
+
   ![](/assets/images/platform/turtlebot3/manipulation/hardware_setup.png)
 
 - First, detach lidar sensor and shift it front of TurtleBot3 (Red circle represents position of bolts). 
