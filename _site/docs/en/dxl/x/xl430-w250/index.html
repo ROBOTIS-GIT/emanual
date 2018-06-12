@@ -606,7 +606,21 @@ $(function() {
                       
                       
                         <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/dxl/pro/h54-200-s500-ra/" class="">H54-200-S500-R(A)</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
                           <a href="http://localhost:4000/docs/en/dxl/pro/h54-100-s500-r/" class="">H54-100-S500-R</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/dxl/pro/h54-100-s500-ra/" class="">H54-100-S500-R(A)</a>
                         </li>
                       
                     
@@ -620,7 +634,21 @@ $(function() {
                       
                       
                         <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/dxl/pro/h42-20-s300-ra/" class="">H42-20-S300-R(A)</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
                           <a href="http://localhost:4000/docs/en/dxl/pro/m54-60-s250-r/" class="">M54-60-S250-R</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/dxl/pro/m54-60-s250-ra/" class="">M54-60-S250-R(A)</a>
                         </li>
                       
                     
@@ -634,7 +662,21 @@ $(function() {
                       
                       
                         <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/dxl/pro/m54-40-s250-ra/" class="">M54-40-S250-R(A)</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
                           <a href="http://localhost:4000/docs/en/dxl/pro/m42-10-s260-r/" class="">M42-10-S260-R</a>
+                        </li>
+                      
+                    
+                      
+                      
+                        <li class="mobile_depth_3">
+                          <a href="http://localhost:4000/docs/en/dxl/pro/m42-10-s260-ra/" class="">M42-10-S260-R(A)</a>
                         </li>
                       
                     
@@ -2031,7 +2073,21 @@ $(function() {
 
                   
                     
+                      <a href="http://localhost:4000/docs/en/dxl/pro/h54-200-s500-ra/">H54-200-S500-R(A)</a>
+                    
+                
+                  
+
+                  
+                    
                       <a href="http://localhost:4000/docs/en/dxl/pro/h54-100-s500-r/">H54-100-S500-R</a>
+                    
+                
+                  
+
+                  
+                    
+                      <a href="http://localhost:4000/docs/en/dxl/pro/h54-100-s500-ra/">H54-100-S500-R(A)</a>
                     
                 
                   
@@ -2045,7 +2101,21 @@ $(function() {
 
                   
                     
+                      <a href="http://localhost:4000/docs/en/dxl/pro/h42-20-s300-ra/">H42-20-S300-R(A)</a>
+                    
+                
+                  
+
+                  
+                    
                       <a href="http://localhost:4000/docs/en/dxl/pro/m54-60-s250-r/">M54-60-S250-R</a>
+                    
+                
+                  
+
+                  
+                    
+                      <a href="http://localhost:4000/docs/en/dxl/pro/m54-60-s250-ra/">M54-60-S250-R(A)</a>
                     
                 
                   
@@ -2059,7 +2129,21 @@ $(function() {
 
                   
                     
+                      <a href="http://localhost:4000/docs/en/dxl/pro/m54-40-s250-ra/">M54-40-S250-R(A)</a>
+                    
+                
+                  
+
+                  
+                    
                       <a href="http://localhost:4000/docs/en/dxl/pro/m42-10-s260-r/">M42-10-S260-R</a>
+                    
+                
+                  
+
+                  
+                    
+                      <a href="http://localhost:4000/docs/en/dxl/pro/m42-10-s260-ra/">M42-10-S260-R(A)</a>
                     
                 
                   
@@ -3861,8 +3945,13 @@ $(function() {
 
 <p class="notice"><strong>NOTE</strong> : The max torque measurement method for the Stall Torque and Performance Graph is different. Stall torque is measured from the max torque that it can reach. This is generally how RC servos measure their torque. For the Performance graph with the N-T curves, it is measured with the load gradually increasing. The motor operation environment is closer to the performance graph, not stall torque method. This is probably why the performance graph is being broadly used in the industrial market. This is why the max torque of the performance grap can actually be less than the stall torque.</p>
 
-<p class="notice--warning"><strong>CAUTION</strong> : When connecting to power supply, it is recommended using ROBOTIS controller or SMPS2DYNAMIXEL.
-Do not connect or disconnect DYNAMIXEL when power is being supplied.</p>
+<div class="notice--warning">
+<p><strong>CAUTION : When supplying power</strong></p>
+<ul>
+  <li>It is recommended using ROBOTIS controller or SMPS2DYNAMIXEL.</li>
+  <li>Do not connect or disconnect DYNAMIXEL when power is being supplied.</li>
+</ul>
+</div>
 
 <h1 id="control-table"><a href="#control-table">Control Table</a></h1>
 <p>The Control Table is a structure of data implemented in the DYNAMIXEL. Users can read a specific Data to get status of the DYNAMIXEL with Read Instruction Packets, and modify Data as well to control DYNAMIXEL with WRITE Instruction Packets.</p>
@@ -5681,7 +5770,7 @@ For example, the value is 512, it means the load is detected in the direction of
 <p class="notice"><strong>NOTE</strong> : Present load is an inferred value based on the internal output value; not a measured value using torque sensor, etc. Therefore, it may be inaccurate for measuring weight or torque. It is recommended to use it for predicting the direction and size of the force being applied to the joint.</p>
 
 <h3 id="present-velocity128"><a name="present-velocity"></a><strong><a href="#present-velocity128">Present Velocity(128)</a></strong></h3>
-<p>This value indicates present Velocity. For more details, please refer to the Goal Velocity(104)](#goal-velocity).</p>
+<p>This value indicates present Velocity. For more details, please refer to the <a href="#goal-velocity104">Goal Velocity(104)</a>.</p>
 
 <h3 id="present-position132"><a name="present-position"></a><strong><a href="#present-position132">Present Position(132)</a></strong></h3>
 <p>This value indicates present Position. For more details, please refer to the <a href="#goal-position">Goal Position(116)</a>.</p>
