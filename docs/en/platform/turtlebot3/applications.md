@@ -165,7 +165,7 @@ $ rqt_image_view image:=/turtlebot3_panorama/panorama
 
 ``` bash
 $ sudo apt-get install python-pip
-$ sudo pip install numpy
+$ sudo pip install -U numpy
 $ sudo pip install --upgrade pip
 ```
 
@@ -197,15 +197,20 @@ $ roslaunch turtlebot3_bringup turtlebot3_robot.launch
 {: .notice--success}
 
 ```bash
-$ export TURTLEBOT3_MODEL=burger
+$ export TURTLEBOT3_MODEL=${TB3_MODEL}
 ```
-
 
 **[Remote PC]** Run RViz.
 
 ```bash
 $ roslaunch turtlebot3_bringup turtlebot3_remote.launch
 $ rosrun rviz rviz -d `rospack find turtlebot3_automatic_parking`/rviz/turtlebot3_automatic_parking.rviz
+```
+
+**[Remote PC]** Run `turtlebot3_automatic_parking.py` file.
+
+``` bash
+$ rosrun turtlebot3_automatic_parking automatic_parking.py  
 ```
 
 - You can select LaserScan topic in RViz.
@@ -217,13 +222,6 @@ $ rosrun rviz rviz -d `rospack find turtlebot3_automatic_parking`/rviz/turtlebot
 - **/scan_spot**
 
 ![](/assets/images/platform/turtlebot3/application/scan_spot.png)
-
-
-**[Remote PC]** Run `turtlebot3_automatic_parking.py` file.
-
-``` bash
-$ rosrun turtlebot3_automatic_parking automatic_parking.py  
-```
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/IRtdxoPo8Y8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
