@@ -60,13 +60,13 @@ $ roscore
 $ roslaunch turtlebot3_bringup turtlebot3_robot.launch
 ```
 
+{% capture bringup_tip_01 %}
 **TIP**: If you want to launch Lidar sensor and core separately, please use below commands.
-{: .notice--info}
+  - $ roslaunch turtlebot3_bringup turtlebot3_lidar.launch
+  - $ roslaunch turtlebot3_bringup turtlebot3_core.launch
+{% endcapture %}
 
-``` bash
-$ roslaunch turtlebot3_bringup turtlebot3_lidar.launch
-$ roslaunch turtlebot3_bringup turtlebot3_core.launch
-```
+<div class="notice--info">{{ bringup_tip_01 | markdownify }}</div>
 
 **NOTE**: If `lost sync with device` error message is displayed on the terminal window, the sensor device of TurtleBot3 might not be securely connected.
 {: .notice--info}
@@ -90,15 +90,15 @@ In the next chapter, you will be able to test TurtleBot3 with various teleoperat
 ``` bash
 $ roslaunch turtlebot3_bringup turtlebot3_robot.launch
 ```
-
+{% capture bringup_tip_02 %}
 **TIP**: If you want to launch Lidar sensor, Intel® RealSense™ R200 and core separately, please use below commands.
-{: .notice--info}
 
-``` bash
-$ roslaunch turtlebot3_bringup turtlebot3_lidar.launch
-$ roslaunch turtlebot3_bringup turtlebot3_realsense.launch
-$ roslaunch turtlebot3_bringup turtlebot3_core.launch
-```
+ - $ roslaunch turtlebot3_bringup turtlebot3_lidar.launch
+ - $ roslaunch turtlebot3_bringup turtlebot3_realsense.launch
+ - $ roslaunch turtlebot3_bringup turtlebot3_core.launch
+{% endcapture %}
+
+<div class="notice--info">{{ bringup_tip_02 | markdownify }}</div>
 
 **NOTE**: Before you use Intel® RealSense™, please check related appendix [Intel® RealSense™][intel_realsense] page.
 {: .notice--info}
@@ -126,14 +126,15 @@ In the next chapter, you will be able to test TurtleBot3 with various teleoperat
 $ roslaunch turtlebot3_bringup turtlebot3_robot.launch
 ```
 
+{% capture bringup_tip_03 %}
 **TIP**: If you want to launch Lidar sensor, Raspberry Pi Camera and core separately, please use below commands. 
-{: .notice--info}
 
-``` bash
-$ roslaunch turtlebot3_bringup turtlebot3_rpicamera.launch
-$ roslaunch turtlebot3_bringup turtlebot3_lidar.launch
-$ roslaunch turtlebot3_bringup turtlebot3_core.launch
-```
+ - $ roslaunch turtlebot3_bringup turtlebot3_rpicamera.launch
+ - $ roslaunch turtlebot3_bringup turtlebot3_realsense.launch
+ - $ roslaunch turtlebot3_bringup turtlebot3_core.launch
+{% endcapture %}
+
+<div class="notice--info">{{ bringup_tip_03 | markdownify }}</div>
 
 **NOTE**: Before you use Raspberry Pi Camera, please check related appendix [Raspberry Pi Camera][raspberry_pi_camera] page. If you are using the [raspbian image][raspbian] provided by ROBOTIS, the Raspberry Pi Camera package is already installed and you don't need to install it.
 {: .notice--info}
