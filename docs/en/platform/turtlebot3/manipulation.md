@@ -78,6 +78,8 @@ The OpenManipulator has the advantage of being compatible with TurtleBot3 Waffle
 
 ## [Hardware Setup](#hardware-setup)
 
+  ![](/assets/images/platform/turtlebot3/manipulation/hardware_setup.png)
+
 - First, detach lidar sensor and shift it front of TurtleBot3 (Red circle represents position of bolts). 
 - Second, attach OpenManipulator on the TurtleBot3 (Yellow circle represents position of bolts).
 
