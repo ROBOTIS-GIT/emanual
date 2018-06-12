@@ -65,6 +65,12 @@ sidebar:
 
 ## [Components](#components)
 
+![](/assets/images/platform/turtlebot3/hardware_setup/turtlebot3_burger_components.png)
+
+![](/assets/images/platform/turtlebot3/hardware_setup/turtlebot3_waffle_components.png)
+
+![](/assets/images/platform/turtlebot3/hardware_setup/turtlebot3_waffle_pi_components.png)
+
 ### [SBCs](#sbcs)
 
 - [Raspberry Pi 3 Model B](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/)
