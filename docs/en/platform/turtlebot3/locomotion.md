@@ -69,10 +69,11 @@ With this openended component, handful of TurtleBot3 friends with various charac
 - **Features**: Compatible with TurtleBot3 Waffle Pi and it has linear gripper for pick and place.
 - **Components**: Four Dynamixel X 430 Series (Four for joints, one for gripper), an OpenCR1.0 Board, 3D printed chassis.
 - **BOM**: Please refer to the [Parts of OpenManipulator](https://docs.google.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit#gid=490107710)
+- **DIY Manual**: Please refer to the [link](https://docs.google.com/document/d/1c5U0v2dQhYiulqiWI0VQMameG82WCc-4rl6J6zlQejA/edit?usp=sharing)
 - [Hardware](https://cad.onshape.com/documents/1535c2d7f05d4986e5ab539c/w/72b49bd8c74a47b010391012/e/454b64d637f42073514486f4) (TurtleBot3 Waffle Pi + OpenManipulator)
 - [Hardware](http://www.robotis.com/service/download.php?no=690) (OpenManipulator)
-- [Software](https://github.com/ROBOTIS-GIT/open_manipulator) (We are preparing for OpenCR Example)
-- [Openmanipulator Wiki](/docs/en/platform/openmanipulator/)
+- [Software](https://github.com/ROBOTIS-GIT/open_manipulator_with_tb3) (We are preparing for OpenCR Example)
+- [OpenManipulator Wiki](/docs/en/platform/openmanipulator/)
 - **Video**:
 
   <iframe width="560" height="315" src="https://www.youtube.com/embed/Qhvk5cnX2hM" frameborder="0" allowfullscreen></iframe>
