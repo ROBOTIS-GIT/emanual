@@ -54,6 +54,12 @@ If you are interested in partnership with us to realize open source robotics, pl
 
 ## [TurtleBot3 Awesome Projects](#turtlebot3-awesome-projects)
 
+**[Robotclub TB3 (Episode 4): Track and push color balls to goals with avoiding obstacles]**
+- by [ROS in Robotclub Malaysia](https://www.youtube.com/channel/UCLvvXbwPkostryBQt4MIbUw)
+- 2018-05-31
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/78IMph18GX0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 **[Robotclub TB3 (Episode 3): Track and push color balls to goals]**
 - by [ROS in Robotclub Malaysia](https://www.youtube.com/channel/UCLvvXbwPkostryBQt4MIbUw)
 - 2018-05-31
