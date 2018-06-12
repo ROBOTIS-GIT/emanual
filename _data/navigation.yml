@@ -11370,8 +11370,6 @@ turtlebot3:
     - title: "Hardware Setup"
       url: /platform/turtlebot3/hardware_setup/#hardware-setup
       children:
-      - title: "Main Components"
-        url: /platform/turtlebot3/hardware_setup/#main-components
       - title: "Part List"
         url: /platform/turtlebot3/hardware_setup/#part-list
       - title: "Assembly Manual"
@@ -11450,6 +11448,8 @@ turtlebot3:
       url: /platform/turtlebot3/slam/#save-map
     - title: "Map"
       url: /platform/turtlebot3/slam/#map
+    - title: "References"
+      url: /platform/turtlebot3/slam/#references
   - title: "Navigation"
     url: /platform/turtlebot3/navigation/#navigation
     children:
@@ -11461,6 +11461,8 @@ turtlebot3:
       url: /platform/turtlebot3/navigation/#send-navigation-goal
     - title: "Tuning Guide"
       url: /platform/turtlebot3/navigation/#tuning-guide     
+    - title: "References"
+      url: /platform/turtlebot3/navigation/#references
   - title: "Simulation"
     url: /platform/turtlebot3/simulation/#simulation
     children:
