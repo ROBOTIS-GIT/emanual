@@ -311,7 +311,7 @@ main:
       - title: "DYNAMIXEL SDK"
         titlekr: "다이나믹셀 SDK"
         url: /software/dynamixel/dynamixel_sdk/overview/
-      - title: "DYNAMIXEL-Workbench"
+      - title: "DYNAMIXEL Workbench"
         titlekr: "다이나믹셀 워크벤치"
         url: /software/dynamixel/dynamixel_workbench/
     - title: "Mobile Apps"
@@ -14258,7 +14258,7 @@ dynamixel_sdk:
   - title: "Frequently Asked Questions(FAQ)"
     url: /software/dynamixel/dynamixel_sdk/frequently_asked_questionsfaq/#frequently-asked-questionsfaq
 
-#Dynamixel-Workbench sidebar
+#Dynamixel Workbench sidebar
 dynamixel_workbench:
   - title: "Introduction"
     url: /software/dynamixel/dynamixel_workbench/#introduction
@@ -14992,7 +14992,7 @@ opencm904:
       url: /parts/controller/opencm904/#pwm
     - title: "EEPROM"
       url: /parts/controller/opencm904/#eeprom
-    - title: "DynamixelWorkbench"
+    - title: "Dynamixel Workbench"
       url: /parts/controller/opencm904/#dynamixelworkbench
       children:
       - title: "APIs"
