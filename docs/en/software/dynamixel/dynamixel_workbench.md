@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/software/dynamixel/dynamixel_workbench/
 sidebar:
-  title: DYNAMIXEL-Workbench
+  title: DYNAMIXEL Workbench
   nav: "dynamixel_workbench"
 ---
 

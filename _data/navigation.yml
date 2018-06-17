@@ -332,7 +332,7 @@ main:
       - title: "DYNAMIXEL SDK"
         titlekr: "다이나믹셀 SDK"
         url: /software/dynamixel/dynamixel_sdk/overview/
-      - title: "DYNAMIXEL-Workbench"
+      - title: "DYNAMIXEL Workbench"
         titlekr: "다이나믹셀 워크벤치"
         url: /software/dynamixel/dynamixel_workbench/
     - title: "Mobile Apps"
@@ -11609,8 +11609,6 @@ turtlebot3:
     - title: "Hardware Setup"
       url: /platform/turtlebot3/hardware_setup/#hardware-setup
       children:
-      - title: "Main Components"
-        url: /platform/turtlebot3/hardware_setup/#main-components
       - title: "Part List"
         url: /platform/turtlebot3/hardware_setup/#part-list
       - title: "Assembly Manual"
@@ -11689,6 +11687,8 @@ turtlebot3:
       url: /platform/turtlebot3/slam/#save-map
     - title: "Map"
       url: /platform/turtlebot3/slam/#map
+    - title: "References"
+      url: /platform/turtlebot3/slam/#references
   - title: "Navigation"
     url: /platform/turtlebot3/navigation/#navigation
     children:
@@ -11700,6 +11700,8 @@ turtlebot3:
       url: /platform/turtlebot3/navigation/#send-navigation-goal
     - title: "Tuning Guide"
       url: /platform/turtlebot3/navigation/#tuning-guide     
+    - title: "References"
+      url: /platform/turtlebot3/navigation/#references
   - title: "Simulation"
     url: /platform/turtlebot3/simulation/#simulation
     children:
@@ -14495,7 +14497,7 @@ dynamixel_sdk:
   - title: "Frequently Asked Questions(FAQ)"
     url: /software/dynamixel/dynamixel_sdk/frequently_asked_questionsfaq/#frequently-asked-questionsfaq
 
-#Dynamixel-Workbench sidebar
+#Dynamixel Workbench sidebar
 dynamixel_workbench:
   - title: "Introduction"
     url: /software/dynamixel/dynamixel_workbench/#introduction
@@ -15229,7 +15231,7 @@ opencm904:
       url: /parts/controller/opencm904/#pwm
     - title: "EEPROM"
       url: /parts/controller/opencm904/#eeprom
-    - title: "DynamixelWorkbench"
+    - title: "Dynamixel Workbench"
       url: /parts/controller/opencm904/#dynamixelworkbench
       children:
       - title: "APIs"

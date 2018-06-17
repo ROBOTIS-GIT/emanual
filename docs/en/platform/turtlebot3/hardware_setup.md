@@ -19,117 +19,62 @@ sidebar:
 
 ![](/assets/images/platform/turtlebot3/hardware_setup/turtlebot3_models.png)
 
-### [Main Components](#main-components)
-
-![](/assets/images/platform/turtlebot3/hardware_setup/turtlebot3_burger_components.png)
-
-![](/assets/images/platform/turtlebot3/hardware_setup/turtlebot3_waffle_components.png)
-
-![](/assets/images/platform/turtlebot3/hardware_setup/turtlebot3_waffle_pi_components.png)
-
 ### [Part List](#part-list)
 
 TurtleBot3 has three different models: `Burger`, `Waffle` and `Waffle Pi`. The following list shows their components. The big differences between three models are the Motor, the SBC (Single Board Computer) and the Sensors. The TurtleBot3 Waffle model is discontinued due to discontinuation of Intel® Joule™.
 
-#### [Chassis Parts](#chassis-parts)
-
-| Part Name             | Burger | Waffle | Waffle Pi |
-| :-------------------- | :----: | :----: | :-------: |
-| Waffle-Plate          | 8      | 24     | 24        |
-| Plate Support M3x35mm | 4      | 12     | 12        |
-| Plate Support M3x45mm | 10     | 10     | 10        |
-| PCB Support           | 12     | 12     | 12        |
-| Wheel                 | 2      | 2      | 2         |
-| Tire                  | 2      | 2      | 2         |
-| Ball Caster           | 1      | 2      | 2         |
-| Camera Bracket        | 0      | 0      | 1         |
-
-#### [Motor](#motor)
-
-| Part Name                | Burger | Waffle | Waffle Pi |
-| :----------------------- | :----: | :----: | :-------: |
-| DYNAMIXEL (XL430-W250-T) | 2      | 0      | 0         |
-| DYNAMIXEL (XM430-W210-T) | 0      | 2      | 2         |
-
-#### [Board](#board)
-
-| Part Name      | Burger | Waffle | Waffle Pi |
-| :------------- | :----: | :----: | :-------: |
-| OpenCR1.0      | 1      | 1      | 1         |
-| Raspberry Pi 3 | 1      | 0      | 1         |
-| Intel® Joule™  | 0      | 1      | 0         |
-| USB2LDS        | 1      | 1      | 1         |
-
-#### [Remote Controller](#remote-controller)
-
-| Part Name                     | Burger | Waffle | Waffle Pi |
-| :---------------------------- | :----: | :----: | :-------: |
-| BT-410 Set (Bluetooth 4, BLE) | 0      | 0      | 2         |
-| RC-100B (Remote Controller)   | 0      | 0      | 1         |
-
-#### [Sensor](#sensor)
-
-| Part Name                       | Burger | Waffle | Waffle Pi |
-| :------------------------------ | :----: | :----: | :-------: |
-| LDS (HLS-LFCD2)                 | 1      | 1      | 1         |
-| Intel® Realsense™ R200          | 0      | 1      | 0         |
-| Raspberry Pi Camera Module v2.1 | 0      | 0      | 1         |
-
-#### [Memory](#memory)
-
-| Part Name    | Burger | Waffle | Waffle Pi |
-| :----------- | :----: | :----: | :-------: |
-| MicroSD Card | 1      | 0      | 1         |
-
-#### [Cable](#cable)
-
-| Part Name                     | Burger | Waffle | Waffle Pi |
-| :---------------------------- | :----: | :----: | :-------: |
-| Raspberry Pi 3 Power Cable    | 1      | 0      | 1         |
-| Intel® Joule™ Power Cable     | 0      | 1      | 0         |
-| Li-Po Battery Extension Cable | 1      | 1      | 1         |
-| DYNAMIXEL to OpenCR Cable     | 2      | 2      | 2         |
-| USB Cable                     | 2      | 2      | 2         |
-| Camera Cable                  | 0      | 0      | 1         |
-
-#### [Power](#power)
-
-| Part Name                   | Burger | Waffle | Waffle Pi |
-| :-------------------------- | :----: | :----: | :-------: |
-| SMPS 12V5A                  | 1      | 1      | 1         |
-| A/C Cord                    | 1      | 1      | 1         |
-| LIPO Battery 11.1V 1,800mAh | 1      | 1      | 1         |
-| LIPO Battery Charger        | 1      | 1      | 1         |
-
-#### [Tools](#tools)
-
-| Part Name            | Burger | Waffle | Waffle Pi |
-| :------------------- | :----: | :----: | :-------: |
-| Screw driver         | 1      | 1      | 1         |
-| Rivet tool           | 1      | 1      | 1         |
-| USB3.0 HUB           | 0      | 1      | 0         |
-
-#### [Miscellaneous](#miscellaneous)
-
-| Part Name       | Burger | Waffle | Waffle Pi |
-| :-------------- | :----: | :----: | :-------: |
-| PH_M2x4mm_K     | 8      | 8      | 8         |
-| PH_T2x6mm_K     | 4      | 8      | 8         |
-| PH_M2x12mm_K    | 0      | 4      | 4         |
-| PH_M2.5x8mm_K   | 16     | 12     | 16        |
-| PH_M2.5x12mm_K  | 0      | 18     | 20        |
-| PH_T2.6x12mm_K  | 16     | 0      | 0         |
-| PH_M2.5x16mm_K  | 4      | 4      | 4         |
-| PH_M3x8mm_K     | 44     | 140    | 140       |
-| NUT_M2          | 0      | 4      | 4         |
-| NUT_M2.5        | 20     | 18     | 24        |
-| NUT_M3          | 16     | 96     | 96        |
-| Rivet_1         | 14     | 20     | 22        |
-| Rivet_2         | 2      | 2      | 2         |
-| Spacer          | 4      | 4      | 4         |
-| Silicone Spacer | 0      | 0      | 4         |
-| Bracket         | 5      | 8      | 6         |
-| Adapter Plate   | 1      | 1      | 1         |
+|                        | Part Name                       | Burger | Waffle | Waffle Pi |
+| --------------------   | --------------------            | ----   | ----   | -------   |
+| **Chassis Parts**      | Waffle Plate                    | 8      | 24     | 24        |
+| .                      | Plate Support M3x35mm           | 4      | 12     | 12        |
+| .                      | Plate Support M3x45mm           | 10     | 10     | 10        |
+| .                      | PCB Support                     | 12     | 12     | 12        |
+| .                      | Wheel                           | 2      | 2      | 2         |
+| .                      | Tire                            | 2      | 2      | 2         |
+| .                      | Ball Caster                     | 1      | 2      | 2         |
+| .                      | Camera Bracket                  | 0      | 0      | 1         |
+| **Motors**             | DYNAMIXEL (XL430-W250-T)        | 2      | 0      | 0         |
+| .                      | DYNAMIXEL (XM430-W210-T)        | 0      | 2      | 2         |
+| **Boards**             | OpenCR1.0                       | 1      | 1      | 1         |
+| .                      | Raspberry Pi 3                  | 1      | 0      | 1         |
+| .                      | Intel® Joule™                   | 0      | 1      | 0         |
+| .                      | USB2LDS                         | 1      | 1      | 1         |
+| **Remote Controllers** | BT-410 Set (Bluetooth 4, BLE)   | 0      | 0      | 1         |
+| .                      | RC-100B (Remote Controller)     | 0      | 0      | 1         |
+| **Sensors**            | LDS (HLS-LFCD2)                 | 1      | 1      | 1         |
+| .                      | Intel® Realsense™ R200          | 0      | 1      | 0         |
+| .                      | Raspberry Pi Camera Module v2.1 | 0      | 0      | 1         |
+| **Memorys**            | MicroSD Card                    | 1      | 0      | 1         |
+| **Cables**             | Raspberry Pi 3 Power Cable      | 1      | 0      | 1         |
+| .                      | Intel® Joule™ Power Cable       | 0      | 1      | 0         |
+| .                      | Li-Po Battery Extension Cable   | 1      | 1      | 1         |
+| .                      | DYNAMIXEL to OpenCR Cable       | 2      | 2      | 2         |
+| .                      | USB Cable                       | 2      | 2      | 2         |
+| .                      | Camera Cable                    | 0      | 0      | 1         |
+| **Powers**             | SMPS 12V5A                      | 1      | 1      | 1         |
+| .                      | A/C Cord                        | 1      | 1      | 1         |
+| .                      | LIPO Battery 11.1V 1,800mAh     | 1      | 1      | 1         |
+| .                      | LIPO Battery Charger            | 1      | 1      | 1         |
+| **Tools**              | Screw driver                    | 1      | 1      | 1         |
+| .                      | Rivet tool                      | 1      | 1      | 1         |
+| .                      | USB3.0 Hub                      | 0      | 1      | 0         |
+| **Miscellaneous**      | PH_M2x4mm_K                     | 8      | 8      | 8         |
+| .                      | PH_T2x6mm_K                     | 4      | 8      | 8         |
+| .                      | PH_M2x12mm_K                    | 0      | 4      | 4         |
+| .                      | PH_M2.5x8mm_K                   | 16     | 12     | 16        |
+| .                      | PH_M2.5x12mm_K                  | 0      | 18     | 20        |
+| .                      | PH_T2.6x12mm_K                  | 16     | 0      | 0         |
+| .                      | PH_M2.5x16mm_K                  | 4      | 4      | 4         |
+| .                      | PH_M3x8mm_K                     | 44     | 140    | 140       |
+| .                      | NUT_M2                          | 0      | 4      | 4         |
+| .                      | NUT_M2.5                        | 20     | 18     | 24        |
+| .                      | NUT_M3                          | 16     | 96     | 96        |
+| .                      | Rivet_1                         | 14     | 20     | 22        |
+| .                      | Rivet_2                         | 2      | 2      | 2         |
+| .                      | Spacer                          | 4      | 4      | 4         |
+| .                      | Silicone Spacer                 | 0      | 0      | 4         |
+| .                      | Bracket                         | 5      | 8      | 6         |
+| .                      | Adapter Plate                   | 1      | 1      | 1         |
 
 ### [Assembly Manual](#assembly-manual)
 

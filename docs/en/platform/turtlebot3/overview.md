@@ -35,7 +35,7 @@ The TurtleBot3’s core technology is [SLAM][slam], [Navigation][navigation] and
 
 ## [TurtleBot3 Collaboration Project](#turtlebot3-collaboration-project)
 
-TurtleBot3 is a collaboration project among [Open Robotics][open_robotics], [ROBOTIS][robotis], and more partners like [The Construct][the_construct], [Intel][intel], [Onshape][onshape], [OROCA][oroca], [AuTURBO][auturbo], [ROS in Robotclub Malaysia][ros_in_robotclub_malaysia], [Astana Digital][astana digital], [Polariant Experiment][polariant_experiment], [Tokyo University of Agriculture and Technology, GVlab][gvlab], [Networked Control Robotics Lab at National Chiao Tung University][nctu]. The Open Robotics is in charge of software and community activities, while ROBOTIS is in charge of manufacturing and global distribution.
+TurtleBot3 is a collaboration project among [Open Robotics][open_robotics], [ROBOTIS][robotis], and more partners like [The Construct][the_construct], [Intel][intel], [Onshape][onshape], [OROCA][oroca], [AuTURBO][auturbo], [ROS in Robotclub Malaysia][ros_in_robotclub_malaysia], [Astana Digital][astana digital], [Polariant Experiment][polariant_experiment], [Tokyo University of Agriculture and Technology, GVlab][gvlab], [Networked Control Robotics Lab at National Chiao Tung University][nctu], [SIM Group at TU Darmstadt][sim_group]. The Open Robotics is in charge of software and community activities, while ROBOTIS is in charge of manufacturing and global distribution.
 
 The most important part of this TurtleBot3 collaboration project is open source based software, hardware, and content. We are encouraging more partners and research collaborators to participate in this project to enrich the robotics field.
 
@@ -84,4 +84,5 @@ If you are interested in partnership with us to realize open source robotics, pl
 [polariant_experiment]: https://www.polariant.io/
 [gvlab]: http://web.tuat.ac.jp/~gvlab/
 [nctu]: https://sites.google.com/a/g2.nctu.edu.tw/ncrl/
+[sim_group]: https://www.sim.informatik.tu-darmstadt.de/en/index/
 [partners]: https://www.turtlebot.com/partners
