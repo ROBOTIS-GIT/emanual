@@ -8,5 +8,3 @@ Controls the RGB LED of the device.
 
 **NOTE** : When Shutdown occurs, LED cannot be controlled.
 {: .notice}
-
-{% include en/dxl/pro-plus/led_policy.md %}
