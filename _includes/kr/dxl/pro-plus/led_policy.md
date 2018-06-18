@@ -8,5 +8,6 @@
 | 초기화   | 4회 녹색 점멸 |
 | 알람     | 적색 점멸     |
 | 부트모드 | 보라색 점등   |
+
 {% endcapture %}
 <div class="notice--danger">{{ dxl_led_policy | markdownify }}</div>
