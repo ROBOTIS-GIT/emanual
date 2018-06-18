@@ -67,6 +67,7 @@ $ rviz -d `rospack find turtlebot3_slam`/rviz/turtlebot3_navigation.rviz
 Then move the robot back and forth with tools like the `turtlebot3_teleop_keyboard` node to collect the surrounding environment information and find out where the robot is currently located on the map. 
 
 ``` bash
+$ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 ```
 
@@ -165,3 +166,9 @@ _**sim_time**_
 
 [slam]: /docs/en/platform/turtlebot3/slam/
 [export_turtlebot3_model]: /docs/en/platform/turtlebot3/export_turtlebot3_model
+
+
+## [References](#references)
+
+- Navigation
+  - [ROS WIKI](http://wiki.ros.org/navigation), [Github](https://github.com/ros-planning/navigation)

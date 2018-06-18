@@ -69,16 +69,18 @@ $ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=gmapping
 ```
 
+{% capture slam_tip %}
 **TIP**: When you run the above command, the visualization tool RViz is also executed. If you want to run RViz separately, use one of the following commands.
-{: .notice--success}
 
-``` bash
-$ rviz -d `rospack find turtlebot3_slam`/rviz/turtlebot3_gmapping.rviz
-$ rviz -d `rospack find turtlebot3_slam`/rviz/turtlebot3_cartographer.rviz
-$ rviz -d `rospack find turtlebot3_slam`/rviz/turtlebot3_hector.rviz
-$ rviz -d `rospack find turtlebot3_slam`/rviz/turtlebot3_karto.rviz
-$ rviz -d `rospack find turtlebot3_slam`/rviz/turtlebot3_frontier_exploration.rviz
-```
+  - $ rviz -d \`rospack find turtlebot3_slam\`/rviz/turtlebot3_gmapping.rviz
+  - $ rviz -d \`rospack find turtlebot3_slam\`/rviz/turtlebot3_cartographer.rviz
+  - $ rviz -d \`rospack find turtlebot3_slam\`/rviz/turtlebot3_hector.rviz
+  - $ rviz -d \`rospack find turtlebot3_slam\`/rviz/turtlebot3_karto.rviz
+  - $ rviz -d \`rospack find turtlebot3_slam\`/rviz/turtlebot3_frontier_exploration.rviz
+
+{% endcapture %}
+
+<div class="notice--info">{{ slam_tip | markdownify }}</div>
 
 {% capture notice_03 %}
 **NOTE**: Support for various SLAM methods
@@ -130,6 +132,7 @@ $ roslaunch turtlebot3_slam turtlebot3_slam.launch slam_methods:=cartographer
 **[Remote PC]** Open a new terminal and run the teleoperation node. The following command allows the user to control the robot to perform SLAM operation manually. It is important to avoid vigorous movements such as changing the speed too quickly or rotating too fast. When building a map using the robot, the robot should scan every corner of the environment to be measured. It requires some experiences to build a clean map, so let’s practice SLAM multiple times to build up know how. The mapping process is shown in figure below.
 
 ``` bash
+$ export TURTLEBOT3_MODEL=%{TB3_MODEL}
 $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 ```
 
@@ -219,3 +222,20 @@ The figure below shows the result of creating a large map using TurtleBot3. It t
 [navigation]: /docs/en/platform/turtlebot3/navigation/#navigation
 [teleoperation]: /docs/en/platform/turtlebot3/teleoperation/#teleoperation
 [export_turtlebot3_model]: /docs/en/platform/turtlebot3/export_turtlebot3_model
+
+## [References](#references)
+
+- gmapping
+  - [ROS WIKI](http://wiki.ros.org/gmapping), [Github](https://github.com/ros-perception/slam_gmapping)
+
+- cartographer 
+  - [ROS WIKI](http://wiki.ros.org/cartographer), [Github](https://github.com/googlecartographer/cartographer)
+
+- hector
+  - [ROS WIKI](http://wiki.ros.org/hector_slam), [Github](https://github.com/tu-darmstadt-ros-pkg/hector_slam)
+
+- karto
+  - [ROS WIKI](http://wiki.ros.org/slam_karto), [Github](https://github.com/ros-perception/slam_karto)
+
+- frontier_exploration 
+  - [ROS WIKI](http://wiki.ros.org/frontier_exploration), [Github](https://github.com/paulbovbel/frontier_exploration)
