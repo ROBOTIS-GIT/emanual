@@ -1,5 +1,5 @@
 {% capture dxl_led_policy %}  
-**WARNING** :  
+**NOTE** :  
 The LED indicates present status of the device.
 
 | Status     | LED Representation      |
@@ -10,4 +10,4 @@ The LED indicates present status of the device.
 | Boot Mode | Solid Purple LED  |
 
 {% endcapture %}
-<div class="notice--warning">{{ dxl_led_policy | markdownify }}</div>
+<div class="notice">{{ dxl_led_policy | markdownify }}</div>
