@@ -18,5 +18,5 @@
 
 ![](/assets/images/dxl/pro/proplus_velocity_controller.png)
 
-`참고` K<sub>P</sub>A는 Anti-windup Gain으로 사용자가 변경할 수는 없습니다. PID제어기에 대한 설명은 [위키피디아 PID Controller](http://en.wikipedia.org/wiki/PID_controller)를 참조하세요.
+**참고** : K<sub>P</sub>A는 Anti-windup Gain으로 사용자가 변경할 수는 없습니다. PID제어기에 대한 설명은 [위키피디아 PID Controller](http://en.wikipedia.org/wiki/PID_controller)를 참조하세요.
 {: .notice}

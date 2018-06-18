@@ -47,7 +47,7 @@ header:
 |DX|[DX-113], [DX-116], [DX-117]|
 |RX|[RX-10], [RX-24F], [RX-28], [RX-64]|
 |MX|`Protocol 1.0` [MX-12W], [MX-28], [MX-64], [MX-106]<br>`Protocol 2.0` [MX-28(2.0)], [MX-64(2.0)], [MX-106(2.0)]|
-|X|`L Series` [XL320], [XL430-W250]<br>`M Series`[XM430-W210], [XM430-W350], [XM540-W150], [XM540-W270]<br>`H Series`[XH430-W210], [XH430-W350], [XH430-V210], [XH430-V350]|
+|X|`L Series` [XL320], [XL430-W250]<br>`M Series` [XM430-W210], [XM430-W350], [XM540-W150], [XM540-W270]<br>`H Series` [XH430-W210], [XH430-W350], [XH430-V210], [XH430-V350]|
 |Pro|`L Seires` [L54-50-S500-R], [L54-50-S290-R], [L54-30-S500-R], [L54-30-S400-R], [L42-10-S300-R]<br>`M Series` [M54-60-S250-R], [M54-40-S250-R], [M42-10-S260-R]<br>`H Series` [H54-200-S500-R], [H54-100-S500-R], [H42-20-S300-R]|
 
 
