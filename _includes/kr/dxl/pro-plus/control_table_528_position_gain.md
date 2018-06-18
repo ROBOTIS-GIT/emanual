@@ -19,8 +19,8 @@
 
 ![](/assets/images/dxl/pro/proplus_position_controller.png)
 
-**NOTE** : PWM 제어 모드의 경우, PID 제어기와 Feedforward 제어기는 모두 비활성화되고 Goal PWM(548) 값이 Inverter를 통해서 모터에 직접 인가됩니다. 이를 통해 모터의 전압을 직접 제어할 수 있습니다.
+**참고** : PWM 제어 모드의 경우, PID 제어기와 Feedforward 제어기는 모두 비활성화되고 Goal PWM(548) 값이 Inverter를 통해서 모터에 직접 인가됩니다. 이를 통해 모터의 전압을 직접 제어할 수 있습니다.
 {: .notice}
 
-**NOTE** : K<sub>a</sub>는 Anti-windup Gain로서 사용자가 변경할 수는 없습니다.
+**참고** : K<sub>a</sub>는 Anti-windup Gain로서 사용자가 변경할 수는 없습니다.
 {: .notice}

@@ -15,7 +15,7 @@
 |Bit 0|Input Voltage Error|인가된 전압이 설정된 동작 전압 범위를 벗어났을 경우|
 
 {% capture shutdown_01 %}
-`참고` Shutdown이 발생하면 다음과 같은 방법으로 장치를 REBOOT 시킬 수 있습니다.
+**참고** : Shutdown이 발생하면 다음과 같은 방법으로 장치를 REBOOT 시킬 수 있습니다.
 1. H/W REBOOT : 전원을 껐다 켜는 방법
 2. S/W REBOOT : REBOOT Instruction 전송하는 방법(자세한 사항은 [프로토콜]을 참고해주세요.)
 {% endcapture %}
