@@ -21,8 +21,8 @@ Indirect Address에 특정 Address를 설정하면, Indirect Data는 특정한 A
 | :------------- | :------------- |
 | 64 ~ 661 | Indirection Address는 EEPROM 영역을 지정할 수 없습니다. |
 
-**NOTE** : 2 byte 이상의 길이를 갖는 Control Table의 Data를 Indirect Address로 설정할 경우에는 `예제 2`와 같이 Control Table의 Data가 포함된 모든 Address를 Indirect Address로 설정해 주어야 정상동작합니다.
+**참고** : 2 byte 이상의 길이를 갖는 Control Table의 Data를 Indirect Address로 설정할 경우에는 `예제 2`와 같이 Control Table의 Data가 포함된 모든 Address를 Indirect Address로 설정해 주어야 정상동작합니다.
 {: .notice}
 
-**NOTE** : Indirect Address 29 ~ 56과 Indirect Data 29 ~ 56은 프로토콜 2.0으로만 접근할 수 있습니다.
+**참고** : Indirect Address 29 ~ 56과 Indirect Data 29 ~ 56은 프로토콜 2.0으로만 접근할 수 있습니다.
 {: .notice}

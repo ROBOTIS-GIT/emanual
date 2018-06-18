@@ -40,7 +40,7 @@
 }
 
 @mixin notice-margin {
-  p, ol {
+  p, ol, table {
     margin-left: 0 !important;
   }
 }

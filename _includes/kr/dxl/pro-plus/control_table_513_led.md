@@ -6,7 +6,7 @@
 | 514  | Green | 0 ~ 255   |
 | 515  | Blue  | 0 ~ 255   |
 
-`참고` 알람이 발생한 후에는 LED 밝기를 설정할 수 없습니다.
+**참고** : 알람이 발생한 후에는 LED 밝기를 설정할 수 없습니다.
 {: .notice}
 
 {% include kr/dxl/pro-plus/led_policy.md %}

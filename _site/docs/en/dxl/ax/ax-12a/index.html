@@ -1134,7 +1134,7 @@ $(function() {
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/software/dynamixel/dynamixel_workbench/" class="">DYNAMIXEL-Workbench</a>
+                          <a href="http://localhost:4000/docs/en/software/dynamixel/dynamixel_workbench/" class="">DYNAMIXEL Workbench</a>
                         </li>
                       
                     
@@ -1969,7 +1969,8 @@ $(function() {
 
               
                 
-                <a>X Series</a>
+                  
+                    <a href="http://localhost:4000/docs/en/dxl/x/">X Series</a>
               
 
               
@@ -2738,7 +2739,7 @@ $(function() {
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/software/dynamixel/dynamixel_workbench/">DYNAMIXEL-Workbench</a>
+                      <a href="http://localhost:4000/docs/en/software/dynamixel/dynamixel_workbench/">DYNAMIXEL Workbench</a>
                     
                 
               </div>
@@ -4802,6 +4803,43 @@ If errors occur, in case of Alarm LED, the LED blinks; in case of Alarm Shutdown
     </tr>
   </tbody>
 </table>
+
+<div class="notice--warning">
+<p><strong>WARNING</strong> :<br />
+The LED indicates present status of the device.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Status</th>
+      <th style="text-align: center">LED Representation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">Booting</td>
+      <td style="text-align: center">LED flickers once</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Reset</td>
+      <td style="text-align: center">LED flickers 4 times</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Alarm</td>
+      <td style="text-align: center">LED flickers</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Slave Mode(MX-106)</td>
+      <td style="text-align: center">LED On</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Boot Mode</td>
+      <td style="text-align: center">LED On</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
 
 <h3 id="compliance-margin-26-27"><a name="cw-compliance-margin"></a><a name="ccw-compliance-margin"></a><strong><a href="#compliance-margin-26-27">Compliance Margin (26, 27)</a></strong></h3>
 <p>It exists in each direction of CW/CCW and means the error between goal position and present position.
