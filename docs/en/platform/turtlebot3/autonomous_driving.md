@@ -326,7 +326,7 @@ $ sudo apt-get install ros-kinetic-image-transport ros-kinetic-cv-bridge ros-kin
     $ rqt
     ```
 
-    clicking `plugins` -> `visualization` -> `Image view` on the top of the screen will make extra monnitor for camera view. Make 3 extra monitor in the rqt plate by following it. Then, choose `/detect/image_yellow_light`, `/detect/image_yellow_light`, `/detect/image_yellow_light` and `/detect/image_traffic_light` topics on each of extra monitors. If everything works fine, three screen will show the filtered image of the red / yellow / green light, and the other one will show the recognized color with short string. In the calibration mode, three screen will show white, and the other screen may show plain result. From here, you should adjust the filter parameters to show up correct lines and the direction.
+    clicking `plugins` -> `visualization` -> `Image view` on the top of the screen will make extra monnitor for camera view. Make 3 extra monitor in the rqt plate by following it. Then, choose `/detect/image_red_light`, `/detect/image_yellow_light`, `/detect/image_green_light` and `/detect/image_traffic_light` topics on each of extra monitors. If everything works fine, three screen will show the filtered image of the red / yellow / green light, and the other one will show the recognized color with short string. In the calibration mode, three screen will show white, and the other screen may show plain result. From here, you should adjust the filter parameters to show up correct lines and the direction.
 
 4. `Remote PC` Open new terminal, then enter
 
