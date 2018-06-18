@@ -230,7 +230,7 @@ IR ARRAY의 각 적외선 센서의 감지 값이 검은 색 감지 기준값보
 | 0    | EEPROM영역을 수정할 수 있습니다. |
 | 1    | EEPROM영역을 수정하지 못합니다.  |
 
-`주의` Lock이 1로 설정되면 전원을 껐다 켜야 0으로 바꿀 수 있습니다.
+**주의**: Lock이 1로 설정되면 전원을 껐다 켜야 0으로 바꿀 수 있습니다.
 {: .notice--warning}
 
 [다이나믹셀의 통신]: /docs/kr/dxl/protocol1/#communication-overview

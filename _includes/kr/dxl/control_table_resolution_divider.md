@@ -20,5 +20,5 @@ Present Position = (실제 위치/ Resolution Divider) + Multi Turn offset
 
 ![](/assets/images/dxl/mx/mx-12_res_divider.jpg)
 
-**NOTE** : 다중 회전 모드(Multi-Turn Mode) 일 때 만 이 값이 적용되며, 그 외의 모드에서는 이 값은 무시 됩니다.
+**참고** : 다중 회전 모드(Multi-Turn Mode) 일 때 만 이 값이 적용되며, 그 외의 모드에서는 이 값은 무시 됩니다.
 {: .notice}

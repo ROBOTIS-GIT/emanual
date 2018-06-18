@@ -13,6 +13,9 @@ header:
     - excerpt: 'DYNAMIXEL XL Series'
 ---
 
+# 다이나믹셀 X 시리즈
+
+![](/assets/images/dxl/x/dxl_x_productline_kr.jpg)
 
 # [XL320](xl320)
 

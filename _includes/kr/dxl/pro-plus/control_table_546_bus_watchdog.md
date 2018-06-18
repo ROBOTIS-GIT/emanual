@@ -15,7 +15,7 @@ Bus Watchdog Error 상태가 되면, Goal Value(Goal PWM(548), Goal Current(550)
 따라서 Goal Value에 새로운 값을 쓸 경우, Status packet을 통해 Range Error를 회신합니다.  
 Bus Wathdog(546)의 값을 ‘0’으로 변경하면, Bus Watchdog Error는 해제됩니다.
 
-`참고` Range Error에 대한 자세한 사항은 [프로토콜]을 참고해주세요.
+**참고** : Range Error에 대한 자세한 사항은 [프로토콜]을 참고해주세요.
 {: .notice}
 
 [프로토콜]: /docs/kr/dxl/protocol2/#status-packet

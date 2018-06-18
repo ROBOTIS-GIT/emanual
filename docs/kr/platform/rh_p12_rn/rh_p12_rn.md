@@ -116,7 +116,7 @@ sidebar:
 
 ## [컨트롤 테이블 설명](#컨트롤-테이블-설명)
 
-`주의` EEPROM Area에 존재하는 모든 Data는 Torque Enable(562)의 값이 ‘0’일 때만 변경할 수 있습니다.
+**주의**: EEPROM Area에 존재하는 모든 Data는 Torque Enable(562)의 값이 ‘0’일 때만 변경할 수 있습니다.
 {: .notice--warning}
 
 ### <a name="model-number"></a>**[Model Number(0)](#model-number0)**

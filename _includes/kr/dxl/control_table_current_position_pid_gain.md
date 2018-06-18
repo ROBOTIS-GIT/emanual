@@ -11,5 +11,5 @@
 
 ![](/assets/images/dxl/current_position_controller_pid_gain.jpg)
 
-`참고` K<sub>a</sub>는 Anti-windup Gain로서 사용자가 변경할 수는 없습니다. 보다 자세한 PID 제어기와 Feedforward 제어기에 대한 설명은 [PID Controller](http://en.wikipedia.org/wiki/PID_controller)와 [Feed Forward](https://en.wikipedia.org/wiki/Feed_forward_(control))을 참고하세요.
+**참고** : K<sub>a</sub>는 Anti-windup Gain로서 사용자가 변경할 수는 없습니다. 보다 자세한 PID 제어기와 Feedforward 제어기에 대한 설명은 [PID Controller](http://en.wikipedia.org/wiki/PID_controller)와 [Feed Forward](https://en.wikipedia.org/wiki/Feed_forward_(control))을 참고하세요.
 {: .notice}

@@ -215,7 +215,7 @@ RH-P12-RN(A)의 펌웨어 버전입니다.
 | :---:     | :---:     |
 | 1 [pulse] | 0 ~ 1,150 |
 
-`주의` 동작 모드가 확장 위치 제어 모드일 때는 Position Limit이 적용되지 않습니다.
+**주의**: 동작 모드가 확장 위치 제어 모드일 때는 Position Limit이 적용되지 않습니다.
 {: .notice}
 
 ### <a name="external-port-mode"></a><a name="external-port-data"></a>**[External Port Mode](#external-port-mode)**, **[External Port Data](#external-port-data)**
