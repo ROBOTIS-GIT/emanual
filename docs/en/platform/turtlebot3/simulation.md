@@ -60,6 +60,7 @@ $ roslaunch turtlebot3_fake turtlebot3_fake.launch
 ```
 
 ``` bash
+$ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 ```
 

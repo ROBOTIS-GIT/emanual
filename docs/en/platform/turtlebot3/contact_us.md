@@ -59,11 +59,11 @@ There are many answers to this question, but we strive to develop and apply prod
 
 **ROBOTIS Korea Office**
 
-* Address:	#1505, Gasan Digital-1ro 145 (Ace High End Tower 3), Geumchungu, Seoul, South Korea
+* Address: 37, Magok Jungang 5-ro 1-gil, Gangseo-gu, Seoul, Korea 07594
 * Tel:	+82-70-8671-2609
 * Fax:	+82-70-8230-1336
 * Web: [http://www.robotis.com/](http://www.robotis.com/)
-* E-Mail: ost@robotis.com
+* E-Mail: contactus2@robotis.com
 
 ## [About OST (Open Source Team)](#about-ost-open-source-team)
 

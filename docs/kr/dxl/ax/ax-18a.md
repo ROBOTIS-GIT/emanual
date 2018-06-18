@@ -16,7 +16,7 @@ sidebar:
 
 > AX-18F, AX-18A
 
-`주의` AX-18A 는  AX-18F 와 동일한 성능에 외형을 개선한 모델입니다. 현재는 AX-18A만 판매중 입니다.
+**주의**: AX-18A 는  AX-18F 와 동일한 성능에 외형을 개선한 모델입니다. 현재는 AX-18A만 판매중 입니다.
 {: .notice--warning}
 
 # [주요 사양](#주요-사양)
@@ -41,7 +41,7 @@ sidebar:
 | 기어 재질   | Engineering Plastic(1, 2, 3), Precious Metal(4)                             |
 | 케이스 재질        | Engineering Plastic(Front, Middle, Back)                               |
 
-**NOTE** : Stall Torque 는 순간적으로 낼수있는 최대정지토크를 의미합니다. 실제 구동을 위해 로봇을 설계하신다면 Stall Torque의 1/5 이하의 로드가 걸리도록 설계하셔야 안정적인 움직임이 가능합니다.
+**주의**: Stall Torque 는 순간적으로 낼수있는 최대정지토크를 의미합니다. 실제 구동을 위해 로봇을 설계하신다면 Stall Torque의 1/5 이하의 로드가 걸리도록 설계하셔야 안정적인 움직임이 가능합니다.
 {: .notice}
 
 {% include kr/dxl/warning.md %}
@@ -206,7 +206,7 @@ Baudrate(BPS) = 2,000,000 / (Value + 1)
 
 # [참고자료](#참고자료)
 
-**NOTE** : [호환성 가이드]
+**주의**: [호환성 가이드]
 {: .notice}
 
 ## [커넥터 정보](#커넥터-정보)
