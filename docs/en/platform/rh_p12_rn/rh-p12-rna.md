@@ -72,8 +72,8 @@ sidebar:
 |   44    |       4        | [Velocity Limit](#velocity-limit)           |   RW   |       2,970        |             0 ~ 2,970              | 0.01 [rev/min] |
 |   48    |       4        | [Max Position Limit](#max-position-limit)   |   RW   |       1,150        |           0 ~ 1,150            |   1 [pulse]    |
 |   52    |       4        | [Min Position Limit](#min-position-limit)   |   RW   |         0          |           0 ~ 1,150            |   1 [pulse]    |
-|   57    |       1        | [External Port Mode 2](#external-port-mode) |   RW   |         3          |               0 ~ 3                |       -        |
 |   56    |       1        | [External Port Mode 1](#external-port-mode) |   RW   |         3          |               0 ~ 3                |       -        |
+|   57    |       1        | [External Port Mode 2](#external-port-mode) |   RW   |         3          |               0 ~ 3                |       -        |
 |   58    |       1        | [External Port Mode 3](#external-port-mode) |   RW   |         3          |               0 ~ 3                |       -        |
 |   59    |       1        | [External Port Mode 4](#external-port-mode) |   RW   |         3          |               0 ~ 3                |       -        |
 |   63    |       1        | [Shutdown](#shutdown)                       |   RW   |         52         |              0 ~ 255               |       -        |
@@ -119,10 +119,10 @@ sidebar:
 |   588   |       4        | [Position Trajectory](#position-trajectory)       |   R    |         -          |                          -                          |   1 [pulse]    |
 |   592   |       2        | [Present Input Voltage](#present-input-voltage)   |   R    |         -          |                          -                          |    0.1 [V]     |
 |   594   |       1        | [Present Temperature](#present-temperature)       |   R    |         -          |                          -                          |     1 [℃]      |
-|   600   |       2        | [External Port Data 1](#external-port-data)       |  R/RW  |         0          |                      0 ~ 4095                       |       -        |
-|   602   |       2        | [External Port Data 2](#external-port-data)       |  R/RW  |         0          |                      0 ~ 4095                       |       -        |
-|   604   |       2        | [External Port Data 3](#external-port-data)       |  R/RW  |         0          |                      0 ~ 4095                       |       -        |
-|   606   |       2        | [External Port Data 4](#external-port-data)       |  R/RW  |         0          |                      0 ~ 4095                       |       -        |
+|   600   |       2        | [External Port Data 1](#external-port-data)       |  R/RW  |         0          |                      0 ~ 4,095                       |       -        |
+|   602   |       2        | [External Port Data 2](#external-port-data)       |  R/RW  |         0          |                      0 ~ 4,095                       |       -        |
+|   604   |       2        | [External Port Data 3](#external-port-data)       |  R/RW  |         0          |                      0 ~ 4,095                       |       -        |
+|   606   |       2        | [External Port Data 4](#external-port-data)       |  R/RW  |         0          |                      0 ~ 4,095                       |       -        |
 |   634   |       1        | [Indirect Data 1](#indirect-data)                 |   RW   |         0          |                       0 ~ 255                       |       -        |
 |   635   |       1        | [Indirect Data 2](#indirect-data)                 |   RW   |         0          |                       0 ~ 255                       |       -        |
 |   636   |       1        | [Indirect Data 3](#indirect-data)                 |   RW   |         0          |                       0 ~ 255                       |       -        |
@@ -135,7 +135,7 @@ sidebar:
 **CAUTION** : Data in the EEPROM Area can only be written when the value of [Torque Enable(512)] is cleared to `0`.
 {: .notice--warning}
 
-**NOTE** : RH_P12_RN(A) stands for the Advanced firmware of RH_P12_RN. Please be aware of the changes of Control Table such as Addresses and additional features.
+**NOTE** : RH-P12-RN(A) stands for the Advanced firmware of RH-P12-RN. Please be aware of the changes of Control Table such as Addresses and additional features.
 {: .notice}
 
 ### <a name="model-number"></a>**[Model Number(0)](#model-number0)**
@@ -143,7 +143,7 @@ This address stores model number of the device.
 
 |    Model Name    |  Model Number   |
 |:----------------:|:---------------:|
-| RH_P12_RN(A)  | 35,074 (0x8902) |
+| RH-P12-RN(A)  | 35,074 (0x8902) |
 
 ### <a name="firmware-version"></a>**[Firmware Version(6)](#firmware-version6)**
 {% include en/dxl/pro-plus/control_table_6_firmware_version.md %}
@@ -204,7 +204,7 @@ Profile Acceleration(556) cannot be configured with any values exceeding Acceler
 | 1 [rev/min²] | 0 ~ 1,378,788 |
 
 ### <a name="velocity-limit"></a>**[Velocity Limit(44)](#velocity-limit44)**
-This value indicates maximum velocity of Goal Velocity(552) and Profile Velocity(562). 
+This value indicates maximum velocity of Goal Velocity(552) and Profile Velocity(562).
 Goal Velocity(552) and Profile Velocity(562) cannot be configured with any values exceeding Velocity Limit(44). Attempting to write an invalid value will fail and set the Limit Error Bit in the error field of the Status Packet.
 
 |      Unit      | Value Range |
@@ -292,7 +292,7 @@ Remove bolts and cover plate to reveal External Port connector.
 
 ### <a name="goal-position"></a>**[Goal Position(564)](#goal-position564)**
 Desired position can be set with Goal Position(564).  
-This value must be inbetween Min Position Limit(52) and Max Position Limit(48). 
+This value must be inbetween Min Position Limit(52) and Max Position Limit(48).
 
 |Model Name|Goal Position = 0|Goal Position = 740|
 | :-------: | :--------: | :--------: |

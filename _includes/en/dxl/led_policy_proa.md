@@ -5,7 +5,7 @@ The LED indicates present status of the device.
 |      Status      |  LED Representation  |
 |:----------------:|:--------------------:|
 |     Booting      |  Green LED flickers once   |
-|      Reset       | Green LED flickers 4 times |
+|  Factory Reset   | Green LED flickers 4 times |
 |      Alarm       |     Red LED flickers     |
 
 {% endcapture %}

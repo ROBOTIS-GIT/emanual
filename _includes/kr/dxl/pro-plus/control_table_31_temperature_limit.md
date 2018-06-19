@@ -3,7 +3,7 @@
 Shutdown(63)에 Overheating Error Bit(0x04)가 설정된 경우, Torque Enable(512)은 ‘0’이 되고 Torque가 OFF됩니다.  
 자세한 설명은 [Shutdown(63)](#shutdown63)을 참고하세요.
 
-| 단위     |  범위     |
+| 단위     |  범위    |
 | :---:    |  :---:   |
 |약 1 [℃] |  0 ~ 100 |
 
