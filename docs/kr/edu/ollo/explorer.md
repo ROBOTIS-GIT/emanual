@@ -80,30 +80,30 @@ sidebar:
 1. 2단계 통합 예제 프로그램  
  - 제품 구입 시 제어기에 기본으로 들어있는 프로그램입니다.
  - 통합 프로그램 사용법은 [작동하기]를 참고하세요.
- - `Download` [OLLO_L2_Total_KR.tsk]
+ - `다운로드` [OLLO_L2_Total_KR.tsk]
 
 2. 단원별 예제 프로그램
 
 |Robots|E-1|
 | :----- | :----- |
-|1. 코끼리|`Download` [OLLO_L2_Elephant_KR.tsk]|
-|2. 풍차|`Download` [OLLO_L2_Windmill_KR.tsk]|
-|3. 어보이더|`Download` [OLLO_L2_Avoider_KR.tsk]|
-|4. 상상하세요|`Download` [OLLO_L2_DistanceSensor_KR.tsk]<br />`Download` [OLLO_L2_Penguin_KR.tsk]<br />`Download` [OLLO_L2_CardGiver_KR.tsk]|
+|1. 코끼리|`다운로드` [OLLO_L2_Elephant_KR.tsk]|
+|2. 풍차|`다운로드` [OLLO_L2_Windmill_KR.tsk]|
+|3. 어보이더|`다운로드` [OLLO_L2_Avoider_KR.tsk]|
+|4. 상상하세요|`다운로드` [OLLO_L2_DistanceSensor_KR.tsk]<br />`다운로드` [OLLO_L2_Penguin_KR.tsk]<br />`다운로드` [OLLO_L2_CardGiver_KR.tsk]|
 
 |Robots|E-2|
 | :----- | :----- |
-|5. 물개|`Download` [OLLO_L2_Seal_KR.tsk]|
-|6. 라인트레이서|`Download` [OLLO_L2_Linetracer_KR.tsk]|
-|7. 곡사포|`Download` [OLLO_L2_Howitzer_KR.tsk]|
-|8. 나만의 로봇|`Download` [OLLO_L2_SoundSensor_KR.tsk]<br />`Download` [OLLO_L2_Dancing_KR.tsk]<br />`Download` [OLLO_L2_Cradle_KR.tsk]|
+|5. 물개|`다운로드` [OLLO_L2_Seal_KR.tsk]|
+|6. 라인트레이서|`다운로드` [OLLO_L2_Linetracer_KR.tsk]|
+|7. 곡사포|`다운로드` [OLLO_L2_Howitzer_KR.tsk]|
+|8. 나만의 로봇|`다운로드` [OLLO_L2_SoundSensor_KR.tsk]<br />`다운로드` [OLLO_L2_Dancing_KR.tsk]<br />`다운로드` [OLLO_L2_Cradle_KR.tsk]|
 
 |Robots|E-3|
 | :----- | :----- |
-|9. 무당벌레|`Download` [OLLO_L2_Ladybug_KR.tsk]|
-|10. 강아지|`Download` [OLLO_L2_WheelPuppy_KR.tsk]|
-|11. 쥐|`Download` [OLLO_L2_Mouse_KR.tsk]|
-|12. 여치|`Download` [OLLO_L2_Battlebug_KR.tsk]|
+|9. 무당벌레|`다운로드` [OLLO_L2_Ladybug_KR.tsk]|
+|10. 강아지|`다운로드` [OLLO_L2_WheelPuppy_KR.tsk]|
+|11. 쥐|`다운로드` [OLLO_L2_Mouse_KR.tsk]|
+|12. 여치|`다운로드` [OLLO_L2_Battlebug_KR.tsk]|
 
 [OLLO_L2_Elephant_KR.tsk]: http://support.robotis.com/ko/baggage_files/ollo/edu_2nd/ollo_l2_elephant_kr.tsk
 [OLLO_L2_Windmill_KR.tsk]: http://support.robotis.com/ko/baggage_files/ollo/edu_2nd/ollo_l2_windmill_kr.tsk

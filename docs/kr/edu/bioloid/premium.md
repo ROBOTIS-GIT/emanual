@@ -238,8 +238,8 @@ sidebar:
 
 `보행 머신` 의 사용 방법을 알아 봅시다. 보행 머신이란 특정 패턴으로 만들어진 보행 모션 파일과 이 모션 파일에 들어있는 보행 모션들 간의 연결을 부드럽게 이어주는 역할을 하는 태스크 코드를 합쳐서 부르는 말입니다.
 
-- `Download` 보행 모션 파일 : [BIO_PRM_WalkingMachineExam_KR.mtn](http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_walkingmachineexam_kr.mtn)
-- `Download` 태스크 코드 : [BIO_PRM_WalkingMachineExam_KR.tsk](http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_walkingmachineexam_kr.tsk)
+- `다운로드` 보행 모션 파일 : [BIO_PRM_WalkingMachineExam_KR.mtn](http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_walkingmachineexam_kr.mtn)
+- `다운로드` 태스크 코드 : [BIO_PRM_WalkingMachineExam_KR.tsk](http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_walkingmachineexam_kr.tsk)
 
 보행 머신을 사용하여 보행 모션 간의 전환을 부드럽게 이어주는 방법에 대해 알아 봅시다.
 
@@ -380,7 +380,7 @@ RoboPlus Motion 프로그램을 사용하여 아래와 같은 4 가지 모션을
 |14|오른쪽 공 막기	|27|엎드려 일어나기|
 |16|왼쪽 공 막기	|28|누워 일어나기|
 
-- `Download` 모션 파일 : [BIO_PRM_UserMotionExam_KR.mtn](http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_usermotionexam_kr.mtn)
+- `다운로드` 모션 파일 : [BIO_PRM_UserMotionExam_KR.mtn](http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_usermotionexam_kr.mtn)
 
 ### "오른쪽 공 막기" 모션 만들기
 
@@ -449,8 +449,8 @@ RoboPlus Motion 프로그램을 사용하여 아래와 같은 4 가지 모션을
 - 학습 목표 : 사용자가 추가한 모션을 실행하는 태스크 코드를 작성해 봅시다.  
   앞서 "사용자 모션 추가하기1 - 모션만들기" 에서 추가한 모션을 리모컨(RC-100)으로 실행하는 방법에 대해 학습해 봅시다.
 
-- `Download` 모션 파일 : [BIO_PRM_UserMotionExam_KR.mtn](http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_usermotionexam_kr.mtn)
-- `Download` 태스크 코드 : [BIO_PRM_UserMotionExam_KR.tsk](http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_usermotionexam_kr.tsk)
+- `다운로드` 모션 파일 : [BIO_PRM_UserMotionExam_KR.mtn](http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_usermotionexam_kr.mtn)
+- `다운로드` 태스크 코드 : [BIO_PRM_UserMotionExam_KR.tsk](http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_usermotionexam_kr.tsk)
 
 ### 태스크 코드 살펴보기  
 "자이로 센서를 이용한 보정" 에서 작성한 태스크 코드에 사용자 모션을 실행하는 코드를 추가한 태스크 코드입니다.  
@@ -472,8 +472,8 @@ RoboPlus Motion 프로그램을 사용하여 아래와 같은 4 가지 모션을
   - 로봇에 그리퍼를 달게 되면 모션에 관계 없이 그리퍼를 달아 놓은 팔은 고정시킬 필요가 있습니다. 이럴 경우 기존의 모션에서 팔을 고정시키도록 수정하지 않고, 특정 관절들만 모션 데이터에 의한 제어가 되지 않도록 하여 모션과 별개로 태스크 코드에서 그리퍼를 제어하는 방법에 대해 학습해 봅시다.  
   - 본 학습에서는 그리퍼에 2 개의 다이나믹셀이 사용되므로 휴머노이드 B 타입에 그리퍼를 달아 사용합니다.
 
-- `Download` 태스크 코드 : [BIO_PRM_GripperExam_KR.tsk](http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_gripperexam_kr.tsk)
-- `Download` B타입 모션 파일 : [BIO_PRM_HumanoidTypeB_KR.mtn](http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_humanoidtypeb_kr.mtn)
+- `다운로드` 태스크 코드 : [BIO_PRM_GripperExam_KR.tsk](http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_gripperexam_kr.tsk)
+- `다운로드` B타입 모션 파일 : [BIO_PRM_HumanoidTypeB_KR.mtn](http://support.robotis.com/ko/baggage_files/bioloid/bio_prm_humanoidtypeb_kr.mtn)
 
 ### 배경 지식
 모션과 그리퍼를 별도 제어하기 위한 제어 우선순위 설정

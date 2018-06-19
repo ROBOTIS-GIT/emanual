@@ -10,11 +10,11 @@ Windows 용 Dynamixel SDK 를 이하의 링크에서 다운로드 하실 수 있
 
 - 이전 버전
   통신 1.0 DXL을 사용 할 경우 아래의 SDK를 다운 받습니다.
-  `download` [DXL_SDK_Win32_ v1_02.zip](http://support.robotis.com/ko/baggage_files/dynamixel_sdk/dxl_sdk_win32_v1_02.zip)
-  `download` [DXL_SDK_Win64_ v1_02.zip](http://support.robotis.com/ko/baggage_files/dynamixel_sdk/dxl_sdk_win64_v1_02.zip)
+  `다운로드` [DXL_SDK_Win32_ v1_02.zip](http://support.robotis.com/ko/baggage_files/dynamixel_sdk/dxl_sdk_win32_v1_02.zip)
+  `다운로드` [DXL_SDK_Win64_ v1_02.zip](http://support.robotis.com/ko/baggage_files/dynamixel_sdk/dxl_sdk_win64_v1_02.zip)
   통신 2.0 DXL을 사용 할 경우 아래의 SDK를 다운 받습니다.
-  `download`[DXL_SDK_Win32_ v2_02.zip](http://support.robotis.com/ko/baggage_files/dynamixel_sdk/dxl_sdk_win32_v2_02.zip)
-  `download`[DXL_SDK_Win64_ v2_02.zip](http://support.robotis.com/ko/baggage_files/dynamixel_sdk/dxl_sdk_win64_v2_02.zip)
+  `다운로드`[DXL_SDK_Win32_ v2_02.zip](http://support.robotis.com/ko/baggage_files/dynamixel_sdk/dxl_sdk_win32_v2_02.zip)
+  `다운로드`[DXL_SDK_Win64_ v2_02.zip](http://support.robotis.com/ko/baggage_files/dynamixel_sdk/dxl_sdk_win64_v2_02.zip)
 
 ```
 로보티즈의 Dynamixel SDK 는 3-clause BSD license 하에 사용하실 수 있습니다.
@@ -61,7 +61,7 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 2. 드라이버의 위치를 지정합니다.
    RoboPlus 를 설치한 경우 드라이버는 RoboPlus 설치 폴더의 LN101 폴더에 있습니다.
    또는 최신 버전의 드라이버를 설치하고자 하는 경우 [FTDI Driver Download](http://www.ftdichip.com/Drivers/VCP.htm) 페이지에서 VCP Drivers 의 최신 버전을 받으시면 됩니다.
-   `download` [Windows 32bit 드라이버 설치](http://www.ftdichip.com/Drivers/CDM/CDM%202.08.24%20WHQL%20Certified.zip)
+   `다운로드` [Windows 32bit 드라이버 설치](http://www.ftdichip.com/Drivers/CDM/CDM%202.08.24%20WHQL%20Certified.zip)
    `download `[Windows 64bit 드라이버 설치](http://www.ftdichip.com/Drivers/CDM/CDM%202.08.24%20WHQL%20Certified.zip)
    ![img](/assets/images/sw/sdk/ln101_driverinstall_02.png)
    ![img](/assets/images/sw/sdk/ln101_driverinstall_03.png)
