@@ -51,8 +51,8 @@ sidebar:
 ## [EEPROM 영역](#eeprom-영역)
 
 | 주소 | 크기<br>(Byte) | 명칭                                        |  접근 | 기본값 |             범위               | 단위 |
-|:----:|:--------------:|:--------------------------------------------|:----:|:------:|:----------------------------:|:------:|
-|  0   |       2        | [Model Number](#model-number)               |   R   | 51,201  |              -               | - |
+|:----:|:--------------:|:--------------------------------------------|:-----:|:------:|:----------------------------:|:------:|
+|  0   |       2        | [Model Number](#model-number)               |   R   | 51,201 |              -               | - |
 |  2   |       4        | [Model Information](#model-information)     |   R   |   -    |              -               | - |
 |  6   |       1        | [Firmware Version](#firmware-version)       |   R   |   -    |              -               | - |
 |  7   |       1        | [ID](#id)                                   |   RW  |   1    |           0 ~ 252            | - |
@@ -94,11 +94,11 @@ sidebar:
 | 516  |        1         | [Status Return Level](#status-return-level)       |   RW  |   2    |                        0 ~ 2                        | - |
 | 517  |        1         | [Registered Instruction](#registered-instruction) |   R   |   0    |                          -                          | - |
 | 518  |        1         | [Hardware Error Status](#hardware-error-status)   |   R   |   0    |                          -                          | - |
-| 524  |        2         | [Velocity I Gain](#velocity-i-gain)               |   RW  |   -    |                      0 ~ 32,767                      | - |
-| 526  |        2         | [Velocity P Gain](#velocity-p-gain)               |   RW  |   -    |                      0 ~ 32,767                      | - |
-| 528  |        2         | [Position D Gain](#position-p-gain)               |   RW  |   -    |                      0 ~ 32,767                      | - |
-| 532  |        2         | [Position P Gain](#position-p-gain)               |   RW  |   -    |                      0 ~ 32,767                      | - |
-| 530  |        2         | [Position I Gain](#position-p-gain)               |   RW  |   -    |                      0 ~ 32,767                      | - |
+| 524  |        2         | [Velocity I Gain](#velocity-pi-gain)              |   RW  |   -    |                      0 ~ 32,767                      | - |
+| 526  |        2         | [Velocity P Gain](#velocity-pi-gain)              |   RW  |   -    |                      0 ~ 32,767                      | - |
+| 528  |        2         | [Position D Gain](#position-pid-gain)             |   RW  |   -    |                      0 ~ 32,767                      | - |
+| 532  |        2         | [Position P Gain](#position-pid-gain)             |   RW  |   -    |                      0 ~ 32,767                      | - |
+| 530  |        2         | [Position I Gain](#position-pid-gain)             |   RW  |   -    |                      0 ~ 32,767                      | - |
 | 536  |        2         | [Feedforward 2nd Gain](#feedforward-2nd-gain)     |   RW  |   -    |                      0 ~ 32,767                      | - |
 | 538  |        2         | [Feedforward 1st Gain](#feedforward-1st-gain)     |   RW  |   -    |                      0 ~ 32,767                      | - |
 | 546  |        1         | [Bus Watchdog](#bus-watchdog)                     |   RW  |   -    |                       0 ~ 127                       | 20 [msec] |
@@ -119,10 +119,10 @@ sidebar:
 | 588  |        4         | [Position Trajectory](#position-trajectory)       |   R   |   -    |                          -                          | 1 [pulse] |
 | 592  |        2         | [Present Input Voltage](#present-input-voltage)   |   R   |   -    |                          -                          | 0.1 [V] |
 | 594  |        1         | [Present Temperature](#present-temperature)       |   R   |   -    |                          -                          | 1 [℃] |
-| 600  |        2         | [External Port Data 1](#external-port-data)       |  R/RW |   0    |                       0 ~ 4095                      | - |
-| 602  |        2         | [External Port Data 2](#external-port-data)       |  R/RW |   0    |                       0 ~ 4095                       | - |
-| 604  |        2         | [External Port Data 3](#external-port-data)       |  R/RW |   0    |                       0 ~ 4095                       | - |
-| 606  |        2         | [External Port Data 4](#external-port-data)       |  R/RW |   0    |                       0 ~ 4095                       | - |
+| 600  |        2         | [External Port Data 1](#external-port-data)       |  R/RW |   0    |                       0 ~ 4,095                     | - |
+| 602  |        2         | [External Port Data 2](#external-port-data)       |  R/RW |   0    |                       0 ~ 4,095                     | - |
+| 604  |        2         | [External Port Data 3](#external-port-data)       |  R/RW |   0    |                       0 ~ 4,095                     | - |
+| 606  |        2         | [External Port Data 4](#external-port-data)       |  R/RW |   0    |                       0 ~ 4,095                     | - |
 | 634  |        1         | [Indirect Data 1](#indirect-data)                 |   RW  |   0    |                       0 ~ 255                       | - |
 | 635  |        1         | [Indirect Data 2](#indirect-data)                 |   RW  |   0    |                       0 ~ 255                       | - |
 | 636  |        1         | [Indirect Data 3](#indirect-data)                 |   RW  |   0    |                       0 ~ 255                       | - |
@@ -135,14 +135,14 @@ sidebar:
 **주의**: EEPROM Area에 존재하는 모든 Data는 Torque Enable(512)의 값이 ‘0’일 때만 변경할 수 있습니다.
 {: .notice--warning}
 
-**주의**: RH_P12_RN(A)는 RH_P12_RN의 개선된 firmware 입니다. 두 firmware의 Control table이 다르니, 사용 전에 Control table의 주소를 필히 확인해 주세요.
+**주의**: RH-P12-RN(A)는 RH-P12-RN의 개선된 firmware 입니다. 두 firmware의 Control table이 다르니, 사용 전에 Control table의 주소를 필히 확인해 주세요.
 
 ### <a name="model-number"></a>**[Model Number(0)](#model-number0)**
 RH-P12-RN(A)의 모델 번호입니다.
 
 |    모델명     |  Model Number  |
 |:-------------:|:--------------:|
-| RH_P12_RN(A)  | 35,074 (0x8902) |
+| RH-P12-RN(A)  | 35,074 (0x8902) |
 
 ### <a name="firmware-version"></a>**[Firmware Version(6)](#firmware-version6)**
 RH-P12-RN(A)의 펌웨어 버전입니다.
@@ -162,17 +162,22 @@ RH-P12-RN(A)의 펌웨어 버전입니다.
 ### <a name="operating-mode"></a>**[Operating Mode(11)](#operating-mode11)**
 장치의 제어 모드를 설정합니다. 각 제어 모드마다 특성이 다르기 때문에, 구현하려는 시스템에 적합한 제어 모드를 설정하시기 바랍니다.
 
-| Value      | Operating Mode         | Description                                 |
-|:-----------|:-----------------------|:--------------------------------------------|
-| 0          | 전류제어 모드           | 속도와 위치는 제어하지 않고, 전류를 제어합니다. |
-| 1 ~ 4      | Reserved               | -                                           |
-| 5(Default) | 전류기반 위치제어 모드   | 위치와 전류를 제어합니다.                     |
+| 값         | 동작 모드              | 설명                                            |
+|:-----------|:-----------------------|:------------------------------------------------|
+| 0          | 전류제어 모드          | 속도와 위치는 제어하지 않고, 전류를 제어합니다. |
+| 1 ~ 4      | Reserved               | -                                               |
+| 5(Default) | 전류기반 위치제어 모드 | 위치와 전류를 제어합니다.                       |
 
 ### <a name="secondary-id"></a>**[Secondary ID(12)](#secondary-id12)**
 {% include kr/dxl/pro-plus/control_table_12_secondary_id.md %}
 
 ### <a name="homing-offset"></a>**[Homing Offset(20)](#homing-offset20)**
-{% include kr/dxl/pro-plus/control_table_20_homing_offset.md %}
+0점의 위치를 조절 할 수 있습니다. 이 값은 Present Position(580)에 더해지게 됩니다.
+Present Position = 실제 위치 + Homing offset(20) 이 됩니다.
+
+|단위      |  값의 범위 |
+|:---:     | :---:     |
+|1 [pulse] | 0 ~ 1150 |
 
 ### <a name="moving-threshold"></a>**[Moving Threshold(24)](#moving-threshold24)**
 {% include kr/dxl/pro-plus/control_table_24_moving_threshold.md %}
@@ -189,15 +194,15 @@ RH-P12-RN(A)의 펌웨어 버전입니다.
 ### <a name="current-limit"></a>**[Current Limit(38)](#current-limit38)**
 목표 전류 값의 한계 값입니다. Goal Current(550)은 이 값보다 큰 값을 쓸 수 없습니다. 이 값보다 큰 값을 쓰려 하면, 값이 써지지 않고, Status packet의 error 에 Limit error bit가 set 됩니다.
 
-| 단위   | 범위 |
-| :---:  | :---: |
-| 1 [mA] | 0 ~ 1,984|
+| 단위   | 범위      |
+| :----: | :-------: |
+| 1 [mA] | 0 ~ 1,984 |
 
 ### <a name="acceleration-limit"></a>**[Acceleration Limit(40)](#acceleration-limit40)**
 프로파일 가속도 값의 한계 값입니다. Profile Acceleration(556)은 이 값보다 큰 값을 쓸 수 없습니다. 이 값보다 큰 값을 쓰려 하면, 값이 써지지 않고, Status packet의 error 에 Limit error bit가 set 됩니다.
 
-| 단위         | 범위           |
-| :---:        | :---:         |
+| 단위          | 범위          |
+| :-----------: | :-----------: |
 | 1 [rev/min²] | 0 ~ 1,378,788 |
 
 ### <a name="velocity-limit"></a>**[Velocity Limit(44)](#velocity-limit44)**
@@ -211,7 +216,7 @@ RH-P12-RN(A)의 펌웨어 버전입니다.
 전류 기반 위치 제어 모드에서 목표 위치의 제한 값으로써, 0 ~ 1,150 범위 내에서 목표 위치를 제한 합니다.  
 따라서 위치 제어 모드에서 Goal position(564)은 이 값보다 클 수 없습니다. 이 값보다 큰 값을 쓰려 하면, 값이 써지지 않고, Status packet의 error 에 Limit error bit가 set 됩니다.
 
-| 단위       | 값의 범위 |
+| 단위      | 값의 범위 |
 | :---:     | :---:     |
 | 1 [pulse] | 0 ~ 1,150 |
 
@@ -219,19 +224,7 @@ RH-P12-RN(A)의 펌웨어 버전입니다.
 {: .notice}
 
 ### <a name="external-port-mode"></a><a name="external-port-data"></a>**[External Port Mode](#external-port-mode)**, **[External Port Data](#external-port-data)**
-장치에는 다용도의 외부확장포트가 있습니다.
-
-|항목   | 범위      |
-| :---: | :---:    |
-|전압   | 0 ~ 3.3 [V] |
-|전류   | 0 ~ 5 [mA]  |
-
-|External Port Mode| 명칭                     |설명|
-| :---:            | :---:                    | :---: |
-|0                 | Analogue Input           | External Port 신호를 12[bit] Digital로 변환|
-|1                 | Digital Output Push-Pull | External Port를 0[V] 또는3.3[V]로 출력|
-|2                 | Digital Input Pull-Up    | External Port 신호를 '0' 또는 '1'의 Digital 신호로 변경<br />External Port에 신호가 연결되어 있지 않을 경우 '1'|
-|3(초기값)          | Digital Input Pull-Down  | External Port 신호를 '0' 또는 '1'의 Digital 신호로 변경<br />External Port에 신호가 연결되어 있지 않을 경우 '0'|
+{% include kr/dxl/pro-plus/control_table_57_external_port.md %}
 
 #### 외부 확장 포트의 위치 및 핀 기능
 아래와 같이 나사를 제거하고 커버를 들어내면 외부 확장 포트가 드러납니다.
@@ -265,11 +258,33 @@ RH-P12-RN(A)의 펌웨어 버전입니다.
 ### <a name="hardware-error-status"></a>**[Hardware Error Status(518)](#hardware-error-status518)**
 {% include kr/dxl/pro-plus/control_table_518_hardware_error_status.md %}
 
-### <a name="velocity-i-gain"></a><a name="velocity-p-gain"></a>**[Velocity PI Gain(524, 526), Feedforward 2nd Gains(536)](#velocity-pi-gain524-526, Feedforward 2nd Gains(536))**
-{% include kr/dxl/pro-plus/control_table_524_velocity_gain.md %}
+### <a name="velocity-pi-gain"><a name="position-pid-gain"></a><a name="feedforward-2nd-gain"></a><a name="feedforward-1st-gain"></a>**[Velocity PI Gain(524, 526), Position PID Gain(528,530,532), Feedforward 2nd Gains(536), Feedforward 1st Gains(538)](#velocity-pi-gain524-526, #position-pid-gain528-530-532, Feedforward 2nd Gains536, Feedforward 1st Gains538)**
+전류기반 위치 제어 모드에서 동작하는 위치 제어기의 Gain입니다. 편의상 장치 내부 제어기의 Position P Gain을 K<sub>P</sub>P로 표기하고 Control Table의 Gain은 K<sub>P</sub>P<sub>(TBL)</sub>로 표기합니다.
 
-### <a name="position-d-gain"></a><a name="position-i-gain"></a><a name="position-p-gain"></a>**[Position PID Gain(528,530,532), Feedforward 1st Gains(538)](#position-pid-gain528-530-532, Feedforward 1st Gains(538))**
-{% include kr/dxl/pro-plus/control_table_528_position_gain.md %}
+|                      | 제어기 Gain     | 범위 | 설명 |
+| :------------:       | :------------: | :------------: |
+| Velocity I Gain(524) | K<sub>V</sub>I | 0 ~ 32,767 | Velocity Integral Gain |
+| Velocity P Gain(526) | K<sub>V</sub>P | 0 ~ 32,767 | Velocity Proportion Gain |
+| Position D Gain(528) | K<sub>P</sub>D | 0 ~ 32,767 | Position Differential Gain |
+| Position I Gain(530) | K<sub>P</sub>I | 0 ~ 32,767 | Position Integral Gain |
+| Position P Gain(532) | K<sub>P</sub>P | 0 ~ 32,767 | Position Proportion Gain |
+| Feedforward 2nd Gain(536) | K<sub>FF1st</sub> | 0 ~ 32,767 | Feedforward Acceleration Gain |
+| Feedforward 1st Gain(538) | K<sub>FF1st</sub> | 0 ~ 32,767 | Feedforward Velocity Gain |
+
+다음은 전류기반 위치 제어 모드에서 동작하는 위치제어기의 블록다이어그램입니다. 사용자의 요청이 장치에 전달된 후, 장치의 Horn이 구동되기까지의 과정은 다음과 같습니다.
+
+1. 사용자의 요청이 통신 버스를 통해 Goal Position(564)에 등록됩니다.
+2. Goal Position은 Profile Velocity(560)와 Profile Acceleration(556)에 의해서 목표 위치 궤적과 목표 속도 궤적으로 변경됩니다.
+3. 목표 속도 궤적과 목표 위치 궤적은 Velocity Trajectory(584), Position Trajectory(588)에 표기됩니다.
+4. Feedforward와 PID 제어기는 목표 궤적을 입력받아 모터에 인가할 PWM 출력을 계산합니다.
+5. Goal PWM(548)은 계산된 PWM 출력을 제한하여 최종 PWM값을 결정합니다.
+6. 최종 PWM값은 Inverter를 통해 모터에 적용되고 장치의 Horn이 구동됩니다.
+7. 구동 결과는 Present Position(580), Present Velocity(576), Present PWM(572), Present Current(574)에 표기됩니다.
+
+![](/assets/images/platform/rh_p12_rn/rh_p12_rn_a_position.png)
+
+**참고** : K<sub>a</sub>는 Anti-windup Gain로서 사용자가 변경할 수는 없습니다.
+{: .notice}
 
 ### <a name="bus-watchdog"></a>**[Bus Watchdog(546)](#bus-watchdog546)**
 {% include kr/dxl/pro-plus/control_table_546_bus_watchdog.md %}
@@ -278,10 +293,12 @@ RH-P12-RN(A)의 펌웨어 버전입니다.
 {% include kr/dxl/pro-plus/control_table_548_goal_pwm.md %}
 
 ### <a name="goal-current"></a>**[Goal Current(550)](#goal-current550)**
-{% include kr/dxl/pro-plus/control_table_550_goal_current.md %}
+전류 제어 모드에서는 목표 전류값으로 동작합니다. 전류기반 위치 제어 모드에서는 전류 제어기 입력(전류)의 제한값으로 동작됩니다.
+이 값은 Current Limit(38) 보다 큰 값을 쓸 수 없습니다.
 
 ### <a name="goal-velocity"></a>**[Goal Velocity(552)](#goal-velocity552)**
-{% include kr/dxl/pro-plus/control_table_552_goal_velocity.md %}
+속도 제어기 입력(속도)의 제한값으로 동작됩니다.
+이 값은 Velocity Limit(44) 보다 큰 값을 쓸 수 없습니다.  
 
 ### <a name="profile-acceleration"></a>**[Profile Acceleration(556)](#profile-acceleration556)**
 {% include kr/dxl/pro-plus/control_table_556_profile_acceleration.md %}
