@@ -13432,11 +13432,11 @@ rplusmotion2:
     - title: "Convert mtn File"
       titlekr: "구 버전 파일(*.mtn) 변환하기"
       url: /software/rplus2/motion/#convert-mtn-file
-      urlkr: /software/rplus2/motion/#구-버전-파일-mtn-변환하기
+      urlkr: /software/rplus2/motion/#구-버전-파일mtn-변환하기
     - title: "Control 3D Camera"
       titlekr: "3D 카메라 조작"
       url: /software/rplus2/motion/#control-3d-camera
-      urlkr: /software/rplus2/motion/#3D-카메라-조작
+      urlkr: /software/rplus2/motion/#3d-카메라-조작
     - title: "Shortcut Keys"
       titlekr: "단축키"
       url: /software/rplus2/motion/#shortcut-keys
