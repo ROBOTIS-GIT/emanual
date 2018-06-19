@@ -13167,7 +13167,7 @@ rplusmanager2:
     - title: "Preparation for XM/XH Series"
       titlekr: "XM/XH 시리즈 사용전 준비"
       url: /software/rplus2/manager/#preparation-for-xmxh-series
-      urlkr: /software/rplus2/manager/#xh-xh-시리즈-사용전-준비
+      urlkr: /software/rplus2/manager/#xhxh-시리즈-사용전-준비
     - title: "Changing Control Value"
       titlekr: "컨트롤 아이템 값 변경"
       url: /software/rplus2/manager/#changing-control-value
@@ -13379,11 +13379,11 @@ rplusmotion2:
     - title: "Edit Motion Unit(3D Robot)"
       titlekr: "모션 유닛 편집하기(3D 로봇 활용)"
       url: /software/rplus2/motion/#edit-motion-unit3d-robot
-      urlkr: /software/rplus2/motion/#모션-유닛-편집하기-3D-로봇-활용
+      urlkr: /software/rplus2/motion/#모션-유닛-편집하기3d-로봇-활용
     - title: "Edit Motion Unit(Actual Robot)"
       titlekr: "모션 유닛 편집하기2(실제 로봇 활용)"
       url: /software/rplus2/motion/#edit-motion-unitactual-robot
-      urlkr: /software/rplus2/motion/#모션-유닛-편집하기2-실제-로봇-활용
+      urlkr: /software/rplus2/motion/#모션-유닛-편집하기2실제-로봇-활용
     - title: "Create New Motion"
       titlekr: "새 모션 만들기"
       url: /software/rplus2/motion/#create-new-motion
@@ -13432,11 +13432,11 @@ rplusmotion2:
     - title: "Convert mtn File"
       titlekr: "구 버전 파일(*.mtn) 변환하기"
       url: /software/rplus2/motion/#convert-mtn-file
-      urlkr: /software/rplus2/motion/#구-버전-파일-mtn-변환하기
+      urlkr: /software/rplus2/motion/#구-버전-파일mtn-변환하기
     - title: "Control 3D Camera"
       titlekr: "3D 카메라 조작"
       url: /software/rplus2/motion/#control-3d-camera
-      urlkr: /software/rplus2/motion/#3D-카메라-조작
+      urlkr: /software/rplus2/motion/#3d-카메라-조작
     - title: "Shortcut Keys"
       titlekr: "단축키"
       url: /software/rplus2/motion/#shortcut-keys
@@ -14651,10 +14651,10 @@ embedded_c_cm510:
     titlekr: "개요"
     url: /software/embedded_sdk/embedded_c_cm510/#introduction
     urlkr: /software/embedded_sdk/embedded_c_cm510/#개요
-  - title: "CM-510/700"
-    titlekr: "CM-510/700"
-    url: /software/embedded_sdk/embedded_c_cm510/#cm-510700
-    urlkr: /software/embedded_sdk/embedded_c_cm510/#cm-510700
+  - title: "CM-510, CM-700"
+    titlekr: "CM-510, CM-700"
+    url: /software/embedded_sdk/embedded_c_cm510/#cm-510-cm-700
+    urlkr: /software/embedded_sdk/embedded_c_cm510/#cm-510-cm-700
     children:
     - title: "Getting Started"
       titlekr: "시작하기"
@@ -14957,30 +14957,45 @@ cm-200:
 #CM-5 Controller sidebar
 cm-5:
   - title: "Introduction"
-    titlekr: "개요"
+    titlekr: "부품 사진"
     url: /parts/controller/cm-5/#introduction
+    urlkr: /parts/controller/cm-5/#부품-사진
   - title: "Specifications"
-    titlekr: "제품 사양"
+    titlekr: "주요 사양"
     url: /parts/controller/cm-5/#specifications
+    urlkr: /parts/controller/cm-5/#주요-사양
   - title: "Layout"
     titlekr: "각 부 명칭"
     url: /parts/controller/cm-5/#layout
+    urlkr: /parts/controller/cm-5/#각-부-명칭
   - title: "Connecting Power"
     titlekr: "전원 연결"
     url: /parts/controller/cm-5/#connecting-power
+    urlkr: /parts/controller/cm-5/#전원-연결
   - title: "How to Operate"
     titlekr: "작동 방법"
     url: /parts/controller/cm-5/#how-to-operate
+    urlkr: /parts/controller/cm-5/#작동-방법
   - title: "Connect to PC"
-    titlekr: "PC 연결"
+    titlekr: "활용 방법"
     url: /parts/controller/cm-5/#connect-to-pc
+    urlkr: /parts/controller/cm-5/#활용-방법
+  - titlekr: "PC 연결"
+    urlkr: /parts/controller/cm-5/#pc-연결
   - title: "Wireless Communication"
     titlekr: "무선통신 연결"
     url: /parts/controller/cm-5/#wireless-communication
+    urlkr: /parts/controller/cm-5/#무선-통신-모듈-연결
   - title: "Charging"
+    titlekr: "충전 하기"
     url: /parts/controller/cm-5/#charging
+    urlkr: /parts/controller/cm-5/#충전-하기
   - title: "Fuse Replacement"
+    titlekr: "퓨즈 교체하기"
     url: /parts/controller/cm-5/#fuse-replacement
+    urlkr: /parts/controller/cm-5/#퓨즈-교체하기
+  - titlekr: "관련동영상"
+    urlkr: /parts/controller/cm-5/#관련동영상
 
 #CM-510 Controller sidebar
 cm-510:
