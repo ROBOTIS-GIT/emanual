@@ -10,11 +10,11 @@ Windows 용 Dynamixel SDK 를 이하의 링크에서 다운로드 하실 수 있
 <br>
 - 이전 버전
  통신 1.0 DXL을 사용 할 경우 아래의 SDK를 다운 받습니다.
- `download`[DXL_SDK_Win32_ v1_02.zip](http://support.robotis.com/ko/baggage_files/dynamixel_sdk/dxl_sdk_win32_v1_02.zip)
- `download`[DXL_SDK_Win64_ v1_02.zip](http://support.robotis.com/ko/baggage_files/dynamixel_sdk/dxl_sdk_win64_v1_02.zip)<br>
+ `다운로드`[DXL_SDK_Win32_ v1_02.zip](http://support.robotis.com/ko/baggage_files/dynamixel_sdk/dxl_sdk_win32_v1_02.zip)
+ `다운로드`[DXL_SDK_Win64_ v1_02.zip](http://support.robotis.com/ko/baggage_files/dynamixel_sdk/dxl_sdk_win64_v1_02.zip)<br>
  통신 2.0 DXL을 사용 할 경우 아래의 SDK를 다운 받습니다.
- `download`[DXL_SDK_Win32_ v2_02.zip](http://support.robotis.com/ko/baggage_files/dynamixel_sdk/dxl_sdk_win32_v2_02.zip)
- `download`[DXL_SDK_Win64_ v2_02.zip](http://support.robotis.com/ko/baggage_files/dynamixel_sdk/dxl_sdk_win64_v2_02.zip)
+ `다운로드`[DXL_SDK_Win32_ v2_02.zip](http://support.robotis.com/ko/baggage_files/dynamixel_sdk/dxl_sdk_win32_v2_02.zip)
+ `다운로드`[DXL_SDK_Win64_ v2_02.zip](http://support.robotis.com/ko/baggage_files/dynamixel_sdk/dxl_sdk_win64_v2_02.zip)
 
  ```
  로보티즈의 Dynamixel SDK 는 3-clause BSD license 하에 사용하실 수 있습니다.

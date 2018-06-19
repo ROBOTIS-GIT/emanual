@@ -362,8 +362,8 @@ RH-P12-RN(A)의 펌웨어 버전입니다.
 [MOLEX 50079-8100]: http://www.molex.com/molex/products/datasheet.jsp?part=active/0500798100_CRIMP_TERMINALS.xml
 
 ## [도면](#도면)
-`Download` [RH-P12-RN(PDF).zip](http://www.robotis.com/service/download.php?no=740)  
-`Download` [RH-P12-RN(STP).zip](http://www.robotis.com/service/download.php?no=741)
+`다운로드` [RH-P12-RN(PDF).zip](http://www.robotis.com/service/download.php?no=740)  
+`다운로드` [RH-P12-RN(STP).zip](http://www.robotis.com/service/download.php?no=741)
 
 
 [PDF]: http://support.robotis.com/en/baggage_files/dynamixel/rh-p12-rn.pdf
