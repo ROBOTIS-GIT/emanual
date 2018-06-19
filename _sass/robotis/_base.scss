@@ -16,13 +16,14 @@ html {
   position: relative;
   min-height: 100%;
 }
+:lang(en) {font-family: $global-font-family;}
+:lang(kr) {font-family: $global-kr-font-family;}
 
 body {
   counter-reset: h1;
   margin: 0;
   padding: 0;
   color: $text-color;
-  font-family: $global-font-family;
   line-height: 1.5;
 
   &.overflow--hidden {

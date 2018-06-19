@@ -5,6 +5,7 @@
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
 -->
+<!-- <html lang="en" class="no-js"> -->
 <html lang="en" class="no-js">
   <head>
     <meta charset="utf-8">
@@ -152,13 +153,14 @@ $(function() {
 </script>
 <!-- insert favicons. use http://realfavicongenerator.net/ -->
 <link rel="shortcut icon" type="image/x-icon" href="//www.robotis.com/img/common/favicon_16x16_ver1701.ico">
+<link type="text/css" rel="stylesheet" charset="UTF-8" href="http://fonts.googleapis.com/earlyaccess/notosanskr.css">
 <!-- end custom head snippets -->
 
     <script>
       var toggle_google = 0;
       var toggle_search_tool = 0;
       var mobile_width = 960;
-      
+
       function extendgoogletool() {
         if (toggle_google == 0) {
           google_tools.classList.add("extend_googletools");
@@ -171,7 +173,7 @@ $(function() {
           toggle_google = 0;
         }
       }
-      
+
       function extendsearchtool() {
         if (toggle_search_tool == 0) {
           $('#site_search').css('display', 'block');
@@ -210,7 +212,7 @@ $(function() {
 
             if (distance < 30 && distance > -30 && currentHash != hash) {
               currentHash = hash;
-              console.log(currentHash);
+              // console.log(currentHash);
               window.history.pushState(window.location.href, "title", currentHash);   //Update browser URL with current anchor
               // $('#' + currentHash).attr("color", "#FF6D6D"); //Syntax error
             }
@@ -226,12 +228,12 @@ $(function() {
         $('.extend_sidebar').css('top', offset);
         $('.local_navigation').css('top', offset);    //sticky local navigation
         $('.searchbox').css('top', offset);           //sticky searchbox
-        console.log(window.scrollY);
+        // console.log(window.scrollY);
       };
     </script>
     <script>
       var toggle = 0;
-      
+
       function extendnav() {
         if (toggle == 0) {
           sidebar__left.classList.add("extend_sidebar");
@@ -5731,8 +5733,8 @@ The followings are detectable situations.</p>
   </tbody>
 </table>
 
-<div class="notice--warning">
-<p><strong>WARNING</strong> :<br />
+<div class="notice">
+<p><strong>NOTE</strong> :<br />
 The LED indicates present status of the device.</p>
 
 <table>
@@ -5748,7 +5750,7 @@ The LED indicates present status of the device.</p>
       <td style="text-align: center">LED flickers once</td>
     </tr>
     <tr>
-      <td style="text-align: center">Reset</td>
+      <td style="text-align: center">Factory Reset</td>
       <td style="text-align: center">LED flickers 4 times</td>
     </tr>
     <tr>
@@ -5757,7 +5759,7 @@ The LED indicates present status of the device.</p>
     </tr>
     <tr>
       <td style="text-align: center">Slave Mode(MX-106)</td>
-      <td style="text-align: center">LED On</td>
+      <td style="text-align: center">LED flickers 3 times</td>
     </tr>
     <tr>
       <td style="text-align: center">Boot Mode</td>

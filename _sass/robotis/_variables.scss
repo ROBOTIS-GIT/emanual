@@ -25,12 +25,13 @@ $times                      : Times, serif !default;
 $bodoni                     : "Bodoni MT", serif !default;
 $calisto                    : "Calisto MT", serif !default;
 $garamond                   : Garamond, serif !default;
-$titillium-webkit           : titillium-web, sans-serif !default;
+$titillium-webkit           : titillium-web, sans-serif, FontAwesome !default;
 
 // $global-font-family         : $sans-serif !default;
 // $header-font-family         : $sans-serif !default;
 $global-font-family         : $titillium-webkit !default;
 $header-font-family         : $titillium-webkit !default;
+$global-kr-font-family      : "Noto Sans KR", sans-serif, FontAwesome;
 $caption-font-family        : $serif !default;
 
 $text-color                 : #333333 !default;

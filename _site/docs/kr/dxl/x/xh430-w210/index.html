@@ -5,7 +5,8 @@
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
 -->
-<html lang="en" class="no-js">
+<!-- <html lang="en" class="no-js"> -->
+<html lang="kr" class="no-js">
   <head>
     <meta charset="utf-8">
 
@@ -152,13 +153,14 @@ $(function() {
 </script>
 <!-- insert favicons. use http://realfavicongenerator.net/ -->
 <link rel="shortcut icon" type="image/x-icon" href="//www.robotis.com/img/common/favicon_16x16_ver1701.ico">
+<link type="text/css" rel="stylesheet" charset="UTF-8" href="http://fonts.googleapis.com/earlyaccess/notosanskr.css">
 <!-- end custom head snippets -->
 
     <script>
       var toggle_google = 0;
       var toggle_search_tool = 0;
       var mobile_width = 960;
-      
+
       function extendgoogletool() {
         if (toggle_google == 0) {
           google_tools.classList.add("extend_googletools");
@@ -171,7 +173,7 @@ $(function() {
           toggle_google = 0;
         }
       }
-      
+
       function extendsearchtool() {
         if (toggle_search_tool == 0) {
           $('#site_search').css('display', 'block');
@@ -210,7 +212,7 @@ $(function() {
 
             if (distance < 30 && distance > -30 && currentHash != hash) {
               currentHash = hash;
-              console.log(currentHash);
+              // console.log(currentHash);
               window.history.pushState(window.location.href, "title", currentHash);   //Update browser URL with current anchor
               // $('#' + currentHash).attr("color", "#FF6D6D"); //Syntax error
             }
@@ -226,12 +228,12 @@ $(function() {
         $('.extend_sidebar').css('top', offset);
         $('.local_navigation').css('top', offset);    //sticky local navigation
         $('.searchbox').css('top', offset);           //sticky searchbox
-        console.log(window.scrollY);
+        // console.log(window.scrollY);
       };
     </script>
     <script>
       var toggle = 0;
-      
+
       function extendnav() {
         if (toggle == 0) {
           sidebar__left.classList.add("extend_sidebar");
@@ -4689,7 +4691,7 @@ $(function() {
 </div>
 
 <h2 id="성능-그래프"><a href="#성능-그래프">성능 그래프</a></h2>
-<p><img src="/assets/images/dxl/x/xh430_w210_performance_graph.jpg" alt="" /></p>
+<p><img src="/assets/images/dxl/x/xh430_w210_performance_graph_2.jpg" alt="" /></p>
 
 <p class="notice"><strong>주의</strong>: 스톨 토크와 Performance Graph의 Max torque의 차이는 측정 방식에 기인합니다. 스톨 토크는 순간적인 최대토크를 측정하는 방식으로, 고전적인 RC Servo 제품에서 주로 사용하는 사양입니다. Performance Graph는 N-T Curve라고도 불리며, 부하(load)를 점진적으로 증가시키면서 측정됩니다. 모터 구동되는 환경은 스톨 토크 측정 방식보다는 Performance Graph 측정 방식에 가깝습니다. 이러한 이유로 Performance Graph가 산업전반에서 보다 폭넓게 사용됩니다. 일반적으로 Performance Graph의 Max torque는 스톨 토크보다 적게 측정됩니다.</p>
 
@@ -5975,8 +5977,8 @@ Shutdown(63)에서 감지할 수 있는 위험 상황은 아래 표와 같습니
   </tbody>
 </table>
 
-<div class="notice--warning">
-<p><strong>주의</strong> :<br />
+<div class="notice">
+<p><strong>참고</strong> :<br />
 (장치의 상태(조건)에 따른 LED의 동작입니다.)</p>
 
 <table>
@@ -5992,7 +5994,7 @@ Shutdown(63)에서 감지할 수 있는 위험 상황은 아래 표와 같습니
       <td style="text-align: center">1회 점멸</td>
     </tr>
     <tr>
-      <td style="text-align: center">초기화</td>
+      <td style="text-align: center">공장 초기화</td>
       <td style="text-align: center">4회 점멸</td>
     </tr>
     <tr>
@@ -6725,9 +6727,9 @@ Dynamixel SDK 또는 Dynamixel Workbench를 이용할 수도 있습니다.</p>
 
 <h2 id="도면"><a href="#도면">도면</a></h2>
 <ul>
-  <li><code class="highlighter-rouge">Download</code> <a href="http://www.robotis.com/service/download.php?no=157">X_430_idle_ref.pdf</a></li>
+  <li><code class="highlighter-rouge">다운로드</code> <a href="http://www.robotis.com/service/download.php?no=157">X_430_idle_ref.pdf</a></li>
   <li><code class="highlighter-rouge">Downlaod</code> <a href="http://www.robotis.com/service/download.php?no=156">X-430_idle_ref.dwg</a></li>
-  <li><code class="highlighter-rouge">Download</code> <a href="http://www.robotis.com/service/download.php?no=158">x-430_idle.stp</a></li>
+  <li><code class="highlighter-rouge">다운로드</code> <a href="http://www.robotis.com/service/download.php?no=158">x-430_idle.stp</a></li>
 </ul>
 
 
