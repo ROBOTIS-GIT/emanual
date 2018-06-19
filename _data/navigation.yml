@@ -6184,7 +6184,7 @@ h42-20-s300-ra:
           url: /dxl/pro/h42-20-s300-ra/#pwm-limit36
         - title: "Current Limit(38)"
           titlekr: "Current Limit(38)"
-          url: /dxl/pro/h42-20-s300-ra/#current-limit38  
+          url: /dxl/pro/h42-20-s300-ra/#current-limit38
         - title: "Acceleration Limit(40)"
           titlekr: "Acceleration Limit(40)"
           url: /dxl/pro/h42-20-s300-ra/#acceleration-limit40
@@ -6589,7 +6589,7 @@ h54-100-s500-ra:
           url: /dxl/pro/h54-100-s500-ra/#pwm-limit36
         - title: "Current Limit(38)"
           titlekr: "Current Limit(38)"
-          url: /dxl/pro/h54-100-s500-ra/#current-limit38  
+          url: /dxl/pro/h54-100-s500-ra/#current-limit38
         - title: "Acceleration Limit(40)"
           titlekr: "Acceleration Limit(40)"
           url: /dxl/pro/h54-100-s500-ra/#acceleration-limit40
@@ -6994,7 +6994,7 @@ h54-200-s500-ra:
           url: /dxl/pro/h54-200-s500-ra/#pwm-limit36
         - title: "Current Limit(38)"
           titlekr: "Current Limit(38)"
-          url: /dxl/pro/h54-200-s500-ra/#current-limit38  
+          url: /dxl/pro/h54-200-s500-ra/#current-limit38
         - title: "Acceleration Limit(40)"
           titlekr: "Acceleration Limit(40)"
           url: /dxl/pro/h54-200-s500-ra/#acceleration-limit40
@@ -8303,7 +8303,7 @@ m42-10-s260-ra:
           url: /dxl/pro/m42-10-s260-ra/#pwm-limit36
         - title: "Current Limit(38)"
           titlekr: "Current Limit(38)"
-          url: /dxl/pro/m42-10-s260-ra/#current-limit38  
+          url: /dxl/pro/m42-10-s260-ra/#current-limit38
         - title: "Acceleration Limit(40)"
           titlekr: "Acceleration Limit(40)"
           url: /dxl/pro/m42-10-s260-ra/#acceleration-limit40
@@ -8708,7 +8708,7 @@ m54-40-s250-ra:
           url: /dxl/pro/m54-40-s250-ra/#pwm-limit36
         - title: "Current Limit(38)"
           titlekr: "Current Limit(38)"
-          url: /dxl/pro/m54-40-s250-ra/#current-limit38  
+          url: /dxl/pro/m54-40-s250-ra/#current-limit38
         - title: "Acceleration Limit(40)"
           titlekr: "Acceleration Limit(40)"
           url: /dxl/pro/m54-40-s250-ra/#acceleration-limit40
@@ -9113,7 +9113,7 @@ m54-60-s250-ra:
           url: /dxl/pro/m54-60-s250-ra/#pwm-limit36
         - title: "Current Limit(38)"
           titlekr: "Current Limit(38)"
-          url: /dxl/pro/m54-60-s250-ra/#current-limit38  
+          url: /dxl/pro/m54-60-s250-ra/#current-limit38
         - title: "Acceleration Limit(40)"
           titlekr: "Acceleration Limit(40)"
           url: /dxl/pro/m54-60-s250-ra/#acceleration-limit40
@@ -11130,7 +11130,7 @@ rh_p12_rna:
             url: /platform/rh_p12_rna/#pwm-limit36
           - title: "Current Limit(38)"
             titlekr: "Current Limit(38)"
-            url: /platform/rh_p12_rna/#current-limit38  
+            url: /platform/rh_p12_rna/#current-limit38
           - title: "Acceleration Limit(40)"
             titlekr: "Acceleration Limit(40)"
             url: /platform/rh_p12_rna/#acceleration-limit40
@@ -11624,7 +11624,7 @@ turtlebot3:
       - title: "Computer"
         url: /platform/turtlebot3/compatible_devices/#computer
       - title: "Sensors"
-        url: /platform/turtlebot3/compatible_devices/#sensors         
+        url: /platform/turtlebot3/compatible_devices/#sensors
   - title: "Bringup"
     url: /platform/turtlebot3/bringup/#bringup
     children:
@@ -11700,7 +11700,7 @@ turtlebot3:
     - title: "Send Navigation Goal"
       url: /platform/turtlebot3/navigation/#send-navigation-goal
     - title: "Tuning Guide"
-      url: /platform/turtlebot3/navigation/#tuning-guide     
+      url: /platform/turtlebot3/navigation/#tuning-guide
     - title: "References"
       url: /platform/turtlebot3/navigation/#references
   - title: "Simulation"
@@ -11774,7 +11774,7 @@ turtlebot3:
     - title: "Step. 3 (Moving Obstacle)"
       url: /platform/turtlebot3/machine_learning/#step-3-moving-obstacle
     - title: "Step.  (Combination Obstacle)"
-      url: /platform/turtlebot3/machine_learning/#step-4-combination-obstacle          
+      url: /platform/turtlebot3/machine_learning/#step-4-combination-obstacle
   - title: "Locomotion"
     url: /platform/turtlebot3/locomotion/#locomotion
     children:
@@ -13408,11 +13408,11 @@ rplusmotion2:
     - title: "Create Custom Robot"
       titlekr: "자유 형태 로봇 생성(사용자 로봇)"
       url: /software/rplus2/motion/#create-custom-robot
-      urlkr: /software/rplus2/motion/#자유-형태-로봇-생성-사용자-로봇
+      urlkr: /software/rplus2/motion/#자유-형태-로봇-생성사용자-로봇
     - title: "Change 3D Robot"
       titlekr: "3D 로봇 변경"
       url: /software/rplus2/motion/#change-3d-robot
-      urlkr: /software/rplus2/motion/#3D-로봇-변경
+      urlkr: /software/rplus2/motion/#3d-로봇-변경
     - title: "Pose Mirroring"
       titlekr: "포즈 미러링"
       url: /software/rplus2/motion/#pose-mirroring
