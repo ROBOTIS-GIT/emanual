@@ -116,7 +116,7 @@ sidebar:
 
 ## [컨트롤 테이블 설명](#컨트롤-테이블-설명)
 
-`주의` EEPROM Area에 존재하는 모든 Data는 Torque Enable(562)의 값이 ‘0’일 때만 변경할 수 있습니다.
+**주의**: EEPROM Area에 존재하는 모든 Data는 Torque Enable(562)의 값이 ‘0’일 때만 변경할 수 있습니다.
 {: .notice--warning}
 
 ### <a name="model-number"></a>**[Model Number(0)](#model-number0)**
@@ -404,8 +404,8 @@ Goal Velocity(600)가 ‘0’인 경우, Profile 이 비활성화 되어 Goal Ac
 [MOLEX 50079-8100]: http://www.molex.com/molex/products/datasheet.jsp?part=active/0500798100_CRIMP_TERMINALS.xml
 
 ## [도면](#도면)
-`Download` [RH-P12-RN(PDF).zip](http://www.robotis.com/service/download.php?no=740)  
-`Download` [RH-P12-RN(STP).zip](http://www.robotis.com/service/download.php?no=741)
+`다운로드` [RH-P12-RN(PDF).zip](http://www.robotis.com/service/download.php?no=740)  
+`다운로드` [RH-P12-RN(STP).zip](http://www.robotis.com/service/download.php?no=741)
 
 
 [PDF]: http://support.robotis.com/en/baggage_files/dynamixel/rh-p12-rn.pdf

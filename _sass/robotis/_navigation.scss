@@ -90,6 +90,12 @@
 
 .nav__items li ul li {
   padding-right: 10px;
+  border-right: 1px solid #EBEBEB;
+}
+
+.nav__items li ul li ul li{
+  padding-right: 10px;
+  border-right: 0;
 }
 
 .nav__items input[type=checkbox] {
@@ -274,6 +280,7 @@
   max-width: $sidebar_width - 60;
   background-color: transparent;
   font-size: 14px;
+  font-weight: 200;
   color: #434445;
   overflow: hidden;
   white-space: nowrap;

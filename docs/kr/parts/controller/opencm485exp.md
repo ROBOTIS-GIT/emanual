@@ -135,7 +135,7 @@ OpenCM 485  확장보드에는 OpenCM9.04의 IO핀과 연결된 버튼 2개와 
 
 # [다운로드](#다운로드)
 
-- `Download` [SCHEMATIC-OpenCM 485 EXP.pdf]
+- `다운로드` [SCHEMATIC-OpenCM 485 EXP.pdf]
 
 
 

@@ -54,7 +54,7 @@ sidebar:
 |4|1|[Baud Rate](#baud-rate)           |통신 속도|RW|1|
 |5|1|[Return Delay Time](#return-delay-time)   |응답 지연 시간|RW|250|
 |6|2|[CW Angle Limit](#cw-angle-limit)          |시계 방향 한계 각도 값의 바이트|RW|0|
-|8|2|[CCW Angle Limit](#ccw-angle-limit)          |반시계 방향 한계 각도 값의 바이트|RW|4095|
+|8|2|[CCW Angle Limit](#ccw-angle-limit)          |반시계 방향 한계 각도 값의 바이트|RW|4,095|
 |11|1|[Temperature Limit](#temperature-limit)   |내부 한계 온도|RW|70|
 |12|1|[Min Voltage Limit](#min-voltage-limit)   |최저 한계 전압|RW|60|
 |13|1|[Max Voltage Limit](#max-voltage-limit)   |최고 한계 전압|RW|160|
@@ -168,7 +168,7 @@ Value 값이 250 이상인 경우 :
   1,024 ~ 2,047 범위의 값을 사용하면 CW 방향으로 회전하며 1,024으로 설정하면 정지합니다.  
   즉, 10번째 bit가 방향을 제어하는 direction bit가 됩니다.
 
-  **NOTE** : 해당 모델의 최대 속도를 확인하시기 바랍니다. 최대 속도 이상을 설정해도 모터는 그 이상의 속도를 낼 수 없습니다.
+  **주의**: 해당 모델의 최대 속도를 확인하시기 바랍니다. 최대 속도 이상을 설정해도 모터는 그 이상의 속도를 낼 수 없습니다.
   {: .notice}
 
 ### <a name="torque-limit"></a>**[Torque Limit (34)](#torque-limit-34)**
@@ -210,7 +210,7 @@ Value 값이 250 이상인 경우 :
 ### <a name="realtime-tick"></a>**[Realtime-Tick (50)](#realtime-tick-50)**
 {% include kr/dxl/control_table_realtime_tick.md %}
 
-**NOTE** : 펌웨어 버전 41 이상부터 사용 가능합니다.
+**주의**: 펌웨어 버전 41 이상부터 사용 가능합니다.
 {: .notice}
 
 ### <a name="goal-acceleration"></a>**[Goal Acceleration (73)](#goal-acceleration-73)**
@@ -226,7 +226,7 @@ Value 값이 250 이상인 경우 :
 
 # [참고자료](#참고자료)
 
-**NOTE** : [호환성 가이드]
+**주의**: [호환성 가이드]
 {: .notice}
 
 ## [커넥터 정보](#커넥터-정보)

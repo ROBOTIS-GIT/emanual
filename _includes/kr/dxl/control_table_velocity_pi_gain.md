@@ -19,7 +19,7 @@
 ![](/assets/images/dxl/velocity_controller_pi_gain.jpg)
 
 
-**NOTE** : K<sub>a</sub>는 Anti-windup Gain이고 &beta;는 위치와 속도의 변환계수로 사용자가 변경할 수는 없습니다. PID 제어기에 대한 자세한 설명은 위키피디아의 [PID Controller]를 참고하세요.
+**참고** : K<sub>a</sub>는 Anti-windup Gain이고 &beta;는 위치와 속도의 변환계수로 사용자가 변경할 수는 없습니다. PID 제어기에 대한 자세한 설명은 위키피디아의 [PID Controller]를 참고하세요.
 {: .notice}
 
 [PID Controller]: http://en.wikipedia.org/wiki/PID_controller

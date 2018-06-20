@@ -560,11 +560,11 @@ void loop() {
 
 Read an analog value from pin. This function blocks during ADC conversion, and has 12 bits of resolution. The pin must have its mode set to INPUT_ANALOG.  
 Reads the value from the specified analog pin. The OpenCM boards contain 16-channel, 12-bit analog to digital converters.  
-This means that a converter will map input voltages between 0 and 3.3 volts into integer values between 0 and 4095.  
+This means that a converter will map input voltages between 0 and 3.3 volts into integer values between 0 and 4,095.  
 However, a number of factors interfere with getting full accuracy and precision.  
 
 The Arduino board contains a 6 channel (8 channels on the Mini and Nano, 16 on the Mega), 10-bit analog to digital converter with an input voltage range of 0V–5V.  
-This means that it will map input voltages between 0 and 5 volts (which is larger than OpenCM’s range of 0V-3.3V) into integer values between 0 and 1023 (which is smaller than the OpenCM’s range of 0–4095).  
+This means that it will map input voltages between 0 and 5 volts (which is larger than OpenCM’s range of 0V-3.3V) into integer values between 0 and 1023 (which is smaller than the OpenCM’s range of 0–4,095).  
  
 ```c
 uint16 analogRead(uint8 pin)
@@ -579,7 +579,7 @@ The pins which support analog to digital conversion have ANALOG IN printed in si
  
 #### Return Values
  
-- Converted voltage, in the range 0–4095, (i.e. a 12-bit ADC conversion).
+- Converted voltage, in the range 0–4,095, (i.e. a 12-bit ADC conversion).
  
 #### Example
  
@@ -628,7 +628,7 @@ void setup() {
 void loop() {
   int val = analogRead(analogPin);        // read the input pin
   analogWrite(BOARD_LED_PIN, val * 16);  // analogRead values go from 0
-                                      // to 4095, pwmWrite values
+                                      // to 4,095, pwmWrite values
                                       // from 0 to 65535, so scale roughly
 }
 ```
@@ -1825,7 +1825,7 @@ void setup() {
 }
 void loop() {
     int val = analogRead(0);
-    val = map(val, 0, 4095, 0, 65535);
+    val = map(val, 0, 4,095, 0, 65535);
     analogWrite(9, val);
 }
 ```
