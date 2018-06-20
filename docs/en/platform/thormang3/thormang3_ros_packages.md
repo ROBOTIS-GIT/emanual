@@ -1778,7 +1778,7 @@ The action file will be used with [thormang3_action_module].
 
 #### Action File
 The action file is in the "thormang3_action_module/data" folder. The action file is a file that contains THORMANG3’s poses and time data.  
-The data is written that the positions of dynamixels which converted from original resolution to 4095 resolution.
+The data is written that the positions of dynamixels which converted from original resolution to 4,095 resolution.
 And the action file is binaries file you cannot view its contents directly. User can view its contents with thormang3_action_editor.  
 ROBOTIS currently supplies a default action file with the source code. They are located in "thormang3_action_module/data" directory.  
 
@@ -1801,7 +1801,7 @@ $ roslaunch thormang3_action_editor thormang3_action_editor.launch
 
 - **Page number**: Page number is the listed page number. If user wants to create a new action poses, user can use any empty page.  
 - **Page title**: We'd like to recommend to user that they use a page title, if they will make a new action on an empty page.  
-- **Current position**: This is the current position of dynamixels which converted from original resolution to 4095 resolution. This data is represented by STP7 in thormang3_action_editor. Sometimes the position may read as ---- in thormang3_action_editor. This means position of the dynamixel is not being read (or its torque is off).  
+- **Current position**: This is the current position of dynamixels which converted from original resolution to 4,095 resolution. This data is represented by STP7 in thormang3_action_editor. Sometimes the position may read as ---- in thormang3_action_editor. This means position of the dynamixel is not being read (or its torque is off).  
   If user turn a dynamixel off, user cannot get current position reading until user turn it back on.  
   User can turn off any or all dynamixels. This is very convenient to make robot poses rather than entering position values.  
   For example, if user wants to make a new robot pose, user simply turns any dynamixels off, makes the robot pose, and turn the dynamixels back on at that robot pose. Once turning on, user will get the pose values.  
@@ -1810,7 +1810,7 @@ $ roslaunch thormang3_action_editor thormang3_action_editor.launch
 - **Play Count**: “Play Count” is the number of times the action of the page is to be played.  
 - **Exit**: There may be times when an action is stopped. In this case, the robot may be in an unstable position. “Exit” is much like "Next", so "Exit" should be linked to a page where THORMANG3 can return to a stable pose.if "Exit" is 0, it means that there is  no link to exit page linked (default value).  
   `Tip` When calling an action requires multiple pages, we strongly suggest that user call that action from the starting page. For example “clap” starts at page 7 and ends at page 8. This means you should call page 7 when calling “clap.” Calling the page 8 may cause the robot to perform abnormally.  
-- **STP7**: "STP7" column is the current position of the dynamixels which converted to 4095 resolution from its original resolution. "----" means that torque has been released.  
+- **STP7**: "STP7" column is the current position of the dynamixels which converted to 4,095 resolution from its original resolution. "----" means that torque has been released.  
 - **PauseTime**: "PauseTime" is the pause for motion playback for step STP[x].  
 - **Time(x 8msec)** : "Time" is the time period for THORMANG3 to complete step STP[x]. Each time unit account for 8ms of time.  
 

@@ -110,7 +110,7 @@ OpenCM 485 EXP’s Dynamixel 485 bus operates as a Dynamixel bus using OpenCM9.0
       Dxl.writeWord(2, 30, 0);
       delay(1000);              
       Dxl.writeWord(6, 30, 1023);
-      Dxl.writeWord(2, 30, 4095);
+      Dxl.writeWord(2, 30, 4,095);
       delay(1000);
     }
     ```

@@ -641,10 +641,10 @@ The location of Dynamixel can be set and read.
 
   ```c
   unsigned short GoalPos[2] = {0, 1023};
-  //unsigned short wGoalPos[2] = {0, 4095}; // for EX series
+  //unsigned short wGoalPos[2] = {0, 4,095}; // for EX series
   ```
 
-  Like EX 106+, if an actuator belongs to the location range between 0 and 4095, notes are applied to the upper line but not applied to the lower line.
+  Like EX 106+, if an actuator belongs to the location range between 0 and 4,095, notes are applied to the upper line but not applied to the lower line.
 
   ```c
   serial_initialize(57600);
@@ -710,7 +710,7 @@ Multiple Dynamixels can be controlled by synchronization.
   //int AmpPos = 2048; // for EX series
   ```
 
-  Like EX 106+, if an actuator belongs to the location range between 0 and 4095, notes are applied to the upper line but not applied to the lower line.
+  Like EX 106+, if an actuator belongs to the location range between 0 and 4,095, notes are applied to the upper line but not applied to the lower line.
 
   ```c
   serial_initialize(57600);

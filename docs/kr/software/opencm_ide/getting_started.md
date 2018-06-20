@@ -803,7 +803,7 @@ void loop(){
 int value = analogRead(3);  // 0번 핀에서 아날로그 입력받아서 value 변수에 할당합니다.
 ```
 
-여기서 value에 할당되는 값은 12bit ADC 값으로 0~ 4095값이 됩니다. 전체 코드를 통해 읽은 ADC값을 출력해봅니다.
+여기서 value에 할당되는 값은 12bit ADC 값으로 0~ 4,095값이 됩니다. 전체 코드를 통해 읽은 ADC값을 출력해봅니다.
 
 ```c
 void setup(){

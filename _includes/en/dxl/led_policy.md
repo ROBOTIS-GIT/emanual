@@ -1,6 +1,5 @@
 {% capture dxl_led_policy %}  
-**NOTE** :  
-The LED indicates present status of the device.
+**NOTE** : The LED indicates present status of the device.
 
 |       Status       |  LED Representation  |
 |:------------------:|:--------------------:|
