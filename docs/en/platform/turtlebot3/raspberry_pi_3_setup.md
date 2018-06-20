@@ -123,6 +123,7 @@ $ sudo apt-get install ros-kinetic-rosserial-python ros-kinetic-tf
 **[TurtleBot]** Build packages
 
 ``` bash
+$ source /opt/ros/kinetic/setup.bash
 $ cd ~/catkin_ws && catkin_make -j1
 ```
 
