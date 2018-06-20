@@ -14,6 +14,10 @@ sidebar:
 <div style="counter-reset: h1 6"></div>
 <div style="counter-reset: h2 1"></div>
 
+<!--[dummy Header 1]>
+  <h1 id="pc-setup"><a href="#pc-setup">PC Setup</a></h1>
+<![end dummy Header 1]-->
+
 ## [SBC Setup](#sbc-setup)
 
 **WARNING**: Setup work requires Power and Time. So battery is not suitable. We recommend using SMPS (AC adapter) during this work.

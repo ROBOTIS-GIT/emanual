@@ -14,6 +14,10 @@ sidebar:
 <div style="counter-reset: h1 8"></div>
 <div style="counter-reset: h2 0"></div>
 
+<!--[dummy Header 1]>
+  <h1 id="basic-operation"><a href="#basic-operation">Basic Operation</a></h1>
+<![end dummy Header 1]-->
+
 ## [Topic Monitor](#topic-monitor)
 
 **WARNING**: Be careful when running the robot on the table as the robot might fall.

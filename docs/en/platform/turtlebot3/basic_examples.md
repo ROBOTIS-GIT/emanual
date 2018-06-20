@@ -14,6 +14,10 @@ sidebar:
 <div style="counter-reset: h1 8"></div>
 <div style="counter-reset: h2 2"></div>
 
+<!--[dummy Header 1]>
+  <h1 id="basic-operation"><a href="#basic-operation">Basic Operation</a></h1>
+<![end dummy Header 1]-->
+
 ## [Basic Examples](#basic-examples)
 
 **WARNING**: Make sure to run the [Bringup][bringup] instruction before performing this examples, and be careful when testing the robot on the table as the robot might fall.

@@ -14,6 +14,10 @@ sidebar:
 <div style="counter-reset: h1 6"></div>
 <div style="counter-reset: h2 2"></div>
 
+<!--[dummy Header 1]>
+  <h1 id="pc-setup"><a href="#pc-setup">PC Setup</a></h1>
+<![end dummy Header 1]-->
+
 ## [OpenCR Setup](#opencr-setup)
 
 ![](/assets/images/platform/turtlebot3/software/remote_pc_and_turtlebot.png)

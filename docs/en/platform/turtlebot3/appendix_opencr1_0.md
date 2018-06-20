@@ -14,6 +14,9 @@ sidebar:
 <div style="counter-reset: h1 21"></div>
 <div style="counter-reset: h2 1"></div>
 
+<!--[dummy Header 1]>
+  <h1 id="appendixes"><a href="#appendixes">Appendixes</a></h1>
+<![end dummy Header 1]-->
 
 ## [OpenCR1.0](#appendix-opencr10)
 

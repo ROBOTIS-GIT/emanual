@@ -14,6 +14,9 @@ sidebar:
 <div style="counter-reset: h1 6"></div>
 <div style="counter-reset: h2 3"></div>
 
+<!--[dummy Header 1]>
+  <h1 id="pc-setup"><a href="#pc-setup">PC Setup</a></h1>
+<![end dummy Header 1]-->
 
 ## [Hardware Setup](#hardware-setup)
 

@@ -14,6 +14,10 @@ sidebar:
 <div style="counter-reset: h1 6"></div>
 <div style="counter-reset: h2 4"></div>
 
+<!--[dummy Header 1]>
+  <h1 id="pc-setup"><a href="#pc-setup">PC Setup</a></h1>
+<![end dummy Header 1]-->
+
 ## [Compatible Devices](#compatible-devices)
 
 - If you want to use other products instead of Computer and Sensors included in the basic configuration, please refer to the this page.
