@@ -90,6 +90,12 @@
 
 .nav__items li ul li {
   padding-right: 10px;
+  border-right: 1px solid #EBEBEB;
+}
+
+.nav__items li ul li ul li{
+  padding-right: 10px;
+  border-right: 0;
 }
 
 .nav__items input[type=checkbox] {

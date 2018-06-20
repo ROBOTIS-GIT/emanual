@@ -113,39 +113,39 @@ main:
       - title: "H54-200-S500-R"
         titlekr: "H54-200-S500-R"
         url: /dxl/pro/h54-200-s500-r/
-      - title: "H54-200-S500-R(A)"
-        titlekr: "H54-200-S500-R(A)"
-        url: /dxl/pro/h54-200-s500-ra/
+      # - title: "H54-200-S500-R(A)"
+      #   titlekr: "H54-200-S500-R(A)"
+      #   url: /dxl/pro/h54-200-s500-ra/
       - title: "H54-100-S500-R"
         titlekr: "H54-100-S500-R"
         url: /dxl/pro/h54-100-s500-r/
-      - title: "H54-100-S500-R(A)"
-        titlekr: "H54-100-S500-R(A)"
-        url: /dxl/pro/h54-100-s500-ra/
+      # - title: "H54-100-S500-R(A)"
+      #   titlekr: "H54-100-S500-R(A)"
+      #   url: /dxl/pro/h54-100-s500-ra/
       - title: "H42-20-S300-R"
         titlekr: "H42-20-S300-R"
         url: /dxl/pro/h42-20-s300-r/
-      - title: "H42-20-S300-R(A)"
-        titlekr: "H42-20-S300-R(A)"
-        url: /dxl/pro/h42-20-s300-ra/
+      # - title: "H42-20-S300-R(A)"
+      #   titlekr: "H42-20-S300-R(A)"
+      #   url: /dxl/pro/h42-20-s300-ra/
       - title: "M54-60-S250-R"
         titlekr: "M54-60-S250-R"
         url: /dxl/pro/m54-60-s250-r/
-      - title: "M54-60-S250-R(A)"
-        titlekr: "M54-60-S250-R(A)"
-        url: /dxl/pro/m54-60-s250-ra/
+      # - title: "M54-60-S250-R(A)"
+      #   titlekr: "M54-60-S250-R(A)"
+      #   url: /dxl/pro/m54-60-s250-ra/
       - title: "M54-40-S250-R"
         titlekr: "M54-40-S250-R"
         url: /dxl/pro/m54-40-s250-r/
-      - title: "M54-40-S250-R(A)"
-        titlekr: "M54-40-S250-R(A)"
-        url: /dxl/pro/m54-40-s250-ra/
+      # - title: "M54-40-S250-R(A)"
+      #   titlekr: "M54-40-S250-R(A)"
+      #   url: /dxl/pro/m54-40-s250-ra/
       - title: "M42-10-S260-R"
         titlekr: "M42-10-S260-R"
         url: /dxl/pro/m42-10-s260-r/
-      - title: "M42-10-S260-R(A)"
-        titlekr: "M42-10-S260-R(A)"
-        url: /dxl/pro/m42-10-s260-ra/
+      # - title: "M42-10-S260-R(A)"
+      #   titlekr: "M42-10-S260-R(A)"
+      #   url: /dxl/pro/m42-10-s260-ra/
       - title: "*L54-50-S500-R"
         titlekr: "*L54-50-S500-R"
         url: /dxl/pro/l54-50-s500-r/
@@ -5363,7 +5363,7 @@ xm540-w150:
           url: /dxl/x/xm540-w150/#minmax-position-limit48-52
         - title: "External Port Mode 1,2,3(56,57,58)"
           titlekr: "External Port Mode 1,2,3(56,57,58)"
-          url: /dxl/x/xm540-w150/#external-port-mode-12356-57-58
+          url: /dxl/x/xm540-w150/#external-port-mode-123565758
         - title: "Shutdown(63)"
           titlekr: "Shutdown(63)"
           url: /dxl/x/xm540-w150/#shutdown63
@@ -5600,7 +5600,7 @@ xm540-w270:
           url: /dxl/x/xm540-w270/#minmax-position-limit48-52
         - title: "External Port Mode 1,2,3(56,57,58)"
           titlekr: "External Port Mode 1,2,3(56,57,58)"
-          url: /dxl/x/xm540-w270/#external-port-mode-12356-57-58
+          url: /dxl/x/xm540-w270/#external-port-mode-123565758
         - title: "Shutdown(63)"
           titlekr: "Shutdown(63)"
           url: /dxl/x/xm540-w270/#shutdown63
