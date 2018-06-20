@@ -81,10 +81,10 @@
       window.onscroll = function () {
         var offset = 64 - window.scrollY;
         if(offset < 0) { offset = 0; }
-        $('.sidebar__left').css('top', offset);       //sticky sidebar
-        $('.extend_sidebar').css('top', offset);
-        $('.local_navigation').css('top', offset);    //sticky local navigation
-        $('.searchbox').css('top', offset);           //sticky searchbox
+        $(".sidebar__left").css("top", offset);       //sticky sidebar
+        $(".extend_sidebar").css("top", offset);
+        $(".local_navigation").css("top", offset);    //sticky local navigation
+        $(".searchbox").css("top", offset);           //sticky searchbox
         // console.log(window.scrollY);
       };
     </script>
