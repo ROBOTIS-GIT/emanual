@@ -388,7 +388,7 @@ Tis parameter is used to set the drive mode of EX actuators.  Depending on the d
 - When the Master/Slave mode is set, the control table will be updated to reflect the mode.  
   (For example, in slave mode, the position value cannot be set.  Therefore, RoboPlus Manager does not display tables for unnecessary values. )
 - In reverse mode, the position values are reversed.  
-  (Position values 0 and 4095 have opposite meanings as goal position values.)
+  (Position values 0 and 4,095 have opposite meanings as goal position values.)
 
 ### [Temperature Setting](#temperature-setting)
 

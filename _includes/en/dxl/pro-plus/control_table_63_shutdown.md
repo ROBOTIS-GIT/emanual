@@ -2,7 +2,7 @@ The device can protect itself by detecting dangerous situations that could occur
 Each Bit is inclusively calculated with the ‘OR’ logic, therefore, multiple options can be generated.  
 For instance, when ‘0x05’ (binary : 00000101) is defined as Shutdown(63) condition, the device can detect both Input Voltage Error(binary : 00000001) and Overheating Error(binary : 00000100).  
 If those errors are detected, [Torque Enable(512)] is reset to ‘0’ and the motor output becomes 0[%].  
-Controllers can identify the error status by checking Hardware Error Bit(0x80) in the Error field of the Status Packet, or reading Hardware Error Status(518) of the device.  
+Controllers can identify the error status by checking Alert Bit(0x80) in the Error field of the Status Packet, or reading Hardware Error Status(518) of the device.  
 In order to turn on the torque of the device in shutdown status, REBOOT has to be performed first. The followings are detectable situations.
 
 |Bit   | Item     | Description     |

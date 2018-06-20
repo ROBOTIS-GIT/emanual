@@ -801,7 +801,7 @@ This parameters is used to set or read the actuator's goal position.
 - Position constants can be used.
 - The value can be input directly, or set using the jog dial.
 - The position values of AX, DX, and RX-series are numbers between 0 and 1023
-- The position values of EX-series are numbers between 0 and 4095
+- The position values of EX-series are numbers between 0 and 4,095
 
 ![Goal Position][img_sm_10a_02]
 
