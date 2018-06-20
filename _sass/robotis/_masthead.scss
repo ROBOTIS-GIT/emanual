@@ -80,7 +80,7 @@
   margin-right: 0;
   width: 100%;
   background-color: #ECECEC;
-  z-index: 10;
+  z-index: 20;
 }
 
 .mobile_button {
@@ -234,8 +234,8 @@
   display: block;
   background: $mobile-middle-bgcolor;
   color: $middle-textcolor;
-  font-size: 22px;
-  font-weight: 400;
+  font-size: 20px;
+  font-weight: 300;
   text-align: left;
   padding: 2px 1.5em;
   text-decoration: none;
