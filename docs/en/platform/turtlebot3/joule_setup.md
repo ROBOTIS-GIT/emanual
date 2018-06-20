@@ -15,6 +15,11 @@ sidebar:
 <div style="counter-reset: h2 2"></div>
 <div style="counter-reset: h3 1"></div>
 
+<!--[dummy Header 1]>
+  <h1 id="setup"><a href="#setup">Setup</a></h1>
+  <h2 id="sbc-setup"><a href="#sbc-setup">SBC Setup</a></h2>
+<![end dummy Header 1]-->
+
 ### [Joule Setup](#joule-setup)
 
 **WARNING**: Setup work requires Power and Time. So battery is not suitable. We recommend using SMPS (AC adapter) during this work.
