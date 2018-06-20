@@ -1,5 +1,6 @@
 .nav__list {
-  overflow-y:auto;
+  -ms-overflow-style: none;
+  overflow-y: auto;
   height: 100vh;
   padding-bottom: 40px;
 }
@@ -16,7 +17,7 @@
   position: fixed;
   z-index: 9;
   word-wrap: break-word;
-  
+
   ::-webkit-scrollbar {
   display: none;
   }
