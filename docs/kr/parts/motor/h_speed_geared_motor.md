@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/kr/parts/motor/h_speed_geared_motor/
 sidebar:
-  title: High Speed Geared Motor
+  title: 고속 감속모터
   nav: "h_speed_geared_motor"
 ---
 
