@@ -74,11 +74,11 @@ sidebar:
 |    12. 알람시계     |     ![](/assets/images/edu/iot/iot_l1_12_alarmclock_KR.png)     | - 실습 파일 [Download][IoT_L1_12_AlarmClock(p)_KR]<br />- 완성 파일 [Download][IoT_L1_12_AlarmClock_KR]                 |
 
 
-[OpenCM7.0]:???
+[OpenCM7.0]: /docs/kr/parts/controller/opencm7/
 [서보모터]: /docs/kr/parts/motor/servo_motor/
 [적외선 센서]: /docs/kr/parts/sensor/irss-10/
 [LED 모듈]: /docs/kr/parts/display/lm-10/
-[스크래치2 오프라인 에디터, R+ 스크래치 설치 및 예제 실행 방법 바로가기]:???
+[스크래치2 오프라인 에디터, R+ 스크래치 설치 및 예제 실행 방법 바로가기]: /docs/kr/software/rplus2/scratch/#제어기를-pc에-연결하기
 [교안예제]: #교안예제
 [예제의 실행 방법]: /docs/kr/edu/ollo/bugkit/#태스크-코드-다운로드
 [IoT_L1_1_Hello(p)_KR]: http://support.robotis.com/ko/baggage_files/iot/iot_l1_1_hello(p)_kr.sb2
