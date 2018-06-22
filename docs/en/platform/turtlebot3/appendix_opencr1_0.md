@@ -156,7 +156,9 @@ Odometry :
 #### [How to modify ROS library code](how-to-modify-ros-library-code])
 
 You can modify ROS library in below paths.
+
 > [Your/Arduino/Board/Package/Directory/OpenCR/hardware/OpenCR/Version/libraries/turtlebot3](https://github.com/ROBOTIS-GIT/OpenCR/tree/master/arduino/opencr_arduino/opencr/libraries/turtlebot3)
+
 > [Your/Arduino/Board/Package/Directory/OpenCR/hardware/OpenCR/Version/libraries/turtlebot3_ros_lib](https://github.com/ROBOTIS-GIT/OpenCR/tree/master/arduino/opencr_arduino/opencr/libraries/turtlebot3_ros_lib)
 
 If you want to modify it in the sketch folder, move the above two folders to the "skechbook/libraries" folder.
