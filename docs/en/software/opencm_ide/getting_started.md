@@ -1431,9 +1431,7 @@ Please refer to the RC-100 for information on the RC-100 communication packet.
 > Connecting OpenCM9.04 and the RC100 controller using ZigBee
 
 ### Infrared connection using RC-100B + IR Receiver OIR-10
-Please refer to [IR-10] for information on infrared communication methods for RC-100A or RC-100B.
-
-[IR-10]: ???
+Please refer to IR-10 for information on infrared communication methods for RC-100A or RC-100B.
 
 ### Bluetooth connection using an Android smartphone + BT-210
 For Android smartphones you can use the R+ m.Task application’s RC100 simulation to send RC-100 packets. You can download R+m.Task through Google Play.

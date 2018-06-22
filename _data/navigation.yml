@@ -12961,10 +12961,14 @@ rplusmotion1:
         titlekr: "스텝 추가/삽입/삭제/이동"
         url: /software/rplus1/motion/#addinsertdeletemove-step
         urlkr: /software/rplus1/motion/#스텝-추가삽입삭제이동
-      - title: "Pause/Time"
+      - title: "Pause"
         titlekr: "스텝 멈춤 시간"
-        url: /software/rplus1/motion/#pausetime
+        url: /software/rplus1/motion/#pause
         urlkr: /software/rplus1/motion/#스텝-멈춤-시간
+      - title: "Time"
+        titlekr: "스텝 실행 시간"
+        url: /software/rplus1/motion/#time
+        urlkr: /software/rplus1/motion/#스텝-실행-시간
       - title: "Copy/Cut/Paste Step"
         titlekr: "스텝 복사/잘라내기/붙여넣기"
         url: /software/rplus1/motion/#copycutpaste-step
@@ -14852,51 +14856,66 @@ cm-100:
   - title: "Introduction"
     titlekr: "개요"
     url: /parts/controller/cm-100/#introduction
+    urlkr: /parts/controller/cm-100/#개요
   - title: "Specifications"
     titlekr: "제품 사양"
     url: /parts/controller/cm-100/#specifications
+    urlkr: /parts/controller/cm-100/#제품-사양
   - title: "Layout"
     titlekr: "각 부 명칭"
     url: /parts/controller/cm-100/#layout
+    urlkr: /parts/controller/cm-100/#각-부-명칭
   - title: "Connecting Power"
     titlekr: "전원 연결"
     url: /parts/controller/cm-100/#connecting-power
+    urlkr: /parts/controller/cm-100/#전원-연결
   - title: "How to Operate"
     titlekr: "작동 방법"
     url: /parts/controller/cm-100/#how-to-operate
+    urlkr: /parts/controller/cm-100/#작동-방법
   - title: "Connect to PC"
     titlekr: "PC 연결"
     url: /parts/controller/cm-100/#connect-to-pc
+    urlkr: /parts/controller/cm-100/#pc-연결
   - title: "Wireless Communication"
     titlekr: "무선통신 연결"
     url: /parts/controller/cm-100/#wireless-communication
+    urlkr: /parts/controller/cm-100/#무선-통신-모듈-연결하기
 
 #CM-150 Controller sidebar
 cm-150:
   - title: "Introduction"
     titlekr: "개요"
     url: /parts/controller/cm-150/#introduction
+    urlkr: /parts/controller/cm-150/#개요
   - title: "Specifications"
     titlekr: "제품 사양"
     url: /parts/controller/cm-150/#specifications
+    urlkr: /parts/controller/cm-150/#제품-사양
   - title: "Control Table"
     titlekr: "컨트롤 테이블"
     url: /parts/controller/cm-150/#control-table
+    urlkr: /parts/controller/cm-150/#컨트롤-테이블
   - title: "Layout"
     titlekr: "각 부 명칭"
     url: /parts/controller/cm-150/#layout
+    urlkr: /parts/controller/cm-150/#각-부-명칭
   - title: "Connecting Power"
     titlekr: "전원 연결"
     url: /parts/controller/cm-150/#connecting-power
+    urlkr: /parts/controller/cm-150/#전원-연결
   - title: "How to Operate"
     titlekr: "작동 방법"
     url: /parts/controller/cm-150/#how-to-operate
+    urlkr: /parts/controller/cm-150/#작동-방법
   - title: "Connect to PC"
     titlekr: "PC 연결"
     url: /parts/controller/cm-150/#connect-to-pc
+    urlkr: /parts/controller/cm-150/#pc-연결
   - title: "Wireless Communication"
     titlekr: "무선통신 연결"
     url: /parts/controller/cm-150/#wireless-communication
+    urlkr: /parts/controller/cm-150/#무선-통신-모듈-연결하기
 
 #CM-200 Controller sidebar
 cm-200:
@@ -15002,88 +15021,139 @@ cm-510:
   - title: "Introduction"
     titlekr: "개요"
     url: /parts/controller/cm-510/#introduction
+    urlkr: /parts/controller/cm-510/#개요
   - title: "Specifications"
     titlekr: "제품 사양"
     url: /parts/controller/cm-510/#specifications
+    urlkr: /parts/controller/cm-510/#제품-사양
   - title: "Layout"
     titlekr: "각 부 명칭"
     url: /parts/controller/cm-510/#layout
+    urlkr: /parts/controller/cm-510/#각-부-명칭
   - title: "Connecting Power"
     titlekr: "전원 연결"
     url: /parts/controller/cm-510/#connecting-power
+    urlkr: /parts/controller/cm-510/#전원-연결
   - title: "How to Operate"
     titlekr: "작동 방법"
     url: /parts/controller/cm-510/#how-to-operate
+    urlkr: /parts/controller/cm-510/#작동-방법
+  - titlekr: "활용 방법"
+    urlkr: /parts/controller/cm-510/#활용-방법
   - title: "Connect to PC"
     titlekr: "PC 연결"
     url: /parts/controller/cm-510/#connect-to-pc
+    urlkr: /parts/controller/cm-510/#pc-연결
   - title: "Wireless Communication"
     titlekr: "무선통신 연결"
     url: /parts/controller/cm-510/#wireless-communication
+    urlkr: /parts/controller/cm-510/#무선-통신-모듈-연결
   - title: "Charging"
+    titlekr: "충전 하기"
     url: /parts/controller/cm-510/#charging
+    urlkr: /parts/controller/cm-510/#충전-하기
   - title: "Fuse Replacement"
+    titlekr: "퓨즈 교체하기"
     url: /parts/controller/cm-510/#fuse-replacement
+    urlkr: /parts/controller/cm-510/#퓨즈-교체하기
+  - titlekr: "사용자 응용장치 제작을 위한 핀 정보"
+    urlkr: /parts/controller/cm-510/#사용자-응용-장치-제작을-위한-핀-정보
   - title: "Videos"
+    titlekr: "관련 동영상"
     url: /parts/controller/cm-510/#videos
+    urlkr: /parts/controller/cm-510/#관련동영상
 
 #CM-530 Controller sidebar
 cm-530:
   - title: "Introduction"
     titlekr: "개요"
     url: /parts/controller/cm-530/#introduction
+    urlkr: /parts/controller/cm-530/#개요
   - title: "Specifications"
     titlekr: "제품 사양"
     url: /parts/controller/cm-530/#specifications
+    urlkr: /parts/controller/cm-530/#제품-사양
   - title: "Layout"
     titlekr: "각 부 명칭"
     url: /parts/controller/cm-530/#layout
+    urlkr: /parts/controller/cm-530/#각-부-명칭
   - title: "Connecting Power"
     titlekr: "전원 연결"
     url: /parts/controller/cm-530/#connecting-power
+    urlkr: /parts/controller/cm-530/#전원-연결
   - title: "How to Operate"
     titlekr: "작동 방법"
     url: /parts/controller/cm-530/#how-to-operate
+    urlkr: /parts/controller/cm-530/#작동-방법
+  - titlekr: "활용 방법"
+    urlkr: /parts/controller/cm-530/#활용-방법
   - title: "Connect to PC"
     titlekr: "PC 연결"
     url: /parts/controller/cm-530/#connect-to-pc
+    urlkr: /parts/controller/cm-530/#pc-연결
   - title: "Wireless Communication"
     titlekr: "무선통신 연결"
     url: /parts/controller/cm-530/#wireless-communication
+    urlkr: /parts/controller/cm-530/#무선-통신-모듈-연결
   - title: "Charging"
+    titlekr: "충전하기"
     url: /parts/controller/cm-530/#charging
+    urlkr: /parts/controller/cm-530/#충전하기
   - title: "Fuse Replacement"
+    titlekr: "퓨즈 교체하기"
     url: /parts/controller/cm-530/#fuse-replacement
+    urlkr: /parts/controller/cm-530/#퓨즈-교체하기
+  - titlekr: "사용자 응용장치 제작을 위한 핀 정보"
+    urlkr: /parts/controller/cm-530/#사용자-응용-장치-제작을-위한-핀-정보
   - title: "Videos"
+    titlekr: "관련 동영상"
     url: /parts/controller/cm-530/#videos
+    urlkr: /parts/controller/cm-530/#관련-동영상
 
 #CM-700 Controller sidebar
 cm-700:
   - title: "Introduction"
     titlekr: "개요"
     url: /parts/controller/cm-700/#introduction
+    urlkr: /parts/controller/cm-700/#개요
   - title: "Specifications"
     titlekr: "제품 사양"
     url: /parts/controller/cm-700/#specifications
+    urlkr: /parts/controller/cm-700/#제품-사양
   - title: "Layout"
     titlekr: "각 부 명칭"
     url: /parts/controller/cm-700/#layout
+    urlkr: /parts/controller/cm-700/#각-부-명칭
   - title: "Connecting Power"
     titlekr: "전원 연결"
     url: /parts/controller/cm-700/#connecting-power
+    urlkr: /parts/controller/cm-700/#전원-연결
   - title: "How to Operate"
     titlekr: "작동 방법"
     url: /parts/controller/cm-700/#how-to-operate
+    urlkr: /parts/controller/cm-700/#작동-방법
+  - titlekr: "활용 방법"
+    urlkr: /parts/controller/cm-700/#활용-방법
   - title: "Connect to PC"
     titlekr: "PC 연결"
     url: /parts/controller/cm-700/#connect-to-pc
+    urlkr: /parts/controller/cm-700/#pc-연결
   - title: "Wireless Communication"
     titlekr: "무선통신 연결"
     url: /parts/controller/cm-700/#wireless-communication
+    urlkr: /parts/controller/cm-700/#무선-통신-모듈-연결
   - title: "Fuse Replacement"
+    titlekr: "퓨즈 교체하기"
     url: /parts/controller/cm-700/#fuse-replacement
+    urlkr: /parts/controller/cm-700/#퓨즈-교체하기
+  - titlekr: "서브보드 연결 커넥터 정보"
+    urlkr: /parts/controller/cm-700/#서브보드-연결-커넥터-정보
+  - titlekr: "사용자 응용장치 제작을 위한 핀 정보"
+    urlkr: /parts/controller/cm-700/#사용자-응용-장치-제작을-위한-핀-정보
   - title: "Videos"
+    titlekr: "관련 동영상"
     url: /parts/controller/cm-700/#videos
+    urlkr: /parts/controller/cm-700/#관련-동영상
 
 #CM-900 Controller sidebar
 cm-900:
@@ -15102,7 +15172,7 @@ cm-900:
   - title: "USB Driver Install"
     titlekr: "USB 드라이버 설치"
     url: /parts/controller/cm-900/#usb-driver-install
-    urlkr: /parts/controller/cm-900/#cm-900-usb-드라이버-설치
+    urlkr: /parts/controller/cm-900/#cm-900-usb-드라이버-설치windows용
   - title: "Instructions"
     titlekr: "소프트웨어 사용법"
     url: /parts/controller/cm-900/#instructions

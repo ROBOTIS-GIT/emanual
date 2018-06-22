@@ -5,7 +5,7 @@ ref: dms-80
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/kr/parts/sensors/dms-80/
+permalink: /docs/kr/parts/sensor/dms-80/
 sidebar:
   title: 거리 센서(DMS-80)
   nav: "dms-80"
