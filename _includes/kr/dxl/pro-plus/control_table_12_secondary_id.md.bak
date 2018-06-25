@@ -1,6 +1,6 @@
-Secondary ID(12)는 ID(7)과 동일하게 장치를 식별하기 위한 번호로 사용됩니다.  
-다만, Secondary ID(12)는 ID(7)과 달리 고유한 번호가 아닙니다.  
-따라서 동일한 Secondary ID 값을 갖은 장치들은 하나의 그룹을 형성하게 됩니다.  
+Secondary ID(12)는 ID(7)과 동일하게 장치를 식별하기 위한 번호로 사용됩니다.
+다만, Secondary ID(12)는 ID(7)과 달리 고유한 번호가 아닙니다.
+따라서 동일한 Secondary ID 값을 갖은 장치들은 하나의 그룹을 형성하게 됩니다.
 
 Secondary ID(12)와 ID(7)의 차이는 다음과 같습니다.
 1. Secondary ID(12)는 ID(7)과 달리 고유 번호가 아닙니다. 즉, 다수의 장치가 동일한 Secondary ID 값을 가질 수 있습니다.
