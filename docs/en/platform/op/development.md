@@ -4182,7 +4182,7 @@ If all goes well you will see "Success to write!"
 To check the currently operating angle resolution perform the following:
 1. Select an eactuator by typeing id (ID number). For example id 3
 2. Type d to display the control table
-3. Look for CW_ANGLE_LIMIT, CCW_ANGLE_LIMIT, and GOAL_POSITON. if all of these values show 1023 or less, then resolution is 1024. if any of these values is between 0 and 4095 then the resolution is 4096.   
+3. Look for CW_ANGLE_LIMIT, CCW_ANGLE_LIMIT, and GOAL_POSITON. if all of these values show 1023 or less, then resolution is 1024. if any of these values is between 0 and 4,095 then the resolution is 4096.   
 There may be an occasion that a given actuator may display values of 1023 or lower but you may not be sure whether the resolution is either 1024 or 4096. In such case make verifications on several actuators.  
 If all the verified values are 1023 or lower, then the resolution is 1024.  
 If any of the values display larger than 1023 then the resolution is 4096.  

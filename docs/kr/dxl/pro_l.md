@@ -15,7 +15,7 @@ header:
 
 
 
-**CAUTION** : PRO-L Series is DISCONTINUED.
+**주의** : PRO-L Series is DISCONTINUED.
 {: .notice--danger}
 
 # [L54-50-S500-R](#l54-50-s500-r)

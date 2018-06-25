@@ -113,39 +113,39 @@ main:
       - title: "H54-200-S500-R"
         titlekr: "H54-200-S500-R"
         url: /dxl/pro/h54-200-s500-r/
-      - title: "H54-200-S500-R(A)"
-        titlekr: "H54-200-S500-R(A)"
-        url: /dxl/pro/h54-200-s500-ra/
+      # - title: "H54-200-S500-R(A)"
+      #   titlekr: "H54-200-S500-R(A)"
+      #   url: /dxl/pro/h54-200-s500-ra/
       - title: "H54-100-S500-R"
         titlekr: "H54-100-S500-R"
         url: /dxl/pro/h54-100-s500-r/
-      - title: "H54-100-S500-R(A)"
-        titlekr: "H54-100-S500-R(A)"
-        url: /dxl/pro/h54-100-s500-ra/
+      # - title: "H54-100-S500-R(A)"
+      #   titlekr: "H54-100-S500-R(A)"
+      #   url: /dxl/pro/h54-100-s500-ra/
       - title: "H42-20-S300-R"
         titlekr: "H42-20-S300-R"
         url: /dxl/pro/h42-20-s300-r/
-      - title: "H42-20-S300-R(A)"
-        titlekr: "H42-20-S300-R(A)"
-        url: /dxl/pro/h42-20-s300-ra/
+      # - title: "H42-20-S300-R(A)"
+      #   titlekr: "H42-20-S300-R(A)"
+      #   url: /dxl/pro/h42-20-s300-ra/
       - title: "M54-60-S250-R"
         titlekr: "M54-60-S250-R"
         url: /dxl/pro/m54-60-s250-r/
-      - title: "M54-60-S250-R(A)"
-        titlekr: "M54-60-S250-R(A)"
-        url: /dxl/pro/m54-60-s250-ra/
+      # - title: "M54-60-S250-R(A)"
+      #   titlekr: "M54-60-S250-R(A)"
+      #   url: /dxl/pro/m54-60-s250-ra/
       - title: "M54-40-S250-R"
         titlekr: "M54-40-S250-R"
         url: /dxl/pro/m54-40-s250-r/
-      - title: "M54-40-S250-R(A)"
-        titlekr: "M54-40-S250-R(A)"
-        url: /dxl/pro/m54-40-s250-ra/
+      # - title: "M54-40-S250-R(A)"
+      #   titlekr: "M54-40-S250-R(A)"
+      #   url: /dxl/pro/m54-40-s250-ra/
       - title: "M42-10-S260-R"
         titlekr: "M42-10-S260-R"
         url: /dxl/pro/m42-10-s260-r/
-      - title: "M42-10-S260-R(A)"
-        titlekr: "M42-10-S260-R(A)"
-        url: /dxl/pro/m42-10-s260-ra/
+      # - title: "M42-10-S260-R(A)"
+      #   titlekr: "M42-10-S260-R(A)"
+      #   url: /dxl/pro/m42-10-s260-ra/
       - title: "*L54-50-S500-R"
         titlekr: "*L54-50-S500-R"
         url: /dxl/pro/l54-50-s500-r/
@@ -5363,7 +5363,7 @@ xm540-w150:
           url: /dxl/x/xm540-w150/#minmax-position-limit48-52
         - title: "External Port Mode 1,2,3(56,57,58)"
           titlekr: "External Port Mode 1,2,3(56,57,58)"
-          url: /dxl/x/xm540-w150/#external-port-mode-12356-57-58
+          url: /dxl/x/xm540-w150/#external-port-mode-123565758
         - title: "Shutdown(63)"
           titlekr: "Shutdown(63)"
           url: /dxl/x/xm540-w150/#shutdown63
@@ -5600,7 +5600,7 @@ xm540-w270:
           url: /dxl/x/xm540-w270/#minmax-position-limit48-52
         - title: "External Port Mode 1,2,3(56,57,58)"
           titlekr: "External Port Mode 1,2,3(56,57,58)"
-          url: /dxl/x/xm540-w270/#external-port-mode-12356-57-58
+          url: /dxl/x/xm540-w270/#external-port-mode-123565758
         - title: "Shutdown(63)"
           titlekr: "Shutdown(63)"
           url: /dxl/x/xm540-w270/#shutdown63
@@ -6184,7 +6184,7 @@ h42-20-s300-ra:
           url: /dxl/pro/h42-20-s300-ra/#pwm-limit36
         - title: "Current Limit(38)"
           titlekr: "Current Limit(38)"
-          url: /dxl/pro/h42-20-s300-ra/#current-limit38  
+          url: /dxl/pro/h42-20-s300-ra/#current-limit38
         - title: "Acceleration Limit(40)"
           titlekr: "Acceleration Limit(40)"
           url: /dxl/pro/h42-20-s300-ra/#acceleration-limit40
@@ -6589,7 +6589,7 @@ h54-100-s500-ra:
           url: /dxl/pro/h54-100-s500-ra/#pwm-limit36
         - title: "Current Limit(38)"
           titlekr: "Current Limit(38)"
-          url: /dxl/pro/h54-100-s500-ra/#current-limit38  
+          url: /dxl/pro/h54-100-s500-ra/#current-limit38
         - title: "Acceleration Limit(40)"
           titlekr: "Acceleration Limit(40)"
           url: /dxl/pro/h54-100-s500-ra/#acceleration-limit40
@@ -6994,7 +6994,7 @@ h54-200-s500-ra:
           url: /dxl/pro/h54-200-s500-ra/#pwm-limit36
         - title: "Current Limit(38)"
           titlekr: "Current Limit(38)"
-          url: /dxl/pro/h54-200-s500-ra/#current-limit38  
+          url: /dxl/pro/h54-200-s500-ra/#current-limit38
         - title: "Acceleration Limit(40)"
           titlekr: "Acceleration Limit(40)"
           url: /dxl/pro/h54-200-s500-ra/#acceleration-limit40
@@ -8303,7 +8303,7 @@ m42-10-s260-ra:
           url: /dxl/pro/m42-10-s260-ra/#pwm-limit36
         - title: "Current Limit(38)"
           titlekr: "Current Limit(38)"
-          url: /dxl/pro/m42-10-s260-ra/#current-limit38  
+          url: /dxl/pro/m42-10-s260-ra/#current-limit38
         - title: "Acceleration Limit(40)"
           titlekr: "Acceleration Limit(40)"
           url: /dxl/pro/m42-10-s260-ra/#acceleration-limit40
@@ -8708,7 +8708,7 @@ m54-40-s250-ra:
           url: /dxl/pro/m54-40-s250-ra/#pwm-limit36
         - title: "Current Limit(38)"
           titlekr: "Current Limit(38)"
-          url: /dxl/pro/m54-40-s250-ra/#current-limit38  
+          url: /dxl/pro/m54-40-s250-ra/#current-limit38
         - title: "Acceleration Limit(40)"
           titlekr: "Acceleration Limit(40)"
           url: /dxl/pro/m54-40-s250-ra/#acceleration-limit40
@@ -9113,7 +9113,7 @@ m54-60-s250-ra:
           url: /dxl/pro/m54-60-s250-ra/#pwm-limit36
         - title: "Current Limit(38)"
           titlekr: "Current Limit(38)"
-          url: /dxl/pro/m54-60-s250-ra/#current-limit38  
+          url: /dxl/pro/m54-60-s250-ra/#current-limit38
         - title: "Acceleration Limit(40)"
           titlekr: "Acceleration Limit(40)"
           url: /dxl/pro/m54-60-s250-ra/#acceleration-limit40
@@ -11130,7 +11130,7 @@ rh_p12_rna:
             url: /platform/rh_p12_rna/#pwm-limit36
           - title: "Current Limit(38)"
             titlekr: "Current Limit(38)"
-            url: /platform/rh_p12_rna/#current-limit38  
+            url: /platform/rh_p12_rna/#current-limit38
           - title: "Acceleration Limit(40)"
             titlekr: "Acceleration Limit(40)"
             url: /platform/rh_p12_rna/#acceleration-limit40
@@ -11624,7 +11624,7 @@ turtlebot3:
       - title: "Computer"
         url: /platform/turtlebot3/compatible_devices/#computer
       - title: "Sensors"
-        url: /platform/turtlebot3/compatible_devices/#sensors         
+        url: /platform/turtlebot3/compatible_devices/#sensors
   - title: "Bringup"
     url: /platform/turtlebot3/bringup/#bringup
     children:
@@ -11700,7 +11700,7 @@ turtlebot3:
     - title: "Send Navigation Goal"
       url: /platform/turtlebot3/navigation/#send-navigation-goal
     - title: "Tuning Guide"
-      url: /platform/turtlebot3/navigation/#tuning-guide     
+      url: /platform/turtlebot3/navigation/#tuning-guide
     - title: "References"
       url: /platform/turtlebot3/navigation/#references
   - title: "Simulation"
@@ -11774,7 +11774,7 @@ turtlebot3:
     - title: "Step. 3 (Moving Obstacle)"
       url: /platform/turtlebot3/machine_learning/#step-3-moving-obstacle
     - title: "Step.  (Combination Obstacle)"
-      url: /platform/turtlebot3/machine_learning/#step-4-combination-obstacle          
+      url: /platform/turtlebot3/machine_learning/#step-4-combination-obstacle
   - title: "Locomotion"
     url: /platform/turtlebot3/locomotion/#locomotion
     children:
@@ -12961,10 +12961,14 @@ rplusmotion1:
         titlekr: "스텝 추가/삽입/삭제/이동"
         url: /software/rplus1/motion/#addinsertdeletemove-step
         urlkr: /software/rplus1/motion/#스텝-추가삽입삭제이동
-      - title: "Pause/Time"
+      - title: "Pause"
         titlekr: "스텝 멈춤 시간"
-        url: /software/rplus1/motion/#pausetime
+        url: /software/rplus1/motion/#pause
         urlkr: /software/rplus1/motion/#스텝-멈춤-시간
+      - title: "Time"
+        titlekr: "스텝 실행 시간"
+        url: /software/rplus1/motion/#time
+        urlkr: /software/rplus1/motion/#스텝-실행-시간
       - title: "Copy/Cut/Paste Step"
         titlekr: "스텝 복사/잘라내기/붙여넣기"
         url: /software/rplus1/motion/#copycutpaste-step
@@ -13167,7 +13171,7 @@ rplusmanager2:
     - title: "Preparation for XM/XH Series"
       titlekr: "XM/XH 시리즈 사용전 준비"
       url: /software/rplus2/manager/#preparation-for-xmxh-series
-      urlkr: /software/rplus2/manager/#xh-xh-시리즈-사용전-준비
+      urlkr: /software/rplus2/manager/#xhxh-시리즈-사용전-준비
     - title: "Changing Control Value"
       titlekr: "컨트롤 아이템 값 변경"
       url: /software/rplus2/manager/#changing-control-value
@@ -13379,11 +13383,11 @@ rplusmotion2:
     - title: "Edit Motion Unit(3D Robot)"
       titlekr: "모션 유닛 편집하기(3D 로봇 활용)"
       url: /software/rplus2/motion/#edit-motion-unit3d-robot
-      urlkr: /software/rplus2/motion/#모션-유닛-편집하기-3D-로봇-활용
+      urlkr: /software/rplus2/motion/#모션-유닛-편집하기3d-로봇-활용
     - title: "Edit Motion Unit(Actual Robot)"
       titlekr: "모션 유닛 편집하기2(실제 로봇 활용)"
       url: /software/rplus2/motion/#edit-motion-unitactual-robot
-      urlkr: /software/rplus2/motion/#모션-유닛-편집하기2-실제-로봇-활용
+      urlkr: /software/rplus2/motion/#모션-유닛-편집하기2실제-로봇-활용
     - title: "Create New Motion"
       titlekr: "새 모션 만들기"
       url: /software/rplus2/motion/#create-new-motion
@@ -13408,11 +13412,11 @@ rplusmotion2:
     - title: "Create Custom Robot"
       titlekr: "자유 형태 로봇 생성(사용자 로봇)"
       url: /software/rplus2/motion/#create-custom-robot
-      urlkr: /software/rplus2/motion/#자유-형태-로봇-생성-사용자-로봇
+      urlkr: /software/rplus2/motion/#자유-형태-로봇-생성사용자-로봇
     - title: "Change 3D Robot"
       titlekr: "3D 로봇 변경"
       url: /software/rplus2/motion/#change-3d-robot
-      urlkr: /software/rplus2/motion/#3D-로봇-변경
+      urlkr: /software/rplus2/motion/#3d-로봇-변경
     - title: "Pose Mirroring"
       titlekr: "포즈 미러링"
       url: /software/rplus2/motion/#pose-mirroring
@@ -13432,11 +13436,11 @@ rplusmotion2:
     - title: "Convert mtn File"
       titlekr: "구 버전 파일(*.mtn) 변환하기"
       url: /software/rplus2/motion/#convert-mtn-file
-      urlkr: /software/rplus2/motion/#구-버전-파일-mtn-변환하기
+      urlkr: /software/rplus2/motion/#구-버전-파일mtn-변환하기
     - title: "Control 3D Camera"
       titlekr: "3D 카메라 조작"
       url: /software/rplus2/motion/#control-3d-camera
-      urlkr: /software/rplus2/motion/#3D-카메라-조작
+      urlkr: /software/rplus2/motion/#3d-카메라-조작
     - title: "Shortcut Keys"
       titlekr: "단축키"
       url: /software/rplus2/motion/#shortcut-keys
@@ -14651,10 +14655,10 @@ embedded_c_cm510:
     titlekr: "개요"
     url: /software/embedded_sdk/embedded_c_cm510/#introduction
     urlkr: /software/embedded_sdk/embedded_c_cm510/#개요
-  - title: "CM-510/700"
-    titlekr: "CM-510/700"
-    url: /software/embedded_sdk/embedded_c_cm510/#cm-510700
-    urlkr: /software/embedded_sdk/embedded_c_cm510/#cm-510700
+  - title: "CM-510, CM-700"
+    titlekr: "CM-510, CM-700"
+    url: /software/embedded_sdk/embedded_c_cm510/#cm-510-cm-700
+    urlkr: /software/embedded_sdk/embedded_c_cm510/#cm-510-cm-700
     children:
     - title: "Getting Started"
       titlekr: "시작하기"
@@ -14852,51 +14856,66 @@ cm-100:
   - title: "Introduction"
     titlekr: "개요"
     url: /parts/controller/cm-100/#introduction
+    urlkr: /parts/controller/cm-100/#개요
   - title: "Specifications"
     titlekr: "제품 사양"
     url: /parts/controller/cm-100/#specifications
+    urlkr: /parts/controller/cm-100/#제품-사양
   - title: "Layout"
     titlekr: "각 부 명칭"
     url: /parts/controller/cm-100/#layout
+    urlkr: /parts/controller/cm-100/#각-부-명칭
   - title: "Connecting Power"
     titlekr: "전원 연결"
     url: /parts/controller/cm-100/#connecting-power
+    urlkr: /parts/controller/cm-100/#전원-연결
   - title: "How to Operate"
     titlekr: "작동 방법"
     url: /parts/controller/cm-100/#how-to-operate
+    urlkr: /parts/controller/cm-100/#작동-방법
   - title: "Connect to PC"
     titlekr: "PC 연결"
     url: /parts/controller/cm-100/#connect-to-pc
+    urlkr: /parts/controller/cm-100/#pc-연결
   - title: "Wireless Communication"
     titlekr: "무선통신 연결"
     url: /parts/controller/cm-100/#wireless-communication
+    urlkr: /parts/controller/cm-100/#무선-통신-모듈-연결하기
 
 #CM-150 Controller sidebar
 cm-150:
   - title: "Introduction"
     titlekr: "개요"
     url: /parts/controller/cm-150/#introduction
+    urlkr: /parts/controller/cm-150/#개요
   - title: "Specifications"
     titlekr: "제품 사양"
     url: /parts/controller/cm-150/#specifications
+    urlkr: /parts/controller/cm-150/#제품-사양
   - title: "Control Table"
     titlekr: "컨트롤 테이블"
     url: /parts/controller/cm-150/#control-table
+    urlkr: /parts/controller/cm-150/#컨트롤-테이블
   - title: "Layout"
     titlekr: "각 부 명칭"
     url: /parts/controller/cm-150/#layout
+    urlkr: /parts/controller/cm-150/#각-부-명칭
   - title: "Connecting Power"
     titlekr: "전원 연결"
     url: /parts/controller/cm-150/#connecting-power
+    urlkr: /parts/controller/cm-150/#전원-연결
   - title: "How to Operate"
     titlekr: "작동 방법"
     url: /parts/controller/cm-150/#how-to-operate
+    urlkr: /parts/controller/cm-150/#작동-방법
   - title: "Connect to PC"
     titlekr: "PC 연결"
     url: /parts/controller/cm-150/#connect-to-pc
+    urlkr: /parts/controller/cm-150/#pc-연결
   - title: "Wireless Communication"
     titlekr: "무선통신 연결"
     url: /parts/controller/cm-150/#wireless-communication
+    urlkr: /parts/controller/cm-150/#무선-통신-모듈-연결하기
 
 #CM-200 Controller sidebar
 cm-200:
@@ -14957,118 +14976,184 @@ cm-200:
 #CM-5 Controller sidebar
 cm-5:
   - title: "Introduction"
-    titlekr: "개요"
+    titlekr: "부품 사진"
     url: /parts/controller/cm-5/#introduction
+    urlkr: /parts/controller/cm-5/#부품-사진
   - title: "Specifications"
-    titlekr: "제품 사양"
+    titlekr: "주요 사양"
     url: /parts/controller/cm-5/#specifications
+    urlkr: /parts/controller/cm-5/#주요-사양
   - title: "Layout"
     titlekr: "각 부 명칭"
     url: /parts/controller/cm-5/#layout
+    urlkr: /parts/controller/cm-5/#각-부-명칭
   - title: "Connecting Power"
     titlekr: "전원 연결"
     url: /parts/controller/cm-5/#connecting-power
+    urlkr: /parts/controller/cm-5/#전원-연결
   - title: "How to Operate"
     titlekr: "작동 방법"
     url: /parts/controller/cm-5/#how-to-operate
+    urlkr: /parts/controller/cm-5/#작동-방법
   - title: "Connect to PC"
-    titlekr: "PC 연결"
+    titlekr: "활용 방법"
     url: /parts/controller/cm-5/#connect-to-pc
+    urlkr: /parts/controller/cm-5/#활용-방법
+  - titlekr: "PC 연결"
+    urlkr: /parts/controller/cm-5/#pc-연결
   - title: "Wireless Communication"
     titlekr: "무선통신 연결"
     url: /parts/controller/cm-5/#wireless-communication
+    urlkr: /parts/controller/cm-5/#무선-통신-모듈-연결
   - title: "Charging"
+    titlekr: "충전 하기"
     url: /parts/controller/cm-5/#charging
+    urlkr: /parts/controller/cm-5/#충전-하기
   - title: "Fuse Replacement"
+    titlekr: "퓨즈 교체하기"
     url: /parts/controller/cm-5/#fuse-replacement
+    urlkr: /parts/controller/cm-5/#퓨즈-교체하기
+  - titlekr: "관련동영상"
+    urlkr: /parts/controller/cm-5/#관련동영상
 
 #CM-510 Controller sidebar
 cm-510:
   - title: "Introduction"
     titlekr: "개요"
     url: /parts/controller/cm-510/#introduction
+    urlkr: /parts/controller/cm-510/#개요
   - title: "Specifications"
     titlekr: "제품 사양"
     url: /parts/controller/cm-510/#specifications
+    urlkr: /parts/controller/cm-510/#제품-사양
   - title: "Layout"
     titlekr: "각 부 명칭"
     url: /parts/controller/cm-510/#layout
+    urlkr: /parts/controller/cm-510/#각-부-명칭
   - title: "Connecting Power"
     titlekr: "전원 연결"
     url: /parts/controller/cm-510/#connecting-power
+    urlkr: /parts/controller/cm-510/#전원-연결
   - title: "How to Operate"
     titlekr: "작동 방법"
     url: /parts/controller/cm-510/#how-to-operate
+    urlkr: /parts/controller/cm-510/#작동-방법
+  - titlekr: "활용 방법"
+    urlkr: /parts/controller/cm-510/#활용-방법
   - title: "Connect to PC"
     titlekr: "PC 연결"
     url: /parts/controller/cm-510/#connect-to-pc
+    urlkr: /parts/controller/cm-510/#pc-연결
   - title: "Wireless Communication"
     titlekr: "무선통신 연결"
     url: /parts/controller/cm-510/#wireless-communication
+    urlkr: /parts/controller/cm-510/#무선-통신-모듈-연결
   - title: "Charging"
+    titlekr: "충전 하기"
     url: /parts/controller/cm-510/#charging
+    urlkr: /parts/controller/cm-510/#충전-하기
   - title: "Fuse Replacement"
+    titlekr: "퓨즈 교체하기"
     url: /parts/controller/cm-510/#fuse-replacement
+    urlkr: /parts/controller/cm-510/#퓨즈-교체하기
+  - titlekr: "사용자 응용장치 제작을 위한 핀 정보"
+    urlkr: /parts/controller/cm-510/#사용자-응용-장치-제작을-위한-핀-정보
   - title: "Videos"
+    titlekr: "관련 동영상"
     url: /parts/controller/cm-510/#videos
+    urlkr: /parts/controller/cm-510/#관련동영상
 
 #CM-530 Controller sidebar
 cm-530:
   - title: "Introduction"
     titlekr: "개요"
     url: /parts/controller/cm-530/#introduction
+    urlkr: /parts/controller/cm-530/#개요
   - title: "Specifications"
     titlekr: "제품 사양"
     url: /parts/controller/cm-530/#specifications
+    urlkr: /parts/controller/cm-530/#제품-사양
   - title: "Layout"
     titlekr: "각 부 명칭"
     url: /parts/controller/cm-530/#layout
+    urlkr: /parts/controller/cm-530/#각-부-명칭
   - title: "Connecting Power"
     titlekr: "전원 연결"
     url: /parts/controller/cm-530/#connecting-power
+    urlkr: /parts/controller/cm-530/#전원-연결
   - title: "How to Operate"
     titlekr: "작동 방법"
     url: /parts/controller/cm-530/#how-to-operate
+    urlkr: /parts/controller/cm-530/#작동-방법
+  - titlekr: "활용 방법"
+    urlkr: /parts/controller/cm-530/#활용-방법
   - title: "Connect to PC"
     titlekr: "PC 연결"
     url: /parts/controller/cm-530/#connect-to-pc
+    urlkr: /parts/controller/cm-530/#pc-연결
   - title: "Wireless Communication"
     titlekr: "무선통신 연결"
     url: /parts/controller/cm-530/#wireless-communication
+    urlkr: /parts/controller/cm-530/#무선-통신-모듈-연결
   - title: "Charging"
+    titlekr: "충전하기"
     url: /parts/controller/cm-530/#charging
+    urlkr: /parts/controller/cm-530/#충전하기
   - title: "Fuse Replacement"
+    titlekr: "퓨즈 교체하기"
     url: /parts/controller/cm-530/#fuse-replacement
+    urlkr: /parts/controller/cm-530/#퓨즈-교체하기
+  - titlekr: "사용자 응용장치 제작을 위한 핀 정보"
+    urlkr: /parts/controller/cm-530/#사용자-응용-장치-제작을-위한-핀-정보
   - title: "Videos"
+    titlekr: "관련 동영상"
     url: /parts/controller/cm-530/#videos
+    urlkr: /parts/controller/cm-530/#관련-동영상
 
 #CM-700 Controller sidebar
 cm-700:
   - title: "Introduction"
     titlekr: "개요"
     url: /parts/controller/cm-700/#introduction
+    urlkr: /parts/controller/cm-700/#개요
   - title: "Specifications"
     titlekr: "제품 사양"
     url: /parts/controller/cm-700/#specifications
+    urlkr: /parts/controller/cm-700/#제품-사양
   - title: "Layout"
     titlekr: "각 부 명칭"
     url: /parts/controller/cm-700/#layout
+    urlkr: /parts/controller/cm-700/#각-부-명칭
   - title: "Connecting Power"
     titlekr: "전원 연결"
     url: /parts/controller/cm-700/#connecting-power
+    urlkr: /parts/controller/cm-700/#전원-연결
   - title: "How to Operate"
     titlekr: "작동 방법"
     url: /parts/controller/cm-700/#how-to-operate
+    urlkr: /parts/controller/cm-700/#작동-방법
+  - titlekr: "활용 방법"
+    urlkr: /parts/controller/cm-700/#활용-방법
   - title: "Connect to PC"
     titlekr: "PC 연결"
     url: /parts/controller/cm-700/#connect-to-pc
+    urlkr: /parts/controller/cm-700/#pc-연결
   - title: "Wireless Communication"
     titlekr: "무선통신 연결"
     url: /parts/controller/cm-700/#wireless-communication
+    urlkr: /parts/controller/cm-700/#무선-통신-모듈-연결
   - title: "Fuse Replacement"
+    titlekr: "퓨즈 교체하기"
     url: /parts/controller/cm-700/#fuse-replacement
+    urlkr: /parts/controller/cm-700/#퓨즈-교체하기
+  - titlekr: "서브보드 연결 커넥터 정보"
+    urlkr: /parts/controller/cm-700/#서브보드-연결-커넥터-정보
+  - titlekr: "사용자 응용장치 제작을 위한 핀 정보"
+    urlkr: /parts/controller/cm-700/#사용자-응용-장치-제작을-위한-핀-정보
   - title: "Videos"
+    titlekr: "관련 동영상"
     url: /parts/controller/cm-700/#videos
+    urlkr: /parts/controller/cm-700/#관련-동영상
 
 #CM-900 Controller sidebar
 cm-900:
@@ -15087,7 +15172,7 @@ cm-900:
   - title: "USB Driver Install"
     titlekr: "USB 드라이버 설치"
     url: /parts/controller/cm-900/#usb-driver-install
-    urlkr: /parts/controller/cm-900/#cm-900-usb-드라이버-설치
+    urlkr: /parts/controller/cm-900/#cm-900-usb-드라이버-설치windows용
   - title: "Instructions"
     titlekr: "소프트웨어 사용법"
     url: /parts/controller/cm-900/#instructions

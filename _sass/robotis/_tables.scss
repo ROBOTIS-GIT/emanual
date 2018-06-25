@@ -5,7 +5,6 @@
 table {
   margin-bottom: 1em;
   width: auto;
-  font-family: $global-font-family;
   font-size: 0.8rem;
   border-collapse: collapse;
   border: 1px solid $light-gray;
@@ -38,13 +37,18 @@ th {
   font-weight: bold;
   text-align: left;
   border-right: 1px solid $light-gray;
+
+  img {
+    padding: 0;
+    border: 0;
+  }
 }
 
 td {
   padding: 0.5em;
   border-bottom: 1px solid $light-gray;
   border-right: 1px solid $light-gray;
-  
+
   img {
     padding: 0;
     border: 0;

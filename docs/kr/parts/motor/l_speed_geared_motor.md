@@ -7,8 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/kr/parts/motor/l_speed_geared_motor/
 sidebar:
-  title:
-    # Low Speed Geared Motor
+  title: 저속 감속모터
   nav: "l_speed_geared_motor"
 ---
 

@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/kr/parts/motor/servo_motor/
 sidebar:
-  title: Servo Motor
+  title: 서보 모터
   nav: "servo_motor"
 ---
 

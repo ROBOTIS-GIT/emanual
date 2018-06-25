@@ -15,6 +15,11 @@ sidebar:
 <div style="counter-reset: h2 2"></div>
 <div style="counter-reset: h3 0"></div>
 
+<!--[dummy Header 1]>
+  <h1 id="setup"><a href="#setup">Setup</a></h1>
+  <h2 id="sbc-setup"><a href="#sbc-setup">SBC Setup</a></h2>
+<![end dummy Header 1]-->
+
 ### [Raspberry Pi 3 Setup](#raspberry_pi_3_setup)
 
 {% capture notice_01 %}
@@ -118,6 +123,7 @@ $ sudo apt-get install ros-kinetic-rosserial-python ros-kinetic-tf
 **[TurtleBot]** Build packages
 
 ``` bash
+$ source /opt/ros/kinetic/setup.bash
 $ cd ~/catkin_ws && catkin_make -j1
 ```
 

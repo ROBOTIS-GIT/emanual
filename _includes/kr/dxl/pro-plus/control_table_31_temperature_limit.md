@@ -1,5 +1,9 @@
 동작 온도의 상한 값입니다.  
+<<<<<<< HEAD
 장치의 현재 내부온도를 나타내는 Present Temperature(594)가 Temperature Limit(31)보다 높아지면 Hardware Error Status(518)의 Overheating Error Bit(0x04)가 설정되고, Status Packet은 Error 필드를 통해서 Alert Error Bit(0x80)을 전송합니다.  
+=======
+장치의 현재 내부온도를 나타내는 Present Temperature(594)가 Temperature Limit(31)보다 높아지면 Hardware Error Status(518)의 Over Heating Error Bit(0x04)가 설정되고, Status Packet은 Error 필드를 통해서 Alert Bit(0x80)을 전송합니다.  
+>>>>>>> master
 Shutdown(63)에 Overheating Error Bit(0x04)가 설정된 경우, Torque Enable(512)은 ‘0’이 되고 Torque가 OFF됩니다.  
 자세한 설명은 [Shutdown(63)](#shutdown63)을 참고하세요.
 

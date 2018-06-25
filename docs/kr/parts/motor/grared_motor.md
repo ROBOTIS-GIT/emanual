@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/kr/parts/motor/gm-10a/
 sidebar:
-  title: Geared Motor(GM-10A)
+  title: 감속 모터(GM-10A)
   nav: "gm-10a"
 ---
 

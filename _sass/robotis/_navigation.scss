@@ -1,5 +1,6 @@
 .nav__list {
-  overflow-y:auto;
+  -ms-overflow-style: none;
+  overflow-y: auto;
   height: 100vh;
   padding-bottom: 40px;
 }
@@ -16,7 +17,7 @@
   position: fixed;
   z-index: 9;
   word-wrap: break-word;
-  
+
   ::-webkit-scrollbar {
   display: none;
   }
@@ -90,6 +91,12 @@
 
 .nav__items li ul li {
   padding-right: 10px;
+  border-right: 1px solid #EBEBEB;
+}
+
+.nav__items li ul li ul li{
+  padding-right: 10px;
+  border-right: 0;
 }
 
 .nav__items input[type=checkbox] {
@@ -201,12 +208,16 @@
 .nav__items > li > a,
 .nav__items > li > label {
   padding-left: 20px;
+  padding-right: 20px;
   line-height: 40px;
   font-size: 16px;
-  font-weight: 200;
+  font-weight: 400;
   color: #434445;
   border: 1px solid #EBEBEB;
   border-bottom-width: 0px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .nav__items > li > ul > li a,
@@ -214,7 +225,7 @@
   padding-left: 30px;
   line-height: 30px;
   font-size: 14px;
-  font-weight: 200;
+  font-weight: 300;
   color: #434445;
   background: #F2F2F2;
   overflow: hidden;
@@ -226,7 +237,7 @@
   padding-left: 45px;
   line-height: 23px;
   font-size: 14px;
-  font-weight: 200;
+  font-weight: 300;
   font-style: italic;
   color: #42759d;
   overflow: hidden;
@@ -256,7 +267,7 @@
   border: none;
   background-color: transparent;
   font-size: 16px;
-  font-weight: 200;
+  font-weight: 400;
   color: #434445;
   overflow: hidden;
   white-space: nowrap;
@@ -274,6 +285,7 @@
   max-width: $sidebar_width - 60;
   background-color: transparent;
   font-size: 14px;
+  font-weight: 300;
   color: #434445;
   overflow: hidden;
   white-space: nowrap;

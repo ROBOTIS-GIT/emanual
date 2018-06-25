@@ -14,6 +14,10 @@ sidebar:
 <div style="counter-reset: h1 8"></div>
 <div style="counter-reset: h2 3"></div>
 
+<!--[dummy Header 1]>
+  <h1 id="basic-operation"><a href="#basic-operation">Basic Operation</a></h1>
+<![end dummy Header 1]-->
+
 ## [Additional Sensors](#additional-sensors)
 TurtleBot3 can be attach to additional sensors. Examples shown here can be that how to use additional sensors such as IR, ultrasonic, switch, etc. in OpenCR of TurtleBot3.
 
@@ -34,10 +38,10 @@ back side
 
 * Default PIN      
 
-| Device       | PIN                |
-|------------- |------------------       |
-| Front sensor | OLLO connector 3        |
-| Back sensor  | OLLO connector 4        |
+| Device       | PIN              |
+|:-------------|:-----------------|
+| Front sensor | OLLO connector 3 |
+| Back sensor  | OLLO connector 4 |
 
 
 **Tip :** If you want to use another PIN, refer to [OpenCR PIN Map](http://emanual.robotis.com/docs/en/parts/controller/opencr10/).
@@ -80,9 +84,9 @@ $ rosrun rosserial_python serial_node.py __name:=turtlebot3_core _port:=/dev/tty
 
 * Default PIN
 
-| Device  | PIN                    |
-|-------- |-----------------       |
-| IR sensor | OLLO connector 2     |
+| Device    | PIN              |
+|:----------|:-----------------|
+| IR sensor | OLLO connector 2 |
 
 **Tip :** If you want to use another PIN, refer to [OpenCR PIN Map](http://emanual.robotis.com/docs/en/parts/controller/opencr10/).
 {: .notice--info}
@@ -122,9 +126,9 @@ $ rosrun rosserial_python serial_node.py __name:=turtlebot3_core _port:=/dev/tty
 
 
 | Device  | PIN          |
-|-------- |----------------- |
-| trigger | BDPIN_GPIO_1     |
-| echo    | BDPIN_GPIO_2     |    
+|:--------|:-------------|
+| trigger | BDPIN_GPIO_1 |
+| echo    | BDPIN_GPIO_2 |
 
 **Tip :** If you want to use another PIN, refer to [OpenCR PIN Map](http://emanual.robotis.com/docs/en/parts/controller/opencr10/).
 {: .notice--info}
@@ -161,9 +165,9 @@ $ rosrun rosserial_python serial_node.py __name:=turtlebot3_core _port:=/dev/tty
 
 *  Default PIN
 
-| Device  | PIN    |
-|-------- |------- |
-| analog  | A1     |   
+| Device | PIN |
+|:-------|:----|
+| analog | A1  |
 
 **Tip :** If you want to use another PIN, refer to [OpenCR PIN Map](http://emanual.robotis.com/docs/en/parts/controller/opencr10/).
 {: .notice--info}
@@ -199,12 +203,12 @@ $ rosrun rosserial_python serial_node.py __name:=turtlebot3_core _port:=/dev/tty
 
 *  Default PIN
 
-| Device     | PIN    |
-|--------    |------- |
-| front_left   | BDPIN_GPIO_4     |   
-| front_right  | BDPIN_GPIO_6     |   
-| back_left    | BDPIN_GPIO_8     |   
-| back_right   | BDPIN_GPIO_10    |   
+| Device      | PIN           |
+|:------------|:--------------|
+| front_left  | BDPIN_GPIO_4  |
+| front_right | BDPIN_GPIO_6  |
+| back_left   | BDPIN_GPIO_8  |
+| back_right  | BDPIN_GPIO_10 |
 
 **Tip :** If you want to use another PIN, refer to [OpenCR PIN Map](http://emanual.robotis.com/docs/en/parts/controller/opencr10/).
 {: .notice--info}

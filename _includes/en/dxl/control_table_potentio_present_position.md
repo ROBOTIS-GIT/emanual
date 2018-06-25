@@ -1,4 +1,4 @@
-It is the current position value of Dynamixel.
+It is the present position value of Dynamixel.
 The range of the value is 0~1023 (0x3FF), and the unit is 0.29 degree.
 
 ![](/assets/images/dxl/dx/dx_series_goal_position.png)

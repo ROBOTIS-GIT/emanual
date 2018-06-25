@@ -224,7 +224,7 @@ Present Position = 실제 위치 + Homing offset(20) 이 됩니다.
 {: .notice}
 
 ### <a name="external-port-mode"></a><a name="external-port-data"></a>**[External Port Mode](#external-port-mode)**, **[External Port Data](#external-port-data)**
-{% include kr/dxl/pro-plus/control_table_57_external_port.md %}
+{% include kr/dxl/pro-plus/control_table_56_external_port.md %}
 
 #### 외부 확장 포트의 위치 및 핀 기능
 아래와 같이 나사를 제거하고 커버를 들어내면 외부 확장 포트가 드러납니다.
@@ -379,8 +379,8 @@ Present Position = 실제 위치 + Homing offset(20) 이 됩니다.
 [MOLEX 50079-8100]: http://www.molex.com/molex/products/datasheet.jsp?part=active/0500798100_CRIMP_TERMINALS.xml
 
 ## [도면](#도면)
-`Download` [RH-P12-RN(PDF).zip](http://www.robotis.com/service/download.php?no=740)  
-`Download` [RH-P12-RN(STP).zip](http://www.robotis.com/service/download.php?no=741)
+`다운로드` [RH-P12-RN(PDF).zip](http://www.robotis.com/service/download.php?no=740)  
+`다운로드` [RH-P12-RN(STP).zip](http://www.robotis.com/service/download.php?no=741)
 
 
 [PDF]: http://support.robotis.com/en/baggage_files/dynamixel/rh-p12-rn.pdf

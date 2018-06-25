@@ -392,7 +392,7 @@ Let’s learn how to add 4 motions below using the RoboPlus Motion program.
 
 ### Make a motion to block a ball on the right
 
-1. Execute RoboPlus Motion, then connect it to the controller(Please refer to [Connect Robot](/docs/en/software/rplus1/motion/???))
+1. Execute RoboPlus Motion, then connect it to the controller(Please refer to [Connect Robot](/docs/en/software/rplus1/motion/#connect-to-robot))
 
   ![](/assets/images/edu/bioloid/premium_tutorial_26.png)
 
@@ -410,7 +410,7 @@ Let’s learn how to add 4 motions below using the RoboPlus Motion program.
 
   ![](/assets/images/edu/bioloid/premium_tutorial_30.jpg)
 
-5. You can adjust the pause and play durations. (Please refer for more information about [STEP STOP/PLAY](/docs/en/software/rplus1/motion/???))
+5. You can adjust the pause and play durations. (Please refer for more information about [STEP STOP/PLAY](/docs/en/software/rplus1/motion/#pause))
 
   ![](/assets/images/edu/bioloid/premium_tutorial_31.jpg)
 
@@ -422,7 +422,7 @@ Let’s learn how to add 4 motions below using the RoboPlus Motion program.
 
   ![](/assets/images/edu/bioloid/premium_tutorial_33.jpg)
 
-8. Additional settings ([Number of Repeats, Play Speed, etc](/docs/en/software/rplus1/motion/???))
+8. Additional settings ([Number of Repeats, Play Speed, etc](/docs/en/software/rplus1/motion/#set-page-repeattime))
 
   You can also set the number of repeats, entire speed, etc. for each page.
 

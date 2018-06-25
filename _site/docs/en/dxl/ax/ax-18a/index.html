@@ -5,6 +5,7 @@
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
 -->
+<!-- <html lang="en" class="no-js"> -->
 <html lang="en" class="no-js">
   <head>
     <meta charset="utf-8">
@@ -152,13 +153,14 @@ $(function() {
 </script>
 <!-- insert favicons. use http://realfavicongenerator.net/ -->
 <link rel="shortcut icon" type="image/x-icon" href="//www.robotis.com/img/common/favicon_16x16_ver1701.ico">
+<link type="text/css" rel="stylesheet" charset="UTF-8" href="http://fonts.googleapis.com/earlyaccess/notosanskr.css">
 <!-- end custom head snippets -->
 
     <script>
       var toggle_google = 0;
       var toggle_search_tool = 0;
       var mobile_width = 960;
-      
+
       function extendgoogletool() {
         if (toggle_google == 0) {
           google_tools.classList.add("extend_googletools");
@@ -171,7 +173,7 @@ $(function() {
           toggle_google = 0;
         }
       }
-      
+
       function extendsearchtool() {
         if (toggle_search_tool == 0) {
           $('#site_search').css('display', 'block');
@@ -210,7 +212,7 @@ $(function() {
 
             if (distance < 30 && distance > -30 && currentHash != hash) {
               currentHash = hash;
-              console.log(currentHash);
+              // console.log(currentHash);
               window.history.pushState(window.location.href, "title", currentHash);   //Update browser URL with current anchor
               // $('#' + currentHash).attr("color", "#FF6D6D"); //Syntax error
             }
@@ -220,18 +222,18 @@ $(function() {
     </script>
     <script>
       window.onscroll = function () {
-        var offset = 64 - window.scrollY;
+        var offset = 64 - $(window).scrollTop();
         if(offset < 0) { offset = 0; }
-        $('.sidebar__left').css('top', offset);       //sticky sidebar
-        $('.extend_sidebar').css('top', offset);
-        $('.local_navigation').css('top', offset);    //sticky local navigation
-        $('.searchbox').css('top', offset);           //sticky searchbox
-        console.log(window.scrollY);
+        $(".sidebar__left").css("top", offset);       //sticky sidebar
+        $(".extend_sidebar").css("top", offset);
+        $(".local_navigation").css("top", offset);    //sticky local navigation
+        $(".searchbox").css("top", offset);           //sticky searchbox
+        // console.log($(window).scrollTop());
       };
     </script>
     <script>
       var toggle = 0;
-      
+
       function extendnav() {
         if (toggle == 0) {
           sidebar__left.classList.add("extend_sidebar");
@@ -273,7 +275,7 @@ $(function() {
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <button class="search_button" onclick="extendsearchtool()">
-        <i class="fa fa-fw fa-search" style="font-size:20px;color:white;"></i>
+        <img class="logo" src="/assets/images/search_icon.png">
       </button>
       <a class="site-title" href="http://localhost:4000/"><img class="logo" id="logo" src="/assets/images/robotis_emanual_logo.png"></a>
       
@@ -606,21 +608,7 @@ $(function() {
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/dxl/pro/h54-200-s500-ra/" class="">H54-200-S500-R(A)</a>
-                        </li>
-                      
-                    
-                      
-                      
-                        <li class="mobile_depth_3">
                           <a href="http://localhost:4000/docs/en/dxl/pro/h54-100-s500-r/" class="">H54-100-S500-R</a>
-                        </li>
-                      
-                    
-                      
-                      
-                        <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/dxl/pro/h54-100-s500-ra/" class="">H54-100-S500-R(A)</a>
                         </li>
                       
                     
@@ -634,21 +622,7 @@ $(function() {
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/dxl/pro/h42-20-s300-ra/" class="">H42-20-S300-R(A)</a>
-                        </li>
-                      
-                    
-                      
-                      
-                        <li class="mobile_depth_3">
                           <a href="http://localhost:4000/docs/en/dxl/pro/m54-60-s250-r/" class="">M54-60-S250-R</a>
-                        </li>
-                      
-                    
-                      
-                      
-                        <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/dxl/pro/m54-60-s250-ra/" class="">M54-60-S250-R(A)</a>
                         </li>
                       
                     
@@ -662,21 +636,7 @@ $(function() {
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/dxl/pro/m54-40-s250-ra/" class="">M54-40-S250-R(A)</a>
-                        </li>
-                      
-                    
-                      
-                      
-                        <li class="mobile_depth_3">
                           <a href="http://localhost:4000/docs/en/dxl/pro/m42-10-s260-r/" class="">M42-10-S260-R</a>
-                        </li>
-                      
-                    
-                      
-                      
-                        <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/dxl/pro/m42-10-s260-ra/" class="">M42-10-S260-R(A)</a>
                         </li>
                       
                     
@@ -2074,21 +2034,7 @@ $(function() {
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/dxl/pro/h54-200-s500-ra/">H54-200-S500-R(A)</a>
-                    
-                
-                  
-
-                  
-                    
                       <a href="http://localhost:4000/docs/en/dxl/pro/h54-100-s500-r/">H54-100-S500-R</a>
-                    
-                
-                  
-
-                  
-                    
-                      <a href="http://localhost:4000/docs/en/dxl/pro/h54-100-s500-ra/">H54-100-S500-R(A)</a>
                     
                 
                   
@@ -2102,21 +2048,7 @@ $(function() {
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/dxl/pro/h42-20-s300-ra/">H42-20-S300-R(A)</a>
-                    
-                
-                  
-
-                  
-                    
                       <a href="http://localhost:4000/docs/en/dxl/pro/m54-60-s250-r/">M54-60-S250-R</a>
-                    
-                
-                  
-
-                  
-                    
-                      <a href="http://localhost:4000/docs/en/dxl/pro/m54-60-s250-ra/">M54-60-S250-R(A)</a>
                     
                 
                   
@@ -2130,21 +2062,7 @@ $(function() {
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/dxl/pro/m54-40-s250-ra/">M54-40-S250-R(A)</a>
-                    
-                
-                  
-
-                  
-                    
                       <a href="http://localhost:4000/docs/en/dxl/pro/m42-10-s260-r/">M42-10-S260-R</a>
-                    
-                
-                  
-
-                  
-                    
-                      <a href="http://localhost:4000/docs/en/dxl/pro/m42-10-s260-ra/">M42-10-S260-R(A)</a>
                     
                 
                   
@@ -4801,9 +4719,8 @@ If errors occur, in case of Alarm LED, the LED blinks; in case of Alarm Shutdown
   </tbody>
 </table>
 
-<div class="notice--warning">
-<p><strong>WARNING</strong> :<br />
-The LED indicates present status of the device.</p>
+<div class="notice">
+<p><strong>NOTE</strong> : The LED indicates present status of the device.</p>
 
 <table>
   <thead>
@@ -4818,7 +4735,7 @@ The LED indicates present status of the device.</p>
       <td style="text-align: center">LED flickers once</td>
     </tr>
     <tr>
-      <td style="text-align: center">Reset</td>
+      <td style="text-align: center">Factory Reset</td>
       <td style="text-align: center">LED flickers 4 times</td>
     </tr>
     <tr>
@@ -4827,7 +4744,7 @@ The LED indicates present status of the device.</p>
     </tr>
     <tr>
       <td style="text-align: center">Slave Mode(MX-106)</td>
-      <td style="text-align: center">LED On</td>
+      <td style="text-align: center">LED flickers 3 times</td>
     </tr>
     <tr>
       <td style="text-align: center">Boot Mode</td>
@@ -4944,7 +4861,7 @@ If the power is turned on, the value of Max Torque (Address 14, 15) is used as t
 <p class="notice"><strong>NOTE</strong> : If the function of Alarm Shutdown is triggered, the motor loses its torque because the value becomes 0. Once error conditions are resolved and this value is changed to the value other than 0, the motor can be operated again.</p>
 
 <h3 id="present-position-36"><a name="present-position"></a><strong><a href="#present-position-36">Present Position (36)</a></strong></h3>
-<p>It is the current position value of Dynamixel.
+<p>It is the present position value of Dynamixel.
 The range of the value is 0~1023 (0x3FF), and the unit is 0.29 degree.</p>
 
 <p><img src="/assets/images/dxl/dx/dx_series_goal_position.png" alt="" />
