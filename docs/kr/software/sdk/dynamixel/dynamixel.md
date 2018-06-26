@@ -58,7 +58,7 @@ Reference는 C언어 호출 방식을 기반으로 설명을 합니다.
 
 Dynamixel SDK는 사용자가 직접 다양한 플랫폼에 포팅할 수 있도록 소스를 제공하고 있습니다.
 
-`download` [DXL_SDK_Porting_ v1_01.zip](http://support.robotis.com/ko/baggage_files/dynamixel_sdk/dxl_sdk_porting_v1_01.zip)
+`다운로드` [DXL_SDK_Porting_ v1_01.zip](http://support.robotis.com/ko/baggage_files/dynamixel_sdk/dxl_sdk_porting_v1_01.zip)
 
 ### 소스 구조
 

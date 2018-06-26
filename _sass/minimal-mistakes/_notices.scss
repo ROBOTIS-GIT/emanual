@@ -33,14 +33,14 @@
   }
   
   img {
-    float: left;
+    float: none;
     padding: 0;
     border: 0;
   }
 }
 
 @mixin notice-margin {
-  p, ol {
+  p, ol, table {
     margin-left: 0 !important;
   }
 }

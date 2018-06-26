@@ -18,13 +18,13 @@ sidebar:
 - 모든 소스가 C언어로 작성되어 있습니다.
 - 제어기 각 부분을 직접 제어하는 예제를 제공합니다.
 
-**NOTE** : 임베디드 C를 사용하려면 하드웨어 및 소프트웨어에 대한 전문적인 지식이 필요합니다. 초보자의 경우 전문 지식을 별도로 습득한 후, 사용하는 것을 권장합니다. 
+**NOTE** : 임베디드 C를 사용하려면 하드웨어 및 소프트웨어에 대한 전문적인 지식이 필요합니다. 초보자의 경우 전문 지식을 별도로 습득한 후, 사용하는 것을 권장합니다.
 {: .notice}
 
 **NOTE** : 임베디드 C를 사용하게 되면 제어기 펌웨어가 바뀌어서 로보플러스를 사용할 수 없게됩니다. 다시 로보플러스를 사용하기 위해서는 로보플러스 매니저로 펌웨어 복구를 시도해야 합니다.
 {: .notice}
 
-# [CM-510/CM700](#cm-510700)
+# [CM-510, CM-700](#cm-510-cm-700)
 
 - `다운로드` [CM-510 SDK]
 - `다운로드` [CM-700 SDK]
@@ -52,7 +52,7 @@ WinAVR은 다음 사이트에서 다운로드 받을 수 있으며, 누구나 �
 설치 과정은 다음과 같습니다.
 
 1. 설치 언어를 설정합니다.
-    
+
     ![](/assets/images/sw/sdk/embedded_001.png)
 
 2. 설치 초기 화면입니다.
@@ -251,7 +251,7 @@ CM-700의 외부 포트 핀 구성은 다음과 같습니다. Sub보드의 아�
 
 - 아래와 같이 5개의 핀 중, 3번 ADC핀이 마이크로 컨트롤러의 PORTF1 ~ PORTF6과 대응되어 있습니다.
 - 아래와 같이 5개의 핀 중, 1번 OUT핀이 마이크로 컨트롤러의 PORTA2 ~ PORTA7과 대응되어 있습니다.
- 
+
   ![img](/assets/images/sw/sdk/embedded_034.jpg)
 
 
@@ -427,7 +427,7 @@ Atmega2561을 사용하는 제어기의 메모리맵은 다음과 같습니다.
       PORTC = ~(LED_BAT|LED_TxD|LED_RxD|LED_AUX|LED_MANAGE|LED_PROGRAM|LED_PLAY);
     else PORTC = LED_BAT|LED_TxD|LED_RxD|LED_AUX|LED_MANAGE|LED_PROGRAM|LED_PLAY;
     ```
-    
+
     PORTD를 통해 눌린 버튼을 판단하고, 눌린 버튼에 따라 PORTC를 제어하여 LED를 켜고 끄는 부분입니다.  
     PORTD를 통해 입력값을 얻는 방법은 PIND 매크로 함수를 사용합니다.  
     PIND는 1바이트이며, 각 비트에는 PORTD의 핀이 대응되어 있습니다.  
@@ -558,7 +558,7 @@ PC와 제어기가 시리얼 통신을 할 수 있습니다.
     }
     else PORTC = LED_BAT|LED_TxD|LED_RxD|LED_AUX|LED_MANAGE|LED_PROGRAM|LED_PLAY;
     ```
-    
+
     PORTD를 통해 눌린 버튼을 판단하고, 눌린 버튼에 따라 PORTC를 제어하여 LED를 켜고 끄는 부분입니다.  
     PORTD를 통해 입력값을 얻는 방법은 PIND 매크로 함수를 사용합니다.  
     PIND는 1바이트이며, 각 비트에는 PORTD의 핀이 대응되어 있습니다.  
@@ -635,20 +635,20 @@ PC와 제어기가 시리얼 통신을 할 수 있습니다.
   //unsigned short wGoalPos[2] = {0, 4095}; // for EX series
   ```
 
-  EX 106+과 같이 위치 범위가 0~4095인 액츄에이터는 위쪽 줄을 주석처리 하고, 아래 줄을 주석 해제하여 주십시오.
+  EX 106+과 같이 위치 범위가 0~4,095인 액츄에이터는 위쪽 줄을 주석처리 하고, 아래 줄을 주석 해제하여 주십시오.
 
   ```c
   serial_initialize(57600);
   dxl_initialize( 0, DEFAULT_BAUDNUM ); // Not using device index
   sei(); // Interrupt Enable
   ```
-  
+
   시리얼 통신을 사용하기 위해 초기화 하는 부분입니다. 시리얼 초기화 함수는 serial 라이브러리에 포함되어 있으며, 인자로 통신 속도를 전달 해 주면, 시리얼 포트가 초기화 됩니다.  
   sei()경우 인터럽트를 사용할 수 있도록 하는 내부 명령어입니다.  
   [dxl_initialize()] 함수의 경우 인자로 device index와 통신 속도를 넘겨주면, 제어기의 통신 환경을 초기화합니다.  
   DEFAULT_BAUDNUM은 1입니다.  
   특별한 경우가 아니면 device index는 0입니다.
-  
+
   ```c
   // Check moving done
   bMoving = dxl_read_byte( id, P_MOVING );
@@ -686,7 +686,7 @@ PC와 제어기가 시리얼 통신을 할 수 있습니다.
 
 여러개의 다이나믹셀을 동기화하여 제어할 수 있습니다. (보다 자세한 사항은 [Dynamixel SDK]를 확인 하세요)
 
-- 준비물 
+- 준비물
   - 제어기와 다이나믹셀이 연결된 상태
   - 이 예제는 다이나믹셀 ID가 1부터 순차적으로 3까지 설정되어 있을 때 동작합니다.
 
@@ -699,21 +699,21 @@ PC와 제어기가 시리얼 통신을 할 수 있습니다.
   int AmpPos = 512;
   //int AmpPos = 2048; // for EX series
   ```
-  
-  EX 106+와 같이 위치 범위가 0~4095인 액츄에이터는 위쪽 줄을 주석처리 하고, 아래 줄을 주석 해제하여 주십시오.
-  
+
+  EX 106+와 같이 위치 범위가 0~4,095인 액츄에이터는 위쪽 줄을 주석처리 하고, 아래 줄을 주석 해제하여 주십시오.
+
   ```c
   serial_initialize(57600);
   dxl_initialize( 0, DEFAULT_BAUDNUM ); // Not using device index
   sei(); // Interrupt Enable
   ```
-  
+
   시리얼 통신을 사용하기 위해 초기화 하는 부분입니다. 시리얼 초기화 함수는 serial 라이브러리에 포함되어 있으며, 인자로 통신 속도를 전달 해 주면, 시리얼 포트가 초기화 됩니다.  
   sei()경우 인터럽트를 사용할 수 있도록 하는 내부 명령어입니다.  
   dxl_initialize() 함수의 경우 인자로 device index와 통신 속도를 넘겨주면, 제어기의 통신 환경을 초기화합니다.  
   DEFAULT_BAUDNUM은 1입니다.  
   특별한 경우가 아니면 device index는 0입니다.
-  
+
   ```c
   for( i=0; i < NUM_ACTUATOR; i++ )
   {
@@ -726,10 +726,10 @@ PC와 제어기가 시리얼 통신을 할 수 있습니다.
   dxl_write_word( BROADCAST_ID, P_GOAL_POSITION_L, AmpPos );
   _delay_ms(1000);
   ```
-  
+
   각 다이나믹셀의 초기 위치를 계산 및 위치 초기화하는 부분입니다.  
   dxl_write_word()함수를 이용해 모든 다이나믹셀의 속도를 최대속도로 설정하고, 위치를 중앙 위치로 설정합니다.
-  
+
   ```c
   // Make syncwrite packet
   dxl_set_txpacket_id(BROADCAST_ID);
@@ -746,9 +746,9 @@ PC와 제어기가 시리얼 통신을 할 수 있습니다.
   }
   dxl_set_txpacket_length((2+1)*NUM_ACTUATOR+4);
   ```
-  
+
   패킷 생성 부분입니다. 패킷의 구조는 [다이나믹셀 패킷 구조]를 참조하십시오. 연결된 모든 액츄에이터의 패킷을 생성하고 전송합니다.
-  
+
   ```c
   printf( "\n" );
 
@@ -787,7 +787,7 @@ RC-100을 이용하여 제어기를 동작시킬 수 있습니다. (보다 자�
   ![img](/assets/images/sw/sdk/embedded_049.png)
 
   ZigBee 사용을 위한 환경 설정. PORTD의 환경을 다음과 같이 설정해야 함.
-  
+
   ```c
   PORTD &= ~0x80; //PORT_LINK_PLUGIN = 0;   // no pull up
   PORTD &= ~0x20; //PORT_ENABLE_RXD_LINK_PC = 0;
@@ -796,7 +796,7 @@ RC-100을 이용하여 제어기를 동작시킬 수 있습니다. (보다 자�
 
   ZigBee 통신을 사용하기 위해 초기화 하는 부분입니다. 초기화 함수는 Zigbee 라이브러리에 포함되어 있으며, 인자로 device index를 전달하면 Zigbee가 초기화 됩니다. 특별한 경우가 아니면, device index는 0입니다.  
   sei()경우 인터럽트를 사용할 수 있도록 하는 내부 명령어입니다.
-  
+
   ```c
   if(zgb_rx_check() == 1)
   {
@@ -818,8 +818,8 @@ RC-100을 이용하여 제어기를 동작시킬 수 있습니다. (보다 자�
 
   [zgb_rx_data()]함수를 이용하여 Zigbee모듈에 수신된 데이터를 읽어옵니다.  
   수신 패킷이 RC100버튼이면, RC100의 눌린 버튼에 따라 PORTC를 제어하여 제어기의 LED를 켜거나 끕니다.  
-  
-  `주의` ZigBee와 시리얼통신 라이브러리를 같은 소스에서 사용하면 UART공유로 인해 충돌이 일어납니다. 만약, 동시 사용을 원한다면 소스를 수정해야 합니다.
+
+  **주의**: ZigBee와 시리얼통신 라이브러리를 같은 소스에서 사용하면 UART공유로 인해 충돌이 일어납니다. 만약, 동시 사용을 원한다면 소스를 수정해야 합니다.
   {: .notice--warning}
 
 - 결과

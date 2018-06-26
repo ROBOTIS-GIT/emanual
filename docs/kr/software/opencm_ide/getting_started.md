@@ -803,7 +803,7 @@ void loop(){
 int value = analogRead(3);  // 0번 핀에서 아날로그 입력받아서 value 변수에 할당합니다.
 ```
 
-여기서 value에 할당되는 값은 12bit ADC 값으로 0~ 4095값이 됩니다. 전체 코드를 통해 읽은 ADC값을 출력해봅니다.
+여기서 value에 할당되는 값은 12bit ADC 값으로 0~ 4,095값이 됩니다. 전체 코드를 통해 읽은 ADC값을 출력해봅니다.
 
 ```c
 void setup(){
@@ -1358,7 +1358,7 @@ void loop(){
 
 CCW Angle Limit이 0x3FF일 경우 300도 이므로 150도에 해당하는 0x200을 writeByte() 메소드를 이용해 전송합니다.  
 
-`주의` 8번 CCW Angle Limit을 0으로 할 경우 바퀴모드로 변경되어서 Goal position 제어가 되지 않으니 주의하세요.
+**주의**: 8번 CCW Angle Limit을 0으로 할 경우 바퀴모드로 변경되어서 Goal position 제어가 되지 않으니 주의하세요.
 {: .notice--warning}
 
 ![opencm9.04_dynamixel9.png](/assets/images/sw/opencm_ide/opencm9.04_dynamixel9.png)

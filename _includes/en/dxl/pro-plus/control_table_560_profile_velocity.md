@@ -15,7 +15,7 @@ Trapezoidal Profile is exceptionally chosen with additional factor: travel dista
 
 ![](/assets/images/dxl/pro-plus/profile_types.png)
 
-When given Goal Position(564), the device’s profile creates desired velocity trajectory based on current velocity(initial velocity of the Profile).  
+When given Goal Position(564), the device’s profile creates desired velocity trajectory based on present velocity(initial velocity of the Profile).  
 When the device receives updated desired position via Goal Position(564) while it is moving toward the previous desired position, velocity will smoothly changed for the new desired velocity trajectory.  
 Maintaining velocity continuity while updating the desired velocity trajectory is called "Velocity Override".  
 For easier calculation in this example, let’s assume that the initial velocity of the Profile is `0`.

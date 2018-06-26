@@ -5,6 +5,7 @@
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
 -->
+<!-- <html lang="en" class="no-js"> -->
 <html lang="en" class="no-js">
   <head>
     <meta charset="utf-8">
@@ -152,13 +153,14 @@ $(function() {
 </script>
 <!-- insert favicons. use http://realfavicongenerator.net/ -->
 <link rel="shortcut icon" type="image/x-icon" href="//www.robotis.com/img/common/favicon_16x16_ver1701.ico">
+<link type="text/css" rel="stylesheet" charset="UTF-8" href="http://fonts.googleapis.com/earlyaccess/notosanskr.css">
 <!-- end custom head snippets -->
 
     <script>
       var toggle_google = 0;
       var toggle_search_tool = 0;
       var mobile_width = 960;
-      
+
       function extendgoogletool() {
         if (toggle_google == 0) {
           google_tools.classList.add("extend_googletools");
@@ -171,7 +173,7 @@ $(function() {
           toggle_google = 0;
         }
       }
-      
+
       function extendsearchtool() {
         if (toggle_search_tool == 0) {
           $('#site_search').css('display', 'block');
@@ -210,7 +212,7 @@ $(function() {
 
             if (distance < 30 && distance > -30 && currentHash != hash) {
               currentHash = hash;
-              console.log(currentHash);
+              // console.log(currentHash);
               window.history.pushState(window.location.href, "title", currentHash);   //Update browser URL with current anchor
               // $('#' + currentHash).attr("color", "#FF6D6D"); //Syntax error
             }
@@ -226,12 +228,12 @@ $(function() {
         $('.extend_sidebar').css('top', offset);
         $('.local_navigation').css('top', offset);    //sticky local navigation
         $('.searchbox').css('top', offset);           //sticky searchbox
-        console.log(window.scrollY);
+        // console.log(window.scrollY);
       };
     </script>
     <script>
       var toggle = 0;
-      
+
       function extendnav() {
         if (toggle == 0) {
           sidebar__left.classList.add("extend_sidebar");
@@ -273,7 +275,7 @@ $(function() {
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
       <button class="search_button" onclick="extendsearchtool()">
-        <i class="fa fa-fw fa-search" style="font-size:20px;color:white;"></i>
+        <img class="logo" src="/assets/images/search_icon.png">
       </button>
       <a class="site-title" href="http://localhost:4000/"><img class="logo" id="logo" src="/assets/images/robotis_emanual_logo.png"></a>
       

@@ -92,6 +92,11 @@ html {
     
     .nav__items li ul li {
       padding-right: 0;
+      border-right: 0;
+    }
+    
+    .nav__items li ul li ul li {
+      padding-right: 0;
     }
     
     .nav__items>li>ul>li a, .nav__items>li>ul>li label {
@@ -480,7 +485,7 @@ html {
       }
       
       table {
-        font-size: 0.55rem;
+        font-size: 0.7em;
       }
       
       .community_link_medium {

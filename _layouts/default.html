@@ -8,7 +8,8 @@
   Free for personal and commercial use under the MIT license
   https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
 -->
-<html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
+<!-- <html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js"> -->
+<html lang="{{ page.lang | default: "en" }}" class="no-js">
   <head>
     {% include head.html %}
     {% include head/custom.html %}
@@ -16,7 +17,7 @@
       var toggle_google = 0;
       var toggle_search_tool = 0;
       var mobile_width = 960;
-      
+
       function extendgoogletool() {
         if (toggle_google == 0) {
           google_tools.classList.add("extend_googletools");
@@ -29,7 +30,7 @@
           toggle_google = 0;
         }
       }
-      
+
       function extendsearchtool() {
         if (toggle_search_tool == 0) {
           $('#site_search').css('display', 'block');
@@ -68,7 +69,7 @@
 
             if (distance < 30 && distance > -30 && currentHash != hash) {
               currentHash = hash;
-              console.log(currentHash);
+              // console.log(currentHash);
               window.history.pushState(window.location.href, "title", currentHash);   //Update browser URL with current anchor
               // $('#' + currentHash).attr("color", "#FF6D6D"); //Syntax error
             }
@@ -84,12 +85,12 @@
         $('.extend_sidebar').css('top', offset);
         $('.local_navigation').css('top', offset);    //sticky local navigation
         $('.searchbox').css('top', offset);           //sticky searchbox
-        console.log(window.scrollY);
+        // console.log(window.scrollY);
       };
     </script>
     <script>
       var toggle = 0;
-      
+
       function extendnav() {
         if (toggle == 0) {
           sidebar__left.classList.add("extend_sidebar");

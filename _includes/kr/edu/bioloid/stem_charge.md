@@ -8,13 +8,13 @@ STEM 키트는 리튬폴리머로도 작동할 수 있으며, 쇼핑몰([http://
 
 2. 충전기 연결
 
-    |![](/assets/images/edu/bioloid/bp_charger_conn_KR.png)
+    ![](/assets/images/edu/bioloid/bp_charger_conn_KR.png)
 
 3. 충전
 
     충전중(붉은색 LED), 충전완료(녹색 LED)
-    
-    |![](/assets/images/edu/bioloid/bp_charging_KR.png)
+
+    ![](/assets/images/edu/bioloid/bp_charging_KR.png)
 
 
 - SMPS 를 로봇에 직접 연결하면 외부 전원으로 로봇을 구동할 수도 있습니다.  

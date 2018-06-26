@@ -16,13 +16,14 @@ html {
   position: relative;
   min-height: 100%;
 }
+:lang(en) {font-family: $global-font-family;}
+:lang(kr) {font-family: $global-kr-font-family;}
 
 body {
   counter-reset: h1;
   margin: 0;
   padding: 0;
   color: $text-color;
-  font-family: $global-font-family;
   line-height: 1.5;
 
   &.overflow--hidden {
@@ -321,4 +322,15 @@ ul > li > ul {
 img {
   border: 1px solid #999;
   border-radius: $img-border-radius;
+}
+
+blockquote {
+  word-wrap: break-word;
+  margin: 0.5em 0.5em 0 0;
+  font-style: italic;
+  color: $primary-color;
+  border-left: 0.25em solid $primary-color;
+  p {
+    margin : 0 0.5em;
+  }
 }

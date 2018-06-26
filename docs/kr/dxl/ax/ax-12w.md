@@ -114,7 +114,7 @@ Baudrate(BPS) = 2,000,000 / (Value + 1)
 |    103    |     19200     | -0.160% |
 |    207    |     9600      | -0.160% |
 
-`참고` UART는 Baudrate 오차가 3% 이내이면 통신에 지장이 없습니다.
+**참고**: UART는 Baudrate 오차가 3% 이내이면 통신에 지장이 없습니다.
 {: .notice}
 
 ### <a name="return-delay-time"></a>**[Return Delay Time (5)](#return-delay-time-5)**
@@ -199,7 +199,7 @@ Baudrate(BPS) = 2,000,000 / (Value + 1)
 
 # [참고자료](#참고자료)
 
-**NOTE** : [호환성 가이드]
+**주의**: [호환성 가이드]
 {: .notice}
 
 ## [커넥터 정보](#커넥터-정보)

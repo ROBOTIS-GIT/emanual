@@ -888,7 +888,7 @@ Origin은 X, Y, Z의 좌표가 (0, 0, 0)임을 의미합니다.
 사용자가 만든 로봇을 RoboPlus Motion 프로그램에 추가하여 사용 할 수 있습니다.
 
 {% capture roboplus_motion_warning_01 %}
-`주의` 이 내용은 다음과 같은 전문 지식을 필요로 합니다.
+**주의**: 이 내용은 다음과 같은 전문 지식을 필요로 합니다.
   - XML
   - 3D Graphics
   - C# Programming

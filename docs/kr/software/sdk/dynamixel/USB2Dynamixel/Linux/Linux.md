@@ -5,7 +5,7 @@ Linux 용 Dynamixel SDK 를 이하의 링크에서 다운로드 하실 수 있�
 - 최신 버전
  <https://github.com/ROBOTIS-GIT/DynamixelSDK>
 - 이전 버전
- `download` [DXL_SDK_LINUX_ v1_01.zip](http://support.robotis.com/ko/baggage_files/dynamixel_sdk/dxl_sdk_linux_v1_01.zip)
+ `다운로드` [DXL_SDK_LINUX_ v1_01.zip](http://support.robotis.com/ko/baggage_files/dynamixel_sdk/dxl_sdk_linux_v1_01.zip)
 
 
 - 시스템 요구 사항

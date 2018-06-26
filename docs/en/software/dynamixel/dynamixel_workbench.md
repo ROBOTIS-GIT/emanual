@@ -61,7 +61,7 @@ $ sudo apt-get install ros-kinetic-qt-build
 ## [Single Manager](#single-manager)
 
 * dynamixel_workbench_single_manager - Check Dynamixel status and access Dynamixel's Control Table addresses via **command line**.
- 
+
 ### Nodes
 
 1. dynamixel_monitor - To show states of a Dynamixel by topic messages
@@ -78,7 +78,7 @@ $ sudo apt-get install ros-kinetic-qt-build
     + Services
         - /dynamixel/info - Get information about connected Dynamixel
         - /dynamixel/command - Send command to control Dynamixel
-          
+
 * dynamixel_workbench_single_manager_gui - Check Dynamixel status and access Dynamixel's Control Table addresses via **GUI**.
 
 ![](/assets/images/sw/dynamixel/dynamixel_workbench/single_manager_gui.jpg)
@@ -93,20 +93,20 @@ $ sudo apt-get install ros-kinetic-qt-build
         - /dynamixel/info - Get information about connected Dynamixel
         - /dynamixel/command - Send command to control Dynamixel          
 
-## [Controllers](#controllers) 
+## [Controllers](#controllers)
 
 * dynamixel_workbench_controllers - Contains 3 different controllers(Position, Velocity, Torque) and Multi port example that demonstrate how to control the Dynamixels
 
 ### Nodes
 
-1. position_control - Dynamixel position control example using Dynamixel Workbench library which is based on [Dynamixel SDK](http://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_sdk/overview/). 
+1. position_control - Dynamixel position control example using Dynamixel Workbench library which is based on [Dynamixel SDK](http://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_sdk/overview/).
     + Messages
         - /dynamixel_state - Provides states of connected Dynamixels
 
     + Services
         - /joint_command - Command to change the angle
-    
-1. velocity_control - Dynamixel velocity control example using Dynamixel Workbench library which is based on [Dynamixel SDK](http://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_sdk/overview/). 
+
+1. velocity_control - Dynamixel velocity control example using Dynamixel Workbench library which is based on [Dynamixel SDK](http://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_sdk/overview/).
     + Messages
         - /dynamixel_state - Provides states of connected Dynamixels
     + Services
@@ -119,7 +119,7 @@ $ sudo apt-get install ros-kinetic-qt-build
     + Services
         - /joint_command - Command to change the angle
 
-1. multi_port - Dynamixel multi-port example using Dynamixel Workbench library which is based on [Dynamixel SDK](http://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_sdk/overview/). 
+1. multi_port - Dynamixel multi-port example using Dynamixel Workbench library which is based on [Dynamixel SDK](http://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_sdk/overview/).
     + Messages
         - /dynamixel_state - Provides states of connected Dynamixels
 
@@ -134,17 +134,17 @@ $ sudo apt-get install ros-kinetic-qt-build
 
 1. joint_operator - Command Dynamixels to move to a specific position
     + Messages
-            
+
     + Services
         - /joint_command - Command to change the angle  
 
 1. wheel_operator - Give Dynamixels to rotate to a specific velocity
     + Messages
-            
+
     + Services
         - /wheel_command - Command to change the velocity  
 
-## [Toolbox](#toolbox) 
+## [Toolbox](#toolbox)
 
 * dynamixel_workbench_toolbox - This package is composed of ***dynamixel_item***, ***dynamixel_tool***, ***dynamixel_driver***, and ***dynamixel_workbench*** class. The ***dynamixel_item*** is saved control table item and information of Dynamixels. The ***dynamixel_tool*** class loads its by model name of Dynamixels. The ***dynamixel_driver*** class includes wraped function used in DYNAMIXEL SDK. ***dynamixel_workbench*** class makes simple to use Dynamixels.
 
@@ -290,7 +290,7 @@ $ sudo apt-get install ros-kinetic-qt-build
         - convertTorque2Value(uint8_t id, float torque) - Convert torque to value
 
         - convertValue2Torque(uint8_t id, int16_t value) - Convert value to torque
-                
+
 # [Tutorials](#tutorials)
 
 ## [Single Manager Tutorials](#single-manager-tutorials)
@@ -358,13 +358,13 @@ $ sudo apt-get install ros-kinetic-qt-build
     ```
     $ sudo chmod a+rw /dev/ttyUSB0
     ```
-    
+
 1. Launch paskage
 
     1. Now we can run tutorial package:
-    
+
     ```
-    $ cd ~/catkin_ws && catkin_make 
+    $ cd ~/catkin_ws && catkin_make
     $ roslaunch my_dynamixel_workbench_tutorial single_manager.launch
     ```
 
@@ -498,7 +498,7 @@ $ sudo apt-get install ros-kinetic-qt-build
         ```
 
     1. Type or Copy&Paste code below to connect dynamixel_workbench_single manager packages and set parameters
-    
+
         ```
         <launch>
         <arg name="use_ping"         default="false"/>
@@ -527,15 +527,15 @@ $ sudo apt-get install ros-kinetic-qt-build
 1. Launch packages
 
     1. Before we operating this package, we need to access permission for USB device
-    
+
         ```
         $ sudo chmod a+rw /dev/ttyUSB0
         ```
 
     1. Now we can run tutorial package:
-    
+
         ```
-        $ cd ~/catkin_ws && catkin_make 
+        $ cd ~/catkin_ws && catkin_make
         $ roslaunch my_dynamixel_workbench_tutorial single_monitor.launch
         ```
 
@@ -552,7 +552,7 @@ $ sudo apt-get install ros-kinetic-qt-build
         $ rosrun dynamixel_workbench_single_manager_gui dynamixel_workbench_single_manager_gui
         ```
 
-        Now, GUI is opened! 
+        Now, GUI is opened!
 
         ![](/assets/images/sw/dynamixel/dynamixel_workbench/single_manager_gui.jpg)
 
@@ -564,7 +564,7 @@ $ sudo apt-get install ros-kinetic-qt-build
 
     ![](/assets/images/sw/dynamixel/dynamixel_workbench/gui_torque_enable.jpg)
 
-    Second, we should select goal_position in combobox and turn dial, type value on line edit or push Position ZERO. 
+    Second, we should select goal_position in combobox and turn dial, type value on line edit or push Position ZERO.
 
     ![](/assets/images/sw/dynamixel/dynamixel_workbench/gui_goal_position.jpg)
 
@@ -669,8 +669,8 @@ $ sudo apt-get install ros-kinetic-qt-build
     For example:
 
     ```
-    dynamixel_state: 
-    - 
+    dynamixel_state:
+    -
         model_name: "XM430-W350"
         id: 1
         torque_enable: 1
@@ -681,7 +681,7 @@ $ sudo apt-get install ros-kinetic-qt-build
         present_velocity: 0
         present_position: 4004
         moving: 0
-    - 
+    -
         model_name: "XM430-W350"
         id: 2
         torque_enable: 1
@@ -821,8 +821,8 @@ $ sudo apt-get install ros-kinetic-qt-build
     For example:
 
     ```
-    dynamixel_state: 
-    - 
+    dynamixel_state:
+    -
         model_name: "XM430-W350"
         id: 1
         torque_enable: 1
@@ -833,7 +833,7 @@ $ sudo apt-get install ros-kinetic-qt-build
         present_velocity: 0
         present_position: 2049
         moving: 0
-    - 
+    -
         model_name: "XM430-W350"
         id: 2
         torque_enable: 1
@@ -851,7 +851,7 @@ $ sudo apt-get install ros-kinetic-qt-build
     We run the two linked Dynamixels using rosservice call or dynamixel_workbench_operators [unit : rad/sec].
 
     ```
-    $ rosrun dynamixel_workbench_operators wheel_operator 
+    $ rosrun dynamixel_workbench_operators wheel_operator
     ```
 
     Then, we can set velocity using keyboard.
@@ -881,7 +881,7 @@ $ sudo apt-get install ros-kinetic-qt-build
 
 **Note :** IF YOU ALREADY CREATE **my_dynamixel_workbench_tutorial** PACKAGE, THEN YOU JUMP TO STEP 2.
 {: .notice--info}
-        
+
 **Warning :** THIS TUTORIAL ONLY SUPPORT XM430-W350-R.
 {: .notice--warning}
 
@@ -979,8 +979,8 @@ $ sudo apt-get install ros-kinetic-qt-build
     For example:
 
     ```
-    dynamixel_state: 
-    - 
+    dynamixel_state:
+    -
         model_name: "XM430-W350"
         id: 1
         torque_enable: 1
@@ -991,7 +991,7 @@ $ sudo apt-get install ros-kinetic-qt-build
         present_velocity: 0
         present_position: 2049
         moving: 0
-    - 
+    -
         model_name: "XM430-W350"
         id: 2
         torque_enable: 1
@@ -1139,8 +1139,8 @@ $ sudo apt-get install ros-kinetic-qt-build
     For example:
 
     ```
-    dynamixel_state: 
-    - 
+    dynamixel_state:
+    -
         model_name: "XM430-W350"
         id: 1
         torque_enable: 1
@@ -1151,7 +1151,7 @@ $ sudo apt-get install ros-kinetic-qt-build
         present_velocity: 0
         present_position: 2049
         moving: 0
-    - 
+    -
         model_name: "XM430-W350"
         id: 2
         torque_enable: 1
@@ -1162,7 +1162,7 @@ $ sudo apt-get install ros-kinetic-qt-build
         present_velocity: 0
         present_position: 1765
         moving: 0
-    - 
+    -
         model_name: "MX-28"
         id: 1
         torque_enable: 1
