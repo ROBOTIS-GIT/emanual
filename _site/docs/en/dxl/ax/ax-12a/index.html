@@ -222,13 +222,13 @@ $(function() {
     </script>
     <script>
       window.onscroll = function () {
-        var offset = 64 - window.scrollY;
+        var offset = 64 - $(window).scrollTop();
         if(offset < 0) { offset = 0; }
-        $('.sidebar__left').css('top', offset);       //sticky sidebar
-        $('.extend_sidebar').css('top', offset);
-        $('.local_navigation').css('top', offset);    //sticky local navigation
-        $('.searchbox').css('top', offset);           //sticky searchbox
-        // console.log(window.scrollY);
+        $(".sidebar__left").css("top", offset);       //sticky sidebar
+        $(".extend_sidebar").css("top", offset);
+        $(".local_navigation").css("top", offset);    //sticky local navigation
+        $(".searchbox").css("top", offset);           //sticky searchbox
+        // console.log($(window).scrollTop());
       };
     </script>
     <script>
@@ -4723,8 +4723,7 @@ If errors occur, in case of Alarm LED, the LED blinks; in case of Alarm Shutdown
 </table>
 
 <div class="notice">
-<p><strong>NOTE</strong> :<br />
-The LED indicates present status of the device.</p>
+<p><strong>NOTE</strong> : The LED indicates present status of the device.</p>
 
 <table>
   <thead>
@@ -4865,7 +4864,7 @@ If the power is turned on, the value of Max Torque (Address 14, 15) is used as t
 <p class="notice"><strong>NOTE</strong> : If the function of Alarm Shutdown is triggered, the motor loses its torque because the value becomes 0. Once error conditions are resolved and this value is changed to the value other than 0, the motor can be operated again.</p>
 
 <h3 id="present-position-36"><a name="present-position"></a><strong><a href="#present-position-36">Present Position (36)</a></strong></h3>
-<p>It is the current position value of Dynamixel.
+<p>It is the present position value of Dynamixel.
 The range of the value is 0~1023 (0x3FF), and the unit is 0.29 degree.</p>
 
 <p><img src="/assets/images/dxl/dx/dx_series_goal_position.png" alt="" />

@@ -927,8 +927,8 @@ B 타입 로봇에 그리퍼를 장착한 모습입니다.
 [태스크 코드 다운로드 방법]: /docs/kr/faq/download_task_code/
 [모션 파일 다운로드 방법]: /docs/kr/software/rplus1/motion/#download-motion
 [보행 머신]: #보행-머신
-[콜백(Callback) 함수]: /docs/kr/software/rplus1/task/programming_01/#???
-[관절 오프셋]: /docs/kr/software/rplus1/task/programming_02/#???
+[콜백(Callback) 함수]: /docs/kr/software/rplus1/task/programming_01/#콜백-함수
+[관절 오프셋]: /docs/kr/software/rplus1/task/programming_02/#관절-오프셋
 
 
 [BIO_PRM_CrossingGate_ASM.pdf]: http://www.robotis.com/download/doc/BIO_PRM_CrossingGate_ASM.pdf

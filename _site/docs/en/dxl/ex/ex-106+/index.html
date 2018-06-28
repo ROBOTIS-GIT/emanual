@@ -222,13 +222,13 @@ $(function() {
     </script>
     <script>
       window.onscroll = function () {
-        var offset = 64 - window.scrollY;
+        var offset = 64 - $(window).scrollTop();
         if(offset < 0) { offset = 0; }
-        $('.sidebar__left').css('top', offset);       //sticky sidebar
-        $('.extend_sidebar').css('top', offset);
-        $('.local_navigation').css('top', offset);    //sticky local navigation
-        $('.searchbox').css('top', offset);           //sticky searchbox
-        // console.log(window.scrollY);
+        $(".sidebar__left").css("top", offset);       //sticky sidebar
+        $(".extend_sidebar").css("top", offset);
+        $(".local_navigation").css("top", offset);    //sticky local navigation
+        $(".searchbox").css("top", offset);           //sticky searchbox
+        // console.log($(window).scrollTop());
       };
     </script>
     <script>
@@ -4217,7 +4217,7 @@ $(function() {
       <td style="text-align: left"><a href="#ccw-angle-limit">CCW Angle Limit</a></td>
       <td style="text-align: left">Counter-Clockwise Angle Limit</td>
       <td style="text-align: center">RW</td>
-      <td style="text-align: center">4095</td>
+      <td style="text-align: center">4,095</td>
     </tr>
     <tr>
       <td style="text-align: center">10</td>

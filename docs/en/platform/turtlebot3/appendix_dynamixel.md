@@ -14,6 +14,10 @@ sidebar:
 <div style="counter-reset: h1 21"></div>
 <div style="counter-reset: h2 0"></div>
 
+<!--[dummy Header 1]>
+  <h1 id="appendixes"><a href="#appendixes">Appendixes</a></h1>
+<![end dummy Header 1]-->
+
 ## [DYNAMIXEL](#appendix-dynamixel)
 
 ![](/assets/images/platform/turtlebot3/appendix_dynamixel/dynamixel_x.jpg)
@@ -42,23 +46,23 @@ Two different types of DYNAMIXEL is adopted in TurtleBot3 Burger, Waffle and Waf
 
 ### [Specifications](#specifications)
 
-| Items          | [XL430-W250][xl430_w250] (for Burger) | [XM430-W210][xm430_w210] (for Waffle and Waffle Pi) |
-|:---------------|:----------------------------------------------|:---------------------------------------------------------------------------|
-| Microcontroller| ST CORTEX-M3 (STM32F103C8 @ 72Mhz, 32bit)     | ST CORTEX-M3 (STM32F103C8 @ 72Mhz, 32bit)                                  |
-| Position Sensor| Contactless Absolute Encoder (12bit, 360&deg;)| Contactless Absolute Encoder (12bit, 360&deg;)                             |
-| Motor          | Cored Motor                                   | **Coreless Motor **                                                        |
-| Baud Rate      | 9600 bps ~ 4.5 Mbps                           | 9600 bps ~ 4.5 Mbps                                                        |
-| Control Modes  | Velocity, Position, Extended Position, PWM    | Velocity, Position, Extended Position, PWM, **Current**, **Current-base Position** |
-| Gear Ratio     | 258.5 : 1                                     | 212.6 : 1                                                                  |
-| Stall Torque   | 1.0 N.m (@ 9V, 1A)                            | **2.7 N.m (@ 11.1V, 2.1A)**                                                |
-|                | 1.4 N.m (@ 11.1V, 1.3A)                       | 3.0 N.m (@ 12V, 2.3A)                                                      |
-|                | 1.5 N.m (@ 12V, 1.4A)                         | 3.7 N.m (@ 14.8V, 2.7A)                                                    |
-| No Load Speed  | 47rpm (@ 9V)                                  | **70rpm (@ 11.1V)**                                                        |
-|                | 57rpm (@ 11.1V)                               | 77rpm (@ 12V)                                                              |
-|                | 61rpm (@ 12V)                                 | 95rpm (@ 14.8V)                                                            |
-| Communication  | TTL Level Multi Drop Bus                      | TTL Level / RS485 Multi Drop Bus                                           |
-| Material       | Engineering Plastic                           | Full Metal Gear, Metal Body, Engineering Plastic                           |
-| Standby Current| 52mA                                          | 40mA                                                                       |
+| Items           | [XL430-W250][xl430_w250] (for Burger)          | [XM430-W210][xm430_w210] (for Waffle and Waffle Pi)                                |
+|:----------------|:-----------------------------------------------|:-----------------------------------------------------------------------------------|
+| Microcontroller | ST CORTEX-M3 (STM32F103C8 @ 72Mhz, 32bit)      | ST CORTEX-M3 (STM32F103C8 @ 72Mhz, 32bit)                                          |
+| Position Sensor | Contactless Absolute Encoder (12bit, 360&deg;) | Contactless Absolute Encoder (12bit, 360&deg;)                                     |
+| Motor           | Cored Motor                                    | **Coreless Motor **                                                                |
+| Baud Rate       | 9600 bps ~ 4.5 Mbps                            | 9600 bps ~ 4.5 Mbps                                                                |
+| Control Modes   | Velocity, Position, Extended Position, PWM     | Velocity, Position, Extended Position, PWM, **Current**, **Current-base Position** |
+| Gear Ratio      | 258.5 : 1                                      | 212.6 : 1                                                                          |
+| Stall Torque    | 1.0 N.m (@ 9V, 1A)                             | **2.7 N.m (@ 11.1V, 2.1A)**                                                        |
+|                 | 1.4 N.m (@ 11.1V, 1.3A)                        | 3.0 N.m (@ 12V, 2.3A)                                                              |
+|                 | 1.5 N.m (@ 12V, 1.4A)                          | 3.7 N.m (@ 14.8V, 2.7A)                                                            |
+| No Load Speed   | 47rpm (@ 9V)                                   | **70rpm (@ 11.1V)**                                                                |
+|                 | 57rpm (@ 11.1V)                                | 77rpm (@ 12V)                                                                      |
+|                 | 61rpm (@ 12V)                                  | 95rpm (@ 14.8V)                                                                    |
+| Communication   | TTL Level Multi Drop Bus                       | TTL Level / RS485 Multi Drop Bus                                                   |
+| Material        | Engineering Plastic                            | Full Metal Gear, Metal Body, Engineering Plastic                                   |
+| Standby Current | 52mA                                           | 40mA                                                                               |
 
 
 - More information for actuators can be found at below ROBOTIS e-Manual links.  

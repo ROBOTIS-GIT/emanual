@@ -222,13 +222,13 @@ $(function() {
     </script>
     <script>
       window.onscroll = function () {
-        var offset = 64 - window.scrollY;
+        var offset = 64 - $(window).scrollTop();
         if(offset < 0) { offset = 0; }
-        $('.sidebar__left').css('top', offset);       //sticky sidebar
-        $('.extend_sidebar').css('top', offset);
-        $('.local_navigation').css('top', offset);    //sticky local navigation
-        $('.searchbox').css('top', offset);           //sticky searchbox
-        // console.log(window.scrollY);
+        $(".sidebar__left").css("top", offset);       //sticky sidebar
+        $(".extend_sidebar").css("top", offset);
+        $(".local_navigation").css("top", offset);    //sticky local navigation
+        $(".searchbox").css("top", offset);           //sticky searchbox
+        // console.log($(window).scrollTop());
       };
     </script>
     <script>
@@ -4805,7 +4805,7 @@ $(function() {
       <td style="text-align: left"><a href="#max-position-limit">Max Position Limit</a></td>
       <td style="text-align: left">최대 위치 제한값</td>
       <td style="text-align: center">RW</td>
-      <td style="text-align: center">4095</td>
+      <td style="text-align: center">4,095</td>
     </tr>
     <tr>
       <td style="text-align: center">52</td>
@@ -5646,7 +5646,7 @@ Shutdown(63)에 Overheating Error Bit(0x04)가 설정된 경우, Torque Enable(6
 <h3 id="max-voltage-limit-32-min-voltage-limit-34"><a name="max-voltage-limit"></a><a name="min-voltage-limit"></a><strong>Max Voltage Limit (32), Min Voltage Limit (34)</strong></h3>
 
 <p>동작 전압의 상한 값과 하한 값입니다.<br />
-장치에 현재 인가된 전압을 나타내는 Present Input Voltage(144)가 Max Voltage Limit(32)와 Min Voltage Limit(34)의 범위를 벗어날 경우, Hardware Error Status(70)의 Voltage Range Error Bit(0x01)이 설정되고, Status Packet은 Error 필드를 통해서 Hardware Error Bit(0x80)을 전송합니다.<br />
+장치에 현재 인가된 전압을 나타내는 Present Input Voltage(144)가 Max Voltage Limit(32)와 Min Voltage Limit(34)의 범위를 벗어날 경우, Hardware Error Status(70)의 Input Voltage Error Bit(0x01)이 설정되고, Status Packet은 Error 필드를 통해서 Hardware Error Bit(0x80)을 전송합니다.<br />
 Shutdown(63)에 Input Voltage Error Bit(0x10)가 설정된 경우, Torque Enable(64)은 ‘0’이 되고 Torque가 OFF 됩니다.<br />
 자세한 설명은 <a href="#shutdown63">Shutdown(63)</a>을 참고하세요.</p>
 
@@ -5894,8 +5894,7 @@ Shutdown(63)에서 감지할 수 있는 위험 상황은 아래 표와 같습니
 </table>
 
 <div class="notice">
-<p><strong>참고</strong> :<br />
-(장치의 상태(조건)에 따른 LED의 동작입니다.)</p>
+<p><strong>참고</strong> : 장치의 상태(조건)에 따른 LED의 동작입니다.</p>
 
 <table>
   <thead>

@@ -222,13 +222,13 @@ $(function() {
     </script>
     <script>
       window.onscroll = function () {
-        var offset = 64 - window.scrollY;
+        var offset = 64 - $(window).scrollTop();
         if(offset < 0) { offset = 0; }
-        $('.sidebar__left').css('top', offset);       //sticky sidebar
-        $('.extend_sidebar').css('top', offset);
-        $('.local_navigation').css('top', offset);    //sticky local navigation
-        $('.searchbox').css('top', offset);           //sticky searchbox
-        // console.log(window.scrollY);
+        $(".sidebar__left").css("top", offset);       //sticky sidebar
+        $(".extend_sidebar").css("top", offset);
+        $(".local_navigation").css("top", offset);    //sticky local navigation
+        $(".searchbox").css("top", offset);           //sticky searchbox
+        // console.log($(window).scrollTop());
       };
     </script>
     <script>
@@ -6876,7 +6876,7 @@ The action file will be used with <a href="/docs/en/platform/thormang3/thormang3
 
 <h4 id="action-file">Action File</h4>
 <p>The action file is in the “thormang3_action_module/data” folder. The action file is a file that contains THORMANG3’s poses and time data.<br />
-The data is written that the positions of dynamixels which converted from original resolution to 4095 resolution.
+The data is written that the positions of dynamixels which converted from original resolution to 4,095 resolution.
 And the action file is binaries file you cannot view its contents directly. User can view its contents with thormang3_action_editor.<br />
 ROBOTIS currently supplies a default action file with the source code. They are located in “thormang3_action_module/data” directory.</p>
 
@@ -6899,7 +6899,7 @@ ROBOTIS currently supplies a default action file with the source code. They are 
 <ul>
   <li><strong>Page number</strong>: Page number is the listed page number. If user wants to create a new action poses, user can use any empty page.</li>
   <li><strong>Page title</strong>: We’d like to recommend to user that they use a page title, if they will make a new action on an empty page.</li>
-  <li><strong>Current position</strong>: This is the current position of dynamixels which converted from original resolution to 4095 resolution. This data is represented by STP7 in thormang3_action_editor. Sometimes the position may read as —- in thormang3_action_editor. This means position of the dynamixel is not being read (or its torque is off).<br />
+  <li><strong>Current position</strong>: This is the current position of dynamixels which converted from original resolution to 4,095 resolution. This data is represented by STP7 in thormang3_action_editor. Sometimes the position may read as —- in thormang3_action_editor. This means position of the dynamixel is not being read (or its torque is off).<br />
 If user turn a dynamixel off, user cannot get current position reading until user turn it back on.<br />
 User can turn off any or all dynamixels. This is very convenient to make robot poses rather than entering position values.<br />
 For example, if user wants to make a new robot pose, user simply turns any dynamixels off, makes the robot pose, and turn the dynamixels back on at that robot pose. Once turning on, user will get the pose values.</li>
@@ -6908,7 +6908,7 @@ For example, if user wants to make a new robot pose, user simply turns any dynam
   <li><strong>Play Count</strong>: “Play Count” is the number of times the action of the page is to be played.</li>
   <li><strong>Exit</strong>: There may be times when an action is stopped. In this case, the robot may be in an unstable position. “Exit” is much like “Next”, so “Exit” should be linked to a page where THORMANG3 can return to a stable pose.if “Exit” is 0, it means that there is  no link to exit page linked (default value).<br />
 <code class="highlighter-rouge">Tip</code> When calling an action requires multiple pages, we strongly suggest that user call that action from the starting page. For example “clap” starts at page 7 and ends at page 8. This means you should call page 7 when calling “clap.” Calling the page 8 may cause the robot to perform abnormally.</li>
-  <li><strong>STP7</strong>: “STP7” column is the current position of the dynamixels which converted to 4095 resolution from its original resolution. “—-“ means that torque has been released.</li>
+  <li><strong>STP7</strong>: “STP7” column is the current position of the dynamixels which converted to 4,095 resolution from its original resolution. “—-“ means that torque has been released.</li>
   <li><strong>PauseTime</strong>: “PauseTime” is the pause for motion playback for step STP[x].</li>
   <li><strong>Time(x 8msec)</strong> : “Time” is the time period for THORMANG3 to complete step STP[x]. Each time unit account for 8ms of time.</li>
 </ul>

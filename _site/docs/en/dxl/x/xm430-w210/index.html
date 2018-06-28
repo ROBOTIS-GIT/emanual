@@ -222,13 +222,13 @@ $(function() {
     </script>
     <script>
       window.onscroll = function () {
-        var offset = 64 - window.scrollY;
+        var offset = 64 - $(window).scrollTop();
         if(offset < 0) { offset = 0; }
-        $('.sidebar__left').css('top', offset);       //sticky sidebar
-        $('.extend_sidebar').css('top', offset);
-        $('.local_navigation').css('top', offset);    //sticky local navigation
-        $('.searchbox').css('top', offset);           //sticky searchbox
-        // console.log(window.scrollY);
+        $(".sidebar__left").css("top", offset);       //sticky sidebar
+        $(".extend_sidebar").css("top", offset);
+        $(".local_navigation").css("top", offset);    //sticky local navigation
+        $(".searchbox").css("top", offset);           //sticky searchbox
+        // console.log($(window).scrollTop());
       };
     </script>
     <script>
@@ -4589,7 +4589,7 @@ $(function() {
       <td style="text-align: left"><a href="#max-position-limit">Max Position Limit</a></td>
       <td style="text-align: left">Maximum Position Limit</td>
       <td style="text-align: center">RW</td>
-      <td style="text-align: center">4095</td>
+      <td style="text-align: center">4,095</td>
     </tr>
     <tr>
       <td style="text-align: center">52</td>
@@ -5414,11 +5414,11 @@ For more details, please refer to the <a href="#shutdown63">Shutdown(63)</a> sec
   </tbody>
 </table>
 
-<p class="notice--warning"><strong>CAUTION</strong> : Do not set the temperature lower/higher than the default value. When the temperature alarm shutdown occurs, wait 20 minutes to cool the temperature before re-use. Keep using the product when the temperature is high can cause severe damage.</p>
+<p class="notice--warning"><strong>CAUTION</strong> : Do not set the temperature higher than the default value. When the temperature alarm shutdown occurs, wait 20 minutes to cool the temperature before re-use. Keep using the product when the temperature is high can cause severe damage.</p>
 
 <h3 id="minmax-voltage-limit32-34"><a name="max-voltage-limit"></a><a name="min-voltage-limit"></a><strong><a href="#minmax-voltage-limit32-34">Min/Max Voltage Limit(32, 34)</a></strong></h3>
 <p>These values are maximum and minimum operating voltages.
-When current input voltage acquired from Present Input Voltage(144) exceeds the range of Max Voltage Limit(32) and Min Voltage Limit(34), Voltage Range Error Bit(0x01) and Hardware Error Bit(0x80) in the Hardware Error Status(70) are set. If Input Voltage Error Bit(0x10) is configured in the Shutdown(63), Torque Enable(64) is cleared to ‘0’ and Torque is disabled. For more details, please refer to the <a href="#shutdown">Shutdown(63)</a> section.</p>
+When present input voltage acquired from Present Input Voltage(144) exceeds the range of Max Voltage Limit(32) and Min Voltage Limit(34), Input Voltage Error Bit(0x01) in the Hardware Error Status(70) are set. If Input Voltage Error Bit(0x10) is configured in the Shutdown(63), Torque Enable(64) is cleared to ‘0’ and Torque is disabled. For more details, please refer to the <a href="#shutdown">Shutdown(63)</a> section.</p>
 
 <table>
   <thead>
@@ -5650,8 +5650,7 @@ The followings are detectable situations.</p>
 </table>
 
 <div class="notice">
-<p><strong>NOTE</strong> :<br />
-The LED indicates present status of the device.</p>
+<p><strong>NOTE</strong> : The LED indicates present status of the device.</p>
 
 <table>
   <thead>
@@ -5813,7 +5812,7 @@ The followings are detectable situations.</p>
 <p class="notice--warning">If Shutdown occurs, LED will flicker every second.(Firmware v41 or above)</p>
 
 <h3 id="velocity-pi-gain76-78"><a name="velocity-i-gain"></a><a name="velocity-p-gain"></a><strong><a href="#velocity-pi-gain76-78">Velocity PI Gain(76, 78)</a></strong></h3>
-<p>These values indicate Gains of Velocity Control Mode. Gains of DYNAMIXEL’s internal controller can be calculated from Gains of the Control Table as shown below. The constant in each equations include sampling time. Velocity P Gain of DYNAMIXEL’s internal controller is abbreviated to K<sub>V</sub>P and that of the Control Table is abbreviated to K<sub>V</sub>P<sub>(TBL)</sub>.</p>
+<p>These values indicate Gains of Velocity Control Mode. Gains of DYNAMIXEL’s internal controller can be calculated from Gains of the Control Table as shown below. Velocity P Gain of DYNAMIXEL’s internal controller is abbreviated to K<sub>V</sub>P and that of the Control Table is abbreviated to K<sub>V</sub>P<sub>(TBL)</sub>.</p>
 
 <table>
   <thead>
@@ -5856,7 +5855,7 @@ The followings are detectable situations.</p>
 
 <p><img src="/assets/images/dxl/velocity_controller_pi_gain.jpg" alt="" /></p>
 
-<p class="notice"><strong>NOTE</strong> : K<sub>a</sub> stands for Anti-windup Gain and ‘β’ is a conversion coefficient of position and velocity that cannot be modified by users. For more details about the PID controller, please refer to the <a href="http://en.wikipedia.org/wiki/PID_controller">PID Controller at wikipedia</a>.</p>
+<p class="notice"><strong>NOTE</strong> : K<sub>v</sub>A stands for Anti-windup Gain and ‘β’ is a conversion coefficient of position and velocity that cannot be modified by users. For more details about the PID controller, please refer to the <a href="http://en.wikipedia.org/wiki/PID_controller">PID Controller at wikipedia</a>.</p>
 
 <h3 id="position-pid-gain80-82-84-feedforward-1st2nd-gains88-90"><a name="position-d-gain"></a><a name="position-i-gain"></a><a name="position-p-gain"></a><a name="feedforward-1st-gain"></a><a name="feedforward-2nd-gain"></a><a name="position-pid-gain80-82-84"></a><a name="feedforward-1st2nd-gains88-90"></a><strong>Position PID Gain(80, 82, 84), Feedforward 1st/2nd Gains(88, 90)</strong></h3>
 <p>These Gains are used in Position Control Mode and Extended Position Control Mode. Gains of Dynamixel’s internal controller can be calculated from Gains of the Control Table as shown below. The constant in each equations include sampling time. Position P Gain of Dynamixel’s internal controller is abbreviated to K<sub>P</sub>P and that of the Control Table is abbreviated to K<sub>P</sub>P<sub>(TBL)</sub>.</p>
@@ -6108,7 +6107,7 @@ Profiles are usually selected by a combination of Profile Velocity(112) and Prof
 
 <p><img src="/assets/images/dxl/x/profile_types.png" alt="" /></p>
 
-<p>When given Goal Position(116), Dynamixel’s profile creates desired velocity trajectory based on current velocity(initial velocity of the Profile).<br />
+<p>When given Goal Position(116), Dynamixel’s profile creates desired velocity trajectory based on present velocity(initial velocity of the Profile).<br />
 When Dynamixel receives updated desired position from a new Goal Position(116) while it is moving toward the previous Goal Position(116), velocity smoothly varies for the new desired velocity trajectory.<br />
 Maintaining velocity continuity while updating desired velocity trajectory is called Velocity Override.<br />
 For a simple calculation, let’s assume that the initial velocity of the Profile is ‘0’.<br />
@@ -6117,7 +6116,7 @@ The following explains how Profile processes Goal Position(116) instruction in P
 <ol>
   <li>An Instruction from the user is transmitted via Dynamixel bus, then registered to Goal Position(116).</li>
   <li>Acceleration time(t1) is calculated from Profile Velocity(112) and Profile Acceleration(108).</li>
-  <li>Types of Profile is decided based on Profile Velocity(112), Profile Acceleration(108) and total travel distance(ΔPos, the distance difference between desired position and current position).</li>
+  <li>Types of Profile is decided based on Profile Velocity(112), Profile Acceleration(108) and total travel distance(ΔPos, the distance difference between desired position and present position).</li>
   <li>Selected Profile type is stored at Moving Status(123).(Refer to the Moving Status(123))</li>
   <li>Dynamixel is driven by the calculated desired trajectory from Profile.</li>
   <li>desired velocity trajectory and desired position trajectory from Profile are stored at Velocity Trajectory(136) and Position Trajectory(140) respectively.</li>

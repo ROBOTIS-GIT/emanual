@@ -222,13 +222,13 @@ $(function() {
     </script>
     <script>
       window.onscroll = function () {
-        var offset = 64 - window.scrollY;
+        var offset = 64 - $(window).scrollTop();
         if(offset < 0) { offset = 0; }
-        $('.sidebar__left').css('top', offset);       //sticky sidebar
-        $('.extend_sidebar').css('top', offset);
-        $('.local_navigation').css('top', offset);    //sticky local navigation
-        $('.searchbox').css('top', offset);           //sticky searchbox
-        // console.log(window.scrollY);
+        $(".sidebar__left").css("top", offset);       //sticky sidebar
+        $(".extend_sidebar").css("top", offset);
+        $(".local_navigation").css("top", offset);    //sticky local navigation
+        $(".searchbox").css("top", offset);           //sticky searchbox
+        // console.log($(window).scrollTop());
       };
     </script>
     <script>
@@ -4056,7 +4056,7 @@ $(function() {
       <td style="text-align: left"><a href="#max-position-limit">Max Position Limit</a></td>
       <td style="text-align: left">Maximum Position Limit</td>
       <td style="text-align: center">RW</td>
-      <td style="text-align: center">4095</td>
+      <td style="text-align: center">4,095</td>
     </tr>
     <tr>
       <td style="text-align: center">52</td>
@@ -4867,7 +4867,7 @@ For more details, please refer to the <a href="#shutdown63">Shutdown(63)</a> sec
   </tbody>
 </table>
 
-<p class="notice--warning"><strong>CAUTION</strong> : Do not set the temperature lower/higher than the default value. When the temperature alarm shutdown occurs, wait 20 minutes to cool the temperature before re-use. Keep using the product when the temperature is high can cause severe damage.</p>
+<p class="notice--warning"><strong>CAUTION</strong> : Do not set the temperature higher than the default value. When the temperature alarm shutdown occurs, wait 20 minutes to cool the temperature before re-use. Keep using the product when the temperature is high can cause severe damage.</p>
 
 <h3 id="minmax-voltage-limit32-34"><a name="max-voltage-limit"></a><a name="min-voltage-limit"></a><strong><a href="#minmax-voltage-limit32-34">Min/Max Voltage Limit(32, 34)</a></strong></h3>
 <p>These values are maximum and minimum operating voltages.
@@ -5083,8 +5083,7 @@ The followings are detectable situations.</p>
 </table>
 
 <div class="notice">
-<p><strong>NOTE</strong> :<br />
-The LED indicates present status of the device.</p>
+<p><strong>NOTE</strong> : The LED indicates present status of the device.</p>
 
 <table>
   <thead>

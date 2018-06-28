@@ -222,13 +222,13 @@ $(function() {
     </script>
     <script>
       window.onscroll = function () {
-        var offset = 64 - window.scrollY;
+        var offset = 64 - $(window).scrollTop();
         if(offset < 0) { offset = 0; }
-        $('.sidebar__left').css('top', offset);       //sticky sidebar
-        $('.extend_sidebar').css('top', offset);
-        $('.local_navigation').css('top', offset);    //sticky local navigation
-        $('.searchbox').css('top', offset);           //sticky searchbox
-        // console.log(window.scrollY);
+        $(".sidebar__left").css("top", offset);       //sticky sidebar
+        $(".extend_sidebar").css("top", offset);
+        $(".local_navigation").css("top", offset);    //sticky local navigation
+        $(".searchbox").css("top", offset);           //sticky searchbox
+        // console.log($(window).scrollTop());
       };
     </script>
     <script>
@@ -4184,7 +4184,7 @@ The range and the unit of the value is the same as Goal Position(Address 30, 31)
   </tbody>
 </table>
 
-<p class="notice--warning"><strong>CAUTION</strong> : Do not set the temperature lower/higher than the default value. When the temperature alarm shutdown occurs, wait 20 minutes to cool the temperature before re-use. Keep using the product when the temperature is high can cause severe damage.</p>
+<p class="notice--warning"><strong>CAUTION</strong> : Do not set the temperature higher than the default value. When the temperature alarm shutdown occurs, wait 20 minutes to cool the temperature before re-use. Keep using the product when the temperature is high can cause severe damage.</p>
 
 <h3 id="minmax-voltage-limit13-14"><a name="min-voltage-limit"></a><a name="max-voltage-limit"></a><strong>Min/Max Voltage Limit(13, 14)</strong></h3>
 <p>It is the operation range of voltage.</p>
@@ -4448,7 +4448,7 @@ If the power is turned on, the value of Max Torque (Address 14, 15) is used as t
 <p class="notice"><strong>NOTE</strong> : If the function of Alarm Shutdown is triggered, the motor loses its torque because the value becomes 0. Once error conditions are resolved and this value is changed to the value other than 0, the motor can be operated again.</p>
 
 <h3 id="present-position37"><a name="present-position"></a><strong>Present Position(37)</strong></h3>
-<p>It is the current position value of Dynamixel.
+<p>It is the present position value of Dynamixel.
 The range of the value is 0~1,023 (0x3FF), and the unit is 0.29 degree.</p>
 
 <p><img src="/assets/images/dxl/dx/dx_series_goal_position.png" alt="" />

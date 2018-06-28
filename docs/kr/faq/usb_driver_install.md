@@ -7,13 +7,11 @@ share: true
 author_profile: false
 permalink: /docs/kr/faq/usb_driver_install/
 sidebar:
-  title: 태스크 코드 다운로드
+  title: USB 드라이버 설치
   nav: "usb_driver_install"
 ---
 
 # [USB 드라이버 설치](#usb-드라이버-설치)
-
-(주) 로보티즈의 스크래치 연동 프로그램인 로보플러스 스크래치가 업데이트 되었습니다.
 
 - `다운로드` [Robotis_CDC_drv.zip](http://support.robotis.com/ko/baggage_files/opencm/robotis_cdc_drv.zip)  
   Windows XP, Vista, 7, 8, 8.1 (32비트 및 64비트 지원, 단 서버군 제외)

@@ -298,12 +298,12 @@ RoboPlus Task에서 사용자 장치 OUT 포트에 High신호를 주는 방법�
 
 [기본 프로그램]: #기본-프로그램
 [충전하기]: #충전하기
-[RC-100의 채널 변경 방법]:???
-[ZIG-110 세트]:???
+[RC-100의 채널 변경 방법]: /docs/kr/parts/communication/rc-100/#적외선-통신채널-설정-방법
+[ZIG-110 세트]: /docs/kr/parts/communication/zig-110/
 [BIO_GP_Humanoid_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_gp_humanoid_kr.tsk
 [BIO_GP_Humanoid_KR.mtn]: http://support.robotis.com/ko/baggage_files/bioloid/bio_gp_humanoid_kr.mtn
 [BIO_GP_Humanoid_ASM_KR.pdf]: http://www.robotis.com/download/doc/BIO_GP_Humanoid_ASM_KR.pdf
-[적외선센서]:???
-[접촉 센서]:???
-[절대 거리 센서]: ???
+[적외선센서]: /docs/kr/parts/sensor/irss-10/
+[접촉 센서]: /docs/kr/parts/sensor/ts-10/
+[절대 거리 센서]: /docs/kr/parts/sensor/dms-80/
 [5핀 케이블]: http://www.robotis.com/shop/list.php?ca_id=302090
