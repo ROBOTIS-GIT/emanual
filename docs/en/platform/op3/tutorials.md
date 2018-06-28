@@ -1009,6 +1009,8 @@ Connect to ROBOTIS-OP3 WiFi with below information
 ### Overview   
 This chapter explains to user how to get joint angles of ROBOTIS-OP3 and how to set their values.  
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6Rle7U84vHM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 #### Framework Diagram
 
 ![](/assets/images/platform/op3/op3_manager_03.png)  
