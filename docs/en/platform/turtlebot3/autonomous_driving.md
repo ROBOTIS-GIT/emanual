@@ -534,6 +534,13 @@ $ sudo apt-get install ros-kinetic-image-transport ros-kinetic-cv-bridge ros-kin
 ## [AutoRace with Gazebo](#autorace-with-gazebo)
 The AutoRace is provided by Gazebo. We created a environment TurtleBot3 AutoRace 2017 in R-BIZ Challenge.
 
+- Recommended specification
+
+| CPU     | Intel Core i5 / 2 GHz Dual Core Processor      |
+| RAM     | 4GB                                            |
+| Storage | 20Gb of free hard drive space                  |
+| GPU     | NVIDIA GeForce GTX 9 series                    |
+
 **WARNING**: Don't confuse your real camera calibration configure files and Gazebo calibration configure files.
 {: .notice--warning}
 
