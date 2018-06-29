@@ -226,9 +226,10 @@ $ roslaunch turtlebot3_gazebo multi_turtlebot3.launch
 ##### 2) Excute SLAM
 
 ``` bash
-$ roslaunch turtlebot3_gazebo multi_turtlebot3_slam.launch ns:=tb3_0
-$ roslaunch turtlebot3_gazebo multi_turtlebot3_slam.launch ns:=tb3_1
-$ roslaunch turtlebot3_gazebo multi_turtlebot3_slam.launch ns:=tb3_2
+$ ROS_NAMESPACE=tb3_0 roslaunch turtlebot3_slam turtlebot3_gmapping.launch set_base_frame:=tb3_0/base_footprint set_odom_frame:=tb3_0/odom set_map_frame:=tb3_0/map
+$ ROS_NAMESPACE=tb3_1 roslaunch turtlebot3_slam turtlebot3_gmapping.launch set_base_frame:=tb3_1/base_footprint set_odom_frame:=tb3_1/odom set_map_frame:=tb3_1/map
+$ ROS_NAMESPACE=tb3_2 roslaunch turtlebot3_slam turtlebot3_gmapping.launch set_base_frame:=tb3_2/base_footprint set_odom_frame:=tb3_2/odom set_map_frame:=tb3_2/map
+
 ```
 
 ##### 3) Merge Map Data from each TurtleBot3's Map Data
@@ -247,7 +248,9 @@ $ rosrun rviz rviz -d `rospack find turtlebot3_gazebo`/rviz/multi_turtlebot3_sla
 ##### 5) Teleoperation
 
 ``` bash
-$ rosrun turtlebot3_teleop turtlebot3_teleop_key cmd_vel:=tb3_0/cmd_vel
+$ ROS_NAMESPACE=tb3_0 rosrun turtlebot3_teleop turtlebot3_teleop_key
+$ ROS_NAMESPACE=tb3_1 rosrun turtlebot3_teleop turtlebot3_teleop_key
+$ ROS_NAMESPACE=tb3_2 rosrun turtlebot3_teleop turtlebot3_teleop_key
 ```
 
 ##### 6) Save the Map
