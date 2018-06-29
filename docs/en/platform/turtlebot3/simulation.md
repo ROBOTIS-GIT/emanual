@@ -16,7 +16,7 @@ sidebar:
 # [Simulation](#simulation)
 
 {% capture notice_01 %}
-**NOTE**: 
+**NOTE**:
 - This instructions were tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 - This instructions are supposed to be running on the remote PC. Please run the instructions below on your **Remote PC**.
 {% endcapture %}
@@ -27,7 +27,7 @@ sidebar:
 {% endcapture %}
 <div class="notice--success">{{ notice_02 | markdownify }}</div>
 
-TurtleBot3 supports development environment that can be programmed and developed with a virtual robot in the simulation. There are two development environments to do this, one is using fake node and 3D visualization tool RViz and the other is using the 3D robot simulator Gazebo. 
+TurtleBot3 supports development environment that can be programmed and developed with a virtual robot in the simulation. There are two development environments to do this, one is using fake node and 3D visualization tool RViz and the other is using the 3D robot simulator Gazebo.
 
 The fake node method is suitable for testing with the robot model and movement, but it can not use sensors. If you need to test SLAM and Navigation, we recommend using Gazebo, which can use sensors such as IMU, LDS, and camera in the simulation.
 
@@ -68,7 +68,7 @@ $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UzOoJ6a_mOg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-There are two ways to simulate using Gazebo. first method is to use with ROS through `turtlebot3_gazebo` package and second method is to use only gazebo and `turtlebot3_gazebo_plugin` plugin without using ROS. 
+There are two ways to simulate using Gazebo. first method is to use with ROS through `turtlebot3_gazebo` package and second method is to use only gazebo and `turtlebot3_gazebo_plugin` plugin without using ROS.
 
 If you want to use the first method, see the [instructions below](#ros-packages-for-gazebo). For the second method, see the [following instructions](#standalone-gazebo-plugin).
 
@@ -185,7 +185,7 @@ $ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
 ``` bash
 $ rosrun map_server map_saver -f ~/map
 ```
- 
+
 When you run the dependent packages and move the robot in virtual space and create a map as shown below, you can create a map as shown in figure below.
 
 ![](/assets/images/platform/turtlebot3/simulation/virtual_slam.png)
@@ -226,16 +226,17 @@ $ roslaunch turtlebot3_gazebo multi_turtlebot3.launch
 ##### 2) Excute SLAM
 
 ``` bash
-$ roslaunch turtlebot3_gazebo multi_turtlebot3_slam.launch ns:=tb3_0
-$ roslaunch turtlebot3_gazebo multi_turtlebot3_slam.launch ns:=tb3_1
-$ roslaunch turtlebot3_gazebo multi_turtlebot3_slam.launch ns:=tb3_2
+$ ROS_NAMESPACE=tb3_0 roslaunch turtlebot3_slam turtlebot3_gmapping.launch set_base_frame:=tb3_0/base_footprint set_odom_frame:=tb3_0/odom set_map_frame:=tb3_0/map
+$ ROS_NAMESPACE=tb3_1 roslaunch turtlebot3_slam turtlebot3_gmapping.launch set_base_frame:=tb3_1/base_footprint set_odom_frame:=tb3_1/odom set_map_frame:=tb3_1/map
+$ ROS_NAMESPACE=tb3_2 roslaunch turtlebot3_slam turtlebot3_gmapping.launch set_base_frame:=tb3_2/base_footprint set_odom_frame:=tb3_2/odom set_map_frame:=tb3_2/map
+
 ```
 
 ##### 3) Merge Map Data from each TurtleBot3's Map Data
 
 ``` bash
 $ sudo apt-get install ros-kinetic-multirobot-map-merge
-$ roslaunch turtlebot3_gazebo multi_map_merge.launch 
+$ roslaunch turtlebot3_gazebo multi_map_merge.launch
 ```
 
 ##### 4) Excute RViz
@@ -247,7 +248,9 @@ $ rosrun rviz rviz -d `rospack find turtlebot3_gazebo`/rviz/multi_turtlebot3_sla
 ##### 5) Teleoperation
 
 ``` bash
-$ rosrun turtlebot3_teleop turtlebot3_teleop_key cmd_vel:=tb3_0/cmd_vel
+$ ROS_NAMESPACE=tb3_0 rosrun turtlebot3_teleop turtlebot3_teleop_key
+$ ROS_NAMESPACE=tb3_1 rosrun turtlebot3_teleop turtlebot3_teleop_key
+$ ROS_NAMESPACE=tb3_2 rosrun turtlebot3_teleop turtlebot3_teleop_key
 ```
 
 ##### 6) Save the Map
@@ -259,6 +262,12 @@ $ rosrun map_server map_saver -f ~/map
 ![](/assets/images/platform/turtlebot3/simulation/turtlebot3_house_slam.png)
 
 ![](/assets/images/platform/turtlebot3/simulation/turtlebot3_house_slam1.png)
+
+#### [TurtleBot3 AutoRace with Gazebo](#turtlebot3-autorace-with-gazebo)
+Go to [AutoRace with Gazebo](/docs/en/platform/turtlebot3/autonomous_driving/#autorace-with-gazebo).
+
+#### [Turtlebot3 with OpenManipulator](#turtlebot3-with-openmanipulator)
+Go to [OpenManipulator with Gazebo](/docs/en/platform/turtlebot3/manipulation/#simulation)
 
 ### [Standalone Gazebo Plugin](#standalone-gazebo-plugin)
 
@@ -319,7 +328,7 @@ $ gazebo worlds/turtlebot3_${TB3_MODEL}.world
 ##### 6) Teleoperation by Keyboard
 
 ```
-w - set linear velocity up 
+w - set linear velocity up
 x - set linear velocity down
 d - set angular velocity up
 a - set angular velocity down
@@ -331,7 +340,7 @@ s - set all velocity to zero
 - Show all topic
 
 ``` bash
-$ gz topic -l 
+$ gz topic -l
 ```
 
 - Subscribe scan data
@@ -367,7 +376,7 @@ $ cd ${turtlebot3_gazebo_plugin}/build
 $ ./image_listener ${TB3_MODEL}
 ```
 
-##### Reference 
+##### Reference
 
   - [Gazebo API](http://osrf-distributions.s3.amazonaws.com/gazebo/api/dev/index.html)
   - [How to contribute model](http://gazebosim.org/tutorials?tut=model_contrib&cat=build_robot)
