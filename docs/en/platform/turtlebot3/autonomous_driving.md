@@ -82,7 +82,17 @@ Whole robots and even the referee system in the field is run by ROS, so it would
   - Get Sources of AutoRace Referee system from [autorace_referee](https://github.com/ROBOTIS-GIT/autorace_referee)
   - Get 3D CAD model data of the race track from [autorace_track](https://github.com/ROBOTIS-GIT/autorace_track)
 
-### [Tutorials: 2. Install Additional Dependent Packages](#tutorials-2-install-additional-dependent-packages)
+### [Tutorials: 2. Install AutoRace package](#tutorials-2-install-autorace-package)
+
+`Remote PC` Open terminal, then install AutoRace package.
+
+``` bash
+$ cd ~/catkin_ws/src/
+$ git clone https://github.com/ROBOTIS-GIT/turtlebot3_autorace.git
+$ cd ~/catkin_ws && catkin_make
+```
+
+### [Tutorials: 3. Install Additional Dependent Packages](#tutorials-3-install-additional-dependent-packages)
 
 `Remote PC & TurtleBot SBC` Open new terminal, then enter
 
@@ -90,9 +100,9 @@ Whole robots and even the referee system in the field is run by ROS, so it would
 $ sudo apt-get install ros-kinetic-image-transport ros-kinetic-cv-bridge ros-kinetic-vision-opencv python-opencv libopencv-dev ros-kinetic-image-proc
 ```
 
-### [Tutorials: 3. Calibration](#tutorials-3-calibration)
+### [Tutorials: 4. Calibration](#tutorials-4-calibration)
 
-#### [Tutorials: 3.1. Camera Imaging Calibration](#tutorials-31-camera-imaging-calibration)
+#### [Tutorials: 4.1. Camera Imaging Calibration](#tutorials-41-camera-imaging-calibration)
 
 1. `Remote PC` Open new terminal, then enter
 
@@ -122,7 +132,7 @@ $ sudo apt-get install ros-kinetic-image-transport ros-kinetic-cv-bridge ros-kin
 
     then, click `camera`, adjust the parameter value that makes the camera show clean, enough bright image to you. After that, overwrite each values on to the `turtlebot3_autorace_camera/calibration/camera_calibration/camera.yaml`. This will make the camera set its parameters as you set here from next launching.
 
-#### [Tutorials: 3.2. Intrinsic Camera Calibration](#tutorials-32-intrinsic-camera-calibration)
+#### [Tutorials: 4.2. Intrinsic Camera Calibration](#tutorials-42-intrinsic-camera-calibration)
 
 1. `Remote PC` Open new terminal, then enter
 
@@ -145,9 +155,9 @@ $ sudo apt-get install ros-kinetic-image-transport ros-kinetic-cv-bridge ros-kin
     $ roslaunch turtlebot3_autorace_camera turtlebot3_autorace_intrinsic_camera_calibration.launch
     ```
 
-5. `Remote PC` After finishing the calibration, intrinsic camera calibration file will be saved in `turtlebot3_autorace_camera/calibration/intrinsic_calibration/camerav2_320x240_30fps.yaml`. 
+5. `Remote PC` After finishing the calibration, intrinsic camera calibration file will be saved in `turtlebot3_autorace_camera/calibration/intrinsic_calibration/camerav2_320x240_30fps.yaml`.
 
-#### [Tutorials: 3.3. Extrinsic Camera Calibration](#tutorials-33-extrinsic-camera-calibration)
+#### [Tutorials: 4.3. Extrinsic Camera Calibration](#tutorials-43-extrinsic-camera-calibration)
 
 1. `Remote PC` Open new terminal, then enter
 
@@ -191,9 +201,9 @@ $ sudo apt-get install ros-kinetic-image-transport ros-kinetic-cv-bridge ros-kin
 
     then, adjust the parameter value in `/camera/image_projection` and `/camera/image_compensation_projection` that carries out visual modifications on the image. The parameter `image_projection` will change the shape of the red rectangle of `/camera/image_extrinsic_calib/compressed` image. Intrinsic camera calibration will transform the image surrounded by the red rectangle, and will show the image that looks from over the lane. After that, overwrite each values on to the `yaml` files in  `turtlebot3_autorace_camera/calibration/extrinsic_calibration/`. This will make the camera set its parameters as you set here from next launching.
 
-#### [Tutorials: 3.4. Settings for Recognition](#tutorials-34-settings-for-recognition)
+#### [Tutorials: 4.4. Settings for Recognition](#tutorials-44-settings-for-recognition)
 
-    Until now, all the preprocess of image must have been tested. 
+    Until now, all the preprocess of image must have been tested.
 
 1. `Remote PC` Open new terminal, then enter
 
@@ -223,11 +233,11 @@ $ sudo apt-get install ros-kinetic-image-transport ros-kinetic-cv-bridge ros-kin
 
     From now, the following descriptions will mainly adjust `feature detector / color filter` for object recognition. Every adjustment after here is independent to each other's process. However, to make sure, if you want to adjust each parameters in series, finish every adjustment perfectly, then continue to next.
 
-### [Tutorials: 4. Missions](#tutorials-4-missions)
+### [Tutorials: 5. Missions](#tutorials-5-missions)
 
-#### [Tutorials: 4.1 Lane Detection](#tutorials-41-lane-detection)
+#### [Tutorials: 5.1 Lane Detection](#tutorials-51-lane-detection)
 
-1. Put the robot on the lane. If you placed the robot correctly, `yellow line` should be placed on the left side of the robot, and of course, `white line` should be placed on the right side of the robot. Make sure that `turtlebot3_robot` node of `turtlebot3_bringup` package is not yet launched. If it is on running, the robot will suddenly runs on the track. 
+1. Put the robot on the lane. If you placed the robot correctly, `yellow line` should be placed on the left side of the robot, and of course, `white line` should be placed on the right side of the robot. Make sure that `turtlebot3_robot` node of `turtlebot3_bringup` package is not yet launched. If it is on running, the robot will suddenly runs on the track.
 
 
 2. `Remote PC` Open new terminal, then enter
@@ -253,7 +263,7 @@ $ sudo apt-get install ros-kinetic-image-transport ros-kinetic-cv-bridge ros-kin
 
     then, adjust the parameter value in `/camera/image_projection` and `/camera/image_compensation_projection` that carries out visual modifications on the image. The parameter `image_projection` will change the shape of the red rectangle of `/camera/image_extrinsic_calib/compressed` image. Intrinsic camera calibration will transform the image surrounded by the red rectangle, and will show the image that looks from over the lane. After that, overwrite value on to the `lane.yaml` file in  `turtlebot3_autorace_detect/param/lane/`. This will make the camera set its parameters as you set here from next launching.
 
-    **TIP**: Calibration process of line color filtering is sometimes so-so difficult because of your physical environment which includes the luminance of light in the room, etc. Hence, you should have patience to carry out this procedure. To make everything quickly, put the value of `turtlebot3_autorace_detect/param/lane/lane.yaml` on the reconfiguration parameter, then start calibration. Calibrate hue low - high value at first. (1) Hue value means the color, and every colors, like `yellow`, `white`, have their own region of hue value (refer to hsv map). Then calibrate saturation low - high value. (2) Every colors have also their own field of saturation. Finally, calibrate the lightness low - high value. (3) In the source code, however, have auto-adjustment function, so calibrating lightness low value is meaningless. Just put the lightness high value to 255. Clearly filtered line image will give you clear result of the lane. 
+    **TIP**: Calibration process of line color filtering is sometimes so-so difficult because of your physical environment which includes the luminance of light in the room, etc. Hence, you should have patience to carry out this procedure. To make everything quickly, put the value of `turtlebot3_autorace_detect/param/lane/lane.yaml` on the reconfiguration parameter, then start calibration. Calibrate hue low - high value at first. (1) Hue value means the color, and every colors, like `yellow`, `white`, have their own region of hue value (refer to hsv map). Then calibrate saturation low - high value. (2) Every colors have also their own field of saturation. Finally, calibrate the lightness low - high value. (3) In the source code, however, have auto-adjustment function, so calibrating lightness low value is meaningless. Just put the lightness high value to 255. Clearly filtered line image will give you clear result of the lane.
     {: .notice--success}
 
 5. `Remote PC` After overwriting the calibration file, close `rqt_rconfigure` and `turtlebot3_autorace_detect_lane`, then enter
@@ -263,7 +273,7 @@ $ sudo apt-get install ros-kinetic-image-transport ros-kinetic-cv-bridge ros-kin
     $ roslaunch turtlebot3_autorace_detect turtlebot3_autorace_detect_lane.launch
     ```
 
-6. Check if the results come out well by entering 
+6. Check if the results come out well by entering
 
     `Remote PC`
 
@@ -277,11 +287,11 @@ $ sudo apt-get install ros-kinetic-image-transport ros-kinetic-cv-bridge ros-kin
     $ roslaunch turtlebot3_bringup turtlebot3_robot.launch
     ```
 
-    After entering these commands, the robot will kick-off to run. 
+    After entering these commands, the robot will kick-off to run.
 
-#### [Tutorials: 4.2. Traffic Sign](#tutorials-42-traffic-sign)
+#### [Tutorials: 5.2. Traffic Sign](#tutorials-52-traffic-sign)
 
-1. Traffic sign detection needs some pictures of the traffic sign. Take their pictures by using `rqt_image_view` node and edit their size, shape by any of `photo editor` available in linux. The node finds the traffic sign with `SIFT algorithm`, so if you want to use your customized traffic signs ( which is not introduced in the `autorace_track`), just be aware of `More edges in the traffic sign gives better recognition results from SIFT`. 
+1. Traffic sign detection needs some pictures of the traffic sign. Take their pictures by using `rqt_image_view` node and edit their size, shape by any of `photo editor` available in linux. The node finds the traffic sign with `SIFT algorithm`, so if you want to use your customized traffic signs ( which is not introduced in the `autorace_track`), just be aware of `More edges in the traffic sign gives better recognition results from SIFT`.
 
 2. Put the robot on the lane. At this time, the traffic sign should be placed to where the robot can see it easily. Make sure that `turtlebot3_robot` node of `turtlebot3_bringup` package is not yet launched. If it is on run, the robot may suddenly run on the track.
 
@@ -309,7 +319,7 @@ $ sudo apt-get install ros-kinetic-image-transport ros-kinetic-cv-bridge ros-kin
 
     then, click `/detect/image_traffic_sign/compressed` topic in the select box. If everything works fine, the screen will show the result of traffic sign detection, if it succeeds to recognize it.
 
-#### [Tutorials: 4.3. Traffic Light](#tutorials-43-traffic-light)
+#### [Tutorials: 5.3. Traffic Light](#tutorials-53-traffic-light)
 
 1. Put the robot on the lane. If you placed the robot correctly, `yellow line` should be placed on the left side of the robot, and of course, `white line` should be placed on the right side of the robot. Make sure that `turtlebot3_robot` node of `turtlebot3_bringup` package is not yet launched. If it is on running, the robot will suddenly runs on the track.
 
@@ -336,7 +346,7 @@ $ sudo apt-get install ros-kinetic-image-transport ros-kinetic-cv-bridge ros-kin
 
     then, adjust the parameter value in `/detect_traffic_light`. Changing the value of color filter will show the change of filtered view on each color's screen. After that, overwrite value on to the `traffic_light.yaml` file in  `turtlebot3_autorace_detect/param/traffic_light/`. This will set its parameters as you set here from next launching.
 
-    `Tip`: same as [4.1 Lane Detection][lane_detection]
+    `Tip`: same as [5.1 Lane Detection][lane_detection]
 
 5. `Remote PC` After overwriting the calibration file, close `rqt_rconfigure` and `turtlebot3_autorace_detect_traffic_light`, then enter
 
@@ -345,21 +355,21 @@ $ sudo apt-get install ros-kinetic-image-transport ros-kinetic-cv-bridge ros-kin
     $ roslaunch turtlebot3_autorace_detect turtlebot3_autorace_detect_traffic_light.launch
     ```
 
-6. Use `rqt_image_view` node, and check if the results come out well 
+6. Use `rqt_image_view` node, and check if the results come out well
 
-#### [Tutorials: 4.4. Parking Lot](#tutorials-44-parking-lot)
+#### [Tutorials: 5.4. Parking Lot](#tutorials-54-parking-lot)
 
-1. `Parking` needs only one preparation, traffic sign recognition. 
+1. `Parking` needs only one preparation, traffic sign recognition.
 
-2. Place the dummy robot on either of parking lot. 
+2. Place the dummy robot on either of parking lot.
 
 3. Place the robot on the lane appropriately.
 
-#### [Tutorials: 4.5. Level Crossing](#tutorials-45-level-crossing)
+#### [Tutorials: 5.5. Level Crossing](#tutorials-55-level-crossing)
 
-1. Level Crossing finds 3 red rectangles on the level, and calculates whether the level is opened or closed, and how much near the robot is come. 
+1. Level Crossing finds 3 red rectangles on the level, and calculates whether the level is opened or closed, and how much near the robot is come.
 
-2. Put the robot on the lane correctly. Then, bring the robot in front of closed level. 
+2. Put the robot on the lane correctly. Then, bring the robot in front of closed level.
 
 3. `Remote PC` Open new terminal, then enter
 
@@ -384,7 +394,7 @@ $ sudo apt-get install ros-kinetic-image-transport ros-kinetic-cv-bridge ros-kin
 
     then, adjust the parameter value in `/detect_level`. Changing the value of color filter will show the change of filtered view on each color's screen. After that, overwrite value on to the `level.yaml` file in  `turtlebot3_autorace_detect/param/level/`. This will set its parameters as you set here from next launching.
 
-    `Tip`: same as [4.1 Lane Detection][lane_detection]
+    `Tip`: same as [5.1 Lane Detection][lane_detection]
 
 6. `Remote PC` After overwriting the calibration file, close `rqt_rconfigure` and `turtlebot3_autorace_detect_level`, then enter
 
@@ -393,15 +403,15 @@ $ sudo apt-get install ros-kinetic-image-transport ros-kinetic-cv-bridge ros-kin
     $ roslaunch turtlebot3_autorace_detect turtlebot3_autorace_detect_level.launch
     ```
 
-7. Use `rqt_image_view` node, and check if the results come out well 
+7. Use `rqt_image_view` node, and check if the results come out well
 
-#### [Tutorials: 4.6. Tunnel](#tutorials-46-tunnel)
+#### [Tutorials: 5.6. Tunnel](#tutorials-56-tunnel)
 
 1. Tunnel node will bring you from the entrance to the exit by using turtlebot3 navigation package. What you should calibrate is mapping the tunnel (or if you are using the autorace track as it is, you don't need to modify it by yourself) and check the `pose` of how the robot should be posed right before it comes out from tunnel (this is also unnecessary when you are using the default map).  
 
 2. `Remote PC` Check the `pose` of `exit` on RViz, while the `SLAM` or `Navigation` package is running. After that, overwrite value on to the `detect_tunnel.py` file `line 144`
 
-### [Tutorials: 5. Run Autonomous Driving](#tutorials-5-run-autonomous-driving)
+### [Tutorials: 6. Run Autonomous Driving](#tutorials-6-run-autonomous-driving)
 
 1. From now, all the related nodes will be run in `action mode`. Close all `ROS-related programs` and `terminals` on `Remote PC` and `TurtleBot SBC`, if some were not closed yet. Then, put the robot on the lane correctly.
 
@@ -434,20 +444,15 @@ $ sudo apt-get install ros-kinetic-image-transport ros-kinetic-cv-bridge ros-kin
 
     ``` bash
     $ export AUTO_EX_CALIB=action
-    $ roslaunch turtlebot3_autorace_camera turtlebot3_autorace_extrinsic_camera_calibration.launch
+    $ export AUTO_DT_CALIB=action
+    $ export TURTLEBOT3_MODEL=burger
+    $ roslaunch turtlebot3_autorace_core turtlebot3_autorace_core.launch
     ```
 
 7. `Remote PC` Open new terminal, then enter
 
     ``` bash
-    $ export TURTLEBOT3_MODEL=burger
-    $ roslaunch turtlebot3_autorace_core turtlebot3_autorace_core.launch
-    ```
-
-8. `Remote PC` Open new terminal, then enter
-
-    ``` bash
-    $ rostopic pub -1 /core/decided_mode std_msgs/UInt8 "data: 2" 
+    $ rostopic pub -1 /core/decided_mode std_msgs/UInt8 "data: 2"
     ```
 
     turtlebot3_autorace_core will control all system in the package (open and close the launch, nodes in the package.)
@@ -524,3 +529,47 @@ $ sudo apt-get install ros-kinetic-image-transport ros-kinetic-cv-bridge ros-kin
 
 [lane_detection]: #tutorials-41-lane-detection
 [turtlebot3_autorace]: https://github.com/ROBOTIS-GIT/turtlebot3_autorace
+
+
+## [AutoRace with Gazebo](#autorace-with-gazebo)
+The AutoRace is provided by Gazebo. We created a environment TurtleBot3 AutoRace 2017 in R-BIZ Challenge.
+
+**WARNING**: Don't confuse your real camera calibration configure files and Gazebo calibration configure files.
+{: .notice--warning}
+
+**NOTE**: The `turtlebot3_autorace` package requires `turtlebot3_simulations` package as a prerequisite. If you did not install it in the [Installation TurtleBot3 Simulations](#simulation), install it first.
+{: .notice--info}
+
+1. `Remote PC` Run AutoRace Gazebo. You can see the AutoRace 2017 map in Gazebo.
+``` bash
+$ roslaunch turtlebot3_gazebo turtlebot3_autorace.launch
+```
+![](/assets/images/platform/turtlebot3/autonomous_driving/autorace_map.png)
+
+2. `Remote PC` Run Mission launch. You can see `Traffic Light`, `Parked TurtleBot3` and `Toll Gate` in Gazebo. When TurtleBot3 approaches the mission area, they operate automatically.
+``` bash
+$ roslaunch turtlebot3_gazebo turtlebot3_autorace_mission.launch
+```
+![](/assets/images/platform/turtlebot3/autonomous_driving/autorace_map_mission.png)
+
+3. `Remote PC` Run AutoRace launch. If you want to run AutoRace in real, you have to calibrate your camera.
+``` bash
+$ export AUTO_IN_CALIB=action
+$ roslaunch turtlebot3_autorace_camera turtlebot3_autorace_intrinsic_camera_calibration.launch
+```
+
+4. `Remote PC` Open new terminal, then enter
+``` bash
+$ export AUTO_EX_CALIB=action
+$ export AUTO_DT_CALIB=action
+$ export TURTLEBOT3_MODEL=burger
+$ roslaunch turtlebot3_autorace_core turtlebot3_autorace_core.launch
+```
+
+5. `Remote PC` Open new terminal, then enter
+``` bash
+$ rostopic pub -1 /core/decided_mode std_msgs/UInt8 "data: 2"
+```
+
+- Video - AutoRace with Gazebo
+<iframe width="640" height="360" src="https://www.youtube.com/embed/5fZmuPxMZz0" frameborder="0" allowfullscreen></iframe>

@@ -11764,6 +11764,8 @@ turtlebot3:
       url: /platform/turtlebot3/autonomous_driving/#autorace-rbiz-challenge-2017
     - title: "AutoRace RBIZ Challenge 2018"
       url: /platform/turtlebot3/autonomous_driving/#autorace-rbiz-challenge-2018
+    - title: "AutoRace with Gazebo"
+      url: /platform/turtlebot3/autonomous_driving/#autorace-with-gazebo
   - title: "Machine Learning"
     url: /platform/turtlebot3/machine_learning/#machine-learning
     children:
