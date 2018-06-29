@@ -26,13 +26,13 @@ sidebar:
 
     ![](/assets/images/platform/thormang3/thormang3_077.jpg)
 
-2. Connect to Router  
-  - Default Wi-Fi Name:  
-    - 2.4G : dlink-806a-z  
-    - 5G  : dlink-806a 5G-z  
-  - Administrator Account Setting:  
-    - Name : admin  
-    - Password : admin  
+2. Connect to Router
+  - Default Wi-Fi Name:
+      - 2.4G : dlink-806a-z
+      - 5G  : dlink-806a 5G-z
+  - Administrator Account Setting:
+      - Name : admin
+      - Password : admin
 
 3. Change Language
   - Connect to Router via Wi-Fi or Wired.
