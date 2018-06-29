@@ -11750,14 +11750,16 @@ turtlebot3:
       children:
       - title: "Tutorials: 1. Requirements"
         url: /platform/turtlebot3/autonomous_driving/#tutorials-1-requirements
-      - title: "Tutorials: 2. Install Additional Dependent Packages"
-        url: /platform/turtlebot3/autonomous_driving/#tutorials-2-install-additional-dependent-packages
-      - title: "Tutorials: 3. Calibration"
-        url: /platform/turtlebot3/autonomous_driving/#tutorials-3-calibration
-      - title: "Tutorials: 4. Missions"
-        url: /platform/turtlebot3/autonomous_driving/#tutorials-4-missions
-      - title: "Tutorials: 5. Run Autonomous Driving"
-        url: /platform/turtlebot3/autonomous_driving/#tutorials-5-run-autonomous-driving
+      - title: "Tutorials: 2. Install AutoRace Package"
+        url: /platform/turtlebot3/autonomous_driving/#tutorials-2-install-autorace-package
+      - title: "Tutorials: 3. Install Additional Dependent Packages"
+        url: /platform/turtlebot3/autonomous_driving/#tutorials-3-install-additional-dependent-packages
+      - title: "Tutorials: 4. Calibration"
+        url: /platform/turtlebot3/autonomous_driving/#tutorials-4-calibration
+      - title: "Tutorials: 5. Missions"
+        url: /platform/turtlebot3/autonomous_driving/#tutorials-5-missions
+      - title: "Tutorials: 6. Run Autonomous Driving"
+        url: /platform/turtlebot3/autonomous_driving/#tutorials-6-run-autonomous-driving
     - title: "TurtleBot3 AutoRace Online Competition"
       url: /platform/turtlebot3/autonomous_driving/#turtlebot3-autorace-online-competition
     - title: "AutoRace RBIZ Challenge 2017"

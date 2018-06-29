@@ -548,35 +548,44 @@ The AutoRace is provided by Gazebo. We created a environment TurtleBot3 AutoRace
 {: .notice--info}
 
 1. `Remote PC` Run AutoRace Gazebo. You can see the AutoRace 2017 map in Gazebo.
-``` bash
-$ roslaunch turtlebot3_gazebo turtlebot3_autorace.launch
-```
-![](/assets/images/platform/turtlebot3/autonomous_driving/autorace_map.png)
+
+    ``` bash
+    $ roslaunch turtlebot3_gazebo turtlebot3_autorace.launch
+    ```
+    
+    ![](/assets/images/platform/turtlebot3/autonomous_driving/autorace_map.png)
 
 2. `Remote PC` Run Mission launch. You can see `Traffic Light`, `Parked TurtleBot3` and `Toll Gate` in Gazebo. When TurtleBot3 approaches the mission area, they operate automatically.
-``` bash
-$ roslaunch turtlebot3_gazebo turtlebot3_autorace_mission.launch
-```
-![](/assets/images/platform/turtlebot3/autonomous_driving/autorace_map_mission.png)
+
+    ``` bash
+    $ roslaunch turtlebot3_gazebo turtlebot3_autorace_mission.launch
+    ```
+
+    ![](/assets/images/platform/turtlebot3/autonomous_driving/autorace_map_mission.png)
 
 3. `Remote PC` Run AutoRace launch. If you want to run AutoRace in real, you have to calibrate your camera.
-``` bash
-$ export AUTO_IN_CALIB=action
-$ roslaunch turtlebot3_autorace_camera turtlebot3_autorace_intrinsic_camera_calibration.launch
-```
+
+    ``` bash
+    $ export AUTO_IN_CALIB=action
+    $ roslaunch turtlebot3_autorace_camera turtlebot3_autorace_intrinsic_camera_calibration.launch
+    ```
 
 4. `Remote PC` Open new terminal, then enter
-``` bash
-$ export AUTO_EX_CALIB=action
-$ export AUTO_DT_CALIB=action
-$ export TURTLEBOT3_MODEL=burger
-$ roslaunch turtlebot3_autorace_core turtlebot3_autorace_core.launch
-```
+
+    ``` bash
+    $ export AUTO_EX_CALIB=action
+    $ export AUTO_DT_CALIB=action
+    $ export TURTLEBOT3_MODEL=burger
+    $ roslaunch turtlebot3_autorace_core turtlebot3_autorace_core.launch
+    ```
 
 5. `Remote PC` Open new terminal, then enter
-``` bash
-$ rostopic pub -1 /core/decided_mode std_msgs/UInt8 "data: 2"
-```
 
-- Video - AutoRace with Gazebo
-<iframe width="640" height="360" src="https://www.youtube.com/embed/5fZmuPxMZz0" frameborder="0" allowfullscreen></iframe>
+    ``` bash
+    $ rostopic pub -1 /core/decided_mode std_msgs/UInt8 "data: 2"
+    ```
+
+
+- Video : AutoRace with Gazebo
+
+  <iframe width="640" height="360" src="https://www.youtube.com/embed/5fZmuPxMZz0" frameborder="0" allowfullscreen></iframe>
