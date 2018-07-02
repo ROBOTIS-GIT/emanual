@@ -667,13 +667,13 @@ To use OpenCM9.04's USB port as a serial port in Windows, you need a USB CDC dri
 
 #### Install the Arduino IDE
 
-Download the latest version of Arduino IDE from the official arduino homepage, and install it. Currently, the OpenCR will be on service in the version 1.6.4 or later.
+Download the latest version of Arduino IDE from the official arduino homepage, and install it. Currently, the OpenCM 9.04 will be on service in the version 1.6.4 or later.
 
 [https://www.arduino.cc/en/Main/Software](https://www.arduino.cc/en/Main/Software)
 
 The Arduino IDE for Windows is available as an installation version and a compressed version, so you can install it using your preferred method.
 
-#### Porting the OpenCR9.04 board to the Arduino IDE
+#### Porting the OpenCM 9.04 board to the Arduino IDE
 
 ##### Preferences
 After Arduino IDE is run, click File → Preferences in the top menu of the IDE. When the Preferences window appears, copy and paste following link to the Additional Boards Manager URLs textbox. (This step may take about 20 min.)
