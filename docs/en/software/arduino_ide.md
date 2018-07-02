@@ -264,6 +264,12 @@ Please select the appropriate file URL based on your board.
 https://raw.githubusercontent.com/ROBOTIS-GIT/OpenCR/master/arduino/opencr_release/package_opencr_index.json
 ```
 
+##### For OpenCM9.04
+
+```
+https://raw.githubusercontent.com/ROBOTIS-GIT/OpenCM9.04/master/arduino/opencm_release/package_opencm9.04_index.json
+```
+
 #### Install the OpenCR package via Boards Manager
 This step may take more than 20 minutes depending on the network status.
 
