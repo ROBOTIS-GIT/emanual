@@ -1098,7 +1098,7 @@ RC-100을 이용하여 제어기를 동작시킬 수 있습니다. (보다 자�
 
 [제어기 포트맵]: #하드웨어-포트맵
 [적외선 센서]: /docs/kr/parts/sensor/irss-10/
-[Dynamixel SDK]: ??
+[Dynamixel SDK]: /docs/en/software/dynamixel/dynamixel_sdk/overview/
 [Zigbee SDK]: /docs/kr/software/embedded_sdk/zigbee_sdk/
 [Zig-100/110]: /docs/kr/parts/communication/zig-110/
 [RC-100]: /docs/kr/parts/communication/rc-100/

@@ -1366,7 +1366,7 @@ R+ Task 2.0에서 사용하는 파라미터를 설명합니다. 각 장치에 �
 
 - 다이나믹셀 등의 외부 장치의 주소를 직접 접근하여 읽기와 쓰기 작업을 진행할 수 있습니다.
 - 사용자가 지정한 주소를 Byte 또는 Word, DWord 단위로 선택하여 읽거나 씁니다.
-- 각 다이나믹셀 매뉴얼 내의 컨트롤 테이블을 참고하세요. [다이나믹셀 매뉴얼]
+- 각 다이나믹셀 매뉴얼 내의 컨트롤 테이블을 참고하세요.
 
 ## [공통](#공통)
 
@@ -1486,7 +1486,7 @@ R+ Task 2.0에서 사용하는 파라미터를 설명합니다. 각 장치에 �
 [자석 센서 부품 정보]: /docs/kr/parts/sensor/mgss-10/
 [온도 센서 부품 정보]: /docs/kr/parts/sensor/tps-10/
 [동작감지 센서 부품 정보]: /docs/kr/parts/sensor/pir-10/
-[사용자 센서 제작]:??
+[사용자 센서 제작]: /docs/kr/edu/bioloid/premium/#사용자-센서-제작
 [CM-100A]: /docs/kr/parts/controller/cm-100/
 [CM-150]: /docs/kr/parts/controller/cm-150/
 [CM-200]: /docs/kr/parts/controller/cm-200/
@@ -1494,10 +1494,9 @@ R+ Task 2.0에서 사용하는 파라미터를 설명합니다. 각 장치에 �
 [CM-510]: /docs/kr/parts/controller/cm-510/
 [CM-530]: /docs/kr/parts/controller/cm-530/
 [CM-700]: /docs/kr/parts/controller/cm-700/
-[OpenCM]: ?
+[OpenCM]: /docs/kr/parts/controller/controller_compatibility/
 [R+ Smart]: /docs/kr/software/mobile_app/rplussmart/
 [R+ Smart 컨트롤 테이블]: /docs/kr/software/mobile_app/rplussmart/#r-smart-control-table
-[다이나믹셀 매뉴얼]: ??
 [ROBOTIS DREAM]: /docs/kr/edu/dream/dream1-1/
 [ROBOTIS SMART]: /docs/kr/edu/smart/smart1-1/
 [ROBOTIS STEM]: /docs/kr/edu/bioloid/stem/

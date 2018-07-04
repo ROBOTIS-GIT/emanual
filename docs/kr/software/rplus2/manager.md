@@ -333,15 +333,13 @@ AX시리즈, MX시리즈, RX시리즈, DX시리즈, EX시리즈, CM-530, CM-510,
 - 다이나믹셀의 ID가 겹칠 경우 동작이 원활하지 않을 수 있습니다.
 - 더 자세한 사항은 고객지원 또는 Q&A게시판으로 문의바랍니다.
 
-[XL-320, XM시리즈, XH시리즈]:??
-[Pro시리즈]:??
-[다이나믹셀 E-Manual 바로가기]:??
-[다이나믹셀 프로 E-Manual 바로가기]: ?
-[ROBOTIS DREAM]: ??
-[ROBOTIS SMART]: ?
-[ROBOTIS SMART2]: ?
-[ROBOTIS IoT]: ?
-[ROBOTIS MINI]: ?
-[CM-150, CM-200, OpenCM9.04, OpenCM7.0]:?
-[USB 드라이버 설치]:?
-[LN-101 드라이버 설치]: ?
+[XL-320, XM시리즈, XH시리즈]: /docs/kr/dxl/x/
+[Pro시리즈]: /docs/kr/dxl/pro/
+[ROBOTIS DREAM]: /docs/kr/edu/
+[ROBOTIS SMART]: /docs/kr/edu/
+[ROBOTIS SMART2]: /docs/kr/edu/
+[ROBOTIS IoT]: /docs/kr/edu/
+[ROBOTIS MINI]: /docs/kr/edu/
+[CM-150, CM-200, OpenCM9.04, OpenCM7.0]: /docs/kr/parts/controller/controller_compatibility/
+[USB 드라이버 설치]: /docs/kr/faq/usb_driver_install/
+[LN-101 드라이버 설치]: /docs/kr/parts/interface/ln-101/#드라이버-설치-확인
