@@ -552,7 +552,7 @@ The AutoRace is provided by Gazebo. We created a environment TurtleBot3 AutoRace
     ``` bash
     $ roslaunch turtlebot3_gazebo turtlebot3_autorace.launch
     ```
-    
+
     ![](/assets/images/platform/turtlebot3/autonomous_driving/autorace_map.png)
 
 2. `Remote PC` Run Mission launch. You can see `Traffic Light`, `Parked TurtleBot3` and `Toll Gate` in Gazebo. When TurtleBot3 approaches the mission area, they operate automatically.
@@ -566,6 +566,7 @@ The AutoRace is provided by Gazebo. We created a environment TurtleBot3 AutoRace
 3. `Remote PC` Run AutoRace launch. If you want to run AutoRace in real, you have to calibrate your camera.
 
     ``` bash
+    $ export GAZEBO_MODE=true
     $ export AUTO_IN_CALIB=action
     $ roslaunch turtlebot3_autorace_camera turtlebot3_autorace_intrinsic_camera_calibration.launch
     ```
