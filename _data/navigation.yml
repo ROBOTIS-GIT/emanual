@@ -579,6 +579,20 @@ all-dynamixel:
     titlekr: "PRO Serie"
     url: /dxl/#pro-m-series
 
+dynamixel_pro:
+  - title: "Product Lineup"
+    titlekr: "제품 라인업"
+    url: /dxl/pro/#dynamixel-pro
+    urlkr: /dxl/pro/#다이나믹셀-프로
+  - title: "Key Specifications"
+    titlekr: "주요 사양"
+    url: /dxl/pro/#key-specifications
+    urlkr: /dxl/pro/#주요-사양
+  - title: "Communication Circuitry"
+    titlekr: "통신 회로"
+    url: /dxl/pro/#communication-circuitry
+    urlkr: /dxl/pro/#통신-회로
+
 #AX-12W sidebar
 ax-12w:
   - title: "Specifications"
