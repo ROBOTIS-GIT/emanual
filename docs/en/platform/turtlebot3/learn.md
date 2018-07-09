@@ -55,18 +55,19 @@ TurtleBot3 simulator in Ubuntu 14.04 (This tutorial is builed by [Cyaninfinite](
 
 ## [Youtube Course](#youtube-course)
 
+This ROS courses are a ROS robot programming guide based on the experiences we had accumulated from ROS projects like TurtleBot3, OpenCR and OpenManipulator. We tried to make this a comprehensive guide that covers all aspects necessary for a beginner in ROS. Topics such as embedded system, mobile robots, and robot arms programmed with ROS are included. For those who are new to ROS, there are footnotes throughout the courses providing more information on the web. Through this ROS courses and book, we hope that more people will be aware of and participate in bringing forward the ever-accelerating collective knowledge of Robotics Engineering.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/1tqYrWqrbC8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/rV-POzbzoHc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-  - [ROS Courses](https://www.youtube.com/playlist?list=PLRG6WP3c31_VIFtFAxSke2NG_DumVZPgw) [KR]
-  - ROS Courses [EN] (English version is coming soon!)
+  - [Playlist of ROS courses (English)](https://www.youtube.com/playlist?list=PLRG6WP3c31_U7TFGduEIJWVtkOw6AJjFf)
+  - [Playlist of ROS courses (Korean)](https://www.youtube.com/playlist?list=PLRG6WP3c31_VIFtFAxSke2NG_DumVZPgw)
+
 
 ## [Books](#books)
 
 ![](/assets/images/platform/turtlebot3/learn/ros_robot_programming.png)
-
-### Description
-
-This book is a ROS robot programming guide based on the experiences we had accumulated from ROS projects like TurtleBot3, OpenCR and OpenManipulator. We tried to make this a comprehensive guide that covers all aspects necessary for a beginner in ROS. Topics such as embedded system, mobile robots, and robot arms programmed with ROS are included. For those who are new to ROS, there are footnotes throughout the book providing more information on the web. Through this book, we hope that more people will be aware of and participate in bringing forward the ever-accelerating collective knowledge of Robotics Engineering.
 
 ### This Handbook is written for
 
