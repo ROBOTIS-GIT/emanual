@@ -17,6 +17,9 @@ sidebar:
 
 ## [Videos from Open Source Team](#videos-from-open-source-team)
 
+**[TurtleBot3 48 Autorace with Gazebo]**
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5fZmuPxMZz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 **[TurtleBot3 47 Reinforcement Learning]**
 <iframe width="560" height="315" src="https://www.youtube.com/embed/WADmP0wzLxs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
