@@ -54,11 +54,48 @@ If you are interested in partnership with us to realize open source robotics, pl
 
 ## [TurtleBot3 Awesome Projects](#turtlebot3-awesome-projects)
 
+**[TurtleBot3 Autorace Simulation Circuit]**
+- by [Fabio Falezza](https://www.youtube.com/channel/UCyf816rZFldiqeoG9gRTT0A)
+- 2018-06-27
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/FR27W19rrYA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+**[Multi-robot exploration]**
+- by [Eric Schneider](https://www.youtube.com/channel/UCkxoPfPb5V3SdlG9oEgmXcA)
+- 2018-06-26
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/rE2Ea8R8fP0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+**[turtlebot3 ros move base gazebo dwa planner]**
+- by [Hyunok Lee](https://www.youtube.com/channel/UC64J5jUkaA2rbYkG7BbHVTw)
+- [Source Code](https://github.com/hyunoklee/gazebo_industrial)
+- 2018-06-23
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/0pigUC3L-VQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+**[Tutoriel TurtleBot3/ROS/Docker/Darknet pour mac]**
+- by [Christophe Saint-Jean](https://www.youtube.com/channel/UCxP1trIeg3RRc_Qc2jWAUbQ)
+- 2018-06-21
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/s1No22-vz28" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+**[TurtleBot3 Automatic Obstacle Avoidance]**
+- by [余嘉浩](https://www.youtube.com/channel/UCkJZPMprpcHzXut3RFiOZag)
+- 2018-06-14
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/0L2c4xOAhFg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 **[Robotclub TB3 (Episode 4): Track and push color balls to goals with avoiding obstacles]**
 - by [ROS in Robotclub Malaysia](https://www.youtube.com/channel/UCLvvXbwPkostryBQt4MIbUw)
-- 2018-05-31
+- 2018-06-11
 
   <iframe width="560" height="315" src="https://www.youtube.com/embed/78IMph18GX0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+**[TurtleBot3 SLAM (Gmapping) & Navigation (AMCL)]**
+- by [oeyyey](https://www.youtube.com/channel/UCSY6Vm96ZsbJ4j_lpIuP-4A)
+- 2018-06-08
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/HWs49FMT6Uk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 **[Robotclub TB3 (Episode 3): Track and push color balls to goals]**
 - by [ROS in Robotclub Malaysia](https://www.youtube.com/channel/UCLvvXbwPkostryBQt4MIbUw)
