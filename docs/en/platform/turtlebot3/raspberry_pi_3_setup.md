@@ -205,6 +205,7 @@ We provide the Linux distro image based on Raspbian. They are pre-installed with
 
 - Synchronize and set computers' date and time by querying a Network Time Protocol (NTP) server
   ```
+  sudo apt-get install ntpdate
   sudo ntpdate ntp.ubuntu.com
   ```
 
