@@ -50,7 +50,7 @@ sidebar:
 
 2. OpenCM 485 확장보드 와 OpenCM9.04를 아래의 그림과 같이 연결 합니다.
 
-    **CAUTION** : 방향을 위와 같이 연결 해주시기 바랍니다.
+    **주의** : 방향을 위와 같이 연결 해주시기 바랍니다.
     {: .notice--warning}
 
     ![](/assets/images/parts/controller/opencm904/img_3483.jpg)

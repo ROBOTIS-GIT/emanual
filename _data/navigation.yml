@@ -13297,11 +13297,11 @@ rplustask2:
       - title: "Start Program"
         titlekr: "프로그램 시작"
         url: /software/rplus2/task/#start-program
-        urlkr: /software/rplus2/task/#프로그램-시작
+        urlkr: /software/rplus2/task/#프로그램-시작start-program
       - title: "End Program"
         titlekr: "프로그램 끝"
         url: /software/rplus2/task/#end-program
-        urlkr: /software/rplus2/task/#프로그램-끝
+        urlkr: /software/rplus2/task/#프로그램-끝end-program
       - title: "Begin Block / End Block"
         titlekr: "구간 시작 / 구간 끝"
         url: /software/rplus2/task/#begin-block--end-block
@@ -13309,7 +13309,7 @@ rplustask2:
       - title: "Comment"
         titlekr: "주석"
         url: /software/rplus2/task/#comment
-        urlkr: /software/rplus2/task/#주석
+        urlkr: /software/rplus2/task/#주석comment
     - title: "Execute"
       titlekr: "실행문"
       url: /software/rplus2/task/#execute
@@ -13339,7 +13339,7 @@ rplustask2:
       - title: "If"
         titlekr: "만약"
         url: /software/rplus2/task/#if
-        urlkr: /software/rplus2/task/#만약
+        urlkr: /software/rplus2/task/#만약if
       - title: "Else If"
         titlekr: "아니면 만약(Else If)"
         url: /software/rplus2/task/#else-if
@@ -13347,7 +13347,7 @@ rplustask2:
       - title: "Else"
         titlekr: "아니면"
         url: /software/rplus2/task/#else
-        urlkr: /software/rplus2/task/#아니면
+        urlkr: /software/rplus2/task/#아니면else
     - title: "Loop"
       titlekr: "반복문"
       url: /software/rplus2/task/#loop
@@ -13360,19 +13360,19 @@ rplustask2:
       - title: "Loop While"
         titlekr: "조건 반복"
         url: /software/rplus2/task/#loop-while
-        urlkr: /software/rplus2/task/#조건-반복
+        urlkr: /software/rplus2/task/#조건-반복loop-while
       - title: "Loop For"
         titlekr: "횟수 반복"
         url: /software/rplus2/task/#loop-for
-        urlkr: /software/rplus2/task/#횟수-반복
+        urlkr: /software/rplus2/task/#횟수-반복loop-for
       - title: "Wait While"
         titlekr: "조건 대기"
         url: /software/rplus2/task/#wait-while
-        urlkr: /software/rplus2/task/#조건-대기
+        urlkr: /software/rplus2/task/#조건-대기wait-while
       - title: "Break Loop"
         titlekr: "반복 끝내기"
         url: /software/rplus2/task/#break-loop
-        urlkr: /software/rplus2/task/#반복-끝내기
+        urlkr: /software/rplus2/task/#반복-끝내기break-loop
     - title: "Function(Sub-Routine)"
       titlekr: "함수(서브루틴)"
       url: /software/rplus2/task/#functionsub-routine
@@ -13381,15 +13381,15 @@ rplustask2:
       - title: "Function/Call"
         titlekr: "함수/호출"
         url: /software/rplus2/task/#functioncall
-        urlkr: /software/rplus2/task/#함수호출
+        urlkr: /software/rplus2/task/#함수호출functioncall
       - title: "Return"
         titlekr: "복귀"
         url: /software/rplus2/task/#return
-        urlkr: /software/rplus2/task/#복귀
+        urlkr: /software/rplus2/task/#복귀return
       - title: "Callback"
         titlekr: "콜백"
         url: /software/rplus2/task/#callback
-        urlkr: /software/rplus2/task/#콜백
+        urlkr: /software/rplus2/task/#콜백callback
   - title: "Programming(Parameters)"
     titlekr: "프로그래밍(파라미터)"
     url: /software/rplus2/task/#programmingparameters
