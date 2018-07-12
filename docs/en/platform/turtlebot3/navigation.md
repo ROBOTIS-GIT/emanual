@@ -40,6 +40,18 @@ The navigation enables a robot to move from the current pose to the designated g
 
 ## [Run Navigation Nodes](#run-navigation-nodes)
 
+**[Remote PC]** Run roscore.
+
+``` bash
+$ roscore
+```
+
+**[TurtleBot]** Bring up basic packages to start TurtleBot3 applications.
+
+``` bash
+$ roslaunch turtlebot3_bringup turtlebot3_robot.launch
+```
+
 **[Remote PC]** Launch the navigation file.
 
 **TIP**: Before executing this command, you have to specify the model name of TurtleBot3. The `${TB3_MODEL}` is the name of the model you are using in `burger`, `waffle`, `waffle_pi`. If you want to permanently set the export settings, please refer to [Export TURTLEBOT3_MODEL][export_turtlebot3_model]{: .popup} page.

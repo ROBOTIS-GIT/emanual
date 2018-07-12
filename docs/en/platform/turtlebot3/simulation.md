@@ -222,6 +222,7 @@ $ roslaunch turtlebot3_navigation turtlebot3_navigation.launch map_file:=$HOME/m
 ``` bash
 $ roslaunch turtlebot3_gazebo multi_turtlebot3.launch
 ```
+These loaded turtlebot3s are set initial position and orientation
 
 ##### 2) Excute SLAM
 
@@ -233,6 +234,8 @@ $ ROS_NAMESPACE=tb3_2 roslaunch turtlebot3_slam turtlebot3_gmapping.launch set_b
 ```
 
 ##### 3) Merge Map Data from each TurtleBot3's Map Data
+
+Before launch this nodes, please make sure arguments for position and orientation of turtlebot3s
 
 ``` bash
 $ sudo apt-get install ros-kinetic-multirobot-map-merge
