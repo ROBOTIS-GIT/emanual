@@ -11644,12 +11644,10 @@ turtlebot3:
     children:
     - title: "Run roscore"
       url: /platform/turtlebot3/bringup/#run-roscore
-    - title: "Bringup a TurtleBot3 Burger"
-      url: /platform/turtlebot3/bringup/#bringup-a-turtlebot3-burger
-    - title: "Bringup a TurtleBot3 Waffle"
-      url: /platform/turtlebot3/bringup/#bringup-a-turtlebot3-waffle
-    - title: "Bringup a TurtleBot3 Waffle Pi"
-      url: /platform/turtlebot3/bringup/#bringup-a-turtlebot3-waffle-pi
+    - title: "Bringup a TurtleBot3"
+      url: /platform/turtlebot3/bringup/#bringup-a-turtlebot3
+    - title: "Load a TurtleBot3 on Rviz"
+      url: /platform/turtlebot3/bringup/#load-a-turtlebot3-on-rviz
   - title: "Basic Operation"
     url: /platform/turtlebot3/basic_operation/#basic-operation
     children:
@@ -11831,6 +11829,8 @@ turtlebot3:
       url: /platform/turtlebot3/applications/#automatic-parking
     - title: "Automatic Parking Vision"
       url: /platform/turtlebot3/applications/#automatic-parking-vision
+    - title: "Load Multiple TurtleBot3s"
+      url : /platform/turtlebot3/applications/#load-multiple-turtlebot3s
   - title: "Learn"
     url: /platform/turtlebot3/learn/#learn
     children:
