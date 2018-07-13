@@ -1000,7 +1000,7 @@ Connect to ROBOTIS-OP3 WiFi with below information
   > Reference : [detail of parameter]  
 
 ##### Camera Setting parameters  
-  ![](/assets/images/platform/op3/op3_web_setting_03.png)
+  ![](/assets/images/platform/op3/op3_web_setting_06.png)
   > Modified parameter values will be saved automatically.  
 
 
