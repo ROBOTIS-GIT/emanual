@@ -645,7 +645,7 @@ PC와 제어기가 시리얼 통신을 할 수 있습니다.
 
   시리얼 통신을 사용하기 위해 초기화 하는 부분입니다. 시리얼 초기화 함수는 serial 라이브러리에 포함되어 있으며, 인자로 통신 속도를 전달 해 주면, 시리얼 포트가 초기화 됩니다.  
   sei()경우 인터럽트를 사용할 수 있도록 하는 내부 명령어입니다.  
-  [dxl_initialize()] 함수의 경우 인자로 device index와 통신 속도를 넘겨주면, 제어기의 통신 환경을 초기화합니다.  
+  dxl_initialize() 함수의 경우 인자로 device index와 통신 속도를 넘겨주면, 제어기의 통신 환경을 초기화합니다.  
   DEFAULT_BAUDNUM은 1입니다.  
   특별한 경우가 아니면 device index는 0입니다.
 
@@ -675,8 +675,8 @@ PC와 제어기가 시리얼 통신을 할 수 있습니다.
   PrintCommStatus(CommStatus);
   ```
   다이나믹셀을 특정 위치로 보냄과 동시에 현재 위치를 읽어오는 부분입니다.  
-  먼저, 현재 움직임 상태를 읽고 모터가 움직이지 않는 상태이면 [dxl_write_word()]함수를 통해 설정된 위치로 이동 명령을 내립니다.  
-  [dxl_write_word()]함수의 인자는 각각 (연결된 다이나믹셀 id, address, position 값) 입니다.  
+  먼저, 현재 움직임 상태를 읽고 모터가 움직이지 않는 상태이면 dxl_write_word()함수를 통해 설정된 위치로 이동 명령을 내립니다.  
+  dxl_write_word()함수의 인자는 각각 (연결된 다이나믹셀 id, address, position 값) 입니다.  
   이후, 현재 위치를 읽어와 시리얼 통신으로 전송합니다.
 
 - 결과
@@ -827,9 +827,7 @@ RC-100을 이용하여 제어기를 동작시킬 수 있습니다. (보다 자�
 
 [제어기 포트맵]: #하드웨어-포트맵
 [적외선 센서]: /docs/kr/parts/sensor/irss-10/
-[dxl_initialize()]: ??
-[dxl_write_word()]: ??
-[Dynamixel SDK]: ??
+[Dynamixel SDK]: /docs/en/software/dynamixel/dynamixel_sdk/overview/
 [다이나믹셀 패킷 구조]: /docs/kr/dxl/protocol1/
 [zgb_rx_data()]: /docs/kr/software/embedded_sdk/zigbee_sdk/#zgb-rx-data
 [Zig-100/110]: /docs/kr/parts/communication/zig-110/

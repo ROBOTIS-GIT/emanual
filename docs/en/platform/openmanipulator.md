@@ -210,6 +210,7 @@ Below services are help you to manipulate OpenManipulator
   ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_moveit_real_4.png)
 
 In order to control gripper, please use topic publish with below command in a new terminal window
+(parameters : `grip_on`, `grip_off`, `neutral`)
 
   ```
   $ rostopic pub /open_manipulator/gripper std_msgs/String "data: 'grip_on'" --once
@@ -308,11 +309,23 @@ OpenManipulator in Gazebo is controllered by ROS message. For example, to use be
 
 ## [MoveIt!](#moveit)
 
-You can use MoveIt! to manipulate OpenManipulator. Please refer to [Manipulation part](/doc/en/platform/openmanipulator/#manipulation)
+You can use MoveIt! to manipulate OpenManipulator. Please refer to [Manipulation part](/docs/en/platform/openmanipulator/#manipulation)
+
+Launch MoveIt!
+
+  ```
+  $ roslaunch open_manipulator_moveit open_manipulator_demo.launch use_gazebo:=true
+  ```
 
   ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_moveit_sim_1.jpg)
 
   ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_moveit_sim_2.jpg)
+
+Gripping (parameters : `grip_on`, `grip_off`, `neutral`)
+
+  ```
+  $ rostopic pub /open_manipulator/gripper std_msgs/String "data: 'grip_on'" --once
+  ```
 
   ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_gripper.png)
 

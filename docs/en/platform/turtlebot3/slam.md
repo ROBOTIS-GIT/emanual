@@ -59,6 +59,18 @@ The **SLAM (Simultaneous Localization and Mapping)** is a technique to draw a ma
 
 ## [Run SLAM Nodes](#run-slam-nodes)
 
+**[Remote PC]** Run roscore.
+
+``` bash
+$ roscore
+```
+
+**[TurtleBot]** Bring up basic packages to start TurtleBot3 applications.
+
+``` bash
+$ roslaunch turtlebot3_bringup turtlebot3_robot.launch
+```
+
 **[Remote PC]** Open a new terminal and launch the SLAM file.
 
 **TIP**: Before executing this command, you have to specify the model name of TurtleBot3. The `${TB3_MODEL}` is the name of the model you are using in `burger`, `waffle`, `waffle_pi`. If you want to permanently set the export settings, please refer to [Export TURTLEBOT3_MODEL][export_turtlebot3_model]{: .popup} page.

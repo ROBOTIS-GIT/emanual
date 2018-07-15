@@ -79,7 +79,7 @@
     </script>
     <script>
       window.onscroll = function () {
-        var offset = 64 - $(window).scrollTop();
+        var offset = 64 - window.pageYOffset;
         if(offset < 0) { offset = 0; }
         $(".sidebar__left").css("top", offset);       //sticky sidebar
         $(".extend_sidebar").css("top", offset);

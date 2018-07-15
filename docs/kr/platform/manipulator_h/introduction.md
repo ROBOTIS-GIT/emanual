@@ -209,7 +209,7 @@ The USB2Dynamixel sends ArmSDK commands to the Manipulator. Connect the USB2Dyna
 
 - Connect USB2Dynamixel to the hub with 4P cable; connect another port of the 4P hub to the extension.
 
-**CAUTION** : Connect the USB2Dynamixel to the PC via USB hub. The USB hub acts as an isolator to protect the PC from any possible unexpected surges caused by arm action.
+**주의** : Connect the USB2Dynamixel to the PC via USB hub. The USB hub acts as an isolator to protect the PC from any possible unexpected surges caused by arm action.
 {: .notice--warning}
 
 ## [USB2Dynamixel Setting](#usb2dynamixel-setting)
@@ -229,7 +229,7 @@ The USB2Dynamixel sends ArmSDK commands to the Manipulator. Connect the USB2Dyna
 
 - Test the arm with Dynamixel Wizard to check for any anomalies. DynamixelWizard is included in RoboPlus suite. RoboPlus can be downloaded from ROBOTIS home page’s Support -> Downloads(http://www.robotis.com/xe/download).  
 
-**CAUTION** : Do NOT download RoboPlus v2.0. Use RoboPlus v1.0 for Manipulator-H.
+**주의** : Do NOT download RoboPlus v2.0. Use RoboPlus v1.0 for Manipulator-H.
 {: .notice--warning}
 
   ![](/assets/images/platform/manipulator/manipulator_h_018.jpg)
@@ -254,7 +254,7 @@ The USB2Dynamixel sends ArmSDK commands to the Manipulator. Connect the USB2Dyna
 - Select the Port Settings tab and click on the Advanced button-> change the latency time from 16 (default) to 1.
 - After changing the COM port settings supply the 24V to the arm (of course, this means wiring is complete).
 
-**CAUTION** : Always ensure before powering on. While power is on do not change wires; otherwise it may cause undesired operations.
+**주의** : Always ensure before powering on. While power is on do not change wires; otherwise it may cause undesired operations.
 {: .notice-warning}
  
   ![](/assets/images/platform/manipulator/manipulator_h_023.jpg)

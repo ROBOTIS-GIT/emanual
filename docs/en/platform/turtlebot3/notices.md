@@ -19,6 +19,7 @@ sidebar:
 
 ## [Publish](#publish)
 
+  - 07/03/2018 [TurtleBot3 AutoRace with Gazebo](https://discourse.ros.org/t/tb3-turtlebot3-autorace-with-gazebo/5261)
   - 05/25/2018 [Announcing TurtleBot3 Software(v1.0.0) and Firmware(v1.2.0) Update](https://discourse.ros.org/t/announcing-turtlebot3-software-v1-0-0-and-firmware-v1-2-0-update/4888)
   - 05/21/2018 [Reinforcement Learning with TB3!](https://discourse.ros.org/t/tb3-reinforcement-learning-with-tb3/4842)
   - 05/16/2018 [1 Year of TurtleBot3: Call for Collaboration (by 23 MAY)](https://discourse.ros.org/t/1-year-of-turtlebot3-call-for-collaboration-by-23-may/4792)
@@ -66,7 +67,7 @@ sidebar:
   - 10/13/2016 [Announcing TurtleBot3](https://discourse.ros.org/t/announcing-turtlebot3/623)
 
 ## [News](#news)
-
+  - 07/06/2018 [Video Friday: Roboy, AI Ethics, and Big Clapper](https://spectrum.ieee.org/automaton/robotics/robotics-hardware/video-friday-roboy-ai-ethics-big-clapper)
   - 02/02/2018 [Video Friday: Waffle Robots, Laser vs. Drone, and TurtleBot Tutorials, IEEE Spectrum](https://spectrum.ieee.org/automaton/robotics/robotics-hardware/video-friday-waffle-robots-laser-vs-drone-turtlebot-tutorials)
   - 11/30/2017 [Robot Gift Guide 2017, IEEE Spectrum](https://spectrum.ieee.org/automaton/robotics/home-robots/robot-gift-guide-2017)
   - 11/07/2017 [10 Memorable ROS-based Robots, Robotics Trends](http://roboticstrends.com/article/10_memorable_ros_based_robots)

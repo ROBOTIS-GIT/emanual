@@ -579,6 +579,20 @@ all-dynamixel:
     titlekr: "PRO Serie"
     url: /dxl/#pro-m-series
 
+dynamixel_pro:
+  - title: "Product Lineup"
+    titlekr: "제품 라인업"
+    url: /dxl/pro/#dynamixel-pro
+    urlkr: /dxl/pro/#다이나믹셀-프로
+  - title: "Key Specifications"
+    titlekr: "주요 사양"
+    url: /dxl/pro/#key-specifications
+    urlkr: /dxl/pro/#주요-사양
+  - title: "Communication Circuitry"
+    titlekr: "통신 회로"
+    url: /dxl/pro/#communication-circuitry
+    urlkr: /dxl/pro/#통신-회로
+
 #AX-12W sidebar
 ax-12w:
   - title: "Specifications"
@@ -11630,12 +11644,10 @@ turtlebot3:
     children:
     - title: "Run roscore"
       url: /platform/turtlebot3/bringup/#run-roscore
-    - title: "Bringup a TurtleBot3 Burger"
-      url: /platform/turtlebot3/bringup/#bringup-a-turtlebot3-burger
-    - title: "Bringup a TurtleBot3 Waffle"
-      url: /platform/turtlebot3/bringup/#bringup-a-turtlebot3-waffle
-    - title: "Bringup a TurtleBot3 Waffle Pi"
-      url: /platform/turtlebot3/bringup/#bringup-a-turtlebot3-waffle-pi
+    - title: "Bringup a TurtleBot3"
+      url: /platform/turtlebot3/bringup/#bringup-a-turtlebot3
+    - title: "Load a TurtleBot3 on Rviz"
+      url: /platform/turtlebot3/bringup/#load-a-turtlebot3-on-rviz
   - title: "Basic Operation"
     url: /platform/turtlebot3/basic_operation/#basic-operation
     children:
@@ -11750,20 +11762,24 @@ turtlebot3:
       children:
       - title: "Tutorials: 1. Requirements"
         url: /platform/turtlebot3/autonomous_driving/#tutorials-1-requirements
-      - title: "Tutorials: 2. Install Additional Dependent Packages"
-        url: /platform/turtlebot3/autonomous_driving/#tutorials-2-install-additional-dependent-packages
-      - title: "Tutorials: 3. Calibration"
-        url: /platform/turtlebot3/autonomous_driving/#tutorials-3-calibration
-      - title: "Tutorials: 4. Missions"
-        url: /platform/turtlebot3/autonomous_driving/#tutorials-4-missions
-      - title: "Tutorials: 5. Run Autonomous Driving"
-        url: /platform/turtlebot3/autonomous_driving/#tutorials-5-run-autonomous-driving
+      - title: "Tutorials: 2. Install AutoRace Package"
+        url: /platform/turtlebot3/autonomous_driving/#tutorials-2-install-autorace-package
+      - title: "Tutorials: 3. Install Additional Dependent Packages"
+        url: /platform/turtlebot3/autonomous_driving/#tutorials-3-install-additional-dependent-packages
+      - title: "Tutorials: 4. Calibration"
+        url: /platform/turtlebot3/autonomous_driving/#tutorials-4-calibration
+      - title: "Tutorials: 5. Missions"
+        url: /platform/turtlebot3/autonomous_driving/#tutorials-5-missions
+      - title: "Tutorials: 6. Run Autonomous Driving"
+        url: /platform/turtlebot3/autonomous_driving/#tutorials-6-run-autonomous-driving
     - title: "TurtleBot3 AutoRace Online Competition"
       url: /platform/turtlebot3/autonomous_driving/#turtlebot3-autorace-online-competition
     - title: "AutoRace RBIZ Challenge 2017"
       url: /platform/turtlebot3/autonomous_driving/#autorace-rbiz-challenge-2017
     - title: "AutoRace RBIZ Challenge 2018"
       url: /platform/turtlebot3/autonomous_driving/#autorace-rbiz-challenge-2018
+    - title: "AutoRace with Gazebo"
+      url: /platform/turtlebot3/autonomous_driving/#autorace-with-gazebo
   - title: "Machine Learning"
     url: /platform/turtlebot3/machine_learning/#machine-learning
     children:
@@ -11813,6 +11829,8 @@ turtlebot3:
       url: /platform/turtlebot3/applications/#automatic-parking
     - title: "Automatic Parking Vision"
       url: /platform/turtlebot3/applications/#automatic-parking-vision
+    - title: "Load Multiple TurtleBot3s"
+      url : /platform/turtlebot3/applications/#load-multiple-turtlebot3s
   - title: "Learn"
     url: /platform/turtlebot3/learn/#learn
     children:
@@ -13275,22 +13293,103 @@ rplustask2:
       titlekr: "시작과 끝"
       url: /software/rplus2/task/#startend
       urlkr: /software/rplus2/task/#시작과-끝
+      children:
+      - title: "Start Program"
+        titlekr: "프로그램 시작"
+        url: /software/rplus2/task/#start-program
+        urlkr: /software/rplus2/task/#프로그램-시작start-program
+      - title: "End Program"
+        titlekr: "프로그램 끝"
+        url: /software/rplus2/task/#end-program
+        urlkr: /software/rplus2/task/#프로그램-끝end-program
+      - title: "Begin Block / End Block"
+        titlekr: "구간 시작 / 구간 끝"
+        url: /software/rplus2/task/#begin-block--end-block
+        urlkr: /software/rplus2/task/#구간-시작구간-끝begin-blockend-block
+      - title: "Comment"
+        titlekr: "주석"
+        url: /software/rplus2/task/#comment
+        urlkr: /software/rplus2/task/#주석comment
     - title: "Execute"
       titlekr: "실행문"
       url: /software/rplus2/task/#execute
       urlkr: /software/rplus2/task/#실행문
+      children:
+      - title: "Compute"
+        titlekr: "계산"
+        url: /software/rplus2/task/#compute
+        urlkr: /software/rplus2/task/#계산
+      - title: "Load"
+        titlekr: "로드"
+        url: /software/rplus2/task/#load
+        urlkr: /software/rplus2/task/#로드
+      - title: "Lable/Jump"
+        titlekr: "레이블/점프"
+        url: /software/rplus2/task/#lablejump
+        urlkr: /software/rplus2/task/#레이블점프
     - title: "Condition"
       titlekr: "조건문"
       url: /software/rplus2/task/#condition
       urlkr: /software/rplus2/task/#조건문
+      children:
+      - title: "Conditional Clause?"
+        titlekr: "조건절이란?"
+        url: /software/rplus2/task/#conditional-clause
+        urlkr: /software/rplus2/task/#조건절이란
+      - title: "If"
+        titlekr: "만약"
+        url: /software/rplus2/task/#if
+        urlkr: /software/rplus2/task/#만약if
+      - title: "Else If"
+        titlekr: "아니면 만약(Else If)"
+        url: /software/rplus2/task/#else-if
+        urlkr: /software/rplus2/task/#아니면-만약else-if
+      - title: "Else"
+        titlekr: "아니면"
+        url: /software/rplus2/task/#else
+        urlkr: /software/rplus2/task/#아니면else
     - title: "Loop"
       titlekr: "반복문"
       url: /software/rplus2/task/#loop
       urlkr: /software/rplus2/task/#반복문
+      children:
+      - title: "Endless Loop"
+        titlekr: "무조건 반복"
+        url: /software/rplus2/task/#endless-loop
+        urlkr: /software/rplus2/task/#무조건-반복endless-loop
+      - title: "Loop While"
+        titlekr: "조건 반복"
+        url: /software/rplus2/task/#loop-while
+        urlkr: /software/rplus2/task/#조건-반복loop-while
+      - title: "Loop For"
+        titlekr: "횟수 반복"
+        url: /software/rplus2/task/#loop-for
+        urlkr: /software/rplus2/task/#횟수-반복loop-for
+      - title: "Wait While"
+        titlekr: "조건 대기"
+        url: /software/rplus2/task/#wait-while
+        urlkr: /software/rplus2/task/#조건-대기wait-while
+      - title: "Break Loop"
+        titlekr: "반복 끝내기"
+        url: /software/rplus2/task/#break-loop
+        urlkr: /software/rplus2/task/#반복-끝내기break-loop
     - title: "Function(Sub-Routine)"
       titlekr: "함수(서브루틴)"
       url: /software/rplus2/task/#functionsub-routine
       urlkr: /software/rplus2/task/#함수서브루틴
+      children:
+      - title: "Function/Call"
+        titlekr: "함수/호출"
+        url: /software/rplus2/task/#functioncall
+        urlkr: /software/rplus2/task/#함수호출functioncall
+      - title: "Return"
+        titlekr: "복귀"
+        url: /software/rplus2/task/#return
+        urlkr: /software/rplus2/task/#복귀return
+      - title: "Callback"
+        titlekr: "콜백"
+        url: /software/rplus2/task/#callback
+        urlkr: /software/rplus2/task/#콜백callback
   - title: "Programming(Parameters)"
     titlekr: "프로그래밍(파라미터)"
     url: /software/rplus2/task/#programmingparameters

@@ -96,8 +96,8 @@ sidebar:
 [3단계 교안예제]: #교안예제
 [태스크 코드 다운로드]: /docs/kr/faq/download_task_code/
 [BT-410]: /docs/kr/parts/communication/bt-410/
-[01_smart3_L3_Snow_Mobile_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/01_smart3_l2_dribble_bot_kr.tskx
-[03_smart3_L3_Snow_Mobile_RC_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/03_smart3_l2_dribble_bot_rc_kr.tskx
+[01_smart3_L3_Snow_Mobile_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/01_smart3_l3_snow_mobile_kr.tskx
+[03_smart3_L3_Snow_Mobile_RC_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/03_smart3_l3_snow_mobile_rc_kr.tskx
 [01_smart3_L3_Add_Game_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/01_smart3_l3_add_game_kr.tskx
 [03_smart3_L3_Add_Game_RC_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/03_smart3_l3_add_game_rc_kr.tskx
 [01_smart3_L3_Strong_Box_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/01_smart3_l3_strong_box_kr.tskx

@@ -175,7 +175,7 @@ $ source ~/.bashrc
 
 #### [Install Linux based on Raspbian](#install-linux-based-on-raspbian)
 
-**WARNING**: The SDcard should have at least **16 GB** of empty space in order to install Linux on Raspberry Pi 3.
+**WARNING**: The SDcard should have at least **8 GB** of empty space in order to install Linux on Raspberry Pi 3.
 {: .notice--warning}
 
 We provide the Linux distro image based on Raspbian. They are pre-installed with ROS and ROS-packages related TurtleBot3. It supports the TurtleBot3 Burger and Waffle Pi model. In this distro image, non-free software like Wolfram, Mathematica, Minecraft Pi and Oracle Java SE are removed. 
@@ -183,7 +183,7 @@ We provide the Linux distro image based on Raspbian. They are pre-installed with
 ##### Remote PC
 - Download the Linux distro image based on Raspbian for TurtleBot3
   - [download link](http://www.robotis.com/service/download.php?no=730)
-  - SHA256: 99ec19c80a529fb6b204b938f64ad966cbb918a89b3bc493f2decdf162053b90
+  - SHA256: a82e6dff50d6216ae2f557ebb1d8636af7d6c8a260e8df4f7ae7c9c8bdc0da28
 - After download, unzip the downloaded file.
 - Guide to burn the image to SD card
   - Visit [etcher.io](https://etcher.io/) and download and install the Etcher SD card image utility.
@@ -205,6 +205,7 @@ We provide the Linux distro image based on Raspbian. They are pre-installed with
 
 - Synchronize and set computers' date and time by querying a Network Time Protocol (NTP) server
   ```
+  sudo apt-get install ntpdate
   sudo ntpdate ntp.ubuntu.com
   ```
 
