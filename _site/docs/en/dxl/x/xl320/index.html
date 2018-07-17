@@ -222,7 +222,7 @@ $(function() {
     </script>
     <script>
       window.onscroll = function () {
-        var offset = 64 - $(window).scrollTop();
+        var offset = 64 - window.pageYOffset;
         if(offset < 0) { offset = 0; }
         $(".sidebar__left").css("top", offset);       //sticky sidebar
         $(".extend_sidebar").css("top", offset);
@@ -277,7 +277,10 @@ $(function() {
       <button class="search_button" onclick="extendsearchtool()">
         <img class="logo" src="/assets/images/search_icon.png">
       </button>
-      <a class="site-title" href="http://localhost:4000/"><img class="logo" id="logo" src="/assets/images/robotis_emanual_logo.png"></a>
+      
+      <a class="site-title" href="http://emanual.robotis.com">
+      
+      <img class="logo" id="logo" src="/assets/images/robotis_emanual_logo.png"></a>
       
       <button class="google_button" id="google_button" onclick="extendgoogletool()"><img src="https://www.google.com/images/cleardot.gif" class="goog-te-gadget-icon" alt="" style="background-image: url(&quot;https://translate.googleapis.com/translate_static/img/te_ctrl3.gif&quot;); background-position: -65px 0px;"></button>
       <div class="google_tools" id="google_tools">
@@ -4311,41 +4314,86 @@ If errors occur, in case of Alarm LED, the LED blinks; in case of Alarm Shutdown
 <table>
   <thead>
     <tr>
-      <th style="text-align: center">Bit</th>
+      <th style="text-align: center">Enabled Bit</th>
+      <th style="text-align: center">Decimal Value</th>
       <th style="text-align: center">Output Color</th>
     </tr>
   </thead>
   <tbody>
     <tr>
+      <td style="text-align: center">NONE</td>
       <td style="text-align: center">0</td>
+      <td style="text-align: center">OFF</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
       <td style="text-align: center">Red</td>
     </tr>
     <tr>
       <td style="text-align: center">1</td>
+      <td style="text-align: center">2</td>
       <td style="text-align: center">Green</td>
     </tr>
     <tr>
       <td style="text-align: center">2</td>
+      <td style="text-align: center">4</td>
       <td style="text-align: center">Blue</td>
     </tr>
     <tr>
       <td style="text-align: center">0 + 1</td>
+      <td style="text-align: center">3</td>
       <td style="text-align: center">Yellow</td>
     </tr>
     <tr>
       <td style="text-align: center">1 + 2</td>
+      <td style="text-align: center">6</td>
       <td style="text-align: center">Cyan</td>
     </tr>
     <tr>
       <td style="text-align: center">0 + 2</td>
+      <td style="text-align: center">5</td>
       <td style="text-align: center">Purple</td>
     </tr>
     <tr>
       <td style="text-align: center">0 + 1 + 2</td>
+      <td style="text-align: center">7</td>
       <td style="text-align: center">White</td>
     </tr>
   </tbody>
 </table>
+
+<div class="notice--info">
+<p><strong>NOTE</strong> : The LED indicates present status of the device.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Status</th>
+      <th style="text-align: center">LED Representation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">Booting</td>
+      <td style="text-align: center">Red LED flickers once</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Factory Reset</td>
+      <td style="text-align: center">Red LED flickers 4 times</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Alarm</td>
+      <td style="text-align: center">Red LED flickers</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Boot Mode</td>
+      <td style="text-align: center">Red LED On</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
 
 <h3 id="pid-gains27-28-29"><a name="p-gain"></a><a name="i-gain"></a><a name="d-gain"></a><strong>PID Gains(27, 28, 29)</strong></h3>
 <p>MX series will use the PID controller as a main control method.</p>

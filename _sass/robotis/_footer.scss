@@ -20,6 +20,7 @@
   footer {
     margin-top: 0em;
     padding: 0.5em 1em 0.5em;
+    font-family: arial, titillium-web, "Noto Sans KR", sans-serif, FontAwesome;
 
     @include breakpoint($max-width) {
       max-width: $max-width;
