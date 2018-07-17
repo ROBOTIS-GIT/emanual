@@ -71,7 +71,7 @@ sidebar:
 |BT-210|O|O|O|X|O|O|O|O|O(O)|O|O|
 |BT-410|O|O|O|X|O|O|O|O|O(O)|O|O|
 |LBS-040|X|O|O|X|X|X|X|X|O(O)|O|X|
-|11.1V LiPo|X|X|X|X|O|O|O|O|X|X|O|
+|11.1V LiPo|X|X|X|X|O|O|O|O|X(O)|X|O|
 |9.6V NiMH|X|X|X|O|X|X|X|X|X|X|X|
 |OBB-10A|O|X|X|X|X|X|X|X|X|X|X|
 |ABB-030|X|X|O|X|X|X|X|X|X|X|X|
