@@ -88,8 +88,9 @@
 }
 
 p>code, a>code, li>code, td>code {
-  padding: 1px 3px;
-  font-family: $code-font;
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+  font-family: $monospace;
   font-size: 0.8em;
   white-space: nowrap;
   border: 1px solid #000;
@@ -101,8 +102,4 @@ p>code, a>code, li>code, td>code {
     letter-spacing: -0.2em;
     content: "\00a0";
   }
-}
-
-pre>code {
-  font-family: monospace !important;
 }

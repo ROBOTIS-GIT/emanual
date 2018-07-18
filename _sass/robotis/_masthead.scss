@@ -182,7 +182,6 @@
   position: absolute;
   clear: both;
   display: none;
-  font-family: $titillium-webkit;
   overflow: hidden;
   background-color: $top-bgcolor;
   width: 100%;
@@ -301,7 +300,7 @@
   float: left;
   overflow: hidden;
   background-color: $top-bgcolor;
-  font-family: $titillium-webkit;
+  font-family: Arial;
   max-width: 700px;
   z-index: 900;
 }

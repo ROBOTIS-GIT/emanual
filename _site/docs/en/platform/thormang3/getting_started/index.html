@@ -222,7 +222,7 @@ $(function() {
     </script>
     <script>
       window.onscroll = function () {
-        var offset = 64 - window.pageYOffset;
+        var offset = 64 - $(window).scrollTop();
         if(offset < 0) { offset = 0; }
         $(".sidebar__left").css("top", offset);       //sticky sidebar
         $(".extend_sidebar").css("top", offset);
@@ -277,10 +277,7 @@ $(function() {
       <button class="search_button" onclick="extendsearchtool()">
         <img class="logo" src="/assets/images/search_icon.png">
       </button>
-      
-      <a class="site-title" href="http://emanual.robotis.com">
-      
-      <img class="logo" id="logo" src="/assets/images/robotis_emanual_logo.png"></a>
+      <a class="site-title" href="http://localhost:4000/"><img class="logo" id="logo" src="/assets/images/robotis_emanual_logo.png"></a>
       
       <button class="google_button" id="google_button" onclick="extendgoogletool()"><img src="https://www.google.com/images/cleardot.gif" class="goog-te-gadget-icon" alt="" style="background-image: url(&quot;https://translate.googleapis.com/translate_static/img/te_ctrl3.gif&quot;); background-position: -65px 0px;"></button>
       <div class="google_tools" id="google_tools">
@@ -353,13 +350,13 @@ $(function() {
                 
                   <li class="mobile_depth_2">
                     <input type="radio" name="sublevel" id="DYNAMIXEL*EX Series">
-                    <label for="DYNAMIXEL*EX Series">EX Series <i class="fa fa-lock" style="font-size:12px; color:red;"></i></label>
+                    <label for="DYNAMIXEL*EX Series"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>EX Series</label>
                     <ul>
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/" class="">EX-106+ <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
+                          <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>EX-106+</a>
                         </li>
                       
                     
@@ -374,27 +371,27 @@ $(function() {
                 
                   <li class="mobile_depth_2">
                     <input type="radio" name="sublevel" id="DYNAMIXEL*DX Series">
-                    <label for="DYNAMIXEL*DX Series">DX Series <i class="fa fa-lock" style="font-size:12px; color:red;"></i></label>
+                    <label for="DYNAMIXEL*DX Series"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>DX Series</label>
                     <ul>
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/dxl/dx/dx-113/" class="">DX-113 <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
+                          <a href="http://localhost:4000/docs/en/dxl/dx/dx-113/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>DX-113</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/dxl/dx/dx-116/" class="">DX-116 <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
+                          <a href="http://localhost:4000/docs/en/dxl/dx/dx-116/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>DX-116</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/dxl/dx/dx-117/" class="">DX-117 <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
+                          <a href="http://localhost:4000/docs/en/dxl/dx/dx-117/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>DX-117</a>
                         </li>
                       
                     
@@ -409,34 +406,34 @@ $(function() {
                 
                   <li class="mobile_depth_2">
                     <input type="radio" name="sublevel" id="DYNAMIXEL*RX Series">
-                    <label for="DYNAMIXEL*RX Series">RX Series <i class="fa fa-lock" style="font-size:12px; color:red;"></i></label>
+                    <label for="DYNAMIXEL*RX Series"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>RX Series</label>
                     <ul>
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/dxl/rx/rx-10/" class="">RX-10 <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
+                          <a href="http://localhost:4000/docs/en/dxl/rx/rx-10/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>RX-10</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/dxl/rx/rx-24f/" class="">RX-24F <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
+                          <a href="http://localhost:4000/docs/en/dxl/rx/rx-24f/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>RX-24F</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/dxl/rx/rx-28/" class="">RX-28 <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
+                          <a href="http://localhost:4000/docs/en/dxl/rx/rx-28/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>RX-28</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/dxl/rx/rx-64/" class="">RX-64 <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
+                          <a href="http://localhost:4000/docs/en/dxl/rx/rx-64/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>RX-64</a>
                         </li>
                       
                     
@@ -646,35 +643,35 @@ $(function() {
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/dxl/pro/l54-50-s500-r/" class="">L54-50-S500-R <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
+                          <a href="http://localhost:4000/docs/en/dxl/pro/l54-50-s500-r/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>L54-50-S500-R</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/dxl/pro/l54-50-s290-r/" class="">L54-50-S290-R <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
+                          <a href="http://localhost:4000/docs/en/dxl/pro/l54-50-s290-r/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>L54-50-S290-R</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/dxl/pro/l54-30-s500-r/" class="">L54-30-S500-R <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
+                          <a href="http://localhost:4000/docs/en/dxl/pro/l54-30-s500-r/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>L54-30-S500-R</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/dxl/pro/l54-30-s400-r/" class="">L54-30-S400-R <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
+                          <a href="http://localhost:4000/docs/en/dxl/pro/l54-30-s400-r/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>L54-30-S400-R</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/dxl/pro/l42-10-s300-r/" class="">L42-10-S300-R <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
+                          <a href="http://localhost:4000/docs/en/dxl/pro/l42-10-s300-r/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>L42-10-S300-R</a>
                         </li>
                       
                     
@@ -833,27 +830,27 @@ $(function() {
                 
                   <li class="mobile_depth_2">
                     <input type="radio" name="sublevel" id="STEAM*OLLO">
-                    <label for="STEAM*OLLO">OLLO <i class="fa fa-lock" style="font-size:12px; color:red;"></i></label>
+                    <label for="STEAM*OLLO"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>OLLO</label>
                     <ul>
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/edu/ollo/bugkit/" class="">BUG KIT <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
+                          <a href="http://localhost:4000/docs/en/edu/ollo/bugkit/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>BUG KIT</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/edu/ollo/explorer/" class="">EXPLORER <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
+                          <a href="http://localhost:4000/docs/en/edu/ollo/explorer/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>EXPLORER</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/edu/ollo/inventor/" class="">INVENTOR <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
+                          <a href="http://localhost:4000/docs/en/edu/ollo/inventor/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>INVENTOR</a>
                         </li>
                       
                     
@@ -1351,7 +1348,7 @@ $(function() {
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/parts/controller/cm-100/" class="">CM-100A <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
+                          <a href="http://localhost:4000/docs/en/parts/controller/cm-100/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>CM-100A</a>
                         </li>
                       
                     
@@ -1372,14 +1369,14 @@ $(function() {
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/parts/controller/cm-5/" class="">CM-5 <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
+                          <a href="http://localhost:4000/docs/en/parts/controller/cm-5/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>CM-5</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/parts/controller/cm-510/" class="">CM-510 <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
+                          <a href="http://localhost:4000/docs/en/parts/controller/cm-510/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>CM-510</a>
                         </li>
                       
                     
@@ -1400,7 +1397,7 @@ $(function() {
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/parts/controller/cm-900/" class="">CM-900 <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
+                          <a href="http://localhost:4000/docs/en/parts/controller/cm-900/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>CM-900</a>
                         </li>
                       
                     
@@ -1452,14 +1449,14 @@ $(function() {
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/parts/communication/zig-110/" class="">ZIG-100/110A <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
+                          <a href="http://localhost:4000/docs/en/parts/communication/zig-110/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>ZIG-100/110A</a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/parts/communication/bt-110/" class="">BT-100/110A <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
+                          <a href="http://localhost:4000/docs/en/parts/communication/bt-110/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>BT-100/110A</a>
                         </li>
                       
                     
@@ -1515,7 +1512,7 @@ $(function() {
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/parts/motor/h_speed_geared_motor/" class="">High Speed Geared Motor <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
+                          <a href="http://localhost:4000/docs/en/parts/motor/h_speed_geared_motor/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>High Speed Geared Motor</a>
                         </li>
                       
                     
@@ -1606,7 +1603,7 @@ $(function() {
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/parts/sensor/ax-s1/" class="">Integrated Sensor(AX-S1) <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
+                          <a href="http://localhost:4000/docs/en/parts/sensor/ax-s1/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>Integrated Sensor(AX-S1)</a>
                         </li>
                       
                     
@@ -1763,7 +1760,7 @@ $(function() {
 
               
                 
-                <a>EX Series <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
+                <a><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>EX Series</a>
               
 
               
@@ -1773,7 +1770,7 @@ $(function() {
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/">EX-106+ <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
+                      <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>EX-106+</a>
                     
                 
               </div>
@@ -1786,7 +1783,7 @@ $(function() {
 
               
                 
-                <a>DX Series <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
+                <a><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>DX Series</a>
               
 
               
@@ -1796,21 +1793,21 @@ $(function() {
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/dxl/dx/dx-113/">DX-113 <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
+                      <a href="http://localhost:4000/docs/en/dxl/dx/dx-113/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>DX-113</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/dxl/dx/dx-116/">DX-116 <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
+                      <a href="http://localhost:4000/docs/en/dxl/dx/dx-116/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>DX-116</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/dxl/dx/dx-117/">DX-117 <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
+                      <a href="http://localhost:4000/docs/en/dxl/dx/dx-117/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>DX-117</a>
                     
                 
               </div>
@@ -1823,7 +1820,7 @@ $(function() {
 
               
                 
-                <a>RX Series <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
+                <a><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>RX Series</a>
               
 
               
@@ -1833,28 +1830,28 @@ $(function() {
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/dxl/rx/rx-10/">RX-10 <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
+                      <a href="http://localhost:4000/docs/en/dxl/rx/rx-10/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>RX-10</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/dxl/rx/rx-24f/">RX-24F <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
+                      <a href="http://localhost:4000/docs/en/dxl/rx/rx-24f/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>RX-24F</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/dxl/rx/rx-28/">RX-28 <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
+                      <a href="http://localhost:4000/docs/en/dxl/rx/rx-28/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>RX-28</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/dxl/rx/rx-64/">RX-64 <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
+                      <a href="http://localhost:4000/docs/en/dxl/rx/rx-64/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>RX-64</a>
                     
                 
               </div>
@@ -2072,35 +2069,35 @@ $(function() {
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/dxl/pro/l54-50-s500-r/">L54-50-S500-R <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
+                      <a href="http://localhost:4000/docs/en/dxl/pro/l54-50-s500-r/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>L54-50-S500-R</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/dxl/pro/l54-50-s290-r/">L54-50-S290-R <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
+                      <a href="http://localhost:4000/docs/en/dxl/pro/l54-50-s290-r/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>L54-50-S290-R</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/dxl/pro/l54-30-s500-r/">L54-30-S500-R <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
+                      <a href="http://localhost:4000/docs/en/dxl/pro/l54-30-s500-r/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>L54-30-S500-R</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/dxl/pro/l54-30-s400-r/">L54-30-S400-R <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
+                      <a href="http://localhost:4000/docs/en/dxl/pro/l54-30-s400-r/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>L54-30-S400-R</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/dxl/pro/l42-10-s300-r/">L42-10-S300-R <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
+                      <a href="http://localhost:4000/docs/en/dxl/pro/l42-10-s300-r/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>L42-10-S300-R</a>
                     
                 
               </div>
@@ -2158,7 +2155,7 @@ $(function() {
               
                 
                   
-                    <a href="http://localhost:4000/docs/en/platform/op/getting_started/">ROBOTIS OP <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
+                    <a href="http://localhost:4000/docs/en/platform/op/getting_started/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>ROBOTIS OP</a>
               
 
               
@@ -2297,7 +2294,7 @@ $(function() {
 
               
                 
-                <a>OLLO <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
+                <a><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>OLLO</a>
               
 
               
@@ -2307,21 +2304,21 @@ $(function() {
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/edu/ollo/bugkit/">BUG KIT <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
+                      <a href="http://localhost:4000/docs/en/edu/ollo/bugkit/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>BUG KIT</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/edu/ollo/explorer/">EXPLORER <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
+                      <a href="http://localhost:4000/docs/en/edu/ollo/explorer/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>EXPLORER</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/edu/ollo/inventor/">INVENTOR <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
+                      <a href="http://localhost:4000/docs/en/edu/ollo/inventor/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>INVENTOR</a>
                     
                 
                   
@@ -2943,7 +2940,7 @@ $(function() {
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/parts/controller/cm-100/">CM-100A <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
+                      <a href="http://localhost:4000/docs/en/parts/controller/cm-100/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>CM-100A</a>
                     
                 
                   
@@ -2964,14 +2961,14 @@ $(function() {
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/parts/controller/cm-5/">CM-5 <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
+                      <a href="http://localhost:4000/docs/en/parts/controller/cm-5/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>CM-5</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/parts/controller/cm-510/">CM-510 <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
+                      <a href="http://localhost:4000/docs/en/parts/controller/cm-510/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>CM-510</a>
                     
                 
                   
@@ -2992,7 +2989,7 @@ $(function() {
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/parts/controller/cm-900/">CM-900 <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
+                      <a href="http://localhost:4000/docs/en/parts/controller/cm-900/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>CM-900</a>
                     
                 
                   
@@ -3047,14 +3044,14 @@ $(function() {
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/parts/communication/zig-110/">ZIG-100/110A <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
+                      <a href="http://localhost:4000/docs/en/parts/communication/zig-110/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>ZIG-100/110A</a>
                     
                 
                   
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/parts/communication/bt-110/">BT-100/110A <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
+                      <a href="http://localhost:4000/docs/en/parts/communication/bt-110/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>BT-100/110A</a>
                     
                 
                   
@@ -3112,7 +3109,7 @@ $(function() {
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/parts/motor/h_speed_geared_motor/">High Speed Geared Motor <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
+                      <a href="http://localhost:4000/docs/en/parts/motor/h_speed_geared_motor/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>High Speed Geared Motor</a>
                     
                 
                   
@@ -3207,7 +3204,7 @@ $(function() {
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/parts/sensor/ax-s1/">Integrated Sensor(AX-S1) <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
+                      <a href="http://localhost:4000/docs/en/parts/sensor/ax-s1/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>Integrated Sensor(AX-S1)</a>
                     
                 
                   

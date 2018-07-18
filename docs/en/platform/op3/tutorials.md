@@ -440,7 +440,6 @@ Clicking the button surrounded by the red dashed rectangle will let the `base_mo
       - `walking_module`  
 
     2. Confirm from the joint status table below the module buttons that corresponding joints are set correctly.  
-
       ![](/assets/images/platform/op3/op3_gui_set_module.png)
 
 - `Get Mode` button will report which module is assigned for each joint.  
@@ -564,54 +563,143 @@ This page explains how to control upgraded walking(online walking).
 
 ## [How to use offset tuner](#how-to-use-offset-tuner)
 
-### Overview   
-This chapter explains how to run the ROBOTIS-OP3 offset tuner program.  
-`op3_offset_tuner_server` and `op3_offset_tuner_client` are used to adjust offsets of ROBOTIS-OP3.  
+### Overview  
+{% capture deprecated_offset_tuner %}  
+`deprecated`    
+This chapter has been merged into [How to use tuner client](#how-to-use-tuner-client)  
+{% endcapture %}  
+<div class=notice”>{{ deprecated_offset_tuner | markdownify }}</div> 
 
 > Reference : [op3_offset_tuner_server]  
 > Reference : [op3_offset_tuner_client]
 
-![](/assets/images/platform/op3/op3_offset_tuner_diagram.png)
+![](/assets/images/platform/op3/op3_offset_tuner_diagram.png)  
+  
+## [How to use tuner client](#how-to-use-tuner-client)  
 
-### Run Offset Tuner Program   
+### Overview     
+this chapter explains how to adjust kinematic offset and position gain of ROBOTIS-OP3.
+In the past, we were able to adjust the offset by using op3_offset_server and op3_offset_client. Now we can set both offset and gain using new op3_tuning_module and op3_tuner_client. we made an op3_tuning_module and used it with op3_manager, so you do not need to run the server for using just to tune the offset.
+ 
+> Reference : [op3_tuning_module]  
+> Reference : [op3_tuner_client]
+
+- Before  
+![](/assets/images/platform/op3/op3_offset_tuner_diagram.png)  
+- After   
+![](/assets/images/platform/op3/op3_tuner_diagram.png)  
+
+### Run Tuner Program   
 
 ### How to launch programs  
-#### Launching server and client program separately
-Offset Tuner is consisted of server and client programs so that other PC in the same ROS network can tune offsets.  
+#### Launching `op3_manager` and `op3_tuner_client` program separately
+Tuner is consisted of op3_manager and client program so that other PC in the same ROS network can tune offsets and gains.  
 
-Execute the offset tuner server program first.  
-(Other programs such as `op3_manager`, `op3_action_editor` and `op3_walking_tuner` should be terminated to run the offset tuner server).  
-
-```
-$ roslaunch op3_offset_tuner_server op3_offset_tuner_server.launch
-```
-
-After starting the offset tuner server, execute client GUI program from the identical PC or any PCs in the same ROS network.  
+Execute the `op3_manager` first.  
+(Other programs such as op3_action_editor` and `op3_walking_tuner` should be terminated to run the `op3_manager`).  
 
 ```
-$ rosrun op3_offset_tuner_client op3_offset_tuner_client
+$ roslaunch op3_manager op3_manager.launch  
 ```
 
-#### Launching server and client program at once
+After starting the `op3_manager`, execute client GUI program from the identical PC or any PCs in the same ROS network.  
+
+```
+$ roslaunch op3_tuner_client op3_tuner_client.launch
+```
+
+#### Launching `op3_manager` and `op3_tuner_client` program at once
 Enter the following commands in the terminal window.  
-(Other programs such as `op3_manager`, `op3_action_editor` and `op3_walking_tuner` should be terminated to run the offset tuner.)
+(Other programs such as `op3_action_editor` and `op3_walking_tuner` should be terminated to run the offset tuner.)
 
 ```
-$ roslaunch op3_offset_tuner_client op3_offset_tuner.launch
+$ roslaunch op3_tuner_client op3_tuner.launch 
 ```
+
+![launch image](/assets/images/platform/op3/op3_tuner_execution.png)
 
 ### Configuration Files
-#### `op3_offset_tuner_server` configuration files  
-- `offset.yaml` : Offset data and offset adjusting posture information are saved  
-- `OP3.robot` : Description of ROBOTIS-OP3 is saved  
-- `dxl_init_OP3.yaml` : Dynamixel configurations are saved and used for joint initialization  
+#### `op3_manager` configuration files   
+- config/`OP3.robot` : Description of ROBOTIS-OP3 is saved  
+- config/`dxl_init_OP3.yaml` : Dynamixel configurations included gains are saved and used for joint initialization 
+ 
+#### `op3_tuning_module` configuration files  
+- data/`offset.yaml` : Offset data is saved  
+- data/`tune_pose.yaml` : offset adjusting posture information and gain tuning posture information are saved  
+  ```
+  - init_pose
+    - move_time
+    - target_pose
+      - joint_name : angle(degree)
+      - ...
 
-#### `op3_offset_tuner_client` configuration file  
-- `joint_data.yaml` : GUI menu configuration file  
+  - tune_pose_01
+    - move_time : [time, time, ...]
+    - target_pose : [pose_name, pose_name, ...]
+  - tune_pose_02
+    - move_time : [time, time, ...]
+    - target_pose : [pose_name, pose_name, ...]
+  - tune_pose_03
+    - move_time : [time, time, ...]
+    - target_pose : [pose_name, pose_name, ...]
+  - tune_pose_04
+    - move_time : [time, time, ...]
+    - target_pose : [pose_name, pose_name, ...]
 
-### How to use Offset tuner client GUI program  
+  - pose_data
+    - pose_name
+      - joint_name : angle(degree)
+      - ...
+  ```
 
-![](/assets/images/platform/op3/How to use offset tuner_2.png)
+#### `op3_tuner_client` configuration file  
+- config/`joint_data.yaml` : GUI menu configuration file  
+
+### How to use tuner client GUI program   
+#### How to tune the offset  
+![](/assets/images/platform/op3/op3_tuner_offset_01.png)  
+1. go `Initial Pose`   
+2. Select tab of `Kinematics Group`  
+3. Click the `Refresh` Button for getting current states of joints  
+4. tune the offset of joints  
+5. Click the `Save Offset` button for saving to file.  
+
+#### How to tune the gain  
+![](/assets/images/platform/op3/op3_tuner_gain_01.png)  
+1. go `Initial Pose`   
+2. Select tab of `Kinematics Group`  
+3. Click the `Refresh` Button for getting current states of joints  
+4. change the pose and tune the gain of joints for watching the graph of the joint  
+(If you want to tune other joint, delete topics and add topics that you want to tune)    
+5. Click the `Save Gain` button for saving to file.  
+
+> Reference : Order of the joint name in the topic(`/robotis/goal_joint_states`)  
+  ```
+  0 : haed_pan  
+  1 : haed_tilt  
+  2 : l_ank_pitch  
+  3 : l_ank_roll  
+  4 : l_el  
+  5 : l_hip_pitch  
+  6 : l_hip_roll  
+  7 : l_hip_yaw  
+  8 : l_knee  
+  9 : l_sho_pitch  
+  10 : l_sho_roll  
+  11 : r_ank_pitch  
+  12 : r_ank_roll  
+  13 : r_el  
+  14 : r_hip_pitch  
+  15 : r_hip_roll  
+  16 : r_hip_yaw  
+  17 : r_knee  
+  18 : r_sho_pitch  
+  19 : r_sho_roll   
+  ```
+> If you want to check in your hand, type like the belows
+  ```
+  $ rostopic echo /robotis/goal_joint_states -n 1
+  ```
 
 ## [How to create the motions](#how-to-create-the-motions)
 
@@ -1573,6 +1661,9 @@ $ roslaunch op3_read_write_demo op3_read_write.launch
 
 [op3_offset_tuner_server]: /docs/en/platform/op3/robotis_ros_packages/#op3-offset-tuner-server
 [op3_offset_tuner_client]: /docs/en/platform/op3/robotis_ros_packages/#op3-offset-tuner-client
+
+[op3_tuning_module]: /docs/en/platform/op3/robotis_ros_packages/#op3-tuning-module
+[op3_tuner_client]: /docs/en/platform/op3/robotis_ros_packages/#op3-tuner-client
 
 [op3_how_to_control_upgraded_walking]: /docs/en/platform/op3/tutorials/#how-to-control-upgraded-walkingonline-walking
 
