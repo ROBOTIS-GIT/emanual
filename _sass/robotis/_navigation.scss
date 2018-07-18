@@ -3,6 +3,7 @@
   overflow-y: auto;
   height: 100vh;
   padding-bottom: 40px;
+  font-family: $titillium-webkit;
 }
 
 .sticky_sidebar nav {
@@ -248,7 +249,7 @@
 .nav__title {
   margin: 0;
   padding: 0.5rem 1rem;
-  font-family: $sans-serif-narrow;
+  font-family: $titillium-webkit;
   font-size: 1em;
   font-weight: bold;
 }
@@ -257,7 +258,7 @@
   display: block;
   margin: 0.5rem 0;
   padding: 0.5rem 0;
-  font-family: $sans-serif-narrow;
+  font-family: $titillium-webkit;
   font-size: 1em;
   font-weight: bold;
   text-transform: uppercase;
