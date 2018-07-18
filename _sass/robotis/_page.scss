@@ -4,7 +4,6 @@ html {
 
 #main {
   margin: 0;
-  font-family: titillium-web, "Noto Sans KR", sans-serif, FontAwesome;
   
   @include breakpoint($max-width) {
     max-width: $max-width;

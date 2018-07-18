@@ -239,7 +239,7 @@ This chapter explains how to install software and configure ROBOTIS OP3.
 - Configure web_setting_tool  
     1. Copy files from ROBOTIS-OP3-Tools folder to the web server folder : github
         ```
-        $ cd ~/catkin_ws/src/ROBOTIS-OP3-Tools/op3_web_setting
+        $ cd ~/catkin_ws/src/ROBOTIS-OP3-Tools/op3_web_setting_tool
         $ sudo cp -r ./html /var/www
         ```   
     2. Check the default page from a web browser  

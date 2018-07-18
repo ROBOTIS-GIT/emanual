@@ -10813,6 +10813,8 @@ op3:
         url: /platform/op3/tutorials/#how-to-control-upgraded-walkingonline-walking
     - title: "How to use offset tuner"
       url: /platform/op3/tutorials/#how-to-use-offset-tuner
+    - title: "How to use tuner client"
+      url: /platform/op3/tutorials/#how-to-use-tuner-client
     - title: "How to create the motions"
       url: /platform/op3/tutorials/#how-to-create-the-motions
     - title: "How to use ball detector"
