@@ -41,7 +41,7 @@ While using **Normal Read and Write control** or **Sync Read and Write control**
 ### Indirect Address control (is available only in Dynamixel PRO and X series but its very useful!)
 To control multiple items in multiple dynamixel, and when you want to use **Sync Read and Write control** rather than **Bulk Read and Write control**, use this. Copy the buffer of targeted items to another address on the memory using **Normal Read and Write control**, then **Sync Read and Write control** them.
 
-## Questions?
-- Any **questions** related with Dynamixel SDK are always welcomed. Just let me know at [ISSUES](https://github.com/ROBOTIS-GIT/DynamixelSDK/issues)
-- For the other questions, including **Hardware-wise problems** on your Dynamixels, please contact to support@robotis.com
+## I have a question. Where should I put it??
+- Any **questions** related with Dynamixel SDK are always welcomed. Just let me know at [ISSUES](https://github.com/ROBOTIS-GIT/DynamixelSDK/issues).
+- For the other questions, including **Hardware-wise problems** on your Dynamixels, please contact to `support@robotis.com` or use [ROBOTIS Forum](http://en.robotis.com/service/forum.php).
 - Join our **developer community** on the [RobotSource](https://community.robotsource.org/).
