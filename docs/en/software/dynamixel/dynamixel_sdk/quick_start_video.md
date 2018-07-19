@@ -15,25 +15,25 @@ sidebar:
 
 # [Quick Start Video](#quick-start-video)
 
-* [Episode 1-Introduction to the Dynamixel SDK, the Dynamixel SDK Wiki, and the Issues Section](https://www.youtube.com/watch?v=F-sXbIAM0jc&index=1&list=PLEf1s0tzVSnSgVzf4AREpat_P_HRLSiDn)
+* [Episode 1-Introduction to the Dynamixel SDK, the Dynamixel SDK Wiki, and the Issues Section](https://youtu.be/F-sXbIAM0jc)
 
-* [Episode 2-Hardware Setup](https://www.youtube.com/watch?v=RLnpps8eh6U&list=PLEf1s0tzVSnSgVzf4AREpat_P_HRLSiDn&index=2)
+* [Episode 2-Hardware Setup](https://youtu.be/RLnpps8eh6U)
 
-* [Episode 3.1-Software Prepraration - Overview](https://www.youtube.com/watch?v=-WQ2Etmd1VM&list=PLEf1s0tzVSnSgVzf4AREpat_P_HRLSiDn&index=3)
+* [Episode 3.1-Software Prepraration - Overview](https://youtu.be/-WQ2Etmd1VM)
 
-* [Episode 3.2-Software Preparation - Windows](https://www.youtube.com/watch?v=VKHyIYsSukM&list=PLEf1s0tzVSnSgVzf4AREpat_P_HRLSiDn&index=4)
+* [Episode 3.2-Software Preparation - Windows](https://youtu.be/VKHyIYsSukM)
 
-* [Episode 3.3-Software Preparation - Linux](https://www.youtube.com/watch?v=zb8I05D-LGE&list=PLEf1s0tzVSnSgVzf4AREpat_P_HRLSiDn&index=5)
+* [Episode 3.3-Software Preparation - Linux](https://youtu.be/zb8I05D-LGE)
 
-* [Episode 4.1-ReadWrite C++ Example - Overview](https://www.youtube.com/watch?v=XKbGcwjU9UM&list=PLEf1s0tzVSnSgVzf4AREpat_P_HRLSiDn&index=6)
+* [Episode 4.1-ReadWrite C++ Example - Overview](https://youtu.be/XKbGcwjU9UM)
 
-* [Episode 4.2-ReadWrite C++ Example - Windows](https://www.youtube.com/watch?v=pHC5p3d6NM4&list=PLEf1s0tzVSnSgVzf4AREpat_P_HRLSiDn&index=7)
+* [Episode 4.2-ReadWrite C++ Example - Windows](https://youtu.be/pHC5p3d6NM4)
 
-* [Episode 4.3-ReadWrite C++ Example - Linux](https://www.youtube.com/watch?v=J0xIwmxg-MQ&index=8&list=PLEf1s0tzVSnSgVzf4AREpat_P_HRLSiDn)
+* [Episode 4.3-ReadWrite C++ Example - Linux](https://youtu.be/J0xIwmxg-MQ)
 
-* [Parting Thoughts](https://www.youtube.com/watch?v=2-6v9EbpD2k&index=9&list=PLEf1s0tzVSnSgVzf4AREpat_P_HRLSiDn)
+* [Parting Thoughts](https://youtu.be/2-6v9EbpD2k)
 
-* [MATLAB Introduction](https://youtu.be/-D092sAx_DU?list=PLEf1s0tzVSnSQQI0jCncWVSX3mnHmqSck)
+* [MATLAB Introduction](https://youtu.be/-D092sAx_DU)
 
 * [MATLAB Episode 1: Software Preparation - Windows](https://youtu.be/RcnVYqhGYiQ)
 
