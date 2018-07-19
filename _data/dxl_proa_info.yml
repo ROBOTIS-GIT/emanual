@@ -72,4 +72,3 @@ h54-200-s500-ra:
   protocoltypekr:     "RS485 비동기 시리얼 통신 (8bit, 1stop, No Parity)"
   physicalconnection: "RS485 Multidrop Bus"
   id:                 "0 ~ 252"
-  

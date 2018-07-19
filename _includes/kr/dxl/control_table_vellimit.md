@@ -1,5 +1,5 @@
 
-Goal Velocity(104)와 Profile Velocity(112)의 한계 값입니다. 자세한 설명은 Profile Velocity(112)을 참고하세요.
+Goal Velocity(104)의 한계 값입니다. 자세한 설명은 Goal Velocity(104)을 참고하세요.
 
 |단위|범위|
 | :---: | :---: |
