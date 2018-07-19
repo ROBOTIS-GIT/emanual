@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: dynamixel_sdk_sample_code_python_read_write_protocol_1_0
+ref: python_read_write_protocol_2_0
 read_time: true
 share: true
 author_profile: false
@@ -11,12 +11,14 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
-<div style="counter-reset: h1 3"></div>
-<div style="counter-reset: h2 12"></div>
+<div style="counter-reset: h1 5"></div>
+<div style="counter-reset: h2 13"></div>
+<div style="counter-reset: h3 0"></div>
 
-# [Sample Code](#sample-code)
-
-## [Python Protocol 2.0](#python-protocol-20)
+<!--[dummy Header 1]>
+  <h1 id="sample-code"><a href="#sample-code">Sample Code</a></h1>
+  <h2 id="python-protocol-20"><a href="#python-protocol-20">Python Protocol 2.0</a></h2>
+<![end dummy Header 1]-->
 
 ### [Python Read Write Protocol 2.0](#python-read-write-protocol-10)
 
@@ -220,7 +222,7 @@ ADDR_PRO_GOAL_POSITION       = 596
 ADDR_PRO_PRESENT_POSITION    = 611
 ```
 
-Dynamixel series have their own control tables: Addresses and Byte Length in each items. To control one of the items, its address (and length if necessary) is required. Find your requirements in http://support.robotis.com/.
+Dynamixel series have their own control tables: Addresses and Byte Length in each items. To control one of the items, its address (and length if necessary) is required. Find your requirements in http://emanual.robotis.com/.
 
 ```python
 # Protocol version

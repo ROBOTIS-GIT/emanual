@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: dynamixel_sdk_sample_code_matlab_read_write_protocol_1_0
+ref: matlab_read_write_protocol_1_0
 read_time: true
 share: true
 author_profile: false
@@ -11,12 +11,14 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
-<div style="counter-reset: h1 3"></div>
-<div style="counter-reset: h2 17"></div>
+<div style="counter-reset: h1 5"></div>
+<div style="counter-reset: h2 18"></div>
+<div style="counter-reset: h3 0"></div>
 
-# [Sample Code](#sample-code)
-
-## [MATLAB Protocol 1.0](#matlab-protocol-10)
+<!--[dummy Header 1]>
+  <h1 id="sample-code"><a href="#sample-code">Sample Code</a></h1>
+  <h2 id="matlab-protocol-10"><a href="#matlab-protocol-10">MATLAB Protocol 1.0</a></h2>
+<![end dummy Header 1]-->
 
 ### [Matlab Read Write Protocol 1.0](#matlab-read-write-protocol-10)
 
@@ -234,7 +236,7 @@ ESC_CHARACTER               = 'e';          % Key for escaping loop
 
 Here we set some variables to let you freely change them and use them to run the example code.
 
-As the document already said in [previous chapter](https:#github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki/2.-Hardware-Settings), customize Dynamixel control table items, such as `DXL_ID` number, communication `BAUDRATE`, and the `DEVICENAME`, on your own terms of needs. In particular, `BAUDRATE` and `DEVICENAME` have systematical dependencies on your controller, so make clear what kind of communication method you will use.
+As the document already said in previous chapter, customize Dynamixel control table items, such as `DXL_ID` number, communication `BAUDRATE`, and the `DEVICENAME`, on your own terms of needs. In particular, `BAUDRATE` and `DEVICENAME` have systematical dependencies on your controller, so make clear what kind of communication method you will use.
 
 Dynamixel basically needs the `TORQUE_ENABLE` to be rotating or give you its internal information. On the other hand, it doesn't need torque enabled if you get your goal, so finally do `TORQUE_DISABLE` to prepare to the next sequence.
 

@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: dynamixel_sdk_hardware_setup_dynamixel
+ref: dynamixel
 read_time: true
 share: true
 author_profile: false
@@ -11,12 +11,14 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
+<div style="counter-reset: h1 3"></div>
 <div style="counter-reset: h2 1"></div>
-<div style="counter-reset: h1 1"></div>
 
-# [Device Setup](#device-setup)
+<!--[dummy Header 1]>
+  <h1 id="device-setup"><a href="#device-setup">Device Setup</a></h1>
+<![end dummy Header 1]-->
 
-## <a name="dynamixel"></a>[Dynamixel](#dynamixel)
+## [Dynamixel](#dynamixel)
 
 ![](/assets/images/sw/sdk/dynamixel_sdk/device_setup/dynamixel_image.jpg)
 
@@ -50,7 +52,7 @@ SDK examples were tested with the following Dynamixels:
 **NOTE** : The BulkRead function doesn't work with the AX, EX, or RX series
 {: .notice}
 
-### Power Requirements
+### [Power Requirements](#power-requirements)
 
 * 12V for MX (also AX, EX, RX, and X series)
 
@@ -63,14 +65,14 @@ SDK examples were tested with the following Dynamixels:
 **NOTE** : The X series' 4P connector is not compatible with the USB2Dynamixel connector.
 {: .notice}
 
+### [Dynamixel Parameters](#dynamixel-parameters)
+
 To run the SDK examples, the following Dynamixel parameters need to be changed: 
 * ID = 1 (and 2, when the example uses two Dynamixels) 
 * Baud Rate = 57600 bps (baud value = 34 for MX, 1 for PRO.)
 
-To change Dynamixel parameters, use Dynamixel Wizard, which is part of ROBOTIS [RoboPlus](http://www.robotis.us/roboplus2/) suite of software.
+To change Dynamixel parameters, use [Dynamixel Wizard](http://emanual.robotis.com/docs/en/software/rplus1/dynamixel_wizard/#introduction) or [RoboPlus Manager](http://emanual.robotis.com/docs/en/software/rplus2/manager/).
 
 ![](/assets/images/sw/sdk/dynamixel_sdk/device_setup/dynamixel_setting/3.png)
 
 ![](/assets/images/sw/sdk/dynamixel_sdk/device_setup/dynamixel_setting/4.png)
-
-Instructions on how to utilize Dynamixel Wizard are uploaded on the [e-manual](http://emanual.robotis.com/docs/en/software/rplus2/manager/)

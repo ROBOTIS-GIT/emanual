@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: dynamixel_sdk_sample_code_matlab_protocol_combined
+ref: matlab_protocol_combined
 read_time: true
 share: true
 author_profile: false
@@ -11,10 +11,12 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
-<div style="counter-reset: h1 3"></div>
+<div style="counter-reset: h1 5"></div>
 <div style="counter-reset: h2 19"></div>
 
-# [Sample Code](#sample-code)
+<!--[dummy Header 1]>
+  <h1 id="sample-code"><a href="#sample-code">Sample Code</a></h1>
+<![end dummy Header 1]-->
 
 ## [Matlab Protocol Combined](#matlab-protocol-combined)
 
@@ -27,7 +29,7 @@ sidebar:
   All models using protocol 1.0 and 2.0
 
 
-#### Sample code
+### Sample code
 
 
 ``` m
@@ -237,7 +239,7 @@ clear all;
 
 
 
-#### Details
+### Details
 
 ``` m
 % Load Libraries
@@ -260,7 +262,7 @@ ADDR_PRO_GOAL_POSITION          = 596;
 ADDR_PRO_PRESENT_POSITION       = 611;
 ```
 
-Dynamixel series have their own control tables: Addresses and Byte Length in each items. To control one of the items, its address (and length if necessary) is required. Find your requirements in http://support.robotis.com/.
+Dynamixel series have their own control tables: Addresses and Byte Length in each items. To control one of the items, its address (and length if necessary) is required. Find your requirements in http://emanual.robotis.com/.
 
 ``` m
 % Protocol version

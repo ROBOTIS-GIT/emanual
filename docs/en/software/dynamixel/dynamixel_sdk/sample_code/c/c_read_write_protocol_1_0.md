@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: dynamixel_sdk_sample_code_c_read_write_protocol_1_0
+ref: c_read_write_protocol_1_0
 read_time: true
 share: true
 author_profile: false
@@ -11,7 +11,7 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
-<div style="counter-reset: h1 3"></div>
+<div style="counter-reset: h1 4"></div>
 
 # [Sample Code](#sample-code)
 
@@ -292,7 +292,7 @@ All libraries of Dynamixel SDK are linked with the header file `dynamixel_sdk.h`
 #define ADDR_MX_PRESENT_POSITION        36
 ```
 
-Dynamixel series have their own control tables: Addresses and Byte Length in each items. To control one of the items, its address (and length if necessary) is required. Find your requirements in http://support.robotis.com/.
+Dynamixel series have their own control tables: Addresses and Byte Length in each items. To control one of the items, its address (and length if necessary) is required. Find your requirements in http://emanual.robotis.com/.
 
 ```c
 // Protocol version

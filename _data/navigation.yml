@@ -14149,10 +14149,25 @@ dynamixel_sdk:
   - title: "Overview"
     url: /software/dynamixel/dynamixel_sdk/overview/#overview
     children:
-    - title: "Concept"
-      url: /software/dynamixel/dynamixel_sdk/overview/#concept
-    - title: "License"
-      url: /software/dynamixel/dynamixel_sdk/overview/#license
+    - title: "Dynamixel SDK"
+      url: /software/dynamixel/dynamixel_sdk/overview/#dynamixel-sdk
+    - title: "Supported Dynamixels"
+      url: /software/dynamixel/dynamixel_sdk/overview/#supported-dynamixels
+    - title: "Supported Protocols"
+      url: /software/dynamixel/dynamixel_sdk/overview/#supported-protocols
+    - title: "Supported Devices"
+      url: /software/dynamixel/dynamixel_sdk/overview/#supported-devices
+    - title: "Supported Operating Systems"
+      url: /software/dynamixel/dynamixel_sdk/overview/#supported-operating-systems
+    - title: "Supported Languages"
+      url: /software/dynamixel/dynamixel_sdk/overview/#supported-languages
+  - title: "Download"
+    url: /software/dynamixel/dynamixel_sdk/download/#download
+    children:
+    - title: "Repository"
+      url: /software/dynamixel/dynamixel_sdk/download/#repository
+    - title: "File Structure"
+      url: /software/dynamixel/dynamixel_sdk/download/#file-structure
   - title: "Device Setup"
     url: /software/dynamixel/dynamixel_sdk/device_setup/controller/#device-setup
     children:
@@ -14167,34 +14182,34 @@ dynamixel_sdk:
       url: /software/dynamixel/dynamixel_sdk/library_setup/c_windows/#c-windows
     - title: "C Linux"
       url: /software/dynamixel/dynamixel_sdk/library_setup/c_linux/#c-linux
-    - title: "C MacOSX"
-      url: /software/dynamixel/dynamixel_sdk/library_setup/c_macosx/#c-macosx
+    - title: "C macOS"
+      url: /software/dynamixel/dynamixel_sdk/library_setup/c_macos/#c-macos
     - title: "CPP Windows"
       url: /software/dynamixel/dynamixel_sdk/library_setup/cpp_windows/#cpp-windows
     - title: "CPP Linux"
       url: /software/dynamixel/dynamixel_sdk/library_setup/cpp_linux/#cpp-linux
-    - title: "CPP Mac OS"
-      url: /software/dynamixel/dynamixel_sdk/library_setup/cpp_macosx/#cpp-macosx
+    - title: "CPP macOS"
+      url: /software/dynamixel/dynamixel_sdk/library_setup/cpp_macos/#cpp-macos
     - title: "Csharp Windows"
       url: /software/dynamixel/dynamixel_sdk/library_setup/csharp_windows/#csharp-windows
     - title: "Python Windows"
       url: /software/dynamixel/dynamixel_sdk/library_setup/python_windows/#python-windows
     - title: "Python Linux"
       url: /software/dynamixel/dynamixel_sdk/library_setup/python_linux/#python-linux
-    - title: "Python MacOSX"
-      url: /software/dynamixel/dynamixel_sdk/library_setup/python_macosx/#python-macosx
+    - title: "Python macOS"
+      url: /software/dynamixel/dynamixel_sdk/library_setup/python_macos/#python-macos
     - title: "Java Windows"
       url: /software/dynamixel/dynamixel_sdk/library_setup/java_windows/#java-windows
     - title: "Java Linux"
       url: /software/dynamixel/dynamixel_sdk/library_setup/java_linux/#java-linux
-    - title: "Java MacOSX"
-      url: /software/dynamixel/dynamixel_sdk/library_setup/java_macosx/#java-macosx
+    - title: "Java macOS"
+      url: /software/dynamixel/dynamixel_sdk/library_setup/java_macos/#java-macos
     - title: "MATLAB Windows"
       url: /software/dynamixel/dynamixel_sdk/library_setup/matlab_windows/#matlab-windows
     - title: "MATLAB Linux"
       url: /software/dynamixel/dynamixel_sdk/library_setup/matlab_linux/#matlab-linux
-    - title: "MATLAB MacOSX"
-      url: /software/dynamixel/dynamixel_sdk/library_setup/matlab_macosx/#matlab-macosx
+    - title: "MATLAB macOS"
+      url: /software/dynamixel/dynamixel_sdk/library_setup/matlab_macos/#matlab-macos
     - title: "LabVIEW Windows"
       url: /software/dynamixel/dynamixel_sdk/library_setup/labview_windows/#labview-windows
   - title: "Sample Code"
@@ -14307,7 +14322,7 @@ dynamixel_sdk:
       - title: "CSharp Bulk Read Protocol 2.0"
         url: /software/dynamixel/dynamixel_sdk/sample_code/csharp_bulk_read_write_protocol_2_0/#csharp-bulk-read-write-protocol-20
       - title: "CSharp Indirect Address Protocol 2.0"
-        url: /software/dynamixel/dynamixel_sdk/sample_code/csharp_indirect_address_2_0/#csharp-indirect-address-protocol-20
+        url: /software/dynamixel/dynamixel_sdk/sample_code/csharp_indirect_address_protocol_2_0/#csharp-indirect-address-protocol-20
       - title: "CSharp Ping Protocol 2.0"
         url: /software/dynamixel/dynamixel_sdk/sample_code/csharp_ping_protocol_2_0/#csharp-ping-protocol-20
       - title: "CSharp Broadcast Ping Protocol 2.0"
@@ -14345,7 +14360,7 @@ dynamixel_sdk:
       - title: "Python Bulk Read Protocol 2.0"
         url: /software/dynamixel/dynamixel_sdk/sample_code/python_bulk_read_write_protocol_2_0/#python-bulk-read-write-protocol-20
       - title: "Python Indirect Address Protocol 2.0"
-        url: /software/dynamixel/dynamixel_sdk/sample_code/python_indirect_address_2_0/#python-indirect-address-protocol-20
+        url: /software/dynamixel/dynamixel_sdk/sample_code/python_indirect_address_protocol_2_0/#python-indirect-address-protocol-20
       - title: "Python Ping Protocol 2.0"
         url: /software/dynamixel/dynamixel_sdk/sample_code/python_ping_protocol_2_0/#python-ping-protocol-20
       - title: "Python Broadcast Ping Protocol 2.0"
@@ -14383,7 +14398,7 @@ dynamixel_sdk:
       - title: "Java Bulk Read Protocol 2.0"
         url: /software/dynamixel/dynamixel_sdk/sample_code/java_bulk_read_write_protocol_2_0/#java-bulk-read-write-protocol-20
       - title: "Java Indirect Address Protocol 2.0"
-        url: /software/dynamixel/dynamixel_sdk/sample_code/java_indirect_address_2_0/#java-indirect-address-protocol-20
+        url: /software/dynamixel/dynamixel_sdk/sample_code/java_indirect_address_protocol_2_0/#java-indirect-address-protocol-20
       - title: "Java Ping Protocol 2.0"
         url: /software/dynamixel/dynamixel_sdk/sample_code/java_ping_protocol_2_0/#java-ping-protocol-20
       - title: "Java Broadcast Ping Protocol 2.0"
@@ -14421,7 +14436,7 @@ dynamixel_sdk:
       - title: "Matlab Bulk Read Protocol 2.0"
         url: /software/dynamixel/dynamixel_sdk/sample_code/matlab_bulk_read_write_protocol_2_0/#matlab-bulk-read-write-protocol-20
       - title: "Matlab Indirect Address Protocol 2.0"
-        url: /software/dynamixel/dynamixel_sdk/sample_code/matlab_indirect_address_2_0/#matlab-indirect-address-protocol-20
+        url: /software/dynamixel/dynamixel_sdk/sample_code/matlab_indirect_address_protocol_2_0/#matlab-indirect-address-protocol-20
       - title: "Matlab Ping Protocol 2.0"
         url: /software/dynamixel/dynamixel_sdk/sample_code/matlab_ping_protocol_2_0/#matlab-ping-protocol-20
       - title: "Matlab Broadcast Ping Protocol 2.0"
@@ -14459,7 +14474,7 @@ dynamixel_sdk:
       - title: "LabVIEW Bulk Read Protocol 2.0"
         url: /software/dynamixel/dynamixel_sdk/sample_code/labview_bulk_read_write_protocol_2_0/#labview-bulk-read-write-protocol-20
       - title: "LabVIEW Indirect Address Protocol 2.0"
-        url: /software/dynamixel/dynamixel_sdk/sample_code/labview_indirect_address_2_0/#labview-indirect-address-protocol-20
+        url: /software/dynamixel/dynamixel_sdk/sample_code/labview_indirect_address_protocol_2_0/#labview-indirect-address-protocol-20
       - title: "LabVIEW Ping Protocol 2.0"
         url: /software/dynamixel/dynamixel_sdk/sample_code/labview_ping_protocol_2_0/#labview-ping-protocol-20
       - title: "LabVIEW Broadcast Ping Protocol 2.0"
@@ -14600,8 +14615,8 @@ dynamixel_sdk:
         url: /software/dynamixel/dynamixel_sdk/api_reference/labview/labview_groupbulkread/#labview-groupbulkread
   - title: "Quick Start Video"
     url: /software/dynamixel/dynamixel_sdk/quick_start_video/#quick-start-video
-  - title: "Frequently Asked Questions(FAQ)"
-    url: /software/dynamixel/dynamixel_sdk/frequently_asked_questionsfaq/#frequently-asked-questionsfaq
+  - title: "FAQ"
+    url: /software/dynamixel/dynamixel_sdk/faq/#faq
 
 #Dynamixel Workbench sidebar
 dynamixel_workbench:

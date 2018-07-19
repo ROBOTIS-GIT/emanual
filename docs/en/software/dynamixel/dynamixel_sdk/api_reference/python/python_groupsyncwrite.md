@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: dynamixel_sdk_api_reference_python_groupsyncwrite
+ref: python_groupsyncwrite
 read_time: true
 share: true
 author_profile: false
@@ -11,13 +11,14 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
-<div style="counter-reset: h1 4"></div>
-<div style="counter-reset: h2 3"></div>
+<div style="counter-reset: h1 6"></div>
+<div style="counter-reset: h2 4"></div>
 <div style="counter-reset: h3 2"></div>
 
-# [API Reference](#api-reference)
-
-## [Python](#python)
+<!--[dummy Header 1]>
+  <h1 id="api-reference"><a href="#api-reference">API Reference</a></h1>
+  <h2 id="python"><a href="#python">Python</a></h2>
+<![end dummy Header 1]-->
 
 ### [Python GroupSyncWrite](#python-groupsyncwrite)
 

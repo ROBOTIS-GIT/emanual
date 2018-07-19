@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: dynamixel_sdk_library_setup_c_windows
+ref: c_windows
 read_time: true
 share: true
 author_profile: false
@@ -11,7 +11,7 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
-<div style="counter-reset: h1 2"></div>
+<div style="counter-reset: h1 3"></div>
 
 # [Library Setup](#library-setup)
 

@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: dynamixel_sdk_sample_code_cpp_dxl_monitor
+ref: cpp_dxl_monitor
 read_time: true
 share: true
 author_profile: false
@@ -11,10 +11,12 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
-<div style="counter-reset: h1 3"></div>
+<div style="counter-reset: h1 5"></div>
 <div style="counter-reset: h2 7"></div>
 
-# [Sample Code](#sample-code)
+<!--[dummy Header 1]>
+  <h1 id="sample-code"><a href="#sample-code">Sample Code</a></h1>
+<![end dummy Header 1]-->
 
 ## [CPP DXL Monitor](#cpp-dxl-monitor)
 
@@ -35,7 +37,7 @@ sidebar:
   All series using protocol 1.0 and 2.0
 
 
-#### Sample code
+### Sample code
 
 ``` cpp
 /*
