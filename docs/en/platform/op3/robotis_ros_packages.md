@@ -371,7 +371,7 @@ This chapter explains the module used for offset and gain adjustment.
   `/robotis/enable_ctrl_module`([std_msgs/String]{: .popup})  
   &emsp;&emsp; Message for changing a motion module of robotis_controller  
   `/robotis/sync_write_item`([robotis_controller_msgs/SyncWriteItem]{: .popup})  
-  &emsp;&emsp; Message for sync write with dynamixel in robotis_controller
+  &emsp;&emsp; Message for sync write with dynamixel in robotis_controller  
   `/robotis/enable_offset`([std_msgs/Bool]{: .popup})  
   &emsp;&emsp; Messages for turning on / off offsets in robotis_controller  
     
