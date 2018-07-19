@@ -31,6 +31,7 @@ sidebar:
 <!--
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/matlab/mac/library_file/a2.png)
 -->
+
 ### [Function Reference](#function-reference)
 
 * The function reference file is located in `[DynamixelSDK folder]/matlab/m_basic_function/`
@@ -43,6 +44,7 @@ sidebar:
 <!--
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/matlab/mac/library_file/1.png)
 -->
+
 ### [Building and Running the Sample Code](#building-and-running-the-sample-code)
 
 Dynamixel SDK example code for MATLAB uses the library files(.dylib for Mac) built in C language.
@@ -55,36 +57,44 @@ Each released Dynamixel SDK have latest library files in `[DynamixelSDK folder]/
 <!--
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/matlab/mac/sample_code/1.png)
 -->
+
 * Click `Add with Subfolders...`
 <!--
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/matlab/mac/sample_code/2.png)
 -->
+
 * Select `[DynamixelSDK folder]/c/include`
 <!--
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/matlab/mac/sample_code/3.png)
 -->
+
 * Click `Add Folder...`
 <!--
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/matlab/mac/sample_code/4.png)
 -->
+
 * Select `[DynamixelSDK folder]/c/build/mac`
 <!--
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/matlab/mac/sample_code/5.png)
 -->
+
 #### Import function reference
 
 * Click `Add with Subfolders...`
 <!--
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/matlab/mac/sample_code/6.png)
 -->
+
 * Select `[DynamixelSDK folder]/matlab`
 <!--
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/matlab/mac/sample_code/7.png)
 -->
+
 * Click `Save` and then `Close`
 <!--
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/matlab/mac/sample_code/8.png)
 -->
+
 #### Run example
 
 * Make the port be able to be used
@@ -95,22 +105,27 @@ Each released Dynamixel SDK have latest library files in `[DynamixelSDK folder]/
 <!--
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/matlab/mac/sample_code/16.png)
 -->
+
 * Click `Browse for folder`
 <!--
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/matlab/mac/sample_code/9.png)
 -->
+
 * Select `[DynamixelSDK folder]/matlab`
 <!--
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/matlab/mac/sample_code/10.png)
 -->
+
 * Double click `read_write.m`
 <!--
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/matlab/mac/sample_code/11.png)
 -->
+
 * Adjust the values surrounded with red circle to proper value as shown in the comment. Then click `Run` in the Eclipse toolbox above. 
 <!--
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/matlab/mac/sample_code/12.png)
 -->
+
 * Console window will show the results 
 <!--
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/matlab/mac/sample_code/13.png)

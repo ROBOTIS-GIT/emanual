@@ -70,7 +70,7 @@ The SDK was tested on a desktop PC and some common SBCs such as Raspberry Pi and
 |     - wheezy      |                      |                 |                    |      O       |        |                      |
 |     - jessie      |                      |                 |                    |      O       |        |                      |
 |   - jessie lite   |                      |                 |                    |      O       |        |                      |
-|    **Mac OSX**    |                      |                 |                    |              |        |                      |
+|      **macOS**    |                      |                 |                    |              |        |                      |
 |     - Sierra      |          O           |                 |                    |              |        |                      |
 
   > O: Test Successful  
