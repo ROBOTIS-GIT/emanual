@@ -14166,8 +14166,8 @@ dynamixel_sdk:
     children:
     - title: "Repository"
       url: /software/dynamixel/dynamixel_sdk/download/#repository
-    - title: "File System"
-      url: /software/dynamixel/dynamixel_sdk/download/#file-system
+    - title: "File Structure"
+      url: /software/dynamixel/dynamixel_sdk/download/#file-structure
   - title: "Device Setup"
     url: /software/dynamixel/dynamixel_sdk/device_setup/controller/#device-setup
     children:
