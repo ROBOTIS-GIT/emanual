@@ -362,7 +362,7 @@ All libraries of Dynamixel SDK are linked with the header file `dynamixel_sdk.h`
 #define ADDR_PRO_PRESENT_POSITION       611
 ```
 
-Dynamixel series have their own control tables: Addresses and Byte Length in each items. To control one of the items, its address (and length if necessary) is required. Find your requirements in http://support.robotis.com/.
+Dynamixel series have their own control tables: Addresses and Byte Length in each items. To control one of the items, its address (and length if necessary) is required. Find your requirements in http://emanual.robotis.com/.
 
 ```c
 // Protocol version

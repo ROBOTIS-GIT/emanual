@@ -417,7 +417,7 @@ public const int LEN_PRO_INDIRECTDATA_FOR_WRITE          = 5;
 public const int LEN_PRO_INDIRECTDATA_FOR_READ           = 5;
 ```
 
-Dynamixel series have their own control tables: Addresses and Byte Length in each items. To control one of the items, its address (and length if necessary) is required. Find your requirements in http://support.robotis.com/.
+Dynamixel series have their own control tables: Addresses and Byte Length in each items. To control one of the items, its address (and length if necessary) is required. Find your requirements in http://emanual.robotis.com/.
 
 ``` cs
 // Protocol version

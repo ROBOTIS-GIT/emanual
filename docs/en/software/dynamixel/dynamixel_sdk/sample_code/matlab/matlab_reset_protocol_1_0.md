@@ -220,7 +220,7 @@ This example uses dynamixel library imported by `loadlibrary()`.
 ADDR_MX_BAUDRATE                = 4;            % Control table address is different in Dynamixel model
 ```
 
-Dynamixel series have their own control tables: Addresses and Byte Length in each items. To control one of the items, its address (and length if necessary) is required. Find your requirements in http://support.robotis.com/.
+Dynamixel series have their own control tables: Addresses and Byte Length in each items. To control one of the items, its address (and length if necessary) is required. Find your requirements in http://emanual.robotis.com/.
 
 ``` m
 % Protocol version

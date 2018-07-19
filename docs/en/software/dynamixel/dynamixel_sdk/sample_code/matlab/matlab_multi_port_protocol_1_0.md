@@ -268,7 +268,7 @@ ADDR_MX_GOAL_POSITION       = 30;
 ADDR_MX_PRESENT_POSITION    = 36;
 ```
 
-Dynamixel series have their own control tables: Addresses and Byte Length in each items. To control one of the items, its address (and length if necessary) is required. Find your requirements in http://support.robotis.com/.
+Dynamixel series have their own control tables: Addresses and Byte Length in each items. To control one of the items, its address (and length if necessary) is required. Find your requirements in http://emanual.robotis.com/.
 
 ``` m
 % Protocol version

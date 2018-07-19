@@ -320,7 +320,7 @@ short LEN_PRO_GOAL_POSITION         = 4;
 short LEN_PRO_PRESENT_POSITION      = 4;
 ```
 
-Dynamixel series have their own control tables: Addresses and Byte Length in each items. To control one of the items, its address (and length if necessary) is required. Find your requirements in http://support.robotis.com/.
+Dynamixel series have their own control tables: Addresses and Byte Length in each items. To control one of the items, its address (and length if necessary) is required. Find your requirements in http://emanual.robotis.com/.
 
 ``` java
 // Protocol version
