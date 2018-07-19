@@ -71,10 +71,8 @@ To run the SDK examples, the following Dynamixel parameters need to be changed:
 * ID = 1 (and 2, when the example uses two Dynamixels) 
 * Baud Rate = 57600 bps (baud value = 34 for MX, 1 for PRO.)
 
-To change Dynamixel parameters, use Dynamixel Wizard, which is part of ROBOTIS [RoboPlus](http://www.robotis.us/roboplus2/) suite of software.
+To change Dynamixel parameters, use [Dynamixel Wizard](http://emanual.robotis.com/docs/en/software/rplus1/dynamixel_wizard/#introduction) or [RoboPlus Manager](http://emanual.robotis.com/docs/en/software/rplus2/manager/).
 
 ![](/assets/images/sw/sdk/dynamixel_sdk/device_setup/dynamixel_setting/3.png)
 
 ![](/assets/images/sw/sdk/dynamixel_sdk/device_setup/dynamixel_setting/4.png)
-
-Instructions on how to utilize Dynamixel Wizard are uploaded on the [e-manual](http://emanual.robotis.com/docs/en/software/rplus2/manager/)

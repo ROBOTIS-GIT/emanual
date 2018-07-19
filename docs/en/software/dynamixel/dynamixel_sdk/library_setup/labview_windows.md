@@ -24,7 +24,7 @@ sidebar:
 
 ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/labview/labview_logo.png)
 
-* [Download LabVIEW for Windows](http://www.ni.com/download-labview/#)
+* [Download LabVIEW for Windows](http://www.ni.com/download-labview/)
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/labview/windows/library_file/a1.png)
 
