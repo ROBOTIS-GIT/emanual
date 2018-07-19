@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: dynamixel_sdk_hardware_setup_dynamixel
+ref: dynamixel
 read_time: true
 share: true
 author_profile: false
@@ -11,12 +11,14 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
+<div style="counter-reset: h1 3"></div>
 <div style="counter-reset: h2 1"></div>
-<div style="counter-reset: h1 1"></div>
 
-# [Device Setup](#device-setup)
+<!--[dummy Header 1]>
+  <h1 id="device-setup"><a href="#device-setup">Device Setup</a></h1>
+<![end dummy Header 1]-->
 
-## <a name="dynamixel"></a>[Dynamixel](#dynamixel)
+## [Dynamixel](#dynamixel)
 
 ![](/assets/images/sw/sdk/dynamixel_sdk/device_setup/dynamixel_image.jpg)
 
@@ -50,7 +52,7 @@ SDK examples were tested with the following Dynamixels:
 **NOTE** : The BulkRead function doesn't work with the AX, EX, or RX series
 {: .notice}
 
-### Power Requirements
+## [Power Requirements](#power-requirements)
 
 * 12V for MX (also AX, EX, RX, and X series)
 

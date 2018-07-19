@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: dynamixel_sdk_sample_code_cpp_sync_write_protocol_1_0
+ref: cpp_sync_write_protocol_1_0
 read_time: true
 share: true
 author_profile: false
@@ -11,13 +11,14 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
-<div style="counter-reset: h1 3"></div>
-<div style="counter-reset: h2 4"></div>
+<div style="counter-reset: h1 5"></div>
+<div style="counter-reset: h2 5"></div>
 <div style="counter-reset: h3 2"></div>
 
-# [Sample Code](#sample-code)
-
-## [CPP Protocol 1.0](#cpp-protocol-10)
+<!--[dummy Header 1]>
+  <h1 id="sample-code"><a href="#sample-code">Sample Code</a></h1>
+  <h2 id="cpp-protocol-10"><a href="#cpp-protocol-10">CPP Protocol 1.0</a></h2>
+<![end dummy Header 1]-->
 
 ### [CPP Sync Write Protocol 1.0](#cpp-sync-write-protocol-10)
 

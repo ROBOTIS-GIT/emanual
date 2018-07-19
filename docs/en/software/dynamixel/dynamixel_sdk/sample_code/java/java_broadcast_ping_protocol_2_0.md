@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: dynamixel_sdk_sample_code_java_broadcast_ping_protocol_2_0
+ref: java_broadcast_ping_protocol_2_0
 read_time: true
 share: true
 author_profile: false
@@ -11,26 +11,16 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
-<div style="counter-reset: h1 3"></div>
-<div style="counter-reset: h2 15"></div>
+<div style="counter-reset: h1 5"></div>
+<div style="counter-reset: h2 16"></div>
 <div style="counter-reset: h3 6"></div>
 
-# [Sample Code](#sample-code)
-
-## [Java Protocol 2.0](#python-protocol-20)
+<!--[dummy Header 1]>
+  <h1 id="sample-code"><a href="#sample-code">Sample Code</a></h1>
+  <h2 id="java-protocol-20"><a href="#java-protocol-20">Java Protocol 2.0</a></h2>
+<![end dummy Header 1]-->
 
 ### [Java Broadcast Ping Protocol 2.0](#java-broadcast-ping-protocol-20)
-
-- Description
-
-  This example tries to ping all Dynamixels that are connected to the controller, and shows which Dynamixel is successfully connected. The example is commonly used to check for Dynamixel’s connection at once.
-
-- Available Dynamixel
-
-  All series using protocol 2.0
-
-#### Sample code
-
 
 - Description
 

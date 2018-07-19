@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: dynamixel_sdk_sample_code_cpp_protocol_combined
+ref: cpp_protocol_combined
 read_time: true
 share: true
 author_profile: false
@@ -11,10 +11,12 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
-<div style="counter-reset: h1 3"></div>
+<div style="counter-reset: h1 5"></div>
 <div style="counter-reset: h2 6"></div>
 
-# [Sample Code](#sample-code)
+<!--[dummy Header 1]>
+  <h1 id="sample-code"><a href="#sample-code">Sample Code</a></h1>
+<![end dummy Header 1]-->
 
 ## [CPP Protocol Combined](#cpp-protocol-combined)
 
@@ -27,7 +29,7 @@ sidebar:
   All models using protocol 1.0 and 2.0
 
 
-#### Sample code
+### Sample code
 
 
 ``` cpp
@@ -320,7 +322,7 @@ int main()
 
 
 
-#### Details
+### Details
 
 ``` cpp
 #ifdef __linux__

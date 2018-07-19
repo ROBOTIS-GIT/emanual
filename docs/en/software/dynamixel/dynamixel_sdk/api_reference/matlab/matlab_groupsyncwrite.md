@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: dynamixel_sdk_api_reference_matlab_groupsyncwrite
+ref: matlab_groupsyncwrite
 read_time: true
 share: true
 author_profile: false
@@ -11,13 +11,14 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
-<div style="counter-reset: h1 4"></div>
-<div style="counter-reset: h2 5"></div>
+<div style="counter-reset: h1 6"></div>
+<div style="counter-reset: h2 6"></div>
 <div style="counter-reset: h3 2"></div>
 
-# [API Reference](#api-reference)
-
-## [Matlab](#matlab)
+<!--[dummy Header 1]>
+  <h1 id="api-reference"><a href="#api-reference">API Reference</a></h1>
+  <h2 id="matlab"><a href="#matlab">Matlab</a></h2>
+<![end dummy Header 1]-->
 
 ### [Matlab GroupSyncWrite](#matlab-groupsyncwrite)
 

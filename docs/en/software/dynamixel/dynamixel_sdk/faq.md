@@ -1,19 +1,19 @@
 ---
 layout: archive
 lang: en
-ref: dynamixel_sdk_frequently_asked_questionsfaq
+ref: faq
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/software/dynamixel/dynamixel_sdk/frequently_asked_questionsfaq/
+permalink: /docs/en/software/dynamixel/dynamixel_sdk/faq/
 sidebar:
   title: DynamixelSDK
   nav: "dynamixel_sdk"
 ---
 
-<div style="counter-reset: h1 6"></div>
+<div style="counter-reset: h1 7"></div>
 
-# [Frequently Asked Questions(FAQ)](#frequently-asked-questionsfaq)
+# [FAQ](#faq)
 
 ## Difference between the read write example, the sync read write example, the bulk read write example, and the Indirect Address example
 
@@ -40,3 +40,8 @@ While using **Normal Read and Write control** or **Sync Read and Write control**
 
 ### Indirect Address control (is available only in Dynamixel PRO and X series but its very useful!)
 To control multiple items in multiple dynamixel, and when you want to use **Sync Read and Write control** rather than **Bulk Read and Write control**, use this. Copy the buffer of targeted items to another address on the memory using **Normal Read and Write control**, then **Sync Read and Write control** them.
+
+## Questions?
+- Any questions related with Dynamixel SDK are always welcomed. Just let me know at: ISSUES
+- For the other questions, including Hardware-wise problems on your Dynamixels, please contact to support@robotis.com
+- Ask our developer community on the [RobotSource](https://community.robotsource.org/).

@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: dynamixel_sdk_sample_code_python_reset_protocol_1_0
+ref: python_reset_protocol_1_0
 read_time: true
 share: true
 author_profile: false
@@ -11,13 +11,14 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
-<div style="counter-reset: h1 3"></div>
-<div style="counter-reset: h2 11"></div>
+<div style="counter-reset: h1 5"></div>
+<div style="counter-reset: h2 12"></div>
 <div style="counter-reset: h3 5"></div>
 
-# [Sample Code](#sample-code)
-
-## [Python Protocol 1.0](#python-protocol-10)
+<!--[dummy Header 1]>
+  <h1 id="sample-code"><a href="#sample-code">Sample Code</a></h1>
+  <h2 id="python-protocol-10"><a href="#python-protocol-10">Python Protocol 1.0</a></h2>
+<![end dummy Header 1]-->
 
 ### [Python Reset Protocol 1.0](#python-reset-protocol-10)
 

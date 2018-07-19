@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: dynamixel_sdk_quickstart
+ref: quick_start_video
 read_time: true
 share: true
 author_profile: false
@@ -11,7 +11,7 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
-<div style="counter-reset: h1 5"></div>
+<div style="counter-reset: h1 6"></div>
 
 # [Quick Start Video](#quick-start-video)
 

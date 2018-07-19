@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: dynamixel_sdk_sample_code_cpp_ping_protocol_2_0
+ref: cpp_ping_protocol_2_0
 read_time: true
 share: true
 author_profile: false
@@ -11,13 +11,14 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
-<div style="counter-reset: h1 3"></div>
-<div style="counter-reset: h2 5"></div>
+<div style="counter-reset: h1 5"></div>
+<div style="counter-reset: h2 6"></div>
 <div style="counter-reset: h3 5"></div>
 
-# [Sample Code](#sample-code)
-
-## [CPP Protocol 2.0](#cpp-protocol-20)
+<!--[dummy Header 1]>
+  <h1 id="sample-code"><a href="#sample-code">Sample Code</a></h1>
+  <h2 id="cpp-protocol-20"><a href="#cpp-protocol-20">CPP Protocol 2.0</a></h2>
+<![end dummy Header 1]-->
 
 ### [CPP Ping Protocol 2.0](#cpp-ping-protocol-20)
 

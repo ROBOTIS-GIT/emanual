@@ -11,7 +11,7 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
-<div style="counter-reset: h1 1"></div>
+<div style="counter-reset: h1 2"></div>
 
 # [Device Setup](#device-setup)
 
@@ -19,7 +19,7 @@ sidebar:
 
 To use the Dynamixel SDK, you need to set up the [Controller](#controller) and [Dynamixel](http://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_sdk/device_setup/dynamixel/#device-setup).
 
-## <a name="controller"></a>[Controller](#controller)
+## [Controller](#controller)
 
 ### [Signal Interface](#signal-interface)
 Dynamixels communicate at one of the following signal levels: 
@@ -92,7 +92,7 @@ and also in MCU:
 **NOTE** : The FTDI driver may not be compatible with some devices.
 {: .notice}
 
-#### <a name="installation-in-windows"></a>[Installation in Windows](#installation-in-windows)
+#### [Installation in Windows](#installation-in-windows)
 
 If you installed ROBOTIS RoboPlus software - a suite of software that allows you to easily interface with all of ROBOTIS’ hardware, including ROBOTIS controllers, Dynamixels, sensors, and other hardware components - the FTDI driver will be automatically installed. 
 
@@ -116,6 +116,6 @@ b. If you don't want to install RoboPlus, install the latest VCP driver from the
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/device_setup/ftdi_driver_install/ln101_driverinstall_06.png)
 
-#### <a name="installation-in-linux"></a>[Installation in Linux](#installation-in-linux)
+#### [Installation in Linux](#installation-in-linux)
 
 Recent Linux releases include the kernel which contains the FT232RL driver for the FTDI driver used by USB2Dynamixel. **Hence, most users won't need to install the driver manually.**
