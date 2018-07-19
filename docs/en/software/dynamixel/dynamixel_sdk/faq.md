@@ -17,7 +17,7 @@ sidebar:
 
 ## Difference between the read write example, the sync read write example, the bulk read write example, and the Indirect Address example
 
-For systematical description or the details of communication method in the Dynamixel, visit [http://support.robotis.com/en/](http://support.robotis.com/en/) /Product Information/Actuator/Communication X.0/
+For systematical description or the details of communication method in the Dynamixel, check [Protocol 1.0](http://emanual.robotis.com/docs/en/dxl/protocol1/) and [Protocol 2.0](http://emanual.robotis.com/docs/en/dxl/protocol2/)
 
 ### Normal Read and Write controls only one Dynamixel
 
@@ -42,6 +42,6 @@ While using **Normal Read and Write control** or **Sync Read and Write control**
 To control multiple items in multiple dynamixel, and when you want to use **Sync Read and Write control** rather than **Bulk Read and Write control**, use this. Copy the buffer of targeted items to another address on the memory using **Normal Read and Write control**, then **Sync Read and Write control** them.
 
 ## Questions?
-- Any questions related with Dynamixel SDK are always welcomed. Just let me know at: ISSUES
-- For the other questions, including Hardware-wise problems on your Dynamixels, please contact to support@robotis.com
-- Ask our developer community on the [RobotSource](https://community.robotsource.org/).
+- Any **questions** related with Dynamixel SDK are always welcomed. Just let me know at [ISSUES](https://github.com/ROBOTIS-GIT/DynamixelSDK/issues)
+- For the other questions, including **Hardware-wise problems** on your Dynamixels, please contact to support@robotis.com
+- Join our **developer community** on the [RobotSource](https://community.robotsource.org/).
