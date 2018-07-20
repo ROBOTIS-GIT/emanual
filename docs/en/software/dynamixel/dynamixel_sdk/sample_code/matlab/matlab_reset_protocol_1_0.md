@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: dynamixel_sdk_sample_code_matlab_reset_protocol_1_0
+ref: matlab_reset_protocol_1_0
 read_time: true
 share: true
 author_profile: false
@@ -11,13 +11,14 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
-<div style="counter-reset: h1 3"></div>
-<div style="counter-reset: h2 17"></div>
+<div style="counter-reset: h1 5"></div>
+<div style="counter-reset: h2 18"></div>
 <div style="counter-reset: h3 5"></div>
 
-# [Sample Code](#sample-code)
-
-## [MATLAB Protocol 1.0](#matlab-protocol-10)
+<!--[dummy Header 1]>
+  <h1 id="sample-code"><a href="#sample-code">Sample Code</a></h1>
+  <h2 id="matlab-protocol-10"><a href="#matlab-protocol-10">MATLAB Protocol 1.0</a></h2>
+<![end dummy Header 1]-->
 
 ### [Matlab Reset Protocol 1.0](#matlab-reset-protocol-10)
 
@@ -219,7 +220,7 @@ This example uses dynamixel library imported by `loadlibrary()`.
 ADDR_MX_BAUDRATE                = 4;            % Control table address is different in Dynamixel model
 ```
 
-Dynamixel series have their own control tables: Addresses and Byte Length in each items. To control one of the items, its address (and length if necessary) is required. Find your requirements in http://support.robotis.com/.
+Dynamixel series have their own control tables: Addresses and Byte Length in each items. To control one of the items, its address (and length if necessary) is required. Find your requirements in http://emanual.robotis.com/.
 
 ``` m
 % Protocol version

@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: dynamixel_sdk_sample_code_c_reset_protocol_1_0
+ref: c_reset_protocol_1_0
 read_time: true
 share: true
 author_profile: false
@@ -11,12 +11,14 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
-<div style="counter-reset: h1 3"></div>
+<div style="counter-reset: h1 5"></div>
+<div style="counter-reset: h2 1"></div>
 <div style="counter-reset: h3 5"></div>
 
-# [Sample Code](#sample-code)
-
-## [C Protocol 1.0](#c-protocol-10)
+<!--[dummy Header 1]>
+  <h1 id="sample-code"><a href="#sample-code">Sample Code</a></h1>
+  <h2 id="c-protocol-10"><a href="#c-protocol-10">C Protocol 1.0</a></h2>
+<![end dummy Header 1]-->
 
 ### [C Reset Protocol 1.0](#c-reset-protocol-10)
 
@@ -318,7 +320,7 @@ All libraries of Dynamixel SDK are linked with the header file `dynamixel_sdk.h`
 #define ADDR_MX_BAUDRATE                4                   // Control table address is different in Dynamixel model
 ```
 
-Dynamixel series have their own control tables: Addresses and Byte Length in each items. To control one of the items, its address (and length if necessary) is required. Find your requirements in http://support.robotis.com/.
+Dynamixel series have their own control tables: Addresses and Byte Length in each items. To control one of the items, its address (and length if necessary) is required. Find your requirements in http://emanual.robotis.com/.
 
 ```c
 // Protocol version

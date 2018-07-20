@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: dynamixel_sdk_api_reference_c_groupsyncwrite
+ref: c_groupsyncwrite
 read_time: true
 share: true
 author_profile: false
@@ -11,12 +11,14 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
-<div style="counter-reset: h1 4"></div>
+<div style="counter-reset: h1 6"></div>
+<div style="counter-reset: h2 1"></div>
 <div style="counter-reset: h3 7"></div>
 
-# [API Reference](#api-reference)
-
-## [C](#c)
+<!--[dummy Header 1]>
+  <h1 id="api-reference"><a href="#api-reference">API Reference</a></h1>
+  <h2 id="c"><a href="#c">C</a></h2>
+<![end dummy Header 1]-->
 
 ### [C GroupSyncWrite](#c-groupsyncwrite)
 
@@ -44,7 +46,7 @@ sidebar:
   None
 
 #### Method References
-----------------------------------------------
+
 ##### groupSyncWrite
 - Syntax
 ``` cpp

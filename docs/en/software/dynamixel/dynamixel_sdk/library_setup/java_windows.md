@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: dynamixel_sdk_library_setup_java_windows
+ref: java_windows
 read_time: true
 share: true
 author_profile: false
@@ -11,10 +11,12 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
+<div style="counter-reset: h1 4"></div>
 <div style="counter-reset: h2 10"></div>
-<div style="counter-reset: h1 2"></div>
 
-# [Library Setup](#library-setup)
+<!--[dummy Header 1]>
+  <h1 id="library-setup"><a href="#library-setup">Library Setup</a></h1>
+<![end dummy Header 1]-->
 
 ## [Java Windows](#java-windows)
 
@@ -68,7 +70,7 @@ The Dynamixel SDK example code for Java uses the library files(.dll for Windows)
 
 Each released Dynamixel SDK have latest library files in `[DynamixelSDK folder]/c/build/[winXX]/output/dxl_xYY_c.dll` which were built by its own source code.
 
-#### 2.1 Make Java Project
+#### Make Java Project
 
 * Set workspace 
 
@@ -86,7 +88,7 @@ Each released Dynamixel SDK have latest library files in `[DynamixelSDK folder]/
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/java/windows/sample_code/5.png)
 
-#### 2.2 Import function reference
+#### Import function reference
 
 * Click `Link Additional Source to Project`
 
@@ -105,7 +107,7 @@ Each released Dynamixel SDK have latest library files in `[DynamixelSDK folder]/
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/java/windows/sample_code/9.png)
 
 
-##### 2.3 Import DynamixelSDK library
+##### Import DynamixelSDK library
 
 * Click `Link Additional Source to Project`
 
@@ -124,7 +126,7 @@ Each released Dynamixel SDK have latest library files in `[DynamixelSDK folder]/
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/java/windows/sample_code/13.png)
 
-#### 2.4 Import JNA
+#### Import JNA
 
 * Go to Libraries on the screen. 
 
@@ -142,7 +144,7 @@ Each released Dynamixel SDK have latest library files in `[DynamixelSDK folder]/
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/java/windows/sample_code/17.png)
 
-#### 3. Run example
+#### Run example
 
 * Put `ReadWrite.java` source into the folder `src` on the screen
 

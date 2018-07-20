@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: dynamixel_sdk_sample_code_python_bulk_read_protocol_1_0
+ref: python_bulk_read_protocol_1_0
 read_time: true
 share: true
 author_profile: false
@@ -11,13 +11,14 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
-<div style="counter-reset: h1 3"></div>
-<div style="counter-reset: h2 11"></div>
+<div style="counter-reset: h1 5"></div>
+<div style="counter-reset: h2 12"></div>
 <div style="counter-reset: h3 3"></div>
 
-# [Sample Code](#sample-code)
-
-## [Python Protocol 1.0](#python-protocol-10)
+<!--[dummy Header 1]>
+  <h1 id="sample-code"><a href="#sample-code">Sample Code</a></h1>
+  <h2 id="python-protocol-10"><a href="#python-protocol-10">Python Protocol 1.0</a></h2>
+<![end dummy Header 1]-->
 
 ### [Python Bulk Read Protocol 1.0](#python-bulk-read-protocol-10)
 
@@ -264,7 +265,7 @@ LEN_MX_PRESENT_POSITION     = 2
 LEN_MX_MOVING               = 1
 ```
 
-Dynamixel series have their own control tables: Addresses and Byte Length in each items. To control one of the items, its address (and length if necessary) is required. Find your requirements in http://support.robotis.com/.
+Dynamixel series have their own control tables: Addresses and Byte Length in each items. To control one of the items, its address (and length if necessary) is required. Find your requirements in http://emanual.robotis.com/.
 
 ```python
 # Protocol version

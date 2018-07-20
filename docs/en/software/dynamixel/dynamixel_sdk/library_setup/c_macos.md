@@ -1,22 +1,24 @@
 ---
 layout: archive
 lang: en
-ref: dynamixel_sdk_library_setup_c_macosx
+ref: c_macos
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/software/dynamixel/dynamixel_sdk/library_setup/c_macosx/
+permalink: /docs/en/software/dynamixel/dynamixel_sdk/library_setup/c_macos/
 sidebar:
   title: DynamixelSDK
   nav: "dynamixel_sdk"
 ---
 
+<div style="counter-reset: h1 4"></div>
 <div style="counter-reset: h2 2"></div>
-<div style="counter-reset: h1 2"></div>
 
-# [Library Setup](#library-setup)
+<!--[dummy Header 1]>
+  <h1 id="library-setup"><a href="#library-setup">Library Setup</a></h1>
+<![end dummy Header 1]-->
 
-## [C MacOSX](#c-macosx)
+## [C macOS](#c-macos)
 
 ### [Compiler and Builder](#compiler-and-builder)
 
