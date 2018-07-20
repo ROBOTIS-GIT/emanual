@@ -625,32 +625,33 @@ $ roslaunch op3_tuner_client op3_tuner.launch
  
 #### `op3_tuning_module` configuration files  
 - data/`offset.yaml` : Offset data is saved  
-- data/`tune_pose.yaml` : offset adjusting posture information and gain tuning posture information are saved  
-   ```
-   - init_pose  
-     - move_time  
-     - target_pose  
-       - joint_name : angle(degree)  
-       - ...  
-  
-   - tune_pose_01  
-     - move_time : [time, time, ...]  
-     - target_pose : [pose_name, pose_name, ...]  
-   - tune_pose_02  
-     - move_time : [time, time, ...]  
-     - target_pose : [pose_name, pose_name, ...]  
-   - tune_pose_03  
-     - move_time : [time, time, ...]  
-     - target_pose : [pose_name, pose_name, ...]    
-   - tune_pose_04  
-     - move_time : [time, time, ...]   
-     - target_pose : [pose_name, pose_name, ...]  
- 
-   - pose_data  
-     - pose_name  
-       - joint_name : angle(degree)  
-       - ...  
-   ```
+- data/`tune_pose.yaml` : offset adjusting posture information and gain tuning posture information are saved
+
+  ```
+  - init_pose  
+   - move_time  
+   - target_pose  
+     - joint_name : angle(degree)  
+     - ...  
+
+  - tune_pose_01  
+   - move_time : [time, time, ...]  
+   - target_pose : [pose_name, pose_name, ...]  
+  - tune_pose_02  
+   - move_time : [time, time, ...]  
+   - target_pose : [pose_name, pose_name, ...]  
+  - tune_pose_03  
+   - move_time : [time, time, ...]  
+   - target_pose : [pose_name, pose_name, ...]    
+  - tune_pose_04  
+   - move_time : [time, time, ...]   
+   - target_pose : [pose_name, pose_name, ...]  
+
+  - pose_data  
+   - pose_name  
+     - joint_name : angle(degree)  
+     - ...  
+  ```
 
 #### `op3_tuner_client` configuration file  
 - config/`joint_data.yaml` : GUI menu configuration file  
@@ -673,7 +674,8 @@ $ roslaunch op3_tuner_client op3_tuner.launch
 (If you want to tune other joint, delete topics and add topics that you want to tune)    
 5. Click the `Save Gain` button for saving to file.  
 
-  > Reference : Order of the joint name in the topic(`/robotis/goal_joint_states`)  
+  > Reference : Order of the joint name in the topic(`/robotis/goal_joint_states`)
+  
   ```
   0 : haed_pan  
   1 : haed_tilt  
@@ -696,7 +698,9 @@ $ roslaunch op3_tuner_client op3_tuner.launch
   18 : r_sho_pitch  
   19 : r_sho_roll   
   ```
+  
   > If you want to check in your hand, type like the belows
+  
   ```
   $ rostopic echo /robotis/goal_joint_states -n 1
   ```
