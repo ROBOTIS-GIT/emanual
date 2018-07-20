@@ -568,7 +568,7 @@ This page explains how to control upgraded walking(online walking).
 `deprecated`    
 This chapter has been merged into [How to use tuner client](#how-to-use-tuner-client)  
 {% endcapture %}  
-<div class=notice”>{{ deprecated_offset_tuner | markdownify }}</div> 
+<div class="notice">{{ deprecated_offset_tuner | markdownify }}</div> 
 
 > Reference : [op3_offset_tuner_server]  
 > Reference : [op3_offset_tuner_client]
