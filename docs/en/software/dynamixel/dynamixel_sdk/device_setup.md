@@ -1,11 +1,11 @@
 ---
 layout: archive
 lang: en
-ref: dynamixel_sdk_device_setup_controller
+ref: dynamixel_sdk_device_setup
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/software/dynamixel/dynamixel_sdk/device_setup/controller/
+permalink: /docs/en/software/dynamixel/dynamixel_sdk/device_setup/
 sidebar:
   title: DynamixelSDK
   nav: "dynamixel_sdk"
@@ -17,7 +17,7 @@ sidebar:
 
 ![](/assets/images/sw/sdk/dynamixel_sdk/device_setup/connection.png)
 
-To use the Dynamixel SDK, you need to set up the [Controller](#controller) and [Dynamixel](http://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_sdk/device_setup/dynamixel/#device-setup).
+To use the Dynamixel SDK, you need to set up the [Controller](#controller) and [Dynamixel](#dynamixel).
 
 ## [Controller](#controller)
 
@@ -119,3 +119,62 @@ b. If you don't want to install RoboPlus, install the latest VCP driver from the
 #### [Installation in Linux](#installation-in-linux)
 
 Recent Linux releases include the kernel which contains the FT232RL driver for the FTDI driver used by USB2Dynamixel. **Hence, most users won't need to install the driver manually.**
+
+## [Dynamixel](#dynamixel)
+
+![](/assets/images/sw/sdk/dynamixel_sdk/device_setup/dynamixel_image.jpg)
+
+The SDK and SDK examples were developed based on the MX-28 and H54-200 PRO Dynamixels. 
+
+SDK examples were tested with the following Dynamixels: 
+
+|              | AX  | EX  | RX  | MX  | MX  |  X  |  X  | PRO |
+|:------------:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+| **Protocol** | 1.0 | 1.0 | 1.0 | 1.0 | 2.0 | 1.0 | 2.0 | 2.0 |
+|              |     |     |     |     |     |     |     |     |
+|  **Series**  |     |     |     |     |     |     |     |     |
+|      12      |  O  |  -  |  -  |     |     |  -  |  -  |  -  |
+|      18      |     |  -  |  -  |     |     |  -  |  -  |  -  |
+|      24      |  -  |  -  |  O  |  O  |  O  |  -  |  -  |  -  |
+|      28      |  -  |  -  |  O  |  O  |  O  |  -  |  -  |  -  |
+|      64      |  -  |  -  |  O  |  O  |  O  |  -  |  -  |  -  |
+|     106      |  -  |  O  |  -  |  O  |  O  |  -  |  -  |  -  |
+|     320      |  -  |  -  |  -  |  -  |  -  |  -  |  O  |  -  |
+|     430      |  -  |  -  |  -  |  -  |  -  |  O  |  O  |  -  |
+|     540      |  -  |  -  |  -  |  -  |  -  |  O  |  O  |  -  |
+|              |     |     |     |     |     |     |     |     |
+|      42      |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  O  |
+|      54      |  -  |  -  |  -  |  -  |  -  |  -  |  -  |  O  |
+
+> O : Compatible  
+> X : Incompatible  
+> -- : Doesn't exist  
+> blank : Not tested yet
+
+**NOTE** : The BulkRead function doesn't work with the AX, EX, or RX series
+{: .notice}
+
+### [Power Requirements](#power-requirements)
+
+* 12V for MX (also AX, EX, RX, and X series)
+
+  ![](/assets/images/sw/sdk/dynamixel_sdk/device_setup/dynamixel_setting/1.png)
+
+* 24V for PRO 
+
+  ![](/assets/images/sw/sdk/dynamixel_sdk/device_setup/dynamixel_setting/2.png)
+
+**NOTE** : The X series' 4P connector is not compatible with the USB2Dynamixel connector.
+{: .notice}
+
+### [Dynamixel Parameters](#dynamixel-parameters)
+
+To run the SDK examples, the following Dynamixel parameters need to be changed: 
+* ID = 1 (and 2, when the example uses two Dynamixels) 
+* Baud Rate = 57600 bps (baud value = 34 for MX, 1 for PRO.)
+
+To change Dynamixel parameters, use [Dynamixel Wizard](http://emanual.robotis.com/docs/en/software/rplus1/dynamixel_wizard/#introduction) or [RoboPlus Manager](http://emanual.robotis.com/docs/en/software/rplus2/manager/).
+
+![](/assets/images/sw/sdk/dynamixel_sdk/device_setup/dynamixel_setting/3.png)
+
+![](/assets/images/sw/sdk/dynamixel_sdk/device_setup/dynamixel_setting/4.png)
