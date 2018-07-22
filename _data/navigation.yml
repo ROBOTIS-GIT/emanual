@@ -11785,6 +11785,8 @@ turtlebot3:
   - title: "Machine Learning"
     url: /platform/turtlebot3/machine_learning/#machine-learning
     children:
+    - title: "Installation"
+      url: /platform/turtlebot3/machine_learning/#installation
     - title: "Step. 1 (No Obstacle)"
       url: /platform/turtlebot3/machine_learning/#step-1-no-obstacle
     - title: "Step. 2 (Static Obstacle)"
