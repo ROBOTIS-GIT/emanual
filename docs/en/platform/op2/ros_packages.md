@@ -28,7 +28,7 @@ Please refer to the link below for how to install Linux Mint:
 {: .notice--warning}
 
 
-## [ROS Installation](#ros-installation)
+## [ROS Install](#ros-install)
 
 Please refer to the link below for how to install ROS (Indigo Igloo):  
 > Reference : [Install of ROS Indigo]  
