@@ -136,8 +136,18 @@ $ rosrun wiimote teleop_wiimote
 
 ### [Android App](#android-app)
 
-Download [ROS Teleop][ros_teleop] and run the application.
+Download [ROS CONTROL][ros_control] and run the application.
 
+After connecting `roscore` to ROS_CONTROL app, enter `Topic` tab in `Preferences` to confiture topic name.
+
+![](/assets/images/platform/turtlebot3/example/ros_control.png)
+
+You are supposed to change topic name as `/cmd_vel` in Joystick Topic, `/scan` in LaserScan Topic,
+`/image_raw/compressed` in Image Topic and `/odom` in Odometry Topic.
+
+Then, you can check state of node and topic connection by `rqt_graph` commands
+
+![](/assets/images/platform/turtlebot3/example/ros_control_graph.png)
 
 ### [LEAP Motion](#leap-motion)
 
@@ -167,6 +177,6 @@ $ rosrun leap_motion sender.py
 [bringup]: /docs/en/platform/turtlebot3/bringup/#bringup
 [rc100]: /docs/en/parts/communication/rc-100/
 [bt410]: /docs/en/parts/communication/bt-410/
-[ros_teleop]: https://play.google.com/store/apps/details?id=com.github.rosjava.android_apps.teleop.indigo
+[ros_control]: https://play.google.com/store/apps/details?id=com.robotca.ControlApp
 [leap_setup]: https://www.leapmotion.com/setup
 [leap_sdk]: https://developer.leapmotion.com/get-started/
