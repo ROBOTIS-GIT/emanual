@@ -4715,6 +4715,10 @@ xl320:
     url: /dxl/x/xl320/#reference
     urlkr: /dxl/x/xl320/#참고자료
     children:
+      - title: "Connector Information"
+        titlekr: "커넥터 정보"
+        url: /dxl/x/xl320/#connector-information
+        urlkr: /dxl/x/xl320/#커넥터-정보
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/x/xl320/#drawings
