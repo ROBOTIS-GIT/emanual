@@ -4715,6 +4715,10 @@ xl320:
     url: /dxl/x/xl320/#reference
     urlkr: /dxl/x/xl320/#참고자료
     children:
+      - title: "Connector Information"
+        titlekr: "커넥터 정보"
+        url: /dxl/x/xl320/#connector-information
+        urlkr: /dxl/x/xl320/#커넥터-정보
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/x/xl320/#drawings
@@ -14149,7 +14153,7 @@ robotis_framework_packages:
 #DYNAMIXEL SDK sidebar
 dynamixel_sdk:
   - title: "Overview"
-    url: /software/dynamixel/dynamixel_sdk/overview/#overview
+    url: /software/dynamixel/dynamixel_sdk/overview/
     children:
     - title: "Dynamixel SDK"
       url: /software/dynamixel/dynamixel_sdk/overview/#dynamixel-sdk
@@ -14164,21 +14168,21 @@ dynamixel_sdk:
     - title: "Supported Languages"
       url: /software/dynamixel/dynamixel_sdk/overview/#supported-languages
   - title: "Download"
-    url: /software/dynamixel/dynamixel_sdk/download/#download
+    url: /software/dynamixel/dynamixel_sdk/download/
     children:
     - title: "Repository"
       url: /software/dynamixel/dynamixel_sdk/download/#repository
     - title: "File Structure"
       url: /software/dynamixel/dynamixel_sdk/download/#file-structure
   - title: "Device Setup"
-    url: /software/dynamixel/dynamixel_sdk/device_setup/controller/#device-setup
+    url: /software/dynamixel/dynamixel_sdk/device_setup/
     children:
     - title: "Controller"
-      url: /software/dynamixel/dynamixel_sdk/device_setup/controller/#controller
+      url: /software/dynamixel/dynamixel_sdk/device_setup/#controller
     - title: "Dynamixel"
-      url: /software/dynamixel/dynamixel_sdk/device_setup/dynamixel/#dynamixel
+      url: /software/dynamixel/dynamixel_sdk/device_setup/#dynamixel
   - title: "Library Setup"
-    url: /software/dynamixel/dynamixel_sdk/library_setup/c_windows/#library-setup
+    url: /software/dynamixel/dynamixel_sdk/library_setup/c_windows/
     children:
     - title: "C Windows"
       url: /software/dynamixel/dynamixel_sdk/library_setup/c_windows/#c-windows
@@ -14215,7 +14219,7 @@ dynamixel_sdk:
     - title: "LabVIEW Windows"
       url: /software/dynamixel/dynamixel_sdk/library_setup/labview_windows/#labview-windows
   - title: "Sample Code"
-    url: /software/dynamixel/dynamixel_sdk/sample_code/c_read_write_protocol_1_0/#sample-code
+    url: /software/dynamixel/dynamixel_sdk/sample_code/c_read_write_protocol_1_0/
     children:
     - title: "C Protocol 1.0"
       url: /software/dynamixel/dynamixel_sdk/sample_code/c_read_write_protocol_1_0/#c-protocol-10
@@ -14488,7 +14492,7 @@ dynamixel_sdk:
     - title: "LabVIEW Protocol Combined"
       url: /software/dynamixel/dynamixel_sdk/sample_code/labview_protocol_combined/#labview-protocol-combined
   - title: "API Reference"
-    url: /software/dynamixel/dynamixel_sdk/api_reference/c/c_porthandler/#api-reference
+    url: /software/dynamixel/dynamixel_sdk/api_reference/c/c_porthandler/
     children:
     - title: "C"
       url: /software/dynamixel/dynamixel_sdk/api_reference/c/c_porthandler/#c
@@ -14616,9 +14620,9 @@ dynamixel_sdk:
       - title: "LabVIEW GroupBulkRead"
         url: /software/dynamixel/dynamixel_sdk/api_reference/labview/labview_groupbulkread/#labview-groupbulkread
   - title: "Quick Start Video"
-    url: /software/dynamixel/dynamixel_sdk/quick_start_video/#quick-start-video
+    url: /software/dynamixel/dynamixel_sdk/quick_start_video/
   - title: "FAQ"
-    url: /software/dynamixel/dynamixel_sdk/faq/#faq
+    url: /software/dynamixel/dynamixel_sdk/faq/
 
 #Dynamixel Workbench sidebar
 dynamixel_workbench:

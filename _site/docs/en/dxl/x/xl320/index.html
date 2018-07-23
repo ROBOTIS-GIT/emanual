@@ -222,7 +222,7 @@ $(function() {
     </script>
     <script>
       window.onscroll = function () {
-        var offset = 64 - $(window).scrollTop();
+        var offset = 64 - window.pageYOffset;
         if(offset < 0) { offset = 0; }
         $(".sidebar__left").css("top", offset);       //sticky sidebar
         $(".extend_sidebar").css("top", offset);
@@ -3562,7 +3562,21 @@ $(function() {
           
             
               
-              <li><a id="#drawings" href="http://localhost:4000/docs/en/dxl/x/xl320/#drawings">3. 1. Drawings</a></li>
+              <li><a id="#connector-information" href="http://localhost:4000/docs/en/dxl/x/xl320/#connector-information">3. 1. Connector Information</a></li>
+            
+          
+
+          
+          
+        
+
+          
+
+          
+          
+            
+              
+              <li><a id="#drawings" href="http://localhost:4000/docs/en/dxl/x/xl320/#drawings">3. 2. Drawings</a></li>
             
           
 
@@ -4311,41 +4325,86 @@ If errors occur, in case of Alarm LED, the LED blinks; in case of Alarm Shutdown
 <table>
   <thead>
     <tr>
-      <th style="text-align: center">Bit</th>
+      <th style="text-align: center">Enabled Bit</th>
+      <th style="text-align: center">Decimal Value</th>
       <th style="text-align: center">Output Color</th>
     </tr>
   </thead>
   <tbody>
     <tr>
+      <td style="text-align: center">NONE</td>
       <td style="text-align: center">0</td>
+      <td style="text-align: center">OFF</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">0</td>
+      <td style="text-align: center">1</td>
       <td style="text-align: center">Red</td>
     </tr>
     <tr>
       <td style="text-align: center">1</td>
+      <td style="text-align: center">2</td>
       <td style="text-align: center">Green</td>
     </tr>
     <tr>
       <td style="text-align: center">2</td>
+      <td style="text-align: center">4</td>
       <td style="text-align: center">Blue</td>
     </tr>
     <tr>
       <td style="text-align: center">0 + 1</td>
+      <td style="text-align: center">3</td>
       <td style="text-align: center">Yellow</td>
     </tr>
     <tr>
       <td style="text-align: center">1 + 2</td>
+      <td style="text-align: center">6</td>
       <td style="text-align: center">Cyan</td>
     </tr>
     <tr>
       <td style="text-align: center">0 + 2</td>
+      <td style="text-align: center">5</td>
       <td style="text-align: center">Purple</td>
     </tr>
     <tr>
       <td style="text-align: center">0 + 1 + 2</td>
+      <td style="text-align: center">7</td>
       <td style="text-align: center">White</td>
     </tr>
   </tbody>
 </table>
+
+<div class="notice--info">
+<p><strong>NOTE</strong> : The LED indicates present status of the device.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Status</th>
+      <th style="text-align: center">LED Representation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">Booting</td>
+      <td style="text-align: center">Red LED flickers once</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Factory Reset</td>
+      <td style="text-align: center">Red LED flickers 4 times</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Alarm</td>
+      <td style="text-align: center">Red LED flickers</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Boot Mode</td>
+      <td style="text-align: center">Red LED On</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
 
 <h3 id="pid-gains27-28-29"><a name="p-gain"></a><a name="i-gain"></a><a name="d-gain"></a><strong>PID Gains(27, 28, 29)</strong></h3>
 <p>MX series will use the PID controller as a main control method.</p>
@@ -4571,9 +4630,50 @@ Data value is identical to the actual temperature in Celsius. For example, if th
 
 <p class="notice"><strong>NOTE</strong> : <a href="http://en.robotis.com/service/compatibility_table.php?cate=dxx">Compatibility Guide</a></p>
 
-<h2 id="drawings"><a href="#drawings">Drawings</a></h2>
+<h2 id="connector-information"><a href="#connector-information">Connector Information</a></h2>
 
-<p><img src="/assets/images/dxl/x/xl320_dimension.png" alt="" /></p>
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Item</th>
+      <th style="text-align: center">TTL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">Pinout</td>
+      <td style="text-align: center"><code class="highlighter-rouge">1</code> GND<br /><code class="highlighter-rouge">2</code> VDD<br /><code class="highlighter-rouge">3</code> DATA</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Diagram</td>
+      <td style="text-align: center"><img src="/assets/images/dxl/molex_532530370_diagram.png" alt="" /></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Housing</td>
+      <td style="text-align: center"><img src="/assets/images/dxl/molex_510650300.png" alt="" /><br /><a href="https://www.molex.com/molex/products/datasheet.jsp?part=active/0510650300_CRIMP_HOUSINGS.xml&amp;channel=Product">MOLEX 51065-0300</a></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">PCB Header</td>
+      <td style="text-align: center"><img src="/assets/images/dxl/molex_532530370.png" alt="" /><br /><a href="https://www.molex.com/molex/products/datasheet.jsp?part=active/0532530370_PCB_HEADERS.xml">MOLEX 53253-0370</a></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Crimp Terminal</td>
+      <td style="text-align: center"><a href="https://www.molex.com/molex/products/datasheet.jsp?part=active/0502128000_CRIMP_TERMINALS.xml">MOLEX 50212-8000</a></td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Wire Gauge</td>
+      <td style="text-align: center">24 AWG</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="drawings"><a href="#drawings">Drawings</a></h2>
+<ul>
+  <li><code class="highlighter-rouge">Download</code> <a href="http://www.robotis.com/service/download.php?no=150">XL-320.pdf</a></li>
+  <li><code class="highlighter-rouge">Download</code> <a href="http://www.robotis.com/service/download.php?no=149">XL-320.dwg</a></li>
+  <li><code class="highlighter-rouge">Download</code> <a href="http://www.robotis.com/service/download.php?no=151">XL-320.stp</a></li>
+  <li><code class="highlighter-rouge">Download</code> <a href="http://www.robotis.com/service/download.php?no=152">XL-320.iges</a></li>
+</ul>
 
 
   </div>
