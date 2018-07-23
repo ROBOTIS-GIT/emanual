@@ -136,7 +136,7 @@ $ rosrun wiimote teleop_wiimote
 
 ### [Android App](#android-app)
 
-Download [ROS Teleop][ros_teleop] and run the application.
+Download [ROS Teleop][ros_map_nav] and run the application.
 
 
 ### [LEAP Motion](#leap-motion)
@@ -167,6 +167,6 @@ $ rosrun leap_motion sender.py
 [bringup]: /docs/en/platform/turtlebot3/bringup/#bringup
 [rc100]: /docs/en/parts/communication/rc-100/
 [bt410]: /docs/en/parts/communication/bt-410/
-[ros_teleop]: https://play.google.com/store/apps/details?id=com.github.rosjava.android_apps.teleop.indigo
+[ros_map_nav]: https://play.google.com/store/apps/details?id=com.github.rosjava.android_apps.map_nav.kinetic 
 [leap_setup]: https://www.leapmotion.com/setup
 [leap_sdk]: https://developer.leapmotion.com/get-started/
