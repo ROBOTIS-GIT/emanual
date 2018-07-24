@@ -11,7 +11,7 @@ sidebar:
   nav: "op2"
 ---
 
-# [ROS Tutorials](#ros-tutorials)
+# [ROBOTIS-OP2 ROS Packages](#robotis-op2-ros-packages)
 
 ## [OS Install](#os-install)
 
@@ -28,7 +28,7 @@ Please refer to the link below for how to install Linux Mint:
 {: .notice--warning}
 
 
-## [ROS Installation](#ros-installation)
+## [ROS Install](#ros-install)
 
 Please refer to the link below for how to install ROS (Indigo Igloo):  
 > Reference : [Install of ROS Indigo]  

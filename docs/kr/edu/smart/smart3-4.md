@@ -39,7 +39,7 @@ sidebar:
 
 - 스마트 기기에 R+ SMARTIII 와 R+m.task2.0 를 설치해야 합니다.
 
-- 앱 설치가 완료되면 스마트III 1단계 키트에 포함된 제어기(CM-200)에 블루투스(BT-410)를 연결하고 R+SMARTIII에서 R+m.task2.0을 실행하여 예제를 다운로드 받습니다.
+- 앱 설치가 완료되면 스마트III 1단계 키트에 포함된 제어기([CM-200])에 블루투스([BT-410])를 연결하고 R+SMARTIII에서 R+m.task2.0을 실행하여 예제를 다운로드 받습니다.
 
   **[R+ SMARTIII 설치 및 예제 다운로드 방법 바로가기]**
 
@@ -84,6 +84,7 @@ sidebar:
 [R+ SMARTIII 설치 및 예제 다운로드 방법 바로가기]: /docs/kr/software/mobile_app/rplussmart/#r-smart-다운로드설치
 [4단계 교안예제]: #교안예제
 [태스크 코드 다운로드]: /docs/kr/faq/download_task_code/
+[CM-200]: /docs/kr/parts/controller/cm-200/
 [BT-410]: /docs/kr/parts/communication/bt-410/
 [01_smart3_L4_Factory_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/01_smart3_l4_factory_kr.tskx
 [03_smart3_L4_Factory_RC_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/03_smart3_l4_factory_rc_kr.tskx

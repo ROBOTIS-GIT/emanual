@@ -10696,7 +10696,25 @@ op2:
       url: /platform/op2/getting_started/#warranty
   - title: "Sub Controller(CM-740)"
     url: /platform/op2/getting_started/#sub-controllercm-740
-
+  - title: "ROS Packages"
+    url: /platform/op2/ros_package/#robotis-op2-ros-packages
+    children:
+    - title: "OS Install"
+      url: /platform/op2/ros_package/#os-install
+    - title: "ROS Install"
+      url: /platform/op2/ros_package/#ros-install
+    - title: "ROS packages for ROBOTIS-OP2"
+      url: /platform/op2/ros_package/#ros-packages-for-robotis-op2
+      children:
+      - title: "ROBOTIS-OP2 repository"
+        url: /platform/op2/ros_package/#robotis-op2-repository
+      - title: "ROBOTIS-OP2-Common repository"
+        url: /platform/op2/ros_package/#robotis-op2-common-repository
+      - title: "How to run GUI program"
+        url: /platform/op2/ros_package/#how-to-run-gui-program
+      - title: "How to use GUI program"
+        url: /platform/op2/ros_package/#how-to-use-gui-program
+        
 #ROBOTIS OP3 sidebar
 op3:
   - title: "Introduction"
