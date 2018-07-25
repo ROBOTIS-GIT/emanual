@@ -21,15 +21,20 @@ sidebar:
 
 We are preparing an online competition on [ROS Development Studio (RDS)][rds] with TurtleBot3 AutoRace and Task Mission using TurtleBot3 and OpenManipulator. You can participate free of charge in this online competition and learn about SLAM, Navigatin, Autonomous driving, Manipulation in a defined rule. Let's play each other in this online competition!
 
+- [ROS Development Studio Howto](https://www.youtube.com/playlist?list=PLK0b4e05LnzYGvX6EJN1gOQEl6aa3uyKS)
+
 #### TurtleBot3 AutoRace on RDS
 ![](/assets/images/platform/turtlebot3/competition/competition_autorace.png)
 
-- Coming soon!
+- [TurtleBot3 AutoRace](https://rds.theconstructsim.com/tc_projects/use_project_share_link/a29e0afd-c79b-4718-80ac-95fcdd7135c0)
 
 #### Task Mission using TurtleBot3 and OpenManipulator on RDS
 ![](/assets/images/platform/turtlebot3/competition/competition_pick_and_place.png)
 
-- Coming soon!
+- [Task Mission using TurtleBot3 and OpenManipulator](https://rds.theconstructsim.com/tc_projects/use_project_share_link/b345dbb4-c806-4822-919e-84b7cf00c8c0)
+
+If you need more information about it or you want to launch it in your remote PC, please visit [Manipulation](/docs/en/platform/turtlebot3/manipulation/#bringup) section.
+
 
 ### [ROS Development Studio (RDS)](#ros-development-studio-RDS)
 
