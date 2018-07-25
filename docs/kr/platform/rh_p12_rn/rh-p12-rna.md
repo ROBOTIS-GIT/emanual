@@ -61,8 +61,8 @@ sidebar:
 |  10  |       1        | [Drive Mode](#drive-mode)                   |   RW  |   0    |            0 ~ 1             | - |
 |  11  |       1        | [Operating Mode](#operating-mode)           |   RW  |   5    |            0, 5              | - |
 |  12  |       1        | [Sencondary ID](#secondary-id)              |   RW  |  255   |           0 ~ 255           | - |
-|  20  |       4        | [Homing Offset](#homing-offset)             |   RW  |   0    | -2,147,483,648 ~<br> 2,147,483,647 | 1 [pulse] |
-|  24  |       4        | [Moving Threshold](#moving-threshold)       |   RW  |   50   | -2,147,483,648 ~<br> 2,147,483,647 | 0.01 [rev/min] |
+|  20  |       4        | [Homing Offset](#homing-offset)             |   RW  |   0    |         0 ~ 1,150            | 1 [pulse] |
+|  24  |       4        | [Moving Threshold](#moving-threshold)       |   RW  |   80   |          0 ~ 2,970          | 0.01 [rev/min] |
 |  31  |       1        | [Temperature Limit](#temperature-limit)     |   RW  |   80   |           0 ~ 100            | 1 [℃] |
 |  32  |       2        | [Max Voltage Limit](#max-voltage-limit)     |   RW  |  350   |           0 ~ 350            | 0.1 [V] |
 |  34  |       2        | [Min Voltage Limit](#min-voltage-limit)     |   RW  |  150   |           0 ~ 350            | 0.1 [V] |
@@ -70,8 +70,8 @@ sidebar:
 |  38  |       2        | [Current Limit](#current-limit)             |   RW  |  1,984 |          0 ~ 1,984          | 1 [mA] |
 |  40  |       4        | [Acceleration Limit](#acceleration-limit)   |   RW  |  3,447 |          0 ~ 1,378,788      | 1 [rev/min²] |
 |  44  |       4        | [Velocity Limit](#velocity-limit)           |   RW  |  2,970 |          0 ~ 2,970          | 0.01 [rev/min] |
-|  48  |       4        | [Max Position Limit](#max-position-limit)   |   RW  |  1,150 |         0 ~ 1,150      | 1 [pulse] |
-|  52  |       4        | [Min Position Limit](#min-position-limit)   |   RW  |   0    |          0 ~ 1,150     | 1 [pulse] |
+|  48  |       4        | [Max Position Limit](#max-position-limit)   |   RW  |  1,150 |         0 ~ 1,150           | 1 [pulse] |
+|  52  |       4        | [Min Position Limit](#min-position-limit)   |   RW  |   0    |          0 ~ 1,150          | 1 [pulse] |
 |  57  |       1        | [External Port Mode 2](#external-port-mode) |   RW  |   3    |            0 ~ 3             | - |
 |  56  |       1        | [External Port Mode 1](#external-port-mode) |   RW  |   3    |            0 ~ 3             | - |
 |  58  |       1        | [External Port Mode 3](#external-port-mode) |   RW  |   3    |            0 ~ 3             | - |
@@ -181,6 +181,10 @@ Present Position = 실제 위치 + Homing offset(20) 이 됩니다.
 
 ### <a name="moving-threshold"></a>**[Moving Threshold(24)](#moving-threshold24)**
 {% include kr/dxl/pro-plus/control_table_24_moving_threshold.md %}
+
+| 단위           | 범위              |
+| :------------: | :---------------: |
+| 0.01 [rev/min] |     0 ~ 2,970     |
 
 ### <a name="temperature-limit"></a>**[Temperature Limit(31)](#temperature-limit31)**
 {% include kr/dxl/pro-plus/control_table_31_temperature_limit.md %}
