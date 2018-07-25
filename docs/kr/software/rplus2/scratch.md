@@ -123,7 +123,7 @@ ROBOTIS Virtual COM Port 를 선택한 후 다음을 클릭하여 설치를 완�
 
 수동으로 USB 드라이버를 설치하기 위한 방법은 [USB 드라이버 설치]{: .popup} 에서 확인 할 수 있습니다.
 
-[USB 드라이버 설치]: /docs/kr/faq/usb_driver_install/#usb-드라이버-설치
+[USB 드라이버 설치]: /docs/kr/faq/usb_driver_install/
 
 ## [추가 블록 직접 추가](#추가-블록-직접-추가)
 
@@ -136,7 +136,7 @@ ROBOTIS Virtual COM Port 를 선택한 후 다음을 클릭하여 설치를 완�
 1. 키보드의 “Shift” 키를 누른고 “파일” 메뉴를 클릭하면 그림과 같이 메뉴 제일 밑에 “import experimental HTTP extension” 메뉴가 표시됩니다. HTTP extension 메뉴를 클릭합니다.
 
     ![](/assets/images/sw/rplus2/scratch/r+scratch_14.jpg)
- 
+
 2. 도움말 보기를 클릭하여 나오는 폴더 경로를 복사하고
 
     ![](/assets/images/sw/rplus2/scratch/r+scratch_15.jpg)

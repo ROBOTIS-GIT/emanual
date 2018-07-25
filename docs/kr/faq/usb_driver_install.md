@@ -1,14 +1,5 @@
 ---
-layout: archive
-lang: kr
-ref: usb_driver_install
-read_time: true
-share: true
-author_profile: false
-permalink: /docs/kr/faq/usb_driver_install/
-sidebar:
-  title: USB 드라이버 설치
-  nav: "usb_driver_install"
+layout: popup
 ---
 
 # [USB 드라이버 설치](#usb-드라이버-설치)
