@@ -10714,7 +10714,7 @@ op2:
         url: /platform/op2/ros_package/#how-to-run-gui-program
       - title: "How to use GUI program"
         url: /platform/op2/ros_package/#how-to-use-gui-program
-        
+
 #ROBOTIS OP3 sidebar
 op3:
   - title: "Introduction"
@@ -15507,9 +15507,9 @@ opencm485exp:
     url: /parts/controller/opencm485exp/#layout
     urlkr: /parts/controller/opencm485exp/#각-부-명칭
   - title: "Connecting OpenCM9.04"
-    titlekr: "OpenCM과 연결하기"
+    titlekr: "OpenCM9.04와 연결하기"
     url: /parts/controller/opencm485exp/#connecting-opencm904
-    urlkr: /parts/controller/opencm485exp/#485-확장보드와-opencm-연결하기
+    urlkr: /parts/controller/opencm485exp/#opencm904와-연결하기
   - title: "Power Circuit Connection"
     titlekr: "전원 연결 회로"
     url: /parts/controller/opencm485exp/#power-circuit-connection

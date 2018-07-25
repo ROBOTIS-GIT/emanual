@@ -47,9 +47,9 @@ sidebar:
 대부분의 RoboPlus 설치 실패의 원인은 사용자 PC환경에 따른 .NET FrameWork 자동 설치 실패 입니다.  
 따라서 사용자가 직접 .NET FrameWork 3.5를 수동으로 설치 하셔야 합니다.  
 .NET FrameWork 3.5를 수동으로 설치 하기 전에 Windows installer 3.1이상이 설치 되어 있어야 합니다.  
- 
+
 Windows installer와 .NET Framework는 마이크로 소프트 다운로드 센터에서 다운로드가 가능합니다.  
- 
+
 - `다운로드` [Windows installer 3.1](http://www.microsoft.com/downloads/details.aspx?FamilyID=889482fc-5f56-4a38-b838-de776fd4138c&DisplayLang=ko)
 - `다운로드` [.NET Framework 3.5](http://www.microsoft.com/downloads/details.aspx?FamilyID=d0e5dea7-ac26-4ad7-b68c-fe5076bba986&DisplayLang=ko)
 
@@ -89,7 +89,7 @@ Windows installer와 .NET Framework는 마이크로 소프트 다운로드 센�
     - 다른 제품이나 위 사항을 확인 후에도 안될시 고객지원으로 연락을 주시거나 A/S 신청을 해주시기 바랍니다.
 
 4. 포트가 안뜰시
-    - [CM150, CM200 해결방법]
+    - [CM150, CM200 해결방법]{: .popup}
     - [OpenCM9.04 해결방법]
 
 
@@ -108,19 +108,19 @@ RoboPlus Manager는 인터넷을 통해 새 버전의 펌웨어를 자동으로 
 1. 제어기와 연결되면 자동으로 제어기의 펌웨어를 검색하며 버전이 낮다면 업데이트 여부를 묻습니다.
 
    ![img](/assets/images/sw/rplus1/manager/update_5.png)
-   
+
 2.  '예(Y)'를 누르면 다음과 같이 제어기 펌웨어 업데이트 마법사를 시작합니다.
 
    ![img](/assets/images/sw/rplus1/manager/update_6.png)
-   
+
 3. 현재 연결된 제어기의 모델명과 펌웨어 버전을 확인할 수 있습니다.
 
    ![img](/assets/images/sw/rplus1/manager/update_7.png)
-   
+
 4. 다음을 누르면 펌웨어 업데이트를 시작합니다. 완료될 때 까지 전원이 꺼지거나 케이블이 빠지지 않도록 유의합니다.
 
    ![img](/assets/images/sw/rplus1/manager/update_8.png)
-   
+
 5. 제어기 펌웨어 설치 결과를 확인합니다.
 
    ![img](/assets/images/sw/rplus1/manager/update_9.png)
@@ -137,12 +137,12 @@ RoboPlus Manager는 인터넷을 통해 새 버전의 펌웨어를 자동으로 
   도구 모음의 제어기 복구 버튼을 눌러 제어기 펌웨어 마법사를 실행합니다. (CM150, CM-200의 경우 별도의 복구모드 진입과정이 있습니다. 아래 메세지를 참고하세요)
 
     ![img](/assets/images/sw/rplus1/manager/recovery_1.png)
-    
+
     ![img](/assets/images/sw/rplus1/manager/cap_2013-12-13_13-12-36-391.png)
 
 3. 제어기 연결 포트 선택  
-  펌웨어를 인식하지 못하므로 제어기를 자동 검색할 수 없습니다. 따라서 사용자가 제어기가 연결된 포트를 수동으로 설정해 주어야 합니다. 포트가 사용중이면 제어기를 인식할 수 없으니 다른 프로그램을 종료하고 진행하십시오. 
-    
+  펌웨어를 인식하지 못하므로 제어기를 자동 검색할 수 없습니다. 따라서 사용자가 제어기가 연결된 포트를 수동으로 설정해 주어야 합니다. 포트가 사용중이면 제어기를 인식할 수 없으니 다른 프로그램을 종료하고 진행하십시오.
+
     제어기가 연결된 포트를 선택하고 찾기 버튼을 누르십시오.
 
     ![img](/assets/images/sw/rplus1/manager/recovery_3.png)
@@ -177,7 +177,7 @@ RoboPlus Manager는 인터넷을 통해 새 버전의 펌웨어를 자동으로 
 2. 드라이버가 설치되는 동안 대기합니다.
 
     ![img](/assets/images/sw/rplus1/manager/fw_bluetooth_1.png)
-    
+
     ![img](/assets/images/sw/rplus1/manager/fw_bluetooth_2.png)
 
 3. 제어기에 BT-110A (또는 BT-210)을 연결하고 전원 버튼을 5초 동안 눌러 "뚜뚜뚜"(3회) 소리가 나면 손을 뗍니다.
@@ -185,9 +185,9 @@ RoboPlus Manager는 인터넷을 통해 새 버전의 펌웨어를 자동으로 
 5. PC에서 주변의 블루투스 장치를 검색합니다.
 
     ![img](/assets/images/sw/rplus1/manager/fw_bluetooth_3.png)
-    
+
     ![img](/assets/images/sw/rplus1/manager/fw_bluetooth_4.png)
-    
+
     ![img](/assets/images/sw/rplus1/manager/fw_bluetooth_5.png)
 
 6. 검색된 장치들의 ID로 제어기에 연결된 BT-110A(또는 BT-210)이 맞는지 확인 합니다.  
@@ -424,7 +424,7 @@ RoboPlus Manager는 인터넷을 통해 새 버전의 펌웨어를 자동으로 
 
 ## [다이나믹셀](#다이나믹셀)
 
-**NOTE** : `액츄에이터`는 다이나믹셀 중 모터를 말합니다. 액츄에이터의 종류는 AX, DX, RX, EX, MX, X, Pro 시리즈 등이 있으며, 제어기의 종류에 따라 연결할 수 있는 액츄에이터가 다를 수 있습니다. 
+**NOTE** : `액츄에이터`는 다이나믹셀 중 모터를 말합니다. 액츄에이터의 종류는 AX, DX, RX, EX, MX, X, Pro 시리즈 등이 있으며, 제어기의 종류에 따라 연결할 수 있는 액츄에이터가 다를 수 있습니다.
 {: .notice}
 
 `AX-S1`은 여러가지 센서가 내장되어 있으며, 로보플러스 매니저를 통해 값을 확인하거나 기능을 설정할 수 있습니다.
