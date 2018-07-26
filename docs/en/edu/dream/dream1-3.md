@@ -18,8 +18,12 @@ sidebar:
 ROBOTIS DREAM Level 3 comes with the controller and teaches you the principles of servo motor control, usage of the touch sensor and IR sensors, and LED modules. This level will help you understand the flow chart to set up your ground work for programming.
 Operate your robot using the sensors assembled in them or play games to experience how the sensors can be used in various ways.
 
-**CAUTION** : ROBOTIS DREAM Level 3 requires parts from ROBOTIS DREAM Level 1 and 2. Please make sure to purchase Level 1 and 2 to build the robots in Level 3. Users must program the robots or download the program into the controller ([CM-150]) to operate the robot. To program or download a program you will need the USB Cable included in the ROBOTIS DREAM Level 1. If you want to build and program your robots using more parts and peripheral devices, please purchase the ROBOTIS DREAM Level 4 or necessary parts separately.
-
+**CAUTION** : ROBOTIS DREAM Level 3 requires parts from ROBOTIS DREAM Level 1 and 2.  
+Please make sure to purchase Level 1 and 2 to build the robots in Level 3.  
+Users must program the robots or download the program into the controller ([CM-150]) to operate the robot.  
+To program or download a program you will need the USB Cable included in the ROBOTIS DREAM Level 1.  
+If you want to build and program your robots using more parts and peripheral devices, please purchase the ROBOTIS DREAM Level 4 or necessary parts separately.
+{: .notice--warning}
 
 # [Part List](#part-list)
 
@@ -32,7 +36,11 @@ Operate your robot using the sensors assembled in them or play games to experien
 
 # [Examples](#examples)
 
-For more information assembly and operation, please refer to the ROBOTIS DREAM Level 3 workbook. You must download the examples programs below to operate your robot. To create your own program or download, click here to read more on [How to Download Task code]. You will need the USB cable to download the programs. This is included in ROBOTIS DREAM Level 1.
+For more information assembly and operation, please refer to the ROBOTIS DREAM Level 3 workbook.  
+You must download the examples programs below to operate your robot.  
+To create your own program or download, click here to read more on [How to Download Task code].  
+You will need the USB cable to download the programs.  
+This is included in ROBOTIS DREAM Level 1.
 {: .notice}
 
 |Robot|TASK Code|

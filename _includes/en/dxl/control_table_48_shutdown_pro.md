@@ -14,10 +14,9 @@ The Dynamixel can protect itself by detecting dangerous situations that could oc
 {% capture shutdown_pro %}
 **NOTE** : If Shutdown occurs, use below method to reboot Dynamixels.
 1. H/W REBOOT : Turn off the power and turn on again
-2. S/W REBOOT : Transmit REBOOT Instruction (For more details, please refer to the [Protocol] section of e-Manual.)
+2. S/W REBOOT : Transmit REBOOT Instruction (For more details, please refer to the [Reboot](/docs/en/dxl/protocol2/#reboot) section of e-Manual.)
 {% endcapture %}
 
 <div class="notice">{{ shutdown_pro | markdownify }}</div>
 
-[Protocol]: /docs/en/dxl/protocol2/#reboot
 [Torque Enable(562)]: #torque-enable562

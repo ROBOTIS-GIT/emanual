@@ -22,5 +22,8 @@ Changed Position Gain(PID) and PWM Limit(36) values can be read from the Control
   {{ group_notice_01 | markdownify }}
 </div>
 
-**NOTE** : PWM is the abbreviation for Pulse Width Modulation that modulates PWM Duty to control motors. The PWM Control Mode changes pulse width to control average supply voltage to the motor and this technique is widely used in the motor control field. Therefore, PWM Control Mode uses Goal PWM(100) value to control supply voltage for DYNAMIXEL. PWM Control Mode is similar to the Wheel Mode of DYNAMIXEL AX and RX series.
+**NOTE** : PWM is the abbreviation for Pulse Width Modulation that modulates PWM Duty to control motors.  
+The PWM Control Mode changes pulse width to control average supply voltage to the motor and this technique is widely used in the motor control field.  
+Therefore, PWM Control Mode uses Goal PWM(100) value to control supply voltage for DYNAMIXEL.  
+PWM Control Mode is similar to the Wheel Mode of DYNAMIXEL AX and RX series.
 {: .notice}

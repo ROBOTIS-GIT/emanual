@@ -295,7 +295,7 @@ Registers an interrupt handler on a pin. The interrupt will be triggered on a gi
   - FALLING : To trigger an interrupt when the pin transitions HIGH to LOW.
   - CHANGE : To trigger an interrupt when the pin transitions from LOW to HIGH or HIGH to LOW (i.e., when the pin changes).
 
-**NOTE** : You should set the pin mode of your desired pin to an input mode (e.g. INPUT, INPUT_PULLUP, INPUT_PULLDOWN). Because the function will run in interrupt context, inside of it, delay() won’t work, and the value returned by millis() will not increment. Serial data received while in the function may be lost. You should declare as volatile any global variables that you modify within the attached function.
+**참고**: You should set the pin mode of your desired pin to an input mode (e.g. INPUT, INPUT_PULLUP, INPUT_PULLDOWN). Because the function will run in interrupt context, inside of it, delay() won’t work, and the value returned by millis() will not increment. Serial data received while in the function may be lost. You should declare as volatile any global variables that you modify within the attached function.
 {: .notice}
 
 #### Return Values
@@ -1538,7 +1538,7 @@ Also See
 
 Returns the number of microseconds since the board began running the current program. This number will overflow (go back to zero), after approximately 70 minutes.
 
-**NOTE** : There are 1,000 microseconds in a millisecond, and 1,000,000 microseconds in a second.
+**참고**: There are 1,000 microseconds in a millisecond, and 1,000,000 microseconds in a second.
 {: .notice}
 
 ```c
