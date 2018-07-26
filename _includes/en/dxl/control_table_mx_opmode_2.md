@@ -16,13 +16,8 @@
   {{ opmode_notice_01 | markdownify }}
 </div>
 
-{% capture opmode_notice_02 %}
 **NOTE** : PWM is the abbreviation for Pulse Width Modulation that modulates PWM Duty to control motors.  
 The PWM Control Mode changes pulse width to control average supply voltage to the motor and this technique is widely used in the motor control field.  
 Therefore, PWM Control Mode uses Goal PWM(100) value to control supply voltage for Dynamixel.  
 PWM Control Mode is similar to the Wheel Mode of Dynamixel AX and RX series.
-{% endcapture %}
-
-<div class="notice">
-  {{ opmode_notice_02 | markdownify }}
-</div>
+{: .notice}

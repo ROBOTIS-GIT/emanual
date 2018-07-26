@@ -17,8 +17,11 @@ sidebar:
 
 ROBOTIS DREAM II Level 5 comes with a remote controller to control the robot in many ways. Now that you have an idea of how the flow chart works and have a basic knowledge of programming, this level allows you to prepare for competitions. Play games using the programs provided for download on our website and keep a record to see how well you do. Experience how the sensors can affect your results.
 
-**CAUTION** : ROBOTIS DREAM II Level 5 requires parts from ROBOTIS DREAM II Level 1, 2, 3 and 4. Please make sure to purchase Level 1, 2, 3 and 4 to build the robots in Level 5. Users must program the robots or download the program into the controller([CM-150]) to operate the robot. To program or download a program you will need the USB Cable included in the ROBOTIS DREAM II Level 1.
-
+**CAUTION** : ROBOTIS DREAM II Level 5 requires parts from ROBOTIS DREAM II Level 1, 2, 3 and 4.  
+Please make sure to purchase Level 1, 2, 3 and 4 to build the robots in Level 5.  
+Users must program the robots or download the program into the controller([CM-150]) to operate the robot.  
+To program or download a program you will need the USB Cable included in the ROBOTIS DREAM II Level 1.
+{: .notice--warning}
 
 # [Part List](#part-list)
 
@@ -29,7 +32,12 @@ ROBOTIS DREAM II Level 5 comes with a remote controller to control the robot in 
 
 # [Examples](#examples)
 
-For more information assembly and operation, please refer to the ROBOTIS DREAM II Level 5 workbook. You must download the examples programs below to operate your robot. To create your own program or download, click here to read more on [How to Download Task code]. You will need the USB cable to download the programs. This is included in ROBOTIS DREAM II Level 1.
+For more information assembly and operation, please refer to the ROBOTIS DREAM II Level 5 workbook.  
+You must download the examples programs below to operate your robot.  
+To create your own program or download, click here to read more on [How to Download Task code].  
+You will need the USB cable to download the programs.  
+This is included in ROBOTIS DREAM II Level 1.
+{: .notice}
 
 |Robot|TASK Code|
 | :---: | :---: |
