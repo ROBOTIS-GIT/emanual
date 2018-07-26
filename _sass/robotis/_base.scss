@@ -19,6 +19,10 @@ html {
 // :lang(en) {font-family: $global-font-family;}
 // :lang(kr) {font-family: $global-kr-font-family;}
 
+div {
+  font-family: "Noto Sans KR",titillium-web,sans-serif,FontAwesome;
+}
+
 body {
   counter-reset: h1;
   margin: 0;
