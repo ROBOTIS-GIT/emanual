@@ -25,7 +25,7 @@ Ubuntu 16.04 and 18.04 are difficult to install on ROBOTIS-OP2 because of the is
 As a result of installation test, "Linux Mint 17.3 (Rosa) - Xfce (32bit)" based on Ubuntu 14.04 (Trusty Tahr) was the most reliable version for ROBOTIS-OP2.  
 Please refer to the link below for how to install Linux Mint:  
 > Reference : [Linux Mint Installation Guide]  
-> Recommended editions: [Linux Mint 17.3 "Rosa" - Xfce (32-bit)]  
+> Recommended edition : [Linux Mint 17.3 "Rosa" - Xfce (32-bit)]  
 
 **CAUTION** : DO NOT upgrade the kernel after installation. Upgrading the kernel can cause graphic driver problem.
 {: .notice--warning}
