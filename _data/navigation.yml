@@ -4715,6 +4715,10 @@ xl320:
     url: /dxl/x/xl320/#reference
     urlkr: /dxl/x/xl320/#참고자료
     children:
+      - title: "Connector Information"
+        titlekr: "커넥터 정보"
+        url: /dxl/x/xl320/#connector-information
+        urlkr: /dxl/x/xl320/#커넥터-정보
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/x/xl320/#drawings
@@ -10692,6 +10696,24 @@ op2:
       url: /platform/op2/getting_started/#warranty
   - title: "Sub Controller(CM-740)"
     url: /platform/op2/getting_started/#sub-controllercm-740
+  - title: "ROS Packages"
+    url: /platform/op2/ros_package/#robotis-op2-ros-packages
+    children:
+    - title: "OS Install"
+      url: /platform/op2/ros_package/#os-install
+    - title: "ROS Install"
+      url: /platform/op2/ros_package/#ros-install
+    - title: "ROS packages for ROBOTIS-OP2"
+      url: /platform/op2/ros_package/#ros-packages-for-robotis-op2
+      children:
+      - title: "ROBOTIS-OP2 repository"
+        url: /platform/op2/ros_package/#robotis-op2-repository
+      - title: "ROBOTIS-OP2-Common repository"
+        url: /platform/op2/ros_package/#robotis-op2-common-repository
+      - title: "How to run GUI program"
+        url: /platform/op2/ros_package/#how-to-run-gui-program
+      - title: "How to use GUI program"
+        url: /platform/op2/ros_package/#how-to-use-gui-program
 
 #ROBOTIS OP3 sidebar
 op3:
@@ -10813,6 +10835,8 @@ op3:
         url: /platform/op3/tutorials/#how-to-control-upgraded-walkingonline-walking
     - title: "How to use offset tuner"
       url: /platform/op3/tutorials/#how-to-use-offset-tuner
+    - title: "How to use tuner client"
+      url: /platform/op3/tutorials/#how-to-use-tuner-client
     - title: "How to create the motions"
       url: /platform/op3/tutorials/#how-to-create-the-motions
     - title: "How to use ball detector"
@@ -11783,6 +11807,8 @@ turtlebot3:
   - title: "Machine Learning"
     url: /platform/turtlebot3/machine_learning/#machine-learning
     children:
+    - title: "Installation"
+      url: /platform/turtlebot3/machine_learning/#installation
     - title: "Step. 1 (No Obstacle)"
       url: /platform/turtlebot3/machine_learning/#step-1-no-obstacle
     - title: "Step. 2 (Static Obstacle)"
@@ -14145,58 +14171,73 @@ robotis_framework_packages:
 #DYNAMIXEL SDK sidebar
 dynamixel_sdk:
   - title: "Overview"
-    url: /software/dynamixel/dynamixel_sdk/overview/#overview
+    url: /software/dynamixel/dynamixel_sdk/overview/
     children:
-    - title: "Concept"
-      url: /software/dynamixel/dynamixel_sdk/overview/#concept
-    - title: "License"
-      url: /software/dynamixel/dynamixel_sdk/overview/#license
+    - title: "Dynamixel SDK"
+      url: /software/dynamixel/dynamixel_sdk/overview/#dynamixel-sdk
+    - title: "Supported Dynamixels"
+      url: /software/dynamixel/dynamixel_sdk/overview/#supported-dynamixels
+    - title: "Supported Protocols"
+      url: /software/dynamixel/dynamixel_sdk/overview/#supported-protocols
+    - title: "Supported Devices"
+      url: /software/dynamixel/dynamixel_sdk/overview/#supported-devices
+    - title: "Supported Operating Systems"
+      url: /software/dynamixel/dynamixel_sdk/overview/#supported-operating-systems
+    - title: "Supported Languages"
+      url: /software/dynamixel/dynamixel_sdk/overview/#supported-languages
+  - title: "Download"
+    url: /software/dynamixel/dynamixel_sdk/download/
+    children:
+    - title: "Repository"
+      url: /software/dynamixel/dynamixel_sdk/download/#repository
+    - title: "File Structure"
+      url: /software/dynamixel/dynamixel_sdk/download/#file-structure
   - title: "Device Setup"
-    url: /software/dynamixel/dynamixel_sdk/device_setup/controller/#device-setup
+    url: /software/dynamixel/dynamixel_sdk/device_setup/
     children:
     - title: "Controller"
-      url: /software/dynamixel/dynamixel_sdk/device_setup/controller/#controller
+      url: /software/dynamixel/dynamixel_sdk/device_setup/#controller
     - title: "Dynamixel"
-      url: /software/dynamixel/dynamixel_sdk/device_setup/dynamixel/#dynamixel
+      url: /software/dynamixel/dynamixel_sdk/device_setup/#dynamixel
   - title: "Library Setup"
-    url: /software/dynamixel/dynamixel_sdk/library_setup/c_windows/#library-setup
+    url: /software/dynamixel/dynamixel_sdk/library_setup/c_windows/
     children:
     - title: "C Windows"
       url: /software/dynamixel/dynamixel_sdk/library_setup/c_windows/#c-windows
     - title: "C Linux"
       url: /software/dynamixel/dynamixel_sdk/library_setup/c_linux/#c-linux
-    - title: "C MacOSX"
-      url: /software/dynamixel/dynamixel_sdk/library_setup/c_macosx/#c-macosx
+    - title: "C macOS"
+      url: /software/dynamixel/dynamixel_sdk/library_setup/c_macos/#c-macos
     - title: "CPP Windows"
       url: /software/dynamixel/dynamixel_sdk/library_setup/cpp_windows/#cpp-windows
     - title: "CPP Linux"
       url: /software/dynamixel/dynamixel_sdk/library_setup/cpp_linux/#cpp-linux
-    - title: "CPP Mac OS"
-      url: /software/dynamixel/dynamixel_sdk/library_setup/cpp_macosx/#cpp-macosx
+    - title: "CPP macOS"
+      url: /software/dynamixel/dynamixel_sdk/library_setup/cpp_macos/#cpp-macos
     - title: "Csharp Windows"
       url: /software/dynamixel/dynamixel_sdk/library_setup/csharp_windows/#csharp-windows
     - title: "Python Windows"
       url: /software/dynamixel/dynamixel_sdk/library_setup/python_windows/#python-windows
     - title: "Python Linux"
       url: /software/dynamixel/dynamixel_sdk/library_setup/python_linux/#python-linux
-    - title: "Python MacOSX"
-      url: /software/dynamixel/dynamixel_sdk/library_setup/python_macosx/#python-macosx
+    - title: "Python macOS"
+      url: /software/dynamixel/dynamixel_sdk/library_setup/python_macos/#python-macos
     - title: "Java Windows"
       url: /software/dynamixel/dynamixel_sdk/library_setup/java_windows/#java-windows
     - title: "Java Linux"
       url: /software/dynamixel/dynamixel_sdk/library_setup/java_linux/#java-linux
-    - title: "Java MacOSX"
-      url: /software/dynamixel/dynamixel_sdk/library_setup/java_macosx/#java-macosx
+    - title: "Java macOS"
+      url: /software/dynamixel/dynamixel_sdk/library_setup/java_macos/#java-macos
     - title: "MATLAB Windows"
       url: /software/dynamixel/dynamixel_sdk/library_setup/matlab_windows/#matlab-windows
     - title: "MATLAB Linux"
       url: /software/dynamixel/dynamixel_sdk/library_setup/matlab_linux/#matlab-linux
-    - title: "MATLAB MacOSX"
-      url: /software/dynamixel/dynamixel_sdk/library_setup/matlab_macosx/#matlab-macosx
+    - title: "MATLAB macOS"
+      url: /software/dynamixel/dynamixel_sdk/library_setup/matlab_macos/#matlab-macos
     - title: "LabVIEW Windows"
       url: /software/dynamixel/dynamixel_sdk/library_setup/labview_windows/#labview-windows
   - title: "Sample Code"
-    url: /software/dynamixel/dynamixel_sdk/sample_code/c_read_write_protocol_1_0/#sample-code
+    url: /software/dynamixel/dynamixel_sdk/sample_code/c_read_write_protocol_1_0/
     children:
     - title: "C Protocol 1.0"
       url: /software/dynamixel/dynamixel_sdk/sample_code/c_read_write_protocol_1_0/#c-protocol-10
@@ -14305,7 +14346,7 @@ dynamixel_sdk:
       - title: "CSharp Bulk Read Protocol 2.0"
         url: /software/dynamixel/dynamixel_sdk/sample_code/csharp_bulk_read_write_protocol_2_0/#csharp-bulk-read-write-protocol-20
       - title: "CSharp Indirect Address Protocol 2.0"
-        url: /software/dynamixel/dynamixel_sdk/sample_code/csharp_indirect_address_2_0/#csharp-indirect-address-protocol-20
+        url: /software/dynamixel/dynamixel_sdk/sample_code/csharp_indirect_address_protocol_2_0/#csharp-indirect-address-protocol-20
       - title: "CSharp Ping Protocol 2.0"
         url: /software/dynamixel/dynamixel_sdk/sample_code/csharp_ping_protocol_2_0/#csharp-ping-protocol-20
       - title: "CSharp Broadcast Ping Protocol 2.0"
@@ -14343,7 +14384,7 @@ dynamixel_sdk:
       - title: "Python Bulk Read Protocol 2.0"
         url: /software/dynamixel/dynamixel_sdk/sample_code/python_bulk_read_write_protocol_2_0/#python-bulk-read-write-protocol-20
       - title: "Python Indirect Address Protocol 2.0"
-        url: /software/dynamixel/dynamixel_sdk/sample_code/python_indirect_address_2_0/#python-indirect-address-protocol-20
+        url: /software/dynamixel/dynamixel_sdk/sample_code/python_indirect_address_protocol_2_0/#python-indirect-address-protocol-20
       - title: "Python Ping Protocol 2.0"
         url: /software/dynamixel/dynamixel_sdk/sample_code/python_ping_protocol_2_0/#python-ping-protocol-20
       - title: "Python Broadcast Ping Protocol 2.0"
@@ -14381,7 +14422,7 @@ dynamixel_sdk:
       - title: "Java Bulk Read Protocol 2.0"
         url: /software/dynamixel/dynamixel_sdk/sample_code/java_bulk_read_write_protocol_2_0/#java-bulk-read-write-protocol-20
       - title: "Java Indirect Address Protocol 2.0"
-        url: /software/dynamixel/dynamixel_sdk/sample_code/java_indirect_address_2_0/#java-indirect-address-protocol-20
+        url: /software/dynamixel/dynamixel_sdk/sample_code/java_indirect_address_protocol_2_0/#java-indirect-address-protocol-20
       - title: "Java Ping Protocol 2.0"
         url: /software/dynamixel/dynamixel_sdk/sample_code/java_ping_protocol_2_0/#java-ping-protocol-20
       - title: "Java Broadcast Ping Protocol 2.0"
@@ -14419,7 +14460,7 @@ dynamixel_sdk:
       - title: "Matlab Bulk Read Protocol 2.0"
         url: /software/dynamixel/dynamixel_sdk/sample_code/matlab_bulk_read_write_protocol_2_0/#matlab-bulk-read-write-protocol-20
       - title: "Matlab Indirect Address Protocol 2.0"
-        url: /software/dynamixel/dynamixel_sdk/sample_code/matlab_indirect_address_2_0/#matlab-indirect-address-protocol-20
+        url: /software/dynamixel/dynamixel_sdk/sample_code/matlab_indirect_address_protocol_2_0/#matlab-indirect-address-protocol-20
       - title: "Matlab Ping Protocol 2.0"
         url: /software/dynamixel/dynamixel_sdk/sample_code/matlab_ping_protocol_2_0/#matlab-ping-protocol-20
       - title: "Matlab Broadcast Ping Protocol 2.0"
@@ -14457,7 +14498,7 @@ dynamixel_sdk:
       - title: "LabVIEW Bulk Read Protocol 2.0"
         url: /software/dynamixel/dynamixel_sdk/sample_code/labview_bulk_read_write_protocol_2_0/#labview-bulk-read-write-protocol-20
       - title: "LabVIEW Indirect Address Protocol 2.0"
-        url: /software/dynamixel/dynamixel_sdk/sample_code/labview_indirect_address_2_0/#labview-indirect-address-protocol-20
+        url: /software/dynamixel/dynamixel_sdk/sample_code/labview_indirect_address_protocol_2_0/#labview-indirect-address-protocol-20
       - title: "LabVIEW Ping Protocol 2.0"
         url: /software/dynamixel/dynamixel_sdk/sample_code/labview_ping_protocol_2_0/#labview-ping-protocol-20
       - title: "LabVIEW Broadcast Ping Protocol 2.0"
@@ -14469,7 +14510,7 @@ dynamixel_sdk:
     - title: "LabVIEW Protocol Combined"
       url: /software/dynamixel/dynamixel_sdk/sample_code/labview_protocol_combined/#labview-protocol-combined
   - title: "API Reference"
-    url: /software/dynamixel/dynamixel_sdk/api_reference/c/c_porthandler/#api-reference
+    url: /software/dynamixel/dynamixel_sdk/api_reference/c/c_porthandler/
     children:
     - title: "C"
       url: /software/dynamixel/dynamixel_sdk/api_reference/c/c_porthandler/#c
@@ -14597,9 +14638,9 @@ dynamixel_sdk:
       - title: "LabVIEW GroupBulkRead"
         url: /software/dynamixel/dynamixel_sdk/api_reference/labview/labview_groupbulkread/#labview-groupbulkread
   - title: "Quick Start Video"
-    url: /software/dynamixel/dynamixel_sdk/quick_start_video/#quick-start-video
-  - title: "Frequently Asked Questions(FAQ)"
-    url: /software/dynamixel/dynamixel_sdk/frequently_asked_questionsfaq/#frequently-asked-questionsfaq
+    url: /software/dynamixel/dynamixel_sdk/quick_start_video/
+  - title: "FAQ"
+    url: /software/dynamixel/dynamixel_sdk/faq/
 
 #Dynamixel Workbench sidebar
 dynamixel_workbench:
@@ -15466,9 +15507,9 @@ opencm485exp:
     url: /parts/controller/opencm485exp/#layout
     urlkr: /parts/controller/opencm485exp/#각-부-명칭
   - title: "Connecting OpenCM9.04"
-    titlekr: "OpenCM과 연결하기"
+    titlekr: "OpenCM9.04와 연결하기"
     url: /parts/controller/opencm485exp/#connecting-opencm904
-    urlkr: /parts/controller/opencm485exp/#485-확장보드와-opencm-연결하기
+    urlkr: /parts/controller/opencm485exp/#opencm904와-연결하기
   - title: "Power Circuit Connection"
     titlekr: "전원 연결 회로"
     url: /parts/controller/opencm485exp/#power-circuit-connection

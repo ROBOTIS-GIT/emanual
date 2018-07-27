@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: dynamixel_sdk_sample_code_csharp_reboot_protocol_2_0
+ref: csharp_reboot_protocol_2_0
 read_time: true
 share: true
 author_profile: false
@@ -11,13 +11,14 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
-<div style="counter-reset: h1 3"></div>
-<div style="counter-reset: h2 9"></div>
+<div style="counter-reset: h1 5"></div>
+<div style="counter-reset: h2 10"></div>
 <div style="counter-reset: h3 7"></div>
 
-# [Sample Code](#sample-code)
-
-## [CSharp Protocol 2.0](#csharp-protocol-20)
+<!--[dummy Header 1]>
+  <h1 id="sample-code"><a href="#sample-code">Sample Code</a></h1>
+  <h2 id="csharp-protocol-20"><a href="#csharp-protocol-20">CSharp Protocol 2.0</a></h2>
+<![end dummy Header 1]-->
 
 ### [CSharp Reboot Protocol 2.0](#csharp-reboot-protocol-20)
 
@@ -172,7 +173,7 @@ public const string DEVICENAME    = "/dev/ttyUSB0";   // Check which port is bei
 
 Here we set some variables to let you freely change them and use them to run the example code.
 
-As the document previously said in [previous chapter](/docs/en/software/dynamixel/dynamixel_sdk/device_setup/dynamixel/#dynamixel), customize Dynamixel control table items, such as `DXL_ID` number, communication `BAUDRATE`, and the `DEVICENAME`, on your own terms of needs. In particular, `BAUDRATE` and `DEVICENAME` have systematical dependencies on your controller, so make clear what kind of communication method you will use.
+As the document previously said in [previous chapter](/docs/en/software/dynamixel/dynamixel_sdk/device_setup/#dynamixel), customize Dynamixel control table items, such as `DXL_ID` number, communication `BAUDRATE`, and the `DEVICENAME`, on your own terms of needs. In particular, `BAUDRATE` and `DEVICENAME` have systematical dependencies on your controller, so make clear what kind of communication method you will use.
 
 ``` cs
 public const int COMM_SUCCESS                    = 0;                   // Communication Success result value

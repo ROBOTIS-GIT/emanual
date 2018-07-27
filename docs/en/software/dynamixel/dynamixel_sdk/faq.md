@@ -1,23 +1,23 @@
 ---
 layout: archive
 lang: en
-ref: dynamixel_sdk_frequently_asked_questionsfaq
+ref: faq
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/software/dynamixel/dynamixel_sdk/frequently_asked_questionsfaq/
+permalink: /docs/en/software/dynamixel/dynamixel_sdk/faq/
 sidebar:
   title: DynamixelSDK
   nav: "dynamixel_sdk"
 ---
 
-<div style="counter-reset: h1 6"></div>
+<div style="counter-reset: h1 7"></div>
 
-# [Frequently Asked Questions(FAQ)](#frequently-asked-questionsfaq)
+# [FAQ](#faq)
 
 ## Difference between the read write example, the sync read write example, the bulk read write example, and the Indirect Address example
 
-For systematical description or the details of communication method in the Dynamixel, visit [http://support.robotis.com/en/](http://support.robotis.com/en/) /Product Information/Actuator/Communication X.0/
+For systematical description or the details of communication method in the Dynamixel, check [Protocol 1.0](http://emanual.robotis.com/docs/en/dxl/protocol1/) and [Protocol 2.0](http://emanual.robotis.com/docs/en/dxl/protocol2/)
 
 ### Normal Read and Write controls only one Dynamixel
 
@@ -40,3 +40,8 @@ While using **Normal Read and Write control** or **Sync Read and Write control**
 
 ### Indirect Address control (is available only in Dynamixel PRO and X series but its very useful!)
 To control multiple items in multiple dynamixel, and when you want to use **Sync Read and Write control** rather than **Bulk Read and Write control**, use this. Copy the buffer of targeted items to another address on the memory using **Normal Read and Write control**, then **Sync Read and Write control** them.
+
+## I have a question. Where should I put it??
+- Any **questions** related with Dynamixel SDK are always welcomed. Just let me know at [ISSUES](https://github.com/ROBOTIS-GIT/DynamixelSDK/issues).
+- For the other questions, including **Hardware-wise problems** on your Dynamixels, please contact to `support@robotis.com` or use [ROBOTIS Forum](http://en.robotis.com/service/forum.php).
+- Join our **developer community** on the [RobotSource](https://community.robotsource.org/).

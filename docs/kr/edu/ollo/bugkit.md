@@ -589,9 +589,9 @@ PC([RoboPlus Task] 프로그램), 조립된 버그 로봇, USB 다운로더([LN-
 
 `다운로드` 태스크 코드 [OLLO_BUG_Product_KR.tsk](http://support.robotis.com/ko/baggage_files/ollo/bug/ollo_bug_product_kr.tsk)
 
-**NOTE** : [태스크 코드 다운로드 방법]
+**참고**: [태스크 코드 다운로드 방법]
 
-**NOTE** : [기본 프로그램의 작동방법]
+**참고**: [기본 프로그램의 작동방법]
 
 [CM-100]: /docs/kr/parts/controller/cm-100/
 [감속모터]: /docs/kr/parts/motor/gm-10a/

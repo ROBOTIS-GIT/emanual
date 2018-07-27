@@ -42,7 +42,7 @@ sidebar:
 10. **JP1 Jumper** : OpenCM 485 EXP 보드에  입력된 전압을 OpenCM9.04에도 전압을 입력할지 결정하는 점퍼 입니다.
 
 
-# [458 확장보드와 OpenCM 연결하기](#485-확장보드와-opencm-연결하기)
+# [OpenCM9.04와 연결하기](#opencm904와-연결하기)
 
 1. OpenCM 485 확장보드 와 OpenCM9.04를 준비합니다. OpenCM9.04는 타입에 관계없이 사용가능하고 헤더를 납땜해주세요.
 
@@ -63,7 +63,7 @@ sidebar:
 
     ![](/assets/images/parts/controller/opencm904/opencm485exp-12.jpg)
 
-**NOTE** : 다이나믹셀 펌웨어 업데이트 및 복구시 OpenCM9.04와 OpenCM 485 확장보드를 반드시 분리해주세요
+**참고**: 다이나믹셀 펌웨어 업데이트 및 복구시 OpenCM9.04와 OpenCM 485 확장보드를 반드시 분리해주세요
 {: .notice--warning}
 
 
@@ -78,7 +78,7 @@ OpenCM 485 확장보드는 기본적으로 OpenCM9.04 5V 전원 공급을 하며
 
 OpenCM 485 확장보드의 TTL/485 버스는 OpenCM9.04의 USART3(Serial3)을 통해서 다이나믹셀 버스가 구성됩니다.
 
-**NOTE** : OpenCM9.04의 다이나믹셀 TTL BUS는 USART1(Serial1)과 연결되어 있습니다.
+**참고**: OpenCM9.04의 다이나믹셀 TTL BUS는 USART1(Serial1)과 연결되어 있습니다.
 {: .notice}
 
 ![](/assets/images/parts/controller/opencm904/opencm485exp_3.png)

@@ -30,13 +30,13 @@ Action contains all joint angles per each time frame.
 
 ###### Getting started  
 - Download & Build  
- > Reference : [Installing ROBOTIS ROS Package]
+  > Reference : [Installing ROBOTIS ROS Package]
 
-  - Usage  
-    Motion Module is used in the form of lib in the manager.  
-    > Reference : [Creating new robot manager]
+- Usage  
+  Motion Module is used in the form of lib in the manager.  
+  > Reference : [Creating new robot manager]
 
-- ROS API  
+###### ROS API  
 - Subscribed Topics  
   `/robotis/action/page_num`([std_msgs/Int32]{: .popup})  
   &emsp;&emsp; The page number of action to run in the Module.  
@@ -241,11 +241,11 @@ Online walking algorithm is described in this book ([Introduction to Humanoid Ro
 
 ###### Getting started  
 - Download & Build
- > Reference : [Installing ROBOTIS ROS Package]
+  > Reference : [Installing ROBOTIS ROS Package]
 
 - Usage
 The Motion Module is used in the manager in the form of library.  
-> Reference : [Creating new robot manager]
+  > Reference : [Creating new robot manager]
 
 ###### ROS API
 - Subscribed Topics  
@@ -308,6 +308,89 @@ The Motion Module is used in the manager in the form of library.
   `/robotis/online_walking/get_preview_matrix`  
 ([op3_online_walking_module_msgs/GetPreviewMatrix]{: .popup})  
 &emsp;&emsp; This service is used to calculate matrix for online walking.  
+
+##### [op3_direct_control_module](#op3-direct-control-module)
+
+###### Overview  
+This chapter explains the module to control the joints of ROBOTIS-OP3 directly.  
+
+###### Getting started  
+- Download & Build  
+  > Reference : [Installing ROBOTIS ROS Package]
+
+- Usage  
+  Motion Module is used in the form of lib in the manager.  
+  > Reference : [Creating new robot manager]
+
+###### ROS API  
+- Subscribed Topics  
+  `/robotis/direct_control/set_joint_states`([sensor_msgs/JointState]{: .popup})  
+  &emsp;&emsp; Message that include the joint value user want to move.  
+
+- Published Topics  
+  `/robotis/status`([robotis_controller_msgs/StatusMsg]{: .popup})  
+  &emsp;&emsp; Message that describes status of action_module.  
+
+###### Parameters  
+  `/robotis/direct_control/default_moving_time`(double, default : 0.5)  
+  &emsp;&emsp; minimum time to move to target position  
+  `/robotis/direct_control/default_moving_angle`(double, default : 30)  
+  &emsp;&emsp; angle moving to target position per 1 sec  
+  `/robotis/direct_control/check_collision`(bool, default : true)  
+  &emsp;&emsp; enable of pseudo self-collision checking  
+  
+##### [op3_tuning_module](#op3-tuning-module)
+
+###### Overview  
+This chapter explains the module used for offset and gain adjustment.  
+
+###### Getting started  
+- Download & Build  
+  > Reference : [Installing ROBOTIS ROS Package]
+
+- Usage  
+  Motion Module is used in the form of lib in the manager.  
+  > Reference : [Creating new robot manager]
+
+###### ROS API  
+- Subscribed Topics  
+  `/robotis/tuning_module/tuning_pose`([std_msgs/String]{: .popup})  
+  &emsp;&emsp; Message that is used to change the posture for tuning a gain  
+  `/robotis/tuning_module/joint_offset_data`([op3_tuning_module_msgs/JointOffsetData]{: .popup})  
+  &emsp;&emsp; Message used to change the offset  
+  `/robotis/tuning_module/joint_gain_data`([op3_tuning_module_msgs/JointOffsetData]{: .popup})  
+  &emsp;&emsp; Message used to change the gain  
+  `/robotis/tuning_module/torque_enable`([op3_tuning_module_msgs/JointTorqueOnOffArray]{: .popup})  
+  &emsp;&emsp; Message used to en/disable the torque of joints  
+  `/robotis/tuning_module/command`([std_msgs/String]{: .popup})  
+  &emsp;&emsp; Message for command(ex. save gain, save offset)  
+
+- Published Topics  
+  `/robotis/status`([robotis_controller_msgs/StatusMsg]{: .popup})  
+  &emsp;&emsp; Message that describes status of action_module.    
+  `/robotis/enable_ctrl_module`([std_msgs/String]{: .popup})  
+  &emsp;&emsp; Message for changing a motion module of robotis_controller  
+  `/robotis/sync_write_item`([robotis_controller_msgs/SyncWriteItem]{: .popup})  
+  &emsp;&emsp; Message for sync write with dynamixel in robotis_controller  
+  `/robotis/enable_offset`([std_msgs/Bool]{: .popup})  
+  &emsp;&emsp; Messages for turning on / off offsets in robotis_controller  
+    
+- Service Server  
+  `/robotis/tuning_module/get_present_joint_offset_data`  ([op3_tuning_module_msgs/GetPresentJointOffsetData]{: .popup})  
+  &emsp;&emsp; Service used to notify joint states including offset  
+   
+- Service Client  
+  `/robotis/set_present_ctrl_modules`([robotis_controller_msgs/SetModule]{: .popup})  
+  &emsp;&emsp; Service for changing a motion module of robotis_controller  
+  `/robotis/load_offset`([robotis_controller_msgs/LoadOffset]{: .popup})  
+  &emsp;&emsp; Service used to apply the new offset in robotis_controller  
+  
+
+###### Parameters  
+  `offset_file_path`(string, default : `~/data/tune_pose.yaml`)  
+  &emsp;&emsp; This path indicates the location of the file that contains offset data of each joint.  
+  `init_file_path`(string, default : `~/data/offset.yaml`)  
+  &emsp;&emsp; This path indicates the location of the file that contains initialization information of each joint  
 
 ##### Sensor Module
 
@@ -396,7 +479,9 @@ Actual control is processed within each modules.
  2. [op3_base_module] : This module manages initial posture and basic functions.  
  3. [op3_head_control_module] : This module controls OP3 head.  
  4. [op3_walking_module] : This module controls walking.  
- 5. [op3_online_walking_module] : This module controls upgraded walking.  
+ 5. [op3_online_walking_module] : This module controls upgraded walking.
+ 6. [op3_direct_control_module] :  This module controls ROBOTIS-OP3 directly.  
+ 7. [op3_tuning_module] : This module is used to tune the gain and offset.  
 
 ##### Sensor Module  
  1. [open_cr_module] : This module is required to use OpenCR as a sensor.  
@@ -504,7 +589,7 @@ Messages and Services used in the [op3_walking_module]
 * [GetWalkingParam.srv]{: .popup}
 * [SetWalkingParam.srv]{: .popup}
 
-#### [op3_online_walking_module_msgs](#op3-online-module-msgs)
+#### [op3_online_walking_module_msgs](#op3-online-walking-module-msgs)
 
 ##### Overview
 Messages and Services used in the [op3_online_walking_module]  
@@ -524,6 +609,20 @@ Messages and Services used in the [op3_online_walking_module]
 * [GetJointPose.srv]{: .popup}
 * [GetKinematicsPose.srv]{: .popup}
 * [GetPreviewMatrix.srv]{: .popup}
+
+#### [op3_tuning_module_msgs](#op3-tuning-module-msgs)
+
+##### Overview
+Messages and Services used in the [op3_tuning_module]  
+
+##### ROS Message Type
+* [JointOffsetData.msg]{: .popup}
+* [JointOffsetPositionData.msg]{: .popup}
+* [JointTorqueOnOff.msg]{: .popup}
+* [JointTorqueOnOffArray.msg]{: .popup}
+
+##### ROS Service Type  
+* [GetPresentJointOffsetData.srv]{: .popup}
 
 ### Tool msgs
 
@@ -933,6 +1032,43 @@ $ roslaunch op3_gui_demo op3_demo.launch
 `/demo_config`(string, default : "/op3_gui_demo/config/demo_config.yaml")  
 &emsp;&emsp; This yaml file saves joint names, available modules, list of module preset button.  
 
+### [op3_tuner_client](#op3-tuner-client)
+
+#### Overview
+The GUI Node that can adjust offset and gain of ROBOTIS-OP3.  
+It is used with the [op3_manager].  
+
+#### Getting started
+
+##### Download & Build
+> Reference : [Installing ROBOTIS ROS Package]
+
+##### Run
+```
+$ roslaunch op3_tuner_client op3_tuner_client.launch
+```
+
+##### Usage
+> Reference : [How to use tuner client]
+
+#### ROS API
+
+##### Published Topics
+`/robotis/tuning_module/tuning_pose`([std_msgs/String]{: .popup})  
+&emsp;&emsp; Message that is used to change the posture for tuning a gain  
+`/robotis/tuning_module/joint_offset_data`([op3_tuning_module_msgs/JointOffsetData]{: .popup})  
+&emsp;&emsp; Message used to change the offset  
+`/robotis/tuning_module/joint_gain_data`([op3_tuning_module_msgs/JointOffsetData]{: .popup})  
+&emsp;&emsp; Message used to change the gain  
+`/robotis/tuning_module/torque_enable`([op3_tuning_module_msgs/JointTorqueOnOffArray]{: .popup})  
+&emsp;&emsp; Message used to en/disable the torque of joints  
+`/robotis/tuning_module/command`([std_msgs/String]{: .popup})  
+&emsp;&emsp; Message for command(ex. save gain, save offset)   
+
+##### Services
+`/robotis/tuning_module/get_present_joint_offset_data`([op3_tuning_module_msgs/GetPresentJointOffsetData]{: .popup})  
+&emsp;&emsp; Service used to get the joint states including offset
+
 ### [op3_offset_tuner_server](#op3-offset-tuner-server)
 
 #### Overview   
@@ -1133,3 +1269,16 @@ Please refer to [How to use walking tuner].
 [/op3_walking_module/config/param.yaml]: /docs/en/popup/op3_walking_module_param.yaml/
 [/op3_base_module/data/ini_pose.yaml]: /docs/en/popup/op3_base_module_ini_pose.yaml/
 [OPENCR]: /docs/en/platform/common/arduino_examples_op3/#opencr-op3
+[op3_tuning_module_msgs/JointOffsetData]: /docs/en/popup/(op3_tuning_module_msgs)JointOffsetData.msg/
+[op3_tuning_module_msgs/JointTorqueOnOffArray]: /docs/en/popup/(op3_tuning_module_msgs)JointTorqueOnOffArray.msg/ 
+[op3_tuning_module_msgs/GetPresentJointOffsetData]: /docs/en/popup/(op3_tuning_module_msgs)GetPresentJointOffsetData.srv/
+[robotis_controller_msgs/SetModule]: /docs/en/popup/SetModule.srv/  
+[robotis_controller_msgs/LoadOffset]: /docs/en/popup/LoadOffset.srv/
+[op3_direct_control_module]: /docs/en/platform/op3/robotis_ros_packages/#op3-dirct-control-module
+[op3_tuning_module]: /docs/en/platform/op3/robotis_ros_packages/#op3-tuning-module
+[JointOffsetData.msg]: /docs/en/popup/(op3_tuning_module_msgs)JointOffsetData.msg/
+[JointOffsetPositionData.msg]: /docs/en/popup/(op3_tuning_module_msgs)JointOffsetPositionData.msg/
+[JointTorqueOnOff.msg]: /docs/en/popup/(op3_tuning_module_msgs)JointTorqueOnOff.msg/ 
+[JointTorqueOnOffArray.msg]: /docs/en/popup/(op3_tuning_module_msgs)JointTorqueOnOffArray.msg/ 
+[GetPresentJointOffsetData.srv]: /docs/en/popup/(op3_tuning_module_msgs)GetPresentJointOffsetData.srv/
+[How to use tuner client]: /docs/en/platform/op3/tutorials/#how-to-use-tuner-client

@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: dynamixel_sdk_library_setup_csharp_windows
+ref: csharp_windows
 read_time: true
 share: true
 author_profile: false
@@ -11,10 +11,12 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
+<div style="counter-reset: h1 4"></div>
 <div style="counter-reset: h2 6"></div>
-<div style="counter-reset: h1 2"></div>
 
-# [Library Setup](#library-setup)
+<!--[dummy Header 1]>
+  <h1 id="library-setup"><a href="#library-setup">Library Setup</a></h1>
+<![end dummy Header 1]-->
 
 ## [CSharp Windows](#csharp-windows)
 

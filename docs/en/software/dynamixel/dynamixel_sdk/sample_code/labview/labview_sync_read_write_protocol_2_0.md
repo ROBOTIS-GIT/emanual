@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: dynamixel_sdk_sample_code_labview_sync_read_write_protocol_2_0
+ref: labview_sync_read_write_protocol_2_0
 read_time: true
 share: true
 author_profile: false
@@ -11,13 +11,14 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
-<div style="counter-reset: h1 3"></div>
-<div style="counter-reset: h2 21"></div>
+<div style="counter-reset: h1 5"></div>
+<div style="counter-reset: h2 22"></div>
 <div style="counter-reset: h3 2"></div>
 
-# [Sample Code](#sample-code)
-
-## [LabVIEW Protocol 2.0](#labview-protocol-20)
+<!--[dummy Header 1]>
+  <h1 id="sample-code"><a href="#sample-code">Sample Code</a></h1>
+  <h2 id="labview-protocol-20"><a href="#labview-protocol-20">LabVIEW Protocol 2.0</a></h2>
+<![end dummy Header 1]-->
 
 ### [LabVIEW Sync Read Write Protocol 2.0](#labview-sync-read-write-protocol-20)
 

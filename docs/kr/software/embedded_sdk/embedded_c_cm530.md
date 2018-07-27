@@ -18,10 +18,10 @@ sidebar:
 - 모든 소스가 C언어로 작성되어 있습니다.
 - 제어기 각 부분을 직접 제어하는 예제를 제공합니다.
 
-**NOTE** : 임베디드 C를 사용하려면 하드웨어 및 소프트웨어에 대한 전문적인 지식이 필요합니다. 초보자의 경우 전문 지식을 별도로 습득한 후, 사용하는 것을 권장합니다. 
+**참고**: 임베디드 C를 사용하려면 하드웨어 및 소프트웨어에 대한 전문적인 지식이 필요합니다. 초보자의 경우 전문 지식을 별도로 습득한 후, 사용하는 것을 권장합니다. 
 {: .notice}
 
-**NOTE** : 임베디드 C를 사용하게 되면 제어기 펌웨어가 바뀌어서 로보플러스를 사용할 수 없게됩니다. 다시 로보플러스를 사용하기 위해서는 로보플러스 매니저로 펌웨어 복구를 시도해야 합니다.
+**참고**: 임베디드 C를 사용하게 되면 제어기 펌웨어가 바뀌어서 로보플러스를 사용할 수 없게됩니다. 다시 로보플러스를 사용하기 위해서는 로보플러스 매니저로 펌웨어 복구를 시도해야 합니다.
 {: .notice}
 
 
@@ -40,7 +40,7 @@ sidebar:
 
 ## [시작하기](#시작하기)
 
-**NOTE** : Windows 8.1,10을 사용중 설치에 error 발생경우 여기를 클릭해 다운로드로와 압축 해제가 끝나면 파일을 C:\WinARM\utils\bin 에 복사하십시요. (기존에 있든 파일을 대체하면 됩니다.) **(EX error :/usr/bin/sh: fork: Resource temporarily unavailable)** 
+**참고**: Windows 8.1,10을 사용중 설치에 error 발생경우 여기를 클릭해 다운로드로와 압축 해제가 끝나면 파일을 C:\WinARM\utils\bin 에 복사하십시요. (기존에 있든 파일을 대체하면 됩니다.) **(EX error :/usr/bin/sh: fork: Resource temporarily unavailable)** 
 {:. notice}
 
 ### [JRE 설치](#jre-설치)
@@ -149,7 +149,7 @@ Eclipse를 실행시키고 ‘File – New – Makefile Project with Existing Co
 
 ![img](/assets/images/sw/sdk/embedded_065.png)
 
-**NOTE** : Windows 8.1,10을 사용중 설치에 error 발생경우 여기를 클릭해 다운로드로와 압축 해제가 끝나면 파일을 C:\WinARM\utils\bin 에 복사하십시요. (기존에 있든 파일을 대체하면 됩니다.) **(EX error :/usr/bin/sh: fork: Resource temporarily unavailable)** 
+**참고**: Windows 8.1,10을 사용중 설치에 error 발생경우 여기를 클릭해 다운로드로와 압축 해제가 끝나면 파일을 C:\WinARM\utils\bin 에 복사하십시요. (기존에 있든 파일을 대체하면 됩니다.) **(EX error :/usr/bin/sh: fork: Resource temporarily unavailable)** 
 {: .notice}
 
 ### [로보플러스 복구하기](#로보플러스-복구하기)

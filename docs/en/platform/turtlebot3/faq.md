@@ -149,3 +149,54 @@ If BIOS firmware is not properly installed, this might happen. Please burn the B
 3. Make sure that you see the message in the red box.
 
 ![](/assets/images/platform/turtlebot3/faq/nvstorage.png)
+
+## [How to update software](#how-to-update-software)
+
+**[TurtleBot3]**
+
+```bash
+$ cd ~/catkin_ws/src/
+$ rm -rf turtlebot3/ turtlebot3_msgs/ hls_lfcd_lds_driver/
+$ git clone https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver.git
+$ git clone https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
+$ git clone https://github.com/ROBOTIS-GIT/turtlebot3.git
+$ cd ~/catkin_ws/src/turtlebot3
+$ sudo rm -r turtlebot3_description/ turtlebot3_teleop/ turtlebot3_navigation/ turtlebot3_slam/ turtlebot3_example/
+$ cd ~/catkin_ws/
+$ rm -rf build/ devel/
+$ cd ~/catkin_ws && catkin_make -j1
+```
+
+**[RemotePC]**
+
+```bash
+$ cd ~/catkin_ws/src/
+$ rm -rf turtlebot3/ turtlebot3_msgs/
+$ git clone https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
+$ git clone https://github.com/ROBOTIS-GIT/turtlebot3.git
+$ cd ~/catkin_ws/
+$ rm -rf build/ devel/
+$ cd ~/catkin_ws && catkin_make
+```
+
+## [How to update firmware](#how-to-update-firmware)
+
+**[TurtleBot3]**
+
+- Burger
+
+```bash
+$ export OPENCR_PORT=/dev/ttyACM0
+$ export OPENCR_MODEL=burger
+$ rm -rf ./opencr_update.tar.bz2
+$ wget https://github.com/ROBOTIS-GIT/OpenCR/raw/master/arduino/opencr_release/shell_update/opencr_update.tar.bz2 && tar -xvf opencr_update.tar.bz2 && cd ./opencr_update && ./update.sh $OPENCR_PORT $OPENCR_MODEL.opencr && cd ..
+```
+
+- Waffle or Waffle Pi
+
+```bash
+$ export OPENCR_PORT=/dev/ttyACM0
+$ export OPENCR_MODEL=waffle
+$ rm -rf ./opencr_update.tar.bz2
+$ wget https://github.com/ROBOTIS-GIT/OpenCR/raw/master/arduino/opencr_release/shell_update/opencr_update.tar.bz2 && tar -xvf opencr_update.tar.bz2 && cd ./opencr_update && ./update.sh $OPENCR_PORT $OPENCR_MODEL.opencr && cd ..
+```

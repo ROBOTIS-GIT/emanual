@@ -220,7 +220,7 @@ IR ARRAY의 각 적외선 센서의 감지 값이 검은 색 감지 기준값보
 | 0    | REG_WRITE로 전달된 명령이 없습니다. |
 | 1    | REG_WRITE로 전달된 명령이 있습니다. |
 
-**NOTE** : ACTION 명령을 수행하면 이 값이 0으로 바뀝니다.
+**참고**: ACTION 명령을 수행하면 이 값이 0으로 바뀝니다.
 {: .notice}
 
 ### <a name="lock"></a>Lock

@@ -1,4 +1,4 @@
-It is a moving speed to Goal Position.
+It is a moving speed to Goal Position.  
 The range and the unit of the value may vary depending on the operation mode.
 
 + **Join Mode**  

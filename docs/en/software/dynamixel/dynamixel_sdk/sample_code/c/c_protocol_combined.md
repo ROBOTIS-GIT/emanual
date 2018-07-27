@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: dynamixel_sdk_sample_code_c_protocol_combined
+ref: c_protocol_combined
 read_time: true
 share: true
 author_profile: false
@@ -11,10 +11,12 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
-<div style="counter-reset: h1 3"></div>
+<div style="counter-reset: h1 5"></div>
 <div style="counter-reset: h2 2"></div>
 
-# [Sample Code](#sample-code)
+<!--[dummy Header 1]>
+  <h1 id="sample-code"><a href="#sample-code">Sample Code</a></h1>
+<![end dummy Header 1]-->
 
 ## [C Protocol Combined](#c-protocol-combined)
 
@@ -27,7 +29,7 @@ sidebar:
   All models using protocol 1.0 and 2.0
 
 
-#### Sample code
+### Sample code
 
 
 ```c
@@ -316,7 +318,7 @@ int main()
 
 
 
-#### Details
+### Details
 
 ```c
 #ifdef __linux__
@@ -360,7 +362,7 @@ All libraries of Dynamixel SDK are linked with the header file `dynamixel_sdk.h`
 #define ADDR_PRO_PRESENT_POSITION       611
 ```
 
-Dynamixel series have their own control tables: Addresses and Byte Length in each items. To control one of the items, its address (and length if necessary) is required. Find your requirements in http://support.robotis.com/.
+Dynamixel series have their own control tables: Addresses and Byte Length in each items. To control one of the items, its address (and length if necessary) is required. Find your requirements in http://emanual.robotis.com/.
 
 ```c
 // Protocol version
@@ -392,7 +394,7 @@ Dynamixel uses either or both protocols: Protocol 1.0 and Protocol 2.0. Choose o
 
 Here we set some variables to let you freely change them and use them to run the example code.
 
-As the document already said in [previous chapter](/docs/en/software/dynamixel/dynamixel_sdk/device_setup/dynamixel/#dynamixel), customize Dynamixel control table items, such as `DXL_ID` number, communication `BAUDRATE`, and the `DEVICENAME`, on your own terms of needs. In particular, `BAUDRATE` and `DEVICENAME` have systematical dependencies on your controller, so make clear what kind of communication method you will use.
+As the document already said in [previous chapter](/docs/en/software/dynamixel/dynamixel_sdk/device_setup/#dynamixel), customize Dynamixel control table items, such as `DXL_ID` number, communication `BAUDRATE`, and the `DEVICENAME`, on your own terms of needs. In particular, `BAUDRATE` and `DEVICENAME` have systematical dependencies on your controller, so make clear what kind of communication method you will use.
 
 Dynamixel basically needs the `TORQUE_ENABLE` to be rotating or give you its internal information. On the other hand, it doesn't need torque enabled if you get your goal, so finally do `TORQUE_DISABLE` to prepare to the next sequence.
 
