@@ -285,11 +285,33 @@ Remove bolts and cover plate to reveal External Port connector.
 ### <a name="hardware-error-status"></a>**[Hardware Error Status(518)](#hardware-error-status518)**
 {% include en/dxl/pro-plus/control_table_518_hardware_error_status.md %}
 
-### <a name="velocity-i-gain"></a><a name="velocity-p-gain"></a>**[Velocity PI Gain(524, 526), Feedforward 2nd Gains(536)](#velocity-pi-gain524-526, Feedforward 2nd Gains(536))**
-{% include en/dxl/pro-plus/control_table_524_velocity_gain.md %}
+### <a name="velocity-i-gain"><a name="position-p-gain"></a><a name="feedforward-2nd-gain"></a><a name="feedforward-1st-gain"></a>**[Velocity PI Gain(524, 526), Position PID Gain(528,530,532), Feedforward 2nd Gains(536), Feedforward 1st Gains(538)](#velocity-pi-gain524-526, #position-pid-gain528-530-532, Feedforward 2nd Gains536, Feedforward 1st Gains538)**
+These values indicate Gains of Current based Position Control. Position P Gain of the device's internal controller is abbreviated to K<sub>P</sub>P and that of the Control Table is abbreviated to K<sub>P</sub>P<sub>(TBL)</sub>.
 
-### <a name="position-d-gain"></a><a name="position-i-gain"></a><a name="position-p-gain"></a>**[Position PID Gain(528,530,532), Feedforward 1st Gains(538)](#position-pid-gain528-530-532, Feedforward 1st Gains(538))**
-{% include en/dxl/pro-plus/control_table_528_position_gain.md %}
+|                           |  Controller Gain  |   Range    |          Description          |
+|:-------------------------:|:-----------------:|:----------:|:-----------------------------:|
+| Velocity I Gain(524) | K<sub>V</sub>I | 0 ~ 32,767 | Velocity Integral Gain |
+| Velocity P Gain(526) | K<sub>V</sub>P | 0 ~ 32,767 | Velocity Proportion Gain |
+| Position D Gain(528) | K<sub>P</sub>D | 0 ~ 32,767 | Position Differential Gain |
+| Position I Gain(530) | K<sub>P</sub>I | 0 ~ 32,767 | Position Integral Gain |
+| Position P Gain(532) | K<sub>P</sub>P | 0 ~ 32,767 | Position Proportion Gain |
+| Feedforward 2nd Gain(536) | K<sub>FF1st</sub> | 0 ~ 32,767 | Feedforward Acceleration Gain |
+| Feedforward 1st Gain(538) | K<sub>FF1st</sub> | 0 ~ 32,767 | Feedforward Velocity Gain |
+
+Below figure is a block diagram describing the position controller in Current-based Position Control Mode. When the instruction is received by the device, it takes following steps until driving the device.
+
+1. An Instruction from the user is transmitted via communication bus, then registered to Goal Position(564).
+2. Goal Position(564) is converted to desired Position Trajectory and Velocity Trajectory by Profile Acceleration(556).
+3. The desired Velocity Trajectory and Position Trajectory are stored at Velocity Trajectory(584) and Position Trajectory(588).
+4. Feedforward and PID controller calculates PWM output for the motor based on the desired trajectories.
+5. Goal PWM(584) sets a limit on the calculated PWM output and decides the final PWM value.
+6. The final PWM value is applied to the motor through an Inverter, and the device is driven.
+7. Results are stored at Present Position(580), Present Velocity(576), Present PWM(572) and Present Current(574).
+
+![](/assets/images/platform/rh_p12_rn/rh_p12_rn_a_position.png)
+
+**NOTE** : K<sub>a</sub> stands for Anti-windup Gain that cannot be modified by users.
+{: .notice}
 
 ### <a name="bus-watchdog"></a>**[Bus Watchdog(546)](#bus-watchdog546)**
 {% include en/dxl/pro-plus/control_table_546_bus_watchdog.md %}
@@ -301,13 +323,62 @@ Remove bolts and cover plate to reveal External Port connector.
 {% include en/dxl/pro-plus/control_table_550_goal_current.md %}
 
 ### <a name="goal-velocity"></a>**[Goal Velocity(552)](#goal-velocity552)**
-{% include en/dxl/pro-plus/control_table_552_goal_velocity.md %}
+Goal Velocity(552) value is used as an input limiter of velocity controller.  
+This value cannot exceed Velocity Limit(44).
 
 ### <a name="profile-acceleration"></a>**[Profile Acceleration(556)](#profile-acceleration556)**
 {% include en/dxl/pro-plus/control_table_556_profile_acceleration.md %}
 
 ### <a name="profile-velocity"></a>**[Profile Velocity(560)](#profile-velocity560)**
-{% include en/dxl/pro-plus/control_table_560_profile_velocity.md %}
+The Maximum velocity for Profile can be set with this value.  
+Profile Velocity(560) can be used in Position Control Mode and Extended Position Control Mode.  
+Profile Velocity(560) cannot exceed Velocity Limit(44).  
+
+|      Unit      |      Value Range       |             Description              |
+|:--------------:|:----------------------:|:------------------------------------:|
+| 0.01 [rev/min] | 0 ~ Velocity Limit(44) | ‘0’ stands for the infinite velocity |
+
+The Profile is an acceleration/deceleration control technique to reduce vibration, noise and load on the motor by controlling dramatically changing velocity and acceleration.  
+It is also called Velocity Profile as it controls acceleration and deceleration based on velocity.  
+This device provides the following 3 types of profile.  
+Profiles are usually selected by the combination of Profile Velocity(560) and Profile Acceleration(556).  
+Trapezoidal Profile is exceptionally chosen with additional factor: travel distance(&Delta;Pos, the distance between desired position and present position).
+
+![](/assets/images/dxl/pro-plus/profile_types.png)
+
+When given Goal Position(564), the device’s profile creates desired velocity trajectory based on present velocity(initial velocity of the Profile).  
+When the device receives updated desired position via Goal Position(564) while it is moving toward the previous desired position, velocity will smoothly changed for the new desired velocity trajectory.  
+Maintaining velocity continuity while updating the desired velocity trajectory is called "Velocity Override".  
+For easier calculation in this example, let’s assume that the initial velocity of the Profile is `0`.
+
+The following explains how Profile processes Goal Position(564).
+
+1. An Instruction is recieved via communication bus, then registered in Goal Position(564).
+2. Accelerating time(t<sub>1</sub>) is calculated from Profile Velocity(560) and Profile Acceleration(556).
+3. Profile type is decided based on Profile Velocity(560), Profile Acceleration(556) and total travel distance(&Delta;Pos, the distance difference between desired position and present position).
+4. Selected Profile type is stored at Moving Status(571).(Refer to the Moving Status(571))
+5. The device is driven by the calculated desired trajectory from Profile.
+6. The desired velocity trajectory and the desired position trajectory calculated by the Profile are saved at Velocity Trajectory(584) and Position Trajectory(588) respectively.
+
+| Condition                                                     | Types of Profile                       |
+|:--------------------------------------------------------------|:---------------------------------------|
+| Profile Velocity(560) = 0                                     | Profile not used<br>(Step Instruction) |
+| (Profile Velocity(560) ≠ 0) & (Profile Acceleration(556) = 0) | Rectangular Profile                    |
+| (Profile Velocity(560) ≠ 0) & (Profile Acceleration(556) ≠ 0) | Trapezoidal Profile                    |
+
+![](/assets/images/dxl/pro-plus/velocity_profile.png)
+
+
+{% capture group_notice_03 %}
+**NOTE** : Velocity Control Mode only uses Profile Acceleration(556).  
+Step and Trapezoidal Profiles are supported and Velocity Override is supported as well.  
+Acceleration time(t<sub>1</sub>) can be calculated as below equation.
+
+**t<sub>1</sub> = 600 * {Goal Velocity(552) / Profile Acceleration(556)}**
+{% endcapture %}
+
+<div class="notice">{{ group_notice_03 | markdownify }}</div>
+
 
 ### <a name="goal-position"></a>**[Goal Position(564)](#goal-position564)**
 Desired position can be set with Goal Position(564).  
