@@ -19,8 +19,8 @@ html {
 // :lang(en) {font-family: $global-font-family;}
 // :lang(kr) {font-family: $global-kr-font-family;}
 
-:lang(en) > div {  font-family: titillium-web,sans-serif,FontAwesome; }
-:lang(kr) > div {  font-family: "Noto Sans KR",titillium-web,sans-serif,FontAwesome; }
+:lang(en) > div {  font-family: $global-font-family; }
+:lang(kr) > div {  font-family: $global-kr-font-family; }
 
 body {
   counter-reset: h1;
