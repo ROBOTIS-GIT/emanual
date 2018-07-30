@@ -30,7 +30,7 @@ sidebar:
 {% capture notice_01 %}
 **NOTE**: You can choose one of methods for uploading firmware. But we highly recommend to use **shell script**. If you need to modify TurtleBot3's firmware, you can use the second method.
 - Method #1: [**Shell Script**](#shell-script), upload the pre-built binary file using the shell script.
-- Method #2: [**Arduino IDE**](#arduino_ide), build the provided source code and upload the generated binary file using the Arduino IDE.
+- Method #2: [**Arduino IDE**](#arduino-ide), build the provided source code and upload the generated binary file using the Arduino IDE.
 {% endcapture %}
 
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
