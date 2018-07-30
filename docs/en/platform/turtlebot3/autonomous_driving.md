@@ -84,7 +84,7 @@ Whole robots and even the referee system in the field is run by ROS, so it would
 
 ### [Tutorials: 2. Install AutoRace package](#tutorials-2-install-autorace-package)
 
-`Remote PC` Open terminal, then install AutoRace package.
+`Remote PC & TurtleBot SBC` Open terminal, then install AutoRace package.
 
 ``` bash
 $ cd ~/catkin_ws/src/

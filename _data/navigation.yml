@@ -10714,7 +10714,7 @@ op2:
         url: /platform/op2/ros_package/#how-to-run-gui-program
       - title: "How to use GUI program"
         url: /platform/op2/ros_package/#how-to-use-gui-program
-        
+
 #ROBOTIS OP3 sidebar
 op3:
   - title: "Introduction"
@@ -11809,14 +11809,10 @@ turtlebot3:
     children:
     - title: "Installation"
       url: /platform/turtlebot3/machine_learning/#installation
-    - title: "Step. 1 (No Obstacle)"
-      url: /platform/turtlebot3/machine_learning/#step-1-no-obstacle
-    - title: "Step. 2 (Static Obstacle)"
-      url: /platform/turtlebot3/machine_learning/#step-2-static-obstacle
-    - title: "Step. 3 (Moving Obstacle)"
-      url: /platform/turtlebot3/machine_learning/#step-3-moving-obstacle
-    - title: "Step.  (Combination Obstacle)"
-      url: /platform/turtlebot3/machine_learning/#step-4-combination-obstacle
+    - title: "Run Machine Learning"
+      url: /platform/turtlebot3/machine_learning/#run-machine-learning
+    - title: "Set parameters"
+      url: /platform/turtlebot3/machine_learning/#set-parameters
   - title: "Locomotion"
     url: /platform/turtlebot3/locomotion/#locomotion
     children:

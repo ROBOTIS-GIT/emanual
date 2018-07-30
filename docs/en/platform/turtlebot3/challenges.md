@@ -26,7 +26,7 @@ We are preparing an online competition on [ROS Development Studio (RDS)][rds] wi
 #### TurtleBot3 AutoRace on RDS
 ![](/assets/images/platform/turtlebot3/competition/competition_autorace.png)
 
-- [TurtleBot3 AutoRace](https://rds.theconstructsim.com/tc_projects/use_project_share_link/a29e0afd-c79b-4718-80ac-95fcdd7135c0)
+- [TurtleBot3 AutoRace](https://rds.theconstructsim.com/tc_projects/use_project_share_link/21e00583-6e60-415a-aa66-bd2c78e0733a)
 
 #### Task Mission using TurtleBot3 and OpenManipulator on RDS
 ![](/assets/images/platform/turtlebot3/competition/competition_pick_and_place.png)
