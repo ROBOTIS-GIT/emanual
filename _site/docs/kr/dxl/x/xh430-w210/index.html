@@ -176,12 +176,12 @@ $(function() {
 
       function extendsearchtool() {
         if (toggle_search_tool == 0) {
-          $('#site_search').css('display', 'block');
+          $('.searchbox').css('display', 'block');
           $('#archive').css('margin-top', '40px');
           toggle_search_tool = 1;
         }
         else {
-          $('#site_search').css('display', 'none');
+          $('.searchbox').css('display', 'none');
           $('#archive').css('margin-top', '0px');
           toggle_search_tool = 0;
         }
@@ -199,22 +199,57 @@ $(function() {
     		alignTop: true,
     		overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
     	});
+      
+      // Implmentation for Local search engine with JSON file
+      // $.getJSON('/test.json', function(idx) {
+      //   $.each(idx, function(v){
+      //     console.log(v);
+      //     console.log(idx[v].header3);
+      //   })
+      // });
+      
     });
     </script>
     <script>
       $(function () {
-        var currentHash = window.location.href.split('#')[1];
+        var currentHash = $(location).attr('hash');
+        var filename = $(location).attr('href').split('/').reverse()[1];
         $(document).scroll(function () {
           $('.header-link').each(function () {
             var top = window.pageYOffset;
             var distance = top - $(this).offset().top;
-            var hash = $(this).attr('href');
+            var rawHash = $(this).attr('href');
+            var contentId = rawHash.replace('#', '');
+            var tocId = rawHash.replace('#', filename+'_toc_');
+            var searchContentId = $('#'+contentId);
+            var searchTocId = $('#'+tocId);
 
-            if (distance < 30 && distance > -30 && currentHash != hash) {
-              currentHash = hash;
-              // console.log(currentHash);
-              window.history.pushState(window.location.href, "title", currentHash);   //Update browser URL with current anchor
-              // $('#' + currentHash).attr("color", "#FF6D6D"); //Syntax error
+            if (distance < 50 && distance > -50 && currentHash != tocId) {
+              // window.history.pushState(window.location.href, "title", currentHash);   //Update browser URL history with current anchor
+              if ((searchContentId.hasClass('class-h1') || searchContentId.hasClass('class-h2') || searchContentId.hasClass('class-h3')) && $('.nav__items').has('#'+tocId).length) {
+                // console.log(contentId);
+                // console.log(tocId);
+                searchTocId.prop("checked", true);  //Open folded Toc menu
+                $('.current_contents').removeClass("current_contents");
+                
+                //Check if Buttoned ToC with children
+                // console.log(searchTocId);
+                if( searchTocId.prop("tagName") == "INPUT" ) {
+                  console.log("input detected");
+                  if( searchTocId.prop("name") == "sublevel" ) {
+                    searchTocId.closest("li.has-grandchildren").find("label > button").addClass("current_contents");
+                  }
+                }
+                else {
+                  searchTocId.addClass("current_contents");
+                }
+                
+                // Open folded Toc menu
+                searchTocId.closest("li.has-grandchildren").find("input").first().prop("checked", true);
+                searchTocId.closest("li.has-children").find("input").first().prop("checked", true);
+                
+                currentHash = tocId;
+              }
             }
           });
         });
@@ -3554,33 +3589,6 @@ $(function() {
       <button class="mobile_button" onclick="movetopage('https://github.com/ROBOTIS-GIT');" style="background-image: url(/assets/images/github_mobile_logo.png); width: 30%;">GitHub</button>
     </div>
 
-    <!-- local navigation
-    <div class="local_navigation">
-      <select id="local_navigation_depth1">
-        <option value = "default">Select Category</option>
-        
-          
-          <option id="다이나믹셀" value = "다이나믹셀">다이나믹셀</option>
-        
-          
-          <option id="플랫폼" value = "플랫폼">플랫폼</option>
-        
-          
-          <option id="교육키트" value = "교육키트">교육키트</option>
-        
-          
-          <option id="소프트웨어" value = "소프트웨어">소프트웨어</option>
-        
-          
-          <option id="부품" value = "부품">부품</option>
-        
-          
-          <option id="FAQ" value = "FAQ">FAQ</option>
-        
-      </select>
-    </div>
-     -->
-
     <!-- Google Custom Search -->
     <form class="searchbox" method="get" id="site_search">
       <script>
@@ -3597,6 +3605,8 @@ $(function() {
       <gcse:search></gcse:search>
     </form>
     <!-- end of Google Custom Search -->
+    <!-- 
+     -->
 
   </div>
 </div>
@@ -3623,9 +3633,10 @@ $(function() {
 
       
       
+      
       <li class="has-children">
-        <input type="checkbox" name="toplevel" id="#주요-사양">
-        <label for="#주요-사양"><button class="tocLevel1" id="#주요-사양" onclick="movetopage('http://localhost:4000/docs/kr/dxl/x/xh430-w210/#주요-사양');">1. 주요 사양</button></label>
+        <input type="checkbox" name="toplevel" id="xh430-w210_toc_주요-사양">
+        <label for="xh430-w210_toc_주요-사양"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/kr/dxl/x/xh430-w210/#주요-사양');">1. 주요 사양</button></label>
       
       
 
@@ -3638,9 +3649,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#성능-그래프" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#성능-그래프">1. 1. 성능 그래프</a></li>
+              <li><a class="tocLevel2" id="xh430-w210_toc_성능-그래프" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#성능-그래프">1. 1. 성능 그래프</a></li>
             
           
 
@@ -3660,9 +3672,10 @@ $(function() {
 
       
       
+      
       <li class="has-children">
-        <input type="checkbox" name="toplevel" id="#컨트롤-테이블">
-        <label for="#컨트롤-테이블"><button class="tocLevel1" id="#컨트롤-테이블" onclick="movetopage('http://localhost:4000/docs/kr/dxl/x/xh430-w210/#컨트롤-테이블');">2. 컨트롤 테이블</button></label>
+        <input type="checkbox" name="toplevel" id="xh430-w210_toc_컨트롤-테이블">
+        <label for="xh430-w210_toc_컨트롤-테이블"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/kr/dxl/x/xh430-w210/#컨트롤-테이블');">2. 컨트롤 테이블</button></label>
       
       
 
@@ -3675,11 +3688,12 @@ $(function() {
 
           
           
+          
             
               
               <li class="has-grandchildren">
-                <input type="checkbox" name="sublevel" id="#컨트롤-테이블-데이터-주소">
-                <label for="#컨트롤-테이블-데이터-주소"><button class="tocLevel2" id="#컨트롤-테이블-데이터-주소" onclick="movetopage('http://localhost:4000/docs/kr/dxl/x/xh430-w210/#컨트롤-테이블-데이터-주소');">2. 1. 컨트롤 테이블, 데이터, 주소</button></label>
+                <input type="checkbox" name="sublevel" id="xh430-w210_toc_컨트롤-테이블-데이터-주소">
+                <label for="xh430-w210_toc_컨트롤-테이블-데이터-주소"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/kr/dxl/x/xh430-w210/#컨트롤-테이블-데이터-주소');">2. 1. 컨트롤 테이블, 데이터, 주소</button></label>
             
           
 
@@ -3691,8 +3705,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#영역-eeprom-ram">- 영역 (EEPROM, RAM)</a>
+                  <a class="tocLevel3" id="xh430-w210_toc_영역-eeprom-ram" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#영역-eeprom-ram">- 영역 (EEPROM, RAM)</a>
                 </li>
               
               
@@ -3702,8 +3718,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#크기">- 크기</a>
+                  <a class="tocLevel3" id="xh430-w210_toc_크기" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#크기">- 크기</a>
                 </li>
               
               
@@ -3713,8 +3731,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#접근권한">- 접근권한</a>
+                  <a class="tocLevel3" id="xh430-w210_toc_접근권한" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#접근권한">- 접근권한</a>
                 </li>
               
               
@@ -3724,8 +3744,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#초기값">- 초기값</a>
+                  <a class="tocLevel3" id="xh430-w210_toc_초기값" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#초기값">- 초기값</a>
                 </li>
               
               
@@ -3741,9 +3763,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#eeprom-영역" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#eeprom-영역">2. 2. EEPROM 영역</a></li>
+              <li><a class="tocLevel2" id="xh430-w210_toc_eeprom-영역" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#eeprom-영역">2. 2. EEPROM 영역</a></li>
             
           
 
@@ -3755,9 +3778,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#ram-영역" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#ram-영역">2. 3. RAM 영역</a></li>
+              <li><a class="tocLevel2" id="xh430-w210_toc_ram-영역" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#ram-영역">2. 3. RAM 영역</a></li>
             
           
 
@@ -3767,13 +3791,14 @@ $(function() {
 
           
 
+          
           
           
             
               
               <li class="has-grandchildren">
-                <input type="checkbox" name="sublevel" id="#컨트롤-테이블-설명">
-                <label for="#컨트롤-테이블-설명"><button class="tocLevel2" id="#컨트롤-테이블-설명" onclick="movetopage('http://localhost:4000/docs/kr/dxl/x/xh430-w210/#컨트롤-테이블-설명');">2. 4. 컨트롤 테이블 설명</button></label>
+                <input type="checkbox" name="sublevel" id="xh430-w210_toc_컨트롤-테이블-설명">
+                <label for="xh430-w210_toc_컨트롤-테이블-설명"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/kr/dxl/x/xh430-w210/#컨트롤-테이블-설명');">2. 4. 컨트롤 테이블 설명</button></label>
             
           
 
@@ -3785,8 +3810,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#model-number0">- Model Number(0)</a>
+                  <a class="tocLevel3" id="xh430-w210_toc_model-number0" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#model-number0">- Model Number(0)</a>
                 </li>
               
               
@@ -3796,8 +3823,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#firmware-version6">- Firmware Version(6)</a>
+                  <a class="tocLevel3" id="xh430-w210_toc_firmware-version6" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#firmware-version6">- Firmware Version(6)</a>
                 </li>
               
               
@@ -3807,8 +3836,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#id7">- ID(7)</a>
+                  <a class="tocLevel3" id="xh430-w210_toc_id7" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#id7">- ID(7)</a>
                 </li>
               
               
@@ -3818,8 +3849,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#baud-rate8">- Baud Rate(8)</a>
+                  <a class="tocLevel3" id="xh430-w210_toc_baud-rate8" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#baud-rate8">- Baud Rate(8)</a>
                 </li>
               
               
@@ -3829,8 +3862,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#return-delay-time9">- Return Delay Time(9)</a>
+                  <a class="tocLevel3" id="xh430-w210_toc_return-delay-time9" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#return-delay-time9">- Return Delay Time(9)</a>
                 </li>
               
               
@@ -3840,8 +3875,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#drive-mode10">- Drive Mode(10)</a>
+                  <a class="tocLevel3" id="xh430-w210_toc_drive-mode10" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#drive-mode10">- Drive Mode(10)</a>
                 </li>
               
               
@@ -3851,8 +3888,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#operating-mode11">- Operating Mode(11)</a>
+                  <a class="tocLevel3" id="xh430-w210_toc_operating-mode11" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#operating-mode11">- Operating Mode(11)</a>
                 </li>
               
               
@@ -3862,8 +3901,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#secondaryshadow-id12">- Secondary(Shadow) ID(12)</a>
+                  <a class="tocLevel3" id="xh430-w210_toc_secondaryshadow-id12" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#secondaryshadow-id12">- Secondary(Shadow) ID(12)</a>
                 </li>
               
               
@@ -3873,8 +3914,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#protocol-version13">- Protocol Version(13)</a>
+                  <a class="tocLevel3" id="xh430-w210_toc_protocol-version13" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#protocol-version13">- Protocol Version(13)</a>
                 </li>
               
               
@@ -3884,8 +3927,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#homing-offset20">- Homing Offset(20)</a>
+                  <a class="tocLevel3" id="xh430-w210_toc_homing-offset20" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#homing-offset20">- Homing Offset(20)</a>
                 </li>
               
               
@@ -3895,8 +3940,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#moving-threshold24">- Moving Threshold(24)</a>
+                  <a class="tocLevel3" id="xh430-w210_toc_moving-threshold24" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#moving-threshold24">- Moving Threshold(24)</a>
                 </li>
               
               
@@ -3906,8 +3953,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#temperature-limit31">- Temperature Limit(31)</a>
+                  <a class="tocLevel3" id="xh430-w210_toc_temperature-limit31" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#temperature-limit31">- Temperature Limit(31)</a>
                 </li>
               
               
@@ -3917,8 +3966,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#minmax-voltage-limit32-34">- Min/Max Voltage Limit(32,34)</a>
+                  <a class="tocLevel3" id="xh430-w210_toc_minmax-voltage-limit32-34" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#minmax-voltage-limit32-34">- Min/Max Voltage Limit(32,34)</a>
                 </li>
               
               
@@ -3928,8 +3979,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#pwm-limit36">- PWM Limit(36)</a>
+                  <a class="tocLevel3" id="xh430-w210_toc_pwm-limit36" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#pwm-limit36">- PWM Limit(36)</a>
                 </li>
               
               
@@ -3939,8 +3992,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#current-limit38">- Current Limit(38)</a>
+                  <a class="tocLevel3" id="xh430-w210_toc_current-limit38" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#current-limit38">- Current Limit(38)</a>
                 </li>
               
               
@@ -3950,8 +4005,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#acceleration-limit40">- Acceleration Limit(40)</a>
+                  <a class="tocLevel3" id="xh430-w210_toc_acceleration-limit40" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#acceleration-limit40">- Acceleration Limit(40)</a>
                 </li>
               
               
@@ -3961,8 +4018,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#velocity-limit44">- Velocity Limit(44)</a>
+                  <a class="tocLevel3" id="xh430-w210_toc_velocity-limit44" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#velocity-limit44">- Velocity Limit(44)</a>
                 </li>
               
               
@@ -3972,8 +4031,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#minmax-position-limit48-52">- Min/Max Position Limit(48, 52)</a>
+                  <a class="tocLevel3" id="xh430-w210_toc_minmax-position-limit48-52" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#minmax-position-limit48-52">- Min/Max Position Limit(48, 52)</a>
                 </li>
               
               
@@ -3983,8 +4044,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#shutdown63">- Shutdown(63)</a>
+                  <a class="tocLevel3" id="xh430-w210_toc_shutdown63" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#shutdown63">- Shutdown(63)</a>
                 </li>
               
               
@@ -3994,8 +4057,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#torque-enable64">- Torque Enable(64)</a>
+                  <a class="tocLevel3" id="xh430-w210_toc_torque-enable64" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#torque-enable64">- Torque Enable(64)</a>
                 </li>
               
               
@@ -4005,8 +4070,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#led65">- LED(65)</a>
+                  <a class="tocLevel3" id="xh430-w210_toc_led65" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#led65">- LED(65)</a>
                 </li>
               
               
@@ -4016,8 +4083,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#status-return-level68">- Status Return Level(68)</a>
+                  <a class="tocLevel3" id="xh430-w210_toc_status-return-level68" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#status-return-level68">- Status Return Level(68)</a>
                 </li>
               
               
@@ -4027,8 +4096,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#registered-instruction69">- Registered Instruction(69)</a>
+                  <a class="tocLevel3" id="xh430-w210_toc_registered-instruction69" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#registered-instruction69">- Registered Instruction(69)</a>
                 </li>
               
               
@@ -4038,8 +4109,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#hardware-error-status70">- Hardware Error Status(70)</a>
+                  <a class="tocLevel3" id="xh430-w210_toc_hardware-error-status70" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#hardware-error-status70">- Hardware Error Status(70)</a>
                 </li>
               
               
@@ -4049,8 +4122,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#velocity-pi-gain76-78">- Velocity PI Gain(76, 78)</a>
+                  <a class="tocLevel3" id="xh430-w210_toc_velocity-pi-gain76-78" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#velocity-pi-gain76-78">- Velocity PI Gain(76, 78)</a>
                 </li>
               
               
@@ -4060,8 +4135,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#position-pid-gain80-82-84">- Position PID Gain(80, 82, 84)</a>
+                  <a class="tocLevel3" id="xh430-w210_toc_position-pid-gain80-82-84" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#position-pid-gain80-82-84">- Position PID Gain(80, 82, 84)</a>
                 </li>
               
               
@@ -4071,8 +4148,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#feedforward-1st2nd-gains88-90">- Feedforward 1st/2nd Gains(88, 90)</a>
+                  <a class="tocLevel3" id="xh430-w210_toc_feedforward-1st2nd-gains88-90" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#feedforward-1st2nd-gains88-90">- Feedforward 1st/2nd Gains(88, 90)</a>
                 </li>
               
               
@@ -4082,8 +4161,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#bus-watchdog98">- BUS Watchdog(98)</a>
+                  <a class="tocLevel3" id="xh430-w210_toc_bus-watchdog98" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#bus-watchdog98">- BUS Watchdog(98)</a>
                 </li>
               
               
@@ -4093,8 +4174,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#goal-pwm100">- Goal PWM(100)</a>
+                  <a class="tocLevel3" id="xh430-w210_toc_goal-pwm100" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#goal-pwm100">- Goal PWM(100)</a>
                 </li>
               
               
@@ -4104,8 +4187,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#goal-current102">- Goal Current(102)</a>
+                  <a class="tocLevel3" id="xh430-w210_toc_goal-current102" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#goal-current102">- Goal Current(102)</a>
                 </li>
               
               
@@ -4115,8 +4200,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#goal-velocity104">- Goal Velocity(104)</a>
+                  <a class="tocLevel3" id="xh430-w210_toc_goal-velocity104" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#goal-velocity104">- Goal Velocity(104)</a>
                 </li>
               
               
@@ -4126,8 +4213,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#profile-acceleration108">- Profile Acceleration(108)</a>
+                  <a class="tocLevel3" id="xh430-w210_toc_profile-acceleration108" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#profile-acceleration108">- Profile Acceleration(108)</a>
                 </li>
               
               
@@ -4137,8 +4226,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#profile-velocity112">- Profile Velocity(112)</a>
+                  <a class="tocLevel3" id="xh430-w210_toc_profile-velocity112" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#profile-velocity112">- Profile Velocity(112)</a>
                 </li>
               
               
@@ -4148,8 +4239,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#goal-position116">- Goal Position(116)</a>
+                  <a class="tocLevel3" id="xh430-w210_toc_goal-position116" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#goal-position116">- Goal Position(116)</a>
                 </li>
               
               
@@ -4159,8 +4252,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#realtime-tick120">- Realtime Tick(120)</a>
+                  <a class="tocLevel3" id="xh430-w210_toc_realtime-tick120" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#realtime-tick120">- Realtime Tick(120)</a>
                 </li>
               
               
@@ -4170,8 +4265,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#moving122">- Moving(122)</a>
+                  <a class="tocLevel3" id="xh430-w210_toc_moving122" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#moving122">- Moving(122)</a>
                 </li>
               
               
@@ -4181,8 +4278,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#moving-status123">- Moving Status(123)</a>
+                  <a class="tocLevel3" id="xh430-w210_toc_moving-status123" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#moving-status123">- Moving Status(123)</a>
                 </li>
               
               
@@ -4192,8 +4291,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#present-pwm124">- Present PWM(124)</a>
+                  <a class="tocLevel3" id="xh430-w210_toc_present-pwm124" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#present-pwm124">- Present PWM(124)</a>
                 </li>
               
               
@@ -4203,8 +4304,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#present-current126">- Present Current(126)</a>
+                  <a class="tocLevel3" id="xh430-w210_toc_present-current126" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#present-current126">- Present Current(126)</a>
                 </li>
               
               
@@ -4214,8 +4317,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#present-velocity128">- Present Velocity(128)</a>
+                  <a class="tocLevel3" id="xh430-w210_toc_present-velocity128" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#present-velocity128">- Present Velocity(128)</a>
                 </li>
               
               
@@ -4225,8 +4330,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#present-position132">- Present Position(132)</a>
+                  <a class="tocLevel3" id="xh430-w210_toc_present-position132" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#present-position132">- Present Position(132)</a>
                 </li>
               
               
@@ -4236,8 +4343,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#velocity-trajectory136">- Velocity Trajectory(136)</a>
+                  <a class="tocLevel3" id="xh430-w210_toc_velocity-trajectory136" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#velocity-trajectory136">- Velocity Trajectory(136)</a>
                 </li>
               
               
@@ -4247,8 +4356,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#position-trajectory140">- Position Trajectory(140)</a>
+                  <a class="tocLevel3" id="xh430-w210_toc_position-trajectory140" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#position-trajectory140">- Position Trajectory(140)</a>
                 </li>
               
               
@@ -4258,8 +4369,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#present-input-voltage144">- Present Input Voltage(144)</a>
+                  <a class="tocLevel3" id="xh430-w210_toc_present-input-voltage144" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#present-input-voltage144">- Present Input Voltage(144)</a>
                 </li>
               
               
@@ -4269,8 +4382,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#present-temperature146">- Present Temperature(146)</a>
+                  <a class="tocLevel3" id="xh430-w210_toc_present-temperature146" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#present-temperature146">- Present Temperature(146)</a>
                 </li>
               
               
@@ -4280,8 +4395,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#indirect-address">- Indirect Address</a>
+                  <a class="tocLevel3" id="xh430-w210_toc_indirect-address" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#indirect-address">- Indirect Address</a>
                 </li>
               
               
@@ -4291,8 +4408,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#indirect-data">- Indirect Data</a>
+                  <a class="tocLevel3" id="xh430-w210_toc_indirect-data" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#indirect-data">- Indirect Data</a>
                 </li>
               
               
@@ -4316,9 +4435,10 @@ $(function() {
 
       
       
+      
       <li class="has-children">
-        <input type="checkbox" name="toplevel" id="#조립-예시">
-        <label for="#조립-예시"><button class="tocLevel1" id="#조립-예시" onclick="movetopage('http://localhost:4000/docs/kr/dxl/x/xh430-w210/#조립-예시');">3. 조립 예시</button></label>
+        <input type="checkbox" name="toplevel" id="xh430-w210_toc_조립-예시">
+        <label for="xh430-w210_toc_조립-예시"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/kr/dxl/x/xh430-w210/#조립-예시');">3. 조립 예시</button></label>
       
       
 
@@ -4331,9 +4451,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#배선-예시" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#배선-예시">3. 1. 배선 예시</a></li>
+              <li><a class="tocLevel2" id="xh430-w210_toc_배선-예시" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#배선-예시">3. 1. 배선 예시</a></li>
             
           
 
@@ -4345,9 +4466,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#옵션프레임-조립" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#옵션프레임-조립">3. 2. 옵션프레임 조립</a></li>
+              <li><a class="tocLevel2" id="xh430-w210_toc_옵션프레임-조립" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#옵션프레임-조립">3. 2. 옵션프레임 조립</a></li>
             
           
 
@@ -4367,9 +4489,10 @@ $(function() {
 
       
       
+      
       <li class="has-children">
-        <input type="checkbox" name="toplevel" id="#유지보수">
-        <label for="#유지보수"><button class="tocLevel1" id="#유지보수" onclick="movetopage('http://localhost:4000/docs/kr/dxl/x/xh430-w210/#유지보수');">4. 유지보수</button></label>
+        <input type="checkbox" name="toplevel" id="xh430-w210_toc_유지보수">
+        <label for="xh430-w210_toc_유지보수"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/kr/dxl/x/xh430-w210/#유지보수');">4. 유지보수</button></label>
       
       
 
@@ -4382,9 +4505,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#혼과-기어-교체" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#혼과-기어-교체">4. 1. 혼과 기어 교체</a></li>
+              <li><a class="tocLevel2" id="xh430-w210_toc_혼과-기어-교체" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#혼과-기어-교체">4. 1. 혼과 기어 교체</a></li>
             
           
 
@@ -4404,9 +4528,10 @@ $(function() {
 
       
       
+      
       <li class="has-children">
-        <input type="checkbox" name="toplevel" id="#참고자료">
-        <label for="#참고자료"><button class="tocLevel1" id="#참고자료" onclick="movetopage('http://localhost:4000/docs/kr/dxl/x/xh430-w210/#참고자료');">5. 참고자료</button></label>
+        <input type="checkbox" name="toplevel" id="xh430-w210_toc_참고자료">
+        <label for="xh430-w210_toc_참고자료"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/kr/dxl/x/xh430-w210/#참고자료');">5. 참고자료</button></label>
       
       
 
@@ -4419,9 +4544,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#퀵스타트" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#퀵스타트">5. 1. 퀵스타트</a></li>
+              <li><a class="tocLevel2" id="xh430-w210_toc_퀵스타트" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#퀵스타트">5. 1. 퀵스타트</a></li>
             
           
 
@@ -4433,9 +4559,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#커넥터-정보" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#커넥터-정보">5. 2. 커넥터 정보</a></li>
+              <li><a class="tocLevel2" id="xh430-w210_toc_커넥터-정보" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#커넥터-정보">5. 2. 커넥터 정보</a></li>
             
           
 
@@ -4447,9 +4574,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#도면" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#도면">5. 3. 도면</a></li>
+              <li><a class="tocLevel2" id="xh430-w210_toc_도면" href="http://localhost:4000/docs/kr/dxl/x/xh430-w210/#도면">5. 3. 도면</a></li>
             
           
 

@@ -176,12 +176,12 @@ $(function() {
 
       function extendsearchtool() {
         if (toggle_search_tool == 0) {
-          $('#site_search').css('display', 'block');
+          $('.searchbox').css('display', 'block');
           $('#archive').css('margin-top', '40px');
           toggle_search_tool = 1;
         }
         else {
-          $('#site_search').css('display', 'none');
+          $('.searchbox').css('display', 'none');
           $('#archive').css('margin-top', '0px');
           toggle_search_tool = 0;
         }
@@ -199,22 +199,57 @@ $(function() {
     		alignTop: true,
     		overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
     	});
+      
+      // Implmentation for Local search engine with JSON file
+      // $.getJSON('/test.json', function(idx) {
+      //   $.each(idx, function(v){
+      //     console.log(v);
+      //     console.log(idx[v].header3);
+      //   })
+      // });
+      
     });
     </script>
     <script>
       $(function () {
-        var currentHash = window.location.href.split('#')[1];
+        var currentHash = $(location).attr('hash');
+        var filename = $(location).attr('href').split('/').reverse()[1];
         $(document).scroll(function () {
           $('.header-link').each(function () {
             var top = window.pageYOffset;
             var distance = top - $(this).offset().top;
-            var hash = $(this).attr('href');
+            var rawHash = $(this).attr('href');
+            var contentId = rawHash.replace('#', '');
+            var tocId = rawHash.replace('#', filename+'_toc_');
+            var searchContentId = $('#'+contentId);
+            var searchTocId = $('#'+tocId);
 
-            if (distance < 30 && distance > -30 && currentHash != hash) {
-              currentHash = hash;
-              // console.log(currentHash);
-              window.history.pushState(window.location.href, "title", currentHash);   //Update browser URL with current anchor
-              // $('#' + currentHash).attr("color", "#FF6D6D"); //Syntax error
+            if (distance < 50 && distance > -50 && currentHash != tocId) {
+              // window.history.pushState(window.location.href, "title", currentHash);   //Update browser URL history with current anchor
+              if ((searchContentId.hasClass('class-h1') || searchContentId.hasClass('class-h2') || searchContentId.hasClass('class-h3')) && $('.nav__items').has('#'+tocId).length) {
+                // console.log(contentId);
+                // console.log(tocId);
+                searchTocId.prop("checked", true);  //Open folded Toc menu
+                $('.current_contents').removeClass("current_contents");
+                
+                //Check if Buttoned ToC with children
+                // console.log(searchTocId);
+                if( searchTocId.prop("tagName") == "INPUT" ) {
+                  console.log("input detected");
+                  if( searchTocId.prop("name") == "sublevel" ) {
+                    searchTocId.closest("li.has-grandchildren").find("label > button").addClass("current_contents");
+                  }
+                }
+                else {
+                  searchTocId.addClass("current_contents");
+                }
+                
+                // Open folded Toc menu
+                searchTocId.closest("li.has-grandchildren").find("input").first().prop("checked", true);
+                searchTocId.closest("li.has-children").find("input").first().prop("checked", true);
+                
+                currentHash = tocId;
+              }
             }
           });
         });
@@ -3332,33 +3367,6 @@ $(function() {
       <button class="mobile_button" onclick="movetopage('https://github.com/ROBOTIS-GIT');" style="background-image: url(/assets/images/github_mobile_logo.png); width: 30%;">GitHub</button>
     </div>
 
-    <!-- local navigation
-    <div class="local_navigation">
-      <select id="local_navigation_depth1">
-        <option value = "default">Select Category</option>
-        
-          
-          <option id="DYNAMIXEL" value = "DYNAMIXEL">DYNAMIXEL</option>
-        
-          
-          <option id="PLATFORM" value = "PLATFORM">PLATFORM</option>
-        
-          
-          <option id="STEAM" value = "STEAM">STEAM</option>
-        
-          
-          <option id="SOFTWARE" value = "SOFTWARE">SOFTWARE</option>
-        
-          
-          <option id="PARTS" value = "PARTS">PARTS</option>
-        
-          
-          <option id="FAQ" value = "FAQ">FAQ</option>
-        
-      </select>
-    </div>
-     -->
-
     <!-- Google Custom Search -->
     <form class="searchbox" method="get" id="site_search">
       <script>
@@ -3375,6 +3383,12 @@ $(function() {
       <gcse:search></gcse:search>
     </form>
     <!-- end of Google Custom Search -->
+    <!-- 
+    <form class="searchbox" id="search-form">
+      <input type="search" placeholder="Search" style="height:56px;width:230px;size:16px;">
+      <button type="submit" style="height:56px;width:55px;">Search</button>
+    </form>
+     -->
 
   </div>
 </div>
@@ -3401,9 +3415,10 @@ $(function() {
 
       
       
+      
       <li class="has-children">
-        <input type="checkbox" name="toplevel" id="#specifications">
-        <label for="#specifications"><button class="tocLevel1" id="#specifications" onclick="movetopage('http://localhost:4000/docs/en/dxl/x/xm430-w210/#specifications');">1. Specifications</button></label>
+        <input type="checkbox" name="toplevel" id="xm430-w210_toc_specifications">
+        <label for="xm430-w210_toc_specifications"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/en/dxl/x/xm430-w210/#specifications');">1. Specifications</button></label>
       
       
 
@@ -3416,9 +3431,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#performance-graph" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#performance-graph">1. 1. Performance Graph</a></li>
+              <li><a class="tocLevel2" id="xm430-w210_toc_performance-graph" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#performance-graph">1. 1. Performance Graph</a></li>
             
           
 
@@ -3438,9 +3454,10 @@ $(function() {
 
       
       
+      
       <li class="has-children">
-        <input type="checkbox" name="toplevel" id="#control-table">
-        <label for="#control-table"><button class="tocLevel1" id="#control-table" onclick="movetopage('http://localhost:4000/docs/en/dxl/x/xm430-w210/#control-table');">2. Control Table</button></label>
+        <input type="checkbox" name="toplevel" id="xm430-w210_toc_control-table">
+        <label for="xm430-w210_toc_control-table"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/en/dxl/x/xm430-w210/#control-table');">2. Control Table</button></label>
       
       
 
@@ -3453,11 +3470,12 @@ $(function() {
 
           
           
+          
             
               
               <li class="has-grandchildren">
-                <input type="checkbox" name="sublevel" id="#control-table-data-address">
-                <label for="#control-table-data-address"><button class="tocLevel2" id="#control-table-data-address" onclick="movetopage('http://localhost:4000/docs/en/dxl/x/xm430-w210/#control-table-data-address');">2. 1. Control Table, Data, Address</button></label>
+                <input type="checkbox" name="sublevel" id="xm430-w210_toc_control-table-data-address">
+                <label for="xm430-w210_toc_control-table-data-address"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/en/dxl/x/xm430-w210/#control-table-data-address');">2. 1. Control Table, Data, Address</button></label>
             
           
 
@@ -3469,8 +3487,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#area-eeprom-ram">- Area(EEPROM, RAM)</a>
+                  <a class="tocLevel3" id="xm430-w210_toc_area-eeprom-ram" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#area-eeprom-ram">- Area(EEPROM, RAM)</a>
                 </li>
               
               
@@ -3480,8 +3500,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#size">- Size</a>
+                  <a class="tocLevel3" id="xm430-w210_toc_size" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#size">- Size</a>
                 </li>
               
               
@@ -3491,8 +3513,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#access">- Access</a>
+                  <a class="tocLevel3" id="xm430-w210_toc_access" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#access">- Access</a>
                 </li>
               
               
@@ -3502,8 +3526,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#initial-value">- Initial Value</a>
+                  <a class="tocLevel3" id="xm430-w210_toc_initial-value" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#initial-value">- Initial Value</a>
                 </li>
               
               
@@ -3519,9 +3545,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#control-table-of-eeprom-area" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#control-table-of-eeprom-area">2. 2. EEPROM Area</a></li>
+              <li><a class="tocLevel2" id="xm430-w210_toc_control-table-of-eeprom-area" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#control-table-of-eeprom-area">2. 2. EEPROM Area</a></li>
             
           
 
@@ -3533,9 +3560,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#control-table-of-ram-area" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#control-table-of-ram-area">2. 3. RAM Area</a></li>
+              <li><a class="tocLevel2" id="xm430-w210_toc_control-table-of-ram-area" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#control-table-of-ram-area">2. 3. RAM Area</a></li>
             
           
 
@@ -3545,13 +3573,14 @@ $(function() {
 
           
 
+          
           
           
             
               
               <li class="has-grandchildren">
-                <input type="checkbox" name="sublevel" id="#control-table-description">
-                <label for="#control-table-description"><button class="tocLevel2" id="#control-table-description" onclick="movetopage('http://localhost:4000/docs/en/dxl/x/xm430-w210/#control-table-description');">2. 4. Control Table Description</button></label>
+                <input type="checkbox" name="sublevel" id="xm430-w210_toc_control-table-description">
+                <label for="xm430-w210_toc_control-table-description"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/en/dxl/x/xm430-w210/#control-table-description');">2. 4. Control Table Description</button></label>
             
           
 
@@ -3563,8 +3592,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#model-number0">- Model Number(0)</a>
+                  <a class="tocLevel3" id="xm430-w210_toc_model-number0" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#model-number0">- Model Number(0)</a>
                 </li>
               
               
@@ -3574,8 +3605,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#firmware-version6">- Firmware Version(6)</a>
+                  <a class="tocLevel3" id="xm430-w210_toc_firmware-version6" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#firmware-version6">- Firmware Version(6)</a>
                 </li>
               
               
@@ -3585,8 +3618,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#id7">- ID(7)</a>
+                  <a class="tocLevel3" id="xm430-w210_toc_id7" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#id7">- ID(7)</a>
                 </li>
               
               
@@ -3596,8 +3631,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#baud-rate8">- Baud Rate(8)</a>
+                  <a class="tocLevel3" id="xm430-w210_toc_baud-rate8" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#baud-rate8">- Baud Rate(8)</a>
                 </li>
               
               
@@ -3607,8 +3644,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#return-delay-time9">- Return Delay Time(9)</a>
+                  <a class="tocLevel3" id="xm430-w210_toc_return-delay-time9" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#return-delay-time9">- Return Delay Time(9)</a>
                 </li>
               
               
@@ -3618,8 +3657,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#drive-mode10">- Drive Mode(10)</a>
+                  <a class="tocLevel3" id="xm430-w210_toc_drive-mode10" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#drive-mode10">- Drive Mode(10)</a>
                 </li>
               
               
@@ -3629,8 +3670,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#operating-mode11">- Operating Mode(11)</a>
+                  <a class="tocLevel3" id="xm430-w210_toc_operating-mode11" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#operating-mode11">- Operating Mode(11)</a>
                 </li>
               
               
@@ -3640,8 +3683,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#secondaryshadow-id12">- Secondary(Shadow) ID(12)</a>
+                  <a class="tocLevel3" id="xm430-w210_toc_secondaryshadow-id12" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#secondaryshadow-id12">- Secondary(Shadow) ID(12)</a>
                 </li>
               
               
@@ -3651,8 +3696,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#protocol-version13">- Protocol Version(13)</a>
+                  <a class="tocLevel3" id="xm430-w210_toc_protocol-version13" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#protocol-version13">- Protocol Version(13)</a>
                 </li>
               
               
@@ -3662,8 +3709,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#homing-offset20">- Homing Offset(20)</a>
+                  <a class="tocLevel3" id="xm430-w210_toc_homing-offset20" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#homing-offset20">- Homing Offset(20)</a>
                 </li>
               
               
@@ -3673,8 +3722,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#moving-threshold24">- Moving Threshold(24)</a>
+                  <a class="tocLevel3" id="xm430-w210_toc_moving-threshold24" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#moving-threshold24">- Moving Threshold(24)</a>
                 </li>
               
               
@@ -3684,8 +3735,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#temperature-limit31">- Temperature Limit(31)</a>
+                  <a class="tocLevel3" id="xm430-w210_toc_temperature-limit31" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#temperature-limit31">- Temperature Limit(31)</a>
                 </li>
               
               
@@ -3695,8 +3748,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#minmax-voltage-limit32-34">- Min/Max Voltage Limit(32,34)</a>
+                  <a class="tocLevel3" id="xm430-w210_toc_minmax-voltage-limit32-34" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#minmax-voltage-limit32-34">- Min/Max Voltage Limit(32,34)</a>
                 </li>
               
               
@@ -3706,8 +3761,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#pwm-limit36">- PWM Lmit(36)</a>
+                  <a class="tocLevel3" id="xm430-w210_toc_pwm-limit36" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#pwm-limit36">- PWM Lmit(36)</a>
                 </li>
               
               
@@ -3717,8 +3774,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#current-limit38">- Current Lmit(38)</a>
+                  <a class="tocLevel3" id="xm430-w210_toc_current-limit38" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#current-limit38">- Current Lmit(38)</a>
                 </li>
               
               
@@ -3728,8 +3787,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#acceleration-limit40">- Acceleration Limit(40)</a>
+                  <a class="tocLevel3" id="xm430-w210_toc_acceleration-limit40" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#acceleration-limit40">- Acceleration Limit(40)</a>
                 </li>
               
               
@@ -3739,8 +3800,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#velocity-limit44">- Velocity Limit(44)</a>
+                  <a class="tocLevel3" id="xm430-w210_toc_velocity-limit44" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#velocity-limit44">- Velocity Limit(44)</a>
                 </li>
               
               
@@ -3750,8 +3813,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#minmax-position-limit48-52">- Min/Max Position Limit(48, 52)</a>
+                  <a class="tocLevel3" id="xm430-w210_toc_minmax-position-limit48-52" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#minmax-position-limit48-52">- Min/Max Position Limit(48, 52)</a>
                 </li>
               
               
@@ -3761,8 +3826,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#shutdown63">- Shutdown(63)</a>
+                  <a class="tocLevel3" id="xm430-w210_toc_shutdown63" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#shutdown63">- Shutdown(63)</a>
                 </li>
               
               
@@ -3772,8 +3839,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#torque-enable64">- Torque Enable(64)</a>
+                  <a class="tocLevel3" id="xm430-w210_toc_torque-enable64" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#torque-enable64">- Torque Enable(64)</a>
                 </li>
               
               
@@ -3783,8 +3852,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#led65">- LED(65)</a>
+                  <a class="tocLevel3" id="xm430-w210_toc_led65" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#led65">- LED(65)</a>
                 </li>
               
               
@@ -3794,8 +3865,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#status-return-level68">- Status Return Level(68)</a>
+                  <a class="tocLevel3" id="xm430-w210_toc_status-return-level68" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#status-return-level68">- Status Return Level(68)</a>
                 </li>
               
               
@@ -3805,8 +3878,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#registered-instruction69">- Registered Instruction(69)</a>
+                  <a class="tocLevel3" id="xm430-w210_toc_registered-instruction69" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#registered-instruction69">- Registered Instruction(69)</a>
                 </li>
               
               
@@ -3816,8 +3891,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#hardware-error-status70">- Hardware Error Status(70)</a>
+                  <a class="tocLevel3" id="xm430-w210_toc_hardware-error-status70" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#hardware-error-status70">- Hardware Error Status(70)</a>
                 </li>
               
               
@@ -3827,8 +3904,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#velocity-pi-gain76-78">- Velocity PI Gain(76, 78)</a>
+                  <a class="tocLevel3" id="xm430-w210_toc_velocity-pi-gain76-78" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#velocity-pi-gain76-78">- Velocity PI Gain(76, 78)</a>
                 </li>
               
               
@@ -3838,8 +3917,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#position-pid-gain80-82-84">- Position PID Gain(80, 82, 84)</a>
+                  <a class="tocLevel3" id="xm430-w210_toc_position-pid-gain80-82-84" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#position-pid-gain80-82-84">- Position PID Gain(80, 82, 84)</a>
                 </li>
               
               
@@ -3849,8 +3930,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#feedforward-1st2nd-gains88-90">- Feedforward 1st/2nd Gains(88, 90)</a>
+                  <a class="tocLevel3" id="xm430-w210_toc_feedforward-1st2nd-gains88-90" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#feedforward-1st2nd-gains88-90">- Feedforward 1st/2nd Gains(88, 90)</a>
                 </li>
               
               
@@ -3860,8 +3943,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#bus-watchdog98">- BUS Watchdog(98)</a>
+                  <a class="tocLevel3" id="xm430-w210_toc_bus-watchdog98" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#bus-watchdog98">- BUS Watchdog(98)</a>
                 </li>
               
               
@@ -3871,8 +3956,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#goal-pwm100">- Goal PWM(100)</a>
+                  <a class="tocLevel3" id="xm430-w210_toc_goal-pwm100" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#goal-pwm100">- Goal PWM(100)</a>
                 </li>
               
               
@@ -3882,8 +3969,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#goal-current102">- Goal Current(102)</a>
+                  <a class="tocLevel3" id="xm430-w210_toc_goal-current102" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#goal-current102">- Goal Current(102)</a>
                 </li>
               
               
@@ -3893,8 +3982,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#goal-velocity104">- Goal Velocity(104)</a>
+                  <a class="tocLevel3" id="xm430-w210_toc_goal-velocity104" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#goal-velocity104">- Goal Velocity(104)</a>
                 </li>
               
               
@@ -3904,8 +3995,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#profile-acceleration108">- Profile Acceleration(108)</a>
+                  <a class="tocLevel3" id="xm430-w210_toc_profile-acceleration108" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#profile-acceleration108">- Profile Acceleration(108)</a>
                 </li>
               
               
@@ -3915,8 +4008,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#profile-velocity112">- Profile Velocity(112)</a>
+                  <a class="tocLevel3" id="xm430-w210_toc_profile-velocity112" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#profile-velocity112">- Profile Velocity(112)</a>
                 </li>
               
               
@@ -3926,8 +4021,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#goal-position116">- Goal Position(116)</a>
+                  <a class="tocLevel3" id="xm430-w210_toc_goal-position116" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#goal-position116">- Goal Position(116)</a>
                 </li>
               
               
@@ -3937,8 +4034,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#realtime-tick120">- Realtime Tick(120)</a>
+                  <a class="tocLevel3" id="xm430-w210_toc_realtime-tick120" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#realtime-tick120">- Realtime Tick(120)</a>
                 </li>
               
               
@@ -3948,8 +4047,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#moving122">- Moving(122)</a>
+                  <a class="tocLevel3" id="xm430-w210_toc_moving122" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#moving122">- Moving(122)</a>
                 </li>
               
               
@@ -3959,8 +4060,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#moving-status123">- Moving Status(123)</a>
+                  <a class="tocLevel3" id="xm430-w210_toc_moving-status123" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#moving-status123">- Moving Status(123)</a>
                 </li>
               
               
@@ -3970,8 +4073,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#present-pwm124">- Present PWM(124)</a>
+                  <a class="tocLevel3" id="xm430-w210_toc_present-pwm124" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#present-pwm124">- Present PWM(124)</a>
                 </li>
               
               
@@ -3981,8 +4086,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#present-current126">- Present Current(126)</a>
+                  <a class="tocLevel3" id="xm430-w210_toc_present-current126" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#present-current126">- Present Current(126)</a>
                 </li>
               
               
@@ -3992,8 +4099,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#present-velocity128">- Present Velocity(128)</a>
+                  <a class="tocLevel3" id="xm430-w210_toc_present-velocity128" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#present-velocity128">- Present Velocity(128)</a>
                 </li>
               
               
@@ -4003,8 +4112,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#present-position132">- Present Position(132)</a>
+                  <a class="tocLevel3" id="xm430-w210_toc_present-position132" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#present-position132">- Present Position(132)</a>
                 </li>
               
               
@@ -4014,8 +4125,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#velocity-trajectory136">- Velocity Trajectory(136)</a>
+                  <a class="tocLevel3" id="xm430-w210_toc_velocity-trajectory136" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#velocity-trajectory136">- Velocity Trajectory(136)</a>
                 </li>
               
               
@@ -4025,8 +4138,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#position-trajectory140">- Position Trajectory(140)</a>
+                  <a class="tocLevel3" id="xm430-w210_toc_position-trajectory140" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#position-trajectory140">- Position Trajectory(140)</a>
                 </li>
               
               
@@ -4036,8 +4151,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#present-input-voltage144">- Present Input Voltage(144)</a>
+                  <a class="tocLevel3" id="xm430-w210_toc_present-input-voltage144" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#present-input-voltage144">- Present Input Voltage(144)</a>
                 </li>
               
               
@@ -4047,8 +4164,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#present-temperature146">- Present Temperature(146)</a>
+                  <a class="tocLevel3" id="xm430-w210_toc_present-temperature146" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#present-temperature146">- Present Temperature(146)</a>
                 </li>
               
               
@@ -4058,8 +4177,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#indirect-address">- Indirect Address</a>
+                  <a class="tocLevel3" id="xm430-w210_toc_indirect-address" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#indirect-address">- Indirect Address</a>
                 </li>
               
               
@@ -4069,8 +4190,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#indirect-data">- Indirect Data</a>
+                  <a class="tocLevel3" id="xm430-w210_toc_indirect-data" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#indirect-data">- Indirect Data</a>
                 </li>
               
               
@@ -4094,9 +4217,10 @@ $(function() {
 
       
       
+      
       <li class="has-children">
-        <input type="checkbox" name="toplevel" id="#how-to-assemble">
-        <label for="#how-to-assemble"><button class="tocLevel1" id="#how-to-assemble" onclick="movetopage('http://localhost:4000/docs/en/dxl/x/xm430-w210/#how-to-assemble');">3. How to Assemble</button></label>
+        <input type="checkbox" name="toplevel" id="xm430-w210_toc_how-to-assemble">
+        <label for="xm430-w210_toc_how-to-assemble"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/en/dxl/x/xm430-w210/#how-to-assemble');">3. How to Assemble</button></label>
       
       
 
@@ -4109,9 +4233,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#wiring-through-back-case" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#wiring-through-back-case">3. 1. Wiring through Back Case</a></li>
+              <li><a class="tocLevel2" id="xm430-w210_toc_wiring-through-back-case" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#wiring-through-back-case">3. 1. Wiring through Back Case</a></li>
             
           
 
@@ -4123,9 +4248,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#option-frame-assembly" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#option-frame-assembly">3. 2. Option Frame Assembly</a></li>
+              <li><a class="tocLevel2" id="xm430-w210_toc_option-frame-assembly" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#option-frame-assembly">3. 2. Option Frame Assembly</a></li>
             
           
 
@@ -4145,9 +4271,10 @@ $(function() {
 
       
       
+      
       <li class="has-children">
-        <input type="checkbox" name="toplevel" id="#maintenance">
-        <label for="#maintenance"><button class="tocLevel1" id="#maintenance" onclick="movetopage('http://localhost:4000/docs/en/dxl/x/xm430-w210/#maintenance');">4. Maintenance</button></label>
+        <input type="checkbox" name="toplevel" id="xm430-w210_toc_maintenance">
+        <label for="xm430-w210_toc_maintenance"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/en/dxl/x/xm430-w210/#maintenance');">4. Maintenance</button></label>
       
       
 
@@ -4160,9 +4287,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#horn-and-gear-replacement" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#horn-and-gear-replacement">4. 1. Horn, Gear Replacement</a></li>
+              <li><a class="tocLevel2" id="xm430-w210_toc_horn-and-gear-replacement" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#horn-and-gear-replacement">4. 1. Horn, Gear Replacement</a></li>
             
           
 
@@ -4182,9 +4310,10 @@ $(function() {
 
       
       
+      
       <li class="has-children">
-        <input type="checkbox" name="toplevel" id="#reference">
-        <label for="#reference"><button class="tocLevel1" id="#reference" onclick="movetopage('http://localhost:4000/docs/en/dxl/x/xm430-w210/#reference');">5. Reference</button></label>
+        <input type="checkbox" name="toplevel" id="xm430-w210_toc_reference">
+        <label for="xm430-w210_toc_reference"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/en/dxl/x/xm430-w210/#reference');">5. Reference</button></label>
       
       
 
@@ -4197,9 +4326,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#quick-start" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#quick-start">5. 1. Quick Start</a></li>
+              <li><a class="tocLevel2" id="xm430-w210_toc_quick-start" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#quick-start">5. 1. Quick Start</a></li>
             
           
 
@@ -4211,9 +4341,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#connector-information" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#connector-information">5. 2. Connector Information</a></li>
+              <li><a class="tocLevel2" id="xm430-w210_toc_connector-information" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#connector-information">5. 2. Connector Information</a></li>
             
           
 
@@ -4225,9 +4356,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#drawings" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#drawings">5. 3. Drawings</a></li>
+              <li><a class="tocLevel2" id="xm430-w210_toc_drawings" href="http://localhost:4000/docs/en/dxl/x/xm430-w210/#drawings">5. 3. Drawings</a></li>
             
           
 
@@ -4390,7 +4522,12 @@ $(function() {
 <h2 id="performance-graph"><a href="#performance-graph">Performance Graph</a></h2>
 <p><img src="/assets/images/dxl/x/xm430_w210_performance_graph.jpg" alt="" /></p>
 
-<p class="notice"><strong>NOTE</strong> : The max torque measurement method for the Stall Torque and Performance Graph is different. Stall torque is measured from the max torque that it can reach. This is generally how RC servos measure their torque. For the Performance graph with the N-T curves, it is measured with the load gradually increasing. The motor operation environment is closer to the performance graph, not stall torque method. This is probably why the performance graph is being broadly used in the industrial market. This is why the max torque of the performance grap can actually be less than the stall torque.</p>
+<p class="notice"><strong>NOTE</strong> : The max torque measurement method for the Stall Torque and Performance Graph is different.<br />
+Stall torque is measured from the max torque that it can reach. This is generally how RC servos measure their torque.<br />
+For the Performance graph with the N-T curves, it is measured with the load gradually increasing.<br />
+The motor operation environment is closer to the performance graph, not stall torque method.<br />
+This is probably why the performance graph is being broadly used in the industrial market.<br />
+This is why the max torque of the performance grap can actually be less than the stall torque.</p>
 
 <div class="notice--warning">
 <p><strong>CAUTION : When supplying power</strong></p>
@@ -5271,7 +5408,10 @@ $(function() {
 
 </div>
 
-<p class="notice"><strong>NOTE</strong> : PWM is the abbreviation for Pulse Width Modulation that modulates PWM Duty to control motors. The PWM Control Mode changes pulse width to control average supply voltage to the motor and this technique is widely used in the motor control field. Therefore, PWM Control Mode uses Goal PWM(100) value to control supply voltage for DYNAMIXEL. PWM Control Mode is similar to the Wheel Mode of DYNAMIXEL AX and RX series.</p>
+<p class="notice"><strong>NOTE</strong> : PWM is the abbreviation for Pulse Width Modulation that modulates PWM Duty to control motors.<br />
+The PWM Control Mode changes pulse width to control average supply voltage to the motor and this technique is widely used in the motor control field.<br />
+Therefore, PWM Control Mode uses Goal PWM(100) value to control supply voltage for DYNAMIXEL.<br />
+PWM Control Mode is similar to the Wheel Mode of DYNAMIXEL AX and RX series.</p>
 
 <h3 id="secondaryshadow-id12"><a name="secondary-shadow-id"></a><strong><a href="#secondaryshadow-id-12">Secondary(Shadow) ID(12)</a></strong></h3>
 <p>Set the Dynamixel’s Secondary ID. Secondary ID(12) is a value to identify each Dynamixel, just like the ID(7).
@@ -5359,7 +5499,7 @@ Present Position(132) = Actual Position + Homing Offset(20).</p>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align: center">about 0.088°</td>
+      <td style="text-align: center">about 0.088 [°]</td>
       <td style="text-align: center">-1,044,479 ~ 1,044,479<br />(-255 ~ 255[rev])</td>
       <td style="text-align: center">4,096 resolution</td>
     </tr>
@@ -5496,7 +5636,10 @@ When present input voltage acquired from Present Input Voltage(144) exceeds the 
   </tbody>
 </table>
 
-<p><strong>NOTE</strong> : Bit information of the Error field in the Status Packet is different from protocol 1.0 and protocol 2.0. This manual complies with protocol 2.0. Please refer to the <a href="/docs/en/dxl/protocol1/#error">Protocol</a> section of e-Manual for more details about the protocol.</p>
+<p class="notice"><strong>NOTE</strong> :<br />
+Bit information of the Error field in the Status Packet is different from protocol 1.0 and protocol 2.0.<br />
+This manual complies with protocol 2.0.<br />
+Please refer to the [Error] section of Protocol e-Manual for more details.</p>
 
 <h3 id="velocity-limit44"><a name="velocity-limit"></a><strong><a href="#velocity-limit44">Velocity Limit(44)</a></strong></h3>
 <p>This value indicates maximum velocity of Goal Velocity(104) and Profile Velocity(112). For more details, please refer to the Profile Velocity(112).</p>
@@ -5517,7 +5660,9 @@ When present input voltage acquired from Present Input Voltage(144) exceeds the 
 </table>
 
 <h3 id="minmax-position-limit48-52"><a name="max-position-limit"></a><a name="min-position-limit"></a><strong><a href="#minmax-position-limit48-52">Min/Max Position Limit(48, 52)</a></strong></h3>
-<p>These values limit maximum and minimum desired positions for Position Control Mode(Joint Mode) within the range of 1 rotation(0 ~ 4,095). Therefore, Goal Position(116) should be configured within the position limit range. These values are not used in Extended Position Control Mode and Current-based Position Control Mode.</p>
+<p>These values limit maximum and minimum desired positions for Position Control Mode(Joint Mode) within the range of 1 rotation(0 ~ 4,095).<br />
+Therefore, Goal Position(116) should be configured within the position limit range.<br />
+These values are not used in Extended Position Control Mode and Current-based Position Control Mode.</p>
 
 <table>
   <thead>
@@ -5528,7 +5673,7 @@ When present input voltage acquired from Present Input Voltage(144) exceeds the 
   </thead>
   <tbody>
     <tr>
-      <td style="text-align: center">0.088°</td>
+      <td style="text-align: center">0.088 [°]</td>
       <td style="text-align: center">0 ~ 4,095(1 rotation)</td>
     </tr>
   </tbody>
@@ -5600,7 +5745,7 @@ The followings are detectable situations.</p>
 <p><strong>NOTE</strong> : If Shutdown occurs, use below method to reboot Dynamixels.</p>
 <ol>
   <li>H/W REBOOT : Turn off the power and turn on again</li>
-  <li>S/W REBOOT : Transmit REBOOT Instruction (For more details, please refer to the [Reboot] section of Protocol e-Manual.)</li>
+  <li>S/W REBOOT : Transmit REBOOT Instruction (For more details, please refer to the <a href="/docs/en/dxl/protocol2/#reboot">Reboot</a> section of Protocol e-Manual.)</li>
 </ol>
 </div>
 
@@ -5808,7 +5953,7 @@ The followings are detectable situations.</p>
 <p><strong>NOTE</strong> : If Shutdown occurs, use below method to reboot Dynamixels.</p>
 <ol>
   <li>H/W REBOOT : Turn off the power and turn on again</li>
-  <li>S/W REBOOT : Transmit REBOOT Instruction (For more details, please refer to the [Reboot] section of Protocol e-Manual.)</li>
+  <li>S/W REBOOT : Transmit REBOOT Instruction (For more details, please refer to the <a href="/docs/en/dxl/protocol2/#reboot">Reboot</a> section of Protocol e-Manual.)</li>
 </ol>
 </div>
 
@@ -5941,7 +6086,8 @@ The followings are detectable situations.</p>
 
 <p><img src="/assets/images/dxl/current_position_controller_pid_gain.jpg" alt="" /></p>
 
-<p class="notice"><strong>NOTE</strong> : K<sub>a</sub> is an Anti-windup Gain that cannot be modified by users. For more details about the PID controller and Feedforward controller, please refer to the <a href="http://en.wikipedia.org/wiki/PID_controller">PID Controller</a> and <a href="https://en.wikipedia.org/wiki/Feed_forward_(control)">Feed Forward</a>.</p>
+<p class="notice"><strong>NOTE</strong> : K<sub>a</sub> is an Anti-windup Gain that cannot be modified by users.<br />
+For more details about the PID controller and Feedforward controller, please refer to the <a href="http://en.wikipedia.org/wiki/PID_controller">PID Controller</a> and <a href="https://en.wikipedia.org/wiki/Feed_forward_(control)">Feed Forward</a>.</p>
 
 <h3 id="bus-watchdog98"><a name="bus-watchdog"></a><strong><a href="#bus-watchdog98">Bus Watchdog(98)</a></strong></h3>
 <p>Bus Watchdog (98) is available from firmware v38. It is a safety device (Fail-safe) that stops the DYNAMIXEL if the communication between the controller and DYNAMIXEL communication (RS485, TTL) is disconnected due to an unspecified error.
@@ -6055,7 +6201,8 @@ If the value of Bus Watchdog (98) is changed to ‘0’, Bus Watchdog Error will
   </tbody>
 </table>
 
-<p class="notice"><strong>NOTE</strong> : The maximum velocity and maximum torque of DYNAMIXEL is affected by supplying voltage. Therefore, if supplying voltage changes, so does the maximum velocity. This manual complies with recommended supply voltage(12[V]).</p>
+<p class="notice"><strong>NOTE</strong> : The maximum velocity and maximum torque of DYNAMIXEL is affected by supplying voltage.<br />
+Therefore, if supplying voltage changes, so does the maximum velocity. This manual complies with recommended supply voltage(12[V]).</p>
 
 <p class="notice"><strong>NOTE</strong> : If Profile Acceleration(108) and Goal Velocity(104) are modified simultaneously, modified Profile Acceleration(108) will be used to process Goal Velocity(104).</p>
 
@@ -6227,7 +6374,10 @@ t<sub>1</sub> = 64 * {Goal Velocity(104) / Profile Acceleration(108)}</p>
 </table>
 
 <h3 id="moving122"><a name="moving"></a><strong><a href="#moving122">Moving(122)</a></strong></h3>
-<p>This value indicates whether Dynamixel is in motion or not. If absolute value of Present Velocity(128) is greater than Moving Threshold(24), Moving(122) is set to ‘1’. Otherwise, it will be cleared to ‘0’. However, this value will always be set to ‘1’ regardless of Present Velocity(128) while Profile is in progress with Goal Position(116) instruction.</p>
+<p>This value indicates whether Dynamixel is in motion or not.<br />
+If absolute value of Present Velocity(128) is greater than Moving Threshold(24), Moving(122) is set to ‘1’.<br />
+Otherwise, it will be cleared to ‘0’.<br />
+However, this value will always be set to ‘1’ regardless of Present Velocity(128) while Profile is in progress with Goal Position(116) instruction.</p>
 
 <table>
   <thead>
@@ -6338,7 +6488,9 @@ t<sub>1</sub> = 64 * {Goal Velocity(104) / Profile Acceleration(108)}</p>
 </ol>
 
 <h3 id="position-trajectory140"><a name="position-trajectory"></a><strong><a href="#position-trajectory140">Position Trajectory(140)</a></strong></h3>
-<p>This is a desired position trajectory created by Profile. This value is only used in Position Control Mode, Extended Position Control Mode and Current-based Position Control Mode. For more details, please refer to the <a href="#profile-velocity112">Profile Velocity(112)</a>.</p>
+<p>This is a desired position trajectory created by Profile.<br />
+This value is only used in Position Control Mode, Extended Position Control Mode and Current-based Position Control Mode.<br />
+For more details, please refer to the <a href="#profile-velocity112">Profile Velocity(112)</a>.</p>
 
 <h3 id="present-input-voltage144"><a name="present-input-voltage"></a><strong><a href="#present-input-voltage144">Present Input Voltage(144)</a></strong></h3>
 <p>This value indicates present voltage that is being supplied. For more details, please refer to the <a href="#max-voltage-limit">Max/Min Voltage Limit(32, 34)</a>.</p>

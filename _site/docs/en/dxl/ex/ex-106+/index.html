@@ -176,12 +176,12 @@ $(function() {
 
       function extendsearchtool() {
         if (toggle_search_tool == 0) {
-          $('#site_search').css('display', 'block');
+          $('.searchbox').css('display', 'block');
           $('#archive').css('margin-top', '40px');
           toggle_search_tool = 1;
         }
         else {
-          $('#site_search').css('display', 'none');
+          $('.searchbox').css('display', 'none');
           $('#archive').css('margin-top', '0px');
           toggle_search_tool = 0;
         }
@@ -199,22 +199,57 @@ $(function() {
     		alignTop: true,
     		overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
     	});
+      
+      // Implmentation for Local search engine with JSON file
+      // $.getJSON('/test.json', function(idx) {
+      //   $.each(idx, function(v){
+      //     console.log(v);
+      //     console.log(idx[v].header3);
+      //   })
+      // });
+      
     });
     </script>
     <script>
       $(function () {
-        var currentHash = window.location.href.split('#')[1];
+        var currentHash = $(location).attr('hash');
+        var filename = $(location).attr('href').split('/').reverse()[1];
         $(document).scroll(function () {
           $('.header-link').each(function () {
             var top = window.pageYOffset;
             var distance = top - $(this).offset().top;
-            var hash = $(this).attr('href');
+            var rawHash = $(this).attr('href');
+            var contentId = rawHash.replace('#', '');
+            var tocId = rawHash.replace('#', filename+'_toc_');
+            var searchContentId = $('#'+contentId);
+            var searchTocId = $('#'+tocId);
 
-            if (distance < 30 && distance > -30 && currentHash != hash) {
-              currentHash = hash;
-              // console.log(currentHash);
-              window.history.pushState(window.location.href, "title", currentHash);   //Update browser URL with current anchor
-              // $('#' + currentHash).attr("color", "#FF6D6D"); //Syntax error
+            if (distance < 50 && distance > -50 && currentHash != tocId) {
+              // window.history.pushState(window.location.href, "title", currentHash);   //Update browser URL history with current anchor
+              if ((searchContentId.hasClass('class-h1') || searchContentId.hasClass('class-h2') || searchContentId.hasClass('class-h3')) && $('.nav__items').has('#'+tocId).length) {
+                // console.log(contentId);
+                // console.log(tocId);
+                searchTocId.prop("checked", true);  //Open folded Toc menu
+                $('.current_contents').removeClass("current_contents");
+                
+                //Check if Buttoned ToC with children
+                // console.log(searchTocId);
+                if( searchTocId.prop("tagName") == "INPUT" ) {
+                  console.log("input detected");
+                  if( searchTocId.prop("name") == "sublevel" ) {
+                    searchTocId.closest("li.has-grandchildren").find("label > button").addClass("current_contents");
+                  }
+                }
+                else {
+                  searchTocId.addClass("current_contents");
+                }
+                
+                // Open folded Toc menu
+                searchTocId.closest("li.has-grandchildren").find("input").first().prop("checked", true);
+                searchTocId.closest("li.has-children").find("input").first().prop("checked", true);
+                
+                currentHash = tocId;
+              }
             }
           });
         });
@@ -3332,33 +3367,6 @@ $(function() {
       <button class="mobile_button" onclick="movetopage('https://github.com/ROBOTIS-GIT');" style="background-image: url(/assets/images/github_mobile_logo.png); width: 30%;">GitHub</button>
     </div>
 
-    <!-- local navigation
-    <div class="local_navigation">
-      <select id="local_navigation_depth1">
-        <option value = "default">Select Category</option>
-        
-          
-          <option id="DYNAMIXEL" value = "DYNAMIXEL">DYNAMIXEL</option>
-        
-          
-          <option id="PLATFORM" value = "PLATFORM">PLATFORM</option>
-        
-          
-          <option id="STEAM" value = "STEAM">STEAM</option>
-        
-          
-          <option id="SOFTWARE" value = "SOFTWARE">SOFTWARE</option>
-        
-          
-          <option id="PARTS" value = "PARTS">PARTS</option>
-        
-          
-          <option id="FAQ" value = "FAQ">FAQ</option>
-        
-      </select>
-    </div>
-     -->
-
     <!-- Google Custom Search -->
     <form class="searchbox" method="get" id="site_search">
       <script>
@@ -3375,6 +3383,12 @@ $(function() {
       <gcse:search></gcse:search>
     </form>
     <!-- end of Google Custom Search -->
+    <!-- 
+    <form class="searchbox" id="search-form">
+      <input type="search" placeholder="Search" style="height:56px;width:230px;size:16px;">
+      <button type="submit" style="height:56px;width:55px;">Search</button>
+    </form>
+     -->
 
   </div>
 </div>
@@ -3401,8 +3415,9 @@ $(function() {
 
       
       
+      
       <li>
-        <a id="#specifications" href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#specifications">1. Specifications</a>
+        <a id="ex-106+_toc_specifications" href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#specifications">1. Specifications</a>
       </li>
       
       
@@ -3417,9 +3432,10 @@ $(function() {
 
       
       
+      
       <li class="has-children">
-        <input type="checkbox" name="toplevel" id="#control-table">
-        <label for="#control-table"><button class="tocLevel1" id="#control-table" onclick="movetopage('http://localhost:4000/docs/en/dxl/ex/ex-106+/#control-table');">2. Control Table</button></label>
+        <input type="checkbox" name="toplevel" id="ex-106+_toc_control-table">
+        <label for="ex-106+_toc_control-table"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/en/dxl/ex/ex-106+/#control-table');">2. Control Table</button></label>
       
       
 
@@ -3432,11 +3448,12 @@ $(function() {
 
           
           
+          
             
               
               <li class="has-grandchildren">
-                <input type="checkbox" name="sublevel" id="#control-table-data-address">
-                <label for="#control-table-data-address"><button class="tocLevel2" id="#control-table-data-address" onclick="movetopage('http://localhost:4000/docs/en/dxl/ex/ex-106+/#control-table-data-address');">2. 1. Control Table, Data, Address</button></label>
+                <input type="checkbox" name="sublevel" id="ex-106+_toc_control-table-data-address">
+                <label for="ex-106+_toc_control-table-data-address"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/en/dxl/ex/ex-106+/#control-table-data-address');">2. 1. Control Table, Data, Address</button></label>
             
           
 
@@ -3448,8 +3465,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#area-eeprom-ram">- Area(EEPROM, RAM)</a>
+                  <a class="tocLevel3" id="ex-106+_toc_area-eeprom-ram" href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#area-eeprom-ram">- Area(EEPROM, RAM)</a>
                 </li>
               
               
@@ -3459,8 +3478,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#size">- Size</a>
+                  <a class="tocLevel3" id="ex-106+_toc_size" href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#size">- Size</a>
                 </li>
               
               
@@ -3470,8 +3491,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#access">- Access</a>
+                  <a class="tocLevel3" id="ex-106+_toc_access" href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#access">- Access</a>
                 </li>
               
               
@@ -3481,8 +3504,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#initial-value">- Initial Value</a>
+                  <a class="tocLevel3" id="ex-106+_toc_initial-value" href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#initial-value">- Initial Value</a>
                 </li>
               
               
@@ -3498,9 +3523,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#control-table-of-eeprom-area" href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#control-table-of-eeprom-area">2. 2. EEPROM Area</a></li>
+              <li><a class="tocLevel2" id="ex-106+_toc_control-table-of-eeprom-area" href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#control-table-of-eeprom-area">2. 2. EEPROM Area</a></li>
             
           
 
@@ -3512,9 +3538,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#control-table-of-ram-area" href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#control-table-of-ram-area">2. 3. RAM Area</a></li>
+              <li><a class="tocLevel2" id="ex-106+_toc_control-table-of-ram-area" href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#control-table-of-ram-area">2. 3. RAM Area</a></li>
             
           
 
@@ -3524,13 +3551,14 @@ $(function() {
 
           
 
+          
           
           
             
               
               <li class="has-grandchildren">
-                <input type="checkbox" name="sublevel" id="#control-table-description">
-                <label for="#control-table-description"><button class="tocLevel2" id="#control-table-description" onclick="movetopage('http://localhost:4000/docs/en/dxl/ex/ex-106+/#control-table-description');">2. 4. Control Table Description</button></label>
+                <input type="checkbox" name="sublevel" id="ex-106+_toc_control-table-description">
+                <label for="ex-106+_toc_control-table-description"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/en/dxl/ex/ex-106+/#control-table-description');">2. 4. Control Table Description</button></label>
             
           
 
@@ -3542,8 +3570,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#model-number-0">- Model Number(0)</a>
+                  <a class="tocLevel3" id="ex-106+_toc_model-number-0" href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#model-number-0">- Model Number(0)</a>
                 </li>
               
               
@@ -3553,8 +3583,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#firmware-version-2">- Firmware Version(2)</a>
+                  <a class="tocLevel3" id="ex-106+_toc_firmware-version-2" href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#firmware-version-2">- Firmware Version(2)</a>
                 </li>
               
               
@@ -3564,8 +3596,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#id-3">- ID(3)</a>
+                  <a class="tocLevel3" id="ex-106+_toc_id-3" href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#id-3">- ID(3)</a>
                 </li>
               
               
@@ -3575,8 +3609,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#baud-rate-4">- Baud Rate(4)</a>
+                  <a class="tocLevel3" id="ex-106+_toc_baud-rate-4" href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#baud-rate-4">- Baud Rate(4)</a>
                 </li>
               
               
@@ -3586,8 +3622,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#return-delay-time-5">- Return Delay Time(5)</a>
+                  <a class="tocLevel3" id="ex-106+_toc_return-delay-time-5" href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#return-delay-time-5">- Return Delay Time(5)</a>
                 </li>
               
               
@@ -3597,8 +3635,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#cwccw-angle-limit6-8">- CW/CCW Angle Limit(6,8)</a>
+                  <a class="tocLevel3" id="ex-106+_toc_cwccw-angle-limit6-8" href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#cwccw-angle-limit6-8">- CW/CCW Angle Limit(6,8)</a>
                 </li>
               
               
@@ -3608,8 +3648,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#drive-mode-10">- Drive Mode(10)</a>
+                  <a class="tocLevel3" id="ex-106+_toc_drive-mode-10" href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#drive-mode-10">- Drive Mode(10)</a>
                 </li>
               
               
@@ -3619,8 +3661,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#temperature-limit-11">- Temperature Limit(11)</a>
+                  <a class="tocLevel3" id="ex-106+_toc_temperature-limit-11" href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#temperature-limit-11">- Temperature Limit(11)</a>
                 </li>
               
               
@@ -3630,8 +3674,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#minmax-voltage-limit-12-13">- Min/Max Voltage Limit(12,13)</a>
+                  <a class="tocLevel3" id="ex-106+_toc_minmax-voltage-limit-12-13" href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#minmax-voltage-limit-12-13">- Min/Max Voltage Limit(12,13)</a>
                 </li>
               
               
@@ -3641,8 +3687,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#max-torque-14">- Max Torque(14)</a>
+                  <a class="tocLevel3" id="ex-106+_toc_max-torque-14" href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#max-torque-14">- Max Torque(14)</a>
                 </li>
               
               
@@ -3652,8 +3700,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#status-return-level-16">- Status Return Level(16)</a>
+                  <a class="tocLevel3" id="ex-106+_toc_status-return-level-16" href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#status-return-level-16">- Status Return Level(16)</a>
                 </li>
               
               
@@ -3663,8 +3713,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#alarm-led17-shutdown18">- Alarm LED(17)</a>
+                  <a class="tocLevel3" id="ex-106+_toc_alarm-led17-shutdown18" href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#alarm-led17-shutdown18">- Alarm LED(17)</a>
                 </li>
               
               
@@ -3674,8 +3726,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#alarm-led17-shutdown18">- Shutdown(18)</a>
+                  <a class="tocLevel3" id="ex-106+_toc_alarm-led17-shutdown18" href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#alarm-led17-shutdown18">- Shutdown(18)</a>
                 </li>
               
               
@@ -3685,8 +3739,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#torque-enable-24">- Torque Enable(24)</a>
+                  <a class="tocLevel3" id="ex-106+_toc_torque-enable-24" href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#torque-enable-24">- Torque Enable(24)</a>
                 </li>
               
               
@@ -3696,8 +3752,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#led-25">- LED(25)</a>
+                  <a class="tocLevel3" id="ex-106+_toc_led-25" href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#led-25">- LED(25)</a>
                 </li>
               
               
@@ -3707,8 +3765,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#compliance-margin-26-27">- Compliance Margin(26,27)</a>
+                  <a class="tocLevel3" id="ex-106+_toc_compliance-margin-26-27" href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#compliance-margin-26-27">- Compliance Margin(26,27)</a>
                 </li>
               
               
@@ -3718,8 +3778,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#compliance-slope-28-29">- Compliance Slope(28,29)</a>
+                  <a class="tocLevel3" id="ex-106+_toc_compliance-slope-28-29" href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#compliance-slope-28-29">- Compliance Slope(28,29)</a>
                 </li>
               
               
@@ -3729,8 +3791,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#goal-position-30">- Goal Position(30)</a>
+                  <a class="tocLevel3" id="ex-106+_toc_goal-position-30" href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#goal-position-30">- Goal Position(30)</a>
                 </li>
               
               
@@ -3740,8 +3804,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#moving-speed-32">- Moving Speed(32)</a>
+                  <a class="tocLevel3" id="ex-106+_toc_moving-speed-32" href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#moving-speed-32">- Moving Speed(32)</a>
                 </li>
               
               
@@ -3751,8 +3817,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#torque-limit-34">- Torque Limit(34)</a>
+                  <a class="tocLevel3" id="ex-106+_toc_torque-limit-34" href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#torque-limit-34">- Torque Limit(34)</a>
                 </li>
               
               
@@ -3762,8 +3830,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#present-position-36">- Present Position(36)</a>
+                  <a class="tocLevel3" id="ex-106+_toc_present-position-36" href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#present-position-36">- Present Position(36)</a>
                 </li>
               
               
@@ -3773,8 +3843,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#present-speed-38">- Present Speed(38)</a>
+                  <a class="tocLevel3" id="ex-106+_toc_present-speed-38" href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#present-speed-38">- Present Speed(38)</a>
                 </li>
               
               
@@ -3784,8 +3856,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#present-load-40">- Present Load(40)</a>
+                  <a class="tocLevel3" id="ex-106+_toc_present-load-40" href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#present-load-40">- Present Load(40)</a>
                 </li>
               
               
@@ -3795,8 +3869,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#present-voltage-42">- Present Voltage(42)</a>
+                  <a class="tocLevel3" id="ex-106+_toc_present-voltage-42" href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#present-voltage-42">- Present Voltage(42)</a>
                 </li>
               
               
@@ -3806,8 +3882,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#present-temperature-43">- Present Temperature(43)</a>
+                  <a class="tocLevel3" id="ex-106+_toc_present-temperature-43" href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#present-temperature-43">- Present Temperature(43)</a>
                 </li>
               
               
@@ -3817,8 +3895,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#registered-instruction-44">- Registered Instruction(44)</a>
+                  <a class="tocLevel3" id="ex-106+_toc_registered-instruction-44" href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#registered-instruction-44">- Registered Instruction(44)</a>
                 </li>
               
               
@@ -3828,8 +3908,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#moving-46">- Moving(46)</a>
+                  <a class="tocLevel3" id="ex-106+_toc_moving-46" href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#moving-46">- Moving(46)</a>
                 </li>
               
               
@@ -3839,8 +3921,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#lock-47">- Lock(47)</a>
+                  <a class="tocLevel3" id="ex-106+_toc_lock-47" href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#lock-47">- Lock(47)</a>
                 </li>
               
               
@@ -3850,8 +3934,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#punch-48">- Punch(48)</a>
+                  <a class="tocLevel3" id="ex-106+_toc_punch-48" href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#punch-48">- Punch(48)</a>
                 </li>
               
               
@@ -3861,8 +3947,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#sensed-current-56">- Sensed Current(56)</a>
+                  <a class="tocLevel3" id="ex-106+_toc_sensed-current-56" href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#sensed-current-56">- Sensed Current(56)</a>
                 </li>
               
               
@@ -3886,8 +3974,9 @@ $(function() {
 
       
       
+      
       <li>
-        <a id="#how-to-assemble" href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#how-to-assemble">3. How to Assemble</a>
+        <a id="ex-106+_toc_how-to-assemble" href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#how-to-assemble">3. How to Assemble</a>
       </li>
       
       
@@ -3902,9 +3991,10 @@ $(function() {
 
       
       
+      
       <li class="has-children">
-        <input type="checkbox" name="toplevel" id="#maintenance">
-        <label for="#maintenance"><button class="tocLevel1" id="#maintenance" onclick="movetopage('http://localhost:4000/docs/en/dxl/ex/ex-106+/#maintenance');">4. Maintenance</button></label>
+        <input type="checkbox" name="toplevel" id="ex-106+_toc_maintenance">
+        <label for="ex-106+_toc_maintenance"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/en/dxl/ex/ex-106+/#maintenance');">4. Maintenance</button></label>
       
       
 
@@ -3917,9 +4007,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#horn-and-bearing-replacement" href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#horn-and-bearing-replacement">4. 1. Horn, Bearing</a></li>
+              <li><a class="tocLevel2" id="ex-106+_toc_horn-and-bearing-replacement" href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#horn-and-bearing-replacement">4. 1. Horn, Bearing</a></li>
             
           
 
@@ -3939,9 +4030,10 @@ $(function() {
 
       
       
+      
       <li class="has-children">
-        <input type="checkbox" name="toplevel" id="#reference">
-        <label for="#reference"><button class="tocLevel1" id="#reference" onclick="movetopage('http://localhost:4000/docs/en/dxl/ex/ex-106+/#reference');">5. Reference</button></label>
+        <input type="checkbox" name="toplevel" id="ex-106+_toc_reference">
+        <label for="ex-106+_toc_reference"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/en/dxl/ex/ex-106+/#reference');">5. Reference</button></label>
       
       
 
@@ -3954,9 +4046,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#connector-information" href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#connector-information">5. 1. Connector Information</a></li>
+              <li><a class="tocLevel2" id="ex-106+_toc_connector-information" href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#connector-information">5. 1. Connector Information</a></li>
             
           
 
@@ -3968,9 +4061,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#drawings" href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#drawings">5. 2. Drawings</a></li>
+              <li><a class="tocLevel2" id="ex-106+_toc_drawings" href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#drawings">5. 2. Drawings</a></li>
             
           
 
@@ -3982,9 +4076,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#communication-circuit" href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#communication-circuit">5. 3. Communication Circuit</a></li>
+              <li><a class="tocLevel2" id="ex-106+_toc_communication-circuit" href="http://localhost:4000/docs/en/dxl/ex/ex-106+/#communication-circuit">5. 3. Communication Circuit</a></li>
             
           
 

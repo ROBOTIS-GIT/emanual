@@ -284,37 +284,6 @@
       <button class="mobile_button" onclick="movetopage('https://github.com/ROBOTIS-GIT');" style="background-image: url(/assets/images/github_mobile_logo.png); width: 30%;">GitHub</button>
     </div>
 
-    <!-- local navigation
-    <div class="local_navigation">
-      <select id="local_navigation_depth1">
-        <option value = "default">Select Category</option>
-        {% for nav in site.data.navigation.main %}
-          {% if page.lang=='kr' %}
-            {% if nav.titlekr %}
-              {% assign depth1_title=nav.titlekr %}
-              {% assign depth1_url=nav.url %}
-            {% else %}
-              {% assign depth1_title=null %}
-              {% assign depth1_url=null %}
-            {% endif %}
-          {% elsif page.lang=='en' %}
-            {% if nav.title %}
-              {% assign depth1_title=nav.title %}
-              {% assign depth1_url=nav.url %}
-            {% else %}
-              {% assign depth1_title=null %}
-              {% assign depth1_url=null %}
-            {% endif %}
-          {% else %}
-            {% assign depth1_title=null %}
-            {% assign depth1_url=null %}
-          {% endif %}
-          <option id="{{ depth1_title }}" value = "{{ depth1_title }}">{{ depth1_title }}</option>
-        {% endfor %}
-      </select>
-    </div>
-     -->
-
     <!-- Google Custom Search -->
     <form class="searchbox" method="get" id="site_search">
       <script>
@@ -331,6 +300,13 @@
       <gcse:search></gcse:search>
     </form>
     <!-- end of Google Custom Search -->
+    <!-- {% if page.lang=='kr' %}
+    {% else %}
+    <form class="searchbox" id="search-form">
+      <input type="search" placeholder="Search" style="height:56px;width:230px;size:16px;">
+      <button type="submit" style="height:56px;width:55px;">Search</button>
+    </form>
+    {% endif %} -->
 
   </div>
 </div>

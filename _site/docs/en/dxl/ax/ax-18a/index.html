@@ -176,12 +176,12 @@ $(function() {
 
       function extendsearchtool() {
         if (toggle_search_tool == 0) {
-          $('#site_search').css('display', 'block');
+          $('.searchbox').css('display', 'block');
           $('#archive').css('margin-top', '40px');
           toggle_search_tool = 1;
         }
         else {
-          $('#site_search').css('display', 'none');
+          $('.searchbox').css('display', 'none');
           $('#archive').css('margin-top', '0px');
           toggle_search_tool = 0;
         }
@@ -199,22 +199,57 @@ $(function() {
     		alignTop: true,
     		overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
     	});
+      
+      // Implmentation for Local search engine with JSON file
+      // $.getJSON('/test.json', function(idx) {
+      //   $.each(idx, function(v){
+      //     console.log(v);
+      //     console.log(idx[v].header3);
+      //   })
+      // });
+      
     });
     </script>
     <script>
       $(function () {
-        var currentHash = window.location.href.split('#')[1];
+        var currentHash = $(location).attr('hash');
+        var filename = $(location).attr('href').split('/').reverse()[1];
         $(document).scroll(function () {
           $('.header-link').each(function () {
             var top = window.pageYOffset;
             var distance = top - $(this).offset().top;
-            var hash = $(this).attr('href');
+            var rawHash = $(this).attr('href');
+            var contentId = rawHash.replace('#', '');
+            var tocId = rawHash.replace('#', filename+'_toc_');
+            var searchContentId = $('#'+contentId);
+            var searchTocId = $('#'+tocId);
 
-            if (distance < 30 && distance > -30 && currentHash != hash) {
-              currentHash = hash;
-              // console.log(currentHash);
-              window.history.pushState(window.location.href, "title", currentHash);   //Update browser URL with current anchor
-              // $('#' + currentHash).attr("color", "#FF6D6D"); //Syntax error
+            if (distance < 50 && distance > -50 && currentHash != tocId) {
+              // window.history.pushState(window.location.href, "title", currentHash);   //Update browser URL history with current anchor
+              if ((searchContentId.hasClass('class-h1') || searchContentId.hasClass('class-h2') || searchContentId.hasClass('class-h3')) && $('.nav__items').has('#'+tocId).length) {
+                // console.log(contentId);
+                // console.log(tocId);
+                searchTocId.prop("checked", true);  //Open folded Toc menu
+                $('.current_contents').removeClass("current_contents");
+                
+                //Check if Buttoned ToC with children
+                // console.log(searchTocId);
+                if( searchTocId.prop("tagName") == "INPUT" ) {
+                  console.log("input detected");
+                  if( searchTocId.prop("name") == "sublevel" ) {
+                    searchTocId.closest("li.has-grandchildren").find("label > button").addClass("current_contents");
+                  }
+                }
+                else {
+                  searchTocId.addClass("current_contents");
+                }
+                
+                // Open folded Toc menu
+                searchTocId.closest("li.has-grandchildren").find("input").first().prop("checked", true);
+                searchTocId.closest("li.has-children").find("input").first().prop("checked", true);
+                
+                currentHash = tocId;
+              }
             }
           });
         });
@@ -3332,33 +3367,6 @@ $(function() {
       <button class="mobile_button" onclick="movetopage('https://github.com/ROBOTIS-GIT');" style="background-image: url(/assets/images/github_mobile_logo.png); width: 30%;">GitHub</button>
     </div>
 
-    <!-- local navigation
-    <div class="local_navigation">
-      <select id="local_navigation_depth1">
-        <option value = "default">Select Category</option>
-        
-          
-          <option id="DYNAMIXEL" value = "DYNAMIXEL">DYNAMIXEL</option>
-        
-          
-          <option id="PLATFORM" value = "PLATFORM">PLATFORM</option>
-        
-          
-          <option id="STEAM" value = "STEAM">STEAM</option>
-        
-          
-          <option id="SOFTWARE" value = "SOFTWARE">SOFTWARE</option>
-        
-          
-          <option id="PARTS" value = "PARTS">PARTS</option>
-        
-          
-          <option id="FAQ" value = "FAQ">FAQ</option>
-        
-      </select>
-    </div>
-     -->
-
     <!-- Google Custom Search -->
     <form class="searchbox" method="get" id="site_search">
       <script>
@@ -3375,6 +3383,12 @@ $(function() {
       <gcse:search></gcse:search>
     </form>
     <!-- end of Google Custom Search -->
+    <!-- 
+    <form class="searchbox" id="search-form">
+      <input type="search" placeholder="Search" style="height:56px;width:230px;size:16px;">
+      <button type="submit" style="height:56px;width:55px;">Search</button>
+    </form>
+     -->
 
   </div>
 </div>
@@ -3401,8 +3415,9 @@ $(function() {
 
       
       
+      
       <li>
-        <a id="#specifications" href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#specifications">1. Specifications</a>
+        <a id="ax-18a_toc_specifications" href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#specifications">1. Specifications</a>
       </li>
       
       
@@ -3417,9 +3432,10 @@ $(function() {
 
       
       
+      
       <li class="has-children">
-        <input type="checkbox" name="toplevel" id="#control-table">
-        <label for="#control-table"><button class="tocLevel1" id="#control-table" onclick="movetopage('http://localhost:4000/docs/en/dxl/ax/ax-18a/#control-table');">2. Control Table</button></label>
+        <input type="checkbox" name="toplevel" id="ax-18a_toc_control-table">
+        <label for="ax-18a_toc_control-table"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/en/dxl/ax/ax-18a/#control-table');">2. Control Table</button></label>
       
       
 
@@ -3432,11 +3448,12 @@ $(function() {
 
           
           
+          
             
               
               <li class="has-grandchildren">
-                <input type="checkbox" name="sublevel" id="#control-table-data-address">
-                <label for="#control-table-data-address"><button class="tocLevel2" id="#control-table-data-address" onclick="movetopage('http://localhost:4000/docs/en/dxl/ax/ax-18a/#control-table-data-address');">2. 1. Control Table, Data, Address</button></label>
+                <input type="checkbox" name="sublevel" id="ax-18a_toc_control-table-data-address">
+                <label for="ax-18a_toc_control-table-data-address"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/en/dxl/ax/ax-18a/#control-table-data-address');">2. 1. Control Table, Data, Address</button></label>
             
           
 
@@ -3448,8 +3465,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#area-eeprom-ram">- Area(EEPROM, RAM)</a>
+                  <a class="tocLevel3" id="ax-18a_toc_area-eeprom-ram" href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#area-eeprom-ram">- Area(EEPROM, RAM)</a>
                 </li>
               
               
@@ -3459,8 +3478,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#size">- Size</a>
+                  <a class="tocLevel3" id="ax-18a_toc_size" href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#size">- Size</a>
                 </li>
               
               
@@ -3470,8 +3491,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#access">- Access</a>
+                  <a class="tocLevel3" id="ax-18a_toc_access" href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#access">- Access</a>
                 </li>
               
               
@@ -3481,8 +3504,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#initial-value">- Initial Value</a>
+                  <a class="tocLevel3" id="ax-18a_toc_initial-value" href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#initial-value">- Initial Value</a>
                 </li>
               
               
@@ -3498,9 +3523,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#control-table-of-eeprom-area" href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#control-table-of-eeprom-area">2. 2. EEPROM Area</a></li>
+              <li><a class="tocLevel2" id="ax-18a_toc_control-table-of-eeprom-area" href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#control-table-of-eeprom-area">2. 2. EEPROM Area</a></li>
             
           
 
@@ -3512,9 +3538,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#control-table-of-ram-area" href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#control-table-of-ram-area">2. 3. RAM Area</a></li>
+              <li><a class="tocLevel2" id="ax-18a_toc_control-table-of-ram-area" href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#control-table-of-ram-area">2. 3. RAM Area</a></li>
             
           
 
@@ -3524,13 +3551,14 @@ $(function() {
 
           
 
+          
           
           
             
               
               <li class="has-grandchildren">
-                <input type="checkbox" name="sublevel" id="#control-table-description">
-                <label for="#control-table-description"><button class="tocLevel2" id="#control-table-description" onclick="movetopage('http://localhost:4000/docs/en/dxl/ax/ax-18a/#control-table-description');">2. 4. Control Table Description</button></label>
+                <input type="checkbox" name="sublevel" id="ax-18a_toc_control-table-description">
+                <label for="ax-18a_toc_control-table-description"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/en/dxl/ax/ax-18a/#control-table-description');">2. 4. Control Table Description</button></label>
             
           
 
@@ -3542,8 +3570,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#model-number-0">- Model Number(0)</a>
+                  <a class="tocLevel3" id="ax-18a_toc_model-number-0" href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#model-number-0">- Model Number(0)</a>
                 </li>
               
               
@@ -3553,8 +3583,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#firmware-version-2">- Firmware Version(2)</a>
+                  <a class="tocLevel3" id="ax-18a_toc_firmware-version-2" href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#firmware-version-2">- Firmware Version(2)</a>
                 </li>
               
               
@@ -3564,8 +3596,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#id-3">- ID(3)</a>
+                  <a class="tocLevel3" id="ax-18a_toc_id-3" href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#id-3">- ID(3)</a>
                 </li>
               
               
@@ -3575,8 +3609,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#baud-rate-4">- Baud Rate(4)</a>
+                  <a class="tocLevel3" id="ax-18a_toc_baud-rate-4" href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#baud-rate-4">- Baud Rate(4)</a>
                 </li>
               
               
@@ -3586,8 +3622,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#return-delay-time-5">- Return Delay Time(5)</a>
+                  <a class="tocLevel3" id="ax-18a_toc_return-delay-time-5" href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#return-delay-time-5">- Return Delay Time(5)</a>
                 </li>
               
               
@@ -3597,8 +3635,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#cwccw-angle-limit6-8">- CW/CCW Angle Limit(6,8)</a>
+                  <a class="tocLevel3" id="ax-18a_toc_cwccw-angle-limit6-8" href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#cwccw-angle-limit6-8">- CW/CCW Angle Limit(6,8)</a>
                 </li>
               
               
@@ -3608,8 +3648,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#temperature-limit-11">- Temperature Limit(11)</a>
+                  <a class="tocLevel3" id="ax-18a_toc_temperature-limit-11" href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#temperature-limit-11">- Temperature Limit(11)</a>
                 </li>
               
               
@@ -3619,8 +3661,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#minmax-voltage-limit-12-13">- Min/Max Voltage Limit(12,13)</a>
+                  <a class="tocLevel3" id="ax-18a_toc_minmax-voltage-limit-12-13" href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#minmax-voltage-limit-12-13">- Min/Max Voltage Limit(12,13)</a>
                 </li>
               
               
@@ -3630,8 +3674,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#max-torque-14">- Max Torque(14)</a>
+                  <a class="tocLevel3" id="ax-18a_toc_max-torque-14" href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#max-torque-14">- Max Torque(14)</a>
                 </li>
               
               
@@ -3641,8 +3687,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#status-return-level-16">- Status Return Level(16)</a>
+                  <a class="tocLevel3" id="ax-18a_toc_status-return-level-16" href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#status-return-level-16">- Status Return Level(16)</a>
                 </li>
               
               
@@ -3652,8 +3700,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#alarm-led17-shutdown18">- Alarm LED(17)</a>
+                  <a class="tocLevel3" id="ax-18a_toc_alarm-led17-shutdown18" href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#alarm-led17-shutdown18">- Alarm LED(17)</a>
                 </li>
               
               
@@ -3663,8 +3713,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#alarm-led17-shutdown18">- Shutdown(18)</a>
+                  <a class="tocLevel3" id="ax-18a_toc_alarm-led17-shutdown18" href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#alarm-led17-shutdown18">- Shutdown(18)</a>
                 </li>
               
               
@@ -3674,8 +3726,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#torque-enable-24">- Torque Enable(24)</a>
+                  <a class="tocLevel3" id="ax-18a_toc_torque-enable-24" href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#torque-enable-24">- Torque Enable(24)</a>
                 </li>
               
               
@@ -3685,8 +3739,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#led-25">- LED(25)</a>
+                  <a class="tocLevel3" id="ax-18a_toc_led-25" href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#led-25">- LED(25)</a>
                 </li>
               
               
@@ -3696,8 +3752,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#compliance-margin-26-27">- Compliance Margin(26,27)</a>
+                  <a class="tocLevel3" id="ax-18a_toc_compliance-margin-26-27" href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#compliance-margin-26-27">- Compliance Margin(26,27)</a>
                 </li>
               
               
@@ -3707,8 +3765,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#compliance-slope-28-29">- Compliance Slope(28,29)</a>
+                  <a class="tocLevel3" id="ax-18a_toc_compliance-slope-28-29" href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#compliance-slope-28-29">- Compliance Slope(28,29)</a>
                 </li>
               
               
@@ -3718,8 +3778,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#goal-position-30">- Goal Position(30)</a>
+                  <a class="tocLevel3" id="ax-18a_toc_goal-position-30" href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#goal-position-30">- Goal Position(30)</a>
                 </li>
               
               
@@ -3729,8 +3791,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#moving-speed-32">- Moving Speed(32)</a>
+                  <a class="tocLevel3" id="ax-18a_toc_moving-speed-32" href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#moving-speed-32">- Moving Speed(32)</a>
                 </li>
               
               
@@ -3740,8 +3804,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#torque-limit-34">- Torque Limit(34)</a>
+                  <a class="tocLevel3" id="ax-18a_toc_torque-limit-34" href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#torque-limit-34">- Torque Limit(34)</a>
                 </li>
               
               
@@ -3751,8 +3817,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#present-position-36">- Present Position(36)</a>
+                  <a class="tocLevel3" id="ax-18a_toc_present-position-36" href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#present-position-36">- Present Position(36)</a>
                 </li>
               
               
@@ -3762,8 +3830,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#present-speed-38">- Present Speed(38)</a>
+                  <a class="tocLevel3" id="ax-18a_toc_present-speed-38" href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#present-speed-38">- Present Speed(38)</a>
                 </li>
               
               
@@ -3773,8 +3843,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#present-load-40">- Present Load(40)</a>
+                  <a class="tocLevel3" id="ax-18a_toc_present-load-40" href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#present-load-40">- Present Load(40)</a>
                 </li>
               
               
@@ -3784,8 +3856,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#present-voltage-42">- Present Voltage(42)</a>
+                  <a class="tocLevel3" id="ax-18a_toc_present-voltage-42" href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#present-voltage-42">- Present Voltage(42)</a>
                 </li>
               
               
@@ -3795,8 +3869,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#present-temperature-43">- Present Temperature(43)</a>
+                  <a class="tocLevel3" id="ax-18a_toc_present-temperature-43" href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#present-temperature-43">- Present Temperature(43)</a>
                 </li>
               
               
@@ -3806,8 +3882,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#registered-instruction-44">- Registered Instruction(44)</a>
+                  <a class="tocLevel3" id="ax-18a_toc_registered-instruction-44" href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#registered-instruction-44">- Registered Instruction(44)</a>
                 </li>
               
               
@@ -3817,8 +3895,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#moving-46">- Moving(46)</a>
+                  <a class="tocLevel3" id="ax-18a_toc_moving-46" href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#moving-46">- Moving(46)</a>
                 </li>
               
               
@@ -3828,8 +3908,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#lock-47">- Lock(47)</a>
+                  <a class="tocLevel3" id="ax-18a_toc_lock-47" href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#lock-47">- Lock(47)</a>
                 </li>
               
               
@@ -3839,8 +3921,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#punch-48">- Punch(48)</a>
+                  <a class="tocLevel3" id="ax-18a_toc_punch-48" href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#punch-48">- Punch(48)</a>
                 </li>
               
               
@@ -3864,8 +3948,9 @@ $(function() {
 
       
       
+      
       <li>
-        <a id="#how-to-assemble" href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#how-to-assemble">3. How to Assemble</a>
+        <a id="ax-18a_toc_how-to-assemble" href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#how-to-assemble">3. How to Assemble</a>
       </li>
       
       
@@ -3880,9 +3965,10 @@ $(function() {
 
       
       
+      
       <li class="has-children">
-        <input type="checkbox" name="toplevel" id="#maintenance">
-        <label for="#maintenance"><button class="tocLevel1" id="#maintenance" onclick="movetopage('http://localhost:4000/docs/en/dxl/ax/ax-18a/#maintenance');">4. Maintenance</button></label>
+        <input type="checkbox" name="toplevel" id="ax-18a_toc_maintenance">
+        <label for="ax-18a_toc_maintenance"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/en/dxl/ax/ax-18a/#maintenance');">4. Maintenance</button></label>
       
       
 
@@ -3895,9 +3981,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#horn-and-bearing-replacement" href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#horn-and-bearing-replacement">4. 1. Horn, Bearing</a></li>
+              <li><a class="tocLevel2" id="ax-18a_toc_horn-and-bearing-replacement" href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#horn-and-bearing-replacement">4. 1. Horn, Bearing</a></li>
             
           
 
@@ -3917,9 +4004,10 @@ $(function() {
 
       
       
+      
       <li class="has-children">
-        <input type="checkbox" name="toplevel" id="#reference">
-        <label for="#reference"><button class="tocLevel1" id="#reference" onclick="movetopage('http://localhost:4000/docs/en/dxl/ax/ax-18a/#reference');">5. Reference</button></label>
+        <input type="checkbox" name="toplevel" id="ax-18a_toc_reference">
+        <label for="ax-18a_toc_reference"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/en/dxl/ax/ax-18a/#reference');">5. Reference</button></label>
       
       
 
@@ -3932,9 +4020,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#connector-information" href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#connector-information">5. 1. Connector Information</a></li>
+              <li><a class="tocLevel2" id="ax-18a_toc_connector-information" href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#connector-information">5. 1. Connector Information</a></li>
             
           
 
@@ -3946,9 +4035,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#drawings" href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#drawings">5. 2. Drawings</a></li>
+              <li><a class="tocLevel2" id="ax-18a_toc_drawings" href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#drawings">5. 2. Drawings</a></li>
             
           
 
@@ -3960,9 +4050,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#communication-circuit" href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#communication-circuit">5. 3. Communication Circuit</a></li>
+              <li><a class="tocLevel2" id="ax-18a_toc_communication-circuit" href="http://localhost:4000/docs/en/dxl/ax/ax-18a/#communication-circuit">5. 3. Communication Circuit</a></li>
             
           
 
@@ -4585,8 +4676,9 @@ The following two modes can be set pursuant to the value of CW and CCW.</li>
 If <a href="#present-voltage">Present Voltage(42)</a> is out of the range, Voltage Range Error Bit (Bit0) of Status Packet is returned as ‘1’ and Alarm is triggered as set in the addresses 17 and 18.</p>
 
 <h3 id="max-torque-14"><a name="max-torque"></a><strong><a href="#max-torque-14">Max Torque (14)</a></strong></h3>
-<p>It is the torque value of maximum output. 0 to 1,023 (0x3FF) can be used, and the unit is about 0.1%.
-For example, Data 1,023 (0x3FF) means that Dynamixel will use 100% of the maximum torque it can produce while Data 512 (0x200) means that Dynamixel will use 50% of the maximum torque. When the power is turned on, Torque Limit (Address 34 and 35) uses the value as the initial value.</p>
+<p>It is the torque value of maximum output. 0 to 1,023 (0x3FF) can be used, and the unit is about 0.1%.<br />
+For example, Data 1,023 (0x3FF) means that Dynamixel will use 100% of the maximum torque it can produce while Data 512 (0x200) means that Dynamixel will use 50% of the maximum torque.<br />
+When the power is turned on, Torque Limit (Address 34 and 35) uses the value as the initial value.</p>
 
 <h3 id="status-return-level-16"><a name="status-return-level"></a><strong><a href="#status-return-level-16">Status Return Level (16)</a></strong></h3>
 <p>This value decides how to return Status Packet when Dynamixel receives an Instruction Packet.</p>
@@ -4831,7 +4923,7 @@ The picture above is the front view of Dynamixel</p>
 <p class="notice"><strong>NOTE</strong> : If it is set to Wheel Mode, Goal Position value is not used.</p>
 
 <h3 id="moving-speed-32"><a name="moving-speed"></a><strong><a href="#moving-speed-32">Moving Speed (32)</a></strong></h3>
-<p>It is a moving speed to Goal Position.
+<p>It is a moving speed to Goal Position.<br />
 The range and the unit of the value may vary depending on the operation mode.</p>
 
 <ul>
@@ -4864,8 +4956,8 @@ If the power is turned on, the value of Max Torque (Address 14, 15) is used as t
 <p class="notice"><strong>NOTE</strong> : If the function of Alarm Shutdown is triggered, the motor loses its torque because the value becomes 0. Once error conditions are resolved and this value is changed to the value other than 0, the motor can be operated again.</p>
 
 <h3 id="present-position-36"><a name="present-position"></a><strong><a href="#present-position-36">Present Position (36)</a></strong></h3>
-<p>It is the present position value of Dynamixel.
-The range of the value is 0~1023 (0x3FF), and the unit is 0.29 degree.</p>
+<p>It is the present position value of Dynamixel.<br />
+The range of the value is 0~1023 (0x3FF), and the unit is 0.29 [°].</p>
 
 <p><img src="/assets/images/dxl/dx/dx_series_goal_position.png" alt="" />
 The picture above is the front view of Dynamixel.</p>

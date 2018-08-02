@@ -176,12 +176,12 @@ $(function() {
 
       function extendsearchtool() {
         if (toggle_search_tool == 0) {
-          $('#site_search').css('display', 'block');
+          $('.searchbox').css('display', 'block');
           $('#archive').css('margin-top', '40px');
           toggle_search_tool = 1;
         }
         else {
-          $('#site_search').css('display', 'none');
+          $('.searchbox').css('display', 'none');
           $('#archive').css('margin-top', '0px');
           toggle_search_tool = 0;
         }
@@ -199,22 +199,57 @@ $(function() {
     		alignTop: true,
     		overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
     	});
+      
+      // Implmentation for Local search engine with JSON file
+      // $.getJSON('/test.json', function(idx) {
+      //   $.each(idx, function(v){
+      //     console.log(v);
+      //     console.log(idx[v].header3);
+      //   })
+      // });
+      
     });
     </script>
     <script>
       $(function () {
-        var currentHash = window.location.href.split('#')[1];
+        var currentHash = $(location).attr('hash');
+        var filename = $(location).attr('href').split('/').reverse()[1];
         $(document).scroll(function () {
           $('.header-link').each(function () {
             var top = window.pageYOffset;
             var distance = top - $(this).offset().top;
-            var hash = $(this).attr('href');
+            var rawHash = $(this).attr('href');
+            var contentId = rawHash.replace('#', '');
+            var tocId = rawHash.replace('#', filename+'_toc_');
+            var searchContentId = $('#'+contentId);
+            var searchTocId = $('#'+tocId);
 
-            if (distance < 30 && distance > -30 && currentHash != hash) {
-              currentHash = hash;
-              // console.log(currentHash);
-              window.history.pushState(window.location.href, "title", currentHash);   //Update browser URL with current anchor
-              // $('#' + currentHash).attr("color", "#FF6D6D"); //Syntax error
+            if (distance < 50 && distance > -50 && currentHash != tocId) {
+              // window.history.pushState(window.location.href, "title", currentHash);   //Update browser URL history with current anchor
+              if ((searchContentId.hasClass('class-h1') || searchContentId.hasClass('class-h2') || searchContentId.hasClass('class-h3')) && $('.nav__items').has('#'+tocId).length) {
+                // console.log(contentId);
+                // console.log(tocId);
+                searchTocId.prop("checked", true);  //Open folded Toc menu
+                $('.current_contents').removeClass("current_contents");
+                
+                //Check if Buttoned ToC with children
+                // console.log(searchTocId);
+                if( searchTocId.prop("tagName") == "INPUT" ) {
+                  console.log("input detected");
+                  if( searchTocId.prop("name") == "sublevel" ) {
+                    searchTocId.closest("li.has-grandchildren").find("label > button").addClass("current_contents");
+                  }
+                }
+                else {
+                  searchTocId.addClass("current_contents");
+                }
+                
+                // Open folded Toc menu
+                searchTocId.closest("li.has-grandchildren").find("input").first().prop("checked", true);
+                searchTocId.closest("li.has-children").find("input").first().prop("checked", true);
+                
+                currentHash = tocId;
+              }
             }
           });
         });
@@ -3554,33 +3589,6 @@ $(function() {
       <button class="mobile_button" onclick="movetopage('https://github.com/ROBOTIS-GIT');" style="background-image: url(/assets/images/github_mobile_logo.png); width: 30%;">GitHub</button>
     </div>
 
-    <!-- local navigation
-    <div class="local_navigation">
-      <select id="local_navigation_depth1">
-        <option value = "default">Select Category</option>
-        
-          
-          <option id="다이나믹셀" value = "다이나믹셀">다이나믹셀</option>
-        
-          
-          <option id="플랫폼" value = "플랫폼">플랫폼</option>
-        
-          
-          <option id="교육키트" value = "교육키트">교육키트</option>
-        
-          
-          <option id="소프트웨어" value = "소프트웨어">소프트웨어</option>
-        
-          
-          <option id="부품" value = "부품">부품</option>
-        
-          
-          <option id="FAQ" value = "FAQ">FAQ</option>
-        
-      </select>
-    </div>
-     -->
-
     <!-- Google Custom Search -->
     <form class="searchbox" method="get" id="site_search">
       <script>
@@ -3597,6 +3605,8 @@ $(function() {
       <gcse:search></gcse:search>
     </form>
     <!-- end of Google Custom Search -->
+    <!-- 
+     -->
 
   </div>
 </div>
@@ -3623,8 +3633,9 @@ $(function() {
 
       
       
+      
       <li>
-        <a id="#개요" href="http://localhost:4000/docs/kr/edu/dream/dream1-2/#개요">1. 개요</a>
+        <a id="dream1-2_toc_개요" href="http://localhost:4000/docs/kr/edu/dream/dream1-2/#개요">1. 개요</a>
       </li>
       
       
@@ -3639,8 +3650,9 @@ $(function() {
 
       
       
+      
       <li>
-        <a id="#부품-리스트" href="http://localhost:4000/docs/kr/edu/dream/dream1-2/#부품-리스트">2. 부품 리스트</a>
+        <a id="dream1-2_toc_부품-리스트" href="http://localhost:4000/docs/kr/edu/dream/dream1-2/#부품-리스트">2. 부품 리스트</a>
       </li>
       
       
@@ -3653,11 +3665,12 @@ $(function() {
 
     
 
+      
       
       
       <li class="has-children">
-        <input type="checkbox" name="toplevel" id="#작동하기">
-        <label for="#작동하기"><button class="tocLevel1" id="#작동하기" onclick="movetopage('http://localhost:4000/docs/kr/edu/dream/dream1-2/#작동하기');">3. 작동하기</button></label>
+        <input type="checkbox" name="toplevel" id="dream1-2_toc_작동하기">
+        <label for="dream1-2_toc_작동하기"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/kr/edu/dream/dream1-2/#작동하기');">3. 작동하기</button></label>
       
       
 
@@ -3670,9 +3683,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#작동방법" href="http://localhost:4000/docs/kr/edu/dream/dream1-2/#작동방법">3. 1. 작동방법</a></li>
+              <li><a class="tocLevel2" id="dream1-2_toc_작동방법" href="http://localhost:4000/docs/kr/edu/dream/dream1-2/#작동방법">3. 1. 작동방법</a></li>
             
           
 
@@ -3684,9 +3698,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#프로그램-선택방법" href="http://localhost:4000/docs/kr/edu/dream/dream1-2/#프로그램-선택방법">3. 2. 프로그램 선택방법</a></li>
+              <li><a class="tocLevel2" id="dream1-2_toc_프로그램-선택방법" href="http://localhost:4000/docs/kr/edu/dream/dream1-2/#프로그램-선택방법">3. 2. 프로그램 선택방법</a></li>
             
           
 
@@ -3706,8 +3721,9 @@ $(function() {
 
       
       
+      
       <li>
-        <a id="#교안예제" href="http://localhost:4000/docs/kr/edu/dream/dream1-2/#교안예제">4. 교안예제</a>
+        <a id="dream1-2_toc_교안예제" href="http://localhost:4000/docs/kr/edu/dream/dream1-2/#교안예제">4. 교안예제</a>
       </li>
       
       
@@ -3728,7 +3744,7 @@ $(function() {
     </a>
     <h1 id="개요"><a href="#개요">개요</a></h1>
 
-<p><strong>로보티즈 드림 2단계</strong>는 로봇이란 무엇인지에 대한 기본 개념부터 로봇의 동력, 센서의 활용, 속도와 힘, 보행과 주행 등 과학적 원리와 물리적 이론에 보다 쉽게 접근하고, 실험을 통해 자연스럽게 개념과 원리를 습득하게 해 줍니다.
+<p><strong>로보티즈 드림 2단계</strong> 는 로봇이란 무엇인지에 대한 기본 개념부터 로봇의 동력, 센서의 활용, 속도와 힘, 보행과 주행 등 과학적 원리와 물리적 이론에 보다 쉽게 접근하고, 실험을 통해 자연스럽게 개념과 원리를 습득하게 해 줍니다.
 비슷한 형태의 로봇을 반복적으로 분해 조립하는 단순 학습이 아닌, 로봇을 움직일 수 있게 하는 원리를 이해하고, 학습할 수 있습니다.</p>
 
 <p>로보티즈 드림 2단계는 총 12장의 교재와 예제 로봇이 결합되어 프로그래밍의 기본 학습과 센서의 활용, 로봇의 제작, 원리의 이해, 문제 풀이 등의 과정을 제공합니다.  12장에 걸쳐 로봇을 순서대로 만들면서 로봇 제작의 원리를 학습할 수 있습니다.</p>
@@ -3836,11 +3852,13 @@ $(function() {
   </tbody>
 </table>
 
-<p class="notice"><strong>NOTE</strong> : USB케이블은 로보티즈 드림 1단계 구성품에 포함되어 있습니다.</p>
+<p class="notice"><strong>참고</strong>: USB케이블은 로보티즈 드림 1단계 구성품에 포함되어 있습니다.</p>
 
 <h1 id="교안예제"><a href="#교안예제">교안예제</a></h1>
 
-<p class="notice">각 예제의 조립 방법이나 실행 시 동작에 관한 내용은 로보티즈 드림 2단계 교안을 참고하세요. 기본적으로 프로그램이 내장되어 있습니다. 만일, 프로그램을 직접 만들거나 다운로드 할 경우에 예제 태스크 코드의 다운로드 방법은 [여기]를 참고하세요. 다운로드시 필요한 USB 케이블 은 1단계 구성품에 포함되어 있습니다.</p>
+<p class="notice">각 예제의 조립 방법이나 실행 시 동작에 관한 내용은 로보티즈 드림 2단계 교안을 참고하세요.<br />
+기본적으로 프로그램이 내장되어 있습니다. 만일, 프로그램을 직접 만들거나 다운로드 할 경우에 <a href="/docs/kr/faq/download_task_code/">예제 태스크 코드의 다운로드 방법</a>을 참고하세요.<br />
+다운로드시 필요한 USB 케이블 은 1단계 구성품에 포함되어 있습니다.</p>
 
 <p>2단계 통합 예제 프로그램
 제품 구입 시 제어기(CM-150)에 기본으로 들어있는 프로그램입니다.
