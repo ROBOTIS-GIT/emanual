@@ -176,12 +176,12 @@ $(function() {
 
       function extendsearchtool() {
         if (toggle_search_tool == 0) {
-          $('#site_search').css('display', 'block');
+          $('.searchbox').css('display', 'block');
           $('#archive').css('margin-top', '40px');
           toggle_search_tool = 1;
         }
         else {
-          $('#site_search').css('display', 'none');
+          $('.searchbox').css('display', 'none');
           $('#archive').css('margin-top', '0px');
           toggle_search_tool = 0;
         }
@@ -199,22 +199,57 @@ $(function() {
     		alignTop: true,
     		overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
     	});
+      
+      // Implmentation for Local search engine with JSON file
+      // $.getJSON('/test.json', function(idx) {
+      //   $.each(idx, function(v){
+      //     console.log(v);
+      //     console.log(idx[v].header3);
+      //   })
+      // });
+      
     });
     </script>
     <script>
       $(function () {
-        var currentHash = window.location.href.split('#')[1];
+        var currentHash = $(location).attr('hash');
+        var filename = $(location).attr('href').split('/').reverse()[1];
         $(document).scroll(function () {
           $('.header-link').each(function () {
             var top = window.pageYOffset;
             var distance = top - $(this).offset().top;
-            var hash = $(this).attr('href');
+            var rawHash = $(this).attr('href');
+            var contentId = rawHash.replace('#', '');
+            var tocId = rawHash.replace('#', filename+'_toc_');
+            var searchContentId = $('#'+contentId);
+            var searchTocId = $('#'+tocId);
 
-            if (distance < 30 && distance > -30 && currentHash != hash) {
-              currentHash = hash;
-              // console.log(currentHash);
-              window.history.pushState(window.location.href, "title", currentHash);   //Update browser URL with current anchor
-              // $('#' + currentHash).attr("color", "#FF6D6D"); //Syntax error
+            if (distance < 50 && distance > -50 && currentHash != tocId) {
+              // window.history.pushState(window.location.href, "title", currentHash);   //Update browser URL history with current anchor
+              if ((searchContentId.hasClass('class-h1') || searchContentId.hasClass('class-h2') || searchContentId.hasClass('class-h3')) && $('.nav__items').has('#'+tocId).length) {
+                // console.log(contentId);
+                // console.log(tocId);
+                searchTocId.prop("checked", true);  //Open folded Toc menu
+                $('.current_contents').removeClass("current_contents");
+                
+                //Check if Buttoned ToC with children
+                // console.log(searchTocId);
+                if( searchTocId.prop("tagName") == "INPUT" ) {
+                  console.log("input detected");
+                  if( searchTocId.prop("name") == "sublevel" ) {
+                    searchTocId.closest("li.has-grandchildren").find("label > button").addClass("current_contents");
+                  }
+                }
+                else {
+                  searchTocId.addClass("current_contents");
+                }
+                
+                // Open folded Toc menu
+                searchTocId.closest("li.has-grandchildren").find("input").first().prop("checked", true);
+                searchTocId.closest("li.has-children").find("input").first().prop("checked", true);
+                
+                currentHash = tocId;
+              }
             }
           });
         });
@@ -3554,33 +3589,6 @@ $(function() {
       <button class="mobile_button" onclick="movetopage('https://github.com/ROBOTIS-GIT');" style="background-image: url(/assets/images/github_mobile_logo.png); width: 30%;">GitHub</button>
     </div>
 
-    <!-- local navigation
-    <div class="local_navigation">
-      <select id="local_navigation_depth1">
-        <option value = "default">Select Category</option>
-        
-          
-          <option id="다이나믹셀" value = "다이나믹셀">다이나믹셀</option>
-        
-          
-          <option id="플랫폼" value = "플랫폼">플랫폼</option>
-        
-          
-          <option id="교육키트" value = "교육키트">교육키트</option>
-        
-          
-          <option id="소프트웨어" value = "소프트웨어">소프트웨어</option>
-        
-          
-          <option id="부품" value = "부품">부품</option>
-        
-          
-          <option id="FAQ" value = "FAQ">FAQ</option>
-        
-      </select>
-    </div>
-     -->
-
     <!-- Google Custom Search -->
     <form class="searchbox" method="get" id="site_search">
       <script>
@@ -3597,6 +3605,8 @@ $(function() {
       <gcse:search></gcse:search>
     </form>
     <!-- end of Google Custom Search -->
+    <!-- 
+     -->
 
   </div>
 </div>
@@ -3623,9 +3633,10 @@ $(function() {
 
       
       
+      
       <li class="has-children">
-        <input type="checkbox" name="toplevel" id="#개요">
-        <label for="#개요"><button class="tocLevel1" id="#개요" onclick="movetopage('http://localhost:4000/docs/kr/software/rplus1/task/getting_started/#개요');">1. 개요</button></label>
+        <input type="checkbox" name="toplevel" id="getting_started_toc_개요">
+        <label for="getting_started_toc_개요"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/kr/software/rplus1/task/getting_started/#개요');">1. 개요</button></label>
       
       
 
@@ -3638,9 +3649,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#설치하기" href="http://localhost:4000/docs/kr/software/rplus1/task/getting_started/#설치하기">1. 1. 설치하기</a></li>
+              <li><a class="tocLevel2" id="getting_started_toc_설치하기" href="http://localhost:4000/docs/kr/software/rplus1/task/getting_started/#설치하기">1. 1. 설치하기</a></li>
             
           
 
@@ -3660,9 +3672,10 @@ $(function() {
 
       
       
+      
       <li class="has-children">
-        <input type="checkbox" name="toplevel" id="#시작하기">
-        <label for="#시작하기"><button class="tocLevel1" id="#시작하기" onclick="movetopage('http://localhost:4000/docs/kr/software/rplus1/task/getting_started/#시작하기');">2. 시작하기</button></label>
+        <input type="checkbox" name="toplevel" id="getting_started_toc_시작하기">
+        <label for="getting_started_toc_시작하기"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/kr/software/rplus1/task/getting_started/#시작하기');">2. 시작하기</button></label>
       
       
 
@@ -3675,9 +3688,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#명령줄-만들기" href="http://localhost:4000/docs/kr/software/rplus1/task/getting_started/#명령줄-만들기">2. 1. 명령줄 만들기</a></li>
+              <li><a class="tocLevel2" id="getting_started_toc_명령줄-만들기" href="http://localhost:4000/docs/kr/software/rplus1/task/getting_started/#명령줄-만들기">2. 1. 명령줄 만들기</a></li>
             
           
 
@@ -3689,9 +3703,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#파라미터-만들기" href="http://localhost:4000/docs/kr/software/rplus1/task/getting_started/#파라미터-만들기">2. 2. 파라미터 만들기</a></li>
+              <li><a class="tocLevel2" id="getting_started_toc_파라미터-만들기" href="http://localhost:4000/docs/kr/software/rplus1/task/getting_started/#파라미터-만들기">2. 2. 파라미터 만들기</a></li>
             
           
 
@@ -3703,9 +3718,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#프로그램-다운로드" href="http://localhost:4000/docs/kr/software/rplus1/task/getting_started/#프로그램-다운로드">2. 3. 프로그램 다운로드</a></li>
+              <li><a class="tocLevel2" id="getting_started_toc_프로그램-다운로드" href="http://localhost:4000/docs/kr/software/rplus1/task/getting_started/#프로그램-다운로드">2. 3. 프로그램 다운로드</a></li>
             
           
 
@@ -3717,9 +3733,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#프로그램-결과-출력" href="http://localhost:4000/docs/kr/software/rplus1/task/getting_started/#프로그램-결과-출력">2. 4. 프로그램 결과 출력</a></li>
+              <li><a class="tocLevel2" id="getting_started_toc_프로그램-결과-출력" href="http://localhost:4000/docs/kr/software/rplus1/task/getting_started/#프로그램-결과-출력">2. 4. 프로그램 결과 출력</a></li>
             
           
 
@@ -3731,9 +3748,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#가상로봇-조종" href="http://localhost:4000/docs/kr/software/rplus1/task/getting_started/#가상로봇-조종">2. 5. 가상로봇 조종</a></li>
+              <li><a class="tocLevel2" id="getting_started_toc_가상로봇-조종" href="http://localhost:4000/docs/kr/software/rplus1/task/getting_started/#가상로봇-조종">2. 5. 가상로봇 조종</a></li>
             
           
 
@@ -3753,9 +3771,10 @@ $(function() {
 
       
       
+      
       <li class="has-children">
-        <input type="checkbox" name="toplevel" id="#프로그래밍">
-        <label for="#프로그래밍"><button class="tocLevel1" id="#프로그래밍" onclick="movetopage('http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#프로그래밍');">3. 프로그래밍</button></label>
+        <input type="checkbox" name="toplevel" id="programming_01_toc_프로그래밍">
+        <label for="programming_01_toc_프로그래밍"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#프로그래밍');">3. 프로그래밍</button></label>
       
       
 
@@ -3768,11 +3787,12 @@ $(function() {
 
           
           
+          
             
               
               <li class="has-grandchildren">
-                <input type="checkbox" name="sublevel" id="#편집">
-                <label for="#편집"><button class="tocLevel2" id="#편집" onclick="movetopage('http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#편집');">3. 1. 편집</button></label>
+                <input type="checkbox" name="sublevel" id="programming_01_toc_편집">
+                <label for="programming_01_toc_편집"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#편집');">3. 1. 편집</button></label>
             
           
 
@@ -3784,8 +3804,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#여러줄-선택">- 여러줄 선택</a>
+                  <a class="tocLevel3" id="programming_01_toc_여러줄-선택" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#여러줄-선택">- 여러줄 선택</a>
                 </li>
               
               
@@ -3795,8 +3817,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#줄-삽입">- 줄 삽입</a>
+                  <a class="tocLevel3" id="programming_01_toc_줄-삽입" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#줄-삽입">- 줄 삽입</a>
                 </li>
               
               
@@ -3806,8 +3830,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#줄-지우기">- 줄 지우기</a>
+                  <a class="tocLevel3" id="programming_01_toc_줄-지우기" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#줄-지우기">- 줄 지우기</a>
                 </li>
               
               
@@ -3817,8 +3843,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#줄-활성비활성">- 줄 활성/비활성</a>
+                  <a class="tocLevel3" id="programming_01_toc_줄-활성비활성" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#줄-활성비활성">- 줄 활성/비활성</a>
                 </li>
               
               
@@ -3828,8 +3856,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#복사잘라내기붙여넣기">- 복사/잘라내기/붙여넣기</a>
+                  <a class="tocLevel3" id="programming_01_toc_복사잘라내기붙여넣기" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#복사잘라내기붙여넣기">- 복사/잘라내기/붙여넣기</a>
                 </li>
               
               
@@ -3839,8 +3869,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#이름찾기">- 이름찾기</a>
+                  <a class="tocLevel3" id="programming_01_toc_이름찾기" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#이름찾기">- 이름찾기</a>
                 </li>
               
               
@@ -3856,11 +3888,12 @@ $(function() {
 
           
           
+          
             
               
               <li class="has-grandchildren">
-                <input type="checkbox" name="sublevel" id="#명령어">
-                <label for="#명령어"><button class="tocLevel2" id="#명령어" onclick="movetopage('http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#명령어');">3. 2. 명령어</button></label>
+                <input type="checkbox" name="sublevel" id="programming_01_toc_명령어">
+                <label for="programming_01_toc_명령어"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#명령어');">3. 2. 명령어</button></label>
             
           
 
@@ -3872,8 +3905,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#프로그램-시작">- 프로그램 시작</a>
+                  <a class="tocLevel3" id="programming_01_toc_프로그램-시작" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#프로그램-시작">- 프로그램 시작</a>
                 </li>
               
               
@@ -3883,8 +3918,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#프로그램-강제종료">- 프로그램 강제종료</a>
+                  <a class="tocLevel3" id="programming_01_toc_프로그램-강제종료" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#프로그램-강제종료">- 프로그램 강제종료</a>
                 </li>
               
               
@@ -3894,8 +3931,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#구간-시작끝">- 구간 시작/끝</a>
+                  <a class="tocLevel3" id="programming_01_toc_구간-시작끝" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#구간-시작끝">- 구간 시작/끝</a>
                 </li>
               
               
@@ -3905,8 +3944,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#주석메모">- 주석/메모</a>
+                  <a class="tocLevel3" id="programming_01_toc_주석메모" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#주석메모">- 주석/메모</a>
                 </li>
               
               
@@ -3916,8 +3957,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#계산">- 계산</a>
+                  <a class="tocLevel3" id="programming_01_toc_계산" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#계산">- 계산</a>
                 </li>
               
               
@@ -3927,8 +3970,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#로드">- 로드</a>
+                  <a class="tocLevel3" id="programming_01_toc_로드" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#로드">- 로드</a>
                 </li>
               
               
@@ -3938,8 +3983,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#레이블점프">- 레이블/점프</a>
+                  <a class="tocLevel3" id="programming_01_toc_레이블점프" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#레이블점프">- 레이블/점프</a>
                 </li>
               
               
@@ -3949,8 +3996,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#조건문">- 조건문</a>
+                  <a class="tocLevel3" id="programming_01_toc_조건문" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#조건문">- 조건문</a>
                 </li>
               
               
@@ -3960,8 +4009,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#무조건-반복">- 무조건 반복</a>
+                  <a class="tocLevel3" id="programming_01_toc_무조건-반복" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#무조건-반복">- 무조건 반복</a>
                 </li>
               
               
@@ -3971,8 +4022,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#조건-반복">- 조건 반복</a>
+                  <a class="tocLevel3" id="programming_01_toc_조건-반복" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#조건-반복">- 조건 반복</a>
                 </li>
               
               
@@ -3982,8 +4035,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#횟수-반복">- 횟수 반복</a>
+                  <a class="tocLevel3" id="programming_01_toc_횟수-반복" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#횟수-반복">- 횟수 반복</a>
                 </li>
               
               
@@ -3993,8 +4048,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#반복-끝내기">- 반복 끝내기</a>
+                  <a class="tocLevel3" id="programming_01_toc_반복-끝내기" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#반복-끝내기">- 반복 끝내기</a>
                 </li>
               
               
@@ -4004,8 +4061,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#조건-대기">- 조건 대기</a>
+                  <a class="tocLevel3" id="programming_01_toc_조건-대기" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#조건-대기">- 조건 대기</a>
                 </li>
               
               
@@ -4015,8 +4074,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#함수-강제종료">- 함수 강제종료</a>
+                  <a class="tocLevel3" id="programming_01_toc_함수-강제종료" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#함수-강제종료">- 함수 강제종료</a>
                 </li>
               
               
@@ -4026,8 +4087,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#함수-만들기호출">- 함수 만들기/호출</a>
+                  <a class="tocLevel3" id="programming_01_toc_함수-만들기호출" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#함수-만들기호출">- 함수 만들기/호출</a>
                 </li>
               
               
@@ -4037,8 +4100,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#콜백-함수">- 콜백 함수</a>
+                  <a class="tocLevel3" id="programming_01_toc_콜백-함수" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_01/#콜백-함수">- 콜백 함수</a>
                 </li>
               
               
@@ -4054,11 +4119,12 @@ $(function() {
 
           
           
+          
             
               
               <li class="has-grandchildren">
-                <input type="checkbox" name="sublevel" id="#제어기-파라미터">
-                <label for="#제어기-파라미터"><button class="tocLevel2" id="#제어기-파라미터" onclick="movetopage('http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#제어기-파라미터');">3. 3. 제어기 파라미터</button></label>
+                <input type="checkbox" name="sublevel" id="programming_02_toc_제어기-파라미터">
+                <label for="programming_02_toc_제어기-파라미터"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#제어기-파라미터');">3. 3. 제어기 파라미터</button></label>
             
           
 
@@ -4070,8 +4136,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#보낼-무선-데이터">- 모낼 무선 데이터</a>
+                  <a class="tocLevel3" id="programming_02_toc_보낼-무선-데이터" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#보낼-무선-데이터">- 모낼 무선 데이터</a>
                 </li>
               
               
@@ -4081,8 +4149,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#받은-무선-데이터">- 받은 무선 데이터</a>
+                  <a class="tocLevel3" id="programming_02_toc_받은-무선-데이터" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#받은-무선-데이터">- 받은 무선 데이터</a>
                 </li>
               
               
@@ -4092,8 +4162,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#새-무선-데이터">- 새 무선 데이터</a>
+                  <a class="tocLevel3" id="programming_02_toc_새-무선-데이터" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#새-무선-데이터">- 새 무선 데이터</a>
                 </li>
               
               
@@ -4103,8 +4175,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#임의의-숫자">- 임의의 숫자</a>
+                  <a class="tocLevel3" id="programming_02_toc_임의의-숫자" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#임의의-숫자">- 임의의 숫자</a>
                 </li>
               
               
@@ -4114,8 +4188,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#aux-led">- Aux LED</a>
+                  <a class="tocLevel3" id="programming_02_toc_aux-led" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#aux-led">- Aux LED</a>
                 </li>
               
               
@@ -4125,8 +4201,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#버튼">- 버튼</a>
+                  <a class="tocLevel3" id="programming_02_toc_버튼" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#버튼">- 버튼</a>
                 </li>
               
               
@@ -4136,8 +4214,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#타이머">- 타이머</a>
+                  <a class="tocLevel3" id="programming_02_toc_타이머" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#타이머">- 타이머</a>
                 </li>
               
               
@@ -4147,8 +4227,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#정밀타이머">- 정밀타이머</a>
+                  <a class="tocLevel3" id="programming_02_toc_정밀타이머" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#정밀타이머">- 정밀타이머</a>
                 </li>
               
               
@@ -4158,8 +4240,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#상대-로봇-무선id">- 상대 로봇 무선ID</a>
+                  <a class="tocLevel3" id="programming_02_toc_상대-로봇-무선id" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#상대-로봇-무선id">- 상대 로봇 무선ID</a>
                 </li>
               
               
@@ -4169,8 +4253,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#내-로봇-무선id">- 내 로봇 무선ID</a>
+                  <a class="tocLevel3" id="programming_02_toc_내-로봇-무선id" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#내-로봇-무선id">- 내 로봇 무선ID</a>
                 </li>
               
               
@@ -4180,8 +4266,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#화면출력줄바꿈">- 화면출력/줄바꿈</a>
+                  <a class="tocLevel3" id="programming_02_toc_화면출력줄바꿈" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#화면출력줄바꿈">- 화면출력/줄바꿈</a>
                 </li>
               
               
@@ -4191,8 +4279,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#왼쪽중앙오른쪽-적외선-센서">- 왼쪽/중앙/오른쪽 적외선 센서</a>
+                  <a class="tocLevel3" id="programming_02_toc_왼쪽중앙오른쪽-적외선-센서" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#왼쪽중앙오른쪽-적외선-센서">- 왼쪽/중앙/오른쪽 적외선 센서</a>
                 </li>
               
               
@@ -4202,8 +4292,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#부저-종류">- 부저 종류</a>
+                  <a class="tocLevel3" id="programming_02_toc_부저-종류" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#부저-종류">- 부저 종류</a>
                 </li>
               
               
@@ -4213,8 +4305,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#부저-울림시간">- 부저 울림시간</a>
+                  <a class="tocLevel3" id="programming_02_toc_부저-울림시간" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#부저-울림시간">- 부저 울림시간</a>
                 </li>
               
               
@@ -4224,8 +4318,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#최종-소리감지-횟수">- 최종 소리감지 횟수</a>
+                  <a class="tocLevel3" id="programming_02_toc_최종-소리감지-횟수" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#최종-소리감지-횟수">- 최종 소리감지 횟수</a>
                 </li>
               
               
@@ -4235,8 +4331,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#실시간-소리감지-횟수">- 실시간 소리감지 횟수</a>
+                  <a class="tocLevel3" id="programming_02_toc_실시간-소리감지-횟수" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#실시간-소리감지-횟수">- 실시간 소리감지 횟수</a>
                 </li>
               
               
@@ -4246,8 +4344,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#시작버튼-눌림횟수">- 시작버튼 눌림횟수</a>
+                  <a class="tocLevel3" id="programming_02_toc_시작버튼-눌림횟수" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#시작버튼-눌림횟수">- 시작버튼 눌림횟수</a>
                 </li>
               
               
@@ -4257,8 +4357,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#자동꺼짐-타이머">- 자동꺼짐 타이머</a>
+                  <a class="tocLevel3" id="programming_02_toc_자동꺼짐-타이머" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#자동꺼짐-타이머">- 자동꺼짐 타이머</a>
                 </li>
               
               
@@ -4268,8 +4370,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#rc-100-채널">- RC-100 채널</a>
+                  <a class="tocLevel3" id="programming_02_toc_rc-100-채널" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#rc-100-채널">- RC-100 채널</a>
                 </li>
               
               
@@ -4285,11 +4389,12 @@ $(function() {
 
           
           
+          
             
               
               <li class="has-grandchildren">
-                <input type="checkbox" name="sublevel" id="#모션-파라미터">
-                <label for="#모션-파라미터"><button class="tocLevel2" id="#모션-파라미터" onclick="movetopage('http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#모션-파라미터');">3. 4. 모션 파라미터</button></label>
+                <input type="checkbox" name="sublevel" id="programming_02_toc_모션-파라미터">
+                <label for="programming_02_toc_모션-파라미터"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#모션-파라미터');">3. 4. 모션 파라미터</button></label>
             
           
 
@@ -4301,8 +4406,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#모션-페이지">- 모션 페이지</a>
+                  <a class="tocLevel3" id="programming_02_toc_모션-페이지" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#모션-페이지">- 모션 페이지</a>
                 </li>
               
               
@@ -4312,8 +4419,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#모션-상태">- 모션 상태</a>
+                  <a class="tocLevel3" id="programming_02_toc_모션-상태" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#모션-상태">- 모션 상태</a>
                 </li>
               
               
@@ -4323,8 +4432,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#관절-오프셋">- 관절 오프셋</a>
+                  <a class="tocLevel3" id="programming_02_toc_관절-오프셋" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#관절-오프셋">- 관절 오프셋</a>
                 </li>
               
               
@@ -4334,8 +4445,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#관절-led-자동켜기">- 관절 LED 자동켜기</a>
+                  <a class="tocLevel3" id="programming_02_toc_관절-led-자동켜기" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#관절-led-자동켜기">- 관절 LED 자동켜기</a>
                 </li>
               
               
@@ -4351,11 +4464,12 @@ $(function() {
 
           
           
+          
             
               
               <li class="has-grandchildren">
-                <input type="checkbox" name="sublevel" id="#주변장치">
-                <label for="#주변장치"><button class="tocLevel2" id="#주변장치" onclick="movetopage('http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#주변장치');">3. 5. 주변장치</button></label>
+                <input type="checkbox" name="sublevel" id="programming_02_toc_주변장치">
+                <label for="programming_02_toc_주변장치"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#주변장치');">3. 5. 주변장치</button></label>
             
           
 
@@ -4367,8 +4481,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#감속모터">- 감속모터</a>
+                  <a class="tocLevel3" id="programming_02_toc_감속모터" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#감속모터">- 감속모터</a>
                 </li>
               
               
@@ -4378,8 +4494,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#서보모터">- 서보모터</a>
+                  <a class="tocLevel3" id="programming_02_toc_서보모터" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#서보모터">- 서보모터</a>
                 </li>
               
               
@@ -4389,8 +4507,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#접촉센서">- 접촉센서</a>
+                  <a class="tocLevel3" id="programming_02_toc_접촉센서" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#접촉센서">- 접촉센서</a>
                 </li>
               
               
@@ -4400,8 +4520,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#led모듈">- LED모듈</a>
+                  <a class="tocLevel3" id="programming_02_toc_led모듈" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#led모듈">- LED모듈</a>
                 </li>
               
               
@@ -4411,8 +4533,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#적외선센서">- 적외선센서</a>
+                  <a class="tocLevel3" id="programming_02_toc_적외선센서" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#적외선센서">- 적외선센서</a>
                 </li>
               
               
@@ -4422,8 +4546,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#컬러센서">- 컬러센서</a>
+                  <a class="tocLevel3" id="programming_02_toc_컬러센서" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#컬러센서">- 컬러센서</a>
                 </li>
               
               
@@ -4433,8 +4559,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#자석센서">- 자석센서</a>
+                  <a class="tocLevel3" id="programming_02_toc_자석센서" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#자석센서">- 자석센서</a>
                 </li>
               
               
@@ -4444,8 +4572,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#절대거리센서">- 절대거리센서</a>
+                  <a class="tocLevel3" id="programming_02_toc_절대거리센서" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#절대거리센서">- 절대거리센서</a>
                 </li>
               
               
@@ -4455,8 +4585,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#사용자-장치">- 사용자 장치</a>
+                  <a class="tocLevel3" id="programming_02_toc_사용자-장치" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#사용자-장치">- 사용자 장치</a>
                 </li>
               
               
@@ -4472,11 +4604,12 @@ $(function() {
 
           
           
+          
             
               
               <li class="has-grandchildren">
-                <input type="checkbox" name="sublevel" id="#다이나믹셀-파라미터">
-                <label for="#다이나믹셀-파라미터"><button class="tocLevel2" id="#다이나믹셀-파라미터" onclick="movetopage('http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#다이나믹셀-파라미터');">3. 6. 다이나믹셀 파라미터</button></label>
+                <input type="checkbox" name="sublevel" id="programming_02_toc_다이나믹셀-파라미터">
+                <label for="programming_02_toc_다이나믹셀-파라미터"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#다이나믹셀-파라미터');">3. 6. 다이나믹셀 파라미터</button></label>
             
           
 
@@ -4488,8 +4621,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#모터-켜기">- 모터 켜기</a>
+                  <a class="tocLevel3" id="programming_02_toc_모터-켜기" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#모터-켜기">- 모터 켜기</a>
                 </li>
               
               
@@ -4499,8 +4634,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#led">- LED</a>
+                  <a class="tocLevel3" id="programming_02_toc_led" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#led">- LED</a>
                 </li>
               
               
@@ -4510,8 +4647,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#cwccw-margin">- CW/CCW Margin</a>
+                  <a class="tocLevel3" id="programming_02_toc_cwccw-margin" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#cwccw-margin">- CW/CCW Margin</a>
                 </li>
               
               
@@ -4521,8 +4660,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#cwccw-slope">- CW/CCW Slope</a>
+                  <a class="tocLevel3" id="programming_02_toc_cwccw-slope" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#cwccw-slope">- CW/CCW Slope</a>
                 </li>
               
               
@@ -4532,8 +4673,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#pid-제어">- PID 제어</a>
+                  <a class="tocLevel3" id="programming_02_toc_pid-제어" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#pid-제어">- PID 제어</a>
                 </li>
               
               
@@ -4543,8 +4686,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#목표-위치">- 목표 위치</a>
+                  <a class="tocLevel3" id="programming_02_toc_목표-위치" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#목표-위치">- 목표 위치</a>
                 </li>
               
               
@@ -4554,8 +4699,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#이동-속도">- 이동 속도</a>
+                  <a class="tocLevel3" id="programming_02_toc_이동-속도" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#이동-속도">- 이동 속도</a>
                 </li>
               
               
@@ -4565,8 +4712,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#힘-조절">- 힘 조절</a>
+                  <a class="tocLevel3" id="programming_02_toc_힘-조절" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#힘-조절">- 힘 조절</a>
                 </li>
               
               
@@ -4576,8 +4725,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#현재-위치">- 현재 위치</a>
+                  <a class="tocLevel3" id="programming_02_toc_현재-위치" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#현재-위치">- 현재 위치</a>
                 </li>
               
               
@@ -4587,8 +4738,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#현재-속도">- 현재 속도</a>
+                  <a class="tocLevel3" id="programming_02_toc_현재-속도" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#현재-속도">- 현재 속도</a>
                 </li>
               
               
@@ -4598,8 +4751,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#현재-하중">- 현재 하중</a>
+                  <a class="tocLevel3" id="programming_02_toc_현재-하중" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#현재-하중">- 현재 하중</a>
                 </li>
               
               
@@ -4609,8 +4764,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#전압">- 전압</a>
+                  <a class="tocLevel3" id="programming_02_toc_전압" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#전압">- 전압</a>
                 </li>
               
               
@@ -4620,8 +4777,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#온도">- 온도</a>
+                  <a class="tocLevel3" id="programming_02_toc_온도" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#온도">- 온도</a>
                 </li>
               
               
@@ -4631,8 +4790,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#움직임-유무">- 움직임 유무</a>
+                  <a class="tocLevel3" id="programming_02_toc_움직임-유무" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#움직임-유무">- 움직임 유무</a>
                 </li>
               
               
@@ -4642,8 +4803,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#소모-전류량">- 소모 전류량</a>
+                  <a class="tocLevel3" id="programming_02_toc_소모-전류량" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#소모-전류량">- 소모 전류량</a>
                 </li>
               
               
@@ -4659,11 +4822,12 @@ $(function() {
 
           
           
+          
             
               
               <li class="has-grandchildren">
-                <input type="checkbox" name="sublevel" id="#통합센서-s1">
-                <label for="#통합센서-s1"><button class="tocLevel2" id="#통합센서-s1" onclick="movetopage('http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#통합센서-s1');">3. 7. 통합센서 S1</button></label>
+                <input type="checkbox" name="sublevel" id="programming_02_toc_통합센서-s1">
+                <label for="programming_02_toc_통합센서-s1"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#통합센서-s1');">3. 7. 통합센서 S1</button></label>
             
           
 
@@ -4675,8 +4839,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#거리센서-값">- 거리센서 값</a>
+                  <a class="tocLevel3" id="programming_02_toc_거리센서-값" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#거리센서-값">- 거리센서 값</a>
                 </li>
               
               
@@ -4686,8 +4852,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#조명-밝기">- 조명 밝기</a>
+                  <a class="tocLevel3" id="programming_02_toc_조명-밝기" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#조명-밝기">- 조명 밝기</a>
                 </li>
               
               
@@ -4697,8 +4865,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#물체감지">- 물체감지</a>
+                  <a class="tocLevel3" id="programming_02_toc_물체감지" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#물체감지">- 물체감지</a>
                 </li>
               
               
@@ -4708,8 +4878,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#조명감지">- 조명감지</a>
+                  <a class="tocLevel3" id="programming_02_toc_조명감지" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#조명감지">- 조명감지</a>
                 </li>
               
               
@@ -4719,8 +4891,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#최대-소리-크기">- 최대 소리 크기</a>
+                  <a class="tocLevel3" id="programming_02_toc_최대-소리-크기" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#최대-소리-크기">- 최대 소리 크기</a>
                 </li>
               
               
@@ -4730,8 +4904,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#소리-크기">- 소리 크기</a>
+                  <a class="tocLevel3" id="programming_02_toc_소리-크기" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#소리-크기">- 소리 크기</a>
                 </li>
               
               
@@ -4741,8 +4917,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#소리감지-횟수">- 소리감지 횟수</a>
+                  <a class="tocLevel3" id="programming_02_toc_소리감지-횟수" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#소리감지-횟수">- 소리감지 횟수</a>
                 </li>
               
               
@@ -4752,8 +4930,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#소리발생-시간">- 소리발생 시간</a>
+                  <a class="tocLevel3" id="programming_02_toc_소리발생-시간" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#소리발생-시간">- 소리발생 시간</a>
                 </li>
               
               
@@ -4763,8 +4943,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#부저-음계">- 부저 음계</a>
+                  <a class="tocLevel3" id="programming_02_toc_부저-음계" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#부저-음계">- 부저 음계</a>
                 </li>
               
               
@@ -4774,8 +4956,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#부저-울림시간">- 부저 울림시간</a>
+                  <a class="tocLevel3" id="programming_02_toc_부저-울림시간" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#부저-울림시간">- 부저 울림시간</a>
                 </li>
               
               
@@ -4785,8 +4969,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#새-리모컨-데이터">- 새 리모컨 데이터</a>
+                  <a class="tocLevel3" id="programming_02_toc_새-리모컨-데이터" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#새-리모컨-데이터">- 새 리모컨 데이터</a>
                 </li>
               
               
@@ -4796,8 +4982,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#받은-리모컨-데이터">- 받은 리모컨 데이터</a>
+                  <a class="tocLevel3" id="programming_02_toc_받은-리모컨-데이터" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#받은-리모컨-데이터">- 받은 리모컨 데이터</a>
                 </li>
               
               
@@ -4807,8 +4995,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#보낼-리모컨-데이터">- 보낼 리모컨 데이터</a>
+                  <a class="tocLevel3" id="programming_02_toc_보낼-리모컨-데이터" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#보낼-리모컨-데이터">- 보낼 리모컨 데이터</a>
                 </li>
               
               
@@ -4818,8 +5008,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#물체감지-기준값">- 물체감지 기준값</a>
+                  <a class="tocLevel3" id="programming_02_toc_물체감지-기준값" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#물체감지-기준값">- 물체감지 기준값</a>
                 </li>
               
               
@@ -4829,8 +5021,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#조명감지-기준값">- 조명감지 기준값</a>
+                  <a class="tocLevel3" id="programming_02_toc_조명감지-기준값" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#조명감지-기준값">- 조명감지 기준값</a>
                 </li>
               
               
@@ -4846,11 +5040,12 @@ $(function() {
 
           
           
+          
             
               
               <li class="has-grandchildren">
-                <input type="checkbox" name="sublevel" id="#적외선-센서-어레이">
-                <label for="#적외선-센서-어레이"><button class="tocLevel2" id="#적외선-센서-어레이" onclick="movetopage('http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#적외선-센서-어레이');">3. 8. 적외선 센서 어레이</button></label>
+                <input type="checkbox" name="sublevel" id="programming_02_toc_적외선-센서-어레이">
+                <label for="programming_02_toc_적외선-센서-어레이"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#적외선-센서-어레이');">3. 8. 적외선 센서 어레이</button></label>
             
           
 
@@ -4862,8 +5057,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#적외선-센서-값">- 적외선 센서 값</a>
+                  <a class="tocLevel3" id="programming_02_toc_적외선-센서-값" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#적외선-센서-값">- 적외선 센서 값</a>
                 </li>
               
               
@@ -4873,8 +5070,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#ir-어레이-부저-음계">- IR 어레이 부저 음계</a>
+                  <a class="tocLevel3" id="programming_02_toc_ir-어레이-부저-음계" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#ir-어레이-부저-음계">- IR 어레이 부저 음계</a>
                 </li>
               
               
@@ -4884,8 +5083,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#ir-어레이-부저-울림시간">- IR 어레이 부저 울림시간</a>
+                  <a class="tocLevel3" id="programming_02_toc_ir-어레이-부저-울림시간" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#ir-어레이-부저-울림시간">- IR 어레이 부저 울림시간</a>
                 </li>
               
               
@@ -4895,8 +5096,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#감지-기준값-자동설정">- 감지 기준값 자동설정</a>
+                  <a class="tocLevel3" id="programming_02_toc_감지-기준값-자동설정" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#감지-기준값-자동설정">- 감지 기준값 자동설정</a>
                 </li>
               
               
@@ -4906,8 +5109,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#적외선-물체감지">- 적외선 물체감지</a>
+                  <a class="tocLevel3" id="programming_02_toc_적외선-물체감지" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#적외선-물체감지">- 적외선 물체감지</a>
                 </li>
               
               
@@ -4917,8 +5122,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#적외선감지-기준값">- 적외선감지 기준값</a>
+                  <a class="tocLevel3" id="programming_02_toc_적외선감지-기준값" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#적외선감지-기준값">- 적외선감지 기준값</a>
                 </li>
               
               
@@ -4928,8 +5135,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#직접-지정">- 직접 지정</a>
+                  <a class="tocLevel3" id="programming_02_toc_직접-지정" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#직접-지정">- 직접 지정</a>
                 </li>
               
               
@@ -4945,9 +5154,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#변수" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#변수">3. 9. 변수</a></li>
+              <li><a class="tocLevel2" id="programming_02_toc_변수" href="http://localhost:4000/docs/kr/software/rplus1/task/programming_02/#변수">3. 9. 변수</a></li>
             
           
 
@@ -4959,11 +5169,12 @@ $(function() {
 
           
           
+          
             
               
               <li class="has-grandchildren">
-                <input type="checkbox" name="sublevel" id="#스마트앱-파라미터">
-                <label for="#스마트앱-파라미터"><button class="tocLevel2" id="#스마트앱-파라미터" onclick="movetopage('http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#스마트앱-파라미터');">3. 10. 스마트앱 파라미터</button></label>
+                <input type="checkbox" name="sublevel" id="task_misc_toc_스마트앱-파라미터">
+                <label for="task_misc_toc_스마트앱-파라미터"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#스마트앱-파라미터');">3. 10. 스마트앱 파라미터</button></label>
             
           
 
@@ -4975,8 +5186,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#기본정보">- 기본정보</a>
+                  <a class="tocLevel3" id="task_misc_toc_기본정보" href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#기본정보">- 기본정보</a>
                 </li>
               
               
@@ -4986,8 +5199,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#디버그-정보-표시읽기쓰기">- 디버그 정보 표시(읽기/쓰기)</a>
+                  <a class="tocLevel3" id="task_misc_toc_디버그-정보-표시읽기쓰기" href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#디버그-정보-표시읽기쓰기">- 디버그 정보 표시(읽기/쓰기)</a>
                 </li>
               
               
@@ -4997,8 +5212,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#화면-회전읽기쓰기">- 화면 회전(읽기/쓰기)</a>
+                  <a class="tocLevel3" id="task_misc_toc_화면-회전읽기쓰기" href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#화면-회전읽기쓰기">- 화면 회전(읽기/쓰기)</a>
                 </li>
               
               
@@ -5008,8 +5225,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#카메라-선택읽기쓰기">- 카메라 선택(읽기/쓰기)</a>
+                  <a class="tocLevel3" id="task_misc_toc_카메라-선택읽기쓰기" href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#카메라-선택읽기쓰기">- 카메라 선택(읽기/쓰기)</a>
                 </li>
               
               
@@ -5019,8 +5238,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#카메라-줌읽기쓰기">- 카메라 줌(읽기/쓰기)</a>
+                  <a class="tocLevel3" id="task_misc_toc_카메라-줌읽기쓰기" href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#카메라-줌읽기쓰기">- 카메라 줌(읽기/쓰기)</a>
                 </li>
               
               
@@ -5030,8 +5251,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#카메라-기능-선택읽기쓰기">- 카메라 기능 선택(읽기/쓰기)</a>
+                  <a class="tocLevel3" id="task_misc_toc_카메라-기능-선택읽기쓰기" href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#카메라-기능-선택읽기쓰기">- 카메라 기능 선택(읽기/쓰기)</a>
                 </li>
               
               
@@ -5041,8 +5264,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#얼굴-감지-위치읽기">- 얼굴 감지 위치(읽기)</a>
+                  <a class="tocLevel3" id="task_misc_toc_얼굴-감지-위치읽기" href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#얼굴-감지-위치읽기">- 얼굴 감지 위치(읽기)</a>
                 </li>
               
               
@@ -5052,8 +5277,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#감지된-색상읽기">- 감지된 색상(읽기)</a>
+                  <a class="tocLevel3" id="task_misc_toc_감지된-색상읽기" href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#감지된-색상읽기">- 감지된 색상(읽기)</a>
                 </li>
               
               
@@ -5063,8 +5290,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#동작-감지-위치읽기">- 동작 감지 위치(읽기)</a>
+                  <a class="tocLevel3" id="task_misc_toc_동작-감지-위치읽기" href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#동작-감지-위치읽기">- 동작 감지 위치(읽기)</a>
                 </li>
               
               
@@ -5074,8 +5303,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#라인-감지-색상읽기쓰기">- 라인 감지 색상(읽기/쓰기)</a>
+                  <a class="tocLevel3" id="task_misc_toc_라인-감지-색상읽기쓰기" href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#라인-감지-색상읽기쓰기">- 라인 감지 색상(읽기/쓰기)</a>
                 </li>
               
               
@@ -5085,8 +5316,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#라인-감지-위치읽기">- 라인 감지 위치(읽기)</a>
+                  <a class="tocLevel3" id="task_misc_toc_라인-감지-위치읽기" href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#라인-감지-위치읽기">- 라인 감지 위치(읽기)</a>
                 </li>
               
               
@@ -5096,8 +5329,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#동영상-녹화읽기쓰기">- 동영상 녹화(읽기/쓰기)</a>
+                  <a class="tocLevel3" id="task_misc_toc_동영상-녹화읽기쓰기" href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#동영상-녹화읽기쓰기">- 동영상 녹화(읽기/쓰기)</a>
                 </li>
               
               
@@ -5107,8 +5342,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#사진-촬영읽기쓰기">- 사진 촬영(읽기/쓰기)</a>
+                  <a class="tocLevel3" id="task_misc_toc_사진-촬영읽기쓰기" href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#사진-촬영읽기쓰기">- 사진 촬영(읽기/쓰기)</a>
                 </li>
               
               
@@ -5118,8 +5355,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#배경-표시읽기쓰기">- 배경 표시(읽기/쓰기)</a>
+                  <a class="tocLevel3" id="task_misc_toc_배경-표시읽기쓰기" href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#배경-표시읽기쓰기">- 배경 표시(읽기/쓰기)</a>
                 </li>
               
               
@@ -5129,8 +5368,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#그림-표시읽기쓰기">- 그림 표시(읽기/쓰기)</a>
+                  <a class="tocLevel3" id="task_misc_toc_그림-표시읽기쓰기" href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#그림-표시읽기쓰기">- 그림 표시(읽기/쓰기)</a>
                 </li>
               
               
@@ -5140,8 +5381,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#감지된-얼굴-그림-표시읽기쓰기">- 감지된 얼굴 그림 표시(읽기/쓰기)</a>
+                  <a class="tocLevel3" id="task_misc_toc_감지된-얼굴-그림-표시읽기쓰기" href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#감지된-얼굴-그림-표시읽기쓰기">- 감지된 얼굴 그림 표시(읽기/쓰기)</a>
                 </li>
               
               
@@ -5151,8 +5394,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#도형-표시읽기쓰기">- 도형 표시(읽기/쓰기)</a>
+                  <a class="tocLevel3" id="task_misc_toc_도형-표시읽기쓰기" href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#도형-표시읽기쓰기">- 도형 표시(읽기/쓰기)</a>
                 </li>
               
               
@@ -5162,8 +5407,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#문자-표시읽기쓰기">- 문자 표시(읽기/쓰기)</a>
+                  <a class="tocLevel3" id="task_misc_toc_문자-표시읽기쓰기" href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#문자-표시읽기쓰기">- 문자 표시(읽기/쓰기)</a>
                 </li>
               
               
@@ -5173,8 +5420,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#숫자-표시읽기쓰기">- 숫자 표시(읽기/쓰기)</a>
+                  <a class="tocLevel3" id="task_misc_toc_숫자-표시읽기쓰기" href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#숫자-표시읽기쓰기">- 숫자 표시(읽기/쓰기)</a>
                 </li>
               
               
@@ -5184,8 +5433,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#문자음성-자동변환--tts읽기쓰기">- 문자음성 자동변환 - TTS(읽기/쓰기)</a>
+                  <a class="tocLevel3" id="task_misc_toc_문자음성-자동변환--tts읽기쓰기" href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#문자음성-자동변환--tts읽기쓰기">- 문자음성 자동변환 - TTS(읽기/쓰기)</a>
                 </li>
               
               
@@ -5195,8 +5446,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#악기-연주읽기쓰기">- 악기 연주(읽기/쓰기)</a>
+                  <a class="tocLevel3" id="task_misc_toc_악기-연주읽기쓰기" href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#악기-연주읽기쓰기">- 악기 연주(읽기/쓰기)</a>
                 </li>
               
               
@@ -5206,8 +5459,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#오디오-재생-12읽기쓰기">- 오디오 재생 1.2(읽기/쓰기)</a>
+                  <a class="tocLevel3" id="task_misc_toc_오디오-재생-12읽기쓰기" href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#오디오-재생-12읽기쓰기">- 오디오 재생 1.2(읽기/쓰기)</a>
                 </li>
               
               
@@ -5217,8 +5472,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#동영상-재생읽기쓰기">- 동영상 재생(읽기/쓰기)</a>
+                  <a class="tocLevel3" id="task_misc_toc_동영상-재생읽기쓰기" href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#동영상-재생읽기쓰기">- 동영상 재생(읽기/쓰기)</a>
                 </li>
               
               
@@ -5228,8 +5485,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#동영상-일시-정지읽기쓰기">- 동영상 일시 정지(읽기/쓰기)</a>
+                  <a class="tocLevel3" id="task_misc_toc_동영상-일시-정지읽기쓰기" href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#동영상-일시-정지읽기쓰기">- 동영상 일시 정지(읽기/쓰기)</a>
                 </li>
               
               
@@ -5239,8 +5498,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#음성-인식읽기쓰기">- 음성 인식(읽기/쓰기)</a>
+                  <a class="tocLevel3" id="task_misc_toc_음성-인식읽기쓰기" href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#음성-인식읽기쓰기">- 음성 인식(읽기/쓰기)</a>
                 </li>
               
               
@@ -5250,8 +5511,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#음성-인식-결과읽기쓰기">- 음성 인식 결과(읽기/쓰기)</a>
+                  <a class="tocLevel3" id="task_misc_toc_음성-인식-결과읽기쓰기" href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#음성-인식-결과읽기쓰기">- 음성 인식 결과(읽기/쓰기)</a>
                 </li>
               
               
@@ -5261,8 +5524,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#볼륨읽기쓰기">- 볼륨(읽기/쓰기)</a>
+                  <a class="tocLevel3" id="task_misc_toc_볼륨읽기쓰기" href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#볼륨읽기쓰기">- 볼륨(읽기/쓰기)</a>
                 </li>
               
               
@@ -5272,8 +5537,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#흔들림-정도읽기">- 흔들림 정도(읽기)</a>
+                  <a class="tocLevel3" id="task_misc_toc_흔들림-정도읽기" href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#흔들림-정도읽기">- 흔들림 정도(읽기)</a>
                 </li>
               
               
@@ -5283,8 +5550,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#기울기-각도왼쪽오른쪽위쪽아래쪽읽기">- 기울기 각도(읽기)</a>
+                  <a class="tocLevel3" id="task_misc_toc_기울기-각도왼쪽오른쪽위쪽아래쪽읽기" href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#기울기-각도왼쪽오른쪽위쪽아래쪽읽기">- 기울기 각도(읽기)</a>
                 </li>
               
               
@@ -5294,8 +5563,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#조도-센서읽기">- 조도 센서(읽기)</a>
+                  <a class="tocLevel3" id="task_misc_toc_조도-센서읽기" href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#조도-센서읽기">- 조도 센서(읽기)</a>
                 </li>
               
               
@@ -5305,8 +5576,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#자기장-센서읽기">- 자기장 센서(읽기)</a>
+                  <a class="tocLevel3" id="task_misc_toc_자기장-센서읽기" href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#자기장-센서읽기">- 자기장 센서(읽기)</a>
                 </li>
               
               
@@ -5316,8 +5589,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#방향-각도값읽기">- 방향 (각도값)(읽기)</a>
+                  <a class="tocLevel3" id="task_misc_toc_방향-각도값읽기" href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#방향-각도값읽기">- 방향 (각도값)(읽기)</a>
                 </li>
               
               
@@ -5327,8 +5602,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#소음-측정읽기">- 소음 측정(읽기)</a>
+                  <a class="tocLevel3" id="task_misc_toc_소음-측정읽기" href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#소음-측정읽기">- 소음 측정(읽기)</a>
                 </li>
               
               
@@ -5338,8 +5615,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#터치-위치-12읽기">- 터치 위치 1.2(읽기)</a>
+                  <a class="tocLevel3" id="task_misc_toc_터치-위치-12읽기" href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#터치-위치-12읽기">- 터치 위치 1.2(읽기)</a>
                 </li>
               
               
@@ -5349,8 +5628,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#sms전화번호읽기쓰기">- SMS(전화번호)(읽기/쓰기)</a>
+                  <a class="tocLevel3" id="task_misc_toc_sms전화번호읽기쓰기" href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#sms전화번호읽기쓰기">- SMS(전화번호)(읽기/쓰기)</a>
                 </li>
               
               
@@ -5360,8 +5641,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#sms내용읽기쓰기">- SMS(내용)(읽기/쓰기)</a>
+                  <a class="tocLevel3" id="task_misc_toc_sms내용읽기쓰기" href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#sms내용읽기쓰기">- SMS(내용)(읽기/쓰기)</a>
                 </li>
               
               
@@ -5371,8 +5654,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#알림바-이벤트읽기쓰기">- 알림바 이벤트(읽기/쓰기)</a>
+                  <a class="tocLevel3" id="task_misc_toc_알림바-이벤트읽기쓰기" href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#알림바-이벤트읽기쓰기">- 알림바 이벤트(읽기/쓰기)</a>
                 </li>
               
               
@@ -5382,8 +5667,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#타이머읽기쓰기">- 타이머(읽기/쓰기)</a>
+                  <a class="tocLevel3" id="task_misc_toc_타이머읽기쓰기" href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#타이머읽기쓰기">- 타이머(읽기/쓰기)</a>
                 </li>
               
               
@@ -5393,8 +5680,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#진동-시간읽기쓰기">- 진동 시간(읽기/쓰기)</a>
+                  <a class="tocLevel3" id="task_misc_toc_진동-시간읽기쓰기" href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#진동-시간읽기쓰기">- 진동 시간(읽기/쓰기)</a>
                 </li>
               
               
@@ -5404,8 +5693,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#플래시-led읽기쓰기">- 플래시 LED(읽기/쓰기)</a>
+                  <a class="tocLevel3" id="task_misc_toc_플래시-led읽기쓰기" href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#플래시-led읽기쓰기">- 플래시 LED(읽기/쓰기)</a>
                 </li>
               
               
@@ -5415,8 +5706,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#앱-실행읽기쓰기">- 앱 실행(읽기/쓰기)</a>
+                  <a class="tocLevel3" id="task_misc_toc_앱-실행읽기쓰기" href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#앱-실행읽기쓰기">- 앱 실행(읽기/쓰기)</a>
                 </li>
               
               
@@ -5426,8 +5719,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#현재-시간읽기">- 현재 시간(읽기)</a>
+                  <a class="tocLevel3" id="task_misc_toc_현재-시간읽기" href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#현재-시간읽기">- 현재 시간(읽기)</a>
                 </li>
               
               
@@ -5437,8 +5732,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#메일-발송읽기쓰기">- 메일 발송(읽기/쓰기)</a>
+                  <a class="tocLevel3" id="task_misc_toc_메일-발송읽기쓰기" href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#메일-발송읽기쓰기">- 메일 발송(읽기/쓰기)</a>
                 </li>
               
               
@@ -5448,8 +5745,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#화면출력-화면출력-후-줄바꿈읽기">- 화면출력, 화면출력 후 줄바꿈(읽기)</a>
+                  <a class="tocLevel3" id="task_misc_toc_화면출력-화면출력-후-줄바꿈읽기" href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#화면출력-화면출력-후-줄바꿈읽기">- 화면출력, 화면출력 후 줄바꿈(읽기)</a>
                 </li>
               
               
@@ -5459,8 +5758,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#제스처-인식읽기쓰기">- 제스처 인식(읽기/쓰기)</a>
+                  <a class="tocLevel3" id="task_misc_toc_제스처-인식읽기쓰기" href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#제스처-인식읽기쓰기">- 제스처 인식(읽기/쓰기)</a>
                 </li>
               
               
@@ -5484,9 +5785,10 @@ $(function() {
 
       
       
+      
       <li class="has-children">
-        <input type="checkbox" name="toplevel" id="#기타-정보">
-        <label for="#기타-정보"><button class="tocLevel1" id="#기타-정보" onclick="movetopage('http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#기타-정보');">4. 기타 정보</button></label>
+        <input type="checkbox" name="toplevel" id="task_misc_toc_기타-정보">
+        <label for="task_misc_toc_기타-정보"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#기타-정보');">4. 기타 정보</button></label>
       
       
 
@@ -5499,9 +5801,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#제어기-선택" href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#제어기-선택">4. 1. 제어기 선택</a></li>
+              <li><a class="tocLevel2" id="task_misc_toc_제어기-선택" href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#제어기-선택">4. 1. 제어기 선택</a></li>
             
           
 
@@ -5513,9 +5816,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#룰-체크" href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#룰-체크">4. 2. 룰 체크</a></li>
+              <li><a class="tocLevel2" id="task_misc_toc_룰-체크" href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#룰-체크">4. 2. 룰 체크</a></li>
             
           
 
@@ -5527,9 +5831,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#에러-메세지" href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#에러-메세지">4. 3. 에러 메세지</a></li>
+              <li><a class="tocLevel2" id="task_misc_toc_에러-메세지" href="http://localhost:4000/docs/kr/software/rplus1/task/task_misc/#에러-메세지">4. 3. 에러 메세지</a></li>
             
           
 
@@ -5559,7 +5864,7 @@ $(function() {
 
 <p>태스크 코드 파일은 PC 에서 <em>.tsk</em> 라는 확장자를 가지며 좌측과 같은 아이콘으로 표시됩니다.</p>
 
-<p class="notice"><strong>NOTE</strong> : 상위버젼의 Task 파일은 하위버젼에서 호환되지 않습니다.</p>
+<p class="notice"><strong>참고</strong>: 상위버젼의 Task 파일은 하위버젼에서 호환되지 않습니다.</p>
 
 <p><img src="/assets/images/sw/rplus1/task/roboplus_task_001.png" alt="R+태스크" /></p>
 
@@ -5582,7 +5887,7 @@ $(function() {
 
 <p><img src="/assets/images/sw/roboplus_install.png" alt="img_install" /></p>
 
-<p class="notice"><strong>NOTE</strong> : 로보플러스를 실행하기 위해선 .NET FrameWork 3.5이상의 버전이 필요 합니다. 로보플러스 설치시 .NET FrameWork 자동설치가 실패할 경우엔 .NET FreameWork를 별도로 설치하세요.</p>
+<p class="notice"><strong>참고</strong>: 로보플러스를 실행하기 위해선 .NET FrameWork 3.5이상의 버전이 필요 합니다. 로보플러스 설치시 .NET FrameWork 자동설치가 실패할 경우엔 .NET FreameWork를 별도로 설치하세요.</p>
 
 <h3 id="roboplus-설치-실패시">RoboPlus 설치 실패시</h3>
 

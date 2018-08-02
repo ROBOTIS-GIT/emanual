@@ -176,12 +176,12 @@ $(function() {
 
       function extendsearchtool() {
         if (toggle_search_tool == 0) {
-          $('#site_search').css('display', 'block');
+          $('.searchbox').css('display', 'block');
           $('#archive').css('margin-top', '40px');
           toggle_search_tool = 1;
         }
         else {
-          $('#site_search').css('display', 'none');
+          $('.searchbox').css('display', 'none');
           $('#archive').css('margin-top', '0px');
           toggle_search_tool = 0;
         }
@@ -199,22 +199,57 @@ $(function() {
     		alignTop: true,
     		overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
     	});
+      
+      // Implmentation for Local search engine with JSON file
+      // $.getJSON('/test.json', function(idx) {
+      //   $.each(idx, function(v){
+      //     console.log(v);
+      //     console.log(idx[v].header3);
+      //   })
+      // });
+      
     });
     </script>
     <script>
       $(function () {
-        var currentHash = window.location.href.split('#')[1];
+        var currentHash = $(location).attr('hash');
+        var filename = $(location).attr('href').split('/').reverse()[1];
         $(document).scroll(function () {
           $('.header-link').each(function () {
             var top = window.pageYOffset;
             var distance = top - $(this).offset().top;
-            var hash = $(this).attr('href');
+            var rawHash = $(this).attr('href');
+            var contentId = rawHash.replace('#', '');
+            var tocId = rawHash.replace('#', filename+'_toc_');
+            var searchContentId = $('#'+contentId);
+            var searchTocId = $('#'+tocId);
 
-            if (distance < 30 && distance > -30 && currentHash != hash) {
-              currentHash = hash;
-              // console.log(currentHash);
-              window.history.pushState(window.location.href, "title", currentHash);   //Update browser URL with current anchor
-              // $('#' + currentHash).attr("color", "#FF6D6D"); //Syntax error
+            if (distance < 50 && distance > -50 && currentHash != tocId) {
+              // window.history.pushState(window.location.href, "title", currentHash);   //Update browser URL history with current anchor
+              if ((searchContentId.hasClass('class-h1') || searchContentId.hasClass('class-h2') || searchContentId.hasClass('class-h3')) && $('.nav__items').has('#'+tocId).length) {
+                // console.log(contentId);
+                // console.log(tocId);
+                searchTocId.prop("checked", true);  //Open folded Toc menu
+                $('.current_contents').removeClass("current_contents");
+                
+                //Check if Buttoned ToC with children
+                // console.log(searchTocId);
+                if( searchTocId.prop("tagName") == "INPUT" ) {
+                  console.log("input detected");
+                  if( searchTocId.prop("name") == "sublevel" ) {
+                    searchTocId.closest("li.has-grandchildren").find("label > button").addClass("current_contents");
+                  }
+                }
+                else {
+                  searchTocId.addClass("current_contents");
+                }
+                
+                // Open folded Toc menu
+                searchTocId.closest("li.has-grandchildren").find("input").first().prop("checked", true);
+                searchTocId.closest("li.has-children").find("input").first().prop("checked", true);
+                
+                currentHash = tocId;
+              }
             }
           });
         });
@@ -3554,33 +3589,6 @@ $(function() {
       <button class="mobile_button" onclick="movetopage('https://github.com/ROBOTIS-GIT');" style="background-image: url(/assets/images/github_mobile_logo.png); width: 30%;">GitHub</button>
     </div>
 
-    <!-- local navigation
-    <div class="local_navigation">
-      <select id="local_navigation_depth1">
-        <option value = "default">Select Category</option>
-        
-          
-          <option id="다이나믹셀" value = "다이나믹셀">다이나믹셀</option>
-        
-          
-          <option id="플랫폼" value = "플랫폼">플랫폼</option>
-        
-          
-          <option id="교육키트" value = "교육키트">교육키트</option>
-        
-          
-          <option id="소프트웨어" value = "소프트웨어">소프트웨어</option>
-        
-          
-          <option id="부품" value = "부품">부품</option>
-        
-          
-          <option id="FAQ" value = "FAQ">FAQ</option>
-        
-      </select>
-    </div>
-     -->
-
     <!-- Google Custom Search -->
     <form class="searchbox" method="get" id="site_search">
       <script>
@@ -3597,6 +3605,8 @@ $(function() {
       <gcse:search></gcse:search>
     </form>
     <!-- end of Google Custom Search -->
+    <!-- 
+     -->
 
   </div>
 </div>
@@ -3623,8 +3633,9 @@ $(function() {
 
       
       
+      
       <li>
-        <a id="#개요" href="http://localhost:4000/docs/kr/parts/controller/cm-200/#개요">1. 개요</a>
+        <a id="cm-200_toc_개요" href="http://localhost:4000/docs/kr/parts/controller/cm-200/#개요">1. 개요</a>
       </li>
       
       
@@ -3639,8 +3650,9 @@ $(function() {
 
       
       
+      
       <li>
-        <a id="#제품-사양" href="http://localhost:4000/docs/kr/parts/controller/cm-200/#제품-사양">2. 제품 사양</a>
+        <a id="cm-200_toc_제품-사양" href="http://localhost:4000/docs/kr/parts/controller/cm-200/#제품-사양">2. 제품 사양</a>
       </li>
       
       
@@ -3655,8 +3667,9 @@ $(function() {
 
       
       
+      
       <li>
-        <a id="#컨트롤-테이블" href="http://localhost:4000/docs/kr/parts/controller/cm-200/#컨트롤-테이블">3. 컨트롤 테이블</a>
+        <a id="cm-200_toc_컨트롤-테이블" href="http://localhost:4000/docs/kr/parts/controller/cm-200/#컨트롤-테이블">3. 컨트롤 테이블</a>
       </li>
       
       
@@ -3671,8 +3684,9 @@ $(function() {
 
       
       
+      
       <li>
-        <a id="#각-부-명칭" href="http://localhost:4000/docs/kr/parts/controller/cm-200/#각-부-명칭">4. 각 부 명칭</a>
+        <a id="cm-200_toc_각-부-명칭" href="http://localhost:4000/docs/kr/parts/controller/cm-200/#각-부-명칭">4. 각 부 명칭</a>
       </li>
       
       
@@ -3687,8 +3701,9 @@ $(function() {
 
       
       
+      
       <li>
-        <a id="#전원-연결" href="http://localhost:4000/docs/kr/parts/controller/cm-200/#전원-연결">5. 전원 연결</a>
+        <a id="cm-200_toc_전원-연결" href="http://localhost:4000/docs/kr/parts/controller/cm-200/#전원-연결">5. 전원 연결</a>
       </li>
       
       
@@ -3703,8 +3718,9 @@ $(function() {
 
       
       
+      
       <li>
-        <a id="#작동-방법" href="http://localhost:4000/docs/kr/parts/controller/cm-200/#작동-방법">6. 작동 방법</a>
+        <a id="cm-200_toc_작동-방법" href="http://localhost:4000/docs/kr/parts/controller/cm-200/#작동-방법">6. 작동 방법</a>
       </li>
       
       
@@ -3732,11 +3748,12 @@ $(function() {
 
     
 
+      
       
       
       <li class="has-children">
-        <input type="checkbox" name="toplevel" id="#초급-사용자">
-        <label for="#초급-사용자"><button class="tocLevel1" id="#초급-사용자" onclick="movetopage('http://localhost:4000/docs/kr/parts/controller/cm-200/#초급-사용자');">10. 초급 사용자</button></label>
+        <input type="checkbox" name="toplevel" id="cm-200_toc_초급-사용자">
+        <label for="cm-200_toc_초급-사용자"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/kr/parts/controller/cm-200/#초급-사용자');">10. 초급 사용자</button></label>
       
       
 
@@ -3749,9 +3766,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#무선통신-연결하기" href="http://localhost:4000/docs/kr/parts/controller/cm-200/#무선통신-연결하기">10. 1. 무선통신 연결하기</a></li>
+              <li><a class="tocLevel2" id="cm-200_toc_무선통신-연결하기" href="http://localhost:4000/docs/kr/parts/controller/cm-200/#무선통신-연결하기">10. 1. 무선통신 연결하기</a></li>
             
           
 
@@ -3763,9 +3781,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#r-smartiii-설치하기" href="http://localhost:4000/docs/kr/parts/controller/cm-200/#r-smartiii-설치하기">10. 2. R+ SmartIII 설치</a></li>
+              <li><a class="tocLevel2" id="cm-200_toc_r-smartiii-설치하기" href="http://localhost:4000/docs/kr/parts/controller/cm-200/#r-smartiii-설치하기">10. 2. R+ SmartIII 설치</a></li>
             
           
 
@@ -3777,9 +3796,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#r-mtask-20-설치하기" href="http://localhost:4000/docs/kr/parts/controller/cm-200/#r-mtask-20-설치하기">10. 3. R+ m.Task2.0 설치</a></li>
+              <li><a class="tocLevel2" id="cm-200_toc_r-mtask-20-설치하기" href="http://localhost:4000/docs/kr/parts/controller/cm-200/#r-mtask-20-설치하기">10. 3. R+ m.Task2.0 설치</a></li>
             
           
 
@@ -3791,9 +3811,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#모션파일-다운로드" href="http://localhost:4000/docs/kr/parts/controller/cm-200/#모션파일-다운로드">10. 4. 모션파일 다운로드</a></li>
+              <li><a class="tocLevel2" id="cm-200_toc_모션파일-다운로드" href="http://localhost:4000/docs/kr/parts/controller/cm-200/#모션파일-다운로드">10. 4. 모션파일 다운로드</a></li>
             
           
 
@@ -3813,9 +3834,10 @@ $(function() {
 
       
       
+      
       <li class="has-children">
-        <input type="checkbox" name="toplevel" id="#고급-사용자">
-        <label for="#고급-사용자"><button class="tocLevel1" id="#고급-사용자" onclick="movetopage('http://localhost:4000/docs/kr/parts/controller/cm-200/#고급-사용자');">11. 고급 사용자</button></label>
+        <input type="checkbox" name="toplevel" id="cm-200_toc_고급-사용자">
+        <label for="cm-200_toc_고급-사용자"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/kr/parts/controller/cm-200/#고급-사용자');">11. 고급 사용자</button></label>
       
       
 
@@ -3828,9 +3850,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#프로그래밍" href="http://localhost:4000/docs/kr/parts/controller/cm-200/#프로그래밍">11. 1. 프로그래밍</a></li>
+              <li><a class="tocLevel2" id="cm-200_toc_프로그래밍" href="http://localhost:4000/docs/kr/parts/controller/cm-200/#프로그래밍">11. 1. 프로그래밍</a></li>
             
           
 
@@ -3850,9 +3873,10 @@ $(function() {
 
       
       
+      
       <li class="has-children">
-        <input type="checkbox" name="toplevel" id="#관리하기">
-        <label for="#관리하기"><button class="tocLevel1" id="#관리하기" onclick="movetopage('http://localhost:4000/docs/kr/parts/controller/cm-200/#관리하기');">12. 관리하기</button></label>
+        <input type="checkbox" name="toplevel" id="cm-200_toc_관리하기">
+        <label for="cm-200_toc_관리하기"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/kr/parts/controller/cm-200/#관리하기');">12. 관리하기</button></label>
       
       
 
@@ -3865,9 +3889,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#펌웨어-복구" href="http://localhost:4000/docs/kr/parts/controller/cm-200/#펌웨어-복구">12. 1. 펌웨어 복구</a></li>
+              <li><a class="tocLevel2" id="cm-200_toc_펌웨어-복구" href="http://localhost:4000/docs/kr/parts/controller/cm-200/#펌웨어-복구">12. 1. 펌웨어 복구</a></li>
             
           
 
@@ -3885,10 +3910,11 @@ $(function() {
 
     
 
+      
       
       
       <li>
-        <a id="#참고자료" href="http://localhost:4000/docs/kr/parts/controller/cm-200/#참고자료">13. 참고자료</a>
+        <a id="cm-200_toc_참고자료" href="http://localhost:4000/docs/kr/parts/controller/cm-200/#참고자료">13. 참고자료</a>
       </li>
       
       
