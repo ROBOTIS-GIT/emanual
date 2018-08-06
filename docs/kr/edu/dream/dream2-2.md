@@ -19,7 +19,7 @@ sidebar:
 로보티즈 드림Ⅱ 2단계는 총 12장의 교재와 예제 로봇이 결합되어 프로그래밍의 기본 학습과 센서의 활용, 로봇의 제작, 원리의 이해, 문제 풀이 등의 과정을 제공합니다.  12장에 걸쳐 로봇을 순서대로 만들면서 로봇 제작의 원리를 학습할 수 있습니다.
 
 로보티즈 드림Ⅱ 2단계의 통합프로그램은 제어기([CM-150])에 내장되어있으며, 사용자가 직접 프로그램 학습 및 다운로드를 하기 위해서는 로보티즈 드림Ⅱ 1단계에 포함되어 있는 USB 케이블을 이용해서 다운로드 할 수 있습니다.
-보다 다양한 주변 장치를 이용하여 로봇을 제작 및 프로그래밍 하기 위해서는 로보티즈 드림Ⅱ 3단계를 구매하시면 됩니다.
+보다 다양한 주변 장치를 이용하여 로봇을 제작 및 프로그래밍하기 위해서는 로보티즈 드림Ⅱ 3단계를 구매하시면 됩니다.
 
 # [부품 리스트](#부품-리스트)
 
@@ -98,7 +98,7 @@ sidebar:
 [CM-150]: /docs/kr/parts/controller/cm-150/
 [감속 모터]: /docs/kr/parts/motor/gm-10a/
 [자동꺼짐타이머 바로가기]: /docs/kr/software/rplus1/task/programming_02/#자동꺼짐-타이머
-[예제 태스크 코드의 다운로드 방법]: /docs/kr/faq/download_task_code/
+[예제 태스크 코드의 다운로드 방법]: /docs/kr/software/rplus2/task/#다운로드-하기
 [작동하기]: #작동하기
 [DREAM_L2_Total_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l2_total_kr.tskx
 [DREAM_L2_Elephant_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l2_elephant_kr.tskx
