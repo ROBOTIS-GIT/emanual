@@ -27,8 +27,11 @@ sidebar:
 |       JTAG/SWD       |         X         |         1         |         1         |
 |     Micro B USB      |         X         |         1         |         1         |
 |      5-Pin Port      |         X         |         4         |         4         |
-|  Dynamixel TTL BUS   |         X         |         4         |         4         |
+|  Dynamixel TTL BUS   |         X         |         4 `1`     |         4 `2`     |
 | 4 Pin Communication  |         X         |         1         |         1         |
+
+`1`: [MOLEX 53253-0370] x 2(for XL-320), [MOLEX 22-03-5035] x 2(for AX/MX-Series)  
+`2`: [MOLEX 53253-0370] x 4(for XL-320)
 
 - OpenCM9.04 is a microcontroller board based on 32bit ARM Cortex-M3. The OpenCM9.04’s schematics and source codes are open-source.
 - 3 types are available: Type A & Type B & Type C. The difference between Type A,Type B, Type C is the availability of the connectors. (Refer to the image and table above.)  
@@ -2266,15 +2269,20 @@ void testscrolltext(void) {
 
 ## [Recovery Mode](#recovery-mode)
 
-- If you download the wrong firmware and it does not work, you can force download using recovery mode. Once you have downloaded the normal example, it will be restored and you will be able to download it again..
+- If the board does not work due to corrupted firmware, you can force downloading default firmware from Roboplus Manager 1.0 / 2.0. Sketches also can be downloaded from Arduino IDE, OpenCM IDE.
+- Disconnect other power sources and devices from OpenCM9.04. While holding down the User Button of OpenCM9.04, connect the board directly to PC with USB cable.
 
-- While holding down the User Button of OpenCM9.04, connect directly to PC with USB cable. Remove all other power sources and connect only to USB while holding down the User Button.
+  ![](/assets/images/sw/mobile/mini_firmware_02.jpg)
+  > User Button
 
   ![](/assets/images/parts/controller/opencm904/user_button.jpg)
 
-- If you enter recovery mode as shown below, the green LED remains on. When the download is completed normally, the board is reset and the LED is turned off.
+- If you enter recovery mode as shown below, the green LED will be turned on. When download is completed normally, the board will be reset and the green LED is turned off.
 
   ![](/assets/images/parts/controller/opencm904/recovery_led.jpg)
+
+Please refer to [R+Manager 2.0 Firmware Recovery](/docs/en/software/rplus2/manager/#firmware-recovery) or [R+Manager 1.0 Firmware Recovery](/docs/en/software/rplus1/manager/#firmware-recovery) sections.
+{: .notice}
 
 ## [Install Windows Driver](#install-windows-driver)
 

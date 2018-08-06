@@ -27,8 +27,11 @@ sidebar:
 |JTAG/SWD|X|1|1|
 |Micro B USB|X|1|1|
 |5-Pin Port|X|4|4|
-|Dynamixel TTL BUS|X|4|4|
+|Dynamixel TTL BUS|X|4`1`|4`2`|
 |4 Pin 통신 포트|X|1|1|
+
+`1`: [MOLEX 53253-0370] x 2(XL-320 호환), [MOLEX 22-03-5035] x 2(AX 또는 MX 시리즈 호환)  
+`2`: [MOLEX 53253-0370] x 4(XL-320 호환)
 
 - `OpenCM9.04`는 32bit ARM Cortex-M3가 장착되어 있으며, 회로도 및 소스코드가 공개된 로봇용 임베디드 보드입니다.
 - Type으로는 A,B,C type이 있습니다. 위의 Type사진과 표를 보면 커넥터를 제공 여부에 따라 Type이 달라집니다.  

@@ -3,11 +3,11 @@ Gives out commands to the robot at once using the zigbee module’s broadcast mo
 
 ### Bioloid(Entry/Advanced)
 
-- Communication with the Zig2Serial and carious robots
+- Communication with the Zig2Serial and various robots
 
   ![Control_Multiple_Robots_01](/assets/images/edu/bioloid/bioloid_ctrl_multi_robot_01.png)
 
-- Communication with the RC-100 and carious robots
+- Communication with the RC-100 and various robots
 
   ![Control_Multiple_Robots_02](/assets/images/edu/bioloid/bioloid_ctrl_multi_robot_02.png)
 
@@ -27,18 +27,18 @@ The channel for the ZIG-100 mounted on the CM-5 is unchangeable. Thus, all users
 {: .notice}
 
 
-### Bioloid Premium Kit(CM-700)
+### Bioloid Premium Kit
 
-- Communication with the Zig2Serial and carious robots
+- Communication with the Zig2Serial and various robots
 
   ![Control_Multiple_Robots_03](/assets/images/edu/bioloid/bioloid_ctrl_multi_robot_03.png)
 
-- Communication with the RC-100 and carious robots
+- Communication with the RC-100 and various robots
 
   ![Control_Multiple_Robots_04](/assets/images/edu/bioloid/bioloid_ctrl_multi_robot_04.png)
 
 
-1. When using the CM-510/CM-700, connect the ZIG-100 module with the controller.
+1. When using the CM-510, connect the ZIG-100 module with the controller.
 2. Use the RoboPlus Manager to change the opposite party’s wireless ID to 65535.
 3. The channel on the ZIG-110 connected to the controller it set to #4, so the channels on the Zig2Serial and RC-100 must be set to #4.
 4. [How to change the RC-100 channel]
