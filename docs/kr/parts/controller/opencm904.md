@@ -655,7 +655,8 @@ Tools > Port > COM1를 선택하십시오.
 ![](/assets/images/parts/controller/opencm904/floor_plan.png)
 
 
-
+[MOLEX 53253-0370]: https://www.molex.com/molex/products/datasheet.jsp?part=active/0532530370_PCB_HEADERS.xml
+[MOLEX 22-03-5035]: http://www.molex.com/molex/products/datasheet.jsp?part=active/0022035035_PCB_HEADERS.xml
 [악세서리 구매하기]: http://www.robotis.com/shop/item.php?it_id=902-0084-030
 [OpenCM9.04 C Type 펌웨어 복구하기]: /docs/kr/edu/mini/#로보티즈-미니-제어기-펌웨어-업데이트
 [아두이노 IDE]: #아두이노-ide
