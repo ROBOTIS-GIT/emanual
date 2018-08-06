@@ -38,7 +38,7 @@ sidebar:
 
 {% capture dream_02 %}
 각 예제의 조립 방법이나 실행 시 동작에 관한 내용은 로보티즈 드림II 5단계 교안을 참고하세요.  
-예제 프로그램은 사용자가 직접 다운로드 해야 합니다. 
+예제 프로그램은 사용자가 직접 다운로드 해야 합니다.
 만일, 프로그램을 직접 만들거나 다운로드 할 경우에 [예제 태스크 코드의 다운로드 방법]을 참고하세요.
 다운로드시 필요한 USB 케이블은 1단계 구성품에 포함되어 있습니다.
 {% endcapture %}
@@ -70,7 +70,7 @@ sidebar:
 [3단계]: /docs/kr/edu/dream2/dream2-3/
 [4단계]: /docs/kr/edu/dream2/dream2-4/
 [BT-410]: /docs/kr/parts/communication/bt-410/
-[예제 태스크 코드의 다운로드 방법]: /docs/kr/faq/download_task_code/
+[예제 태스크 코드의 다운로드 방법]: /docs/kr/software/rplus2/task/#다운로드-하기
 [DREAM_L5_Tank_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l5_tank_kr.tskx
 [DREAM_L5_RobotKnight_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l5_robotknight_kr.tskx
 [DREAM_L5_WarRobot_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l3_fourwheeled_kr.tskx

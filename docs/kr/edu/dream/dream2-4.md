@@ -18,7 +18,7 @@ sidebar:
 로보티즈 드림II 4단계는 1, 2, 3단계 키트와 결합되어 총 12장의 교재와 예제 로봇이 결합되어 제어 프로그램과 센서들의 활용, 원리의 이해, 문제풀이 등의 과정을 제공합니다. 12회에 걸쳐 로봇을 순서대로 만들면서 로봇 제작의 원리를 학습할 수 있습니다.
 
 교육키트 4단계는 1, 2, 3단계 키트의 부품들이 있어야 로봇을 제작할 수 있습니다. 반드시 교육키트 [1단계], [2단계], [3단계]를 먼저 구매하시기 바랍니다.  
-로보티즈 드림II 4단계에서 프로그램은 제어기(CM-150)에 사용자가 직접 프로그램 하거나 다운로드 해야 합니다.  
+로보티즈 드림II 4단계에서 프로그램은 제어기([CM-150])에 사용자가 직접 프로그램 하거나 다운로드 해야 합니다.  
 로보티즈 드림II 1단계에 포함되어 있는 USB 케이블을 이용해서 다운로드 할 수 있습니다.  
 로봇을 제작하여 보다 다양한 형태로 제작하거나, 로봇을 블루투스로 조종하기 위해서는 로보티즈 드림II 5단계를 구매하시면 됩니다.
 
@@ -37,7 +37,7 @@ sidebar:
 
 {% capture dream_02 %}
 각 예제의 조립 방법이나 실행 시 동작에 관한 내용은 로보티즈 드림II 4단계 교안을 참고하세요.  
-예제 프로그램은 사용자가 직접 다운로드 해야 합니다. 
+예제 프로그램은 사용자가 직접 다운로드 해야 합니다.
 만일, 프로그램을 직접 만들거나 다운로드 할 경우에 [예제 태스크 코드의 다운로드 방법]을 참고하세요.
 다운로드시 필요한 USB 케이블은 1단계 구성품에 포함되어 있습니다.
 {% endcapture %}
@@ -59,7 +59,7 @@ sidebar:
 | 11. 두더지게임|![](/assets/images/edu/dream/dream2/dream2_04_11_kr.jpg) |                             [Download][DREAM2_L4_MoleHitting_KR.tskx]                              |
 |   12. 도깨비|![](/assets/images/edu/dream/dream2/dream2_04_12_kr.jpg)   |                              [Download][DREAM2_L4_BabyGoblin_KR.tskx]                              |
 
-
+[CM-150]:  /docs/kr/parts/controller/cm-150/
 [1단계]: /docs/kr/edu/dream2/dream2-1/
 [2단계]: /docs/kr/edu/dream2/dream2-2/
 [3단계]: /docs/kr/edu/dream2/dream2-3/
@@ -67,7 +67,7 @@ sidebar:
 [적외선 센서]: /docs/kr/parts/sensor/irss-10/
 [LED 모듈]: /docs/kr/parts/display/lm-10/
 [접촉 센서]: /docs/kr/parts/sensor/ts-10/
-[예제 태스크 코드의 다운로드 방법]: /docs/kr/faq/download_task_code/
+[예제 태스크 코드의 다운로드 방법]: /docs/kr/software/rplus2/task/#다운로드-하기
 [DREAM2_L4_Orgel_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l4_orgel_kr.tskx
 [DREAM2_L4_CleanupRobot_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l4_cleanuprobot_kr.tskx
 [DREAM2_L4_CleanupRobot_KR(RC).tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l4_cleanuprobot_kr(rc).tskx
