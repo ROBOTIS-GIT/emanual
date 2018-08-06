@@ -49,6 +49,10 @@ If Anaconda is installed, you can see `Python 2.7.xx :: Anaconda, Inc.`.
 To use ROS and Anaconda together, you must additionally install ROS dependency packages.
 ``` bash
 $ pip install -U rosinstall msgpack empy defusedxml netifaces
+$ conda install --channel https://conda.anaconda.org/conda-forge pyqt
+$ conda install -c anaconda pyqt=4.11.4
+$ pip install pyqtgraph
+$ sudo apt-get install python-qt4
 ```
 
 ### [Tensorflow](#tensorflow)
@@ -68,14 +72,60 @@ $ pip install --ignore-installed --upgrade https://storage.googleapis.com/tensor
 $ pip install keras
 ```
 
-## [Step. 1 (No Obstacle)](#step-1-no-obstacle)
-- (Coming soon!)
+### [Machine Learning packages](#machine-learning-packages)
+**WARNING**: Please install [turtlebot3](https://github.com/ROBOTIS-GIT/turtlebot3), [turtlebot3_msgs](https://github.com/ROBOTIS-GIT/turtlebot3_msgs) and [turtlebot3_simulations](https://github.com/ROBOTIS-GIT/turtlebot3_simulations) package before installing this package.
+{: .notice--warning}
 
-## [Step. 2 (Static Obstacle)](#step-2-static-obstacle)
-- (Coming soon!)
+``` bash
+$ cd ~/catkin_ws/src/
+$ git clone -b develop https://github.com/ROBOTIS-GIT/turtlebot3_machine_learning.git
+$ cd ~/catkin_ws && catkin_make
+```
 
-## [Step. 3 (Moving Obstacle)](#step-3-moving-obstacle)
-- (Coming soon!)
+## [Run Machine Learning](#run-machine-learning)
+The goal of DQN Agent is to get the TurtleBot3 to the goal avoiding obstacles. When TurtleBot3 gets closer to the goal, it gets a positive reward, and when it gets farther it gets a negative reward.
+The episode ends when the TurtleBot3 crashes on an obstacle or after a certain period of time. During the episode, TurtleBot3 gets a big  positive reward when it gets to the goal, and TurtleBot3 gets a big negative reward when it crashes on an obstacle.
 
-## [Step. 4 (Combination Obstacle)](#step-4-combination-obstacle)
-- (Coming soon!)
+<iframe width="1236" height="695" src="https://www.youtube.com/embed/807_cByUBSI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+### [Stage 1 (No Obstacle)](#stage-1-no-obstacle)
+Stage 1 is a 4x4 map with no obstacles.
+
+![](/assets/images/platform/turtlebot3/machine_learning/stage_1.jpg)
+``` bash
+$ roslaunch turtlebot3_gazebo turtlebot3_stage_1.launch
+$ roslaunch turtlebot3_dqn turtlebot3_dqn_stage_1.launch
+```
+### [Stage 2 (Static Obstacle)](#stage-2-static-obstacle)
+Stage 2 is a 4x4 map with four cylinders of static obstacles.
+
+![](/assets/images/platform/turtlebot3/machine_learning/stage_2.jpg)
+``` bash
+$ roslaunch turtlebot3_gazebo turtlebot3_stage_2.launch
+$ roslaunch turtlebot3_dqn turtlebot3_dqn_stage_2.launch
+```
+### [Stage 3 (Moving Obstacle)](#stage-3-moving-obstacle)
+Stage 2 is a 4x4 map with four cylinders of moving obstacles.
+
+![](/assets/images/platform/turtlebot3/machine_learning/stage_3.jpg)
+``` bash
+$ roslaunch turtlebot3_gazebo turtlebot3_stage_3.launch
+$ roslaunch turtlebot3_dqn turtlebot3_dqn_stage_3.launch
+```
+### [Stage 4 (Combination Obstacle)](#stage-4-combination-obstacle)
+Stage 4 is a 5x5 map with walls and two cylinders of moving obstacles.
+
+![](/assets/images/platform/turtlebot3/machine_learning/stage_4.jpg)
+``` bash
+$ roslaunch turtlebot3_gazebo turtlebot3_stage_4.launch
+$ roslaunch turtlebot3_dqn turtlebot3_dqn_stage_4.launch
+```
+
+If you want to see graph, launch the graph launch file.
+
+``` bash
+$ roslaunch turtlebot3_dqn result_graph.launch
+```
+
+## [Set parameters](#set-parameters)
+- coming soon
