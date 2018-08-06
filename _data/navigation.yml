@@ -306,11 +306,11 @@ main:
       titlekr: "바이올로이드"
       url: /edu/bioloid/
       children:
-      - title: "Beginner Level"
-        titlekr: "초급"
+      - title: "*Beginner Level"
+        titlekr: "*초급"
         url: /edu/bioloid/beginner/
-      - title: "Comprehensive Level"
-        titlekr: "종합"
+      - title: "*Comprehensive Level"
+        titlekr: "*종합"
         url: /edu/bioloid/comprehensive/
       - title: "ROBOTIS STEM"
         titlekr: "STEM 키트"
@@ -3390,7 +3390,7 @@ mx-64-2:
         - title: "PWM Lmit(36)"
           titlekr: "PWM Limit(36)"
           url: /dxl/mx/mx-64-2/#pwm-limit36
-        - title: "Current Lmit(38)"
+        - title: "Current Limit(38)"
           titlekr: "Current Limit(38)"
           url: /dxl/mx/mx-64-2/#current-limit38
         - title: "Acceleration Limit(40)"
@@ -3614,7 +3614,7 @@ mx-106-2:
         - title: "PWM Lmit(36)"
           titlekr: "PWM Limit(36)"
           url: /dxl/mx/mx-106-2/#pwm-limit36
-        - title: "Current Lmit(38)"
+        - title: "Current Limit(38)"
           titlekr: "Current Limit(38)"
           url: /dxl/mx/mx-106-2/#current-limit38
         - title: "Acceleration Limit(40)"
@@ -3834,7 +3834,7 @@ xh430-v210:
         - title: "PWM Lmit(36)"
           titlekr: "PWM Limit(36)"
           url: /dxl/x/xh430-v210/#pwm-limit36
-        - title: "Current Lmit(38)"
+        - title: "Current Limit(38)"
           titlekr: "Current Limit(38)"
           url: /dxl/x/xh430-v210/#current-limit38
         - title: "Acceleration Limit(40)"
@@ -3968,6 +3968,10 @@ xh430-v210:
         titlekr: "커넥터 정보"
         url: /dxl/x/xh430-v210/#connector-information
         urlkr: /dxl/x/xh430-v210/#커넥터-정보
+      - title: "Communication Circuit"
+        titlekr: "통신 회로"
+        url: /dxl/x/xh430-v210/#communication-circuit
+        urlkr: /dxl/x/xh430-v210/#통신-회로
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/x/xh430-v210/#drawings
@@ -4065,7 +4069,7 @@ xh430-v350:
         - title: "PWM Lmit(36)"
           titlekr: "PWM Limit(36)"
           url: /dxl/x/xh430-v350/#pwm-limit36
-        - title: "Current Lmit(38)"
+        - title: "Current Limit(38)"
           titlekr: "Current Limit(38)"
           url: /dxl/x/xh430-v350/#current-limit38
         - title: "Acceleration Limit(40)"
@@ -4199,6 +4203,10 @@ xh430-v350:
         titlekr: "커넥터 정보"
         url: /dxl/x/xh430-v350/#connector-information
         urlkr: /dxl/x/xh430-v350/#커넥터-정보
+      - title: "Communication Circuit"
+        titlekr: "통신 회로"
+        url: /dxl/x/xh430-v350/#communication-circuit
+        urlkr: /dxl/x/xh430-v350/#통신-회로
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/x/xh430-v350/#drawings
@@ -4296,7 +4304,7 @@ xh430-w210:
         - title: "PWM Lmit(36)"
           titlekr: "PWM Limit(36)"
           url: /dxl/x/xh430-w210/#pwm-limit36
-        - title: "Current Lmit(38)"
+        - title: "Current Limit(38)"
           titlekr: "Current Limit(38)"
           url: /dxl/x/xh430-w210/#current-limit38
         - title: "Acceleration Limit(40)"
@@ -4430,6 +4438,10 @@ xh430-w210:
         titlekr: "커넥터 정보"
         url: /dxl/x/xh430-w210/#connector-information
         urlkr: /dxl/x/xh430-w210/#커넥터-정보
+      - title: "Communication Circuit"
+        titlekr: "통신 회로"
+        url: /dxl/x/xh430-w210/#communication-circuit
+        urlkr: /dxl/x/xh430-w210/#통신-회로
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/x/xh430-w210/#drawings
@@ -4527,7 +4539,7 @@ xh430-w350:
         - title: "PWM Lmit(36)"
           titlekr: "PWM Limit(36)"
           url: /dxl/x/xh430-w350/#pwm-limit36
-        - title: "Current Lmit(38)"
+        - title: "Current Limit(38)"
           titlekr: "Current Limit(38)"
           url: /dxl/x/xh430-w350/#current-limit38
         - title: "Acceleration Limit(40)"
@@ -4661,6 +4673,10 @@ xh430-w350:
         titlekr: "커넥터 정보"
         url: /dxl/x/xh430-w350/#connector-information
         urlkr: /dxl/x/xh430-w350/#커넥터-정보
+      - title: "Communication Circuit"
+        titlekr: "통신 회로"
+        url: /dxl/x/xh430-w350/#communication-circuit
+        urlkr: /dxl/x/xh430-w350/#통신-회로
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/x/xh430-w350/#drawings
@@ -4719,6 +4735,10 @@ xl320:
         titlekr: "커넥터 정보"
         url: /dxl/x/xl320/#connector-information
         urlkr: /dxl/x/xl320/#커넥터-정보
+      - title: "Communication Circuit"
+        titlekr: "통신 회로"
+        url: /dxl/x/xl320/#communication-circuit
+        urlkr: /dxl/x/xl320/#통신-회로
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/x/xl320/#drawings
@@ -4808,6 +4828,10 @@ xl430-w250:
         titlekr: "커넥터 정보"
         url: /dxl/x/xl430-w250/#connector-information
         urlkr: /dxl/x/xl430-w250/#커넥터-정보
+      - title: "Communication Circuit"
+        titlekr: "통신 회로"
+        url: /dxl/x/xl430-w250/#communication-circuit
+        urlkr: /dxl/x/xl430-w250/#통신-회로
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/x/xl430-w250/#drawings
@@ -4905,7 +4929,7 @@ xm430-w210:
         - title: "PWM Lmit(36)"
           titlekr: "PWM Limit(36)"
           url: /dxl/x/xm430-w210/#pwm-limit36
-        - title: "Current Lmit(38)"
+        - title: "Current Limit(38)"
           titlekr: "Current Limit(38)"
           url: /dxl/x/xm430-w210/#current-limit38
         - title: "Acceleration Limit(40)"
@@ -5039,6 +5063,10 @@ xm430-w210:
         titlekr: "커넥터 정보"
         url: /dxl/x/xm430-w210/#connector-information
         urlkr: /dxl/x/xm430-w210/#커넥터-정보
+      - title: "Communication Circuit"
+        titlekr: "통신 회로"
+        url: /dxl/x/xm430-w210/#communication-circuit
+        urlkr: /dxl/x/xm430-w210/#통신-회로
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/x/xm430-w210/#drawings
@@ -5136,7 +5164,7 @@ xm430-w350:
         - title: "PWM Lmit(36)"
           titlekr: "PWM Limit(36)"
           url: /dxl/x/xm430-w350/#pwm-limit36
-        - title: "Current Lmit(38)"
+        - title: "Current Limit(38)"
           titlekr: "Current Limit(38)"
           url: /dxl/x/xm430-w350/#current-limit38
         - title: "Acceleration Limit(40)"
@@ -5270,6 +5298,10 @@ xm430-w350:
         titlekr: "커넥터 정보"
         url: /dxl/x/xm430-w350/#connector-information
         urlkr: /dxl/x/xm430-w350/#커넥터-정보
+      - title: "Communication Circuit"
+        titlekr: "통신 회로"
+        url: /dxl/x/xm430-w350/#communication-circuit
+        urlkr: /dxl/x/xm430-w350/#통신-회로
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/x/xm430-w350/#drawings
@@ -5367,7 +5399,7 @@ xm540-w150:
         - title: "PWM Lmit(36)"
           titlekr: "PWM Limit(36)"
           url: /dxl/x/xm540-w150/#pwm-limit36
-        - title: "Current Lmit(38)"
+        - title: "Current Limit(38)"
           titlekr: "Current Limit(38)"
           url: /dxl/x/xm540-w150/#current-limit38
         - title: "Acceleration Limit(40)"
@@ -5507,6 +5539,10 @@ xm540-w150:
         titlekr: "커넥터 정보"
         url: /dxl/x/xm540-w150/#connector-information
         urlkr: /dxl/x/xm540-w150/#커넥터-정보
+      - title: "Communication Circuit"
+        titlekr: "통신 회로"
+        url: /dxl/x/xm540-w150/#communication-circuit
+        urlkr: /dxl/x/xm540-w150/#통신-회로
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/x/xm540-w150/#drawings
@@ -5604,7 +5640,7 @@ xm540-w270:
         - title: "PWM Lmit(36)"
           titlekr: "PWM Limit(36)"
           url: /dxl/x/xm540-w270/#pwm-limit36
-        - title: "Current Lmit(38)"
+        - title: "Current Limit(38)"
           titlekr: "Current Limit(38)"
           url: /dxl/x/xm540-w270/#current-limit38
         - title: "Acceleration Limit(40)"
@@ -5744,6 +5780,10 @@ xm540-w270:
         titlekr: "커넥터 정보"
         url: /dxl/x/xm540-w270/#connector-information
         urlkr: /dxl/x/xm540-w270/#커넥터-정보
+      - title: "Communication Circuit"
+        titlekr: "통신 회로"
+        url: /dxl/x/xm540-w270/#communication-circuit
+        urlkr: /dxl/x/xm540-w270/#통신-회로
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/x/xm540-w270/#drawings
@@ -9341,6 +9381,10 @@ protocol1:
 
 #Protocol 2.0 sidebar
 protocol2:
+  - title: "Introduction"
+    titlekr: "개요"
+    url: /dxl/protocol2/#introduction
+    urlkr: /dxl/protocol2/#개요
   - title: "Instruction Packet"
     titlekr: "Instruction Packet"
     url: /dxl/protocol2/#instruction-packet
@@ -15503,9 +15547,9 @@ opencm485exp:
     url: /parts/controller/opencm485exp/#layout
     urlkr: /parts/controller/opencm485exp/#각-부-명칭
   - title: "Connecting OpenCM9.04"
-    titlekr: "OpenCM과 연결하기"
+    titlekr: "OpenCM9.04와 연결하기"
     url: /parts/controller/opencm485exp/#connecting-opencm904
-    urlkr: /parts/controller/opencm485exp/#485-확장보드와-opencm-연결하기
+    urlkr: /parts/controller/opencm485exp/#opencm904와-연결하기
   - title: "Power Circuit Connection"
     titlekr: "전원 연결 회로"
     url: /parts/controller/opencm485exp/#power-circuit-connection

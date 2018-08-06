@@ -1,14 +1,5 @@
 ---
-layout: archive
-lang: kr
-ref: usb_driver_install
-read_time: true
-share: true
-author_profile: false
-permalink: /docs/kr/faq/usb_driver_install/
-sidebar:
-  title: USB 드라이버 설치
-  nav: "usb_driver_install"
+layout: popup
 ---
 
 # [USB 드라이버 설치](#usb-드라이버-설치)
@@ -27,6 +18,10 @@ sidebar:
 
     ![][img_02]
 
+
+**주의** : 윈도우즈 10에서 "타사의 INF 파일에 디지털 서명 정보가 없습니다." 라는 메세지가 발생하면 아래 링크를 따라 `고급 부팅 옵션`으로 진입 후 8번 단계의 시작 설정 창에서 `7` 또는 `F7`을 눌러 **드라이버 서명 적용 사용 안 함** 을 선택하십시오.  
+[https://answers.microsoft.com/ko-kr/windows/forum/windows_10-update-winpc/windows-10-%EA%B3%A0%EA%B8%89-%EB%B6%80%ED%8C%85/27f170ed-28db-4840-8533-0e47d2d04288](https://answers.microsoft.com/ko-kr/windows/forum/windows_10-update-winpc/windows-10-%EA%B3%A0%EA%B8%89-%EB%B6%80%ED%8C%85/27f170ed-28db-4840-8533-0e47d2d04288)
+{: .notice--warning}
 
 ## 수동 설치 방법
 

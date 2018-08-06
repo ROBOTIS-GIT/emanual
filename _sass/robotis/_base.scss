@@ -5,7 +5,7 @@
 @mixin indentation {
   padding-left: 1.5em;
   word-wrap: break-word;
-  
+
   li > ul, ol, p, div {
     margin: 0;
   }
@@ -16,8 +16,11 @@ html {
   position: relative;
   min-height: 100%;
 }
-:lang(en) {font-family: $global-font-family;}
-:lang(kr) {font-family: $global-kr-font-family;}
+// :lang(en) {font-family: $global-font-family;}
+// :lang(kr) {font-family: $global-kr-font-family;}
+
+:lang(en) > div {  font-family: $global-font-family; }
+:lang(kr) > div {  font-family: $global-kr-font-family; }
 
 body {
   counter-reset: h1;
@@ -54,7 +57,7 @@ h6:hover .header-link {
 h1, h2, h3, h4, h5, h6 {
   margin: 1.5em 0 0.5em;
   line-height: 1.2;
-  font-family: $header-font-family;
+  font-family: $titillium-webkit;
   font-weight: bold;
 
   a {
@@ -72,7 +75,7 @@ h1, h2, h3, h4, h5, h6 {
     counter-increment: h1;
     content: counter(h1) ". ";
   }
-  
+
   + div {
     p, div {
       margin: 0.5em 0.5em 0 1em;
@@ -237,7 +240,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 5em;
   font-size: $type-size-6;
   font-style: italic;
-  
+
   + div {
     p, div {
       word-wrap: break-word;
@@ -273,7 +276,7 @@ h1, h2, h3, h4, h5, h6 {
 .class-h6 {
   margin-left: 6.2em;
   font-size: $type-size-6;
-  
+
   + div {
     p, div {
       word-wrap: break-word;

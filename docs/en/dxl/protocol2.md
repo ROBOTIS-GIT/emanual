@@ -11,10 +11,10 @@ sidebar:
   nav: "protocol2"
 ---
 
-# Protocol 2.0
+# [Introduction](#introduction)
 
 - Protocol 2.0 supported devices: MX-28, MX-64, MX-106(MX Series with Firmware V39 or above), X Series, DYNAMIXEL Pro
-- Protocol 2.0 supported controllers: CM-150 , CM-200
+- Protocol 2.0 supported controllers: CM-150, CM-200, OpenCM9.04, OpenCR
 - Other: 2.0 protocol from R+ Smart app
 
 # [Instruction Packet](#instruction-packet)
