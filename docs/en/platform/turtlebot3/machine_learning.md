@@ -78,7 +78,7 @@ $ pip install keras
 
 ``` bash
 $ cd ~/catkin_ws/src/
-$ git clone -b develop https://github.com/ROBOTIS-GIT/turtlebot3_machine_learning.git
+$ git clone https://github.com/ROBOTIS-GIT/turtlebot3_machine_learning.git
 $ cd ~/catkin_ws && catkin_make
 ```
 
