@@ -11,6 +11,8 @@ sidebar:
   nav: "op2"
 ---
 
+<div style="counter-reset: h1 5"></div>
+
 # [ROBOTIS-OP2 ROS Packages](#robotis-op2-ros-packages)
 
 ## [OS Install](#os-install)
@@ -20,9 +22,10 @@ The ROS that can be installed on Lubuntu 12.04 (Precise Pangolin) is the "Hydro 
 Currently, the main version of ROS is "Kinetic Kame" version supporting Ubuntu 16.04 (Xenial Xerus) and "Melodic Morenia" version supporting Ubuntu 18.04 (Bionic Beaver).  
 Therefore, it is necessary to update the OS to the latest version if possible.  
 Ubuntu 16.04 and 18.04 are difficult to install on ROBOTIS-OP2 because of the issue with the graphic driver of the SBC.  
-As a result of installation test, Linux Mint 17.3 (Rosa) based on Ubuntu 14.04 (Trusty Tahr) was the most reliable version for ROBOTIS-OP2.  
-Please refer to the link below for how to install Linux Mint:
+As a result of installation test, "Linux Mint 17.3 (Rosa) - Xfce (32bit)" based on Ubuntu 14.04 (Trusty Tahr) was the most reliable version for ROBOTIS-OP2.  
+Please refer to the link below for how to install Linux Mint:  
 > Reference : [Linux Mint Installation Guide]  
+> Recommended edition : [Linux Mint 17.3 "Rosa" - Xfce (32-bit)]  
 
 **CAUTION** : DO NOT upgrade the kernel after installation. Upgrading the kernel can cause graphic driver problem.
 {: .notice--warning}
@@ -100,4 +103,5 @@ The basic operating test is identical to ROBOTIS-OP3 which is described below on
 
 
 [Linux Mint Installation Guide]: https://linuxmint-installation-guide.readthedocs.io/en/latest/  
+[Linux Mint 17.3 "Rosa" - Xfce (32-bit)]: https://www.linuxmint.com/edition.php?id=213
 [Install of ROS Indigo]: http://wiki.ros.org/indigo/Installation/Ubuntu

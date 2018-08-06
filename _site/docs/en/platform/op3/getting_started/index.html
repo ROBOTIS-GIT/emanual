@@ -176,12 +176,12 @@ $(function() {
 
       function extendsearchtool() {
         if (toggle_search_tool == 0) {
-          $('#site_search').css('display', 'block');
+          $('.searchbox').css('display', 'block');
           $('#archive').css('margin-top', '40px');
           toggle_search_tool = 1;
         }
         else {
-          $('#site_search').css('display', 'none');
+          $('.searchbox').css('display', 'none');
           $('#archive').css('margin-top', '0px');
           toggle_search_tool = 0;
         }
@@ -199,22 +199,57 @@ $(function() {
     		alignTop: true,
     		overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
     	});
+      
+      // Implmentation for Local search engine with JSON file
+      // $.getJSON('/test.json', function(idx) {
+      //   $.each(idx, function(v){
+      //     console.log(v);
+      //     console.log(idx[v].header3);
+      //   })
+      // });
+      
     });
     </script>
     <script>
       $(function () {
-        var currentHash = window.location.href.split('#')[1];
+        var currentHash = $(location).attr('hash');
+        var filename = $(location).attr('href').split('/').reverse()[1];
         $(document).scroll(function () {
           $('.header-link').each(function () {
             var top = window.pageYOffset;
             var distance = top - $(this).offset().top;
-            var hash = $(this).attr('href');
+            var rawHash = $(this).attr('href');
+            var contentId = rawHash.replace('#', '');
+            var tocId = rawHash.replace('#', filename+'_toc_');
+            var searchContentId = $('#'+contentId);
+            var searchTocId = $('#'+tocId);
 
-            if (distance < 30 && distance > -30 && currentHash != hash) {
-              currentHash = hash;
-              // console.log(currentHash);
-              window.history.pushState(window.location.href, "title", currentHash);   //Update browser URL with current anchor
-              // $('#' + currentHash).attr("color", "#FF6D6D"); //Syntax error
+            if (distance < 50 && distance > -50 && currentHash != tocId) {
+              // window.history.pushState(window.location.href, "title", currentHash);   //Update browser URL history with current anchor
+              if ((searchContentId.hasClass('class-h1') || searchContentId.hasClass('class-h2') || searchContentId.hasClass('class-h3')) && $('.nav__items').has('#'+tocId).length) {
+                // console.log(contentId);
+                // console.log(tocId);
+                searchTocId.prop("checked", true);  //Open folded Toc menu
+                $('.current_contents').removeClass("current_contents");
+                
+                //Check if Buttoned ToC with children
+                // console.log(searchTocId);
+                if( searchTocId.prop("tagName") == "INPUT" ) {
+                  console.log("input detected");
+                  if( searchTocId.prop("name") == "sublevel" ) {
+                    searchTocId.closest("li.has-grandchildren").find("label > button").addClass("current_contents");
+                  }
+                }
+                else {
+                  searchTocId.addClass("current_contents");
+                }
+                
+                // Open folded Toc menu
+                searchTocId.closest("li.has-grandchildren").find("input").first().prop("checked", true);
+                searchTocId.closest("li.has-children").find("input").first().prop("checked", true);
+                
+                currentHash = tocId;
+              }
             }
           });
         });
@@ -277,8 +312,11 @@ $(function() {
       <button class="search_button" onclick="extendsearchtool()">
         <img class="logo" src="/assets/images/search_icon.png">
       </button>
-      <a class="site-title" href="http://localhost:4000/"><img class="logo" id="logo" src="/assets/images/robotis_emanual_logo.png"></a>
       
+      <a class="site-title" href="http://emanual.robotis.com">
+      
+      <img class="logo" id="logo" src="/assets/images/robotis_emanual_logo.png"></a>
+
       <button class="google_button" id="google_button" onclick="extendgoogletool()"><img src="https://www.google.com/images/cleardot.gif" class="goog-te-gadget-icon" alt="" style="background-image: url(&quot;https://translate.googleapis.com/translate_static/img/te_ctrl3.gif&quot;); background-position: -65px 0px;"></button>
       <div class="google_tools" id="google_tools">
         <!-- Google Translation -->
@@ -350,13 +388,13 @@ $(function() {
                 
                   <li class="mobile_depth_2">
                     <input type="radio" name="sublevel" id="DYNAMIXEL*EX Series">
-                    <label for="DYNAMIXEL*EX Series"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>EX Series</label>
+                    <label for="DYNAMIXEL*EX Series">EX Series <i class="fa fa-lock" style="font-size:12px; color:red;"></i></label>
                     <ul>
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>EX-106+</a>
+                          <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/" class="">EX-106+ <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                         </li>
                       
                     
@@ -371,27 +409,27 @@ $(function() {
                 
                   <li class="mobile_depth_2">
                     <input type="radio" name="sublevel" id="DYNAMIXEL*DX Series">
-                    <label for="DYNAMIXEL*DX Series"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>DX Series</label>
+                    <label for="DYNAMIXEL*DX Series">DX Series <i class="fa fa-lock" style="font-size:12px; color:red;"></i></label>
                     <ul>
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/dxl/dx/dx-113/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>DX-113</a>
+                          <a href="http://localhost:4000/docs/en/dxl/dx/dx-113/" class="">DX-113 <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/dxl/dx/dx-116/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>DX-116</a>
+                          <a href="http://localhost:4000/docs/en/dxl/dx/dx-116/" class="">DX-116 <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/dxl/dx/dx-117/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>DX-117</a>
+                          <a href="http://localhost:4000/docs/en/dxl/dx/dx-117/" class="">DX-117 <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                         </li>
                       
                     
@@ -406,34 +444,34 @@ $(function() {
                 
                   <li class="mobile_depth_2">
                     <input type="radio" name="sublevel" id="DYNAMIXEL*RX Series">
-                    <label for="DYNAMIXEL*RX Series"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>RX Series</label>
+                    <label for="DYNAMIXEL*RX Series">RX Series <i class="fa fa-lock" style="font-size:12px; color:red;"></i></label>
                     <ul>
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/dxl/rx/rx-10/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>RX-10</a>
+                          <a href="http://localhost:4000/docs/en/dxl/rx/rx-10/" class="">RX-10 <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/dxl/rx/rx-24f/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>RX-24F</a>
+                          <a href="http://localhost:4000/docs/en/dxl/rx/rx-24f/" class="">RX-24F <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/dxl/rx/rx-28/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>RX-28</a>
+                          <a href="http://localhost:4000/docs/en/dxl/rx/rx-28/" class="">RX-28 <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/dxl/rx/rx-64/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>RX-64</a>
+                          <a href="http://localhost:4000/docs/en/dxl/rx/rx-64/" class="">RX-64 <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                         </li>
                       
                     
@@ -643,35 +681,35 @@ $(function() {
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/dxl/pro/l54-50-s500-r/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>L54-50-S500-R</a>
+                          <a href="http://localhost:4000/docs/en/dxl/pro/l54-50-s500-r/" class="">L54-50-S500-R <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/dxl/pro/l54-50-s290-r/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>L54-50-S290-R</a>
+                          <a href="http://localhost:4000/docs/en/dxl/pro/l54-50-s290-r/" class="">L54-50-S290-R <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/dxl/pro/l54-30-s500-r/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>L54-30-S500-R</a>
+                          <a href="http://localhost:4000/docs/en/dxl/pro/l54-30-s500-r/" class="">L54-30-S500-R <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/dxl/pro/l54-30-s400-r/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>L54-30-S400-R</a>
+                          <a href="http://localhost:4000/docs/en/dxl/pro/l54-30-s400-r/" class="">L54-30-S400-R <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/dxl/pro/l42-10-s300-r/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>L42-10-S300-R</a>
+                          <a href="http://localhost:4000/docs/en/dxl/pro/l42-10-s300-r/" class="">L42-10-S300-R <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                         </li>
                       
                     
@@ -830,27 +868,27 @@ $(function() {
                 
                   <li class="mobile_depth_2">
                     <input type="radio" name="sublevel" id="STEAM*OLLO">
-                    <label for="STEAM*OLLO"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>OLLO</label>
+                    <label for="STEAM*OLLO">OLLO <i class="fa fa-lock" style="font-size:12px; color:red;"></i></label>
                     <ul>
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/edu/ollo/bugkit/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>BUG KIT</a>
+                          <a href="http://localhost:4000/docs/en/edu/ollo/bugkit/" class="">BUG KIT <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/edu/ollo/explorer/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>EXPLORER</a>
+                          <a href="http://localhost:4000/docs/en/edu/ollo/explorer/" class="">EXPLORER <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/edu/ollo/inventor/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>INVENTOR</a>
+                          <a href="http://localhost:4000/docs/en/edu/ollo/inventor/" class="">INVENTOR <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                         </li>
                       
                     
@@ -1348,7 +1386,7 @@ $(function() {
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/parts/controller/cm-100/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>CM-100A</a>
+                          <a href="http://localhost:4000/docs/en/parts/controller/cm-100/" class="">CM-100A <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                         </li>
                       
                     
@@ -1369,14 +1407,14 @@ $(function() {
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/parts/controller/cm-5/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>CM-5</a>
+                          <a href="http://localhost:4000/docs/en/parts/controller/cm-5/" class="">CM-5 <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/parts/controller/cm-510/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>CM-510</a>
+                          <a href="http://localhost:4000/docs/en/parts/controller/cm-510/" class="">CM-510 <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                         </li>
                       
                     
@@ -1397,7 +1435,7 @@ $(function() {
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/parts/controller/cm-900/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>CM-900</a>
+                          <a href="http://localhost:4000/docs/en/parts/controller/cm-900/" class="">CM-900 <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                         </li>
                       
                     
@@ -1449,14 +1487,14 @@ $(function() {
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/parts/communication/zig-110/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>ZIG-100/110A</a>
+                          <a href="http://localhost:4000/docs/en/parts/communication/zig-110/" class="">ZIG-100/110A <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/parts/communication/bt-110/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>BT-100/110A</a>
+                          <a href="http://localhost:4000/docs/en/parts/communication/bt-110/" class="">BT-100/110A <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                         </li>
                       
                     
@@ -1512,7 +1550,7 @@ $(function() {
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/parts/motor/h_speed_geared_motor/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>High Speed Geared Motor</a>
+                          <a href="http://localhost:4000/docs/en/parts/motor/h_speed_geared_motor/" class="">High Speed Geared Motor <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                         </li>
                       
                     
@@ -1603,7 +1641,7 @@ $(function() {
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/parts/sensor/ax-s1/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>Integrated Sensor(AX-S1)</a>
+                          <a href="http://localhost:4000/docs/en/parts/sensor/ax-s1/" class="">Integrated Sensor(AX-S1) <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                         </li>
                       
                     
@@ -1760,7 +1798,7 @@ $(function() {
 
               
                 
-                <a><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>EX Series</a>
+                <a>EX Series <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
               
 
               
@@ -1770,7 +1808,7 @@ $(function() {
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>EX-106+</a>
+                      <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/">EX-106+ <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                     
                 
               </div>
@@ -1783,7 +1821,7 @@ $(function() {
 
               
                 
-                <a><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>DX Series</a>
+                <a>DX Series <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
               
 
               
@@ -1793,21 +1831,21 @@ $(function() {
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/dxl/dx/dx-113/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>DX-113</a>
+                      <a href="http://localhost:4000/docs/en/dxl/dx/dx-113/">DX-113 <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                     
                 
                   
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/dxl/dx/dx-116/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>DX-116</a>
+                      <a href="http://localhost:4000/docs/en/dxl/dx/dx-116/">DX-116 <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                     
                 
                   
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/dxl/dx/dx-117/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>DX-117</a>
+                      <a href="http://localhost:4000/docs/en/dxl/dx/dx-117/">DX-117 <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                     
                 
               </div>
@@ -1820,7 +1858,7 @@ $(function() {
 
               
                 
-                <a><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>RX Series</a>
+                <a>RX Series <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
               
 
               
@@ -1830,28 +1868,28 @@ $(function() {
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/dxl/rx/rx-10/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>RX-10</a>
+                      <a href="http://localhost:4000/docs/en/dxl/rx/rx-10/">RX-10 <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                     
                 
                   
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/dxl/rx/rx-24f/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>RX-24F</a>
+                      <a href="http://localhost:4000/docs/en/dxl/rx/rx-24f/">RX-24F <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                     
                 
                   
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/dxl/rx/rx-28/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>RX-28</a>
+                      <a href="http://localhost:4000/docs/en/dxl/rx/rx-28/">RX-28 <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                     
                 
                   
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/dxl/rx/rx-64/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>RX-64</a>
+                      <a href="http://localhost:4000/docs/en/dxl/rx/rx-64/">RX-64 <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                     
                 
               </div>
@@ -2069,35 +2107,35 @@ $(function() {
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/dxl/pro/l54-50-s500-r/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>L54-50-S500-R</a>
+                      <a href="http://localhost:4000/docs/en/dxl/pro/l54-50-s500-r/">L54-50-S500-R <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                     
                 
                   
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/dxl/pro/l54-50-s290-r/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>L54-50-S290-R</a>
+                      <a href="http://localhost:4000/docs/en/dxl/pro/l54-50-s290-r/">L54-50-S290-R <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                     
                 
                   
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/dxl/pro/l54-30-s500-r/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>L54-30-S500-R</a>
+                      <a href="http://localhost:4000/docs/en/dxl/pro/l54-30-s500-r/">L54-30-S500-R <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                     
                 
                   
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/dxl/pro/l54-30-s400-r/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>L54-30-S400-R</a>
+                      <a href="http://localhost:4000/docs/en/dxl/pro/l54-30-s400-r/">L54-30-S400-R <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                     
                 
                   
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/dxl/pro/l42-10-s300-r/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>L42-10-S300-R</a>
+                      <a href="http://localhost:4000/docs/en/dxl/pro/l42-10-s300-r/">L42-10-S300-R <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                     
                 
               </div>
@@ -2155,7 +2193,7 @@ $(function() {
               
                 
                   
-                    <a href="http://localhost:4000/docs/en/platform/op/getting_started/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>ROBOTIS OP</a>
+                    <a href="http://localhost:4000/docs/en/platform/op/getting_started/">ROBOTIS OP <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
               
 
               
@@ -2294,7 +2332,7 @@ $(function() {
 
               
                 
-                <a><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>OLLO</a>
+                <a>OLLO <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
               
 
               
@@ -2304,21 +2342,21 @@ $(function() {
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/edu/ollo/bugkit/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>BUG KIT</a>
+                      <a href="http://localhost:4000/docs/en/edu/ollo/bugkit/">BUG KIT <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                     
                 
                   
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/edu/ollo/explorer/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>EXPLORER</a>
+                      <a href="http://localhost:4000/docs/en/edu/ollo/explorer/">EXPLORER <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                     
                 
                   
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/edu/ollo/inventor/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>INVENTOR</a>
+                      <a href="http://localhost:4000/docs/en/edu/ollo/inventor/">INVENTOR <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                     
                 
                   
@@ -2940,7 +2978,7 @@ $(function() {
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/parts/controller/cm-100/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>CM-100A</a>
+                      <a href="http://localhost:4000/docs/en/parts/controller/cm-100/">CM-100A <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                     
                 
                   
@@ -2961,14 +2999,14 @@ $(function() {
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/parts/controller/cm-5/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>CM-5</a>
+                      <a href="http://localhost:4000/docs/en/parts/controller/cm-5/">CM-5 <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                     
                 
                   
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/parts/controller/cm-510/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>CM-510</a>
+                      <a href="http://localhost:4000/docs/en/parts/controller/cm-510/">CM-510 <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                     
                 
                   
@@ -2989,7 +3027,7 @@ $(function() {
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/parts/controller/cm-900/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>CM-900</a>
+                      <a href="http://localhost:4000/docs/en/parts/controller/cm-900/">CM-900 <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                     
                 
                   
@@ -3044,14 +3082,14 @@ $(function() {
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/parts/communication/zig-110/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>ZIG-100/110A</a>
+                      <a href="http://localhost:4000/docs/en/parts/communication/zig-110/">ZIG-100/110A <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                     
                 
                   
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/parts/communication/bt-110/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>BT-100/110A</a>
+                      <a href="http://localhost:4000/docs/en/parts/communication/bt-110/">BT-100/110A <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                     
                 
                   
@@ -3109,7 +3147,7 @@ $(function() {
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/parts/motor/h_speed_geared_motor/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>High Speed Geared Motor</a>
+                      <a href="http://localhost:4000/docs/en/parts/motor/h_speed_geared_motor/">High Speed Geared Motor <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                     
                 
                   
@@ -3204,7 +3242,7 @@ $(function() {
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/parts/sensor/ax-s1/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>Integrated Sensor(AX-S1)</a>
+                      <a href="http://localhost:4000/docs/en/parts/sensor/ax-s1/">Integrated Sensor(AX-S1) <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                     
                 
                   
@@ -3306,7 +3344,7 @@ $(function() {
         </div>
       
     </div>
-    
+
     <div class="community_link">
       
       <a href="http://en.robotis.com" style="margin-left: 10px;"><img class="logo" src="/assets/images/robotis_logo.png"> ROBOTIS</a>
@@ -3328,34 +3366,7 @@ $(function() {
       <button class="mobile_button" onclick="movetopage('https://community.robotsource.org/');" style="background-image: url(/assets/images/robotsource_mobile_logo.png); width: 40%;">Robot Source</button>
       <button class="mobile_button" onclick="movetopage('https://github.com/ROBOTIS-GIT');" style="background-image: url(/assets/images/github_mobile_logo.png); width: 30%;">GitHub</button>
     </div>
-    
-    <!-- local navigation
-    <div class="local_navigation">
-      <select id="local_navigation_depth1">
-        <option value = "default">Select Category</option>
-        
-          
-          <option id="DYNAMIXEL" value = "DYNAMIXEL">DYNAMIXEL</option>
-        
-          
-          <option id="PLATFORM" value = "PLATFORM">PLATFORM</option>
-        
-          
-          <option id="STEAM" value = "STEAM">STEAM</option>
-        
-          
-          <option id="SOFTWARE" value = "SOFTWARE">SOFTWARE</option>
-        
-          
-          <option id="PARTS" value = "PARTS">PARTS</option>
-        
-          
-          <option id="FAQ" value = "FAQ">FAQ</option>
-        
-      </select>
-    </div>
-     -->
-     
+
     <!-- Google Custom Search -->
     <form class="searchbox" method="get" id="site_search">
       <script>
@@ -3372,6 +3383,12 @@ $(function() {
       <gcse:search></gcse:search>
     </form>
     <!-- end of Google Custom Search -->
+    <!-- 
+    <form class="searchbox" id="search-form">
+      <input type="search" placeholder="Search" style="height:56px;width:230px;size:16px;">
+      <button type="submit" style="height:56px;width:55px;">Search</button>
+    </form>
+     -->
 
   </div>
 </div>
@@ -3398,9 +3415,10 @@ $(function() {
 
       
       
+      
       <li class="has-children">
-        <input type="checkbox" name="toplevel" id="#introduction">
-        <label for="#introduction"><button class="tocLevel1" id="#introduction" onclick="movetopage('http://localhost:4000/docs/en/platform/op3/introduction/#introduction');">1. Introduction</button></label>
+        <input type="checkbox" name="toplevel" id="introduction_toc_introduction">
+        <label for="introduction_toc_introduction"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/en/platform/op3/introduction/#introduction');">1. Introduction</button></label>
       
       
 
@@ -3413,9 +3431,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#what-is-op3" href="http://localhost:4000/docs/en/platform/op3/introduction/#what-is-op3">1. 1. What is OP3?</a></li>
+              <li><a class="tocLevel2" id="introduction_toc_what-is-op3" href="http://localhost:4000/docs/en/platform/op3/introduction/#what-is-op3">1. 1. What is OP3?</a></li>
             
           
 
@@ -3427,9 +3446,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#safety-information" href="http://localhost:4000/docs/en/platform/op3/introduction/#safety-information">1. 2. Safety Information</a></li>
+              <li><a class="tocLevel2" id="introduction_toc_safety-information" href="http://localhost:4000/docs/en/platform/op3/introduction/#safety-information">1. 2. Safety Information</a></li>
             
           
 
@@ -3441,9 +3461,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#package-contents" href="http://localhost:4000/docs/en/platform/op3/introduction/#package-contents">1. 3. Package Contents</a></li>
+              <li><a class="tocLevel2" id="introduction_toc_package-contents" href="http://localhost:4000/docs/en/platform/op3/introduction/#package-contents">1. 3. Package Contents</a></li>
             
           
 
@@ -3455,9 +3476,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#layout" href="http://localhost:4000/docs/en/platform/op3/introduction/#layout">1. 4. Layout</a></li>
+              <li><a class="tocLevel2" id="introduction_toc_layout" href="http://localhost:4000/docs/en/platform/op3/introduction/#layout">1. 4. Layout</a></li>
             
           
 
@@ -3469,9 +3491,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#charging-battery" href="http://localhost:4000/docs/en/platform/op3/introduction/#charging-battery">1. 5. Charging Battery</a></li>
+              <li><a class="tocLevel2" id="introduction_toc_charging-battery" href="http://localhost:4000/docs/en/platform/op3/introduction/#charging-battery">1. 5. Charging Battery</a></li>
             
           
 
@@ -3483,9 +3506,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#battery-hot-swap" href="http://localhost:4000/docs/en/platform/op3/introduction/#battery-hot-swap">1. 6. Battery Hot Swap</a></li>
+              <li><a class="tocLevel2" id="introduction_toc_battery-hot-swap" href="http://localhost:4000/docs/en/platform/op3/introduction/#battery-hot-swap">1. 6. Battery Hot Swap</a></li>
             
           
 
@@ -3505,9 +3529,10 @@ $(function() {
 
       
       
+      
       <li class="has-children">
-        <input type="checkbox" name="toplevel" id="#quick-start">
-        <label for="#quick-start"><button class="tocLevel1" id="#quick-start" onclick="movetopage('http://localhost:4000/docs/en/platform/op3/quick_start/#quick-start');">2. Quick Start</button></label>
+        <input type="checkbox" name="toplevel" id="quick_start_toc_quick-start">
+        <label for="quick_start_toc_quick-start"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/en/platform/op3/quick_start/#quick-start');">2. Quick Start</button></label>
       
       
 
@@ -3520,9 +3545,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#power-on" href="http://localhost:4000/docs/en/platform/op3/quick_start/#power-on">2. 1. Power On</a></li>
+              <li><a class="tocLevel2" id="quick_start_toc_power-on" href="http://localhost:4000/docs/en/platform/op3/quick_start/#power-on">2. 1. Power On</a></li>
             
           
 
@@ -3534,11 +3560,12 @@ $(function() {
 
           
           
+          
             
               
               <li class="has-grandchildren">
-                <input type="checkbox" name="sublevel" id="#execute-demo-program">
-                <label for="#execute-demo-program"><button class="tocLevel2" id="#execute-demo-program" onclick="movetopage('http://localhost:4000/docs/en/platform/op3/quick_start/#execute-demo-program');">2. 2. Execute Demo Program</button></label>
+                <input type="checkbox" name="sublevel" id="quick_start_toc_execute-demo-program">
+                <label for="quick_start_toc_execute-demo-program"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/en/platform/op3/quick_start/#execute-demo-program');">2. 2. Execute Demo Program</button></label>
             
           
 
@@ -3550,8 +3577,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/platform/op3/quick_start/#running-demonstration-programs">- Running Demonstration Programs</a>
+                  <a class="tocLevel3" id="quick_start_toc_running-demonstration-programs" href="http://localhost:4000/docs/en/platform/op3/quick_start/#running-demonstration-programs">- Running Demonstration Programs</a>
                 </li>
               
               
@@ -3561,8 +3590,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/platform/op3/quick_start/#demonstration-ready-mode">- Demonstration Ready Mode</a>
+                  <a class="tocLevel3" id="quick_start_toc_demonstration-ready-mode" href="http://localhost:4000/docs/en/platform/op3/quick_start/#demonstration-ready-mode">- Demonstration Ready Mode</a>
                 </li>
               
               
@@ -3572,8 +3603,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/platform/op3/quick_start/#autonomous-mode">- Autonomous Mode</a>
+                  <a class="tocLevel3" id="quick_start_toc_autonomous-mode" href="http://localhost:4000/docs/en/platform/op3/quick_start/#autonomous-mode">- Autonomous Mode</a>
                 </li>
               
               
@@ -3583,8 +3616,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/platform/op3/quick_start/#interactive-motion-mode">- Interactive Motion Mode</a>
+                  <a class="tocLevel3" id="quick_start_toc_interactive-motion-mode" href="http://localhost:4000/docs/en/platform/op3/quick_start/#interactive-motion-mode">- Interactive Motion Mode</a>
                 </li>
               
               
@@ -3594,8 +3629,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/platform/op3/quick_start/#vision-processing-mode">- Vision Processing Mode</a>
+                  <a class="tocLevel3" id="quick_start_toc_vision-processing-mode" href="http://localhost:4000/docs/en/platform/op3/quick_start/#vision-processing-mode">- Vision Processing Mode</a>
                 </li>
               
               
@@ -3611,9 +3648,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#camera-calibration" href="http://localhost:4000/docs/en/platform/op3/quick_start/#camera-calibration">2. 3. Camera Calibration</a></li>
+              <li><a class="tocLevel2" id="quick_start_toc_camera-calibration" href="http://localhost:4000/docs/en/platform/op3/quick_start/#camera-calibration">2. 3. Camera Calibration</a></li>
             
           
 
@@ -3625,9 +3663,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#power-off" href="http://localhost:4000/docs/en/platform/op3/quick_start/#power-off">2. 4. Power Off</a></li>
+              <li><a class="tocLevel2" id="quick_start_toc_power-off" href="http://localhost:4000/docs/en/platform/op3/quick_start/#power-off">2. 4. Power Off</a></li>
             
           
 
@@ -3637,13 +3676,14 @@ $(function() {
 
           
 
+          
           
           
             
               
               <li class="has-grandchildren">
-                <input type="checkbox" name="sublevel" id="#programming-guide">
-                <label for="#programming-guide"><button class="tocLevel2" id="#programming-guide" onclick="movetopage('http://localhost:4000/docs/en/platform/op3/quick_start/#programming-guide');">2. 5. Programming Guide</button></label>
+                <input type="checkbox" name="sublevel" id="quick_start_toc_programming-guide">
+                <label for="quick_start_toc_programming-guide"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/en/platform/op3/quick_start/#programming-guide');">2. 5. Programming Guide</button></label>
             
           
 
@@ -3655,8 +3695,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/platform/op3/quick_start/#connect-to-op3">- Connect to OP3</a>
+                  <a class="tocLevel3" id="quick_start_toc_connect-to-op3" href="http://localhost:4000/docs/en/platform/op3/quick_start/#connect-to-op3">- Connect to OP3</a>
                 </li>
               
               
@@ -3666,8 +3708,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/platform/op3/quick_start/#development-environment">- Development Environment</a>
+                  <a class="tocLevel3" id="quick_start_toc_development-environment" href="http://localhost:4000/docs/en/platform/op3/quick_start/#development-environment">- Development Environment</a>
                 </li>
               
               
@@ -3677,8 +3721,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/platform/op3/quick_start/#source-code">- Source Code</a>
+                  <a class="tocLevel3" id="quick_start_toc_source-code" href="http://localhost:4000/docs/en/platform/op3/quick_start/#source-code">- Source Code</a>
                 </li>
               
               
@@ -3688,8 +3734,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/platform/op3/quick_start/#framework">- Framework</a>
+                  <a class="tocLevel3" id="quick_start_toc_framework" href="http://localhost:4000/docs/en/platform/op3/quick_start/#framework">- Framework</a>
                 </li>
               
               
@@ -3699,8 +3747,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/platform/op3/quick_start/#software-utilities">- Software Utilities</a>
+                  <a class="tocLevel3" id="quick_start_toc_software-utilities" href="http://localhost:4000/docs/en/platform/op3/quick_start/#software-utilities">- Software Utilities</a>
                 </li>
               
               
@@ -3710,8 +3760,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/platform/op3/quick_start/#recovery-software">- Recovery Software</a>
+                  <a class="tocLevel3" id="quick_start_toc_recovery-software" href="http://localhost:4000/docs/en/platform/op3/quick_start/#recovery-software">- Recovery Software</a>
                 </li>
               
               
@@ -3721,8 +3773,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/platform/op3/quick_start/#useful-information">- Useful Information</a>
+                  <a class="tocLevel3" id="quick_start_toc_useful-information" href="http://localhost:4000/docs/en/platform/op3/quick_start/#useful-information">- Useful Information</a>
                 </li>
               
               
@@ -3738,11 +3792,12 @@ $(function() {
 
           
           
+          
             
               
               <li class="has-grandchildren">
-                <input type="checkbox" name="sublevel" id="#miscellaneous">
-                <label for="#miscellaneous"><button class="tocLevel2" id="#miscellaneous" onclick="movetopage('http://localhost:4000/docs/en/platform/op3/quick_start/#miscellaneous');">2. 6. Miscellaneous</button></label>
+                <input type="checkbox" name="sublevel" id="quick_start_toc_miscellaneous">
+                <label for="quick_start_toc_miscellaneous"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/en/platform/op3/quick_start/#miscellaneous');">2. 6. Miscellaneous</button></label>
             
           
 
@@ -3754,8 +3809,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/platform/op3/quick_start/#system-block-diagram">- System Block Diagram</a>
+                  <a class="tocLevel3" id="quick_start_toc_system-block-diagram" href="http://localhost:4000/docs/en/platform/op3/quick_start/#system-block-diagram">- System Block Diagram</a>
                 </li>
               
               
@@ -3765,8 +3822,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/platform/op3/quick_start/#id-map">- ID Map</a>
+                  <a class="tocLevel3" id="quick_start_toc_id-map" href="http://localhost:4000/docs/en/platform/op3/quick_start/#id-map">- ID Map</a>
                 </li>
               
               
@@ -3776,8 +3835,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/platform/op3/quick_start/#warranty">- Warranty</a>
+                  <a class="tocLevel3" id="quick_start_toc_warranty" href="http://localhost:4000/docs/en/platform/op3/quick_start/#warranty">- Warranty</a>
                 </li>
               
               
@@ -3793,11 +3854,12 @@ $(function() {
 
           
           
+          
             
               
               <li class="has-grandchildren">
-                <input type="checkbox" name="sublevel" id="#sub-controlleropencr">
-                <label for="#sub-controlleropencr"><button class="tocLevel2" id="#sub-controlleropencr" onclick="movetopage('http://localhost:4000/docs/en/platform/op3/quick_start/#sub-controlleropencr');">2. 7. Sub Controller(OpenCR)</button></label>
+                <input type="checkbox" name="sublevel" id="quick_start_toc_sub-controlleropencr">
+                <label for="quick_start_toc_sub-controlleropencr"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/en/platform/op3/quick_start/#sub-controlleropencr');">2. 7. Sub Controller(OpenCR)</button></label>
             
           
 
@@ -3809,8 +3871,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/platform/op3/quick_start/#control-table">- Control Table</a>
+                  <a class="tocLevel3" id="quick_start_toc_control-table" href="http://localhost:4000/docs/en/platform/op3/quick_start/#control-table">- Control Table</a>
                 </li>
               
               
@@ -3820,8 +3884,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/platform/op3/quick_start/#eeprom-area">- EEPROM Area</a>
+                  <a class="tocLevel3" id="quick_start_toc_eeprom-area" href="http://localhost:4000/docs/en/platform/op3/quick_start/#eeprom-area">- EEPROM Area</a>
                 </li>
               
               
@@ -3831,8 +3897,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/platform/op3/quick_start/#ram-area">- RAM Area</a>
+                  <a class="tocLevel3" id="quick_start_toc_ram-area" href="http://localhost:4000/docs/en/platform/op3/quick_start/#ram-area">- RAM Area</a>
                 </li>
               
               
@@ -3842,8 +3910,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/platform/op3/quick_start/#address-function-help">- Address Function Help</a>
+                  <a class="tocLevel3" id="quick_start_toc_address-function-help" href="http://localhost:4000/docs/en/platform/op3/quick_start/#address-function-help">- Address Function Help</a>
                 </li>
               
               
@@ -3853,8 +3923,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/platform/op3/quick_start/#gpio-pin-assignments">- GPIO Pin Assignments</a>
+                  <a class="tocLevel3" id="quick_start_toc_gpio-pin-assignments" href="http://localhost:4000/docs/en/platform/op3/quick_start/#gpio-pin-assignments">- GPIO Pin Assignments</a>
                 </li>
               
               
@@ -3878,9 +3950,10 @@ $(function() {
 
       
       
+      
       <li class="has-children">
-        <input type="checkbox" name="toplevel" id="#getting-started">
-        <label for="#getting-started"><button class="tocLevel1" id="#getting-started" onclick="movetopage('http://localhost:4000/docs/en/platform/op3/getting_started/#getting-started');">3. Getting Started</button></label>
+        <input type="checkbox" name="toplevel" id="getting_started_toc_getting-started">
+        <label for="getting_started_toc_getting-started"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/en/platform/op3/getting_started/#getting-started');">3. Getting Started</button></label>
       
       
 
@@ -3893,9 +3966,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#how-to-connect" href="http://localhost:4000/docs/en/platform/op3/getting_started/#how-to-connect">3. 1. How to connect</a></li>
+              <li><a class="tocLevel2" id="getting_started_toc_how-to-connect" href="http://localhost:4000/docs/en/platform/op3/getting_started/#how-to-connect">3. 1. How to connect</a></li>
             
           
 
@@ -3907,9 +3981,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#how-to-kill-the-demo-program" href="http://localhost:4000/docs/en/platform/op3/getting_started/#how-to-kill-the-demo-program">3. 2. How to Kill the demo program</a></li>
+              <li><a class="tocLevel2" id="getting_started_toc_how-to-kill-the-demo-program" href="http://localhost:4000/docs/en/platform/op3/getting_started/#how-to-kill-the-demo-program">3. 2. How to Kill the demo program</a></li>
             
           
 
@@ -3921,9 +3996,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#how-to-restart-the-demo-program" href="http://localhost:4000/docs/en/platform/op3/getting_started/#how-to-restart-the-demo-program">3. 3. How to Restart the demo program</a></li>
+              <li><a class="tocLevel2" id="getting_started_toc_how-to-restart-the-demo-program" href="http://localhost:4000/docs/en/platform/op3/getting_started/#how-to-restart-the-demo-program">3. 3. How to Restart the demo program</a></li>
             
           
 
@@ -3943,9 +4019,10 @@ $(function() {
 
       
       
+      
       <li class="has-children">
-        <input type="checkbox" name="toplevel" id="#robotis-ros-packages">
-        <label for="#robotis-ros-packages"><button class="tocLevel1" id="#robotis-ros-packages" onclick="movetopage('http://localhost:4000/docs/en/platform/op3/robotis_ros_packages/#robotis-ros-packages');">4. Robotis ROS Packages</button></label>
+        <input type="checkbox" name="toplevel" id="robotis_ros_packages_toc_robotis-ros-packages">
+        <label for="robotis_ros_packages_toc_robotis-ros-packages"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/en/platform/op3/robotis_ros_packages/#robotis-ros-packages');">4. Robotis ROS Packages</button></label>
       
       
 
@@ -3958,9 +4035,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#robotis-op3" href="http://localhost:4000/docs/en/platform/op3/robotis_ros_packages/#robotis-op3">4. 1. ROBOTIS OP3</a></li>
+              <li><a class="tocLevel2" id="robotis_ros_packages_toc_robotis-op3" href="http://localhost:4000/docs/en/platform/op3/robotis_ros_packages/#robotis-op3">4. 1. ROBOTIS OP3</a></li>
             
           
 
@@ -3972,9 +4050,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#robotis-op3-msgs" href="http://localhost:4000/docs/en/platform/op3/robotis_ros_packages/#robotis-op3-msgs">4. 2. ROBOTIS OP3 msgs</a></li>
+              <li><a class="tocLevel2" id="robotis_ros_packages_toc_robotis-op3-msgs" href="http://localhost:4000/docs/en/platform/op3/robotis_ros_packages/#robotis-op3-msgs">4. 2. ROBOTIS OP3 msgs</a></li>
             
           
 
@@ -3986,9 +4065,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#robotis-op3-demo" href="http://localhost:4000/docs/en/platform/op3/robotis_ros_packages/#robotis-op3-demo">4. 3. ROBOTIS OP3 Demo</a></li>
+              <li><a class="tocLevel2" id="robotis_ros_packages_toc_robotis-op3-demo" href="http://localhost:4000/docs/en/platform/op3/robotis_ros_packages/#robotis-op3-demo">4. 3. ROBOTIS OP3 Demo</a></li>
             
           
 
@@ -4000,9 +4080,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#robotis-op3-common" href="http://localhost:4000/docs/en/platform/op3/robotis_ros_packages/#robotis-op3-common">4. 4. ROBOTIS OP3 Common</a></li>
+              <li><a class="tocLevel2" id="robotis_ros_packages_toc_robotis-op3-common" href="http://localhost:4000/docs/en/platform/op3/robotis_ros_packages/#robotis-op3-common">4. 4. ROBOTIS OP3 Common</a></li>
             
           
 
@@ -4014,9 +4095,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#robotis-op3-tools" href="http://localhost:4000/docs/en/platform/op3/robotis_ros_packages/#robotis-op3-tools">4. 5. ROBOTIS OP3 Tools</a></li>
+              <li><a class="tocLevel2" id="robotis_ros_packages_toc_robotis-op3-tools" href="http://localhost:4000/docs/en/platform/op3/robotis_ros_packages/#robotis-op3-tools">4. 5. ROBOTIS OP3 Tools</a></li>
             
           
 
@@ -4036,9 +4118,10 @@ $(function() {
 
       
       
+      
       <li class="has-children">
-        <input type="checkbox" name="toplevel" id="#tutorials">
-        <label for="#tutorials"><button class="tocLevel1" id="#tutorials" onclick="movetopage('http://localhost:4000/docs/en/platform/op3/tutorials/#tutorials');">5. Tutorials</button></label>
+        <input type="checkbox" name="toplevel" id="tutorials_toc_tutorials">
+        <label for="tutorials_toc_tutorials"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/en/platform/op3/tutorials/#tutorials');">5. Tutorials</button></label>
       
       
 
@@ -4051,9 +4134,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#robotis-op3-bringup" href="http://localhost:4000/docs/en/platform/op3/tutorials/#robotis-op3-bringup">5. 1. ROBOTIS-OP3 BringUp</a></li>
+              <li><a class="tocLevel2" id="tutorials_toc_robotis-op3-bringup" href="http://localhost:4000/docs/en/platform/op3/tutorials/#robotis-op3-bringup">5. 1. ROBOTIS-OP3 BringUp</a></li>
             
           
 
@@ -4065,9 +4149,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#how-to-execute-default-demo" href="http://localhost:4000/docs/en/platform/op3/tutorials/#how-to-execute-default-demo">5. 2. How to execute Default Demo</a></li>
+              <li><a class="tocLevel2" id="tutorials_toc_how-to-execute-default-demo" href="http://localhost:4000/docs/en/platform/op3/tutorials/#how-to-execute-default-demo">5. 2. How to execute Default Demo</a></li>
             
           
 
@@ -4077,13 +4162,14 @@ $(function() {
 
           
 
+          
           
           
             
               
               <li class="has-grandchildren">
-                <input type="checkbox" name="sublevel" id="#how-to-execute-gui-program">
-                <label for="#how-to-execute-gui-program"><button class="tocLevel2" id="#how-to-execute-gui-program" onclick="movetopage('http://localhost:4000/docs/en/platform/op3/tutorials/#how-to-execute-gui-program');">5. 3. How to execute GUI program</button></label>
+                <input type="checkbox" name="sublevel" id="tutorials_toc_how-to-execute-gui-program">
+                <label for="tutorials_toc_how-to-execute-gui-program"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/en/platform/op3/tutorials/#how-to-execute-gui-program');">5. 3. How to execute GUI program</button></label>
             
           
 
@@ -4095,8 +4181,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/platform/op3/tutorials/#how-to-use-walking-tuner">- How to use walking tuner</a>
+                  <a class="tocLevel3" id="tutorials_toc_how-to-use-walking-tuner" href="http://localhost:4000/docs/en/platform/op3/tutorials/#how-to-use-walking-tuner">- How to use walking tuner</a>
                 </li>
               
               
@@ -4106,8 +4194,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/platform/op3/tutorials/#how-to-play-the-motions">- How to play the motions</a>
+                  <a class="tocLevel3" id="tutorials_toc_how-to-play-the-motions" href="http://localhost:4000/docs/en/platform/op3/tutorials/#how-to-play-the-motions">- How to play the motions</a>
                 </li>
               
               
@@ -4117,8 +4207,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/platform/op3/tutorials/#how-to-control-the-head-joints">- How to control the head joints</a>
+                  <a class="tocLevel3" id="tutorials_toc_how-to-control-the-head-joints" href="http://localhost:4000/docs/en/platform/op3/tutorials/#how-to-control-the-head-joints">- How to control the head joints</a>
                 </li>
               
               
@@ -4128,8 +4220,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/platform/op3/tutorials/#how-to-control-upgraded-walkingonline-walking">- How to control upgraded walking</a>
+                  <a class="tocLevel3" id="tutorials_toc_how-to-control-upgraded-walkingonline-walking" href="http://localhost:4000/docs/en/platform/op3/tutorials/#how-to-control-upgraded-walkingonline-walking">- How to control upgraded walking</a>
                 </li>
               
               
@@ -4145,9 +4239,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#how-to-use-offset-tuner" href="http://localhost:4000/docs/en/platform/op3/tutorials/#how-to-use-offset-tuner">5. 4. How to use offset tuner</a></li>
+              <li><a class="tocLevel2" id="tutorials_toc_how-to-use-offset-tuner" href="http://localhost:4000/docs/en/platform/op3/tutorials/#how-to-use-offset-tuner">5. 4. How to use offset tuner</a></li>
             
           
 
@@ -4159,9 +4254,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#how-to-use-tuner-client" href="http://localhost:4000/docs/en/platform/op3/tutorials/#how-to-use-tuner-client">5. 5. How to use tuner client</a></li>
+              <li><a class="tocLevel2" id="tutorials_toc_how-to-use-tuner-client" href="http://localhost:4000/docs/en/platform/op3/tutorials/#how-to-use-tuner-client">5. 5. How to use tuner client</a></li>
             
           
 
@@ -4173,9 +4269,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#how-to-create-the-motions" href="http://localhost:4000/docs/en/platform/op3/tutorials/#how-to-create-the-motions">5. 6. How to create the motions</a></li>
+              <li><a class="tocLevel2" id="tutorials_toc_how-to-create-the-motions" href="http://localhost:4000/docs/en/platform/op3/tutorials/#how-to-create-the-motions">5. 6. How to create the motions</a></li>
             
           
 
@@ -4187,9 +4284,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#how-to-use-ball-detector" href="http://localhost:4000/docs/en/platform/op3/tutorials/#how-to-use-ball-detector">5. 7. How to use ball detector</a></li>
+              <li><a class="tocLevel2" id="tutorials_toc_how-to-use-ball-detector" href="http://localhost:4000/docs/en/platform/op3/tutorials/#how-to-use-ball-detector">5. 7. How to use ball detector</a></li>
             
           
 
@@ -4201,9 +4299,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#how-to-control-upgraded-walking-using-footstep-planner" href="http://localhost:4000/docs/en/platform/op3/tutorials/#how-to-control-upgraded-walking-using-footstep-planner">5. 8. How to control upgraded walking</a></li>
+              <li><a class="tocLevel2" id="tutorials_toc_how-to-control-upgraded-walking-using-footstep-planner" href="http://localhost:4000/docs/en/platform/op3/tutorials/#how-to-control-upgraded-walking-using-footstep-planner">5. 8. How to control upgraded walking</a></li>
             
           
 
@@ -4215,9 +4314,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#how-to-use-web-setting-tool" href="http://localhost:4000/docs/en/platform/op3/tutorials/#how-to-use-web-setting-tool">5. 9. How to use Web Setting Tool</a></li>
+              <li><a class="tocLevel2" id="tutorials_toc_how-to-use-web-setting-tool" href="http://localhost:4000/docs/en/platform/op3/tutorials/#how-to-use-web-setting-tool">5. 9. How to use Web Setting Tool</a></li>
             
           
 
@@ -4229,9 +4329,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#read-write-tutorial" href="http://localhost:4000/docs/en/platform/op3/tutorials/#read-write-tutorial">5. 10. Read-Write Tutorial</a></li>
+              <li><a class="tocLevel2" id="tutorials_toc_read-write-tutorial" href="http://localhost:4000/docs/en/platform/op3/tutorials/#read-write-tutorial">5. 10. Read-Write Tutorial</a></li>
             
           
 
@@ -4251,9 +4352,10 @@ $(function() {
 
       
       
+      
       <li class="has-children">
-        <input type="checkbox" name="toplevel" id="#simulation">
-        <label for="#simulation"><button class="tocLevel1" id="#simulation" onclick="movetopage('http://localhost:4000/docs/en/platform/op3/simulation/#simulation');">6. Simulation</button></label>
+        <input type="checkbox" name="toplevel" id="simulation_toc_simulation">
+        <label for="simulation_toc_simulation"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/en/platform/op3/simulation/#simulation');">6. Simulation</button></label>
       
       
 
@@ -4266,9 +4368,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#gazebo-installation" href="http://localhost:4000/docs/en/platform/op3/simulation/#gazebo-installation">6. 1. Gazebo Installation</a></li>
+              <li><a class="tocLevel2" id="simulation_toc_gazebo-installation" href="http://localhost:4000/docs/en/platform/op3/simulation/#gazebo-installation">6. 1. Gazebo Installation</a></li>
             
           
 
@@ -4280,9 +4383,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#how-to-execute-gazebo-simulation" href="http://localhost:4000/docs/en/platform/op3/simulation/#how-to-execute-gazebo-simulation">6. 2. How to execute Gazebo Simulation</a></li>
+              <li><a class="tocLevel2" id="simulation_toc_how-to-execute-gazebo-simulation" href="http://localhost:4000/docs/en/platform/op3/simulation/#how-to-execute-gazebo-simulation">6. 2. How to execute Gazebo Simulation</a></li>
             
           
 
@@ -4302,9 +4406,10 @@ $(function() {
 
       
       
+      
       <li class="has-children">
-        <input type="checkbox" name="toplevel" id="#hardware">
-        <label for="#hardware"><button class="tocLevel1" id="#hardware" onclick="movetopage('http://localhost:4000/docs/en/platform/op3/hardware/#hardware');">7. Hardware</button></label>
+        <input type="checkbox" name="toplevel" id="hardware_toc_hardware">
+        <label for="hardware_toc_hardware"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/en/platform/op3/hardware/#hardware');">7. Hardware</button></label>
       
       
 
@@ -4317,9 +4422,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#assemble-data" href="http://localhost:4000/docs/en/platform/op3/hardware/#assemble-data">7. 1. Assemble Data</a></li>
+              <li><a class="tocLevel2" id="hardware_toc_assemble-data" href="http://localhost:4000/docs/en/platform/op3/hardware/#assemble-data">7. 1. Assemble Data</a></li>
             
           
 
@@ -4331,9 +4437,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#cover-skin-data" href="http://localhost:4000/docs/en/platform/op3/hardware/#cover-skin-data">7. 2. Cover Skin Data</a></li>
+              <li><a class="tocLevel2" id="hardware_toc_cover-skin-data" href="http://localhost:4000/docs/en/platform/op3/hardware/#cover-skin-data">7. 2. Cover Skin Data</a></li>
             
           
 
@@ -4345,9 +4452,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#electronics-data" href="http://localhost:4000/docs/en/platform/op3/hardware/#electronics-data">7. 3. Electronics Data</a></li>
+              <li><a class="tocLevel2" id="hardware_toc_electronics-data" href="http://localhost:4000/docs/en/platform/op3/hardware/#electronics-data">7. 3. Electronics Data</a></li>
             
           
 
@@ -4367,9 +4475,10 @@ $(function() {
 
       
       
+      
       <li class="has-children">
-        <input type="checkbox" name="toplevel" id="recovery">
-        <label for="recovery"><button class="tocLevel1" id="recovery" onclick="movetopage('http://localhost:4000/docs/en/platform/op3/recovery/');">8. Recovery</button></label>
+        <input type="checkbox" name="toplevel" id="op3_toc_recovery">
+        <label for="op3_toc_recovery"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/en/platform/op3/recovery/');">8. Recovery</button></label>
       
       
 
@@ -4382,9 +4491,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#manual-installation" href="http://localhost:4000/docs/en/platform/op3/recovery/#manual-installation">8. 1. Manual Installation</a></li>
+              <li><a class="tocLevel2" id="recovery_toc_manual-installation" href="http://localhost:4000/docs/en/platform/op3/recovery/#manual-installation">8. 1. Manual Installation</a></li>
             
           
 
@@ -4396,9 +4506,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#recovery-of-robotis-op3" href="http://localhost:4000/docs/en/platform/op3/recovery/#recovery-of-robotis-op3">8. 2. Recovery of ROBOTIS-OP3</a></li>
+              <li><a class="tocLevel2" id="recovery_toc_recovery-of-robotis-op3" href="http://localhost:4000/docs/en/platform/op3/recovery/#recovery-of-robotis-op3">8. 2. Recovery of ROBOTIS-OP3</a></li>
             
           
 

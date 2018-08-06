@@ -36,7 +36,12 @@ ROBOTIS provides STP files for ROBOTIS-OP3 parts and assembly. Users can view fr
 
 
 ### Description
-<img src="https://github.com/ROBOTIS-GIT/emanual/blob/master/assets/images/platform/op3/ROBOTIS_OP3-Skin_Ver1.png" width=250px><img src="https://github.com/ROBOTIS-GIT/emanual/blob/master/assets/images/platform/op3/ROBOTIS-OP3-Skin_THORMANG3-Style.png" width=250px><img src="https://github.com/ROBOTIS-GIT/emanual/blob/contents_platform/assets/images/platform/op3/ROBOTIS-OP3-Skin_OP2-style.png" width=250px>
+
+![](https://github.com/ROBOTIS-GIT/emanual/blob/master/assets/images/platform/op3/ROBOTIS_OP3-Skin_Ver1.png)
+
+![](https://github.com/ROBOTIS-GIT/emanual/blob/master/assets/images/platform/op3/ROBOTIS-OP3-Skin_THORMANG3-Style.png)
+
+![](https://github.com/ROBOTIS-GIT/emanual/blob/contents_platform/assets/images/platform/op3/ROBOTIS-OP3-Skin_OP2-style.png)
 
 
 ### File

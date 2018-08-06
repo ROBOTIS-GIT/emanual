@@ -29,8 +29,8 @@ sidebar:
 
 {% capture notice_01 %}
 **NOTE**: You can choose one of methods for uploading firmware. But we highly recommend to use **shell script**. If you need to modify TurtleBot3's firmware, you can use the second method.
-- Method #1: [**Shell Script**][shell_script], upload the pre-built binary file using the shell script.
-- Method #2: [**Arduino IDE**][arduino_ide], build the provided source code and upload the generated binary file using the Arduino IDE.
+- Method #1: [**Shell Script**](#shell-script), upload the pre-built binary file using the shell script.
+- Method #2: [**Arduino IDE**](#arduino-ide), build the provided source code and upload the generated binary file using the Arduino IDE.
 {% endcapture %}
 
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
@@ -109,6 +109,4 @@ You can use `PUSH SW 1` and `PUSH SW 2` buttons to see whether your robot has be
 4. Press and hold `PUSH SW 2` for a few seconds to command the robot to rotate 180 degrees in place.
 
 [opencr]: /docs/en/parts/controller/opencr10/
-[shell_script]: #shell-script
-[arduino_ide]: #arduino-ide
 [install_arduino_ide_for_opencr]: /docs/en/parts/controller/opencr10/#arduino-ide

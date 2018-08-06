@@ -180,7 +180,7 @@ The USB2Dynamixel sends ArmSDK commands to the Manipulator. Connect the USB2Dyna
  
 ## [Product Assembly](#product-assembly)
 
-**NOTE** : The content below is based on an **optional** base plate and differs from the actual base plate.
+**참고**: The content below is based on an **optional** base plate and differs from the actual base plate.
 {: .notice}
 
 ![](/assets/images/platform/manipulator/manipulator_h_009.jpg)
@@ -222,7 +222,7 @@ The USB2Dynamixel sends ArmSDK commands to the Manipulator. Connect the USB2Dyna
 |RS485|RX, 4-pin MX and Pro; communicate with 4-pin Dynamixel|
 |RS232|CM-5, CM-510; communicate with these controllers. Communicate with other RS-232 devices|
  
-**NOTE** : The manipulator is based on RS-485 communications so make sure to set the dongle to 485.
+**참고**: The manipulator is based on RS-485 communications so make sure to set the dongle to 485.
 {: .notice}
 
 ## [Manipulator Test](#manipulator-test)

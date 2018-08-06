@@ -32,7 +32,7 @@ USB2Dynamixel은 PC 에서 다이나믹셀을 직접 구동하기 위해 사용�
 
 ![img](/assets/images/parts/interface/usb2dynamixel_03.png)
 
-**NOTE** : USB2Dynamixel 통신이 불안정하다면 전압레벨 차이 일수 있습니다. 연결된 장비 및 PC가 그라운드와 연결되어 있는지 확인해주세요.
+**참고**: USB2Dynamixel 통신이 불안정하다면 전압레벨 차이 일수 있습니다. 연결된 장비 및 PC가 그라운드와 연결되어 있는지 확인해주세요.
 {: .notice}
 
 # [각 부 명칭](#각-부-명칭)

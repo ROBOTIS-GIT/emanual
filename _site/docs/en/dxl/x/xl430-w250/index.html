@@ -176,12 +176,12 @@ $(function() {
 
       function extendsearchtool() {
         if (toggle_search_tool == 0) {
-          $('#site_search').css('display', 'block');
+          $('.searchbox').css('display', 'block');
           $('#archive').css('margin-top', '40px');
           toggle_search_tool = 1;
         }
         else {
-          $('#site_search').css('display', 'none');
+          $('.searchbox').css('display', 'none');
           $('#archive').css('margin-top', '0px');
           toggle_search_tool = 0;
         }
@@ -199,22 +199,57 @@ $(function() {
     		alignTop: true,
     		overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
     	});
+      
+      // Implmentation for Local search engine with JSON file
+      // $.getJSON('/test.json', function(idx) {
+      //   $.each(idx, function(v){
+      //     console.log(v);
+      //     console.log(idx[v].header3);
+      //   })
+      // });
+      
     });
     </script>
     <script>
       $(function () {
-        var currentHash = window.location.href.split('#')[1];
+        var currentHash = $(location).attr('hash');
+        var filename = $(location).attr('href').split('/').reverse()[1];
         $(document).scroll(function () {
           $('.header-link').each(function () {
             var top = window.pageYOffset;
             var distance = top - $(this).offset().top;
-            var hash = $(this).attr('href');
+            var rawHash = $(this).attr('href');
+            var contentId = rawHash.replace('#', '');
+            var tocId = rawHash.replace('#', filename+'_toc_');
+            var searchContentId = $('#'+contentId);
+            var searchTocId = $('#'+tocId);
 
-            if (distance < 30 && distance > -30 && currentHash != hash) {
-              currentHash = hash;
-              // console.log(currentHash);
-              window.history.pushState(window.location.href, "title", currentHash);   //Update browser URL with current anchor
-              // $('#' + currentHash).attr("color", "#FF6D6D"); //Syntax error
+            if (distance < 50 && distance > -50 && currentHash != tocId) {
+              // window.history.pushState(window.location.href, "title", currentHash);   //Update browser URL history with current anchor
+              if ((searchContentId.hasClass('class-h1') || searchContentId.hasClass('class-h2') || searchContentId.hasClass('class-h3')) && $('.nav__items').has('#'+tocId).length) {
+                // console.log(contentId);
+                // console.log(tocId);
+                searchTocId.prop("checked", true);  //Open folded Toc menu
+                $('.current_contents').removeClass("current_contents");
+                
+                //Check if Buttoned ToC with children
+                // console.log(searchTocId);
+                if( searchTocId.prop("tagName") == "INPUT" ) {
+                  console.log("input detected");
+                  if( searchTocId.prop("name") == "sublevel" ) {
+                    searchTocId.closest("li.has-grandchildren").find("label > button").addClass("current_contents");
+                  }
+                }
+                else {
+                  searchTocId.addClass("current_contents");
+                }
+                
+                // Open folded Toc menu
+                searchTocId.closest("li.has-grandchildren").find("input").first().prop("checked", true);
+                searchTocId.closest("li.has-children").find("input").first().prop("checked", true);
+                
+                currentHash = tocId;
+              }
             }
           });
         });
@@ -277,8 +312,11 @@ $(function() {
       <button class="search_button" onclick="extendsearchtool()">
         <img class="logo" src="/assets/images/search_icon.png">
       </button>
-      <a class="site-title" href="http://localhost:4000/"><img class="logo" id="logo" src="/assets/images/robotis_emanual_logo.png"></a>
       
+      <a class="site-title" href="http://emanual.robotis.com">
+      
+      <img class="logo" id="logo" src="/assets/images/robotis_emanual_logo.png"></a>
+
       <button class="google_button" id="google_button" onclick="extendgoogletool()"><img src="https://www.google.com/images/cleardot.gif" class="goog-te-gadget-icon" alt="" style="background-image: url(&quot;https://translate.googleapis.com/translate_static/img/te_ctrl3.gif&quot;); background-position: -65px 0px;"></button>
       <div class="google_tools" id="google_tools">
         <!-- Google Translation -->
@@ -350,13 +388,13 @@ $(function() {
                 
                   <li class="mobile_depth_2">
                     <input type="radio" name="sublevel" id="DYNAMIXEL*EX Series">
-                    <label for="DYNAMIXEL*EX Series"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>EX Series</label>
+                    <label for="DYNAMIXEL*EX Series">EX Series <i class="fa fa-lock" style="font-size:12px; color:red;"></i></label>
                     <ul>
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>EX-106+</a>
+                          <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/" class="">EX-106+ <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                         </li>
                       
                     
@@ -371,27 +409,27 @@ $(function() {
                 
                   <li class="mobile_depth_2">
                     <input type="radio" name="sublevel" id="DYNAMIXEL*DX Series">
-                    <label for="DYNAMIXEL*DX Series"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>DX Series</label>
+                    <label for="DYNAMIXEL*DX Series">DX Series <i class="fa fa-lock" style="font-size:12px; color:red;"></i></label>
                     <ul>
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/dxl/dx/dx-113/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>DX-113</a>
+                          <a href="http://localhost:4000/docs/en/dxl/dx/dx-113/" class="">DX-113 <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/dxl/dx/dx-116/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>DX-116</a>
+                          <a href="http://localhost:4000/docs/en/dxl/dx/dx-116/" class="">DX-116 <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/dxl/dx/dx-117/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>DX-117</a>
+                          <a href="http://localhost:4000/docs/en/dxl/dx/dx-117/" class="">DX-117 <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                         </li>
                       
                     
@@ -406,34 +444,34 @@ $(function() {
                 
                   <li class="mobile_depth_2">
                     <input type="radio" name="sublevel" id="DYNAMIXEL*RX Series">
-                    <label for="DYNAMIXEL*RX Series"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>RX Series</label>
+                    <label for="DYNAMIXEL*RX Series">RX Series <i class="fa fa-lock" style="font-size:12px; color:red;"></i></label>
                     <ul>
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/dxl/rx/rx-10/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>RX-10</a>
+                          <a href="http://localhost:4000/docs/en/dxl/rx/rx-10/" class="">RX-10 <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/dxl/rx/rx-24f/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>RX-24F</a>
+                          <a href="http://localhost:4000/docs/en/dxl/rx/rx-24f/" class="">RX-24F <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/dxl/rx/rx-28/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>RX-28</a>
+                          <a href="http://localhost:4000/docs/en/dxl/rx/rx-28/" class="">RX-28 <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/dxl/rx/rx-64/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>RX-64</a>
+                          <a href="http://localhost:4000/docs/en/dxl/rx/rx-64/" class="">RX-64 <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                         </li>
                       
                     
@@ -643,35 +681,35 @@ $(function() {
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/dxl/pro/l54-50-s500-r/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>L54-50-S500-R</a>
+                          <a href="http://localhost:4000/docs/en/dxl/pro/l54-50-s500-r/" class="">L54-50-S500-R <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/dxl/pro/l54-50-s290-r/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>L54-50-S290-R</a>
+                          <a href="http://localhost:4000/docs/en/dxl/pro/l54-50-s290-r/" class="">L54-50-S290-R <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/dxl/pro/l54-30-s500-r/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>L54-30-S500-R</a>
+                          <a href="http://localhost:4000/docs/en/dxl/pro/l54-30-s500-r/" class="">L54-30-S500-R <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/dxl/pro/l54-30-s400-r/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>L54-30-S400-R</a>
+                          <a href="http://localhost:4000/docs/en/dxl/pro/l54-30-s400-r/" class="">L54-30-S400-R <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/dxl/pro/l42-10-s300-r/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>L42-10-S300-R</a>
+                          <a href="http://localhost:4000/docs/en/dxl/pro/l42-10-s300-r/" class="">L42-10-S300-R <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                         </li>
                       
                     
@@ -830,27 +868,27 @@ $(function() {
                 
                   <li class="mobile_depth_2">
                     <input type="radio" name="sublevel" id="STEAM*OLLO">
-                    <label for="STEAM*OLLO"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>OLLO</label>
+                    <label for="STEAM*OLLO">OLLO <i class="fa fa-lock" style="font-size:12px; color:red;"></i></label>
                     <ul>
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/edu/ollo/bugkit/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>BUG KIT</a>
+                          <a href="http://localhost:4000/docs/en/edu/ollo/bugkit/" class="">BUG KIT <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/edu/ollo/explorer/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>EXPLORER</a>
+                          <a href="http://localhost:4000/docs/en/edu/ollo/explorer/" class="">EXPLORER <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/edu/ollo/inventor/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>INVENTOR</a>
+                          <a href="http://localhost:4000/docs/en/edu/ollo/inventor/" class="">INVENTOR <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                         </li>
                       
                     
@@ -1348,7 +1386,7 @@ $(function() {
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/parts/controller/cm-100/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>CM-100A</a>
+                          <a href="http://localhost:4000/docs/en/parts/controller/cm-100/" class="">CM-100A <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                         </li>
                       
                     
@@ -1369,14 +1407,14 @@ $(function() {
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/parts/controller/cm-5/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>CM-5</a>
+                          <a href="http://localhost:4000/docs/en/parts/controller/cm-5/" class="">CM-5 <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/parts/controller/cm-510/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>CM-510</a>
+                          <a href="http://localhost:4000/docs/en/parts/controller/cm-510/" class="">CM-510 <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                         </li>
                       
                     
@@ -1397,7 +1435,7 @@ $(function() {
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/parts/controller/cm-900/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>CM-900</a>
+                          <a href="http://localhost:4000/docs/en/parts/controller/cm-900/" class="">CM-900 <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                         </li>
                       
                     
@@ -1449,14 +1487,14 @@ $(function() {
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/parts/communication/zig-110/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>ZIG-100/110A</a>
+                          <a href="http://localhost:4000/docs/en/parts/communication/zig-110/" class="">ZIG-100/110A <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                         </li>
                       
                     
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/parts/communication/bt-110/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>BT-100/110A</a>
+                          <a href="http://localhost:4000/docs/en/parts/communication/bt-110/" class="">BT-100/110A <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                         </li>
                       
                     
@@ -1512,7 +1550,7 @@ $(function() {
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/parts/motor/h_speed_geared_motor/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>High Speed Geared Motor</a>
+                          <a href="http://localhost:4000/docs/en/parts/motor/h_speed_geared_motor/" class="">High Speed Geared Motor <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                         </li>
                       
                     
@@ -1603,7 +1641,7 @@ $(function() {
                       
                       
                         <li class="mobile_depth_3">
-                          <a href="http://localhost:4000/docs/en/parts/sensor/ax-s1/" class=""><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>Integrated Sensor(AX-S1)</a>
+                          <a href="http://localhost:4000/docs/en/parts/sensor/ax-s1/" class="">Integrated Sensor(AX-S1) <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                         </li>
                       
                     
@@ -1760,7 +1798,7 @@ $(function() {
 
               
                 
-                <a><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>EX Series</a>
+                <a>EX Series <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
               
 
               
@@ -1770,7 +1808,7 @@ $(function() {
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>EX-106+</a>
+                      <a href="http://localhost:4000/docs/en/dxl/ex/ex-106+/">EX-106+ <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                     
                 
               </div>
@@ -1783,7 +1821,7 @@ $(function() {
 
               
                 
-                <a><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>DX Series</a>
+                <a>DX Series <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
               
 
               
@@ -1793,21 +1831,21 @@ $(function() {
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/dxl/dx/dx-113/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>DX-113</a>
+                      <a href="http://localhost:4000/docs/en/dxl/dx/dx-113/">DX-113 <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                     
                 
                   
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/dxl/dx/dx-116/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>DX-116</a>
+                      <a href="http://localhost:4000/docs/en/dxl/dx/dx-116/">DX-116 <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                     
                 
                   
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/dxl/dx/dx-117/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>DX-117</a>
+                      <a href="http://localhost:4000/docs/en/dxl/dx/dx-117/">DX-117 <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                     
                 
               </div>
@@ -1820,7 +1858,7 @@ $(function() {
 
               
                 
-                <a><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>RX Series</a>
+                <a>RX Series <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
               
 
               
@@ -1830,28 +1868,28 @@ $(function() {
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/dxl/rx/rx-10/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>RX-10</a>
+                      <a href="http://localhost:4000/docs/en/dxl/rx/rx-10/">RX-10 <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                     
                 
                   
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/dxl/rx/rx-24f/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>RX-24F</a>
+                      <a href="http://localhost:4000/docs/en/dxl/rx/rx-24f/">RX-24F <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                     
                 
                   
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/dxl/rx/rx-28/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>RX-28</a>
+                      <a href="http://localhost:4000/docs/en/dxl/rx/rx-28/">RX-28 <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                     
                 
                   
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/dxl/rx/rx-64/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>RX-64</a>
+                      <a href="http://localhost:4000/docs/en/dxl/rx/rx-64/">RX-64 <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                     
                 
               </div>
@@ -2069,35 +2107,35 @@ $(function() {
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/dxl/pro/l54-50-s500-r/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>L54-50-S500-R</a>
+                      <a href="http://localhost:4000/docs/en/dxl/pro/l54-50-s500-r/">L54-50-S500-R <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                     
                 
                   
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/dxl/pro/l54-50-s290-r/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>L54-50-S290-R</a>
+                      <a href="http://localhost:4000/docs/en/dxl/pro/l54-50-s290-r/">L54-50-S290-R <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                     
                 
                   
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/dxl/pro/l54-30-s500-r/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>L54-30-S500-R</a>
+                      <a href="http://localhost:4000/docs/en/dxl/pro/l54-30-s500-r/">L54-30-S500-R <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                     
                 
                   
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/dxl/pro/l54-30-s400-r/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>L54-30-S400-R</a>
+                      <a href="http://localhost:4000/docs/en/dxl/pro/l54-30-s400-r/">L54-30-S400-R <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                     
                 
                   
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/dxl/pro/l42-10-s300-r/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>L42-10-S300-R</a>
+                      <a href="http://localhost:4000/docs/en/dxl/pro/l42-10-s300-r/">L42-10-S300-R <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                     
                 
               </div>
@@ -2155,7 +2193,7 @@ $(function() {
               
                 
                   
-                    <a href="http://localhost:4000/docs/en/platform/op/getting_started/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>ROBOTIS OP</a>
+                    <a href="http://localhost:4000/docs/en/platform/op/getting_started/">ROBOTIS OP <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
               
 
               
@@ -2294,7 +2332,7 @@ $(function() {
 
               
                 
-                <a><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>OLLO</a>
+                <a>OLLO <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
               
 
               
@@ -2304,21 +2342,21 @@ $(function() {
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/edu/ollo/bugkit/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>BUG KIT</a>
+                      <a href="http://localhost:4000/docs/en/edu/ollo/bugkit/">BUG KIT <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                     
                 
                   
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/edu/ollo/explorer/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>EXPLORER</a>
+                      <a href="http://localhost:4000/docs/en/edu/ollo/explorer/">EXPLORER <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                     
                 
                   
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/edu/ollo/inventor/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>INVENTOR</a>
+                      <a href="http://localhost:4000/docs/en/edu/ollo/inventor/">INVENTOR <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                     
                 
                   
@@ -2940,7 +2978,7 @@ $(function() {
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/parts/controller/cm-100/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>CM-100A</a>
+                      <a href="http://localhost:4000/docs/en/parts/controller/cm-100/">CM-100A <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                     
                 
                   
@@ -2961,14 +2999,14 @@ $(function() {
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/parts/controller/cm-5/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>CM-5</a>
+                      <a href="http://localhost:4000/docs/en/parts/controller/cm-5/">CM-5 <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                     
                 
                   
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/parts/controller/cm-510/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>CM-510</a>
+                      <a href="http://localhost:4000/docs/en/parts/controller/cm-510/">CM-510 <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                     
                 
                   
@@ -2989,7 +3027,7 @@ $(function() {
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/parts/controller/cm-900/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>CM-900</a>
+                      <a href="http://localhost:4000/docs/en/parts/controller/cm-900/">CM-900 <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                     
                 
                   
@@ -3044,14 +3082,14 @@ $(function() {
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/parts/communication/zig-110/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>ZIG-100/110A</a>
+                      <a href="http://localhost:4000/docs/en/parts/communication/zig-110/">ZIG-100/110A <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                     
                 
                   
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/parts/communication/bt-110/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>BT-100/110A</a>
+                      <a href="http://localhost:4000/docs/en/parts/communication/bt-110/">BT-100/110A <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                     
                 
                   
@@ -3109,7 +3147,7 @@ $(function() {
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/parts/motor/h_speed_geared_motor/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>High Speed Geared Motor</a>
+                      <a href="http://localhost:4000/docs/en/parts/motor/h_speed_geared_motor/">High Speed Geared Motor <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                     
                 
                   
@@ -3204,7 +3242,7 @@ $(function() {
 
                   
                     
-                      <a href="http://localhost:4000/docs/en/parts/sensor/ax-s1/"><i class="fa fa-fw fa-times-circle" style="font-size:12px; color:red;"></i>Integrated Sensor(AX-S1)</a>
+                      <a href="http://localhost:4000/docs/en/parts/sensor/ax-s1/">Integrated Sensor(AX-S1) <i class="fa fa-lock" style="font-size:12px; color:red;"></i></a>
                     
                 
                   
@@ -3306,7 +3344,7 @@ $(function() {
         </div>
       
     </div>
-    
+
     <div class="community_link">
       
       <a href="http://en.robotis.com" style="margin-left: 10px;"><img class="logo" src="/assets/images/robotis_logo.png"> ROBOTIS</a>
@@ -3328,34 +3366,7 @@ $(function() {
       <button class="mobile_button" onclick="movetopage('https://community.robotsource.org/');" style="background-image: url(/assets/images/robotsource_mobile_logo.png); width: 40%;">Robot Source</button>
       <button class="mobile_button" onclick="movetopage('https://github.com/ROBOTIS-GIT');" style="background-image: url(/assets/images/github_mobile_logo.png); width: 30%;">GitHub</button>
     </div>
-    
-    <!-- local navigation
-    <div class="local_navigation">
-      <select id="local_navigation_depth1">
-        <option value = "default">Select Category</option>
-        
-          
-          <option id="DYNAMIXEL" value = "DYNAMIXEL">DYNAMIXEL</option>
-        
-          
-          <option id="PLATFORM" value = "PLATFORM">PLATFORM</option>
-        
-          
-          <option id="STEAM" value = "STEAM">STEAM</option>
-        
-          
-          <option id="SOFTWARE" value = "SOFTWARE">SOFTWARE</option>
-        
-          
-          <option id="PARTS" value = "PARTS">PARTS</option>
-        
-          
-          <option id="FAQ" value = "FAQ">FAQ</option>
-        
-      </select>
-    </div>
-     -->
-     
+
     <!-- Google Custom Search -->
     <form class="searchbox" method="get" id="site_search">
       <script>
@@ -3372,6 +3383,12 @@ $(function() {
       <gcse:search></gcse:search>
     </form>
     <!-- end of Google Custom Search -->
+    <!-- 
+    <form class="searchbox" id="search-form">
+      <input type="search" placeholder="Search" style="height:56px;width:230px;size:16px;">
+      <button type="submit" style="height:56px;width:55px;">Search</button>
+    </form>
+     -->
 
   </div>
 </div>
@@ -3398,9 +3415,10 @@ $(function() {
 
       
       
+      
       <li class="has-children">
-        <input type="checkbox" name="toplevel" id="#specifications">
-        <label for="#specifications"><button class="tocLevel1" id="#specifications" onclick="movetopage('http://localhost:4000/docs/en/dxl/x/xl430-w250/#specifications');">1. Specifications</button></label>
+        <input type="checkbox" name="toplevel" id="xl430-w250_toc_specifications">
+        <label for="xl430-w250_toc_specifications"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/en/dxl/x/xl430-w250/#specifications');">1. Specifications</button></label>
       
       
 
@@ -3413,9 +3431,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#performance-graph" href="http://localhost:4000/docs/en/dxl/x/xl430-w250/#performance-graph">1. 1. Performance Graph</a></li>
+              <li><a class="tocLevel2" id="xl430-w250_toc_performance-graph" href="http://localhost:4000/docs/en/dxl/x/xl430-w250/#performance-graph">1. 1. Performance Graph</a></li>
             
           
 
@@ -3435,9 +3454,10 @@ $(function() {
 
       
       
+      
       <li class="has-children">
-        <input type="checkbox" name="toplevel" id="#control-table">
-        <label for="#control-table"><button class="tocLevel1" id="#control-table" onclick="movetopage('http://localhost:4000/docs/en/dxl/x/xl430-w250/#control-table');">2. Control Table</button></label>
+        <input type="checkbox" name="toplevel" id="xl430-w250_toc_control-table">
+        <label for="xl430-w250_toc_control-table"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/en/dxl/x/xl430-w250/#control-table');">2. Control Table</button></label>
       
       
 
@@ -3450,11 +3470,12 @@ $(function() {
 
           
           
+          
             
               
               <li class="has-grandchildren">
-                <input type="checkbox" name="sublevel" id="#control-table-data-address">
-                <label for="#control-table-data-address"><button class="tocLevel2" id="#control-table-data-address" onclick="movetopage('http://localhost:4000/docs/en/dxl/x/xl430-w250/#control-table-data-address');">2. 1. Control Table, Data, Address</button></label>
+                <input type="checkbox" name="sublevel" id="xl430-w250_toc_control-table-data-address">
+                <label for="xl430-w250_toc_control-table-data-address"><button class="tocLevel2" onclick="movetopage('http://localhost:4000/docs/en/dxl/x/xl430-w250/#control-table-data-address');">2. 1. Control Table, Data, Address</button></label>
             
           
 
@@ -3466,8 +3487,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/x/xl430-w250/#area-eeprom-ram">- Area(EEPROM, RAM)</a>
+                  <a class="tocLevel3" id="xl430-w250_toc_area-eeprom-ram" href="http://localhost:4000/docs/en/dxl/x/xl430-w250/#area-eeprom-ram">- Area(EEPROM, RAM)</a>
                 </li>
               
               
@@ -3477,8 +3500,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/x/xl430-w250/#size">- Size</a>
+                  <a class="tocLevel3" id="xl430-w250_toc_size" href="http://localhost:4000/docs/en/dxl/x/xl430-w250/#size">- Size</a>
                 </li>
               
               
@@ -3488,8 +3513,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/x/xl430-w250/#access">- Access</a>
+                  <a class="tocLevel3" id="xl430-w250_toc_access" href="http://localhost:4000/docs/en/dxl/x/xl430-w250/#access">- Access</a>
                 </li>
               
               
@@ -3499,8 +3526,10 @@ $(function() {
               
 
               
+              
+              
                 <li>
-                  <a href="http://localhost:4000/docs/en/dxl/x/xl430-w250/#initial-value">- Initial Value</a>
+                  <a class="tocLevel3" id="xl430-w250_toc_initial-value" href="http://localhost:4000/docs/en/dxl/x/xl430-w250/#initial-value">- Initial Value</a>
                 </li>
               
               
@@ -3516,9 +3545,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#control-table-of-eeprom-area" href="http://localhost:4000/docs/en/dxl/x/xl430-w250/#control-table-of-eeprom-area">2. 2. EEPROM Area</a></li>
+              <li><a class="tocLevel2" id="xl430-w250_toc_control-table-of-eeprom-area" href="http://localhost:4000/docs/en/dxl/x/xl430-w250/#control-table-of-eeprom-area">2. 2. EEPROM Area</a></li>
             
           
 
@@ -3530,9 +3560,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#control-table-of-ram-area" href="http://localhost:4000/docs/en/dxl/x/xl430-w250/#control-table-of-ram-area">2. 3. RAM Area</a></li>
+              <li><a class="tocLevel2" id="xl430-w250_toc_control-table-of-ram-area" href="http://localhost:4000/docs/en/dxl/x/xl430-w250/#control-table-of-ram-area">2. 3. RAM Area</a></li>
             
           
 
@@ -3544,9 +3575,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#control-table-description" href="http://localhost:4000/docs/en/dxl/x/xl430-w250/#control-table-description">2. 4. Control Table Description</a></li>
+              <li><a class="tocLevel2" id="xl430-w250_toc_control-table-description" href="http://localhost:4000/docs/en/dxl/x/xl430-w250/#control-table-description">2. 4. Control Table Description</a></li>
             
           
 
@@ -3566,9 +3598,10 @@ $(function() {
 
       
       
+      
       <li class="has-children">
-        <input type="checkbox" name="toplevel" id="#how-to-assemble">
-        <label for="#how-to-assemble"><button class="tocLevel1" id="#how-to-assemble" onclick="movetopage('http://localhost:4000/docs/en/dxl/x/xl430-w250/#how-to-assemble');">3. How to Assemble</button></label>
+        <input type="checkbox" name="toplevel" id="xl430-w250_toc_how-to-assemble">
+        <label for="xl430-w250_toc_how-to-assemble"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/en/dxl/x/xl430-w250/#how-to-assemble');">3. How to Assemble</button></label>
       
       
 
@@ -3581,9 +3614,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#wiring-through-back-case" href="http://localhost:4000/docs/en/dxl/x/xl430-w250/#wiring-through-back-case">3. 1. Wiring through Back Case</a></li>
+              <li><a class="tocLevel2" id="xl430-w250_toc_wiring-through-back-case" href="http://localhost:4000/docs/en/dxl/x/xl430-w250/#wiring-through-back-case">3. 1. Wiring through Back Case</a></li>
             
           
 
@@ -3595,9 +3629,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#option-frame-assembly" href="http://localhost:4000/docs/en/dxl/x/xl430-w250/#option-frame-assembly">3. 2. Option Frame Assembly</a></li>
+              <li><a class="tocLevel2" id="xl430-w250_toc_option-frame-assembly" href="http://localhost:4000/docs/en/dxl/x/xl430-w250/#option-frame-assembly">3. 2. Option Frame Assembly</a></li>
             
           
 
@@ -3617,9 +3652,10 @@ $(function() {
 
       
       
+      
       <li class="has-children">
-        <input type="checkbox" name="toplevel" id="#maintenance">
-        <label for="#maintenance"><button class="tocLevel1" id="#maintenance" onclick="movetopage('http://localhost:4000/docs/en/dxl/x/xl430-w250/#maintenance');">4. Maintenance</button></label>
+        <input type="checkbox" name="toplevel" id="xl430-w250_toc_maintenance">
+        <label for="xl430-w250_toc_maintenance"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/en/dxl/x/xl430-w250/#maintenance');">4. Maintenance</button></label>
       
       
 
@@ -3632,9 +3668,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#horn-and-gear-replacement" href="http://localhost:4000/docs/en/dxl/x/xl430-w250/#horn-and-gear-replacement">4. 1. Horn, Gear Replacement</a></li>
+              <li><a class="tocLevel2" id="xl430-w250_toc_horn-and-gear-replacement" href="http://localhost:4000/docs/en/dxl/x/xl430-w250/#horn-and-gear-replacement">4. 1. Horn, Gear Replacement</a></li>
             
           
 
@@ -3654,9 +3691,10 @@ $(function() {
 
       
       
+      
       <li class="has-children">
-        <input type="checkbox" name="toplevel" id="#reference">
-        <label for="#reference"><button class="tocLevel1" id="#reference" onclick="movetopage('http://localhost:4000/docs/en/dxl/x/xl430-w250/#reference');">5. Reference</button></label>
+        <input type="checkbox" name="toplevel" id="xl430-w250_toc_reference">
+        <label for="xl430-w250_toc_reference"><button class="tocLevel1" onclick="movetopage('http://localhost:4000/docs/en/dxl/x/xl430-w250/#reference');">5. Reference</button></label>
       
       
 
@@ -3669,9 +3707,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#quick-start" href="http://localhost:4000/docs/en/dxl/x/xl430-w250/#quick-start">5. 1. Quick Start</a></li>
+              <li><a class="tocLevel2" id="xl430-w250_toc_quick-start" href="http://localhost:4000/docs/en/dxl/x/xl430-w250/#quick-start">5. 1. Quick Start</a></li>
             
           
 
@@ -3683,9 +3722,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#connector-information" href="http://localhost:4000/docs/en/dxl/x/xl430-w250/#connector-information">5. 2. Connector Information</a></li>
+              <li><a class="tocLevel2" id="xl430-w250_toc_connector-information" href="http://localhost:4000/docs/en/dxl/x/xl430-w250/#connector-information">5. 2. Connector Information</a></li>
             
           
 
@@ -3697,9 +3737,10 @@ $(function() {
 
           
           
+          
             
               
-              <li><a id="#drawings" href="http://localhost:4000/docs/en/dxl/x/xl430-w250/#drawings">5. 3. Drawings</a></li>
+              <li><a class="tocLevel2" id="xl430-w250_toc_drawings" href="http://localhost:4000/docs/en/dxl/x/xl430-w250/#drawings">5. 3. Drawings</a></li>
             
           
 
@@ -3862,7 +3903,12 @@ $(function() {
 <h2 id="performance-graph"><a href="#performance-graph">Performance Graph</a></h2>
 <p><img src="/assets/images/dxl/x/xl430_w250_performance_graph.png" alt="" /></p>
 
-<p class="notice"><strong>NOTE</strong> : The max torque measurement method for the Stall Torque and Performance Graph is different. Stall torque is measured from the max torque that it can reach. This is generally how RC servos measure their torque. For the Performance graph with the N-T curves, it is measured with the load gradually increasing. The motor operation environment is closer to the performance graph, not stall torque method. This is probably why the performance graph is being broadly used in the industrial market. This is why the max torque of the performance grap can actually be less than the stall torque.</p>
+<p class="notice"><strong>NOTE</strong> : The max torque measurement method for the Stall Torque and Performance Graph is different.<br />
+Stall torque is measured from the max torque that it can reach. This is generally how RC servos measure their torque.<br />
+For the Performance graph with the N-T curves, it is measured with the load gradually increasing.<br />
+The motor operation environment is closer to the performance graph, not stall torque method.<br />
+This is probably why the performance graph is being broadly used in the industrial market.<br />
+This is why the max torque of the performance grap can actually be less than the stall torque.</p>
 
 <div class="notice--warning">
 <p><strong>CAUTION : When supplying power</strong></p>
@@ -4714,14 +4760,10 @@ $(function() {
 
 </div>
 
-<div class="notice">
-  
-<p><strong>NOTE</strong> : PWM is the abbreviation for Pulse Width Modulation that modulates PWM Duty to control motors.<br />
+<p class="notice"><strong>NOTE</strong> : PWM is the abbreviation for Pulse Width Modulation that modulates PWM Duty to control motors.<br />
 The PWM Control Mode changes pulse width to control average supply voltage to the motor and this technique is widely used in the motor control field.<br />
 Therefore, PWM Control Mode uses Goal PWM(100) value to control supply voltage for Dynamixel.<br />
 PWM Control Mode is similar to the Wheel Mode of Dynamixel AX and RX series.</p>
-
-</div>
 
 <h3 id="secondaryshadow-id12"><a name="secondary-shadow-id"></a><strong><a href="#secondaryshadow-id-12">Secondary(Shadow) ID(12)</a></strong></h3>
 <p>Set the Dynamixel’s Secondary ID. Secondary ID(12) is a value to identify each Dynamixel, just like the ID(7).
@@ -4809,7 +4851,7 @@ Present Position(132) = Actual Position + Homing Offset(20).</p>
   </thead>
   <tbody>
     <tr>
-      <td style="text-align: center">about 0.088°</td>
+      <td style="text-align: center">about 0.088 [°]</td>
       <td style="text-align: center">-1,044,479 ~ 1,044,479<br />(-255 ~ 255[rev])</td>
       <td style="text-align: center">4,096 resolution</td>
     </tr>
@@ -4926,7 +4968,10 @@ When current input voltage acquired from Present Input Voltage(144) exceeds the 
   </tbody>
 </table>
 
-<p><strong>NOTE</strong> : Bit information of the Error field in the Status Packet is different from protocol 1.0 and protocol 2.0. This manual complies with protocol 2.0. Please refer to the <a href="/docs/en/dxl/protocol1/#error">Protocol</a> section of e-Manual for more details about the protocol.</p>
+<p class="notice"><strong>NOTE</strong> :<br />
+Bit information of the Error field in the Status Packet is different from protocol 1.0 and protocol 2.0.<br />
+This manual complies with protocol 2.0.<br />
+Please refer to the [Error] section of Protocol e-Manual for more details.</p>
 
 <h3 id="velocity-limit44"><a name="velocity-limit"></a><strong><a href="#velocity-limit44">Velocity Limit(44)</a></strong></h3>
 <p>This value indicates maximum velocity of Goal Velocity(104) and Profile Velocity(112). For more details, please refer to the Profile Velocity(112).</p>
@@ -5030,7 +5075,7 @@ The followings are detectable situations.</p>
 <p><strong>NOTE</strong> : If Shutdown occurs, use below method to reboot Dynamixels.</p>
 <ol>
   <li>H/W REBOOT : Turn off the power and turn on again</li>
-  <li>S/W REBOOT : Transmit REBOOT Instruction (For more details, please refer to the [Reboot] section of Protocol e-Manual.)</li>
+  <li>S/W REBOOT : Transmit REBOOT Instruction (For more details, please refer to the <a href="/docs/en/dxl/protocol2/#reboot">Reboot</a> section of Protocol e-Manual.)</li>
 </ol>
 </div>
 
@@ -5238,7 +5283,7 @@ The followings are detectable situations.</p>
 <p><strong>NOTE</strong> : If Shutdown occurs, use below method to reboot Dynamixels.</p>
 <ol>
   <li>H/W REBOOT : Turn off the power and turn on again</li>
-  <li>S/W REBOOT : Transmit REBOOT Instruction (For more details, please refer to the [Reboot] section of Protocol e-Manual.)</li>
+  <li>S/W REBOOT : Transmit REBOOT Instruction (For more details, please refer to the <a href="/docs/en/dxl/protocol2/#reboot">Reboot</a> section of Protocol e-Manual.)</li>
 </ol>
 </div>
 
@@ -5451,7 +5496,8 @@ If the value of Bus Watchdog (98) is changed to ‘0’, Bus Watchdog Error will
   </tbody>
 </table>
 
-<p class="notice"><strong>NOTE</strong> : The maximum velocity and maximum torque of DYNAMIXEL is affected by supplying voltage. Therefore, if supplying voltage changes, so does the maximum velocity. This manual complies with recommended supply voltage(12[V]).</p>
+<p class="notice"><strong>NOTE</strong> : The maximum velocity and maximum torque of DYNAMIXEL is affected by supplying voltage.<br />
+Therefore, if supplying voltage changes, so does the maximum velocity. This manual complies with recommended supply voltage(12[V]).</p>
 
 <p class="notice"><strong>NOTE</strong> : If Profile Acceleration(108) and Goal Velocity(104) are modified simultaneously, modified Profile Acceleration(108) will be used to process Goal Velocity(104).</p>
 
@@ -5623,7 +5669,10 @@ t<sub>1</sub> = 64 * {Goal Velocity(104) / Profile Acceleration(108)}</p>
 </table>
 
 <h3 id="moving122"><a name="moving"></a><strong><a href="#moving122">Moving(122)</a></strong></h3>
-<p>This value indicates whether Dynamixel is in motion or not. If absolute value of Present Velocity(128) is greater than Moving Threshold(24), Moving(122) is set to ‘1’. Otherwise, it will be cleared to ‘0’. However, this value will always be set to ‘1’ regardless of Present Velocity(128) while Profile is in progress with Goal Position(116) instruction.</p>
+<p>This value indicates whether Dynamixel is in motion or not.<br />
+If absolute value of Present Velocity(128) is greater than Moving Threshold(24), Moving(122) is set to ‘1’.<br />
+Otherwise, it will be cleared to ‘0’.<br />
+However, this value will always be set to ‘1’ regardless of Present Velocity(128) while Profile is in progress with Goal Position(116) instruction.</p>
 
 <table>
   <thead>
@@ -5754,7 +5803,9 @@ For example, the value is 512, it means the load is detected in the direction of
 </ol>
 
 <h3 id="position-trajectory140"><a name="position-trajectory"></a><strong><a href="#position-trajectory140">Position Trajectory(140)</a></strong></h3>
-<p>This is a desired position trajectory created by Profile. This value is only used in Position Control Mode, Extended Position Control Mode and Current-based Position Control Mode. For more details, please refer to the <a href="#profile-velocity112">Profile Velocity(112)</a>.</p>
+<p>This is a desired position trajectory created by Profile.<br />
+This value is only used in Position Control Mode, Extended Position Control Mode and Current-based Position Control Mode.<br />
+For more details, please refer to the <a href="#profile-velocity112">Profile Velocity(112)</a>.</p>
 
 <h3 id="present-input-voltage144"><a name="present-input-voltage"></a><strong><a href="#present-input-voltage144">Present Input Voltage(144)</a></strong></h3>
 <p>This value indicates present voltage that is being supplied. For more details, please refer to the <a href="#max-voltage-limit">Max/Min Voltage Limit(32, 34)</a>.</p>
