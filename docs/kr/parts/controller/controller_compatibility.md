@@ -58,6 +58,7 @@ sidebar:
 |MGSS-10|X|O|O|X|X|O|X|X|O(O)|O|O|
 |PIR-10|X|O|O|X|O|O|X|X|O(O)|O|O|
 |TPS-10|X|O|O|X|O|O|X|X|O(O)|O|O|
+|TMS-10|X|O|O|X|X|O|X|X|O(O)|O|O|
 |AX-S1|X|X|X|O|O|O|O|O|X(O)|X|O|
 |SM-10|O|O|O|X|X|O|X|X|X|O|O|
 |GM-10A|O|O|O|X|X|X|X|X|X|O|O|
