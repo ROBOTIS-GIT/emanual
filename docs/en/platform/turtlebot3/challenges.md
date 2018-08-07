@@ -79,7 +79,7 @@ If you need more information about it or you want to launch it in your remote PC
 
 ### [AutoRace - RBIZ Challenge 2018](#autorace-rbiz-challenge-2018)
 
-- Coming soon!
+- The competition will be held in Daegu, Korea on November 15-17.
 
 [rds]: http://www.theconstructsim.com/rds-ros-development-studio/
 [the_construct]: http://www.theconstructsim.com/

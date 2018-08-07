@@ -11853,10 +11853,10 @@ turtlebot3:
     children:
     - title: "Installation"
       url: /platform/turtlebot3/machine_learning/#installation
-    - title: "Run Machine Learning"
-      url: /platform/turtlebot3/machine_learning/#run-machine-learning
     - title: "Set parameters"
       url: /platform/turtlebot3/machine_learning/#set-parameters
+    - title: "Run Machine Learning"
+      url: /platform/turtlebot3/machine_learning/#run-machine-learning
   - title: "Locomotion"
     url: /platform/turtlebot3/locomotion/#locomotion
     children:
