@@ -196,7 +196,7 @@ BT-210, BT-110A, ZIG-110A, LN-101 등과 같은 4핀 케이블을 연결해서 �
 
 > 4핀 통신 포트 핀맵
 
-![](/assets/images/parts/controller/opencm904/opencm9.04_2.png)  
+![](/assets/images/parts/controller/opencm904/opencm904_04.png)  
 
 > OpenCM9.04와 스마트폰을 이용한 무선 통신 연결 예시
 
@@ -357,7 +357,7 @@ OpenCM보드는 아래와 같이 3가지 전원 포트로 보드를 작동시킬
 
 XL-320 다이나믹셀을 구동시키기 위해서는 LBS-04 배터리 2개를 배터리 소켓에 연결하는 것을 추천합니다.
 
-![](/assets/images/parts/controller/opencm904/opencm9.04_12.png)
+![](/assets/images/parts/controller/opencm904/opencm904_18.png)
 
 > OpenCM9.04와 XL-320, LBS-40(Li-Ion Battery) 연결 예시
 
@@ -367,31 +367,31 @@ XL-320 다이나믹셀을 구동시키기 위해서는 LBS-04 배터리 2개를 
 
 XL-320을 제외한 3핀 TTL 다이나믹셀은 헤더의 +-핀 또는 배터리 소켓을 이용해 전원을 공급하시길 추천합니다.
 
-![](/assets/images/parts/controller/opencm904/opencm9.04_15.jpg)
+![](/assets/images/parts/controller/opencm904/opencm904_19.png)
 
 > OpenCM9.04와 AX12 연결 예시
 
 아래의 그림과 같이 배터리 커넥터의 양끝 +,-에 연결하고 전원을 공급할 수 있는 장치로 연결도 가능합니다.  
 (OpenCM9.04 뒷면을 보면 그림A와 같이 가운데 +,-가 연결 되어있으므로 아래와 같이 연결이 가능합니다.)
 
-![](/assets/images/parts/controller/opencm904/opencm9.04_15_2.jpg)
+![](/assets/images/parts/controller/opencm904/opencm904_20.jpg)
 
-![](/assets/images/parts/controller/opencm904/opencm9.04_15_1.jpg)
+![](/assets/images/parts/controller/opencm904/opencm904_21.jpg)
 
 > 전원 연결 예시
 
 아래와 그림과 같이 배터리 소켓과 +-핀으로 동시 전원 공급은 피하세요.  
 그리고 배터리 소켓에 배터리를 혼용하지 마십시요. 배터리 소켓은 LBS-40 배터리만 사용해 주세요.
 
-![](/assets/images/parts/controller/opencm904/opencm9.04_17.jpg)
+![](/assets/images/parts/controller/opencm904/opencm904_22.jpg)
 
 - 배터리 커넥터 및 +-헤더핀 전원 두 개중 하나는 제거
 
-  ![](/assets/images/parts/controller/opencm904/opencm9.04_17.jpg)
+  ![](/assets/images/parts/controller/opencm904/opencm904_22.jpg)
 
 - 배터리 혼용 금지
 
-  ![](/assets/images/parts/controller/opencm904/opencm9.04_14.png)
+  ![](/assets/images/parts/controller/opencm904/opencm904_24.png)
 
 USB 포트는 LBS-40 배터리 혹은 +-핀과 동시 연결해도 무방합니다.(차단회로 내장)  
 +- 혹은 배터리로 공급되는 전압은 다이나믹셀의 권장 전압으로 사용하시길 추천합니다.  
@@ -406,11 +406,11 @@ LBS-40 배터리를 직렬 연결한 채로 USB 충전은 쇼트가 생길 수 �
 A타입에는 전원 스위치가 없이 JP1이 쇼트처리 되어서 판매됩니다. 전원 스위치를 추가하기 위해서는 JP1의 납땜 처리를 제거하시고 2.54mm pitch 전원 스위치를 추가하시면 됩니다.  
 전원스위치는 OpenCM9.04 악세사리 키트에 포함되어 있고 pitch가 맞는 전원 스위치를 따로 구해서 사용할 수 있습니다.
 
-![](/assets/images/parts/controller/opencm904/opencm9.04_23.png)
+![](/assets/images/parts/controller/opencm904/opencm904_25.png)
 
 > JP1과 전원 스위치 회로도 : JP1이 연결되어 있으면 스위치가 없이도 동작합니다.
 
-![](/assets/images/parts/controller/opencm904/opencm9.04_24.png)
+![](/assets/images/parts/controller/opencm904/opencm904_26.png)
 
 > OpenCM9.04의 A타입에서는 JP1의 연결을 끊고 스위치를 추가해야 제대로 동작합니다.
 
@@ -419,7 +419,7 @@ A타입에는 전원 스위치가 없이 JP1이 쇼트처리 되어서 판매됩
 OpenCM9.04의 다이나믹셀 TTL 3핀 홀은 기존 다이나믹셀 TTL 3핀과 XL-320 TTL 3핀(미니타입)이 모두 호환 가능합니다. 따라서 두 가지 종류의 커넥터 모두 납땜해서 사용할 수 있습니다.  
 참고로 2종류의 TTL 3핀은 OpenCM 악세사리 키트에 모두 포함되어 있습니다.
 
-![](/assets/images/parts/controller/opencm904/opencm9.04_25.png)
+![](/assets/images/parts/controller/opencm904/opencm904_27.png)
 
 > OpenCM9.04 A타입은 2가지 종류의 3핀 커넥터를 모두 납땜할 수 있습니다
 
