@@ -73,15 +73,15 @@ OpenManipulator is composed by [Dynamixel X series](http://emanual.robotis.com/d
 
 [Parts of OpenManipulator](https://docs.google.com/a/robotis.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit?usp=sharing)
 
+  * Items that are painted in purple in above link are purchased on ROBOTIS SHOP
+  * Items that are painted in green in above link are purchased on shopping mall
+  * Items that are painted in yellow in above link are 3D printing parts
+
 [DIY Manual](https://drive.google.com/open?id=1c5U0v2dQhYiulqiWI0VQMameG82WCc-4rl6J6zlQejA)
 
 [CAD Files](http://www.robotis.com/service/download.php?no=690)
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_OnShape.jpg)
-
-* Items that are painted in purple are purchased on ROBOTIS SHOP
-* Items that are painted in green are purchased on shopping mall
-* Items that are painted in yellow are 3D printing parts
 
 # [Software Setup](#software-setup)
 
@@ -383,13 +383,13 @@ Gripping (parameters : `grip_on`, `grip_off`, `neutral`)
 
 [Parts of OpenManipulator](https://docs.google.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit#gid=1916070381)
 
+  * Items that are painted in purple in above link are purchased on ROBOTIS SHOP
+  * Items that are painted in green in above link are purchased on shopping mall
+  * Items that are painted in yellow in above link are 3D printing parts
+
 [CAD Files](http://www.robotis.com/service/download.php?no=691)
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_SCARA_OnShape.png)
-
-* Items that are painted in purple are purchased on ROBOTIS SHOP
-* Items that are painted in green are purchased on shopping mall
-* Items that are painted in yellow are 3D printing parts
 
 ### Software Setup
 
@@ -431,13 +431,13 @@ Gripping (parameters : `grip_on`, `grip_off`, `neutral`)
 
 [Parts of OpenManipulator](https://docs.google.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit#gid=1110711693)
 
+  * Items that are painted in purple in above link are purchased on ROBOTIS SHOP
+  * Items that are painted in green in above link are purchased on shopping mall
+  * Items that are painted in yellow in above link are 3D printing parts
+
 [CAD Files](http://www.robotis.com/service/download.php?no=692)
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_Link_OnShape.png)
-
-* Items that are painted in purple are purchased on ROBOTIS SHOP
-* Items that are painted in green are purchased on shopping mall
-* Items that are painted in yellow are 3D printing parts
 
 ### Software Setup
 
@@ -463,13 +463,13 @@ Gripping (parameters : `grip_on`, `grip_off`, `neutral`)
 
 [Parts of OpenManipulator](https://docs.google.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit#gid=64381687)
 
+  * Items that are painted in purple in above link are purchased on ROBOTIS SHOP
+  * Items that are painted in green in above link are purchased on shopping mall
+  * Items that are painted in yellow in above link are 3D printing parts
+
 [CAD Files](http://www.robotis.com/service/download.php?no=761)
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_Planar_OnShape.png)
-
-* Items that are painted in purple are purchased on ROBOTIS SHOP
-* Items that are painted in green are purchased on shopping mall
-* Items that are painted in yellow are 3D printing parts
 
 ### Software Setup
 
@@ -495,13 +495,13 @@ Gripping (parameters : `grip_on`, `grip_off`, `neutral`)
 
 [Parts of OpenManipulator](https://docs.google.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit#gid=1521432651)
 
+  * Items that are painted in purple in above link are purchased on ROBOTIS SHOP
+  * Items that are painted in green in above link are purchased on shopping mall
+  * Items that are painted in yellow in above link are 3D printing parts
+
 [CAD Files](http://www.robotis.com/service/download.php?no=762)
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_Delta_OnShape.png)
-
-* Items that are painted in purple are purchased on ROBOTIS SHOP
-* Items that are painted in green are purchased on shopping mall
-* Items that are painted in yellow are 3D printing parts
 
 ### Software Setup
 
@@ -527,13 +527,13 @@ Gripping (parameters : `grip_on`, `grip_off`, `neutral`)
 
 [Parts of OpenManipulator](https://docs.google.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit#gid=42267100)
 
+  * Items that are painted in purple in above link are purchased on ROBOTIS SHOP
+  * Items that are painted in green in above link are purchased on shopping mall
+  * Items that are painted in yellow in above link are 3D printing parts
+
 [CAD Files](http://www.robotis.com/service/download.php?no=763)
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_Stewart_OnShape.png)
-
-* Items that are painted in purple are purchased on ROBOTIS SHOP
-* Items that are painted in green are purchased on shopping mall
-* Items that are painted in yellow are 3D printing parts
 
 ### Software Setup
 
@@ -559,13 +559,13 @@ Gripping (parameters : `grip_on`, `grip_off`, `neutral`)
 
 [Parts of OpenManipulator](https://docs.google.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit#gid=1200068410)
 
+  * Items that are painted in purple in above link are purchased on ROBOTIS SHOP
+  * Items that are painted in green in above link are purchased on shopping mall
+  * Items that are painted in yellow in above link are 3D printing parts
+
 [CAD Files](http://www.robotis.com/service/download.php?no=764)
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_Linear_OnShape.png)
-
-* Items that are painted in purple are purchased on ROBOTIS SHOP
-* Items that are painted in green are purchased on shopping mall
-* Items that are painted in yellow are 3D printing parts
 
 ### Software Setup
 
