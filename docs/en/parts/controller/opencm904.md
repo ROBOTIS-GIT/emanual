@@ -2275,7 +2275,7 @@ void testscrolltext(void) {
   ![](/assets/images/sw/mobile/mini_firmware_02.jpg)
   > User Button
 
-  ![](/assets/images/parts/controller/opencm904/user_button.jpg)
+  ![](/assets/images/parts/controller/opencm904/opencm904_08.png)
 
 - If you enter recovery mode as shown below, the green LED will be turned on. When download is completed normally, the board will be reset and the green LED is turned off.
 
