@@ -36,7 +36,7 @@ It makes the users possible to develop their own firmware. The characteristics a
 
 ## [Getting Started](#getting-started)
 
-**NOTE** : If an error occurs during installation in Windows 8.1.10, click HERE. Once downloading and unzipping are completed, copy the files to C:￦WinARM￦utils￦bin. (You can replace the existing file.) (EX error :/usr/bin/sh: fork: Resource temporarily unavailable)
+**NOTE** : If an error occurs during installation in Windows 8.1.10, click HERE. Once downloading and unzipping are completed, copy the files to C:\WinARM\utils\bin. (You can replace the existing file.) (EX error :/usr/bin/sh: fork: Resource temporarily unavailable)
 {: .notice}
 
 ### [Install JRE](#install-jre)
