@@ -69,7 +69,8 @@ If you need more information about it or you want to launch it in your remote PC
 
 ### [Autonomous Mobile Robot Competition (Dankook University)](#autonomous-mobile-robot-competition-dankook-university)
 
-- For more information, please see the following [page](https://www.dku-itrc-contest.com/).
+![](/assets/images/platform/turtlebot3/autonomous_driving/autorace_jn_dankook_1.jpg)
+![](/assets/images/platform/turtlebot3/autonomous_driving/autorace_jn_dankook_2.jpg)
 
 ### [AutoRace - RBIZ Challenge 2017](#autorace-rbiz-challenge-2017)
 
