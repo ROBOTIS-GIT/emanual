@@ -99,7 +99,7 @@ If it does not work well, turn off the cmd window and re-run cmd, then try again
 
 You can download Eclipse here.  
 
-`Download` [Eclipse](http://www.eclipse.org/downloads/)
+`Download` [Eclipse Helios SR2](http://www.eclipse.org/downloads/packages/release/helios/sr2)
 
 ![](/assets/images/sw/sdk/embedded_058.png)
 
@@ -107,7 +107,6 @@ You can download Eclipse here.
  
 Select the version that best matches your working system.  
 To run Eclipse just run the eclipse.exe file.  
-http://www.eclipse.org/downloads/packages/eclipse-ide-cc-developers/neonr
 
 ### [Verify Installation](#verify-installation)
 
