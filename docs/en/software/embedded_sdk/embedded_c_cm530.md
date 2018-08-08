@@ -36,7 +36,7 @@ It makes the users possible to develop their own firmware. The characteristics a
 
 ## [Getting Started](#getting-started)
 
-**NOTE** : If an error occurs during installation in Windows 8.1.10, click HERE. Once downloading and unzipping are completed, copy the files to C:\WinARM\utils\bin. (You can replace the existing file.) (EX error :/usr/bin/sh: fork: Resource temporarily unavailable)
+**NOTE** : If an error occurs during installation in Windows 8.1.10, click [HERE]. Once downloading and unzipping are completed, copy the files to C:\WinARM\utils\bin. (You can replace the existing file.) (EX error :/usr/bin/sh: fork: Resource temporarily unavailable)
 {: .notice}
 
 ### [Install JRE](#install-jre)
@@ -140,7 +140,7 @@ If progress is not as shown below then check the working development environment
 
 ![](/assets/images/sw/sdk/embedded_065.png)
 
-`Note `If an error occurs during installation in Windows 8.1.10, click HERE. Once downloading and unzipping are completed, copy the files to C:￦WinARM￦utils￦bin. (You can replace the existing file.) (EX error :/usr/bin/sh: fork: Resource temporarily unavailable)
+`Note `If an error occurs during installation in Windows 8.1.10, click [HERE]. Once downloading and unzipping are completed, copy the files to C:￦WinARM￦utils￦bin. (You can replace the existing file.) (EX error :/usr/bin/sh: fork: Resource temporarily unavailable)
 {: .notice}
 
 ### [Restore RoboPlus](#restore-roboplus)
@@ -1083,3 +1083,4 @@ int main(void)
 [CM-510]: /docs/en/parts/controller/cm-510/
 [CM-700]: /docs/en/parts/controller/cm-700/
 [Download CM-530 SDK]: http://support.robotis.com/en/baggage_files/embeded_c/embeddec_c(cm530_v1_02).zip
+[HERE]: http://www.madwizard.org/download/electronics/msys-1.0-vista64.zip
