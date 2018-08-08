@@ -14937,7 +14937,7 @@ embedded_c_cm530:
         urlkr: /software/embedded_sdk/embedded_c_cm530/#winarm-설치
       - title: "Install Eclipse"
         titlekr: "Eclipse 설치"
-        url: /software/embedded_sdk/embedded_c_cm530/#install-atmel-studio
+        url: /software/embedded_sdk/embedded_c_cm530/#install-eclipse
         urlkr: /software/embedded_sdk/embedded_c_cm530/#eclipse-설치
       - title: "Verify Installation"
         titlekr: "설치 성공여부 확인"
