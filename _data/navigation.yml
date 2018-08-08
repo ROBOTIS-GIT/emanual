@@ -4806,15 +4806,6 @@ xl430-w250:
         titlekr: "옵션프레임 조립"
         url: /dxl/x/xl430-w250/#option-frame-assembly
         urlkr: /dxl/x/xl430-w250/#옵션프레임-조립
-  - title: "Maintenance"
-    titlekr: "유지보수"
-    url: /dxl/x/xl430-w250/#maintenance
-    urlkr: /dxl/x/xl430-w250/#유지보수
-    children:
-      - title: "Horn, Gear Replacement"
-        titlekr: "혼과 기어 교체"
-        url: /dxl/x/xl430-w250/#horn-and-gear-replacement
-        urlkr: /dxl/x/xl430-w250/#혼과-기어-교체
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/x/xl430-w250/#reference
