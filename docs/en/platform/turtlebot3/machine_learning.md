@@ -49,10 +49,6 @@ If Anaconda is installed, you can see `Python 2.7.xx :: Anaconda, Inc.`.
 To use ROS and Anaconda together, you must additionally install ROS dependency packages.
 ``` bash
 $ pip install -U rosinstall msgpack empy defusedxml netifaces
-$ conda install --channel https://conda.anaconda.org/conda-forge pyqt
-$ conda install -c anaconda pyqt=4.11.4
-$ pip install pyqtgraph
-$ sudo apt-get install python-qt4
 ```
 
 ### [Tensorflow](#tensorflow)
