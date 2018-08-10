@@ -2275,7 +2275,7 @@ void testscrolltext(void) {
   ![](/assets/images/sw/mobile/mini_firmware_02.jpg)
   > User Button
 
-  ![](/assets/images/parts/controller/opencm904/user_button.jpg)
+  ![](/assets/images/parts/controller/opencm904/opencm904_08.png)
 
 - If you enter recovery mode as shown below, the green LED will be turned on. When download is completed normally, the board will be reset and the green LED is turned off.
 
@@ -2329,6 +2329,8 @@ Please refer to [R+Manager 2.0 Firmware Recovery](/docs/en/software/rplus2/manag
 
 ![](/assets/images/parts/controller/opencm904/opencm904_28.png)
 
+[MOLEX 53253-0370]: https://www.molex.com/molex/products/datasheet.jsp?part=active/0532530370_PCB_HEADERS.xml
+[MOLEX 22-03-5035]: http://www.molex.com/molex/products/datasheet.jsp?part=active/0022035035_PCB_HEADERS.xml
 [RoboPlus Task]: /docs/en/software/rplus1/task/getting_started/
 [RoboPlus Motion]: /docs/en/software/rplus1/motion/
 [RoboPlus Manager]: /docs/en/software/rplus1/manager/

@@ -1490,7 +1490,7 @@ RC-100A 또는 RC-100B의 적외선 통신 방법에 대해서는 IR-10을 참�
 ### 안드로이드 스마트폰 + BT-210 을 이용한 블루투스 연결
 안드로이드 스마트폰의 경우 R+ m.Task 어플리케이션의 RC100 시뮬레이션을 이용하면 RC-100 패킷을 보낼 수 있습니다. R+m.Task는 구글 Play를 통해서 다운받을 수 있습니다.
 
-![img](/assets/images/sw/opencm_ide/opencm9.04_2.png)
+![img](/assets/images/sw/opencm_ide/opencm904_04.png)
 
 ![img](/assets/images/sw/opencm_ide/opencm9.04_rc100_4.png)
 
