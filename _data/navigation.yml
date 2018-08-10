@@ -406,8 +406,8 @@ main:
       - title: "ZIGBEE SDK"
         titlekr: "지그비 SDK"
         url: /software/embedded_sdk/zigbee_sdk/
-    - title: "OpenCM IDE"
-      titlekr: "OpenCM IDE"
+    - title: "*OpenCM IDE"
+      titlekr: "*OpenCM IDE"
       url: /software/opencm_ide/getting_started/
     - title: "Arduino IDE"
       titlekr: "아두이노 IDE"
@@ -478,8 +478,8 @@ main:
       - title: "BT-410 Dongle"
         titlekr: "BT-410 동글"
         url: /parts/communication/bt-410-dongle/
-      - title: "ZIG2Serial"
-        titlekr: "ZIG2Serial"
+      - title: "*ZIG2Serial"
+        titlekr: "*ZIG2Serial"
         url: /parts/communication/zig2serial/
     - title: "Motors"
       titlekr: "모터"
@@ -490,8 +490,8 @@ main:
       - title: "*High Speed Geared Motor"
         titlekr: "*고속 감속모터"
         url: /parts/motor/h_speed_geared_motor/
-      - title: "Low Speed Geared Motor"
-        titlekr: "저속 감속모터"
+      - title: "*Low Speed Geared Motor"
+        titlekr: "*저속 감속모터"
         url: /parts/motor/l_speed_geared_motor/
       - title: "Servo Motor(SM-10)"
         titlekr: "서보모터(SM-10)"
@@ -502,8 +502,8 @@ main:
       - title: "LN-101"
         titlekr: "LN-101"
         url: /parts/interface/ln-101/
-      - title: "USB2DYNAMIXEL"
-        titlekr: "USB2DYNAMIXEL"
+      - title: "*USB2DYNAMIXEL"
+        titlekr: "*USB2DYNAMIXEL"
         url: /parts/interface/usb2dynamixel/
       - title: "U2D2"
         titlekr: "U2D2"
@@ -15429,10 +15429,10 @@ opencm904:
         titlekr: "JTAG/SWD Pin"
         url: /parts/controller/opencm904/#jtagswd-4-pin
         urlkr: /parts/controller/opencm904/#jtagswd-4-pin
-      - title: "5 Pin Port"
-        titlekr: "5핀 포트"
-        url: /parts/controller/opencm904/#5-pin-port
-        urlkr: /parts/controller/opencm904/#5핀-포트
+      - title: "ROBOTIS 5-Pin Port"
+        titlekr: "로보티즈 5핀 포트"
+        url: /parts/controller/opencm904/#robotis-5-pin-port
+        urlkr: /parts/controller/opencm904/#로보티즈-5핀-포트
       - title: "I/O Header"
         titlekr: "입출력 IO헤더"
         url: /parts/controller/opencm904/#io-header
@@ -15581,8 +15581,8 @@ opencr10:
       url: /parts/controller/opencr10/#dip-switch
     - title: "GPIO"
       url: /parts/controller/opencr10/#gpio
-    - title: "OLLO Connector"
-      url: /parts/controller/opencr10/#ollo-connector
+    - title: "ROBOTIS 5-pin Connector"
+      url: /parts/controller/opencr10/#robotis-5-pin-connector
     - title: "Push Switch"
       url: /parts/controller/opencr10/#push-switch
     - title: "External Interrupt"

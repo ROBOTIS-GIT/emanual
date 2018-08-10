@@ -243,7 +243,7 @@ JTAG/SWD 4-pin port can be used for various developments by advanced users. ST-L
 
 > Example: ST-LINK and OpenCM9.04 connection
 
-### [5-pin Port](#5-pin-port)
+### [ROBOTIS 5-Pin Port](#robotis-5-pin-port)
 Used to connect ROBOTIS 5-pin devices (modules).
 
 ![](/assets/images/parts/controller/opencm904/opencm904_12.png)
