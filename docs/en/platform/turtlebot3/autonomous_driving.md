@@ -462,7 +462,7 @@ $ sudo apt-get install ros-kinetic-image-transport ros-kinetic-cv-bridge ros-kin
 
 ![](/assets/images/platform/turtlebot3/competition/competition_autorace.png)
 
-- (Coming soon!)
+- [TurtleBot3 AutoRace](http://emanual.robotis.com/docs/en/platform/turtlebot3/challenges/#online-competition-on-rds)
 
 ## [AutoRace RBIZ Challenge 2017](#autorace-rbiz-challenge-2017)
 

@@ -10860,6 +10860,12 @@ op3:
     - title: "How to execute GUI program"
       url: /platform/op3/tutorials/#how-to-execute-gui-program
       children:
+      - title: "Run the program"
+        url: /platform/op3/tutorials/#run-the-program
+      - title: "How to take the initial pose of ROBOTIS-OP3"
+        url: /platform/op3/tutorials/#how-to-take-the-initial-pose
+      - title: "How to set the Module"
+        url: /platform/op3/tutorials/#how-to-set-the-module
       - title: "How to use walking tuner"
         url: /platform/op3/tutorials/#how-to-use-walking-tuner
       - title: "How to play the motions"
@@ -11844,10 +11850,10 @@ turtlebot3:
     children:
     - title: "Installation"
       url: /platform/turtlebot3/machine_learning/#installation
-    - title: "Run Machine Learning"
-      url: /platform/turtlebot3/machine_learning/#run-machine-learning
     - title: "Set parameters"
       url: /platform/turtlebot3/machine_learning/#set-parameters
+    - title: "Run Machine Learning"
+      url: /platform/turtlebot3/machine_learning/#run-machine-learning
   - title: "Locomotion"
     url: /platform/turtlebot3/locomotion/#locomotion
     children:

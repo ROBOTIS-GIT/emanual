@@ -69,7 +69,8 @@ If you need more information about it or you want to launch it in your remote PC
 
 ### [Autonomous Mobile Robot Competition (Dankook University)](#autonomous-mobile-robot-competition-dankook-university)
 
-- For more information, please see the following [page](https://www.dku-itrc-contest.com/).
+![](/assets/images/platform/turtlebot3/autonomous_driving/autorace_jn_dankook_1.jpg)
+![](/assets/images/platform/turtlebot3/autonomous_driving/autorace_jn_dankook_2.jpg)
 
 ### [AutoRace - RBIZ Challenge 2017](#autorace-rbiz-challenge-2017)
 
@@ -79,7 +80,7 @@ If you need more information about it or you want to launch it in your remote PC
 
 ### [AutoRace - RBIZ Challenge 2018](#autorace-rbiz-challenge-2018)
 
-- Coming soon!
+- The competition will be held in Daegu, Korea on November 15-17.
 
 [rds]: http://www.theconstructsim.com/rds-ros-development-studio/
 [the_construct]: http://www.theconstructsim.com/
