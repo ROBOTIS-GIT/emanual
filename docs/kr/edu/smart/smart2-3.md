@@ -28,7 +28,7 @@ sidebar:
 [스마트 앱 파라미터 사용법 바로가기]  
 {: .notice}
 
-# [부품 리스트](#부품-리스트)
+# [부품 목록](#부품-목록)
 
 ![](/assets/images/edu/smart/smart2-3_partlist.jpg)
 

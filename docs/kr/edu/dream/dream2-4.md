@@ -27,7 +27,7 @@ sidebar:
 
 <div class="notice--warning">{{ dream2_4 | markdownify }}</div>
 
-# [부품 리스트](#부품-리스트)
+# [부품 목록](#부품-목록)
 
 ![](/assets/images/edu/dream/dream2/dream2_lv4_partlist_kr.jpg)
 

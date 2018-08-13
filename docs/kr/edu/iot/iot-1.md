@@ -20,7 +20,7 @@ sidebar:
 로보티즈 IoT 1단계에서 프로그램 학습을 하기 위해서는 스크래치2 오프라인 에디터와 로보플러스 스크래치를 설치해야 합니다.
 
 
-# [부품 리스트](#부품-리스트)
+# [부품 목록](#부품-목록)
 
 ![](/assets/images/edu/iot/robotis_iot_l1_partlist_kr.png)
 
