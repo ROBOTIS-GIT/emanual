@@ -9466,9 +9466,9 @@ ollo_bugkit:
     urlkr: /edu/ollo/bugkit/#시작하기
     children:
       - title: "Part List"
-        titlekr: "부품 리스트"
+        titlekr: "부품 목록"
         url: /edu/ollo/bugkit/#part-list
-        urlkr: /edu/ollo/bugkit/#부품-리스트
+        urlkr: /edu/ollo/bugkit/#부품-목록
       - title: "How to Play"
         titlekr: "버그 작동하기"
         url: /edu/ollo/bugkit/#how-to-play
@@ -9531,9 +9531,9 @@ ollo_explorer:
     url: /edu/ollo/explorer/#introduction
     urlkr: /edu/ollo/explorer/#개요
   - title: "Part List"
-    titlekr: "부품 리스트"
+    titlekr: "부품 목록"
     url: /edu/ollo/explorer/#part-list
-    urlkr: /edu/ollo/explorer/#부품-리스트
+    urlkr: /edu/ollo/explorer/#부품-목록
   - title: "Quick Start"
     titlekr: "작동하기"
     url: /edu/ollo/explorer/#quick-start
@@ -9559,9 +9559,9 @@ ollo_inventor:
   url: /edu/ollo/inventor/#introduction
   urlkr: /edu/ollo/inventor/#개요
 - title: "Part List"
-  titlekr: "부품 리스트"
+  titlekr: "부품 목록"
   url: /edu/ollo/inventor/#part-list
-  urlkr: /edu/ollo/inventor/#부품-리스트
+  urlkr: /edu/ollo/inventor/#부품-목록
 - title: "Quick Start"
   titlekr: "작동하기"
   url: /edu/ollo/inventor/#quick-start
@@ -9580,8 +9580,8 @@ ollo_inventor:
 ollo-4:
 - titlekr: "개요"
   urlkr: /edu/ollo/ollo-4/#개요
-- titlekr: "부품 리스트"
-  urlkr: /edu/ollo/ollo-4/#부품-리스트
+- titlekr: "부품 목록"
+  urlkr: /edu/ollo/ollo-4/#부품-목록
 - titlekr: "작동하기"
   urlkr: /edu/ollo/ollo-4/#작동하기
   children:
@@ -9604,8 +9604,8 @@ dream:
 dream1-1:
 - titlekr: "개요"
   urlkr: /edu/dream/dream1-1/#개요
-- titlekr: "부품 리스트"
-  urlkr: /edu/dream/dream1-1/#부품-리스트
+- titlekr: "부품 목록"
+  urlkr: /edu/dream/dream1-1/#부품-목록
 
 #DreamI Level2 sidebar
 dream1-2:
@@ -9614,9 +9614,9 @@ dream1-2:
   url: /edu/dream/dream1-2/#introduction
   urlkr: /edu/dream/dream1-2/#개요
 - title: "Part List"
-  titlekr: "부품 리스트"
+  titlekr: "부품 목록"
   url: /edu/dream/dream1-2/#part-list
-  urlkr: /edu/dream/dream1-2/#부품-리스트
+  urlkr: /edu/dream/dream1-2/#부품-목록
 - title: "Quick Start"
   titlekr: "작동하기"
   url: /edu/dream/dream1-2/#quick-start
@@ -9642,9 +9642,9 @@ dream1-3:
   url: /edu/dream/dream1-3/#introduction
   urlkr: /edu/dream/dream1-3/#개요
 - title: "Part List"
-  titlekr: "부품 리스트"
+  titlekr: "부품 목록"
   url: /edu/dream/dream1-3/#part-list
-  urlkr: /edu/dream/dream1-3/#부품-리스트
+  urlkr: /edu/dream/dream1-3/#부품-목록
 - title: "Examples"
   titlekr: "교안예제"
   url: /edu/dream/dream1-3/#examples
@@ -9657,9 +9657,9 @@ dream1-4:
   url: /edu/dream/dream1-4/#introduction
   urlkr: /edu/dream/dream1-4/#개요
 - title: "Part List"
-  titlekr: "부품 리스트"
+  titlekr: "부품 목록"
   url: /edu/dream/dream1-4/#part-list
-  urlkr: /edu/dream/dream1-4/#부품-리스트
+  urlkr: /edu/dream/dream1-4/#부품-목록
 - title: "Examples"
   titlekr: "교안예제"
   url: /edu/dream/dream1-4/#examples
@@ -9696,9 +9696,9 @@ dream2-1:
   url: /edu/dream/dream2-1/#introduction
   urlkr: /edu/dream/dream2-1/#개요
 - title: "Part List"
-  titlekr: "부품 리스트"
+  titlekr: "부품 목록"
   url: /edu/dream/dream2-1/#part-list
-  urlkr: /edu/dream/dream2-1/#부품-리스트
+  urlkr: /edu/dream/dream2-1/#부품-목록
 
 dream2-2:
 - title: "Introduction"
@@ -9706,9 +9706,9 @@ dream2-2:
   url: /edu/dream/dream2-2/#introduction
   urlkr: /edu/dream/dream2-2/#개요
 - title: "Part List"
-  titlekr: "부품 리스트"
+  titlekr: "부품 목록"
   url: /edu/dream/dream2-2/#part-list
-  urlkr: /edu/dream/dream2-2/#부품-리스트
+  urlkr: /edu/dream/dream2-2/#부품-목록
 - title: "Quick Start"
   titlekr: "작동하기"
   url: /edu/dream/dream2-2/#quick-start
@@ -9742,9 +9742,9 @@ dream2-3:
   url: /edu/dream/dream2-3/#introduction
   urlkr: /edu/dream/dream2-3/#개요
 - title: "Part List"
-  titlekr: "부품 리스트"
+  titlekr: "부품 목록"
   url: /edu/dream/dream2-3/#part-list
-  urlkr: /edu/dream/dream2-3/#부품-리스트
+  urlkr: /edu/dream/dream2-3/#부품-목록
 - title: "Examples"
   titlekr: "교안예제"
   url: /edu/dream/dream2-3/#examples
@@ -9756,9 +9756,9 @@ dream2-4:
   url: /edu/dream/dream2-4/#introduction
   urlkr: /edu/dream/dream2-4/#개요
 - title: "Part List"
-  titlekr: "부품 리스트"
+  titlekr: "부품 목록"
   url: /edu/dream/dream2-4/#part-list
-  urlkr: /edu/dream/dream2-4/#부품-리스트
+  urlkr: /edu/dream/dream2-4/#부품-목록
 - title: "Examples"
   titlekr: "교안예제"
   url: /edu/dream/dream2-4/#examples
@@ -9770,9 +9770,9 @@ dream2-5:
   url: /edu/dream/dream2-5/#introduction
   urlkr: /edu/dream/dream2-5/#개요
 - title: "Part List"
-  titlekr: "부품 리스트"
+  titlekr: "부품 목록"
   url: /edu/dream/dream2-5/#part-list
-  urlkr: /edu/dream/dream2-5/#부품-리스트
+  urlkr: /edu/dream/dream2-5/#부품-목록
 - title: "Examples"
   titlekr: "교안예제"
   url: /edu/dream/dream2-5/#examples
@@ -9796,8 +9796,8 @@ dream2-schoolset:
 smart1-1:
 - titlekr: "개요"
   urlkr: /edu/smart/smart1-1/#개요
-- titlekr: "부품 리스트"
-  urlkr: /edu/smart/smart1-1/#부품-리스트
+- titlekr: "부품 목록"
+  urlkr: /edu/smart/smart1-1/#부품-목록
 - titlekr: "작동하기"
   urlkr: /edu/smart/smart1-1/#작동하기
 - titlekr: "교안예제"
@@ -9806,8 +9806,8 @@ smart1-1:
 smart1-2:
 - titlekr: "개요"
   urlkr: /edu/smart/smart1-2/#개요
-- titlekr: "부품 리스트"
-  urlkr: /edu/smart/smart1-2/#부품-리스트
+- titlekr: "부품 목록"
+  urlkr: /edu/smart/smart1-2/#부품-목록
 - titlekr: "작동하기"
   urlkr: /edu/smart/smart1-2/#작동하기
 - titlekr: "교안예제"
@@ -9816,8 +9816,8 @@ smart1-2:
 smart1-3:
 - titlekr: "개요"
   urlkr: /edu/smart/smart1-3/#개요
-- titlekr: "부품 리스트"
-  urlkr: /edu/smart/smart1-3/#부품-리스트
+- titlekr: "부품 목록"
+  urlkr: /edu/smart/smart1-3/#부품-목록
 - titlekr: "작동하기"
   urlkr: /edu/smart/smart1-3/#작동하기
 - titlekr: "교안예제"
@@ -9826,8 +9826,8 @@ smart1-3:
 smart2-1:
 - titlekr: "개요"
   urlkr: /edu/smart/smart2-1/#개요
-- titlekr: "부품 리스트"
-  urlkr: /edu/smart/smart2-1/#부품-리스트
+- titlekr: "부품 목록"
+  urlkr: /edu/smart/smart2-1/#부품-목록
 - titlekr: "작동하기"
   urlkr: /edu/smart/smart2-1/#작동하기
 - titlekr: "교안예제"
@@ -9836,8 +9836,8 @@ smart2-1:
 smart2-2:
 - titlekr: "개요"
   urlkr: /edu/smart/smart2-2/#개요
-- titlekr: "부품 리스트"
-  urlkr: /edu/smart/smart2-2/#부품-리스트
+- titlekr: "부품 목록"
+  urlkr: /edu/smart/smart2-2/#부품-목록
 - titlekr: "작동하기"
   urlkr: /edu/smart/smart2-2/#작동하기
 - titlekr: "교안예제"
@@ -9846,8 +9846,8 @@ smart2-2:
 smart3-1:
 - titlekr: "개요"
   urlkr: /edu/smart/smart3-1/#개요
-- titlekr: "부품 리스트"
-  urlkr: /edu/smart/smart3-1/#부품-리스트
+- titlekr: "부품 목록"
+  urlkr: /edu/smart/smart3-1/#부품-목록
 - titlekr: "작동하기"
   urlkr: /edu/smart/smart3-1/#작동하기
 - titlekr: "교안예제"
@@ -9890,8 +9890,8 @@ iot:
 iot-1:
   - titlekr: "개요"
     urlkr: /edu/iot/iot-1/#개요
-  - titlekr: "부품 리스트"
-    urlkr: /edu/iot/iot-1/#부품-리스트
+  - titlekr: "부품 목록"
+    urlkr: /edu/iot/iot-1/#부품-목록
   - titlekr: "작동하기"
     urlkr: /edu/iot/iot-1/#작동하기
   - titlekr: "교안예제"
@@ -9900,8 +9900,8 @@ iot-1:
 iot-2:
   - titlekr: "개요"
     urlkr: /edu/iot/iot-2/#개요
-  - titlekr: "부품 리스트"
-    urlkr: /edu/iot/iot-2/#부품-리스트
+  - titlekr: "부품 목록"
+    urlkr: /edu/iot/iot-2/#부품-목록
   - titlekr: "작동하기"
     urlkr: /edu/iot/iot-2/#작동하기
   - titlekr: "교안예제"
@@ -9932,9 +9932,9 @@ bioloid-beginner:
     urlkr: /edu/bioloid/beginner/#시작하기
     children:
     - title: "Part List"
-      titlekr: "부품 리스트"
+      titlekr: "부품 목록"
       url: /edu/bioloid/beginner/#part-list
-      urlkr: /edu/bioloid/beginner/#부품-리스트
+      urlkr: /edu/bioloid/beginner/#부품-목록
     - title: "Preparation"
       titlekr: "로보플러스 사용준비"
       url: /edu/bioloid/beginner/#preparation
@@ -10035,9 +10035,9 @@ bioloid-comprehensive:
     urlkr: /edu/bioloid/comprehensive/#시작하기
     children:
     - title: "Part List"
-      titlekr: "부품 리스트"
+      titlekr: "부품 목록"
       url: /edu/bioloid/comprehensive/#part-list
-      urlkr: /edu/bioloid/comprehensive/#부품-리스트
+      urlkr: /edu/bioloid/comprehensive/#부품-목록
     - title: "Preparation"
       titlekr: "로보플러스 사용준비"
       url: /edu/bioloid/comprehensive/#preparation
@@ -10151,13 +10151,13 @@ bioloid-stem:
     urlkr: /edu/bioloid/stem/#시작하기
     children:
     - title: "Standard Part List"
-      titlekr: "Level 1 부품 리스트"
+      titlekr: "Level 1 부품 목록"
       url: /edu/bioloid/stem/#standard-part-list
-      urlkr: /edu/bioloid/stem/#level-1-부품-리스트
+      urlkr: /edu/bioloid/stem/#level-1-부품-목록
     - title: "Expansion Part List"
-      titlekr: "Level 2 부품 리스트"
+      titlekr: "Level 2 부품 목록"
       url: /edu/bioloid/stem/#expansion-part-list
-      urlkr: /edu/bioloid/stem/#level-2-부품-리스트
+      urlkr: /edu/bioloid/stem/#level-2-부품-목록
     - title: "Operating"
       titlekr: "작동하기"
       url: /edu/bioloid/stem/#operating
@@ -10203,10 +10203,10 @@ stem-academy:
   - titlekr: "시작하기"
     urlkr: /edu/bioloid/stem_academy/#시작하기
     children:
-    - titlekr: "Level 1 부품 리스트"
-      urlkr: /edu/bioloid/stem_academy/#level-1-부품-리스트
-    - titlekr: "Level 2 부품 리스트"
-      urlkr: /edu/bioloid/stem_academy/#level-2-부품-리스트
+    - titlekr: "Level 1 부품 목록"
+      urlkr: /edu/bioloid/stem_academy/#level-1-부품-목록
+    - titlekr: "Level 2 부품 목록"
+      urlkr: /edu/bioloid/stem_academy/#level-2-부품-목록
     - titlekr: "작동하기"
       urlkr: /edu/bioloid/stem_academy/#작동하기
     - titlekr: "충전하기"
@@ -10235,9 +10235,9 @@ bioloid-premium:
     urlkr: /edu/bioloid/premium/#시작하기
     children:
     - title: "Part List"
-      titlekr: "부품 리스트"
+      titlekr: "부품 목록"
       url: /edu/bioloid/premium/#part-list
-      urlkr: /edu/bioloid/premium/#부품-리스트
+      urlkr: /edu/bioloid/premium/#부품-목록
     - title: "Operating"
       titlekr: "작동하기"
       url: /edu/bioloid/premium/#operating
@@ -10342,9 +10342,9 @@ bioloid-gp:
     urlkr: /edu/bioloid/gp/#시작하기
     children:
     - title: "Part List"
-      titlekr: "부품 리스트"
+      titlekr: "부품 목록"
       url: /edu/bioloid/gp/#part-list
-      urlkr: /edu/bioloid/gp/#부품-리스트
+      urlkr: /edu/bioloid/gp/#부품-목록
     - title: "Operating"
       titlekr: "작동하기"
       url: /edu/bioloid/gp/#operating
@@ -10412,9 +10412,9 @@ mini:
     urlkr: /edu/mini/#시작하기
     children:
     - title: "Part List"
-      titlekr: "부품 리스트"
+      titlekr: "부품 목록"
       url: /edu/mini/#part-list
-      urlkr: /edu/mini/#부품-리스트
+      urlkr: /edu/mini/#부품-목록
     - title: "Preparation"
       titlekr: "준비하기"
       url: /edu/mini/#preparation

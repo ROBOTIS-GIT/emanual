@@ -23,7 +23,7 @@ sidebar:
 
 # [시작하기](#시작하기)
 
-## [부품 리스트](#부품-리스트)
+## [부품 목록](#부품-목록)
 
 ![](/assets/images/edu/bioloid/comprehensivekit_partlist_kr.png)
 

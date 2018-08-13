@@ -20,6 +20,6 @@ sidebar:
 보다 다양한 주변장치를 이용하여 로봇을 제작하고, 로봇 프로그래밍을 하기 위해서는 드림Ⅱ 2단계를 구매하시면 됩니다.
  
 
-# [부품 리스트](#부품-리스트)
+# [부품 목록](#부품-목록)
 
 ![](/assets/images/edu/dream/dream2/e-manual_dreamⅡ_lv1_partlist_kr.jpg)
