@@ -82,12 +82,6 @@ $ roscore
 $ roslaunch turtlebot3_bringup turtlebot3_robot.launch
 ```
 
-**[Remote PC]** Move to `turtlebot3_follower` source directory
-
-``` bash
-$ cd ~/catkin_ws/src/turtlebot3_applications/turtlebot3_follower/scripts
-```
-
 **[Remote PC]** Launch `turtlebot3_follow_filter` with below command.
 
 ``` bash
@@ -97,7 +91,7 @@ $ roslaunch turtlebot3_follow_filter turtlebot3_follow_filter.launch
 **[Remote PC]** Launch `turtlebot3_follower` with below command.
 
 ``` bash
-$ rosrun turtlebot3_follower follower.py
+$ roslaunch turtlebot3_follower turtlebot3_follower.launch
 ```
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/w9YTxZVY6yQ" frameborder="0" allowfullscreen></iframe>
