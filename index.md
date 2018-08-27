@@ -17,7 +17,11 @@ header:
 
 - [Previous e-Manual] will be served as well.
 - New ROBOTIS Community [Forum] is available. Please checkout the [Forum] if you have any issue with ROBOTIS Products.
-- 한국어 사용자는 [`한글 매뉴얼`]을 참조하세요.
+
+한국어 사용자는 [`한글 매뉴얼`]을 참조하세요.  
+日本語e-manualは現時点で編集されていません。 英語版ページをご参照下さい。  
+目前, 还没有中文版. 请使用提供的Google翻译器 <img src="/assets/images/icon_google.png">.
+{: .notice--success}
 
 # Quick References
 
