@@ -45,7 +45,7 @@ header:
 - [Documentation](/docs/en/software/dynamixel/dynamixel_workbench/)
 
 ## Controllers
-- [OpenCM 1.0](/docs/en/parts/controller/opencr10/)
+- [OpenCR 1.0](/docs/en/parts/controller/opencr10/)
 - [OpenCM 9.04](/docs/en/parts/controller/opencm904/)
 - [OpenCM 485 EXP](/docs/en/parts/controller/opencm485exp/)
 
