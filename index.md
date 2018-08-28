@@ -17,7 +17,13 @@ header:
 
 - [Previous e-Manual] will be served as well.
 - New ROBOTIS Community [Forum] is available. Please checkout the [Forum] if you have any issue with ROBOTIS Products.
-- 한국어 사용자는 [`한글 매뉴얼`]을 참조하세요.
+
+{% capture index_notice_01 %}
+- 한국어 사용자는 [한글 매뉴얼](http://emanual.robotis.com/docs/kr/)을 참조하세요.  
+- 日本語e-manualは現時点で編集されていません。 英語版ページをご参照下さい。  
+- 目前, 还没有中文版. 请使用提供的Google翻译器 <img src="/assets/images/icon_google.png">.
+{% endcapture %}
+<div class="notice--success">{{ index_notice_01 | markdownify }}</div>
 
 # Quick References
 
@@ -37,6 +43,11 @@ header:
 ## DYNAMIXEL Workbench
 - [Package Download](https://github.com/ROBOTIS-GIT/dynamixel-workbench)
 - [Documentation](/docs/en/software/dynamixel/dynamixel_workbench/)
+
+## Controllers
+- [OpenCM 1.0](/docs/en/parts/controller/opencr10/)
+- [OpenCM 9.04](/docs/en/parts/controller/opencm904/)
+- [OpenCM 485 EXP](/docs/en/parts/controller/opencm485exp/)
 
 ## DYNAMIXEL Control Table
 
@@ -58,7 +69,6 @@ header:
 ## Compatibility Guide
 - [Controller](/docs/en/parts/controller/controller_compatibility/)
 
-[`한글 매뉴얼`]: http://emanual.robotis.com/docs/kr/
 [AX-12W]: /docs/en/dxl/ax/ax-12w/#control-table-of-eeprom-area
 [AX-12+/12A]: /docs/en/dxl/ax/ax-12a/#control-table-of-eeprom-area
 [AX-18F/18A]: /docs/en/dxl/ax/ax-18a/#control-table-of-eeprom-area
