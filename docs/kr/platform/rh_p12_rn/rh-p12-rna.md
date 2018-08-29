@@ -61,8 +61,8 @@ sidebar:
 |  10  |       1        | [Drive Mode](#drive-mode)                   |   RW  |   0    |            0 ~ 1             | - |
 |  11  |       1        | [Operating Mode](#operating-mode)           |   RW  |   5    |            0, 5              | - |
 |  12  |       1        | [Sencondary ID](#secondary-id)              |   RW  |  255   |           0 ~ 255           | - |
-|  20  |       4        | [Homing Offset](#homing-offset)             |   RW  |   0    | -2,147,483,648 ~<br> 2,147,483,647 | 1 [pulse] |
-|  24  |       4        | [Moving Threshold](#moving-threshold)       |   RW  |   50   | -2,147,483,648 ~<br> 2,147,483,647 | 0.01 [rev/min] |
+|  20  |       4        | [Homing Offset](#homing-offset)             |   RW  |   0    |         0 ~ 1,150            | 1 [pulse] |
+|  24  |       4        | [Moving Threshold](#moving-threshold)       |   RW  |   80   |          0 ~ 2,970          | 0.01 [rev/min] |
 |  31  |       1        | [Temperature Limit](#temperature-limit)     |   RW  |   80   |           0 ~ 100            | 1 [℃] |
 |  32  |       2        | [Max Voltage Limit](#max-voltage-limit)     |   RW  |  350   |           0 ~ 350            | 0.1 [V] |
 |  34  |       2        | [Min Voltage Limit](#min-voltage-limit)     |   RW  |  150   |           0 ~ 350            | 0.1 [V] |
@@ -70,8 +70,8 @@ sidebar:
 |  38  |       2        | [Current Limit](#current-limit)             |   RW  |  1,984 |          0 ~ 1,984          | 1 [mA] |
 |  40  |       4        | [Acceleration Limit](#acceleration-limit)   |   RW  |  3,447 |          0 ~ 1,378,788      | 1 [rev/min²] |
 |  44  |       4        | [Velocity Limit](#velocity-limit)           |   RW  |  2,970 |          0 ~ 2,970          | 0.01 [rev/min] |
-|  48  |       4        | [Max Position Limit](#max-position-limit)   |   RW  |  1,150 |         0 ~ 1,150      | 1 [pulse] |
-|  52  |       4        | [Min Position Limit](#min-position-limit)   |   RW  |   0    |          0 ~ 1,150     | 1 [pulse] |
+|  48  |       4        | [Max Position Limit](#max-position-limit)   |   RW  |  1,150 |         0 ~ 1,150           | 1 [pulse] |
+|  52  |       4        | [Min Position Limit](#min-position-limit)   |   RW  |   0    |          0 ~ 1,150          | 1 [pulse] |
 |  57  |       1        | [External Port Mode 2](#external-port-mode) |   RW  |   3    |            0 ~ 3             | - |
 |  56  |       1        | [External Port Mode 1](#external-port-mode) |   RW  |   3    |            0 ~ 3             | - |
 |  58  |       1        | [External Port Mode 3](#external-port-mode) |   RW  |   3    |            0 ~ 3             | - |
@@ -181,6 +181,10 @@ Present Position = 실제 위치 + Homing offset(20) 이 됩니다.
 
 ### <a name="moving-threshold"></a>**[Moving Threshold(24)](#moving-threshold24)**
 {% include kr/dxl/pro-plus/control_table_24_moving_threshold.md %}
+
+| 단위           | 범위              |
+| :------------: | :---------------: |
+| 0.01 [rev/min] |     0 ~ 2,970     |
 
 ### <a name="temperature-limit"></a>**[Temperature Limit(31)](#temperature-limit31)**
 {% include kr/dxl/pro-plus/control_table_31_temperature_limit.md %}
@@ -301,10 +305,66 @@ Present Position = 실제 위치 + Homing offset(20) 이 됩니다.
 이 값은 Velocity Limit(44) 보다 큰 값을 쓸 수 없습니다.  
 
 ### <a name="profile-acceleration"></a>**[Profile Acceleration(556)](#profile-acceleration556)**
-{% include kr/dxl/pro-plus/control_table_556_profile_acceleration.md %}
+프로파일 가속도를 설정합니다. 동작모드가 전류기반 위치 제어 모드에서만 사용할 수 있습니다.  프로파일 가속도 값의 범위는 0 ~ Acceleration Limit(40) 입니다.
+
+**주의** : Profile Velocity(560) 의 값이 0일 때는 프로파일 가속도가 적용되지 않습니다.
+{: .notice}
+
 
 ### <a name="profile-velocity"></a>**[Profile Velocity(560)](#profile-velocity560)**
-{% include kr/dxl/pro-plus/control_table_560_profile_velocity.md %}
+Profile의 최대 속도를 설정합니다.  
+Profile Velocity(560)는 전류기반 위치 제어 모드에서만 적용 가능합니다.  
+Profile Velocity(560)는 Velocity Limit(44)보다 클 수 없습니다.  
+참고로 속도 제어 모드에서는 Profile Velocity(560)는 적용되지 않고 Profile Acceleration(556)만 적용됩니다.
+
+|단위            |  범위                   | 설명                                                      |
+|    :---:       | :---:                  | :---:                                                     |
+| 0.01 [rev/min] | 0 ~ Velocity Limit(44) | Profile Velocity(560)이 '0'인 경우, 무한대 속도를 뜻합니다. |
+
+Profile이란 모터 구동 시 급격하게 변하는 속도와 가속도를 조절함으로써 진동, 소음 및 모터의 부하를 줄이는 가감속 제어 방법입니다.  
+일반적으로 속도에 근거하여 가감속을 제어하기 때문에 Velocity Profile이라고 불립니다.  
+장치는 3가지 형태의 Profile을 제공합니다. 다음은 3가지 종류의 Profile을 표시합니다.  
+기본적으로 Profile의 선택은 Profile Velocity(560)와 Profile Acceleration(556)의 조합에 의해서 결정됩니다.  
+예외적으로 Trapezoidal Profile은 총 이동거리(ΔPos, 목표위치와 현재위치의 차이)가 추가로 고려되어 선택됩니다.  
+
+![](/assets/images/dxl/pro-plus/profile_types.png)
+
+
+장치의 Profile은 Goal Position(564)이 주어졌을 때, 현재 속도(Profile의 시작속도)를 기반으로 목표 속도 궤적을 생성합니다.  
+따라서 장치가 Goal Position(564)로 이동하는 중에 새로운 Goal Position(564)로 목표위치가 변경되어도, 속도의 연속성을 유지하면서 목표 속도 궤적을 생성합니다.  
+이와 같이 속도의 불연속이 발생하지 않도록 목표 속도 궤적을 생성하는 기능을 Velocity Override라고 합니다.  
+여기서는 수식의 단순화를 위해 Profile의 시작속도를 ‘0’으로 가정합니다.
+
+
+다음은 Goal Position(564) 명령에 대한 Profile의 동작 과정을 나타냅니다.
+
+1. 사용자의 요청이 통신 버스를 통해 Goal Position(564)에 등록됩니다.
+2. Profile Velocity(560)와 Profile Acceleration(556)에 의해서 가속 시간(t1)이 결정됩니다.  
+3. Profile Velocity(560), Profile Acceleration(556) 그리고 총 이동거리(ΔPos, 목표 위치와 현재 위치의 차이)에 의해서 Profile의 형태가 다음과 같이 결정됩니다.
+4. 최종 선정된 Profile의 형태는 Moving Status(571)에 표기됩니다.(Moving Status(571) 참고)
+5. 장치는 Profile에 의해 산출된 목표 궤적에 따라 이동하게 됩니다.
+6. Profile에 의한 목표 속도 궤적과 목표 위치 궤적은 Velocity Trajectory(584)와 Position Trajectory(588)에 표기됩니다.
+
+| 조건     | 프로파일 형태     |
+| :------------- | :------------- |
+| Profile Velocity(560) = 0                                     | 프로파일 미사용(Step 명령) |
+| (Profile Velocity(560) ≠ 0) & (Profile Acceleration(556) = 0) | 사각 프로파일 |
+| (Profile Velocity(560) ≠ 0) & (Profile Acceleration(556) ≠ 0) | 사다리꼴 프로파일 |
+
+![](/assets/images/dxl/pro-plus/velocity_profile.png)
+
+
+{% capture group_notice_03 %}
+제공되는 Profile의 형태는 Step과 Trapezoidal 2가지 입니다.  
+Velocity Override 기능은 동일하게 동작합니다.  
+이때의 가속시간(t<sub>1</sub>)은 다음과 같습니다.  
+**t<sub>1</sub> = 600 * {Goal Velocity(552) / Profile Acceleration(556)}**
+{% endcapture %}
+
+<div class="notice">
+  {{ group_notice_03 | markdownify }}
+</div>
+
 
 ### <a name="goal-position"></a>**[Goal Position(564)](#goal-position564)**
 이동시키고자 하는 곳의 위치 값입니다.  
@@ -321,7 +381,18 @@ Present Position = 실제 위치 + Homing offset(20) 이 됩니다.
 {% include kr/dxl/pro-plus/control_table_570_moving.md %}
 
 ### <a name="moving-status"></a>**[Moving Status(571)](#moving-status571)**
-{% include kr/dxl/pro-plus/control_table_571_moving_status.md %}
+움직임에 대한 추가적인 정보를 제공합니다. In-Position Bit(0x01)은 전류기반 위치 제어 모드에서만 동작합니다.
+
+||| 상세     | 설명     |
+| :---: | :---: |:---: | :---: |
+| Bit 7 | 0x80 | - | 미사용 |
+| Bit 6 | 0x40 | - | 미사용 |
+| Bit 5<br />~<br />Bit 4 | 0x30 | Profile Type(0x30)<br />Profile Type(0x10)<br />Profile Type(0x00)|사다리꼴 속도 프로파일(Trapezoidal Velocity Profile)<br />사각 속도 프로파일(Rectangle Velocity Profile)<br />프로파일 미사용(Step)|
+| Bit 3 | 0x08 | - | 미사용 |
+| Bit 2 | 0x04 | - | 미사용 |
+| Bit 1 | 0x02 | - | 미사용 |
+| Bit 0 | 0x01 | In-Position | 목표위치에 도달 경우 |
+
 
 ### <a name="present-pwm"></a>**[Present PWM(572)](#present-pwm572)**
 {% include kr/dxl/pro-plus/control_table_572_present_pwm.md %}
@@ -340,10 +411,13 @@ Present Position = 실제 위치 + Homing offset(20) 이 됩니다.
 |RH-P12-RN|![](/assets/images/platform/rh_p12_rn/rh_p12_rn_position_open.png)|![](/assets/images/platform/rh_p12_rn/rh_p12_rn_position_close.png)|
 
 ### <a name="velocity-trajectory"></a>**[Velocity Trajectory(584)](#velocity-trajectory584)**
-{% include kr/dxl/pro-plus/control_table_584_velocity_trajectory.md %}
+Profile에 의해 생성된 목표 속도 궤적입니다. 자세한 사항은 Profile Velocity(560)를 참고하세요.
+2. **전류기반 위치 제어 모드** : Position Trajectory(588)을 생성하기 위한 목표 속도 궤적입니다. Profile이 종료되면 Velocity Trajectory(584)은 '0'이 됩니다.
+
 
 ### <a name="position-trajectory"></a>**[Position Trajectory(588)](#position-trajectory588)**
-{% include kr/dxl/pro-plus/control_table_588_position_trajectory.md %}
+Profile에 의해 생성된 목표 위치 궤적입니다. 전류기반 위치 제어 모드에서만 동작 합니다. 자세한 사항은 [Profile Velocity(560)](#profile-velocity560)를 참고하세요.
+
 
 ### <a name="present-input-voltage"></a>**[Present Input Voltage(592)](#present-input-voltage592)**
 {% include kr/dxl/pro-plus/control_table_592_present_input_voltage.md %}
