@@ -15,13 +15,13 @@ sidebar:
 
 # [시작하기](#시작하기)
 
-## [Level 1 부품 리스트](#level-1-부품-리스트)
+## [Level 1 부품 목록](#level-1-부품-목록)
 
 ![](/assets/images/edu/bioloid/pr05_e01_standard_partlist_01_KR.png)
 
 ![](/assets/images/edu/bioloid/pr05_e01_standard_partlist_02_KR.png)
 
-## [Level 2 부품 리스트](#level-2-부품-리스트)
+## [Level 2 부품 목록](#level-2-부품-목록)
 
 ![](/assets/images/edu/bioloid/pr05_e01_expansion_partlist_01_KR.png)
 

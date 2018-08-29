@@ -53,6 +53,13 @@ sidebar:
 |:---:|:---:|
 |[![](/assets/images/edu/iot/robotis_iot_level1_tn_kr.jpg)](/docs/kr/edu/iot/iot-1/) | [![](/assets/images/edu/iot/robotis_iot_level2_tn_kr.jpg)](/docs/kr/edu/iot/iot-2/) |
 
+# [자동차 로봇](#자동차-로봇)
+
+|자동차 로봇|
+|:---:|
+|[![](/assets/images/edu/car/car_robot_thumbnail.jpg)](/docs/kr/edu/car/) |
+
+
 # [바이올로이드](#바이올로이드)
 
 |초급|종합|STEM 키트|프리미엄|GP|

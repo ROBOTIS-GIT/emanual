@@ -28,7 +28,7 @@ sidebar:
 
 <div class="notice--warning">{{ dream_01 | markdownify }}</div>
 
-# [부품 리스트](#부품-리스트)
+# [부품 목록](#부품-목록)
 
 ![](/assets/images/edu/dream/dream4kr.jpg)
 

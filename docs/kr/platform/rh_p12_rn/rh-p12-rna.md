@@ -94,13 +94,13 @@ sidebar:
 | 516  |        1         | [Status Return Level](#status-return-level)       |   RW  |   2    |                        0 ~ 2                        | - |
 | 517  |        1         | [Registered Instruction](#registered-instruction) |   R   |   0    |                          -                          | - |
 | 518  |        1         | [Hardware Error Status](#hardware-error-status)   |   R   |   0    |                          -                          | - |
-| 524  |        2         | [Velocity I Gain](#velocity-pi-gain)              |   RW  |   -    |                      0 ~ 32,767                      | - |
-| 526  |        2         | [Velocity P Gain](#velocity-pi-gain)              |   RW  |   -    |                      0 ~ 32,767                      | - |
-| 528  |        2         | [Position D Gain](#position-pid-gain)             |   RW  |   -    |                      0 ~ 32,767                      | - |
-| 532  |        2         | [Position P Gain](#position-pid-gain)             |   RW  |   -    |                      0 ~ 32,767                      | - |
-| 530  |        2         | [Position I Gain](#position-pid-gain)             |   RW  |   -    |                      0 ~ 32,767                      | - |
-| 536  |        2         | [Feedforward 2nd Gain](#feedforward-2nd-gain)     |   RW  |   -    |                      0 ~ 32,767                      | - |
-| 538  |        2         | [Feedforward 1st Gain](#feedforward-1st-gain)     |   RW  |   -    |                      0 ~ 32,767                      | - |
+| 524  |        2         | [Velocity I Gain](#velocity-i-gain)               |   RW  |   -    |                      0 ~ 32,767                      | - |
+| 526  |        2         | [Velocity P Gain](#velocity-i-gain)               |   RW  |   -    |                      0 ~ 32,767                      | - |
+| 528  |        2         | [Position D Gain](#position-p-gain)               |   RW  |   -    |                      0 ~ 32,767                      | - |
+| 532  |        2         | [Position P Gain](#position-p-gain)               |   RW  |   -    |                      0 ~ 32,767                      | - |
+| 530  |        2         | [Position I Gain](#position-p-gain)               |   RW  |   -    |                      0 ~ 32,767                      | - |
+| 536  |        2         | [Feedforward 2nd Gain](#velocity-i-gain)          |   RW  |   -    |                      0 ~ 32,767                      | - |
+| 538  |        2         | [Feedforward 1st Gain](#position-p-gain)          |   RW  |   -    |                      0 ~ 32,767                      | - |
 | 546  |        1         | [Bus Watchdog](#bus-watchdog)                     |   RW  |   -    |                       0 ~ 127                       | 20 [msec] |
 | 548  |        2         | [Goal PWM](#goal-pwm)                             |   RW  |   -    |         -PWM Limit(36) ~<br> PWM Limit(36)          | - |
 | 550  |        2         | [Goal Current](#goal-current)                     |   RW  |   0    |     -Current Limit(38) ~<br> Current Limit(38)      | 1 [mA] |
@@ -262,7 +262,7 @@ Present Position = 실제 위치 + Homing offset(20) 이 됩니다.
 ### <a name="hardware-error-status"></a>**[Hardware Error Status(518)](#hardware-error-status518)**
 {% include kr/dxl/pro-plus/control_table_518_hardware_error_status.md %}
 
-### <a name="velocity-pi-gain"><a name="position-pid-gain"></a><a name="feedforward-2nd-gain"></a><a name="feedforward-1st-gain"></a>**[Velocity PI Gain(524, 526), Position PID Gain(528,530,532), Feedforward 2nd Gains(536), Feedforward 1st Gains(538)](#velocity-pi-gain524-526, #position-pid-gain528-530-532, Feedforward 2nd Gains536, Feedforward 1st Gains538)**
+### <a name="velocity-i-gain"><a name="position-p-gain"></a><a name="feedforward-2nd-gain"></a><a name="feedforward-1st-gain"></a>**[Velocity PI Gain(524, 526), Position PID Gain(528,530,532), Feedforward 2nd Gains(536), Feedforward 1st Gains(538)](#velocity-pi-gain524-526, #position-pid-gain528-530-532, Feedforward 2nd Gains536, Feedforward 1st Gains538)**
 전류기반 위치 제어 모드에서 동작하는 위치 제어기의 Gain입니다. 편의상 장치 내부 제어기의 Position P Gain을 K<sub>P</sub>P로 표기하고 Control Table의 Gain은 K<sub>P</sub>P<sub>(TBL)</sub>로 표기합니다.
 
 |                      | 제어기 Gain     | 범위 | 설명 |

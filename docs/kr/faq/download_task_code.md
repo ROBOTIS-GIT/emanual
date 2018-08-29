@@ -20,7 +20,7 @@ sidebar:
 ## [CM-100](#cm-100)
 
 ### 준비
-1. 다운로드 할 태스크 코드 파일(*.tsk)을 RoboPlus Task에서 불러 옵니다.
+1. 다운로드 할 태스크 코드 파일(\*.tsk)을 RoboPlus Task에서 불러 옵니다.
   - 태스크 코드 파일을 더블클릭하여 열 수 있습니다.
   - RoboPlus Task 의 파일 열기 기능으로 열 수 있습니다.
   - 마우스를 이용하여 파일을 RoboPlus Task 위로 드래그 앤 드롭(Drag & Drop)을 통해 열 수 있습니다.
@@ -40,7 +40,7 @@ sidebar:
 
     ![img_02][img_02]
 
-    RoboPlus Task 가 제어기를 찾지 못하면 아래와 같은 에러 메시지가 나타납니다. 
+    RoboPlus Task 가 제어기를 찾지 못하면 아래와 같은 에러 메시지가 나타납니다.
 
     ![img_03][img_03]
 

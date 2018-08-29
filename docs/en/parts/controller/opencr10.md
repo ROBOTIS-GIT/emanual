@@ -127,7 +127,7 @@ It has an 18-pin common GPIO expansion connector and is mapped to the GPIO pin o
 **NOTE** : Typical pull-up / pull-down resistance is 40k&ohm;
 {: .notice}
 
-## [OLLO Connector](#ollo-connector)
+## [ROBOTIS 5-pin Connector](#robotis-5-pin-connector)
 
 ![](/assets/images/parts/controller/opencr10/arduino_pinmap_06.png)
 

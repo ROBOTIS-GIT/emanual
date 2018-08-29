@@ -306,11 +306,11 @@ main:
       titlekr: "바이올로이드"
       url: /edu/bioloid/
       children:
-      - title: "Beginner Level"
-        titlekr: "초급"
+      - title: "*Beginner Level"
+        titlekr: "*초급"
         url: /edu/bioloid/beginner/
-      - title: "Comprehensive Level"
-        titlekr: "종합"
+      - title: "*Comprehensive Level"
+        titlekr: "*종합"
         url: /edu/bioloid/comprehensive/
       - title: "ROBOTIS STEM"
         titlekr: "STEM 키트"
@@ -406,8 +406,8 @@ main:
       - title: "ZIGBEE SDK"
         titlekr: "지그비 SDK"
         url: /software/embedded_sdk/zigbee_sdk/
-    - title: "OpenCM IDE"
-      titlekr: "OpenCM IDE"
+    - title: "*OpenCM IDE"
+      titlekr: "*OpenCM IDE"
       url: /software/opencm_ide/getting_started/
     - title: "Arduino IDE"
       titlekr: "아두이노 IDE"
@@ -478,8 +478,8 @@ main:
       - title: "BT-410 Dongle"
         titlekr: "BT-410 동글"
         url: /parts/communication/bt-410-dongle/
-      - title: "ZIG2Serial"
-        titlekr: "ZIG2Serial"
+      - title: "*ZIG2Serial"
+        titlekr: "*ZIG2Serial"
         url: /parts/communication/zig2serial/
     - title: "Motors"
       titlekr: "모터"
@@ -490,8 +490,8 @@ main:
       - title: "*High Speed Geared Motor"
         titlekr: "*고속 감속모터"
         url: /parts/motor/h_speed_geared_motor/
-      - title: "Low Speed Geared Motor"
-        titlekr: "저속 감속모터"
+      - title: "*Low Speed Geared Motor"
+        titlekr: "*저속 감속모터"
         url: /parts/motor/l_speed_geared_motor/
       - title: "Servo Motor(SM-10)"
         titlekr: "서보모터(SM-10)"
@@ -502,8 +502,8 @@ main:
       - title: "LN-101"
         titlekr: "LN-101"
         url: /parts/interface/ln-101/
-      - title: "USB2DYNAMIXEL"
-        titlekr: "USB2DYNAMIXEL"
+      - title: "*USB2DYNAMIXEL"
+        titlekr: "*USB2DYNAMIXEL"
         url: /parts/interface/usb2dynamixel/
       - title: "U2D2"
         titlekr: "U2D2"
@@ -3390,7 +3390,7 @@ mx-64-2:
         - title: "PWM Lmit(36)"
           titlekr: "PWM Limit(36)"
           url: /dxl/mx/mx-64-2/#pwm-limit36
-        - title: "Current Lmit(38)"
+        - title: "Current Limit(38)"
           titlekr: "Current Limit(38)"
           url: /dxl/mx/mx-64-2/#current-limit38
         - title: "Acceleration Limit(40)"
@@ -3614,7 +3614,7 @@ mx-106-2:
         - title: "PWM Lmit(36)"
           titlekr: "PWM Limit(36)"
           url: /dxl/mx/mx-106-2/#pwm-limit36
-        - title: "Current Lmit(38)"
+        - title: "Current Limit(38)"
           titlekr: "Current Limit(38)"
           url: /dxl/mx/mx-106-2/#current-limit38
         - title: "Acceleration Limit(40)"
@@ -3834,7 +3834,7 @@ xh430-v210:
         - title: "PWM Lmit(36)"
           titlekr: "PWM Limit(36)"
           url: /dxl/x/xh430-v210/#pwm-limit36
-        - title: "Current Lmit(38)"
+        - title: "Current Limit(38)"
           titlekr: "Current Limit(38)"
           url: /dxl/x/xh430-v210/#current-limit38
         - title: "Acceleration Limit(40)"
@@ -3968,6 +3968,10 @@ xh430-v210:
         titlekr: "커넥터 정보"
         url: /dxl/x/xh430-v210/#connector-information
         urlkr: /dxl/x/xh430-v210/#커넥터-정보
+      - title: "Communication Circuit"
+        titlekr: "통신 회로"
+        url: /dxl/x/xh430-v210/#communication-circuit
+        urlkr: /dxl/x/xh430-v210/#통신-회로
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/x/xh430-v210/#drawings
@@ -4065,7 +4069,7 @@ xh430-v350:
         - title: "PWM Lmit(36)"
           titlekr: "PWM Limit(36)"
           url: /dxl/x/xh430-v350/#pwm-limit36
-        - title: "Current Lmit(38)"
+        - title: "Current Limit(38)"
           titlekr: "Current Limit(38)"
           url: /dxl/x/xh430-v350/#current-limit38
         - title: "Acceleration Limit(40)"
@@ -4199,6 +4203,10 @@ xh430-v350:
         titlekr: "커넥터 정보"
         url: /dxl/x/xh430-v350/#connector-information
         urlkr: /dxl/x/xh430-v350/#커넥터-정보
+      - title: "Communication Circuit"
+        titlekr: "통신 회로"
+        url: /dxl/x/xh430-v350/#communication-circuit
+        urlkr: /dxl/x/xh430-v350/#통신-회로
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/x/xh430-v350/#drawings
@@ -4296,7 +4304,7 @@ xh430-w210:
         - title: "PWM Lmit(36)"
           titlekr: "PWM Limit(36)"
           url: /dxl/x/xh430-w210/#pwm-limit36
-        - title: "Current Lmit(38)"
+        - title: "Current Limit(38)"
           titlekr: "Current Limit(38)"
           url: /dxl/x/xh430-w210/#current-limit38
         - title: "Acceleration Limit(40)"
@@ -4430,6 +4438,10 @@ xh430-w210:
         titlekr: "커넥터 정보"
         url: /dxl/x/xh430-w210/#connector-information
         urlkr: /dxl/x/xh430-w210/#커넥터-정보
+      - title: "Communication Circuit"
+        titlekr: "통신 회로"
+        url: /dxl/x/xh430-w210/#communication-circuit
+        urlkr: /dxl/x/xh430-w210/#통신-회로
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/x/xh430-w210/#drawings
@@ -4527,7 +4539,7 @@ xh430-w350:
         - title: "PWM Lmit(36)"
           titlekr: "PWM Limit(36)"
           url: /dxl/x/xh430-w350/#pwm-limit36
-        - title: "Current Lmit(38)"
+        - title: "Current Limit(38)"
           titlekr: "Current Limit(38)"
           url: /dxl/x/xh430-w350/#current-limit38
         - title: "Acceleration Limit(40)"
@@ -4661,6 +4673,10 @@ xh430-w350:
         titlekr: "커넥터 정보"
         url: /dxl/x/xh430-w350/#connector-information
         urlkr: /dxl/x/xh430-w350/#커넥터-정보
+      - title: "Communication Circuit"
+        titlekr: "통신 회로"
+        url: /dxl/x/xh430-w350/#communication-circuit
+        urlkr: /dxl/x/xh430-w350/#통신-회로
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/x/xh430-w350/#drawings
@@ -4719,6 +4735,10 @@ xl320:
         titlekr: "커넥터 정보"
         url: /dxl/x/xl320/#connector-information
         urlkr: /dxl/x/xl320/#커넥터-정보
+      - title: "Communication Circuit"
+        titlekr: "통신 회로"
+        url: /dxl/x/xl320/#communication-circuit
+        urlkr: /dxl/x/xl320/#통신-회로
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/x/xl320/#drawings
@@ -4786,15 +4806,6 @@ xl430-w250:
         titlekr: "옵션프레임 조립"
         url: /dxl/x/xl430-w250/#option-frame-assembly
         urlkr: /dxl/x/xl430-w250/#옵션프레임-조립
-  - title: "Maintenance"
-    titlekr: "유지보수"
-    url: /dxl/x/xl430-w250/#maintenance
-    urlkr: /dxl/x/xl430-w250/#유지보수
-    children:
-      - title: "Horn, Gear Replacement"
-        titlekr: "혼과 기어 교체"
-        url: /dxl/x/xl430-w250/#horn-and-gear-replacement
-        urlkr: /dxl/x/xl430-w250/#혼과-기어-교체
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/x/xl430-w250/#reference
@@ -4808,6 +4819,10 @@ xl430-w250:
         titlekr: "커넥터 정보"
         url: /dxl/x/xl430-w250/#connector-information
         urlkr: /dxl/x/xl430-w250/#커넥터-정보
+      - title: "Communication Circuit"
+        titlekr: "통신 회로"
+        url: /dxl/x/xl430-w250/#communication-circuit
+        urlkr: /dxl/x/xl430-w250/#통신-회로
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/x/xl430-w250/#drawings
@@ -4905,7 +4920,7 @@ xm430-w210:
         - title: "PWM Lmit(36)"
           titlekr: "PWM Limit(36)"
           url: /dxl/x/xm430-w210/#pwm-limit36
-        - title: "Current Lmit(38)"
+        - title: "Current Limit(38)"
           titlekr: "Current Limit(38)"
           url: /dxl/x/xm430-w210/#current-limit38
         - title: "Acceleration Limit(40)"
@@ -5039,6 +5054,10 @@ xm430-w210:
         titlekr: "커넥터 정보"
         url: /dxl/x/xm430-w210/#connector-information
         urlkr: /dxl/x/xm430-w210/#커넥터-정보
+      - title: "Communication Circuit"
+        titlekr: "통신 회로"
+        url: /dxl/x/xm430-w210/#communication-circuit
+        urlkr: /dxl/x/xm430-w210/#통신-회로
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/x/xm430-w210/#drawings
@@ -5136,7 +5155,7 @@ xm430-w350:
         - title: "PWM Lmit(36)"
           titlekr: "PWM Limit(36)"
           url: /dxl/x/xm430-w350/#pwm-limit36
-        - title: "Current Lmit(38)"
+        - title: "Current Limit(38)"
           titlekr: "Current Limit(38)"
           url: /dxl/x/xm430-w350/#current-limit38
         - title: "Acceleration Limit(40)"
@@ -5270,6 +5289,10 @@ xm430-w350:
         titlekr: "커넥터 정보"
         url: /dxl/x/xm430-w350/#connector-information
         urlkr: /dxl/x/xm430-w350/#커넥터-정보
+      - title: "Communication Circuit"
+        titlekr: "통신 회로"
+        url: /dxl/x/xm430-w350/#communication-circuit
+        urlkr: /dxl/x/xm430-w350/#통신-회로
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/x/xm430-w350/#drawings
@@ -5367,7 +5390,7 @@ xm540-w150:
         - title: "PWM Lmit(36)"
           titlekr: "PWM Limit(36)"
           url: /dxl/x/xm540-w150/#pwm-limit36
-        - title: "Current Lmit(38)"
+        - title: "Current Limit(38)"
           titlekr: "Current Limit(38)"
           url: /dxl/x/xm540-w150/#current-limit38
         - title: "Acceleration Limit(40)"
@@ -5507,6 +5530,10 @@ xm540-w150:
         titlekr: "커넥터 정보"
         url: /dxl/x/xm540-w150/#connector-information
         urlkr: /dxl/x/xm540-w150/#커넥터-정보
+      - title: "Communication Circuit"
+        titlekr: "통신 회로"
+        url: /dxl/x/xm540-w150/#communication-circuit
+        urlkr: /dxl/x/xm540-w150/#통신-회로
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/x/xm540-w150/#drawings
@@ -5604,7 +5631,7 @@ xm540-w270:
         - title: "PWM Lmit(36)"
           titlekr: "PWM Limit(36)"
           url: /dxl/x/xm540-w270/#pwm-limit36
-        - title: "Current Lmit(38)"
+        - title: "Current Limit(38)"
           titlekr: "Current Limit(38)"
           url: /dxl/x/xm540-w270/#current-limit38
         - title: "Acceleration Limit(40)"
@@ -5744,6 +5771,10 @@ xm540-w270:
         titlekr: "커넥터 정보"
         url: /dxl/x/xm540-w270/#connector-information
         urlkr: /dxl/x/xm540-w270/#커넥터-정보
+      - title: "Communication Circuit"
+        titlekr: "통신 회로"
+        url: /dxl/x/xm540-w270/#communication-circuit
+        urlkr: /dxl/x/xm540-w270/#통신-회로
       - title: "Drawings"
         titlekr: "도면"
         url: /dxl/x/xm540-w270/#drawings
@@ -9341,6 +9372,10 @@ protocol1:
 
 #Protocol 2.0 sidebar
 protocol2:
+  - title: "Introduction"
+    titlekr: "개요"
+    url: /dxl/protocol2/#introduction
+    urlkr: /dxl/protocol2/#개요
   - title: "Instruction Packet"
     titlekr: "Instruction Packet"
     url: /dxl/protocol2/#instruction-packet
@@ -9431,9 +9466,9 @@ ollo_bugkit:
     urlkr: /edu/ollo/bugkit/#시작하기
     children:
       - title: "Part List"
-        titlekr: "부품 리스트"
+        titlekr: "부품 목록"
         url: /edu/ollo/bugkit/#part-list
-        urlkr: /edu/ollo/bugkit/#부품-리스트
+        urlkr: /edu/ollo/bugkit/#부품-목록
       - title: "How to Play"
         titlekr: "버그 작동하기"
         url: /edu/ollo/bugkit/#how-to-play
@@ -9496,9 +9531,9 @@ ollo_explorer:
     url: /edu/ollo/explorer/#introduction
     urlkr: /edu/ollo/explorer/#개요
   - title: "Part List"
-    titlekr: "부품 리스트"
+    titlekr: "부품 목록"
     url: /edu/ollo/explorer/#part-list
-    urlkr: /edu/ollo/explorer/#부품-리스트
+    urlkr: /edu/ollo/explorer/#부품-목록
   - title: "Quick Start"
     titlekr: "작동하기"
     url: /edu/ollo/explorer/#quick-start
@@ -9524,9 +9559,9 @@ ollo_inventor:
   url: /edu/ollo/inventor/#introduction
   urlkr: /edu/ollo/inventor/#개요
 - title: "Part List"
-  titlekr: "부품 리스트"
+  titlekr: "부품 목록"
   url: /edu/ollo/inventor/#part-list
-  urlkr: /edu/ollo/inventor/#부품-리스트
+  urlkr: /edu/ollo/inventor/#부품-목록
 - title: "Quick Start"
   titlekr: "작동하기"
   url: /edu/ollo/inventor/#quick-start
@@ -9545,8 +9580,8 @@ ollo_inventor:
 ollo-4:
 - titlekr: "개요"
   urlkr: /edu/ollo/ollo-4/#개요
-- titlekr: "부품 리스트"
-  urlkr: /edu/ollo/ollo-4/#부품-리스트
+- titlekr: "부품 목록"
+  urlkr: /edu/ollo/ollo-4/#부품-목록
 - titlekr: "작동하기"
   urlkr: /edu/ollo/ollo-4/#작동하기
   children:
@@ -9569,8 +9604,8 @@ dream:
 dream1-1:
 - titlekr: "개요"
   urlkr: /edu/dream/dream1-1/#개요
-- titlekr: "부품 리스트"
-  urlkr: /edu/dream/dream1-1/#부품-리스트
+- titlekr: "부품 목록"
+  urlkr: /edu/dream/dream1-1/#부품-목록
 
 #DreamI Level2 sidebar
 dream1-2:
@@ -9579,9 +9614,9 @@ dream1-2:
   url: /edu/dream/dream1-2/#introduction
   urlkr: /edu/dream/dream1-2/#개요
 - title: "Part List"
-  titlekr: "부품 리스트"
+  titlekr: "부품 목록"
   url: /edu/dream/dream1-2/#part-list
-  urlkr: /edu/dream/dream1-2/#부품-리스트
+  urlkr: /edu/dream/dream1-2/#부품-목록
 - title: "Quick Start"
   titlekr: "작동하기"
   url: /edu/dream/dream1-2/#quick-start
@@ -9607,9 +9642,9 @@ dream1-3:
   url: /edu/dream/dream1-3/#introduction
   urlkr: /edu/dream/dream1-3/#개요
 - title: "Part List"
-  titlekr: "부품 리스트"
+  titlekr: "부품 목록"
   url: /edu/dream/dream1-3/#part-list
-  urlkr: /edu/dream/dream1-3/#부품-리스트
+  urlkr: /edu/dream/dream1-3/#부품-목록
 - title: "Examples"
   titlekr: "교안예제"
   url: /edu/dream/dream1-3/#examples
@@ -9622,9 +9657,9 @@ dream1-4:
   url: /edu/dream/dream1-4/#introduction
   urlkr: /edu/dream/dream1-4/#개요
 - title: "Part List"
-  titlekr: "부품 리스트"
+  titlekr: "부품 목록"
   url: /edu/dream/dream1-4/#part-list
-  urlkr: /edu/dream/dream1-4/#부품-리스트
+  urlkr: /edu/dream/dream1-4/#부품-목록
 - title: "Examples"
   titlekr: "교안예제"
   url: /edu/dream/dream1-4/#examples
@@ -9661,9 +9696,9 @@ dream2-1:
   url: /edu/dream/dream2-1/#introduction
   urlkr: /edu/dream/dream2-1/#개요
 - title: "Part List"
-  titlekr: "부품 리스트"
+  titlekr: "부품 목록"
   url: /edu/dream/dream2-1/#part-list
-  urlkr: /edu/dream/dream2-1/#부품-리스트
+  urlkr: /edu/dream/dream2-1/#부품-목록
 
 dream2-2:
 - title: "Introduction"
@@ -9671,9 +9706,9 @@ dream2-2:
   url: /edu/dream/dream2-2/#introduction
   urlkr: /edu/dream/dream2-2/#개요
 - title: "Part List"
-  titlekr: "부품 리스트"
+  titlekr: "부품 목록"
   url: /edu/dream/dream2-2/#part-list
-  urlkr: /edu/dream/dream2-2/#부품-리스트
+  urlkr: /edu/dream/dream2-2/#부품-목록
 - title: "Quick Start"
   titlekr: "작동하기"
   url: /edu/dream/dream2-2/#quick-start
@@ -9707,9 +9742,9 @@ dream2-3:
   url: /edu/dream/dream2-3/#introduction
   urlkr: /edu/dream/dream2-3/#개요
 - title: "Part List"
-  titlekr: "부품 리스트"
+  titlekr: "부품 목록"
   url: /edu/dream/dream2-3/#part-list
-  urlkr: /edu/dream/dream2-3/#부품-리스트
+  urlkr: /edu/dream/dream2-3/#부품-목록
 - title: "Examples"
   titlekr: "교안예제"
   url: /edu/dream/dream2-3/#examples
@@ -9721,9 +9756,9 @@ dream2-4:
   url: /edu/dream/dream2-4/#introduction
   urlkr: /edu/dream/dream2-4/#개요
 - title: "Part List"
-  titlekr: "부품 리스트"
+  titlekr: "부품 목록"
   url: /edu/dream/dream2-4/#part-list
-  urlkr: /edu/dream/dream2-4/#부품-리스트
+  urlkr: /edu/dream/dream2-4/#부품-목록
 - title: "Examples"
   titlekr: "교안예제"
   url: /edu/dream/dream2-4/#examples
@@ -9735,9 +9770,9 @@ dream2-5:
   url: /edu/dream/dream2-5/#introduction
   urlkr: /edu/dream/dream2-5/#개요
 - title: "Part List"
-  titlekr: "부품 리스트"
+  titlekr: "부품 목록"
   url: /edu/dream/dream2-5/#part-list
-  urlkr: /edu/dream/dream2-5/#부품-리스트
+  urlkr: /edu/dream/dream2-5/#부품-목록
 - title: "Examples"
   titlekr: "교안예제"
   url: /edu/dream/dream2-5/#examples
@@ -9761,8 +9796,8 @@ dream2-schoolset:
 smart1-1:
 - titlekr: "개요"
   urlkr: /edu/smart/smart1-1/#개요
-- titlekr: "부품 리스트"
-  urlkr: /edu/smart/smart1-1/#부품-리스트
+- titlekr: "부품 목록"
+  urlkr: /edu/smart/smart1-1/#부품-목록
 - titlekr: "작동하기"
   urlkr: /edu/smart/smart1-1/#작동하기
 - titlekr: "교안예제"
@@ -9771,8 +9806,8 @@ smart1-1:
 smart1-2:
 - titlekr: "개요"
   urlkr: /edu/smart/smart1-2/#개요
-- titlekr: "부품 리스트"
-  urlkr: /edu/smart/smart1-2/#부품-리스트
+- titlekr: "부품 목록"
+  urlkr: /edu/smart/smart1-2/#부품-목록
 - titlekr: "작동하기"
   urlkr: /edu/smart/smart1-2/#작동하기
 - titlekr: "교안예제"
@@ -9781,8 +9816,8 @@ smart1-2:
 smart1-3:
 - titlekr: "개요"
   urlkr: /edu/smart/smart1-3/#개요
-- titlekr: "부품 리스트"
-  urlkr: /edu/smart/smart1-3/#부품-리스트
+- titlekr: "부품 목록"
+  urlkr: /edu/smart/smart1-3/#부품-목록
 - titlekr: "작동하기"
   urlkr: /edu/smart/smart1-3/#작동하기
 - titlekr: "교안예제"
@@ -9791,8 +9826,8 @@ smart1-3:
 smart2-1:
 - titlekr: "개요"
   urlkr: /edu/smart/smart2-1/#개요
-- titlekr: "부품 리스트"
-  urlkr: /edu/smart/smart2-1/#부품-리스트
+- titlekr: "부품 목록"
+  urlkr: /edu/smart/smart2-1/#부품-목록
 - titlekr: "작동하기"
   urlkr: /edu/smart/smart2-1/#작동하기
 - titlekr: "교안예제"
@@ -9801,8 +9836,8 @@ smart2-1:
 smart2-2:
 - titlekr: "개요"
   urlkr: /edu/smart/smart2-2/#개요
-- titlekr: "부품 리스트"
-  urlkr: /edu/smart/smart2-2/#부품-리스트
+- titlekr: "부품 목록"
+  urlkr: /edu/smart/smart2-2/#부품-목록
 - titlekr: "작동하기"
   urlkr: /edu/smart/smart2-2/#작동하기
 - titlekr: "교안예제"
@@ -9811,8 +9846,8 @@ smart2-2:
 smart3-1:
 - titlekr: "개요"
   urlkr: /edu/smart/smart3-1/#개요
-- titlekr: "부품 리스트"
-  urlkr: /edu/smart/smart3-1/#부품-리스트
+- titlekr: "부품 목록"
+  urlkr: /edu/smart/smart3-1/#부품-목록
 - titlekr: "작동하기"
   urlkr: /edu/smart/smart3-1/#작동하기
 - titlekr: "교안예제"
@@ -9855,8 +9890,8 @@ iot:
 iot-1:
   - titlekr: "개요"
     urlkr: /edu/iot/iot-1/#개요
-  - titlekr: "부품 리스트"
-    urlkr: /edu/iot/iot-1/#부품-리스트
+  - titlekr: "부품 목록"
+    urlkr: /edu/iot/iot-1/#부품-목록
   - titlekr: "작동하기"
     urlkr: /edu/iot/iot-1/#작동하기
   - titlekr: "교안예제"
@@ -9865,8 +9900,8 @@ iot-1:
 iot-2:
   - titlekr: "개요"
     urlkr: /edu/iot/iot-2/#개요
-  - titlekr: "부품 리스트"
-    urlkr: /edu/iot/iot-2/#부품-리스트
+  - titlekr: "부품 목록"
+    urlkr: /edu/iot/iot-2/#부품-목록
   - titlekr: "작동하기"
     urlkr: /edu/iot/iot-2/#작동하기
   - titlekr: "교안예제"
@@ -9897,9 +9932,9 @@ bioloid-beginner:
     urlkr: /edu/bioloid/beginner/#시작하기
     children:
     - title: "Part List"
-      titlekr: "부품 리스트"
+      titlekr: "부품 목록"
       url: /edu/bioloid/beginner/#part-list
-      urlkr: /edu/bioloid/beginner/#부품-리스트
+      urlkr: /edu/bioloid/beginner/#부품-목록
     - title: "Preparation"
       titlekr: "로보플러스 사용준비"
       url: /edu/bioloid/beginner/#preparation
@@ -10000,9 +10035,9 @@ bioloid-comprehensive:
     urlkr: /edu/bioloid/comprehensive/#시작하기
     children:
     - title: "Part List"
-      titlekr: "부품 리스트"
+      titlekr: "부품 목록"
       url: /edu/bioloid/comprehensive/#part-list
-      urlkr: /edu/bioloid/comprehensive/#부품-리스트
+      urlkr: /edu/bioloid/comprehensive/#부품-목록
     - title: "Preparation"
       titlekr: "로보플러스 사용준비"
       url: /edu/bioloid/comprehensive/#preparation
@@ -10116,13 +10151,13 @@ bioloid-stem:
     urlkr: /edu/bioloid/stem/#시작하기
     children:
     - title: "Standard Part List"
-      titlekr: "Level 1 부품 리스트"
+      titlekr: "Level 1 부품 목록"
       url: /edu/bioloid/stem/#standard-part-list
-      urlkr: /edu/bioloid/stem/#level-1-부품-리스트
+      urlkr: /edu/bioloid/stem/#level-1-부품-목록
     - title: "Expansion Part List"
-      titlekr: "Level 2 부품 리스트"
+      titlekr: "Level 2 부품 목록"
       url: /edu/bioloid/stem/#expansion-part-list
-      urlkr: /edu/bioloid/stem/#level-2-부품-리스트
+      urlkr: /edu/bioloid/stem/#level-2-부품-목록
     - title: "Operating"
       titlekr: "작동하기"
       url: /edu/bioloid/stem/#operating
@@ -10168,10 +10203,10 @@ stem-academy:
   - titlekr: "시작하기"
     urlkr: /edu/bioloid/stem_academy/#시작하기
     children:
-    - titlekr: "Level 1 부품 리스트"
-      urlkr: /edu/bioloid/stem_academy/#level-1-부품-리스트
-    - titlekr: "Level 2 부품 리스트"
-      urlkr: /edu/bioloid/stem_academy/#level-2-부품-리스트
+    - titlekr: "Level 1 부품 목록"
+      urlkr: /edu/bioloid/stem_academy/#level-1-부품-목록
+    - titlekr: "Level 2 부품 목록"
+      urlkr: /edu/bioloid/stem_academy/#level-2-부품-목록
     - titlekr: "작동하기"
       urlkr: /edu/bioloid/stem_academy/#작동하기
     - titlekr: "충전하기"
@@ -10200,9 +10235,9 @@ bioloid-premium:
     urlkr: /edu/bioloid/premium/#시작하기
     children:
     - title: "Part List"
-      titlekr: "부품 리스트"
+      titlekr: "부품 목록"
       url: /edu/bioloid/premium/#part-list
-      urlkr: /edu/bioloid/premium/#부품-리스트
+      urlkr: /edu/bioloid/premium/#부품-목록
     - title: "Operating"
       titlekr: "작동하기"
       url: /edu/bioloid/premium/#operating
@@ -10307,9 +10342,9 @@ bioloid-gp:
     urlkr: /edu/bioloid/gp/#시작하기
     children:
     - title: "Part List"
-      titlekr: "부품 리스트"
+      titlekr: "부품 목록"
       url: /edu/bioloid/gp/#part-list
-      urlkr: /edu/bioloid/gp/#부품-리스트
+      urlkr: /edu/bioloid/gp/#부품-목록
     - title: "Operating"
       titlekr: "작동하기"
       url: /edu/bioloid/gp/#operating
@@ -10377,9 +10412,9 @@ mini:
     urlkr: /edu/mini/#시작하기
     children:
     - title: "Part List"
-      titlekr: "부품 리스트"
+      titlekr: "부품 목록"
       url: /edu/mini/#part-list
-      urlkr: /edu/mini/#부품-리스트
+      urlkr: /edu/mini/#부품-목록
     - title: "Preparation"
       titlekr: "준비하기"
       url: /edu/mini/#preparation
@@ -10825,6 +10860,12 @@ op3:
     - title: "How to execute GUI program"
       url: /platform/op3/tutorials/#how-to-execute-gui-program
       children:
+      - title: "Run the program"
+        url: /platform/op3/tutorials/#run-the-program
+      - title: "How to take the initial pose of ROBOTIS-OP3"
+        url: /platform/op3/tutorials/#how-to-take-the-initial-pose
+      - title: "How to set the Module"
+        url: /platform/op3/tutorials/#how-to-set-the-module
       - title: "How to use walking tuner"
         url: /platform/op3/tutorials/#how-to-use-walking-tuner
       - title: "How to play the motions"
@@ -11809,14 +11850,10 @@ turtlebot3:
     children:
     - title: "Installation"
       url: /platform/turtlebot3/machine_learning/#installation
-    - title: "Step. 1 (No Obstacle)"
-      url: /platform/turtlebot3/machine_learning/#step-1-no-obstacle
-    - title: "Step. 2 (Static Obstacle)"
-      url: /platform/turtlebot3/machine_learning/#step-2-static-obstacle
-    - title: "Step. 3 (Moving Obstacle)"
-      url: /platform/turtlebot3/machine_learning/#step-3-moving-obstacle
-    - title: "Step.  (Combination Obstacle)"
-      url: /platform/turtlebot3/machine_learning/#step-4-combination-obstacle
+    - title: "Set parameters"
+      url: /platform/turtlebot3/machine_learning/#set-parameters
+    - title: "Run Machine Learning"
+      url: /platform/turtlebot3/machine_learning/#run-machine-learning
   - title: "Locomotion"
     url: /platform/turtlebot3/locomotion/#locomotion
     children:
@@ -14906,7 +14943,7 @@ embedded_c_cm530:
         urlkr: /software/embedded_sdk/embedded_c_cm530/#winarm-설치
       - title: "Install Eclipse"
         titlekr: "Eclipse 설치"
-        url: /software/embedded_sdk/embedded_c_cm530/#install-atmel-studio
+        url: /software/embedded_sdk/embedded_c_cm530/#install-eclipse
         urlkr: /software/embedded_sdk/embedded_c_cm530/#eclipse-설치
       - title: "Verify Installation"
         titlekr: "설치 성공여부 확인"
@@ -15392,10 +15429,10 @@ opencm904:
         titlekr: "JTAG/SWD Pin"
         url: /parts/controller/opencm904/#jtagswd-4-pin
         urlkr: /parts/controller/opencm904/#jtagswd-4-pin
-      - title: "5 Pin Port"
-        titlekr: "5핀 포트"
-        url: /parts/controller/opencm904/#5-pin-port
-        urlkr: /parts/controller/opencm904/#5핀-포트
+      - title: "ROBOTIS 5-Pin Port"
+        titlekr: "로보티즈 5핀 포트"
+        url: /parts/controller/opencm904/#robotis-5-pin-port
+        urlkr: /parts/controller/opencm904/#로보티즈-5핀-포트
       - title: "I/O Header"
         titlekr: "입출력 IO헤더"
         url: /parts/controller/opencm904/#io-header
@@ -15544,8 +15581,8 @@ opencr10:
       url: /parts/controller/opencr10/#dip-switch
     - title: "GPIO"
       url: /parts/controller/opencr10/#gpio
-    - title: "OLLO Connector"
-      url: /parts/controller/opencr10/#ollo-connector
+    - title: "ROBOTIS 5-pin Connector"
+      url: /parts/controller/opencr10/#robotis-5-pin-connector
     - title: "Push Switch"
       url: /parts/controller/opencr10/#push-switch
     - title: "External Interrupt"
