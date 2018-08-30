@@ -1,0 +1,810 @@
+{
+	"0": {
+		"product": "AX-12A",
+		"header1": "Specifications",
+		"header2": "",
+		"header3": "",
+		"content": "Item Specifications Baud Rate bps Mbps Resolution Running Degree Endless Turn Weight AX AX AX Dimensions Gear Ratio Stall Torque No Load Speed Operating Temperature Input Voltage Recommended Command Signal Digital Packet Protocol Type Half Duplex Asynchronous Serial Communication No Parity Physical Connection TTL Level Multi Drop Bus ID Feedback Position Temperature Load Input Voltage Material Engineering Plastic NOTE Stall torque maximum instantaneous static torque Stable motions possible robots designed loads stall torque lass notice danger DANGER Never place items containing water flammables solvents near product Never place fingers arms toes other body parts near product during operation Cut power off product emits strange odors smoke Keep product out reach children Check power polarity wiring lass notice warning CAUTION Do operate product temperature below degrees above degrees Do insert sharp blades nor pins during product operation lass notice danger ATTENTION Do disassemble modify product Do drop apply strong shock product ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12a/#specifications"
+	},
+	"1": {
+		"product": "AX-12A",
+		"header1": "Control Table",
+		"header2": "",
+		"header3": "",
+		"content": "Control Table structure data implemented DYNAMIXEL Users read specific Data get status DYNAMIXEL Read Instruction Packets modify Data well control DYNAMIXEL WRITE Instruction Packets ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12a/#control-table"
+	},
+	"2": {
+		"product": "AX-12A",
+		"header1": "Control Table",
+		"header2": "Control Table, Data, Address",
+		"header3": "",
+		"content": "Control Table structure consists multiple Data fields store status DYNAMIXEL control DYNAMIXEL Users check current status DYNAMIXEL reading specific Data Control Table Read Instruction Packets WRITE Instruction Packets enable users control DYNAMIXEL changing specific Data Control Table Address unique value accessing specific Data Control Table Instruction Packets order read write data users designate specific Address Instruction Packet refer Protocol details Instruction Packets NOTE Twos complement applied negative value information refer Twos complement Wikipedia ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12a/#control-table-data-address"
+	},
+	"3": {
+		"product": "AX-12A",
+		"header1": "Control Table",
+		"header2": "Control Table, Data, Address",
+		"header3": "Area (EEPROM, RAM)",
+		"content": "Control Table divided Areas Data RAM Area reset initial values DYNAMIXEL turned Volatile other hand modified data EEPROM Area keeps their values DYNAMIXEL turned off Non Volatile Data EEPROM Area changed modified value Torque Enable Dynamixel idle state ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12a/#area-eeprom-ram"
+	},
+	"4": {
+		"product": "AX-12A",
+		"header1": "Control Table",
+		"header2": "Control Table, Data, Address",
+		"header3": "Size",
+		"content": "Size data bytes depend their usage check size data updating data Instruction Packet bytes data saved according Little Endian ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12a/#size"
+	},
+	"5": {
+		"product": "AX-12A",
+		"header1": "Control Table",
+		"header2": "Control Table, Data, Address",
+		"header3": "Access",
+		"content": "Control Table two different access properties property stands read write access permission stands read access permission Data read property cannot changed WRITE Instruction Read property generally used measuring monitoring purpose read write property used controlling DYNAMIXEL ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12a/#access"
+	},
+	"6": {
+		"product": "AX-12A",
+		"header1": "Control Table",
+		"header2": "Control Table, Data, Address",
+		"header3": "Initial Value",
+		"content": "data Control Table restored initial values DYNAMIXEL turned Default values EEPROM area initial values DYNAMIXEL factory default settings values EEPROM area modified user modified values restored initial values DYNAMIXEL turned Initial Values RAM area restored DYNAMIXEL turned ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12a/#initial-value"
+	},
+	"7": {
+		"product": "AX-12A",
+		"header1": "Control Table",
+		"header2": "Control Table of EEPROM Area",
+		"header3": "",
+		"content": "Address Size Byte Data Name Description Access Initial Value Model Number Model Number Firmware Version Firmware Version ID DYNAMIXEL ID Baud Rate Communication Speed Return Delay Time Response Delay Time CW Angle Limit Clockwise Angle Limit CCW Angle Limit Counter Clockwise Angle Limit Temperature Limit Maximum Internal Temperature Limit Min Voltage Limit Minimum Input Voltage Limit Max Voltage Limit Maximum Input Voltage Limit Max Torque Maximun Torque Status Return Level Select Types Status Return Alarm LED LED Alarm Shutdown Shutdown Error Information ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12a/#control-table-of-eeprom-area"
+	},
+	"8": {
+		"product": "AX-12A",
+		"header1": "Control Table",
+		"header2": "Control Table of RAM Area",
+		"header3": "",
+		"content": "Address Size Byte Data Name Description Access Initial Value Torque Enable Motor Torque Off LED Status LED Off CW Compliance Margin CW Compliance Margin CCW Compliance Margin CCW Compliance Margin CW Compliance Slope CW Compliance Slope CCW Compliance Slope CCW Compliance Slope Goal Position Target Position Moving Speed Moving Speed Torque Limit Torque Limit Goal Torque ADD amp Present Position Present Position Present Speed Present Speed Present Load Present Load Present Voltage Present Voltage Present Temperature Present Temperature Registered Instruction registered Moving Movement Status Lock Locking EEPROM Punch Minimum Current Threshold ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12a/#control-table-of-ram-area"
+	},
+	"9": {
+		"product": "AX-12A",
+		"header1": "Control Table",
+		"header2": "Control Table Description",
+		"header3": "",
+		"content": "",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12a/#control-table-description"
+	},
+	"10": {
+		"product": "AX-12A",
+		"header1": "Control Table",
+		"header2": "Control Table Description",
+		"header3": "Model Number (0)",
+		"content": "address stores model number DYNAMIXEL ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12a/#model-number-0"
+	},
+	"11": {
+		"product": "AX-12A",
+		"header1": "Control Table",
+		"header2": "Control Table Description",
+		"header3": "Firmware Version (2)",
+		"content": "address stores firmware version DYNAMIXEL ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12a/#firmware-version-2"
+	},
+	"12": {
+		"product": "AX-12A",
+		"header1": "Control Table",
+		"header2": "Control Table Description",
+		"header3": "ID (3)",
+		"content": "ID unique value network identify DYNAMIXEL Instruction Packet values used ID occupied broadcast ID Broadcast ID send Instruction Packet connected DYNAMIXELs simultaneously NOTE avoid using identical ID multiple DYNAMIXELs face communication failure able detect Dynamixels identical ID ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12a/#id-3"
+	},
+	"13": {
+		"product": "AX-12A",
+		"header1": "Control Table",
+		"header2": "Control Table Description",
+		"header3": "Baud Rate (4)",
+		"content": "Baud Rate determines serial communication speed between controller DYNAMIXELs Value Baud Rate bps Margin Error Default NOTE Less baud rate error margin affect UART communication ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12a/#baud-rate-4"
+	},
+	"14": {
+		"product": "AX-12A",
+		"header1": "Control Table",
+		"header2": "Control Table Description",
+		"header3": "Return Delay Time (5)",
+		"content": "After DYNAMIXEL receives Instruction Packet delays transmitting Status Packet Return Delay Time instance Return Delay Time set Status Packet returned sec Instruction Packet received Unit Value Range Description sec Default value sec Maximum sec ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12a/#return-delay-time-5"
+	},
+	"15": {
+		"product": "AX-12A",
+		"header1": "Control Table",
+		"header2": "Control Table Description",
+		"header3": "CW/CCW Angle Limit(6, 8)",
+		"content": "angle limit allows motion restrained range unit value Goal Position Address CW Angle Limit minimum value Goal Position Address CCW Angle Limit maximum value Goal Position Address following two modes set pursuant value CW CCW Operation Type CW CCW Wheel Mode Joint Mode neither wheel mode used wheel type operation robots motors robots spin infinitely joint mode used multi joints robot robots controlled specific angles ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12a/#cwccw-angle-limit6-8"
+	},
+	"16": {
+		"product": "AX-12A",
+		"header1": "Control Table",
+		"header2": "Control Table Description",
+		"header3": "Temperature Limit (11)",
+		"content": "Unit Value Range CAUTION Do set temperature lower higher default value When temperature alarm shutdown occurs wait minutes cool temperature re use Keep using product temperature cause severe damage ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12a/#temperature-limit-11"
+	},
+	"17": {
+		"product": "AX-12A",
+		"header1": "Control Table",
+		"header2": "Control Table Description",
+		"header3": "Min/Max Voltage Limit (12, 13)",
+		"content": "operation range voltage Unit Value Range Description example value voltage Present Voltage out range Voltage Range Error Bit Bit0 Status Packet returned Alarm triggered set addresses ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12a/#minmax-voltage-limit-12-13"
+	},
+	"18": {
+		"product": "AX-12A",
+		"header1": "Control Table",
+		"header2": "Control Table Description",
+		"header3": "Max Torque (14)",
+		"content": "torque value maximum output used unit ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12a/#max-torque-14"
+	},
+	"19": {
+		"product": "AX-12A",
+		"header1": "Control Table",
+		"header2": "Control Table Description",
+		"header3": "Status Return Level (16)",
+		"content": "value decides return Status Packet Dynamixel receives Instruction Packet Value Responding Instructions Description PING Instruction Status Packet returned Instructions PING Instruction READ Instruction Status Packet returned READ Instruction Instructions Status Packet returned Instructions NOTE ID Instruction Packet set Broad Cast ID Status Packet returned READ WRITE Instructions regardless Status Return Level details refer Status Packet section Protocol Protocol ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12a/#status-return-level-16"
+	},
+	"20": {
+		"product": "AX-12A",
+		"header1": "Control Table",
+		"header2": "Control Table Description",
+		"header3": "Alarm LED(17), Shutdown(18)",
+		"content": "Dynamixel protect itself detecting errors occur during operation errors set table below Bit Item Description Bit Bit Instruction Error When undefined Instruction transmitted Action command delivered without reg write command Bit Overload Error When current load cannot controlled set maximum torque Bit CheckSum Error When Checksum transmitted Instruction Packet invalid Bit Range Error When command given beyond range usage Bit OverHeating Error When internal temperature out range operating temperature set Control Table Bit Angle Limit Error When Goal Position written value between CW Angle Limit CCW Angle Limit Bit Input Voltage Error When applied voltage out range operating voltage set Control Table possible make duplicate set function bit run logic OR binary set Input Voltage Error Overheating Error detected errors occur case Alarm LED LED blinks case Alarm Shutdown motor output becomes resetting value Torque Limit ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12a/#alarm-led17-shutdown18"
+	},
+	"21": {
+		"product": "AX-12A",
+		"header1": "Control Table",
+		"header2": "Control Table Description",
+		"header3": "Torque Enable (24)",
+		"content": "Value Description Turn off torque Free run state Turn torque lock EEPROM area ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12a/#torque-enable-24"
+	},
+	"22": {
+		"product": "AX-12A",
+		"header1": "Control Table",
+		"header2": "Control Table Description",
+		"header3": "LED (25)",
+		"content": "Turn turn off LED Dynamixel Bit Description Default Turn OFF LED Turn ON LED lass notice NOTE LED indicates present status device Status LED Representation Booting LED flickers once Factory Reset LED flickers times Alarm LED flickers Slave Mode MX LED flickers times Boot Mode LED ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12a/#led-25"
+	},
+	"23": {
+		"product": "AX-12A",
+		"header1": "Control Table",
+		"header2": "Control Table Description",
+		"header3": "Compliance Margin (26, 27)",
+		"content": "exists direction CW CCW means error between goal position present position range value unit Goal Position Address greater value difference occurs ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12a/#compliance-margin-26-27"
+	},
+	"24": {
+		"product": "AX-12A",
+		"header1": "Control Table",
+		"header2": "Control Table Description",
+		"header3": "Compliance Slope (28, 29)",
+		"content": "exists direction CW CCW sets level Torque near goal position Compliance Slope set steps higher value flexibility obtained Data representative value actually used value value set used internally representative value Step Data Value Data Representative Value Compliance set control flexibility motor following diagram shows relationship between output torque position motor ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12a/#compliance-slope-28-29"
+	},
+	"25": {
+		"product": "AX-12A",
+		"header1": "Control Table",
+		"header2": "Control Table Description",
+		"header3": "Goal Position (30)",
+		"content": "position value destination available unit Goal Position out range Angle Limit Error Bit Bit Status Packet returned Alarm triggered set Alarm LED Shutdown NOTE set Wheel Mode Goal Position value used ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12a/#goal-position-30"
+	},
+	"26": {
+		"product": "AX-12A",
+		"header1": "Control Table",
+		"header2": "Control Table Description",
+		"header3": "Moving Speed (32)",
+		"content": "moving speed Goal Position Join Mode NOTE check maximum rpm Dynamixel motor cannot exceed maximum rpm higher Moving Speed value Wheel Mode ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12a/#moving-speed-32"
+	},
+	"27": {
+		"product": "AX-12A",
+		"header1": "Control Table",
+		"header2": "Control Table Description",
+		"header3": "Torque Limit (34)",
+		"content": "value maximum torque limit available unit example value means maximum torque used power turned value Max Torque Address used initial value NOTE function Alarm Shutdown triggered motor loses torque because value becomes Once error conditions resolved value changed value other motor operated again ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12a/#torque-limit-34"
+	},
+	"28": {
+		"product": "AX-12A",
+		"header1": "Control Table",
+		"header2": "Control Table Description",
+		"header3": "Present Position (36)",
+		"content": "present position value Dynamixel CAUTION set Wheel Mode value cannot used measure moving distance rotation frequency ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12a/#present-position-36"
+	},
+	"29": {
+		"product": "AX-12A",
+		"header1": "Control Table",
+		"header2": "Control Table Description",
+		"header3": "Present Speed (38)",
+		"content": "present moving speed used value rage means motor rotates CCW direction value rage means motor rotates CW direction bit becomes direction bit control direction equal unit value varies depending operation mode Joint Mode unit example set means motor moving CCW direction rate Wheel Mode unit example set means torque controlled maximum torque CCW direction ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12a/#present-speed-38"
+	},
+	"30": {
+		"product": "AX-12A",
+		"header1": "Control Table",
+		"header2": "Control Table Description",
+		"header3": "Present Load (40)",
+		"content": "means currently applied load range value unit value means load works CCW direction value means load works CW direction bit becomes direction bit control direction equal example value means load detected direction CCW maximum torque Bit Value Load Direction Data Load Ratio NOTE CCW Load Load Direction CW Load Load Direction NOTE Present load inferred value based internal output value measured value using torque sensor Therefore inaccurate measuring weight torque recommended use predicting direction size force being applied joint ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12a/#present-load-40"
+	},
+	"31": {
+		"product": "AX-12A",
+		"header1": "Control Table",
+		"header2": "Control Table Description",
+		"header3": "Present Voltage (42)",
+		"content": "size present voltage supplied value times larger actual voltage example supplied data value Present Voltage value out range Voltage Range Error Bit Bit0 Status Packet returned Alarm triggered set address set Bit address ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12a/#present-voltage-42"
+	},
+	"32": {
+		"product": "AX-12A",
+		"header1": "Control Table",
+		"header2": "Control Table Description",
+		"header3": "Present Temperature (43)",
+		"content": "internal temperature Dynamixel Celsius ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12a/#present-temperature-43"
+	},
+	"33": {
+		"product": "AX-12A",
+		"header1": "Control Table",
+		"header2": "Control Table Description",
+		"header3": "Registered Instruction (44)",
+		"content": "Value Description REG WRITE instruction received REG WRITE instruction received NOTE ACTION instruction executed value changed ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12a/#registered-instruction-44"
+	},
+	"34": {
+		"product": "AX-12A",
+		"header1": "Control Table",
+		"header2": "Control Table Description",
+		"header3": "Moving (46)",
+		"content": "Value Description Goal position command execution completed Goal position command execution progress ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12a/#moving-46"
+	},
+	"35": {
+		"product": "AX-12A",
+		"header1": "Control Table",
+		"header2": "Control Table Description",
+		"header3": "Lock (47)",
+		"content": "Value Description EEPROM area modified EEPROM area cannot modified CAUTION Lock set power turned off then turned again change ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12a/#lock-47"
+	},
+	"36": {
+		"product": "AX-12A",
+		"header1": "Control Table",
+		"header2": "Control Table Description",
+		"header3": "Punch (48)",
+		"content": "Minimum current drive motor value ranges ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12a/#punch-48"
+	},
+	"37": {
+		"product": "AX-12A",
+		"header1": "How to Assemble",
+		"header2": "",
+		"header3": "",
+		"content": "",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12a/#how-to-assemble"
+	},
+	"38": {
+		"product": "AX-12A",
+		"header1": "Maintenance",
+		"header2": "",
+		"header3": "",
+		"content": "",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12a/#maintenance"
+	},
+	"39": {
+		"product": "AX-12A",
+		"header1": "Maintenance",
+		"header2": "Horn and Bearing Replacement",
+		"header3": "",
+		"content": "horn installed front wheel gear serration DYNAMIXEL whereas bearing set installed back ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12a/#horn-and-bearing-replacement"
+	},
+	"40": {
+		"product": "AX-12A",
+		"header1": "Maintenance",
+		"header2": "Horn and Bearing Replacement",
+		"header3": "Installing the Horn",
+		"content": "Place thrust horn washer actuator inserting horn carefully align horn wheel gear serration aligning dots Once alignment properly done gently push center horn actuator Make sure horn washer place tighten bolt ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12a/#horn-and-bearing-replacement"
+	},
+	"41": {
+		"product": "AX-12A",
+		"header1": "Maintenance",
+		"header2": "Horn and Bearing Replacement",
+		"header3": "Installing the Bearing Set",
+		"content": "need remove bearing set previous actuator reinstall new actuator bearing set also purchased separately As bearing set rotating freely therefore alignment required assembling DYNAMIXEL ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12a/#horn-and-bearing-replacement"
+	},
+	"42": {
+		"product": "AX-12A",
+		"header1": "Reference",
+		"header2": "",
+		"header3": "",
+		"content": "NOTE Compatibility Guide ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12a/#reference"
+	},
+	"43": {
+		"product": "AX-12A",
+		"header1": "Reference",
+		"header2": "Connector Information",
+		"header3": "",
+		"content": "Item TTL Pinout GND VDD DATA Diagram Housing MOLEX PCB Header MOLEX Crimp Terminal MOLEX Wire Gauge AWG ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12a/#connector-information"
+	},
+	"44": {
+		"product": "AX-12A",
+		"header1": "Reference",
+		"header2": "Drawings",
+		"header3": "",
+		"content": "",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12a/#drawings"
+	},
+	"45": {
+		"product": "AX-12A",
+		"header1": "Reference",
+		"header2": "Communication Circuit",
+		"header3": "",
+		"content": "control Dynamixel actuators main controller needs convert UART signals half duplex type recommended circuit diagram shown below ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12a/#communication-circuit"
+	},
+	"46": {
+		"product": "AX-12A",
+		"header1": "Reference",
+		"header2": "Communication Circuit",
+		"header3": "TTL Communication",
+		"content": "",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12a/#communication-circuit"
+	},
+	"47": {
+		"product": "AX-12A",
+		"header1": "Reference",
+		"header2": "Communication Circuit",
+		"header3": "RS-485 Communication",
+		"content": "power Dynamixel supplied Pin1 Pin2 lass page footer archive footer ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12a/#communication-circuit"
+	},
+	"48": {
+		"product": "AX-12W",
+		"header1": "Specifications",
+		"header2": "",
+		"header3": "",
+		"content": "Item Specifications Baud Rate bps Mbps Resolution Running Degree Endless Turn Weight 9g Dimensions Gear Ratio No Load Speed Wheel Mode Joint Mode Operating Temperature Input Voltage Recommended Command Signal Digital Packet Protocol Type Half Duplex Asynchronous Serial Communication No Parity Physical Connection TTL Level Multi Drop Bus ID Feedback Position Temperature Load Input Voltage Material Engineering Plastic lass notice danger DANGER Never place items containing water flammables solvents near product Never place fingers arms toes other body parts near product during operation Cut power off product emits strange odors smoke Keep product out reach children Check power polarity wiring lass notice warning CAUTION Do operate product temperature below degrees above degrees Do insert sharp blades nor pins during product operation lass notice danger ATTENTION Do disassemble modify product Do drop apply strong shock product ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12w/#specifications"
+	},
+	"49": {
+		"product": "AX-12W",
+		"header1": "Control Table",
+		"header2": "",
+		"header3": "",
+		"content": "Control Table structure data implemented DYNAMIXEL Users read specific Data get status DYNAMIXEL Read Instruction Packets modify Data well control DYNAMIXEL WRITE Instruction Packets ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12w/#control-table"
+	},
+	"50": {
+		"product": "AX-12W",
+		"header1": "Control Table",
+		"header2": "Control Table, Data, Address",
+		"header3": "",
+		"content": "Control Table structure consists multiple Data fields store status DYNAMIXEL control DYNAMIXEL Users check current status DYNAMIXEL reading specific Data Control Table Read Instruction Packets WRITE Instruction Packets enable users control DYNAMIXEL changing specific Data Control Table Address unique value accessing specific Data Control Table Instruction Packets order read write data users designate specific Address Instruction Packet refer Protocol details Instruction Packets NOTE Twos complement applied negative value information refer Twos complement Wikipedia ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12w/#control-table-data-address"
+	},
+	"51": {
+		"product": "AX-12W",
+		"header1": "Control Table",
+		"header2": "Control Table, Data, Address",
+		"header3": "Area (EEPROM, RAM)",
+		"content": "Control Table divided Areas Data RAM Area reset initial values DYNAMIXEL turned Volatile other hand modified data EEPROM Area keeps their values DYNAMIXEL turned off Non Volatile Data EEPROM Area changed value Torque Enable cleared ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12w/#area-eeprom-ram"
+	},
+	"52": {
+		"product": "AX-12W",
+		"header1": "Control Table",
+		"header2": "Control Table, Data, Address",
+		"header3": "Size",
+		"content": "Size data varies bytes depend their usage check size data updating data Instruction Packet ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12w/#size"
+	},
+	"53": {
+		"product": "AX-12W",
+		"header1": "Control Table",
+		"header2": "Control Table, Data, Address",
+		"header3": "Access",
+		"content": "Control Table two different access properties property stands read write access permission stands read access permission Data read property cannot changed WRITE Instruction Read property generally used measuring monitoring purpose read write property used controlling DYNAMIXEL ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12w/#access"
+	},
+	"54": {
+		"product": "AX-12W",
+		"header1": "Control Table",
+		"header2": "Control Table, Data, Address",
+		"header3": "Initial Value",
+		"content": "data Control Table restored initial values DYNAMIXEL turned Default values EEPROM area initial values DYNAMIXEL factory default settings values EEPROM area modified user modified values restored initial values DYNAMIXEL turned Initial Values RAM area restored DYNAMIXEL turned ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12w/#initial-value"
+	},
+	"55": {
+		"product": "AX-12W",
+		"header1": "Control Table",
+		"header2": "Control Table of EEPROM Area",
+		"header3": "",
+		"content": "Address Size Byte Data Name Description Access Initial Value Model Number Model Number Firmware Version Firmware Version ID DYNAMIXEL ID Baud Rate Communication Speed Return Delay Time Response Delay Time CW Angle Limit Clockwise Angle Limit CCW Angle Limit Counter Clockwise Angle Limit Temperature Limit Maximum Internal Temperature Limit Min Voltage Limit Minimum Input Voltage Limit Max Voltage Limit Maximum Input Voltage Limit Max Torque Maximun Torque Status Return Level Select Types Status Return Alarm LED LED Alarm Shutdown Shutdown Error Information ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12w/#control-table-of-eeprom-area"
+	},
+	"56": {
+		"product": "AX-12W",
+		"header1": "Control Table",
+		"header2": "Control Table of RAM Area",
+		"header3": "",
+		"content": "Address Size Byte Data Name Description Access Initial Value Torque Enable Motor Torque Off LED Status LED Off CW Compliance Margin CW Compliance Margin CCW Compliance Margin CCW Compliance Margin CW Compliance Slope CW Compliance Slope CCW Compliance Slope CCW Compliance Slope Goal Position Target Position Moving Speed Moving Speed Torque Limit Torque Limit Goal Torque ADD amp Present Position Present Position Present Speed Present Speed Present Load Present Load Present Voltage Present Voltage Present Temperature Present Temperature Registered Instruction registered Moving Movement Status Lock Locking EEPROM Punch Minimum Current Threshold ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12w/#control-table-of-ram-area"
+	},
+	"57": {
+		"product": "AX-12W",
+		"header1": "Control Table",
+		"header2": "Control Table Description",
+		"header3": "",
+		"content": "",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12w/#control-table-description"
+	},
+	"58": {
+		"product": "AX-12W",
+		"header1": "Control Table",
+		"header2": "Control Table Description",
+		"header3": "Model Number (0)",
+		"content": "address stores model number DYNAMIXEL ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12w/#model-number-0"
+	},
+	"59": {
+		"product": "AX-12W",
+		"header1": "Control Table",
+		"header2": "Control Table Description",
+		"header3": "Firmware Version (2)",
+		"content": "address stores firmware version DYNAMIXEL ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12w/#firmware-version-2"
+	},
+	"60": {
+		"product": "AX-12W",
+		"header1": "Control Table",
+		"header2": "Control Table Description",
+		"header3": "ID (3)",
+		"content": "ID unique value network identify DYNAMIXEL Instruction Packet values used ID occupied broadcast ID Broadcast ID send Instruction Packet connected DYNAMIXELs simultaneously NOTE avoid using identical ID multiple DYNAMIXELs face communication failure able detect Dynamixels identical ID ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12w/#id-3"
+	},
+	"61": {
+		"product": "AX-12W",
+		"header1": "Control Table",
+		"header2": "Control Table Description",
+		"header3": "Baud Rate (4)",
+		"content": "Baud Rate determines serial communication speed between controller DYNAMIXELs Value Baud Rate Margin Error Default NOTE Less baud rate error margin affect UART communication ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12w/#baud-rate-4"
+	},
+	"62": {
+		"product": "AX-12W",
+		"header1": "Control Table",
+		"header2": "Control Table Description",
+		"header3": "Return Delay Time (5)",
+		"content": "After DYNAMIXEL receives Instruction Packet delays transmitting Status Packet Return Delay Time instance Return Delay Time set Status Packet returned sec Instruction Packet received Unit Value Range Description sec Default value sec Maximum sec ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12w/#return-delay-time-5"
+	},
+	"63": {
+		"product": "AX-12W",
+		"header1": "Control Table",
+		"header2": "Control Table Description",
+		"header3": "CW/CCW Angle Limit(6, 8)",
+		"content": "angle limit allows motion restrained range unit value Goal Position Address CW Angle Limit minimum value Goal Position Address CCW Angle Limit maximum value Goal Position Address following two modes set pursuant value CW CCW Operation Type CW CCW Wheel Mode Joint Mode neither wheel mode used wheel type operation robots motors robots spin infinitely joint mode used multi joints robot robots controlled specific angles ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12w/#cwccw-angle-limit6-8"
+	},
+	"64": {
+		"product": "AX-12W",
+		"header1": "Control Table",
+		"header2": "Control Table Description",
+		"header3": "Temperature Limit (11)",
+		"content": "Unit Value Range CAUTION Do set temperature lower higher default value When temperature alarm shutdown occurs wait minutes cool temperature re use Keep using product temperature cause severe damage ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12w/#temperature-limit-11"
+	},
+	"65": {
+		"product": "AX-12W",
+		"header1": "Control Table",
+		"header2": "Control Table Description",
+		"header3": "Min/Max Voltage Limit (12, 13)",
+		"content": "operation range voltage Unit Value Range Description example value voltage Present Voltage out range Voltage Range Error Bit Bit0 Status Packet returned Alarm triggered set addresses ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12w/#minmax-voltage-limit-12-13"
+	},
+	"66": {
+		"product": "AX-12W",
+		"header1": "Control Table",
+		"header2": "Control Table Description",
+		"header3": "Max Torque (14)",
+		"content": "torque value maximum output used unit ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12w/#max-torque-14"
+	},
+	"67": {
+		"product": "AX-12W",
+		"header1": "Control Table",
+		"header2": "Control Table Description",
+		"header3": "Status Return Level (16)",
+		"content": "value decides return Status Packet Dynamixel receives Instruction Packet Value Responding Instructions Description PING Instruction Status Packet returned Instructions PING Instruction READ Instruction Status Packet returned READ Instruction Instructions Status Packet returned Instructions NOTE ID Instruction Packet set Broad Cast ID Status Packet returned READ WRITE Instructions regardless Status Return Level details refer Status Packet section Protocol Protocol ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12w/#status-return-level-16"
+	},
+	"68": {
+		"product": "AX-12W",
+		"header1": "Control Table",
+		"header2": "Control Table Description",
+		"header3": "Alarm LED(17), Shutdown(18)",
+		"content": "Dynamixel protect itself detecting errors occur during operation errors set table below Bit Item Description Bit Bit Instruction Error When undefined Instruction transmitted Action command delivered without reg write command Bit Overload Error When current load cannot controlled set maximum torque Bit CheckSum Error When Checksum transmitted Instruction Packet invalid Bit Range Error When command given beyond range usage Bit OverHeating Error When internal temperature out range operating temperature set Control Table Bit Angle Limit Error When Goal Position written value between CW Angle Limit CCW Angle Limit Bit Input Voltage Error When applied voltage out range operating voltage set Control Table possible make duplicate set function bit run logic OR binary set Input Voltage Error Overheating Error detected errors occur case Alarm LED LED blinks case Alarm Shutdown motor output becomes resetting value Torque Limit ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12w/#alarm-led17-shutdown18"
+	},
+	"69": {
+		"product": "AX-12W",
+		"header1": "Control Table",
+		"header2": "Control Table Description",
+		"header3": "Torque Enable (24)",
+		"content": "Value Description Turn off torque Free run state Turn torque lock EEPROM area ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12w/#torque-enable-24"
+	},
+	"70": {
+		"product": "AX-12W",
+		"header1": "Control Table",
+		"header2": "Control Table Description",
+		"header3": "LED (25)",
+		"content": "Turn turn off LED Dynamixel Bit Description Default Turn OFF LED Turn ON LED lass notice NOTE LED indicates present status device Status LED Representation Booting LED flickers once Factory Reset LED flickers times Alarm LED flickers Slave Mode MX LED flickers times Boot Mode LED ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12w/#led-25"
+	},
+	"71": {
+		"product": "AX-12W",
+		"header1": "Control Table",
+		"header2": "Control Table Description",
+		"header3": "Compliance Margin (26, 27)",
+		"content": "exists direction CW CCW means error between goal position present position range value unit Goal Position Address greater value difference occurs ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12w/#compliance-margin-26-27"
+	},
+	"72": {
+		"product": "AX-12W",
+		"header1": "Control Table",
+		"header2": "Control Table Description",
+		"header3": "Compliance Slope (28, 29)",
+		"content": "exists direction CW CCW sets level Torque near goal position Compliance Slope set steps higher value flexibility obtained Data representative value actually used value value set used internally representative value Step Data Value Data Representative Value Compliance set control flexibility motor following diagram shows relationship between output torque position motor ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12w/#compliance-slope-28-29"
+	},
+	"73": {
+		"product": "AX-12W",
+		"header1": "Control Table",
+		"header2": "Control Table Description",
+		"header3": "Goal Position (30)",
+		"content": "position value destination available unit Goal Position out range Angle Limit Error Bit Bit Status Packet returned Alarm triggered set Alarm LED Shutdown NOTE set Wheel Mode Goal Position value used ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12w/#goal-position-30"
+	},
+	"74": {
+		"product": "AX-12W",
+		"header1": "Control Table",
+		"header2": "Control Table Description",
+		"header3": "Moving Speed (32)",
+		"content": "moving speed Goal Position Join Mode NOTE check maximum rpm Dynamixel motor cannot exceed maximum rpm higher Moving Speed value Wheel Mode ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12w/#moving-speed-32"
+	},
+	"75": {
+		"product": "AX-12W",
+		"header1": "Control Table",
+		"header2": "Control Table Description",
+		"header3": "Torque Limit (34)",
+		"content": "value maximum torque limit available unit example value means maximum torque used power turned value Max Torque Address used initial value NOTE function Alarm Shutdown triggered motor loses torque because value becomes Once error conditions resolved value changed value other motor operated again ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12w/#torque-limit-34"
+	},
+	"76": {
+		"product": "AX-12W",
+		"header1": "Control Table",
+		"header2": "Control Table Description",
+		"header3": "Present Position (36)",
+		"content": "present position value Dynamixel CAUTION set Wheel Mode value cannot used measure moving distance rotation frequency ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12w/#present-position-36"
+	},
+	"77": {
+		"product": "AX-12W",
+		"header1": "Control Table",
+		"header2": "Control Table Description",
+		"header3": "Present Speed (38)",
+		"content": "present moving speed used value rage means motor rotates CCW direction value rage means motor rotates CW direction bit becomes direction bit control direction equal unit value varies depending operation mode Joint Mode unit example set means motor moving CCW direction rate Wheel Mode unit example set means torque controlled maximum torque CCW direction ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12w/#present-speed-38"
+	},
+	"78": {
+		"product": "AX-12W",
+		"header1": "Control Table",
+		"header2": "Control Table Description",
+		"header3": "Present Load (40)",
+		"content": "means currently applied load range value unit value means load works CCW direction value means load works CW direction bit becomes direction bit control direction equal example value means load detected direction CCW maximum torque Bit Value Load Direction Data Load Ratio NOTE CCW Load Load Direction CW Load Load Direction NOTE Present load inferred value based internal output value measured value using torque sensor Therefore inaccurate measuring weight torque recommended use predicting direction size force being applied joint ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12w/#present-load-40"
+	},
+	"79": {
+		"product": "AX-12W",
+		"header1": "Control Table",
+		"header2": "Control Table Description",
+		"header3": "Present Voltage (42)",
+		"content": "size present voltage supplied value times larger actual voltage example supplied data value Present Voltage value out range Voltage Range Error Bit Bit0 Status Packet returned Alarm triggered set address set Bit address ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12w/#present-voltage-42"
+	},
+	"80": {
+		"product": "AX-12W",
+		"header1": "Control Table",
+		"header2": "Control Table Description",
+		"header3": "Present Temperature (43)",
+		"content": "internal temperature Dynamixel Celsius ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12w/#present-temperature-43"
+	},
+	"81": {
+		"product": "AX-12W",
+		"header1": "Control Table",
+		"header2": "Control Table Description",
+		"header3": "Registered Instruction(44)",
+		"content": "Value Description REG WRITE instruction received REG WRITE instruction received NOTE ACTION instruction executed value changed ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12w/#registered-instruction44"
+	},
+	"82": {
+		"product": "AX-12W",
+		"header1": "Control Table",
+		"header2": "Control Table Description",
+		"header3": "Moving(46)",
+		"content": "Value Description Goal position command execution completed Goal position command execution progress ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12w/#moving46"
+	},
+	"83": {
+		"product": "AX-12W",
+		"header1": "Control Table",
+		"header2": "Control Table Description",
+		"header3": "Lock(47)",
+		"content": "Value Description EEPROM area modified EEPROM area cannot modified CAUTION Lock set power turned off then turned again change ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12w/#lock47"
+	},
+	"84": {
+		"product": "AX-12W",
+		"header1": "Control Table",
+		"header2": "Control Table Description",
+		"header3": "Punch(48)",
+		"content": "Minimum current drive motor value ranges ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12w/#punch48"
+	},
+	"85": {
+		"product": "AX-12W",
+		"header1": "How to Assemble",
+		"header2": "",
+		"header3": "",
+		"content": "",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12w/#how-to-assemble"
+	},
+	"86": {
+		"product": "AX-12W",
+		"header1": "Maintenance",
+		"header2": "",
+		"header3": "",
+		"content": "",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12w/#maintenance"
+	},
+	"87": {
+		"product": "AX-12W",
+		"header1": "Maintenance",
+		"header2": "Horn and Bearing Replacement",
+		"header3": "",
+		"content": "horn installed front wheel gear serration DYNAMIXEL whereas bearing set installed back ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12w/#horn-and-bearing-replacement"
+	},
+	"88": {
+		"product": "AX-12W",
+		"header1": "Maintenance",
+		"header2": "Horn and Bearing Replacement",
+		"header3": "Installing the Horn",
+		"content": "Place thrust horn washer actuator inserting horn carefully align horn wheel gear serration aligning dots Once alignment properly done gently push center horn actuator Make sure horn washer place tighten bolt ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12w/#horn-and-bearing-replacement"
+	},
+	"89": {
+		"product": "AX-12W",
+		"header1": "Maintenance",
+		"header2": "Horn and Bearing Replacement",
+		"header3": "Installing the Bearing Set",
+		"content": "need remove bearing set previous actuator reinstall new actuator bearing set also purchased separately As bearing set rotating freely therefore alignment required assembling DYNAMIXEL ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12w/#horn-and-bearing-replacement"
+	},
+	"90": {
+		"product": "AX-12W",
+		"header1": "Reference",
+		"header2": "",
+		"header3": "",
+		"content": "NOTE Compatibility Guide ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12w/#reference"
+	},
+	"91": {
+		"product": "AX-12W",
+		"header1": "Reference",
+		"header2": "Connector Information",
+		"header3": "",
+		"content": "Item TTL Pinout GND VDD DATA Diagram Housing MOLEX PCB Header MOLEX Crimp Terminal MOLEX Wire Gauge AWG ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12w/#connector-information"
+	},
+	"92": {
+		"product": "AX-12W",
+		"header1": "Reference",
+		"header2": "Drawings",
+		"header3": "",
+		"content": "",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12w/#drawings"
+	},
+	"93": {
+		"product": "AX-12W",
+		"header1": "Reference",
+		"header2": "Communication Circuit",
+		"header3": "",
+		"content": "control Dynamixel actuators main controller needs convert UART signals half duplex type recommended circuit diagram shown below ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12w/#communication-circuit"
+	},
+	"94": {
+		"product": "AX-12W",
+		"header1": "Reference",
+		"header2": "Communication Circuit",
+		"header3": "TTL Communication",
+		"content": "",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12w/#communication-circuit"
+	},
+	"95": {
+		"product": "AX-12W",
+		"header1": "Reference",
+		"header2": "Communication Circuit",
+		"header3": "RS-485 Communication",
+		"content": "power Dynamixel supplied Pin1 Pin2 lass page footer archive footer ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-12w/#communication-circuit"
+	},
+	"96": {
+		"product": "AX-18A",
+		"header1": "Specifications",
+		"header2": "",
+		"header3": "",
+		"content": "Item Specifications Baud Rate bps Mbps Resolution Running Degree Endless Turn Weight AX 9g AX Dimensions Gear Ratio Stall Torque No Load Speed Operating Temperature Input Voltage Recommended Command Signal Digital Packet Protocol Type Half Duplex Asynchronous Serial Communication No Parity Physical Connection TTL Level Multi Drop Bus ID Feedback Position Temperature Load Input Voltage Material Engineering Plastic NOTE Stall torque maximum instantaneous static torque Stable motions possible robots designed loads stall torque lass notice danger DANGER Never place items containing water flammables solvents near product Never place fingers arms toes other body parts near product during operation Cut power off product emits strange odors smoke Keep product out reach children Check power polarity wiring lass notice warning CAUTION Do operate product temperature below degrees above degrees Do insert sharp blades nor pins during product operation lass notice danger ATTENTION Do disassemble modify product Do drop apply strong shock product ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-18a/#specifications"
+	},
+	"97": {
+		"product": "AX-18A",
+		"header1": "Control Table",
+		"header2": "",
+		"header3": "",
+		"content": "Control Table structure data implemented DYNAMIXEL Users read specific Data get status DYNAMIXEL Read Instruction Packets modify Data well control DYNAMIXEL WRITE Instruction Packets ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-18a/#control-table"
+	},
+	"98": {
+		"product": "AX-18A",
+		"header1": "Control Table",
+		"header2": "Control Table, Data, Address",
+		"header3": "",
+		"content": "Control Table structure consists multiple Data fields store status DYNAMIXEL control DYNAMIXEL Users check current status DYNAMIXEL reading specific Data Control Table Read Instruction Packets WRITE Instruction Packets enable users control DYNAMIXEL changing specific Data Control Table Address unique value accessing specific Data Control Table Instruction Packets order read write data users designate specific Address Instruction Packet refer Protocol details Instruction Packets NOTE Twos complement applied negative value information refer Twos complement Wikipedia ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-18a/#control-table-data-address"
+	},
+	"99": {
+		"product": "AX-18A",
+		"header1": "Control Table",
+		"header2": "Control Table, Data, Address",
+		"header3": "Area (EEPROM, RAM)",
+		"content": "Control Table divided Areas Data RAM Area reset initial values DYNAMIXEL turned Volatile other hand modified data EEPROM Area keeps their values DYNAMIXEL turned off Non Volatile Data EEPROM Area changed value Torque Enable cleared ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-18a/#area-eeprom-ram"
+	},
+	"100": {
+		"product": "AX-18A",
+		"header1": "Control Table",
+		"header2": "Control Table, Data, Address",
+		"header3": "Size",
+		"content": "Size data varies bytes depend their usage check size data updating data Instruction Packet ",
+		"url": "http://localhost:4000/docs/en/dxl/ax/ax-18a/#size"
+	}
+}
