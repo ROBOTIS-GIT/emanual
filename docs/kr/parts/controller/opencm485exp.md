@@ -41,6 +41,7 @@ sidebar:
 9. **Power Switch** : 보드와 다이나믹셀 전원을 on/off하는 스위치 입니다. 단, USB 연결시 보드 전원은 on/off되지 않습니다.
 10. **JP1 Jumper** : OpenCM 485 EXP 보드에  입력된 전압을 OpenCM9.04에도 전압을 입력할지 결정하는 점퍼 입니다.
 
+{% include kr/dxl/pinout_warning.md %}
 
 # [OpenCM9.04와 연결하기](#opencm904와-연결하기)
 

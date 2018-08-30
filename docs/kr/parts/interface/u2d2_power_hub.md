@@ -5,7 +5,7 @@ ref: u2d2_power_hub
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/kr/parts/controller/u2d2_power_hub/
+permalink: /docs/kr/parts/interface/u2d2_power_hub/
 sidebar:
   title: U2D2 전원 허브
   nav: "u2d2_power_hub"
@@ -14,7 +14,7 @@ sidebar:
 # [개요](#개요)
 U2D2와 결합하여, 여러 종류의 외부 전원을 연결하여 다이나믹셀에 안정적으로 전력을 공급해주는 역할을 한다.
 
-![](/assets/images/parts/controller/u2d2_power_hub/product_image.png)![](/assets/images/parts/controller/u2d2_power_hub/product_without_u2d2.png)
+![](/assets/images/parts/interface/u2d2_power_hub/product_image.png)![](/assets/images/parts/interface/u2d2_power_hub/product_without_u2d2.png)
 
 
 # [제품 사양](#제품-사양)
@@ -26,7 +26,7 @@ U2D2와 결합하여, 여러 종류의 외부 전원을 연결하여 다이나�
 
 # [각 부 명칭](#각-부-명칭)
 
-![](/assets/images/parts/controller/u2d2_power_hub/layout.png)
+![](/assets/images/parts/interface/u2d2_power_hub/layout.png)
 
 |파트명|설명|
 |:---|:---|

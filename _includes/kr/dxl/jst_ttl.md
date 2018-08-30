@@ -7,5 +7,7 @@
 |PCB 헤더|![](/assets/images/dxl/jst_b3beha.png)<br />[JST B3B-EH-A]|
 |Wire Gauge|21 AWG|
 
+{% include kr/dxl/pinout_warning.md %}
+
 [JST EHR-03]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
 [JST B3B-EH-A]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf

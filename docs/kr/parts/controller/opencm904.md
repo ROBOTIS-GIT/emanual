@@ -189,6 +189,8 @@ LBS-04 리튬 이온 배터리 2개를 직렬 연결하는 커넥터 입니다. 
 ### [다이나믹셀 TTL 소켓](#다이나믹셀-ttl-소켓)
 3핀 케이블(Dynamixel TTL Bus)을 사용하는 다이나믹셀을 Daisy chain으로 연결하기 위한 포트 입니다.
 
+{% include kr/dxl/pinout_warning.md %}
+
 ### [통신포트](#통신포트)
 BT-210, BT-110A, ZIG-110A, LN-101 등과 같은 4핀 케이블을 연결해서 외부 장치와 유/무선 통신을 수행합니다. OpenCM9.04의 4핀 통신 포트는 Serial2(USART2)를 사용합니다.
 

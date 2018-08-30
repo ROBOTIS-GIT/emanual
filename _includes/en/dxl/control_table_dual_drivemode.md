@@ -20,9 +20,7 @@ Master/Slave configuration (Dual joint) is a method to simultaneously control tw
 |Normal Mode Sync Cable|Slave Dynamixel is controlled by the Master Dynamixel’s PWM signal. Slave Dynamixel rotates to the same direction of the Master Dynamixel.|
 |Reverse Mode Sync Cable|Slave Dynamixel is controlled by the inverted PWM signal of the Master Dynamixel. Slave Dynamixel rotates to the opposite direction of the Master Dynamixel.|
 
-**NOTE** : In a dual master-slave configuration position information from the slave is ignored and the position of the dual configuration is based on the master in PWM control.  
-When master and slave are not physically connected there could be a slight difference on the driven load.  
-Use the frame shown in the below image to achieve dual configuration.
+**NOTE** : In a dual master-slave configuration position information from the slave is ignored and the position of the dual configuration is based on the master in PWM control. When master and slave are not physically connected there could be a slight difference on the driven load. Use the frame shown in the below image to achieve dual configuration.  
+![](/assets/images/dxl/ex/ex-106+_fr08-h110_fr08-d101.png)  
+Please refer to [Connector Information](#connector-information) for cable assembly.  
 {: .notice}
-
-![](/assets/images/dxl/ex/ex-106+_fr08-h110_fr08-d101.png)

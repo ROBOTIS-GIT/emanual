@@ -8,6 +8,8 @@
 |Crimp Terminal|[MOLEX 08-70-1039]|[MOLEX 39-00-0038]|[MOLEX 50079-8100]|
 |Wire Gauge|21 AWG|20 AWG|21 AWG|
 
+{% include en/dxl/pinout_warning.md %}
+
 [MOLEX 50-37-5043]: http://www.molex.com/molex/products/datasheet.jsp?part=active/0050375043_CRIMP_HOUSINGS.xml
 [MOLEX 22-03-5045]: http://www.molex.com/molex/products/datasheet.jsp?part=active/0022035045_PCB_HEADERS.xml
 [MOLEX 39-01-2020]: http://www.molex.com/molex/products/datasheet.jsp?part=active/0039012020_CRIMP_HOUSINGS.xml

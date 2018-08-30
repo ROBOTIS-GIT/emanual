@@ -8,6 +8,8 @@
 |Crimp Terminal|[MOLEX 50212-8000]|
 |Wire Gauge|24 AWG|
 
+{% include en/dxl/pinout_warning.md %}
+
 [MOLEX 51065-0300]: https://www.molex.com/molex/products/datasheet.jsp?part=active/0510650300_CRIMP_HOUSINGS.xml&channel=Product
 [MOLEX 53253-0370]: https://www.molex.com/molex/products/datasheet.jsp?part=active/0532530370_PCB_HEADERS.xml
 [MOLEX 50212-8000]: https://www.molex.com/molex/products/datasheet.jsp?part=active/0502128000_CRIMP_TERMINALS.xml

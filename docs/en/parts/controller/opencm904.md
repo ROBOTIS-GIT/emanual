@@ -184,6 +184,8 @@ Connects two LBS-04 Lithium-ion battery.
 ### [Dynamixel TTL 3 PIN](#dynamixel-ttl-3-pin)
 Port for daisy chaining Dynamixels that use 3-pin cables (Dynamixel TTL Bus).
 
+{% include en/dxl/pinout_warning.md %}
+
 ### [Communication Port](#communication-port)
 Used from wired/wireless communication using peripheral devices (i.e. BT-210, BT-110A, ZIG-110A, LN-101, etc). OpenCM9.04’s 4-pin communication port uses Serial2(USART2).
 
