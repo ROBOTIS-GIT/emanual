@@ -46,6 +46,8 @@ The development environment for OpenCR1.0 is wide open from Arduino IDE and Scra
 
 ![](/assets/images/parts/controller/opencr10/opencr_pinout.png)
 
+{% include en/dxl/pinout_warning.md %}
+
 ## [Arduino Connector](#arduino-connector)
 OpenCR includes a connector that is compatible with Arduino Uno pinmap.  
 The pins 0 to 21 are the same pin as the Arduino Uno, and thereafter they are mapped to the pins added to OpenCR.

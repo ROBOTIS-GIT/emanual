@@ -8,8 +8,7 @@
 |Crimp 터미널|[JST SHE-001T-P0.6]|[JST SHE-001T-P0.6]|
 |Wire Gauge|21 AWG|21 AWG|
 
-**주의**: 커넥터 제조사의 PIN 순서와 상이할 수 있으니 반드시 PIN 순서를 확인하시기 바랍니다.
-{: .notice}
+{% include kr/dxl/pinout_warning.md %}
 
 [JST EHR-03]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
 [JST EHR-04]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf

@@ -7,8 +7,7 @@
 |PCB 헤더|![](/assets/images/dxl/jst_b3beha.png)<br />[JST B3B-EH-A]|
 |Wire Gauge|21 AWG|
 
-**주의**: 커넥터 제조사의 PIN 순서와 상이할 수 있으니 반드시 PIN 순서를 확인하시기 바랍니다.
-{: .notice}
+{% include kr/dxl/pinout_warning.md %}
 
 [JST EHR-03]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
 [JST B3B-EH-A]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf

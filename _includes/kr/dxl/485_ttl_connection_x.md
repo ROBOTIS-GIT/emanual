@@ -16,5 +16,4 @@
 - DIRECTION485 Level =High인 경우: TxD의 신호가 D+, D-로 출력
 - DIRECTION485 Level =Low인 경우: D+, D-의 신호가 RxD로 입력
 
-**주의**: 커넥터 제조사의 PIN 순서와 상이할 수 있으니 반드시 PIN 순서를 확인하시기 바랍니다.
-{: .notice}
+{% include kr/dxl/pinout_warning.md %}

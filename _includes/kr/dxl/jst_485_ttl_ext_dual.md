@@ -6,10 +6,9 @@
 | 하우징       | [JST EHR-03]                                               | [JST EHR-04]                                               | ![](/assets/images/dxl/molex_510210500.png)<br />[MOLEX 51021-0500] | ![](/assets/images/dxl/molex_510210300.png)<br />[51021-0300]       |
 | PCB 헤더     | ![](/assets/images/dxl/jst_b3beha.png)<br />[JST B3B-EH-A] | ![](/assets/images/dxl/jst_b4beha.png)<br />[JST B4B-EH-A] | ![](/assets/images/dxl/molex_530470510.png)<br />[MOLEX 53047-0510] | ![](/assets/images/dxl/molex_533980371.png)<br />[MOLEX 53398-0371] |
 | Crimp 터미널 | [JST SHE-001T-P0.6]                                        | [JST SHE-001T-P0.6]                                        | [MOLEX 50079-8100]                                                  | [MOLEX 50058-8000]                                                  |
-| Wire Gauge   | 21 AWG                                                     | 21 AWG                                                     | 21 AWG                                                              | 26 AWG                                                              |
+| Wire Gauge   | 21 AWG                                                     | 21 AWG                                                     | 26 AWG                                                              | 26 AWG                                                              |
 
-**주의**: 커넥터 제조사의 PIN 순서와 상이할 수 있으니 반드시 PIN 순서를 확인하시기 바랍니다.
-{: .notice}
+{% include kr/dxl/pinout_warning.md %}
 
 [JST EHR-03]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
 [JST EHR-04]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
