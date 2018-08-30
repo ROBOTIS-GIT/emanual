@@ -1,3 +1,3 @@
 
-**DANGER**: **Check the pinout!** The pinout of Dynamixel can differ from the pinout of connector manufacturer. 
-{: .notice--danger}
+**WARNING**: **Check the pinout!** The pinout of Dynamixel can differ from the pinout of connector manufacturer.
+{: .notice--warning}
