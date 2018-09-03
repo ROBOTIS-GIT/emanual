@@ -23,7 +23,7 @@ sidebar:
 
 # [시작하기](#시작하기)
 
-## [부품 리스트](#부품-리스트)
+## [부품 목록](#부품-목록)
 
 ![](/assets/images/edu/bioloid/beginnerkit_partlist_kr.png)
 
@@ -112,47 +112,47 @@ sidebar:
 
 [CM-5]: /docs/kr/parts/controller/cm-5/
 [AX-12A]: /docs/kr/dxl/ax/ax-12a/
-[AX-S1]: ???
+[AX-S1]: /docs/kr/parts/sensor/ax-s1/
 [태스크 코드 다운로드 방법]: #태스크-코드-다운로드
 [태스크 코드 다운로드]: #태스크-코드-다운로드
 [모션 파일 다운로드 방법]: #모션-파일-다운로드
 [모션 파일 다운로드]: #모션-파일-다운로드
-[로보플러스 태스크]: ???
-[로보플러스 매니저]: ???
-[프로그램 시작]: ???
-[무조건 반복]: ???
-[명령줄 만들기]: ???
-[로드]: ???
-[화면 출력]: ???
-[파라미터에 대한 설명]: ???
-[화면 출력 후 줄 바꿈]: ???
-[물체 감지 기준 값과 물체 감지 유무]: ???
-[BIO_CMP_ObstacleDetectionCarExam_KR.tsk]: ???
-[로봇 연결하기 참조]: ???  
-[BIO_CMP_WalkingDroidExam1_KR.mtn]: ???
-[BIO_CMP_WalkingDroid_KR.tsk]: ???
-[BIO_CMP_WalkingDroidExam_KR.tsk]: ???
-[BIO_CMP_WalkingDroidExam_KR.mtn]: ???
-[프로그램 시작의 자세한 사용법은 여기를 참고하세요.]: ???
-[프로그램 강제 종료의 자세한 사용법은 여기를 참고하세요.]: ???
-[구간 시작/끝의 자세한 사용법은 여기를 참고하세요.]: ???
-[주석의 자세한 사용법은 여기를 참고하세요.]: ???
-[계산의 자세한 사용법은 여기를 참고하세요.]: ???
-[로드의 자세한 사용법은 여기를 참고하세요.]: ???
-[레이블의 자세한 사용법은 여기를 참고하세요.]: ???
-[점프의 자세한 사용법은 여기를 참고하세요.]: ???
-[만약/아니면 만약/아니면의 자세한 사용법은 여기를 참고하세요.]: ???
-[무조건 반복의 자세한 사용법은 여기를 참고하세요.]: ???
-[조건 반복의 자세한 사용법은 여기를 참고하세요.]: ???
-[횟수만큼 반복의 자세한 사용법은 여기를 참고하세요.]: ???
-[반복 끝내기의 자세한 사용법은 여기를 참고하세요.]: ???
-[조건 대기의 자세한 사용법은 여기를 참고하세요.]: ???
-[콜백의 자세한 사용법은 여기를 참고하세요.]: ???
-[함수 만들기/함수 호출의 자세한 사용법은 여기를 참고하세요.]: ???
-[함수 강제 종료의 자세한 사용법은 여기를 참고하세요.]: ???
-[ZIG-100/110]: ???
-[ZIG-110 set]: ???
-[RC-100]: ???
-[제어기]: ???
-[RC-100 채널 바꾸는 방법 링크가기]: ???
-[Zig2Serial 채널 바꾸는 방법 링크가기]: ???
+[로보플러스 태스크]: /docs/kr/software/rplus1/task/getting_started/
+[로보플러스 매니저]: /docs/kr/software/rplus1/manager/
+[프로그램 시작]: /docs/kr/software/rplus1/task/programming_01/#프로그램-시작
+[무조건 반복]: /docs/kr/software/rplus1/task/programming_01/#무조건-반복
+[명령줄 만들기]: /docs/kr/software/rplus1/task/programming_01/#줄-삽입
+[로드]: /docs/kr/software/rplus1/task/programming_01/#로드
+[화면 출력]: /docs/kr/software/rplus1/task/programming_02/#화면출력줄바꿈
+[파라미터에 대한 설명]: /docs/kr/software/rplus1/task/programming_02/#제어기-파라미터
+[태스크 코드 다운로드 방법]: /docs/kr/software/rplus1/task/getting_started/#프로그램-다운로드
+[화면 출력 후 줄 바꿈]: /docs/kr/software/rplus1/task/programming_02/#화면출력줄바꿈
+[물체 감지 기준 값과 물체 감지 유무]: [물체 감지 기준 값과 물체 감지 유무]: /docs/kr/software/rplus1/task/programming_02/#물체감지
+[BIO_CMP_ObstacleDetectionCarExam_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_cmp_obstacledetectioncarexam_kr.tsk
+[로봇 연결하기 참조]: /docs/kr/software/rplus1/motion/#로봇-연결하기
+[BIO_CMP_WalkingDroidExam1_KR.mtn]: http://support.robotis.com/ko/baggage_files/bioloid/bio_cmp_walkingdroidexam1_kr.mtn
+[BIO_CMP_WalkingDroid_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_cmp_walkingdroid_kr.tsk
+[BIO_CMP_WalkingDroidExam_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_cmp_walkingdroidexam_kr.tsk
+[BIO_CMP_WalkingDroidExam_KR.mtn]: http://support.robotis.com/ko/baggage_files/bioloid/bio_cmp_walkingdroidexam_kr.mtn
+[프로그램 시작의 자세한 사용법은 여기를 참고하세요.]: /docs/kr/software/rplus1/task/programming_01/#프로그램-시작
+[프로그램 강제 종료의 자세한 사용법은 여기를 참고하세요.]: /docs/kr/software/rplus1/task/programming_01/#프로그램-강제종료
+[구간 시작/끝의 자세한 사용법은 여기를 참고하세요.]: /docs/kr/software/rplus1/task/programming_01/#구간-시작끝
+[계산의 자세한 사용법은 여기를 참고하세요.]: /docs/kr/software/rplus1/task/programming_01/#계산
+[로드의 자세한 사용법은 여기를 참고하세요.]: /docs/kr/software/rplus1/task/programming_01/#로드
+[주석의 자세한 사용법은 여기를 참고하세요.]: /docs/kr/software/rplus1/task/programming_01/#주석메모
+[레이블의 자세한 사용법은 여기를 참고하세요.]: /docs/kr/software/rplus1/task/programming_01/#레이블점프
+[점프의 자세한 사용법은 여기를 참고하세요.]: /docs/kr/software/rplus1/task/programming_01/#레이블점프
+[만약/아니면 만약/아니면의 자세한 사용법은 여기를 참고하세요.]: /docs/kr/software/rplus1/task/programming_01/#조건문
+[무조건 반복의 자세한 사용법은 여기를 참고하세요.]: /docs/kr/software/rplus1/task/programming_01/#무조건-반복
+[조건 반복의 자세한 사용법은 여기를 참고하세요.]: /docs/kr/software/rplus1/task/programming_01/#조건-반복
+[횟수만큼 반복의 자세한 사용법은 여기를 참고하세요.]: /docs/kr/software/rplus1/task/programming_01/#횟수-반복
+[반복 끝내기의 자세한 사용법은 여기를 참고하세요.]: /docs/kr/software/rplus1/task/programming_01/#반복-끝내기
+[조건 대기의 자세한 사용법은 여기를 참고하세요.]: /docs/kr/software/rplus1/task/programming_01/#조건-대기
+[콜백의 자세한 사용법은 여기를 참고하세요.]: /docs/kr/software/rplus1/task/programming_01/#콜백-함수
+[함수 만들기/함수 호출의 자세한 사용법은 여기를 참고하세요.]: /docs/kr/software/rplus1/task/programming_01/#함수-만들기호출
+[함수 강제 종료의 자세한 사용법은 여기를 참고하세요.]: /docs/kr/software/rplus1/task/programming_01/#함수-강제종료
+[ZIG-100/110]: /docs/kr/parts/communication/zig-110/
+[ZIG-110 set]: /docs/kr/parts/communication/zig-110/
+[RC-100]: /docs/kr/parts/communication/rc-100/
+[RC-100 채널 바꾸는 방법 링크가기]: /docs/kr/parts/communication/rc-100/#적외선-통신채널-설정-방법
+[Zig2Serial 채널 바꾸는 방법 링크가기]: /docs/kr/parts/communication/rc-100/#zig-100bt-100-모듈-장착-방법

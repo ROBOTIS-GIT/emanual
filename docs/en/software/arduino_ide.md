@@ -144,7 +144,7 @@ This step shows the port setting for the program uploads. The OpenCR/OpenCM9.04 
 
 Select Tools → Port → /dev/ttyACM0.
 
-`Warning` The last digit value **0** in the string **/dev/ttyACM0** might be different depend on the USB connection environment.
+**WARNING** : The last digit value **0** in the string **/dev/ttyACM0** might be different depend on the USB connection environment.
 {: .notice--warning}
 
 ![](/assets/images/platform/turtlebot3/preparation/ide6.png)
@@ -232,7 +232,7 @@ See if OpenCM9.04 Board is now on the list of Tools → Board. Click this to imp
 This step shows the port setting for the program uploads. The OpenCR/OpenCM9.04 should be connected to the PC via micro USB port.  
 Select Tools → Port → /dev/cu.usbmodem1411
 
-`Caution` The value of **/dev/cu.usbmodem1411** may be different depending on the environment connected to the PC.
+**CAUTION** : The value of **/dev/cu.usbmodem1411** may be different depending on the environment connected to the PC.
 {: .notice--warning}
 
 ![](/assets/images/parts/controller/opencr10/arduino_mac_06.png)
@@ -262,6 +262,12 @@ Please select the appropriate file URL based on your board.
 
 ```
 https://raw.githubusercontent.com/ROBOTIS-GIT/OpenCR/master/arduino/opencr_release/package_opencr_index.json
+```
+
+##### For OpenCM9.04
+
+```
+https://raw.githubusercontent.com/ROBOTIS-GIT/OpenCM9.04/master/arduino/opencm_release/package_opencm9.04_index.json
 ```
 
 #### Install the OpenCR package via Boards Manager
@@ -302,7 +308,7 @@ See if OpenCM9.04 Board is now on the list of Tools → Board. Click this to imp
 This step shows the port setting for the program uploads. The OpenCR/OpenCM9.04 should be connected to the PC via micro USB port.  
 Select Tools → Port → COM1.
 
-`Caution` The value of **COM1** may be different depending on the environment connected to the PC.
+**CAUTION** : The value of **COM1** may be different depending on the environment connected to the PC.
 {: .notice--warning}
 
 
@@ -326,7 +332,7 @@ Select Tools → Port → COM1.
 
 ## [Writing Bootloader(OpenCR)](#writing-bootloaderopencr)
 
-`Caution` Perform Bootloader update only when the OpenCR bootloader has been updated. The product already has the default bootloader.
+**CAUTION** : Perform Bootloader update only when the OpenCR bootloader has been updated. The product already has the default bootloader.
 {: .notice--warning}
 
 The STM32F7xx, which is used for the main MCU on the OpenCR board, supports DFU(Device Firmware Upgrade). This enables the built-in bootloader of the MCU by itself to boot the DFU protocol by using USB, primarily for the bootloader initialization, the recovery mode, and the bootloader update. The biggest advantage to let the users be able to use bootloader with USB but no other JTAG equipment. Write the firmware by using the DFU mode which is embedded in MCU without writing / debugging equipment, such as STLink.

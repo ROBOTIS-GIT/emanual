@@ -27,7 +27,7 @@ sidebar:
 
 # [시작하기](#시작하기)
 
-## [부품 리스트](#부품-리스트)
+## [부품 목록](#부품-목록)
 
 ![](/assets/images/edu/bioloid/gp_partlist_1_KR.png)
 
@@ -50,7 +50,7 @@ sidebar:
 - 팔과 다리의 각도를 확인합니다. 만약 그림과 다르다면, 아래 로봇 작동하기의 조립 확인 모드에서 로봇의 조립 상태를 확인하세요.
 - 케이블이 다리 바깥으로 연결되었는지 확인하세요.
 
-`Note` 로봇에 손상을 줄 정도로 심각하게 조립이 잘못 되었을 경우, 경고음이 울립니다. 이와 동시에 문제가 있는 모터의 힘이 풀리며 LED 가 켜집니다. 이는 로봇의 손상을 막기 위한 안전장치가 작동하는 것입니다.
+**참고**: 로봇에 손상을 줄 정도로 심각하게 조립이 잘못 되었을 경우, 경고음이 울립니다. 이와 동시에 문제가 있는 모터의 힘이 풀리며 LED 가 켜집니다. 이는 로봇의 손상을 막기 위한 안전장치가 작동하는 것입니다.
 {: .notice}
 
 ### 로봇 조종하기
@@ -61,7 +61,7 @@ sidebar:
 
     ![](/assets/images/edu/bioloid/bp_act_4_1_KR.jpg)
 
-`Note` 기본적으로 로봇은 리모컨(RC-100)으로 조종합니다. 모드 선택없이 리모컨으로 동작시키면 축구 모드가 자동선택 됩니다.
+**참고**: 기본적으로 로봇은 리모컨(RC-100)으로 조종합니다. 모드 선택없이 리모컨으로 동작시키면 축구 모드가 자동선택 됩니다.
 {: .notice}
 
 #### 리모컨(RC-100) 작동 방법
@@ -242,7 +242,7 @@ sidebar:
 ## [사용자 센서 제작](#사용자-센서-제작)
 CM-510, CM-530에서는 ADC포트와 OUT포트를 이용하여 간단히 제어가 가능한 사용자 센서를 제작할 수 있습니다.
 
-`주의` 만약 잘못된 회로를 구성하여 CM-510의 외부 포트에 사용자 장치를 연결하면 회로가 손상될 수 있으므로, 회로에 대한 지식을 먼저 습득하시기 바랍니다. {: .notice--warning}
+**주의**: 만약 잘못된 회로를 구성하여 CM-510의 외부 포트에 사용자 장치를 연결하면 회로가 손상될 수 있으므로, 회로에 대한 지식을 먼저 습득하시기 바랍니다. {: .notice--warning}
 
 ![](/assets/images/edu/bioloid/mcs_cm510_external_io_kr.png)
 
@@ -298,12 +298,12 @@ RoboPlus Task에서 사용자 장치 OUT 포트에 High신호를 주는 방법�
 
 [기본 프로그램]: #기본-프로그램
 [충전하기]: #충전하기
-[RC-100의 채널 변경 방법]:???
-[ZIG-110 세트]:???
+[RC-100의 채널 변경 방법]: /docs/kr/parts/communication/rc-100/#적외선-통신채널-설정-방법
+[ZIG-110 세트]: /docs/kr/parts/communication/zig-110/
 [BIO_GP_Humanoid_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_gp_humanoid_kr.tsk
 [BIO_GP_Humanoid_KR.mtn]: http://support.robotis.com/ko/baggage_files/bioloid/bio_gp_humanoid_kr.mtn
 [BIO_GP_Humanoid_ASM_KR.pdf]: http://www.robotis.com/download/doc/BIO_GP_Humanoid_ASM_KR.pdf
-[적외선센서]:???
-[접촉 센서]:???
-[절대 거리 센서]: ???
+[적외선센서]: /docs/kr/parts/sensor/irss-10/
+[접촉 센서]: /docs/kr/parts/sensor/ts-10/
+[절대 거리 센서]: /docs/kr/parts/sensor/dms-80/
 [5핀 케이블]: http://www.robotis.com/shop/list.php?ca_id=302090

@@ -80,7 +80,7 @@ sidebar:
   ![](/assets/images/sw/rplus2/scratch/untitled-1.jpg)
 
 2. Micro USB 케이블을 이용하는 경우 포트 목록에 자동으로 표시되지만 블루투스의 경우 아래 링크를 참고하여 장치를 추가해야 합니다.  
-  [블루투스 연결](http://support.robotis.com/ko/product/education/darwin-mini/darwin_mini_application.htm#Actuator_Address_00)
+  [블루투스 연결](/docs/kr/edu/mini/#로보티즈-미니-연결하기)
 
 3. 추가한 블루투스는 다음과 같이 목록에 “Bluetooth Serial Port” 로 표시됩니다.
 
@@ -90,7 +90,7 @@ sidebar:
 
 ## [Scratch2Offline 설치](#Scratch2Offline-설치)
 
- Scratch2Offline 다운로드 페이지 ([https://scratch.mit.edu/scratch2download/] ) 에서 OS 맞게 (windows) Adobe AIR 과 스크래치 오프라인 에디터를 다운받아 설치 합니다.
+ Scratch2Offline 다운로드 페이지 ([https://scratch.mit.edu/scratch2download/](https://scratch.mit.edu/scratch2download/)) 에서 OS 맞게 (windows) Adobe AIR 과 스크래치 오프라인 에디터를 다운받아 설치 합니다.
 
  Scratch2Offline 이 설치 되지 않은 상태에서 홈 화면의 “스크래치 새로 만들기” 또는 “스크래치 열기” 버튼을 클릭하면 다운로드 페이지로 이동합니다.
 
@@ -121,7 +121,9 @@ ROBOTIS Virtual COM Port 를 선택한 후 다음을 클릭하여 설치를 완�
 
 ![](/assets/images/sw/rplus2/scratch/r+scratch_13.jpg)
 
-수동으로 USB 드라이버를 설치하기 위한 방법은 [http://support.robotis.com/ko/software/sw_reference/cm150_usb_install.htm] 에서 확인 할 수 있습니다.
+수동으로 USB 드라이버를 설치하기 위한 방법은 [USB 드라이버 설치]{: .popup} 에서 확인 할 수 있습니다.
+
+[USB 드라이버 설치]: /docs/kr/faq/usb_driver_install/
 
 ## [추가 블록 직접 추가](#추가-블록-직접-추가)
 
@@ -129,12 +131,12 @@ ROBOTIS Virtual COM Port 를 선택한 후 다음을 클릭하여 설치를 완�
 
 스크래치를 직접 실행하거나 스크래치 메뉴의 새로 만들기를 클릭한 경우 아래와 같이 직접 블록을 추가해야 합니다.
 
-스크래치 사이트에서 다운로드 받은 예제 ( [https://scratch.mit.edu/starter_projects/] ) 또는 기존 작성했던 스크래치를 제어기와 연결하도록 사용하고자 할 때, 직접 추가할 수 있습니다.
+스크래치 사이트에서 다운로드 받은 예제 ([https://scratch.mit.edu/starter_projects/](https://scratch.mit.edu/starter_projects/)) 또는 기존 작성했던 스크래치를 제어기와 연결하도록 사용하고자 할 때, 직접 추가할 수 있습니다.
 
 1. 키보드의 “Shift” 키를 누른고 “파일” 메뉴를 클릭하면 그림과 같이 메뉴 제일 밑에 “import experimental HTTP extension” 메뉴가 표시됩니다. HTTP extension 메뉴를 클릭합니다.
 
     ![](/assets/images/sw/rplus2/scratch/r+scratch_14.jpg)
- 
+
 2. 도움말 보기를 클릭하여 나오는 폴더 경로를 복사하고
 
     ![](/assets/images/sw/rplus2/scratch/r+scratch_15.jpg)

@@ -97,7 +97,7 @@ If the robot has been incorrectly assembled to an extent where it may be severel
 
 ![](/assets/images/edu/bioloid/premium_operation_03.jpg)
 
-`Note` If you press a button on RC-100 before choosing a mode, the robot will enter remote control mode.
+**NOTE** : If you press a button on RC-100 before choosing a mode, the robot will enter remote control mode.
 {: .notice}
 
 #### Remote Control Mode
@@ -392,7 +392,7 @@ Let’s learn how to add 4 motions below using the RoboPlus Motion program.
 
 ### Make a motion to block a ball on the right
 
-1. Execute RoboPlus Motion, then connect it to the controller(Please refer to [Connect Robot](/docs/en/software/rplus1/motion/???))
+1. Execute RoboPlus Motion, then connect it to the controller(Please refer to [Connect Robot](/docs/en/software/rplus1/motion/#connect-to-robot))
 
   ![](/assets/images/edu/bioloid/premium_tutorial_26.png)
 
@@ -410,7 +410,7 @@ Let’s learn how to add 4 motions below using the RoboPlus Motion program.
 
   ![](/assets/images/edu/bioloid/premium_tutorial_30.jpg)
 
-5. You can adjust the pause and play durations. (Please refer for more information about [STEP STOP/PLAY](/docs/en/software/rplus1/motion/???))
+5. You can adjust the pause and play durations. (Please refer for more information about [STEP STOP/PLAY](/docs/en/software/rplus1/motion/#pause))
 
   ![](/assets/images/edu/bioloid/premium_tutorial_31.jpg)
 
@@ -422,7 +422,7 @@ Let’s learn how to add 4 motions below using the RoboPlus Motion program.
 
   ![](/assets/images/edu/bioloid/premium_tutorial_33.jpg)
 
-8. Additional settings ([Number of Repeats, Play Speed, etc](/docs/en/software/rplus1/motion/???))
+8. Additional settings ([Number of Repeats, Play Speed, etc](/docs/en/software/rplus1/motion/#set-page-repeattime))
 
   You can also set the number of repeats, entire speed, etc. for each page.
 
@@ -884,7 +884,7 @@ For more information on each sensors, please click on the names of the sensors.
 
 You can make your own sensor with simple control functions using the ADC port and OUT port on CM-510/CM-530.
 
-`Caution` Connecting poorly designed circuits may damage the controller. Please be sure to acquire sufficient knowledge about circuits beforehand.
+**CAUTION** : Connecting poorly designed circuits may damage the controller. Please be sure to acquire sufficient knowledge about circuits beforehand.
 {: .notice--warning}
 
 ### PIN Information
@@ -905,7 +905,7 @@ You can make your own sensor with simple control functions using the ADC port an
   4. GND
   5. OUT2 : 3.3V Output (Maximum Allowed Current 0.3A)
 
-`Note` Please use the 5P Cable when using other sensors. The 5P cable can be purchased from ROBOTIS.
+**NOTE** : Please use the 5P Cable when using other sensors. The 5P cable can be purchased from ROBOTIS.
 {: .notice}
 
 ### Controlling User’s Device

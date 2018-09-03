@@ -15,13 +15,13 @@ sidebar:
 
 # [Example](#example)
 
-`Note` This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+**NOTE** : This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 {: .notice--info}
 
-`Warning` Make sure to run the [Bringup](#bringup) instruction before performing Example.
+**WARNING** : Make sure to run the [Bringup](#bringup) instruction before performing Example.
 {: .notice--warning}
 
-`Warning` Be careful when testing the robot on the table as the robot might fall.
+**WARNING** : Be careful when testing the robot on the table as the robot might fall.
 {: .notice--warning}
 
 **Tip :** The example is supposed to be running on the remote PC. **Follow the instruction on your Remote PC**.

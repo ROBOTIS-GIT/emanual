@@ -6,5 +6,5 @@ Present Position = 실제 위치 + Multi Turn offset 이 됩니다.
 
 ![](/assets/images/dxl/mx/mx-12_multiturn_offset.jpg)
 
-`Note` 다중 회전 모드(Multi-turn Mode)일 때 만 이 값이 적용되며, 그 외의 모드에서는 이 값은 무시 됩니다.
+**참고** : 다중 회전 모드(Multi-turn Mode)일 때 만 이 값이 적용되며, 그 외의 모드에서는 이 값은 무시 됩니다.
 {: .notice}

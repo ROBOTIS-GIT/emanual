@@ -19,8 +19,8 @@ sidebar:
 12장에 걸쳐 로봇을 순서대로 만들면서 로봇 제작의 원리를 학습할 수 있습니다.
 
 {% capture dream_01 %}
-`주의`
-- 교육키트 5단계는 1, 2, 3, 4단계 키트의 부품들이 있어야 로봇을 제작할 수 있습니다. 반드시 교육키트 [1단계], [2단계], [3단계], [4단계]를 먼저 구매하시기 바랍니다.
+**주의**:
+- 교육키트 5단계는 1, 2, 3, 4단계 키트의 부품들이 있어야 로봇을 제작할 수 있습니다. 반드시 교육키트 [1단계](/docs/kr/edu/dream/dream2-1/), [2단계](/docs/kr/edu/dream/dream2-2/), [3단계](/docs/kr/edu/dream/dream2-3/), [4단계](/docs/kr/edu/dream/dream2-4/)를 먼저 구매하시기 바랍니다.
 - 로보티즈 드림II 5단계에서 프로그램은 제어기(CM-150)에 사용자가 직접 프로그램 하거나 다운로드 해야 합니다.
 - 로보티즈 드림II 1단계에 포함되어 있는 USB 케이블을 이용해서 다운로드 할 수 있습니다.
 - 로봇을 보다 다양한 형태로 제작하거나, 더 복잡한 로봇을 만들 때에는 로보티즈 스마트 교육키트를 이용해보세요.  
@@ -28,7 +28,7 @@ sidebar:
 
 <div class="notice--warning">{{ dream_01 | markdownify }}</div>
 
-# [부품 리스트](#부품-리스트)
+# [부품 목록](#부품-목록)
 
 ![](/assets/images/edu/dream/dream2/e-manual_dream2_lv5_partlist_kr.jpg)
 
@@ -36,15 +36,11 @@ sidebar:
 
 # [교안예제](#교안예제)
 
-{% capture dream_02 %}
 각 예제의 조립 방법이나 실행 시 동작에 관한 내용은 로보티즈 드림II 5단계 교안을 참고하세요.  
-예제 프로그램은 사용자가 직접 다운로드 해야 합니다. 
-만일, 프로그램을 직접 만들거나 다운로드 할 경우에 [예제 태스크 코드의 다운로드 방법]을 참고하세요.
+예제 프로그램은 사용자가 직접 다운로드 해야 합니다.  
+만일, 프로그램을 직접 만들거나 다운로드 할 경우에 [예제 태스크 코드의 다운로드 방법]을 참고하세요.  
 다운로드시 필요한 USB 케이블은 1단계 구성품에 포함되어 있습니다.
-{% endcapture %}
-
-<div class="notice">{{ dream_02| markdownify }}</div>
-
+{: .notice}
 
 |예제|로봇|TASK Code|
 | :---: | :---: | :---: |
@@ -62,15 +58,8 @@ sidebar:
 |  12. 운반로봇  | ![](/assets/images/edu/dream/dream2/dream2_05_12_kr.jpg)|[Download][DREAM_L5_TransportRobot_KR.tskx] |
 
 
-
-
-
-[1단계]: /docs/kr/edu/dream2/dream2-1/
-[2단계]: /docs/kr/edu/dream2/dream2-2/
-[3단계]: /docs/kr/edu/dream2/dream2-3/
-[4단계]: /docs/kr/edu/dream2/dream2-4/
 [BT-410]: /docs/kr/parts/communication/bt-410/
-[예제 태스크 코드의 다운로드 방법]: /docs/kr/faq/download_task_code/
+[예제 태스크 코드의 다운로드 방법]: /docs/kr/software/rplus2/task/#다운로드-하기
 [DREAM_L5_Tank_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l5_tank_kr.tskx
 [DREAM_L5_RobotKnight_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l5_robotknight_kr.tskx
 [DREAM_L5_WarRobot_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l3_fourwheeled_kr.tskx

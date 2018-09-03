@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: dynamixel_sdk_api_reference_c_porthandler
+ref: c_porthandler
 read_time: true
 share: true
 author_profile: false
@@ -11,7 +11,7 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
-<div style="counter-reset: h1 4"></div>
+<div style="counter-reset: h1 5"></div>
 
 # [API Reference](#api-reference)
 

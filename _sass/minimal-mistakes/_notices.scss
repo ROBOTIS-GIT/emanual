@@ -31,10 +31,16 @@
       margin-left: 0;
     }
   }
+
+  img {
+    float: none;
+    padding: 0;
+    border: 0;
+  }
 }
 
 @mixin notice-margin {
-  p, ol {
+  p, ol, table {
     margin-left: 0 !important;
   }
 }
@@ -82,8 +88,7 @@
 }
 
 p>code, a>code, li>code, td>code {
-  padding-top: 0.1rem;
-  padding-bottom: 0.1rem;
+  padding: 1px 5px;
   font-family: $monospace;
   font-size: 0.8em;
   white-space: nowrap;
@@ -91,7 +96,7 @@ p>code, a>code, li>code, td>code {
   border-radius: $border-radius;
   background-color: $code-background-color;
   box-shadow: $box-shadow;
-  
+
   &:before, &:after {
     letter-spacing: -0.2em;
     content: "\00a0";

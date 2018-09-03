@@ -7,8 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/kr/parts/motor/l_speed_geared_motor/
 sidebar:
-  title:
-    # Low Speed Geared Motor
+  title: 저속 감속모터
   nav: "l_speed_geared_motor"
 ---
 
@@ -39,7 +38,7 @@ sidebar:
 1. MOT-
 2. MOT+
 
-`Note` 케이블을 잘못된 방향이나 무리한 힘으로 끼우거나 빼면 커넥터가 파손될 수 있으니 주의해주세요.
+**참고**: 케이블을 잘못된 방향이나 무리한 힘으로 끼우거나 빼면 커넥터가 파손될 수 있으니 주의해주세요.
 {: .notice}
 
 # [사용 방법](#사용-방법)

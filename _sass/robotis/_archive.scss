@@ -3,13 +3,14 @@
    ========================================================================== */
 
 .archive {
-  max-width: 100%;
-  float: left;
-  position: relative;
-  padding-left: 330px;
-  padding-bottom: 5em;
-  width: 100%;
-  margin-bottom: 5em;
+  max-width: 1630px;
+  width: auto;
+  // float: left;
+  position: static;
+  padding: 5px;
+  margin-left: $sidebar_width;
+  // margin-top: 56px;    //space for local_navigation
+  border: 5px solid #F1F1F2;
 }
 
 .splash {
@@ -17,8 +18,8 @@
   float: left;
   position: relative;
   padding: 0px 10px;
-  padding-bottom: 5em;
-  margin-bottom: 5em;
+  padding-bottom: 1em;
+  margin-top: 3em;
 }
 
 img {

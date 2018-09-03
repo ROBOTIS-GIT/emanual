@@ -211,12 +211,12 @@ Set initialization values for properties of Dynamixel or sensor.
   r_sho_pitch :   # XM-430
      return_delay_time        : 1    # item name : value
      min_position_limit       : 0
-     max_position_limit       : 4095
+     max_position_limit       : 4,095
 
   r_sho_pitch :   # XM-430
      return_delay_time        : 1    # item name : value
      min_position_limit       : 0
-     max_position_limit       : 4095
+     max_position_limit       : 4,095
 
   ...
   ```
@@ -391,23 +391,10 @@ Press the mode button thrice from demonstration ready mode to switch to interact
 
 ## [How to execute GUI program](#how-to-execute-gui-program)
 
-### Overview   
-The GUI program provides various functions for ROBOTIS-OP3.
-- Take OP3 to the initial posture
-- Configure various modules in the OP3  
-- Save and edit walking parameters  
-- Control the head joint of the OP3  
-- Play action files in the OP3  
-
+![](/assets/images/platform/op3/op3_gui_diagram.png)  
 > Reference : [op3_gui_demo]  
-
-![](/assets/images/platform/op3/op3_gui_diagram.png)
-
-### Getting started
-#### Download & Build
-> Reference : [Installing ROBOTIS ROS Package]
-
-#### Run the program
+ 
+### [Run the program](#run-the-program)
 There are three options to run the GUI program.
 1. Connect input devices and display device directly to ROBOTIS-OP3 and run the GUI program on the robot.  
 2. Use VNC from a remote PC to obtain control over the OP3 SBC(Intel NUC) and initiate the GUI program remotely.  
@@ -420,18 +407,16 @@ There are three options to run the GUI program.
     ```
 
     > Reference : [How to run op3_manager]
+  
+- Execution result  
+  ![](/assets/images/platform/op3/op3_gui.png)
 
-#### Execution result
-
-![](/assets/images/platform/op3/op3_gui.png)
-
-### Description
-#### How to take the initial pose of ROBOTIS-OP3
+### [How to take the initial pose of ROBOTIS-OP3](#how-to-take-the-initial-pose)
 Clicking the button surrounded by the red dashed rectangle will let the `base_module` control each joint of ROBOTIS-OP3 and take the initial posture.
 
 ![](/assets/images/platform/op3/op3_gui_initial_pose.png)
 
-#### How to set the Module
+### [How to set the Module](#how-to-set-the-module)
 - Follow the below procedure to configure modules that control corresponding joint of ROBOTIS-OP3.  
     1. Click the module button to configure.  
       - `none`  
@@ -440,22 +425,21 @@ Clicking the button surrounded by the red dashed rectangle will let the `base_mo
       - `walking_module`  
 
     2. Confirm from the joint status table below the module buttons that corresponding joints are set correctly.  
-
       ![](/assets/images/platform/op3/op3_gui_set_module.png)
 
 - `Get Mode` button will report which module is assigned for each joint.  
 
   ![](/assets/images/platform/op3/op3_gui_get_module.png)
 
-#### [How to use walking tuner](#how-to-use-walking-tuner)
+### [How to use walking tuner](#how-to-use-walking-tuner)
 
-##### Overview   
+#### Overview   
 This chapter explains how to configure walking parameters and test them with ROBOTIS-OP3.  
 Basic demo uses saved walking parameters.  
 
 
-##### Description
-###### Setting Module
+#### Description
+##### Setting Module
 Activate `walking_module` on the lower body part of ROBOTIS-OP3 for walking test.   
 Confirm that the joints used for walking are set as `walking_module`, then move to `Walking` tab.  
 (When the walking module is activated, ROBOTIS-OP3 will take the initial posture for walking.)    
@@ -464,29 +448,29 @@ Confirm that the joints used for walking are set as `walking_module`, then move 
 
 ![](/assets/images/platform/op3/op3_gui_walking_tuner_02.png)
 
-###### Start / Stop Walking  
+##### Start / Stop Walking  
 1. `start` button : Initiate walking  
 2. `stop` button : Stop walking. When stopped, walking related parameters will be reset.  
 
   ![](/assets/images/platform/op3/op3_gui_walking_tuner_03.png)
 
-###### Apply Parameters
+##### Apply Parameters
 1. `Refresh` button : Acquire all parameter currently applied on `walking_module`.  
 2. `Save` button : Save all parameter currently applied on `walking_module` as default parameter and use it for other program such as `op3_demo`.  
 3. `Apply` button : Apply modified parameters from the GUI to `walking_module`.  
 
   ![](/assets/images/platform/op3/op3_gui_walking_tuner_04.png)
 
-#### [How to play the motions](#how-to-play-the-motions)
+### [How to play the motions](#how-to-play-the-motions)
 
-##### Overview   
+#### Overview   
 This chapter explains how to play predefined actions.  
 The `action_module` controls each joint of ROBOTIS-OP3.  
 
 > Reference : [op3_action_module]
 
-##### Description
-###### How to play
+#### Description
+##### How to play
 1. Set the module : Press the `action_module` button.  
 2. Select `Motion` tab of the gui demo program.
 
@@ -496,26 +480,26 @@ The `action_module` controls each joint of ROBOTIS-OP3.
 
     ![](/assets/images/platform/op3/op3_gui_action_02.png)
 
-###### Creating and editing actions for `action_module`  
+##### Creating and editing actions for `action_module`  
 
 > Reference : [How to create the motions]
 
-#### [How to control the head joints](#how-to-control-the-head-joints)
+### [How to control the head joints](#how-to-control-the-head-joints)
 
-##### Overview   
+#### Overview   
 This chapter explains how to control the head joint of ROBOTIS-OP3.  
 Operator can get different camera view angle by controlling head joints.  
 
 > Reference : [op3_head_control_module]
 
-##### Head Joint Control  
-###### Setting the Module : Click `head_control_module` button  
+#### Head Joint Control  
+##### Setting the Module : Click `head_control_module` button  
 
-###### Select `Head Control` tab of the gui demo program.  
+##### Select `Head Control` tab of the gui demo program.  
 
 ![](/assets/images/platform/op3/op3_gui_control_head_01.png)
 
-###### Change the value for the specific joint.  
+##### Change the value for the specific joint.  
 1. Use the slide bar to control the head joint.  
 2. Enter desired values in the text box to control the head joint.  
 3. Bring the head joint to center position.  
@@ -524,17 +508,17 @@ Operator can get different camera view angle by controlling head joints.
 
   ![](/assets/images/platform/op3/op3_gui_control_head_03.png)
 
-#### [How to control upgraded walking(online walking)](#how-to-control-upgraded-walkingonline-walking)
+### [How to control upgraded walking(online walking)](#how-to-control-upgraded-walkingonline-walking)
 
-##### Overview   
+#### Overview   
 This page explains how to control upgraded walking(online walking).  
 
 > Reference 1 : [Introduction to Humanoid Robotics]
 
 > Reference 2 : [op3_online_walking_module]
 
-##### Description
-###### How to
+#### Description
+##### How to
 - Preparation : Set the module and move to the tab
   1. Setting the module : Click `online_walking_module` button
   2. Select `Online Walking` tab of the gui demo program.
@@ -559,59 +543,152 @@ This page explains how to control upgraded walking(online walking).
     - Body Offset : desired body offset
     - Foot Distance : desired foot distance between left and right foot`
 
-##### Online walking using footstep planner
+#### Online walking using footstep planner
 > Reference : [Online walking using footstep planner]  
 
 ## [How to use offset tuner](#how-to-use-offset-tuner)
 
-### Overview   
-This chapter explains how to run the ROBOTIS-OP3 offset tuner program.  
-`op3_offset_tuner_server` and `op3_offset_tuner_client` are used to adjust offsets of ROBOTIS-OP3.  
+### Overview  
+{% capture deprecated_offset_tuner %}  
+`deprecated`    
+This chapter has been merged into [How to use tuner client](#how-to-use-tuner-client)  
+{% endcapture %}  
+<div class="notice">{{ deprecated_offset_tuner | markdownify }}</div> 
 
 > Reference : [op3_offset_tuner_server]  
 > Reference : [op3_offset_tuner_client]
 
-![](/assets/images/platform/op3/op3_offset_tuner_diagram.png)
+![](/assets/images/platform/op3/op3_offset_tuner_diagram.png)  
+  
+## [How to use tuner client](#how-to-use-tuner-client)  
 
-### Run Offset Tuner Program   
+### Overview     
+this chapter explains how to adjust kinematic offset and position gain of ROBOTIS-OP3.
+In the past, we were able to adjust the offset by using op3_offset_server and op3_offset_client. Now we can set both offset and gain using new op3_tuning_module and op3_tuner_client. we made an op3_tuning_module and used it with op3_manager, so you do not need to run the server for using just to tune the offset.
+ 
+> Reference : [op3_tuning_module]  
+> Reference : [op3_tuner_client]
+
+- Before  
+![](/assets/images/platform/op3/op3_offset_tuner_diagram.png)  
+- After   
+![](/assets/images/platform/op3/op3_tuner_diagram.png)  
+
+### Run Tuner Program   
 
 ### How to launch programs  
-#### Launching server and client program separately
-Offset Tuner is consisted of server and client programs so that other PC in the same ROS network can tune offsets.  
+#### Launching `op3_manager` and `op3_tuner_client` program separately
+Tuner is consisted of op3_manager and client program so that other PC in the same ROS network can tune offsets and gains.  
 
-Execute the offset tuner server program first.  
-(Other programs such as `op3_manager`, `op3_action_editor` and `op3_walking_tuner` should be terminated to run the offset tuner server).  
-
-```
-$ roslaunch op3_offset_tuner_server op3_offset_tuner_server.launch
-```
-
-After starting the offset tuner server, execute client GUI program from the identical PC or any PCs in the same ROS network.  
+Execute the `op3_manager` first.  
+(Other programs such as op3_action_editor` and `op3_walking_tuner` should be terminated to run the `op3_manager`).  
 
 ```
-$ rosrun op3_offset_tuner_client op3_offset_tuner_client
+$ roslaunch op3_manager op3_manager.launch  
 ```
 
-#### Launching server and client program at once
+After starting the `op3_manager`, execute client GUI program from the identical PC or any PCs in the same ROS network.  
+
+```
+$ roslaunch op3_tuner_client op3_tuner_client.launch
+```
+
+#### Launching `op3_manager` and `op3_tuner_client` program at once
 Enter the following commands in the terminal window.  
-(Other programs such as `op3_manager`, `op3_action_editor` and `op3_walking_tuner` should be terminated to run the offset tuner.)
+(Other programs such as `op3_action_editor` and `op3_walking_tuner` should be terminated to run the offset tuner.)
 
 ```
-$ roslaunch op3_offset_tuner_client op3_offset_tuner.launch
+$ roslaunch op3_tuner_client op3_tuner.launch 
 ```
+
+![launch image](/assets/images/platform/op3/op3_tuner_execution.png)
 
 ### Configuration Files
-#### `op3_offset_tuner_server` configuration files  
-- `offset.yaml` : Offset data and offset adjusting posture information are saved  
-- `OP3.robot` : Description of ROBOTIS-OP3 is saved  
-- `dxl_init_OP3.yaml` : Dynamixel configurations are saved and used for joint initialization  
+#### `op3_manager` configuration files   
+- config/`OP3.robot` : Description of ROBOTIS-OP3 is saved  
+- config/`dxl_init_OP3.yaml` : Dynamixel configurations included gains are saved and used for joint initialization 
+ 
+#### `op3_tuning_module` configuration files  
+- data/`offset.yaml` : Offset data is saved  
+- data/`tune_pose.yaml` : offset adjusting posture information and gain tuning posture information are saved
 
-#### `op3_offset_tuner_client` configuration file  
-- `joint_data.yaml` : GUI menu configuration file  
+  ```
+  - init_pose  
+   - move_time  
+   - target_pose  
+     - joint_name : angle(degree)  
+     - ...  
 
-### How to use Offset tuner client GUI program  
+  - tune_pose_01  
+   - move_time : [time, time, ...]  
+   - target_pose : [pose_name, pose_name, ...]  
+  - tune_pose_02  
+   - move_time : [time, time, ...]  
+   - target_pose : [pose_name, pose_name, ...]  
+  - tune_pose_03  
+   - move_time : [time, time, ...]  
+   - target_pose : [pose_name, pose_name, ...]    
+  - tune_pose_04  
+   - move_time : [time, time, ...]   
+   - target_pose : [pose_name, pose_name, ...]  
 
-![](/assets/images/platform/op3/How to use offset tuner_2.png)
+  - pose_data  
+   - pose_name  
+     - joint_name : angle(degree)  
+     - ...  
+  ```
+
+#### `op3_tuner_client` configuration file  
+- config/`joint_data.yaml` : GUI menu configuration file  
+
+### How to use tuner client GUI program   
+#### How to tune the offset  
+![](/assets/images/platform/op3/op3_tuner_offset_01.png)  
+1. go `Initial Pose`   
+2. Select tab of `Kinematics Group`  
+3. Click the `Refresh` Button for getting current states of joints  
+4. tune the offset of joints  
+5. Click the `Save Offset` button for saving to file.  
+
+#### How to tune the gain  
+![](/assets/images/platform/op3/op3_tuner_gain_01.png)  
+1. go `Initial Pose`   
+2. Select tab of `Kinematics Group`  
+3. Click the `Refresh` Button for getting current states of joints  
+4. change the pose and tune the gain of joints for watching the graph of the joint  
+(If you want to tune other joint, delete topics and add topics that you want to tune)    
+5. Click the `Save Gain` button for saving to file.  
+
+  > Reference : Order of the joint name in the topic(`/robotis/goal_joint_states`)
+  
+  ```
+  0 : haed_pan  
+  1 : haed_tilt  
+  2 : l_ank_pitch  
+  3 : l_ank_roll  
+  4 : l_el  
+  5 : l_hip_pitch  
+  6 : l_hip_roll  
+  7 : l_hip_yaw  
+  8 : l_knee  
+  9 : l_sho_pitch  
+  10 : l_sho_roll  
+  11 : r_ank_pitch  
+  12 : r_ank_roll  
+  13 : r_el  
+  14 : r_hip_pitch  
+  15 : r_hip_roll  
+  16 : r_hip_yaw  
+  17 : r_knee  
+  18 : r_sho_pitch  
+  19 : r_sho_roll   
+  ```
+  
+  > If you want to check in your hand, type like the belows
+  
+  ```
+  $ rostopic echo /robotis/goal_joint_states -n 1
+  ```
 
 ## [How to create the motions](#how-to-create-the-motions)
 
@@ -620,7 +697,7 @@ ROBOTIS-OP3 Action Editor Node.
 This chapter explains how to create and edit action file used in the [op3_action_module] of ROBOTIS-OP3.   
 
 #### Action File
-The action file contains ROBOTIS-OP3's poses and time data. The current position describes positions of Dynamixels which converted from actual Dynamixel resolution to 4095 resolution. The action file is written as binary file so users can read its contents with op3_action_editor. ROBOTIS currently provides a default action file with source code. It is located in "op3_action_module/data" directory.  
+The action file contains ROBOTIS-OP3's poses and time data. The current position describes positions of Dynamixels which converted from actual Dynamixel resolution to 4,095 resolution. The action file is written as binary file so users can read its contents with op3_action_editor. ROBOTIS currently provides a default action file with source code. It is located in "op3_action_module/data" directory.  
 
 The action file contains 256 pages. Each page can store up to 7 stages (or steps) of action data. The default action file does not use all pages and user can add own actions by writing them on the empty page.   
 
@@ -644,7 +721,7 @@ $ roslaunch op3_action_editor op3_action_editor.launch
 
 - **Page number**: Page number is the listed page number. If user wants to create a new action poses, user can use any empty page.  
 - **Page title**: ROBOTIS recommends user to use a page title when creating a new action on an empty page.  
-- **Current position**: The current position describes position of Dynamixel which converted from actual Dynamixel resolution to 4095 resolution. This data is represented by STP7 in op3_action_editor. Sometimes the position may be read as ---- in op3_action_editor. This means position of the Dynamixel has not been read (or torque is off).  
+- **Current position**: The current position describes position of Dynamixel which converted from actual Dynamixel resolution to 4,095 resolution. This data is represented by STP7 in op3_action_editor. Sometimes the position may be read as ---- in op3_action_editor. This means position of the Dynamixel has not been read (or torque is off).  
   If user turns the Dynamixel off, current position cannot be read until turn it back on.  
   User can turn off the torque of specific Dynamixels. This is very convenient when acquiring position values directly from Dynamixels for a new robot posture instead of calculating those values. To do that, turn off the torque of desired Dynamixels, then make a posture and hold the robot joint by hand until turn the torque back on. The robot will be remaining at current posture and user can read position values of corresponding Dynamixels.  
 - **Steps or stages**: Each page can store up to 7 steps, from STP0 to STP6. However, some actions may be required more than 7 stages to perform completely. This can be resolved by simply using multiple pages and link them with Next
@@ -652,7 +729,7 @@ $ roslaunch op3_action_editor op3_action_editor.launch
 - **Play Count**: Play Count is the number of times the action of the page is to be played.  
 - **Exit**: There might be some cases when an action has to be stopped. In these cases, the robot may be in unstable position. Exit is much like "Next", so "Exit" should be linked to a page where ROBOTIS-OP3 can return to a stable pose. If "Exit" is 0, it means that there is no linked exit page (default value).  
   `Tip`: When calling an action requires multiple pages, ROBOTIS strongly suggests user to call the action from the starting page. For example, clap starts at page 7 and ends at page 8. This means you should call page 7 when calling clap. Calling the page 8 may cause unexpected behavior of the robot.  
-- **STP7**: "STP7" column is the current position of the Dynamixel which converted to 4095 resolution from its original resolution. "----" means that torque has been released.  
+- **STP7**: "STP7" column is the current position of the Dynamixel which converted to 4,095 resolution from its original resolution. "----" means that torque has been released.  
 - **PauseTime**: "PauseTime" is the pause duration period for motion playback for step STP[x].  
 - **Time(x 8msec)** : "Time" is the time period for ROBOTIS-OP3 to complete step STP[x]. Each time unit account for 8ms of time.  
 
@@ -1000,7 +1077,7 @@ Connect to ROBOTIS-OP3 WiFi with below information
   > Reference : [detail of parameter]  
 
 ##### Camera Setting parameters  
-  ![](/assets/images/platform/op3/op3_web_setting_03.png)
+  ![](/assets/images/platform/op3/op3_web_setting_06.png)
   > Modified parameter values will be saved automatically.  
 
 
@@ -1008,6 +1085,8 @@ Connect to ROBOTIS-OP3 WiFi with below information
 
 ### Overview   
 This chapter explains to user how to get joint angles of ROBOTIS-OP3 and how to set their values.  
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6Rle7U84vHM" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 #### Framework Diagram
 
@@ -1060,9 +1139,9 @@ op3_manager provides a way to control each joint of the robot with the following
   If the control mode of the robotis_controller meets one of the below two conditions, the user can directly control joints of the robot using the `/robotis /set_joint_states` topic.  
   - DirectControlMode  
   - none of the activating module under the MotionModuleMode  
-- `direct_control_module`  
+- `motion_module` : `direct_control_module`  
   User can directly control joints of the robot using `direct_control_module` that is one of the motion modules.  
-  `direct_control_module` has a simple self-collision checking(check the distance between end-effector and COB).  
+  Users can implement features in the motion module. `direct_control_module` has a simple self-collision checking(check the distance between end-effector and COB).  
   The topic name to control the robot is `/robotis/direct_control/set_joint_states`.  
 
 > Reference : SyncWriteItem  
@@ -1133,8 +1212,8 @@ $ roslaunch op3_read_write_demo op3_read_write.launch
 
  - Description : Buttons  
    From the left : `mode` button, `start` button, `user` button, `reset` button  
-   - `mode` button : start read_write demo using `direct_control_module`  
-   - `start` button : start read_write demo using `robotis_controller`  
+   - `mode` button : start read_write demo using `robotis_controller`  
+   - `start` button : start read_write demo using `direct_control_module`  
    - `user` button : torque on all joints  
    - `reset` button : torque off all joints  
 
@@ -1162,8 +1241,8 @@ $ roslaunch op3_read_write_demo op3_read_write.launch
   enum ControlModule
   {
     None = 0,
-    Framework = 1,
-    DirectControlModule = 2,
+    DirectControlModule = 1,
+    Framework = 2,
   };
 
   const int SPIN_RATE = 30;
@@ -1242,17 +1321,17 @@ $ roslaunch op3_read_write_demo op3_read_write.launch
   void buttonHandlerCallback(const std_msgs::String::ConstPtr& msg)
   {
     // starting demo using robotis_controller
-    if (msg->data == "start")
+    if (msg->data == "mode")
     {
       control_module = Framework;
-      ROS_INFO("Button : start | Framework");
+      ROS_INFO("Button : mode | Framework");
       readyToDemo();
     }
     // starting demo using direct_control_module
-    else if (msg->data == "mode")
+    else if (msg->data == "start")
     {
       control_module = DirectControlModule;
-      ROS_INFO("Button : mode | Direct control module");
+      ROS_INFO("Button : start | Direct control module");
       readyToDemo();
     }
     // torque on all joints of ROBOTIS-OP3
@@ -1476,17 +1555,17 @@ $ roslaunch op3_read_write_demo op3_read_write.launch
   void buttonHandlerCallback(const std_msgs::String::ConstPtr& msg)
   {
     // starting demo using robotis_controller
-    if (msg->data == "start")
+    if (msg->data == "mode")
     {
       control_module = Framework;
-      ROS_INFO("Button : start | Framework");
+      ROS_INFO("Button : mode | Framework");
       readyToDemo();
     }
     // starting demo using direct_control_module
-    else if (msg->data == "mode")
+    else if (msg->data == "start")
     {
       control_module = DirectControlModule;
-      ROS_INFO("Button : mode | Direct control module");
+      ROS_INFO("Button : start | Direct control module");
       readyToDemo();
     }
     // torque on all joints of ROBOTIS-OP3
@@ -1571,6 +1650,9 @@ $ roslaunch op3_read_write_demo op3_read_write.launch
 
 [op3_offset_tuner_server]: /docs/en/platform/op3/robotis_ros_packages/#op3-offset-tuner-server
 [op3_offset_tuner_client]: /docs/en/platform/op3/robotis_ros_packages/#op3-offset-tuner-client
+
+[op3_tuning_module]: /docs/en/platform/op3/robotis_ros_packages/#op3-tuning-module
+[op3_tuner_client]: /docs/en/platform/op3/robotis_ros_packages/#op3-tuner-client
 
 [op3_how_to_control_upgraded_walking]: /docs/en/platform/op3/tutorials/#how-to-control-upgraded-walkingonline-walking
 

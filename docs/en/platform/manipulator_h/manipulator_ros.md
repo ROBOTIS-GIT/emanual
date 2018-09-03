@@ -75,7 +75,7 @@ manipulator base module
 ### [manipulator_base_module_msgs](#manipulator_base_module_msgs)
 
 #### Overview
-[[manipulator_base_module]]'s Message & Service  
+[manipulator_base_module](#manipulator_base_module)'s Message & Service  
 
 #### ROS Message Type
 * JointPose.msg   
@@ -288,7 +288,7 @@ $ roslaunch manipulator_h_gazebo manipulator_h_gazebo.launch
 <param name="gazebo_robot_name"        value="robotis_manipulator_h" />
 ```
 
-* manipulator_h_manager execution   
+* manipulator_h_manager execution
 
 ```
 $ roslaunch manipulator_h_manager manipulator_h_manager.launch

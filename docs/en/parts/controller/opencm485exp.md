@@ -45,6 +45,7 @@ sidebar:
 9. **Power Switch** : Switch that powers the board and Dynamixel. Note: Does not disconnect the power received via USB cable.
 10. **JP1 Jumper** : Jumper that determines whether the power inputted onto OpenCM 485 EXP will be supplied to OpenCM9.04 board or not.
 
+{% include en/dxl/pinout_warning.md %}
 
 # [Connecting OpenCM9.04](#connecting-opencm904)
 
@@ -54,7 +55,7 @@ sidebar:
     
 2. OpenCM9.04 is mounted onto OpenCM 485 EXP as shown below.
 
-    `Caution` The orientation of the connection must be correct.
+    **CAUTION** : The orientation of the connection must be correct.
     {: .notice--warning}
 
     ![](/assets/images/parts/controller/opencm904/opencm485exp_03.jpg)
@@ -79,7 +80,7 @@ OpenCM 485 EXP supplies 5V from OpenCM9.04 as default. JP1 can be used to determ
  
 OpenCM 485 EXP’s Dynamixel 485 bus operates as a Dynamixel bus using OpenCM9.04’s USART3(Serial3).
 
-`Note` OpenCM9.04’s Dynamixel TTL BUS is connected to USART1(Serial1).
+**NOTE** : OpenCM9.04’s Dynamixel TTL BUS is connected to USART1(Serial1).
 {: .notice}
 
 ![](/assets/images/parts/controller/opencm904/opencm485exp_07.gif)
@@ -110,7 +111,7 @@ OpenCM 485 EXP’s Dynamixel 485 bus operates as a Dynamixel bus using OpenCM9.0
       Dxl.writeWord(2, 30, 0);
       delay(1000);              
       Dxl.writeWord(6, 30, 1023);
-      Dxl.writeWord(2, 30, 4095);
+      Dxl.writeWord(2, 30, 4,095);
       delay(1000);
     }
     ```

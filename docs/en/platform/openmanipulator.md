@@ -15,29 +15,31 @@ sidebar:
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator.png)
 
+![](/assets/images/platform/openmanipulator/OpenManipulator_Introduction.jpg)
+
 ROS-enabled OpenManipulator is a full open robot platform consisting of **OpenSoftware**​, **OpenHardware** and **OpenCR(Embedded board)​**.
 
 ## [OpenSoftware](#opensoftware)
 OpenManipulator are based on ROS ​and OpenSource. ROS official hardware platform ,TurtleBot series has been supporting ‘TurtleBot Arm’. The OpenManipulator has full hardware compatibility with TurtleBot3​, and allows users to control it more easily by linking with the MoveIT! package. Even if you do not have a real robot, you can control the robot in the Gazebo simulator​.
 
 ## [OpenHardware](#openhardware)
-The OpenManipulator is oriented towards Open Hardware​. Most of the components except for some frames are uploaded as [STL files](https://cad.onshape.com/documents/9442f03bd8ccac084fda9dd3/w/039e8dbd53e0782540ea5b0d/e/9d3986b1e15cd5dce9557032) that can be 3d printing. This allows users to modify the length of the link and the design of the robot to suit the intended use. The open manipulator also uses the **Dynamixel X ​series** used in TurtleBot 3. Dynamixel has a modular form and adopts daisy chain method. This allows users to easily change and add joints for some torque and degree of freedom they need. Taking advantage of these advantages, we are planning a total of seven different types (For example, Chain, SCARA, Link, Planar, Delta, Stewart and Linear) of OpenManipulator.
+The OpenManipulator is oriented towards Open Hardware​. Most of the components except for some frames are uploaded as [STL files](http://www.robotis.com/service/download.php?no=767) that can be 3d printing. This allows users to modify the length of the link and the design of the robot to suit the intended use. The open manipulator also uses the **Dynamixel X ​series** used in TurtleBot 3. Dynamixel has a modular form and adopts daisy chain method. This allows users to easily change and add joints for some torque and degree of freedom they need. Taking advantage of these advantages, we are planning a total of seven different types (For example, Chain, SCARA, Link, Planar, Delta, Stewart and Linear) of OpenManipulator.
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_OnShape.jpg)
 
 ## [OpenCR (Embedded board)](#opencr-embedded-board)
 The OpenManipulator can also be controlled via [OpenCR] (Open-source Control module for ROS), the control board of TurtleBot3. OpenCR's computing power and real-time control are used to support forward, inverse kinematics, and profile control examples. In addition, OpenCR can interoperate with many functions provided by ROS through message communication with ROS, which will evolve into ROS 2.0 in the future.
 
-![](/assets/images/platform/openmanipulator/OpenManipulator_Introduction.jpg)
-
 ## [Dynamixel Examples](#dynamixel-examples)
 
-OpenManipulator is composed by [Dynamixel X series](http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/) and [3D printing parts](https://cad.onshape.com/documents/9442f03bd8ccac084fda9dd3/w/039e8dbd53e0782540ea5b0d/e/9d3986b1e15cd5dce9557032). Dynamixel has a modular form and adopts daisy chain method. This allows users to easily change and add joints for some torque and degree of freedom they need. Moreover, growing 3D printing technology makes anyone can make anything they want with low cost and rapid time. We suggest some examples of links and safety parts. Taking advantage of these advantages, we are planning a total of seven different types of OpenManipulator.
+OpenManipulator is composed by [Dynamixel X series](http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/) and [3D printing parts](http://www.robotis.com/service/download.php?no=767). Dynamixel has a modular form and adopts daisy chain method. This allows users to easily change and add joints for some torque and degree of freedom they need. Moreover, growing 3D printing technology makes anyone can make anything they want with low cost and rapid time. We suggest some examples of links and safety parts. Taking advantage of these advantages, we are planning a total of seven different types of OpenManipulator.
 
 ## [Introduction Video](#introduction-video)
 
 <iframe src="https://player.vimeo.com/video/236147296" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 <p><a href="https://vimeo.com/236147296">ROSCon 2017 Vancouver Day 1: Introducing OpenManipulator; the full open robot platform</a> from <a href="https://vimeo.com/osrfoundation">OSRF</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/eJTIeDepmNo" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/B2pnXtooKOg" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
@@ -46,8 +48,6 @@ OpenManipulator is composed by [Dynamixel X series](http://emanual.robotis.com/d
 <iframe width="560" height="315" src="https://www.youtube.com/embed/P82pZsqpBg0" frameborder="0" allowfullscreen></iframe>
 
 # [Specification](#specification)
-
-![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_Capture.png)
 
 ## [Hardware Specification](#hardware-specification)
 
@@ -75,15 +75,15 @@ OpenManipulator is composed by [Dynamixel X series](http://emanual.robotis.com/d
 
 [Parts of OpenManipulator](https://docs.google.com/a/robotis.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit?usp=sharing)
 
+  * Items that are painted in purple in above link are purchased on ROBOTIS SHOP
+  * Items that are painted in green in above link are purchased on shopping mall
+  * Items that are painted in yellow in above link are 3D printing parts
+
 [DIY Manual](https://drive.google.com/open?id=1c5U0v2dQhYiulqiWI0VQMameG82WCc-4rl6J6zlQejA)
 
-[CAD Files](https://goo.gl/NsqJMu)
+[CAD Files](http://www.robotis.com/service/download.php?no=690)
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_OnShape.jpg)
-
-* Items that are painted in purple are purchased on ROBOTIS SHOP
-* Items that are painted in green are purchased on shopping mall
-* Items that are painted in yellow are 3D printing parts
 
 # [Software Setup](#software-setup)
 
@@ -92,13 +92,15 @@ OpenManipulator is composed by [Dynamixel X series](http://emanual.robotis.com/d
 Install dependent packages for the OpenManipulator.
 
 ```
-$ sudo apt-get install ros-kinetic-ros-controllers ros-kinetic-gazebo* ros-kinetic-moveit* ros-kinetic-dynamixel-sdk ros-kinetic-dynamixel-workbench-toolbox ros-kinetic-ar-track-alvar ros-kinetic-industrial-core 
+$ sudo apt-get install ros-kinetic-ros-controllers ros-kinetic-gazebo* ros-kinetic-moveit* ros-kinetic-dynamixel-sdk ros-kinetic-dynamixel-workbench-toolbox ros-kinetic-industrial-core
 ```
 
 ```
 $ cd ~/catkin_ws/src/
 $ git clone https://github.com/ROBOTIS-GIT/open_manipulator.git
-$ cd ~/catkin_ws && catkin_make 
+$ git clone https://github.com/ROBOTIS-GIT/open_manipulator_msgs.git
+$ git clone https://github.com/ROBOTIS-GIT/open_manipulator_simulations.git
+$ cd ~/catkin_ws && catkin_make
 ```
 
 If catkin_make command is completed without any errors, preparation for OpenManipulator is done.
@@ -106,7 +108,7 @@ If catkin_make command is completed without any errors, preparation for OpenMani
 Load an OpenManipulator on RViz.
 
 ```
-$ roslaunch open_manipulator_description open_manipulator_rviz.launch 
+$ roslaunch open_manipulator_description open_manipulator_rviz.launch
 ```
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_rviz.png)
@@ -210,6 +212,7 @@ Below services are help you to manipulate OpenManipulator
   ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_moveit_real_4.png)
 
 In order to control gripper, please use topic publish with below command in a new terminal window
+(parameters : `grip_on`, `grip_off`, `neutral`)
 
   ```
   $ rostopic pub /open_manipulator/gripper std_msgs/String "data: 'grip_on'" --once
@@ -226,18 +229,20 @@ Install dependent packages
 
   ```
   $ cd ~/catkin_ws/src
+  $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_with_tb3.git
+  $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_with_tb3_msgs.git
   $ git clone https://github.com/ROBOTIS-GIT/turtlebot3.git
   $ cd ~/catkin_ws && catkin_make
   ```
 
 Load a TurtleBot3 Waffle or Waffle Pi with OpenManipulator on RViz.
 
-  **Tip :** TB3_MODEL =  `waffle`, `waffle_pi` 
+  **Tip :** TB3_MODEL =  `waffle`, `waffle_pi`
   {: .notice--info}
 
   ```
   $ export TURTLEBOT3_MODEL=${TB3_MODEL}
-  $ roslaunch open_manipulator_with_tb3 open_manipulator_with_tb3_rviz.launch
+  $ roslaunch open_manipulator_with_tb3_description open_manipulator_with_tb3_rviz.launch
   ```
 
 ![](/assets/images/platform/openmanipulator/TurtleBot3_with_Open_Manipulator.png)
@@ -246,7 +251,7 @@ Load a TurtleBot3 Waffle or Waffle Pi with OpenManipulator on RViz.
 
 ## [Gazebo](#gazebo)
 
-  `Note` This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+  **NOTE** : This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
   {: .notice--info}
 
 ### [Spawn Model](#spawn-model)
@@ -306,11 +311,23 @@ OpenManipulator in Gazebo is controllered by ROS message. For example, to use be
 
 ## [MoveIt!](#moveit)
 
-You can use MoveIt! to manipulate OpenManipulator. Please refer to [Manipulation part](/doc/en/platform/openmanipulator/#manipulation)
+You can use MoveIt! to manipulate OpenManipulator. Please refer to [Manipulation part](/docs/en/platform/openmanipulator/#manipulation)
+
+Launch MoveIt!
+
+  ```
+  $ roslaunch open_manipulator_moveit open_manipulator_demo.launch use_gazebo:=true
+  ```
 
   ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_moveit_sim_1.jpg)
 
   ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_moveit_sim_2.jpg)
+
+Gripping (parameters : `grip_on`, `grip_off`, `neutral`)
+
+  ```
+  $ rostopic pub /open_manipulator/gripper std_msgs/String "data: 'grip_on'" --once
+  ```
 
   ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_gripper.png)
 
@@ -366,15 +383,15 @@ You can use MoveIt! to manipulate OpenManipulator. Please refer to [Manipulation
 
 ### Hardware Setup
 
-[Parts of OpenManipulator](https://docs.google.com/a/robotis.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit?usp=sharing)
+[Parts of OpenManipulator](https://docs.google.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit#gid=1916070381)
 
-[CAD Files](https://goo.gl/oVsK8m)
+  * Items that are painted in purple in above link are purchased on ROBOTIS SHOP
+  * Items that are painted in green in above link are purchased on shopping mall
+  * Items that are painted in yellow in above link are 3D printing parts
+
+[CAD Files](http://www.robotis.com/service/download.php?no=691)
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_SCARA_OnShape.png)
-
-* Items that are painted in purple are purchased on ROBOTIS SHOP
-* Items that are painted in green are purchased on shopping mall
-* Items that are painted in yellow are 3D printing parts
 
 ### Software Setup
 
@@ -414,15 +431,15 @@ You can use MoveIt! to manipulate OpenManipulator. Please refer to [Manipulation
 
 ### Hardware Setup
 
-[Parts of OpenManipulator](https://docs.google.com/a/robotis.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit?usp=sharing)
+[Parts of OpenManipulator](https://docs.google.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit#gid=1110711693)
 
-[CAD Files](https://goo.gl/MJ6C8K)
+  * Items that are painted in purple in above link are purchased on ROBOTIS SHOP
+  * Items that are painted in green in above link are purchased on shopping mall
+  * Items that are painted in yellow in above link are 3D printing parts
+
+[CAD Files](http://www.robotis.com/service/download.php?no=692)
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_Link_OnShape.png)
-
-* Items that are painted in purple are purchased on ROBOTIS SHOP
-* Items that are painted in green are purchased on shopping mall
-* Items that are painted in yellow are 3D printing parts
 
 ### Software Setup
 
@@ -434,19 +451,132 @@ You can use MoveIt! to manipulate OpenManipulator. Please refer to [Manipulation
 
 ## [OpenManipulator Planar](#openmanipulator-planar)
 
-**Be released in 2018**
+![](/assets/images/platform/openmanipulator/OpenManipulator_Planar.png)
+
+### Specification
+
+  - **Comming Soon**
+
+### Dimension
+
+  - **Comming Soon**
+
+### Hardware Setup
+
+[Parts of OpenManipulator](https://docs.google.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit#gid=64381687)
+
+  * Items that are painted in purple in above link are purchased on ROBOTIS SHOP
+  * Items that are painted in green in above link are purchased on shopping mall
+  * Items that are painted in yellow in above link are 3D printing parts
+
+[CAD Files](http://www.robotis.com/service/download.php?no=761)
+
+![](/assets/images/platform/openmanipulator/OpenManipulator_Planar_OnShape.png)
+
+### Software Setup
+
+  - **Comming Soon**
+
+### Video
+
+  - **Comming Soon**
 
 ## [OpenManipulator Delta](#openmanipulator-delta)
 
-**Be released in 2018**
+![](/assets/images/platform/openmanipulator/OpenManipulator_Delta.png)
+
+### Specification
+
+  - **Comming Soon**
+
+### Dimension
+
+  - **Comming Soon**
+
+### Hardware Setup
+
+[Parts of OpenManipulator](https://docs.google.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit#gid=1521432651)
+
+  * Items that are painted in purple in above link are purchased on ROBOTIS SHOP
+  * Items that are painted in green in above link are purchased on shopping mall
+  * Items that are painted in yellow in above link are 3D printing parts
+
+[CAD Files](http://www.robotis.com/service/download.php?no=762)
+
+![](/assets/images/platform/openmanipulator/OpenManipulator_Delta_OnShape.png)
+
+### Software Setup
+
+  - **Comming Soon**
+
+### Video
+
+  - **Comming Soon**
 
 ## [OpenManipulator Stewart](#openmanipulator-stewart)
 
-**Be released in 2018**
+![](/assets/images/platform/openmanipulator/OpenManipulator_Stewart.png)
+
+### Specification
+
+  - **Comming Soon**
+
+### Dimension
+
+  - **Comming Soon**
+
+### Hardware Setup
+
+[Parts of OpenManipulator](https://docs.google.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit#gid=42267100)
+
+  * Items that are painted in purple in above link are purchased on ROBOTIS SHOP
+  * Items that are painted in green in above link are purchased on shopping mall
+  * Items that are painted in yellow in above link are 3D printing parts
+
+[CAD Files](http://www.robotis.com/service/download.php?no=763)
+
+![](/assets/images/platform/openmanipulator/OpenManipulator_Stewart_OnShape.png)
+
+### Software Setup
+
+  - **Comming Soon**
+
+### Video
+
+  - **Comming Soon**
 
 ## [OpenManipulator Linear](#openmanipulator-linear)
 
-**Be released in 2018**
+![](/assets/images/platform/openmanipulator/OpenManipulator_Linear.png)
+
+### Specification
+
+  - **Comming Soon**
+
+### Dimension
+
+  - **Comming Soon**
+
+### Hardware Setup
+
+[Parts of OpenManipulator](https://docs.google.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit#gid=1200068410)
+
+  * Items that are painted in purple in above link are purchased on ROBOTIS SHOP
+  * Items that are painted in green in above link are purchased on shopping mall
+  * Items that are painted in yellow in above link are 3D printing parts
+
+[CAD Files](http://www.robotis.com/service/download.php?no=764)
+
+![](/assets/images/platform/openmanipulator/OpenManipulator_Linear_OnShape.png)
+
+### Software Setup
+
+  - **Comming Soon**
+
+### Video
+
+  - **Comming Soon**
+
 
 [OpenCR]: /docs/en/parts/controller/opencr10/
 [OpenCR Manual]: /docs/en/parts/controller/opencr10/

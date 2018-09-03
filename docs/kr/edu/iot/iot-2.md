@@ -23,7 +23,7 @@ sidebar:
 - [R+IoT 앱 파라미터 사용법 바로가기]
 - [로보티즈 IoT 2단계 엔트리 교재 다운받기]
 
-# [부품 리스트](부품-리스트)
+# [부품 목록](부품-목록)
 
 ![](/assets/images/edu/iot/robotis_iot_l2_partlist_kr.png)
 
@@ -40,27 +40,24 @@ sidebar:
 - [R+IoT 설치 및 실행 방법 바로가기]
 - [R+m.task2 설치 및 실행 방법 바로가기]
 
-`주의` 예제 동작시 음원이나 음성이 재생되는 것을 함께 확인하기 위해서는 스마트 기기의 미디어볼륨을 반드시 키우고 실행하길 권장합니다.   
+**주의**: 예제 동작시 음원이나 음성이 재생되는 것을 함께 확인하기 위해서는 스마트 기기의 미디어볼륨을 반드시 키우고 실행하길 권장합니다.   
 {: .notice--warning}
 
 ## [작동방법](#작동방법)
 
 - R+IoT를 실행하고 제어기의 버튼을 눌러 전원을 켜서 대기합니다. R+ 스크래치에서 해당 예제를 클릭하고 연결이 완료되면 프로그램이 실행됩니다.
 
-`Note` 예제 파일은 [교안예제] 에서 얻을 수 있습니다.  
+**참고**: 예제 파일은 [교안예제] 에서 얻을 수 있습니다.  
 {: .notice}  
 
 # [교안예제](#교안예제)
 
-{% capture iot_01 %}
 각 예제의 실행 시 동작에 관한 내용은 교육키트 2단계 교안을 참고하세요.  
 또한, [예제의 실행 방법]을 참고하세요.  
 다운로드시 필요한 USB 케이블은 1단계 구성품에 포함되어 있습니다.
-{% endcapture %}
+{: .notice}
 
-<div class="notice--warning">{{ iot_01 | markdownify }}</div>
-
-|이름|그림|TASK Code
+|이름|그림|TASK Code|
 | :---: | :-----: | :--- |
 |1. Hello! ROBOTIS|![](/assets/images/edu/iot/iot_l2_1_hello_KR.png)|- 실습 파일 [Download][IoT_L2_1_Hello(p)_KR] <br />- 완성 파일 [Download][IoT_L2_1_Hello_KR]|
 |2. 문자 알리미|![](/assets/images/edu/iot/iot_l2_2_messagesignal_KR.png)|- 실습 파일 [Download][IoT_L2_2_MessageSignal(p)_KR]<br />- 완성 파일 [Download][IoT_L2_2_MessageSignal_KR]|

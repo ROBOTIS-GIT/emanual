@@ -25,7 +25,7 @@ sidebar:
 
 통신 포트는 접속이 끊어진 상태에서 `Setup` > `Connect`을 실행하면 다음과 같이 포트 선택창을 볼 수 있으며, 제어기가 연결된 시리얼 포트 및 통신 속도를 선택하고 OK를 누르면 됩니다.
 
-`Note` 제어기의 기본 연결 속도는 `57,600bps`입니다.
+**참고**: 제어기의 기본 연결 속도는 `57,600bps`입니다.
 {: .notice}
 
 ![img](/assets/images/sw/rplus1/terminal/connection.png)

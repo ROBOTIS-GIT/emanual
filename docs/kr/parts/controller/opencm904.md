@@ -27,17 +27,20 @@ sidebar:
 |JTAG/SWD|X|1|1|
 |Micro B USB|X|1|1|
 |5-Pin Port|X|4|4|
-|Dynamixel TTL BUS|X|4|4|
+|Dynamixel TTL BUS|X|4`1`|4`2`|
 |4 Pin 통신 포트|X|1|1|
+
+`1`: [MOLEX 53253-0370] x 2(XL-320 호환), [MOLEX 22-03-5035] x 2(AX 또는 MX 시리즈 호환)  
+`2`: [MOLEX 53253-0370] x 4(XL-320 호환)
 
 - `OpenCM9.04`는 32bit ARM Cortex-M3가 장착되어 있으며, 회로도 및 소스코드가 공개된 로봇용 임베디드 보드입니다.
 - Type으로는 A,B,C type이 있습니다. 위의 Type사진과 표를 보면 커넥터를 제공 여부에 따라 Type이 달라집니다.  
   (A Type의 경우 OpenCM9.04-악세서리 세트를 별도 구매하시면 B,C Type에서 제공하는 모든 커넥터 부품들과 USB Cable을 한번에 구입할 수 있습니다.) [악세서리 구매하기]
 
-`Note` 제어기복구는 현재 OpenCM9.04 C 타입(다윈미니용제어기)만 지원되고있으며,복구방법은 아래 링크에서 확인가능합니다. [OpenCM9.04 C Type 펌웨어 복구하기]
+**참고**: 제어기복구는 현재 OpenCM9.04 C 타입(다윈미니용제어기)만 지원되고있으며,복구방법은 아래 링크에서 확인가능합니다. [OpenCM9.04 C Type 펌웨어 복구하기]
 {: .notice}
 
-`주의` 다이나믹셀 펌웨어 업데이트 및 복구시 OpenCM9.04와 OpenCM 485 확장보드를 반드시 분리해주세요.
+**주의**: 다이나믹셀 펌웨어 업데이트 및 복구시 OpenCM9.04와 OpenCM 485 확장보드를 반드시 분리해주세요.
 {: .notice--warning}
 
 # [제품 사양](#제품-사양)
@@ -61,11 +64,11 @@ sidebar:
 |          크기           |          27mm x 66.5mm          |
 
 {% capture opencm904_caution_01 %}
-`주의`
+**주의**:
 - USB전원으로는 다이나믹셀을 구동할 수 없습니다. 별도의 전원을 공급해주세요.  
-  (OpenCM9.04 는 USB나 배터리 또는 + - 터미널 중에 한 군대 이상만 전원이 공급되면 동작합니다.)
-- 별도의 전원공급시 연결되는 주변장치의 동작전압을 확인해주세요. 다이나믹셀이나 XL-Series의 경우 입력된 전압이 그대로 공급됩니다.
-- 다이나믹셀과 XL-Series는 동작전압차이가 있어 함께 사용할 수 없습니다.
+  (OpenCM9.04 는 USB나 배터리 또는 + - 터미널 중에 하나 이상의 전원이 공급되면 동작합니다.)
+- 별도의 전원공급시 연결되는 주변장치의 동작전압을 확인해주세요. 제어기에 입력된 전압이 다이나믹셀에 바로 공급됩니다.
+- 7.2V를 권장하는 XL-320은 다른 다이나믹셀과 동작전압의 차이가 있어 함께 사용할 수 없습니다.
 {% endcapture %}
 
 <div class="notice--warning">{{ opencm904_caution_01 | markdownify }}</div>
@@ -151,7 +154,7 @@ sidebar:
 |409|1|Port 2 Color Sensor Value|2번 포트 칼라 센서 값 |R|-|
 |410|1|Port 3 Color Sensor Value|3번 포트 칼라 센서 값 |R|-|
 
-`Note` R+ Manager 2.0을 통해서 제어기를 연결하면 컨트롤 테이블을 확인할 수 있습니다. ([컨트롤 테이블 확인하기])
+**참고**: R+ Manager 2.0을 통해서 제어기를 연결하면 컨트롤 테이블을 확인할 수 있습니다. ([컨트롤 테이블 확인하기])
 {: .notice}
 
 # [하드웨어](#하드웨어)
@@ -186,6 +189,8 @@ LBS-04 리튬 이온 배터리 2개를 직렬 연결하는 커넥터 입니다. 
 ### [다이나믹셀 TTL 소켓](#다이나믹셀-ttl-소켓)
 3핀 케이블(Dynamixel TTL Bus)을 사용하는 다이나믹셀을 Daisy chain으로 연결하기 위한 포트 입니다.
 
+{% include kr/dxl/pinout_warning.md %}
+
 ### [통신포트](#통신포트)
 BT-210, BT-110A, ZIG-110A, LN-101 등과 같은 4핀 케이블을 연결해서 외부 장치와 유/무선 통신을 수행합니다. OpenCM9.04의 4핀 통신 포트는 Serial2(USART2)를 사용합니다.
 
@@ -193,7 +198,7 @@ BT-210, BT-110A, ZIG-110A, LN-101 등과 같은 4핀 케이블을 연결해서 �
 
 > 4핀 통신 포트 핀맵
 
-![](/assets/images/parts/controller/opencm904/opencm9.04_2.png)  
+![](/assets/images/parts/controller/opencm904/opencm904_04.png)  
 
 > OpenCM9.04와 스마트폰을 이용한 무선 통신 연결 예시
 
@@ -244,7 +249,7 @@ JTAG/SWD 4핀 포트를 통해서 전문가를 위한 별도의 상용개발프�
 
 > ST-LINK 와 OpenCM9.04 연결 예시
 
-### [5핀 포트](#5핀-포트)
+### [로보티즈 5핀 포트](#로보티즈-5핀-포트)
 ROBOTIS 5핀 장치(모듈)를 연결해 사용 할 수 있습니다.
 
 ![](/assets/images/parts/controller/opencm904/opencm904_12.png)
@@ -340,7 +345,7 @@ OpenCM9.04의 모든 GPIO핀들은 내부적으로 pull-up 또는 pull-down이 �
 
 > JP2를 변경해서 아날로그 입력 기준 전압(AREF)를 5V로 변경한 예시
 
-`주의` 아날로그 기준전압(AREF)을 5V로 변경시 5V 입력 가능한 핀을 확인하세요.
+**주의**: 아날로그 기준전압(AREF)을 5V로 변경시 5V 입력 가능한 핀을 확인하세요.
 {: .notice--danger}
 
 # [전원 연결 방법](#전원-연결-방법)
@@ -354,7 +359,7 @@ OpenCM보드는 아래와 같이 3가지 전원 포트로 보드를 작동시킬
 
 XL-320 다이나믹셀을 구동시키기 위해서는 LBS-04 배터리 2개를 배터리 소켓에 연결하는 것을 추천합니다.
 
-![](/assets/images/parts/controller/opencm904/opencm9.04_12.png)
+![](/assets/images/parts/controller/opencm904/opencm904_18.png)
 
 > OpenCM9.04와 XL-320, LBS-40(Li-Ion Battery) 연결 예시
 
@@ -364,31 +369,31 @@ XL-320 다이나믹셀을 구동시키기 위해서는 LBS-04 배터리 2개를 
 
 XL-320을 제외한 3핀 TTL 다이나믹셀은 헤더의 +-핀 또는 배터리 소켓을 이용해 전원을 공급하시길 추천합니다.
 
-![](/assets/images/parts/controller/opencm904/opencm9.04_15.jpg)
+![](/assets/images/parts/controller/opencm904/opencm904_19.png)
 
 > OpenCM9.04와 AX12 연결 예시
 
 아래의 그림과 같이 배터리 커넥터의 양끝 +,-에 연결하고 전원을 공급할 수 있는 장치로 연결도 가능합니다.  
 (OpenCM9.04 뒷면을 보면 그림A와 같이 가운데 +,-가 연결 되어있으므로 아래와 같이 연결이 가능합니다.)
 
-![](/assets/images/parts/controller/opencm904/opencm9.04_15_2.jpg)
+![](/assets/images/parts/controller/opencm904/opencm904_20.jpg)
 
-![](/assets/images/parts/controller/opencm904/opencm9.04_15_1.jpg)
+![](/assets/images/parts/controller/opencm904/opencm904_21.jpg)
 
 > 전원 연결 예시
 
 아래와 그림과 같이 배터리 소켓과 +-핀으로 동시 전원 공급은 피하세요.  
 그리고 배터리 소켓에 배터리를 혼용하지 마십시요. 배터리 소켓은 LBS-40 배터리만 사용해 주세요.
 
-![](/assets/images/parts/controller/opencm904/opencm9.04_17.jpg)
+![](/assets/images/parts/controller/opencm904/opencm904_22.jpg)
 
 - 배터리 커넥터 및 +-헤더핀 전원 두 개중 하나는 제거
 
-  ![](/assets/images/parts/controller/opencm904/opencm9.04_17.jpg)
+  ![](/assets/images/parts/controller/opencm904/opencm904_22.jpg)
 
 - 배터리 혼용 금지
 
-  ![](/assets/images/parts/controller/opencm904/opencm9.04_14.png)
+  ![](/assets/images/parts/controller/opencm904/opencm904_24.png)
 
 USB 포트는 LBS-40 배터리 혹은 +-핀과 동시 연결해도 무방합니다.(차단회로 내장)  
 +- 혹은 배터리로 공급되는 전압은 다이나믹셀의 권장 전압으로 사용하시길 추천합니다.  
@@ -403,11 +408,11 @@ LBS-40 배터리를 직렬 연결한 채로 USB 충전은 쇼트가 생길 수 �
 A타입에는 전원 스위치가 없이 JP1이 쇼트처리 되어서 판매됩니다. 전원 스위치를 추가하기 위해서는 JP1의 납땜 처리를 제거하시고 2.54mm pitch 전원 스위치를 추가하시면 됩니다.  
 전원스위치는 OpenCM9.04 악세사리 키트에 포함되어 있고 pitch가 맞는 전원 스위치를 따로 구해서 사용할 수 있습니다.
 
-![](/assets/images/parts/controller/opencm904/opencm9.04_23.png)
+![](/assets/images/parts/controller/opencm904/opencm904_25.png)
 
 > JP1과 전원 스위치 회로도 : JP1이 연결되어 있으면 스위치가 없이도 동작합니다.
 
-![](/assets/images/parts/controller/opencm904/opencm9.04_24.png)
+![](/assets/images/parts/controller/opencm904/opencm904_26.png)
 
 > OpenCM9.04의 A타입에서는 JP1의 연결을 끊고 스위치를 추가해야 제대로 동작합니다.
 
@@ -416,36 +421,37 @@ A타입에는 전원 스위치가 없이 JP1이 쇼트처리 되어서 판매됩
 OpenCM9.04의 다이나믹셀 TTL 3핀 홀은 기존 다이나믹셀 TTL 3핀과 XL-320 TTL 3핀(미니타입)이 모두 호환 가능합니다. 따라서 두 가지 종류의 커넥터 모두 납땜해서 사용할 수 있습니다.  
 참고로 2종류의 TTL 3핀은 OpenCM 악세사리 키트에 모두 포함되어 있습니다.
 
-![](/assets/images/parts/controller/opencm904/opencm9.04_25.png)
+![](/assets/images/parts/controller/opencm904/opencm904_27.png)
 
 > OpenCM9.04 A타입은 2가지 종류의 3핀 커넥터를 모두 납땜할 수 있습니다
 
 
 # [소프트웨어 개발환경](#소프트웨어-개발환경)
 
-- [Arduino IDE]
+- [아두이노 IDE]
 - [OpenCM IDE]
 
-||[Arduino IDE]|[OpenCM IDE]|
+||[아두이노 IDE]|[OpenCM IDE]|
 |:---:|:---:|:---:|
 |[Dynamixel SDK]|O|X|
 |[DynamixelWorkbench]|O|X|
-|Arduino Libraries|O|O|
+|아두이노 라이브러리|O|O|
 |OS X|O|O (10.12.2)|
-|Linux|O|O (12.04)|
-|Windows|O|O|
+|리눅스|O|O (12.04)|
+|윈도우즈|O|O|
 
 ## [OpenCM IDE](#opencm-ide)
-For developers who are using OpenCM IDE, it is recommended to use [Arduino IDE] as OpenCM IDE will not be maintained anymore.
+OpenCM IDE는 더이상 업데이트되지 않습니다. [아두이노 IDE]를 사용하시는 것을 권장드립니다.
 
-`e-Manual` [OpenCM IDE]
+- [OpenCM IDE] 매뉴얼
 
 ## [아두이노 IDE](#아두이노-ide)
 
 ### [리눅스에 설치하기](#리눅스에-설치하기)
 
-#### USB port settings
-Make the OpenCM9.04 USB port be able to upload the Arduino IDE program without root permission.
+#### USB 포트 설정
+리눅스 환경의 아두이노 IDE에서 루트 권한이 없이 USB를 통해 OpenCM9.04에 스케치를 업로드하기 위해서는 아래와 같은 작업이 필요합니다.
+
 ```
 wget https://raw.githubusercontent.com/ROBOTIS-GIT/OpenCM9.04/master/99-opencm-cdc.rules
 sudo cp ./99-opencm-cdc.rules /etc/udev/rules.d/
@@ -453,71 +459,81 @@ sudo udevadm control --reload-rules
 sudo udevadm trigger
 ```
 
-#### Compiler Settings
-Since the OpenCM9.04 libraries is built for 32 bit platform, 64 bit PC needs the 32 bit compiler relevants for the ArduinoIDE.
+#### 컴파일러 설정
+OpenCM9.04의 라이브러리는 32비트 플랫폼에서 작성되었기 때문에 64비트 PC에서는 아래와 같이 32비트용 컴파일러를 설치해주어야 합니다.
+
 ```
 sudo apt-get install libncurses5-dev:i386
 ```
 
-#### Install the Arduino IDE
+#### 아두이노 IDE 설치하기
 
-Download the latest version of Arduino IDE from the official arduino homepage, and install it. Currently, the OpenCR will be on service in the version 1.6.4 or later.
+아래의 아두이노 홈페이지에서 최신버전의 아두이노 IDE를 다운로드 받은 뒤 설치하십시오.  
+OpenCM9.04는 1.6.4 이상의 아두이노 IDE에서 동작을 확인했습니다.
 
 [https://www.arduino.cc/en/Main/Software](https://www.arduino.cc/en/Main/Software)
 
-Then, extract the downloaded file to the desired folder and execute the installation file from the terminal. In this case, the example shown below makes the folder tools in the user’s top folder (~/). This folder will act as the Arduino IDE folder.
+원하는 위치에 압축파일을 해제하고 터미널에서 설치파일을 실행하십시오.  
+아래는 사용자의 최상위 폴더(~/)에 아두이노 IDE 1.8.3을 설치하는 예제입니다.
+
 ```
 cd ~/tools/arduino-1.8.3
 ./install.sh
 ```
 
-Set the file path of installed Arduino IDE as an absolute path named PATH in the bashrc file. Here recommends to use gedit editor. (Use another editor, if necessary.) Finally, source it to apply the changes.
+아두이노 IDE가 설치된 파일 경로와 절대경로명을 `.bashrc` 파일에 입력하십시오.  
+여기에서는 gedit 에디터를 사용했습니다.  
+입력이 완료되면 source 명령어를 사용해서 변경된 설정을 적용시켜주어야 합니다.
+
 ```
 gedit ~/.bashrc
 export PATH=$PATH:$HOME/tools/arduino-1.8.3
 source ~/.bashrc
 ```
 
-#### Run the Arduino IDE
+#### 아두이노 IDE 실행하기
 
-To run the Arduino IDE on Linux platform, type into the terminal as follows.
+리눅스 환경에서 아두이노 IDE를 실행하기 위해서는 터미널 창에 다음과 같이 입력하십시오.
+
 ```
 arduino
 ```
 
-#### Porting the OpenCM9.04 board to the Arduino IDE
+#### OpenCM9.04를 아두이노 IDE에 포팅하기
 
-##### Preferences
-After Arduino IDE is run, click File → Preferences in the top menu of the IDE. When the Preferences window appears, copy and paste following link to the Additional Boards Manager URLs textbox. (This step may take about 20 min.)
+##### 환경설정
+아두이노 IDE가 실행되면 File > Prefereneces를 클릭한 다음 아래의 주소를 Additional Boards Maanger URLs 텍스트상자에 입력하십시오.
 
 [https://raw.githubusercontent.com/ROBOTIS-GIT/OpenCM9.04/master/arduino/opencm_release/package_opencm9.04_index.json](https://raw.githubusercontent.com/ROBOTIS-GIT/OpenCM9.04/master/arduino/opencm_release/package_opencm9.04_index.json)
 
 ![](/assets/images/parts/controller/opencm904/opencm9.04_linux_1.png)
 
 
-##### Install the OpenCM9.04 package via Boards Manager
-Click Tools → Board → Boards Manager.
+##### 보드 매니저를 통해 OpenCM9.04 패키지 설치하기
+
+Tools > Board > Boards Manager를 선택하고 아래와 같이 설치하십시오. (네트워크 사정에 따라 다르지만 20분정도 걸립니다.)
 
 ![](/assets/images/parts/controller/opencm904/opencm9.04_linux_2.png)
 
-Type OpenCM9.04 into the textbox to find the OpenCM9.04 by ROBOTIS package. After it finds out, click Install.
+텍스트상자에 "OpenCM9.04"를 입력하고 검색된 패키지 중 ROBOTIS에서 제작된 패키지를 선택하고 설치하십시오.
 
 ![](/assets/images/parts/controller/opencm904/opencm9.04_linux_3.png)
 
-After the installation, “INSTALLED” will be appeared.
+설치가 완료되면 “INSTALLED” 라는 문구가 표시됩니다.
 
 ![](/assets/images/parts/controller/opencm904/opencm9.04_linux_4.png)
 
-See if OpenCM9.04 Board is now on the list of Tools → Board. Click this to import the OpenCM9.04 Board source.
+Tools > Board에서 OpenCM9.04 보드가 보이는지 확인하십시오. OpenCM9.04 관련 소스를 불러오기 위해서는 OpenCM9.04 보드를 선택해야 합니다.
 
 ![](/assets/images/parts/controller/opencm904/opencm9.04_linux_5.png)
 
-##### Port setting
-This step shows the port setting for the program uploads. The OpenCM9.04 should be connected to the PC and the OpenCM9.04 via the USB ports.
+##### 포트 설정
+여기에서는 프로그램을 업로드하기 위한 포트 설정을 합니다.  
+OpenCM9.04와 PC가 USB를 통해 연결되어 있어야 합니다.
 
-Select Tools → Port → /dev/ttyACM0.
+Tools > Port > /dev/ttyACM0를 선택하십시오.
 
-The value of /dev/ttyACM0 may be different depending on the environment connected to the PC.
+`/dev/ttyACM0`의 마지막 숫자는 PC의 환경에 따라 바뀔 수 있습니다.
 {: .notice}
 
 
@@ -525,50 +541,52 @@ The value of /dev/ttyACM0 may be different depending on the environment connecte
 
 ### [맥에 설치하기](#맥에-설치하기)
 
-#### Install the Arduino IDE
+#### 아두이노 IDE 설치하기
 
-Download the latest version of Arduino IDE from the official arduino homepage, and install it. Currently, the OpenCM9.04 will be on service in the version 1.6.4 or later.
+아래의 아두이노 홈페이지에서 최신버전의 아두이노 IDE를 다운로드 받은 뒤 설치하십시오.  
+OpenCM9.04는 1.6.4 이상의 아두이노 IDE에서 동작을 확인했습니다.
 
 [https://www.arduino.cc/en/Main/Software](https://www.arduino.cc/en/Main/Software)
 
-#### Run the Arduino IDE
+#### 아두이노 IDE 실행하기
 
-To run the Arduino IDE on Mac platform, click the Arduino IDE icon as follows.
+맥에서 아두이노 IDE를 실행하기 위해서는 아래와 같이 아두이노 IDE 아이콘을 클릭하십시오.
 
 ![](/assets/images/parts/controller/opencm904/arduino_mac_01.png)
 
 ![](/assets/images/parts/controller/opencm904/arduino_mac_02.png)
 
-#### Porting the OpenCM9.04 board to the Arduino IDE
+#### OpenCM9.04를 아두이노 IDE에 포팅하기
 
-##### Preferences
-After Arduino IDE is run, click File → Preferences in the top menu of the IDE. When the Preferences window appears, copy and paste following link to the Additional Boards Manager URLs textbox. (This step may take about 20 min.)
+##### 환경설정
+아두이노 IDE가 실행되면 File > Prefereneces를 클릭한 다음 아래의 주소를 Additional Boards Maanger URLs 텍스트상자에 입력하십시오.
 
 [https://raw.githubusercontent.com/ROBOTIS-GIT/OpenCM9.04/master/arduino/opencm_release/package_opencm9.04_index.json](https://raw.githubusercontent.com/ROBOTIS-GIT/OpenCM9.04/master/arduino/opencm_release/package_opencm9.04_index.json)
 
 ![](/assets/images/parts/controller/opencm904/opencm9.04_mac_1.png)
 
-##### Install the OpenCM9.04 package via Boards Manager
-Click Tools → Board → Boards Manager.
+##### 보드 매니저를 통해 OpenCM9.04 패키지 설치하기
+Tools > Board > Boards Manager를 선택하고 아래와 같이 설치하십시오. (네트워크 사정에 따라 다르지만 20분정도 걸립니다.)
 
 ![](/assets/images/parts/controller/opencm904/opencm9.04_mac_2.png)
 
-Type OpenCM9.04 into the textbox to find the OpenCM9.04 by ROBOTIS package. After it finds out, click Install.
+텍스트상자에 "OpenCM9.04"를 입력하고 검색된 패키지 중 ROBOTIS에서 제작된 패키지를 선택하고 설치하십시오.
 
 ![](/assets/images/parts/controller/opencm904/opencm9.04_mac_3.png)
 
-After the installation, “INSTALLED” will be appeared.
+설치가 완료되면 “INSTALLED” 라는 문구가 표시됩니다.
 
 ![](/assets/images/parts/controller/opencm904/opencm9.04_mac_4.png)
 
-See if OpenCM9.04 Board is now on the list of Tools → Board. Click this to import the OpenCM9.04 Board source.
+Tools > Board에서 OpenCM9.04 보드가 보이는지 확인하십시오. OpenCM9.04 관련 소스를 불러오기 위해서는 OpenCM9.04 보드를 선택해야 합니다.
 
-##### Port setting
-This step shows the port setting for the program uploads. The OpenCM9.04 should be connected to the PC and the OpenCM9.04 via the USB ports.
+##### 포트 설정
+여기에서는 프로그램을 업로드하기 위한 포트 설정을 합니다.  
+OpenCM9.04와 PC가 USB를 통해 연결되어 있어야 합니다.
 
-Select Tools → Port → /dev/ttyACM0.
+Tools > Port > /dev/ttyACM0를 선택하십시오.
 
-The value of /dev/ttyACM0 may be different depending on the environment connected to the PC.
+`/dev/ttyACM0`의 마지막 숫자는 PC의 환경에 따라 바뀔 수 있습니다.
 {: .notice}
 
 ![](/assets/images/parts/controller/opencm904/opencm9.04_mac_6.png)
@@ -576,50 +594,52 @@ The value of /dev/ttyACM0 may be different depending on the environment connecte
 ### [윈도우즈에 설치하기](#윈도우즈에-설치하기)
 
 #### Install Virtual COM Port Driver
-To use OpenCM9.04's USB port as a serial port in Windows, you need a USB CDC driver. You can install the USB driver as follows.
+USB 포트를 통해 OpenCM9.04를 윈도우즈 환경에서 사용하려면 USB CDC 드라이버를 설치해야 합니다. 아래 방법으로 설치하시기 바랍니다.
 
-- [Install Windows Driver](/docs/en/parts/controller/opencm904/#install-windows-driver)
+- [윈도우즈 드라이버 설치방법](/docs/en/parts/controller/opencm904/#install-windows-driver)
 
-#### Install the Arduino IDE
+#### 아두이노 IDE 설치하기
 
-Download the latest version of Arduino IDE from the official arduino homepage, and install it. Currently, the OpenCR will be on service in the version 1.6.4 or later.
+아래의 아두이노 홈페이지에서 최신버전의 아두이노 IDE를 다운로드 받은 뒤 설치하십시오.  
+OpenCM9.04는 1.6.4 이상의 아두이노 IDE에서 동작을 확인했습니다.
 
 [https://www.arduino.cc/en/Main/Software](https://www.arduino.cc/en/Main/Software)
 
-The Arduino IDE for Windows is available as an installation version and a compressed version, so you can install it using your preferred method.
+윈도우즈 버전의 아두이노 IDE는 압축파일 형태와 설치 형태로 구분됩니다. 선호하는 방법으로 설치하시기 바랍니다.
 
-#### Porting the OpenCR9.04 board to the Arduino IDE
+#### OpenCM9.04를 아두이노 IDE에 포팅하기
 
-##### Preferences
-After Arduino IDE is run, click File → Preferences in the top menu of the IDE. When the Preferences window appears, copy and paste following link to the Additional Boards Manager URLs textbox. (This step may take about 20 min.)
+##### 환경설정
+아두이노 IDE가 실행되면 File > Prefereneces를 클릭한 다음 아래의 주소를 Additional Boards Maanger URLs 텍스트상자에 입력하십시오.
 
 [https://raw.githubusercontent.com/ROBOTIS-GIT/OpenCM9.04/master/arduino/opencm_release/package_opencm9.04_index.json](https://raw.githubusercontent.com/ROBOTIS-GIT/OpenCM9.04/master/arduino/opencm_release/package_opencm9.04_index.json)
 
 ![](/assets/images/parts/controller/opencm904/opencm904_win_1.png)
 
-##### Install the OpenCM9.04 package via Boards Manager
-Click Tools → Board → Boards Manager.
+##### 보드 매니저를 통해 OpenCM9.04 패키지 설치하기
+Tools > Board > Boards Manager를 선택하고 아래와 같이 설치하십시오. (네트워크 사정에 따라 다르지만 20분정도 걸립니다.)
 
 ![](/assets/images/parts/controller/opencm904/opencm904_win_2.png)
 
-Type OpenCM9.04 into the textbox to find the OpenCM9.04 by ROBOTIS package. After it finds out, click Install.
+텍스트상자에 "OpenCM9.04"를 입력하고 검색된 패키지 중 ROBOTIS에서 제작된 패키지를 선택하고 설치하십시오.
 
 ![](/assets/images/parts/controller/opencm904/opencm904_win_3.png)
 
-After the installation, “INSTALLED” will be appeared.
+설치가 완료되면 “INSTALLED” 라는 문구가 표시됩니다.
 
 ![](/assets/images/parts/controller/opencm904/opencm904_win_4.png)
 
-See if OpenCM9.04 Board is now on the list of Tools → Board. Click this to import the OpenCM9.04 Board source.
+Tools > Board에서 OpenCM9.04 보드가 보이는지 확인하십시오. OpenCM9.04 관련 소스를 불러오기 위해서는 OpenCM9.04 보드를 선택해야 합니다.
 
 ![](/assets/images/parts/controller/opencm904/opencm904_win_5.png)
 
-##### Port setting
-This step shows the port setting for the program uploads. The OpenCM9.04 should be connected to the PC and the OpenCM9.04 via the USB ports.
+##### 포트 설정
+여기에서는 프로그램을 업로드하기 위한 포트 설정을 합니다.  
+OpenCM9.04와 PC가 USB를 통해 연결되어 있어야 합니다.
 
-Select Tools > Port > COM1.
+Tools > Port > COM1를 선택하십시오.
 
-The value of COM1 may be different depending on the environment connected to the PC.
+`COM1`의 마지막 숫자인 포트번호는 PC의 환경에 따라 바뀔 수 있습니다. 장치관리자에서 포트번호를 확인하시기 바랍니다.
 {: .notice}
 
 # [다운로드](#다운로드)
@@ -637,10 +657,11 @@ The value of COM1 may be different depending on the environment connected to the
 ![](/assets/images/parts/controller/opencm904/floor_plan.png)
 
 
-
+[MOLEX 53253-0370]: https://www.molex.com/molex/products/datasheet.jsp?part=active/0532530370_PCB_HEADERS.xml
+[MOLEX 22-03-5035]: http://www.molex.com/molex/products/datasheet.jsp?part=active/0022035035_PCB_HEADERS.xml
 [악세서리 구매하기]: http://www.robotis.com/shop/item.php?it_id=902-0084-030
 [OpenCM9.04 C Type 펌웨어 복구하기]: /docs/kr/edu/mini/#로보티즈-미니-제어기-펌웨어-업데이트
-[Arduino IDE]: #아두이노-ide
+[아두이노 IDE]: #아두이노-ide
 [OpenCM IDE]: /docs/kr/software/opencm_ide/getting_started/
 [Dynamixel SDK]: /docs/kr/software/dynamixel/dynamixel_sdk/overview/
 [DynamixelWorkbench]: /docs/kr/software/dynamixel/dynamixel_workbench/

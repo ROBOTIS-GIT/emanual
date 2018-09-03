@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: turtlebot3_appendix_realsense
+ref: appendix_realsense
 read_time: true
 share: true
 author_profile: false
@@ -11,19 +11,24 @@ sidebar:
   nav: "turtlebot3"
 ---
 
-<div style="counter-reset: h1 24"></div>
+<div style="counter-reset: h1 21"></div>
+<div style="counter-reset: h2 3"></div>
 
-# [Appendix #RealSense™](#appendix-realsense)
+<!--[dummy Header 1]>
+  <h1 id="appendixes"><a href="#appendixes">Appendixes</a></h1>
+<![end dummy Header 1]-->
+
+## [RealSense™](#appendix-realsense)
 
 ![](/assets/images/platform/turtlebot3/appendix_realsense/realsense_r200.png)
 
-## [Overview](#overview)
+### [Overview](#overview)
 
 [Intel® RealSense™](https://click.intel.com/realsense.html) is a platform for implementing gesture-based human-computer interaction techniques. It consists of series of consumer grade 3D cameras together with an easy to use machine perception library. The Intel® RealSense™ R200 camera is a USB 3.0 device that can provide color, depth, and infrared video streams. The TurtleBot3 Waffle model adopts Intel® RealSense™ R200 to enable 3D SLAM and navigation, and it is possible to apply various applications such as gesture recognition, object recognition and scene recognition based on 3D depth information obtained using RealSense™'s innovative Active Stereo Technology.
 
-## [Specifications](#specifications)
+### [Specifications](#specifications)
 
-### [Technical Specifications](#technical-specifications)
+#### [Technical Specifications](#technical-specifications)
 
 | Items                    | Specifications                                                     |
 |--------------------------|--------------------------------------------------------------------|
@@ -38,7 +43,7 @@ sidebar:
 | Dimensions               | 101.56mm length x 9.55mm height x 3.8mm width                      |
 | Mass                     | Under 35g                                                          |
 
-### [Minimum System Requirements](#minimum-system-requirements)
+#### [Minimum System Requirements](#minimum-system-requirements)
 
 | Items                    | Specifications                                                     |
 |--------------------------|--------------------------------------------------------------------|
@@ -53,20 +58,20 @@ sidebar:
 
 Here is the detail specification document: [Intel® RealSense™ Datasheet](https://software.intel.com/sites/default/files/managed/d7/a9/realsense-camera-r200-product-datasheet.pdf)
 
-## [Intel® RealSense™ R200 for TurtleBot3](#intel-realsense-r200-for-turtlebot3)
+### [Intel® RealSense™ R200 for TurtleBot3](#intel-realsense-r200-for-turtlebot3)
 
 The Intel® RealSense™ R200 is applied on TurtleBot3 Waffle.
 
 ![](/assets/images/platform/turtlebot3/hardware_setup/turtlebot3_models.png)
 
-## [Introduction Video](#introduction-video)
+### [Introduction Video](#introduction-video)
 
 The TurtleBot3 Waffle uses Intel® RealSense™ Camera R200 as a default vision sensor. Check this video out that shows how Intel® RealSense™ Camera R200 can be used in TurtleBot3 Waffle.
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/V8VJUkWWaO8?ecver=1" frameborder="0" allowfullscreen></iframe>
 
 
-## [User Guide](#user-guide)
+### [User Guide](#user-guide)
 
 [Intel® RealSense™ packages](http://wiki.ros.org/RealSense) enable the use of Intel® RealSense™ R200, F200, SR300 and ZR300 cameras with ROS. Below table describes packages required to operate Intel® RealSense™. You will be guided to install these packaged in the next section.
 
@@ -75,7 +80,7 @@ The TurtleBot3 Waffle uses Intel® RealSense™ Camera R200 as a default vision 
 | [librealsense](http://wiki.ros.org/librealsense)         | Underlying library driver for communicating with Intel® RealSense™ camera |
 | [realsense_camera](http://wiki.ros.org/realsense_camera) | ROS Intel® RealSense™ camera node for publishing camera                   |
 
-### [Installation](#installation)
+#### [Installation](#installation)
 
 **Warning!** There are installation prerequisites for the Intel® RealSense™ package installation in http://wiki.ros.org/librealsense
 {: .notice--warning}
@@ -89,7 +94,7 @@ $ sudo apt-get install ros-kinetic-librealsense
 
 **[TurtleBot]** To run the Intel® RealSense™ with ROS, the following package is needed. There are stable and unstable version packages. Choose one and install it.
 
-#### [Stable]
+##### [Stable]
 
 ``` bash
 $ cd catkin_ws/src
@@ -99,13 +104,13 @@ $ git checkout 1.8.0
 $ cd catkin_ws && catkin_make -j2
 ```
 
-#### [Unstable]
+##### [Unstable]
 
 ``` bash
 $ sudo apt-get install ros-kinetic-realsense-camera
 ```
 
-### [Run realsense_camera Node](#run-realsense_camera-node)
+#### [Run realsense_camera Node](#run-realsense_camera-node)
 
 **[TurtleBot]** Run the following command
 
@@ -123,7 +128,7 @@ $ rqt_image_view
 
 Once the gui application is appeared on the screen, you can select data topic name related to Intel® RealSense™ from drop down menu at the top of the application.
 
-### [(Optional) To Try as the Example Video Shows](#optional-to-try-as-the-example-video-shows)
+#### [(Optional) To Try as the Example Video Shows](#optional-to-try-as-the-example-video-shows)
 
 **[TurtleBot]** Input `ctrl` + `c` to quit the previously run camera node, then run other realsense_camera node
 
@@ -160,7 +165,7 @@ $ rosrun rviz rviz -d `rospack find turtlebot3_slam`/rviz/turtlebot3_slam.rviz
 **[Remote PC]** Click `add` - `By topic` and find the Image type `/image_color` topic in `/camera/rgb`, then click it. This will show the view of the rgb camera
 
 
-## [References](#references)
+### [References](#references)
 
 - [Intel® RealSense™ Datasheet](https://software.intel.com/sites/default/files/managed/d7/a9/realsense-camera-r200-product-datasheet.pdf)
 - [Data ranges](https://software.intel.com/en-us/articles/intel-realsense-data-ranges)

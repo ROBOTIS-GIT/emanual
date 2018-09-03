@@ -6,9 +6,9 @@ Gains values are in between 0 ~ 254.
 
 ![](/assets/images/dxl/mx/mx-12_pid_control.png)
 
-- `K<sub>p</sub>` = P Gain / 8
-- `K<sub>i</sub>` = I Gain * 1,000 / 2,048
-- `K<sub>d</sub>` = D Gain * 4 / 1,000
+- **K<sub>p</sub>** : P Gain / 8
+- **K<sub>i</sub>** : I Gain * 1,000 / 2,048
+- **K<sub>d</sub>** : D Gain * 4 / 1,000
 
 **The relationship between Compliance Slop and PID**
 

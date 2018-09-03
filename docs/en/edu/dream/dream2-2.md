@@ -18,7 +18,11 @@ sidebar:
 ROBOTIS DREAM II Level 2 teaches you the basics of how a robot moves, which includes the usage of sensors, speed and force, gait, and drive.  
 This level comes with 12 chapters to help you understand the scientific and physical theory using experiments as you build the robots chapter by chapter.
 
-`Caution` ROBOTIS DREAM II Level 2 requires parts from ROBOTIS DREAM II Level 1. Please make sure to purchase Level 1 first to build the robots in Level 2. The controller ([CM-150]) in ROBOTIS DREAM II level 2 contains a "Comprehensive Program" that can make the robot move without downloading a program. To program or download a program you will need the USB Cable included in the ROBOTIS DREAM II Level 1. If you want to build and program your robots using more parts and peripheral devices, please purchase the ROBOTIS DREAM II Level 3 or necessary parts separately.
+**CAUTION** : ROBOTIS DREAM II Level 2 requires parts from ROBOTIS DREAM II Level 1.  
+Please make sure to purchase Level 1 first to build the robots in Level 2.  
+The controller ([CM-150]) in ROBOTIS DREAM II level 2 contains a "Comprehensive Program" that can make the robot move without downloading a program.  
+To program or download a program you will need the USB Cable included in the ROBOTIS DREAM II Level 1.  
+If you want to build and program your robots using more parts and peripheral devices, please purchase the ROBOTIS DREAM II Level 3 or necessary parts separately.
 {: .notice}
 
 # [Part List](#part-list)
@@ -32,7 +36,7 @@ This level comes with 12 chapters to help you understand the scientific and phys
 
 ROBOTIS DREAM II level 2 comes with a "Comprehensive Program" in the controller that can make the robot move without downloading a program.
 
-`Caution` The comprehensive program in the controller will be overwritten when downloading a program. Therefore, you must download the program using [USB Downloader(LN-101)].
+**CAUTION** : The comprehensive program in the controller will be overwritten when downloading a program. Therefore, you must download the program using [USB Downloader(LN-101)].
 {: .notice--warning}
 
 ## [How to Play](#how-to-play)
@@ -59,18 +63,23 @@ ROBOTIS DREAM II level 2 comes with a "Comprehensive Program" in the controller 
 |11 (Fa')|Chapter 11. Crocodile|![](/assets/images/edu/dream/dream1-2_crocodile.jpg)|
 |12 (Sol')|Chapter 12. Imagine|![](/assets/images/edu/dream/dream1-2_imagine.jpg)|
 
-`Note` Download the example program under the ROBOTIS DREAM II Level 2 directory using the USB cable included in Level 1. The USB cable can also be purchased separately.
+**NOTE** : Download the example program under the ROBOTIS DREAM II Level 2 directory using the USB cable included in Level 1. The USB cable can also be purchased separately.
 {: .notice}
 
 # [Examples](#examples)
 
-For more information assembly and operation, please refer to the ROBOTIS II DREAM Level 2 workbook. The controller initially comes with the comprehensive program pre-installed in it. To create your own program or download, click here to read more on [How to Download Task code]. You will need the USB cable to download the programs. This is included in ROBOTIS DREAM II Level 1.
+For more information assembly and operation, please refer to the ROBOTIS II DREAM Level 2 workbook.  
+The controller initially comes with the comprehensive program pre-installed in it.  
+To create your own program or download, click here to read more on [How to Download Task code].  
+You will need the USB cable to download the programs.  
+This is included in ROBOTIS DREAM II Level 1.
 {: .notice}
 
 ## [Integrated Example Program](#integrated-example-program)
 - This program is basically included in the main controller when you purchase the goods.
 - Please refer to the Operating Method to see how to use this program.  
-  `Download` [DREAM2_L2_Total_EN.tsk]
+
+`Download` [DREAM2_L2_Total_EN.tsk]
 
 ## [Example program of each chapter](#example-program-of-each-chapter)
 

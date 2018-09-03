@@ -1,4 +1,4 @@
-It is a moving speed to Goal Position.
+It is a moving speed to Goal Position.  
 The range and the unit of the value may vary depending on the operation mode.
 
 + **Join Mode**  
@@ -7,7 +7,7 @@ The range and the unit of the value may vary depending on the operation mode.
   If it is 1023, it is about 114rpm.  
   For example, if it is set to 300, it is about 33.3 rpm.
 
-  `Note` Please check the maximum rpm of the Dynamixel. The motor cannot exceed the maximum rpm with the higher Moving Speed value.
+  **NOTE** : Please check the maximum rpm of the Dynamixel. The motor cannot exceed the maximum rpm with the higher Moving Speed value.
   {: .notice}
 
 + **Wheel Mode**  

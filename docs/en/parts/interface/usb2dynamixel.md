@@ -33,7 +33,7 @@ Also, USB2Dynamixel can be used to change from USB port to Serial port on the PC
 
 ![](/assets/images/parts/interface/usb2dynamixel_03.png)
 
-`Note` Difference in voltage may cause unstable USB2DXL connections. Ensure that both connecting equipment and PC are properly grounded.
+**NOTE** : Difference in voltage may cause unstable USB2DXL connections. Ensure that both connecting equipment and PC are properly grounded.
 {: .notice}
 
 # [Layout](#layout)
@@ -109,7 +109,7 @@ Connect additionally Y-cable to the power cable on the #1 PIN of  USB2Dynamixel 
 
 How to check whether the USB2Dynamixel driver is installed correctly.
 
-`Note` USB2Dynamixel and LN-101 uses an identical USB chipset.
+**NOTE** : USB2Dynamixel and LN-101 uses an identical USB chipset.
 {: .notice}
 
 1. Connect USB2Dynamixel to the USB Port of PC.

@@ -295,7 +295,7 @@ Registers an interrupt handler on a pin. The interrupt will be triggered on a gi
   - FALLING : To trigger an interrupt when the pin transitions HIGH to LOW.
   - CHANGE : To trigger an interrupt when the pin transitions from LOW to HIGH or HIGH to LOW (i.e., when the pin changes).
  
-`Note` You should set the pin mode of your desired pin to an input mode (e.g. INPUT, INPUT_PULLUP, INPUT_PULLDOWN). Because the function will run in interrupt context, inside of it, delay() won’t work, and the value returned by millis() will not increment. Serial data received while in the function may be lost. You should declare as volatile any global variables that you modify within the attached function.
+**NOTE** : You should set the pin mode of your desired pin to an input mode (e.g. INPUT, INPUT_PULLUP, INPUT_PULLDOWN). Because the function will run in interrupt context, inside of it, delay() won’t work, and the value returned by millis() will not increment. Serial data received while in the function may be lost. You should declare as volatile any global variables that you modify within the attached function.
 {: .notice}
 
 #### Return Values
@@ -560,11 +560,11 @@ void loop() {
 
 Read an analog value from pin. This function blocks during ADC conversion, and has 12 bits of resolution. The pin must have its mode set to INPUT_ANALOG.  
 Reads the value from the specified analog pin. The OpenCM boards contain 16-channel, 12-bit analog to digital converters.  
-This means that a converter will map input voltages between 0 and 3.3 volts into integer values between 0 and 4095.  
+This means that a converter will map input voltages between 0 and 3.3 volts into integer values between 0 and 4,095.  
 However, a number of factors interfere with getting full accuracy and precision.  
 
 The Arduino board contains a 6 channel (8 channels on the Mini and Nano, 16 on the Mega), 10-bit analog to digital converter with an input voltage range of 0V–5V.  
-This means that it will map input voltages between 0 and 5 volts (which is larger than OpenCM’s range of 0V-3.3V) into integer values between 0 and 1023 (which is smaller than the OpenCM’s range of 0–4095).  
+This means that it will map input voltages between 0 and 5 volts (which is larger than OpenCM’s range of 0V-3.3V) into integer values between 0 and 1023 (which is smaller than the OpenCM’s range of 0–4,095).  
  
 ```c
 uint16 analogRead(uint8 pin)
@@ -579,7 +579,7 @@ The pins which support analog to digital conversion have ANALOG IN printed in si
  
 #### Return Values
  
-- Converted voltage, in the range 0–4095, (i.e. a 12-bit ADC conversion).
+- Converted voltage, in the range 0–4,095, (i.e. a 12-bit ADC conversion).
  
 #### Example
  
@@ -628,7 +628,7 @@ void setup() {
 void loop() {
   int val = analogRead(analogPin);        // read the input pin
   analogWrite(BOARD_LED_PIN, val * 16);  // analogRead values go from 0
-                                      // to 4095, pwmWrite values
+                                      // to 4,095, pwmWrite values
                                       // from 0 to 65535, so scale roughly
 }
 ```
@@ -1170,7 +1170,7 @@ Library access to the emulated serial port is provided through the SerialUSB obj
 You can mostly use SerialUSB as a drop-in replacement for Serial1, Serial2, and Serial3.  
 
 {% capture opencm_warning_01 %} 
-`Warning`  
+**WARNING** :  
 The SerialUSB functionality includes a 50 millisecond timeout for writes, and does not try to detect if the USB host is “really” connected, or just enumerated and initialized.  
 This means that if you have a number of calls to one of the SerialUSB write() or print() functions in your code, and you are not monitoring SerialUSB on a computer, your program will run much slower than if it is being monitored or totally disconnected (run off of a battery).  
 You can avoid this behavior by deciphering the port status using the DTR and RTS line status (the behavior of these control lines is platform dependent and we no longer interpret them by default).  
@@ -1538,7 +1538,7 @@ Also See
 
 Returns the number of microseconds since the board began running the current program. This number will overflow (go back to zero), after approximately 70 minutes.
  
-`Note` There are 1,000 microseconds in a millisecond, and 1,000,000 microseconds in a second.
+**NOTE** : There are 1,000 microseconds in a millisecond, and 1,000,000 microseconds in a second.
 {: .notice}
  
 ```c
@@ -1685,7 +1685,7 @@ sensVal = min(sensVal, 100); // assigns sensVal to the smaller of sensVal or 100
  
 Perhaps counter-intuitively, max() is often used to constrain the lower end of a variable’s range, while min() is used to constrain the upper end of the range.
  
-`Warning` Because of the way min() is implemented, avoid using other functions inside the parentheses. It may lead to incorrect results:
+**WARNING** : Because of the way min() is implemented, avoid using other functions inside the parentheses. It may lead to incorrect results:
 
 min(a++, 100);   // avoid this - yields incorrect results
 a++;            // use this instead -
@@ -1723,7 +1723,7 @@ sensVal = max(senVal, 20); // assigns sensVal to the larger of sensVal or 20
  
 Perhaps counter-intuitively, max() is often used to constrain the lower end of a variable’s range, while min() is used to constrain the upper end of the range.
  
-`Warning` Because of the way max() is implemented, avoid using other functions inside the parentheses. It may lead to incorrect results:
+**WARNING** : Because of the way max() is implemented, avoid using other functions inside the parentheses. It may lead to incorrect results:
  
 max(a--, 0);   // avoid this - yields incorrect results
 a--;           // use this instead -
@@ -1753,7 +1753,7 @@ See Also
 - x : if x is greater than or equal to 0.
 - -x : if x is less than 0.
  
-`Warning` Because of the way abs() is implemented, avoid using other functions or causing side effects inside the parentheses, as it may lead to incorrect results:
+**WARNING** : Because of the way abs() is implemented, avoid using other functions or causing side effects inside the parentheses, as it may lead to incorrect results:
  
 abs(a++);   // avoid this - yields incorrect results
 abs(a);       // use this instead -
@@ -1825,7 +1825,7 @@ void setup() {
 }
 void loop() {
     int val = analogRead(0);
-    val = map(val, 0, 4095, 0, 65535);
+    val = map(val, 0, 4,095, 0, 65535);
     analogWrite(9, val);
 }
 ```

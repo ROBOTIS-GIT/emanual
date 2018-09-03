@@ -19,7 +19,11 @@ ROBOTIS DREAM Level II 4 comes with the controller and teaches you the principle
 This level will help you understand the flow chart to set up your ground work for programming.  
 Operate your robot using the sensors assembled in them or play games to experience how the sensors can be used in various ways.
 
-`Caution` ROBOTIS DREAM II Level 4 requires parts from ROBOTIS DREAM II Level 1, 2 and 3. Please make sure to purchase Level 1, 2 and 3 to build the robots in Level 4. Users must program the robots or download the program into the controller ([CM-150]) to operate the robot. To program or download a program you will need the USB Cable included in the ROBOTIS DREAM II Level 1. If you want to build and program your robots using more parts and peripheral devices, please purchase the ROBOTIS DREAM II Level 5 or necessary parts separately.
+**CAUTION** : ROBOTIS DREAM II Level 4 requires parts from ROBOTIS DREAM II Level 1, 2 and 3.  
+Please make sure to purchase Level 1, 2 and 3 to build the robots in Level 4.  
+Users must program the robots or download the program into the controller ([CM-150]) to operate the robot.  
+To program or download a program you will need the USB Cable included in the ROBOTIS DREAM II Level 1.  
+If you want to build and program your robots using more parts and peripheral devices, please purchase the ROBOTIS DREAM II Level 5 or necessary parts separately.
 {: .notice}
 
 # [Part List](#part-list)
@@ -33,7 +37,12 @@ Operate your robot using the sensors assembled in them or play games to experien
 
 # [Examples](#examples)
 
-For more information, assembly and operation, please refer to the ROBOTIS DREAM II Level 4 workbook. You must download the examples programs below to operate your robot. To create your own program or download, click here to read more on [How to Download Task code]. You will need the USB cable to download the programs. This is included in ROBOTIS DREAM II Level 1.
+For more information, assembly and operation, please refer to the ROBOTIS DREAM II Level 4 workbook.  
+You must download the examples programs below to operate your robot.  
+To create your own program or download, click here to read more on [How to Download Task code].  
+You will need the USB cable to download the programs.  
+This is included in ROBOTIS DREAM II Level 1.
+{: .notice}
 
 1. Example program of each chapter
 
@@ -52,7 +61,7 @@ For more information, assembly and operation, please refer to the ROBOTIS DREAM 
 |11. Whac-A-Mole<br />![](/assets/images/edu/dream/dream1-3_whacamole.jpg)|[Download][ex_11]|
 |12. Goblin Robot<br />![](/assets/images/edu/dream/dream1-3_goblin.jpg)|[Download][ex_12]|
 
-[CM-150]: /docs/en/parts/controller/cm-150/ 
+[CM-150]: /docs/en/parts/controller/cm-150/
 [Servo Motor]: /docs/en/parts/motor/servo_motor/
 [IR Sensor]: /docs/en/parts/sensor/irss-10/
 [LED Module]: /docs/en/parts/display/lm-10/

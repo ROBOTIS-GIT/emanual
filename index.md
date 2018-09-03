@@ -17,7 +17,13 @@ header:
 
 - [Previous e-Manual] will be served as well.
 - New ROBOTIS Community [Forum] is available. Please checkout the [Forum] if you have any issue with ROBOTIS Products.
-- 한국어 사용자는 [`한글 매뉴얼`]을 참조하세요.
+
+{% capture index_notice_01 %}
+- 한국어 사용자는 [한글 매뉴얼](http://emanual.robotis.com/docs/kr/)을 참조하세요.  
+- 日本語e-manualは現時点で編集されていません。 英語版ページをご参照下さい。  
+- 目前, 还没有中文版. 请使用提供的Google翻译器 <img src="/assets/images/icon_google.png">.
+{% endcapture %}
+<div class="notice--success">{{ index_notice_01 | markdownify }}</div>
 
 # Quick References
 
@@ -38,6 +44,11 @@ header:
 - [Package Download](https://github.com/ROBOTIS-GIT/dynamixel-workbench)
 - [Documentation](/docs/en/software/dynamixel/dynamixel_workbench/)
 
+## Controllers
+- [OpenCR 1.0](/docs/en/parts/controller/opencr10/)
+- [OpenCM 9.04](/docs/en/parts/controller/opencm904/)
+- [OpenCM 485 EXP](/docs/en/parts/controller/opencm485exp/)
+
 ## DYNAMIXEL Control Table
 
 |Model|Details|
@@ -47,7 +58,7 @@ header:
 |DX|[DX-113], [DX-116], [DX-117]|
 |RX|[RX-10], [RX-24F], [RX-28], [RX-64]|
 |MX|`Protocol 1.0` [MX-12W], [MX-28], [MX-64], [MX-106]<br>`Protocol 2.0` [MX-28(2.0)], [MX-64(2.0)], [MX-106(2.0)]|
-|X|`L Series` [XL320], [XL430-W250]<br>`M Series`[XM430-W210], [XM430-W350], [XM540-W150], [XM540-W270]<br>`H Series`[XH430-W210], [XH430-W350], [XH430-V210], [XH430-V350]|
+|X|`L Series` [XL320], [XL430-W250]<br>`M Series` [XM430-W210], [XM430-W350], [XM540-W150], [XM540-W270]<br>`H Series` [XH430-W210], [XH430-W350], [XH430-V210], [XH430-V350]|
 |Pro|`L Seires` [L54-50-S500-R], [L54-50-S290-R], [L54-30-S500-R], [L54-30-S400-R], [L42-10-S300-R]<br>`M Series` [M54-60-S250-R], [M54-40-S250-R], [M42-10-S260-R]<br>`H Series` [H54-200-S500-R], [H54-100-S500-R], [H42-20-S300-R]|
 
 
@@ -58,7 +69,6 @@ header:
 ## Compatibility Guide
 - [Controller](/docs/en/parts/controller/controller_compatibility/)
 
-[`한글 매뉴얼`]: http://emanual.robotis.com/docs/kr/
 [AX-12W]: /docs/en/dxl/ax/ax-12w/#control-table-of-eeprom-area
 [AX-12+/12A]: /docs/en/dxl/ax/ax-12a/#control-table-of-eeprom-area
 [AX-18F/18A]: /docs/en/dxl/ax/ax-18a/#control-table-of-eeprom-area

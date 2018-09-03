@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: dynamixel_sdk_sample_code_python_reset_protocol_2_0
+ref: python_reset_protocol_2_0
 read_time: true
 share: true
 author_profile: false
@@ -11,13 +11,14 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
-<div style="counter-reset: h1 3"></div>
-<div style="counter-reset: h2 12"></div>
+<div style="counter-reset: h1 5"></div>
+<div style="counter-reset: h2 13"></div>
 <div style="counter-reset: h3 8"></div>
 
-# [Sample Code](#sample-code)
-
-## [Python Protocol 2.0](#python-protocol-20)
+<!--[dummy Header 1]>
+  <h1 id="sample-code"><a href="#sample-code">Sample Code</a></h1>
+  <h2 id="python-protocol-20"><a href="#python-protocol-20">Python Protocol 2.0</a></h2>
+<![end dummy Header 1]-->
 
 ### [Python Reset Protocol 2.0](#python-reset-protocol-20)
 
@@ -240,7 +241,7 @@ This example uses `dynamixel_functions` library as `dynamixel` imported from `dy
 ADDR_PRO_BAUDRATE            = 8                             # Control table address is different in Dynamixel model
 ```
 
-Dynamixel series have their own control tables: Addresses and Byte Length in each items. To control one of the items, its address (and length if necessary) is required. Find your requirements in http://support.robotis.com/.
+Dynamixel series have their own control tables: Addresses and Byte Length in each items. To control one of the items, its address (and length if necessary) is required. Find your requirements in http://emanual.robotis.com/.
 
 ```python
 # Protocol version
@@ -265,7 +266,7 @@ OPERATION_MODE              = 0x01                          # 0xFF : reset all v
 
 Here we set some variables to let you freely change them and use them to run the example code.
 
-As the document previously said in [previous chapter](/docs/en/software/dynamixel/dynamixel_sdk/device_setup/dynamixel/#dynamixel), customize Dynamixel control table items, such as `DXL_ID` number, communication `BAUDRATE`, and the `DEVICENAME`, on your own terms of needs. In particular, `BAUDRATE` and `DEVICENAME` have systematical dependencies on your controller, so make clear what kind of communication method you will use.
+As the document previously said in [previous chapter](/docs/en/software/dynamixel/dynamixel_sdk/device_setup/#dynamixel), customize Dynamixel control table items, such as `DXL_ID` number, communication `BAUDRATE`, and the `DEVICENAME`, on your own terms of needs. In particular, `BAUDRATE` and `DEVICENAME` have systematical dependencies on your controller, so make clear what kind of communication method you will use.
 
 Since the factory reset recovers the Dynamixel control table items to the original state, the baudrate of controller serial port should be set to its changed baudrate(`FACTORYRST_DEFAULTBAUDRATE` : 57600 bps) as well. After that, controller sets its baudrate to the value (1000000 bps : `NEW_BAUDNUM` = 1) before factory reset.
 

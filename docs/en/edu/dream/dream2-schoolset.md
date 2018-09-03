@@ -23,8 +23,11 @@ With the DREAM II School Set Curriculum, students learn about the basic componen
 Lesson Plans within the Basic Components of Robotics include subjects focusing on the use of Infrared (IR) Sensors, Mics & Batteries.  
 Lessons focus on specific scientific principles such as the Principles of Velocity, Elastic Force, Inertia, and Acceleration, Mechanical Engineering Principles such as Four-Wheeled Drive & Engine Systems.
 
-`Caution` The controller ([CM-150]) in ROBOTIS DREAM II School Set comes with a "Comprehensive Program" that can make the robot move without downloading a program, for DREAM II Level 2 examples (first 12 examples). For the DREAM II Level 3 examples (examples 13 through 24), you should download individual program in the controller. To program or download a program you will need the USB Cable included in the ROBOTIS DREAM II School Set. If you want to build and program your robots using more parts and peripheral devices, please purchase the ROBOTIS DREAM II Level 4 and 5.
-{: .notice}
+**CAUTION** : The controller ([CM-150]) in ROBOTIS DREAM II School Set comes with a "Comprehensive Program" that can make the robot move without downloading a program, for DREAM II Level 2 examples (first 12 examples).  
+For the DREAM II Level 3 examples (examples 13 through 24), you should download individual program in the controller.  
+To program or download a program you will need the USB Cable included in the ROBOTIS DREAM II School Set.  
+If you want to build and program your robots using more parts and peripheral devices, please purchase the ROBOTIS DREAM II Level 4 and 5.
+{: .notice--warning}
 
 # [Part List](#part-list)
 
@@ -42,8 +45,9 @@ ROBOTIS DREAM II School Set comes with a "Comprehensive Program" in the controll
 This comprehensive program works for DREAM II Level 2 example robots.  
 For DREAM II Level 3 examples, please download the individual program referring to the “Examples” tab below.
 
-`Caution` The comprehensive program in the controller will be overwritten when downloading a program. Therefore, you must download the program using [USB Downloader(LN-101)].
-{: .notice}
+**CAUTION** : The comprehensive program in the controller will be overwritten when downloading a program.  
+Therefore, you must download the program using [USB Downloader(LN-101)].
+{: .notice--warning}
 
 ## [How to Play(Comprehensive Program)](#how-to-playcomprehensive-program)
 
@@ -72,12 +76,17 @@ For DREAM II Level 3 examples, please download the individual program referring 
 
 # [Examples](#examples)
 
-The controller initially comes with the comprehensive program for DREAM II Level 2 examples pre-installed in it. To create your own program or download, click here to read more on [How to Download Task code]. You will need the USB cable to download the programs.
+The controller initially comes with the comprehensive program for DREAM II Level 2 examples pre-installed in it.  
+To create your own program or download, click here to read more on [How to Download Task code].  
+You will need the USB cable to download the programs.
+{: .notice}
 
 1. Integrated example program
-- This program is basically included in the main controller when you purchase the goods.
-- Please refer to the Operating Method to see how to use this program.
-  `Download` [DREAM2_L2_Total_EN.tsk]
+
+    - This program is basically included in the main controller when you purchase the goods.
+    - Please refer to the Operating Method to see how to use this program.
+
+    `Download` [DREAM2_L2_Total_EN.tsk]
 
 2. Example program of each chapter
 

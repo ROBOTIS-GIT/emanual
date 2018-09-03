@@ -21,7 +21,7 @@ The following procedure takes you through the set up process.
 
 ![](/assets/images/platform/op3/op3_010.png)
 
-`Warning` Manually configuring ROBOTIS OP3’s ready pose other than the above pose may cause mechanical damages when posing for initial stance.
+**WARNING** : Manually configuring ROBOTIS OP3’s ready pose other than the above pose may cause mechanical damages when posing for initial stance.
 {: .notice--warning}
 
 ![](/assets/images/platform/op3/op3_011.png)
@@ -39,7 +39,7 @@ If you want to use the battery pack, please follow the below procedure.
 4. Close and secure the compartment door (screw the thumbscrew) afterwards.
 5. Disconnect DC power supply.
 
-`Note` To prevent unexpected shutdown, ensure that ROBOTIS OP3 is connected with at least one active power source.
+**NOTE** : To prevent unexpected shutdown, ensure that ROBOTIS OP3 is connected with at least one active power source.
 {: .notice}
 
 ![](/assets/images/platform/op3/op3_013.png)
@@ -157,7 +157,7 @@ Face detecting : [https://github.com/phil333/face_detection]
 If ambient light of ROBOTIS OP3 is either too dim or too bright, user can adjust camera setting for optimizing acquired image from the camera.  
 The color of the ball for soccer demo can also be modified from the setting.  
 Please refer to the wiki manual from below link.  
-[https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki]
+[ROBOTIS OP3 Camera Setting]
 
 ## [Power Off](#power-off)
 
@@ -174,7 +174,7 @@ Please perform below procedures in order to shutdown the computer inside ROBOTIS
 
   ![](/assets/images/platform/op3/op3_022.png)
 
-`Note` If power supply is cut off before the blue LED is turned off, ROBOTIS OP3 may have problems in the next startup.
+**NOTE** : If power supply is cut off before the blue LED is turned off, ROBOTIS OP3 may have problems in the next startup.
 {: .notice}
 
 
@@ -216,8 +216,6 @@ The following is the list of tools for source code development.
 - Compiler : GNU project C and C++ Compiler, Catkin
 - Programming Language : C++
 
-For more detailed information, please refer to the [ROBOTIS OP3 WIKI].   
-[https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki]
 
 ### [Source Code](#source-code)
 
@@ -242,8 +240,8 @@ You may obtain updated source code from the below GitHub links :
 
 The following flow diagram represent class breakdown and data pipelines.  
 You may modify the framework at “/home/robotis/catkin_ws/src/ROBOTIS-Framework”.  
-For more information, please refer to the ROBOTIS OP3 WIKI.  
-[https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki]
+For more information, please refer to the WIKI.  
+[ROBOTIS Framework WIKI]
 
 ![](/assets/images/platform/op3/op3_027.png)
 
@@ -261,13 +259,13 @@ In the directory you can find code for :
 
 The supplied USB thumb drive contains the software pre-installed to ROBOTIS OP3.  
 You may obtain updated software from the link below.  
-[https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki]  
+[ROBOTIS OP3 Recovery]  
 Software may be updated without prior notice. Please check for updates periodically.
 
 ### [Useful Information](#useful-information)
 
 You can download other ROBOTIS OP3-related items and more detailed information from the wiki manual.  
-[https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki]
+[ROBOTIS OP3 Tutorial]  
 
 - For any inquiries send us an email.
   - International : `contactus2@robotis.com`
@@ -426,7 +424,7 @@ Is a unique number to identify Dynamixel.
 Values range from 0 (0x00) to 252 (0xFC), Value 254 (0xFE) is used as the Broadcast ID.  
 If the Broadcast ID is used to transmit Instruction Packet, then it can command to all Dynamixels.  
 
-`Note` Do NOT assign an identical ID for DYNAMIXELs in the same network.
+**NOTE** : Do NOT assign an identical ID for DYNAMIXELs in the same network.
 {: .notice}
 
 #### Baud Rate
@@ -443,7 +441,7 @@ Represents the communication speed. 0 (0x00) to 7 (0x07) can be used for it.
 |  6   | 4,000,000   | 4,000,000    |  0.000 %  |
 |  7   | 4,500,000   | 4,500,000    |  0.000 %  |
 
-`Note` Maximum Baud Rate error of 3% is within the tolerance of UART communication.
+**NOTE** : Maximum Baud Rate error of 3% is within the tolerance of UART communication.
 {: .notice}
 
 #### Return Delay Time
@@ -464,7 +462,7 @@ If an Instruction Packet has a Broadcast ID, Status Packet will not be returned 
 |   1   |           Return only for the READ command           |
 |   2   |               Return for all commands                |
 
-`Note` When Instruction packet is Broadcast ID, Status packet is not returned regardless of Status return level.
+**NOTE** : When Instruction packet is Broadcast ID, Status packet is not returned regardless of Status return level.
 {: .notice}
 
 #### Dynamixel Power
@@ -566,8 +564,11 @@ The calculation will take for 2 seconds and then each bit will be reset to 0.
 [https://github.com/phil333/face_detection]: https://github.com/phil333/face_detection
 [https://github.com/ROBOTIS-GIT/face_detection]: https://github.com/ROBOTIS-GIT/face_detection
 [http://wiki.ros.org/usb_cam]: http://wiki.ros.org/usb_cam
-[https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki
-[ROBOTIS OP3 WIKI]: https://github.com/ROBOTIS-GIT/ROBOTIS-Documents/wiki
+[ROBOTIS Framework WIKI]: http://emanual.robotis.com/docs/en/software/robotis_framework_packages/
+[ROBOTIS OP3 WIKI]: http://emanual.robotis.com/docs/en/platform/op3/introduction/
+[ROBOTIS OP3 Recovery]: http://emanual.robotis.com/docs/en/platform/op3/recovery/#recovery-of-robotis-op3
+[ROBOTIS OP3 Tutorial]: emanual.robotis.com/docs/en/platform/op3/tutorials
+[ROBOTIS OP3 Camera Setting]: http://emanual.robotis.com/docs/en/platform/op3/tutorials/#camera-setting-parameters
 [https://github.com/ROBOTIS-GIT/DynamixelSDK]: https://github.com/ROBOTIS-GIT/DynamixelSDK
 [https://github.com/ROBOTIS-GIT/ROBOTIS-Framework]: https://github.com/ROBOTIS-GIT/ROBOTIS-Framework
 [https://github.com/ROBOTIS-GIT/ROBOTIS-Framework-msgs]: https://github.com/ROBOTIS-GIT/ROBOTIS-Framework-msgs

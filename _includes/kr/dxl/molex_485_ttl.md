@@ -8,6 +8,8 @@
 |Crimp 터미널|[MOLEX 80-70-1039]|[MOLEX 80-70-1039]|
 |Wire Gauge|21 AWG|21 AWG|
 
+{% include kr/dxl/pinout_warning.md %}
+
 [MOLEX 50-37-5033]: http://www.molex.com/molex/products/datasheet.jsp?part=active/0050375033_CRIMP_HOUSINGS.xml
 [MOLEX 22-03-5035]: http://www.molex.com/molex/products/datasheet.jsp?part=active/0022035035_PCB_HEADERS.xml
 [MOLEX 50-37-5043]: http://www.molex.com/molex/products/datasheet.jsp?part=active/0050375043_CRIMP_HOUSINGS.xml

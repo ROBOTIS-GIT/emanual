@@ -50,8 +50,8 @@ sidebar:
 |    4    |       1        | [Baud Rate](#baud-rate)                     | Communication Speed                |   RW   |         1          |
 |    5    |       1        | [Return Delay Time](#return-delay-time)     | Response Delay Time                |   RW   |        250         |
 |    6    |       2        | [CW Angle Limit](#cw-angle-limit)           | Clockwise Angle Limit              |   RW   |         0          |
-|    8    |       2        | [CCW Angle Limit](#ccw-angle-limit)         | Counter-Clockwise Angle Limit      |   RW   |        4095        |
-|   11    |       1        | [Temperature Limit](#temperature-limit)     | Maximum Internal Temperature Limit |   RW   |         80         |
+|    8    |       2        | [CCW Angle Limit](#ccw-angle-limit)         | Counter-Clockwise Angle Limit      |   RW   |        4,095        |
+|   11    |       1        | [Temperature Limit](#temperature-limit)     | Maximum Internal Temperature Limit |   RW   |         70         |
 |   12    |       1        | [Min Voltage Limit](#min-voltage-limit)     | Minimum Input Voltage Limit        |   RW   |         60         |
 |   13    |       1        | [Max Voltage Limit](#max-voltage-limit)     | Maximum Input Voltage Limit        |   RW   |        160         |
 |   14    |       2        | [Max Torque](#max-torque)                   | Maximun Torque                     |   RW   |        1023        |
@@ -71,7 +71,7 @@ sidebar:
 |   26    |       1        | [D Gain](#d-gain)                           | Derivative Gain               |   RW   |         8          |
 |   27    |       1        | [I Gain](#i-gain)                           | Integral Gain                 |   RW   |         0          |
 |   28    |       1        | [P Gain](#p-gain)                           | Proportional Gain             |   RW   |         8          |
-|   30    |       2        | [Goal Position](#goal-position)             | Target Position               |   RW   |         -          |
+|   30    |       2        | [Goal Position](#goal-position)             | Desired Position               |   RW   |         -          |
 |   32    |       2        | [Moving Speed](#moving-speed)               | Moving Speed(Moving Velocity) |   RW   |         -          |
 |   34    |       2        | [Torque Limit](#torque-limit)               | Torque Limit(Goal Torque)     |   RW   |   ADD 14&amp;15    |
 |   36    |       2        | [Present Position](#present-position)       | Present Position              |   R    |         -          |
@@ -113,7 +113,7 @@ Baud Rate determines serial communication speed between a controller and DYNAMIX
 |103|19200| -0.160%|
 |207|9600| -0.160%|
 
-`Note` Less than 3% of the baud rate error margin will not affect to UART communication.
+**NOTE** : Less than 3% of the baud rate error margin will not affect to UART communication.
 {: .notice}
 
 For BPS over 250 values :
@@ -179,7 +179,7 @@ For BPS over 250 values :
   If a value in the range of 1024~2047 is used, it is stopped by setting to 1024 while rotating to CW direction.
   That is, the 10th bit becomes the direction bit to control the direction.
 
-  `Note` Wheel mode allows to check max rpm. Any values higher than max rpm will not take effect.
+  **NOTE** : Wheel mode allows to check max rpm. Any values higher than max rpm will not take effect.
   {: .notice}
 
 ### <a name="torque-limit"></a>**[Torque Limit (34)](#torque-limit-34)**
@@ -221,7 +221,7 @@ For example, if it is set to 300 then the motor is moving to the CCW direction a
 ### <a name="realtime-tick"></a>**[Realtime-Tick (50)](#realtime-tick-50)**
 {% include en/dxl/control_table_realtime_tick.md %}
 
-`Note` This feature is available from Firmware v41.
+**NOTE** : This feature is available from Firmware v41.
 {: .notice}
 
 ### <a name="goal-acceleration"></a>**[Goal Acceleration (73)](#goal-acceleration-73)**
@@ -233,7 +233,7 @@ For example, if it is set to 300 then the motor is moving to the CCW direction a
 
 # [Reference](#reference)
 
-`Note` [Compatibility Guide]
+**NOTE** : [Compatibility Guide]
 {: .notice}
 
 ## [Videos](#videos)

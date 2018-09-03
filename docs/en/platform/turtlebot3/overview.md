@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: turtlebot3_overview
+ref: overview
 read_time: true
 share: true
 author_profile: false
@@ -10,6 +10,8 @@ sidebar:
   title: TurtleBot3
   nav: "turtlebot3"
 ---
+
+<div style="counter-reset: h1 0"></div>
 
 # [Overview](#overview)
 
@@ -33,20 +35,29 @@ The TurtleBot3’s core technology is [SLAM][slam], [Navigation][navigation] and
 
 ## [TurtleBot3 Collaboration Project](#turtlebot3-collaboration-project)
 
-TurtleBot3 is a collaboration project among [Open Robotics][open_robotics], [ROBOTIS][robotis], and more partners like [The Construct][the_construct], [Intel][intel], [Onshape][onshape], [OROCA][oroca]. The Open Robotics is in charge of software and community activities, while ROBOTIS is in charge of manufacturing and global distribution. We need more partners who can provide technology, educational service or distribution in each country. For partnership, please fill out form [here][partners].
+TurtleBot3 is a collaboration project among [Open Robotics][open_robotics], [ROBOTIS][robotis], and more partners like [The Construct][the_construct], [Intel][intel], [Onshape][onshape], [OROCA][oroca], [AuTURBO][auturbo], [ROS in Robotclub Malaysia][ros_in_robotclub_malaysia], [Astana Digital][astana digital], [Polariant Experiment][polariant_experiment], [Tokyo University of Agriculture and Technology, GVlab][gvlab], [Networked Control Robotics Lab at National Chiao Tung University][nctu], [SIM Group at TU Darmstadt][sim_group]. The Open Robotics is in charge of software and community activities, while ROBOTIS is in charge of manufacturing and global distribution.
+
+The most important part of this TurtleBot3 collaboration project is open source based software, hardware, and content. We are encouraging more partners and research collaborators to participate in this project to enrich the robotics field.
+
+If you are interested in partnership with us to realize open source robotics, please fill out form [here][partners].
 
 ### TurtleBot3 Providers
 ![](/assets/images/platform/turtlebot3/logo_platform_providers.png)
 
-### TurtleBot3 Partners
+### TurtleBot3 Partners and Research Collaborators
 ![](/assets/images/platform/turtlebot3/logo_platform_sponsors.png)
+
+\* Each collaboration member's web page can be found [here][partners].
 
 ### TurtleBot3 Distributors
 ![](/assets/images/platform/turtlebot3/logo_platform_players.png)
 
+\* Each collaboration member's web page can be found [here][partners].
+
+### TurtleBot3 Map
+
 <script type="text/javascript" src="https://embed.githubusercontent.com/view/geojson/turtlebot/map/master/Distributors.geojson"></script>
 
-\* For each collaboration member's web page, please use the following [here][turtlebot].
 
 [turtlebot]: https://www.turtlebot.com/
 [ros]: http://www.ros.org/about-ros/
@@ -60,10 +71,18 @@ TurtleBot3 is a collaboration project among [Open Robotics][open_robotics], [ROB
 [navigation]: https://en.wikipedia.org/wiki/Robot_navigation
 [manipulation]: https://en.wikipedia.org/wiki/Robotic_manipulation
 [openmanipulator]: http://emanual.robotis.com/docs/en/platform/openmanipulator/
-[open_robotics]: https://www.osrfoundation.org/
+
+[open_robotics]: https://www.openrobotics.org/
 [robotis]: http://www.robotis.com/
 [the_construct]: http://www.theconstructsim.com/
 [intel]: http://www.intel.com/
 [onshape]: https://www.onshape.com/
 [oroca]: http://www.oroca.org/
+[auturbo]: https://github.com/AuTURBO/
+[ros_in_robotclub_malaysia]: https://www.youtube.com/channel/UCLvvXbwPkostryBQt4MIbUw
+[astana digital]: https://www.youtube.com/channel/UCWiIY_zrKH-LMlx2GBWu3yA
+[polariant_experiment]: https://www.polariant.io/
+[gvlab]: http://web.tuat.ac.jp/~gvlab/
+[nctu]: https://sites.google.com/a/g2.nctu.edu.tw/ncrl/
+[sim_group]: https://www.sim.informatik.tu-darmstadt.de/en/index/
 [partners]: https://www.turtlebot.com/partners

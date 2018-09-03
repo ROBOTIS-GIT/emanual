@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/kr/parts/motor/gm-10a/
 sidebar:
-  title: Geared Motor(GM-10A)
+  title: 감속 모터(GM-10A)
   nav: "gm-10a"
 ---
 
@@ -40,7 +40,7 @@ sidebar:
 1. MOT-
 2. MOT+
 
-`Note` 케이블을 잘못된 방향이나 무리한 힘으로 끼우거나 빼면 커넥터가 파손될 수 있으니 주의해주세요.
+**참고**: 케이블을 잘못된 방향이나 무리한 힘으로 끼우거나 빼면 커넥터가 파손될 수 있으니 주의해주세요.
 {: .notice}
 
 

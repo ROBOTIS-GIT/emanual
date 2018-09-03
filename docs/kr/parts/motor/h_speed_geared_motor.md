@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/kr/parts/motor/h_speed_geared_motor/
 sidebar:
-  title: High Speed Geared Motor
+  title: 고속 감속모터
   nav: "h_speed_geared_motor"
 ---
 
@@ -17,7 +17,7 @@ sidebar:
 
 > 고속 감속모터
 
-`주의` 고속 감속모터는 현재 **단종**되어 더 이상 판매되지 않습니다. 
+**주의**: 고속 감속모터는 현재 **단종**되어 더 이상 판매되지 않습니다. 
 {: .notice--warning}
 
 올로(OLLO)에서 사용되는 모터로 CM-100 에 연결하여 포트 제어를 통해 모터의 회전 방향과 회전 속도를 조절할 수 있습니다.  
@@ -42,7 +42,7 @@ sidebar:
 1. MOT-
 2. MOT+
 
-`Note` 케이블을 잘못된 방향이나 무리한 힘으로 끼우거나 빼면 커넥터가 파손될 수 있으니 주의해주세요.
+**참고**: 케이블을 잘못된 방향이나 무리한 힘으로 끼우거나 빼면 커넥터가 파손될 수 있으니 주의해주세요.
 {: .notice}
 
 # [사용 방법](#사용-방법)

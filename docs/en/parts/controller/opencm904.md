@@ -27,17 +27,20 @@ sidebar:
 |       JTAG/SWD       |         X         |         1         |         1         |
 |     Micro B USB      |         X         |         1         |         1         |
 |      5-Pin Port      |         X         |         4         |         4         |
-|  Dynamixel TTL BUS   |         X         |         4         |         4         |
+|  Dynamixel TTL BUS   |         X         |         4 `1`     |         4 `2`     |
 | 4 Pin Communication  |         X         |         1         |         1         |
+
+`1`: [MOLEX 53253-0370] x 2(for XL-320), [MOLEX 22-03-5035] x 2(for AX/MX-Series)  
+`2`: [MOLEX 53253-0370] x 4(for XL-320)
 
 - OpenCM9.04 is a microcontroller board based on 32bit ARM Cortex-M3. The OpenCM9.04’s schematics and source codes are open-source.
 - 3 types are available: Type A & Type B & Type C. The difference between Type A,Type B, Type C is the availability of the connectors. (Refer to the image and table above.)  
   (OpenCM9.04 Accessory Set can be purchased to acquire all the necessary connector to upgrade Type A to Type B Type C.)  [OpenCM9.04 Accessory Set](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2394)
 
-`Note` Refer to the ROBOTIS-MINI for controller recovery (type C-only) [ROBOTIS-MINI Controller Firmware Update]
+**NOTE** : Refer to the ROBOTIS-MINI for controller recovery (type C-only) [ROBOTIS-MINI Controller Firmware Update]
 {: .notice}
 
-`Caution` Please **DISCONNECT** OpenCM9.04 and OpenCM 485 Expansion board when updating or recovering Dynamixel firmware.
+**CAUTION** : Please **DISCONNECT** OpenCM9.04 and OpenCM 485 Expansion board when updating or recovering Dynamixel firmware.
 {: .notice--warning}
 
 # [Specifications](#specifications)
@@ -147,7 +150,7 @@ Control Table consists of data regarding the current status and operation of con
 |   409   |  1   |    Port 2 Color Sensor Value    |    Color Sensor Value on Port 2    |   R    |     -      |
 |   410   |  1   |    Port 3 Color Sensor Value    |    Color Sensor Value on Port 3    |   R    |     -      |
 
-`Note` Some Addresses of the Control Table can be tested with R+ Manager 2.0.
+**NOTE** : Some Addresses of the Control Table can be tested with R+ Manager 2.0.
 
 # [Hardware](#hardware)
 
@@ -175,16 +178,18 @@ Switch used to control the power supplied to the board and DYNAMIXEL on/off. (No
 ### [Serial Battery Socket](#serial-battery-socket)
 Connects two LBS-04 Lithium-ion battery.
 
-`Caution` Do NOT charge the battery while its connected to the board because the user will short the circuit. Be sure to disconnect from the board when charging the battery.
+**CAUTION** : Do NOT charge the battery while its connected to the board because the user will short the circuit. Be sure to disconnect from the board when charging the battery.
 {: .notice--warning}
 
 ### [Dynamixel TTL 3 PIN](#dynamixel-ttl-3-pin)
 Port for daisy chaining Dynamixels that use 3-pin cables (Dynamixel TTL Bus).
 
+{% include en/dxl/pinout_warning.md %}
+
 ### [Communication Port](#communication-port)
 Used from wired/wireless communication using peripheral devices (i.e. BT-210, BT-110A, ZIG-110A, LN-101, etc). OpenCM9.04’s 4-pin communication port uses Serial2(USART2).
 
-![](/assets/images/parts/controller/opencm904/opencm904_03.png)
+![](/assets/images/parts/controller/opencm904/opencm9.04_1-1.jpg)
 
 > 4-pin communication port pinmap
 
@@ -240,7 +245,7 @@ JTAG/SWD 4-pin port can be used for various developments by advanced users. ST-L
 
 > Example: ST-LINK and OpenCM9.04 connection
 
-### [5-pin Port](#5-pin-port)
+### [ROBOTIS 5-Pin Port](#robotis-5-pin-port)
 Used to connect ROBOTIS 5-pin devices (modules).
 
 ![](/assets/images/parts/controller/opencm904/opencm904_12.png)
@@ -351,7 +356,7 @@ All of OpenCM9.04’s GPIO pins can internally “pull-up” or “pull-down” 
 
 > Example: Changing default Analog Reference voltage(AREF) to 5V by modifying JP2
 
-`Caution` Check the pin supporting up to 5V once Analog Reference (AREF) has been modified to 5V.
+**CAUTION** : Check the pin supporting up to 5V once Analog Reference (AREF) has been modified to 5V.
 {: .notice--warning}
 
 ## [Pin Name Definition](#pin-name-definition)
@@ -667,13 +672,13 @@ To use OpenCM9.04's USB port as a serial port in Windows, you need a USB CDC dri
 
 #### Install the Arduino IDE
 
-Download the latest version of Arduino IDE from the official arduino homepage, and install it. Currently, the OpenCR will be on service in the version 1.6.4 or later.
+Download the latest version of Arduino IDE from the official arduino homepage, and install it. Currently, the OpenCM 9.04 will be on service in the version 1.6.4 or later.
 
 [https://www.arduino.cc/en/Main/Software](https://www.arduino.cc/en/Main/Software)
 
 The Arduino IDE for Windows is available as an installation version and a compressed version, so you can install it using your preferred method.
 
-#### Porting the OpenCR9.04 board to the Arduino IDE
+#### Porting the OpenCM 9.04 board to the Arduino IDE
 
 ##### Preferences
 After Arduino IDE is run, click File → Preferences in the top menu of the IDE. When the Preferences window appears, copy and paste following link to the Additional Boards Manager URLs textbox. (This step may take about 20 min.)
@@ -2266,15 +2271,20 @@ void testscrolltext(void) {
 
 ## [Recovery Mode](#recovery-mode)
 
-- If you download the wrong firmware and it does not work, you can force download using recovery mode. Once you have downloaded the normal example, it will be restored and you will be able to download it again..
+- If the board does not work due to corrupted firmware, you can force downloading default firmware from Roboplus Manager 1.0 / 2.0. Sketches also can be downloaded from Arduino IDE, OpenCM IDE.
+- Disconnect other power sources and devices from OpenCM9.04. While holding down the User Button of OpenCM9.04, connect the board directly to PC with USB cable.
 
-- While holding down the User Button of OpenCM9.04, connect directly to PC with USB cable. Remove all other power sources and connect only to USB while holding down the User Button.
+  ![](/assets/images/sw/mobile/mini_firmware_02.jpg)
+  > User Button
 
-  ![](/assets/images/parts/controller/opencm904/user_button.jpg)
+  ![](/assets/images/parts/controller/opencm904/opencm904_08.png)
 
-- If you enter recovery mode as shown below, the green LED remains on. When the download is completed normally, the board is reset and the LED is turned off.
+- If you enter recovery mode as shown below, the green LED will be turned on. When download is completed normally, the board will be reset and the green LED is turned off.
 
   ![](/assets/images/parts/controller/opencm904/recovery_led.jpg)
+
+Please refer to [R+Manager 2.0 Firmware Recovery](/docs/en/software/rplus2/manager/#firmware-recovery) or [R+Manager 1.0 Firmware Recovery](/docs/en/software/rplus1/manager/#firmware-recovery) sections.
+{: .notice}
 
 ## [Install Windows Driver](#install-windows-driver)
 
@@ -2321,6 +2331,8 @@ void testscrolltext(void) {
 
 ![](/assets/images/parts/controller/opencm904/opencm904_28.png)
 
+[MOLEX 53253-0370]: https://www.molex.com/molex/products/datasheet.jsp?part=active/0532530370_PCB_HEADERS.xml
+[MOLEX 22-03-5035]: http://www.molex.com/molex/products/datasheet.jsp?part=active/0022035035_PCB_HEADERS.xml
 [RoboPlus Task]: /docs/en/software/rplus1/task/getting_started/
 [RoboPlus Motion]: /docs/en/software/rplus1/motion/
 [RoboPlus Manager]: /docs/en/software/rplus1/manager/

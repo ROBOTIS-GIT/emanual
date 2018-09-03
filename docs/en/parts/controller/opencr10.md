@@ -23,28 +23,30 @@ The development environment for OpenCR1.0 is wide open from Arduino IDE and Scra
 
 # [Specifications](#specifications)
 
-| Items               | Specifications                                                                                          |
-|:--------------------|:--------------------------------------------------------------------------------------------------------|
-| Microcontroller     | STM32F746ZGT6 / 32-bit ARM Cortex®-M7 with  FPU (216MHz, 462DMIPS)<br />[Reference Manual], [Datasheet] |
-| Sensors             | Gyroscope 3Axis, Accelerometer 3Axis, Magnetometer 3Axis (MPU9250)                                      |
-| Programmer          | ARM Cortex 10pin JTAG/SWD connector<br />USB Device Firmware Upgrade (DFU)<br />Serial                  |
-| Digital I/O         | 32 pins (L 14, R 18) *Arduino connectivity<br />5Pin OLLO x 4<br />GPIO x 18 pins<br />PWM x 6<br />I2C x 1<br />SPI x 1   |
-| Analog INPUT        | ADC Channels (10bit) x 6  `Max 12bit` `5V tolerant`                                                                        |
-| Communication Ports | USB x 1 (Micro-B USB connector/USB 2.0/Host/Peripheral/OTG)<br />TTL x 3 ([B3B-EH-A] / Dynamixel)<br />RS485 x 3 ([B4B-EH-A] / Dynamixel)<br />UART x 2 ([20010WS-04])<br />CAN x 1 ([20010WS-04])  |
-| LEDs and buttons    | LD2 (red/green) : USB communication<br />User LED x 4 : LD3 (red), LD4 (green), LD5 (blue)<br />User button  x 2           |
-| Powers              | External input source<br />5 V (USB VBUS), 7-24 V (Battery or SMPS)<br />Default battery : LI-PO 11.1V 1,800mAh 19.98Wh<br />Default SMPS: 12V 5A<br />External output source<br />`1`12V max 5A([SMW250-02]), `1`5V max 4A([5267-02A]), 3.3V@800mA([20010WS-02])<br />External battery Port for RTC (Real Time Clock) ([Molex 53047-0210])<br />Power LED: LD1 (red, 3.3 V power on)<br />Reset button x 1 (for power reset of board)<br />Power on/off switch x 1     |
-| Dimensions          | 105(W) X 75(D) mm  |
-| Mass                | 60g  |
+| Items               | Specifications                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+|:--------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Microcontroller     | STM32F746ZGT6 / 32-bit ARM Cortex®-M7 with  FPU (216MHz, 462DMIPS)<br />[Reference Manual], [Datasheet]                                                                                                                                                                                                                                                                                                                                                             |
+| Sensors             | Gyroscope 3Axis, Accelerometer 3Axis, Magnetometer 3Axis (MPU9250)                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Programmer          | ARM Cortex 10pin JTAG/SWD connector<br />USB Device Firmware Upgrade (DFU)<br />Serial                                                                                                                                                                                                                                                                                                                                                                              |
+| Digital I/O         | 32 pins (L 14, R 18) *Arduino connectivity<br />5Pin OLLO x 4<br />GPIO x 18 pins<br />PWM x 6<br />I2C x 1<br />SPI x 1                                                                                                                                                                                                                                                                                                                                            |
+| Analog INPUT        | ADC Channels (12bit) x 6                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| Communication Ports | USB x 1 (Micro-B USB connector/USB 2.0/Host/Peripheral/OTG)<br />TTL x 3 ([B3B-EH-A] / Dynamixel)<br />RS485 x 3 ([B4B-EH-A] / Dynamixel)<br />UART x 2 ([20010WS-04])<br />CAN x 1 ([20010WS-04])                                                                                                                                                                                                                                                                  |
+| LEDs and buttons    | LD2 (red/green) : USB communication<br />User LED x 4 : LD3 (red), LD4 (green), LD5 (blue)<br />User button  x 2                                                                                                                                                                                                                                                                                                                                                    |
+| Powers              | External input source<br />5 V (USB VBUS), 7-24 V (Battery or SMPS)<br />Default battery : LI-PO 11.1V 1,800mAh 19.98Wh<br />Default SMPS: 12V 5A<br />External output source<br />`1`12V max 5A([SMW250-02]), `1`5V max 4A([5267-02A]), 3.3V@800mA([20010WS-02])<br />External battery Port for RTC (Real Time Clock) ([Molex 53047-0210])<br />Power LED: LD1 (red, 3.3 V power on)<br />Reset button x 1 (for power reset of board)<br />Power on/off switch x 1 |
+| Dimensions          | 105(W) X 75(D) mm                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| Mass                | 60g                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 
 `1` 5V power source is supplied from regulated 12V output.
 {: .notice}
 
-`Note` Hot swap power switch between "shore power"(12V, 5A SMPS) and "mobile power"(battery) from OpenCR1.0 board enables UPS(Uninterrupted Power Supply) feature.
+**NOTE** : Hot swap power switch between "shore power"(12V, 5A SMPS) and "mobile power"(battery) from OpenCR1.0 board enables UPS(Uninterrupted Power Supply) feature.
 {: .notice}
 
 # [Layout/Pin Map](#layoutpin-map)
 
 ![](/assets/images/parts/controller/opencr10/opencr_pinout.png)
+
+{% include en/dxl/pinout_warning.md %}
 
 ## [Arduino Connector](#arduino-connector)
 OpenCR includes a connector that is compatible with Arduino Uno pinmap.  
@@ -52,30 +54,30 @@ The pins 0 to 21 are the same pin as the Arduino Uno, and thereafter they are ma
 
 ![](/assets/images/parts/controller/opencr10/arduino_pinmap_01.png)
 
-| Pin No. | Function |     1     |     2     |   3    | etc |
-|:-------:|:--------:|:---------:|:---------:|:------:|:---:|
-|    0    | UART RXD | UART6_RX  |           |        |`FT` |
-|    1    | UART TXD | UART6 TX  |           |        |`FT` |
-|    2    |          |           |           | EXTI_0 |`FT` |
-|    3    |   PWM    | TIM3_CH1  |           | EXTI_1 |`FT` |
-|    4    |          |           |           | EXTI_2 |`FT` |
-|    5    |   PWM    | TIM1_CH1  |           |        |`FT` |
-|    6    |   PWM    | TIM2_CH3  |           |        |`FT` |
-|    7    |          |           |           | EXTI_3 |`FT` |
-|    8    |          |           |           | EXTI_4 |`FT` |
-|    9    |   PWM    | TIM9_CH2  |           |        |`FT` |
-|   10    | PWM/NSS  | TIM11_CH1 | SPI2_NSS  |        |`FT` |
-|   11    | PWM/MOSI | TIM12_CH2 | SPI2_MOSI |        |`FT` |
-|   12    |   MISO   |           | SPI2_MISO |        |`FT` |
-|   13    |   SCK    |           | SPI2_SCK  |        |`FT` |
-|   14    |   SDA    |           | I2C1_SDA  |        |`FT` |
-|   15    |   SCL    |           | I2C1_SCL  |        |`FT` |
-|   16    |   ADC    |    A0     |           |        |`FT` |
-|   17    |   ADC    |    A1     |           |        |`FT` |
-|   18    |   ADC    |    A2     |           |        |`FT` |
-|   19    |   ADC    |    A3     |           |        |`FT` |
-|   20    |   ADC    |    A4     |           |        |`FT` |
-|   21    |   ADC    |    A5     |           |        |`FT` |
+| Pin No. | Function |     1     |     2     |   3    | etc  |
+|:-------:|:--------:|:---------:|:---------:|:------:|:----:|
+|    0    | UART RXD | UART6_RX  |           |        | `FT` |
+|    1    | UART TXD | UART6 TX  |           |        | `FT` |
+|    2    |          |           |           | EXTI_0 | `FT` |
+|    3    |   PWM    | TIM3_CH1  |           | EXTI_1 | `FT` |
+|    4    |          |           |           | EXTI_2 | `FT` |
+|    5    |   PWM    | TIM1_CH1  |           |        | `FT` |
+|    6    |   PWM    | TIM2_CH3  |           |        | `FT` |
+|    7    |          |           |           | EXTI_3 | `FT` |
+|    8    |          |           |           | EXTI_4 | `FT` |
+|    9    |   PWM    | TIM9_CH2  |           |        | `FT` |
+|   10    | PWM/NSS  | TIM11_CH1 | SPI2_NSS  |        | `FT` |
+|   11    | PWM/MOSI | TIM12_CH2 | SPI2_MOSI |        | `FT` |
+|   12    |   MISO   |           | SPI2_MISO |        | `FT` |
+|   13    |   SCK    |           | SPI2_SCK  |        | `FT` |
+|   14    |   SDA    |           | I2C1_SDA  |        | `FT` |
+|   15    |   SCL    |           | I2C1_SCL  |        | `FT` |
+|   16    |   ADC    |    A0     |           |        | `FT` |
+|   17    |   ADC    |    A1     |           |        | `FT` |
+|   18    |   ADC    |    A2     |           |        | `FT` |
+|   19    |   ADC    |    A3     |           |        | `FT` |
+|   20    |   ADC    |    A4     |           |        | `FT` |
+|   21    |   ADC    |    A5     |           |        | `FT` |
 
 `FT` pins are 5V tolerant except when in analog mode. The maximum injected current on FT pins are **-5mA**. Also total output current sunk / sourced by sum of all I/O pins are **120mA / -120mA** respectively.
 {: .notice}
@@ -108,26 +110,26 @@ It has an 18-pin common GPIO expansion connector and is mapped to the GPIO pin o
 
 ![](/assets/images/parts/controller/opencr10/arduino_pinmap_05.png)
 
-| Pin Number | Arduino Pin | Pin Name      | Pin Number | Arduino Pin | Pin Name     |etc |
-|:-----------|:------------|:--------------|:-----------|:------------|:-------------|:---|
-| 1          | -           | 3.3V          | 2          | -           | GND          |-   |
-| 3          | 50          | BDPIN_GPIO_1  | 4          | 51          | BDPIN_GPIO_2 |`FT`|
-| 5          | 52          | BDPIN_GPIO_3  | 6          | 53          | BDPIN_GPIO_4 |`FT`|
-| 7          | 54          | BDPIN_GPIO_5  | 8          | 55          | BDPIN_GPIO_6 |`FT`|
-| 9          | 56          | BDPIN_GPIO_7  | 10         | 57          | BDPIN_GPIO_8 |`FT`|
-| 11         | 58          | BDPIN_GPIO_9  | 12         | 59          | BDPIN_GPIO_10|`FT`|
-| 13         | 60          | BDPIN_GPIO_11 | 14         | 61          | BDPIN_GPIO_12|`FT`|
-| 15         | 62          | BDPIN_GPIO_13 | 16         | 63          | BDPIN_GPIO_14|`FT`|
-| 17         | 64          | BDPIN_GPIO_15 | 18         | 65          | BDPIN_GPIO_16|`FT`|
-| 19         | 66          | BDPIN_GPIO_17 | 20         | 67          | BDPIN_GPIO_18|`FT`|
+| Pin Number | Arduino Pin | Pin Name      | Pin Number | Arduino Pin | Pin Name      | etc  |
+|:-----------|:------------|:--------------|:-----------|:------------|:--------------|:-----|
+| 1          | -           | 3.3V          | 2          | -           | GND           | -    |
+| 3          | 50          | BDPIN_GPIO_1  | 4          | 51          | BDPIN_GPIO_2  | `FT` |
+| 5          | 52          | BDPIN_GPIO_3  | 6          | 53          | BDPIN_GPIO_4  | `FT` |
+| 7          | 54          | BDPIN_GPIO_5  | 8          | 55          | BDPIN_GPIO_6  | `FT` |
+| 9          | 56          | BDPIN_GPIO_7  | 10         | 57          | BDPIN_GPIO_8  | `FT` |
+| 11         | 58          | BDPIN_GPIO_9  | 12         | 59          | BDPIN_GPIO_10 | `FT` |
+| 13         | 60          | BDPIN_GPIO_11 | 14         | 61          | BDPIN_GPIO_12 | `FT` |
+| 15         | 62          | BDPIN_GPIO_13 | 16         | 63          | BDPIN_GPIO_14 | `FT` |
+| 17         | 64          | BDPIN_GPIO_15 | 18         | 65          | BDPIN_GPIO_16 | `FT` |
+| 19         | 66          | BDPIN_GPIO_17 | 20         | 67          | BDPIN_GPIO_18 | `FT` |
 
 `FT` pins are 5V tolerant except when in analog mode. The maximum injected current on FT pins are **-5mA**. Also total output current sunk / sourced by sum of all I/O pins are **120mA / -120mA** respectively.
 {: .notice}
 
-`Note` Typical pull-up / pull-down resistance is 40k&ohm;
+**NOTE** : Typical pull-up / pull-down resistance is 40k&ohm;
 {: .notice}
 
-## [OLLO Connector](#ollo-connector)
+## [ROBOTIS 5-pin Connector](#robotis-5-pin-connector)
 
 ![](/assets/images/parts/controller/opencr10/arduino_pinmap_06.png)
 
@@ -166,6 +168,19 @@ void changeDirection_EXIT_0(void){
   Serial.println("EXIT_Interrupt! 0");
 }
 ```
+
+## [UART(Serial)](#uartserial)
+
+| Class Instance      | Arduino Pin  | Hardware |
+|:--------------------|:-------------|:---------|
+| Serial              | USB          | USB      |
+| Serial1             | 0(RX), 1(TX) | USART6   |
+| Serial2 (SerialBT1) | UART1        | USART2   |
+| Serial3             | DXL Port     | USART3   |
+| Serial4 (SerialBT2) | UART2        | UART8    |
+
+**CAUTION**: Since Serial3 is used for Dynamixel, its usage differs from other serial. (For more information, please refer to DynamixelWorkbench.)
+{: .notice--warning}
 
 
 ## [Pin Definition](#pin-definition)
@@ -356,7 +371,7 @@ This step shows the port setting for the program uploads. The OpenCR should be c
 
 Select Tools → Port → /dev/ttyACM0.
 
-`Warning` The last digit value `0` in the string `/dev/ttyACM0` might be different depend on the USB connection environment.
+**WARNING** : The last digit value `0` in the string `/dev/ttyACM0` might be different depend on the USB connection environment.
 {: .notice--warning}
 
 ![](/assets/images/platform/turtlebot3/preparation/ide6.png)
@@ -371,7 +386,7 @@ $ sudo apt-get purge modemmanager
 
 ### [Writing Bootloader(Linux)](#writing-bootloaderlinux)
 
-`Caution` Update only if the boot loader version has been changed.
+**CAUTION** : Update only if the boot loader version has been changed.
 {: .notice--warning}
 
 The STM32F7xx, which is used for the main MCU on the OpenCR board, supports DFU(Device Firmware Upgrade). This enables the built-in bootloader of the MCU by itself to boot the DFU protocol by using USB, primarily for the bootloader initialization, the recovery mode, and the bootloader update. The biggest advantage to let the users be able to use bootloader with USB but no other JTAG equipment. Write the firmware by using the DFU mode which is embedded in MCU without writing / debugging equipment, such as STLink.
@@ -436,7 +451,7 @@ See if OpenCR Board is now on the list of Tools → Board. Click this to import 
 This step shows the port setting for the program uploads. The OpenCR should be connected to the PC and the OpenCR via the USB ports.  
 Select Tools → Port → /dev/cu.usbmodem1411
 
-`Caution` The value of `/dev/cu.usbmodem1411` may be different depending on the environment connected to the PC.
+**CAUTION** : The value of `/dev/cu.usbmodem1411` may be different depending on the environment connected to the PC.
 {: .notice--warning}
 
 ![](/assets/images/parts/controller/opencr10/arduino_mac_06.png)
@@ -495,7 +510,7 @@ https://raw.githubusercontent.com/ROBOTIS-GIT/OpenCR/master/arduino/opencr_relea
 This step shows the port setting for the program uploads. The OpenCR should be connected to the PC and the OpenCR via the USB ports.  
 Select Tools → Port → COM1.
 
-`Caution` The value of `COM1` may be different depending on the environment connected to the PC.
+**CAUTION** : The value of `COM1` may be different depending on the environment connected to the PC.
 {: .notice--warning}
 
 
@@ -1746,8 +1761,8 @@ opencr_ld.exe COM1 115200 ./opencrfw.bin 1
 
 - [https://github.com/ROBOTIS-GIT/OpenCR/tree/master/arduino/opencr_arduino/tools/opencr_tools_1.0.0](https://github.com/ROBOTIS-GIT/OpenCR/tree/master/arduino/opencr_arduino/tools/opencr_tools_1.0.0)
 
-[Reference Manual]: www.st.com/resource/en/reference_manual/dm00124865.pdf
-[Datasheet]: www.st.com/resource/en/datasheet/stm32f745ie.pdf
+[Reference Manual]: http://www.st.com/resource/en/reference_manual/dm00124865.pdf
+[Datasheet]: http://www.st.com/resource/en/datasheet/stm32f745ie.pdf
 [B3B-EH-A]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
 [B4B-EH-A]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
 [20010WS-04]: http://www.alldatasheet.com/datasheet-pdf/pdf/147797/YEONHO/20010WS-04000.html

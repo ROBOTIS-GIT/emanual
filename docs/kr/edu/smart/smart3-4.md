@@ -29,7 +29,7 @@ sidebar:
 [스마트 앱 파라미터 사용법 바로가기]  
 {: .notice}
 
-# [부품 리스트](#부품-리스트)
+# [부품 목록](#부품-목록)
 
 ![](/assets/images/edu/smart/smart3-4_e-manual.jpg)
 
@@ -39,11 +39,11 @@ sidebar:
 
 - 스마트 기기에 R+ SMARTIII 와 R+m.task2.0 를 설치해야 합니다.
 
-- 앱 설치가 완료되면 스마트III 1단계 키트에 포함된 제어기(CM-200)에 블루투스(BT-410)를 연결하고 R+SMARTIII에서 R+m.task2.0을 실행하여 예제를 다운로드 받습니다.
+- 앱 설치가 완료되면 스마트III 1단계 키트에 포함된 제어기([CM-200])에 블루투스([BT-410])를 연결하고 R+SMARTIII에서 R+m.task2.0을 실행하여 예제를 다운로드 받습니다.
 
   **[R+ SMARTIII 설치 및 예제 다운로드 방법 바로가기]**
 
-  `주의` 제어기에 프로그램을 다운로드 받으면, 그전에 다운받은 프로그램은 지워집니다. 예제 동작시 음원이나 음성이 재생되는 것을 함께 확인하기 위해서는 스마트 기기의 미디어 볼륨을 반드시 키우고 실행하길 권장합니다.  
+  **주의**: 제어기에 프로그램을 다운로드 받으면, 그전에 다운받은 프로그램은 지워집니다. 예제 동작시 음원이나 음성이 재생되는 것을 함께 확인하기 위해서는 스마트 기기의 미디어 볼륨을 반드시 키우고 실행하길 권장합니다.  
   {: .notice}
 
 ## 작동방법
@@ -52,18 +52,15 @@ sidebar:
 
   ![](/assets/images/edu/smart/cm_200_7.jpg)
 
-  `Note` 예제 파일은 [4단계 교안예제] 페이지 또는 R+ SMARTIII앱 에서 얻을 수 있습니다.  
+  **참고**: 예제 파일은 [4단계 교안예제] 페이지 또는 R+ SMARTIII앱 에서 얻을 수 있습니다.  
   {: .notice}
 
 # [교안예제](#교안예제)
 
-{% capture smart3-4_01 %}
 각 예제의 조립 방법이나 실행 시 동작에 관한 내용은 교육키트 2단계 교안을 참고하세요.  
 또한, 예제 태스크 코드의 다운로드 방법은 [태스크 코드 다운로드]를 참고하세요.  
 다운로드시 필요한 [BT-410]은 1단계 구성품에 포함되어 있습니다. 분실시 쇼핑몰에서 별도구매 해주세요.
-{% endcapture %}
-
-<div class="notice">{{ smart3-4_01 | markdownify }}</div>
+{: .notice}
 
 
 |로봇|태스크 코드|
@@ -84,6 +81,7 @@ sidebar:
 [R+ SMARTIII 설치 및 예제 다운로드 방법 바로가기]: /docs/kr/software/mobile_app/rplussmart/#r-smart-다운로드설치
 [4단계 교안예제]: #교안예제
 [태스크 코드 다운로드]: /docs/kr/faq/download_task_code/
+[CM-200]: /docs/kr/parts/controller/cm-200/
 [BT-410]: /docs/kr/parts/communication/bt-410/
 [01_smart3_L4_Factory_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/01_smart3_l4_factory_kr.tskx
 [03_smart3_L4_Factory_RC_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/03_smart3_l4_factory_rc_kr.tskx

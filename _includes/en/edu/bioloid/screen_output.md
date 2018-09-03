@@ -95,7 +95,7 @@ Download the task code created above.([How to Download Task Code])
 
     ![Screen-Output-1][img_011]
 
-[How to Download Task Code]: /docs/en/faq/download_task_code/
+[How to Download Task Code]: /docs/en/software/rplus1/task/getting_started/#program-download
 [img_011]: /assets/images/edu/bioloid/bioloid_entry_tutorial_printscr_01.png
 [img_012]: /assets/images/edu/bioloid/bioloid_entry_tutorial_printscr_02.png
 [img_013]: /assets/images/edu/bioloid/bioloid_entry_tutorial_printscr_03.png

@@ -132,7 +132,7 @@ Window8,10의 경우 "시작설정-> 업데이트 복구-> 복구-> 고급시작
 
 ![img](/assets/images/sw/opencm_ide/opencm9.04_windows16.png)
 
-`Note` 만약에 다운로드 버튼을 클릭하고도 보드의 녹색 Status LED가 켜지지 않는다면 User button을 누른상태에서 USB를 PC와 연결하십시요. 보드 전원이 들어오면서 녹색 LED가 계속 켜지면 다운로드를 다시 시작하십시요. 자세한 설명은 긴급 복구 모드(강제 다운로드)편을 참조하세요.
+**참고**: 만약에 다운로드 버튼을 클릭하고도 보드의 녹색 Status LED가 켜지지 않는다면 User button을 누른상태에서 USB를 PC와 연결하십시요. 보드 전원이 들어오면서 녹색 LED가 계속 켜지면 다운로드를 다시 시작하십시요. 자세한 설명은 긴급 복구 모드(강제 다운로드)편을 참조하세요.
 {: .notice}
 
 ![img](/assets/images/sw/opencm_ide/opencm9.04_26.jpg)
@@ -193,7 +193,7 @@ tty.usbmodemXXX로 선택합니다. 뒤의 숫자는 PC마다 다릅니다.
 
 아래 그림에서 다운로드 버튼을 클릭합니다. 다운로드가 시작되는 동안 보드의 녹색 LED가 계속 켜집니다. 다운로드가 끝나면 보드가 리셋되고 Blink 예제가 실행되면서 LED가 깜빡입니다.
 
-`Note` 만약에 다운로드 버튼을 클릭하고도 보드의 녹색 Status LED가 켜지지 않는다면 User button을 누른상태에서 USB를 PC와 연결하십시요. 보드 전원이 들어오면서 녹색 LED가 계속 켜지면 다운로드를 다시 시작하십시요. 자세한 설명은 긴급 복구 모드(강제 다운로드)편을 참조하세요.
+**참고**: 만약에 다운로드 버튼을 클릭하고도 보드의 녹색 Status LED가 켜지지 않는다면 User button을 누른상태에서 USB를 PC와 연결하십시요. 보드 전원이 들어오면서 녹색 LED가 계속 켜지면 다운로드를 다시 시작하십시요. 자세한 설명은 긴급 복구 모드(강제 다운로드)편을 참조하세요.
 {: .notice}
 
 ![img](/assets/images/sw/opencm_ide/opencm9.04_mac11.png)
@@ -287,7 +287,7 @@ $sudo apt-get install ia32-libs
 아래 그림에서 가리키는 다운로드 버튼을 클릭합니다.  
 다운로드가 시작되는 동안 보드의 녹색 LED가 계속 켜집니다. 다운로드가 끝나면 보드가 리셋되고 Blink 예제가 실행되면서 LED가 깜빡입니다
 
-`Note` 만약에 다운로드 버튼을 클릭하고도 보드의 녹색 Status LED가 켜지지 않는다면 User button을 누른상태에서 USB를 PC와 연결하십시요. 보드 전원이 들어오면서 녹색 LED가 계속 켜지면 다운로드를 다시 시작하십시요. 자세한 설명은 긴급 복구 모드(강제 다운로드)편을 참조하세요.
+**참고**: 만약에 다운로드 버튼을 클릭하고도 보드의 녹색 Status LED가 켜지지 않는다면 User button을 누른상태에서 USB를 PC와 연결하십시요. 보드 전원이 들어오면서 녹색 LED가 계속 켜지면 다운로드를 다시 시작하십시요. 자세한 설명은 긴급 복구 모드(강제 다운로드)편을 참조하세요.
 {:. notice}
 
 ![img](/assets/images/sw/opencm_ide/opencm_ide_038.png)
@@ -803,7 +803,7 @@ void loop(){
 int value = analogRead(3);  // 0번 핀에서 아날로그 입력받아서 value 변수에 할당합니다.
 ```
 
-여기서 value에 할당되는 값은 12bit ADC 값으로 0~ 4095값이 됩니다. 전체 코드를 통해 읽은 ADC값을 출력해봅니다.
+여기서 value에 할당되는 값은 12bit ADC 값으로 0~ 4,095값이 됩니다. 전체 코드를 통해 읽은 ADC값을 출력해봅니다.
 
 ```c
 void setup(){
@@ -1358,7 +1358,7 @@ void loop(){
 
 CCW Angle Limit이 0x3FF일 경우 300도 이므로 150도에 해당하는 0x200을 writeByte() 메소드를 이용해 전송합니다.  
 
-`주의` 8번 CCW Angle Limit을 0으로 할 경우 바퀴모드로 변경되어서 Goal position 제어가 되지 않으니 주의하세요.
+**주의**: 8번 CCW Angle Limit을 0으로 할 경우 바퀴모드로 변경되어서 Goal position 제어가 되지 않으니 주의하세요.
 {: .notice--warning}
 
 ![opencm9.04_dynamixel9.png](/assets/images/sw/opencm_ide/opencm9.04_dynamixel9.png)
@@ -1485,14 +1485,12 @@ RC-100 통신 패킷에 대해서는 [RC-100](/docs/kr/parts/communication/rc-10
 > 지그비를 활용해서 OpenCM9.04와 RC100 조종기와 연결하기
 
 ### RC-100B + IR Receiver OIR-10을 이용한 적외선 연결
-RC-100A 또는 RC-100B의 적외선 통신 방법에 대해서는 [IR-10]을 참고하세요
-
-[IR-10]: ???
+RC-100A 또는 RC-100B의 적외선 통신 방법에 대해서는 IR-10을 참고하세요
 
 ### 안드로이드 스마트폰 + BT-210 을 이용한 블루투스 연결
 안드로이드 스마트폰의 경우 R+ m.Task 어플리케이션의 RC100 시뮬레이션을 이용하면 RC-100 패킷을 보낼 수 있습니다. R+m.Task는 구글 Play를 통해서 다운받을 수 있습니다.
 
-![img](/assets/images/sw/opencm_ide/opencm9.04_2.png)
+![img](/assets/images/sw/opencm_ide/opencm904_04.png)
 
 ![img](/assets/images/sw/opencm_ide/opencm9.04_rc100_4.png)
 

@@ -17,14 +17,12 @@ The followings are detectable situations.
 |Bit 0|Input Voltage Error|Detect input voltage exceeds the configured operating voltage|
 
 {% capture control_table_shutdown %}
-`Note` If Shutdown occurs, use below method to reboot Dynamixels.
+**NOTE** : If Shutdown occurs, use below method to reboot Dynamixels.
 1. H/W REBOOT : Turn off the power and turn on again
-2. S/W REBOOT : Transmit REBOOT Instruction (For more details, please refer to the [Reboot] section of Protocol e-Manual.)
+2. S/W REBOOT : Transmit REBOOT Instruction (For more details, please refer to the [Reboot](/docs/en/dxl/protocol2/#reboot) section of Protocol e-Manual.)
 {% endcapture %}
 
 <div class="notice">{{ control_table_shutdown | markdownify }}</div>
 
 If Shutdown occurs, LED will flicker every second.(Firmware v41 or above)
 {: .notice--warning}
-
-[Reboot]: /docs/en/dxl/protocol2/#reboot

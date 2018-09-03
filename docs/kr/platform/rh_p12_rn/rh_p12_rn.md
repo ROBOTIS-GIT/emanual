@@ -116,18 +116,18 @@ sidebar:
 
 ## [컨트롤 테이블 설명](#컨트롤-테이블-설명)
 
-`주의` EEPROM Area에 존재하는 모든 Data는 Torque Enable(562)의 값이 ‘0’일 때만 변경할 수 있습니다.
+**주의**: EEPROM Area에 존재하는 모든 Data는 Torque Enable(562)의 값이 ‘0’일 때만 변경할 수 있습니다.
 {: .notice--warning}
 
 ### <a name="model-number"></a>**[Model Number(0)](#model-number0)**
-RH-P12-RN의 모델 번호입니다.
+장치의 모델 번호입니다.
 
 | 모델명 | 모델 번호 |
 | :--------: | :----------: |
 |RH-P12-RN | 35073 (0x8901) |
 
 ### <a name="firmware-version"></a>**[Firmware Version(6)](#firmware-version6)**
-RH-P12-RN의 펌웨어 버전입니다.
+장치의 펌웨어 버전입니다.
 
 ### <a name="id"></a>**[ID(7)](#id7)**
 {% include kr/dxl/control_table_id.md %}
@@ -139,7 +139,7 @@ RH-P12-RN의 펌웨어 버전입니다.
 {% include kr/dxl/control_table_return_delay_time.md %}
 
 ### <a name="operating-mode"></a>**[Operating Mode(11)](#operating-mode11)**
-다이나믹셀의 제어 모드를 설정합니다. 각 제어 모드마다 특성이 다르기 때문에, 구현하려는 시스템에 적합한 제어 모드를 설정하시기 바랍니다.
+장치의 제어 모드를 설정합니다. 각 제어 모드마다 특성이 다르기 때문에, 구현하려는 시스템에 적합한 제어 모드를 설정하시기 바랍니다.
 
 | Value      | Operating Mode         | Description                                           |
 |:-----------|:-----------------------|:------------------------------------------------------|
@@ -194,7 +194,7 @@ Goal Position(596)에 Max Position Limit(36)과 Min Position Limit(40)의 범위
 
 
 ### <a name="external-port-mode"></a><a name="external-port-data"></a>**[External Port Mode](#external-port-mode)**, **[External Port Data](#external-port-data)**
-다이나믹셀 프로는 다용도로 사용 가능한 External Port 를 제공합니다.  
+장치는 다용도로 사용 가능한 External Port 를 제공합니다.  
 External Port 의 용도는 External Port Mode (44, 45, 46, 47) 에 의해서 결정되고, External Port 의 신호는 External Port Data (626, 628, 630, 632) 에 의해 제어됩니다.
 
 |External Port Mode|명칭|상세|
@@ -237,7 +237,7 @@ External Port 의 용도는 External Port Mode (44, 45, 46, 47) 에 의해서 �
 
 
 ### <a name="shutdown"></a>**[Shutdown(48)](#shutdown48)**
-다이나믹셀 프로는 동작 중에 발생하는 위험 상황을 감지하여 스스로를 보호할 수 있습니다. 각 Bit의 기능은 ‘OR’ 논리로 적용되기 때문에 중복 설정이 가능합니다.  
+장치는 동작 중에 발생하는 위험 상황을 감지하여 스스로를 보호할 수 있습니다. 각 Bit의 기능은 ‘OR’ 논리로 적용되기 때문에 중복 설정이 가능합니다.  
 즉 [Shutdown(48)]이 ‘0x05’(2진수 : 000,0101)로 설정되었을 경우, Input Voltage Error(2진수 : 0000,0001)와 Over Heating Error(2진수 : 0000,0100)가 발생하는 것을 모두 감지할 수 있습니다.  
 위험상황이 감지되면, [Torque Enable(562)] 값이 ‘0’으로 변경되고 모터 출력은 0%가 됩니다.  
 위험상황이 감지된 후에는 REBOOT을 하지 않는 한, Torque Enable(562)을 ‘1’(Torque ON)로 설정할 수 없습니다.  
@@ -255,7 +255,7 @@ External Port 의 용도는 External Port Mode (44, 45, 46, 47) 에 의해서 �
 |Bit 0|Input Voltage Error|인가된 전압이 설정된 동작 전압 범위를 벗어났을 경우|
 
 {% capture rh_p12_rn_01 %}
-`Note` Shutdown 이 발생하면 다음과 같은 방법으로 다이나믹셀을 REBOOT 시킬 수 있습니다.
+**참고**: Shutdown 이 발생하면 다음과 같은 방법으로 장치를 REBOOT 시킬 수 있습니다.
 1. H/W REBOOT : 전원을 껐다 켜는 방법
 2. S/W REBOOT : REBOOT Instruction Packet 을 전송하는 방법 (자세한 사항은 e-Manual의 [프로토콜]을 참고해 주세요)
 {% endcapture %}
@@ -290,7 +290,7 @@ K<sub>P</sub>D, K<sub>P</sub>I, K<sub>P</sub>P 는 각각 Position D Gain, Posit
 
 ![](/assets/images/platform/rh_p12_rn/rh_p12_rn_control_diagram.png)
 
-`Note` K<sub>P</sub>A는 Anti-windup Gain으로 사용자가 변경할 수 없습니다. PID제어기에 대한 설명은 다음의 사이트를 참고합니다. [PID 제어기(위키피디아)](http://en.wikipedia.org/wiki/PID_controller).
+**참고**: K<sub>P</sub>A는 Anti-windup Gain으로 사용자가 변경할 수 없습니다. PID제어기에 대한 설명은 다음의 사이트를 참고합니다. [PID 제어기(위키피디아)](http://en.wikipedia.org/wiki/PID_controller).
 {: .notice}
 
 ### <a name="goal-position">**[Goal Position(596)](#goal-position596)**
@@ -310,7 +310,7 @@ Goal Velocity(600)가 ‘0’인 경우, Profile 은 비활성화 되며, 속도
 | :---: | :---: |
 | 약 0.114 RPM | -Velocity Limit(32) ~ Velocity Limit(32) |
 
-`Note` 해당 모델의 최대 RPM을 확인하시기 바랍니다. Goal Velocity(600)를 최대 RPM 이상으로 설정해도 모터는 최대 RPM 이상의 속도를 낼 수 없습니다.
+**참고**: 해당 모델의 최대 RPM을 확인하시기 바랍니다. Goal Velocity(600)를 최대 RPM 이상으로 설정해도 모터는 최대 RPM 이상의 속도를 낼 수 없습니다.
 {: .notice}
 
 ### <a name="goal-current"></a>**[Goal Current(604)](#goal-current604)**
@@ -339,7 +339,7 @@ Goal Velocity(600)가 ‘0’인 경우, Profile 이 비활성화 되어 Goal Ac
 {% include kr/dxl/control_table_610_moving_pro.md %}
 
 ### <a name="present-position"></a>**[Present Position(611)](#present-position611)**
-다이나믹셀의 현재 위치 값입니다.
+장치의 현재 위치 값입니다.
 
 |Model|Goal Position = 0|Goal Position = 740|
 | :-------: | :--------: | :--------: |
@@ -391,7 +391,7 @@ Goal Velocity(600)가 ‘0’인 경우, Profile 이 비활성화 되어 Goal Ac
 |:---:|:---:|:---:|
 |핀 번호|`1` GND<br>`2` VDD<br>`3` DATA+<br>`4` DATA-|`1` GND<br>`2` VDD<br>`3` PORT 1<br>`4` PORT 2<br>`5` PORT 3<br>`6` PORT 4|
 |다이어그램|![](/assets/images/dxl/jst_b4beha_diagram.png)|![](/assets/images/dxl/molex_5304706_diagram.png)|
-|하우징|[JST EHR-04]|![](/assets/images/dxl/molex_510210600.png)<br />[MOLEX 51021-0600]|
+|하우징|![](/assets/images/dxl/JST_EHR-4.png)<br />[JST EHR-04]|![](/assets/images/dxl/molex_510210600.png)<br />[MOLEX 51021-0600]|
 |PCB 헤더|![](/assets/images/dxl/jst_b4beha.png)<br />[JST B4B-EH-A]|![](/assets/images/dxl/molex_530470610.png)<br />[MOLEX 53047-0610]|
 |Crimp 터미널|[JST SHE-001T-P0.6]|[MOLEX 50079-8100]|
 |Wire Gauge|21 AWG|21 AWG|
@@ -404,8 +404,8 @@ Goal Velocity(600)가 ‘0’인 경우, Profile 이 비활성화 되어 Goal Ac
 [MOLEX 50079-8100]: http://www.molex.com/molex/products/datasheet.jsp?part=active/0500798100_CRIMP_TERMINALS.xml
 
 ## [도면](#도면)
-`Download` [RH-P12-RN(PDF).zip](http://www.robotis.com/service/download.php?no=740)  
-`Download` [RH-P12-RN(STP).zip](http://www.robotis.com/service/download.php?no=741)
+`다운로드` [RH-P12-RN(PDF).zip](http://www.robotis.com/service/download.php?no=740)  
+`다운로드` [RH-P12-RN(STP).zip](http://www.robotis.com/service/download.php?no=741)
 
 
 [PDF]: http://support.robotis.com/en/baggage_files/dynamixel/rh-p12-rn.pdf

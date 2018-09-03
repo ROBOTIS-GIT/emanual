@@ -18,8 +18,8 @@ sidebar:
 로보티즈 드림 3단계는 1, 2단계 키트와 결합되어 총 12장의 교재와 예제 로봇이 결합되어 제어 프로그램과 센서들의 활용, 원리의 이해, 문제풀이 등의 과정을 제공합니다. 12회에 걸쳐 로봇을 순서대로 만들면서 로봇 제작의 원리를 학습할 수 있습니다.
 
 {% capture dream_01 %}
-`주의`
-- 교육키트 3단계는 1, 2단계 키트의 부품들이 있어야 로봇을 제작할 수 있습니다. 반드시 교육키트 [1단계], [2단계]를 먼저 구매하시기 바랍니다.
+**주의**:
+- 교육키트 3단계는 1, 2단계 키트의 부품들이 있어야 로봇을 제작할 수 있습니다. 반드시 교육키트 [1단계](/docs/kr/edu/dream/dream1-1/), [2단계](/docs/kr/edu/dream/dream1-2/)를 먼저 구매하시기 바랍니다.
 - 로보티즈 드림 3단계에서 프로그램은 제어기(CM-150)에 사용자가 직접 프로그램 하거나 다운로드 해야 합니다.
 - 로보티즈 드림 1단계에 포함되어 있는 USB 케이블을 이용해서 다운로드 할 수 있습니다.
 - 로봇을 제작하여 보다 다양한 형태로 제작하거나, 로봇을 조종하기 위해서는 로보티즈 드림 4단계를 구매하시면 됩니다.  
@@ -27,7 +27,7 @@ sidebar:
 
 <div class="notice--warning">{{ dream_01 | markdownify }}</div>
 
-# [부품 리스트](#부품-리스트)
+# [부품 목록](#부품-목록)
 
 ![](/assets/images/edu/dream/dream3kr.jpg)
 
@@ -38,14 +38,11 @@ sidebar:
 
 # [교안예제](#교안예제)
 
-{% capture dream_02 %}
 각 예제의 조립 방법이나 실행 시 동작에 관한 내용은 로보티즈 드림 3단계 교안을 참고하세요.  
-예제 프로그램은 사용자가 직접 다운로드해야 합니다.   
+예제 프로그램은 사용자가 직접 다운로드해야 합니다.  
 프로그램을 다운로드 하거나 직접 만들 경우에 [예제 태스크 코드의 다운로드 방법]을 참고하세요.  
 다운로드시 필요한 USB 케이블 은 1단계 구성품에 포함되어 있습니다.
-{% endcapture %}
-
-<div class="notice">{{ dream_02| markdownify }}</div>
+{: .notice}
 
 |예제|로봇|TASK Code|
 | :---: | :---: | :---: |
@@ -62,9 +59,6 @@ sidebar:
 |11. 두더지게임|![](/assets/images/edu/dream/dream1-3_whacamole.jpg)|[Download][DREAM_L3_MoleHitting_KR.tsk]|
 |12. 도깨비|![](/assets/images/edu/dream/dream1-3_goblin.jpg)|[Download][DREAM_L3_BabyGoblin_KR.tsk]|
 
-
-[1단계]: /docs/kr/edu/dream/dream1-1/
-[2단계]: /docs/kr/edu/dream/dream1-2/
 [서보 모터]: /docs/kr/parts/motor/servo_motor/
 [적외선 센서]: /docs/kr/parts/sensor/irss-10/
 [LED 모듈]: /docs/kr/parts/display/lm-10/

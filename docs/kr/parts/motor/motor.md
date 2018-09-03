@@ -1,16 +1,11 @@
 ---
-layout: splash
+layout: archive
 lang: kr
-ref: motor_parts
+ref: parts_motor
 permalink: /docs/kr/parts/motor/
-header:
-  overlay_color:
-  overlay_image:
-  cta_label:
-  cta_url:
-  caption:
-  intro:
-    - excerpt: 'Parts-Motor'
+sidebar:
+  title: 모터
+  nav: ""
 ---
 
 # [감속모터(GM-10A)](#감속모터gm-10a)

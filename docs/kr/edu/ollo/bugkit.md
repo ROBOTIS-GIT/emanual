@@ -51,9 +51,9 @@ OLLO 버그 퍼즐 레이스용 라인 인쇄물 :
 
 # [시작하기](#시작하기)
 
-## [부품 리스트](#부품-리스트)
+## [부품 목록](#부품-목록)
 
-올로 버그 부품 리스트
+올로 버그 부품 목록
 
 ![](/assets/images/edu/ollo/bug_partlist_kr.png)
 
@@ -542,34 +542,34 @@ PC([RoboPlus Task] 프로그램), 조립된 버그 로봇, USB 다운로더([LN-
   ([새 무선 데이터 도착에 대한 자세한 설명은 여기를 참고하세요.])
 
     ![](/assets/images/edu/ollo/2-1-1_kr.png)
-    
+
     ![](/assets/images/edu/ollo/2-1-2_kr.png)
 
 3. 새 무선 데이터가 도착하면 받은 무선 데이터를 로드 명령으로 받은데이터 라는 변수에 넣어줍니다.  
   ([변수에 대한 자세한 설명은 여기를 참고하세요.])
 
     ![](/assets/images/edu/ollo/3-1-5_kr.png)
-    
+
     ![](/assets/images/edu/ollo/3-1-6_kr.png)
-    
+
     ![](/assets/images/edu/ollo/3-1-7_kr.png)
 
 4. 받은 무선 데이터의 값 중 RC-100 이동 조종 버튼값만 분리합니다.
   계산 명령어를 이용하여 받은데이터 값에 RC-100 의 U, L, D, R 버튼 값을 비트연산 & 를 통해 필요한 값만 분리하여 이동조종키 변수에 넣어줍니다.  
   계산 명령어 입력 ([계산 명령어에 대한 자세한 정보는 여기를 참고하세요.])
-  
+
     ![](/assets/images/edu/ollo/4-5_kr.png)
 
     결과 란에 이동조종키 변수를 넣고, 연산 파라미터1 에 받은데이터 변수를 넣은 다음 연산자를 & (AND) 로 선택합니다.  
-    
+
     ![](/assets/images/edu/ollo/4-5-1_kr.png)
 
     연산 파라미터2 에 RC-100 버튼 값으로 U/L/D/R 을 모두 선택하여 입력합니다. ([RC-100 버튼 값에 대한 자세한 정보는 여기를 참고하세요.])
-    
+
     ![](/assets/images/edu/ollo/4-3-1_kr.png)
 
     입력을 완료하면 아래와 같습니다.
-    
+
     ![](/assets/images/edu/ollo/4-3-2_kr.png)
 
 5. 이동조종키 값에 따라 직진/후진/좌회전/우회전 합니다. 모든 이동조종키 버튼이 떼어지면 정지합니다.
@@ -589,9 +589,9 @@ PC([RoboPlus Task] 프로그램), 조립된 버그 로봇, USB 다운로더([LN-
 
 `다운로드` 태스크 코드 [OLLO_BUG_Product_KR.tsk](http://support.robotis.com/ko/baggage_files/ollo/bug/ollo_bug_product_kr.tsk)
 
-`Note` [태스크 코드 다운로드 방법]
+**참고**: [태스크 코드 다운로드 방법]
 
-`Note` [기본 프로그램의 작동방법]
+**참고**: [기본 프로그램의 작동방법]
 
 [CM-100]: /docs/kr/parts/controller/cm-100/
 [감속모터]: /docs/kr/parts/motor/gm-10a/

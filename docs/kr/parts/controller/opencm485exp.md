@@ -41,8 +41,9 @@ sidebar:
 9. **Power Switch** : 보드와 다이나믹셀 전원을 on/off하는 스위치 입니다. 단, USB 연결시 보드 전원은 on/off되지 않습니다.
 10. **JP1 Jumper** : OpenCM 485 EXP 보드에  입력된 전압을 OpenCM9.04에도 전압을 입력할지 결정하는 점퍼 입니다.
 
+{% include kr/dxl/pinout_warning.md %}
 
-# [458 확장보드와 OpenCM 연결하기](#485-확장보드와-opencm-연결하기)
+# [OpenCM9.04와 연결하기](#opencm904와-연결하기)
 
 1. OpenCM 485 확장보드 와 OpenCM9.04를 준비합니다. OpenCM9.04는 타입에 관계없이 사용가능하고 헤더를 납땜해주세요.
 
@@ -50,7 +51,7 @@ sidebar:
 
 2. OpenCM 485 확장보드 와 OpenCM9.04를 아래의 그림과 같이 연결 합니다.
 
-    `Caution` 방향을 위와 같이 연결 해주시기 바랍니다.
+    **주의** : 방향을 위와 같이 연결 해주시기 바랍니다.
     {: .notice--warning}
 
     ![](/assets/images/parts/controller/opencm904/img_3483.jpg)
@@ -63,7 +64,7 @@ sidebar:
 
     ![](/assets/images/parts/controller/opencm904/opencm485exp-12.jpg)
 
-`Note` 다이나믹셀 펌웨어 업데이트 및 복구시 OpenCM9.04와 OpenCM 485 확장보드를 반드시 분리해주세요
+**참고**: 다이나믹셀 펌웨어 업데이트 및 복구시 OpenCM9.04와 OpenCM 485 확장보드를 반드시 분리해주세요
 {: .notice--warning}
 
 
@@ -78,7 +79,7 @@ OpenCM 485 확장보드는 기본적으로 OpenCM9.04 5V 전원 공급을 하며
 
 OpenCM 485 확장보드의 TTL/485 버스는 OpenCM9.04의 USART3(Serial3)을 통해서 다이나믹셀 버스가 구성됩니다.
 
-`Note` OpenCM9.04의 다이나믹셀 TTL BUS는 USART1(Serial1)과 연결되어 있습니다.
+**참고**: OpenCM9.04의 다이나믹셀 TTL BUS는 USART1(Serial1)과 연결되어 있습니다.
 {: .notice}
 
 ![](/assets/images/parts/controller/opencm904/opencm485exp_3.png)
@@ -135,7 +136,7 @@ OpenCM 485  확장보드에는 OpenCM9.04의 IO핀과 연결된 버튼 2개와 
 
 # [다운로드](#다운로드)
 
-- `Download` [SCHEMATIC-OpenCM 485 EXP.pdf]
+- `다운로드` [SCHEMATIC-OpenCM 485 EXP.pdf]
 
 
 

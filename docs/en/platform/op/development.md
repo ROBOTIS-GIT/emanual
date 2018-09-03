@@ -194,7 +194,7 @@ The illustration above depicts the re-execution of the demo program
  
 {% capture op_notice_02 %}
 
-`Note`
+**NOTE** :
 1. the execute command is **./demo &** instead of the normal **./demo**
 2. the line below reads: **[1] 10223**
 
@@ -3291,7 +3291,7 @@ Reads position values for the right arm. From values' data the left arm mirrors 
  
 #### Tutorial Procedure
 
-`Note` Before you begin ensure that DARWIN-OP is in a stable kneeling position. During this tutorial torque from all actuators will be released.
+**NOTE** : Before you begin ensure that DARWIN-OP is in a stable kneeling position. During this tutorial torque from all actuators will be released.
 {: .notice}
  
 Press the "RESET" button and ensure you've perform the **killall** procedure (if necessary).  
@@ -3365,7 +3365,7 @@ Camera's gain and exposure values can be can be changed by clicking the buttons.
 
 #### Tutorial Procedure
 
-`Note` Before you begin, ensure that DARwIn-OP is in a stable kneeling position. During this tutorial torque from all actuators will be released.
+**NOTE** : Before you begin, ensure that DARwIn-OP is in a stable kneeling position. During this tutorial torque from all actuators will be released.
 {: .notice}
 
 Press the "RESET" button and ensure you've perform the **killall** procedure (if necessary).  
@@ -3434,7 +3434,7 @@ From the capture screen color RGB(255, 0, 0) (color) replacement is shown
  
 #### Tutorial procedure
 
-`Note` Before you begin, ensure that DARwIn-OP is in a stable kneeling position. During this tutorial torque from all actuators will be released.
+**NOTE** : Before you begin, ensure that DARwIn-OP is in a stable kneeling position. During this tutorial torque from all actuators will be released.
 {: .notice}
 
 Press the "RESET" button and ensure you've perform the **killall** procedure (if necessary).  
@@ -3484,7 +3484,7 @@ The following table represents change in values from red ball (default) to blue 
 |        Gain        |      255      |        255        |                            255                            |
 |      Exposure      |     1000      |       1000        |                           1000                            |
 
-`Note` Remember that these values are in accordance to the HSV color space. The values assigned for the colors are arbitrary and you may choose any values to suit your needs.
+**NOTE** : Remember that these values are in accordance to the HSV color space. The values assigned for the colors are arbitrary and you may choose any values to suit your needs.
 {: .notice}
 
 To end the tutorial hold the "CONTROL" key and press the C key. Afterwards press the "RESET" button from DARWIN-OP.  
@@ -3544,7 +3544,7 @@ Head pan and tilt joints aim at the center of mass of the captured color. the he
 
 #### Tutorial Procedure
 
-`Note` Before you begin, ensure that DARwIn-OP is in a stable kneeling position. During this tutorial torque from all actuators will be released.
+**NOTE** : Before you begin, ensure that DARwIn-OP is in a stable kneeling position. During this tutorial torque from all actuators will be released.
 {: .notice}
 
 Press the "RESET" button and ensure you've perform the **killall** procedure (if necessary).  
@@ -3674,7 +3674,7 @@ Ball is tracked by head tracking, Walking towards the ball via walking module.
  
 #### Tutorial Procedure
 
-`Note` Before you begin, ensure that DARwIn-OP is in a stable kneeling position. During this tutorial torque from all actuators will be released.
+**NOTE** : Before you begin, ensure that DARwIn-OP is in a stable kneeling position. During this tutorial torque from all actuators will be released.
 {: .notice}
 
 Press the "RESET" button and ensure you've perform the **killall** procedure (if necessary).  
@@ -3767,7 +3767,7 @@ Execution of the pre-scripted sequence action and mp3 playback from the script f
  
 #### Tutorial Procedure
 
-`Note` Before you begin, ensure that DARwIn-OP is in a stable kneeling position. During this tutorial torque from all actuators will be released.
+**NOTE** : Before you begin, ensure that DARwIn-OP is in a stable kneeling position. During this tutorial torque from all actuators will be released.
 {: .notice}
 
 Press the "RESET" button and ensure you've perform the **killall** procedure (if necessary).  
@@ -3943,7 +3943,7 @@ Press the space bar to goggle walking on and off.
  
 #### Tutorial Procedure
 
-`Note` Before you begin, ensure that DARwIn-OP is in a stable kneeling position. During this tutorial torque from all actuators will be released.
+**NOTE** : Before you begin, ensure that DARwIn-OP is in a stable kneeling position. During this tutorial torque from all actuators will be released.
 {: .notice}
 
 Press the "RESET" button and ensure you've perform the **killall** procedure (if necessary).  
@@ -4020,7 +4020,7 @@ Although there are many pages occupied with data. Not all pages are actually set
 #### Getting Started with Action Editor
 
 {% capture op_warning_01 %}
-`Warning` Before running Action Editor please verify angle resolution the actuators are currently loaded with.  
+**WARNING** : Before running Action Editor please verify angle resolution the actuators are currently loaded with.  
 For example, if the actuators resolution is 1024 then you can only work with motion file for 1024-resolution (motion_1024.bin)  
 Running another file may damage DARWIN-OP.  
 If you are unsure about which angle resolution the actuators are currently loaded with then refer to dxl_monitor.  
@@ -4182,7 +4182,7 @@ If all goes well you will see "Success to write!"
 To check the currently operating angle resolution perform the following:
 1. Select an eactuator by typeing id (ID number). For example id 3
 2. Type d to display the control table
-3. Look for CW_ANGLE_LIMIT, CCW_ANGLE_LIMIT, and GOAL_POSITON. if all of these values show 1023 or less, then resolution is 1024. if any of these values is between 0 and 4095 then the resolution is 4096.   
+3. Look for CW_ANGLE_LIMIT, CCW_ANGLE_LIMIT, and GOAL_POSITON. if all of these values show 1023 or less, then resolution is 1024. if any of these values is between 0 and 4,095 then the resolution is 4096.   
 There may be an occasion that a given actuator may display values of 1023 or lower but you may not be sure whether the resolution is either 1024 or 4096. In such case make verifications on several actuators.  
 If all the verified values are 1023 or lower, then the resolution is 1024.  
 If any of the values display larger than 1023 then the resolution is 4096.  
@@ -4219,7 +4219,7 @@ Please refer to the motion file [here](#action-editor).
 You may find RoboPlus-related files at `/darwin/Linux/project/roboplus`
 However, to properly execute this program DARWIN-OP must be connected to a computer via wired/wireless LAN with **RoboPlus 1.0.23.0 or above**.
 
-`Note` This section assumes that the actuators installed in DARWIN-OP are set at the resolution of 1024( MX-28 firmware version 26(0x1A) ). RoboPlus currently does not support MX-28 angle resolution of 4096 ( MX-28 firmware version 27(0x1B) or higher ).
+**NOTE** : This section assumes that the actuators installed in DARWIN-OP are set at the resolution of 1024( MX-28 firmware version 26(0x1A) ). RoboPlus currently does not support MX-28 angle resolution of 4096 ( MX-28 firmware version 27(0x1B) or higher ).
 {: .notice}
 
 This option allows you to edit DARWIN-OP's motion file with RoboPlus Motion.
@@ -4278,7 +4278,7 @@ You may continue making changes with Action Editor.
 
 ### [Walking Tuner](#walking-tuner)
 
-`Warning` Before you change any value(s) it is highly recommended that you become very familiar and proficient with DARWIN-OP. ROBOTIS is not responsible for any damages caused as result of changes in value due to lack or user expertise or user negligence.
+**WARNING** : Before you change any value(s) it is highly recommended that you become very familiar and proficient with DARWIN-OP. ROBOTIS is not responsible for any damages caused as result of changes in value due to lack or user expertise or user negligence.
 {: .notice--warning}
  
 Walk tuning files can be found at `/darwin/Linux/project/walk_tuner`  

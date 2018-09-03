@@ -17,8 +17,8 @@ If specific address is allocated to Indirect Address, Indirect Address inherits 
 | :------------- | :------------- |
 | 64 ~ 661 | EEPROM address can't be assigned to Indirect Address |
 
-`Note` In order to allocate Data in the Control Table longer than 2[byte] to Indirect Address, all address must be allocated to Indirect Address like the above Example 2.
+**NOTE** : In order to allocate Data in the Control Table longer than 2[byte] to Indirect Address, all address must be allocated to Indirect Address like the above Example 2.
 {: .notice}
 
-`Note` Indirect Address 29 ~ 56 and Indirect Data 29 ~ 56 can only be accessed with Protocol 2.0.
+**NOTE** : Indirect Address 29 ~ 56 and Indirect Data 29 ~ 56 can only be accessed with Protocol 2.0.
 {: .notice}

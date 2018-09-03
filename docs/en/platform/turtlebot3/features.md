@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: turtlebot3_features
+ref: features
 read_time: true
 share: true
 author_profile: false
@@ -17,13 +17,13 @@ sidebar:
 
 ![](/assets/images/platform/turtlebot3/features/features_with_icons.png)
 
-## [World's Most Popular ROS Platform](#world/'s-most-popular-ros-platform)
+## [World's Most Popular ROS Platform](#worlds-most-popular-ros-platform)
 
 `TurtleBot` is the most popular open source robot for education and research. The new generation `TurtleBot3` is a `small`, `low cost`, `fully programmable`, `ROS based mobile robot`. It is intended to be used for education, research, hobby and product prototyping.
 
 ## [Affordable Cost](#affordable-cost)
 
-TurtleBot was developed to meet the cost-conscious needs of schools, laboratories and companies. TurtleBot3 is the most affordable robot among the SLAM-able mobile robots equipped with a 360&deg Laser Distance Sensor LDS-01.
+TurtleBot was developed to meet the cost-conscious needs of schools, laboratories and companies. TurtleBot3 is the most affordable robot among the SLAM-able mobile robots equipped with a 360&deg; Laser Distance Sensor LDS-01.
 
 ## [Small Size](#small-size)
 
@@ -31,7 +31,7 @@ The dimension of TurtleBot3 Burger is only 138mm x 178mm x 192mm (L x W x H). It
 
 ## [ROS Standard](#ros-standard)
 
-The TurtleBot brand is managed by [Open Robotics][open-robotics], which develops and maintains ROS. Nowadays, ROS has become the go-to platform for all the roboticists around the world. TurtleBot can be integrated with existing ROS-based robot components, but TurtleBot3 can be an affordable platform for whom want to get started learning ROS.
+The TurtleBot brand is managed by [Open Robotics][open_robotics], which develops and maintains ROS. Nowadays, ROS has become the go-to platform for all the roboticists around the world. TurtleBot can be integrated with existing ROS-based robot components, but TurtleBot3 can be an affordable platform for whom want to get started learning ROS.
 
 ## [Extensibility](#extensibility)
 
@@ -56,5 +56,5 @@ The 3D CAD data is released via Onshape which is a full-cloud 3D CAD editor. Use
 Besides, for the users who want to make OpenCR1.0 board by themselves, all details of the OpenCR1.0 board such as schematics, PCB gerber files, BOM and firmware source code are fully opened under the open-source licenses for users and ROS community.
 You can modify downloaded source code and hardware to share it with your friends.
 
-[open-robotics]: http://www.osrfoundation.org/
-[robotis]: http://wwww.robotis.com/
+[open_robotics]: https://www.openrobotics.org/
+[robotis]: http://www.robotis.com/

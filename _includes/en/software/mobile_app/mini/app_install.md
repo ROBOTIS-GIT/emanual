@@ -23,7 +23,7 @@ Execute the ROBOTIS-MINI app.
 ![](/assets/images/sw/mobile/mini_app_003.png)
 ![](/assets/images/sw/mobile/mini_app_004.png)
 
-`Caution` If the setting of the ‘Server/Client’ under setting is set to client, instead of the ‘Registered Robot’ appearing, the “Run” tab will appear. Please refer to the QuickStart for more information on ‘Server/Client.’
+**CAUTION** : If the setting of the ‘Server/Client’ under setting is set to client, instead of the ‘Registered Robot’ appearing, the “Run” tab will appear. Please refer to the QuickStart for more information on ‘Server/Client.’
 {: .notice--warning}
 
 

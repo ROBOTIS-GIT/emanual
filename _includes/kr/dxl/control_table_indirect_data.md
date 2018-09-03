@@ -15,14 +15,14 @@ Indirect Address에 특정 Address를 설정하면, Indirect Data는 특정한 A
 2. Indirect Address 3(172) : Goal Position의 두 번째 주소 ‘117’으로 변경
 3. Indirect Address 4(174) : Goal Position의 세 번째 주소 ‘118’으로 변경
 4. Indirect Address 5(176) : Goal Position의 네 번째 주소 ‘119’으로 변경
-5. Indirect Data 2에서 4 byte 값을 ‘1024’ 변경 : Goal Position(116) 역시 ‘1024’로 변경되고 다이나믹셀이 구동됩니다.
+5. Indirect Data 2에서 4 byte 값을 ‘1024’ 변경 : Goal Position(116) 역시 ‘1024’로 변경되고 장치가 구동됩니다.
 
 | Indirect Address 범위 | 설명     |
 | :------------- | :------------- |
 | 64 ~ 661 | Indirection Address는 EEPROM 영역을 지정할 수 없습니다. |
 
-`Note` 2 byte 이상의 길이를 갖는 Control Table의 Data를 Indirect Address로 설정할 경우에는 `예제 2`와 같이 Control Table의 Data가 포함된 모든 Address를 Indirect Address로 설정해 주어야 정상동작합니다.
+**참고** : 2 byte 이상의 길이를 갖는 Control Table의 Data를 Indirect Address로 설정할 경우에는 `예제 2`와 같이 Control Table의 Data가 포함된 모든 Address를 Indirect Address로 설정해 주어야 정상동작합니다.
 {: .notice}
 
-`Note` Indirect Address 29 ~ 56과 Indirect Data 29 ~ 56은 프로토콜 2.0으로만 접근할 수 있습니다.
+**참고** : Indirect Address 29 ~ 56과 Indirect Data 29 ~ 56은 프로토콜 2.0으로만 접근할 수 있습니다.
 {: .notice}

@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: dynamixel_sdk_sample_code_matlab_reboot_protocol_2_0
+ref: matlab_reboot_protocol_2_0
 read_time: true
 share: true
 author_profile: false
@@ -11,13 +11,14 @@ sidebar:
   nav: "dynamixel_sdk"
 ---
 
-<div style="counter-reset: h1 3"></div>
-<div style="counter-reset: h2 18"></div>
+<div style="counter-reset: h1 5"></div>
+<div style="counter-reset: h2 19"></div>
 <div style="counter-reset: h3 7"></div>
 
-# [Sample Code](#sample-code)
-
-## [MATLAB Protocol 2.0](#matlab-protocol-20)
+<!--[dummy Header 1]>
+  <h1 id="sample-code"><a href="#sample-code">Sample Code</a></h1>
+  <h2 id="matlab-protocol-20"><a href="#matlab-protocol-20">MATLAB Protocol 2.0</a></h2>
+<![end dummy Header 1]-->
 
 ### [Matlab Reboot Protocol 2.0](#matlab-reboot-protocol-20)
 
@@ -160,7 +161,7 @@ DEVICENAME                      = 'COM1';       % Check which port is being used
 
 Here we set some variables to let you freely change them and use them to run the example code.
 
-As the document previously said in [previous chapter](/docs/en/software/dynamixel/dynamixel_sdk/device_setup/dynamixel/#dynamixel), customize Dynamixel control table items, such as `DXL_ID` number, communication `BAUDRATE`, and the `DEVICENAME`, on your own terms of needs. In particular, `BAUDRATE` and `DEVICENAME` have systematical dependencies on your controller, so make clear what kind of communication method you will use.
+As the document previously said in [previous chapter](/docs/en/software/dynamixel/dynamixel_sdk/device_setup/#dynamixel), customize Dynamixel control table items, such as `DXL_ID` number, communication `BAUDRATE`, and the `DEVICENAME`, on your own terms of needs. In particular, `BAUDRATE` and `DEVICENAME` have systematical dependencies on your controller, so make clear what kind of communication method you will use.
 
 ``` m
 COMM_SUCCESS                    = 0;            % Communication Success result value

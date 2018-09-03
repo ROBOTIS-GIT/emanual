@@ -12,16 +12,18 @@ header:
 excerpt:
 intro:
   - excerpt: '로보티즈 e-Manual 사용법'
+sidebar:
+  title: 로보티즈 e-Manual
 ---
 
-# 로보티즈 e-Manual
+# [로보티즈 e-Manual](#로보티즈-e-manual)
 
 - [기존 e-Manual]도 서비스되고 있습니다.
 - 기술문의는 새로운 로보티즈 커뮤니티인 [포럼]을 활용하세요.
 
-# 바로가기
+# [바로가기](#바로가기)
 
-## TurtleBot3
+## [TurtleBot3](#turtlebot3)
 - [PC Setup](http://emanual.robotis.com/docs/en/platform/turtlebot3/pc_setup/)
 - [Raspberry Pi Setup](http://emanual.robotis.com/docs/en/platform/turtlebot3/raspberry_pi_3_setup/)
 - [Intel Joule Setup](http://emanual.robotis.com/docs/en/platform/turtlebot3/joule_setup/)
@@ -30,15 +32,15 @@ intro:
 - [Bringup Waffle Pi](http://emanual.robotis.com/docs/en/platform/turtlebot3/bringup/#turtlebot3-waffle-pi)
 - [SLAM](http://emanual.robotis.com/docs/en/platform/turtlebot3/slam/)
 
-## 다이나믹셀 SDK
+## [다이나믹셀 SDK](#다이나믹셀-sdk)
 - [SDK Download](https://github.com/ROBOTIS-GIT/DynamixelSDK/releases)
 - [Documentation](/docs/kr/software/dynamixel/dynamixel_sdk/overview/)
 
-## 다이나믹셀 Workbench
+## [다이나믹셀 Workbench](#다이나믹셀-workbench)
 - [Package Download](https://github.com/ROBOTIS-GIT/dynamixel-workbench)
 - [Documentation](/docs/kr/software/dynamixel/dynamixel_workbench/)
 
-## 다이나믹셀 컨트롤 테이블
+## [다이나믹셀 컨트롤 테이블](#다이나믹셀-컨트롤-테이블)
 
 |모델|세부모델|
 |:---:|:---|
@@ -47,15 +49,15 @@ intro:
 |DX|[DX-113], [DX-116], [DX-117]|
 |RX|[RX-10], [RX-24F], [RX-28], [RX-64]|
 |MX|`Protocol 1.0` [MX-12W], [MX-28], [MX-64], [MX-106]<br>`Protocol 2.0` [MX-28(2.0)], [MX-64(2.0)], [MX-106(2.0)]|
-|X|`L Series` [XL320], [XL430-W250]<br>`M Series`[XM430-W210], [XM430-W350], [XM540-W150], [XM540-W270]<br>`H Series`[XH430-W210], [XH430-W350], [XH430-V210], [XH430-V350]|
+|X|`L Series` [XL320], [XL430-W250]<br>`M Series` [XM430-W210], [XM430-W350], [XM540-W150], [XM540-W270]<br>`H Series` [XH430-W210], [XH430-W350], [XH430-V210], [XH430-V350]|
 |Pro|`L Seires` [L54-50-S500-R], [L54-50-S290-R], [L54-30-S500-R], [L54-30-S400-R], [L42-10-S300-R]<br>`M Series` [M54-60-S250-R], [M54-40-S250-R], [M42-10-S260-R]<br>`H Series` [H54-200-S500-R], [H54-100-S500-R], [H42-20-S300-R]|
 
 
-## 다이나믹셀 프로토콜
+## [다이나믹셀 프로토콜](#다이나믹셀-프로토콜)
 - [프로토콜 1.0](/docs/kr/dxl/protocol1/)
 - [프로토콜 2.0](/docs/kr/dxl/protocol2/)
 
-## 호환성 가이드
+## [호환성 가이드](#호환성-가이드)
 - [제어기](/docs/kr/parts/controller/controller_compatibility/)
 
 

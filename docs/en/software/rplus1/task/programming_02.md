@@ -25,7 +25,7 @@ This parameter is used to transmit data via a wireless communication module (IR,
 - The data must be a number/value between  0 & 65535 transmitted or sent, wirelessly (IR or Zigbee).
 - When the "Remocon TXD" parameter is set, the data is immediately sent wirelessly.
 
-`Note` Compatiable Controllers : [CM-100], [CM-5], [CM-510], [CM-530], [CM-700]
+**NOTE** : Compatiable Controllers : [CM-100], [CM-5], [CM-510], [CM-530], [CM-700]
 {: .notice}
 
 
@@ -46,7 +46,7 @@ This parameter is used to read the received data received via the wireless commu
 - You can save up to maximum 2 wireless data by using a receiving buffer.
 - When 2 data are saved in the receiving buffer, firstly received data will be read at first, and the remaining data will be read at second according to the received order. If there is only 1 data value in the buffer, when READ is executed, the latest data will be retrieved.
 
-`Note` Compatiable Controllers : [CM-100], [CM-5], [CM-510], [CM-700]
+**NOTE** : Compatiable Controllers : [CM-100], [CM-5], [CM-510], [CM-700]
 {: .notice}
 
 #### Example
@@ -63,7 +63,7 @@ This value is either TRUE or FALSE.
 - TRUE ( 1 ) : There is new data in the input buffer.
 - FALSE ( 0 ) : All data in the input buffer have been retrieved.
 
-`Note` Compatiable Controllers : [CM-100], [CM-5], [CM-510], [CM-530], [CM-700]
+**NOTE** : Compatiable Controllers : [CM-100], [CM-5], [CM-510], [CM-530], [CM-700]
 {: .notice}
 
 #### Example
@@ -81,7 +81,7 @@ This parameter is either TRUE or FALSE and used to read and set the controller's
 - TRUE (1) :  When the Aux LED parameter is set to TRUE, the LED will turn on. When the Aux LED parameter is read, a value of TRUE signifies that the LED is on.
 - FALSE (0) : When the Aux LED parameter is set to FALSE, the LED will turn off.  When the Aux LED parameter is read, a value of FALSE signifies that the LED is off. False means that the input buffer is empty. i.e either no data has been received or all data has been retrieved
 
-`Note` Compatiable Controllers : [CM-5], [CM-510], [CM-530], [CM-700]
+**NOTE** : Compatiable Controllers : [CM-5], [CM-510], [CM-530], [CM-700]
 {: .notice}
 
 #### Example
@@ -104,7 +104,7 @@ This parameter is used to read the controller's button status.
   - Use of true/false constants
   - When button is pressed(ture), When button is not pressed (false)
 
-`Note` Compatiable Controllers : [CM-5], [CM-510], [CM-530], [CM-700], [OpenCM9.04]
+**NOTE** : Compatiable Controllers : [CM-5], [CM-510], [CM-530], [CM-700], [OpenCM9.04]
 {: .notice}
 
 ![Button][img_button]
@@ -127,7 +127,7 @@ When a decimal number is entered,  it will automatically be converted to the cor
 The actual timer value is between 0 and 255.  Each timer value is 0.128 seconds.
 If you set a value greater than 0 in the timer parameter, the timer will start to count down every 0.128 seconds.
 
-`Note` Compatiable Controllers : [CM-100], [CM-5], [CM-510], [CM-530], [CM-700]
+**NOTE** : Compatiable Controllers : [CM-100], [CM-5], [CM-510], [CM-530], [CM-700]
 {: .notice}
 
 #### Example
@@ -149,7 +149,7 @@ Internally the controller sets a counter; this is the parameter for the high res
 - The actual timer value is between 0 and 65535.  Each timer value is 0.001 seconds.
 - If you set a value greater than 0 in the timer parameter, the timer will start to count down every 0.001 seconds.
 
-`Note` Compatiable Controllers : [CM-530]
+**NOTE** : Compatiable Controllers : [CM-530]
 {: .notice}
 
 #### Example
@@ -165,7 +165,7 @@ This parameter is used to set or read the currently set remote control ID. Pleas
 - The ID is a number between 0 and 65535.
 - When the opponent's ID is set to 65535(0xFFFF, in hexadecimal), it will send data to all Zigbee modules, regardless of ID.(Broadcasting Mode)
 
-`Note` Compatiable Controllers : [CM-5], [CM-510], [CM-530], [CM-700]
+**NOTE** : Compatiable Controllers : [CM-5], [CM-510], [CM-530], [CM-700]
 {: .notice}
 
 #### Example
@@ -186,7 +186,7 @@ This example sets the opponent's wireless ID to "123", reads the value, and prin
 - Other Controllers : This parameter is used to read the ID of the Zigbee module installed in the robot.
   - If a ZigBee module is installed, its ID is read (a number between 0 and 65534). If not, 65535 (0xFFFF in hexadecimal) is returned.
 
-`Note` Compatiable Controllers : [CM-100], [CM-5], [CM-510], [CM-530], [CM-700]
+**NOTE** : Compatiable Controllers : [CM-100], [CM-5], [CM-510], [CM-530], [CM-700]
 {: .notice}
 
 #### Example
@@ -266,7 +266,7 @@ This parameters are used to read the IR sensors' values.
 - For objects with the same or similar color, the closer it is, the higher the value(closer to 1023), and the farther away it is, the lower the value (closer to 0).
 - For objects with the same distance, the lighter(white) the object, the higher the value, and the darker(black) the object, the lower the value.
 
-`Note` Compatiable Controllers : [CM-100]
+**NOTE** : Compatiable Controllers : [CM-100]
 {: .notice}
 
 #### Example
@@ -295,7 +295,7 @@ This parameter is used to set the musical note or melody to be played or to retr
 
     ![Buzzer 02][img_buzzer_02]
 
-`Note` Compatiable Controllers : [CM-100], [CM-510], [CM-530]
+**NOTE** : Compatiable Controllers : [CM-100], [CM-510], [CM-530]
 {: .notice}
 
 #### Example
@@ -326,7 +326,7 @@ This parameter is used to set how long the note or melody will be played or to r
 
     ![Buzzer 02][img_buzzer_02]
 
-`Note` Compatiable Controllers : [CM-100], [CM-510], [CM-530]
+**NOTE** : Compatiable Controllers : [CM-100], [CM-510], [CM-530]
 {: .notice}
 
 #### Example
@@ -349,7 +349,7 @@ A controller equipped with a microphone has a function to count sounds when the 
 - When the sounds are no longer detected, the number of detected sounds will be input into the "Sound Count" parameter.
 - Because "Sound Count" is not initialized automatically, you have to reset it to 0 before use.
 
-`Note` Compatiable Controllers : [CM-100], [CM-510], [CM-530]
+**NOTE** : Compatiable Controllers : [CM-100], [CM-510], [CM-530]
 {: .notice}
 
 #### Example
@@ -368,7 +368,7 @@ A controller equipped with a microphone has a function to count sounds when the 
 - The parameter value is increased in real-time whenever a sound is detected.
 - If a new sound is not detected for 0.8 seconds, the value of the "Current Sound Count" parameter is passed to the "Sound Count" parameter, and the "Current Sound Count" parameter is reset to 0.
 
-`Note` Compatiable Controllers : [CM-100], [CM-510]
+**NOTE** : Compatiable Controllers : [CM-100], [CM-510]
 {: .notice}
 
 #### Example
@@ -393,7 +393,7 @@ This parameter is used to read how many times the START button was pressed when 
 
 "Button Counts" uses numbers between 0 and 255.  As a result, only up to 255 button presses can be counted .
 
-`Note` Compatiable Controllers : [CM-100], [CM-150]
+**NOTE** : Compatiable Controllers : [CM-100], [CM-150]
 {: .notice}
 
 #### Example
@@ -416,7 +416,7 @@ The controller has a hibernate function to conserve battery.  If no commands are
 - Setting the "Powersave timer" to 0 will turn it off.
 - The time remaining on the timer is always in minutes. For example, when 50 seconds remain, the timer will say that 1 minute remains.
 
-`Note` Compatiable Controllers : [CM-100], [CM-150]
+**NOTE** : Compatiable Controllers : [CM-100], [CM-150]
 {: .notice}
 
 #### Example
@@ -438,7 +438,7 @@ This parameter is used to set up the infrared communication channel or to check 
 - "RC-100 Channel" uses numbers between 0 and 8.
 - The Channel 0 is the special one that can be communicated with every other channels.
 
-`Note` Compatiable Controllers : [CM-100], [CM-510], [CM-530]
+**NOTE** : Compatiable Controllers : [CM-100], [CM-510], [CM-530]
 {: .notice}
 
 
@@ -466,7 +466,7 @@ This parameter executes motions.
 - If a page with no motions is set, an error message will be returned. (See error messages)
 - "Motion Page" uses numbers between 1 and 255. (Some controllers use numbers between 1 and 127.)
 
-`Note` Compatiable Controllers : [CM-5], [CM-510], [CM-530], [CM-700]
+**NOTE** : Compatiable Controllers : [CM-5], [CM-510], [CM-530], [CM-700]
 {: .notice}
 
 #### Example
@@ -484,7 +484,7 @@ This parameter is used to check the status of the motion.
   - True: Motion is being performed.
   - False: Motion is not being performed.
 
-`Note` Compatiable Controllers : [CM-5], [CM-510], [CM-530], [CM-700]
+**NOTE** : Compatiable Controllers : [CM-5], [CM-510], [CM-530], [CM-700]
 {: .notice}
 
 #### Example
@@ -506,7 +506,7 @@ This parameter can be applied to each joint separately.
 - 1024 : If the joint offset is set to 1024, the selected joint will not be affected by the motion data during operation.
   - Ex) This function can be used to control the location values directly, instead of the motion.  A primary example is the Gripper, which should not move when a motion is being performed.
 
-`Note` Compatiable Controllers : [CM-5], [CM-510], [CM-530], [CM-700]
+**NOTE** : Compatiable Controllers : [CM-5], [CM-510], [CM-530], [CM-700]
 {: .notice}
 
 #### Example
@@ -539,7 +539,7 @@ This parameter is used to control the reduction motor's direction and power (Spe
 
 The control values are numbers between 0 and 2047.
 
-`Note` Compatiable Controllers : [CM-100]
+**NOTE** : Compatiable Controllers : [CM-100]
 {: .notice}
 
 #### Example
@@ -579,7 +579,7 @@ This parameter is used to set the movements of servo motors.  This parameter con
 
 For detailed information about controllable angles, refer to the Servo Motor [SM-10A].
 
-`Note` Compatiable Controllers : [CM-100]
+**NOTE** : Compatiable Controllers : [CM-100]
 {: .notice}
 
 #### Example
@@ -597,7 +597,7 @@ Set the servo motor at Port 3 in joint mode and move it to location 500 with max
 - Make sure the motor is connected to the correct port.
 - The servo motor is not suitable for detailed control, as it lacks the precision and torque of a Dynamixel motor.
 
-`Warning` If a program that controls LED modules is executed while another module (servo motor, IR module, etc.) is connected to the port, the module may be damaged.
+**WARNING** : If a program that controls LED modules is executed while another module (servo motor, IR module, etc.) is connected to the port, the module may be damaged.
 {: .notice--warning}
 
 ### [Touch Sensor](#touch-sensor)
@@ -607,7 +607,7 @@ This parameter is used to read the status of touch sensor (whether is was touche
 
 While the sensor being touched, the returned value will be TRUE(1). However, if you take off your hands from touch sensor, the returned value will be reset as False(0).
 
-`Note` Compatiable Controllers : [CM-100], [CM-510], [CM-700]
+**NOTE** : Compatiable Controllers : [CM-100], [CM-510], [CM-700]
 {: .notice}
 
 #### Example
@@ -631,7 +631,7 @@ This parameter is used to turn on the LED or to read its current status.
   - 2 : Turn on left LED only.
   - 3 : Turn on both LEDs.
 
-`Note` Compatiable Controllers : [CM-100]
+**NOTE** : Compatiable Controllers : [CM-100]
 {: .notice}
 
 #### Example
@@ -640,7 +640,7 @@ Turn on both LEDs connected to Port 3.
 
 ![LED Module Example][img_led_module_example]
 
-`Warning` If a program that controls LED modules is executed while another module (servo motor, IR module, etc.) is connected to the port, the module may be damaged.
+**WARNING** : If a program that controls LED modules is executed while another module (servo motor, IR module, etc.) is connected to the port, the module may be damaged.
 {: .notice--warning}
 
 ### [IR Sensor](#ir-sensor)
@@ -652,7 +652,7 @@ This parameter is used to read the value of the IR sensor module.
 - For objects with the same or similar color, the closer it is, the higher the value (closer to 1023), and the farther away it is, the lower the value (closer to 0).
 - For objects with the same distance, the lighter (white) the object, the higher the value, and the darker (black) the object, the lower the value.
 
-`Note` Compatiable Controllers : [CM-100], [CM-510], [CM-700]
+**NOTE** : Compatiable Controllers : [CM-100], [CM-510], [CM-700]
 {: .notice}
 
 #### Example
@@ -661,7 +661,7 @@ This example executes a block of code if the value of the IR sensor connected to
 
 ![IR Sensor][img_ir_sensor_example]
 
-`Warning` If a program that controls IR modules is executed while another module (servo motor, LED module, etc.) is connected to the port, the module may be damaged.
+**WARNING** : If a program that controls IR modules is executed while another module (servo motor, LED module, etc.) is connected to the port, the module may be damaged.
 {: .notice--warning}
 
 ### [DMS Sensor](#dms-sensor)
@@ -673,7 +673,7 @@ This parameter is used to read the value of the DMS sensor.
 - For objects with the same or similar colors, the close it is, the higher the value (closer to 1023) and the farther away it is, the lower the value (closer to 0).
 - Unlike IR sensors, DMS sensors are hardly affected by colors.
 
-`Note` Compatiable Controllers : [CM-510], [CM-700]
+**NOTE** : Compatiable Controllers : [CM-510], [CM-700]
 {: .notice}
 
 #### Example
@@ -694,7 +694,7 @@ This parameter is used to set or read the values of user's devices.
 - Setting the user's device as 1 does not guarantee that the value read from the user's device will be 1.
 - The output of the user's device can be set using port value constants.
 
-`Note` Compatiable Controllers : [CM-510], [CM-700]
+**NOTE** : Compatiable Controllers : [CM-510], [CM-700]
 {: .notice}
 
 #### Example
@@ -770,7 +770,7 @@ These parameters are used to set or read the actuator's slope value.
 
 - Appropriate Compliance Slope, Power control, and the Compliance Margin values will make it possible to create smoother movement.
 
-`Note` Compatiable Controllers : [CM-5], [CM-510], [CM-700]
+**NOTE** : Compatiable Controllers : [CM-5], [CM-510], [CM-700]
 {: .notice}
 
 #### Example
@@ -801,7 +801,7 @@ This parameters is used to set or read the actuator's goal position.
 - Position constants can be used.
 - The value can be input directly, or set using the jog dial.
 - The position values of AX, DX, and RX-series are numbers between 0 and 1023
-- The position values of EX-series are numbers between 0 and 4095
+- The position values of EX-series are numbers between 0 and 4,095
 
 ![Goal Position][img_sm_10a_02]
 
@@ -1032,7 +1032,7 @@ This parameter is used to set or read the maximum sound data of the universal se
 - The value is between 0 and 255.
 - Because "Sound max data" is not initialized automatically, the user must reset it 0 before use.
 
-`Note` Compatiable Controllers : [CM-5], [CM-510], [CM-700]
+**NOTE** : Compatiable Controllers : [CM-5], [CM-510], [CM-700]
 {: .notice}
 
 #### Example
@@ -1050,7 +1050,7 @@ This parameter is used to read the current sound level of the universal sensor (
 - The louder the sound, the more the value will fluctuate from 127 to 0 and 255.
 - The value is between 0 and 255.
 
-`Note` Compatiable Controllers : [CM-5], [CM-510], [CM-700]
+**NOTE** : Compatiable Controllers : [CM-5], [CM-510], [CM-700]
 {: .notice}
 
 #### Example
@@ -1116,7 +1116,7 @@ Plays Do, Mi, and Sol for 0.3 seconds each.
 
 This parameter is used to set or read how long the sound is played by the buzzer of the universal sensor (S1).
 
-`Note` Compatiable Controllers : [CM-5], [CM-510], [CM-700]
+**NOTE** : Compatiable Controllers : [CM-5], [CM-510], [CM-700]
 {: .notice}
 
 - "Buzzer Time" parameter must always be used with the "Buzzer Index" parameter.  "Buzzer Time" must be set before "Buzzer Index" is set for the correct sound to be played. (The order is important.) (Click  here for more information on "Buzzer Time.".)
@@ -1162,7 +1162,7 @@ Waits for new data to arrive and executes a block of code when the received data
 
 This parameter is used to read the data received via the wireless communication module.
 
-`Note` Compatiable Controllers : [CM-5], [CM-510], [CM-700]
+**NOTE** : Compatiable Controllers : [CM-5], [CM-510], [CM-700]
 {: .notice}
 
 - The data is a number between 0 and 65535.
@@ -1180,7 +1180,7 @@ Waits for new data to arrive and executes a block of code when the received data
 
 This parameter is used to transmit data via a wireless communication module.
 
-`Note` Compatiable Controllers : [CM-5], [CM-510], [CM-700]
+**NOTE** : Compatiable Controllers : [CM-5], [CM-510], [CM-700]
 {: .notice}
 
 - The data to send must be a number between 0 and 65535.
@@ -1196,7 +1196,7 @@ Waits for new data to arrive, and when the data arrives, the received data is tr
 
 This parameter is used to set or read the object detection threshold.
 
-`Note` Compatiable Controllers : [CM-5], [CM-510], [CM-700]
+**NOTE** : Compatiable Controllers : [CM-5], [CM-510], [CM-700]
 {: .notice}
 
 - Set the object detection threshold to be used when determining whether an object is detected or not.
@@ -1213,7 +1213,7 @@ The object detection threshold is set as 50, and a block of code will be execute
 
 This parameter is used to set or read the light detection threshold of the universal sensor (S1).
 
-`Note` Compatiable Controllers : [CM-5], [CM-510], [CM-700]
+**NOTE** : Compatiable Controllers : [CM-5], [CM-510], [CM-700]
 {: .notice}
 
 - Set the threshold to be used when determining whether a light is detected or not.
@@ -1363,7 +1363,7 @@ Set sensor #1 to 100; when sensor #1 detects black do a specified action.
 
 The address of peripheral devices such as Dynamixels can be accessed directly and read from or written to.
 
-`Note` Compatiable Controllers : [CM-5], [CM-510], [CM-700]
+**NOTE** : Compatiable Controllers : [CM-5], [CM-510], [CM-700]
 {: .notice}
 
 - Data can be read from or written to a specific in the form of bytes or words.
