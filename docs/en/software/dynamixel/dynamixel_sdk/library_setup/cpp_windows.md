@@ -64,7 +64,7 @@ The Dynamixel SDK example code for CPP uses the library files(.dll for Windows) 
 
 Each released Dynamixel SDK have latest library files in `[DynamixelSDK folder]/c++/build/[winXX]/output/dxl_xYY_cpp.dll` which were built by its own source code.
 
-* Run .sln file in `[DynamixelSDK folder]/c++/example/protocol1.0/read_write/win64` folder(or win32 folder, if controller is 32bit platform)
+* Run .sln file in `[DynamixelSDK folder]/c++/example/protocol2.0/read_write/win64` folder(or win32 folder, if controller is 32bit platform)
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/cpp/windows/sample_code/1.png)
 

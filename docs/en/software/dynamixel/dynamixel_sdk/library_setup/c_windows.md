@@ -48,7 +48,7 @@ If the library file should be built in lower or higher version Visual Studio, ch
 
 * Confirm that the Additional Include Directories path under the General C/C++ Configuration Properties tree is as follows:  
 
-  `..\..\..\include`
+  `..\..\..\include\dynamixel_sdk`
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/c/windows/library_file/4.png)
 
@@ -62,17 +62,17 @@ If the library file should be built in lower or higher version Visual Studio, ch
 
 The Dynamixel SDK sample code for C uses the library files(.dll for Windows) built in C language.
 
-By doing above, each released Dynamixel SDK have latest library files in `[DynamixelSDK folder]/c/build/[winXX]/output/dxl_xYY_c.dll` which were built by its own source code. 
+By doing above, each released Dynamixel SDK have latest library files in `[DynamixelSDK folder]/c/build/[winXX]/output/dxl_xYY_c.dll` which were built by its own source code.
 
-* Run the .sln file located in the `[DynamixelSDK folder]/c/example/protocol1.0/read_write/win32` folder if you have a 32-bit platform OR the `[DynamixelSDK folder]/c/example/protocol1.0/read_write/win64` folder if you have a 64-bit platform.
+* Run the .sln file located in the `[DynamixelSDK folder]/c/example/protocol2.0/read_write/win32` folder if you have a 32-bit platform OR the `[DynamixelSDK folder]/c/example/protocol2.0/read_write/win64` folder if you have a 64-bit platform.
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/c/windows/sample_code/1.png)
 
-* Right click on the project and select Properties. 
+* Right click on the project and select Properties.
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/c/windows/sample_code/2.png)
 
-* In the resulting Property Pages window, under Configuration Properties --> General, check that the directories and file extensions are set as follows: 
+* In the resulting Property Pages window, under Configuration Properties --> General, check that the directories and file extensions are set as follows:
 
   * Output Directory: `$(SolutionDir)$(Configuration)\`
   * Intermediate Directory: `$(Configuration)\`
@@ -81,7 +81,7 @@ By doing above, each released Dynamixel SDK have latest library files in `[Dynam
 
     ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/c/windows/sample_code/3.png)
 
-* Under Configuration Properties --> Debugging add the following path to Environment: 
+* Under Configuration Properties --> Debugging add the following path to Environment:
   - win32: `PATH=%PATH%;..\..\..\..\..\build\win32\output;`
   - win64: `PATH=%PATH%;..\..\..\..\..\build\win64\output;`
 
@@ -93,17 +93,17 @@ By doing above, each released Dynamixel SDK have latest library files in `[Dynam
 
     ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/c/windows/sample_code/5.png)
 
-* Under Configuration Properties --> C/C++ --> General, add the following path to Additional Include Directories: 
+* Under Configuration Properties --> C/C++ --> General, add the following path to Additional Include Directories:
 
-  `..\..\..\..\..\include`
+  `..\..\..\..\..\include\dynamixel_sdk`
 
     ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/c/windows/sample_code/6.png)
 
-* Under Configuration Properties --> Linker --> Input, add the following file to Additional Dependencies: 
+* Under Configuration Properties --> Linker --> Input, add the following file to Additional Dependencies:
 
   - win32: `dxl_x86_c.lib;`
   - win64: `dxl_x64_c.lib;`
- 
+
     ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/c/windows/sample_code/7.png)
 
 * Click on the Local Windows Debugger button to run the program.
