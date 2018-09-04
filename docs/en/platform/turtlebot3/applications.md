@@ -366,9 +366,11 @@ To use this setup, each turtlebot3 makes map using SLAM and these maps are merge
 {: .notice--info}
 
 **[TurtleBot]** Burn specific raspbian image to your microSD card(>8GB).
+
   - [Image download]()
 
 **[TurtleBot]** Upload firmware for ROS2.
+
 ```bash
 $ cd ~/turtlebot3
 $ rm -rf ./opencr_update.tar.xz
@@ -384,28 +386,68 @@ $ ./update.sh $OPENCR_PORT $OPENCR_MODEL.opencr
 **[TurtleBot]** Reset OpenCR using RESET button.
 
 **[TurtleBot]** Run MicroRTPSAgent for OpenCR
+
 ```bash
 $ cd ~/turtlebot3
 $ MicroRTPSAgent serial /dev/ttyACM0
 ```
 
 **[TurtleBot]** Run MicroRTPSAgent for LIDAR
+
 ```bash
 $ cd ~/turtlebot3
 $ MicroRTPSAgent udp 2018
 ```
 
 **[TurtleBot]** Run LIDAR application
+
 ```bash
 $ cd ~/turtlebot3
 $ ./turtlebot3_lidar
 ```
 
-**[Remote PC]**
+**[Remote PC]** Install ROS2 Bouncy
+  - [ROS2 Installation](https://github.com/ros2/ros2/wiki/Linux-Development-Setup)
+
+**[Remote PC]** Download dependency and build
+
 ```bash
-$ #Run ros2 lunch
+$ mkdir -p ~/turtlebot3_ws/src
+$ cd ~/turtlebot3_ws/src
+$ git clone -b ros2 https://github.com/ROBOTIS-GIT/turtlebot3.git
+$ git clone -b ros2 https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
+$ git clone -b release-beta3 https://github.com/ros2/cartographer.git
+$ git clone -b release-beta3 https://github.com/ros2/cartographer_ros.git
+$ git clone https://github.com/ros2/pcl_conversions.git
+$ cd ~/turtlebot3_ws && colcon build
 ```
 
+**[Remote PC]** Add source to bashrc file
+
+```bash
+source ~/ros2_ws/install/local_setup.bash
+source ~/turtlebot3_ws/install/local_setup.bash
+```
+
+
+**[Remote PC]** Run turtlebot3_remote.launch.py
+
+```bash
+$ ros2 launch turtlebot3_bringup turtlebot3_remote.launch.py
+```
+
+**[Remote PC]** Run turtlebot3_teleop node
+
+```bash
+$ ros2 run turtlebot3_teleop turtlebot3_teleop_key
+```
+
+**[Remote PC]** Launch cartographer
+
+```bash
+$ launch `ros2 pkg prefix turtlebot3_cartographer`/share/turtlebot3_cartographer/launch/turtlebot3_cartographer.py
+$ rviz2
+```
 
 [turtlebot3_applications]: https://github.com/ROBOTIS-GIT/turtlebot3_applications
 [turtlebot3_applications_msgs]: https://github.com/ROBOTIS-GIT/turtlebot3_applications_msgs
