@@ -47,7 +47,7 @@ sidebar:
 
 * Confirm that the Additional Include Directories path under the General C/C++ Configuration Properties tree is as follows:
 
-  `..\..\..\include`
+  `..\..\..\include\dynamixel_sdk`
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/cpp/windows/library_file/4.png)
 
@@ -62,9 +62,9 @@ sidebar:
 
 The Dynamixel SDK example code for CPP uses the library files(.dll for Windows) built in CPP language.
 
-Each released Dynamixel SDK have latest library files in `[DynamixelSDK folder]/c++/build/[winXX]/output/dxl_xYY_cpp.dll` which were built by its own source code. 
+Each released Dynamixel SDK have latest library files in `[DynamixelSDK folder]/c++/build/[winXX]/output/dxl_xYY_cpp.dll` which were built by its own source code.
 
-* Run .sln file in `[DynamixelSDK folder]/c++/example/protocol1.0/read_write/win32` folder(or win64 folder, if controller is 64bit platform)
+* Run .sln file in `[DynamixelSDK folder]/c++/example/protocol2.0/read_write/win64` folder(or win32 folder, if controller is 32bit platform)
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/cpp/windows/sample_code/1.png)
 
@@ -97,7 +97,7 @@ Each released Dynamixel SDK have latest library files in `[DynamixelSDK folder]/
 
 * Add path in C/C++-Common-Additional include directory tab as shown below.
 
-  `..\..\..\..\..\include`
+  `..\..\..\..\..\include\dynamixel_sdk`
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/cpp/windows/sample_code/6.png)
 

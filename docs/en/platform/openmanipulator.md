@@ -39,6 +39,8 @@ OpenManipulator is composed by [Dynamixel X series](http://emanual.robotis.com/d
 <iframe src="https://player.vimeo.com/video/236147296" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 <p><a href="https://vimeo.com/236147296">ROSCon 2017 Vancouver Day 1: Introducing OpenManipulator; the full open robot platform</a> from <a href="https://vimeo.com/osrfoundation">OSRF</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/eJTIeDepmNo" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/B2pnXtooKOg" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Qhvk5cnX2hM" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
@@ -90,7 +92,7 @@ OpenManipulator is composed by [Dynamixel X series](http://emanual.robotis.com/d
 Install dependent packages for the OpenManipulator.
 
 ```
-$ sudo apt-get install ros-kinetic-ros-controllers ros-kinetic-gazebo* ros-kinetic-moveit* ros-kinetic-dynamixel-sdk ros-kinetic-dynamixel-workbench-toolbox ros-kinetic-industrial-core 
+$ sudo apt-get install ros-kinetic-ros-controllers ros-kinetic-gazebo* ros-kinetic-moveit* ros-kinetic-dynamixel-sdk ros-kinetic-dynamixel-workbench-toolbox ros-kinetic-industrial-core
 ```
 
 ```
@@ -98,7 +100,7 @@ $ cd ~/catkin_ws/src/
 $ git clone https://github.com/ROBOTIS-GIT/open_manipulator.git
 $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_msgs.git
 $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_simulations.git
-$ cd ~/catkin_ws && catkin_make 
+$ cd ~/catkin_ws && catkin_make
 ```
 
 If catkin_make command is completed without any errors, preparation for OpenManipulator is done.
@@ -106,7 +108,7 @@ If catkin_make command is completed without any errors, preparation for OpenMani
 Load an OpenManipulator on RViz.
 
 ```
-$ roslaunch open_manipulator_description open_manipulator_rviz.launch 
+$ roslaunch open_manipulator_description open_manipulator_rviz.launch
 ```
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_rviz.png)
@@ -235,7 +237,7 @@ Install dependent packages
 
 Load a TurtleBot3 Waffle or Waffle Pi with OpenManipulator on RViz.
 
-  **Tip :** TB3_MODEL =  `waffle`, `waffle_pi` 
+  **Tip :** TB3_MODEL =  `waffle`, `waffle_pi`
   {: .notice--info}
 
   ```

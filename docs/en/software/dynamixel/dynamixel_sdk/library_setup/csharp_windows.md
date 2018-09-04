@@ -20,8 +20,8 @@ sidebar:
 
 ## [CSharp Windows](#csharp-windows)
 
-For C#, only the Windows source is provided. 
- 
+For C#, only the Windows source is provided.
+
 ### [Compiler and Builder](#compiler-and-builder)
 
 * [Download Visual Express for Windows Desktop](https://www.visualstudio.com/en-us/products/visual-studio-express-vs.aspx)
@@ -44,16 +44,16 @@ Each released Dynamixel SDK have latest library files in:
 
 which were built by its own source code.
 
-* Open `read_write.sln` from `[DynamixelSDK folder]/C#/protocol1.0/read_write/win32/`
+* Open `read_write.sln` from `[DynamixelSDK folder]/C#/protocol2.0/read_write/win64/`
 
 * Double click `ReadWrite.cs`
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/csharp/windows/sample_code/1.png)
 
-* Adjust the values surrounded with red circle to proper value as shown in the comment. Then click `Start` in the Visual Studio toolbox above. 
+* Adjust the values surrounded with red circle to proper value as shown in the comment. Then click `Start` in the Visual Studio toolbox above.
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/csharp/windows/sample_code/2.png)
 
-* Console window will show the results 
+* Console window will show the results
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/csharp/windows/sample_code/4.png)
