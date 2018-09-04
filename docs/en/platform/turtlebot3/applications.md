@@ -398,7 +398,7 @@ $ MicroRTPSAgent udp 2018
 **[TurtleBot]** Run LIDAR application
 ```bash
 $ cd ~/turtlebot3
-$ ./TB3_LIDAR
+$ ./turtlebot3_lidar
 ```
 
 **[Remote PC]**
