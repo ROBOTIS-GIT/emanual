@@ -369,7 +369,7 @@ To use this setup, each turtlebot3 makes map using SLAM and these maps are merge
 
 **[TurtleBot]** Burn specific raspbian image to your microSD card(>8GB).
 
-  - [Image download]()
+  - [Image download](http://www.robotis.com/service/download.php?no=774)
 
 After unzip downloaded image, burn the image to your microSD card(>8GB) by using `gnome-disks`.
 If you succeeded to burn, insert it in your Raspberry Pi 3 and boot raspbian. 
