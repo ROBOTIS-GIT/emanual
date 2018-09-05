@@ -365,7 +365,7 @@ To use this setup, each turtlebot3 makes map using SLAM and these maps are merge
 **NOTE**: This application must be set ROS2 firmware version `1.0.0` or higher and must be used only ROS2 not ROS.
 {: .notice--info}
 
-1. Installation
+### Installation
 
 **[TurtleBot]** Burn specific raspbian image to your microSD card(>8GB).
 
@@ -423,6 +423,29 @@ opencr_ld_main
 **[Remote PC]** Install ROS2 Bouncy
   - [ROS2 Installation](https://github.com/ros2/ros2/wiki/Linux-Development-Setup)
 
+**[Remote PC]** Add source to bashrc file
+
+**NOTE**: If some texts related ROS(like `source /opt/ros/kinetic/setup.bash`) was set in bashrc, please comment or delete it. 
+{: .notice--info}
+
+Open the bashrc
+
+```bash
+$ gedit ~/.bashrc
+```
+
+Add below texts
+
+```
+source ~/ros2_ws/install/local_setup.bash
+```
+
+Then, source the bashrc with below command
+
+```bash
+$ source ~/.bashrc
+```
+
 **[Remote PC]** Download dependency and build
 
 ```bash
@@ -433,10 +456,13 @@ $ git clone -b ros2 https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
 $ git clone -b release-latest https://github.com/ros2/cartographer.git
 $ git clone -b release-latest https://github.com/ros2/cartographer_ros.git
 $ git clone https://github.com/ros2/pcl_conversions.git
+$ sudo apt install libpcl-conversions-dev libpcl-dev
 $ cd ~/turtlebot3_ws && colcon build
 ```
 
 **[Remote PC]** Add source to bashrc file
+
+Open the bashrc
 
 ```bash
 $ gedit ~/.bashrc
@@ -445,15 +471,16 @@ $ gedit ~/.bashrc
 Add below texts
 
 ```
-source ~/ros2_ws/install/local_setup.bash
 source ~/turtlebot3_ws/install/local_setup.bash
 ```
+
+Then, source the bashrc with below command
 
 ```bash
 $ source ~/.bashrc
 ```
 
-2. Bringup TurtleBot3
+### Bringup TurtleBot3
 
 **[TurtleBot, RemotePC]** Sync time between TurtleBot and RemotePC
 
@@ -481,13 +508,6 @@ $ MicroRTPSAgent udp 2018
 ```bash
 $ cd ~/turtlebot3
 $ ./turtlebot3_lidar
-```
-
-**[TurtleBot, RemotePC]** Sync time between TurtleBot and RemotePC
-
-```bash
-$ sudo apt-get install ntpdate
-$ sudo ntpdate ntp.ubuntu.com
 ```
 
 **[Remote PC]** Run turtlebot3_remote.launch.py
@@ -556,7 +576,7 @@ $ ros2 topic list
 /version_info
 ```
 
-3. Run turtlebot3_teleop node 
+### Run turtlebot3_teleop node 
 
 **[Remote PC]**
 
@@ -579,7 +599,7 @@ CTRL-C to quit
 
 ![](/assets/images/platform/turtlebot3/application/teleop.png)
 
-4. Launch Cartographer
+### Launch Cartographer
 
 **[TurtleBot, RemotePC]** Sync time between TurtleBot and RemotePC
 
@@ -601,6 +621,8 @@ $ rviz2
 ```
 
 ![](/assets/images/platform/turtlebot3/application/carto.png)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wzz54a8ppxI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 [turtlebot3_applications]: https://github.com/ROBOTIS-GIT/turtlebot3_applications
 [turtlebot3_applications_msgs]: https://github.com/ROBOTIS-GIT/turtlebot3_applications_msgs
