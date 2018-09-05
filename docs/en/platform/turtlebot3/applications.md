@@ -430,8 +430,8 @@ $ mkdir -p ~/turtlebot3_ws/src
 $ cd ~/turtlebot3_ws/src
 $ git clone -b ros2 https://github.com/ROBOTIS-GIT/turtlebot3.git
 $ git clone -b ros2 https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
-$ git clone -b release-beta3 https://github.com/ros2/cartographer.git
-$ git clone -b release-beta3 https://github.com/ros2/cartographer_ros.git
+$ git clone -b release-latest https://github.com/ros2/cartographer.git
+$ git clone -b release-latest https://github.com/ros2/cartographer_ros.git
 $ git clone https://github.com/ros2/pcl_conversions.git
 $ cd ~/turtlebot3_ws && colcon build
 ```
@@ -439,13 +439,23 @@ $ cd ~/turtlebot3_ws && colcon build
 **[Remote PC]** Add source to bashrc file
 
 ```bash
+$ gedit ~/.bashrc
+```
+
+Add below texts
+
+```
 source ~/ros2_ws/install/local_setup.bash
 source ~/turtlebot3_ws/install/local_setup.bash
 ```
 
+```bash
+$ source ~/.bashrc
+```
+
 2. Bringup TurtleBot3
 
-**[TurtleBot]** Sync time between TurtleBot and RemotePC
+**[TurtleBot, RemotePC]** Sync time between TurtleBot and RemotePC
 
 ```bash
 $ sudo apt-get install ntpdate
@@ -473,7 +483,7 @@ $ cd ~/turtlebot3
 $ ./turtlebot3_lidar
 ```
 
-**[TurtleBot]** Sync time between TurtleBot and RemotePC
+**[TurtleBot, RemotePC]** Sync time between TurtleBot and RemotePC
 
 ```bash
 $ sudo apt-get install ntpdate
@@ -567,9 +577,11 @@ space key, s : force stop
 CTRL-C to quit
 ```
 
+![](/assets/images/platform/turtlebot3/application/teleop.png)
+
 4. Launch Cartographer
 
-**[TurtleBot]** Sync time between TurtleBot and RemotePC
+**[TurtleBot, RemotePC]** Sync time between TurtleBot and RemotePC
 
 ```bash
 $ sudo apt-get install ntpdate
@@ -581,11 +593,14 @@ $ sudo ntpdate ntp.ubuntu.com
 ```bash
 $ launch `ros2 pkg prefix turtlebot3_cartographer`/share/turtlebot3_cartographer/launch/turtlebot3_cartographer.py
 ```
+
 **[Remote PC]** Run Rviz2
 
 ```bash
 $ rviz2
 ```
+
+![](/assets/images/platform/turtlebot3/application/carto.png)
 
 [turtlebot3_applications]: https://github.com/ROBOTIS-GIT/turtlebot3_applications
 [turtlebot3_applications_msgs]: https://github.com/ROBOTIS-GIT/turtlebot3_applications_msgs
