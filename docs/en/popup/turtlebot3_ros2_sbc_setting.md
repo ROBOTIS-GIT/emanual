@@ -68,8 +68,8 @@ $ sudo apt install ntpdate
 - Download LIDAR micro-RTPS client source
 ```bash
 $ cd ~/micro-RTPS-client/build/examples
-$ wget https://github.com/ROBOTIS-GIT/turtlebot3/tree/ros2/turtlebot3_lidar/turtlebot3_lidar.tar.xz
-$ tar -xf turtlebot3_lidar.tar.xz
+$ wget https://github.com/ROBOTIS-GIT/turtlebot3/raw/ros2/turtlebot3_lidar/turtlebot3_lidar.tar.xz
+$ tar -xf ./turtlebot3_lidar.tar.xz
 ```
 
 - Modify CMakeLists.txt for add LIDAR client for build it.
