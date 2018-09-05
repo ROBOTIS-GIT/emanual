@@ -374,7 +374,7 @@ To use this setup, each turtlebot3 makes map using SLAM and these maps are merge
 ```bash
 $ cd ~/turtlebot3
 $ rm -rf ./opencr_update.tar.xz
-$ wget https://github.com/ROBOTIS-GIT/OpenCR_binaries/raw/master/turtlebot3/ROS2/latest/opencr_update.tar.xz
+$ wget https://github.com/ROBOTIS-GIT/OpenCR_Binaries/raw/master/turtlebot3/ROS2/latest/opencr_update.tar.xz
 $ tar -xf ./opencr_update.tar.xz
 
 $ export OPENCR_PORT=/dev/ttyACM0
