@@ -12,7 +12,7 @@ layout: popup
  op3_online_walking_module_msgs/KinematicsPose pose
  ```
 
-- Description
+- Description  
 This service acquires parameters that are applied on op3_online_walking_module.  
 
   - Request  

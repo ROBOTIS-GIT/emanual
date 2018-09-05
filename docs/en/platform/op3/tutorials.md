@@ -936,7 +936,7 @@ This chapter explains upgraded walking and footstep planner.
 3. rviz for upgraded walking with footstep planner. If user want to launch a rviz in ROBOTIS-OP3, a monitor is connected to ROBOTIS-OP3.  
 
     ```
-    $ roslaunch op3_description robotis_op3_walking.launch
+    $ roslaunch op3_description op3_walking.launch
     ```
 
 #### Walking with footstep planner
