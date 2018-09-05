@@ -369,6 +369,10 @@ To use this setup, each turtlebot3 makes map using SLAM and these maps are merge
 
   - [Image download]()
 
+**NOTE**: If you do not want to use raspbian image above, please refer to the "[How to set sbc for turtlebot3 with ros2]{: .popup}". 
+{: .notice--info}
+
+
 **[TurtleBot]** Upload firmware for ROS2.
 
 ```bash
@@ -457,3 +461,4 @@ $ rviz2
 [ar_track_alvar]: http://wiki.ros.org/ar_track_alvar
 [multi_map_merge]: http://wiki.ros.org/multirobot_map_merge
 [Virtual SLAM by Multiple TurtleBot3s]: /docs/en/platform/turtlebot3/simulation/#2-excute-slam
+[How to set sbc for turtlebot3 with ros2]: /docs/en/popup/turtlebot3_ros2_sbc_setting
