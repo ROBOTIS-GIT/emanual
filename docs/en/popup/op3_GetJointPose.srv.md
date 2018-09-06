@@ -4,19 +4,20 @@ layout: popup
 
 - File: `online_walking_module_msgs/GetJointPose.srv`
 
-- Message Definition
- ```c
+- Message Definition  
 
+ ```c 
+ 
  ---
  op3_online_walking_module_msgs/JointPose pose
  ```
 
-- Description
+- Description  
 This service acquires parameters that are applied on op3_online_walking_module.  
 
   - Request  
 
-  - Response
+  - Response  
     * `JointPose pose`([op3_online_walking_module_msgs/JointPose])    
 &emsp;&emsp; For details, refer to [JointPose.msg].  
 
