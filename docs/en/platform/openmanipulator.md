@@ -81,7 +81,7 @@ OpenManipulator is composed by [Dynamixel X series](http://emanual.robotis.com/d
 
 [DIY Manual](https://drive.google.com/open?id=1c5U0v2dQhYiulqiWI0VQMameG82WCc-4rl6J6zlQejA)
 
-[CAD Files](http://www.robotis.com/service/download.php?no=690)
+CAD Files ([Onshape](http://www.robotis.com/service/download.php?no=690), [Thingiverse](https://www.thingiverse.com/thing:3069574))
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_OnShape.jpg)
 
@@ -389,7 +389,7 @@ Gripping (parameters : `grip_on`, `grip_off`, `neutral`)
   * Items that are painted in green in above link are purchased on shopping mall
   * Items that are painted in yellow in above link are 3D printing parts
 
-[CAD Files](http://www.robotis.com/service/download.php?no=691)
+CAD Files ([Onshape](http://www.robotis.com/service/download.php?no=691), [Thingiverse](https://www.thingiverse.com/thing:3069581))
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_SCARA_OnShape.png)
 
@@ -437,7 +437,7 @@ Gripping (parameters : `grip_on`, `grip_off`, `neutral`)
   * Items that are painted in green in above link are purchased on shopping mall
   * Items that are painted in yellow in above link are 3D printing parts
 
-[CAD Files](http://www.robotis.com/service/download.php?no=692)
+CAD Files ([Onshape](http://www.robotis.com/service/download.php?no=692), [Thingiverse](https://www.thingiverse.com/thing:3069557))
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_Link_OnShape.png)
 
@@ -469,7 +469,7 @@ Gripping (parameters : `grip_on`, `grip_off`, `neutral`)
   * Items that are painted in green in above link are purchased on shopping mall
   * Items that are painted in yellow in above link are 3D printing parts
 
-[CAD Files](http://www.robotis.com/service/download.php?no=761)
+CAD Files ([Onshape](http://www.robotis.com/service/download.php?no=761), [Thingiverse](https://www.thingiverse.com/thing:3064437))
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_Planar_OnShape.png)
 
