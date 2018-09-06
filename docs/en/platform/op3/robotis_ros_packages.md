@@ -736,11 +736,39 @@ Execute the program with a `.launch` file in order to load ROS parameters.
 `/filter_debug`(bool, default : )  
 &emsp;&emsp; Enable output image for debugging  
 
-#### How to change the parameters
+#### How to change the parameters  
+> Reference : [How to use ball detector]
 
-##### using the `.yaml`
+##### using the `.yaml`  
+- [ball_detector_params.yaml]  
+ ```
+ gaussian_blur_size: 7
+ gaussian_blur_sigma: 2
+ canny_edge_th: 100
+ hough_accum_resolution: 1
+ min_circle_dist: 100
+ hough_accum_th: 28
+ min_radius: 20
+ max_radius: 300
+ filter_h_min: 350
+ filter_h_max: 15
+ filter_s_min: 200
+ filter_s_max: 255
+ filter_v_min: 60
+ filter_v_max: 255
+ use_second_filter: false
+ filter2_h_min: 30
+ filter2_h_max: 355
+ filter2_s_min: 0
+ filter2_s_max: 40
+ filter2_v_min: 200
+ filter2_v_max: 255
+ ellipse_size: 2
+ filter_debug: false
+ ```
 
-##### using the `dynamic_reconfigure`
+##### using the `dynamic_reconfigure`  
+![](/assets/images/platform/op3/ball_detector_node_02.png)
 
 ### [op3_demo](#op3-demo)
 
@@ -1195,7 +1223,7 @@ Please refer to [How to use walking tuner].
 [op3_head_control_module]: /docs/en/platform/op3/robotis_ros_packages/#op3_head_control_module
 [op3_walking_module]: /docs/en/platform/op3/robotis_ros_packages/#op3_walking_module
 [op3_online_walking_module]: /docs/en/platform/op3/robotis_ros_packages/#op3_online_walking_module
-[open_cr_module]: /docs/en/platform/op3/robotis_ros_packages/#open-cr-module
+[open_cr_module]: /docs/en/platform/op3/robotis_ros_packages/#open_cr_module
 [std_msgs/Int32]: /docs/en/popup/std_msgs_int32_message/
 [std_msgs/String]: /docs/en/popup/std_msgs_string/
 [std_msgs/Bool]: /docs/en/popup/std_msgs_bool_msg/
@@ -1273,12 +1301,14 @@ Please refer to [How to use walking tuner].
 [op3_tuning_module_msgs/JointTorqueOnOffArray]: /docs/en/popup/(op3_tuning_module_msgs)JointTorqueOnOffArray.msg/ 
 [op3_tuning_module_msgs/GetPresentJointOffsetData]: /docs/en/popup/(op3_tuning_module_msgs)GetPresentJointOffsetData.srv/
 [robotis_controller_msgs/SetModule]: /docs/en/popup/SetModule.srv/  
-[robotis_controller_msgs/LoadOffset]: /docs/en/popup/LoadOffset.srv/
-[op3_direct_control_module]: /docs/en/platform/op3/robotis_ros_packages/#op3-dirct-control-module
-[op3_tuning_module]: /docs/en/platform/op3/robotis_ros_packages/#op3-tuning-module
+[robotis_controller_msgs/LoadOffset]: /docs/en/popup/LoadOffset.srv/  
+[op3_direct_control_module]: /docs/en/platform/op3/robotis_ros_packages/#op3_direct_control_module
+[op3_tuning_module]: /docs/en/platform/op3/robotis_ros_packages/#op3_tuning_module
 [JointOffsetData.msg]: /docs/en/popup/(op3_tuning_module_msgs)JointOffsetData.msg/
 [JointOffsetPositionData.msg]: /docs/en/popup/(op3_tuning_module_msgs)JointOffsetPositionData.msg/
 [JointTorqueOnOff.msg]: /docs/en/popup/(op3_tuning_module_msgs)JointTorqueOnOff.msg/ 
 [JointTorqueOnOffArray.msg]: /docs/en/popup/(op3_tuning_module_msgs)JointTorqueOnOffArray.msg/ 
 [GetPresentJointOffsetData.srv]: /docs/en/popup/(op3_tuning_module_msgs)GetPresentJointOffsetData.srv/
 [How to use tuner client]: /docs/en/platform/op3/tutorials/#how-to-use-tuner-client
+[ball_detector_params.yaml]: https://raw.githubusercontent.com/ROBOTIS-GIT/ROBOTIS-OP3-Demo/master/op3_ball_detector/config/ball_detector_params.yaml
+[How to use ball detector]: /docs/en/platform/op3/tutorials/#how-to-use-ball-detector
