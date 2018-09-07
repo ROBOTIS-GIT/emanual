@@ -418,9 +418,9 @@ CAD Files ([Onshape](http://www.robotis.com/service/download.php?no=691), [Thing
 | **Weight**               | kg(lb)  | 0.53 (1.16)                             |
 | **Reach**                | mm (in) | 330 (12.99)                             |
 | **Rated Voltage**        | VDC     | 12                                      |
-| **Communication**        | -       | RS-485 (Multi Drop Bus)                 |
+| **Communication**        | -       | TTL (Multi Drop Bus)                 |
 | **Power(Joint)**         | W       | 27.6                                    |
-| **Software**             | -       | ROS, Dynamixel SDK, Arduino, Processing |
+| **Software**             | -       | Dynamixel SDK, Arduino, Processing |
 | **Main Controller**      | -       | Laptop PC, OpenCR                       |
 
 ### Dimension
@@ -442,8 +442,32 @@ CAD Files ([Onshape](http://www.robotis.com/service/download.php?no=692), [Thing
 ![](/assets/images/platform/openmanipulator/OpenManipulator_Link_OnShape.png)
 
 ### Software Setup
+  
+  **Software Download & Setup**
 
-  - **Comming Soon**
+  Download the software and set up.
+  - [Arduino IDE for using OpenCR](/docs/en/parts/controller/opencr10/#arduino-ide)
+  - [Download Processing](https://processing.org/download/)
+
+  **Example Source Codes**
+
+  Get example source codes. 
+  - OpenCR
+    
+  Go to `Examples` → `OpenManipulator` → `example` → `Arduino` → `Link` → `open_manipulator_link` on Arduino IDE for OpenCR.
+
+  Upload the example source code to OpenCR.
+
+  ![](/assets/images/platform/openmanipulator/OpenManipulator_Link_Arduino.png)
+  
+  - Processing
+  
+  Open processing source code file (`OpenCR`>`arduino`>`opencr_arduino`>`opencr`>`libraries`>`OpenManipulator`>`example`>`Processing`>`Link`>`Link.pde`) on Processing IDE, and Run it.
+  
+  **NOTE**: Upload **OpenCR example source code** to OpenCR before run **processing source code**.
+  {: .notice--info}
+
+  ![](/assets/images/platform/openmanipulator/OpenManipulator_link_Processing.png)
 
 ### Video
 
