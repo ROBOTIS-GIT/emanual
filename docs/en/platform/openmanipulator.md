@@ -416,7 +416,7 @@ CAD Files ([Onshape](http://www.robotis.com/service/download.php?no=691), [Thing
 | **Payload With Suction** | g (lb)  | 400 ~ 450 (0.88 ~ 0.99)                 |
 | **Speed(Joint)**         | rad/sec | 4.82                                    |
 | **Weight**               | kg(lb)  | 0.53 (1.16)                             |
-| **Reach**                | mm (in) | 330 (12.99)                             |
+| **Reach**                | mm (in) | 400 (12.99)                             |
 | **Rated Voltage**        | VDC     | 12                                      |
 | **Communication**        | -       | TTL (Multi Drop Bus)                 |
 | **Power(Joint)**         | W       | 27.6                                    |
