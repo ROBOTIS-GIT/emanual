@@ -337,13 +337,11 @@ ACTION 명령은 여러 개의 다이나믹셀들을 동시에 움직여야 하�
 |0xFF|0xFF|0xFE|0x02|0x05|0xFA|
 
 ## [Factory Reset](#factory-reset)
-Control Table의 Data를 공장 출하 값 상태로 되돌려 놓습니다.
-
+Control Table의 Data를 공장 출하 값 상태로 되돌려 놓습니다. Broadcast ID(0xFE)로 RESET 명령을 사용할 수 없습니다
+- 지원 모델 : MX-12W(V41), MX-28(V40), MX-64(V40), MX-106(V40), X 시리즈(XL-320 제외), MX(2.0) 시리즈
 
 {% capture reset_warning_01 %}
 **주의**: RESET 명령을 사용하면 사용자가 EEPROM에 설정했던 값이 지워지므로 사용에 주의하시기 바랍니다.<br>
-**주의**: 일부 모델은 Broadcast ID(0xFE)로 RESET 명령을 사용할 수 없습니다.<br>
-대상 모델 : MX-12W(V41), MX-28(V40), MX-64(V40), MX-106(V40)
 
 {% endcapture %}
 
@@ -371,7 +369,7 @@ Control Table의 Data를 공장 출하 값 상태로 되돌려 놓습니다.
 
 ## [Reboot](#reboot)
 장치를 재부팅 시킵니다.
-- 지원 모델 : MX-12W(V41), MX-28(V40), MX-64(V40), MX-106(V40), X 시리즈(XL-320 제외)
+- 지원 모델 : MX-12W(V41), MX-28(V40), MX-64(V40), MX-106(V40), X 시리즈(XL-320 제외), MX(2.0) 시리즈
 
 ### 예제
 #### 예제 설명
@@ -446,8 +444,8 @@ Control Table의 Data를 공장 출하 값 상태로 되돌려 놓습니다.
 
 ### 예제
 #### 예제 설명
-- ID 1(RX-64) : 2 바이트 Goal Position(30, 0x1E) 값을 읽어옵니다.
-- ID 2(RX-64) : 2 바이트 Present Position(36, 0x24) 값을 읽어옵니다.
+- ID 1(MX-64) : 2 바이트 Goal Position(30, 0x1E) 값을 읽어옵니다.
+- ID 2(MX-64) : 2 바이트 Present Position(36, 0x24) 값을 읽어옵니다.
 
 #### Bulk Read Instruction Packet
 
