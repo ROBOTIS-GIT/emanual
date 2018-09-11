@@ -23,7 +23,7 @@ ROS-enabled OpenManipulator is a full open robot platform consisting of **OpenSo
 OpenManipulator are based on ROS ​and OpenSource. ROS official hardware platform ,TurtleBot series has been supporting ‘TurtleBot Arm’. The OpenManipulator has full hardware compatibility with TurtleBot3​, and allows users to control it more easily by linking with the MoveIT! package. Even if you do not have a real robot, you can control the robot in the Gazebo simulator​.
 
 ## [OpenHardware](#openhardware)
-The OpenManipulator is oriented towards Open Hardware​. Most of the components except for some frames are uploaded as [STL files](http://www.robotis.com/service/download.php?no=767) that can be 3d printing. This allows users to modify the length of the link and the design of the robot to suit the intended use. The open manipulator also uses the **Dynamixel X ​series** used in TurtleBot 3. Dynamixel has a modular form and adopts daisy chain method. This allows users to easily change and add joints for some torque and degree of freedom they need. Taking advantage of these advantages, we are planning a total of seven different types (For example, Chain, SCARA, Link, Planar, Delta, Stewart and Linear) of OpenManipulator.
+The OpenManipulator is oriented towards Open Hardware​. Most of the components except for some frames are uploaded as [STL files](http://www.robotis.com/service/download.php?no=690) that can be 3d printing. This allows users to modify the length of the link and the design of the robot to suit the intended use. The open manipulator also uses the **Dynamixel X ​series** used in TurtleBot 3. Dynamixel has a modular form and adopts daisy chain method. This allows users to easily change and add joints for some torque and degree of freedom they need. Taking advantage of these advantages, we are planning a total of seven different types (For example, Chain, SCARA, Link, Planar, Delta, Stewart and Linear) of OpenManipulator.
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_OnShape.jpg)
 
@@ -39,8 +39,6 @@ OpenManipulator is composed by [Dynamixel X series](http://emanual.robotis.com/d
 <iframe src="https://player.vimeo.com/video/236147296" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 <p><a href="https://vimeo.com/236147296">ROSCon 2017 Vancouver Day 1: Introducing OpenManipulator; the full open robot platform</a> from <a href="https://vimeo.com/osrfoundation">OSRF</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/eJTIeDepmNo" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-
 <iframe width="560" height="315" src="https://www.youtube.com/embed/B2pnXtooKOg" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Qhvk5cnX2hM" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
@@ -51,39 +49,90 @@ OpenManipulator is composed by [Dynamixel X series](http://emanual.robotis.com/d
 
 ## [Hardware Specification](#hardware-specification)
 
-|                     | Unit    | Chain with XM430-W350                   |
-| ------------------- | ------- | --------------------------------------- |
-| **Input Voltage**   | V       | 12                                      |
-| **DOF**             | -       | 5 (4 DOF + 1 DOF Gripper)               |
-| **Payload**         | g       | 300 ~ 1000                              |
-| **Speed(Joint)**    | rad/sec | 4.82                                    |
-| **Weight**          | kg(lb)  | 0.7 (1.54)                              |
-| **Reach**           | mm (in) | 380 (14.9)                              |
-| **Rated Voltage**   | VDC     | 12                                      |
-| **Communication**   | -       | RS-485 (Multi Drop Bus)                 |
-| **Power(Joint)**    | W       | 27.6                                    |
-| **Software**        | -       | ROS, Dynamixel SDK, Arduino, Processing |
-| **Main Controller** | -       | Laptop PC, OpenCR                       |
+| Items               | Unit    | RM-X52-TNM                              | RM-X52-TNL                              |
+| ------------------- | ------- | --------------------------------------- |-----------------------------------------|
+| **Actuator**        |         | Dynamixel XM430-W350-T                  | Dynamixel XL430-W250-T                  |
+| **Input Voltage**   | V       | 12                                      | 12                                      |
+| **DOF**             | -       | 5 (4 DOF + 1 DOF Gripper)               | 5 (4 DOF + 1 DOF Gripper)               |
+| **Payload**         | g       | 500                                     | 50                                      |
+| **Speed(Joint)**    | RPM     | 46                                      | 61                                      |
+| **Weight**          | kg (lb) | 0.70  (1.54)                            | 0.51  (1.12)                            |
+| **Reach**           | mm (in) | 380   (14.9)                            | 380   (14.9)                            |
+| **Grip range**      | mm (in) | 20~75 (0.79~2.95)                       | 20~75 (0.79~2.95)                       |
+| **Communication**   | -       | TTL (Level Multidrop BUS)               | TTL (Level Multidrop BUS)               |
+| **Software**        | -       | ROS, Dynamixel SDK, Arduino, Processing | ROS, Dynamixel SDK, Arduino, Processing |
+| **Main Controller** | -       | Laptop PC, OpenCR                       | Laptop PC, OpenCR                       |
 
 ## [Dimension](#dimension)
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_spec_side.png)
 
-![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_spec_gripper.jpg)
+<!-- ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_spec_gripper.jpg) -->
 
 # [Hardware Setup](#hardware-setup)
 
-[Parts of OpenManipulator](https://docs.google.com/a/robotis.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit?usp=sharing)
+## [Part Lists](#part-lists)
 
-  * Items that are painted in purple in above link are purchased on ROBOTIS SHOP
-  * Items that are painted in green in above link are purchased on shopping mall
-  * Items that are painted in yellow in above link are 3D printing parts
+|              | Part Name | RM-X52-TNM | RM-X52-TNL |
+|---------     |---------- |---------   |----------  |
+|**Chassis Parts** |LONG LINK FRAME|1|1|
+|.                 |SHORT LINK FRAME|1|1|
+|.                 |RAIL BRACKET(LEFT)|1|1|
+|.                 |RAIL BRACKET(RIGHT)|1|1|
+|.                 |PALM GRIPPER|2|2|
+|.                 |LINK ROD|2|2|
+|.                 |FLANGE BUSH|4|4|
+|.                 |CRANK ARM|1|1|
+|.                 |RAIL BLOCK|2|2|
+|.                 |FR12_S101_K|1|1|
+|.                 |FR12_S102_K|2|2|
+|.                 |FR12_H101_K|2|2|
+|.                 |FR12_H104_K|1|1|
+|**Actuators**     |Dynamixel XM430-W350-T|5|0|
+|.                 |Dynamixel XL430-W250-T|0|5|
+|**Boards**        |OpenCR|1|1|
+|.                 |U2D2|1|1|
+|**Cables**        |CABLE_3P_100MM|1|1|
+|.                 |CABLE_3P_180MM|3|3|
+|.                 |CABLE_3P_240MM|1|1|
+|**Powers**        |SMPS 12V5A|1|1|
+|.                 |A/C Cord|1|1|
+|**Tools**         |SCREW_DRIER_DEFAULT|1|1|
+|.                 |Wrench_Hex_1_5X90|1|1|
+|.                 |Wrench_Hex_2_0X100|1|1|
+|.                 |Wrench_Hex_2_5X110|1|1|
+|**Miscellaneous** |DC12_A01_SPACER_RING|24|24|
+|.                 |WB_M2_5X12_NYLOK|8|8|
+|.                 |NUT_M2_5(0.45P)|16|16|
+|.                 |NUT_M3|4|4|
+|.                 |WB_M2X03|42|42|
+|.                 |WB_M2X04|4|4|
+|.                 |WB_M2_5X06|8|8|
+|.                 |WB_M2_5X08|16|16|
+|.                 |FHS_M2_5X14|12|12|
+|.                 |WB_M3X10|4|4|
+|.                 |WB_M2_5X04|8|8|
+|.                 |HN12_I101|3|3|
+|.                 |IGUS_JFM_1113_05|3|3|
+|.                 |DC12_CAP_IDLE|3|3|
+|.                 |GRIPPER_PAD|2|2|
 
-[DIY Manual](https://drive.google.com/open?id=1c5U0v2dQhYiulqiWI0VQMameG82WCc-4rl6J6zlQejA)
 
-CAD Files ([Onshape](http://www.robotis.com/service/download.php?no=690), [Thingiverse](https://www.thingiverse.com/thing:3069574))
+<!-- - [Parts of OpenManipulator](https://docs.google.com/a/robotis.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit?usp=sharing) -->
+
+<!-- [DIY Manual](https://drive.google.com/open?id=1c5U0v2dQhYiulqiWI0VQMameG82WCc-4rl6J6zlQejA) -->
+
+## [3D Printed Parts](#3d-printed-parts)
+
+We offer 3D printed parts to safety. User can modify cad files and 3D Printed it to assemble OpenManipulator.
+
+- CAD Files ([Onshape](http://www.robotis.com/service/download.php?no=690), [Thingiverse](https://www.thingiverse.com/thing:3069574))
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_OnShape.jpg)
+
+## [Assembly Manual](#assembly-manual)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/eJTIeDepmNo" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
 # [Software Setup](#software-setup)
 
@@ -364,17 +413,16 @@ Gripping (parameters : `grip_on`, `grip_off`, `neutral`)
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_SCARA_Capture.png)
 
-|                     | Unit    | Chain with XM430-W350                   |
+| Items               | Unit    |                                         |
 | ------------------- | ------- | --------------------------------------- |
+| **Actuator**        |         | Dynamixel XM430-W350-T                  |
 | **Input Voltage**   | V       | 12                                      |
 | **DOF**             | -       | 4 (3 DOF + 1 End-Effector)              |
-| **Speed(Joint)**    | rad/sec | 4.82                                    |
+| **Speed(Joint)**    | RPM     | 46                                      |
 | **Weight**          | kg(lb)  | 0.52 (1.14)                             |
 | **Reach**           | mm (in) | 234 (9.21)                              |
-| **Rated Voltage**   | VDC     | 12                                      |
-| **Communication**   | -       | RS-485 (Multi Drop Bus)                 |
-| **Power(Joint)**    | W       | 27.6                                    |
-| **Software**        | -       | ROS, Dynamixel SDK, Arduino, Processing |
+| **Communication**   | -       | TTL (Level Multidrop BUS)               |
+| **Software**        | -       | Dynamixel SDK, Arduino, Processing      |
 | **Main Controller** | -       | Laptop PC, OpenCR                       |
 
 ### Dimension
@@ -383,13 +431,11 @@ Gripping (parameters : `grip_on`, `grip_off`, `neutral`)
 
 ### Hardware Setup
 
-[Parts of OpenManipulator](https://docs.google.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit#gid=1916070381)
+<!-- [Parts of OpenManipulator](https://docs.google.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit#gid=1916070381) -->
 
-  * Items that are painted in purple in above link are purchased on ROBOTIS SHOP
-  * Items that are painted in green in above link are purchased on shopping mall
-  * Items that are painted in yellow in above link are 3D printing parts
+#### 3D Printed Parts
 
-CAD Files ([Onshape](http://www.robotis.com/service/download.php?no=691), [Thingiverse](https://www.thingiverse.com/thing:3069581))
+- CAD Files ([Onshape](http://www.robotis.com/service/download.php?no=691), [Thingiverse](https://www.thingiverse.com/thing:3069581))
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_SCARA_OnShape.png)
 
@@ -409,18 +455,16 @@ CAD Files ([Onshape](http://www.robotis.com/service/download.php?no=691), [Thing
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_Link_Capture.png)
 
-|                          | Unit    | Chain with XM430-W350                   |
-| ------------------------ | ------- | --------------------------------------- |
-| **Input Voltage**        | V       | 12                                      |
+| Items                    | Unit    |                                         |
+| -------------------      | ------- | --------------------------------------- |
+| **Actuator**             |         | Dynamixel XM430-W350-T                  |
 | **DOF**                  | -       | 3                                       |
 | **Payload With Suction** | g (lb)  | 400 ~ 450 (0.88 ~ 0.99)                 |
 | **Speed(Joint)**         | rad/sec | 4.82                                    |
 | **Weight**               | kg(lb)  | 0.53 (1.16)                             |
 | **Reach**                | mm (in) | 400 (12.99)                             |
-| **Rated Voltage**        | VDC     | 12                                      |
-| **Communication**        | -       | TTL (Multi Drop Bus)                 |
-| **Power(Joint)**         | W       | 27.6                                    |
-| **Software**             | -       | Dynamixel SDK, Arduino, Processing |
+| **Communication**        | -       | TTL (Level Multidrop BUS)               |
+| **Software**             | -       | Dynamixel SDK, Arduino, Processing      |
 | **Main Controller**      | -       | Laptop PC, OpenCR                       |
 
 ### Dimension
