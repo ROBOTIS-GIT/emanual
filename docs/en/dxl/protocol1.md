@@ -296,10 +296,10 @@ This instruction is to execute the registered Reg Write instruction. The Action 
 This instruction is to reset the Control Table of Dynamixel to the factory default values.
 
 {% capture reset_warning_01 %}
-**CAUTION** : Please be careful as Reset instruction will factory reset values in the EEPROM. 
+**CAUTION** : Please be careful as Reset instruction will overwrite factory reset values in the EEPROM. 
 
 **CAUTION** : Broadcast ID(0xFE) cannot be used for Reset instruction.  
-  Applied Products : MX-12W(V41), MX-28(V40), MX-64(V40), MX-106(V40)
+  Applied Products : MX-12W(V41), MX-28(V40), MX-64(V40), MX-106(V40), X-series(except XL-320), MX series with Protocol 2.0
 {% endcapture %}
 
 <div class="notice--warning">{{ reset_warning_01 | markdownify }}</div>
@@ -326,7 +326,7 @@ This instruction is to reset the Control Table of Dynamixel to the factory defau
 
 ## [Reboot](#reboot)
 This instruction restarts Dynamixel.
-- Applied Products : MX-12W(V41), MX-28(V40), MX-64(V40), MX-106(V40), X-Series(except XL-320)
+- Applied Products : MX-12W(V41), MX-28(V40), MX-64(V40), MX-106(V40), X-Series(except XL-320), MX series with Protocol 2.0
 
 ### Example
 
@@ -367,8 +367,8 @@ This instruction is used to control multiple Dynamixels simultaneously with a si
 
 ### Example
 #### Conditions
-- ID 0(RX-64) : Write 0x010 to Goal Position(30, 0x1E) and write 0x150 to Moving Speed(32, 0x20)
-- ID 1(RX-64) : Write 0x220 to Goal Position(30, 0x1E) and write 0x360 to Moving Speed(32, 0x20)
+- ID 0(MX-64) : Write 0x010 to Goal Position(30, 0x1E) and write 0x150 to Moving Speed(32, 0x20)
+- ID 1(MX-64) : Write 0x220 to Goal Position(30, 0x1E) and write 0x360 to Moving Speed(32, 0x20)
 
 #### Sync Write Instruction Packet
 
