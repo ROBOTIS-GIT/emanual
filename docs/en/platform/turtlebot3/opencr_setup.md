@@ -45,7 +45,7 @@ This instruction was tested on `Ubuntu 16.04`, `Ubuntu Mate`, `Linux Mint` and `
   $ export OPENCR_PORT=/dev/ttyACM0
   $ export OPENCR_MODEL=burger
   $ rm -rf ./opencr_update.tar.bz2
-  $ wget https://github.com/ROBOTIS-GIT/OpenCR/raw/master/arduino/opencr_release/shell_update/opencr_update.tar.bz2 && tar -xvf opencr_update.tar.bz2 && cd ./opencr_update && ./update.sh $OPENCR_PORT $OPENCR_MODEL.opencr && cd ..
+  $ wget https://github.com/ROBOTIS-GIT/OpenCR-Binaries/raw/master/turtlebot3/ROS1/latest/opencr_update.tar.bz2 && tar -xvf opencr_update.tar.bz2 && cd ./opencr_update && ./update.sh $OPENCR_PORT $OPENCR_MODEL.opencr && cd ..
   ```
 
   ![](/assets/images/platform/turtlebot3/opencr/shell01.png)
@@ -58,7 +58,7 @@ When firmware upload is completed, `jump_to_fw` text string will be printed on t
   $ export OPENCR_PORT=/dev/ttyACM0
   $ export OPENCR_MODEL=waffle
   $ rm -rf ./opencr_update.tar.bz2
-  $ wget https://github.com/ROBOTIS-GIT/OpenCR/raw/master/arduino/opencr_release/shell_update/opencr_update.tar.bz2 && tar -xvf opencr_update.tar.bz2 && cd ./opencr_update && ./update.sh $OPENCR_PORT $OPENCR_MODEL.opencr && cd ..
+  $ wget https://github.com/ROBOTIS-GIT/OpenCR-Binaries/raw/master/turtlebot3/ROS1/latest/opencr_update.tar.bz2 && tar -xvf opencr_update.tar.bz2 && cd ./opencr_update && ./update.sh $OPENCR_PORT $OPENCR_MODEL.opencr && cd ..
   ```
 
   ![](/assets/images/platform/turtlebot3/opencr/shell02.png)
