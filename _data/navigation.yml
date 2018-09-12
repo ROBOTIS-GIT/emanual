@@ -12085,7 +12085,7 @@ open_manipulator:
         url: /platform/openmanipulator/#spawn-model
       - title: "MoveIt!"
         url: /platform/openmanipulator/#moveit
-  - title: "Embedded board Setup"
+  - title: "Embedded Board Setup"
     url: /platform/openmanipulator/#embedded-board-setup
     children:
     - title: "Arduino IDE"

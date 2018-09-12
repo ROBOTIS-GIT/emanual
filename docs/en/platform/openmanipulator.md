@@ -386,19 +386,40 @@ Gripping (parameters : `grip_on`, `grip_off`, `neutral`)
 
   ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_gripper.png)
 
-# [Embedded board Setup](#embedded-board-setup)
+# [Embedded Board Setup](#embedded-board-setup)
 
-  - **Comming Soon**
+OpenManipulator is compatible with **OpenCR**. We offer API to easily control manipulator.
+This API supports Dynamixel, Dynamixel X including protocol 1.0 and 2.0. Furthermore, this code can be used Friends of OpenManipulator.
+User can make thier code in **Arduino IDE** and simulate or control using **Processing** GUI.
 
 ## [Arduino IDE](#arduino-ide)
 
-  - [Arduino IDE for using OpenCR](/docs/en/parts/controller/opencr10/#arduino-ide)
+Download Arduino IDE and load OpenCR board on it
+
+- [Arduino IDE for using OpenCR](/docs/en/parts/controller/opencr10/#arduino-ide)
+
+Find example source codes. 
+    
+Go to `Examples` → `OpenManipulator` → `example` → `Arduino` → `Chain` → `open_manipulator_chain` on Arduino IDE for OpenCR.
+
+![](/assets/images/platform/openmanipulator/OpenManipulator_chain_arduino.png)
 
 ## [Processing](#processing)
 
-  - [Download Processing](https://processing.org/download/)
+Download Processing and load OpenCR board on it
 
-  ![](/assets/images/platform/openmanipulator/OpenManipulator_chain_processing.png)
+- [Download Processing](https://processing.org/download/)
+
+Open Processing and Go to `Tools` → `Add Tool..`. Search `ControlP5` and install it.
+
+![](/assets/images/platform/openmanipulator/OpenManipulator_chain_processing_1.png)
+
+Open processing source code file (`OpenCR`>`arduino`>`opencr_arduino`>`opencr`>`libraries`>`OpenManipulator`>`example`>`Processing`>`Chain`>`Chain.pde`) on Processing IDE, and Run it.
+  
+**NOTE**: Upload **OpenCR example source code** to OpenCR before run **processing source code**.
+{: .notice--info}
+
+![](/assets/images/platform/openmanipulator/OpenManipulator_chain_processing_2.png)
 
 # [Friends](#friends)
 
@@ -425,7 +446,6 @@ Gripping (parameters : `grip_on`, `grip_off`, `neutral`)
 | **Input Voltage**   | V       | 12                                      |
 | **DOF**             | -       | 4 (3 DOF + 1 End-Effector)              |
 | **Speed(Joint)**    | RPM     | 46                                      |
-| **Weight**          | kg(lb)  | 0.52 (1.14)                             |
 | **Reach**           | mm (in) | 234 (9.21)                              |
 | **Communication**   | -       | TTL (Level Multidrop BUS)               |
 | **Software**        | -       | Dynamixel SDK, Arduino, Processing      |
@@ -447,7 +467,16 @@ Gripping (parameters : `grip_on`, `grip_off`, `neutral`)
 
 ### Software Setup
 
-  - **Comming Soon**
+#### OpenCR
+  
+Go to `Examples` → `OpenManipulator` → `example` → `Arduino` → `SCARA` → `open_manipulator_SCARA` on Arduino IDE for OpenCR.
+
+#### Processing
+
+Open processing source code file (`OpenCR`>`arduino`>`opencr_arduino`>`opencr`>`libraries`>`OpenManipulator`>`example`>`Processing`>`SCARA`>`SCARA.pde`) on Processing IDE, and Run it.
+
+**NOTE**: Upload **OpenCR example source code** to OpenCR before run **processing source code**.
+{: .notice--info}
 
 ### Video
 
@@ -481,43 +510,28 @@ Gripping (parameters : `grip_on`, `grip_off`, `neutral`)
 
 ### Hardware Setup
 
-[Parts of OpenManipulator](https://docs.google.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit#gid=1110711693)
+<!-- [Parts of OpenManipulator](https://docs.google.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit#gid=1110711693)
 
   * Items that are painted in purple in above link are purchased on ROBOTIS SHOP
   * Items that are painted in green in above link are purchased on shopping mall
-  * Items that are painted in yellow in above link are 3D printing parts
+  * Items that are painted in yellow in above link are 3D printing parts -->
 
 CAD Files ([Onshape](http://www.robotis.com/service/download.php?no=692), [Thingiverse](https://www.thingiverse.com/thing:3069557))
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_Link_OnShape.png)
 
 ### Software Setup
+
+#### OpenCR
   
-  **Software Download & Setup**
+Go to `Examples` → `OpenManipulator` → `example` → `Arduino` → `Link` → `open_manipulator_link` on Arduino IDE for OpenCR.
 
-  Download the software and set up.
-  - [Arduino IDE for using OpenCR](/docs/en/parts/controller/opencr10/#arduino-ide)
-  - [Download Processing](https://processing.org/download/)
+#### Processing
 
-  **Example Source Codes**
+Open processing source code file (`OpenCR`>`arduino`>`opencr_arduino`>`opencr`>`libraries`>`OpenManipulator`>`example`>`Processing`>`Link`>`Link.pde`) on Processing IDE, and Run it.
 
-  Get example source codes. 
-  - OpenCR
-    
-  Go to `Examples` → `OpenManipulator` → `example` → `Arduino` → `Link` → `open_manipulator_link` on Arduino IDE for OpenCR.
-
-  Upload the example source code to OpenCR.
-
-  ![](/assets/images/platform/openmanipulator/OpenManipulator_Link_Arduino.png)
-  
-  - Processing
-  
-  Open processing source code file (`OpenCR`>`arduino`>`opencr_arduino`>`opencr`>`libraries`>`OpenManipulator`>`example`>`Processing`>`Link`>`Link.pde`) on Processing IDE, and Run it.
-  
-  **NOTE**: Upload **OpenCR example source code** to OpenCR before run **processing source code**.
-  {: .notice--info}
-
-  ![](/assets/images/platform/openmanipulator/OpenManipulator_link_Processing.png)
+**NOTE**: Upload **OpenCR example source code** to OpenCR before run **processing source code**.
+{: .notice--info}
 
 ### Video
 
