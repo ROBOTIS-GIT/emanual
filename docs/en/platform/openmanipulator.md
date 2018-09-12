@@ -15,7 +15,7 @@ sidebar:
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator.png)
 
-![](/assets/images/platform/openmanipulator/OpenManipulator_Introduction.jpg)
+![](/assets/images/platform/openmanipulator/OpenManipulator_Introduction.png)
 
 ROS-enabled OpenManipulator is a full open robot platform consisting of **OpenSoftware**​, **OpenHardware** and **OpenCR(Embedded board)​**.
 
@@ -61,7 +61,7 @@ OpenManipulator is composed by [Dynamixel X series](http://emanual.robotis.com/d
 | **Grip range**      | mm (in) | 20~75 (0.79~2.95)                       | 20~75 (0.79~2.95)                       |
 | **Communication**   | -       | TTL (Level Multidrop BUS)               | TTL (Level Multidrop BUS)               |
 | **Software**        | -       | ROS, Dynamixel SDK, Arduino, Processing | ROS, Dynamixel SDK, Arduino, Processing |
-| **Main Controller** | -       | Laptop PC, OpenCR                       | Laptop PC, OpenCR                       |
+| **Main Controller** | -       | PC, OpenCR                              | PC, OpenCR                       |
 
 ## [Dimension](#dimension)
 
@@ -90,13 +90,9 @@ OpenManipulator is composed by [Dynamixel X series](http://emanual.robotis.com/d
 |.                 |FR12_H104_K|1|1|
 |**Actuators**     |Dynamixel XM430-W350-T|5|0|
 |.                 |Dynamixel XL430-W250-T|0|5|
-|**Boards**        |OpenCR|1|1|
-|.                 |U2D2|1|1|
 |**Cables**        |CABLE_3P_100MM|1|1|
 |.                 |CABLE_3P_180MM|3|3|
 |.                 |CABLE_3P_240MM|1|1|
-|**Powers**        |SMPS 12V5A|1|1|
-|.                 |A/C Cord|1|1|
 |**Tools**         |SCREW_DRIER_DEFAULT|1|1|
 |.                 |Wrench_Hex_1_5X90|1|1|
 |.                 |Wrench_Hex_2_0X100|1|1|
@@ -116,6 +112,16 @@ OpenManipulator is composed by [Dynamixel X series](http://emanual.robotis.com/d
 |.                 |IGUS_JFM_1113_05|3|3|
 |.                 |DC12_CAP_IDLE|3|3|
 |.                 |GRIPPER_PAD|2|2|
+
+
+- Option parts
+
+|              | Part Name | RM-X52-TNM | RM-X52-TNL |
+|---------     |---------- |---------   |----------  |
+|**Powers**        |SMPS 12V5A|1|1|
+|.                 |A/C Cord|1|1|
+|**Boards**        |OpenCR|1|1|
+|.                 |U2D2|1|1|
 
 
 <!-- - [Parts of OpenManipulator](https://docs.google.com/a/robotis.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit?usp=sharing) -->

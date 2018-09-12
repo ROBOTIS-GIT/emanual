@@ -411,12 +411,13 @@ Velocity Override 기능은 동일하게 동작합니다.
 |RH-P12-RN|![](/assets/images/platform/rh_p12_rn/rh_p12_rn_position_open.png)|![](/assets/images/platform/rh_p12_rn/rh_p12_rn_position_close.png)|
 
 ### <a name="velocity-trajectory"></a>**[Velocity Trajectory(584)](#velocity-trajectory584)**
-Profile에 의해 생성된 목표 속도 궤적입니다. 자세한 사항은 Profile Velocity(560)를 참고하세요.
-2. **전류기반 위치 제어 모드** : Position Trajectory(588)을 생성하기 위한 목표 속도 궤적입니다. Profile이 종료되면 Velocity Trajectory(584)은 '0'이 됩니다.
+Profile에 의해 생성된 목표 속도 궤적입니다. 자세한 사항은 [Profile Velocity(560)]를 참고하세요.
+
+**전류기반 위치 제어 모드** : Position Trajectory(588)을 생성하기 위한 목표 속도 궤적입니다. Profile이 종료되면 Velocity Trajectory(584)은 '0'이 됩니다.
 
 
 ### <a name="position-trajectory"></a>**[Position Trajectory(588)](#position-trajectory588)**
-Profile에 의해 생성된 목표 위치 궤적입니다. 전류기반 위치 제어 모드에서만 동작 합니다. 자세한 사항은 [Profile Velocity(560)](#profile-velocity560)를 참고하세요.
+Profile에 의해 생성된 목표 위치 궤적입니다. 전류기반 위치 제어 모드에서만 동작 합니다. 자세한 사항은 [Profile Velocity(560)]를 참고하세요.
 
 
 ### <a name="present-input-voltage"></a>**[Present Input Voltage(592)](#present-input-voltage592)**
@@ -459,3 +460,4 @@ Profile에 의해 생성된 목표 위치 궤적입니다. 전류기반 위치 �
 
 [PDF]: http://support.robotis.com/en/baggage_files/dynamixel/rh-p12-rn.pdf
 [Torque Enable(562)]: #torque-enable562
+[Profile Velocity(560)]: #profile-velocity560

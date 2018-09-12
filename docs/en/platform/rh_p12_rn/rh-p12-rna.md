@@ -327,22 +327,28 @@ Goal Velocity(552) value is used as an input limiter of velocity controller.
 This value cannot exceed Velocity Limit(44).
 
 ### <a name="profile-acceleration"></a>**[Profile Acceleration(556)](#profile-acceleration556)**
-{% include en/dxl/pro-plus/control_table_556_profile_acceleration.md %}
+Profile Acceleration is set with this value.  
+This value is used only in Current-based Position Control Mode.  
+The value of Profile Acceleration ranges from 0 to Acceleration Limit(40).
+
+**WARNING**: When Profile Velocity(560) is set to '0', Profile Acceleration is not applied.
+{: .notice}
 
 ### <a name="profile-velocity"></a>**[Profile Velocity(560)](#profile-velocity560)**
 The Maximum velocity for Profile can be set with this value.  
-Profile Velocity(560) can be used in Position Control Mode and Extended Position Control Mode.  
+Profile Velocity(560) can be used in Current-based Position Control Mode.  
 Profile Velocity(560) cannot exceed Velocity Limit(44).  
+In case of Velocity Control Mode, Profile Acceleration(556) is applied, but Profile Velocity(560) isn't.
 
 |      Unit      |      Value Range       |             Description              |
 |:--------------:|:----------------------:|:------------------------------------:|
-| 0.01 [rev/min] | 0 ~ Velocity Limit(44) | ‘0’ stands for the infinite velocity |
+| 0.01 [rev/min] | 0 ~ Velocity Limit(44) | '0' stands for the infinite velocity |
 
 The Profile is an acceleration/deceleration control technique to reduce vibration, noise and load on the motor by controlling dramatically changing velocity and acceleration.  
 It is also called Velocity Profile as it controls acceleration and deceleration based on velocity.  
 This device provides the following 3 types of profile.  
 Profiles are usually selected by the combination of Profile Velocity(560) and Profile Acceleration(556).  
-Trapezoidal Profile is exceptionally chosen with additional factor: travel distance(&Delta;Pos, the distance between desired position and present position).
+Trapezoidal Profile is exceptionally applied with additional factor: travel distance(&Delta;Pos, the distance between desired position and present position).
 
 ![](/assets/images/dxl/pro-plus/profile_types.png)
 
@@ -370,8 +376,7 @@ The following explains how Profile processes Goal Position(564).
 
 
 {% capture group_notice_03 %}
-**NOTE** : Velocity Control Mode only uses Profile Acceleration(556).  
-Step and Trapezoidal Profiles are supported and Velocity Override is supported as well.  
+**NOTE** : Step and Trapezoidal Profiles are only supported while Velocity Override is supported as well.  
 Acceleration time(t<sub>1</sub>) can be calculated as below equation.
 
 **t<sub>1</sub> = 600 * {Goal Velocity(552) / Profile Acceleration(556)}**
@@ -395,7 +400,18 @@ This value must be inbetween Min Position Limit(52) and Max Position Limit(48).
 {% include en/dxl/pro-plus/control_table_570_moving.md %}
 
 ### <a name="moving-status"></a>**[Moving Status(571)](#moving-status571)**
-{% include en/dxl/pro-plus/control_table_571_moving_status.md %}
+This value provides additional information about the movement. In-Position Bit(0x01) only works with Current-based Position Control Mode.
+
+|                         |      |                              Details                               |                                       Description                                        |
+|:-----------------------:|:----:|:------------------------------------------------------------------:|:----------------------------------------------------------------------------------------:|
+|          Bit 7          | 0x80 |                                 -                                  |                                          Unused                                          |
+|          Bit 6          | 0x40 |                                 -                                  |                                          Unused                                          |
+| Bit 5<br />~<br />Bit 4 | 0x30 | Profile Type(0x30)<br />Profile Type(0x10)<br />Profile Type(0x00) | Trapezoidal Velocity Profile<br />Rectangular Velocity Profile<br />Profile unused(Step) |
+|          Bit 3          | 0x08 |                                 -                                  |                                          Unused                                          |
+|          Bit 2          | 0x04 |                                 -                                  |                                          Unused                                          |
+|          Bit 1          | 0x02 |                                 -                                  |                                          Unused                                          |
+|          Bit 0          | 0x01 |                            In-Position                             |                        The device is reached to desired position                         |
+
 
 ### <a name="present-pwm"></a>**[Present PWM(572)](#present-pwm572)**
 {% include en/dxl/pro-plus/control_table_572_present_pwm.md %}
@@ -414,10 +430,15 @@ This value represents present position of the device.
 |RH-P12-RN|![](/assets/images/platform/rh_p12_rn/rh_p12_rn_position_open.png)|![](/assets/images/platform/rh_p12_rn/rh_p12_rn_position_close.png)|
 
 ### <a name="velocity-trajectory"></a>**[Velocity Trajectory(584)](#velocity-trajectory584)**
-{% include en/dxl/pro-plus/control_table_584_velocity_trajectory.md %}
+This is a desired velocity trajectory created by Profile. For more details, please refer to the [Profile Velocity(560)].
+
+**Current-based Position Control Mode** : The desired Velocity Trajectory is used to create Position Trajectory(588). When Profile reaches to an endpoint, Velocity Trajectory(584) is set to '0'.
 
 ### <a name="position-trajectory"></a>**[Position Trajectory(588)](#position-trajectory588)**
-{% include en/dxl/pro-plus/control_table_588_position_trajectory.md %}
+This is a desired position trajectory created by Profile. This value is only used in Current-based Position Control Mode. For more details, please refer to the [Profile Velocity(560)].
+
+[Profile Velocity(560)]: #profile-velocity560
+
 
 ### <a name="present-input-voltage"></a>**[Present Input Voltage(592)](#present-input-voltage592)**
 {% include en/dxl/pro-plus/control_table_592_present_input_voltage.md %}

@@ -23,7 +23,7 @@ The following is the example of Bus Watchdog function.
 1. After setting the Operating Mode(11) to Velocity Control Mode, change the Torque Enable(512) to `1`.
 2. If `50` is written to the Goal Velocity(552), the device will rotate in CCW direction.
 3. Change the value of Bus Watchdog(546) to `100`(2,000 [ms]). (Activate Bus Watchdog Function)
-4. If no instruction packet is received within 2,000 [ms], the device will stop. When it stops, `0` is applied to the Profile Acceleration(556) and Profile Velocity(560).
+4. If no instruction packet is received within 2,000 [ms], the device will stop with the predefined decelerating value.
 5. Bus Watchdog(546) value is set to `-1` (Bus Watchdog Error). At this time, the access property of goal values will be changed to read-only.
 6. If `150` is written to the Goal Velocity(552), Range Error will be returned via Status Packet.
 7. If Bus Watchdog(546) value is changed to `0`, Bus Watchdog Error will be cleared.
