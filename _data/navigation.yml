@@ -12060,6 +12060,13 @@ open_manipulator:
       url: /platform/openmanipulator/#demension
   - title: "Hardware Setup"
     url: /platform/openmanipulator/#hardware-setup
+    children:
+    - title: "Part Lists"
+      url: /platform/openmanipulator/#part-lists
+    - title: "3D Printed Parts"
+      url: /platform/openmanipulator/#3d-printed-parts
+    - title: "Assembly Manual"
+      url: /platform/openmanipulator/#assembly-manual
   - title: "Software Setup"
     url: /platform/openmanipulator/#software-setup
     children:
