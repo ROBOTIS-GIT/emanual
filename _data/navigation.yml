@@ -9441,6 +9441,9 @@ protocol2:
       - title: "Reboot"
         titlekr: "Reboot"
         url: /dxl/protocol2/#reboot
+      - title: "Clear"
+        titlekr: "Clear"
+        url: /dxl/protocol2/#clear
       - title: "Sync Read"
         titlekr: "Sync Read"
         url: /dxl/protocol2/#sync-read

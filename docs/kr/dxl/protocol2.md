@@ -345,6 +345,28 @@ Instruction Packet 의 처리 결과를 나타냄
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |0xFF|0xFF|0xFD|0x00|0x01|0x04|0x00|0x55|0x00|0xA1|0x0C|
 
+## [Reboot](#reboot)
+
+### 설명
+- 장치를 재부팅 시키는 Instruction
+
+### 예제
+
+#### 예제 설명
+- ID1(XM430-W210)를 Reboot 시킬 경우
+
+#### Reboot Instruction Packet
+
+|H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|CRC1|CRC2|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|0xFF|0xFF|0xFD|0x00|0x01|0x03|0x00|0x08|0x2F|0x4E|
+
+#### ID 1 Status Packet
+
+|H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|P1|CRC1|CRC2|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|0xFF|0xFF|0xFD|0x00|0x01|0x04|0x00|0x55|0x00|0xA1|0x0C|
+
 ## [Clear](#clear)
 
 ### 설명
@@ -372,28 +394,6 @@ Instruction Packet 의 처리 결과를 나타냄
 |  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST |  P1  | CRC1 | CRC2 |
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
 | 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x04 | 0x00 | 0x55 | 0x00 | 0xA1 | 0x0C |
-
-## [Reboot](#reboot)
-
-### 설명
-- 장치를 재부팅 시키는 Instruction
-
-### 예제
-
-#### 예제 설명
-- ID1(XM430-W210)를 Reboot 시킬 경우
-
-#### Reboot Instruction Packet
-
-|H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|CRC1|CRC2|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0xFD|0x00|0x01|0x03|0x00|0x08|0x2F|0x4E|
-
-#### ID 1 Status Packet
-
-|H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|P1|CRC1|CRC2|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0xFD|0x00|0x01|0x04|0x00|0x55|0x00|0xA1|0x0C|
 
 ## [Sync Read](#sync-read)
 
