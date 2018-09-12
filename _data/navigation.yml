@@ -10908,7 +10908,7 @@ op3:
     url: /platform/op3/recovery/
     children:
     - title: "Manual Installation"
-      url: /platform/op3/recovery/#manual-installation
+      url: /platform/op3/recovery/#op3-manual-installation
     - title: "Recovery of ROBOTIS-OP3"
       url: /platform/op3/recovery/#recovery-of-robotis-op3
 
