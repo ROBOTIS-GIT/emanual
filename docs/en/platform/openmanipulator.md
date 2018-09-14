@@ -8,7 +8,7 @@ author_profile: false
 permalink: /docs/en/platform/openmanipulator/
 sidebar:
   title: OpenManipulator
-  nav: "open_manipulator"
+  nav: "openmanipulator"
 ---
 
 # [Overview](#overview)
@@ -50,7 +50,7 @@ OpenManipulator is composed by [Dynamixel X series](http://emanual.robotis.com/d
 ## [Hardware Specification](#hardware-specification)
 
 | Items               | Unit    | RM-X52-TNM                              | RM-X52-TNL                              |
-| ------------------- | ------- | --------------------------------------- |-----------------------------------------|
+|---------------------|---------|-----------------------------------------|-----------------------------------------|
 | **Actuator**        |         | Dynamixel XM430-W350-T                  | Dynamixel XL430-W250-T                  |
 | **Input Voltage**   | V       | 12                                      | 12                                      |
 | **DOF**             | -       | 5 (4 DOF + 1 DOF Gripper)               | 5 (4 DOF + 1 DOF Gripper)               |
@@ -58,10 +58,10 @@ OpenManipulator is composed by [Dynamixel X series](http://emanual.robotis.com/d
 | **Speed(Joint)**    | RPM     | 46                                      | 61                                      |
 | **Weight**          | kg (lb) | 0.70  (1.54)                            | 0.51  (1.12)                            |
 | **Reach**           | mm (in) | 380   (14.9)                            | 380   (14.9)                            |
-| **Grip range**      | mm (in) | 20~75 (0.79~2.95)                       | 20~75 (0.79~2.95)                       |
+| **Gripper Stroke**  | mm (in) | 20~75 (0.79~2.95)                       | 20~75 (0.79~2.95)                       |
 | **Communication**   | -       | TTL (Level Multidrop BUS)               | TTL (Level Multidrop BUS)               |
 | **Software**        | -       | ROS, Dynamixel SDK, Arduino, Processing | ROS, Dynamixel SDK, Arduino, Processing |
-| **Main Controller** | -       | PC, OpenCR                              | PC, OpenCR                       |
+| **Main Controller** | -       | PC, OpenCR                              | PC, OpenCR                              |
 
 ## [Dimension](#dimension)
 
@@ -73,55 +73,55 @@ OpenManipulator is composed by [Dynamixel X series](http://emanual.robotis.com/d
 
 ## [Part Lists](#part-lists)
 
-|              | Part Name | RM-X52-TNM | RM-X52-TNL |
-|---------     |---------- |---------   |----------  |
-|**Chassis Parts** |LONG LINK FRAME|1|1|
-|.                 |SHORT LINK FRAME|1|1|
-|.                 |RAIL BRACKET(LEFT)|1|1|
-|.                 |RAIL BRACKET(RIGHT)|1|1|
-|.                 |PALM GRIPPER|2|2|
-|.                 |LINK ROD|2|2|
-|.                 |FLANGE BUSH|4|4|
-|.                 |CRANK ARM|1|1|
-|.                 |RAIL BLOCK|2|2|
-|.                 |FR12_S101_K|1|1|
-|.                 |FR12_S102_K|2|2|
-|.                 |FR12_H101_K|2|2|
-|.                 |FR12_H104_K|1|1|
-|**Actuators**     |Dynamixel XM430-W350-T|5|0|
-|.                 |Dynamixel XL430-W250-T|0|5|
-|**Cables**        |CABLE_3P_100MM|1|1|
-|.                 |CABLE_3P_180MM|3|3|
-|.                 |CABLE_3P_240MM|1|1|
-|**Tools**         |SCREW_DRIER_DEFAULT|1|1|
-|.                 |Wrench_Hex_1_5X90|1|1|
-|.                 |Wrench_Hex_2_0X100|1|1|
-|.                 |Wrench_Hex_2_5X110|1|1|
-|**Miscellaneous** |DC12_A01_SPACER_RING|24|24|
-|.                 |WB_M2_5X12_NYLOK|8|8|
-|.                 |NUT_M2_5(0.45P)|16|16|
-|.                 |NUT_M3|4|4|
-|.                 |WB_M2X03|42|42|
-|.                 |WB_M2X04|4|4|
-|.                 |WB_M2_5X06|8|8|
-|.                 |WB_M2_5X08|16|16|
-|.                 |FHS_M2_5X14|12|12|
-|.                 |WB_M3X10|4|4|
-|.                 |WB_M2_5X04|8|8|
-|.                 |HN12_I101|3|3|
-|.                 |IGUS_JFM_1113_05|3|3|
-|.                 |DC12_CAP_IDLE|3|3|
-|.                 |GRIPPER_PAD|2|2|
+|                   | Part Name              | RM-X52-TNM | RM-X52-TNL |
+|-------------------|------------------------|:----------:|:----------:|
+| **Chassis Parts** | LONG LINK FRAME        |     1      |     1      |
+| .                 | SHORT LINK FRAME       |     1      |     1      |
+| .                 | RAIL BRACKET(LEFT)     |     1      |     1      |
+| .                 | RAIL BRACKET(RIGHT)    |     1      |     1      |
+| .                 | PALM GRIPPER           |     2      |     2      |
+| .                 | LINK ROD               |     2      |     2      |
+| .                 | FLANGE BUSH            |     4      |     4      |
+| .                 | CRANK ARM              |     1      |     1      |
+| .                 | RAIL BLOCK             |     2      |     2      |
+| .                 | FR12_S101_K            |     1      |     1      |
+| .                 | FR12_S102_K            |     2      |     2      |
+| .                 | FR12_H101_K            |     2      |     2      |
+| .                 | FR12_H104_K            |     1      |     1      |
+| **Actuators**     | Dynamixel XM430-W350-T |     5      |     0      |
+| .                 | Dynamixel XL430-W250-T |     0      |     5      |
+| **Cables**        | CABLE_3P_100MM         |     1      |     1      |
+| .                 | CABLE_3P_180MM         |     3      |     3      |
+| .                 | CABLE_3P_240MM         |     1      |     1      |
+| **Tools**         | SCREW_DRIER_DEFAULT    |     1      |     1      |
+| .                 | Wrench_Hex_1_5X90      |     1      |     1      |
+| .                 | Wrench_Hex_2_0X100     |     1      |     1      |
+| .                 | Wrench_Hex_2_5X110     |     1      |     1      |
+| **Miscellaneous** | DC12_A01_SPACER_RING   |     24     |     24     |
+| .                 | WB_M2_5X12_NYLOK       |     8      |     8      |
+| .                 | NUT_M2_5(0.45P)        |     16     |     16     |
+| .                 | NUT_M3                 |     4      |     4      |
+| .                 | WB_M2X03               |     42     |     42     |
+| .                 | WB_M2X04               |     4      |     4      |
+| .                 | WB_M2_5X06             |     8      |     8      |
+| .                 | WB_M2_5X08             |     16     |     16     |
+| .                 | FHS_M2_5X14            |     12     |     12     |
+| .                 | WB_M3X10               |     4      |     4      |
+| .                 | WB_M2_5X04             |     8      |     8      |
+| .                 | HN12_I101              |     3      |     3      |
+| .                 | IGUS_JFM_1113_05       |     3      |     3      |
+| .                 | DC12_CAP_IDLE          |     3      |     3      |
+| .                 | GRIPPER_PAD            |     2      |     2      |
 
 
-- Option parts
+- Optional parts
 
-|              | Part Name | RM-X52-TNM | RM-X52-TNL |
-|---------     |---------- |---------   |----------  |
-|**Powers**        |SMPS 12V5A|1|1|
-|.                 |A/C Cord|1|1|
-|**Boards**        |OpenCR|1|1|
-|.                 |U2D2|1|1|
+|            | Part Name  | RM-X52-TNM | RM-X52-TNL |
+|------------|------------|:----------:|:----------:|
+| **Powers** | SMPS 12V5A |     1      |     1      |
+| .          | A/C Cord   |     1      |     1      |
+| **Boards** | OpenCR     |     1      |     1      |
+| .          | U2D2       |     1      |     1      |
 
 
 <!-- - [Parts of OpenManipulator](https://docs.google.com/a/robotis.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit?usp=sharing) -->
@@ -170,7 +170,7 @@ $ roslaunch open_manipulator_description open_manipulator_rviz.launch
 
 # [Bringup](#bringup)
 
-To load an OpenManipulator with DYNAMIXEL X-series(XM or XL), you can set a arguments what you configure your own Dynamixel
+To load an OpenManipulator with DYNAMIXEL X-series(XM or XL), you can set parameters for what you've configured for your own Dynamixel
 
   ```
   <launch>
@@ -214,7 +214,7 @@ To load an OpenManipulator with DYNAMIXEL X-series(XM or XL), you can set a argu
   $ roslaunch open_manipulator_dynamixel_ctrl dynamixel_controller.launch
   ```
 
-Type `rostopic list` to check which topic is activated
+Enter `rostopic list` to list up the activated topics.
 
   ```
   /joint_states
@@ -224,17 +224,17 @@ Type `rostopic list` to check which topic is activated
   /rosout_agg
   ```  
 
-OpenManipulator is controllered by ROS message. For example, to use below command make publish joint position(radian)
+OpenManipulator is controllered by ROS message. For example, use below command to publish joint position(in radian).
 
   ```
   $ rostopic pub /open_manipulator/goal_joint_position sensor_msgs/JointState "header:
   seq: 0
   stamp: {secs: 0, nsecs: 0}
   frame_id: ''
-name: ['']
-position: [0]
-velocity: [0]
-effort: [0]"
+  name: ['']
+  position: [0]
+  velocity: [0]
+  effort: [0]"
   ```
   or using RQT
 
@@ -242,7 +242,7 @@ effort: [0]"
 
 # [Manipulation](#manipulation)
 
-We provide manipulation layer to use MoveIt!. You can handle it using RViz or ROS messages
+We provide manipulation layer to use MoveIt!. You can handle it using RViz or ROS messages.
 
   ```
   $ roslaunch open_manipulator_moveit open_manipulator_demo.launch use_gazebo:=false
@@ -266,7 +266,7 @@ Below services are help you to manipulate OpenManipulator
 
   ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_moveit_real_4.png)
 
-In order to control gripper, please use topic publish with below command in a new terminal window
+In order to control the gripper, please use topic publish with below command in a new terminal window.  
 (parameters : `grip_on`, `grip_off`, `neutral`)
 
   ```
@@ -277,7 +277,7 @@ In order to control gripper, please use topic publish with below command in a ne
 
 # [Mobile Manipulation](#mobile-manipulation)
 
-  **Tip :** You can get a more information about it in [Manipulation section of TurtleBot3](/docs/en/platform/turtlebot3/manipulation/#manipulation)
+  **TIP**: You can get a more information about it in [Manipulation section of TurtleBot3](/docs/en/platform/turtlebot3/manipulation/#manipulation)
   {: .notice--info}
 
 Install dependent packages
@@ -292,7 +292,7 @@ Install dependent packages
 
 Load a TurtleBot3 Waffle or Waffle Pi with OpenManipulator on RViz.
 
-  **Tip :** TB3_MODEL =  `waffle`, `waffle_pi`
+  **TIP**: TB3_MODEL =  `waffle`, `waffle_pi`
   {: .notice--info}
 
   ```
@@ -319,7 +319,7 @@ Load an OpenManipulator on Gazebo simulator and click `Play` button
 
   ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_gazebo_1.png)
 
-Type `rostopic list` to check which topic is activated
+Enter `rostopic list` to list up the activated topics.
 
   ```
   /clock
@@ -356,7 +356,7 @@ Type `rostopic list` to check which topic is activated
   /rosout_agg
   ```
 
-OpenManipulator in Gazebo is controllered by ROS message. For example, to use below command make publish joint position(radian)
+OpenManipulator in Gazebo is controllered by ROS message. For example, use below command to publish joint position(in radian).
 
   ```
   $ rostopic pub /open_manipulator/joint2_position/command std_msgs/Float64 "data: -1.0" --once
@@ -366,7 +366,7 @@ OpenManipulator in Gazebo is controllered by ROS message. For example, to use be
 
 ## [MoveIt!](#moveit)
 
-You can use MoveIt! to manipulate OpenManipulator. Please refer to [Manipulation part](/docs/en/platform/openmanipulator/#manipulation)
+You can use MoveIt! to manipulate OpenManipulator. Please refer to [Manipulation section](/docs/en/platform/openmanipulator/#manipulation)
 
 Launch MoveIt!
 
@@ -378,7 +378,7 @@ Launch MoveIt!
 
   ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_moveit_sim_2.jpg)
 
-Gripping (parameters : `grip_on`, `grip_off`, `neutral`)
+Gripper Control (parameters : `grip_on`, `grip_off`, `neutral`)
 
   ```
   $ rostopic pub /open_manipulator/gripper std_msgs/String "data: 'grip_on'" --once
@@ -483,16 +483,16 @@ Gripping (parameters : `grip_on`, `grip_off`, `neutral`)
 
 [Parts of OpenManipulator](https://docs.google.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit#gid=1110711693)
 
-  * Items that are painted in purple in above link are purchased on ROBOTIS SHOP
-  * Items that are painted in green in above link are purchased on shopping mall
-  * Items that are painted in yellow in above link are 3D printing parts
+  * Items that are painted in **purple** in above link are purchased on ROBOTIS SHOP
+  * Items that are painted in **green** in above link are purchased on shopping mall
+  * Items that are painted in **yellow** in above link are 3D printing parts
 
 CAD Files ([Onshape](http://www.robotis.com/service/download.php?no=692), [Thingiverse](https://www.thingiverse.com/thing:3069557))
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_Link_OnShape.png)
 
 ### Software Setup
-  
+
   **Software Download & Setup**
 
   Download the software and set up.
@@ -501,19 +501,19 @@ CAD Files ([Onshape](http://www.robotis.com/service/download.php?no=692), [Thing
 
   **Example Source Codes**
 
-  Get example source codes. 
+  Get example source codes.
   - OpenCR
-    
+
   Go to `Examples` → `OpenManipulator` → `example` → `Arduino` → `Link` → `open_manipulator_link` on Arduino IDE for OpenCR.
 
   Upload the example source code to OpenCR.
 
   ![](/assets/images/platform/openmanipulator/OpenManipulator_Link_Arduino.png)
-  
+
   - Processing
-  
+
   Open processing source code file (`OpenCR`>`arduino`>`opencr_arduino`>`opencr`>`libraries`>`OpenManipulator`>`example`>`Processing`>`Link`>`Link.pde`) on Processing IDE, and Run it.
-  
+
   **NOTE**: Upload **OpenCR example source code** to OpenCR before run **processing source code**.
   {: .notice--info}
 
@@ -539,9 +539,9 @@ CAD Files ([Onshape](http://www.robotis.com/service/download.php?no=692), [Thing
 
 [Parts of OpenManipulator](https://docs.google.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit#gid=64381687)
 
-  * Items that are painted in purple in above link are purchased on ROBOTIS SHOP
-  * Items that are painted in green in above link are purchased on shopping mall
-  * Items that are painted in yellow in above link are 3D printing parts
+  * Items that are painted in **purple** in above link are purchased on ROBOTIS SHOP
+  * Items that are painted in **green** in above link are purchased on shopping mall
+  * Items that are painted in **yellow** in above link are 3D printing parts
 
 CAD Files ([Onshape](http://www.robotis.com/service/download.php?no=761), [Thingiverse](https://www.thingiverse.com/thing:3064437))
 
@@ -571,9 +571,9 @@ CAD Files ([Onshape](http://www.robotis.com/service/download.php?no=761), [Thing
 
 [Parts of OpenManipulator](https://docs.google.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit#gid=1521432651)
 
-  * Items that are painted in purple in above link are purchased on ROBOTIS SHOP
-  * Items that are painted in green in above link are purchased on shopping mall
-  * Items that are painted in yellow in above link are 3D printing parts
+  * Items that are painted in **purple** in above link are purchased on ROBOTIS SHOP
+  * Items that are painted in **green** in above link are purchased on shopping mall
+  * Items that are painted in **yellow** in above link are 3D printing parts
 
 [CAD Files](http://www.robotis.com/service/download.php?no=762)
 
@@ -603,9 +603,9 @@ CAD Files ([Onshape](http://www.robotis.com/service/download.php?no=761), [Thing
 
 [Parts of OpenManipulator](https://docs.google.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit#gid=42267100)
 
-  * Items that are painted in purple in above link are purchased on ROBOTIS SHOP
-  * Items that are painted in green in above link are purchased on shopping mall
-  * Items that are painted in yellow in above link are 3D printing parts
+  * Items that are painted in **purple** in above link are purchased on ROBOTIS SHOP
+  * Items that are painted in **green** in above link are purchased on shopping mall
+  * Items that are painted in **yellow** in above link are 3D printing parts
 
 [CAD Files](http://www.robotis.com/service/download.php?no=763)
 
@@ -635,9 +635,9 @@ CAD Files ([Onshape](http://www.robotis.com/service/download.php?no=761), [Thing
 
 [Parts of OpenManipulator](https://docs.google.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit#gid=1200068410)
 
-  * Items that are painted in purple in above link are purchased on ROBOTIS SHOP
-  * Items that are painted in green in above link are purchased on shopping mall
-  * Items that are painted in yellow in above link are 3D printing parts
+  * Items that are painted in **purple** in above link are purchased on ROBOTIS SHOP
+  * Items that are painted in **green** in above link are purchased on shopping mall
+  * Items that are painted in **yellow** in above link are 3D printing parts
 
 [CAD Files](http://www.robotis.com/service/download.php?no=764)
 

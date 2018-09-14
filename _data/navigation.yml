@@ -12037,7 +12037,7 @@ turtlebot3:
       url: /platform/turtlebot3/contact_us/#about-ost-open-source-team
 
 #OpenManipulator
-open_manipulator:
+openmanipulator:
   - title: "Overview"
     url: /platform/openmanipulator/#overview
     children:
