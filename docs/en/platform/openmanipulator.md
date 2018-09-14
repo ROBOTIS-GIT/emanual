@@ -386,19 +386,40 @@ Gripper Control (parameters : `grip_on`, `grip_off`, `neutral`)
 
   ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_gripper.png)
 
-# [Embedded board Setup](#embedded-board-setup)
+# [Embedded Board Setup](#embedded-board-setup)
 
-  - **Comming Soon**
+OpenManipulator is compatible with **OpenCR**. We offer API to easily control manipulator.
+This API supports Dynamixel, Dynamixel X including protocol 1.0 and 2.0. Furthermore, this code can be used Friends of OpenManipulator.
+User can make thier code in **Arduino IDE** and simulate or control using **Processing** GUI.
 
 ## [Arduino IDE](#arduino-ide)
 
-  - [Arduino IDE for using OpenCR](/docs/en/parts/controller/opencr10/#arduino-ide)
+Download Arduino IDE and load OpenCR board on it
+
+- [Arduino IDE for using OpenCR](/docs/en/parts/controller/opencr10/#arduino-ide)
+
+Find example source codes.
+
+Go to `Examples` → `OpenManipulator` → `example` → `Arduino` → `Chain` → `open_manipulator_chain` on Arduino IDE for OpenCR.
+
+![](/assets/images/platform/openmanipulator/OpenManipulator_chain_arduino.png)
 
 ## [Processing](#processing)
 
-  - [Download Processing](https://processing.org/download/)
+Download Processing and load OpenCR board on it
 
-  ![](/assets/images/platform/openmanipulator/OpenManipulator_chain_processing.png)
+- [Download Processing](https://processing.org/download/)
+
+Open Processing and Go to `Tools` → `Add Tool..`. Search `ControlP5` and install it.
+
+![](/assets/images/platform/openmanipulator/OpenManipulator_chain_processing_1.png)
+
+Open processing source code file (`OpenCR`>`arduino`>`opencr_arduino`>`opencr`>`libraries`>`OpenManipulator`>`example`>`Processing`>`Chain`>`Chain.pde`) on Processing IDE, and Run it.
+
+**NOTE**: Upload **OpenCR example source code** to OpenCR before run **processing source code**.
+{: .notice--info}
+
+![](/assets/images/platform/openmanipulator/OpenManipulator_chain_processing_2.png)
 
 # [Friends](#friends)
 
@@ -425,17 +446,38 @@ Gripper Control (parameters : `grip_on`, `grip_off`, `neutral`)
 | **Input Voltage**   | V       | 12                                      |
 | **DOF**             | -       | 4 (3 DOF + 1 End-Effector)              |
 | **Speed(Joint)**    | RPM     | 46                                      |
-| **Weight**          | kg(lb)  | 0.52 (1.14)                             |
-| **Reach**           | mm (in) | 234 (9.21)                              |
+| **Reach**           | mm (in) | 276 (10.87)                             |
 | **Communication**   | -       | TTL (Level Multidrop BUS)               |
 | **Software**        | -       | Dynamixel SDK, Arduino, Processing      |
-| **Main Controller** | -       | Laptop PC, OpenCR                       |
+| **Main Controller** | -       | PC, OpenCR                              |
 
 ### Dimension
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_SCARA_spec_side.png)
 
 ### Hardware Setup
+
+#### Part Lists
+
+|              | Part Name | SCARA | Link
+|---------     |---------- |---------   |
+|**Chassis Parts** |BASE FRAME|1|[Download Link](https://www.thingiverse.com/thing:3069581)|
+|.                 |PEN HOLDER|1|[Download Link](https://www.thingiverse.com/thing:3069581)|
+|.                 |FRM BASE|1|[Download Link](https://www.thingiverse.com/thing:3069581)|
+|.                 |TAP HOLDER|1|[Download Link](https://www.thingiverse.com/thing:3069581)|
+|.                 |FR12_H101_K|4|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2768&GC=GD0B0001)|
+|.                 |FR12_S102_K|3|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2766&GC=GD0B0001)|
+|.                 |HN12_I101|4|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2759&GC=GD0B0006)|
+|**Actuators**     |Dynamixel XM430-W350-T|4|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2923&GC=GD080101)|
+|**Cables**        |CABLE_3P_130MM|3|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2347&GC=GD0B0105&page=2)|
+|.                 |CABLE_3P_240MM|1|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2926&GC=GD0B0105&page=3)|
+|**Miscellaneous** |WB_M2X03|24|[Shop Link](https://us.misumi-ec.com/vona2/detail/221000551286/?Inch=0&CategorySpec=00000070644%3A%3A2%0900000070373%3A%3A3)|
+|.                 |WB_M2_5X4|14|[Shop Link](https://us.misumi-ec.com/vona2/detail/221000551286/?Inch=0&CategorySpec=00000070644%3A%3A2.5%0900000070373%3A%3A8)|
+|.                 |WB_M2_5X06|8|[Shop Link](https://us.misumi-ec.com/vona2/detail/221000551286/?Inch=0&CategorySpec=00000070644%3A%3A2.5%0900000070373%3A%3A3%2C6)|
+|.                 |WB_M2_5X12|2|[Shop Link](https://us.misumi-ec.com/vona2/detail/221000551286/?Inch=0&CategorySpec=00000070644%3A%3A2.5%0900000070373%3A%3A8)|
+|.                 |FHS_M2_5X14|12|[Shop Link](https://us.misumi-ec.com/vona2/detail/221000547315/?Inch=0&CategorySpec=00000071822%3A%3A2.5%0900000071552%3)|
+|.                 |NUT_M2_5(0.45P)|8|[Shop Link](https://us.misumi-ec.com/vona2/detail/110300250540/?Inch=0&CategorySpec=00000070281%3A%3A2.5)|
+
 
 <!-- [Parts of OpenManipulator](https://docs.google.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit#gid=1916070381) -->
 
@@ -447,7 +489,18 @@ Gripper Control (parameters : `grip_on`, `grip_off`, `neutral`)
 
 ### Software Setup
 
-  - **Comming Soon**
+#### OpenCR
+
+Go to `Examples` → `OpenManipulator` → `example` → `Arduino` → `SCARA` → `open_manipulator_SCARA` on Arduino IDE for OpenCR.
+
+#### Processing
+
+Open processing source code file (`OpenCR`>`arduino`>`opencr_arduino`>`opencr`>`libraries`>`OpenManipulator`>`example`>`Processing`>`SCARA`>`SCARA.pde`) on Processing IDE, and Run it.
+
+**NOTE**: Upload **OpenCR example source code** to OpenCR before run **processing source code**.
+{: .notice--info}
+
+![](/assets/images/platform/openmanipulator/OpenManipulator_SCARA_Processing.png)
 
 ### Video
 
@@ -465,27 +518,56 @@ Gripper Control (parameters : `grip_on`, `grip_off`, `neutral`)
 | -------------------      | ------- | --------------------------------------- |
 | **Actuator**             |         | Dynamixel XM430-W350-T                  |
 | **DOF**                  | -       | 3                                       |
-| **Payload With Suction** | g (lb)  | 400 ~ 450 (0.88 ~ 0.99)                 |
+| **Payload With Suction** | g (lb)  | 500 (1.10)                              |
 | **Speed(Joint)**         | rad/sec | 4.82                                    |
-| **Weight**               | kg(lb)  | 0.53 (1.16)                             |
-| **Reach**                | mm (in) | 400 (12.99)                             |
+| **Weight**               | kg(lb)  | 0.55 (1.21)                             |
+| **Reach**                | mm (in) | 350 (13.78)                             |
 | **Communication**        | -       | TTL (Level Multidrop BUS)               |
 | **Software**             | -       | Dynamixel SDK, Arduino, Processing      |
-| **Main Controller**      | -       | Laptop PC, OpenCR                       |
+| **Main Controller**      | -       | PC, OpenCR                              |
 
 ### Dimension
 
-![](/assets/images/platform/openmanipulator/OpenManipulator_Link_spec_side.png)
-
-![](/assets/images/platform/openmanipulator/OpenManipulator_Link_spec_up.png)
+![](/assets/images/platform/openmanipulator/OpenManipulator_Link_spec.png)
 
 ### Hardware Setup
 
-[Parts of OpenManipulator](https://docs.google.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit#gid=1110711693)
+#### Part Lists
 
-  * Items that are painted in **purple** in above link are purchased on ROBOTIS SHOP
-  * Items that are painted in **green** in above link are purchased on shopping mall
-  * Items that are painted in **yellow** in above link are 3D printing parts
+|                   | Part Name                        | SCARA | Link                                                                                                                                                                           |
+|-------------------|----------------------------------|-------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Chassis Parts** | BASE FRAME                       | 1     | [Download Link](https://www.thingiverse.com/thing:3069557)                                                                                                                     |
+| .                 | BASE LINK                        | 1     | [Download Link](https://www.thingiverse.com/thing:3069557)                                                                                                                     |
+| .                 | ROTATION BASE                    | 1     | [Download Link](https://www.thingiverse.com/thing:3069557)                                                                                                                     |
+| .                 | HOLDER A                         | 1     | [Download Link](https://www.thingiverse.com/thing:3069557)                                                                                                                     |
+| .                 | HOLDER B                         | 1     | [Download Link](https://www.thingiverse.com/thing:3069557)                                                                                                                     |
+| .                 | LINK 50                          | 1     | [Download Link](https://www.thingiverse.com/thing:3069557)                                                                                                                     |
+| .                 | LINK 200 A                       | 1     | [Download Link](https://www.thingiverse.com/thing:3069557)                                                                                                                     |
+| .                 | LINK 50 FOR 250                  | 1     | [Download Link](https://www.thingiverse.com/thing:3069557)                                                                                                                     |
+| .                 | LINK 200 FOR 250                 | 1     | [Download Link](https://www.thingiverse.com/thing:3069557)                                                                                                                     |
+| .                 | LINK 200 B                       | 4     | [Download Link](https://www.thingiverse.com/thing:3069557)                                                                                                                     |
+| .                 | TRIANGLE LINK                    | 1     | [Download Link](https://www.thingiverse.com/thing:3069557)                                                                                                                     |
+| .                 | TOOL LINK                        | 1     | [Download Link](https://www.thingiverse.com/thing:3069557)                                                                                                                     |
+| **Actuators**     | Dynamixel XM430-W350-T           | 3     | [Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2923&GC=GD080101)                                                                                        |
+| **Cables**        | CABLE_3P_180MM                   | 1     | [Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2755&GC=GD0B0105&page=2)                                                                                 |
+| .                 | CABLE_3P_240MM                   | 1     | [Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2926&GC=GD0B0105&page=3)                                                                                 |
+| **Miscellaneous** | FHS_M2x3mm                       | 16    | [Shop Link](https://us.misumi-ec.com/vona2/detail/221000547315/?Inch=0&CategorySpec=00000071822%3A%3A2%0900000071552%3A%3A3)                                                   |
+| .                 | FHS_M2x6mm                       | 4     | [Shop Link](https://us.misumi-ec.com/vona2/detail/221000547315/?Inch=0&CategorySpec=00000071822%3A%3A2%0900000071552%3A%3A6)                                                   |
+| .                 | FHS_M2.5x5mm                     | 8     | [Shop Link](https://us.misumi-ec.com/vona2/detail/221000547315/?Inch=0&CategorySpec=00000071822%3A%3A2.5%0900000071552%3A%3A5)                                                 |
+| .                 | FHS_M2.5x10mm                    | 4     | [Shop Link](https://us.misumi-ec.com/vona2/detail/221000547315/?Inch=0&CategorySpec=00000071822%3A%3A2.5%0900000071552%3A%3A10)                                                |
+| .                 | FHS_M3x10mm                      | 4     | [Shop Link](https://us.misumi-ec.com/vona2/detail/221000547315/?Inch=0&CategorySpec=00000071822%3A%3A2.5%0900000071552%3A%3A10)                                                |
+| .                 | NUT_M2                           | 4     | [Shop Link](https://us.misumi-ec.com/vona2/detail/110300250540/?Inch=0&CategorySpec=00000070281%3A%3A2)                                                                        |
+| .                 | NUT_M2.5                         | 4     | [Shop Link](https://us.misumi-ec.com/vona2/detail/110300250540/?Inch=0&CategorySpec=00000070281%3A%3A2.5)                                                                      |
+| .                 | PSCBRJ6-9                        | 18    | [Shop Link](https://us.misumi-ec.com/vona2/detail/110302637270/?HissuCode=PSCBRJ6-9&PNSearch=PSCBRJ6-9&KWSearch=PSCBRJ6-9&searchFlow=results2type)                             |
+| .                 | MSRB6-1.0                        | 40    | [Shop Link](https://us.misumi-ec.com/vona2/detail/110100142970/?HissuCode=MSRB6-1.0&PNSearch=MSRB6-1.0&KWSearch=MSRB6-1.0&searchFlow=results2type)                             |
+| .                 | NSFMR6-38                        | 1     | [Shop Link](https://jp.misumi-ec.com/vona2/detail/110300086920/?HissuCode=NSFMR6-38&PNSearch=NSFMR6-38&KWSearch=NSFMR6-38&searchFlow=results2products)                         |
+| .                 | NSFMR6-42                        | 1     | [Shop Link](https://jp.misumi-ec.com/vona2/detail/110300086920/?HissuCode=NSFMR6-42&PNSearch=NSFMR6-42&KWSearch=NSFMR6-42&searchFlow=results2products)                         |
+| .                 | NSFMR6-24                        | 6     | [Shop Link](https://jp.misumi-ec.com/vona2/detail/110300086920/?HissuCode=NSFMR6-24&PNSearch=NSFMR6-24&KWSearch=NSFMR6-24&searchFlow=results2products)                         |
+| .                 | Ball Bearing(O.D 10mm / I.D 6mm) | 20    | [Shop Link](https://us.misumi-ec.com/vona2/detail/221000531116/?CategorySpec=unitType%3a%3a1%0900000044017%3a%3amig00000001446936%0900000043985%3a%3amig00000001455783&Inch=0) |
+
+<!-- [Parts of OpenManipulator](https://docs.google.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit#gid=1110711693) -->
+
+#### 3D Printed Parts
 
 CAD Files ([Onshape](http://www.robotis.com/service/download.php?no=692), [Thingiverse](https://www.thingiverse.com/thing:3069557))
 
@@ -493,35 +575,22 @@ CAD Files ([Onshape](http://www.robotis.com/service/download.php?no=692), [Thing
 
 ### Software Setup
 
-  **Software Download & Setup**
+#### OpenCR
 
-  Download the software and set up.
-  - [Arduino IDE for using OpenCR](/docs/en/parts/controller/opencr10/#arduino-ide)
-  - [Download Processing](https://processing.org/download/)
+Go to `Examples` → `OpenManipulator` → `example` → `Arduino` → `Link` → `open_manipulator_link` on Arduino IDE for OpenCR.
 
-  **Example Source Codes**
+#### Processing
 
-  Get example source codes.
-  - OpenCR
+Open processing source code file (`OpenCR`>`arduino`>`opencr_arduino`>`opencr`>`libraries`>`OpenManipulator`>`example`>`Processing`>`Link`>`Link.pde`) on Processing IDE, and Run it.
 
-  Go to `Examples` → `OpenManipulator` → `example` → `Arduino` → `Link` → `open_manipulator_link` on Arduino IDE for OpenCR.
+**NOTE**: Upload **OpenCR example source code** to OpenCR before run **processing source code**.
+{: .notice--info}
 
-  Upload the example source code to OpenCR.
-
-  ![](/assets/images/platform/openmanipulator/OpenManipulator_Link_Arduino.png)
-
-  - Processing
-
-  Open processing source code file (`OpenCR`>`arduino`>`opencr_arduino`>`opencr`>`libraries`>`OpenManipulator`>`example`>`Processing`>`Link`>`Link.pde`) on Processing IDE, and Run it.
-
-  **NOTE**: Upload **OpenCR example source code** to OpenCR before run **processing source code**.
-  {: .notice--info}
-
-  ![](/assets/images/platform/openmanipulator/OpenManipulator_link_Processing.png)
+![](/assets/images/platform/openmanipulator/OpenManipulator_Link_Processing.png)
 
 ### Video
 
-  - **Comming Soon**
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WR9_1AheOok" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## [OpenManipulator Planar](#openmanipulator-planar)
 
