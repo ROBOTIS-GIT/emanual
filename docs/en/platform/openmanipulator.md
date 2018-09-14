@@ -518,19 +518,17 @@ Open processing source code file (`OpenCR`>`arduino`>`opencr_arduino`>`opencr`>`
 | -------------------      | ------- | --------------------------------------- |
 | **Actuator**             |         | Dynamixel XM430-W350-T                  |
 | **DOF**                  | -       | 3                                       |
-| **Payload With Suction** | g (lb)  | 400 ~ 450 (0.88 ~ 0.99)                 |
+| **Payload With Suction** | g (lb)  | 500 (1.10)                              |
 | **Speed(Joint)**         | rad/sec | 4.82                                    |
-| **Weight**               | kg(lb)  | 0.53 (1.16)                             |
-| **Reach**                | mm (in) | 400 (12.99)                             |
+| **Weight**               | kg(lb)  | 0.55 (1.21)                             |
+| **Reach**                | mm (in) | 350 (13.78)                             |
 | **Communication**        | -       | TTL (Level Multidrop BUS)               |
 | **Software**             | -       | Dynamixel SDK, Arduino, Processing      |
 | **Main Controller**      | -       | PC, OpenCR                              |
 
 ### Dimension
 
-![](/assets/images/platform/openmanipulator/OpenManipulator_Link_spec_side.png)
-
-![](/assets/images/platform/openmanipulator/OpenManipulator_Link_spec_up.png)
+![](/assets/images/platform/openmanipulator/OpenManipulator_Link_spec.png)
 
 ### Hardware Setup
 
