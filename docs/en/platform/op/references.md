@@ -60,15 +60,15 @@ sidebar:
 |Operation temperature|0&deg;C to 70&deg;C|
 |Storage temperature|-40&deg;C to 85&deg;C|
 |Relative humidity	|10% to 90% (operation)<br />5% to 95% (storage)|
- 
+
 You may download CompuLab's reference guide with detailed specifications [here](http://sourceforge.net/projects/darwinop/files/Hardware/Electronics/Main%20Controller/DARwIn-OP_Main%20Controller%20Reference%20Guide.pdf/download).
 You can also get information on the [speaker](http://sourceforge.net/projects/darwinop/files/Hardware/Electronics/Main%20Controller/Datasheets/Sound/DARwIn-OP_Speaker.pdf/download), [microphones](http://sourceforge.net/projects/darwinop/files/Hardware/Electronics/Main%20Controller/Datasheets/Sensor/DARwIn-OP_Mic.pdf/download), and [camera](http://www.logitech.com/en-us/webcam-communications/webcams/devices/6600).
- 
+
 - [Sub Controller (CM-730)](#sub-controller)
   - STMicroelectronics 32F103RE ARM Cortex 32-bit CPU (clocked @ 72MHz)
   - Actuator Interface (TTL or RS-485 (5x) each)
   - Converters (USB-to-Serial, ADC)
- 
+
 - Actuator (Dynamixel [MX-28])
   - Stall torque 24kgf.cm @ 12V
   - Maxon RE-Max customized DC motor
@@ -81,12 +81,12 @@ You can also get information on the [speaker](http://sourceforge.net/projects/da
 - Interface
   - 3 buttons
   - 7 LED's (2EA : 15-bit RGB, user-programmable)
- 
+
 - Sensors
   - IMUs (3-axis accelerometers, 3-axis gyroscope, both intrgrated into sub controller)
   - Image (2MP Logitech C905) HD Camera
   - (OPTION) Force: 4 FSR per foot
- 
+
 - Battery (LiPo)
   - Voltage : 11.1V
   - Capacity : 1000 mAh
@@ -111,13 +111,13 @@ You can also get information about the  [gyroscope](http://sourceforge.net/proje
 ##### How to convert TTL to RS485
 
 ![](/assets/images/platform/op/op_255.jpg)
- 
+
 Simply apply the 2 changes below to change the comm. method.
- 
+
 - Yellow Rectangle : Change location of resistance
   - RS24 Short : 3P
   - R25 Short : 4P
- 
+
 - Red Rectangle : Must change connector.
   - Not sold separately by ROBOTIS.
 
@@ -140,7 +140,7 @@ http://support.robotis.com/en/techsupport_eng.htm#product/dynamixel/dxl_connecto
 |Dimensions|80.0mm x 75.0mm x 20.0mm|
 |Operation temperature|-65&deg;C to +80&deg;C|
 |Weight|51g|
- 
+
 ##### Control Table
 Control Table consists of data regarding the current status and operation of CM-730. The user can control CM-730 by changing data of Control Table via Instruction packet.
 
@@ -195,46 +195,46 @@ In the Control table, some data share the same name, but they are attached with 
 |47 (0X2F)|ACC_Y(H)|Accelerometer Y-axis high byte|R|-|
 |48 (0X30)|ACC_Z(L)|Accelerometer Z-axis low byte|R|-|
 |49 (0x31)|ACC_Z(H)|Accelerometer Z-axis high byte|R|-|
-|50 (0X32)|Present Voltage|Current Voltage|R|-| 
-|51 (0X33)|MIC 1 (L)|Mic 1 low byte|R|-| 
-|52(0x34)|MIC 1 (H)|Mic 1 high byte|R|-| 
-|53(0x35)|ADC 2(L)|ADC channel 2 low byte|R|-| 
-|54(0x36)|ADC 2(H)|ADC channel 2 high byte|R|-| 
+|50 (0X32)|Present Voltage|Current Voltage|R|-|
+|51 (0X33)|MIC 1 (L)|Mic 1 low byte|R|-|
+|52(0x34)|MIC 1 (H)|Mic 1 high byte|R|-|
+|53(0x35)|ADC 2(L)|ADC channel 2 low byte|R|-|
+|54(0x36)|ADC 2(H)|ADC channel 2 high byte|R|-|
 |55(0x37)|ADC 3(L)|ADC channel 3 low byte|R|-|
 |56(0x38)|ADC 3(H)|ADC channel 3 high vyte|R|-|
-|57(0x39)|ADC 4(L)|ADC channel 4 low byte|R|-| 
-|58(0x3A)|ADC 4(H)|ADC channel 4 high byte|R|-| 
-|59(0x3B)|ADC 5(L)|ADC channel 5 low byte|R|-| 
+|57(0x39)|ADC 4(L)|ADC channel 4 low byte|R|-|
+|58(0x3A)|ADC 4(H)|ADC channel 4 high byte|R|-|
+|59(0x3B)|ADC 5(L)|ADC channel 5 low byte|R|-|
 |60(0x3C)|ADC 5(H)|ADC channel 5 high byte|R|-|
-|61(0x3D)|ADC 6(L)|ADC channel 6 low byte|R|-| 
+|61(0x3D)|ADC 6(L)|ADC channel 6 low byte|R|-|
 |62(0x3E)|ADC 6(H)|ADC channel 6 high byte|R|-|
 |63(0x3F)|ADC 7(L)|ADC channel 7 low byte|R|-|
-|64(0x40)|ADC 7(H)|ADC channel 7 high byte|R|-| 
-|65(0x41)|ADC 8(L)|ADC channel 8 low byte|R|-| 
+|64(0x40)|ADC 7(H)|ADC channel 7 high byte|R|-|
+|65(0x41)|ADC 8(L)|ADC channel 8 low byte|R|-|
 |66(0x42)|ADC 8(H)|ADC channel 8 high byte|R|-|
-|67(0x43)|MIC 2 (L)|Mic 2 low byte|R|-| 
-|68(0x44)|MIC 2 (H)|Mic 2 high byte|R|-| 
-|69(0x45)|ADC 10(L)|ADC channel 10 low byte|R|-| 
+|67(0x43)|MIC 2 (L)|Mic 2 low byte|R|-|
+|68(0x44)|MIC 2 (H)|Mic 2 high byte|R|-|
+|69(0x45)|ADC 10(L)|ADC channel 10 low byte|R|-|
 |70(0x46)|ADC 10(H)|ADC channel 10 high byte|R|-|
-|71(0x47)|ADC 11(L)|ADC channel 11 low byte|R|-| 
-|72(0x48)|ADC 11(H)|ADC channel 11 high byte|R|-| 
+|71(0x47)|ADC 11(L)|ADC channel 11 low byte|R|-|
+|72(0x48)|ADC 11(H)|ADC channel 11 high byte|R|-|
 |73(0x49)|ADC 12(L)|ADC channel 12 low byte|R|-|
-|74(0x4A)|ADC 12(H)|ADC channel 12 high byte|R|-| 
+|74(0x4A)|ADC 12(H)|ADC channel 12 high byte|R|-|
 |75(0x4B)|ADC 13(L)|ADC channel 13 low byte|R|-|
 |76(0x4C)|ADC 13(H)|ADC channel 13 high byte|R|-|
-|77(0x4D)|ADC 14(L)|ADC channel 14 low byte|R|-| 
+|77(0x4D)|ADC 14(L)|ADC channel 14 low byte|R|-|
 |78(0x4E)|ADC 14(H)|ADC channel 14 high byte|R|-|
-|79(0x4F)|ADC 15(L)|ADC channel 15 low byte|R|-| 
+|79(0x4F)|ADC 15(L)|ADC channel 15 low byte|R|-|
 |80(0x50)|ADC 15(H)|ADC channel 15 high byte|R|-|
 
 ##### Address Function Help
 
 ###### Model Number
 Represents the Model Number.
- 
+
 ###### Firmware Version
 Represents the firmware version.
- 
+
 ###### ID
 Is a unique number to identify Dynamixel.  
 Values range from 0 (0x00) to 253 (0xFD), Value 254 (0xFE) is used as the Broadcast ID.  
@@ -242,7 +242,7 @@ If the Broadcast ID is used to transmit Instruction Packet, then it can command 
 
 **NOTE** : Please be careful not to duplicate the ID of connected Dynamixels.
 {: .notice}
- 
+
 ###### Baud Rate
 Represents the communication speed. 0 (0x00) to 254 (0xFE) can be used for it. This speed is calculated by using the below formula.  
 Speed(BPS) = 2000000/(Data+1)
@@ -261,12 +261,12 @@ Speed(BPS) = 2000000/(Data+1)
 
 **NOTE** : Maximum Baud Rate error of 3% is within the tolerance of UART communication.
 {: .notice}
- 
+
 ###### Return Delay Time
 Is the delay time per data value that takes from the transmission of Instruction packet until the return of Status packet.  
 0 (0x00) to 254 (0xFE) can be used. The delay time per data value is 2 microseconds (usec).  
 If the data value is delayed by 10, 20 usec the initial value is 250 (0xFA) (i.e., 0.5 msec).
- 
+
 ###### Status Return Level
 Decides how to return Status packet. There are three possibilities:
 
@@ -285,7 +285,7 @@ Decides how to return Status packet. There are three possibilities:
 |:---:|:---:|
 |0|Turn off the power of all Dynamixels connected to CM-730.|
 |1|Turn on the power of all Dynamixels connected to CM-730.|
- 
+
 ###### LED Pannel
 
 |BIT|7 ~ 3 |2|1|0|
@@ -295,7 +295,7 @@ Decides how to return Status packet. There are three possibilities:
 If each bit is SET, applicable LED lights up.  
 If each bit is RESET, applicable LED goes off.  
 EX) When the LED Panel = 3 (00000101), the LED4 and LED2 light up.
- 
+
 ###### LED5 / LED6
 
 |BIT|15|14 ~ 10|9 ~ 5|4 ~ 0|
@@ -304,7 +304,7 @@ EX) When the LED Panel = 3 (00000101), the LED4 and LED2 light up.
 
 LED HEAD/ LED EYE is 3 color LED. It can represent the value of 32 steps by colors.  
 It can be represent by controling the value of light by colors.
- 
+
 ###### BUTTON STATUS
 
 |BIT|7 ~ 2|1|0|
@@ -314,7 +314,7 @@ It can be represent by controling the value of light by colors.
 It is the value which represents the state of buttons.  
 If the bit is SET, it represents that the button is pressed.  
 If the bit is RESET, it represents that the button isn't pressed.
- 
+
 ###### GYRO / ACC
 
 The following picture is the direction of axis at CM-730.  
@@ -323,44 +323,44 @@ The Gyroscope and Accelerometer is 10mm distant respectively from the central ax
 ![](/assets/images/platform/op/op_256.jpg)
 
 > The positions of central axis and sensor at Dawin
- 
+
 ![](/assets/images/platform/op/op_257.jpg)
 
 > Gyroscope
- 
+
 ![](/assets/images/platform/op/op_258.jpg)
 
 > Accelerometer
- 
+
 |![](/assets/images/platform/op/op_259.jpg)|![](/assets/images/platform/op/op_260.jpg)|
 |:---:|:---:|
 |The Gyroscope axis in the DARWIN-OP|The Accelerometer axis in DARWIN-OP|
- 
- 
+
+
 ###### GYRO_X, GYRO_Y, GYRO_Z
 They represent the angular velocity values of X-axis, Y-axis, Z-axis respectively.
- 
+
 The observable maximum velocity is -500DPS ~ 500DPS.  
 The following graph shows the process that angular velocity represents to value in reality.
 
 ![](/assets/images/platform/op/op_261.jpg)
- 
+
 ###### ACC_X, ACC_Y, ACC_Z
 They represent the acceleration values of X-axis, Y-axis, Z-axis respectively.
- 
+
 The observable maximum velocity is -4g ~ +4g.  
 The following graph shows the process that acceleration represents to value in reality.
- 
+
 ![](/assets/images/platform/op/op_262.jpg)
- 
+
 ###### PRESENT VOLTAGE
 Present (input) voltage.  
 This value is 10 times larger than the actual voltage. For example, when 10V is supplied, the data value is 100 (0x64)
- 
+
 ###### MIC 1 , MIC 2
 They are the wave values of MIC on the ears at HEAD PCB.  
 It is the value of ADC, and its range is 0~1023.
- 
+
 ###### ADC 2 ~ ADC15
 They are ADC values of ADC channel connected external port(J8).  
 CM-730 has ADC of 10BIT RESOLUTION.  
@@ -380,7 +380,7 @@ Its range is 0~1023
 |Communication Speed|7,843bps ~ 3 Mbps|
 |Feedback|Position, Temperature, Load, Input Voltage, etc.|
 |Standby current|50 mA|
- 
+
 ##### Control Table
 Control Table consists of data regarding the current status and operation of Dynamixel. The user can control Dynamixel by changing data of Control Table via Instruction packet.
 
@@ -435,10 +435,10 @@ In the Control table, some data share the same name, but they are attached with 
 
 ###### Model Number
 Represents the Model Number.
- 
+
 ###### Firmware Version
 Represents the firmware version.
- 
+
 ###### ID
 Is a unique number to identify Dynamixel.  
 Values range from 0 (0x00) to 253 (0xFD), Value 254 (0xFE) is used as the Broadcast ID.  
@@ -446,10 +446,10 @@ If the Broadcast ID is used to transmit Instruction Packet, then it can command 
 
 when it's searched as Unknown Device, change the baudrate to 1(1000000).  
 Connect with DARWIN-OP after setting the ID as 111 for the right foot and 112 for the left.
- 
+
 **NOTE** : Please be careful not to duplicate the ID of connected Dynamixels.
 {: .notice}
- 
+
 ###### Baud Rate
 Represents the communication speed. 0 (0x00) to 254 (0xFE) can be used for it. This speed is calculated by using the below formula.  
 Speed(BPS) = 2000000/(Data+1)
@@ -468,12 +468,12 @@ Speed(BPS) = 2000000/(Data+1)
 
 **NOTE** : Maximum Baud Rate error of 3% is within the tolerance of UART communication.
 {: .notice}
- 
+
 ###### Return Delay Time
 Is the delay time per data value that takes from the transmission of Instruction packet until the return of Status packet.  
 0 (0x00) to 254 (0xFE) can be used. The delay time per data value is 2 microseconds (usec).  
 If the data value is delayed by 10, 20 usec the initial value is 250 (0xFA) (i.e., 0.5 msec).
- 
+
 ###### Status Return Level
 Decides how to return Status packet. There are three possibilities:
 
@@ -492,27 +492,27 @@ Decides how to return Status packet. There are three possibilities:
 |:---:|:---:|
 |0|Turns LED off|
 |1|Turns LED on|
- 
+
 |![](/assets/images/platform/op/op_fsr.jpg)|
 |:---:|
 |Diagram 1|
- 
+
 ###### FSR1,FSR2,FSR3,FSR4
 FSR sensor data. `Diagram 1` shows the location of each sensor.  
 Value range is 0 ~ 65535. Each value has 1/1000 N units.  
 For example, FSR1 has a load of 9.8N(1kgf); the value of FSR1 is 9800.  
 The smallest measurement load is 0.493N.  
 The measurement range is 0.493 N ~ 65.535N.  
- 
+
 ###### FSR_Central_X, FSR_Central_Y
 DARWIN-OP's load is at the center of the foot.  
 Value range is 0 ~ 254.  
 When no load is present values will read 255.  
 `Diagram 1` shows of the center point of each foot.
- 
+
 ###### Present Voltage
 Current input voltage. This value is 10 times larger than the actual voltage. For example, when 10V is supplied the data value is 100 (0x64).
- 
+
 ###### Registered Instruction
 
 |Value|Meaning|
@@ -522,14 +522,14 @@ Current input voltage. This value is 10 times larger than the actual voltage. Fo
 
 **NOTE** : If **ACTION** command is executed, the value is changed into 0.
 {: .notice}
- 
+
 ###### Lock
 
 |Value|Meaning|
 |:---:|:---:|
 |0|EEPROM area can be modified|
 |1|EEPROM area cannot be modified|
- 
+
 **CAUTION** : If Lock is set to 1, the power must be turned off and then turned on again to change into 0.
 {: .notice--warning}
 
@@ -551,7 +551,7 @@ Current input voltage. This value is 10 times larger than the actual voltage. Fo
 - Microphone with Logitech® RightSound™ technology
 - Hi-Speed USB 2.0 certified
 - Output : MJPG, YUYV
- 
+
 #### Dimensions
 
 DARWIN-OP dimensions illustrated in both SI and Imperial units.
@@ -561,9 +561,9 @@ Total height: 454.5mm (17.90in)
 
 - `Download PDF` [Dimensions](http://sourceforge.net/projects/darwinop/files/Hardware/Mechanics/Physical%20Information/DARwIn-OP_Dimension.pdf/download)
 - `Download ZIP` [3D CAD Files](https://sourceforge.net/projects/darwinop/files/Hardware/Mechanics/Physical%20Information/DARwIn%20OP%20Part%20Files.zip/download)
-- `Download PDF` [Assembly Manual](http://ncu.dl.sourceforge.net/project/darwinop/Hardware/Mechanics/Physical%20Information/DARwIn%20OP%20Assembly%20Manual.pdf)
-- `Download PDF` [Wiring Manual](http://ncu.dl.sourceforge.net/project/darwinop/Hardware/Mechanics/Physical%20Information/DARwIn%20OP%20Wiring%20Manual.pdf)
-- `Download PDF` [Fabrication Manual](http://ncu.dl.sourceforge.net/project/darwinop/Hardware/Mechanics/Physical%20Information/DARwIn%20OP%20Fabrication%20Manual.pdf)
+- `Download PDF` [Assembly Manual](http://www.robotis.com/service/download.php?no=776)
+- `Download PDF` [Wiring Manual](http://www.robotis.com/service/download.php?no=778)
+- `Download PDF` [Fabrication Manual](http://www.robotis.com/service/download.php?no=777)
 
 ![](/assets/images/platform/op/op_dimension.jpg)
 
@@ -591,7 +591,7 @@ Every DARWIN-OP robot comes equipped with a USB thumb drive loaded with factory-
 Please visit the link periodically for updates
 
 `Download` [Recovery Software](https://sourceforge.net/projects/darwinop/files/Software/Main%20Controller/Recovery%20USB/)
- 
+
 ##### Source Code
 
 You can update the source code for DARWINOP via Subversion.  
@@ -608,7 +608,7 @@ The source code also contains the color cards.
 ### [Framework Release Note](#framework-release-note)
 
 Framework source code download : [SourceForge DARWIN-OP framework](https://sourceforge.net/projects/darwinop/files/Software/Main%20Controller/Source%20Code/)
- 
+
 #### Ver 1.6.0 - 2013.04.11
 
 - New Additions
@@ -620,7 +620,7 @@ Framework source code download : [SourceForge DARWIN-OP framework](https://sourc
   - CM730, Image, Imgprocess, LinuxCamera, JointData, Action, Kinematics added Webots functionality
   - MX28.h values now reside in MX28.cpp
   - Camera.h values now reside in Camera.cpp
- 
+
 #### Ver 1.5.0 - 2012.03.19
 
 - New Additions
@@ -629,7 +629,7 @@ Framework source code download : [SourceForge DARWIN-OP framework](https://sourc
 
 - Modifications
   - LinuxMotionTimer has been changed to use clock_nanosleep function.
- 
+
 #### Ver 1.4.0 - 2012.01.16
 
 - Modifications
@@ -637,7 +637,7 @@ Framework source code download : [SourceForge DARWIN-OP framework](https://sourc
   - Stand-up motion changed.
   - Cannot change the camera gain/exposure value from a web page bug fixed.
   - offset tuner 'set' command bug fixed.
- 
+
 #### Ver 1.3.0 - 2011.09.20
 
 - New Additions
@@ -650,7 +650,7 @@ Framework source code download : [SourceForge DARWIN-OP framework](https://sourc
   - dxl_monitor : can change baudrate (control table addr 4)
   - Get-up motion changed.
   - read_write tutorial : left arm P gain value changed. (1 -> 8)
- 
+
 #### Ver 1.2.0 - 2011.06.01
 
 - New Additions
@@ -669,7 +669,7 @@ Framework source code download : [SourceForge DARWIN-OP framework](https://sourc
   - walk_tuner : linux terminal backspace bug fixed.
   - read_write : at the start, torque off the right arm.
   - firmware installer : seperate firmware of the controller and actuator
- 
+
 #### Ver 1.1.0 - 2011.04.08
 
 - New Additions
@@ -683,7 +683,7 @@ Framework source code download : [SourceForge DARWIN-OP framework](https://sourc
   - action_editor : command line first char backspace bug fixed. / save command bug fixed.
   - walk_tuner : command line first char backspace bug fixed.
   - some minor bug fixed.
- 
+
 #### Ver 1.0.1 - 2011.03.28
 
 - Modifications
@@ -693,7 +693,7 @@ Framework source code download : [SourceForge DARWIN-OP framework](https://sourc
   - Some walking parameters changed.
   - action_editor : page 255 access problem fixed.
   - Walking class : Y move amplitude bug fixed.
- 
+
 #### Ver 1.0.0 - 2011.02.01
 
 - First Release
@@ -701,7 +701,7 @@ Framework source code download : [SourceForge DARWIN-OP framework](https://sourc
 ### [CM-730 Firmware Release Note](#cm-730-firmware-release-note)
 
 CM-730 Firmware source code download : [SourceForge CM730 Firmware](https://sourceforge.net/projects/darwinop/files/Software/Sub%20Controller/)
- 
+
 #### Ver 19 (0x13) - 2011.08.26
 
 - New Additions
@@ -713,7 +713,7 @@ CM-730 Firmware source code download : [SourceForge CM730 Firmware](https://sour
   - Mic. Control table address changed. (67 -> 53)
   - Battery alarm bug fixed.
   - Read / Bulk Read Instruction process routine optimized.
- 
+
 #### Ver 18 (0x12) - 2011.04.26
 
 - New Additions
@@ -721,7 +721,7 @@ CM-730 Firmware source code download : [SourceForge CM730 Firmware](https://sour
 
 - Modifications
   - LED bug fixed.
- 
+
 #### Ver 17 (0x11) - 2011.04.08
 
 - New Additions
@@ -729,7 +729,7 @@ CM-730 Firmware source code download : [SourceForge CM730 Firmware](https://sour
 
 - Modifications
   - USB recognition method changed (interrupt -> polling)
- 
+
 #### Ver 16 (0x10) - 2011.02.28
 
 - First Release
@@ -737,7 +737,7 @@ CM-730 Firmware source code download : [SourceForge CM730 Firmware](https://sour
 ### [MX-28 Firmware Release Note](#mx-28-firmware-release-note)
 
 Dynamixel firmware is **NOT** an open source software.
- 
+
 #### Ver 30 (0x1E) - 2012.01.05
 
 - New Additions
@@ -748,18 +748,18 @@ Dynamixel firmware is **NOT** an open source software.
 - Modifications
   - CPU main clock was updated to 72MHz.
   - fixed EEPROM bug.
- 
+
 #### Ver 29 (0x1D) - 2011.05.18
 
 - Modifications
   - Wheel mode bug fixed.
- 
+
 #### Ver 28 (0x1C) - 2011.05.02
 
 - Modifications
   - PID Resolution 4 times increase.
   - P gain default value changed. (8 -> 32)
- 
+
 #### Ver 27 (0x1B) - 2011.04.11
 
 - New Additions
@@ -767,7 +767,7 @@ Dynamixel firmware is **NOT** an open source software.
 
 - Modifications
   - Resolution changed from 1024 to 4096.
- 
+
 #### Ver 26 (0x1A) - 2011.02.28
 
 - First Release
@@ -775,7 +775,7 @@ Dynamixel firmware is **NOT** an open source software.
 ### [FSR Firmware Release Note](#fsr-firmware-release-note)
 
 FSR firmware is **NOT** an open source software.
- 
+
 #### Ver 17 (0x11) - 2012.03.08
 
 - First Release
@@ -825,7 +825,7 @@ FSR firmware is **NOT** an open source software.
   - Ensure DARWIN-OP'c PC has internet access. On a command line type
   - sudo apt-get install emacs
   - Tutorials : http://www.gnu.org/s/emacs/tour/
- 
+
 - gedit
   - GUI-based (either connected via remote desktop or directly via HDMI/DVI display).
   - Just like VI; gedit is incorporated with DARWIN-OP. gedit is useful for users that want a GUI-based text editor and is just as useful for writing code.
@@ -884,9 +884,9 @@ FSR firmware is **NOT** an open source software.
 #### InnoRobo 2011 Lyon, France
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/guCyCcRSXXQ" frameborder="0" allowfullscreen></iframe>
- 
+
 > Recorded by a visitor
- 
+
 #### RoboCup 2011 (Istanbul, Turkey)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/JZMbX-Ha4kw" frameborder="0" allowfullscreen></iframe>
@@ -896,11 +896,11 @@ FSR firmware is **NOT** an open source software.
 <iframe width="560" height="315" src="https://www.youtube.com/embed/XLKKbz2mNyo" frameborder="0" allowfullscreen></iframe>
 
 > Team DARwin becomes world champion (final).
- 
+
 #### Popular Science
 
 http://www.popsci.com/technology/article/2011-07/video-darwin-op-wants-tecate-not-bud-light
- 
+
 #### Other Third Party Clips
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/1WEgNQjL66g" frameborder="0" allowfullscreen></iframe>

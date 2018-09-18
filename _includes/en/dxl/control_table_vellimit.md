@@ -1,8 +1,8 @@
-This value indicates maximum velocity of Goal Velocity(104) and Profile Velocity(112). For more details, please refer to the Profile Velocity(112).
+This indicates the maximum value of Goal Velocity(104). For more details, please refer to [Goal Velocity(104)](#goal-velocity104).
 
-|Unit|Value Range|
-| :---: | :---: |
-|0.229rpm|0 ~ 1,023|
+|   Unit   | Value Range |
+|:--------:|:-----------:|
+| 0.229rpm |  0 ~ 1,023  |
 
-**NOTE**: The default value of Velocity Limit has been decreased since Firmware V42.
+**NOTE**: The default value of Velocity Limit(44) has been decreased since Firmware V42.
 {: .notice}

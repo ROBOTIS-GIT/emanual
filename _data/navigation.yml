@@ -3837,9 +3837,6 @@ xh430-v210:
         - title: "Current Limit(38)"
           titlekr: "Current Limit(38)"
           url: /dxl/x/xh430-v210/#current-limit38
-        - title: "Acceleration Limit(40)"
-          titlekr: "Acceleration Limit(40)"
-          url: /dxl/x/xh430-v210/#acceleration-limit40
         - title: "Velocity Limit(44)"
           titlekr: "Velocity Limit(44)"
           url: /dxl/x/xh430-v210/#velocity-limit44
@@ -4072,9 +4069,6 @@ xh430-v350:
         - title: "Current Limit(38)"
           titlekr: "Current Limit(38)"
           url: /dxl/x/xh430-v350/#current-limit38
-        - title: "Acceleration Limit(40)"
-          titlekr: "Acceleration Limit(40)"
-          url: /dxl/x/xh430-v350/#acceleration-limit40
         - title: "Velocity Limit(44)"
           titlekr: "Velocity Limit(44)"
           url: /dxl/x/xh430-v350/#velocity-limit44
@@ -4307,9 +4301,6 @@ xh430-w210:
         - title: "Current Limit(38)"
           titlekr: "Current Limit(38)"
           url: /dxl/x/xh430-w210/#current-limit38
-        - title: "Acceleration Limit(40)"
-          titlekr: "Acceleration Limit(40)"
-          url: /dxl/x/xh430-w210/#acceleration-limit40
         - title: "Velocity Limit(44)"
           titlekr: "Velocity Limit(44)"
           url: /dxl/x/xh430-w210/#velocity-limit44
@@ -4542,9 +4533,6 @@ xh430-w350:
         - title: "Current Limit(38)"
           titlekr: "Current Limit(38)"
           url: /dxl/x/xh430-w350/#current-limit38
-        - title: "Acceleration Limit(40)"
-          titlekr: "Acceleration Limit(40)"
-          url: /dxl/x/xh430-w350/#acceleration-limit40
         - title: "Velocity Limit(44)"
           titlekr: "Velocity Limit(44)"
           url: /dxl/x/xh430-w350/#velocity-limit44
@@ -4923,9 +4911,6 @@ xm430-w210:
         - title: "Current Limit(38)"
           titlekr: "Current Limit(38)"
           url: /dxl/x/xm430-w210/#current-limit38
-        - title: "Acceleration Limit(40)"
-          titlekr: "Acceleration Limit(40)"
-          url: /dxl/x/xm430-w210/#acceleration-limit40
         - title: "Velocity Limit(44)"
           titlekr: "Velocity Limit(44)"
           url: /dxl/x/xm430-w210/#velocity-limit44
@@ -5158,9 +5143,6 @@ xm430-w350:
         - title: "Current Limit(38)"
           titlekr: "Current Limit(38)"
           url: /dxl/x/xm430-w350/#current-limit38
-        - title: "Acceleration Limit(40)"
-          titlekr: "Acceleration Limit(40)"
-          url: /dxl/x/xm430-w350/#acceleration-limit40
         - title: "Velocity Limit(44)"
           titlekr: "Velocity Limit(44)"
           url: /dxl/x/xm430-w350/#velocity-limit44
@@ -5393,9 +5375,6 @@ xm540-w150:
         - title: "Current Limit(38)"
           titlekr: "Current Limit(38)"
           url: /dxl/x/xm540-w150/#current-limit38
-        - title: "Acceleration Limit(40)"
-          titlekr: "Acceleration Limit(40)"
-          url: /dxl/x/xm540-w150/#acceleration-limit40
         - title: "Velocity Limit(44)"
           titlekr: "Velocity Limit(44)"
           url: /dxl/x/xm540-w150/#velocity-limit44
@@ -5634,9 +5613,6 @@ xm540-w270:
         - title: "Current Limit(38)"
           titlekr: "Current Limit(38)"
           url: /dxl/x/xm540-w270/#current-limit38
-        - title: "Acceleration Limit(40)"
-          titlekr: "Acceleration Limit(40)"
-          url: /dxl/x/xm540-w270/#acceleration-limit40
         - title: "Velocity Limit(44)"
           titlekr: "Velocity Limit(44)"
           url: /dxl/x/xm540-w270/#velocity-limit44
