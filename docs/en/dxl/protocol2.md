@@ -317,6 +317,8 @@ The field that indicates the processing result of Instruction Packet
 
 ### Description
   - Instruction that resets the Control Table to its initial factory default settings.
+  - In case of when **Packet ID** is a Broadcast ID `0xFE` and **Option** is Reset All `0xFF`, Factory Reset Instruction(0x06) will **NOT** be activated.
+    - This feature is applied from MX(2.0) FW42, X-series FW42 or above.
 
 ### Parameters
 

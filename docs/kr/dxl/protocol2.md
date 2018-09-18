@@ -320,7 +320,7 @@ Instruction Packet 의 처리 결과를 나타냄
 ### 설명
 - Control Table 을 공장 출하 시의 초기값으로 되돌리는 Instruction
 - Packet ID가 Broadcast ID(0xFE)이고 Option이 Reset all value(0xFF)일 경우, Factory Reset Instruction(0x06)은 동작하지 않음
-- 특이사항 : MX(2.0) FW42 이상, Dynamixel X 시리즈 FW42 이상부터 지원
+  - MX(2.0) FW42, Dynamixel X 시리즈 FW42 이상부터 적용
 
 ### Parameters
 
