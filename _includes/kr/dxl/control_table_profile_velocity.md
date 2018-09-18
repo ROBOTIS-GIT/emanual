@@ -1,7 +1,6 @@
 
 Drive Mode(10)에서 Velocity-based Profile이 선택된 경우, Profile Velocity(112)는 Profile의 최대 석도를 설정합니다. Drive Mode(10)에서
 Time-based Profile이 선택된 경우, Profile Velocity(112)는 Profile의 총 시간(도달시간)을 설정합니다. Profile Velocity(112)는 위치 제어 모드와 확장 위치 제어 보드에서만 가능합니다.  
-Profile Velocity(112)는 Velocity Limit(44)보다 클 수 없습니다.  
 참고로 속도 제어 모드에서는 Profile Velocity(112)는 적용되지 않고 Profile Acceleration(108)만 적용됩니다.
 
 | Velocity-based Profile | 상세                          | 비고                                                                                                                                   |
