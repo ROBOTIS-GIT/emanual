@@ -11,7 +11,7 @@
 
 `마스터/슬레이브 설정(듀얼 조인트)`은 2개의 장치를 1개의 장치처럼 동시에 제어하기 위한 방법입니다. 마스터 장치과 슬레이브 장치는 동기화 케이블로 연결되어야 합니다. 슬레이브 장치는 동기화 케이블을 통해 전달된 Master 장치의 PWM 신호에 의해서 직접 제어됩니다. 따라서 슬레이브 장치의 Goal Position, Goal Velocity, Goal Current, Goal PWM은 무시됩니다.
 
-![](/assets/images/dxl/ex/ex-106_dual_kr.png)
+![](/assets/images/dxl/ex/ex-106_dual.png)
 
 |동기화 케이블|설명|
 | :---: | :---: |
