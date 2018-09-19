@@ -23,7 +23,6 @@ This function cannot be used under mobile network connection (3G/4G/LTE). The sm
 
     ![](/assets/images/sw/mobile/mini_app_061.jpg)
     ![](/assets/images/sw/mobile/mini_app_062.jpg)
-    ![](/assets/images/sw/mobile/mini_app_063.jpg)
 
     How to set your portable  Wi-Fi hotspot : The setting method and images can be different from those illustrated below.
 

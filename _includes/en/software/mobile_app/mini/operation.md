@@ -199,32 +199,31 @@ Messenger uses the registered voice commands.
 - The numbered buttons on the right [1~6] activate different motions in Soccer Mode (offense/defense) and different motions in Fight Mode. Over both modes, a total of 18 motions can be assigned to the buttons. When a motion is not assigned to a button, the button will be blue.
 - Switch between Soccer Mode or Fight Mode by tapping the button in the red rectangle in the figure below.
 
-![](/assets/images/sw/mobile/mini_app_052.jpg)
+![](/assets/images/sw/mobile/mini_app_052_en.png)
 
 - Soccer Mode
   - 2 available modes : Defense and Offense
 
-  ![](/assets/images/sw/mobile/mini_app_053.jpg)
+  ![](/assets/images/sw/mobile/mini_app_053_en.png)
 
   - Default buttons motions for Offense are Left Block (1), Right Block (2), Block 1 (3), Block 2(4); for Defense, the default motion buttons are Left Kick, Right Kick, Left Side Kick, and Right Side Kick.
 
 - Fight Mode
   - The default button settings for Fight Mode are Left Attack(1), Right Attack(2), Front Attack(3).
 
-  ![](/assets/images/sw/mobile/mini_app_054.jpg)
+  ![](/assets/images/sw/mobile/mini_app_054_en.png)
 
 - Exit
   - Click on the “X” icon in the upper right hand corner to close the remocon screen.
 
-  ![](/assets/images/sw/mobile/mini_app_055.jpg)
+  ![](/assets/images/sw/mobile/mini_app_055_en.png)
 
 - Run & Edit
   - To control your ROBOTIS-MINI, click on the Run tab then, click on the numbered buttons
 
-  ![](/assets/images/sw/mobile/mini_app_056.jpg)
-  ![](/assets/images/sw/mobile/mini_app_057.jpg)
+  ![](/assets/images/sw/mobile/mini_app_056_en.png)
 
 - To edit robot motions, click the Edit tab. Then click on a specific motion to edit it.
 
-  ![](/assets/images/sw/mobile/mini_app_058.jpg)
-  ![](/assets/images/sw/mobile/mini_app_059.jpg)
+  ![](/assets/images/sw/mobile/mini_app_058_en.png)
+  ![](/assets/images/sw/mobile/mini_app_059_en.png)
