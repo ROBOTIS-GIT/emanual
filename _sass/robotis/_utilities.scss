@@ -28,3 +28,24 @@
 .mfp-close {
   color: black;
 }
+
+.search-result {
+  display: none;
+  position: fixed;
+  margin: 5%;
+  overflow-y: auto;
+  width: 100%;
+  max-width: 85%;
+  max-height: 90%;
+  padding: 1em 3em;
+  background-color: #FFF;
+  border-radius: $img-border-radius;
+  border: 1px solid #CCC;
+  font-size: 1em;
+  opacity: 1;
+  z-index: 99;
+  
+  ::-webkit-scrollbar {
+    display: none;
+  }
+} 

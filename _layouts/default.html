@@ -14,10 +14,12 @@
     {% include head.html %}
     {% include head/custom.html %}
     <script type="text/javascript" src="/assets/js/plugins/elasticlunr.js"></script>
+    <script src="/assets/js/search.js"></script>
     <!-- <script type="text/javascript" src="/assets/js/plugins/lunr.js"></script> -->
     <script>
       var toggle_google = 0;
       var toggle_search_tool = 0;
+      var toggle_search_result = 0;
       var mobile_width = 960;
 
       function extendgoogletool() {
@@ -58,90 +60,6 @@
     		alignTop: true,
     		overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
     	});
-      
-      // Implmentation for Local search engine with JSON file
-      // var elasticlunr = require('elasticlunr');
-      
-      var index = elasticlunr(function () {
-        this.addField('product');
-        this.addField('header1');
-        this.addField('header2');
-        this.addField('header3');
-        this.addField('content');
-        this.setRef('id');
-      });
-      
-      $.getJSON('/search_index_test.json', function(idx) {
-        $.each(idx, function(v){
-          var doc = {
-            "id": v,
-            "product": idx[v].product,
-            "header1": idx[v].header1,
-            "header2": idx[v].header2,
-            "header3": idx[v].header3,
-            "content": idx[v].content
-          };
-          // console.log(doc.id);
-          // console.log(doc.product);
-          // console.log(doc.header1);
-          // console.log(doc.header2);
-          // console.log(doc.header3);
-          // console.log(doc.content);
-          index.addDoc(doc);
-        })
-      });
-      console.log(index);
-      
-      var results = index.search('actuator');
-      var i = 0;
-      for (i = 0; i < results.length; i++) {
-        var result_doc = index.documentStore.getDoc(results[i].ref);
-        console.log(result_doc.content);
-      }
-      if (results.length === 0) {
-        console.log("No Results Found.");
-      }
-      
-      //lunr.js code
-      // var index = lunr(function () {
-      //   this.ref('id')
-      //   this.field('product')
-      //   this.field('header1')
-      //   this.field('header2')
-      //   this.field('header3')
-      //   this.field('content')
-      // });
-      // 
-      // $.getJSON('/search_index_test.json', function(idx) {
-      //   $.each(idx, function(v){
-      //     var doc = {
-      //       "id": v,
-      //       "product": idx[v].product,
-      //       "header1": idx[v].header1,
-      //       "header2": idx[v].header2,
-      //       "header3": idx[v].header3,
-      //       "content": idx[v].content
-      //     };
-      //     // console.log(doc.id);
-      //     // console.log(doc.product);
-      //     // console.log(doc.header1);
-      //     // console.log(doc.header2);
-      //     // console.log(doc.header3);
-      //     // console.log(doc.content);
-      //     index.add(doc);
-      //   })
-      // });
-      // 
-      // var results = index.search("read");
-      // var i = 0;
-      // for (i = 0; i < results.length; i++) {
-      //   var result_doc = index.documentStore.get(results[i].ref);
-      //   console.log(result_doc.content);
-      // }
-      // if (results.length === 0) {
-      //   console.log("No Results Found.");
-      // }
-      
     });
     </script>
     <script>
@@ -169,7 +87,7 @@
                 //Check if Buttoned ToC with children
                 // console.log(searchTocId);
                 if( searchTocId.prop("tagName") == "INPUT" ) {
-                  console.log("input detected");
+                  // console.log("input detected");
                   if( searchTocId.prop("name") == "sublevel" ) {
                     searchTocId.closest("li.has-grandchildren").find("label > button").addClass("current_contents");
                   }

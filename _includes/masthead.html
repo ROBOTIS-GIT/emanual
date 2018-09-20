@@ -232,6 +232,16 @@
       {% endfor %}
     </div>
 
+    {% if page.lang=='en' %}
+    <!-- Elasticlunr Custom Search for English contents -->
+    <form class="searchbox" id="search-form">
+      <input type="search" id="search_term" style="height:56px;width:230px;size:16px;"/>
+      <button type="submit" style="height:56px;width:55px;">Search</button>
+    </form>
+    <div class="search-result" style="text-align: right;"></div>
+    <!-- end of Elasticlunr Custom Search for English contents -->
+    
+    {% else %}
     <!-- Google Custom Search -->
     <form class="searchbox" method="get" id="site_search">
       <script>
@@ -248,13 +258,7 @@
       <gcse:search></gcse:search>
     </form>
     <!-- end of Google Custom Search -->
-    <!-- {% if page.lang=='kr' %}
-    {% else %}
-    <form class="searchbox" id="search-form">
-      <input type="search" placeholder="Search" style="height:56px;width:230px;size:16px;">
-      <button type="submit" style="height:56px;width:55px;">Search</button>
-    </form>
-    {% endif %} -->
+    {% endif %}
     
     <button class="google_button" id="google_button" onclick="extendgoogletool()"><img src="https://www.google.com/images/cleardot.gif" class="goog-te-gadget-icon" alt="" style="background-image: url(&quot;https://translate.googleapis.com/translate_static/img/te_ctrl3.gif&quot;); background-position: -65px 0px;"></button>
     <div class="google_tools" id="google_tools">
