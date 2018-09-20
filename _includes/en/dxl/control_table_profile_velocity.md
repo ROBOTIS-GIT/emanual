@@ -1,11 +1,21 @@
-The Maximum velocity of Profile can be set with this value.  
-Profile Velocity(112) can be used in all control modes except Torque Control Mode and Velocity Control Mode.  
-Profile Velocity(112) cannot exceed Velocity Limit(44).  
-Velocity Control Mode only uses Profile Acceleration(108) instead of Profile Velocity(112).
 
-|   Unit    |      Value Range       |             Description             |
-|:---------:|:----------------------:|:-----------------------------------:|
-| 0.229 rpm | 0 ~ Velocity Limit(44) | '0' stands for an infinite velocity |
+If Velocity-based Profile is selected for Drive Mode(10), Profile Velocity(112) sets the maximum velocity of the Profile.  
+If Time-based Profile is selected for Drive Mode(10), Profile Velocity(112) sets the time span for the Profile.  
+Profile Velocity(112) is applied only in Position Control Mode and Extended Position Control Mode.
+
+**NOTE**: Velocity Control Mode only uses Profile Acceleration(108) without Profile Velocity(112).
+{: .notice}
+
+| Velocity-based Profile |            Values             | Description                         |
+|:----------------------:|:-----------------------------:|:------------------------------------|
+|          Unit          | 214.577 [rev/min<sup>2</sup>] | Sets velocity of the Profile        |
+|         Range          |           0 ~ 32767           | '0' stands for an infinite velocity |
+
+| Time-based Profile |  Values   | Description                                                                                                           |
+|:------------------:|:---------:|:----------------------------------------------------------------------------------------------------------------------|
+|        Unit        | 1 [msec]  | Sets the time span for the Profile                                                                                    |
+|       Range        | 0 ~ 32737 | '0' stands for an infinite velocity.<br>Profile Acceleration(108) will not exceed 50% of Profile Velocity(112) value. |
+
 
 The Profile is an acceleration/deceleration control method to reduce vibration, noise and load of the motor by controlling dramatically changing velocity and acceleration.  
 It is also called Velocity Profile as it controls acceleration and deceleration based on velocity.  
@@ -22,7 +32,7 @@ Maintaining velocity continuity while updating desired velocity trajectory is ca
 For a simple calculation, let's assume that the initial velocity of the Profile is '0'.  
 The following explains how Profile processes Goal Position(116) instruction in Position Control mode, Extended Position Control Mode, Current-based Position Control Mode.
 
-1. An Instruction from the user is transmitted via Dynamixel bus, then registered to Goal Position(116).
+1. An Instruction from the user is transmitted via Dynamixel bus, then registered to Goal Position(116) (If Velocity-based Profile is selected).
 2. Acceleration time(t1) is calculated from Profile Velocity(112) and Profile Acceleration(108).
 3. Types of Profile is decided based on Profile Velocity(112), Profile Acceleration(108) and total travel distance(ΔPos, the distance difference between desired position and present position).
 4. Selected Profile type is stored at Moving Status(123).(Refer to the Moving Status(123))
@@ -40,7 +50,11 @@ The following explains how Profile processes Goal Position(116) instruction in P
 
 {% capture group_notice_03 %}
 **NOTE** : Velocity Control Mode only uses Profile Acceleration(108). Step and Trapezoidal Profiles are supported. Velocity Override are supported as well. Acceleration time(t1) can be calculated as below equation.  
-t<sub>1</sub> = 64 * {Goal Velocity(104) / Profile Acceleration(108)}
+
+**Velocity-based Profile** : t<sub>1</sub> = 65 * {Goal Velocity(104) / Profile Acceleration(108)}  
+**Time-based Profile** : t<sub>1</sub> = Profile Acceleration(108)
+
+**NOTE** : If Time-based Profile is selected, Profile Velocity(112) is used to set the time span of the Profile(t<sub>3</sub>), while Profile Acceleration(108) sets accelerating time(t<sub>1</sub>) in millisecond[ms]. Profile Acceleration(108) will not exceed 50% of Profile Velocity(112) value.
 {% endcapture %}
 
 <div class="notice">

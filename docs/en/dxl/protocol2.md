@@ -44,20 +44,21 @@ Packet Length = number of Parameters + 3
 ## [Instruction](#instruction)
 The field that defines the type of command.
 
-|Value|Instructions|Description|
-|:---:|:---:|:---:|
-|0x01|Ping|Instruction that checks whether the Packet has arrived to a device with the same ID as Packet ID|
-|0x02|Read|Instruction to read data from the Device|
-|0x03|Write|Instruction to write data on the Device|
-|0x04|Reg Write|Instruction that registers the Instruction Packet to a standby status; Packet is later executed through the Action command|
-|0x05|Action|Instruction that executes the Packet that was registered beforehand using Reg Write|
-|0x06|Factory Reset|Instruction that resets the Control Table to its initial factory default settings|
-|0x08|Reboot|Instruction to reboot the Device|
-|0x55|Status(Return)|Return Instruction for the Instruction Packet|
-|0x82|Sync Read|For multiple devices, Instruction to read data from the same Address with the same length at once|
-|0x83|Sync Write|For multiple devices, Instruction to write data on the same Address with the same length at once|
-|0x92|Bulk Read|For multiple devices, Instruction to read data from different Addresses with different lengths at once|
-|0x93|Bulk Write|For multiple devices, Instruction to write data on different Addresses with different lengths at once|
+| Value |  Instructions  |                                                        Description                                                         |
+|:-----:|:--------------:|:--------------------------------------------------------------------------------------------------------------------------:|
+| 0x01  |      Ping      |              Instruction that checks whether the Packet has arrived to a device with the same ID as Packet ID              |
+| 0x02  |      Read      |                                          Instruction to read data from the Device                                          |
+| 0x03  |     Write      |                                          Instruction to write data on the Device                                           |
+| 0x04  |   Reg Write    | Instruction that registers the Instruction Packet to a standby status; Packet is later executed through the Action command |
+| 0x05  |     Action     |                    Instruction that executes the Packet that was registered beforehand using Reg Write                     |
+| 0x06  | Factory Reset  |                     Instruction that resets the Control Table to its initial factory default settings                      |
+| 0x08  |     Reboot     |                                              Instruction to reboot the Device                                              |
+| 0x10  |     Clear      |                                          Instruction to reset certain information                                          |
+| 0x55  | Status(Return) |                                       Return Instruction for the Instruction Packet                                        |
+| 0x82  |   Sync Read    |             For multiple devices, Instruction to read data from the same Address with the same length at once              |
+| 0x83  |   Sync Write   |              For multiple devices, Instruction to write data on the same Address with the same length at once              |
+| 0x92  |   Bulk Read    |           For multiple devices, Instruction to read data from different Addresses with different lengths at once           |
+| 0x93  |   Bulk Write   |           For multiple devices, Instruction to write data on different Addresses with different lengths at once            |
 
 ## [Parameters](#parameters)
 
@@ -316,6 +317,8 @@ The field that indicates the processing result of Instruction Packet
 
 ### Description
   - Instruction that resets the Control Table to its initial factory default settings.
+  - In case of when **Packet ID** is a Broadcast ID `0xFE` and **Option** is Reset All `0xFF`, Factory Reset Instruction(0x06) will **NOT** be activated.
+    - This feature is applied from MX(2.0) FW42, X-series FW42 or above.
 
 ### Parameters
 
@@ -361,6 +364,33 @@ The field that indicates the processing result of Instruction Packet
 |H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|P1|CRC1|CRC2|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |0xFF|0xFF|0xFD|0x00|0x01|0x04|0x00|0x55|0x00|0xA1|0x0C|
+
+## [Clear](#clear)
+
+### Description
+- This instruction resets certain information of Dynamixel
+- Applied Products : MX with Protocol 2.0 (Firmware v42 or above), Dynamixel X-series (Firmware v42 or above)
+
+### Parameters
+
+- P1 ~ P5 : Fixed values
+
+### Example
+
+#### Conditions
+- ID1(XM430-W210) : Resets multi turn revolution information
+
+#### Clear Instruction Packet
+
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 |   INST   |    P1    |  P2  |  P3  |  P4  |  P5  | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:--------:|:--------:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x08 | 0x00 | **0x10** | **0x01** | 0x44 | 0x58 | 0x4C | 0x22 | 0xB1 | 0xDC |
+
+#### ID 1 Status Packet
+
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST |  P1  | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x04 | 0x00 | 0x55 | 0x00 | 0xA1 | 0x0C |
 
 ## [Sync Read](#sync-read)
 

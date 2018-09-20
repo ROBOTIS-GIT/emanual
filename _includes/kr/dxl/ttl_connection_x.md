@@ -5,3 +5,5 @@
 ![](/assets/images/dxl/ttl_circuit.png)
 
 ![](/assets/images/dxl/x/x_series_ttl_pin.png)
+
+{% include kr/dxl/pinout_warning.md %}

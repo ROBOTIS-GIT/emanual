@@ -3837,9 +3837,6 @@ xh430-v210:
         - title: "Current Limit(38)"
           titlekr: "Current Limit(38)"
           url: /dxl/x/xh430-v210/#current-limit38
-        - title: "Acceleration Limit(40)"
-          titlekr: "Acceleration Limit(40)"
-          url: /dxl/x/xh430-v210/#acceleration-limit40
         - title: "Velocity Limit(44)"
           titlekr: "Velocity Limit(44)"
           url: /dxl/x/xh430-v210/#velocity-limit44
@@ -4072,9 +4069,6 @@ xh430-v350:
         - title: "Current Limit(38)"
           titlekr: "Current Limit(38)"
           url: /dxl/x/xh430-v350/#current-limit38
-        - title: "Acceleration Limit(40)"
-          titlekr: "Acceleration Limit(40)"
-          url: /dxl/x/xh430-v350/#acceleration-limit40
         - title: "Velocity Limit(44)"
           titlekr: "Velocity Limit(44)"
           url: /dxl/x/xh430-v350/#velocity-limit44
@@ -4307,9 +4301,6 @@ xh430-w210:
         - title: "Current Limit(38)"
           titlekr: "Current Limit(38)"
           url: /dxl/x/xh430-w210/#current-limit38
-        - title: "Acceleration Limit(40)"
-          titlekr: "Acceleration Limit(40)"
-          url: /dxl/x/xh430-w210/#acceleration-limit40
         - title: "Velocity Limit(44)"
           titlekr: "Velocity Limit(44)"
           url: /dxl/x/xh430-w210/#velocity-limit44
@@ -4542,9 +4533,6 @@ xh430-w350:
         - title: "Current Limit(38)"
           titlekr: "Current Limit(38)"
           url: /dxl/x/xh430-w350/#current-limit38
-        - title: "Acceleration Limit(40)"
-          titlekr: "Acceleration Limit(40)"
-          url: /dxl/x/xh430-w350/#acceleration-limit40
         - title: "Velocity Limit(44)"
           titlekr: "Velocity Limit(44)"
           url: /dxl/x/xh430-w350/#velocity-limit44
@@ -4923,9 +4911,6 @@ xm430-w210:
         - title: "Current Limit(38)"
           titlekr: "Current Limit(38)"
           url: /dxl/x/xm430-w210/#current-limit38
-        - title: "Acceleration Limit(40)"
-          titlekr: "Acceleration Limit(40)"
-          url: /dxl/x/xm430-w210/#acceleration-limit40
         - title: "Velocity Limit(44)"
           titlekr: "Velocity Limit(44)"
           url: /dxl/x/xm430-w210/#velocity-limit44
@@ -5158,9 +5143,6 @@ xm430-w350:
         - title: "Current Limit(38)"
           titlekr: "Current Limit(38)"
           url: /dxl/x/xm430-w350/#current-limit38
-        - title: "Acceleration Limit(40)"
-          titlekr: "Acceleration Limit(40)"
-          url: /dxl/x/xm430-w350/#acceleration-limit40
         - title: "Velocity Limit(44)"
           titlekr: "Velocity Limit(44)"
           url: /dxl/x/xm430-w350/#velocity-limit44
@@ -5393,9 +5375,6 @@ xm540-w150:
         - title: "Current Limit(38)"
           titlekr: "Current Limit(38)"
           url: /dxl/x/xm540-w150/#current-limit38
-        - title: "Acceleration Limit(40)"
-          titlekr: "Acceleration Limit(40)"
-          url: /dxl/x/xm540-w150/#acceleration-limit40
         - title: "Velocity Limit(44)"
           titlekr: "Velocity Limit(44)"
           url: /dxl/x/xm540-w150/#velocity-limit44
@@ -5634,9 +5613,6 @@ xm540-w270:
         - title: "Current Limit(38)"
           titlekr: "Current Limit(38)"
           url: /dxl/x/xm540-w270/#current-limit38
-        - title: "Acceleration Limit(40)"
-          titlekr: "Acceleration Limit(40)"
-          url: /dxl/x/xm540-w270/#acceleration-limit40
         - title: "Velocity Limit(44)"
           titlekr: "Velocity Limit(44)"
           url: /dxl/x/xm540-w270/#velocity-limit44
@@ -9441,6 +9417,9 @@ protocol2:
       - title: "Reboot"
         titlekr: "Reboot"
         url: /dxl/protocol2/#reboot
+      - title: "Clear"
+        titlekr: "Clear"
+        url: /dxl/protocol2/#clear
       - title: "Sync Read"
         titlekr: "Sync Read"
         url: /dxl/protocol2/#sync-read
@@ -11894,6 +11873,8 @@ turtlebot3:
       url: /platform/turtlebot3/applications/#automatic-parking-vision
     - title: "Load Multiple TurtleBot3s"
       url : /platform/turtlebot3/applications/#load-multiple-turtlebot3s
+    - title: "ROS2"
+      url : /platform/turtlebot3/applications/#ros2
   - title: "Learn"
     url: /platform/turtlebot3/learn/#learn
     children:
@@ -12032,7 +12013,7 @@ turtlebot3:
       url: /platform/turtlebot3/contact_us/#about-ost-open-source-team
 
 #OpenManipulator
-open_manipulator:
+openmanipulator:
   - title: "Overview"
     url: /platform/openmanipulator/#overview
     children:
@@ -12055,6 +12036,13 @@ open_manipulator:
       url: /platform/openmanipulator/#demension
   - title: "Hardware Setup"
     url: /platform/openmanipulator/#hardware-setup
+    children:
+    - title: "Part Lists"
+      url: /platform/openmanipulator/#part-lists
+    - title: "3D Printed Parts"
+      url: /platform/openmanipulator/#3d-printed-parts
+    - title: "Assembly Manual"
+      url: /platform/openmanipulator/#assembly-manual
   - title: "Software Setup"
     url: /platform/openmanipulator/#software-setup
     children:
@@ -12076,7 +12064,7 @@ open_manipulator:
         url: /platform/openmanipulator/#spawn-model
       - title: "MoveIt!"
         url: /platform/openmanipulator/#moveit
-  - title: "Embedded board Setup"
+  - title: "Embedded Board Setup"
     url: /platform/openmanipulator/#embedded-board-setup
     children:
     - title: "Arduino IDE"

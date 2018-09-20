@@ -45,6 +45,7 @@ sidebar:
 9. **Power Switch** : Switch that powers the board and Dynamixel. Note: Does not disconnect the power received via USB cable.
 10. **JP1 Jumper** : Jumper that determines whether the power inputted onto OpenCM 485 EXP will be supplied to OpenCM9.04 board or not.
 
+{% include en/dxl/pinout_warning.md %}
 
 # [Connecting OpenCM9.04](#connecting-opencm904)
 

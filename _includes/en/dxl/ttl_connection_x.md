@@ -5,3 +5,5 @@ To control the Dynamixel actuators, the main controller needs to convert its UAR
 ![](/assets/images/dxl/ttl_circuit.png)
 
 ![](/assets/images/dxl/x/x_series_ttl_pin.png)
+
+{% include en/dxl/pinout_warning.md %}
