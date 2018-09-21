@@ -10399,7 +10399,9 @@ mini:
       url: /edu/mini/#preparation
       urlkr: /edu/mini/#준비하기
       children:
-      - titlekr: "로보티즈 미니 앱"
+      - title: "ROBOTIS MINI App"
+        titlekr: "로보티즈 미니 앱"
+        url: /edu/mini/#robotis-mini-app
         urlkr: /edu/mini/#로보티즈-미니-앱
       - title: "Connect to MINI"
         titlekr: "로보티즈 미니 연결하기"
