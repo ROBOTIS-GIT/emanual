@@ -1,144 +1,147 @@
-The ROBOTIS-MINI app uses the smart device’s functions such as the button, gesture (sensor), voice recognition, and messenger to execute the motions.
+**NOTE** : The ROBOTIS-MINI app uses smart device’s functions such as the button, gesture (sensor), voice recognition, and messenger to play motions.
 {: .notice}
 
-- Button : Use the buttons on your screen to operate the ROBOTIS-MINI
-- Gesture : Use the smart device to make particular gestures on the ROBOTIS-MINI
-- Voice Recognition : Use the voice recognition function for the ROBOTIS-MINI to respond to your voice.
-- Messenger : Use another smart device to control the ROBOTIS-MINI. It can be connected to a different smart device using Messenger by sending commands.
-- Remocon : Remote Controller : Displays a virtual remote controller on the screen for easier controlling of fighting games and soccer games.
+- **Button** : Use the buttons on your screen to operate the ROBOTIS-MINI.
+- **Gesture** : Move the smart device to make particular gestures of the ROBOTIS-MINI.
+- **Voice Recognition** : Use the voice recognition feature of the ROBOTIS-MINI to respond to your voice.
+- **Messenger** : Use another smart device to control the ROBOTIS-MINI. It can be connected to another smart device and send commands by a text message.
+- **Remote Controller** : Displays a virtual remote controller on the screen for easier controlling for fighting games and soccer games.
 
-Stop Motion, Initial Position, and Stand Up are 3 basic buttons on the “Run” tab.
+Stop Motion, Initial Position, and Stand Up are 3 basic buttons on the `Run` tab.
 
 ![](/assets/images/sw/mobile/mini_app_013.jpg)
 ![](/assets/images/sw/mobile/mini_app_014.jpg)
 
 Below are the functions of each button.
-- Stop Motion : This button calls on the Motion #0 to execute endless loop motion. To stop motions, simply press this button to stop after the current motion is done executing.
-- Initial Position : This buttons call on the Motion #1, which is the initial position command.  If Motion #1 has been modified, it will run on the modified command.
-- Stand Up : This buttons call on the Motion #2, which is the stand up command.  If Motion #2 has been modified, it will run on the modified command.
+- `Stop Motion` : This button calls on the Motion #0. If this button is pressed during a motion, ROBOTIS-MINI stops after playing current motion unit.
+- `Initial Pose` : This button calls on the Motion #1, which is the initial position command. If Motion #1 is modified, it will play the modified motion in Motion #1.
+- `Stand Up` : This button calls on the Motion #2, which is the stand up command.  If Motion #2 has been modified, it will run on the modified command.
 
-When the robot is executing a motion, all other motions except the ‘Stop Motion’ will be ignored.
+**NOTE** : When the robot is playing a motion, all other motions except the `Stop Motion` will be ignored.
 {: .notice}
 
 ### Control with Buttons
-Touch a registered button in the ‘Button’ tab to activate a motion. Touch the ‘’Edit’ tab to Add/Edit/Delete/ and change the location of the button.
+In order to Add/Edit/Delete/Arrange buttons, use the `Edit` tab.
 
-- Edit Button Line
+- Edit Button Row
 
-  Add button line : Press the ‘Add Button’ button in the “Edit’ tab to add a new line to the top line.
+  - Add a button row : Press the `Add Button` button in the `Edit` tab to add a new line at the top row.
 
-  ![](/assets/images/sw/mobile/mini_app_015.jpg)
-  ![](/assets/images/sw/mobile/mini_app_016.jpg)
-  ![](/assets/images/sw/mobile/mini_app_017.jpg)
+    ![](/assets/images/sw/mobile/mini_app_015.jpg)
+    ![](/assets/images/sw/mobile/mini_app_016.jpg)
+    ![](/assets/images/sw/mobile/mini_app_017.jpg)
 
-  Change button line order : Touch the right side of the line then drag up or down to move the line.
+  - Change button row order : Touch the right side of the row then drag up or down to move the row.
 
-  ![](/assets/images/sw/mobile/mini_app_018.jpg)
-  ![](/assets/images/sw/mobile/mini_app_019.jpg)
-  ![](/assets/images/sw/mobile/mini_app_020.jpg)
+    ![](/assets/images/sw/mobile/mini_app_018.jpg)
+    ![](/assets/images/sw/mobile/mini_app_019.jpg)
+    ![](/assets/images/sw/mobile/mini_app_020.jpg)
 
-  Delete button line : Touch the right side of the line then drag left to delete a line.
+  - Delete button row : Touch the right side of the row then slide to the left to delete the row.
 
-  ![](/assets/images/sw/mobile/mini_app_021.jpg)
-  ![](/assets/images/sw/mobile/mini_app_022.jpg)
-  ![](/assets/images/sw/mobile/mini_app_023.jpg)
+    ![](/assets/images/sw/mobile/mini_app_021.jpg)
+    ![](/assets/images/sw/mobile/mini_app_022.jpg)
+    ![](/assets/images/sw/mobile/mini_app_023.jpg)
 
 - Edit Button
 
-  Edit Button Data : Touch  ‘+’ to add a new button. Touch other existing command buttons to edit.
+  - Edit Button : Touch `+` to add a new button. Touch other existing command buttons to edit.
 
-  ![](/assets/images/sw/mobile/mini_app_024.jpg)
-  ![](/assets/images/sw/mobile/mini_app_025.jpg)
-  ![](/assets/images/sw/mobile/mini_app_026.jpg)
+    ![](/assets/images/sw/mobile/mini_app_024.jpg)
+    ![](/assets/images/sw/mobile/mini_app_025.jpg)
+    ![](/assets/images/sw/mobile/mini_app_026.jpg)
 
-  - The motion numbers are the numbers of the designated motions downloaded on the robot.
-  - If a motion number is not designated, the button name will be shown in light gray.
-  - If the button name and motion number are both deleted, it will not appear on the “Run” tab.
+  - The Motion Page Number is the number of the designated motions downloaded on the robot.
+  - If a Motion Page Number is not designated, the button name will be shown in light gray.
+  - If both Button Name and Motion Page Number are blank, the button will not appear on the `Run` tab.
 
-  Use the motion file setting to input motion call numbers : If you designate the motion file to use under ‘Motion File Setting’ in the app setting, you will see the ‘List’  in the top right corner in the button editing screen. Touch this ‘List’ to see the entire list.
+- Use the motion file setting to input motion call numbers  
+  If you define the motion file in the [`Motion File Setting`](/docs/en/edu/mini/#motion-file-setting) in the app setting, you can load motion lists with the `List` in the top right corner of the button editing screen.
 
-  Select the desired motion from the list to automatically input a button name and number.
+  Select desired motion from the list to automatically fill up the Button Name and Motion Page Number.
 
   ![](/assets/images/sw/mobile/mini_app_027.jpg)
   ![](/assets/images/sw/mobile/mini_app_028.jpg)
   ![](/assets/images/sw/mobile/mini_app_029.jpg)
 
 ### Control with Gestures
-The ‘Gesture’ tab uses the acceleration sensor of the smart device to enable the robot to do certain motions. For example if the user draws an O or X holding the smart device, the robot will either walk or sit down based on the motion designated.  This works with the smart device held straight up 90 degrees from the ground.
+The `Gesture` tab uses the acceleration sensor of the smart device to command the robot to do certain motions. For example, if the user draws an O or X when holding the smart device, the robot will either walk or sit down based on the assigned motion. This works when the smart device is held straight up 90 degrees to the ground.
 
-- Move the robot by holding onto your smart device and making a gesture.
+- Move the robot by holding your smart device and making a gesture.
 
   ![](/assets/images/sw/mobile/mini_app_030.png)
 
-- Press down on the center of the screen and tilt the smart device to operate the robot.
-- When touching the basic buttons in the screen below, it will operate the robot instead of moving to the ‘Button’ tab.
+- While touching the center of the screen, tilt the smart device to operate the robot.
+  - Basic buttons beneath the Slope option can also be used to operate the robot.
 
-  Touch ‘Tilt’ at the bottom of the screen to check the movements designated by the tilts.
+  Touch the `Slope` button at the bottom of the screen to check motions designated by tilting the smart device.
   {: .notice}
 
   ![](/assets/images/sw/mobile/mini_app_031.jpg)
   ![](/assets/images/sw/mobile/mini_app_032.jpg)
 
-  Touch the top ‘Edit' to add, edit, or delete gestures or use the ‘Train Gesture’ function to increase recognition rate. Also, the basic gestures for ‘Tilt’ can be edited.
+  Touch the `Edit` button to add, edit, or delete gestures. Training the gesture will increase the recognition accuracy. Also, the basic gestures for `Slope` can be edited.
 
 - Register Gestures
-  - Touch ‘Add Gesture’ button to add gestures.
-  - Input the gesture name, motion number and explanation.
-  - Touch ‘Ready’ and move the smart device in your hand at a steady speed to make a gesture.
+  - Touch `Add Gesture` button to add gestures.
+  - Enter the gesture name, motion page number and description.
+  - Touch `Ready` button and move the smart device at a steady speed.
 
   ![](/assets/images/sw/mobile/mini_app_033.jpg)
   ![](/assets/images/sw/mobile/mini_app_034.jpg)
   ![](/assets/images/sw/mobile/mini_app_035.jpg)
 
-  - When the movement is done there will be a ‘beep’ sound along with a short vibration and a message saying ‘Gesture learned ‘ will appear. Touch ‘Okay’
+  - When the gesture is done there will be a beep sound along with a short vibration and a message saying **Gesture xxx learned** will appear.
 
   ![](/assets/images/sw/mobile/mini_app_036.jpg)
   ![](/assets/images/sw/mobile/mini_app_037.jpg)
 
-  - Touch ‘Okay’ to add the gesture.
+  - Touch `OK` to add the gesture.
 
     > If you do not hear the “Beep” sound, please check the media volume.
 
-    > When adding gestures, if you have already set the motion project file under ‘Setting’ the ‘List’ button will appear for easy access to add motions.
+    > When adding gestures, if you have already set the motion project file, the `List` button will appear for easy access to add motions.
 
 - Edit Gesture
-  - To edit a gesture touch the ‘Edit’ button.
-  - Use the same method when adding gestures to edit and finalize by touching ‘Okay’
+  - To edit a gesture touch the `Edit` button.
+  - Use the same method when adding gestures to edit and finalize by touching `OK`
 
 - Delete Gesture
-  - Touch the right side of the line then drag left to delete.
+  - Touch the right side of the line then slide to the left to delete.
 
 - Edit Button
-  - Touch the command you wish to change to edit the command.
-  - The buttons on the bottom of the screen can add up to max 3 buttons. (1 line)
+  - Touch the command you want to edit.
+  - Maximum 3 buttons(1 row) can be added in the Button section of the bottom of the screen.
 
-- Edit Tilt
-  - Touch ‘Tilt’ at the bottom to edit the motion.
-  - Only the pre-designated 4 directions can be used under the ‘Tilt’  function.
-  - Touch the direction to edit the name and number of the motion.
+- Edit Slope
+  - Touch `Slope` at the bottom to edit screen.
+  - 4 pre-defined directions can be used in the Slope section.
+  - Touch the direction button to edit the name and motion page number.
 
   ![](/assets/images/sw/mobile/mini_app_038.jpg)
   ![](/assets/images/sw/mobile/mini_app_039.jpg)
   ![](/assets/images/sw/mobile/mini_app_040.jpg)
 
-  The pre-designated directions below should be held in your right hand 90 degrees straight from the ground to move forward, backward, left, and right.
+  The pre-defined directions are defined by the smart device in the right hand as shown below.
   {: .notice}
 
   ![](/assets/images/sw/mobile/mini_app_041.png)
 
 
-- Gesture Training Function?
+- What is the Gesture Training?
 
-  Use the gesture training function to increase the chances of recognizing registered gestures.
-  - Touch ‘Train’ for the gesture you would like to train.
-  - Touch ‘Ready’ and make a bigger gesture or tilt the smart device and/or make different gestures.
-  - When the movement is done there will be a ‘beep’ sound along with a short vibration and a message saying ‘Gesture XXXXX learned ‘ will appear. Touch ‘Okay’
-  - Use the same method to change similar movements for repeated studying.
+  Use the gesture training feature to increase the recognition accuracy of registered gestures.
+  - Touch `Train` for the gesture you would like to train.
+  - Touch `Ready` and make a bigger gesture or tilt the smart device and/or make different gestures.
+  - When the gesture is done there will be a beep sound along with a short vibration and a message saying **Gesture xxx learned** will appear.
+  - Repeat above steps to train the motion.
 
 ### Operate with Voice Recognition
-Uses the Google voice recognition function to operate ROBOTIS-MINI.
 
-Touch the MIC icon on the center of your screen then say (input)  the command. To use this function, you must have internet connection access to your smart device for voice recognition.
+**NOTE** : ROBOTIS-MINI uses Google's voice recognition.
+{: .notice}
+
+Touch the microphone icon in the center of screen then speak(input) the command. To use this function, you must have an internet connected smart device.
 
 ![](/assets/images/sw/mobile/mini_app_042.jpg)
 ![](/assets/images/sw/mobile/mini_app_043.jpg)
