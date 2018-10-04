@@ -60,6 +60,55 @@ sidebar:
 
 5. Execute the task code -> Your robot will move. Turn on the controller and execute the downloaded task code.
 
+## [CM-150](#cm-150)
+
+### Preparation
+1. R+Task 2.0 software must be installed on the PC.  
+   [R+Task 2.0 Download]
+
+2. Open the Task Code file(*.tsk) from R+Task 2.0.
+
+3. Connect the battery(LBS-041) to the controller(CM-150) and turn on the controller.
+
+4. Connect the controller(CM-150) and the PC using a micro USB cable.
+
+  ![tcdown0][tcdown0]
+
+### Download
+1. Check if PC and the controller are connected with a micro USB cable.
+
+2. Check if the Controller(CM-150) is powered on.
+
+3. Select `Device` ① as shown below.
+
+ ![tcdown_en1][tcdown_en1]
+
+4. Select discovered device ② from the list and click ③ button.
+ - If the device does not appear in the list, check step 1 and 2.
+
+ ![tcdown_en2][tcdown_en2]
+
+
+5. Select `Download` ④ as shown below.
+
+ ![tcdown_en3][tcdown_en3]
+
+
+
+6. When task code download is completed, a success message will appear.
+
+ ![tcdown_en4][tcdown_en4]
+
+ ![tcdown_en5][tcdown_en5]
+
+
+
+
+
+
+
+
+
 # [Videos](#videos)
 
 ## Download RoboPlus Program (for CM-100)
@@ -71,11 +120,19 @@ sidebar:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UlD4C1XMsgo" frameborder="0" allowfullscreen></iframe>
 
 [CM-100]: /docs/en/parts/controller/cm-100/
+[CM-150]: /docs/en/parts/controller/cm-150/
 [USB Downloader(LN-101)]: /docs/en/parts/interface/ln-101/
-[rule check error messages]: /docs/en/software/rplus1/task/task_misc/#rule-check
+[rule check error messages]:/docs/en/software/rplus1/task/task_misc/#rule-check
+
 
 [img_01]: /assets/images/edu/task_download_01.jpg
 [img_02]: /assets/images/edu/task_download_02.png
 [img_03]: /assets/images/edu/task_download_03.png
 [img_04]: /assets/images/edu/task_download_04.png
 [img_05]: /assets/images/edu/task_download_05.png
+[tcdown0]: /assets/images/faq/tcdown0.jpg
+[tcdown_en1]: /assets/images/faq/tcdown_en1.jpg
+[tcdown_en2]: /assets/images/faq/tcdown_en2.jpg
+[tcdown_en3]: /assets/images/faq/tcdown_en3.jpg
+[tcdown_en4]: /assets/images/faq/tcdown_en4.jpg
+[tcdown_en5]: /assets/images/faq/tcdown_en5.jpg

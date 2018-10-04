@@ -63,23 +63,101 @@ sidebar:
 5. 태스크 코드(Task Code)를 실행하고 로봇의 동작을 실행 합니다.  
   제어기를 켜고 다운로드 한 태스크 코드를 실행합니다. (태스크 코드 실행 방법은 각 [제어기 정보]를 참고하세요.)
 
-# [동영상](#동영상)
 
-## 로보플러스 프로그램 다운로드 (CM-100)
+## [CM-150](#cm-150)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/3mDP9BW-Q0E" frameborder="0" allowfullscreen></iframe>
+### 준비
+1. PC에 R+Task 2.0 소프트웨어가 설치되어 있어야 합니다.
+  - R+Task 2.0은 홈페이지>고객지원>다운로드>소프트웨어 메뉴에서 다운로드 하실 수 있습니다.
 
-## 포트 설정 및 셋팅하기
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/UlD4C1XMsgo" frameborder="0" allowfullscreen></iframe>
+2. 다운로드할 태스크 코드 파일(*.tsk)을 R+Task 에서 불러옵니다.
+  - 태스크 코드 파일을 더블클릭하여 열 수 있습니다.
+  - R+Task의 파일열기 기능으로 열 수 있습니다.
+
+
+3. 제어기([CM-150])를 충전배터리(LBS-041)와 연결한 후 제어기의 전원을 켭니다.
+
+
+
+4. 마이크로 USB케이블 사용해 PC와 제어기([CM-150])을 연결합니다.
+
+
+  ![tcdown0][tcdown0]
+
+
+
+
+### 다운로드
+
+1. PC와 제어기가 마이크로 USB로 연결되어 있는지 확인합니다.
+
+
+
+2. 제어기([CM-150])의 전원이 켜져 있는지 확인합니다.
+
+
+
+3. 아래 그림을 참고하여 장치①을 선택합니다.
+
+  ![tcdown1][tcdown1]
+
+
+
+
+
+4. 목록에서 검색된 장치(②)를 선택하고 ③를 누릅니다.
+  - 목록에서 장치가 나타나지 않을 경우 위의 1, 2 항목을 다시 체크합니다.  
+
+  ![tcdown2][tcdown2]  
+
+
+
+
+5. 다운로드④를 선택합니다.
+
+  ![tcdown3][tcdown3]
+
+
+
+6. 아래와 같이 진행된 후 다운로드가 완료됩니다.
+
+  ![tcdown4][tcdown4]
+
+  ![tcdown5][tcdown5]  
+
+
+
+
+  # [동영상](#동영상)
+
+  ## 로보플러스 프로그램 다운로드 (CM-100)
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/3mDP9BW-Q0E" frameborder="0" allowfullscreen></iframe>
+
+  ## 포트 설정 및 셋팅하기
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/UlD4C1XMsgo" frameborder="0" allowfullscreen></iframe>
+
+
+
 
 [CM-100]: /docs/kr/parts/controller/cm-100/
 [LN-101]: /docs/kr/parts/interface/ln-101/
+[CM-150]: /docs/kr/parts/controller/cm-150/
 [룰 체크 에러 메시지]: /docs/kr/software/rplus1/task/task_misc/#룰-체크
 [제어기 정보]: /docs/kr/parts/controller/controller_compatibility/
+
+
 
 [img_01]: /assets/images/edu/task_download_01.jpg
 [img_02]: /assets/images/sw/rplus1/task/select_port.png
 [img_03]: /assets/images/sw/rplus1/task/cannot_find_controller.png
 [img_04]: /assets/images/sw/rplus1/task/download_button.png
 [img_05]: /assets/images/sw/rplus1/task/download_progress_bar.png
+[tcdown0]: /assets/images/faq/tcdown0.jpg
+[tcdown1]: /assets/images/faq/tcdown1.jpg
+[tcdown2]: /assets/images/faq/tcdown2.jpg
+[tcdown3]: /assets/images/faq/tcdown3.jpg
+[tcdown4]: /assets/images/faq/tcdown4.jpg
+[tcdown5]: /assets/images/faq/tcdown5.jpg
