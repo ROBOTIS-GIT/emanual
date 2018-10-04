@@ -10221,9 +10221,9 @@ bioloid-premium:
       titlekr: "작동하기"
       url: /edu/bioloid/premium/#operating
       urlkr: /edu/bioloid/premium/#작동하기
-    - title: "Charging CM-5"
+    - title: "Battery Charge"
       titlekr: "충전하기"
-      url: /edu/bioloid/premium/#charging-cm-5
+      url: /edu/bioloid/premium/#battery-charge
       urlkr: /edu/bioloid/premium/#충전하기
   - title: "Tutorial"
     titlekr: "튜토리얼"
@@ -10244,15 +10244,15 @@ bioloid-premium:
       urlkr: /edu/bioloid/premium/#보행-머신
     - title: "Gyro Sensor"
       titlekr: "자이로 센서를 이용한 보정"
-      url: /edu/bioloid/premium/#gyro-sensor
+      url: /edu/bioloid/premium/#gyro-sensor-calibration
       urlkr: /edu/bioloid/premium/#자이로-센서를-이용한-보정
     - title: "Custom Motions(Create)"
       titlekr: "사용자 모션 추가하기(모션 만들기)"
-      url: /edu/bioloid/premium/#custom-motions-create
+      url: /edu/bioloid/premium/#custom-motionscreate
       urlkr: /edu/bioloid/premium/#사용자-모션-추가모션-만들기
     - title: "Custom Motions(Task Code)"
       titlekr: "사용자 모션 추가하기(태스크 코드)"
-      url: /edu/bioloid/premium/#custom-motions-task-code
+      url: /edu/bioloid/premium/#custom-motionstask-code
       urlkr: /edu/bioloid/premium/#사용자-모션-추가태스크-코드
     - title: "Gripper Control"
       titlekr: "그리퍼 제어"
