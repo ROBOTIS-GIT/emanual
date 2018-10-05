@@ -68,7 +68,7 @@ This is included in ROBOTIS DREAM II Level 1.
 [CM-150]: /docs/en/parts/controller/cm-150/
 [Servo Motor]: /docs/en/parts/motor/servo_motor/
 [Remote Control (RC-100B)]: /docs/en/parts/communication/rc-100/
-[How to Download Task code]: /docs/en/faq/download_task_code/
+[How to Download Task code]: /docs/en/faq/download_task_code/#cm-150
 [ex_01]: http://support.robotis.com/en/baggage_files/dream/dream2_l3_security_en.tskx
 [ex_02]: http://support.robotis.com/en/baggage_files/dream/dream2_l3_noisemeter_en.tskx
 [ex_03]: http://support.robotis.com/en/baggage_files/dream/dream2_l3_fourwheel_en.tskx
