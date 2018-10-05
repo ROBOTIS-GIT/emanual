@@ -13,7 +13,7 @@ sidebar:
 
 # [FAQ](#faq)
 - [제어기 호환표](/docs/kr/parts/controller/controller_compatibility/)
-- [태스크코드 다운로드](/docs/kr/software/rplus1/task/getting_started/#프로그램-다운로드)
+- [태스크코드 다운로드](/docs/kr/faq/download_task_code/)
 - [태스크 룰 체크](/docs/kr/software/rplus1/task/task_misc/#룰-체크)
 - [CM 510/530 퓨즈 교체](/docs/kr/faq/cm_510_530_fuse/)
 - [USB 드라이버 설치]{: .popup}
