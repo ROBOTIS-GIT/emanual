@@ -20,10 +20,10 @@ sidebar:
 ## [CM-100](#cm-100)
 
 ### Preparation
-1. Please open a task code file(*.tsk) to download from RoboPlus Task.
+1. Please open a task code file(\*.tsk) to download from RoboPlus Task.
   - You can open it by double-clicking.
-  - You can open it by using an 'open a file' function of RoboPlus Task.
-  - You can open it by dragging & dropping  it to  the RoboPlus task with mouse.
+  - You can open it by using the **open a file** function of RoboPlus Task.
+  - You can open it with drag & drop in the RoboPlus task.
 
 2. Connect the contorller([CM-100]) with your PC by using a [USB Downloader(LN-101)].
 3. Connect 2 double AA batteries then turn the power for the controller (CM-100) on.
@@ -66,7 +66,7 @@ sidebar:
 1. R+Task 2.0 software must be installed on the PC.  
    [R+Task 2.0 Download]
 
-2. Open the Task Code file(*.tsk) from R+Task 2.0.
+2. Open the Task Code file(\*.tsk) from R+Task 2.0.
 
 3. Connect the battery(LBS-041) to the controller(CM-150) and turn on the controller.
 
@@ -79,34 +79,24 @@ sidebar:
 
 2. Check if the Controller(CM-150) is powered on.
 
-3. Select `Device` ① as shown below.
+3. Select Device `1` as shown below.
 
- ![tcdown_en1][tcdown_en1]
+    ![tcdown_en1][tcdown_en1]
 
-4. Select discovered device ② from the list and click ③ button.
- - If the device does not appear in the list, check step 1 and 2.
+4. Select discovered device `2` from the list and click `3` confirm button.
+  - If the device does not appear in the list, check step 1 and 2.
 
- ![tcdown_en2][tcdown_en2]
+    ![tcdown_en2][tcdown_en2]
 
+5. Select Download `4` as shown below.
 
-5. Select `Download` ④ as shown below.
-
- ![tcdown_en3][tcdown_en3]
-
-
+    ![tcdown_en3][tcdown_en3]
 
 6. When task code download is completed, a success message will appear.
 
- ![tcdown_en4][tcdown_en4]
+    ![tcdown_en4][tcdown_en4]
 
- ![tcdown_en5][tcdown_en5]
-
-
-
-
-
-
-
+    ![tcdown_en5][tcdown_en5]
 
 
 # [Videos](#videos)
@@ -123,7 +113,7 @@ sidebar:
 [CM-150]: /docs/en/parts/controller/cm-150/
 [USB Downloader(LN-101)]: /docs/en/parts/interface/ln-101/
 [rule check error messages]:/docs/en/software/rplus1/task/task_misc/#rule-check
-[R+Task 2.0 Download]: 
+[R+Task 2.0 Download]: http://en.robotis.com/service/downloadpage.php?ca_id=10
 
 [img_01]: /assets/images/edu/task_download_01.jpg
 [img_02]: /assets/images/edu/task_download_02.png
