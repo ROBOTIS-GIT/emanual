@@ -13167,9 +13167,15 @@ download_task_code:
   - title: "CM-5"
     titlekr: "CM-5"
     url: /faq/download_task_code/#cm-5
+    urlkr: /faq/download_task_code/#cm-5
   - title: "CM-100"
     titlekr: "CM-100"
     url: /faq/download_task_code/#cm-100
+    urlkr: /faq/download_task_code/#cm-100
+  - title: "CM-150"
+    titlekr: "CM-150"
+    url: /faq/download_task_code/#cm-150
+    urlkr: /faq/download_task_code/#cm-150
 - title: "Videos"
   titlekr: "동영상"
   url: /faq/download_task_code/#videos

@@ -53,7 +53,7 @@ sidebar:
 
 [서보 모터]: /docs/kr/parts/motor/servo_motor/
 [RC-100B]: /docs/kr/parts/communication/rc-100/
-[예제 태스크 코드의 다운로드 방법]: /docs/kr/faq/download_task_code/#CM-150
+[예제 태스크 코드의 다운로드 방법]: /docs/kr/faq/download_task_code/#cm-150
 [DREAM2_L3_Security_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l3_security_kr.tskx
 [DREAM2_L3_NoiseMeter_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l3_noisemeter_kr.tskx
 [DREAM2_L3_FourWheeled_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l3_fourwheeled_kr.tskx
