@@ -124,7 +124,7 @@ You will need the USB cable to download the programs.
 [Remote Control (RC-100B)]: /docs/en/parts/communication/rc-100/
 [USB Downloader(LN-101)]: /docs/en/parts/interface/ln-101/
 [Powersave Timer]: /docs/en/software/rplus1/task/programming_02/#powersave-timer
-[How to Download Task code]: /docs/en/faq/download_task_code/
+[How to Download Task code]: /docs/en/faq/download_task_code/#CM-150
 [DREAM2_L2_Total_EN.tsk]: http://support.robotis.com/en/baggage_files/dream/dream_l2_total_en.tsk
 [ex_01]: http://support.robotis.com/en/baggage_files/dream/dream2_l2_elephant_en.tskx
 [ex_02]: http://support.robotis.com/en/baggage_files/dream/dream2_l2_flower_firefly_en.tskx

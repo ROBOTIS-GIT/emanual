@@ -123,7 +123,7 @@ sidebar:
 [CM-150]: /docs/en/parts/controller/cm-150/
 [USB Downloader(LN-101)]: /docs/en/parts/interface/ln-101/
 [rule check error messages]:/docs/en/software/rplus1/task/task_misc/#rule-check
-
+[R+Task 2.0 Download]: 
 
 [img_01]: /assets/images/edu/task_download_01.jpg
 [img_02]: /assets/images/edu/task_download_02.png

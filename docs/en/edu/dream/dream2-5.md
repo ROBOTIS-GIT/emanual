@@ -56,7 +56,7 @@ This is included in ROBOTIS DREAM II Level 1.
 
 [CM-150]: /docs/en/parts/controller/cm-150/
 [BT-410]: /docs/en/parts/communication/bt-410/
-[How to Download Task code]: /docs/en/faq/download_task_code/
+[How to Download Task code]: /docs/en/faq/download_task_code/#CM-150
 [ex_01]: http://support.robotis.com/en/baggage_files/dream/dream2_l5_tank_en.tskx
 [ex_02]: http://support.robotis.com/en/baggage_files/dream/dream2_l5_robotknight_en.tskx
 [ex_03]: http://support.robotis.com/en/baggage_files/dream/dream2_l5_warrobot_en.tskx
