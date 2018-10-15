@@ -202,10 +202,3 @@ sidebar:
 [cm530_kr5]: /assets/images/faq/cm530_kr5.png
 [cm530_kr6]: /assets/images/faq/cm530_kr6.png
 [cm530_kr7]: /assets/images/faq/cm530_kr7.png
-[cm530_en1]: /assets/images/faq/cm530_en1.png
-[cm530_en2]: /assets/images/faq/cm530_en2.png
-[cm530_en3]: /assets/images/faq/cm530_en3.png
-[cm530_en4]: /assets/images/faq/cm530_en4.png
-[cm530_en5]: /assets/images/faq/cm530_en5.png
-[cm530_en6]: /assets/images/faq/cm530_en6.png
-[cm530_en7]: /assets/images/faq/cm530_en7.png
