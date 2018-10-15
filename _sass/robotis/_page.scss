@@ -154,6 +154,18 @@ html {
       height: 40px;
     }
     
+    #search_term {
+      height: 40px;
+      width: 100vw;
+      size: 14px;
+    }
+    
+    #search_button {
+      height: 40px;
+      width: 55px;
+      display: none;
+    }
+    
     .gsc-results-wrapper-overlay {
       padding: 1em !important;
       height: 90% !important;

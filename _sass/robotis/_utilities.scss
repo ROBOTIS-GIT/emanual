@@ -28,3 +28,18 @@
 .mfp-close {
   color: black;
 }
+
+.search-result {
+  display: none;
+  position: fixed;
+  margin: 5%;
+  overflow-y: auto;
+  left: 10px;
+  right: 10px;
+  height: 80vh;
+  padding: 1em 3em;
+  background-color: #FFF;
+  border: 3px solid #CCC;
+  font-size: 1em;
+  z-index: 99;
+} 
