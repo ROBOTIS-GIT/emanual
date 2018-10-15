@@ -106,6 +106,59 @@ sidebar:
     ![tcdown5][tcdown5]  
 
 
+## [CM-530](#cm-530)
+
+### 준비
+
+1. RoboPlus 소프트웨어가 PC에 설치되어 있어야 합니다.  
+    [Roboplus 다운로드]   
+
+2. 베터리의 충전상태를 확인합니다.
+
+3. 사용할 예제 파일을 PC에 미리 다운로드합니다.
+   [예제 파일 다운로드]
+
+
+### 다운로드
+
+1. 미니 USB 케이블을 이용하여 PC와 제어기([CM-530])을 연결합니다.
+
+  ![cm530_0][cm530_0]
+
+2. PC에서 RoboPlus를 실행하고 'RoboPlus Task'를 선택합니다.
+
+  ![cm530_kr1][cm530_kr1]
+
+3. 아래 창이 나올 경우 펌웨어 1.0을 체크하고 제어기([CM-530])를 선택합니다.
+
+  ![cm530_kr2][cm530_kr2]
+
+4. 제어기([CM-530])의 전원을 켜고 통신포트를 선택합니다.   
+  자동 찾기를 선택하면 쉽게 포트를 찾을 수 있습니다.
+
+   ![cm530_kr3][cm530_kr3]
+
+ - 제어기([CM-530])를 찾지 못할 경우 아래와 같은 메시지가 나타납니다.
+
+  ![cm530_kr4][cm530_kr4]
+
+ - 위 오류 내용을 확인하여 수정하고 다시 포트를 연결합니다.
+
+
+5. 제어기([CM-530])에 다운로드 할 예제 파일을 RoboPlus에서 불러옵니다.
+
+   ![cm530_kr5][cm530_kr5]
+
+6. 아래 표시된 다운로드 버튼을 눌러 예제 프로그램을 제어기에 다운로드합니다.
+
+   ![cm530_kr6][cm530_kr6]
+
+7. 아래와 같은 메시지가 나타나고 다운로드가 완료됩니다.
+
+   ![cm530_kr7][cm530_kr7]
+
+
+
 # [동영상](#동영상)
 
 ## 로보플러스 프로그램 다운로드 (CM-100)
@@ -121,9 +174,15 @@ sidebar:
 [CM-100]: /docs/kr/parts/controller/cm-100/
 [LN-101]: /docs/kr/parts/interface/ln-101/
 [CM-150]: /docs/kr/parts/controller/cm-150/
+[CM-530]: /docs/kr/parts/controller/cm-530/
 [룰 체크 에러 메시지]: /docs/kr/software/rplus1/task/task_misc/#룰-체크
 [제어기 정보]: /docs/kr/parts/controller/controller_compatibility/
 [R+Task 2.0 다운로드]: http://www.robotis.com/service/downloadpage.php?ca_id=10
+[Roboplus 다운로드]:   
+http://www.robotis.com/service/downloadpage.php?ca_id=10
+[예제 파일 다운로드]:  /docs/kr/edu/bioloid/stem/#다운로드
+
+
 
 
 [img_01]: /assets/images/edu/task_download_01.jpg
@@ -137,3 +196,18 @@ sidebar:
 [tcdown3]: /assets/images/faq/tcdown3.jpg
 [tcdown4]: /assets/images/faq/tcdown4.jpg
 [tcdown5]: /assets/images/faq/tcdown5.jpg
+[cm530_0]: /assets/images/faq/cm530_0.png
+[cm530_kr1]: /assets/images/faq/cm530_kr1.png
+[cm530_kr2]: /assets/images/faq/cm530_kr2.png
+[cm530_kr3]: /assets/images/faq/cm530_kr3.png
+[cm530_kr4]: /assets/images/faq/cm530_kr4.png
+[cm530_kr5]: /assets/images/faq/cm530_kr5.png
+[cm530_kr6]: /assets/images/faq/cm530_kr6.png
+[cm530_kr7]: /assets/images/faq/cm530_kr7.png
+[cm530_en1]: /assets/images/faq/cm530_en1.png
+[cm530_en2]: /assets/images/faq/cm530_en2.png
+[cm530_en3]: /assets/images/faq/cm530_en3.png
+[cm530_en4]: /assets/images/faq/cm530_en4.png
+[cm530_en5]: /assets/images/faq/cm530_en5.png
+[cm530_en6]: /assets/images/faq/cm530_en6.png
+[cm530_en7]: /assets/images/faq/cm530_en7.png
