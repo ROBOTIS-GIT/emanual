@@ -66,7 +66,7 @@ This is included in ROBOTIS DREAM II Level 1.
 [IR Sensor]: /docs/en/parts/sensor/irss-10/
 [LED Module]: /docs/en/parts/display/lm-10/
 [Touch Sensor]: /docs/en/parts/sensor/ts-10/
-[How to Download Task code]: /docs/en/faq/download_task_code/
+[How to Download Task code]: /docs/en/faq/download_task_code/#cm-150
 [ex_01]: http://support.robotis.com/en/baggage_files/dream/dream2_l4_musicbox_en.tskx
 [ex_02]: http://support.robotis.com/en/baggage_files/dream/dream2_l4_cleaningrobot_en.tskx
 [ex_02-1]: http://support.robotis.com/en/baggage_files/dream/dream2_l4_cleaningrobot_en(rc).tskx

@@ -20,10 +20,10 @@ sidebar:
 ## [CM-100](#cm-100)
 
 ### Preparation
-1. Please open a task code file(*.tsk) to download from RoboPlus Task.
+1. Please open a task code file(\*.tsk) to download from RoboPlus Task.
   - You can open it by double-clicking.
-  - You can open it by using an 'open a file' function of RoboPlus Task.
-  - You can open it by dragging & dropping  it to  the RoboPlus task with mouse.
+  - You can open it by using the **open a file** function of RoboPlus Task.
+  - You can open it with drag & drop in the RoboPlus task.
 
 2. Connect the contorller([CM-100]) with your PC by using a [USB Downloader(LN-101)].
 3. Connect 2 double AA batteries then turn the power for the controller (CM-100) on.
@@ -60,6 +60,97 @@ sidebar:
 
 5. Execute the task code -> Your robot will move. Turn on the controller and execute the downloaded task code.
 
+## [CM-150](#cm-150)
+
+### Preparation
+1. R+Task 2.0 software must be installed on the PC.  
+   [R+Task 2.0 Download]
+
+2. Open the Task Code file(\*.tsk) from R+Task 2.0.
+
+3. Connect the battery(LBS-041) to the controller(CM-150) and turn on the controller.
+
+4. Connect the controller(CM-150) and the PC using a micro USB cable.
+
+  ![tcdown0][tcdown0]
+
+### Download
+1. Check if PC and the controller are connected with a micro USB cable.
+
+2. Check if the Controller(CM-150) is powered on.
+
+3. Select Device `1` as shown below.
+
+    ![tcdown_en1][tcdown_en1]
+
+4. Select discovered device `2` from the list and click `3` confirm button.
+  - If the device does not appear in the list, check step 1 and 2.
+
+    ![tcdown_en2][tcdown_en2]
+
+5. Select Download `4` as shown below.
+
+    ![tcdown_en3][tcdown_en3]
+
+6. When task code download is completed, a success message will appear.
+
+    ![tcdown_en4][tcdown_en4]
+
+    ![tcdown_en5][tcdown_en5]
+
+
+## [CM-530](#cm-530)
+
+### Preparation
+
+1. RoboPlus software must be installed on the PC.
+
+   [RoboPlus Download]
+
+2. Check if the battery is charged.
+
+3. Download the example file to your PC.
+
+   [Example file Download]
+
+
+### Download
+
+1. Connect the controller([CM-530]) and the PC using a mini USB cable.
+
+    ![cm530_0][cm530_0]
+
+2. Run RoboPlus on the PC and select RoboPlus Task.
+
+    ![cm530_en1][cm530_en1]
+
+3. Select 1.0 for the Firmware Version and CM-530 for the Controller in the below window.
+
+    ![cm530_en2][cm530_en2]
+
+4. Power on the controller and select Communication Port. Selecting **automatic Search** makes it easy to find a port.
+
+    ![cm530_en3][cm530_en3]
+
+    - If the controller is not found, the following message will appear.
+
+    ![cm530_en4][cm530_en4]
+
+    - Read the message and retry connecting to CM-530.
+
+5. Open the example file from RoboPlus.
+
+   ![cm530_en5][cm530_en5]
+
+6. Click the Download button shown below to start downloading the example to the controller.
+
+   ![cm530_en6][cm530_en6]
+
+7. When task code download is successfully completed, below message will appear.
+
+   ![cm530_en7][cm530_en7]
+
+
 # [Videos](#videos)
 
 ## Download RoboPlus Program (for CM-100)
@@ -71,11 +162,30 @@ sidebar:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/UlD4C1XMsgo" frameborder="0" allowfullscreen></iframe>
 
 [CM-100]: /docs/en/parts/controller/cm-100/
+[CM-150]: /docs/en/parts/controller/cm-150/
+[CM-530]: /docs/en/parts/controller/cm-530/
 [USB Downloader(LN-101)]: /docs/en/parts/interface/ln-101/
 [rule check error messages]: /docs/en/software/rplus1/task/task_misc/#rule-check
+[R+Task 2.0 Download]: http://en.robotis.com/service/downloadpage.php?ca_id=10
+[RoboPlus Download]: http://en.robotis.com/service/downloadpage.php?ca_id=10
+[Example file Download]: /docs/en/edu/bioloid/stem/#download
 
 [img_01]: /assets/images/edu/task_download_01.jpg
 [img_02]: /assets/images/edu/task_download_02.png
 [img_03]: /assets/images/edu/task_download_03.png
 [img_04]: /assets/images/edu/task_download_04.png
 [img_05]: /assets/images/edu/task_download_05.png
+[tcdown0]: /assets/images/faq/tcdown0.jpg
+[tcdown_en1]: /assets/images/faq/tcdown_en1.jpg
+[tcdown_en2]: /assets/images/faq/tcdown_en2.jpg
+[tcdown_en3]: /assets/images/faq/tcdown_en3.jpg
+[tcdown_en4]: /assets/images/faq/tcdown_en4.jpg
+[tcdown_en5]: /assets/images/faq/tcdown_en5.jpg
+[cm530_0]: /assets/images/faq/cm530_0.png
+[cm530_en1]: /assets/images/faq/cm530_en1.png
+[cm530_en2]: /assets/images/faq/cm530_en2.png
+[cm530_en3]: /assets/images/faq/cm530_en3.png
+[cm530_en4]: /assets/images/faq/cm530_en4.png
+[cm530_en5]: /assets/images/faq/cm530_en5.png
+[cm530_en6]: /assets/images/faq/cm530_en6.png
+[cm530_en7]: /assets/images/faq/cm530_en7.png
