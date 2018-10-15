@@ -118,28 +118,27 @@ sidebar:
 
 1. Connect the controller([CM-530]) and the PC using a mini USB cable.
 
- ![cm530_0][cm530_0]
+    ![cm530_0][cm530_0]
 
 2. Run RoboPlus on the PC and select RoboPlus Task.
 
- ![cm530_en1][cm530_en1]
+    ![cm530_en1][cm530_en1]
 
 3. Select 1.0 for the Firmware Version and CM-530 for the Controller in the below window.
 
- ![cm530_en2][cm530_en2]
+    ![cm530_en2][cm530_en2]
 
-4. Power on the controller and select Communication Port.  
-Selecting 'automatic Search' makes it easy to find a port.
+4. Power on the controller and select Communication Port. Selecting **automatic Search** makes it easy to find a port.
 
- ![cm530_en3][cm530_en3]
+    ![cm530_en3][cm530_en3]
 
- - If the controller is not found, the following message will appear.
+    - If the controller is not found, the following message will appear.
 
-   ![cm530_en4][cm530_en4]
+    ![cm530_en4][cm530_en4]
 
- - Read the message and retry connecting to CM-530.
+    - Read the message and retry connecting to CM-530.
 
-5. Open the example file from RoboPlus.    
+5. Open the example file from RoboPlus.
 
    ![cm530_en5][cm530_en5]
 
@@ -166,7 +165,7 @@ Selecting 'automatic Search' makes it easy to find a port.
 [CM-150]: /docs/en/parts/controller/cm-150/
 [CM-530]: /docs/en/parts/controller/cm-530/
 [USB Downloader(LN-101)]: /docs/en/parts/interface/ln-101/
-[rule check error messages]:/docs/en/software/rplus1/task/task_misc/#rule-check
+[rule check error messages]: /docs/en/software/rplus1/task/task_misc/#rule-check
 [R+Task 2.0 Download]: http://en.robotis.com/service/downloadpage.php?ca_id=10
 [RoboPlus Download]: http://en.robotis.com/service/downloadpage.php?ca_id=10
 [Example file Download]: /docs/en/edu/bioloid/stem/#download

@@ -111,11 +111,11 @@ sidebar:
 ### 준비
 
 1. RoboPlus 소프트웨어가 PC에 설치되어 있어야 합니다.  
-    [Roboplus 다운로드]   
+    [Roboplus 다운로드]
 
-2. 베터리의 충전상태를 확인합니다.
+2. 배터리의 충전상태를 확인합니다.
 
-3. 사용할 예제 파일을 PC에 미리 다운로드합니다.
+3. 사용할 예제 파일을 PC에 미리 다운로드합니다.  
    [예제 파일 다운로드]
 
 
@@ -123,31 +123,30 @@ sidebar:
 
 1. 미니 USB 케이블을 이용하여 PC와 제어기([CM-530])을 연결합니다.
 
-  ![cm530_0][cm530_0]
+    ![cm530_0][cm530_0]
 
 2. PC에서 RoboPlus를 실행하고 'RoboPlus Task'를 선택합니다.
 
-  ![cm530_kr1][cm530_kr1]
+    ![cm530_kr1][cm530_kr1]
 
 3. 아래 창이 나올 경우 펌웨어 1.0을 체크하고 제어기([CM-530])를 선택합니다.
 
-  ![cm530_kr2][cm530_kr2]
+    ![cm530_kr2][cm530_kr2]
 
-4. 제어기([CM-530])의 전원을 켜고 통신포트를 선택합니다.   
-  자동 찾기를 선택하면 쉽게 포트를 찾을 수 있습니다.
+4. 제어기([CM-530])의 전원을 켜고 통신포트를 선택합니다. **자동 찾기**를 선택하면 쉽게 포트를 찾을 수 있습니다.
 
-   ![cm530_kr3][cm530_kr3]
+    ![cm530_kr3][cm530_kr3]
 
- - 제어기([CM-530])를 찾지 못할 경우 아래와 같은 메시지가 나타납니다.
+    - 제어기([CM-530])를 찾지 못할 경우 아래와 같은 메시지가 나타납니다.
 
-  ![cm530_kr4][cm530_kr4]
+    ![cm530_kr4][cm530_kr4]
 
- - 위 오류 내용을 확인하여 수정하고 다시 포트를 연결합니다.
+    - 위 오류 내용을 확인하여 수정하고 다시 포트를 연결합니다.
 
 
 5. 제어기([CM-530])에 다운로드 할 예제 파일을 RoboPlus에서 불러옵니다.
 
-   ![cm530_kr5][cm530_kr5]
+    ![cm530_kr5][cm530_kr5]
 
 6. 아래 표시된 다운로드 버튼을 눌러 예제 프로그램을 제어기에 다운로드합니다.
 
@@ -178,9 +177,8 @@ sidebar:
 [룰 체크 에러 메시지]: /docs/kr/software/rplus1/task/task_misc/#룰-체크
 [제어기 정보]: /docs/kr/parts/controller/controller_compatibility/
 [R+Task 2.0 다운로드]: http://www.robotis.com/service/downloadpage.php?ca_id=10
-[Roboplus 다운로드]:   
-http://www.robotis.com/service/downloadpage.php?ca_id=10
-[예제 파일 다운로드]:  /docs/kr/edu/bioloid/stem/#다운로드
+[Roboplus 다운로드]: http://www.robotis.com/service/downloadpage.php?ca_id=10
+[예제 파일 다운로드]: /docs/kr/edu/bioloid/stem/#다운로드
 
 
 
