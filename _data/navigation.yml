@@ -9822,6 +9822,16 @@ smart2-2:
 - titlekr: "교안예제"
   urlkr: /edu/smart/smart2-2/#교안예제
 
+smart2-3:
+- titlekr: "개요"
+  urlkr: /edu/smart/smart2-3/#개요
+- titlekr: "부품 목록"
+  urlkr: /edu/smart/smart2-3/#부품-목록
+- titlekr: "작동하기"
+  urlkr: /edu/smart/smart2-3/#작동하기
+- titlekr: "교안예제"
+  urlkr: /edu/smart/smart2-3/#교안예제
+
 smart3-1:
 - titlekr: "개요"
   urlkr: /edu/smart/smart3-1/#개요
