@@ -34,12 +34,12 @@
   position: fixed;
   margin: 5%;
   overflow-y: auto;
-  width: 85vw;
+  left: 10px;
+  right: 10px;
   height: 80vh;
   padding: 1em 3em;
   background-color: #FFF;
-  border-radius: $img-border-radius;
-  border: 1px solid #CCC;
+  border: 3px solid #CCC;
   font-size: 1em;
   z-index: 99;
 } 

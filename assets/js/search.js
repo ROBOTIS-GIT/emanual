@@ -59,26 +59,32 @@ function emanual_search(search_item) {
     
     var results = index.search(search_item, {
         fields: {
-            product: {boost: 10},
-            header1: {boost: 4},
-            header2: {boost: 3},
-            header3: {boost: 2},
-            content: {boost: 1},
+            product: {boost: 1},
+            header1: {boost: 0.7},
+            header2: {boost: 0.5},
+            header3: {boost: 0.3},
+            content: {boost: 0.1},
         }
     });
     
     // console.log(results.length);  
+    search_result_contents += '<div style="color:black; font-weight:600; font-size:1.2em; text-align:left;">' + "Search results for \"" + search_item + "\"" + '</div>';
     if (results.length > 0) {
       var i = 0;
-      search_result_contents += '<i class="fa fa-times fa-2x" aria-hidden="true" onclick=toggle_search_window() style="position:fixed;"></i>' + '<br>' + '<ul style=text-align:left;>';
+      search_result_contents += '<i class="fa fa-times fa-2x" aria-hidden="true" onclick=toggle_search_window() style="position:fixed;"></i>' + '<br>' + '<ol style=text-align:left;font-size:0.9em;>';
       for (i = 0; i < results.length; i++) {
         var result_doc = index.documentStore.getDoc(results[i].ref);
         var result_score = results[i].score;
-        var result_content = jQuery.trim(result_doc.content).substring(0, 200).split(" ").slice(0, -1).join(" ") + "...";
+        if (result_doc.content != '') {
+          var result_content = jQuery.trim(result_doc.content).substring(0, 200).split(" ").slice(0, -1).join(" ") + "...";
+        }
+        else {
+          var result_content = "N/A";
+        }
         // console.log(results);
         
         search_result_contents += '<li>' + "Score : " + result_score + '<br>';
-        search_result_contents += '<a href="' + result_doc.url + '" onclick=toggle_search_window()>' + result_doc.product + " / " + result_doc.header1;
+        search_result_contents += "Location: " + '<a href="' + result_doc.url + '" onclick=toggle_search_window()>' + result_doc.product + " / " + result_doc.header1;
         if (result_doc.header2 != '') {
           search_result_contents += " / " + result_doc.header2;
         }
@@ -86,12 +92,12 @@ function emanual_search(search_item) {
           search_result_contents += " / " + result_doc.header3;
         }
         search_result_contents += '</a></li>';
-        search_result_contents += result_content + '<br><br>';
+        search_result_contents += '<div style="font-style:italic">' + result_content + '</div>' + '<br>';
       }
-      search_result_contents += '</ul>'
+      search_result_contents += '</ol>'
     }
     else {
-      search_result_contents += '<i class="fa fa-times fa-2x" aria-hidden="true" onclick=toggle_search_window() style="position:fixed;"></i>' + '<br><br>' + '<div style="color:red; font-weight:600; font-size:1.5em; text-align:left;">' + "No Results Found with \"" + search_item + "\"" + '</div>';
+      search_result_contents += '<i class="fa fa-times fa-2x" aria-hidden="true" onclick=toggle_search_window() style="position:fixed;"></i>' + '<br><br>' + '<div style="color:red; font-weight:600; font-size:1em; text-align:left;">' + "No Result Found" + '</div>';
       // console.log("No Results Found.");
     }
     toggle_search_window();
