@@ -154,10 +154,15 @@ html {
       height: 40px;
     }
     
+    .search-result {
+      font-size: 0.8em;
+    }
+    
     #search_term {
       height: 40px;
       width: 100vw;
       size: 14px;
+      border-radius: 0;
     }
     
     #search_button {
@@ -516,6 +521,17 @@ html {
       
       .page__footer {
         font-size: 12px;
+      }
+      
+      .search-result {
+        font-size: 0.7em;
+      }
+      
+      #search_term {
+        height: 40px;
+        width: 100vw;
+        size: 14px;
+        border-radius: 0;
       }
     }
   }
