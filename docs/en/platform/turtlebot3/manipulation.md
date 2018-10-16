@@ -16,7 +16,7 @@ sidebar:
 # [Manipulation](#manipulation)
 
 {% capture notice_01 %}
-**NOTE**: 
+**NOTE**:
 - This instructions were tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 - If you want more specfic information about OpenManipulator, please refer to the [OpenManipulator e-Manual](/docs/en/platform/openmanipulator/).
 {% endcapture %}
@@ -34,7 +34,7 @@ sidebar:
 
 ![](/assets/images/platform/turtlebot3/manipulation/tb3_with_opm_logo.png)
 
-The OpenManipulator by ROBOTIS is one of the manipulators that support ROS, and has the advantage of being able to easily manufacture at a low cost by using Dynamixel actuators with 3D printed parts. 
+The OpenManipulator by ROBOTIS is one of the manipulators that support ROS, and has the advantage of being able to easily manufacture at a low cost by using Dynamixel actuators with 3D printed parts.
 
 The OpenManipulator has the advantage of being compatible with TurtleBot3 Waffle and Waffle Pi. Through this compatibility can compensate for the lack of freedom and can have greater completeness as a service robot with the the SLAM and Navigation capabilities that the TurtleBot3 has. TurtleBot3 and OpenManipulator can be used as a `mobile manipulator` and can do things like the following videos.
 
@@ -49,14 +49,14 @@ The OpenManipulator has the advantage of being compatible with TurtleBot3 Waffle
 - Install dependent packages for the OpenManipulator.
 
   ```bash
-  $ sudo apt-get install ros-kinetic-ros-controllers ros-kinetic-gazebo* ros-kinetic-moveit* ros-kinetic-dynamixel-sdk ros-kinetic-dynamixel-workbench-toolbox ros-kinetic-ar-track-alvar ros-kinetic-ar-track-alvar-msgs ros-kinetic-industrial-core 
+  $ sudo apt-get install ros-kinetic-ros-controllers ros-kinetic-gazebo* ros-kinetic-moveit* ros-kinetic-dynamixel-sdk ros-kinetic-dynamixel-workbench-toolbox ros-kinetic-ar-track-alvar ros-kinetic-ar-track-alvar-msgs ros-kinetic-industrial-core
   ```
 
   ```bash
   $ cd ~/catkin_ws/src/
   $ git clone https://github.com/ROBOTIS-GIT/open_manipulator.git
   $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_msgs.git
-  $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_perception.git
+  $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_perceptions.git
   $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_with_tb3.git
   $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_with_tb3_msgs.git
   $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_with_tb3_simulations.git
@@ -71,7 +71,7 @@ The OpenManipulator has the advantage of being compatible with TurtleBot3 Waffle
 
   ```bash
   $ export TURTLEBOT3_MODEL=${TB3_MODEL}
-  $ roslaunch open_manipulator_with_tb3_description open_manipulator_with_tb3_rviz.launch 
+  $ roslaunch open_manipulator_with_tb3_description open_manipulator_with_tb3_rviz.launch
   ```
 
   ![](/assets/images/platform/openmanipulator/TurtleBot3_with_Open_Manipulator.png)
@@ -82,7 +82,7 @@ The OpenManipulator has the advantage of being compatible with TurtleBot3 Waffle
 
   ![](/assets/images/platform/turtlebot3/manipulation/hardware_setup.png)
 
-- First, detach lidar sensor and shift it front of TurtleBot3 (Red circle represents position of bolts). 
+- First, detach lidar sensor and shift it front of TurtleBot3 (Red circle represents position of bolts).
 - Second, attach OpenManipulator on the TurtleBot3 (Yellow circle represents position of bolts).
 
   ![](/assets/images/platform/turtlebot3/manipulation/assemble_points.png)
@@ -107,7 +107,7 @@ The OpenManipulator has the advantage of being compatible with TurtleBot3 Waffle
 
   **NOTE**: If error occurs while uploading firmware, go to `Tools` → `Port` and check if correct port is selected. Press `Reset` button on the OpenCR and try to upload the firmware again.
   {: .notice--info}
-  
+
 - When firmware upload is completed, `jump_to_fw` text string will be printed on the screen.
 
 ## [Bringup](#bringup)
@@ -172,7 +172,7 @@ $ roslaunch open_manipulator_with_tb3_tools open_manipulator_with_tb3_navigation
 
 ## [Pick and Place](#pick-and-place)
 
-We provide the pick and place example for mobile manipulation. This example is launched by controller that is to automatically start and stop navigation stack, MoveIt!, pick and place launch file by communicating ROS messages. User can modified this node to apply their environments. 
+We provide the pick and place example for mobile manipulation. This example is launched by controller that is to automatically start and stop navigation stack, MoveIt!, pick and place launch file by communicating ROS messages. User can modified this node to apply their environments.
 
 ```bash
 $ roslaunch open_manipulator_with_tb3_tools open_manipulator_with_tb3_controller.launch
@@ -188,7 +188,7 @@ $ roslaunch open_manipulator_with_tb3_tools open_manipulator_with_tb3_controller
 
   ```bash
   $ export TURTLEBOT3_MODEL=${TB3_MODEL}
-  $ roslaunch open_manipulator_with_tb3_gazebo open_manipulator_with_tb3_gazebo.launch 
+  $ roslaunch open_manipulator_with_tb3_gazebo open_manipulator_with_tb3_gazebo.launch
   ```
 
   ![](/assets/images/platform/turtlebot3/manipulation/open_manipulator_gazebo_1.png)
