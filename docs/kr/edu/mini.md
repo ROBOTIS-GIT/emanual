@@ -101,7 +101,7 @@ sidebar:
 
 # [시작하기](#시작하기)
 
-## [부품 리스트](#부품-리스트)
+## [부품 목록](#부품-목록)
 
 - [OpenCM9.04]
 - [XL-320]
@@ -306,7 +306,7 @@ Windows 8/8.1에서 제어판을 열기 위해서는 데스크톱 모드에서 �
 - 컬러센서는 `2`번과 `3`번 포트를 이용하세요.
 {% endcapture %}
 
-  <div class="notice--warning">{{ mini_02 | markdownify }}</div>
+<div class="notice--warning">{{ mini_02 | markdownify }}</div>
 
 - 다양한 추가 장치 장착 예제
 

@@ -27,7 +27,7 @@ sidebar:
 올로 교육키트 4단계는 2단계, 3단계 키트의 부품들이 있어야 로봇을 제작할 수 있습니다. 반드시 교육키트 2단계, 3단계를 먼저 구매하시기 바랍니다.  
 {: .notice}
 
-# [부품 리스트](#부품-리스트)
+# [부품 목록](#부품-목록)
 
 
  ![](/assets/images/edu/ollo/edu_4th_partlist_kr.png)
@@ -102,31 +102,31 @@ RC-100 을 이용한 올로와 바이올로이드의 조종은 기본적으로 �
 [RC-100]: /docs/kr/parts/communication/rc-100/
 [제어기]: /docs/kr/parts/controller/controller_compatibility/
 [태스크 코드 다운로드]: /docs/kr/faq/download_task_code/
-[OLLO_L4_SoccerASM_KR.tsk]: http://support.robotis.com/ko/baggage_files/ollo/edu_4th/ollo_l4_soccerasm_kr.tsk
-[OLLO_L4_Soccer_KR.tsk]: http://support.robotis.com/ko/baggage_files/ollo/edu_4th/ollo_l4_soccer_kr.tsk
-[OLLO_L4_LinetracerASM_KR.tsk]: http://support.robotis.com/ko/baggage_files/ollo/edu_4th/ollo_l4_linetracerasm_kr.tsk
-[OLLO_L4_Linetracer_KR.tsk]: http://support.robotis.com/ko/baggage_files/ollo/edu_4th/ollo_l4_linetracer_kr.tsk
-[OLLO_L4_FaceASM_KR.tsk]: http://support.robotis.com/ko/baggage_files/ollo/edu_4th/ollo_l4_faceasm_kr.tsk
-[OLLO_L4_FaceExam_KR.tsk]: http://support.robotis.com/ko/baggage_files/ollo/edu_4th/ollo_l4_faceexam_kr.tsk
-[OLLO_L4_Face_KR.tsk]: http://support.robotis.com/ko/baggage_files/ollo/edu_4th/ollo_l4_face_kr.tsk
-[CM100_L4_MicroMouseASM_KR.tsk]: http://support.robotis.com/ko/baggage_files/ollo/edu_4th/ollo_l4_micromouseasm_kr.tsk
-[OLLO_L4_MicroMouse_KR.tsk]: http://support.robotis.com/ko/baggage_files/ollo/edu_4th/ollo_l4_micromouse_kr.tsk
-[OLLO_L4_CarouselASM_KR.tsk]: http://support.robotis.com/ko/baggage_files/ollo/edu_4th/ollo_l4_carouselasm_kr.tsk
-[OLLO_L4_CarouselExam1_KR.tsk]: http://support.robotis.com/ko/baggage_files/ollo/edu_4th/ollo_l4_carouselexam1_kr.tsk
-[OLLO_L4_CarouselExam2_KR.tsk]: http://support.robotis.com/ko/baggage_files/ollo/edu_4th/ollo_l4_carouselexam2_kr.tsk
-[OLLO_L4_Carousel_KR.tsk]: http://support.robotis.com/ko/baggage_files/ollo/edu_4th/ollo_l4_carousel_kr.tsk
-[OLLO_L4_ExplorerASM_KR.tsk]: http://support.robotis.com/ko/baggage_files/ollo/edu_4th/ollo_l4_explorerasm_kr.tsk
-[OLLO_L4_Explorer_KR.tsk]: http://support.robotis.com/ko/baggage_files/ollo/edu_4th/ollo_l4_explorer_kr.tsk
-[OLLO_L4_ForkliftASM_KR.tsk]: http://support.robotis.com/ko/baggage_files/ollo/edu_4th/ollo_l4_forkliftasm_kr.tsk
-[OLLO_L4_Forklift_KR.tsk]: http://support.robotis.com/ko/baggage_files/ollo/edu_4th/ollo_l4_forklift_kr.tsk
-[OLLO_L4_WarRobotASM_KR.tsk]: http://support.robotis.com/ko/baggage_files/ollo/edu_4th/ollo_l4_warrobotasm_kr.tsk
-[OLLO_L4_WarRobot_KR.tsk]: http://support.robotis.com/ko/baggage_files/ollo/edu_4th/ollo_l4_warrobot_kr.tsk
-[OLLO_L4_DumpTruckASM_KR.tsk]: http://support.robotis.com/ko/baggage_files/ollo/edu_4th/ollo_l4_dumptruckasm_kr.tsk
-[OLLO_L4_DumpTruck_KR.tsk]: http://support.robotis.com/ko/baggage_files/ollo/edu_4th/ollo_l4_dumptruck_kr.tsk
-[OLLO_L4_DanceRobotASM_KR.tsk]: http://support.robotis.com/ko/baggage_files/ollo/edu_4th/ollo_l4_dancerobotasm_kr.tsk
-[OLLO_L4_DanceRobotExam_KR.tsk]: http://support.robotis.com/ko/baggage_files/ollo/edu_4th/ollo_l4_dancerobotexam_kr.tsk
-[OLLO_L4_DanceRobot_KR.tsk]: http://support.robotis.com/ko/baggage_files/ollo/edu_4th/ollo_l4_dancerobot_kr.tsk
-[OLLO_L4_MonkeyASM_KR.tsk]: http://support.robotis.com/ko/baggage_files/ollo/edu_4th/ollo_l4_monkeyasm_kr.tsk
-[OLLO_L4_Monkey_KR.tsk]: http://support.robotis.com/ko/baggage_files/ollo/edu_4th/ollo_l4_monkey_kr.tsk
-[OLLO_L4_RabbitTurtleASM_KR.tsk]: http://support.robotis.com/ko/baggage_files/ollo/edu_4th/ollo_l4_rabbitturtleasm_kr.tsk
-[OLLO_L4_RabbitTurtle_KR.tsk]: http://support.robotis.com/ko/baggage_files/ollo/edu_4th/ollo_l4_rabbitturtle_kr.tsk
+[OLLO_L4_SoccerASM_KR.tsk]: http://www.robotis.com/service/download.php?no=857
+[OLLO_L4_Soccer_KR.tsk]: http://www.robotis.com/service/download.php?no=858
+[OLLO_L4_LinetracerASM_KR.tsk]: http://www.robotis.com/service/download.php?no=849
+[OLLO_L4_Linetracer_KR.tsk]: http://www.robotis.com/service/download.php?no=850
+[OLLO_L4_FaceASM_KR.tsk]: http://www.robotis.com/service/download.php?no=844
+[OLLO_L4_FaceExam_KR.tsk]: http://www.robotis.com/service/download.php?no=845
+[OLLO_L4_Face_KR.tsk]: http://www.robotis.com/service/download.php?no=846
+[CM100_L4_MicroMouseASM_KR.tsk]: http://www.robotis.com/service/download.php?no=851
+[OLLO_L4_MicroMouse_KR.tsk]: http://www.robotis.com/service/download.php?no=852
+[OLLO_L4_CarouselASM_KR.tsk]: http://www.robotis.com/service/download.php?no=833
+[OLLO_L4_CarouselExam1_KR.tsk]: http://www.robotis.com/service/download.php?no=834
+[OLLO_L4_CarouselExam2_KR.tsk]: http://www.robotis.com/service/download.php?no=835
+[OLLO_L4_Carousel_KR.tsk]: http://www.robotis.com/service/download.php?no=836
+[OLLO_L4_ExplorerASM_KR.tsk]: http://www.robotis.com/service/download.php?no=842
+[OLLO_L4_Explorer_KR.tsk]: http://www.robotis.com/service/download.php?no=843
+[OLLO_L4_ForkliftASM_KR.tsk]: http://www.robotis.com/service/download.php?no=847
+[OLLO_L4_Forklift_KR.tsk]: http://www.robotis.com/service/download.php?no=848
+[OLLO_L4_WarRobotASM_KR.tsk]: http://www.robotis.com/service/download.php?no=859
+[OLLO_L4_WarRobot_KR.tsk]: http://www.robotis.com/service/download.php?no=860
+[OLLO_L4_DumpTruckASM_KR.tsk]: http://www.robotis.com/service/download.php?no=840
+[OLLO_L4_DumpTruck_KR.tsk]: http://www.robotis.com/service/download.php?no=841
+[OLLO_L4_DanceRobotASM_KR.tsk]: http://www.robotis.com/service/download.php?no=837
+[OLLO_L4_DanceRobotExam_KR.tsk]: http://www.robotis.com/service/download.php?no=838
+[OLLO_L4_DanceRobot_KR.tsk]: http://www.robotis.com/service/download.php?no=839
+[OLLO_L4_MonkeyASM_KR.tsk]: http://www.robotis.com/service/download.php?no=853
+[OLLO_L4_Monkey_KR.tsk]: http://www.robotis.com/service/download.php?no=854
+[OLLO_L4_RabbitTurtleASM_KR.tsk]: http://www.robotis.com/service/download.php?no=855
+[OLLO_L4_RabbitTurtle_KR.tsk]: http://www.robotis.com/service/download.php?no=856

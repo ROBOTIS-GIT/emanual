@@ -13,6 +13,6 @@ sidebar:
 
 # [FAQ](#faq)
 - [Product Compatibility Guide](/docs/en/parts/controller/controller_compatibility/)
-- [Download Task Code](/docs/en/software/rplus1/task/getting_started/#program-download)
+- [Download Task Code](/docs/en/faq/download_task_code/)
 - [Task Rule Check](/docs/en/software/rplus1/task/task_misc/#rule-check)
 - [CM 510/530 Fuse Replacement](/docs/en/faq/cm_510_530_fuse/)

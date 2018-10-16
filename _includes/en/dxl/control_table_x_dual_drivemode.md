@@ -24,7 +24,8 @@ Therefore, Goal Position, Goal Current, Goal PWM of the Slave DYNAMIXEL will be 
 |Reverse Mode(Twisted)|The Slave DYNAMIXEL is controlled by inverted PWM signal from the Master DYNAMIXEL.<br />Master / Slave DYNAMIXELs have opposite rotational directions.|
 
 **NOTE** : If Master / Slave DYNAMIXELs are not mechanically connected to each other, each DYNAMIXEL could have minor differences during operation.  
-Please mount both DYNAMIXELs as shown in the below image.
+Please mount both DYNAMIXELs as shown in the below image.  
+Please refer to [Connector Information](#connector-information) for cable assembly.  
 {: .notice}
 
 ![](/assets/images/dxl/x/x-series_dual_joint_frame.png)

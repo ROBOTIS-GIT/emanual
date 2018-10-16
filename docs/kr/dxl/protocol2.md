@@ -53,6 +53,7 @@ Packet의 용도를 정의하는 필드
 |0x05|Action|Reg Write 로 미리 등록한 Packet을 실행하는 Instruction|
 |0x06|Factory Reset|컨트롤테이블을 공장 출하 상태의 초기값으로 되돌리는 Instruction|
 |0x08|Reboot|장치를 재부팅 시키는 Instruction|
+|0x10|Clear|장치의 특정 상태를 해제하는 Instruction|
 |0x55|Status(Return)|Instruction Packet 에 대한 Return Instruction|
 |0x82|Sync Read|다수의 장치에 대해서, 동일한 Address에서 동일한 길이의 데이터를 한 번에 읽기 위한 Instruction|
 |0x83|Sync Write|다수의 장치에 대해서, 동일한 Address에 동일한 길이의 데이터를 한 번에 쓰기 위한 Instruction|
@@ -317,7 +318,9 @@ Instruction Packet 의 처리 결과를 나타냄
 ## [Factory Reset](#factory-reset)
 
 ### 설명
-  - Control Table 을 공장 출하 시의 초기값으로 되돌리는 Instruction
+- Control Table 을 공장 출하 시의 초기값으로 되돌리는 Instruction
+- Packet ID가 Broadcast ID(0xFE)이고 Option이 Reset all value(0xFF)일 경우, Factory Reset Instruction(0x06)은 동작하지 않음
+  - MX(2.0) FW42, Dynamixel X 시리즈 FW42 이상부터 적용
 
 ### Parameters
 
@@ -363,6 +366,34 @@ Instruction Packet 의 처리 결과를 나타냄
 |H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|P1|CRC1|CRC2|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |0xFF|0xFF|0xFD|0x00|0x01|0x04|0x00|0x55|0x00|0xA1|0x0C|
+
+## [Clear](#clear)
+
+### 설명
+- 장치의 특정 상태를 해제하는 Instruction
+- 특이사항 : MX(2.0) FW42 이상, Dynamixel X 시리즈 FW42 이상부터 지원
+
+### Parameters
+
+|Instruction Packet|설명|
+|Parameter1|0x01 : 현재 위치의 다수 회전(멀티턴)을 1회전(싱글턴)으로 변경(정지된 상태에서만 사용이 가능. 회전 중일 경우, Status packet은 Error 필드를 통해서 Result Fail(0x01)을 전송)|
+
+### 예제
+
+#### 예제 설명
+- ID1(XM430-W210) : 다수의 회전 정보(멀티턴)을 초기화
+
+#### Clear Instruction Packet
+
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST |  P1  |  P2  |  P3  |  P4  |  P5  | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x08 | 0x00 | **0x10** | **0x01** | 0x44 | 0x58 | 0x4C | 0x22 | 0xB1 | 0xDC |
+
+#### ID 1 Status Packet
+
+|  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST |  P1  | CRC1 | CRC2 |
+|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x04 | 0x00 | 0x55 | 0x00 | 0xA1 | 0x0C |
 
 ## [Sync Read](#sync-read)
 

@@ -26,7 +26,7 @@ sidebar:
 보다 다양한 주변 장치를 이용하여 로봇을 제작 및 프로그래밍 하기 위해서는 [교육키트 3단계]를 구매하시면 됩니다.  
 {: .notice}
 
-# [부품 리스트](#부품-리스트)
+# [부품 목록](#부품-목록)
 
  ![](/assets/images/edu/ollo/edu_2nd_partlist_kr.png)
 
@@ -105,23 +105,23 @@ sidebar:
 |11. 쥐|`다운로드` [OLLO_L2_Mouse_KR.tsk]|
 |12. 여치|`다운로드` [OLLO_L2_Battlebug_KR.tsk]|
 
-[OLLO_L2_Elephant_KR.tsk]: http://support.robotis.com/ko/baggage_files/ollo/edu_2nd/ollo_l2_elephant_kr.tsk
-[OLLO_L2_Windmill_KR.tsk]: http://support.robotis.com/ko/baggage_files/ollo/edu_2nd/ollo_l2_windmill_kr.tsk
-[OLLO_L2_Avoider_KR.tsk]: http://support.robotis.com/ko/baggage_files/ollo/edu_2nd/ollo_l2_avoider_kr.tsk
-[OLLO_L2_DistanceSensor_KR.tsk]: http://support.robotis.com/ko/baggage_files/ollo/edu_2nd/ollo_l2_distancesensor_kr.tsk
-[OLLO_L2_Penguin_KR.tsk]: http://support.robotis.com/ko/baggage_files/ollo/edu_2nd/ollo_l2_penguin_kr.tsk
-[OLLO_L2_CardGiver_KR.tsk]: http://support.robotis.com/ko/baggage_files/ollo/edu_2nd/ollo_l2_cardgiver_kr.tsk
-[OLLO_L2_Seal_KR.tsk]: http://support.robotis.com/ko/baggage_files/ollo/edu_2nd/ollo_l2_seal_kr.tsk
-[OLLO_L2_Linetracer_KR.tsk]: http://support.robotis.com/ko/baggage_files/ollo/edu_2nd/ollo_l2_linetracer_kr.tsk
-[OLLO_L2_Howitzer_KR.tsk]: http://support.robotis.com/ko/baggage_files/ollo/edu_2nd/ollo_l2_howitzer_kr.tsk
-[OLLO_L2_SoundSensor_KR.tsk]: http://support.robotis.com/ko/baggage_files/ollo/edu_2nd/ollo_l2_soundsensor_kr.tsk
-[OLLO_L2_Dancing_KR.tsk]: http://support.robotis.com/ko/baggage_files/ollo/edu_2nd/ollo_l2_dancing_kr.tsk
-[OLLO_L2_Cradle_KR.tsk]: http://support.robotis.com/ko/baggage_files/ollo/edu_2nd/ollo_l2_cradle_kr.tsk
-[OLLO_L2_Ladybug_KR.tsk]: http://support.robotis.com/ko/baggage_files/ollo/edu_2nd/ollo_l2_ladybug_kr.tsk
-[OLLO_L2_WheelPuppy_KR.tsk]: http://support.robotis.com/ko/baggage_files/ollo/edu_2nd/ollo_l2_wheelpuppy_kr.tsk
-[OLLO_L2_Mouse_KR.tsk]: http://support.robotis.com/ko/baggage_files/ollo/edu_2nd/ollo_l2_mouse_kr.tsk
-[OLLO_L2_Battlebug_KR.tsk]: http://support.robotis.com/ko/baggage_files/ollo/edu_2nd/ollo_l2_battlebug_kr.tsk
-[OLLO_L2_Total_KR.tsk]: http://support.robotis.com/ko/baggage_files/ollo/edu_2nd/ollo_l2_total_kr.tsk
+[OLLO_L2_Elephant_KR.tsk]: http://www.robotis.com/service/download.php?no=786
+[OLLO_L2_Windmill_KR.tsk]: http://www.robotis.com/service/download.php?no=796
+[OLLO_L2_Avoider_KR.tsk]: http://www.robotis.com/service/download.php?no=780
+[OLLO_L2_DistanceSensor_KR.tsk]: http://www.robotis.com/service/download.php?no=785
+[OLLO_L2_Penguin_KR.tsk]: http://www.robotis.com/service/download.php?no=791
+[OLLO_L2_CardGiver_KR.tsk]: http://www.robotis.com/service/download.php?no=782
+[OLLO_L2_Seal_KR.tsk]: http://www.robotis.com/service/download.php?no=792
+[OLLO_L2_Linetracer_KR.tsk]: http://www.robotis.com/service/download.php?no=789
+[OLLO_L2_Howitzer_KR.tsk]: http://www.robotis.com/service/download.php?no=787
+[OLLO_L2_SoundSensor_KR.tsk]: http://www.robotis.com/service/download.php?no=793
+[OLLO_L2_Dancing_KR.tsk]: http://www.robotis.com/service/download.php?no=784
+[OLLO_L2_Cradle_KR.tsk]: http://www.robotis.com/service/download.php?no=783
+[OLLO_L2_Ladybug_KR.tsk]: http://www.robotis.com/service/download.php?no=788
+[OLLO_L2_WheelPuppy_KR.tsk]: http://www.robotis.com/service/download.php?no=795
+[OLLO_L2_Mouse_KR.tsk]: http://www.robotis.com/service/download.php?no=790
+[OLLO_L2_Battlebug_KR.tsk]: http://www.robotis.com/service/download.php?no=781
+[OLLO_L2_Total_KR.tsk]: http://www.robotis.com/service/download.php?no=794
 [USB 다운로더(LN-101)]: /docs/kr/parts/interface/ln-101/
 [교육키트 3단계]: /docs/kr/edu/ollo/inventor/
 [CM-100]: /docs/kr/parts/controller/cm-100/

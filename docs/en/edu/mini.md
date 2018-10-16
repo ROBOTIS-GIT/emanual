@@ -15,70 +15,94 @@ sidebar:
 
 ![](/assets/images/edu/mini/mini_product.jpg)
 
-- Awarded the “Good Design” mark
-- Maintains compatibility with the 6mm grid OLLO `ROBOTIS DREAM` frame
+- Awarded the “Good Design”
+- Compatible with the 6mm grid OLLO `ROBOTIS DREAM` frames
 - Applies the small Dynamixel XL-320 for various motion functions
 - Offers the ROBOTIS-MINI exclusive App (Touch, Gesture, Voice Recognition, Messenger)
 - Supports various functions for the user’s convenience (battery percentage, offset setting, etc)
 - Supports R+ Task and R+ Motion
-- Expandability capability with devices such as color Sensor, LED Module, etc
+- Capable to expand with additional devices such as Color Sensor, LED Module, etc
 
 ## [Precaution](#precaution)
 
 Please be aware of your own safety as you assemble. ROBOTIS CO., LTD is not responsible for the result of any accidents caused by the user’s negligence.
 
-1. Safety Precautions
-  - Read through manual carefully before assembly.
-  - Do not use any other tools other than those provided in this kit. (no knives, cutters, drills, etc)
-  - Keep a safe distance from the robot during its activation.
-  - Be careful not to get fingers stuck between the robot joints.
-  - Do not store or operate the robot under direct sunlight.
-  - This project is not water proof. Do not use near water.
-  - Do not use near heat or fire.
-  - Do not disassemble or modify the parts.
-  - Keep all parts out of reach of small children.
-  - Do not drop or use sharp objects with the parts.
-  - Do not connect or let the li-ion battery come in contact  with hair pins, clips, or any metal objects.
-  - Do not bend, twist, or modify the metal part of the li-ion battery.
-  - Do not place the li-ion battery in the microwave or solder any parts.
-  - Do not soak or place the li-ion battery in or near water.
+### [Safety Precautions](#safety-precautions)
+- Read through manual carefully before assembly.
+- Do not use any other tools other than those provided in this kit. (no knives, cutters, drills, etc)
+- Keep a safe distance from the robot during its activation.
+- Be careful not to get fingers stuck between the robot joints.
+- Do not store or operate the robot under direct sunlight.
+- This project is not water proof. Do not use near water.
+- Do not use near heat or fire.
+- Do not disassemble or modify the parts.
+- Keep all parts out of reach of small children.
+- Do not drop or use sharp objects with the parts.
+- Do not connect or let the li-ion battery come in contact with hair pins, clips, or any metal objects.
+- Do not bend, twist, or modify the metal part of the li-ion battery.
+- Do not place the li-ion battery in the microwave or solder any parts.
+- Do not soak or place the li-ion battery in or near water.
 
-2. Assembly Precautions
-  - Use only the designated screw driver in the kit(Size : M2)
-  - Do not use excessive force on nuts, bolts, or robotics parts.
-  - Avoid activating the robot on desks/tables to avoid from falling.
-  - Damages caused from falling are not covered under warranty.
-  - The gears in the Dynamixel XL-320 are subject to wear. Prolonged use, improper modification, excessive force, and accidents will increase the gear to backlash.
+### [Assembly Precautions](#assembly-precautions)
+- Use only the designated screw driver in the kit(Size : M2)
+- Do not use excessive force on nuts, bolts, or robotics parts.
+- Avoid activating the robot on desks/tables to avoid from falling.
+- Damages caused from falling are not covered under warranty.
+- The gears in the Dynamixel XL-320 are subject to wear. Prolonged use, improper modification, excessive force, and damages will increase the gear backlash.
 
-3. Precautions During Use
-  - Charging the Li-ion battery
-  - Insert the li-ion battery in the charger case with the USB connector.
-  - The battery is not charged. Please charge before use.
+### [Precautions During Use](#precautions-during-use)
 
-  ![](/assets/images/edu/mini/mini_001.jpg)
+#### Charging the Li-ion battery
+- Insert the li-ion battery in the charger case with the USB connector.
+- The battery is shipped as uncharged. Please fully charge the battery before the first time use.
 
-  - Frame Assembly for Dynamixel XL-320
+![](/assets/images/edu/mini/mini_001.jpg)
 
-    There are two different marks on the horn. Top marked and the bottom marked Before assembly, make sure the marks are in their proper position.
+#### Frame Assembly for Dynamixel XL-320
 
-    ![](/assets/images/edu/mini/mini_002.jpg)
+There are two different marks on the horn. Top marked and the bottom marked Before assembly, make sure the marks are in their proper position.
 
-  - Checking the percentage of the li-ion battery
+![](/assets/images/edu/mini/mini_002_en.jpg)
 
-    The controller checks the battery percentage when the power is turned on.
+#### How to use the Rivet Tool
 
-|Status|Movement|
-|:---:|:---:|
-|Good Battery Percentage|All LEDs blink in RED 1 time|
-|Insufficient Battery Percentage|All LEDs blink in RED 5 times|
+The Rivet is a simple tool to assemble plates.  
+The `Rivet` is made up of a pair of `pin` and `pinhole`.  
+
+![](/assets/images/edu/mini/darwin_mini_2_en.jpg)
+
+In order to remove the rivet pick the pin head with the tool and pull it up.
+
+![](/assets/images/edu/mini/darwin_mini_3_en.jpg)
+
+In order to reuse the removed rivet, pinhole should fit into the hole first then pin should be inserted.
+
+![](/assets/images/edu/mini/darwin_mini_4_en.jpg)
+
+Try using provided tool when re-inserting the removed rivet.  
+Hold the rivet with the tool and insert the pinhole into the plate hole.
+
+![](/assets/images/edu/mini/darwin_mini_5.jpg)
+
+#### Checking the li-ion battery voltage
+
+The controller checks the battery voltage when the power is turned on.
+
+|   Status    |           Movement            |
+|:-----------:|:-----------------------------:|
+|    Good     | All LEDs blink in RED 1 time  |
+| Low Battery | All LEDs blink in RED 5 times |
+
+**NOTE** : The controller acquires voltage from a specific Dynamixel(ID 3) so ID 3 should be connected properly.
+{: .notice}
 
 {% capture mini_warning_01 %}
-`WARNING` Please immediately turn off the power and contact ROBOTIS when you encounter any of the following symptoms.
-- When you see smoke from the product
-- When the LED on the Dynamixel XL-320 does not blink during the ‘Actuator Test.’
+**WARNING** : Please immediately turn off the power and contact ROBOTIS when you encounter any of the following symptoms.
+- When you see smoke from the product.
+- When the LED on the Dynamixel XL-320 does not blink during the [`Actuator Test`](/docs/en/edu/mini/).
 - When the robot has been exposed to water or any debris has gone into the parts.
-- When you smell anything odd
-- When the robot is damaged
+- When you feel odd smell from the product.
+- When the robot is damaged.
 {% endcapture %}
 
 <div class="notice--warning">{{ mini_warning_01 | markdownify }}</div>
@@ -87,14 +111,23 @@ Please be aware of your own safety as you assemble. ROBOTIS CO., LTD is not resp
 
 ## [Part List](#part-list)
 
+- [OpenCM9.04]
+- [XL-320]
+
 ![](/assets/images/edu/mini/mini_partlist_en.jpg)
 
 ## [Preparation](#preparation)
 
+### [ROBOTIS MINI App](#robotis-mini-app)
+
+ROBOTIS MINI App for smart device supports various operations. Please refer to [Operating MINI](#operating-mini) section for installing and operating the app.
+
 ### [Connect to MINI](#connect-to-mini)
 
-Bluetooth must be installed in your computer to connect it to ROBOTIS MINI. If you do not have it installed, you must purchase a Bluetooth dongle.  If you already have Bluetooth, use the method below to register ROBOTIS MINI’s Bluetooth (BT-210) to your computer(The instruction below is based on  Windows 7/8/8.1).
+Bluetooth device must be installed in your computer to connect to ROBOTIS MINI. If you do not have it installed, you must purchase a Bluetooth dongle. If you already have a Bluetooth device, use the method below to register ROBOTIS MINI’s Bluetooth (BT-210) to your computer(The instruction below is based on Windows 7/8/8.1).
 {: .notice}
+
+#### For Windows 7 / 8 / 8.1
 
 For Windows 8/8.1, to open the `Control Panel` click on the right side of the charm bar then click `Setting`.
 {: .notice}
@@ -137,6 +170,32 @@ For Windows 8/8.1, to open the `Control Panel` click on the right side of the ch
 3. Check the COM port under the ‘Hardware’ tab.
 
     ![](/assets/images/edu/mini/mini_011.jpg)
+
+#### For Windows 10
+
+1. Open Windows Setting menu and select `Devices`
+
+    ![](/assets/images/edu/mini/mini_bt_win10_01.png)
+
+2. Select the `Bluetooth & other devices` tab on the left column and click `Add Bluetooth or other device` button on the right column.
+
+    ![](/assets/images/edu/mini/mini_bt_win10_02.png)
+
+3. In the popped up window, select `Bluetooth`.
+
+    ![](/assets/images/edu/mini/mini_bt_win10_03.png)
+
+4. Search for the Bluetooth module. The last two characters in the device name should be matching to the last two characters of the Bluetooth module ID.
+
+    ![](/assets/images/edu/mini/mini_bt_win10_04.png)
+
+5. Enter the default PIN `0000` and click the Connect button.
+
+    ![](/assets/images/edu/mini/mini_bt_win10_05.png)
+
+6. If BT-210 Bluetooth module is successfully paired, below message will appear.
+
+    ![](/assets/images/edu/mini/mini_bt_win10_06.png)
 
 # [Operating MINI](#operating-mini)
 
@@ -365,3 +424,7 @@ Please follow the procedure below to recover or update the ROBOTIS MINI’s cont
 ## [ID Map](#id-map)
 
 ![](/assets/images/edu/mini/mini_027.jpg)
+
+
+[OpenCM9.04]: /docs/en/parts/controller/opencm904/
+[XL-320]: /docs/en/dxl/x/xl320/

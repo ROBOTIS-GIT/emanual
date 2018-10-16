@@ -20,7 +20,7 @@ sidebar:
 로보티즈 IoT 1단계에서 프로그램 학습을 하기 위해서는 스크래치2 오프라인 에디터와 로보플러스 스크래치를 설치해야 합니다.
 
 
-# [부품 리스트](#부품-리스트)
+# [부품 목록](#부품-목록)
 
 ![](/assets/images/edu/iot/robotis_iot_l1_partlist_kr.png)
 
@@ -75,7 +75,7 @@ sidebar:
 [서보모터]: /docs/kr/parts/motor/servo_motor/
 [적외선 센서]: /docs/kr/parts/sensor/irss-10/
 [LED 모듈]: /docs/kr/parts/display/lm-10/
-[스크래치2 오프라인 에디터, R+ 스크래치 설치 및 예제 실행 방법 바로가기]: /docs/kr/software/rplus2/scratch/#제어기를-pc에-연결하기
+[스크래치2 오프라인 에디터, R+ 스크래치 설치 및 예제 실행 방법]: /docs/kr/software/rplus2/scratch/#scratch2offline-설치
 [교안예제]: #교안예제
 [예제의 실행 방법]: /docs/kr/edu/ollo/bugkit/#태스크-코드-다운로드
 [IoT_L1_1_Hello(p)_KR]: http://support.robotis.com/ko/baggage_files/iot/iot_l1_1_hello(p)_kr.sb2

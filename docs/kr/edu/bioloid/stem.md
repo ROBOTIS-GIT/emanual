@@ -15,13 +15,13 @@ sidebar:
 
 # [시작하기](#시작하기)
 
-## [Level 1 부품 리스트](#level-1-부품-리스트)
+## [Level 1 부품 목록](#level-1-부품-목록)
 
 ![](/assets/images/edu/bioloid/pr05_e01_standard_partlist_01_KR.png)
 
 ![](/assets/images/edu/bioloid/pr05_e01_standard_partlist_02_KR.png)
 
-## [Level 2 부품 리스트](#level-2-부품-리스트)
+## [Level 2 부품 목록](#level-2-부품-목록)
 
 ![](/assets/images/edu/bioloid/pr05_e01_expansion_partlist_01_KR.png)
 
@@ -36,7 +36,8 @@ sidebar:
 ## [작동하기](#작동하기)
 
 ### 프로그램 다운로드
-- [STEM Level 1 예제], [STEM Level 2 예제] 페이지에서 동작시키고자 하는 예제 로봇에 맞는 테스크 코드와 모션 파일을 로봇에 다운로드 합니다.
+- [STEM Level 1 예제], [STEM Level 2 예제] 페이지에서 동작시키고자 하는 예제 로봇에 맞는 태스크 코드와 모션 파일을 로봇에 다운로드 합니다.  
+  [제어기에 태스크 코드 다운로드 하기]
 
 {% include kr/parts/controller/cm510_530_turnon.md %}
 
@@ -112,7 +113,7 @@ sidebar:
 [적외선 센서]: /docs/kr/parts/sensor/irss-10/
 [STEM Level 1 예제]: #stem-level-1-예제
 [STEM Level 2 예제]: #stem-level-2-예제
-[태스크 코드 다운로드 방법]: #태스크-코드-다운로드
+[제어기에 태스크 코드 다운로드 하기]: /docs/kr/faq/download_task_code/#cm-530
 [모션 파일 다운로드 방법]: #모션-파일-다운로드
 [BIO_STEM_SequenceRacer1_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_stem_sequenceracer1_kr.tsk
 [BIO_STEM_SequenceRacer2_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_stem_sequenceracer2_kr.tsk

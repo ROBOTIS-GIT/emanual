@@ -20,7 +20,7 @@ sidebar:
 로보티즈 드림II 3단계의 프로그램은 사용자가 직접 프로그램 학습 및 다운로드를 해야합니다. 다운로드를 위해서는 로보티즈 드림II 1단계에 포함되어 있는 USB 케이블을 이용해서 다운로드 할 수 있습니다.
 보다 다양한 주변 장치를 이용하여 로봇을 제작 및 프로그래밍하기 위해서는 로보티즈 드림II 4단계를 구매하시면 됩니다.
 
-# [부품 리스트](#부품-리스트)
+# [부품 목록](#부품-목록)
 
 ![](/assets/images/edu/dream/dream2/e-manual_dreamⅡ_lv3_partlist_kr.jpg)
 
@@ -53,7 +53,7 @@ sidebar:
 
 [서보 모터]: /docs/kr/parts/motor/servo_motor/
 [RC-100B]: /docs/kr/parts/communication/rc-100/
-[예제 태스크 코드의 다운로드 방법]: /docs/kr/software/rplus2/task/#다운로드-하기
+[예제 태스크 코드의 다운로드 방법]: /docs/kr/faq/download_task_code/#cm-150
 [DREAM2_L3_Security_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l3_security_kr.tskx
 [DREAM2_L3_NoiseMeter_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l3_noisemeter_kr.tskx
 [DREAM2_L3_FourWheeled_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l3_fourwheeled_kr.tskx

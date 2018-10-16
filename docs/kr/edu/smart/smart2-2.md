@@ -29,7 +29,7 @@ sidebar:
 {: .notice}
 
 
-# [부품 리스트](#부품-리스트)
+# [부품 목록](#부품-목록)
 
 ![](/assets/images/edu/smart/smart2-2_e-manual.jpg)
 

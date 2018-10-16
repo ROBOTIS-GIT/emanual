@@ -13,9 +13,13 @@
   <head>
     {% include head.html %}
     {% include head/custom.html %}
+    <script type="text/javascript" src="/assets/js/plugins/elasticlunr.js"></script>
+    <script src="/assets/js/search.js"></script>
+    <!-- <script type="text/javascript" src="/assets/js/plugins/lunr.js"></script> -->
     <script>
       var toggle_google = 0;
       var toggle_search_tool = 0;
+      var toggle_search_result = 0;
       var mobile_width = 960;
 
       function extendgoogletool() {
@@ -56,15 +60,6 @@
     		alignTop: true,
     		overflowY: 'scroll' // as we know that popup content is tall we set scroll overflow by default to avoid jump
     	});
-      
-      // Implmentation for Local search engine with JSON file
-      // $.getJSON('/test.json', function(idx) {
-      //   $.each(idx, function(v){
-      //     console.log(v);
-      //     console.log(idx[v].header3);
-      //   })
-      // });
-      
     });
     </script>
     <script>
@@ -92,7 +87,7 @@
                 //Check if Buttoned ToC with children
                 // console.log(searchTocId);
                 if( searchTocId.prop("tagName") == "INPUT" ) {
-                  console.log("input detected");
+                  // console.log("input detected");
                   if( searchTocId.prop("name") == "sublevel" ) {
                     searchTocId.closest("li.has-grandchildren").find("label > button").addClass("current_contents");
                   }
@@ -114,13 +109,13 @@
     </script>
     <script>
       window.onscroll = function () {
-        var offset = 64 - window.pageYOffset;
+        var offset = 64 - $(window).scrollTop();
         if(offset < 0) { offset = 0; }
         $(".sidebar__left").css("top", offset);       //sticky sidebar
         $(".extend_sidebar").css("top", offset);
         $(".local_navigation").css("top", offset);    //sticky local navigation
         $(".searchbox").css("top", offset);           //sticky searchbox
-        // console.log($(window).scrollTop());
+        // console.log(offset);
       };
     </script>
     <script>

@@ -184,6 +184,8 @@ Connects two LBS-04 Lithium-ion battery.
 ### [Dynamixel TTL 3 PIN](#dynamixel-ttl-3-pin)
 Port for daisy chaining Dynamixels that use 3-pin cables (Dynamixel TTL Bus).
 
+{% include en/dxl/pinout_warning.md %}
+
 ### [Communication Port](#communication-port)
 Used from wired/wireless communication using peripheral devices (i.e. BT-210, BT-110A, ZIG-110A, LN-101, etc). OpenCM9.04’s 4-pin communication port uses Serial2(USART2).
 
@@ -243,7 +245,7 @@ JTAG/SWD 4-pin port can be used for various developments by advanced users. ST-L
 
 > Example: ST-LINK and OpenCM9.04 connection
 
-### [5-pin Port](#5-pin-port)
+### [ROBOTIS 5-Pin Port](#robotis-5-pin-port)
 Used to connect ROBOTIS 5-pin devices (modules).
 
 ![](/assets/images/parts/controller/opencm904/opencm904_12.png)

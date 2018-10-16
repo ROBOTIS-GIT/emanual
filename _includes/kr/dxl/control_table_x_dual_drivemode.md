@@ -22,7 +22,7 @@ Slave Dynamixel은 동기화 케이블을 통해 전달된 Master Dynamixel의 P
 |일반 모드용|	Slave Dynamixel은 Master Dynamixel의 PWM 신호에 의해서 제어됩니다.<br />즉, Master/Slave Dynamixel의 회전방향은 동일합니다.|
 |리버스 모드용(Twisted)|Slave Dynamixel은 Master Dynamixel의 반전된 PWM 신호에 의해서 제어됩니다.<br />즉, Master/Slave Dynamixel의 회전방향은 서로 반대방향이 됩니다.|
 
-**참고** : Master와 Slave가 하드웨어적으로 연결되어있지않으면 로드차이에 의해 조금씩 다르게 구동됩니다. 아래와 같이 프레임으로 연결하신후 듀얼모드를 사용해주세요.
+**참고** : Master와 Slave가 하드웨어적으로 연결되어있지않으면 로드차이에 의해 조금씩 다르게 구동됩니다. 아래와 같이 프레임으로 연결하신후 듀얼모드를 사용해주세요. 배선은 커넥터 정보를 참고해주세요.
 {: .notice}
 
 ![](/assets/images/dxl/x/x-series_dual_joint_frame.png)

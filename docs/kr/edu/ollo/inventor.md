@@ -21,13 +21,13 @@ sidebar:
 올로 교육키트 (로봇 수업용) 3단계는 2단계 키트와 결합되어 총 12주차의 프로그래밍 학습과 센서들의 활용, 무선 조종 프로그래밍, 원리의 이해, 문제풀이 등의 과정을 제공합니다.  
 12회에 걸쳐 로봇을 순서대로 만들면서 로봇 제작의 원리를 학습할 수 있습니다.
 
-**주의**: 올로 3단계는 현재 **단종**되어 더 이상 판매되지 않습니다.
+**주의**: 올로 3단계는 현재 **단종** 되어 더 이상 판매되지 않습니다.
 {: .notice--warninig}
 
 올로 교육키트 3단계는 2단계 키트의 부품들이 있어야 로봇을 제작할 수 있습니다. 반드시 교육키트 2단계를 먼저 구매하시기 바랍니다.  
 {: .notice}
 
-# [부품 리스트](#부품-리스트)
+# [부품 목록](#부품-목록)
 
  ![](/assets/images/edu/ollo/edu_3rd_partlist_kr.png)
 
@@ -114,39 +114,39 @@ RC-100 을 이용한 올로와 바이올로이드의 조종은 기본적으로 �
 [ZIG-110 set]: /docs/kr/parts/communication/zig-110/
 [제어기]: /docs/kr/parts/controller/controller_compatibility/
 [태스크 코드 다운로드]: /docs/kr/faq/download_task_code/
-[I-1-1_1]: http://support.robotis.com/ko/baggage_files/ollo/edu_3rd/ollo_l3_crossinggateasm_kr.tsk
-[I-1-1_2]: http://support.robotis.com/ko/baggage_files/ollo/edu_3rd/ollo_l3_crossinggateexam_kr.tsk
-[I-1-1_3]: http://support.robotis.com/ko/baggage_files/ollo/edu_3rd/ollo_l3_crossinggate_kr.tsk
-[I-1-2_1]: http://support.robotis.com/ko/baggage_files/ollo/edu_3rd/ollo_l3_bumpcarasm_kr.tsk
-[I-1-2_2]: http://support.robotis.com/ko/baggage_files/ollo/edu_3rd/ollo_l3_bumpcarexam_kr.tsk
-[I-1-2_3]: http://support.robotis.com/ko/baggage_files/ollo/edu_3rd/ollo_l3_bumpcar_kr.tsk
-[I-1-3_1]: http://support.robotis.com/ko/baggage_files/ollo/edu_3rd/ollo_l3_probingcarasm_kr.tsk
-[I-1-3_2]: http://support.robotis.com/ko/baggage_files/ollo/edu_3rd/ollo_l3_probingcarexam_kr.tsk
-[I-1-3_3]: http://support.robotis.com/ko/baggage_files/ollo/edu_3rd/ollo_l3_probingcar_kr.tsk
-[I-1-4_1]: http://support.robotis.com/ko/baggage_files/ollo/edu_3rd/ollo_l3_guitarasm_kr.tsk
-[I-1-4_2]: http://support.robotis.com/ko/baggage_files/ollo/edu_3rd/ollo_l3_guitarexam_kr.tsk
-[I-1-4_3]: http://support.robotis.com/ko/baggage_files/ollo/edu_3rd/ollo_l3_guitar_kr.tsk
-[I-2-1_1]: http://support.robotis.com/ko/baggage_files/ollo/edu_3rd/ollo_l3_birdasm_kr.tsk
-[I-2-1_2]: http://support.robotis.com/ko/baggage_files/ollo/edu_3rd/ollo_l3_birdexam_kr.tsk
-[I-2-1_3]: http://support.robotis.com/ko/baggage_files/ollo/edu_3rd/ollo_l3_bird_kr.tsk
-[I-2-2_1]: http://support.robotis.com/ko/baggage_files/ollo/edu_3rd/ollo_l3_craneasm_kr.tsk
-[I-2-2_2]: http://support.robotis.com/ko/baggage_files/ollo/edu_3rd/ollo_l3_craneexam_kr.tsk
-[I-2-2_3]: http://support.robotis.com/ko/baggage_files/ollo/edu_3rd/ollo_l3_crane_kr.tsk
-[I-2-3_1]: http://support.robotis.com/ko/baggage_files/ollo/edu_3rd/ollo_l3_combatcarasm_kr.tsk
-[I-2-3_3]: http://support.robotis.com/ko/baggage_files/ollo/edu_3rd/ollo_l3_combatcar_kr.tsk
-[I-2-4_1]: http://support.robotis.com/ko/baggage_files/ollo/edu_3rd/ollo_l3_tankasm_kr.tsk
-[I-2-4_2]: http://support.robotis.com/ko/baggage_files/ollo/edu_3rd/ollo_l3_tankexam_kr.tsk
-[I-2-4_3]: http://support.robotis.com/ko/baggage_files/ollo/edu_3rd/ollo_l3_tank_kr.tsk
-[I-3-1_1]: http://support.robotis.com/ko/baggage_files/ollo/edu_3rd/ollo_l3_flaggameasm_kr.tsk
-[I-3-1_2]: http://support.robotis.com/ko/baggage_files/ollo/edu_3rd/ollo_l3_flaggameexam_kr.tsk
-[I-3-1_3]: http://support.robotis.com/ko/baggage_files/ollo/edu_3rd/ollo_l3_flaggame_kr.tsk
-[I-3-2_1]: http://support.robotis.com/ko/baggage_files/ollo/edu_3rd/ollo_l3_battlebugasm_kr.tsk
-[I-3-2_2]: http://support.robotis.com/ko/baggage_files/ollo/edu_3rd/ollo_l3_battlebugexam_kr.tsk
-[I-3-2_3]: http://support.robotis.com/ko/baggage_files/ollo/edu_3rd/ollo_l3_battlebug_kr.tsk
-[I-3-3_1]: http://support.robotis.com/ko/baggage_files/ollo/edu_3rd/ollo_l3_knightasm_kr.tsk
-[I-3-3_2]: http://support.robotis.com/ko/baggage_files/ollo/edu_3rd/ollo_l3_knightexam_kr.tsk
-[I-3-3_3]: http://support.robotis.com/ko/baggage_files/ollo/edu_3rd/ollo_l3_knight_kr.tsk
-[I-3-4_1]: http://support.robotis.com/ko/baggage_files/ollo/edu_3rd/ollo_l3_racingcarasm_kr.tsk
-[I-3-4_2]: http://support.robotis.com/ko/baggage_files/ollo/edu_3rd/ollo_l3_racingcarexam1_kr.tsk
-[I-3-4_3]: http://support.robotis.com/ko/baggage_files/ollo/edu_3rd/ollo_l3_racingcarexam2_kr.tsk
-[I-3-4_4]: http://support.robotis.com/ko/baggage_files/ollo/edu_3rd/ollo_l3_racingcar_kr.tsk
+[I-1-1_1]: http://www.robotis.com/service/download.php?no=812
+[I-1-1_2]: http://www.robotis.com/service/download.php?no=813
+[I-1-1_3]: http://www.robotis.com/service/download.php?no=811
+[I-1-2_1]: http://www.robotis.com/service/download.php?no=804
+[I-1-2_2]: http://www.robotis.com/service/download.php?no=805
+[I-1-2_3]: http://www.robotis.com/service/download.php?no=803
+[I-1-3_1]: http://www.robotis.com/service/download.php?no=823
+[I-1-3_2]: http://www.robotis.com/service/download.php?no=824
+[I-1-3_3]: http://www.robotis.com/service/download.php?no=825
+[I-1-4_1]: http://www.robotis.com/service/download.php?no=817
+[I-1-4_2]: http://www.robotis.com/service/download.php?no=818
+[I-1-4_3]: http://www.robotis.com/service/download.php?no=819
+[I-2-1_1]: http://www.robotis.com/service/download.php?no=801
+[I-2-1_2]: http://www.robotis.com/service/download.php?no=802
+[I-2-1_3]: http://www.robotis.com/service/download.php?no=800
+[I-2-2_1]: http://www.robotis.com/service/download.php?no=809
+[I-2-2_2]: http://www.robotis.com/service/download.php?no=810
+[I-2-2_3]: http://www.robotis.com/service/download.php?no=808
+[I-2-3_1]: http://www.robotis.com/service/download.php?no=807
+[I-2-3_3]: http://www.robotis.com/service/download.php?no=806
+[I-2-4_1]: http://www.robotis.com/service/download.php?no=830
+[I-2-4_2]: http://www.robotis.com/service/download.php?no=831
+[I-2-4_3]: http://www.robotis.com/service/download.php?no=832
+[I-3-1_1]: http://www.robotis.com/service/download.php?no=815
+[I-3-1_2]: http://www.robotis.com/service/download.php?no=816
+[I-3-1_3]: http://www.robotis.com/service/download.php?no=814
+[I-3-2_1]: http://www.robotis.com/service/download.php?no=797
+[I-3-2_2]: http://www.robotis.com/service/download.php?no=798
+[I-3-2_3]: http://www.robotis.com/service/download.php?no=799
+[I-3-3_1]: http://www.robotis.com/service/download.php?no=820
+[I-3-3_2]: http://www.robotis.com/service/download.php?no=821
+[I-3-3_3]: http://www.robotis.com/service/download.php?no=822
+[I-3-4_1]: http://www.robotis.com/service/download.php?no=826
+[I-3-4_2]: http://www.robotis.com/service/download.php?no=827
+[I-3-4_3]: http://www.robotis.com/service/download.php?no=828
+[I-3-4_4]: http://www.robotis.com/service/download.php?no=829
