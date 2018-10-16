@@ -37,12 +37,13 @@ sidebar:
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/python/windows/library_file/b1.png)
 
 ### [Building the Library](#building-the-library)
-
-* Run setup.py by entering following command on the command prompt (`python setup.py install`).
+* Go to the [`DynamixelSDK folder`] following command on the command prompt. (`cd [DynamixelSDK folder]\python`).
+ Run setup.py by entering following command on the command prompt (`python setup.py install`).
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/python/windows/library_file/py3.png)
 
-  ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/python/windows/library_file/py5.png)
+  ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/python/windows/library_file/py4.png)
+
 
 ### [Building and Running the Sample Code](#building-and-running-the-sample-code)
 
@@ -50,7 +51,7 @@ The Dynamixel SDK example code for Python uses the library files built in previo
 
 #### Run Example
 
-* Open `python` folder with `Atom`. Modify the settings that is needed for the Dynamixel control. 
+* Open `python` folder with `Atom`. Modify the settings that is needed for the Dynamixel control.
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/python/windows/sample_code/py2.png)
 
@@ -59,6 +60,6 @@ The Dynamixel SDK example code for Python uses the library files built in previo
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/python/windows/sample_code/py4.png)
 
-* Or run it manually through command prompt, using `cd`. 
+* Or run it manually through command prompt, using `cd`.
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/python/windows/sample_code/py6.png)
