@@ -50,7 +50,7 @@ sidebar:
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/java/windows/library_file/b4.png)
 
-* Move folder to `[DynamixelSDK folder]/java/dynamixel_functions_java/` 
+* Move folder to `[DynamixelSDK folder]/java/dynamixel_functions_java/`
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/java/windows/library_file/b5.png)
 
@@ -59,8 +59,6 @@ sidebar:
 * The function reference file is located in `[DynamixelSDK folder]/java/dynamixel_functions_java/x86 or x64/Dynamixel.java`
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/java/windows/library_file/2.png)
-
-  ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/java/windows/library_file/3.png)
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/java/windows/library_file/1.png)
 
@@ -72,7 +70,7 @@ Each released Dynamixel SDK have latest library files in `[DynamixelSDK folder]/
 
 #### Make Java Project
 
-* Set workspace 
+* Set workspace
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/java/windows/sample_code/1.png)
 
@@ -90,49 +88,49 @@ Each released Dynamixel SDK have latest library files in `[DynamixelSDK folder]/
 
 #### Import function reference
 
-* Click `Link Additional Source to Project`
+* Open `Configure Build Path`
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/java/windows/sample_code/6.png)
 
+* Click `Link Additional Source to Project`
+
+    ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/java/windows/sample_code/7.png)
+
 * Click Browse
-
-  ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/java/windows/sample_code/7.png)
-
-* Select the folder `output` in `c` language folder, then click `ok`
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/java/windows/sample_code/8.png)
 
-* Click `Finish`
+* Select the folder `output` in `c` language folder, then click `ok`
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/java/windows/sample_code/9.png)
+
+* Click `Finish`
+
+  ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/java/windows/sample_code/10.png)
 
 
 ##### Import DynamixelSDK library
 
 * Click `Link Additional Source to Project`
 
-  ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/java/windows/sample_code/10.png)
+  ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/java/windows/sample_code/11.png)
 
 * Click Browse
 
-  ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/java/windows/sample_code/11.png)
-
-* Select the folder `x86` in `java` language folder, then click `ok`  
-  (for x64 platform, select `[DynamixelSDK folder]/java/dynamixel_functions_java/x64`)
-
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/java/windows/sample_code/12.png)
 
-* Click `Finish`
+* Select the folder `x64` in `java` language folder, then click `ok`  
+  (for x86 platform, select `[DynamixelSDK folder]/java/dynamixel_functions_java/x86`)
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/java/windows/sample_code/13.png)
 
-#### Import JNA
-
-* Go to Libraries on the screen. 
+* Tpye `Folder name` and Click `Finish`
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/java/windows/sample_code/14.png)
 
-* Click `Add External JARs`
+#### Import JNA
+
+* Go to `Libraries` tap and Click `Add External JARs`.
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/java/windows/sample_code/15.png)
 
@@ -140,7 +138,7 @@ Each released Dynamixel SDK have latest library files in `[DynamixelSDK folder]/
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/java/windows/sample_code/16.png)
 
-* Click `Finish`
+* Click `Apply and Close`
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/java/windows/sample_code/17.png)
 
@@ -150,10 +148,10 @@ Each released Dynamixel SDK have latest library files in `[DynamixelSDK folder]/
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/java/windows/sample_code/18.png)
 
-* Adjust the values surrounded with red circle to proper value as shown in the comment. 
+* Adjust the values surrounded with red circle to proper value as shown in the comment.
 
-  ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/java/windows/sample_code/20.png)
+  ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/java/windows/sample_code/19.png)
 
 * Click `Run` in the Eclipse toolbox above. Console window will show the results
 
-  ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/java/windows/sample_code/21.png)
+  ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/java/windows/sample_code/20.png)

@@ -41,8 +41,12 @@ sidebar:
   * Platform Toolset: `Visual Studio 20XX (v000)`
   * Configuration Type: `Dynamic Library (.dll)`.
 
-
+{% capture notice_01 %}
+**WARNING**:
 If the library file should be built in lower or higher version Visual Studio, change the `Platform Toolset` into the needed value. (ex: To use the DynamixelSDK c ver. library file in the MATLAB 2010 or LabVIEW 2010, the `Platform Toolset` should be changed into `Visual Studio 2009` or lower one.)
+{% endcapture %}
+<div class="notice--warning">{{ notice_01 | markdownify }}</div>
+
 
 ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/c/windows/library_file/3.png)
 
