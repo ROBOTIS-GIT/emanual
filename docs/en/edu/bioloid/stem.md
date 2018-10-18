@@ -44,7 +44,8 @@ sidebar:
 
 ### Download the Program
 
-You can find task codes and motion files for other actions on the [Standard](#standard-examples), [Expansion](#expansion-examples) page.
+You can find task codes and motion files for other actions on the [Standard](#standard-examples), [Expansion](#expansion-examples) page.  
+[How to download Task Code to controller]
 
 {% include en/parts/controller/cm510_530_turnon.md %}
 
@@ -114,6 +115,7 @@ You can find task codes and motion files for other actions on the [Standard](#st
 [AX-12A]: /docs/en/dxl/ax/ax-12a/
 [IR Sensor Array]: /docs/en/parts/sensor/ir_array/
 [IR Sensor]: /docs/en/parts/sensor/irss-10/
+[How to download Task Code to controller]: /docs/en/faq/download_task_code/#cm-530
 
 [img_adv_ex_01]: /assets/images/edu/bioloid/stem_sequenceracer.jpg
 [img_adv_ex_02]: /assets/images/edu/bioloid/stem_bugfighter.jpg

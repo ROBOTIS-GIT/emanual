@@ -31,8 +31,12 @@ sidebar:
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/matlab/windows/library_file/a2.png)
 
 ### [Function Reference](#function-reference)
-
+{% capture notice_01 %}
+**WARNING**:
 When some error that are related with `.dll file version is higher than the MATLAB's version` is appeared, the `.dll` file should be rebuilt in lower version Visual Studio.
+{% endcapture %}
+<div class="notice--warning">{{ notice_01 | markdownify }}</div>
+
 
 * The function reference file is located in `[DynamixelSDK folder]/matlab/m_basic_function/`
 
@@ -101,10 +105,10 @@ Each released Dynamixel SDK have latest library files in `[DynamixelSDK folder]/
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/matlab/windows/sample_code/11.png)
 
-* Adjust the values surrounded with red circle to proper value as shown in the comment. Then click `Run` in the Eclipse toolbox above. 
+* Adjust the values surrounded with red circle to proper value as shown in the comment. Then click `Run` in the Eclipse toolbox above.
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/matlab/windows/sample_code/13.png)
 
-* Console window will show the results 
+* Console window will show the results
 
   ![](/assets/images/sw/sdk/dynamixel_sdk/library_setup/matlab/windows/sample_code/14.png)

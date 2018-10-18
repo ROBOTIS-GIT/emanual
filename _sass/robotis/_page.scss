@@ -154,6 +154,24 @@ html {
       height: 40px;
     }
     
+    .search-result {
+      font-size: 0.8em;
+    }
+    
+    #search_term {
+      height: 40px;
+      width: 100vw;
+      size: 14px;
+      -webkit-appearance: none;
+      border-radius: 0;
+    }
+    
+    #search_button {
+      height: 40px;
+      width: 55px;
+      display: none;
+    }
+    
     .gsc-results-wrapper-overlay {
       padding: 1em !important;
       height: 90% !important;
@@ -504,6 +522,18 @@ html {
       
       .page__footer {
         font-size: 12px;
+      }
+      
+      .search-result {
+        font-size: 0.7em;
+      }
+      
+      #search_term {
+        height: 40px;
+        width: 100vw;
+        size: 14px;
+        -webkit-appearance: none;
+        border-radius: 0;
       }
     }
   }
