@@ -19,7 +19,7 @@ xh430-v210:
   protocoltype:       "RS485 Asynchronous Serial Communication<br />(8bit, 1stop, No Parity)"
   physicalconnection: "RS485 Multidrop Bus"
   id:                 "253 ID (0 ~ 252)"
-  feedback:           "Position, Velocity, Current, Realtime tick, Trajectory, Temperature, Input Voltage 등"
+  feedback:           "Position, Velocity, Current, Realtime tick, Trajectory, Temperature, Input Voltage, etc"
   material:           "Full Metal Gear<br />Metal (Front, Middle), Engineering Plastic (Back)"
   standbycurrent:     "36 [mA]"
 
@@ -44,7 +44,7 @@ xh430-v350:
   protocoltype:       "RS485 Asynchronous Serial Communication<br />(8bit, 1stop, No Parity)"
   physicalconnection: "RS485 Multidrop Bus"
   id:                 "253 ID (0 ~ 252)"
-  feedback:           "Position, Velocity, Current, Realtime tick, Trajectory, Temperature, Input Voltage 등"
+  feedback:           "Position, Velocity, Current, Realtime tick, Trajectory, Temperature, Input Voltage, etc"
   material:           "Full Metal Gear<br />Metal (Front, Middle), Engineering Plastic (Back)"
   standbycurrent:     "36 [mA]"
 
@@ -69,7 +69,7 @@ xh430-w210:
   protocoltype:       "XH430-W210-T (Half Duplex Asynchronous Serial Communication with 8bit, 1stop, No Parity)<br />XH430-W210-R (RS485 Asynchronous Serial Communication with 8bit, 1stop, No Parity)"
   physicalconnection: "XH430-W210-T (TTL Level Multidrop Bus) <br /> XH430-W210-R (RS485 Multidrop Bus)"
   id:                 "253 ID (0 ~ 252)"
-  feedback:           "Position, Velocity, Current, Realtime tick, Trajectory, Temperature, Input Voltage 등"
+  feedback:           "Position, Velocity, Current, Realtime tick, Trajectory, Temperature, Input Voltage, etc"
   material:           "Full Metal Gear<br />Metal (Front, Middle), Engineering Plastic (Back)"
   standbycurrent:     "40 [mA]"
 
@@ -94,7 +94,7 @@ xh430-w350:
   protocoltype:       "XH430-W350-T (Half Duplex Asynchronous Serial Communication with 8bit, 1stop, No Parity)<br />XH430-W350-R (RS485 Asynchronous Serial Communication with 8bit, 1stop, No Parity)"
   physicalconnection: "XH430-W350-T (TTL Level Multidrop Bus) <br />XH430-W350-R (RS485 Multidrop Bus)"
   id:                 "253 ID (0 ~ 252)"
-  feedback:           "Position, Velocity, Current, Realtime tick, Trajectory, Temperature, Input Voltage 등"
+  feedback:           "Position, Velocity, Current, Realtime tick, Trajectory, Temperature, Input Voltage, etc"
   material:           "Full Metal Gear<br />Metal (Front, Middle), Engineering Plastic (Back)"
   standbycurrent:     "40 [mA]"
 
@@ -119,7 +119,7 @@ xl430-w250:
   protocoltype:       "Half Duplex Asynchronous Serial Communication<br />(8bit, 1stop, No Parity)"
   physicalconnection: "TTL Level Multidrop Bus"
   id:                 "253 ID (0 ~ 252)"
-  feedback:           "Position, Velocity, Load, Realtime tick, Trajectory, Temperature, Input Voltage 등"
+  feedback:           "Position, Velocity, Load, Realtime tick, Trajectory, Temperature, Input Voltage, etc"
   material:           "Engineering Plastic"
   standbycurrent:     "52 [mA]"
 
@@ -144,7 +144,7 @@ xc430-w240:
   protocoltype:       "Half Duplex Asynchronous Serial Communication<br />(8bit, 1stop, No Parity)"
   physicalconnection: "TTL Level Multidrop Bus"
   id:                 "253 ID (0 ~ 252)"
-  feedback:           "Position, Velocity, Load, Realtime tick, Trajectory, Temperature, Input Voltage 등"
+  feedback:           "Position, Velocity, Load, Realtime tick, Trajectory, Temperature, Input Voltage, etc"
   material:           "Full Metal Gear<br />Engineering Plastic (Body)"
   standbycurrent:     "45 [mA]"
 
@@ -169,7 +169,7 @@ xm430-w210:
   protocoltype:       "XM430-W210-T (Half Duplex Asynchronous Serial Communication with 8bit, 1stop, No Parity)<br />XM430-W210-R (RS485 Asynchronous Serial Communication with 8bit, 1stop, No Parity)"
   physicalconnection: "XM430-W210-T (TTL Level Multidrop Bus) <br /> XM430-W210-R (RS485 Multidrop Bus)"
   id:                 "253 ID (0 ~ 252)"
-  feedback:           "Position, Velocity, Current, Realtime tick, Trajectory, Temperature, Input Voltage 등"
+  feedback:           "Position, Velocity, Current, Realtime tick, Trajectory, Temperature, Input Voltage, etc"
   material:           "Full Metal Gear<br />Metal (Front, Middle), Engineering Plastic (Back)"
   standbycurrent:     "40 [mA]"
 
@@ -194,7 +194,7 @@ xm430-w350:
   protocoltype:       "XM430-W350-T (Half Duplex Asynchronous Serial Communication with 8bit, 1stop, No Parity)<br />XM430-W350-R (RS485 Asynchronous Serial Communication with 8bit, 1stop, No Parity)"
   physicalconnection: "XM430-W350-T (TTL Level Multidrop Bus) <br />XM430-W350-R (RS485 Multidrop Bus)"
   id:                 "253 ID (0 ~ 252)"
-  feedback:           "Position, Velocity, Current, Realtime tick, Trajectory, Temperature, Input Voltage 등"
+  feedback:           "Position, Velocity, Current, Realtime tick, Trajectory, Temperature, Input Voltage, etc"
   material:           "Full Metal Gear<br />Metal (Front, Middle), Engineering Plastic (Back)"
   standbycurrent:     "40 [mA]"
 
@@ -219,7 +219,7 @@ xm540-w150:
   protocoltype:       "XM540-W150-T (Half Duplex Asynchronous Serial Communication with 8bit, 1stop, No Parity)<br />XM540-W150-R (RS485 Asynchronous Serial Communication with 8bit, 1stop, No Parity)"
   physicalconnection: "XM540-W150-T (TTL Level Multidrop BUS) <br />XM540-W150-R (RS485 Multidrop BUS)"
   id:                 "253 ID (0 ~ 252)"
-  feedback:           "Position, Velocity, Current, Realtime tick, Trajectory, Temperature, Input Voltage 등"
+  feedback:           "Position, Velocity, Current, Realtime tick, Trajectory, Temperature, Input Voltage, etc"
   material:           "Full Metal Gear<br />Metal (Front, Middle), Engineering Plastic (Back)"
   standbycurrent:     "40 [mA]"
 
@@ -244,6 +244,6 @@ xm540-w270:
   protocoltype:       "XM540-W270-T (Half Duplex Asynchronous Serial Communication with 8bit, 1stop, No Parity)<br />XM540-W270-R (RS485 Asynchronous Serial Communication with 8bit, 1stop, No Parity)"
   physicalconnection: "XM540-W270-T (TTL Level Multidrop Bus) <br />XM540-W270-R (RS485 Multidrop Bus)"
   id:                 "253 ID (0 ~ 252)"
-  feedback:           "Position, Velocity, Current, Realtime tick, Trajectory, Temperature, Input Voltage 등"
+  feedback:           "Position, Velocity, Current, Realtime tick, Trajectory, Temperature, Input Voltage, etc"
   material:           "Full Metal Gear<br />Metal (Front, Middle), Engineering Plastic (Back)"
   standbycurrent:     "40 [mA]"
