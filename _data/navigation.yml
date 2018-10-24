@@ -10804,6 +10804,8 @@ op3:
         url: /platform/op3/quick_start/#system-block-diagram
       - title: "ID Map"
         url: /platform/op3/quick_start/#id-map
+      - title: "ROBOTIS-OP3 Revision"
+        url: /platform/op3/quick_start/#robotis-op3-revision
       - title: "Warranty"
         url: /platform/op3/quick_start/#warranty
     - title: "Sub Controller(OpenCR)"
@@ -10899,7 +10901,7 @@ op3:
     url: /platform/op3/recovery/
     children:
     - title: "Manual Installation"
-      url: /platform/op3/recovery/#manual-installation
+      url: /platform/op3/recovery/#op3-manual-installation
     - title: "Recovery of ROBOTIS-OP3"
       url: /platform/op3/recovery/#recovery-of-robotis-op3
 
