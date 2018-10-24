@@ -21,3 +21,4 @@
 | Protocol Type       | {{ site.data.dxl_pro_info[page.ref].protocoltypekr }}         |
 | Physical Connection | {{ site.data.dxl_pro_info[page.ref].physicalconnection }}     |
 | ID                  | {{ site.data.dxl_pro_info[page.ref].id }}                     |
+| 대기 전류           | {{ site.data.dxl_pro_info[page.ref].standbycurrent }}         |
