@@ -23,6 +23,7 @@
 | Protocol Type          | {{ site.data.dxl_pro_info[page.ref].protocoltype }}       |
 | Physical Connection    | {{ site.data.dxl_pro_info[page.ref].physicalconnection }} |
 | ID                     | {{ site.data.dxl_pro_info[page.ref].id }}                 |
+| Standby Current        | {{ site.data.dxl_pro_info[page.ref].standbycurrent }}     |
 
 [Radial Load]: /docs/en/popup/axial_radial_pro/
 [Axial Load]: /docs/en/popup/axial_radial_pro/

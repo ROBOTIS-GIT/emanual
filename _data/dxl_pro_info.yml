@@ -20,6 +20,7 @@ common_pro_specs:
   rs485_kr:           &rs485_kr           "RS485 비동기 시리얼 통신 (8bit, 1stop, No Parity)"
   rs485_connection:   &rs485_connection   "RS485 Multidrop Bus"
   id:                 &id                 "253 ID (0 ~ 252)"
+  standbycurrent:     &standbycurrent     "80 [mA]"
 
 
 h42-20-s300-r:
@@ -49,6 +50,7 @@ h42-20-s300-r:
   protocoltypekr:     *rs485_kr
   physicalconnection: *rs485_connection
   id:                 *id
+  standbycurrent:     *standbycurrent
 
 h54-100-s500-r:
   motor:              *motor
@@ -77,6 +79,7 @@ h54-100-s500-r:
   protocoltypekr:     *rs485_kr
   physicalconnection: *rs485_connection
   id:                 *id
+  standbycurrent:     *standbycurrent
 
 h54-200-s500-r:
   motor:              *motor
@@ -105,6 +108,7 @@ h54-200-s500-r:
   protocoltypekr:     *rs485_kr
   physicalconnection: *rs485_connection
   id:                 *id
+  standbycurrent:     *standbycurrent
 
 l42-10-s300-r:
   motor:              *motor_l
@@ -133,6 +137,7 @@ l42-10-s300-r:
   protocoltypekr:     *rs485_kr
   physicalconnection: *rs485_connection
   id:                 *id
+  standbycurrent:     *standbycurrent
 
 l54-30-s400-r:
   motor:              *motor_l
@@ -161,6 +166,7 @@ l54-30-s400-r:
   protocoltypekr:     *rs485_kr
   physicalconnection: *rs485_connection
   id:                 *id
+  standbycurrent:     *standbycurrent
 
 l54-30-s500-r:
   motor:              *motor_l
@@ -189,6 +195,7 @@ l54-30-s500-r:
   protocoltypekr:     *rs485_kr
   physicalconnection: *rs485_connection
   id:                 *id
+  standbycurrent:     *standbycurrent
 
 l54-50-s290-r:
   motor:              *motor_l
@@ -217,6 +224,7 @@ l54-50-s290-r:
   protocoltypekr:     *rs485_kr
   physicalconnection: *rs485_connection
   id:                 *id
+  standbycurrent:     *standbycurrent
 
 l54-50-s500-r:
   motor:              *motor_l
@@ -245,6 +253,7 @@ l54-50-s500-r:
   protocoltypekr:     *rs485_kr
   physicalconnection: *rs485_connection
   id:                 *id
+  standbycurrent:     *standbycurrent
 
 m42-10-s260-r:
   motor:              *motor
@@ -273,6 +282,7 @@ m42-10-s260-r:
   protocoltypekr:     *rs485_kr
   physicalconnection: *rs485_connection
   id:                 *id
+  standbycurrent:     *standbycurrent
 
 m54-40-s250-r:
   motor:              *motor
@@ -301,6 +311,7 @@ m54-40-s250-r:
   protocoltypekr:     *rs485_kr
   physicalconnection: *rs485_connection
   id:                 *id
+  standbycurrent:     *standbycurrent
 
 m54-60-s250-r:
   motor:              *motor
@@ -329,3 +340,4 @@ m54-60-s250-r:
   protocoltypekr:     *rs485_kr
   physicalconnection: *rs485_connection
   id:                 *id
+  standbycurrent:     *standbycurrent
