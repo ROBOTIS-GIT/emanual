@@ -26,4 +26,4 @@
 - 제품을 사용자 임의로 분해 또는 개조하지 마세요.
 - 제품에 강한 충격을 가하거나 떨어드리지 마세요.
 {% endcapture %}
-<div class="notice--danger">{{ dxl_attention | markdownify }}</div>
+<div class="notice--warning">{{ dxl_attention | markdownify }}</div>

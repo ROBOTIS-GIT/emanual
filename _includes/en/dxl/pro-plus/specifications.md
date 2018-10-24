@@ -3,7 +3,7 @@
 |:-----------------------|:----------------------------------------------------------|
 | Motor                  | {{ site.data.dxl_pro_info[page.ref].motor }}                  |
 | Baud Rate              | {{ site.data.dxl_pro_info[page.ref].baudrate }}               |
-| Operating Modes        | {{ site.data.dxl_pro_info[page.ref].opmode }}                 |
+| Operating Modes        | {{ site.data.dxl_pro_info[page.ref].opmode_en }}              |
 | Weight                 | {{ site.data.dxl_pro_info[page.ref].weight }} [g]             |
 | Dimensions (W x H x D) | {{ site.data.dxl_pro_info[page.ref].dimensions }} [mm]        |
 | Resolution             | {{ site.data.dxl_pro_info[page.ref].resolution }} [pulse/rev] |

@@ -6,13 +6,16 @@
 | Motor                  | {{ site.data.dxl_x_info[page.ref].motor }}              |
 | Baud Rate              | {{ site.data.dxl_x_info[page.ref].baudrate }}           |
 | Control Algorithm      | {{ site.data.dxl_x_info[page.ref].control }}            |
-| Degree of Precision    | {{ site.data.dxl_x_info[page.ref].angle }}              |
+| Degree of Precision    | {{ site.data.dxl_x_info[page.ref].angle }}              |{% if site.data.dxl_x_info[page.ref].backlash != 'N/A' %}
+| Backlash               | {{ site.data.dxl_x_info[page.ref].backlash }}           |{% else %}{% endif %}
 | Operating Modes        | {{ site.data.dxl_x_info[page.ref].mode_en }}            |
 | Weight                 | {{ site.data.dxl_x_info[page.ref].weight }}             |
 | Dimensions (W x H x D) | {{ site.data.dxl_x_info[page.ref].dimensions }}         |
 | Gear Ratio             | {{ site.data.dxl_x_info[page.ref].gearratio }}          |
 | Stall Torque           | {{ site.data.dxl_x_info[page.ref].stalltorque }}        |
-| No Load Speed          | {{ site.data.dxl_x_info[page.ref].noloadspeed }}        |
+| No Load Speed          | {{ site.data.dxl_x_info[page.ref].noloadspeed }}        |{% if site.data.dxl_x_info[page.ref].radialload_en != 'N/A' %}
+| [Radial Load]{: .popup}| {{ site.data.dxl_x_info[page.ref].radialload_en }}      |{% else %}{% endif %}{% if site.data.dxl_x_info[page.ref].axialload != 'N/A' %}
+| [Axial Load]{: .popup} | {{ site.data.dxl_x_info[page.ref].axialload }}          |{% else %}{% endif %}
 | Operating Temperature  | {{ site.data.dxl_x_info[page.ref].temperature }}        |
 | Input Voltage          | {{ site.data.dxl_x_info[page.ref].voltage_en }}         |
 | Command Signal         | {{ site.data.dxl_x_info[page.ref].command }}            |
@@ -22,3 +25,6 @@
 | Feedback               | {{ site.data.dxl_x_info[page.ref].feedback }}           |
 | Part Material          | {{ site.data.dxl_x_info[page.ref].material }}           |
 | Standby Current        | {{ site.data.dxl_x_info[page.ref].standbycurrent }}     |
+
+[Radial Load]: /docs/en/popup/axial_radial/
+[Axial Load]: /docs/en/popup/axial_radial/

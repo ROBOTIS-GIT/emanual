@@ -51,7 +51,7 @@ The following explains how Profile processes Goal Position(116) instruction in P
 {% capture group_notice_03 %}
 **NOTE** : Velocity Control Mode only uses Profile Acceleration(108). Step and Trapezoidal Profiles are supported. Velocity Override are supported as well. Acceleration time(t1) can be calculated as below equation.  
 
-**Velocity-based Profile** : t<sub>1</sub> = 65 * {Goal Velocity(104) / Profile Acceleration(108)}  
+**Velocity-based Profile** : t<sub>1</sub> = 64 * {Goal Velocity(104) / Profile Acceleration(108)}  
 **Time-based Profile** : t<sub>1</sub> = Profile Acceleration(108)
 
 **NOTE** : If Time-based Profile is selected, Profile Velocity(112) is used to set the time span of the Profile(t<sub>3</sub>), while Profile Acceleration(108) sets accelerating time(t<sub>1</sub>) in millisecond[ms]. Profile Acceleration(108) will not exceed 50% of Profile Velocity(112) value.

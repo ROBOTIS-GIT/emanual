@@ -29,16 +29,16 @@ sidebar:
 | 무게 | 54.6 [g] |
 | 크기 | 32 x 50 x 40 [mm] |
 | 기어비 | 32 : 1  |
-| No Load Speed | 470 [rev/min] (at 12V) |
+| 무부하 속도 | 470 [rev/min] (at 12V) |
 | 동작 온도 | -5 ~ +70 [&deg;C] |
 | 사용 전압 | 10 ~ 14.8 [V] (**권장 전압 : 12 [V]**) |
-| Command Signal | Digital Packet |
-| Protocol Type | Half Duplex Asynchronous Serial Communication<br />(8bit, 1stop, No Parity) |
-| Link (Physical) | TTL Level Multidrop Bus(Daisy Chain Type Connector) |
+| 제어 명령 | Digital Packet |
+| 프로토콜 타입 | Half Duplex Asynchronous Serial Communication<br />(8bit, 1stop, No Parity) |
+| 통신 연결 | TTL Level Multidrop Bus(Daisy Chain Type Connector) |
 | ID | 254 ID (0 ~ 253) |
-| Feedback | Position, Temperature, Load, Input Voltage, etc |
-| Material | Engineering Plastic |
-| Standby Current | 60 [mA] |
+| 피드백 | Position, Temperature, Load, Input Voltage 등 |
+| 재질 | Engineering Plastic |
+| 대기 전류 | 60 [mA] |
 
 {% include kr/dxl/warning.md %}
 
