@@ -307,7 +307,7 @@ Clonezilla is used to recover ROBOTIS-OP3 with the image file in the provided US
 #### How to make a recovery USB media  
 - Format a USB drive(at least 4GB space should be available)  
 - Download the ROBOTIS-OP3 Recovery image  
-  - Latest version : clonezilla-live-ROBOTIS-OP3_Recovery_181019(NUC_6th).zip   
+  - Latest version : clonezilla-live-ROBOTIS-OP3_Recovery_181019(NUC_7th).zip   
   - `Download` [sourceforge.net]   
 - Extract the compressed file to the root folder of the USB drive. The folder structure looks like below.
   ```
