@@ -3,7 +3,7 @@
 |:--------------------|:---------------------------------------------------------------|
 | 모터                | {{ site.data.dxl_proa_info[page.ref].motor }}                  |
 | 통신속도            | {{ site.data.dxl_proa_info[page.ref].baudrate }}               |
-| 동작모드            | {{ site.data.dxl_proa_info[page.ref].opmodekr }}               |
+| 동작모드            | {{ site.data.dxl_proa_info[page.ref].opmode }}               |
 | 무게                | {{ site.data.dxl_proa_info[page.ref].weight }} [g]             |
 | 크기 (W x H x D)    | {{ site.data.dxl_proa_info[page.ref].dimensions }} [mm]        |
 | 해상도              | {{ site.data.dxl_proa_info[page.ref].resolution }} [pulse/rev] |

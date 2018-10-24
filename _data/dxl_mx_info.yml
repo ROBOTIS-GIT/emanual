@@ -1,157 +1,220 @@
+common_mx_specs:
+  mcu:                &mcu            "ST CORTEX-M3 (STM32F103C8 @ 72 [Mhz], 32Bit)"
+  encoder:            &encoder        "Contactless absolute encoder (12Bit, 360 [&deg;])<br />Maker : ams(www.ams.com), Part No : AS5045"
+  baudrate:           &baudrate       "8,000 [bps] ~ 4.5 [Mbps]"
+  motor:              &motor          "Coreless(Maxon)"
+  control:            &control        "PID control"
+  angle:              &angle          "0.088 [&deg;]"
+  backlash:           &backlash       "20 [arcmin] (0.33 [&deg;])"
+  mode:               &mode           "관절 모드 (0 ~ 360 [&deg;])<br />바퀴 모드 (무한 회전)"
+  mode_en:            &mode_en        "Joint Mode (0 ~ 360 [&deg;])<br />Wheel Mode (Endless Turn)"
+  mode2_mx28:         &mode2_mx28     "속도 제어 모드<br />위치 제어 모드(0 ~ 360 [&deg;])<br />확장 위치 제어 모드(멀티턴)<br />PWM 제어 모드"
+  mode2_mx28_en:      &mode2_mx28_en  "Velocity Control Mode<br />Position Control Mode(0&deg; ~ 360&deg;)<br />Extended Position Ctrl Mode(Multi-turn)<br />PWM Control Mode"
+  mode2:              &mode2          "전류 제어 모드<br />속도 제어 모드<br />위치 제어 모드 (0 ~ 360 [&deg;])<br />확장 위치 제어 모드 (멀티턴)<br />전류기반 위치 제어 모드<br />PWM 제어 모드 (Voltage Control Mode)"
+  mode2_en:           &mode2_en       "Current Control Mode<br />Velcoity Control Mode<br />Position Control Mode (0 ~ 360 [&deg;])<br />Extended Position Control Mode (Multi-turn)<br />Current-based Position Control Mode<br />PWM Control Mode (Voltage Control Mode)"
+  weight_mx28:        &weight_mx28    "MX-28AR/AT : 77 [g], MX-28R/T : 72 [g]"
+  weight_mx64:        &weight_mx64    "165 [g]"
+  weight_mx106:       &weight_mx106   "165 [g]"
+  dimension_mx28:     &dimension_mx28   "35.6 x 50.6 x 35.5 [mm]"
+  dimension_mx64:     &dimension_mx64   "40.2 x 61.1 x 41 [mm]"
+  dimension_mx106:    &dimension_mx106  "40.2 x 65.1 x 46 [mm]"
+  radialload_mx28:    &radialload_mx28     "30 [N] (혼으로부터 10 [mm])"
+  radialload_mx28_en: &radialload_mx28_en  "30 [N] (10 [mm] away from the horn)"
+  radialload:         &radialload     "40 [N] (혼으로부터 10 [mm])"
+  radialload_en:      &radialload_en  "40 [N] (10 [mm] away from the horn)"
+  axialload_mx28:     &axialload_mx28 "15 [N]"
+  axialload:          &axialload      "20 [N]"
+  temperature:        &temperature    "-5 ~ +80 [&deg;C]"
+  voltage_12:         &voltage_12     "10.0 ~ 14.8 [V] (**권장 전압 : 12.0 [V]**)"
+  voltage_12_en:      &voltage_12_en  "10.0 ~ 14.8 [V] (**Recommended : 12.0 [V]**)"
+  voltage_24:         &voltage_24     "24.0 [V] (**권장 전압 : 24.0 [V]**)"
+  voltage_24_en:      &voltage_24_en  "24.0 [V] (**Recommended : 24.0 [V]**)"
+  command:            &command        "Digital Packet"
+  rs485:              &rs485          "RS485 Asynchronous Serial Communication<br />(8bit, 1stop, No Parity)"
+  ttl:                &ttl            "TTL Half Duplex Asynchronous Serial Communication<br />(8bit, 1stop, No Parity)"
+  rs485_ttl:          &rs485_ttl      "TTL Half Duplex Asynchronous Serial Communication with 8bit, 1stop, No Parity<br />RS485 Asynchronous Serial Communication with 8bit, 1stop, No Parity"
+  rs485_connection:   &rs485_connection "RS485 Multidrop Bus"
+  ttl_connection:     &ttl_connection   "TTL Multidrop Bus"
+  rs485_ttl_conn:     &rs485_ttl_conn   "RS485 / TTL Multidrop Bus"
+  id:                 &id             "254 ID (0 ~ 253)"
+  id2:                &id2            "253 ID (0 ~ 252)"
+  feedback:           &feedback       "Position, Temperature, Load, Input Voltage, etc"
+  feedback2_mx28:     &feedback2_mx28 "Position, Velocity, Temperature, Load, Input Voltage, Trajectory, Realtime Tick, etc"
+  feedback2:          &feedback2      "Position, Velocity, Current, Realtime tick, Trajectory, Temperature, Input Voltage, etc"
+  material_mx28:      &material_mx28  "Full Metal Gear<br />MX-28AR/AT: Metal(Front), Engineering Plastic(Middle, Back)<br />MX-28R/T: Engineering Plastic(Front, Middle, Back)"
+  material:           &material       "Full Metal Gear<br />Metal (Front, Middle), Engineering Plastic (Back)"
+  standbycurrent:     &standbycurrent "100 [mA]"
+
 mx-28:
-  mcu:                "ST CORTEX-M3 (STM32F103C8 @ 72 [Mhz], 32Bit)"
-  encoder:            "Contactless absolute encoder (12Bit, 360 [&deg;])<br />Maker : ams(www.ams.com), Part No : AS5045"
-  motor:              "Coreless(Maxon)"
-  baudrate:           "8,000 [bps] ~ 4.5 [Mbps]"
-  control:            "PID control"
-  angle:              "0.088 [&deg;]"
-  backlash:           "20 [arcmin] (0.33 [&deg;])"
-  mode:               "관절 모드 (0 ~ 360 [&deg;])<br />바퀴 모드 (무한 회전)"
-  mode_en:            ""
-  weight:             "MX-28AR/AT : 77 [g], MX-28R/T : 72 [g]"
-  dimensions:         "35.6 x 50.6 x 35.5 [mm]"
+  mcu:                *mcu
+  encoder:            *encoder
+  motor:              *motor
+  baudrate:           *baudrate
+  control:            *control
+  angle:              *angle
+  backlash:           *backlash
+  mode:               *mode
+  mode_en:            *mode_en
+  weight:             *weight_mx28
+  dimensions:         *dimension_mx28
   gearratio:          "193 : 1"
   stalltorque:        "2.3 [Nm] @ 11.1 [V], 1.3 [A]<br />2.5 [Nm] @ 12 [V], 1.4 [A]<br />3.1 [Nm] @ 14.8 [V], 1.7 [A]"
   noloadspeed:        "50 [rev/min] @ 11.1 [V]<br />55 [rev/min] @ 12 [V]<br />67 [rev/min] @ 14.8 [V]"
-  radialload:         "30 [N] (혼으로부터 10 [mm])"
-  radialload_en:      "30 [N] (10 [mm] away from the horn)"
-  axialload:          "15 [N]"
-  temperature:        "-5 ~ +80 [&deg;C]"
-  voltage:            "10 ~ 14.8 [V] (**권장 전압 : 12 [V]**)"
-  voltage_en:         "10 ~ 14.8 [V] (**Recommended Voltage : 12 [V]**)"
-  command:            "Digital Packet"
-  protocoltype:       "MX-28T/MX-28AT: Half Duplex Asynchronous Serial Communication<br />MX-28R/MX-28AR: RS485 Asynchronous Serial Communication<br />(8bit,1stop, No Parity)"
-  physicalconnection: "MX-28T/MX-28AT: TTL Level Multidrop BUS<br />MX-28R/MX-28AR: RS485 Multidrop BUS"
-  id:                 "254 ID (0 ~ 253)"
-  feedback:           "Position, Temperature, Load, Input Voltage, etc"
-  material:           "Full Metal Gear<br />MX-28AR/AT: Metal(Front), Engineering Plastic(Middle, Back)<br />MX-28R/T: Engineering Plastic(Front, Middle, Back)"
-  standbycurrent:     "100 [mA]"
+  radialload:         *radialload_mx28
+  radialload_en:      *radialload_mx28_en
+  axialload:          *axialload_mx28
+  temperature:        *temperature
+  voltage:            *voltage_12
+  voltage_en:         *voltage_12_en
+  command:            *command
+  protocoltype:       *rs485_ttl
+  physicalconnection: *rs485_ttl_conn
+  id:                 *id
+  feedback:           *feedback
+  material:           *material_mx28
+  standbycurrent:     *standbycurrent
 
 mx-28-2:
-  mcu:                "ST CORTEX-M3 (STM32F103C8 @ 72 [Mhz], 32Bit)"
-  encoder:            "Contactless absolute encoder (12Bit, 360 [&deg;])<br />Maker : ams(www.ams.com), Part No : AS5045"
-  motor:              "Coreless(Maxon)"
-  baudrate:           "8,000 [bps] ~ 4.5 [Mbps]"
-  control:            "PID control"
-  angle:              "0.088 [&deg;]"
-  backlash:           "20 [arcmin] (0.33 [&deg;])"
-  mode:               "속도 제어 모드<br />위치 제어 모드(0 ~ 360 [&deg;])<br />확장 위치 제어 모드(멀티턴)<br />PWM 제어 모드"
-  mode_en:            ""
-  weight:             "MX-28AR/AT : 77 [g], MX-28R/T : 72 [g]"
-  dimensions:         "35.6 x 50.6 x 35.5 [mm]"
+  mcu:                *mcu
+  encoder:            *encoder
+  motor:              *motor
+  baudrate:           *baudrate
+  control:            *control
+  angle:              *angle
+  backlash:           *backlash
+  mode:               *mode2_mx28
+  mode_en:            *mode2_mx28_en
+  weight:             *weight_mx28
+  dimensions:         *dimension_mx28
   gearratio:          "193 : 1"
   stalltorque:        "2.3 [Nm] @ 11.1 [V], 1.3 [A]<br />2.5 [Nm] @ 12 [V], 1.4 [A]<br />3.1 [Nm] @ 14.8 [V], 1.7 [A]"
   noloadspeed:        "50 [rev/min] @ 11.1 [V]<br />55 [rev/min] @ 12 [V]<br />67 [rev/min] @ 14.8 [V]"
-  radialload:         "30 [N] (혼으로부터 10 [mm])"
-  radialload_en:      "30 [N] (10 [mm] away from the horn)"
-  axialload:          "15 [N]"
-  temperature:        "-5 ~ +80 [&deg;C]"
-  voltage:            "10 ~ 14.8 [V] (**권장 전압 : 12 [V]**)"
-  voltage_en:         "10 ~ 14.8 [V] (**Recommended Voltage : 12 [V]**)"
-  command:            "Digital Packet"
-  protocoltype:       "MX-28T/MX-28AT: Half Duplex Asynchronous Serial Communication<br />MX-28R/MX-28AR: RS485 Asynchronous Serial Communication<br />(8bit,1stop, No Parity)"
-  physicalconnection: "MX-28T/MX-28AT: TTL Level Multidrop BUS<br />MX-28R/MX-28AR: RS485 Multidrop BUS"
-  id:                 "253 ID (0 ~ 252)"
-  feedback:           "Position, Velocity, Temperature, Load, Input Voltage, Trajectory, Realtime Tick, etc"
-  material:           "Full Metal Gear<br />MX-28AR/AT: Metal(Front), Engineering Plastic(Middle, Back)<br />MX-28R/T: Engineering Plastic(Front, Middle, Back)"
-  standbycurrent:     "100 [mA]"
+  radialload:         *radialload_mx28
+  radialload_en:      *radialload_mx28_en
+  axialload:          *axialload_mx28
+  temperature:        *temperature
+  voltage:            *voltage_12
+  voltage_en:         *voltage_12_en
+  command:            *command
+  protocoltype:       *rs485_ttl
+  physicalconnection: *rs485_ttl_conn
+  id:                 *id2
+  feedback:           *feedback2_mx28
+  material:           *material_mx28
+  standbycurrent:     *standbycurrent
 
 mx-64:
-  mcu:                "ST CORTEX-M3 (STM32F103C8 @ 72 [Mhz], 32Bit)"
-  encoder:            "Contactless absolute encoder (12Bit, 360 [&deg;])<br />Maker : ams(www.ams.com), Part No : AS5045"
-  motor:              "Coreless(Maxon)"
-  baudrate:           "8,000 [bps] ~ 4.5 [Mbps]"
-  control:            "PID control"
-  angle:              "0.088 [&deg;]"
-  mode:               "전류 제어 모드<br />속도 제어 모드<br />위치 제어 모드 (0 ~ 360 [&deg;])<br />확장 위치 제어 모드 (멀티턴)<br />전류기반 위치 제어 모드<br />PWM 제어 모드 (Voltage Control Mode)"
-  mode_en:            "Current Control Mode<br />Velcoity Control Mode<br />Position Control Mode (0 ~ 360 [&deg;])<br />Extended Position Control Mode (Multi-turn)<br />Current-based Position Control Mode<br />PWM Control Mode (Voltage Control Mode)"
-  weight:             "82 [g]"
-  dimensions:         "28.5 x 46.5 x 34 [mm]"
-  gearratio:          "212.6 : 1"
-  stalltorque:        "2.2 [N.m] (at 11.1 [V], 1.2 [A])<br />**2.5 [N.m] (at 12.0 [V], 1.3 [A])**<br />3.1 [N.m] (at 14.8 [V], 1.5 [A])"
-  noloadspeed:        "46 [rev/min] (at 11.1 [V])<br />**50 [rev/min] (at 12.0 [V])**<br />62 [rev/min] (at 14.8 [V])"
-  temperature:        "-5 ~ +80 [&deg;C]"
-  voltage:            "10.0 ~ 14.8 [V] (**권장 전압 : 12.0 [V]**)"
-  voltage_en:         "10.0 ~ 14.8 [V] (**Recommended : 12.0 [V]**)"
-  command:            "Digital Packet"
-  protocoltype:       "XH430-W210-T (Half Duplex Asynchronous Serial Communication with 8bit, 1stop, No Parity)<br />XH430-W210-R (RS485 Asynchronous Serial Communication with 8bit, 1stop, No Parity)"
-  physicalconnection: "XH430-W210-T (TTL Level Multidrop Bus) <br /> XH430-W210-R (RS485 Multidrop Bus)"
-  id:                 "253 ID (0 ~ 252)"
-  feedback:           "Position, Velocity, Current, Realtime tick, Trajectory, Temperature, Input Voltage, etc"
-  material:           "Full Metal Gear<br />Metal (Front, Middle), Engineering Plastic (Back)"
-  standbycurrent:     "40 [mA]"
+  mcu:                *mcu
+  encoder:            *encoder
+  motor:              *motor
+  baudrate:           *baudrate
+  control:            *control
+  angle:              *angle
+  backlash:           *backlash
+  mode:               *mode
+  mode_en:            *mode_en
+  weight:             *weight_mx64
+  dimensions:         *dimension_mx64
+  gearratio:          "200 : 1"
+  stalltorque:        "5.5 [Nm] @ 11.1 [V], 3.9 [A]<br />6.0 [Nm] @ 12 [V], 4.1 [A]<br />7.3 [Nm] @ 14.8 [V], 5.2 [A]"
+  noloadspeed:        "58 [rev/min] @ 11.1 [V]<br />63 [rev/min] @ 12 [V]<br />78 [rev/min] @ 14.8 [V]"
+  radialload:         *radialload
+  radialload_en:      *radialload_en
+  axialload:          *axialload
+  temperature:        *temperature
+  voltage:            *voltage_12
+  voltage_en:         *voltage_12_en
+  command:            *command
+  protocoltype:       *rs485_ttl
+  physicalconnection: *rs485_ttl_conn
+  id:                 *id
+  feedback:           *feedback
+  material:           *material
+  standbycurrent:     *standbycurrent
 
 mx-64-2:
-  mcu:                "ST CORTEX-M3 (STM32F103C8 @ 72 [Mhz], 32Bit)"
-  encoder:            "Contactless absolute encoder (12Bit, 360 [&deg;])<br />Maker : ams(www.ams.com), Part No : AS5045"
-  motor:              "Maxon"
-  baudrate:           "9,600 [bps] ~ 4.5 [Mbps]"
-  control:            "PID control"
-  angle:              "0.088 [&deg;]"
-  mode:               "전류 제어 모드<br />속도 제어 모드<br />위치 제어 모드 (0 ~ 360 [&deg;])<br />확장 위치 제어 모드 (멀티턴)<br />전류기반 위치 제어 모드<br />PWM 제어 모드 (Voltage Control Mode)"
-  mode_en:            "Current Control Mode<br />Velcoity Control Mode<br />Position Control Mode (0 ~ 360 [&deg;])<br />Extended Position Control Mode (Multi-turn)<br />Current-based Position Control Mode<br />PWM Control Mode (Voltage Control Mode)"
-  weight:             "82 [g]"
-  dimensions:         "28.5 x 46.5 x 34 [mm]"
-  gearratio:          "353.5 : 1"
-  stalltorque:        "3.1 [Nm] (at 11.1 [V], 1.2 [A])<br />**3.4 [Nm] (at 12.0 [V], 1.3 [A])**<br />4.2 [Nm] (at 14.8 [V], 1.5 [A])"
-  noloadspeed:        "27 [rev/min] (at 11.1 [V])<br />**30 [rev/min] (at 12.0 [V])**<br />37 [rev/min] (at 14.8 [V])"
-  temperature:        "-5 ~ +80 [&deg;C]"
-  voltage:            "10.0 ~ 14.8 [V] (**권장 전압 : 12.0 [V]**)"
-  voltage_en:         "10.0 ~ 14.8 [V] (**Recommended : 12.0 [V]**)"
-  command:            "Digital Packet"
-  protocoltype:       "XH430-W350-T (Half Duplex Asynchronous Serial Communication with 8bit, 1stop, No Parity)<br />XH430-W350-R (RS485 Asynchronous Serial Communication with 8bit, 1stop, No Parity)"
-  physicalconnection: "XH430-W350-T (TTL Level Multidrop Bus) <br />XH430-W350-R (RS485 Multidrop Bus)"
-  id:                 "253 ID (0 ~ 252)"
-  feedback:           "Position, Velocity, Current, Realtime tick, Trajectory, Temperature, Input Voltage, etc"
-  material:           "Full Metal Gear<br />Metal (Front, Middle), Engineering Plastic (Back)"
-  standbycurrent:     "40 [mA]"
+  mcu:                *mcu
+  encoder:            *encoder
+  motor:              *motor
+  baudrate:           *baudrate
+  control:            *control
+  angle:              *angle
+  backlash:           *backlash
+  mode:               *mode2
+  mode_en:            *mode2_en
+  weight:             *weight_mx64
+  dimensions:         *dimension_mx64
+  gearratio:          "200 : 1"
+  stalltorque:        "5.5 [Nm] @ 11.1 [V], 3.9 [A]<br />6.0 [Nm] @ 12 [V], 4.1 [A]<br />7.3 [Nm] @ 14.8 [V], 5.2 [A]"
+  noloadspeed:        "58 [rev/min] @ 11.1 [V]<br />63 [rev/min] @ 12 [V]<br />78 [rev/min] @ 14.8 [V]"
+  radialload:         *radialload
+  radialload_en:      *radialload_en
+  axialload:          *axialload
+  temperature:        *temperature
+  voltage:            *voltage_12
+  voltage_en:         *voltage_12_en
+  command:            *command
+  protocoltype:       *rs485_ttl
+  physicalconnection: *rs485_ttl_conn
+  id:                 *id2
+  feedback:           *feedback2
+  material:           *material
+  standbycurrent:     *standbycurrent
 
 mx-106:
-  mcu:                "ST CORTEX-M3 (STM32F103C8 @ 72 [Mhz], 32Bit)"
-  encoder:            "Contactless absolute encoder (12Bit, 360 [&deg;])<br />Maker : ams(www.ams.com), Part No : AS5601"
-  motor:              "Cored"
-  baudrate:           "9,600 [bps] ~ 4.5 [Mbps]"
-  control:            "PID control"
-  angle:              "0.088 [&deg;]"
-  mode:               "속도 제어 모드<br />위치 제어 모드 (0 ~ 360 [&deg;])<br />확장 위치 제어 모드 (멀티턴)<br />PWM 제어 모드 (Voltage Control Mode)"
-  mode_en:            "Velcoity Control Mode<br />Position Control Mode (0 ~ 360 [&deg;])<br />Extended Position Control Mode (Multi-turn)<br />PWM Control Mode (Voltage Control Mode)"
-  weight:             "57.2 [g]"
-  dimensions:         "28.5 x 46.5 x 34 [mm]"
-  gearratio:          "258.5 : 1"
-  stalltorque:        "1.0 [N.m] (at 9.0 [V], 1.0 [A])<br />**1.4 [Nm] (at 11.1 [V], 1.3 [A])**<br />1.5 [Nm] (at 12.0 [V], 1.4 [A])"
-  noloadspeed:        "47 [rev/min] (at 9.0 [V])<br />**57 [rev/min] (at 11.1 [V])**<br />61 [rev/min] (at 12.0 [V])"
-  temperature:        "-5 ~ +72 [&deg;C]"
-  voltage:            "6.5 ~ 12.0 [V] (**권장 전압 : 11.1 [V]**)"
-  voltage_en:         "6.5 ~ 12.0 [V] (**Recommended : 11.1 [V]**)"
-  command:            "Digital Packet"
-  protocoltype:       "Half Duplex Asynchronous Serial Communication<br />(8bit, 1stop, No Parity)"
-  physicalconnection: "TTL Level Multidrop Bus"
-  id:                 "253 ID (0 ~ 252)"
-  feedback:           "Position, Velocity, Load, Realtime tick, Trajectory, Temperature, Input Voltage, etc"
-  material:           "Engineering Plastic"
-  standbycurrent:     "52 [mA]"
+  mcu:                *mcu
+  encoder:            *encoder
+  motor:              *motor
+  baudrate:           *baudrate
+  control:            *control
+  angle:              *angle
+  backlash:           *backlash
+  mode:               *mode
+  mode_en:            *mode_en
+  weight:             *weight_mx106
+  dimensions:         *dimension_mx106
+  gearratio:          "225 : 1"
+  stalltorque:        "8.0 [Nm] @ 11.1 [V], 4.8 [A]<br />8.4 [Nm] @ 12[V], 5.2 [A]<br />10.0 [Nm] @ 14.8 [V], 6.3 [A]"
+  noloadspeed:        "41 [rev/min] @ 11.1 [V]<br />45 [rev/min] @ 12 [V]<br />55 [rev/min] @ 14.8 [V]"
+  radialload:         *radialload
+  radialload_en:      *radialload_en
+  axialload:          *axialload
+  temperature:        *temperature
+  voltage:            *voltage_12
+  voltage_en:         *voltage_12_en
+  command:            *command
+  protocoltype:       *rs485_ttl
+  physicalconnection: *rs485_ttl_conn
+  id:                 *id
+  feedback:           *feedback
+  material:           *material
+  standbycurrent:     *standbycurrent
 
 mx-106-2:
-  mcu:                "ST CORTEX-M3 (STM32F103C8 @ 72 [Mhz], 32Bit)"
-  encoder:            "Contactless absolute encoder (12Bit, 360 [&deg;])<br />Maker : ams(www.ams.com), Part No : AS5601"
-  motor:              "Coreless"
-  baudrate:           "9,600 [bps] ~ 4.5 [Mbps]"
-  control:            "PID control"
-  angle:              "0.088 [&deg;]"
-  mode:               "속도 제어 모드<br />위치 제어 모드 (0 ~ 360 [&deg;])<br />확장 위치 제어 모드 (멀티턴)<br />PWM 제어 모드 (Voltage Control Mode)"
-  mode_en:            "Velcoity Control Mode<br />Position Control Mode (0 ~ 360 [&deg;])<br />Extended Position Control Mode (Multi-turn)<br />PWM Control Mode (Voltage Control Mode)"
-  weight:             "64 [g]"
-  dimensions:         "28.5 x 46.5 x 34 [mm]"
-  gearratio:          "245.22 : 1"
-  stalltorque:        "TBD (at 9.0 [V], TBD)<br />**TBD (at 11.1 [V], TBD)**<br />1.7 [Nm] (at 12.0 [V], 1.4 [A])"
-  noloadspeed:        "TBD (at 9.0 [V])<br />**TBD (at 11.1 [V])**<br />71 [rev/min] (at 12.0 [V])"
-  temperature:        "-5 ~ +80 [&deg;C]"
-  voltage:            "7.0 ~ 12.0 [V] (**권장 전압 : 12 [V]**)"
-  voltage_en:         "7.0 ~ 12.0 [V] (**Recommended : 12.0 [V]**)"
-  command:            "Digital Packet"
-  protocoltype:       "Half Duplex Asynchronous Serial Communication<br />(8bit, 1stop, No Parity)"
-  physicalconnection: "TTL Level Multidrop Bus"
-  id:                 "253 ID (0 ~ 252)"
-  feedback:           "Position, Velocity, Load, Realtime tick, Trajectory, Temperature, Input Voltage, etc"
-  material:           "Full Metal Gear<br />Engineering Plastic (Body)"
-  standbycurrent:     "45 [mA]"
+  mcu:                *mcu
+  encoder:            *encoder
+  motor:              *motor
+  baudrate:           *baudrate
+  control:            *control
+  angle:              *angle
+  backlash:           *backlash
+  mode:               *mode2
+  mode_en:            *mode2_en
+  weight:             *weight_mx106
+  dimensions:         *dimension_mx106
+  gearratio:          "225 : 1"
+  stalltorque:        "8.0 [Nm] @ 11.1 [V], 4.8 [A]<br />8.4 [Nm] @ 12[V], 5.2 [A]<br />10.0 [Nm] @ 14.8 [V], 6.3 [A]"
+  noloadspeed:        "41 [rev/min] @ 11.1 [V]<br />45 [rev/min] @ 12 [V]<br />55 [rev/min] @ 14.8 [V]"
+  radialload:         *radialload
+  radialload_en:      *radialload_en
+  axialload:          *axialload
+  temperature:        *temperature
+  voltage:            *voltage_12
+  voltage_en:         *voltage_12_en
+  command:            *command
+  protocoltype:       *rs485_ttl
+  physicalconnection: *rs485_ttl_conn
+  id:                 *id2
+  feedback:           *feedback2
+  material:           *material
+  standbycurrent:     *standbycurrent

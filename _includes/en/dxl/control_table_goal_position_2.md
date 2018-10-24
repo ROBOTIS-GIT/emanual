@@ -12,5 +12,7 @@ Desired position can be set with Goal Position(116). From the front view of Dyna
 | :---: | :---: |
 |0.088&deg;/Value| 1[rev] : 0 ~ 4,095 |
 
-**NOTE** : If Profile Acceleration(108), Profile Velocity(112) and Goal Position(116) are modified simultaneously, Goal Position(116) is processed based on updated Profile Acceleration(108) and Profile Velocity(112).
+**NOTE** : Profile Velocity(112) and Profile Acceleration(108) are applied in below cases:  
+In Position Control Mode, Profile Velocity(112) and Profile Acceleration(108) are used to create a new profile when Goal Position(116) is updated.  
+In Velocity Control Mode, Profile Acceleration(108) is used to create a new profile when Goal Velocity(104) is updated.
 {: .notice}

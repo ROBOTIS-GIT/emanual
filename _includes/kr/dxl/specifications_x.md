@@ -6,15 +6,16 @@
 | 모터             | {{ site.data.dxl_x_info[page.ref].motor }}              |
 | 통신속도         | {{ site.data.dxl_x_info[page.ref].baudrate }}           |
 | 제어 알고리즘    | {{ site.data.dxl_x_info[page.ref].control }}            |
-| 최소 제어각      | {{ site.data.dxl_x_info[page.ref].angle }}              |
+| 최소 제어각      | {{ site.data.dxl_x_info[page.ref].angle }}              |{% if site.data.dxl_x_info[page.ref].backlash != 'N/A' %}
+| 백래쉬           | {{ site.data.dxl_x_info[page.ref].backlash }}           |{% else %}{% endif %}
 | 동작 모드        | {{ site.data.dxl_x_info[page.ref].mode }}               |
 | 무게             | {{ site.data.dxl_x_info[page.ref].weight }}             |
 | 크기 (W x H x D) | {{ site.data.dxl_x_info[page.ref].dimensions }}         |
 | 기어비           | {{ site.data.dxl_x_info[page.ref].gearratio }}          |
 | 정지 토크        | {{ site.data.dxl_x_info[page.ref].stalltorque }}        |
-| 무부하 속도      | {{ site.data.dxl_x_info[page.ref].noloadspeed }}        |
-| 반경방향 하중    | {{ site.data.dxl_x_info[page.ref].radialload }}         |
-| 축방향 하중      | {{ site.data.dxl_x_info[page.ref].axialload }}          |
+| 무부하 속도      | {{ site.data.dxl_x_info[page.ref].noloadspeed }}        |{% if site.data.dxl_x_info[page.ref].radialload != 'N/A' %}
+| [반경방향 하중]{: .popup}| {{ site.data.dxl_x_info[page.ref].radialload }}         |{% else %}{% endif %}{% if site.data.dxl_x_info[page.ref].axialload != 'N/A' %}
+| [축방향 하중]{: .popup}  | {{ site.data.dxl_x_info[page.ref].axialload }}          |{% else %}{% endif %}
 | 동작 온도        | {{ site.data.dxl_x_info[page.ref].temperature }}        |
 | 사용 전압        | {{ site.data.dxl_x_info[page.ref].voltage }}            |
 | 제어 명령        | {{ site.data.dxl_x_info[page.ref].command }}            |
@@ -24,3 +25,6 @@
 | 피드백           | {{ site.data.dxl_x_info[page.ref].feedback }}           |
 | 재질             | {{ site.data.dxl_x_info[page.ref].material }}           |
 | 대기 전류        | {{ site.data.dxl_x_info[page.ref].standbycurrent }}     |
+
+[반경방향 하중]: /docs/kr/popup/axial_radial/
+[축방향 하중]: /docs/kr/popup/axial_radial/

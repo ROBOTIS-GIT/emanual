@@ -50,7 +50,7 @@ Profile이란 모터 구동 시 급격하게 변하는 속도와 가속도를 �
 Velocity Override 기능은 동일하게 동작합니다.  
 이때의 가속시간(t<sub>1</sub>)은 다음과 같습니다.  
 
-**Velocity-based Profile : t<sub>1</sub> = 65 * {Goal Velocity(104) / Profile Acceleration(108)}**  
+**Velocity-based Profile : t<sub>1</sub> = 64 * {Goal Velocity(104) / Profile Acceleration(108)}**  
 **Time-based Profile : t<sub>1</sub> = Profile Acceleration(108)**
 
 **참고** : Time-based Profile이 선택된 경우, Profile Velocity(112)로 Profile 총 시간(t<sub>3</sub>)을, Profile Acceleration(108)로
