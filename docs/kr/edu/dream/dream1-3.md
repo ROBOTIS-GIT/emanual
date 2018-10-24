@@ -64,15 +64,15 @@ sidebar:
 [LED 모듈]: /docs/kr/parts/display/lm-10/
 [접촉 센서]: /docs/kr/parts/sensor/ts-10/
 [예제 태스크 코드의 다운로드 방법]: /docs/kr/faq/download_task_code/
-[DREAM_L3_Orgel_KR.tsk]: http://support.robotis.com/ko/baggage_files/dream/dream_l3_orgel_kr.tsk
-[DREAM_L3_CleanupRobot_KR.tsk]: http://support.robotis.com/ko/baggage_files/dream/dream_l3_cleanuprobot_kr.tsk
-[DREAM_L3_Truck_KR.tsk]: http://support.robotis.com/ko/baggage_files/dream/dream_l3_truck_kr.tsk
-[DREAM_L3_BumperCar_KR.tsk]: http://support.robotis.com/ko/baggage_files/dream/dream_l3_bumpercar_kr.tsk
-[DREAM_L3_ProbingCar_KR.tsk]: http://support.robotis.com/ko/baggage_files/dream/dream_l3_probingcar_kr.tsk
-[DREAM_L3_Guitar_KR.tsk]: http://support.robotis.com/ko/baggage_files/dream/dream_l3_guitar_kr.tsk
-[DREAM_L3_FlagGame_KR.tsk]: http://support.robotis.com/ko/baggage_files/dream/dream_l3_flaggame_kr.tsk
-[DREAM_L3_Crane_KR.tsk]: http://support.robotis.com/ko/baggage_files/dream/dream_l3_crane_kr.tsk
-[DREAM_L3_DrunkenBasket_KR.tsk]: http://support.robotis.com/ko/baggage_files/dream/dream_l3_drunkenbasket_kr.tsk
-[DREAM_L3_Viking_KR.tsk]: http://support.robotis.com/ko/baggage_files/dream/dream_l3_viking_kr.tsk
-[DREAM_L3_MoleHitting_KR.tsk]: http://support.robotis.com/ko/baggage_files/dream/dream_l3_molehitting_kr.tsk
-[DREAM_L3_BabyGoblin_KR.tsk]: http://support.robotis.com/ko/baggage_files/dream/dream_l3_babygoblin_kr.tsk
+[DREAM_L3_Orgel_KR.tsk]: http://www.robotis.com/service/download.php?no=886
+[DREAM_L3_CleanupRobot_KR.tsk]: http://www.robotis.com/service/download.php?no=880
+[DREAM_L3_Truck_KR.tsk]: http://www.robotis.com/service/download.php?no=888
+[DREAM_L3_BumperCar_KR.tsk]: http://www.robotis.com/service/download.php?no=879
+[DREAM_L3_ProbingCar_KR.tsk]: http://www.robotis.com/service/download.php?no=887
+[DREAM_L3_Guitar_KR.tsk]: http://www.robotis.com/service/download.php?no=884
+[DREAM_L3_FlagGame_KR.tsk]: http://www.robotis.com/service/download.php?no=883
+[DREAM_L3_Crane_KR.tsk]: http://www.robotis.com/service/download.php?no=881
+[DREAM_L3_DrunkenBasket_KR.tsk]: http://www.robotis.com/service/download.php?no=882
+[DREAM_L3_Viking_KR.tsk]: http://www.robotis.com/service/download.php?no=889
+[DREAM_L3_MoleHitting_KR.tsk]: http://www.robotis.com/service/download.php?no=885
+[DREAM_L3_BabyGoblin_KR.tsk]: http://www.robotis.com/service/download.php?no=878

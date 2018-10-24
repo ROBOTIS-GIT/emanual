@@ -98,7 +98,7 @@ sidebar:
 [CM-150]: /docs/kr/parts/controller/cm-150/
 [감속 모터]: /docs/kr/parts/motor/gm-10a/
 [자동꺼짐타이머 바로가기]: /docs/kr/software/rplus1/task/programming_02/#자동꺼짐-타이머
-[예제 태스크 코드의 다운로드 방법]: /docs/kr/software/rplus2/task/#다운로드-하기
+[예제 태스크 코드의 다운로드 방법]: /docs/kr/faq/download_task_code/#cm-150
 [작동하기]: #작동하기
 [DREAM_L2_Total_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l2_total_kr.tskx
 [DREAM_L2_Elephant_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l2_elephant_kr.tskx

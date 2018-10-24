@@ -320,7 +320,7 @@ Instruction Packet 의 처리 결과를 나타냄
 ### 설명
 - Control Table 을 공장 출하 시의 초기값으로 되돌리는 Instruction
 - Packet ID가 Broadcast ID(0xFE)이고 Option이 Reset all value(0xFF)일 경우, Factory Reset Instruction(0x06)은 동작하지 않음
-- 특이사항 : MX(2.0) FW42 이상, Dynamixel X 시리즈 FW42 이상부터 지원
+  - MX(2.0) FW42, Dynamixel X 시리즈 FW42 이상부터 적용
 
 ### Parameters
 
@@ -338,6 +338,28 @@ Instruction Packet 의 처리 결과를 나타냄
 |H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|P1|CRC1|CRC2|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |0xFF|0xFF|0xFD|0x00|0x01|0x04|0x00|0x06|0x01|0xA1|0xE6|
+
+#### ID 1 Status Packet
+
+|H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|P1|CRC1|CRC2|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|0xFF|0xFF|0xFD|0x00|0x01|0x04|0x00|0x55|0x00|0xA1|0x0C|
+
+## [Reboot](#reboot)
+
+### 설명
+- 장치를 재부팅 시키는 Instruction
+
+### 예제
+
+#### 예제 설명
+- ID1(XM430-W210)를 Reboot 시킬 경우
+
+#### Reboot Instruction Packet
+
+|H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|CRC1|CRC2|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|0xFF|0xFF|0xFD|0x00|0x01|0x03|0x00|0x08|0x2F|0x4E|
 
 #### ID 1 Status Packet
 
@@ -372,28 +394,6 @@ Instruction Packet 의 처리 결과를 나타냄
 |  H1  |  H2  |  H3  | RSRV |  ID  | LEN1 | LEN2 | INST |  P1  | CRC1 | CRC2 |
 |:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|:----:|
 | 0xFF | 0xFF | 0xFD | 0x00 | 0x01 | 0x04 | 0x00 | 0x55 | 0x00 | 0xA1 | 0x0C |
-
-## [Reboot](#reboot)
-
-### 설명
-- 장치를 재부팅 시키는 Instruction
-
-### 예제
-
-#### 예제 설명
-- ID1(XM430-W210)를 Reboot 시킬 경우
-
-#### Reboot Instruction Packet
-
-|H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|CRC1|CRC2|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0xFD|0x00|0x01|0x03|0x00|0x08|0x2F|0x4E|
-
-#### ID 1 Status Packet
-
-|H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|P1|CRC1|CRC2|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|0xFF|0xFF|0xFD|0x00|0x01|0x04|0x00|0x55|0x00|0xA1|0x0C|
 
 ## [Sync Read](#sync-read)
 

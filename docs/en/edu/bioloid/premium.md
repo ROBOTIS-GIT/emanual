@@ -306,7 +306,7 @@ There are 16 different walking pattern sample codes to control via remote contro
 
 ## [Gyro Sensor Calibration](#gyro-sensor-calibration)
 
-- Prerequisite : [Walking Machine]
+- Prerequisite : [Walking Machine](#walking-machine)
 
 Code to control the gyro sensor will be added to the task code used in the [Walking Machine] section. Review the [Walking Machine] section before getting started.
 
@@ -314,7 +314,7 @@ Objective for this tutorial is to learn how to adjust a humanoid’s posture usi
 
 A Gyro sensor is used to determine angular velocity (angular variation per second). When the robot tilts and angular velocity increases in a specific direction, the servo motor's value can be adjusted in the opposite direction to straighten the robot.
 
-[Download](http://support.robotis.com/en/baggage_files/bioloid/bio_prm_gyrosensorexam_en.tsk) TASK Code(BIO_PRM_GyroSensorExam_EN.tsk)
+`Download` [TASK Code(BIO_PRM_GyroSensorExam_EN.tsk)](http://support.robotis.com/en/baggage_files/bioloid/bio_prm_gyrosensorexam_en.tsk)
 
 ### Things to Prepare
 

@@ -3837,9 +3837,6 @@ xh430-v210:
         - title: "Current Limit(38)"
           titlekr: "Current Limit(38)"
           url: /dxl/x/xh430-v210/#current-limit38
-        - title: "Acceleration Limit(40)"
-          titlekr: "Acceleration Limit(40)"
-          url: /dxl/x/xh430-v210/#acceleration-limit40
         - title: "Velocity Limit(44)"
           titlekr: "Velocity Limit(44)"
           url: /dxl/x/xh430-v210/#velocity-limit44
@@ -4072,9 +4069,6 @@ xh430-v350:
         - title: "Current Limit(38)"
           titlekr: "Current Limit(38)"
           url: /dxl/x/xh430-v350/#current-limit38
-        - title: "Acceleration Limit(40)"
-          titlekr: "Acceleration Limit(40)"
-          url: /dxl/x/xh430-v350/#acceleration-limit40
         - title: "Velocity Limit(44)"
           titlekr: "Velocity Limit(44)"
           url: /dxl/x/xh430-v350/#velocity-limit44
@@ -4307,9 +4301,6 @@ xh430-w210:
         - title: "Current Limit(38)"
           titlekr: "Current Limit(38)"
           url: /dxl/x/xh430-w210/#current-limit38
-        - title: "Acceleration Limit(40)"
-          titlekr: "Acceleration Limit(40)"
-          url: /dxl/x/xh430-w210/#acceleration-limit40
         - title: "Velocity Limit(44)"
           titlekr: "Velocity Limit(44)"
           url: /dxl/x/xh430-w210/#velocity-limit44
@@ -4542,9 +4533,6 @@ xh430-w350:
         - title: "Current Limit(38)"
           titlekr: "Current Limit(38)"
           url: /dxl/x/xh430-w350/#current-limit38
-        - title: "Acceleration Limit(40)"
-          titlekr: "Acceleration Limit(40)"
-          url: /dxl/x/xh430-w350/#acceleration-limit40
         - title: "Velocity Limit(44)"
           titlekr: "Velocity Limit(44)"
           url: /dxl/x/xh430-w350/#velocity-limit44
@@ -4923,9 +4911,6 @@ xm430-w210:
         - title: "Current Limit(38)"
           titlekr: "Current Limit(38)"
           url: /dxl/x/xm430-w210/#current-limit38
-        - title: "Acceleration Limit(40)"
-          titlekr: "Acceleration Limit(40)"
-          url: /dxl/x/xm430-w210/#acceleration-limit40
         - title: "Velocity Limit(44)"
           titlekr: "Velocity Limit(44)"
           url: /dxl/x/xm430-w210/#velocity-limit44
@@ -5158,9 +5143,6 @@ xm430-w350:
         - title: "Current Limit(38)"
           titlekr: "Current Limit(38)"
           url: /dxl/x/xm430-w350/#current-limit38
-        - title: "Acceleration Limit(40)"
-          titlekr: "Acceleration Limit(40)"
-          url: /dxl/x/xm430-w350/#acceleration-limit40
         - title: "Velocity Limit(44)"
           titlekr: "Velocity Limit(44)"
           url: /dxl/x/xm430-w350/#velocity-limit44
@@ -5393,9 +5375,6 @@ xm540-w150:
         - title: "Current Limit(38)"
           titlekr: "Current Limit(38)"
           url: /dxl/x/xm540-w150/#current-limit38
-        - title: "Acceleration Limit(40)"
-          titlekr: "Acceleration Limit(40)"
-          url: /dxl/x/xm540-w150/#acceleration-limit40
         - title: "Velocity Limit(44)"
           titlekr: "Velocity Limit(44)"
           url: /dxl/x/xm540-w150/#velocity-limit44
@@ -5634,9 +5613,6 @@ xm540-w270:
         - title: "Current Limit(38)"
           titlekr: "Current Limit(38)"
           url: /dxl/x/xm540-w270/#current-limit38
-        - title: "Acceleration Limit(40)"
-          titlekr: "Acceleration Limit(40)"
-          url: /dxl/x/xm540-w270/#acceleration-limit40
         - title: "Velocity Limit(44)"
           titlekr: "Velocity Limit(44)"
           url: /dxl/x/xm540-w270/#velocity-limit44
@@ -9441,6 +9417,9 @@ protocol2:
       - title: "Reboot"
         titlekr: "Reboot"
         url: /dxl/protocol2/#reboot
+      - title: "Clear"
+        titlekr: "Clear"
+        url: /dxl/protocol2/#clear
       - title: "Sync Read"
         titlekr: "Sync Read"
         url: /dxl/protocol2/#sync-read
@@ -9843,6 +9822,16 @@ smart2-2:
 - titlekr: "교안예제"
   urlkr: /edu/smart/smart2-2/#교안예제
 
+smart2-3:
+- titlekr: "개요"
+  urlkr: /edu/smart/smart2-3/#개요
+- titlekr: "부품 목록"
+  urlkr: /edu/smart/smart2-3/#부품-목록
+- titlekr: "작동하기"
+  urlkr: /edu/smart/smart2-3/#작동하기
+- titlekr: "교안예제"
+  urlkr: /edu/smart/smart2-3/#교안예제
+
 smart3-1:
 - titlekr: "개요"
   urlkr: /edu/smart/smart3-1/#개요
@@ -10242,9 +10231,9 @@ bioloid-premium:
       titlekr: "작동하기"
       url: /edu/bioloid/premium/#operating
       urlkr: /edu/bioloid/premium/#작동하기
-    - title: "Charging CM-5"
+    - title: "Battery Charge"
       titlekr: "충전하기"
-      url: /edu/bioloid/premium/#charging-cm-5
+      url: /edu/bioloid/premium/#battery-charge
       urlkr: /edu/bioloid/premium/#충전하기
   - title: "Tutorial"
     titlekr: "튜토리얼"
@@ -10265,15 +10254,15 @@ bioloid-premium:
       urlkr: /edu/bioloid/premium/#보행-머신
     - title: "Gyro Sensor"
       titlekr: "자이로 센서를 이용한 보정"
-      url: /edu/bioloid/premium/#gyro-sensor
+      url: /edu/bioloid/premium/#gyro-sensor-calibration
       urlkr: /edu/bioloid/premium/#자이로-센서를-이용한-보정
     - title: "Custom Motions(Create)"
       titlekr: "사용자 모션 추가하기(모션 만들기)"
-      url: /edu/bioloid/premium/#custom-motions-create
+      url: /edu/bioloid/premium/#custom-motionscreate
       urlkr: /edu/bioloid/premium/#사용자-모션-추가모션-만들기
     - title: "Custom Motions(Task Code)"
       titlekr: "사용자 모션 추가하기(태스크 코드)"
-      url: /edu/bioloid/premium/#custom-motions-task-code
+      url: /edu/bioloid/premium/#custom-motionstask-code
       urlkr: /edu/bioloid/premium/#사용자-모션-추가태스크-코드
     - title: "Gripper Control"
       titlekr: "그리퍼 제어"
@@ -10420,7 +10409,9 @@ mini:
       url: /edu/mini/#preparation
       urlkr: /edu/mini/#준비하기
       children:
-      - titlekr: "로보티즈 미니 앱"
+      - title: "ROBOTIS MINI App"
+        titlekr: "로보티즈 미니 앱"
+        url: /edu/mini/#robotis-mini-app
         urlkr: /edu/mini/#로보티즈-미니-앱
       - title: "Connect to MINI"
         titlekr: "로보티즈 미니 연결하기"
@@ -12034,7 +12025,7 @@ turtlebot3:
       url: /platform/turtlebot3/contact_us/#about-ost-open-source-team
 
 #OpenManipulator
-open_manipulator:
+openmanipulator:
   - title: "Overview"
     url: /platform/openmanipulator/#overview
     children:
@@ -12085,7 +12076,7 @@ open_manipulator:
         url: /platform/openmanipulator/#spawn-model
       - title: "MoveIt!"
         url: /platform/openmanipulator/#moveit
-  - title: "Embedded board Setup"
+  - title: "Embedded Board Setup"
     url: /platform/openmanipulator/#embedded-board-setup
     children:
     - title: "Arduino IDE"
@@ -13186,9 +13177,19 @@ download_task_code:
   - title: "CM-5"
     titlekr: "CM-5"
     url: /faq/download_task_code/#cm-5
+    urlkr: /faq/download_task_code/#cm-5
   - title: "CM-100"
     titlekr: "CM-100"
     url: /faq/download_task_code/#cm-100
+    urlkr: /faq/download_task_code/#cm-100
+  - title: "CM-150"
+    titlekr: "CM-150"
+    url: /faq/download_task_code/#cm-150
+    urlkr: /faq/download_task_code/#cm-150
+  - title: "CM-530"
+    titlekr: "CM-530"
+    url: /faq/download_task_code/#cm-530
+    urlkr: /faq/download_task_code/#cm-530
 - title: "Videos"
   titlekr: "동영상"
   url: /faq/download_task_code/#videos
