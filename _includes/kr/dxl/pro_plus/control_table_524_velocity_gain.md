@@ -16,7 +16,7 @@
 6. 최종 PWM값은 Inverter를 통해 모터에 적용되고 장치의 Horn이 구동됩니다.
 7. 구동 결과는 Present Position(580), Present Velocity(576) Present PWM(572), Present Current(574)에 표기됩니다..
 
-![](/assets/images/dxl/pro-plus/velocity_controller.png)
+![](/assets/images/dxl/pro_plus/velocity_controller.png)
 
 **참고** : K<sub>v</sub>A는 Anti-windup Gain으로 사용자가 변경할 수는 없습니다. PID제어기에 대한 설명은 [위키피디아 PID Controller](http://en.wikipedia.org/wiki/PID_controller)를 참조하세요.
 {: .notice}

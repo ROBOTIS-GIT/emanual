@@ -13,7 +13,7 @@ Profile이란 모터 구동 시 급격하게 변하는 속도와 가속도를 �
 기본적으로 Profile의 선택은 Profile Velocity(560)와 Profile Acceleration(556)의 조합에 의해서 결정됩니다.  
 예외적으로 Trapezoidal Profile은 총 이동거리(ΔPos, 목표위치와 현재위치의 차이)가 추가로 고려되어 선택됩니다.  
 
-![](/assets/images/dxl/pro+/profile_types.png)
+![](/assets/images/dxl/pro_plus/profile_types.png)
 
 
 장치의 Profile은 Goal Position(564)이 주어졌을 때, 현재 속도(Profile의 시작속도)를 기반으로 목표 속도 궤적을 생성합니다.  
@@ -37,7 +37,7 @@ Profile이란 모터 구동 시 급격하게 변하는 속도와 가속도를 �
 | (Profile Velocity(560) ≠ 0) & (Profile Acceleration(556) = 0) | 사각 프로파일 |
 | (Profile Velocity(560) ≠ 0) & (Profile Acceleration(556) ≠ 0) | 사다리꼴 프로파일 |
 
-![](/assets/images/dxl/pro+/velocity_profile.png)
+![](/assets/images/dxl/pro_plus/velocity_profile.png)
 
 
 {% capture group_notice_03 %}
