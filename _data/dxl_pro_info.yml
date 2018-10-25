@@ -22,7 +22,6 @@ common_pro_specs:
   id:                 &id                 "253 ID (0 ~ 252)"
   standbycurrent:     &standbycurrent     "80 [mA]"
 
-
 h42-20-s300-r:
   motor:              *motor
   baudrate:           *baudrate
