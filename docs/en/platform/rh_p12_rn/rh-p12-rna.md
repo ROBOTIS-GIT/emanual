@@ -46,7 +46,7 @@ sidebar:
 
 {% include en/dxl/warning.md %}
 
-{% include en/dxl/pro-plus/control_table.md %}
+{% include en/dxl/pro_plus/control_table.md %}
 
 ## [Control Table of EEPROM Area](#control-table-of-eeprom-area)
 
@@ -146,19 +146,19 @@ This address stores model number of the device.
 | RH-P12-RN(A)  | 35,074 (0x8902) |
 
 ### <a name="firmware-version"></a>**[Firmware Version(6)](#firmware-version6)**
-{% include en/dxl/pro-plus/control_table_6_firmware_version.md %}
+{% include en/dxl/pro_plus/control_table_6_firmware_version.md %}
 
 ### <a name="id"></a>**[ID(7)](#id7)**
-{% include en/dxl/pro-plus/control_table_7_id.md %}
+{% include en/dxl/pro_plus/control_table_7_id.md %}
 
 ### <a name="baud-rate"></a>**[Baud Rate(8)](#baud-rate8)**
-{% include en/dxl/pro-plus/control_table_8_baud_rate.md %}
+{% include en/dxl/pro_plus/control_table_8_baud_rate.md %}
 
 ### <a name="return-delay-time"></a>**[Return Delay Time(9)](#return-delay-time9)**
-{% include en/dxl/pro-plus/control_table_9_return_delay_time.md %}
+{% include en/dxl/pro_plus/control_table_9_return_delay_time.md %}
 
 ### <a name="drive-mode"></a>**[Drive Mode(10)](#drive-mode10)**
-{% include en/dxl/pro-plus/control_table_10_drive_mode.md %}
+{% include en/dxl/pro_plus/control_table_10_drive_mode.md %}
 
 ### <a name="operating-mode"></a>**[Operating Mode(11)](#operating-mode11)**
 Operating mode of the device can be configured. Each control mode has different characteristics so please choose appropriate mode for the application.
@@ -170,22 +170,22 @@ Operating mode of the device can be configured. Each control mode has different 
 | 5(Default) | Current based Position Control Mode | This mode controls both Position and Current.                     |
 
 ### <a name="secondary-id"></a>**[Secondary ID(12)](#secondary-id12)**
-{% include en/dxl/pro-plus/control_table_12_secondary_id.md %}
+{% include en/dxl/pro_plus/control_table_12_secondary_id.md %}
 
 ### <a name="homing-offset"></a>**[Homing Offset(20)](#homing-offset20)**
-{% include en/dxl/pro-plus/control_table_20_homing_offset.md %}
+{% include en/dxl/pro_plus/control_table_20_homing_offset.md %}
 
 ### <a name="moving-threshold"></a>**[Moving Threshold(24)](#moving-threshold24)**
-{% include en/dxl/pro-plus/control_table_24_moving_threshold.md %}
+{% include en/dxl/pro_plus/control_table_24_moving_threshold.md %}
 
 ### <a name="temperature-limit"></a>**[Temperature Limit(31)](#temperature-limit31)**
-{% include en/dxl/pro-plus/control_table_31_temperature_limit.md %}
+{% include en/dxl/pro_plus/control_table_31_temperature_limit.md %}
 
 ### <a name="max-voltage-limit"></a><a name="min-voltage-limit"></a>**[Max/Min Voltage Limit(32, 34)](#maxmin-voltage-limit32-34)**
-{% include en/dxl/pro-plus/control_table_32_voltage_limit.md %}
+{% include en/dxl/pro_plus/control_table_32_voltage_limit.md %}
 
 ### <a name="pwm-limit"></a>**[PWM Limit(36)](#pwm-limit36)**
-{% include en/dxl/pro-plus/control_table_36_pwm_limit.md %}
+{% include en/dxl/pro_plus/control_table_36_pwm_limit.md %}
 
 ### <a name="current-limit"></a>**[Current Limit(38)](#current-limit38)**
 This value indicates the maximum current(torque) output limit.  
@@ -265,25 +265,25 @@ Remove bolts and cover plate to reveal External Port connector.
 |  GND  | 3.3V  | PORT1 | PORT2 | PORT3 | PORT4 |
 
 ### <a name="shutdown"></a>**[Shutdown(63)](#shutdown63)**
-{% include en/dxl/pro-plus/control_table_63_shutdown.md %}
+{% include en/dxl/pro_plus/control_table_63_shutdown.md %}
 
 ### <a name="indirect-address"></a><a name="indirect-data"></a>**[Indirect Address](#indirect-address)**, **[Indirect Data](#indirect-data)**
-{% include en/dxl/pro-plus/control_table_168_indirect.md %}
+{% include en/dxl/pro_plus/control_table_168_indirect.md %}
 
 ### <a name="torque-enable"></a>**[Torque Enable(512)](#torque-enable512)**
-{% include en/dxl/pro-plus/control_table_512_torque_enable.md %}
+{% include en/dxl/pro_plus/control_table_512_torque_enable.md %}
 
 ### <a name="led"></a>**[RGB LED](#rgb-led)**
-{% include en/dxl/pro-plus/control_table_513_led.md %}
+{% include en/dxl/pro_plus/control_table_513_led.md %}
 
 ### <a name="status-return-level"></a>**[Status Return Level(516)](#status-return-level516)**
-{% include en/dxl/pro-plus/control_table_516_status_return_level.md %}
+{% include en/dxl/pro_plus/control_table_516_status_return_level.md %}
 
 ### <a name="registered-instruction"></a>**[Registered Instruction(517)](#registered-instruction517)**
-{% include en/dxl/pro-plus/control_table_517_registered_instruction.md %}
+{% include en/dxl/pro_plus/control_table_517_registered_instruction.md %}
 
 ### <a name="hardware-error-status"></a>**[Hardware Error Status(518)](#hardware-error-status518)**
-{% include en/dxl/pro-plus/control_table_518_hardware_error_status.md %}
+{% include en/dxl/pro_plus/control_table_518_hardware_error_status.md %}
 
 ### <a name="velocity-i-gain"><a name="position-p-gain"></a><a name="feedforward-2nd-gain"></a><a name="feedforward-1st-gain"></a>**[Velocity PI Gain(524, 526), Position PID Gain(528,530,532), Feedforward 2nd Gains(536), Feedforward 1st Gains(538)](#velocity-pi-gain524-526, #position-pid-gain528-530-532, Feedforward 2nd Gains536, Feedforward 1st Gains538)**
 These values indicate Gains of Current based Position Control. Position P Gain of the device's internal controller is abbreviated to K<sub>P</sub>P and that of the Control Table is abbreviated to K<sub>P</sub>P<sub>(TBL)</sub>.
@@ -314,13 +314,13 @@ Below figure is a block diagram describing the position controller in Current-ba
 {: .notice}
 
 ### <a name="bus-watchdog"></a>**[Bus Watchdog(546)](#bus-watchdog546)**
-{% include en/dxl/pro-plus/control_table_546_bus_watchdog.md %}
+{% include en/dxl/pro_plus/control_table_546_bus_watchdog.md %}
 
 ### <a name="goal-pwm"></a>**[Goal PWM(548)](#goal-pwm548)**
-{% include en/dxl/pro-plus/control_table_548_goal_pwm.md %}
+{% include en/dxl/pro_plus/control_table_548_goal_pwm.md %}
 
 ### <a name="goal-current"></a>**[Goal Current(550)](#goal-current550)**
-{% include en/dxl/pro-plus/control_table_550_goal_current.md %}
+{% include en/dxl/pro_plus/control_table_550_goal_current.md %}
 
 ### <a name="goal-velocity"></a>**[Goal Velocity(552)](#goal-velocity552)**
 Goal Velocity(552) value is used as an input limiter of velocity controller.  
@@ -350,7 +350,7 @@ This device provides the following 3 types of profile.
 Profiles are usually selected by the combination of Profile Velocity(560) and Profile Acceleration(556).  
 Trapezoidal Profile is exceptionally applied with additional factor: travel distance(&Delta;Pos, the distance between desired position and present position).
 
-![](/assets/images/dxl/pro-plus/profile_types.png)
+![](/assets/images/dxl/pro_plus/profile_types.png)
 
 When given Goal Position(564), the device’s profile creates desired velocity trajectory based on present velocity(initial velocity of the Profile).  
 When the device receives updated desired position via Goal Position(564) while it is moving toward the previous desired position, velocity will smoothly changed for the new desired velocity trajectory.  
@@ -372,7 +372,7 @@ The following explains how Profile processes Goal Position(564).
 | (Profile Velocity(560) ≠ 0) & (Profile Acceleration(556) = 0) | Rectangular Profile                    |
 | (Profile Velocity(560) ≠ 0) & (Profile Acceleration(556) ≠ 0) | Trapezoidal Profile                    |
 
-![](/assets/images/dxl/pro-plus/velocity_profile.png)
+![](/assets/images/dxl/pro_plus/velocity_profile.png)
 
 
 {% capture group_notice_03 %}
@@ -394,10 +394,10 @@ This value must be inbetween Min Position Limit(52) and Max Position Limit(48).
 |RH-P12-RN|![](/assets/images/platform/rh_p12_rn/rh_p12_rn_position_open.png)|![](/assets/images/platform/rh_p12_rn/rh_p12_rn_position_close.png)|
 
 ### <a name="realtime-tick"></a>**[Realtime Tick(568)](#realtime-tick568)**
-{% include en/dxl/pro-plus/control_table_568_realtime_tick.md %}
+{% include en/dxl/pro_plus/control_table_568_realtime_tick.md %}
 
 ### <a name="moving"></a>**[Moving(570)](#moving570)**
-{% include en/dxl/pro-plus/control_table_570_moving.md %}
+{% include en/dxl/pro_plus/control_table_570_moving.md %}
 
 ### <a name="moving-status"></a>**[Moving Status(571)](#moving-status571)**
 This value provides additional information about the movement. In-Position Bit(0x01) only works with Current-based Position Control Mode.
@@ -414,13 +414,13 @@ This value provides additional information about the movement. In-Position Bit(0
 
 
 ### <a name="present-pwm"></a>**[Present PWM(572)](#present-pwm572)**
-{% include en/dxl/pro-plus/control_table_572_present_pwm.md %}
+{% include en/dxl/pro_plus/control_table_572_present_pwm.md %}
 
 ### <a name="present-current"></a>**[Present Current(574)](#present-current574)**
-{% include en/dxl/pro-plus/control_table_574_present_current.md %}
+{% include en/dxl/pro_plus/control_table_574_present_current.md %}
 
 ### <a name="present-velocity"></a>**[Present Velocity(576)](#present-velocity576)**
-{% include en/dxl/pro-plus/control_table_576_present_velocity.md %}
+{% include en/dxl/pro_plus/control_table_576_present_velocity.md %}
 
 ### <a name="present-position"></a>**[Present Position(580)](#present-position580)**
 This value represents present position of the device.
@@ -441,10 +441,10 @@ This is a desired position trajectory created by Profile. This value is only use
 
 
 ### <a name="present-input-voltage"></a>**[Present Input Voltage(592)](#present-input-voltage592)**
-{% include en/dxl/pro-plus/control_table_592_present_input_voltage.md %}
+{% include en/dxl/pro_plus/control_table_592_present_input_voltage.md %}
 
 ### <a name="present-temperature"></a>**[Present Temperature(594)](#present-temperature594)**
-{% include en/dxl/pro-plus/control_table_594_present_temperature.md %}
+{% include en/dxl/pro_plus/control_table_594_present_temperature.md %}
 
 # [How to Assemble](#how-to-assemble)
 

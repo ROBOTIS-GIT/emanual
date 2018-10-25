@@ -13,7 +13,7 @@ This device provides the following 3 types of profile.
 Profiles are usually selected by the combination of Profile Velocity(560) and Profile Acceleration(556).  
 Trapezoidal Profile is exceptionally chosen with additional factor: travel distance(&Delta;Pos, the distance between desired position and present position).
 
-![](/assets/images/dxl/pro-plus/profile_types.png)
+![](/assets/images/dxl/pro_plus/profile_types.png)
 
 When given Goal Position(564), the device’s profile creates desired velocity trajectory based on present velocity(initial velocity of the Profile).  
 When the device receives updated desired position via Goal Position(564) while it is moving toward the previous desired position, velocity will smoothly changed for the new desired velocity trajectory.  
@@ -35,7 +35,7 @@ The following explains how Profile processes Goal Position(564).
 | (Profile Velocity(560) ≠ 0) & (Profile Acceleration(556) = 0) | Rectangular Profile                    |
 | (Profile Velocity(560) ≠ 0) & (Profile Acceleration(556) ≠ 0) | Trapezoidal Profile                    |
 
-![](/assets/images/dxl/pro-plus/velocity_profile.png)
+![](/assets/images/dxl/pro_plus/velocity_profile.png)
 
 
 {% capture group_notice_03 %}

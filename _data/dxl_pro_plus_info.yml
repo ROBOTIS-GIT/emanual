@@ -20,7 +20,7 @@ common_pro_plus_specs:
   standbycurrent_42:  &standbycurrent_42  "30 [mA]"
   standbycurrent_54:  &standbycurrent_54  "40 [mA]"
 
-h42p-20-s300-r:
+h42p-020-s300-r:
   motor:              *motor
   baudrate:           *baudrate
   opmode_en:          *opmode_en
