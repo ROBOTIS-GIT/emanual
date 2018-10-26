@@ -6,10 +6,10 @@ Profile Velocity(112) is applied only in Position Control Mode and Extended Posi
 **NOTE**: Velocity Control Mode only uses Profile Acceleration(108) without Profile Velocity(112).
 {: .notice}
 
-| Velocity-based Profile |            Values             | Description                         |
-|:----------------------:|:-----------------------------:|:------------------------------------|
-|          Unit          | 214.577 [rev/min<sup>2</sup>] | Sets velocity of the Profile        |
-|         Range          |           0 ~ 32767           | '0' stands for an infinite velocity |
+| Velocity-based Profile |     Values      | Description                         |
+|:----------------------:|:---------------:|:------------------------------------|
+|          Unit          | 0.229 [rev/min] | Sets velocity of the Profile        |
+|         Range          |    0 ~ 32767    | '0' stands for an infinite velocity |
 
 | Time-based Profile |  Values   | Description                                                                                                           |
 |:------------------:|:---------:|:----------------------------------------------------------------------------------------------------------------------|
