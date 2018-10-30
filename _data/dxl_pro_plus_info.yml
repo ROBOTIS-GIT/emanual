@@ -33,11 +33,11 @@ h42p-020-s300-r:
   radialload:         *radialload_42
   radialload_en:      *radialload_42_en
   axialload:          *axialload_42
-  noloadspeed:        "33.0 [rev/min]"
-  noloadcurrent:      "0.35 [A]"
+  noloadspeed:        "32.7 [rev/min]"
+  noloadcurrent:      "0.57 [A]"
   contspeed:          "29.2 [rev/min]"
   conttorque:         "5.1 [Nm]"
-  contcurrent:        "1.4 [A]"
+  contcurrent:        "1.5 [A]"
   output:             "20 [W]"
   optemperature:      *temperature
   opvoltage:          *voltage
@@ -62,8 +62,8 @@ h54p-100-s500-r:
   radialload:         *radialload_54
   radialload_en:      *radialload_54_en
   axialload:          *axialload_54
-  noloadspeed:        "33.0 [rev/min]"
-  noloadcurrent:      "0.95 [A]"
+  noloadspeed:        "33.3 [rev/min]"
+  noloadcurrent:      "1.13 [A]"
   contspeed:          "29.2 [rev/min]"
   conttorque:         "25.3 [Nm]"
   contcurrent:        "5.5 [A]"
@@ -92,7 +92,7 @@ h54p-200-s500-r:
   radialload_en:      *radialload_54_en
   axialload:          *axialload_54
   noloadspeed:        "33.1 [rev/min]"
-  noloadcurrent:      "1.4 [A]"
+  noloadcurrent:      "1.65 [A]"
   contspeed:          "29.0 [rev/min]"
   conttorque:         "44.7 [Nm]"
   contcurrent:        "9.3 [A]"

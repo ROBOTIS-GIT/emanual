@@ -376,6 +376,7 @@ Instruction Packet 의 처리 결과를 나타냄
 ### Parameters
 
 |Instruction Packet|설명|
+|:---:|:---|
 |Parameter1|0x01 : 현재 위치의 다수 회전(멀티턴)을 1회전(싱글턴)으로 변경(정지된 상태에서만 사용이 가능. 회전 중일 경우, Status packet은 Error 필드를 통해서 Result Fail(0x01)을 전송)|
 
 ### 예제
