@@ -1,74 +1,196 @@
+common_proa_specs:
+  motor:              &motor              "BLDC(Maxon)"
+  baudrate:           &baudrate           "9,600 [bps] ~ 10.5 [Mbps]"
+  opmode:             &opmode             "토크 제어모드<br />속도 제어모드<br />위치 제어모드<br />확장 위치 제어모드<br />PWM 제어모드(전압 제어모드)"
+  opmode_en:          &opmode_en          "Torque Control Mode<br />Velocity Control Mode<br />Position Control Mode<br />Extended Position Control Mode<br />PWM Control Mode(Voltage Control Mode)"
+  dimension_430:      &dimension_430      "28.5 x 46.5 x 34 [mm]"
+  dimension_540:      &dimension_540      "33.5 x 58.5 x 44 [mm]"
+  radialload_42:      &radialload_42      "280 [N] (혼으로부터 10 [mm])"
+  radialload_54:      &radialload_54      "370 [N] (혼으로부터 10 [mm])"
+  radialload_42_en:   &radialload_42_en  "280 [N] (10 [mm] away from the horn)"
+  radialload_54_en:   &radialload_54_en  "370 [N] (10 [mm] away from the horn)"
+  axialload_42:       &axialload_42       "100 [N]"
+  axialload_54:       &axialload_54       "130 [N]"
+  temperature:        &temperature        "5 ~ 55 [&deg;C]"
+  voltage:            &voltage            "24.0 [V]"
+  command:            &command            "Digital Packet"
+  command_kr:         &command_kr         "디지털 패킷"
+  rs485:              &rs485              "RS485 Asynchronous Serial Communication<br />(8bit, 1stop, No Parity)"
+  rs485_kr:           &rs485_kr           "RS485 비동기 시리얼 통신 (8bit, 1stop, No Parity)"
+  rs485_connection:   &rs485_connection   "RS485 Multidrop Bus"
+  id:                 &id                 "253 ID (0 ~ 252)"
+  standbycurrent:     &standbycurrent     "80 [mA]"
+
 h42-20-s300-ra:
-  motor:              "BLDC(Maxon)"
-  baudrate:           "9,600 [bps] ~ 10.5 [Mbps]"
-  opmode:             "Torque Control Mode<br />Velocity Control Mode<br />Position Control Mode<br />Extended Position Control Mode<br />PWM Control Mode(Voltage Control Mode)"
-  opmodekr:           "토크 제어모드<br />속도 제어모드<br />위치 제어모드<br />확장 위치 제어모드<br />PWM 제어모드(전압 제어모드)"
-  weight:             "340"
-  dimensions:         "42 x 84 x 42"
-  resolution:         "607,500"
+  motor:              *motor
+  baudrate:           *baudrate
+  opmode_en:          *opmode_en
+  opmode:             *opmode
+  weight:             "340 [g]"
+  dimensions:         "42 x 84 x 42 [mm]"
+  resolution:         "607,500 [pulse/rev]"
   gearratio:          "303.75:1"
   backlash:           "3.8 [arcmin], 0.06 [&deg;]"
-  noloadspeed:        "32.7"
-  noloadcurrent:      "0.57"
-  contspeed:          "29.2"
-  conttorque:         "5.1"
-  contcurrent:        "1.5"
-  output:             "20"
-  optemperature:      "5 ~ 55"
-  opvoltage:          "24"
-  commandsignal:      "Digital Packet"
-  commandsignalkr:    "디지털 패킷"
-  protocoltype:       "RS485 Asynchronous Serial Communication<br />(8bit, 1stop, No Parity)"
-  protocoltypekr:     "RS485 비동기 시리얼 통신 (8bit, 1stop, No Parity)"
+  radialload:         *radialload_42
+  radialload_en:      *radialload_42_en
+  axialload:          *axialload_42
+  noloadspeed:        "32.7 [rev/min]"
+  noloadcurrent:      "0.57 [A]"
+  contspeed:          "29.2 [rev/min]"
+  conttorque:         "5.1 [Nm]"
+  contcurrent:        "1.5 [A]"
+  output:             "20 [W]"
+  optemperature:      *temperature
+  opvoltage:          *voltage
+  commandsignal:      *command
+  commandsignalkr:    *command_kr
+  protocoltype:       *rs485
+  protocoltypekr:     *rs485_kr
   physicalconnection: "RS485 Multidrop Bus"
-  id:                 "0 ~ 252"
+  id:                 *id
+  standbycurrent:     *standbycurrent
 
 h54-100-s500-ra:
-  motor:              "BLDC(Maxon)"
-  baudrate:           "9,600 [bps] ~ 10.5 [Mbps]"
-  opmode:             "Torque Control Mode<br />Velocity Control Mode<br />Position Control Mode<br />Extended Position Control Mode<br />PWM Control Mode(Voltage Control Mode)"
-  opmodekr:           "토크 제어모드<br />속도 제어모드<br />위치 제어모드<br />확장 위치 제어모드<br />PWM 제어모드(전압 제어모드)"
-  weight:             "732"
-  dimensions:         "54 x 108 x 54"
-  resolution:         "1,003,846"
+  motor:              *motor
+  baudrate:           *baudrate
+  opmode_en:          *opmode_en
+  opmode:             *opmode
+  weight:             "732 [g]"
+  dimensions:         "54 x 108 x 54 [mm]"
+  resolution:         "1,003,846 [pulse/rev]"
   gearratio:          "501.923 : 1"
   backlash:           "3.5 [arcmin], 0.06 [&deg;]"
-  noloadspeed:        "33.3"
-  noloadcurrent:      "1.13"
-  contspeed:          "29.2"
-  conttorque:         "25.3"
-  contcurrent:        "5.5"
-  output:             "100"
-  optemperature:      "5 ~ 55"
-  opvoltage:          "24"
-  commandsignal:      "Digital Packet"
-  commandsignalkr:    "디지털 패킷"
-  protocoltype:       "RS485 Asynchronous Serial Communication<br />(8bit, 1stop, No Parity)"
-  protocoltypekr:     "RS485 비동기 시리얼 통신 (8bit, 1stop, No Parity)"
+  radialload:         *radialload_54
+  radialload_en:      *radialload_54_en
+  axialload:          *axialload_54
+  noloadspeed:        "33.3 [rev/min]"
+  noloadcurrent:      "1.13 [A]"
+  contspeed:          "29.2 [rev/min]"
+  conttorque:         "25.3 [Nm]"
+  contcurrent:        "5.5 [A]"
+  output:             "100 [W]"
+  optemperature:      *temperature
+  opvoltage:          *voltage
+  commandsignal:      *command
+  commandsignalkr:    *command_kr
+  protocoltype:       *rs485
+  protocoltypekr:     *rs485_kr
   physicalconnection: "RS485 Multidrop Bus"
-  id:                 "0 ~ 252"
+  id:                 *id
+  standbycurrent:     *standbycurrent
 
 h54-200-s500-ra:
-  motor:              "BLDC(Maxon)"
-  baudrate:           "9,600 [bps] ~ 10.5 [Mbps]"
-  opmode:             "Torque Control Mode<br />Velocity Control Mode<br />Position Control Mode<br />Extended Position Control Mode<br />PWM Control Mode(Voltage Control Mode)"
-  opmodekr:           "토크 제어모드<br />속도 제어모드<br />위치 제어모드<br />확장 위치 제어모드<br />PWM 제어모드(전압 제어모드)"
-  weight:             "855"
-  dimensions:         "54 x 126 x 54"
-  resolution:         "1,003,846"
+  motor:              *motor
+  baudrate:           *baudrate
+  opmode_en:          *opmode_en
+  opmode:             *opmode
+  weight:             "855 [g]"
+  dimensions:         "54 x 126 x 54 [mm]"
+  resolution:         "1,003,846 [pulse/rev]"
   gearratio:          "501.923 : 1"
   backlash:           "3.5 [arcmin], 0.06 [&deg;]"
-  noloadspeed:        "33.1"
-  noloadcurrent:      "1.65"
-  contspeed:          "29.0"
-  conttorque:         "44.7"
-  contcurrent:        "9.3"
-  output:             "200"
-  optemperature:      "5 ~ 55"
-  opvoltage:          "24"
-  commandsignal:      "Digital Packet"
-  commandsignalkr:    "디지털 패킷"
-  protocoltype:       "RS485 Asynchronous Serial Communication<br />(8bit, 1stop, No Parity)"
-  protocoltypekr:     "RS485 비동기 시리얼 통신 (8bit, 1stop, No Parity)"
+  radialload:         *radialload_54
+  radialload_en:      *radialload_54_en
+  axialload:          *axialload_54
+  noloadspeed:        "33.1 [rev/min]"
+  noloadcurrent:      "1.65 [A]"
+  contspeed:          "29.0 [rev/min]"
+  conttorque:         "44.7 [Nm]"
+  contcurrent:        "9.3 [A]"
+  output:             "200 [W]"
+  optemperature:      *temperature
+  opvoltage:          *voltage
+  commandsignal:      *command
+  commandsignalkr:    *command_kr
+  protocoltype:       *rs485
+  protocoltypekr:     *rs485_kr
   physicalconnection: "RS485 Multidrop Bus"
-  id:                 "0 ~ 252"
+  id:                 *id
+  standbycurrent:     *standbycurrent
+
+m42-10-s260-ra:
+  motor:              *motor
+  baudrate:           *baudrate
+  opmode_en:          *opmode_en
+  opmode:             *opmode
+  weight:             "269 [g]"
+  dimensions:         "42 x 72 x 42 [mm]"
+  resolution:         "526,375 [pulse/rev]"
+  gearratio:          "257.0 : 1"
+  backlash:           "4.2 [arcmin], 0.07 [&deg;]"
+  radialload:         "N/A"
+  radialload_en:      "N/A"
+  axialload:          "N/A"
+  noloadspeed:        "28.0 [rev/min]"
+  noloadcurrent:      "0.52 [A]"
+  contspeed:          "26.0 [rev/min]"
+  conttorque:         "1.7 [Nm]"
+  contcurrent:        "0.6 [A]"
+  output:             "10 [W]"
+  optemperature:      *temperature
+  opvoltage:          *voltage
+  commandsignal:      *command
+  commandsignalkr:    *command_kr
+  protocoltype:       *rs485
+  protocoltypekr:     *rs485_kr
+  physicalconnection: "RS485 Multidrop Bus"
+  id:                 *id
+  standbycurrent:     *standbycurrent
+
+m54-40-s250-ra:
+  motor:              *motor
+  baudrate:           *baudrate
+  opmode_en:          *opmode_en
+  opmode:             *opmode
+  weight:             "710 [g]"
+  dimensions:         "54 x 108 x 54 [mm]"
+  resolution:         "502,834 [pulse/rev]"
+  gearratio:          "251.4 : 1"
+  backlash:           "3.8 [arcmin], 0.06 [&deg;]"
+  radialload:         "N/A"
+  radialload_en:      "N/A"
+  axialload:          "N/A"
+  noloadspeed:        "28.4 [rev/min]"
+  noloadcurrent:      "1.32 [A]"
+  contspeed:          "24.2 [rev/min]"
+  conttorque:         "3.9 [Nm]"
+  contcurrent:        "1.9 [A]"
+  output:             "40 [W]"
+  optemperature:      *temperature
+  opvoltage:          *voltage
+  commandsignal:      *command
+  commandsignalkr:    *command_kr
+  protocoltype:       *rs485
+  protocoltypekr:     *rs485_kr
+  physicalconnection: "RS485 Multidrop Bus"
+  id:                 *id
+  standbycurrent:     *standbycurrent
+
+m54-60-s250-ra:
+  motor:              *motor
+  baudrate:           *baudrate
+  opmode_en:          *opmode_en
+  opmode:             *opmode
+  weight:             "853 [g]"
+  dimensions:         "54 x 126 x 54 [mm]"
+  resolution:         "502,834 [pulse/rev]"
+  gearratio:          "251.4 : 1"
+  backlash:           "3.8 [arcmin], 0.06 [&deg;]"
+  radialload:         "N/A"
+  radialload_en:      "N/A"
+  axialload:          "N/A"
+  noloadspeed:        "33.1 [rev/min]"
+  noloadcurrent:      "1.25 [A]"
+  contspeed:          "28.3 [rev/min]"
+  conttorque:         "10.1 [Nm]"
+  contcurrent:        "3.0 [A]"
+  output:             "60 [W]"
+  optemperature:      *temperature
+  opvoltage:          *voltage
+  commandsignal:      *command
+  commandsignalkr:    *command_kr
+  protocoltype:       *rs485
+  protocoltypekr:     *rs485_kr
+  physicalconnection: "RS485 Multidrop Bus"
+  id:                 *id
+  standbycurrent:     *standbycurrent

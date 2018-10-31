@@ -5,7 +5,7 @@ Time-based Profile이 선택된 경우, Profile Velocity(112)는 Profile의 총 
 
 | Velocity-based Profile | 상세                          | 비고                                                                                                                                   |
 | :--------------------: | :---------------------------: | :------------------------------------------------------------------------------------------------------------------------------------- |
-| 단위                   | 214.577 [rev/min<sup>2</sup>] | Profile의 속도를 설정합니다.                                                                                                           |
+| 단위                   | 0.229 [rev/min]               | Profile의 속도를 설정합니다.                                                                                                           |
 | 범위                   | 0 ~ 32767                     | '0'인 경우, 무한대 속도를 뜻합니다.                                                                                                    |
 
 | Time-based Profile     | 상세                          | 비고                                                                                                                                   |
@@ -50,7 +50,7 @@ Profile이란 모터 구동 시 급격하게 변하는 속도와 가속도를 �
 Velocity Override 기능은 동일하게 동작합니다.  
 이때의 가속시간(t<sub>1</sub>)은 다음과 같습니다.  
 
-**Velocity-based Profile : t<sub>1</sub> = 65 * {Goal Velocity(104) / Profile Acceleration(108)}**  
+**Velocity-based Profile : t<sub>1</sub> = 64 * {Goal Velocity(104) / Profile Acceleration(108)}**  
 **Time-based Profile : t<sub>1</sub> = Profile Acceleration(108)**
 
 **참고** : Time-based Profile이 선택된 경우, Profile Velocity(112)로 Profile 총 시간(t<sub>3</sub>)을, Profile Acceleration(108)로

@@ -26,4 +26,4 @@
 - Do not disassemble or modify product.
 - Do not drop or apply strong shock to product.
 {% endcapture %}
-<div class="notice--danger">{{ dxl_attention | markdownify }}</div>
+<div class="notice--warning">{{ dxl_attention | markdownify }}</div>

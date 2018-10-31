@@ -10,3 +10,6 @@ This value provides additional information about the movement. Following Error B
 | Bit 2 | 0x04 | - | Unused |
 | Bit 1 | 0x02 | Profile Ongoing | Profile is in progress with Goal Position(116) instruction |
 | Bit 0 | 0x01 | In-Position | Dynamixel is reached to desired position |
+
+**NOTE** : Triangular velocity profile is configured when Rectangular velocity profile cannot reach to the Profile Velocity(112).
+{: .notice}

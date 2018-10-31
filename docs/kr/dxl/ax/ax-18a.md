@@ -28,16 +28,16 @@ sidebar:
 | 최소 제어각     | 0.29 [deg]                                                                   |
 | 모터            | Coreless                                                                    |
 | 기어비          | 254 : 1                                                                     |
-| Stall Torque    | 1.8 [N&middot;m] (at 12 [V], 2.2 [A])                                                      |
-| No Load Speed   | 97 [rpm] (at 12 [V])                                                              |
+| 정지 토크    | 1.8 [N&middot;m] (at 12 [V], 2.2 [A])                                                      |
+| 무부하 속도   | 97 [rpm] (at 12 [V])                                                              |
 | 동작 모드       | 관절 모드 : 0 ~ 300 [deg]<br />바퀴 모드 : 무한 회전                   |
 | 동작 온도       | -5 ~ +70 [&deg;C]                                                   |
 | 사용 전압       | 9.0 ~ 12.0 [V] (**권장 전압 : 11.1 [V]**)                                    |
-| Command Signal  | Digital Packet                                                              |
-| Protocol Type   | Half Duplex Asynchronous Serial Communication<br />(8bit, 1stop, No Parity) |
-| Link (Physical) | TTL Level Multi Drop Bus                        |
+| 제어 명령  | Digital Packet                                                              |
+| 프로토콜 타입   | Half Duplex Asynchronous Serial Communication<br />(8bit, 1stop, No Parity) |
+| 통신 연결 | TTL Level Multi Drop Bus                        |
 | ID              | 254 ID (0~253)                                                              |
-| Feedback        | Position, Temperature, Load, Input Voltage, etc                             |
+| 피드백        | Position, Temperature, Load, Input Voltage 등                             |
 | 기어 재질   | Engineering Plastic(1, 2, 3), Precious Metal(4)                             |
 | 케이스 재질        | Engineering Plastic(Front, Middle, Back)                               |
 

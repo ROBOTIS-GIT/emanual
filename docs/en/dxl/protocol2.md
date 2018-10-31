@@ -373,7 +373,12 @@ The field that indicates the processing result of Instruction Packet
 
 ### Parameters
 
-- P1 ~ P5 : Fixed values
+|  P1  | P2 ~ P5                                 | Description                                                                                                                                                                                                  |
+|:----:|:----------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| 0x01 | Fixed Values<br />(0x44 0x58 0x4C 0x22) | Resets multi turn information to 1st rotation.<br />This can be only applied when Dynamixel is not operating<br />During an operation, Result Fail(0x01) will be set in the Error field of the Status Packet |
+| 0x02 | -                                       | Reserved                                                                                                                                                                                                     |
+| ...  | -                                       | Reserved                                                                                                                                                                                                     |
+| 0xFF | -                                       | Reserved                                                                                                                                                                                                     |
 
 ### Example
 
