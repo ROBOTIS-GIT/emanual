@@ -19,12 +19,10 @@ Shutdown(63)에서 감지할 수 있는 위험 상황은 아래 표와 같습니
 | Bit 0 |      Input Voltage Error       | 인가된 전압이 설정된 동작 전압 범위를 벗어났을 경우                                    |
 
 {% capture shutdown_01 %}
-**참고** : Shutdown이 발생하면 다음과 같은 방법으로 장치를 REBOOT 시킬 수 있습니다.
-1. H/W REBOOT : 전원을 껐다 켜는 방법
-2. S/W REBOOT : REBOOT Instruction 전송하는 방법(자세한 사항은 Protocol 2.0의 [Reboot](/docs/kr/dxl/protocol2/#reboot)을 참고해주세요.)
+**참고** :
+1. Shutdown이 발생하면 다음과 같은 방법으로 장치를 REBOOT 시킬 수 있습니다.
+    -  H/W REBOOT : 전원을 껐다 켜는 방법
+    -  S/W REBOOT : REBOOT Instruction 전송하는 방법(자세한 사항은 Protocol 2.0의 [Reboot](/docs/kr/dxl/protocol2/#reboot)을 참고해주세요.)
+2. Shutdown이 발생하면 1초 주기로 LED가 점멸합니다.
+3. Shutdown이 발생하면 전기적 브레이크(Dynamic brake) 상태로 전환됩니다.
 {% endcapture %}
-
-<div class="notice">{{ shutdown_01 | markdownify }}</div>
-
-Shutdown이 발생하면 1초 주기로 LED가 점멸합니다.
-{: .notice}

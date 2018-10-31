@@ -31,9 +31,9 @@ sidebar:
 
 |모델명|출력|크기(mm)|무게|해상도|모터|
 |:---:|:---:|:---:|:---:|:---:|:---:|
-|[H54P-200-S500-R](/docs/kr/dxl/pro_plus/h54p-200-s500-r/)|200W|54 x 126 x 54|855g|1,003,846|Coreless(Maxon)|
-|[H54P-100-S500-R](/docs/kr/dxl/pro_plus/h54p-100-s500-r/)|100W|54 x 108 x 54|740g|1,003,846|Coreless(Maxon)|
-|[H42P-020-S300-R](/docs/kr/dxl/pro_plus/h42p-020-s300-r/)|20W|42 x 84 x 42|340g|607,500|Coreless(Maxon)|
+|[H54P-200-S500-R](/docs/kr/dxl/pro_plus/h54p-200-s500-r/)|200W|54 x 126 x 54|855g|1,003,846|BLDC (Maxon)|
+|[H54P-100-S500-R](/docs/kr/dxl/pro_plus/h54p-100-s500-r/)|100W|54 x 108 x 54|740g|1,003,846|BLDC (Maxon)|
+|[H42P-020-S300-R](/docs/kr/dxl/pro_plus/h42p-020-s300-r/)|20W|42 x 84 x 42|340g|607,500|Coreless (Maxon)|
 
 # [통신 회로](#통신-회로)
 
