@@ -138,6 +138,12 @@ We offer 3D printed parts to safety. User can modify cad files and 3D Printed it
 
 ## [Assembly Manual](#assembly-manual)
 
+OpenManipulator is delivered as unassembled parts in the boxes. Follow the instructions to assemble it.
+
+- `Download PDF` [Assembly manual for OpenManipulator](http://www.robotis.com/service/download.php?no=1255)
+
+Below video might be help you.
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/eJTIeDepmNo" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
 # [Software Setup](#software-setup)
