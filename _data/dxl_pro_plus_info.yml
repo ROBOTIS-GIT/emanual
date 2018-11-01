@@ -1,5 +1,4 @@
 common_pro_plus_specs:
-  motor:              &motor              "Coreless(Maxon)"
   baudrate:           &baudrate           "9,600 [bps] ~ 10.5 [Mbps]"
   opmode:             &opmode             "토크 제어모드<br />속도 제어모드<br />위치 제어모드<br />확장 위치 제어모드<br />PWM 제어모드(전압 제어모드)"
   opmode_en:          &opmode_en          "Torque Control Mode<br />Velocity Control Mode<br />Position Control Mode<br />Extended Position Control Mode<br />PWM Control Mode(Voltage Control Mode)"
@@ -21,7 +20,7 @@ common_pro_plus_specs:
   standbycurrent_54:  &standbycurrent_54  "40 [mA]"
 
 h42p-020-s300-r:
-  motor:              *motor
+  motor:              "Coreless (Maxon)"
   baudrate:           *baudrate
   opmode_en:          *opmode_en
   opmode:             *opmode
@@ -50,7 +49,7 @@ h42p-020-s300-r:
   standbycurrent:     *standbycurrent_42
 
 h54p-100-s500-r:
-  motor:              *motor
+  motor:              "BLDC (Maxon)"
   baudrate:           *baudrate
   opmode_en:          *opmode_en
   opmode:             *opmode
@@ -79,7 +78,7 @@ h54p-100-s500-r:
   standbycurrent:     *standbycurrent_54
 
 h54p-200-s500-r:
-  motor:              *motor
+  motor:              "BLDC (Maxon)"
   baudrate:           *baudrate
   opmode_en:          *opmode_en
   opmode:             *opmode
