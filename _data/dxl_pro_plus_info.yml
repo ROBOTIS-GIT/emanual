@@ -2,12 +2,13 @@ common_pro_plus_specs:
   baudrate:           &baudrate           "9,600 [bps] ~ 10.5 [Mbps]"
   opmode:             &opmode             "토크 제어모드<br />속도 제어모드<br />위치 제어모드<br />확장 위치 제어모드<br />PWM 제어모드(전압 제어모드)"
   opmode_en:          &opmode_en          "Torque Control Mode<br />Velocity Control Mode<br />Position Control Mode<br />Extended Position Control Mode<br />PWM Control Mode(Voltage Control Mode)"
-  radialload_42:      &radialload_42      "N/A"
-  radialload_54:      &radialload_54      "N/A"
-  radialload_42_en:   &radialload_42_en   "N/A"
-  radialload_54_en:   &radialload_54_en   "N/A"
-  axialload_42:       &axialload_42       "N/A"
-  axialload_54:       &axialload_54       "N/A"
+  backlash:           &backlash_pro       "< 6 [arcmin], 0.1 [&deg;]"
+  radialload_42:      &radialload_42      "280 [N] (혼으로부터 10 [mm])"
+  radialload_54:      &radialload_54      "370 [N] (혼으로부터 10 [mm])"
+  radialload_42_en:   &radialload_42_en   "280 [N] (10 [mm] away from the horn)"
+  radialload_54_en:   &radialload_54_en   "370 [N] (10 [mm] away from the horn)"
+  axialload_42:       &axialload_42       "100 [N]"
+  axialload_54:       &axialload_54       "130 [N]"
   temperature:        &temperature        "-5 ~ 55 [&deg;C]"
   voltage:            &voltage            "24.0 [V]"
   command:            &command            "Digital Packet"
@@ -28,7 +29,7 @@ h42p-020-s300-r:
   dimensions:         "42 x 84 x 42 [mm]"
   resolution:         "607,500 [pulse/rev]"
   gearratio:          "303.75:1"
-  backlash:           "6 [arcmin], 0.1 [&deg;] 이하"
+  backlash:           *backlash_pro
   radialload:         *radialload_42
   radialload_en:      *radialload_42_en
   axialload:          *axialload_42
@@ -57,7 +58,7 @@ h54p-100-s500-r:
   dimensions:         "54 x 108 x 54 [mm]"
   resolution:         "1,003,846 [pulse/rev]"
   gearratio:          "501.923 : 1"
-  backlash:           "6 [arcmin], 0.1 [&deg;] 이하"
+  backlash:           *backlash_pro
   radialload:         *radialload_54
   radialload_en:      *radialload_54_en
   axialload:          *axialload_54
@@ -86,7 +87,7 @@ h54p-200-s500-r:
   dimensions:         "54 x 126 x 54 [mm]"
   resolution:         "1,003,846 [pulse/rev]"
   gearratio:          "501.923 : 1"
-  backlash:           "6 [arcmin], 0.1 [&deg;] 이하"
+  backlash:           *backlash_pro
   radialload:         *radialload_54
   radialload_en:      *radialload_54_en
   axialload:          *axialload_54

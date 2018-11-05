@@ -9,8 +9,8 @@
 | 해상도              | {{ site.data.dxl_pro_info[page.ref].resolution }}         |
 | 감속비              | {{ site.data.dxl_pro_info[page.ref].gearratio }}          |
 | 백래쉬              | {{ site.data.dxl_pro_info[page.ref].backlash }}           |{% if site.data.dxl_pro_info[page.ref].radialload != 'N/A' %}
-| [반경방향 하중]{: .popup}| {{ site.data.dxl_pro_info[page.ref].radialload }}         |{% else %}{% endif %}{% if site.data.dxl_pro_info[page.ref].axialload != 'N/A' %}
-| [축방향 하중]{: .popup} | {{ site.data.dxl_pro_info[page.ref].axialload }}          |{% else %}{% endif %}
+| [반경방향 하중]{: .popup}| {{ site.data.dxl_pro_info[page.ref].radialload }}     |{% else %}{% endif %}{% if site.data.dxl_pro_info[page.ref].axialload != 'N/A' %}
+| [축방향 하중]{: .popup} | {{ site.data.dxl_pro_info[page.ref].axialload }}       |{% else %}{% endif %}
 | No Load Speed       | {{ site.data.dxl_pro_info[page.ref].noloadspeed }}        |
 | No Load Current     | {{ site.data.dxl_pro_info[page.ref].noloadcurrent }}      |
 | Continuous Speed    | {{ site.data.dxl_pro_info[page.ref].contspeed }}          |
