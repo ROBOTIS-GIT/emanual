@@ -14,8 +14,8 @@
 | 기어비                    | {{ site.data.dxl_mx_info[page.ref].gearratio }}          |
 | 정지 토크                 | {{ site.data.dxl_mx_info[page.ref].stalltorque }}        |
 | 무부하 속도               | {{ site.data.dxl_mx_info[page.ref].noloadspeed }}        |
-| [반경방향 하중]{: .popup} | `*`{{ site.data.dxl_mx_info[page.ref].radialload }}      |
-| [축방향 하중]{: .popup}   | `*`{{ site.data.dxl_mx_info[page.ref].axialload }}       |
+| [반경방향 하중]{: .popup} | `1` {{ site.data.dxl_mx_info[page.ref].radialload }}      |
+| [축방향 하중]{: .popup}   | `1` {{ site.data.dxl_mx_info[page.ref].axialload }}       |
 | 동작 온도                 | {{ site.data.dxl_mx_info[page.ref].temperature }}        |
 | 사용 전압                 | {{ site.data.dxl_mx_info[page.ref].voltage }}            |
 | 제어 명령                 | {{ site.data.dxl_mx_info[page.ref].command }}            |
@@ -26,7 +26,7 @@
 | 재질                      | {{ site.data.dxl_mx_info[page.ref].material }}           |
 | 대기 전류                 | {{ site.data.dxl_mx_info[page.ref].standbycurrent }}     |
 
-`*` 알루미늄 금속케이스 제품(MX-28AR/AT, MX-64AR/AT, MX-106R/T)에 한정합니다.
+`1` 알루미늄 금속케이스 제품(MX-28AR/AT, MX-64AR/AT, MX-106R/T)에 한정합니다.
 {: .notice--warning}
 
 [반경방향 하중]: /docs/kr/popup/axial_radial/

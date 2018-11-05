@@ -4,7 +4,7 @@ common_x_specs:
   baudrate:           &baudrate       "9,600 [bps] ~ 4.5 [Mbps]"
   control:            &control        "PID control"
   resolution:         &resolution     "4096 [pulse/rev]"
-  backlash_430:       &backlash_430   "15 [arcmin] (0.25 [&deg;])"
+  backlash_x:         &backlash_x     "15 [arcmin] (0.25 [&deg;])"
   mode:               &mode           "전류 제어 모드<br />속도 제어 모드<br />위치 제어 모드 (0 ~ 360 [&deg;])<br />확장 위치 제어 모드 (멀티턴)<br />전류기반 위치 제어 모드<br />PWM 제어 모드 (Voltage Control Mode)"
   mode_en:            &mode_en        "Current Control Mode<br />Velcoity Control Mode<br />Position Control Mode (0 ~ 360 [&deg;])<br />Extended Position Control Mode (Multi-turn)<br />Current-based Position Control Mode<br />PWM Control Mode (Voltage Control Mode)"
   weight_430:         &weight_430     "82 [g]"
@@ -39,7 +39,7 @@ xh430-v210:
   baudrate:           *baudrate
   control:            *control
   resolution:         *resolution
-  backlash:           *backlash_430
+  backlash:           *backlash_x
   mode:               *mode
   mode_en:            *mode_en
   weight:             *weight_430
@@ -68,7 +68,7 @@ xh430-v350:
   baudrate:           *baudrate
   control:            *control
   resolution:         *resolution
-  backlash:           *backlash_430
+  backlash:           *backlash_x
   mode:               *mode
   mode_en:            *mode_en
   weight:             *weight_430
@@ -97,7 +97,7 @@ xh430-w210:
   baudrate:           *baudrate
   control:            *control
   resolution:         *resolution
-  backlash:           *backlash_430
+  backlash:           *backlash_x
   mode:               *mode
   mode_en:            *mode_en
   weight:             *weight_430
@@ -126,7 +126,7 @@ xh430-w350:
   baudrate:           *baudrate
   control:            *control
   resolution:         *resolution
-  backlash:           *backlash_430
+  backlash:           *backlash_x
   mode:               *mode
   mode_en:            *mode_en
   weight:             *weight_430
@@ -213,7 +213,7 @@ xm430-w210:
   baudrate:           *baudrate
   control:            *control
   resolution:         *resolution
-  backlash:           *backlash_430
+  backlash:           *backlash_x
   mode:               *mode
   mode_en:            *mode_en
   weight:             *weight_430
@@ -242,7 +242,7 @@ xm430-w350:
   baudrate:           *baudrate
   control:            *control
   resolution:         *resolution
-  backlash:           *backlash_430
+  backlash:           *backlash_x
   mode:               *mode
   mode_en:            *mode_en
   weight:             *weight_430
@@ -271,7 +271,7 @@ xm540-w150:
   baudrate:           *baudrate
   control:            *control
   resolution:         *resolution
-  backlash:           "N/A"
+  backlash:           *backlash_x
   mode:               *mode
   mode_en:            *mode_en
   weight:             *weight_540
@@ -279,9 +279,9 @@ xm540-w150:
   gearratio:          "152.3 : 1"
   stalltorque:        "6.9 [N.m] @ 11.1 [V], 4.2 [A]<br />7.3 [Nm] @ 12.0 [V], 4.4 [A]<br />8.9 [Nm] @ 14.8 [V], 5.5 [A]"
   noloadspeed:        "50 [rev/min] @ 11.1 [V]<br />53 [rev/min] @ 12.0 [V]<br />66 [rev/min] @ 14.8"
-  radialload:         "N/A"
-  radialload_en:      "N/A"
-  axialload:          "N/A"
+  radialload:         *radialload
+  radialload_en:      *radialload_en
+  axialload:          *axialload
   temperature:        *temperature
   voltage:            *voltage_12
   voltage_en:         *voltage_12_en
@@ -300,7 +300,7 @@ xm540-w270:
   baudrate:           *baudrate
   control:            *control
   resolution:         *resolution
-  backlash:           "N/A"
+  backlash:           *backlash_x
   mode:               *mode
   mode_en:            *mode_en
   weight:             *weight_540
@@ -308,9 +308,9 @@ xm540-w270:
   gearratio:          "272.5 : 1"
   stalltorque:        "10.0 [Nm] (at 11.1 [V], 4.2 [A])<br />**10.6 [Nm] (at 12.0 [V], 4.4 [A])**<br />12.9 [Nm] (at 14.8 [V], 5.5 [A])"
   noloadspeed:        "28 [rev/min] (at 11.1 [V])<br />**30 [rev/min] (at 12.0 [V])**<br />37 [rev/min] (at 14.8 [V])"
-  radialload:         "N/A"
-  radialload_en:      "N/A"
-  axialload:          "N/A"
+  radialload:         *radialload
+  radialload_en:      *radialload_en
+  axialload:          *axialload
   temperature:        *temperature
   voltage:            *voltage_12
   voltage_en:         *voltage_12_en
