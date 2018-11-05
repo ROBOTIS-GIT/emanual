@@ -26,5 +26,5 @@
 | 재질             | {{ site.data.dxl_x_info[page.ref].material }}           |
 | 대기 전류        | {{ site.data.dxl_x_info[page.ref].standbycurrent }}     |
 
-[반경방향 하중]: /docs/kr/popup/axial_radial/
-[축방향 하중]: /docs/kr/popup/axial_radial/
+[반경방향 하중]: /assets/images/dxl/axial_radial_load.png
+[축방향 하중]: /assets/images/dxl/axial_radial_load.png

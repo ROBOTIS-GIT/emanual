@@ -29,5 +29,5 @@
 `1` Applies to alumium housing products(MX-28AR/AT, MX-64AR/AT, MX-106R/T).
 {: .notice--warning}
 
-[Radial Load]: /docs/en/popup/axial_radial/
-[Axial Load]: /docs/en/popup/axial_radial/
+[Radial Load]: /assets/images/dxl/axial_radial_load.png
+[Axial Load]: /assets/images/dxl/axial_radial_load.png

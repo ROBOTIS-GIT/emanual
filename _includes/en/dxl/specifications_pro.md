@@ -25,5 +25,5 @@
 | ID                     | {{ site.data.dxl_pro_info[page.ref].id }}                 |
 | Standby Current        | {{ site.data.dxl_pro_info[page.ref].standbycurrent }}     |
 
-[Radial Load]: /docs/en/popup/axial_radial_pro/
-[Axial Load]: /docs/en/popup/axial_radial_pro/
+[Radial Load]: /assets/images/dxl/axial_radial_load_pro.png
+[Axial Load]: /assets/images/dxl/axial_radial_load_pro.png
