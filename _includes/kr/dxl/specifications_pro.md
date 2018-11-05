@@ -25,5 +25,5 @@
 | ID                  | {{ site.data.dxl_pro_info[page.ref].id }}                 |
 | 대기 전류           | {{ site.data.dxl_pro_info[page.ref].standbycurrent }}         |
 
-[반경방향 하중]: /docs/kr/popup/axial_radial_pro/
-[축방향 하중]: /docs/kr/popup/axial_radial_pro/
+[반경방향 하중]: /assets/images/dxl/axial_radial_load_pro.png
+[축방향 하중]: /assets/images/dxl/axial_radial_load_pro.png
