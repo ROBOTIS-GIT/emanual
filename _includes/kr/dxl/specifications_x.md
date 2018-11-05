@@ -6,7 +6,7 @@
 | 모터             | {{ site.data.dxl_x_info[page.ref].motor }}              |
 | 통신속도         | {{ site.data.dxl_x_info[page.ref].baudrate }}           |
 | 제어 알고리즘    | {{ site.data.dxl_x_info[page.ref].control }}            |
-| 해상도           | {{ site.data.dxl_x_info[page.ref].angle }}              |{% if site.data.dxl_x_info[page.ref].backlash != 'N/A' %}
+| 해상도           | {{ site.data.dxl_x_info[page.ref].resolution }}              |{% if site.data.dxl_x_info[page.ref].backlash != 'N/A' %}
 | 백래쉬           | {{ site.data.dxl_x_info[page.ref].backlash }}           |{% else %}{% endif %}
 | 동작 모드        | {{ site.data.dxl_x_info[page.ref].mode }}               |
 | 무게             | {{ site.data.dxl_x_info[page.ref].weight }}             |

@@ -6,7 +6,7 @@
 | Motor                   | {{ site.data.dxl_mx_info[page.ref].motor }}              |
 | Baud Rate               | {{ site.data.dxl_mx_info[page.ref].baudrate }}           |
 | Control Algorithm       | {{ site.data.dxl_mx_info[page.ref].control }}            |
-| Resolution              | {{ site.data.dxl_mx_info[page.ref].angle }}              |
+| Resolution              | {{ site.data.dxl_mx_info[page.ref].resolution }}              |
 | Backlash                | {{ site.data.dxl_mx_info[page.ref].backlash }}           |
 | Operating Mode          | {{ site.data.dxl_mx_info[page.ref].mode_en }}            |
 | Weight                  | {{ site.data.dxl_mx_info[page.ref].weight }}             |
