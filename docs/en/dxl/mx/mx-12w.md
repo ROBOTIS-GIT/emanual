@@ -248,5 +248,7 @@ For example, if it is set to 300 then the motor is moving to the CCW direction a
 
 ![](/assets/images/dxl/ax/ax-12w_dimension.png)
 
+Please also checkout **[ROBOTIS Download Center](http://en.robotis.com/service/downloadpage.php?ca_id=70)** for more drawing data.
+{: .notice--success}
 
 [Compatibility Guide]: http://en.robotis.com/service/compatibility_table.php?cate=d
