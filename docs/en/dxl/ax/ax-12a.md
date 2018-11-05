@@ -38,7 +38,7 @@ sidebar:
 | Input Voltage          | 9.0 ~ 12.0V (**Recommended : 11.1V**)                                       |
 | Command Signal         | Digital Packet                                                              |
 | Protocol Type          | Half Duplex Asynchronous Serial Communication<br />(8bit, 1stop, No Parity) |
-| Physical Connection    | TTL Level Multi Drop Bus                        |
+| Physical Connection    | TTL Level Multi Drop Bus                                                    |
 | ID                     | 0 ~ 253                                                                     |
 | Feedback               | Position, Temperature, Load, Input Voltage, etc                             |
 | Material               | Engineering Plastic                                                         |
@@ -226,6 +226,9 @@ Baud Rate determines serial communication speed between a controller and DYNAMIX
 ## [Drawings](#drawings)
 
 ![](/assets/images/dxl/ax/ax-12a_dimension.png)
+
+Please also checkout **[ROBOTIS Download Center](http://en.robotis.com/service/downloadpage.php?ca_id=70)** for more drawing data.
+{: .notice--success}
 
 {% include en/dxl/485_ttl_connection.md %}
 

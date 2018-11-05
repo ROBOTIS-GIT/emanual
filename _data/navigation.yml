@@ -446,10 +446,10 @@ main:
       - title: "*CM-900"
         titlekr: "*CM-900"
         url: /parts/controller/cm-900/
-      - titlekr: "OpenCM7"
+      - titlekr: "OpenCM7.0"
         url: /parts/controller/opencm7/
-      - title: "OpenCM 9.04"
-        titlekr: "OpenCM 9.04"
+      - title: "OpenCM9.04"
+        titlekr: "OpenCM9.04"
         url: /parts/controller/opencm904/
       - title: "OpenCM 485 EXP"
         titlekr: "OpenCM 485 EXP"
