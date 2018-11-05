@@ -3,7 +3,7 @@ common_x_specs:
   encoder:            &encoder        "Contactless absolute encoder (12Bit, 360 [&deg;])<br />Maker : ams(www.ams.com), Part No : AS5045"
   baudrate:           &baudrate       "9,600 [bps] ~ 4.5 [Mbps]"
   control:            &control        "PID control"
-  angle:              &angle          "0.088 [&deg;]"
+  resolution:         &resolution     "4096 [pulse/rev]"
   backlash_430:       &backlash_430   "15 [arcmin] (0.25 [&deg;])"
   mode:               &mode           "전류 제어 모드<br />속도 제어 모드<br />위치 제어 모드 (0 ~ 360 [&deg;])<br />확장 위치 제어 모드 (멀티턴)<br />전류기반 위치 제어 모드<br />PWM 제어 모드 (Voltage Control Mode)"
   mode_en:            &mode_en        "Current Control Mode<br />Velcoity Control Mode<br />Position Control Mode (0 ~ 360 [&deg;])<br />Extended Position Control Mode (Multi-turn)<br />Current-based Position Control Mode<br />PWM Control Mode (Voltage Control Mode)"
@@ -31,14 +31,14 @@ common_x_specs:
   material:           &material       "Full Metal Gear<br />Metal (Front, Middle), Engineering Plastic (Back)"
   standbycurrent_36:  &standbycurrent_36 "36 [mA]"
   standbycurrent_40:  &standbycurrent_40 "40 [mA]"
-  
+
 xh430-v210:
   mcu:                *mcu
   encoder:            *encoder
   motor:              "Maxon"
   baudrate:           *baudrate
   control:            *control
-  angle:              *angle
+  resolution:         *resolution
   backlash:           *backlash_430
   mode:               *mode
   mode_en:            *mode_en
@@ -67,7 +67,7 @@ xh430-v350:
   motor:              "Maxon"
   baudrate:           *baudrate
   control:            *control
-  angle:              *angle
+  resolution:         *resolution
   backlash:           *backlash_430
   mode:               *mode
   mode_en:            *mode_en
@@ -96,7 +96,7 @@ xh430-w210:
   motor:              "Maxon"
   baudrate:           *baudrate
   control:            *control
-  angle:              *angle
+  resolution:         *resolution
   backlash:           *backlash_430
   mode:               *mode
   mode_en:            *mode_en
@@ -125,7 +125,7 @@ xh430-w350:
   motor:              "Maxon"
   baudrate:           *baudrate
   control:            *control
-  angle:              *angle
+  resolution:         *resolution
   backlash:           *backlash_430
   mode:               *mode
   mode_en:            *mode_en
@@ -154,7 +154,7 @@ xl430-w250:
   motor:              "Cored"
   baudrate:           *baudrate
   control:            *control
-  angle:              *angle
+  resolution:         *resolution
   backlash:           "N/A"
   mode:               "속도 제어 모드<br />위치 제어 모드 (0 ~ 360 [&deg;])<br />확장 위치 제어 모드 (멀티턴)<br />PWM 제어 모드 (Voltage Control Mode)"
   mode_en:            "Velcoity Control Mode<br />Position Control Mode (0 ~ 360 [&deg;])<br />Extended Position Control Mode (Multi-turn)<br />PWM Control Mode (Voltage Control Mode)"
@@ -183,7 +183,7 @@ xc430-w240:
   motor:              "Coreless"
   baudrate:           "9,600 [bps] ~ 4.5 [Mbps]"
   control:            "PID control"
-  angle:              "0.088 [&deg;]"
+  resolution:         *resolution
   backlash:           "N/A"
   mode:               "속도 제어 모드<br />위치 제어 모드 (0 ~ 360 [&deg;])<br />확장 위치 제어 모드 (멀티턴)<br />PWM 제어 모드 (Voltage Control Mode)"
   mode_en:            "Velcoity Control Mode<br />Position Control Mode (0 ~ 360 [&deg;])<br />Extended Position Control Mode (Multi-turn)<br />PWM Control Mode (Voltage Control Mode)"
@@ -212,7 +212,7 @@ xm430-w210:
   motor:              "Coreless"
   baudrate:           *baudrate
   control:            *control
-  angle:              *angle
+  resolution:         *resolution
   backlash:           *backlash_430
   mode:               *mode
   mode_en:            *mode_en
@@ -241,7 +241,7 @@ xm430-w350:
   motor:              "Coreless"
   baudrate:           *baudrate
   control:            *control
-  angle:              *angle
+  resolution:         *resolution
   backlash:           *backlash_430
   mode:               *mode
   mode_en:            *mode_en
@@ -270,7 +270,7 @@ xm540-w150:
   motor:              "Coreless"
   baudrate:           *baudrate
   control:            *control
-  angle:              *angle
+  resolution:         *resolution
   backlash:           "N/A"
   mode:               *mode
   mode_en:            *mode_en
@@ -299,7 +299,7 @@ xm540-w270:
   motor:              "Coreless"
   baudrate:           *baudrate
   control:            *control
-  angle:              *angle
+  resolution:         *resolution
   backlash:           "N/A"
   mode:               *mode
   mode_en:            *mode_en

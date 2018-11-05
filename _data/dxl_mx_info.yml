@@ -4,7 +4,7 @@ common_mx_specs:
   baudrate:           &baudrate       "8,000 [bps] ~ 4.5 [Mbps]"
   motor:              &motor          "Coreless(Maxon)"
   control:            &control        "PID control"
-  angle:              &angle          "0.088 [&deg;]"
+  resolution:         &resolution     "4096 [pulse/rev]"
   backlash:           &backlash       "20 [arcmin] (0.33 [&deg;])"
   mode:               &mode           "관절 모드 (0 ~ 360 [&deg;])<br />바퀴 모드 (무한 회전)"
   mode_en:            &mode_en        "Joint Mode (0 ~ 360 [&deg;])<br />Wheel Mode (Endless Turn)"
@@ -51,7 +51,7 @@ mx-28:
   motor:              *motor
   baudrate:           *baudrate
   control:            *control
-  angle:              *angle
+  resolution:         *resolution
   backlash:           *backlash
   mode:               *mode
   mode_en:            *mode_en
@@ -80,7 +80,7 @@ mx-28-2:
   motor:              *motor
   baudrate:           *baudrate
   control:            *control
-  angle:              *angle
+  resolution:         *resolution
   backlash:           *backlash
   mode:               *mode2_mx28
   mode_en:            *mode2_mx28_en
@@ -109,7 +109,7 @@ mx-64:
   motor:              *motor
   baudrate:           *baudrate
   control:            *control
-  angle:              *angle
+  resolution:         *resolution
   backlash:           *backlash
   mode:               *mode
   mode_en:            *mode_en
@@ -138,7 +138,7 @@ mx-64-2:
   motor:              *motor
   baudrate:           *baudrate
   control:            *control
-  angle:              *angle
+  resolution:         *resolution
   backlash:           *backlash
   mode:               *mode2
   mode_en:            *mode2_en
@@ -167,7 +167,7 @@ mx-106:
   motor:              *motor
   baudrate:           *baudrate
   control:            *control
-  angle:              *angle
+  resolution:         *resolution
   backlash:           *backlash
   mode:               *mode
   mode_en:            *mode_en
@@ -196,7 +196,7 @@ mx-106-2:
   motor:              *motor
   baudrate:           *baudrate
   control:            *control
-  angle:              *angle
+  resolution:         *resolution
   backlash:           *backlash
   mode:               *mode2
   mode_en:            *mode2_en
