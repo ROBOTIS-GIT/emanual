@@ -232,6 +232,9 @@ F3은 다음과 같은 방법으로 적용됩니다. F3은 AX-12A의 3면(좌,�
 
 ![](/assets/images/dxl/ax/ax-12a_dimension.png)
 
+더 많은 도면자료는 **[로보티즈 다운로드 센터](http://www.robotis.com/service/downloadpage.php?ca_id=70)**에서 제공됩니다.
+{: .notice--success}
+
 {% include kr/dxl/485_ttl_connection.md %}
 
 [호환성 가이드]: http://www.robotis.com/service/compatibility_table.php?cate=d

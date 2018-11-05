@@ -18,87 +18,149 @@ sidebar:
 
 # [로보티즈 e-Manual](#로보티즈-e-manual)
 
-- [기존 e-Manual]도 서비스되고 있습니다.
 - 기술문의는 새로운 로보티즈 커뮤니티인 [포럼]을 활용하세요.
 
 # [바로가기](#바로가기)
 
-## [TurtleBot3](#turtlebot3)
-- [PC Setup](http://emanual.robotis.com/docs/en/platform/turtlebot3/pc_setup/)
-- [Raspberry Pi Setup](http://emanual.robotis.com/docs/en/platform/turtlebot3/raspberry_pi_3_setup/)
-- [Intel Joule Setup](http://emanual.robotis.com/docs/en/platform/turtlebot3/joule_setup/)
-- [Bringup Burger](http://emanual.robotis.com/docs/en/platform/turtlebot3/bringup/#turtlebot3-burger)
-- [Bringup Waffle](http://emanual.robotis.com/docs/en/platform/turtlebot3/bringup/#turtlebot3-waffle)
-- [Bringup Waffle Pi](http://emanual.robotis.com/docs/en/platform/turtlebot3/bringup/#turtlebot3-waffle-pi)
-- [SLAM](http://emanual.robotis.com/docs/en/platform/turtlebot3/slam/)
+**[로보티즈 다운로드 센터]**에서도 다양한 자료를 제공합니다.
+{: .notice--success}
 
-## [다이나믹셀 SDK](#다이나믹셀-sdk)
-- [SDK Download](https://github.com/ROBOTIS-GIT/DynamixelSDK/releases)
-- [Documentation](/docs/kr/software/dynamixel/dynamixel_sdk/overview/)
+## [다이나믹셀]
 
-## [다이나믹셀 Workbench](#다이나믹셀-workbench)
-- [Package Download](https://github.com/ROBOTIS-GIT/dynamixel-workbench)
-- [Documentation](/docs/kr/software/dynamixel/dynamixel_workbench/)
-
-## [다이나믹셀 컨트롤 테이블](#다이나믹셀-컨트롤-테이블)
-
-|모델|세부모델|
-|:---:|:---|
-|EX|[EX-106]|
-|AX|[AX-12W], [AX-12+/12A], [AX-18F/18A]|
-|DX|[DX-113], [DX-116], [DX-117]|
-|RX|[RX-10], [RX-24F], [RX-28], [RX-64]|
-|MX|`Protocol 1.0` [MX-12W], [MX-28], [MX-64], [MX-106]<br>`Protocol 2.0` [MX-28(2.0)], [MX-64(2.0)], [MX-106(2.0)]|
-|X|`L Series` [XL320], [XL430-W250]<br>`M Series` [XM430-W210], [XM430-W350], [XM540-W150], [XM540-W270]<br>`H Series` [XH430-W210], [XH430-W350], [XH430-V210], [XH430-V350]|
-|Pro|`L Seires` [L54-50-S500-R], [L54-50-S290-R], [L54-30-S500-R], [L54-30-S400-R], [L42-10-S300-R]<br>`M Series` [M54-60-S250-R], [M54-40-S250-R], [M42-10-S260-R]<br>`H Series` [H54-200-S500-R], [H54-100-S500-R], [H42-20-S300-R]|
-
-
-## [다이나믹셀 프로토콜](#다이나믹셀-프로토콜)
+### 프로토콜
 - [프로토콜 1.0](/docs/kr/dxl/protocol1/)
 - [프로토콜 2.0](/docs/kr/dxl/protocol2/)
 
-## [호환성 가이드](#호환성-가이드)
-- [제어기](/docs/kr/parts/controller/controller_compatibility/)
+### 컨트롤 테이블
+- 
+<select id="x_ctrl_table_select" onchange="window.location.href=this.value;">
+    <option selected disabled hidden>X 시리즈</option>
+    <option value="/docs/kr/dxl/x/xl320/#eeprom-영역">XL-320</option>
+    <option value="/docs/kr/dxl/x/xl430-w250/#eeprom-영역">XL430-W250</option>
+    <option value="/docs/kr/dxl/x/xm430-w210/#eeprom-영역">XM430-W210</option>
+    <option value="/docs/kr/dxl/x/xm430-w350/#eeprom-영역">XM430-W350</option>
+    <option value="/docs/kr/dxl/x/xm540-w150/#eeprom-영역">XM540-W150</option>
+    <option value="/docs/kr/dxl/x/xm540-w270/#eeprom-영역">XM540-W270</option>
+    <option value="/docs/kr/dxl/x/xh430-w210/#eeprom-영역">XH430-W210</option>
+    <option value="/docs/kr/dxl/x/xh430-w350/#eeprom-영역">XH430-W350</option>
+    <option value="/docs/kr/dxl/x/xh430-v210/#eeprom-영역">XH430-V210</option>
+    <option value="/docs/kr/dxl/x/xh430-v350/#eeprom-영역">XH430-V350</option>
+</select>
+
+- 
+<select id="pro_ctrl_table_select" onchange="window.location.href=this.value;">
+    <option selected disabled hidden>PRO 시리즈</option>
+    <option value="/docs/kr/dxl/pro/h54-200-s500-r/#eeprom-영역">H54-200-S500-R</option>
+    <option value="/docs/kr/dxl/pro/h54-100-s500-r/#eeprom-영역">H54-100-S500-R</option>
+    <option value="/docs/kr/dxl/pro/h42-20-s300-r/#eeprom-영역">H42-20-S300-R</option>
+    <option value="/docs/kr/dxl/pro/m54-60-s250-r/#eeprom-영역">M54-60-S250-R</option>
+    <option value="/docs/kr/dxl/pro/m54-40-s250-r/#eeprom-영역">M54-40-S250-R</option>
+    <option value="/docs/kr/dxl/pro/m42-10-s260-r/#eeprom-영역">M42-10-S260-R</option>
+    <option value="/docs/kr/dxl/pro/l54-50-s500-r/#eeprom-영역">L54-50-S500-R</option>
+    <option value="/docs/kr/dxl/pro/l54-50-s290-r/#eeprom-영역">L54-50-S290-R</option>
+    <option value="/docs/kr/dxl/pro/l54-30-s500-r/#eeprom-영역">L54-30-S500-R</option>
+    <option value="/docs/kr/dxl/pro/l54-30-s400-r/#eeprom-영역">L54-30-S400-R</option>
+    <option value="/docs/kr/dxl/pro/l42-10-s300-r/#eeprom-영역">L42-10-S300-R</option>
+</select>
+
+- 
+<select id="mx_ctrl_table_select" onchange="window.location.href=this.value;">
+    <option selected disabled hidden>MX 시리즈</option>
+    <option value="/docs/kr/dxl/mx/mx-12w/#eeprom-영역">MX-12W</option>
+    <option value="/docs/kr/dxl/mx/mx-28/#eeprom-영역">MX-28</option>
+    <option value="/docs/kr/dxl/mx/mx-64/#eeprom-영역">MX-64</option>
+    <option value="/docs/kr/dxl/mx/mx-106/#eeprom-영역">MX-106</option>
+    <option value="/docs/kr/dxl/mx/mx-28-2/#eeprom-영역">MX-28(2.0)</option>
+    <option value="/docs/kr/dxl/mx/mx-64-2/#eeprom-영역">MX-64(2.0)</option>
+    <option value="/docs/kr/dxl/mx/mx-106-2/#eeprom-영역">MX-106(2.0)</option>
+</select>
+
+- 
+<select id="ax_ctrl_table_select" onchange="window.location.href=this.value;">
+    <option selected disabled hidden>AX 시리즈</option>
+    <option value="/docs/kr/dxl/ax/ax-12w/#eeprom-영역">AX-12W</option>
+    <option value="/docs/kr/dxl/ax/ax-12a/#eeprom-영역">AX-12+/12A</option>
+    <option value="/docs/kr/dxl/ax/ax-18a/#eeprom-영역">AX-18F/18A</option>
+</select>
+
+## 소프트웨어
+
+### [다이나믹셀 SDK](#다이나믹셀-sdk)
+- [SDK Download](https://github.com/ROBOTIS-GIT/DynamixelSDK/releases)
+- [Documentation](/docs/en/software/dynamixel/dynamixel_sdk/overview/)
+
+### [다이나믹셀 Workbench](#다이나믹셀-workbench)
+- [Package Download](https://github.com/ROBOTIS-GIT/dynamixel-workbench)
+- [Documentation](/docs/en/software/dynamixel/dynamixel_workbench/)
+
+## 플랫폼
+
+### 오픈매니퓰레이터
+- [H/W Setup](/docs/en/platform/openmanipulator/#hardware-setup)
+- [S/W Setup](/docs/en/platform/openmanipulator/#software-setup)
+- [Bringup](/docs/en/platform/openmanipulator/#software-setup)
+
+### [터틀봇3](#터틀봇3)
+<select id="turtlebot3_select" onchange="window.location.href=this.value;">
+    <option value="/docs/en/platform/turtlebot3/setup/#setup">Setup</option>
+    <option value="/docs/en/platform/turtlebot3/bringup/#bringup">Bring Up</option>
+    <option value="/docs/en/platform/turtlebot3/basic_operation/#basic-operation">Basic Operation</option>
+    <option value="/docs/en/platform/turtlebot3/slam/#slam">SLAM</option>
+    <option value="/docs/en/platform/turtlebot3/navigation/#navigation">NAVIGATION</option>
+    <option value="/docs/en/platform/turtlebot3/simulation/#simulation">SIMULATION</option>
+    <option value="/docs/en/platform/turtlebot3/manipulation/#manipulation">MANIPULATION</option>
+    <option value="/docs/en/platform/turtlebot3/autonomous_driving/#autonomous-driving">AUTONOMOUS DRIVING</option>
+    <option value="/docs/en/platform/turtlebot3/machine_learning/#machine-learning">MACHINE LEARNING</option>
+    <option value="/docs/en/platform/turtlebot3/learn/#learn">Lectures(Learn)</option>
+</select>
+
+## 제어기
+
+- [OpenCR 1.0](/docs/kr/parts/controller/opencr10/)
+- [OpenCM 9.04](/docs/kr/parts/controller/opencm904/) & [OpenCM 485 EXP](/docs/kr/parts/controller/opencm485exp/)
+- [호환성 가이드](/docs/kr/parts/controller/controller_compatibility/)
 
 
-[AX-12W]: /docs/kr/dxl/ax/ax-12w/#control-table-of-eeprom-area
-[AX-12+/12A]: /docs/kr/dxl/ax/ax-12a/#control-table-of-eeprom-area
-[AX-18F/18A]: /docs/kr/dxl/ax/ax-18a/#control-table-of-eeprom-area
-[EX-106]: /docs/kr/dxl/ex/ex-106+/#control-table-of-eeprom-area
-[DX-113]: /docs/kr/dxl/dx/dx-113/#control-table-of-eeprom-area
-[DX-116]: /docs/kr/dxl/dx/dx-116/#control-table-of-eeprom-area
-[DX-117]: /docs/kr/dxl/dx/dx-117/#control-table-of-eeprom-area
-[RX-10]: /docs/kr/dxl/rx/rx-10/#control-table-of-eeprom-area
-[RX-24F]: /docs/kr/dxl/rx/rx-24f/#control-table-of-eeprom-area
-[RX-28]: /docs/kr/dxl/rx/rx-28/#control-table-of-eeprom-area
-[RX-64]: /docs/kr/dxl/rx/rx-64/#control-table-of-eeprom-area
-[MX-12W]: /docs/kr/dxl/mx/mx-12w/#control-table-of-eeprom-area
-[MX-28]: /docs/kr/dxl/mx/mx-28/#control-table-of-eeprom-area
-[MX-28(2.0)]: /docs/kr/dxl/mx/mx-28-2/#control-table-of-eeprom-area
-[MX-64]: /docs/kr/dxl/mx/mx-64/#control-table-of-eeprom-area
-[MX-64(2.0)]: /docs/kr/dxl/mx/mx-64-2/#control-table-of-eeprom-area
-[MX-106]: /docs/kr/dxl/mx/mx-106/#control-table-of-eeprom-area
-[MX-106(2.0)]: /docs/kr/dxl/mx/mx-106-2/#control-table-of-eeprom-area
-[XL320]: /docs/kr/dxl/x/xl320/#control-table-of-eeprom-area
-[XL430-W250]: /docs/kr/dxl/x/xl430-w250/#control-table-of-eeprom-area
-[XM430-W210]: /docs/kr/dxl/x/xm430-w210/#control-table-of-eeprom-area
-[XM430-W350]: /docs/kr/dxl/x/xm430-w350/#control-table-of-eeprom-area
-[XH430-W210]: /docs/kr/dxl/x/xh430-w210/#control-table-of-eeprom-area
-[XM540-W150]: /docs/kr/dxl/x/xm540-w150/#control-table-of-eeprom-area
-[XM540-W270]: /docs/kr/dxl/x/xm540-w270/#control-table-of-eeprom-area
-[XH430-W350]: /docs/kr/dxl/x/xh430-w350/#control-table-of-eeprom-area
-[XH430-V210]: /docs/kr/dxl/x/xh430-v210/#control-table-of-eeprom-area
-[XH430-V350]: /docs/kr/dxl/x/xh430-v350/#control-table-of-eeprom-area
-[H54-200-S500-R]: /docs/kr/dxl/pro/h54-200-s500-r/#control-table-of-eeprom-area
-[H54-100-S500-R]: /docs/kr/dxl/pro/h54-100-s500-r/#control-table-of-eeprom-area
-[H42-20-S300-R]: /docs/kr/dxl/pro/h42-20-s300-r/#control-table-of-eeprom-area
-[M54-60-S250-R]: /docs/kr/dxl/pro/m54-60-s250-r/#control-table-of-eeprom-area
-[M54-40-S250-R]: /docs/kr/dxl/pro/m54-40-s250-r/#control-table-of-eeprom-area
-[M42-10-S260-R]: /docs/kr/dxl/pro/m42-10-s260-r/#control-table-of-eeprom-area
-[L54-50-S500-R]: /docs/kr/dxl/pro/l54-50-s500-r/#control-table-of-eeprom-area
-[L54-50-S290-R]: /docs/kr/dxl/pro/l54-50-s290-r/#control-table-of-eeprom-area
-[L54-30-S500-R]: /docs/kr/dxl/pro/l54-30-s500-r/#control-table-of-eeprom-area
-[L54-30-S400-R]: /docs/kr/dxl/pro/l54-30-s400-r/#control-table-of-eeprom-area
-[L42-10-S300-R]: /docs/kr/dxl/pro/l42-10-s300-r/#control-table-of-eeprom-area
+
+[AX-12W]: /docs/kr/dxl/ax/ax-12w/#eeprom-영역
+[AX-12+/12A]: /docs/kr/dxl/ax/ax-12a/#eeprom-영역
+[AX-18F/18A]: /docs/kr/dxl/ax/ax-18a/#eeprom-영역
+[EX-106]: /docs/kr/dxl/ex/ex-106+/#eeprom-영역
+[DX-113]: /docs/kr/dxl/dx/dx-113/#eeprom-영역
+[DX-116]: /docs/kr/dxl/dx/dx-116/#eeprom-영역
+[DX-117]: /docs/kr/dxl/dx/dx-117/#eeprom-영역
+[RX-10]: /docs/kr/dxl/rx/rx-10/#eeprom-영역
+[RX-24F]: /docs/kr/dxl/rx/rx-24f/#eeprom-영역
+[RX-28]: /docs/kr/dxl/rx/rx-28/#eeprom-영역
+[RX-64]: /docs/kr/dxl/rx/rx-64/#eeprom-영역
+[MX-12W]: /docs/kr/dxl/mx/mx-12w/#eeprom-영역
+[MX-28]: /docs/kr/dxl/mx/mx-28/#eeprom-영역
+[MX-28(2.0)]: /docs/kr/dxl/mx/mx-28-2/#eeprom-영역
+[MX-64]: /docs/kr/dxl/mx/mx-64/#eeprom-영역
+[MX-64(2.0)]: /docs/kr/dxl/mx/mx-64-2/#eeprom-영역
+[MX-106]: /docs/kr/dxl/mx/mx-106/#eeprom-영역
+[MX-106(2.0)]: /docs/kr/dxl/mx/mx-106-2/#eeprom-영역
+[XL320]: /docs/kr/dxl/x/xl320/#eeprom-영역
+[XL430-W250]: /docs/kr/dxl/x/xl430-w250/#eeprom-영역
+[XM430-W210]: /docs/kr/dxl/x/xm430-w210/#eeprom-영역
+[XM430-W350]: /docs/kr/dxl/x/xm430-w350/#eeprom-영역
+[XH430-W210]: /docs/kr/dxl/x/xh430-w210/#eeprom-영역
+[XM540-W150]: /docs/kr/dxl/x/xm540-w150/#eeprom-영역
+[XM540-W270]: /docs/kr/dxl/x/xm540-w270/#eeprom-영역
+[XH430-W350]: /docs/kr/dxl/x/xh430-w350/#eeprom-영역
+[XH430-V210]: /docs/kr/dxl/x/xh430-v210/#eeprom-영역
+[XH430-V350]: /docs/kr/dxl/x/xh430-v350/#eeprom-영역
+[H54-200-S500-R]: /docs/kr/dxl/pro/h54-200-s500-r/#eeprom-영역
+[H54-100-S500-R]: /docs/kr/dxl/pro/h54-100-s500-r/#eeprom-영역
+[H42-20-S300-R]: /docs/kr/dxl/pro/h42-20-s300-r/#eeprom-영역
+[M54-60-S250-R]: /docs/kr/dxl/pro/m54-60-s250-r/#eeprom-영역
+[M54-40-S250-R]: /docs/kr/dxl/pro/m54-40-s250-r/#eeprom-영역
+[M42-10-S260-R]: /docs/kr/dxl/pro/m42-10-s260-r/#eeprom-영역
+[L54-50-S500-R]: /docs/kr/dxl/pro/l54-50-s500-r/#eeprom-영역
+[L54-50-S290-R]: /docs/kr/dxl/pro/l54-50-s290-r/#eeprom-영역
+[L54-30-S500-R]: /docs/kr/dxl/pro/l54-30-s500-r/#eeprom-영역
+[L54-30-S400-R]: /docs/kr/dxl/pro/l54-30-s400-r/#eeprom-영역
+[L42-10-S300-R]: /docs/kr/dxl/pro/l42-10-s300-r/#eeprom-영역
 [포럼]: http://www.robotis.com/service/forum.php
 [기존 e-Manual]: http://support.robotis.com
+[로보티즈 다운로드 센터]: http://www.robotis.com/service/downloadcenter.php
