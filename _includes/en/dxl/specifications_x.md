@@ -6,7 +6,7 @@
 | Motor                  | {{ site.data.dxl_x_info[page.ref].motor }}              |
 | Baud Rate              | {{ site.data.dxl_x_info[page.ref].baudrate }}           |
 | Control Algorithm      | {{ site.data.dxl_x_info[page.ref].control }}            |
-| Degree of Precision    | {{ site.data.dxl_x_info[page.ref].angle }}              |{% if site.data.dxl_x_info[page.ref].backlash != 'N/A' %}
+| Resolution             | {{ site.data.dxl_x_info[page.ref].angle }}              |{% if site.data.dxl_x_info[page.ref].backlash != 'N/A' %}
 | Backlash               | {{ site.data.dxl_x_info[page.ref].backlash }}           |{% else %}{% endif %}
 | Operating Modes        | {{ site.data.dxl_x_info[page.ref].mode_en }}            |
 | Weight                 | {{ site.data.dxl_x_info[page.ref].weight }}             |
