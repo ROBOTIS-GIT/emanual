@@ -17,16 +17,14 @@ In order to turn on the torque of the device in shutdown status, REBOOT has to b
 |Bit 0|Input Voltage Error|Detect input voltage exceeds the configured operating voltage|
 
 {% capture shutdown_pro %}
-**NOTE** : If Shutdown occurs, use below method to reboot the device.
-1. H/W REBOOT : Turn off and turn on the power again
-2. S/W REBOOT : Transmit REBOOT Instruction (For more details, please refer to the [Reboot] section of e-Manual.)
-
-[Reboot]: /docs/en/dxl/protocol2/#reboot
+**NOTE** : 
+1. If Shutdown occurs, use below method to reboot the device.
+    - H/W REBOOT : Turn off and turn on the power again
+    - S/W REBOOT : Transmit REBOOT Instruction (For more details, please refer to the [Reboot](/docs/en/dxl/protocol2/#reboot) section of e-Manual.)
+2. If Shutdown occurs, LED will flicker every second.
+3. If Shutdown occurs, Dynamic brake will be activated.
 {% endcapture %}
 
 <div class="notice">{{ shutdown_pro | markdownify }}</div>
-
-**NOTE** : If Shutdown occurs, LED will flicker every second.
-{: .notice--warning}
 
 [Torque Enable(512)]: #torque-enable512

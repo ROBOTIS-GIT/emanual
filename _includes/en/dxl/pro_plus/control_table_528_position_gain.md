@@ -1,14 +1,15 @@
-These Gains are used in Position Control Mode and Extended Position Control Mode. Gains of device’s internal controller can be calculated from Gains of the Control Table as shown below. The constant in each equations include sampling time. Position P Gain of device’s internal controller is abbreviated to K<sub>P</sub>P and that of the Control Table is abbreviated to K<sub>P</sub>P<sub>(TBL)</sub>.
+These Gains are used in Position Control Mode and Extended Position Control Mode. Gains of device’s internal controller can be calculated from Gains of the Control Table as shown below. Position P Gain of device’s internal controller is abbreviated to K<sub>P</sub>P and that of the Control Table is abbreviated to K<sub>P</sub>P<sub>(TBL)</sub>.
 
-|                           |  Controller Gain  |          Range | Description           |
-|:-------------------------:|:-----------------:|:--------------------------------------:|
-|   Position D Gain(528)    |  K<sub>P</sub>D   |          0 ~ 32,767 | D Gain           |
-|   Position I Gain(530)    |  K<sub>P</sub>I   |          0 ~ 32,767 | I Gain           |
-|   Position P Gain(532)    |  K<sub>P</sub>P   |          0 ~ 32,767 | P Gain           |
-| Feedforward 1st Gain(538) | K<sub>FF1st</sub> | 0 ~ 32,767 | Feedforward Velocity Gain |
+|                           |  Controller Gain  |   Range    |        Description         |
+|:-------------------------:|:-----------------:|:----------:|:--------------------------:|
+|   Position D Gain(528)    |  K<sub>P</sub>D   | 0 ~ 32,767 |  Position Derivative Gain  |
+|   Position I Gain(530)    |  K<sub>P</sub>I   | 0 ~ 32,767 |   Position Integral Gain   |
+|   Position P Gain(532)    |  K<sub>P</sub>P   | 0 ~ 32,767 | Position Proportional Gain |
+| Feedforward 1st Gain(538) | K<sub>FF1st</sub> | 0 ~ 32,767 | Velocity Feedforward Gain  |
 
 Below figure is a block diagram describing the position controller in Position Control Mode and Extended Position Control Mode. When the instruction is received by the device, it takes following steps until driving the device.
 
+{% capture position_gain_ex1 %}
 1. An Instruction from the user is transmitted via communication bus, then registered to Goal Position(564).
 2. Goal Position(564) is converted to desired position trajectory and desired velocity trajectory by Profile Velocity(560) and Profile Acceleration(556).
 3. The desired position trajectory and desired velocity trajectory is stored at Position Trajectory(588) and Velocity Trajectory(584) respectively.
@@ -16,6 +17,9 @@ Below figure is a block diagram describing the position controller in Position C
 5. Goal PWM(548) sets a limit on the calculated PWM output and decides the final PWM value.
 6. The final PWM value is applied to the motor through an Inverter, and the device is driven.
 7. Results are stored at Present Position(580), Present Velocity(576), Present PWM(572) and Present Current(574).
+{% endcapture %}
+
+<div class="notice--success">{{ position_gain_ex1 | markdownify }}</div>
 
 ![](/assets/images/dxl/pro/proplus_position_controller.png)
 
