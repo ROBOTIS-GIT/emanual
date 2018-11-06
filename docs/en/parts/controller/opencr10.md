@@ -126,7 +126,7 @@ It has an 18-pin common GPIO expansion connector and is mapped to the GPIO pin o
 `FT` pins are 5V tolerant except when in analog mode. The maximum injected current on FT pins are **-5mA**. Also total output current sunk / sourced by sum of all I/O pins are **120mA / -120mA** respectively.
 {: .notice}
 
-**NOTE** : Typical pull-up / pull-down resistance is 40k&ohm;
+**NOTE** : Typical pull-up / pull-down resistance is 40k&Omega;
 {: .notice}
 
 ## [ROBOTIS 5-pin Connector](#robotis-5-pin-connector)

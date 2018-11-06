@@ -22,12 +22,16 @@ For easier calculation in this example, let’s assume that the initial velocity
 
 The following explains how Profile processes Goal Position(564).
 
+{% capture profile_vel_ex1 %}
 1. An Instruction is recieved via communication bus, then registered in Goal Position(564).
 2. Accelerating time(t<sub>1</sub>) is calculated from Profile Velocity(560) and Profile Acceleration(556).
 3. Profile type is decided based on Profile Velocity(560), Profile Acceleration(556) and total travel distance(&Delta;Pos, the distance difference between desired position and present position).
 4. Selected Profile type is stored at Moving Status(571).(Refer to the Moving Status(571))
 5. The device is driven by the calculated desired trajectory from Profile.
 6. The desired velocity trajectory and the desired position trajectory calculated by the Profile are saved at Velocity Trajectory(584) and Position Trajectory(588) respectively.
+{% endcapture %}
+
+<div class="notice--success">{{ profile_vel_ex1 | markdownify }}</div>
 
 | Condition                                                     | Types of Profile                       |
 |:--------------------------------------------------------------|:---------------------------------------|

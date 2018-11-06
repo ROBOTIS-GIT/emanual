@@ -21,6 +21,8 @@ Bus Wathdog(546)의 값을 ‘0’으로 변경하면, Bus Watchdog Error는 해
 [프로토콜]: /docs/kr/dxl/protocol2/#status-packet
 
 다음은 Bus Watchdog 기능의 동작 예시입니다.
+
+{% capture watchdog_ex1 %}
 1. Operating Mode(11)를 속도 제어 모드로 설정한 후, Torque Enable(512)를 ‘1’로 변경 합니다.
 2. Goal Velocity(552)에 ‘50’을 쓰면, 장치는 CCW 방향으로 회전합니다.
 3. Bus Watchdog(546)의 값을 ‘100’(2,000 [ms])으로 변경합니다.(Bus Watchdog 기능 활성화)
@@ -29,3 +31,6 @@ Bus Wathdog(546)의 값을 ‘0’으로 변경하면, Bus Watchdog Error는 해
 6. Goal Velocity(552)에 ‘150’을 쓰면, Status Packet을 통해 Range Error가 회신합니다.
 7. Bus Watchdog(546)의 값을 ‘0’으로 변경하면, Bus Watchdog Error가 해제됩니다.
 8. Goal Velocity(552)에 ‘150’을 쓰면, 장치는 CCW 방향으로 회전합니다.
+{% endcapture %}
+
+<div class="notice--success">{{ watchdog_ex1 | markdownify }}</div>
