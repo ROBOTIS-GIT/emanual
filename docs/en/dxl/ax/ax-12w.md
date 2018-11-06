@@ -234,8 +234,7 @@ Each data in the Control Table is restored to initial values when the DYNAMIXEL 
 
 ![](/assets/images/dxl/ax/ax-12w_dimension.png)
 
-Please also checkout **[ROBOTIS Download Center](http://en.robotis.com/service/downloadpage.php?ca_id=70)** for more drawing data.
-{: .notice--success}
+{% include en/dxl/download_center_notice.md %}
 
 {% include en/dxl/485_ttl_connection.md %}
 
