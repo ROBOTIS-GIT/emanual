@@ -14,7 +14,7 @@
 ![](/assets/images/icon_warning.png)  
 **CAUTION**  
 (May cause injury or damage to product)
-- Do not operate product at temperature below 5 degrees or above 55 degrees.
+- Do not operate the product at a temperature exceeding {{ site.data.dxl_mx_info[page.ref].mcu }} range.
 - Do not insert sharp blades nor pins during product operation.
 {% endcapture %}
 <div class="notice--warning">{{ dxl_caution | markdownify }}</div>

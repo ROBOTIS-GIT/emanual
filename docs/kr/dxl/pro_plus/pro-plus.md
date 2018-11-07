@@ -71,3 +71,5 @@ Main Controller를 직접 제작하여 다이나믹셀 프로를 제어하기 �
 출력부(혼)의 도면이 변경되었습니다. 다음은 PRO와 변경된 PRO+의 도면 입니다.
 
 ![](/assets/images/dxl/pro_plus/h54p_drawing.png)
+
+{% include kr/dxl/download_center_notice.md %}

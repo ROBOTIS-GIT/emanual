@@ -45,6 +45,9 @@ common_mx_specs:
   material:           &material       "Full Metal Gear<br />Metal (Front, Middle), Engineering Plastic (Back)"
   standbycurrent:     &standbycurrent "100 [mA]"
 
+mx-12w:
+  temperature:        "-5 ~ +70 [&deg;C]"
+
 mx-28:
   mcu:                *mcu
   encoder:            *encoder
