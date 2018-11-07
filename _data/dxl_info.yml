@@ -1,0 +1,24 @@
+common_specs:
+  # mcu:                &mcu            "ST CORTEX-M3 (STM32F103C8 @ 72 [Mhz], 32Bit)"
+
+
+ax-12a:
+  temperature:        "-5 ~ 70"
+
+ax-12w:
+  temperature:        "-5 ~ 70"
+  
+ax-18a:
+  temperature:        "-5 ~ 70"
+  
+dx-113:
+  temperature:        "-5 ~ 85"
+  
+dx-116:
+  temperature:        "-5 ~ 85"
+  
+dx-117:
+  temperature:        "-5 ~ 80"
+  
+ex-106+:
+  temperature:        "-5 ~ 80"
