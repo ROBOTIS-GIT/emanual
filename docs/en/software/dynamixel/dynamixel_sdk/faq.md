@@ -45,3 +45,13 @@ To control multiple items in multiple dynamixel, and when you want to use **Sync
 - Any **questions** related with Dynamixel SDK are always welcomed. Just let me know at [ISSUES](https://github.com/ROBOTIS-GIT/DynamixelSDK/issues).
 - For the other questions, including **Hardware-wise problems** on your Dynamixels, please contact to `support@robotis.com` or use [ROBOTIS Forum](http://en.robotis.com/service/forum.php).
 - Join our **developer community** on the [RobotSource](https://community.robotsource.org/).
+
+## How to change an USB latency in DynamixelSDK?
+
+The defalut of USB latency in DynamixelSDK is 16 ms. If you want to change it, refer to follow table.
+
+|Language      |    File                       |  Name            |  Default |
+|--------------|-------------------------------|------------------|----------|
+|    c         |   port_handler_[OS].c         |  LATENCY_TIMER   |   16     |
+|    c++       |   port_handler_[OS].cpp       |  LATENCY_TIMER   |   16     |
+|    python    |   port_handler.py             |  LATENCY_TIMER   |   16     |
