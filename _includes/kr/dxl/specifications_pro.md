@@ -17,7 +17,7 @@
 | Continuous Torque   | {{ site.data.dxl_pro_info[page.ref].conttorque }}         |
 | Continuous Current  | {{ site.data.dxl_pro_info[page.ref].contcurrent }}        |
 | 출력                | {{ site.data.dxl_pro_info[page.ref].output }}             |
-| 동작 온도           | {{ site.data.dxl_pro_info[page.ref].optemperature }}      |
+| 동작 온도           | {{ site.data.dxl_pro_info[page.ref].temperature }}        |
 | 사용 전압           | {{ site.data.dxl_pro_info[page.ref].opvoltage }}          |
 | Command Signal      | {{ site.data.dxl_pro_info[page.ref].commandsignalkr }}    |
 | Protocol Type       | {{ site.data.dxl_pro_info[page.ref].protocoltypekr }}     |

@@ -17,7 +17,7 @@
 | Continuous Torque      | {{ site.data.dxl_pro_plus_info[page.ref].conttorque }}         |
 | Continuous Current     | {{ site.data.dxl_pro_plus_info[page.ref].contcurrent }}        |
 | Output                 | {{ site.data.dxl_pro_plus_info[page.ref].output }}             |
-| Operating Temperature  | {{ site.data.dxl_pro_plus_info[page.ref].optemperature }}      |
+| Operating Temperature  | {{ site.data.dxl_pro_plus_info[page.ref].temperature }}        |
 | Input Voltage          | {{ site.data.dxl_pro_plus_info[page.ref].opvoltage }}          |
 | Command Signal         | {{ site.data.dxl_pro_plus_info[page.ref].commandsignal }}      |
 | Protocol Type          | {{ site.data.dxl_pro_plus_info[page.ref].protocoltype }}       |

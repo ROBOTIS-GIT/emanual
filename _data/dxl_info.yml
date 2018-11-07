@@ -13,10 +13,10 @@ ax-18a:
   temperature:        *temperature70
 
 dx-113:
-  temperature:        "-5 ~ 85 [&deg;C]"
+  temperature:        "-5 ~ +85 [&deg;C]"
 
 dx-116:
-  temperature:        "-5 ~ 85 [&deg;C]"
+  temperature:        "-5 ~ +85 [&deg;C]"
 
 dx-117:
   temperature:        *temperature80
