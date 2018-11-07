@@ -9,8 +9,9 @@ sidebar:
 ---
 
 ![](/assets/images/dxl/pro/dynamixelpro_main.jpg)
+>DYNAMIXEL PRO
 
-# [Dynamixel PRO](#dynamixel-pro)
+# [Product Lineup](#product-lineup)
 
 ![](/assets/images/dxl/pro/dxl_pro_productline.jpg)
 

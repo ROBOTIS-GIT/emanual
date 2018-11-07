@@ -582,8 +582,8 @@ all-dynamixel:
 dynamixel_pro:
   - title: "Product Lineup"
     titlekr: "제품 라인업"
-    url: /dxl/pro/#dynamixel-pro
-    urlkr: /dxl/pro/#다이나믹셀-프로
+    url: /dxl/pro/#product-lineup
+    urlkr: /dxl/pro/#제품-라인업
   - title: "Key Specifications"
     titlekr: "주요 사양"
     url: /dxl/pro/#key-specifications
@@ -592,6 +592,24 @@ dynamixel_pro:
     titlekr: "통신 회로"
     url: /dxl/pro/#communication-circuitry
     urlkr: /dxl/pro/#통신-회로
+
+dynamixel_pro_plus:
+  - title: "Product Lineup"
+    titlekr: "제품 라인업"
+    url: /dxl/pro_plus/#product-lineup
+    urlkr: /dxl/pro_plus/#제품-라인업
+  - title: "Key Specifications"
+    titlekr: "주요 사양"
+    url: /dxl/pro_plus/#key-specifications
+    urlkr: /dxl/pro_plus/#주요-사양
+  - title: "Communication Circuitry"
+    titlekr: "통신 회로"
+    url: /dxl/pro_plus/#communication-circuitry
+    urlkr: /dxl/pro_plus/#통신-회로
+  - title: "Drawing"
+    titlekr: "기구 도면"
+    url: /dxl/pro_plus/#drawing
+    urlkr: /dxl/pro_plus/#기구-도면
 
 #AX-12W sidebar
 ax-12w:
