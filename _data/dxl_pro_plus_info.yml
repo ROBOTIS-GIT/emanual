@@ -39,7 +39,7 @@ h42p-020-s300-r:
   conttorque:         "5.1 [Nm]"
   contcurrent:        "1.5 [A]"
   output:             "20 [W]"
-  optemperature:      *temperature
+  temperature:        *temperature
   opvoltage:          *voltage
   commandsignal:      *command
   commandsignalkr:    *command_kr
@@ -68,7 +68,7 @@ h54p-100-s500-r:
   conttorque:         "25.3 [Nm]"
   contcurrent:        "5.5 [A]"
   output:             "100 [W]"
-  optemperature:      *temperature
+  temperature:        *temperature
   opvoltage:          *voltage
   commandsignal:      *command
   commandsignalkr:    *command_kr
@@ -97,7 +97,7 @@ h54p-200-s500-r:
   conttorque:         "44.7 [Nm]"
   contcurrent:        "9.3 [A]"
   output:             "200 [W]"
-  optemperature:      *temperature
+  temperature:        *temperature
   opvoltage:          *voltage
   commandsignal:      *command
   commandsignalkr:    *command_kr

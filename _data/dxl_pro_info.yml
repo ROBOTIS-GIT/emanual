@@ -42,7 +42,7 @@ h42-20-s300-r:
   conttorque:         "5.1 [Nm]"
   contcurrent:        "1.5 [A]"
   output:             "20 [W]"
-  optemperature:      *temperature
+  temperature:        *temperature
   opvoltage:          *voltage
   commandsignal:      *command
   commandsignalkr:    *command_kr
@@ -71,7 +71,7 @@ h54-100-s500-r:
   conttorque:         "25.3 [Nm]"
   contcurrent:        "5.5 [A]"
   output:             "100 [W]"
-  optemperature:      *temperature
+  temperature:        *temperature
   opvoltage:          *voltage
   commandsignal:      *command
   commandsignalkr:    *command_kr
@@ -100,7 +100,7 @@ h54-200-s500-r:
   conttorque:         "44.7 [Nm]"
   contcurrent:        "9.3 [A]"
   output:             "200 [W]"
-  optemperature:      *temperature
+  temperature:        *temperature
   opvoltage:          *voltage
   commandsignal:      *command
   commandsignalkr:    *command_kr
@@ -129,7 +129,7 @@ l42-10-s300-r:
   conttorque:         "1.2 [Nm]"
   contcurrent:        "0.8 [A]"
   output:             "10 [W]"
-  optemperature:      *temperature
+  temperature:        *temperature
   opvoltage:          *voltage
   commandsignal:      *command
   commandsignalkr:    *command_kr
@@ -158,7 +158,7 @@ l54-30-s400-r:
   conttorque:         "2.5 [Nm]"
   contcurrent:        "1.6 [A]"
   output:             "30 [W]"
-  optemperature:      *temperature
+  temperature:        *temperature
   opvoltage:          *voltage
   commandsignal:      *command
   commandsignalkr:    *command_kr
@@ -187,7 +187,7 @@ l54-30-s500-r:
   conttorque:         "5.4 [Nm]"
   contcurrent:        "1.6 [A]"
   output:             "30 [W]"
-  optemperature:      *temperature
+  temperature:        *temperature
   opvoltage:          *voltage
   commandsignal:      *command
   commandsignalkr:    *command_kr
@@ -216,7 +216,7 @@ l54-50-s290-r:
   conttorque:         "4.8 [Nm]"
   contcurrent:        "1.9 [A]"
   output:             "50 [W]"
-  optemperature:      *temperature
+  temperature:        *temperature
   opvoltage:          *voltage
   commandsignal:      *command
   commandsignalkr:    *command_kr
@@ -245,7 +245,7 @@ l54-50-s500-r:
   conttorque:         "14.0 [Nm]"
   contcurrent:        "1.9 [A]"
   output:             "100 [W]"
-  optemperature:      *temperature
+  temperature:        *temperature
   opvoltage:          *voltage
   commandsignal:      *command
   commandsignalkr:    *command_kr
@@ -274,7 +274,7 @@ m42-10-s260-r:
   conttorque:         "1.7 [Nm]"
   contcurrent:        "0.6 [A]"
   output:             "10 [W]"
-  optemperature:      *temperature
+  temperature:        *temperature
   opvoltage:          *voltage
   commandsignal:      *command
   commandsignalkr:    *command_kr
@@ -303,7 +303,7 @@ m54-40-s250-r:
   conttorque:         "3.9 [Nm]"
   contcurrent:        "1.9 [A]"
   output:             "40 [W]"
-  optemperature:      *temperature
+  temperature:        *temperature
   opvoltage:          *voltage
   commandsignal:      *command
   commandsignalkr:    *command_kr
@@ -332,7 +332,7 @@ m54-60-s250-r:
   conttorque:         "10.1 [Nm]"
   contcurrent:        "3.0 [A]"
   output:             "60 [W]"
-  optemperature:      *temperature
+  temperature:        *temperature
   opvoltage:          *voltage
   commandsignal:      *command
   commandsignalkr:    *command_kr
