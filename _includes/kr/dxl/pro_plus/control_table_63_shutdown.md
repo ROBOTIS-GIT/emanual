@@ -26,3 +26,5 @@ Shutdown(63)에서 감지할 수 있는 위험 상황은 아래 표와 같습니
 2. Shutdown이 발생하면 1초 주기로 LED가 점멸합니다.
 3. Shutdown이 발생하면 전기적 브레이크(Dynamic brake) 상태로 전환됩니다.
 {% endcapture %}
+
+<div class="notice">{{ shutdown_01 | markdownify }}</div>

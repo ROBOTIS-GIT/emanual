@@ -6,7 +6,7 @@
 | Operating Modes        | {{ site.data.dxl_pro_info[page.ref].opmode_en }}          |
 | Weight                 | {{ site.data.dxl_pro_info[page.ref].weight }}             |
 | Dimensions (W x H x D) | {{ site.data.dxl_pro_info[page.ref].dimensions }}         |
-| Degree of Precision    | {{ site.data.dxl_pro_info[page.ref].resolution }}         |
+| Resolution             | {{ site.data.dxl_pro_info[page.ref].resolution }}         |
 | Gear Ratio             | {{ site.data.dxl_pro_info[page.ref].gearratio }}          |
 | Backlash               | {{ site.data.dxl_pro_info[page.ref].backlash }}           |{% if site.data.dxl_pro_info[page.ref].radialload_en != 'N/A' %}
 | [Radial Load]{: .popup}| {{ site.data.dxl_pro_info[page.ref].radialload_en }}      |{% else %}{% endif %}{% if site.data.dxl_pro_info[page.ref].axialload != 'N/A' %}
@@ -25,5 +25,5 @@
 | ID                     | {{ site.data.dxl_pro_info[page.ref].id }}                 |
 | Standby Current        | {{ site.data.dxl_pro_info[page.ref].standbycurrent }}     |
 
-[Radial Load]: /docs/en/popup/axial_radial_pro/
-[Axial Load]: /docs/en/popup/axial_radial_pro/
+[Radial Load]: /assets/images/dxl/axial_radial_load_pro.png
+[Axial Load]: /assets/images/dxl/axial_radial_load_pro.png

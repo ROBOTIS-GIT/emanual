@@ -6,7 +6,7 @@
 | Motor                  | {{ site.data.dxl_x_info[page.ref].motor }}              |
 | Baud Rate              | {{ site.data.dxl_x_info[page.ref].baudrate }}           |
 | Control Algorithm      | {{ site.data.dxl_x_info[page.ref].control }}            |
-| Resolution             | {{ site.data.dxl_x_info[page.ref].resolution }}              |{% if site.data.dxl_x_info[page.ref].backlash != 'N/A' %}
+| Resolution             | {{ site.data.dxl_x_info[page.ref].resolution }}         |{% if site.data.dxl_x_info[page.ref].backlash != 'N/A' %}
 | Backlash               | {{ site.data.dxl_x_info[page.ref].backlash }}           |{% else %}{% endif %}
 | Operating Modes        | {{ site.data.dxl_x_info[page.ref].mode_en }}            |
 | Weight                 | {{ site.data.dxl_x_info[page.ref].weight }}             |
@@ -26,5 +26,5 @@
 | Part Material          | {{ site.data.dxl_x_info[page.ref].material }}           |
 | Standby Current        | {{ site.data.dxl_x_info[page.ref].standbycurrent }}     |
 
-[Radial Load]: /docs/en/popup/axial_radial/
-[Axial Load]: /docs/en/popup/axial_radial/
+[Radial Load]: /assets/images/dxl/axial_radial_load.png
+[Axial Load]: /assets/images/dxl/axial_radial_load.png

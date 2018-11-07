@@ -209,8 +209,7 @@ Baudrate(BPS) = 2,000,000 / (Value + 1)
 
 ![](/assets/images/dxl/ax/ax-12w_dimension.png)
 
-더 많은 도면자료는 **[로보티즈 다운로드 센터](http://www.robotis.com/service/downloadpage.php?ca_id=70)**에서 제공됩니다.
-{: .notice--success}
+{% include kr/dxl/download_center_notice.md %}
 
 {% include kr/dxl/485_ttl_connection.md %}
 
