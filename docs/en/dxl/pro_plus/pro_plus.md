@@ -2,15 +2,16 @@
 layout: archive
 lang: en
 ref: dxl_pro_plus
-permalink: /docs/en/dxl/pro-plus/
+permalink: /docs/en/dxl/pro_plus/
 sidebar:
   title: DYNAMIXEL PRO+
   nav: "dynamixel_pro_plus"
 ---
 
 ![](/assets/images/dxl/pro_plus/pro-plus.png)
+> DYNAMIXEL PRO+
 
-# [DYNAMIXEL PRO+](#dynamixel-pro)
+# [Product Lineup](#product-lineup)
 
 ![](/assets/images/dxl/pro/dxl_pro_productline.jpg)
 
@@ -69,7 +70,7 @@ Connector pin arrangement is shown below. Dynamixel PRO has two 4-pin connectors
 
 The LED of Dynamixel pro flickers once if the power is supplied to Dynamixel pro properly via wiring.
 
-## [Drawing](#drawing)
+# [Drawing](#drawing)
 The output horn has been redesigned. Please refer to below comparisons between PRO and PRO+.
 
 ![](/assets/images/dxl/pro_plus/h54p_drawing.png)

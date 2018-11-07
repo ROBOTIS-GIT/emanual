@@ -2,15 +2,16 @@
 layout: archive
 lang: kr
 ref: dxl_pro_plus
-permalink: /docs/kr/dxl/pro-plus/
+permalink: /docs/kr/dxl/pro_plus/
 sidebar:
   title: DYNAMIXEL PRO+
   nav: "dynamixel_pro_plus"
 ---
 
 ![](/assets/images/dxl/pro_plus/pro-plus.png)
+> 다이나믹셀 PRO+
 
-# [다이나믹셀 PRO+](#다이나믹셀-PRO+)
+# [제품 라인업](#제품-라인업)
 
 ![](/assets/images/dxl/pro/dxl_pro_productline_kr.jpg)
 
@@ -67,7 +68,7 @@ Main Controller를 직접 제작하여 다이나믹셀 프로를 제어하기 �
 
 배선을 통하여 다이나믹셀에 전원이 올바르게 공급되었다면 다이나믹셀의 LED가 한 번 깜박입니다.
 
-## [기구 도면](#기구-도면)
+# [기구 도면](#기구-도면)
 출력부(혼)의 도면이 변경되었습니다. 다음은 PRO와 변경된 PRO+의 도면 입니다.
 
 ![](/assets/images/dxl/pro_plus/h54p_drawing.png)
