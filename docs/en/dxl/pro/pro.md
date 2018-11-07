@@ -29,8 +29,6 @@ sidebar:
 
 - **Precision control**: with a maximum of 502,000 units per revolution the user can control 0.0007 degrees per unit allowing for high-precision control..
 
-- **Variety of optional frames**: This systematic setup of numerous types of frames allow user can choose many types. Additionally, the user can order custom-made holes and screw types to the already-numerous pre-arranged screw holes in the frames. This will way the user will not have the need to use additional machinery to customize frames to meet needs.
-
 # [Key Specifications](#key-specifications)
 
 |                       Model                        | Dimensions(mm) | Weight | Resolution |      Motor      |
