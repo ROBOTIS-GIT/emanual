@@ -180,6 +180,35 @@ xl430-w250:
   material:           "Engineering Plastic"
   standbycurrent:     "52 [mA]"
 
+2xl430-w250:
+  mcu:                *mcu
+  encoder:            "Contactless absolute encoder (12Bit, 360 [&deg;])<br />Maker : ams(www.ams.com), Part No : AS5601"
+  motor:              "Cored"
+  baudrate:           *baudrate
+  control:            *control
+  resolution:         *resolution
+  backlash:           "N/A"
+  mode:               "속도 제어 모드<br />위치 제어 모드 (0 ~ 360 [&deg;])<br />확장 위치 제어 모드 (멀티턴)<br />PWM 제어 모드 (Voltage Control Mode)"
+  mode_en:            "Velcoity Control Mode<br />Position Control Mode (0 ~ 360 [&deg;])<br />Extended Position Control Mode (Multi-turn)<br />PWM Control Mode (Voltage Control Mode)"
+  weight:             "98.2 [g]"
+  dimensions:         "36 x 46.5 x 36 [mm]"
+  gearratio:          "257.4 : 1"
+  stalltorque:        "1.0 [N.m] (at 9.0 [V], 1.0 [A])<br />**1.4 [Nm] (at 11.1 [V], 1.3 [A])**<br />1.5 [Nm] (at 12.0 [V], 1.4 [A])"
+  noloadspeed:        "47 [rev/min] (at 9.0 [V])<br />**57 [rev/min] (at 11.1 [V])**<br />61 [rev/min] (at 12.0 [V])"
+  radialload:         "N/A"
+  radialload_en:      "N/A"
+  axialload:          "N/A"
+  temperature:        "-5 ~ +72 [&deg;C]"
+  voltage:            "6.5 ~ 12.0 [V] (**권장 전압 : 11.1 [V]**)"
+  voltage_en:         "6.5 ~ 12.0 [V] (**Recommended : 11.1 [V]**)"
+  command:            *command
+  protocoltype:       *ttl
+  physicalconnection: *ttl_connection
+  id:                 *id
+  feedback:           *feedback
+  material:           "Engineering Plastic"
+  standbycurrent:     "49 [mA]"
+
 xc430-w240:
   mcu:                "ST CORTEX-M3 (STM32F103C8 @ 72 [Mhz], 32Bit)"
   encoder:            "Contactless absolute encoder (12Bit, 360 [&deg;])<br />Maker : ams(www.ams.com), Part No : AS5601"

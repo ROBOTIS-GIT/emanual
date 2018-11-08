@@ -38,3 +38,4 @@ sidebar:
 ## [XL 모델]
 - [XL320](/docs/kr/dxl/x/xl320/)
 - [XL430-W250](/docs/kr/dxl/x/xl430-w250/)
+- [2XL430-W250](/docs/kr/dxl/x/2xl430-w250/)
