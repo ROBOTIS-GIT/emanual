@@ -1,4 +1,5 @@
-Bus Watchdog(546) is a safety feature(Fail-safe) that stops the device if the communication(RS485, TTL) between the controller and the device is disconnected due to an unidentified error. The "communication" can be seen as all the Instruction Packets defined in the protocol.
+Bus Watchdog(546) is a safety feature(Fail-safe) that stops the device if the communication(RS485, TTL) between the controller and the device is disconnected due to an unidentified error.  
+The "communication" can be seen as all the Instruction Packets defined in the protocol.
 
 |       |   Value   | Description                                                     |
 |:-----:|:---------:|:----------------------------------------------------------------|
@@ -20,6 +21,7 @@ Writing '0' to Bus Watchdog(546) will clear the Bus Watchdog Error.
 
 The following is the example of Bus Watchdog function.
 
+{% capture watchdog_ex1 %}
 1. After setting the Operating Mode(11) to Velocity Control Mode, change the Torque Enable(512) to `1`.
 2. If `50` is written to the Goal Velocity(552), the device will rotate in CCW direction.
 3. Change the value of Bus Watchdog(546) to `100`(2,000 [ms]). (Activate Bus Watchdog Function)
@@ -28,3 +30,6 @@ The following is the example of Bus Watchdog function.
 6. If `150` is written to the Goal Velocity(552), Range Error will be returned via Status Packet.
 7. If Bus Watchdog(546) value is changed to `0`, Bus Watchdog Error will be cleared.
 8. If `150` is written in the Goal Velocity(552), the device will rotate in CCW direction.
+{% endcapture %}
+
+<div class="notice--success">{{ watchdog_ex1 | markdownify }}</div>

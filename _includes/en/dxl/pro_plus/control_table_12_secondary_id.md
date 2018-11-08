@@ -14,6 +14,8 @@ The differences between Secondary ID(12) and ID(7) are as follows :
 |253 ~ 255|Deactivate Secondary ID function, Default value ‘255’|
 
 The following are examples of operation when there are five devices with ID (7) set from 1 to 5.
+
+{% capture secondary_id_ex1 %}
 1. Set all five devices' Secondary ID(12) to '5'.
 2. Send Write Instruction Packet(ID = 1, LED Red(513) = 255).
 3. Turn on the LED of the device with ID '1' and return the Status Packet.
@@ -22,3 +24,6 @@ The following are examples of operation when there are five devices with ID (7) 
 6. Set the Secondary ID(12) of all five devices to ‘100’.
 7. Send Write Instruction Packet(ID = 100, LED Red(513) = 0).
 8. Turn off the LED of the five devices. However, as there is no device with ID ‘100’, Status Packet is not returned.
+{% endcapture %}
+
+<div class="notice--success">{{ secondary_id_ex1 | markdownify }}</div>

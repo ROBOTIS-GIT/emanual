@@ -15,8 +15,8 @@ External Port는 전기적으로 절연되어 있지 않기 때문에, 전기적
 | :----------------------  | :---------------------: | :-------------------------------------------------------------------------------------  | :----: | :-------------------------------------------------------------------------------------------------------------: |
 | Analogue Input           | 0                       | External Port 신호(signal)를 Digital로 변환<br />External Data = signal x (4,095 / 3.3) | R      | Resolution : 12[bit] (0 ~ 4,095)                                                                                |
 | Digital Output Push-Pull | 1                       | 0 : External Port의 출력을 0[V]로 변경<br />1 : External Port의 출력을 3.3[V]로 변경    | W      | Output High level(VOH) : 2.4 [V] (min)<br />Output Low level(VOL) : 0.5 [V] (max)                               |
-| Digital Input Pull-Up    | 2                       | 0 : External Port의 입력이 0[V]<br />1 : External Port의 입력이 3.3[V] 또는 Open        | R      | Input High level(VIH) : 2.3 [V] (min)<br />Input Low level(VIL) : 1.0 [V] (max)<br />Pull-Up : 40 [k&ohm;] (typ)   |
-| Digital Input Pull-Down  | 3 (초기값)              | 0 : External Port의 입력이 0[V] 또는 Open <br />1 : External Port의 입력이 3.3[V]       | R      | Input High level(VIH) : 2.3 [V] (min)<br />Input Low level(VIL) : 1.0 [V] (max)<br />Pull-Down : 40 [k&ohm;] (typ) |
+| Digital Input Pull-Up    | 2                       | 0 : External Port의 입력이 0[V]<br />1 : External Port의 입력이 3.3[V] 또는 Open        | R      | Input High level(VIH) : 2.3 [V] (min)<br />Input Low level(VIL) : 1.0 [V] (max)<br />Pull-Up : 40 [k&Omega;] (typ)   |
+| Digital Input Pull-Down  | 3 (초기값)              | 0 : External Port의 입력이 0[V] 또는 Open <br />1 : External Port의 입력이 3.3[V]       | R      | Input High level(VIH) : 2.3 [V] (min)<br />Input Low level(VIL) : 1.0 [V] (max)<br />Pull-Down : 40 [k&Omega;] (typ) |
 
 {% capture control_table_externalportdata_warning %}
 **경고** : External Port 는 전기적으로 절연되어 있지 않기 때문에, 전기적 사양을 준수하시기 바랍니다.  
@@ -29,3 +29,15 @@ External Port는 전기적으로 절연되어 있지 않기 때문에, 전기적
 {% endcapture %}
 
 <div class="notice--warning">{{ control_table_externalportdata_warning | markdownify }}</div>
+
+
+#### 외부 확장 포트의 위치 및 핀 기능
+아래와 같이 나사를 제거하고 커버를 들어내면 외부 확장 포트가 드러납니다.
+
+![](/assets/images/dxl/pro_plus/external_port.png)
+
+![](/assets/images/dxl/pro_plus/external_port_pinout.png)
+
+|핀 1|핀 2|핀 3|핀 4|핀 5|핀 6|
+| :---: | :---: | :---: | :---: | :---: | :---: |
+|GND|3.3V|PORT1|PORT2|PORT3|PORT4|

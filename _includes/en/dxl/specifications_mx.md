@@ -14,8 +14,8 @@
 | Gear Ratio              | {{ site.data.dxl_mx_info[page.ref].gearratio }}          |
 | Stall Torque            | {{ site.data.dxl_mx_info[page.ref].stalltorque }}        |
 | No Load Speed           | {{ site.data.dxl_mx_info[page.ref].noloadspeed }}        |
-| [Radial Load]{: .popup} | `*`{{ site.data.dxl_mx_info[page.ref].radialload_en }}   |
-| [Axial Load]{: .popup}  | `*`{{ site.data.dxl_mx_info[page.ref].axialload }}       |
+| [Radial Load]{: .popup} | `1` {{ site.data.dxl_mx_info[page.ref].radialload_en }}  |
+| [Axial Load]{: .popup}  | `1` {{ site.data.dxl_mx_info[page.ref].axialload }}      |
 | Operating Temperature   | {{ site.data.dxl_mx_info[page.ref].temperature }}        |
 | Input Voltage           | {{ site.data.dxl_mx_info[page.ref].voltage_en }}         |
 | Command Signal          | {{ site.data.dxl_mx_info[page.ref].command }}            |
@@ -26,8 +26,8 @@
 | Material                | {{ site.data.dxl_mx_info[page.ref].material }}           |
 | Standby Current         | {{ site.data.dxl_mx_info[page.ref].standbycurrent }}     |
 
-`*` Applies to alumium housing products(MX-28AR/AT, MX-64AR/AT, MX-106R/T).
+`1` Applies to alumium housing products(MX-28AR/AT, MX-64AR/AT, MX-106R/T).
 {: .notice--warning}
 
-[Radial Load]: /docs/en/popup/axial_radial/
-[Axial Load]: /docs/en/popup/axial_radial/
+[Radial Load]: /assets/images/dxl/axial_radial_load.png
+[Axial Load]: /assets/images/dxl/axial_radial_load.png
