@@ -14,10 +14,14 @@ sidebar:
 # [개요](#개요)
 
 **로보플러스 블록에 대한 간단한 설명.  
-제품을 구매할 능력이 있는 사용자가 읽어봤을 때 제품에 대한 설명이 친절하고 제품에 대해 이해할 수 있어야 함.**
+제품을 구매할 능력이 있는 사용자가 읽어봤을 때 제품의 기본적인 사용방법에 대해 이해할 수 있어야 함.**
 {: .notice--danger}
 
-- 로보플러스 블록이 지원하는 로보티즈 제품 : CM-100, BT-210 또는 BT-410
+## [지원 제품 목록]
+- [CM-100]
+- [BT-110]
+- [BT-210]
+- [BT-410]
 
 # [시작하기](#시작하기)
 
@@ -158,7 +162,7 @@ undo / redo 기능의 사용이 가능한 상태가 되면 아래와 같이 버�
 제품과 연결되어 있지 않으면 연결 화면이 표시됩니다.  
 
 블루투스가 선택되어 있다면 `재시도` 버튼을 클릭하여 다시 연결을 시도할 수 있습니다.  
-처음 실행하는 경우 `장치선택` 버튼을 클릭하여 연결할 장치를 선택할 수 있습니다. 
+처음 실행하는 경우 `장치선택` 버튼을 클릭하여 연결할 장치를 선택할 수 있습니다.
 
 ![](/assets/images/sw/rplus2/block/block_run_01_kr.png)
 
@@ -215,7 +219,7 @@ undo / redo 기능의 사용이 가능한 상태가 되면 아래와 같이 버�
 
 ### [블루투스](#블루투스)
 제품에 연결된 블루투스를 설정, 변경 하거나 연결된 블루투스를 연결 해제 할 수 있습니다.  
-블루투스 검색시에는 블루투스에 표시된 주소 중 마지막 두 자리를 입력 후 검색 버튼을 클릭해야 합니다.
+블루투스 검색시에는 블루투스 모듈이나 제품에 표시된 주소 중 마지막 두 자리를 입력 후 검색 버튼을 클릭해야 합니다.
 
 ![](/assets/images/sw/rplus2/block/block_option_bluetooth_kr.png)
 
@@ -235,7 +239,7 @@ undo / redo 기능의 사용이 가능한 상태가 되면 아래와 같이 버�
 ![](/assets/images/sw/rplus2/block/block_option_project_kr.png)
 
 ### [저장하기](#저장하기)
-현재 작업 중인 내용을 저장할 수 있습니다. 
+현재 작업 중인 내용을 저장할 수 있습니다.
 
 ![](/assets/images/sw/rplus2/block/block_option_save_01_kr.png)
 
@@ -258,7 +262,7 @@ undo / redo 기능의 사용이 가능한 상태가 되면 아래와 같이 버�
 ![](/assets/images/sw/rplus2/block/block_option_erase_kr.png)
 
 ### [새로만들기](#새로만들기)
-새로운 작품을 만듭니다. 
+새로운 작품을 만듭니다.
 
 ![](/assets/images/sw/rplus2/block/block_option_create_01_kr.png)
 
@@ -293,3 +297,9 @@ R+Task 앱을 통해 제품으로 다운로드 하는 방법은 R+Task 앱 설�
 ![](/assets/images/sw/rplus2/block/block_option_download_kr.png)
 
 # [유용한 정보](#유용한-정보)
+
+
+[CM-100]: /docs/kr/parts/controller/cm-100/
+[BT-110]: /docs/kr/parts/communication/bt-110/
+[BT-210]: /docs/kr/parts/communication/bt-210/
+[BT-410]: /docs/kr/parts/communication/bt-410/
