@@ -12898,16 +12898,11 @@ openmanipulator:
     url: /platform/openmanipulator/#manipulation
   - title: "Mobile Manipulation"
     url: /platform/openmanipulator/#mobile-manipulation
-  - title: "Simulation"
-    url: /platform/openmanipulator/#simulation
+  - title: "Basic Operation"
+    url: /platform/openmanipulator/#basic-operation
     children:
-    - title: "Gazebo"
-      url: /platform/openmanipulator/#gazebo
-      children:
-      - title: "Spawn Model"
-        url: /platform/openmanipulator/#spawn-model
-      - title: "MoveIt!"
-        url: /platform/openmanipulator/#moveit
+    - title: "GUI Program"
+      url: /platform/openmanipulator/#gui-program
   - title: "Embedded Board Setup"
     url: /platform/openmanipulator/#embedded-board-setup
     children:
