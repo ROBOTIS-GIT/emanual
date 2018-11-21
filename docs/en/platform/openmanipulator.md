@@ -158,6 +158,7 @@ $ sudo apt-get install ros-kinetic-ros-controllers ros-kinetic-gazebo* ros-kinet
 
 ```
 $ cd ~/catkin_ws/src/
+$ git clone https://github.com/ROBOTIS-GIT/robotis_manipulator.git
 $ git clone https://github.com/ROBOTIS-GIT/open_manipulator.git
 $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_msgs.git
 $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_simulations.git
@@ -174,84 +175,81 @@ $ roslaunch open_manipulator_description open_manipulator_rviz.launch
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_rviz.png)
 
-# [Bringup](#bringup)
+# [Bringup](#Bringup)
 
-To load an OpenManipulator with DYNAMIXEL X-series(XM or XL), you can set parameters for what you've configured for your own Dynamixel
+**NOTE** : This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+{: .notice--info}
+
+Load an OpenManipulator on Gazebo simulator and click `Play` button
+
+  ```
+  $ roslaunch open_manipulator_gazebo open_manipulator_gazebo.launch
+  ```
+
+  ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_gazebo_1.png)
+
+Enter `rostopic list` to list up the activated topics.
+
+  ```
+  /clock
+  /gazebo/link_states
+  /gazebo/model_states
+  /gazebo/parameter_descriptions
+  /gazebo/parameter_updates
+  /gazebo/set_link_state
+  /gazebo/set_model_state
+  /gazebo_gui/parameter_descriptions
+  /gazebo_gui/parameter_updates
+  /open_manipulator/grip_joint_position/command
+  /open_manipulator/grip_joint_sub_position/command
+  /open_manipulator/joint1_position/command
+  /open_manipulator/joint2_position/command
+  /open_manipulator/joint3_position/command
+  /open_manipulator/joint4_position/command
+  /open_manipulator/joint_states
+  /open_manipulator/kinematics_pose
+  /rosout
+  /rosout_agg
+  ```
+
+OpenManipulator in Gazebo is controllered by ROS message. For example, use below command to publish joint position(in radian).
+
+  ```
+  $ rostopic pub /open_manipulator/joint2_position/command std_msgs/Float64 "data: -1.0" --once
+  ```
+
+  ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_gazebo_2.png)
+
+
+# [Manipulation](#manipulation)
+
+To load an OpenManipulator with DYNAMIXEL X-series(XM or XL), you can set parameters for what you've configured for your own OpenManipulator
 
   ```
   <launch>
     <arg name="use_robot_name"         default="open_manipulator"/>
-    <arg name="device_name"            default="/dev/ttyUSB0"/>
-    <arg name="baud_rate"              default="1000000"/>
-    <arg name="protocol_version"       default="2.0"/>
+    <arg name="dynamixel_usb_port"     default="/dev/ttyUSB0"/>
+    <arg name="dynamixel_baud_rate"    default="1000000"/>
 
-    <arg name="joint_controller"       default="position_mode"/>
+    <arg name="use_platform"           default="true"/>
 
-    <arg name="joint1_id"              default="11"/>
-    <arg name="joint2_id"              default="12"/>
-    <arg name="joint3_id"              default="13"/>
-    <arg name="joint4_id"              default="14"/>
-
-    <arg name="gripper_controller"     default="current_mode"/>
-
-    <arg name="gripper_id"             default="15"/>
-
-    <node pkg="open_manipulator_dynamixel_ctrl" type="dynamixel_controller" name="dynamixel_controller" required="true" output="screen">
+    <node pkg="open_manipulator_controller" type="open_manipulator_controller" name="open_manipulator_controller" output="screen">
       <param name="robot_name"           value="$(arg use_robot_name)"/>
-      <param name="device_name"          value="$(arg device_name)"/>
-      <param name="baud_rate"            value="$(arg baud_rate)"/>
-      <param name="protocol_version"     value="$(arg protocol_version)"/>
-
-      <param name="joint_controller"     value="$(arg joint_controller)"/>
-
-      <param name="joint1_id"            value="$(arg joint1_id)"/>
-      <param name="joint2_id"            value="$(arg joint2_id)"/>
-      <param name="joint3_id"            value="$(arg joint3_id)"/>
-      <param name="joint4_id"            value="$(arg joint4_id)"/>
-
-      <param name="gripper_controller"   value="$(arg gripper_controller)"/>
-
-      <param name="gripper_id"           value="$(arg gripper_id)"/>
+      <param name="usb_port"             value="$(arg dynamixel_usb_port)"/>
+      <param name="baud_rate"            value="$(arg dynamixel_baud_rate)"/>
+      <param name="using_platform"       value="$(arg use_platform)"/>
     </node>
   </launch>
   ```
 
   ```
-  $ roslaunch open_manipulator_dynamixel_ctrl dynamixel_controller.launch
+  $ roslaunch open_manipulator_controller open_manipulator_controller.launch
   ```
-
-Enter `rostopic list` to list up the activated topics.
-
-  ```
-  /joint_states
-  /open_manipulator/goal_gripper_position
-  /open_manipulator/goal_joint_position
-  /rosout
-  /rosout_agg
-  ```  
-
-OpenManipulator is controllered by ROS message. For example, use below command to publish joint position(in radian).
-
-  ```
-  $ rostopic pub /open_manipulator/goal_joint_position sensor_msgs/JointState "header:
-  seq: 0
-  stamp: {secs: 0, nsecs: 0}
-  frame_id: ''
-  name: ['']
-  position: [0]
-  velocity: [0]
-  effort: [0]"
-  ```
-  or using RQT
-
-  ![](/assets/images/platform/openmanipulator/OpenManipulator_rqt.png)
-
-# [Manipulation](#manipulation)
 
 We provide manipulation layer to use MoveIt!. You can handle it using RViz or ROS messages.
 
   ```
-  $ roslaunch open_manipulator_moveit open_manipulator_demo.launch use_gazebo:=false
+  $ roslaunch open_manipulator_moveit_controller open_manipulator_moveit.launch
   ```
 
 Below services are help you to manipulate OpenManipulator
@@ -271,15 +269,6 @@ Below services are help you to manipulate OpenManipulator
   ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_moveit_real_3.png)
 
   ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_moveit_real_4.png)
-
-In order to control the gripper, please use topic publish with below command in a new terminal window.  
-(parameters : `grip_on`, `grip_off`, `neutral`)
-
-  ```
-  $ rostopic pub /open_manipulator/gripper std_msgs/String "data: 'grip_on'" --once
-  ```
-
-  ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_gripper.png)
 
 # [Mobile Manipulation](#mobile-manipulation)
 
@@ -308,89 +297,17 @@ Load a TurtleBot3 Waffle or Waffle Pi with OpenManipulator on RViz.
 
 ![](/assets/images/platform/openmanipulator/TurtleBot3_with_Open_Manipulator.png)
 
-# [Simulation](#gazebo-simulation)
+# [Basic Operation](#Basic-Operation)
 
-## [Gazebo](#gazebo)
+## [GUI program](#GUI-program)
 
-  **NOTE** : This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
-  {: .notice--info}
-
-### [Spawn Model](#spawn-model)
-
-Load an OpenManipulator on Gazebo simulator and click `Play` button
-
+  You can use GUI program to manipulate OpenManipulator. This program shows the status of the manipulator and provides the ability to operate the manipulator.
   ```
-  $ roslaunch open_manipulator_gazebo open_manipulator_gazebo.launch
+  $ rosrun open_manipulator_control_gui open_manipulator_control_gui
   ```
 
-  ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_gazebo_1.png)
+![](/assets/images/platform/openmanipulator/OpenManipulator_GUI.png)
 
-Enter `rostopic list` to list up the activated topics.
-
-  ```
-  /clock
-  /gazebo/link_states
-  /gazebo/model_states
-  /gazebo/set_link_state
-  /gazebo/set_model_state
-  /open_manipulator/grip_joint_position/command
-  /open_manipulator/grip_joint_position/pid/parameter_descriptions
-  /open_manipulator/grip_joint_position/pid/parameter_updates
-  /open_manipulator/grip_joint_position/state
-  /open_manipulator/grip_joint_sub_position/command
-  /open_manipulator/grip_joint_sub_position/pid/parameter_descriptions
-  /open_manipulator/grip_joint_sub_position/pid/parameter_updates
-  /open_manipulator/grip_joint_sub_position/state
-  /open_manipulator/joint1_position/command
-  /open_manipulator/joint1_position/pid/parameter_descriptions
-  /open_manipulator/joint1_position/pid/parameter_updates
-  /open_manipulator/joint1_position/state
-  /open_manipulator/joint2_position/command
-  /open_manipulator/joint2_position/pid/parameter_descriptions
-  /open_manipulator/joint2_position/pid/parameter_updates
-  /open_manipulator/joint2_position/state
-  /open_manipulator/joint3_position/command
-  /open_manipulator/joint3_position/pid/parameter_descriptions
-  /open_manipulator/joint3_position/pid/parameter_updates
-  /open_manipulator/joint3_position/state
-  /open_manipulator/joint4_position/command
-  /open_manipulator/joint4_position/pid/parameter_descriptions
-  /open_manipulator/joint4_position/pid/parameter_updates
-  /open_manipulator/joint4_position/state
-  /open_manipulator/joint_states
-  /rosout
-  /rosout_agg
-  ```
-
-OpenManipulator in Gazebo is controllered by ROS message. For example, use below command to publish joint position(in radian).
-
-  ```
-  $ rostopic pub /open_manipulator/joint2_position/command std_msgs/Float64 "data: -1.0" --once
-  ```
-
-  ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_gazebo_2.png)
-
-## [MoveIt!](#moveit)
-
-You can use MoveIt! to manipulate OpenManipulator. Please refer to [Manipulation section](/docs/en/platform/openmanipulator/#manipulation)
-
-Launch MoveIt!
-
-  ```
-  $ roslaunch open_manipulator_moveit open_manipulator_demo.launch use_gazebo:=true
-  ```
-
-  ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_moveit_sim_1.jpg)
-
-  ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_moveit_sim_2.jpg)
-
-Gripper Control (parameters : `grip_on`, `grip_off`, `neutral`)
-
-  ```
-  $ rostopic pub /open_manipulator/gripper std_msgs/String "data: 'grip_on'" --once
-  ```
-
-  ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_gripper.png)
 
 # [Embedded Board Setup](#embedded-board-setup)
 
