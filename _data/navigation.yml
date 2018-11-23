@@ -381,6 +381,8 @@ main:
       - title: "R+ Scratch"
         titlekr: "로보플러스 스크래치"
         url: /software/rplus2/scratch/
+      - titlekr: "로보플러스 블록"
+        url: /software/rplus2/rplus2_block/
     - title: "R+ Mobile"
       titlekr: "로보플러스 모바일"
       children:
@@ -14640,6 +14642,10 @@ rplus2_block:
         titlekr: "다운로드/설치"
         url: /software/rplus2/rplus2_block/#download-and-install
         urlkr: /software/rplus2/rplus2_block/#다운로드설치
+      - title: "Connect to Robot"
+        titlekr: "로봇 연결하기"
+        url: /software/rplus2/rplus2_block/#connect-to-robot
+        urlkr: /software/rplus2/rplus2_block/#로봇-연결하기
     - title: "Main Screen"
       titlekr: "메뉴 설명"
       url: /software/rplus2/rplus2_block/#main-screen
@@ -14778,10 +14784,6 @@ rplus2_block:
       titlekr: "태스크"
       url: /software/rplus2/rplus2_block/#
       urlkr: /software/rplus2/rplus2_block/#태스크
-  - title: ""
-    titlekr: "유용한 정보"
-    url: /software/rplus2/rplus2_block/#
-    urlkr: /software/rplus2/rplus2_block/#유용한-정보
 
 #R+ Mobile m.Motion sidebar
 rplusmmotion:
