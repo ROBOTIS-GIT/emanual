@@ -24,8 +24,7 @@ sidebar:
 ### [제어기](#제어기)
 - CM-50
 
-### [부품](#부품)
-- [BT-110]
+### [통신 모듈](#통신-모듈)
 - [BT-210]
 - [BT-410]
 
@@ -47,6 +46,11 @@ Play 스토어에서 `R+Block` 을 검색한 후 설치합니다.
 
 ![](/assets/images/sw/rplus2/block/block_install_kr.png)
 > 설치
+
+### [로봇 연결하기](#로봇-연결하기)
+
+스마트기기의 블루투스를 이용해서 로봇의 블루투스를 연결할 수 있습니다.  
+[블루투스로 연결하기](#블루투스)
 
 ## [메뉴 설명](#메뉴-설명)
 
@@ -286,7 +290,7 @@ undo / redo 기능의 사용이 가능한 상태가 되면 아래와 같이 버�
 
 ![](/assets/images/sw/rplus2/block/block_option_delete_kr.png)
 
-### [태스크](#태스크)
+## [태스크](#태스크)
 블록으로 작성된 코드를 Task 코드로 변환하거나 다운로드 할 수 있습니다.
 
 ![](/assets/images/sw/rplus2/block/block_option_task_kr.png)
@@ -299,7 +303,7 @@ R+Task 가 설치되어 있지 않으면 구글 플레이로 이동합니다. R+
 ![](/assets/images/sw/rplus2/block/block_option_task_install_kr.png)
 > 설치
 
-#### [변환](#변환)
+### [변환](#변환)
 블록으로 작성된 코드가 Task 코드로 변환되어 표시 됩니다.  
 R+Task 앱을 통해 블록으로 작성할 수 없는 코드를 추가하거나 에러를 확인할 수 있습니다.  
 R+Task 앱을 통해 제품으로 다운로드 하는 방법은 R+Task 앱 설명을 확인해주세요.
@@ -308,16 +312,13 @@ R+Task 앱을 통해 제품으로 다운로드 하는 방법은 R+Task 앱 설�
 
 변환된 태스크 코드는 안드로이드 기기의 경우 아래의 위치에 저장됩니다.
 
-#### [다운로드](#다운로드)
+### [다운로드](#다운로드)
 변환된 코드를 R+Task 앱에 표시하지 않고 바로 제품으로 다운로드 합니다.  
 제품에 다운로드 되어 실행되기 때문에 R+Block 의 연결이 필요없으며 실행 속도가 빠릅니다.  
 다운로드된 코드는 제품의 전원을 켰을 때 바로 실행됩니다.
 
 ![](/assets/images/sw/rplus2/block/block_option_download_kr.png)
 
-# [유용한 정보](#유용한-정보)
 
-
-[BT-110]: /docs/kr/parts/communication/bt-110/
 [BT-210]: /docs/kr/parts/communication/bt-210/
 [BT-410]: /docs/kr/parts/communication/bt-410/
