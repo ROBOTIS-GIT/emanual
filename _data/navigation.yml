@@ -14324,6 +14324,8 @@ dynamixel_sdk:
         url: /software/dynamixel/dynamixel_sdk/sample_code/c_reboot_protocol_2_0/#c-reboot-protocol-20
       - title: "C Reset Protocol 2.0"
         url: /software/dynamixel/dynamixel_sdk/sample_code/c_reset_protocol_2_0/#c-reset-protocol-20
+      - title: "C Clear Multi Turn Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/c_clear_multi_turn_protocol_2_0/#c-clear-multi-turn-protocol-20
     - title: "C Protocol Combined"
       url: /software/dynamixel/dynamixel_sdk/sample_code/c_protocol_combined/#c-protocol-combined
     - title: "C DXL Monitor"
