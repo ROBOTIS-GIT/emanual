@@ -10,6 +10,9 @@
 
 {% include kr/dxl/pinout_warning.md %}
 
+**주의**: 구동 전에 반드시 전원포트를 통해 24V 전원을 공급해주세요.
+{: .notice--warning}
+
 [JST EHR-4]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
 [JST B4B-EH-A]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
 [MOLEX 39-01-2020]: http://www.molex.com/molex/products/datasheet.jsp?part=active/0039012020_CRIMP_HOUSINGS.xml
