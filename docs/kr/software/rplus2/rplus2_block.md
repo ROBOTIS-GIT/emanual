@@ -39,9 +39,14 @@ sidebar:
 
 ### [다운로드/설치](#다운로드설치)
 
-스마트 기기에서 Play 스토어를 실행합니다. (Play 스토어는 안드로이드 마켓 앱입니다.) Play 스토어에서 `R+Block` 을 검색한 후 설치합니다.
+스마트 기기에서 Play 스토어를 실행합니다. (Play 스토어는 안드로이드 마켓 앱입니다.)  
+Play 스토어에서 `R+Block` 을 검색한 후 설치합니다.
+
+![](/assets/images/sw/rplus2/block/block_search_kr.png)
+> Play 스토어에서 `로보티즈` 검색 및 선택
 
 ![](/assets/images/sw/rplus2/block/block_install_kr.png)
+> 설치
 
 ## [메뉴 설명](#메뉴-설명)
 
@@ -177,11 +182,11 @@ undo / redo 기능의 사용이 가능한 상태가 되면 아래와 같이 버�
 
 ![](/assets/images/sw/rplus2/block/block_run_02_kr.png)
 
-제품에 연결된 블루투스와 연결되면 `대기 중…` 메시지가 표시됩니다.
+제품에 연결된 블루투스와 연결되면 `대기 중...` 메시지가 표시됩니다.
 
 ![](/assets/images/sw/rplus2/block/block_run_03_kr.png)
 
-블록이 실행되면 `실행 중…` 메시지가 표시되며 블록이 실행됩니다. 현재 실행 중인 블록은 붉은색으로 표시됩니다.
+블록이 실행되면 `실행 중...` 메시지가 표시되며 블록이 실행됩니다. 현재 실행 중인 블록은 붉은색으로 표시됩니다.
 
 ![](/assets/images/sw/rplus2/block/block_run_04_kr.png)
 
@@ -190,7 +195,7 @@ undo / redo 기능의 사용이 가능한 상태가 되면 아래와 같이 버�
 연결된 블루투스와 연결을 해제하려면 연결된 제품의 전원을 끄거나 `추가 메뉴` -> `설정` -> `블루투스` 를 선택하면 연결이 해제 됩니다.
 
 ## [중지](#중지)
-`실행 중…` 인 상태에서 `정지 버튼` 을 누르거나 우측 상단의 `x` 버튼을 누르면 실행을 중지할 수 있습니다.
+`실행 중...` 인 상태에서 `정지 버튼` 을 누르거나 우측 상단의 `x` 버튼을 누르면 실행을 중지할 수 있습니다.
 
 ![](/assets/images/sw/rplus2/block/block_stop_kr.png)
 
@@ -219,7 +224,7 @@ undo / redo 기능의 사용이 가능한 상태가 되면 아래와 같이 버�
 ![](/assets/images/sw/rplus2/block/block_option_menu_kr.png)
 
 ## [설정](#설정)
-`블루투스`, `e-메뉴얼`, `버전정보` 등을 확인할 수 있습니다.
+`블루투스`, `e-매뉴얼`, `버전정보` 등을 확인할 수 있습니다.
 
 ![](/assets/images/sw/rplus2/block/block_option_setting_kr.png)
 
@@ -282,9 +287,17 @@ undo / redo 기능의 사용이 가능한 상태가 되면 아래와 같이 버�
 ![](/assets/images/sw/rplus2/block/block_option_delete_kr.png)
 
 ### [태스크](#태스크)
-블록으로 작성된 코드를 Task 코드로 변환하거나 다운로드 할 수 있습니다. R+Task 가 설치되어 있지 않으면 구글 플레이로 이동 합니다. R+Task 앱을 설치해주세요.
+블록으로 작성된 코드를 Task 코드로 변환하거나 다운로드 할 수 있습니다.
 
 ![](/assets/images/sw/rplus2/block/block_option_task_kr.png)
+
+R+Task 가 설치되어 있지 않으면 구글 플레이로 이동합니다. R+Task 앱을 설치해주세요.
+
+![](/assets/images/sw/rplus2/block/block_option_task_search_kr.png)
+> Play 스토어에서 `로보티즈` 검색 후 R+mTask2 선택
+
+![](/assets/images/sw/rplus2/block/block_option_task_install_kr.png)
+> 설치
 
 #### [변환](#변환)
 블록으로 작성된 코드가 Task 코드로 변환되어 표시 됩니다.  
