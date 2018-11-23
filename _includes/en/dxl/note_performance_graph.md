@@ -10,6 +10,7 @@ This is why the max torque of the performance grap can actually be less than the
 **CAUTION : When supplying power**  
 - It is recommended using ROBOTIS controller or SMPS2DYNAMIXEL.
 - Do not connect or disconnect DYNAMIXEL when power is being supplied.
+- In case of PRO and PRO+, please supply power through 24V power port.
 {% endcapture %}
 
 <div class="notice--warning">{{ caution_power | markdownify }}</div>
