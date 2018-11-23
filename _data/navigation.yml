@@ -14366,6 +14366,8 @@ dynamixel_sdk:
         url: /software/dynamixel/dynamixel_sdk/sample_code/cpp_reboot_protocol_2_0/#cpp-reboot-protocol-20
       - title: "CPP Reset Protocol 2.0"
         url: /software/dynamixel/dynamixel_sdk/sample_code/cpp_reset_protocol_2_0/#cpp-reset-protocol-20
+      - title: "CPP Clear Multi Turn Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/cpp_clear_multi_turn_protocol_2_0/#cpp-lear-multi-turn-protocol-20
     - title: "CPP Protocol Combined"
       url: /software/dynamixel/dynamixel_sdk/sample_code/cpp_protocol_combined/#cpp-protocol-combined
     - title: "CPP DXL Monitor"
@@ -14406,6 +14408,8 @@ dynamixel_sdk:
         url: /software/dynamixel/dynamixel_sdk/sample_code/csharp_reboot_protocol_2_0/#csharp-reboot-protocol-20
       - title: "CSharp Reset Protocol 2.0"
         url: /software/dynamixel/dynamixel_sdk/sample_code/csharp_reset_protocol_2_0/#csharp-reset-protocol-20
+      - title: "CSharp Clear Multi Turn Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/csharp_clear_multi_turn_protocol_2_0/#csharp-clear-multi-turn-protocol-20
     - title: "Csharp Protocol Combined"
       url: /software/dynamixel/dynamixel_sdk/sample_code/csharp_protocol_combined/#csharp-protocol-combined
     - title: "Python Protocol 1.0"
@@ -14444,6 +14448,8 @@ dynamixel_sdk:
         url: /software/dynamixel/dynamixel_sdk/sample_code/python_reboot_protocol_2_0/#python-reboot-protocol-20
       - title: "Python Reset Protocol 2.0"
         url: /software/dynamixel/dynamixel_sdk/sample_code/python_reset_protocol_2_0/#python-reset-protocol-20
+      - title: "Python Clear Multi Turn Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/python_clear_multi_turn_protocol_2_0/#python-clear-multi-turn-protocol-20
     - title: "Python Protocol Combined"
       url: /software/dynamixel/dynamixel_sdk/sample_code/python_protocol_combined/#python-protocol-combined
     - title: "Java Protocol 1.0"
@@ -14482,6 +14488,8 @@ dynamixel_sdk:
         url: /software/dynamixel/dynamixel_sdk/sample_code/java_reboot_protocol_2_0/#java-reboot-protocol-20
       - title: "Java Reset Protocol 2.0"
         url: /software/dynamixel/dynamixel_sdk/sample_code/java_reset_protocol_2_0/#java-reset-protocol-20
+      - title: "Java Clear Multi Turn Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/java_clear_multi_turn_protocol_2_0/#java-clear-multi-turn-protocol-20
     - title: "Java Protocol Combined"
       url: /software/dynamixel/dynamixel_sdk/sample_code/java_protocol_combined/#java-protocol-combined
     - title: "MATLAB Protocol 1.0"
@@ -14520,6 +14528,8 @@ dynamixel_sdk:
         url: /software/dynamixel/dynamixel_sdk/sample_code/matlab_reboot_protocol_2_0/#matlab-reboot-protocol-20
       - title: "Matlab Reset Protocol 2.0"
         url: /software/dynamixel/dynamixel_sdk/sample_code/matlab_reset_protocol_2_0/#matlab-reset-protocol-20
+      - title: "Matlab Clear Multi Turn Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/matlab_clear_multi_turn_protocol_2_0/#matlab-clear-multi-turn-protocol-20
     - title: "MATLAB Protocol Combined"
       url: /software/dynamixel/dynamixel_sdk/sample_code/matlab_protocol_combined/#matlab-protocol-combined
     - title: "LabVIEW Protocol 1.0"
@@ -14558,6 +14568,8 @@ dynamixel_sdk:
         url: /software/dynamixel/dynamixel_sdk/sample_code/labview_reboot_protocol_2_0/#labview-reboot-protocol-20
       - title: "LabVIEW Reset Protocol 2.0"
         url: /software/dynamixel/dynamixel_sdk/sample_code/labview_reset_protocol_2_0/#labview-reset-protocol-20
+      - title: "LabVIEW Clear Multi Turn Protocol 2.0"
+        url: /software/dynamixel/dynamixel_sdk/sample_code/labview_clear_multi_turn_protocol_2_0/#labview-clear-multi-turn-protocol-20
     - title: "LabVIEW Protocol Combined"
       url: /software/dynamixel/dynamixel_sdk/sample_code/labview_protocol_combined/#labview-protocol-combined
   - title: "API Reference"
