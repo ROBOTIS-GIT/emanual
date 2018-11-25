@@ -20,7 +20,7 @@ sidebar:
   <h2 id="matlab-protocol-20"><a href="#matlab-protocol-20">MATLAB Protocol 2.0</a></h2>
 <![end dummy Header 1]-->
 
-### [Matlab Read Write Protocol 2.0](#matlab-read-write-protocol-10)
+### [Matlab Read Write Protocol 2.0](#matlab-read-write-protocol-20)
 
 - Description
 

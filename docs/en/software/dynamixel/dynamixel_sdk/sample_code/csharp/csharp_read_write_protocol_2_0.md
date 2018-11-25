@@ -415,19 +415,13 @@ dynamixel.packetHandler();
 
 
 ``` cs
-int index = 0;
-int dxl_comm_result = COMM_TX_FAIL;                                   // Communication result
-int[] dxl_goal_position = new int[2]{ DXL_MINIMUM_POSITION_VALUE, DXL_MAXIMUM_POSITION_VALUE };         // Goal position
+int dxl_comm_result = COMM_TX_FAIL;                            // Communication result
 
-byte dxl_error = 0;                                                   // Dynamixel error
-Int32 dxl_present_position = 0;                                       // Present position
+byte dxl_error = 0;                                            // Dynamixel error
+Int32 dxl_present_position = 0;                                // Present position
 ```
 
-`index` variable points the direction to where the Dynamixel should be rotated.
-
 `dxl_comm_result` indicates which error has been occurred during packet communication.
-
-`dxl_goal_position` stores goal points of Dynamixel rotation.
 
 `dxl_error` shows the internal error in Dynamixel.
 
@@ -467,6 +461,24 @@ else
 
 Secondly, the controller sets the communication `BAUDRATE` at #`port_num` port opened previously.
 
+``` cs
+// Set operating mode to extended position control mode
+dynamixel.write1ByteTxRx(port_num, PROTOCOL_VERSION, DXL_ID, ADDR_OPERATING_MODE, EXT_POSITION_CONTROL_MODE);
+if ((dxl_comm_result = dynamixel.getLastTxRxResult(port_num, PROTOCOL_VERSION)) != COMM_SUCCESS)
+{
+  Console.WriteLine(Marshal.PtrToStringAnsi(dynamixel.getTxRxResult(PROTOCOL_VERSION, dxl_comm_result)));
+}
+else if ((dxl_error = dynamixel.getLastRxPacketError(port_num, PROTOCOL_VERSION)) != 0)
+{
+  Console.WriteLine(Marshal.PtrToStringAnsi(dynamixel.getRxPacketError(PROTOCOL_VERSION, dxl_error)));
+}
+else
+{
+  Console.WriteLine("Operating mode changed to extended position control mode.");
+}
+```
+
+The controller sets the operating mode as Extended Position Control Mode(Multi-turn).
 
 ``` cs
 // Enable Dynamixel Torque
@@ -494,48 +506,104 @@ As mentioned in the document, above code enables Dynamixel torque to set its sta
 while (true)
 {
   Console.WriteLine("Press any key to continue! (or press ESC to quit!)");
-  if (Console.ReadKey().KeyChar == ESC_ASCII_VALUE)
-    break;
+  if (Console.ReadKey(true).KeyChar == ESC_ASCII_VALUE)
+      break;
+
+  Console.WriteLine("  Press SPACE key to clear multi-turn information! (or press ESC to stop!)");
 
   // Write goal position
-  dynamixel.write4ByteTxRx(port_num, PROTOCOL_VERSION, DXL_ID, ADDR_PRO_GOAL_POSITION, (UInt32)dxl_goal_position[index]);
+  dynamixel.write4ByteTxRx(port_num, PROTOCOL_VERSION, DXL_ID, ADDR_GOAL_POSITION, MAX_POSITION_VALUE);
   if ((dxl_comm_result = dynamixel.getLastTxRxResult(port_num, PROTOCOL_VERSION)) != COMM_SUCCESS)
   {
-    dynamixel.printTxRxResult(PROTOCOL_VERSION, dxl_comm_result);
+      Console.WriteLine(Marshal.PtrToStringAnsi(dynamixel.getTxRxResult(PROTOCOL_VERSION, dxl_comm_result)));
   }
   else if ((dxl_error = dynamixel.getLastRxPacketError(port_num, PROTOCOL_VERSION)) != 0)
   {
-    dynamixel.printRxPacketError(PROTOCOL_VERSION, dxl_error);
+      Console.WriteLine(Marshal.PtrToStringAnsi(dynamixel.getRxPacketError(PROTOCOL_VERSION, dxl_error)));
   }
 
   do
   {
     // Read present position
-    dxl_present_position = (Int32)dynamixel.read4ByteTxRx(port_num, PROTOCOL_VERSION, DXL_ID, ADDR_PRO_PRESENT_POSITION);
+    dxl_present_position = (Int32)dynamixel.read4ByteTxRx(port_num, PROTOCOL_VERSION, DXL_ID, ADDR_PRESENT_POSITION);
     if ((dxl_comm_result = dynamixel.getLastTxRxResult(port_num, PROTOCOL_VERSION)) != COMM_SUCCESS)
     {
-      dynamixel.printTxRxResult(PROTOCOL_VERSION, dxl_comm_result);
+      Console.WriteLine(Marshal.PtrToStringAnsi(dynamixel.getTxRxResult(PROTOCOL_VERSION, dxl_comm_result)));
     }
     else if ((dxl_error = dynamixel.getLastRxPacketError(port_num, PROTOCOL_VERSION)) != 0)
     {
-      dynamixel.printRxPacketError(PROTOCOL_VERSION, dxl_error);
+      Console.WriteLine(Marshal.PtrToStringAnsi(dynamixel.getRxPacketError(PROTOCOL_VERSION, dxl_error)));
     }
 
-    Console.WriteLine("[ID: {0}] GoalPos: {1}  PresPos: {2}", DXL_ID, dxl_goal_position[index], dxl_present_position);
+    Console.Write(string.Format("  [ID: {0}] GoalPos: {1}  PresPos: {2}", DXL_ID, MAX_POSITION_VALUE, dxl_present_position, Environment.NewLine));
+    Console.Write("\r".PadLeft(Console.WindowWidth - Console.CursorLeft - 1));
+    if (Console.KeyAvailable)
+    {
+      char c = Console.ReadKey().KeyChar;
+      if (c == SPACE_ASCII_VALUE)
+      {
+        Console.WriteLine("\n  Stop & Clear Multi-Turn Information!");
 
-  } while ((Math.Abs(dxl_goal_position[index] - dxl_present_position) > DXL_MOVING_STATUS_THRESHOLD));
+        // Write the present position to the goal position to stop moving
+        dynamixel.write4ByteTxRx(port_num, PROTOCOL_VERSION, DXL_ID, ADDR_GOAL_POSITION, (UInt32)dxl_present_position);
+        if ((dxl_comm_result = dynamixel.getLastTxRxResult(port_num, PROTOCOL_VERSION)) != COMM_SUCCESS)
+        {
+          Console.WriteLine(Marshal.PtrToStringAnsi(dynamixel.getTxRxResult(PROTOCOL_VERSION, dxl_comm_result)));
+        }
+        else if ((dxl_error = dynamixel.getLastRxPacketError(port_num, PROTOCOL_VERSION)) != 0)
+        {
+          Console.WriteLine(Marshal.PtrToStringAnsi(dynamixel.getRxPacketError(PROTOCOL_VERSION, dxl_error)));
+        }
 
-  // Change goal position
-  if (index == 0)
-  {
-    index = 1;
+        System.Threading.Thread.Sleep(300);
+
+        // Clear Multi-Turn Information
+        dynamixel.clearMultiTurn(port_num, PROTOCOL_VERSION, DXL_ID);
+        if ((dxl_comm_result = dynamixel.getLastTxRxResult(port_num, PROTOCOL_VERSION)) != COMM_SUCCESS)
+        {
+          Console.WriteLine(Marshal.PtrToStringAnsi(dynamixel.getTxRxResult(PROTOCOL_VERSION, dxl_comm_result)));
+        }
+        else if ((dxl_error = dynamixel.getLastRxPacketError(port_num, PROTOCOL_VERSION)) != 0)
+        {
+          Console.WriteLine(Marshal.PtrToStringAnsi(dynamixel.getRxPacketError(PROTOCOL_VERSION, dxl_error)));
+        }
+
+        // Read present position
+        dxl_present_position = (Int32)dynamixel.read4ByteTxRx(port_num, PROTOCOL_VERSION, DXL_ID, ADDR_PRESENT_POSITION);
+        if ((dxl_comm_result = dynamixel.getLastTxRxResult(port_num, PROTOCOL_VERSION)) != COMM_SUCCESS)
+        {
+          Console.WriteLine(Marshal.PtrToStringAnsi(dynamixel.getTxRxResult(PROTOCOL_VERSION, dxl_comm_result)));
+        }
+        else if ((dxl_error = dynamixel.getLastRxPacketError(port_num, PROTOCOL_VERSION)) != 0)
+        {
+          Console.WriteLine(Marshal.PtrToStringAnsi(dynamixel.getRxPacketError(PROTOCOL_VERSION, dxl_error)));
+        }
+
+        Console.WriteLine("  Present Position has been reset. : {0} \n", dxl_present_position);
+
+        break;
+    }
+    else if ( c == ESC_ASCII_VALUE)
+    {
+      Console.WriteLine("\n  Stopped!! \n");
+
+      // Write the present position to the goal position to stop moving
+      dynamixel.write4ByteTxRx(port_num, PROTOCOL_VERSION, DXL_ID, ADDR_GOAL_POSITION, (UInt32)dxl_present_position);
+      if ((dxl_comm_result = dynamixel.getLastTxRxResult(port_num, PROTOCOL_VERSION)) != COMM_SUCCESS)
+      {
+          Console.WriteLine(Marshal.PtrToStringAnsi(dynamixel.getTxRxResult(PROTOCOL_VERSION, dxl_comm_result)));
+      }
+      else if ((dxl_error = dynamixel.getLastRxPacketError(port_num, PROTOCOL_VERSION)) != 0)
+      {
+          Console.WriteLine(Marshal.PtrToStringAnsi(dynamixel.getRxPacketError(PROTOCOL_VERSION, dxl_error)));
+      }
+
+        break;
+    }
   }
-  else
-  {
-    index = 0;
-  }
-}
+} while ((Math.Abs(MAX_POSITION_VALUE - dxl_present_position) > DXL_MOVING_STATUS_THRESHOLD));
 ```
+
 
 During `while()` loop, the controller writes and reads the Dynamixel position through packet transmission/reception(Tx/Rx).
 

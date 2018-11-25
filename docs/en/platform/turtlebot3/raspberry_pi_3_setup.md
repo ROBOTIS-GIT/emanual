@@ -217,10 +217,10 @@ We provide the Linux distro image based on Raspbian. They are pre-installed with
 - Network configuration for ROS [(reference link)][network_configuration]
 	```
 	nano ~/.bashrc
-	(modified the `localhost` below to `Raspberry Pi's IP`)
+	(modify `localhost` to REMOTE_PC_IP and RASPBERRY_PI_3_IP)
 
-	export ROS_MASTER_URI=http://localhost:11311
-	export ROS_HOSTNAME=localhost
+	export ROS_MASTER_URI=http://REMOTE_PC_IP:11311
+	export ROS_HOSTNAME=RASPBERRY_PI_3_IP
 	```
 
 	```

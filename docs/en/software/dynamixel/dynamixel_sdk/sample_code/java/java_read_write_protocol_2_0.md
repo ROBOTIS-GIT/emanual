@@ -20,7 +20,7 @@ sidebar:
   <h2 id="java-protocol-20"><a href="#java-protocol-20">Java Protocol 2.0</a></h2>
 <![end dummy Header 1]-->
 
-### [Java Read Write Protocol 2.0](#java-read-write-protocol-10)
+### [Java Read Write Protocol 2.0](#java-read-write-protocol-20)
 
 - Description
 
