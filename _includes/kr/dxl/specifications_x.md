@@ -6,7 +6,7 @@
 | 모터             | {{ site.data.dxl_x_info[page.ref].motor }}              |
 | 통신속도         | {{ site.data.dxl_x_info[page.ref].baudrate }}           |
 | 제어 알고리즘    | {{ site.data.dxl_x_info[page.ref].control }}            |
-| 최소 제어각      | {{ site.data.dxl_x_info[page.ref].angle }}              |{% if site.data.dxl_x_info[page.ref].backlash != 'N/A' %}
+| 해상도           | {{ site.data.dxl_x_info[page.ref].resolution }}              |{% if site.data.dxl_x_info[page.ref].backlash != 'N/A' %}
 | 백래쉬           | {{ site.data.dxl_x_info[page.ref].backlash }}           |{% else %}{% endif %}
 | 동작 모드        | {{ site.data.dxl_x_info[page.ref].mode }}               |
 | 무게             | {{ site.data.dxl_x_info[page.ref].weight }}             |
@@ -26,5 +26,5 @@
 | 재질             | {{ site.data.dxl_x_info[page.ref].material }}           |
 | 대기 전류        | {{ site.data.dxl_x_info[page.ref].standbycurrent }}     |
 
-[반경방향 하중]: /docs/kr/popup/axial_radial/
-[축방향 하중]: /docs/kr/popup/axial_radial/
+[반경방향 하중]: /assets/images/dxl/axial_radial_load.png
+[축방향 하중]: /assets/images/dxl/axial_radial_load.png

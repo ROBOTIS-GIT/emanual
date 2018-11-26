@@ -242,6 +242,8 @@ Each data in the Control Table is restored to initial values when the DYNAMIXEL 
 
 ![](/assets/images/dxl/ax/ax-18a_dimension.png)
 
+{% include en/dxl/download_center_notice.md %}
+
 {% include en/dxl/485_ttl_connection.md %}
 
 [Two's complement]: #

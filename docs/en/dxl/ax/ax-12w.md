@@ -234,6 +234,8 @@ Each data in the Control Table is restored to initial values when the DYNAMIXEL 
 
 ![](/assets/images/dxl/ax/ax-12w_dimension.png)
 
+{% include en/dxl/download_center_notice.md %}
+
 {% include en/dxl/485_ttl_connection.md %}
 
 [Compatibility Guide]: http://en.robotis.com/service/compatibility_table.php?cate=d

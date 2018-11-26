@@ -158,11 +158,11 @@ $mfp-use-visuallyhidden:              false !default; // Hide content from brows
   cursor: progress;
 }
 .mfp-zoom-out-cur {
-  &, .mfp-image-holder .mfp-close {
-    cursor: -moz-zoom-out;
-    cursor: -webkit-zoom-out;
-    cursor: zoom-out;
-  }
+  // &, .mfp-image-holder .mfp-close {
+  //   cursor: -moz-zoom-out;
+  //   cursor: -webkit-zoom-out;
+  //   cursor: zoom-out;
+  // }
 }
 .mfp-zoom {
   cursor: pointer;
@@ -471,6 +471,7 @@ button {
       box-sizing: border-box;
       padding: $mfp-image-padding-top 0 $mfp-image-padding-bottom;
       margin: 0 auto;
+      border: 0px;
     }
   }
 
@@ -549,6 +550,7 @@ button {
         img {
           &.mfp-img {
             padding: 0;
+            border: 0px;
           }
         }
         .mfp-figure {
@@ -626,6 +628,7 @@ button {
   .mfp-ie7 {
     .mfp-img {
       padding: 0;
+      border: 0px;
     }
     .mfp-bottom-bar {
       width: 600px;

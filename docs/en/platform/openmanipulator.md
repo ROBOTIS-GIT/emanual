@@ -175,7 +175,7 @@ $ roslaunch open_manipulator_description open_manipulator_rviz.launch
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_rviz.png)
 
-# [Bringup](#Bringup)
+# [Bringup](#bringup)
 
 **NOTE** : This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 {: .notice--info}
@@ -297,9 +297,9 @@ Load a TurtleBot3 Waffle or Waffle Pi with OpenManipulator on RViz.
 
 ![](/assets/images/platform/openmanipulator/TurtleBot3_with_Open_Manipulator.png)
 
-# [Basic Operation](#Basic-Operation)
+# [Basic Operation](#basic-operation)
 
-## [GUI program](#GUI-program)
+## [GUI Program](#gui-program)
 
   You can use GUI program to manipulate OpenManipulator. This program shows the status of the manipulator and provides the ability to operate the manipulator.
   ```

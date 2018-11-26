@@ -3,8 +3,8 @@ common_x_specs:
   encoder:            &encoder        "Contactless absolute encoder (12Bit, 360 [&deg;])<br />Maker : ams(www.ams.com), Part No : AS5045"
   baudrate:           &baudrate       "9,600 [bps] ~ 4.5 [Mbps]"
   control:            &control        "PID control"
-  angle:              &angle          "0.088 [&deg;]"
-  backlash_430:       &backlash_430   "15 [arcmin] (0.25 [&deg;])"
+  resolution:         &resolution     "4096 [pulse/rev]"
+  backlash_x:         &backlash_x     "15 [arcmin] (0.25 [&deg;])"
   mode:               &mode           "전류 제어 모드<br />속도 제어 모드<br />위치 제어 모드 (0 ~ 360 [&deg;])<br />확장 위치 제어 모드 (멀티턴)<br />전류기반 위치 제어 모드<br />PWM 제어 모드 (Voltage Control Mode)"
   mode_en:            &mode_en        "Current Control Mode<br />Velcoity Control Mode<br />Position Control Mode (0 ~ 360 [&deg;])<br />Extended Position Control Mode (Multi-turn)<br />Current-based Position Control Mode<br />PWM Control Mode (Voltage Control Mode)"
   weight_430:         &weight_430     "82 [g]"
@@ -31,15 +31,18 @@ common_x_specs:
   material:           &material       "Full Metal Gear<br />Metal (Front, Middle), Engineering Plastic (Back)"
   standbycurrent_36:  &standbycurrent_36 "36 [mA]"
   standbycurrent_40:  &standbycurrent_40 "40 [mA]"
-  
+
+xl320:
+  temperature:        "-5 ~ +70 [&deg;C]"
+
 xh430-v210:
   mcu:                *mcu
   encoder:            *encoder
   motor:              "Maxon"
   baudrate:           *baudrate
   control:            *control
-  angle:              *angle
-  backlash:           *backlash_430
+  resolution:         *resolution
+  backlash:           *backlash_x
   mode:               *mode
   mode_en:            *mode_en
   weight:             *weight_430
@@ -67,8 +70,8 @@ xh430-v350:
   motor:              "Maxon"
   baudrate:           *baudrate
   control:            *control
-  angle:              *angle
-  backlash:           *backlash_430
+  resolution:         *resolution
+  backlash:           *backlash_x
   mode:               *mode
   mode_en:            *mode_en
   weight:             *weight_430
@@ -96,8 +99,8 @@ xh430-w210:
   motor:              "Maxon"
   baudrate:           *baudrate
   control:            *control
-  angle:              *angle
-  backlash:           *backlash_430
+  resolution:         *resolution
+  backlash:           *backlash_x
   mode:               *mode
   mode_en:            *mode_en
   weight:             *weight_430
@@ -125,8 +128,8 @@ xh430-w350:
   motor:              "Maxon"
   baudrate:           *baudrate
   control:            *control
-  angle:              *angle
-  backlash:           *backlash_430
+  resolution:         *resolution
+  backlash:           *backlash_x
   mode:               *mode
   mode_en:            *mode_en
   weight:             *weight_430
@@ -154,7 +157,7 @@ xl430-w250:
   motor:              "Cored"
   baudrate:           *baudrate
   control:            *control
-  angle:              *angle
+  resolution:         *resolution
   backlash:           "N/A"
   mode:               "속도 제어 모드<br />위치 제어 모드 (0 ~ 360 [&deg;])<br />확장 위치 제어 모드 (멀티턴)<br />PWM 제어 모드 (Voltage Control Mode)"
   mode_en:            "Velcoity Control Mode<br />Position Control Mode (0 ~ 360 [&deg;])<br />Extended Position Control Mode (Multi-turn)<br />PWM Control Mode (Voltage Control Mode)"
@@ -177,13 +180,42 @@ xl430-w250:
   material:           "Engineering Plastic"
   standbycurrent:     "52 [mA]"
 
+2xl430-w250:
+  mcu:                *mcu
+  encoder:            "Contactless absolute encoder (12Bit, 360 [&deg;])<br />Maker : ams(www.ams.com), Part No : AS5601"
+  motor:              "Cored"
+  baudrate:           *baudrate
+  control:            *control
+  resolution:         *resolution
+  backlash:           "N/A"
+  mode:               "속도 제어 모드<br />위치 제어 모드 (0 ~ 360 [&deg;])<br />확장 위치 제어 모드 (멀티턴)<br />PWM 제어 모드 (Voltage Control Mode)"
+  mode_en:            "Velcoity Control Mode<br />Position Control Mode (0 ~ 360 [&deg;])<br />Extended Position Control Mode (Multi-turn)<br />PWM Control Mode (Voltage Control Mode)"
+  weight:             "98.2 [g]"
+  dimensions:         "36 x 46.5 x 36 [mm]"
+  gearratio:          "257.4 : 1"
+  stalltorque:        "1.0 [N.m] (at 9.0 [V], 1.0 [A])<br />**1.4 [Nm] (at 11.1 [V], 1.3 [A])**<br />1.5 [Nm] (at 12.0 [V], 1.4 [A])"
+  noloadspeed:        "47 [rev/min] (at 9.0 [V])<br />**57 [rev/min] (at 11.1 [V])**<br />61 [rev/min] (at 12.0 [V])"
+  radialload:         "N/A"
+  radialload_en:      "N/A"
+  axialload:          "N/A"
+  temperature:        "-5 ~ +72 [&deg;C]"
+  voltage:            "6.5 ~ 12.0 [V] (**권장 전압 : 11.1 [V]**)"
+  voltage_en:         "6.5 ~ 12.0 [V] (**Recommended : 11.1 [V]**)"
+  command:            *command
+  protocoltype:       *ttl
+  physicalconnection: *ttl_connection
+  id:                 *id
+  feedback:           *feedback
+  material:           "Engineering Plastic"
+  standbycurrent:     "49 [mA]"
+
 xc430-w240:
   mcu:                "ST CORTEX-M3 (STM32F103C8 @ 72 [Mhz], 32Bit)"
   encoder:            "Contactless absolute encoder (12Bit, 360 [&deg;])<br />Maker : ams(www.ams.com), Part No : AS5601"
   motor:              "Coreless"
   baudrate:           "9,600 [bps] ~ 4.5 [Mbps]"
   control:            "PID control"
-  angle:              "0.088 [&deg;]"
+  resolution:         *resolution
   backlash:           "N/A"
   mode:               "속도 제어 모드<br />위치 제어 모드 (0 ~ 360 [&deg;])<br />확장 위치 제어 모드 (멀티턴)<br />PWM 제어 모드 (Voltage Control Mode)"
   mode_en:            "Velcoity Control Mode<br />Position Control Mode (0 ~ 360 [&deg;])<br />Extended Position Control Mode (Multi-turn)<br />PWM Control Mode (Voltage Control Mode)"
@@ -195,7 +227,7 @@ xc430-w240:
   radialload:         "N/A"
   radialload_en:      "N/A"
   axialload:          "N/A"
-  temperature:        "-5 ~ +80 [&deg;C]"
+  temperature:        *temperature
   voltage:            "7.0 ~ 12.0 [V] (**권장 전압 : 12 [V]**)"
   voltage_en:         "7.0 ~ 12.0 [V] (**Recommended : 12.0 [V]**)"
   command:            "Digital Packet"
@@ -212,8 +244,8 @@ xm430-w210:
   motor:              "Coreless"
   baudrate:           *baudrate
   control:            *control
-  angle:              *angle
-  backlash:           *backlash_430
+  resolution:         *resolution
+  backlash:           *backlash_x
   mode:               *mode
   mode_en:            *mode_en
   weight:             *weight_430
@@ -241,8 +273,8 @@ xm430-w350:
   motor:              "Coreless"
   baudrate:           *baudrate
   control:            *control
-  angle:              *angle
-  backlash:           *backlash_430
+  resolution:         *resolution
+  backlash:           *backlash_x
   mode:               *mode
   mode_en:            *mode_en
   weight:             *weight_430
@@ -270,8 +302,8 @@ xm540-w150:
   motor:              "Coreless"
   baudrate:           *baudrate
   control:            *control
-  angle:              *angle
-  backlash:           "N/A"
+  resolution:         *resolution
+  backlash:           *backlash_x
   mode:               *mode
   mode_en:            *mode_en
   weight:             *weight_540
@@ -279,9 +311,9 @@ xm540-w150:
   gearratio:          "152.3 : 1"
   stalltorque:        "6.9 [N.m] @ 11.1 [V], 4.2 [A]<br />7.3 [Nm] @ 12.0 [V], 4.4 [A]<br />8.9 [Nm] @ 14.8 [V], 5.5 [A]"
   noloadspeed:        "50 [rev/min] @ 11.1 [V]<br />53 [rev/min] @ 12.0 [V]<br />66 [rev/min] @ 14.8"
-  radialload:         "N/A"
-  radialload_en:      "N/A"
-  axialload:          "N/A"
+  radialload:         *radialload
+  radialload_en:      *radialload_en
+  axialload:          *axialload
   temperature:        *temperature
   voltage:            *voltage_12
   voltage_en:         *voltage_12_en
@@ -299,8 +331,8 @@ xm540-w270:
   motor:              "Coreless"
   baudrate:           *baudrate
   control:            *control
-  angle:              *angle
-  backlash:           "N/A"
+  resolution:         *resolution
+  backlash:           *backlash_x
   mode:               *mode
   mode_en:            *mode_en
   weight:             *weight_540
@@ -308,9 +340,9 @@ xm540-w270:
   gearratio:          "272.5 : 1"
   stalltorque:        "10.0 [Nm] (at 11.1 [V], 4.2 [A])<br />**10.6 [Nm] (at 12.0 [V], 4.4 [A])**<br />12.9 [Nm] (at 14.8 [V], 5.5 [A])"
   noloadspeed:        "28 [rev/min] (at 11.1 [V])<br />**30 [rev/min] (at 12.0 [V])**<br />37 [rev/min] (at 14.8 [V])"
-  radialload:         "N/A"
-  radialload_en:      "N/A"
-  axialload:          "N/A"
+  radialload:         *radialload
+  radialload_en:      *radialload_en
+  axialload:          *axialload
   temperature:        *temperature
   voltage:            *voltage_12
   voltage_en:         *voltage_12_en

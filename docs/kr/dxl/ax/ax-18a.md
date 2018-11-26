@@ -216,6 +216,8 @@ Baudrate(BPS) = 2,000,000 / (Value + 1)
 
 ![](/assets/images/dxl/ax/ax-18a_dimension.png)
 
+{% include kr/dxl/download_center_notice.md %}
+
 {% include kr/dxl/485_ttl_connection.md %}
 
 [호환성 가이드]: http://www.robotis.com/service/compatibility_table.php?cate=d

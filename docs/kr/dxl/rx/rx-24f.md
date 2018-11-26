@@ -246,6 +246,8 @@ sidebar:
 
 ## [도면](#도면)
 
+{% include kr/dxl/download_center_notice.md %}
+
 {% include kr/dxl/485_ttl_connection.md %}
 
 

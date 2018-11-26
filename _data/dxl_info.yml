@@ -1,0 +1,37 @@
+common_specs:
+  temperature80:      &temperature80      "-5 ~ +80 [&deg;C]"
+  temperature70:      &temperature70      "-5 ~ +70 [&deg;C]"
+
+
+ax-12a:
+  temperature:        *temperature70
+
+ax-12w:
+  temperature:        *temperature70
+
+ax-18a:
+  temperature:        *temperature70
+
+dx-113:
+  temperature:        "-5 ~ +85 [&deg;C]"
+
+dx-116:
+  temperature:        "-5 ~ +85 [&deg;C]"
+
+dx-117:
+  temperature:        *temperature80
+
+ex-106+:
+  temperature:        *temperature80
+
+rx-10:
+  temperature:        *temperature80
+
+rx-24f:
+  temperature:        *temperature80
+
+rx-28:
+  temperature:        *temperature80
+
+rx-64:
+  temperature:        *temperature80

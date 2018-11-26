@@ -5,10 +5,11 @@ common_proa_specs:
   opmode_en:          &opmode_en          "Torque Control Mode<br />Velocity Control Mode<br />Position Control Mode<br />Extended Position Control Mode<br />PWM Control Mode(Voltage Control Mode)"
   dimension_430:      &dimension_430      "28.5 x 46.5 x 34 [mm]"
   dimension_540:      &dimension_540      "33.5 x 58.5 x 44 [mm]"
+  backlash:           &backlash_pro       "< 6 [arcmin], 0.1 [&deg;]"
   radialload_42:      &radialload_42      "280 [N] (혼으로부터 10 [mm])"
   radialload_54:      &radialload_54      "370 [N] (혼으로부터 10 [mm])"
-  radialload_42_en:   &radialload_42_en  "280 [N] (10 [mm] away from the horn)"
-  radialload_54_en:   &radialload_54_en  "370 [N] (10 [mm] away from the horn)"
+  radialload_42_en:   &radialload_42_en   "280 [N] (10 [mm] away from the horn)"
+  radialload_54_en:   &radialload_54_en   "370 [N] (10 [mm] away from the horn)"
   axialload_42:       &axialload_42       "100 [N]"
   axialload_54:       &axialload_54       "130 [N]"
   temperature:        &temperature        "5 ~ 55 [&deg;C]"
@@ -30,7 +31,7 @@ h42-20-s300-ra:
   dimensions:         "42 x 84 x 42 [mm]"
   resolution:         "607,500 [pulse/rev]"
   gearratio:          "303.75:1"
-  backlash:           "3.8 [arcmin], 0.06 [&deg;]"
+  backlash:           *backlash_pro
   radialload:         *radialload_42
   radialload_en:      *radialload_42_en
   axialload:          *axialload_42
@@ -40,7 +41,7 @@ h42-20-s300-ra:
   conttorque:         "5.1 [Nm]"
   contcurrent:        "1.5 [A]"
   output:             "20 [W]"
-  optemperature:      *temperature
+  temperature:        *temperature
   opvoltage:          *voltage
   commandsignal:      *command
   commandsignalkr:    *command_kr
@@ -59,7 +60,7 @@ h54-100-s500-ra:
   dimensions:         "54 x 108 x 54 [mm]"
   resolution:         "1,003,846 [pulse/rev]"
   gearratio:          "501.923 : 1"
-  backlash:           "3.5 [arcmin], 0.06 [&deg;]"
+  backlash:           *backlash_pro
   radialload:         *radialload_54
   radialload_en:      *radialload_54_en
   axialload:          *axialload_54
@@ -69,7 +70,7 @@ h54-100-s500-ra:
   conttorque:         "25.3 [Nm]"
   contcurrent:        "5.5 [A]"
   output:             "100 [W]"
-  optemperature:      *temperature
+  temperature:        *temperature
   opvoltage:          *voltage
   commandsignal:      *command
   commandsignalkr:    *command_kr
@@ -88,7 +89,7 @@ h54-200-s500-ra:
   dimensions:         "54 x 126 x 54 [mm]"
   resolution:         "1,003,846 [pulse/rev]"
   gearratio:          "501.923 : 1"
-  backlash:           "3.5 [arcmin], 0.06 [&deg;]"
+  backlash:           *backlash_pro
   radialload:         *radialload_54
   radialload_en:      *radialload_54_en
   axialload:          *axialload_54
@@ -98,7 +99,7 @@ h54-200-s500-ra:
   conttorque:         "44.7 [Nm]"
   contcurrent:        "9.3 [A]"
   output:             "200 [W]"
-  optemperature:      *temperature
+  temperature:        *temperature
   opvoltage:          *voltage
   commandsignal:      *command
   commandsignalkr:    *command_kr
@@ -117,7 +118,7 @@ m42-10-s260-ra:
   dimensions:         "42 x 72 x 42 [mm]"
   resolution:         "526,375 [pulse/rev]"
   gearratio:          "257.0 : 1"
-  backlash:           "4.2 [arcmin], 0.07 [&deg;]"
+  backlash:           *backlash_pro
   radialload:         "N/A"
   radialload_en:      "N/A"
   axialload:          "N/A"
@@ -127,7 +128,7 @@ m42-10-s260-ra:
   conttorque:         "1.7 [Nm]"
   contcurrent:        "0.6 [A]"
   output:             "10 [W]"
-  optemperature:      *temperature
+  temperature:        *temperature
   opvoltage:          *voltage
   commandsignal:      *command
   commandsignalkr:    *command_kr
@@ -146,7 +147,7 @@ m54-40-s250-ra:
   dimensions:         "54 x 108 x 54 [mm]"
   resolution:         "502,834 [pulse/rev]"
   gearratio:          "251.4 : 1"
-  backlash:           "3.8 [arcmin], 0.06 [&deg;]"
+  backlash:           *backlash_pro
   radialload:         "N/A"
   radialload_en:      "N/A"
   axialload:          "N/A"
@@ -156,7 +157,7 @@ m54-40-s250-ra:
   conttorque:         "3.9 [Nm]"
   contcurrent:        "1.9 [A]"
   output:             "40 [W]"
-  optemperature:      *temperature
+  temperature:        *temperature
   opvoltage:          *voltage
   commandsignal:      *command
   commandsignalkr:    *command_kr
@@ -175,7 +176,7 @@ m54-60-s250-ra:
   dimensions:         "54 x 126 x 54 [mm]"
   resolution:         "502,834 [pulse/rev]"
   gearratio:          "251.4 : 1"
-  backlash:           "3.8 [arcmin], 0.06 [&deg;]"
+  backlash:           *backlash_pro
   radialload:         "N/A"
   radialload_en:      "N/A"
   axialload:          "N/A"
@@ -185,7 +186,7 @@ m54-60-s250-ra:
   conttorque:         "10.1 [Nm]"
   contcurrent:        "3.0 [A]"
   output:             "60 [W]"
-  optemperature:      *temperature
+  temperature:        *temperature
   opvoltage:          *voltage
   commandsignal:      *command
   commandsignalkr:    *command_kr

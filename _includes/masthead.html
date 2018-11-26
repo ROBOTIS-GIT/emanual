@@ -232,34 +232,6 @@
       {% endfor %}
     </div>
 
-    {% if page.lang=='en' %}
-    <!-- Elasticlunr Custom Search for English contents -->
-    <form class="searchbox" id="search-form" style="background: #FFF;">
-      <input type="search" id="search_term" placeholder="Enter Search Terms"/>
-      <button type="submit" id="search_button">Search</button>
-    </form>
-    <div class="search-result" style="text-align: right;"></div>
-    <!-- end of Elasticlunr Custom Search for English contents -->
-    
-    {% else %}
-    <!-- Google Custom Search -->
-    <form class="searchbox" method="get" id="site_search">
-      <script>
-        (function() {
-          var cx = '003548387656725317882:3pwl9jljqvi';
-          var gcse = document.createElement('script');
-          gcse.type = 'text/javascript';
-          gcse.async = true;
-          gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-          var s = document.getElementsByTagName('script')[0];
-          s.parentNode.insertBefore(gcse, s);
-        })();
-      </script>
-      <gcse:search></gcse:search>
-    </form>
-    <!-- end of Google Custom Search -->
-    {% endif %}
-    
     <button class="google_button" id="google_button" onclick="extendgoogletool()"><img src="https://www.google.com/images/cleardot.gif" class="goog-te-gadget-icon" alt="" style="background-image: url(&quot;https://translate.googleapis.com/translate_static/img/te_ctrl3.gif&quot;); background-position: -65px 0px;"></button>
     <div class="google_tools" id="google_tools">
       <!-- Google Translation -->
@@ -314,3 +286,31 @@
 
   </div>
 </div>
+
+{% if page.lang=='en' %}
+<!-- Elasticlunr Custom Search for English contents -->
+<form class="searchbox" id="search-form" style="background: #000;">
+  <input type="search" id="search_term" placeholder="Enter Search Terms"/>
+  <button type="submit" id="search_button"><img class="logo" src="/assets/images/search_icon.png"></button>
+</form>
+<div class="search-result" style="text-align: right;"></div>
+<!-- end of Elasticlunr Custom Search for English contents -->
+
+{% else %}
+<!-- Google Custom Search -->
+<form class="searchbox" method="get" id="site_search">
+  <script>
+    (function() {
+      var cx = '003548387656725317882:3pwl9jljqvi';
+      var gcse = document.createElement('script');
+      gcse.type = 'text/javascript';
+      gcse.async = true;
+      gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(gcse, s);
+    })();
+  </script>
+  <gcse:search></gcse:search>
+</form>
+<!-- end of Google Custom Search -->
+{% endif %}

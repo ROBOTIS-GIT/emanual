@@ -247,7 +247,11 @@ sidebar:
 
 ## [Drawings](#drawings)
 
+{% include en/dxl/download_center_notice.md %}
+
 {% include en/dxl/485_ttl_connection.md %}
+
+
 
 [Two's complement]: #
 

@@ -17,7 +17,7 @@
 | Continuous Torque   | {{ site.data.dxl_proa_info[page.ref].conttorque }}             |
 | Continuous Current  | {{ site.data.dxl_proa_info[page.ref].contcurrent }}               |
 | Output                | {{ site.data.dxl_proa_info[page.ref].output }}                  |
-| Operating Temperature           | {{ site.data.dxl_proa_info[page.ref].optemperature }}          |
+| Operating Temperature           | {{ site.data.dxl_proa_info[page.ref].temperature }}          |
 | Operating Voltage           | {{ site.data.dxl_proa_info[page.ref].opvoltage }}              |
 | Command Signal      | {{ site.data.dxl_proa_info[page.ref].commandsignal }}        |
 | Protocol Type       | {{ site.data.dxl_proa_info[page.ref].protocoltype }}         |
@@ -25,5 +25,5 @@
 | ID                  | {{ site.data.dxl_proa_info[page.ref].id }}                     |
 | Standby Current           | {{ site.data.dxl_proa_info[page.ref].standbycurrent }}         |
 
-[Radial Load]: /docs/en/popup/axial_radial_pro/
-[Axial Load]: /docs/en/popup/axial_radial_pro/
+[Radial Load]: /assets/images/dxl/axial_radial_load_pro.png
+[Axial Load]: /assets/images/dxl/axial_radial_load_pro.png
