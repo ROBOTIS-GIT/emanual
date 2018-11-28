@@ -13,7 +13,7 @@ sidebar:
 
 # [제품 라인업](#제품-라인업)
 
-![](/assets/images/dxl/pro/dxl_pro_productline_kr.jpg)
+![](/assets/images/dxl/pro_plus/dynamixel_pro_plus_lineup_table_kr.jpg)
 
 > 다이나믹셀 PRO+ 라인업
 

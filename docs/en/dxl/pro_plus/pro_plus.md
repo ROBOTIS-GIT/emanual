@@ -13,7 +13,7 @@ sidebar:
 
 # [Product Lineup](#product-lineup)
 
-![](/assets/images/dxl/pro/dxl_pro_productline.jpg)
+![](/assets/images/dxl/pro_plus/dynamixel_pro_plus_lineup_table.jpg)
 
 > DYNAMIXEL PRO+ Lineup
 
