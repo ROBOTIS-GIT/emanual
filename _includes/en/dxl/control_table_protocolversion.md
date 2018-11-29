@@ -1,5 +1,5 @@
 Users can select Dynamixel protocol version (1.0 and 2.0).  
-Regardless of the Protocol Version, identical Control Table will be used.  
+Even if Protocol 1.0 is selected, Protocol 2.0 Control Table will be used.  
 It is recommended to use an identical protocol version for multiple Dynamixels.
 
 |   Value    | Protocol Version |                             Compatible Dynamixels                             |

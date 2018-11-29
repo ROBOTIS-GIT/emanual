@@ -1,6 +1,9 @@
 # [Control Table](#control-table)
 The Control Table is a structure of data implemented in the device. Users can read a specific Data to get status of the device with Read Instruction Packets, and modify Data as well to control the device with WRITE Instruction Packets.
 
+**WARNING** : PRO+ series use different Control Table from PRO series. Please pay attention when replacing PRO with PRO+.
+{: .notice--warning}
+
 ## [Control Table, Data, Address](#control-table-data-address)
 The Control Table is a structure that consists of multiple Data fields to store status or to control the device. Users can check current status of the device by reading a specific Data from the Control Table with Read Instruction Packets. WRITE Instruction Packets enable users to control the device by changing specific Data in the Control Table. The Address is a unique value when accessing a specific Data in the Control Table with Instruction Packets. In order to read or write data, users must designate a specific Address in the Instruction Packet. Please refer to [Protocol 2.0] for more details about Instruction Packets.
 
