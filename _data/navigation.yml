@@ -12889,29 +12889,62 @@ openmanipulator:
       url: /platform/openmanipulator/#3d-printed-parts
     - title: "Assembly Manual"
       url: /platform/openmanipulator/#assembly-manual
-  - title: "Software Setup"
-    url: /platform/openmanipulator/#software-setup
-    children:
-    - title: "ROS and Gazebo"
-      url: /platform/openmanipulator/#ros-and-gazebo
   - title: "Bringup"
     url: /platform/openmanipulator/#bringup
-  - title: "Manipulation"
-    url: /platform/openmanipulator/#manipulation
-  - title: "Mobile Manipulation"
-    url: /platform/openmanipulator/#mobile-manipulation
+    children:
+    - title: "ROS Packages setup"
+      url: /platform/openmanipulator/#ros-packages-setup
+    - title: "Run roscore"
+      url: /platform/openmanipulator/#run-roscore
+    - title: "Bringup a OpenManipulator"
+      url: /platform/openmanipulator/#bringup-a-openmanipulator
+    - title: "Load a OpenManipulator on Rviz"
+      url: /platform/openmanipulator/#load-a-openmanipulator-on-rviz      
+  - title: "Basic Manipulation"
+    url: /platform/openmanipulator/#basic-manipulation
+    children:
+    - title: "Topic Monitor"
+      url: /platform/openmanipulator/#topic-monitor
+    - title: "GUI Program"
+      url: /platform/openmanipulator/#gui-program
+    - title: "Teleoperation"
+      url: /platform/openmanipulator/#teleoperation
+      children:
+      - title: "Keyboard"
+        url: /platform/openmanipulator/#keyboard
+      - title: "RC100"
+        url: /platform/openmanipulator/#rc100
+      - title: "XBOX 360 Joystick"
+        url: /platform/openmanipulator/#xbox-360-joystick
+    - title: "Moveit!"
+      url: /platform/openmanipulator/#moveit!
+  - title: "Camera Application"
+    url: /platform/openmanipulator/#camera-application    
+  - title: "Gazebo Simulation"
+    url: /platform/openmanipulator/#gazebo-simulation
   - title: "Basic Operation"
     url: /platform/openmanipulator/#basic-operation
     children:
     - title: "GUI Program"
       url: /platform/openmanipulator/#gui-program
-  - title: "Embedded Board Setup"
-    url: /platform/openmanipulator/#embedded-board-setup
+  - title: "How to Control on OpenCR"
+    url: /platform/openmanipulator/#how-to-control-opencr
     children:
+    - title: "Setup"
+      url: /platform/openmanipulator/#setup
     - title: "Arduino IDE"
       url: /platform/openmanipulator/#arduino-ide
     - title: "Processing"
       url: /platform/openmanipulator/#processing
+  - title: "Tool Gripper Modification"
+    url: /platform/openmanipulator/#tool-gripper-modification
+    children:
+    - title: "Vacuum Gripper"
+      url: /platform/openmanipulator/#vacuum-gripper
+    - title: "Pen Gripper"
+      url: /platform/openmanipulator/#pen-gripper
+  - title: "Mobile Manipulation"
+    url: /platform/openmanipulator/#mobile-manipulation
   - title: "Friends"
     url: /platform/openmanipulator/#friends
     children:
