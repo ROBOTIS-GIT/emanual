@@ -145,17 +145,51 @@ Below video might be help you.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/eJTIeDepmNo" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
-# [Bringup](#software-setup)
+# [PC Setup](#pc-setup)
 
-## [Ros Packages Setup](#ros-packages-setup)
+**NOTE**: This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+{: .notice--info}
+
+## [Install Ubuntu on PC](#install-ubuntu-on-pc)
+
+Download and install the `Ubuntu 16.04` on the `PC (your desktop or laptop PC)` from the following link.
+
+- [Download link][ubuntu_download_link]
+
+If you need more help for installing Ubuntu, check out the step-by-step guide from the link below.
+
+- [Install ubuntu desktop](https://www.ubuntu.com/download/desktop/install-ubuntu-desktop)
+
+## [Install ROS on PC](#install-ros-on-pc)
+
+![](/assets/images/platform/turtlebot3/logo_ros.png)
+
+The following script will allow you to simplify the ROS installation procedure. Run the following command in a terminal window. The terminal application can be found with the Ubuntu search icon on the top left corner of the screen, or you can use shortcut key for terminal is `Ctrl`-`Alt`-`T`. After install ROS, please reboot PC.
+
+``` bash
+$ sudo apt-get update
+$ sudo apt-get upgrade
+$ wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic.sh && chmod 755 ./install_ros_kinetic.sh && bash ./install_ros_kinetic.sh
+```
+
+**NOTE**: In order to check which packages are installed, please check this link out. [install_ros_kinetic.sh](https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic.sh)
+{: .notice--info}
+
+If you prefer manual installation, please following the link below.
+
+- [Manual installation of ROS Kinetic](http://wiki.ros.org/kinetic/Installation/Ubuntu)
+
+## [Install ROS Packages](#install-ros-packages)
 Install dependent packages for the OpenManipulator.
 
 ```
-$ sudo apt-get install ros-kinetic-ros-controllers ros-kinetic-gazebo* ros-kinetic-moveit* ros-kinetic-dynamixel-sdk ros-kinetic-dynamixel-workbench-toolbox ros-kinetic-industrial-core
+$ sudo apt-get install ros-kinetic-ros-controllers ros-kinetic-gazebo* ros-kinetic-moveit* ros-kinetic-dynamixel-sdk ros-kinetic-industrial-core
 ```
 
 ```
 $ cd ~/catkin_ws/src/
+$ git clone https://github.com/ROBOTIS-GIT/dynamixel_workbench.git
+$ git clone https://github.com/ROBOTIS-GIT/dynamixel_workbench_msgs.git
 $ git clone https://github.com/ROBOTIS-GIT/robotis_manipulator.git
 $ git clone https://github.com/ROBOTIS-GIT/open_manipulator.git
 $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_msgs.git
@@ -167,9 +201,363 @@ If catkin_make command is completed without any errors, preparation for OpenMani
 
 ## [Run roscore](#run-roscore)
 
+**NOTE**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`-`Alt`-`T`.
+{: .notice--info}
+
+Run roscore.
+
+``` bash
+$ roscore
+```
+
+## [Usb Settings](#usb-settings)
+
+[PC] The following commands allow to use USB port
+
+``` bash
+$ rosrun turtlebot3_bringup create_udev_rules
+```
 
 
-## [Bringup a OpenManipulator](#bringup-a-openmanipulator)
+
+
+
+# [Bringup](#bringup)
+
+
+## [Run roscore](#run-roscore)
+
+Run roscore.
+
+``` bash
+$ roscore
+```
+
+
+## [Bringup a OpenManipulator Controller](#bringup-a-openmanipulator-controller)
+
+Launch an OpenManipulator controller to start basic manipulations.
+
+```
+$ roslaunch open_manipulator_controller open_manipulator_controller.launch
+```
+
+If the OpenManipulator controller bringup successfully, the terminal will represent below massages.
+
+```
+SUMMARY
+========
+
+PARAMETERS
+ * /open_manipulator_controller/baud_rate: 1000000
+ * /open_manipulator_controller/usb_port: /dev/ttyUSB0
+ * /open_manipulator_controller/using_platform: True
+ * /robot_name: open_manipulator
+ * /rosdistro: kinetic
+ * /rosversion: 1.12.14
+
+NODES
+  /
+    open_manipulator_controller (open_manipulator_controller/open_manipulator_controller)
+
+auto-starting new master
+process[master]: started with pid [614]
+ROS_MASTER_URI=http://localhost:11311
+
+setting /run_id to 389b63dc-f6ba-11e8-acbb-ac9e17829ad5
+process[rosout-1]: started with pid [627]
+started core service [/rosout]
+process[open_manipulator_controller-2]: started with pid [634]
+Joint Dynamixel ID : 11, Model Name : XM430-W350
+Joint Dynamixel ID : 12, Model Name : XM430-W350
+Joint Dynamixel ID : 13, Model Name : XM430-W350
+Joint Dynamixel ID : 14, Model Name : XM430-W350
+Gripper Dynamixel ID : 15, Model Name :XM430-W350
+[INFO] Successed to OpenManipulator initialization
+```
+
+Open another terminal, publish a topic massage for check the OpenManipulator setting.
+
+```
+robotis@spc:~$ rostopic pub /open_manipulator/option std_msgs/String "print_open_manipulator_setting"
+```
+
+**NOTE**: <Manipulator Description> will be printed on the terminal launch the open_manipulator_controller. It is shown that present state of the OpenManipulator. 
+{: .notice--info}
+
+```
+----------<Manipulator Description>----------
+<Degree of freedom>
+ 4.000
+<Size of Components>
+ 5.000
+
+<Configuration of world>
+ [Name]
+ -World Name : world
+ -Child Name : joint1
+ [Static Pose]
+ -Position : 
+(0.000, 0.000, 0.000)
+ -Orientation : 
+(1.000, 0.000, 0.000
+ 0.000, 1.000, 0.000
+ 0.000, 0.000, 1.000)
+ [Dynamic Pose]
+ -Linear Velocity : 
+(0.000, 0.000, 0.000)
+ -Linear acceleration : 
+(0.000, 0.000, 0.000)
+ -Angular Velocity : 
+(0.000, 0.000, 0.000)
+ -Angular acceleration : 
+(0.000, 0.000, 0.000)
+
+<Configuration of joint1>
+ [Component Type]
+  Active Joint
+ [Name]
+ -Parent Name : world
+ -Child Name 1 : joint2
+ [Actuator]
+ -Actuator Name : joint_dxl
+ -ID :  11
+ -Joint Axis : 
+(0.000, 0.000, 1.000)
+ -Coefficient :  1.000
+ -Limit : 
+    Maximum : 3.142, Minimum : -3.142
+ [Actuator Value]
+ -Value :  0.227
+ -Velocity :  0.000
+ -Acceleration :  0.000
+ -Effort :  0.000
+ [Constant]
+ -Relative Position from parent component : 
+(0.012, 0.000, 0.017)
+ -Relative Orientation from parent component : 
+(1.000, 0.000, 0.000
+ 0.000, 1.000, 0.000
+ 0.000, 0.000, 1.000)
+ -Mass :  0.000
+ -Inertia Tensor : 
+(1.000, 0.000, 0.000
+ 0.000, 1.000, 0.000
+ 0.000, 0.000, 1.000)
+ -Center of Mass : 
+(0.000, 0.000, 0.000)
+ [Variable]
+ -Position : 
+(0.012, 0.000, 0.017)
+ -Orientation : 
+(0.974, -0.225, 0.000
+ 0.225, 0.974, 0.000
+ 0.000, 0.000, 1.000)
+ -Linear Velocity : 
+(0.000, 0.000, 0.000)
+ -Linear acceleration : 
+(0.000, 0.000, 0.000)
+ -Angular Velocity : 
+(0.000, 0.000, 0.000)
+ -Angular acceleration : 
+(0.000, 0.000, 0.000)
+
+<Configuration of joint2>
+ [Component Type]
+  Active Joint
+ [Name]
+ -Parent Name : joint1
+ -Child Name 1 : joint3
+ [Actuator]
+ -Actuator Name : joint_dxl
+ -ID :  12
+ -Joint Axis : 
+(0.000, 1.000, 0.000)
+ -Coefficient :  1.000
+ -Limit : 
+    Maximum : 1.571, Minimum : -2.050
+ [Actuator Value]
+ -Value :  -0.985
+ -Velocity :  0.000
+ -Acceleration :  0.000
+ -Effort :  -29.590
+ [Constant]
+ -Relative Position from parent component : 
+(0.000, 0.000, 0.058)
+ -Relative Orientation from parent component : 
+(1.000, 0.000, 0.000
+ 0.000, 1.000, 0.000
+ 0.000, 0.000, 1.000)
+ -Mass :  0.000
+ -Inertia Tensor : 
+(1.000, 0.000, 0.000
+ 0.000, 1.000, 0.000
+ 0.000, 0.000, 1.000)
+ -Center of Mass : 
+(0.000, 0.000, 0.000)
+ [Variable]
+ -Position : 
+(0.012, 0.000, 0.075)
+ -Orientation : 
+(0.539, -0.225, -0.812
+ 0.124, 0.974, -0.188
+ 0.833, 0.000, 0.553)
+ -Linear Velocity : 
+(0.000, 0.000, 0.000)
+ -Linear acceleration : 
+(0.000, 0.000, 0.000)
+ -Angular Velocity : 
+(0.000, 0.000, 0.000)
+ -Angular acceleration : 
+(0.000, 0.000, 0.000)
+
+<Configuration of joint3>
+ [Component Type]
+  Active Joint
+ [Name]
+ -Parent Name : joint2
+ -Child Name 1 : joint4
+ [Actuator]
+ -Actuator Name : joint_dxl
+ -ID :  13
+ -Joint Axis : 
+(0.000, 1.000, 0.000)
+ -Coefficient :  1.000
+ -Limit : 
+    Maximum : 1.530, Minimum : -1.571
+ [Actuator Value]
+ -Value :  0.635
+ -Velocity :  0.000
+ -Acceleration :  0.000
+ -Effort :  -131.810
+ [Constant]
+ -Relative Position from parent component : 
+(0.024, 0.000, 0.128)
+ -Relative Orientation from parent component : 
+(1.000, 0.000, 0.000
+ 0.000, 1.000, 0.000
+ 0.000, 0.000, 1.000)
+ -Mass :  0.000
+ -Inertia Tensor : 
+(1.000, 0.000, 0.000
+ 0.000, 1.000, 0.000
+ 0.000, 0.000, 1.000)
+ -Center of Mass : 
+(0.000, 0.000, 0.000)
+ [Variable]
+ -Position : 
+(-0.079, -0.021, 0.166)
+ -Orientation : 
+(0.915, -0.225, -0.334
+ 0.211, 0.974, -0.077
+ 0.343, 0.000, 0.939)
+ -Linear Velocity : 
+(0.000, 0.000, 0.000)
+ -Linear acceleration : 
+(0.000, 0.000, 0.000)
+ -Angular Velocity : 
+(0.000, 0.000, 0.000)
+ -Angular acceleration : 
+(0.000, 0.000, 0.000)
+
+<Configuration of joint4>
+ [Component Type]
+  Active Joint
+ [Name]
+ -Parent Name : joint3
+ -Child Name 1 : tool
+ [Actuator]
+ -Actuator Name : joint_dxl
+ -ID :  14
+ -Joint Axis : 
+(0.000, 1.000, 0.000)
+ -Coefficient :  1.000
+ -Limit : 
+    Maximum : 2.000, Minimum : -1.800
+ [Actuator Value]
+ -Value :  0.457
+ -Velocity :  0.000
+ -Acceleration :  0.000
+ -Effort :  -40.350
+ [Constant]
+ -Relative Position from parent component : 
+(0.124, 0.000, 0.000)
+ -Relative Orientation from parent component : 
+(1.000, 0.000, 0.000
+ 0.000, 1.000, 0.000
+ 0.000, 0.000, 1.000)
+ -Mass :  0.000
+ -Inertia Tensor : 
+(1.000, 0.000, 0.000
+ 0.000, 1.000, 0.000
+ 0.000, 0.000, 1.000)
+ -Center of Mass : 
+(0.000, 0.000, 0.000)
+ [Variable]
+ -Position : 
+(0.035, 0.005, 0.208)
+ -Orientation : 
+(0.969, -0.225, 0.104
+ 0.224, 0.974, 0.024
+ -0.107, 0.000, 0.994)
+ -Linear Velocity : 
+(0.000, 0.000, 0.000)
+ -Linear acceleration : 
+(0.000, 0.000, 0.000)
+ -Angular Velocity : 
+(0.000, 0.000, 0.000)
+ -Angular acceleration : 
+(0.000, 0.000, 0.000)
+
+<Configuration of tool>
+ [Component Type]
+  Tool
+ [Name]
+ -Parent Name : joint4
+ [Actuator]
+ -Actuator Name : tool_dxl
+ -ID :  15
+ -Joint Axis : 
+(0.000, 0.000, 0.000)
+ -Coefficient :  -0.015
+ -Limit : 
+    Maximum : 0.010, Minimum : -0.010
+ [Actuator Value]
+ -Value :  -0.000
+ -Velocity :  0.000
+ -Acceleration :  0.000
+ -Effort :  0.000
+ [Constant]
+ -Relative Position from parent component : 
+(0.130, 0.000, 0.000)
+ -Relative Orientation from parent component : 
+(1.000, 0.000, 0.000
+ 0.000, 1.000, 0.000
+ 0.000, 0.000, 1.000)
+ -Mass :  0.000
+ -Inertia Tensor : 
+(1.000, 0.000, 0.000
+ 0.000, 1.000, 0.000
+ 0.000, 0.000, 1.000)
+ -Center of Mass : 
+(0.000, 0.000, 0.000)
+ [Variable]
+ -Position : 
+(0.160, 0.034, 0.194)
+ -Orientation : 
+(0.969, -0.225, 0.104
+ 0.224, 0.974, 0.024
+ -0.107, 0.000, 0.994)
+ -Linear Velocity : 
+(0.000, 0.000, 0.000)
+ -Linear acceleration : 
+(0.000, 0.000, 0.000)
+ -Angular Velocity : 
+(0.000, 0.000, 0.000)
+ -Angular acceleration : 
+(0.000, 0.000, 0.000)
+---------------------------------------------
+```
 
 
 

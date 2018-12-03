@@ -12889,15 +12889,26 @@ openmanipulator:
       url: /platform/openmanipulator/#3d-printed-parts
     - title: "Assembly Manual"
       url: /platform/openmanipulator/#assembly-manual
+  - title: "PC Setup"
+    url: /platform/openmanipulator/#pc-setup
+    children:
+    - title: "Install Ubuntu on PC"
+      url: /platform/openmanipulator/#install-ubuntu-on-pc
+    - title: "Install ROS on PC"
+      url: /platform/openmanipulator/#install-ros-on-pc
+    - title: "Install ROS Packages"
+      url: /platform/openmanipulator/#install-ros-packages
+    - title: "Run roscore"
+      url: /platform/openmanipulator/#run-roscore
+    - title: "Usb Settings"
+      url: /platform/openmanipulator/#usb-settings
   - title: "Bringup"
     url: /platform/openmanipulator/#bringup
     children:
-    - title: "ROS Packages setup"
-      url: /platform/openmanipulator/#ros-packages-setup
     - title: "Run roscore"
       url: /platform/openmanipulator/#run-roscore
-    - title: "Bringup a OpenManipulator"
-      url: /platform/openmanipulator/#bringup-a-openmanipulator
+    - title: "Bringup a OpenManipulator Controller"
+      url: /platform/openmanipulator/#bringup-a-openmanipulator-controller
     - title: "Load a OpenManipulator on Rviz"
       url: /platform/openmanipulator/#load-a-openmanipulator-on-rviz      
   - title: "Basic Manipulation"
