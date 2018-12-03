@@ -49,19 +49,19 @@ OpenManipulator is composed by [Dynamixel X series](http://emanual.robotis.com/d
 
 ## [Hardware Specification](#hardware-specification)
 
-| Items               | Unit    | RM-X52-TNM                              | RM-X52-TNL                              |
-|---------------------|---------|-----------------------------------------|-----------------------------------------|
-| **Actuator**        |         | Dynamixel XM430-W350-T                  | Dynamixel XL430-W250-T                  |
-| **Input Voltage**   | V       | 12                                      | 12                                      |
-| **DOF**             | -       | 5 (4 DOF + 1 DOF Gripper)               | 5 (4 DOF + 1 DOF Gripper)               |
-| **Payload**         | g       | 500                                     | 50                                      |
-| **Speed(Joint)**    | RPM     | 46                                      | 61                                      |
-| **Weight**          | kg (lb) | 0.70  (1.54)                            | 0.51  (1.12)                            |
-| **Reach**           | mm (in) | 380   (14.9)                            | 380   (14.9)                            |
-| **Gripper Stroke**  | mm (in) | 20~75 (0.79~2.95)                       | 20~75 (0.79~2.95)                       |
-| **Communication**   | -       | TTL (Level Multidrop BUS)               | TTL (Level Multidrop BUS)               |
-| **Software**        | -       | ROS, Dynamixel SDK, Arduino, Processing | ROS, Dynamixel SDK, Arduino, Processing |
-| **Main Controller** | -       | PC, OpenCR                              | PC, OpenCR                              |
+| Items               | Unit    | RM-X52-TNM                              |
+|---------------------|---------|-----------------------------------------|
+| **Actuator**        |         | Dynamixel XM430-W350-T                  |
+| **Input Voltage**   | V       | 12                                      |
+| **DOF**             | -       | 5 (4 DOF + 1 DOF Gripper)               |
+| **Payload**         | g       | 500                                     |
+| **Speed(Joint)**    | RPM     | 46                                      |
+| **Weight**          | kg (lb) | 0.70  (1.54)                            |
+| **Reach**           | mm (in) | 380   (14.9)                            |
+| **Gripper Stroke**  | mm (in) | 20~75 (0.79~2.95)                       |
+| **Communication**   | -       | TTL (Level Multidrop BUS)               |
+| **Software**        | -       | ROS, Dynamixel SDK, Arduino, Processing |
+| **Main Controller** | -       | PC, OpenCR                              |
 
 ## [Dimension](#dimension)
 
@@ -73,55 +73,54 @@ OpenManipulator is composed by [Dynamixel X series](http://emanual.robotis.com/d
 
 ## [Part Lists](#part-lists)
 
-|                   | Part Name              | RM-X52-TNM | RM-X52-TNL |
-|-------------------|------------------------|:----------:|:----------:|
-| **Chassis Parts** | LONG LINK FRAME        |     1      |     1      |
-| .                 | SHORT LINK FRAME       |     1      |     1      |
-| .                 | RAIL BRACKET(LEFT)     |     1      |     1      |
-| .                 | RAIL BRACKET(RIGHT)    |     1      |     1      |
-| .                 | PALM GRIPPER           |     2      |     2      |
-| .                 | LINK ROD               |     2      |     2      |
-| .                 | FLANGE BUSH            |     4      |     4      |
-| .                 | CRANK ARM              |     1      |     1      |
-| .                 | RAIL BLOCK             |     2      |     2      |
-| .                 | FR12_S101_K            |     1      |     1      |
-| .                 | FR12_S102_K            |     2      |     2      |
-| .                 | FR12_H101_K            |     2      |     2      |
-| .                 | FR12_H104_K            |     1      |     1      |
-| **Actuators**     | Dynamixel XM430-W350-T |     5      |     0      |
-| .                 | Dynamixel XL430-W250-T |     0      |     5      |
-| **Cables**        | CABLE_3P_100MM         |     1      |     1      |
-| .                 | CABLE_3P_180MM         |     3      |     3      |
-| .                 | CABLE_3P_240MM         |     1      |     1      |
-| **Tools**         | SCREW_DRIER_DEFAULT    |     1      |     1      |
-| .                 | Wrench_Hex_1_5X90      |     1      |     1      |
-| .                 | Wrench_Hex_2_0X100     |     1      |     1      |
-| .                 | Wrench_Hex_2_5X110     |     1      |     1      |
-| **Miscellaneous** | DC12_A01_SPACER_RING   |     24     |     24     |
-| .                 | WB_M2_5X12_NYLOK       |     8      |     8      |
-| .                 | NUT_M2_5(0.45P)        |     16     |     16     |
-| .                 | NUT_M3                 |     4      |     4      |
-| .                 | WB_M2X03               |     42     |     42     |
-| .                 | WB_M2X04               |     4      |     4      |
-| .                 | WB_M2_5X06             |     8      |     8      |
-| .                 | WB_M2_5X08             |     16     |     16     |
-| .                 | FHS_M2_5X14            |     12     |     12     |
-| .                 | WB_M3X10               |     4      |     4      |
-| .                 | WB_M2_5X04             |     8      |     8      |
-| .                 | HN12_I101              |     3      |     3      |
-| .                 | IGUS_JFM_1113_05       |     3      |     3      |
-| .                 | DC12_CAP_IDLE          |     3      |     3      |
-| .                 | GRIPPER_PAD            |     2      |     2      |
+|                   | Part Name              | RM-X52-TNM |
+|-------------------|------------------------|:----------:|
+| **Chassis Parts** | LONG LINK FRAME        |     1      |
+| .                 | SHORT LINK FRAME       |     1      |
+| .                 | RAIL BRACKET(LEFT)     |     1      |
+| .                 | RAIL BRACKET(RIGHT)    |     1      |
+| .                 | PALM GRIPPER           |     2      |
+| .                 | LINK ROD               |     2      |
+| .                 | FLANGE BUSH            |     4      |
+| .                 | CRANK ARM              |     1      |
+| .                 | RAIL BLOCK             |     2      |
+| .                 | FR12_S101_K            |     1      |
+| .                 | FR12_S102_K            |     2      |
+| .                 | FR12_H101_K            |     2      |
+| .                 | FR12_H104_K            |     1      |
+| **Actuators**     | Dynamixel XM430-W350-T |     5      |
+| **Cables**        | CABLE_3P_100MM         |     1      |
+| .                 | CABLE_3P_180MM         |     3      |
+| .                 | CABLE_3P_240MM         |     1      |
+| **Tools**         | SCREW_DRIER_DEFAULT    |     1      |
+| .                 | Wrench_Hex_1_5X90      |     1      |
+| .                 | Wrench_Hex_2_0X100     |     1      |
+| .                 | Wrench_Hex_2_5X110     |     1      |
+| **Miscellaneous** | DC12_A01_SPACER_RING   |     24     |
+| .                 | WB_M2_5X12_NYLOK       |     8      |
+| .                 | NUT_M2_5(0.45P)        |     16     |
+| .                 | NUT_M3                 |     4      |
+| .                 | WB_M2X03               |     42     |
+| .                 | WB_M2X04               |     4      |
+| .                 | WB_M2_5X06             |     8      |
+| .                 | WB_M2_5X08             |     16     |
+| .                 | FHS_M2_5X14            |     12     |
+| .                 | WB_M3X10               |     4      |
+| .                 | WB_M2_5X04             |     8      |
+| .                 | HN12_I101              |     3      |
+| .                 | IGUS_JFM_1113_05       |     3      |
+| .                 | DC12_CAP_IDLE          |     3      |
+| .                 | GRIPPER_PAD            |     2      |
 
 
 - Optional parts
 
-|            | Part Name  | RM-X52-TNM | RM-X52-TNL |
-|------------|------------|:----------:|:----------:|
-| **Powers** | SMPS 12V5A |     1      |     1      |
-| .          | A/C Cord   |     1      |     1      |
-| **Boards** | OpenCR     |     1      |     1      |
-| .          | U2D2       |     1      |     1      |
+|            | Part Name  | RM-X52-TNM |
+|------------|------------|:----------:|
+| **Powers** | SMPS 12V5A |     1      |
+| .          | A/C Cord   |     1      |
+| **Boards** | OpenCR     |     1      |
+| .          | U2D2       |     1      |
 
 
 <!-- - [Parts of OpenManipulator](https://docs.google.com/a/robotis.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit?usp=sharing) -->
@@ -223,7 +222,7 @@ OpenManipulator in Gazebo is controllered by ROS message. For example, use below
 
 # [Manipulation](#manipulation)
 
-To load an OpenManipulator with DYNAMIXEL X-series(XM or XL), you can set parameters for what you've configured for your own OpenManipulator
+To load an OpenManipulator with DYNAMIXEL X-series, you can set parameters for what you've configured for your own OpenManipulator
 
   ```
   <launch>
