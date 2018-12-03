@@ -14344,6 +14344,10 @@ rplusmotion2:
     url: /software/rplus2/motion/#introduction
     urlkr: /software/rplus2/motion/#개요
     children:
+    - title: "Software Install"
+      titlekr: "소프트웨어 설치"
+      url: /software/rplus2/motion/#software-install
+      urlkr: /software/rplus2/motion/#소프트웨어-설치
     - title: "Menu"
       titlekr: "메뉴설명"
       url: /software/rplus2/motion/#menu

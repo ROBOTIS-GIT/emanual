@@ -50,9 +50,10 @@ A robot operates according to the task code created by the user, and the RoboPlu
 3. If downloaded package is successfully opened, below installer will appear. Click on `Continue`.  
   ![](/assets/images/sw/rplus2/task/roboplus_task2_install_05.png)
 
-4. Click on `Choose Folder` to select a folder to extract package files. Please remember this folder to find installation file `R+Task2.0(v2.3.0 Mac).dmg` in the later part of installation.  
+4. Click on `Choose Folder` or `Change Install Location...` to select a folder to extract package files. Please remember this folder to find installation file `R+Task2.0(v2.3.0 Mac).dmg` in the later part of installation.  
   Click on `Choose` to confirm selection.  
-  ![](/assets/images/sw/rplus2/task/roboplus_task2_install_06.png)
+  ![](/assets/images/sw/rplus2/task/roboplus_task2_install_06.png)  
+  ![](/assets/images/sw/rplus2/task/roboplus_task2_install_06_2.png)
 
 5. Click on `Install` button start extracting files.  
   ![](/assets/images/sw/rplus2/task/roboplus_task2_install_07.png)
@@ -63,9 +64,11 @@ A robot operates according to the task code created by the user, and the RoboPlu
 7. Click on `Close` button.  
   ![](/assets/images/sw/rplus2/task/roboplus_task2_install_09.png)
 
-8. Go to the selected folder from above step 4 and double click to run the installation file `R+Task2.0(v2.3.0 Mac).dmg`
+8. Go to the selected folder from above step 4 and double click to run the installation file `R+Task2.0(v2.3.0 Mac).dmg`  
+  ![](/assets/images/sw/rplus2/task/roboplus_task2_install_dmg.png)
+
 9. Below window will be opened if the file is running successfully.  
-  Drag `R+TaskPatcher` icon on the right side and drop on the left side where `Applications` icon is located at.  
+  Drag `R+TaskPatcher` icon on the left side and drop it on the right side where `Applications` icon is located at.  
   ![](/assets/images/sw/rplus2/task/roboplus_task2_install_10.png)
 
 11. If software is successfully installed, it'll be appeared on Applications or Launcher screen.  

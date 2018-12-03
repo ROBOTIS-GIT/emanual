@@ -15,13 +15,13 @@ sidebar:
 
 ![](/assets/images/sw/rplus2/task/roboplus_task2_001.gif)
 
-1. 로보플러스 태스크 2.0 (R+ Task 2.0)
+- 로보플러스 태스크 2.0 (R+ Task 2.0)
 
   어떤 일을 처리하기 위한 행동들의 집합을 태스크(Task)라고 합니다. 로봇이 해야 할 태스크를 프로그래밍 한 소스를 로보플러스(RoboPlus)에서는 태스크 코드(Task Code)라고 합니다. 로봇은 사용자가 작성한 태스크 코드에 따라 동작하게 되며, 이러한 태스크 코드를 쉽게 작성할 수 있도록 도와주는 것이 로보플러스 태스크(RoboPlus Task) 프로그램입니다. 태스크 코드 파일은 PC(혹은 스마트폰)에서 .tskx라는 확장자를 가집니다. (기존 버전의 경우 .tsk확장자를 사용하며, R+ Task 2.0을 통해 .tskx로 변환할 수 있습니다.)
 
   ![](/assets/images/sw/rplus2/task/roboplus_task2_002.gif)
 
-2. 태스크 파일과 모션 파일은 어떤 관계인가요?
+- 태스크 파일과 모션 파일은 어떤 관계인가요?
 
   태스크 파일은 로봇이 어떻게 생각하고 움직일지 논리, 사고를 정의한 프로그램 코드이며, 모션 파일은 태스크에서 내린 판단에 따라 움직일 행동이 정의된 데이터입니다. 만약, 내가 만든 로봇이 단순한 동작만을 사용하는 로봇이라면 태스크 파일을 작성할 때 모션을 사용하지 않아도 되지만 정밀한 움직임이나 댄스와 같이 많은 움직임이 필요하다면 모션 파일을 사용하는 것이 효율적입니다.(태스크 코드에서 모션을 사용한다면, 반드시 모션 파일을 다운로드해야 합니다.)
 
@@ -48,8 +48,9 @@ sidebar:
 3. 패키지가 성공적으로 실행되면 `계속` 버튼을 눌러 진행하세요.  
   ![](/assets/images/sw/rplus2/task/roboplus_task2_install_05_kr.png)
 
-4. `폴더 선택...` 을 눌러 압축을 해제할 폴더의 위치를 선택한 뒤 `선택` 버튼으로 선택된 폴더를 결정합니다. 이 폴더의 위치에서 설치파일을 찾아야 하므로 폴더의 위치를 기억해주세요.  
-  ![](/assets/images/sw/rplus2/task/roboplus_task2_install_06_kr.png)
+4. `폴더 선택...` 또는 `설치 위치 변경...` 을 눌러 압축을 해제할 폴더의 위치를 선택한 뒤 `선택` 버튼으로 선택된 폴더를 결정합니다. 이 폴더의 위치에서 설치파일을 찾아야 하므로 폴더의 위치를 기억해주세요.  
+  ![](/assets/images/sw/rplus2/task/roboplus_task2_install_06_kr.png)  
+  ![](/assets/images/sw/rplus2/task/roboplus_task2_install_06_2_kr.png)
 
 5. `설치` 버튼을 누르면 선택된 폴더에 압축해제를 시작합니다.  
   ![](/assets/images/sw/rplus2/task/roboplus_task2_install_07_kr.png)
@@ -60,13 +61,14 @@ sidebar:
 7. 압축해제가 완료되면 `닫기` 버튼을 눌러 종료합니다.  
   ![](/assets/images/sw/rplus2/task/roboplus_task2_install_09_kr.png)
 
-8. 앞서 4단계에서 지정한 폴더에서 설치파일인 `R+Task2.0(v2.3.0 Mac).dmg` 를 찾아 더블클릭으로 실행합니다.
+8. 앞서 4단계에서 지정한 폴더에서 설치파일인 `R+Task2.0(v2.3.0 Mac).dmg` 를 찾아 더블클릭으로 실행합니다.  
+  ![](/assets/images/sw/rplus2/task/roboplus_task2_install_dmg.png)
 
 9. 프로그램이 정상적으로 실행되면 아래와 같은 창이 나타납니다.  
-  좌측의 `R+TaskPatcher` 아이콘을 우측의 `Applications` 아이콘쪽으로 끌어서 옮깁니다.  
+  좌측의 `R+TaskPatcher` 아이콘을 우측의 `응용 프로그램` 아이콘쪽으로 끌어서 옮깁니다.  
   ![](/assets/images/sw/rplus2/task/roboplus_task2_install_10.png)
 
-11. 소프트웨어의 설치가 정상적으로 완료되면 아래와 같이 어플리케이션 또는 런처에서 설치된 소프트웨어를 찾을 수 있습니다.  
+11. 소프트웨어의 설치가 정상적으로 완료되면 아래와 같이 응용 프로그램 또는 런처에서 설치된 소프트웨어를 찾을 수 있습니다.  
   ![](/assets/images/sw/rplus2/task/roboplus_task2_install_11.png)
 
 ## [메뉴설명](#메뉴설명)
