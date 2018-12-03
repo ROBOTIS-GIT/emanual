@@ -145,10 +145,9 @@ Below video might be help you.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/eJTIeDepmNo" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
-# [Software Setup](#software-setup)
+# [Bringup](#software-setup)
 
-## [ROS and Gazebo](#ros-and-gazebo)
-
+## [Ros Packages Setup](#ros-packages-setup)
 Install dependent packages for the OpenManipulator.
 
 ```
@@ -166,6 +165,15 @@ $ cd ~/catkin_ws && catkin_make
 
 If catkin_make command is completed without any errors, preparation for OpenManipulator is done.
 
+## [Run roscore](#run-roscore)
+
+
+
+## [Bringup a OpenManipulator](#bringup-a-openmanipulator)
+
+
+
+## [Load a OpenManipulator on Rviz](#load-a-openmanipulator-on-rviz)
 Load an OpenManipulator on RViz.
 
 ```
@@ -174,53 +182,33 @@ $ roslaunch open_manipulator_description open_manipulator_rviz.launch
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_rviz.png)
 
-# [Bringup](#bringup)
+# [Basic Manipulation](#basic-manipulation)
 
-**NOTE** : This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
-{: .notice--info}
+## [Topic Monitor](#topic-monitor)
 
-Load an OpenManipulator on Gazebo simulator and click `Play` button
 
+## [GUI Program](#gui-program)
+
+  You can use GUI program to manipulate OpenManipulator. This program shows the status of the manipulator and provides the ability to operate the manipulator.
   ```
-  $ roslaunch open_manipulator_gazebo open_manipulator_gazebo.launch
-  ```
-
-  ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_gazebo_1.png)
-
-Enter `rostopic list` to list up the activated topics.
-
-  ```
-  /clock
-  /gazebo/link_states
-  /gazebo/model_states
-  /gazebo/parameter_descriptions
-  /gazebo/parameter_updates
-  /gazebo/set_link_state
-  /gazebo/set_model_state
-  /gazebo_gui/parameter_descriptions
-  /gazebo_gui/parameter_updates
-  /open_manipulator/grip_joint_position/command
-  /open_manipulator/grip_joint_sub_position/command
-  /open_manipulator/joint1_position/command
-  /open_manipulator/joint2_position/command
-  /open_manipulator/joint3_position/command
-  /open_manipulator/joint4_position/command
-  /open_manipulator/joint_states
-  /open_manipulator/kinematics_pose
-  /rosout
-  /rosout_agg
+  $ rosrun open_manipulator_control_gui open_manipulator_control_gui
   ```
 
-OpenManipulator in Gazebo is controllered by ROS message. For example, use below command to publish joint position(in radian).
+![](/assets/images/platform/openmanipulator/OpenManipulator_GUI.png)
 
-  ```
-  $ rostopic pub /open_manipulator/joint2_position/command std_msgs/Float64 "data: -1.0" --once
-  ```
+## [Teleoperation](#teleoperation)
 
-  ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_gazebo_2.png)
+### [Keyboard](#keyboard)
 
 
-# [Manipulation](#manipulation)
+
+### [RC100](#rc100)
+
+
+### [XBOX 360 Joystick](#xbox-360-joystick)
+
+
+## [Moveit!](#moveit!)
 
 To load an OpenManipulator with DYNAMIXEL X-series, you can set parameters for what you've configured for your own OpenManipulator
 
@@ -269,50 +257,66 @@ Below services are help you to manipulate OpenManipulator
 
   ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_moveit_real_4.png)
 
-# [Mobile Manipulation](#mobile-manipulation)
 
-  **TIP**: You can get a more information about it in [Manipulation section of TurtleBot3](/docs/en/platform/turtlebot3/manipulation/#manipulation)
-  {: .notice--info}
+# [Camera](#camera)
 
-Install dependent packages
 
-  ```
-  $ cd ~/catkin_ws/src
-  $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_with_tb3.git
-  $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_with_tb3_msgs.git
-  $ git clone https://github.com/ROBOTIS-GIT/turtlebot3.git
-  $ cd ~/catkin_ws && catkin_make
-  ```
 
-Load a TurtleBot3 Waffle or Waffle Pi with OpenManipulator on RViz.
+# [Simulation (Gazebo)](#simulation)
 
-  **TIP**: TB3_MODEL =  `waffle`, `waffle_pi`
-  {: .notice--info}
+**NOTE** : This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+{: .notice--info}
+
+Load an OpenManipulator on Gazebo simulator and click `Play` button
 
   ```
-  $ export TURTLEBOT3_MODEL=${TB3_MODEL}
-  $ roslaunch open_manipulator_with_tb3_description open_manipulator_with_tb3_rviz.launch
+  $ roslaunch open_manipulator_gazebo open_manipulator_gazebo.launch
   ```
 
-![](/assets/images/platform/openmanipulator/TurtleBot3_with_Open_Manipulator.png)
+  ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_gazebo_1.png)
 
-# [Basic Operation](#basic-operation)
+Enter `rostopic list` to list up the activated topics.
 
-## [GUI Program](#gui-program)
-
-  You can use GUI program to manipulate OpenManipulator. This program shows the status of the manipulator and provides the ability to operate the manipulator.
   ```
-  $ rosrun open_manipulator_control_gui open_manipulator_control_gui
+  /clock
+  /gazebo/link_states
+  /gazebo/model_states
+  /gazebo/parameter_descriptions
+  /gazebo/parameter_updates
+  /gazebo/set_link_state
+  /gazebo/set_model_state
+  /gazebo_gui/parameter_descriptions
+  /gazebo_gui/parameter_updates
+  /open_manipulator/grip_joint_position/command
+  /open_manipulator/grip_joint_sub_position/command
+  /open_manipulator/joint1_position/command
+  /open_manipulator/joint2_position/command
+  /open_manipulator/joint3_position/command
+  /open_manipulator/joint4_position/command
+  /open_manipulator/joint_states
+  /open_manipulator/kinematics_pose
+  /rosout
+  /rosout_agg
   ```
 
-![](/assets/images/platform/openmanipulator/OpenManipulator_GUI.png)
+OpenManipulator in Gazebo is controllered by ROS message. For example, use below command to publish joint position(in radian).
+
+  ```
+  $ rostopic pub /open_manipulator/joint2_position/command std_msgs/Float64 "data: -1.0" --once
+  ```
+
+  ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_gazebo_2.png)
 
 
-# [Embedded Board Setup](#embedded-board-setup)
+# [How to Control on OpenCR](#how-to-contol-on-opencr)
 
 OpenManipulator is compatible with **OpenCR**. We offer API to easily control manipulator.
 This API supports Dynamixel, Dynamixel X including protocol 1.0 and 2.0. Furthermore, this code can be used Friends of OpenManipulator.
 User can make thier code in **Arduino IDE** and simulate or control using **Processing** GUI.
+## [Setup](#setup)
+
+--hardware setup
+
 
 ## [Arduino IDE](#arduino-ide)
 
@@ -342,6 +346,45 @@ Open processing source code file (`OpenCR`>`arduino`>`opencr_arduino`>`opencr`>`
 {: .notice--info}
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_chain_processing_2.png)
+
+
+# [Tool Gripper Modification](#tool-gripper-modification)
+
+## [Vacuum Gripper](#vaccum-gripper)
+
+
+
+
+## [Pen Gripper](#pen-gripper)
+
+
+
+# [Mobile Manipulation](#mobile-manipulation)
+
+  **TIP**: You can get a more information about it in [Manipulation section of TurtleBot3](/docs/en/platform/turtlebot3/manipulation/#manipulation)
+  {: .notice--info}
+
+Install dependent packages
+
+  ```
+  $ cd ~/catkin_ws/src
+  $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_with_tb3.git
+  $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_with_tb3_msgs.git
+  $ git clone https://github.com/ROBOTIS-GIT/turtlebot3.git
+  $ cd ~/catkin_ws && catkin_make
+  ```
+
+Load a TurtleBot3 Waffle or Waffle Pi with OpenManipulator on RViz.
+
+  **TIP**: TB3_MODEL =  `waffle`, `waffle_pi`
+  {: .notice--info}
+
+  ```
+  $ export TURTLEBOT3_MODEL=${TB3_MODEL}
+  $ roslaunch open_manipulator_with_tb3_description open_manipulator_with_tb3_rviz.launch
+  ```
+
+![](/assets/images/platform/openmanipulator/TurtleBot3_with_Open_Manipulator.png)
 
 # [Friends](#friends)
 
