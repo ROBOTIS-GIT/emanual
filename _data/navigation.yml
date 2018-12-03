@@ -14116,9 +14116,13 @@ rplustask2:
     url: /software/rplus2/task/#getting-started
     urlkr: /software/rplus2/task/#시작하기
     children:
-    - title: "Manual Instructions"
+    - title: "Software Install"
+      titlekr: "소프트웨어 설치"
+      url: /software/rplus2/task/#software-install
+      urlkr: /software/rplus2/task/#소프트웨어-설치
+    - title: "Menu Descriptions"
       titlekr: "메뉴설명"
-      url: /software/rplus2/task/#manual-instructions
+      url: /software/rplus2/task/#menu-descriptions
       urlkr: /software/rplus2/task/#메뉴설명
     - title: "Resources for Task"
       titlekr: "태스크 코드에서 활용 가능한 자원"
@@ -14340,6 +14344,10 @@ rplusmotion2:
     url: /software/rplus2/motion/#introduction
     urlkr: /software/rplus2/motion/#개요
     children:
+    - title: "Software Install"
+      titlekr: "소프트웨어 설치"
+      url: /software/rplus2/motion/#software-install
+      urlkr: /software/rplus2/motion/#소프트웨어-설치
     - title: "Menu"
       titlekr: "메뉴설명"
       url: /software/rplus2/motion/#menu
