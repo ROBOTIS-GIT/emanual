@@ -12917,16 +12917,11 @@ openmanipulator:
       - title: "XBOX 360 Joystick"
         url: /platform/openmanipulator/#xbox-360-joystick
     - title: "Moveit!"
-      url: /platform/openmanipulator/#moveit!
+      url: /platform/openmanipulator/#moveit
   - title: "Camera Application"
     url: /platform/openmanipulator/#camera-application    
   - title: "Gazebo Simulation"
     url: /platform/openmanipulator/#gazebo-simulation
-  - title: "Basic Operation"
-    url: /platform/openmanipulator/#basic-operation
-    children:
-    - title: "GUI Program"
-      url: /platform/openmanipulator/#gui-program
   - title: "How to Control on OpenCR"
     url: /platform/openmanipulator/#how-to-control-opencr
     children:

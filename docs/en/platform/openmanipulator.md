@@ -208,7 +208,7 @@ $ roslaunch open_manipulator_description open_manipulator_rviz.launch
 ### [XBOX 360 Joystick](#xbox-360-joystick)
 
 
-## [Moveit!](#moveit!)
+## [Moveit!](#moveit)
 
 To load an OpenManipulator with DYNAMIXEL X-series, you can set parameters for what you've configured for your own OpenManipulator
 
@@ -258,11 +258,11 @@ Below services are help you to manipulate OpenManipulator
   ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_moveit_real_4.png)
 
 
-# [Camera](#camera)
+# [Camera Application](#camera-application)
 
 
 
-# [Simulation (Gazebo)](#simulation)
+# [Gazebo Simulation](#gazebo-simulation)
 
 **NOTE** : This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 {: .notice--info}
