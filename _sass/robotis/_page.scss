@@ -4,50 +4,50 @@ html {
 
 #main {
   margin: 0;
-  
+
   @include breakpoint($max-width) {
     max-width: $max-width;
   }
 }
 
 @media screen and (max-width: $nominal-width) {
-  
+
   .community_link {
     display: none;
   }
-  
+
   .community_link_medium {
     display: block;
   }
-  
+
   .dropdown .dropbtn {
     padding: 14px 8px;
   }
-  
+
   @media screen and (max-width: $mobile-landscape) {
-    
+
     #main {
       padding: 0px;
       width: auto;
       font-size: 14px;
     }
-    
+
     .community_link_medium {
       margin-right: 50px;
     }
-    
+
     .site-title {
       float: none;
     }
-    
+
     .search_button {
       display: block;
     }
-    
+
     .masthead__menu{
       text-align: center;
     }
-    
+
     #sidebar__left {
       float: none;
       width: 100%;
@@ -59,77 +59,77 @@ html {
       background-color: #ECECEC;
       z-index: 9;
     }
-    
+
     .nav__items {
       margin-top: 0;
       background-color: $top-bgcolor;
     }
-    
+
     .nav__list {
       height: 100vh;
       padding-bottom: 5em;
     }
-    
+
     .tocLevel1 {
       color: $top-textcolor;
     }
-    
+
     .tocLevel2 {
       color: $middle-textcolor;
       max-width: 70%;
     }
-    
+
     .nav__items>li>a, .nav__items>li>label {
       color: $top-textcolor;
       border: 0;
       border-top: 1px solid #323232;
     }
-    
+
     .nav__items ul label:hover,
     .nav__items ul a:hover {
       background-color: $mobile-hovercolor;
     }
-    
+
     .nav__items li ul li {
       padding-right: 0;
       border-right: 0;
     }
-    
+
     .nav__items li ul li ul li {
       padding-right: 0;
     }
-    
+
     .nav__items>li>ul>li a, .nav__items>li>ul>li label {
       background-color: $mobile-middle-bgcolor;
       color: $middle-textcolor;
       max-width: 100%;
     }
-    
+
     .nav__items>li>ul>li>ul>li a {
       background-color: $mobile-bottom-bgcolor;
       color: $bottom-textcolor;
     }
-    
+
     .nav__items label:hover, .nav__items a:hover {
       background-color: $mobile-hovercolor;
     }
-        
+
     .has-children input[type=checkbox]:checked+label::after {
       left: 80%;
     }
-    
+
     .has-children label::after {
       left: 80%;
     }
-    
+
     .has-grandchildren input[type=checkbox]:checked+label::after {
       left: 75%;
     }
-    
+
     .has-grandchildren label::after {
       left: 75%;
     }
-    
+
     #archive {
       float: none;
       max-width: 100%;
@@ -138,11 +138,11 @@ html {
       padding-bottom: 2em;
       margin-top: 0;
     }
-    
+
     #container {
       display: none;
     }
-    
+
     // #site_search {
     //   max-width: 100%;
     //   display: none;
@@ -153,11 +153,11 @@ html {
       display: none;
       height: 40px;
     }
-    
+
     .search-result {
       font-size: 0.8em;
     }
-    
+
     #search_term {
       height: 40px;
       width: 100vw;
@@ -165,13 +165,13 @@ html {
       -webkit-appearance: none;
       border-radius: 0;
     }
-    
+
     #search_button {
       height: 40px;
       width: 55px;
       display: none;
     }
-    
+
     .gsc-results-wrapper-overlay {
       padding: 1em !important;
       height: 90% !important;
@@ -179,27 +179,27 @@ html {
       top: 64px !important;
       left: 5% !important;
     }
-    
+
     .gsc-search-button-v2 {
       height: 35px !important;
       width: 50px !important;
       padding: 0px !important;
     }
-    
-    .gsc-input-box {      
+
+    .gsc-input-box {
       table {
         height: 35px;
       }
     }
-    
+
     .menu-icon {
       display: inline-block;;
     }
-    
+
     .archive_footer {
       margin-left: 0;
     }
-    
+
     #nav_button {
       display: block;
       position: fixed;
@@ -214,15 +214,15 @@ html {
       z-index: 100;
       opacity: 0.8;
     }
-    
+
     #backtotop {
       top: 13.2rem;
     }
-    
+
     .extend_sidebar {
       margin-left: 100%;
     }
-    
+
     .popup_window {
       max-width: 100%;
       padding: 1em 2em;
@@ -233,7 +233,7 @@ html {
         font-size: 0.7em;
       }
     }
-    
+
     h1, h2, h3, h4, h5, h6 {
       margin: 1.5em 0 0.5em;
       line-height: 1;
@@ -245,16 +245,16 @@ html {
         text-decoration: none;
       }
     }
-    
+
     @mixin mobile_indentation {
       padding-left: 1em;
       word-wrap: break-word;
-      
+
       li > ul, ol, p, div {
         margin: 0;
       }
     }
-    
+
     .class-h1 {
       counter-reset: h2;
       font-size: $type-size-4;
@@ -264,7 +264,7 @@ html {
         counter-increment: h1;
         content: counter(h1) ". ";
       }
-      
+
       + div {
         iframe {
           margin-left: 1em;
@@ -281,7 +281,7 @@ html {
           margin: 0.5em 0.5em 0 1em;
           @include mobile_indentation;
           blockquote {
-            margin: 0.5em 0;
+            margin: 0 0 1em 0;
           }
         }
         blockquote {
@@ -324,7 +324,7 @@ html {
           margin: 0.5em 0.5em 0 1.5em;
           @include mobile_indentation;
           blockquote {
-            margin: 0.5em 0;
+            margin: 0 0 1em 0;
           }
         }
         blockquote {
@@ -367,7 +367,7 @@ html {
           margin: 0.5em 0.5em 0 2.3em;
           @include mobile_indentation;
           blockquote {
-            margin: 0.5em 0;
+            margin: 0 0 1em 0;
           }
         }
         blockquote {
@@ -409,7 +409,7 @@ html {
           margin: 0.5em 0.5em 0 3.5em;
           @include mobile_indentation;
           blockquote {
-            margin: 0.5em 0;
+            margin: 0 0 1em 0;
           }
         }
         blockquote {
@@ -429,7 +429,7 @@ html {
       margin-left: 3.5em;
       font-size: $type-size-6;
       font-style: italic;
-      
+
       + div {
         iframe {
           margin-left: 4em;
@@ -446,7 +446,7 @@ html {
           margin: 0.5em 0.5em 0 3.5em;
           @include mobile_indentation;
           blockquote {
-            margin: 0.5em 0;
+            margin: 0 0 1em 0;
           }
         }
         blockquote {
@@ -465,7 +465,7 @@ html {
     .class-h6 {
       margin-left: 5.2em;
       font-size: $type-size-6;
-      
+
       + div {
         iframe {
           margin-left: 6em;
@@ -482,7 +482,7 @@ html {
           margin: 0.5em 0.5em 0 6em;
           @include mobile_indentation;
           blockquote {
-            margin: 0.5em 0;
+            margin: 0 0 1em 0;
           }
         }
         blockquote {
@@ -497,37 +497,37 @@ html {
         }
       }
     }
-    
+
     @media screen and (max-width: $mobile-portrait) {
-      
+
       #main {
         font-size: 60%;
       }
-      
+
       body {
         margin-bottom: 50px;
       }
-      
+
       table {
         font-size: 0.7em;
       }
-      
+
       .community_link_medium {
         display: none;
       }
-      
+
       .community_link_mobile {
         display: flex;
       }
-      
+
       .page__footer {
         font-size: 12px;
       }
-      
+
       .search-result {
         font-size: 0.7em;
       }
-      
+
       #search_term {
         height: 40px;
         width: 100vw;

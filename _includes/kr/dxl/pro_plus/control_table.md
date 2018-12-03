@@ -3,6 +3,9 @@
 Control Table은 장치 내부에 존재하는 값으로서 장치의 현재 상태와 구동에 관한 Data로 구성되어 있습니다.  
 사용자는 Instruction Packet을 통해 Control Table의 Data를 변경하는 방식으로 장치를 제어할 수 있습니다.
 
+**주의** : PRO+ 시리즈는 PRO와 다른 별개의 컨트롤 테이블을 사용합니다. PRO를 PRO+로 교체하는 경우 주의하시기 바랍니다.
+{: .notice--warning}
+
 ## [컨트롤 테이블, 데이터, 주소](#컨트롤-테이블-데이터-주소)
 Control Table은 장치의 상태와 제어를 위한 다수의 Data 필드로 구성된 집합체입니다.  
 사용자는 READ Instruction Packet을 통해 Control Table의 특정 Data를 읽어서 장치의 상태를 파악할 수 있습니다.  
