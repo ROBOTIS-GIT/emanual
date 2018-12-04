@@ -227,9 +227,9 @@ $ rosrun open_manipulator_controller create_udev_rules
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
-# [Bringup](#bringup)
+# [Controller](#controller)
 
-OpenManipulator 
+Open Manipulator Controller is provided for basic manipulation of OpenManipulator. 
 
 **NOTE**: This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 {: .notice--info}
@@ -242,9 +242,9 @@ Run roscore.
 $ roscore
 ```
 
-## [OpenManipulator Controller](#openmanipulator-controller)
+## [Launch Controller](#launch-controller)
 
-Launch OpenManipulator controller to start [Basic Manipulation](/docs/en/platform/openmanipulator/#basic-manipulation).
+Launch Open Manipulator Controller to start [Basic Manipulation](/docs/en/platform/openmanipulator/#basic-manipulation).
 
 ```
 $ roslaunch open_manipulator_controller open_manipulator_controller.launch
@@ -773,7 +773,7 @@ Below services are help you to manipulate OpenManipulator
 **NOTE** : This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 {: .notice--info}
 
-## [Launch OpenManipulator Controller for gazebo](#launch-openmanipulator-controller-for-gazebo)
+## [Launch Controller for gazebo](#launch-controller-for-gazebo)
 
 Launch an OpenManipulator controller for gazebo simulation.
 
@@ -817,7 +817,7 @@ Gripper Dynamixel ID : 15, Model Name :XM430-W350
 {: .notice--info}
 
 
-## [Launch OpenManipulator gazebo](#launch-openmanipulator-gazebo)
+## [Launch gazebo](#launch-gazebo)
 
 Load an OpenManipulator on Gazebo simulator and click Play button `▶`.
 

@@ -12902,13 +12902,13 @@ openmanipulator:
       url: /platform/openmanipulator/#run-roscore
     - title: "Usb Settings"
       url: /platform/openmanipulator/#usb-settings
-  - title: "Bringup"
-    url: /platform/openmanipulator/#bringup
+  - title: "Controller"
+    url: /platform/openmanipulator/#controller
     children:
     - title: "Run roscore"
       url: /platform/openmanipulator/#run-roscore
-    - title: "OpenManipulator Controller"
-      url: /platform/openmanipulator/#openmanipulator-controller
+    - title: "Launch Controller"
+      url: /platform/openmanipulator/#launch-controller
     - title: "Check Setting"
       url: /platform/openmanipulator/#check-setting
       children:
@@ -12944,10 +12944,10 @@ openmanipulator:
   - title: "Gazebo Simulation"
     url: /platform/openmanipulator/#gazebo-simulation
     children:
-    - title: "Launch OpenManipulator Controller for gazebo"
-      url: /platform/openmanipulator/#launch-openmanipulator-controller-for-gazebo
-    - title: "Launch OpenManipulator gazebo"
-      url: /platform/openmanipulator/#launch-openmanipulator-gazebo
+    - title: "Launch Controller for gazebo"
+      url: /platform/openmanipulator/#launch-controller-for-gazebo
+    - title: "Launch gazebo"
+      url: /platform/openmanipulator/#launch-gazebo
   - title: "How to Control on OpenCR"
     url: /platform/openmanipulator/#how-to-control-opencr
     children:
