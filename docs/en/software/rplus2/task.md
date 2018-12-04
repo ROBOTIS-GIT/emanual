@@ -32,11 +32,13 @@ A robot operates according to the task code created by the user, and the RoboPlu
 ## [Software Install](#software-install)
 
 **WARNING** : R+Task 2.0 software installation procedure for Mac OS X has been updated since v2.3.0.  
-[`Mac OS X R+Task 2.0 Download`](http://www.robotis.com/service/download.php?no=2)
+[`Mac OS X R+Task 2.0 Download`]{: .blank}
 {: .notice--warning}
 
+[`Mac OS X R+Task 2.0 Download`]: http://www.robotis.com/service/download.php?no=2
+
 1. Download R+Task 2.0 from below download link.  
-  [`Mac OS X R+Task 2.0 Download`](http://www.robotis.com/service/download.php?no=2)
+  [`Mac OS X R+Task 2.0 Download`]{: .blank}
 
 2. Double click to open the downloaded package file `R+Task2.0(v2.3.0 Mac).pkg`.  
   ![](/assets/images/sw/rplus2/task/roboplus_task2_install_01.png)

@@ -28,11 +28,13 @@ sidebar:
 ## [소프트웨어 설치](#소프트웨어-설치)
 
 **주의** : 로보플러스 모션 2.0 소프트웨어의 Mac OS X 설치방법이 v2.4.12부터 변경되었습니다.  
-[`Mac OS X 로보플러스 모션 2.0 다운로드`](http://www.robotis.com/service/download.php?no=7)
+[`Mac OS X 로보플러스 모션 2.0 다운로드`]{: .blank}
 {: .notice--warning}
 
+[`Mac OS X 로보플러스 모션 2.0 다운로드`]: http://www.robotis.com/service/download.php?no=7
+
 1. 로보플러스 모션 2.0을 다운로드 받으세요.  
-  [`Mac OS X 로보플러스 모션 2.0 다운로드`](http://www.robotis.com/service/download.php?no=7)
+  [`Mac OS X 로보플러스 모션 2.0 다운로드`]{: .blank}
 
 2. 다운로드받은 패키지 `R+Motion2.0(v2.4.12 Mac).pkg` 를 더블클릭해서 실행하세요.  
   ![](/assets/images/sw/rplus2/motion/roboplus_motion2_install_01.png)
