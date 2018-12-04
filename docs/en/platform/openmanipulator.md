@@ -237,7 +237,7 @@ Launch an OpenManipulator controller to start basic manipulations.
 $ roslaunch open_manipulator_controller open_manipulator_controller.launch
 ```
 
-If the OpenManipulator controller bringup successfully, the terminal will represent below massages.
+If the OpenManipulator controller bringup successfully, the terminal will represent below messages.
 
 ```
 SUMMARY
@@ -271,7 +271,7 @@ Gripper Dynamixel ID : 15, Model Name :XM430-W350
 [INFO] Successed to OpenManipulator initialization
 ```
 
-Open another terminal, publish a topic massage for check the OpenManipulator setting.
+Open another terminal, publish a topic message for check the OpenManipulator setting.
 
 ```
 robotis@spc:~$ rostopic pub /open_manipulator/option std_msgs/String "print_open_manipulator_setting"
@@ -565,13 +565,17 @@ $ roslaunch open_manipulator_description open_manipulator_rviz.launch
 
 # [Basic Manipulation](#basic-manipulation)
 
-## [Topic Monitor](#topic-monitor)
+## [Message List](#message-list)
+
+### [Topic](#topic)
+
+#### [Topic Monitor](#topic-monitor)
 
 {% capture notice_01 %}
 **NOTE**: 
 - This instructions were tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 - This instructions are supposed to be running on PC. Please run the instructions below on your **PC**.
-- Make sure to run the [Bringup](/docs/en/platform/openmanipulator/#bringup) instructions before running the instructions below.
+- Make sure to run the [Bringup a OpenManipulator controller](/docs/en/platform/openmanipulator/#bringup-a-openmanipulator-controller) instructions before running the instructions below.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
@@ -581,40 +585,63 @@ In order to check the topics of OpenManipulator Controller, we will use [rqt][rq
 ``` bash
 $ rqt
 ```
-![](/assets/images/platform/OpenManipulator/rqt_om.png)
+![](/assets/images/platform/openmanipulator/rqt_om.png)
 
 **TIP**: If rqt is not displayed, select the `plugin` -> `Topics` -> `Topic Monitor`.
 {: .notice--info}
 
 When rqt is first run, the topic values are not monitored. To monitor the topic, click the checkbox next to each topic.
 
-![](/assets/images/platform/OpenManipulator/rqt_1.png)
+![](/assets/images/platform/openmanipulator/rqt_1.png)
 
 If you want to see more detail topic message, click the `▶` button next to each checkbox.
 
-![](/assets/images/platform/OpenManipulator/rqt_2.png)
+![](/assets/images/platform/openmanipulator/rqt_2.png)
 
 
-- `/joint_states` indicates a message relating to the battery condition, such as the current battery voltage and remaining capacity.
+[rqt]: http://wiki.ros.org/rqt
 
-![](/assets/images/platform/OpenManipulator/rqt_joint_states.png)
+#### [Published Topic List](#published-topic-list)
 
-- `/kinematics_pose` indicates a message the status of the components connected to the TurtleBot3, such as a MPU9250, a DYNAMIXEL X, a HLS-LFCD-LDS, a battery and a OpenCR.
+{% capture notice_01 %}
+**Published Topic List** :
+The topic list is published by open_manipulator_controller.
+- `/open_manipulator/joint_states`
+- `/open_manipulator/kinematics_pose`
+- `/open_manipulator/states`
+{% endcapture %}
+<div class="notice--info">{{ notice_01 | markdownify }}</div>
 
-![](/assets/images/platform/OpenManipulator/rqt_kinematic_pose.png)
+- `/open_manipulator/joint_states` indicates a message that the states of the joints in OpenManipulator. **"name"** of this message indicates joint component names OpenManipulator have.  **"effort"** indicates currents of the joint Dynamixels. **"position"** and **"velocity"** indicates the angle and angular velocity of each joints.
 
-- `/option` indicates a message the odometry of the TurtleBot3. This topic has orientation and position by the encoder data.  
+![](/assets/images/platform/openmanipulator/rqt_joint_states.png)
 
-![](/assets/images/platform/OpenManipulator/rqt_option.png)
+- `/open_manipulator/kinematics_pose` indicates a message that the pose(position and orientation) on world coordinate(cartesian) of OpenManipulator gripper. **"position"** indicates x, y, and z value of the center of the tool gripper. **"Orientation"** indicates the direction of the tool gripper as quaternion.
 
-- `/states` indicates a message the encoder values, battery and torque.
+![](/assets/images/platform/openmanipulator/rqt_kinematic_pose.png)
 
-![](/assets/images/platform/OpenManipulator/rqt_states.png)
+- `/open_manipulator/states` indicates a message .
+
+![](/assets/images/platform/openmanipulator/rqt_states.png)
+
+#### [Subscribed Topic List](#published-topic-list)
+
+{% capture notice_01 %}
+**Subscribed Topic List**: 
+The topic list is subscribed by open_manipulator_controller.
+- `/open_manipulator/option`
+{% endcapture %}
+
+- `/open_manipulator/option` indicates a message .  
+
+![](/assets/images/platform/openmanipulator/rqt_option.png)
+
 
 In addition, you can monitor topics through rqt whenever you have a topic added.
 
-[bringup]: /docs/en/platform/openmanipulator/#bringup
-[rqt]: http://wiki.ros.org/rqt
+
+### [Service](#service)
+
 
 
 

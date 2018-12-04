@@ -12914,8 +12914,13 @@ openmanipulator:
   - title: "Basic Manipulation"
     url: /platform/openmanipulator/#basic-manipulation
     children:
-    - title: "Topic Monitor"
-      url: /platform/openmanipulator/#topic-monitor
+    - title: "Message List"
+      url: /platform/openmanipulator/#message-list
+      children:
+      - title: "Topic"
+        url: /platform/openmanipulator/#topic
+      - title: "Service"
+        url: /platform/openmanipulator/#service
     - title: "GUI Program"
       url: /platform/openmanipulator/#gui-program
     - title: "Teleoperation"
