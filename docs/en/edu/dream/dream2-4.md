@@ -78,7 +78,7 @@ This is included in ROBOTIS DREAM II Level 1.
 [ex_07]: http://support.robotis.com/en/baggage_files/dream/dream2_l4_flaggame_en.tskx
 [ex_08]: http://support.robotis.com/en/baggage_files/dream/dream2_l4_crane_en.tskx
 [ex_08-1]: http://support.robotis.com/en/baggage_files/dream/dream2_l4_crane_en(rc).tskx
-[ex_09]: http://support.robotis.com/en/baggage_files/dream/dream2_l4_drunkenbasket_en.tskx
+[ex_09]: http://www.robotis.com/service/download.php?no=1287
 [ex_10]: http://support.robotis.com/en/baggage_files/dream/dream2_l4_viking_en.tskx
 [ex_11]: http://support.robotis.com/en/baggage_files/dream/dream2_l4_whac-a-mole_en.tskx
 [ex_12]: http://support.robotis.com/en/baggage_files/dream/dream2_l4_goblin_en.tskx

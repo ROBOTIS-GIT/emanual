@@ -100,16 +100,16 @@ sidebar:
 [자동꺼짐타이머 바로가기]: /docs/kr/software/rplus1/task/programming_02/#자동꺼짐-타이머
 [예제 태스크 코드의 다운로드 방법]: /docs/kr/faq/download_task_code/#cm-150
 [작동하기]: #작동하기
-[DREAM_L2_Total_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l2_total_kr.tskx
-[DREAM_L2_Elephant_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l2_elephant_kr.tskx
-[DREAM_L2_Fireflylight_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l2_fireflylight_kr.tskx
-[DREAM_L2_Avoider_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l2_avoider_kr.tskx
-[DREAM_L2_Seal_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l2_seal_kr.tskx
-[DREAM_L2_Abeetle_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l2_abeetle_kr.tskx
-[DREAM_L2_Raccoon_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l2_raccoon_kr.tskx
-[DREAM_L2_Scorpion_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l2_scorpion_kr.tskx
-[DREAM_L2_Puppy_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l2_puppy_kr.tskx
-[DREAM_L2_Squirrel_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l2_squirrel_kr.tskx
-[DREAM_L2_Buffalo_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l2_buffalo_kr.tskx
-[DREAM_L2_Crocodile_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l2_crocodile_kr.tskx
-[DREAM_L2_Distancesensor_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l2_distancesensor_kr.tskx
+[DREAM_L2_Total_KR.tskx]: http://www.robotis.com/service/download.php?no=915
+[DREAM_L2_Elephant_KR.tskx]: http://www.robotis.com/service/download.php?no=908
+[DREAM_L2_Fireflylight_KR.tskx]: http://www.robotis.com/service/download.php?no=909
+[DREAM_L2_Avoider_KR.tskx]: http://www.robotis.com/service/download.php?no=904
+[DREAM_L2_Seal_KR.tskx]: http://www.robotis.com/service/download.php?no=913
+[DREAM_L2_Abeetle_KR.tskx]: http://www.robotis.com/service/download.php?no=903
+[DREAM_L2_Raccoon_KR.tskx]: http://www.robotis.com/service/download.php?no=911
+[DREAM_L2_Scorpion_KR.tskx]: http://www.robotis.com/service/download.php?no=912
+[DREAM_L2_Puppy_KR.tskx]: http://www.robotis.com/service/download.php?no=910
+[DREAM_L2_Squirrel_KR.tskx]: http://www.robotis.com/service/download.php?no=914
+[DREAM_L2_Buffalo_KR.tskx]: http://www.robotis.com/service/download.php?no=905
+[DREAM_L2_Crocodile_KR.tskx]: http://www.robotis.com/service/download.php?no=906
+[DREAM_L2_Distancesensor_KR.tskx]: http://www.robotis.com/service/download.php?no=907

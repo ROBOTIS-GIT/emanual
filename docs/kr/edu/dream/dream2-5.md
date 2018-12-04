@@ -60,15 +60,15 @@ sidebar:
 
 [BT-410]: /docs/kr/parts/communication/bt-410/
 [예제 태스크 코드의 다운로드 방법]: /docs/kr/faq/download_task_code/#cm-150
-[DREAM_L5_Tank_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l5_tank_kr.tskx
-[DREAM_L5_RobotKnight_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l5_robotknight_kr.tskx
-[DREAM_L5_WarRobot_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l3_fourwheeled_kr.tskx
-[DREAM_L5_SoccerRobot_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l5_soccerrobot_kr.tskx
-[DREAM_L5_Excavator_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l5_excavator_kr.tskx
-[DREAM_L5_LadderTruck_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l5_laddertruck_kr.tskx
-[DREAM_L5_ForkLift_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l5_forklift_kr.tskx
-[DREAM_L5_BoxingRobot_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l5_boxingrobot_kr.tskx
-[DREAM_L5_Bulldozer_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l5_bulldozer_kr.tskx
-[DREAM_L5_DribbleRobot_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l5_dribblerobot_kr.tskx
-[DREAM_L5_Explorer_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l5_explorer_kr.tskx
-[DREAM_L5_TransportRobot_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l5_transportrobot_kr.tskx
+[DREAM_L5_Tank_KR.tskx]: http://www.robotis.com/service/download.php?no=953
+[DREAM_L5_RobotKnight_KR.tskx]: http://www.robotis.com/service/download.php?no=951
+[DREAM_L5_WarRobot_KR.tskx]: http://www.robotis.com/service/download.php?no=954
+[DREAM_L5_SoccerRobot_KR.tskx]: http://www.robotis.com/service/download.php?no=952
+[DREAM_L5_Excavator_KR.tskx]: http://www.robotis.com/service/download.php?no=947
+[DREAM_L5_LadderTruck_KR.tskx]: http://www.robotis.com/service/download.php?no=950
+[DREAM_L5_ForkLift_KR.tskx]: http://www.robotis.com/service/download.php?no=949
+[DREAM_L5_BoxingRobot_KR.tskx]: http://www.robotis.com/service/download.php?no=944
+[DREAM_L5_Bulldozer_KR.tskx]: http://www.robotis.com/service/download.php?no=945
+[DREAM_L5_DribbleRobot_KR.tskx]: http://www.robotis.com/service/download.php?no=946
+[DREAM_L5_Explorer_KR.tskx]: http://www.robotis.com/service/download.php?no=948
+[DREAM_L5_TransportRobot_KR.tskx]: http://www.robotis.com/service/download.php?no=955

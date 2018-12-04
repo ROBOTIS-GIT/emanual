@@ -54,14 +54,14 @@ sidebar:
 [서보 모터]: /docs/kr/parts/motor/servo_motor/
 [RC-100B]: /docs/kr/parts/communication/rc-100/
 [예제 태스크 코드의 다운로드 방법]: /docs/kr/faq/download_task_code/#cm-150
-[DREAM2_L3_Security_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l3_security_kr.tskx
-[DREAM2_L3_NoiseMeter_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l3_noisemeter_kr.tskx
-[DREAM2_L3_FourWheeled_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l3_fourwheeled_kr.tskx
-[DREAM2_L3_CoinBank_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l3_coinbank_kr.tskx
-[DREAM2_L3_TumblingDoll_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l3_tumblingdoll_kr.tskx
-[DREAM2_L3_DialSafe_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l3_dialsafe_kr.tskx
-[DREAM2_L3_Motorcycle_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l3_motorcycle_kr.tskx
-[DREAM2_L3_Cannon_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l3_cannon_kr.tskx
-[DREAM2_L3_Airplane_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l3_airplane_kr.tskx
-[DREAM2_L3_Manipulator_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l3_manipulator_kr.tskx
-[DREAM2_L3_SportsCar_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l3_sportscar_kr.tskx
+[DREAM2_L3_Security_KR.tskx]: http://www.robotis.com/service/download.php?no=924
+[DREAM2_L3_NoiseMeter_KR.tskx]: http://www.robotis.com/service/download.php?no=923
+[DREAM2_L3_FourWheeled_KR.tskx]: http://www.robotis.com/service/download.php?no=920
+[DREAM2_L3_CoinBank_KR.tskx]: http://www.robotis.com/service/download.php?no=918
+[DREAM2_L3_TumblingDoll_KR.tskx]: http://www.robotis.com/service/download.php?no=926
+[DREAM2_L3_DialSafe_KR.tskx]: http://www.robotis.com/service/download.php?no=919
+[DREAM2_L3_Motorcycle_KR.tskx]: http://www.robotis.com/service/download.php?no=922
+[DREAM2_L3_Cannon_KR.tskx]: http://www.robotis.com/service/download.php?no=917
+[DREAM2_L3_Airplane_KR.tskx]: http://www.robotis.com/service/download.php?no=916
+[DREAM2_L3_Manipulator_KR.tskx]: http://www.robotis.com/service/download.php?no=921
+[DREAM2_L3_SportsCar_KR.tskx]: http://www.robotis.com/service/download.php?no=925

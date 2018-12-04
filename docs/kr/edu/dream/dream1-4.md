@@ -68,15 +68,15 @@ sidebar:
 [BT-210]: /docs/kr/parts/communication/bt-210/
 [RC-100B]: /docs/kr/parts/communication/rc-100/
 [예제 태스크 코드의 다운로드 방법]: /docs/kr/faq/download_task_code/
-[DREAM_L4_Tank_KR.tsk]: http://support.robotis.com/ko/baggage_files/dream/dream_l4_tank_kr.tsk
-[DREAM_L4_RobotKnight_KR.tsk]: http://support.robotis.com/ko/baggage_files/dream/dream_l4_robotknight_kr.tsk
-[DREAM_L4_WarRobot_KR.tsk]: http://support.robotis.com/ko/baggage_files/dream/dream_l4_warrobot_kr.tsk
-[DREAM_L4_SoccerRobot_KR.tsk]: http://support.robotis.com/ko/baggage_files/dream/dream_l4_soccerrobot_kr.tsk
-[DREAM_L4_Excavator_KR.tsk]: http://support.robotis.com/ko/baggage_files/dream/dream_l4_excavator_kr.tsk
-[DREAM_L4_LadderTruck_KR.tsk]: http://support.robotis.com/ko/baggage_files/dream/dream_l4_laddertruck_kr.tsk
-[DREAM_L4_ForkLift_KR.tsk]: http://support.robotis.com/ko/baggage_files/dream/dream_l4_forklift_kr.tsk
-[DREAM_L4_BoxingRobot_KR.tsk]: http://support.robotis.com/ko/baggage_files/dream/dream_l4_boxingrobot_kr.tsk
-[DREAM_L4_Bulldozer_KR.tsk]: http://support.robotis.com/ko/baggage_files/dream/dream_l4_bulldozer_kr.tsk
-[DREAM_L4_DribbleRobot_KR.tsk]: http://support.robotis.com/ko/baggage_files/dream/dream_l4_dribblerobot_kr.tsk
-[DREAM_L4_Explorer_KR.tsk]: http://support.robotis.com/ko/baggage_files/dream/dream_l4_explorer_kr.tsk
-[DREAM_L4_TransportRobot_KR.tsk]: http://support.robotis.com/ko/baggage_files/dream/dream_l4_transportrobot_kr.tsk
+[DREAM_L4_Tank_KR.tsk]: http://www.robotis.com/service/download.php?no=900
+[DREAM_L4_RobotKnight_KR.tsk]: http://www.robotis.com/service/download.php?no=898
+[DREAM_L4_WarRobot_KR.tsk]: http://www.robotis.com/service/download.php?no=902
+[DREAM_L4_SoccerRobot_KR.tsk]: http://www.robotis.com/service/download.php?no=899
+[DREAM_L4_Excavator_KR.tsk]: http://www.robotis.com/service/download.php?no=894
+[DREAM_L4_LadderTruck_KR.tsk]: http://www.robotis.com/service/download.php?no=897
+[DREAM_L4_ForkLift_KR.tsk]: http://www.robotis.com/service/download.php?no=896
+[DREAM_L4_BoxingRobot_KR.tsk]: http://www.robotis.com/service/download.php?no=890
+[DREAM_L4_Bulldozer_KR.tsk]: http://www.robotis.com/service/download.php?no=892
+[DREAM_L4_DribbleRobot_KR.tsk]: http://www.robotis.com/service/download.php?no=893
+[DREAM_L4_Explorer_KR.tsk]: http://www.robotis.com/service/download.php?no=895
+[DREAM_L4_TransportRobot_KR.tsk]: http://www.robotis.com/service/download.php?no=901
