@@ -154,7 +154,7 @@ Below video might be help you.
 
 Download and install the `Ubuntu 16.04` on the `PC (your desktop or laptop PC)` from the following link.
 
-- [Download link][ubuntu_download_link]
+- [Download link](https://www.ubuntu.com/download/alternative-downloads)
 
 If you need more help for installing Ubuntu, check out the step-by-step guide from the link below.
 
@@ -164,7 +164,10 @@ If you need more help for installing Ubuntu, check out the step-by-step guide fr
 
 ![](/assets/images/platform/turtlebot3/logo_ros.png)
 
-The following script will allow you to simplify the ROS installation procedure. Run the following command in a terminal window. The terminal application can be found with the Ubuntu search icon on the top left corner of the screen, or you can use shortcut key for terminal is `Ctrl`-`Alt`-`T`. After install ROS, please reboot PC.
+The following script will allow you to simplify the ROS installation procedure. Run the following command in a terminal window. The terminal application can be found with the Ubuntu search icon on the top left corner of the screen, or you can use shortcut key for terminal is `Ctrl`+`Alt`+`T`. After install ROS, please reboot PC.
+
+**NOTE**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`+`Alt`+`T`.
+{: .notice--info}
 
 ``` bash
 $ sudo apt-get update
@@ -199,10 +202,7 @@ $ cd ~/catkin_ws && catkin_make
 
 If catkin_make command is completed without any errors, preparation for OpenManipulator is done.
 
-## [Run roscore](#run-roscore)
-
-**NOTE**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`-`Alt`-`T`.
-{: .notice--info}
+## [Usb Settings](#usb-settings)
 
 Run roscore.
 
@@ -210,21 +210,17 @@ Run roscore.
 $ roscore
 ```
 
-## [Usb Settings](#usb-settings)
-
-[PC] The following commands allow to use USB port
+The following commands allow to use USB port
 
 ``` bash
-$ rosrun turtlebot3_bringup create_udev_rules
+$ rosrun open_manipulator_controller create_udev_rules
 ```
 
-
-
-
+**NOTE**: This run file make usb latency timer 1 ms. If you want to check this setting, input the command  `cat /sys/bus/usb-serial/devices/ttyUSB0/latency_timer` at terminal.
+{: .notice--info}
 
 # [Bringup](#bringup)
 
-
 ## [Run roscore](#run-roscore)
 
 Run roscore.
@@ -232,7 +228,6 @@ Run roscore.
 ``` bash
 $ roscore
 ```
-
 
 ## [Bringup a OpenManipulator Controller](#bringup-a-openmanipulator-controller)
 
@@ -282,7 +277,7 @@ Open another terminal, publish a topic massage for check the OpenManipulator set
 robotis@spc:~$ rostopic pub /open_manipulator/option std_msgs/String "print_open_manipulator_setting"
 ```
 
-**NOTE**: <Manipulator Description> will be printed on the terminal launch the open_manipulator_controller. It is shown that present state of the OpenManipulator. 
+**NOTE**: <**Manipulator Description**> will be printed on the terminal launch the open_manipulator_controller. It is shown that present state of the OpenManipulator. This parameter is descripted on OpenManipulator.cpp in open_manipulator_libs pkg (~/catkin_ws/src/open_manipulator/open_manipulator_libs/src/OpenManipulator.cpp)
 {: .notice--info}
 
 ```
@@ -559,8 +554,6 @@ robotis@spc:~$ rostopic pub /open_manipulator/option std_msgs/String "print_open
 ---------------------------------------------
 ```
 
-
-
 ## [Load a OpenManipulator on Rviz](#load-a-openmanipulator-on-rviz)
 Load an OpenManipulator on RViz.
 
@@ -573,6 +566,10 @@ $ roslaunch open_manipulator_description open_manipulator_rviz.launch
 # [Basic Manipulation](#basic-manipulation)
 
 ## [Topic Monitor](#topic-monitor)
+
+
+
+
 
 
 ## [GUI Program](#gui-program)
