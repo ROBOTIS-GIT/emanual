@@ -232,18 +232,18 @@ main:
       - titlekr: "*4단계 교육키트"
         url: /edu/ollo/ollo-4/
     - title: "*DREAM"
-      titlekr: "드림 I"
+      titlekr: "*드림 I"
       children:
-      - titlekr: "1단계 교육키트"
+      - titlekr: "*1단계 교육키트"
         url: /edu/dream/dream1-1/
       - title: "*LEVEL 2"
-        titlekr: "2단계 교육키트"
+        titlekr: "*2단계 교육키트"
         url: /edu/dream/dream1-2/
       - title: "*LEVEL 3"
-        titlekr: "3단계 교육키트"
+        titlekr: "*3단계 교육키트"
         url: /edu/dream/dream1-3/
       - title: "*LEVEL 4"
-        titlekr: "4단계 교육키트"
+        titlekr: "*4단계 교육키트"
         url: /edu/dream/dream1-4/
       - title: "*SET A"
         url: /edu/dream/dream-a/
