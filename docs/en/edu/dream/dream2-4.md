@@ -11,8 +11,6 @@ sidebar:
   nav: "dream2-4"
 ---
 
-# DREAM2 Level 4
-
 # [Introduction](#introduction)
 
 ROBOTIS DREAM Level II 4 comes with the controller and teaches you the principles of servo motor control, usage of the touch sensor and IR sensors, and LED modules.  

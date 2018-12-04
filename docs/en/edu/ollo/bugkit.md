@@ -11,8 +11,6 @@ sidebar:
   nav: "ollo_bugkit"
 ---
 
-# OLLO BUG KIT
-
 # [Introduction](#introduction)
 OLLO Bug Kit is the third kit among the kits for everyone, and the bug robots that play line-tracing game (The robots detect lines by themselves) and control game (The robots are controlled by wireless controllers) can be built by the kit.  The assembly manual is included to build 4 types of bug robots: Beetles, Ladybugs, Callipogon Relictus, and Grasshoppers.  Build the one and only robot for yourself.
 

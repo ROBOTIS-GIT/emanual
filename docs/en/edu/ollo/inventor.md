@@ -11,8 +11,6 @@ sidebar:
   nav: "ollo_inventor"
 ---
 
-# OLLO INVENTOR
-
 # [Introduction](#introduction)
 Create robots using the controller, geared motors, sensors, and servo motors and perform basic programming.
 Through 12-session curriculum, learn programming and experiment on wireless communication, the concept of control, sensors and various module applications.

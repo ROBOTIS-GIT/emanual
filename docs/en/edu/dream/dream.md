@@ -19,6 +19,8 @@ sidebar:
 |[![](/assets/images/edu/dream/dream_en02_110.jpg)](/docs/en/edu/dream/dream1-2/)|[![](/assets/images/edu/dream/dream3_en.jpg)](/docs/en/edu/dream/dream1-3/)|[![](/assets/images/edu/dream/dream4_en.jpg)](/docs/en/edu/dream/dream1-4/)|[![](/assets/images/edu/dream/e-manual_dream_seta_tn.jpg)](/docs/en/edu/dream/dream-a/)|[![](/assets/images/edu/dream/e-manual_dream_setb_tn.jpg)](/docs/en/edu/dream/dream-b/)|
 |[Examples](/docs/en/edu/dream/dream1-2/#examples)|[Examples](/docs/en/edu/dream/dream1-3/#examples)|[Examples](/docs/en/edu/dream/dream1-4/#examples)|[Examples](/docs/en/edu/dream/dream-a/#examples)|[Examples](/docs/en/edu/dream/dream-b/#examples)|
 
+**WARNING** : ROBOTIS DREAM has been discontinued.
+{: .notice--warning}
 
 # [DREAM II](#dream-ii)
 

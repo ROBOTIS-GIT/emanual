@@ -11,8 +11,6 @@ sidebar:
   nav: "dream2-5"
 ---
 
-# DREAM2 Level 5
-
 # [Introduction](#introduction)
 
 ROBOTIS DREAM II Level 5 comes with a remote controller to control the robot in many ways. Now that you have an idea of how the flow chart works and have a basic knowledge of programming, this level allows you to prepare for competitions. Play games using the programs provided for download on our website and keep a record to see how well you do. Experience how the sensors can affect your results.

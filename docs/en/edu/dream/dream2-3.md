@@ -11,8 +11,6 @@ sidebar:
   nav: "dream2-3"
 ---
 
-# DREAM2 Level 3
-
 # [Introduction](#introduction)
 
 ROBOTIS DREAM II LEVEL 3 consists of robot examples that can be controlled using an infrared receiver and remote control.  
