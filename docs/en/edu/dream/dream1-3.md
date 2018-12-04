@@ -54,7 +54,7 @@ This is included in ROBOTIS DREAM Level 1.
 |    6. Electric Guitar<br />![](/assets/images/edu/dream/dream1-3_guitar.jpg)    | [Download][ex_06] |
 |   7. Flag Game Robot<br />![](/assets/images/edu/dream/dream1-3_flaggame.jpg)   | [Download][ex_07] |
 |         8. Crane<br />![](/assets/images/edu/dream/dream1-3_crane.jpg)          | [Download][ex_08] |
-|        9. Basket<br />![](/assets/images/edu/dream/dream1-3_basket.jpg)         | [Download][ex_09] |
+|    9. Drunken Basket<br />![](/assets/images/edu/dream/dream1-3_basket.jpg)     | [Download][ex_09] |
 |        10. Viking<br />![](/assets/images/edu/dream/dream1-3_viking.jpg)        | [Download][ex_10] |
 |    11. Whac-A-Mole<br />![](/assets/images/edu/dream/dream1-3_whacamole.jpg)    | [Download][ex_11] |
 |     12. Goblin Robot<br />![](/assets/images/edu/dream/dream1-3_goblin.jpg)     | [Download][ex_12] |
