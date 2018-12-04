@@ -11,8 +11,6 @@ sidebar:
   nav: "dream1-3"
 ---
 
-# DREAM1 Level 2
-
 # [Introduction](#introduction)
 
 ROBOTIS DREAM Level 3 comes with the controller and teaches you the principles of servo motor control, usage of the touch sensor and IR sensors, and LED modules. This level will help you understand the flow chart to set up your ground work for programming.
@@ -23,6 +21,9 @@ Please make sure to purchase Level 1 and 2 to build the robots in Level 3.
 Users must program the robots or download the program into the controller ([CM-150]) to operate the robot.  
 To program or download a program you will need the USB Cable included in the ROBOTIS DREAM Level 1.  
 If you want to build and program your robots using more parts and peripheral devices, please purchase the ROBOTIS DREAM Level 4 or necessary parts separately.
+{: .notice--warning}
+
+**WARNING** : ROBOTIS DREAM Level 3 has been discontinued.
 {: .notice--warning}
 
 # [Part List](#part-list)
