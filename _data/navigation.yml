@@ -12907,12 +12907,17 @@ openmanipulator:
     children:
     - title: "Run roscore"
       url: /platform/openmanipulator/#run-roscore
-    - title: "Bringup a OpenManipulator Controller"
-      url: /platform/openmanipulator/#bringup-a-openmanipulator-controller
-    - title: "Load a OpenManipulator on Rviz"
-      url: /platform/openmanipulator/#load-a-openmanipulator-on-rviz      
+    - title: "OpenManipulator Controller"
+      url: /platform/openmanipulator/#openmanipulator-controller
+    - title: "Check Setting"
+      url: /platform/openmanipulator/#check-setting
+      children:
+      - title: "Manipulator Description"
+        url: /platform/openmanipulator/#manipulator-description
+      - title: "RViz"
+        url: /platform/openmanipulator/#openmanipulator-controller  
   - title: "Basic Manipulation"
-    url: /platform/openmanipulator/#basic-manipulation
+    url: /platform/openmanipulator/#rviz
     children:
     - title: "Message List"
       url: /platform/openmanipulator/#message-list
@@ -12938,6 +12943,11 @@ openmanipulator:
     url: /platform/openmanipulator/#camera-application    
   - title: "Gazebo Simulation"
     url: /platform/openmanipulator/#gazebo-simulation
+    children:
+    - title: "Launch OpenManipulator Controller for gazebo"
+      url: /platform/openmanipulator/#launch-openmanipulator-controller-for-gazebo
+    - title: "Launch OpenManipulator gazebo"
+      url: /platform/openmanipulator/#launch-openmanipulator-gazebo
   - title: "How to Control on OpenCR"
     url: /platform/openmanipulator/#how-to-control-opencr
     children:

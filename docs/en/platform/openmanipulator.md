@@ -73,7 +73,7 @@ OpenManipulator is composed by [Dynamixel X series](http://emanual.robotis.com/d
 
 ## [Part Lists](#part-lists)
 
-|                   | Part Name              | RM-X52-TNM |
+|                   | Part Name              |  Quantity  |
 |-------------------|------------------------|:----------:|
 | **Chassis Parts** | LONG LINK FRAME        |     1      |
 | .                 | SHORT LINK FRAME       |     1      |
@@ -115,12 +115,14 @@ OpenManipulator is composed by [Dynamixel X series](http://emanual.robotis.com/d
 
 - Optional parts
 
-|            | Part Name  | RM-X52-TNM |
+|            | Part Name  |  Quantity  |
 |------------|------------|:----------:|
 | **Powers** | SMPS 12V5A |     1      |
 | .          | A/C Cord   |     1      |
 | **Boards** | OpenCR     |     1      |
 | .          | U2D2       |     1      |
+| **Plate**  | .          |     1      |
+| .          | .          |     1      |
 
 
 <!-- - [Parts of OpenManipulator](https://docs.google.com/a/robotis.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit?usp=sharing) -->
@@ -149,6 +151,8 @@ Below video might be help you.
 
 **NOTE**: This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 {: .notice--info}
+**NOTE**: If you want to control OpenManipulator on OpenCR(Embedded board) instead of ROS, please set it up as described in [How to Control on OpenCR](/docs/en/platform/openmanipulator/#how-to-control-on-opencr).
+{: .notice--info}
 
 ## [Install Ubuntu on PC](#install-ubuntu-on-pc)
 
@@ -166,9 +170,6 @@ If you need more help for installing Ubuntu, check out the step-by-step guide fr
 
 The following script will allow you to simplify the ROS installation procedure. Run the following command in a terminal window. The terminal application can be found with the Ubuntu search icon on the top left corner of the screen, or you can use shortcut key for terminal is `Ctrl`+`Alt`+`T`. After install ROS, please reboot PC.
 
-**NOTE**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`+`Alt`+`T`.
-{: .notice--info}
-
 ``` bash
 $ sudo apt-get update
 $ sudo apt-get upgrade
@@ -183,7 +184,10 @@ If you prefer manual installation, please following the link below.
 - [Manual installation of ROS Kinetic](http://wiki.ros.org/kinetic/Installation/Ubuntu)
 
 ## [Install ROS Packages](#install-ros-packages)
-Install dependent packages for the OpenManipulator.
+Install dependent packages for the OpenManipulator. Run the following command in a terminal window.
+
+**NOTE**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`+`Alt`+`T`.
+{: .notice--info}
 
 ```
 $ sudo apt-get install ros-kinetic-ros-controllers ros-kinetic-gazebo* ros-kinetic-moveit* ros-kinetic-dynamixel-sdk ros-kinetic-industrial-core
@@ -215,29 +219,38 @@ The following commands allow to use USB port
 ``` bash
 $ rosrun open_manipulator_controller create_udev_rules
 ```
-
-**NOTE**: This run file make usb latency timer 1 ms. If you want to check this setting, input the command  `cat /sys/bus/usb-serial/devices/ttyUSB0/latency_timer` at terminal.
-{: .notice--info}
+{% capture notice_01 %}
+**NOTE**: 
+- Please run roscore before rosrun, because rosrun can't operate without roscore. The rosrun and roscore should be run in each other terminal.
+- This run file make usb latency timer **1 ms**. If you want to check this setting, Run the following command in a terminal window.  
+`cat /sys/bus/usb-serial/devices/ttyUSB0/latency_timer`
+{% endcapture %}
+<div class="notice--info">{{ notice_01 | markdownify }}</div>
 
 # [Bringup](#bringup)
+
+OpenManipulator 
+
+**NOTE**: This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+{: .notice--info}
 
 ## [Run roscore](#run-roscore)
 
 Run roscore.
 
-``` bash
+```
 $ roscore
 ```
 
-## [Bringup a OpenManipulator Controller](#bringup-a-openmanipulator-controller)
+## [OpenManipulator Controller](#openmanipulator-controller)
 
-Launch an OpenManipulator controller to start basic manipulations.
+Launch OpenManipulator controller to start [Basic Manipulation](/docs/en/platform/openmanipulator/#basic-manipulation).
 
 ```
 $ roslaunch open_manipulator_controller open_manipulator_controller.launch
 ```
 
-If the OpenManipulator controller bringup successfully, the terminal will represent below messages.
+If OpenManipulator controller launched successfully, the terminal will represent below messages.
 
 ```
 SUMMARY
@@ -271,7 +284,11 @@ Gripper Dynamixel ID : 15, Model Name :XM430-W350
 [INFO] Successed to OpenManipulator initialization
 ```
 
-Open another terminal, publish a topic message for check the OpenManipulator setting.
+## [Check Setting](#check-setting)
+
+### [Manipulator Description](#manipulator-description)
+
+publish a topic message to check the OpenManipulator setting.
 
 ```
 robotis@spc:~$ rostopic pub /open_manipulator/option std_msgs/String "print_open_manipulator_setting"
@@ -554,7 +571,8 @@ robotis@spc:~$ rostopic pub /open_manipulator/option std_msgs/String "print_open
 ---------------------------------------------
 ```
 
-## [Load a OpenManipulator on Rviz](#load-a-openmanipulator-on-rviz)
+### [RViz](#rviz)
+
 Load an OpenManipulator on RViz.
 
 ```
@@ -612,15 +630,15 @@ The topic list is published by open_manipulator_controller.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
-- `/open_manipulator/joint_states` indicates a message that the states of the joints in OpenManipulator. **"name"** of this message indicates joint component names OpenManipulator have.  **"effort"** indicates currents of the joint Dynamixels. **"position"** and **"velocity"** indicates the angle and angular velocity of each joints.
+- `/open_manipulator/joint_states` is a message indicating the states of the joints in OpenManipulator. **"name"** of this message indicates joint component names OpenManipulator have.  **"effort"** indicates currents of the joint Dynamixels. **"position"** and **"velocity"** indicates the angle and angular velocity of each joints.
 
 ![](/assets/images/platform/openmanipulator/rqt_joint_states.png)
 
-- `/open_manipulator/kinematics_pose` indicates a message that the pose(position and orientation) on world coordinate(cartesian) of OpenManipulator gripper. **"position"** indicates x, y, and z value of the center of the tool gripper. **"Orientation"** indicates the direction of the tool gripper as quaternion.
+- `/open_manipulator/kinematics_pose` is a message indicating the pose(position and orientation) on world coordinate(cartesian) of OpenManipulator gripper. **"position"** indicates x, y, and z value of the center of the tool gripper. **"Orientation"** indicates the direction of the tool gripper as quaternion.
 
 ![](/assets/images/platform/openmanipulator/rqt_kinematic_pose.png)
 
-- `/open_manipulator/states` indicates a message .
+- `/ open_manipulator / states` is a message indicating the status of OpenManipulator. **"open_manipulator_actuator_state"** indicates whether the torque of the actuator(Dynamixel) is enable("ACTUATOR_ENABLE") or disable("ACTUATOR_DISABLE"). **"open_manipulator_moving_state"** indicates whether OpenManipulator is "MOVING" or "STOPPED" along the trajectory.
 
 ![](/assets/images/platform/openmanipulator/rqt_states.png)
 
@@ -631,20 +649,49 @@ The topic list is published by open_manipulator_controller.
 The topic list is subscribed by open_manipulator_controller.
 - `/open_manipulator/option`
 {% endcapture %}
+<div class="notice--info">{{ notice_01 | markdownify }}</div>
 
-- `/open_manipulator/option` indicates a message .  
+- `/ open_manipulator / option` is used to set OpenManipulator options (std :: string type). 
+  - **"print_open_manipulator_setting"** : request display "Manipulator Description" to open_manipulator_controller. 
 
+ 
 ![](/assets/images/platform/openmanipulator/rqt_option.png)
 
 
-In addition, you can monitor topics through rqt whenever you have a topic added.
+In addition, you can monitor topics through rqt whenever you have a topic added in your controller.
 
 
 ### [Service](#service)
 
 
+#### [Service Server List](#service-server-list)
 
+{% capture notice_01 %}
+**Service Server List** :
+This is Service Server list of open_manipulator_controller.
+- `/open_manipulator/goal_joint_space_path`
+- `/open_manipulator/goal_task_space_path`
+- `/open_manipulator/goal_joint_space_path_to_present`
+- `/open_manipulator/goal_task_space_path_to_present`
+- `/open_manipulator/goal_tool_control`
+- `/open_manipulator/set_actuator_state`
+- `/open_manipulator/goal_drawing_trajectory`
+{% endcapture %}
+<div class="notice--info">{{ notice_01 | markdownify }}</div>
 
+- `/open_manipulator/goal_joint_space_path` is ...
+
+- `/open_manipulator/goal_task_space_path` is ...
+
+- `/open_manipulator/goal_joint_space_path_to_present` is ...
+
+- `/open_manipulator/goal_task_space_path_to_present` is ...
+
+- `/open_manipulator/goal_tool_control` is ...
+
+- `/open_manipulator/set_actuator_state` is ...
+
+- `/open_manipulator/goal_drawing_trajectory` is ...
 
 ## [GUI Program](#gui-program)
 
@@ -719,14 +766,60 @@ Below services are help you to manipulate OpenManipulator
 
 # [Camera Application](#camera-application)
 
-
+**Coming Soon**
 
 # [Gazebo Simulation](#gazebo-simulation)
 
 **NOTE** : This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 {: .notice--info}
 
-Load an OpenManipulator on Gazebo simulator and click `Play` button
+## [Launch OpenManipulator Controller for gazebo](#launch-openmanipulator-controller-for-gazebo)
+
+Launch an OpenManipulator controller for gazebo simulation.
+
+  ```
+  $ roslaunch open_manipulator_controller open_manipulator_controller.launch use_platform:=false
+  ```
+If the OpenManipulator controller for gazebo simulation Launched successfully, the terminal will represent below messages.
+
+```
+SUMMARY
+========
+
+PARAMETERS
+ * /open_manipulator_controller/baud_rate: 1000000
+ * /open_manipulator_controller/usb_port: /dev/ttyUSB0
+ * /open_manipulator_controller/using_platform: False
+ * /robot_name: open_manipulator
+ * /rosdistro: kinetic
+ * /rosversion: 1.12.14
+
+NODES
+  /
+    open_manipulator_controller (open_manipulator_controller/open_manipulator_controller)
+
+auto-starting new master
+process[master]: started with pid [6117]
+ROS_MASTER_URI=http://localhost:11311
+
+setting /run_id to 2137abca-f79f-11e8-9533-ac9e17829ad5
+process[rosout-1]: started with pid [6130]
+started core service [/rosout]
+process[open_manipulator_controller-2]: started with pid [6137]
+[INFO] Successed to OpenManipulator initialization
+```
+**NOTE** : In OpenManipulator controller for gazebo simulation, Joint and Gripper Dynamixel are not enable, following messages will not display :  
+Joint Dynamixel ID : 11, Model Name : XM430-W350  
+Joint Dynamixel ID : 12, Model Name : XM430-W350  
+Joint Dynamixel ID : 13, Model Name : XM430-W350  
+Joint Dynamixel ID : 14, Model Name : XM430-W350  
+Gripper Dynamixel ID : 15, Model Name :XM430-W350
+{: .notice--info}
+
+
+## [Launch OpenManipulator gazebo](#launch-openmanipulator-gazebo)
+
+Load an OpenManipulator on Gazebo simulator and click Play button `▶`.
 
   ```
   $ roslaunch open_manipulator_gazebo open_manipulator_gazebo.launch
@@ -754,6 +847,8 @@ Enter `rostopic list` to list up the activated topics.
   /open_manipulator/joint4_position/command
   /open_manipulator/joint_states
   /open_manipulator/kinematics_pose
+  /open_manipulator/option
+  /open_manipulator/states
   /rosout
   /rosout_agg
   ```
@@ -883,7 +978,7 @@ Load a TurtleBot3 Waffle or Waffle Pi with OpenManipulator on RViz.
 
 #### Part Lists
 
-|              | Part Name | SCARA | Link
+|              | Part Name | Quantity | Link
 |---------     |---------- |---------   |
 |**Chassis Parts** |BASE FRAME|1|[Download Link](https://www.thingiverse.com/thing:3069581)|
 |.                 |PEN HOLDER|1|[Download Link](https://www.thingiverse.com/thing:3069581)|
@@ -958,7 +1053,7 @@ Open processing source code file (`OpenCR`>`arduino`>`opencr_arduino`>`opencr`>`
 
 #### Part Lists
 
-|                   | Part Name                        | SCARA | Link                                                                                                                                                                           |
+|                   | Part Name                        | Quantity | Link                                                                                                                                                                           |
 |-------------------|----------------------------------|-------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Chassis Parts** | BASE FRAME                       | 1     | [Download Link](https://www.thingiverse.com/thing:3069557)                                                                                                                     |
 | .                 | BASE LINK                        | 1     | [Download Link](https://www.thingiverse.com/thing:3069557)                                                                                                                     |
