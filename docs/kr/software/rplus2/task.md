@@ -29,11 +29,12 @@ sidebar:
 
 ## [소프트웨어 설치](#소프트웨어-설치)
 
-**참고** : 로보플러스 태스크 2.0 소프트웨어의 Mac OS X 설치방법이 v2.3.0부터 변경되었습니다.
-{: .notice}
+**주의** : 로보플러스 태스크 2.0 소프트웨어의 Mac OS X 설치방법이 v2.3.0부터 변경되었습니다.  
+[`Mac OS X 로보플러스 태스크 2.0 다운로드`](http://www.robotis.com/service/download.php?no=2)
+{: .notice--warning}
 
-1. 로보플러스 태스크 2.0을 로보티즈 소프트웨어 다운로드 센터에서 다운로드 받으세요.  
-  [로보티즈 소프트웨어 다운로드 센터](http://www.robotis.com/service/downloadpage.php?ca_id=10)
+1. 로보플러스 태스크 2.0을 다운로드 받으세요.  
+  [`Mac OS X 로보플러스 태스크 2.0 다운로드`](http://www.robotis.com/service/download.php?no=2)
 
 2. 다운로드받은 패키지 `R+Task2.0(v2.3.0 Mac).pkg` 를 더블클릭해서 실행하세요.  
   ![](/assets/images/sw/rplus2/task/roboplus_task2_install_01.png)
