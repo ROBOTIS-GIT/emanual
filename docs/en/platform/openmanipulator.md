@@ -567,7 +567,54 @@ $ roslaunch open_manipulator_description open_manipulator_rviz.launch
 
 ## [Topic Monitor](#topic-monitor)
 
+{% capture notice_01 %}
+**NOTE**: 
+- This instructions were tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+- This instructions are supposed to be running on PC. Please run the instructions below on your **PC**.
+- Make sure to run the [Bringup](/docs/en/platform/openmanipulator/#bringup) instructions before running the instructions below.
+{% endcapture %}
+<div class="notice--info">{{ notice_01 | markdownify }}</div>
 
+In order to check the topics of OpenManipulator Controller, we will use [rqt][rqt] provided by ROS. The rqt is a Qt-based framework for GUI development for ROS. The rqt is a tool that allows users to easily see the topic status by displaying all the topics in the topic list. There are topic names, types, bandwidth, Hz, value in GUI.
+
+**[PC]** Run the rqt.
+``` bash
+$ rqt
+```
+![](/assets/images/platform/OpenManipulator/rqt_om.png)
+
+**TIP**: If rqt is not displayed, select the `plugin` -> `Topics` -> `Topic Monitor`.
+{: .notice--info}
+
+When rqt is first run, the topic values are not monitored. To monitor the topic, click the checkbox next to each topic.
+
+![](/assets/images/platform/OpenManipulator/rqt_1.png)
+
+If you want to see more detail topic message, click the `▶` button next to each checkbox.
+
+![](/assets/images/platform/OpenManipulator/rqt_2.png)
+
+
+- `/joint_states` indicates a message relating to the battery condition, such as the current battery voltage and remaining capacity.
+
+![](/assets/images/platform/OpenManipulator/rqt_joint_states.png)
+
+- `/kinematics_pose` indicates a message the status of the components connected to the TurtleBot3, such as a MPU9250, a DYNAMIXEL X, a HLS-LFCD-LDS, a battery and a OpenCR.
+
+![](/assets/images/platform/OpenManipulator/rqt_kinematic_pose.png)
+
+- `/option` indicates a message the odometry of the TurtleBot3. This topic has orientation and position by the encoder data.  
+
+![](/assets/images/platform/OpenManipulator/rqt_option.png)
+
+- `/states` indicates a message the encoder values, battery and torque.
+
+![](/assets/images/platform/OpenManipulator/rqt_states.png)
+
+In addition, you can monitor topics through rqt whenever you have a topic added.
+
+[bringup]: /docs/en/platform/openmanipulator/#bringup
+[rqt]: http://wiki.ros.org/rqt
 
 
 
