@@ -229,7 +229,7 @@ $ rosrun open_manipulator_controller create_udev_rules
 
 # [Controller](#controller)
 
-Open Manipulator Controller is provided for basic manipulation of OpenManipulator. 
+Open Manipulator Controller is provided for basic manipulation of OpenManipulator. You can control the dynamixel of OpenManipulator and check states of OpenManipulator through [messages](/docs/en/platform/openmanipulator/#message-list) of the controller. 
 
 **NOTE**: This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 {: .notice--info}
@@ -288,7 +288,7 @@ Gripper Dynamixel ID : 15, Model Name :XM430-W350
 
 ### [Manipulator Description](#manipulator-description)
 
-publish a topic message to check the OpenManipulator setting.
+Publish a topic message to check the OpenManipulator setting.
 
 ```
 robotis@spc:~$ rostopic pub /open_manipulator/option std_msgs/String "print_open_manipulator_setting"
@@ -585,21 +585,23 @@ $ roslaunch open_manipulator_description open_manipulator_rviz.launch
 
 ## [Message List](#message-list)
 
-### [Topic](#topic)
-
-#### [Topic Monitor](#topic-monitor)
+Open Manipulator Controller provides **topic** and **service** messages to control manipulator and check the states of manipulator.
 
 {% capture notice_01 %}
 **NOTE**: 
 - This instructions were tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
-- This instructions are supposed to be running on PC. Please run the instructions below on your **PC**.
-- Make sure to run the [Bringup a OpenManipulator controller](/docs/en/platform/openmanipulator/#bringup-a-openmanipulator-controller) instructions before running the instructions below.
+- This instructions are supposed to be running on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.
+- Make sure to run the [Open Manipulator controller](/docs/en/platform/openmanipulator/#launch-controller) instructions before running the instructions below.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
+### [Topic](#topic)
+
+#### [Topic Monitor](#topic-monitor)
+
 In order to check the topics of OpenManipulator Controller, we will use [rqt][rqt] provided by ROS. The rqt is a Qt-based framework for GUI development for ROS. The rqt is a tool that allows users to easily see the topic status by displaying all the topics in the topic list. There are topic names, types, bandwidth, Hz, value in GUI.
 
-**[PC]** Run the rqt.
+Run the rqt.
 ``` bash
 $ rqt
 ```
@@ -621,38 +623,40 @@ If you want to see more detail topic message, click the `▶` button next to eac
 
 #### [Published Topic List](#published-topic-list)
 
-{% capture notice_01 %}
+**NOTE**: These topics are messages for checking the status of the robot regardless of the robot's motion.
+{: .notice--info}
+
 **Published Topic List** :
 The topic list is published by open_manipulator_controller.
 - `/open_manipulator/joint_states`
 - `/open_manipulator/kinematics_pose`
 - `/open_manipulator/states`
-{% endcapture %}
-<div class="notice--info">{{ notice_01 | markdownify }}</div>
 
-- `/open_manipulator/joint_states` is a message indicating the states of the joints in OpenManipulator. **"name"** of this message indicates joint component names OpenManipulator have.  **"effort"** indicates currents of the joint Dynamixels. **"position"** and **"velocity"** indicates the angle and angular velocity of each joints.
+
+`/open_manipulator/joint_states` is a message indicating the states of the joints in OpenManipulator. **"name"** of this message indicates joint component names OpenManipulator have.  **"effort"** indicates currents of the joint Dynamixels. **"position"** and **"velocity"** indicates the angle and angular velocity of each joints.
 
 ![](/assets/images/platform/openmanipulator/rqt_joint_states.png)
 
-- `/open_manipulator/kinematics_pose` is a message indicating the pose(position and orientation) on world coordinate(cartesian) of OpenManipulator gripper. **"position"** indicates x, y, and z value of the center of the tool gripper. **"Orientation"** indicates the direction of the tool gripper as quaternion.
+`/open_manipulator/kinematics_pose` is a message indicating the pose(position and orientation) on world coordinate(cartesian) of OpenManipulator gripper. **"position"** indicates x, y, and z value of the center of the tool gripper. **"Orientation"** indicates the direction of the tool gripper as quaternion.
 
 ![](/assets/images/platform/openmanipulator/rqt_kinematic_pose.png)
 
-- `/ open_manipulator / states` is a message indicating the status of OpenManipulator. **"open_manipulator_actuator_state"** indicates whether the torque of the actuator(Dynamixel) is enable("ACTUATOR_ENABLE") or disable("ACTUATOR_DISABLE"). **"open_manipulator_moving_state"** indicates whether OpenManipulator is "MOVING" or "STOPPED" along the trajectory.
+`/open_manipulator/states` is a message indicating the status of OpenManipulator. **"open_manipulator_actuator_state"** indicates whether the torque of the actuator(Dynamixel) is enable("ACTUATOR_ENABLE") or disable("ACTUATOR_DISABLE"). **"open_manipulator_moving_state"** indicates whether OpenManipulator is "MOVING" or "STOPPED" along the trajectory.
 
 ![](/assets/images/platform/openmanipulator/rqt_states.png)
 
 #### [Subscribed Topic List](#published-topic-list)
 
-{% capture notice_01 %}
+**NOTE**: These topics are messages for checking the status of the robot regardless of the robot's motion.
+{: .notice--info}
+
 **Subscribed Topic List**: 
 The topic list is subscribed by open_manipulator_controller.
 - `/open_manipulator/option`
-{% endcapture %}
-<div class="notice--info">{{ notice_01 | markdownify }}</div>
 
-- `/ open_manipulator / option` is used to set OpenManipulator options (std :: string type). 
-  - **"print_open_manipulator_setting"** : request display "Manipulator Description" to open_manipulator_controller. 
+
+`/open_manipulator/option` is used to set OpenManipulator options (std :: string type). 
+- **"print_open_manipulator_setting"** : request display "Manipulator Description" to open_manipulator_controller. 
 
  
 ![](/assets/images/platform/openmanipulator/rqt_option.png)
@@ -666,7 +670,10 @@ In addition, you can monitor topics through rqt whenever you have a topic added 
 
 #### [Service Server List](#service-server-list)
 
-{% capture notice_01 %}
+**NOTE**: These services are messages to operate the robot or to change the status of the Dynamixels of OpenManipulator.
+{: .notice--info}
+
+
 **Service Server List** :
 This is Service Server list of open_manipulator_controller.
 - `/open_manipulator/goal_joint_space_path`
@@ -676,22 +683,20 @@ This is Service Server list of open_manipulator_controller.
 - `/open_manipulator/goal_tool_control`
 - `/open_manipulator/set_actuator_state`
 - `/open_manipulator/goal_drawing_trajectory`
-{% endcapture %}
-<div class="notice--info">{{ notice_01 | markdownify }}</div>
 
-- `/open_manipulator/goal_joint_space_path` is ...
+`/open_manipulator/goal_joint_space_path` is ...
 
-- `/open_manipulator/goal_task_space_path` is ...
+`/open_manipulator/goal_task_space_path` is ...
 
-- `/open_manipulator/goal_joint_space_path_to_present` is ...
+`/open_manipulator/goal_joint_space_path_to_present` is ...
 
-- `/open_manipulator/goal_task_space_path_to_present` is ...
+`/open_manipulator/goal_task_space_path_to_present` is ...
 
-- `/open_manipulator/goal_tool_control` is ...
+`/open_manipulator/goal_tool_control` is ...
 
-- `/open_manipulator/set_actuator_state` is ...
+`/open_manipulator/set_actuator_state` is ...
 
-- `/open_manipulator/goal_drawing_trajectory` is ...
+`/open_manipulator/goal_drawing_trajectory` is ...
 
 ## [GUI Program](#gui-program)
 
@@ -773,7 +778,7 @@ Below services are help you to manipulate OpenManipulator
 **NOTE** : This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 {: .notice--info}
 
-## [Launch Controller for gazebo](#launch-controller-for-gazebo)
+## [Controller for gazebo](#controller-for-gazebo)
 
 Launch an OpenManipulator controller for gazebo simulation.
 

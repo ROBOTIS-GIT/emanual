@@ -12944,12 +12944,12 @@ openmanipulator:
   - title: "Gazebo Simulation"
     url: /platform/openmanipulator/#gazebo-simulation
     children:
-    - title: "Launch Controller for gazebo"
-      url: /platform/openmanipulator/#launch-controller-for-gazebo
+    - title: "Controller for gazebo"
+      url: /platform/openmanipulator/#controller-for-gazebo
     - title: "Launch gazebo"
       url: /platform/openmanipulator/#launch-gazebo
   - title: "How to Control on OpenCR"
-    url: /platform/openmanipulator/#how-to-control-opencr
+    url: /platform/openmanipulator/#how-to-contol-on-opencr
     children:
     - title: "Setup"
       url: /platform/openmanipulator/#setup
