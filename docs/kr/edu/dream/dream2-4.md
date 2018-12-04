@@ -55,7 +55,7 @@ sidebar:
 |  6. 전기기타|![](/assets/images/edu/dream/dream2/dream2_04_06_kr.jpg)   |                                [Download][DREAM2_L4_Guitar_KR.tskx]                                |
 |  7. 청기백기|![](/assets/images/edu/dream/dream2/dream2_04_07_kr.jpg)   |                               [Download][DREAM2_L4_FlagGame_KR.tskx]                               |
 |   8. 크레인|![](/assets/images/edu/dream/dream2/dream2_04_08_kr.jpg)    |        [Download][DREAM2_L4_Crane_KR.tskx]<br/>     [Download][DREAM2_L4_Crane_KR(RC).tskx]        |
-| 9. 회전바구니|![](/assets/images/edu/dream/dream2/dream2_04_09_kr.jpg)  |                            [Download][DREAM2_L4_DrunkenBasket_KR.tskx]                             |
+| 9. 회전바구니|![](/assets/images/edu/dream/dream2/dream2_04_09_kr.jpg)  |                            [Download][DREAM2_L4_Basket_KR.tskx]                             |
 |   10. 바이킹|![](/assets/images/edu/dream/dream2/dream2_04_10_kr.jpg)   |                                [Download][DREAM2_L4_Viking_KR.tskx]                                |
 | 11. 두더지게임|![](/assets/images/edu/dream/dream2/dream2_04_11_kr.jpg) |                             [Download][DREAM2_L4_MoleHitting_KR.tskx]                              |
 |   12. 도깨비|![](/assets/images/edu/dream/dream2/dream2_04_12_kr.jpg)   |                              [Download][DREAM2_L4_BabyGoblin_KR.tskx]                              |
@@ -66,20 +66,20 @@ sidebar:
 [LED 모듈]: /docs/kr/parts/display/lm-10/
 [접촉 센서]: /docs/kr/parts/sensor/ts-10/
 [예제 태스크 코드의 다운로드 방법]: /docs/kr/faq/download_task_code/#cm-150
-[DREAM2_L4_Orgel_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l4_orgel_kr.tskx
-[DREAM2_L4_CleanupRobot_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l4_cleanuprobot_kr.tskx
-[DREAM2_L4_CleanupRobot_KR(RC).tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l4_cleanuprobot_kr(rc).tskx
-[DREAM2_L4_Truck_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l4_truck_kr.tskx
-[DREAM2_L4_Truck_KR(RC).tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l4_truck_kr(rc).tskx
-[DREAM2_L4_BumperCar_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l4_bumpercar_kr.tskx
-[DREAM2_L4_BumperCar_KR(RC).tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l4_bumpercar_kr(rc).tskx
-[DREAM2_L4_ProbingCar_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l4_probingcar_kr.tskx
-[DREAM2_L4_ProbingCar_KR(RC).tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l4_probingcar_kr(rc).tskx
-[DREAM2_L4_Guitar_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l4_guitar_kr.tskx
-[DREAM2_L4_FlagGame_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l4_flaggame_kr.tskx
-[DREAM2_L4_Crane_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l4_crane_kr.tskx
-[DREAM2_L4_Crane_KR(RC).tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l4_crane_kr(rc).tskx
-[DREAM2_L4_DrunkenBasket_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l4_drunkenbasket_kr.tskx
-[DREAM2_L4_Viking_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l4_viking_kr.tskx
-[DREAM2_L4_MoleHitting_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l4_molehitting_kr.tskx
-[DREAM2_L4_BabyGoblin_KR.tskx]: http://support.robotis.com/ko/baggage_files/dream2/dream2_l4_babygoblin_kr.tskx
+[DREAM2_L4_Orgel_KR.tskx]: http://www.robotis.com/service/download.php?no=938
+[DREAM2_L4_CleanupRobot_KR.tskx]: http://www.robotis.com/service/download.php?no=931
+[DREAM2_L4_CleanupRobot_KR(RC).tskx]: http://www.robotis.com/service/download.php?no=930
+[DREAM2_L4_Truck_KR.tskx]: http://www.robotis.com/service/download.php?no=942
+[DREAM2_L4_Truck_KR(RC).tskx]: http://www.robotis.com/service/download.php?no=941
+[DREAM2_L4_BumperCar_KR.tskx]: http://www.robotis.com/service/download.php?no=929
+[DREAM2_L4_BumperCar_KR(RC).tskx]: http://www.robotis.com/service/download.php?no=928
+[DREAM2_L4_ProbingCar_KR.tskx]: http://www.robotis.com/service/download.php?no=940
+[DREAM2_L4_ProbingCar_KR(RC).tskx]: http://www.robotis.com/service/download.php?no=939
+[DREAM2_L4_Guitar_KR.tskx]: http://www.robotis.com/service/download.php?no=936
+[DREAM2_L4_FlagGame_KR.tskx]: http://www.robotis.com/service/download.php?no=935
+[DREAM2_L4_Crane_KR.tskx]: http://www.robotis.com/service/download.php?no=933
+[DREAM2_L4_Crane_KR(RC).tskx]: http://www.robotis.com/service/download.php?no=932
+[DREAM2_L4_Basket_KR.tskx]: http://www.robotis.com/service/download.php?no=934
+[DREAM2_L4_Viking_KR.tskx]: http://www.robotis.com/service/download.php?no=943
+[DREAM2_L4_MoleHitting_KR.tskx]: http://www.robotis.com/service/download.php?no=937
+[DREAM2_L4_BabyGoblin_KR.tskx]: http://www.robotis.com/service/download.php?no=927
