@@ -598,6 +598,8 @@ $ roslaunch open_manipulator_description open_manipulator_rviz.launch
 
 # [Basic Manipulation](#basic-manipulation)
 
+## [Message List](#message-list)
+
 {% capture notice_01 %}
 **NOTE**: 
 - This instructions were tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
@@ -605,8 +607,6 @@ $ roslaunch open_manipulator_description open_manipulator_rviz.launch
 - Make sure to run the [Open Manipulator controller](/docs/en/platform/openmanipulator/#launch-controller) instructions before running the instructions below.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
-
-## [Message List](#message-list)
 
 Open Manipulator Controller provides **topic** and **service** messages to control manipulator and check the states of manipulator.
 
@@ -647,15 +647,15 @@ The topic list is published by open_manipulator_controller.
 **NOTE**: These topics are messages for checking the status of the robot regardless of the robot's motion.
 {: .notice--info}
 
-`/open_manipulator/joint_states` is a message indicating the states of the joints in OpenManipulator. **"name"** of this message indicates joint component names OpenManipulator have.  **"effort"** indicates currents of the joint Dynamixels. **"position"** and **"velocity"** indicates the angle and angular velocity of each joints.
+`/open_manipulator/joint_states`([sensor_msgs/JointState]{: .popup}) is a message indicating the states of the joints in OpenManipulator. **"name"** of this message indicates joint component names OpenManipulator have.  **"effort"** indicates currents of the joint Dynamixels. **"position"** and **"velocity"** indicates the angle and angular velocity of each joints.
 
 ![](/assets/images/platform/openmanipulator/rqt_joint_states.png)
 
-`/open_manipulator/kinematics_pose` is a message indicating the pose(position and orientation) on world coordinate(cartesian) of OpenManipulator gripper. **"position"** indicates x, y, and z value of the center of the tool gripper. **"Orientation"** indicates the direction of the tool gripper as quaternion.
+`/open_manipulator/kinematics_pose`([open_manipulator_msgs/KinematicsPose]{: .popup}) is a message indicating the pose(position and orientation) on world coordinates(cartesian) of OpenManipulator gripper. **"position"** indicates x, y, and z value of the center of the tool gripper. **"Orientation"** indicates the direction of the tool gripper as quaternion.
 
 ![](/assets/images/platform/openmanipulator/rqt_kinematic_pose.png)
 
-`/open_manipulator/states` is a message indicating the status of OpenManipulator. **"open_manipulator_actuator_state"** indicates whether the torque of the actuator(Dynamixel) is enable("ACTUATOR_ENABLE") or disable("ACTUATOR_DISABLE"). **"open_manipulator_moving_state"** indicates whether OpenManipulator is "MOVING" or "STOPPED" along the trajectory.
+`/open_manipulator/states`([open_manipulator_msgs/OpenManipulatorState]{: .popup}) is a message indicating the status of OpenManipulator. **"open_manipulator_actuator_state"** indicates whether the torque of the actuator(Dynamixel) is enable("ACTUATOR_ENABLE") or disable("ACTUATOR_DISABLE"). **"open_manipulator_moving_state"** indicates whether OpenManipulator is "MOVING" or "STOPPED" along the trajectory.
 
 ![](/assets/images/platform/openmanipulator/rqt_states.png)
 
@@ -668,7 +668,7 @@ The topic list is subscribed by open_manipulator_controller.
 **NOTE**: These topics are messages for checking the status of the robot regardless of the robot's motion.
 {: .notice--info}
 
-`/open_manipulator/option` is used to set OpenManipulator options (std :: string type). 
+`/open_manipulator/option`([std_msgs::String]{: .popup}) is used to set OpenManipulator options (std :: string type). 
 - **"print_open_manipulator_setting"** : request display "Manipulator Description" to open_manipulator_controller. 
 
  
@@ -1365,3 +1365,8 @@ CAD Files ([Onshape](http://www.robotis.com/service/download.php?no=761), [Thing
 [open_manipulator_msgs/SetKinematicPose]: /docs/en/popup/open_manipulator_msgs_SetKinematicPose/
 [open_manipulator_msgs/SetActuatorState]: /docs/en/popup/open_manipulator_msgs_SetActuatorState/
 [open_manipulator_msgs/SetDrawingTrajectory]: /docs/en/popup/open_manipulator_msgs_SetDrawingTrajectory/
+
+[sensor_msgs/JointState]: /docs/en/popup/sensor_msgs_JointState_msg/
+[open_manipulator_msgs/KinematicsPose]: /docs/en/popup/open_manipulator_msgs_KinematicsPose/
+[open_manipulator_msgs/OpenManipulatorState]: /docs/en/popup/open_manipulator_msgs_OpenManipulatorState/
+[std_msgs::String]: /docs/en/popup/std_msgs_string/
