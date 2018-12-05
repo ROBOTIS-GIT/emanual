@@ -250,6 +250,10 @@ Launch Open Manipulator Controller to start [Basic Manipulation](/docs/en/platfo
 $ roslaunch open_manipulator_controller open_manipulator_controller.launch
 ```
 
+**WARNING**: If you start the controller in a pose where the components of OpenManipulator are in contact with each other, the OpenManipulator will not move by joint limit. It is recommended to place the Open Manipulator in the following Pose and start the control. 
+[Recommended start pose](/assets/images/platform/openmanipulator/start_pose.png)
+{: .notice--warning}
+
 If OpenManipulator controller launched successfully, the terminal will represent below messages.
 
 ```
@@ -713,7 +717,7 @@ This is Service Server list of open_manipulator_controller.
 
 
 
-### [RC100](#rc100)
+### [PS4 Joystick](#ps4-joystick)
 
 
 ### [XBOX 360 Joystick](#xbox-360-joystick)
@@ -768,10 +772,6 @@ Below services are help you to manipulate OpenManipulator
 
   ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_moveit_real_4.png)
 
-
-# [Camera Application](#camera-application)
-
-**Coming Soon**
 
 # [Gazebo Simulation](#gazebo-simulation)
 
@@ -906,15 +906,30 @@ Open processing source code file (`OpenCR`>`arduino`>`opencr_arduino`>`opencr`>`
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_chain_processing_2.png)
 
+## [Basic Manipulation on OpenCR](#basic-manipulation-on-opencr)
 
-# [Tool Gripper Modification](#tool-gripper-modification)
+
+### [Control Interface](#control-interface)
+
+### [Teleoperation RC100](#teleoperation-rc100)
+
+### [Hand guiding](#hand-guiding)
+
+
+
+
+# [Camera Application](#camera-application)
+
+**Coming Soon**
+
+# [Tool Modification](#tool-modification)
 
 ## [Vacuum Gripper](#vaccum-gripper)
 
 
 
 
-## [Pen Gripper](#pen-gripper)
+## [Pen Holder](#pen-holder)
 
 
 

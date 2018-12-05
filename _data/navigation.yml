@@ -12873,13 +12873,15 @@ openmanipulator:
       url: /platform/openmanipulator/#dynamixel-examples
     - title: "Introduction video"
       url: /platform/openmanipulator/#introduction-video
+
   - title: "Specification"
     url: /platform/openmanipulator/#specification
     children:
     - title: "Hardware Specification"
       url: /platform/openmanipulator/#hardware-specification
     - title: "Dimension"
-      url: /platform/openmanipulator/#demension
+      url: /platform/openmanipulator/#dimension
+
   - title: "Hardware Setup"
     url: /platform/openmanipulator/#hardware-setup
     children:
@@ -12898,8 +12900,6 @@ openmanipulator:
       url: /platform/openmanipulator/#install-ros-on-pc
     - title: "Install ROS Packages"
       url: /platform/openmanipulator/#install-ros-packages
-    - title: "Run roscore"
-      url: /platform/openmanipulator/#run-roscore
     - title: "Usb Settings"
       url: /platform/openmanipulator/#usb-settings
   - title: "Controller"
@@ -12915,9 +12915,9 @@ openmanipulator:
       - title: "Manipulator Description"
         url: /platform/openmanipulator/#manipulator-description
       - title: "RViz"
-        url: /platform/openmanipulator/#openmanipulator-controller  
+        url: /platform/openmanipulator/#rviz  
   - title: "Basic Manipulation"
-    url: /platform/openmanipulator/#rviz
+    url: /platform/openmanipulator/#basic-manipulation
     children:
     - title: "Message List"
       url: /platform/openmanipulator/#message-list
@@ -12933,14 +12933,12 @@ openmanipulator:
       children:
       - title: "Keyboard"
         url: /platform/openmanipulator/#keyboard
-      - title: "RC100"
-        url: /platform/openmanipulator/#rc100
+      - title: "PS4 Joystick"
+        url: /platform/openmanipulator/#ps4-joystick
       - title: "XBOX 360 Joystick"
         url: /platform/openmanipulator/#xbox-360-joystick
     - title: "Moveit!"
-      url: /platform/openmanipulator/#moveit
-  - title: "Camera Application"
-    url: /platform/openmanipulator/#camera-application    
+      url: /platform/openmanipulator/#moveit 
   - title: "Gazebo Simulation"
     url: /platform/openmanipulator/#gazebo-simulation
     children:
@@ -12957,13 +12955,24 @@ openmanipulator:
       url: /platform/openmanipulator/#arduino-ide
     - title: "Processing"
       url: /platform/openmanipulator/#processing
-  - title: "Tool Gripper Modification"
-    url: /platform/openmanipulator/#tool-gripper-modification
+    - title: "Basic Manipulation on OpenCR"
+      url: /platform/openmanipulator/#basic-manipulation-on-opencr
+      children:
+      - title: "Control Interface"
+        url: /platform/openmanipulator/#control-interface
+      - title: "Teleoperation-RC100"
+        url: /platform/openmanipulator/#teleoperation-rc100
+      - title: "Hand guiding"
+        url: /platform/openmanipulator/#hand-guiding
+  - title: "Camera Application"
+    url: /platform/openmanipulator/#camera-application   
+  - title: "Tool Modification"
+    url: /platform/openmanipulator/#tool-modification
     children:
     - title: "Vacuum Gripper"
       url: /platform/openmanipulator/#vacuum-gripper
-    - title: "Pen Gripper"
-      url: /platform/openmanipulator/#pen-gripper
+    - title: "Pen Holder"
+      url: /platform/openmanipulator/#pen-holder
   - title: "Mobile Manipulation"
     url: /platform/openmanipulator/#mobile-manipulation
   - title: "Friends"
