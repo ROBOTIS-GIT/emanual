@@ -1265,3 +1265,8 @@ CAD Files ([Onshape](http://www.robotis.com/service/download.php?no=761), [Thing
 
 [OpenCR]: /docs/en/parts/controller/opencr10/
 [OpenCR Manual]: /docs/en/parts/controller/opencr10/
+
+[open_manipulator_msgs/SetJointPosition]: /docs/en/popup/open_manipulator_msgs_SetJointPosition/
+[open_manipulator_msgs/SetKinematicPose]: /docs/en/popup/open_manipulator_msgs_SetKinematicPose/
+[open_manipulator_msgs/SetActuatorState]: /docs/en/popup/open_manipulator_msgs_SetActuatorState/
+[open_manipulator_msgs/SetDrawingTrajectory]: /docs/en/popup/open_manipulator_msgs_SetDrawingTrajectory/
