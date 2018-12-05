@@ -149,10 +149,15 @@ Below video might be help you.
 
 # [PC Setup](#pc-setup)
 
-**NOTE**: This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
-{: .notice--info}
-**NOTE**: If you want to control OpenManipulator on OpenCR(Embedded board) instead of ROS, please set it up as described in [How to Control on OpenCR](/docs/en/platform/openmanipulator/#how-to-control-on-opencr).
-{: .notice--info}
+{% capture notice_01 %}
+**NOTE**: 
+- This instructions were tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+- If you want to control OpenManipulator on OpenCR(Embedded board) instead of ROS, please set it up as described in [How to Control on OpenCR](/docs/en/platform/openmanipulator/#how-to-control-on-opencr).
+{% endcapture %}
+<div class="notice--info">{{ notice_01 | markdownify }}</div>
+
+
+
 
 ## [Install Ubuntu on PC](#install-ubuntu-on-pc)
 
@@ -290,6 +295,14 @@ Gripper Dynamixel ID : 15, Model Name :XM430-W350
 
 ## [Check Setting](#check-setting)
 
+{% capture notice_01 %}
+**NOTE**: 
+- This instructions were tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+- This instructions are supposed to be running on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.
+- Make sure to run the [Open Manipulator controller](/docs/en/platform/openmanipulator/#launch-controller) instructions before running the instructions below.
+{% endcapture %}
+<div class="notice--info">{{ notice_01 | markdownify }}</div>
+
 ### [Manipulator Description](#manipulator-description)
 
 Publish a topic message to check the OpenManipulator setting.
@@ -298,8 +311,9 @@ Publish a topic message to check the OpenManipulator setting.
 robotis@spc:~$ rostopic pub /open_manipulator/option std_msgs/String "print_open_manipulator_setting"
 ```
 
-**NOTE**: <**Manipulator Description**> will be printed on the terminal launch the open_manipulator_controller. It is shown that present state of the OpenManipulator. This parameter is descripted on OpenManipulator.cpp in open_manipulator_libs pkg (~/catkin_ws/src/open_manipulator/open_manipulator_libs/src/OpenManipulator.cpp)
-{: .notice--info}
+<**Manipulator Description**> will be printed on the terminal launch the open_manipulator_controller. It is shown that present state of the OpenManipulator.  
+This parameter is descripted on OpenManipulator.cpp in open_manipulator_libs pkg  
+`~/catkin_ws/src/open_manipulator/open_manipulator_libs/src/OpenManipulator.cpp`
 
 ```
 ----------<Manipulator Description>----------
@@ -587,10 +601,6 @@ $ roslaunch open_manipulator_description open_manipulator_rviz.launch
 
 # [Basic Manipulation](#basic-manipulation)
 
-## [Message List](#message-list)
-
-Open Manipulator Controller provides **topic** and **service** messages to control manipulator and check the states of manipulator.
-
 {% capture notice_01 %}
 **NOTE**: 
 - This instructions were tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
@@ -598,6 +608,10 @@ Open Manipulator Controller provides **topic** and **service** messages to contr
 - Make sure to run the [Open Manipulator controller](/docs/en/platform/openmanipulator/#launch-controller) instructions before running the instructions below.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
+
+## [Message List](#message-list)
+
+Open Manipulator Controller provides **topic** and **service** messages to control manipulator and check the states of manipulator.
 
 ### [Topic](#topic)
 
@@ -627,15 +641,14 @@ If you want to see more detail topic message, click the `▶` button next to eac
 
 #### [Published Topic List](#published-topic-list)
 
-**NOTE**: These topics are messages for checking the status of the robot regardless of the robot's motion.
-{: .notice--info}
-
 **Published Topic List** :
 The topic list is published by open_manipulator_controller.
 - `/open_manipulator/joint_states`
 - `/open_manipulator/kinematics_pose`
 - `/open_manipulator/states`
 
+**NOTE**: These topics are messages for checking the status of the robot regardless of the robot's motion.
+{: .notice--info}
 
 `/open_manipulator/joint_states` is a message indicating the states of the joints in OpenManipulator. **"name"** of this message indicates joint component names OpenManipulator have.  **"effort"** indicates currents of the joint Dynamixels. **"position"** and **"velocity"** indicates the angle and angular velocity of each joints.
 
@@ -651,13 +664,12 @@ The topic list is published by open_manipulator_controller.
 
 #### [Subscribed Topic List](#published-topic-list)
 
-**NOTE**: These topics are messages for checking the status of the robot regardless of the robot's motion.
-{: .notice--info}
-
 **Subscribed Topic List**: 
 The topic list is subscribed by open_manipulator_controller.
 - `/open_manipulator/option`
 
+**NOTE**: These topics are messages for checking the status of the robot regardless of the robot's motion.
+{: .notice--info}
 
 `/open_manipulator/option` is used to set OpenManipulator options (std :: string type). 
 - **"print_open_manipulator_setting"** : request display "Manipulator Description" to open_manipulator_controller. 
@@ -674,7 +686,7 @@ In addition, you can monitor topics through rqt whenever you have a topic added 
 
 #### [Service Server List](#service-server-list)
 
-**NOTE**: These services are messages to operate the robot or to change the status of the Dynamixels of OpenManipulator.
+**NOTE**: These services are messages to operate the OpenManipulator or to change the status of the Dynamixels of OpenManipulator.
 {: .notice--info}
 
 
@@ -788,6 +800,9 @@ Launch an OpenManipulator controller for gazebo simulation.
   ```
   $ roslaunch open_manipulator_controller open_manipulator_controller.launch use_platform:=false
   ```
+**NOTE** : To control the OpenManipulator in the Gazebo environment using the Open Manipulator Controller, the controller must set the **use_platform** parameter to **false** because it needs to send messages to gazebo instead of Platform.
+{: .notice--info}
+
 If the OpenManipulator controller for gazebo simulation Launched successfully, the terminal will represent below messages.
 
 ```
