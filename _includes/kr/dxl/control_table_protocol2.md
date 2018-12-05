@@ -3,6 +3,16 @@
 Control Table은 장치 내부에 존재하는 값으로서 장치의 현재 상태와 구동에 관한 Data로 구성되어 있습니다.  
 사용자는 Instruction Packet을 통해 Control Table의 Data를 변경하는 방식으로 장치를 제어할 수 있습니다.
 
+{% if site.ref='mx-28-2' or site.ref='mx-64-2' or site.ref='mx-106-2' %}
+{% capture mx2_control_table %}
+**주의**
+1. MX(2.0) Firmware는 MX series의 Control table과 주소가 다릅니다. 사용 전에 Control table 주소를 필히 확인해 주세요.
+2. MX(2.0) Firmware는 Dynamixel X의 기능을 상속받습니다. 따라서 Protocol 1.0과 2.0 및 다양한 Operating Mode와 Secondary ID, Drive Mode, Bus Watchdog 등을 지원합니다. 자세한 사항은 Control table을 참고해주세요.
+{% endcapture %}
+
+<div class="notice--warning">{{ mx2_control_table | markdownify }}</div>
+{% else %}{% endif %}
+
 ## [컨트롤 테이블, 데이터, 주소](#컨트롤-테이블-데이터-주소)
 Control Table은 장치의 상태와 제어를 위한 다수의 Data 필드로 구성된 집합체입니다.  
 사용자는 READ Instruction Packet을 통해 Control Table의 특정 Data를 읽어서 장치의 상태를 파악할 수 있습니다.  
