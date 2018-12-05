@@ -481,7 +481,7 @@ This instruction controls the flow of program based on the True/False result of 
 - When using multiple conditional clauses, the following logical operators can be used :
   - then : does not connect any conditional clause. Only uses one conditional clause.
   - && : two conditional clauses are computed with AND operation
-  - || : two conditional clauses are computed with OR operation
+  - \|\| : two conditional clauses are computed with OR operation
 
     ![](/assets/images/sw/rplus2/task/roboplus_task2_067.jpg)
 

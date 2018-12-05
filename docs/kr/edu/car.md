@@ -89,10 +89,19 @@ sidebar:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/bG-v-d0KbTc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
+## [절전모드 해제](#절전모드-해제)
+자동차 로봇의 전원을 켠 상태에서 1분 이상 아무 입력 없이 대기상태인 경우 자동으로 전원이 꺼집니다.  
+아래 동영상과 같이 절전모드를 해제할 수 있으며, 전원을 껐다 켜면 절전모드가 자동으로 재활성화됩니다.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/geZHRmItgLs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+**참고** : 자동차 로봇의 펌웨어 버전에 따라 1번칸 또는 2번칸의 LED가 깜빡이면 설정이 완료된 것입니다.
+{: .notice}
+
 # [교육자료 다운로드](#교육자료-다운로드)
 
-- `다운로드` [ROBOTIS R+Scratch]
-- `다운로드` [ROBOTCAR entry]
+- `다운로드` [ROBOTIS R+Scratch]{: .blank}
+- `다운로드` [ROBOTCAR entry]{: .blank}
 
 [ROBOTIS R+Scratch]: http://www.robotis.com/service/download.php?no=747
 [ROBOTCAR entry]: http://www.robotis.com/service/download.php?no=746
