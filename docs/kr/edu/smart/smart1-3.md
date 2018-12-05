@@ -57,10 +57,10 @@ sidebar:
 
 1. 단원별 예제 프로그램
 
-|                                    로봇                                     |                                                                     태스크 코드                                                                      |
-|:---------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------:|
-|     1. 스마트 탐사차<br />![](/assets/images/edu/smart/3._explorer.png)     |                              [로봇 예제 프로그램][01_SMART_L3_SMARTEXPLORER_KR.tsk]<br />[프로그래밍 예제 프로그램][02_SMART_L3_tts_test_KR.tsk]                               |
-|      2. 말하는 로봇<br /> ![](/assets/images/edu/smart/3._talking.png)      |                        [로봇 예제 프로그램][01_SMART_L3_TALKINGROBOT_KR.tsk]<br />[프로그래밍 예제 프로그램][02_SMART_L3_speechrecognition_test_KR.tsk]                        |
+|                                    로봇                                     |                                                                                  태스크 코드                                                                                        |
+|:---------------------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+|     1. 스마트 탐사차<br />![](/assets/images/edu/smart/3._explorer.png)     |                                 [로봇 예제 프로그램][01_SMART_L3_SMARTEXPLORER_KR.tsk]<br />[프로그래밍 예제 프로그램][02_SMART_L3_tts_test_KR.tsk]                                    |
+|      2. 말하는 로봇<br /> ![](/assets/images/edu/smart/3._talking.png)      |                           [로봇 예제 프로그램][01_SMART_L3_TALKINGROBOT_KR.tsk]<br />[프로그래밍 예제 프로그램][02_SMART_L3_speechrecognition_test_KR.tsk]                             |
 |     3. 스마트 4족 로봇<br />![](/assets/images/edu/smart/3._ruped.png)      |     [로봇 예제 프로그램][01_SMART_L3_QUADRUPEDROBOT_KR.tsk]<br />[프로그래밍 예제 프로그램][02_SMART_L3_motion_test_KR.tsk]<br />[로봇 모션 프로그램][SMART_L3_QUADRUPEDROBOT.mtnx]      |
 |      4. 스마트 강아지<br />![](/assets/images/edu/smart/3._puppy.png)       |          [로봇 예제 프로그램][01_SMART_L3_SMARTPUPPY_KR.tsk]<br />[프로그래밍 예제 프로그램][02_SMART_L3_audio_test_KR.tsk]<br />[로봇 모션 프로그램][SMART_L3_SMARTPUPPY.mtnx]          |
 | 5. 스마트 변신 로봇<br />![](/assets/images/edu/smart/3._transfomation.png) | [로봇 예제 프로그램][01_SMART_L3_TRANSFORMATIONROBOT_KR.tsk]<br />[프로그래밍 예제 프로그램][02_SMART_L3_video_test_KR.tsk]<br />[로봇 모션 프로그램][SMART_L3_TRANSFORMATIONROBOT.mtnx] |
@@ -73,19 +73,19 @@ sidebar:
 [스마트3단계 교안예제]: #교안예제
 [태스크 코드 다운로드]: /docs/kr/faq/download_task_code/
 [BT-210]: /docs/kr/parts/communication/bt-210/
-[01_SMART_L3_SMARTEXPLORER_KR.tsk]: http://support.robotis.com/ko/baggage_files/smart/01_smart_l3_smartexplorer_kr.tsk
-[02_SMART_L3_tts_test_KR.tsk]: http://support.robotis.com/ko/baggage_files/smart/02_smart_l3_tts_test_kr.tsk
-[01_SMART_L3_TALKINGROBOT_KR.tsk]: http://support.robotis.com/ko/baggage_files/smart/01_smart_l3_talkingrobot_kr.tsk
-[02_SMART_L3_speechrecognition_test_KR.tsk]: http://support.robotis.com/ko/baggage_files/smart/02_smart_l3_speechrecognition_test_kr.tsk
-[01_SMART_L3_QUADRUPEDROBOT_KR.tsk]: http://support.robotis.com/ko/baggage_files/smart/01_smart_l3_quadrupedrobot_kr.tsk
-[02_SMART_L3_motion_test_KR.tsk]: http://support.robotis.com/ko/baggage_files/smart/02_smart_l3_motion_test_kr.tsk
-[SMART_L3_QUADRUPEDROBOT.mtnx]: http://support.robotis.com/down.php?filepath=ko/baggage_files/smart/smart_l3_quadrupedrobot.mtnx
-[01_SMART_L3_SMARTPUPPY_KR.tsk]: http://support.robotis.com/ko/baggage_files/smart/01_smart_l3_smartpuppy_kr.tsk
-[02_SMART_L3_audio_test_KR.tsk]: http://support.robotis.com/ko/baggage_files/smart/02_smart_l3_audio_test_kr.tsk
-[SMART_L3_SMARTPUPPY.mtnx]: http://support.robotis.com/down.php?filepath=ko/baggage_files/smart/smart_l3_smartpuppy.mtnx
-[01_SMART_L3_TRANSFORMATIONROBOT_KR.tsk]: http://support.robotis.com/down.php?filepath=ko/baggage_files/smart/smart_l3_smartpuppy.mtnx
-[02_SMART_L3_video_test_KR.tsk]: http://support.robotis.com/ko/baggage_files/smart/02_smart_l3_video_test_kr.tsk
-[SMART_L3_TRANSFORMATIONROBOT.mtnx]: http://support.robotis.com/down.php?filepath=ko/baggage_files/smart/smart_l3_transformationrobot.mtnx
-[01_SMART_L3_SMARTDROID_KR.tsk]: http://support.robotis.com/ko/baggage_files/smart/01_smart_l3_smartdroid_kr.tsk
-[02_SMART_L3_gesture_test_KR.tsk]: http://support.robotis.com/ko/baggage_files/smart/02_smart_l3_gesture_test_kr.tsk
-[SMART_L3_SMARTDROID.mtnx]: http://support.robotis.com/down.php?filepath=ko/baggage_files/smart/smart_l3_smartdroid.mtnx
+[01_SMART_L3_QUADRUPEDROBOT_KR.tsk]: http://www.robotis.com/service/download.php?no=980
+[01_SMART_L3_SMARTDROID_KR.tsk]: http://www.robotis.com/service/download.php?no=981
+[01_SMART_L3_SMARTEXPLORER_KR.tsk]: http://www.robotis.com/service/download.php?no=982
+[01_SMART_L3_SMARTPUPPY_KR.tsk]: http://www.robotis.com/service/download.php?no=983
+[01_SMART_L3_TALKINGROBOT_KR.tsk]: http://www.robotis.com/service/download.php?no=984
+[01_SMART_L3_TRANSFORMATIONROBOT_KR.tsk]: http://www.robotis.com/service/download.php?no=985
+[02_SMART_L3_audio_test_KR.tsk]: http://www.robotis.com/service/download.php?no=986
+[02_SMART_L3_gesture_test_KR.tsk]: http://www.robotis.com/service/download.php?no=987
+[02_SMART_L3_motion_test_KR.tsk]: http://www.robotis.com/service/download.php?no=988
+[02_SMART_L3_speechrecognition_test_KR.tsk]: http://www.robotis.com/service/download.php?no=989
+[02_SMART_L3_tts_test_KR.tsk]: http://www.robotis.com/service/download.php?no=990
+[02_SMART_L3_video_test_KR.tsk]: http://www.robotis.com/service/download.php?no=991
+[SMART_L3_QUADRUPEDROBOT.mtnx]: http://www.robotis.com/service/download.php?no=992
+[SMART_L3_SMARTDROID.mtnx]: http://www.robotis.com/service/download.php?no=993
+[SMART_L3_SMARTPUPPY.mtnx]: http://www.robotis.com/service/download.php?no=994
+[SMART_L3_TRANSFORMATIONROBOT.mtnx]: http://www.robotis.com/service/download.php?no=995

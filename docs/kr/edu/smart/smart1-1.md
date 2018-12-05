@@ -63,14 +63,14 @@ sidebar:
 다운로드시 필요한 [BT-210] 은 1단계 구성품에 포함되어 있습니다. 분실시 쇼핑몰에서 별도 구매 해주세요.
 {: .notice}
 
-|로봇|태스크 코드|
-| :---: | :-----: |
-|1. 바람개비 꽃<br />![](/assets/images/edu/smart/flower.jpg)|[로봇 예제 프로그램][01_SMART_L1_Flower_KR.tsk]<br />[프로그래밍 예제 프로그램][02_SMART_L1_dB_test_KR.tsk]|
-|2. 거미<br /> ![](/assets/images/edu/smart/spider.jpg)|[로봇 예제 프로그램][01_SMART_L1_Spider_KR.tsk]<br />[프로그래밍 예제 프로그램][02_SMART_L1_Illumination_test_KR.tsk]|
-|3. 지키미<br />![](/assets/images/edu/smart/gikimi.jpg)|[로봇 예제 프로그램][01_SMART_L1_Gikimi_KR.tsk]<br />[프로그래밍 예제 프로그램][02_SMART_L1_MotionDetection_test_KR.tsk]|
-|4. 꿀벌<br />![](/assets/images/edu/smart/dancingbee.jpg)|[로봇 예제 프로그램][01_SMART_L1_Dancingbee_KR.tsk]<br />[프로그래밍 예제 프로그램][02_SMART_L1_Shake_KR.tsk]|
-|5. 청기백기<br />![](/assets/images/edu/smart/flag.jpg)|[로봇 예제 프로그램][01_SMART_L1_Flag_KR.tsk]<br />[프로그래밍 예제 프로그램][02_SMART_L1_Image_test_KR.tsk]|
-|6. 전자총<br />![](/assets/images/edu/smart/electrogungun.jpg)|[로봇 예제 프로그램][01_SMART_L1_ElectroGun_KR.tsk]<br />[프로그래밍 예제 프로그램][02_SMART_L1_Character_test_KR.tsk]|
+|                              로봇                              |                                                       태스크 코드                                                        |
+|:--------------------------------------------------------------:|:------------------------------------------------------------------------------------------------------------------------:|
+|  1. 바람개비 꽃<br />![](/assets/images/edu/smart/flower.jpg)  |       [로봇 예제 프로그램][01_SMART_L1_Flower_KR.tsk]<br />[프로그래밍 예제 프로그램][02_SMART_L1_dB_test_KR.tsk]        |
+|     2. 거미<br /> ![](/assets/images/edu/smart/spider.jpg)     |  [로봇 예제 프로그램][01_SMART_L1_Spider_KR.tsk]<br />[프로그래밍 예제 프로그램][02_SMART_L1_Illumination_test_KR.tsk]   |
+|    3. 지키미<br />![](/assets/images/edu/smart/gikimi.jpg)     | [로봇 예제 프로그램][01_SMART_L1_Gikimi_KR.tsk]<br />[프로그래밍 예제 프로그램][02_SMART_L1_MotionDetection_test_KR.tsk] |
+|   4. 꿀벌<br />![](/assets/images/edu/smart/dancingbee.jpg)    |      [로봇 예제 프로그램][01_SMART_L1_Dancingbee_KR.tsk]<br />[프로그래밍 예제 프로그램][02_SMART_L1_Shake_KR.tsk]       |
+|    5. 청기백기<br />![](/assets/images/edu/smart/flag.jpg)     |       [로봇 예제 프로그램][01_SMART_L1_Flag_KR.tsk]<br />[프로그래밍 예제 프로그램][02_SMART_L1_Image_test_KR.tsk]       |
+| 6. 전자총<br />![](/assets/images/edu/smart/electrogungun.jpg) |  [로봇 예제 프로그램][01_SMART_L1_ElectroGun_KR.tsk]<br />[프로그래밍 예제 프로그램][02_SMART_L1_Character_test_KR.tsk]  |
 
 
 [R+SMART]: /docs/kr/software/mobile_app/rplussmart/#r-smart-다운로드설치
@@ -82,15 +82,15 @@ sidebar:
 [R+ SMART 설치 및 예제 다운로드 방법 바로가기]: /docs/kr/software/mobile_app/rplussmart/#r-smart-다운로드설치
 [1단계 교안예제]: #교안예제
 [태스크 코드 다운로드]: /docs/kr/faq/download_task_code/
-[01_SMART_L1_Flower_KR.tsk]: http://support.robotis.com/ko/baggage_files/smart/01_smart_l1_flower_kr.tsk
-[02_SMART_L1_dB_test_KR.tsk]: http://support.robotis.com/ko/baggage_files/smart/02_smart_l1_db_test_kr.tsk
-[01_SMART_L1_Spider_KR.tsk]: http://support.robotis.com/ko/baggage_files/smart/01_smart_l1_spider_kr.tsk
-[02_SMART_L1_Illumination_test_KR.tsk]: http://support.robotis.com/ko/baggage_files/smart/02_smart_l1_illumination_test_kr.tsk
-[01_SMART_L1_Gikimi_KR.tsk]: http://support.robotis.com/ko/baggage_files/smart/01_smart_l1_gikimi_kr.tsk
-[02_SMART_L1_MotionDetection_test_KR.tsk]: http://support.robotis.com/ko/baggage_files/smart/02_smart_l1_motiondetection_test_kr.tsk
-[01_SMART_L1_Dancingbee_KR.tsk]: http://support.robotis.com/ko/baggage_files/smart/01_smart_l1_dancingbee_kr.tsk
-[02_SMART_L1_Shake_KR.tsk]: http://support.robotis.com/ko/baggage_files/smart/02_smart_l1_shake_test_kr.tsk
-[01_SMART_L1_Flag_KR.tsk]: http://support.robotis.com/ko/baggage_files/smart/01_smart_l1_flag_kr.tsk
-[02_SMART_L1_Image_test_KR.tsk]: http://support.robotis.com/ko/baggage_files/smart/02_smart_l1_image_test_kr.tsk
-[01_SMART_L1_ElectroGun_KR.tsk]: http://support.robotis.com/ko/baggage_files/smart/01_smart_l1_electrogun_kr.tsk
-[02_SMART_L1_Character_test_KR.tsk]: http://support.robotis.com/ko/baggage_files/smart/02_smart_l1_character_test_kr.tsk
+[01_SMART_L1_Flower_KR.tsk]: http://www.robotis.com/service/download.php?no=959
+[02_SMART_L1_dB_test_KR.tsk]: http://www.robotis.com/service/download.php?no=963
+[01_SMART_L1_Spider_KR.tsk]: http://www.robotis.com/service/download.php?no=961
+[02_SMART_L1_Illumination_test_KR.tsk]: http://www.robotis.com/service/download.php?no=964
+[01_SMART_L1_Gikimi_KR.tsk]: http://www.robotis.com/service/download.php?no=960
+[02_SMART_L1_MotionDetection_test_KR.tsk]: http://www.robotis.com/service/download.php?no=966
+[01_SMART_L1_Dancingbee_KR.tsk]: http://www.robotis.com/service/download.php?no=956
+[02_SMART_L1_Shake_KR.tsk]: http://www.robotis.com/service/download.php?no=967
+[01_SMART_L1_Flag_KR.tsk]: http://www.robotis.com/service/download.php?no=958
+[02_SMART_L1_Image_test_KR.tsk]: http://www.robotis.com/service/download.php?no=965
+[01_SMART_L1_ElectroGun_KR.tsk]: http://www.robotis.com/service/download.php?no=957
+[02_SMART_L1_Character_test_KR.tsk]: http://www.robotis.com/service/download.php?no=962
