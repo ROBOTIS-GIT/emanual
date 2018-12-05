@@ -12947,7 +12947,7 @@ openmanipulator:
     - title: "Launch gazebo"
       url: /platform/openmanipulator/#launch-gazebo
   - title: "How to Control on OpenCR"
-    url: /platform/openmanipulator/#how-to-contol-on-opencr
+    url: /platform/openmanipulator/#how-to-control-on-opencr
     children:
     - title: "Setup"
       url: /platform/openmanipulator/#setup

@@ -680,27 +680,30 @@ In addition, you can monitor topics through rqt whenever you have a topic added 
 
 **Service Server List** :
 This is Service Server list of open_manipulator_controller.
-- `/open_manipulator/goal_joint_space_path`
-- `/open_manipulator/goal_task_space_path`
-- `/open_manipulator/goal_joint_space_path_to_present`
-- `/open_manipulator/goal_task_space_path_to_present`
-- `/open_manipulator/goal_tool_control`
-- `/open_manipulator/set_actuator_state`
-- `/open_manipulator/goal_drawing_trajectory`
 
-`/open_manipulator/goal_joint_space_path` is ...
+- `/open_manipulator/goal_joint_space_path` ([open_manipulator_msgs/SetJointPosition]{: .popup})  
+The user can use this service to create a trajectory in the joint space. The user inputs the angle of the target joint and the total time of the trajectory.
+  
 
-`/open_manipulator/goal_task_space_path` is ...
+- `/open_manipulator/goal_task_space_path` ([open_manipulator_msgs/SetKinematicPose]{: .popup})  
+The user can use this service to create a trajectory in the task space. The user inputs the kinematic pose of the OpenManipulator end-effector relative to the base frame and the total time of the trajectory.
 
-`/open_manipulator/goal_joint_space_path_to_present` is ...
+- `/open_manipulator/goal_joint_space_path_to_present` ([open_manipulator_msgs/SetJointPosition]{: .popup})  
+The user can use this service to create a trajectory from present joint angle in the joint space. The user inputs the angle of the target joint to be changed and the total time of the trajectory.
 
-`/open_manipulator/goal_task_space_path_to_present` is ...
+- `/open_manipulator/goal_task_space_path_to_present` ([open_manipulator_msgs/SetKinematicPose]{: .popup})  
+The user can use this service to create a trajectory from present kinematic pose in the task space. The user inputs the kinematic pose to be changed of the OpenManipulator end-effector relative to the base frame and the total time of the trajectory.
 
-`/open_manipulator/goal_tool_control` is ...
+- `/open_manipulator/goal_tool_control` ([open_manipulator_msgs/SetJointPosition]{: .popup})  
+The user can use this service to move the tool of OpenManipulator. 
 
-`/open_manipulator/set_actuator_state` is ...
+- `/open_manipulator/set_actuator_state` ([open_manipulator_msgs/SetActuatorState]{: .popup})  
+The user can use this service to control the state of actucators.   
+If the user set true at setActuatorState valuable, the actuator will be enabled.
+If the user set false at setActuatorState valuable, the actuator will be disabled.
 
-`/open_manipulator/goal_drawing_trajectory` is ...
+- `/open_manipulator/goal_drawing_trajectory` ([open_manipulator_msgs/SetDrawingTrajectory]{: .popup})  
+The user can use this service to create a drawing trajectory. The user can create the circle, the rhombus, the heart, and the straight line trajectory.
 
 ## [GUI Program](#gui-program)
 
@@ -867,12 +870,12 @@ OpenManipulator in Gazebo is controllered by ROS message. For example, use below
   ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_gazebo_2.png)
 
 
-# [How to Control on OpenCR](#how-to-contol-on-opencr)
+# [How to Control on OpenCR](#how-to-control-on-opencr)
 
 OpenManipulator is compatible with **OpenCR**. We offer API to easily control manipulator.
 This API supports Dynamixel, Dynamixel X including protocol 1.0 and 2.0. Furthermore, this code can be used Friends of OpenManipulator.
 User can make thier code in **Arduino IDE** and simulate or control using **Processing** GUI.
-## [Setup](#setup)
+## [Setup](#setup) 
 
 --hardware setup
 
