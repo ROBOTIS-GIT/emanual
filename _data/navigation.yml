@@ -11312,6 +11312,8 @@ car:
       urlkr: /edu/car/#동작센서-모드
     - titlekr: "속력 바꾸기"
       urlkr: /edu/car/#속력-바꾸기
+    - titlekr: "절전모드 해제"
+      urlkr: /edu/car/#절전모드-해제
   - titlekr: "교육자료 다운로드"
     urlkr: /edu/car/#교육자료-다운로드
 
