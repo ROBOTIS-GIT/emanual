@@ -12960,7 +12960,7 @@ openmanipulator:
       children:
       - title: "Control Interface"
         url: /platform/openmanipulator/#control-interface
-      - title: "Teleoperation-RC100"
+      - title: "Teleoperation RC100"
         url: /platform/openmanipulator/#teleoperation-rc100
       - title: "Hand guiding"
         url: /platform/openmanipulator/#hand-guiding
