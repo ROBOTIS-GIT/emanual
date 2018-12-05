@@ -156,9 +156,6 @@ Below video might be help you.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
-
-
-
 ## [Install Ubuntu on PC](#install-ubuntu-on-pc)
 
 Download and install the `Ubuntu 16.04` on the `PC (your desktop or laptop PC)` from the following link.
@@ -698,45 +695,128 @@ The user can use this service to create a trajectory in the joint space. The use
   
 
 - `/open_manipulator/goal_task_space_path` ([open_manipulator_msgs/SetKinematicPose]{: .popup})  
-The user can use this service to create a trajectory in the task space. The user inputs the kinematic pose of the OpenManipulator end-effector relative to the base frame and the total time of the trajectory.
+The user can use this service to create a trajectory in the task space. The user inputs the kinematic pose of the OpenManipulator end-effector(tool) relative to the base frame and the total time of the trajectory.
 
 - `/open_manipulator/goal_joint_space_path_to_present` ([open_manipulator_msgs/SetJointPosition]{: .popup})  
 The user can use this service to create a trajectory from present joint angle in the joint space. The user inputs the angle of the target joint to be changed and the total time of the trajectory.
 
 - `/open_manipulator/goal_task_space_path_to_present` ([open_manipulator_msgs/SetKinematicPose]{: .popup})  
-The user can use this service to create a trajectory from present kinematic pose in the task space. The user inputs the kinematic pose to be changed of the OpenManipulator end-effector relative to the base frame and the total time of the trajectory.
+The user can use this service to create a trajectory from present kinematic pose in the task space. The user inputs the kinematic pose to be changed of the OpenManipulator end-effector(tool) relative to the base frame and the total time of the trajectory.
 
 - `/open_manipulator/goal_tool_control` ([open_manipulator_msgs/SetJointPosition]{: .popup})  
 The user can use this service to move the tool of OpenManipulator. 
 
 - `/open_manipulator/set_actuator_state` ([open_manipulator_msgs/SetActuatorState]{: .popup})  
 The user can use this service to control the state of actucators.   
-If the user set true at setActuatorState valuable, the actuator will be enabled.
-If the user set false at setActuatorState valuable, the actuator will be disabled.
+If the user set true at set_actuator_state valuable, the actuator will be enabled.  
+If the user set false at set_actuator_state valuable, the actuator will be disabled.
 
 - `/open_manipulator/goal_drawing_trajectory` ([open_manipulator_msgs/SetDrawingTrajectory]{: .popup})  
 The user can use this service to create a drawing trajectory. The user can create the circle, the rhombus, the heart, and the straight line trajectory.
 
 ## [GUI Program](#gui-program)
 
-  You can use GUI program to manipulate OpenManipulator. This program shows the status of the manipulator and provides the ability to operate the manipulator.
+{% capture notice_01 %}
+**NOTE**: 
+- This instructions were tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+- This instructions are supposed to be running on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.
+- Make sure to run the [Open Manipulator controller](/docs/en/platform/openmanipulator/#launch-controller) instructions before running the instructions below.
+{% endcapture %}
+<div class="notice--info">{{ notice_01 | markdownify }}</div>
+
+  The user can use GUI program to manipulate OpenManipulator.  Launch `open_manipulator_control_gui` node.
+
   ```
   $ rosrun open_manipulator_control_gui open_manipulator_control_gui
   ```
+  To operate the OpenManipulator, first click the `Timer Start` button.  
+  This program shows the status of the manipulator and provides the ability to operate the manipulator.
 
-![](/assets/images/platform/openmanipulator/OpenManipulator_GUI.png)
+  ![](/assets/images/platform/openmanipulator/OpenManipulator_GUI.png)  
 
 ## [Teleoperation](#teleoperation)
+{% capture notice_01 %}
+**NOTE**: 
+- This instructions were tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+- This instructions are supposed to be running on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.
+- Make sure to run the [Open Manipulator controller](/docs/en/platform/openmanipulator/#launch-controller) instructions before running the instructions below.
+{% endcapture %}
+<div class="notice--info">{{ notice_01 | markdownify }}</div>
 
 ### [Keyboard](#keyboard)
 
+**TIP**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`-`Alt`-`T`.
+{: .notice--info}
+ 
+  Launch `open_manipulator_teleop_keyboard` node for simple teleoperation test using the keyboard.
 
+  ```
+  $ roslaunch open_manipulator_teleop open_manipulator_teleop_keyboard.launch 
+  ```
+  If the node is successfully launched, the following instruction will be appeared to the terminal window.
+
+
+  ```
+  ---------------------------
+  Control Your OpenManipulator!
+  ---------------------------
+  w : increase x axis in task space
+  s : decrease x axis in task space
+  a : increase y axis in task space
+  d : decrease y axis in task space
+  z : increase z axis in task space
+  x : decrease z axis in task space
+
+  y : increase joint 1 angle
+  h : decrease joint 1 angle
+  u : increase joint 2 angle
+  j : decrease joint 2 angle
+  i : increase joint 3 angle
+  k : decrease joint 3 angle
+  o : increase joint 4 angle
+  l : decrease joint 4 angle
+
+  g : gripper open
+  f : gripper close
+        
+  1 : init pose
+  2 : home pose
+        
+  q to quit
+  ---------------------------
+  Present Joint Angle J1: 0.000 J2: 0.000 J3: 0.000 J4: 0.000
+  Present Kinematic Position X: 0.000 Y: 0.000 Z: 0.000
+  ---------------------------
+  ```
 
 ### [PS4 Joystick](#ps4-joystick)
+Connect PS4 joystick to the PC via Bluetooth or with USB cable.  
 
+Install packages for teleoperation using PS4 joystick.
+
+``` 
+$ sudo apt-get install ros-kinetic-joy ros-kinetic-joystick-drivers ros-kinetic-teleop-twist-joy
+$ sudo pip install ds4drv
+```
+Launch teleoperation packages for PS4 joystick.
+```
+$ sudo ds4drv
+$ roslaunch open_manipulator_teleop open_manipulator_teleop_joystick.launch
+```
 
 ### [XBOX 360 Joystick](#xbox-360-joystick)
+Connect XBOX 360 joystick to the PC with Wireless Adapter or USB cable.
 
+Install packages for teleoperation using XBOX 360 joystick.
+
+``` 
+$ sudo apt-get install xboxdrv ros-kinetic-joy ros-kinetic-joystick-drivers ros-kinetic-teleop-twist-joy
+```
+Launch teleoperation packages for XBOX 360 joystick.
+```
+$ sudo xboxdrv --silent
+$ roslaunch open_manipulator_teleop open_manipulator_teleop_joystick.launch
+```
 
 ## [Moveit!](#moveit)
 
