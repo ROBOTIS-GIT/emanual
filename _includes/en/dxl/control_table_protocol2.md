@@ -1,7 +1,7 @@
 # [Control Table](#control-table)
 The Control Table is a structure of data implemented in the DYNAMIXEL. Users can read a specific Data to get status of the DYNAMIXEL with Read Instruction Packets, and modify Data as well to control DYNAMIXEL with WRITE Instruction Packets.
 
-{% if site.ref='mx-28-2' or site.ref='mx-64-2' or site.ref='mx-106-2' %}
+{% if page.ref=='mx-28-2' or page.ref=='mx-64-2' or page.ref=='mx-106-2' %}
 {% capture mx2_control_table %}
 **CAUTION**
 1. MX(2.0) Firmware is different from MX series' control table and address. Please check the control table address before usage.
