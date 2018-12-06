@@ -252,7 +252,7 @@ Launch Open Manipulator Controller to start [Basic Manipulation](/docs/en/platfo
 $ roslaunch open_manipulator_controller open_manipulator_controller.launch
 ```
 
-**WARNING**: If you start the controller in a pose where the components of OpenManipulator are in contact with each other, the OpenManipulator will not move by joint limit. It is recommended to place the Open Manipulator in the following Pose and start the control.  
+**WARNING**: If you start the controller in a pose where the components of OpenManipulator are in contact with each other, the OpenManipulator will not move by joint limit. It is recommended to place the Open Manipulator in the following Pose and start the control. 
 <img src="/assets/images/platform/openmanipulator/open_manipulator_start_pose.png" width="250">
 <!-- ![](/assets/images/platform/openmanipulator/open_manipulator_start_pose.png) -->
 {: .notice--warning}
@@ -703,14 +703,14 @@ This is Service Server list of open_manipulator_controller.
 The user can use this service to create a trajectory in the joint space. The user inputs the angle of the target joint and the total time of the trajectory.
   
 
-- `/open_manipulator/goal_task_space_path` ([open_manipulator_msgs/SetKinematicPose]{: .popup})  
-The user can use this service to create a trajectory in the task space. The user inputs the kinematic pose of the OpenManipulator end-effector(tool) relative to the base frame and the total time of the trajectory.
+- `/open_manipulator/goal_task_space_path` ([open_manipulator_msgs/SetKinematicsPose]{: .popup})  
+The user can use this service to create a trajectory in the ([task space]{: .popup}). The user inputs the kinematics pose of the OpenManipulator end-effector(tool) in the ([task space]{: .popup}) and the total time of the trajectory.
 
 - `/open_manipulator/goal_joint_space_path_to_present` ([open_manipulator_msgs/SetJointPosition]{: .popup})  
 The user can use this service to create a trajectory from present joint angle in the joint space. The user inputs the angle of the target joint to be changed and the total time of the trajectory.
 
-- `/open_manipulator/goal_task_space_path_to_present` ([open_manipulator_msgs/SetKinematicPose]{: .popup})  
-The user can use this service to create a trajectory from present kinematic pose in the task space. The user inputs the kinematic pose to be changed of the OpenManipulator end-effector(tool) relative to the base frame and the total time of the trajectory.
+- `/open_manipulator/goal_task_space_path_to_present` ([open_manipulator_msgs/SetKinematicsPose]{: .popup})  
+The user can use this service to create a trajectory from present kinematics pose in the task space. The user inputs the kinematics pose to be changed of the OpenManipulator end-effector(tool) in the ([task space]{: .popup}) and the total time of the trajectory.
 
 - `/open_manipulator/goal_tool_control` ([open_manipulator_msgs/SetJointPosition]{: .popup})  
 The user can use this service to move the tool of OpenManipulator. 
@@ -733,15 +733,25 @@ The user can use this service to create a drawing trajectory. The user can creat
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
-  The user can use GUI program to manipulate OpenManipulator.  Launch `open_manipulator_control_gui` node.
+  The user can use GUI program to manipulate OpenManipulator.  Launch `open_manipulator_control_gui` node.  This program shows the status of the manipulator and provides the ability to operate the manipulator.
 
   ```
   $ rosrun open_manipulator_control_gui open_manipulator_control_gui
   ```
-  To operate the OpenManipulator, first click the `Timer Start` button.  
-  This program shows the status of the manipulator and provides the ability to operate the manipulator.
-
+  To manipulate the OpenManipulator, first click the `Timer Start` button.  
   ![](/assets/images/platform/openmanipulator/OpenManipulator_GUI.png)  
+
+  The user can check the states of the OpenManipulator (joint states, kinematics pose).  
+  ![](/assets/images/platform/openmanipulator/OpenManipulator_GUI2.png)  
+
+  The user can manipulate the OpenManipulator in the joint space. Enter the joint angles and total time of the trajectory. Then click the `send` button.  
+  ![](/assets/images/platform/openmanipulator/OpenManipulator_GUI3.png)  
+
+  The user can manipulate the OpenManipulator in the ([task space]{: .popup}). Enter the kinematics pose of the OpenManipulator end-effector(tool) in the ([task space]{: .popup}) and the total time of the trajectory. Then click the `send` button.  
+  ![](/assets/images/platform/openmanipulator/OpenManipulator_GUI4.png)  
+  
+  The user can create a drawing trajectory with the OpenManipulator. First, choose the drawing trajectory type(line, circle, rhombus, heart). And enter the parameters according to the drawing trajectory type and the total time of the drawing trajectory. Then click the `send` button.  
+  ![](/assets/images/platform/openmanipulator/OpenManipulator_GUI5.png)  
 
 ## [Teleoperation](#teleoperation)
 {% capture notice_01 %}
@@ -794,7 +804,7 @@ The user can use this service to create a drawing trajectory. The user can creat
   q to quit
   ---------------------------
   Present Joint Angle J1: 0.000 J2: 0.000 J3: 0.000 J4: 0.000
-  Present Kinematic Position X: 0.000 Y: 0.000 Z: 0.000
+  Present Kinematics Position X: 0.000 Y: 0.000 Z: 0.000
   ---------------------------
   ```
 
@@ -1383,3 +1393,5 @@ CAD Files ([Onshape](http://www.robotis.com/service/download.php?no=761), [Thing
 [open_manipulator_msgs/KinematicsPose]: /docs/en/popup/open_manipulator_msgs_KinematicsPose/
 [open_manipulator_msgs/OpenManipulatorState]: /docs/en/popup/open_manipulator_msgs_OpenManipulatorState/
 [std_msgs::String]: /docs/en/popup/std_msgs_string/
+
+[task space]: /docs/en/popup/open_manipulator_coordinates/

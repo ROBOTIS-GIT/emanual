@@ -2,7 +2,7 @@
 layout: popup
 ---
 
-- File: `open_manipulator_msgs/SetKinematicPose.srv`
+- File: `open_manipulator_msgs/SetKinematicsPose.srv`
 
 - Service Definition
  ```c
@@ -16,12 +16,14 @@ bool is_planned
 This service creates a trajectory in the task space.
 
   - Request
-    * `kinematic_pose`
-&emsp;&emsp; The kinematic pose of the OpenManipulator end-effector relative to the base frame.
+    * `KinematicsPose kinematics_pose`
+&emsp;&emsp; The kinematics pose of the OpenManipulator end-effector relative to the base frame.
 
-    * `path_time`
+    * `float64 path_time`
 &emsp;&emsp; Total time of the trajectory.
 
   - Response
-    * `is_planned`
+    * `bool is_planned`
 &emsp;&emsp; Whether the path is created.
+
+[open_manipulator_msgs/KinematicsPose]: /docs/en/popup/open_manipulator_msgs_KinematicsPose/

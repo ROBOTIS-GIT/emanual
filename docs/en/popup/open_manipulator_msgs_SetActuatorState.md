@@ -16,13 +16,13 @@ bool is_planned
 This service controls the state of actucators.   
 
   - Request
-    * `joint_name`
+    * `string[] joint_name`
 &emsp;&emsp; The name of joints to control.
 
-    * `set_actuator_state`
+    * `bool set_actuator_state`
 &emsp;&emsp; The state of joints to control.
 
   - Response
-    * `is_planned`
+    * `bool is_planned`
 &emsp;&emsp; Whether or not it is controlled.
 

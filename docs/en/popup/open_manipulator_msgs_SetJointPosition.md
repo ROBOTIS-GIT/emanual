@@ -16,12 +16,15 @@ bool is_planned
 This service creates a trajectory in the joint space.
 
   - Request
-    * `joint_position`
+    * `JointPosition joint_position`([open_manipulator_msgs/JointPosition])
 &emsp;&emsp; Goal position of the joints to create a trajectory.
 
-    * `path_time`
+    * `float64 path_time`
 &emsp;&emsp; Total time of the trajectory.
 
   - Response
-    * `is_planned`
+    * `bool is_planned`
 &emsp;&emsp; Whether the path is created.
+
+
+[open_manipulator_msgs/JointPosition]: /docs/en/popup/open_manipulator_msgs_JointPosition/
