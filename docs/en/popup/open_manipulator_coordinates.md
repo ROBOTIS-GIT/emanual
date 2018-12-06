@@ -2,22 +2,12 @@
 layout: popup
 ---
 
-- File: `thormang3_offset_tuner_msgs/srv/GetPresentJointOffsetData.srv`
+**Task space** is the cartesian coordinate space where the operation of the manipulator is required. It has position (X,Y and Z) and orientation (Roll, Pitch and Yaw) about each axes. In space that we definiened for control the OpenManipulator, the coordinates is called as world coordunates, and it's origin is defined as following: 
+![](/assets/images/platform/openmanipulator/open_manipulator_world.png)
 
-- Message Definition
- ```c
- ---
- JointOffsetPositionData[] present_data_array
- ```
 
-- Description
-The service to get offset data of each joint.
+---
 
-  - Request
-    * `empty`
 
-  - Response
-    * `JointOffsetPositionData[] present_data_array`([thormang3_offset_tuner_msgs/JointOffsetPositionData])
-&emsp;&emsp; Array of the offset parameter data of each joint
-
-[thormang3_offset_tuner_msgs/JointOffsetPositionData]: /docs/en/platform/msgs/JointOffsetPositionData_msg/#jointoffsetpositiondata-msg
+**Joint space** is a space composed of the angles of each joint (revolute, prismatic, spherical, cylindrical etc.,). **Joint space** is defined by individual and independent actuation of the joints. That means, it is those joints which do not depend on any other joint. **Joint space** in OpenManipulator consists of the angles of the joints where coordinate systems are displayed in as following:
+![](/assets/images/platform/openmanipulator/open_manipulator_joint_space.png)

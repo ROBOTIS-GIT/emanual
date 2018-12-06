@@ -236,8 +236,6 @@ Open Manipulator Controller is provided for basic manipulation of OpenManipulato
 **NOTE**: This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 {: .notice--info}
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dctx7Y6zNKA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 ## [Run roscore](#run-roscore)
 
 Run roscore.
@@ -609,6 +607,8 @@ $ roslaunch open_manipulator_description open_manipulator_rviz.launch
 
 # [Basic Manipulation](#basic-manipulation)
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dctx7Y6zNKA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## [Message List](#message-list)
 
 {% capture notice_01 %}
@@ -706,13 +706,13 @@ The user can use this service to create a trajectory in the joint space. The use
   
 
 - `/open_manipulator/goal_task_space_path` ([open_manipulator_msgs/SetKinematicsPose]{: .popup})  
-The user can use this service to create a trajectory in the ([task space]{: .popup}). The user inputs the kinematics pose of the OpenManipulator end-effector(tool) in the ([task space]{: .popup}) and the total time of the trajectory.
+The user can use this service to create a trajectory in the [task space]{: .popup}. The user inputs the kinematics pose of the OpenManipulator end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
 
 - `/open_manipulator/goal_joint_space_path_to_present` ([open_manipulator_msgs/SetJointPosition]{: .popup})  
 The user can use this service to create a trajectory from present joint angle in the joint space. The user inputs the angle of the target joint to be changed and the total time of the trajectory.
 
 - `/open_manipulator/goal_task_space_path_to_present` ([open_manipulator_msgs/SetKinematicsPose]{: .popup})  
-The user can use this service to create a trajectory from present kinematics pose in the task space. The user inputs the kinematics pose to be changed of the OpenManipulator end-effector(tool) in the ([task space]{: .popup}) and the total time of the trajectory.
+The user can use this service to create a trajectory from present kinematics pose in the task space. The user inputs the kinematics pose to be changed of the OpenManipulator end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
 
 - `/open_manipulator/goal_tool_control` ([open_manipulator_msgs/SetJointPosition]{: .popup})  
 The user can use this service to move the tool of OpenManipulator. 
@@ -749,7 +749,7 @@ The user can use this service to create a drawing trajectory. The user can creat
   The user can manipulate the OpenManipulator in the joint space. Enter the joint angles and total time of the trajectory. Then click the `send` button.  
   ![](/assets/images/platform/openmanipulator/OpenManipulator_GUI3.png)  
 
-  The user can manipulate the OpenManipulator in the ([task space]{: .popup}). Enter the kinematics pose of the OpenManipulator end-effector(tool) in the ([task space]{: .popup}) and the total time of the trajectory. Then click the `send` button.  
+  The user can manipulate the OpenManipulator in the [task space]{: .popup}. Enter the kinematics pose of the OpenManipulator end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory. Then click the `send` button.  
   ![](/assets/images/platform/openmanipulator/OpenManipulator_GUI4.png)  
   
   The user can create a drawing trajectory with the OpenManipulator. First, choose the drawing trajectory type(line, circle, rhombus, heart). And enter the parameters according to the drawing trajectory type and the total time of the drawing trajectory. Then click the `send` button.  
@@ -1035,7 +1035,7 @@ Open processing source code file (`OpenCR`>`arduino`>`opencr_arduino`>`opencr`>`
 ![](/assets/images/platform/openmanipulator/OpenManipulator_chain_processing_2.png)
 
 ## [Basic Manipulation on OpenCR](#basic-manipulation-on-opencr)
-  
+ 
 **NOTE**: Upload **OpenCR example source code** to OpenCR before run **processing source code**.
 {: .notice--info}
 
@@ -1422,7 +1422,7 @@ CAD Files ([Onshape](http://www.robotis.com/service/download.php?no=761), [Thing
 [OpenCR]: /docs/en/parts/controller/opencr10/
 [OpenCR Manual]: /docs/en/parts/controller/opencr10/
 [rc100]: /docs/en/parts/communication/rc-100/
-[rc100]: /docs/en/parts/communication/bt-410/
+[bt410]: /docs/en/parts/communication/bt-410/
 
 [open_manipulator_msgs/SetJointPosition]: /docs/en/popup/open_manipulator_msgs_SetJointPosition/
 [open_manipulator_msgs/SetKinematicPose]: /docs/en/popup/open_manipulator_msgs_SetKinematicPose/
