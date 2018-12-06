@@ -236,6 +236,8 @@ Open Manipulator Controller is provided for basic manipulation of OpenManipulato
 **NOTE**: This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 {: .notice--info}
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dctx7Y6zNKA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## [Run roscore](#run-roscore)
 
 Run roscore.
@@ -733,7 +735,7 @@ The user can use this service to create a drawing trajectory. The user can creat
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
-  The user can use GUI program to manipulate OpenManipulator.  Launch `open_manipulator_control_gui` node.  This program shows the status of the manipulator and provides the ability to operate the manipulator.
+  The user can use GUI program to manipulate the OpenManipulator.  Launch `open_manipulator_control_gui` node.  This program shows the status of the manipulator and provides the ability to operate the manipulator.
 
   ```
   $ rosrun open_manipulator_control_gui open_manipulator_control_gui
@@ -761,6 +763,8 @@ The user can use this service to create a drawing trajectory. The user can creat
 - Make sure to run the [Open Manipulator controller](/docs/en/platform/openmanipulator/#launch-controller) instructions before running the instructions below.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FGHBMJByJ7k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### [Keyboard](#keyboard)
 
@@ -993,6 +997,9 @@ OpenManipulator in Gazebo is controllered by ROS message. For example, use below
 OpenManipulator is compatible with **OpenCR**. We offer API to easily control manipulator.
 This API supports Dynamixel, Dynamixel X including protocol 1.0 and 2.0. Furthermore, this code can be used Friends of OpenManipulator.
 User can make thier code in **Arduino IDE** and simulate or control using **Processing** GUI.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fT1Wv6qHknI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## [Setup](#setup) 
 
 --hardware setup
@@ -1028,15 +1035,46 @@ Open processing source code file (`OpenCR`>`arduino`>`opencr_arduino`>`opencr`>`
 ![](/assets/images/platform/openmanipulator/OpenManipulator_chain_processing_2.png)
 
 ## [Basic Manipulation on OpenCR](#basic-manipulation-on-opencr)
-
+  
+**NOTE**: Upload **OpenCR example source code** to OpenCR before run **processing source code**.
+{: .notice--info}
 
 ### [Control Interface](#control-interface)
+  The user can use processing program to manipulate the OpenManipulator.  
+  To manipulate the OpenManipulator, click the toggle button to `CONTROLLER ON`.  
+  ![](/assets/images/platform/openmanipulator/OpenManipulator_chain_processing_3.png)  
+
+  The user can manipulate the OpenManipulator in the joint space.  
+  Set the joint angles. Then click the `SEND JOINT ANGLE` button. And set the gripper parameter. Then click the `SET GRIPPER` button.  
+  ![](/assets/images/platform/openmanipulator/OpenManipulator_chain_processing_4.png)  
+
+  The user can manipulate the OpenManipulator in the ([task space]{: .popup}). Click the `TASK SPACE CONTROL` button to change the tab.  
+  Click the desired direction button to manipulate the OpenManipulator.  
+  ![](/assets/images/platform/openmanipulator/OpenManipulator_chain_processing_5.png)
 
 ### [Teleoperation RC100](#teleoperation-rc100)
+  
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/FGHBMJByJ7k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+  The settings for [ROBOTIS RC-100B][rc100] controller is included in the OpenCR firmware for OpenManipulator. This controller can be used with the Bluetooth module [BT410][bt410]. 
+  ![](/assets/images/platform/openmanipulator/OpenManipulator_chain_processing_teleop.png)
 
 ### [Hand guiding](#hand-guiding)
+  The user can make the demonstration using hand guiding function.  
 
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/9mE9QgAro8A" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  
+  1. Click the `HAND GUIDING` button to change the tab.
+  2. Holds the OpenManipulator by hand and click the toggle button to `TORQUE OFF`.   
+  3. Move the OpenManipulator to the desired pose by hand.
+  4. Click the `SAVE JOINT POSE` to save the present pose.
+  5. Repeat step 3 and 4 to create the demonstration.
+  6. Click the toggle button to `TORQUE ON`
+  7. Click the `MOTION START` button to start the saved poses.
 
+  Click the toggle button to `MOTION REPEAT ON` if you want to repeat the demonstration.  
+  The total time of the trajectory between saved poses is the same as 2 seconds.  
+  ![](/assets/images/platform/openmanipulator/OpenManipulator_chain_processing_6.png)
 
 
 # [Camera Application](#camera-application)
@@ -1047,11 +1085,11 @@ Open processing source code file (`OpenCR`>`arduino`>`opencr_arduino`>`opencr`>`
 
 ## [Vacuum Gripper](#vaccum-gripper)
 
-
-
+**Coming Soon**
 
 ## [Pen Holder](#pen-holder)
 
+**Coming Soon**
 
 
 # [Mobile Manipulation](#mobile-manipulation)
@@ -1383,6 +1421,8 @@ CAD Files ([Onshape](http://www.robotis.com/service/download.php?no=761), [Thing
 
 [OpenCR]: /docs/en/parts/controller/opencr10/
 [OpenCR Manual]: /docs/en/parts/controller/opencr10/
+[rc100]: /docs/en/parts/communication/rc-100/
+[rc100]: /docs/en/parts/communication/bt-410/
 
 [open_manipulator_msgs/SetJointPosition]: /docs/en/popup/open_manipulator_msgs_SetJointPosition/
 [open_manipulator_msgs/SetKinematicPose]: /docs/en/popup/open_manipulator_msgs_SetKinematicPose/
