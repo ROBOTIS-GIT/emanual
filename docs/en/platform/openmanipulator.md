@@ -252,8 +252,9 @@ Launch Open Manipulator Controller to start [Basic Manipulation](/docs/en/platfo
 $ roslaunch open_manipulator_controller open_manipulator_controller.launch
 ```
 
-**WARNING**: If you start the controller in a pose where the components of OpenManipulator are in contact with each other, the OpenManipulator will not move by joint limit. It is recommended to place the Open Manipulator in the following Pose and start the control. 
-[Recommended start pose](/assets/images/platform/openmanipulator/start_pose.png)
+**WARNING**: If you start the controller in a pose where the components of OpenManipulator are in contact with each other, the OpenManipulator will not move by joint limit. It is recommended to place the Open Manipulator in the following Pose and start the control.  
+<img src="/assets/images/platform/openmanipulator/open_manipulator_start_pose.png" width="250">
+<!-- ![](/assets/images/platform/openmanipulator/open_manipulator_start_pose.png) -->
 {: .notice--warning}
 
 If OpenManipulator controller launched successfully, the terminal will represent below messages.
@@ -292,6 +293,8 @@ Gripper Dynamixel ID : 15, Model Name :XM430-W350
 
 ## [Check Setting](#check-setting)
 
+### [Manipulator Description](#manipulator-description)
+
 {% capture notice_01 %}
 **NOTE**: 
 - This instructions were tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
@@ -299,8 +302,6 @@ Gripper Dynamixel ID : 15, Model Name :XM430-W350
 - Make sure to run the [Open Manipulator controller](/docs/en/platform/openmanipulator/#launch-controller) instructions before running the instructions below.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
-
-### [Manipulator Description](#manipulator-description)
 
 Publish a topic message to check the OpenManipulator setting.
 
@@ -588,6 +589,14 @@ This parameter is descripted on OpenManipulator.cpp in open_manipulator_libs pkg
 
 ### [RViz](#rviz)
 
+{% capture notice_01 %}
+**NOTE**: 
+- This instructions were tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+- This instructions are supposed to be running on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.
+- Make sure to run the [Open Manipulator controller](/docs/en/platform/openmanipulator/#launch-controller) instructions before running the instructions below.
+{% endcapture %}
+<div class="notice--info">{{ notice_01 | markdownify }}</div>
+
 Load an OpenManipulator on RViz.
 
 ```
@@ -870,8 +879,12 @@ Below services are help you to manipulate OpenManipulator
 
 # [Gazebo Simulation](#gazebo-simulation)
 
-**NOTE** : This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
-{: .notice--info}
+{% capture notice_01 %}
+**NOTE**: 
+- This instructions were tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+- This instructions are supposed to be running on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.
+{% endcapture %}
+<div class="notice--info">{{ notice_01 | markdownify }}</div>
 
 ## [Controller for gazebo](#controller-for-gazebo)
 
