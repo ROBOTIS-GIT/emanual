@@ -593,7 +593,6 @@ This parameter is descripted on OpenManipulator.cpp in open_manipulator_libs pkg
 **NOTE**: 
 - This instructions were tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 - This instructions are supposed to be running on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.
-- Make sure to run the [Open Manipulator controller](/docs/en/platform/openmanipulator/#launch-controller) instructions before running the instructions below.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
@@ -602,6 +601,15 @@ Load an OpenManipulator on RViz.
 ```
 $ roslaunch open_manipulator_description open_manipulator_rviz.launch
 ```
+
+{% capture notice_01 %}
+**NOTE**: 
+- When the user launch the Rviz with the [OpenManipulator controller](/docs/en/platform/openmanipulator/#launch-controller), the OpenManipulator model of Rviz is synchronized with the actual OpenManipulator.
+- If the user wants to check only model of OpenManipulator without control the actual OpenManipulator, the user can launch the Rviz without the OpenManipulator controller.
+The user can change each joint by GUI, if the user launch only Rviz by executing the following command :
+`$ roslaunch open_manipulator_description open_manipulator_rviz.launch use_gui:=true`
+{% endcapture %}
+<div class="notice--info">{{ notice_01 | markdownify }}</div>
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_rviz.png)
 
@@ -662,7 +670,7 @@ The topic list is published by open_manipulator_controller.
 
 ![](/assets/images/platform/openmanipulator/rqt_joint_states.png)
 
-`/open_manipulator/kinematics_pose`([open_manipulator_msgs/KinematicsPose]{: .popup}) is a message indicating the pose(position and orientation) on world coordinates(cartesian) of OpenManipulator gripper. **"position"** indicates x, y, and z value of the center of the tool gripper. **"Orientation"** indicates the direction of the tool gripper as quaternion.
+`/open_manipulator/kinematics_pose`([open_manipulator_msgs/KinematicsPose]{: .popup}) is a message indicating the pose(position and orientation) in [task space]{: .popup}. **"position"** indicates x, y, and z value of the center of the end-effector(tool). **"Orientation"** indicates the direction of the end-effector(tool) as quaternion.
 
 ![](/assets/images/platform/openmanipulator/rqt_kinematic_pose.png)
 
@@ -702,14 +710,14 @@ In addition, you can monitor topics through rqt whenever you have a topic added 
 This is Service Server list of open_manipulator_controller.
 
 - `/open_manipulator/goal_joint_space_path` ([open_manipulator_msgs/SetJointPosition]{: .popup})  
-The user can use this service to create a trajectory in the joint space. The user inputs the angle of the target joint and the total time of the trajectory.
+The user can use this service to create a trajectory in the [joint space]{: .popup}. The user inputs the angle of the target joint and the total time of the trajectory.
   
 
 - `/open_manipulator/goal_task_space_path` ([open_manipulator_msgs/SetKinematicsPose]{: .popup})  
 The user can use this service to create a trajectory in the [task space]{: .popup}. The user inputs the kinematics pose of the OpenManipulator end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
 
 - `/open_manipulator/goal_joint_space_path_to_present` ([open_manipulator_msgs/SetJointPosition]{: .popup})  
-The user can use this service to create a trajectory from present joint angle in the joint space. The user inputs the angle of the target joint to be changed and the total time of the trajectory.
+The user can use this service to create a trajectory from present joint angle in the [joint space]{: .popup}. The user inputs the angle of the target joint to be changed and the total time of the trajectory.
 
 - `/open_manipulator/goal_task_space_path_to_present` ([open_manipulator_msgs/SetKinematicsPose]{: .popup})  
 The user can use this service to create a trajectory from present kinematics pose in the task space. The user inputs the kinematics pose to be changed of the OpenManipulator end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
@@ -746,7 +754,7 @@ The user can use this service to create a drawing trajectory. The user can creat
   The user can check the states of the OpenManipulator (joint states, kinematics pose).  
   ![](/assets/images/platform/openmanipulator/OpenManipulator_GUI2.png)  
 
-  The user can manipulate the OpenManipulator in the joint space. Enter the joint angles and total time of the trajectory. Then click the `send` button.  
+  The user can manipulate the OpenManipulator in the [joint space]{: .popup}. Enter the joint angles and total time of the trajectory. Then click the `send` button.  
   ![](/assets/images/platform/openmanipulator/OpenManipulator_GUI3.png)  
 
   The user can manipulate the OpenManipulator in the [task space]{: .popup}. Enter the kinematics pose of the OpenManipulator end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory. Then click the `send` button.  
@@ -1002,7 +1010,11 @@ User can make thier code in **Arduino IDE** and simulate or control using **Proc
 
 ## [Setup](#setup) 
 
---hardware setup
+Connect micro USB (connected to PC), Dynamixel(OpenManipulator), and 12V Power to OpenCR as shown below. 
+
+<img src="/assets/images/platform/openmanipulator/OpenManipulator_opencr_setup.png" width="500">
+
+Please refer the detailed description of [OpenCR](http://emanual.robotis.com/docs/en/parts/controller/opencr10/)
 
 
 ## [Arduino IDE](#arduino-ide)
@@ -1013,7 +1025,7 @@ Download Arduino IDE and load OpenCR board on it
 
 Find example source codes.
 
-Go to `Examples` → `OpenManipulator` → `example` → `Arduino` → `Chain` → `open_manipulator_chain` on Arduino IDE for OpenCR.
+Go to `Examples` → `OpenManipulator` → `example` → `Chain` → `open_manipulator_chain` on Arduino IDE for OpenCR.
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_chain_arduino.png)
 
@@ -1027,7 +1039,14 @@ Open Processing and Go to `Tools` → `Add Tool..`. Search `ControlP5` and insta
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_chain_processing_1.png)
 
-Open processing source code file (`OpenCR`>`arduino`>`opencr_arduino`>`opencr`>`libraries`>`OpenManipulator`>`example`>`Processing`>`Chain`>`Chain.pde`) on Processing IDE, and Run it.
+Download processing source code for OpenManipulator. 
+
+```
+$ git clone git@github.com:ROBOTIS-GIT/open_manipulator_processing.git
+```
+
+Open processing source code file 
+(`open_manipulator_processing`>`Chain`>`Chain.pde`) on Processing IDE, and Run it.
 
 **NOTE**: Upload **OpenCR example source code** to OpenCR before run **processing source code**.
 {: .notice--info}
@@ -1044,7 +1063,7 @@ Open processing source code file (`OpenCR`>`arduino`>`opencr_arduino`>`opencr`>`
   To manipulate the OpenManipulator, click the toggle button to `CONTROLLER ON`.  
   ![](/assets/images/platform/openmanipulator/OpenManipulator_chain_processing_3.png)  
 
-  The user can manipulate the OpenManipulator in the joint space.  
+  The user can manipulate the OpenManipulator in the [joint space]{: .popup}.  
   Set the joint angles. Then click the `SEND JOINT ANGLE` button. And set the gripper parameter. Then click the `SET GRIPPER` button.  
   ![](/assets/images/platform/openmanipulator/OpenManipulator_chain_processing_4.png)  
 
@@ -1435,3 +1454,4 @@ CAD Files ([Onshape](http://www.robotis.com/service/download.php?no=761), [Thing
 [std_msgs::String]: /docs/en/popup/std_msgs_string/
 
 [task space]: /docs/en/popup/open_manipulator_coordinates/
+[joint space]: /docs/en/popup/open_manipulator_coordinates/
