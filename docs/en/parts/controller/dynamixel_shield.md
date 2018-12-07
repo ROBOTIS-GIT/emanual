@@ -1,18 +1,18 @@
 ---
 layout: archive
 lang: en
-ref: arduino_dynamixel_shield
+ref: dynamixel_shield
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/parts/controller/arduino_dynamixel_shield/
+permalink: /docs/en/parts/controller/dynamixel_shield/
 sidebar:
   title: Dynamixel Shield
-  nav: "arduino_dynamixel_shield"
+  nav: "dynamixel_shield"
 ---
 
 # [Introduction](#introduction)
-![](/assets/images/parts/controller/arduino_dynamixel_shield/with_arduino.png)
+![](/assets/images/parts/controller/dynamixel_shield/with_arduino.png)
 
 Dynamixel Shield  was created to use RC100 and Dynamixel on arduino board. We provide dynamixel library for Dynamixel Shield, it can help you to use Dynamixel easily.
 
@@ -28,7 +28,7 @@ Dynamixel Shield  was created to use RC100 and Dynamixel on arduino board. We pr
 
 # [Layout](#layout)
 
-![](/assets/images/parts/controller/arduino_dynamixel_shield/pinmap.png)
+![](/assets/images/parts/controller/dynamixel_shield/pinmap.png)
 
 |Pin No.|Pin Name|Description|
 |:---:|:---:|:---:|
@@ -61,7 +61,7 @@ Dynamixel Shield  was created to use RC100 and Dynamixel on arduino board. We pr
 
 |                                Connect VIN                                 |                               Disconnect VIN                               |
 |:--------------------------------------------------------------------------:|:--------------------------------------------------------------------------:|
-| ![](/assets/images/parts/controller/arduino_dynamixel_shield/power_01.png) | ![](/assets/images/parts/controller/arduino_dynamixel_shield/power_02.png) |
+| ![](/assets/images/parts/controller/dynamixel_shield/power_01.png) | ![](/assets/images/parts/controller/dynamixel_shield/power_02.png) |
 
 - The power input is divided as follows depending on whether the jumper cap is connected or not.
   1. Connect VIN : Power supply using with Arduino's SMPS connector
@@ -70,12 +70,12 @@ Dynamixel Shield  was created to use RC100 and Dynamixel on arduino board. We pr
 - Since the Dynamixel power can not be connected to the USB power of the Arduino board, you need to connect the external power.
 -	When using the power input connector, **be sure to check the polarity of the power supply**.
 
-  ![](/assets/images/parts/controller/arduino_dynamixel_shield/power_polarity.png)
+  ![](/assets/images/parts/controller/dynamixel_shield/power_polarity.png)
 
 
 # [Switches](#switches)
 
-![](/assets/images/parts/controller/arduino_dynamixel_shield/switches.png)
+![](/assets/images/parts/controller/dynamixel_shield/switches.png)
 
 ## [Upload Switch](#upload-switch)
 
@@ -111,11 +111,11 @@ There are three ways to add libraries to the Arduino IDE.
 Each way is described in detail in the [Arduino Official Guide], so please refer to it if necessary.  
 Below is an example of using the Library Manager.
 
-![](/assets/images/parts/controller/arduino_dynamixel_shield/library_manager.png)
+![](/assets/images/parts/controller/dynamixel_shield/library_manager.png)
 
 If you have successfully installed the library, you'll be able to find several examples of DynamixelShield in the examples.
 
-![](/assets/images/parts/controller/arduino_dynamixel_shield/examples.png)
+![](/assets/images/parts/controller/dynamixel_shield/examples.png)
 
 
 # [Library API](#library-api)
