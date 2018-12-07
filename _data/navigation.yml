@@ -16826,20 +16826,20 @@ arduino_dynamixel_shield:
 u2d2_power_hub:
   - title: "Introduction"
     titlekr: "개요"
-    url: /parts/controller/u2d2_power_hub/#introduction
-    urlkr: /parts/controller/u2d2_power_hub/#개요
+    url: /parts/interface/u2d2_power_hub/#introduction
+    urlkr: /parts/interface/u2d2_power_hub/#개요
   - title: "Specifications"
     titlekr: "제품 사양"
-    url: /parts/controller/u2d2_power_hub/#specifications
-    urlkr: /parts/controller/u2d2_power_hub/#제품-사양
+    url: /parts/interface/u2d2_power_hub/#specifications
+    urlkr: /parts/interface/u2d2_power_hub/#제품-사양
   - title: "Layout"
     titlekr: "각 부 명칭"
-    url: /parts/controller/u2d2_power_hub/#layout
-    urlkr: /parts/controller/u2d2_power_hub/#각-부-명칭
+    url: /parts/interface/u2d2_power_hub/#layout
+    urlkr: /parts/interface/u2d2_power_hub/#각-부-명칭
   - title: "Cautions"
     titlekr: "주의사항"
-    url: /parts/controller/u2d2_power_hub/#cautions
-    urlkr: /parts/controller/u2d2_power_hub/#주의사항
+    url: /parts/interface/u2d2_power_hub/#cautions
+    urlkr: /parts/interface/u2d2_power_hub/#주의사항
 
 opencm7:
   - titlekr: "개요"

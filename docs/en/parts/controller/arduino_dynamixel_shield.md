@@ -58,10 +58,10 @@ Dynamixel Shield  was created to use RC100 and Dynamixel on arduino board. We pr
 <div class="notice--warning">{{ shield_01 | markdownify }}</div>
 
 # [Connecting Power](#connecting-power)
-x
-|Connect VIN|Disconnect VIN|
-|:---:|:---:|
-|![](/assets/images/parts/controller/arduino_dynamixel_shield/power_01.png)|![](/assets/images/parts/controller/arduino_dynamixel_shield/power_02.png)|
+
+|                                Connect VIN                                 |                               Disconnect VIN                               |
+|:--------------------------------------------------------------------------:|:--------------------------------------------------------------------------:|
+| ![](/assets/images/parts/controller/arduino_dynamixel_shield/power_01.png) | ![](/assets/images/parts/controller/arduino_dynamixel_shield/power_02.png) |
 
 - The power input is divided as follows depending on whether the jumper cap is connected or not.
   1. Connect VIN : Power supply using with Arduino's SMPS connector

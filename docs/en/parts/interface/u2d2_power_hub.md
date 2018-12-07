@@ -5,7 +5,7 @@ ref: u2d2_power_hub
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/parts/controller/u2d2_power_hub/
+permalink: /docs/en/parts/interface/u2d2_power_hub/
 sidebar:
   title: U2D2 Power Hub
   nav: "u2d2_power_hub"
@@ -14,7 +14,7 @@ sidebar:
 # [Introduction](#introduction)
 Combined with U2D2, it can supply various kinds of external power supply to supply stable power to Dynamixel.
 
-![](/assets/images/parts/controller/u2d2_power_hub/product_image.png)![](/assets/images/parts/controller/u2d2_power_hub/product_without_u2d2.png)
+![](/assets/images/parts/interface/u2d2_power_hub/product_image.png)![](/assets/images/parts/interface/u2d2_power_hub/product_without_u2d2.png)
 
 # [Specifications](#specifications)
 
@@ -25,7 +25,7 @@ Combined with U2D2, it can supply various kinds of external power supply to supp
 
 # [Layout](#layout)
 
-![](/assets/images/parts/controller/u2d2_power_hub/layout.png)
+![](/assets/images/parts/interface/u2d2_power_hub/layout.png)
 
 |Part Name|Description|
 |:---|:---|

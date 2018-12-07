@@ -267,7 +267,7 @@ CM-510, CM-530에서는 ADC포트와 OUT포트를 이용하여 간단히 제어�
 
 #### 외부 출력 제어
 다음과 같은 LED 회로를 구성한다면, 1번 핀을 제어하여 LED를 껐다, 켤 수 있는 장치를 만들 수 있습니다. (제어기종류 및 LED의 종류에 따라 저항의 크기를 조정해야 합니다.)
-  
+ 
 ![](/assets/images/edu/bioloid/mcs_led_circuit_kr.png)
  
 RoboPlus Task에서 사용자 장치 OUT 포트에 High신호를 주는 방법은 다음과 같습니다.  
@@ -289,7 +289,7 @@ RoboPlus Task에서 사용자 장치 OUT 포트에 High신호를 주는 방법�
   ![](/assets/images/edu/bioloid/mcs_tilt_kr.png)  
  
 - Tilt센서의 왼쪽 핀은 5V VCC 입력핀, 가운데 핀은 아날로그 신호 출력핀, 오른쪽은 그라운드핀입니다. CM-510의 외부 포트에 서로 매칭되는 핀을 연결하여 주면 바로 사용할 수 있습니다. CM-510의 외부 포트 핀 정보를 참고하여 다음과 같이 연결하면 됩니 다.  
-  
+
   ![](/assets/images/edu/bioloid/mcs_cm-510_tilt_kr.png)  
  
 - 다음 예제와 같이 센서의 아날로그 출력값을 읽어와 로봇의 동작에 응용할 수 있습니다.  
@@ -300,8 +300,8 @@ RoboPlus Task에서 사용자 장치 OUT 포트에 High신호를 주는 방법�
 [충전하기]: #충전하기
 [RC-100의 채널 변경 방법]: /docs/kr/parts/communication/rc-100/#적외선-통신채널-설정-방법
 [ZIG-110 세트]: /docs/kr/parts/communication/zig-110/
-[BIO_GP_Humanoid_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_gp_humanoid_kr.tsk
-[BIO_GP_Humanoid_KR.mtn]: http://support.robotis.com/ko/baggage_files/bioloid/bio_gp_humanoid_kr.mtn
+[BIO_GP_Humanoid_KR.tsk]: http://www.robotis.com/service/download.php?no=1248
+[BIO_GP_Humanoid_KR.mtn]: http://www.robotis.com/service/download.php?no=1247
 [BIO_GP_Humanoid_ASM_KR.pdf]: http://www.robotis.com/download/doc/BIO_GP_Humanoid_ASM_KR.pdf
 [적외선센서]: /docs/kr/parts/sensor/irss-10/
 [접촉 센서]: /docs/kr/parts/sensor/ts-10/
