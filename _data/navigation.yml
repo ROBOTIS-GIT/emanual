@@ -462,7 +462,7 @@ main:
         url: /parts/controller/opencr10/
       - title: "DYNAMIXEL Shield"
         titlekr: "다이나믹셀 쉴드"
-        url: /parts/controller/opencr10/
+        url: /parts/controller/dynamixel_shield/
     - title: "Communication"
       titlekr: "통신"
       children:
