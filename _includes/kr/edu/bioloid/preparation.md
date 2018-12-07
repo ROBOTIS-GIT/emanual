@@ -9,9 +9,9 @@ CM-5 는 기본적으로 BIOLOID 학습서에 나와 있는 것과 같이 기존
 3. RoboPlus Manager를 선택합니다.
 4. CM-5를 다운로드케이블을 이용하여 PC와 연결합니다.
 5. RoboPlus Manager 상단의 아이콘 중 `제어기 복구`를 눌러서 펌웨어 마법사를 실행합니다.
-    
+
     ![](/assets/images/edu/bioloid/recovery_1_kr.png)
-    
+
     ![](/assets/images/edu/bioloid/recovery_2_kr.png)
 
 6. 제어기 연결 포트 선택합니다.  
@@ -41,4 +41,4 @@ CM-5 는 기본적으로 BIOLOID 학습서에 나와 있는 것과 같이 기존
 간단하게 상기의 절차를 실행하면 CM-5도 로보플러스로 프로그래밍 할 수 있게 됩니다.  
 강력한 기능으로 업그레이드된 로보플러스로 내 로봇을 더욱 빛나게 만들어 보세요.
 
-[자료실]: http://www.robotis.com/service/downloadpage.php?cate=software
+[자료실]: http://www.robotis.com/service/downloadcenter.php

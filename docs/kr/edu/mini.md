@@ -402,7 +402,7 @@ Windows 8/8.1에서 제어판을 열기 위해서는 데스크톱 모드에서 �
 [설계용 STP 파일]: http://support.robotis.com/ko/baggage_files/darwinmini/darwin_mini_stp.zip
 [로보티즈 미니 작동하기]: #로보티즈-미니-작동하기
 [e-매뉴얼 로보플러스 태스크 사용법]: /docs/kr/software/rplus1/task/getting_started/
-[로보플러스 태스크 다운로드]: http://www.robotis.com/service/downloadcenter.php
+[로보플러스 태스크 다운로드]: /docs/kr/software/rplus1/task/getting_started/#프로그램-다운로드
 [다운로드 게시판]: http://www.robotis.com/service/downloadcenter.php
 [로보플러스 모션 사용법]: /docs/kr/software/rplus1/motion/
 [다운로드]: #다운로드

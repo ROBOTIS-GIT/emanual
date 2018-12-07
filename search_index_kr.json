@@ -1,5 +1,5 @@
 {
-	"�0": {
+	"�0": {
 		"product": "AX-12A",
 		"header1": "주요 사양",
 		"header2": "",
@@ -28645,7 +28645,7 @@
 		"header2": "",
 		"header3": "",
 		"content": "아두이노 보드에서 다이나믹셀과 RC100을 사용하기위한 쉴드 보드이며 다이나믹셀 제어를 위한 라이브러리를 제공함 본 제품은 아두이노 Uno를 포함하지 않습니다 아두이노 관련 제품은 별도로 구매를 해야합니다 ",
-		"url": "http://emanual.robotis.com/docs/kr/parts/controller/arduino_dynamixel_shield/#개요"
+		"url": "http://emanual.robotis.com/docs/kr/parts/controller/dynamixel_shield/#개요"
 	},
 	"3581": {
 		"product": "아두이노 다이나믹셀 쉴드",
@@ -28653,7 +28653,7 @@
 		"header2": "",
 		"header3": "",
 		"content": "항목 사양 동작 전압 4V XL 320 12V Series 허용전류 1A 아두이노 10A 터미널 전원 커넥터 ",
-		"url": "http://emanual.robotis.com/docs/kr/parts/controller/arduino_dynamixel_shield/#제품-사양"
+		"url": "http://emanual.robotis.com/docs/kr/parts/controller/dynamixel_shield/#제품-사양"
 	},
 	"3582": {
 		"product": "아두이노 다이나믹셀 쉴드",
@@ -28661,7 +28661,7 @@
 		"header2": "",
 		"header3": "",
 		"content": "핀 번호 핀 이름 설명 HW UART RX RX HW UART TX TX SW UART RX 주의2 SoftwareSerial SW UART TX 주의2 SoftwareSerial 항목 핀 이름 설명 다이나믹셀 포트 TTL TTL XL 430 RS485 주의3 전원 스위치 Power SW 다이나믹셀 포트 전원 스위치 UART 스위치 UART SW 업로드 또는 다이나믹셀 선택 스위치 주의1 Jumper Cap 전원 선택 전원 연결 방법 아두이노 핀 0번 1번이 다이나믹셀 제어를 위한 시리얼 포트 아두이노 핀 2번은 방향 제어를 위한 제어핀 다이나믹셀 제어를 위해서 하드웨어 시리얼 포트를 사용하기 때문에 아두이노 핀 8번을 이용하여 소프트웨어 시리얼로 RC100 혹은 LN101을 연결하여 시리얼 통신 수행 주의1 UART SW SW 를 Upload로 세팅해야 펌웨어를 USB 포트를 통해서 업로드 할 수 있다 Dynamixel로 세팅해야만 다이나믹셀을 활용할 수 있다 이 때는 USB 포트를 사용하지 못하므로 펌웨어를 업로드 할 수 없다 주의2 SoftwareSerial을 지원하지 않는 보드를 사용한다면 핀 7번과 8번을 UART 통신으로 사용하지 못한다 주의3 TTL TTL XL 430 RS485 커넥터들은 병렬로 연결되어 하나의 serial을 사용한다 ",
-		"url": "http://emanual.robotis.com/docs/kr/parts/controller/arduino_dynamixel_shield/#각-부-명칭"
+		"url": "http://emanual.robotis.com/docs/kr/parts/controller/dynamixel_shield/#각-부-명칭"
 	},
 	"3583": {
 		"product": "아두이노 다이나믹셀 쉴드",
@@ -28669,7 +28669,7 @@
 		"header2": "",
 		"header3": "",
 		"content": "VIN 전원 공유 VIN 전원 분리 전원 입력은 점퍼캡의 설치 유무에 따라 다음과 같이 나뉜다 VIN 전원 공유 아두이노의 SMPS 커넥터를 이용한 전원 사용 VIN 전원 분리 다이나믹셀 쉴드의 전원 입력 커텍터를 이용한 전원 사용 아두이노 보드의 USB 전원으로는 다이나믹셀 전원 연결이 되지 않기 때문에 반드시 외부 전원을 연결 해야 한다 전원 입력 커넥터를 사용할 때는 반드시 전원의 극성을 확인 하고 연결해서 사용해야한다 ",
-		"url": "http://emanual.robotis.com/docs/kr/parts/controller/arduino_dynamixel_shield/#전원-연결-방법"
+		"url": "http://emanual.robotis.com/docs/kr/parts/controller/dynamixel_shield/#전원-연결-방법"
 	},
 	"3584": {
 		"product": "아두이노 다이나믹셀 쉴드",
@@ -28677,7 +28677,7 @@
 		"header2": "",
 		"header3": "",
 		"content": "",
-		"url": "http://emanual.robotis.com/docs/kr/parts/controller/arduino_dynamixel_shield/#스위치"
+		"url": "http://emanual.robotis.com/docs/kr/parts/controller/dynamixel_shield/#스위치"
 	},
 	"3585": {
 		"product": "아두이노 다이나믹셀 쉴드",
@@ -28685,7 +28685,7 @@
 		"header2": "업로드 스위치",
 		"header3": "",
 		"content": "다이나믹셀 제어를 위해서 아두이노 보드의 하드웨어 시리얼 포트를 사용하는데 같은 포트로 업로드가 진행 되기 때문에 두 포트가 충돌이 날 수 있다 따라서 업로드를 위해서는 시리얼 포트 스위치를 이용하여 Upload 위치로 이동 시킨 후 업로드를 한다 업로드가 완료된 후에는 다이나믹셀 제어를 위해서 스위치를 Dynamixel 위치로 이동 시켜야한다 이동 시키지 않는다면 다이나믹셀 구동이 되지 않는다 ",
-		"url": "http://emanual.robotis.com/docs/kr/parts/controller/arduino_dynamixel_shield/#업로드-스위치"
+		"url": "http://emanual.robotis.com/docs/kr/parts/controller/dynamixel_shield/#업로드-스위치"
 	},
 	"3586": {
 		"product": "아두이노 다이나믹셀 쉴드",
@@ -28693,7 +28693,7 @@
 		"header2": "다이나믹셀 전원 스위치",
 		"header3": "",
 		"content": "다이나믹셀 커넥터의 전원을 별도로 Off 할수 있는 스위치이다 ",
-		"url": "http://emanual.robotis.com/docs/kr/parts/controller/arduino_dynamixel_shield/#다이나믹셀-전원-스위치"
+		"url": "http://emanual.robotis.com/docs/kr/parts/controller/dynamixel_shield/#다이나믹셀-전원-스위치"
 	},
 	"3587": {
 		"product": "아두이노 다이나믹셀 쉴드",
@@ -28701,7 +28701,7 @@
 		"header2": "",
 		"header3": "",
 		"content": "",
-		"url": "http://emanual.robotis.com/docs/kr/parts/controller/arduino_dynamixel_shield/#아두이노-쉴드-라이브러리"
+		"url": "http://emanual.robotis.com/docs/kr/parts/controller/dynamixel_shield/#아두이노-쉴드-라이브러리"
 	},
 	"3588": {
 		"product": "아두이노 다이나믹셀 쉴드",
@@ -28709,7 +28709,7 @@
 		"header2": "특징",
 		"header3": "",
 		"content": "다이나믹셀 프로토콜 지원 최대 16개 다이나믹셀 제어 가능 일반적으로 XL 320 XL430 W250은 각 모터당 6A를 소모한다 SynWrite 지원 RC100 라이브러리 지원 소프트 시리얼 라이브러리를 이용한 시리얼 통신 ",
-		"url": "http://emanual.robotis.com/docs/kr/parts/controller/arduino_dynamixel_shield/#특징"
+		"url": "http://emanual.robotis.com/docs/kr/parts/controller/dynamixel_shield/#특징"
 	},
 	"3589": {
 		"product": "아두이노 다이나믹셀 쉴드",
@@ -28717,7 +28717,7 @@
 		"header2": "라이브러리 설치",
 		"header3": "",
 		"content": "아두이노 IDE에서 라이브러리를 추가하는 세가지 방법이 있다 라이브러리 매니저를 활용하는 방법 Zip파일로 압축된 라이브러리를 불러오는 방법 수동으로 설치하는 방법 각각의 방법에 대한 자세한 설명은 Arduino Official Guide 에서 찾을 수 있다 다음은 라이브러리 매니저를 활용하는 예이다 라이브러리를 설치하였다면 examples 항목에 DynamixelShield가 생기고 사용 가능한 예제를 볼 수 있다 ",
-		"url": "http://emanual.robotis.com/docs/kr/parts/controller/arduino_dynamixel_shield/#라이브러리-설치"
+		"url": "http://emanual.robotis.com/docs/kr/parts/controller/dynamixel_shield/#라이브러리-설치"
 	},
 	"3590": {
 		"product": "아두이노 다이나믹셀 쉴드",
@@ -28725,7 +28725,7 @@
 		"header2": "",
 		"header3": "",
 		"content": "",
-		"url": "http://emanual.robotis.com/docs/kr/parts/controller/arduino_dynamixel_shield/#라이브러리-api"
+		"url": "http://emanual.robotis.com/docs/kr/parts/controller/dynamixel_shield/#라이브러리-api"
 	},
 	"3591": {
 		"product": "아두이노 다이나믹셀 쉴드",
@@ -28733,7 +28733,7 @@
 		"header2": "라이브러리 초기화",
 		"header3": "",
 		"content": "라이브러리를 사용하기 위해서는 통신 포트의 속도와 프로토콜을 설정하여 begin 함수로 초기화 한다 begin 1000000 PACKET VER ockquote 1Mbps 통신 속도에 프로토콜 으로 설정 ",
-		"url": "http://emanual.robotis.com/docs/kr/parts/controller/arduino_dynamixel_shield/#라이브러리-초기화"
+		"url": "http://emanual.robotis.com/docs/kr/parts/controller/dynamixel_shield/#라이브러리-초기화"
 	},
 	"3592": {
 		"product": "아두이노 다이나믹셀 쉴드",
@@ -28741,7 +28741,7 @@
 		"header2": "다이나믹셀 연결",
 		"header3": "",
 		"content": "쉴드 라이브러리는 다이나믹셀의 모델을 기반으로 하여 자동으로 주소값을 참조하도록 되어 있기 때문에 연결된 다이나믹셀이 무엇인지 알기 위해서 연결된 다이나믹셀의 ID와 모델을 추가해야 한다 자동 추가 ping ockquote ping 함수를 이용하여 자동으로 1번 부터 31번까지 검색을 해서 연결된 다이나믹셀이 있으면 추가한다 수동 추가 begin 1000000 delay 1000 addMotor XL430 addMotor XL430 addMotor 15 AX12 ockquote addMotor 함수를 이용하여 추가한다 ",
-		"url": "http://emanual.robotis.com/docs/kr/parts/controller/arduino_dynamixel_shield/#다이나믹셀-연결"
+		"url": "http://emanual.robotis.com/docs/kr/parts/controller/dynamixel_shield/#다이나믹셀-연결"
 	},
 	"3593": {
 		"product": "아두이노 다이나믹셀 쉴드",
@@ -28749,7 +28749,7 @@
 		"header2": "사용 가능한 API 목록",
 		"header3": "",
 		"content": "bool begin uint32 baud rate 57600 uint8 protocol version PACKET VER bool scan void bool ping uint8 id GLOBAL ID bool addMotor uint8 id uint8 model bool setProtocolVersion uint8 version bool write uint8 id uint16 addr uint8 data uint16 length uint32 timeout bool read uint8 id uint16 addr uint8 data uint16 length uint32 timeout uint8 getDxlCount void uint8 getDxlID uint8 index uint32 getErr void void clearErr void bool reboot uint8 id bool reset uint8 id bool setID uint8 id uint8 new id bool setBaud uint8 id uint32 new baud bool ledOn uint8 id bool ledOff uint8 id bool torqueOn uint8 id bool torqueOff uint8 id bool setJointMode uint8 id bool setWheelMode uint8 id bool setGoalPosition uint8 id uint32 position int32 getGoalPosition uint8 id int32 getCurPosition uint8 id bool setGoalSpeed uint8 id int32 speed int32 getGoalSpeed uint8 id int32 getCurSpeed uint8 id bool setGoalAngle uint8 id int32 angle int32 getGoalAngle uint8 id int32 getCurAngle uint8 id bool syncWriteBegin void bool syncWriteEnd void ",
-		"url": "http://emanual.robotis.com/docs/kr/parts/controller/arduino_dynamixel_shield/#사용-가능한-api-목록"
+		"url": "http://emanual.robotis.com/docs/kr/parts/controller/dynamixel_shield/#사용-가능한-api-목록"
 	},
 	"3594": {
 		"product": "CM-100A",

@@ -32,7 +32,7 @@ sidebar:
 
 ## [설치하기](#설치하기)
 
-- `다운로드` [로보티즈 홈페이지 자료실](http://www.robotis.com/service/downloadpage.php?cate=software)
+- `다운로드` [로보티즈 홈페이지 자료실](http://www.robotis.com/service/downloadcenter.php)
 
 로보플러스는 모든 로보티즈 제품을 프로그래밍할 수 있는 통합 소프트웨어입니다.
 

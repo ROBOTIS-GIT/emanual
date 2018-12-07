@@ -407,6 +407,4 @@ Goal Velocity(600)가 ‘0’인 경우, Profile 이 비활성화 되어 Goal Ac
 `다운로드` [RH-P12-RN(PDF).zip](http://www.robotis.com/service/download.php?no=740)  
 `다운로드` [RH-P12-RN(STP).zip](http://www.robotis.com/service/download.php?no=741)
 
-
-[PDF]: http://support.robotis.com/en/baggage_files/dynamixel/rh-p12-rn.pdf
 [Torque Enable(562)]: #torque-enable562

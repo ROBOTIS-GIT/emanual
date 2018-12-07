@@ -76,3 +76,5 @@
 
 - 예제 모션 파일 : [download][BIO_CMP_WalkingDroidExam1_KR.mtn]
 - 다운로드 방법 : [모션 파일 다운로드]
+
+[BIO_CMP_WalkingDroidExam1_KR.mtn]: http://www.robotis.com/service/download.php?no=1241

@@ -81,15 +81,15 @@ sidebar:
 [스마트II 2단계 교안예제]: #교안예제
 [태스크 코드 다운로드]: /docs/kr/faq/download_task_code/
 [BT-210]: /docs/kr/parts/communication/bt-210/
-[01_SMARTII_L2_ROULETTE_KR]: http://support.robotis.com/ko/baggage_files/smart2/01_smart2_l2_roulette_kr.tsk
-[02_SMARTII_L2_Color_test_KR]: http://support.robotis.com/ko/baggage_files/smart2/02_smart2_l2_color_test_kr.tsk
-[01_SMARTII_L2_RACINGCAR_KR]: http://support.robotis.com/ko/baggage_files/smart2/01_smart2_l2_racingcar_kr.tsk
-[02_SMARTII_L2_Vibration_test_KR]: http://support.robotis.com/ko/baggage_files/smart2/02_smart2_l2_vibration_test_kr.tsk
-[01_SMARTII_L2_STRONGBOX_KR]: http://support.robotis.com/ko/baggage_files/smart2/01_smart2_l2_strongbox_kr.tsk
-[02_SMARTII_L2_Touch_test_KR]: http://support.robotis.com/ko/baggage_files/smart2/02_smart2_l2_touch_test_kr.tsk
-[01_SMARTII_L2_GLADIATOR_KR]: http://support.robotis.com/ko/baggage_files/smart2/01_smart2_l2_gladiator_kr.tsk
-[02_SMARTII_L2_FaceDetecting_test_KR]: http://support.robotis.com/ko/baggage_files/smart2/02_smart2_l2_facedetecting_test_kr.tsk
-[01_SMARTII_L2_TANK_KR]: http://support.robotis.com/ko/baggage_files/smart2/01_smart2_l2_tank_kr.tsk
-[02_SMARTII_L2_TILT_test_KR]: http://support.robotis.com/ko/baggage_files/smart2/02_smart2_l2_tilt_test_kr.tsk
-[01_SMARTII_L2_ALARMCLOCK_KR ]: http://support.robotis.com/ko/baggage_files/smart2/01_smart2_l2_alarmclock_kr.tsk
-[02_SMARTII_L2_Clock_test_KR]: http://support.robotis.com/ko/baggage_files/smart2/02_smart2_l2_clock_test_kr.tsk
+[01_SMARTII_L2_ROULETTE_KR]: http://www.robotis.com/service/download.php?no=1011
+[02_SMARTII_L2_Color_test_KR]: http://www.robotis.com/service/download.php?no=1015
+[01_SMARTII_L2_RACINGCAR_KR]: http://www.robotis.com/service/download.php?no=1010
+[02_SMARTII_L2_Vibration_test_KR]: http://www.robotis.com/service/download.php?no=1019
+[01_SMARTII_L2_STRONGBOX_KR]: http://www.robotis.com/service/download.php?no=1012
+[02_SMARTII_L2_Touch_test_KR]: http://www.robotis.com/service/download.php?no=1018
+[01_SMARTII_L2_GLADIATOR_KR]: http://www.robotis.com/service/download.php?no=1009
+[02_SMARTII_L2_FaceDetecting_test_KR]: http://www.robotis.com/service/download.php?no=1016
+[01_SMARTII_L2_TANK_KR]: http://www.robotis.com/service/download.php?no=1013
+[02_SMARTII_L2_TILT_test_KR]: http://www.robotis.com/service/download.php?no=1017
+[01_SMARTII_L2_ALARMCLOCK_KR ]: http://www.robotis.com/service/download.php?no=1008
+[02_SMARTII_L2_Clock_test_KR]: http://www.robotis.com/service/download.php?no=1014

@@ -457,8 +457,11 @@ main:
       - title: "OpenCM 485 EXP"
         titlekr: "OpenCM 485 EXP"
         url: /parts/controller/opencm485exp/
-      - title: "OpenCR"
-        titlekr: "OpenCR"
+      - title: "OpenCR1.0"
+        titlekr: "OpenCR1.0"
+        url: /parts/controller/opencr10/
+      - title: "DYNAMIXEL Shield"
+        titlekr: "다이나믹셀 쉴드"
         url: /parts/controller/opencr10/
     - title: "Communication"
       titlekr: "통신"
@@ -511,6 +514,9 @@ main:
       - title: "U2D2"
         titlekr: "U2D2"
         url: /parts/interface/u2d2/
+      - title: "U2D2 Power Hub"
+        titlekr: "U2D2 파워 허브"
+        url: /parts/interface/u2d2_power_hub/
     - title: "Sensors"
       titlekr: "센서"
       children:
@@ -16762,84 +16768,84 @@ opencr10:
     - title: "Download Executable File"
       url: /parts/controller/opencr10/#download-executable-file
 
-arduino_dynamixel_shield:
+dynamixel_shield:
   - title: "Introduction"
     titlekr: "개요"
-    url: /parts/controller/arduino_dynamixel_shield/#introduction
-    urlkr: /parts/controller/arduino_dynamixel_shield/#개요
+    url: /parts/controller/dynamixel_shield/#introduction
+    urlkr: /parts/controller/dynamixel_shield/#개요
   - title: "Specifications"
     titlekr: "제품 사양"
-    url: /parts/controller/arduino_dynamixel_shield/#specifications
-    urlkr: /parts/controller/arduino_dynamixel_shield/#제품-사양
+    url: /parts/controller/dynamixel_shield/#specifications
+    urlkr: /parts/controller/dynamixel_shield/#제품-사양
   - title: "Layout"
     titlekr: "각 부 명칭"
-    url: /parts/controller/arduino_dynamixel_shield/#layout
-    urlkr: /parts/controller/arduino_dynamixel_shield/#각-부-명칭
+    url: /parts/controller/dynamixel_shield/#layout
+    urlkr: /parts/controller/dynamixel_shield/#각-부-명칭
   - title: "Connecting Power"
     titlekr: "전원 연결 방법"
-    url: /parts/controller/arduino_dynamixel_shield/#connecting-power
-    urlkr: /parts/controller/arduino_dynamixel_shield/#전원-연결-방법
+    url: /parts/controller/dynamixel_shield/#connecting-power
+    urlkr: /parts/controller/dynamixel_shield/#전원-연결-방법
   - title: "Switches"
     titlekr: "스위치"
-    url: /parts/controller/arduino_dynamixel_shield/#switches
-    urlkr: /parts/controller/arduino_dynamixel_shield/#스위치
+    url: /parts/controller/dynamixel_shield/#switches
+    urlkr: /parts/controller/dynamixel_shield/#스위치
     children:
     - title: "Upload Switch"
       titlekr: "업로드 스위치"
-      url: /parts/controller/arduino_dynamixel_shield/#upload-switch
-      urlkr: /parts/controller/arduino_dynamixel_shield/#업로드-스위치
+      url: /parts/controller/dynamixel_shield/#upload-switch
+      urlkr: /parts/controller/dynamixel_shield/#업로드-스위치
     - title: "Dynamixel Power Switch"
       titlekr: "다이나믹셀 전원 스위치"
-      url: /parts/controller/arduino_dynamixel_shield/#dynamixel-power-switch
-      urlkr: /parts/controller/arduino_dynamixel_shield/#다이나믹셀-전원-스위치
+      url: /parts/controller/dynamixel_shield/#dynamixel-power-switch
+      urlkr: /parts/controller/dynamixel_shield/#다이나믹셀-전원-스위치
   - title: "Arduino Shield Libraries"
     titlekr: "아두이노 쉴드 라이브러리"
-    url: /parts/controller/arduino_dynamixel_shield/#arduino-shield-libraries
-    urlkr: /parts/controller/arduino_dynamixel_shield/#아두이노-쉴드-라이브러리
+    url: /parts/controller/dynamixel_shield/#arduino-shield-libraries
+    urlkr: /parts/controller/dynamixel_shield/#아두이노-쉴드-라이브러리
     children:
     - title: "Features"
       titlekr: "특징"
-      url: /parts/controller/arduino_dynamixel_shield/#features
-      urlkr: /parts/controller/arduino_dynamixel_shield/#특징
+      url: /parts/controller/dynamixel_shield/#features
+      urlkr: /parts/controller/dynamixel_shield/#특징
     - title: "Install Library"
       titlekr: "라이브러리 설치"
-      url: /parts/controller/arduino_dynamixel_shield/#install-library
-      urlkr: /parts/controller/arduino_dynamixel_shield/#라이브러리-설치
+      url: /parts/controller/dynamixel_shield/#install-library
+      urlkr: /parts/controller/dynamixel_shield/#라이브러리-설치
   - title: "Library API"
     titlekr: "라이브러리 API"
-    url: /parts/controller/arduino_dynamixel_shield/#library-api
-    urlkr: /parts/controller/arduino_dynamixel_shield/#라이브러리-api
+    url: /parts/controller/dynamixel_shield/#library-api
+    urlkr: /parts/controller/dynamixel_shield/#라이브러리-api
     children:
     - title: "Initialize Library"
       titlekr: "라이브러리 초기화"
-      url: /parts/controller/arduino_dynamixel_shield/#initialize-library
-      urlkr: /parts/controller/arduino_dynamixel_shield/#라이브러리-초기화
+      url: /parts/controller/dynamixel_shield/#initialize-library
+      urlkr: /parts/controller/dynamixel_shield/#라이브러리-초기화
     - title: "Connect Dynamixel"
       titlekr: "다이나믹셀 연결"
-      url: /parts/controller/arduino_dynamixel_shield/#connect-dynamixel
-      urlkr: /parts/controller/arduino_dynamixel_shield/#다이나믹셀-연결
+      url: /parts/controller/dynamixel_shield/#connect-dynamixel
+      urlkr: /parts/controller/dynamixel_shield/#다이나믹셀-연결
     - title: "Available APIs"
       titlekr: "사용 가능한 API 목록"
-      url: /parts/controller/arduino_dynamixel_shield/#available-apis
-      urlkr: /parts/controller/arduino_dynamixel_shield/#사용-가능한-api-목록
+      url: /parts/controller/dynamixel_shield/#available-apis
+      urlkr: /parts/controller/dynamixel_shield/#사용-가능한-api-목록
 
 u2d2_power_hub:
   - title: "Introduction"
     titlekr: "개요"
-    url: /parts/controller/u2d2_power_hub/#introduction
-    urlkr: /parts/controller/u2d2_power_hub/#개요
+    url: /parts/interface/u2d2_power_hub/#introduction
+    urlkr: /parts/interface/u2d2_power_hub/#개요
   - title: "Specifications"
     titlekr: "제품 사양"
-    url: /parts/controller/u2d2_power_hub/#specifications
-    urlkr: /parts/controller/u2d2_power_hub/#제품-사양
+    url: /parts/interface/u2d2_power_hub/#specifications
+    urlkr: /parts/interface/u2d2_power_hub/#제품-사양
   - title: "Layout"
     titlekr: "각 부 명칭"
-    url: /parts/controller/u2d2_power_hub/#layout
-    urlkr: /parts/controller/u2d2_power_hub/#각-부-명칭
+    url: /parts/interface/u2d2_power_hub/#layout
+    urlkr: /parts/interface/u2d2_power_hub/#각-부-명칭
   - title: "Cautions"
     titlekr: "주의사항"
-    url: /parts/controller/u2d2_power_hub/#cautions
-    urlkr: /parts/controller/u2d2_power_hub/#주의사항
+    url: /parts/interface/u2d2_power_hub/#cautions
+    urlkr: /parts/interface/u2d2_power_hub/#주의사항
 
 opencm7:
   - titlekr: "개요"

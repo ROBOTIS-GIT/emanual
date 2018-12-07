@@ -58,14 +58,14 @@ sidebar:
 
 1. 단원별 예제 프로그램
 
-|로봇|태스크 코드|
-| :---: | :-----: |
-|1. 룰렛 로봇<br />![](/assets/images/edu/smart/roulette.jpg)|[로봇 예제 프로그램][01_SMART_L2_ROULETETTE_KR.tsk]<br />[프로그래밍 예제 프로그램][02_SMART_L2_Color_test_KR.tsk]|
-|2. 스마트레이싱카<br /> ![](/assets/images/edu/smart/racingcar.jpg)|[로봇 예제 프로그램][01_SMART_L2_RACINGCAR_KR.tsk]<br />[프로그래밍 예제 프로그램][02_SMART_L2_vibration_test_KR.tsk]|
-|3. 금고<br />![](/assets/images/edu/smart/strongbox.jpg)|[로봇 예제 프로그램][01_SMART_L2_STRONGBOX_KR.tsk]<br />[프로그래밍 예제 프로그램][02_SMART_L2_Touch_test_KR.tsk]|
-|4. 검투사<br />![](/assets/images/edu/smart/gladiator.jpg)|[로봇 예제 프로그램][01_SMART_L2_GLANDIATOR_KR.tsk]<br />[프로그래밍 예제 프로그램][02_SMART_L2_FaceDetecting_KR.tsk]|
-|5. 대포로봇<br />![](/assets/images/edu/smart/tank.jpg)|[로봇 예제 프로그램][01_SMART_L2_TANK_KR.tsk]<br />[프로그래밍 예제 프로그램][02_SMART_L2_TILT_test_KR.tsk]|
-|6. 알람시계<br />![](/assets/images/edu/smart/alarmclock.jpg)|[로봇 예제 프로그램][01_SMART_L2_ALARMCLOCK_KR.tsk]<br />[프로그래밍 예제 프로그램][02_SMART_L2_Clock_test_KR.tsk]|
+|                                로봇                                 |                                                      태스크 코드                                                      |
+|:-------------------------------------------------------------------:|:---------------------------------------------------------------------------------------------------------------------:|
+|    1. 룰렛 로봇<br />![](/assets/images/edu/smart/roulette.jpg)     |  [로봇 예제 프로그램][01_SMART_L2_ROULETETTE_KR.tsk]<br />[프로그래밍 예제 프로그램][02_SMART_L2_Color_test_KR.tsk]   |
+| 2. 스마트레이싱카<br /> ![](/assets/images/edu/smart/racingcar.jpg) | [로봇 예제 프로그램][01_SMART_L2_RACINGCAR_KR.tsk]<br />[프로그래밍 예제 프로그램][02_SMART_L2_vibration_test_KR.tsk] |
+|      3. 금고<br />![](/assets/images/edu/smart/strongbox.jpg)       |   [로봇 예제 프로그램][01_SMART_L2_STRONGBOX_KR.tsk]<br />[프로그래밍 예제 프로그램][02_SMART_L2_Touch_test_KR.tsk]   |
+|     4. 검투사<br />![](/assets/images/edu/smart/gladiator.jpg)      | [로봇 예제 프로그램][01_SMART_L2_GLANDIATOR_KR.tsk]<br />[프로그래밍 예제 프로그램][02_SMART_L2_FaceDetecting_KR.tsk] |
+|       5. 대포로봇<br />![](/assets/images/edu/smart/tank.jpg)       |      [로봇 예제 프로그램][01_SMART_L2_TANK_KR.tsk]<br />[프로그래밍 예제 프로그램][02_SMART_L2_TILT_test_KR.tsk]      |
+|    6. 알람시계<br />![](/assets/images/edu/smart/alarmclock.jpg)    |  [로봇 예제 프로그램][01_SMART_L2_ALARMCLOCK_KR.tsk]<br />[프로그래밍 예제 프로그램][02_SMART_L2_Clock_test_KR.tsk]   |
 
 
 [R+SMART]: /docs/kr/software/mobile_app/rplussmart/#r-smart-다운로드설치
@@ -76,15 +76,15 @@ sidebar:
 [스마트2단계 교안예제]: #교안예제
 [태스크 코드 다운로드]: /docs/kr/faq/download_task_code/
 [BT-210]: /docs/kr/parts/communication/bt-210/
-[01_SMART_L2_ROULETETTE_KR.tsk]: http://support.robotis.com/ko/baggage_files/smart/01_smart_l2_roulette_kr.tsk
-[02_SMART_L2_Color_test_KR.tsk]: http://support.robotis.com/ko/baggage_files/smart/02_smart_l2_color_test_kr.tsk
-[01_SMART_L2_RACINGCAR_KR.tsk]: http://support.robotis.com/ko/baggage_files/smart/01_smart_l2_racingcar_kr.tsk
-[02_SMART_L2_vibration_test_KR.tsk]: http://support.robotis.com/ko/baggage_files/smart/02_smart_l2_vibration_test_kr.tsk
-[01_SMART_L2_STRONGBOX_KR.tsk]: http://support.robotis.com/ko/baggage_files/smart/01_smart_l2_strongbox_kr.tsk
-[02_SMART_L2_Touch_test_KR.tsk]: http://support.robotis.com/ko/baggage_files/smart/02_smart_l2_touch_test_kr.tsk
-[01_SMART_L2_GLANDIATOR_KR.tsk]: http://support.robotis.com/ko/baggage_files/smart/01_smart_l2_gladiator_kr.tsk
-[02_SMART_L2_FaceDetecting_KR.tsk]: http://support.robotis.com/ko/baggage_files/smart/02_smart_l2_facedetecting_test_kr.tsk
-[01_SMART_L2_TANK_KR.tsk]: http://support.robotis.com/ko/baggage_files/smart/01_smart_l2_tank_kr.tsk
-[02_SMART_L2_TILT_test_KR.tsk]: http://support.robotis.com/ko/baggage_files/smart/02_smart_l2_tilt_test_kr.tsk
-[01_SMART_L2_ALARMCLOCK_KR.tsk]: http://support.robotis.com/ko/baggage_files/smart/01_smart_l2_alarmclock_kr.tsk
-[02_SMART_L2_Clock_test_KR.tsk]: http://support.robotis.com/ko/baggage_files/smart/02_smart_l2_clock_test_kr.tsk
+[01_SMART_L2_ROULETETTE_KR.tsk]: http://www.robotis.com/service/download.php?no=977
+[02_SMART_L2_Color_test_KR.tsk]: http://www.robotis.com/service/download.php?no=969
+[01_SMART_L2_RACINGCAR_KR.tsk]: http://www.robotis.com/service/download.php?no=976
+[02_SMART_L2_vibration_test_KR.tsk]: http://www.robotis.com/service/download.php?no=973
+[01_SMART_L2_STRONGBOX_KR.tsk]: http://www.robotis.com/service/download.php?no=978
+[02_SMART_L2_Touch_test_KR.tsk]: http://www.robotis.com/service/download.php?no=972
+[01_SMART_L2_GLANDIATOR_KR.tsk]: http://www.robotis.com/service/download.php?no=975
+[02_SMART_L2_FaceDetecting_KR.tsk]: http://www.robotis.com/service/download.php?no=970
+[01_SMART_L2_TANK_KR.tsk]: http://www.robotis.com/service/download.php?no=979
+[02_SMART_L2_TILT_test_KR.tsk]: http://www.robotis.com/service/download.php?no=971
+[01_SMART_L2_ALARMCLOCK_KR.tsk]: http://www.robotis.com/service/download.php?no=974
+[02_SMART_L2_Clock_test_KR.tsk]: http://www.robotis.com/service/download.php?no=968

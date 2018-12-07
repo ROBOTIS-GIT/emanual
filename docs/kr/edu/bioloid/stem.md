@@ -115,54 +115,54 @@ sidebar:
 [STEM Level 2 예제]: #stem-level-2-예제
 [제어기에 태스크 코드 다운로드 하기]: /docs/kr/faq/download_task_code/#cm-530
 [모션 파일 다운로드 방법]: #모션-파일-다운로드
-[BIO_STEM_SequenceRacer1_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_stem_sequenceracer1_kr.tsk
-[BIO_STEM_SequenceRacer2_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_stem_sequenceracer2_kr.tsk
-[BIO_STEM_SequenceRacer3_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_stem_sequenceracer3_kr.tsk
-[BIO_STEM_BugFighter1_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_stem_bugfighter1_kr.tsk
-[BIO_STEM_BugFighter2_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_stem_bugfighter2_kr.tsk
-[BIO_STEM_BugFighter3_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_stem_bugfighter3_kr.tsk
-[BIO_STEM_Tumbler1_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_stem_tumbler1_kr.tsk
-[BIO_STEM_Tumbler2_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_stem_tumbler2_kr.tsk
-[BIO_STEM_Tumbler3_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_stem_tumbler3_kr.tsk
-[BIO_STEM_LineFollower1_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_stem_linefollower1_kr.tsk
-[BIO_STEM_LineFollower2_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_stem_linefollower2_kr.tsk
-[BIO_STEM_LineFollower3_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_stem_linefollower3_kr.tsk
-[BIO_STEM_DigitalPiano1_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_stem_digitalpiano1_kr.tsk
-[BIO_STEM_DigitalPiano2_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_stem_digitalpiano2_kr.tsk
-[BIO_STEM_DigitalPiano3_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_stem_digitalpiano3_kr.tsk
-[BIO_STEM_MotorCycle1_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_stem_motorcycle1_kr.tsk
-[BIO_STEM_MotorCycle2_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_stem_motorcycle2_kr.tsk
-[BIO_STEM_MotorCycle3_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_stem_motorcycle3_kr.tsk
-[BIO_STEM_Avoider1_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_stem_avoider1_kr.tsk
-[BIO_STEM_Avoider2_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_stem_avoider2_kr.tsk
-[BIO_STEM_Avoider3_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_stem_avoider3_kr.tsk
-[BIO_STEM_Scribbler1_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_stem_scribbler1_kr.tsk
-[BIO_STEM_Scribbler2_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_stem_scribbler2_kr.tsk
-[BIO_STEM_Scribbler3_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_stem_scribbler3_kr.tsk
-[BIO_STEM_TransPorter1_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_stem_transporter1_kr.tsk
-[BIO_STEM_TransPorter2_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_stem_transporter2_kr.tsk
-[BIO_STEM_TransPorter3_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_stem_transporter3_kr.tsk
-[BIO_STEM_ProbeCar1_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_stem_probecar1_kr.tsk
-[BIO_STEM_ProbeCar2_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_stem_probecar2_kr.tsk
-[BIO_STEM_ProbeCar3_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_stem_probecar3_kr.tsk
-[BIO_STEM_BeetleGripper1_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_stem_beetlegripper1_kr.tsk
-[BIO_STEM_BeetleGripper2_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_stem_beetlegripper2_kr.tsk
-[BIO_STEM_BeetleGripper3_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_stem_beetlegripper3_kr.tsk
-[BIO_STEM_RobotArm1_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_stem_robotarm1_kr.tsk
-[BIO_STEM_RobotArm2_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_stem_robotarm2_kr.tsk
-[BIO_STEM_RobotArm3_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_stem_robotarm3_kr.tsk
-[BIO_STEM_Walking Droid1_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_stem_walking_droid1_kr.tsk
-[BIO_STEM_Walking Droid2_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_stem_walking_droid2_kr.tsk
-[BIO_STEM_Walking Droid3_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_stem_walking_droid3_kr.tsk
-[BIO_STEM_Walking Droid_KR.mtn]: http://support.robotis.com/ko/baggage_files/bioloid/bio_stem_walking_droid_kr.mtn
-[BIO_STEM_Hexapod1_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_stem_hexapod1_kr.tsk
-[BIO_STEM_Hexapod2_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_stem_hexapod2_kr.tsk
-[BIO_STEM_Hexapod3_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_stem_hexapod3_kr.tsk
-[BIO_STEM_Hexapod_KR.mtn]: http://support.robotis.com/ko/baggage_files/bioloid/bio_stem_hexapod_kr.mtn
-[BIO_STEM_GreetingPenguin1_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_stem_greetingpenguin1_kr.tsk
-[BIO_STEM_GreetingPenguin2_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_stem_greetingpenguin2_kr.tsk
-[BIO_STEM_GreetingPenguin3_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_stem_greetingpenguin3_kr.tsk
-[BIO_STEM_GreetingPenguin_KR.mtn]: http://support.robotis.com/ko/baggage_files/bioloid/bio_stem_greetingpenguin_kr.mtn
-[BIO_STEM_CannonShooter1_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_stem_cannonshooter1_kr.tsk
-[BIO_STEM_CannonShooter2_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_stem_cannonshooter2_kr.tsk
-[BIO_STEM_CannonShooter3_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_stem_cannonshooter3_kr.tsk
+[BIO_STEM_SequenceRacer1_KR.tsk]: http://www.robotis.com/service/download.php?no=1377
+[BIO_STEM_SequenceRacer2_KR.tsk]: http://www.robotis.com/service/download.php?no=1378
+[BIO_STEM_SequenceRacer3_KR.tsk]: http://www.robotis.com/service/download.php?no=1379
+[BIO_STEM_BugFighter1_KR.tsk]: http://www.robotis.com/service/download.php?no=1345
+[BIO_STEM_BugFighter2_KR.tsk]: http://www.robotis.com/service/download.php?no=1346
+[BIO_STEM_BugFighter3_KR.tsk]: http://www.robotis.com/service/download.php?no=1347
+[BIO_STEM_Tumbler1_KR.tsk]: http://www.robotis.com/service/download.php?no=1383
+[BIO_STEM_Tumbler2_KR.tsk]: http://www.robotis.com/service/download.php?no=1384
+[BIO_STEM_Tumbler3_KR.tsk]: http://www.robotis.com/service/download.php?no=1385
+[BIO_STEM_LineFollower1_KR.tsk]: http://www.robotis.com/service/download.php?no=1362
+[BIO_STEM_LineFollower2_KR.tsk]: http://www.robotis.com/service/download.php?no=1363
+[BIO_STEM_LineFollower3_KR.tsk]: http://www.robotis.com/service/download.php?no=1364
+[BIO_STEM_DigitalPiano1_KR.tsk]: http://www.robotis.com/service/download.php?no=1351
+[BIO_STEM_DigitalPiano2_KR.tsk]: http://www.robotis.com/service/download.php?no=1352
+[BIO_STEM_DigitalPiano3_KR.tsk]: http://www.robotis.com/service/download.php?no=1353
+[BIO_STEM_MotorCycle1_KR.tsk]: http://www.robotis.com/service/download.php?no=1365
+[BIO_STEM_MotorCycle2_KR.tsk]: http://www.robotis.com/service/download.php?no=1366
+[BIO_STEM_MotorCycle3_KR.tsk]: http://www.robotis.com/service/download.php?no=1367
+[BIO_STEM_Avoider1_KR.tsk]: http://www.robotis.com/service/download.php?no=1339
+[BIO_STEM_Avoider2_KR.tsk]: http://www.robotis.com/service/download.php?no=1340
+[BIO_STEM_Avoider3_KR.tsk]: http://www.robotis.com/service/download.php?no=1341
+[BIO_STEM_Scribbler1_KR.tsk]: http://www.robotis.com/service/download.php?no=1374
+[BIO_STEM_Scribbler2_KR.tsk]: http://www.robotis.com/service/download.php?no=1375
+[BIO_STEM_Scribbler3_KR.tsk]: http://www.robotis.com/service/download.php?no=1376
+[BIO_STEM_TransPorter1_KR.tsk]: http://www.robotis.com/service/download.php?no=1380
+[BIO_STEM_TransPorter2_KR.tsk]: http://www.robotis.com/service/download.php?no=1381
+[BIO_STEM_TransPorter3_KR.tsk]: http://www.robotis.com/service/download.php?no=1382
+[BIO_STEM_ProbeCar1_KR.tsk]: http://www.robotis.com/service/download.php?no=1368
+[BIO_STEM_ProbeCar2_KR.tsk]: http://www.robotis.com/service/download.php?no=1369
+[BIO_STEM_ProbeCar3_KR.tsk]: http://www.robotis.com/service/download.php?no=1370
+[BIO_STEM_BeetleGripper1_KR.tsk]: http://www.robotis.com/service/download.php?no=1342
+[BIO_STEM_BeetleGripper2_KR.tsk]: http://www.robotis.com/service/download.php?no=1343
+[BIO_STEM_BeetleGripper3_KR.tsk]: http://www.robotis.com/service/download.php?no=1344
+[BIO_STEM_RobotArm1_KR.tsk]: http://www.robotis.com/service/download.php?no=1371
+[BIO_STEM_RobotArm2_KR.tsk]: http://www.robotis.com/service/download.php?no=1372
+[BIO_STEM_RobotArm3_KR.tsk]: http://www.robotis.com/service/download.php?no=1373
+[BIO_STEM_Walking Droid1_KR.tsk]: http://www.robotis.com/service/download.php?no=1386
+[BIO_STEM_Walking Droid2_KR.tsk]: http://www.robotis.com/service/download.php?no=1387
+[BIO_STEM_Walking Droid3_KR.tsk]: http://www.robotis.com/service/download.php?no=1388
+[BIO_STEM_Walking Droid_KR.mtn]: http://www.robotis.com/service/download.php?no=1389
+[BIO_STEM_Hexapod1_KR.tsk]: http://www.robotis.com/service/download.php?no=1358
+[BIO_STEM_Hexapod2_KR.tsk]: http://www.robotis.com/service/download.php?no=1359
+[BIO_STEM_Hexapod3_KR.tsk]: http://www.robotis.com/service/download.php?no=1360
+[BIO_STEM_Hexapod_KR.mtn]: http://www.robotis.com/service/download.php?no=1361
+[BIO_STEM_GreetingPenguin1_KR.tsk]: http://www.robotis.com/service/download.php?no=1354
+[BIO_STEM_GreetingPenguin2_KR.tsk]: http://www.robotis.com/service/download.php?no=1355
+[BIO_STEM_GreetingPenguin3_KR.tsk]: http://www.robotis.com/service/download.php?no=1356
+[BIO_STEM_GreetingPenguin_KR.mtn]: http://www.robotis.com/service/download.php?no=1357
+[BIO_STEM_CannonShooter1_KR.tsk]: http://www.robotis.com/service/download.php?no=1348
+[BIO_STEM_CannonShooter2_KR.tsk]: http://www.robotis.com/service/download.php?no=1349
+[BIO_STEM_CannonShooter3_KR.tsk]: http://www.robotis.com/service/download.php?no=1350
