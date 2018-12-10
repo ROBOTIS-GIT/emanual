@@ -381,6 +381,7 @@ main:
       - title: "R+ Scratch"
         titlekr: "로보플러스 스크래치"
         url: /software/rplus2/scratch/
+      # - title: "R+ Block"
       - titlekr: "로보플러스 블록"
         url: /software/rplus2/rplus2_block/
     - title: "R+ Mobile"
@@ -585,8 +586,11 @@ all-dynamixel:
     titlekr: "X Series"
     url: /dxl/#x-series
   - title: "PRO Series"
-    titlekr: "PRO Serie"
-    url: /dxl/#pro-m-series
+    titlekr: "PRO Series"
+    url: /dxl/#pro-series
+  - title: "PRO+ Series"
+    titlekr: "PRO+ Series"
+    url: /dxl/#pro-plus-series
 
 dynamixel_pro:
   - title: "Product Lineup"
@@ -10270,6 +10274,38 @@ protocol2:
       - title: "Bulk Write"
         titlekr: "Bulk Write"
         url: /dxl/protocol2/#bulk-write
+
+all-edu:
+  - title: "OLLO"
+    titlekr: "올로"
+    url: /edu/#ollo
+    urlkr: /edu/#올로
+  - title: "DREAM"
+    titlekr: "드림 I"
+    url: /edu/#dream
+    urlkr: /edu/#드림-i
+  - title: "DREAM II"
+    titlekr: "드림 II"
+    url: /edu/#dream-ii
+    urlkr: /edu/#드림-ii
+  - titlekr: "스마트 I"
+    urlkr: /edu/#스마트-i
+  - titlekr: "스마트 II"
+    urlkr: /edu/#스마트-ii
+  - titlekr: "스마트 III"
+    urlkr: /edu/#스마트-iii
+  - titlekr: "IoT"
+    urlkr: /edu/#iot
+  - titlekr: "자동차 로봇"
+    urlkr: /edu/#자동차-로봇
+  - title: "BIOLOID"
+    titlekr: "바이올로이드"
+    url: /edu/#bioloid
+    urlkr: /edu/#바이올로이드
+  - title: "MINI"
+    titlekr: "미니"
+    url: /edu/#mini
+    urlkr: /edu/#미니
 
 #Ollo Bug Kit sidebar
 ollo_bugkit:
