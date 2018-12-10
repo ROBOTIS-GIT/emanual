@@ -8,7 +8,7 @@ author_profile: false
 permalink: /docs/kr/edu/
 sidebar:
   title: 교육키트
-  nav: ""
+  nav: "all-edu"
 ---
 
 # [올로](#올로)
