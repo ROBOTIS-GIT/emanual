@@ -75,8 +75,8 @@ OpenManipulator is composed by [Dynamixel X series](http://emanual.robotis.com/d
 
 |                   | Part Name              |  Quantity  |
 |-------------------|------------------------|:----------:|
-| **Chassis Parts** | LONG LINK FRAME        |     1      |
-| .                 | SHORT LINK FRAME       |     1      |
+| **Chassis Parts** | LINK FRAME(LONG)       |     1      |
+| .                 | LINK FRAME(SHORT)      |     1      |
 | .                 | RAIL BRACKET(LEFT)     |     1      |
 | .                 | RAIL BRACKET(RIGHT)    |     1      |
 | .                 | PALM GRIPPER           |     2      |
@@ -84,33 +84,34 @@ OpenManipulator is composed by [Dynamixel X series](http://emanual.robotis.com/d
 | .                 | FLANGE BUSH            |     4      |
 | .                 | CRANK ARM              |     1      |
 | .                 | RAIL BLOCK             |     2      |
-| .                 | FR12_S101_K            |     1      |
-| .                 | FR12_S102_K            |     2      |
-| .                 | FR12_H101_K            |     2      |
-| .                 | FR12_H104_K            |     1      |
+| .                 | FR12-S101-K            |     1      |
+| .                 | FR12-S102-K            |     2      |
+| .                 | FR12-H101-K            |     2      |
+| .                 | FR12-H104-K            |     1      |
 | **Actuators**     | Dynamixel XM430-W350-T |     5      |
-| **Cables**        | CABLE_3P_100MM         |     1      |
-| .                 | CABLE_3P_180MM         |     3      |
-| .                 | CABLE_3P_240MM         |     1      |
-| **Tools**         | SCREW_DRIER_DEFAULT    |     1      |
-| .                 | Wrench_Hex_1_5X90      |     1      |
-| .                 | Wrench_Hex_2_0X100     |     1      |
-| .                 | Wrench_Hex_2_5X110     |     1      |
-| **Miscellaneous** | DC12_A01_SPACER_RING   |     24     |
-| .                 | WB_M2_5X12_NYLOK       |     8      |
-| .                 | NUT_M2_5(0.45P)        |     16     |
-| .                 | NUT_M3                 |     4      |
-| .                 | WB_M2X03               |     42     |
-| .                 | WB_M2X04               |     4      |
-| .                 | WB_M2_5X06             |     8      |
-| .                 | WB_M2_5X08             |     16     |
-| .                 | FHS_M2_5X14            |     12     |
-| .                 | WB_M3X10               |     4      |
-| .                 | WB_M2_5X04             |     8      |
-| .                 | HN12_I101              |     3      |
-| .                 | IGUS_JFM_1113_05       |     3      |
-| .                 | DC12_CAP_IDLE          |     3      |
-| .                 | GRIPPER_PAD            |     2      |
+| **Cables**        | CABLE-X3P-100          |     1      |
+| .                 | CABLE-X3P-180          |     2      |
+| .                 | CABLE-X3P-240          |     2      |
+| **Tools**         | Screw Driver           |     1      |
+| .                 | Wrench-1.5             |     1      |
+| .                 | Wrench-2.0             |     1      |
+| .                 | Wrench-2.5             |     1      |
+| **Miscellaneous** | X-SP                   |     24     |
+| .                 | NUT-M2.5               |     16     |
+| .                 | NUT-M3                 |     4      |
+| .                 | FHS-M2.5x14            |     12     |
+| .                 | WB-M2x3                |     38     |
+| .                 | WB-M2x4                |     4      |
+| .                 | WB-M2.5x4              |     4      |
+| .                 | WB-M2.5x6              |     8      |
+| .                 | WB-M2.5x8              |     16     |
+| .                 | WB-M2.5x12             |     8      |
+| .                 | WB-M2.5x20             |     4      |
+| .                 | WB-M3x10               |     4      |
+| .                 | DC12-IDLER             |     3      |
+| .                 | DC12-IDLER-CAP         |     3      |
+| .                 | DC12-P-BEARING         |     3      |
+| .                 | RUBBER PAD             |     2      |
 
 
 - Optional parts
@@ -856,17 +857,32 @@ To load an OpenManipulator with DYNAMIXEL X-series, you can set parameters for w
   ```
   <launch>
     <arg name="use_robot_name"         default="open_manipulator"/>
+
     <arg name="dynamixel_usb_port"     default="/dev/ttyUSB0"/>
     <arg name="dynamixel_baud_rate"    default="1000000"/>
 
+    <arg name="control_period"         default="0.010"/>
+
     <arg name="use_platform"           default="true"/>
 
-    <node pkg="open_manipulator_controller" type="open_manipulator_controller" name="open_manipulator_controller" output="screen">
-      <param name="robot_name"           value="$(arg use_robot_name)"/>
-      <param name="usb_port"             value="$(arg dynamixel_usb_port)"/>
-      <param name="baud_rate"            value="$(arg dynamixel_baud_rate)"/>
-      <param name="using_platform"       value="$(arg use_platform)"/>
+    <arg name="use_moveit"             default="true"/>
+    <arg name="planning_group_name"    default="arm"/>
+    <arg name="moveit_sample_duration" default="0.050"/>
+
+    <group if="$(arg use_moveit)">
+      <include file="$(find open_manipulator_controller)/launch/open_manipulator_moveit.launch">
+        <arg name="sample_duration" value="$(arg moveit_sample_duration)"/>
+      </include>
+    </group>
+
+    <node name="$(arg use_robot_name)" pkg="open_manipulator_controller" type="open_manipulator_controller" output="screen" args="$(arg dynamixel_usb_port) $(arg dynamixel_baud_rate)">
+        <param name="using_platform"       value="$(arg use_platform)"/>
+        <param name="using_moveit"         value="$(arg use_moveit)"/>
+        <param name="planning_group_name"  value="$(arg planning_group_name)"/>
+        <param name="control_period"       value="$(arg control_period)"/>
+        <param name="moveit_sample_duration"  value="$(arg moveit_sample_duration)"/>
     </node>
+
   </launch>
   ```
 
@@ -874,20 +890,24 @@ To load an OpenManipulator with DYNAMIXEL X-series, you can set parameters for w
   $ roslaunch open_manipulator_controller open_manipulator_controller.launch
   ```
 
-We provide manipulation layer to use MoveIt!. You can handle it using RViz or ROS messages.
-
-  ```
-  $ roslaunch open_manipulator_moveit_controller open_manipulator_moveit.launch
-  ```
-
 Below services are help you to manipulate OpenManipulator
 
   ```
-  /open_manipulator/get_joint_position
-  /open_manipulator/get_kinematics_pose
-  /open_manipulator/set_gripper_position
-  /open_manipulator/set_joint_position
-  /open_manipulator/set_kinematics_pose
+  /open_manipulator/moveit/get_joint_position
+  /open_manipulator/moveit/get_kinematics_pose
+  /open_manipulator/moveit/set_joint_position
+  /open_manipulator/moveit/set_kinematics_pose
+  ```
+
+If someone want to use inverse kinematics with `position_only`. Please check `open_manipulator_moveit` -> `config` -> `kinematics.yaml`. And change a parameter(position_only_ik) to **True**.
+
+  ```
+  arm:
+    kinematics_solver: kdl_kinematics_plugin/KDLKinematicsPlugin
+    kinematics_solver_search_resolution: 0.005
+    kinematics_solver_timeout: 0.005
+    kinematics_solver_attempts: 3
+    position_only_ik: False
   ```
 
   ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_moveit_real_1.png)
