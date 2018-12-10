@@ -13,33 +13,33 @@ sidebar:
 
 # [Introduction](#introduction)
 
-로보플러스 블록은 구글 블로클리(Blockly) 방식의 블록형 코딩이 가능하도록 개발된 코딩 교육용 플랫폼입니다.
+Roboplus Block is a coding education platform that inherits block coding method of Google's Blockly.
 
-## [지원 제품 목록](#지원-제품-목록)
+## [Supported Products](#supported-products)
 - ROBOTIS OLLO K
 - ROBOTIS PLAY 700
 
-## [지원 부품 목록](#지원-부품-목록)
+## [Supported Parts](#supported-parts)
 
-### [제어기](#제어기)
+### [Controllers](#controllers)
 - CM-50
 
-### [통신 모듈](#통신-모듈)
+### [Communication Modules](#communication-modules)
 - [BT-210]
 - [BT-410]
 
-# [시작하기](#시작하기)
+# [Getting Started](#getting-started)
 
-## [로보플러스 블록 설치](#로보플러스-블록-설치)
+## [Install R+ Block](#install-r-block)
 
-### [시스템 최저 요구사항](#시스템-최저-요구사항)
-- OS 버전 : Android 5.0(롤리팝) 이상
-- H/W : 블루투스 내장 기기 (블루투스 2.0 / 4.0 지원)
+### [System Minimum Requirements](#system-minimum-requirements)
+- OS Version : Android 5.0(Lollipop) or above
+- H/W : Devices with Bluetooth (Bluetooth 2.0 or 4.0)
 
-### [다운로드/설치](#다운로드설치)
+### [Download and Setup](#download-and-setup)
 
-스마트 기기에서 Play 스토어를 실행합니다. (Play 스토어는 안드로이드 마켓 앱입니다.)  
-Play 스토어에서 `R+Block` 을 검색한 후 설치합니다.
+Launch the Google Play from smart device. (Google Play is a substitute for Android Market)  
+Search for `R+ Block` on Google Play.
 
 ![](/assets/images/sw/rplus2/block/block_search_kr.png)
 > Play 스토어에서 `로보티즈` 검색 및 선택

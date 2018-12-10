@@ -8,7 +8,7 @@ author_profile: false
 permalink: /docs/en/edu/
 sidebar:
   title: STEAM
-  nav: ""
+  nav: "all-edu"
 ---
 
 # [OLLO](#ollo)
