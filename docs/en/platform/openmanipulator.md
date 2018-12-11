@@ -41,10 +41,6 @@ OpenManipulator is composed by [Dynamixel X series](http://emanual.robotis.com/d
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/B2pnXtooKOg" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Qhvk5cnX2hM" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/P82pZsqpBg0" frameborder="0" allowfullscreen></iframe>
-
 # [Specification](#specification)
 
 ## [Hardware Specification](#hardware-specification)
@@ -118,11 +114,10 @@ OpenManipulator is composed by [Dynamixel X series](http://emanual.robotis.com/d
 
 |            | Part Name  |  Quantity  |
 |------------|------------|:----------:|
-| **Powers** | SMPS 12V5A |     1      |
-| .          | A/C Cord   |     1      |
-| **Boards** | OpenCR     |     1      |
-| .          | U2D2       |     1      |
-| **Plate**  | .          |     1      |
+| **Powers** | [SMPS 12V5A](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=1369&keyword=smps) |     1      |
+| **Boards** | [OpenCR](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=3289&GC=GD0B0100)     |     1      |
+| .          | [U2D2](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=3288&keyword=u2d2)       |     1      |
+| **Plate**  | Base Plate-02 |     1      |
 | .          | .          |     1      |
 
 
@@ -253,7 +248,8 @@ Launch Open Manipulator Controller to start [Basic Manipulation](/docs/en/platfo
 $ roslaunch open_manipulator_controller open_manipulator_controller.launch
 ```
 
-**WARNING**: If you start the controller in a pose where the components of OpenManipulator are in contact with each other, the OpenManipulator will not move by joint limit. It is recommended to place the Open Manipulator in the following Pose and start the control. 
+**WARNING**: If you start the controller in a pose where the components of OpenManipulator are in contact with each other, the OpenManipulator will not move by joint limit. 
+It is recommended to place the Open Manipulator in the following Pose and start the control.  
 <img src="/assets/images/platform/openmanipulator/open_manipulator_start_pose.png" width="250">
 <!-- ![](/assets/images/platform/openmanipulator/open_manipulator_start_pose.png) -->
 {: .notice--warning}
@@ -265,31 +261,27 @@ SUMMARY
 ========
 
 PARAMETERS
- * /open_manipulator_controller/baud_rate: 1000000
- * /open_manipulator_controller/usb_port: /dev/ttyUSB0
- * /open_manipulator_controller/using_platform: True
- * /robot_name: open_manipulator
+ * /open_manipulator/control_period: 0.01
+ * /open_manipulator/moveit_sample_duration: 0.05
+ * /open_manipulator/planning_group_name: arm
+ * /open_manipulator/using_moveit: False
+ * /open_manipulator/using_platform: True
  * /rosdistro: kinetic
  * /rosversion: 1.12.14
 
 NODES
   /
-    open_manipulator_controller (open_manipulator_controller/open_manipulator_controller)
+    open_manipulator (open_manipulator_controller/open_manipulator_controller)
 
-auto-starting new master
-process[master]: started with pid [614]
 ROS_MASTER_URI=http://localhost:11311
 
-setting /run_id to 389b63dc-f6ba-11e8-acbb-ac9e17829ad5
-process[rosout-1]: started with pid [627]
-started core service [/rosout]
-process[open_manipulator_controller-2]: started with pid [634]
+process[open_manipulator-1]: started with pid [23452]
 Joint Dynamixel ID : 11, Model Name : XM430-W350
 Joint Dynamixel ID : 12, Model Name : XM430-W350
 Joint Dynamixel ID : 13, Model Name : XM430-W350
 Joint Dynamixel ID : 14, Model Name : XM430-W350
 Gripper Dynamixel ID : 15, Model Name :XM430-W350
-[INFO] Successed to OpenManipulator initialization
+[ INFO] [1544509070.096942788]: Succeeded to init /open_manipulator
 ```
 
 ## [Check Setting](#check-setting)
@@ -307,7 +299,7 @@ Gripper Dynamixel ID : 15, Model Name :XM430-W350
 Publish a topic message to check the OpenManipulator setting.
 
 ```
-robotis@spc:~$ rostopic pub /open_manipulator/option std_msgs/String "print_open_manipulator_setting"
+$ rostopic pub /open_manipulator/option std_msgs/String "print_open_manipulator_setting"
 ```
 
 <**Manipulator Description**> will be printed on the terminal launch the open_manipulator_controller. It is shown that present state of the OpenManipulator.  
@@ -342,6 +334,54 @@ This parameter is descripted on OpenManipulator.cpp in open_manipulator_libs pkg
  -Angular acceleration : 
 (0.000, 0.000, 0.000)
 
+<Configuration of gripper>
+ [Component Type]
+  Tool
+ [Name]
+ -Parent Name : joint4
+ [Actuator]
+ -Actuator Name : tool_dxl
+ -ID :  15
+ -Joint Axis : 
+(0.000, 0.000, 0.000)
+ -Coefficient :  -0.015
+ -Limit : 
+    Maximum : 0.010, Minimum : -0.010
+ [Actuator Value]
+ -Value :  0.008
+ -Velocity :  0.000
+ -Acceleration :  0.000
+ -Effort :  0.000
+ [Constant]
+ -Relative Position from parent component : 
+(0.130, 0.000, 0.000)
+ -Relative Orientation from parent component : 
+(1.000, 0.000, 0.000
+ 0.000, 1.000, 0.000
+ 0.000, 0.000, 1.000)
+ -Mass :  0.000
+ -Inertia Tensor : 
+(1.000, 0.000, 0.000
+ 0.000, 1.000, 0.000
+ 0.000, 0.000, 1.000)
+ -Center of Mass : 
+(0.000, 0.000, 0.000)
+ [Variable]
+ -Position : 
+(0.138, -0.005, 0.015)
+ -Orientation : 
+(-0.006, 0.043, 0.999
+ 0.000, 0.999, -0.043
+ -1.000, 0.000, -0.006)
+ -Linear Velocity : 
+(0.000, 0.000, 0.000)
+ -Linear acceleration : 
+(0.000, 0.000, 0.000)
+ -Angular Velocity : 
+(0.000, 0.000, 0.000)
+ -Angular acceleration : 
+(0.000, 0.000, 0.000)
+
 <Configuration of joint1>
  [Component Type]
   Active Joint
@@ -357,7 +397,7 @@ This parameter is descripted on OpenManipulator.cpp in open_manipulator_libs pkg
  -Limit : 
     Maximum : 3.142, Minimum : -3.142
  [Actuator Value]
- -Value :  0.227
+ -Value :  -0.043
  -Velocity :  0.000
  -Acceleration :  0.000
  -Effort :  0.000
@@ -379,8 +419,8 @@ This parameter is descripted on OpenManipulator.cpp in open_manipulator_libs pkg
  -Position : 
 (0.012, 0.000, 0.017)
  -Orientation : 
-(0.974, -0.225, 0.000
- 0.225, 0.974, 0.000
+(0.999, 0.043, 0.000
+ -0.043, 0.999, 0.000
  0.000, 0.000, 1.000)
  -Linear Velocity : 
 (0.000, 0.000, 0.000)
@@ -406,10 +446,10 @@ This parameter is descripted on OpenManipulator.cpp in open_manipulator_libs pkg
  -Limit : 
     Maximum : 1.571, Minimum : -2.050
  [Actuator Value]
- -Value :  -0.985
+ -Value :  -0.052
  -Velocity :  0.000
  -Acceleration :  0.000
- -Effort :  -29.590
+ -Effort :  0.000
  [Constant]
  -Relative Position from parent component : 
 (0.000, 0.000, 0.058)
@@ -428,9 +468,9 @@ This parameter is descripted on OpenManipulator.cpp in open_manipulator_libs pkg
  -Position : 
 (0.012, 0.000, 0.075)
  -Orientation : 
-(0.539, -0.225, -0.812
- 0.124, 0.974, -0.188
- 0.833, 0.000, 0.553)
+(0.998, 0.043, -0.052
+ -0.043, 0.999, 0.002
+ 0.052, 0.000, 0.999)
  -Linear Velocity : 
 (0.000, 0.000, 0.000)
  -Linear acceleration : 
@@ -455,10 +495,10 @@ This parameter is descripted on OpenManipulator.cpp in open_manipulator_libs pkg
  -Limit : 
     Maximum : 1.530, Minimum : -1.571
  [Actuator Value]
- -Value :  0.635
+ -Value :  0.546
  -Velocity :  0.000
  -Acceleration :  0.000
- -Effort :  -131.810
+ -Effort :  0.000
  [Constant]
  -Relative Position from parent component : 
 (0.024, 0.000, 0.128)
@@ -475,11 +515,11 @@ This parameter is descripted on OpenManipulator.cpp in open_manipulator_libs pkg
 (0.000, 0.000, 0.000)
  [Variable]
  -Position : 
-(-0.079, -0.021, 0.166)
+(0.029, -0.001, 0.204)
  -Orientation : 
-(0.915, -0.225, -0.334
- 0.211, 0.974, -0.077
- 0.343, 0.000, 0.939)
+(0.880, 0.043, 0.474
+ -0.038, 0.999, -0.020
+ -0.474, 0.000, 0.880)
  -Linear Velocity : 
 (0.000, 0.000, 0.000)
  -Linear acceleration : 
@@ -494,7 +534,7 @@ This parameter is descripted on OpenManipulator.cpp in open_manipulator_libs pkg
   Active Joint
  [Name]
  -Parent Name : joint3
- -Child Name 1 : tool
+ -Child Name 1 : gripper
  [Actuator]
  -Actuator Name : joint_dxl
  -ID :  14
@@ -504,10 +544,10 @@ This parameter is descripted on OpenManipulator.cpp in open_manipulator_libs pkg
  -Limit : 
     Maximum : 2.000, Minimum : -1.800
  [Actuator Value]
- -Value :  0.457
+ -Value :  1.083
  -Velocity :  0.000
  -Acceleration :  0.000
- -Effort :  -40.350
+ -Effort :  -2.690
  [Constant]
  -Relative Position from parent component : 
 (0.124, 0.000, 0.000)
@@ -524,59 +564,11 @@ This parameter is descripted on OpenManipulator.cpp in open_manipulator_libs pkg
 (0.000, 0.000, 0.000)
  [Variable]
  -Position : 
-(0.035, 0.005, 0.208)
+(0.138, -0.005, 0.145)
  -Orientation : 
-(0.969, -0.225, 0.104
- 0.224, 0.974, 0.024
- -0.107, 0.000, 0.994)
- -Linear Velocity : 
-(0.000, 0.000, 0.000)
- -Linear acceleration : 
-(0.000, 0.000, 0.000)
- -Angular Velocity : 
-(0.000, 0.000, 0.000)
- -Angular acceleration : 
-(0.000, 0.000, 0.000)
-
-<Configuration of tool>
- [Component Type]
-  Tool
- [Name]
- -Parent Name : joint4
- [Actuator]
- -Actuator Name : tool_dxl
- -ID :  15
- -Joint Axis : 
-(0.000, 0.000, 0.000)
- -Coefficient :  -0.015
- -Limit : 
-    Maximum : 0.010, Minimum : -0.010
- [Actuator Value]
- -Value :  -0.000
- -Velocity :  0.000
- -Acceleration :  0.000
- -Effort :  0.000
- [Constant]
- -Relative Position from parent component : 
-(0.130, 0.000, 0.000)
- -Relative Orientation from parent component : 
-(1.000, 0.000, 0.000
- 0.000, 1.000, 0.000
- 0.000, 0.000, 1.000)
- -Mass :  0.000
- -Inertia Tensor : 
-(1.000, 0.000, 0.000
- 0.000, 1.000, 0.000
- 0.000, 0.000, 1.000)
- -Center of Mass : 
-(0.000, 0.000, 0.000)
- [Variable]
- -Position : 
-(0.160, 0.034, 0.194)
- -Orientation : 
-(0.969, -0.225, 0.104
- 0.224, 0.974, 0.024
- -0.107, 0.000, 0.994)
+(-0.006, 0.043, 0.999
+ 0.000, 0.999, -0.043
+ -1.000, 0.000, -0.006)
  -Linear Velocity : 
 (0.000, 0.000, 0.000)
  -Linear acceleration : 
@@ -609,6 +601,7 @@ $ roslaunch open_manipulator_description open_manipulator_rviz.launch
 - If the user wants to check only model of OpenManipulator without control the actual OpenManipulator, the user can launch the Rviz without the OpenManipulator controller.
 The user can change each joint by GUI, if the user launch only Rviz by executing the following command :
 `$ roslaunch open_manipulator_description open_manipulator_rviz.launch use_gui:=true`
+- `Red Box` is showing end-effector position.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
@@ -643,7 +636,7 @@ $ rqt
 ![](/assets/images/platform/openmanipulator/rqt_om.png)
 
 **TIP**: If rqt is not displayed, select the `plugin` -> `Topics` -> `Topic Monitor`.
-{: .notice--info}
+{: .notice--success}
 
 When rqt is first run, the topic values are not monitored. To monitor the topic, click the checkbox next to each topic.
 
@@ -661,7 +654,7 @@ If you want to see more detail topic message, click the `▶` button next to eac
 **Published Topic List** :
 The topic list is published by open_manipulator_controller.
 - `/open_manipulator/joint_states`
-- `/open_manipulator/kinematics_pose`
+- `/open_manipulator/gripper/kinematics_pose`
 - `/open_manipulator/states`
 
 **NOTE**: These topics are messages for checking the status of the robot regardless of the robot's motion.
@@ -671,7 +664,7 @@ The topic list is published by open_manipulator_controller.
 
 ![](/assets/images/platform/openmanipulator/rqt_joint_states.png)
 
-`/open_manipulator/kinematics_pose`([open_manipulator_msgs/KinematicsPose]{: .popup}) is a message indicating the pose(position and orientation) in [task space]{: .popup}. **"position"** indicates x, y, and z value of the center of the end-effector(tool). **"Orientation"** indicates the direction of the end-effector(tool) as quaternion.
+`/open_manipulator/gripper/kinematics_pose`([open_manipulator_msgs/KinematicsPose]{: .popup}) is a message indicating the pose(position and orientation) in [task space]{: .popup}. **"position"** indicates x, y, and z value of the center of the end-effector(tool). **"Orientation"** indicates the direction of the end-effector(tool) as quaternion.
 
 ![](/assets/images/platform/openmanipulator/rqt_kinematic_pose.png)
 
@@ -717,11 +710,23 @@ The user can use this service to create a trajectory in the [joint space]{: .pop
 - `/open_manipulator/goal_task_space_path` ([open_manipulator_msgs/SetKinematicsPose]{: .popup})  
 The user can use this service to create a trajectory in the [task space]{: .popup}. The user inputs the kinematics pose of the OpenManipulator end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
 
+- `/open_manipulator/goal_task_space_path_position_only` ([open_manipulator_msgs/SetKinematicsPose]{: .popup})  
+The user can use this service to create a trajectory in the [task space]{: .popup}. The user inputs the kinematics pose(position only) of the OpenManipulator end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
+
+- `/open_manipulator/goal_task_space_path_orientation_only` ([open_manipulator_msgs/SetKinematicsPose]{: .popup})  
+The user can use this service to create a trajectory in the [task space]{: .popup}. The user inputs the kinematics pose(orientation only) of the OpenManipulator end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
+
 - `/open_manipulator/goal_joint_space_path_to_present` ([open_manipulator_msgs/SetJointPosition]{: .popup})  
 The user can use this service to create a trajectory from present joint angle in the [joint space]{: .popup}. The user inputs the angle of the target joint to be changed and the total time of the trajectory.
 
 - `/open_manipulator/goal_task_space_path_to_present` ([open_manipulator_msgs/SetKinematicsPose]{: .popup})  
 The user can use this service to create a trajectory from present kinematics pose in the task space. The user inputs the kinematics pose to be changed of the OpenManipulator end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
+
+- `/open_manipulator/goal_task_space_path_to_present_position_only` ([open_manipulator_msgs/SetKinematicsPose]{: .popup})  
+The user can use this service to create a trajectory from present kinematics pose in the [task space]{: .popup}. The user inputs the kinematics pose(position only) of the OpenManipulator end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
+
+- `/open_manipulator/goal_task_space_path_to_present_orientation_only` ([open_manipulator_msgs/SetKinematicsPose]{: .popup})  
+The user can use this service to create a trajectory from present kinematics pose in the [task space]{: .popup}. The user inputs the kinematics pose(orientation only) of the OpenManipulator end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
 
 - `/open_manipulator/goal_tool_control` ([open_manipulator_msgs/SetJointPosition]{: .popup})  
 The user can use this service to move the tool of OpenManipulator. 
@@ -778,7 +783,7 @@ The user can use this service to create a drawing trajectory. The user can creat
 ### [Keyboard](#keyboard)
 
 **TIP**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`-`Alt`-`T`.
-{: .notice--info}
+{: .notice--success}
  
   Launch `open_manipulator_teleop_keyboard` node for simple teleoperation test using the keyboard.
 
@@ -850,9 +855,12 @@ $ sudo xboxdrv --silent
 $ roslaunch open_manipulator_teleop open_manipulator_teleop_joystick.launch
 ```
 
-## [Moveit!](#moveit)
+## [MoveIt!](#moveit)
 
-To load an OpenManipulator with DYNAMIXEL X-series, you can set parameters for what you've configured for your own OpenManipulator
+**TIP**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`-`Alt`-`T`.
+{: .notice--success}
+
+Before you launch MoveIt!, let's check `open_manipulator_moveit` launch file.
 
   ```
   <launch>
@@ -865,7 +873,7 @@ To load an OpenManipulator with DYNAMIXEL X-series, you can set parameters for w
 
     <arg name="use_platform"           default="true"/>
 
-    <arg name="use_moveit"             default="true"/>
+    <arg name="use_moveit"             default="false"/>
     <arg name="planning_group_name"    default="arm"/>
     <arg name="moveit_sample_duration" default="0.050"/>
 
@@ -886,29 +894,41 @@ To load an OpenManipulator with DYNAMIXEL X-series, you can set parameters for w
   </launch>
   ```
 
-  ```
-  $ roslaunch open_manipulator_controller open_manipulator_controller.launch
-  ```
+**Parameters List** :
+The parameters list is supposed to set loading [move_group](http://docs.ros.org/kinetic/api/moveit_tutorials/html/doc/move_group_interface/move_group_interface_tutorial.html) package.
+- `use_moveit`
+- `planning_group_name`
+- `moveit_sample_duration`
 
-Below services are help you to manipulate OpenManipulator
+`use_moveit` is a parameter to set whether user use MoveIt!  
+`planning_group_name` is a parameter when you set in [setup_assistant](http://docs.ros.org/kinetic/api/moveit_tutorials/html/doc/setup_assistant/setup_assistant_tutorial.html#step-4-add-planning-groups)  
+`moveit_sample_duration` is a parameter is to set sampling time when joint trajectory is planned from MoveIt!
 
-  ```
-  /open_manipulator/moveit/get_joint_position
-  /open_manipulator/moveit/get_kinematics_pose
-  /open_manipulator/moveit/set_joint_position
-  /open_manipulator/moveit/set_kinematics_pose
-  ```
-
-If someone want to use inverse kinematics with `position_only`. Please check `open_manipulator_moveit` -> `config` -> `kinematics.yaml`. And change a parameter(position_only_ik) to **True**.
+After set the parameters, load a controller.
 
   ```
-  arm:
-    kinematics_solver: kdl_kinematics_plugin/KDLKinematicsPlugin
-    kinematics_solver_search_resolution: 0.005
-    kinematics_solver_timeout: 0.005
-    kinematics_solver_attempts: 3
-    position_only_ik: False
+  $ roslaunch open_manipulator_controller open_manipulator_controller.launch use_moveit:=true
   ```
+
+  ![](/assets/images/platform/openmanipulator/moveit_launch.png)  
+
+**Service Server List** :
+This is Service Server list of open_manipulator_controller.
+
+- `/open_manipulator/moveit/get_joint_position` ([open_manipulator_msgs/GetJointPosition]{: .popup})  
+The user can use this service to receives a joint position which is calculated by move_group.  
+
+- `/open_manipulator/moveit/get_kinematics_pose` ([open_manipulator_msgs/GetKinematicsPose]{: .popup})  
+The user can use this service to receives a kinematics pose which is calculated by move_group.
+
+- `/open_manipulator/moveit/set_joint_position` ([open_manipulator_msgs/SetJointPosition]{: .popup})  
+The user can use this service to create a trajectory in the [joint space]{: .popup} by move_group. The user inputs the angle of the target joint and the total time of the trajectory.
+  
+- `/open_manipulator/moveit/set_kinematics_pose` ([open_manipulator_msgs/SetKinematicsPose]{: .popup})  
+The user can use this service to create a trajectory in the [task space]{: .popup} by move_group. The user inputs the kinematics pose(orientation only) of the OpenManipulator end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
+
+**TIP**: If someone want to use inverse kinematics with `position_only`. Please check `open_manipulator_moveit` -> `config` -> `kinematics.yaml`. And change a parameter(position_only_ik) to **True**.
+{: .notice--success}
 
   ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_moveit_real_1.png)
 
@@ -945,26 +965,22 @@ SUMMARY
 ========
 
 PARAMETERS
- * /open_manipulator_controller/baud_rate: 1000000
- * /open_manipulator_controller/usb_port: /dev/ttyUSB0
- * /open_manipulator_controller/using_platform: False
- * /robot_name: open_manipulator
+ * /open_manipulator/control_period: 0.01
+ * /open_manipulator/moveit_sample_duration: 0.05
+ * /open_manipulator/planning_group_name: arm
+ * /open_manipulator/using_moveit: False
+ * /open_manipulator/using_platform: False
  * /rosdistro: kinetic
  * /rosversion: 1.12.14
 
 NODES
   /
-    open_manipulator_controller (open_manipulator_controller/open_manipulator_controller)
+    open_manipulator (open_manipulator_controller/open_manipulator_controller)
 
-auto-starting new master
-process[master]: started with pid [6117]
 ROS_MASTER_URI=http://localhost:11311
 
-setting /run_id to 2137abca-f79f-11e8-9533-ac9e17829ad5
-process[rosout-1]: started with pid [6130]
-started core service [/rosout]
-process[open_manipulator_controller-2]: started with pid [6137]
-[INFO] Successed to OpenManipulator initialization
+process[open_manipulator-1]: started with pid [9820]
+[ INFO] [1544506914.862653563]: Ready to simulate /open_manipulator on Gazebo
 ```
 **NOTE** : In OpenManipulator controller for gazebo simulation, Joint and Gripper Dynamixel are not enable, following messages will not display :  
 Joint Dynamixel ID : 11, Model Name : XM430-W350  
@@ -983,6 +999,8 @@ Load an OpenManipulator on Gazebo simulator and click Play button `▶`.
   $ roslaunch open_manipulator_gazebo open_manipulator_gazebo.launch
   ```
 
+A red box is pointing end-effector link.
+
   ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_gazebo_1.png)
 
 Enter `rostopic list` to list up the activated topics.
@@ -991,31 +1009,22 @@ Enter `rostopic list` to list up the activated topics.
   /clock
   /gazebo/link_states
   /gazebo/model_states
-  /gazebo/parameter_descriptions
-  /gazebo/parameter_updates
   /gazebo/set_link_state
   /gazebo/set_model_state
-  /gazebo_gui/parameter_descriptions
-  /gazebo_gui/parameter_updates
-  /open_manipulator/grip_joint_position/command
-  /open_manipulator/grip_joint_sub_position/command
+  /open_manipulator/gripper/kinematics_pose
+  /open_manipulator/gripper_position/command
+  /open_manipulator/gripper_sub_position/command
   /open_manipulator/joint1_position/command
   /open_manipulator/joint2_position/command
   /open_manipulator/joint3_position/command
   /open_manipulator/joint4_position/command
   /open_manipulator/joint_states
-  /open_manipulator/kinematics_pose
   /open_manipulator/option
   /open_manipulator/states
   /rosout
   /rosout_agg
   ```
-
-OpenManipulator in Gazebo is controllered by ROS message. For example, use below command to publish joint position(in radian).
-
-  ```
-  $ rostopic pub /open_manipulator/joint2_position/command std_msgs/Float64 "data: -1.0" --once
-  ```
+Open an [open_manipulator_control_gui](/docs/en/platform/openmanipulator/#gui-program)
 
   ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_gazebo_2.png)
 
@@ -1133,8 +1142,14 @@ Open processing source code file
 
 # [Mobile Manipulation](#mobile-manipulation)
 
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/Qhvk5cnX2hM" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/P82pZsqpBg0" frameborder="0" allowfullscreen></iframe>
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/DLOq8yNcCoE" frameborder="0" allowfullscreen></iframe>
+
   **TIP**: You can get a more information about it in [Manipulation section of TurtleBot3](/docs/en/platform/turtlebot3/manipulation/#manipulation)
-  {: .notice--info}
+  {: .notice--success}
 
 Install dependent packages
 
@@ -1149,7 +1164,7 @@ Install dependent packages
 Load a TurtleBot3 Waffle or Waffle Pi with OpenManipulator on RViz.
 
   **TIP**: TB3_MODEL =  `waffle`, `waffle_pi`
-  {: .notice--info}
+  {: .notice--success}
 
   ```
   $ export TURTLEBOT3_MODEL=${TB3_MODEL}
@@ -1463,8 +1478,10 @@ CAD Files ([Onshape](http://www.robotis.com/service/download.php?no=761), [Thing
 [rc100]: /docs/en/parts/communication/rc-100/
 [bt410]: /docs/en/parts/communication/bt-410/
 
+[open_manipulator_msgs/GetJointPosition]: /docs/en/popup/open_manipulator_msgs_GetJointPosition/
+[open_manipulator_msgs/GetKinematicsPose]: /docs/en/popup/open_manipulator_msgs_GetKinematicsPose/
 [open_manipulator_msgs/SetJointPosition]: /docs/en/popup/open_manipulator_msgs_SetJointPosition/
-[open_manipulator_msgs/SetKinematicPose]: /docs/en/popup/open_manipulator_msgs_SetKinematicPose/
+[open_manipulator_msgs/SetKinematicsPose]: /docs/en/popup/open_manipulator_msgs_SetKinematicsPose/
 [open_manipulator_msgs/SetActuatorState]: /docs/en/popup/open_manipulator_msgs_SetActuatorState/
 [open_manipulator_msgs/SetDrawingTrajectory]: /docs/en/popup/open_manipulator_msgs_SetDrawingTrajectory/
 

@@ -12937,7 +12937,7 @@ openmanipulator:
         url: /platform/openmanipulator/#ps4-joystick
       - title: "XBOX 360 Joystick"
         url: /platform/openmanipulator/#xbox-360-joystick
-    - title: "Moveit!"
+    - title: "MoveIt!"
       url: /platform/openmanipulator/#moveit 
   - title: "Gazebo Simulation"
     url: /platform/openmanipulator/#gazebo-simulation

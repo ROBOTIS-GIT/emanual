@@ -6,6 +6,7 @@ layout: popup
 
 - Service Definition
  ```c
+string end_effector_name
 string drawing_trajectory_name
 float64[] param
 float64 path_time
@@ -17,6 +18,9 @@ bool is_planned
 This service creates a drawing trajectory.
 
   - Request
+    * `string end_effector_name`
+&emsp;&emsp; End-Effector name which is relative to the base frame
+
     * `string drawing_trajectory_name`
 &emsp;&emsp; The name of the drawing trajectory type. (line, circle, heart, rhombus)
 

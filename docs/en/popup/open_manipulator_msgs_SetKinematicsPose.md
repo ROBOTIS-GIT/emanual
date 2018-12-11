@@ -6,6 +6,8 @@ layout: popup
 
 - Service Definition
  ```c
+string planning_group
+string end_effector_name
 KinematicsPose kinematics_pose
 float64 path_time
 ---
@@ -16,6 +18,12 @@ bool is_planned
 This service creates a trajectory in the task space.
 
   - Request
+    * `string planning_group`
+&emsp;&emsp; Planning Group which set MoveIt! configuration
+
+    * `string end_effector_name`
+&emsp;&emsp; End-Effector name which is relative to the base frame
+
     * `KinematicsPose kinematics_pose`
 &emsp;&emsp; The kinematics pose of the OpenManipulator end-effector relative to the base frame.
 

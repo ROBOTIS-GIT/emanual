@@ -20,12 +20,12 @@ layout: popup
 &emsp;&emsp; The kinematics pose of the OpenManipulator end-effector in the task space.
 
   - `float64 max_accelerations_scaling_factor`
-&emsp;&emsp; 
+&emsp;&emsp; maximum acceleration scaling factor for making joint trajectory from MoveIt!
 
   - `float64 max_velocity_scaling_factor`
-&emsp;&emsp; 
+&emsp;&emsp; maximum velocity scaling factor for making joint trajectory from MoveIt!
 
   - `float64 tolerance`
-&emsp;&emsp; 
+&emsp;&emsp; tolerance for reach a kinematics pose. This parameter is used in MoveIt!
 
 [open_manipulator_msgs/KinematicsPose]: /docs/en/popup/open_manipulator_msgs_KinematicsPose/
