@@ -188,11 +188,12 @@ Install dependent packages for the OpenManipulator. Run the following command in
 {: .notice--info}
 
 ```
-$ sudo apt-get install ros-kinetic-ros-controllers ros-kinetic-gazebo* ros-kinetic-moveit* ros-kinetic-dynamixel-sdk ros-kinetic-industrial-core
+$ sudo apt-get install ros-kinetic-ros-controllers ros-kinetic-gazebo* ros-kinetic-moveit* ros-kinetic-industrial-core
 ```
 
 ```
 $ cd ~/catkin_ws/src/
+$ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK.git
 $ git clone https://github.com/ROBOTIS-GIT/dynamixel_workbench.git
 $ git clone https://github.com/ROBOTIS-GIT/dynamixel_workbench_msgs.git
 $ git clone https://github.com/ROBOTIS-GIT/robotis_manipulator.git
@@ -1071,7 +1072,7 @@ Open Processing and Go to `Tools` > `Add Tool..`. Search `ControlP5` and install
 Download processing source code for OpenManipulator. 
 
 ```
-$ git clone git@github.com:ROBOTIS-GIT/open_manipulator_processing.git
+$ git clone https://github.com/ROBOTIS-GIT/open_manipulator_processing.git
 ```
 
 Open processing source code file 
