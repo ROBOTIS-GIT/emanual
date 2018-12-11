@@ -14681,18 +14681,18 @@ rplus2_block:
     url: /software/rplus2/rplus2_block/#getting-started
     urlkr: /software/rplus2/rplus2_block/#시작하기
     children:
-    - title: "R+Block Install"
+    - title: "R+ Block Install"
       titlekr: "로보플러스 블록 설치"
-      url: /software/rplus2/rplus2_block/#rblock-install
+      url: /software/rplus2/rplus2_block/#r-block-install
       urlkr: /software/rplus2/rplus2_block/#로보플러스-블록-설치
       children:
       - title: "Minimum Requirements"
         titlekr: "시스템 최저 요구사항"
         url: /software/rplus2/rplus2_block/#minimum-requirements
         urlkr: /software/rplus2/rplus2_block/#시스템-최저-요구사항
-      - title: "Download and Install"
+      - title: "Download and Setup"
         titlekr: "다운로드/설치"
-        url: /software/rplus2/rplus2_block/#download-and-install
+        url: /software/rplus2/rplus2_block/#download-and-setup
         urlkr: /software/rplus2/rplus2_block/#다운로드설치
       - title: "Connect to Robot"
         titlekr: "로봇 연결하기"
@@ -14702,140 +14702,149 @@ rplus2_block:
       titlekr: "메뉴 설명"
       url: /software/rplus2/rplus2_block/#main-screen
       urlkr: /software/rplus2/rplus2_block/#메뉴-설명
-  - title: ""
+  - title: "Basic Features"
     titlekr: "따라해보기"
-    url: /software/rplus2/rplus2_block/#
+    url: /software/rplus2/rplus2_block/#basic-features
     urlkr: /software/rplus2/rplus2_block/#따라해보기
     children:
-    - title: ""
+    - title: "Product Name"
       titlekr: "제품 변경"
-      url: /software/rplus2/rplus2_block/#
+      url: /software/rplus2/rplus2_block/#product-name
       urlkr: /software/rplus2/rplus2_block/#제품-변경
-    - title: ""
+    - title: "Block Level"
       titlekr: "블록 레벨 변경"
-      url: /software/rplus2/rplus2_block/#
+      url: /software/rplus2/rplus2_block/#block-level
       urlkr: /software/rplus2/rplus2_block/#블록-레벨-변경
-    - title: ""
+    - title: "Selecting Block"
       titlekr: "블록 선택"
-      url: /software/rplus2/rplus2_block/#
+      url: /software/rplus2/rplus2_block/#selecting-block
       urlkr: /software/rplus2/rplus2_block/#블록-선택
-    - title: ""
+    - title: "Start Block"
       titlekr: "시작 블록"
-      url: /software/rplus2/rplus2_block/#
+      url: /software/rplus2/rplus2_block/#start-block
       urlkr: /software/rplus2/rplus2_block/#시작-블록
-    - title: ""
+    - title: "Deleting Block"
       titlekr: "블록 삭제"
-      url: /software/rplus2/rplus2_block/#
+      url: /software/rplus2/rplus2_block/#deleting-block
       urlkr: /software/rplus2/rplus2_block/#블록-삭제
-    - title: ""
+    - title: "Zoom In/Out"
       titlekr: "블록 확대/축소"
-      url: /software/rplus2/rplus2_block/#
+      url: /software/rplus2/rplus2_block/#zoom-inout
       urlkr: /software/rplus2/rplus2_block/#블록-확대축소
-    - title: ""
+    - title: "Context Menu"
       titlekr: "블록 추가 기능"
-      url: /software/rplus2/rplus2_block/#
+      url: /software/rplus2/rplus2_block/#context-menu
       urlkr: /software/rplus2/rplus2_block/#블록-추가-기능
       children:
-      - title: ""
+      - title: "Duplicate Block"
         titlekr: "같은 블록 만들기"
-        url: /software/rplus2/rplus2_block/#
+        url: /software/rplus2/rplus2_block/#duplicate-block
         urlkr: /software/rplus2/rplus2_block/#같은-블록-만들기
-      - title: ""
+      - title: "Disable Block"
         titlekr: "블록 숨기기"
-        url: /software/rplus2/rplus2_block/#
+        url: /software/rplus2/rplus2_block/#disable-block
         urlkr: /software/rplus2/rplus2_block/#블록-숨기기
-      - title: ""
+      - title: "Enable Block"
         titlekr: "블록 나타내기"
-        url: /software/rplus2/rplus2_block/#
+        url: /software/rplus2/rplus2_block/#enable-block
         urlkr: /software/rplus2/rplus2_block/#블록-나타내기
-      - title: ""
+      - title: "Delete Block"
         titlekr: "블록 지우기"
-        url: /software/rplus2/rplus2_block/#
+        url: /software/rplus2/rplus2_block/#delete-block
         urlkr: /software/rplus2/rplus2_block/#블록-지우기
-    - title: ""
+    - title: "Undo/Redo"
       titlekr: "Undo/Redo 기능"
-      url: /software/rplus2/rplus2_block/#
+      url: /software/rplus2/rplus2_block/#undoredo
       urlkr: /software/rplus2/rplus2_block/#undoredo-기능
-    - title: ""
+    - title: "Play"
       titlekr: "실행"
-      url: /software/rplus2/rplus2_block/#
+      url: /software/rplus2/rplus2_block/#play
       urlkr: /software/rplus2/rplus2_block/#실행
-    - title: ""
+    - title: "Stop"
       titlekr: "중지"
-      url: /software/rplus2/rplus2_block/#
+      url: /software/rplus2/rplus2_block/#stop
       urlkr: /software/rplus2/rplus2_block/#중지
-    - title: ""
+    - title: "Save"
       titlekr: "저장"
-      url: /software/rplus2/rplus2_block/#
+      url: /software/rplus2/rplus2_block/#save
       urlkr: /software/rplus2/rplus2_block/#저장
-    - title: ""
+    - title: "Quit"
       titlekr: "끝내기"
-      url: /software/rplus2/rplus2_block/#
+      url: /software/rplus2/rplus2_block/#quit
       urlkr: /software/rplus2/rplus2_block/#끝내기
       children:
-      - title: ""
+      - title: "Cancel"
         titlekr: "취소"
-        url: /software/rplus2/rplus2_block/#
+        url: /software/rplus2/rplus2_block/#cancel
         urlkr: /software/rplus2/rplus2_block/#취소
-      - title: ""
+      - title: "Exit"
         titlekr: "종료"
-        url: /software/rplus2/rplus2_block/#
+        url: /software/rplus2/rplus2_block/#exit
         urlkr: /software/rplus2/rplus2_block/#종료
-      - title: ""
+      - title: "Save & Exit"
         titlekr: "저장 후 종료"
-        url: /software/rplus2/rplus2_block/#
+        url: /software/rplus2/rplus2_block/#save--exit
         urlkr: /software/rplus2/rplus2_block/#저장-후-종료
-  - title: ""
+  - title: "Optional Menu"
     titlekr: "추가 메뉴"
-    url: /software/rplus2/rplus2_block/#
+    url: /software/rplus2/rplus2_block/#optional-menu
     urlkr: /software/rplus2/rplus2_block/#추가-메뉴
     children:
-    - title: ""
+    - title: "Settings"
       titlekr: "설정"
-      url: /software/rplus2/rplus2_block/#
+      url: /software/rplus2/rplus2_block/#settings
       urlkr: /software/rplus2/rplus2_block/#설정
       children:
-      - title: ""
+      - title: "Bluetooth"
         titlekr: "블루투스"
-        url: /software/rplus2/rplus2_block/#
+        url: /software/rplus2/rplus2_block/#bluetooth
         urlkr: /software/rplus2/rplus2_block/#블루투스
-      - title: ""
+      - title: "e-Manual"
         titlekr: "e-매뉴얼"
-        url: /software/rplus2/rplus2_block/#
+        url: /software/rplus2/rplus2_block/#e-manual
         urlkr: /software/rplus2/rplus2_block/#e-매뉴얼
-      - title: ""
+      - title: "Version Info"
         titlekr: "버전 정보"
-        url: /software/rplus2/rplus2_block/#
+        url: /software/rplus2/rplus2_block/#version-info
         urlkr: /software/rplus2/rplus2_block/#버전-정보
-    - title: ""
+    - title: "Workspace"
       titlekr: "작품"
-      url: /software/rplus2/rplus2_block/#
+      url: /software/rplus2/rplus2_block/#workspace
       urlkr: /software/rplus2/rplus2_block/#작품
       children:
-      - title: ""
+      - title: "Save"
         titlekr: "저장하기"
-        url: /software/rplus2/rplus2_block/#
+        url: /software/rplus2/rplus2_block/#save
         urlkr: /software/rplus2/rplus2_block/#저장하기
-      - title: ""
+      - title: "Load"
         titlekr: "불러오기"
-        url: /software/rplus2/rplus2_block/#
+        url: /software/rplus2/rplus2_block/#load
         urlkr: /software/rplus2/rplus2_block/#불러오기
-      - title: ""
+      - title: "Clear"
         titlekr: "지우기"
-        url: /software/rplus2/rplus2_block/#
+        url: /software/rplus2/rplus2_block/#clear
         urlkr: /software/rplus2/rplus2_block/#지우기
-      - title: ""
+      - title: "New"
         titlekr: "새로만들기"
-        url: /software/rplus2/rplus2_block/#
+        url: /software/rplus2/rplus2_block/#new
         urlkr: /software/rplus2/rplus2_block/#새로만들기
-      - title: ""
+      - title: "Delete"
         titlekr: "삭제하기"
-        url: /software/rplus2/rplus2_block/#
+        url: /software/rplus2/rplus2_block/#delete
         urlkr: /software/rplus2/rplus2_block/#삭제하기
-    - title: ""
+    - title: "Task"
       titlekr: "태스크"
-      url: /software/rplus2/rplus2_block/#
+      url: /software/rplus2/rplus2_block/#task
       urlkr: /software/rplus2/rplus2_block/#태스크
+      children:
+      - title: "Convert"
+        titlekr: "변환"
+        url: /software/rplus2/rplus2_block/#convert
+        urlkr: /software/rplus2/rplus2_block/#변환
+      - title: "Download"
+        titlekr: "다운로드"
+        url: /software/rplus2/rplus2_block/#download
+        urlkr: /software/rplus2/rplus2_block/#다운로드
 
 #R+ Mobile m.Motion sidebar
 rplusmmotion:
