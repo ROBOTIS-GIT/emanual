@@ -5,14 +5,14 @@ ref: dynamixel_shield
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/kr/parts/controller/dynamixel_shield/
+permalink: /docs/kr/parts/interface/dynamixel_shield/
 sidebar:
   title: 다이나믹셀 쉴드
   nav: "dynamixel_shield"
 ---
 
 # [개요](#개요)
-![](/assets/images/parts/controller/dynamixel_shield/with_arduino.png)
+![](/assets/images/parts/interface/dynamixel_shield/with_arduino.png)
 
 아두이노 보드에서 다이나믹셀과 RC100을 사용하기위한 쉴드 보드이며 다이나믹셀 제어를 위한 라이브러리를 제공함.
 
@@ -28,7 +28,7 @@ sidebar:
 
 # [각 부 명칭](#각-부-명칭)
 
-![](/assets/images/parts/controller/dynamixel_shield/pinmap.png)
+![](/assets/images/parts/interface/dynamixel_shield/pinmap.png)
 
 |핀 번호|핀 이름|설명|
 |:---:|:---:|:---:|
@@ -60,7 +60,7 @@ sidebar:
 
 |VIN 전원 공유|VIN 전원 분리|
 |:---:|:---:|
-|![](/assets/images/parts/controller/dynamixel_shield/power_01.png)|![](/assets/images/parts/controller/dynamixel_shield/power_02.png)|
+|![](/assets/images/parts/interface/dynamixel_shield/power_01.png)|![](/assets/images/parts/interface/dynamixel_shield/power_02.png)|
 
 - 전원 입력은 점퍼캡의 설치 유무에 따라 다음과 같이 나뉜다.
   1. VIN 전원 공유 : 아두이노의 SMPS 커넥터를 이용한 전원 사용
@@ -69,12 +69,12 @@ sidebar:
 - 아두이노 보드의 USB 전원으로는 다이나믹셀 전원 연결이 되지 않기 때문에 반드시 외부 전원을 연결 해야 한다.
 -	전원 입력 커넥터를 사용할 때는 **반드시 전원의 극성을 확인** 하고 연결해서 사용해야한다.
 
-  ![](/assets/images/parts/controller/dynamixel_shield/power_polarity.png)
+  ![](/assets/images/parts/interface/dynamixel_shield/power_polarity.png)
 
 
 # [스위치](#스위치)
 
-![](/assets/images/parts/controller/dynamixel_shield/switches_kr.png)
+![](/assets/images/parts/interface/dynamixel_shield/switches_kr.png)
 
 ## [업로드 스위치](#업로드-스위치)
 
@@ -110,11 +110,11 @@ sidebar:
 각각의 방법에 대한 자세한 설명은 [Arduino Official Guide]에서 찾을 수 있다.  
 다음은 라이브러리 매니저를 활용하는 예이다.
 
-![](/assets/images/parts/controller/dynamixel_shield/library_manager.png)
+![](/assets/images/parts/interface/dynamixel_shield/library_manager.png)
 
 라이브러리를 설치하였다면, examples 항목에 DynamixelShield가 생기고 사용 가능한 예제를 볼 수 있다.
 
-![](/assets/images/parts/controller/dynamixel_shield/examples.png)
+![](/assets/images/parts/interface/dynamixel_shield/examples.png)
 
 
 # [라이브러리 API](#라이브러리-api)
