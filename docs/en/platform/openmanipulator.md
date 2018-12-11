@@ -1072,7 +1072,7 @@ Open Processing and Go to `Tools` → `Add Tool..`. Search `ControlP5` and insta
 Download processing source code for OpenManipulator. 
 
 ```
-$ git clone git@github.com:ROBOTIS-GIT/open_manipulator_processing.git
+$ git clone https://github.com/ROBOTIS-GIT/open_manipulator_processing.git
 ```
 
 Open processing source code file 
