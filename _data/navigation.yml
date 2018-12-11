@@ -461,9 +461,6 @@ main:
       - title: "OpenCR1.0"
         titlekr: "OpenCR1.0"
         url: /parts/controller/opencr10/
-      - title: "DYNAMIXEL Shield"
-        titlekr: "다이나믹셀 쉴드"
-        url: /parts/interface/dynamixel_shield/
     - title: "Communication"
       titlekr: "통신"
       children:
@@ -518,6 +515,9 @@ main:
       - title: "U2D2 Power Hub"
         titlekr: "U2D2 파워 허브"
         url: /parts/interface/u2d2_power_hub/
+      - title: "DYNAMIXEL Shield"
+        titlekr: "다이나믹셀 쉴드"
+        url: /parts/interface/dynamixel_shield/
     - title: "Sensors"
       titlekr: "센서"
       children:
