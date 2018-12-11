@@ -463,7 +463,7 @@ main:
         url: /parts/controller/opencr10/
       - title: "DYNAMIXEL Shield"
         titlekr: "다이나믹셀 쉴드"
-        url: /parts/controller/dynamixel_shield/
+        url: /parts/interface/dynamixel_shield/
     - title: "Communication"
       titlekr: "통신"
       children:
@@ -16816,63 +16816,63 @@ opencr10:
 dynamixel_shield:
   - title: "Introduction"
     titlekr: "개요"
-    url: /parts/controller/dynamixel_shield/#introduction
-    urlkr: /parts/controller/dynamixel_shield/#개요
+    url: /parts/interface/dynamixel_shield/#introduction
+    urlkr: /parts/interface/dynamixel_shield/#개요
   - title: "Specifications"
     titlekr: "제품 사양"
-    url: /parts/controller/dynamixel_shield/#specifications
-    urlkr: /parts/controller/dynamixel_shield/#제품-사양
+    url: /parts/interface/dynamixel_shield/#specifications
+    urlkr: /parts/interface/dynamixel_shield/#제품-사양
   - title: "Layout"
     titlekr: "각 부 명칭"
-    url: /parts/controller/dynamixel_shield/#layout
-    urlkr: /parts/controller/dynamixel_shield/#각-부-명칭
+    url: /parts/interface/dynamixel_shield/#layout
+    urlkr: /parts/interface/dynamixel_shield/#각-부-명칭
   - title: "Connecting Power"
     titlekr: "전원 연결 방법"
-    url: /parts/controller/dynamixel_shield/#connecting-power
-    urlkr: /parts/controller/dynamixel_shield/#전원-연결-방법
+    url: /parts/interface/dynamixel_shield/#connecting-power
+    urlkr: /parts/interface/dynamixel_shield/#전원-연결-방법
   - title: "Switches"
     titlekr: "스위치"
-    url: /parts/controller/dynamixel_shield/#switches
-    urlkr: /parts/controller/dynamixel_shield/#스위치
+    url: /parts/interface/dynamixel_shield/#switches
+    urlkr: /parts/interface/dynamixel_shield/#스위치
     children:
     - title: "Upload Switch"
       titlekr: "업로드 스위치"
-      url: /parts/controller/dynamixel_shield/#upload-switch
-      urlkr: /parts/controller/dynamixel_shield/#업로드-스위치
+      url: /parts/interface/dynamixel_shield/#upload-switch
+      urlkr: /parts/interface/dynamixel_shield/#업로드-스위치
     - title: "Dynamixel Power Switch"
       titlekr: "다이나믹셀 전원 스위치"
-      url: /parts/controller/dynamixel_shield/#dynamixel-power-switch
-      urlkr: /parts/controller/dynamixel_shield/#다이나믹셀-전원-스위치
+      url: /parts/interface/dynamixel_shield/#dynamixel-power-switch
+      urlkr: /parts/interface/dynamixel_shield/#다이나믹셀-전원-스위치
   - title: "Arduino Shield Libraries"
     titlekr: "아두이노 쉴드 라이브러리"
-    url: /parts/controller/dynamixel_shield/#arduino-shield-libraries
-    urlkr: /parts/controller/dynamixel_shield/#아두이노-쉴드-라이브러리
+    url: /parts/interface/dynamixel_shield/#arduino-shield-libraries
+    urlkr: /parts/interface/dynamixel_shield/#아두이노-쉴드-라이브러리
     children:
     - title: "Features"
       titlekr: "특징"
-      url: /parts/controller/dynamixel_shield/#features
-      urlkr: /parts/controller/dynamixel_shield/#특징
+      url: /parts/interface/dynamixel_shield/#features
+      urlkr: /parts/interface/dynamixel_shield/#특징
     - title: "Install Library"
       titlekr: "라이브러리 설치"
-      url: /parts/controller/dynamixel_shield/#install-library
-      urlkr: /parts/controller/dynamixel_shield/#라이브러리-설치
+      url: /parts/interface/dynamixel_shield/#install-library
+      urlkr: /parts/interface/dynamixel_shield/#라이브러리-설치
   - title: "Library API"
     titlekr: "라이브러리 API"
-    url: /parts/controller/dynamixel_shield/#library-api
-    urlkr: /parts/controller/dynamixel_shield/#라이브러리-api
+    url: /parts/interface/dynamixel_shield/#library-api
+    urlkr: /parts/interface/dynamixel_shield/#라이브러리-api
     children:
     - title: "Initialize Library"
       titlekr: "라이브러리 초기화"
-      url: /parts/controller/dynamixel_shield/#initialize-library
-      urlkr: /parts/controller/dynamixel_shield/#라이브러리-초기화
+      url: /parts/interface/dynamixel_shield/#initialize-library
+      urlkr: /parts/interface/dynamixel_shield/#라이브러리-초기화
     - title: "Connect Dynamixel"
       titlekr: "다이나믹셀 연결"
-      url: /parts/controller/dynamixel_shield/#connect-dynamixel
-      urlkr: /parts/controller/dynamixel_shield/#다이나믹셀-연결
+      url: /parts/interface/dynamixel_shield/#connect-dynamixel
+      urlkr: /parts/interface/dynamixel_shield/#다이나믹셀-연결
     - title: "Available APIs"
       titlekr: "사용 가능한 API 목록"
-      url: /parts/controller/dynamixel_shield/#available-apis
-      urlkr: /parts/controller/dynamixel_shield/#사용-가능한-api-목록
+      url: /parts/interface/dynamixel_shield/#available-apis
+      urlkr: /parts/interface/dynamixel_shield/#사용-가능한-api-목록
 
 u2d2_power_hub:
   - title: "Introduction"
