@@ -41,10 +41,10 @@ Roboplus Block is a coding education platform that inherits block coding method 
 Launch the Google Play from smart device. (Google Play is a substitute for Android Market)  
 Search for `R+ Block` on Google Play.
 
-![](/assets/images/sw/rplus2/block/block_search_kr.png)
+![](/assets/images/sw/rplus2/block/block_search.png)
 > Searching `ROBOTIS` will also find R+Block
 
-![](/assets/images/sw/rplus2/block/block_install_kr.png)
+![](/assets/images/sw/rplus2/block/block_install.png)
 > Install
 
 ### [Connect to Robot](#connect-to-robot)
@@ -56,39 +56,38 @@ The robot can be connected to the smart device with Bluetooth.
 
 The screen of R+Block looks like below.
 
-![](/assets/images/sw/rplus2/block/menu_kr.png)
+![](/assets/images/sw/rplus2/block/menu.png)
 
-1. [Product Name](#change-product)
-2. [Workspace Name](#change-product)
-3. [Play Button](#play)
-4. [Stop Button](#stop)
-5. [Save Button](#save)
-6. [Optional Menu Button](#optional-menu)
-7. [Block Level](#block-level)
-8. [Block Group](#block-level)
-9. [Workspace](#block-level)
-10. [Undo Button](#undoredo)
-11. [Redo Button](#undoredo)
-12. [Trash Bin](#deleting-block)
+1. [Product and Workspace Name](#change-product)
+2. [Play Button](#play)
+3. [Stop Button](#stop)
+4. [Save Button](#save)
+5. [Optional Menu Button](#optional-menu)
+6. [Block Level](#block-level)
+7. [Block Group](#block-level)
+8. [Workspace](#block-level)
+9. [Undo Button](#undoredo)
+10. [Redo Button](#undoredo)
+11. [Trash Bin](#deleting-block)
 
 # [Basic Features](#basic-features)
 
 ## [Product Name](#product-name)
-제품명 표시 영역을 클릭하면 R+Block 에서 사용 가능한 로보티즈 제품이 표시됩니다.
+Tapping the Product and Workspace Name area will allow to select the R+Block compatible ROBOTIS products.
 
-![](/assets/images/sw/rplus2/block/change_product_kr.png)
+![](/assets/images/sw/rplus2/block/change_product.png)
 
 ## [Block Level](#block-level)
 블록 레벨 선택 영역을 클릭하면 선택된 제품에서 사용가능한 블록 레벨이 표시됩니다.  
 선택한 블록 레벨에 따라 블록 그룹, 그룹 내의 블록들이 다르게 표시될 수 있습니다.
 
-![](/assets/images/sw/rplus2/block/change_blocklevel_kr.png)
+![](/assets/images/sw/rplus2/block/change_blocklevel.png)
 
 ## [Selecting Block](#selecting-block)
 블록 그룹을 클릭하면 해당 그룹에 포함된 블록들이 표시됩니다.  
 블록을 작업영역으로 드래그하여 사용할 수 있으며, 한 화면에 표시되지 않는 블록은 위아래로 스크롤하여 표시할 수 있습니다.
 
-![](/assets/images/sw/rplus2/block/block_select_kr.png)
+![](/assets/images/sw/rplus2/block/block_select.png)
 
 ## [Start Block](#start-block)
 There is only one `Start` block in the code, and the blocks attached to the Start block will run.
