@@ -753,7 +753,7 @@ The user can use this service to create a drawing trajectory. The user can creat
   The user can use GUI program to manipulate the OpenManipulator.  Launch `open_manipulator_control_gui` node.  This program shows the status of the manipulator and provides the ability to operate the manipulator.
 
   ```
-  $ rosrun open_manipulator_control_gui open_manipulator_control_gui
+  $ roslaunch open_manipulator_control_gui open_manipulator_control_gui.launch
   ```
   To manipulate the OpenManipulator, first click the `Timer Start` button.  
   ![](/assets/images/platform/openmanipulator/OpenManipulator_GUI.png)  
