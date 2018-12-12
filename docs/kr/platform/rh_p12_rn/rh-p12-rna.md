@@ -443,12 +443,12 @@ Profile에 의해 생성된 목표 위치 궤적입니다. 전류기반 위치 �
 |다이어그램|![](/assets/images/dxl/jst_b4beha_diagram.png)|![](/assets/images/dxl/molex_5304706_diagram.png)|
 |하우징|[JST EHR-04]|![](/assets/images/dxl/molex_510210600.png)<br />[MOLEX 51021-0600]|
 |PCB 헤더|![](/assets/images/dxl/jst_b4beha.png)<br />[JST B4B-EH-A]|![](/assets/images/dxl/molex_530470610.png)<br />[MOLEX 53047-0610]|
-|Crimp 터미널|[JST SHE-001T-P0.6]|[MOLEX 50079-8100]|
+|Crimp 터미널|[JST SEH-001T-P0.6]|[MOLEX 50079-8100]|
 |Wire Gauge|21 AWG|21 AWG|
 
 [JST EHR-04]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
 [JST B4B-EH-A]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
-[JST SHE-001T-P0.6]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
+[JST SEH-001T-P0.6]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
 [MOLEX 51021-0600]: http://www.molex.com/molex/products/datasheet.jsp?part=active/0510210600_CRIMP_HOUSINGS.xml
 [MOLEX 53047-0610]: http://www.molex.com/molex/products/datasheet.jsp?part=active/0530470610_PCB_HEADERS.xml
 [MOLEX 50079-8100]: http://www.molex.com/molex/products/datasheet.jsp?part=active/0500798100_CRIMP_TERMINALS.xml
