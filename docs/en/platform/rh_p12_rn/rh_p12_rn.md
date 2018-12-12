@@ -387,12 +387,12 @@ This value indicates present internal Temperature. For more details, please refe
 |Diagram|![](/assets/images/dxl/jst_b4beha_diagram.png)|![](/assets/images/dxl/molex_5304706_diagram.png)|
 |Housing|[JST EHR-04]|![](/assets/images/dxl/molex_510210600.png)<br />[MOLEX 51021-0600]|
 |PCB Header|![](/assets/images/dxl/jst_b4beha.png)<br />[JST B4B-EH-A]|![](/assets/images/dxl/molex_530470610.png)<br />[MOLEX 53047-0610]|
-|Crimp Terminal|[JST SHE-001T-P0.6]|[MOLEX 50079-8100]|
+|Crimp Terminal|[JST SEH-001T-P0.6]|[MOLEX 50079-8100]|
 |Wire Gauge|21 AWG|21 AWG|
 
 [JST EHR-04]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
 [JST B4B-EH-A]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
-[JST SHE-001T-P0.6]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
+[JST SEH-001T-P0.6]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
 [MOLEX 51021-0600]: http://www.molex.com/molex/products/datasheet.jsp?part=active/0510210600_CRIMP_HOUSINGS.xml
 [MOLEX 53047-0610]: http://www.molex.com/molex/products/datasheet.jsp?part=active/0530470610_PCB_HEADERS.xml
 [MOLEX 50079-8100]: http://www.molex.com/molex/products/datasheet.jsp?part=active/0500798100_CRIMP_TERMINALS.xml
