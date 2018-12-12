@@ -15765,42 +15765,37 @@ dynamixel_sdk:
 dynamixel_workbench:
   - title: "Introduction"
     url: /software/dynamixel/dynamixel_workbench/#introduction
-  - title: "Installation"
-    url: /software/dynamixel/dynamixel_workbench/#installation
   - title: "Supported Dynamixels"
     url: /software/dynamixel/dynamixel_workbench/#supported-dynamixels
-  - title: "Package Description"
-    url: /software/dynamixel/dynamixel_workbench/#package-description
+  - title: "Downloads"
+    url: /software/dynamixel/dynamixel_workbench/#downloads
     children:
-    - title: "Single Manager"
-      url: /software/dynamixel/dynamixel_workbench/#single-manager
-    - title: "Controllers"
-      url: /software/dynamixel/dynamixel_workbench/#controllers
-    - title: "Operators"
-      url: /software/dynamixel/dynamixel_workbench/#operators
-    - title: "Toolbox"
-      url: /software/dynamixel/dynamixel_workbench/#toolbox
+    - title: "ROS"
+      url: /software/dynamixel/dynamixel_workbench/#ros
+    - title: "OpenCR and OpenCM"
+      url: /software/dynamixel/dynamixel_workbench/#opencr-and-opencm
+    - title: "Linux and macOS"
+      url: /software/dynamixel/dynamixel_workbench/#linux-and-macos
+  - title: "Device Setup"
+    url: /software/dynamixel/dynamixel_workbench/#device-setup
+    children:
+    - title: "U2D2"
+      url: /software/dynamixel/dynamixel_workbench/#u2d2
+    - title: "OpenCR"
+      url: /software/dynamixel/dynamixel_workbench/#opencr
+    - title: "OpenCM9.04"
+      url: /software/dynamixel/dynamixel_workbench/#opencm
   - title: "Tutorials"
     url: /software/dynamixel/dynamixel_workbench/#tutorials
     children:
-    - title: "Single Manager"
-      url: /software/dynamixel/dynamixel_workbench/#single-manager-tutorials
-      children:
-      - title: "Command line"
-        url: /software/dynamixel/dynamixel_workbench/#command-line
-      - title: "GUI"
-        url: /software/dynamixel/dynamixel_workbench/#gui
-    - title: "Controllers"
-      url: /software/dynamixel/dynamixel_workbench/#controllers-tutorials
-      children:
-      - title: "Position"
-        url: /software/dynamixel/dynamixel_workbench/#position-controller
-      - title: "Velocity"
-        url: /software/dynamixel/dynamixel_workbench/#velocity-controller
-      - title: "Torque"
-        url: /software/dynamixel/dynamixel_workbench/#torque-controller
-      - title: "Multi port"
-        url: /software/dynamixel/dynamixel_workbench/#multi-port-controller
+    - title: "ROS"
+      url: /software/dynamixel/dynamixel_workbench/#ros-tutorials
+    - title: "OpenCR and OpenCM"
+      url: /software/dynamixel/dynamixel_workbench/#opencr-and-opencm-tutorials
+    - title: "Linux and macOS"
+      url: /software/dynamixel/dynamixel_workbench/#linux-and-macos-tutorials
+  - title: "API References"
+    url: /software/dynamixel/dynamixel_workbench/#api-references
 
 #ZIGBEE SDK sidebar
 zigbee_sdk:
@@ -16578,11 +16573,6 @@ opencm904:
       url: /parts/controller/opencm904/#eeprom
     - title: "Dynamixel Workbench"
       url: /parts/controller/opencm904/#dynamixelworkbench
-      children:
-      - title: "APIs"
-        url: /parts/controller/opencm904/#apis
-      - title: "Workebench Examples"
-        url: /parts/controller/opencm904/#workbench-examples
     - title: "Servo"
       url: /parts/controller/opencm904/#servo
     - title: "SD Card"
@@ -16745,22 +16735,8 @@ opencr10:
         url: /parts/controller/opencr10/#joystic-sensor
     - title: "Dynamixel Workbench"
       url: /parts/controller/opencr10/#dynamixel-workbench
-      children:
-      - title: "Find Dynamixel"
-        url: /parts/controller/opencr10/#find-dynamixel
-      - title: "Position"
-        url: /parts/controller/opencr10/#position
-      - title: "Speed"
-        url: /parts/controller/opencr10/#speed
     - title: "OpenManipulator"
       url: /parts/controller/opencr10/#openmanipulator
-      children:
-      - title: "OpenManipulator Chain"
-        url: /parts/controller/opencr10/#openmanipulator-chain
-      - title: "OpenManipulator SCARA"
-        url: /parts/controller/opencr10/#openmanipulator-scara
-      - title: "OpenManipulator Link"
-        url: /parts/controller/opencr10/#openmanipulator-link
   - title: "Downloads"
     url: /parts/controller/opencr10/#downloads
   - title: "References"
