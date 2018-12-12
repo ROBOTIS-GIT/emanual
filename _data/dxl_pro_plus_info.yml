@@ -106,3 +106,90 @@ h54p-200-s500-r:
   physicalconnection: "RS485 Multidrop Bus"
   id:                 *id
   standbycurrent:     *standbycurrent_54
+
+m42p-010-s260-r:
+  motor:              "Coreless"
+  baudrate:           *baudrate
+  opmode_en:          *opmode_en
+  opmode:             *opmode
+  weight:             "340 [g]"
+  dimensions:         "42 x 84 x 42 [mm]"
+  resolution:         "526,374 [pulse/rev]"
+  gearratio:          "257.02:1"
+  backlash:           *backlash_pro
+  radialload:         *radialload_42
+  radialload_en:      *radialload_42_en
+  axialload:          *axialload_42
+  noloadspeed:        "32.7 [rev/min]"
+  noloadcurrent:      "0.57 [A]"
+  contspeed:          "29.2 [rev/min]"
+  conttorque:         "5.1 [Nm]"
+  contcurrent:        "1.5 [A]"
+  output:             "20 [W]"
+  optemperature:      *temperature
+  opvoltage:          *voltage
+  commandsignal:      *command
+  commandsignalkr:    *command_kr
+  protocoltype:       *rs485
+  protocoltypekr:     *rs485_kr
+  physicalconnection: "RS485 Multidrop Bus"
+  id:                 *id
+  standbycurrent:     *standbycurrent_42
+
+m54p-040-s250-r:
+  motor:              "BLDC"
+  baudrate:           *baudrate
+  opmode_en:          *opmode_en
+  opmode:             *opmode
+  weight:             "740 [g]"
+  dimensions:         "54 x 108 x 54 [mm]"
+  resolution:         "502,834 [pulse/rev]"
+  gearratio:          "251.417 : 1"
+  backlash:           *backlash_pro
+  radialload:         *radialload_54
+  radialload_en:      *radialload_54_en
+  axialload:          *axialload_54
+  noloadspeed:        "33.3 [rev/min]"
+  noloadcurrent:      "1.13 [A]"
+  contspeed:          "29.2 [rev/min]"
+  conttorque:         "25.3 [Nm]"
+  contcurrent:        "5.5 [A]"
+  output:             "100 [W]"
+  optemperature:      *temperature
+  opvoltage:          *voltage
+  commandsignal:      *command
+  commandsignalkr:    *command_kr
+  protocoltype:       *rs485
+  protocoltypekr:     *rs485_kr
+  physicalconnection: "RS485 Multidrop Bus"
+  id:                 *id
+  standbycurrent:     *standbycurrent_54
+
+m54p-060-s250-r:
+  motor:              "BLDC"
+  baudrate:           *baudrate
+  opmode_en:          *opmode_en
+  opmode:             *opmode
+  weight:             "855 [g]"
+  dimensions:         "54 x 126 x 54 [mm]"
+  resolution:         "502,834 [pulse/rev]"
+  gearratio:          "251.417 : 1"
+  backlash:           *backlash_pro
+  radialload:         *radialload_54
+  radialload_en:      *radialload_54_en
+  axialload:          *axialload_54
+  noloadspeed:        "33.1 [rev/min]"
+  noloadcurrent:      "1.65 [A]"
+  contspeed:          "29.0 [rev/min]"
+  conttorque:         "44.7 [Nm]"
+  contcurrent:        "9.3 [A]"
+  output:             "200 [W]"
+  optemperature:      *temperature
+  opvoltage:          *voltage
+  commandsignal:      *command
+  commandsignalkr:    *command_kr
+  protocoltype:       *rs485
+  protocoltypekr:     *rs485_kr
+  physicalconnection: "RS485 Multidrop Bus"
+  id:                 *id
+  standbycurrent:     *standbycurrent_54
