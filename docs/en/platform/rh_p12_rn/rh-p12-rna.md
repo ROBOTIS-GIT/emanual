@@ -50,38 +50,38 @@ sidebar:
 
 ## [Control Table of EEPROM Area](#control-table-of-eeprom-area)
 
-| Address | Size<br>(Byte) | Data Name                                   | Access | Initial<br />Value |               Range                |      Unit      |
-|:-------:|:--------------:|:--------------------------------------------|:------:|:------------------:|:----------------------------------:|:--------------:|
-|    0    |       2        | [Model Number](#model-number)               |   R    |       51,201       |                 -                  |       -        |
-|    2    |       4        | [Model Information](#model-information)     |   R    |         -          |                 -                  |       -        |
-|    6    |       1        | [Firmware Version](#firmware-version)       |   R    |         -          |                 -                  |       -        |
-|    7    |       1        | [ID](#id)                                   |   RW   |         1          |              0 ~ 252               |       -        |
-|    8    |       1        | [Baud Rate](#baud-rate)                     |   RW   |         1          |               0 ~ 9                |       -        |
-|    9    |       1        | [Return Delay Time](#return-delay-time)     |   RW   |        250         |              0 ~ 255               |    2 [μsec]    |
-|   10    |       1        | [Drive Mode](#drive-mode)                   |   RW   |         0          |               0 ~ 1                |       -        |
-|   11    |       1        | [Operating Mode](#operating-mode)           |   RW   |         5          |                0, 5                |       -        |
-|   12    |       1        | [Sencondary ID](#secondary-id)              |   RW   |        255         |              0 ~ 255               |       -        |
-|   20    |       4        | [Homing Offset](#homing-offset)             |   RW   |         0          | -2,147,483,648 ~<br> 2,147,483,647 |   1 [pulse]    |
-|   24    |       4        | [Moving Threshold](#moving-threshold)       |   RW   |         50         | -2,147,483,648 ~<br> 2,147,483,647 | 0.01 [rev/min] |
-|   31    |       1        | [Temperature Limit](#temperature-limit)     |   RW   |         80         |              0 ~ 100               |     1 [℃]      |
-|   32    |       2        | [Max Voltage Limit](#max-voltage-limit)     |   RW   |        350         |              0 ~ 350               |    0.1 [V]     |
-|   34    |       2        | [Min Voltage Limit](#min-voltage-limit)     |   RW   |        150         |              0 ~ 350               |    0.1 [V]     |
-|   36    |       2        | [PWM Limit](#pwm-limit)                     |   RW   |       2,009        |             0 ~ 2,009              |       -        |
-|   38    |       2        | [Current Limit](#current-limit)             |   RW   |       1,984        |             0 ~ 1,984              |     1 [mA]     |
-|   40    |       4        | [Acceleration Limit](#acceleration-limit)   |   RW   |       3,447        |           0 ~ 1,378,788            |  1 [rev/min²]  |
-|   44    |       4        | [Velocity Limit](#velocity-limit)           |   RW   |       2,970        |             0 ~ 2,970              | 0.01 [rev/min] |
-|   48    |       4        | [Max Position Limit](#max-position-limit)   |   RW   |       1,150        |           0 ~ 1,150            |   1 [pulse]    |
-|   52    |       4        | [Min Position Limit](#min-position-limit)   |   RW   |         0          |           0 ~ 1,150            |   1 [pulse]    |
-|   56    |       1        | [External Port Mode 1](#external-port-mode) |   RW   |         3          |               0 ~ 3                |       -        |
-|   57    |       1        | [External Port Mode 2](#external-port-mode) |   RW   |         3          |               0 ~ 3                |       -        |
-|   58    |       1        | [External Port Mode 3](#external-port-mode) |   RW   |         3          |               0 ~ 3                |       -        |
-|   59    |       1        | [External Port Mode 4](#external-port-mode) |   RW   |         3          |               0 ~ 3                |       -        |
-|   63    |       1        | [Shutdown](#shutdown)                       |   RW   |         52         |              0 ~ 255               |       -        |
-|   168   |       2        | [Indirect Address 1](#indirect-address)     |   RW   |        634         |            512 ~ 1,023             |       -        |
-|   170   |       2        | [Indirect Address 2](#indirect-address)     |   RW   |        635         |            512 ~ 1,023             |       -        |
-|   172   |       2        | [Indirect Address 3](#indirect-address)     |   RW   |        636         |            512 ~ 1,023             |       -        |
-|   ...   |      ...       | ...                                         |  ...   |        ...         |                ...                 |      ...       |
-|   422   |       2        | [Indirect Address 128](#indirect-address)   |   RW   |        761         |            512 ~ 1,023             |       -        |
+| Address | Size<br>(Byte) | Data Name                                   | Access | Initial<br />Value |     Range     |      Unit      |
+|:-------:|:--------------:|:--------------------------------------------|:------:|:------------------:|:-------------:|:--------------:|
+|    0    |       2        | [Model Number](#model-number)               |   R    |       35,074       |       -       |       -        |
+|    2    |       4        | [Model Information](#model-information)     |   R    |         -          |       -       |       -        |
+|    6    |       1        | [Firmware Version](#firmware-version)       |   R    |         -          |       -       |       -        |
+|    7    |       1        | [ID](#id)                                   |   RW   |         1          |    0 ~ 252    |       -        |
+|    8    |       1        | [Baud Rate](#baud-rate)                     |   RW   |         1          |     0 ~ 9     |       -        |
+|    9    |       1        | [Return Delay Time](#return-delay-time)     |   RW   |        250         |    0 ~ 255    |    2 [μsec]    |
+|   10    |       1        | [Drive Mode](#drive-mode)                   |   RW   |         0          |     0 ~ 1     |       -        |
+|   11    |       1        | [Operating Mode](#operating-mode)           |   RW   |         5          |     0, 5      |       -        |
+|   12    |       1        | [Sencondary ID](#secondary-id)              |   RW   |        255         |    0 ~ 255    |       -        |
+|   20    |       4        | [Homing Offset](#homing-offset)             |   RW   |         0          |   0 ~ 1,150   |   1 [pulse]    |
+|   24    |       4        | [Moving Threshold](#moving-threshold)       |   RW   |         50         |   0 ~ 2,970   | 0.01 [rev/min] |
+|   31    |       1        | [Temperature Limit](#temperature-limit)     |   RW   |         80         |    0 ~ 100    |     1 [℃]      |
+|   32    |       2        | [Max Voltage Limit](#max-voltage-limit)     |   RW   |        350         |    0 ~ 350    |    0.1 [V]     |
+|   34    |       2        | [Min Voltage Limit](#min-voltage-limit)     |   RW   |        150         |    0 ~ 350    |    0.1 [V]     |
+|   36    |       2        | [PWM Limit](#pwm-limit)                     |   RW   |       2,009        |   0 ~ 2,009   |       -        |
+|   38    |       2        | [Current Limit](#current-limit)             |   RW   |       1,984        |   0 ~ 1,984   |     1 [mA]     |
+|   40    |       4        | [Acceleration Limit](#acceleration-limit)   |   RW   |       3,447        | 0 ~ 1,378,788 |  1 [rev/min²]  |
+|   44    |       4        | [Velocity Limit](#velocity-limit)           |   RW   |       2,970        |   0 ~ 2,970   | 0.01 [rev/min] |
+|   48    |       4        | [Max Position Limit](#max-position-limit)   |   RW   |       1,150        |   0 ~ 1,150   |   1 [pulse]    |
+|   52    |       4        | [Min Position Limit](#min-position-limit)   |   RW   |         0          |   0 ~ 1,150   |   1 [pulse]    |
+|   56    |       1        | [External Port Mode 1](#external-port-mode) |   RW   |         3          |     0 ~ 3     |       -        |
+|   57    |       1        | [External Port Mode 2](#external-port-mode) |   RW   |         3          |     0 ~ 3     |       -        |
+|   58    |       1        | [External Port Mode 3](#external-port-mode) |   RW   |         3          |     0 ~ 3     |       -        |
+|   59    |       1        | [External Port Mode 4](#external-port-mode) |   RW   |         3          |     0 ~ 3     |       -        |
+|   63    |       1        | [Shutdown](#shutdown)                       |   RW   |         52         |    0 ~ 255    |       -        |
+|   168   |       2        | [Indirect Address 1](#indirect-address)     |   RW   |        634         |  512 ~ 1,023  |       -        |
+|   170   |       2        | [Indirect Address 2](#indirect-address)     |   RW   |        635         |  512 ~ 1,023  |       -        |
+|   172   |       2        | [Indirect Address 3](#indirect-address)     |   RW   |        636         |  512 ~ 1,023  |       -        |
+|   ...   |      ...       | ...                                         |  ...   |        ...         |      ...      |      ...       |
+|   422   |       2        | [Indirect Address 128](#indirect-address)   |   RW   |        761         |  512 ~ 1,023  |       -        |
 
 ## [Control Table of RAM Area](#control-table-of-ram-area)
 
