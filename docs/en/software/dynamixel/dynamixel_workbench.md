@@ -474,6 +474,21 @@ If controller load your Dynamixel, you can watch below texts
 [ INFO] [1544595828.316198852]: Name : tilt, ID : 2, Model Number : 1020
 ```
 
+After initialization, Dynamixels will be torque on. If you want to write value to the Dynamixel, you can use ROS service(`/dynamixel_command`).
+
+Open rqt and `Plugins` -> `Services` -> `Service Caller`
+
+![](/assets/images/sw/dynamixel/dynamixel_workbench/controller_service_call.png)
+
+Or use command line
+
+```
+$ rosservice call /dynamixel_workbench/dynamixel_command "command: ''
+id: 1
+addr_name: 'Goal_Position'
+value: 2048"
+```
+
 **Parameters List** :
 - `usb_port`  
 USB port name you used
