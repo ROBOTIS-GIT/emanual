@@ -15849,12 +15849,40 @@ dynamixel_workbench:
     children:
     - title: "ROS"
       url: /software/dynamixel/dynamixel_workbench/#ros-tutorials
+      children:
+      - title: "Find Dynamixels"
+        url: /software/dynamixel/dynamixel_workbench/#find-dynamixels
+      - title: "Single Manager"
+        url: /software/dynamixel/dynamixel_workbench/#single-manager
+      - title: "Single Manager GUI"
+        url: /software/dynamixel/dynamixel_workbench/#single-manager-gui
+      - title: "Controllers"
+        url: /software/dynamixel/dynamixel_workbench/#controllers
+      - title: "Operators"
+        url: /software/dynamixel/dynamixel_workbench/#operators
+      - title: "Moveit! Bridge"
+        url: /software/dynamixel/dynamixel_workbench/#moveit-bridge
     - title: "OpenCR and OpenCM"
       url: /software/dynamixel/dynamixel_workbench/#opencr-and-opencm-tutorials
+      children:
+      - title: "o_Find_Dynamixel"
+        url: /software/dynamixel/dynamixel_workbench/#o_find_dynamixel
+      - title: "p_Monitor"
+        url: /software/dynamixel/dynamixel_workbench/#p_monitor
     - title: "Linux and macOS"
       url: /software/dynamixel/dynamixel_workbench/#linux-and-macos-tutorials
+      children:
+      - title: "position"
+        url: /software/dynamixel/dynamixel_workbench/#position
+      - title: "bulk_read_write"
+        url: /software/dynamixel/dynamixel_workbench/#bulk_read_write
   - title: "API References"
     url: /software/dynamixel/dynamixel_workbench/#api-references
+    children:
+    - title: "Function List"
+      url: /software/dynamixel/dynamixel_workbench/#function-list
+    - title: "Function Reference"
+      url: /software/dynamixel/dynamixel_workbench/#function-reference
 
 #ZIGBEE SDK sidebar
 zigbee_sdk:
