@@ -78,7 +78,7 @@ sidebar:
 |6. 해양탐사선<br />![](/assets/images/edu/smart/200_6submarine.png)|[로봇 예제 프로그램][01_smart3_L3_Research_Vessel_kr.tskx]<br />[조종기 프로그램][03_smart3_L3_Research_Vessel_RC_kr.tskx]|
 |7. 농구 로봇<br />![](/assets/images/edu/smart/200_7basketball.png)|[로봇 예제 프로그램][01_smart3_L3_Basketball_Bot_kr.tskx]<br />[조종기 프로그램][03_smart3_L3_Basketball_Bot_RC_kr.tskx]|
 |8. 덤프트럭<br />![](/assets/images/edu/smart/200_8ump_truck.png)|[로봇 예제 프로그램][01_smart3_L3_Dump_Truck_kr.tskx]<br />[조종기 프로그램][03_smart3_L3_Dump_Truck_RC_kr.tskx]|
-|9. 스마트 지게카<br />![](/assets/images/edu/smart/200_9forklift.png)|[로봇 예제 프로그램][01_smart3_L3_Forklift_kr.tskx]<br />[조종기 프로그램][03_smart3_L3_Forklift_RC_kr.tskx]|
+|9. 스마트 지게차<br />![](/assets/images/edu/smart/200_9forklift.png)|[로봇 예제 프로그램][01_smart3_L3_Forklift_kr.tskx]<br />[조종기 프로그램][03_smart3_L3_Forklift_RC_kr.tskx]|
 |10. 플라스틱맨<br />![](/assets/images/edu/smart/200_10wolverine.png)|[로봇 예제 프로그램][01_smart3_L3_Plastic_Man_kr.tskx]<br />[자율 프로그램][03_smart3_L3_Plastic_Man_AI_kr.tskx]|
 |11. 지프차<br />![](/assets/images/edu/smart/200_11jeep.png)|[로봇 예제 프로그램][01_smart3_L3_Jeep_Car_kr.tskx]<br />[조종기 프로그램][03_smart3_L3_Jeep_Car_RC_kr.tskx]|
 |12. 타워크레인<br />![](/assets/images/edu/smart/200_12crane.png)|[로봇 예제 프로그램][01_smart3_L3_Tower_Crane_kr.tskx]<br />[조종기 프로그램][03_smart3_L3_Tower_Crane_RC_kr.tskx]|
