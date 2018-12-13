@@ -285,10 +285,14 @@ Gripper Dynamixel ID : 15, Model Name :XM430-W350
 [ INFO] [1544509070.096942788]: Succeeded to init /open_manipulator
 ```
 
-**TIP**: If you can't load Dynamixels, please check your Dynamixels information. You can use [find_dynamixel example](/docs/en/software/dynamixel/dynamixel_workbench/#find-dynamixels) in Dynamixel-Workbench packages.   
+{% capture notice_01 %}
+**TIP**: 
+- If you can't load Dynamixels, please check your Dynamixels information. You can use [find_dynamixel example](/docs/en/software/dynamixel/dynamixel_workbench/#find-dynamixels) in Dynamixel-Workbench packages.   
 `rosrun dynamixel_workbench_controllers find_dynamixel /dev/ttyUSB0`  
 Even if you can't find any Dynamixels, please check firmware to use ROBOTIS software ([R+ Manager 2.0](http://emanual.robotis.com/docs/en/software/rplus2/manager/) or [R+ Manager 1.0](http://emanual.robotis.com/docs/en/software/rplus2/manager/))
-{: .notice--success}
+- If you want to change Dynamixel ID, Please check [`OpenManipulator.cpp`](https://github.com/ROBOTIS-GIT/open_manipulator/blob/be2859a0506b4e941a19435c0a07562b41768a27/open_manipulator_libs/src/OpenManipulator.cpp#L40) in open_manipulator_lib folder. The default ID is that **joint is 11, 12, 13, 14 and gripper is 15**
+{% endcapture %}
+<div class="notice--success">{{ notice_01 | markdownify }}</div>
 
 **NOTE**: open_manipulator_controller is compatible with [Protocol 2.0](/docs/en/dxl/protocol2/). Because [Protocol 1.0](/docs/en/dxl/protocol1/) doesn't support SyncRead instructions that makes access multiple Dynamixels simultaneously. [`MX2`](/docs/en/dxl/mx/mx-64-2/), `X` and `Pro` series can be controllered by Protocol 2.0 but `AX`, `RX`, `EX` series can't. 
 {: .notice--info}
