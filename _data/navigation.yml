@@ -381,8 +381,8 @@ main:
       - title: "R+ Scratch"
         titlekr: "로보플러스 스크래치"
         url: /software/rplus2/scratch/
-      # - title: "R+ Block"
-      - titlekr: "로보플러스 블록"
+      - title: "R+ Block"
+        titlekr: "로보플러스 블록"
         url: /software/rplus2/rplus2_block/
     - title: "R+ Mobile"
       titlekr: "로보플러스 모바일"
