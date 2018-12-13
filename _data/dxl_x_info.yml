@@ -32,6 +32,9 @@ common_x_specs:
   standbycurrent_36:  &standbycurrent_36 "36 [mA]"
   standbycurrent_40:  &standbycurrent_40 "40 [mA]"
 
+xl320:
+  temperature:        "-5 ~ +70 [&deg;C]"
+
 xh430-v210:
   mcu:                *mcu
   encoder:            *encoder
@@ -224,7 +227,7 @@ xc430-w240:
   radialload:         "N/A"
   radialload_en:      "N/A"
   axialload:          "N/A"
-  temperature:        "-5 ~ +80 [&deg;C]"
+  temperature:        *temperature
   voltage:            "7.0 ~ 12.0 [V] (**권장 전압 : 12 [V]**)"
   voltage_en:         "7.0 ~ 12.0 [V] (**Recommended : 12.0 [V]**)"
   command:            "Digital Packet"

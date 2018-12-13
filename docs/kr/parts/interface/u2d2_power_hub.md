@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/kr/parts/interface/u2d2_power_hub/
 sidebar:
-  title: U2D2 전원 허브
+  title: U2D2 파워 허브 보드
   nav: "u2d2_power_hub"
 ---
 

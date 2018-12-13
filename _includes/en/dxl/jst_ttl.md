@@ -3,8 +3,8 @@
 |:---:|:---:|
 |Pinout|`1` GND<br>`2` VDD<br>`3` DATA|
 |Diagram|![](/assets/images/dxl/jst_b3beha_diagram.png)|
-|Housing|[JST EHR-03]|
-|PCB Header|![](/assets/images/dxl/jst_b3beha.png)<br />[JST B3B-EH-A]|
+|Housing|![](/assets/images/dxl/JST_EHR-3.png)<br />[JST EHR-03]|
+|PCB Header|![](/assets/images/dxl/JST_B3B_EH-A.png)<br />[JST B3B-EH-A]|
 |Crimp Terminal|[JST SEH-001T-P0.6]|
 |Wire Gauge|21 AWG|
 

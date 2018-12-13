@@ -37,7 +37,7 @@ You can now focus your efforts more into developing the robot and less on devoti
   - ROBOTIS OP2 no longer has the 3.5mm microphone and audio jacks
 
   ![](/assets/images/platform/op2/op2_002.png)
-  
+
   > Here are some mechnamical differences
 
 - Advantages of ROBOTIS OP2 compared to ROBOTIS OP
@@ -194,26 +194,29 @@ We strongly suggest you to practice the included tutorial programs installed at 
 The supplied USB thumb drive contains the same software that comes preinstalled with ROBOTIS
 OP2.  
 You may obtain updates softwares at the link below.  
-http://support.robotis.com
+[https://sourceforge.net/projects/darwinop/files/Software/Main%20Controller/Recovery%20USB/](https://sourceforge.net/projects/darwinop/files/Software/Main%20Controller/Recovery%20USB/)
 
-Software updates may be performed without prior notice. Please check the site periodically for
-update information.
+Software could be updated without prior notice. Please check the site periodically for
+updated information.
+
+**NOTE**: Please refer to [Clonezilla Recovery for OP](/docs/en/platform/op/maintenance/#clonezilla-recovery) section for instructions using recovery image.
+{: .notice}
 
 ## [Useful Information](#useful-information)
 
-You may download other ROBOTIS OP2-related items at:  
-https://sourceforge.net/projects/darwinop/files/
+You may find other ROBOTIS OP2-related softwares at:  
+[https://sourceforge.net/projects/darwinop/files/](https://sourceforge.net/projects/darwinop/files/)
 
 - For any other inquiries send us an email.
   - International : `contactus2@robotis.com`
   - Korea : `korea@robotis.com`
 
 - Third party terminal client
-  - PuTTY : http://www.chiark.greenend.org.uk/~sgtatham/putty/
-  - VNC : http://www.realvnc.com/
-  - ZOC : http://www.emtec.com/zoc/
-  - RBrowser (for Mac users) : http://www.rbrowser.com/
-  - Chicken of the VNC (for Mac users) : http://sourceforge.net/projects/cotvnc/
+  - PuTTY : [http://www.chiark.greenend.org.uk/~sgtatham/putty/](http://www.chiark.greenend.org.uk/~sgtatham/putty/)
+  - VNC : [http://www.realvnc.com/](http://www.realvnc.com/)
+  - ZOC : [http://www.emtec.com/zoc/](http://www.emtec.com/zoc/)
+  - RBrowser (for Mac users) : [http://www.rbrowser.com/](http://www.rbrowser.com/)
+  - Chicken of the VNC (for Mac users) : [http://sourceforge.net/projects/cotvnc/](http://sourceforge.net/projects/cotvnc/)
 
 # [Miscellaneous](#miscellaneous)
 
@@ -244,7 +247,7 @@ C. Core System Maintenance Service (by ROBOTIS) : 1 years
 D. Parts replacement for malfunctions during normal operation for 1 years.
 
 {% capture op2_warning_01 %}
-\* Please download RMA (Return Material Authorization)(http://en.robotis.com/index/service_04.php?tab=4)  
+\* Please download RMA [Return Material Authorization](http://en.robotis.com/index/service_04.php?tab=4)  
 No return shipping will be accepted without a RMA number issued by ROBOTIS.
 
 \*\* Customers who require extended warranty period may purchase another "1 year warranty"

@@ -8,7 +8,7 @@ author_profile: false
 permalink: /docs/kr/edu/
 sidebar:
   title: 교육키트
-  nav: ""
+  nav: "all-edu"
 ---
 
 # [올로](#올로)
@@ -22,6 +22,9 @@ sidebar:
 |1단계 교육키트|2단계 교육키트|3단계 교육키트|4단계 교육키트|
 |:---:|:---:|:---:|:---:|
 |[![](/assets/images/edu/dream/dream_l1.jpg)](/docs/kr/edu/dream/dream1-1/) | [![](/assets/images/edu/dream/dream_l2.jpg)](/docs/kr/edu/dream/dream1-2/) | [![](/assets/images/edu/dream/dream_l3.jpg)](/docs/kr/edu/dream/dream1-3/)| [![](/assets/images/edu/dream/dream_l4.jpg)](/docs/kr/edu/dream/dream1-4/)|
+
+**주의** : 로보티즈 드림 I은 현재 단종되어 더 이상 판매되지 않습니다.
+{: .notice--warning}
 
 # [드림 II](#드림-ii)
 

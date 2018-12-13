@@ -10,11 +10,26 @@
 {% endcapture %}
 <div class="notice--danger">{{ dxl_danger | markdownify }}</div>
 
+{% if page.ref contains 'ax' or page.ref contains 'dx' or page.ref contains 'ex' or page.ref contains 'rx' %}
+  {% assign target_file = 'dxl_info' %}
+{% elsif page.ref contains 'mx' %}
+  {% assign target_file = 'dxl_mx_info' %}
+{% elsif page.ref contains 'h54p' or page.ref contains 'h42p' %}
+  {% assign target_file = 'dxl_pro_plus_info' %}
+{% elsif page.ref contains 'ra' %}
+  {% assign target_file = 'dxl_proa_info' %}
+{% elsif page.ref contains '-s' %}
+  {% assign target_file = 'dxl_pro_info' %}
+{% elsif page.ref contains 'xl' or page.ref contains 'xm' or page.ref contains 'xh' %}
+  {% assign target_file = 'dxl_x_info' %}
+{% else %}
+{% endif %}
+
 {% capture dxl_caution %}  
 ![](/assets/images/icon_warning.png)  
 **경고**  
 (상해나 제품 손상의 원인이 됩니다.)
-- 제품의 사용 환경을 준수하세요. (온도 : 5 ~ 55 [&deg;C])
+- 제품의 사용 환경을 준수하세요. (온도 : {{ site.data[target_file][page.ref].temperature }})
 - 작동 중인 제품 내부로 칼날, 압정, 불씨 등을 흡입시키지 마세요.
 {% endcapture %}
 <div class="notice--warning">{{ dxl_caution | markdownify }}</div>

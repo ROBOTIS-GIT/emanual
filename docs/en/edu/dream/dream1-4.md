@@ -11,8 +11,6 @@ sidebar:
   nav: "dream1-4"
 ---
 
-# DREAM1 Level 4
-
 # [Introduction](#introduction)
 
 ROBOTIS DREAM Level 4 comes with a remote controller to control the robot in many ways. Now that you have an idea of how the flow chart works and have a basic knowledge of programming, this level allows you to prepare for competitions. Play games using the programs provided for download on our website and keep a record to see how well you do. Experience how the sensors can affect your results.
@@ -21,6 +19,9 @@ ROBOTIS DREAM Level 4 comes with a remote controller to control the robot in man
 Please make sure to purchase Level 1, 2 and 3 to build the robots in Level 4.  
 Users must program the robots or download the program into the controller([CM-150]) to operate the robot.  
 To program or download a program you will need the USB Cable included in the ROBOTIS DREAM Level 1.
+{: .notice--warning}
+
+**WARNING** : ROBOTIS DREAM Level 4 has been discontinued.
 {: .notice--warning}
 
 # [Part List](#part-list)

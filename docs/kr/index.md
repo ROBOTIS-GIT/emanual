@@ -22,7 +22,7 @@ sidebar:
 
 # [바로가기](#바로가기)
 
-**[로보티즈 다운로드 센터]**에서도 다양한 자료를 제공합니다.
+**[로보티즈 다운로드 센터]** 에서도 다양한 자료를 제공합니다.
 {: .notice--success}
 
 ## [다이나믹셀]
@@ -32,22 +32,16 @@ sidebar:
 - [프로토콜 2.0](/docs/kr/dxl/protocol2/)
 
 ### 컨트롤 테이블
-- 
-<select id="x_ctrl_table_select" onchange="window.location.href=this.value;">
-    <option selected disabled hidden>X 시리즈</option>
-    <option value="/docs/kr/dxl/x/xl320/#eeprom-영역">XL-320</option>
-    <option value="/docs/kr/dxl/x/xl430-w250/#eeprom-영역">XL430-W250</option>
-    <option value="/docs/kr/dxl/x/xm430-w210/#eeprom-영역">XM430-W210</option>
-    <option value="/docs/kr/dxl/x/xm430-w350/#eeprom-영역">XM430-W350</option>
-    <option value="/docs/kr/dxl/x/xm540-w150/#eeprom-영역">XM540-W150</option>
-    <option value="/docs/kr/dxl/x/xm540-w270/#eeprom-영역">XM540-W270</option>
-    <option value="/docs/kr/dxl/x/xh430-w210/#eeprom-영역">XH430-W210</option>
-    <option value="/docs/kr/dxl/x/xh430-w350/#eeprom-영역">XH430-W350</option>
-    <option value="/docs/kr/dxl/x/xh430-v210/#eeprom-영역">XH430-V210</option>
-    <option value="/docs/kr/dxl/x/xh430-v350/#eeprom-영역">XH430-V350</option>
+
+-
+<select id="pro_plus_ctrl_table_select" onchange="window.location.href=this.value;">
+    <option selected disabled hidden>PRO+ 시리즈</option>
+    <option value="/docs/kr/dxl/pro_plus/h54p-200-s500-r/#eeprom-영역">H54P-200-S500-R</option>
+    <option value="/docs/kr/dxl/pro_plus/h54p-100-s500-r/#eeprom-영역">H54P-100-S500-R</option>
+    <option value="/docs/kr/dxl/pro_plus/h42p-020-s300-r/#eeprom-영역">H42P-020-S300-R</option>
 </select>
 
-- 
+-
 <select id="pro_ctrl_table_select" onchange="window.location.href=this.value;">
     <option selected disabled hidden>PRO 시리즈</option>
     <option value="/docs/kr/dxl/pro/h54-200-s500-r/#eeprom-영역">H54-200-S500-R</option>
@@ -63,7 +57,22 @@ sidebar:
     <option value="/docs/kr/dxl/pro/l42-10-s300-r/#eeprom-영역">L42-10-S300-R</option>
 </select>
 
-- 
+-
+<select id="x_ctrl_table_select" onchange="window.location.href=this.value;">
+    <option selected disabled hidden>X 시리즈</option>
+    <option value="/docs/kr/dxl/x/xl320/#eeprom-영역">XL-320</option>
+    <option value="/docs/kr/dxl/x/xl430-w250/#eeprom-영역">XL430-W250</option>
+    <option value="/docs/kr/dxl/x/xm430-w210/#eeprom-영역">XM430-W210</option>
+    <option value="/docs/kr/dxl/x/xm430-w350/#eeprom-영역">XM430-W350</option>
+    <option value="/docs/kr/dxl/x/xm540-w150/#eeprom-영역">XM540-W150</option>
+    <option value="/docs/kr/dxl/x/xm540-w270/#eeprom-영역">XM540-W270</option>
+    <option value="/docs/kr/dxl/x/xh430-w210/#eeprom-영역">XH430-W210</option>
+    <option value="/docs/kr/dxl/x/xh430-w350/#eeprom-영역">XH430-W350</option>
+    <option value="/docs/kr/dxl/x/xh430-v210/#eeprom-영역">XH430-V210</option>
+    <option value="/docs/kr/dxl/x/xh430-v350/#eeprom-영역">XH430-V350</option>
+</select>
+
+-
 <select id="mx_ctrl_table_select" onchange="window.location.href=this.value;">
     <option selected disabled hidden>MX 시리즈</option>
     <option value="/docs/kr/dxl/mx/mx-12w/#eeprom-영역">MX-12W</option>
@@ -75,7 +84,7 @@ sidebar:
     <option value="/docs/kr/dxl/mx/mx-106-2/#eeprom-영역">MX-106(2.0)</option>
 </select>
 
-- 
+-
 <select id="ax_ctrl_table_select" onchange="window.location.href=this.value;">
     <option selected disabled hidden>AX 시리즈</option>
     <option value="/docs/kr/dxl/ax/ax-12w/#eeprom-영역">AX-12W</option>

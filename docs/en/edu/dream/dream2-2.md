@@ -11,8 +11,6 @@ sidebar:
   nav: "dream2-2"
 ---
 
-# DREAM2 Level 2
-
 # [Introduction](#introduction)
 
 ROBOTIS DREAM II Level 2 teaches you the basics of how a robot moves, which includes the usage of sensors, speed and force, gait, and drive.  

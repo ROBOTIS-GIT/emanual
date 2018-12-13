@@ -12,25 +12,25 @@
 |7. 거웍 (GerWalk)  <br />![](/assets/images/edu/bioloid/gerwalk_kr.jpg)|- 조립확인 태스크 코드 [Download] [BIO_CMP_GerWalk_Check_KR.tsk]<br/>- 데모용 태스크 코드 [Download] [BIO_CMP_GerWalk_KR.tsk]<br/>- 데모용 모션 파일 [Download] [BIO_CMP_GerWalk_KR.mtn]<br/> - [동영상](http://www.robotis.com/video/2_7.wmv)<br/>- 다이나믹셀 설정값: AX-12+ ID[1], ID[2], ID[3], ID[4], ID[5], ID[6], ID[7] : 관절모드 <br/>AX-S1 ID[100] <br/>- 동작방법 :보행 경로 상에 장애물을 설치해 놓고 거웍을 작동시킵니다. <br/> 보행 중 전방에 장애물을 감지해서 피해갑니다.|
 |8. 배틀 드로이드  <br />![](/assets/images/edu/bioloid/battledroid_kr.jpg)|- 조립확인 태스크 코드 [Download] [BIO_CMP_BattleDroid_Check_KR.tsk]<br/>- 데모용 태스크 코드 [Download] [BIO_CMP_BattleDroid_KR.tsk]<br/>- 데모용 모션 파일 [Download] [BIO_CMP_BattleDroid_KR.mtn]<br/>- [동영상](http://www.robotis.com/video/2_8.wmv)<br/>- 다이나믹셀 설정값: AX-12+ ID[1], ID[2], ID[3], ID[4], ID[5], ID[6], ID[7], ID[8] : 관절모드 <br/> AX-S1 ID[100]<br/> - 동작방법 : 보행 경로 상에 장애물을 설치해 놓고 배틀 드로이드를 작동시킵니다. <br/> 보행 중에 장애물을 만나면 양 팔로 공격합니다. <br/> 배틀 드로이드가 넘어졌을 때 박수를 3번 이상 치면 스스로 일어납니다.|
 
-[BIO_CMP_ProbingRobot_Check_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_cmp_probingrobot_check_kr.tsk
-[BIO_CMP_ProbingRobot_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_cmp_probingrobot_kr.tsk
-[BIO_CMP_Excavator_Check_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_cmp_excavator_check_kr.tsk
-[BIO_CMP_Excavator_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_cmp_excavator_kr.tsk
-[BIO_CMP_RobotFlower_Check_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_cmp_robotflower_check_kr.tsk
-[BIO_CMP_RobotFlower_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_cmp_robotflower_kr.tsk
-[BIO_CMP_RobotFlower_KR.mtn]: http://support.robotis.com/ko/baggage_files/bioloid/bio_cmp_robotflower_kr.mtn
-[BIO_CMP_Fawn_Check_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_cmp_fawn_check_kr.tsk
-[BIO_CMP_Fawn_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_cmp_fawn_kr.tsk
-[BIO_CMP_Fawn_KR.mtn]: http://support.robotis.com/ko/baggage_files/bioloid/bio_cmp_fawn_kr.mtn
-[BIO_CMP_Turtle_Check_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_cmp_turtle_check_kr.tsk
-[BIO_CMP_Turtle_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_cmp_turtle_kr.tsk
-[BIO_CMP_Turtle_KR.mtn]: http://support.robotis.com/ko/baggage_files/bioloid/bio_cmp_turtle_kr.mtn
-[BIO_CMP_Spider_Check_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_cmp_spider_check_kr.tsk
-[BIO_CMP_Spider_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_cmp_spider_kr.tsk
-[BIO_CMP_Spider_KR.mtn]: http://support.robotis.com/ko/baggage_files/bioloid/bio_cmp_spider_kr.mtn
-[BIO_CMP_GerWalk_Check_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_cmp_gerwalk_check_kr.tsk
-[BIO_CMP_GerWalk_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_cmp_gerwalk_kr.tsk
-[BIO_CMP_GerWalk_KR.mtn]: http://support.robotis.com/ko/baggage_files/bioloid/bio_cmp_gerwalk_kr.mtn
-[BIO_CMP_BattleDroid_Check_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_cmp_battledroid_check_kr.tsk
-[BIO_CMP_BattleDroid_KR.tsk]: http://support.robotis.com/ko/baggage_files/bioloid/bio_cmp_battledroid_kr.tsk
-[BIO_CMP_BattleDroid_KR.mtn]: http://support.robotis.com/ko/baggage_files/bioloid/bio_cmp_battledroid_kr.mtn
+[BIO_CMP_ProbingRobot_Check_KR.tsk]: http://www.robotis.com/service/download.php?no=1221
+[BIO_CMP_ProbingRobot_KR.tsk]: http://www.robotis.com/service/download.php?no=1222
+[BIO_CMP_Excavator_Check_KR.tsk]: http://www.robotis.com/service/download.php?no=1196
+[BIO_CMP_Excavator_KR.tsk]: http://www.robotis.com/service/download.php?no=1197
+[BIO_CMP_RobotFlower_Check_KR.tsk]: http://www.robotis.com/service/download.php?no=1228
+[BIO_CMP_RobotFlower_KR.tsk]: http://www.robotis.com/service/download.php?no=1230
+[BIO_CMP_RobotFlower_KR.mtn]: http://www.robotis.com/service/download.php?no=1229
+[BIO_CMP_Fawn_Check_KR.tsk]: http://www.robotis.com/service/download.php?no=1198
+[BIO_CMP_Fawn_KR.tsk]: http://www.robotis.com/service/download.php?no=1200
+[BIO_CMP_Fawn_KR.mtn]: http://www.robotis.com/service/download.php?no=1199
+[BIO_CMP_Turtle_Check_KR.tsk]: http://www.robotis.com/service/download.php?no=1236
+[BIO_CMP_Turtle_KR.tsk]: http://www.robotis.com/service/download.php?no=1238
+[BIO_CMP_Turtle_KR.mtn]: http://www.robotis.com/service/download.php?no=1237
+[BIO_CMP_Spider_Check_KR.tsk]: http://www.robotis.com/service/download.php?no=1233
+[BIO_CMP_Spider_KR.tsk]: http://www.robotis.com/service/download.php?no=1235
+[BIO_CMP_Spider_KR.mtn]: http://www.robotis.com/service/download.php?no=1234
+[BIO_CMP_GerWalk_Check_KR.tsk]: http://www.robotis.com/service/download.php?no=1201
+[BIO_CMP_GerWalk_KR.tsk]: http://www.robotis.com/service/download.php?no=1203
+[BIO_CMP_GerWalk_KR.mtn]: http://www.robotis.com/service/download.php?no=1202
+[BIO_CMP_BattleDroid_Check_KR.tsk]: http://www.robotis.com/service/download.php?no=1182
+[BIO_CMP_BattleDroid_KR.tsk]: http://www.robotis.com/service/download.php?no=1184
+[BIO_CMP_BattleDroid_KR.mtn]: http://www.robotis.com/service/download.php?no=1183

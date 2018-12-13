@@ -9,8 +9,9 @@ sidebar:
 ---
 
 ![](/assets/images/dxl/pro/dynamixelpro_main.jpg)
+>DYNAMIXEL PRO
 
-# [Dynamixel PRO](#dynamixel-pro)
+# [Product Lineup](#product-lineup)
 
 ![](/assets/images/dxl/pro/dxl_pro_productline.jpg)
 
@@ -27,8 +28,6 @@ sidebar:
 - **Variety of control algorithms**: Dynamixel PRO position, velocity, and electrical current can be controlled via algorithms. The user can control these 3 aspects in any combination and properly tune the robot. Dynamixel PRO provides a graph illustrating the relationship between electrical current and torque. This feature is useful for torque control via current control.
 
 - **Precision control**: with a maximum of 502,000 units per revolution the user can control 0.0007 degrees per unit allowing for high-precision control..
-
-- **Variety of optional frames**: This systematic setup of numerous types of frames allow user can choose many types. Additionally, the user can order custom-made holes and screw types to the already-numerous pre-arranged screw holes in the frames. This will way the user will not have the need to use additional machinery to customize frames to meet needs.
 
 # [Key Specifications](#key-specifications)
 

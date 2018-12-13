@@ -20,7 +20,7 @@ sidebar:
   <h2 id="labview-protocol-20"><a href="#labview-protocol-20">LabVIEW Protocol 2.0</a></h2>
 <![end dummy Header 1]-->
 
-### [LabVIEW Read Write Protocol 2.0](#labview-read-write-protocol-10)
+### [LabVIEW Read Write Protocol 2.0](#labview-read-write-protocol-20)
 
 - Description
 

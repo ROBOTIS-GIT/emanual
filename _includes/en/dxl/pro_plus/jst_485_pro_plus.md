@@ -10,6 +10,9 @@
 
 {% include en/dxl/pinout_warning.md %}
 
+**WARNING**: Before operating PRO and PRO+, please supply power through 24V power port.
+{: .notice--warning}
+
 [JST EHR-4]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
 [JST B4B-EH-A]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
 [MOLEX 39-01-2020]: http://www.molex.com/molex/products/datasheet.jsp?part=active/0039012020_CRIMP_HOUSINGS.xml

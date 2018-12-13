@@ -1,6 +1,16 @@
 # [Control Table](#control-table)
 The Control Table is a structure of data implemented in the DYNAMIXEL. Users can read a specific Data to get status of the DYNAMIXEL with Read Instruction Packets, and modify Data as well to control DYNAMIXEL with WRITE Instruction Packets.
 
+{% if page.ref=='mx-28-2' or page.ref=='mx-64-2' or page.ref=='mx-106-2' %}
+{% capture mx2_control_table %}
+**CAUTION**
+1. MX(2.0) Firmware is different from MX series' control table and address. Please check the control table address before usage.
+2. MX(2.0) Firmware inherits Dynamixel X's function. Therefore, it supports Protocol 1.0 and 2.0, and various Operating Modes, Secondary ID, Drive Mode, Bus Watchdong, etc. Please refer to the control table for more details.
+{% endcapture %}
+
+<div class="notice--warning">{{ mx2_control_table | markdownify }}</div>
+{% else %}{% endif %}
+
 ## [Control Table, Data, Address](#control-table-data-address)
 The Control Table is a structure that consists of multiple Data fields to store status of the DYNAMIXEL or to control the DYNAMIXEL. Users can check current status of the DYNAMIXEL by reading a specific Data from the Control Table with Read Instruction Packets. WRITE Instruction Packets enable users to control the DYNAMIXEL by changing specific Data in the Control Table. The Address is a unique value when accessing a specific Data in the Control Table with Instruction Packets. In order to read or write data, users must designate a specific Address in the Instruction Packet. Please refer to [Protocol 2.0] for more details about Instruction Packets.
 

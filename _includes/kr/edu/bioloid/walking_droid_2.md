@@ -48,9 +48,11 @@ RoboPlus Motion 에서 작성한 모션을 CM-5 에 저장한 후 이 모션을 
 ### 다운로드
 
 - 완성된 태스크 코드 : [download][BIO_CMP_WalkingDroid_KR.tsk]
-- 다운로드 방법 : [태스크 코드 다운로드]
+- 다운로드 방법 : [태스크 코드 다운로드](/docs/kr/edu/bioloid/beginner/#태스크-코드-다운로드)
 
 ### 동작 확인
-다운로드 한 태스크 코드를 PLAY 시킵니다. 보행 경로 상에 장애물을 설치해 놓고 보행 드로이드가 장애물을 피해서 보행하는 것을 확인합니다.
+다운로드한 태스크 코드를 PLAY 시킵니다. 보행 경로 상에 장애물을 설치해 놓고 보행 드로이드가 장애물을 피해서 보행하는 것을 확인합니다.
 
   ![](/assets/images/edu/bioloid/wd_result_kr.png)
+
+[BIO_CMP_WalkingDroid_KR.tsk]: http://www.robotis.com/service/download.php?no=1246
