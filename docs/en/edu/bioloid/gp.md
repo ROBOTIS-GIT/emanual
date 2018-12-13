@@ -74,65 +74,66 @@ sidebar:
 
 ##### Walking Motions
 
-|Buttons| Motion |Buttons| Motion |
-|:---:|:---:|:---:|:---:|
-|U|Forward|D|Backward|
-|L|Turn Left|R|Turn Right|
-|U + L|Walk Forward + Left|U + R|Walk Forward + Right|
-|L + 5| Left Sidestep|L + 5 + 6|Fast Left Sidestep|
-|L + U + 5|Left Forward Diagonal Step|L + D + 5|Left Backward Diagonal Step|
-|R + 5| Right Sidestep|R + 5 + 6| Fast Right Sidestep|
-|R + U + 5|Right Forward Diagonal Step|R + D + 5|Right Backward Diagonal Step|
+|  Buttons  |           Motion            |  Buttons  |            Motion            |
+|:---------:|:---------------------------:|:---------:|:----------------------------:|
+|     U     |           Forward           |     D     |           Backward           |
+|     L     |          Turn Left          |     R     |          Turn Right          |
+|   U + L   |     Walk Forward + Left     |   U + R   |     Walk Forward + Right     |
+|   L + 5   |        Left Sidestep        | L + 5 + 6 |      Fast Left Sidestep      |
+| L + U + 5 | Left Forward Diagonal Step  | L + D + 5 | Left Backward Diagonal Step  |
+|   R + 5   |       Right Sidestep        | R + 5 + 6 |     Fast Right Sidestep      |
+| R + U + 5 | Right Forward Diagonal Step | R + D + 5 | Right Backward Diagonal Step |
 
 ##### Standard
-|Buttons| Motion |Buttons| Motion |
-|:---:|:---:|:---:|:---:|
-|1 + U|Gets up facing up|1 + D|Gets up facing down|
-|5+6+U+1|Soccer Mode(Change Mode)|5+6+D+3|Battle Mode(Change Mode)|
-|5+6+L+2|Performance Mode(Change Mode)|-|-|
+
+| Buttons |            Motion             | Buttons |          Motion          |
+|:-------:|:-----------------------------:|:-------:|:------------------------:|
+|  1 + U  |       Gets up facing up       |  1 + D  |   Gets up facing down    |
+| 5+6+U+1 |   Soccer Mode(Change Mode)    | 5+6+D+3 | Battle Mode(Change Mode) |
+| 5+6+L+2 | Performance Mode(Change Mode) |    -    |            -             |
 
 ![](/assets/images/edu/bioloid/gp_rc100_mode.png)
 
 ##### U: Soccer Mode
 
-|Buttons| Motion |Buttons| Motion |
-|:---:|:---:|:---:|:---:|
-|2 + U|Left Leg + Forward Kick|4 + U|Right Leg + Forward Kick|
-|2 + D|Left Leg + Back Kick|4 + D|Right Leg + Back Kick|
-|2 + L|Left Leg + Left Kick|4 + L|Right Leg + Left Kick|
-|2 + R|Left Leg + Right Kick|4 + R|Right Leg + Right Kick|
-|3|Defense Standby|3 + L| Block Ball + Left|
-|3 + U|Defense|3 + R|Block Ball + Right|
+| Buttons |         Motion          | Buttons |          Motion          |
+|:-------:|:-----------------------:|:-------:|:------------------------:|
+|  2 + U  | Left Leg + Forward Kick |  4 + U  | Right Leg + Forward Kick |
+|  2 + D  |  Left Leg + Back Kick   |  4 + D  |  Right Leg + Back Kick   |
+|  2 + L  |  Left Leg + Left Kick   |  4 + L  |  Right Leg + Left Kick   |
+|  2 + R  |  Left Leg + Right Kick  |  4 + R  |  Right Leg + Right Kick  |
+|    3    |     Defense Standby     |  3 + L  |    Block Ball + Left     |
+|  3 + U  |         Defense         |  3 + R  |    Block Ball + Right    |
 
 ##### D: Battle Mode
 
 ![](/assets/images/edu/bioloid/gp_battle_mode.png)
 
-|Buttons| Motion |Buttons| Motion |
-|:---:|:---:|:---:|:---:|
-|2 + U|Hit + Forward Attack|3|Defense|
-|2 + L|Hit + Left Attack|2 + R|Hit + Right Attack|
-|4 + U|Upper Body Tackle|4 + D|Lower Body Tackle|
-|4 + L|Left Strong Tackle|4 + R|Right Strong Tackle|
+| Buttons |        Motion        | Buttons |       Motion        |
+|:-------:|:--------------------:|:-------:|:-------------------:|
+|  2 + U  | Hit + Forward Attack |    3    |       Defense       |
+|  2 + L  |  Hit + Left Attack   |  2 + R  | Hit + Right Attack  |
+|  4 + U  |  Upper Body Tackle   |  4 + D  |  Lower Body Tackle  |
+|  4 + L  |  Left Strong Tackle  |  4 + R  | Right Strong Tackle |
 
 ##### L/R: Performance Mode
 
-|Buttons| Motion |Buttons| Motion |
-|:---:|:---:|:---:|:---:|
-|2 + U|Gretting|2 + R|Handstand|
-|2 + D|Clap(Twice)|3 + U|Roll on Side|
-|2 + L|Clap(337)|3 + D|Push ups|
+| Buttons |   Motion    | Buttons |    Motion    |
+|:-------:|:-----------:|:-------:|:------------:|
+|  2 + U  |  Gretting   |  2 + R  |  Handstand   |
+|  2 + D  | Clap(Twice) |  3 + U  | Roll on Side |
+|  2 + L  |  Clap(337)  |  3 + D  |   Push ups   |
 
 After mounting the IR receiver on CM-530 under control mode, you can set the channels to control it remotely by pressing the Aux button. If you change the channel of the controller, you must also change the channel of RC-100. On how to change the channel of RC-100, please refer to Changing RC-100's Channel.
 
 #### Setting the CM-530 IR Channels (Start + U/L/D/R)
 
-|Buttons|Description |
-|:---:|:---:|
-|Start + U|Set the RC-100 channel as 1|
-|Start + L|Set the RC-100 channel as 2|
-|Start + D|Set the RC-100 channel as 3|
-|Start + R|Set the RC-100 channel as 4|
+|  Buttons  |         Description         |
+|:---------:|:---------------------------:|
+| Start + U | Set the RC-100 channel as 1 |
+| Start + L | Set the RC-100 channel as 2 |
+| Start + D | Set the RC-100 channel as 3 |
+| Start + R | Set the RC-100 channel as 4 |
 
 ##### My remote controller does not work properly.
 - Set to control mode.
