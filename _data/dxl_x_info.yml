@@ -309,14 +309,14 @@ xh540-v270:
   weight:             *weight_540
   dimensions:         *dimension_540
   gearratio:          "272.5 : 1"
-  stalltorque:        "9.2 [Nm] (at 24 [V], 2.3 [A])"
-  noloadspeed:        "33 [rev/min] (at 24 [V])"
+  stalltorque:        "9.2 [Nm] (at 24 [V], 2.4 [A])"
+  noloadspeed:        "34 [rev/min] (at 24 [V])"
   radialload:         *radialload
   radialload_en:      *radialload_en
   axialload:          *axialload
   temperature:        *temperature
-  voltage:            *voltage_12
-  voltage_en:         *voltage_12_en
+  voltage:            *voltage_24
+  voltage_en:         *voltage_24_en
   command:            *command
   protocoltype:       *rs485_ttl
   physicalconnection: *rs485_ttl_conn
@@ -338,14 +338,14 @@ xh540-v150:
   weight:             *weight_540
   dimensions:         *dimension_540
   gearratio:          "152.3 : 1"
-  stalltorque:        "6.4 [N.m] (at 24 [V], 2.3 [A])"
-  noloadspeed:        "59 [rev/min] (at 24 [V])"
+  stalltorque:        "6.4 [N.m] (at 24 [V], 2.4 [A])"
+  noloadspeed:        "60 [rev/min] (at 24 [V])"
   radialload:         *radialload
   radialload_en:      *radialload_en
   axialload:          *axialload
   temperature:        *temperature
-  voltage:            *voltage_12
-  voltage_en:         *voltage_12_en
+  voltage:            *voltage_24
+  voltage_en:         *voltage_24_en
   command:            *command
   protocoltype:       *rs485_ttl
   physicalconnection: *rs485_ttl_conn
@@ -368,7 +368,7 @@ xh540-w150:
   dimensions:         *dimension_540
   gearratio:          "152.3 : 1"
   stalltorque:        "6.6 [N.m] @ 11.1 [V], 4.5 [A]<br />7.1 [Nm] @ 12.0 [V], 4.9 [A]<br />8.5 [Nm] @ 14.8 [V], 5.9 [A]"
-  noloadspeed:        "66 [rev/min] @ 11.1 [V]<br />70 [rev/min] @ 12.0 [V]<br />85 [rev/min] @ 14.8"
+  noloadspeed:        "66 [rev/min] @ 11.1 [V]<br />70 [rev/min] @ 12.0 [V]<br />86 [rev/min] @ 14.8"
   radialload:         *radialload
   radialload_en:      *radialload_en
   axialload:          *axialload
