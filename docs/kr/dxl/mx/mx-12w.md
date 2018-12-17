@@ -216,17 +216,14 @@ Value 값이 250 이상인 경우 :
 ### <a name="goal-acceleration"></a>**[Goal Acceleration (73)](#goal-acceleration-73)**
 {% include kr/dxl/control_table_goal_acceleration.md %}
 
-# [조립 예시](#조립-예시)
-
-
-
 # [유지보수](#유지보수)
 
 {% include kr/dxl/horn_bearing_replacement.md %}
 
 # [참고자료](#참고자료)
 
-**주의**: [호환성 가이드]
+**주의**: [호환성 가이드]{: .blank}  
+[케이블 호환성]{: .popup}
 {: .notice}
 
 ## [커넥터 정보](#커넥터-정보)
@@ -243,3 +240,4 @@ Value 값이 250 이상인 경우 :
 {% include kr/dxl/download_center_notice.md %}
 
 [호환성 가이드]: http://www.robotis.com/service/compatibility_table.php?cate=d
+[케이블 호환성]: /assets/images/dxl/cable_compatibility.png

@@ -238,7 +238,7 @@ sidebar:
 
 # [Reference](#reference)
 
-**NOTE** : [Compatibility Guide]
+**NOTE** : [Compatibility Guide]{: .blank}
 {: .notice}
 
 ## [Connector Information](#connector-information)

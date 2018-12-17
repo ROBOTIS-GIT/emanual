@@ -233,7 +233,8 @@ For example, if it is set to 300 then the motor is moving to the CCW direction a
 
 # [Reference](#reference)
 
-**NOTE** : [Compatibility Guide]
+**NOTE** : [Compatibility Guide]{: .blank}  
+[Harness Compatibility]{: .popup}
 {: .notice}
 
 ## [Videos](#videos)
@@ -251,3 +252,4 @@ For example, if it is set to 300 then the motor is moving to the CCW direction a
 {% include en/dxl/download_center_notice.md %}
 
 [Compatibility Guide]: http://en.robotis.com/service/compatibility_table.php?cate=d
+[Harness Compatibility]: /assets/images/dxl/cable_compatibility.png
