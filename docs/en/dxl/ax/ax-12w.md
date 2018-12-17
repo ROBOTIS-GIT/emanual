@@ -223,7 +223,8 @@ Each data in the Control Table is restored to initial values when the DYNAMIXEL 
 
 # [Reference](#reference)
 
-**NOTE** : [Compatibility Guide]
+**NOTE** : [Compatibility Guide]{: .blank}  
+[Harness Compatibility]{: .popup}
 {: .notice}
 
 ## [Connector Information](#connector-information)
@@ -239,3 +240,4 @@ Each data in the Control Table is restored to initial values when the DYNAMIXEL 
 {% include en/dxl/485_ttl_connection.md %}
 
 [Compatibility Guide]: http://en.robotis.com/service/compatibility_table.php?cate=d
+[Harness Compatibility]: /assets/images/dxl/cable_compatibility.png
