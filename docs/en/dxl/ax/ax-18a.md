@@ -231,7 +231,8 @@ Each data in the Control Table is restored to initial values when the DYNAMIXEL 
 
 # [Reference](#reference)
 
-**NOTE** : [Compatibility Guide]{: .blank}  
+**NOTE**  
+[Compatibility Guide]{: .blank}  
 [Harness Compatibility]{: .popup}
 {: .notice}
 

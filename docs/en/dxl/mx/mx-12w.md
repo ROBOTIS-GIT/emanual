@@ -233,7 +233,8 @@ For example, if it is set to 300 then the motor is moving to the CCW direction a
 
 # [Reference](#reference)
 
-**NOTE** : [Compatibility Guide]{: .blank}  
+**NOTE**  
+[Compatibility Guide]{: .blank}  
 [Harness Compatibility]{: .popup}
 {: .notice}
 
