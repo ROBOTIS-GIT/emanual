@@ -41,7 +41,7 @@ Information appearing in a DANGER concerns the protection of personnel from the 
 <div class="notice--danger">{{ manipulator_danger_01 | markdownify }}</div>
 
 
-{% capture manipulator_warning_01 %} 
+{% capture manipulator_warning_01 %}
 `WARNING`
 
 Information appearing in a WARNING concerns the protection of personnel and equipment from potential hazards that can result in personal injury or loss of life in addition to equipment damage.
@@ -53,7 +53,7 @@ Information appearing in a WARNING concerns the protection of personnel and equi
 {% endcapture %}
 
 <div class="notice--warning">{{ manipulator_warning_01 | markdownify }}</div>
- 
+
 {% capture manipulator_caution_01 %}
 `CAUTION`
 
@@ -68,30 +68,30 @@ Information appearing in a CAUTION concerns the protection of personnel and equi
 
 ## [Package Contents](#package-contents)
 
-|Name|Quantity|
-|:---:|:---:|
-|Manipulator|1|
-|USB2Dyanmixel|1|
-|4P Cable(500mm)|2|
-|Power Cable(1,200mm)|2|
-|4P expansion hub|1|
-|Power expansion hub|1|
-|Gripper(optional)|1|
-|Support(optional)|2|
-|Base Plate(optional)|1|
-|3x8 wrench bolt|20|
-|3x12 wrench bolt|20|
+|                                         Item                                          | Quantity |
+|:-------------------------------------------------------------------------------------:|:--------:|
+|                                      Manipulator                                      |    1     |
+|                                         U2D2                                          |    1     |
+|                                    4P Cable(500mm)                                    |    2     |
+|                                 Power Cable(1,200mm)                                  |    2     |
+|                                   4P expansion hub                                    |    1     |
+|                                  Power expansion hub                                  |    1     |
+|                                   Gripper(optional)                                   |    1     |
+|   [Angle Frame(optional)](http://www.robotis.com/shop/item.php?it_id=905-0019-000)    |    2     |
+| [Base Plate Frame(optional)](http://www.robotis.com/shop/item.php?it_id=905-0019-000) |    1     |
+|                                    3x8 wrench bolt                                    |    20    |
+|                                   3x12 wrench bolt                                    |    20    |
 
 ## [Layout](#layout)
 
 ### Dimension of Manipulator-H
 
 ![](/assets/images/platform/manipulator/manipulator_h_001.jpg)
- 
+
 ### Dimension of Manipulator-L
 
 ![](/assets/images/platform/manipulator/manipulator_h_002.jpg)
- 
+
 ### Wiring
 
 ![](/assets/images/platform/manipulator/manipulator_h_003.jpg)
@@ -175,16 +175,16 @@ For additional power or 4P cables contact ROBOTIS or obtain them with the specif
 
 ### USB2Dynamixel
 The USB2Dynamixel sends ArmSDK commands to the Manipulator. Connect the USB2Dynamixel to the PC via USB hub.
- 
+
 ![](/assets/images/platform/manipulator/manipulator_h_008.jpg)
- 
+
 ## [Product Assembly](#product-assembly)
 
 **참고**: The content below is based on an **optional** base plate and differs from the actual base plate.
 {: .notice}
 
 ![](/assets/images/platform/manipulator/manipulator_h_009.jpg)
- 
+
 - Rest and fix joint 1 of the Manipulator.
 
 ![](/assets/images/platform/manipulator/manipulator_h_010.jpg)
@@ -192,7 +192,7 @@ The USB2Dynamixel sends ArmSDK commands to the Manipulator. Connect the USB2Dyna
 ![](/assets/images/platform/manipulator/manipulator_h_011.png)
 
 - The photo on the left is the external wiring for the arm. Label “1” shows a pair of 4P cables and power connector; these connect to joint 1 as shown on the right picture.
- 
+
 - Label “2” shows a 4P connector and 4 power connectors and these connect to the power expansion hub and the 4P cable connects to the extension.
 
 ![](/assets/images/platform/manipulator/manipulator_h_012.png)
@@ -221,7 +221,7 @@ The USB2Dynamixel sends ArmSDK commands to the Manipulator. Connect the USB2Dyna
 |TTL|AX, 3-pin MX; communicate with 3-pin Dynamixel|
 |RS485|RX, 4-pin MX and Pro; communicate with 4-pin Dynamixel|
 |RS232|CM-5, CM-510; communicate with these controllers. Communicate with other RS-232 devices|
- 
+
 **참고**: The manipulator is based on RS-485 communications so make sure to set the dongle to 485.
 {: .notice}
 
@@ -233,13 +233,13 @@ The USB2Dynamixel sends ArmSDK commands to the Manipulator. Connect the USB2Dyna
 {: .notice--warning}
 
   ![](/assets/images/platform/manipulator/manipulator_h_018.jpg)
- 
+
 - Install and run RoboPlus; click on Dynamixel Wizard button to start Dynamixel Wizard.
- 
+
   ![](/assets/images/platform/manipulator/manipulator_h_019.jpg)
- 
+
 ### Operating the Manipulator
- 
+
 **DANGER** : Before starting Dynamixel Wizard ensure the arm is fixed to the base plate; then extend the arm. Otherwise; it may cause physical harm.
 {: .notice--danger}
 
@@ -256,36 +256,36 @@ The USB2Dynamixel sends ArmSDK commands to the Manipulator. Connect the USB2Dyna
 
 **주의** : Always ensure before powering on. While power is on do not change wires; otherwise it may cause undesired operations.
 {: .notice-warning}
- 
+
   ![](/assets/images/platform/manipulator/manipulator_h_023.jpg)
 
   ![](/assets/images/platform/manipulator/manipulator_h_024.jpg)
 
 - The picture on the left is the COM port number of USB2Dynamixel (which should be connected to the arm). Click on the   to continue
 
-  ![](/assets/images/platform/manipulator/manipulator_h_025.jpg) 
- 
+  ![](/assets/images/platform/manipulator/manipulator_h_025.jpg)
+
 - Once connected make sure that 1000000bps box is checked and “DXL 2.0” is selected. Then click on Search. The arm’s default baud rate is 1 Mbps.
 
   ![](/assets/images/platform/manipulator/manipulator_h_026.jpg)
-  
+
   ![](/assets/images/platform/manipulator/manipulator_h_027.jpg)
 
 - Once search is complete the arm’s components (Dynamixel PROs) are listed on the left. Click on an individual Dynamixel PRO to display the contents of its Control Table.
 
   ![](/assets/images/platform/manipulator/manipulator_h_028.jpg)
-  
+
   ![](/assets/images/platform/manipulator/manipulator_h_029.jpg)
 
 - Dynamixel Pro will only move (operate) when Torque Mode is on. So always make sure the Torque Mode is on prior to sending moving commands.  
   Torque Enable is located on address number 562. A value of 1 means on and 0 means off.
 
   ![](/assets/images/platform/manipulator/manipulator_h_030.jpg)
-  
+
   ![](/assets/images/platform/manipulator/manipulator_h_031.jpg)
-  
+
   ![](/assets/images/platform/manipulator/manipulator_h_032.jpg)
-  
+
   ![](/assets/images/platform/manipulator/manipulator_h_033.jpg)
 
 - Turn ‘Torque Enable’ on to all joints. The pose of the arm will become rigid (check by applying a small force). Afterwards click on joint 6.
@@ -322,15 +322,15 @@ The USB2Dynamixel sends ArmSDK commands to the Manipulator. Connect the USB2Dyna
 - Preparation Before using Robotis Manipulator SDK.  
   The following are pre-requisites for the ArmSDK.  
   Eigen Package(http://eigen.tuxfamily.org, version 3.0.6 or Later)
- 
+
 - Installation Package
   - Download and unzip Eigen Package.
   - Start Visual Studio go to “Project Properties -> VC++ Directories -> Include Directories” set Eigen’s source directory.
 
     ![](/assets/images/platform/manipulator/manipulator_h_046.jpg)
-    
+
     ![](/assets/images/platform/manipulator/manipulator_h_047.jpg)
-    
+
     ![](/assets/images/platform/manipulator/manipulator_h_048.jpg)
 
   - Repeat procedure (i)~(ii) to include the examples and include directories.
@@ -341,25 +341,25 @@ The USB2Dynamixel sends ArmSDK commands to the Manipulator. Connect the USB2Dyna
 ## [ArmMonitor](#armmonitor)
 
 ArmMonitor allows viewing of a joint current position, target position, end effector’s pose, and joint parameters (Velocity, Acceleration, Position P, I, D Gain, Velocity P, I Gain). Change the values from the table below to see changes.
- 
+
 - Joint’s values table  
   Note that a press of \[, \{ key denote decrease by shown units and \}, \] denote increase by shown units.
- 
+
 ![](/assets/images/platform/manipulator/manipulator_h_049.png)
- 
+
 ### How to Use ArmMonitor
 
 #### ArmMonitor01
 - To start ArmMonitor01, create a new project; once created press the Ctrl + F5 keys to run.
 
 ![](/assets/images/platform/manipulator/manipulator_h_050.gif)
- 
+
 You will need to enter the COM port number and baud rate. Simply enter the values and “Succeed to open USB2Dynamixel” should appear onscreen followed by “Press any key to move first pose.” Use the keyboard to move the arm.         
 
 ![](/assets/images/platform/manipulator/manipulator_h_051.png)
 
 The following table is a list of baud rate values and its corresponding speed; Robotis Manipulator default value is 3 (1Mbps).
- 
+
 The following table is a list of baud rate values and its corresponding speed; Robotis Manipulator default value is 3 (1Mbps).
 
 |Baudrate Number|baudrate|
@@ -370,7 +370,7 @@ The following table is a list of baud rate values and its corresponding speed; R
 |3|1,000,000 bps|
 |4|2,000,000 bps|
 |5|3,000,000 bps|
- 
+
 The photo below is the arm in its “arrival” pose.
 
 ![](/assets/images/platform/manipulator/manipulator_h_052.png)
@@ -387,22 +387,22 @@ The photo below is the arm in its “arrival” pose.
 -  Calc&lt;rad&gt; is the calculated angle from DH and DYNAMIXEL&lt;rad&gt; from the servo’s. The cursor and only control Goal Value Joint Parameter.
 
 ![](/assets/images/platform/manipulator/manipulator_h_054.gif)
- 
+
 The Goal Value of Arm의 Calc&lt;rad&gt; value (enclosed by the red frame) can be increased with the‘]’ key. The unit is (&pi;/180)rad.  
 After adjusting the joint, check if the Manipulator follows.
- 
+
 #### ArmMonitor02
 ArmMonitor02 allows direct control of the end effector. Control the end effector is done by  ComputeIK function where it moves each joint to its solution position (rad).
- 
+
 - EndEffector pose table
 
 ![](/assets/images/platform/manipulator/manipulator_h_055.png)
- 
+
 To setup and run ArmMonitor02 follow the same procedure as in ArmMonitor01.  
 As in ArmMonitor01 you will be asked to enter COM port number and baud rate. You should also see “Succeed to open USB2Dynamixel” followed by “Press any key to move first pose.” The arm moves to its initial pose.
 
 ![](/assets/images/platform/manipulator/manipulator_h_056.png)
- 
+
 The photo below is the arm in its “arrival” pose.
 
 ![](/assets/images/platform/manipulator/manipulator_h_052.png)
@@ -410,12 +410,12 @@ The photo below is the arm in its “arrival” pose.
 ![](/assets/images/platform/manipulator/manipulator_h_057.gif)
 
 The different values of the end effector depicted from the red areas with “1” and “2” (from the screen output image above) is due to the difference of Dynamixel Pro’s Goal Position and Present Position values (gear backlash) and DH with the point of origin. **”1” shows the end effector’s pose via calculations from kinematics and “2” the actual pose**.
- 
+
 ![](/assets/images/platform/manipulator/manipulator_h_058.gif)
 
 Press the ] key to increase the end effector’s pose value by (&pi;/180)rad ; X increases by 2mm.
 **Visually verify arm movement every time when changing position**.
- 
+
 #### Arm Monitor Source Description
 
 ##### cmd_process.cpp
@@ -451,7 +451,7 @@ Press the ] key to increase the end effector’s pose value by (&pi;/180)rad ; X
   ```
 
   > the above is DrawPage code for ArmMonitor.
- 
+
 - voidGotoCursur(int row, int col)
 
   ```cpp
@@ -486,22 +486,22 @@ These 4 functions allows the directional keys to control cursor location.
   ```
 
   > UpDownValue allows cursor to increase/decrease values.
- 
+
 - void initialize(void)  
   initialize() function described below.
-  
+
   ```cpp
   gpArmComm = new Pro_Arm_Comm_Win()
   ```
-  
+
   > gpArmComm is a class of Pro_Arm_Comm_Win. Pro_Arm_Comm_Win includes ID and baud num-related aspects.
-  
+
   ```cpp
   gpArmComm->DXL_Set_Init_Param(Port, Baud)
   ```
 
   > Sets Port Number  Baudrate from pointer
- 
+
 - gpRobotisArm->AddJoint
   - double LinkLength
   - double LinkTwist
@@ -517,116 +517,116 @@ These 4 functions allows the directional keys to control cursor location.
 
   > Input each joint’s DH joint parameters.
 
-  ```cpp 
+  ```cpp
   gpArmComm->Arm_ID_Setup(gpRobotisArm->GetArmIDList())
   ```
 
   > From AddJoint rearrange ID List.
- 
+
   ```cpp
   gpArmKinematics = new Kinematics(gpRobotisArm)
   ```
 
   > gpRobotisArm->AddJoint (RobotInfo Class) generates Kinematics Class.
- 
+
   ```cpp
   gpArmKinematics->SetMaximumNumberOfIterationsForIK(60)
   ```
 
   > This function calculates the IK’s max number of iterations. In this case 60.
-   
+
   ```cpp
   gpArmKinematics->SetConvergenceCondition(0.001, 5.0)
   ```
 
   > Sets convergence for IK. 1st value to determine solution; second value maximum allowed.
-   
+
 
   ```cpp
   gvdGoalCalculationAngleRad.resize(gpRobotisArm->GetRobotInfo()->size())
   ```
 
   > Setup target pose value (rad).
-   
+
   ```cpp
   gvdRealCalculationAngleRad.resize(gpRobotisArm->GetRobotInfo()->size())
   ```
 
   > Current pose value (rad).
-   
+
   ```cpp
   gvdGoalDynamixelAngleRad.resize(gpRobotisArm->GetRobotInfo()->size())
   ```
 
   > Target joint’s position value (rad)
-   
+
   ```cpp
   gvdRealDynamixelAngleRad.resize(gpRobotisArm->GetRobotInfo()->size())
   ```
 
   > Actual joint’s position value (rad).
-   
+
   ```cpp
   gviGoalDynamixelAngleUnit.resize(gpRobotisArm->GetRobotInfo()->size())
   ```
 
   > Actual joint’s target position value (value).
-   
+
   ```cpp
   gviRealDynamixelAngleUnit.resize(gpRobotisArm->GetRobotInfo()->size())
   ```
 
   > Actual joint’s position value.(value).
-   
+
   ```cpp
   gviPositionPGain.resize(gpRobotisArm->GetRobotInfo()->size())
   ```
 
   > Position P Gain value.
-   
+
   ```cpp
   gviPositionIGain.resize(gpRobotisArm->GetRobotInfo()->size())
   ```
 
   > Position I Gain value.
-   
+
   ```cpp
   gviPositionDGain.resize(gpRobotisArm->GetRobotInfo()->size())
   ```
 
   > Position D Gain value.
-   
+
   ```cpp
   gviVelocityPGain.resize(gpRobotisArm->GetRobotInfo()->size())
   ```
 
   > Velocity P Gain value.
-   
+
   ```cpp
   gviVelocityIGain.resize(gpRobotisArm->GetRobotInfo()->size())
   ```
 
   > Velocity I Gain value.
-   
+
   ```cpp
   gviDynamixelVelocity.resize(gpRobotisArm->GetRobotInfo()->size())
   ```
 
   > Velocity value.
-   
+
   ```cpp
   gviDynamixelAcceleration.resize(gpRobotisArm->GetRobotInfo()->size())
   ```
 
   > Acceleration value
-   
+
   ```cpp
   gvdGoalCalculationAngleRad = gpArmKinematics->GetCurrentAngle();
   gvdRealCalculationAngleRad = gpArmKinematics->GetCurrentAngle();
   ```
 
   > From gpArmKinematics (mCurrentAngle) current pose value initialize gvdGoal CalculationAngleInRad and gvdRealCalculationAngleInRad.
-   
+
   ```cpp
   gvdAngleGapCalcandDynamixelRad.resize(gpRobotisArm->GetRobotInfo()->size());
   gvdAngleGapCalcandDynamixelRad<< 0.0, ML_PI_2 - 6.4831 * ML_PI/ 180.0, ML_PI_4 + 6.4831 * ML_PI/ 180.0, 0.0, 0.0, 0.0;
@@ -634,13 +634,13 @@ These 4 functions allows the directional keys to control cursor location.
 
   > **This function has been introduced due to the differences between point of origin and actual joints’ point of origin from the DH Configuration**.
   Once the size of angle adjustment has been assigned per joint enter the difference between point of origin and the joint actual point of origin.
-   
+
   ```cpp
   gvdGoalDynamixelAngleRad<<0.0, ML_PI/4.0, -ML_PI/4.0, 0.0, -ML_PI/4.0,0.0;
   ```
 
   > GoalDynamixelAngleRad is the initial pose default values.
-   
+
   ```cpp
   gviPositionPGain.fill(DEFAULT_POSITION_P_GAIN);
   gviPositionIGain.fill(DEFAULT_POSITION_I_GAIN);
@@ -648,38 +648,38 @@ These 4 functions allows the directional keys to control cursor location.
   ```
 
   > Position P, I, D Gain functions. Default P gain value is 64; I and D Gain are 0. The .fill contains every joint’s PID values individually.
-   
+
   ```cpp
   gpArmComm->Arm_Torque_On();
   ```
 
   > This function gets initialized before moving the arm to its initial pose.
-   
+
   ```cpp
   gpArmComm->Arm_Set_Position_PID_Gain(DEFAULT_POSITION_P_GAIN,DEFAULT_POSITION_I_GAIN,DEFAULT_POSITION_D_GAIN);
   ```
 
   > Sets the manipulator joints’ PID gain values..
-   
+
   ```cpp
   gpArmTrajectory = new TrajectoryGenerator(gpArmKinematics)
   gpArmTrajectory->Set_P2P(gvdRealDynamixelAngleRad-gvdAngleGapCalcandDynamixelRad,gvdGoalDynamixelAngleRad-gvdAngleGapCalcandDynamixelRad,5.0, 1.0);
   ```
 
   > The generated Kinematics, StartPose, EndPose, TotalTime, AccelTime get inputted into the trajectory. Trajectory is generated via P2P. The StartPose is the current pose and EndPose is ArmMonitor’s initial pose. TotalTime is 5.0sec where AccelTime is 1.0sec. **For more information on trajectory generation, please go to 4.2 How to Program and 6.3 MotionEngine’s Trajectory Generator**.
-   
+
   ```cpp
   gpMotionPlayer = new MotionPlay(gpArmKinematics, gpArmTrajectory);
   ```
 
   > MotionPlay’s CurrentTime, ElapsedTime get initialized and setp up MotionProfile. These are required variables for kinematics and trajectory’s motion.
-   
+
   ```cpp
   gpMotionPlayer->Set_Time_Period(5);
   ```
 
   > Motion’s time period in 5msec.
-   
+
   ```cpp
   _tempMotionTimer.Start();
   gvdGoalCalculationAngleRad = gpMotionPlayer->NextStep(&ErrorStatus);
@@ -718,35 +718,35 @@ These 4 functions allows the directional keys to control cursor location.
   > First, NextStep gets the current step’s target angles, which are from the D-H Configuration. However, the actual Dynamixel PRO start point and the D-H Configuration’s differ.  
   This difference is taken into account and each joint Goal Position Value is set again with Rad2Value, the resulting Arm_Set_JointPosition moves the manipulator.  
   If successful, the manipulator’s communications Arm_Set_JointPosition returns a value of 1.
-   
+
   ```cpp
   gvdRealDynamixelAngleRad = gpRobotisArm->Value2Rad(gviRealDynamixelAngleUnit);
   gvdRealCalculationAngleRad = gvdRealDynamixelAngleRad - gvdAngleGapCalcandDynamixelRad;
   ```
 
   > After motion is complete it print’s the joint’s actual pose(rad) and calculated pose(rad).
-   
+
   ```cpp
   gpArmKinematics->Forward(gvdRealCalculationAngleRad, &gRealPose);
   gpArmKinematics->Forward(gvdGoalCalculationAngleRad, &gGoalPose);
   ```
 
   > Factor’s current angle and goal angle to Forward Kinematics. The end effectot’s actual and goal pose (gRealPose, gGoalPose) can be assigned.
-   
+
   ```cpp
   gpArmComm->Arm_Set_JointAcceleration(DEFAULT_JOINT_ACCELERATION);
   gviDynamixelAcceleration.fill(DEFAULT_JOINT_ACCELERATION);
   ```
 
   > Sets every joint’s acceleration value individually. DEFAULT_JOINT_ACCELERATION has 4 values
-   
+
   ```cpp
   gpArmComm->Arm_Set_JointVelocity(DEFAULT_JOINT_VELOCITY);
   gviDynamixelVelocity.fill(DEFAULT_JOINT_VELOCITY);
   ```
 
   > Sets every joint’s velocity value individually. DEFAULT_JOINT_VELOCITY 9000 values.
-   
+
   ```cpp
   void UpDownGoalValue(int dir);
   void UpDownJointParameter(int dir);
@@ -761,7 +761,7 @@ These 4 functions allows the directional keys to control cursor location.
 {: .notice--warning}
 
 SimplePtoP is the end effector’s move point (from P1 to P2).
- 
+
 ### How to Use SimplePtoP
 To start SimplePtoP follow the same procedure for ArmMonitor. Then press the Ctrl + F5 keys to run.
 
@@ -776,7 +776,7 @@ Then press a key to begin P2P Motion. The photo below is the arm in its initial 
 ![](/assets/images/platform/manipulator/manipulator_h_061.jpg)
 
 SimplePtoP displays the joints’ pose(rad). In SimplePtoP prssing the 'p' or ‘P' will cause motion to pause. Press the ESC key to end.
- 
+
 ### SimplePtoP Source Description
 
 ```cpp
@@ -786,7 +786,7 @@ P2.resize(RobotisArm.GetRobotInfo()->size());
 ```
 
 > P1, P2 sets every joint’s position.
- 
+
 ```cpp
 P1.fill(0.0);
 P1 -= gvdAngleGapCalcandDynamixelRad;
@@ -795,55 +795,55 @@ P2 -= gvdAngleGapCalcandDynamixelRad;
 ```
 
 > P1.fill, P2.fill input every joint’s position(rad) individually. Differences between DH Configuration’s point of origin and actual point of origin are taken into consideration so P1 and P2 are to be adjusted accordingly.
- 
+
 ```cpp
 ArmComm.Arm_Set_Position_PID_Gain(64, 0, 0);
 ```
 
 > Joint’s Position P, I, and D gain values.respectively.
- 
+
 ```cpp
 ArmComm.Arm_Set_JointVelocity(0);
 ```
 
 > Joint’s velocity value .0 denotes max velocity.
- 
+
 ```cpp
 ArmComm.Arm_Set_JointAcceleration(0);
 ```
 
 > Joint’s acceleration value .0 denotes max velocity.
- 
+
 ```cpp
 ArmTrajectory.ClearMF();
 ```
 
 > MotionProfile clears the set space..
- 
+
 ```cpp
 ArmTrajectory.Set_P2P(P1, P2, 10.0, 0.5);
 ```
 
 > Sets P1, P2(Start, EndPose). In this case P1 is 0.0 rad and P2 is 0.5 rad. Trajectory is from P1 to P2
- 
+
 ```cpp
 ArmTrajectory.Set_P2P(P2, P1, 10.0, 0.5);
 ```
 
 > Sets P1, P2(Start, EndPose). In this case P1 is 0.0 rad and P2 is 0.5 rad. Trajectory is from P2 to P1
- 
+
 ```cpp
 MotionPlayer.All_Info_Reload();
 ```
 
 > MotionProfile calls Info(Robot, Kinematics, Trajectory).
- 
+
 ```cpp
 MoionPlayer.Initialize();
 ```
 
 > MotionProfile, Step, are initialized.
- 
+
 ```cpp
 MotionPlayer.Set_Time_Period(DEFAULT_Ctrl_TIME_PERIOD);
 ```
@@ -856,7 +856,7 @@ MotionPlayer.Set_Time_Period(DEFAULT_Ctrl_TIME_PERIOD);
 {: .notice--warning}
 
 - Allows operation of end effector’s pose via position(X, Y, Z) and orientation(Roll, Pitch, Yaw). The keys for SimpleIK are q, w, e, r, t, y and a, s ,d ,f, g, h.
- 
+
 - EndEffector Pose table
 
 |Control EndEffector|Position -> +5mm<br />orientation -> +(3&pi;/180)rad|Position -> -5mm<br />orientation -> -(3&pi;/180)rad|
@@ -867,23 +867,23 @@ MotionPlayer.Set_Time_Period(DEFAULT_Ctrl_TIME_PERIOD);
 |Orientation Roll|r|f|
 |Orientation Pitch|t|g|
 |Orientation Yaw|y|h|
- 
+
 ### How to Use SimpleIK
 To start SimpleIK start a new project just like SimplePtoP. Then press the Ctrl + F5 ekys to begin.
 
 ![](/assets/images/platform/manipulator/manipulator_h_062.jpg)
- 
+
 In SimpleIK you will be asked for COM port and baud rate numbers. If succeeded you will see a 'Succeed to open USB2Dynamixel' followed by ‘Press any key to move first pose.' Press a key to begin.
 The arm moves to its initial pose as shown below.
 
 ![](/assets/images/platform/manipulator/manipulator_h_052.png)
 
 ![](/assets/images/platform/manipulator/manipulator_h_063.jpg)
- 
+
 This windows pops up after the arms moves to its initial pose. The values printed are the joints’ angles(rad). Press the keys(ex : q, w....) to move the end effector.
- 
+
 ![](/assets/images/platform/manipulator/manipulator_h_064.jpg)
- 
+
 SimpleIK q key control the 3rd value.  
 Q controls the end effector position (X) by increasing delta(5mm)amounts.  
 **Visually verify arm movement every time when changing position.**
@@ -938,33 +938,33 @@ if(temp == 'q')
 > The code shows that by pressing the q key the program runs. A press of q moves the end effector pose in the (X) coordinate by delta (5mm).  
 > If there are no errors the end effector will move according to keystroke. All joints are in radians.
 > Press the 'q‘ key to to goal pose by X position in delta incrememts.
-         
+
 Despite having errors and not being able to get the IK moving can be allowed. If 'Do you want make the Robot move? (Y/N)' appears onscreen press the y key to move the end
 effector in the X coordinate by +5mm. Then the joints pose(rad) are displayed.
- 
+
 **WARNING** : Product may go to pose fast after pressing the Y key posing a safety risk. When testing the example keep a safe distance while able to cut power off in case of undesired operation.
 {: .notice--warning}
- 
+
 When error is too large and IK is unrealizable 'No IK Solution‘ will be displayed the end effector will remain as is.
 The sample code from above is broken down below.
- 
+
 ```cpp
 ArmKinematics.ComputeIK(DesiredPose, &angle_rad, angle_rad, &ErrorStatus);
 ```
 
 All joints set to a desired pose by taking input from DesiredPose and angle_rad. Once DesiredPose values go to CurrentPose then the arm moves in X coordinate and DesirePose gets set again. angle_rad is CurrentPose’s consistent joints  angles. IK’s solution for desired pose joint angles and &angle_rad get set. &ErrorStatus is the error sent to Dynamixel.
- 
+
 ```cpp
 ArmComm.Arm_Set_JointPosition(RobotisArm.Rad2Value(angle_rad + gvdAngleGapCalcandDynamixelRad));
 ```
 
 > The ComputeIK function sets an array for joint position in &angle_rad.
- 
+
 ```cpp
 ArmKinematics.Forward(angle_rad, &CurrentPose);
 ```
 > Once moved to desired pose angle_rad(array) gets the end effector’s pose and runs forward kinematics; then CurrentPose sets the pose. This function returns the end effectors transform matric (4x4).
- 
+
 ```cpp
 else if(temp == 'r')
 {
@@ -1021,14 +1021,14 @@ The desired rotation matrix can then be obtain with the following
 ![](/assets/images/platform/manipulator/manipulator_h_066.gif)
 
 Where the code is shown below.
- 
+
 ```cpp
 matd DesiredRotation = Algebra::GetOrientationMatrix(delta_angle_rad, 0.0, 0.0)
   *Algebra::GetOrientationMatrix(CurrentPose.Roll, CurrentPose.Pitch, CurrentPose.Yaw);
 ```
 
 > The CurrentPose’s Orientation roll increase by delta_angle_rad GoalPose(DesiredRotation).
- 
+
 ```cpp
 vecd DesiredRPY = Algebra::GetEulerRollPitchYaw(DesiredRotation);
 ```
@@ -1038,23 +1038,23 @@ vecd DesiredRPY = Algebra::GetEulerRollPitchYaw(DesiredRotation);
 ## [SimpleTorqueFK](#simpletorquefk)
 
 Turns the Manipulator joints’ torque on/off. When torque goes off→on Forward Kinematics runs and putputs all joints pose(rad) and end effector’s position and orientation.
- 
+
 ### How to Use SimpleTorqueOnOffandFK
 To start SimpleTorqueOnOffandFK start a new project just like SimplePtoP. Then press the Ctrl+F5 keys to begin.SimpleTorqueOnOffandFK.
 
 ![](/assets/images/platform/manipulator/manipulator_h_067.jpg)
- 
+
 Input the COM port and baud rate numbers. If succeeded you will see a 'Succeed to open USB2Dynamixel;' then torque gets turned off.
 Press the Enter key turn torque on and the arm’s joints pose(rad) and end effector’s pose(rad) will be displayed (joints 1 through 6).
- 
+
 ![](/assets/images/platform/manipulator/manipulator_h_068.jpg)
 
 ![](/assets/images/platform/manipulator/manipulator_h_069.jpg)
 
 Press Enter again to turn torque off and it will display 'Torque Off.'
- 
+
 Press the Enter key once again to turn torque on and the values be displayed again.
- 
+
 ### SimpleTorqueOnOffandFK Source Description
 
 ```cpp
@@ -1103,11 +1103,11 @@ while(true)
 ```
 
 > The program aborts without starting by pressing the Esc key.
-          
+
 While the program is running press the Enter key to toggle torque between on and off. **When torque gets turned on the joints and end effector pose get outputted onscreen**. This happens with every “on” state.
- 
+
 Press the Esc key then Enter key and the arm remains as is.
- 
+
 The sample code from above is broken down below. The joint angles and Dynamixel angles may not be the same so it must be taken into consideration. **Angle of Dynamixel is the output of the actual angle of Dynamixel**.
 
 # [Manipulator SDK Programming](#manipulator-sdk-programming)
@@ -1117,7 +1117,7 @@ The sample code from above is broken down below. The joint angles and Dynamixel 
 ### RobotInfo
 When building Manipulator at ARM SDK, you may use the Addjoint function after generating Instance of RobotInfo Class.  
 AddJoint gets values from D-H Parameter and actuator’s max and min turn angle in rad and value as well as actuator ID number (min and max turn angles may not be the same as joint angle limits).
- 
+
 ### Kinematics
 Forward Kinematics(FK), Inverse Kinematics(IK) can be calculated once the instance for kinematics class is generated. Kinematics class get the instance from RobotInfo class.  
 ComputeIK’s factor’s the pose from end effector and joint values, as well as, initial joint angle and error for IK. The result is joint angles when the returned error status is not 0 then the IK is not properly solved.
@@ -1125,24 +1125,24 @@ ComputeIK’s factor’s the pose from end effector and joint values, as well as
 ![](/assets/images/platform/manipulator/manipulator_h_070.png)
 
 The Roll(&phi;), Pitch(&theta;) and Yaw(&psi;) are calculated as R<sub>x</sub>(&phi;), R<sub>y</sub>(&theta;), R<sub>z</sub>(&psi;) in the rotation transformation matrix. This is to be taken into consideration when entering the pose for ComputeIK.
- 
+
 ### Trajectory Generating
 The TrajectoryGenerator class generates an instance for the arm’s trajectory. The SDK’s  Point to Point, Linear, and Circular can generate a trajectory. For arm-only trajectory then only Set_PTP, Set_LIN, Set_Circular; for the gripper then Set_PTPwithHand, Set_LINwithHand, Set_CIRCwithHand.
- 
+
 ### Velocity Profile
 The SDK’s Velocity Profile does not take max velocity and max acceleration into consideration in the Trapezoidal Velocity Profile. The initial and final velocity are always set to 0. The following methods generate velocity profile in Joint Space and Cartesian Space, where both are independent of each other.
- 
+
 ![](/assets/images/platform/manipulator/manipulator_h_071.png)
- 
+
 ### Set_PTP
 The Set_PTP function determines 2 poses for the manipulator (initial and final) by factoring in Trapezoidal Velocity Profile and receives velocity time and total time. Initial and final pose are in rad and joint angle in mm or rad (x, y, z, roll, pitch, yaw). When generating the trajectory it is recommended to factor in joint angles.
- 
+
 ### Set_LIN
 The Set_LIN function generates a 3-point coordinates for the robot’s straight trajectory. This factors in initial and final pose for Linear Euler Interpolation for orientation.
- 
+
 ### Set_CIRC
 The Set_CIRC function generates a 3-point coordinates for the robot’s circular trajectory. This factors in initial and final pose. It sets a point of origin in the area and proceeds to trajectory via MotionPlay and vector generation.
- 
+
 ![](/assets/images/platform/manipulator/manipulator_h_072.png)
 
 ![](/assets/images/platform/manipulator/manipulator_h_073.png)
@@ -1152,7 +1152,7 @@ The Set_CIRC function generates a 3-point coordinates for the robot’s circular
 ### Trajectory Following
 When moving by the generated trajectory from TrajectorGenerator class’s instance just use NextStep function from MotionPlay. MotionPlay class accounts trajectoryGenerator class.  
 The control period from MotionPlay default value is 8ms but can be changed with SetTimePeriod. If TimePeriod is 0 then 8ms default value is applied.
- 
+
 ### Pro_Arm_Comm_Win
 Pro_Arm_Comm_Win utilizes DYNAMIXEL 2.0 Protocol from the Windows version of DYNAMIXEL SDK. Pro_Arm_Comm_Win’s functions utilizes DYNAMIXEL Pro’s control (i.e. read/write Control Table values).  
 This is useful when writing separate code.
@@ -1164,35 +1164,35 @@ This is useful when writing separate code.
 # [Firmware Recovery](#firmware-recovery)
 
 When Dynamixel detection fails ensure is properly wired. If problems persists **restore Dynamixel firmware** (shown below).
- 
+
 **WARNING** : After firmware restoration you will need to set ID and baud rate values again. Always make sure to set USB2Dynamixel switch to “485.”
 {: .notice--warning}
- 
+
 1. Restoring firmware
   - From Dynamixel Wizard click on the  icon to begin.
   - Select the corresponding COM port number for USB2Dynamixel.
 
     ![](/assets/images/platform/manipulator/manipulator_h_076.jpg)
- 
+
 2. Firmware restore process steps explained.
 
     ![](/assets/images/platform/manipulator/manipulator_h_077.jpg)
- 
+
 3. Always connect one Dynamixel at a time.
- 
+
     ![](/assets/images/platform/manipulator/manipulator_h_078.jpg)
- 
+
 4. Pick the COM port number
   - With an incorrect number Dynamixel cannot be automatically detected. Always make sure to get the port number right.
   - Click on Search.
 
     ![](/assets/images/platform/manipulator/manipulator_h_079.jpg)
- 
+
 5. Disconnect and connect Dynamixel
   - The Next button should become clickable
 
     ![](/assets/images/platform/manipulator/manipulator_h_080.jpg)
- 
+
 6. Upon successful detection the Next button is clickable
 
     ![](/assets/images/platform/manipulator/manipulator_h_081.jpg)
@@ -1201,16 +1201,16 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
   - Pick the right type from the list. If not it may result in problems
 
     ![](/assets/images/platform/manipulator/manipulator_h_082.jpg)
-    
+
     ![](/assets/images/platform/manipulator/manipulator_h_083.jpg)
-    
+
     ![](/assets/images/platform/manipulator/manipulator_h_084.jpg)
- 
+
 8. During restoration
   - While restoring, the LED will blink. Do not cut power off during this stage.
 
     ![](/assets/images/platform/manipulator/manipulator_h_085.jpg)
-    
+
     ![](/assets/images/platform/manipulator/manipulator_h_086.jpg)
 
 **All Control Table settings are set to default values.**
@@ -1260,7 +1260,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
 - Description
   - orientation(Roll, Pitch, Yaw) input
   - 3 x 3 orientation matrix output
- 
+
 ### static matd GetTransformMatrix(double Roll, double Pitch, double Yaw, double x, double y, double z)
 
 - Parameter
@@ -1271,7 +1271,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
 - Description
   - orientation(Roll, Pitch, Yaw), Position(X, Y, Z) input
   - 4 x 4 transform Matrix output
- 
+
 ### static vecd rot2omega(mat3d Rerr)
 
 - Parameter
@@ -1280,7 +1280,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
   - angular velocity array
 - Description
   - rotation matrix gets input and outputs velocity array
- 
+
 ### static vecd ConvertRad2Deg(vecd q)
 
 - Parameter
@@ -1289,7 +1289,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
   - Degree Array
 - Description
   - (rad) gets input, change to (value) and return
- 
+
 ### static vecd GetEulerRollPitchYaw(matd T)
 
 - Parameter
@@ -1318,7 +1318,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
   - Joints’ next and previous step large difference in angle(ARMSDK_TOO_MUCH_ANGLE_CHANGE 0x04)
   - Angle or not within JointData’s limit(ARMSDK_OUT_OF_JOINT_RANGE 0x08)
   The 5 types of ERROR
- 
+
 ### JointData.h
 
 #### void SetJointID(unsigned int ID)
@@ -1328,7 +1328,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
   - void
 - Description
   - Assign Joint ID
- 
+
 #### void SetJointAngle(double JointAngle);
 - Parameter
   - double JointAngle
@@ -1336,7 +1336,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
   - void
 - Description
   - Set Joint Angle
- 
+
 #### void SetMinAngleInRad(double MinAngleInRad);
 - Parameter
   - double MinAngleInRad
@@ -1345,7 +1345,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
 - Description
   - Set actuator min angle(rad)
   - Value utilized in 6.3 MotionEngine - iii) RobotInfo’s rad2value function
- 
+
 #### void SetMaxAngleInRad(double MaxAngleInRad);
 - Parameter
   - double MaxAngleInRad
@@ -1354,7 +1354,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
 - Description
   - Set actuator max angle(rad)
   - Value utilized in 6.3 MotionEngine - iii) RobotInfo’s rad2value function
- 
+
 #### void SetMinAngleInValue(int Min_AngleValue);
 - Parameter
   - int Min_AngleValue
@@ -1363,7 +1363,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
 - Description
   - Set actuator min value
   - utilized in 6.3 MotionEngine - iii) RobotInfo’s rad2value, value2rad functions
- 
+
 #### void SetMaxAngleInValue(int Max_AngleValue);
 - Parameter
   - int Max_AngleValue
@@ -1372,7 +1372,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
 - Description
   - Set actuator max value
   - Utilized in 6.3 MotionEngine - iii) RobotInfo’s rad2value, value2rad functions
- 
+
 #### void SetMinAngleLimitInRad(double MinAngleLimitInRad);
 - Parameter
   - double MinAngleLimitInRad
@@ -1381,7 +1381,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
 - Description
   - Set joint min angle(rad)
   - Also sets the value
- 
+
 #### void SetMaxAngleLimitInRad(double MaxAngleLimitInRad);
 - Parameter
   - double MaxAngleLimitInRad
@@ -1390,7 +1390,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
 - Description
   - Set joint max angle(rad)
   - Also sets the value
- 
+
 #### unsigned int GetID(void);
 - Parameter
   - void
@@ -1398,7 +1398,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
   - unsigned int (ID)
 - Description
   - Returns joint ID (number)
- 
+
 #### void SetJointDataDH(double LinkLength, double LinkTwist, double JointOffset, double JointAngle);
 - Parameter
   - double LinkLength, double LinkTwist
@@ -1407,7 +1407,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
   - void
 - Description
   - Set Manipulator’s joint DH parameters in DH Configuration
- 
+
 #### double GetJointAngle(void);
 - Parameter
   - void
@@ -1415,7 +1415,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
   - double current Angle
 - Description
   - Returns joint angle limit(rad)
- 
+
 #### double GetMinAngleInRad(void);
 - Parameter
   - void
@@ -1423,7 +1423,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
   - MinAngle(rad) of Actuator
 - Description
   - SetMinAngleInRad returns actuator min angle(rad)
- 
+
 #### double GetMaxAngleInRad(void);
 - Parameter
   - void
@@ -1431,7 +1431,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
   - MaxAngle(rad) of Actuator
 - Description
   - SetMaxAngleInRad returns actuator max angle(rad)
- 
+
 #### int GetMinAngleInValue(void);
 - Parameter
   - void
@@ -1439,7 +1439,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
   - MinAngle(value) of Actuator
 - Description
   - SetMinAngleInValue returns actuator min angle(value)
- 
+
 #### int GetMaxAngleInValue(void);
 - Parameter
   - void
@@ -1447,7 +1447,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
   - MaxAngle(value) of Actuator
 - Description
   - SetMaxAngleInValue returns actuator max angle(value)
- 
+
 #### double GetMinAngleLimitInRad(void);
 - Parameter
   - void
@@ -1455,7 +1455,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
   - MinAngle(rad) of Joint
 - Description
   - SetMinAngleLimitInRad returns joint min angle(rad)
- 
+
 #### double GetMaxAngleLimitInRad(void);
 - Parameter
   - void
@@ -1463,7 +1463,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
   - MaxAngle(rad) of Joint
 - Description
   - SetMaxAngleLimitInRad returns joint max angle(rad)
- 
+
 #### int GetMinAngleLimitInValue(void);
 - Parameter
   - void
@@ -1471,7 +1471,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
   - MinAngle(value) of Joint
 - Description
   - SetMinAngleLimitInRad returns joint min angle(value)
- 
+
 #### int GetMaxAngleLimitInValue(void);
 - Parameter
   - void
@@ -1479,7 +1479,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
   - MaxAngle(value) of Joint
 - Description
   - SetMaxAngleLimitInRad returns joint max angle(value)
- 
+
 #### matd GetTransformMatirx(void);
 - Parameter
   - void
@@ -1487,7 +1487,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
   - matd TransformMatrix of each Link
 - Description
   - Returns transform matrix for each link
- 
+
 ### RobotInfo.h
 #### int AddJoint (double LinkLength, double LinkTwist, double JointOffset, double JointAngle, double MaxAngleInRad, double MinAngleInRad, int MaxAngleValue , int MinAngleValue, double MaxAngleLimitInRad, double MinAngleLimitInRad, unsigned int Dynamixel_ID);
 - Parameter
@@ -1504,7 +1504,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
   - Sets joint’s DH-Parameter and Joint-Parameter values
   - Error of 0 is no error and 1 when there is error.
   - Error happens when min value is greater than max value
- 
+
 #### JointData GetJointInfo(int joint_number);
 - Parameter
   - int Joint_number
@@ -1512,7 +1512,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
   - JointData
 - Description
   - Returns JointData from AddJoint
- 
+
 #### std::vector<JointData>* GetRobotInfo(void);
 - Parameter
   - JointData
@@ -1520,7 +1520,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
   - address of robotInfo
 - Description
   - Returns address values from RobotInfomation
- 
+
 #### void ClearRobotInfo(void);
 - Parameter
   - void
@@ -1528,7 +1528,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
   - void
 - Description
   - Clears out RobotInfo
- 
+
 #### veci GetArmIDList(void);
 - Parameter
   - void
@@ -1536,7 +1536,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
   - ID List of Robot Actuators
 - Description
   - Returns joint ID in aray form inAddJoint
- 
+
 #### veci Rad2Value(vecd q);
 - Parameter
   - double array of Actuators Angle(Rad)
@@ -1544,7 +1544,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
   - int array of Actuators Angle(Value)
 - Description
   - Transforms joint’s rad to value.
- 
+
 #### vecd Value2Rad(veci q);
 - Parameter
   - int array of Actuators Angle(Value)
@@ -1552,7 +1552,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
   - double array of Actuators Angle(Rad)
 - Description
   - Transforms joint’s value to rad.
- 
+
 ### Kinematics.h
 
 #### void RobotInfoReload(void);
@@ -1562,7 +1562,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
   - void
 - Description
   - Calls RobotInfo
- 
+
 #### matd Forward(vecd angle);
 - Parameter
   - Angle of All Joints(rad)
@@ -1570,7 +1570,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
   - 4x4 TransformMatrix form
 - Description
   - RobotInfoReload calls joints angles runs FK and returns end effector’s transformation matrix
- 
+
 #### matd Forward(vecd angle, Pose3D *pose);
 - Parameter
   - Angle of All Joints(rad)
@@ -1578,7 +1578,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
   - 4x4 EndEffector's TransformMatrix form
 - Description
   - RobotInfoReload calls joint angles runs FK and returns end effector’s transformation matrix. It also sets pose pointer (*pose)
- 
+
 #### void SetMaximumNumberOfIterationsForIK(unsigned int max_num);
 - Parameter
   - unsigned int max_num for IK
@@ -1586,7 +1586,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
   - void
 - Description
   - Sets IK’s number of iterations for solution
- 
+
 #### void SetConvergenceCondition(double max_error, double max_acceptable_error);
 - Parameter
   - double max_error, double max_acceptable_error
@@ -1596,7 +1596,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
   - IK’s amount of telorable error.
   - The first input value is max convergence error. A lesser value than max can allow solution.
   - The second value is max allowable error; acceptable as long as is lower than value entered. When value exceeds then there is no solution..
- 
+
 #### matd Jacobian(void);
 - Parameter
   - void
@@ -1604,7 +1604,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
   - Matrix of Jacobian
 - Description
   - Returns jacobian for IK solution
- 
+
 #### vecd CalcError(Pose3D _desired, matd _current);
 - Parameter
   - Pose3D goalPose, TransformMatrix of EndEffector
@@ -1612,7 +1612,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
   - Error between Goal and Currnet Pose
 - Description
   - Compares end effector’s goal pose and current pose
- 
+
 #### void ComputeIK(Pose3D _desired , vecd *q_rad, vecd Initangle_rad, int *ErrorStatus);
 - Parameter
   - Pose3D goalPose, vecd initangle, int ErrorStatus
@@ -1629,7 +1629,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
     2. No solution from IK(ARMSDK_NO_IK_SOLUTION 0x01)
     3. no solution from IK, allowable error(ARMSDK_ACCEPTABLE_ERROR 0x02)
     4. joint angles exceed JointData’s set angles(ARMSDK_OUT_OFF_JOINT_RANGE 0x08)
- 
+
 ### TrajectoryGenerator.h
 
 #### void KinematicsInfoReload(void);
@@ -1639,7 +1639,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
   - void
 - Description
   - Calls Kinematics info
- 
+
 #### void Set_P2P(vecd StartPose, vecd EndPose, double TotalTime, double AccelTime);
 - Parameter
   - vecd StartPose / vecd EndPose
@@ -1648,7 +1648,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
   - void
 - Description
   - sets P2P trajectory fromStartPose, EndPose, TotalTime, AccelTime
- 
+
 #### void Set_P2P(Pose3D StartPose, Pose3D EndPose, double TotalTime, double AccelTime);
 - Parameter
   - Pose3D StartPose / Pose3D EndPose
@@ -1657,7 +1657,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
   - void
 - Description
   - Sets P2P trajectory from StartPose, EndPose, TotalTime, AccelTime
- 
+
 #### void Set_LIN(vecd StartPose, vecd EndPose, double TotalTime, double AccelTime);
 - Parameter
   - vecd StartPose / vecd EndPose
@@ -1666,7 +1666,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
   - void
 - Description
   - Sets linear trajectory from StartPose, EndPose, TotalTime, AccelTime
- 
+
 #### void Set_LIN(Pose3D StartPose, Pose3D EndPose, double TotalTime, double AccelTime);
 - Parameter
   - Pose3D StartPose / Pose3D EndPose
@@ -1675,7 +1675,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
   - void
 - Description
   - Sets linear trajectory from StartPose, EndPose, TotalTime, AccelTime
- 
+
 #### void Set_CIRC(vecd StartPose, vecd ViaPose, vecd EndPose, double TotalTime, double AccelTime);
 - Parameter
   - vecd StartPose / vecd ViaPose / vecd EndPose
@@ -1684,7 +1684,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
   - void
 - Description
   - Sets circular trajectory from StartPose, ViaPose, EndPose, TotalTime, AccelTime.
- 
+
 #### void Set_CIRC(Pose3D StartPose, Pose3D ViaPose, Pose3D EndPose, double TotalTime, double AccelTime);
 - Parameter
   - Pose3D StartPose / Pose3D EndPose
@@ -1693,7 +1693,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
   - void
 - Description
   - Sets circular trajectory fom StartPose, ViaPose, EndPose, TotalTime, AccelTime
- 
+
 #### void Set_P2PwithHand(vecd StartPose, vecd EndPose, veci Hand1, veci Hand2, double TotalTime, double AccelTime);
 - Parameter
   - vecd StartPose / vecd EndPose
@@ -1703,7 +1703,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
   - void
 - Description
   - Sets P2P trajectory from StartPose, EndPose, Start HandPose, End HandPose, TotalTime, AccelTime
- 
+
 #### void Set_P2PwithHand(Pose3D StartPose, Pose3D EndPose, veci Hand1, veci Hand2, double TotalTime, double AccelTime);
 - Parameter
   - Pose3D StartPose / Pose3D EndPose
@@ -1713,7 +1713,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
   - void
 - Description
   - Sets P2P trajectory from StartPose, EndPose, Start HandPose, End HandPose, TotalTime, AccelTime
- 
+
 #### void Set_LINwithHand(vecd StartPose, vecd EndPose, veci Hand1, veci Hand2, double TotalTime, double AccelTime);
 - Parameter
   - vecd StartPose / vecd EndPose
@@ -1723,7 +1723,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
   - void
 - Description
   - Sets linear trajectory from StartPose, EndPose, Start HandPose, End HandPose, TotalTime, AccelTime.
- 
+
 #### void Set_LINwithHand(Pose3D StartPose, Pose3D EndPose, veci Hand1, veci Hand2, double TotalTime, double AccelTime);
 - Parameter
   - Pose3D StartPose / Pose3D EndPose
@@ -1733,7 +1733,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
   - void
 - Description
   - Sets linear trajectory from StartPose, EndPose, Start HandPose, End HandPose, TotalTime, AccelTime
- 
+
 #### void Set_CIRCwithHand(vecd StartPose, vecd ViaPose, vecd EndPose, veci Hand1, veci Hand2, double TotalTime, double AccelTime);
 - Parameter
   - vecd StartPose / vecd EndPose / vecd ViaPose
@@ -1743,7 +1743,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
   - void
 - Description
   - Sets circular trajectory from StartPose, ViaPose, EndPose, Start HandPose, End HandPose, TotalTime, AccelTime
- 
+
 #### void Set_CIRCwithHand(Pose3D StartPose, Pose3D ViaPose, Pose3D EndPose, veci Hand1, veci Hand2, double TotalTime, double AccelTime);
 - Parameter
   - Pose3D StartPose / Pose3D ViaPose / Pose3D EndPose
@@ -1753,7 +1753,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
   - void
 - Description
   - Sets circular trajectory from StartPose, ViaPose, EndPose, Start HandPose, End HandPose, TotalTime, AccelTime
- 
+
 #### void ClearMF(void)
 - Parameter
   - void
@@ -1761,7 +1761,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
   - void
 - Description
   - Clears out motion profile
- 
+
 #### double GetMotionTotalTime(void)
 - Parameter
   - void
@@ -1769,7 +1769,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
   - TotalTime in sec
 - Description
   - Returns motion run time
- 
+
 ### MotionPlay.h
 
 #### void All_Info_Reload(void);
@@ -1779,7 +1779,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
   - void
 - Description
   - Calls motion’s Info(RobotInfo, Kinematics, Trajectory)
- 
+
 #### void initialize(void)
 - Parameter
   - void
@@ -1787,7 +1787,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
   - void
 - Description
   - Initializes motion profile, done time, step, current time
- 
+
 #### void Set_Time_Period(int MilliSecond)
 - Parameter
   - int MilliSecond
@@ -1795,7 +1795,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
   - void
 - Description
   - Provides period time for motion
- 
+
 #### vecd NextStepAtTime(double CurrentTime, int *ErrorStatus)
 - Parameter
   - double CurrentTime
@@ -1805,7 +1805,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
 - Description
   - Returns next Goal Joint Angle array
   - ErrorStatus is pointer for error type
- 
+
 #### veci NextStepAtTimeforHand(double CurrentTime)
 - Parameter
   - CurrentTime - current time in sec
@@ -1827,7 +1827,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
     2. No solution from IK(ARMSDK_NO_IK_SOLUTION 0x01)
     3. no solution from IK, allowable error(ARMSDK_ACCEPTABLE_ERROR 0x02)
     4. joint angles exceed JointData’s set angles(ARMSDK_OUT_OFF_JOINT_RANGE 0x08)
- 
+
 #### vecd NextStep(int* ErrorStatus)
 - Parameter
   - ErrorStatus
@@ -1836,7 +1836,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
 - Description
   - Returns next motion’s joint angles
   - ErrorStatus is pointer for error type
- 
+
 #### veci NextStepforHand(void)
 - Parameter
   - void
@@ -1844,7 +1844,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
   - Angle Value array of Fingers for next step
 - Description
   - Returns hand’s next motion position
- 
+
 #### vecd GetCurrentAngle(void);
 - Parameter
   - void
@@ -1860,7 +1860,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
   - Pose3D of EndEffector
 - Description
   - Returns end effector’s current pose
- 
+
 #### double Get_CurrentTime(void);
 - Parameter
   - void
@@ -1880,7 +1880,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
   - void
 - Description
   - Sets Dynamixel comms from portnum and baudnum
- 
+
 #### int DXL_Open();
 - Parameter
   - void
@@ -1888,7 +1888,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
   - void
 - Description
   - Opens/access comms to DYNAMIXEL_Set_Init_Param
- 
+
 #### SerialPort* DXL_Get_Port(void);
 - Parameter
   - void
@@ -1896,7 +1896,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
   - PortNumber
 - Description
   - Returns SerialPort pointer address
- 
+
 #### void DXL_Close(void);
 - Parameter
   - void
@@ -1904,7 +1904,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
   - void
 - Description
   - End communications with Dynamixel
- 
+
 #### void Arm_ID_Setup(veci Arm_ID_LIST);
 - Parameter
   - array of ID List
@@ -1912,7 +1912,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
   - void
 - Description
   - Sets arm’s ID list
- 
+
 #### int Arm_Torque_On(void);
 - Parameter
   - void
@@ -1921,7 +1921,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
 - Description
   - Turn torque on every joint
   - COMM_RXSUCCESS return of 1
- 
+
 #### int Arm_Torque_Off(void);
 - Parameter
   - void
@@ -1930,7 +1930,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
 - Description
   - Turns torque off on every joint
   - COMM_RXSUCCESS return of 1
- 
+
 #### int Arm_Set_JointPosition(veci position);
 - Parameter
   - joint angle array
@@ -1939,7 +1939,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
 - Description
   - Sets joint angles
   - COMM_RXSUCCESS return of 1
- 
+
 #### int Arm_Set_JointVelocity(veci velocity);
 - Parameter
   - int joint velocity array
@@ -1948,7 +1948,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
 - Description
   - Sets joint valocities
   - COMM_RXSUCCESS return of 1
- 
+
 #### int Arm_Set_JointVelocity(int velocity);
 - Parameter
   - int joint velocity
@@ -1957,7 +1957,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
 - Description
   - Sets joint velocities
   - COMM_RXSUCCESS return of 1
- 
+
 #### int Arm_Set_JointAcceleration(veci accel);
 - Parameter
   - int joint Acceleration array
@@ -1966,7 +1966,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
 - Description
   - Sets joint accelerations
   - COMM_RXSUCCESS return of 1
- 
+
 #### int Arm_Set_JointAcceleration(int accel);
 - Parameter
   - int joint Acceleration
@@ -1975,7 +1975,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
 - Description
   - Sets joint accelerations
   - COMM_RXSUCCESS return of 1
- 
+
 #### int Arm_Set_Position_PID_Gain(int P_Gain, int I_Gain, int D_Gain);
 - Parameter
   - int joint Position P, I, D gain
@@ -1984,7 +1984,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
 - Description
   - Sets joints’ PID gain values
   - COMM_RXSUCCESS return of 1
- 
+
 #### int Arm_Set_Position_PID_Gain(int id, int P_Gain, int I_Gain, int D_Gain, int* ErrorStatus);
 - Parameter
   - int id, int joint Position P, I, D gain
@@ -1994,7 +1994,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
   - Sets joints’ PID gain values
   - ErrorStatus is error pointer
   - COMM_RXSUCCESS return of 1
- 
+
 #### int Arm_Get_JointPosition(veci *position);
 - Parameter
   - joint position array
@@ -2003,7 +2003,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
 - Description
   - Access position array and gets joint positions
   - COMM_RXSUCCESS return of 1
- 
+
 #### int Arm_Get_JointCurrent(veci *torque);
 - Parameter
   - joint current array
@@ -2012,7 +2012,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
 - Description
   - Reads joint’s electrical current flow and saves in (*torque) return pointer
   - COMM_RXSUCCESS return of 1
- 
+
 #### int Arm_LED_On(void);
 - Parameter
   - void
@@ -2021,7 +2021,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
 - Description
   - Turns joints’ LED on
   - COMM_RXSUCCESS return of 1
- 
+
 #### int Arm_LED_Off(void);
 - Parameter
   - void
@@ -2030,7 +2030,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
 - Description
   - Turns joints’ LED off
   - COMM_RXSUCCESS return of 1
- 
+
 #### int Arm_LED_On(int r, int g, int b);
 - Parameter
   - int r, int g, int b
@@ -2040,7 +2040,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
   - Controls DYNAMIXEL Pro’s RGB LED
   - r, g, b, rage is 0~255 each
   - COMM_RXSUCCESS return of 1
- 
+
 #### int Arm_Red_LED_On(void);
 #### int Arm_Green_LED_On(void);
 #### int Arm_Blue_LED_On(void);
@@ -2053,7 +2053,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
   - turns joints’ LED on to green(Arm_Green_LED_On)
   - turns joints’ LED on to blue(Arm_Blue_LED_On)
   - COMM_RXSUCCESS return of 1
- 
+
 #### void Gripper_ID_Setup(veci Gripper_ID_List);
 - Parameter
   - ID array
@@ -2061,7 +2061,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
   - void
 - Description
   - Sets ID for gripper.
- 
+
 #### int Gripper_Ping(void);
 - Parameter
   - void
@@ -2070,7 +2070,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
 - Description
   - Pings comm to gripperGripper
   - COMM_RXSUCCESS return of 1
- 
+
 #### int Gripper_Torque_On(void);
 - Parameter
   - void
@@ -2079,7 +2079,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
 - Description
   - Turns gripper torque on
   - COMM_RXSUCCESS return of 1
- 
+
 #### int Gripper_Torque_Off(void);
 - Parameter
   - void
@@ -2088,7 +2088,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
 - Description
   - Turns gripper torque off
   - COMM_RXSUCCESS return of 1
- 
+
 #### int Gripper_Get_Joint_Value(veci *value);
 - Parameter
   - Joint value array stored in address
@@ -2097,7 +2097,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
 - Description
   - Access gripper’s angles from stored address
   - COMM_RXSUCCESS return of 1
- 
+
 #### int Gripper_Set_Joint_Value(veci value);
 - Parameter
   - Joint value array
@@ -2112,7 +2112,7 @@ When Dynamixel detection fails ensure is properly wired. If problems persists **
 ### MotionTimer.h
 
 time measurement fromQueryPerformanceCounter
- 
+
 #### void Start(void)
 - Parameter
   - void
@@ -2120,7 +2120,7 @@ time measurement fromQueryPerformanceCounter
   - void
 - Description
   - Sets start time
- 
+
 #### void Stop(void)
 - Parameter
   - void
@@ -2128,7 +2128,7 @@ time measurement fromQueryPerformanceCounter
   - void
 - Description
   - Stops time measurement
- 
+
 #### double GetElapsedTime(void)
 - Parameter
   - void
@@ -2136,7 +2136,7 @@ time measurement fromQueryPerformanceCounter
   - ElapsedTime in milliseconds
 - Description
   - Returns time from start to stop
- 
+
 #### void Wait(double millisec)
 - Parameter
   - millisecond - waiting time in milliseconds you want
@@ -2152,7 +2152,7 @@ time measurement fromQueryPerformanceCounter
 ![](/assets/images/platform/manipulator/manipulator_h_087.jpg)
 
 Total Mass : 5,551g
- 
+
 ### Link 1
 
 ![](/assets/images/platform/manipulator/manipulator_h_088.jpg)
@@ -2170,7 +2170,7 @@ Total Mass : 5,551g
   - I1 : 4.4998065e+05
   - I2 : 1.4876155e+06
   - I3 : 1.4957303e+06
- 
+
 ### Link 2
 
 ![](/assets/images/platform/manipulator/manipulator_h_089.jpg)
@@ -2188,7 +2188,7 @@ Total Mass : 5,551g
   - I1 : 1.7653895e+06
   - I2 : 1.0017530e+07
   - I3 : 1.0815789e+07
- 
+
 ### Link 3
 
 ![](/assets/images/platform/manipulator/manipulator_h_090.jpg)
@@ -2206,7 +2206,7 @@ Total Mass : 5,551g
   - I1 : 9.2282696e+05
   - I2 : 2.9201652e+06
   - I3 : 3.1322745e+06
- 
+
 ### Link 4
 
 ![](/assets/images/platform/manipulator/manipulator_h_091.jpg)
@@ -2224,8 +2224,8 @@ Total Mass : 5,551g
   - I1 : 2.3531708e+05
   - I2 : 2.9672886e+05
   - I3 : 3.9670487e+05
-   
-### Link 5 
+
+### Link 5
 
 ![](/assets/images/platform/manipulator/manipulator_h_092.jpg)
 
