@@ -66,19 +66,19 @@ Information appearing in a CAUTION concerns the protection of personnel and equi
 
 ## [Package Contents](#package-contents)
 
-|Name|Quantity|
-|:---:|:---:|
-|Manipulator|1|
-|USB2Dyanmixel|1|
-|4P Cable(500mm)|2|
-|Power Cable(1,200mm)|2|
-|4P expansion hub|1|
-|Power expansion hub|1|
-|Gripper(optional)|1|
-|Support(optional)|2|
-|Base Plate(optional)|1|
-|3x8 wrench bolt|20|
-|3x12 wrench bolt|20|
+|                                                   Item                                                   | Quantity |
+|:--------------------------------------------------------------------------------------------------------:|:--------:|
+|                                               Manipulator                                                |    1     |
+|                                                   U2D2                                                   |    1     |
+|                                             4P Cable(500mm)                                              |    2     |
+|                                           Power Cable(1,200mm)                                           |    2     |
+|                                             4P expansion hub                                             |    1     |
+|                                           Power expansion hub                                            |    1     |
+|                                            Gripper(optional)                                             |    1     |
+|   [Angle Frame(optional)](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2538&GC=GD070002)    |    2     |
+| [Base Plate Frame(optional)](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2538&GC=GD070002) |    1     |
+|                                             3x8 wrench bolt                                              |    20    |
+|                                             3x12 wrench bolt                                             |    20    |
 
 ## [Layout](#layout)
 
