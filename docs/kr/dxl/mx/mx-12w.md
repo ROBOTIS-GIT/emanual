@@ -9,6 +9,7 @@ permalink: /docs/kr/dxl/mx/mx-12w/
 sidebar:
   title: MX-12W
   nav: "mx-12w"
+product_group: dxl_mx
 ---
 
 ![](/assets/images/dxl/mx/mx-12_product.jpg)
