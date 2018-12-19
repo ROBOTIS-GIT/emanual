@@ -59,10 +59,10 @@ $ pluma ~/catkin_ws/src/turtlebot3/turtlebot3_bringup/launch/turtlebot3_lidar.la
 
 ![](/assets/images/platform/turtlebot3/application/odom.png)
 
-**NOTE**: Turtlebot Follower Demo requires scikit-learn, NumPy and ScyPy packages.
+**NOTE**: Turtlebot Follower Demo requires `scikit-learn`, `NumPy` and `ScyPy` packages.
 {: .notice--info}
 
-**[Remote PC]** Install scikit-learn, NumPy and ScyPy packages with below commands.
+**[Remote PC]** Install `scikit-learn`, `NumPy` and `ScyPy` packages with below commands.
 
 ``` bash
 $ sudo apt-get install python-pip
@@ -369,7 +369,7 @@ To use this setup, each turtlebot3 makes map using SLAM and these maps are merge
 
 **[TurtleBot]** Burn specific raspbian image to your microSD card(>8GB).
 
-  - [Image download](http://www.robotis.com/service/download.php?no=774)
+  - Image download (The image is **not available** now. Please refer to "[How to set sbc for turtlebot3 with ros2]{: .popup}".)
 
 After unzip downloaded image, burn the image to your microSD card(>8GB) by using `gnome-disks`.
 If you succeeded to burn, insert it in your Raspberry Pi 3 and boot raspbian. 
@@ -392,7 +392,7 @@ $ cd ./opencr_update
 $ ./update.sh $OPENCR_PORT $OPENCR_MODEL.opencr
 ```
 
-If it succeeded, you can check below texts in your terminal
+If uploading the firmware succeeds, below message will be displayed in the terminal.
 
 ```bash
 armv7l
@@ -420,8 +420,8 @@ opencr_ld_main
 
 ![](/assets/images/parts/controller/opencr10/bootloader_19.png)
 
-**[Remote PC]** Install ROS2 Bouncy
-  - [ROS2 Installation](https://github.com/ros2/ros2/wiki/Linux-Development-Setup)
+**[Remote PC]** Install ROS2
+  - [ROS2 Installation](https://index.ros.org/doc/ros2/Installation/)
 
 **[Remote PC]** Add source to bashrc file
 
@@ -453,11 +453,17 @@ $ mkdir -p ~/turtlebot3_ws/src
 $ cd ~/turtlebot3_ws/src
 $ git clone -b ros2 https://github.com/ROBOTIS-GIT/turtlebot3.git
 $ git clone -b ros2 https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
+$ cd ~/turtlebot3_ws && colcon build
+```
+
+**WARNING** : Below Catrographer dependent packages are not supported yet. Install below packages at your own risk.
+{: .notice--warning}
+
+```bash
 $ git clone -b release-latest https://github.com/ros2/cartographer.git
 $ git clone -b release-latest https://github.com/ros2/cartographer_ros.git
 $ git clone https://github.com/ros2/pcl_conversions.git
 $ sudo apt install libpcl-conversions-dev libpcl-dev
-$ cd ~/turtlebot3_ws && colcon build
 ```
 
 **[Remote PC]** Add source to bashrc file
@@ -489,18 +495,18 @@ $ sudo apt-get install ntpdate
 $ sudo ntpdate ntp.ubuntu.com
 ```
 
-**[TurtleBot]** Run MicroRTPSAgent for OpenCR
+**[TurtleBot]** Run Micro-XRCE-DDS Agent for OpenCR
 
 ```bash
 $ cd ~/turtlebot3
-$ MicroRTPSAgent serial /dev/ttyACM0
+$ MicroXRCEAgent serial /dev/ttyACM0
 ```
 
-**[TurtleBot]** Run MicroRTPSAgent for Lidar
+**[TurtleBot]** Run Micro-XRCE-DDS Agent for Lidar
 
 ```bash
 $ cd ~/turtlebot3
-$ MicroRTPSAgent udp 2018
+$ MicroXRCEAgent udp 2018
 ```
 
 **[TurtleBot]** Run Lidar application
@@ -597,9 +603,24 @@ space key, s : force stop
 CTRL-C to quit
 ```
 
+### Run Rviz2
+
+**[Remote PC]** Run Rviz2
+
+```bash
+$ rviz2
+```
+
+ - Select `File` > `Open config`.
+ - Open **model.rviz** in "~/turtlebot3_ws/src/turtlebot3/turtlebot3_description/rviz" directory.
+ - Test TB3 using turtlebot3_teleop_key node above.
+
 ![](/assets/images/platform/turtlebot3/application/teleop.png)
 
 ### Launch Cartographer
+
+**WARNING**: Cartographer is **not supported** yet.
+{: .notice--danger}
 
 **[TurtleBot, RemotePC]** Sync time between TurtleBot and RemotePC
 
