@@ -9,6 +9,7 @@ permalink: /docs/en/platform/rh_p12_rn/
 sidebar:
   title: RH-P12-RN
   nav: "rh_p12_rn"
+product_group: dxl_pro
 ---
 
 # [Introduction](#introduction)
@@ -45,7 +46,7 @@ sidebar:
 | Standby Current        | 30mA                                                                                           |
 | Peak Current           | 3.33A                                                                                          |
 
-{% include en/dxl/control_table_protocol2.md %}
+{% include en/dxl/control_table.md %}
 
 ## [Control Table of EEPROM Area](#control-table-of-eeprom-area)
 

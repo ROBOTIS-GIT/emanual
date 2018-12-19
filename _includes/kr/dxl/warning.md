@@ -10,17 +10,17 @@
 {% endcapture %}
 <div class="notice--danger">{{ dxl_danger | markdownify }}</div>
 
-{% if page.ref contains 'ax' or page.ref contains 'dx' or page.ref contains 'ex' or page.ref contains 'rx' %}
+{% if page.product_group=='dxl_ax' or page.product_group=='dxl_dx' or page.product_group=='dxl_ex' or page.product_group=='dxl_rx' %}
   {% assign target_file = 'dxl_info' %}
-{% elsif page.ref contains 'mx' %}
+{% elsif page.product_group=='dxl_mx' %}
   {% assign target_file = 'dxl_mx_info' %}
-{% elsif page.ref contains 'h54p' or page.ref contains 'h42p' %}
+{% elsif page.product_group=='dxl_pro_plus' %}
   {% assign target_file = 'dxl_pro_plus_info' %}
-{% elsif page.ref contains 'ra' %}
+{% elsif page.product_group=='dxl_pro_a' %}
   {% assign target_file = 'dxl_proa_info' %}
-{% elsif page.ref contains '-s' %}
+{% elsif page.product_group=='dxl_pro' %}
   {% assign target_file = 'dxl_pro_info' %}
-{% elsif page.ref contains 'xl' or page.ref contains 'xm' or page.ref contains 'xh' %}
+{% elsif page.product_group=='dxl_x' or page.product_group=='dxl_xl320' %}
   {% assign target_file = 'dxl_x_info' %}
 {% else %}
 {% endif %}

@@ -3,12 +3,13 @@ layout: archive
 lang: en
 ref: rh_p12_rna
 read_time: true
-share: true
+share: false
 author_profile: false
 permalink: /docs/en/platform/rh_p12_rna/
 sidebar:
   title: RH-P12-RN(A)
   nav: "rh_p12_rna"
+product_group: dxl_pro_a
 ---
 
 # [Introduction](#introduction)
@@ -46,7 +47,7 @@ sidebar:
 
 {% include en/dxl/warning.md %}
 
-{% include en/dxl/pro_plus/control_table.md %}
+{% include en/dxl/control_table.md %}
 
 ## [Control Table of EEPROM Area](#control-table-of-eeprom-area)
 

@@ -9,6 +9,7 @@ permalink: /docs/kr/dxl/ax/ax-12w/
 sidebar:
   title: AX-12W
   nav: "ax-12w"
+product_group: dxl_ax
 ---
 
 ![](/assets/images/dxl/ax/ax-12w_product.jpg)
@@ -40,7 +41,7 @@ sidebar:
 
 {% include kr/dxl/warning.md %}
 
-{% include kr/dxl/control_table_protocol1.md %}
+{% include kr/dxl/control_table.md %}
 
 
 ## [EEPROM 영역](#eeprom-영역)

@@ -14,11 +14,17 @@ layout: default
   {% endunless %}
 {% endif %}
 
+{% if page.share== false %}
+<div class="unshared_content" style="position:fixed; top:30%; z-index:10; text-align:center; width:100%">
+  <font style="color:#f96f6f; font-size:3rem;">Preliminary Contents</font>
+</div>
+{% endif %}
+
 <div id="main" role="main">
   <button class="nav_button" id="nav_button" onclick="extendnav()">{% if page.lang=='kr' %}목차{% else %}ToC{% endif %}</button>
   <a href="#"><button class="backtotop" id="backtotop">&#9650;<br />{% if page.lang=='kr' %}처음{% else %}TOP{% endif %}</button></a>
   <div class="sidebar__left" id="sidebar__left">
-  {% if page.sidebar %}
+  {% if page.sidebar %} 
     {% if page.sidebar.nav %}
       {% include nav_list nav=page.sidebar.nav %}
     {% endif %}
