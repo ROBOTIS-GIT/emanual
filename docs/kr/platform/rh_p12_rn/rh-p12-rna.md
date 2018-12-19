@@ -3,7 +3,7 @@ layout: archive
 lang: kr
 ref: rh_p12_rna
 read_time: true
-share: true
+share: false
 author_profile: false
 permalink: /docs/kr/platform/rh_p12_rna/
 sidebar:
@@ -46,7 +46,7 @@ sidebar:
 
 {% include kr/dxl/warning.md %}
 
-{% include kr/dxl/pro_plus/control_table.md %}
+{% include kr/dxl/control_table.md %}
 
 ## [EEPROM 영역](#eeprom-영역)
 

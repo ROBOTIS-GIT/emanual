@@ -39,7 +39,7 @@ product_group: dxl_mx
 
 {% include en/dxl/warning.md %}
 
-{% include en/dxl/control_table_protocol1.md %}
+{% include en/dxl/control_table.md %}
 
 ## [Control Table of EEPROM Area](#control-table-of-eeprom-area)
 
