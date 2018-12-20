@@ -14,7 +14,7 @@ Please refer to [this link](https://micro-xrce-dds.readthedocs.io/en/latest/inst
 
   ```bash
   $ cd && git clone https://github.com/eProsima/Micro-XRCE-DDS-Agent.git
-  $ cd Micro-XRCE-DDS-Agent && git checkout tags/v1.0.1
+  $ cd Micro-XRCE-DDS-Agent && git checkout 61dc6abdc260fb9ad553fccfe75445a703c3e7fc
   $ mkdir build && cd build
   $ cmake -DTHIRDPARTY=ON -DCONFIG_UDP_TRANSPORT_MTU=4096 -DCONFIG_SERIAL_TRANSPORT_MTU=4096 ..
   $ sudo make install
