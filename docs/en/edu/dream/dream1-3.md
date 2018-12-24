@@ -66,15 +66,15 @@ This is included in ROBOTIS DREAM Level 1.
 [Touch Sensor]: /docs/en/parts/sensor/ts_10/
 [USB Downloader(LN-101)]: /docs/en/parts/interface/ln-101/
 [How to Download Task code]: /docs/en/faq/download_task_code/
-[ex_01]: http://support.robotis.com/en/baggage_files/dream/dream_l3_musicbox_en.tsk
-[ex_02]: http://support.robotis.com/en/baggage_files/dream/dream_l3_cleaningrobot_en.tsk
-[ex_03]: http://support.robotis.com/en/baggage_files/dream/dream_l3_truck_en.tsk
-[ex_04]: http://support.robotis.com/en/baggage_files/dream/dream_l3_bumpercar_en.tsk
-[ex_05]: http://support.robotis.com/en/baggage_files/dream/dream_l3_probingcar_en.tsk
-[ex_06]: http://support.robotis.com/en/baggage_files/dream/dream_l3_electricguitar_en.tsk
-[ex_07]: http://support.robotis.com/en/baggage_files/dream/dream_l3_flaggame_en.tsk
-[ex_08]: http://support.robotis.com/en/baggage_files/dream/dream_l3_crane_en.tsk
-[ex_09]: http://support.robotis.com/en/baggage_files/dream/dream_l3_drunkenbasket_en.tsk
-[ex_10]: http://support.robotis.com/en/baggage_files/dream/dream_l3_viking_en.tsk
-[ex_11]: http://support.robotis.com/en/baggage_files/dream/dream_l3_whac-a-mole_en.tsk
-[ex_12]: http://support.robotis.com/en/baggage_files/dream/dream_l3_goblin_en.tsk
+[ex_01]: http://www.robotis.com/service/download.php?no=1557
+[ex_02]: http://www.robotis.com/service/download.php?no=1551
+[ex_03]: http://www.robotis.com/service/download.php?no=1559
+[ex_04]: http://www.robotis.com/service/download.php?no=1550
+[ex_05]: http://www.robotis.com/service/download.php?no=1558
+[ex_06]: http://www.robotis.com/service/download.php?no=1555
+[ex_07]: http://www.robotis.com/service/download.php?no=1554
+[ex_08]: http://www.robotis.com/service/download.php?no=1552
+[ex_09]: http://www.robotis.com/service/download.php?no=1553
+[ex_10]: http://www.robotis.com/service/download.php?no=1560
+[ex_11]: http://www.robotis.com/service/download.php?no=1556
+[ex_12]: http://www.robotis.com/service/download.php?no=1549

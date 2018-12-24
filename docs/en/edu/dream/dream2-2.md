@@ -46,20 +46,20 @@ ROBOTIS DREAM II level 2 comes with a "Comprehensive Program" in the controller 
 
 ## [Select Program](#select-program)
 
-|Button Press|Workbook|Robot|
-| :---: | :---: | :---: |
-|1 (Do)|Chapter 1. Elephant|![](/assets/images/edu/dream/dream1-2_elephant.jpg)|
-|2 (Re)|Chapter 2. Flower & Firefly|![](/assets/images/edu/dream/dream1-2_fireflylight.jpg)|
-|3 (Mi)|Chpater 3. Avoider|![](/assets/images/edu/dream/dream1-2_avoider.jpg)|
-|4 (Fa)|Chapter 4. Seal|![](/assets/images/edu/dream/dream1-2_seal.jpg)|
-|5 (Sol)|Chapter 5. Beetle|![](/assets/images/edu/dream/dream1-2_abeetle.jpg)|
-|6 (Ra)|Chapter 6. Raccoon|![](/assets/images/edu/dream/dream1-2_racoon.jpg)|
-|7 (Ti)|Chapter 7. Scorpion|![](/assets/images/edu/dream/dream1-2_scorpion.jpg)|
-|8 (Do')|Chapter 8. Puppy|![](/assets/images/edu/dream/dream1-2_puppy.jpg)|
-|9 (Re')|Chapter 9. Squirrel|![](/assets/images/edu/dream/dream1-2_squirrel.jpg)|
-|10 (Mi')|Chapter 10. Buffalo|![](/assets/images/edu/dream/dream1-2_buffalo.jpg)|
-|11 (Fa')|Chapter 11. Crocodile|![](/assets/images/edu/dream/dream1-2_crocodile.jpg)|
-|12 (Sol')|Chapter 12. Imagine|![](/assets/images/edu/dream/dream1-2_imagine.jpg)|
+| Button Press |          Workbook           |                          Robot                          |
+|:------------:|:---------------------------:|:-------------------------------------------------------:|
+|    1 (Do)    |     Chapter 1. Elephant     |   ![](/assets/images/edu/dream/dream1-2_elephant.jpg)   |
+|    2 (Re)    | Chapter 2. Flower & Firefly | ![](/assets/images/edu/dream/dream1-2_fireflylight.jpg) |
+|    3 (Mi)    |     Chpater 3. Avoider      |   ![](/assets/images/edu/dream/dream1-2_avoider.jpg)    |
+|    4 (Fa)    |       Chapter 4. Seal       |     ![](/assets/images/edu/dream/dream1-2_seal.jpg)     |
+|   5 (Sol)    |      Chapter 5. Beetle      |   ![](/assets/images/edu/dream/dream1-2_abeetle.jpg)    |
+|    6 (Ra)    |     Chapter 6. Raccoon      |    ![](/assets/images/edu/dream/dream1-2_racoon.jpg)    |
+|    7 (Ti)    |     Chapter 7. Scorpion     |   ![](/assets/images/edu/dream/dream1-2_scorpion.jpg)   |
+|   8 (Do')    |      Chapter 8. Puppy       |    ![](/assets/images/edu/dream/dream1-2_puppy.jpg)     |
+|   9 (Re')    |     Chapter 9. Squirrel     |   ![](/assets/images/edu/dream/dream1-2_squirrel.jpg)   |
+|   10 (Mi')   |     Chapter 10. Buffalo     |   ![](/assets/images/edu/dream/dream1-2_buffalo.jpg)    |
+|   11 (Fa')   |    Chapter 11. Crocodile    |  ![](/assets/images/edu/dream/dream1-2_crocodile.jpg)   |
+|  12 (Sol')   |     Chapter 12. Imagine     |   ![](/assets/images/edu/dream/dream1-2_imagine.jpg)    |
 
 **NOTE** : Download the example program under the ROBOTIS DREAM II Level 2 directory using the USB cable included in Level 1. The USB cable can also be purchased separately.
 {: .notice}
@@ -81,36 +81,36 @@ This is included in ROBOTIS DREAM II Level 1.
 
 ## [Example program of each chapter](#example-program-of-each-chapter)
 
-|Robot|TASK Code|
-| :---: | :---: |
-|1. Elephant<br />![](/assets/images/edu/dream/dream1-2_elephant.jpg)|[Download][ex_01]|
-|2. Flower & Firefly<br />![](/assets/images/edu/dream/dream1-2_fireflylight.jpg)|[Download][ex_02]|
-|3. Avoider<br />![](/assets/images/edu/dream/dream1-2_avoider.jpg)|[Download][ex_03]|
-|4. Seal<br />![](/assets/images/edu/dream/dream1-2_seal.jpg)|[Download][ex_04]|
-|5. Beetle<br />![](/assets/images/edu/dream/dream1-2_abeetle.jpg)|[Download][ex_05]|
-|6. Raccoon<br />![](/assets/images/edu/dream/dream1-2_racoon.jpg)|[Download][ex_06]|
-|7. Scorpion<br />![](/assets/images/edu/dream/dream1-2_scorpion.jpg)|[Download][ex_07]|
-|8. Puppy<br />![](/assets/images/edu/dream/dream1-2_puppy.jpg)|[Download][ex_08]|
-|9. Squirrel<br />![](/assets/images/edu/dream/dream1-2_squirrel.jpg)|[Download][ex_09]|
-|10. Buffalo<br />![](/assets/images/edu/dream/dream1-2_buffalo.jpg)|[Download][ex_10]|
-|11. Crocodile<br />![](/assets/images/edu/dream/dream1-2_crocodile.jpg)|[Download][ex_11]|
-|12. Imagine<br />![](/assets/images/edu/dream/dream1-2_imagine.jpg)|-|
+|                                      Robot                                       |     TASK Code     |
+|:--------------------------------------------------------------------------------:|:-----------------:|
+|       1. Elephant<br />![](/assets/images/edu/dream/dream1-2_elephant.jpg)       | [Download][ex_01] |
+| 2. Flower & Firefly<br />![](/assets/images/edu/dream/dream1-2_fireflylight.jpg) | [Download][ex_02] |
+|        3. Avoider<br />![](/assets/images/edu/dream/dream1-2_avoider.jpg)        | [Download][ex_03] |
+|           4. Seal<br />![](/assets/images/edu/dream/dream1-2_seal.jpg)           | [Download][ex_04] |
+|        5. Beetle<br />![](/assets/images/edu/dream/dream1-2_abeetle.jpg)         | [Download][ex_05] |
+|        6. Raccoon<br />![](/assets/images/edu/dream/dream1-2_racoon.jpg)         | [Download][ex_06] |
+|       7. Scorpion<br />![](/assets/images/edu/dream/dream1-2_scorpion.jpg)       | [Download][ex_07] |
+|          8. Puppy<br />![](/assets/images/edu/dream/dream1-2_puppy.jpg)          | [Download][ex_08] |
+|       9. Squirrel<br />![](/assets/images/edu/dream/dream1-2_squirrel.jpg)       | [Download][ex_09] |
+|       10. Buffalo<br />![](/assets/images/edu/dream/dream1-2_buffalo.jpg)        | [Download][ex_10] |
+|     11. Crocodile<br />![](/assets/images/edu/dream/dream1-2_crocodile.jpg)      | [Download][ex_11] |
+|       12. Imagine<br />![](/assets/images/edu/dream/dream1-2_imagine.jpg)        |         -         |
 
 [CM-150]: /docs/en/parts/controller/cm-150/
 [Geared Motor]: /docs/en/parts/motor/gm-10a/
 [USB Downloader(LN-101)]: /docs/en/parts/interface/ln-101/
 [Powersave Timer]: /docs/en/software/rplus1/task/programming_02/#powersave-timer
 [How to Download Task code]: /docs/en/faq/download_task_code/#cm-150
-[DREAM2_L2_Total_EN.tsk]: http://support.robotis.com/en/baggage_files/dream/dream2_l2_total_en.tskx
-[ex_01]: http://support.robotis.com/en/baggage_files/dream/dream2_l2_elephant_en.tskx
-[ex_02]: http://support.robotis.com/en/baggage_files/dream/dream2_l2_flower_firefly_en.tskx
-[ex_03]: http://support.robotis.com/en/baggage_files/dream/dream2_l2_avoider_en.tskx
-[ex_04]: http://support.robotis.com/en/baggage_files/dream/dream2_l2_seal_en.tskx
-[ex_05]: http://support.robotis.com/en/baggage_files/dream/dream2_l2_beetle_en.tskx
-[ex_06]: http://support.robotis.com/en/baggage_files/dream/dream2_l2_raccoon_en.tskx
-[ex_07]: http://support.robotis.com/en/baggage_files/dream/dream2_l2_scorpion_en.tskx
-[ex_08]: http://support.robotis.com/en/baggage_files/dream/dream2_l2_puppy_en.tskx
-[ex_09]: http://support.robotis.com/en/baggage_files/dream/dream2_l2_squirrel_en.tskx
-[ex_10]: http://support.robotis.com/en/baggage_files/dream/dream2_l2_buffalo_en.tskx
-[ex_11]: http://support.robotis.com/en/baggage_files/dream/dream2_l2_crocodile_en.tskx
+[DREAM2_L2_Total_EN.tsk]: http://www.robotis.com/service/download.php?no=1584
+[ex_01]: http://www.robotis.com/service/download.php?no=1577
+[ex_02]: http://www.robotis.com/service/download.php?no=1578
+[ex_03]: http://www.robotis.com/service/download.php?no=1573
+[ex_04]: http://www.robotis.com/service/download.php?no=1582
+[ex_05]: http://www.robotis.com/service/download.php?no=1572
+[ex_06]: http://www.robotis.com/service/download.php?no=1580
+[ex_07]: http://www.robotis.com/service/download.php?no=1581
+[ex_08]: http://www.robotis.com/service/download.php?no=1579
+[ex_09]: http://www.robotis.com/service/download.php?no=1583
+[ex_10]: http://www.robotis.com/service/download.php?no=1574
+[ex_11]: http://www.robotis.com/service/download.php?no=1575
 [power_button]: /assets/images/edu/ollo/ollo_lvl2_001.jpg
