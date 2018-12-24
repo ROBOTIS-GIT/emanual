@@ -19,12 +19,12 @@ sidebar:
 
 The following procedure takes you through the set up process.
 
-![](/assets/images/platform/op3/op3_010(rev2).png)
+![](/assets/images/platform/op3/op3_010_rev2.png)
 
 **WARNING** : Manually configuring ROBOTIS OP3’s ready pose other than the above pose may cause mechanical damages when posing for initial stance.
 {: .notice--warning}
 
-![](/assets/images/platform/op3/op3_011(rev2).png)
+![](/assets/images/platform/op3/op3_011_rev2.png)
 
 Connect the AC plug of the power adapter into a power outlet and plug the DC connector into ROBOTIS OP3’s DC jack.
 The DC jack is located on the back panel of ROBOTIS OP3.
@@ -42,13 +42,13 @@ If you want to use the battery pack, please follow the below procedure.
 **NOTE** : To prevent unexpected shutdown, ensure that ROBOTIS OP3 is connected with at least one active power source.
 {: .notice}
 
-![](/assets/images/platform/op3/op3_013(rev2).png)
+![](/assets/images/platform/op3/op3_013_rev2.png)
 
 Pushing the power switch to the right will power up the ROBOTIS OP3 (to the right : power on, to the left : power off)
 
 Once Power is on, the following procedure will be sequentially executed.
 
-![](/assets/images/platform/op3/op3_014(rev2).png)
+![](/assets/images/platform/op3/op3_014_rev2.png)
 
 ## [Execute Demo Program](#execute-demo-program)
 
@@ -69,7 +69,7 @@ The indicating LED will also change its color to the corresponding operation mod
 Press `START` button to run the selected mode.  
 After pressing `START` ROBOTIS OP3 will stand up and begin operations.
 
-![](/assets/images/platform/op3/op3_015(rev2).png)
+![](/assets/images/platform/op3/op3_015_rev2.png)
 
 {% capture op3_warning_01 %}
 **RESET Button**
@@ -87,7 +87,7 @@ Now ROBOTIS OP3 is ready for action!
 ROBOTIS OP3 stays in kneeling pose and does not move while in this mode.  
 This is the most recommended mode to change the power source.
 
-![](/assets/images/platform/op3/op3_016(rev2).png)
+![](/assets/images/platform/op3/op3_016_rev2.png)
 
 ### [Autonomous Mode](#autonomous-mode)
 
@@ -98,7 +98,7 @@ If ROBOTIS OP3 falls down (either on its back or belly) it will stand up and res
   1. Press `MODE` button until LED1(red) is lit.  
     ROBOTIS OP3 will verbally announce “Autonomous soccer mode”.
 
-      ![](/assets/images/platform/op3/op3_017(rev2).png)
+      ![](/assets/images/platform/op3/op3_017_rev2.png)
 
   2. Press `START` button to begin.  
     ROBOTIS OP3 will stand up and walk around to find the ball.ROBOTIS-OP3 will verbally announce “Start soccer demonstration”
@@ -117,12 +117,12 @@ ROBOTIS OP3 performs pre-programmed motions sequentially while talking.
 - Start Interactive Motion Mode
   1. Press `MODE` button until LED 3(blue) is lit. ROBOTIS OP3 will verbally announce “Interactive motion mode”.
 
-      ![](/assets/images/platform/op3/op3_019(rev2).png)
+      ![](/assets/images/platform/op3/op3_019_rev2.png)
 
   2. Press `START` button to begin. ROBOTIS OP3 will stand up and announce “Start motion demonstration”.
   3. ROBOTIS OP3 will perform following actions sequentially.
 
-    ![](/assets/images/platform/op3/op3_020(rev2).png)
+    ![](/assets/images/platform/op3/op3_020_rev2.png)
 
 - Stop Interactive Motion Mode
   - If `MODE` button is pressed for at least 2 seconds, ROBOTIS-OP3 will return to demonstration-ready mode.
@@ -137,7 +137,7 @@ Face detecting : [https://github.com/phil333/face_detection]
 - Start Vision Processing Mode
   1. Press `MODE` button until LED 2(green) is lit. ROBOTIS OP3 will verbally announce “Vision processing mode”.
 
-      ![](/assets/images/platform/op3/op3_018(rev2).png)
+      ![](/assets/images/platform/op3/op3_018_rev2.png)
 
   2. Press `START` button to begin. ROBOTIS OP3 will verbally announce “Start vision processing demonstration” and stand up.
   3. The target face should be located approximately 90cm(36”) away from ROBOTIS OP3.  
@@ -165,14 +165,14 @@ Please perform below procedures in order to shutdown the computer inside ROBOTIS
 
 1. Press PC power button which is located on the belly. ROBOTIS OP3 will verbally announce “bye-bye” and initiate shutdown process.
 
-    ![](/assets/images/platform/op3/op3_021(rev2).png)
+    ![](/assets/images/platform/op3/op3_021_rev2.png)
 
     When the internal computer of ROBOTIS OP3 is turned off, blue LED at the chest will be off.  
     After the blue LED is turned off, shutdown the main power with the switch in the back of the robot.
 
 2. If ROBOTIS OP3 does not announce “bye-bye” then you may need to force shutdown by holding the power button until the blue LED at the chest turns off.
 
-  ![](/assets/images/platform/op3/op3_022(rev2).png)
+  ![](/assets/images/platform/op3/op3_022_rev2.png)
 
 **NOTE** : If power supply is cut off before the blue LED is turned off, ROBOTIS OP3 may have problems in the next startup.
 {: .notice}
@@ -295,7 +295,7 @@ The below diagram illustrates the overall system structure of ROBOTIS OP3.
 
 The following diagram illustrates the default ID number of actuators in ROBOTIS OP3.
 
-![](/assets/images/platform/op3/op3_030(rev2).png)
+![](/assets/images/platform/op3/op3_030_rev2.png)
 
 ### [ROBOTIS-OP3 Revision](#robotis-op3-revision)  
 Based on the type of internal PC, ROBOTIS-OP3 will be revised accordingly.  
