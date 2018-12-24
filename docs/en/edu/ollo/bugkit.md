@@ -642,7 +642,7 @@ After executing the program, control the robot forward, backward, left, and righ
 [Programming]: #programming
 [OLLO_LineTrace.pdf]: http://support.robotis.com/en/baggage_files/ollo/ollo_linetrace.pdf
 [OLLO_PuzzleRacing.zip]: http://support.robotis.com/en/baggage_files/ollo/ollo_puzzle_racing_line.zip
-[OLLO_BUG_Product_EN.tsk]: http://support.robotis.com/en/baggage_files/ollo/bug/ollo_bug_product_en.tsk
+[OLLO_BUG_Product_EN.tsk]: http://www.robotis.com/service/download.php?no=1450
 [How to play Bug]: #how-to-play
 [bug_move.tsk]: http://www.robotis.com/service/download.php?no=1533
 [bug_linetracer.tsk]: http://www.robotis.com/service/download.php?no=1532
