@@ -178,8 +178,8 @@ Download the task code written above to the controller. ([How to Download Task c
 1. Popping up the monitor for program printing window. To see the screen output during the program execution, monitor for program printing window must be popped up before program execution. How to pop up the monitor for program printing window: Click View Program Output button in the Program Download window, click View Program Output button in Toolbox, select View Program Output(V) of Program(V) menu, or Press F5 button.
 
 2. Executing the Program. Once the monitor for program printing window is popped up, execute the downloaded program for the controller.  The internal LED is turned on by pressing the start button on the controller, and the downloaded program is executed. Check if the number values on the monitor for program printing window are changing or not by moving hands close and far from the front of central IR sensor of the controller.
-![img_11][img_11]
 
+![img_11][img_11]
 
 ## [Move the Bug](#move-the-bug)
 
@@ -279,12 +279,15 @@ For moving backward, simply change the direction of two motors from the forward 
     ![img_30][img_30]
 
 2. Changing the name into Backward function and the direction of the motors. Change the name of copied fuction from Forward to Backward.  Double-click the function name part or press Enter to modify.
+
     ![img_31][img_31]
 
     Change the spin direction of both motors to the opposite. Double-click the right parameter (CW:1023 or CCW:1023) part or Enter to modify.
+
     ![img_32][img_32]
 
 3. In start program, change the calling function from Forward to Backward. When the program is started, Backward function is executed repeatedly.
+
     ![img_33][img_33]
 
 
@@ -305,7 +308,7 @@ To make TurnRight function, copy the Forward function the same as the Backward f
 
 Please refer to Program Download on the program download procedure.
 
-Program Result File :  bug_move.tsk
+Program Result File : [bug_move.tsk]
 
 
 ### Run Program
@@ -395,7 +398,7 @@ Enter the code which calls different function depending on the detecting conditi
 
 Please refer to Program Download on the program download procedure.
 
-Program Result File :  bug_linetracer.tsk
+Program Result File : [bug_linetracer.tsk]
 
 Download the Handout for Line Tracer
 
@@ -464,7 +467,7 @@ Let us program a robot which traces the black line on the white floor like the l
 
 Please refer to Program Download on the program download procedure.
 
-Program Result File :  bug_sensor.tsk
+Program Result File : [bug_sensor.tsk]
 
 
 ### Run Program
@@ -529,7 +532,7 @@ PC(RoboPlus Task Program), Assembled Bug Robot, USB Downloader(LN-101), RC-100
 
 Please refer to Program Download on the program download procedure.
 
-Program Result File :  bug_rc.tsk
+Program Result File :  [bug_rc.tsk]
 
 ### Run Program
 
@@ -641,3 +644,7 @@ After executing the program, control the robot forward, backward, left, and righ
 [OLLO_PuzzleRacing.zip]: http://support.robotis.com/en/baggage_files/ollo/ollo_puzzle_racing_line.zip
 [OLLO_BUG_Product_EN.tsk]: http://support.robotis.com/en/baggage_files/ollo/bug/ollo_bug_product_en.tsk
 [How to play Bug]: #how-to-play
+[bug_move.tsk]: http://www.robotis.com/service/download.php?no=1533
+[bug_linetracer.tsk]: http://www.robotis.com/service/download.php?no=1532
+[bug_sensor.tsk]: http://www.robotis.com/service/download.php?no=1535
+[bug_rc.tsk]: http://www.robotis.com/service/download.php?no=1534
