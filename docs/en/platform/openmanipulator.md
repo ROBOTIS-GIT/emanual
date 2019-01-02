@@ -194,8 +194,8 @@ $ sudo apt-get install ros-kinetic-ros-controllers ros-kinetic-gazebo* ros-kinet
 ```
 $ cd ~/catkin_ws/src/
 $ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK.git
-$ git clone https://github.com/ROBOTIS-GIT/dynamixel_workbench.git
-$ git clone https://github.com/ROBOTIS-GIT/dynamixel_workbench_msgs.git
+$ git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench.git
+$ git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench-msgs.git
 $ git clone https://github.com/ROBOTIS-GIT/robotis_manipulator.git
 $ git clone https://github.com/ROBOTIS-GIT/open_manipulator.git
 $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_msgs.git
