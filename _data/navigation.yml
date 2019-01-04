@@ -389,7 +389,8 @@ main:
       children:
       - titlekr: "R+ m.Task"
         url: /software/rplus_mobile/mtask/
-      - titlekr: "R+ m.Task 2.0"
+      - title: "R+ m.Task 2.0"
+        titlekr: "R+ m.Task 2.0"
         url: /software/rplus_mobile/mtask20/
       - title: "R+ m.Motion 2.0"
         titlekr: "R+ m.Motion 2.0"
@@ -14911,130 +14912,202 @@ rplus2_block:
 rplusmmotion:
   - title: "Getting Started"
     titlekr: "개요"
-    url: /software/rplus2/mmotion/#getting-started
-    urlkr: /software/rplus2/mmotion/#개요
+    url: /software/rplus_mobile/mmotion/#getting-started
+    urlkr: /software/rplus_mobile/mmotion/#개요
   - title: "Menu Description"
     titlekr: "메뉴 설명"
-    url: /software/rplus2/mmotion/#menu-description
-    urlkr: /software/rplus2/mmotion/#메뉴-설명
+    url: /software/rplus_mobile/mmotion/#menu-description
+    urlkr: /software/rplus_mobile/mmotion/#메뉴-설명
   - title: "Practice"
     titlekr: "따라해보기"
-    url: /software/rplus2/mmotion/#practice
-    urlkr: /software/rplus2/mmotion/#따라해보기
+    url: /software/rplus_mobile/mmotion/#practice
+    urlkr: /software/rplus_mobile/mmotion/#따라해보기
     children:
     - title: "Connect to Robot"
       titlekr: "로봇 연결하기"
-      url: /software/rplus2/mmotion/#connect-to-robot
-      urlkr: /software/rplus2/mmotion/#로봇-연결하기
+      url: /software/rplus_mobile/mmotion/#connect-to-robot
+      urlkr: /software/rplus_mobile/mmotion/#로봇-연결하기
     - title: "Open Project"
       titlekr: "예제 프로젝트 열기"
-      url: /software/rplus2/mmotion/#open-project
-      urlkr: /software/rplus2/mmotion/#예제-프로젝트-열기
+      url: /software/rplus_mobile/mmotion/#open-project
+      urlkr: /software/rplus_mobile/mmotion/#예제-프로젝트-열기
     - title: "Motion Playback"
       titlekr: "모션 유닛 재생하기"
-      url: /software/rplus2/mmotion/#motion-playback
-      urlkr: /software/rplus2/mmotion/#모션-유닛-재생하기
+      url: /software/rplus_mobile/mmotion/#motion-playback
+      urlkr: /software/rplus_mobile/mmotion/#모션-유닛-재생하기
     - title: "Motion Editing"
       titlekr: "모션 유닛 편집하기"
-      url: /software/rplus2/mmotion/#motion-editing
-      urlkr: /software/rplus2/mmotion/#모션-유닛-편집하기
+      url: /software/rplus_mobile/mmotion/#motion-editing
+      urlkr: /software/rplus_mobile/mmotion/#모션-유닛-편집하기
     - titlekr: "모션 재생하기"
-      urlkr: /software/rplus2/mmotion/#모션-재생하기
+      urlkr: /software/rplus_mobile/mmotion/#모션-재생하기
     - titlekr: "모션 편집하기"
-      urlkr: /software/rplus2/mmotion/#모션-편집하기
+      urlkr: /software/rplus_mobile/mmotion/#모션-편집하기
     - title: "Motion Download"
       titlekr: "모션 다운로드하기"
-      url: /software/rplus2/mmotion/#motion-download
-      urlkr: /software/rplus2/mmotion/#모션-다운로드하기
+      url: /software/rplus_mobile/mmotion/#motion-download
+      urlkr: /software/rplus_mobile/mmotion/#모션-다운로드하기
     - title: "Save Motion Project"
       titlekr: "모션 프로젝트 저장하기"
-      url: /software/rplus2/mmotion/#save-motion-project
-      urlkr: /software/rplus2/mmotion/#모션-프로젝트-저장하기
+      url: /software/rplus_mobile/mmotion/#save-motion-project
+      urlkr: /software/rplus_mobile/mmotion/#모션-프로젝트-저장하기
   - titlekr: "소프트웨어 다운로드"
-    urlkr: /software/rplus2/mmotion/#소프트웨어-다운로드
+    urlkr: /software/rplus_mobile/mmotion/#소프트웨어-다운로드
   - titlekr: "기타 정보"
-    urlkr: /software/rplus2/mmotion/#기타-정보
+    urlkr: /software/rplus_mobile/mmotion/#기타-정보
     children:
     - titlekr: "3D 카메라 조작"
-      urlkr: /software/rplus2/mmotion/#3d-카메라-조작
+      urlkr: /software/rplus_mobile/mmotion/#3d-카메라-조작
   - title: "FAQ"
     titlekr: "자주 묻는 질문"
-    url: /software/rplus2/mmotion/#faq
-    urlkr: /software/rplus2/mmotion/#자주-묻는-질문
+    url: /software/rplus_mobile/mmotion/#faq
+    urlkr: /software/rplus_mobile/mmotion/#자주-묻는-질문
 
 mtask20:
-  - titlekr: "개요"
+  - title: "Introduction"
+    titlekr: "개요"
+    url: /software/rplus_mobile/mtask20/#introduction
     urlkr: /software/rplus_mobile/mtask20/#개요
     children:
-    - titlekr: "구동사양 및 주의사항"
+    - title: "Cautions"
+      titlekr: "구동사양 및 주의사항"
+      url: /software/rplus_mobile/mtask20/#cautions
       urlkr: /software/rplus_mobile/mtask20/#구동사양-및-주의사항
-    - titlekr: "지원제품"
-      urlkr: /software/rplus_mobile/mtask20/#지원제품
-  - titlekr: "메뉴설명"
+    - title: "Supported Products"
+      titlekr: "지원 제품"
+      url: /software/rplus_mobile/mtask20/#supported-products
+      urlkr: /software/rplus_mobile/mtask20/#지원-제품
+    - title: "Supported Controllers"
+      titlekr: "지원 제어기"
+      url: /software/rplus_mobile/mtask20/#supported-controllers
+      urlkr: /software/rplus_mobile/mtask20/#지원-제어기
+  - title: "Menu Descriptions"
+    titlekr: "메뉴설명"
+    url: /software/rplus_mobile/mtask20/#menu-descriptions
     urlkr: /software/rplus_mobile/mtask20/#메뉴설명
     children:
-    - titlekr: "단계별 편집 탭"
+    - title: "Function Tabs"
+      titlekr: "단계별 편집 탭"
+      url: /software/rplus_mobile/mtask20/#function-tabs
       urlkr: /software/rplus_mobile/mtask20/#단계별-편집-탭
-    - titlekr: "시작화면"
+    - title: "Start Screen"
+      titlekr: "시작화면"
+      url: /software/rplus_mobile/mtask20/#start-screen
       urlkr: /software/rplus_mobile/mtask20/#시작화면
-    - titlekr: "홈 탭"
+    - title: "Home Tab"
+      titlekr: "홈 탭"
+      url: /software/rplus_mobile/mtask20/#home-tab
       urlkr: /software/rplus_mobile/mtask20/#홈-탭
-    - titlekr: "프로그래밍 탭"
+    - title: "Programming Tab"
+      titlekr: "프로그래밍 탭"
+      url: /software/rplus_mobile/mtask20/#programming-tab
       urlkr: /software/rplus_mobile/mtask20/#프로그래밍-탭
-    - titlekr: "디버깅 탭"
+    - title: "Debugging Tab"
+      titlekr: "디버깅 탭"
+      url: /software/rplus_mobile/mtask20/#debugging-tab
       urlkr: /software/rplus_mobile/mtask20/#디버깅-탭
-  - titlekr: "따라해보기"
+  - title: "Practice"
+    titlekr: "따라해보기"
+    url: /software/rplus_mobile/mtask20/#practice
     urlkr: /software/rplus_mobile/mtask20/#따라해보기
     children:
-    - titlekr: "예제파일 열기"
+    - title: "Open Example"
+      titlekr: "예제파일 열기"
+      url: /software/rplus_mobile/mtask20/#open-example
       urlkr: /software/rplus_mobile/mtask20/#예제파일-열기
-    - titlekr: "새 파일 만들기"
+    - title: "Create New File"
+      titlekr: "새 파일 만들기"
+      url: /software/rplus_mobile/mtask20/#create-new-file
       urlkr: /software/rplus_mobile/mtask20/#새-파일-만들기
-    - titlekr: "명령어 편집하기"
+    - title: "Instructions"
+      titlekr: "명령어 편집하기"
+      url: /software/rplus_mobile/mtask20/#instructions
       urlkr: /software/rplus_mobile/mtask20/#명령어-편집하기
-    - titlekr: "파라미터 편집하기"
+    - title: "Edit Parameters"
+      titlekr: "파라미터 편집하기"
+      url: /software/rplus_mobile/mtask20/#edit-parameters
       urlkr: /software/rplus_mobile/mtask20/#파라미터-편집하기
-    - titlekr: "다운로드 하기"
-      urlkr: /software/rplus_mobile/mtask20/#다운로드-하기
-    - titlekr: "프로그램 출력보기"
+    - title: "Task Download"
+      titlekr: "태스크 다운로드하기"
+      url: /software/rplus_mobile/mtask20/#task-download
+      urlkr: /software/rplus_mobile/mtask20/#태스크-다운로드하기
+    - title: "Program Output Monitor"
+      titlekr: "프로그램 출력보기"
+      url: /software/rplus_mobile/mtask20/#program-output-monitor
       urlkr: /software/rplus_mobile/mtask20/#프로그램-출력보기
-    - titlekr: "리모컨 사용하기"
+    - title: "Remote Controller"
+      titlekr: "리모컨 사용하기"
+      url: /software/rplus_mobile/mtask20/#remote-controller
       urlkr: /software/rplus_mobile/mtask20/#리모컨-사용하기
-  - titlekr: "프로그래밍(편집)"
+  - title: "Programming(Edit)"
+    titlekr: "프로그래밍(편집)"
+    url: /software/rplus_mobile/mtask20/#programmingedit
     urlkr: /software/rplus_mobile/mtask20/#프로그래밍편집
     children:
-    - titlekr: "명령어 삽입/변경"
+    - title: "Insert/Edit Instruction"
+      titlekr: "명령어 삽입/변경"
+      url: /software/rplus_mobile/mtask20/#insertedit-instruction
       urlkr: /software/rplus_mobile/mtask20/#명령어-삽입변경
-    - titlekr: "여러 줄 선택"
+    - title: "Select Multiple Lines"
+      titlekr: "여러 줄 선택"
+      url: /software/rplus_mobile/mtask20/#select-multiple-lines
       urlkr: /software/rplus_mobile/mtask20/#여러-줄-선택
-    - titlekr: "줄 삽입/지우기"
+    - title: "Insert/Delete Line"
+      titlekr: "줄 삽입/지우기"
+      url: /software/rplus_mobile/mtask20/#insertdelete-line
       urlkr: /software/rplus_mobile/mtask20/#줄-삽입지우기
-    - titlekr: "줄 활성/비활성"
+    - title: "Enable/Disable Line"
+      titlekr: "줄 활성/비활성"
+      url: /software/rplus_mobile/mtask20/#commentuncomment-line
       urlkr: /software/rplus_mobile/mtask20/#줄-활성비활성
-    - titlekr: "복사/잘라내기/붙여넣기"
+    - title: "Copy/Cut/Paste"
+      titlekr: "복사/잘라내기/붙여넣기"
+      url: /software/rplus_mobile/mtask20/#copycutpaste
       urlkr: /software/rplus_mobile/mtask20/#복사잘라내기붙여넣기
-    - titlekr: "실행취소/다시실행"
+    - title: "Undo/Redo"
+      titlekr: "실행취소/다시실행"
+      url: /software/rplus_mobile/mtask20/#undoredo
       urlkr: /software/rplus_mobile/mtask20/#실행취소다시실행
-  - titlekr: "프로그래밍(명령어)"
+  - title: "Programming(Instructions)"
+    titlekr: "프로그래밍(명령어)"
+    url: /software/rplus_mobile/mtask20/#programminginstructions
     urlkr: /software/rplus_mobile/mtask20/#프로그래밍명령어
-  - titlekr: "프로그래밍(파라미터)"
+  - title: "Programming(Parameters)"
+    titlekr: "프로그래밍(파라미터)"
+    url: /software/rplus_mobile/mtask20/#programmingparameters
     urlkr: /software/rplus_mobile/mtask20/#프로그래밍파라미터
-  - titlekr: "소프트웨어 다운로드"
+  - title: "Software Download"
+    titlekr: "소프트웨어 다운로드"
+    url: /software/rplus_mobile/mtask20/#software-download
     urlkr: /software/rplus_mobile/mtask20/#소프트웨어-다운로드
-  - titlekr: "유용한 정보"
+  - title: "Useful Tips"
+    titlekr: "유용한 정보"
+    url: /software/rplus_mobile/mtask20/#useful-tips
     urlkr: /software/rplus_mobile/mtask20/#유용한-정보
     children:
-    - titlekr: "변수, 함수 참조 찾기"
+    - title: "Search Variables/Functions"
+      titlekr: "변수, 함수 참조 찾기"
+      url: /software/rplus_mobile/mtask20/#search-variablesfunctions
       urlkr: /software/rplus_mobile/mtask20/#변수-함수-참조-찾기
-    - titlekr: "키워드 찾기"
+    - title: "Search Keyword"
+      titlekr: "키워드 찾기"
+      url: /software/rplus_mobile/mtask20/#search-keyword
       urlkr: /software/rplus_mobile/mtask20/#키워드-찾기
-    - titlekr: "문법검사, 컴파일 결과 확인하기"
+    - title: "Grammar Check/Compile"
+      titlekr: "문법검사, 컴파일 결과 확인하기"
+      url: /software/rplus_mobile/mtask20/#grammar-checkcompile
       urlkr: /software/rplus_mobile/mtask20/#문법검사-컴파일-결과-확인하기
-    - titlekr: "안드로이드 기기에 태스크파일 복사하기"
+    - title: "Copy Task to Android Devices"
+      titlekr: "안드로이드 기기에 태스크파일 복사하기"
+      url: /software/rplus_mobile/mtask20/#copy-task-to-android-devices
       urlkr: /software/rplus_mobile/mtask20/#안드로이드-기기에-태스크파일-복사하기
-    - titlekr: "Apple 기기에 태스크파일 복사하기"
+    - title: "Copy Task to iOS Devices"
+      titlekr: "Apple 기기에 태스크파일 복사하기"
+      url: /software/rplus_mobile/mtask20/#copy-task-to-ios-devices
       urlkr: /software/rplus_mobile/mtask20/#apple-기기에-태스크파일-복사하기
-  - titlekr: "자주 묻는 질문"
+  - title: "FAQ"
+    titlekr: "자주 묻는 질문"
+    url: /software/rplus_mobile/mtask20/#faq
     urlkr: /software/rplus_mobile/mtask20/#자주-묻는-질문
 
 mtask:
