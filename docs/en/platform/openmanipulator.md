@@ -1416,6 +1416,8 @@ Go to `Examples` → `OpenManipulator` → `example` → `Arduino` → `Planar` 
 
 Open processing source code file (`OpenCR`>`arduino`>`opencr_arduino`>`opencr`>`libraries`>`OpenManipulator`>`example`>`Processing`>`Planar`>`Planar.pde`) on Processing IDE, and Run it.
 
+shhhhould be modified here!!! processing parts for every om friend
+
 **NOTE**: Upload **OpenCR example source code** to OpenCR before run **processing source code**.
 {: .notice--info}
 
