@@ -1410,16 +1410,14 @@ CAD Files ([Onshape](https://cad.onshape.com/documents/03dca3ccd6175a054a517d7a/
 
 #### OpenCR
 
-Go to `Examples` → `OpenManipulator` → `example` → `Arduino` → `Link` → `open_manipulator_link` on Arduino IDE for OpenCR.
+Go to `Examples` → `OpenManipulator` → `example` → `Arduino` → `Planar` → `open_manipulator_planar` on Arduino IDE for OpenCR.
 
 #### Processing
 
-Open processing source code file (`OpenCR`>`arduino`>`opencr_arduino`>`opencr`>`libraries`>`OpenManipulator`>`example`>`Processing`>`Link`>`Link.pde`) on Processing IDE, and Run it.
+Open processing source code file (`OpenCR`>`arduino`>`opencr_arduino`>`opencr`>`libraries`>`OpenManipulator`>`example`>`Processing`>`Planar`>`Planar.pde`) on Processing IDE, and Run it.
 
 **NOTE**: Upload **OpenCR example source code** to OpenCR before run **processing source code**.
 {: .notice--info}
-
-
 
 ### Video
 
@@ -1544,11 +1542,11 @@ CAD Files ([Onshape](https://cad.onshape.com/documents/7dd4f10904b98bdc250fd542/
 
 #### OpenCR
 
-Go to `Examples` → `OpenManipulator` → `example` → `Arduino` → `Delta` → `open_manipulator_delta` on Arduino IDE for OpenCR.
+Go to `Examples` → `OpenManipulator` → `example` → `Arduino` → `Stewart` → `open_manipulator_stewart` on Arduino IDE for OpenCR.
 
 #### Processing
 
-Open processing source code file (`OpenCR`>`arduino`>`opencr_arduino`>`opencr`>`libraries`>`OpenManipulator`>`example`>`Processing`>`Delta`>`Delta.pde`) on Processing IDE, and Run it.
+Open processing source code file (`OpenCR`>`arduino`>`opencr_arduino`>`opencr`>`libraries`>`OpenManipulator`>`example`>`Processing`>`Stewart`>`Stewart.pde`) on Processing IDE, and Run it.
 
 **NOTE**: Upload **OpenCR example source code** to OpenCR before run **processing source code**.
 {: .notice--info}
