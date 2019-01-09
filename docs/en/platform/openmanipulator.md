@@ -1361,6 +1361,7 @@ Open processing source code file (`OpenCR`>`arduino`>`opencr_arduino`>`opencr`>`
 ## [OpenManipulator Planar](#openmanipulator-planar)
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_Planar.png)
+<!-- 
 
 ### Specification
 
@@ -1422,13 +1423,14 @@ shhhhould be modified here!!! processing parts for every om friend
 **NOTE**: Upload **OpenCR example source code** to OpenCR before run **processing source code**.
 {: .notice--info}
 
-### Video
+### Video -->
 
   - **Comming Soon**
 
 ## [OpenManipulator Delta](#openmanipulator-delta)
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_Delta.png)
+<!-- 
 
 ### Specification
 
@@ -1488,7 +1490,7 @@ Open processing source code file (`OpenCR`>`arduino`>`opencr_arduino`>`opencr`>`
 **NOTE**: Upload **OpenCR example source code** to OpenCR before run **processing source code**.
 {: .notice--info}
 
-### Video
+### Video -->
 
   - **Comming Soon**
 
@@ -1496,6 +1498,7 @@ Open processing source code file (`OpenCR`>`arduino`>`opencr_arduino`>`opencr`>`
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_Stewart.png)
 
+<!-- 
 ### Specification
 
 | Items                    | Unit    |                                         |
@@ -1552,16 +1555,16 @@ Go to `Examples` → `OpenManipulator` → `example` → `Arduino` → `Stewart`
 Open processing source code file (`OpenCR`>`arduino`>`opencr_arduino`>`opencr`>`libraries`>`OpenManipulator`>`example`>`Processing`>`Stewart`>`Stewart.pde`) on Processing IDE, and Run it.
 
 **NOTE**: Upload **OpenCR example source code** to OpenCR before run **processing source code**.
-{: .notice--info}
+{: .notice--info} -->
 
-### Video
+<!-- ### Video -->
 
   - **Comming Soon**
 
 ## [OpenManipulator Linear](#openmanipulator-linear)
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_Linear.png)
-
+<!-- 
 ### Specification
 
 | Items                    | Unit    |                                         |
@@ -1620,7 +1623,7 @@ Open processing source code file (`OpenCR`>`arduino`>`opencr_arduino`>`opencr`>`
 **NOTE**: Upload **OpenCR example source code** to OpenCR before run **processing source code**.
 {: .notice--info}
 
-### Video
+### Video -->
 
   - **Comming Soon**
 
