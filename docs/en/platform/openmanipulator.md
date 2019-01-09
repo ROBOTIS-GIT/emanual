@@ -1171,6 +1171,7 @@ Install dependent packages
   $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_with_tb3.git
   $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_with_tb3_msgs.git
   $ git clone https://github.com/ROBOTIS-GIT/turtlebot3.git
+  $ sudo apt-get install ros-kinetic-smach*
   $ cd ~/catkin_ws && catkin_make
   ```
 
