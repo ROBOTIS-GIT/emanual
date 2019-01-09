@@ -12679,14 +12679,12 @@ turtlebot3:
       url: /platform/turtlebot3/manipulation/#slam
     - title: "Navigation"
       url: /platform/turtlebot3/manipulation/#navigation
-    - title: "Find AR marker"
-      url: /platform/turtlebot3/manipulation/#find-ar-marker
     - title: "MoveIt!"
       url: /platform/turtlebot3/manipulation/#moveit
-    - title: "Pick and Place"
-      url: /platform/turtlebot3/manipulation/#pick-and-place
     - title: "Simulation"
       url: /platform/turtlebot3/manipulation/#simulation
+    - title: "Pick and Place"
+      url: /platform/turtlebot3/manipulation/#pick-and-place
   - title: "Autonomous Driving"
     url: /platform/turtlebot3/autonomous_driving/#autonomous-driving
     children:
