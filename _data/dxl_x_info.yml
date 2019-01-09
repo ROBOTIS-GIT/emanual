@@ -38,7 +38,7 @@ xl320:
 xh430-v210:
   mcu:                *mcu
   encoder:            *encoder
-  motor:              "Maxon"
+  motor:              "Coreless(Maxon)"
   baudrate:           *baudrate
   control:            *control
   resolution:         *resolution
@@ -67,7 +67,7 @@ xh430-v210:
 xh430-v350:
   mcu:                *mcu
   encoder:            *encoder
-  motor:              "Maxon"
+  motor:              "Coreless(Maxon)"
   baudrate:           *baudrate
   control:            *control
   resolution:         *resolution
@@ -96,7 +96,7 @@ xh430-v350:
 xh430-w210:
   mcu:                *mcu
   encoder:            *encoder
-  motor:              "Maxon"
+  motor:              "Coreless(Maxon)"
   baudrate:           *baudrate
   control:            *control
   resolution:         *resolution
@@ -125,7 +125,7 @@ xh430-w210:
 xh430-w350:
   mcu:                *mcu
   encoder:            *encoder
-  motor:              "Maxon"
+  motor:              "Coreless(Maxon)"
   baudrate:           *baudrate
   control:            *control
   resolution:         *resolution
