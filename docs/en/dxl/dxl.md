@@ -80,3 +80,9 @@ sidebar:
 |H54-200-S500-R|H54-100-S500-R|H42-20-S300-R|
 |:---:|:---:|:---:|
 |[![](/assets/images/dxl/pro/h54-200-s500-r_product.jpg)](/docs/en/dxl/pro/h54-200-s500-r/)|[![](/assets/images/dxl/pro/h54-100-s500-r_product.jpg)](/docs/en/dxl/pro/h54-100-s500-r/)|[![](/assets/images/dxl/pro/h42-20-s300-r_product.jpg)](/docs/en/dxl/pro/h42-20-s300-r/)|
+
+# [PRO Plus(+) Series](#pro-plus-series)
+
+|H54P-200-S500-R|H54P-100-S500-R|H42P-020-S300-R|
+|:---:|:---:|:---:|
+|[![](/assets/images/dxl/pro_plus/h54p-200-s500-r.png)](/docs/en/dxl/pro_plus/h54p-200-s500-r/)|[![](/assets/images/dxl/pro_plus/h54p-100-s500-r.png)](/docs/en/dxl/pro_plus/h54p-100-s500-r/)|[![](/assets/images/dxl/pro_plus/h42p-020-s300-r.png)](/docs/en/dxl/pro_plus/h42p-020-s300-r/)|

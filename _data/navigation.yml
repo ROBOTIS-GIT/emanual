@@ -231,23 +231,23 @@ main:
         url: /edu/ollo/inventor/
       - titlekr: "*4단계 교육키트"
         url: /edu/ollo/ollo-4/
-    - title: "DREAM"
-      titlekr: "드림 I"
+    - title: "*DREAM"
+      titlekr: "*드림 I"
       children:
-      - titlekr: "1단계 교육키트"
+      - titlekr: "*1단계 교육키트"
         url: /edu/dream/dream1-1/
-      - title: "LEVEL 2"
-        titlekr: "2단계 교육키트"
+      - title: "*LEVEL 2"
+        titlekr: "*2단계 교육키트"
         url: /edu/dream/dream1-2/
-      - title: "LEVEL 3"
-        titlekr: "3단계 교육키트"
+      - title: "*LEVEL 3"
+        titlekr: "*3단계 교육키트"
         url: /edu/dream/dream1-3/
-      - title: "LEVEL 4"
-        titlekr: "4단계 교육키트"
+      - title: "*LEVEL 4"
+        titlekr: "*4단계 교육키트"
         url: /edu/dream/dream1-4/
-      - title: "SET A"
+      - title: "*SET A"
         url: /edu/dream/dream-a/
-      - title: "SET B"
+      - title: "*SET B"
         url: /edu/dream/dream-b/
     - title: "DREAM II"
       titlekr: "드림 II"
@@ -381,14 +381,16 @@ main:
       - title: "R+ Scratch"
         titlekr: "로보플러스 스크래치"
         url: /software/rplus2/scratch/
-      - titlekr: "로보플러스 블록"
+      - title: "R+ Block"
+        titlekr: "로보플러스 블록"
         url: /software/rplus2/rplus2_block/
     - title: "R+ Mobile"
       titlekr: "로보플러스 모바일"
       children:
       - titlekr: "R+ m.Task"
         url: /software/rplus_mobile/mtask/
-      - titlekr: "R+ m.Task 2.0"
+      - title: "R+ m.Task 2.0"
+        titlekr: "R+ m.Task 2.0"
         url: /software/rplus_mobile/mtask20/
       - title: "R+ m.Motion 2.0"
         titlekr: "R+ m.Motion 2.0"
@@ -457,8 +459,8 @@ main:
       - title: "OpenCM 485 EXP"
         titlekr: "OpenCM 485 EXP"
         url: /parts/controller/opencm485exp/
-      - title: "OpenCR"
-        titlekr: "OpenCR"
+      - title: "OpenCR1.0"
+        titlekr: "OpenCR1.0"
         url: /parts/controller/opencr10/
     - title: "Communication"
       titlekr: "통신"
@@ -511,6 +513,12 @@ main:
       - title: "U2D2"
         titlekr: "U2D2"
         url: /parts/interface/u2d2/
+      - title: "U2D2 Power Hub"
+        titlekr: "U2D2 파워 허브"
+        url: /parts/interface/u2d2_power_hub/
+      - title: "DYNAMIXEL Shield"
+        titlekr: "다이나믹셀 쉴드"
+        url: /parts/interface/dynamixel_shield/
     - title: "Sensors"
       titlekr: "센서"
       children:
@@ -579,8 +587,11 @@ all-dynamixel:
     titlekr: "X Series"
     url: /dxl/#x-series
   - title: "PRO Series"
-    titlekr: "PRO Serie"
-    url: /dxl/#pro-m-series
+    titlekr: "PRO Series"
+    url: /dxl/#pro-series
+  - title: "PRO+ Series"
+    titlekr: "PRO+ Series"
+    url: /dxl/#pro-plus-series
 
 dynamixel_pro:
   - title: "Product Lineup"
@@ -10265,6 +10276,38 @@ protocol2:
         titlekr: "Bulk Write"
         url: /dxl/protocol2/#bulk-write
 
+all-edu:
+  - title: "OLLO"
+    titlekr: "올로"
+    url: /edu/#ollo
+    urlkr: /edu/#올로
+  - title: "DREAM"
+    titlekr: "드림 I"
+    url: /edu/#dream
+    urlkr: /edu/#드림-i
+  - title: "DREAM II"
+    titlekr: "드림 II"
+    url: /edu/#dream-ii
+    urlkr: /edu/#드림-ii
+  - titlekr: "스마트 I"
+    urlkr: /edu/#스마트-i
+  - titlekr: "스마트 II"
+    urlkr: /edu/#스마트-ii
+  - titlekr: "스마트 III"
+    urlkr: /edu/#스마트-iii
+  - titlekr: "IoT"
+    urlkr: /edu/#iot
+  - titlekr: "자동차 로봇"
+    urlkr: /edu/#자동차-로봇
+  - title: "BIOLOID"
+    titlekr: "바이올로이드"
+    url: /edu/#bioloid
+    urlkr: /edu/#바이올로이드
+  - title: "MINI"
+    titlekr: "미니"
+    url: /edu/#mini
+    urlkr: /edu/#미니
+
 #Ollo Bug Kit sidebar
 ollo_bugkit:
   - title: "Introduction"
@@ -11312,6 +11355,8 @@ car:
       urlkr: /edu/car/#동작센서-모드
     - titlekr: "속력 바꾸기"
       urlkr: /edu/car/#속력-바꾸기
+    - titlekr: "절전모드 해제"
+      urlkr: /edu/car/#절전모드-해제
   - titlekr: "교육자료 다운로드"
     urlkr: /edu/car/#교육자료-다운로드
 
@@ -12861,133 +12906,131 @@ openmanipulator:
   - title: "Overview"
     url: /platform/openmanipulator/#overview
     children:
-    - title: "OpenSoftware"
-      url: /platform/openmanipulator/#opensoftware
-    - title: "OpenHardware"
-      url: /platform/openmanipulator/#openhardware
-    - title: "OpenCR (Embedded board)"
-      url: /platform/openmanipulator/#opencr-embedded-board
-    - title: "Dynamixel Examples"
-      url: /platform/openmanipulator/#dynamixel-examples
-    - title: "Introduction video"
-      url: /platform/openmanipulator/#introduction-video
-
+      - title: "OpenSoftware"
+        url: /platform/openmanipulator/#opensoftware
+      - title: "OpenHardware"
+        url: /platform/openmanipulator/#openhardware
+      - title: "OpenCR (Embedded board)"
+        url: /platform/openmanipulator/#opencr-embedded-board
+      - title: "Dynamixel Examples"
+        url: /platform/openmanipulator/#dynamixel-examples
+      - title: "Introduction video"
+        url: /platform/openmanipulator/#introduction-video
   - title: "Specification"
     url: /platform/openmanipulator/#specification
     children:
-    - title: "Hardware Specification"
-      url: /platform/openmanipulator/#hardware-specification
-    - title: "Dimension"
-      url: /platform/openmanipulator/#dimension
-
+      - title: "Hardware Specification"
+        url: /platform/openmanipulator/#hardware-specification
+      - title: "Dimension"
+        url: /platform/openmanipulator/#dimension
   - title: "Hardware Setup"
     url: /platform/openmanipulator/#hardware-setup
     children:
-    - title: "Part Lists"
-      url: /platform/openmanipulator/#part-lists
-    - title: "3D Printed Parts"
-      url: /platform/openmanipulator/#3d-printed-parts
-    - title: "Assembly Manual"
-      url: /platform/openmanipulator/#assembly-manual
+      - title: "Part Lists"
+        url: /platform/openmanipulator/#part-lists
+      - title: "3D Printed Parts"
+        url: /platform/openmanipulator/#3d-printed-parts
+      - title: "Assembly Manual"
+        url: /platform/openmanipulator/#assembly-manual
   - title: "PC Setup"
     url: /platform/openmanipulator/#pc-setup
     children:
-    - title: "Install Ubuntu on PC"
-      url: /platform/openmanipulator/#install-ubuntu-on-pc
-    - title: "Install ROS on PC"
-      url: /platform/openmanipulator/#install-ros-on-pc
-    - title: "Install ROS Packages"
-      url: /platform/openmanipulator/#install-ros-packages
-    - title: "Usb Settings"
-      url: /platform/openmanipulator/#usb-settings
+      - title: "Install Ubuntu on PC"
+        url: /platform/openmanipulator/#install-ubuntu-on-pc
+      - title: "Install ROS on PC"
+        url: /platform/openmanipulator/#install-ros-on-pc
+      - title: "Install ROS Packages"
+        url: /platform/openmanipulator/#install-ros-packages
+      - title: "Usb Settings"
+        url: /platform/openmanipulator/#usb-settings
   - title: "Controller"
     url: /platform/openmanipulator/#controller
     children:
-    - title: "Run roscore"
-      url: /platform/openmanipulator/#run-roscore
-    - title: "Launch Controller"
-      url: /platform/openmanipulator/#launch-controller
-    - title: "Check Setting"
-      url: /platform/openmanipulator/#check-setting
-      children:
-      - title: "Manipulator Description"
-        url: /platform/openmanipulator/#manipulator-description
-      - title: "RViz"
-        url: /platform/openmanipulator/#rviz  
+      - title: "Run roscore"
+        url: /platform/openmanipulator/#run-roscore
+      - title: "Launch Controller"
+        url: /platform/openmanipulator/#launch-controller
+      - title: "Check Setting"
+        url: /platform/openmanipulator/#check-setting
+        children:
+          - title: "Manipulator Description"
+            url: /platform/openmanipulator/#manipulator-description
+          - title: "RViz"
+            url: /platform/openmanipulator/#rviz
   - title: "Basic Manipulation"
     url: /platform/openmanipulator/#basic-manipulation
     children:
-    - title: "Message List"
-      url: /platform/openmanipulator/#message-list
-      children:
-      - title: "Topic"
-        url: /platform/openmanipulator/#topic
-      - title: "Service"
-        url: /platform/openmanipulator/#service
-    - title: "GUI Program"
-      url: /platform/openmanipulator/#gui-program
-    - title: "Teleoperation"
-      url: /platform/openmanipulator/#teleoperation
-      children:
-      - title: "Keyboard"
-        url: /platform/openmanipulator/#keyboard
-      - title: "PS4 Joystick"
-        url: /platform/openmanipulator/#ps4-joystick
-      - title: "XBOX 360 Joystick"
-        url: /platform/openmanipulator/#xbox-360-joystick
-    - title: "MoveIt!"
-      url: /platform/openmanipulator/#moveit 
+      - title: "Message List"
+        url: /platform/openmanipulator/#message-list
+        children:
+          - title: "Topic"
+            url: /platform/openmanipulator/#topic
+          - title: "Service"
+            url: /platform/openmanipulator/#service
+      - title: "GUI Program"
+        url: /platform/openmanipulator/#gui-program
+      - title: "Teleoperation"
+        url: /platform/openmanipulator/#teleoperation
+        children:
+          - title: "Keyboard"
+            url: /platform/openmanipulator/#keyboard
+          - title: "PS4 Joystick"
+            url: /platform/openmanipulator/#ps4-joystick
+          - title: "XBOX 360 Joystick"
+            url: /platform/openmanipulator/#xbox-360-joystick
+      - title: "MoveIt!"
+        url: /platform/openmanipulator/#moveit
   - title: "Gazebo Simulation"
     url: /platform/openmanipulator/#gazebo-simulation
     children:
-    - title: "Controller for gazebo"
-      url: /platform/openmanipulator/#controller-for-gazebo
-    - title: "Launch gazebo"
-      url: /platform/openmanipulator/#launch-gazebo
+      - title: "Controller for gazebo"
+        url: /platform/openmanipulator/#controller-for-gazebo
+      - title: "Launch gazebo"
+        url: /platform/openmanipulator/#launch-gazebo
   - title: "How to Control on OpenCR"
     url: /platform/openmanipulator/#how-to-control-on-opencr
     children:
-    - title: "Setup"
-      url: /platform/openmanipulator/#setup
-    - title: "Arduino IDE"
-      url: /platform/openmanipulator/#arduino-ide
-    - title: "Processing"
-      url: /platform/openmanipulator/#processing
-    - title: "Basic Manipulation on OpenCR"
-      url: /platform/openmanipulator/#basic-manipulation-on-opencr
-      children:
-      - title: "Control Interface"
-        url: /platform/openmanipulator/#control-interface
-      - title: "Teleoperation RC100"
-        url: /platform/openmanipulator/#teleoperation-rc100
-      - title: "Hand guiding"
-        url: /platform/openmanipulator/#hand-guiding
+      - title: "Setup"
+        url: /platform/openmanipulator/#setup
+      - title: "Arduino IDE"
+        url: /platform/openmanipulator/#arduino-ide
+      - title: "Processing"
+        url: /platform/openmanipulator/#processing
+      - title: "Basic Manipulation on OpenCR"
+        url: /platform/openmanipulator/#basic-manipulation-on-opencr
+        children:
+          - title: "Control Interface"
+            url: /platform/openmanipulator/#control-interface
+          - title: "Teleoperation RC100"
+            url: /platform/openmanipulator/#teleoperation-rc100
+          - title: "Hand guiding"
+            url: /platform/openmanipulator/#hand-guiding
   - title: "Camera Application"
-    url: /platform/openmanipulator/#camera-application   
+    url: /platform/openmanipulator/#camera-application
   - title: "Tool Modification"
     url: /platform/openmanipulator/#tool-modification
     children:
-    - title: "Vacuum Gripper"
-      url: /platform/openmanipulator/#vacuum-gripper
-    - title: "Pen Holder"
-      url: /platform/openmanipulator/#pen-holder
+      - title: "Vacuum Gripper"
+        url: /platform/openmanipulator/#vacuum-gripper
+      - title: "Pen Holder"
+        url: /platform/openmanipulator/#pen-holder
   - title: "Mobile Manipulation"
     url: /platform/openmanipulator/#mobile-manipulation
   - title: "Friends"
     url: /platform/openmanipulator/#friends
     children:
-    - title: "OpenManipulator SCARA"
-      url: /platform/openmanipulator/#openmanipulator-scara
-    - title: "OpenManipulator Link"
-      url: /platform/openmanipulator/#openmanipulator-link
-    - title: "OpenManipulator Planar"
-      url: /platform/openmanipulator/#openmanipulator-planar
-    - title: "OpenManipulator Delta"
-      url: /platform/openmanipulator/#openmanipulator-delta
-    - title: "OpenManipulator Stewart"
-      url: /platform/openmanipulator/#openmanipulator-stewart
-    - title: "OpenManipulator Linear"
-      url: /platform/openmanipulator/#openmanipulator-linear
+      - title: "OpenManipulator SCARA"
+        url: /platform/openmanipulator/#openmanipulator-scara
+      - title: "OpenManipulator Link"
+        url: /platform/openmanipulator/#openmanipulator-link
+      - title: "OpenManipulator Planar"
+        url: /platform/openmanipulator/#openmanipulator-planar
+      - title: "OpenManipulator Delta"
+        url: /platform/openmanipulator/#openmanipulator-delta
+      - title: "OpenManipulator Stewart"
+        url: /platform/openmanipulator/#openmanipulator-stewart
+      - title: "OpenManipulator Linear"
+        url: /platform/openmanipulator/#openmanipulator-linear
 
 #Manipulator-H
 manipulator_h:
@@ -14177,9 +14220,13 @@ rplustask2:
     url: /software/rplus2/task/#getting-started
     urlkr: /software/rplus2/task/#시작하기
     children:
-    - title: "Manual Instructions"
+    - title: "Software Install"
+      titlekr: "소프트웨어 설치"
+      url: /software/rplus2/task/#software-install
+      urlkr: /software/rplus2/task/#소프트웨어-설치
+    - title: "Menu Descriptions"
       titlekr: "메뉴설명"
-      url: /software/rplus2/task/#manual-instructions
+      url: /software/rplus2/task/#menu-descriptions
       urlkr: /software/rplus2/task/#메뉴설명
     - title: "Resources for Task"
       titlekr: "태스크 코드에서 활용 가능한 자원"
@@ -14401,6 +14448,10 @@ rplusmotion2:
     url: /software/rplus2/motion/#introduction
     urlkr: /software/rplus2/motion/#개요
     children:
+    - title: "Software Install"
+      titlekr: "소프트웨어 설치"
+      url: /software/rplus2/motion/#software-install
+      urlkr: /software/rplus2/motion/#소프트웨어-설치
     - title: "Menu"
       titlekr: "메뉴설명"
       url: /software/rplus2/motion/#menu
@@ -14690,18 +14741,18 @@ rplus2_block:
     url: /software/rplus2/rplus2_block/#getting-started
     urlkr: /software/rplus2/rplus2_block/#시작하기
     children:
-    - title: "R+Block Install"
+    - title: "R+ Block Install"
       titlekr: "로보플러스 블록 설치"
-      url: /software/rplus2/rplus2_block/#rblock-install
+      url: /software/rplus2/rplus2_block/#r-block-install
       urlkr: /software/rplus2/rplus2_block/#로보플러스-블록-설치
       children:
       - title: "Minimum Requirements"
         titlekr: "시스템 최저 요구사항"
         url: /software/rplus2/rplus2_block/#minimum-requirements
         urlkr: /software/rplus2/rplus2_block/#시스템-최저-요구사항
-      - title: "Download and Install"
+      - title: "Download and Setup"
         titlekr: "다운로드/설치"
-        url: /software/rplus2/rplus2_block/#download-and-install
+        url: /software/rplus2/rplus2_block/#download-and-setup
         urlkr: /software/rplus2/rplus2_block/#다운로드설치
       - title: "Connect to Robot"
         titlekr: "로봇 연결하기"
@@ -14711,269 +14762,350 @@ rplus2_block:
       titlekr: "메뉴 설명"
       url: /software/rplus2/rplus2_block/#main-screen
       urlkr: /software/rplus2/rplus2_block/#메뉴-설명
-  - title: ""
+  - title: "Basic Features"
     titlekr: "따라해보기"
-    url: /software/rplus2/rplus2_block/#
+    url: /software/rplus2/rplus2_block/#basic-features
     urlkr: /software/rplus2/rplus2_block/#따라해보기
     children:
-    - title: ""
+    - title: "Product Name"
       titlekr: "제품 변경"
-      url: /software/rplus2/rplus2_block/#
+      url: /software/rplus2/rplus2_block/#product-name
       urlkr: /software/rplus2/rplus2_block/#제품-변경
-    - title: ""
+    - title: "Block Level"
       titlekr: "블록 레벨 변경"
-      url: /software/rplus2/rplus2_block/#
+      url: /software/rplus2/rplus2_block/#block-level
       urlkr: /software/rplus2/rplus2_block/#블록-레벨-변경
-    - title: ""
+    - title: "Selecting Block"
       titlekr: "블록 선택"
-      url: /software/rplus2/rplus2_block/#
+      url: /software/rplus2/rplus2_block/#selecting-block
       urlkr: /software/rplus2/rplus2_block/#블록-선택
-    - title: ""
+    - title: "Start Block"
       titlekr: "시작 블록"
-      url: /software/rplus2/rplus2_block/#
+      url: /software/rplus2/rplus2_block/#start-block
       urlkr: /software/rplus2/rplus2_block/#시작-블록
-    - title: ""
+    - title: "Deleting Block"
       titlekr: "블록 삭제"
-      url: /software/rplus2/rplus2_block/#
+      url: /software/rplus2/rplus2_block/#deleting-block
       urlkr: /software/rplus2/rplus2_block/#블록-삭제
-    - title: ""
+    - title: "Zoom In/Out"
       titlekr: "블록 확대/축소"
-      url: /software/rplus2/rplus2_block/#
+      url: /software/rplus2/rplus2_block/#zoom-inout
       urlkr: /software/rplus2/rplus2_block/#블록-확대축소
-    - title: ""
+    - title: "Context Menu"
       titlekr: "블록 추가 기능"
-      url: /software/rplus2/rplus2_block/#
+      url: /software/rplus2/rplus2_block/#context-menu
       urlkr: /software/rplus2/rplus2_block/#블록-추가-기능
       children:
-      - title: ""
+      - title: "Duplicate Block"
         titlekr: "같은 블록 만들기"
-        url: /software/rplus2/rplus2_block/#
+        url: /software/rplus2/rplus2_block/#duplicate-block
         urlkr: /software/rplus2/rplus2_block/#같은-블록-만들기
-      - title: ""
+      - title: "Disable Block"
         titlekr: "블록 숨기기"
-        url: /software/rplus2/rplus2_block/#
+        url: /software/rplus2/rplus2_block/#disable-block
         urlkr: /software/rplus2/rplus2_block/#블록-숨기기
-      - title: ""
+      - title: "Enable Block"
         titlekr: "블록 나타내기"
-        url: /software/rplus2/rplus2_block/#
+        url: /software/rplus2/rplus2_block/#enable-block
         urlkr: /software/rplus2/rplus2_block/#블록-나타내기
-      - title: ""
+      - title: "Delete Block"
         titlekr: "블록 지우기"
-        url: /software/rplus2/rplus2_block/#
+        url: /software/rplus2/rplus2_block/#delete-block
         urlkr: /software/rplus2/rplus2_block/#블록-지우기
-    - title: ""
+    - title: "Undo/Redo"
       titlekr: "Undo/Redo 기능"
-      url: /software/rplus2/rplus2_block/#
+      url: /software/rplus2/rplus2_block/#undoredo
       urlkr: /software/rplus2/rplus2_block/#undoredo-기능
-    - title: ""
+    - title: "Play"
       titlekr: "실행"
-      url: /software/rplus2/rplus2_block/#
+      url: /software/rplus2/rplus2_block/#play
       urlkr: /software/rplus2/rplus2_block/#실행
-    - title: ""
+    - title: "Stop"
       titlekr: "중지"
-      url: /software/rplus2/rplus2_block/#
+      url: /software/rplus2/rplus2_block/#stop
       urlkr: /software/rplus2/rplus2_block/#중지
-    - title: ""
+    - title: "Save"
       titlekr: "저장"
-      url: /software/rplus2/rplus2_block/#
+      url: /software/rplus2/rplus2_block/#save
       urlkr: /software/rplus2/rplus2_block/#저장
-    - title: ""
+    - title: "Quit"
       titlekr: "끝내기"
-      url: /software/rplus2/rplus2_block/#
+      url: /software/rplus2/rplus2_block/#quit
       urlkr: /software/rplus2/rplus2_block/#끝내기
       children:
-      - title: ""
+      - title: "Cancel"
         titlekr: "취소"
-        url: /software/rplus2/rplus2_block/#
+        url: /software/rplus2/rplus2_block/#cancel
         urlkr: /software/rplus2/rplus2_block/#취소
-      - title: ""
+      - title: "Exit"
         titlekr: "종료"
-        url: /software/rplus2/rplus2_block/#
+        url: /software/rplus2/rplus2_block/#exit
         urlkr: /software/rplus2/rplus2_block/#종료
-      - title: ""
+      - title: "Save & Exit"
         titlekr: "저장 후 종료"
-        url: /software/rplus2/rplus2_block/#
+        url: /software/rplus2/rplus2_block/#save--exit
         urlkr: /software/rplus2/rplus2_block/#저장-후-종료
-  - title: ""
+  - title: "Optional Menu"
     titlekr: "추가 메뉴"
-    url: /software/rplus2/rplus2_block/#
+    url: /software/rplus2/rplus2_block/#optional-menu
     urlkr: /software/rplus2/rplus2_block/#추가-메뉴
     children:
-    - title: ""
+    - title: "Settings"
       titlekr: "설정"
-      url: /software/rplus2/rplus2_block/#
+      url: /software/rplus2/rplus2_block/#settings
       urlkr: /software/rplus2/rplus2_block/#설정
       children:
-      - title: ""
+      - title: "Bluetooth"
         titlekr: "블루투스"
-        url: /software/rplus2/rplus2_block/#
+        url: /software/rplus2/rplus2_block/#bluetooth
         urlkr: /software/rplus2/rplus2_block/#블루투스
-      - title: ""
+      - title: "e-Manual"
         titlekr: "e-매뉴얼"
-        url: /software/rplus2/rplus2_block/#
+        url: /software/rplus2/rplus2_block/#e-manual
         urlkr: /software/rplus2/rplus2_block/#e-매뉴얼
-      - title: ""
+      - title: "Version Info"
         titlekr: "버전 정보"
-        url: /software/rplus2/rplus2_block/#
+        url: /software/rplus2/rplus2_block/#version-info
         urlkr: /software/rplus2/rplus2_block/#버전-정보
-    - title: ""
+    - title: "Workspace"
       titlekr: "작품"
-      url: /software/rplus2/rplus2_block/#
+      url: /software/rplus2/rplus2_block/#workspace
       urlkr: /software/rplus2/rplus2_block/#작품
       children:
-      - title: ""
+      - title: "Save"
         titlekr: "저장하기"
-        url: /software/rplus2/rplus2_block/#
+        url: /software/rplus2/rplus2_block/#save
         urlkr: /software/rplus2/rplus2_block/#저장하기
-      - title: ""
+      - title: "Load"
         titlekr: "불러오기"
-        url: /software/rplus2/rplus2_block/#
+        url: /software/rplus2/rplus2_block/#load
         urlkr: /software/rplus2/rplus2_block/#불러오기
-      - title: ""
+      - title: "Clear"
         titlekr: "지우기"
-        url: /software/rplus2/rplus2_block/#
+        url: /software/rplus2/rplus2_block/#clear
         urlkr: /software/rplus2/rplus2_block/#지우기
-      - title: ""
+      - title: "New"
         titlekr: "새로만들기"
-        url: /software/rplus2/rplus2_block/#
+        url: /software/rplus2/rplus2_block/#new
         urlkr: /software/rplus2/rplus2_block/#새로만들기
-      - title: ""
+      - title: "Delete"
         titlekr: "삭제하기"
-        url: /software/rplus2/rplus2_block/#
+        url: /software/rplus2/rplus2_block/#delete
         urlkr: /software/rplus2/rplus2_block/#삭제하기
-    - title: ""
+    - title: "Task"
       titlekr: "태스크"
-      url: /software/rplus2/rplus2_block/#
+      url: /software/rplus2/rplus2_block/#task
       urlkr: /software/rplus2/rplus2_block/#태스크
+      children:
+      - title: "Convert"
+        titlekr: "변환"
+        url: /software/rplus2/rplus2_block/#convert
+        urlkr: /software/rplus2/rplus2_block/#변환
+      - title: "Download"
+        titlekr: "다운로드"
+        url: /software/rplus2/rplus2_block/#download
+        urlkr: /software/rplus2/rplus2_block/#다운로드
 
 #R+ Mobile m.Motion sidebar
 rplusmmotion:
   - title: "Getting Started"
     titlekr: "개요"
-    url: /software/rplus2/mmotion/#getting-started
-    urlkr: /software/rplus2/mmotion/#개요
+    url: /software/rplus_mobile/mmotion/#getting-started
+    urlkr: /software/rplus_mobile/mmotion/#개요
   - title: "Menu Description"
     titlekr: "메뉴 설명"
-    url: /software/rplus2/mmotion/#menu-description
-    urlkr: /software/rplus2/mmotion/#메뉴-설명
+    url: /software/rplus_mobile/mmotion/#menu-description
+    urlkr: /software/rplus_mobile/mmotion/#메뉴-설명
   - title: "Practice"
     titlekr: "따라해보기"
-    url: /software/rplus2/mmotion/#practice
-    urlkr: /software/rplus2/mmotion/#따라해보기
+    url: /software/rplus_mobile/mmotion/#practice
+    urlkr: /software/rplus_mobile/mmotion/#따라해보기
     children:
     - title: "Connect to Robot"
       titlekr: "로봇 연결하기"
-      url: /software/rplus2/mmotion/#connect-to-robot
-      urlkr: /software/rplus2/mmotion/#로봇-연결하기
+      url: /software/rplus_mobile/mmotion/#connect-to-robot
+      urlkr: /software/rplus_mobile/mmotion/#로봇-연결하기
     - title: "Open Project"
       titlekr: "예제 프로젝트 열기"
-      url: /software/rplus2/mmotion/#open-project
-      urlkr: /software/rplus2/mmotion/#예제-프로젝트-열기
+      url: /software/rplus_mobile/mmotion/#open-project
+      urlkr: /software/rplus_mobile/mmotion/#예제-프로젝트-열기
     - title: "Motion Playback"
       titlekr: "모션 유닛 재생하기"
-      url: /software/rplus2/mmotion/#motion-playback
-      urlkr: /software/rplus2/mmotion/#모션-유닛-재생하기
+      url: /software/rplus_mobile/mmotion/#motion-playback
+      urlkr: /software/rplus_mobile/mmotion/#모션-유닛-재생하기
     - title: "Motion Editing"
       titlekr: "모션 유닛 편집하기"
-      url: /software/rplus2/mmotion/#motion-editing
-      urlkr: /software/rplus2/mmotion/#모션-유닛-편집하기
+      url: /software/rplus_mobile/mmotion/#motion-editing
+      urlkr: /software/rplus_mobile/mmotion/#모션-유닛-편집하기
     - titlekr: "모션 재생하기"
-      urlkr: /software/rplus2/mmotion/#모션-재생하기
+      urlkr: /software/rplus_mobile/mmotion/#모션-재생하기
     - titlekr: "모션 편집하기"
-      urlkr: /software/rplus2/mmotion/#모션-편집하기
+      urlkr: /software/rplus_mobile/mmotion/#모션-편집하기
     - title: "Motion Download"
       titlekr: "모션 다운로드하기"
-      url: /software/rplus2/mmotion/#motion-download
-      urlkr: /software/rplus2/mmotion/#모션-다운로드하기
+      url: /software/rplus_mobile/mmotion/#motion-download
+      urlkr: /software/rplus_mobile/mmotion/#모션-다운로드하기
     - title: "Save Motion Project"
       titlekr: "모션 프로젝트 저장하기"
-      url: /software/rplus2/mmotion/#save-motion-project
-      urlkr: /software/rplus2/mmotion/#모션-프로젝트-저장하기
+      url: /software/rplus_mobile/mmotion/#save-motion-project
+      urlkr: /software/rplus_mobile/mmotion/#모션-프로젝트-저장하기
   - titlekr: "소프트웨어 다운로드"
-    urlkr: /software/rplus2/mmotion/#소프트웨어-다운로드
+    urlkr: /software/rplus_mobile/mmotion/#소프트웨어-다운로드
   - titlekr: "기타 정보"
-    urlkr: /software/rplus2/mmotion/#기타-정보
+    urlkr: /software/rplus_mobile/mmotion/#기타-정보
     children:
     - titlekr: "3D 카메라 조작"
-      urlkr: /software/rplus2/mmotion/#3d-카메라-조작
+      urlkr: /software/rplus_mobile/mmotion/#3d-카메라-조작
   - title: "FAQ"
     titlekr: "자주 묻는 질문"
-    url: /software/rplus2/mmotion/#faq
-    urlkr: /software/rplus2/mmotion/#자주-묻는-질문
+    url: /software/rplus_mobile/mmotion/#faq
+    urlkr: /software/rplus_mobile/mmotion/#자주-묻는-질문
 
 mtask20:
-  - titlekr: "개요"
+  - title: "Introduction"
+    titlekr: "개요"
+    url: /software/rplus_mobile/mtask20/#introduction
     urlkr: /software/rplus_mobile/mtask20/#개요
     children:
-    - titlekr: "구동사양 및 주의사항"
+    - title: "Cautions"
+      titlekr: "구동사양 및 주의사항"
+      url: /software/rplus_mobile/mtask20/#cautions
       urlkr: /software/rplus_mobile/mtask20/#구동사양-및-주의사항
-    - titlekr: "지원제품"
-      urlkr: /software/rplus_mobile/mtask20/#지원제품
-  - titlekr: "메뉴설명"
+    - title: "Supported Products"
+      titlekr: "지원 제품"
+      url: /software/rplus_mobile/mtask20/#supported-products
+      urlkr: /software/rplus_mobile/mtask20/#지원-제품
+    - title: "Supported Controllers"
+      titlekr: "지원 제어기"
+      url: /software/rplus_mobile/mtask20/#supported-controllers
+      urlkr: /software/rplus_mobile/mtask20/#지원-제어기
+  - title: "Menu Descriptions"
+    titlekr: "메뉴설명"
+    url: /software/rplus_mobile/mtask20/#menu-descriptions
     urlkr: /software/rplus_mobile/mtask20/#메뉴설명
     children:
-    - titlekr: "단계별 편집 탭"
+    - title: "Function Tabs"
+      titlekr: "단계별 편집 탭"
+      url: /software/rplus_mobile/mtask20/#function-tabs
       urlkr: /software/rplus_mobile/mtask20/#단계별-편집-탭
-    - titlekr: "시작화면"
+    - title: "Start Screen"
+      titlekr: "시작화면"
+      url: /software/rplus_mobile/mtask20/#start-screen
       urlkr: /software/rplus_mobile/mtask20/#시작화면
-    - titlekr: "홈 탭"
+    - title: "Home Tab"
+      titlekr: "홈 탭"
+      url: /software/rplus_mobile/mtask20/#home-tab
       urlkr: /software/rplus_mobile/mtask20/#홈-탭
-    - titlekr: "프로그래밍 탭"
+    - title: "Programming Tab"
+      titlekr: "프로그래밍 탭"
+      url: /software/rplus_mobile/mtask20/#programming-tab
       urlkr: /software/rplus_mobile/mtask20/#프로그래밍-탭
-    - titlekr: "디버깅 탭"
+    - title: "Debugging Tab"
+      titlekr: "디버깅 탭"
+      url: /software/rplus_mobile/mtask20/#debugging-tab
       urlkr: /software/rplus_mobile/mtask20/#디버깅-탭
-  - titlekr: "따라해보기"
+  - title: "Practice"
+    titlekr: "따라해보기"
+    url: /software/rplus_mobile/mtask20/#practice
     urlkr: /software/rplus_mobile/mtask20/#따라해보기
     children:
-    - titlekr: "예제파일 열기"
+    - title: "Open Example"
+      titlekr: "예제파일 열기"
+      url: /software/rplus_mobile/mtask20/#open-example
       urlkr: /software/rplus_mobile/mtask20/#예제파일-열기
-    - titlekr: "새 파일 만들기"
+    - title: "Create New File"
+      titlekr: "새 파일 만들기"
+      url: /software/rplus_mobile/mtask20/#create-new-file
       urlkr: /software/rplus_mobile/mtask20/#새-파일-만들기
-    - titlekr: "명령어 편집하기"
+    - title: "Instructions"
+      titlekr: "명령어 편집하기"
+      url: /software/rplus_mobile/mtask20/#instructions
       urlkr: /software/rplus_mobile/mtask20/#명령어-편집하기
-    - titlekr: "파라미터 편집하기"
+    - title: "Edit Parameters"
+      titlekr: "파라미터 편집하기"
+      url: /software/rplus_mobile/mtask20/#edit-parameters
       urlkr: /software/rplus_mobile/mtask20/#파라미터-편집하기
-    - titlekr: "다운로드 하기"
-      urlkr: /software/rplus_mobile/mtask20/#다운로드-하기
-    - titlekr: "프로그램 출력보기"
+    - title: "Task Download"
+      titlekr: "태스크 다운로드하기"
+      url: /software/rplus_mobile/mtask20/#task-download
+      urlkr: /software/rplus_mobile/mtask20/#태스크-다운로드하기
+    - title: "Program Output Monitor"
+      titlekr: "프로그램 출력보기"
+      url: /software/rplus_mobile/mtask20/#program-output-monitor
       urlkr: /software/rplus_mobile/mtask20/#프로그램-출력보기
-    - titlekr: "리모컨 사용하기"
+    - title: "Remote Controller"
+      titlekr: "리모컨 사용하기"
+      url: /software/rplus_mobile/mtask20/#remote-controller
       urlkr: /software/rplus_mobile/mtask20/#리모컨-사용하기
-  - titlekr: "프로그래밍(편집)"
+  - title: "Programming(Edit)"
+    titlekr: "프로그래밍(편집)"
+    url: /software/rplus_mobile/mtask20/#programmingedit
     urlkr: /software/rplus_mobile/mtask20/#프로그래밍편집
     children:
-    - titlekr: "명령어 삽입/변경"
+    - title: "Insert/Edit Instruction"
+      titlekr: "명령어 삽입/변경"
+      url: /software/rplus_mobile/mtask20/#insertedit-instruction
       urlkr: /software/rplus_mobile/mtask20/#명령어-삽입변경
-    - titlekr: "여러 줄 선택"
+    - title: "Select Multiple Lines"
+      titlekr: "여러 줄 선택"
+      url: /software/rplus_mobile/mtask20/#select-multiple-lines
       urlkr: /software/rplus_mobile/mtask20/#여러-줄-선택
-    - titlekr: "줄 삽입/지우기"
+    - title: "Insert/Delete Line"
+      titlekr: "줄 삽입/지우기"
+      url: /software/rplus_mobile/mtask20/#insertdelete-line
       urlkr: /software/rplus_mobile/mtask20/#줄-삽입지우기
-    - titlekr: "줄 활성/비활성"
+    - title: "Enable/Disable Line"
+      titlekr: "줄 활성/비활성"
+      url: /software/rplus_mobile/mtask20/#commentuncomment-line
       urlkr: /software/rplus_mobile/mtask20/#줄-활성비활성
-    - titlekr: "복사/잘라내기/붙여넣기"
+    - title: "Copy/Cut/Paste"
+      titlekr: "복사/잘라내기/붙여넣기"
+      url: /software/rplus_mobile/mtask20/#copycutpaste
       urlkr: /software/rplus_mobile/mtask20/#복사잘라내기붙여넣기
-    - titlekr: "실행취소/다시실행"
+    - title: "Undo/Redo"
+      titlekr: "실행취소/다시실행"
+      url: /software/rplus_mobile/mtask20/#undoredo
       urlkr: /software/rplus_mobile/mtask20/#실행취소다시실행
-  - titlekr: "프로그래밍(명령어)"
+  - title: "Programming(Instructions)"
+    titlekr: "프로그래밍(명령어)"
+    url: /software/rplus_mobile/mtask20/#programminginstructions
     urlkr: /software/rplus_mobile/mtask20/#프로그래밍명령어
-  - titlekr: "프로그래밍(파라미터)"
+  - title: "Programming(Parameters)"
+    titlekr: "프로그래밍(파라미터)"
+    url: /software/rplus_mobile/mtask20/#programmingparameters
     urlkr: /software/rplus_mobile/mtask20/#프로그래밍파라미터
-  - titlekr: "소프트웨어 다운로드"
+  - title: "Software Download"
+    titlekr: "소프트웨어 다운로드"
+    url: /software/rplus_mobile/mtask20/#software-download
     urlkr: /software/rplus_mobile/mtask20/#소프트웨어-다운로드
-  - titlekr: "유용한 정보"
+  - title: "Useful Tips"
+    titlekr: "유용한 정보"
+    url: /software/rplus_mobile/mtask20/#useful-tips
     urlkr: /software/rplus_mobile/mtask20/#유용한-정보
     children:
-    - titlekr: "변수, 함수 참조 찾기"
+    - title: "Search Variables/Functions"
+      titlekr: "변수, 함수 참조 찾기"
+      url: /software/rplus_mobile/mtask20/#search-variablesfunctions
       urlkr: /software/rplus_mobile/mtask20/#변수-함수-참조-찾기
-    - titlekr: "키워드 찾기"
+    - title: "Search Keyword"
+      titlekr: "키워드 찾기"
+      url: /software/rplus_mobile/mtask20/#search-keyword
       urlkr: /software/rplus_mobile/mtask20/#키워드-찾기
-    - titlekr: "문법검사, 컴파일 결과 확인하기"
+    - title: "Grammar Check/Compile"
+      titlekr: "문법검사, 컴파일 결과 확인하기"
+      url: /software/rplus_mobile/mtask20/#grammar-checkcompile
       urlkr: /software/rplus_mobile/mtask20/#문법검사-컴파일-결과-확인하기
-    - titlekr: "안드로이드 기기에 태스크파일 복사하기"
+    - title: "Copy Task to Android Devices"
+      titlekr: "안드로이드 기기에 태스크파일 복사하기"
+      url: /software/rplus_mobile/mtask20/#copy-task-to-android-devices
       urlkr: /software/rplus_mobile/mtask20/#안드로이드-기기에-태스크파일-복사하기
-    - titlekr: "Apple 기기에 태스크파일 복사하기"
+    - title: "Copy Task to iOS Devices"
+      titlekr: "Apple 기기에 태스크파일 복사하기"
+      url: /software/rplus_mobile/mtask20/#copy-task-to-ios-devices
       urlkr: /software/rplus_mobile/mtask20/#apple-기기에-태스크파일-복사하기
-  - titlekr: "자주 묻는 질문"
+  - title: "FAQ"
+    titlekr: "자주 묻는 질문"
+    url: /software/rplus_mobile/mtask20/#faq
     urlkr: /software/rplus_mobile/mtask20/#자주-묻는-질문
 
 mtask:
@@ -16817,84 +16949,84 @@ opencr10:
     - title: "Download Executable File"
       url: /parts/controller/opencr10/#download-executable-file
 
-arduino_dynamixel_shield:
+dynamixel_shield:
   - title: "Introduction"
     titlekr: "개요"
-    url: /parts/controller/arduino_dynamixel_shield/#introduction
-    urlkr: /parts/controller/arduino_dynamixel_shield/#개요
+    url: /parts/interface/dynamixel_shield/#introduction
+    urlkr: /parts/interface/dynamixel_shield/#개요
   - title: "Specifications"
     titlekr: "제품 사양"
-    url: /parts/controller/arduino_dynamixel_shield/#specifications
-    urlkr: /parts/controller/arduino_dynamixel_shield/#제품-사양
+    url: /parts/interface/dynamixel_shield/#specifications
+    urlkr: /parts/interface/dynamixel_shield/#제품-사양
   - title: "Layout"
     titlekr: "각 부 명칭"
-    url: /parts/controller/arduino_dynamixel_shield/#layout
-    urlkr: /parts/controller/arduino_dynamixel_shield/#각-부-명칭
+    url: /parts/interface/dynamixel_shield/#layout
+    urlkr: /parts/interface/dynamixel_shield/#각-부-명칭
   - title: "Connecting Power"
     titlekr: "전원 연결 방법"
-    url: /parts/controller/arduino_dynamixel_shield/#connecting-power
-    urlkr: /parts/controller/arduino_dynamixel_shield/#전원-연결-방법
+    url: /parts/interface/dynamixel_shield/#connecting-power
+    urlkr: /parts/interface/dynamixel_shield/#전원-연결-방법
   - title: "Switches"
     titlekr: "스위치"
-    url: /parts/controller/arduino_dynamixel_shield/#switches
-    urlkr: /parts/controller/arduino_dynamixel_shield/#스위치
+    url: /parts/interface/dynamixel_shield/#switches
+    urlkr: /parts/interface/dynamixel_shield/#스위치
     children:
     - title: "Upload Switch"
       titlekr: "업로드 스위치"
-      url: /parts/controller/arduino_dynamixel_shield/#upload-switch
-      urlkr: /parts/controller/arduino_dynamixel_shield/#업로드-스위치
+      url: /parts/interface/dynamixel_shield/#upload-switch
+      urlkr: /parts/interface/dynamixel_shield/#업로드-스위치
     - title: "Dynamixel Power Switch"
       titlekr: "다이나믹셀 전원 스위치"
-      url: /parts/controller/arduino_dynamixel_shield/#dynamixel-power-switch
-      urlkr: /parts/controller/arduino_dynamixel_shield/#다이나믹셀-전원-스위치
+      url: /parts/interface/dynamixel_shield/#dynamixel-power-switch
+      urlkr: /parts/interface/dynamixel_shield/#다이나믹셀-전원-스위치
   - title: "Arduino Shield Libraries"
     titlekr: "아두이노 쉴드 라이브러리"
-    url: /parts/controller/arduino_dynamixel_shield/#arduino-shield-libraries
-    urlkr: /parts/controller/arduino_dynamixel_shield/#아두이노-쉴드-라이브러리
+    url: /parts/interface/dynamixel_shield/#arduino-shield-libraries
+    urlkr: /parts/interface/dynamixel_shield/#아두이노-쉴드-라이브러리
     children:
     - title: "Features"
       titlekr: "특징"
-      url: /parts/controller/arduino_dynamixel_shield/#features
-      urlkr: /parts/controller/arduino_dynamixel_shield/#특징
+      url: /parts/interface/dynamixel_shield/#features
+      urlkr: /parts/interface/dynamixel_shield/#특징
     - title: "Install Library"
       titlekr: "라이브러리 설치"
-      url: /parts/controller/arduino_dynamixel_shield/#install-library
-      urlkr: /parts/controller/arduino_dynamixel_shield/#라이브러리-설치
+      url: /parts/interface/dynamixel_shield/#install-library
+      urlkr: /parts/interface/dynamixel_shield/#라이브러리-설치
   - title: "Library API"
     titlekr: "라이브러리 API"
-    url: /parts/controller/arduino_dynamixel_shield/#library-api
-    urlkr: /parts/controller/arduino_dynamixel_shield/#라이브러리-api
+    url: /parts/interface/dynamixel_shield/#library-api
+    urlkr: /parts/interface/dynamixel_shield/#라이브러리-api
     children:
     - title: "Initialize Library"
       titlekr: "라이브러리 초기화"
-      url: /parts/controller/arduino_dynamixel_shield/#initialize-library
-      urlkr: /parts/controller/arduino_dynamixel_shield/#라이브러리-초기화
+      url: /parts/interface/dynamixel_shield/#initialize-library
+      urlkr: /parts/interface/dynamixel_shield/#라이브러리-초기화
     - title: "Connect Dynamixel"
       titlekr: "다이나믹셀 연결"
-      url: /parts/controller/arduino_dynamixel_shield/#connect-dynamixel
-      urlkr: /parts/controller/arduino_dynamixel_shield/#다이나믹셀-연결
+      url: /parts/interface/dynamixel_shield/#connect-dynamixel
+      urlkr: /parts/interface/dynamixel_shield/#다이나믹셀-연결
     - title: "Available APIs"
       titlekr: "사용 가능한 API 목록"
-      url: /parts/controller/arduino_dynamixel_shield/#available-apis
-      urlkr: /parts/controller/arduino_dynamixel_shield/#사용-가능한-api-목록
+      url: /parts/interface/dynamixel_shield/#available-apis
+      urlkr: /parts/interface/dynamixel_shield/#사용-가능한-api-목록
 
 u2d2_power_hub:
   - title: "Introduction"
     titlekr: "개요"
-    url: /parts/controller/u2d2_power_hub/#introduction
-    urlkr: /parts/controller/u2d2_power_hub/#개요
+    url: /parts/interface/u2d2_power_hub/#introduction
+    urlkr: /parts/interface/u2d2_power_hub/#개요
   - title: "Specifications"
     titlekr: "제품 사양"
-    url: /parts/controller/u2d2_power_hub/#specifications
-    urlkr: /parts/controller/u2d2_power_hub/#제품-사양
+    url: /parts/interface/u2d2_power_hub/#specifications
+    urlkr: /parts/interface/u2d2_power_hub/#제품-사양
   - title: "Layout"
     titlekr: "각 부 명칭"
-    url: /parts/controller/u2d2_power_hub/#layout
-    urlkr: /parts/controller/u2d2_power_hub/#각-부-명칭
+    url: /parts/interface/u2d2_power_hub/#layout
+    urlkr: /parts/interface/u2d2_power_hub/#각-부-명칭
   - title: "Cautions"
     titlekr: "주의사항"
-    url: /parts/controller/u2d2_power_hub/#cautions
-    urlkr: /parts/controller/u2d2_power_hub/#주의사항
+    url: /parts/interface/u2d2_power_hub/#cautions
+    urlkr: /parts/interface/u2d2_power_hub/#주의사항
 
 opencm7:
   - titlekr: "개요"

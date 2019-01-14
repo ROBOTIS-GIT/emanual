@@ -80,7 +80,24 @@ user’s negligence or misuse of the product.
 
 Check your ROBOTIS OP2 package for the following items.
 
-![](/assets/images/platform/op2/op2_003.gif)
+| No | Item                                     | Quantity |
+|:---|:-----------------------------------------|:--------:|
+| 1  | Fully-assembled ROBOTIS OP2 robot        |    1     |
+| 2  | USB Thumb Drive (with recovery software) |    1     |
+| 3  | Fuse                                     |    2     |
+| 4  | Color Cards                              |    7     |
+| 5  | Quick Start Manual                       |    1     |
+| 6  | Power Cable                              |    1     |
+| 7  | DC Power Supply                          |    1     |
+| 8  | Spare Cables                             |  1 pack  |
+| 9  | Red Ball                                 |    1     |
+| 10 | RoboPlus CD                              |    1     |
+| 11 | Battery Pack                             |    3     |
+| 12 | Battery Charger                          |    1     |
+| 13 | Wrench & Screw Driver                    |  1 set   |
+| 14 | Spare Bolts and Nuts                     |  1 pack  |
+| 15 | Ethernet Cable                           |    1     |
+| 16 | Hard Case                                |    1     |
 
 ![](/assets/images/platform/op2/op2_004.png)
 

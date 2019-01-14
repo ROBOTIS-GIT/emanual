@@ -9,6 +9,7 @@ permalink: /docs/en/dxl/ax/ax-12a/
 sidebar:
   title: AX-12A
   nav: "ax-12a"
+product_group: dxl_ax
 ---
 
 ![](/assets/images/dxl/ax/ax-12+_product.png)
@@ -27,14 +28,14 @@ sidebar:
 | Item                   | Specifications                                                              |
 |:-----------------------|:----------------------------------------------------------------------------|
 | Baud Rate              | 7843 bps ~ 1 Mbps                                                           |
-| Resolution             | 0.29&deg;                                                                   |
-| Running Degree         | 0&deg; ~ 300&deg;<br />Endless Turn                                         |
+| Resolution             | 0.29 [&deg;]                                                                   |
+| Running Degree         | 0 [&deg;] ~ 300 [&deg;]<br />Endless Turn                                         |
 | Weight                 | 53.5g(AX-12, AX-12+), 54.6g(AX-12A)                                         |
 | Dimensions (W x H x D) | 32mm x 50mm x 40mm                                                          |
 | Gear Ratio             | 254 : 1                                                                     |
 | Stall Torque           | 1.5 N*m (at 12V, 1.5A)                                                      |
 | No Load Speed          | 59rpm (at 12V)                                                              |
-| Operating Temperature  | -5&deg;C ~ +70&deg;C                                                        |
+| Operating Temperature  | -5 [&deg;C] ~ +70 [&deg;C]                                                        |
 | Input Voltage          | 9.0 ~ 12.0V (**Recommended : 11.1V**)                                       |
 | Command Signal         | Digital Packet                                                              |
 | Protocol Type          | Half Duplex Asynchronous Serial Communication<br />(8bit, 1stop, No Parity) |
@@ -48,7 +49,7 @@ sidebar:
 
 {% include en/dxl/warning.md %}
 
-{% include en/dxl/control_table_protocol1.md %}
+{% include en/dxl/control_table.md %}
 
 ## [Control Table of EEPROM Area](#control-table-of-eeprom-area)
 
@@ -216,7 +217,9 @@ Baud Rate determines serial communication speed between a controller and DYNAMIX
 
 # [Reference](#reference)
 
-**NOTE** : [Compatibility Guide]
+**NOTE**  
+[Compatibility Guide]{: .blank}  
+[Harness Compatibility]{: .popup}
 {: .notice}
 
 ## [Connector Information](#connector-information)
@@ -233,3 +236,4 @@ Baud Rate determines serial communication speed between a controller and DYNAMIX
 
 
 [Compatibility Guide]: http://en.robotis.com/service/compatibility_table.php?cate=d
+[Harness Compatibility]: /assets/images/dxl/cable_compatibility.png

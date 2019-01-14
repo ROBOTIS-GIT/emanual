@@ -3,7 +3,7 @@ layout: archive
 lang: kr
 ref: rh_p12_rna
 read_time: true
-share: true
+share: false
 author_profile: false
 permalink: /docs/kr/platform/rh_p12_rna/
 sidebar:
@@ -27,7 +27,7 @@ sidebar:
 | 통신 속도           | 9,600 bps ~ 10.5 Mbps                                                                          |
 | 제어 알고리즘       | PID Control                                                                                    |
 | 정밀도              | 0.088&deg;                                                                                     |
-| 동작 모드           | 전류제어 모드<br />전류기반 위치제어 모드                                                |
+| 동작 모드           | 전류제어 모드<br />전류기반 위치제어 모드                                                         |
 | 무게                | 500g                                                                                           |
 | 스트로크            | 0 ~ 109mm                                                                                      |
 | 감속비              | 1295.7 : 1                                                                                     |
@@ -46,13 +46,13 @@ sidebar:
 
 {% include kr/dxl/warning.md %}
 
-{% include kr/dxl/pro_plus/control_table.md %}
+{% include kr/dxl/control_table.md %}
 
 ## [EEPROM 영역](#eeprom-영역)
 
 | 주소 | 크기<br>(Byte) | 명칭                                        |  접근 | 기본값 |             범위               | 단위 |
 |:----:|:--------------:|:--------------------------------------------|:-----:|:------:|:----------------------------:|:------:|
-|  0   |       2        | [Model Number](#model-number)               |   R   | 51,201 |              -               | - |
+|  0   |       2        | [Model Number](#model-number)               |   R   | 35,074 |              -               | - |
 |  2   |       4        | [Model Information](#model-information)     |   R   |   -    |              -               | - |
 |  6   |       1        | [Firmware Version](#firmware-version)       |   R   |   -    |              -               | - |
 |  7   |       1        | [ID](#id)                                   |   RW  |   1    |           0 ~ 252            | - |
@@ -443,12 +443,12 @@ Profile에 의해 생성된 목표 위치 궤적입니다. 전류기반 위치 �
 |다이어그램|![](/assets/images/dxl/jst_b4beha_diagram.png)|![](/assets/images/dxl/molex_5304706_diagram.png)|
 |하우징|[JST EHR-04]|![](/assets/images/dxl/molex_510210600.png)<br />[MOLEX 51021-0600]|
 |PCB 헤더|![](/assets/images/dxl/jst_b4beha.png)<br />[JST B4B-EH-A]|![](/assets/images/dxl/molex_530470610.png)<br />[MOLEX 53047-0610]|
-|Crimp 터미널|[JST SHE-001T-P0.6]|[MOLEX 50079-8100]|
+|Crimp 터미널|[JST SEH-001T-P0.6]|[MOLEX 50079-8100]|
 |Wire Gauge|21 AWG|21 AWG|
 
 [JST EHR-04]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
 [JST B4B-EH-A]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
-[JST SHE-001T-P0.6]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
+[JST SEH-001T-P0.6]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
 [MOLEX 51021-0600]: http://www.molex.com/molex/products/datasheet.jsp?part=active/0510210600_CRIMP_HOUSINGS.xml
 [MOLEX 53047-0610]: http://www.molex.com/molex/products/datasheet.jsp?part=active/0530470610_PCB_HEADERS.xml
 [MOLEX 50079-8100]: http://www.molex.com/molex/products/datasheet.jsp?part=active/0500798100_CRIMP_TERMINALS.xml
@@ -458,6 +458,5 @@ Profile에 의해 생성된 목표 위치 궤적입니다. 전류기반 위치 �
 `다운로드` [RH-P12-RN(STP).zip](http://www.robotis.com/service/download.php?no=741)
 
 
-[PDF]: http://support.robotis.com/en/baggage_files/dynamixel/rh-p12-rn.pdf
 [Torque Enable(562)]: #torque-enable562
 [Profile Velocity(560)]: #profile-velocity560

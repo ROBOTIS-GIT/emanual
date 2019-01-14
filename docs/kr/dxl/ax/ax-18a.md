@@ -9,6 +9,7 @@ permalink: /docs/kr/dxl/ax/ax-18a/
 sidebar:
   title: AX-18A
   nav: "ax-18a"
+product_group: dxl_ax
 ---
 
 ![](/assets/images/dxl/ax/ax-18f_product.jpg)
@@ -23,7 +24,7 @@ sidebar:
 
 | 항목            | 내용                                                                        |
 |:----------------|:----------------------------------------------------------------------------|
-| 무게            | 54.5 [g](AX-18F), 55.9 [g](AX-18A)                                                |
+| 무게            | AX-18F (54.5 [g]), AX-18A (55.9 [g])                                                |
 | 크기            | 32 X 50 X 40 [mm]<br />1.26 X 1.97 X 1.57 [inch]                            |
 | 최소 제어각     | 0.29 [deg]                                                                   |
 | 모터            | Coreless                                                                    |
@@ -46,7 +47,7 @@ sidebar:
 
 {% include kr/dxl/warning.md %}
 
-{% include kr/dxl/control_table_protocol1.md %}
+{% include kr/dxl/control_table.md %}
 
 ## [EEPROM 영역](#eeprom-영역)
 
@@ -206,7 +207,9 @@ Baudrate(BPS) = 2,000,000 / (Value + 1)
 
 # [참고자료](#참고자료)
 
-**주의**: [호환성 가이드]
+**주의**  
+[호환성 가이드]{: .blank}  
+[케이블 호환성]{: .popup}
 {: .notice}
 
 ## [커넥터 정보](#커넥터-정보)
@@ -221,3 +224,4 @@ Baudrate(BPS) = 2,000,000 / (Value + 1)
 {% include kr/dxl/485_ttl_connection.md %}
 
 [호환성 가이드]: http://www.robotis.com/service/compatibility_table.php?cate=d
+[케이블 호환성]: /assets/images/dxl/cable_compatibility.png

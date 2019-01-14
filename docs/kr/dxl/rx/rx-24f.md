@@ -9,6 +9,7 @@ permalink: /docs/kr/dxl/rx/rx-24f/
 sidebar:
   title: RX-24F
   nav: "rx-24f"
+product_group: dxl_rx
 ---
 
 ![](/assets/images/dxl/rx/rx-24f_product.png)
@@ -45,7 +46,7 @@ sidebar:
 
 {% include kr/dxl/warning.md %}
 
-{% include kr/dxl/control_table_protocol1.md %}
+{% include kr/dxl/control_table.md %}
 
 ## [EEPROM 영역](#eeprom-영역)
 
@@ -238,7 +239,7 @@ sidebar:
 
 # [참고자료](#참고자료)
 
-**주의**: [호환성 가이드]
+**주의**: [호환성 가이드]{: .blank}
 {: .notice}
 
 ## [커넥터 정보](#커넥터-정보)

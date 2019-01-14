@@ -78,7 +78,7 @@ sidebar:
 |6. 해양탐사선<br />![](/assets/images/edu/smart/200_6submarine.png)|[로봇 예제 프로그램][01_smart3_L3_Research_Vessel_kr.tskx]<br />[조종기 프로그램][03_smart3_L3_Research_Vessel_RC_kr.tskx]|
 |7. 농구 로봇<br />![](/assets/images/edu/smart/200_7basketball.png)|[로봇 예제 프로그램][01_smart3_L3_Basketball_Bot_kr.tskx]<br />[조종기 프로그램][03_smart3_L3_Basketball_Bot_RC_kr.tskx]|
 |8. 덤프트럭<br />![](/assets/images/edu/smart/200_8ump_truck.png)|[로봇 예제 프로그램][01_smart3_L3_Dump_Truck_kr.tskx]<br />[조종기 프로그램][03_smart3_L3_Dump_Truck_RC_kr.tskx]|
-|9. 스마트 지게카<br />![](/assets/images/edu/smart/200_9forklift.png)|[로봇 예제 프로그램][01_smart3_L3_Forklift_kr.tskx]<br />[조종기 프로그램][03_smart3_L3_Forklift_RC_kr.tskx]|
+|9. 스마트 지게차<br />![](/assets/images/edu/smart/200_9forklift.png)|[로봇 예제 프로그램][01_smart3_L3_Forklift_kr.tskx]<br />[조종기 프로그램][03_smart3_L3_Forklift_RC_kr.tskx]|
 |10. 플라스틱맨<br />![](/assets/images/edu/smart/200_10wolverine.png)|[로봇 예제 프로그램][01_smart3_L3_Plastic_Man_kr.tskx]<br />[자율 프로그램][03_smart3_L3_Plastic_Man_AI_kr.tskx]|
 |11. 지프차<br />![](/assets/images/edu/smart/200_11jeep.png)|[로봇 예제 프로그램][01_smart3_L3_Jeep_Car_kr.tskx]<br />[조종기 프로그램][03_smart3_L3_Jeep_Car_RC_kr.tskx]|
 |12. 타워크레인<br />![](/assets/images/edu/smart/200_12crane.png)|[로봇 예제 프로그램][01_smart3_L3_Tower_Crane_kr.tskx]<br />[조종기 프로그램][03_smart3_L3_Tower_Crane_RC_kr.tskx]|
@@ -93,27 +93,27 @@ sidebar:
 [3단계 교안예제]: #교안예제
 [태스크 코드 다운로드]: /docs/kr/faq/download_task_code/
 [BT-410]: /docs/kr/parts/communication/bt-410/
-[01_smart3_L3_Snow_Mobile_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/01_smart3_l3_snow_mobile_kr.tskx
-[03_smart3_L3_Snow_Mobile_RC_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/03_smart3_l3_snow_mobile_rc_kr.tskx
-[01_smart3_L3_Add_Game_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/01_smart3_l3_add_game_kr.tskx
-[03_smart3_L3_Add_Game_RC_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/03_smart3_l3_add_game_rc_kr.tskx
-[01_smart3_L3_Strong_Box_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/01_smart3_l3_strong_box_kr.tskx
-[03_smart3_L3_Strong_Box_RC_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/03_smart3_l3_strong_box_rc_kr.tskx
-[01_smart3_L3_Multiple_Roket_Tank_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/01_smart3_l3_multiple_roket_tank_kr.tskx
-[03_smart3_L3_Multiple_Roket_Tank_RC_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/03_smart3_l3_multiple_roket_tank_rc_kr.tskx
-[01_smart3_L3_Firefly_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/01_smart3_l3_firefly_kr.tskx
-[3_smart3_L3_Firefly_RC_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/03_smart3_l3_firefly_rc_kr.tskx
-[01_smart3_L3_Research_Vessel_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/01_smart3_l3_research_vessel_kr.tskx
-[03_smart3_L3_Research_Vessel_RC_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/03_smart3_l3_research_vessel_rc_kr.tskx
-[01_smart3_L3_Basketball_Bot_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/01_smart3_l3_basketball_bot_kr.tskx
-[03_smart3_L3_Basketball_Bot_RC_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/03_smart3_l3_basketball_bot_rc_kr.tskx
-[01_smart3_L3_Dump_Truck_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/01_smart3_l3_dump_truck_kr.tskx
-[03_smart3_L3_Dump_Truck_RC_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/03_smart3_l3_dump_truck_rc_kr.tskx
-[01_smart3_L3_Forklift_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/01_smart3_l3_forklift_kr.tskx
-[03_smart3_L3_Forklift_RC_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/03_smart3_l3_forklift_rc_kr.tskx
-[01_smart3_L3_Plastic_Man_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/01_smart3_l3_plastic_man_kr.tskx
-[03_smart3_L3_Plastic_Man_AI_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/03_smart3_l3_plastic_man_ai_kr.tskx
-[01_smart3_L3_Jeep_Car_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/01_smart3_l3_jeep_car_kr.tskx
-[03_smart3_L3_Jeep_Car_RC_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/03_smart3_l3_jeep_car_rc_kr.tskx
-[01_smart3_L3_Tower_Crane_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/01_smart3_l3_tower_crane_kr.tskx
-[03_smart3_L3_Tower_Crane_RC_kr.tskx]: http://support.robotis.com/ko/baggage_files/smart3/03_smart3_l3_tower_crane_rc_kr.tskx
+[01_smart3_L3_Snow_Mobile_kr.tskx]: http://www.robotis.com/service/download.php?no=1093
+[03_smart3_L3_Snow_Mobile_RC_kr.tskx]: http://www.robotis.com/service/download.php?no=1105
+[01_smart3_L3_Add_Game_kr.tskx]: http://www.robotis.com/service/download.php?no=1084
+[03_smart3_L3_Add_Game_RC_kr.tskx]: http://www.robotis.com/service/download.php?no=1096
+[01_smart3_L3_Strong_Box_kr.tskx]: http://www.robotis.com/service/download.php?no=1094
+[03_smart3_L3_Strong_Box_RC_kr.tskx]: http://www.robotis.com/service/download.php?no=1106
+[01_smart3_L3_Multiple_Roket_Tank_kr.tskx]: http://www.robotis.com/service/download.php?no=1090
+[03_smart3_L3_Multiple_Roket_Tank_RC_kr.tskx]: http://www.robotis.com/service/download.php?no=1102
+[01_smart3_L3_Firefly_kr.tskx]: http://www.robotis.com/service/download.php?no=1087
+[3_smart3_L3_Firefly_RC_kr.tskx]: http://www.robotis.com/service/download.php?no=1099
+[01_smart3_L3_Research_Vessel_kr.tskx]: http://www.robotis.com/service/download.php?no=1092
+[03_smart3_L3_Research_Vessel_RC_kr.tskx]: http://www.robotis.com/service/download.php?no=1104
+[01_smart3_L3_Basketball_Bot_kr.tskx]: http://www.robotis.com/service/download.php?no=1085
+[03_smart3_L3_Basketball_Bot_RC_kr.tskx]: http://www.robotis.com/service/download.php?no=1097
+[01_smart3_L3_Dump_Truck_kr.tskx]: http://www.robotis.com/service/download.php?no=1086
+[03_smart3_L3_Dump_Truck_RC_kr.tskx]: http://www.robotis.com/service/download.php?no=1098
+[01_smart3_L3_Forklift_kr.tskx]: http://www.robotis.com/service/download.php?no=1088
+[03_smart3_L3_Forklift_RC_kr.tskx]: http://www.robotis.com/service/download.php?no=1100
+[01_smart3_L3_Plastic_Man_kr.tskx]: http://www.robotis.com/service/download.php?no=1091
+[03_smart3_L3_Plastic_Man_AI_kr.tskx]: http://www.robotis.com/service/download.php?no=1103
+[01_smart3_L3_Jeep_Car_kr.tskx]: http://www.robotis.com/service/download.php?no=1089
+[03_smart3_L3_Jeep_Car_RC_kr.tskx]: http://www.robotis.com/service/download.php?no=1101
+[01_smart3_L3_Tower_Crane_kr.tskx]: http://www.robotis.com/service/download.php?no=1095
+[03_smart3_L3_Tower_Crane_RC_kr.tskx]: http://www.robotis.com/service/download.php?no=1107

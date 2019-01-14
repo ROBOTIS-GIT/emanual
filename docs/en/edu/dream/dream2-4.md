@@ -11,8 +11,6 @@ sidebar:
   nav: "dream2-4"
 ---
 
-# DREAM2 Level 4
-
 # [Introduction](#introduction)
 
 ROBOTIS DREAM Level II 4 comes with the controller and teaches you the principles of servo motor control, usage of the touch sensor and IR sensors, and LED modules.  
@@ -46,20 +44,20 @@ This is included in ROBOTIS DREAM II Level 1.
 
 1. Example program of each chapter
 
-|Robot|TASK Code|
-| :---: | :---: |
-|1. Music Box<br />![](/assets/images/edu/dream/dream1-3_orgol.jpg)|[Download][ex_01]|
-|2. Cleaning Robot<br />![](/assets/images/edu/dream/dream1-3_cleaningrobot.jpg)|[Download][ex_02]<br>[Download remote control program][ex_02-1]|
-|3. Truck<br />![](/assets/images/edu/dream/dream1-3_truck.jpg)|[Download][ex_03]<br>[Download remote control program][ex_03-1]|
-|4. Bumper Car<br />![](/assets/images/edu/dream/dream1-3_bumpercar.jpg)|[Download][ex_04]<br>[Download remote control program][ex_04-1]|
-|5. Probing Car<br />![](/assets/images/edu/dream/dream1-3_probingcar.jpg)|[Download][ex_05]<br>[Download remote control program][ex_05-1]|
-|6. Electric Guitar<br />![](/assets/images/edu/dream/dream1-3_guitar.jpg)|[Download][ex_06]|
-|7. Flag Game Robot<br />![](/assets/images/edu/dream/dream1-3_flaggame.jpg)|[Download][ex_07]|
-|8. Crane<br />![](/assets/images/edu/dream/dream1-3_crane.jpg)|[Download][ex_08]<br>[Download remote control program][ex_08-1]|
-|9. Drunken Basket<br />![](/assets/images/edu/dream/dream1-3_basket.jpg)|[Download][ex_09]|
-|10. Viking<br />![](/assets/images/edu/dream/dream1-3_viking.jpg)|[Download][ex_10]|
-|11. Whac-A-Mole<br />![](/assets/images/edu/dream/dream1-3_whacamole.jpg)|[Download][ex_11]|
-|12. Goblin Robot<br />![](/assets/images/edu/dream/dream1-3_goblin.jpg)|[Download][ex_12]|
+|                                      Robot                                      |                            TASK Code                            |
+|:-------------------------------------------------------------------------------:|:---------------------------------------------------------------:|
+|       1. Music Box<br />![](/assets/images/edu/dream/dream1-3_orgol.jpg)        |                        [Download][ex_01]                        |
+| 2. Cleaning Robot<br />![](/assets/images/edu/dream/dream1-3_cleaningrobot.jpg) | [Download][ex_02]<br>[Download remote control program][ex_02-1] |
+|         3. Truck<br />![](/assets/images/edu/dream/dream1-3_truck.jpg)          | [Download][ex_03]<br>[Download remote control program][ex_03-1] |
+|     4. Bumper Car<br />![](/assets/images/edu/dream/dream1-3_bumpercar.jpg)     | [Download][ex_04]<br>[Download remote control program][ex_04-1] |
+|    5. Probing Car<br />![](/assets/images/edu/dream/dream1-3_probingcar.jpg)    | [Download][ex_05]<br>[Download remote control program][ex_05-1] |
+|    6. Electric Guitar<br />![](/assets/images/edu/dream/dream1-3_guitar.jpg)    |                        [Download][ex_06]                        |
+|   7. Flag Game Robot<br />![](/assets/images/edu/dream/dream1-3_flaggame.jpg)   |                        [Download][ex_07]                        |
+|         8. Crane<br />![](/assets/images/edu/dream/dream1-3_crane.jpg)          | [Download][ex_08]<br>[Download remote control program][ex_08-1] |
+|        9. Basket<br />![](/assets/images/edu/dream/dream1-3_basket.jpg)         |                        [Download][ex_09]                        |
+|        10. Viking<br />![](/assets/images/edu/dream/dream1-3_viking.jpg)        |                        [Download][ex_10]                        |
+|    11. Whac-A-Mole<br />![](/assets/images/edu/dream/dream1-3_whacamole.jpg)    |                        [Download][ex_11]                        |
+|     12. Goblin Robot<br />![](/assets/images/edu/dream/dream1-3_goblin.jpg)     |                        [Download][ex_12]                        |
 
 [CM-150]: /docs/en/parts/controller/cm-150/
 [Servo Motor]: /docs/en/parts/motor/servo_motor/
@@ -67,20 +65,20 @@ This is included in ROBOTIS DREAM II Level 1.
 [LED Module]: /docs/en/parts/display/lm-10/
 [Touch Sensor]: /docs/en/parts/sensor/ts-10/
 [How to Download Task code]: /docs/en/faq/download_task_code/#cm-150
-[ex_01]: http://support.robotis.com/en/baggage_files/dream/dream2_l4_musicbox_en.tskx
-[ex_02]: http://support.robotis.com/en/baggage_files/dream/dream2_l4_cleaningrobot_en.tskx
-[ex_02-1]: http://support.robotis.com/en/baggage_files/dream/dream2_l4_cleaningrobot_en(rc).tskx
-[ex_03]: http://support.robotis.com/en/baggage_files/dream/dream2_l4_truck_en.tskx
-[ex_03-1]: http://support.robotis.com/en/baggage_files/dream/dream2_l4_truck_en(rc).tskx
-[ex_04]: http://support.robotis.com/en/baggage_files/dream/dream2_l4_bumpercar_en.tskx
-[ex_04-1]: http://support.robotis.com/en/baggage_files/dream/dream2_l4_bumpercar_en(rc).tskx
-[ex_05]: http://support.robotis.com/en/baggage_files/dream/dream2_l4_probingcar_en.tskx
-[ex_05-1]: http://support.robotis.com/en/baggage_files/dream/dream2_l4_probingcar_en(rc).tskx
-[ex_06]: http://support.robotis.com/en/baggage_files/dream/dream2_l4_electricguitar_en.tskx
-[ex_07]: http://support.robotis.com/en/baggage_files/dream/dream2_l4_flaggame_en.tskx
-[ex_08]: http://support.robotis.com/en/baggage_files/dream/dream2_l4_crane_en.tskx
-[ex_08-1]: http://support.robotis.com/en/baggage_files/dream/dream2_l4_crane_en(rc).tskx
-[ex_09]: http://support.robotis.com/en/baggage_files/dream/dream2_l4_drunkenbasket_en.tskx
-[ex_10]: http://support.robotis.com/en/baggage_files/dream/dream2_l4_viking_en.tskx
-[ex_11]: http://support.robotis.com/en/baggage_files/dream/dream2_l4_whac-a-mole_en.tskx
-[ex_12]: http://support.robotis.com/en/baggage_files/dream/dream2_l4_goblin_en.tskx
+[ex_01]: http://www.robotis.com/service/download.php?no=1607
+[ex_02]: http://www.robotis.com/service/download.php?no=1600
+[ex_02-1]: http://www.robotis.com/service/download.php?no=1599
+[ex_03]: http://www.robotis.com/service/download.php?no=1611
+[ex_03-1]: http://www.robotis.com/service/download.php?no=1610
+[ex_04]: http://www.robotis.com/service/download.php?no=1598
+[ex_04-1]: http://www.robotis.com/service/download.php?no=1597
+[ex_05]: http://www.robotis.com/service/download.php?no=1609
+[ex_05-1]: http://www.robotis.com/service/download.php?no=1608
+[ex_06]: http://www.robotis.com/service/download.php?no=1605
+[ex_07]: http://www.robotis.com/service/download.php?no=1604
+[ex_08]: http://www.robotis.com/service/download.php?no=1602
+[ex_08-1]: http://www.robotis.com/service/download.php?no=1601
+[ex_09]: http://www.robotis.com/service/download.php?no=1603
+[ex_10]: http://www.robotis.com/service/download.php?no=1612
+[ex_11]: http://www.robotis.com/service/download.php?no=1606
+[ex_12]: http://www.robotis.com/service/download.php?no=1596

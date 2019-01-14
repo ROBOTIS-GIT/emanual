@@ -24,7 +24,7 @@ common_pro_specs:
   standbycurrent:     &standbycurrent     "80 [mA]"
 
 h42-20-s300-r:
-  motor:              *motor
+  motor:              "Coreless(Maxon)"
   baudrate:           *baudrate
   opmode_en:          *opmode_en
   opmode:             *opmode
@@ -111,7 +111,7 @@ h54-200-s500-r:
   standbycurrent:     *standbycurrent
 
 l42-10-s300-r:
-  motor:              *motor_l
+  motor:              "Coreless"
   baudrate:           *baudrate
   opmode_en:          *opmode_en
   opmode:             *opmode
@@ -256,7 +256,7 @@ l54-50-s500-r:
   standbycurrent:     *standbycurrent
 
 m42-10-s260-r:
-  motor:              *motor
+  motor:              "Coreless(Maxon)"
   baudrate:           *baudrate
   opmode_en:          *opmode_en
   opmode:             *opmode

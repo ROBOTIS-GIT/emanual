@@ -151,6 +151,11 @@ Control Table consists of data regarding the current status and operation of con
 |   410   |  1   |    Port 3 Color Sensor Value    |    Color Sensor Value on Port 3    |   R    |     -      |
 
 **NOTE** : Some Addresses of the Control Table can be tested with R+ Manager 2.0.
+{: .notice}
+
+**WARNING** : Dynamixel should **NOT** use ID 200 when OpenCM9.04 is using factory default firmware recovered with R+Manager.  
+ID 200 will be assigned to OpenCM9.04 in a factory default firmware.
+{: .notice--warning}
 
 # [Hardware](#hardware)
 

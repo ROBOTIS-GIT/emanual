@@ -77,19 +77,19 @@ sidebar:
 [스마트II 2단계 교안예제]: #교안예제
 [태스크 코드 다운로드]: /docs/kr/faq/download_task_code/
 [BT-210]: /docs/kr/parts/communication/bt-210/
-[01_SMARTII_L3_SMARTEXPLORER_KR.tsk]: http://support.robotis.com/ko/baggage_files/smart/01_smart2_l3_smartexplorer_kr.tsk
-[02_SMARTII_L3_tts_test_KR.tsk]: http://support.robotis.com/ko/baggage_files/smart/02_smart_l3_tts_test_kr.tsk
-[01_SMARTII_L3_TALKINGROBOT_KR.tsk]: http://support.robotis.com/ko/baggage_files/smart/01_smart2_l3_talkingrobot_kr.tsk
-[02_SMARTII_L3_speechrecognition_test_KR.tsk]: http://support.robotis.com/ko/baggage_files/smart/02_smart2_l3_speechrecognition_test_kr.tsk
-[01_SMARTII_L3_QUADRUPEDROBOT_KR.tsk]: http://support.robotis.com/ko/baggage_files/smart2/01_smart2_l3_quadrupedrobot_kr.tsk
-[02_SMARTII _L3_motion_test_KR.tsk]: http://support.robotis.com/ko/baggage_files/smart2/02_smart%E2%85%A1_l3_motion_test_kr.tsk
-[SMARTII _L3_QUADRUPEDROBOT.mtnx]: http://support.robotis.com/ko/baggage_files/smart2/smart2_l3_quadrupedrobot.mtnx
-[01_SMARTII_L3_SMARTPUPPY_KR.tsk]: http://support.robotis.com/ko/baggage_files/smart2/01_smart2_l3_smartpuppy_kr.tsk
-[02_SMARTII_L3_audio_test_KR.tsk]: http://support.robotis.com/ko/baggage_files/smart/02_smart2_l3_audio_test_kr.tsk
-[SMARTII_L3_SMARTPUPPY.mtnx]: http://support.robotis.com/ko/baggage_files/smart2/smart2_l3_smartpuppy.mtnx
-[01_SMARTII_L3_TRANSFORMATIONROBOT_KR.tsk]: http://support.robotis.com/ko/baggage_files/smart/01_smart2_l3_transformationrobot_kr.tsk
-[02_SMARTII_L3_video_test_KR.tsk]: http://support.robotis.com/ko/baggage_files/smart/02_smart_l3_video_test_kr.tsk
-[SMARTII_L3_TRANSFORMATIONROBOT.mtnx]: http://support.robotis.com/ko/baggage_files/smart2/smart2_l3_transformationrobot.mtnx
-[01_SMARTII_L3_SMARTDROID_KR.tsk]: http://support.robotis.com/ko/baggage_files/smart2/01_smart2_l3_smartdroid_kr.tsk
-[02_SMARTII_L3_gesture_test_KR.tsk]: http://support.robotis.com/ko/baggage_files/smart/02_smart2_l3_gesture_test_kr.tsk
-[SMARTII_L3_SMARTDROID.mtnx]: http://support.robotis.com/ko/baggage_files/smart2/smart2_l3_smartdroid.mtnx
+[01_SMARTII_L3_SMARTEXPLORER_KR.tsk]: http://www.robotis.com/service/download.php?no=1023
+[02_SMARTII_L3_tts_test_KR.tsk]: http://www.robotis.com/service/download.php?no=1031
+[01_SMARTII_L3_TALKINGROBOT_KR.tsk]: http://www.robotis.com/service/download.php?no=1024
+[02_SMARTII_L3_speechrecognition_test_KR.tsk]: http://www.robotis.com/service/download.php?no=1030
+[01_SMARTII_L3_QUADRUPEDROBOT_KR.tsk]: http://www.robotis.com/service/download.php?no=1020
+[02_SMARTII _L3_motion_test_KR.tsk]: http://www.robotis.com/service/download.php?no=1026
+[SMARTII _L3_QUADRUPEDROBOT.mtnx]: http://www.robotis.com/service/download.php?no=1032
+[01_SMARTII_L3_SMARTPUPPY_KR.tsk]: http://www.robotis.com/service/download.php?no=1022
+[02_SMARTII_L3_audio_test_KR.tsk]: http://www.robotis.com/service/download.php?no=1028
+[SMARTII_L3_SMARTPUPPY.mtnx]: http://www.robotis.com/service/download.php?no=1034
+[01_SMARTII_L3_TRANSFORMATIONROBOT_KR.tsk]: http://www.robotis.com/service/download.php?no=1025
+[02_SMARTII_L3_video_test_KR.tsk]: http://www.robotis.com/service/download.php?no=1027
+[SMARTII_L3_TRANSFORMATIONROBOT.mtnx]: http://www.robotis.com/service/download.php?no=1035
+[01_SMARTII_L3_SMARTDROID_KR.tsk]: http://www.robotis.com/service/download.php?no=1021
+[02_SMARTII_L3_gesture_test_KR.tsk]: http://www.robotis.com/service/download.php?no=1029
+[SMARTII_L3_SMARTDROID.mtnx]: http://www.robotis.com/service/download.php?no=1033

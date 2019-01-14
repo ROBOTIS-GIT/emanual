@@ -41,8 +41,7 @@ common_mx_specs:
   feedback:           &feedback       "Position, Temperature, Load, Input Voltage, etc"
   feedback2_mx28:     &feedback2_mx28 "Position, Velocity, Temperature, Load, Input Voltage, Trajectory, Realtime Tick, etc"
   feedback2:          &feedback2      "Position, Velocity, Current, Realtime tick, Trajectory, Temperature, Input Voltage, etc"
-  material_mx28:      &material_mx28  "Full Metal Gear<br />MX-28AR/AT: Metal(Front), Engineering Plastic(Middle, Back)<br />MX-28R/T: Engineering Plastic(Front, Middle, Back)"
-  material:           &material       "Full Metal Gear<br />Metal (Front, Middle), Engineering Plastic (Back)"
+  material:           &material       "Full Metal Gear<br />Engineering Plastic(Front, Middle, Back)<br />`1` Metal(Front)"
   standbycurrent:     &standbycurrent "100 [mA]"
 
 mx-12w:
@@ -74,7 +73,7 @@ mx-28:
   physicalconnection: *rs485_ttl_conn
   id:                 *id
   feedback:           *feedback
-  material:           *material_mx28
+  material:           *material
   standbycurrent:     *standbycurrent
 
 mx-28-2:
@@ -103,7 +102,7 @@ mx-28-2:
   physicalconnection: *rs485_ttl_conn
   id:                 *id2
   feedback:           *feedback2_mx28
-  material:           *material_mx28
+  material:           *material
   standbycurrent:     *standbycurrent
 
 mx-64:
