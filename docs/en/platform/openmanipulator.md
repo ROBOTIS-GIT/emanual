@@ -1067,7 +1067,7 @@ Download Arduino IDE and load OpenCR board on it
 
 Find example source codes.
 
-Go to `Examples` > `OpenManipulator` > `example` > `Chain` > `open_manipulator_chain` on Arduino IDE for OpenCR.
+Go to `Examples` → `OpenManipulator` → `example` → `Chain` → `open_manipulator_chain` on Arduino IDE for OpenCR.
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_chain_arduino.png)
 
@@ -1077,7 +1077,7 @@ Download Processing and load OpenCR board on it
 
 - [Download Processing](https://processing.org/download/)
 
-Open Processing and Go to `Tools` > `Add Tool..`. Search `ControlP5` and install it.
+Open Processing and Go to `Tools` → `Add Tool..`. Search `ControlP5` and install it.
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_chain_processing_1.png)
 
@@ -1088,7 +1088,7 @@ $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_processing.git
 ```
 
 Open processing source code file 
-(`open_manipulator_processing` > `Chain` > `Chain.pde`) on Processing IDE, and Run it.
+(`open_manipulator_processing`>`Chain`>`Chain.pde`) on Processing IDE, and Run it.
 
 **NOTE**: Upload **OpenCR example source code** to OpenCR before run **processing source code**.
 {: .notice--info}
@@ -1117,7 +1117,7 @@ Open processing source code file
   
   <iframe width="560" height="315" src="https://www.youtube.com/embed/FGHBMJByJ7k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-  The settings for [ROBOTIS RC-100B][rc100] controller is included in the OpenCR firmware for OpenManipulator. This controller can be used with the Bluetooth module [BT410][bt410].  
+  The settings for [ROBOTIS RC-100B][rc100] controller is included in the OpenCR firmware for OpenManipulator. This controller can be used with the Bluetooth module [BT410][bt410]. 
   ![](/assets/images/platform/openmanipulator/OpenManipulator_chain_processing_teleop.png)
 
 ### [Hand guiding](#hand-guiding)
@@ -1255,13 +1255,15 @@ Load a TurtleBot3 Waffle or Waffle Pi with OpenManipulator on RViz.
 
 ### Software Setup
 
+Download the [`OpenCR`](https://github.com/ROBOTIS-GIT/OpenCR) and [`open_manipulator_processing`](https://github.com/ROBOTIS-GIT/open_manipulator_processing) libraries. 
+
 #### OpenCR
 
-Go to `Examples` > `OpenManipulator` > `example` > `Arduino` > `SCARA` > `open_manipulator_SCARA` on Arduino IDE for OpenCR.
+Go to `Examples` → `OpenManipulator` → `example` → `Arduino` → `Scara` → `open_manipulator_scara` on Arduino IDE for OpenCR.
 
 #### Processing
 
-Open processing source code file (`OpenCR` > `arduino` > `opencr_arduino` > `opencr` > `libraries` > `OpenManipulator` > `example` > `Processing` > `SCARA` > `SCARA.pde`) on Processing IDE, and Run it.
+Open processing source code file (`open_manipulator_processing` → `Scara` → `Scara.pde`) on Processing IDE.
 
 **NOTE**: Upload **OpenCR example source code** to OpenCR before run **processing source code**.
 {: .notice--info}
@@ -1341,13 +1343,15 @@ CAD Files ([Onshape](http://www.robotis.com/service/download.php?no=692), [Thing
 
 ### Software Setup
 
+Download the [`OpenCR`](https://github.com/ROBOTIS-GIT/OpenCR) and [`open_manipulator_processing`](https://github.com/ROBOTIS-GIT/open_manipulator_processing) libraries. 
+
 #### OpenCR
 
-Go to `Examples` > `OpenManipulator` > `example` > `Arduino` > `Link` > `open_manipulator_link` on Arduino IDE for OpenCR.
+Go to `Examples` → `OpenManipulator` → `example` → `Arduino` → `Link` → `open_manipulator_link` on Arduino IDE for OpenCR.
 
 #### Processing
 
-Open processing source code file (`OpenCR` > `arduino` > `opencr_arduino` > `opencr` > `libraries` > `OpenManipulator` > `example` > `Processing` > `Link` > `Link.pde`) on Processing IDE, and Run it.
+Open processing source code file (`open_manipulator_processing` → `Link` → `Link.pde`) on Processing IDE.
 
 **NOTE**: Upload **OpenCR example source code** to OpenCR before run **processing source code**.
 {: .notice--info}
@@ -1358,12 +1362,13 @@ Open processing source code file (`OpenCR` > `arduino` > `opencr_arduino` > `ope
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/WR9_1AheOok" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-## [OpenManipulator Planar](#openmanipulator-planar)
+## [OpenManipulator Planar](#openmanipulator-planar) 
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_Planar.png)
-<!-- 
 
 ### Specification
+
+![](/assets/images/platform/openmanipulator/OpenManipulator_Planar_Capture.png)
 
 | Items                    | Unit    |                                         |
 | -------------------      | ------- | --------------------------------------- |
@@ -1385,22 +1390,17 @@ Open processing source code file (`OpenCR` > `arduino` > `opencr_arduino` > `ope
 
 |              | Part Name | Quantity | Link
 |---------     |---------- |---------   |
-|**Chassis Parts** |BASE FRAME|1|[Download Link](https://www.thingiverse.com/thing:3069581)|
-|.                 |PEN HOLDER|1|[Download Link](https://www.thingiverse.com/thing:3069581)|
-|.                 |FRM BASE|1|[Download Link](https://www.thingiverse.com/thing:3069581)|
-|.                 |TAP HOLDER|1|[Download Link](https://www.thingiverse.com/thing:3069581)|
-|.                 |FR12_H101_K|4|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2768&GC=GD0B0001)|
-|.                 |FR12_S102_K|3|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2766&GC=GD0B0001)|
-|.                 |HN12_I101|4|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2759&GC=GD0B0006)|
-|**Actuators**     |Dynamixel XM430-W350-T|4|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2923&GC=GD080101)|
-|**Cables**        |CABLE_3P_130MM|2|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2347&GC=GD0B0105&page=2)|
-|.                 |CABLE_3P_240MM|1|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2926&GC=GD0B0105&page=3)|
-|**Miscellaneous** |WB_M2X03|24|[Shop Link](https://us.misumi-ec.com/vona2/detail/221000551286/?Inch=0&CategorySpec=00000070644%3A%3A2%0900000070373%3A%3A3)|
-|.                 |WB_M2_5X4|14|[Shop Link](https://us.misumi-ec.com/vona2/detail/221000551286/?Inch=0&CategorySpec=00000070644%3A%3A2.5%0900000070373%3A%3A8)|
-|.                 |WB_M2_5X06|8|[Shop Link](https://us.misumi-ec.com/vona2/detail/221000551286/?Inch=0&CategorySpec=00000070644%3A%3A2.5%0900000070373%3A%3A3%2C6)|
-|.                 |WB_M2_5X12|2|[Shop Link](https://us.misumi-ec.com/vona2/detail/221000551286/?Inch=0&CategorySpec=00000070644%3A%3A2.5%0900000070373%3A%3A8)|
+|**Chassis Parts** |BASE FRAME|1|[Download Link](https://www.thingiverse.com/thing:3064437)|
+|.                 |laser_gripper|1|[Download Link](https://www.thingiverse.com/thing:3064437)|
+|.                 |link_100|3|[Download Link](https://www.thingiverse.com/thing:3064437)|
+|.                 |link_120|3|[Download Link](https://www.thingiverse.com/thing:3064437)|
+|.                 |HN12_I101|3|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2759&GC=GD0B0006)|
+|**Actuators**     |Dynamixel XM430-W350-T|3|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2923&GC=GD080101)|
+|**Cables**        |CABLE_3P_240MM|3|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2926&GC=GD0B0105&page=3)|
+|**Miscellaneous** |WB_M2_5X12|24|[Shop Link](https://us.misumi-ec.com/vona2/detail/221000551286/?Inch=0&CategorySpec=00000070644%3A%3A2.5%0900000070373%3A%3A8)|
 |.                 |FHS_M2_5X14|12|[Shop Link](https://us.misumi-ec.com/vona2/detail/221000547315/?Inch=0&CategorySpec=00000071822%3A%3A2.5%0900000071552%3)|
-|.                 |NUT_M2_5(0.45P)|8|[Shop Link](https://us.misumi-ec.com/vona2/detail/110300250540/?Inch=0&CategorySpec=00000070281%3A%3A2.5)|
+|.                 | NSFMR6-24                        | 6     | [Shop Link](https://jp.misumi-ec.com/vona2/detail/110300086920/?HissuCode=NSFMR6-26&PNSearch=NSFMR6-26&KWSearch=NSFMR6-26&searchFlow=results2products)|
+|.                 | Ball Bearing(O.D 10mm / I.D 6mm) | 24    | [Shop Link](https://us.misumi-ec.com/vona2/detail/221000531116/?CategorySpec=unitType%3a%3a1%0900000044017%3a%3amig00000001446936%0900000043985%3a%3amig00000001455783&Inch=0)|
 
 #### 3D Printed Parts
 
@@ -1410,22 +1410,22 @@ CAD Files ([Onshape](https://cad.onshape.com/documents/03dca3ccd6175a054a517d7a/
 
 ### Software Setup
 
+Download the [`OpenCR`](https://github.com/ROBOTIS-GIT/OpenCR) and [`open_manipulator_processing`](https://github.com/ROBOTIS-GIT/open_manipulator_processing) libraries. 
+
 #### OpenCR
 
 Go to `Examples` → `OpenManipulator` → `example` → `Arduino` → `Planar` → `open_manipulator_planar` on Arduino IDE for OpenCR.
 
 #### Processing
 
-Open processing source code file (`OpenCR`>`arduino`>`opencr_arduino`>`opencr`>`libraries`>`OpenManipulator`>`example`>`Processing`>`Planar`>`Planar.pde`) on Processing IDE, and Run it.
-
-shhhhould be modified here!!! processing parts for every om friend
+Open processing source code file (`open_manipulator_processing` → `Planar` → `Planar.pde`) on Processing IDE.
 
 **NOTE**: Upload **OpenCR example source code** to OpenCR before run **processing source code**.
 {: .notice--info}
 
-### Video -->
+### Video
 
-  - **Comming Soon**
+<iframe width="560" height="315" src="https://www.youtube.com/embed/UtFnywz4hdY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## [OpenManipulator Delta](#openmanipulator-delta)
 
