@@ -1067,7 +1067,7 @@ Download Arduino IDE and load OpenCR board on it
 
 Find example source codes.
 
-Go to `Examples` > `OpenManipulator` > `example` > `Chain` > `open_manipulator_chain` on Arduino IDE for OpenCR.
+Go to `Examples` → `OpenManipulator` → `example` → `Chain` → `open_manipulator_chain` on Arduino IDE for OpenCR.
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_chain_arduino.png)
 
@@ -1077,7 +1077,7 @@ Download Processing and load OpenCR board on it
 
 - [Download Processing](https://processing.org/download/)
 
-Open Processing and Go to `Tools` > `Add Tool..`. Search `ControlP5` and install it.
+Open Processing and Go to `Tools` → `Add Tool..`. Search `ControlP5` and install it.
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_chain_processing_1.png)
 
@@ -1088,7 +1088,7 @@ $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_processing.git
 ```
 
 Open processing source code file 
-(`open_manipulator_processing` > `Chain` > `Chain.pde`) on Processing IDE, and Run it.
+(`open_manipulator_processing`>`Chain`>`Chain.pde`) on Processing IDE, and Run it.
 
 **NOTE**: Upload **OpenCR example source code** to OpenCR before run **processing source code**.
 {: .notice--info}
@@ -1117,7 +1117,7 @@ Open processing source code file
   
   <iframe width="560" height="315" src="https://www.youtube.com/embed/FGHBMJByJ7k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-  The settings for [ROBOTIS RC-100B][rc100] controller is included in the OpenCR firmware for OpenManipulator. This controller can be used with the Bluetooth module [BT410][bt410].  
+  The settings for [ROBOTIS RC-100B][rc100] controller is included in the OpenCR firmware for OpenManipulator. This controller can be used with the Bluetooth module [BT410][bt410]. 
   ![](/assets/images/platform/openmanipulator/OpenManipulator_chain_processing_teleop.png)
 
 ### [Hand guiding](#hand-guiding)
@@ -1255,13 +1255,15 @@ Load a TurtleBot3 Waffle or Waffle Pi with OpenManipulator on RViz.
 
 ### Software Setup
 
+Download the [`OpenCR`](https://github.com/ROBOTIS-GIT/OpenCR) and [`open_manipulator_processing`](https://github.com/ROBOTIS-GIT/open_manipulator_processing) libraries. 
+
 #### OpenCR
 
 Go to `Examples` → `OpenManipulator` → `example` → `Arduino` → `Scara` → `open_manipulator_scara` on Arduino IDE for OpenCR.
 
 #### Processing
 
-Open processing source code file (`open_manipulator_processing`>`Scara`>`Scara.pde`) on Processing IDE.
+Open processing source code file (`open_manipulator_processing` → `Scara` → `Scara.pde`) on Processing IDE.
 
 **NOTE**: Upload **OpenCR example source code** to OpenCR before run **processing source code**.
 {: .notice--info}
@@ -1341,13 +1343,15 @@ CAD Files ([Onshape](http://www.robotis.com/service/download.php?no=692), [Thing
 
 ### Software Setup
 
+Download the [`OpenCR`](https://github.com/ROBOTIS-GIT/OpenCR) and [`open_manipulator_processing`](https://github.com/ROBOTIS-GIT/open_manipulator_processing) libraries. 
+
 #### OpenCR
 
-Go to `Examples` > `OpenManipulator` > `example` > `Arduino` > `Link` > `open_manipulator_link` on Arduino IDE for OpenCR.
+Go to `Examples` → `OpenManipulator` → `example` → `Arduino` → `Link` → `open_manipulator_link` on Arduino IDE for OpenCR.
 
 #### Processing
 
-Open processing source code file (`open_manipulator_processing`>`Link`>`Link.pde`) on Processing IDE.
+Open processing source code file (`open_manipulator_processing` → `Link` → `Link.pde`) on Processing IDE.
 
 **NOTE**: Upload **OpenCR example source code** to OpenCR before run **processing source code**.
 {: .notice--info}
@@ -1406,13 +1410,15 @@ CAD Files ([Onshape](https://cad.onshape.com/documents/03dca3ccd6175a054a517d7a/
 
 ### Software Setup
 
+Download the [`OpenCR`](https://github.com/ROBOTIS-GIT/OpenCR) and [`open_manipulator_processing`](https://github.com/ROBOTIS-GIT/open_manipulator_processing) libraries. 
+
 #### OpenCR
 
 Go to `Examples` → `OpenManipulator` → `example` → `Arduino` → `Planar` → `open_manipulator_planar` on Arduino IDE for OpenCR.
 
 #### Processing
 
-Open processing source code file (`open_manipulator_processing`>`Planar`>`Planar.pde`) on Processing IDE.
+Open processing source code file (`open_manipulator_processing` → `Planar` → `Planar.pde`) on Processing IDE.
 
 **NOTE**: Upload **OpenCR example source code** to OpenCR before run **processing source code**.
 {: .notice--info}
