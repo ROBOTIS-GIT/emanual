@@ -187,11 +187,11 @@ Install dependent packages for the OpenManipulator. Run the following command in
 **NOTE**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`+`Alt`+`T`.
 {: .notice--info}
 
-```
+``` bash
 $ sudo apt-get install ros-kinetic-ros-controllers ros-kinetic-gazebo* ros-kinetic-moveit* ros-kinetic-industrial-core
 ```
 
-```
+``` bash
 $ cd ~/catkin_ws/src/
 $ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK.git
 $ git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench.git
@@ -237,7 +237,7 @@ Open Manipulator Controller is provided for basic manipulation of OpenManipulato
 
 Run roscore.
 
-```
+``` bash
 $ roscore
 ```
 
@@ -245,7 +245,7 @@ $ roscore
 
 Launch Open Manipulator Controller to start [Basic Manipulation](/docs/en/platform/openmanipulator/#basic-manipulation).
 
-```
+``` bash
 $ roslaunch open_manipulator_controller open_manipulator_controller.launch
 ```
 
@@ -311,7 +311,7 @@ Even if you can't find any Dynamixels, please check firmware to use ROBOTIS soft
 
 Publish a topic message to check the OpenManipulator setting.
 
-```
+``` bash
 $ rostopic pub /open_manipulator/option std_msgs/String "print_open_manipulator_setting"
 ```
 
@@ -604,7 +604,7 @@ This parameter is descripted on OpenManipulator.cpp in open_manipulator_libs pkg
 
 Load an OpenManipulator on RViz.
 
-```
+``` bash
 $ roslaunch open_manipulator_description open_manipulator_rviz.launch
 ```
 
@@ -764,7 +764,7 @@ The user can use this service to create a drawing trajectory. The user can creat
 
   The user can use GUI program to manipulate the OpenManipulator.  Launch `open_manipulator_control_gui` node.  This program shows the status of the manipulator and provides the ability to operate the manipulator.
 
-  ```
+  ``` bash
   $ roslaunch open_manipulator_control_gui open_manipulator_control_gui.launch
   ```
   To manipulate the OpenManipulator, first click the `Timer Start` button.  
@@ -800,7 +800,7 @@ The user can use this service to create a drawing trajectory. The user can creat
  
   Launch `open_manipulator_teleop_keyboard` node for simple teleoperation test using the keyboard.
 
-  ```
+  ``` bash
   $ roslaunch open_manipulator_teleop open_manipulator_teleop_keyboard.launch 
   ```
   If the node is successfully launched, the following instruction will be appeared to the terminal window.
@@ -844,12 +844,12 @@ Connect PS4 joystick to the PC via Bluetooth or with USB cable.
 
 Install packages for teleoperation using PS4 joystick.
 
-``` 
+``` bash
 $ sudo apt-get install ros-kinetic-joy ros-kinetic-joystick-drivers ros-kinetic-teleop-twist-joy
 $ sudo pip install ds4drv
 ```
 Launch teleoperation packages for PS4 joystick.
-```
+``` bash
 $ sudo ds4drv
 $ roslaunch open_manipulator_teleop open_manipulator_teleop_joystick.launch
 ```
@@ -859,11 +859,11 @@ Connect XBOX 360 joystick to the PC with Wireless Adapter or USB cable.
 
 Install packages for teleoperation using XBOX 360 joystick.
 
-``` 
+``` bash
 $ sudo apt-get install xboxdrv ros-kinetic-joy ros-kinetic-joystick-drivers ros-kinetic-teleop-twist-joy
 ```
 Launch teleoperation packages for XBOX 360 joystick.
-```
+``` bash
 $ sudo xboxdrv --silent
 $ roslaunch open_manipulator_teleop open_manipulator_teleop_joystick.launch
 ```
@@ -919,7 +919,7 @@ The parameters list is supposed to set loading [move_group](http://docs.ros.org/
 
 After set the parameters, load a controller.
 
-  ```
+  ``` bash
   $ roslaunch open_manipulator_controller open_manipulator_controller.launch use_moveit:=true
   ```
 
@@ -965,7 +965,7 @@ The user can use this service to create a trajectory in the [task space]{: .popu
 
 Launch an OpenManipulator controller for gazebo simulation.
 
-  ```
+  ``` bash
   $ roslaunch open_manipulator_controller open_manipulator_controller.launch use_platform:=false
   ```
 **NOTE** : To control the OpenManipulator in the Gazebo environment using the Open Manipulator Controller, the controller must set the **use_platform** parameter to **false** because it needs to send messages to gazebo instead of Platform.
@@ -1008,7 +1008,7 @@ Gripper Dynamixel ID : 15, Model Name :XM430-W350
 
 Load an OpenManipulator on Gazebo simulator and click Play button `▶`.
 
-  ```
+  ``` bash
   $ roslaunch open_manipulator_gazebo open_manipulator_gazebo.launch
   ```
 
@@ -1083,7 +1083,7 @@ Open Processing and Go to `Tools` → `Add Tool..`. Search `ControlP5` and insta
 
 Download processing source code for OpenManipulator. 
 
-```
+``` bash
 $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_processing.git
 ```
 
@@ -1140,17 +1140,294 @@ Open processing source code file
 
 # [Camera Application](#camera-application)
 
-**Coming Soon**
+{% capture notice_01 %}
+**NOTE**: 
+- This instructions were tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+- This instructions are supposed to be running on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.
+{% endcapture %}
+<div class="notice--info">{{ notice_01 | markdownify }}</div>
+
+## [Astra Pro](#astra-pro) 
+
+### Overview
+![](/assets/images/platform/openmanipulator/OpenManipulator_camera_Astra_pro.png)  
+
+The [Astra Series](https://orbbec3d.com/product-astra/) was designed to further improve on the attributes that set Orbbec 3D cameras apart from existing 3D cameras on the market. Astra 3D cameras provide computer vision that enables dozens of functions such as face recognition, gesture recognition, human body tracking, three-dimensional measurement, environment perception, and three-dimensional map reconstruction.
+
+### Specifications
+
+| Items                                  | Specifications                                       |
+|----------------------------------------|------------------------------------------------------|
+| RGB Image Resolution and Frame Rate    | 1280 x 720, @30fps                                   |
+| Depth Imgae Resolution and Frame Rate  | 640 x 480, @30fps                                    |
+| FOV (Field-of-View)                    | 60°H x 49.5°V x 73°D                                 |
+| Range                                  | 0.6m - 8m                                            |
+| USB Port                               | USB 2.0                                              |
+| Dimensions                             | 165mm x 30mm x 40mm                                  |
+| Operating Systems                      | Android/Linux/Windows 7/8/10                         |
+| SDK                                    | Astra SDK or OpenNI                                  |
+| Microphones                            | 2 (Built - in)                                       |
+
+### User Guide
+
+#### Installation
+The following commands will install relevant Astra Pro library.
+  ``` bash
+  $ sudo apt-get install ros-kinetic-rgbd-launch ros-kinetic-libuvc-camera
+  ```
+  ``` bash
+  $ cd ~/catkin_ws/src
+  $ git clone https://github.com/orbbec/ros_astra_camera
+  $ git clone https://github.com/ROBOTIS-GIT/ros_astra_launch.git
+  $ cd ~/catkin_ws && catkin_make
+  $ roscd astra_camera && ./scripts/create_udev_rules
+  ```
+#### Execution  
+Run the following command.
+  ``` bash
+  $ sudo chmod a+rw /dev/bus/usb/${USB}/${PORT}
+  $ roslaunch open_manipulator_camera astra_pro.launch
+  ```
+
+You can use rviz or image_view to verify driver. You can select data topic name related to Astra Pro from drop down menu at the top of the application.
+  ``` bash
+  $ rqt_image_view
+  ```
+
+### Reference
+- [ORBBEC Astra Pro](https://orbbec3d.com/product-astra-pro/)    
+- [Astra Pro ROS package](https://github.com/orbbec/ros_astra_camera)
+
+## [Realsense D435](#realsense-d435) 
+
+### Overview
+![](/assets/images/platform/openmanipulator/OpenManipulator_camera_Realsense_D435.png)  
+
+The [Intel® RealSense™ Depth Camera D435](https://realsense.intel.com/depth-camera/#D415_D435) is a USB-powered depth camera and consists of a pair of depth sensors, RGB sensor, and infrared projector. It is ideal for makers and developers to add depth perception capability to their prototype development. The D435 is designed to best fit your prototype.
+
+### Specifications
+
+| Items                                 | Specifications                               |
+|---------------------------------------|----------------------------------------------|
+| Use Environment                       | Indoor/Outdoor                               |
+| RGB Sensor Resolution and Frame Rate  | 1920 x 1080 at 30 fps                        |
+| RGB Sensor FOV 	                      | 69.4°(H) x 42.5°(V) x 77°(D) (+/- 3°)        |
+| Depth Stream Output Resolution	      | Up to 1280 x 720                             |
+| Depth Stream Output Frame Rate	      | Up to 90 fps                                 |
+| Depth Field of View (FOV)             | 85.2°(H) x 58°(V) x 94°(D) (+/- 3°)          |
+| Minimum Depth Distance (Min-Z)        | 0.2m                                         |
+| Maximum Range                         | Approx.10 meters                             |
+| Dimension                             | 90 mm x 25 mm x 25 mm                        |
+| Connectors                            | USB 3.0 Type - C                             |
+
+### User Guide
+
+#### Installation
+The following commands will install relevant Intel® RealSense™ Depth Camera D435 library.
+  ``` bash
+  $ sudo add-apt-repository "deb http://realsense-hw-public.s3.amazonaws.com/Debian/apt-repo xenial main" -u
+  $ sudo apt-get install librealsense2-dev ros-kinetic-rgbd-launch
+  ```
+  ``` bash
+  $ cd ~/catkin_ws/src
+  $ git clone https://github.com/intel-ros/realsense.git
+  $ cd ~/catkin_ws && catkin_make
+  ```
+#### Execution  
+Run the following command.
+  ``` bash
+  $ roslaunch realsense2_camera rs_camera.launch
+  ```
+
+You can use rviz or image_view to verify driver. You can select data topic name related to Intel® RealSense™ Depth Camera D435 from drop down menu at the top of the application.
+  ``` bash
+  $ rqt_image_view
+  ```
+
+### Reference
+- [Intel® RealSense™ Depth Camera D435](https://realsense.intel.com/depth-camera/#D415_D435)    
+- [Realsense ROS package](https://github.com/intel-ros/realsense)
+
+## [Raspberry Pi Camera V2](#raspberry-pi-camera-v2) 
+
+### Overview
+![](/assets/images/platform/turtlebot3/appendix_raspi_cam/Pi-Camera-front.jpg)
+
+Please refer the detailed description of [Raspberry Pi Camera V2](http://emanual.robotis.com/docs/en/platform/turtlebot3/appendix_raspi_cam/#overview)
+
+
+### Specifications
+
+Please refer the detailed Specification of [Raspberry Pi Camera V2](http://emanual.robotis.com/docs/en/platform/turtlebot3/appendix_raspi_cam/#specifications)
+
+### User Guide
+
+#### Installation
+
+**[Raspberry Pi]** Setting up the camera hardware
+
+``` bash
+$ sudo raspi-config
+```
+
+![](/assets/images/platform/turtlebot3/appendix_raspi_cam/pi-cam-hardware-setting-1.png)
+
+Select **3 Interfacing Options**
+![](/assets/images/platform/turtlebot3/appendix_raspi_cam/pi-cam-hardware-setting-2.png)
+
+Select **P1 Camera**
+![](/assets/images/platform/turtlebot3/appendix_raspi_cam/pi-cam-hardware-setting-3.png)
+
+Enable camera interface
+![](/assets/images/platform/turtlebot3/appendix_raspi_cam/pi-cam-hardware-setting-4.png)
+![](/assets/images/platform/turtlebot3/appendix_raspi_cam/pi-cam-hardware-setting-5.png)
+
+After **reboot Raspberry Pi**, to test that the system is installed and working, try the following command:
+
+``` bash
+$ raspistill -v -o test.jpg
+```
+The display should show a five-second preview from the camera and then take a picture, saved to the file *test.jpg*
+    
+**[Raspberry Pi]** The following commands will install relevant Raspberry Pi Camera packages on your ROS system.
+
+``` bash
+$ sudo apt-get install ros-kinetic-compressed-image-transport ros-kinetic-camera-info-manager
+
+$ cd ~/catkin_ws/src
+$ git clone https://github.com/UbiquityRobotics/raspicam_node.git
+$ cd ~/catkin_ws && catkin_make
+```
+#### Execution  
+
+**Warning!**     
+Before you run Rviz in Remote PC, check your Raspberry Pi and Remote PC whether they are connected.    
+Please check this link out. [Raspberry Pi 3 Setup](http://emanual.robotis.com/docs/en/platform/turtlebot3/raspberry_pi_3_setup/#install-linux-based-on-raspbian)
+{: .notice--warning}
+
+**[Raspberry Pi]** Run the following command.
+  ``` bash
+  $ roslaunch raspicam_node camerav2_1280x960.launch
+  ```
+
+**[Remote PC]** Run the following command
+
+``` bash
+$ rqt_image_view
+```
+
+#### Reference
+
+- [Raspberry Pi Camera](https://www.raspberrypi.org/documentation/hardware/camera/README.md)
+- [Getting Started](https://projects.raspberrypi.org/en/projects/getting-started-with-picamera)
+- [Pi Camera ROS package](https://github.com/UbiquityRobotics/raspicam_node)
+
+## [AR Marker](#ar-marker) 
+
+{% capture notice_01 %}
+**NOTE**: 
+- This instructions were tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+- The `open_manipulator_perceptions` package requires [`ar_track_alvar`](http://wiki.ros.org/ar_track_alvar) package.
+{% endcapture %}
+<div class="notice--info">{{ notice_01 | markdownify }}</div>
+
+
+### Installation
+
+  ``` bash
+  $ sudo apt-get install ros-kinetic-ar-track-alvar ros-kinetic-ar-track-alvar-msgs
+  ```
+  ``` bash
+  $ cd ~/catkin_ws/src
+  $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_perceptions.git
+  $ cd ~/catkin_ws && catkin_make
+  ```
+
+### Execution
+You have to change the parameters according to the type of camera. Run the following command.
+
+#### Astra Pro
+  ``` bash
+  $ roslaunch open_manipulator_ar_markers ar_pose.launch use_gazebo:=false camera_model:=astra_pro
+  ```
+#### Realsense D435
+  ``` bash
+  $ roslaunch open_manipulator_ar_markers ar_pose.launch use_gazebo:=false camera_model:=realsense_d435
+  ```
+#### Raspberry Pi Camera V2
+**[Raspberry Pi]**
+  ``` bash
+  $ roslaunch open_manipulator_camera rpicamera.launch
+  ```
+**[Remote PC]**
+  ``` bash
+  $ roslaunch open_manipulator_ar_markers ar_pose.launch use_gazebo:=false camera_model:=raspicam
+  ```
+    
+#### Rviz
+When the camera recognizes the AR marker, the pose of the AR marker is shown on Rviz.
+![](/assets/images/platform/openmanipulator/OpenManipulator_AR_Marker.png)  
+
 
 # [Tool Modification](#tool-modification)
-
 ## [Vacuum Gripper](#vaccum-gripper)
 
-**Coming Soon**
+### Video
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/TR6DS9Zg_5I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Hardware Setup
+#### Part List
+
+|                   | Part Name    | Quantity | Link|
+|---------          |----------    |--------- |---- |
+|**3D Printed Tool Part** |Vacuum Holder    |1 |[Download Link](https://www.thingiverse.com/thing:3069574)|
+|**Vacuum System** |ARDUINO 4 RELAYS SHIELD |1 |[shop Link](https://store.arduino.cc/usa/arduino-4-relays-shield)|
+|.                 |12V Air Pump Motor          |1 |[shop Link](https://www.amazon.com/dp/B00DYA21PU/ref=sxbs_sxwds-stppvp_1?pf_rd_p=d45777d6-4c64-4117-8332-1659db52e64f&pd_rd_wg=4GrxM&pf_rd_r=B6N50VB3NHQT92HY91GK&pd_rd_i=B00DYA21PU&pd_rd_w=hP7Ev&pd_rd_r=f1ca7704-2522-4488-a625-16e3a8803027&ie=UTF8&qid=1547619718&sr=1)|
+|.                 |UD0640-20-C (Air Tube 6Ø) |1 |[shop Link](https://us.misumi-ec.com/vona2/detail/221000039579/?HissuCode=UD0640-20-C&PNSearch=UD0640-20-C&KWSearch=UD0640-20-C&searchFlow=results2type)|
+|.                 |UD0860-20-C (Air Tube 8Ø) |1 |[shop Link](https://us.misumi-ec.com/vona2/detail/221000039579/?HissuCode=UD0860-20-C&PNSearch=UD0860-20-C&KWSearch=UD0860-20-C&searchFlow=results2type)|
+|.                 |MSCNL6-1 (Coupling 6Ø)  |1 |[shop Link](https://us.misumi-ec.com/vona2/detail/110300335060/?HissuCode=MSCNL6-1&PNSearch=MSCNL6-1&KWSearch=MSCNL6-1&searchFlow=results2type)|
+|.                 |MSCNL8-1 (Coupling 8Ø)  |2 |[shop Link](https://us.misumi-ec.com/vona2/detail/110300335060/?HissuCode=MSCNL8-1&PNSearch=MSCNL8-1&KWSearch=MSCNL8-1&searchFlow=results2type)|
+|.                 |MVPKE8 (Suction Cup)      |1 |[shop Link](https://us.misumi-ec.com/vona2/detail/110300346620/?HissuCode=MVPKE8&PNSearch=MVPKE8&KWSearch=MVPKE8&searchFlow=results2type)|
+|.                 |MHE3-M1H-3/2G-1/8 (Control Valve) |1 |[shop Link](https://www.festo.com/cat/en-us_us/products_MH2?CurrentIDCode1=MHE3-M1H-3%2F2G-1%2F8&CurrentPartNo=525146)|
+|.                 |NEBV-Z4WA2L-P-E-2.5-N-LE2-S1 (Cable for Valve) |1 |[shop Link](https://www.festo.com/cat/en-us_us/products_NEBV_V?CurrentIDCode1=NEBV-Z4WA2L-P-E-2.5-N-LE2&CurrentPartNo=8003577)|
+
+### Software Setup
+Please refer the detailed description of [How to Control on OpenCR](http://localhost:4000/docs/en/platform/openmanipulator/#how-to-control-on-opencr)    
+Download Arduino IDE and load OpenCR board on it
+
+- [Arduino IDE for using OpenCR](/docs/en/parts/controller/opencr10/#arduino-ide)
+
+Find example source codes.
+
+Go to `Examples` → `OpenManipulator` → `example` → `Chain` → `open_manipulator_chain_vacuum` on Arduino IDE for OpenCR.
+
+![](/assets/images/platform/openmanipulator/OpenManipulator_chain_arduino.png)
+
 
 ## [Pen Holder](#pen-holder)
 
-**Coming Soon**
+### Video
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/SIpV8Vuua_c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+### Hardware Setup
+
+|                | Part Name  | Quantity | Link                                    |
+| -------------- | ---------- | -------- | --------------------------------------- |
+| **3D Printed Tool Part**  | Pen Holder | 1        | [Download Link](https://www.thingiverse.com/thing:3069574) |
+
+### Software Setup
+Please refer the detailed description of [How to Control on OpenCR](http://localhost:4000/docs/en/platform/openmanipulator/#how-to-control-on-opencr)    
+Download Arduino IDE and load OpenCR board on it
+
+- [Arduino IDE for using OpenCR](/docs/en/parts/controller/opencr10/#arduino-ide)
+
+Find example source codes.
+
+Go to `Examples` → `OpenManipulator` → `example` → `Chain` → `open_manipulator_chain_pen` on Arduino IDE for OpenCR.
+
+![](/assets/images/platform/openmanipulator/OpenManipulator_chain_arduino.png)
 
 
 # [Mobile Manipulation](#mobile-manipulation)
@@ -1166,7 +1443,7 @@ Open processing source code file
 
 Install dependent packages
 
-  ```
+  ``` bash
   $ cd ~/catkin_ws/src
   $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_with_tb3.git
   $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_with_tb3_msgs.git
@@ -1180,7 +1457,7 @@ Load a TurtleBot3 Waffle or Waffle Pi with OpenManipulator on RViz.
   **TIP**: TB3_MODEL =  `waffle`, `waffle_pi`
   {: .notice--success}
 
-  ```
+  ``` bash
   $ export TURTLEBOT3_MODEL=${TB3_MODEL}
   $ roslaunch open_manipulator_with_tb3_description open_manipulator_with_tb3_rviz.launch
   ```
