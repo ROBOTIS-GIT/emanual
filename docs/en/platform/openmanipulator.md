@@ -1186,7 +1186,7 @@ The following commands will install relevant Astra Pro library.
 Run the following command.
   ``` bash
   $ sudo chmod a+rw /dev/bus/usb/${USB}/${PORT}
-  $ roslaunch ros_astra_camera astra_pro.launch
+  $ roslaunch ros_astra_launch astra_pro.launch
   ```
 
 You can use rviz or image_view to verify driver. You can select data topic name related to Astra Pro from drop down menu at the top of the application.
