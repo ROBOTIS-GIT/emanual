@@ -1299,6 +1299,7 @@ The following commands will install relevant Raspberry Pi Camera packages on you
 ``` bash
 $ cd ~/catkin_ws/src
 $ git clone https://github.com/UbiquityRobotics/raspicam_node.git
+$ sudo apt-get install ros-kinetic-compressed-image-transport ros-kinetic-camera-info-manager
 $ cd ~/catkin_ws && catkin_make
 ```
 #### Execution  
@@ -1331,12 +1332,17 @@ $ rqt_image_view
 **NOTE**: 
 - This instructions were tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 - The `open_manipulator_perceptions` package requires [`ar_track_alvar`](http://wiki.ros.org/ar_track_alvar) package.
-{% endcapture %}
 - Make sure to run the [Open Manipulator controller](/docs/en/platform/openmanipulator/#launch-controller) instructions before running the instructions below.
+{% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
-
 ### Installation
+
+{% capture notice_01 %}
+**NOTE**: 
+- To use the Raspberry Pi Camera V2, install it on the **Remote PC**
+{% endcapture %}
+<div class="notice--info">{{ notice_01 | markdownify }}</div>
 
   ``` bash
   $ sudo apt-get install ros-kinetic-ar-track-alvar ros-kinetic-ar-track-alvar-msgs
@@ -1361,7 +1367,7 @@ You have to change the parameters according to the type of camera. Run the follo
 #### Raspberry Pi Camera V2
 **[Raspberry Pi]**
   ``` bash
-  $ roslaunch open_manipulator_camera rpicamera.launch
+  $ roslaunch raspicam_node camerav2_1280x960.launch camera_frame_id:=camera_link
   ```
 **[Remote PC]**
   ``` bash
