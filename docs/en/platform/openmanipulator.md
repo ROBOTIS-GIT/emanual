@@ -1177,7 +1177,7 @@ The following commands will install relevant Astra Pro library.
   ```
   ``` bash
   $ cd ~/catkin_ws/src
-  $ git clone https://github.com/orbbec/ros_astra_camera
+  $ git clone https://github.com/orbbec/ros_astra_camera.git
   $ git clone https://github.com/ROBOTIS-GIT/ros_astra_launch.git
   $ cd ~/catkin_ws && catkin_make
   $ roscd astra_camera && ./scripts/create_udev_rules
@@ -1272,14 +1272,14 @@ $ sudo raspi-config
 
 ![](/assets/images/platform/turtlebot3/appendix_raspi_cam/pi-cam-hardware-setting-1.png)
 
-Select **3 Interfacing Options**
+Select **3 Interfacing Options**    
 ![](/assets/images/platform/turtlebot3/appendix_raspi_cam/pi-cam-hardware-setting-2.png)
 
-Select **P1 Camera**
+Select **P1 Camera**    
 ![](/assets/images/platform/turtlebot3/appendix_raspi_cam/pi-cam-hardware-setting-3.png)
 
-Enable camera interface
-![](/assets/images/platform/turtlebot3/appendix_raspi_cam/pi-cam-hardware-setting-4.png)
+Enable camera interface    
+![](/assets/images/platform/turtlebot3/appendix_raspi_cam/pi-cam-hardware-setting-4.png)    
 ![](/assets/images/platform/turtlebot3/appendix_raspi_cam/pi-cam-hardware-setting-5.png)
 
 After **reboot Raspberry Pi**, to test that the system is installed and working, try the following command:
@@ -1329,6 +1329,7 @@ $ rqt_image_view
 - This instructions were tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 - The `open_manipulator_perceptions` package requires [`ar_track_alvar`](http://wiki.ros.org/ar_track_alvar) package.
 {% endcapture %}
+- Make sure to run the [Open Manipulator controller](/docs/en/platform/openmanipulator/#launch-controller) instructions before running the instructions below.
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
 
@@ -1393,7 +1394,7 @@ When the camera recognizes the AR marker, the pose of the AR marker is shown on 
 |.                 |NEBV-Z4WA2L-P-E-2.5-N-LE2-S1 (Cable for Valve) |1 |[shop Link](https://www.festo.com/cat/en-us_us/products_NEBV_V?CurrentIDCode1=NEBV-Z4WA2L-P-E-2.5-N-LE2&CurrentPartNo=8003577)|
 
 ### Software Setup
-Please refer the detailed description of [How to Control on OpenCR](http://localhost:4000/docs/en/platform/openmanipulator/#how-to-control-on-opencr)    
+Please refer the detailed description of [How to Control on OpenCR](docs/en/platform/openmanipulator/#how-to-control-on-opencr)    
 Download Arduino IDE and load OpenCR board on it
 
 - [Arduino IDE for using OpenCR](/docs/en/parts/controller/opencr10/#arduino-ide)
@@ -1418,7 +1419,7 @@ Go to `Examples` → `OpenManipulator` → `example` → `Chain` → `open_manip
 | **3D Printed Tool Part**  | Pen Holder | 1        | [Download Link](https://www.thingiverse.com/thing:3069574) |
 
 ### Software Setup
-Please refer the detailed description of [How to Control on OpenCR](http://localhost:4000/docs/en/platform/openmanipulator/#how-to-control-on-opencr)    
+Please refer the detailed description of [How to Control on OpenCR](docs/en/platform/openmanipulator/#how-to-control-on-opencr)    
 Download Arduino IDE and load OpenCR board on it
 
 - [Arduino IDE for using OpenCR](/docs/en/parts/controller/opencr10/#arduino-ide)
