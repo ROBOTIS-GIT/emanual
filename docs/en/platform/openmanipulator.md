@@ -1296,29 +1296,36 @@ The display should show a five-second preview from the camera and then take a pi
     
 The following commands will install relevant Raspberry Pi Camera packages on your ROS system.
 
+- If you use Ubuntu in Raspberry Pi, enter the following command     
+``` bash
+$ sudo apt-get install ros-kinetic-compressed-image-transport ros-kinetic-camera-info-manager
+```
+
 ``` bash
 $ cd ~/catkin_ws/src
 $ git clone https://github.com/UbiquityRobotics/raspicam_node.git
-$ sudo apt-get install ros-kinetic-compressed-image-transport ros-kinetic-camera-info-manager
 $ cd ~/catkin_ws && catkin_make
 ```
 #### Execution  
 
 **Warning!**     
-Before you run `rqt_image_view` in Remote PC, check your Raspberry Pi and Remote PC whether they are connected.    
-Please check this link out. [Raspberry Pi 3 Setup](/docs/en/platform/turtlebot3/raspberry_pi_3_setup/#5-network-configuration)
+Before you run `rqt_image_view` in Remote PC, check your Raspberry Pi and Remote PC whether they are connected. Please check this link out.    
+[Raspberry Pi 3 Setup](/docs/en/platform/turtlebot3/raspberry_pi_3_setup/#5-network-configuration)    
+[Remote PC Setup](/docs/en/platform/turtlebot3/pc_setup/#network-configuration)
 {: .notice--warning}
+
+**[Remote PC]** Run the following command
+
+``` bash
+$ roscore
+$ rqt_image_view
+```
 
 **[Raspberry Pi]** Run the following command.
   ``` bash
   $ roslaunch raspicam_node camerav2_1280x960.launch
   ```
 
-**[Remote PC]** Run the following command
-
-``` bash
-$ rqt_image_view
-```
 
 #### Reference
 
@@ -1340,7 +1347,7 @@ $ rqt_image_view
 
 {% capture notice_01 %}
 **NOTE**: 
-- To use the Raspberry Pi Camera V2, install it on the **Remote PC**
+- To use the **Raspberry Pi Camera V2**, install it on the **Remote PC**
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
