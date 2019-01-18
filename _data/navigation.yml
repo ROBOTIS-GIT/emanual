@@ -17027,6 +17027,10 @@ u2d2_power_hub:
     titlekr: "주의사항"
     url: /parts/interface/u2d2_power_hub/#cautions
     urlkr: /parts/interface/u2d2_power_hub/#주의사항
+  - title: "How to Assemble"
+    titlekr: "조립 예시"
+    url: /parts/interface/u2d2_power_hub/#how-to-assemble
+    urlkr: /parts/interface/u2d2_power_hub/#조립-예시
 
 opencm7:
   - titlekr: "개요"
