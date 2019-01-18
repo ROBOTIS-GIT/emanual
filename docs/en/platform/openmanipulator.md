@@ -1322,9 +1322,9 @@ $ rqt_image_view
 ```
 
 **[Raspberry Pi]** Run the following command.
-  ``` bash
-  $ roslaunch raspicam_node camerav2_1280x960.launch
-  ```
+``` bash
+$ roslaunch raspicam_node camerav2_1280x960.launch
+```
 
 
 #### Reference
