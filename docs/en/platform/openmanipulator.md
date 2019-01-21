@@ -68,15 +68,15 @@ OpenManipulator is composed by [Dynamixel X series](http://emanual.robotis.com/d
 ## [Repeatability](#repeatability)
 
 Measurement method is explained in the below video.
-
+<Coming Soon...>
 <!-- < add repeatability measurement video here > -->
 
-When measuring the stroke of average 5.7148mm:
+<!-- When measuring the stroke of average 5.7148mm:
 
 | Item                   | Unit    | RM-X52-TNM                              |
 |------------------------|---------|-----------------------------------------|
 | **standard deviation** | mm (in) | 0.0470 (0.00185)                        |
-| **Maximum error**      | mm (in) | 0.1322 (0.00520)                        |
+| **Maximum error**      | mm (in) | 0.1322 (0.00520)                        | -->
 
 # [Hardware Setup](#hardware-setup)
 
