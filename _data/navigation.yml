@@ -13018,7 +13018,6 @@ openmanipulator:
         url: /platform/openmanipulator/#raspberry-pi-camera-v2
       - title: "AR Marker"
         url: /platform/openmanipulator/#ar-marker
-        children:
   - title: "Tool Modification"
     url: /platform/openmanipulator/#tool-modification
     children:
