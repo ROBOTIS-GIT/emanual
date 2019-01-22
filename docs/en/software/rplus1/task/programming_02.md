@@ -1406,8 +1406,8 @@ Variables are useful when a number to be remembered, when a value must be change
 [CM-700]: /docs/en/parts/controller/cm-700/
 [CM-900]: /docs/en/parts/controller/cm-900/
 [OpenCM9.04]: /docs/en/parts/controller/opencm904/
-[EXP485]: /docs/en/parts/controller/exp485/
-[OpenCR]: /docs/en/parts/controller/opencr/
+[EXP485]: /docs/en/parts/controller/opencm485exp/
+[OpenCR]: /docs/en/parts/controller/opencr10/
 [GM-12A]: /docs/en/parts/motor/gm-10a/
 [SM-10A]: /docs/en/parts/motor/sm-10a/
 [TS-10]: /docs/en/parts/sensor/ts-10/

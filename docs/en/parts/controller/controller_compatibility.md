@@ -105,5 +105,5 @@ sidebar:
 [CM-900]: /docs/en/parts/controller/cm-900/
 [OpenCM9.04]: /docs/en/parts/controller/opencm904/
 [OpenCM7.0]: /docs/kr/parts/controller/opencm7/
-[485 EXP]: /docs/en/parts/controller/exp485/
-[OpenCR]: /docs/en/parts/controller/opencr/
+[485 EXP]: /docs/en/parts/controller/opencm485exp/
+[OpenCR]: /docs/en/parts/controller/opencr10/
