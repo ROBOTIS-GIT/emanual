@@ -15,7 +15,7 @@ sidebar:
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator.png)
 
-![](/assets/images/platform/openmanipulator/OpenManipulator_Introduction.png)
+![](/assets/images/platform/openmanipulator/OpenManipulator_Introduction.jpg)
 
 ROS-enabled OpenManipulator is a full open robot platform consisting of **OpenSoftware**​, **OpenHardware** and **OpenCR(Embedded board)​**.
 
@@ -25,7 +25,7 @@ OpenManipulator are based on ROS ​and OpenSource. ROS official hardware platfo
 ## [OpenHardware](#openhardware)
 The OpenManipulator is oriented towards Open Hardware​. Most of the components except for some frames are uploaded as [STL files](http://www.robotis.com/service/download.php?no=690) that can be 3d printing. This allows users to modify the length of the link and the design of the robot to suit the intended use. The open manipulator also uses the **Dynamixel X ​series** used in TurtleBot 3. Dynamixel has a modular form and adopts daisy chain method. This allows users to easily change and add joints for some torque and degree of freedom they need. Taking advantage of these advantages, we are planning a total of seven different types (For example, Chain, SCARA, Link, Planar, Delta, Stewart and Linear) of OpenManipulator.
 
-![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_OnShape.jpg)
+![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_OnShape.png)
 
 ## [OpenCR (Embedded board)](#opencr-embedded-board)
 The OpenManipulator can also be controlled via [OpenCR] (Open-source Control module for ROS), the control board of TurtleBot3. OpenCR's computing power and real-time control are used to support forward, inverse kinematics, and profile control examples. In addition, OpenCR can interoperate with many functions provided by ROS through message communication with ROS, which will evolve into ROS 2.0 in the future.
@@ -67,16 +67,7 @@ OpenManipulator is composed by [Dynamixel X series](http://emanual.robotis.com/d
 
 ## [Repeatability](#repeatability)
 
-Measurement method is explained in the below video.
-<Coming Soon...>
-<!-- < add repeatability measurement video here > -->
-
-<!-- When measuring the stroke of average 5.7148mm:
-
-| Item                   | Unit    | RM-X52-TNM                              |
-|------------------------|---------|-----------------------------------------|
-| **standard deviation** | mm (in) | 0.0470 (0.00185)                        |
-| **Maximum error**      | mm (in) | 0.1322 (0.00520)                        | -->
+** Coming Soon **
 
 # [Hardware Setup](#hardware-setup)
 
@@ -144,7 +135,7 @@ We offer 3D printed parts to safety. User can modify cad files and 3D Printed it
 
 - CAD Files ([Onshape](http://www.robotis.com/service/download.php?no=690), [Thingiverse](https://www.thingiverse.com/thing:3069574))
 
-![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_OnShape.jpg)
+![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_OnShape.png)
 
 ## [Assembly Manual](#assembly-manual)
 
