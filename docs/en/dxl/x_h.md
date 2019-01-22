@@ -25,10 +25,18 @@ sidebar:
 
 [![](/assets/images/dxl/x/x_series_product.png)](/docs/en/dxl/x/xh430-v350/)
 
+# [XH540-W150](#xh540-w150)
+
+[![](/assets/images/dxl/x/x540-series_product.png)](/docs/en/dxl/x/xh540-w150/)
+
+# [XH540-W270](#xh540-w270)
+
+[![](/assets/images/dxl/x/x540-series_product.png)](/docs/en/dxl/x/xh540-w270/)
+
 # [XH540-V150](#xh540-v150)
 
-[![](/assets/images/dxl/x/x540-series_product.png)](/docs/kr/dxl/x/xh540-v150/)
+[![](/assets/images/dxl/x/x540-series_product.png)](/docs/en/dxl/x/xh540-v150/)
 
 # [XH540-V270](#xh540-v270)
 
-[![](/assets/images/dxl/x/x540-series_product.png)](/docs/kr/dxl/x/xh540-v270/)
+[![](/assets/images/dxl/x/x540-series_product.png)](/docs/en/dxl/x/xh540-v270/)
