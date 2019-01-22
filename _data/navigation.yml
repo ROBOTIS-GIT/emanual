@@ -12923,6 +12923,8 @@ openmanipulator:
         url: /platform/openmanipulator/#hardware-specification
       - title: "Dimension"
         url: /platform/openmanipulator/#dimension
+      - title: "Repeatability"
+        url: /platform/openmanipulator/#repeatability
   - title: "Hardware Setup"
     url: /platform/openmanipulator/#hardware-setup
     children:
@@ -13007,6 +13009,15 @@ openmanipulator:
             url: /platform/openmanipulator/#hand-guiding
   - title: "Camera Application"
     url: /platform/openmanipulator/#camera-application
+    children:
+      - title: "Astra Pro"
+        url: /platform/openmanipulator/#astra-pro
+      - title: "Realsense D435"
+        url: /platform/openmanipulator/#realsense-d435
+      - title: "Raspberry Pi Camera V2"
+        url: /platform/openmanipulator/#raspberry-pi-camera-v2
+      - title: "AR Marker"
+        url: /platform/openmanipulator/#ar-marker
   - title: "Tool Modification"
     url: /platform/openmanipulator/#tool-modification
     children:
