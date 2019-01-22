@@ -45,7 +45,7 @@ sidebar:
 
 |XL320|XL430-W250|
 |:---:|:---:|
-|[![](/assets/images/dxl/x/xl320_product.jpg)](/docs/kr/dxl/x/xl320/)|[![](/assets/images/dxl/x/xl430_product.png)](/docs/kr/dxl/x/xl430-w250/)|
+|[![](/assets/images/dxl/x/xl320_product.jpg)](/docs/kr/dxl/x/xl320/)|[![](/assets/images/dxl/x/xl430_product_new.png)](/docs/kr/dxl/x/xl430-w250/)|
 
 ## [XM 시리즈](#xm-시리즈)
 

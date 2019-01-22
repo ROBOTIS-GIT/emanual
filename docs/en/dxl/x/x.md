@@ -31,7 +31,7 @@ sidebar:
 - Trajectory Data and Moving Status (In-Position, Following Error, etc.)
 - Energy Saving (Reduced Current from 100mA to 40mA)
 
-## [XH Models]
+## [XH Models](#xh-models)
 - [XH430-W210](/docs/en/dxl/x/xh430-w210/)
 - [XH430-W350](/docs/en/dxl/x/xh430-w350/)
 - [XH430-V210](/docs/en/dxl/x/xh430-v210/)
@@ -42,12 +42,12 @@ sidebar:
 - [XH540-V270](/docs/en/dxl/x/xh540-v270/)
 
 
-## [XM Models]
+## [XM Models](#xm-models)
 - [XM430-W210](/docs/en/dxl/x/xm430-w210/)
 - [XM430-W350](/docs/en/dxl/x/xm430-w350/)
 - [XM540-W150](/docs/en/dxl/x/xm540-w150/)
 - [XM540-W270](/docs/en/dxl/x/xm540-w270/)
 
-## [XL Models]
+## [XL Models](#xl-models)
 - [XL320](/docs/en/dxl/x/xl320/)
 - [XL430-W250](/docs/en/dxl/x/xl430-w250/)
