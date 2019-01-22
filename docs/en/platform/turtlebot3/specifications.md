@@ -29,7 +29,7 @@ sidebar:
 | Threshold of climbing              | 10 mm or lower                                                      | 10 mm or lower                                                      | 10 mm or lower                                                      |
 | Expected operating time            | 2h 30m                                                              | 2h                                                                  | 2h                                                                  |
 | Expected charging time             | 2h 30m                                                              | 2h 30m                                                              | 2h 30m                                                              |
-| SBC (Single Board Computers)       | Raspberry Pi 3 Model B                                              | Intel® Joule™ 570x                                                  | Raspberry Pi 3 Model B                                              |
+| SBC (Single Board Computers)       | Raspberry Pi 3 Model B and B+                                       | Intel® Joule™ 570x                                                  | Raspberry Pi 3 Model B and B+                                       |
 | MCU                                | 32-bit ARM Cortex®-M7 with FPU (216 MHz, 462 DMIPS)                 | 32-bit ARM Cortex®-M7 with FPU (216 MHz, 462 DMIPS)                 | 32-bit ARM Cortex®-M7 with FPU (216 MHz, 462 DMIPS)                 |
 | Remote Controller                  | -                                                                   | -                                                                   | RC-100B + BT-410 Set (Bluetooth 4, BLE)                             |
 | Actuator                           | Dynamixel XL430-W250                                                | Dynamixel XM430-W210                                                | Dynamixel XM430-W210                                                |
@@ -76,7 +76,7 @@ sidebar:
 - [Raspberry Pi 3 Model B](https://www.raspberrypi.org/products/raspberry-pi-3-model-b/)
   - TurtleBot3 Burger, Waffle Pi
 - [Raspberry Pi 3 Model B+](https://www.raspberrypi.org/products/raspberry-pi-3-model-b-plus/)
-  - Coming soon!
+  - TurtleBot3 Burger, Waffle Pi (Applied from products shipped in 2019)
 - [Intel® Joule™ 570x](http://ark.intel.com/products/96414/Intel-Joule-570x-Developer-Kit)
   - TurtleBot3 Waffle
 
