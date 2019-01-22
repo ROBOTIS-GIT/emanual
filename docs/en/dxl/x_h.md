@@ -27,8 +27,8 @@ sidebar:
 
 # [XH540-V150](#xh540-v150)
 
-[![](/assets/images/dxl/x/x540-series_product.png)](/docs/kr/dxl/x/xh540-v150/)
+[![](/assets/images/dxl/x/x540-series_product.png)](/docs/en/dxl/x/xh540-v150/)
 
 # [XH540-V270](#xh540-v270)
 
-[![](/assets/images/dxl/x/x540-series_product.png)](/docs/kr/dxl/x/xh540-v270/)
+[![](/assets/images/dxl/x/x540-series_product.png)](/docs/en/dxl/x/xh540-v270/)
