@@ -318,8 +318,8 @@ xh540-v270:
   voltage:            *voltage_24
   voltage_en:         *voltage_24_en
   command:            *command
-  protocoltype:       *rs485_ttl
-  physicalconnection: *rs485_ttl_conn
+  protocoltype:       *rs485
+  physicalconnection: *rs485_connection
   id:                 *id
   feedback:           *feedback
   material:           *material
@@ -347,8 +347,8 @@ xh540-v150:
   voltage:            *voltage_24
   voltage_en:         *voltage_24_en
   command:            *command
-  protocoltype:       *rs485_ttl
-  physicalconnection: *rs485_ttl_conn
+  protocoltype:       *rs485
+  physicalconnection: *rs485_connection
   id:                 *id
   feedback:           *feedback
   material:           *material

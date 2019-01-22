@@ -20,7 +20,7 @@
   {% assign target_file = 'dxl_proa_info' %}
 {% elsif page.product_group=='dxl_pro' %}
   {% assign target_file = 'dxl_pro_info' %}
-{% elsif page.product_group=='dxl_x' or page.product_group=='dxl_xl320' %}
+{% elsif page.product_group=='dxl_x430' or page.product_group=='dxl_x540' or page.product_group=='dxl_xl320' %}
   {% assign target_file = 'dxl_x_info' %}
 {% else %}
 {% endif %}

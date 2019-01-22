@@ -16,5 +16,5 @@
 [MOLEX 22-03-5045]: http://www.molex.com/molex/products/datasheet.jsp?part=active/0022035045_PCB_HEADERS.xml
 [MOLEX 80-70-1039]: http://www.molex.com/molex/products/datasheet.jsp?part=active/0008701039_CRIMP_TERMINALS.xml
 [MOLEX 53398-0371]: https://uk.farnell.com/molex/53398-0371/header-smt-vertical-1-25mm-3way/dp/1125353
-[MOLEX 51021-0300]: https://www.korean.molex.com/molex/products/datasheet.jsp?part=active/0510210300_CRIMP_HOUSINGS.xml
-[MOLEX 50058-8000]: https://www.korean.molex.com/molex/products/datasheet.jsp?part=active/0500588000_CRIMP_TERMINALS.xml
+[MOLEX 51021-0300]: https://www.molex.com/molex/products/datasheet.jsp?part=active/0510210300_CRIMP_HOUSINGS.xml
+[MOLEX 50058-8000]: https://www.molex.com/molex/products/datasheet.jsp?part=active/0500588000_CRIMP_TERMINALS.xml
