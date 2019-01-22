@@ -7,8 +7,5 @@
 ![](/assets/images/dxl/x/x_series_485_pin.png)
 
 전원은 Pin1(-), Pin2(+)를 통하여 다이나믹셀로 공급됩니다.(Dynamixel 전용 Controller에는 위의 회로가 내장되어 있습니다.)  
-위의 회로도에서 TTL Level의 TxD와 RxD는 DIRECTION 485의 Level에 따라 다음과 같이 Data 신호의 방향이 결정됩니다.  
-- DIRECTION485 Level =High인 경우: TxD의 신호가 D+, D-로 출력
-- DIRECTION485 Level =Low인 경우: D+, D-의 신호가 RxD로 입력
 
 {% include kr/dxl/pinout_warning.md %}

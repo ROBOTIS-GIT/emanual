@@ -106,12 +106,12 @@ main:
       - title: "XH430-V350"
         titlekr: "XH430-V350"
         url: /dxl/x/xh430-v350/
-      # - title: "XH540-V150"
-      #   titlekr: "XH540-V150"
-      #   url: /dxl/x/xh540-v150/
-      # - title: "XH540-V270"
-      #   titlekr: "XH540-V270"
-      #   url: /dxl/x/xh540-v270/
+      - title: "XH540-V150"
+        titlekr: "XH540-V150"
+        url: /dxl/x/xh540-v150/
+      - title: "XH540-V270"
+        titlekr: "XH540-V270"
+        url: /dxl/x/xh540-v270/
     - title: "PRO Series"
       titlekr: "PRO 시리즈"
       url: /dxl/pro/
@@ -577,27 +577,35 @@ all-dynamixel:
   - title: "AX Series"
     titlekr: "AX Series"
     url: /dxl/#ax-series
+    urlkr: /dxl/#ax-시리즈
   - title: "EX Series"
     titlekr: "EX Series"
     url: /dxl/#ex-series
+    urlkr: /dxl/#ex-시리즈
   - title: "DX Series"
     titlekr: "DX Series"
     url: /dxl/#dx-series
+    urlkr: /dxl/#dx-시리즈
   - title: "RX Series"
     titlekr: "RX Series"
     url: /dxl/#rx-series
+    urlkr: /dxl/#rx-시리즈
   - title: "MX Series"
     titlekr: "MX Series"
     url: /dxl/#mx-series
+    urlkr: /dxl/#mx-시리즈
   - title: "X Series"
     titlekr: "X Series"
     url: /dxl/#x-series
+    urlkr: /dxl/#x-시리즈
   - title: "PRO Series"
     titlekr: "PRO Series"
     url: /dxl/#pro-series
+    urlkr: /dxl/#pro-시리즈
   - title: "PRO+ Series"
     titlekr: "PRO+ Series"
     url: /dxl/#pro-plus-series
+    urlkr: /dxl/#pro-plus-시리즈
 
 dynamixel_pro:
   - title: "Product Lineup"

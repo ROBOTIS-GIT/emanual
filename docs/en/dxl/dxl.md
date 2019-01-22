@@ -56,10 +56,10 @@ sidebar:
 
 ## [XH Series](#xh-series)
 
-|XH430|
-|:---:|
-|![](/assets/images/dxl/x/x_series_product.png)|
-|[XH430-W210](/docs/en/dxl/x/xh430-w210/)<br>[XH430-W350](/docs/en/dxl/x/xh430-w350/)<br>[XH430-V210](/docs/en/dxl/x/xh430-v210/)<br>[XH430-V350](/docs/en/dxl/x/xh430-v350/)|
+|XH430|XH540|
+|:---:|:---:|
+|![](/assets/images/dxl/x/x_series_product.png)|![](/assets/images/dxl/x/x540-series_product.png)|
+|[XH430-W210](/docs/en/dxl/x/xh430-w210/)<br>[XH430-W350](/docs/en/dxl/x/xh430-w350/)<br>[XH430-V210](/docs/en/dxl/x/xh430-v210/)<br>[XH430-V350](/docs/en/dxl/x/xh430-v350/)|[XH540-V150](/docs/en/dxl/x/xh540-v150/)<br>[XH540-V270](/docs/en/dxl/x/xh540-v270/)|
 
 # [PRO Series](#pro-series)
 

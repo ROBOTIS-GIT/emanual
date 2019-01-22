@@ -32,3 +32,11 @@ header:
 # [XH430-V350](#xh430-v350)
 
 [![](/assets/images/dxl/x/x_series_product.png)](/docs/kr/dxl/x/xh430-v350/)
+
+# [XH540-V150](#xh540-v150)
+
+[![](/assets/images/dxl/x/x540-series_product.png)](/docs/kr/dxl/x/xh540-v150/)
+
+# [XH540-V270](#xh540-v270)
+
+[![](/assets/images/dxl/x/x540-series_product.png)](/docs/kr/dxl/x/xh540-v270/)

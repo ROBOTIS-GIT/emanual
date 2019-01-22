@@ -36,6 +36,9 @@ sidebar:
 - [XH430-W350](/docs/en/dxl/x/xh430-w350/)
 - [XH430-V210](/docs/en/dxl/x/xh430-v210/)
 - [XH430-V350](/docs/en/dxl/x/xh430-v350/)
+- [XH540-V150](/docs/en/dxl/x/xh540-v150/)
+- [XH540-V270](/docs/en/dxl/x/xh540-v270/)
+
 
 ## [XM Models]
 - [XM430-W210](/docs/en/dxl/x/xm430-w210/)
