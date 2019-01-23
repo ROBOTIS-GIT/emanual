@@ -442,18 +442,22 @@ Let's take a look at the `dynamixel_controller.launch` file
   <arg name="dxl_baud_rate"           default="57600"/>
   <arg name="namespace"               default="dynamixel_workbench"/>
 
+  <arg name="use_moveit"              default="false"/>
+  <arg name="use_joint_state"         default="true"/>
+  <arg name="use_cmd_vel"             default="false"/>
+
   <param name="dynamixel_info"          value="$(find dynamixel_workbench_controllers)/config/basic.yaml"/>
 
   <node name="$(arg namespace)" pkg="dynamixel_workbench_controllers" type="dynamixel_workbench_controllers"
-        required="true" **output**="screen" args="$(arg usb_port) $(arg dxl_baud_rate)">
+        required="true" output="screen" args="$(arg usb_port) $(arg dxl_baud_rate)">
+    <param name="use_moveit"              value="$(arg use_moveit)"/>
+    <param name="use_joint_states_topic"  value="$(arg use_joint_state)"/>
+    <param name="use_cmd_vel_topic"       value="$(arg use_cmd_vel)"/>
     <rosparam>
       publish_period: 0.010
       dxl_read_period: 0.010
       dxl_write_period: 0.010
-      use_moveit: false
-      use_joint_states_topic: true
-      use_cmd_vel_topic: false
-      mobile_robot_config:                <!--this values will be set when 'use_cmd_vel_topic' is true-->
+      mobile_robot_config:                <!--this values will be set when 'use_cmd_vel' is true-->
         seperation_between_wheels: 0.160  <!--default value is set by reference of TB3-->
         radius_of_wheel: 0.033            <!--default value is set by reference of TB3-->
     </rosparam>
@@ -649,13 +653,13 @@ This package is to make ROS message and publish it to controllers
 Launch controller and joint_operator.   
 
 
-**WARNING**: The controller should be set **wheel_2_0.yaml** or **wheel_1_0.yaml** and set true to `use_cmd_vel_topic` parameter.
+**WARNING**: The controller should be set **wheel_2_0.yaml** or **wheel_1_0.yaml** and set true to `use_cmd_vel` parameter.
 {: .notice--warning}
 
 ```
 $ cd ~/catkin_ws && catkin_make
-$ roslaunch dynamixel_workbench_controllers dynamixel_controllers.launch
-$ roslaunch dynamixel_workbench_operators joint_operator.launch
+$ roslaunch dynamixel_workbench_controllers dynamixel_controllers.launch 
+$ roslaunch dynamixel_workbench_controllers dynamixel_controllers.launch use_cmd_vel:=true
 ```
 
 If controller load your Dynamixel, you can watch below texts
@@ -745,21 +749,25 @@ I will give you an example to show how to use moveit_bridge.
     ```
     <launch>
     <arg name="usb_port"                default="/dev/ttyUSB0"/>
-    <arg name="dxl_baud_rate"           default="1000000"/>
-    <arg name="namespace"               default="open_manipulator"/>
+    <arg name="dxl_baud_rate"           default="57600"/>
+    <arg name="namespace"               default="dynamixel_workbench"/>
 
-    <param name="dynamixel_info"          value="$(find dynamixel_workbench_controllers)/config/joint_2_0.yaml"/>
+    <arg name="use_moveit"              default="true"/>
+    <arg name="use_joint_state"         default="true"/>
+    <arg name="use_cmd_vel"             default="false"/>
+
+    <param name="dynamixel_info"          value="$(find dynamixel_workbench_controllers)/config/basic.yaml"/>
 
     <node name="$(arg namespace)" pkg="dynamixel_workbench_controllers" type="dynamixel_workbench_controllers"
-            required="true" **output**="screen" args="$(arg usb_port) $(arg dxl_baud_rate)">
+            required="true" output="screen" args="$(arg usb_port) $(arg dxl_baud_rate)">
+        <param name="use_moveit"              value="$(arg use_moveit)"/>
+        <param name="use_joint_states_topic"  value="$(arg use_joint_state)"/>
+        <param name="use_cmd_vel_topic"       value="$(arg use_cmd_vel)"/>
         <rosparam>
         publish_period: 0.010
         dxl_read_period: 0.010
         dxl_write_period: 0.010
-        use_moveit: true
-        use_joint_states_topic: true
-        use_cmd_vel_topic: false
-        mobile_robot_config:                <!--this values will be set when 'use_cmd_vel_topic' is true-->
+        mobile_robot_config:                <!--this values will be set when 'use_cmd_vel' is true-->
             seperation_between_wheels: 0.160  <!--default value is set by reference of TB3-->
             radius_of_wheel: 0.033            <!--default value is set by reference of TB3-->
         </rosparam>
