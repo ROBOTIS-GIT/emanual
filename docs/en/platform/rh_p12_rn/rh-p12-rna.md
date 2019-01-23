@@ -3,7 +3,7 @@ layout: archive
 lang: en
 ref: rh_p12_rna
 read_time: true
-share: false
+share: true
 author_profile: false
 permalink: /docs/en/platform/rh_p12_rna/
 sidebar:
