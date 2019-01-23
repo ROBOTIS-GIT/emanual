@@ -63,12 +63,12 @@ sidebar:
 |  12  |       1        | [Sencondary ID](#secondary-id)              |   RW  |  255   |           0 ~ 255           | - |
 |  20  |       4        | [Homing Offset](#homing-offset)             |   RW  |   0    |         0 ~ 1,150            | 1 [pulse] |
 |  24  |       4        | [Moving Threshold](#moving-threshold)       |   RW  |   80   |          0 ~ 2,970          | 0.01 [rev/min] |
-|  31  |       1        | [Temperature Limit](#temperature-limit)     |   RW  |   80   |           0 ~ 100            | 1 [℃] |
+|  31  |       1        | [Temperature Limit](#temperature-limit)     |   RW  |   80   |           0 ~ 100            | 1 [&deg;C] |
 |  32  |       2        | [Max Voltage Limit](#max-voltage-limit)     |   RW  |  350   |           0 ~ 350            | 0.1 [V] |
 |  34  |       2        | [Min Voltage Limit](#min-voltage-limit)     |   RW  |  150   |           0 ~ 350            | 0.1 [V] |
 |  36  |       2        | [PWM Limit](#pwm-limit)                     |   RW  | 2,009  |         0 ~ 2,009           | - |
 |  38  |       2        | [Current Limit](#current-limit)             |   RW  |  1,984 |          0 ~ 1,984          | 1 [mA] |
-|  40  |       4        | [Acceleration Limit](#acceleration-limit)   |   RW  |  3,447 |          0 ~ 1,378,788      | 1 [rev/min²] |
+|  40  |       4        | [Acceleration Limit](#acceleration-limit)   |   RW  |  3,447 |          0 ~ 1,378,788      | 1 [rev/min<sup>2</sup>] |
 |  44  |       4        | [Velocity Limit](#velocity-limit)           |   RW  |  2,970 |          0 ~ 2,970          | 0.01 [rev/min] |
 |  48  |       4        | [Max Position Limit](#max-position-limit)   |   RW  |  1,150 |         0 ~ 1,150           | 1 [pulse] |
 |  52  |       4        | [Min Position Limit](#min-position-limit)   |   RW  |   0    |          0 ~ 1,150          | 1 [pulse] |
@@ -105,7 +105,7 @@ sidebar:
 | 548  |        2         | [Goal PWM](#goal-pwm)                             |   RW  |   -    |         -PWM Limit(36) ~<br> PWM Limit(36)          | - |
 | 550  |        2         | [Goal Current](#goal-current)                     |   RW  |   0    |     -Current Limit(38) ~<br> Current Limit(38)      | 1 [mA] |
 | 552  |        4         | [Goal Velocity](#goal-velocity)                   |   RW  |   0    |    -Velocity Limit(44) ~<br> Velocity Limit(44)     | 0.01 [rev/min] |
-| 556  |        4         | [Profile Acceleration](#profile-acceleration)     |   RW  |   0    |           0 ~<br> Acceleration Limit(40)            | 1 [rev/min²] |
+| 556  |        4         | [Profile Acceleration](#profile-acceleration)     |   RW  |   0    |           0 ~<br> Acceleration Limit(40)            | 1 [rev/min<sup>2</sup>] |
 | 560  |        4         | [Profile Velocity](#profile-velocity)             |   RW  |   0    |             0 ~<br> Velocity Limit(44)              | 0.01 [rev/min] |
 | 564  |        4         | [Goal Position](#goal-position)                   |   RW  |   -    | Min Position Limit(52) ~<br> Max Position Limit(48) | 1[pulse] |
 | 568  |        2         | [Realtime Tick](#realtime-tick)                   |   R   |   -    |                      0 ~ 32,767                     | 1 [msec] |
@@ -118,7 +118,7 @@ sidebar:
 | 584  |        4         | [Velocity Trajectory](#velocity-trajectory)       |   R   |   -    |                          -                          | 0.01 [rev/min] |
 | 588  |        4         | [Position Trajectory](#position-trajectory)       |   R   |   -    |                          -                          | 1 [pulse] |
 | 592  |        2         | [Present Input Voltage](#present-input-voltage)   |   R   |   -    |                          -                          | 0.1 [V] |
-| 594  |        1         | [Present Temperature](#present-temperature)       |   R   |   -    |                          -                          | 1 [℃] |
+| 594  |        1         | [Present Temperature](#present-temperature)       |   R   |   -    |                          -                          | 1 [&deg;C] |
 | 600  |        2         | [External Port Data 1](#external-port-data)       |  R/RW |   0    |                       0 ~ 4,095                     | - |
 | 602  |        2         | [External Port Data 2](#external-port-data)       |  R/RW |   0    |                       0 ~ 4,095                     | - |
 | 604  |        2         | [External Port Data 3](#external-port-data)       |  R/RW |   0    |                       0 ~ 4,095                     | - |
@@ -207,7 +207,7 @@ Present Position = 실제 위치 + Homing offset(20) 이 됩니다.
 
 | 단위          | 범위          |
 | :-----------: | :-----------: |
-| 1 [rev/min²] | 0 ~ 1,378,788 |
+| 1 [rev/min<sup>2</sup>] | 0 ~ 1,378,788 |
 
 ### <a name="velocity-limit"></a>**[Velocity Limit(44)](#velocity-limit44)**
 목표 속도 값과 프로파일 속도 값의 한계 값입니다. Goal Velocity(552)와 Profile Velocity(560)는 이 값보다 큰 값을 쓸 수 없습니다. 이 값보다 큰 값을 쓰려 하면, 값이 써지지 않고, Status packet의 error 에 Limit error bit가 set 됩니다.
@@ -224,11 +224,38 @@ Present Position = 실제 위치 + Homing offset(20) 이 됩니다.
 | :---:     | :---:     |
 | 1 [pulse] | 0 ~ 1,150 |
 
-**주의**: 동작 모드가 확장 위치 제어 모드일 때는 Position Limit이 적용되지 않습니다.
-{: .notice}
-
 ### <a name="external-port-mode"></a><a name="external-port-data"></a>**[External Port Mode](#external-port-mode)**, **[External Port Data](#external-port-data)**
-{% include kr/dxl/pro_plus/control_table_56_external_port.md %}
+다용도로 사용 가능한 External Port를 제공합니다.  
+External Port의 용도는 External Port Mode(56 ~ 59)에 의해서 결정되고, External Port의 신호는 External Port Data(600 ~ 607)에 의해서 제어됩니다.  
+External Port Data를 통해서 External Port의 신호를 제어하거나, External Port 신호의 상태를 확인할 수 있습니다.  
+External Port는 전기적으로 절연되어 있지 않기 때문에, 전기적 사양을 준수하시기 바랍니다.  
+쉴드 케이블(Shield cable)이나 트위스트 케이블(Twist pair cable)을 사용하실 경우, 보다 정밀한 측정이 가능합니다. 케이블 길이는 짧을수록 정밀한 측정에 유리합니다.
+
+| 항목  | 사양                               |
+| :---: | :--------------------------------: |
+| 전압  | 0 ~ 3.3 [V]<br />VESD(HBM) : 2[kV] |
+| 전류  | 0 ~ 5 [mA]                         |
+
+※ VESD(HBM) : ESD(Electrostatic Discharge) Voltage(human body model)
+
+| 명칭                     | External Port Mode      | External Port Data                                                                      | 접근   | 비고                                                                                                            |
+| :----------------------  | :---------------------: | :-------------------------------------------------------------------------------------  | :----: | :-------------------------------------------------------------------------------------------------------------: |
+| Analogue Input           | 0                       | External Port 신호(signal)를 Digital로 변환<br />External Data = signal x (4,095 / 3.3) | R      | Resolution : 12[bit] (0 ~ 4,095)                                                                                |
+| Digital Output Push-Pull | 1                       | 0 : External Port의 출력을 0[V]로 변경<br />1 : External Port의 출력을 3.3[V]로 변경    | W      | Output High level(VOH) : 2.4 [V] (min)<br />Output Low level(VOL) : 0.5 [V] (max)                               |
+| Digital Input Pull-Up    | 2                       | 0 : External Port의 입력이 0[V]<br />1 : External Port의 입력이 3.3[V] 또는 Open        | R      | Input High level(VIH) : 2.3 [V] (min)<br />Input Low level(VIL) : 1.0 [V] (max)<br />Pull-Up : 40 [k&Omega;] (typ)   |
+| Digital Input Pull-Down  | 3 (초기값)              | 0 : External Port의 입력이 0[V] 또는 Open <br />1 : External Port의 입력이 3.3[V]       | R      | Input High level(VIH) : 2.3 [V] (min)<br />Input Low level(VIL) : 1.0 [V] (max)<br />Pull-Down : 40 [k&Omega;] (typ) |
+
+{% capture control_table_externalportdata_warning %}
+**경고** : External Port 는 전기적으로 절연되어 있지 않기 때문에, 전기적 사양을 준수하시기 바랍니다.  
+전기적 사양을 초과하거나 신호 연결에 문제가 있는 경우, Dynamixel이 손상될 수 있으므로 각별한 주의가 요구됩니다. External Port를 사용할 때 다음 사항들을 주의하시기 바랍니다.
+- 정전기(ESD), 단락(Short circuit), 단선(Open circuit) 등에 의한 전기적인 충격이 발생하지 않도록 주의해 주십시오.
+- External Port 커넥터로 물이나 먼지가 유입되지 않도록 주의해 주십시오.
+- External Port를 사용하지 않을 때는 케이블을 제거해 주십시오.
+- External Port에 신호를 연결/해제 할 때는 전원이 꺼진 상태에서 진행해 주십시오.
+- External Port 의 GNDext 핀과 Dynamixel 커넥터의 GND핀을 직접 연결하지 마십시오. 전원 노이즈가 External Port로 유입될 수 있습니다.
+{% endcapture %}
+
+<div class="notice--warning">{{ control_table_externalportdata_warning | markdownify }}</div>
 
 #### 외부 확장 포트의 위치 및 핀 기능
 아래와 같이 나사를 제거하고 커버를 들어내면 외부 확장 포트가 드러납니다.
@@ -294,10 +321,15 @@ Present Position = 실제 위치 + Homing offset(20) 이 됩니다.
 {% include kr/dxl/pro_plus/control_table_546_bus_watchdog.md %}
 
 ### <a name="goal-pwm"></a>**[Goal PWM(548)](#goal-pwm548)**
-{% include kr/dxl/pro_plus/control_table_548_goal_pwm.md %}
+PWM 출력의 제한값으로 사용됩니다. 이 값은 PWM Limit(36)보다 클 수 없습니다. Goal PWM(548)의 동작 방식은 해당 Gain의 설명 부분을 참고하세요.
+
+| 범위                            | 설명 |
+| :----:                         | :---------: |
+| -PWM Limit(36) ~ PWM Limit(36) | PWM Limit(36)의 초기값 : 2,009 |
+
 
 ### <a name="goal-current"></a>**[Goal Current(550)](#goal-current550)**
-전류 제어 모드에서는 목표 전류값으로 동작합니다. 전류기반 위치 제어 모드에서는 전류 제어기 입력(전류)의 제한값으로 동작됩니다.
+전류 제어 모드에서는 목표 전류값으로 동작하고, 전류기반 위치 제어 모드에서는 전류 제어기 입력(전류)의 제한값으로 동작됩니다.
 이 값은 Current Limit(38) 보다 큰 값을 쓸 수 없습니다.
 
 ### <a name="goal-velocity"></a>**[Goal Velocity(552)](#goal-velocity552)**
