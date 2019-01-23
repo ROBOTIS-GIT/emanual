@@ -45,21 +45,21 @@ sidebar:
 
 |XL320|XL430-W250|
 |:---:|:---:|
-|[![](/assets/images/dxl/x/xl320_product.jpg)](/docs/kr/dxl/x/xl320/)|[![](/assets/images/dxl/x/xl430_product.png)](/docs/kr/dxl/x/xl430-w250/)|
+|[![](/assets/images/dxl/x/xl320_product.jpg)](/docs/kr/dxl/x/xl320/)|[![](/assets/images/dxl/x/xl430_product_new.png)](/docs/kr/dxl/x/xl430-w250/)|
 
 ## [XM 시리즈](#xm-시리즈)
 
 |XM430|XM540|
 |:---:|:---:|
-|![](/assets/images/dxl/x/x_시리즈_product.png)|![](/assets/images/dxl/x/x540-시리즈_product.png)|
+|![](/assets/images/dxl/x/x_series_product.png)|![](/assets/images/dxl/x/x540-series_product.png)|
 |[XM430-W210](/docs/kr/dxl/x/xm430-w210/)<br>[XM430-W350](/docs/kr/dxl/x/xm430-w350/)|[XM540-W150](/docs/kr/dxl/x/xm540-w150/)<br>[XM540-W270](/docs/kr/dxl/x/xm540-w270/)|
 
 ## [XH 시리즈](#xh-시리즈)
 
-|XH430|
-|:---:|
-|![](/assets/images/dxl/x/x_시리즈_product.png)|
-|[XH430-W210](/docs/kr/dxl/x/xh430-w210/)<br>[XH430-W350](/docs/kr/dxl/x/xh430-w350/)<br>[XH430-V210](/docs/kr/dxl/x/xh430-v210/)<br>[XH430-V350](/docs/kr/dxl/x/xh430-v350/)|
+|XH430|XH540|
+|:---:|:---:|
+|![](/assets/images/dxl/x/x_series_product.png)|![](/assets/images/dxl/x/x540-series_product.png)|
+|[XH430-W210](/docs/kr/dxl/x/xh430-w210/)<br>[XH430-W350](/docs/kr/dxl/x/xh430-w350/)<br>[XH430-V210](/docs/kr/dxl/x/xh430-v210/)<br>[XH430-V350](/docs/kr/dxl/x/xh430-v350/)|[XH540-W150](/docs/kr/dxl/x/xh540-w150/)<br>[XH540-W270](/docs/kr/dxl/x/xh540-w270/)<br>[XH540-V150](/docs/kr/dxl/x/xh540-v150/)<br>[XH540-V270](/docs/kr/dxl/x/xh540-v270/)|
 
 # [PRO 시리즈](#pro-시리즈)
 

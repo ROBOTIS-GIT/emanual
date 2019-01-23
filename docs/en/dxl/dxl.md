@@ -45,7 +45,7 @@ sidebar:
 
 |XL320|XL430-W250|
 |:---:|:---:|
-|[![](/assets/images/dxl/x/xl320_product.jpg)](/docs/en/dxl/x/xl320/)|[![](/assets/images/dxl/x/xl430_product.png)](/docs/en/dxl/x/xl430-w250/)|
+|[![](/assets/images/dxl/x/xl320_product.jpg)](/docs/en/dxl/x/xl320/)|[![](/assets/images/dxl/x/xl430_product_new.png)](/docs/en/dxl/x/xl430-w250/)|
 
 ## [XM Series](#xm-series)
 
@@ -56,10 +56,10 @@ sidebar:
 
 ## [XH Series](#xh-series)
 
-|XH430|
-|:---:|
-|![](/assets/images/dxl/x/x_series_product.png)|
-|[XH430-W210](/docs/en/dxl/x/xh430-w210/)<br>[XH430-W350](/docs/en/dxl/x/xh430-w350/)<br>[XH430-V210](/docs/en/dxl/x/xh430-v210/)<br>[XH430-V350](/docs/en/dxl/x/xh430-v350/)|
+|XH430|XH540|
+|:---:|:---:|
+|![](/assets/images/dxl/x/x_series_product.png)|![](/assets/images/dxl/x/x540-series_product.png)|
+|[XH430-W210](/docs/en/dxl/x/xh430-w210/)<br>[XH430-W350](/docs/en/dxl/x/xh430-w350/)<br>[XH430-V210](/docs/en/dxl/x/xh430-v210/)<br>[XH430-V350](/docs/en/dxl/x/xh430-v350/)|[XH540-W150](/docs/en/dxl/x/xh540-w150/)<br>[XH540-W270](/docs/en/dxl/x/xh540-w270/)<br>[XH540-V150](/docs/en/dxl/x/xh540-v150/)<br>[XH540-V270](/docs/en/dxl/x/xh540-v270/)|
 
 # [PRO Series](#pro-series)
 

@@ -88,12 +88,6 @@ main:
       - title: "XM430-W350"
         titlekr: "XM430-W350"
         url: /dxl/x/xm430-w350/
-      - title: "XM540-W150"
-        titlekr: "XM540-W150"
-        url: /dxl/x/xm540-w150/
-      - title: "XM540-W270"
-        titlekr: "XM540-W270"
-        url: /dxl/x/xm540-w270/
       - title: "XH430-W210"
         titlekr: "XH430-W210"
         url: /dxl/x/xh430-w210/
@@ -106,6 +100,24 @@ main:
       - title: "XH430-V350"
         titlekr: "XH430-V350"
         url: /dxl/x/xh430-v350/
+      - title: "XM540-W150"
+        titlekr: "XM540-W150"
+        url: /dxl/x/xm540-w150/
+      - title: "XM540-W270"
+        titlekr: "XM540-W270"
+        url: /dxl/x/xm540-w270/
+      - title: "XH540-W150"
+        titlekr: "XH540-W150"
+        url: /dxl/x/xh540-w150/
+      - title: "XH540-W270"
+        titlekr: "XH540-W270"
+        url: /dxl/x/xh540-w270/
+      - title: "XH540-V150"
+        titlekr: "XH540-V150"
+        url: /dxl/x/xh540-v150/
+      - title: "XH540-V270"
+        titlekr: "XH540-V270"
+        url: /dxl/x/xh540-v270/
     - title: "PRO Series"
       titlekr: "PRO 시리즈"
       url: /dxl/pro/
@@ -571,27 +583,35 @@ all-dynamixel:
   - title: "AX Series"
     titlekr: "AX Series"
     url: /dxl/#ax-series
+    urlkr: /dxl/#ax-시리즈
   - title: "EX Series"
     titlekr: "EX Series"
     url: /dxl/#ex-series
+    urlkr: /dxl/#ex-시리즈
   - title: "DX Series"
     titlekr: "DX Series"
     url: /dxl/#dx-series
+    urlkr: /dxl/#dx-시리즈
   - title: "RX Series"
     titlekr: "RX Series"
     url: /dxl/#rx-series
+    urlkr: /dxl/#rx-시리즈
   - title: "MX Series"
     titlekr: "MX Series"
     url: /dxl/#mx-series
+    urlkr: /dxl/#mx-시리즈
   - title: "X Series"
     titlekr: "X Series"
     url: /dxl/#x-series
+    urlkr: /dxl/#x-시리즈
   - title: "PRO Series"
     titlekr: "PRO Series"
     url: /dxl/#pro-series
+    urlkr: /dxl/#pro-시리즈
   - title: "PRO+ Series"
     titlekr: "PRO+ Series"
     url: /dxl/#pro-plus-series
+    urlkr: /dxl/#pro-plus-시리즈
 
 dynamixel_pro:
   - title: "Product Lineup"
@@ -6137,6 +6157,958 @@ xm540-w270:
         titlekr: "도면"
         url: /dxl/x/xm540-w270/#drawings
         urlkr: /dxl/x/xm540-w270/#도면
+
+#XH540-W150 sidebar
+xh540-w150:
+  - title: "Specifications"
+    titlekr: "주요 사양"
+    url: /dxl/x/xh540-w150/#specifications
+    urlkr: /dxl/x/xh540-w150/#주요-사양
+    children:
+      - title: "Performance Graph"
+        titlekr: "성능 그래프"
+        url: /dxl/x/xh540-w150/#performance-graph
+        urlkr: /dxl/x/xh540-w150/#성능-그래프
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /dxl/x/xh540-w150/#control-table
+    urlkr: /dxl/x/xh540-w150/#컨트롤-테이블
+    children:
+      - title: "Control Table, Data, Address"
+        titlekr: "컨트롤 테이블, 데이터, 주소"
+        url: /dxl/x/xh540-w150/#control-table-data-address
+        urlkr: /dxl/x/xh540-w150/#컨트롤-테이블-데이터-주소
+        children:
+          - title: "Area(EEPROM, RAM)"
+            titlekr: "영역 (EEPROM, RAM)"
+            url: /dxl/x/xh540-w150/#area-eeprom-ram
+            urlkr: /dxl/x/xh540-w150/#영역-eeprom-ram
+          - title: "Size"
+            titlekr: "크기"
+            url: /dxl/x/xh540-w150/#size
+            urlkr: /dxl/x/xh540-w150/#크기
+          - title: "Access"
+            titlekr: "접근권한"
+            url: /dxl/x/xh540-w150/#access
+            urlkr: /dxl/x/xh540-w150/#접근권한
+          - title: "Initial Value"
+            titlekr: "초기값"
+            url: /dxl/x/xh540-w150/#initial-value
+            urlkr: /dxl/x/xh540-w150/#초기값
+      - title: "EEPROM Area"
+        titlekr: "EEPROM 영역"
+        url: /dxl/x/xh540-w150/#control-table-of-eeprom-area
+        urlkr: /dxl/x/xh540-w150/#eeprom-영역
+      - title: "RAM Area"
+        titlekr: "RAM 영역"
+        url: /dxl/x/xh540-w150/#control-table-of-ram-area
+        urlkr: /dxl/x/xh540-w150/#ram-영역
+      - title: "Control Table Description"
+        titlekr: "컨트롤 테이블 설명"
+        url: /dxl/x/xh540-w150/#control-table-description
+        urlkr: /dxl/x/xh540-w150/#컨트롤-테이블-설명
+        children:
+        - title: "Model Number(0)"
+          titlekr: "Model Number(0)"
+          url: /dxl/x/xh540-w150/#model-number0
+        - title: "Firmware Version(6)"
+          titlekr: "Firmware Version(6)"
+          url: /dxl/x/xh540-w150/#firmware-version6
+        - title: "ID(7)"
+          titlekr: "ID(7)"
+          url: /dxl/x/xh540-w150/#id7
+        - title: "Baud Rate(8)"
+          titlekr: "Baud Rate(8)"
+          url: /dxl/x/xh540-w150/#baud-rate8
+        - title: "Return Delay Time(9)"
+          titlekr: "Return Delay Time(9)"
+          url: /dxl/x/xh540-w150/#return-delay-time9
+        - title: "Drive Mode(10)"
+          titlekr: "Drive Mode(10)"
+          url: /dxl/x/xh540-w150/#drive-mode10
+        - title: "Operating Mode(11)"
+          titlekr: "Operating Mode(11)"
+          url: /dxl/x/xh540-w150/#operating-mode11
+        - title: "Secondary(Shadow) ID(12)"
+          titlekr: "Secondary(Shadow) ID(12)"
+          url: /dxl/x/xh540-w150/#secondaryshadow-id12
+        - title: "Protocol Version(13)"
+          titlekr: "Protocol Version(13)"
+          url: /dxl/x/xh540-w150/#protocol-version13
+        - title: "Homing Offset(20)"
+          titlekr: "Homing Offset(20)"
+          url: /dxl/x/xh540-w150/#homing-offset20
+        - title: "Moving Threshold(24)"
+          titlekr: "Moving Threshold(24)"
+          url: /dxl/x/xh540-w150/#moving-threshold24
+        - title: "Temperature Limit(31)"
+          titlekr: "Temperature Limit(31)"
+          url: /dxl/x/xh540-w150/#temperature-limit31
+        - title: "Min/Max Voltage Limit(32,34)"
+          titlekr: "Min/Max Voltage Limit(32,34)"
+          url: /dxl/x/xh540-w150/#minmax-voltage-limit32-34
+        - title: "PWM Lmit(36)"
+          titlekr: "PWM Limit(36)"
+          url: /dxl/x/xh540-w150/#pwm-limit36
+        - title: "Current Limit(38)"
+          titlekr: "Current Limit(38)"
+          url: /dxl/x/xh540-w150/#current-limit38
+        - title: "Velocity Limit(44)"
+          titlekr: "Velocity Limit(44)"
+          url: /dxl/x/xh540-w150/#velocity-limit44
+        - title: "Min/Max Position Limit(48, 52)"
+          titlekr: "Min/Max Position Limit(48, 52)"
+          url: /dxl/x/xh540-w150/#minmax-position-limit48-52
+        - title: "External Port Mode 1,2,3(56,57,58)"
+          titlekr: "External Port Mode 1,2,3(56,57,58)"
+          url: /dxl/x/xh540-w150/#external-port-mode-123565758
+        - title: "Shutdown(63)"
+          titlekr: "Shutdown(63)"
+          url: /dxl/x/xh540-w150/#shutdown63
+        - title: "Torque Enable(64)"
+          titlekr: "Torque Enable(64)"
+          url: /dxl/x/xh540-w150/#torque-enable64
+        - title: "LED(65)"
+          titlekr: "LED(65)"
+          url: /dxl/x/xh540-w150/#led65
+        - title: "Status Return Level(68)"
+          titlekr: "Status Return Level(68)"
+          url: /dxl/x/xh540-w150/#status-return-level68
+        - title: "Registered Instruction(69)"
+          titlekr: "Registered Instruction(69)"
+          url: /dxl/x/xh540-w150/#registered-instruction69
+        - title: "Hardware Error Status(70)"
+          titlekr: "Hardware Error Status(70)"
+          url: /dxl/x/xh540-w150/#hardware-error-status70
+        - title: "Velocity PI Gain(76, 78)"
+          titlekr: "Velocity PI Gain(76, 78)"
+          url: /dxl/x/xh540-w150/#velocity-pi-gain76-78
+        - title: "Position PID Gain(80, 82, 84)"
+          titlekr: "Position PID Gain(80, 82, 84)"
+          url: /dxl/x/xh540-w150/#position-pid-gain80-82-84
+        - title: "Feedforward 1st/2nd Gains(88, 90)"
+          titlekr: "Feedforward 1st/2nd Gains(88, 90)"
+          url: /dxl/x/xh540-w150/#feedforward-1st2nd-gains88-90
+        - title: "BUS Watchdog(98)"
+          titlekr: "BUS Watchdog(98)"
+          url: /dxl/x/xh540-w150/#bus-watchdog98
+        - title: "Goal PWM(100)"
+          titlekr: "Goal PWM(100)"
+          url: /dxl/x/xh540-w150/#goal-pwm100
+        - title: "Goal Current(102)"
+          titlekr: "Goal Current(102)"
+          url: /dxl/x/xh540-w150/#goal-current102
+        - title: "Goal Velocity(104)"
+          titlekr: "Goal Velocity(104)"
+          url: /dxl/x/xh540-w150/#goal-velocity104
+        - title: "Profile Acceleration(108)"
+          titlekr: "Profile Acceleration(108)"
+          url: /dxl/x/xh540-w150/#profile-acceleration108
+        - title: "Profile Velocity(112)"
+          titlekr: "Profile Velocity(112)"
+          url: /dxl/x/xh540-w150/#profile-velocity112
+        - title: "Goal Position(116)"
+          titlekr: "Goal Position(116)"
+          url: /dxl/x/xh540-w150/#goal-position116
+        - title: "Realtime Tick(120)"
+          titlekr: "Realtime Tick(120)"
+          url: /dxl/x/xh540-w150/#realtime-tick120
+        - title: "Moving(122)"
+          titlekr: "Moving(122)"
+          url: /dxl/x/xh540-w150/#moving122
+        - title: "Moving Status(123)"
+          titlekr: "Moving Status(123)"
+          url: /dxl/x/xh540-w150/#moving-status123
+        - title: "Present PWM(124)"
+          titlekr: "Present PWM(124)"
+          url: /dxl/x/xh540-w150/#present-pwm124
+        - title: "Present Current(126)"
+          titlekr: "Present Current(126)"
+          url: /dxl/x/xh540-w150/#present-current126
+        - title: "Present Velocity(128)"
+          titlekr: "Present Velocity(128)"
+          url: /dxl/x/xh540-w150/#present-velocity128
+        - title: "Present Position(132)"
+          titlekr: "Present Position(132)"
+          url: /dxl/x/xh540-w150/#present-position132
+        - title: "Velocity Trajectory(136)"
+          titlekr: "Velocity Trajectory(136)"
+          url: /dxl/x/xh540-w150/#velocity-trajectory136
+        - title: "Position Trajectory(140)"
+          titlekr: "Position Trajectory(140)"
+          url: /dxl/x/xh540-w150/#position-trajectory140
+        - title: "Present Input Voltage(144)"
+          titlekr: "Present Input Voltage(144)"
+          url: /dxl/x/xh540-w150/#present-input-voltage144
+        - title: "Present Temperature(146)"
+          titlekr: "Present Temperature(146)"
+          url: /dxl/x/xh540-w150/#present-temperature146
+        - title: "External Port Data 1,2,3"
+          titlekr: "External Port Data 1,2,3"
+          url: /dxl/x/xh540-w150/#external-port-data-123
+        - title: "Indirect Address"
+          titlekr: "Indirect Address"
+          url: /dxl/x/xh540-w150/#indirect-address
+        - title: "Indirect Data"
+          titlekr: "Indirect Data"
+          url: /dxl/x/xh540-w150/#indirect-data
+  - title: "How to Assemble"
+    titlekr: "조립 예시"
+    url: /dxl/x/xh540-w150/#how-to-assemble
+    urlkr: /dxl/x/xh540-w150/#조립-예시
+    children:
+      - title: "Wiring through Back Case"
+        titlekr: "배선 예시"
+        url: /dxl/x/xh540-w150/#wiring-through-back-case
+        urlkr: /dxl/x/xh540-w150/#배선-예시
+      - title: "Option Frame Assembly"
+        titlekr: "옵션프레임 조립"
+        url: /dxl/x/xh540-w150/#option-frame-assembly
+        urlkr: /dxl/x/xh540-w150/#옵션프레임-조립
+  - title: "Maintenance"
+    titlekr: "유지보수"
+    url: /dxl/x/xh540-w150/#maintenance
+    urlkr: /dxl/x/xh540-w150/#유지보수
+    children:
+      - title: "Horn, Gear Replacement"
+        titlekr: "혼과 기어 교체"
+        url: /dxl/x/xh540-w150/#horn-and-gear-replacement
+        urlkr: /dxl/x/xh540-w150/#혼과-기어-교체
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /dxl/x/xh540-w150/#reference
+    urlkr: /dxl/x/xh540-w150/#참고자료
+    children:
+      - title: "Quick Start"
+        titlekr: "퀵스타트"
+        url: /dxl/x/xh540-w150/#quick-start
+        urlkr: /dxl/x/xh540-w150/#퀵스타트
+      - title: "Connector Information"
+        titlekr: "커넥터 정보"
+        url: /dxl/x/xh540-w150/#connector-information
+        urlkr: /dxl/x/xh540-w150/#커넥터-정보
+      - title: "Communication Circuit"
+        titlekr: "통신 회로"
+        url: /dxl/x/xh540-w150/#communication-circuit
+        urlkr: /dxl/x/xh540-w150/#통신-회로
+      - title: "Drawings"
+        titlekr: "도면"
+        url: /dxl/x/xh540-w150/#drawings
+        urlkr: /dxl/x/xh540-w150/#도면
+
+#XH540-W270 sidebar
+xh540-w270:
+  - title: "Specifications"
+    titlekr: "주요 사양"
+    url: /dxl/x/xh540-w270/#specifications
+    urlkr: /dxl/x/xh540-w270/#주요-사양
+    children:
+      - title: "Performance Graph"
+        titlekr: "성능 그래프"
+        url: /dxl/x/xh540-w270/#performance-graph
+        urlkr: /dxl/x/xh540-w270/#성능-그래프
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /dxl/x/xh540-w270/#control-table
+    urlkr: /dxl/x/xh540-w270/#컨트롤-테이블
+    children:
+      - title: "Control Table, Data, Address"
+        titlekr: "컨트롤 테이블, 데이터, 주소"
+        url: /dxl/x/xh540-w270/#control-table-data-address
+        urlkr: /dxl/x/xh540-w270/#컨트롤-테이블-데이터-주소
+        children:
+          - title: "Area(EEPROM, RAM)"
+            titlekr: "영역 (EEPROM, RAM)"
+            url: /dxl/x/xh540-w270/#area-eeprom-ram
+            urlkr: /dxl/x/xh540-w270/#영역-eeprom-ram
+          - title: "Size"
+            titlekr: "크기"
+            url: /dxl/x/xh540-w270/#size
+            urlkr: /dxl/x/xh540-w270/#크기
+          - title: "Access"
+            titlekr: "접근권한"
+            url: /dxl/x/xh540-w270/#access
+            urlkr: /dxl/x/xh540-w270/#접근권한
+          - title: "Initial Value"
+            titlekr: "초기값"
+            url: /dxl/x/xh540-w270/#initial-value
+            urlkr: /dxl/x/xh540-w270/#초기값
+      - title: "EEPROM Area"
+        titlekr: "EEPROM 영역"
+        url: /dxl/x/xh540-w270/#control-table-of-eeprom-area
+        urlkr: /dxl/x/xh540-w270/#eeprom-영역
+      - title: "RAM Area"
+        titlekr: "RAM 영역"
+        url: /dxl/x/xh540-w270/#control-table-of-ram-area
+        urlkr: /dxl/x/xh540-w270/#ram-영역
+      - title: "Control Table Description"
+        titlekr: "컨트롤 테이블 설명"
+        url: /dxl/x/xh540-w270/#control-table-description
+        urlkr: /dxl/x/xh540-w270/#컨트롤-테이블-설명
+        children:
+        - title: "Model Number(0)"
+          titlekr: "Model Number(0)"
+          url: /dxl/x/xh540-w270/#model-number0
+        - title: "Firmware Version(6)"
+          titlekr: "Firmware Version(6)"
+          url: /dxl/x/xh540-w270/#firmware-version6
+        - title: "ID(7)"
+          titlekr: "ID(7)"
+          url: /dxl/x/xh540-w270/#id7
+        - title: "Baud Rate(8)"
+          titlekr: "Baud Rate(8)"
+          url: /dxl/x/xh540-w270/#baud-rate8
+        - title: "Return Delay Time(9)"
+          titlekr: "Return Delay Time(9)"
+          url: /dxl/x/xh540-w270/#return-delay-time9
+        - title: "Drive Mode(10)"
+          titlekr: "Drive Mode(10)"
+          url: /dxl/x/xh540-w270/#drive-mode10
+        - title: "Operating Mode(11)"
+          titlekr: "Operating Mode(11)"
+          url: /dxl/x/xh540-w270/#operating-mode11
+        - title: "Secondary(Shadow) ID(12)"
+          titlekr: "Secondary(Shadow) ID(12)"
+          url: /dxl/x/xh540-w270/#secondaryshadow-id12
+        - title: "Protocol Version(13)"
+          titlekr: "Protocol Version(13)"
+          url: /dxl/x/xh540-w270/#protocol-version13
+        - title: "Homing Offset(20)"
+          titlekr: "Homing Offset(20)"
+          url: /dxl/x/xh540-w270/#homing-offset20
+        - title: "Moving Threshold(24)"
+          titlekr: "Moving Threshold(24)"
+          url: /dxl/x/xh540-w270/#moving-threshold24
+        - title: "Temperature Limit(31)"
+          titlekr: "Temperature Limit(31)"
+          url: /dxl/x/xh540-w270/#temperature-limit31
+        - title: "Min/Max Voltage Limit(32,34)"
+          titlekr: "Min/Max Voltage Limit(32,34)"
+          url: /dxl/x/xh540-w270/#minmax-voltage-limit32-34
+        - title: "PWM Lmit(36)"
+          titlekr: "PWM Limit(36)"
+          url: /dxl/x/xh540-w270/#pwm-limit36
+        - title: "Current Limit(38)"
+          titlekr: "Current Limit(38)"
+          url: /dxl/x/xh540-w270/#current-limit38
+        - title: "Velocity Limit(44)"
+          titlekr: "Velocity Limit(44)"
+          url: /dxl/x/xh540-w270/#velocity-limit44
+        - title: "Min/Max Position Limit(48, 52)"
+          titlekr: "Min/Max Position Limit(48, 52)"
+          url: /dxl/x/xh540-w270/#minmax-position-limit48-52
+        - title: "External Port Mode 1,2,3(56,57,58)"
+          titlekr: "External Port Mode 1,2,3(56,57,58)"
+          url: /dxl/x/xh540-w270/#external-port-mode-123565758
+        - title: "Shutdown(63)"
+          titlekr: "Shutdown(63)"
+          url: /dxl/x/xh540-w270/#shutdown63
+        - title: "Torque Enable(64)"
+          titlekr: "Torque Enable(64)"
+          url: /dxl/x/xh540-w270/#torque-enable64
+        - title: "LED(65)"
+          titlekr: "LED(65)"
+          url: /dxl/x/xh540-w270/#led65
+        - title: "Status Return Level(68)"
+          titlekr: "Status Return Level(68)"
+          url: /dxl/x/xh540-w270/#status-return-level68
+        - title: "Registered Instruction(69)"
+          titlekr: "Registered Instruction(69)"
+          url: /dxl/x/xh540-w270/#registered-instruction69
+        - title: "Hardware Error Status(70)"
+          titlekr: "Hardware Error Status(70)"
+          url: /dxl/x/xh540-w270/#hardware-error-status70
+        - title: "Velocity PI Gain(76, 78)"
+          titlekr: "Velocity PI Gain(76, 78)"
+          url: /dxl/x/xh540-w270/#velocity-pi-gain76-78
+        - title: "Position PID Gain(80, 82, 84)"
+          titlekr: "Position PID Gain(80, 82, 84)"
+          url: /dxl/x/xh540-w270/#position-pid-gain80-82-84
+        - title: "Feedforward 1st/2nd Gains(88, 90)"
+          titlekr: "Feedforward 1st/2nd Gains(88, 90)"
+          url: /dxl/x/xh540-w270/#feedforward-1st2nd-gains88-90
+        - title: "BUS Watchdog(98)"
+          titlekr: "BUS Watchdog(98)"
+          url: /dxl/x/xh540-w270/#bus-watchdog98
+        - title: "Goal PWM(100)"
+          titlekr: "Goal PWM(100)"
+          url: /dxl/x/xh540-w270/#goal-pwm100
+        - title: "Goal Current(102)"
+          titlekr: "Goal Current(102)"
+          url: /dxl/x/xh540-w270/#goal-current102
+        - title: "Goal Velocity(104)"
+          titlekr: "Goal Velocity(104)"
+          url: /dxl/x/xh540-w270/#goal-velocity104
+        - title: "Profile Acceleration(108)"
+          titlekr: "Profile Acceleration(108)"
+          url: /dxl/x/xh540-w270/#profile-acceleration108
+        - title: "Profile Velocity(112)"
+          titlekr: "Profile Velocity(112)"
+          url: /dxl/x/xh540-w270/#profile-velocity112
+        - title: "Goal Position(116)"
+          titlekr: "Goal Position(116)"
+          url: /dxl/x/xh540-w270/#goal-position116
+        - title: "Realtime Tick(120)"
+          titlekr: "Realtime Tick(120)"
+          url: /dxl/x/xh540-w270/#realtime-tick120
+        - title: "Moving(122)"
+          titlekr: "Moving(122)"
+          url: /dxl/x/xh540-w270/#moving122
+        - title: "Moving Status(123)"
+          titlekr: "Moving Status(123)"
+          url: /dxl/x/xh540-w270/#moving-status123
+        - title: "Present PWM(124)"
+          titlekr: "Present PWM(124)"
+          url: /dxl/x/xh540-w270/#present-pwm124
+        - title: "Present Current(126)"
+          titlekr: "Present Current(126)"
+          url: /dxl/x/xh540-w270/#present-current126
+        - title: "Present Velocity(128)"
+          titlekr: "Present Velocity(128)"
+          url: /dxl/x/xh540-w270/#present-velocity128
+        - title: "Present Position(132)"
+          titlekr: "Present Position(132)"
+          url: /dxl/x/xh540-w270/#present-position132
+        - title: "Velocity Trajectory(136)"
+          titlekr: "Velocity Trajectory(136)"
+          url: /dxl/x/xh540-w270/#velocity-trajectory136
+        - title: "Position Trajectory(140)"
+          titlekr: "Position Trajectory(140)"
+          url: /dxl/x/xh540-w270/#position-trajectory140
+        - title: "Present Input Voltage(144)"
+          titlekr: "Present Input Voltage(144)"
+          url: /dxl/x/xh540-w270/#present-input-voltage144
+        - title: "Present Temperature(146)"
+          titlekr: "Present Temperature(146)"
+          url: /dxl/x/xh540-w270/#present-temperature146
+        - title: "External Port Data 1,2,3"
+          titlekr: "External Port Data 1,2,3"
+          url: /dxl/x/xh540-w270/#external-port-data-123
+        - title: "Indirect Address"
+          titlekr: "Indirect Address"
+          url: /dxl/x/xh540-w270/#indirect-address
+        - title: "Indirect Data"
+          titlekr: "Indirect Data"
+          url: /dxl/x/xh540-w270/#indirect-data
+  - title: "How to Assemble"
+    titlekr: "조립 예시"
+    url: /dxl/x/xh540-w270/#how-to-assemble
+    urlkr: /dxl/x/xh540-w270/#조립-예시
+    children:
+      - title: "Wiring through Back Case"
+        titlekr: "배선 예시"
+        url: /dxl/x/xh540-w270/#wiring-through-back-case
+        urlkr: /dxl/x/xh540-w270/#배선-예시
+      - title: "Option Frame Assembly"
+        titlekr: "옵션프레임 조립"
+        url: /dxl/x/xh540-w270/#option-frame-assembly
+        urlkr: /dxl/x/xh540-w270/#옵션프레임-조립
+  - title: "Maintenance"
+    titlekr: "유지보수"
+    url: /dxl/x/xh540-w270/#maintenance
+    urlkr: /dxl/x/xh540-w270/#유지보수
+    children:
+      - title: "Horn, Gear Replacement"
+        titlekr: "혼과 기어 교체"
+        url: /dxl/x/xh540-w270/#horn-and-gear-replacement
+        urlkr: /dxl/x/xh540-w270/#혼과-기어-교체
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /dxl/x/xh540-w270/#reference
+    urlkr: /dxl/x/xh540-w270/#참고자료
+    children:
+      - title: "Quick Start"
+        titlekr: "퀵스타트"
+        url: /dxl/x/xh540-w270/#quick-start
+        urlkr: /dxl/x/xh540-w270/#퀵스타트
+      - title: "Connector Information"
+        titlekr: "커넥터 정보"
+        url: /dxl/x/xh540-w270/#connector-information
+        urlkr: /dxl/x/xh540-w270/#커넥터-정보
+      - title: "Communication Circuit"
+        titlekr: "통신 회로"
+        url: /dxl/x/xh540-w270/#communication-circuit
+        urlkr: /dxl/x/xh540-w270/#통신-회로
+      - title: "Drawings"
+        titlekr: "도면"
+        url: /dxl/x/xh540-w270/#drawings
+        urlkr: /dxl/x/xh540-w270/#도면
+
+#XH540-V150 sidebar
+xh540-v150:
+  - title: "Specifications"
+    titlekr: "주요 사양"
+    url: /dxl/x/xh540-v150/#specifications
+    urlkr: /dxl/x/xh540-v150/#주요-사양
+    children:
+      - title: "Performance Graph"
+        titlekr: "성능 그래프"
+        url: /dxl/x/xh540-v150/#performance-graph
+        urlkr: /dxl/x/xh540-v150/#성능-그래프
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /dxl/x/xh540-v150/#control-table
+    urlkr: /dxl/x/xh540-v150/#컨트롤-테이블
+    children:
+      - title: "Control Table, Data, Address"
+        titlekr: "컨트롤 테이블, 데이터, 주소"
+        url: /dxl/x/xh540-v150/#control-table-data-address
+        urlkr: /dxl/x/xh540-v150/#컨트롤-테이블-데이터-주소
+        children:
+          - title: "Area(EEPROM, RAM)"
+            titlekr: "영역 (EEPROM, RAM)"
+            url: /dxl/x/xh540-v150/#area-eeprom-ram
+            urlkr: /dxl/x/xh540-v150/#영역-eeprom-ram
+          - title: "Size"
+            titlekr: "크기"
+            url: /dxl/x/xh540-v150/#size
+            urlkr: /dxl/x/xh540-v150/#크기
+          - title: "Access"
+            titlekr: "접근권한"
+            url: /dxl/x/xh540-v150/#access
+            urlkr: /dxl/x/xh540-v150/#접근권한
+          - title: "Initial Value"
+            titlekr: "초기값"
+            url: /dxl/x/xh540-v150/#initial-value
+            urlkr: /dxl/x/xh540-v150/#초기값
+      - title: "EEPROM Area"
+        titlekr: "EEPROM 영역"
+        url: /dxl/x/xh540-v150/#control-table-of-eeprom-area
+        urlkr: /dxl/x/xh540-v150/#eeprom-영역
+      - title: "RAM Area"
+        titlekr: "RAM 영역"
+        url: /dxl/x/xh540-v150/#control-table-of-ram-area
+        urlkr: /dxl/x/xh540-v150/#ram-영역
+      - title: "Control Table Description"
+        titlekr: "컨트롤 테이블 설명"
+        url: /dxl/x/xh540-v150/#control-table-description
+        urlkr: /dxl/x/xh540-v150/#컨트롤-테이블-설명
+        children:
+        - title: "Model Number(0)"
+          titlekr: "Model Number(0)"
+          url: /dxl/x/xh540-v150/#model-number0
+        - title: "Firmware Version(6)"
+          titlekr: "Firmware Version(6)"
+          url: /dxl/x/xh540-v150/#firmware-version6
+        - title: "ID(7)"
+          titlekr: "ID(7)"
+          url: /dxl/x/xh540-v150/#id7
+        - title: "Baud Rate(8)"
+          titlekr: "Baud Rate(8)"
+          url: /dxl/x/xh540-v150/#baud-rate8
+        - title: "Return Delay Time(9)"
+          titlekr: "Return Delay Time(9)"
+          url: /dxl/x/xh540-v150/#return-delay-time9
+        - title: "Drive Mode(10)"
+          titlekr: "Drive Mode(10)"
+          url: /dxl/x/xh540-v150/#drive-mode10
+        - title: "Operating Mode(11)"
+          titlekr: "Operating Mode(11)"
+          url: /dxl/x/xh540-v150/#operating-mode11
+        - title: "Secondary(Shadow) ID(12)"
+          titlekr: "Secondary(Shadow) ID(12)"
+          url: /dxl/x/xh540-v150/#secondaryshadow-id12
+        - title: "Protocol Version(13)"
+          titlekr: "Protocol Version(13)"
+          url: /dxl/x/xh540-v150/#protocol-version13
+        - title: "Homing Offset(20)"
+          titlekr: "Homing Offset(20)"
+          url: /dxl/x/xh540-v150/#homing-offset20
+        - title: "Moving Threshold(24)"
+          titlekr: "Moving Threshold(24)"
+          url: /dxl/x/xh540-v150/#moving-threshold24
+        - title: "Temperature Limit(31)"
+          titlekr: "Temperature Limit(31)"
+          url: /dxl/x/xh540-v150/#temperature-limit31
+        - title: "Min/Max Voltage Limit(32,34)"
+          titlekr: "Min/Max Voltage Limit(32,34)"
+          url: /dxl/x/xh540-v150/#minmax-voltage-limit32-34
+        - title: "PWM Lmit(36)"
+          titlekr: "PWM Limit(36)"
+          url: /dxl/x/xh540-v150/#pwm-limit36
+        - title: "Current Limit(38)"
+          titlekr: "Current Limit(38)"
+          url: /dxl/x/xh540-v150/#current-limit38
+        - title: "Velocity Limit(44)"
+          titlekr: "Velocity Limit(44)"
+          url: /dxl/x/xh540-v150/#velocity-limit44
+        - title: "Min/Max Position Limit(48, 52)"
+          titlekr: "Min/Max Position Limit(48, 52)"
+          url: /dxl/x/xh540-v150/#minmax-position-limit48-52
+        - title: "External Port Mode 1,2,3(56,57,58)"
+          titlekr: "External Port Mode 1,2,3(56,57,58)"
+          url: /dxl/x/xh540-v150/#external-port-mode-123565758
+        - title: "Shutdown(63)"
+          titlekr: "Shutdown(63)"
+          url: /dxl/x/xh540-v150/#shutdown63
+        - title: "Torque Enable(64)"
+          titlekr: "Torque Enable(64)"
+          url: /dxl/x/xh540-v150/#torque-enable64
+        - title: "LED(65)"
+          titlekr: "LED(65)"
+          url: /dxl/x/xh540-v150/#led65
+        - title: "Status Return Level(68)"
+          titlekr: "Status Return Level(68)"
+          url: /dxl/x/xh540-v150/#status-return-level68
+        - title: "Registered Instruction(69)"
+          titlekr: "Registered Instruction(69)"
+          url: /dxl/x/xh540-v150/#registered-instruction69
+        - title: "Hardware Error Status(70)"
+          titlekr: "Hardware Error Status(70)"
+          url: /dxl/x/xh540-v150/#hardware-error-status70
+        - title: "Velocity PI Gain(76, 78)"
+          titlekr: "Velocity PI Gain(76, 78)"
+          url: /dxl/x/xh540-v150/#velocity-pi-gain76-78
+        - title: "Position PID Gain(80, 82, 84)"
+          titlekr: "Position PID Gain(80, 82, 84)"
+          url: /dxl/x/xh540-v150/#position-pid-gain80-82-84
+        - title: "Feedforward 1st/2nd Gains(88, 90)"
+          titlekr: "Feedforward 1st/2nd Gains(88, 90)"
+          url: /dxl/x/xh540-v150/#feedforward-1st2nd-gains88-90
+        - title: "BUS Watchdog(98)"
+          titlekr: "BUS Watchdog(98)"
+          url: /dxl/x/xh540-v150/#bus-watchdog98
+        - title: "Goal PWM(100)"
+          titlekr: "Goal PWM(100)"
+          url: /dxl/x/xh540-v150/#goal-pwm100
+        - title: "Goal Current(102)"
+          titlekr: "Goal Current(102)"
+          url: /dxl/x/xh540-v150/#goal-current102
+        - title: "Goal Velocity(104)"
+          titlekr: "Goal Velocity(104)"
+          url: /dxl/x/xh540-v150/#goal-velocity104
+        - title: "Profile Acceleration(108)"
+          titlekr: "Profile Acceleration(108)"
+          url: /dxl/x/xh540-v150/#profile-acceleration108
+        - title: "Profile Velocity(112)"
+          titlekr: "Profile Velocity(112)"
+          url: /dxl/x/xh540-v150/#profile-velocity112
+        - title: "Goal Position(116)"
+          titlekr: "Goal Position(116)"
+          url: /dxl/x/xh540-v150/#goal-position116
+        - title: "Realtime Tick(120)"
+          titlekr: "Realtime Tick(120)"
+          url: /dxl/x/xh540-v150/#realtime-tick120
+        - title: "Moving(122)"
+          titlekr: "Moving(122)"
+          url: /dxl/x/xh540-v150/#moving122
+        - title: "Moving Status(123)"
+          titlekr: "Moving Status(123)"
+          url: /dxl/x/xh540-v150/#moving-status123
+        - title: "Present PWM(124)"
+          titlekr: "Present PWM(124)"
+          url: /dxl/x/xh540-v150/#present-pwm124
+        - title: "Present Current(126)"
+          titlekr: "Present Current(126)"
+          url: /dxl/x/xh540-v150/#present-current126
+        - title: "Present Velocity(128)"
+          titlekr: "Present Velocity(128)"
+          url: /dxl/x/xh540-v150/#present-velocity128
+        - title: "Present Position(132)"
+          titlekr: "Present Position(132)"
+          url: /dxl/x/xh540-v150/#present-position132
+        - title: "Velocity Trajectory(136)"
+          titlekr: "Velocity Trajectory(136)"
+          url: /dxl/x/xh540-v150/#velocity-trajectory136
+        - title: "Position Trajectory(140)"
+          titlekr: "Position Trajectory(140)"
+          url: /dxl/x/xh540-v150/#position-trajectory140
+        - title: "Present Input Voltage(144)"
+          titlekr: "Present Input Voltage(144)"
+          url: /dxl/x/xh540-v150/#present-input-voltage144
+        - title: "Present Temperature(146)"
+          titlekr: "Present Temperature(146)"
+          url: /dxl/x/xh540-v150/#present-temperature146
+        - title: "External Port Data 1,2,3"
+          titlekr: "External Port Data 1,2,3"
+          url: /dxl/x/xh540-v150/#external-port-data-123
+        - title: "Indirect Address"
+          titlekr: "Indirect Address"
+          url: /dxl/x/xh540-v150/#indirect-address
+        - title: "Indirect Data"
+          titlekr: "Indirect Data"
+          url: /dxl/x/xh540-v150/#indirect-data
+  - title: "How to Assemble"
+    titlekr: "조립 예시"
+    url: /dxl/x/xh540-v150/#how-to-assemble
+    urlkr: /dxl/x/xh540-v150/#조립-예시
+    children:
+      - title: "Wiring through Back Case"
+        titlekr: "배선 예시"
+        url: /dxl/x/xh540-v150/#wiring-through-back-case
+        urlkr: /dxl/x/xh540-v150/#배선-예시
+      - title: "Option Frame Assembly"
+        titlekr: "옵션프레임 조립"
+        url: /dxl/x/xh540-v150/#option-frame-assembly
+        urlkr: /dxl/x/xh540-v150/#옵션프레임-조립
+  - title: "Maintenance"
+    titlekr: "유지보수"
+    url: /dxl/x/xh540-v150/#maintenance
+    urlkr: /dxl/x/xh540-v150/#유지보수
+    children:
+      - title: "Horn, Gear Replacement"
+        titlekr: "혼과 기어 교체"
+        url: /dxl/x/xh540-v150/#horn-and-gear-replacement
+        urlkr: /dxl/x/xh540-v150/#혼과-기어-교체
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /dxl/x/xh540-v150/#reference
+    urlkr: /dxl/x/xh540-v150/#참고자료
+    children:
+      - title: "Quick Start"
+        titlekr: "퀵스타트"
+        url: /dxl/x/xh540-v150/#quick-start
+        urlkr: /dxl/x/xh540-v150/#퀵스타트
+      - title: "Connector Information"
+        titlekr: "커넥터 정보"
+        url: /dxl/x/xh540-v150/#connector-information
+        urlkr: /dxl/x/xh540-v150/#커넥터-정보
+      - title: "Communication Circuit"
+        titlekr: "통신 회로"
+        url: /dxl/x/xh540-v150/#communication-circuit
+        urlkr: /dxl/x/xh540-v150/#통신-회로
+      - title: "Drawings"
+        titlekr: "도면"
+        url: /dxl/x/xh540-v150/#drawings
+        urlkr: /dxl/x/xh540-v150/#도면
+
+#XH540-V270 sidebar
+xh540-v270:
+  - title: "Specifications"
+    titlekr: "주요 사양"
+    url: /dxl/x/xh540-v270/#specifications
+    urlkr: /dxl/x/xh540-v270/#주요-사양
+    children:
+      - title: "Performance Graph"
+        titlekr: "성능 그래프"
+        url: /dxl/x/xh540-v270/#performance-graph
+        urlkr: /dxl/x/xh540-v270/#성능-그래프
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /dxl/x/xh540-v270/#control-table
+    urlkr: /dxl/x/xh540-v270/#컨트롤-테이블
+    children:
+      - title: "Control Table, Data, Address"
+        titlekr: "컨트롤 테이블, 데이터, 주소"
+        url: /dxl/x/xh540-v270/#control-table-data-address
+        urlkr: /dxl/x/xh540-v270/#컨트롤-테이블-데이터-주소
+        children:
+          - title: "Area(EEPROM, RAM)"
+            titlekr: "영역 (EEPROM, RAM)"
+            url: /dxl/x/xh540-v270/#area-eeprom-ram
+            urlkr: /dxl/x/xh540-v270/#영역-eeprom-ram
+          - title: "Size"
+            titlekr: "크기"
+            url: /dxl/x/xh540-v270/#size
+            urlkr: /dxl/x/xh540-v270/#크기
+          - title: "Access"
+            titlekr: "접근권한"
+            url: /dxl/x/xh540-v270/#access
+            urlkr: /dxl/x/xh540-v270/#접근권한
+          - title: "Initial Value"
+            titlekr: "초기값"
+            url: /dxl/x/xh540-v270/#initial-value
+            urlkr: /dxl/x/xh540-v270/#초기값
+      - title: "EEPROM Area"
+        titlekr: "EEPROM 영역"
+        url: /dxl/x/xh540-v270/#control-table-of-eeprom-area
+        urlkr: /dxl/x/xh540-v270/#eeprom-영역
+      - title: "RAM Area"
+        titlekr: "RAM 영역"
+        url: /dxl/x/xh540-v270/#control-table-of-ram-area
+        urlkr: /dxl/x/xh540-v270/#ram-영역
+      - title: "Control Table Description"
+        titlekr: "컨트롤 테이블 설명"
+        url: /dxl/x/xh540-v270/#control-table-description
+        urlkr: /dxl/x/xh540-v270/#컨트롤-테이블-설명
+        children:
+        - title: "Model Number(0)"
+          titlekr: "Model Number(0)"
+          url: /dxl/x/xh540-v270/#model-number0
+        - title: "Firmware Version(6)"
+          titlekr: "Firmware Version(6)"
+          url: /dxl/x/xh540-v270/#firmware-version6
+        - title: "ID(7)"
+          titlekr: "ID(7)"
+          url: /dxl/x/xh540-v270/#id7
+        - title: "Baud Rate(8)"
+          titlekr: "Baud Rate(8)"
+          url: /dxl/x/xh540-v270/#baud-rate8
+        - title: "Return Delay Time(9)"
+          titlekr: "Return Delay Time(9)"
+          url: /dxl/x/xh540-v270/#return-delay-time9
+        - title: "Drive Mode(10)"
+          titlekr: "Drive Mode(10)"
+          url: /dxl/x/xh540-v270/#drive-mode10
+        - title: "Operating Mode(11)"
+          titlekr: "Operating Mode(11)"
+          url: /dxl/x/xh540-v270/#operating-mode11
+        - title: "Secondary(Shadow) ID(12)"
+          titlekr: "Secondary(Shadow) ID(12)"
+          url: /dxl/x/xh540-v270/#secondaryshadow-id12
+        - title: "Protocol Version(13)"
+          titlekr: "Protocol Version(13)"
+          url: /dxl/x/xh540-v270/#protocol-version13
+        - title: "Homing Offset(20)"
+          titlekr: "Homing Offset(20)"
+          url: /dxl/x/xh540-v270/#homing-offset20
+        - title: "Moving Threshold(24)"
+          titlekr: "Moving Threshold(24)"
+          url: /dxl/x/xh540-v270/#moving-threshold24
+        - title: "Temperature Limit(31)"
+          titlekr: "Temperature Limit(31)"
+          url: /dxl/x/xh540-v270/#temperature-limit31
+        - title: "Min/Max Voltage Limit(32,34)"
+          titlekr: "Min/Max Voltage Limit(32,34)"
+          url: /dxl/x/xh540-v270/#minmax-voltage-limit32-34
+        - title: "PWM Lmit(36)"
+          titlekr: "PWM Limit(36)"
+          url: /dxl/x/xh540-v270/#pwm-limit36
+        - title: "Current Limit(38)"
+          titlekr: "Current Limit(38)"
+          url: /dxl/x/xh540-v270/#current-limit38
+        - title: "Velocity Limit(44)"
+          titlekr: "Velocity Limit(44)"
+          url: /dxl/x/xh540-v270/#velocity-limit44
+        - title: "Min/Max Position Limit(48, 52)"
+          titlekr: "Min/Max Position Limit(48, 52)"
+          url: /dxl/x/xh540-v270/#minmax-position-limit48-52
+        - title: "External Port Mode 1,2,3(56,57,58)"
+          titlekr: "External Port Mode 1,2,3(56,57,58)"
+          url: /dxl/x/xh540-v270/#external-port-mode-123565758
+        - title: "Shutdown(63)"
+          titlekr: "Shutdown(63)"
+          url: /dxl/x/xh540-v270/#shutdown63
+        - title: "Torque Enable(64)"
+          titlekr: "Torque Enable(64)"
+          url: /dxl/x/xh540-v270/#torque-enable64
+        - title: "LED(65)"
+          titlekr: "LED(65)"
+          url: /dxl/x/xh540-v270/#led65
+        - title: "Status Return Level(68)"
+          titlekr: "Status Return Level(68)"
+          url: /dxl/x/xh540-v270/#status-return-level68
+        - title: "Registered Instruction(69)"
+          titlekr: "Registered Instruction(69)"
+          url: /dxl/x/xh540-v270/#registered-instruction69
+        - title: "Hardware Error Status(70)"
+          titlekr: "Hardware Error Status(70)"
+          url: /dxl/x/xh540-v270/#hardware-error-status70
+        - title: "Velocity PI Gain(76, 78)"
+          titlekr: "Velocity PI Gain(76, 78)"
+          url: /dxl/x/xh540-v270/#velocity-pi-gain76-78
+        - title: "Position PID Gain(80, 82, 84)"
+          titlekr: "Position PID Gain(80, 82, 84)"
+          url: /dxl/x/xh540-v270/#position-pid-gain80-82-84
+        - title: "Feedforward 1st/2nd Gains(88, 90)"
+          titlekr: "Feedforward 1st/2nd Gains(88, 90)"
+          url: /dxl/x/xh540-v270/#feedforward-1st2nd-gains88-90
+        - title: "BUS Watchdog(98)"
+          titlekr: "BUS Watchdog(98)"
+          url: /dxl/x/xh540-v270/#bus-watchdog98
+        - title: "Goal PWM(100)"
+          titlekr: "Goal PWM(100)"
+          url: /dxl/x/xh540-v270/#goal-pwm100
+        - title: "Goal Current(102)"
+          titlekr: "Goal Current(102)"
+          url: /dxl/x/xh540-v270/#goal-current102
+        - title: "Goal Velocity(104)"
+          titlekr: "Goal Velocity(104)"
+          url: /dxl/x/xh540-v270/#goal-velocity104
+        - title: "Profile Acceleration(108)"
+          titlekr: "Profile Acceleration(108)"
+          url: /dxl/x/xh540-v270/#profile-acceleration108
+        - title: "Profile Velocity(112)"
+          titlekr: "Profile Velocity(112)"
+          url: /dxl/x/xh540-v270/#profile-velocity112
+        - title: "Goal Position(116)"
+          titlekr: "Goal Position(116)"
+          url: /dxl/x/xh540-v270/#goal-position116
+        - title: "Realtime Tick(120)"
+          titlekr: "Realtime Tick(120)"
+          url: /dxl/x/xh540-v270/#realtime-tick120
+        - title: "Moving(122)"
+          titlekr: "Moving(122)"
+          url: /dxl/x/xh540-v270/#moving122
+        - title: "Moving Status(123)"
+          titlekr: "Moving Status(123)"
+          url: /dxl/x/xh540-v270/#moving-status123
+        - title: "Present PWM(124)"
+          titlekr: "Present PWM(124)"
+          url: /dxl/x/xh540-v270/#present-pwm124
+        - title: "Present Current(126)"
+          titlekr: "Present Current(126)"
+          url: /dxl/x/xh540-v270/#present-current126
+        - title: "Present Velocity(128)"
+          titlekr: "Present Velocity(128)"
+          url: /dxl/x/xh540-v270/#present-velocity128
+        - title: "Present Position(132)"
+          titlekr: "Present Position(132)"
+          url: /dxl/x/xh540-v270/#present-position132
+        - title: "Velocity Trajectory(136)"
+          titlekr: "Velocity Trajectory(136)"
+          url: /dxl/x/xh540-v270/#velocity-trajectory136
+        - title: "Position Trajectory(140)"
+          titlekr: "Position Trajectory(140)"
+          url: /dxl/x/xh540-v270/#position-trajectory140
+        - title: "Present Input Voltage(144)"
+          titlekr: "Present Input Voltage(144)"
+          url: /dxl/x/xh540-v270/#present-input-voltage144
+        - title: "Present Temperature(146)"
+          titlekr: "Present Temperature(146)"
+          url: /dxl/x/xh540-v270/#present-temperature146
+        - title: "External Port Data 1,2,3"
+          titlekr: "External Port Data 1,2,3"
+          url: /dxl/x/xh540-v270/#external-port-data-123
+        - title: "Indirect Address"
+          titlekr: "Indirect Address"
+          url: /dxl/x/xh540-v270/#indirect-address
+        - title: "Indirect Data"
+          titlekr: "Indirect Data"
+          url: /dxl/x/xh540-v270/#indirect-data
+  - title: "How to Assemble"
+    titlekr: "조립 예시"
+    url: /dxl/x/xh540-v270/#how-to-assemble
+    urlkr: /dxl/x/xh540-v270/#조립-예시
+    children:
+      - title: "Wiring through Back Case"
+        titlekr: "배선 예시"
+        url: /dxl/x/xh540-v270/#wiring-through-back-case
+        urlkr: /dxl/x/xh540-v270/#배선-예시
+      - title: "Option Frame Assembly"
+        titlekr: "옵션프레임 조립"
+        url: /dxl/x/xh540-v270/#option-frame-assembly
+        urlkr: /dxl/x/xh540-v270/#옵션프레임-조립
+  - title: "Maintenance"
+    titlekr: "유지보수"
+    url: /dxl/x/xh540-v270/#maintenance
+    urlkr: /dxl/x/xh540-v270/#유지보수
+    children:
+      - title: "Horn, Gear Replacement"
+        titlekr: "혼과 기어 교체"
+        url: /dxl/x/xh540-v270/#horn-and-gear-replacement
+        urlkr: /dxl/x/xh540-v270/#혼과-기어-교체
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /dxl/x/xh540-v270/#reference
+    urlkr: /dxl/x/xh540-v270/#참고자료
+    children:
+      - title: "Quick Start"
+        titlekr: "퀵스타트"
+        url: /dxl/x/xh540-v270/#quick-start
+        urlkr: /dxl/x/xh540-v270/#퀵스타트
+      - title: "Connector Information"
+        titlekr: "커넥터 정보"
+        url: /dxl/x/xh540-v270/#connector-information
+        urlkr: /dxl/x/xh540-v270/#커넥터-정보
+      - title: "Communication Circuit"
+        titlekr: "통신 회로"
+        url: /dxl/x/xh540-v270/#communication-circuit
+        urlkr: /dxl/x/xh540-v270/#통신-회로
+      - title: "Drawings"
+        titlekr: "도면"
+        url: /dxl/x/xh540-v270/#drawings
+        urlkr: /dxl/x/xh540-v270/#도면
 
 #H42-20-S300-R sidebar
 h42-20-s300-r:
@@ -13018,7 +13990,6 @@ openmanipulator:
         url: /platform/openmanipulator/#raspberry-pi-camera-v2
       - title: "AR Marker"
         url: /platform/openmanipulator/#ar-marker
-        children:
   - title: "Tool Modification"
     url: /platform/openmanipulator/#tool-modification
     children:
@@ -17039,6 +18010,10 @@ u2d2_power_hub:
     titlekr: "주의사항"
     url: /parts/interface/u2d2_power_hub/#cautions
     urlkr: /parts/interface/u2d2_power_hub/#주의사항
+  - title: "How to Assemble"
+    titlekr: "조립 예시"
+    url: /parts/interface/u2d2_power_hub/#how-to-assemble
+    urlkr: /parts/interface/u2d2_power_hub/#조립-예시
 
 opencm7:
   - titlekr: "개요"
