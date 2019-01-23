@@ -88,12 +88,6 @@ main:
       - title: "XM430-W350"
         titlekr: "XM430-W350"
         url: /dxl/x/xm430-w350/
-      - title: "XM540-W150"
-        titlekr: "XM540-W150"
-        url: /dxl/x/xm540-w150/
-      - title: "XM540-W270"
-        titlekr: "XM540-W270"
-        url: /dxl/x/xm540-w270/
       - title: "XH430-W210"
         titlekr: "XH430-W210"
         url: /dxl/x/xh430-w210/
@@ -106,10 +100,46 @@ main:
       - title: "XH430-V350"
         titlekr: "XH430-V350"
         url: /dxl/x/xh430-v350/
+      - title: "XM540-W150"
+        titlekr: "XM540-W150"
+        url: /dxl/x/xm540-w150/
+      - title: "XM540-W270"
+        titlekr: "XM540-W270"
+        url: /dxl/x/xm540-w270/
+      - title: "XH540-W150"
+        titlekr: "XH540-W150"
+        url: /dxl/x/xh540-w150/
+      - title: "XH540-W270"
+        titlekr: "XH540-W270"
+        url: /dxl/x/xh540-w270/
+      - title: "XH540-V150"
+        titlekr: "XH540-V150"
+        url: /dxl/x/xh540-v150/
+      - title: "XH540-V270"
+        titlekr: "XH540-V270"
+        url: /dxl/x/xh540-v270/
     - title: "PRO Series"
       titlekr: "PRO 시리즈"
       url: /dxl/pro/
       children:
+      - title: "H54-200-S500-R(A)"
+        titlekr: "H54-200-S500-R(A)"
+        url: /dxl/pro/h54-200-s500-ra/
+      - title: "H54-100-S500-R(A)"
+        titlekr: "H54-100-S500-R(A)"
+        url: /dxl/pro/h54-100-s500-ra/
+      - title: "H42-20-S300-R(A)"
+        titlekr: "H42-20-S300-R(A)"
+        url: /dxl/pro/h42-20-s300-ra/
+      - title: "M54-60-S250-R(A)"
+        titlekr: "M54-60-S250-R(A)"
+        url: /dxl/pro/m54-60-s250-ra/
+      - title: "M54-40-S250-R(A)"
+        titlekr: "M54-40-S250-R(A)"
+        url: /dxl/pro/m54-40-s250-ra/
+      - title: "M42-10-S260-R(A)"
+        titlekr: "M42-10-S260-R(A)"
+        url: /dxl/pro/m42-10-s260-ra/
       - title: "H54-200-S500-R"
         titlekr: "H54-200-S500-R"
         url: /dxl/pro/h54-200-s500-r/
@@ -143,24 +173,6 @@ main:
       - title: "*L42-10-S300-R"
         titlekr: "*L42-10-S300-R"
         url: /dxl/pro/l42-10-s300-r/
-      # - title: "H54-200-S500-R(A)"
-      #   titlekr: "H54-200-S500-R(A)"
-      #   url: /dxl/pro/h54-200-s500-ra/
-      # - title: "H54-100-S500-R(A)"
-      #   titlekr: "H54-100-S500-R(A)"
-      #   url: /dxl/pro/h54-100-s500-ra/
-      # - title: "H42-20-S300-R(A)"
-      #   titlekr: "H42-20-S300-R(A)"
-      #   url: /dxl/pro/h42-20-s300-ra/
-      # - title: "M54-60-S250-R(A)"
-      #   titlekr: "M54-60-S250-R(A)"
-      #   url: /dxl/pro/m54-60-s250-ra/
-      # - title: "M54-40-S250-R(A)"
-      #   titlekr: "M54-40-S250-R(A)"
-      #   url: /dxl/pro/m54-40-s250-ra/
-      # - title: "M42-10-S260-R(A)"
-      #   titlekr: "M42-10-S260-R(A)"
-      #   url: /dxl/pro/m42-10-s260-ra/
     - title: "PRO+ Series"
       titlekr: "PRO+ 시리즈"
       url: /dxl/pro_plus/
@@ -192,12 +204,12 @@ main:
     - title: "ROBOTIS OP3"
       titlekr: "로보티즈 OP3"
       url: /platform/op3/introduction/
+    - title: "RH-P12-RN(A)"
+      titlekr: "RH-P12-RN(A)"
+      url: /platform/rh_p12_rna/
     - title: "RH-P12-RN"
       titlekr: "RH-P12-RN"
       url: /platform/rh_p12_rn/
-    # - title: "RH-P12-RN(A)"
-    #   titlekr: "RH-P12-RN(A)"
-    #   url: /platform/rh_p12_rna/
     - titlekr: "로봇핸드 RX28"
       url: /platform/robothand_rx28/
     - titlekr: "로봇핸드 MX28"
@@ -301,6 +313,9 @@ main:
         url: /edu/iot/iot-1/
       - titlekr: "2단계 교육키트"
         url: /edu/iot/iot-2/
+    # - title: "Info Robot"
+    #   titlekr: "실과 로봇"
+    #   url: /edu/info/
     - titlekr: "자동차 로봇"
       url: /edu/car/
     - title: "BIOLOID"
@@ -389,7 +404,8 @@ main:
       children:
       - titlekr: "R+ m.Task"
         url: /software/rplus_mobile/mtask/
-      - titlekr: "R+ m.Task 2.0"
+      - title: "R+ m.Task 2.0"
+        titlekr: "R+ m.Task 2.0"
         url: /software/rplus_mobile/mtask20/
       - title: "R+ m.Motion 2.0"
         titlekr: "R+ m.Motion 2.0"
@@ -570,27 +586,35 @@ all-dynamixel:
   - title: "AX Series"
     titlekr: "AX Series"
     url: /dxl/#ax-series
+    urlkr: /dxl/#ax-시리즈
   - title: "EX Series"
     titlekr: "EX Series"
     url: /dxl/#ex-series
+    urlkr: /dxl/#ex-시리즈
   - title: "DX Series"
     titlekr: "DX Series"
     url: /dxl/#dx-series
+    urlkr: /dxl/#dx-시리즈
   - title: "RX Series"
     titlekr: "RX Series"
     url: /dxl/#rx-series
+    urlkr: /dxl/#rx-시리즈
   - title: "MX Series"
     titlekr: "MX Series"
     url: /dxl/#mx-series
+    urlkr: /dxl/#mx-시리즈
   - title: "X Series"
     titlekr: "X Series"
     url: /dxl/#x-series
+    urlkr: /dxl/#x-시리즈
   - title: "PRO Series"
     titlekr: "PRO Series"
     url: /dxl/#pro-series
+    urlkr: /dxl/#pro-시리즈
   - title: "PRO+ Series"
     titlekr: "PRO+ Series"
     url: /dxl/#pro-plus-series
+    urlkr: /dxl/#pro-plus-시리즈
 
 dynamixel_pro:
   - title: "Product Lineup"
@@ -6136,6 +6160,958 @@ xm540-w270:
         titlekr: "도면"
         url: /dxl/x/xm540-w270/#drawings
         urlkr: /dxl/x/xm540-w270/#도면
+
+#XH540-W150 sidebar
+xh540-w150:
+  - title: "Specifications"
+    titlekr: "주요 사양"
+    url: /dxl/x/xh540-w150/#specifications
+    urlkr: /dxl/x/xh540-w150/#주요-사양
+    children:
+      - title: "Performance Graph"
+        titlekr: "성능 그래프"
+        url: /dxl/x/xh540-w150/#performance-graph
+        urlkr: /dxl/x/xh540-w150/#성능-그래프
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /dxl/x/xh540-w150/#control-table
+    urlkr: /dxl/x/xh540-w150/#컨트롤-테이블
+    children:
+      - title: "Control Table, Data, Address"
+        titlekr: "컨트롤 테이블, 데이터, 주소"
+        url: /dxl/x/xh540-w150/#control-table-data-address
+        urlkr: /dxl/x/xh540-w150/#컨트롤-테이블-데이터-주소
+        children:
+          - title: "Area(EEPROM, RAM)"
+            titlekr: "영역 (EEPROM, RAM)"
+            url: /dxl/x/xh540-w150/#area-eeprom-ram
+            urlkr: /dxl/x/xh540-w150/#영역-eeprom-ram
+          - title: "Size"
+            titlekr: "크기"
+            url: /dxl/x/xh540-w150/#size
+            urlkr: /dxl/x/xh540-w150/#크기
+          - title: "Access"
+            titlekr: "접근권한"
+            url: /dxl/x/xh540-w150/#access
+            urlkr: /dxl/x/xh540-w150/#접근권한
+          - title: "Initial Value"
+            titlekr: "초기값"
+            url: /dxl/x/xh540-w150/#initial-value
+            urlkr: /dxl/x/xh540-w150/#초기값
+      - title: "EEPROM Area"
+        titlekr: "EEPROM 영역"
+        url: /dxl/x/xh540-w150/#control-table-of-eeprom-area
+        urlkr: /dxl/x/xh540-w150/#eeprom-영역
+      - title: "RAM Area"
+        titlekr: "RAM 영역"
+        url: /dxl/x/xh540-w150/#control-table-of-ram-area
+        urlkr: /dxl/x/xh540-w150/#ram-영역
+      - title: "Control Table Description"
+        titlekr: "컨트롤 테이블 설명"
+        url: /dxl/x/xh540-w150/#control-table-description
+        urlkr: /dxl/x/xh540-w150/#컨트롤-테이블-설명
+        children:
+        - title: "Model Number(0)"
+          titlekr: "Model Number(0)"
+          url: /dxl/x/xh540-w150/#model-number0
+        - title: "Firmware Version(6)"
+          titlekr: "Firmware Version(6)"
+          url: /dxl/x/xh540-w150/#firmware-version6
+        - title: "ID(7)"
+          titlekr: "ID(7)"
+          url: /dxl/x/xh540-w150/#id7
+        - title: "Baud Rate(8)"
+          titlekr: "Baud Rate(8)"
+          url: /dxl/x/xh540-w150/#baud-rate8
+        - title: "Return Delay Time(9)"
+          titlekr: "Return Delay Time(9)"
+          url: /dxl/x/xh540-w150/#return-delay-time9
+        - title: "Drive Mode(10)"
+          titlekr: "Drive Mode(10)"
+          url: /dxl/x/xh540-w150/#drive-mode10
+        - title: "Operating Mode(11)"
+          titlekr: "Operating Mode(11)"
+          url: /dxl/x/xh540-w150/#operating-mode11
+        - title: "Secondary(Shadow) ID(12)"
+          titlekr: "Secondary(Shadow) ID(12)"
+          url: /dxl/x/xh540-w150/#secondaryshadow-id12
+        - title: "Protocol Version(13)"
+          titlekr: "Protocol Version(13)"
+          url: /dxl/x/xh540-w150/#protocol-version13
+        - title: "Homing Offset(20)"
+          titlekr: "Homing Offset(20)"
+          url: /dxl/x/xh540-w150/#homing-offset20
+        - title: "Moving Threshold(24)"
+          titlekr: "Moving Threshold(24)"
+          url: /dxl/x/xh540-w150/#moving-threshold24
+        - title: "Temperature Limit(31)"
+          titlekr: "Temperature Limit(31)"
+          url: /dxl/x/xh540-w150/#temperature-limit31
+        - title: "Min/Max Voltage Limit(32,34)"
+          titlekr: "Min/Max Voltage Limit(32,34)"
+          url: /dxl/x/xh540-w150/#minmax-voltage-limit32-34
+        - title: "PWM Lmit(36)"
+          titlekr: "PWM Limit(36)"
+          url: /dxl/x/xh540-w150/#pwm-limit36
+        - title: "Current Limit(38)"
+          titlekr: "Current Limit(38)"
+          url: /dxl/x/xh540-w150/#current-limit38
+        - title: "Velocity Limit(44)"
+          titlekr: "Velocity Limit(44)"
+          url: /dxl/x/xh540-w150/#velocity-limit44
+        - title: "Min/Max Position Limit(48, 52)"
+          titlekr: "Min/Max Position Limit(48, 52)"
+          url: /dxl/x/xh540-w150/#minmax-position-limit48-52
+        - title: "External Port Mode 1,2,3(56,57,58)"
+          titlekr: "External Port Mode 1,2,3(56,57,58)"
+          url: /dxl/x/xh540-w150/#external-port-mode-123565758
+        - title: "Shutdown(63)"
+          titlekr: "Shutdown(63)"
+          url: /dxl/x/xh540-w150/#shutdown63
+        - title: "Torque Enable(64)"
+          titlekr: "Torque Enable(64)"
+          url: /dxl/x/xh540-w150/#torque-enable64
+        - title: "LED(65)"
+          titlekr: "LED(65)"
+          url: /dxl/x/xh540-w150/#led65
+        - title: "Status Return Level(68)"
+          titlekr: "Status Return Level(68)"
+          url: /dxl/x/xh540-w150/#status-return-level68
+        - title: "Registered Instruction(69)"
+          titlekr: "Registered Instruction(69)"
+          url: /dxl/x/xh540-w150/#registered-instruction69
+        - title: "Hardware Error Status(70)"
+          titlekr: "Hardware Error Status(70)"
+          url: /dxl/x/xh540-w150/#hardware-error-status70
+        - title: "Velocity PI Gain(76, 78)"
+          titlekr: "Velocity PI Gain(76, 78)"
+          url: /dxl/x/xh540-w150/#velocity-pi-gain76-78
+        - title: "Position PID Gain(80, 82, 84)"
+          titlekr: "Position PID Gain(80, 82, 84)"
+          url: /dxl/x/xh540-w150/#position-pid-gain80-82-84
+        - title: "Feedforward 1st/2nd Gains(88, 90)"
+          titlekr: "Feedforward 1st/2nd Gains(88, 90)"
+          url: /dxl/x/xh540-w150/#feedforward-1st2nd-gains88-90
+        - title: "BUS Watchdog(98)"
+          titlekr: "BUS Watchdog(98)"
+          url: /dxl/x/xh540-w150/#bus-watchdog98
+        - title: "Goal PWM(100)"
+          titlekr: "Goal PWM(100)"
+          url: /dxl/x/xh540-w150/#goal-pwm100
+        - title: "Goal Current(102)"
+          titlekr: "Goal Current(102)"
+          url: /dxl/x/xh540-w150/#goal-current102
+        - title: "Goal Velocity(104)"
+          titlekr: "Goal Velocity(104)"
+          url: /dxl/x/xh540-w150/#goal-velocity104
+        - title: "Profile Acceleration(108)"
+          titlekr: "Profile Acceleration(108)"
+          url: /dxl/x/xh540-w150/#profile-acceleration108
+        - title: "Profile Velocity(112)"
+          titlekr: "Profile Velocity(112)"
+          url: /dxl/x/xh540-w150/#profile-velocity112
+        - title: "Goal Position(116)"
+          titlekr: "Goal Position(116)"
+          url: /dxl/x/xh540-w150/#goal-position116
+        - title: "Realtime Tick(120)"
+          titlekr: "Realtime Tick(120)"
+          url: /dxl/x/xh540-w150/#realtime-tick120
+        - title: "Moving(122)"
+          titlekr: "Moving(122)"
+          url: /dxl/x/xh540-w150/#moving122
+        - title: "Moving Status(123)"
+          titlekr: "Moving Status(123)"
+          url: /dxl/x/xh540-w150/#moving-status123
+        - title: "Present PWM(124)"
+          titlekr: "Present PWM(124)"
+          url: /dxl/x/xh540-w150/#present-pwm124
+        - title: "Present Current(126)"
+          titlekr: "Present Current(126)"
+          url: /dxl/x/xh540-w150/#present-current126
+        - title: "Present Velocity(128)"
+          titlekr: "Present Velocity(128)"
+          url: /dxl/x/xh540-w150/#present-velocity128
+        - title: "Present Position(132)"
+          titlekr: "Present Position(132)"
+          url: /dxl/x/xh540-w150/#present-position132
+        - title: "Velocity Trajectory(136)"
+          titlekr: "Velocity Trajectory(136)"
+          url: /dxl/x/xh540-w150/#velocity-trajectory136
+        - title: "Position Trajectory(140)"
+          titlekr: "Position Trajectory(140)"
+          url: /dxl/x/xh540-w150/#position-trajectory140
+        - title: "Present Input Voltage(144)"
+          titlekr: "Present Input Voltage(144)"
+          url: /dxl/x/xh540-w150/#present-input-voltage144
+        - title: "Present Temperature(146)"
+          titlekr: "Present Temperature(146)"
+          url: /dxl/x/xh540-w150/#present-temperature146
+        - title: "External Port Data 1,2,3"
+          titlekr: "External Port Data 1,2,3"
+          url: /dxl/x/xh540-w150/#external-port-data-123
+        - title: "Indirect Address"
+          titlekr: "Indirect Address"
+          url: /dxl/x/xh540-w150/#indirect-address
+        - title: "Indirect Data"
+          titlekr: "Indirect Data"
+          url: /dxl/x/xh540-w150/#indirect-data
+  - title: "How to Assemble"
+    titlekr: "조립 예시"
+    url: /dxl/x/xh540-w150/#how-to-assemble
+    urlkr: /dxl/x/xh540-w150/#조립-예시
+    children:
+      - title: "Wiring through Back Case"
+        titlekr: "배선 예시"
+        url: /dxl/x/xh540-w150/#wiring-through-back-case
+        urlkr: /dxl/x/xh540-w150/#배선-예시
+      - title: "Option Frame Assembly"
+        titlekr: "옵션프레임 조립"
+        url: /dxl/x/xh540-w150/#option-frame-assembly
+        urlkr: /dxl/x/xh540-w150/#옵션프레임-조립
+  - title: "Maintenance"
+    titlekr: "유지보수"
+    url: /dxl/x/xh540-w150/#maintenance
+    urlkr: /dxl/x/xh540-w150/#유지보수
+    children:
+      - title: "Horn, Gear Replacement"
+        titlekr: "혼과 기어 교체"
+        url: /dxl/x/xh540-w150/#horn-and-gear-replacement
+        urlkr: /dxl/x/xh540-w150/#혼과-기어-교체
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /dxl/x/xh540-w150/#reference
+    urlkr: /dxl/x/xh540-w150/#참고자료
+    children:
+      - title: "Quick Start"
+        titlekr: "퀵스타트"
+        url: /dxl/x/xh540-w150/#quick-start
+        urlkr: /dxl/x/xh540-w150/#퀵스타트
+      - title: "Connector Information"
+        titlekr: "커넥터 정보"
+        url: /dxl/x/xh540-w150/#connector-information
+        urlkr: /dxl/x/xh540-w150/#커넥터-정보
+      - title: "Communication Circuit"
+        titlekr: "통신 회로"
+        url: /dxl/x/xh540-w150/#communication-circuit
+        urlkr: /dxl/x/xh540-w150/#통신-회로
+      - title: "Drawings"
+        titlekr: "도면"
+        url: /dxl/x/xh540-w150/#drawings
+        urlkr: /dxl/x/xh540-w150/#도면
+
+#XH540-W270 sidebar
+xh540-w270:
+  - title: "Specifications"
+    titlekr: "주요 사양"
+    url: /dxl/x/xh540-w270/#specifications
+    urlkr: /dxl/x/xh540-w270/#주요-사양
+    children:
+      - title: "Performance Graph"
+        titlekr: "성능 그래프"
+        url: /dxl/x/xh540-w270/#performance-graph
+        urlkr: /dxl/x/xh540-w270/#성능-그래프
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /dxl/x/xh540-w270/#control-table
+    urlkr: /dxl/x/xh540-w270/#컨트롤-테이블
+    children:
+      - title: "Control Table, Data, Address"
+        titlekr: "컨트롤 테이블, 데이터, 주소"
+        url: /dxl/x/xh540-w270/#control-table-data-address
+        urlkr: /dxl/x/xh540-w270/#컨트롤-테이블-데이터-주소
+        children:
+          - title: "Area(EEPROM, RAM)"
+            titlekr: "영역 (EEPROM, RAM)"
+            url: /dxl/x/xh540-w270/#area-eeprom-ram
+            urlkr: /dxl/x/xh540-w270/#영역-eeprom-ram
+          - title: "Size"
+            titlekr: "크기"
+            url: /dxl/x/xh540-w270/#size
+            urlkr: /dxl/x/xh540-w270/#크기
+          - title: "Access"
+            titlekr: "접근권한"
+            url: /dxl/x/xh540-w270/#access
+            urlkr: /dxl/x/xh540-w270/#접근권한
+          - title: "Initial Value"
+            titlekr: "초기값"
+            url: /dxl/x/xh540-w270/#initial-value
+            urlkr: /dxl/x/xh540-w270/#초기값
+      - title: "EEPROM Area"
+        titlekr: "EEPROM 영역"
+        url: /dxl/x/xh540-w270/#control-table-of-eeprom-area
+        urlkr: /dxl/x/xh540-w270/#eeprom-영역
+      - title: "RAM Area"
+        titlekr: "RAM 영역"
+        url: /dxl/x/xh540-w270/#control-table-of-ram-area
+        urlkr: /dxl/x/xh540-w270/#ram-영역
+      - title: "Control Table Description"
+        titlekr: "컨트롤 테이블 설명"
+        url: /dxl/x/xh540-w270/#control-table-description
+        urlkr: /dxl/x/xh540-w270/#컨트롤-테이블-설명
+        children:
+        - title: "Model Number(0)"
+          titlekr: "Model Number(0)"
+          url: /dxl/x/xh540-w270/#model-number0
+        - title: "Firmware Version(6)"
+          titlekr: "Firmware Version(6)"
+          url: /dxl/x/xh540-w270/#firmware-version6
+        - title: "ID(7)"
+          titlekr: "ID(7)"
+          url: /dxl/x/xh540-w270/#id7
+        - title: "Baud Rate(8)"
+          titlekr: "Baud Rate(8)"
+          url: /dxl/x/xh540-w270/#baud-rate8
+        - title: "Return Delay Time(9)"
+          titlekr: "Return Delay Time(9)"
+          url: /dxl/x/xh540-w270/#return-delay-time9
+        - title: "Drive Mode(10)"
+          titlekr: "Drive Mode(10)"
+          url: /dxl/x/xh540-w270/#drive-mode10
+        - title: "Operating Mode(11)"
+          titlekr: "Operating Mode(11)"
+          url: /dxl/x/xh540-w270/#operating-mode11
+        - title: "Secondary(Shadow) ID(12)"
+          titlekr: "Secondary(Shadow) ID(12)"
+          url: /dxl/x/xh540-w270/#secondaryshadow-id12
+        - title: "Protocol Version(13)"
+          titlekr: "Protocol Version(13)"
+          url: /dxl/x/xh540-w270/#protocol-version13
+        - title: "Homing Offset(20)"
+          titlekr: "Homing Offset(20)"
+          url: /dxl/x/xh540-w270/#homing-offset20
+        - title: "Moving Threshold(24)"
+          titlekr: "Moving Threshold(24)"
+          url: /dxl/x/xh540-w270/#moving-threshold24
+        - title: "Temperature Limit(31)"
+          titlekr: "Temperature Limit(31)"
+          url: /dxl/x/xh540-w270/#temperature-limit31
+        - title: "Min/Max Voltage Limit(32,34)"
+          titlekr: "Min/Max Voltage Limit(32,34)"
+          url: /dxl/x/xh540-w270/#minmax-voltage-limit32-34
+        - title: "PWM Lmit(36)"
+          titlekr: "PWM Limit(36)"
+          url: /dxl/x/xh540-w270/#pwm-limit36
+        - title: "Current Limit(38)"
+          titlekr: "Current Limit(38)"
+          url: /dxl/x/xh540-w270/#current-limit38
+        - title: "Velocity Limit(44)"
+          titlekr: "Velocity Limit(44)"
+          url: /dxl/x/xh540-w270/#velocity-limit44
+        - title: "Min/Max Position Limit(48, 52)"
+          titlekr: "Min/Max Position Limit(48, 52)"
+          url: /dxl/x/xh540-w270/#minmax-position-limit48-52
+        - title: "External Port Mode 1,2,3(56,57,58)"
+          titlekr: "External Port Mode 1,2,3(56,57,58)"
+          url: /dxl/x/xh540-w270/#external-port-mode-123565758
+        - title: "Shutdown(63)"
+          titlekr: "Shutdown(63)"
+          url: /dxl/x/xh540-w270/#shutdown63
+        - title: "Torque Enable(64)"
+          titlekr: "Torque Enable(64)"
+          url: /dxl/x/xh540-w270/#torque-enable64
+        - title: "LED(65)"
+          titlekr: "LED(65)"
+          url: /dxl/x/xh540-w270/#led65
+        - title: "Status Return Level(68)"
+          titlekr: "Status Return Level(68)"
+          url: /dxl/x/xh540-w270/#status-return-level68
+        - title: "Registered Instruction(69)"
+          titlekr: "Registered Instruction(69)"
+          url: /dxl/x/xh540-w270/#registered-instruction69
+        - title: "Hardware Error Status(70)"
+          titlekr: "Hardware Error Status(70)"
+          url: /dxl/x/xh540-w270/#hardware-error-status70
+        - title: "Velocity PI Gain(76, 78)"
+          titlekr: "Velocity PI Gain(76, 78)"
+          url: /dxl/x/xh540-w270/#velocity-pi-gain76-78
+        - title: "Position PID Gain(80, 82, 84)"
+          titlekr: "Position PID Gain(80, 82, 84)"
+          url: /dxl/x/xh540-w270/#position-pid-gain80-82-84
+        - title: "Feedforward 1st/2nd Gains(88, 90)"
+          titlekr: "Feedforward 1st/2nd Gains(88, 90)"
+          url: /dxl/x/xh540-w270/#feedforward-1st2nd-gains88-90
+        - title: "BUS Watchdog(98)"
+          titlekr: "BUS Watchdog(98)"
+          url: /dxl/x/xh540-w270/#bus-watchdog98
+        - title: "Goal PWM(100)"
+          titlekr: "Goal PWM(100)"
+          url: /dxl/x/xh540-w270/#goal-pwm100
+        - title: "Goal Current(102)"
+          titlekr: "Goal Current(102)"
+          url: /dxl/x/xh540-w270/#goal-current102
+        - title: "Goal Velocity(104)"
+          titlekr: "Goal Velocity(104)"
+          url: /dxl/x/xh540-w270/#goal-velocity104
+        - title: "Profile Acceleration(108)"
+          titlekr: "Profile Acceleration(108)"
+          url: /dxl/x/xh540-w270/#profile-acceleration108
+        - title: "Profile Velocity(112)"
+          titlekr: "Profile Velocity(112)"
+          url: /dxl/x/xh540-w270/#profile-velocity112
+        - title: "Goal Position(116)"
+          titlekr: "Goal Position(116)"
+          url: /dxl/x/xh540-w270/#goal-position116
+        - title: "Realtime Tick(120)"
+          titlekr: "Realtime Tick(120)"
+          url: /dxl/x/xh540-w270/#realtime-tick120
+        - title: "Moving(122)"
+          titlekr: "Moving(122)"
+          url: /dxl/x/xh540-w270/#moving122
+        - title: "Moving Status(123)"
+          titlekr: "Moving Status(123)"
+          url: /dxl/x/xh540-w270/#moving-status123
+        - title: "Present PWM(124)"
+          titlekr: "Present PWM(124)"
+          url: /dxl/x/xh540-w270/#present-pwm124
+        - title: "Present Current(126)"
+          titlekr: "Present Current(126)"
+          url: /dxl/x/xh540-w270/#present-current126
+        - title: "Present Velocity(128)"
+          titlekr: "Present Velocity(128)"
+          url: /dxl/x/xh540-w270/#present-velocity128
+        - title: "Present Position(132)"
+          titlekr: "Present Position(132)"
+          url: /dxl/x/xh540-w270/#present-position132
+        - title: "Velocity Trajectory(136)"
+          titlekr: "Velocity Trajectory(136)"
+          url: /dxl/x/xh540-w270/#velocity-trajectory136
+        - title: "Position Trajectory(140)"
+          titlekr: "Position Trajectory(140)"
+          url: /dxl/x/xh540-w270/#position-trajectory140
+        - title: "Present Input Voltage(144)"
+          titlekr: "Present Input Voltage(144)"
+          url: /dxl/x/xh540-w270/#present-input-voltage144
+        - title: "Present Temperature(146)"
+          titlekr: "Present Temperature(146)"
+          url: /dxl/x/xh540-w270/#present-temperature146
+        - title: "External Port Data 1,2,3"
+          titlekr: "External Port Data 1,2,3"
+          url: /dxl/x/xh540-w270/#external-port-data-123
+        - title: "Indirect Address"
+          titlekr: "Indirect Address"
+          url: /dxl/x/xh540-w270/#indirect-address
+        - title: "Indirect Data"
+          titlekr: "Indirect Data"
+          url: /dxl/x/xh540-w270/#indirect-data
+  - title: "How to Assemble"
+    titlekr: "조립 예시"
+    url: /dxl/x/xh540-w270/#how-to-assemble
+    urlkr: /dxl/x/xh540-w270/#조립-예시
+    children:
+      - title: "Wiring through Back Case"
+        titlekr: "배선 예시"
+        url: /dxl/x/xh540-w270/#wiring-through-back-case
+        urlkr: /dxl/x/xh540-w270/#배선-예시
+      - title: "Option Frame Assembly"
+        titlekr: "옵션프레임 조립"
+        url: /dxl/x/xh540-w270/#option-frame-assembly
+        urlkr: /dxl/x/xh540-w270/#옵션프레임-조립
+  - title: "Maintenance"
+    titlekr: "유지보수"
+    url: /dxl/x/xh540-w270/#maintenance
+    urlkr: /dxl/x/xh540-w270/#유지보수
+    children:
+      - title: "Horn, Gear Replacement"
+        titlekr: "혼과 기어 교체"
+        url: /dxl/x/xh540-w270/#horn-and-gear-replacement
+        urlkr: /dxl/x/xh540-w270/#혼과-기어-교체
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /dxl/x/xh540-w270/#reference
+    urlkr: /dxl/x/xh540-w270/#참고자료
+    children:
+      - title: "Quick Start"
+        titlekr: "퀵스타트"
+        url: /dxl/x/xh540-w270/#quick-start
+        urlkr: /dxl/x/xh540-w270/#퀵스타트
+      - title: "Connector Information"
+        titlekr: "커넥터 정보"
+        url: /dxl/x/xh540-w270/#connector-information
+        urlkr: /dxl/x/xh540-w270/#커넥터-정보
+      - title: "Communication Circuit"
+        titlekr: "통신 회로"
+        url: /dxl/x/xh540-w270/#communication-circuit
+        urlkr: /dxl/x/xh540-w270/#통신-회로
+      - title: "Drawings"
+        titlekr: "도면"
+        url: /dxl/x/xh540-w270/#drawings
+        urlkr: /dxl/x/xh540-w270/#도면
+
+#XH540-V150 sidebar
+xh540-v150:
+  - title: "Specifications"
+    titlekr: "주요 사양"
+    url: /dxl/x/xh540-v150/#specifications
+    urlkr: /dxl/x/xh540-v150/#주요-사양
+    children:
+      - title: "Performance Graph"
+        titlekr: "성능 그래프"
+        url: /dxl/x/xh540-v150/#performance-graph
+        urlkr: /dxl/x/xh540-v150/#성능-그래프
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /dxl/x/xh540-v150/#control-table
+    urlkr: /dxl/x/xh540-v150/#컨트롤-테이블
+    children:
+      - title: "Control Table, Data, Address"
+        titlekr: "컨트롤 테이블, 데이터, 주소"
+        url: /dxl/x/xh540-v150/#control-table-data-address
+        urlkr: /dxl/x/xh540-v150/#컨트롤-테이블-데이터-주소
+        children:
+          - title: "Area(EEPROM, RAM)"
+            titlekr: "영역 (EEPROM, RAM)"
+            url: /dxl/x/xh540-v150/#area-eeprom-ram
+            urlkr: /dxl/x/xh540-v150/#영역-eeprom-ram
+          - title: "Size"
+            titlekr: "크기"
+            url: /dxl/x/xh540-v150/#size
+            urlkr: /dxl/x/xh540-v150/#크기
+          - title: "Access"
+            titlekr: "접근권한"
+            url: /dxl/x/xh540-v150/#access
+            urlkr: /dxl/x/xh540-v150/#접근권한
+          - title: "Initial Value"
+            titlekr: "초기값"
+            url: /dxl/x/xh540-v150/#initial-value
+            urlkr: /dxl/x/xh540-v150/#초기값
+      - title: "EEPROM Area"
+        titlekr: "EEPROM 영역"
+        url: /dxl/x/xh540-v150/#control-table-of-eeprom-area
+        urlkr: /dxl/x/xh540-v150/#eeprom-영역
+      - title: "RAM Area"
+        titlekr: "RAM 영역"
+        url: /dxl/x/xh540-v150/#control-table-of-ram-area
+        urlkr: /dxl/x/xh540-v150/#ram-영역
+      - title: "Control Table Description"
+        titlekr: "컨트롤 테이블 설명"
+        url: /dxl/x/xh540-v150/#control-table-description
+        urlkr: /dxl/x/xh540-v150/#컨트롤-테이블-설명
+        children:
+        - title: "Model Number(0)"
+          titlekr: "Model Number(0)"
+          url: /dxl/x/xh540-v150/#model-number0
+        - title: "Firmware Version(6)"
+          titlekr: "Firmware Version(6)"
+          url: /dxl/x/xh540-v150/#firmware-version6
+        - title: "ID(7)"
+          titlekr: "ID(7)"
+          url: /dxl/x/xh540-v150/#id7
+        - title: "Baud Rate(8)"
+          titlekr: "Baud Rate(8)"
+          url: /dxl/x/xh540-v150/#baud-rate8
+        - title: "Return Delay Time(9)"
+          titlekr: "Return Delay Time(9)"
+          url: /dxl/x/xh540-v150/#return-delay-time9
+        - title: "Drive Mode(10)"
+          titlekr: "Drive Mode(10)"
+          url: /dxl/x/xh540-v150/#drive-mode10
+        - title: "Operating Mode(11)"
+          titlekr: "Operating Mode(11)"
+          url: /dxl/x/xh540-v150/#operating-mode11
+        - title: "Secondary(Shadow) ID(12)"
+          titlekr: "Secondary(Shadow) ID(12)"
+          url: /dxl/x/xh540-v150/#secondaryshadow-id12
+        - title: "Protocol Version(13)"
+          titlekr: "Protocol Version(13)"
+          url: /dxl/x/xh540-v150/#protocol-version13
+        - title: "Homing Offset(20)"
+          titlekr: "Homing Offset(20)"
+          url: /dxl/x/xh540-v150/#homing-offset20
+        - title: "Moving Threshold(24)"
+          titlekr: "Moving Threshold(24)"
+          url: /dxl/x/xh540-v150/#moving-threshold24
+        - title: "Temperature Limit(31)"
+          titlekr: "Temperature Limit(31)"
+          url: /dxl/x/xh540-v150/#temperature-limit31
+        - title: "Min/Max Voltage Limit(32,34)"
+          titlekr: "Min/Max Voltage Limit(32,34)"
+          url: /dxl/x/xh540-v150/#minmax-voltage-limit32-34
+        - title: "PWM Lmit(36)"
+          titlekr: "PWM Limit(36)"
+          url: /dxl/x/xh540-v150/#pwm-limit36
+        - title: "Current Limit(38)"
+          titlekr: "Current Limit(38)"
+          url: /dxl/x/xh540-v150/#current-limit38
+        - title: "Velocity Limit(44)"
+          titlekr: "Velocity Limit(44)"
+          url: /dxl/x/xh540-v150/#velocity-limit44
+        - title: "Min/Max Position Limit(48, 52)"
+          titlekr: "Min/Max Position Limit(48, 52)"
+          url: /dxl/x/xh540-v150/#minmax-position-limit48-52
+        - title: "External Port Mode 1,2,3(56,57,58)"
+          titlekr: "External Port Mode 1,2,3(56,57,58)"
+          url: /dxl/x/xh540-v150/#external-port-mode-123565758
+        - title: "Shutdown(63)"
+          titlekr: "Shutdown(63)"
+          url: /dxl/x/xh540-v150/#shutdown63
+        - title: "Torque Enable(64)"
+          titlekr: "Torque Enable(64)"
+          url: /dxl/x/xh540-v150/#torque-enable64
+        - title: "LED(65)"
+          titlekr: "LED(65)"
+          url: /dxl/x/xh540-v150/#led65
+        - title: "Status Return Level(68)"
+          titlekr: "Status Return Level(68)"
+          url: /dxl/x/xh540-v150/#status-return-level68
+        - title: "Registered Instruction(69)"
+          titlekr: "Registered Instruction(69)"
+          url: /dxl/x/xh540-v150/#registered-instruction69
+        - title: "Hardware Error Status(70)"
+          titlekr: "Hardware Error Status(70)"
+          url: /dxl/x/xh540-v150/#hardware-error-status70
+        - title: "Velocity PI Gain(76, 78)"
+          titlekr: "Velocity PI Gain(76, 78)"
+          url: /dxl/x/xh540-v150/#velocity-pi-gain76-78
+        - title: "Position PID Gain(80, 82, 84)"
+          titlekr: "Position PID Gain(80, 82, 84)"
+          url: /dxl/x/xh540-v150/#position-pid-gain80-82-84
+        - title: "Feedforward 1st/2nd Gains(88, 90)"
+          titlekr: "Feedforward 1st/2nd Gains(88, 90)"
+          url: /dxl/x/xh540-v150/#feedforward-1st2nd-gains88-90
+        - title: "BUS Watchdog(98)"
+          titlekr: "BUS Watchdog(98)"
+          url: /dxl/x/xh540-v150/#bus-watchdog98
+        - title: "Goal PWM(100)"
+          titlekr: "Goal PWM(100)"
+          url: /dxl/x/xh540-v150/#goal-pwm100
+        - title: "Goal Current(102)"
+          titlekr: "Goal Current(102)"
+          url: /dxl/x/xh540-v150/#goal-current102
+        - title: "Goal Velocity(104)"
+          titlekr: "Goal Velocity(104)"
+          url: /dxl/x/xh540-v150/#goal-velocity104
+        - title: "Profile Acceleration(108)"
+          titlekr: "Profile Acceleration(108)"
+          url: /dxl/x/xh540-v150/#profile-acceleration108
+        - title: "Profile Velocity(112)"
+          titlekr: "Profile Velocity(112)"
+          url: /dxl/x/xh540-v150/#profile-velocity112
+        - title: "Goal Position(116)"
+          titlekr: "Goal Position(116)"
+          url: /dxl/x/xh540-v150/#goal-position116
+        - title: "Realtime Tick(120)"
+          titlekr: "Realtime Tick(120)"
+          url: /dxl/x/xh540-v150/#realtime-tick120
+        - title: "Moving(122)"
+          titlekr: "Moving(122)"
+          url: /dxl/x/xh540-v150/#moving122
+        - title: "Moving Status(123)"
+          titlekr: "Moving Status(123)"
+          url: /dxl/x/xh540-v150/#moving-status123
+        - title: "Present PWM(124)"
+          titlekr: "Present PWM(124)"
+          url: /dxl/x/xh540-v150/#present-pwm124
+        - title: "Present Current(126)"
+          titlekr: "Present Current(126)"
+          url: /dxl/x/xh540-v150/#present-current126
+        - title: "Present Velocity(128)"
+          titlekr: "Present Velocity(128)"
+          url: /dxl/x/xh540-v150/#present-velocity128
+        - title: "Present Position(132)"
+          titlekr: "Present Position(132)"
+          url: /dxl/x/xh540-v150/#present-position132
+        - title: "Velocity Trajectory(136)"
+          titlekr: "Velocity Trajectory(136)"
+          url: /dxl/x/xh540-v150/#velocity-trajectory136
+        - title: "Position Trajectory(140)"
+          titlekr: "Position Trajectory(140)"
+          url: /dxl/x/xh540-v150/#position-trajectory140
+        - title: "Present Input Voltage(144)"
+          titlekr: "Present Input Voltage(144)"
+          url: /dxl/x/xh540-v150/#present-input-voltage144
+        - title: "Present Temperature(146)"
+          titlekr: "Present Temperature(146)"
+          url: /dxl/x/xh540-v150/#present-temperature146
+        - title: "External Port Data 1,2,3"
+          titlekr: "External Port Data 1,2,3"
+          url: /dxl/x/xh540-v150/#external-port-data-123
+        - title: "Indirect Address"
+          titlekr: "Indirect Address"
+          url: /dxl/x/xh540-v150/#indirect-address
+        - title: "Indirect Data"
+          titlekr: "Indirect Data"
+          url: /dxl/x/xh540-v150/#indirect-data
+  - title: "How to Assemble"
+    titlekr: "조립 예시"
+    url: /dxl/x/xh540-v150/#how-to-assemble
+    urlkr: /dxl/x/xh540-v150/#조립-예시
+    children:
+      - title: "Wiring through Back Case"
+        titlekr: "배선 예시"
+        url: /dxl/x/xh540-v150/#wiring-through-back-case
+        urlkr: /dxl/x/xh540-v150/#배선-예시
+      - title: "Option Frame Assembly"
+        titlekr: "옵션프레임 조립"
+        url: /dxl/x/xh540-v150/#option-frame-assembly
+        urlkr: /dxl/x/xh540-v150/#옵션프레임-조립
+  - title: "Maintenance"
+    titlekr: "유지보수"
+    url: /dxl/x/xh540-v150/#maintenance
+    urlkr: /dxl/x/xh540-v150/#유지보수
+    children:
+      - title: "Horn, Gear Replacement"
+        titlekr: "혼과 기어 교체"
+        url: /dxl/x/xh540-v150/#horn-and-gear-replacement
+        urlkr: /dxl/x/xh540-v150/#혼과-기어-교체
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /dxl/x/xh540-v150/#reference
+    urlkr: /dxl/x/xh540-v150/#참고자료
+    children:
+      - title: "Quick Start"
+        titlekr: "퀵스타트"
+        url: /dxl/x/xh540-v150/#quick-start
+        urlkr: /dxl/x/xh540-v150/#퀵스타트
+      - title: "Connector Information"
+        titlekr: "커넥터 정보"
+        url: /dxl/x/xh540-v150/#connector-information
+        urlkr: /dxl/x/xh540-v150/#커넥터-정보
+      - title: "Communication Circuit"
+        titlekr: "통신 회로"
+        url: /dxl/x/xh540-v150/#communication-circuit
+        urlkr: /dxl/x/xh540-v150/#통신-회로
+      - title: "Drawings"
+        titlekr: "도면"
+        url: /dxl/x/xh540-v150/#drawings
+        urlkr: /dxl/x/xh540-v150/#도면
+
+#XH540-V270 sidebar
+xh540-v270:
+  - title: "Specifications"
+    titlekr: "주요 사양"
+    url: /dxl/x/xh540-v270/#specifications
+    urlkr: /dxl/x/xh540-v270/#주요-사양
+    children:
+      - title: "Performance Graph"
+        titlekr: "성능 그래프"
+        url: /dxl/x/xh540-v270/#performance-graph
+        urlkr: /dxl/x/xh540-v270/#성능-그래프
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /dxl/x/xh540-v270/#control-table
+    urlkr: /dxl/x/xh540-v270/#컨트롤-테이블
+    children:
+      - title: "Control Table, Data, Address"
+        titlekr: "컨트롤 테이블, 데이터, 주소"
+        url: /dxl/x/xh540-v270/#control-table-data-address
+        urlkr: /dxl/x/xh540-v270/#컨트롤-테이블-데이터-주소
+        children:
+          - title: "Area(EEPROM, RAM)"
+            titlekr: "영역 (EEPROM, RAM)"
+            url: /dxl/x/xh540-v270/#area-eeprom-ram
+            urlkr: /dxl/x/xh540-v270/#영역-eeprom-ram
+          - title: "Size"
+            titlekr: "크기"
+            url: /dxl/x/xh540-v270/#size
+            urlkr: /dxl/x/xh540-v270/#크기
+          - title: "Access"
+            titlekr: "접근권한"
+            url: /dxl/x/xh540-v270/#access
+            urlkr: /dxl/x/xh540-v270/#접근권한
+          - title: "Initial Value"
+            titlekr: "초기값"
+            url: /dxl/x/xh540-v270/#initial-value
+            urlkr: /dxl/x/xh540-v270/#초기값
+      - title: "EEPROM Area"
+        titlekr: "EEPROM 영역"
+        url: /dxl/x/xh540-v270/#control-table-of-eeprom-area
+        urlkr: /dxl/x/xh540-v270/#eeprom-영역
+      - title: "RAM Area"
+        titlekr: "RAM 영역"
+        url: /dxl/x/xh540-v270/#control-table-of-ram-area
+        urlkr: /dxl/x/xh540-v270/#ram-영역
+      - title: "Control Table Description"
+        titlekr: "컨트롤 테이블 설명"
+        url: /dxl/x/xh540-v270/#control-table-description
+        urlkr: /dxl/x/xh540-v270/#컨트롤-테이블-설명
+        children:
+        - title: "Model Number(0)"
+          titlekr: "Model Number(0)"
+          url: /dxl/x/xh540-v270/#model-number0
+        - title: "Firmware Version(6)"
+          titlekr: "Firmware Version(6)"
+          url: /dxl/x/xh540-v270/#firmware-version6
+        - title: "ID(7)"
+          titlekr: "ID(7)"
+          url: /dxl/x/xh540-v270/#id7
+        - title: "Baud Rate(8)"
+          titlekr: "Baud Rate(8)"
+          url: /dxl/x/xh540-v270/#baud-rate8
+        - title: "Return Delay Time(9)"
+          titlekr: "Return Delay Time(9)"
+          url: /dxl/x/xh540-v270/#return-delay-time9
+        - title: "Drive Mode(10)"
+          titlekr: "Drive Mode(10)"
+          url: /dxl/x/xh540-v270/#drive-mode10
+        - title: "Operating Mode(11)"
+          titlekr: "Operating Mode(11)"
+          url: /dxl/x/xh540-v270/#operating-mode11
+        - title: "Secondary(Shadow) ID(12)"
+          titlekr: "Secondary(Shadow) ID(12)"
+          url: /dxl/x/xh540-v270/#secondaryshadow-id12
+        - title: "Protocol Version(13)"
+          titlekr: "Protocol Version(13)"
+          url: /dxl/x/xh540-v270/#protocol-version13
+        - title: "Homing Offset(20)"
+          titlekr: "Homing Offset(20)"
+          url: /dxl/x/xh540-v270/#homing-offset20
+        - title: "Moving Threshold(24)"
+          titlekr: "Moving Threshold(24)"
+          url: /dxl/x/xh540-v270/#moving-threshold24
+        - title: "Temperature Limit(31)"
+          titlekr: "Temperature Limit(31)"
+          url: /dxl/x/xh540-v270/#temperature-limit31
+        - title: "Min/Max Voltage Limit(32,34)"
+          titlekr: "Min/Max Voltage Limit(32,34)"
+          url: /dxl/x/xh540-v270/#minmax-voltage-limit32-34
+        - title: "PWM Lmit(36)"
+          titlekr: "PWM Limit(36)"
+          url: /dxl/x/xh540-v270/#pwm-limit36
+        - title: "Current Limit(38)"
+          titlekr: "Current Limit(38)"
+          url: /dxl/x/xh540-v270/#current-limit38
+        - title: "Velocity Limit(44)"
+          titlekr: "Velocity Limit(44)"
+          url: /dxl/x/xh540-v270/#velocity-limit44
+        - title: "Min/Max Position Limit(48, 52)"
+          titlekr: "Min/Max Position Limit(48, 52)"
+          url: /dxl/x/xh540-v270/#minmax-position-limit48-52
+        - title: "External Port Mode 1,2,3(56,57,58)"
+          titlekr: "External Port Mode 1,2,3(56,57,58)"
+          url: /dxl/x/xh540-v270/#external-port-mode-123565758
+        - title: "Shutdown(63)"
+          titlekr: "Shutdown(63)"
+          url: /dxl/x/xh540-v270/#shutdown63
+        - title: "Torque Enable(64)"
+          titlekr: "Torque Enable(64)"
+          url: /dxl/x/xh540-v270/#torque-enable64
+        - title: "LED(65)"
+          titlekr: "LED(65)"
+          url: /dxl/x/xh540-v270/#led65
+        - title: "Status Return Level(68)"
+          titlekr: "Status Return Level(68)"
+          url: /dxl/x/xh540-v270/#status-return-level68
+        - title: "Registered Instruction(69)"
+          titlekr: "Registered Instruction(69)"
+          url: /dxl/x/xh540-v270/#registered-instruction69
+        - title: "Hardware Error Status(70)"
+          titlekr: "Hardware Error Status(70)"
+          url: /dxl/x/xh540-v270/#hardware-error-status70
+        - title: "Velocity PI Gain(76, 78)"
+          titlekr: "Velocity PI Gain(76, 78)"
+          url: /dxl/x/xh540-v270/#velocity-pi-gain76-78
+        - title: "Position PID Gain(80, 82, 84)"
+          titlekr: "Position PID Gain(80, 82, 84)"
+          url: /dxl/x/xh540-v270/#position-pid-gain80-82-84
+        - title: "Feedforward 1st/2nd Gains(88, 90)"
+          titlekr: "Feedforward 1st/2nd Gains(88, 90)"
+          url: /dxl/x/xh540-v270/#feedforward-1st2nd-gains88-90
+        - title: "BUS Watchdog(98)"
+          titlekr: "BUS Watchdog(98)"
+          url: /dxl/x/xh540-v270/#bus-watchdog98
+        - title: "Goal PWM(100)"
+          titlekr: "Goal PWM(100)"
+          url: /dxl/x/xh540-v270/#goal-pwm100
+        - title: "Goal Current(102)"
+          titlekr: "Goal Current(102)"
+          url: /dxl/x/xh540-v270/#goal-current102
+        - title: "Goal Velocity(104)"
+          titlekr: "Goal Velocity(104)"
+          url: /dxl/x/xh540-v270/#goal-velocity104
+        - title: "Profile Acceleration(108)"
+          titlekr: "Profile Acceleration(108)"
+          url: /dxl/x/xh540-v270/#profile-acceleration108
+        - title: "Profile Velocity(112)"
+          titlekr: "Profile Velocity(112)"
+          url: /dxl/x/xh540-v270/#profile-velocity112
+        - title: "Goal Position(116)"
+          titlekr: "Goal Position(116)"
+          url: /dxl/x/xh540-v270/#goal-position116
+        - title: "Realtime Tick(120)"
+          titlekr: "Realtime Tick(120)"
+          url: /dxl/x/xh540-v270/#realtime-tick120
+        - title: "Moving(122)"
+          titlekr: "Moving(122)"
+          url: /dxl/x/xh540-v270/#moving122
+        - title: "Moving Status(123)"
+          titlekr: "Moving Status(123)"
+          url: /dxl/x/xh540-v270/#moving-status123
+        - title: "Present PWM(124)"
+          titlekr: "Present PWM(124)"
+          url: /dxl/x/xh540-v270/#present-pwm124
+        - title: "Present Current(126)"
+          titlekr: "Present Current(126)"
+          url: /dxl/x/xh540-v270/#present-current126
+        - title: "Present Velocity(128)"
+          titlekr: "Present Velocity(128)"
+          url: /dxl/x/xh540-v270/#present-velocity128
+        - title: "Present Position(132)"
+          titlekr: "Present Position(132)"
+          url: /dxl/x/xh540-v270/#present-position132
+        - title: "Velocity Trajectory(136)"
+          titlekr: "Velocity Trajectory(136)"
+          url: /dxl/x/xh540-v270/#velocity-trajectory136
+        - title: "Position Trajectory(140)"
+          titlekr: "Position Trajectory(140)"
+          url: /dxl/x/xh540-v270/#position-trajectory140
+        - title: "Present Input Voltage(144)"
+          titlekr: "Present Input Voltage(144)"
+          url: /dxl/x/xh540-v270/#present-input-voltage144
+        - title: "Present Temperature(146)"
+          titlekr: "Present Temperature(146)"
+          url: /dxl/x/xh540-v270/#present-temperature146
+        - title: "External Port Data 1,2,3"
+          titlekr: "External Port Data 1,2,3"
+          url: /dxl/x/xh540-v270/#external-port-data-123
+        - title: "Indirect Address"
+          titlekr: "Indirect Address"
+          url: /dxl/x/xh540-v270/#indirect-address
+        - title: "Indirect Data"
+          titlekr: "Indirect Data"
+          url: /dxl/x/xh540-v270/#indirect-data
+  - title: "How to Assemble"
+    titlekr: "조립 예시"
+    url: /dxl/x/xh540-v270/#how-to-assemble
+    urlkr: /dxl/x/xh540-v270/#조립-예시
+    children:
+      - title: "Wiring through Back Case"
+        titlekr: "배선 예시"
+        url: /dxl/x/xh540-v270/#wiring-through-back-case
+        urlkr: /dxl/x/xh540-v270/#배선-예시
+      - title: "Option Frame Assembly"
+        titlekr: "옵션프레임 조립"
+        url: /dxl/x/xh540-v270/#option-frame-assembly
+        urlkr: /dxl/x/xh540-v270/#옵션프레임-조립
+  - title: "Maintenance"
+    titlekr: "유지보수"
+    url: /dxl/x/xh540-v270/#maintenance
+    urlkr: /dxl/x/xh540-v270/#유지보수
+    children:
+      - title: "Horn, Gear Replacement"
+        titlekr: "혼과 기어 교체"
+        url: /dxl/x/xh540-v270/#horn-and-gear-replacement
+        urlkr: /dxl/x/xh540-v270/#혼과-기어-교체
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /dxl/x/xh540-v270/#reference
+    urlkr: /dxl/x/xh540-v270/#참고자료
+    children:
+      - title: "Quick Start"
+        titlekr: "퀵스타트"
+        url: /dxl/x/xh540-v270/#quick-start
+        urlkr: /dxl/x/xh540-v270/#퀵스타트
+      - title: "Connector Information"
+        titlekr: "커넥터 정보"
+        url: /dxl/x/xh540-v270/#connector-information
+        urlkr: /dxl/x/xh540-v270/#커넥터-정보
+      - title: "Communication Circuit"
+        titlekr: "통신 회로"
+        url: /dxl/x/xh540-v270/#communication-circuit
+        urlkr: /dxl/x/xh540-v270/#통신-회로
+      - title: "Drawings"
+        titlekr: "도면"
+        url: /dxl/x/xh540-v270/#drawings
+        urlkr: /dxl/x/xh540-v270/#도면
 
 #H42-20-S300-R sidebar
 h42-20-s300-r:
@@ -12678,14 +13654,12 @@ turtlebot3:
       url: /platform/turtlebot3/manipulation/#slam
     - title: "Navigation"
       url: /platform/turtlebot3/manipulation/#navigation
-    - title: "Find AR marker"
-      url: /platform/turtlebot3/manipulation/#find-ar-marker
     - title: "MoveIt!"
       url: /platform/turtlebot3/manipulation/#moveit
-    - title: "Pick and Place"
-      url: /platform/turtlebot3/manipulation/#pick-and-place
     - title: "Simulation"
       url: /platform/turtlebot3/manipulation/#simulation
+    - title: "Pick and Place"
+      url: /platform/turtlebot3/manipulation/#pick-and-place
   - title: "Autonomous Driving"
     url: /platform/turtlebot3/autonomous_driving/#autonomous-driving
     children:
@@ -12924,6 +13898,8 @@ openmanipulator:
         url: /platform/openmanipulator/#hardware-specification
       - title: "Dimension"
         url: /platform/openmanipulator/#dimension
+      - title: "Repeatability"
+        url: /platform/openmanipulator/#repeatability
   - title: "Hardware Setup"
     url: /platform/openmanipulator/#hardware-setup
     children:
@@ -13008,6 +13984,15 @@ openmanipulator:
             url: /platform/openmanipulator/#hand-guiding
   - title: "Camera Application"
     url: /platform/openmanipulator/#camera-application
+    children:
+      - title: "Astra Pro"
+        url: /platform/openmanipulator/#astra-pro
+      - title: "Realsense D435"
+        url: /platform/openmanipulator/#realsense-d435
+      - title: "Raspberry Pi Camera V2"
+        url: /platform/openmanipulator/#raspberry-pi-camera-v2
+      - title: "AR Marker"
+        url: /platform/openmanipulator/#ar-marker
   - title: "Tool Modification"
     url: /platform/openmanipulator/#tool-modification
     children:
@@ -14911,130 +15896,202 @@ rplus2_block:
 rplusmmotion:
   - title: "Getting Started"
     titlekr: "개요"
-    url: /software/rplus2/mmotion/#getting-started
-    urlkr: /software/rplus2/mmotion/#개요
+    url: /software/rplus_mobile/mmotion/#getting-started
+    urlkr: /software/rplus_mobile/mmotion/#개요
   - title: "Menu Description"
     titlekr: "메뉴 설명"
-    url: /software/rplus2/mmotion/#menu-description
-    urlkr: /software/rplus2/mmotion/#메뉴-설명
+    url: /software/rplus_mobile/mmotion/#menu-description
+    urlkr: /software/rplus_mobile/mmotion/#메뉴-설명
   - title: "Practice"
     titlekr: "따라해보기"
-    url: /software/rplus2/mmotion/#practice
-    urlkr: /software/rplus2/mmotion/#따라해보기
+    url: /software/rplus_mobile/mmotion/#practice
+    urlkr: /software/rplus_mobile/mmotion/#따라해보기
     children:
     - title: "Connect to Robot"
       titlekr: "로봇 연결하기"
-      url: /software/rplus2/mmotion/#connect-to-robot
-      urlkr: /software/rplus2/mmotion/#로봇-연결하기
+      url: /software/rplus_mobile/mmotion/#connect-to-robot
+      urlkr: /software/rplus_mobile/mmotion/#로봇-연결하기
     - title: "Open Project"
       titlekr: "예제 프로젝트 열기"
-      url: /software/rplus2/mmotion/#open-project
-      urlkr: /software/rplus2/mmotion/#예제-프로젝트-열기
+      url: /software/rplus_mobile/mmotion/#open-project
+      urlkr: /software/rplus_mobile/mmotion/#예제-프로젝트-열기
     - title: "Motion Playback"
       titlekr: "모션 유닛 재생하기"
-      url: /software/rplus2/mmotion/#motion-playback
-      urlkr: /software/rplus2/mmotion/#모션-유닛-재생하기
+      url: /software/rplus_mobile/mmotion/#motion-playback
+      urlkr: /software/rplus_mobile/mmotion/#모션-유닛-재생하기
     - title: "Motion Editing"
       titlekr: "모션 유닛 편집하기"
-      url: /software/rplus2/mmotion/#motion-editing
-      urlkr: /software/rplus2/mmotion/#모션-유닛-편집하기
+      url: /software/rplus_mobile/mmotion/#motion-editing
+      urlkr: /software/rplus_mobile/mmotion/#모션-유닛-편집하기
     - titlekr: "모션 재생하기"
-      urlkr: /software/rplus2/mmotion/#모션-재생하기
+      urlkr: /software/rplus_mobile/mmotion/#모션-재생하기
     - titlekr: "모션 편집하기"
-      urlkr: /software/rplus2/mmotion/#모션-편집하기
+      urlkr: /software/rplus_mobile/mmotion/#모션-편집하기
     - title: "Motion Download"
       titlekr: "모션 다운로드하기"
-      url: /software/rplus2/mmotion/#motion-download
-      urlkr: /software/rplus2/mmotion/#모션-다운로드하기
+      url: /software/rplus_mobile/mmotion/#motion-download
+      urlkr: /software/rplus_mobile/mmotion/#모션-다운로드하기
     - title: "Save Motion Project"
       titlekr: "모션 프로젝트 저장하기"
-      url: /software/rplus2/mmotion/#save-motion-project
-      urlkr: /software/rplus2/mmotion/#모션-프로젝트-저장하기
+      url: /software/rplus_mobile/mmotion/#save-motion-project
+      urlkr: /software/rplus_mobile/mmotion/#모션-프로젝트-저장하기
   - titlekr: "소프트웨어 다운로드"
-    urlkr: /software/rplus2/mmotion/#소프트웨어-다운로드
+    urlkr: /software/rplus_mobile/mmotion/#소프트웨어-다운로드
   - titlekr: "기타 정보"
-    urlkr: /software/rplus2/mmotion/#기타-정보
+    urlkr: /software/rplus_mobile/mmotion/#기타-정보
     children:
     - titlekr: "3D 카메라 조작"
-      urlkr: /software/rplus2/mmotion/#3d-카메라-조작
+      urlkr: /software/rplus_mobile/mmotion/#3d-카메라-조작
   - title: "FAQ"
     titlekr: "자주 묻는 질문"
-    url: /software/rplus2/mmotion/#faq
-    urlkr: /software/rplus2/mmotion/#자주-묻는-질문
+    url: /software/rplus_mobile/mmotion/#faq
+    urlkr: /software/rplus_mobile/mmotion/#자주-묻는-질문
 
 mtask20:
-  - titlekr: "개요"
+  - title: "Introduction"
+    titlekr: "개요"
+    url: /software/rplus_mobile/mtask20/#introduction
     urlkr: /software/rplus_mobile/mtask20/#개요
     children:
-    - titlekr: "구동사양 및 주의사항"
+    - title: "Cautions"
+      titlekr: "구동사양 및 주의사항"
+      url: /software/rplus_mobile/mtask20/#cautions
       urlkr: /software/rplus_mobile/mtask20/#구동사양-및-주의사항
-    - titlekr: "지원제품"
-      urlkr: /software/rplus_mobile/mtask20/#지원제품
-  - titlekr: "메뉴설명"
+    - title: "Supported Products"
+      titlekr: "지원 제품"
+      url: /software/rplus_mobile/mtask20/#supported-products
+      urlkr: /software/rplus_mobile/mtask20/#지원-제품
+    - title: "Supported Controllers"
+      titlekr: "지원 제어기"
+      url: /software/rplus_mobile/mtask20/#supported-controllers
+      urlkr: /software/rplus_mobile/mtask20/#지원-제어기
+  - title: "Menu Descriptions"
+    titlekr: "메뉴설명"
+    url: /software/rplus_mobile/mtask20/#menu-descriptions
     urlkr: /software/rplus_mobile/mtask20/#메뉴설명
     children:
-    - titlekr: "단계별 편집 탭"
+    - title: "Function Tabs"
+      titlekr: "단계별 편집 탭"
+      url: /software/rplus_mobile/mtask20/#function-tabs
       urlkr: /software/rplus_mobile/mtask20/#단계별-편집-탭
-    - titlekr: "시작화면"
+    - title: "Start Screen"
+      titlekr: "시작화면"
+      url: /software/rplus_mobile/mtask20/#start-screen
       urlkr: /software/rplus_mobile/mtask20/#시작화면
-    - titlekr: "홈 탭"
+    - title: "Home Tab"
+      titlekr: "홈 탭"
+      url: /software/rplus_mobile/mtask20/#home-tab
       urlkr: /software/rplus_mobile/mtask20/#홈-탭
-    - titlekr: "프로그래밍 탭"
+    - title: "Programming Tab"
+      titlekr: "프로그래밍 탭"
+      url: /software/rplus_mobile/mtask20/#programming-tab
       urlkr: /software/rplus_mobile/mtask20/#프로그래밍-탭
-    - titlekr: "디버깅 탭"
+    - title: "Debugging Tab"
+      titlekr: "디버깅 탭"
+      url: /software/rplus_mobile/mtask20/#debugging-tab
       urlkr: /software/rplus_mobile/mtask20/#디버깅-탭
-  - titlekr: "따라해보기"
+  - title: "Practice"
+    titlekr: "따라해보기"
+    url: /software/rplus_mobile/mtask20/#practice
     urlkr: /software/rplus_mobile/mtask20/#따라해보기
     children:
-    - titlekr: "예제파일 열기"
+    - title: "Open Example"
+      titlekr: "예제파일 열기"
+      url: /software/rplus_mobile/mtask20/#open-example
       urlkr: /software/rplus_mobile/mtask20/#예제파일-열기
-    - titlekr: "새 파일 만들기"
+    - title: "Create New File"
+      titlekr: "새 파일 만들기"
+      url: /software/rplus_mobile/mtask20/#create-new-file
       urlkr: /software/rplus_mobile/mtask20/#새-파일-만들기
-    - titlekr: "명령어 편집하기"
+    - title: "Instructions"
+      titlekr: "명령어 편집하기"
+      url: /software/rplus_mobile/mtask20/#instructions
       urlkr: /software/rplus_mobile/mtask20/#명령어-편집하기
-    - titlekr: "파라미터 편집하기"
+    - title: "Edit Parameters"
+      titlekr: "파라미터 편집하기"
+      url: /software/rplus_mobile/mtask20/#edit-parameters
       urlkr: /software/rplus_mobile/mtask20/#파라미터-편집하기
-    - titlekr: "다운로드 하기"
-      urlkr: /software/rplus_mobile/mtask20/#다운로드-하기
-    - titlekr: "프로그램 출력보기"
+    - title: "Task Download"
+      titlekr: "태스크 다운로드하기"
+      url: /software/rplus_mobile/mtask20/#task-download
+      urlkr: /software/rplus_mobile/mtask20/#태스크-다운로드하기
+    - title: "Program Output Monitor"
+      titlekr: "프로그램 출력보기"
+      url: /software/rplus_mobile/mtask20/#program-output-monitor
       urlkr: /software/rplus_mobile/mtask20/#프로그램-출력보기
-    - titlekr: "리모컨 사용하기"
+    - title: "Remote Controller"
+      titlekr: "리모컨 사용하기"
+      url: /software/rplus_mobile/mtask20/#remote-controller
       urlkr: /software/rplus_mobile/mtask20/#리모컨-사용하기
-  - titlekr: "프로그래밍(편집)"
+  - title: "Programming(Edit)"
+    titlekr: "프로그래밍(편집)"
+    url: /software/rplus_mobile/mtask20/#programmingedit
     urlkr: /software/rplus_mobile/mtask20/#프로그래밍편집
     children:
-    - titlekr: "명령어 삽입/변경"
+    - title: "Insert/Edit Instruction"
+      titlekr: "명령어 삽입/변경"
+      url: /software/rplus_mobile/mtask20/#insertedit-instruction
       urlkr: /software/rplus_mobile/mtask20/#명령어-삽입변경
-    - titlekr: "여러 줄 선택"
+    - title: "Select Multiple Lines"
+      titlekr: "여러 줄 선택"
+      url: /software/rplus_mobile/mtask20/#select-multiple-lines
       urlkr: /software/rplus_mobile/mtask20/#여러-줄-선택
-    - titlekr: "줄 삽입/지우기"
+    - title: "Insert/Delete Line"
+      titlekr: "줄 삽입/지우기"
+      url: /software/rplus_mobile/mtask20/#insertdelete-line
       urlkr: /software/rplus_mobile/mtask20/#줄-삽입지우기
-    - titlekr: "줄 활성/비활성"
+    - title: "Enable/Disable Line"
+      titlekr: "줄 활성/비활성"
+      url: /software/rplus_mobile/mtask20/#commentuncomment-line
       urlkr: /software/rplus_mobile/mtask20/#줄-활성비활성
-    - titlekr: "복사/잘라내기/붙여넣기"
+    - title: "Copy/Cut/Paste"
+      titlekr: "복사/잘라내기/붙여넣기"
+      url: /software/rplus_mobile/mtask20/#copycutpaste
       urlkr: /software/rplus_mobile/mtask20/#복사잘라내기붙여넣기
-    - titlekr: "실행취소/다시실행"
+    - title: "Undo/Redo"
+      titlekr: "실행취소/다시실행"
+      url: /software/rplus_mobile/mtask20/#undoredo
       urlkr: /software/rplus_mobile/mtask20/#실행취소다시실행
-  - titlekr: "프로그래밍(명령어)"
+  - title: "Programming(Instructions)"
+    titlekr: "프로그래밍(명령어)"
+    url: /software/rplus_mobile/mtask20/#programminginstructions
     urlkr: /software/rplus_mobile/mtask20/#프로그래밍명령어
-  - titlekr: "프로그래밍(파라미터)"
+  - title: "Programming(Parameters)"
+    titlekr: "프로그래밍(파라미터)"
+    url: /software/rplus_mobile/mtask20/#programmingparameters
     urlkr: /software/rplus_mobile/mtask20/#프로그래밍파라미터
-  - titlekr: "소프트웨어 다운로드"
+  - title: "Software Download"
+    titlekr: "소프트웨어 다운로드"
+    url: /software/rplus_mobile/mtask20/#software-download
     urlkr: /software/rplus_mobile/mtask20/#소프트웨어-다운로드
-  - titlekr: "유용한 정보"
+  - title: "Useful Tips"
+    titlekr: "유용한 정보"
+    url: /software/rplus_mobile/mtask20/#useful-tips
     urlkr: /software/rplus_mobile/mtask20/#유용한-정보
     children:
-    - titlekr: "변수, 함수 참조 찾기"
+    - title: "Search Variables/Functions"
+      titlekr: "변수, 함수 참조 찾기"
+      url: /software/rplus_mobile/mtask20/#search-variablesfunctions
       urlkr: /software/rplus_mobile/mtask20/#변수-함수-참조-찾기
-    - titlekr: "키워드 찾기"
+    - title: "Search Keyword"
+      titlekr: "키워드 찾기"
+      url: /software/rplus_mobile/mtask20/#search-keyword
       urlkr: /software/rplus_mobile/mtask20/#키워드-찾기
-    - titlekr: "문법검사, 컴파일 결과 확인하기"
+    - title: "Grammar Check/Compile"
+      titlekr: "문법검사, 컴파일 결과 확인하기"
+      url: /software/rplus_mobile/mtask20/#grammar-checkcompile
       urlkr: /software/rplus_mobile/mtask20/#문법검사-컴파일-결과-확인하기
-    - titlekr: "안드로이드 기기에 태스크파일 복사하기"
+    - title: "Copy Task to Android Devices"
+      titlekr: "안드로이드 기기에 태스크파일 복사하기"
+      url: /software/rplus_mobile/mtask20/#copy-task-to-android-devices
       urlkr: /software/rplus_mobile/mtask20/#안드로이드-기기에-태스크파일-복사하기
-    - titlekr: "Apple 기기에 태스크파일 복사하기"
+    - title: "Copy Task to iOS Devices"
+      titlekr: "Apple 기기에 태스크파일 복사하기"
+      url: /software/rplus_mobile/mtask20/#copy-task-to-ios-devices
       urlkr: /software/rplus_mobile/mtask20/#apple-기기에-태스크파일-복사하기
-  - titlekr: "자주 묻는 질문"
+  - title: "FAQ"
+    titlekr: "자주 묻는 질문"
+    url: /software/rplus_mobile/mtask20/#faq
     urlkr: /software/rplus_mobile/mtask20/#자주-묻는-질문
 
 mtask:
@@ -16956,6 +18013,10 @@ u2d2_power_hub:
     titlekr: "주의사항"
     url: /parts/interface/u2d2_power_hub/#cautions
     urlkr: /parts/interface/u2d2_power_hub/#주의사항
+  - title: "How to Assemble"
+    titlekr: "조립 예시"
+    url: /parts/interface/u2d2_power_hub/#how-to-assemble
+    urlkr: /parts/interface/u2d2_power_hub/#조립-예시
 
 opencm7:
   - titlekr: "개요"

@@ -48,6 +48,12 @@ Please also checkout **[ROBOTIS Download Center]** for useful resources.
 -
 <select id="pro_ctrl_table_select" onchange="window.location.href=this.value;">
     <option selected disabled hidden>PRO Series</option>
+    <option value="/docs/en/dxl/pro/h54-200-s500-ra/#control-table-of-eeprom-area">H54-200-S500-R(A)</option>
+    <option value="/docs/en/dxl/pro/h54-100-s500-ra/#control-table-of-eeprom-area">H54-100-S500-R(A)</option>
+    <option value="/docs/en/dxl/pro/h42-20-s300-ra/#control-table-of-eeprom-area">H42-20-S300-R(A)</option>
+    <option value="/docs/en/dxl/pro/m54-60-s250-ra/#control-table-of-eeprom-area">M54-60-S250-R(A)</option>
+    <option value="/docs/en/dxl/pro/m54-40-s250-ra/#control-table-of-eeprom-area">M54-40-S250-R(A)</option>
+    <option value="/docs/en/dxl/pro/m42-10-s260-ra/#control-table-of-eeprom-area">M42-10-S260-R(A)</option>
     <option value="/docs/en/dxl/pro/h54-200-s500-r/#control-table-of-eeprom-area">H54-200-S500-R</option>
     <option value="/docs/en/dxl/pro/h54-100-s500-r/#control-table-of-eeprom-area">H54-100-S500-R</option>
     <option value="/docs/en/dxl/pro/h42-20-s300-r/#control-table-of-eeprom-area">H42-20-S300-R</option>
@@ -74,6 +80,10 @@ Please also checkout **[ROBOTIS Download Center]** for useful resources.
     <option value="/docs/en/dxl/x/xh430-w350/#control-table-of-eeprom-area">XH430-W350</option>
     <option value="/docs/en/dxl/x/xh430-v210/#control-table-of-eeprom-area">XH430-V210</option>
     <option value="/docs/en/dxl/x/xh430-v350/#control-table-of-eeprom-area">XH430-V350</option>
+    <option value="/docs/en/dxl/x/xh540-w150/#control-table-of-eeprom-area">XH540-W150</option>
+    <option value="/docs/en/dxl/x/xh540-w270/#control-table-of-eeprom-area">XH540-W270</option>
+    <option value="/docs/en/dxl/x/xh540-v150/#control-table-of-eeprom-area">XH540-V150</option>
+    <option value="/docs/en/dxl/x/xh540-v270/#control-table-of-eeprom-area">XH540-V270</option>
 </select>
 
 -

@@ -38,7 +38,7 @@ xl320:
 xh430-v210:
   mcu:                *mcu
   encoder:            *encoder
-  motor:              "Maxon"
+  motor:              "Coreless(Maxon)"
   baudrate:           *baudrate
   control:            *control
   resolution:         *resolution
@@ -67,7 +67,7 @@ xh430-v210:
 xh430-v350:
   mcu:                *mcu
   encoder:            *encoder
-  motor:              "Maxon"
+  motor:              "Coreless(Maxon)"
   baudrate:           *baudrate
   control:            *control
   resolution:         *resolution
@@ -96,7 +96,7 @@ xh430-v350:
 xh430-w210:
   mcu:                *mcu
   encoder:            *encoder
-  motor:              "Maxon"
+  motor:              "Coreless(Maxon)"
   baudrate:           *baudrate
   control:            *control
   resolution:         *resolution
@@ -125,7 +125,7 @@ xh430-w210:
 xh430-w350:
   mcu:                *mcu
   encoder:            *encoder
-  motor:              "Maxon"
+  motor:              "Coreless(Maxon)"
   baudrate:           *baudrate
   control:            *control
   resolution:         *resolution
@@ -318,8 +318,8 @@ xh540-v270:
   voltage:            *voltage_24
   voltage_en:         *voltage_24_en
   command:            *command
-  protocoltype:       *rs485_ttl
-  physicalconnection: *rs485_ttl_conn
+  protocoltype:       *rs485
+  physicalconnection: *rs485_connection
   id:                 *id
   feedback:           *feedback
   material:           *material
@@ -347,8 +347,8 @@ xh540-v150:
   voltage:            *voltage_24
   voltage_en:         *voltage_24_en
   command:            *command
-  protocoltype:       *rs485_ttl
-  physicalconnection: *rs485_ttl_conn
+  protocoltype:       *rs485
+  physicalconnection: *rs485_connection
   id:                 *id
   feedback:           *feedback
   material:           *material
