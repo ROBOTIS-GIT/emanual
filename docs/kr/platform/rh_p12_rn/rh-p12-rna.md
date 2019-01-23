@@ -9,6 +9,7 @@ permalink: /docs/kr/platform/rh_p12_rna/
 sidebar:
   title: RH-P12-RN(A)
   nav: "rh_p12_rna"
+product_group: rh_p12_rna
 ---
 
 # [개요](#개요)
