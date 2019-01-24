@@ -1,0 +1,45 @@
+common_specs:
+  motor:              &motor              "Coreless"
+  baudrate:           &baudrate           "9,600 [bps] ~ 10.5 [Mbps]"
+  opmode:             &opmode             "전류제어 모드<br />전류기반 위치제어 모드"
+  opmode_en:          &opmode_en          "Current Control Mode<br />Current based Position Control Mode"
+  temperature:        &temperature        "-5 ~ 55 [&deg;C]"
+  voltage:            &voltage            "24.0 [V]"
+  command:            &command            "Digital Packet"
+  command_kr:         &command_kr         "디지털 패킷"
+  rs485:              &rs485              "RS485 Asynchronous Serial Communication<br />(8bit, 1stop, No Parity)"
+  rs485_kr:           &rs485_kr           "RS485 비동기 시리얼 통신 (8bit, 1stop, No Parity)"
+  rs485_connection:   &rs485_connection   "RS485 Multidrop Bus"
+  id:                 &id                 "253 ID (0 ~ 252)"
+  standbycurrent:     &standbycurrent     "80 [mA]"
+
+rh-p12-rna:
+  motor:              *motor
+  baudrate:           *baudrate
+  opmode:             *opmode
+  opmode_en:          *opmode_en
+  temperature:        *temperature
+  voltage:            *voltage
+  command:            *command
+  command_kr:         *command_kr
+  rs485:              *rs485
+  rs485_kr:           *rs485_kr
+  rs485_connection:   *rs485_connection
+  id:                 *id
+  standbycurrent:     *standbycurrent
+  
+rh-p12-rn:
+  motor:              *motor
+  baudrate:           *baudrate
+  opmode:             *opmode
+  opmode_en:          *opmode_en
+  temperature:        *temperature
+  voltage:            *voltage
+  command:            *command
+  command_kr:         *command_kr
+  rs485:              *rs485
+  rs485_kr:           *rs485_kr
+  rs485_connection:   *rs485_connection
+  id:                 *id
+  standbycurrent:     *standbycurrent
+  

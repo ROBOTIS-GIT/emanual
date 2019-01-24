@@ -9,6 +9,7 @@ permalink: /docs/kr/platform/rh_p12_rna/
 sidebar:
   title: RH-P12-RN(A)
   nav: "rh_p12_rna"
+product_group: rh_p12_rna
 ---
 
 # [개요](#개요)
@@ -19,22 +20,22 @@ sidebar:
 
 # [주요 사양](#주요-사양)
 
-| 항목                | 사양                                                                                           |
-|:--------------------|:-----------------------------------------------------------------------------------------------|
-| MCU                 | ST CORTEX-M4 (STM32F405 @ 168Mhz, 32bit)                                                       |
-| 위치 센서           | Contactless Absolute Encoder (12bit, 360&deg;)<br />Maker : ams(www.ams.com), Part No : AS5045 |
-| 모터                | Coreless                                                                                       |
-| 통신 속도           | 9,600 bps ~ 10.5 Mbps                                                                          |
-| 제어 알고리즘       | PID Control                                                                                    |
-| 정밀도              | 0.088&deg;                                                                                     |
-| 동작 모드           | 전류제어 모드<br />전류기반 위치제어 모드                                                         |
-| 무게                | 500g                                                                                           |
-| 스트로크            | 0 ~ 109mm                                                                                      |
-| 감속비              | 1295.7 : 1                                                                                     |
-| 최대 파지력         | 170N                                                                                           |
-| 권장 가반하중       | 5kg                                                                                            |
-| 동작 온도           | -5&deg;C ~ 55&deg;C                                                                            |
-| 사용 전압           | 24V                                                                                            |
+| 항목                  | 사양                                                                                            |
+|:---------------------|:-----------------------------------------------------------------------------------------------|
+| MCU                  | ST CORTEX-M4 (STM32F405 @ 168Mhz, 32bit)                                                       |
+| 위치 센서              | Contactless Absolute Encoder (12bit, 360&deg;)<br />Maker : ams(www.ams.com), Part No : AS5045 |
+| 모터                  | Coreless                                                                                       |
+| 통신 속도              | 9,600 bps ~ 10.5 Mbps                                                                          |
+| 제어 알고리즘           | PID Control                                                                                    |
+| 정밀도                 | 0.088&deg;                                                                                     |
+| 동작 모드              | 전류제어 모드<br />전류기반 위치제어 모드                                                            |
+| 무게                  | 500g                                                                                           |
+| 스트로크               | 0 ~ 109mm                                                                                      |
+| 감속비                 | 1181 : 1                                                                                     |
+| 최대 파지력             | 170N                                                                                           |
+| 권장 가반하중           | 5kg                                                                                            |
+| 동작 온도              | -5&deg;C ~ 55&deg;C                                                                            |
+| 사용 전압              | 24V                                                                                            |
 | Command Signal      | Digital Packet                                                                                 |
 | Protocol Type       | RS485 Asynchronous Serial Communication<br />(8bit, 1stop, No Parity)                          |
 | Physical Connection | RS485 Multidrop Bus                                                                            |
@@ -50,42 +51,41 @@ sidebar:
 
 ## [EEPROM 영역](#eeprom-영역)
 
-| 주소 | 크기<br>(Byte) | 명칭                                        |  접근 | 기본값 |             범위               | 단위 |
-|:----:|:--------------:|:--------------------------------------------|:-----:|:------:|:----------------------------:|:------:|
-|  0   |       2        | [Model Number](#model-number)               |   R   | 35,074 |              -               | - |
-|  2   |       4        | [Model Information](#model-information)     |   R   |   -    |              -               | - |
-|  6   |       1        | [Firmware Version](#firmware-version)       |   R   |   -    |              -               | - |
-|  7   |       1        | [ID](#id)                                   |   RW  |   1    |           0 ~ 252            | - |
-|  8   |       1        | [Baud Rate](#baud-rate)                     |   RW  |   1    |            0 ~ 9              | - |
-|  9   |       1        | [Return Delay Time](#return-delay-time)     |   RW  |  250   |           0 ~ 255            | 2 [μsec] |
-|  10  |       1        | [Drive Mode](#drive-mode)                   |   RW  |   0    |            0 ~ 1             | - |
-|  11  |       1        | [Operating Mode](#operating-mode)           |   RW  |   5    |            0, 5              | - |
-|  12  |       1        | [Sencondary ID](#secondary-id)              |   RW  |  255   |           0 ~ 255           | - |
-|  20  |       4        | [Homing Offset](#homing-offset)             |   RW  |   0    |         0 ~ 1,150            | 1 [pulse] |
-|  24  |       4        | [Moving Threshold](#moving-threshold)       |   RW  |   80   |          0 ~ 2,970          | 0.01 [rev/min] |
-|  31  |       1        | [Temperature Limit](#temperature-limit)     |   RW  |   80   |           0 ~ 100            | 1 [&deg;C] |
-|  32  |       2        | [Max Voltage Limit](#max-voltage-limit)     |   RW  |  350   |           0 ~ 350            | 0.1 [V] |
-|  34  |       2        | [Min Voltage Limit](#min-voltage-limit)     |   RW  |  150   |           0 ~ 350            | 0.1 [V] |
-|  36  |       2        | [PWM Limit](#pwm-limit)                     |   RW  | 2,009  |         0 ~ 2,009           | - |
-|  38  |       2        | [Current Limit](#current-limit)             |   RW  |  1,984 |          0 ~ 1,984          | 1 [mA] |
-|  40  |       4        | [Acceleration Limit](#acceleration-limit)   |   RW  |  3,447 |          0 ~ 1,378,788      | 1 [rev/min<sup>2</sup>] |
-|  44  |       4        | [Velocity Limit](#velocity-limit)           |   RW  |  2,970 |          0 ~ 2,970          | 0.01 [rev/min] |
-|  48  |       4        | [Max Position Limit](#max-position-limit)   |   RW  |  1,150 |         0 ~ 1,150           | 1 [pulse] |
-|  52  |       4        | [Min Position Limit](#min-position-limit)   |   RW  |   0    |          0 ~ 1,150          | 1 [pulse] |
-|  57  |       1        | [External Port Mode 2](#external-port-mode) |   RW  |   3    |            0 ~ 3             | - |
-|  56  |       1        | [External Port Mode 1](#external-port-mode) |   RW  |   3    |            0 ~ 3             | - |
-|  58  |       1        | [External Port Mode 3](#external-port-mode) |   RW  |   3    |            0 ~ 3             | - |
-|  59  |       1        | [External Port Mode 4](#external-port-mode) |   RW  |   3    |            0 ~ 3             | - |
-|  63  |       1        | [Shutdown](#shutdown)                       |   RW  |   52   |           0 ~ 255            | - |
-| 168  |       2        | [Indirect Address 1](#indirect-address)     |   RW  |  634   |          512 ~ 1,023          | - |
-| 170  |       2        | [Indirect Address 2](#indirect-address)     |   RW  |  635   |          512 ~ 1,023          | - |
-| 172  |       2        | [Indirect Address 3](#indirect-address)     |   RW  |  636   |          512 ~ 1,023          | - |
-| ...  |      ...       | ...                                         |  ...  |  ...   |             ...               | ... |
-| 422  |       2        | [Indirect Address 128](#indirect-address)   |   RW  |  761   |          512 ~ 1,023          | - |
+| 주소 | 크기<br>(Byte) | 명칭                                          |  접근   |  기본값  |             범위               | 단위 |
+|:---:|:------------:|:--------------------------------------------|:-----:|:------:|:----------------------------:|:------:|
+|  0  |      2       | [Model Number](#model-number)               |   R   | 35,074 |              -               | - |
+|  2  |      4       | [Model Information](#model-information)     |   R   |   -    |              -               | - |
+|  6  |      1       | [Firmware Version](#firmware-version)       |   R   |   -    |              -               | - |
+|  7  |      1       | [ID](#id)                                   |   RW  |   1    |           0 ~ 252            | - |
+|  8  |      1       | [Baud Rate](#baud-rate)                     |   RW  |   1    |            0 ~ 9             | - |
+|  9  |      1       | [Return Delay Time](#return-delay-time)     |   RW  |  250   |           0 ~ 255            | 2 [μsec] |
+|  11 |      1       | [Operating Mode](#operating-mode)           |   RW  |   5    |            0, 5              | - |
+|  12 |      1       | [Sencondary ID](#secondary-id)              |   RW  |  255   |           0 ~ 255            | - |
+|  20 |      4       | [Homing Offset](#homing-offset)             |   RW  |   0    |         0 ~ 1,150            | 1 [pulse] |
+|  24 |      4       | [Moving Threshold](#moving-threshold)       |   RW  |   80   |          0 ~ 2,970           | 0.01 [rev/min] |
+|  31 |      1       | [Temperature Limit](#temperature-limit)     |   RW  |   80   |           0 ~ 100            | 1 [&deg;C] |
+|  32 |      2       | [Max Voltage Limit](#max-voltage-limit)     |   RW  |  350   |           0 ~ 350            | 0.1 [V] |
+|  34 |      2       | [Min Voltage Limit](#min-voltage-limit)     |   RW  |  150   |           0 ~ 350            | 0.1 [V] |
+|  36 |      2       | [PWM Limit](#pwm-limit)                     |   RW  | 2,009  |         0 ~ 2,009            | - |
+|  38 |      2       | [Current Limit](#current-limit)             |   RW  |  1,984 |          0 ~ 1,984           | 1 [mA] |
+|  40 |      4       | [Acceleration Limit](#acceleration-limit)   |   RW  |  3,447 |          0 ~ 1,378,788       | 1 [rev/min<sup>2</sup>] |
+|  44 |      4       | [Velocity Limit](#velocity-limit)           |   RW  |  2,970 |          0 ~ 2,970           | 0.01 [rev/min] |
+|  48 |      4       | [Max Position Limit](#max-position-limit)   |   RW  |  1,150 |         0 ~ 1,150            | 1 [pulse] |
+|  52 |      4       | [Min Position Limit](#min-position-limit)   |   RW  |   0    |          0 ~ 1,150           | 1 [pulse] |
+|  56 |      1       | [External Port Mode 1](#external-port-mode) |   RW  |   3    |            0 ~ 3             | - |
+|  57 |      1       | [External Port Mode 2](#external-port-mode) |   RW  |   3    |            0 ~ 3             | - |
+|  58 |      1       | [External Port Mode 3](#external-port-mode) |   RW  |   3    |            0 ~ 3             | - |
+|  59 |      1       | [External Port Mode 4](#external-port-mode) |   RW  |   3    |            0 ~ 3             | - |
+|  63 |      1       | [Shutdown](#shutdown)                       |   RW  |   52   |           0 ~ 255            | - |
+| 168 |      2       | [Indirect Address 1](#indirect-address)     |   RW  |  634   |          512 ~ 1,023         | - |
+| 170 |      2       | [Indirect Address 2](#indirect-address)     |   RW  |  635   |          512 ~ 1,023         | - |
+| 172 |      2       | [Indirect Address 3](#indirect-address)     |   RW  |  636   |          512 ~ 1,023         | - |
+| ... |     ...      | ...                                         |  ...  |  ...   |             ...              | ... |
+| 422 |      2       | [Indirect Address 128](#indirect-address)   |   RW  |  761   |          512 ~ 1,023         | - |
 
 ## [RAM 영역](#ram-영역)
 
-| 주소 | 크기<br />(Byte) | 명칭                                              |  접근 | 기본값 |                        범위                            |  단위 |
+| 주소 | 크기<br />(Byte)   | 명칭                                              |  접근 | 기본값 |                        범위                            |  단위 |
 |:----:|:----------------:|:--------------------------------------------------|:----:|:------:|:---------------------------------------------------:|:------:|
 | 512  |        1         | [Torque Enable](#torque-enable)                   |   RW  |   0    |                        0 ~ 1                        | - |
 | 513  |        1         | [LED Red](#led-red)                               |   RW  |   0    |                       0 ~ 255                       | - |
@@ -99,8 +99,8 @@ sidebar:
 | 528  |        2         | [Position D Gain](#position-p-gain)               |   RW  |   -    |                      0 ~ 32,767                      | - |
 | 532  |        2         | [Position P Gain](#position-p-gain)               |   RW  |   -    |                      0 ~ 32,767                      | - |
 | 530  |        2         | [Position I Gain](#position-p-gain)               |   RW  |   -    |                      0 ~ 32,767                      | - |
-| 536  |        2         | [Feedforward 2nd Gain](#velocity-i-gain)          |   RW  |   -    |                      0 ~ 32,767                      | - |
-| 538  |        2         | [Feedforward 1st Gain](#position-p-gain)          |   RW  |   -    |                      0 ~ 32,767                      | - |
+| 536  |        2         | [Feedforward 2nd Gain](#feedforward-2nd-gain)     |   RW  |   -    |                      0 ~ 32,767                      | - |
+| 538  |        2         | [Feedforward 1st Gain](#feedforward-1st-gain)     |   RW  |   -    |                      0 ~ 32,767                      | - |
 | 546  |        1         | [Bus Watchdog](#bus-watchdog)                     |   RW  |   -    |                       0 ~ 127                       | 20 [msec] |
 | 548  |        2         | [Goal PWM](#goal-pwm)                             |   RW  |   -    |         -PWM Limit(36) ~<br> PWM Limit(36)          | - |
 | 550  |        2         | [Goal Current](#goal-current)                     |   RW  |   0    |     -Current Limit(38) ~<br> Current Limit(38)      | 1 [mA] |
@@ -132,10 +132,11 @@ sidebar:
 
 ## [컨트롤 테이블 설명](#컨트롤-테이블-설명)
 
-**주의**: EEPROM Area에 존재하는 모든 Data는 Torque Enable(512)의 값이 ‘0’일 때만 변경할 수 있습니다.
+**주의**: EEPROM Area에 존재하는 모든 Data는 Torque Enable(512)의 값이 `0` 일 때만 변경할 수 있습니다.
 {: .notice--warning}
 
 **주의**: RH-P12-RN(A)는 RH-P12-RN의 개선된 firmware 입니다. 두 firmware의 Control table이 다르니, 사용 전에 Control table의 주소를 필히 확인해 주세요.
+{: .notice}
 
 ### <a name="model-number"></a>**[Model Number(0)](#model-number0)**
 RH-P12-RN(A)의 모델 번호입니다.
@@ -145,7 +146,7 @@ RH-P12-RN(A)의 모델 번호입니다.
 | RH-P12-RN(A)  | 35,074 (0x8902) |
 
 ### <a name="firmware-version"></a>**[Firmware Version(6)](#firmware-version6)**
-RH-P12-RN(A)의 펌웨어 버전입니다.
+{% include kr/dxl/pro_plus/control_table_6_firmware_version.md %}
 
 ### <a name="id"></a>**[ID(7)](#id7)**
 {% include kr/dxl/pro_plus/control_table_7_id.md %}
@@ -156,17 +157,14 @@ RH-P12-RN(A)의 펌웨어 버전입니다.
 ### <a name="return-delay-time"></a>**[Return Delay Time(9)](#return-delay-time9)**
 {% include kr/dxl/pro_plus/control_table_9_return_delay_time.md %}
 
-### <a name="drive-mode"></a>**[Drive Mode(10)](#drive-mode10)**
-{% include kr/dxl/pro_plus/control_table_10_drive_mode.md %}
-
 ### <a name="operating-mode"></a>**[Operating Mode(11)](#operating-mode11)**
 장치의 제어 모드를 설정합니다. 각 제어 모드마다 특성이 다르기 때문에, 구현하려는 시스템에 적합한 제어 모드를 설정하시기 바랍니다.
 
-| 값         | 동작 모드              | 설명                                            |
+| 값         | 동작 모드                | 설명                                             |
 |:-----------|:-----------------------|:------------------------------------------------|
-| 0          | 전류제어 모드          | 속도와 위치는 제어하지 않고, 전류를 제어합니다. |
+| 0          | 전류제어 모드            | 속도와 위치는 제어하지 않고, 전류를 제어합니다.         |
 | 1 ~ 4      | Reserved               | -                                               |
-| 5(Default) | 전류기반 위치제어 모드 | 위치와 전류를 제어합니다.                       |
+| 5(Default) | 전류기반 위치제어 모드     | 위치와 전류를 제어합니다.                           |
 
 ### <a name="secondary-id"></a>**[Secondary ID(12)](#secondary-id12)**
 {% include kr/dxl/pro_plus/control_table_12_secondary_id.md %}
@@ -175,14 +173,14 @@ RH-P12-RN(A)의 펌웨어 버전입니다.
 0점의 위치를 조절 할 수 있습니다. 이 값은 Present Position(580)에 더해지게 됩니다.
 Present Position = 실제 위치 + Homing offset(20) 이 됩니다.
 
-|단위      |  값의 범위 |
-|:---:     | :---:     |
+|   단위    | 값의 범위 |
+|:--------:|:--------:|
 |1 [pulse] | 0 ~ 1150 |
 
 ### <a name="moving-threshold"></a>**[Moving Threshold(24)](#moving-threshold24)**
 {% include kr/dxl/pro_plus/control_table_24_moving_threshold.md %}
 
-| 단위           | 범위              |
+| 단위            |     값의 범위      |
 | :------------: | :---------------: |
 | 0.01 [rev/min] |     0 ~ 2,970     |
 
@@ -198,64 +196,34 @@ Present Position = 실제 위치 + Homing offset(20) 이 됩니다.
 ### <a name="current-limit"></a>**[Current Limit(38)](#current-limit38)**
 목표 전류 값의 한계 값입니다. Goal Current(550)은 이 값보다 큰 값을 쓸 수 없습니다. 이 값보다 큰 값을 쓰려 하면, 값이 써지지 않고, Status packet의 error 에 Limit error bit가 set 됩니다.
 
-| 단위   | 범위      |
+| 단위    | 값의 범위  |
 | :----: | :-------: |
 | 1 [mA] | 0 ~ 1,984 |
 
 ### <a name="acceleration-limit"></a>**[Acceleration Limit(40)](#acceleration-limit40)**
 프로파일 가속도 값의 한계 값입니다. Profile Acceleration(556)은 이 값보다 큰 값을 쓸 수 없습니다. 이 값보다 큰 값을 쓰려 하면, 값이 써지지 않고, Status packet의 error 에 Limit error bit가 set 됩니다.
 
-| 단위          | 범위          |
-| :-----------: | :-----------: |
+| 단위                     | 값의 범위      |
+| :---------------------: | :-----------: |
 | 1 [rev/min<sup>2</sup>] | 0 ~ 1,378,788 |
 
 ### <a name="velocity-limit"></a>**[Velocity Limit(44)](#velocity-limit44)**
 목표 속도 값과 프로파일 속도 값의 한계 값입니다. Goal Velocity(552)와 Profile Velocity(560)는 이 값보다 큰 값을 쓸 수 없습니다. 이 값보다 큰 값을 쓰려 하면, 값이 써지지 않고, Status packet의 error 에 Limit error bit가 set 됩니다.
 
-| 단위            | 범위     |
-| :---:          | :---:     |
+| 단위            | 값의 범위  |
+| :------------: | :-------: |
 | 0.01 [rev/min] | 0 ~ 2,970 |
 
 ### <a name="max-position-limit"></a><a name="min-position-limit"></a>**[Max/Min Position Limit(48, 52)](#maxmin-position-limit48-52)**
 전류 기반 위치 제어 모드에서 목표 위치의 제한 값으로써, 0 ~ 1,150 범위 내에서 목표 위치를 제한 합니다.  
 따라서 위치 제어 모드에서 Goal position(564)은 이 값보다 클 수 없습니다. 이 값보다 큰 값을 쓰려 하면, 값이 써지지 않고, Status packet의 error 에 Limit error bit가 set 됩니다.
 
-| 단위      | 값의 범위 |
-| :---:     | :---:     |
+| 단위       | 값의 범위  |
+| :-------: | :-------: |
 | 1 [pulse] | 0 ~ 1,150 |
 
 ### <a name="external-port-mode"></a><a name="external-port-data"></a>**[External Port Mode](#external-port-mode)**, **[External Port Data](#external-port-data)**
-다용도로 사용 가능한 External Port를 제공합니다.  
-External Port의 용도는 External Port Mode(56 ~ 59)에 의해서 결정되고, External Port의 신호는 External Port Data(600 ~ 607)에 의해서 제어됩니다.  
-External Port Data를 통해서 External Port의 신호를 제어하거나, External Port 신호의 상태를 확인할 수 있습니다.  
-External Port는 전기적으로 절연되어 있지 않기 때문에, 전기적 사양을 준수하시기 바랍니다.  
-쉴드 케이블(Shield cable)이나 트위스트 케이블(Twist pair cable)을 사용하실 경우, 보다 정밀한 측정이 가능합니다. 케이블 길이는 짧을수록 정밀한 측정에 유리합니다.
-
-| 항목  | 사양                               |
-| :---: | :--------------------------------: |
-| 전압  | 0 ~ 3.3 [V]<br />VESD(HBM) : 2[kV] |
-| 전류  | 0 ~ 5 [mA]                         |
-
-※ VESD(HBM) : ESD(Electrostatic Discharge) Voltage(human body model)
-
-| 명칭                     | External Port Mode      | External Port Data                                                                      | 접근   | 비고                                                                                                            |
-| :----------------------  | :---------------------: | :-------------------------------------------------------------------------------------  | :----: | :-------------------------------------------------------------------------------------------------------------: |
-| Analogue Input           | 0                       | External Port 신호(signal)를 Digital로 변환<br />External Data = signal x (4,095 / 3.3) | R      | Resolution : 12[bit] (0 ~ 4,095)                                                                                |
-| Digital Output Push-Pull | 1                       | 0 : External Port의 출력을 0[V]로 변경<br />1 : External Port의 출력을 3.3[V]로 변경    | W      | Output High level(VOH) : 2.4 [V] (min)<br />Output Low level(VOL) : 0.5 [V] (max)                               |
-| Digital Input Pull-Up    | 2                       | 0 : External Port의 입력이 0[V]<br />1 : External Port의 입력이 3.3[V] 또는 Open        | R      | Input High level(VIH) : 2.3 [V] (min)<br />Input Low level(VIL) : 1.0 [V] (max)<br />Pull-Up : 40 [k&Omega;] (typ)   |
-| Digital Input Pull-Down  | 3 (초기값)              | 0 : External Port의 입력이 0[V] 또는 Open <br />1 : External Port의 입력이 3.3[V]       | R      | Input High level(VIH) : 2.3 [V] (min)<br />Input Low level(VIL) : 1.0 [V] (max)<br />Pull-Down : 40 [k&Omega;] (typ) |
-
-{% capture control_table_externalportdata_warning %}
-**경고** : External Port 는 전기적으로 절연되어 있지 않기 때문에, 전기적 사양을 준수하시기 바랍니다.  
-전기적 사양을 초과하거나 신호 연결에 문제가 있는 경우, Dynamixel이 손상될 수 있으므로 각별한 주의가 요구됩니다. External Port를 사용할 때 다음 사항들을 주의하시기 바랍니다.
-- 정전기(ESD), 단락(Short circuit), 단선(Open circuit) 등에 의한 전기적인 충격이 발생하지 않도록 주의해 주십시오.
-- External Port 커넥터로 물이나 먼지가 유입되지 않도록 주의해 주십시오.
-- External Port를 사용하지 않을 때는 케이블을 제거해 주십시오.
-- External Port에 신호를 연결/해제 할 때는 전원이 꺼진 상태에서 진행해 주십시오.
-- External Port 의 GNDext 핀과 Dynamixel 커넥터의 GND핀을 직접 연결하지 마십시오. 전원 노이즈가 External Port로 유입될 수 있습니다.
-{% endcapture %}
-
-<div class="notice--warning">{{ control_table_externalportdata_warning | markdownify }}</div>
+{% include kr/dxl/pro_plus/control_table_56_external_port.md %}
 
 ### <a name="shutdown"></a>**[Shutdown(63)](#shutdown63)**
 {% include kr/dxl/pro_plus/control_table_63_shutdown.md %}
@@ -310,12 +278,7 @@ External Port는 전기적으로 절연되어 있지 않기 때문에, 전기적
 {% include kr/dxl/pro_plus/control_table_546_bus_watchdog.md %}
 
 ### <a name="goal-pwm"></a>**[Goal PWM(548)](#goal-pwm548)**
-PWM 출력의 제한값으로 사용됩니다. 이 값은 PWM Limit(36)보다 클 수 없습니다. Goal PWM(548)의 동작 방식은 해당 Gain의 설명 부분을 참고하세요.
-
-| 범위                            | 설명 |
-| :----:                         | :---------: |
-| -PWM Limit(36) ~ PWM Limit(36) | PWM Limit(36)의 초기값 : 2,009 |
-
+{% include kr/dxl/pro_plus/control_table_548_goal_pwm.md %}
 
 ### <a name="goal-current"></a>**[Goal Current(550)](#goal-current550)**
 전류 제어 모드에서는 목표 전류값으로 동작하고, 전류기반 위치 제어 모드에서는 전류 제어기 입력(전류)의 제한값으로 동작됩니다.
@@ -328,7 +291,7 @@ PWM 출력의 제한값으로 사용됩니다. 이 값은 PWM Limit(36)보다 �
 ### <a name="profile-acceleration"></a>**[Profile Acceleration(556)](#profile-acceleration556)**
 프로파일 가속도를 설정합니다. 동작모드가 전류기반 위치 제어 모드에서만 사용할 수 있습니다.  프로파일 가속도 값의 범위는 0 ~ Acceleration Limit(40) 입니다.
 
-**주의** : Profile Velocity(560) 의 값이 0일 때는 프로파일 가속도가 적용되지 않습니다.
+**주의** : Profile Velocity(560) 의 값이 `0` 일 때는 프로파일 가속도가 적용되지 않습니다.
 {: .notice}
 
 
@@ -340,7 +303,7 @@ Profile Velocity(560)는 Velocity Limit(44)보다 클 수 없습니다.
 
 |단위            |  범위                   | 설명                                                      |
 |    :---:       | :---:                  | :---:                                                     |
-| 0.01 [rev/min] | 0 ~ Velocity Limit(44) | Profile Velocity(560)이 '0'인 경우, 무한대 속도를 뜻합니다. |
+| 0.01 [rev/min] | 0 ~ Velocity Limit(44) | Profile Velocity(560)이 ‘0’인 경우, 무한대 속도를 뜻합니다. |
 
 Profile이란 모터 구동 시 급격하게 변하는 속도와 가속도를 조절함으로써 진동, 소음 및 모터의 부하를 줄이는 가감속 제어 방법입니다.  
 일반적으로 속도에 근거하여 가감속을 제어하기 때문에 Velocity Profile이라고 불립니다.  
@@ -366,11 +329,11 @@ Profile이란 모터 구동 시 급격하게 변하는 속도와 가속도를 �
 5. 장치는 Profile에 의해 산출된 목표 궤적에 따라 이동하게 됩니다.
 6. Profile에 의한 목표 속도 궤적과 목표 위치 궤적은 Velocity Trajectory(584)와 Position Trajectory(588)에 표기됩니다.
 
-| 조건     | 프로파일 형태     |
-| :------------- | :------------- |
+| 조건                                                           | 프로파일 형태             |
+| :------------------------------------------------------------ | :---------------------- |
 | Profile Velocity(560) = 0                                     | 프로파일 미사용(Step 명령) |
-| (Profile Velocity(560) ≠ 0) & (Profile Acceleration(556) = 0) | 사각 프로파일 |
-| (Profile Velocity(560) ≠ 0) & (Profile Acceleration(556) ≠ 0) | 사다리꼴 프로파일 |
+| (Profile Velocity(560) ≠ 0) & (Profile Acceleration(556) = 0) | 사각 프로파일             |
+| (Profile Velocity(560) ≠ 0) & (Profile Acceleration(556) ≠ 0) | 사다리꼴 프로파일          |
 
 ![](/assets/images/dxl/pro_plus/velocity_profile.png)
 
@@ -389,11 +352,11 @@ Velocity Override 기능은 동일하게 동작합니다.
 
 ### <a name="goal-position"></a>**[Goal Position(564)](#goal-position564)**
 이동시키고자 하는 곳의 위치 값입니다.  
-값의 범위는 Min Position Limit(40) ~ Max Position Limit(36) 이며, 초기값은 0 ~ 1,150 (0x47E) 입니다.
+값의 범위는 Min Position Limit(52) ~ Max Position Limit(48) 이며, 초기값은 0 ~ 1,150 (0x47E) 입니다.
 
-|모델명|Goal Position = 0|Goal Position = 740|
-| :-------: | :--------: | :--------: |
-|RH-P12-RN|![](/assets/images/platform/rh_p12_rn/rh_p12_rn_position_open.png)|![](/assets/images/platform/rh_p12_rn/rh_p12_rn_position_close.png)|
+| 모델명      | Goal Position = 0 | Goal Position = 740 |
+| :--------: | :---------------: | :-----------------: |
+| RH-P12-RN  | ![](/assets/images/platform/rh_p12_rn/rh_p12_rn_position_open.png) | ![](/assets/images/platform/rh_p12_rn/rh_p12_rn_position_close.png) |
 
 ### <a name="realtime-tick"></a>**[Realtime Tick(568)](#realtime-tick568)**
 {% include kr/dxl/pro_plus/control_table_568_realtime_tick.md %}
@@ -404,15 +367,15 @@ Velocity Override 기능은 동일하게 동작합니다.
 ### <a name="moving-status"></a>**[Moving Status(571)](#moving-status571)**
 움직임에 대한 추가적인 정보를 제공합니다. In-Position Bit(0x01)은 전류기반 위치 제어 모드에서만 동작합니다.
 
-||| 상세     | 설명     |
-| :---: | :---: |:---: | :---: |
-| Bit 7 | 0x80 | - | 미사용 |
-| Bit 6 | 0x40 | - | 미사용 |
-| Bit 5<br />~<br />Bit 4 | 0x30 | Profile Type(0x30)<br />Profile Type(0x10)<br />Profile Type(0x00)|사다리꼴 속도 프로파일(Trapezoidal Velocity Profile)<br />사각 속도 프로파일(Rectangle Velocity Profile)<br />프로파일 미사용(Step)|
-| Bit 3 | 0x08 | - | 미사용 |
-| Bit 2 | 0x04 | - | 미사용 |
-| Bit 1 | 0x02 | - | 미사용 |
-| Bit 0 | 0x01 | In-Position | 목표위치에 도달 경우 |
+|                         |      |                                상세                                 |        설명       |
+|:-----------------------:|:----:|:------------------------------------------------------------------:|:-----------------:|
+|          Bit 7          | 0x80 |                                 -                                  |       미사용       |
+|          Bit 6          | 0x40 |                                 -                                  |       미사용       |
+| Bit 5<br />~<br />Bit 4 | 0x30 | Profile Type(0x30)<br />Profile Type(0x10)<br />Profile Type(0x00) |사다리꼴 속도 프로파일(Trapezoidal Velocity Profile)<br />사각 속도 프로파일(Rectangular Velocity Profile)<br />프로파일 미사용(Step)|
+|          Bit 3          | 0x08 |                                 -                                  |       미사용       |
+|          Bit 2          | 0x04 |                                 -                                  |       미사용       |
+|          Bit 1          | 0x02 |                                 -                                  |       미사용       |
+|          Bit 0          | 0x01 |                            In-Position                             | 목표위치에 도달 경우 |
 
 
 ### <a name="present-pwm"></a>**[Present PWM(572)](#present-pwm572)**
@@ -427,9 +390,9 @@ Velocity Override 기능은 동일하게 동작합니다.
 ### <a name="present-position"></a>**[Present Position(580)](#present-position580)**
 장치의 현재 위치 값입니다.
 
-|Model|Goal Position = 0|Goal Position = 740|
-| :-------: | :--------: | :--------: |
-|RH-P12-RN|![](/assets/images/platform/rh_p12_rn/rh_p12_rn_position_open.png)|![](/assets/images/platform/rh_p12_rn/rh_p12_rn_position_close.png)|
+| 모델명      | Goal Position = 0 | Goal Position = 740 |
+| :--------: | :---------------: | :-----------------: |
+| RH-P12-RN  |![](/assets/images/platform/rh_p12_rn/rh_p12_rn_position_open.png)|![](/assets/images/platform/rh_p12_rn/rh_p12_rn_position_close.png)|
 
 ### <a name="velocity-trajectory"></a>**[Velocity Trajectory(584)](#velocity-trajectory584)**
 Profile에 의해 생성된 목표 속도 궤적입니다. 자세한 사항은 [Profile Velocity(560)]를 참고하세요.
@@ -458,14 +421,14 @@ Profile에 의해 생성된 목표 위치 궤적입니다. 전류기반 위치 �
 
 ## [커넥터 정보](#커넥터-정보)
 
-|항목|RS-485|외부포트|
-|:---:|:---:|:---:|
-|핀 번호|`1` GND<br>`2` VDD<br>`3` DATA+<br>`4` DATA-|`1` GND<br>`2` VDD<br>`3` PORT 1<br>`4` PORT 2<br>`5` PORT 3<br>`6` PORT 4|
-|다이어그램|![](/assets/images/dxl/jst_b4beha_diagram.png)|![](/assets/images/dxl/molex_5304706_diagram.png)|
-|하우징|[JST EHR-04]|![](/assets/images/dxl/molex_510210600.png)<br />[MOLEX 51021-0600]|
-|PCB 헤더|![](/assets/images/dxl/jst_b4beha.png)<br />[JST B4B-EH-A]|![](/assets/images/dxl/molex_530470610.png)<br />[MOLEX 53047-0610]|
-|Crimp 터미널|[JST SEH-001T-P0.6]|[MOLEX 50079-8100]|
-|Wire Gauge|21 AWG|21 AWG|
+|     항목     |                           RS-485                           |                                 외부포트                                    |
+|:-----------:|:----------------------------------------------------------:|:--------------------------------------------------------------------------:|
+|    핀 번호   |       `1` GND<br>`2` VDD<br>`3` DATA+<br>`4` DATA-         | `1` GND<br>`2` VDD<br>`3` PORT 1<br>`4` PORT 2<br>`5` PORT 3<br>`6` PORT 4 |
+|   다이어그램  |       ![](/assets/images/dxl/jst_b4beha_diagram.png)       | ![](/assets/images/dxl/molex_5304706_diagram.png)                          |
+|    하우징    |                        [JST EHR-04]                        | ![](/assets/images/dxl/molex_510210600.png)<br />[MOLEX 51021-0600]        |
+|   PCB 헤더   | ![](/assets/images/dxl/jst_b4beha.png)<br />[JST B4B-EH-A] | ![](/assets/images/dxl/molex_530470610.png)<br />[MOLEX 53047-0610]        |
+| Crimp 터미널 |                     [JST SEH-001T-P0.6]                    | [MOLEX 50079-8100]                                                         |
+| Wire Gauge  |                           21 AWG                           | 21 AWG                                                                     |
 
 [JST EHR-04]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
 [JST B4B-EH-A]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
