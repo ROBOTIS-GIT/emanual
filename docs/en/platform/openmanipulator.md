@@ -1121,7 +1121,7 @@ Open processing source code file
   
   <iframe width="560" height="315" src="https://www.youtube.com/embed/FGHBMJByJ7k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-  The settings for [ROBOTIS RC-100B][rc100] controller is included in the OpenCR firmware for OpenManipulator. This controller can be used with the Bluetooth module [BT410][bt410]. 
+  The settings for [ROBOTIS RC-100B][rc100] controller is included in the OpenCR firmware for OpenManipulator. This controller can be used with the Bluetooth module [BT410][bt410].    
   ![](/assets/images/platform/openmanipulator/OpenManipulator_chain_processing_teleop.png)
 
 ### [Hand guiding](#hand-guiding)
@@ -1378,7 +1378,7 @@ You have to change the parameters according to the type of camera. Run the follo
 #### Raspberry Pi Camera V2
 **[Raspberry Pi]**
   ``` bash
-  $ roslaunch raspicam_node camerav2_1280x960.launch camera_frame_id:=camera_link
+  $ roslaunch raspicam_node camerav2_1280x960.launch 
   ```
 **[Remote PC]**
   ``` bash
