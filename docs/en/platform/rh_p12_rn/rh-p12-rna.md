@@ -31,7 +31,7 @@ product_group: rh_p12_rna
 | Operating Mode         | Current Control Mode<br />Current based Position Control Mode                                  |
 | Weight                 | 500g                                                                                           |
 | Stroke                 | 0 ~ 109mm                                                                                      |
-| Gear Ratio             | 1295.7 : 1                                                                                     |
+| Gear Ratio             | 1181 : 1                                                                                     |
 | Maximum Gripping Force | 170N                                                                                           |
 | Recommended Payload    | 5kg                                                                                            |
 | Operating Temperature  | -5&deg;C ~ 55&deg;C                                                                            |
@@ -59,11 +59,10 @@ product_group: rh_p12_rna
 |    7    |       1        | [ID](#id)                                   |   RW   |         1          |    0 ~ 252    |       -        |
 |    8    |       1        | [Baud Rate](#baud-rate)                     |   RW   |         1          |     0 ~ 9     |       -        |
 |    9    |       1        | [Return Delay Time](#return-delay-time)     |   RW   |        250         |    0 ~ 255    |    2 [μsec]    |
-|   10    |       1        | [Drive Mode](#drive-mode)                   |   RW   |         0          |     0 ~ 1     |       -        |
 |   11    |       1        | [Operating Mode](#operating-mode)           |   RW   |         5          |     0, 5      |       -        |
 |   12    |       1        | [Sencondary ID](#secondary-id)              |   RW   |        255         |    0 ~ 255    |       -        |
 |   20    |       4        | [Homing Offset](#homing-offset)             |   RW   |         0          |   0 ~ 1,150   |   1 [pulse]    |
-|   24    |       4        | [Moving Threshold](#moving-threshold)       |   RW   |         50         |   0 ~ 2,970   | 0.01 [rev/min] |
+|   24    |       4        | [Moving Threshold](#moving-threshold)       |   RW   |         80         |   0 ~ 2,970   | 0.01 [rev/min] |
 |   31    |       1        | [Temperature Limit](#temperature-limit)     |   RW   |         80         |    0 ~ 100    |     1 [&deg;C]      |
 |   32    |       2        | [Max Voltage Limit](#max-voltage-limit)     |   RW   |        350         |    0 ~ 350    |    0.1 [V]     |
 |   34    |       2        | [Min Voltage Limit](#min-voltage-limit)     |   RW   |        150         |    0 ~ 350    |    0.1 [V]     |
@@ -96,7 +95,7 @@ product_group: rh_p12_rna
 |   517   |       1        | [Registered Instruction](#registered-instruction) |   R    |         0          |                          -                          |       -        |
 |   518   |       1        | [Hardware Error Status](#hardware-error-status)   |   R    |         0          |                          -                          |       -        |
 |   524   |       2        | [Velocity I Gain](#velocity-i-gain)               |   RW   |         -          |                     0 ~ 32,767                      |       -        |
-|   526   |       2        | [Velocity P Gain](#velocity-p-gain)               |   RW   |         -          |                     0 ~ 32,767                      |       -        |
+|   526   |       2        | [Velocity P Gain](#velocity-i-gain)               |   RW   |         -          |                     0 ~ 32,767                      |       -        |
 |   528   |       2        | [Position D Gain](#position-p-gain)               |   RW   |         -          |                     0 ~ 32,767                      |       -        |
 |   532   |       2        | [Position P Gain](#position-p-gain)               |   RW   |         -          |                     0 ~ 32,767                      |       -        |
 |   530   |       2        | [Position I Gain](#position-p-gain)               |   RW   |         -          |                     0 ~ 32,767                      |       -        |
@@ -158,9 +157,6 @@ This address stores model number of the device.
 ### <a name="return-delay-time"></a>**[Return Delay Time(9)](#return-delay-time9)**
 {% include en/dxl/pro_plus/control_table_9_return_delay_time.md %}
 
-### <a name="drive-mode"></a>**[Drive Mode(10)](#drive-mode10)**
-{% include en/dxl/pro_plus/control_table_10_drive_mode.md %}
-
 ### <a name="operating-mode"></a>**[Operating Mode(11)](#operating-mode11)**
 Operating mode of the device can be configured. Each control mode has different characteristics so please choose appropriate mode for the application.
 
@@ -174,10 +170,19 @@ Operating mode of the device can be configured. Each control mode has different 
 {% include en/dxl/pro_plus/control_table_12_secondary_id.md %}
 
 ### <a name="homing-offset"></a>**[Homing Offset(20)](#homing-offset20)**
-{% include en/dxl/pro_plus/control_table_20_homing_offset.md %}
+Users can adjust the Home position by setting Home Offset(20). The Homing Offset value is added to the Present Position(580).  
+Present Position(580) = Actual Position + Homing Offset(20).
+
+|   Unit    | Value Range |
+|:---------:|:-----------:|
+| 1 [pulse] |   0 ~ 1150  |
 
 ### <a name="moving-threshold"></a>**[Moving Threshold(24)](#moving-threshold24)**
 {% include en/dxl/pro_plus/control_table_24_moving_threshold.md %}
+
+|     Unit       |    Value Range    |
+| :------------: | :---------------: |
+| 0.01 [rev/min] |     0 ~ 2,970     |
 
 ### <a name="temperature-limit"></a>**[Temperature Limit(31)](#temperature-limit31)**
 {% include en/dxl/pro_plus/control_table_31_temperature_limit.md %}
@@ -205,7 +210,7 @@ Profile Acceleration(556) cannot be configured with any values exceeding Acceler
 | 1 [rev/min<sup>2</sup>] | 0 ~ 1,378,788 |
 
 ### <a name="velocity-limit"></a>**[Velocity Limit(44)](#velocity-limit44)**
-This value indicates maximum velocity of Goal Velocity(552) and Profile Velocity(562).
+This value indicates maximum velocity of Goal Velocity(552) and Profile Velocity(560).
 Goal Velocity(552) and Profile Velocity(562) cannot be configured with any values exceeding Velocity Limit(44). Attempting to write an invalid value will fail and set the Limit Error Bit in the error field of the Status Packet.
 
 |      Unit      | Value Range |
@@ -279,7 +284,8 @@ Below figure is a block diagram describing the position controller in Current-ba
 {% include en/dxl/pro_plus/control_table_548_goal_pwm.md %}
 
 ### <a name="goal-current"></a>**[Goal Current(550)](#goal-current550)**
-{% include en/dxl/pro_plus/control_table_550_goal_current.md %}
+In Current Control Mode, Goal Current(550) can be used to set the desired current. This value sets a current limit of the current controller in Current-based Position Control Mode.
+This value cannot exceed Current Limit(38).
 
 ### <a name="goal-velocity"></a>**[Goal Velocity(552)](#goal-velocity552)**
 Goal Velocity(552) value is used as an input limiter of velocity controller.  
@@ -301,7 +307,7 @@ In case of Velocity Control Mode, Profile Acceleration(556) is applied, but Prof
 
 |      Unit      |      Value Range       |             Description              |
 |:--------------:|:----------------------:|:------------------------------------:|
-| 0.01 [rev/min] | 0 ~ Velocity Limit(44) | '0' stands for the infinite velocity |
+| 0.01 [rev/min] | 0 ~ Velocity Limit(44) | ‘0’ stands for the infinite velocity |
 
 The Profile is an acceleration/deceleration control technique to reduce vibration, noise and load on the motor by controlling dramatically changing velocity and acceleration.  
 It is also called Velocity Profile as it controls acceleration and deceleration based on velocity.  
@@ -346,11 +352,11 @@ Acceleration time(t<sub>1</sub>) can be calculated as below equation.
 
 ### <a name="goal-position"></a>**[Goal Position(564)](#goal-position564)**
 Desired position can be set with Goal Position(564).  
-This value must be inbetween Min Position Limit(52) and Max Position Limit(48).
+This value must be in between Min Position Limit(52) and Max Position Limit(48).
 
-|Model Name|Goal Position = 0|Goal Position = 740|
-| :-------: | :--------: | :--------: |
-|RH-P12-RN|![](/assets/images/platform/rh_p12_rn/rh_p12_rn_position_open.png)|![](/assets/images/platform/rh_p12_rn/rh_p12_rn_position_close.png)|
+| Model Name | Goal Position = 0 | Goal Position = 740 |
+| :--------: | :---------------: | :-----------------: |
+| RH-P12-RN  | ![](/assets/images/platform/rh_p12_rn/rh_p12_rn_position_open.png) | ![](/assets/images/platform/rh_p12_rn/rh_p12_rn_position_close.png) |
 
 ### <a name="realtime-tick"></a>**[Realtime Tick(568)](#realtime-tick568)**
 {% include en/dxl/pro_plus/control_table_568_realtime_tick.md %}
@@ -384,9 +390,9 @@ This value provides additional information about the movement. In-Position Bit(0
 ### <a name="present-position"></a>**[Present Position(580)](#present-position580)**
 This value represents present position of the device.
 
-|Model Name|Goal Position = 0|Goal Position = 740|
-| :-------: | :--------: | :--------: |
-|RH-P12-RN|![](/assets/images/platform/rh_p12_rn/rh_p12_rn_position_open.png)|![](/assets/images/platform/rh_p12_rn/rh_p12_rn_position_close.png)|
+| Model Name | Goal Position = 0 | Goal Position = 740 |
+| :--------: | :---------------: | :-----------------: |
+| RH-P12-RN  |![](/assets/images/platform/rh_p12_rn/rh_p12_rn_position_open.png)|![](/assets/images/platform/rh_p12_rn/rh_p12_rn_position_close.png)|
 
 ### <a name="velocity-trajectory"></a>**[Velocity Trajectory(584)](#velocity-trajectory584)**
 This is a desired velocity trajectory created by Profile. For more details, please refer to the [Profile Velocity(560)].
@@ -437,5 +443,4 @@ This is a desired position trajectory created by Profile. This value is only use
 `Download` [RH-P12-RN(STP).zip](http://www.robotis.com/service/download.php?no=741)
 
 
-[PDF]: http://support.robotis.com/en/baggage_files/dynamixel/rh-p12-rn.pdf
 [Torque Enable(562)]: #torque-enable562
