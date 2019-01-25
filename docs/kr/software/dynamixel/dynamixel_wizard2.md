@@ -52,22 +52,22 @@ sidebar:
 
 ## [지원 제품 목록](#지원-제품-목록)
 
-| Dynamixel        |                 |                   |                   |                     |               |
-|:-----------------|:----------------|:------------------|:------------------|:--------------------|:--------------|
-| **DX**           | DX-113          | DX-116            | DX-1117           |                     |               |
-| **AX**           | AX-12W          | AX-12+/12A        | AX-18F/18A        |                     |               |
-| **RX**           | RX-10           | RX-24F            | RX-28             | RX-64               |               |
-| **EX**           | EX-106+         |                   |                   |                     |               |
-| **MX**           | MX-12W          | MX-28, MX-28(2.0) | MX-64, MX-64(2.0) | MX-106, MX-106(2.0) |               |
-| **XL**           | XL320           | XL430-W250        |                   |                     |               |
-| **XM**           | XM430-210       | XM430-W350        | XM540-W210        | XM540-W270          |               |
-| **XH**           | XH430-W210      | XH430-W350        | XH430-V210        | XH430-V350          |               |
-| **PRO-L**        | L42-10-S300     | L54-30-S500       | L54-30-S400       | L54-50-S500         | L54-50-S290   |
-| **PRO-M**        | M42-10-S260     | M54-40-S250       | M54-60-S250       |                     |               |
-| **PRO-H**        | H42-20-S300     | H54-100-S500      | H54-200-S500      |                     |               |
-| **PRO-M(A)**     | M42-10-S260(A)  | M54-40-S250(A)    | M54-60-S250(A)    |                     |               |
-| **PRO-H(A)**     | H42-20-S300(A)  | H54-100-S500(A)   | H54-200-S500(A)   |                     |               |
-| **PRO+**         | H42P-020-S300   | H54P-100-S500     | H54P-100-S500     |                     |               |
+| DYNAMIXEL Series |                    |                       |                       |                         |                 |
+|:-----------------|:-------------------|:----------------------|:----------------------|:------------------------|:----------------|
+| **DX**           | [DX-113]           | [DX-116]              | [DX-117]              |                         |                 |
+| **AX**           | [AX-12W]           | [AX-12+/12A]          | [AX-18F/18A]          |                         |                 |
+| **RX**           | [RX-10]            | [RX-24F]              | [RX-28]               | [RX-64]                 |                 |
+| **EX**           | [EX-106+]          |                       |                       |                         |                 |
+| **MX**           | [MX-12W]           | [MX-28], [MX-28(2.0)] | [MX-64], [MX-64(2.0)] | [MX-106], [MX-106(2.0)] |                 |
+| **XL**           | [XL320]            | [XL430-W250]          |                       |                         |                 |
+| **XM**           | [XM430-W210]       | [XM430-W350]          | [XM540-W150]          | [XM540-W270]            |                 |
+| **XH**           | [XH430-W210]       | [XH430-W350]          | [XH430-V210]          | [XH430-V350]            |                 |
+| **PRO L**        | [L42-10-S300-R]    | [L54-30-S500-R]       | [L54-30-S400-R]       | [L54-50-S500-R]         | [L54-50-S290-R] |
+| **PRO M**        | [M42-10-S260-R]    | [M54-40-S250-R]       | [M54-60-S250-R]       |                         |                 |
+| **PRO H**        | [H42-20-S300-R]    | [H54-100-S500-R]      | [H54-200-S500-R]      |                         |                 |
+| **PRO M(A)**     | [M42-10-S260-R(A)] | [M54-40-S250-R(A)]    | [M54-60-S250-R(A)]    |                         |                 |
+| **PRO H(A)**     | [H42-20-S300-R(A)] | [H54-100-S500-R(A)]   | [H54-200-S500-R(A)]   |                         |                 |
+| **PRO+ H**       | [H42P-020-S300-R]  | [H54P-100-S500-R]     | [H54P-200-S500-R]     |                         |                 |
 
 # [메뉴 설명](#메뉴-설명)
 
@@ -534,3 +534,53 @@ sidebar:
 
 
 [기본 기능 - 그래프]: #그래프
+[Protocol 1.0]: /docs/kr/dxl/protocol1/
+[Protocol 2.0]: /docs/kr/dxl/protocol2/
+[AX-12W]: /docs/kr/dxl/ax/ax-12w/
+[AX-12+/12A]: /docs/kr/dxl/ax/ax-12a/
+[AX-18F/18A]: /docs/kr/dxl/ax/ax-18a/
+[EX-106+]: /docs/kr/dxl/ex/ex-106+/
+[DX-113]: /docs/kr/dxl/dx/dx-113/
+[DX-116]: /docs/kr/dxl/dx/dx-116/
+[DX-117]: /docs/kr/dxl/dx/dx-117/
+[RX-10]: /docs/kr/dxl/rx/rx-10/
+[RX-24F]: /docs/kr/dxl/rx/rx-24f/
+[RX-28]: /docs/kr/dxl/rx/rx-28/
+[RX-64]: /docs/kr/dxl/rx/rx-64/
+[MX-12W]: /docs/kr/dxl/mx/mx-12w/
+[MX-28]: /docs/kr/dxl/mx/mx-28/
+[MX-28(2.0)]: /docs/kr/dxl/mx/mx-28-2/
+[MX-64]: /docs/kr/dxl/mx/mx-64/
+[MX-64(2.0)]: /docs/kr/dxl/mx/mx-64-2/
+[MX-106]: /docs/kr/dxl/mx/mx-106/
+[MX-106(2.0)]: /docs/kr/dxl/mx/mx-106-2/
+[XL320]: /docs/kr/dxl/x/xl320/
+[XL430-W250]: /docs/kr/dxl/x/xl430-w250/
+[XM430-W210]: /docs/kr/dxl/x/xm430-w210/
+[XM430-W350]: /docs/kr/dxl/x/xm430-w350/
+[XH430-W210]: /docs/kr/dxl/x/xh430-w210/
+[XM540-W150]: /docs/kr/dxl/x/xm540-w150/
+[XM540-W270]: /docs/kr/dxl/x/xm540-w270/
+[XH430-W350]: /docs/kr/dxl/x/xh430-w350/
+[XH430-V210]: /docs/kr/dxl/x/xh430-v210/
+[XH430-V350]: /docs/kr/dxl/x/xh430-v350/
+[H54-200-S500-R]: /docs/kr/dxl/pro/h54-200-s500-r/
+[H54-100-S500-R]: /docs/kr/dxl/pro/h54-100-s500-r/
+[H42-20-S300-R]: /docs/kr/dxl/pro/h42-20-s300-r/
+[M54-60-S250-R]: /docs/kr/dxl/pro/m54-60-s250-r/
+[M54-40-S250-R]: /docs/kr/dxl/pro/m54-40-s250-r/
+[M42-10-S260-R]: /docs/kr/dxl/pro/m42-10-s260-r/
+[H54-200-S500-R(A)]: /docs/kr/dxl/pro/h54-200-s500-ra/
+[H54-100-S500-R(A)]: /docs/kr/dxl/pro/h54-100-s500-ra/
+[H42-20-S300-R(A)]: /docs/kr/dxl/pro/h42-20-s300-ra/
+[M54-60-S250-R(A)]: /docs/kr/dxl/pro/m54-60-s250-ra/
+[M54-40-S250-R(A)]: /docs/kr/dxl/pro/m54-40-s250-ra/
+[M42-10-S260-R(A)]: /docs/kr/dxl/pro/m42-10-s260-ra/
+[L54-50-S500-R]: /docs/kr/dxl/pro/l54-50-s500-r/
+[L54-50-S290-R]: /docs/kr/dxl/pro/l54-50-s290-r/
+[L54-30-S500-R]: /docs/kr/dxl/pro/l54-30-s500-r/
+[L54-30-S400-R]: /docs/kr/dxl/pro/l54-30-s400-r/
+[L42-10-S300-R]: /docs/kr/dxl/pro/l42-10-s300-r/
+[H42P-020-S300-R]: /docs/en/dxl/pro_plus/h42p-020-s300-r/
+[H54P-100-S500-R]: /docs/en/dxl/pro_plus/h54p-100-s500-r/
+[H54P-200-S500-R]: /docs/en/dxl/pro_plus/h54p-200-s500-r/

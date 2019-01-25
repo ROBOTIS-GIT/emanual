@@ -54,21 +54,22 @@ Although almost all ROBOTIS products are shipped with preinstalled firmwares, ne
 
 ## [Supported Products](#supported-products)
 
-| DYNAMIXEL Series |                   |                       |                       |                         |                 |
-|:-----------------|:------------------|:----------------------|:----------------------|:------------------------|:----------------|
-| **DX**           | [DX-113]          | [DX-116]              | [DX-117]              |                         |                 |
-| **AX**           | [AX-12W]          | [AX-12+/12A]          | [AX-18F/18A]          |                         |                 |
-| **RX**           | [RX-10]           | [RX-24F]              | [RX-28]               | [RX-64]                 |                 |
-| **EX**           | [EX-106+]         |                       |                       |                         |                 |
-| **MX**           | [MX-12W]          | [MX-28], [MX-28(2.0)] | [MX-64], [MX-64(2.0)] | [MX-106], [MX-106(2.0)] |                 |
-| **XL**           | [XL320]           | [XL430-W250]          |                       |                         |                 |
-| **XM**           | [XM430-210]       | [XM430-W350]          | [XM540-W210]          | [XM540-W270]            |                 |
-| **XH**           | [XH430-W210]      | [XH430-W350]          | [XH430-V210]          | [XH430-V350]            |                 |
-| **PRO L**        | [L42-10-S300-R]   | [L54-30-S500-R]       | [L54-30-S400-R]       | [L54-50-S500-R]         | [L54-50-S290-R] |
-| **PRO M**        | [M42-10-S260-R]   | [M54-40-S250-R]       | [M54-60-S250-R]       |                         |                 |
-| **PRO H**        | [H42-20-S300-R]   | [H54-100-S500-R]      | [H54-200-S500-R]      |                         |                 |
-| **PRO+ H**       | [H42P-020-S300-R] | [H54P-100-S500-R]     | [H54P-100-S500-R]     |                         |                 |
-
+| DYNAMIXEL Series |                    |                       |                       |                         |                 |
+|:-----------------|:-------------------|:----------------------|:----------------------|:------------------------|:----------------|
+| **DX**           | [DX-113]           | [DX-116]              | [DX-117]              |                         |                 |
+| **AX**           | [AX-12W]           | [AX-12+/12A]          | [AX-18F/18A]          |                         |                 |
+| **RX**           | [RX-10]            | [RX-24F]              | [RX-28]               | [RX-64]                 |                 |
+| **EX**           | [EX-106+]          |                       |                       |                         |                 |
+| **MX**           | [MX-12W]           | [MX-28], [MX-28(2.0)] | [MX-64], [MX-64(2.0)] | [MX-106], [MX-106(2.0)] |                 |
+| **XL**           | [XL320]            | [XL430-W250]          |                       |                         |                 |
+| **XM**           | [XM430-W210]       | [XM430-W350]          | [XM540-W150]          | [XM540-W270]            |                 |
+| **XH**           | [XH430-W210]       | [XH430-W350]          | [XH430-V210]          | [XH430-V350]            |                 |
+| **PRO L**        | [L42-10-S300-R]    | [L54-30-S500-R]       | [L54-30-S400-R]       | [L54-50-S500-R]         | [L54-50-S290-R] |
+| **PRO M**        | [M42-10-S260-R]    | [M54-40-S250-R]       | [M54-60-S250-R]       |                         |                 |
+| **PRO H**        | [H42-20-S300-R]    | [H54-100-S500-R]      | [H54-200-S500-R]      |                         |                 |
+| **PRO M(A)**     | [M42-10-S260-R(A)] | [M54-40-S250-R(A)]    | [M54-60-S250-R(A)]    |                         |                 |
+| **PRO H(A)**     | [H42-20-S300-R(A)] | [H54-100-S500-R(A)]   | [H54-200-S500-R(A)]   |                         |                 |
+| **PRO+ H**       | [H42P-020-S300-R]  | [H54P-100-S500-R]     | [H54P-100-S500-R]     |                         |                 |
 
 # [Menu Description](#menu-description)
 
@@ -93,104 +94,55 @@ Detailed packet data can be loaded by selecting a packet in the packet history.
 
 ![](/assets/images/sw/dynamixel/wizard2/wizard2_packet_001.png)
 
-## [Setting Window](#setting-window)
+# [다이나믹셀 위자드 2.0 설치](#다이나믹셀-위자드-20-설치)
 
-### [Scan Options](#scan-options)
+다운받은 설치파일을 실행합니다.  
+안내에 따라 `Next`버튼을 눌러 설치를 진행합니다.
 
-**NOTE** : 검색에 필요한 설정을 할 수 있습니다.  
-항목을 적게 선택할수록 검색시간이 단축됩니다.
-{: .notice}
+![](/assets/images/sw/wizard2/wizard2_setup_win_01.png)
 
-![](/assets/images/sw/dynamixel/wizard2/wizard2_options_001.png)
+# [다이나믹셀 위자드 2.0 제거](#다이나믹셀-위자드-20-제거)
 
-### [Control Options](#control-options)
+## [윈도우에서 제거하기](#윈도우에서-제거하기)
 
-컨트롤 테이블의 표시형식과 제어항목, 표시항목을 설정할 수 있습니다.
+1. 윈도우 설정의 앱 및 기능에서 `Dynamixel Wizard 2`를 선택하고 `제거`버튼을 클릭하면 설치마법사가 시작합니다.
 
-![](/assets/images/sw/dynamixel/wizard2/wizard2_options_002.png)
+2. `Remove all components`를 선택하고 `Next`버튼을 눌러 제거를 진행합니다.
 
-### [Graph Options](#graph-options)
+    ![](/assets/images/sw/wizard2/wizard2_setup_win_04.png)
 
-**참고** : 그래프 표시항목과 갱신주기, 속도 최적화를 설정할 수 있습니다.  
-갱신주기는 1~1000ms로 설정가능하지만 통신속도와 PC사양에 따라 달라집니다.
-{: .notice}
+## [리눅스에서 제거하기](#리눅스에서-제거하기)
 
-![](/assets/images/sw/dynamixel/wizard2/wizard2_options_003.png)
+1. 설치된 폴더에서 `maintenancetool`을 실행합니다.
+
+2. `Remove all components`를 선택하고 `Next`버튼을 눌러 제거를 진행합니다.
+
+    ![](/assets/images/sw/wizard2/wizard2_setup_linux_03.png)
 
 # [Basic Features](#basic-features)
 
-## [Firmware Update](#firmware-update)
-
-1. 메인 메뉴에서 `Tools` > `Firmware Update`를 선택합니다.
-
-    **참고** : 선택된 장치가 없으면 해당 메뉴가 비활성화된 상태입니다. 검색 후 다이나믹셀이 연결된 상태에서 진행해 주세요.
-    {: .notice}
-
-2. 간단한 도움말과 함께 펌웨어 업데이트를 시작합니다. 특히, 업데이트 도중 연결이 끊기거나 전원이 꺼지지 않도록 유의하십시오.  
-
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_update_001.png)
-
-3. 다음을 누르면 펌웨어 업데이트를 시작합니다. 완료될때 까지 전원이 꺼지거나 케이블이 빠지지 않도록 유의합니다.  
-
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_update_002.png)
-
-4. 다이나믹셀 펌웨어 설치 결과를 학인합니다.  
-
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_update_004.png)
-
-## [Firmware Update All](#firmware-update-all)
-
-1. 메인 메뉴에서 `Tools` > `Firmware Update All`을 선택합니다.
-
-2. 관리할 대상이 정상적으로 검색되었는지 확인한 후 다음 버튼을 클릭합니다.  
-
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_update_all_001.png)
-
-3. 검색된 장치들 중 업데이트가 필요한 장치들만 진행합니다.  
-
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_update_all_002.png)
-
-4. 업데이트가 정상적으로 완료될때까지 기다린후, 닫기 버튼을 클릭합니다.  
-
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_update_all_003.png)
-
-## [Firmware Recovery](#firmware-recovery)
-
-1. 메인 메뉴에서 `Tools` > `Firmware Recovery`를 선택합니다.
-
-2. 간단한 도움말과 함께 다이나믹셀 펌웨어 복구 마법사를 시작합니다.  
-
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_recovery_001.png)
-
-3. 다이나믹셀 펌웨어 복구 모드에서는 모델명을 자동으로 인식할 수 없기 때문에, 사용자가 정확한 모델을 선택해 주어야 합니다. 잘못된 모델을 선택하면 정상적으로 동작하지 않습니다.  
-
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_recovery_002.png)
-
-4. 사용자가 다이나믹셀이 연결된 포트를 수동으로 설정해 주어야 합니다. 포트가 사용중이면 다이나믹셀을 인식할 수 없으니 다른 프로그램을 종료하고 진행하십시오.  
-
-    **주의** : 다이나믹셀 펌웨어 복구시에는 반드시 한개의 다이나믹셀만 연결되어 있어야 합니다.  
-    {: .notice--warning}
-
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_recovery_003.png)
-
-5. 다이나믹셀을 찾기 위해 복구할 다이나믹셀의 전원을 껐다가 켜십시오.  
-
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_recovery_004.png)
-
-6. 다이나믹셀 검색에 성공하면 펌웨어 복구를 시작합니다. 완료될 때까지 전원이 꺼지거나 케이블이 빠지지 않도록 주의하십시오.  
-
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_recovery_005.png)
-
-7. 다이나믹셀 펌웨어 복구 결과를 확인합니다.  
-
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_recovery_007.png)
-
 ## [Connect DYNAMIXEL](#connect-dynamixel)
 
-1. `Scan` 메뉴를 통해 다이나믹셀을 검색합니다. 필요에 따라 `검색 설정`에서 검색 범위를 설정할 수 있습니다.  
+### [다이나믹셀 검색 설정](#검색-설정)
+
+1. 메인 메뉴에서 `Tools` > `Options` 를 선택하면 설정창이 나타납니다.
+
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_011.png)
+
+2. 설정창의 좌측 목록에서 `Scan` 항목을 선택하면 검색 설정이 나타납니다.
+
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_options_001.png)
+
+3. 순서대로 검색할 프로토콜 버전, 통신포트, 통신속도, ID범위를 설정하고 `OK` 버튼을 클릭합니다. 항목을 적게 설정할수록 검색시간이 단축됩니다.
+
+### [다이나믹셀 검색 하기](#다이나믹셀-검색-하기)
+
+1. 메인 메뉴에서 `Device` > `Scan` 을 선택하면 다이나믹셀 검색을 시작합니다.
 
     **참고** : 만약, 해당 통신 포트에 연결을 실패하면 사용중인 프로그램을 찾아 사용을 해제해야 합니다.  
     {: .notice}  
+
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_012.png)
 
 2. 검색되는 다이나믹셀을 왼쪽의 장치목록에서 확인할 수 있습니다.  
 
@@ -236,18 +188,46 @@ Detailed packet data can be loaded by selecting a packet in the packet history.
 
 ## [Graph](#graph)
 
-1. `그래프 설정`에서 추가 버튼을 클릭합니다.  
+### [그래프 설정](#그래프-설정)
+
+1. 메인 메뉴에서 `Tools` > `Options` 를 선택하면 설정창이 나타납니다.
+
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_011.png)
+
+2. 설정창의 좌측 목록에서 `Graph` 항목을 선택하면 그래프 설정이 나타납니다.
+
+3. 아래 그림에 표시된 `추가` 버튼을 클릭하면 항목 추가 상자가 나타납니다.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_002.png)
 
-2. 추가상자에서 표시항목과 선 색깔, 스케일값, 별도 축 사용 여부를 설정할 수 있습니다.  
+4. 항목 추가 상자에서 순서대로 표시항목과 선 색깔, 스케일값, 보조축 사용 여부를 설정하고 `OK` 버튼을 클릭합니다.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_003.png)
 
-3. 설정창을 닫고 그래프창을 엽니다. `Start` 버튼을 클릭하면 그래프가 동작합니다.
+5. 통신주기(Interval)는 1~1000ms로 설정가능합니다. 통신주기가 작을수록 더 세밀한 그래프가 표현됩니다.
+
+    **참고** : 실제 통신주기는 통신속도와 PC사양에 따라 달라질 수 있습니다.  
+    {: .notice}  
+
+6. 속도 최적화 사용여부를 설정합니다. 설정하면 선택한 항목만 읽어오므로 통신이 빨라집니다.
+
+    **참고** : 속도 최적화를 사용하면 컨트롤 테이블의 일부 항목들이 자동으로 갱신되지않습니다.  
+    {: .notice}  
+
+7. 설정창의 `OK` 버튼을 클릭합니다.
+
+### [그래프 시작](#그래프-시작)
+
+1. 메인 메뉴에서 `View` > `Graph` 를 선택하면 그래프창이 나타납니다.
+
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_013.png)
+
+3. 그래프창의 `Start` 버튼을 클릭하면 그래프가 동작을 시작합니다.
 
     **참고** : 선택된 장치가 없으면 해당 메뉴가 비활성화된 상태입니다. 검색 후 다이나믹셀이 연결된 상태에서 진행해 주세요.  
     {: .notice}
+
+3. 컨트롤 테이블에서 `Goal Position` 항목의 값을 변경하면 실시간으로 변경되는 `Present Position` 을 확인할 수 있습니다.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_004.png)
 
@@ -262,11 +242,15 @@ Detailed packet data can be loaded by selecting a packet in the packet history.
       - Shift : y축 고정, x축 확대
       - Ctrl : x축 고정, y축 확대
       - 마우스 휠로 이전 줌, 다음 줌으로 이동
-    - 그래프 동작시 Ctrl과 마우스휠로 시간축을 1~10초로 1초단위로 조절가능
+    - 그래프 동작시 Ctrl과 마우스휠로 시간축을 1~10초로 1초단위로 조절
 
 ## [Packet](#packet)
 
-1. 패킷창을 열어서 통신포트와 통신속도를 설정하고 `Open` 버튼을 클릭합니다.  
+1. 메인 메뉴에서 `View` > `Packet` 를 선택하면 패킷창이 나타납니다.
+
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_014.png)
+
+2. 통신포트와 통신속도를 설정하고 `Open` 버튼을 클릭합니다.  
   열기에 성공하면 해당 포트의 다이나믹셀 프로토콜 통신 모니터링을 시작합니다.
 
     **참고** : 만약, 해당 통신 포트에 연결을 실패하면 사용중인 프로그램을 찾아 사용을 해제해야합니다.  
@@ -274,12 +258,12 @@ Detailed packet data can be loaded by selecting a packet in the packet history.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_packet_002.png)
 
-2. 우측 메뉴에서 통신할 프로토콜 버전과 Instruction을 설정할 수 있습니다.  
-  프로토콜 버전을 `2.0`으로 Instruction을 `Write`로 설정합니다.  
+3. 우측 메뉴에서 통신할 프로토콜 버전과 Instruction을 설정할 수 있습니다.  
+  프로토콜 버전을 `2.0` 으로 Instruction을 `Write` 로 설정합니다.  
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_packet_003.png)
 
-3. Instuction에 대한 상세설정을 할 수 있습니다.  
+4. Instuction에 대한 상세설정을 할 수 있습니다.  
   다음과 같이 LED 켜기의 패킷을 설정합니다.  
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_packet_004.png)
@@ -288,17 +272,90 @@ Detailed packet data can be loaded by selecting a packet in the packet history.
     - LED 항목의 컨트롤 테이블 길이 : 1
     - LED On에 대한 데이타 : 1
 
-4. 설정된 값에 따라 변화되는 패킷정보를 하단에 있는 `패킷상세정보`에서 확인할 수 있습니다.  
+5. 설정된 값에 따라 변화되는 패킷정보를 하단에 있는 `패킷상세정보` 에서 확인할 수 있습니다.  
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_packet_005.png)
 
-5. `Send` 버튼을 클릭하여 패킷을 전송합니다.  
+6. `Send` 버튼을 클릭하여 패킷을 전송합니다.  
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_packet_006.png)
 
-6. 패킷목록에서 응답패킷을 클릭하면 패킷상세정보를 확인할 수 있습니다.  
+7. 패킷목록에서 응답패킷을 클릭하면 패킷상세정보를 확인할 수 있습니다.  
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_packet_007.png)
+
+## [Firmware Update](#firmware-update)
+
+1. 메인 메뉴에서 `Tools` > `Firmware Update`를 선택합니다.
+
+    **참고** : 선택된 장치가 없으면 해당 메뉴가 비활성화된 상태입니다. 검색 후 다이나믹셀이 연결된 상태에서 진행해 주세요.
+    {: .notice}
+
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_015.png)
+
+2. 간단한 도움말과 함께 펌웨어 업데이트를 시작합니다. 특히, 업데이트 도중 연결이 끊기거나 전원이 꺼지지 않도록 유의하십시오.  
+
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_update_001.png)
+
+3. 다음을 누르면 펌웨어 업데이트를 시작합니다. 완료될때 까지 전원이 꺼지거나 케이블이 빠지지 않도록 유의합니다.  
+
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_update_002.png)
+
+4. 다이나믹셀 펌웨어 설치 결과를 학인합니다.  
+
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_update_004.png)
+
+## [Firmware Update All](#firmware-update-all)
+
+1. 메인 메뉴에서 `Tools` > `Firmware Update All`을 선택합니다.
+
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_016.png)
+
+2. 관리할 대상이 정상적으로 검색되었는지 확인한 후 다음 버튼을 클릭합니다.  
+
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_update_all_001.png)
+
+3. 검색된 장치들 중 업데이트가 필요한 장치들만 진행합니다.  
+
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_update_all_002.png)
+
+4. 업데이트가 정상적으로 완료될때까지 기다린후, 닫기 버튼을 클릭합니다.  
+
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_update_all_003.png)
+
+## [Firmware Recovery](#firmware-recovery)
+
+1. 메인 메뉴에서 `Tools` > `Firmware Recovery`를 선택합니다.
+
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_017.png)
+
+2. 간단한 도움말과 함께 다이나믹셀 펌웨어 복구 마법사를 시작합니다.  
+
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_recovery_001.png)
+
+3. 다이나믹셀 펌웨어 복구 모드에서는 모델명을 자동으로 인식할 수 없기 때문에, 사용자가 정확한 모델을 선택해 주어야 합니다. 잘못된 모델을 선택하면 정상적으로 동작하지 않습니다.  
+
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_recovery_002.png)
+
+4. 사용자가 다이나믹셀이 연결된 포트를 수동으로 설정해 주어야 합니다. 포트가 사용중이면 다이나믹셀을 인식할 수 없으니 다른 프로그램을 종료하고 진행하십시오.  
+
+    **주의** : 다이나믹셀 펌웨어 복구시에는 반드시 한개의 다이나믹셀만 연결되어 있어야 합니다.  
+    {: .notice--warning}
+
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_recovery_003.png)
+
+5. 다이나믹셀을 찾기 위해 복구할 다이나믹셀의 전원을 껐다가 켜십시오.  
+
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_recovery_004.png)
+
+6. 다이나믹셀 검색에 성공하면 펌웨어 복구를 시작합니다. 완료될 때까지 전원이 꺼지거나 케이블이 빠지지 않도록 주의하십시오.  
+
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_recovery_005.png)
+
+7. 다이나믹셀 펌웨어 복구 결과를 확인합니다.  
+
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_recovery_007.png)
+
 
 # [Advanced Features](#advanced-features)
 
@@ -440,8 +497,8 @@ Detailed packet data can be loaded by selecting a packet in the packet history.
 
 ## [Graph Optimization](#graph-optimization)
 
-그래프 설정에서 갱신주기를 최소 1ms로 설정할 수 있지만 통신속도와 PC사양에 따라 달라집니다.  
-다음과 같이 설정하면 그래프 갱신 주기를 최대한 빠르게 동작시킬 수 있습니다.
+그래프 설정에서 통신주기(Interval)를 최소 1ms로 설정할 수 있습니다.    
+다음과 같이 설정하면 그래프를 최대한 빠르게 동작시킬 수 있습니다.
 
 ### [USB Latency Setting](#usb-latency-setting)
 
@@ -488,7 +545,7 @@ Detailed packet data can be loaded by selecting a packet in the packet history.
 [AX-12W]: /docs/en/dxl/ax/ax-12w/
 [AX-12+/12A]: /docs/en/dxl/ax/ax-12a/
 [AX-18F/18A]: /docs/en/dxl/ax/ax-18a/
-[EX-106]: /docs/en/dxl/ex/ex-106+/
+[EX-106+]: /docs/en/dxl/ex/ex-106+/
 [DX-113]: /docs/en/dxl/dx/dx-113/
 [DX-116]: /docs/en/dxl/dx/dx-116/
 [DX-117]: /docs/en/dxl/dx/dx-117/
@@ -519,8 +576,17 @@ Detailed packet data can be loaded by selecting a packet in the packet history.
 [M54-60-S250-R]: /docs/en/dxl/pro/m54-60-s250-r/
 [M54-40-S250-R]: /docs/en/dxl/pro/m54-40-s250-r/
 [M42-10-S260-R]: /docs/en/dxl/pro/m42-10-s260-r/
+[H54-200-S500-R(A)]: /docs/en/dxl/pro/h54-200-s500-ra/
+[H54-100-S500-R(A)]: /docs/en/dxl/pro/h54-100-s500-ra/
+[H42-20-S300-R(A)]: /docs/en/dxl/pro/h42-20-s300-ra/
+[M54-60-S250-R(A)]: /docs/en/dxl/pro/m54-60-s250-ra/
+[M54-40-S250-R(A)]: /docs/en/dxl/pro/m54-40-s250-ra/
+[M42-10-S260-R(A)]: /docs/en/dxl/pro/m42-10-s260-ra/
 [L54-50-S500-R]: /docs/en/dxl/pro/l54-50-s500-r/
 [L54-50-S290-R]: /docs/en/dxl/pro/l54-50-s290-r/
 [L54-30-S500-R]: /docs/en/dxl/pro/l54-30-s500-r/
 [L54-30-S400-R]: /docs/en/dxl/pro/l54-30-s400-r/
 [L42-10-S300-R]: /docs/en/dxl/pro/l42-10-s300-r/
+[H42P-020-S300-R]: /docs/en/dxl/pro_plus/h42p-020-s300-r/
+[H54P-100-S500-R]: /docs/en/dxl/pro_plus/h54p-100-s500-r/
+[H54P-200-S500-R]: /docs/en/dxl/pro_plus/h54p-200-s500-r/
