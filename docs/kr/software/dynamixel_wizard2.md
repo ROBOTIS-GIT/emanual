@@ -89,6 +89,31 @@ sidebar:
 
 ![](/assets/images/sw/wizard2/wizard2_packet_001.png)
 
+# [다이나믹셀 위자드 2.0 설치](#다이나믹셀-위자드-20-설치)
+
+다운받은 설치파일을 실행합니다.  
+안내에 따라 `Next`버튼을 눌러 설치를 진행합니다.
+
+![](/assets/images/sw/wizard2/wizard2_setup_win_01.png)
+
+# [다이나믹셀 위자드 2.0 제거](#다이나믹셀-위자드-20-제거)
+
+## [윈도우에서 제거하기](#윈도우에서-제거하기)
+
+1. 윈도우 설정의 앱 및 기능에서 `Dynamixel Wizard 2`를 선택하고 `제거`버튼을 클릭하면 설치마법사가 시작합니다.
+
+2. `Remove all components`를 선택하고 `Next`버튼을 눌러 제거를 진행합니다.
+
+    ![](/assets/images/sw/wizard2/wizard2_setup_win_04.png)
+
+## [리눅스에서 제거하기](#리눅스에서-제거하기)
+
+1. 설치된 폴더에서 `maintenancetool`을 실행합니다.
+
+2. `Remove all components`를 선택하고 `Next`버튼을 눌러 제거를 진행합니다.
+
+    ![](/assets/images/sw/wizard2/wizard2_setup_linux_03.png)
+
 # [기본 기능](#기본-기능)
 
 ## [다이나믹셀 연결](#다이나믹셀-연결)
