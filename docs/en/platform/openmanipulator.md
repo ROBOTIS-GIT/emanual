@@ -211,12 +211,6 @@ If catkin_make command is completed without any errors, preparation for OpenMani
 
 ## [Usb Settings](#usb-settings)
 
-Run roscore.
-
-``` bash
-$ roscore
-```
-
 The following commands allow to use USB port
 
 ``` bash
@@ -224,7 +218,6 @@ $ rosrun open_manipulator_controller create_udev_rules
 ```
 {% capture notice_01 %}
 **NOTE**: 
-- Please run roscore before rosrun, because rosrun can't operate without roscore. The rosrun and roscore should be run in each other terminal.
 - This run file make usb latency timer **1 ms**. If you want to check this setting, Run the following command in a terminal window.  
 `cat /sys/bus/usb-serial/devices/ttyUSB0/latency_timer`
 {% endcapture %}
