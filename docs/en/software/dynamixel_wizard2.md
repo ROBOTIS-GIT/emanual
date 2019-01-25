@@ -17,15 +17,15 @@ sidebar:
 
 ## [DYNAMIXEL Wizard 2.0](#dynamixel-wizard-20)
 
-다이나믹셀 위자드 2.0은 다이나믹셀들을 아주 편리하게 관리해줍니다.
+DYNAMIXEL Wizard 2.0 is an optimized tool for managing DYNAMIXELs.
 
-이 프로그램의 주요 역할은 다음과 같습니다.
+The following can be performed with DYNAMIXEL Wizard 2.0.
 
-- 다이나믹셀의 펌웨어를 관리합니다.
-- 다이나믹셀의 상태를 점검합니다.
-- 사용에 필요한 모드 등을 설정할 수 있습니다.
-- 시간에 따라 변화하는 값들을 그래프로 확인할 수 있습니다.
-- 사용자가 직접 프로토콜 패킷을 생성하여 전송할 수 있습니다.
+- DYNAMIXEL Firmware Update
+- DYNAMIXEL Diagnosis
+- DYNAMIXEL Configuration
+- DYNAMIXEL Data Plotting in Real-Time
+- Generate & Monitor DYNAMIXEL Protocol Packets
 
 ![](/assets/images/sw/wizard2/wizard2_main_001.png)
 
