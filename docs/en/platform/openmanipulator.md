@@ -848,7 +848,10 @@ $ sudo pip install ds4drv
 Launch teleoperation packages for PS4 joystick.
 ``` bash
 $ sudo ds4drv
+
+$ export ROS_NAMESPACE=/open_manipulator
 $ roslaunch teleop_twist_joy teleop.launch
+
 $ roslaunch open_manipulator_teleop open_manipulator_teleop_joystick.launch
 ```
 
@@ -863,7 +866,10 @@ $ sudo apt-get install xboxdrv ros-kinetic-joy ros-kinetic-joystick-drivers ros-
 Launch teleoperation packages for XBOX 360 joystick.
 ``` bash
 $ sudo xboxdrv --silent
+
+$ export ROS_NAMESPACE=/open_manipulator
 $ roslaunch teleop_twist_joy teleop.launch
+
 $ roslaunch open_manipulator_teleop open_manipulator_teleop_joystick.launch
 ```
 
