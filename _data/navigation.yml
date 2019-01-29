@@ -13897,6 +13897,19 @@ openmanipulator:
         url: /platform/openmanipulator/#dimension
       - title: "Repeatability"
         url: /platform/openmanipulator/#repeatability
+  - title: "Getting Started"
+    url: /platform/openmanipulator/#getting-started
+    children:
+      - title: "About OpenManipulator"
+        url: /platform/openmanipulator/#about-openmanipulator
+      - title: "OpenManipulator Setup"
+        url: /platform/openmanipulator/#openmanipulator-setup
+      - title: "Let's try basic manipulation"
+        url: /platform/openmanipulator/#lets-try-basic-manipulation 
+      - title: "Challenge Various Applications"
+        url: /platform/openmanipulator/#challenge-various-applications
+      - title: "Let's design my own manipulator"
+        url: /platform/openmanipulator/#lets-design-my-own-manipulator
   - title: "Hardware Setup"
     url: /platform/openmanipulator/#hardware-setup
     children:
@@ -13906,6 +13919,13 @@ openmanipulator:
         url: /platform/openmanipulator/#3d-printed-parts
       - title: "Assembly Manual"
         url: /platform/openmanipulator/#assembly-manual
+      - title: "Board Setup"
+        url: /platform/openmanipulator/#board-setup
+        children:
+        - title: "U2D2"
+          url: /platform/openmanipulator/#u2d2
+        - title: "OpenCR"
+          url: /platform/openmanipulator/#opencr    
   - title: "PC Setup"
     url: /platform/openmanipulator/#pc-setup
     children:

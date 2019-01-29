@@ -69,6 +69,56 @@ OpenManipulator is composed by [Dynamixel X series](http://emanual.robotis.com/d
 
 ** Coming Soon **
 
+# [Getting Started](#getting-started)
+This chapter is for users who are new to OpenManipulator. The manual has an enormous amount of content, but this chapter explains how information is divided.
+
+## [About OpenManipulator](#about-openmanipulator)
+First of all, collect information from the Overview and Specifications pages to get an overall understanding of OpenManipulator.
+
+## [OpenManipulator Setup](#openmanipulator-setup)
+When you have enough understanding about OpenManipulator from above step, here are the hardware and software setups. It is recommended to proceed in the following order.
+
+1. [Hardware Setup](/docs/en/platform/openmanipulator/#hardware-setup): The OpenManipulator is delivered as a non-assembled part to the box. Assemble the OpenManipulator according to the instructions.  
+[U2D2](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=3288&keyword=u2d2) + [U2D2 Power Hub Board](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=3332&GC=GD0B01) or [OpenCR](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=3289&GC=GD0B0100) is required to operate OpenManipulator.
+Please prepare [U2D2](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=3288&keyword=u2d2) + [U2D2 Power Hub Board](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=3332&GC=GD0B01) or [OpenCR](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=3289&GC=GD0B0100) when you want to operate on ROS environment, prepare [OpenCR](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=3289&GC=GD0B0100) when you want to operate on embedded system. 
+In both case,  [SMPS 12V5A](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=1369&keyword=smps) is required to supply powers to DYNAMIXEL.
+
+2. [Software Setup](/docs/en/platform/openmanipulator/#pc-setup): If you want to run OpenManipulator in ROS environment, please install Linux, ROS and ROS package on PC according to [PC Setup](/docs/en/platform/openmanipulator/#pc-setup) chapter. If you want to run the OpenManipulator on an embedded system, install the software on your PC and set up OpenCR by following the [How to control on OpenCR](/docs/en/platform/openmanipulator/#how-to-control-on-opencr) chapter.
+
+## [Let's try basic manipulation](#lets-try-basic-manipulation)
+Once you have completed the above steps, run OpenManipulator through the provided Controller package. You can command the OpenManipulator to move specific position via ROS messages. As package for publishing messages, we provid the following examples.
+
+- [GUI Program](/docs/en/platform/openmanipulator/#gui-program) 
+- [Teleoperation](/docs/en/platform/openmanipulator/#teleoperation)
+
+OpenManipulator can also be operated using MoveIt!. You can run the controller package that uses MoveIt! by changing the variables in the launch file of the controller package. Please refer to the following chapters and try out various motions with MoveIt!.
+
+- [MoveIt!](/docs/en/platform/openmanipulator/#moveit)
+
+If you want to use the embedded system (OpenCR) to operate the OpenManipulator, you can use the Processing and RC100 controllers to perform various manipulations by referring to the following chapters.
+
+- [Basic Manipulation on OpenCR](/docs/en/platform/openmanipulator/#basic-manipulation-on-opencr)
+
+## [Challenge Various Applications](#challenge-various-applications)
+
+We provide examples of AR marker recognition using Astra pro, Realsence D435, and Raspberry Pi Camera V2. Refer the example below to challenge the camera-based manipulation applications.
+
+- [Camera Application](/docs/en/platform/openmanipulator/#camera-application) 
+
+We are proposing a way to replace and manipulate tool(gripper) of manipulator to take advantage of OpenManipulator for a wider range of applications. Try the new application using the Pen holder or Vacuum gripper as shown in the example below, and create your own tool to challenge more applications.
+
+- [Tool Modiffication](/docs/en/platform/openmanipulator/#tool-modiffication) 
+
+OpenManipulator has a complete hardware combination with Turtlebot3 waffle. Challenge your mobile manipulation by assembling TurtleBot3 waffle and OpenManipulator.
+
+- [Mobile Manipulation](/docs/en/platform/openmanipulator/#mobile-manipulation)
+
+
+## [Let's design my own manipulator](#lets-design-my-own-manipulator)
+
+
+
+
 # [Hardware Setup](#hardware-setup)
 
 ## [Part Lists](#part-lists)
@@ -121,6 +171,7 @@ OpenManipulator is composed by [Dynamixel X series](http://emanual.robotis.com/d
 | **Powers** | [SMPS 12V5A](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=1369&keyword=smps) |     1      |
 | **Boards** | [OpenCR](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=3289&GC=GD0B0100)     |     1      |
 | .          | [U2D2](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=3288&keyword=u2d2)       |     1      |
+| .          | [U2D2 Power Hub Board](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=3332&GC=GD0B01)       |     1      |
 | **Plate**  | Base Plate-02 |     1      |
 | .          | .          |     1      |
 
@@ -146,6 +197,38 @@ OpenManipulator is delivered as unassembled parts in the boxes. Follow the instr
 Below video might be help you.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/eJTIeDepmNo" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+
+## [Board Setup](#board-setup)
+
+### [U2D2](#u2d2)
+Connect micro USB (connected to PC), Dynamixel(OpenManipulator), and 12V Power to U2D2 and U2D2 power hub board as shown below. 
+
+<img src="/assets/images/platform/openmanipulator/OpenManipulator_u2d2_setup.png" width="500">
+
+**NOTE**: U2D2 and U2D2 power hub board are required when operating OpenManipulator using U2D2.
+{: .notice--info}
+
+
+### [OpenCR](#opencr)
+This chapter explains how to set up OpenCR as a communication board between ROS Packages of PC and DYNAMIXEL of OpenManipulator. If you want to operate OpenManipulator on embedded system (OpenCR) without ROS, please refer [how to control on opencr](/docs/en/platform/openmanipulator/#how-to-control-on-opencr).
+
+Connect micro USB (connected to PC), Dynamixel(OpenManipulator), and 12V Power to OpenCR as shown below. 
+
+<img src="/assets/images/platform/openmanipulator/OpenManipulator_opencr_setup.png" width="500">
+
+Please refer the detailed description of [OpenCR](http://emanual.robotis.com/docs/en/parts/controller/opencr10/)
+
+Download Arduino IDE and load OpenCR board on it
+
+- [Arduino IDE for using OpenCR](/docs/en/parts/controller/opencr10/#arduino-ide)
+
+Find `usb to dxl` example source codes.
+
+Go to `Examples` → `OpenCR` → `10.Etc` → `usb_to_dxl` on Arduino IDE for OpenCR.
+
+![](/assets/images/platform/openmanipulator/OpenManipulator_opencr_utd_setup.png)
+
+Upload the `usb to dxl` example source to OpenCR.
 
 # [PC Setup](#pc-setup)
 
@@ -1069,6 +1152,8 @@ Find example source codes.
 Go to `Examples` → `OpenManipulator` → `example` → `Chain` → `open_manipulator_chain` on Arduino IDE for OpenCR.
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_chain_arduino.png)
+
+Upload the example source to OpenCR.
 
 ## [Processing](#processing)
 
