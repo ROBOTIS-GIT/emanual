@@ -98,6 +98,9 @@ If you want to use the embedded system (OpenCR) to operate the OpenManipulator, 
 
 - [Basic Manipulation on OpenCR](/docs/en/platform/openmanipulator/#basic-manipulation-on-opencr)
 
+
+![](/assets/images/platform/openmanipulator/OpenManipulator_basic_manipul.png)
+
 ## [Challenge Various Applications](#challenge-various-applications)
 
 We provide examples of AR marker recognition using Astra pro, Realsence D435, and Raspberry Pi Camera V2. Refer the example below to challenge the camera-based manipulation applications.
@@ -115,8 +118,10 @@ OpenManipulator has a complete hardware combination with Turtlebot3 waffle. Chal
 
 ## [Let's design my own manipulator](#lets-design-my-own-manipulator)
 
+Modify the hardware(DOF, structure) and software(kinematics, trajectory) of OpenManipulator and manipulate your own OpenManipulator.  
+We provide a variety of [OpenManipulator Friends](/docs/en/platform/openmanipulator/#friends) as examples of hardware transformations. Try to control the manipulator with different structure and enjoy it. And try out the kinematics solving algorithm for the different structure.
 
-
+![](/assets/images/platform/openmanipulator/OpenManipulator_friends.png)
 
 # [Hardware Setup](#hardware-setup)
 
@@ -295,17 +300,18 @@ If the catkin_make command has been completed without any errors, all the prepar
 
 ## [USB Settings](#usb-settings)
 
+**NOTE**:If you are using OpenCR instead of U2D2 as a board, you can skip this step.
+{: .notice--info}
+
 The following commands allow to use USB port
 
 ``` bash
 $ rosrun open_manipulator_controller create_udev_rules
 ```
-{% capture notice_01 %}
-**NOTE**: 
-- This entered command set USB latency timer to **1 ms**. If you would like to see the setting, run the following command in a terminal.  
+
+**TIP**: This entered command set USB latency timer to **1 ms**. If you would like to see the setting, run the following command in a terminal.  
 `cat /sys/bus/usb-serial/devices/ttyUSB0/latency_timer`
-{% endcapture %}
-<div class="notice--info">{{ notice_01 | markdownify }}</div>
+{: .notice--success}
 
 # [Controller](#controller)
 
@@ -324,7 +330,58 @@ $ roscore
 
 ## [Launch Controller](#launch-controller)
 
-Launch the OpenManipulator controller to start [basic manipulation](/docs/en/platform/openmanipulator/#basic-manipulation).
+Before you launch controller, let's check `open_manipulator_controller` launch file in `open_manipulator_controller` package.
+
+  ```
+  <launch>
+    <arg name="use_robot_name"         default="open_manipulator"/>
+
+    <arg name="dynamixel_usb_port"     default="/dev/ttyUSB0"/>
+    <arg name="dynamixel_baud_rate"    default="1000000"/>
+
+    <arg name="control_period"         default="0.010"/>
+
+    <arg name="use_platform"           default="true"/>
+
+    <arg name="use_moveit"             default="false"/>
+    <arg name="planning_group_name"    default="arm"/>
+    <arg name="moveit_sample_duration" default="0.050"/>
+
+    <group if="$(arg use_moveit)">
+      <include file="$(find open_manipulator_controller)/launch/open_manipulator_moveit.launch">
+        <arg name="sample_duration" value="$(arg moveit_sample_duration)"/>
+      </include>
+    </group>
+
+    <node name="$(arg use_robot_name)" pkg="open_manipulator_controller" type="open_manipulator_controller" output="screen" args="$(arg dynamixel_usb_port) $(arg dynamixel_baud_rate)">
+        <param name="using_platform"       value="$(arg use_platform)"/>
+        <param name="using_moveit"         value="$(arg use_moveit)"/>
+        <param name="planning_group_name"  value="$(arg planning_group_name)"/>
+        <param name="control_period"       value="$(arg control_period)"/>
+        <param name="moveit_sample_duration"  value="$(arg moveit_sample_duration)"/>
+    </node>
+
+  </launch>
+  ```
+
+**Parameters List** : The parameters list is used to set control environments.
+- `use_robot_name`
+- `dynamixel_usb_port`
+- `dynamixel_baud_rate`
+- `control_period`
+- `use_platform`
+- `use_moveit`
+- `planning_group_name`
+- `moveit_sample_duration`
+
+`use_robot_name` is a parameter to set manipulator name(namespace of ROS messages).  
+`dynamixel_usb_port` is a parameter to set use port to connected with Dynamixel of OpenManipulator. If you use U2D2, it should be set **/dev/ttyUSB@**. If you use OpenCR, it should be set **/dev/ttyACM@** (@ indicates the port number connected to the Dynamixel).  
+`dynamixel_baud_rate` is a parameter to set baud rate of dynamixel. default baud rate of dynamixel used in OpenManipulator is 1000000.  
+`control_period` is a parameter to set communication period between dynamixel and PC (control loop time).  
+`use_platform` is a parameter that sets whether to use the actual OpenManipulator or OpenManipulator simulation. please refer [Gazebo Simulation](/docs/en/platform/openmanipulator/#gazebo-simulation) chapter.  
+`use_moveit`, `planning_group_name` and `moveit_sample_duration` are parameters supposed to set loading [move_group](http://docs.ros.org/kinetic/api/moveit_tutorials/html/doc/move_group_interface/move_group_interface_tutorial.html) package. please refer [MoveIt!](/docs/en/platform/openmanipulator/#moveit) chapter.
+
+After set the parameters, launch the OpenManipulator controller to start [basic manipulation](/docs/en/platform/openmanipulator/#basic-manipulation).
 
 ``` bash
 $ roslaunch open_manipulator_controller open_manipulator_controller.launch
@@ -700,10 +757,6 @@ The user can change each joint by GUI, if the user launch only Rviz by executing
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_rviz.png)
 
-# [Basic Manipulation](#basic-manipulation)
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dctx7Y6zNKA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 ## [Message List](#message-list)
 
 {% capture notice_01 %}
@@ -831,6 +884,10 @@ If the user set false at set_actuator_state valuable, the actuator will be disab
 
 - `/open_manipulator/goal_drawing_trajectory` ([open_manipulator_msgs/SetDrawingTrajectory]{: .popup})  
 The user can use this service to create a drawing trajectory. The user can create the circle, the rhombus, the heart, and the straight line trajectory.
+
+# [Basic Manipulation](#basic-manipulation)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dctx7Y6zNKA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## [GUI Program](#gui-program)
 
@@ -961,7 +1018,7 @@ $ roslaunch open_manipulator_teleop open_manipulator_teleop_joystick.launch
 **TIP**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`-`Alt`-`T`.
 {: .notice--success}
 
-Before you launch MoveIt!, let's check `open_manipulator_moveit` launch file.
+Before you launch controller using MoveIt!, let's check `open_manipulator_controller` launch file in `open_manipulator_controller` package.
 
   ```
   <launch>
@@ -1011,6 +1068,10 @@ After set the parameters, load a controller.
   $ roslaunch open_manipulator_controller open_manipulator_controller.launch use_moveit:=true
   ```
 
+**Warning!**     
+When launching a controller that uses MoveIt!, [OpenManipulator launch file](/docs/en/platform/openmanipulator/#launch-controller) must be turn off all existing .
+{: .notice--warning}
+
   ![](/assets/images/platform/openmanipulator/moveit_launch.png)  
 
 **Service Server List** :
@@ -1056,8 +1117,12 @@ Launch an OpenManipulator controller for gazebo simulation.
   ``` bash
   $ roslaunch open_manipulator_controller open_manipulator_controller.launch use_platform:=false
   ```
-**NOTE** : To control the OpenManipulator in the Gazebo environment using the Open Manipulator Controller, the controller must set the **use_platform** parameter to **false** because it needs to send messages to gazebo instead of Platform.
-{: .notice--info}
+{% capture notice_01 %}
+**NOTE**: 
+- To control the OpenManipulator in the Gazebo environment using the Open Manipulator Controller, the controller must set the **use_platform** parameter to **false** because it needs to send messages to gazebo instead of Platform.
+- If you want to manipulate the OpenManipulator using Moveit within the Gazebo simulator, you should also convert the **use_moveit** to **ture** in open_manipulator_controller launch file.
+{% endcapture %}
+<div class="notice--info">{{ notice_01 | markdownify }}</div>
 
 If the OpenManipulator controller for gazebo simulation Launched successfully, the terminal will represent below messages.
 
@@ -1137,6 +1202,10 @@ This API supports Dynamixel, Dynamixel X including protocol 1.0 and 2.0. Further
 User can make thier code in **Arduino IDE** and simulate or control using **Processing** GUI.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fT1Wv6qHknI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+**NOTE**: OpenManipulator controller with OpenCR does not use ROS 
+The way OpenManipulator is controlled by OpenCR (embedded system) and ROS is completely different. In the method using ROS, the controller runs in PC, but in OpenCR control, the controller runs in OpenCR without ROS. 
+{: .notice--info}
 
 ## [Setup](#setup) 
 

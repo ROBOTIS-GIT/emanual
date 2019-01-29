@@ -13951,9 +13951,6 @@ openmanipulator:
             url: /platform/openmanipulator/#manipulator-description
           - title: "RViz"
             url: /platform/openmanipulator/#rviz
-  - title: "Basic Manipulation"
-    url: /platform/openmanipulator/#basic-manipulation
-    children:
       - title: "Message List"
         url: /platform/openmanipulator/#message-list
         children:
@@ -13961,6 +13958,9 @@ openmanipulator:
             url: /platform/openmanipulator/#topic
           - title: "Service"
             url: /platform/openmanipulator/#service
+  - title: "Basic Manipulation"
+    url: /platform/openmanipulator/#basic-manipulation
+    children:
       - title: "GUI Program"
         url: /platform/openmanipulator/#gui-program
       - title: "Teleoperation"
