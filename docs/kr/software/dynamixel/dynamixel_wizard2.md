@@ -77,13 +77,13 @@ sidebar:
 
 ![](/assets/images/sw/dynamixel/wizard2/wizard2_main_002.png)
 
-## [그래프창](#그래프창)
+## [그래프 창](#그래프-창)
 
 표시항목을 설정하면 실시간으로 변화되는 값을 확인할 수 있습니다. 그래프 표시 항목 설정 방법은 [기본 기능 - 그래프]를 참고하세요
 
 ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_001.png)
 
-## [패킷창](#패킷창)
+## [패킷 창](#패킷-창)
 
 선택한 프로토콜 버전의 Instruction패킷을 직접 생성하여 전송해볼 수 있습니다. 또한 패킷통신목록에서 항목을 선택하면 상세정보를 확인할 수 있습니다.
 
@@ -94,7 +94,7 @@ sidebar:
 다운받은 설치파일을 실행합니다.  
 안내에 따라 `Next`버튼을 눌러 설치를 진행합니다.
 
-![](/assets/images/sw/wizard2/wizard2_setup_win_01.png)
+![](/assets/images/sw/dynamixel/wizard2/wizard2_setup_win_01.png)
 
 # [다이나믹셀 위자드 2.0 제거](#다이나믹셀-위자드-20-제거)
 
@@ -104,7 +104,7 @@ sidebar:
 
 2. `Remove all components`를 선택하고 `Next`버튼을 눌러 제거를 진행합니다.
 
-    ![](/assets/images/sw/wizard2/wizard2_setup_win_04.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_setup_win_04.png)
 
 ## [리눅스에서 제거하기](#리눅스에서-제거하기)
 
@@ -112,7 +112,7 @@ sidebar:
 
 2. `Remove all components`를 선택하고 `Next`버튼을 눌러 제거를 진행합니다.
 
-    ![](/assets/images/sw/wizard2/wizard2_setup_linux_03.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_setup_linux_03.png)
 
 # [기본 기능](#기본-기능)
 
@@ -130,7 +130,7 @@ sidebar:
 
 3. 순서대로 검색할 프로토콜 버전, 통신포트, 통신속도, ID범위를 설정하고 `OK` 버튼을 클릭합니다. 항목을 적게 설정할수록 검색시간이 단축됩니다.
 
-### [다이나믹셀 검색 하기](#다이나믹셀-검색-하기)
+### [다이나믹셀 검색하기](#다이나믹셀-검색하기)
 
 1. 메인 메뉴에서 `Device` > `Scan` 을 선택하면 다이나믹셀 검색을 시작합니다.
 

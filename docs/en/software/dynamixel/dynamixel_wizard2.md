@@ -94,120 +94,125 @@ Detailed packet data can be loaded by selecting a packet in the packet history.
 
 ![](/assets/images/sw/dynamixel/wizard2/wizard2_packet_001.png)
 
-# [다이나믹셀 위자드 2.0 설치](#다이나믹셀-위자드-20-설치)
+# [Software Installation](#software-installation)
 
-다운받은 설치파일을 실행합니다.  
-안내에 따라 `Next`버튼을 눌러 설치를 진행합니다.
+Execute downloaded install file.  
+Click on `Next` button to proceed installation.
 
-![](/assets/images/sw/wizard2/wizard2_setup_win_01.png)
+![](/assets/images/sw/dynamixel/wizard2/wizard2_setup_win_01.png)
 
-# [다이나믹셀 위자드 2.0 제거](#다이나믹셀-위자드-20-제거)
+# [Uninstall Software](#uninstall-software)
 
-## [윈도우에서 제거하기](#윈도우에서-제거하기)
+## [Uninstall: Windows](#uninstall-windows)
 
-1. 윈도우 설정의 앱 및 기능에서 `Dynamixel Wizard 2`를 선택하고 `제거`버튼을 클릭하면 설치마법사가 시작합니다.
+1. From Windows Settings, select Apps.
 
-2. `Remove all components`를 선택하고 `Next`버튼을 눌러 제거를 진행합니다.
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_setup_win_02.png)
 
-    ![](/assets/images/sw/wizard2/wizard2_setup_win_04.png)
+2. In the Apps & features tab, find `Dynamixel Wizard 2` and select `Uninstall`.
 
-## [리눅스에서 제거하기](#리눅스에서-제거하기)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_setup_win_03.png)
 
-1. 설치된 폴더에서 `maintenancetool`을 실행합니다.
+3. Select `Remove all components` and proceed by clicking `Next` button.
 
-2. `Remove all components`를 선택하고 `Next`버튼을 눌러 제거를 진행합니다.
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_setup_win_04.png)
 
-    ![](/assets/images/sw/wizard2/wizard2_setup_linux_03.png)
+## [Uninstall: Linux](#uninstall-linux)
+
+1. From the folder where Dynamixel Wizard 2 is installed, execute `maintenancetool`.
+
+2. Select `Remove all components` and click `Next` to proceed..
+
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_setup_linux_03.png)
 
 # [Basic Features](#basic-features)
 
 ## [Connect DYNAMIXEL](#connect-dynamixel)
 
-### [다이나믹셀 검색 설정](#검색-설정)
+### [DYNAMIXEL Scan Options](#dynamixel-scan-options)
 
-1. 메인 메뉴에서 `Tools` > `Options` 를 선택하면 설정창이 나타납니다.
+1. Go to `Tools` > `Options` or use shortcut key `F4`.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_011.png)
 
-2. 설정창의 좌측 목록에서 `Scan` 항목을 선택하면 검색 설정이 나타납니다.
+2. Select `Scan` from the left column menu to display scan options.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_options_001.png)
 
-3. 순서대로 검색할 프로토콜 버전, 통신포트, 통신속도, ID범위를 설정하고 `OK` 버튼을 클릭합니다. 항목을 적게 설정할수록 검색시간이 단축됩니다.
+3. Select Protocol version, communication ports, baudrates, and the range of ID to scan. Click `OK` to confirm the selection.  
+  Selecting less option reduces time to scan DYNAMIXEL.
 
-### [다이나믹셀 검색 하기](#다이나믹셀-검색-하기)
+### [Scan DYNAMIXEL](#scan-dynamixel)
 
-1. 메인 메뉴에서 `Device` > `Scan` 을 선택하면 다이나믹셀 검색을 시작합니다.
+1. Go to `Device` > `Scan` to start searching connected DYNAMIXELs.
 
-    **참고** : 만약, 해당 통신 포트에 연결을 실패하면 사용중인 프로그램을 찾아 사용을 해제해야 합니다.  
-    {: .notice}  
+    **NOTE** : If communication ports are already used in other programs and fail to open, the ports should be released from other programs.
+    {: .notice}
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_012.png)
 
-2. 검색되는 다이나믹셀을 왼쪽의 장치목록에서 확인할 수 있습니다.  
+2. Detected DYNAMIXELs are listed on the left column.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_001.png)
 
 ## [DYNAMIXEL Control Table](#dynamixel-control-table)
 
-1. 검색이 완료되면, 검색된 다이나믹셀은 왼쪽 장치목록에 출력됩니다.
-
-2. 장치목록은 포트, 통신속도, 장치 순으로 분류합니다. 테스트할 그룹이나 장치를 선택합니다.  
+1. Detected DYNAMIXELs are classified according to communication ports, baudrates, and products. Select a group or device to run the test.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_002.png)
 
-3. 부가 메뉴에서 `Factory Reset` 버튼을 클릭하면 제품을 공장 초기화 상태로 되돌릴 수 있습니다(이때, ID와 Baudrate 값은 변경하지 않습니다).  
-  부가 메뉴에서 `Reboot` 버튼을 클릭하면 해당 다이나믹셀을 재부팅할 수 있습니다.  
-  부가 메뉴에서 `Torque` 버튼을 클릭하면 해당 다이나믹셀의 토크를 켜거나 끌 수 있습니다.  
-  부가 메뉴에서 `LED` 버튼을 클릭하면 해당 다이나믹셀의 LED를 켜거나 끌 수 있습니다.  
+2. `Factory Reset` button in the Sub Menu on the right column will reset the DYNAMIXEL to factory status(ID and Baudrate will not be reset).  
+  `Reboot` button will soft reset the DYNAMIXEL.  
+  `Torque` switch will toggle the Torque of DYNAMIXEL.  
+  `LED` switch will toggle the LED of DYNAMIXEL.  
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_003.png)
 
-4. 부가 메뉴의 `Torque` 버튼을 클릭하여 다이나믹셀의 토크를 켭니다.
+3. Click the `Torque` button to enable DYNAMIXEL Torque.
 
-5. 컨트롤 테이블 항목에서 `Goal Position`항목을 찾아 선택합니다.
+4. Select `Goal Position` item in the control table in the middle column.
 
-6. 우측 하단의 위치 값 컨트롤을 사용하여 모터를 움직여봅니다.
+5. Position controlling interface will appear on the buttom right corner of the program.
 
-    **경고** : 값을 조정하는 과정에서 모터가 갑작스럽게 움직일 수 있으니 주의하세요.  
+    **WARNING** : Please be cautious when changing values as DYNAMIXEL can rotate or move.  
     {: .notice--warning}
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_004.png)
 
-7. 좌측 하단의 `통신 상태`를 통해 현재 PC와 제품의 통신이 원활히 이루어지고 있는지 확인할 수 있습니다.
+6. `Communication Status` on the buttom left corner represents communication status between PC and DYNAMIXELs.
 
-8. 좌측 하단의 `패킷 상태`를 통해 다이나믹셀의 응답상태를 확인할 수 있습니다.
+7. The `Packet Status` section indicates the status of responded packet from DYNAMIXEL.
 
-9. 부가 메뉴 하단의 `하드웨어 알람`을 통해 하드웨어의 에러상태를 확인할 수 있습니다.
+8. The `Hardware Alarm` section in the Device Status indicates hardware error status of DYNAMIXEL.
 
-10. 컨트롤 테이블에 대한 더 많은 정보를 얻으려면 각 제품의 E-Manual을 참고하세요.
+9. Please refer to e-Manual of each product for more information regarding the Control Table.
 
-11. 다음의 메뉴를 통해 컨트롤 테이블 항목들을 그룹화하여 표시할 수 있습니다.
-- Group : 컨트롤 테이블에서 선택된 항목들을 하나의 그룹으로 묶어서 접었다 펼 수 있습니다.
-- Ungroup : 선택된 그룹을 해제합니다.
+10. Below options in the Control Table allow items to be grouped or ungrouped.
+  - Group : Selected items can be grouped and folded or unfolded.
+  - Ungroup : Ungroup the selected group.
 
 ## [Graph](#graph)
 
-### [그래프 설정](#그래프-설정)
+### [Graph Options](#graph-options)
 
-1. 메인 메뉴에서 `Tools` > `Options` 를 선택하면 설정창이 나타납니다.
+1. Go to `Tools` > `Options`
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_011.png)
 
-2. 설정창의 좌측 목록에서 `Graph` 항목을 선택하면 그래프 설정이 나타납니다.
+2. Select `Graph` from the left column menu to display scan options.
 
-3. 아래 그림에 표시된 `추가` 버튼을 클릭하면 항목 추가 상자가 나타납니다.
+3. Click `+` button to add item to be plotted.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_002.png)
 
-4. 항목 추가 상자에서 순서대로 표시항목과 선 색깔, 스케일값, 보조축 사용 여부를 설정하고 `OK` 버튼을 클릭합니다.
+4. Select the control table item, scale, color, and check "Use Multi axis" to enable the secondary axis. Click `OK` to confirm the selection.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_003.png)
 
-5. 통신주기(Interval)는 1~1000ms로 설정가능합니다. 통신주기가 작을수록 더 세밀한 그래프가 표현됩니다.
+5. Communication interval can be set between 1 ~ 1000ms. Smaller interval will display refined graph.
 
-    **참고** : 실제 통신주기는 통신속도와 PC사양에 따라 달라질 수 있습니다.  
-    {: .notice}  
+    **NOTE** : The actual communication interval can differ by baudrate and the hardware spec of the PC.
+    {: .notice}
 
 6. 속도 최적화 사용여부를 설정합니다. 설정하면 선택한 항목만 읽어오므로 통신이 빨라집니다.
 
@@ -216,7 +221,7 @@ Detailed packet data can be loaded by selecting a packet in the packet history.
 
 7. 설정창의 `OK` 버튼을 클릭합니다.
 
-### [그래프 시작](#그래프-시작)
+### [Start Plotting](#start-plotting)
 
 1. 메인 메뉴에서 `View` > `Graph` 를 선택하면 그래프창이 나타납니다.
 
