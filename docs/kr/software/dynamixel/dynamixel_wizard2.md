@@ -5,7 +5,7 @@ ref: dynamixel_wizard2
 read_time: true
 share: false
 author_profile: false
-permalink: /docs/kr/software/dynamixel_wizard2/
+permalink: /docs/kr/software/dynamixel/dynamixel_wizard2/
 sidebar:
   title: 다이나믹셀 위자드 2.0
   nav: "dynamixel_wizard2"
@@ -67,7 +67,7 @@ sidebar:
 | **PRO H**        | [H42-20-S300-R]    | [H54-100-S500-R]      | [H54-200-S500-R]      |                         |                 |
 | **PRO M(A)**     | [M42-10-S260-R(A)] | [M54-40-S250-R(A)]    | [M54-60-S250-R(A)]    |                         |                 |
 | **PRO H(A)**     | [H42-20-S300-R(A)] | [H54-100-S500-R(A)]   | [H54-200-S500-R(A)]   |                         |                 |
-| **PRO+ H**       | [H42P-020-S300-R]  | [H54P-100-S500-R]     | [H54P-200-S500-R]     |                         |                 |
+| **PRO+ H**       | [H42P-020-S300-R]  | [H54P-100-S500-R]     | [H54P-100-S500-R]     |                         |                 |
 
 # [메뉴 설명](#메뉴-설명)
 
