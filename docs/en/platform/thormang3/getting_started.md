@@ -355,6 +355,11 @@ $ sudo apt install ros-kinetic-uvc-camera
 `Reference` : [http://wiki.ros.org/RealSense]
 {: .notice}
 
+#### ros_madplay_player, ros_mpg321_player  
+```
+$ sudo apt install madplay mpg321
+```
+
 
 [Install Ubuntu Desktop]: http://www.ubuntu.com/download/desktop/install-ubuntu-desktop
 [DIR-806A Product Manual]: ftp://ftp.dlink.ru/pub/Router/DIR-806A/Data_sh/
