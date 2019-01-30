@@ -35,7 +35,8 @@ External Port는 전기적으로 절연되어 있지 않기 때문에, 전기적
 
 {% if page.ref=='rh_p12_rn' or page.ref=='rh_p12_rna' %}
 ![](/assets/images/platform/rh_p12_rn/rh_p12_rn_external_port.png)
-
+{% elsif page.product_group=='dxl_pro_a' %}
+![](/assets/images/dxl/pro/pro_external_port.png)
 {% else %}
 ![](/assets/images/dxl/pro_plus/external_port.png)
 {% endif %}
