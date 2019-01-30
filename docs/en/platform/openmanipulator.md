@@ -782,19 +782,18 @@ Run rqt.
 ``` bash
 $ rqt
 ```
-![](/assets/images/platform/openmanipulator/rqt_om.png)
+ <img src="/assets/images/platform/openmanipulator/rqt_om.png" width="1000">
 
 **TIP**: If rqt is not displayed, select the `plugin` -> `Topics` -> `Topic Monitor`.
 {: .notice--success}
 
 Topics without their checkboxes clicked will not be monitored. To monitor topics, click on the checkboxes next to topic names.
 
-![](/assets/images/platform/openmanipulator/rqt_1.png)
+ <img src="/assets/images/platform/openmanipulator/rqt_1.png" width="1000">
 
 If you would like to see more detail topic message, click the `▶` button next to each checkbox.
 
-![](/assets/images/platform/openmanipulator/rqt_2.png)
-
+ <img src="/assets/images/platform/openmanipulator/rqt_2.png" width="1000">
 
 [rqt]: http://wiki.ros.org/rqt
 
@@ -811,15 +810,15 @@ A list of topics published by the open_manipulator_controller.
 
 `/open_manipulator/joint_states`([sensor_msgs/JointState]{: .popup}) is a message indicating the states of joints of OpenManipulator. **"name"** indicates joint component names.  **"effort"** shows currents of the joint Dynamixels. **"position"** and **"velocity"** indicates angles and angular velocities of joints.
 
-![](/assets/images/platform/openmanipulator/rqt_joint_states.png)
+ <img src="/assets/images/platform/openmanipulator/rqt_joint_states.png" width="1000">
 
 `/open_manipulator/gripper/kinematics_pose`([open_manipulator_msgs/KinematicsPose]{: .popup}) is a message indicating pose (position and orientation) in [task space]{: .popup}. **"position"** indicates the x, y and z values of the center of the end-effector (tool). **"Orientation"** indicates the direction of the end-effector (tool) as quaternion.
 
-![](/assets/images/platform/openmanipulator/rqt_kinematic_pose.png)
+ <img src="/assets/images/platform/openmanipulator/rqt_kinematic_pose.png" width="1000">
 
 `/open_manipulator/states`([open_manipulator_msgs/OpenManipulatorState]{: .popup}) is a message indicating the status of OpenManipulator. **"open_manipulator_actuator_state"** indicates whether the torque of the actuator(Dynamixel) is enable("ACTUATOR_ENABLE") or disable("ACTUATOR_DISABLE"). **"open_manipulator_moving_state"** indicates whether OpenManipulator is "MOVING" or "STOPPED" along the trajectory.
 
-![](/assets/images/platform/openmanipulator/rqt_states.png)
+ <img src="/assets/images/platform/openmanipulator/rqt_states.png" width="1000">
 
 #### [Subscribed Topic List](#published-topic-list)
 
@@ -833,8 +832,7 @@ The topic list is subscribed by open_manipulator_controller.
 `/open_manipulator/option`([std_msgs::String]{: .popup}) is used to set OpenManipulator options (std :: string type). 
 - **"print_open_manipulator_setting"** : request display "Manipulator Description" to open_manipulator_controller. 
 
- 
-![](/assets/images/platform/openmanipulator/rqt_option.png)
+ <img src="/assets/images/platform/openmanipulator/rqt_option.png" width="1000">
 
 
 In addition, you can monitor topics through rqt whenever you have a topic added in your controller.
