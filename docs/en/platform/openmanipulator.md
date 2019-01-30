@@ -352,6 +352,7 @@ Before you launch controller, let's check `open_manipulator_controller` launch f
 
     <group if="$(arg use_moveit)">
       <include file="$(find open_manipulator_controller)/launch/open_manipulator_moveit.launch">
+        <arg name="robot_name"      value="$(arg use_robot_name)"/>
         <arg name="sample_duration" value="$(arg moveit_sample_duration)"/>
       </include>
     </group>
@@ -1038,6 +1039,7 @@ Before you launch controller using MoveIt!, let's check `open_manipulator_contro
 
     <group if="$(arg use_moveit)">
       <include file="$(find open_manipulator_controller)/launch/open_manipulator_moveit.launch">
+        <arg name="robot_name"      value="$(arg use_robot_name)"/>
         <arg name="sample_duration" value="$(arg moveit_sample_duration)"/>
       </include>
     </group>
