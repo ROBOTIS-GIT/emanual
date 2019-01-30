@@ -537,13 +537,11 @@ In order to use the minimum communication interval(1[ms]), please follow the ins
 
 1. Open the graph options window to set `Interval` to `1ms`. Then, mark on the `Read only selected item for Speed` option.
 
-![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_005.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_005.png)
 
 2. Set the baudrate of DYNAMIXEL to maximum and set `Return Delay Time` to `0`.
 
-![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_007.png)
-
-3. Start the graph and check the interval.
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_007.png)
 
 [Basic Feature > Graph]: #graph
 [Protocol 1.0]: /docs/en/dxl/protocol1/
