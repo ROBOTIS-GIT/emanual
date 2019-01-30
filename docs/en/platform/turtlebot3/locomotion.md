@@ -102,7 +102,7 @@ With this openended component, handful of TurtleBot3 friends with various charac
 - **Type**: Segway robot
 - **Features**: Balancing with only two DYNAMIXEL by applying PID controller.
 - **Components**: Two Dynamixel X 430 Series (All for balancing), an OpenCR1.0 Board, TurtleBot3 Chassis and Battery, 3D printed chassis.
-- [BOM](https://docs.google.com/spreadsheets/d/1IEmOjpqpl2eChhDlZxerMd0W6hTqfVNaQc6Pu_3WlpM/edit#gid=2116354)
+- [BOM](https://docs.google.com/spreadsheets/d/1vbIFMRJMbyOd2D6BtwV1Ow_yBc9xRHktqZhTTmwI_l4/edit?pli=1#gid=368658157)
 - Hardware ([Onshape](http://www.robotis.com/service/download.php?no=680), [Thingiverse](https://www.thingiverse.com/thing:3069806))
 - **Software**: `Examples` → `turtlebot3` → `turtlebot3_friends` → `turtlebot3_segway`
 - **Video**:
@@ -117,7 +117,7 @@ With this openended component, handful of TurtleBot3 friends with various charac
 - **Type**: 4 Wheel parallel translation vehicle
 - **Features**: 4 Joints and 4 wheels will become a futuristic technology on transportation society by overcoming fuel-consuming mechanics.
 - **Components**: Eight Dynamixel X 430 Series (Four for steering, four for driving), an OpenCR1.0 Board, a RC100 Remote Controller with BT410 master-slave Bluetooth modules, TurtleBot3 Chassis and Battery, 3D printed chassis.
-- [BOM](https://docs.google.com/spreadsheets/d/1IEmOjpqpl2eChhDlZxerMd0W6hTqfVNaQc6Pu_3WlpM/edit#gid=598826169)
+- [BOM](https://docs.google.com/spreadsheets/d/1vbIFMRJMbyOd2D6BtwV1Ow_yBc9xRHktqZhTTmwI_l4/edit?pli=1#gid=0)
 - Hardware ([Onshape](http://www.robotis.com/service/download.php?no=681), [Thingiverse](https://www.thingiverse.com/thing:3069758))
 - **Software**: `Examples` → `turtlebot3` → `turtlebot3_friends` → `turtlebot3_conveyor`
 - **Video**:
@@ -132,7 +132,7 @@ With this openended component, handful of TurtleBot3 friends with various charac
 - **Type**: 4WD Car
 - **Features**: 4 Big wheels let it be strong in the rough terrain or even a big difference of elevation.
 - **Components**: Four Dynamixel X 430 Series (All for driving), an OpenCR1.0 Board, a RC100 Remote Controller with BT410 master-slave Bluetooth modules, TurtleBot3 Chassis and Battery, 3D printed chassis.
-- [BOM](https://docs.google.com/spreadsheets/d/1IEmOjpqpl2eChhDlZxerMd0W6hTqfVNaQc6Pu_3WlpM/edit#gid=667600885)
+- [BOM](https://docs.google.com/spreadsheets/d/1vbIFMRJMbyOd2D6BtwV1Ow_yBc9xRHktqZhTTmwI_l4/edit?pli=1#gid=46862313)
 - Hardware ([Onshape](http://www.robotis.com/service/download.php?no=682), [Thingiverse](https://www.thingiverse.com/thing:3069796))
 - **Software**: `Examples` → `turtlebot3` → `turtlebot3_friends` → `turtlebot3_monster`
 - **Video**:
@@ -147,7 +147,7 @@ With this openended component, handful of TurtleBot3 friends with various charac
 - **Type**: Caterpillar
 - **Features**: Caterpillar units which are connected and assembled on sprocket wheels make it be strong in the rough terrain.
 - **Components**: Two Dynamixel X 430 Series (All for driving), an OpenCR1.0 Board, a RC100 Remote Controller with BT410 master-slave Bluetooth modules, TurtleBot3 Chassis and Battery, Caterpillar Unit, 3D printed chassis.
-- [BOM](https://docs.google.com/spreadsheets/d/1IEmOjpqpl2eChhDlZxerMd0W6hTqfVNaQc6Pu_3WlpM/edit#gid=2000352540)
+- [BOM](https://docs.google.com/spreadsheets/d/1vbIFMRJMbyOd2D6BtwV1Ow_yBc9xRHktqZhTTmwI_l4/edit?pli=1#gid=146214313)
 - Hardware ([Onshape](http://www.robotis.com/service/download.php?no=683), [Thingiverse](https://www.thingiverse.com/thing:3069755))
 - **Software**: `Examples` → `turtlebot3` → `turtlebot3_friends` → `turtlebot3_tank`
 - **Video**:
@@ -162,7 +162,7 @@ With this openended component, handful of TurtleBot3 friends with various charac
 - **Type**: Omni wheel
 - **Features**: Omni wheels have additional discs around the circumference make it laterally driveable.
 - **Components**: Three Dynamixel X 430 Series (All for driving), an OpenCR1.0 Board, a RC100 Remote Controller with BT410 master-slave Bluetooth modules, TurtleBot3 Chassis and Battery, 3D printed chassis.
-- [BOM](https://docs.google.com/spreadsheets/d/1IEmOjpqpl2eChhDlZxerMd0W6hTqfVNaQc6Pu_3WlpM/edit#gid=62380643)
+- [BOM](https://docs.google.com/spreadsheets/d/1vbIFMRJMbyOd2D6BtwV1Ow_yBc9xRHktqZhTTmwI_l4/edit?pli=1#gid=381353368)
 - Hardware ([Onshape](http://www.robotis.com/service/download.php?no=684), [Thingiverse](https://www.thingiverse.com/thing:3069809))
 - **Software**: `Examples` → `turtlebot3` → `turtlebot3_friends` → `turtlebot3_omni`
 - **Video**:
@@ -177,7 +177,7 @@ With this openended component, handful of TurtleBot3 friends with various charac
 - **Type**: Mecanum wheel
 - **Features**: Mecanum wheels have additional discs around the circumference make it laterally driveable.
 - **Components**: Four Dynamixel X 430 Series (All for driving), an OpenCR1.0 Board, a RC100 Remote Controller with BT410 master-slave Bluetooth modules, TurtleBot3 Chassis and Battery, 3D printed chassis.
-- [BOM](https://docs.google.com/spreadsheets/d/1IEmOjpqpl2eChhDlZxerMd0W6hTqfVNaQc6Pu_3WlpM/edit#gid=1361078880)
+- [BOM](https://docs.google.com/spreadsheets/d/1vbIFMRJMbyOd2D6BtwV1Ow_yBc9xRHktqZhTTmwI_l4/edit#gid=953634249)
 - Hardware ([Onshape](http://www.robotis.com/service/download.php?no=685), [Thingiverse](https://www.thingiverse.com/thing:3069811))
 - **Software**: `Examples` → `turtlebot3` → `turtlebot3_friends` → `turtlebot3_mechanum`
 - **Video**: See in the video [TurtleBot3 Friends: Omni](#turtlebot3-friends-omni) above.
@@ -190,7 +190,7 @@ With this openended component, handful of TurtleBot3 friends with various charac
 - **Type**: 3-DOF Motorcycle
 - **Features**: Cute 3-wheeled bikey reveals its existence on the "Car" film as a brother of the "Car".
 - **Components**: Three Dynamixel X 430 Series (One for steering, two for driving), an OpenCR1.0 Board, a RC100 Remote Controller with BT410 master-slave Bluetooth modules, TurtleBot3 Chassis and Battery, 3D printed chassis.
-- [BOM](https://docs.google.com/spreadsheets/d/1IEmOjpqpl2eChhDlZxerMd0W6hTqfVNaQc6Pu_3WlpM/edit#gid=940977959)
+- [BOM](https://docs.google.com/spreadsheets/d/1vbIFMRJMbyOd2D6BtwV1Ow_yBc9xRHktqZhTTmwI_l4/edit?pli=1#gid=107279947)
 - Hardware ([Onshape](http://www.robotis.com/service/download.php?no=686), [Thingiverse](https://www.thingiverse.com/thing:3069817))
 - **Software**: `Examples` → `turtlebot3` → `turtlebot3_friends` → `turtlebot3_bike`
 - **Video**: See in the videos [TurtleBot3 Friends: Car](#turtlebot3-friends-car) and [TurtleBot3 Friends: monster](#turtlebot3-friends-monster) above.
@@ -203,7 +203,7 @@ With this openended component, handful of TurtleBot3 friends with various charac
 - **Type**: Road train
 - **Features**: Road train can connect vehicles and it can serve various things!
 - **Components**: Two Dynamixel X 430 Series (two for driving), an OpenCR1.0 Board, a RC100 Remote Controller with BT410 master-slave Bluetooth modules, TurtleBot3 Chassis and Battery, 3D printed chassis.
-- [BOM](https://docs.google.com/spreadsheets/d/1IEmOjpqpl2eChhDlZxerMd0W6hTqfVNaQc6Pu_3WlpM/edit#gid=1816123527)
+- [BOM](https://docs.google.com/spreadsheets/d/1vbIFMRJMbyOd2D6BtwV1Ow_yBc9xRHktqZhTTmwI_l4/edit#gid=1473715654)
 - Hardware ([Onshape](http://www.robotis.com/service/download.php?no=687), [Thingiverse](https://www.thingiverse.com/thing:3069804))
 - **Software**: `Examples` → `turtlebot3` → `turtlebot3_friends` → `turtlebot3_road_train`
 - **Video**:
@@ -218,7 +218,7 @@ With this openended component, handful of TurtleBot3 friends with various charac
 - **Type**: 8-DOF legged robot (a.k.a. Real TurtleBot)
 - **Features**: A real TurtleBot will make most of the fanpics in the turtlebot society!.
 - **Components**: Ten Dynamixel X 430 Series (Four for leg joint, another four for shoulder joint, two for head), an OpenCR1.0 Board, a RC100 Remote Controller with BT410 master-slave Bluetooth modules, TurtleBot3 Chassis and Battery, 3D printed chassis.
-- [BOM](https://docs.google.com/spreadsheets/d/1IEmOjpqpl2eChhDlZxerMd0W6hTqfVNaQc6Pu_3WlpM/edit#gid=2088315005)
+- [BOM](https://docs.google.com/spreadsheets/d/1vbIFMRJMbyOd2D6BtwV1Ow_yBc9xRHktqZhTTmwI_l4/edit#gid=1862775028)
 - Hardware ([Onshape](http://www.robotis.com/service/download.php?no=688), [Thingiverse](https://www.thingiverse.com/thing:3069748))
 - **Software**: `Examples` → `turtlebot3` → `turtlebot3_friends` → `turtlebot3_realturtlebot`
 - **Video**:
@@ -234,7 +234,7 @@ With this openended component, handful of TurtleBot3 friends with various charac
 - **Type**: 2 Wheel mobile based platform as service robot
 - **Features**: 2 wheeled mobile platform will serve whatever you wants.
 - **Components**: A TurtleBot3 Waffle, 6 supports for 4th layer, another 6 supports for 5th layer construction, extra Waffle Plates in each layers, customized 3D printed wheel and ball caster.
-- [BOM](https://docs.google.com/spreadsheets/d/1IEmOjpqpl2eChhDlZxerMd0W6hTqfVNaQc6Pu_3WlpM/edit#gid=490107710)
+- [BOM](https://docs.google.com/spreadsheets/d/1vbIFMRJMbyOd2D6BtwV1Ow_yBc9xRHktqZhTTmwI_l4/edit#gid=71921372)
 - Hardware ([Onshape](http://www.robotis.com/service/download.php?no=689), [Thingiverse](https://www.thingiverse.com/thing:3069815))
 - **Software**: `Examples` → `turtlebot3` → `turtlebot3_waffle` → `turtlebot3_waffle`
 - **Video**:
