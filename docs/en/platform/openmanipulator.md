@@ -84,6 +84,8 @@ In both case,  [SMPS 12V5A](http://www.robotis-shop-en.com/?act=shop_en.goods_vi
 
 2. [Software Setup](/docs/en/platform/openmanipulator/#pc-setup): If you want to run OpenManipulator in ROS environment, please install Linux, ROS and ROS package on PC according to [PC Setup](/docs/en/platform/openmanipulator/#pc-setup) chapter. If you want to run the OpenManipulator on an embedded system, install the software on your PC and set up OpenCR by following the [How to control on OpenCR](/docs/en/platform/openmanipulator/#how-to-control-on-opencr) chapter.
 
+<img src="/assets/images/platform/openmanipulator/OpenManipulator_all_setup.png" width="500">
+
 ## [Let's try basic manipulation](#lets-try-basic-manipulation)
 Once you have completed the above steps, run OpenManipulator through the provided Controller package. You can command the OpenManipulator to move specific position via ROS messages. As package for publishing messages, we provid the following examples.
 
@@ -115,13 +117,14 @@ OpenManipulator has a complete hardware combination with Turtlebot3 waffle. Chal
 
 - [Mobile Manipulation](/docs/en/platform/openmanipulator/#mobile-manipulation)
 
+![](/assets/images/platform/openmanipulator/OpenManipulator_application.png)
 
 ## [Let's design my own manipulator](#lets-design-my-own-manipulator)
 
 Modify the hardware(DOF, structure) and software(kinematics, trajectory) of OpenManipulator and manipulate your own OpenManipulator.  
 We provide a variety of [OpenManipulator Friends](/docs/en/platform/openmanipulator/#friends) as examples of hardware transformations. Try to control the manipulator with different structure and enjoy it. And try out the kinematics solving algorithm for the different structure.
 
-![](/assets/images/platform/openmanipulator/OpenManipulator_friends.png)
+<img src="/assets/images/platform/openmanipulator/OpenManipulator_friends.png" width="800">
 
 # [Hardware Setup](#hardware-setup)
 
@@ -178,7 +181,7 @@ We provide a variety of [OpenManipulator Friends](/docs/en/platform/openmanipula
 | **Boards** | [OpenCR](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=3289&GC=GD0B0100)     |     1      |
 | .          | [U2D2](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=3288&keyword=u2d2)       |     1      |
 | .          | [U2D2 Power Hub Board](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=3332&GC=GD0B01)       |     1      |
-| **Plate**  | Base Plate-02 |     1      |
+| **Plate**  | [Base Plate-02](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=3331) |     1      |
 | .          | .          |     1      |
 
 
@@ -1229,6 +1232,12 @@ Go to `Examples` → `OpenManipulator` → `example` → `Chain` → `open_manip
 ![](/assets/images/platform/openmanipulator/OpenManipulator_chain_arduino.png)
 
 Upload the example source to OpenCR.
+
+**Tip**: If an error of `cmd_read_board_name fail: 0xF020` occurs constantly during upload, please refer to [OpenCR e-manual](http://emanual.robotis.com/docs/en/parts/controller/opencr10/#firmware-recovery-mode) to enter the firmware recovery mode and upload the source code again after entering mode.
+. 
+{: .notice--success}
+
+
 
 ## [Processing](#processing)
 
