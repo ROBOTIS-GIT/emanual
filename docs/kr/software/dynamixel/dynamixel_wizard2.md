@@ -3,7 +3,7 @@ layout: archive
 lang: kr
 ref: dynamixel_wizard2
 read_time: true
-share: false
+share: true
 author_profile: false
 permalink: /docs/kr/software/dynamixel/dynamixel_wizard2/
 sidebar:
