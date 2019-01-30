@@ -323,8 +323,11 @@ ul > li > ul {
 }
 
 img {
-  border: 1px solid #999;
+  max-width: 100%;
+  height: auto;
+  padding: 1em;
   border-radius: $img-border-radius;
+  background: #fafafa;
 }
 
 blockquote {
