@@ -46,21 +46,18 @@ The OpenManipulator has the advantage of being compatible with TurtleBot3 Waffle
 
 ## [Software Setup](#software-setup)
 
+**NOTE**: Before you make `open_manipulator_with_tb3`, please make sure `turtlebot3` and `open_manipulator` packages have been installed previously.
+{: .notice--info}
+
 - Install dependent packages for the OpenManipulator.
 
   ```bash
-  $ sudo apt-get install ros-kinetic-ros-controllers ros-kinetic-gazebo* ros-kinetic-moveit* ros-kinetic-dynamixel-sdk ros-kinetic-dynamixel-workbench-toolbox ros-kinetic-ar-track-alvar ros-kinetic-ar-track-alvar-msgs ros-kinetic-industrial-core
-  ```
-
-  ```bash
   $ cd ~/catkin_ws/src/
-  $ git clone https://github.com/ROBOTIS-GIT/open_manipulator.git
-  $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_msgs.git
-  $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_perceptions.git
   $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_with_tb3.git
   $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_with_tb3_msgs.git
   $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_with_tb3_simulations.git
-  $ git clone https://github.com/ROBOTIS-GIT/turtlebot3.git
+  $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_perceptions.git
+  $ sudo apt-get install ros-kinetic-smach*
   $ cd ~/catkin_ws && catkin_make
   ```
 
@@ -108,26 +105,26 @@ The OpenManipulator has the advantage of being compatible with TurtleBot3 Waffle
   **NOTE**: If error occurs while uploading firmware, go to `Tools` → `Port` and check if correct port is selected. Press `Reset` button on the OpenCR and try to upload the firmware again.
   {: .notice--info}
 
+  **TIP**: The Dynamixel ids can be changed in [`open_manipulator_driver.h`][manipulator_id] in turtlebot3_with_open_manipulator folder 
+  {: .notice--success}
+
 - When firmware upload is completed, `jump_to_fw` text string will be printed on the screen.
 
 ## [Bringup](#bringup)
 
-- Bringup TurtleBot3 with OpenManipulator.
-
-  - [Bringup TurtleBot3](/docs/en/platform/turtlebot3/bringup/#bringup-turtlebot3)
-
-- Launch `open_manipulator_with_tb3_model` file.
+  **NOTE**: Please double check the OpenCR usb port name in [`turtlebot3_core.launch][turtlebot3_core]
+  {: .notice--info}
 
   ```bash
   $ export TURTLEBOT3_MODEL=${TB3_MODEL}
-  $ roslaunch open_manipulator_with_tb3_description open_manipulator_with_tb3_model.launch use_gazebo:=false
+  $ roslaunch open_manipulator_with_tb3_tools robot.launch
   ```
 
 ## [SLAM](#slam)
 
 ```bash
 $ export TURTLEBOT3_MODEL=${TB3_MODEL}
-$ roslaunch open_manipulator_with_tb3_tools open_manipulator_with_tb3_slam.launch use_gazebo:=false open_rviz:=true
+$ roslaunch open_manipulator_with_tb3_tools slam.launch use_gazebo:=false
 ```
 
 ![](/assets/images/platform/turtlebot3/manipulation/open_manipulator_slam.png)
@@ -136,18 +133,10 @@ $ roslaunch open_manipulator_with_tb3_tools open_manipulator_with_tb3_slam.launc
 
 ```bash
 $ export TURTLEBOT3_MODEL=${TB3_MODEL}
-$ roslaunch open_manipulator_with_tb3_tools open_manipulator_with_tb3_navigation.launch use_gazebo:=false open_rviz:=true
+$ roslaunch open_manipulator_with_tb3_tools navigation.launch use_gazebo:=false
 ```
 
 ![](/assets/images/platform/turtlebot3/manipulation/open_manipulator_navigation.png)
-
-## [Find AR marker](#find-ar-marker)
-
-- We used the [ar_track_alvar](http://wiki.ros.org/ar_track_alvar) package to get the pose of the AR marker.
-
-  ```bash
-  $ roslaunch open_manipulator_ar_markers ar_pose.launch
-  ```
 
 ## [MoveIt!](#moveit)
 
@@ -155,7 +144,7 @@ $ roslaunch open_manipulator_with_tb3_tools open_manipulator_with_tb3_navigation
 
   ```bash
   $ export TURTLEBOT3_MODEL=${TB3_MODEL}
-  $ roslaunch open_manipulator_with_tb3_tools open_manipulator_with_tb3_manipulation.launch use_gazebo:=false open_rviz:=true
+  $ roslaunch open_manipulator_with_tb3_tools manipulation.launch use_gazebo:=false
   ```
 
   ![](/assets/images/platform/turtlebot3/manipulation/open_manipulator_moveit_sim_1.jpg)
@@ -164,23 +153,19 @@ $ roslaunch open_manipulator_with_tb3_tools open_manipulator_with_tb3_navigation
 
 - In order to control gripper of OpenManipulator, please use topic publish with the command below in a new terminal window.
 
-  ```
-  $ rostopic pub /open_manipulator_with_tb3/gripper std_msgs/String "data: 'grip_off'" --once
+  ```bash
+  $ rosservice call /om_with_tb3/gripper "planning_group: ''
+  joint_position:
+    joint_name:
+    - ''
+    position:
+    - 0.15
+    max_accelerations_scaling_factor: 0.0
+    max_velocity_scaling_factor: 0.0
+  path_time: 0.0"
   ```
 
   ![](/assets/images/platform/turtlebot3/manipulation/open_manipulator_gripper.png)
-
-## [Pick and Place](#pick-and-place)
-
-We provide the pick and place example for mobile manipulation. This example is launched by controller that is to automatically start and stop navigation stack, MoveIt!, pick and place launch file by communicating ROS messages. User can modified this node to apply their environments.
-
-```bash
-$ roslaunch open_manipulator_with_tb3_tools open_manipulator_with_tb3_controller.launch
-```
-
-![](/assets/images/platform/turtlebot3/manipulation/open_manipulator_pick.png)
-
-![](/assets/images/platform/turtlebot3/manipulation/open_manipulator_place.png)
 
 ## [Simulation](#simulation)
 
@@ -188,7 +173,7 @@ $ roslaunch open_manipulator_with_tb3_tools open_manipulator_with_tb3_controller
 
   ```bash
   $ export TURTLEBOT3_MODEL=${TB3_MODEL}
-  $ roslaunch open_manipulator_with_tb3_gazebo open_manipulator_with_tb3_gazebo.launch
+  $ roslaunch open_manipulator_with_tb3_gazebo empty_world.launch
   ```
 
   ![](/assets/images/platform/turtlebot3/manipulation/open_manipulator_gazebo_1.png)
@@ -200,62 +185,99 @@ $ roslaunch open_manipulator_with_tb3_tools open_manipulator_with_tb3_controller
   ```
 
   ``` bash
-  /camera/parameter_descriptions
-  /camera/parameter_updates
-  /camera/rgb/camera_info
-  /camera/rgb/image_raw
-  /camera/rgb/image_raw/compressed
-  /camera/rgb/image_raw/compressed/parameter_descriptions
-  /camera/rgb/image_raw/compressed/parameter_updates
-  /camera/rgb/image_raw/compressedDepth
-  /camera/rgb/image_raw/compressedDepth/parameter_descriptions
-  /camera/rgb/image_raw/compressedDepth/parameter_updates
-  /camera/rgb/image_raw/theora
-  /camera/rgb/image_raw/theora/parameter_descriptions
-  /camera/rgb/image_raw/theora/parameter_updates
   /clock
-  /cmd_vel
   /gazebo/link_states
   /gazebo/model_states
+  /gazebo/parameter_descriptions
+  /gazebo/parameter_updates
   /gazebo/set_link_state
   /gazebo/set_model_state
-  /grip_joint_position/command
-  /grip_joint_position/pid/parameter_descriptions
-  /grip_joint_position/pid/parameter_updates
-  /grip_joint_position/state
-  /grip_joint_sub_position/command
-  /grip_joint_sub_position/pid/parameter_descriptions
-  /grip_joint_sub_position/pid/parameter_updates
-  /grip_joint_sub_position/state
-  /imu
-  /joint1_position/command
-  /joint1_position/pid/parameter_descriptions
-  /joint1_position/pid/parameter_updates
-  /joint1_position/state
-  /joint2_position/command
-  /joint2_position/pid/parameter_descriptions
-  /joint2_position/pid/parameter_updates
-  /joint2_position/state
-  /joint3_position/command
-  /joint3_position/pid/parameter_descriptions
-  /joint3_position/pid/parameter_updates
-  /joint3_position/state
-  /joint4_position/command
-  /joint4_position/pid/parameter_descriptions
-  /joint4_position/pid/parameter_updates
-  /joint4_position/state
-  /joint_states
-  /odom
+  /gazebo_gui/parameter_descriptions
+  /gazebo_gui/parameter_updates
+  /gazebo_ros_control/pid_gains/gripper/parameter_descriptions
+  /gazebo_ros_control/pid_gains/gripper/parameter_updates
+  /gazebo_ros_control/pid_gains/gripper/state
+  /gazebo_ros_control/pid_gains/gripper_sub/parameter_descriptions
+  /gazebo_ros_control/pid_gains/gripper_sub/parameter_updates
+  /gazebo_ros_control/pid_gains/gripper_sub/state
+  /gazebo_ros_control/pid_gains/joint1/parameter_descriptions
+  /gazebo_ros_control/pid_gains/joint1/parameter_updates
+  /gazebo_ros_control/pid_gains/joint1/state
+  /gazebo_ros_control/pid_gains/joint2/parameter_descriptions
+  /gazebo_ros_control/pid_gains/joint2/parameter_updates
+  /gazebo_ros_control/pid_gains/joint2/state
+  /gazebo_ros_control/pid_gains/joint3/parameter_descriptions
+  /gazebo_ros_control/pid_gains/joint3/parameter_updates
+  /gazebo_ros_control/pid_gains/joint3/state
+  /gazebo_ros_control/pid_gains/joint4/parameter_descriptions
+  /gazebo_ros_control/pid_gains/joint4/parameter_updates
+  /gazebo_ros_control/pid_gains/joint4/state
+  /om_with_tb3/camera/parameter_descriptions
+  /om_with_tb3/camera/parameter_updates
+  /om_with_tb3/camera/rgb/camera_info
+  /om_with_tb3/camera/rgb/image_raw
+  /om_with_tb3/camera/rgb/image_raw/compressed
+  /om_with_tb3/camera/rgb/image_raw/compressed/parameter_descriptions
+  /om_with_tb3/camera/rgb/image_raw/compressed/parameter_updates
+  /om_with_tb3/camera/rgb/image_raw/compressedDepth
+  /om_with_tb3/camera/rgb/image_raw/compressedDepth/parameter_descriptions
+  /om_with_tb3/camera/rgb/image_raw/compressedDepth/parameter_updates
+  /om_with_tb3/camera/rgb/image_raw/theora
+  /om_with_tb3/camera/rgb/image_raw/theora/parameter_descriptions
+  /om_with_tb3/camera/rgb/image_raw/theora/parameter_updates
+  /om_with_tb3/cmd_vel
+  /om_with_tb3/gripper_position/command
+  /om_with_tb3/gripper_sub_position/command
+  /om_with_tb3/imu
+  /om_with_tb3/joint1_position/command
+  /om_with_tb3/joint2_position/command
+  /om_with_tb3/joint3_position/command
+  /om_with_tb3/joint4_position/command
+  /om_with_tb3/joint_states
+  /om_with_tb3/odom
+  /om_with_tb3/scan
   /rosout
   /rosout_agg
-  /scan
   /tf
+  /tf_static
   ```
 
 - OpenManipulator in Gazebo is controllered by ROS message. For example, to use below command make publish joint position (radian).
 
   ```bash
-  $ rostopic pub /joint4_position/command std_msgs/Float64 "data: 0.21" --once
+  $ rostopic pub /om_with_tb3/joint4_position/command std_msgs/Float64 "data: -0.21" --once
   ```
 
+## [Pick and Place](#pick-and-place)
+
+We provide the pick and place example for mobile manipulation. This example is used [smach][smach](task-level architecture) to send action to robot.
+
+### Bringup gazebo simulator
+
+```bash
+$ roslaunch open_manipulator_with_tb3_gazebo rooms.launch
+```
+
+### Launch navigation, moveIt!
+
+```bash
+$ roslaunch open_manipulator_with_tb3_tools rooms.launch 
+```
+
+### Launch task controller
+
+```bash
+$ roslaunch open_manipulator_with_tb3_tools task_controller.launch 
+```
+**TIP**: Smach provides state graph. Try to run smach viewer and how to robot can pick and place. `rosrun smach_viewer smach_viewer.py`
+{: .notice--success}
+
+![](/assets/images/platform/turtlebot3/manipulation/open_manipulator_pick.png)
+
+![](/assets/images/platform/turtlebot3/manipulation/open_manipulator_place.png)
+
+
 [export_turtlebot3_model]: /docs/en/platform/turtlebot3/export_turtlebot3_model
+[manipulator_id]: https://github.com/ROBOTIS-GIT/OpenCR/blob/ef4e71be84dd899b03e359703be93c5000c5954a/arduino/opencr_arduino/opencr/libraries/turtlebot3/examples/turtlebot3_with_open_manipulator/turtlebot3_with_open_manipulator_core/open_manipulator_driver.h#L27
+[turtlebot3_core]: https://github.com/ROBOTIS-GIT/turtlebot3/blob/467c76bc4fa2e34162f57107388839d82d3bcc0e/turtlebot3_bringup/launch/turtlebot3_core.launch#L5
+[smach]: http://wiki.ros.org/smach

@@ -14,6 +14,11 @@ The Control Table is a structure of data implemented in the device. Users can re
 {: .notice--warning}
 {% assign torque_enable= "512" %}
 
+{% elsif page.product_group=='rh_p12_rna' %}
+**WARNING** : RH-P12-RN(A) uses different Control Table from RH-P12-RN. Please pay attention when upgrading RH-P12-RN to RH-P12-RN(A).
+{: .notice--warning}
+{% assign torque_enable= "512" %}
+
 {% elsif page.product_group=='dxl_pro' %}
 {% assign torque_enable= "562" %}
 
@@ -27,7 +32,7 @@ The Control Table is a structure of data implemented in the device. Users can re
 <div class="notice--warning">{{ mx2_control_table | markdownify }}</div>
 {% assign torque_enable= "64" %}
 
-{% elsif page.product_group=='dxl_x' %}
+{% elsif page.product_group=='dxl_x430' or page.product_group=='dxl_x540' %}
 {% assign torque_enable= "64" %}
 
 {% elsif page.product_group=='dxl_xl320' %}

@@ -18,22 +18,22 @@ sidebar:
 ## [Fuse Replacement](#fuse-replacement)
 
 There may be a time when you turn the rocker switch on DARWIN-OP may not power up at all regardless of power source (DC, battery). If that's the case then this is most likely caused by a blown or defective fuse.
- 
+
 The fuse is rated at 12V (volts) and 10A (amps).   
 Replacing the fuse requires requires disassembly of DARWIN-OP's main body and expose the sub-controller CM-730.   
 Once the sub-controller is exposed locate the fuse. The diagram below shows the fuse location enclosed by the red rectangle.
- 
+
 ![](/assets/images/platform/op/op_231.jpg)
- 
+
 Carefully remove the fuse with a pair of tweezers. Afterwards carefully insert a new fuse.
- 
+
 **WARNING** : Improper care during removal or insertion of the fuse may result in damage(s) to the fuse housing or/and other components of the sub-controller Cm-730.
 {: .notice--warning}
 
 ## [Hardware Maintenance](#hardware-maintenance)
 
 You can find [Assembly], [Wiring] and [Fabrication] manuals here courtesy of [RoMeLa].
- 
+
 [Assembly]: http://excellmedia.dl.sourceforge.net/project/darwinop/Hardware/Mechanics/Physical%20Information/DARwIn%20OP%20Assembly%20Manual.pdf
 [Wiring]: http://excellmedia.dl.sourceforge.net/project/darwinop/Hardware/Mechanics/Physical%20Information/DARwIn%20OP%20Wiring%20Manual.pdf
 [Fabrication]: http://excellmedia.dl.sourceforge.net/project/darwinop/Hardware/Mechanics/Physical%20Information/DARwIn%20OP%20Fabrication%20Manual.pdf
@@ -56,7 +56,7 @@ Overtightening is not necessary and may be counterproductive as it may damage th
 Remove the battery.  
 Remove the plastic skin on DARWIN-OP. This includes the head and body.  
 If your DARWIN-OP includes FSR units on its feet then you should also remove the plastic casing from the feet.
- 
+
 ### Divide DARWIN-OP into the following groups/sections
 
 - Upper body and neck (ID 1, 2, and 19) frames (2 elbow/shoulder, neck, sub controller, 4 short inter-actuator)  
@@ -71,13 +71,13 @@ If your DARWIN-OP includes FSR units on its feet then you should also remove the
 - Each thigh (ID 11 right thigh, ID 12 left thigh) frames (2 actuator lateral, thigh)
 - Knee and lower leg (ID 13, 15 right, ID 14, 16 left) frames (leg, actuator lateral
 - Foot (ID 17 right, ID 18 left) frame (2 long inter actuator, foot, ankle
- 
+
 ### Wiring
 
 Ensure that all connections are properly secured.  
 Ensure that the long cables are laid flat free of twists.  
 Replace cables whenever the protective coat has a cut leaving the wire(s) exposed to air.
- 
+
 ### Cleaning
 
 Please ensure that the actuators, main controller and sub controller are free of dust. Although dust may not harm the internal components of both main controller and sub controller under dry condition, humidity may cause static potentially doing costly permanent damage to the controllers.  
@@ -89,7 +89,7 @@ There may be an instance where you will need to replace a Dynamixel actuator due
 To replace an MX-28 on DARWIN-OP you need to complete the following procedures.
 1. Proper installation of horn, bearing set to the new MX-28.
 2. Proper ID and baud rate setting.
- 
+
 Please refer to the [Assembly Guide](http://sourceforge.net/projects/darwinop/files/Hardware/Mechanics/Physical%20Information/) for reference during replacement procedure.
 
 ### Proper Installation of Horn and Bearing Set
@@ -139,15 +139,15 @@ You have USB2Dynamixel and a Robotis dedicated robot controller (CM-5, CM-510, o
 Click [Dynamixel Wizard] for more information.
 
 [Dynamixel Wizard]: /docs/en/software/rplus1/dynamixe_wizard/
- 
+
 #### Method B
 You have USB2Dynamixel but do not have a Robotis dedicated robot controller (CM-5, CM-510, or CM-700).
 
 Steps 2 through 5 from Method A remains unchanged. Step 1 needs to be modified for proper power supply.  
 You will need 2 separate 3-pin TTL cables (they come supplied with every DARWIN-OP). The following procedure is recommended:
- 
+
 1. Open the Interface panel of DARWIN-OP (back cover). Carefully remove the plastic back panel to prevent any damages to the interface board cables.
- 
+
 2. Disconnect both Interface Board cables.
 
   ![](/assets/images/platform/op/op_233.jpg)
@@ -157,16 +157,16 @@ You will need 2 separate 3-pin TTL cables (they come supplied with every DARWIN-
   ![](/assets/images/platform/op/op_234.jpg)
 
   ![](/assets/images/platform/op/op_235.jpg)
- 
+
 4. Connect a spare TTL cable to any open port and the other end to the new MX-28.
- 
+
 5. Connect a second TTL cable to the other port of the MX-28. Connect the other end of the cable to the USB2Dynamixel controller. Afterwards connect USB2Dynamixel to the PC.
 
   ![](/assets/images/platform/op/op_236.jpg)
- 
+
 6. Turn the switch on on DARWIN-OP and let Ubuntu load (this process may take up to 2 minutes).  
   **NOTE** : The head LED will remain green and will not turn amber. The demo program will not run automatically.
- 
+
 7. Connect to DARWIN-OP and run Dynamixel Monitor.  
   Once Dynamixel Monitor is running all actuators will show as "fail" even with the new MX-28 connected. Do not exit Dynamixel Monitor. Leave the program running.
 
@@ -175,11 +175,11 @@ You will need 2 separate 3-pin TTL cables (they come supplied with every DARWIN-
 8. On Windows run Dynamixel Wizard.  
   Change address 4 (baud rate) from the default value of 34 to 1. You must perform this operation with Dynamixel Wizard as Dynamixel Monitor does not support this function currently. If you do not change the baud rate then Dynamixel Monitor will fail to scan the actuator.
   Change address 3 (ID) from the default value of 1 to the desired value. You may also use Dynamixel Monitor to change ID as well.
- 
+
   ![](/assets/images/platform/op/op_238.jpg)
 
   **NOTE** : RoboPlus Manager does not currently support the CM-730 controller because it lacks the Serial Connector input.
- 
+
 Once the baud rate value is set to 1 you may return to Dynamixel Monitor and type scan to verify success on baud rate change (the first attempt may show the new actuator as "fail" if so type scan again until "OK" shows on screen).
 
 ![](/assets/images/platform/op/op_239.jpg)
@@ -191,7 +191,7 @@ Once connections are restored return to [DXL Monitor] and reset all Dynamixels.
 [Shut down DARWIN-OP]: /docs/en/platform/op/getting_started/#shutdown
 
 If you are replacing 2 or more Dynamixel then you must perform this procedure again as Dynamixel Wizard will show errors when multiple Dynamixels with the same ID and same baud rate are connected.  
-Once the actuator has been replaced it is highly recommended that you update the firmware with Firmware Installer so that ALL Dynamixels are matched with the same firmware. 
+Once the actuator has been replaced it is highly recommended that you update the firmware with Firmware Installer so that ALL Dynamixels are matched with the same firmware.
 
 #### Method C
 You do not have USB2Dynamixel controller nor a Robotis dedicated robot controller (CM-5, CM-510, or CM-700).
@@ -205,7 +205,7 @@ If so let's assume we need to replace the right elbow (ID 5) and already replace
 1. Run [DXL Monitor] You will see the following appear on screen
 
   ![](/assets/images/platform/op/op_240.jpg)
-  
+
   > Despite installing the new actuator replacement for ID 5 the software still displays as "fail." Now its time to make the proper changes.
 
 2. Go to ID 1 by typing id 1 and temporarily assign a different ID number. You may assign numbers between 21 and 199 but refrain from numbers between 1 and 20.
@@ -253,12 +253,12 @@ let's say change to 39 so type **wr 3 39**.
   ![](/assets/images/platform/op/op_248.jpg)
 
 15. Run **reset all** and all DARWIN-OP will be back to normal again.
- 
+
 Repeat the same procedure again if replacing more than 1 actuator.
- 
+
 ##### Example 2
 Replace the the right elbow (ID 5) with a new actuator with less software manipulation.
- 
+
 Just like Method B disconnect all Dynamixels from the CM-730 but do not disconnect the power from CM-730 to Main Controller.   
 However in this case instead of the need for 2 3-pin TTL cables you'll only need 1.
 
@@ -276,7 +276,7 @@ However in this case instead of the need for 2 3-pin TTL cables you'll only need
 6. Go to ID 1. Change the baud rate of ID 1 from 57,600 bps to 1 Mbps by typing **wr 4 1**
 
   ![](/assets/images/platform/op/op_251.jpg)
-  
+
 7. Return to ID 200 and change the baud rate back to 1 Mbps
 
   ![](/assets/images/platform/op/op_252.jpg)
@@ -292,15 +292,15 @@ For multiple Dynamixels, you may only repeat steps 3 through 9. You can disconne
 
 Once done replacing Dynamixel(s) and settings set appropriately run [Firmware Installer]. Select option 2 and you are done. This is an important final step because it sets the angle limits on the joints.  
 DARWIN-OP is back to normal again.
- 
+
 `Example 1` requires less hardware work but more programming work, as well as keeping careful track of changes made during programming and repeating the entire process for multiple Dynamixels.  
 `Example 2` requires more hardware work (unscrewing/screwing disconnecting/connecting), but less on software work.
 
 Pick the method that most convenient for you.
- 
+
 **NOTE** : The reset all procedure at the end is necessary because DXL Monitor will set the angle limits on all Dynamixels. Setting angle limits is a robot safety mechanism to prevent joints from overextending, therefore preventing damage to the robot.
 {: .notice}
- 
+
 Pressing the reset button on DARWIN-OP will reset settings of the sub-controller CM-730 to default values. For example:
 - If the CM-730 has the baud rate changed from 1 Mpbs to 576000 bps, pressing the reset button will change the baud rate back to 1Mpbs (default).
 - If the eye LED has been changed from blue to orange, pressing the reset button will change the color back to blue (default).
@@ -324,7 +324,7 @@ If problem persists contact ROBOTIS for an RMA Procedure.
 ## [Camera Connection](#camera-connection)
 
 There may be an instance when DARWIN-OP's main controller may lose connection with the camera. Please ensure that the USB camera cable is properly connected to the the camera and main controller.
- 
+
 To verify camera connection with Linux OS perform the following.
 1. On a terminal window go to the '**/dev**' directory.
 2. Type **ls** and you'll see a list of devices and look for '**video0**' This is the camera as an USB device.
@@ -332,7 +332,7 @@ To verify camera connection with Linux OS perform the following.
 ![](/assets/images/platform/op/op_254.jpg)
 
 If you do not see a '**video0**' device then you may need to replace the camera cable and/or camera. in such case you may replace the USB cable, the camera, or contact ROBOTIS for an arrangement.
- 
+
 **NOTE** : If you lose physical(mechanical) connection between the main controller and sub-controller, then you automatically lose camera connection. This is because the USB cable for the CM-730 and camera share the same molex connection.
 {: .notice}
 
@@ -348,7 +348,7 @@ You may run your own maintenance check should DARWIN-OP have some anomalies.
     > Check for fan noise
   - no, but Cm-730 powers on
     > Check the LED cable from CM-730 to eye. If the cable is defective then post your problem here.
- 
+
 2. Can you hear fan noise from the back of DARWIN-OP?
   - yes
     > Check for LED's
@@ -359,7 +359,7 @@ You may run your own maintenance check should DARWIN-OP have some anomalies.
 
   **NOTE** : If the CM-730 does not get any power then the FitPC will not get any power.
   {: .notice}
- 
+
 3. Does the head LED turn on?
   - yes
     > Check for "Ubuntu does not start" symptom.
@@ -367,12 +367,12 @@ You may run your own maintenance check should DARWIN-OP have some anomalies.
     > If the cable is defective then post your problem here.
   - no, but CM-730 turns on fine
     > Check the physical connection between CM-730 and FitPC; followed by connecting a HDMI?DVI display, mouse, and keyboard and operate DARWIN-OP's PC. Check for "Ubuntu does not start" symptom.
- 
+
 #### Ubuntu does not start
 
 1. Connect a HDMI/DVI display, mouse, and keyboard and operate PC.
   - Operate PC from DARWIN-OP
- 
+
 2. Does the FitPC's main screen with the Intel Atom logo appear?
   - yes, the PC is still good.
     > You may use Linux's advanced settings to restore the OS
@@ -384,7 +384,7 @@ You may run your own maintenance check should DARWIN-OP have some anomalies.
 
 1. Properly shut down DARWIN-OP and restart again. If this happens again more then twice then check the following
   - There are a few ways to [Shut down DARWIN-OP].
- 
+
 2. Do you have the most updated firmware version of the CM-730 and MX-28 installed?  
   Run Dynamixel Monitor..... are all Dynamixel OK?
   - no
@@ -420,17 +420,17 @@ You may run your own maintenance check should DARWIN-OP have some anomalies.
       For example. if ID 13 does bad then ID15 and ID17 will appear to go bad. However, ID11, ID9, and ID7 remain unaffected.
   - no
     > Use [DXL Monitor] to check status of the MX-28(s). As a precautionary measure it is strongly advised th check the "lesser significant" MX-28 first and work your way up to the defective MX-28. If you ran all checks and the MX-28 still malfunctions then post your problem here.
- 
+
 #### Unusual motions/DARWIN-OP "behaves" strangely.
 
 1. Check the robot limbs. Are there any defective frames?
   - Look for any bad frames around the defective area. There's a chance that bolt(s) and nut(s) may have come loose. Tighten them and check the status of the MX-28 and check for proper position sensor (horn) alignment. For any defective frames post your problem here.
- 
+
 #### Slow or choppy motions
 
 1. Battery conditions (if DARWIN-OP is running only under battery)
   - DARWIN-OP has been programmed to beep if battery power is low. However, in noisy environments you may not be able to hear such beeps. Keep an eye for any slow, strange, or choppy motions.
- 
+
 2. Linux OS conditions
   The OS from the fitPC has been optimized so that DARWIN-OP can perform smoothly.  
   There's a chance that there are too many programs running in the background.  
@@ -441,10 +441,10 @@ You may run your own maintenance check should DARWIN-OP have some anomalies.
   - any program/process that takes too many fitPC resources
   - any combination from a to d.
   Please bear in mind that this is a limitation of Intel Atom's system design and not from Linux OS, nor the fitPC, nor ROBOTIS.
- 
+
 3. Interfacing conditions
   - We strongly recommend interfacing with DARWIN-OP via SSH terminal rather than remote desktop. However, if remote desktop is a must then close any background programs from Ubuntu and use conventional screen resolutions (i.e. 1024x768).
- 
+
 #### DARWIN-OP cannot "see/find" the ball
 
 1 Check [Color and White Balance Settings]
@@ -472,7 +472,7 @@ You may run your own maintenance check should DARWIN-OP have some anomalies.
 
 #### Install Ubuntu 9.10
 
-**NOTE** : Reference: http://www.fit-pc2.com/wiki/index.php?title=Installing_Ubuntu_9.10
+**Reference** : [http://www.fit-pc2.com/wiki/index.php?title=Installing_Ubuntu_9.10](http://www.fit-pc2.com/wiki/index.php?title=Installing_Ubuntu_9.10)
 {: .notice}
 
 1. Prepare Installation Media
@@ -480,30 +480,30 @@ You may run your own maintenance check should DARWIN-OP have some anomalies.
   - Download Ubuntu 9.10 Desktop installation
   - If you are using USB CD-ROM - burn downloaded image directly on CD.
   - If you are using USB Flash drive, 1GB would be enough. Download usb-creator to create bootable installation flash drive.
- 
+
 2. Installation of generic Ubuntu 9.10 Desktop
   - Standard Ubuntu installation - choose timezone, partitions, username, password etc.
   - Unplug USB CD-ROM / USB Flash drive and reboot
   - Login using previously selected username and password
-  - Reference : https://help.ubuntu.com/9.10/installation-guide/i386/index.html
- 
+  - Reference : [https://help.ubuntu.com/9.10/installation-guide/i386/index.html](https://help.ubuntu.com/9.10/installation-guide/i386/index.html)
+
 **NOTE** : Please note that the command used in Linux operating system is case sensitive.
 {: .notice}
 
 3. Required system changes
-  - Remember to enter sodu su at the command line to gain writing privelges otherwise file editing will not happen.
-  - Add the following lines to /etc/apt/sources.list
-  - In this case enter gedit /etc/apt/sources.list (if using gedit).
+  - Remember to enter sudo su at the command line to gain writing privelges otherwise file editing will not happen.
+  - Add the following lines to `/etc/apt/sources.list`
+  - In this case enter **gedit /etc/apt/sources.list** (if using gedit) to edit the file.
 
     ```
     ## Repository for fit-PC2 users provided by Compulab
     deb http://fit-pc2.com/download/ubuntu/dists/karmic binary/
     deb-src http://fit-pc2.com/download/ubuntu/dists/karmic source/
     ```
-  
+
   - Connect DARWIN-OP to the internet via ethernet.
   - Refresh update manager
-  
+
     ```
     $ sudo apt-get update
     ```
@@ -517,7 +517,7 @@ You may run your own maintenance check should DARWIN-OP have some anomalies.
     $ sudo apt-get install xserver-xorg-video-poulsbo mplayer-vaapi mplayer-skins
     ```
 
-  - Don't restart here. Select "Restart Later".
+  - Do NOT restart the robot yet. Select **Restart Later**.
   - (Optional) If you want to get the kernel source:
 
     ```
@@ -525,7 +525,7 @@ You may run your own maintenance check should DARWIN-OP have some anomalies.
     ```
 
   - (Optional) You may install w32codecs, libdvdcss2 and other usefull packages from Medibuntu repository.
-  - Comment out snd-hda-intel options in /etc/modprobe.d/alsa-base.conf
+  - Comment out **snd-hda-intel** options in `/etc/modprobe.d/alsa-base.conf`
 
     ```
     # Power down HDA controllers after 10 idle seconds
@@ -540,12 +540,12 @@ You may run your own maintenance check should DARWIN-OP have some anomalies.
 
   - Restart fit-PC2i
   - Ubuntu 9.10 is now installed.
- 
- 
+
+
 #### Additional Software Installation
 
 After installing ubuntu 9.10 you must install the following softwares
- 
+
 - For Development
   - Install g++ compiler
 
@@ -576,7 +576,7 @@ After installing ubuntu 9.10 you must install the following softwares
     > On Ununtu's desktop go to Applications > Ubuntu Software Center and search for "samba"  
     > Download Samba and install it. Configure samba server.
   - Configure VNC server, Install FreeNX(https://help.ubuntu.com/community/FreeNX), etc..
- 
+
 #### Miscellaneous Utilities
 
 - Subversion : Source code version control system client program
@@ -596,7 +596,7 @@ After installing ubuntu 9.10 you must install the following softwares
   ```
   $ sudo apt-get install guvcview
   ```
- 
+
 #### CM-730 Firmware Installation
 
 Refer to [Firmware Installer] section.
@@ -610,15 +610,15 @@ Use **reset all** command.
 
 #### Install Linux Mint 9
 
-**NOTE** : Reference: http://www.fit-pc.com/wiki/index.php/Installing_Linux_Mint_9
+**Reference** : [http://www.fit-pc.com/wiki/index.php/Installing_Linux_Mint_9](http://www.fit-pc.com/wiki/index.php/Installing_Linux_Mint_9)
 {: .notice}
- 
+
 1. Prepare Installation Media
   - You can use USB CD-ROM Drive or USB Flash drive (disk-on-key) as installation media
   - Download Linux Mint 9 "Isadora" - Gnome CD (32-bit)
   - If you are using USB CD-ROM - burn downloaded image directly on CD.
   - If you are using USB Flash drive, 1GB would be enough, use "Startup Disk Creator" utility to create LiveUSB.
- 
+
 2. Installation of generic Linux Mint 9
   - Standard Linux Mint installation: choose timezone, partitions, username, password etc.
   - Unplug USB CD-ROM / USB Flash drive and reboot
@@ -628,9 +628,9 @@ Use **reset all** command.
   {: .notice}
 
 3. Required system changes
-  - Remember to enter sodu su at the command line to gain writing privelges otherwise file editing will not happen.
-  - Add the following lines to /etc/apt/sources.list
-  - In this case enter gedit /etc/apt/sources.list (if using gedit).
+  - Remember to enter sudo su at the command line to gain writing privelges otherwise file editing will not happen.
+  - Add the following lines to `/etc/apt/sources.list`
+  - In this case enter **gedit /etc/apt/sources.list** (if using gedit).
 
     ```
     ## Repository for fit-PC2 users provided by Compulab
@@ -670,62 +670,62 @@ Use **reset all** command.
     ```
     $ sudo apt-get purge linux-generic linux-image-generic linux-headers-generic linux-image-$(uname -r) linux-headers-$(uname -r) && sudo apt-get autoremove
     ```
-    
+
   - Restart fit-PC2i
   - Linux Mint 9 is now installed.
- 
- 
+
+
 #### Additional Software Installation
 
 After installing Linux Mint 9 you must install the following software
- 
+
 - For Development
   - Install g++ compiler
-    
+
     ```
     $ sudo apt-get install g++
     ```
-    
+
   - Install Functions manuals
-    
+
     ```
     $ sudo apt-get install manpages-dev
     ```
-    
+
   - Install Libraries
-    
+
     ```
     $ sudo apt-get install libjpeg62-dev libncurses5-dev
     ```
- 
+
 - For Connections
   - Install SSH server
-    
+
     ```
     $ sudo apt-get install openssh-server
     ```
-    
+
   - Install Samba server
     > On Ununtu's desktop go to Applications > Ubuntu Software Center and search for "samba"
     > Download Samba and install it. Configure samba server.
   - Configure VNC server, Install FreeNX(https://help.ubuntu.com/community/FreeNX), etc..
- 
+
 #### Miscellaneous Utilities
 
 - Subversion : Source code version control system client program
-  
+
   ```
   $ sudo apt-get install subversion
   ```
-  
+
 - madplay : Decode and play MPEG audio FILE(s). (This program must be installed for demo program)
-  
+
   ```
   $ sudo apt-get install madplay
   ```
-  
+
 - guvcview : a simple GTK+ interface for capturing and viewing video from devices supported by the Linux UVC driver.
-  
+
   ```
   $ sudo apt-get install guvcview
   ```
@@ -746,57 +746,60 @@ You can recover the operating system in DARWIN-OP via Clonezilla. The recovery s
 
 **NOTE** : Download the recovery image from [here](http://sourceforge.net/projects/darwinop/files/Software/Main%20Controller/Recovery%20USB/)
 {: .notice}
- 
+
 - Choose recovery image  
   - Check DARWIN-OP SSD capacity before downloading the corresponding image
- 
+
 - How to check DARWIN-OP’s SSD capacity  
   - Turn on DARWIN-OP and press the ‘F2’ key to enter the BIOS menu.  
   - From the menu enter Primary Master(4GB NANDrive(PM))
 
     ![](/assets/images/platform/op/op_036.jpg)
- 
+
   - Check the capacity as shown below. Then download a matching image.
 
 |SSD Capacity 3.6GB|SSD Capacity 4GB|
 |:---:|:---:|
 |![](/assets/images/platform/op/op_037.jpg)|![](/assets/images/platform/op/op_038.jpg)|
- 
+
 #### NEW: Create Recovery USB
 
-1. Create a Clonezilla Live USB via Tuxboot (http://tuxboot.org/download/files-on-sf.php)
+1. Create a Clonezilla Live USB via Tuxboot.  
+  Download Tuxboot : [https://sourceforge.net/projects/tuxboot/files/0.6/](https://sourceforge.net/projects/tuxboot/files/0.6/)
 
-  ![](/assets/images/platform/op/op_039.jpg)
-  ![](/assets/images/platform/op/op_040.jpg)
+    ![](/assets/images/platform/op/op_039.jpg)
 
-  Oldfiles folder -> 2.0.1-5 folder select and download clonezilla-live-2.0.1-5-i486.iso
-  
-  ![](/assets/images/platform/op/op_041.jpg)
-  ![](/assets/images/platform/op/op_042.jpg)
- 
-  Select pre-downloaded and look for the file clonezilla-live-2.0.1-5-i486.iso;then click OK
+    ![](/assets/images/platform/op/op_040.jpg)
 
-  ![](/assets/images/platform/op/op_043.jpg)
+    Oldfiles folder -> 2.0.1-5 folder select and download `clonezilla-live-2.0.1-5-i486.iso`
 
-  Once complete click on Exit
+    ![](/assets/images/platform/op/op_041.jpg)
 
-  ![](/assets/images/platform/op/op_044.jpg)
- 
-2. Place the image under /home/partimag of your thumbdrive. That is copy into the directory DARwIn_Recovery_2012-03-19
- 
+    ![](/assets/images/platform/op/op_042.jpg)
+
+    Select pre-downloaded and look for the file `clonezilla-live-2.0.1-5-i486.iso`, then click OK
+
+    ![](/assets/images/platform/op/op_043.jpg)
+
+    Once complete click on Exit
+
+    ![](/assets/images/platform/op/op_044.jpg)
+
+2. Place the image under `/home/partimag` of your USB drive. That is copy into the directory DARwIn_Recovery_2012-03-19
+
 #### OLD: USB Flash Memory Preparation
 
 Go to http://clonezilla.org/liveusb.php for instructions on Clonezilla live USB flash.
 The provided image file is located in the directory
- 
+
 */DARwIn_Recovery_date of recovery creation (yyy-mm-dd)* from the USB thumbdrive
- 
+
 ##### Boot Sequence
 
 Connect the USB thumbdrive into a USB port power on DARWIN-OP and press the F2 key to access Phoenix(tm) Setup Utility (DARWIN-OP's PC system BIOS).  
 Select the "Boot" tab and in "Boot order" select USB CDROM as top priority.  
 After boot selection go to the "Exit" tab and select Exit Saving Changes, pick yes.
- 
+
 ##### Operating System Recovery with Clonezilla
 
 1. The first option from Clonezilla: Select default menu  
@@ -812,8 +815,8 @@ After boot selection go to the "Exit" tab and select Exit Saving Changes, pick y
 6. Mount Clonezilla image directory: this is the partition where Clonezilla will perform recovery  
   local_dev Use local device (Ex: hard drive, USB drive)  
   Press the "ENTER" key after selection.
-7. Clonezilla - Opensource Clone System (OCS) | Mode: Select the following  
-  sdb1 3925MB_vfat(In_USB_DISK_)_usb-SMI_USB_DISK_AA00000000001154-0:1  
+7. Clonezilla - Opensource Clone System (OCS) \| Mode: Select the following  
+  sdb1 3925MB_vfat(In_USB_DISK_)\_usb-SMI_USB_DISK_AA00000000001154-0:1  
   Ensure you see the term "sdb1" and "vfat" along with the size if your USB thumbdrive.
 8. Clonezilla - Opensource Clone System (OCS) : "/" Select default menu  
   / Top_directory_in_the_local_device   
@@ -822,8 +825,8 @@ After boot selection go to the "Exit" tab and select Exit Saving Changes, pick y
   Beginner Beginner mode: Accept the default options
 10. Clonezilla: Select mode: Select the following  
   restoredisk Restore_an_image_to_local_disk
-11. Clonezilla - Opensource Clone System (OCS) | Mode: restoredisk
-12. Clonezilla - Opensource Clone System (OCS) | Mode: restoredisk : Select the destination partition  
+11. Clonezilla - Opensource Clone System (OCS) \| Mode: restoredisk
+12. Clonezilla - Opensource Clone System (OCS) \| Mode: restoredisk : Select the destination partition  
   sda 4096MB_4GB_NANDrive__ata-4GB_NANDrive_0000000000R1Y19998XU  
   < Press "Enter" to continue...... > Press the "ENTER" key  
   < Are you sure you want to continue? ? > press the Y key  
@@ -831,7 +834,7 @@ After boot selection go to the "Exit" tab and select Exit Saving Changes, pick y
 13. Partclone: after completeing restoration  
   < Press "Enter" to continue...... > press the "ENTER" key.
 14. You can either power off or reboot> Make sure you remove the USB thumbdrive. after making your selection.
- 
+
 ##### Video
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/7Zsd73VSTDw" frameborder="0" allowfullscreen></iframe>
@@ -844,18 +847,18 @@ After boot selection go to the "Exit" tab and select Exit Saving Changes, pick y
   - From Clonezilla: Select mode
     > select restoredisk pick Restore_an_image_to_local_disk
 2. Then press Enter
- 
+
 ##### USB Flash Memory Preparation
 Go to http://clonezilla.org/liveusb.php for instructions on Clonezilla live USB flash.  
 The provided recovery image file is located in the directory:  
 **/home/partimag/DARwIn_Recovery_[date of recovery creation(yyyy-mm-dd)]**  
 From the USB thumbdrive.
- 
+
 ##### Boot Sequence
 Connect the USB thumbdrive into a USB port.  
 Power on DARWIN-OP and press the F2 key to access Phoenix(tm) Setup Utility (DARWIN-OP’s PC system BIOS). Select the “Boot” tab and in “Boot order”. Select USB HDD as top priority.  
 After boot selection go to the “Exit” tab and select “Exit Saving Changes”, pick Yes.
- 
+
 ##### Operating System Recovery with Clonezilla
 1. The first option from Clonezilla: Select the default option from the menu
   - Clonezilla live (Default settings, VGA 800x600)

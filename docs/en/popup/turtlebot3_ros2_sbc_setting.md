@@ -14,7 +14,7 @@ Please refer to [this link](https://micro-xrce-dds.readthedocs.io/en/latest/inst
 
   ```bash
   $ cd && git clone https://github.com/eProsima/Micro-XRCE-DDS-Agent.git
-  $ cd Micro-XRCE-DDS-Agent && git checkout tags/v1.0.1
+  $ cd Micro-XRCE-DDS-Agent && git checkout 2c136dc429178dab79b231cc5d67a7c229cca77a
   $ mkdir build && cd build
   $ cmake -DTHIRDPARTY=ON -DCONFIG_UDP_TRANSPORT_MTU=4096 -DCONFIG_SERIAL_TRANSPORT_MTU=4096 ..
   $ sudo make install
@@ -25,7 +25,7 @@ Please refer to [this link](https://micro-xrce-dds.readthedocs.io/en/latest/inst
 
   ```bash
   $ cd && git clone https://github.com/eProsima/Micro-XRCE-DDS-Client.git
-  $ cd Micro-XRCE-DDS-Client && git checkout tags/v1.0.1
+  $ cd Micro-XRCE-DDS-Client && git checkout 4549ef06040db30532604473f9aac20f9ad1559f
   $ nano client.config       #change value parameter below
           CONFIG_UDP_TRANSPORT_MTU=4096
   $ mkdir build && cd build

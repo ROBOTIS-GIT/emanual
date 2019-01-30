@@ -36,15 +36,15 @@ sidebar:
 
     만약, 해당 통신 포트가 사용중으로 나타나면 사용중인 프로그램을 찾아 사용을 해제해야 합니다.
 
-3. 다이나믹셀을 검색합니다. 필요에 따라 검색 범위를 설정할 수 있습니다. 
+3. 다이나믹셀을 검색합니다. 필요에 따라 검색 범위를 설정할 수 있습니다.
 
     ![img](/assets/images/sw/rplus1/wizard/dynamixel_wizard_connection2.png)
 
-4. 검색되는 다이나믹셀을 왼쪽의 리스트에서 확인할 수 있습니다. 
+4. 검색되는 다이나믹셀을 왼쪽의 리스트에서 확인할 수 있습니다.
 
     ![img](/assets/images/sw/rplus1/wizard/dynamixel_wizard_connection3.png)
 
-5. 관리를 시작합니다. (각 다이나믹셀별로 관리 방법을 참고하세요.) 
+5. 관리를 시작합니다. (각 다이나믹셀별로 관리 방법을 참고하세요.)
 
     ![img](/assets/images/sw/rplus1/wizard/dynamixel_wizard_connection4.png)
 
@@ -54,23 +54,23 @@ sidebar:
 
 ![img](/assets/images/sw/rplus1/wizard/dynamixel_wizard_firmware_information.png)
 
-1. 다이나믹셀을 검색하면, 다음과 같이 다이나믹셀의 아이콘이 체크되며 펌웨어 업데이트가 가능함을 알립니다. 해당 다이나믹셀을 클릭하고 펌웨어 업데이트 버튼을 클릭 합니다. 
+1. 다이나믹셀을 검색하면, 다음과 같이 다이나믹셀의 아이콘이 체크되며 펌웨어 업데이트가 가능함을 알립니다. 해당 다이나믹셀을 클릭하고 펌웨어 업데이트 버튼을 클릭 합니다.
 
     ![img](/assets/images/sw/rplus1/wizard/dynamixel_wizard_firmware_update1.png)
 
-2. 간단한 도움말과 함께 펌웨어 업데이트를 시작합니다. 특히, 업데이트 도중 연결이 끊기거나 전원이 꺼지지 않도록 유의하십시오. 
+2. 간단한 도움말과 함께 펌웨어 업데이트를 시작합니다. 특히, 업데이트 도중 연결이 끊기거나 전원이 꺼지지 않도록 유의하십시오.
 
     ![img](/assets/images/sw/rplus1/wizard/dynamixel_wizard_firmware_update2.png)
 
-3. 현재 연결된 다이나믹셀의 모델명과 펌웨어 정보를 확인할 수 있습니다. 
+3. 현재 연결된 다이나믹셀의 모델명과 펌웨어 정보를 확인할 수 있습니다.
 
     ![img](/assets/images/sw/rplus1/wizard/dynamixel_wizard_firmware_update3.png)
 
-4. 다음을 누르면 펌웨어 업데이트를 시작합니다. 완료될 때 까지 전원이 꺼지거나 케이블이 빠지지 않도록 유의합니다. 
+4. 다음을 누르면 펌웨어 업데이트를 시작합니다. 완료될 때 까지 전원이 꺼지거나 케이블이 빠지지 않도록 유의합니다.
 
     ![img](/assets/images/sw/rplus1/wizard/dynamixel_wizard_firmware_update4.png)
 
-5. 다이나믹셀 펌웨어 설치 결과를 확인합니다. 
+5. 다이나믹셀 펌웨어 설치 결과를 확인합니다.
 
     ![img](/assets/images/sw/rplus1/wizard/dynamixel_wizard_firmware_update5.png)
 
@@ -110,7 +110,7 @@ sidebar:
 
     ![img](/assets/images/sw/rplus1/wizard/dynamixel_wizard_firmware_recovery8.png)
 
-9. 다이나믹셀 펌웨어 복구 결과를 확인합니다. 
+9. 다이나믹셀 펌웨어 복구 결과를 확인합니다.
 
     ![img](/assets/images/sw/rplus1/wizard/dynamixel_wizard_firmware_recovery9.png)
 
@@ -137,7 +137,7 @@ sidebar:
 
 1. 하드웨어 연결 USB2Dynamixel 에 MX시리즈를 연결해주세요. 스위치는 통신방식에 따라 TTL 혹은 RS485로 향해 있어야 합니다. 별도의 전원이 공급되어야 하며 Calibration Adapter가 필요합니다.
 
-    ![img](/assets/images/sw/rplus1/wizard/self_calibration_still027.jpg)
+    ![img](/assets/images/sw/rplus1/wizard/dynamixel_wizard_023.jpg)
 
 2. Dynamixel Wizard 를 실행 후 캘리브레이션 아이콘을 클릭합니다. COM 포트가 연결되어 있는 경우 해당 버튼이 비활성화 됩니다. 포트 연결 전 상태에서 캘리브레이션 아이콘을 클릭해주세.요.
 
@@ -162,7 +162,7 @@ sidebar:
 7. 연결된 다이나믹셀을 선택하세요.
 
     ![img](/assets/images/sw/rplus1/wizard/self_calibration_still034.jpg)
-    
+
     ![img](/assets/images/sw/rplus1/wizard/self_calibration_still035.jpg)
 
 8. 다이나믹셀에 캘리브레이션 펌웨어를 설치합니다.
@@ -198,8 +198,7 @@ sidebar:
 
 ## [다이나믹셀 MX-28 셀프 캘리브레이션하기](#다이나믹셀-mx28-셀프-캘리브레이션하기)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/K6JI0U4nGzA" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen="">
-</iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/7qbYeKax48Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## [다이나믹셀 MX-64/MX-106 셀프 캘리브레이션하기](#다이나믹셀-mx64mx106-셀프-캘리브레이션하기)
 

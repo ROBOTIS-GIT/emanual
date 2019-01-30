@@ -16,6 +16,11 @@ Control Table은 장치 내부에 존재하는 값으로서 장치의 현재 상
 {: .notice--warning}
 {% assign torque_enable= "512" %}
 
+{% elsif page.product_group=='rh_p12_rna' %}
+**주의** : RH-P12-RN(A) 는 RH-P12-RN 과 다른 별개의 컨트롤 테이블을 사용합니다. RH-P12-RN(A) 펌웨어로 변경하는 경우 주의하시기 바랍니다.
+{: .notice--warning}
+{% assign torque_enable= "512" %}
+
 {% elsif page.product_group=='dxl_pro' %}
 {% assign torque_enable= "562" %}
 
@@ -29,7 +34,7 @@ Control Table은 장치 내부에 존재하는 값으로서 장치의 현재 상
 <div class="notice--warning">{{ mx2_control_table | markdownify }}</div>
 {% assign torque_enable= "64" %}
 
-{% elsif page.product_group=='dxl_x' %}
+{% elsif page.product_group=='dxl_x430' or page.product_group=='dxl_x540' %}
 {% assign torque_enable= "64" %}
 
 {% elsif page.product_group=='dxl_xl320' %}

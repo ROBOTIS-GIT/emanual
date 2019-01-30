@@ -41,35 +41,35 @@ You will need the USB cable to download the programs.
 This is included in ROBOTIS DREAM Level 1.
 {: .notice}
 
-|Robot|TASK Code|
-| :---: | :---: |
-|1. Tank<br />![](/assets/images/edu/dream/dream1-4_tank.jpg)|[Download][ex_01]|
-|2. Robot Knight<br />![](/assets/images/edu/dream/dream1-4_robotknight.jpg)|[Download][ex_02]|
-|3. War Robot<br />![](/assets/images/edu/dream/dream1-4_warrobot.jpg)|[Download][ex_03]|
-|4. Hockey Robot<br />![](/assets/images/edu/dream/dream1-4_hockeyrobot.jpg)|[Download][ex_04]|
-|5. Excavator<br />![](/assets/images/edu/dream/dream1-4_excavator.jpg)|[Download][ex_05]|
-|6. Ladder Truck<br />![](/assets/images/edu/dream/dream1-4_laddertruck.jpg)|[Download][ex_06]|
-|7. Forklift<br />![](/assets/images/edu/dream/dream1-4_forklift.jpg)|[Download][ex_07]|
-|8. Boxing Robot<br />![](/assets/images/edu/dream/dream1-4_boxingrobot.jpg)|[Download][ex_08]|
-|9. Bulldozer<br />![](/assets/images/edu/dream/dream1-4_bulldozer.jpg)|[Download][ex_09]|
-|10. Dribbler<br />![](/assets/images/edu/dream/dream1-4_dribbler.jpg)|[Download][ex_10]|
-|11. Explorer<br />![](/assets/images/edu/dream/dream1-4_explorer.jpg)|[Download][ex_11]|
-|12. Transporter<br />![](/assets/images/edu/dream/dream1-4_transporter.jpg)|[Download][ex_12]|
+|                                    Robot                                    |     TASK Code     |
+|:---------------------------------------------------------------------------:|:-----------------:|
+|        1. Tank<br />![](/assets/images/edu/dream/dream1-4_tank.jpg)         | [Download][ex_01] |
+| 2. Robot Knight<br />![](/assets/images/edu/dream/dream1-4_robotknight.jpg) | [Download][ex_02] |
+|    3. War Robot<br />![](/assets/images/edu/dream/dream1-4_warrobot.jpg)    | [Download][ex_03] |
+| 4. Hockey Robot<br />![](/assets/images/edu/dream/dream1-4_hockeyrobot.jpg) | [Download][ex_04] |
+|   5. Excavator<br />![](/assets/images/edu/dream/dream1-4_excavator.jpg)    | [Download][ex_05] |
+| 6. Ladder Truck<br />![](/assets/images/edu/dream/dream1-4_laddertruck.jpg) | [Download][ex_06] |
+|    7. Forklift<br />![](/assets/images/edu/dream/dream1-4_forklift.jpg)     | [Download][ex_07] |
+| 8. Boxing Robot<br />![](/assets/images/edu/dream/dream1-4_boxingrobot.jpg) | [Download][ex_08] |
+|   9. Bulldozer<br />![](/assets/images/edu/dream/dream1-4_bulldozer.jpg)    | [Download][ex_09] |
+|    10. Dribbler<br />![](/assets/images/edu/dream/dream1-4_dribbler.jpg)    | [Download][ex_10] |
+|    11. Explorer<br />![](/assets/images/edu/dream/dream1-4_explorer.jpg)    | [Download][ex_11] |
+| 12. Transporter<br />![](/assets/images/edu/dream/dream1-4_transporter.jpg) | [Download][ex_12] |
 
 [CM-150]: /docs/en/parts/controller/cm-150/
 [BT-210]: /docs/en/parts/communication/bt_210/
 [RC-100B]: /docs/en/parts/communication/rc-100/
 [USB Downloader(LN-101)]: /docs/en/parts/interface/ln-101/
 [How to Download Task code]: /docs/en/faq/download_task_code/
-[ex_01]: http://support.robotis.com/en/baggage_files/dream/dream_l4_tank_en.tsk
-[ex_02]: http://support.robotis.com/en/baggage_files/dream/dream_l4_robotknight_en.tsk
-[ex_03]: http://support.robotis.com/en/baggage_files/dream/dream_l4_warrobot_en.tsk
-[ex_04]: http://support.robotis.com/en/baggage_files/dream/dream_l4_hockeyrobot_en.tskk
-[ex_05]: http://support.robotis.com/en/baggage_files/dream/dream_l4_excavator_en.tsk
-[ex_06]: http://support.robotis.com/en/baggage_files/dream/dream_l4_laddertruck_en.tsk
-[ex_07]: http://support.robotis.com/en/baggage_files/dream/dream_l4_forklift_en.tsk
-[ex_08]: http://support.robotis.com/en/baggage_files/dream/dream_l4_boxer_en.tsk
-[ex_09]: http://support.robotis.com/en/baggage_files/dream/dream_l4_bulldozer_en.tsk
-[ex_10]: http://support.robotis.com/en/baggage_files/dream/dream_l4_dribbler_en.tsk
-[ex_11]: http://support.robotis.com/en/baggage_files/dream/dream_l4_explorer_en.tsk
-[ex_12]: http://support.robotis.com/en/baggage_files/dream/dream_l4_transporter_en.tsk
+[ex_01]: http://www.robotis.com/service/download.php?no=1569
+[ex_02]: http://www.robotis.com/service/download.php?no=1567
+[ex_03]: http://www.robotis.com/service/download.php?no=1571
+[ex_04]: http://www.robotis.com/service/download.php?no=1568
+[ex_05]: http://www.robotis.com/service/download.php?no=1563
+[ex_06]: http://www.robotis.com/service/download.php?no=1566
+[ex_07]: http://www.robotis.com/service/download.php?no=1565
+[ex_08]: http://www.robotis.com/service/download.php?no=891
+[ex_09]: http://www.robotis.com/service/download.php?no=1561
+[ex_10]: http://www.robotis.com/service/download.php?no=1562
+[ex_11]: http://www.robotis.com/service/download.php?no=1564
+[ex_12]: http://www.robotis.com/service/download.php?no=1570
