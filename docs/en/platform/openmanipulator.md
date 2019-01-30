@@ -1531,11 +1531,11 @@ You have to change the parameters according to the type of camera. Run the follo
 
 #### Astra Pro
   ``` bash
-  $ roslaunch open_manipulator_ar_markers ar_pose.launch use_gazebo:=false camera_model:=astra_pro
+  $ roslaunch open_manipulator_ar_markers ar_pose.launch camera_model:=astra_pro
   ```
 #### Realsense D435
   ``` bash
-  $ roslaunch open_manipulator_ar_markers ar_pose.launch use_gazebo:=false camera_model:=realsense_d435
+  $ roslaunch open_manipulator_ar_markers ar_pose.launch camera_model:=realsense_d435
   ```
 #### Raspberry Pi Camera V2
 **[Raspberry Pi]**
@@ -1544,7 +1544,7 @@ You have to change the parameters according to the type of camera. Run the follo
   ```
 **[Remote PC]**
   ``` bash
-  $ roslaunch open_manipulator_ar_markers ar_pose.launch use_gazebo:=false camera_model:=raspicam
+  $ roslaunch open_manipulator_ar_markers ar_pose.launch camera_model:=raspicam
   ```
     
 #### Rviz
@@ -1764,34 +1764,34 @@ Open processing source code file (`open_manipulator_processing` → `Scara` → 
 
 |                   | Part Name                        | Quantity | Link                                                                                                                                                                           |
 |-------------------|----------------------------------|-------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Chassis Parts** | BASE FRAME                       | 1     | [Download Link](https://www.thingiverse.com/thing:3069557)                                                                                                                     |
-| .                 | BASE LINK                        | 1     | [Download Link](https://www.thingiverse.com/thing:3069557)                                                                                                                     |
-| .                 | ROTATION BASE                    | 1     | [Download Link](https://www.thingiverse.com/thing:3069557)                                                                                                                     |
-| .                 | HOLDER A                         | 1     | [Download Link](https://www.thingiverse.com/thing:3069557)                                                                                                                     |
-| .                 | HOLDER B                         | 1     | [Download Link](https://www.thingiverse.com/thing:3069557)                                                                                                                     |
-| .                 | LINK 50                          | 1     | [Download Link](https://www.thingiverse.com/thing:3069557)                                                                                                                     |
-| .                 | LINK 200 A                       | 1     | [Download Link](https://www.thingiverse.com/thing:3069557)                                                                                                                     |
-| .                 | LINK 50 FOR 250                  | 1     | [Download Link](https://www.thingiverse.com/thing:3069557)                                                                                                                     |
-| .                 | LINK 200 FOR 250                 | 1     | [Download Link](https://www.thingiverse.com/thing:3069557)                                                                                                                     |
-| .                 | LINK 200 B                       | 4     | [Download Link](https://www.thingiverse.com/thing:3069557)                                                                                                                     |
-| .                 | TRIANGLE LINK                    | 1     | [Download Link](https://www.thingiverse.com/thing:3069557)                                                                                                                     |
-| .                 | TOOL LINK                        | 1     | [Download Link](https://www.thingiverse.com/thing:3069557)                                                                                                                     |
-| **Actuators**     | Dynamixel XM430-W350-T           | 3     | [Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2923&GC=GD080101)                                                                                        |
-| **Cables**        | CABLE_3P_180MM                   | 1     | [Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2755&GC=GD0B0105&page=2)                                                                                 |
-| .                 | CABLE_3P_240MM                   | 1     | [Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2926&GC=GD0B0105&page=3)                                                                                 |
-| **Miscellaneous** | FHS_M2x3mm                       | 16    | [Shop Link](https://us.misumi-ec.com/vona2/detail/221000547315/?Inch=0&CategorySpec=00000071822%3A%3A2%0900000071552%3A%3A3)                                                   |
-| .                 | FHS_M2x6mm                       | 4     | [Shop Link](https://us.misumi-ec.com/vona2/detail/221000547315/?Inch=0&CategorySpec=00000071822%3A%3A2%0900000071552%3A%3A6)                                                   |
-| .                 | FHS_M2.5x5mm                     | 8     | [Shop Link](https://us.misumi-ec.com/vona2/detail/221000547315/?Inch=0&CategorySpec=00000071822%3A%3A2.5%0900000071552%3A%3A5)                                                 |
-| .                 | FHS_M2.5x10mm                    | 4     | [Shop Link](https://us.misumi-ec.com/vona2/detail/221000547315/?Inch=0&CategorySpec=00000071822%3A%3A2.5%0900000071552%3A%3A10)                                                |
-| .                 | FHS_M3x10mm                      | 4     | [Shop Link](https://us.misumi-ec.com/vona2/detail/221000547315/?Inch=0&CategorySpec=00000071822%3a%3a2.5%0900000071552%3a%3a10&curSearch=%7b%22field%22%3a%22%40search%22%2c%22seriesCode%22%3a%22221000547315%22%2c%22innerCode%22%3a%22%22%2c%22sort%22%3a1%2c%22specSortFlag%22%3a0%2c%22allSpecFlag%22%3a0%2c%22page%22%3a1%2c%22pageSize%22%3a%2260%22%2c%2200000071822%22%3a%22nvd00000000000002%22%2c%2200000071552%22%3a%22mig00000001426443%22%7d&Tab=wysiwyg_area_0)                                                |
-| .                 | NUT_M2                           | 4     | [Shop Link](https://us.misumi-ec.com/vona2/detail/110300250540/?Inch=0&CategorySpec=00000070281%3A%3A2)                                                                        |
-| .                 | NUT_M2.5                         | 4     | [Shop Link](https://us.misumi-ec.com/vona2/detail/110300250540/?Inch=0&CategorySpec=00000070281%3A%3A2.5)                                                                      |
-| .                 | PSCBRJ6-9                        | 18    | [Shop Link](https://us.misumi-ec.com/vona2/detail/110302637270/?HissuCode=PSCBRJ6-9&PNSearch=PSCBRJ6-9&KWSearch=PSCBRJ6-9&searchFlow=results2type)                             |
-| .                 | MSRB6-1.0                        | 40    | [Shop Link](https://us.misumi-ec.com/vona2/detail/110100142970/?HissuCode=MSRB6-1.0&PNSearch=MSRB6-1.0&KWSearch=MSRB6-1.0&searchFlow=results2type)                             |
-| .                 | NSFMR6-38                        | 1     | [Shop Link](https://jp.misumi-ec.com/vona2/detail/110300086920/?HissuCode=NSFMR6-38&PNSearch=NSFMR6-38&KWSearch=NSFMR6-38&searchFlow=results2products)                         |
-| .                 | NSFMR6-42                        | 1     | [Shop Link](https://jp.misumi-ec.com/vona2/detail/110300086920/?HissuCode=NSFMR6-42&PNSearch=NSFMR6-42&KWSearch=NSFMR6-42&searchFlow=results2products)                         |
-| .                 | NSFMR6-24                        | 6     | [Shop Link](https://jp.misumi-ec.com/vona2/detail/110300086920/?HissuCode=NSFMR6-24&PNSearch=NSFMR6-24&KWSearch=NSFMR6-24&searchFlow=results2products)                         |
-| .                 | Ball Bearing(O.D 10mm / I.D 6mm) | 20    | [Shop Link](https://us.misumi-ec.com/vona2/detail/221000531116/?CategorySpec=unitType%3a%3a1%0900000044017%3a%3amig00000001446936%0900000043985%3a%3amig00000001455783&Inch=0) |
+| **Plate**         | Base Plate-02                    | 1     |[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=3331)|
+| **Chassis Parts** | BASE LINK                        | 1     | [Download Link](https://www.thingiverse.com/thing:3069557)|
+| .                 | ROTATION BASE                    | 1     | [Download Link](https://www.thingiverse.com/thing:3069557)|
+| .                 | HOLDER A                         | 1     | [Download Link](https://www.thingiverse.com/thing:3069557)|
+| .                 | HOLDER B                         | 1     | [Download Link](https://www.thingiverse.com/thing:3069557)|
+| .                 | LINK 50                          | 1     | [Download Link](https://www.thingiverse.com/thing:3069557)|
+| .                 | LINK 200 A                       | 1     | [Download Link](https://www.thingiverse.com/thing:3069557)|
+| .                 | LINK 50 FOR 250                  | 1     | [Download Link](https://www.thingiverse.com/thing:3069557)|
+| .                 | LINK 200 FOR 250                 | 1     | [Download Link](https://www.thingiverse.com/thing:3069557)|
+| .                 | LINK 200 B                       | 4     | [Download Link](https://www.thingiverse.com/thing:3069557)|
+| .                 | TRIANGLE LINK                    | 1     | [Download Link](https://www.thingiverse.com/thing:3069557)|
+| .                 | TOOL LINK                        | 1     | [Download Link](https://www.thingiverse.com/thing:3069557)|
+| **Actuators**     | Dynamixel XM430-W350-T           | 3     | [Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2923&GC=GD080101)|
+| **Cables**        | CABLE_3P_180MM                   | 2     | [Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2755&GC=GD0B0105&page=2)|
+| .                 | CABLE_3P_240MM                   | 1     | [Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2926&GC=GD0B0105&page=3)|
+| **Miscellaneous** | FHS_M2x3mm                       | 16    | [Shop Link](https://us.misumi-ec.com/vona2/detail/221000547315/?Inch=0&CategorySpec=00000071822%3A%3A2%0900000071552%3A%3A3)|
+| .                 | FHS_M2x6mm                       | 4     | [Shop Link](https://us.misumi-ec.com/vona2/detail/221000547315/?Inch=0&CategorySpec=00000071822%3A%3A2%0900000071552%3A%3A6)|
+| .                 | FHS_M2.5x5mm                     | 8     | [Shop Link](https://us.misumi-ec.com/vona2/detail/221000547315/?Inch=0&CategorySpec=00000071822%3A%3A2.5%0900000071552%3A%3A5)|
+| .                 | FHS_M2.5x10mm                    | 4     | [Shop Link](https://us.misumi-ec.com/vona2/detail/221000547315/?Inch=0&CategorySpec=00000071822%3A%3A2.5%0900000071552%3A%3A10)|
+| .                 | FHS_M3x10mm                      | 4     | [Shop Link](https://us.misumi-ec.com/vona2/detail/221000547315/?Inch=0&CategorySpec=00000071822%3a%3a2.5%0900000071552%3a%3a10&curSearch=%7b%22field%22%3a%22%40search%22%2c%22seriesCode%22%3a%22221000547315%22%2c%22innerCode%22%3a%22%22%2c%22sort%22%3a1%2c%22specSortFlag%22%3a0%2c%22allSpecFlag%22%3a0%2c%22page%22%3a1%2c%22pageSize%22%3a%2260%22%2c%2200000071822%22%3a%22nvd00000000000002%22%2c%2200000071552%22%3a%22mig00000001426443%22%7d&Tab=wysiwyg_area_0)|
+| .                 | NUT_M2                           | 4     | [Shop Link](https://us.misumi-ec.com/vona2/detail/110300250540/?Inch=0&CategorySpec=00000070281%3A%3A2)|
+| .                 | NUT_M2.5                         | 4     | [Shop Link](https://us.misumi-ec.com/vona2/detail/110300250540/?Inch=0&CategorySpec=00000070281%3A%3A2.5)|
+| .                 | PSCBRJ6-9                        | 18    | [Shop Link](https://us.misumi-ec.com/vona2/detail/110302637270/?HissuCode=PSCBRJ6-9&PNSearch=PSCBRJ6-9&KWSearch=PSCBRJ6-9&searchFlow=results2type)|
+| .                 | MSRB6-1.0                        | 40    | [Shop Link](https://us.misumi-ec.com/vona2/detail/110100142970/?HissuCode=MSRB6-1.0&PNSearch=MSRB6-1.0&KWSearch=MSRB6-1.0&searchFlow=results2type)|
+| .                 | NSFMR6-38                        | 1     | [Shop Link](https://jp.misumi-ec.com/vona2/detail/110300086920/?HissuCode=NSFMR6-38&PNSearch=NSFMR6-38&KWSearch=NSFMR6-38&searchFlow=results2products)|
+| .                 | NSFMR6-42                        | 1     | [Shop Link](https://jp.misumi-ec.com/vona2/detail/110300086920/?HissuCode=NSFMR6-42&PNSearch=NSFMR6-42&KWSearch=NSFMR6-42&searchFlow=results2products)|
+| .                 | NSFMR6-24                        | 6     | [Shop Link](https://jp.misumi-ec.com/vona2/detail/110300086920/?HissuCode=NSFMR6-24&PNSearch=NSFMR6-24&KWSearch=NSFMR6-24&searchFlow=results2products)|
+| .                 | Ball Bearing(O.D 10mm / I.D 6mm) | 20    | [Shop Link](https://us.misumi-ec.com/vona2/detail/221000531116/?CategorySpec=unitType%3a%3a1%0900000044017%3a%3amig00000001446936%0900000043985%3a%3amig00000001455783&Inch=0)|
 
 <!-- [Parts of OpenManipulator](https://docs.google.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit#gid=1110711693) -->
 
