@@ -987,13 +987,15 @@ $ sudo apt-get install ros-kinetic-joy ros-kinetic-joystick-drivers ros-kinetic-
 $ sudo pip install ds4drv
 ```
 
-Connect PS4 joystick to the PC via Bluetooth,
+Connect PS4 joystick to the PC via Bluetooth using the following command
 
 ``` bash
 $ sudo ds4drv
 ```
 
-Enter pairing mode with PS4 by pressing and holding Playstation button + share button for 5 sec. If the light on PS4 turns blue, enter the following commands in terminal and control OpenManipulator.
+Enter pairing mode with PS4 by pressing and holding Playstation button + share button for 10 sec. If the light on PS4 turns blue, enter the following commands in terminal and control OpenManipulator.
+
+Launch teleoperation packages for PS4 joystick.
 
 ``` bash
 $ export ROS_NAMESPACE=/open_manipulator
