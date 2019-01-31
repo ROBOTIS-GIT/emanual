@@ -995,8 +995,6 @@ $ sudo ds4drv
 
 Enter pairing mode with PS4 by pressing and holding Playstation button + share button for 10 sec. If the light on PS4 turns blue, enter the following commands in terminal and control OpenManipulator.
 
-Launch teleoperation packages for PS4 joystick.
-
 ``` bash
 $ export ROS_NAMESPACE=/open_manipulator
 $ roslaunch teleop_twist_joy teleop.launch
