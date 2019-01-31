@@ -13903,6 +13903,19 @@ openmanipulator:
         url: /platform/openmanipulator/#dimension
       - title: "Repeatability"
         url: /platform/openmanipulator/#repeatability
+  - title: "Getting Started"
+    url: /platform/openmanipulator/#getting-started
+    children:
+      - title: "About OpenManipulator"
+        url: /platform/openmanipulator/#about-openmanipulator
+      - title: "OpenManipulator Setup"
+        url: /platform/openmanipulator/#openmanipulator-setup
+      - title: "Let's try basic manipulation"
+        url: /platform/openmanipulator/#lets-try-basic-manipulation 
+      - title: "Challenge Various Applications"
+        url: /platform/openmanipulator/#challenge-various-applications
+      - title: "Let's design my own manipulator"
+        url: /platform/openmanipulator/#lets-design-my-own-manipulator
   - title: "Hardware Setup"
     url: /platform/openmanipulator/#hardware-setup
     children:
@@ -13912,6 +13925,13 @@ openmanipulator:
         url: /platform/openmanipulator/#3d-printed-parts
       - title: "Assembly Manual"
         url: /platform/openmanipulator/#assembly-manual
+      - title: "Board Setup"
+        url: /platform/openmanipulator/#board-setup
+        children:
+        - title: "U2D2"
+          url: /platform/openmanipulator/#u2d2
+        - title: "OpenCR"
+          url: /platform/openmanipulator/#opencr    
   - title: "PC Setup"
     url: /platform/openmanipulator/#pc-setup
     children:
@@ -13937,9 +13957,6 @@ openmanipulator:
             url: /platform/openmanipulator/#manipulator-description
           - title: "RViz"
             url: /platform/openmanipulator/#rviz
-  - title: "Basic Manipulation"
-    url: /platform/openmanipulator/#basic-manipulation
-    children:
       - title: "Message List"
         url: /platform/openmanipulator/#message-list
         children:
@@ -13947,6 +13964,9 @@ openmanipulator:
             url: /platform/openmanipulator/#topic
           - title: "Service"
             url: /platform/openmanipulator/#service
+  - title: "Basic Manipulation"
+    url: /platform/openmanipulator/#basic-manipulation
+    children:
       - title: "GUI Program"
         url: /platform/openmanipulator/#gui-program
       - title: "Teleoperation"
@@ -16963,6 +16983,14 @@ dynamixel_wizard2:
         titlekr: "지원 운영체제"
         url: /software/dynamixel/dynamixel_wizard2/#supported-os
         urlkr: /software/dynamixel/dynamixel_wizard2/#지원-운영체제
+      - title: "Definition of Firmware"
+        titlekr: "펌웨어의 정의"
+        url: /software/dynamixel/dynamixel_wizard2/#definition-of-firmware
+        urlkr: /software/dynamixel/dynamixel_wizard2/#펌웨어의-정의
+      - title: "Importance of Firmware Update"
+        titlekr: "펌웨어 업데이트의 중요성"
+        url: /software/dynamixel/dynamixel_wizard2/#importance-of-firmware-update
+        urlkr: /software/dynamixel/dynamixel_wizard2/#펌웨어-업데이트의-중요성
       - title: "Supported Products"
         titlekr: "지원 제품 목록"
         url: /software/dynamixel/dynamixel_wizard2/#supported-products
@@ -16979,33 +17007,67 @@ dynamixel_wizard2:
       - title: "Graph Window"
         titlekr: "그래프 창"
         url: /software/dynamixel/dynamixel_wizard2/#graph-window
-        urlkr: /software/dynamixel/dynamixel_wizard2/#그래프창
+        urlkr: /software/dynamixel/dynamixel_wizard2/#그래프-창
       - title: "Packet Window"
         titlekr: "패킷 창"
         url: /software/dynamixel/dynamixel_wizard2/#packet-window
-        urlkr: /software/dynamixel/dynamixel_wizard2/#패킷창
-      - title: "Setting Window"
-        titlekr: "설정 창"
-        url: /software/dynamixel/dynamixel_wizard2/#setting-window
-        urlkr: /software/dynamixel/dynamixel_wizard2/#설정창
-        children:
-          - title: "Scan Options"
-            titlekr: "검색 설정"
-            url: /software/dynamixel/dynamixel_wizard2/#scan-options
-            urlkr: /software/dynamixel/dynamixel_wizard2/#검색-설정
-          - title: "Control Options"
-            titlekr: "제어 설정"
-            url: /software/dynamixel/dynamixel_wizard2/#control-options
-            urlkr: /software/dynamixel/dynamixel_wizard2/#제어-설정
-          - title: "Graph Options"
-            titlekr: "그래프 설정"
-            url: /software/dynamixel/dynamixel_wizard2/#graph-options
-            urlkr: /software/dynamixel/dynamixel_wizard2/#그래프-설정
+        urlkr: /software/dynamixel/dynamixel_wizard2/#패킷-창
+  - title: "Software Installation"
+    titlekr: "다이나믹셀 위자드 2.0 설치"
+    url: /software/dynamixel/dynamixel_wizard2/#software-installation
+    urlkr: /software/dynamixel/dynamixel_wizard2/#다이나믹셀-위자드-20-설치
+  - title: "Uninstall Software"
+    titlekr: "다이나믹셀 위자드 2.0 제거"
+    url: /software/dynamixel/dynamixel_wizard2/#uninstall-software
+    urlkr: /software/dynamixel/dynamixel_wizard2/#다이나믹셀-위자드-20-제거
+    children:
+      - title: "Uninstall: Windows"
+        titlekr: "윈도우에서 제거하기"
+        url: /software/dynamixel/dynamixel_wizard2/#uninstall-windows
+        urlkr: /software/dynamixel/dynamixel_wizard2/#윈도우에서-제거하기
+      - title: "Uninstall: Linux"
+        titlekr: "리눅스에서 제거하기"
+        url: /software/dynamixel/dynamixel_wizard2/#uninstall-linux
+        urlkr: /software/dynamixel/dynamixel_wizard2/#리눅스에서-제거하기
   - title: "Basic Features"
     titlekr: "기본 기능"
     url: /software/dynamixel/dynamixel_wizard2/#basic-features
     urlkr: /software/dynamixel/dynamixel_wizard2/#기본-기능
     children:
+      - title: "Connect DYNAMIXEL"
+        titlekr: "다이나믹셀 연결"
+        url: /software/dynamixel/dynamixel_wizard2/#connect-dynamixel
+        urlkr: /software/dynamixel/dynamixel_wizard2/#다이나믹셀-연결
+        children:
+          - title: "DYNAMIXEL Scan Options"
+            titlekr: "다이나믹셀 검색 설정"
+            url: /software/dynamixel/dynamixel_wizard2/#dynamixel-scan-options
+            urlkr: /software/dynamixel/dynamixel_wizard2/#다이나믹셀-검색-설정
+          - title: "Scan DYNAMIXEL"
+            titlekr: "다이나믹셀 검색하기"
+            url: /software/dynamixel/dynamixel_wizard2/#scan-dynamixel
+            urlkr: /software/dynamixel/dynamixel_wizard2/#다이나믹셀-검색하기
+      - title: "DYNAMIXEL Control Table"
+        titlekr: "다이나믹셀 컨트롤 테이블"
+        url: /software/dynamixel/dynamixel_wizard2/#dynamixel-control-table
+        urlkr: /software/dynamixel/dynamixel_wizard2/#다이나믹셀-컨트롤-테이블
+      - title: "Graph"
+        titlekr: "그래프"
+        url: /software/dynamixel/dynamixel_wizard2/#graph
+        urlkr: /software/dynamixel/dynamixel_wizard2/#그래프
+        children:
+          - title: "Graph Options"
+            titlekr: "그래프 설정"
+            url: /software/dynamixel/dynamixel_wizard2/#graph-options
+            urlkr: /software/dynamixel/dynamixel_wizard2/#그래프-설정
+          - title: "Start Plotting"
+            titlekr: "그래프 시작"
+            url: /software/dynamixel/dynamixel_wizard2/#start-plotting
+            urlkr: /software/dynamixel/dynamixel_wizard2/#그래프-시작
+      - title: "Packet"
+        titlekr: "패킷"
+        url: /software/dynamixel/dynamixel_wizard2/#packet
+        urlkr: /software/dynamixel/dynamixel_wizard2/#패킷
       - title: "Firmware Update"
         titlekr: "펌웨어 업데이트"
         url: /software/dynamixel/dynamixel_wizard2/#firmware-update
@@ -17018,56 +17080,40 @@ dynamixel_wizard2:
         titlekr: "펌웨어 복구"
         url: /software/dynamixel/dynamixel_wizard2/#firmware-recovery
         urlkr: /software/dynamixel/dynamixel_wizard2/#펌웨어-복구
-      - title: "Connect DYNAMIXEL"
-        titlekr: "다이나믹셀 연결"
-        url: /software/dynamixel/dynamixel_wizard2/#connect-dynamixel
-        urlkr: /software/dynamixel/dynamixel_wizard2/#다이나믹셀-연결
-      - title: "DYNAMIXEL Control Table"
-        titlekr: "다이나믹셀 컨트롤 테이블"
-        url: /software/dynamixel/dynamixel_wizard2/#dynamixel-control-table
-        urlkr: /software/dynamixel/dynamixel_wizard2/#다이나믹셀-컨트롤-테이블
-      - title: "Graph"
-        titlekr: "그래프"
-        url: /software/dynamixel/dynamixel_wizard2/#graph
-        urlkr: /software/dynamixel/dynamixel_wizard2/#그래프
-      - title: "Packet"
-        titlekr: "패킷"
-        url: /software/dynamixel/dynamixel_wizard2/#packet
-        urlkr: /software/dynamixel/dynamixel_wizard2/#패킷
   - title: "Advanced Features"
     titlekr: "고급 기능"
     url: /software/dynamixel/dynamixel_wizard2/#advanced-features
     urlkr: /software/dynamixel/dynamixel_wizard2/#고급-기능
     children:
-  - title: "Modifying Control Values"
-    titlekr: "컨트롤 아이템 값 변경"
-    url: /software/dynamixel/dynamixel_wizard2/#modifying-control-values
-    urlkr: /software/dynamixel/dynamixel_wizard2/#컨트롤-아이템-값-변경
-  - title: "Firmware Information"
-    titlekr: "펌웨어 정보 확인"
-    url: /software/dynamixel/dynamixel_wizard2/#firmware-information
-    urlkr: /software/dynamixel/dynamixel_wizard2/#펌웨어-정보-확인
-  - title: "Calibration"
-    titlekr: "캘리브레이션"
-    url: /software/dynamixel/dynamixel_wizard2/#calibration
-    urlkr: /software/dynamixel/dynamixel_wizard2/#캘리브레이션
-  - title: "Self Diagnosis"
-    titlekr: "자가진단"
-    url: /software/dynamixel/dynamixel_wizard2/#self-diagnosis
-    urlkr: /software/dynamixel/dynamixel_wizard2/#자가진단
-  - title: "Graph Optimization"
-    titlekr: "그래프 속도 최적화"
-    url: /software/dynamixel/dynamixel_wizard2/#graph-optimization
-    urlkr: /software/dynamixel/dynamixel_wizard2/#그래프-속도-최적화
-    children:
-      - title: "USB Latency Setting"
-        titlekr: "포트 응답 속도 설정"
-        url: /software/dynamixel/dynamixel_wizard2/#usb-latency-setting
-        urlkr: /software/dynamixel/dynamixel_wizard2/#포트-응답-속도-설정
-      - title: "DYNAMIXEL Setting"
-        titlekr: "다이나믹셀 설정"
-        url: /software/dynamixel/dynamixel_wizard2/#dynamixel-setting
-        urlkr: /software/dynamixel/dynamixel_wizard2/#다이나믹셀-설정
+      - title: "Modifying Control Values"
+        titlekr: "컨트롤 아이템 값 변경"
+        url: /software/dynamixel/dynamixel_wizard2/#modifying-control-values
+        urlkr: /software/dynamixel/dynamixel_wizard2/#컨트롤-아이템-값-변경
+      - title: "Firmware Information"
+        titlekr: "펌웨어 정보 확인"
+        url: /software/dynamixel/dynamixel_wizard2/#firmware-information
+        urlkr: /software/dynamixel/dynamixel_wizard2/#펌웨어-정보-확인
+      - title: "Calibration"
+        titlekr: "캘리브레이션"
+        url: /software/dynamixel/dynamixel_wizard2/#calibration
+        urlkr: /software/dynamixel/dynamixel_wizard2/#캘리브레이션
+      - title: "Self Diagnosis"
+        titlekr: "자가진단"
+        url: /software/dynamixel/dynamixel_wizard2/#self-diagnosis
+        urlkr: /software/dynamixel/dynamixel_wizard2/#자가진단
+      - title: "Graph Optimization"
+        titlekr: "그래프 속도 최적화"
+        url: /software/dynamixel/dynamixel_wizard2/#graph-optimization
+        urlkr: /software/dynamixel/dynamixel_wizard2/#그래프-속도-최적화
+        children:
+          - title: "USB Latency Setting"
+            titlekr: "포트 응답 속도 설정"
+            url: /software/dynamixel/dynamixel_wizard2/#usb-latency-setting
+            urlkr: /software/dynamixel/dynamixel_wizard2/#포트-응답-속도-설정
+          - title: "DYNAMIXEL Setting"
+            titlekr: "다이나믹셀 설정"
+            url: /software/dynamixel/dynamixel_wizard2/#dynamixel-setting
+            urlkr: /software/dynamixel/dynamixel_wizard2/#다이나믹셀-설정
 
 #ZIGBEE SDK sidebar
 zigbee_sdk:
