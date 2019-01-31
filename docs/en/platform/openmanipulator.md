@@ -979,7 +979,6 @@ The user can use this service to create a drawing trajectory. The user can creat
   ```
 
 ### [PS4 Joystick](#ps4-joystick)
-Connect PS4 joystick to the PC via Bluetooth or with USB cable.  
 
 Install packages for teleoperation using PS4 joystick.
 
@@ -987,10 +986,21 @@ Install packages for teleoperation using PS4 joystick.
 $ sudo apt-get install ros-kinetic-joy ros-kinetic-joystick-drivers ros-kinetic-teleop-twist-joy
 $ sudo pip install ds4drv
 ```
-Launch teleoperation packages for PS4 joystick.
+
+Connect PS4 joystick to the PC via Bluetooth,
+
 ``` bash
 $ sudo ds4drv
+```
 
+launch teleoperation packages for PS4 joystick.
+
+``` bash
+$ sudo ds4drv
+```
+Enter pairing mode with PS4 by pressing and holding Playstation button + share button for 5 sec. If the light on PS4 turns blue, enter the following commands and controll OpenManipulator.
+
+``` bash
 $ export ROS_NAMESPACE=/open_manipulator
 $ roslaunch teleop_twist_joy teleop.launch
 
@@ -998,14 +1008,14 @@ $ roslaunch open_manipulator_teleop open_manipulator_teleop_joystick.launch
 ```
 
 ### [XBOX 360 Joystick](#xbox-360-joystick)
-Connect XBOX 360 joystick to the PC with Wireless Adapter or USB cable.
 
 Install packages for teleoperation using XBOX 360 joystick.
 
 ``` bash
 $ sudo apt-get install xboxdrv ros-kinetic-joy ros-kinetic-joystick-drivers ros-kinetic-teleop-twist-joy
 ```
-Launch teleoperation packages for XBOX 360 joystick.
+Connect XBOX 360 joystick to the PC with Wireless Adapter or USB cable, and launch teleoperation packages for XBOX 360 joystick.
+
 ``` bash
 $ sudo xboxdrv --silent
 
