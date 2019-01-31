@@ -39,6 +39,10 @@ sidebar:
 #### [Install Linux (Ubuntu MATE)](#install-linux-ubuntu-mate)
 
 ##### [1) Install Ubuntu MATE on TurtleBot PC](#1-install-ubuntu-mate-on-turtlebot-pc)
+
+**WARNING**: `Ubuntu Mate` does not correspond to `Raspberry Pi 3 B +` at present. If you have it, please install `Raspbian` instead.
+{: .notice--warning}
+
 **WARNING**: The microSD card should have at least **8 GB** of empty space in order to install Linux (Ubuntu MATE) on Raspberry Pi 3.
 {: .notice--warning}
 
