@@ -210,7 +210,7 @@ $ ros2 topic list
 $ ros2 launch turtlebot3_bringup rviz2.launch.py
 ```
 
-![](/assets/images/platform/turtlebot3/application/teleop.png)
+![](/assets/images/platform/turtlebot3/ros2/platform_teleop.png)
 
 ## [Teleoperation](#teleoperation) 
 
@@ -279,7 +279,7 @@ $ ros2 launch turtlebot3_cartographer cartographer.launch.py
 $ rviz2
 ```
 
-![](/assets/images/platform/turtlebot3/application/carto.png)
+![](/assets/images/platform/turtlebot3/ros2/platform_cartographer.png)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wzz54a8ppxI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
@@ -302,6 +302,8 @@ $ ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
 $ ros2 param set /gazebo use_sim_time True
 ```
 
+![](/assets/images/platform/turtlebot3/ros2/gazebo_world.png)
+
 **WARNING**: If you got error messages about `TF_OLD_DATA`, you should retry to set `use_sim_time` parameter onto `/gazebo` node.
 {: .notice--warning}
 
@@ -309,11 +311,13 @@ $ ros2 param set /gazebo use_sim_time True
 ```bash
 $ ros2 launch turtlebot3_cartographer cartographer.launch.py use_sim_time:=True
 ```
+![](/assets/images/platform/turtlebot3/ros2/gazebo_cartographer.png)
 
 **[Remote PC]** Load Navigation2
 ```bash
 $ ros2 launch turtlebot3_cartographer navigation2.launch.py use_sim_time:=True
 ```
+![](/assets/images/platform/turtlebot3/ros2/gazebo_navigation2.png)
 
 [ROS Answers]: https://answers.ros.org/questions/
 [ROS2 Issue]: https://github.com/ros2/ros2/issues
