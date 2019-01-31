@@ -993,12 +993,7 @@ Connect PS4 joystick to the PC via Bluetooth,
 $ sudo ds4drv
 ```
 
-launch teleoperation packages for PS4 joystick.
-
-``` bash
-$ sudo ds4drv
-```
-Enter pairing mode with PS4 by pressing and holding Playstation button + share button for 5 sec. If the light on PS4 turns blue, enter the following commands and controll OpenManipulator.
+Enter pairing mode with PS4 by pressing and holding Playstation button + share button for 5 sec. If the light on PS4 turns blue, enter the following commands in terminal and control OpenManipulator.
 
 ``` bash
 $ export ROS_NAMESPACE=/open_manipulator
