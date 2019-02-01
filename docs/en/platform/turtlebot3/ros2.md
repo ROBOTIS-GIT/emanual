@@ -333,7 +333,7 @@ $ ros2 launch turtlebot3_cartographer cartographer.launch.py use_sim_time:=True
 
 **[Remote PC]** Load Navigation2
 ```bash
-$ ros2 launch turtlebot3_cartographer navigation2.launch.py use_sim_time:=True
+$ ros2 launch turtlebot3_navigation2 navigation2.launch.py use_sim_time:=True
 ```
 
 You should set some parameters to use simulation time. If you need futher information about it, please following [navigation2 repo](https://github.com/ros-planning/navigation2/tree/master/nav2_bringup)
