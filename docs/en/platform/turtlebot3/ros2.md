@@ -60,7 +60,7 @@ $ colcon build --symlink-install
 
 **[TurtleBot]** Install Raspbian Stretch
 
-1. Download [Raspbian Stretch](https://www.raspberrypi.org/downloads/raspbian/)
+1. Download [Raspbian Stretch with desktop and recommended software](https://www.raspberrypi.org/downloads/raspbian/)
 1. Unzip the download file and burn image to your microSD card(>8GB)
 1. Follow instruction that [How to setup for TurtleBot3 with ROS2][How to set sbc for turtlebot3 with ros2]
 
