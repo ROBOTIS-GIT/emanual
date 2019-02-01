@@ -62,9 +62,7 @@ $ colcon build --symlink-install
 
 1. Download [Raspbian Stretch](https://www.raspberrypi.org/downloads/raspbian/)
 1. Unzip the download file and burn image to your microSD card(>8GB)
-
-**TIP**: If you need additional information about it, please following [Install Linux based on Raspbian](/docs/en/platform/turtlebot3/raspberry_pi_3_setup/#install-linux-ubuntu-mate)
-{: .notice--success}
+1. Follow instruction that [How to setup for TurtleBot3 with ROS2][How to set sbc for turtlebot3 with ros2]
 
 ### [OpenCR setup](#opencr-setup)
 
