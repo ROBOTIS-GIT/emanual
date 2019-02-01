@@ -307,6 +307,15 @@ $ ros2 launch turtlebot3_navigation2 navigation2.launch.py
     $ source ~/.bashrc
     ```
 
+### [Install TurtleBot3 simulation packages]
+```bash
+$ mkdir -p ~/turtlebot3_ws/src
+$ cd ~/turtlebot3_ws/src
+$ git clone -b ros2 https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
+$ cd ~/turtlebot3_ws
+$ colcon build --symlink-install
+```
+
 **[Remote PC]** Load TurtleBot3 on turtlebot3 world
 ```bash
 $ ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
