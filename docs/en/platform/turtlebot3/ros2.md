@@ -60,11 +60,9 @@ $ colcon build --symlink-install
 
 **[TurtleBot]** Install Raspbian Stretch
 
-1. Download [Raspbian Stretch](https://www.raspberrypi.org/downloads/raspbian/)
+1. Download [Raspbian Stretch with desktop and recommended software](https://www.raspberrypi.org/downloads/raspbian/)
 1. Unzip the download file and burn image to your microSD card(>8GB)
-
-**TIP**: If you need additional information about it, please following [Install Linux based on Raspbian](/docs/en/platform/turtlebot3/raspberry_pi_3_setup/#install-linux-ubuntu-mate)
-{: .notice--success}
+1. Follow instruction that [How to setup for TurtleBot3 with ROS2][How to set sbc for turtlebot3 with ros2]
 
 ### [OpenCR setup](#opencr-setup)
 
@@ -319,6 +317,9 @@ $ colcon build --symlink-install
 **[Remote PC]** Load TurtleBot3 on turtlebot3 world
 ```bash
 $ ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
+```
+
+```bash
 $ ros2 param set /gazebo use_sim_time True
 ```
 
@@ -333,9 +334,11 @@ $ ros2 launch turtlebot3_cartographer cartographer.launch.py use_sim_time:=True
 ```
 ![](/assets/images/platform/turtlebot3/ros2/gazebo_cartographer.png)
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PUr9k8CRNE0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 **[Remote PC]** Load Navigation2
 ```bash
-$ ros2 launch turtlebot3_cartographer navigation2.launch.py use_sim_time:=True
+$ ros2 launch turtlebot3_navigation2 navigation2.launch.py
 ```
 
 You should set some parameters to use simulation time. If you need futher information about it, please following [navigation2 repo](https://github.com/ros-planning/navigation2/tree/master/nav2_bringup)
@@ -347,6 +350,8 @@ $ ros2 param set /local_costmap/local_costmap use_sim_time True
 ```
 
 ![](/assets/images/platform/turtlebot3/ros2/gazebo_navigation2.png)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/aQh8JqSrmCs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 [ROS Answers]: https://answers.ros.org/questions/
 [ROS2 Issue]: https://github.com/ros2/ros2/issues
