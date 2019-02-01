@@ -132,7 +132,7 @@ $ cd ~/turtlebot3 && MicroXRCEAgent udp 2018
 **[TurtleBot]** Run Lidar application
 
 ```bash
-$ cd ~/turtlebot3 && ./turtlebot3_lidar
+$ ./turtlebot3/turtlebot3_lidar
 ```
 
 **[Remote PC]** Launch burger
