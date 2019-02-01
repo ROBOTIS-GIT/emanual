@@ -334,6 +334,8 @@ $ ros2 launch turtlebot3_cartographer cartographer.launch.py use_sim_time:=True
 ```
 ![](/assets/images/platform/turtlebot3/ros2/gazebo_cartographer.png)
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PUr9k8CRNE0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 **[Remote PC]** Load Navigation2
 ```bash
 $ ros2 launch turtlebot3_navigation2 navigation2.launch.py
@@ -348,6 +350,8 @@ $ ros2 param set /local_costmap/local_costmap use_sim_time True
 ```
 
 ![](/assets/images/platform/turtlebot3/ros2/gazebo_navigation2.png)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/aQh8JqSrmCs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 [ROS Answers]: https://answers.ros.org/questions/
 [ROS2 Issue]: https://github.com/ros2/ros2/issues
