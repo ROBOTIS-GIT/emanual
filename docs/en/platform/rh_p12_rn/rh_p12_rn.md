@@ -9,7 +9,7 @@ permalink: /docs/en/platform/rh_p12_rn/
 sidebar:
   title: RH-P12-RN
   nav: "rh_p12_rn"
-product_group: dxl_pro
+product_group: rh_p12_rn
 ---
 
 # [Introduction](#introduction)
@@ -140,6 +140,7 @@ This address stores firmware version of the RH-P12-RN.
 {% include en/dxl/control_table_return_delay_time.md %}
 
 ### <a name="operating-mode"></a>**[Operating Mode(11)](#operating-mode11)**
+Operating mode of the device can be configured. Each control mode has different characteristics so please choose appropriate mode for the application.
 
 | Value      | Operating Mode                      | Description                                                              |
 |:-----------|:------------------------------------|:-------------------------------------------------------------------------|
@@ -306,7 +307,7 @@ If Goal Velocity(600) is set to '0', Profile is disabled and use the maximum RPM
 
 |   Unit    |               Value Range                |
 |:---------:|:----------------------------------------:|
-| 0.114 rpm | -Velocity Limit(32) ~ Velocity Limit(32) |
+| 0.114 RPM | -Velocity Limit(32) ~ Velocity Limit(32) |
 
 **NOTE** : The maximum velocity and maximum current of DYNAMIXEL is affected by supplying voltage. Therefore, if supplying voltage changes, so does the maximum velocity. This manual complies with recommended supply voltage(24[V]).
 {: .notice}
@@ -317,10 +318,10 @@ If Goal Velocity(600) is set to '0', Profile is disabled and use the maximum RPM
 ### <a name="goal-current"></a>**[Goal Current(604)](#goal-current604)**
 Goal Current is used for other purposes according to Operating Mode(11).
 
-|             Operating Mode              |                  Goal Current                 |
-|:---------------------------------------:|:---------------------------------------------:|
-| 0 (Current Control Mode)                | Goal Current is used as Target Current value  |
-| 5 (Current-based Position Control Mode) | Goal Current is used as Maximum Current value |
+|             Operating Mode              |                    Goal Current                    |
+|:---------------------------------------:|:--------------------------------------------------:|
+| 0 (Current Control Mode)                | Goal Current(604) is used as Target Current value  |
+| 5 (Current-based Position Control Mode) | Goal Current(604) is used as Maximum Current value |
 
 Also, [Goal Current(604)] cannot exceed Current Limit(30).
 
@@ -382,14 +383,14 @@ This value indicates present internal Temperature. For more details, please refe
 
 ## [Connector Information](#connector-information)
 
-|Item|RS-485|External Port|
-|:---:|:---:|:---:|
-|Pinout|`1` GND<br>`2` VDD<br>`3` DATA+<br>`4` DATA-|`1` GND<br>`2` VDD<br>`3` PORT 1<br>`4` PORT 2<br>`5` PORT 3<br>`6` PORT 4|
-|Diagram|![](/assets/images/dxl/jst_b4beha_diagram.png)|![](/assets/images/dxl/molex_5304706_diagram.png)|
-|Housing|[JST EHR-04]|![](/assets/images/dxl/molex_510210600.png)<br />[MOLEX 51021-0600]|
-|PCB Header|![](/assets/images/dxl/jst_b4beha.png)<br />[JST B4B-EH-A]|![](/assets/images/dxl/molex_530470610.png)<br />[MOLEX 53047-0610]|
-|Crimp Terminal|[JST SEH-001T-P0.6]|[MOLEX 50079-8100]|
-|Wire Gauge|21 AWG|21 AWG|
+|     Item     |                            RS-485                           |                              External Port                               |
+|:------------:|:-----------------------------------------------------------:|:------------------------------------------------------------------------:|
+|    Pinout    |        `1` GND<br>`2` VDD<br>`3` DATA+<br>`4` DATA-         |`1` GND<br>`2` VDD<br>`3` PORT 1<br>`4` PORT 2<br>`5` PORT 3<br>`6` PORT 4|
+|   Diagram    |       ![](/assets/images/dxl/jst_b4beha_diagram.png)        |           ![](/assets/images/dxl/molex_5304706_diagram.png)              |
+|   Housing    |   ![](/assets/images/dxl/JST_EHR-4.png)<br />[JST EHR-04]   |   ![](/assets/images/dxl/molex_510210600.png)<br />[MOLEX 51021-0600]    |
+|  PCB Header  | ![](/assets/images/dxl/jst_b4beha.png)<br />[JST B4B-EH-A]  |   ![](/assets/images/dxl/molex_530470610.png)<br />[MOLEX 53047-0610]    |
+|Crimp Terminal|                    [JST SEH-001T-P0.6]                      |                            [MOLEX 50079-8100]                            |
+|  Wire Gauge  |                           21 AWG                            |                                  21 AWG                                  |
 
 [JST EHR-04]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
 [JST B4B-EH-A]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
