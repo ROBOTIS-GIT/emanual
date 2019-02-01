@@ -317,6 +317,9 @@ $ colcon build --symlink-install
 **[Remote PC]** Load TurtleBot3 on turtlebot3 world
 ```bash
 $ ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
+```
+
+```bash
 $ ros2 param set /gazebo use_sim_time True
 ```
 
