@@ -238,6 +238,11 @@ CTRL-C to quit
 
 ## [Cartographer](#cartographer)
 
+- [Related a document for Cartographer](https://google-cartographer.readthedocs.io/en/latest/)
+- [Related a document for Cartographer_ros](https://google-cartographer-ros.readthedocs.io/en/latest/)
+
+The **SLAM (Simultaneous Localization and Mapping)** is a technique to draw a map by estimating current location in an arbitrary space. The SLAM is a well-known feature of TurtleBot from its predecessors. The video here shows you how accurately TurtleBot3 can draw a map with its compact and affordable platform.
+
 **[RemotePC]** Install Cartographer packages
 ```bash
 $ git clone -b crystal https://github.com/ROBOTIS-GIT/cartographer.git
@@ -273,17 +278,23 @@ $ cd ~/turtlebot3_ws && colcon build
 $ ros2 launch turtlebot3_cartographer cartographer.launch.py
 ```
 
-**[Remote PC]** Run Rviz2
-
-```bash
-$ rviz2
-```
-
 ![](/assets/images/platform/turtlebot3/ros2/platform_cartographer.png)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wzz54a8ppxI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## [Navigation2](#navigation2)
+
+- [Related a document for Navigation2](https://github.com/ros-planning/navigation2/blob/master/README.md)
+
+**Navigation** is to move the robot from one location to the specified destination in a given environment. For this purpose, a map that contains geometry information of furniture, objects, and walls of the given environment is required. As described in the previous [Cartographer](/docs/en/platform/turtlebot3/ros2/#cartographer) section, the map was created with the distance information obtained by the sensor and the pose information of the robot itself.
+
+The navigation enables a robot to move from the current pose to the designated goal pose on the map by using the map, robot’s encoder, IMU sensor, and distance sensor. The procedure for performing this task is as follows.
+
+### [Run Navigation2 Nodes] 
+
+```bash
+$ ros2 launch turtlebot3_navigation2 navigation2.launch.py
+```
 
 ## [Simulation](#simulation)
 
@@ -317,6 +328,15 @@ $ ros2 launch turtlebot3_cartographer cartographer.launch.py use_sim_time:=True
 ```bash
 $ ros2 launch turtlebot3_cartographer navigation2.launch.py use_sim_time:=True
 ```
+
+You should set some parameters to use simulation time. If you need futher information about it, please following [navigation2 repo](https://github.com/ros-planning/navigation2/tree/master/nav2_bringup)
+
+```bash
+$ ros2 param set /world_model use_sim_time True
+$ ros2 param set /global_costmap/global_costmap use_sim_time True
+$ ros2 param set /local_costmap/local_costmap use_sim_time True
+```
+
 ![](/assets/images/platform/turtlebot3/ros2/gazebo_navigation2.png)
 
 [ROS Answers]: https://answers.ros.org/questions/
