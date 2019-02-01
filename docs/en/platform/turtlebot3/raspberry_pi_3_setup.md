@@ -30,9 +30,9 @@ sidebar:
 <div class="notice--warning">{{ notice_01 | markdownify }}</div>
 
 {% capture notice_02 %}
-**NOTE**: There are two ways to install Linux and ROS to Raspberry Pi 3. 
+**NOTE**: There are two ways to install Linux and ROS to Raspberry Pi 3.
 - First method: If you prefer Ubuntu MATE, please take the first method `Install Linux (Ubuntu MATE)` below. This method should install the ROS and dependency packages after installing the Linux images. This instruction takes about 1 hours to install ROS and related packages for TurtleBot3.
-- Second method: We provide the Linux distro based on Raspbian. They are pre-installed with ROS and ROS-packages related TurtleBot3. It is available immediately without additional installation. If you want to use it, please take the second method `Install Linux based on Raspbian` below. 
+- Second method: We provide the Linux distro based on Raspbian. They are pre-installed with ROS and ROS-packages related TurtleBot3. It is available immediately without additional installation. If you want to use it, please take the second method `Install Linux based on Raspbian` below.
 {% endcapture %}
 <div class="notice--info">{{ notice_02 | markdownify }}</div>
 
@@ -182,7 +182,7 @@ $ source ~/.bashrc
 **WARNING**: The SDcard should have at least **8 GB** of empty space in order to install Linux on Raspberry Pi 3.
 {: .notice--warning}
 
-We provide the Linux distro image based on Raspbian. They are pre-installed with ROS and ROS-packages related TurtleBot3. It supports the TurtleBot3 Burger and Waffle Pi model. In this distro image, non-free software like Wolfram, Mathematica, Minecraft Pi and Oracle Java SE are removed. 
+We provide the Linux distro image based on Raspbian. They are pre-installed with ROS and ROS-packages related TurtleBot3. It supports the TurtleBot3 Burger and Waffle Pi model. In this distro image, non-free software like Wolfram, Mathematica, Minecraft Pi and Oracle Java SE are removed.
 
 ##### Remote PC
 - Download the Linux distro image based on Raspbian for TurtleBot3
@@ -193,13 +193,13 @@ We provide the Linux distro image based on Raspbian. They are pre-installed with
   - Visit [etcher.io](https://etcher.io/) and download and install the Etcher SD card image utility.
   - Run Etcher and select the Linux image you downloaded on your computer or laptop.
   - Select the SD card drive.
-  - Click Burn to transfer the image to the SD card. 
+  - Click Burn to transfer the image to the SD card.
 - (other methods to burn) You can use 'dd' command in Linux or use application 'win32diskimager' in Windows. For a complete guide, take a look [here](https://elinux.org/RPi_Easy_SD_Card_Setup#Using_the_Linux_command_line) (for Linux users) and [here](elinux.org/RPi_Easy_SD_Card_Setup#Using_the_Win32DiskImager_program) (for Windows users)
 
 ##### TurtleBot PC
 - After the installation, you can login with username **pi** and password **turtlebot**. In this case, you have to connect your Raspberry Pi to your monitor using an HDMI cable, and connect your keyboard and mouse to the Raspberry Pi.
 
-- Expand filesystem to use a whole SD card. 
+- Expand filesystem to use a whole SD card.
   ```
   sudo raspi-config
   (select 7 Advanced Options > A1 Expand Filesystem)
@@ -232,7 +232,7 @@ We provide the Linux distro image based on Raspbian. They are pre-installed with
 	```
 
 ##### Remote PC
-- Once you're done the wireless configuration, you can connect to Raspberry Pi via SSH from your desktop or laptop [(reference link)][enable_ssh_server_in_raspberry_pi]: 
+- Once you're done the wireless configuration, you can connect to Raspberry Pi via SSH from your desktop or laptop [(reference link)][enable_ssh_server_in_raspberry_pi]:
   ```
   ssh pi@192.168.xxx.xxx (The IP 192.168.xxx.xxx is your Raspberry Pi's IP or hostname)
   ```

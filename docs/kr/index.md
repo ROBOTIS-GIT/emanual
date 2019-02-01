@@ -44,6 +44,12 @@ sidebar:
 -
 <select id="pro_ctrl_table_select" onchange="window.location.href=this.value;">
     <option selected disabled hidden>PRO 시리즈</option>
+    <option value="/docs/kr/dxl/pro/h54-200-s500-ra/#eeprom-영역">H54-200-S500-R(A)</option>
+    <option value="/docs/kr/dxl/pro/h54-100-s500-ra/#eeprom-영역">H54-100-S500-R(A)</option>
+    <option value="/docs/kr/dxl/pro/h42-20-s300-ra/#eeprom-영역">H42-20-S300-R(A)</option>
+    <option value="/docs/kr/dxl/pro/m54-60-s250-ra/#eeprom-영역">M54-60-S250-R(A)</option>
+    <option value="/docs/kr/dxl/pro/m54-40-s250-ra/#eeprom-영역">M54-40-S250-R(A)</option>
+    <option value="/docs/kr/dxl/pro/m42-10-s260-ra/#eeprom-영역">M42-10-S260-R(A)</option>
     <option value="/docs/kr/dxl/pro/h54-200-s500-r/#eeprom-영역">H54-200-S500-R</option>
     <option value="/docs/kr/dxl/pro/h54-100-s500-r/#eeprom-영역">H54-100-S500-R</option>
     <option value="/docs/kr/dxl/pro/h42-20-s300-r/#eeprom-영역">H42-20-S300-R</option>
@@ -70,6 +76,10 @@ sidebar:
     <option value="/docs/kr/dxl/x/xh430-w350/#eeprom-영역">XH430-W350</option>
     <option value="/docs/kr/dxl/x/xh430-v210/#eeprom-영역">XH430-V210</option>
     <option value="/docs/kr/dxl/x/xh430-v350/#eeprom-영역">XH430-V350</option>
+    <option value="/docs/kr/dxl/x/xh540-w150/#eeprom-영역">XH540-W150</option>
+    <option value="/docs/kr/dxl/x/xh540-w270/#eeprom-영역">XH540-W270</option>
+    <option value="/docs/kr/dxl/x/xh540-v150/#eeprom-영역">XH540-v150</option>
+    <option value="/docs/kr/dxl/x/xh540-v270/#eeprom-영역">XH540-v270</option>
 </select>
 
 -

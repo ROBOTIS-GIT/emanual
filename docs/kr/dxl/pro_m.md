@@ -16,12 +16,18 @@ header:
 
 # [M54-60-S250-R](#m54-60-s250-r)
 
-[![](/assets/images/dxl/pro/h54-200-s500-r_product.jpg)](/docs/kr/dxl/pro/m54-60-s250-r/)
+![](/assets/images/dxl/pro/h54-200-s500-r_product.jpg)
+- [M54-60-S250-R](/docs/kr/dxl/pro/m54-60-s250-r/)
+- [M54-60-S250-R(A)](/docs/kr/dxl/pro/m54-60-s250-ra/)
 
 # [M54-40-S250-R](#m54-40-s250-r)
 
-[![](/assets/images/dxl/pro/h54-100-s500-r_product.jpg)](/docs/kr/dxl/pro/m54-40-s250-r/)
+![](/assets/images/dxl/pro/h54-100-s500-r_product.jpg)
+- [M54-40-S250-R](/docs/kr/dxl/pro/m54-40-s250-r/)
+- [M54-40-S250-R(A)](/docs/kr/dxl/pro/m54-40-s250-ra/)
 
 # [M42-10-S260-R](#m42-10-s260-r)
 
-[![](/assets/images/dxl/pro/m42-10-s260-r_product.jpg)](/docs/kr/dxl/pro/m42-10-s260-r/)
+![](/assets/images/dxl/pro/m42-10-s260-r_product.jpg)
+- [M42-10-S260-R](/docs/kr/dxl/pro/m42-10-s260-r/)
+- [M42-10-S260-R(A)](/docs/kr/dxl/pro/m42-10-s260-ra/)
