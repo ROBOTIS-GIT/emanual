@@ -328,6 +328,9 @@ $ ros2 param set /gazebo use_sim_time True
 **WARNING**: If you got error messages about `TF_OLD_DATA`, you should retry to set `use_sim_time` parameter onto `/gazebo` node.
 {: .notice--warning}
 
+Now you can try either Cartographer or the Navigation2 stack.
+Note that it's not possible to run both at the same time as Cartographer node and Map Server node would be publishing inconsistent data on the `map` topic. 
+
 **[Remote PC]** Launch Cartographer
 ```bash
 $ ros2 launch turtlebot3_cartographer cartographer.launch.py use_sim_time:=True
