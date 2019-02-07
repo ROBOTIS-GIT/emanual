@@ -7,15 +7,25 @@ share: true
 author_profile: false
 permalink: /docs/en/dxl/protocol2/
 sidebar:
-  title: Protocol 2.0
+  title: Protocol 2.1
   nav: "protocol2"
 ---
 
 # [Introduction](#introduction)
 
+**NOTE** : Protocol 2.1 is currently under development. Please open an [Issue](https://github.com/ROBOTIS-GIT/emanual/issues) to provide feedback.
+{: .notice}
+
+- Protocol 2.1 supported devices: To Be Determined
 - Protocol 2.0 supported devices: MX-28, MX-64, MX-106(MX Series with Firmware V39 or above), X Series, DYNAMIXEL Pro
+- Protocol 2.1 supported controllers: To Be Determined
 - Protocol 2.0 supported controllers: CM-150, CM-200, OpenCM9.04, OpenCR
 - Other: 2.0 protocol from R+ Smart app
+
+# Changelog
+## Protocol 2.1
+### Added
+This update provides support for ID conflict resolution. It is backwards compatible with Protocol 2.0 for all other applications.
 
 # [Instruction Packet](#instruction-packet)
 Instruction Packet is the command data sent to the Device.
@@ -59,6 +69,8 @@ The field that defines the type of command.
 | 0x83  |   Sync Write   |              For multiple devices, Instruction to write data on the same Address with the same length at once              |
 | 0x92  |   Bulk Read    |           For multiple devices, Instruction to read data from different Addresses with different lengths at once           |
 | 0x93  |   Bulk Write   |           For multiple devices, Instruction to write data on different Addresses with different lengths at once            |
+| 0xA1  |  Random Ping   |                   Instruction to ping multiple devices with the same ID, with a random delayed response                    |
+| 0xA2  |  Random Sleep  | Instruction that sleeps multiple devices with the same ID for a random amount of time before sending a wakeup notification |
 
 ## [Parameters](#parameters)
 
@@ -607,3 +619,108 @@ The field that indicates the processing result of Instruction Packet
 |P8|P9|P10|P11|P12|P13|CRC1|CRC2|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |0x02|0x1F|0x00|0x01|0x00|0x50|0xB7|0x68|
+
+## [Random Ping](#random-ping)
+**NOTE** : New in Protocol 2.1!
+{: .notice}
+
+### Description
+  - Instruction to detect ID conflicts between multiple Devices.
+  - Regardless of the Status Return Level of the Device, the Status Packet is always sent in reply to the Random Ping Instruction.
+  - When the Packet ID field is 0xFE(Broadcast ID) : The Random Ping Instruction is ignored.
+  - This Instruction is non-deterministic by design and may need to be run more than once.
+
+#### Random Delay
+The random delay is approximately 0.1 seconds * a random integer in the range of 0-255.
+This allows for a significant number of conflicting servos to be quickly detected.
+
+The random seed is generated from the Position, Voltage and Temperature of the Device.
+
+### Packet Parameters
+
+**NOTE** : Status Packet is received from each Device.
+{: .notice}
+
+|Status Packet|Description|
+|:---:|:---:|
+|Parameter 1|Model Number LSB|
+|Parameter 2|Model Number MSB|
+|Parameter 3|Version of Firmware|
+
+### Example
+#### Conditions
+- ID1(XM430-W210) : For Model Number 1030(0x0406), Version of Firmware 41(0x29)
+- ID1(XM430-W210) : For Model Number 1030(0x0406), Version of Firmware 40(0x28)
+- Instruction Packet ID : 1
+
+**NOTE** : The CRC values provided are examples and need to be updated.
+{: .notice}
+
+#### Random Ping Instruction Packet
+
+|H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|CRC1|CRC2|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|0xFF|0xFF|0xFD|0x00|0x01|0x03|0x00|0xA1|0x31|0x42|
+
+#### ID 1 Status Packets
+
+After a short delay the first Device responds with a Status Packet.
+|H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|ERR|PARAM1|PARAM2|PARAM3|CRC1|CRC2|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|0xFF|0xFF|0xFD|0x00|0x01|0x07|0x00|0x55|0x00|0x06|0x04|0x28|0x65|0x5D|
+
+Then after another delay the second Device responds with a Status Packet.
+|H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|ERR|PARAM1|PARAM2|PARAM3|CRC1|CRC2|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|0xFF|0xFF|0xFD|0x00|0x01|0x07|0x00|0x55|0x00|0x06|0x04|0x29|0x65|0x5D|
+
+## [Random Sleep](#random-sleep)
+**NOTE** : New in Protocol 2.1!
+{: .notice}
+
+### Description
+  - Instruction to resolve ID conflicts between multiple Devices.
+  - Regardless of the Status Return Level of the Device, the Status Packet is always sent in reply to the Random Sleep Instruction.
+  - When the Packet ID field is 0xFE(Broadcast ID) : The Random Sleep Instruction is ignored.
+  - This Instruction is non-deterministic by design and may need to be run more than once.
+
+#### Random Delay
+The random delay is approximately 1 second * a random integer in the range of 0-16.
+This provides time for the ID conflict resolution process.
+
+The random seed is generated from the Position, Voltage and Temperature of the Device.
+
+#### ID Conflict Resolution
+As each device returns a Status Packet there is a short window, which may be slightly less than 1 second, in which the controller can reassign the ID before the next servo wakes up. As this implementation is non-deterministic, it may take a few tries for the Devices to sleep for different amounts of time. Additionally, if a large number of devices are connected, multiple devices may be reassigned to a new ID. This will require multiple iterations of the process to provide each Device a unique ID.
+
+### Packet Parameters
+
+**NOTE** : Status Packet is received from each Device.
+{: .notice}
+
+### Example
+#### Conditions
+- ID1(XM430-W210) : For Model Number 1030(0x0406), Version of Firmware 40(0x28)
+- ID1(XM430-W210) : For Model Number 1030(0x0406), Version of Firmware 41(0x29)
+- Instruction Packet ID : 1
+
+**NOTE** : The CRC values provided are examples and need to be updated.
+{: .notice}
+
+#### Random Sleep Instruction Packet
+
+|H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|CRC1|CRC2|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|0xFF|0xFF|0xFD|0x00|0x01|0x03|0x00|0xA2|0x31|0x42|
+
+#### ID 1 Status Packets
+
+The first Device wakes up after its chosen random delay and returns a Status Packet.
+|H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|ERR|CRC1|CRC2|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|0xFF|0xFF|0xFD|0x00|0x01|0x04|0x00|0x55|0x00|0xA1|0x0C|
+
+After another random delay the next servo wakes and returns a Status Packet.
+|H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|ERR|CRC1|CRC2|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|0xFF|0xFF|0xFD|0x00|0x01|0x04|0x00|0x55|0x00|0xA1|0x0C|
