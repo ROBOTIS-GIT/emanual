@@ -180,7 +180,7 @@ sidebar:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/GO_Du32Em9o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 **[Turtlebot3 03 Navigation]**
-<iframe width="560" height="315" src="https://www.youtube.com/embed/GO_Du32Em9o" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/o4yjNPKj3ps" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 **[Turtlebot3 02 SLAM]**
 <iframe width="560" height="315" src="https://www.youtube.com/embed/85n0wepL03s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
