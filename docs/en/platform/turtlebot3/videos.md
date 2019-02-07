@@ -17,6 +17,33 @@ sidebar:
 
 ## [Videos from Open Source Team](#videos-from-open-source-team)
 
+**[TurtleBot3 58 ROS2 Navigation2]**
+<iframe width="560" height="315" src="https://www.youtube.com/embed/aQh8JqSrmCs" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+**[TurtleBot3 57 ROS2 Cartographer]**
+<iframe width="560" height="315" src="https://www.youtube.com/embed/PUr9k8CRNE0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+**[TurtleBot3 56 ROS2 Tutorials]**
+<iframe width="560" height="315" src="https://www.youtube.com/embed/wzz54a8ppxI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+**[TurtleBot3 54 Additional Sensors with TurtleBot3]**
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5g6pKx0hV28" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+**[TurtleBot3 53 AutoRace on RDS]**
+<iframe width="560" height="315" src="https://www.youtube.com/embed/WiI7SEFK6CE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+**[TurtleBot3 52 RDS Task Mission Tutorial]**
+<iframe width="560" height="315" src="https://www.youtube.com/embed/aqHBPEj5egY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+**[TurtleBot3 51 Machine Learning tutorial 3]**
+<iframe width="560" height="315" src="https://www.youtube.com/embed/5uIZU8PCHT8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+**[TurtleBot3 50 Machine Learning tutorial 2]**
+<iframe width="560" height="315" src="https://www.youtube.com/embed/807_cByUBSI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
+**[TurtleBot3 49 Machine Learning tutorial 1]**
+<iframe width="560" height="315" src="https://www.youtube.com/embed/s0qgunKt654" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 **[TurtleBot3 48 Autorace with Gazebo]**
 <iframe width="560" height="315" src="https://www.youtube.com/embed/5fZmuPxMZz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
