@@ -262,7 +262,7 @@ The field that indicates the processing result of Instruction Packet
 #### ID 1 Status Packet
 
 |H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|ERR|CRC1|CRC2|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |0xFF|0xFF|0xFD|0x00|0x01|0x04|0x00|0x55|0x00|0xA1|0x0C|
 
 ## [Reg Write](#reg-write)
@@ -665,11 +665,13 @@ The random seed is generated from the Position, Voltage and Temperature of the D
 #### ID 1 Status Packets
 
 After a short delay the first Device responds with a Status Packet.
+
 |H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|ERR|PARAM1|PARAM2|PARAM3|CRC1|CRC2|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |0xFF|0xFF|0xFD|0x00|0x01|0x07|0x00|0x55|0x00|0x06|0x04|0x28|0x65|0x5D|
 
 Then after another delay the second Device responds with a Status Packet.
+
 |H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|ERR|PARAM1|PARAM2|PARAM3|CRC1|CRC2|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |0xFF|0xFF|0xFD|0x00|0x01|0x07|0x00|0x55|0x00|0x06|0x04|0x29|0x65|0x5D|
@@ -716,11 +718,13 @@ As each device returns a Status Packet there is a short window, which may be sli
 #### ID 1 Status Packets
 
 The first Device wakes up after its chosen random delay and returns a Status Packet.
+
 |H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|ERR|CRC1|CRC2|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |0xFF|0xFF|0xFD|0x00|0x01|0x04|0x00|0x55|0x00|0xA1|0x0C|
 
 After another random delay the next servo wakes and returns a Status Packet.
+
 |H1|H2|H3|RSRV|ID|LEN1|LEN2|INST|ERR|CRC1|CRC2|
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |0xFF|0xFF|0xFD|0x00|0x01|0x04|0x00|0x55|0x00|0xA1|0x0C|
