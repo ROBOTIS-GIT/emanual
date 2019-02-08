@@ -132,7 +132,7 @@ $ cd ~/turtlebot3 && MicroXRCEAgent udp 2018
 **[TurtleBot]** Run Lidar application
 
 ```bash
-$ cd ~/turtlebot3 && ./turtlebot3_lidar
+$ ./turtlebot3/turtlebot3_lidar
 ```
 
 **[Remote PC]** Launch burger
@@ -278,6 +278,12 @@ $ ros2 launch turtlebot3_cartographer cartographer.launch.py
 
 ![](/assets/images/platform/turtlebot3/ros2/platform_cartographer.png)
 
+**[Remote PC]** Save the map
+
+```bash
+$ ros2 run nav2_map_server map_saver -f ~/map
+```
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/wzz54a8ppxI" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 ## [Navigation2](#navigation2)
@@ -332,6 +338,13 @@ $ ros2 param set /gazebo use_sim_time True
 ```bash
 $ ros2 launch turtlebot3_cartographer cartographer.launch.py use_sim_time:=True
 ```
+
+**[Remote PC]** Save the map
+
+```bash
+$ ros2 run nav2_map_server map_saver -f ~/map
+```
+
 ![](/assets/images/platform/turtlebot3/ros2/gazebo_cartographer.png)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/PUr9k8CRNE0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
