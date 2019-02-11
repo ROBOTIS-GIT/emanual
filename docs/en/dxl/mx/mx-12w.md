@@ -45,7 +45,7 @@ product_group: dxl_mx
 
 | Address | Size<br>(Byte) | Data Name                                   | Description                        | Access | Initial<br />Value |
 |:-------:|:--------------:|:--------------------------------------------|:-----------------------------------|:------:|:------------------:|
-|    0    |       2        | [Model Number](#model-number)               | Model Number                       |   R    |        104         |
+|    0    |       2        | [Model Number](#model-number)               | Model Number                       |   R    |        360         |
 |    2    |       1        | [Firmware Version](#firmware-version)       | Firmware Version                   |   R    |         -          |
 |    3    |       1        | [ID](#id)                                   | DYNAMIXEL ID                       |   RW   |         1          |
 |    4    |       1        | [Baud Rate](#baud-rate)                     | Communication Speed                |   RW   |         1          |
