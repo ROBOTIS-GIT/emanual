@@ -124,7 +124,7 @@ The OpenManipulator has the advantage of being compatible with TurtleBot3 Waffle
 
 ```bash
 $ export TURTLEBOT3_MODEL=${TB3_MODEL}
-$ roslaunch open_manipulator_with_tb3_tools slam.launch use_gazebo:=false
+$ roslaunch open_manipulator_with_tb3_tools slam.launch use_platform:=true
 ```
 
 ![](/assets/images/platform/turtlebot3/manipulation/open_manipulator_slam.png)
@@ -133,7 +133,7 @@ $ roslaunch open_manipulator_with_tb3_tools slam.launch use_gazebo:=false
 
 ```bash
 $ export TURTLEBOT3_MODEL=${TB3_MODEL}
-$ roslaunch open_manipulator_with_tb3_tools navigation.launch use_gazebo:=false
+$ roslaunch open_manipulator_with_tb3_tools navigation.launch use_platform:=true
 ```
 
 ![](/assets/images/platform/turtlebot3/manipulation/open_manipulator_navigation.png)
@@ -144,7 +144,7 @@ $ roslaunch open_manipulator_with_tb3_tools navigation.launch use_gazebo:=false
 
   ```bash
   $ export TURTLEBOT3_MODEL=${TB3_MODEL}
-  $ roslaunch open_manipulator_with_tb3_tools manipulation.launch use_gazebo:=false
+  $ roslaunch open_manipulator_with_tb3_tools manipulation.launch use_platform:=true
   ```
 
   ![](/assets/images/platform/turtlebot3/manipulation/open_manipulator_moveit_sim_1.jpg)
@@ -255,13 +255,13 @@ We provide the pick and place example for mobile manipulation. This example is u
 ### Bringup gazebo simulator
 
 ```bash
-$ roslaunch open_manipulator_with_tb3_gazebo rooms.launch
+$ roslaunch open_manipulator_with_tb3_gazebo rooms.launch use_platform:=false
 ```
 
 ### Launch navigation, moveIt!
 
 ```bash
-$ roslaunch open_manipulator_with_tb3_tools rooms.launch 
+$ roslaunch open_manipulator_with_tb3_tools rooms.launch use_platform:=false
 ```
 
 ### Launch task controller
