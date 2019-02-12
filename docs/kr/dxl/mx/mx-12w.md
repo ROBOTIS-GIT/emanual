@@ -242,4 +242,4 @@ Value 값이 250 이상인 경우 :
 {% include kr/dxl/download_center_notice.md %}
 
 [호환성 가이드]: http://www.robotis.com/service/compatibility_table.php?cate=d
-[케이블 호환성]: /assets/images/dxl/cable_compatibility.png
+[케이블 호환성]: /docs/kr/popup/cable_compatibility/

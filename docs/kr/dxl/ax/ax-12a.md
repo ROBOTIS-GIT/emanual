@@ -240,4 +240,4 @@ F3은 다음과 같은 방법으로 적용됩니다. F3은 AX-12A의 3면(좌,�
 {% include kr/dxl/485_ttl_connection.md %}
 
 [호환성 가이드]: http://www.robotis.com/service/compatibility_table.php?cate=d
-[케이블 호환성]: /assets/images/dxl/cable_compatibility.png
+[케이블 호환성]: /docs/kr/popup/cable_compatibility/
