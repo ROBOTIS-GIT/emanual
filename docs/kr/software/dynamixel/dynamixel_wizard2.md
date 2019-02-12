@@ -75,19 +75,19 @@ sidebar:
 
 프로그램의 메인화면은 검색된 제품을 통신포트, 통신속도, 모델명에 따라 분류하여 나타내며, 컨트롤 테이블 값을 변경하여 테스트할 수 있습니다.
 
-![](/assets/images/sw/dynamixel/wizard2/wizard2_main_002.png)
+![](/assets/images/sw/dynamixel/wizard2/wizard2_main_002_kr.png)
 
 ## [그래프 창](#그래프-창)
 
 표시항목을 설정하면 실시간으로 변화되는 값을 확인할 수 있습니다. 그래프 표시 항목 설정 방법은 [기본 기능 - 그래프]를 참고하세요
 
-![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_001.png)
+![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_001_kr.png)
 
 ## [패킷 창](#패킷-창)
 
 선택한 프로토콜 버전의 Instruction패킷을 직접 생성하여 전송해볼 수 있습니다. 또한 패킷통신목록에서 항목을 선택하면 상세정보를 확인할 수 있습니다.
 
-![](/assets/images/sw/dynamixel/wizard2/wizard2_packet_001.png)
+![](/assets/images/sw/dynamixel/wizard2/wizard2_packet_001_kr.png)
 
 # [다이나믹셀 위자드 2.0 설치](#다이나믹셀-위자드-20-설치)
 
