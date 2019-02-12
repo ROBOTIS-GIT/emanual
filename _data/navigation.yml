@@ -18914,16 +18914,16 @@ tps-10:
 pir-10:
   - title: "Introduction"
     titlekr: "개요"
-    url: /parts/sensor/cs-10/#introduction
-    urlkr: /parts/sensor/cs-10/#개요
+    url: /parts/sensor/pir-10/#introduction
+    urlkr: /parts/sensor/pir-10/#개요
   - title: "Specifications"
     titlekr: "사양"
-    url: /parts/sensor/cs-10/#specifications
-    urlkr: /parts/sensor/cs-10/#사양
+    url: /parts/sensor/pir-10/#specifications
+    urlkr: /parts/sensor/pir-10/#사양
   - title: "Pinout"
     titlekr: "핀 배열 정보"
-    url: /parts/sensor/cs-10/#pinout
-    urlkr: /parts/sensor/cs-10/#핀-배열-정보
+    url: /parts/sensor/pir-10/#pinout
+    urlkr: /parts/sensor/pir-10/#핀-배열-정보
 
 tms-10:
   - titlekr: "개요"
