@@ -176,7 +176,7 @@ xl430-w250:
   protocoltype:       *ttl
   physicalconnection: *ttl_connection
   id:                 *id
-  feedback:           *feedback
+  feedback:           "Position, Velocity, Load, Realtime tick, Trajectory, Temperature, Input Voltage, etc"
   material:           "Engineering Plastic"
   standbycurrent:     "52 [mA]"
 
@@ -205,7 +205,7 @@ xl430-w250:
   protocoltype:       *ttl
   physicalconnection: *ttl_connection
   id:                 *id
-  feedback:           *feedback
+  feedback:           "Position, Velocity, Load, Realtime tick, Trajectory, Temperature, Input Voltage, etc"
   material:           "Engineering Plastic"
   standbycurrent:     "49 [mA]"
 
