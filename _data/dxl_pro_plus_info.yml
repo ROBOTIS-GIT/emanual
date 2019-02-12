@@ -126,7 +126,7 @@ m42p-010-s260-r:
   conttorque:         "1.7 [Nm]"
   contcurrent:        "0.6 [A]"
   output:             "10 [W]"
-  optemperature:      *temperature
+  temperature:        *temperature
   opvoltage:          *voltage
   commandsignal:      *command
   commandsignalkr:    *command_kr
@@ -155,7 +155,7 @@ m54p-040-s250-r:
   conttorque:         "3.9 [Nm]"
   contcurrent:        "1.9 [A]"
   output:             "40 [W]"
-  optemperature:      *temperature
+  temperature:        *temperature
   opvoltage:          *voltage
   commandsignal:      *command
   commandsignalkr:    *command_kr
@@ -184,7 +184,7 @@ m54p-060-s250-r:
   conttorque:         "10.1 [Nm]"
   contcurrent:        "3.0 [A]"
   output:             "60 [W]"
-  optemperature:      *temperature
+  temperature:        *temperature
   opvoltage:          *voltage
   commandsignal:      *command
   commandsignalkr:    *command_kr

@@ -14,9 +14,9 @@ Please refer to [this link](https://micro-xrce-dds.readthedocs.io/en/latest/inst
 
   ```bash
   $ cd && git clone https://github.com/eProsima/Micro-XRCE-DDS-Agent.git
-  $ cd Micro-XRCE-DDS-Agent && git checkout 2c136dc429178dab79b231cc5d67a7c229cca77a
+  $ cd Micro-XRCE-DDS-Agent && git checkout a495c65faa964ddc068ac6e1249f17f5c9f92787
   $ mkdir build && cd build
-  $ cmake -DTHIRDPARTY=ON -DCONFIG_UDP_TRANSPORT_MTU=4096 -DCONFIG_SERIAL_TRANSPORT_MTU=4096 ..
+  $ cmake -DTHIRDPARTY=ON -DCONFIG_UDP_TRANSPORT_MTU=8192 -DCONFIG_SERIAL_TRANSPORT_MTU=8192 ..
   $ sudo make install
   $ mkdir ~/turtlebot3
   $ cp ../DEFAULT_FASTRTPS_PROFILES.xml ~/turtlebot3
@@ -27,7 +27,7 @@ Please refer to [this link](https://micro-xrce-dds.readthedocs.io/en/latest/inst
   $ cd && git clone https://github.com/eProsima/Micro-XRCE-DDS-Client.git
   $ cd Micro-XRCE-DDS-Client && git checkout 4549ef06040db30532604473f9aac20f9ad1559f
   $ nano client.config       #change value parameter below
-          CONFIG_UDP_TRANSPORT_MTU=4096
+          CONFIG_UDP_TRANSPORT_MTU=8192
   $ mkdir build && cd build
   $ cmake -DTHIRDPARTY=ON ..
   $ sudo make install

@@ -20,19 +20,18 @@ sidebar:
 ROS-enabled OpenManipulator is a full open robot platform consisting of **OpenSoftware**​, **OpenHardware** and **OpenCR(Embedded board)​**.
 
 ## [OpenSoftware](#opensoftware)
-OpenManipulator are based on ROS ​and OpenSource. ROS official hardware platform ,TurtleBot series has been supporting ‘TurtleBot Arm’. The OpenManipulator has full hardware compatibility with TurtleBot3​, and allows users to control it more easily by linking with the MoveIT! package. Even if you do not have a real robot, you can control the robot in the Gazebo simulator​.
+OpenManipulator are based on ROS ​and OpenSource. ROS official hardware platform ,TurtleBot series has been supporting ‘TurtleBot Arm’. The OpenManipulator has full hardware compatibility with TurtleBot3​. Users can also control it more easily by linking it with the MoveIt! package. Even if you do not have an actual robot, you can control the robot in the Gazebo simulator​.
 
 ## [OpenHardware](#openhardware)
-The OpenManipulator is oriented towards Open Hardware​. Most of the components except for some frames are uploaded as [STL files](http://www.robotis.com/service/download.php?no=690) that can be 3d printing. This allows users to modify the length of the link and the design of the robot to suit the intended use. The open manipulator also uses the **Dynamixel X ​series** used in TurtleBot 3. Dynamixel has a modular form and adopts daisy chain method. This allows users to easily change and add joints for some torque and degree of freedom they need. Taking advantage of these advantages, we are planning a total of seven different types (For example, Chain, SCARA, Link, Planar, Delta, Stewart and Linear) of OpenManipulator.
-
+OpenManipulator is an open-hardware oriented platform​. Most of the components are uploaded as [STL files](http://www.robotis.com/service/download.php?no=690) so that users can easily 3d print them. It also allows users to modify the length of the links or the design of the robot for their own purposes. OpenManipulator is made of **Dynamixel X ​Series** which is used in TurtleBot 3. 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_OnShape.png)
 
 ## [OpenCR (Embedded board)](#opencr-embedded-board)
-The OpenManipulator can also be controlled via [OpenCR] (Open-source Control module for ROS), the control board of TurtleBot3. OpenCR's computing power and real-time control are used to support forward, inverse kinematics, and profile control examples. In addition, OpenCR can interoperate with many functions provided by ROS through message communication with ROS, which will evolve into ROS 2.0 in the future.
+OpenManipulator can also be controlled using [OpenCR] (Open-source Control module for ROS), the control board used in TurtleBot3. The computing power and real-time controllability of OpenCR can support forward and inverse kinematics, and [profile control](http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/#profile-acceleration108) examples. Moreover, OpenCR is compatible with many functions provided by ROS through message-communicating with ROS. OpenCR wil support ROS 2.0 in the near future.
 
 ## [Dynamixel Examples](#dynamixel-examples)
 
-OpenManipulator is composed by [Dynamixel X series](http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/) and [3D printing parts](http://www.robotis.com/service/download.php?no=767). Dynamixel has a modular form and adopts daisy chain method. This allows users to easily change and add joints for some torque and degree of freedom they need. Moreover, growing 3D printing technology makes anyone can make anything they want with low cost and rapid time. We suggest some examples of links and safety parts. Taking advantage of these advantages, we are planning a total of seven different types of OpenManipulator.
+OpenManipulator is composed of [Dynamixel X series](http://emanual.robotis.com/docs/en/dxl/x/xm430-w350/) and [3D printing parts](http://www.robotis.com/service/download.php?no=767). Dynamixel has a modular form and adopts the daisy chain method. It allows users to easily add or remove joints for their own use. Taking advantage of this characteristic, users can build seven different types of OpenManipulator robots: Chain, SCARA, Link, Planar, Delta, Stewart and Linear.
 
 ## [Introduction Video](#introduction-video)
 
@@ -69,9 +68,69 @@ OpenManipulator is composed by [Dynamixel X series](http://emanual.robotis.com/d
 
 ** Coming Soon **
 
+# [Getting Started](#getting-started)
+This chapter is for users who are new to OpenManipulator. The manual has an enormous amount of content, but this chapter explains how information is divided.
+
+## [About OpenManipulator](#about-openmanipulator)
+First of all, collect information from the Overview and Specifications pages to get an overall understanding of OpenManipulator.
+
+## [OpenManipulator Setup](#openmanipulator-setup)
+When you have enough understanding about OpenManipulator from above step, here are the hardware and software setups. It is recommended to proceed in the following order.
+
+1. [Hardware Setup](/docs/en/platform/openmanipulator/#hardware-setup): The OpenManipulator is delivered as a non-assembled part to the box. Assemble the OpenManipulator according to the instructions.  
+[U2D2](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=3288&keyword=u2d2) + [U2D2 Power Hub Board](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=3332&GC=GD0B01) or [OpenCR](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=3289&GC=GD0B0100) is required to operate OpenManipulator.
+Please prepare [U2D2](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=3288&keyword=u2d2) + [U2D2 Power Hub Board](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=3332&GC=GD0B01) or [OpenCR](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=3289&GC=GD0B0100) when you want to operate on ROS environment, prepare [OpenCR](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=3289&GC=GD0B0100) when you want to operate on embedded system. 
+In both case,  [SMPS 12V5A](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=1369&keyword=smps) is required to supply powers to DYNAMIXEL.
+
+2. [Software Setup](/docs/en/platform/openmanipulator/#pc-setup): If you want to run OpenManipulator in ROS environment, please install Linux, ROS and ROS package on PC according to [PC Setup](/docs/en/platform/openmanipulator/#pc-setup) chapter. If you want to run the OpenManipulator on an embedded system, install the software on your PC and set up OpenCR by following the [How to control on OpenCR](/docs/en/platform/openmanipulator/#how-to-control-on-opencr) chapter.
+
+<img src="/assets/images/platform/openmanipulator/OpenManipulator_all_setup.png" width="500">
+
+## [Let's try basic manipulation](#lets-try-basic-manipulation)
+Once you have completed the above steps, run OpenManipulator through the provided Controller package. You can command the OpenManipulator to move specific position via ROS messages. As package for publishing messages, we provid the following examples.
+
+- [GUI Program](/docs/en/platform/openmanipulator/#gui-program) 
+- [Teleoperation](/docs/en/platform/openmanipulator/#teleoperation)
+
+OpenManipulator can also be operated using MoveIt!. You can run the controller package that uses MoveIt! by changing the variables in the launch file of the controller package. Please refer to the following chapters and try out various motions with MoveIt!.
+
+- [MoveIt!](/docs/en/platform/openmanipulator/#moveit)
+
+If you want to use the embedded system (OpenCR) to operate the OpenManipulator, you can use the Processing and RC100 controllers to perform various manipulations by referring to the following chapters.
+
+- [Basic Manipulation on OpenCR](/docs/en/platform/openmanipulator/#basic-manipulation-on-opencr)
+
+
+![](/assets/images/platform/openmanipulator/OpenManipulator_basic_manipul.png)
+
+## [Challenge Various Applications](#challenge-various-applications)
+
+We provide examples of AR marker recognition using Astra pro, Realsence D435, and Raspberry Pi Camera V2. Refer the example below to challenge the camera-based manipulation applications.
+
+- [Camera Application](/docs/en/platform/openmanipulator/#camera-application) 
+
+We are proposing a way to replace and manipulate tool(gripper) of manipulator to take advantage of OpenManipulator for a wider range of applications. Try the new application using the Pen holder or Vacuum gripper as shown in the example below, and create your own tool to challenge more applications.
+
+- [Tool Modiffication](/docs/en/platform/openmanipulator/#tool-modiffication) 
+
+OpenManipulator has a complete hardware combination with Turtlebot3 waffle. Challenge your mobile manipulation by assembling TurtleBot3 waffle and OpenManipulator.
+
+- [Mobile Manipulation](/docs/en/platform/openmanipulator/#mobile-manipulation)
+
+![](/assets/images/platform/openmanipulator/OpenManipulator_application.png)
+
+## [Let's design my own manipulator](#lets-design-my-own-manipulator)
+
+Modify the hardware(DOF, structure) and software(kinematics, trajectory) of OpenManipulator and manipulate your own OpenManipulator.  
+We provide a variety of [OpenManipulator Friends](/docs/en/platform/openmanipulator/#friends) as examples of hardware transformations. Try to control the manipulator with different structure and enjoy it. And try out the kinematics solving algorithm for the different structure.
+
+<img src="/assets/images/platform/openmanipulator/OpenManipulator_friends.png" width="800">
+
 # [Hardware Setup](#hardware-setup)
 
 ## [Part Lists](#part-lists)
+
+- Necessary Parts
 
 |                   | Part Name              |  Quantity  |
 |-------------------|------------------------|:----------:|
@@ -114,14 +173,15 @@ OpenManipulator is composed by [Dynamixel X series](http://emanual.robotis.com/d
 | .                 | RUBBER PAD             |     2      |
 
 
-- Optional parts
+- Optional Parts
 
 |            | Part Name  |  Quantity  |
 |------------|------------|:----------:|
 | **Powers** | [SMPS 12V5A](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=1369&keyword=smps) |     1      |
 | **Boards** | [OpenCR](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=3289&GC=GD0B0100)     |     1      |
 | .          | [U2D2](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=3288&keyword=u2d2)       |     1      |
-| **Plate**  | Base Plate-02 |     1      |
+| .          | [U2D2 Power Hub Board](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=3332&GC=GD0B01)       |     1      |
+| **Plate**  | [Base Plate-02](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=3331) |     1      |
 | .          | .          |     1      |
 
 
@@ -131,38 +191,70 @@ OpenManipulator is composed by [Dynamixel X series](http://emanual.robotis.com/d
 
 ## [3D Printed Parts](#3d-printed-parts)
 
-We offer 3D printed parts to safety. User can modify cad files and 3D Printed it to assemble OpenManipulator.
+We provide the 3D CAD files of OpenManipulator parts. User can easily modify and print them.
 
-- CAD Files ([Onshape](http://www.robotis.com/service/download.php?no=690), [Thingiverse](https://www.thingiverse.com/thing:3069574))
+- 3D CAD Files ([Onshape](http://www.robotis.com/service/download.php?no=690), [Thingiverse](https://www.thingiverse.com/thing:3069574))
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_OnShape.png)
 
 ## [Assembly Manual](#assembly-manual)
 
-OpenManipulator is delivered as unassembled parts in the boxes. Follow the instructions to assemble it.
+OpenManipulator is delivered as unassembled parts in the box. Follow the following instruction to assemble it.
 
-- `Download PDF` [Assembly manual for OpenManipulator](http://www.robotis.com/service/download.php?no=1255)
+- `Download PDF` [Assembly Manual for OpenManipulator](http://www.robotis.com/service/download.php?no=1255)
 
-Below video might be help you.
+- `Assembly Video`
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/eJTIeDepmNo" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+
+## [Board Setup](#board-setup)
+
+### [U2D2](#u2d2)
+Connect micro USB (connected to PC), Dynamixel(OpenManipulator), and 12V Power to U2D2 and U2D2 power hub board as shown below. 
+
+<img src="/assets/images/platform/openmanipulator/OpenManipulator_u2d2_setup.png" width="500">
+
+**NOTE**: U2D2 and U2D2 power hub board are required when operating OpenManipulator using U2D2.
+{: .notice--info}
+
+
+### [OpenCR](#opencr)
+This chapter explains how to set up OpenCR as a communication board between ROS Packages of PC and DYNAMIXEL of OpenManipulator. If you want to operate OpenManipulator on embedded system (OpenCR) without ROS, please refer [how to control on opencr](/docs/en/platform/openmanipulator/#how-to-control-on-opencr).
+
+Connect micro USB (connected to PC), Dynamixel(OpenManipulator), and 12V Power to OpenCR as shown below. 
+
+<img src="/assets/images/platform/openmanipulator/OpenManipulator_opencr_setup.png" width="500">
+
+Please refer the detailed description of [OpenCR](http://emanual.robotis.com/docs/en/parts/controller/opencr10/)
+
+Download Arduino IDE and load OpenCR board on it
+
+- [Arduino IDE for using OpenCR](/docs/en/parts/controller/opencr10/#arduino-ide)
+
+Find `usb to dxl` example source codes.
+
+Go to `Examples` → `OpenCR` → `10.Etc` → `usb_to_dxl` on Arduino IDE for OpenCR.
+
+![](/assets/images/platform/openmanipulator/OpenManipulator_opencr_utd_setup.png)
+
+Upload the `usb to dxl` example source to OpenCR.
 
 # [PC Setup](#pc-setup)
 
 {% capture notice_01 %}
 **NOTE**: 
-- This instructions were tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
-- If you want to control OpenManipulator on OpenCR(Embedded board) instead of ROS, please set it up as described in [How to Control on OpenCR](/docs/en/platform/openmanipulator/#how-to-control-on-opencr).
+- The following instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+- If you would like to control OpenManipulator on OpenCR (Embedded board) instead of using ROS, please set it up as described in [How to Control on OpenCR](/docs/en/platform/openmanipulator/#how-to-control-on-opencr).
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
 ## [Install Ubuntu on PC](#install-ubuntu-on-pc)
 
-Download and install the `Ubuntu 16.04` on the `PC (your desktop or laptop PC)` from the following link.
+Download and install `Ubuntu 16.04` on your PC.
 
 - [Download link](https://www.ubuntu.com/download/alternative-downloads)
 
-If you need more help for installing Ubuntu, check out the step-by-step guide from the link below.
+If you need more help with installing Ubuntu, check out the step-by-step guide from the link below.
 
 - [Install ubuntu desktop](https://www.ubuntu.com/download/desktop/install-ubuntu-desktop)
 
@@ -170,7 +262,7 @@ If you need more help for installing Ubuntu, check out the step-by-step guide fr
 
 ![](/assets/images/platform/turtlebot3/logo_ros.png)
 
-The following script will allow you to simplify the ROS installation procedure. Run the following command in a terminal window. The terminal application can be found with the Ubuntu search icon on the top left corner of the screen, or you can use shortcut key for terminal is `Ctrl`+`Alt`+`T`. After install ROS, please reboot PC.
+The following script will allow you to simplify the ROS installation procedure. Run the following command in a terminal window. The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. The shortcut key to open a terminal is `Ctrl`+`Alt`+`t`. After installing ROS, please reboot PC.
 
 ``` bash
 $ sudo apt-get update
@@ -186,9 +278,9 @@ If you prefer manual installation, please following the link below.
 - [Manual installation of ROS Kinetic](http://wiki.ros.org/kinetic/Installation/Ubuntu)
 
 ## [Install ROS Packages](#install-ros-packages)
-Install dependent packages for the OpenManipulator. Run the following command in a terminal window.
+Install dependent packages for OpenManipulator. Run the following command in a terminal window.
 
-**NOTE**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`+`Alt`+`T`.
+**NOTE**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`+`Alt`+`t`.
 {: .notice--info}
 
 ``` bash
@@ -200,34 +292,35 @@ $ cd ~/catkin_ws/src/
 $ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK.git
 $ git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench.git
 $ git clone https://github.com/ROBOTIS-GIT/dynamixel-workbench-msgs.git
-$ git clone https://github.com/ROBOTIS-GIT/robotis_manipulator.git
 $ git clone https://github.com/ROBOTIS-GIT/open_manipulator.git
 $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_msgs.git
 $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_simulations.git
+$ git clone https://github.com/ROBOTIS-GIT/robotis_manipulator.git
 $ cd ~/catkin_ws && catkin_make
 ```
 
-If catkin_make command is completed without any errors, preparation for OpenManipulator is done.
+If the catkin_make command has been completed without any errors, all the preparations for using OpenManipulator are done.
 
-## [Usb Settings](#usb-settings)
+## [USB Settings](#usb-settings)
+
+**NOTE**:If you are using OpenCR instead of U2D2 as a board, you can skip this step.
+{: .notice--info}
 
 The following commands allow to use USB port
 
 ``` bash
 $ rosrun open_manipulator_controller create_udev_rules
 ```
-{% capture notice_01 %}
-**NOTE**: 
-- This run file make usb latency timer **1 ms**. If you want to check this setting, Run the following command in a terminal window.  
+
+**TIP**: This entered command set USB latency timer to **1 ms**. If you would like to see the setting, run the following command in a terminal.  
 `cat /sys/bus/usb-serial/devices/ttyUSB0/latency_timer`
-{% endcapture %}
-<div class="notice--info">{{ notice_01 | markdownify }}</div>
+{: .notice--success}
 
 # [Controller](#controller)
 
-Open Manipulator Controller is provided for basic manipulation of OpenManipulator. You can control the dynamixel of OpenManipulator and check states of OpenManipulator through [messages](/docs/en/platform/openmanipulator/#message-list) of the controller. 
+The OpenManipulator controller provides basic manipulation of OpenManipulator. You can control the dynamixel of OpenManipulator and check states of OpenManipulator through [messages](/docs/en/platform/openmanipulator/#message-list) of the controller. 
 
-**NOTE**: This instruction was tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+**NOTE**: This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 {: .notice--info}
 
 ## [Run roscore](#run-roscore)
@@ -240,19 +333,70 @@ $ roscore
 
 ## [Launch Controller](#launch-controller)
 
-Launch Open Manipulator Controller to start [Basic Manipulation](/docs/en/platform/openmanipulator/#basic-manipulation).
+Before you launch controller, let's check `open_manipulator_controller` launch file in `open_manipulator_controller` package.
+
+  ```
+  <launch>
+    <arg name="use_robot_name"         default="open_manipulator"/>
+
+    <arg name="dynamixel_usb_port"     default="/dev/ttyUSB0"/>
+    <arg name="dynamixel_baud_rate"    default="1000000"/>
+
+    <arg name="control_period"         default="0.010"/>
+
+    <arg name="use_platform"           default="true"/>
+
+    <arg name="use_moveit"             default="false"/>
+    <arg name="planning_group_name"    default="arm"/>
+    <arg name="moveit_sample_duration" default="0.050"/>
+
+    <group if="$(arg use_moveit)">
+      <include file="$(find open_manipulator_controller)/launch/open_manipulator_moveit.launch">
+        <arg name="robot_name"      value="$(arg use_robot_name)"/>
+        <arg name="sample_duration" value="$(arg moveit_sample_duration)"/>
+      </include>
+    </group>
+
+    <node name="$(arg use_robot_name)" pkg="open_manipulator_controller" type="open_manipulator_controller" output="screen" args="$(arg dynamixel_usb_port) $(arg dynamixel_baud_rate)">
+        <param name="using_platform"       value="$(arg use_platform)"/>
+        <param name="using_moveit"         value="$(arg use_moveit)"/>
+        <param name="planning_group_name"  value="$(arg planning_group_name)"/>
+        <param name="control_period"       value="$(arg control_period)"/>
+        <param name="moveit_sample_duration"  value="$(arg moveit_sample_duration)"/>
+    </node>
+
+  </launch>
+  ```
+
+**Parameters List** : The parameters list is used to set control environments.
+- `use_robot_name`
+- `dynamixel_usb_port`
+- `dynamixel_baud_rate`
+- `control_period`
+- `use_platform`
+- `use_moveit`
+- `planning_group_name`
+- `moveit_sample_duration`
+
+`use_robot_name` is a parameter to set manipulator name(namespace of ROS messages).  
+`dynamixel_usb_port` is a parameter to set use port to connected with Dynamixel of OpenManipulator. If you use U2D2, it should be set **/dev/ttyUSB@**. If you use OpenCR, it should be set **/dev/ttyACM@** (@ indicates the port number connected to the Dynamixel).  
+`dynamixel_baud_rate` is a parameter to set baud rate of dynamixel. default baud rate of dynamixel used in OpenManipulator is 1000000.  
+`control_period` is a parameter to set communication period between dynamixel and PC (control loop time).  
+`use_platform` is a parameter that sets whether to use the actual OpenManipulator or OpenManipulator simulation. please refer [Gazebo Simulation](/docs/en/platform/openmanipulator/#gazebo-simulation) chapter.  
+`use_moveit`, `planning_group_name` and `moveit_sample_duration` are parameters supposed to set loading [move_group](http://docs.ros.org/kinetic/api/moveit_tutorials/html/doc/move_group_interface/move_group_interface_tutorial.html) package. please refer [MoveIt!](/docs/en/platform/openmanipulator/#moveit) chapter.
+
+After set the parameters, launch the OpenManipulator controller to start [basic manipulation](/docs/en/platform/openmanipulator/#basic-manipulation).
 
 ``` bash
 $ roslaunch open_manipulator_controller open_manipulator_controller.launch
 ```
 
-**WARNING**: If you start the controller in a pose where the components of OpenManipulator are in contact with each other, the OpenManipulator will not move by joint limit. 
-It is recommended to place the Open Manipulator in the following Pose and start the control.  
+**WARNING**: It is recommended to place OpenManipulator at the following pose and start the controller so that each component of OpenManipulator does not conflict.  
 <img src="/assets/images/platform/openmanipulator/open_manipulator_start_pose.png" width="250">
 <!-- ![](/assets/images/platform/openmanipulator/open_manipulator_start_pose.png) -->
 {: .notice--warning}
 
-If OpenManipulator controller launched successfully, the terminal will represent below messages.
+If the OpenManipulator controller has been launched successfully, the terminal will show the following message.
 
 ```
 SUMMARY
@@ -284,14 +428,14 @@ Gripper Dynamixel ID : 15, Model Name :XM430-W350
 
 {% capture notice_01 %}
 **TIP**: 
-- If you can't load Dynamixels, please check your Dynamixels information. You can use [find_dynamixel example](/docs/en/software/dynamixel/dynamixel_workbench/#find-dynamixels) in Dynamixel-Workbench packages.   
+- If you can't load Dynamixels, please check your Dynamixels settings using the following command from the Dynamixel-Workbench packages.   
 `rosrun dynamixel_workbench_controllers find_dynamixel /dev/ttyUSB0`  
 Even if you can't find any Dynamixels, please check firmware to use ROBOTIS software ([R+ Manager 2.0](http://emanual.robotis.com/docs/en/software/rplus2/manager/) or [R+ Manager 1.0](http://emanual.robotis.com/docs/en/software/rplus2/manager/))
-- If you want to change Dynamixel ID, Please check [`OpenManipulator.cpp`](https://github.com/ROBOTIS-GIT/open_manipulator/blob/be2859a0506b4e941a19435c0a07562b41768a27/open_manipulator_libs/src/OpenManipulator.cpp#L40) in open_manipulator_lib folder. The default ID is that **joint is 11, 12, 13, 14 and gripper is 15**
+- If you would like to change Dynamixel ID, please check [`OpenManipulator.cpp`](https://github.com/ROBOTIS-GIT/open_manipulator/blob/be2859a0506b4e941a19435c0a07562b41768a27/open_manipulator_libs/src/OpenManipulator.cpp#L40) in the open_manipulator_lib folder. The default ID is **11, 12, 13, 14** for joints and **15** for the gripper
 {% endcapture %}
 <div class="notice--success">{{ notice_01 | markdownify }}</div>
 
-**NOTE**: open_manipulator_controller is compatible with [Protocol 2.0](/docs/en/dxl/protocol2/). Because [Protocol 1.0](/docs/en/dxl/protocol1/) doesn't support SyncRead instructions that makes access multiple Dynamixels simultaneously. [`MX2`](/docs/en/dxl/mx/mx-64-2/), `X` and `Pro` series can be controllered by Protocol 2.0 but `AX`, `RX`, `EX` series can't. 
+**NOTE**: open_manipulator_controller is compatible with [Protocol 2.0](/docs/en/dxl/protocol2/). Since [Protocol 1.0](/docs/en/dxl/protocol1/) doesn't support SyncRead instructions that has access to multiple Dynamixels simultaneously. Protocol 2.0 supports [`MX2`](/docs/en/dxl/mx/mx-64-2/), `X` and `Pro` series, but it does not support `AX`, `RX` and `EX`. 
 {: .notice--info}
 
 ## [Check Setting](#check-setting)
@@ -300,8 +444,8 @@ Even if you can't find any Dynamixels, please check firmware to use ROBOTIS soft
 
 {% capture notice_01 %}
 **NOTE**: 
-- This instructions were tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
-- This instructions are supposed to be running on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.
+- The below instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+- This instruction is supposed to be running on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.
 - Make sure to run the [Open Manipulator controller](/docs/en/platform/openmanipulator/#launch-controller) instructions before running the instructions below.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
@@ -594,12 +738,12 @@ This parameter is descripted on OpenManipulator.cpp in open_manipulator_libs pkg
 
 {% capture notice_01 %}
 **NOTE**: 
-- This instructions were tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
-- This instructions are supposed to be running on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.
+- This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+- This instruction is supposed to be run on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
-Load an OpenManipulator on RViz.
+Load OpenManipulator on RViz.
 
 ``` bash
 $ roslaunch open_manipulator_description open_manipulator_rviz.launch
@@ -607,26 +751,22 @@ $ roslaunch open_manipulator_description open_manipulator_rviz.launch
 
 {% capture notice_01 %}
 **NOTE**: 
-- When the user launch the Rviz with the [OpenManipulator controller](/docs/en/platform/openmanipulator/#launch-controller), the OpenManipulator model of Rviz is synchronized with the actual OpenManipulator.
-- If the user wants to check only model of OpenManipulator without control the actual OpenManipulator, the user can launch the Rviz without the OpenManipulator controller.
+- If you launched the [OpenManipulator controller](/docs/en/platform/openmanipulator/#launch-controller) before launching the open_manipulator_controller file, the robot model on Rviz would be synchronized with the actual robot.
+- If the user would like to check only model of OpenManipulator without control the actual OpenManipulator, the user can launch the Rviz without the OpenManipulator controller.
 The user can change each joint by GUI, if the user launch only Rviz by executing the following command :
 `$ roslaunch open_manipulator_description open_manipulator_rviz.launch use_gui:=true`
-- `Red Box` is showing end-effector position.
+
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_rviz.png)
 
-# [Basic Manipulation](#basic-manipulation)
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/dctx7Y6zNKA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 ## [Message List](#message-list)
 
 {% capture notice_01 %}
 **NOTE**: 
-- This instructions were tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
-- This instructions are supposed to be running on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.
+- This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+- This instruction is supposed to be running on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.
 - Make sure to run the [Open Manipulator controller](/docs/en/platform/openmanipulator/#launch-controller) instructions before running the instructions below.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
@@ -637,32 +777,31 @@ Open Manipulator Controller provides **topic** and **service** messages to contr
 
 #### [Topic Monitor](#topic-monitor)
 
-In order to check the topics of OpenManipulator Controller, we will use [rqt][rqt] provided by ROS. The rqt is a Qt-based framework for GUI development for ROS. The rqt is a tool that allows users to easily see the topic status by displaying all the topics in the topic list. There are topic names, types, bandwidth, Hz, value in GUI.
+In order to check the topics of OpenManipulator controller, you can use [rqt][rqt] provided by ROS. Rqt is a Qt-based framework for GUI development for ROS. Rqt allows users to easily see topic status by displaying all topics on a topic list. You can see topic name, type, bandwidth, Hz and value on rqt.
 
-Run the rqt.
+Run rqt.
 ``` bash
 $ rqt
 ```
-![](/assets/images/platform/openmanipulator/rqt_om.png)
+ <img src="/assets/images/platform/openmanipulator/rqt_om.png" width="1000">
 
 **TIP**: If rqt is not displayed, select the `plugin` -> `Topics` -> `Topic Monitor`.
 {: .notice--success}
 
-When rqt is first run, the topic values are not monitored. To monitor the topic, click the checkbox next to each topic.
+Topics without their checkboxes clicked will not be monitored. To monitor topics, click on the checkboxes next to topic names.
 
-![](/assets/images/platform/openmanipulator/rqt_1.png)
+ <img src="/assets/images/platform/openmanipulator/rqt_1.png" width="1000">
 
-If you want to see more detail topic message, click the `▶` button next to each checkbox.
+If you would like to see more detail topic message, click the `▶` button next to each checkbox.
 
-![](/assets/images/platform/openmanipulator/rqt_2.png)
-
+ <img src="/assets/images/platform/openmanipulator/rqt_2.png" width="1000">
 
 [rqt]: http://wiki.ros.org/rqt
 
 #### [Published Topic List](#published-topic-list)
 
 **Published Topic List** :
-The topic list is published by open_manipulator_controller.
+A list of topics that the open_manipulator_controller publishes.
 - `/open_manipulator/joint_states`
 - `/open_manipulator/gripper/kinematics_pose`
 - `/open_manipulator/states`
@@ -670,32 +809,31 @@ The topic list is published by open_manipulator_controller.
 **NOTE**: These topics are messages for checking the status of the robot regardless of the robot's motion.
 {: .notice--info}
 
-`/open_manipulator/joint_states`([sensor_msgs/JointState]{: .popup}) is a message indicating the states of the joints in OpenManipulator. **"name"** of this message indicates joint component names OpenManipulator have.  **"effort"** indicates currents of the joint Dynamixels. **"position"** and **"velocity"** indicates the angle and angular velocity of each joints.
+`/open_manipulator/joint_states`([sensor_msgs/JointState]{: .popup}) is a message indicating the states of joints of OpenManipulator. **"name"** indicates joint component names.  **"effort"** shows currents of the joint Dynamixels. **"position"** and **"velocity"** indicates angles and angular velocities of joints.
 
-![](/assets/images/platform/openmanipulator/rqt_joint_states.png)
+ <img src="/assets/images/platform/openmanipulator/rqt_joint_states.png" width="1000">
 
-`/open_manipulator/gripper/kinematics_pose`([open_manipulator_msgs/KinematicsPose]{: .popup}) is a message indicating the pose(position and orientation) in [task space]{: .popup}. **"position"** indicates x, y, and z value of the center of the end-effector(tool). **"Orientation"** indicates the direction of the end-effector(tool) as quaternion.
+`/open_manipulator/gripper/kinematics_pose`([open_manipulator_msgs/KinematicsPose]{: .popup}) is a message indicating pose (position and orientation) in [task space]{: .popup}. **"position"** indicates the x, y and z values of the center of the end-effector (tool). **"Orientation"** indicates the direction of the end-effector (tool) as quaternion.
 
-![](/assets/images/platform/openmanipulator/rqt_kinematic_pose.png)
+ <img src="/assets/images/platform/openmanipulator/rqt_kinematic_pose.png" width="1000">
 
-`/open_manipulator/states`([open_manipulator_msgs/OpenManipulatorState]{: .popup}) is a message indicating the status of OpenManipulator. **"open_manipulator_actuator_state"** indicates whether the torque of the actuator(Dynamixel) is enable("ACTUATOR_ENABLE") or disable("ACTUATOR_DISABLE"). **"open_manipulator_moving_state"** indicates whether OpenManipulator is "MOVING" or "STOPPED" along the trajectory.
+`/open_manipulator/states`([open_manipulator_msgs/OpenManipulatorState]{: .popup}) is a message indicating the status of OpenManipulator. **"open_manipulator_actuator_state"** indicates whether actuators (Dynamixels) are enabled ("ACTUATOR_ENABLE") or disabled ("ACTUATOR_DISABLE"). **"open_manipulator_moving_state"** indicates whether OpenManipulator is moving along the trajectory ("IS_MOVING") or stopped ("STOPPED").
 
-![](/assets/images/platform/openmanipulator/rqt_states.png)
+ <img src="/assets/images/platform/openmanipulator/rqt_states.png" width="1000">
 
 #### [Subscribed Topic List](#published-topic-list)
 
 **Subscribed Topic List**: 
-The topic list is subscribed by open_manipulator_controller.
+A list of topics that the open_manipulator_controller subscribes.
 - `/open_manipulator/option`
 
 **NOTE**: These topics are messages for checking the status of the robot regardless of the robot's motion.
 {: .notice--info}
 
-`/open_manipulator/option`([std_msgs::String]{: .popup}) is used to set OpenManipulator options (std :: string type). 
-- **"print_open_manipulator_setting"** : request display "Manipulator Description" to open_manipulator_controller. 
+`/open_manipulator/option`([std_msgs::String]{: .popup}) is used to set OpenManipulator options. 
+- **"print_open_manipulator_setting"** : request the open_manipulator_controller controller to display "Manipulator Description". 
 
- 
-![](/assets/images/platform/openmanipulator/rqt_option.png)
+ <img src="/assets/images/platform/openmanipulator/rqt_option.png" width="1000">
 
 
 In addition, you can monitor topics through rqt whenever you have a topic added in your controller.
@@ -706,12 +844,12 @@ In addition, you can monitor topics through rqt whenever you have a topic added 
 
 #### [Service Server List](#service-server-list)
 
-**NOTE**: These services are messages to operate the OpenManipulator or to change the status of the Dynamixels of OpenManipulator.
+**NOTE**: These services are messages to operate OpenManipulator or to change the status of the Dynamixels of OpenManipulator.
 {: .notice--info}
 
 
 **Service Server List** :
-This is Service Server list of open_manipulator_controller.
+A list of service servers that open_manipulator_controller has.
 
 - `/open_manipulator/goal_joint_space_path` ([open_manipulator_msgs/SetJointPosition]{: .popup})  
 The user can use this service to create a trajectory in the [joint space]{: .popup}. The user inputs the angle of the target joint and the total time of the trajectory.
@@ -726,16 +864,16 @@ The user can use this service to create a trajectory in the [task space]{: .popu
 - `/open_manipulator/goal_task_space_path_orientation_only` ([open_manipulator_msgs/SetKinematicsPose]{: .popup})  
 The user can use this service to create a trajectory in the [task space]{: .popup}. The user inputs the kinematics pose(orientation only) of the OpenManipulator end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
 
-- `/open_manipulator/goal_joint_space_path_to_present` ([open_manipulator_msgs/SetJointPosition]{: .popup})  
+- `/open_manipulator/goal_joint_space_path_from_present` ([open_manipulator_msgs/SetJointPosition]{: .popup})  
 The user can use this service to create a trajectory from present joint angle in the [joint space]{: .popup}. The user inputs the angle of the target joint to be changed and the total time of the trajectory.
 
-- `/open_manipulator/goal_task_space_path_to_present` ([open_manipulator_msgs/SetKinematicsPose]{: .popup})  
+- `/open_manipulator/goal_task_space_path_from_present` ([open_manipulator_msgs/SetKinematicsPose]{: .popup})  
 The user can use this service to create a trajectory from present kinematics pose in the task space. The user inputs the kinematics pose to be changed of the OpenManipulator end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
 
-- `/open_manipulator/goal_task_space_path_to_present_position_only` ([open_manipulator_msgs/SetKinematicsPose]{: .popup})  
+- `/open_manipulator/goal_task_space_path_from_present_position_only` ([open_manipulator_msgs/SetKinematicsPose]{: .popup})  
 The user can use this service to create a trajectory from present kinematics pose in the [task space]{: .popup}. The user inputs the kinematics pose(position only) of the OpenManipulator end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
 
-- `/open_manipulator/goal_task_space_path_to_present_orientation_only` ([open_manipulator_msgs/SetKinematicsPose]{: .popup})  
+- `/open_manipulator/goal_task_space_path_from_present_orientation_only` ([open_manipulator_msgs/SetKinematicsPose]{: .popup})  
 The user can use this service to create a trajectory from present kinematics pose in the [task space]{: .popup}. The user inputs the kinematics pose(orientation only) of the OpenManipulator end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
 
 - `/open_manipulator/goal_tool_control` ([open_manipulator_msgs/SetJointPosition]{: .popup})  
@@ -749,42 +887,46 @@ If the user set false at set_actuator_state valuable, the actuator will be disab
 - `/open_manipulator/goal_drawing_trajectory` ([open_manipulator_msgs/SetDrawingTrajectory]{: .popup})  
 The user can use this service to create a drawing trajectory. The user can create the circle, the rhombus, the heart, and the straight line trajectory.
 
+# [Basic Manipulation](#basic-manipulation)
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/dctx7Y6zNKA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## [GUI Program](#gui-program)
 
 {% capture notice_01 %}
 **NOTE**: 
-- This instructions were tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+- This instructions has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 - This instructions are supposed to be running on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.
-- Make sure to run the [Open Manipulator controller](/docs/en/platform/openmanipulator/#launch-controller) instructions before running the instructions below.
+- Make sure to run the [Open Manipulator controller](/docs/en/platform/openmanipulator/#launch-controller) instructions before running the instruction below.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
-  The user can use GUI program to manipulate the OpenManipulator.  Launch `open_manipulator_control_gui` node.  This program shows the status of the manipulator and provides the ability to operate the manipulator.
+  You can use the GUI program to manipulate OpenManipulator. Launch `open_manipulator_control_gui` node.  This program shows the status of and allows users to control OpenManipulator.
 
   ``` bash
   $ roslaunch open_manipulator_control_gui open_manipulator_control_gui.launch
   ```
-  To manipulate the OpenManipulator, first click the `Timer Start` button.  
+  To controll OpenManipulator, first click on the `Timer Start` button.  
   ![](/assets/images/platform/openmanipulator/OpenManipulator_GUI.png)  
 
-  The user can check the states of the OpenManipulator (joint states, kinematics pose).  
+  To check the status of the OpenManipulator (joint states, kinematics pose).  
   ![](/assets/images/platform/openmanipulator/OpenManipulator_GUI2.png)  
 
-  The user can manipulate the OpenManipulator in the [joint space]{: .popup}. Enter the joint angles and total time of the trajectory. Then click the `send` button.  
+  To manipulate the OpenManipulator in the [joint space]{: .popup}. Enter the joint angles and total time of the trajectory. Then click the `send` button.  
   ![](/assets/images/platform/openmanipulator/OpenManipulator_GUI3.png)  
 
-  The user can manipulate the OpenManipulator in the [task space]{: .popup}. Enter the kinematics pose of the OpenManipulator end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory. Then click the `send` button.  
+  To manipulate the OpenManipulator in the [task space]{: .popup}. Enter the kinematics pose of the OpenManipulator end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory. Then click the `send` button.  
   ![](/assets/images/platform/openmanipulator/OpenManipulator_GUI4.png)  
   
-  The user can create a drawing trajectory with the OpenManipulator. First, choose the drawing trajectory type(line, circle, rhombus, heart). And enter the parameters according to the drawing trajectory type and the total time of the drawing trajectory. Then click the `send` button.  
+  To create a drawing trajectory with the OpenManipulator. First, choose the drawing trajectory type(line, circle, rhombus, heart). And enter the parameters according to the drawing trajectory type and the total time of the drawing trajectory. Then click the `send` button.  
   ![](/assets/images/platform/openmanipulator/OpenManipulator_GUI5.png)  
 
 ## [Teleoperation](#teleoperation)
 {% capture notice_01 %}
 **NOTE**: 
-- This instructions were tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
-- This instructions are supposed to be running on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.
-- Make sure to run the [Open Manipulator controller](/docs/en/platform/openmanipulator/#launch-controller) instructions before running the instructions below.
+- This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+- This instruction is supposed to be run on PC with ROS packages installed in. Please run the instruction below on your PC ROS packages installed in.
+- Make sure to run [Open Manipulator controller](/docs/en/platform/openmanipulator/#launch-controller) instructions before running the instructions below.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
@@ -800,8 +942,7 @@ The user can use this service to create a drawing trajectory. The user can creat
   ``` bash
   $ roslaunch open_manipulator_teleop open_manipulator_teleop_keyboard.launch 
   ```
-  If the node is successfully launched, the following instruction will be appeared to the terminal window.
-
+  If the node is successfully launched, the following instruction will appeare in the terminal window.
 
   ```
   ---------------------------
@@ -837,7 +978,6 @@ The user can use this service to create a drawing trajectory. The user can creat
   ```
 
 ### [PS4 Joystick](#ps4-joystick)
-Connect PS4 joystick to the PC via Bluetooth or with USB cable.  
 
 Install packages for teleoperation using PS4 joystick.
 
@@ -845,23 +985,37 @@ Install packages for teleoperation using PS4 joystick.
 $ sudo apt-get install ros-kinetic-joy ros-kinetic-joystick-drivers ros-kinetic-teleop-twist-joy
 $ sudo pip install ds4drv
 ```
-Launch teleoperation packages for PS4 joystick.
+
+Connect PS4 joystick to the PC via Bluetooth using the following command
+
 ``` bash
 $ sudo ds4drv
+```
+
+Enter pairing mode with PS4 by pressing and holding Playstation button + share button for 10 sec. If the light on PS4 turns blue, enter the following commands in terminal and control OpenManipulator.
+
+``` bash
+$ export ROS_NAMESPACE=/open_manipulator
+$ roslaunch teleop_twist_joy teleop.launch
+
 $ roslaunch open_manipulator_teleop open_manipulator_teleop_joystick.launch
 ```
 
 ### [XBOX 360 Joystick](#xbox-360-joystick)
-Connect XBOX 360 joystick to the PC with Wireless Adapter or USB cable.
 
 Install packages for teleoperation using XBOX 360 joystick.
 
 ``` bash
 $ sudo apt-get install xboxdrv ros-kinetic-joy ros-kinetic-joystick-drivers ros-kinetic-teleop-twist-joy
 ```
-Launch teleoperation packages for XBOX 360 joystick.
+Connect XBOX 360 joystick to the PC with Wireless Adapter or USB cable, and launch teleoperation packages for XBOX 360 joystick.
+
 ``` bash
 $ sudo xboxdrv --silent
+
+$ export ROS_NAMESPACE=/open_manipulator
+$ roslaunch teleop_twist_joy teleop.launch
+
 $ roslaunch open_manipulator_teleop open_manipulator_teleop_joystick.launch
 ```
 
@@ -870,7 +1024,7 @@ $ roslaunch open_manipulator_teleop open_manipulator_teleop_joystick.launch
 **TIP**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`-`Alt`-`T`.
 {: .notice--success}
 
-Before you launch MoveIt!, let's check `open_manipulator_moveit` launch file.
+Before you launch controller using MoveIt!, check `open_manipulator_controller` launch file in `open_manipulator_controller` package.
 
   ```
   <launch>
@@ -889,6 +1043,7 @@ Before you launch MoveIt!, let's check `open_manipulator_moveit` launch file.
 
     <group if="$(arg use_moveit)">
       <include file="$(find open_manipulator_controller)/launch/open_manipulator_moveit.launch">
+        <arg name="robot_name"      value="$(arg use_robot_name)"/>
         <arg name="sample_duration" value="$(arg moveit_sample_duration)"/>
       </include>
     </group>
@@ -905,25 +1060,29 @@ Before you launch MoveIt!, let's check `open_manipulator_moveit` launch file.
   ```
 
 **Parameters List** :
-The parameters list is supposed to set loading [move_group](http://docs.ros.org/kinetic/api/moveit_tutorials/html/doc/move_group_interface/move_group_interface_tutorial.html) package.
+The below parameters can be used to load [move_group](http://docs.ros.org/kinetic/api/moveit_tutorials/html/doc/move_group_interface/move_group_interface_tutorial.html) package.
 - `use_moveit`
 - `planning_group_name`
 - `moveit_sample_duration`
 
-`use_moveit` is a parameter to set whether user use MoveIt!  
-`planning_group_name` is a parameter when you set in [setup_assistant](http://docs.ros.org/kinetic/api/moveit_tutorials/html/doc/setup_assistant/setup_assistant_tutorial.html#step-4-add-planning-groups)  
-`moveit_sample_duration` is a parameter is to set sampling time when joint trajectory is planned from MoveIt!
+`use_moveit` is a parameter to set whether to use MoveIt!  
+`planning_group_name` is a parameter to set in [setup_assistant](http://docs.ros.org/kinetic/api/moveit_tutorials/html/doc/setup_assistant/setup_assistant_tutorial.html#step-4-add-planning-groups)  
+`moveit_sample_duration` is a parameter to set sampling time when joint trajectory is planned from MoveIt!
 
-After set the parameters, load a controller.
+After set the parameters, launch the open_manipulator_controller.
 
   ``` bash
   $ roslaunch open_manipulator_controller open_manipulator_controller.launch use_moveit:=true
   ```
 
+**Warning!**     
+When launching the controller to use MoveIt!, [OpenManipulator launch file](/docs/en/platform/openmanipulator/#launch-controller) must be turned off.
+{: .notice--warning}
+
   ![](/assets/images/platform/openmanipulator/moveit_launch.png)  
 
 **Service Server List** :
-This is Service Server list of open_manipulator_controller.
+A list of MoveIt!-related service server that open_manipulator_controller has.
 
 - `/open_manipulator/moveit/get_joint_position` ([open_manipulator_msgs/GetJointPosition]{: .popup})  
 The user can use this service to receives a joint position which is calculated by move_group.  
@@ -937,7 +1096,7 @@ The user can use this service to create a trajectory in the [joint space]{: .pop
 - `/open_manipulator/moveit/set_kinematics_pose` ([open_manipulator_msgs/SetKinematicsPose]{: .popup})  
 The user can use this service to create a trajectory in the [task space]{: .popup} by move_group. The user inputs the kinematics pose(orientation only) of the OpenManipulator end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
 
-**TIP**: If someone want to use inverse kinematics with `position_only`. Please check `open_manipulator_moveit` -> `config` -> `kinematics.yaml`. And change a parameter(position_only_ik) to **True**.
+**TIP**: If you would like to use inverse kinematics with `position_only`, check `open_manipulator_moveit` -> `config` -> `kinematics.yaml` and set `position_only_ik` parameter to **True**.
 {: .notice--success}
 
   ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_moveit_real_1.png)
@@ -953,20 +1112,24 @@ The user can use this service to create a trajectory in the [task space]{: .popu
 
 {% capture notice_01 %}
 **NOTE**: 
-- This instructions were tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
-- This instructions are supposed to be running on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.
+- This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+- This instruction is supposed to be run on PC with ROS packages installed in.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
 ## [Controller for gazebo](#controller-for-gazebo)
 
-Launch an OpenManipulator controller for gazebo simulation.
+Launch the open_manipulator_controller for gazebo simulation.
 
   ``` bash
   $ roslaunch open_manipulator_controller open_manipulator_controller.launch use_platform:=false
   ```
-**NOTE** : To control the OpenManipulator in the Gazebo environment using the Open Manipulator Controller, the controller must set the **use_platform** parameter to **false** because it needs to send messages to gazebo instead of Platform.
-{: .notice--info}
+{% capture notice_01 %}
+**NOTE**: 
+- To control the OpenManipulator in the Gazebo environment using the Open Manipulator Controller, the controller must set the **use_platform** parameter to **false** because it needs to send messages to gazebo instead of Platform.
+- If you want to manipulate the OpenManipulator using Moveit within the Gazebo simulator, you should also convert the **use_moveit** to **ture** in open_manipulator_controller launch file.
+{% endcapture %}
+<div class="notice--info">{{ notice_01 | markdownify }}</div>
 
 If the OpenManipulator controller for gazebo simulation Launched successfully, the terminal will represent below messages.
 
@@ -1000,10 +1163,9 @@ Joint Dynamixel ID : 14, Model Name : XM430-W350
 Gripper Dynamixel ID : 15, Model Name :XM430-W350
 {: .notice--info}
 
-
 ## [Launch gazebo](#launch-gazebo)
 
-Load an OpenManipulator on Gazebo simulator and click Play button `▶`.
+Load OpenManipulator on Gazebo simulator and click on Play `▶` button.
 
   ``` bash
   $ roslaunch open_manipulator_gazebo open_manipulator_gazebo.launch
@@ -1042,10 +1204,14 @@ Open an [open_manipulator_control_gui](/docs/en/platform/openmanipulator/#gui-pr
 # [How to Control on OpenCR](#how-to-control-on-opencr)
 
 OpenManipulator is compatible with **OpenCR**. We offer API to easily control manipulator.
-This API supports Dynamixel, Dynamixel X including protocol 1.0 and 2.0. Furthermore, this code can be used Friends of OpenManipulator.
+This API supports Dynamixel, Dynamixel X including protocol 1.0 and 2.0. Furthermore, this code can be used for Friends of OpenManipulator.
 User can make thier code in **Arduino IDE** and simulate or control using **Processing** GUI.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/fT1Wv6qHknI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+**NOTE**: OpenManipulator controller with OpenCR does not use ROS 
+The way OpenManipulator is controlled by OpenCR (embedded system) and ROS is completely different. In the method using ROS, the controller runs in PC, but in OpenCR control, the controller runs in OpenCR without ROS. 
+{: .notice--info}
 
 ## [Setup](#setup) 
 
@@ -1068,6 +1234,14 @@ Go to `Examples` → `OpenManipulator` → `example` → `Chain` → `open_manip
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_chain_arduino.png)
 
+Upload the example source to OpenCR.
+
+**Tip**: If an error of `cmd_read_board_name fail: 0xF020` occurs constantly during upload, please refer to [OpenCR e-manual](http://emanual.robotis.com/docs/en/parts/controller/opencr10/#firmware-recovery-mode) to enter the firmware recovery mode and upload the source code again after entering mode.
+. 
+{: .notice--success}
+
+
+
 ## [Processing](#processing)
 
 Download Processing and load OpenCR board on it
@@ -1085,7 +1259,7 @@ $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_processing.git
 ```
 
 Open processing source code file 
-(`open_manipulator_processing`>`Chain`>`Chain.pde`) on Processing IDE, and Run it.
+(`open_manipulator_processing` → `Chain` → `Chain.pde`) on Processing IDE, and Run it.
 
 **NOTE**: Upload **OpenCR example source code** to OpenCR before run **processing source code**.
 {: .notice--info}
@@ -1362,11 +1536,11 @@ You have to change the parameters according to the type of camera. Run the follo
 
 #### Astra Pro
   ``` bash
-  $ roslaunch open_manipulator_ar_markers ar_pose.launch use_gazebo:=false camera_model:=astra_pro
+  $ roslaunch open_manipulator_ar_markers ar_pose.launch camera_model:=astra_pro
   ```
 #### Realsense D435
   ``` bash
-  $ roslaunch open_manipulator_ar_markers ar_pose.launch use_gazebo:=false camera_model:=realsense_d435
+  $ roslaunch open_manipulator_ar_markers ar_pose.launch camera_model:=realsense_d435
   ```
 #### Raspberry Pi Camera V2
 **[Raspberry Pi]**
@@ -1375,7 +1549,7 @@ You have to change the parameters according to the type of camera. Run the follo
   ```
 **[Remote PC]**
   ``` bash
-  $ roslaunch open_manipulator_ar_markers ar_pose.launch use_gazebo:=false camera_model:=raspicam
+  $ roslaunch open_manipulator_ar_markers ar_pose.launch camera_model:=raspicam
   ```
     
 #### Rviz
@@ -1595,34 +1769,34 @@ Open processing source code file (`open_manipulator_processing` → `Scara` → 
 
 |                   | Part Name                        | Quantity | Link                                                                                                                                                                           |
 |-------------------|----------------------------------|-------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Chassis Parts** | BASE FRAME                       | 1     | [Download Link](https://www.thingiverse.com/thing:3069557)                                                                                                                     |
-| .                 | BASE LINK                        | 1     | [Download Link](https://www.thingiverse.com/thing:3069557)                                                                                                                     |
-| .                 | ROTATION BASE                    | 1     | [Download Link](https://www.thingiverse.com/thing:3069557)                                                                                                                     |
-| .                 | HOLDER A                         | 1     | [Download Link](https://www.thingiverse.com/thing:3069557)                                                                                                                     |
-| .                 | HOLDER B                         | 1     | [Download Link](https://www.thingiverse.com/thing:3069557)                                                                                                                     |
-| .                 | LINK 50                          | 1     | [Download Link](https://www.thingiverse.com/thing:3069557)                                                                                                                     |
-| .                 | LINK 200 A                       | 1     | [Download Link](https://www.thingiverse.com/thing:3069557)                                                                                                                     |
-| .                 | LINK 50 FOR 250                  | 1     | [Download Link](https://www.thingiverse.com/thing:3069557)                                                                                                                     |
-| .                 | LINK 200 FOR 250                 | 1     | [Download Link](https://www.thingiverse.com/thing:3069557)                                                                                                                     |
-| .                 | LINK 200 B                       | 4     | [Download Link](https://www.thingiverse.com/thing:3069557)                                                                                                                     |
-| .                 | TRIANGLE LINK                    | 1     | [Download Link](https://www.thingiverse.com/thing:3069557)                                                                                                                     |
-| .                 | TOOL LINK                        | 1     | [Download Link](https://www.thingiverse.com/thing:3069557)                                                                                                                     |
-| **Actuators**     | Dynamixel XM430-W350-T           | 3     | [Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2923&GC=GD080101)                                                                                        |
-| **Cables**        | CABLE_3P_180MM                   | 1     | [Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2755&GC=GD0B0105&page=2)                                                                                 |
-| .                 | CABLE_3P_240MM                   | 1     | [Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2926&GC=GD0B0105&page=3)                                                                                 |
-| **Miscellaneous** | FHS_M2x3mm                       | 16    | [Shop Link](https://us.misumi-ec.com/vona2/detail/221000547315/?Inch=0&CategorySpec=00000071822%3A%3A2%0900000071552%3A%3A3)                                                   |
-| .                 | FHS_M2x6mm                       | 4     | [Shop Link](https://us.misumi-ec.com/vona2/detail/221000547315/?Inch=0&CategorySpec=00000071822%3A%3A2%0900000071552%3A%3A6)                                                   |
-| .                 | FHS_M2.5x5mm                     | 8     | [Shop Link](https://us.misumi-ec.com/vona2/detail/221000547315/?Inch=0&CategorySpec=00000071822%3A%3A2.5%0900000071552%3A%3A5)                                                 |
-| .                 | FHS_M2.5x10mm                    | 4     | [Shop Link](https://us.misumi-ec.com/vona2/detail/221000547315/?Inch=0&CategorySpec=00000071822%3A%3A2.5%0900000071552%3A%3A10)                                                |
-| .                 | FHS_M3x10mm                      | 4     | [Shop Link](https://us.misumi-ec.com/vona2/detail/221000547315/?Inch=0&CategorySpec=00000071822%3a%3a2.5%0900000071552%3a%3a10&curSearch=%7b%22field%22%3a%22%40search%22%2c%22seriesCode%22%3a%22221000547315%22%2c%22innerCode%22%3a%22%22%2c%22sort%22%3a1%2c%22specSortFlag%22%3a0%2c%22allSpecFlag%22%3a0%2c%22page%22%3a1%2c%22pageSize%22%3a%2260%22%2c%2200000071822%22%3a%22nvd00000000000002%22%2c%2200000071552%22%3a%22mig00000001426443%22%7d&Tab=wysiwyg_area_0)                                                |
-| .                 | NUT_M2                           | 4     | [Shop Link](https://us.misumi-ec.com/vona2/detail/110300250540/?Inch=0&CategorySpec=00000070281%3A%3A2)                                                                        |
-| .                 | NUT_M2.5                         | 4     | [Shop Link](https://us.misumi-ec.com/vona2/detail/110300250540/?Inch=0&CategorySpec=00000070281%3A%3A2.5)                                                                      |
-| .                 | PSCBRJ6-9                        | 18    | [Shop Link](https://us.misumi-ec.com/vona2/detail/110302637270/?HissuCode=PSCBRJ6-9&PNSearch=PSCBRJ6-9&KWSearch=PSCBRJ6-9&searchFlow=results2type)                             |
-| .                 | MSRB6-1.0                        | 40    | [Shop Link](https://us.misumi-ec.com/vona2/detail/110100142970/?HissuCode=MSRB6-1.0&PNSearch=MSRB6-1.0&KWSearch=MSRB6-1.0&searchFlow=results2type)                             |
-| .                 | NSFMR6-38                        | 1     | [Shop Link](https://jp.misumi-ec.com/vona2/detail/110300086920/?HissuCode=NSFMR6-38&PNSearch=NSFMR6-38&KWSearch=NSFMR6-38&searchFlow=results2products)                         |
-| .                 | NSFMR6-42                        | 1     | [Shop Link](https://jp.misumi-ec.com/vona2/detail/110300086920/?HissuCode=NSFMR6-42&PNSearch=NSFMR6-42&KWSearch=NSFMR6-42&searchFlow=results2products)                         |
-| .                 | NSFMR6-24                        | 6     | [Shop Link](https://jp.misumi-ec.com/vona2/detail/110300086920/?HissuCode=NSFMR6-24&PNSearch=NSFMR6-24&KWSearch=NSFMR6-24&searchFlow=results2products)                         |
-| .                 | Ball Bearing(O.D 10mm / I.D 6mm) | 20    | [Shop Link](https://us.misumi-ec.com/vona2/detail/221000531116/?CategorySpec=unitType%3a%3a1%0900000044017%3a%3amig00000001446936%0900000043985%3a%3amig00000001455783&Inch=0) |
+| **Plate**         | Base Plate-02                    | 1     |[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=3331)|
+| **Chassis Parts** | BASE LINK                        | 1     | [Download Link](https://www.thingiverse.com/thing:3069557)|
+| .                 | ROTATION BASE                    | 1     | [Download Link](https://www.thingiverse.com/thing:3069557)|
+| .                 | HOLDER A                         | 1     | [Download Link](https://www.thingiverse.com/thing:3069557)|
+| .                 | HOLDER B                         | 1     | [Download Link](https://www.thingiverse.com/thing:3069557)|
+| .                 | LINK 50                          | 1     | [Download Link](https://www.thingiverse.com/thing:3069557)|
+| .                 | LINK 200 A                       | 1     | [Download Link](https://www.thingiverse.com/thing:3069557)|
+| .                 | LINK 50 FOR 250                  | 1     | [Download Link](https://www.thingiverse.com/thing:3069557)|
+| .                 | LINK 200 FOR 250                 | 1     | [Download Link](https://www.thingiverse.com/thing:3069557)|
+| .                 | LINK 200 B                       | 4     | [Download Link](https://www.thingiverse.com/thing:3069557)|
+| .                 | TRIANGLE LINK                    | 1     | [Download Link](https://www.thingiverse.com/thing:3069557)|
+| .                 | TOOL LINK                        | 1     | [Download Link](https://www.thingiverse.com/thing:3069557)|
+| **Actuators**     | Dynamixel XM430-W350-T           | 3     | [Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2923&GC=GD080101)|
+| **Cables**        | CABLE_3P_180MM                   | 2     | [Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2755&GC=GD0B0105&page=2)|
+| .                 | CABLE_3P_240MM                   | 1     | [Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2926&GC=GD0B0105&page=3)|
+| **Miscellaneous** | FHS_M2x3mm                       | 16    | [Shop Link](https://us.misumi-ec.com/vona2/detail/221000547315/?Inch=0&CategorySpec=00000071822%3A%3A2%0900000071552%3A%3A3)|
+| .                 | FHS_M2x6mm                       | 4     | [Shop Link](https://us.misumi-ec.com/vona2/detail/221000547315/?Inch=0&CategorySpec=00000071822%3A%3A2%0900000071552%3A%3A6)|
+| .                 | FHS_M2.5x5mm                     | 8     | [Shop Link](https://us.misumi-ec.com/vona2/detail/221000547315/?Inch=0&CategorySpec=00000071822%3A%3A2.5%0900000071552%3A%3A5)|
+| .                 | FHS_M2.5x10mm                    | 4     | [Shop Link](https://us.misumi-ec.com/vona2/detail/221000547315/?Inch=0&CategorySpec=00000071822%3A%3A2.5%0900000071552%3A%3A10)|
+| .                 | FHS_M3x10mm                      | 4     | [Shop Link](https://us.misumi-ec.com/vona2/detail/221000547315/?Inch=0&CategorySpec=00000071822%3a%3a2.5%0900000071552%3a%3a10&curSearch=%7b%22field%22%3a%22%40search%22%2c%22seriesCode%22%3a%22221000547315%22%2c%22innerCode%22%3a%22%22%2c%22sort%22%3a1%2c%22specSortFlag%22%3a0%2c%22allSpecFlag%22%3a0%2c%22page%22%3a1%2c%22pageSize%22%3a%2260%22%2c%2200000071822%22%3a%22nvd00000000000002%22%2c%2200000071552%22%3a%22mig00000001426443%22%7d&Tab=wysiwyg_area_0)|
+| .                 | NUT_M2                           | 4     | [Shop Link](https://us.misumi-ec.com/vona2/detail/110300250540/?Inch=0&CategorySpec=00000070281%3A%3A2)|
+| .                 | NUT_M2.5                         | 4     | [Shop Link](https://us.misumi-ec.com/vona2/detail/110300250540/?Inch=0&CategorySpec=00000070281%3A%3A2.5)|
+| .                 | PSCBRJ6-9                        | 18    | [Shop Link](https://us.misumi-ec.com/vona2/detail/110302637270/?HissuCode=PSCBRJ6-9&PNSearch=PSCBRJ6-9&KWSearch=PSCBRJ6-9&searchFlow=results2type)|
+| .                 | MSRB6-1.0                        | 40    | [Shop Link](https://us.misumi-ec.com/vona2/detail/110100142970/?HissuCode=MSRB6-1.0&PNSearch=MSRB6-1.0&KWSearch=MSRB6-1.0&searchFlow=results2type)|
+| .                 | NSFMR6-38                        | 1     | [Shop Link](https://jp.misumi-ec.com/vona2/detail/110300086920/?HissuCode=NSFMR6-38&PNSearch=NSFMR6-38&KWSearch=NSFMR6-38&searchFlow=results2products)|
+| .                 | NSFMR6-42                        | 1     | [Shop Link](https://jp.misumi-ec.com/vona2/detail/110300086920/?HissuCode=NSFMR6-42&PNSearch=NSFMR6-42&KWSearch=NSFMR6-42&searchFlow=results2products)|
+| .                 | NSFMR6-24                        | 6     | [Shop Link](https://jp.misumi-ec.com/vona2/detail/110300086920/?HissuCode=NSFMR6-24&PNSearch=NSFMR6-24&KWSearch=NSFMR6-24&searchFlow=results2products)|
+| .                 | Ball Bearing(O.D 10mm / I.D 6mm) | 20    | [Shop Link](https://us.misumi-ec.com/vona2/detail/221000531116/?CategorySpec=unitType%3a%3a1%0900000044017%3a%3amig00000001446936%0900000043985%3a%3amig00000001455783&Inch=0)|
 
 <!-- [Parts of OpenManipulator](https://docs.google.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit#gid=1110711693) -->
 

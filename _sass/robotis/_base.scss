@@ -322,6 +322,12 @@ ul > li > ul {
   margin-left: 1.2em;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  padding: 0 0 0 1em;
+}
+
 blockquote {
   word-wrap: break-word;
   margin: 0 0.5em 1em 0;
