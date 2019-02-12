@@ -222,7 +222,7 @@ xc430-w240:
   weight:             "65 [g]"
   dimensions:         "28.5 x 46.5 x 34 [mm]"
   gearratio:          "245.22 : 1"
-  stalltorque:        "1.4 [N.m] (at 9.0 [V], 1.1 [A])<br />**1.7 [N.m] (at 11.1 [V], 1.3 [a])**<br />1.9 [Nm] (at 12.0 [V], 1.4 [A])"
+  stalltorque:        "1.4 [N.m] (at 9.0 [V], 1.1 [A])<br />**1.7 [N.m] (at 11.1 [V], 1.3 [A])**<br />1.9 [Nm] (at 12.0 [V], 1.4 [A])"
   noloadspeed:        "52 [rev/min] (at 9.0 [V])<br />**65 [rev/min] (at 11.1 [V])**<br />70 [rev/min] (at 12.0 [V])"
   radialload:         "N/A"
   radialload_en:      "N/A"
