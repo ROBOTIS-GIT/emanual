@@ -316,7 +316,7 @@ main:
     # - title: "Info Robot"
     #   titlekr: "실과 로봇"
     #   url: /edu/info/
-    - titlekr: "자동차 로봇"
+    - titlekr: "*자동차 로봇"
       url: /edu/car/
     - title: "BIOLOID"
       titlekr: "바이올로이드"
@@ -14148,7 +14148,7 @@ openmanipulator:
       - title: "OpenManipulator Setup"
         url: /platform/openmanipulator/#openmanipulator-setup
       - title: "Let's try basic manipulation"
-        url: /platform/openmanipulator/#lets-try-basic-manipulation 
+        url: /platform/openmanipulator/#lets-try-basic-manipulation
       - title: "Challenge Various Applications"
         url: /platform/openmanipulator/#challenge-various-applications
       - title: "Let's design my own manipulator"
@@ -14168,7 +14168,7 @@ openmanipulator:
         - title: "U2D2"
           url: /platform/openmanipulator/#u2d2
         - title: "OpenCR"
-          url: /platform/openmanipulator/#opencr    
+          url: /platform/openmanipulator/#opencr
   - title: "PC Setup"
     url: /platform/openmanipulator/#pc-setup
     children:
