@@ -82,7 +82,8 @@ Please refer to [this link](https://micro-xrce-dds.readthedocs.io/en/latest/inst
   $ cd ~/Micro-XRCE-DDS-Client
   $ nano CMakeLists.txt    #Add the bold line below.
   ```
-
+  
+  249 lines
   > if(EPROSIMA_BUILD_EXAMPLES)  
   > ...  
   > **add_subdirectory(examples/turtlebot3_lidar)**  
