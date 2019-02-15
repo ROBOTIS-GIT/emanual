@@ -44,17 +44,48 @@ If you got stuck during installation, please following [ROS Answers][ROS Answers
 #### [Install ROS2 on Remote PC]
 - [ROS2 Installation](https://index.ros.org/doc/ros2/Installation/)
 
-#### [Install Dependent ROS2 Packages]
-**[Remote PC]** Download turtlebot3 packages for ROS2
+#### [Install TurtleBot3 ROS2 Packages]
+**[Remote PC]** Download turtlebot3 packages and install some dependencies for ROS2
+
+```bash
+# Install Cartographer dependencies
+$ sudo apt install -y \
+    google-mock \
+    libceres-dev \
+    liblua5.3-dev \
+    libboost-dev \
+    libboost-iostreams-dev \
+    libprotobuf-dev \
+    protobuf-compiler \
+    libcairo2-dev \
+    libpcl-dev \
+    python3-sphinx
+# Install Gazebo9
+$ curl -sSL http://get.gazebosim.org | sh
+# Install Navigation2 dependencies
+$ sudo apt install -y \
+    libsdl-image1.2 \
+    libsdl-image1.2-dev \
+    libsdl1.2debian \
+    libsdl1.2-dev
+```
 
 ```bash
 $ mkdir -p ~/turtlebot3_ws/src
-$ cd ~/turtlebot3_ws/src
-$ git clone -b ros2 https://github.com/ROBOTIS-GIT/turtlebot3.git
-$ git clone -b ros2 https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
 $ cd ~/turtlebot3_ws
+$ wget https://raw.githubusercontent.com/ROBOTIS-GIT/turtlebot3/ros2/turtlebot3.repos
+$ vcs import src < turtlebot3.repos
 $ colcon build --symlink-install
 ```
+
+{% capture notice_01 %}
+**NOTE**: 
+If you get any build errors or warnings from dependencies, please refer to below documents.
+- [Related a document for Cartographer](https://google-cartographer.readthedocs.io/en/latest/)
+- [Related a document for Cartographer_ros](https://google-cartographer-ros.readthedocs.io/en/latest/)
+- [Related a document for Navigation2](https://github.com/ros-planning/navigation2/blob/master/README.md)
+{% endcapture %}
+<div class="notice--info">{{ notice_01 | markdownify }}</div>
 
 ### [SBC setup](#sbc-setup)
 
@@ -62,7 +93,7 @@ $ colcon build --symlink-install
 
 1. Download [Raspbian Stretch with desktop and recommended software](https://www.raspberrypi.org/downloads/raspbian/)
 1. Unzip the download file and burn image to your microSD card(>8GB)
-1. Follow instruction that [How to setup for TurtleBot3 with ROS2][How to set sbc for turtlebot3 with ros2]
+1. Follow instruction that [How to setup for TurtleBot3 with ROS2][How to set sbc for turtlebot3 with ros2]{: .popup}
 
 ### [OpenCR setup](#opencr-setup)
 
@@ -241,27 +272,6 @@ CTRL-C to quit
 
 The **SLAM (Simultaneous Localization and Mapping)** is a technique to draw a map by estimating current location in an arbitrary space. The SLAM is a well-known feature of TurtleBot from its predecessors. The video here shows you how accurately TurtleBot3 can draw a map with its compact and affordable platform.
 
-**[RemotePC]** Install Cartographer packages
-```bash
-$ git clone -b crystal https://github.com/ROBOTIS-GIT/cartographer.git
-$ git clone -b crystal https://github.com/ROBOTIS-GIT/cartographer_ros.git
-```
-
-**[RemotePC]** Install dependent library for cartographer
-
-- [How to install Ceres-Solver](http://ceres-solver.org/installation.html#linux)
-
-```bash
-$ cd ~/turtlebot3_ws/src
-$ git clone https://github.com/ros2/pcl_conversions
-```
-
-```bash
-$ sudo apt install liblua5.3-dev
-$ sudo apt install google-mock
-$ sudo apt install libpcl-dev
-```
-
 **[TurtleBot, RemotePC]** Sync time between TurtleBot and RemotePC
 
 ```bash
@@ -302,23 +312,12 @@ $ ros2 launch turtlebot3_navigation2 navigation2.launch.py
 
 ## [Simulation](#simulation)
 
-### [Install Gazebo9 on Remote PC]
-1. Install [Gazebo9 and gazebo_ros_pkgs](http://gazebosim.org/tutorials?tut=ros2_installing&cat=connect_ros)
-1. Add **GAZEBO_MODEL_PATH**
-    ```bash
-    $ echo 'Add gazebo model path' >> ~/.bashrc
-    $ echo 'export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:~/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models' >> ~/.bashrc
-    $ source ~/.bashrc
-    ```
-
-### [Install TurtleBot3 simulation packages]
-```bash
-$ mkdir -p ~/turtlebot3_ws/src
-$ cd ~/turtlebot3_ws/src
-$ git clone -b ros2 https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
-$ cd ~/turtlebot3_ws
-$ colcon build --symlink-install
-```
+**[Remote PC]** Add **GAZEBO_MODEL_PATH**
+  ```bash
+  $ echo '# Add gazebo model path' >> ~/.bashrc
+  $ echo 'export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:~/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models' >> ~/.bashrc
+  $ source ~/.bashrc
+  ```
 
 **[Remote PC]** Load TurtleBot3 on turtlebot3 world
 ```bash
@@ -337,6 +336,11 @@ $ ros2 param set /gazebo use_sim_time True
 **[Remote PC]** Launch Cartographer
 ```bash
 $ ros2 launch turtlebot3_cartographer cartographer.launch.py use_sim_time:=True
+```
+
+**[Remote PC]** Run teleoperation node
+```bash
+$ ros2 run turtlebot3_teleop teleop_keyboard
 ```
 
 **[Remote PC]** Save the map

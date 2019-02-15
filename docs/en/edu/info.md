@@ -7,8 +7,6 @@ share: false
 author_profile: false
 permalink: /docs/en/edu/info/
 sidebar:
-  title: "Info Robot"
+  title:
   nav: "info_robot"
 ---
-
-# Introduction

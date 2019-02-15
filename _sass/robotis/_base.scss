@@ -325,7 +325,9 @@ ul > li > ul {
 img {
   max-width: 100%;
   height: auto;
-  padding: 0 0 0 1em;
+  padding: 1em;
+  border-radius: $img-border-radius;
+  background: #fafafa;
 }
 
 blockquote {

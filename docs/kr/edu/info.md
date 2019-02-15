@@ -7,8 +7,6 @@ share: false
 author_profile: false
 permalink: /docs/kr/edu/info/
 sidebar:
-  title: Info Robot
+  title:
   nav: "info_robot"
 ---
-
-# 개요

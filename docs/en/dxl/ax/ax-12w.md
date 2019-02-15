@@ -222,4 +222,4 @@ product_group: dxl_ax
 {% include en/dxl/485_ttl_connection.md %}
 
 [Compatibility Guide]: http://en.robotis.com/service/compatibility_table.php?cate=d
-[Harness Compatibility]: /docs/en/popup/cable_compatibility/
+[Harness Compatibility]: /assets/images/dxl/cable_compatibility.png
