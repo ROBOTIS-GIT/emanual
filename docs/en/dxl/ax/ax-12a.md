@@ -236,4 +236,4 @@ Baud Rate determines serial communication speed between a controller and DYNAMIX
 
 
 [Compatibility Guide]: http://en.robotis.com/service/compatibility_table.php?cate=d
-[Harness Compatibility]: /assets/images/dxl/cable_compatibility.png
+[Harness Compatibility]: /docs/en/popup/cable_compatibility/
