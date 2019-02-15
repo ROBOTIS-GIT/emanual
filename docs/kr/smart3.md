@@ -1,14 +1,14 @@
 ---
 layout: archive
 lang: kr
-ref: sw_download
+ref: smart3
 read_time: true
 share: true
 author_profile: false
-permalink: /sw_download/
+permalink: /smart3/
 sidebar:
   title: 소프트웨어 다운로드
-  nav: "sw_download"
+  nav: "smart3"
 ---
 
 # [로보플러스 스마트 3 다운로드]
