@@ -91,6 +91,10 @@ sidebar:
 
 # [다이나믹셀 위자드 2.0 설치](#다이나믹셀-위자드-20-설치)
 
+**베타 테스트버전 다운로드**
+  - [윈도우즈](http://www.robotis.com/service/download.php?no=1670)
+  - [리눅스](http://www.robotis.com/service/download.php?no=1671)
+
 다운받은 설치파일을 실행합니다.  
 안내에 따라 `Next`버튼을 눌러 설치를 진행합니다.
 
