@@ -17,8 +17,7 @@ sidebar:
 
 ## [DYNAMIXEL Wizard 2.0](#dynamixel-wizard-20)
 
-DYNAMIXEL Wizard 2.0 is an optimized tool for managing DYNAMIXELs from various operating systems.
-
+DYNAMIXEL Wizard 2.0 is an optimized tool for managing DYNAMIXELs from various operating systems.  
 The following features are provided with DYNAMIXEL Wizard 2.0.
 
 - DYNAMIXEL Firmware Update
@@ -95,6 +94,10 @@ Detailed packet data can be loaded by selecting a packet in the packet history.
 ![](/assets/images/sw/dynamixel/wizard2/wizard2_packet_001.png)
 
 # [Software Installation](#software-installation)
+
+**Download Beta test version**
+  - [for Windows](http://www.robotis.com/service/download.php?no=1670)
+  - [for Linux](http://www.robotis.com/service/download.php?no=1671)
 
 Execute downloaded install file.  
 Click on `Next` button to proceed installation.
