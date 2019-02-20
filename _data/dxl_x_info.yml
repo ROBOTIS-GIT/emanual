@@ -238,6 +238,35 @@ xc430-w240:
   material:           "Full Metal Gear<br />Engineering Plastic (Body)"
   standbycurrent:     "46 [mA]"
 
+xc430-w150:
+  mcu:                "ST CORTEX-M3 (STM32F103C8 @ 72 [Mhz], 32Bit)"
+  encoder:            "Contactless absolute encoder (12Bit, 360 [&deg;])<br />Maker : ams(www.ams.com), Part No : AS5601"
+  motor:              "Coreless"
+  baudrate:           "9,600 [bps] ~ 4.5 [Mbps]"
+  control:            "PID control"
+  resolution:         *resolution
+  backlash:           "N/A"
+  mode:               "속도 제어 모드<br />위치 제어 모드 (0 ~ 360 [&deg;])<br />확장 위치 제어 모드 (멀티턴)<br />PWM 제어 모드 (Voltage Control Mode)"
+  mode_en:            "Velcoity Control Mode<br />Position Control Mode (0 ~ 360 [&deg;])<br />Extended Position Control Mode (Multi-turn)<br />PWM Control Mode (Voltage Control Mode)"
+  weight:             "65 [g]"
+  dimensions:         "28.5 x 46.5 x 34 [mm]"
+  gearratio:          "159.59 : 1"
+  stalltorque:        "TBD"
+  noloadspeed:        "TBD"
+  radialload:         "N/A"
+  radialload_en:      "N/A"
+  axialload:          "N/A"
+  temperature:        *temperature
+  voltage:            "9.0 ~ 12.0 [V] (**권장 전압 : 12 [V]**)"
+  voltage_en:         "9.0 ~ 12.0 [V] (**Recommended : 12.0 [V]**)"
+  command:            "Digital Packet"
+  protocoltype:       "Half Duplex Asynchronous Serial Communication<br />(8bit, 1stop, No Parity)"
+  physicalconnection: "TTL Level Multidrop Bus"
+  id:                 "253 ID (0 ~ 252)"
+  feedback:           "Position, Velocity, Load, Realtime tick, Trajectory, Temperature, Input Voltage, etc"
+  material:           "Full Metal Gear<br />Engineering Plastic (Body)"
+  standbycurrent:     "46 [mA]"
+
 xm430-w210:
   mcu:                *mcu
   encoder:            *encoder
