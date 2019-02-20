@@ -78,6 +78,11 @@ $ vcs import src < turtlebot3.repos
 $ colcon build --symlink-install
 ```
 
+```bash
+$ echo 'source ~/turtlebot3_ws/install/setup.bash' >> ~/.bashrc
+$ source ~/.bashrc
+```
+
 {% capture notice_01 %}
 **NOTE**: 
 If you get any build errors or warnings from dependencies, please refer to below documents.
@@ -136,6 +141,7 @@ opencr_ld_main
 ```
 
 **[TurtleBot]** Reset OpenCR using RESET button.
+    
 ![](/assets/images/parts/controller/opencr10/bootloader_19.png)
 
 ## [Bringup](#bringup)
@@ -174,13 +180,9 @@ $ ros2 launch turtlebot3_bringup burger.launch.py
 
 If the node is successfully launched, the following instruction will be appeared to the terminal window.
 ```bash
-[INFO] [launch]: process[robot_state_publisher-1]: started with pid [21355]
-[INFO] [launch]: process[time_sync-2]: started with pid [21356]
-[INFO] [launch]: process[odometry_publisher-3]: started with pid [21357]
-[INFO] [launch]: process[tf_publisher-4]: started with pid [21358]
-[INFO] [launch]: process[joint_states_publisher-5]: started with pid [21359]
-[INFO] [launch]: process[scan_publisher-6]: started with pid [21360]
-Initialize urdf model from file: /home/darby/ros2_overlay_ws/install/turtlebot3_description/share/turtlebot3_description/urdf/turtlebot3_burger.urdf
+[INFO] [launch]: process[robot_state_publisher-1]: started with pid [24824]
+[INFO] [launch]: process[turtlebot3_ros-2]: started with pid [24825]
+Initialize urdf model from file: /home/ost/turtlebot3_ws/install/turtlebot3_description/share/turtlebot3_description/urdf/turtlebot3_burger.urdf
 Parsing robot urdf xml string.
 Link base_link had 5 children
 Link caster_back_link had 0 children
@@ -195,24 +197,19 @@ got segment caster_back_link
 got segment imu_link
 got segment wheel_left_link
 got segment wheel_right_link
-[INFO] [time_sync]: Init System Time publisher
+[INFO] [turtlebot3_node]: Init TurtleBot3 Node Main
 Adding fixed segment from base_footprint to base_link
 Adding fixed segment from base_link to caster_back_link
 Adding fixed segment from base_link to imu_link
 Adding fixed segment from base_link to base_scan
 Adding moving segment from base_link to wheel_left_link
 Adding moving segment from base_link to wheel_right_link
-[INFO] [joint_states_publisher]: Init joint_states publisher
-[INFO] [scan_publisher]: Init scan publisher
-[INFO] [tf_publisher]: Init tf publisher
-[INFO] [odometry_publisher]: Init Odometry publisher
 ```
 
 And you can check topic list as shown below
 
 ```bash
 $ ros2 topic list
-/clock
 /cmd_vel
 /imu
 /joint_states
@@ -315,7 +312,7 @@ $ ros2 launch turtlebot3_navigation2 navigation2.launch.py
 **[Remote PC]** Add **GAZEBO_MODEL_PATH**
   ```bash
   $ echo '# Add gazebo model path' >> ~/.bashrc
-  $ echo 'export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:~/turtlebot3_ws/src/turtlebot3_simulations/turtlebot3_gazebo/models' >> ~/.bashrc
+  $ echo 'export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:~/turtlebot3_ws/src/turtlebot3/turtlebot3_simulations/turtlebot3_gazebo/models' >> ~/.bashrc
   $ source ~/.bashrc
   ```
 
