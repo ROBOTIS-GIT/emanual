@@ -17752,14 +17752,6 @@ cm-200:
     titlekr: "작동 방법"
     url: /parts/controller/cm-200/#how-to-operate
     urlkr: /parts/controller/cm-200/#작동-방법
-  - title: "Connect to Smartphone"
-    url: /parts/controller/cm-150/#connect-to-smartphone
-  - title: "Connect to PC"
-    url: /parts/controller/cm-150/#connect-to-pc
-  - title: "Wireless Communication"
-    url: /parts/controller/cm-150/#wireless-communication
-  - titlekr: "초급 사용자"
-    urlkr: /parts/controller/cm-200/#초급-사용자
     children:
       - titlekr: "무선통신 연결하기"
         urlkr: /parts/controller/cm-200/#무선통신-연결하기
@@ -17769,16 +17761,14 @@ cm-200:
         urlkr: /parts/controller/cm-200/#r-mtask-20-설치하기
       - titlekr: "모션파일 다운로드"
         urlkr: /parts/controller/cm-200/#모션파일-다운로드
-  - titlekr: "고급 사용자"
-    urlkr: /parts/controller/cm-200/#고급-사용자
-    children:
-      - titlekr: "프로그래밍"
-        urlkr: /parts/controller/cm-200/#프로그래밍
-  - titlekr: "관리하기"
-    urlkr: /parts/controller/cm-200/#관리하기
-    children:
-      - titlekr: "펌웨어 복구"
-        urlkr: /parts/controller/cm-200/#펌웨어-복구
+  - title: "Connect to Smartphone"
+    url: /parts/controller/cm-200/#connect-to-smartphone
+  - title: "Connect to PC"
+    url: /parts/controller/cm-200/#connect-to-pc
+  - title: "Wireless Communication"
+    url: /parts/controller/cm-200/#wireless-communication
+  - titlekr: "펌웨어 복구"
+    urlkr: /parts/controller/cm-200/#펌웨어-복구
   - titlekr: "참고자료"
     urlkr: /parts/controller/cm-200/#참고자료
 
