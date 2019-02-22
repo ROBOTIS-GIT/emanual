@@ -286,8 +286,8 @@ xc430-w150:
   radialload_en:      "N/A"
   axialload:          "N/A"
   temperature:        *temperature
-  voltage:            "9.0 ~ 12.0 [V] (**권장 전압 : 12 [V]**)"
-  voltage_en:         "9.0 ~ 12.0 [V] (**Recommended : 12.0 [V]**)"
+  voltage:            "6.5 ~ 12.0 [V] (**권장 전압 : 11.1 [V]**)"
+  voltage_en:         "6.5 ~ 12.0 [V] (**Recommended : 11.1 [V]**)"
   command:            "Digital Packet"
   protocoltype:       "Half Duplex Asynchronous Serial Communication<br />(8bit, 1stop, No Parity)"
   physicalconnection: "TTL Level Multidrop Bus"
