@@ -17749,8 +17749,8 @@ cm-200:
     url: /parts/controller/cm-200/#connecting-power
     urlkr: /parts/controller/cm-200/#전원-연결
   - title: "How to Operate"
-    titlekr: "작동 방법"
     url: /parts/controller/cm-200/#how-to-operate
+  - titlekr: "작동 방법"
     urlkr: /parts/controller/cm-200/#작동-방법
     children:
       - titlekr: "무선통신 연결하기"
