@@ -36,8 +36,8 @@ sidebar:
 
 ## [지원 운영체제](#지원-운영체제)
 
-- Windows
-- Linux
+- Windows 7 / 8 / 10
+- Ubuntu 16 / 18
 
 ## [펌웨어 정의](#펌웨어-정의)
 
@@ -68,6 +68,7 @@ sidebar:
 | **PRO M(A)**     | [M42-10-S260-R(A)] | [M54-40-S250-R(A)]    | [M54-60-S250-R(A)]    |                         |                 |
 | **PRO H(A)**     | [H42-20-S300-R(A)] | [H54-100-S500-R(A)]   | [H54-200-S500-R(A)]   |                         |                 |
 | **PRO+ H**       | [H42P-020-S300-R]  | [H54P-100-S500-R]     | [H54P-100-S500-R]     |                         |                 |
+|                  | [RH-P12-RN]        | [RH-P12-RN(A)]        |                       |                         |                 |
 
 # [메뉴 설명](#메뉴-설명)
 
@@ -95,10 +96,31 @@ sidebar:
   - [윈도우즈](http://www.robotis.com/service/download.php?no=1670)
   - [리눅스](http://www.robotis.com/service/download.php?no=1671)
 
-다운받은 설치파일을 실행합니다.  
-안내에 따라 `Next`버튼을 눌러 설치를 진행합니다.
+## [윈도우에서 설치하기](#윈도우에서-설치하기)
+
+1. 다운받은 설치파일을 실행합니다.  
+
+2. 안내에 따라 `Next`버튼을 눌러 설치를 진행합니다.
 
 ![](/assets/images/sw/dynamixel/wizard2/wizard2_setup_win_01.png)
+
+## [리눅스에서 설치하기](#리눅스에서-설치하기)
+
+1. 리눅스용 설치파일을 다운로드합니다.
+
+2. 다음의 명령어를 수행하여 설치파일의 실행권한을 변경합니다.
+
+    ```c
+    # sudo chmod 775 DynamixelWizard2Setup-x86
+    ```
+
+3. 설치파일을 실행합니다.  
+
+    ```c
+    # ./DynamixelWizard2Setup-x86
+    ```
+
+4. 안내에 따라 `Next`버튼을 눌러 설치를 진행합니다.
 
 # [다이나믹셀 위자드 2.0 제거](#다이나믹셀-위자드-20-제거)
 
@@ -585,6 +607,8 @@ sidebar:
 [L54-30-S500-R]: /docs/kr/dxl/pro/l54-30-s500-r/
 [L54-30-S400-R]: /docs/kr/dxl/pro/l54-30-s400-r/
 [L42-10-S300-R]: /docs/kr/dxl/pro/l42-10-s300-r/
-[H42P-020-S300-R]: /docs/en/dxl/pro_plus/h42p-020-s300-r/
-[H54P-100-S500-R]: /docs/en/dxl/pro_plus/h54p-100-s500-r/
-[H54P-200-S500-R]: /docs/en/dxl/pro_plus/h54p-200-s500-r/
+[H42P-020-S300-R]: /docs/kr/dxl/pro_plus/h42p-020-s300-r/
+[H54P-100-S500-R]: /docs/kr/dxl/pro_plus/h54p-100-s500-r/
+[H54P-200-S500-R]: /docs/kr/dxl/pro_plus/h54p-200-s500-r/
+[RH-P12-RN]: /docs/kr/platform/rh_p12_rn/rh_p12_rn/
+[RH-P12-RN(A)]: /docs/kr/platform/rh_p12_rn/rh_p12_rna/
