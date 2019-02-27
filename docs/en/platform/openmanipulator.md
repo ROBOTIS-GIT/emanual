@@ -1709,6 +1709,7 @@ Load a TurtleBot3 Waffle or Waffle Pi with OpenManipulator on RViz.
 |.                 |FHS_M2_5X14|12|[Shop Link](https://us.misumi-ec.com/vona2/detail/221000547315/?Inch=0&CategorySpec=00000071822%3A%3A2.5%0900000071552%3)|
 |.                 |NUT_M2_5(0.45P)|8|[Shop Link](https://us.misumi-ec.com/vona2/detail/110300250540/?Inch=0&CategorySpec=00000070281%3A%3A2.5)|
 
+For more information, please refer to [BOM](https://docs.google.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit#gid=1200068410).
 
 <!-- [Parts of OpenManipulator](https://docs.google.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit#gid=1916070381) -->
 
@@ -1867,6 +1868,8 @@ Open processing source code file (`open_manipulator_processing` → `Link` → `
 |.                 | NSFMR6-24                        | 6     | [Shop Link](https://jp.misumi-ec.com/vona2/detail/110300086920/?HissuCode=NSFMR6-26&PNSearch=NSFMR6-26&KWSearch=NSFMR6-26&searchFlow=results2products)|
 |.                 | Ball Bearing(O.D 10mm / I.D 6mm) | 24    | [Shop Link](https://us.misumi-ec.com/vona2/detail/221000531116/?CategorySpec=unitType%3a%3a1%0900000044017%3a%3amig00000001446936%0900000043985%3a%3amig00000001455783&Inch=0)|
 
+For more information, please refer to [BOM](https://docs.google.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit#gid=1200068410).
+
 #### 3D Printed Parts
 
 CAD Files ([Onshape](https://cad.onshape.com/documents/03dca3ccd6175a054a517d7a/w/bd02756435abc4861fbe19d3/e/512dba920820826220bb1be1), [Thingiverse](https://www.thingiverse.com/thing:3064437))
@@ -1932,6 +1935,8 @@ Open processing source code file (`open_manipulator_processing` → `Planar` →
 |.                 |NSFMR6-24|6|[Shop Link](https://jp.misumi-ec.com/vona2/detail/110300086920/?HissuCode=NSFMR6-26&PNSearch=NSFMR6-26&KWSearch=NSFMR6-26&searchFlow=results2products)|
 |.                 |Rod End Bearing(D 3mm)|12|[Shop Link](https://us.misumi-ec.com/vona2/detail/110300371730/?HissuCode=PHSOM3&PNSearch=PHSOM3&KWSearch=phsom3&searchFlow=results2type)|
 
+For more information, please refer to [BOM](https://docs.google.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit#gid=1200068410).
+
 #### 3D Printed Parts
 
 CAD Files ([Onshape](https://cad.onshape.com/documents/cc6fdde79eccc8c21ff6048b/w/5275a0e3ad2bfd7d5bc573ac/e/485c206801d5b810c0c4297a), [Thingiverse](https://www.thingiverse.com/thing:3217182))
@@ -1955,7 +1960,7 @@ Open processing source code file (`open_manipulator_processing` → `Delta` → 
 
 ### Video
 
-  - **Comming Soon**
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vFyphQwdV6I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## [OpenManipulator Stewart](#openmanipulator-stewart)
 
@@ -1977,7 +1982,9 @@ Open processing source code file (`open_manipulator_processing` → `Delta` → 
 
 ### Dimension
 
-  - **Comming Soon**
+![](/assets/images/platform/openmanipulator/OpenManipulator_Stewart_spec_side.png)
+![](/assets/images/platform/openmanipulator/OpenManipulator_Stewart_spec_bottom.png)
+![](/assets/images/platform/openmanipulator/OpenManipulator_Stewart_spec_top.png)
 
 ### Hardware Setup
 
@@ -1985,22 +1992,18 @@ Open processing source code file (`open_manipulator_processing` → `Delta` → 
 
 |              | Part Name | Quantity | Link
 |---------     |---------- |---------   |
-|**Chassis Parts** |BASE FRAME|1|[Download Link](https://www.thingiverse.com/thing:3069581)|
-|.                 |PEN HOLDER|1|[Download Link](https://www.thingiverse.com/thing:3069581)|
-|.                 |FRM BASE|1|[Download Link](https://www.thingiverse.com/thing:3069581)|
-|.                 |TAP HOLDER|1|[Download Link](https://www.thingiverse.com/thing:3069581)|
-|.                 |FR12_H101_K|4|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2768&GC=GD0B0001)|
-|.                 |FR12_S102_K|3|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2766&GC=GD0B0001)|
-|.                 |HN12_I101|4|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2759&GC=GD0B0006)|
-|**Actuators**     |Dynamixel XM430-W350-T|4|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2923&GC=GD080101)|
-|**Cables**        |CABLE_3P_130MM|2|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2347&GC=GD0B0105&page=2)|
-|.                 |CABLE_3P_240MM|1|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2926&GC=GD0B0105&page=3)|
-|**Miscellaneous** |WB_M2X03|24|[Shop Link](https://us.misumi-ec.com/vona2/detail/221000551286/?Inch=0&CategorySpec=00000070644%3A%3A2%0900000070373%3A%3A3)|
-|.                 |WB_M2_5X4|14|[Shop Link](https://us.misumi-ec.com/vona2/detail/221000551286/?Inch=0&CategorySpec=00000070644%3A%3A2.5%0900000070373%3A%3A8)|
-|.                 |WB_M2_5X06|8|[Shop Link](https://us.misumi-ec.com/vona2/detail/221000551286/?Inch=0&CategorySpec=00000070644%3A%3A2.5%0900000070373%3A%3A3%2C6)|
-|.                 |WB_M2_5X12|2|[Shop Link](https://us.misumi-ec.com/vona2/detail/221000551286/?Inch=0&CategorySpec=00000070644%3A%3A2.5%0900000070373%3A%3A8)|
-|.                 |FHS_M2_5X14|12|[Shop Link](https://us.misumi-ec.com/vona2/detail/221000547315/?Inch=0&CategorySpec=00000071822%3A%3A2.5%0900000071552%3)|
-|.                 |NUT_M2_5(0.45P)|8|[Shop Link](https://us.misumi-ec.com/vona2/detail/110300250540/?Inch=0&CategorySpec=00000070281%3A%3A2.5)|
+|**Chassis Parts** |BASE FRAME|1|[Download Link](https://www.thingiverse.com/thing:3272579)|
+|.                 |stewart_conv|6|[Download Link](https://www.thingiverse.com/thing:3272579)|
+|.                 |st_link_new|6|[Download Link](https://www.thingiverse.com/thing:3272579)|
+|.                 |PHSOM3|12|[Shop Link](https://kr.misumi-ec.com/vona2/detail/110300371730/?HissuCode=PHSOM3&PNSearch=PHSOM3&KWSearch=phsom3&searchFlow=results2type)|
+|.                 |SPJW6-100-M3-N3|6|[Shop Link](https://kr.misumi-ec.com/vona2/detail/110302636140/?HissuCode=SPJW6-100-M3-N3&PNSearch=SPJW6-100-M3-N3&KWSearch=SPJW6-100-M3-N3&searchFlow=results2type)|
+|.                 |HN12_I101|6|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2759&GC=GD0B0006)|
+|**Actuators**     |Dynamixel XM430-W350-T|6|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2923&GC=GD080101)|
+|**Cables**        |CABLE_3P_130MM|6|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2347&GC=GD0B0105&page=2)|
+|**Miscellaneous** |WB_M3X08|24|[Shop Link](https://us.misumi-ec.com/vona2/detail/221000551286/)|
+|.                 |NUT_M3|24|[Shop Link](https://us.misumi-ec.com/vona2/detail/110300250540/)|
+
+For more information, please refer to [BOM](https://docs.google.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit#gid=1200068410).
 
 #### 3D Printed Parts
 
@@ -2010,20 +2013,22 @@ CAD Files ([Onshape](https://cad.onshape.com/documents/7dd4f10904b98bdc250fd542/
 
 ### Software Setup
 
+Download the [`OpenCR`](https://github.com/ROBOTIS-GIT/OpenCR) and [`open_manipulator_processing`](https://github.com/ROBOTIS-GIT/open_manipulator_processing) libraries. 
+
 #### OpenCR
 
 Go to `Examples` → `OpenManipulator` → `example` → `Arduino` → `Stewart` → `open_manipulator_stewart` on Arduino IDE for OpenCR.
 
 #### Processing
 
-Open processing source code file (`OpenCR`>`arduino`>`opencr_arduino`>`opencr`>`libraries`>`OpenManipulator`>`example`>`Processing`>`Stewart`>`Stewart.pde`) on Processing IDE, and Run it.
+Open processing source code file (`open_manipulator_processing` → `Stewart` → `Stewart.pde`) on Processing IDE.
 
 **NOTE**: Upload **OpenCR example source code** to OpenCR before run **processing source code**.
 {: .notice--info}
 
 ### Video
 
-  - **Comming Soon**
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9YUWLAm24yA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## [OpenManipulator Linear](#openmanipulator-linear)
 
@@ -2045,7 +2050,7 @@ Open processing source code file (`OpenCR`>`arduino`>`opencr_arduino`>`opencr`>`
 
 ### Dimension
 
-  - **Comming Soon**
+![](/assets/images/platform/openmanipulator/OpenManipulator_Linear_spec.png)
 
 ### Hardware Setup
 
@@ -2054,21 +2059,20 @@ Open processing source code file (`OpenCR`>`arduino`>`opencr_arduino`>`opencr`>`
 |              | Part Name | Quantity | Link
 |---------     |---------- |---------   |
 |**Chassis Parts** |BASE FRAME|1|[Download Link](https://www.thingiverse.com/thing:3069581)|
-|.                 |PEN HOLDER|1|[Download Link](https://www.thingiverse.com/thing:3069581)|
-|.                 |FRM BASE|1|[Download Link](https://www.thingiverse.com/thing:3069581)|
-|.                 |TAP HOLDER|1|[Download Link](https://www.thingiverse.com/thing:3069581)|
-|.                 |FR12_H101_K|4|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2768&GC=GD0B0001)|
-|.                 |FR12_S102_K|3|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2766&GC=GD0B0001)|
-|.                 |HN12_I101|4|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2759&GC=GD0B0006)|
-|**Actuators**     |Dynamixel XM430-W350-T|4|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2923&GC=GD080101)|
-|**Cables**        |CABLE_3P_130MM|2|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2347&GC=GD0B0105&page=2)|
-|.                 |CABLE_3P_240MM|1|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2926&GC=GD0B0105&page=3)|
-|**Miscellaneous** |WB_M2X03|24|[Shop Link](https://us.misumi-ec.com/vona2/detail/221000551286/?Inch=0&CategorySpec=00000070644%3A%3A2%0900000070373%3A%3A3)|
-|.                 |WB_M2_5X4|14|[Shop Link](https://us.misumi-ec.com/vona2/detail/221000551286/?Inch=0&CategorySpec=00000070644%3A%3A2.5%0900000070373%3A%3A8)|
-|.                 |WB_M2_5X06|8|[Shop Link](https://us.misumi-ec.com/vona2/detail/221000551286/?Inch=0&CategorySpec=00000070644%3A%3A2.5%0900000070373%3A%3A3%2C6)|
-|.                 |WB_M2_5X12|2|[Shop Link](https://us.misumi-ec.com/vona2/detail/221000551286/?Inch=0&CategorySpec=00000070644%3A%3A2.5%0900000070373%3A%3A8)|
-|.                 |FHS_M2_5X14|12|[Shop Link](https://us.misumi-ec.com/vona2/detail/221000547315/?Inch=0&CategorySpec=00000071822%3A%3A2.5%0900000071552%3)|
-|.                 |NUT_M2_5(0.45P)|8|[Shop Link](https://us.misumi-ec.com/vona2/detail/110300250540/?Inch=0&CategorySpec=00000070281%3A%3A2.5)|
+|.                 |linear_x_holder|1|[Download Link](https://www.thingiverse.com/thing:3255864)|
+|.                 |linear_z_holder|1|[Download Link](https://www.thingiverse.com/thing:3255864)|
+|.                 |linear_griper_bt|1|[Download Link](https://www.thingiverse.com/thing:3255864)|
+|.                 |linear_y_holder|1|[Download Link](https://www.thingiverse.com/thing:3255864)|
+|.                 |linear_y_holder_mr|1|[Download Link](https://www.thingiverse.com/thing:3255864)|
+|.                 |LINEAR_Y_HOLDER|1|[Download Link](https://www.thingiverse.com/thing:3255864)|
+|.                 |linear_y_guide_holder|1|[Download Link](https://www.thingiverse.com/thing:3255864)|
+|.                 |linear_pully_conv|1|[Download Link](https://www.thingiverse.com/thing:3255864)|
+|.                 |linear_pully_conv_dummy|1|[Download Link](https://www.thingiverse.com/thing:3255864)|
+|.                 |Aluminum Extrusion - 6 series, Base 30|8|[Shop Link](https://us.misumi-ec.com/vona2/detail/110302686450/?HissuCode=HFSLB6-3030-%5b50-1800%2f0.5%5d&searchFlow=results2similartn)|
+|**Actuators**     |Dynamixel XM430-W350-T|3|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2923&GC=GD080101)|
+|**Cables**        |CABLE_3P_240MM|1|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2926&GC=GD0B0105&page=3)|
+
+For more information, please refer to [BOM](https://docs.google.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit#gid=1200068410).
 
 #### 3D Printed Parts
 
@@ -2078,21 +2082,22 @@ CAD Files ([Onshape](https://cad.onshape.com/documents/056051479aa43c1d3575467b/
 
 ### Software Setup
 
+Download the [`OpenCR`](https://github.com/ROBOTIS-GIT/OpenCR) and [`open_manipulator_processing`](https://github.com/ROBOTIS-GIT/open_manipulator_processing) libraries. 
+
 #### OpenCR
 
 Go to `Examples` → `OpenManipulator` → `example` → `Arduino` → `Linear` → `open_manipulator_linear` on Arduino IDE for OpenCR.
 
 #### Processing
 
-Open processing source code file (`OpenCR`>`arduino`>`opencr_arduino`>`opencr`>`libraries`>`OpenManipulator`>`example`>`Processing`>`Linear`>`Linear.pde`) on Processing IDE, and Run it.
+Open processing source code file (`open_manipulator_processing` → `Linear` → `Linear.pde`) on Processing IDE.
 
 **NOTE**: Upload **OpenCR example source code** to OpenCR before run **processing source code**.
 {: .notice--info}
 
 ### Video
 
-  - **Comming Soon**
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3FumPqbOs5k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 [OpenCR]: /docs/en/parts/controller/opencr10/
 [OpenCR Manual]: /docs/en/parts/controller/opencr10/
