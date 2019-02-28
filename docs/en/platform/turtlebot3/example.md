@@ -142,5 +142,5 @@ $ rosrun turtlebot3_example turtlebot3_client.py
 
 **[Remote PC]** Type the patrol data.(mode = square, area = 0.5m, count = 2)
 ``` bash
-$ s 0.5 2
+s 0.5 2
 ```
