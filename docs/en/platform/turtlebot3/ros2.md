@@ -104,6 +104,8 @@ If you get any build errors or warnings from dependencies, please refer to below
 
 **[TurtleBot]** Upload firmware for ROS2.
 
+- TurtleBot3 Burger
+
 ```bash
 $ cd ~/turtlebot3
 $ rm -rf ./opencr_update.tar.xz
@@ -127,6 +129,44 @@ opencr_ld_main
 [  ] file name   	: burger.opencr 
 [  ] file size   	: 168 KB
 [  ] fw_name     	: burger 
+[  ] fw_ver      	: V180903R1 
+[OK] Open port   	: /dev/ttyACM0
+[  ]
+[  ] Board Name  	: OpenCR R1.0
+[  ] Board Ver   	: 0x17020800
+[  ] Board Rev   	: 0x00000000
+[OK] flash_erase 	: 0.96s
+[OK] flash_write 	: 1.92s 
+[OK] CRC Check   	: 10E28C8 10E28C8 , 0.006000 sec
+[OK] Download 
+[OK] jump_to_fw 
+```
+
+- TurtleBot3 Waffle or Waffle_Pi
+
+```bash
+$ cd ~/turtlebot3
+$ rm -rf ./opencr_update.tar.xz
+$ wget https://github.com/ROBOTIS-GIT/OpenCR_Binaries/raw/master/turtlebot3/ROS2/latest/opencr_update.tar.xz
+$ tar -xf ./opencr_update.tar.xz
+
+$ export OPENCR_PORT=/dev/ttyACM0
+$ export OPENCR_MODEL=waffle
+$ cd ./opencr_update
+$ ./update.sh $OPENCR_PORT $OPENCR_MODEL.opencr
+```
+
+If uploading the firmware succeeds, below message will be displayed in the terminal.
+
+```bash
+armv7l
+arm
+OpenCR Update Start..
+opencr_ld_shell ver 1.0.0
+opencr_ld_main 
+[  ] file name   	: waffle.opencr 
+[  ] file size   	: 168 KB
+[  ] fw_name     	: waffle 
 [  ] fw_ver      	: V180903R1 
 [OK] Open port   	: /dev/ttyACM0
 [  ]
@@ -172,10 +212,14 @@ $ cd ~/turtlebot3 && MicroXRCEAgent udp 2018
 $ ./turtlebot3/turtlebot3_lidar
 ```
 
-**[Remote PC]** Launch burger
+**[Remote PC]** Launch robot includinf robot_state_publisher and turtlebot3_node
+
+**TIP**: Before executing this command, you have to specify the model name of TurtleBot3. The `${TB3_MODEL}` is the name of the model you are using in `burger`, `waffle`, `waffle_pi`. If you want to permanently set the export settings, please refer to [Export TURTLEBOT3_MODEL][export_turtlebot3_model]{: .popup} page.
+{: .notice--success}
 
 ```bash
-$ ros2 launch turtlebot3_bringup burger.launch.py
+$ export TURTLEBOT3_MODEL=${TB3_MODEL}
+$ ros2 launch turtlebot3_bringup robot.launch.py
 ```
 
 If the node is successfully launched, the following instruction will be appeared to the terminal window.
@@ -242,6 +286,7 @@ $ ros2 launch turtlebot3_bringup rviz2.launch.py
 
 **[Remote PC]** Run teleoperation node
 ```bash
+$ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ ros2 run turtlebot3_teleop teleop_keyboard
 ```
 
@@ -304,6 +349,7 @@ The navigation enables a robot to move from the current pose to the designated g
 ### [Run Navigation2 Nodes] 
 
 ```bash
+$ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ ros2 launch turtlebot3_navigation2 navigation2.launch.py
 ```
 
@@ -315,9 +361,12 @@ $ ros2 launch turtlebot3_navigation2 navigation2.launch.py
   $ echo 'export GAZEBO_MODEL_PATH=$GAZEBO_MODEL_PATH:~/turtlebot3_ws/src/turtlebot3/turtlebot3_simulations/turtlebot3_gazebo/models' >> ~/.bashrc
   $ source ~/.bashrc
   ```
+**TIP**: Before executing this command, you have to specify the model name of TurtleBot3. The `${TB3_MODEL}` is the name of the model you are using in `burger`, `waffle`, `waffle_pi`. If you want to permanently set the export settings, please refer to [Export TURTLEBOT3_MODEL][export_turtlebot3_model]{: .popup} page.
+{: .notice--success}
 
 **[Remote PC]** Load TurtleBot3 on turtlebot3 world
 ```bash
+$ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ ros2 launch turtlebot3_gazebo turtlebot3_world.launch.py
 ```
 
@@ -337,6 +386,7 @@ $ ros2 launch turtlebot3_cartographer cartographer.launch.py use_sim_time:=True
 
 **[Remote PC]** Run teleoperation node
 ```bash
+$ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ ros2 run turtlebot3_teleop teleop_keyboard
 ```
 
@@ -352,6 +402,7 @@ $ ros2 run nav2_map_server map_saver -f ~/map
 
 **[Remote PC]** Load Navigation2
 ```bash
+$ export TURTLEBOT3_MODEL=${TB3_MODEL}
 $ ros2 launch turtlebot3_navigation2 navigation2.launch.py
 ```
 
