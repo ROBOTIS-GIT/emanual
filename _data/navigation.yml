@@ -11309,6 +11309,648 @@ h42p-020-s300-r:
       url: /dxl/pro_plus/h42p-020-s300-r/#drawings
       urlkr: /dxl/pro_plus/h42p-020-s300-r/#도면
 
+m42p-010-s260-r:
+- title: "Specifications"
+  titlekr: "주요 사양"
+  url: /dxl/pro_plus/m42p-010-s260-r/#specifications
+  urlkr: /dxl/pro_plus/m42p-010-s260-r/#주요-사양
+  children:
+    - title: "Performance Graph"
+      titlekr: "성능 그래프"
+      url: /dxl/pro_plus/m42p-010-s260-r/#performance-graph
+      urlkr: /dxl/pro_plus/m42p-010-s260-r/#성능-그래프
+- title: "Control Table"
+  titlekr: "컨트롤 테이블"
+  url: /dxl/pro_plus/m42p-010-s260-r/#control-table
+  urlkr: /dxl/pro_plus/m42p-010-s260-r/#컨트롤-테이블
+  children:
+    - title: "Control Table, Data, Address"
+      titlekr: "컨트롤 테이블, 데이터, 주소"
+      url: /dxl/pro_plus/m42p-010-s260-r/#control-table-data-address
+      urlkr: /dxl/pro_plus/m42p-010-s260-r/#컨트롤-테이블-데이터-주소
+      children:
+        - title: "Area(EEPROM, RAM)"
+          titlekr: "영역 (EEPROM, RAM)"
+          url: /dxl/pro_plus/m42p-010-s260-r/#area-eeprom-ram
+          urlkr: /dxl/pro_plus/m42p-010-s260-r/#영역-eeprom-ram
+        - title: "Size"
+          titlekr: "크기"
+          url: /dxl/pro_plus/m42p-010-s260-r/#size
+          urlkr: /dxl/pro_plus/m42p-010-s260-r/#크기
+        - title: "Access"
+          titlekr: "접근권한"
+          url: /dxl/pro_plus/m42p-010-s260-r/#access
+          urlkr: /dxl/pro_plus/m42p-010-s260-r/#접근권한
+        - title: "Initial Value"
+          titlekr: "초기값"
+          url: /dxl/pro_plus/m42p-010-s260-r/#initial-value
+          urlkr: /dxl/pro_plus/m42p-010-s260-r/#초기값
+    - title: "EEPROM Area"
+      titlekr: "EEPROM 영역"
+      url: /dxl/pro_plus/m42p-010-s260-r/#control-table-of-eeprom-area
+      urlkr: /dxl/pro_plus/m42p-010-s260-r/#eeprom-영역
+    - title: "RAM Area"
+      titlekr: "RAM 영역"
+      url: /dxl/pro_plus/m42p-010-s260-r/#control-table-of-ram-area
+      urlkr: /dxl/pro_plus/m42p-010-s260-r/#ram-영역
+    - title: "Control Table Description"
+      titlekr: "컨트롤 테이블 설명"
+      url: /dxl/pro_plus/m42p-010-s260-r/#control-table-description
+      urlkr: /dxl/pro_plus/m42p-010-s260-r/#컨트롤-테이블-설명
+      children:
+        - title: "Model Number(0)"
+          titlekr: "Model Number(0)"
+          url: /dxl/pro_plus/m42p-010-s260-r/#model-number0
+        - title: "Firmware Version(6)"
+          titlekr: "Firmware Version(6)"
+          url: /dxl/pro_plus/m42p-010-s260-r/#firmware-version6
+        - title: "ID(7)"
+          titlekr: "ID(7)"
+          url: /dxl/pro_plus/m42p-010-s260-r/#id7
+        - title: "Baud Rate(8)"
+          titlekr: "Baud Rate(8)"
+          url: /dxl/pro_plus/m42p-010-s260-r/#baud-rate8
+        - title: "Return Delay Time(9)"
+          titlekr: "Return Delay Time(9)"
+          url: /dxl/pro_plus/m42p-010-s260-r/#return-delay-time9
+        - title: "Operating Mode(11)"
+          titlekr: "Operating Mode(11)"
+          url: /dxl/pro_plus/m42p-010-s260-r/#operating-mode11
+        - title: "Secondary ID(12)"
+          titlekr: "Secondary ID(12)"
+          url: /dxl/pro_plus/m42p-010-s260-r/#secondary-id12
+        - title: "Homing Offset(20)"
+          titlekr: "Homing Offset(20)"
+          url: /dxl/pro_plus/m42p-010-s260-r/#homing-offset20
+        - title: "Moving Threshold(24)"
+          titlekr: "Moving Threshold(24)"
+          url: /dxl/pro_plus/m42p-010-s260-r/#moving-threshold24
+        - title: "Temperature Limit(31)"
+          titlekr: "Temperature Limit(31)"
+          url: /dxl/pro_plus/m42p-010-s260-r/#temperature-limit31
+        - title: "Max/Min Voltage Limit(32, 34)"
+          titlekr: "Max/Min Voltage Limit(32, 34)"
+          url: /dxl/pro_plus/m42p-010-s260-r/#maxmin-voltage-limit32-34
+        - title: "PWM Limit(36)"
+          titlekr: "PWM Limit(36)"
+          url: /dxl/pro_plus/m42p-010-s260-r/#pwm-limit36
+        - title: "Current Limit(38)"
+          titlekr: "Current Limit(38)"
+          url: /dxl/pro_plus/m42p-010-s260-r/#current-limit38
+        - title: "Acceleration Limit(40)"
+          titlekr: "Acceleration Limit(40)"
+          url: /dxl/pro_plus/m42p-010-s260-r/#acceleration-limit40
+        - title: "Velocity Limit(44)"
+          titlekr: "Velocity Limit(44)"
+          url: /dxl/pro_plus/m42p-010-s260-r/#velocity-limit44
+        - title: "Max/Min Position Limit(48, 52)"
+          titlekr: "Max/Min Position Limit(48, 52)"
+          url: /dxl/pro_plus/m42p-010-s260-r/#maxmin-position-limit48-52
+        - title: "External Port Mode"
+          titlekr: "External Port Mode"
+          url: /dxl/pro_plus/m42p-010-s260-r/#external-port-mode-external-port-data
+        - title: "Shutdown(63)"
+          titlekr: "Shutdown(63)"
+          url: /dxl/pro_plus/m42p-010-s260-r/#shutdown63
+        - title: "Indirect Address"
+          titlekr: "Indirect Address/Data"
+          url: /dxl/pro_plus/m42p-010-s260-r/#indirect-address-indirect-data
+        - title: "Torque Enable(512)"
+          titlekr: "Torque Enable(512)"
+          url: /dxl/pro_plus/m42p-010-s260-r/#torque-enable512
+        - title: "RGB LED(513)"
+          titlekr: "RGB LED(513)"
+          url: /dxl/pro_plus/m42p-010-s260-r/#rgb-led513
+        - title: "Status Return Level(516)"
+          titlekr: "Status Return Level(516)"
+          url: /dxl/pro_plus/m42p-010-s260-r/#status-return-level516
+        - title: "Registered Instruction(517)"
+          titlekr: "Registered Instruction(517)"
+          url: /dxl/pro_plus/m42p-010-s260-r/#registered-instruction517
+        - title: "Hardware Error Status(518)"
+          titlekr: "Hardware Error Status(518)"
+          url: /dxl/pro_plus/m42p-010-s260-r/#hardware-error-status518
+        - title: "Velocity PI Gain(524, 526)"
+          titlekr: "Velocity PI Gain(524, 526)"
+          url: /dxl/pro_plus/m42p-010-s260-r/#velocity-pi-gain524-526-feedforward-2nd-gains536
+        - title: "Feedforward 2nd Gain(536)"
+          titlekr: "Feedforward 2nd Gain(536)"
+          url: /dxl/pro_plus/m42p-010-s260-r/#velocity-pi-gain524-526-feedforward-2nd-gains536
+        - title: "Position PID Gain(528, 530, 532)"
+          titlekr: "Position PID Gain(528, 530, 532)"
+          url: /dxl/pro_plus/m42p-010-s260-r/#position-pid-gain528-530-532-feedforward-1st-gains538
+        - title: "Feedforward 1st Gain(538)"
+          titlekr: "Feedforward 1st Gain(538)"
+          url: /dxl/pro_plus/m42p-010-s260-r/#position-pid-gain528-530-532-feedforward-1st-gains538
+        - title: "Bus Watchdog(546)"
+          titlekr: "Bus Watchdog(546)"
+          url: /dxl/pro_plus/m42p-010-s260-r/#bus-watchdog546
+        - title: "Goal PWM(548)"
+          titlekr: "Goal PWM(548)"
+          url: /dxl/pro_plus/m42p-010-s260-r/#goal-pwm548
+        - title: "Goal Current(550)"
+          titlekr: "Goal Current(550)"
+          url: /dxl/pro_plus/m42p-010-s260-r/#goal-current550
+        - title: "Goal Velocity(552)"
+          titlekr: "Goal Velocity(552)"
+          url: /dxl/pro_plus/m42p-010-s260-r/#goal-velocity552
+        - title: "Profile Acceleration(556)"
+          titlekr: "Profile Acceleration(556)"
+          url: /dxl/pro_plus/m42p-010-s260-r/#profile-acceleration556
+        - title: "Profiel Velocity(560)"
+          titlekr: "Profiel Velocity(560)"
+          url: /dxl/pro_plus/m42p-010-s260-r/#profile-velocity560
+        - title: "Goal Position(564)"
+          titlekr: "Goal Position(564)"
+          url: /dxl/pro_plus/m42p-010-s260-r/#goal-position564
+        - title: "Realtime Tick(568)"
+          titlekr: "Realtime Tick(568)"
+          url: /dxl/pro_plus/m42p-010-s260-r/#realtime-tick568
+        - title: "Moving(570)"
+          titlekr: "Moving(570)"
+          url: /dxl/pro_plus/m42p-010-s260-r/#moving570
+        - title: "Moving Status(571)"
+          titlekr: "Moving Status(571)"
+          url: /dxl/pro_plus/m42p-010-s260-r/#moving-status571
+        - title: "Present PWM(572)"
+          titlekr: "Present PWM(572)"
+          url: /dxl/pro_plus/m42p-010-s260-r/#present-pwm572
+        - title: "Present Current(574)"
+          titlekr: "Present Current(574)"
+          url: /dxl/pro_plus/m42p-010-s260-r/#present-current574
+        - title: "Present Velocity(576)"
+          titlekr: "Present Velocity(576)"
+          url: /dxl/pro_plus/m42p-010-s260-r/#present-velocity576
+        - title: "Present Position(580)"
+          titlekr: "Present Position(580)"
+          url: /dxl/pro_plus/m42p-010-s260-r/#present-position580
+        - title: "Velocity Trajectory(584)"
+          titlekr: "Velocity Trajectory(584)"
+          url: /dxl/pro_plus/m42p-010-s260-r/#velocity-trajectory584
+        - title: "Position Trajectory(588)"
+          titlekr: "Position Trajectory(588)"
+          url: /dxl/pro_plus/m42p-010-s260-r/#position-trajectory588
+        - title: "Present Input Voltage(592)"
+          titlekr: "Present Input Voltage(592)"
+          url: /dxl/pro_plus/m42p-010-s260-r/#present-input-voltage592
+        - title: "Present Temperature(594)"
+          titlekr: "Present Temperature(594)"
+          url: /dxl/pro_plus/m42p-010-s260-r/#present-temperature594
+- title: "How to Assemble"
+  titlekr: "조립 예시"
+  url: /dxl/pro_plus/m42p-010-s260-r/#how-to-assemble
+  urlkr: /dxl/pro_plus/m42p-010-s260-r/#조립-예시
+  children:
+    - title: "Option Frame Assembly"
+      titlekr: "옵션프레임 조립"
+      url: /dxl/pro_plus/m42p-010-s260-r/#option-frame-assembly
+      urlkr: /dxl/pro_plus/m42p-010-s260-r/#옵션프레임-조립
+- title: "Maintenance"
+  titlekr: "유지보수"
+  url: /dxl/pro_plus/m42p-010-s260-r/#maintenance
+  urlkr: /dxl/pro_plus/m42p-010-s260-r/#유지보수
+- title: "Reference"
+  titlekr: "참고자료"
+  url: /dxl/pro_plus/m42p-010-s260-r/#reference
+  urlkr: /dxl/pro_plus/m42p-010-s260-r/#참고자료
+  children:
+    - title: "Connector Information"
+      titlekr: "커넥터 정보"
+      url: /dxl/pro_plus/m42p-010-s260-r/#connector-information
+      urlkr: /dxl/pro_plus/m42p-010-s260-r/#커넥터-정보
+    - title: "Drawings"
+      titlekr: "도면"
+      url: /dxl/pro_plus/m42p-010-s260-r/#drawings
+      urlkr: /dxl/pro_plus/m42p-010-s260-r/#도면
+
+m54p-040-s250-r:
+- title: "Specifications"
+  titlekr: "주요 사양"
+  url: /dxl/pro_plus/m54p-040-s250-r/#specifications
+  urlkr: /dxl/pro_plus/m54p-040-s250-r/#주요-사양
+  children:
+    - title: "Performance Graph"
+      titlekr: "성능 그래프"
+      url: /dxl/pro_plus/m54p-040-s250-r/#performance-graph
+      urlkr: /dxl/pro_plus/m54p-040-s250-r/#성능-그래프
+- title: "Control Table"
+  titlekr: "컨트롤 테이블"
+  url: /dxl/pro_plus/m54p-040-s250-r/#control-table
+  urlkr: /dxl/pro_plus/m54p-040-s250-r/#컨트롤-테이블
+  children:
+    - title: "Control Table, Data, Address"
+      titlekr: "컨트롤 테이블, 데이터, 주소"
+      url: /dxl/pro_plus/m54p-040-s250-r/#control-table-data-address
+      urlkr: /dxl/pro_plus/m54p-040-s250-r/#컨트롤-테이블-데이터-주소
+      children:
+        - title: "Area(EEPROM, RAM)"
+          titlekr: "영역 (EEPROM, RAM)"
+          url: /dxl/pro_plus/m54p-040-s250-r/#area-eeprom-ram
+          urlkr: /dxl/pro_plus/m54p-040-s250-r/#영역-eeprom-ram
+        - title: "Size"
+          titlekr: "크기"
+          url: /dxl/pro_plus/m54p-040-s250-r/#size
+          urlkr: /dxl/pro_plus/m54p-040-s250-r/#크기
+        - title: "Access"
+          titlekr: "접근권한"
+          url: /dxl/pro_plus/m54p-040-s250-r/#access
+          urlkr: /dxl/pro_plus/m54p-040-s250-r/#접근권한
+        - title: "Initial Value"
+          titlekr: "초기값"
+          url: /dxl/pro_plus/m54p-040-s250-r/#initial-value
+          urlkr: /dxl/pro_plus/m54p-040-s250-r/#초기값
+    - title: "EEPROM Area"
+      titlekr: "EEPROM 영역"
+      url: /dxl/pro_plus/m54p-040-s250-r/#control-table-of-eeprom-area
+      urlkr: /dxl/pro_plus/m54p-040-s250-r/#eeprom-영역
+    - title: "RAM Area"
+      titlekr: "RAM 영역"
+      url: /dxl/pro_plus/m54p-040-s250-r/#control-table-of-ram-area
+      urlkr: /dxl/pro_plus/m54p-040-s250-r/#ram-영역
+    - title: "Control Table Description"
+      titlekr: "컨트롤 테이블 설명"
+      url: /dxl/pro_plus/m54p-040-s250-r/#control-table-description
+      urlkr: /dxl/pro_plus/m54p-040-s250-r/#컨트롤-테이블-설명
+      children:
+        - title: "Model Number(0)"
+          titlekr: "Model Number(0)"
+          url: /dxl/pro_plus/m54p-040-s250-r/#model-number0
+        - title: "Firmware Version(6)"
+          titlekr: "Firmware Version(6)"
+          url: /dxl/pro_plus/m54p-040-s250-r/#firmware-version6
+        - title: "ID(7)"
+          titlekr: "ID(7)"
+          url: /dxl/pro_plus/m54p-040-s250-r/#id7
+        - title: "Baud Rate(8)"
+          titlekr: "Baud Rate(8)"
+          url: /dxl/pro_plus/m54p-040-s250-r/#baud-rate8
+        - title: "Return Delay Time(9)"
+          titlekr: "Return Delay Time(9)"
+          url: /dxl/pro_plus/m54p-040-s250-r/#return-delay-time9
+        - title: "Operating Mode(11)"
+          titlekr: "Operating Mode(11)"
+          url: /dxl/pro_plus/m54p-040-s250-r/#operating-mode11
+        - title: "Secondary ID(12)"
+          titlekr: "Secondary ID(12)"
+          url: /dxl/pro_plus/m54p-040-s250-r/#secondary-id12
+        - title: "Homing Offset(20)"
+          titlekr: "Homing Offset(20)"
+          url: /dxl/pro_plus/m54p-040-s250-r/#homing-offset20
+        - title: "Moving Threshold(24)"
+          titlekr: "Moving Threshold(24)"
+          url: /dxl/pro_plus/m54p-040-s250-r/#moving-threshold24
+        - title: "Temperature Limit(31)"
+          titlekr: "Temperature Limit(31)"
+          url: /dxl/pro_plus/m54p-040-s250-r/#temperature-limit31
+        - title: "Max/Min Voltage Limit(32, 34)"
+          titlekr: "Max/Min Voltage Limit(32, 34)"
+          url: /dxl/pro_plus/m54p-040-s250-r/#maxmin-voltage-limit32-34
+        - title: "PWM Limit(36)"
+          titlekr: "PWM Limit(36)"
+          url: /dxl/pro_plus/m54p-040-s250-r/#pwm-limit36
+        - title: "Current Limit(38)"
+          titlekr: "Current Limit(38)"
+          url: /dxl/pro_plus/m54p-040-s250-r/#current-limit38
+        - title: "Acceleration Limit(40)"
+          titlekr: "Acceleration Limit(40)"
+          url: /dxl/pro_plus/m54p-040-s250-r/#acceleration-limit40
+        - title: "Velocity Limit(44)"
+          titlekr: "Velocity Limit(44)"
+          url: /dxl/pro_plus/m54p-040-s250-r/#velocity-limit44
+        - title: "Max/Min Position Limit(48, 52)"
+          titlekr: "Max/Min Position Limit(48, 52)"
+          url: /dxl/pro_plus/m54p-040-s250-r/#maxmin-position-limit48-52
+        - title: "External Port Mode"
+          titlekr: "External Port Mode"
+          url: /dxl/pro_plus/m54p-040-s250-r/#external-port-mode-external-port-data
+        - title: "Shutdown(63)"
+          titlekr: "Shutdown(63)"
+          url: /dxl/pro_plus/m54p-040-s250-r/#shutdown63
+        - title: "Indirect Address"
+          titlekr: "Indirect Address/Data"
+          url: /dxl/pro_plus/m54p-040-s250-r/#indirect-address-indirect-data
+        - title: "Torque Enable(512)"
+          titlekr: "Torque Enable(512)"
+          url: /dxl/pro_plus/m54p-040-s250-r/#torque-enable512
+        - title: "RGB LED(513)"
+          titlekr: "RGB LED(513)"
+          url: /dxl/pro_plus/m54p-040-s250-r/#rgb-led513
+        - title: "Status Return Level(516)"
+          titlekr: "Status Return Level(516)"
+          url: /dxl/pro_plus/m54p-040-s250-r/#status-return-level516
+        - title: "Registered Instruction(517)"
+          titlekr: "Registered Instruction(517)"
+          url: /dxl/pro_plus/m54p-040-s250-r/#registered-instruction517
+        - title: "Hardware Error Status(518)"
+          titlekr: "Hardware Error Status(518)"
+          url: /dxl/pro_plus/m54p-040-s250-r/#hardware-error-status518
+        - title: "Velocity PI Gain(524, 526)"
+          titlekr: "Velocity PI Gain(524, 526)"
+          url: /dxl/pro_plus/m54p-040-s250-r/#velocity-pi-gain524-526-feedforward-2nd-gains536
+        - title: "Feedforward 2nd Gain(536)"
+          titlekr: "Feedforward 2nd Gain(536)"
+          url: /dxl/pro_plus/m54p-040-s250-r/#velocity-pi-gain524-526-feedforward-2nd-gains536
+        - title: "Position PID Gain(528, 530, 532)"
+          titlekr: "Position PID Gain(528, 530, 532)"
+          url: /dxl/pro_plus/m54p-040-s250-r/#position-pid-gain528-530-532-feedforward-1st-gains538
+        - title: "Feedforward 1st Gain(538)"
+          titlekr: "Feedforward 1st Gain(538)"
+          url: /dxl/pro_plus/m54p-040-s250-r/#position-pid-gain528-530-532-feedforward-1st-gains538
+        - title: "Bus Watchdog(546)"
+          titlekr: "Bus Watchdog(546)"
+          url: /dxl/pro_plus/m54p-040-s250-r/#bus-watchdog546
+        - title: "Goal PWM(548)"
+          titlekr: "Goal PWM(548)"
+          url: /dxl/pro_plus/m54p-040-s250-r/#goal-pwm548
+        - title: "Goal Current(550)"
+          titlekr: "Goal Current(550)"
+          url: /dxl/pro_plus/m54p-040-s250-r/#goal-current550
+        - title: "Goal Velocity(552)"
+          titlekr: "Goal Velocity(552)"
+          url: /dxl/pro_plus/m54p-040-s250-r/#goal-velocity552
+        - title: "Profile Acceleration(556)"
+          titlekr: "Profile Acceleration(556)"
+          url: /dxl/pro_plus/m54p-040-s250-r/#profile-acceleration556
+        - title: "Profiel Velocity(560)"
+          titlekr: "Profiel Velocity(560)"
+          url: /dxl/pro_plus/m54p-040-s250-r/#profile-velocity560
+        - title: "Goal Position(564)"
+          titlekr: "Goal Position(564)"
+          url: /dxl/pro_plus/m54p-040-s250-r/#goal-position564
+        - title: "Realtime Tick(568)"
+          titlekr: "Realtime Tick(568)"
+          url: /dxl/pro_plus/m54p-040-s250-r/#realtime-tick568
+        - title: "Moving(570)"
+          titlekr: "Moving(570)"
+          url: /dxl/pro_plus/m54p-040-s250-r/#moving570
+        - title: "Moving Status(571)"
+          titlekr: "Moving Status(571)"
+          url: /dxl/pro_plus/m54p-040-s250-r/#moving-status571
+        - title: "Present PWM(572)"
+          titlekr: "Present PWM(572)"
+          url: /dxl/pro_plus/m54p-040-s250-r/#present-pwm572
+        - title: "Present Current(574)"
+          titlekr: "Present Current(574)"
+          url: /dxl/pro_plus/m54p-040-s250-r/#present-current574
+        - title: "Present Velocity(576)"
+          titlekr: "Present Velocity(576)"
+          url: /dxl/pro_plus/m54p-040-s250-r/#present-velocity576
+        - title: "Present Position(580)"
+          titlekr: "Present Position(580)"
+          url: /dxl/pro_plus/m54p-040-s250-r/#present-position580
+        - title: "Velocity Trajectory(584)"
+          titlekr: "Velocity Trajectory(584)"
+          url: /dxl/pro_plus/m54p-040-s250-r/#velocity-trajectory584
+        - title: "Position Trajectory(588)"
+          titlekr: "Position Trajectory(588)"
+          url: /dxl/pro_plus/m54p-040-s250-r/#position-trajectory588
+        - title: "Present Input Voltage(592)"
+          titlekr: "Present Input Voltage(592)"
+          url: /dxl/pro_plus/m54p-040-s250-r/#present-input-voltage592
+        - title: "Present Temperature(594)"
+          titlekr: "Present Temperature(594)"
+          url: /dxl/pro_plus/m54p-040-s250-r/#present-temperature594
+- title: "How to Assemble"
+  titlekr: "조립 예시"
+  url: /dxl/pro_plus/m54p-040-s250-r/#how-to-assemble
+  urlkr: /dxl/pro_plus/m54p-040-s250-r/#조립-예시
+  children:
+    - title: "Option Frame Assembly"
+      titlekr: "옵션프레임 조립"
+      url: /dxl/pro_plus/m54p-040-s250-r/#option-frame-assembly
+      urlkr: /dxl/pro_plus/m54p-040-s250-r/#옵션프레임-조립
+- title: "Maintenance"
+  titlekr: "유지보수"
+  url: /dxl/pro_plus/m54p-040-s250-r/#maintenance
+  urlkr: /dxl/pro_plus/m54p-040-s250-r/#유지보수
+- title: "Reference"
+  titlekr: "참고자료"
+  url: /dxl/pro_plus/m54p-040-s250-r/#reference
+  urlkr: /dxl/pro_plus/m54p-040-s250-r/#참고자료
+  children:
+    - title: "Connector Information"
+      titlekr: "커넥터 정보"
+      url: /dxl/pro_plus/m54p-040-s250-r/#connector-information
+      urlkr: /dxl/pro_plus/m54p-040-s250-r/#커넥터-정보
+    - title: "Drawings"
+      titlekr: "도면"
+      url: /dxl/pro_plus/m54p-040-s250-r/#drawings
+      urlkr: /dxl/pro_plus/m54p-040-s250-r/#도면
+
+m54p-060-s250-r:
+- title: "Specifications"
+  titlekr: "주요 사양"
+  url: /dxl/pro_plus/m54p-060-s250-r/#specifications
+  urlkr: /dxl/pro_plus/m54p-060-s250-r/#주요-사양
+  children:
+    - title: "Performance Graph"
+      titlekr: "성능 그래프"
+      url: /dxl/pro_plus/m54p-060-s250-r/#performance-graph
+      urlkr: /dxl/pro_plus/m54p-060-s250-r/#성능-그래프
+- title: "Control Table"
+  titlekr: "컨트롤 테이블"
+  url: /dxl/pro_plus/m54p-060-s250-r/#control-table
+  urlkr: /dxl/pro_plus/m54p-060-s250-r/#컨트롤-테이블
+  children:
+    - title: "Control Table, Data, Address"
+      titlekr: "컨트롤 테이블, 데이터, 주소"
+      url: /dxl/pro_plus/m54p-060-s250-r/#control-table-data-address
+      urlkr: /dxl/pro_plus/m54p-060-s250-r/#컨트롤-테이블-데이터-주소
+      children:
+        - title: "Area(EEPROM, RAM)"
+          titlekr: "영역 (EEPROM, RAM)"
+          url: /dxl/pro_plus/m54p-060-s250-r/#area-eeprom-ram
+          urlkr: /dxl/pro_plus/m54p-060-s250-r/#영역-eeprom-ram
+        - title: "Size"
+          titlekr: "크기"
+          url: /dxl/pro_plus/m54p-060-s250-r/#size
+          urlkr: /dxl/pro_plus/m54p-060-s250-r/#크기
+        - title: "Access"
+          titlekr: "접근권한"
+          url: /dxl/pro_plus/m54p-060-s250-r/#access
+          urlkr: /dxl/pro_plus/m54p-060-s250-r/#접근권한
+        - title: "Initial Value"
+          titlekr: "초기값"
+          url: /dxl/pro_plus/m54p-060-s250-r/#initial-value
+          urlkr: /dxl/pro_plus/m54p-060-s250-r/#초기값
+    - title: "EEPROM Area"
+      titlekr: "EEPROM 영역"
+      url: /dxl/pro_plus/m54p-060-s250-r/#control-table-of-eeprom-area
+      urlkr: /dxl/pro_plus/m54p-060-s250-r/#eeprom-영역
+    - title: "RAM Area"
+      titlekr: "RAM 영역"
+      url: /dxl/pro_plus/m54p-060-s250-r/#control-table-of-ram-area
+      urlkr: /dxl/pro_plus/m54p-060-s250-r/#ram-영역
+    - title: "Control Table Description"
+      titlekr: "컨트롤 테이블 설명"
+      url: /dxl/pro_plus/m54p-060-s250-r/#control-table-description
+      urlkr: /dxl/pro_plus/m54p-060-s250-r/#컨트롤-테이블-설명
+      children:
+        - title: "Model Number(0)"
+          titlekr: "Model Number(0)"
+          url: /dxl/pro_plus/m54p-060-s250-r/#model-number0
+        - title: "Firmware Version(6)"
+          titlekr: "Firmware Version(6)"
+          url: /dxl/pro_plus/m54p-060-s250-r/#firmware-version6
+        - title: "ID(7)"
+          titlekr: "ID(7)"
+          url: /dxl/pro_plus/m54p-060-s250-r/#id7
+        - title: "Baud Rate(8)"
+          titlekr: "Baud Rate(8)"
+          url: /dxl/pro_plus/m54p-060-s250-r/#baud-rate8
+        - title: "Return Delay Time(9)"
+          titlekr: "Return Delay Time(9)"
+          url: /dxl/pro_plus/m54p-060-s250-r/#return-delay-time9
+        - title: "Operating Mode(11)"
+          titlekr: "Operating Mode(11)"
+          url: /dxl/pro_plus/m54p-060-s250-r/#operating-mode11
+        - title: "Secondary ID(12)"
+          titlekr: "Secondary ID(12)"
+          url: /dxl/pro_plus/m54p-060-s250-r/#secondary-id12
+        - title: "Homing Offset(20)"
+          titlekr: "Homing Offset(20)"
+          url: /dxl/pro_plus/m54p-060-s250-r/#homing-offset20
+        - title: "Moving Threshold(24)"
+          titlekr: "Moving Threshold(24)"
+          url: /dxl/pro_plus/m54p-060-s250-r/#moving-threshold24
+        - title: "Temperature Limit(31)"
+          titlekr: "Temperature Limit(31)"
+          url: /dxl/pro_plus/m54p-060-s250-r/#temperature-limit31
+        - title: "Max/Min Voltage Limit(32, 34)"
+          titlekr: "Max/Min Voltage Limit(32, 34)"
+          url: /dxl/pro_plus/m54p-060-s250-r/#maxmin-voltage-limit32-34
+        - title: "PWM Limit(36)"
+          titlekr: "PWM Limit(36)"
+          url: /dxl/pro_plus/m54p-060-s250-r/#pwm-limit36
+        - title: "Current Limit(38)"
+          titlekr: "Current Limit(38)"
+          url: /dxl/pro_plus/m54p-060-s250-r/#current-limit38
+        - title: "Acceleration Limit(40)"
+          titlekr: "Acceleration Limit(40)"
+          url: /dxl/pro_plus/m54p-060-s250-r/#acceleration-limit40
+        - title: "Velocity Limit(44)"
+          titlekr: "Velocity Limit(44)"
+          url: /dxl/pro_plus/m54p-060-s250-r/#velocity-limit44
+        - title: "Max/Min Position Limit(48, 52)"
+          titlekr: "Max/Min Position Limit(48, 52)"
+          url: /dxl/pro_plus/m54p-060-s250-r/#maxmin-position-limit48-52
+        - title: "External Port Mode"
+          titlekr: "External Port Mode"
+          url: /dxl/pro_plus/m54p-060-s250-r/#external-port-mode-external-port-data
+        - title: "Shutdown(63)"
+          titlekr: "Shutdown(63)"
+          url: /dxl/pro_plus/m54p-060-s250-r/#shutdown63
+        - title: "Indirect Address"
+          titlekr: "Indirect Address/Data"
+          url: /dxl/pro_plus/m54p-060-s250-r/#indirect-address-indirect-data
+        - title: "Torque Enable(512)"
+          titlekr: "Torque Enable(512)"
+          url: /dxl/pro_plus/m54p-060-s250-r/#torque-enable512
+        - title: "RGB LED(513)"
+          titlekr: "RGB LED(513)"
+          url: /dxl/pro_plus/m54p-060-s250-r/#rgb-led513
+        - title: "Status Return Level(516)"
+          titlekr: "Status Return Level(516)"
+          url: /dxl/pro_plus/m54p-060-s250-r/#status-return-level516
+        - title: "Registered Instruction(517)"
+          titlekr: "Registered Instruction(517)"
+          url: /dxl/pro_plus/m54p-060-s250-r/#registered-instruction517
+        - title: "Hardware Error Status(518)"
+          titlekr: "Hardware Error Status(518)"
+          url: /dxl/pro_plus/m54p-060-s250-r/#hardware-error-status518
+        - title: "Velocity PI Gain(524, 526)"
+          titlekr: "Velocity PI Gain(524, 526)"
+          url: /dxl/pro_plus/m54p-060-s250-r/#velocity-pi-gain524-526-feedforward-2nd-gains536
+        - title: "Feedforward 2nd Gain(536)"
+          titlekr: "Feedforward 2nd Gain(536)"
+          url: /dxl/pro_plus/m54p-060-s250-r/#velocity-pi-gain524-526-feedforward-2nd-gains536
+        - title: "Position PID Gain(528, 530, 532)"
+          titlekr: "Position PID Gain(528, 530, 532)"
+          url: /dxl/pro_plus/m54p-060-s250-r/#position-pid-gain528-530-532-feedforward-1st-gains538
+        - title: "Feedforward 1st Gain(538)"
+          titlekr: "Feedforward 1st Gain(538)"
+          url: /dxl/pro_plus/m54p-060-s250-r/#position-pid-gain528-530-532-feedforward-1st-gains538
+        - title: "Bus Watchdog(546)"
+          titlekr: "Bus Watchdog(546)"
+          url: /dxl/pro_plus/m54p-060-s250-r/#bus-watchdog546
+        - title: "Goal PWM(548)"
+          titlekr: "Goal PWM(548)"
+          url: /dxl/pro_plus/m54p-060-s250-r/#goal-pwm548
+        - title: "Goal Current(550)"
+          titlekr: "Goal Current(550)"
+          url: /dxl/pro_plus/m54p-060-s250-r/#goal-current550
+        - title: "Goal Velocity(552)"
+          titlekr: "Goal Velocity(552)"
+          url: /dxl/pro_plus/m54p-060-s250-r/#goal-velocity552
+        - title: "Profile Acceleration(556)"
+          titlekr: "Profile Acceleration(556)"
+          url: /dxl/pro_plus/m54p-060-s250-r/#profile-acceleration556
+        - title: "Profiel Velocity(560)"
+          titlekr: "Profiel Velocity(560)"
+          url: /dxl/pro_plus/m54p-060-s250-r/#profile-velocity560
+        - title: "Goal Position(564)"
+          titlekr: "Goal Position(564)"
+          url: /dxl/pro_plus/m54p-060-s250-r/#goal-position564
+        - title: "Realtime Tick(568)"
+          titlekr: "Realtime Tick(568)"
+          url: /dxl/pro_plus/m54p-060-s250-r/#realtime-tick568
+        - title: "Moving(570)"
+          titlekr: "Moving(570)"
+          url: /dxl/pro_plus/m54p-060-s250-r/#moving570
+        - title: "Moving Status(571)"
+          titlekr: "Moving Status(571)"
+          url: /dxl/pro_plus/m54p-060-s250-r/#moving-status571
+        - title: "Present PWM(572)"
+          titlekr: "Present PWM(572)"
+          url: /dxl/pro_plus/m54p-060-s250-r/#present-pwm572
+        - title: "Present Current(574)"
+          titlekr: "Present Current(574)"
+          url: /dxl/pro_plus/m54p-060-s250-r/#present-current574
+        - title: "Present Velocity(576)"
+          titlekr: "Present Velocity(576)"
+          url: /dxl/pro_plus/m54p-060-s250-r/#present-velocity576
+        - title: "Present Position(580)"
+          titlekr: "Present Position(580)"
+          url: /dxl/pro_plus/m54p-060-s250-r/#present-position580
+        - title: "Velocity Trajectory(584)"
+          titlekr: "Velocity Trajectory(584)"
+          url: /dxl/pro_plus/m54p-060-s250-r/#velocity-trajectory584
+        - title: "Position Trajectory(588)"
+          titlekr: "Position Trajectory(588)"
+          url: /dxl/pro_plus/m54p-060-s250-r/#position-trajectory588
+        - title: "Present Input Voltage(592)"
+          titlekr: "Present Input Voltage(592)"
+          url: /dxl/pro_plus/m54p-060-s250-r/#present-input-voltage592
+        - title: "Present Temperature(594)"
+          titlekr: "Present Temperature(594)"
+          url: /dxl/pro_plus/m54p-060-s250-r/#present-temperature594
+- title: "How to Assemble"
+  titlekr: "조립 예시"
+  url: /dxl/pro_plus/m54p-060-s250-r/#how-to-assemble
+  urlkr: /dxl/pro_plus/m54p-060-s250-r/#조립-예시
+  children:
+    - title: "Option Frame Assembly"
+      titlekr: "옵션프레임 조립"
+      url: /dxl/pro_plus/m54p-060-s250-r/#option-frame-assembly
+      urlkr: /dxl/pro_plus/m54p-060-s250-r/#옵션프레임-조립
+- title: "Maintenance"
+  titlekr: "유지보수"
+  url: /dxl/pro_plus/m54p-060-s250-r/#maintenance
+  urlkr: /dxl/pro_plus/m54p-060-s250-r/#유지보수
+- title: "Reference"
+  titlekr: "참고자료"
+  url: /dxl/pro_plus/m54p-060-s250-r/#reference
+  urlkr: /dxl/pro_plus/m54p-060-s250-r/#참고자료
+  children:
+    - title: "Connector Information"
+      titlekr: "커넥터 정보"
+      url: /dxl/pro_plus/m54p-060-s250-r/#connector-information
+      urlkr: /dxl/pro_plus/m54p-060-s250-r/#커넥터-정보
+    - title: "Drawings"
+      titlekr: "도면"
+      url: /dxl/pro_plus/m54p-060-s250-r/#drawings
+      urlkr: /dxl/pro_plus/m54p-060-s250-r/#도면
+
 #Protocol 1.0 sidebar
 protocol1:
   - title: "Communication Overview"
