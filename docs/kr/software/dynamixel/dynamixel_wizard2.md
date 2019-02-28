@@ -68,7 +68,7 @@ sidebar:
 | **PRO M(A)**     | [M42-10-S260-R(A)] | [M54-40-S250-R(A)]    | [M54-60-S250-R(A)]    |                         |                 |
 | **PRO H(A)**     | [H42-20-S300-R(A)] | [H54-100-S500-R(A)]   | [H54-200-S500-R(A)]   |                         |                 |
 | **PRO+ H**       | [H42P-020-S300-R]  | [H54P-100-S500-R]     | [H54P-100-S500-R]     |                         |                 |
-|                  | [RH-P12-RN]        | [RH-P12-RN(A)]        |                       |                         |                 |
+| **ETC**          | [RH-P12-RN]        | [RH-P12-RN(A)]        |                       |                         |                 |
 
 # [메뉴 설명](#메뉴-설명)
 
@@ -146,28 +146,28 @@ sidebar:
 
 ### [다이나믹셀 검색 설정](#검색-설정)
 
-1. 메인 메뉴에서 `Tools` > `Options` 를 선택하면 설정창이 나타납니다.
+1. 메인 메뉴에서 `도구` > `설정` 를 선택하면 설정창이 나타납니다.
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_011.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_011_kr.png)
 
-2. 설정창의 좌측 목록에서 `Scan` 항목을 선택하면 검색 설정이 나타납니다.
+2. 설정창의 좌측 목록에서 `검색` 항목을 선택하면 검색 설정이 나타납니다.
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_options_001.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_options_001_kr.png)
 
 3. 순서대로 검색할 프로토콜 버전, 통신포트, 통신속도, ID범위를 설정하고 `OK` 버튼을 클릭합니다. 항목을 적게 설정할수록 검색시간이 단축됩니다.
 
 ### [다이나믹셀 검색하기](#다이나믹셀-검색하기)
 
-1. 메인 메뉴에서 `Device` > `Scan` 을 선택하면 다이나믹셀 검색을 시작합니다.
+1. 메인 메뉴에서 `장치` > `검색` 을 선택하면 다이나믹셀 검색을 시작합니다.
 
     **참고** : 만약, 해당 통신 포트에 연결을 실패하면 사용중인 프로그램을 찾아 사용을 해제해야 합니다.  
     {: .notice}  
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_012.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_012_kr.png)
 
 2. 검색되는 다이나믹셀을 왼쪽의 장치목록에서 확인할 수 있습니다.  
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_001.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_001_kr.png)
 
 ## [다이나믹셀 컨트롤 테이블](#다이나믹셀-컨트롤-테이블)
 
@@ -175,16 +175,16 @@ sidebar:
 
 2. 장치목록은 포트, 통신속도, 장치 순으로 분류합니다. 테스트할 그룹이나 장치를 선택합니다.  
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_002.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_002_kr.png)
 
-3. 부가 메뉴에서 `Factory Reset` 버튼을 클릭하면 제품을 공장 초기화 상태로 되돌릴 수 있습니다(이때, ID와 Baudrate 값은 변경하지 않습니다).  
-  부가 메뉴에서 `Reboot` 버튼을 클릭하면 해당 다이나믹셀을 재부팅할 수 있습니다.  
-  부가 메뉴에서 `Torque` 버튼을 클릭하면 해당 다이나믹셀의 토크를 켜거나 끌 수 있습니다.  
+3. 부가 메뉴에서 `팩토리 리셋` 버튼을 클릭하면 제품을 공장 초기화 상태로 되돌릴 수 있습니다(이때, ID와 Baudrate 값은 변경하지 않습니다).  
+  부가 메뉴에서 `리부팅` 버튼을 클릭하면 해당 다이나믹셀을 재부팅할 수 있습니다.  
+  부가 메뉴에서 `토크` 버튼을 클릭하면 해당 다이나믹셀의 토크를 켜거나 끌 수 있습니다.  
   부가 메뉴에서 `LED` 버튼을 클릭하면 해당 다이나믹셀의 LED를 켜거나 끌 수 있습니다.  
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_003.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_003_kr.png)
 
-4. 부가 메뉴의 `Torque` 버튼을 클릭하여 다이나믹셀의 토크를 켭니다.
+4. 부가 메뉴의 `토크` 버튼을 클릭하여 다이나믹셀의 토크를 켭니다.
 
 5. 컨트롤 테이블에서 `Goal Position` 항목을 찾아 선택합니다.
 
@@ -193,7 +193,7 @@ sidebar:
     **경고** : 값을 조정하는 과정에서 모터가 갑작스럽게 움직일 수 있으니 주의하세요.  
     {: .notice--warning}
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_004.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_004_kr.png)
 
 7. 좌측 하단의 `통신 상태` 를 통해 현재 PC와 제품의 통신이 원활히 이루어지고 있는지 확인할 수 있습니다.
 
@@ -211,19 +211,19 @@ sidebar:
 
 ### [그래프 설정](#그래프-설정)
 
-1. 메인 메뉴에서 `Tools` > `Options` 를 선택하면 설정창이 나타납니다.
+1. 메인 메뉴에서 `도구` > `설정` 를 선택하면 설정창이 나타납니다.
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_011.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_011_kr.png)
 
-2. 설정창의 좌측 목록에서 `Graph` 항목을 선택하면 그래프 설정이 나타납니다.
+2. 설정창의 좌측 목록에서 `그래프` 항목을 선택하면 그래프 설정이 나타납니다.
 
 3. 아래 그림에 표시된 `추가` 버튼을 클릭하면 항목 추가 상자가 나타납니다.
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_002.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_002_kr.png)
 
-4. 항목 추가 상자에서 순서대로 표시항목과 선 색깔, 스케일값, 보조축 사용 여부를 설정하고 `OK` 버튼을 클릭합니다.
+4. 항목 추가 상자에서 순서대로 표시항목과 선 색깔, 스케일값, 보조축 사용 여부를 설정하고 `확인` 버튼을 클릭합니다.
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_003.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_003_kr.png)
 
 5. 통신주기(Interval)는 1~1000ms로 설정가능합니다. 통신주기가 작을수록 더 세밀한 그래프가 표현됩니다.
 
@@ -235,59 +235,59 @@ sidebar:
     **참고** : 속도 최적화를 사용하면 컨트롤 테이블의 일부 항목들이 자동으로 갱신되지않습니다.  
     {: .notice}  
 
-7. 설정창의 `OK` 버튼을 클릭합니다.
+7. 설정창의 `확인` 버튼을 클릭합니다.
 
 ### [그래프 시작](#그래프-시작)
 
-1. 메인 메뉴에서 `View` > `Graph` 를 선택하면 그래프창이 나타납니다.
+1. 메인 메뉴에서 `보기` > `그래프` 를 선택하면 그래프창이 나타납니다.
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_013.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_013_kr.png)
 
-3. 그래프창의 `Start` 버튼을 클릭하면 그래프가 동작을 시작합니다.
+3. 그래프창의 `시작` 버튼을 클릭하면 그래프가 동작을 시작합니다.
 
     **참고** : 선택된 장치가 없으면 해당 메뉴가 비활성화된 상태입니다. 검색 후 다이나믹셀이 연결된 상태에서 진행해 주세요.  
     {: .notice}
 
 3. 컨트롤 테이블에서 `Goal Position` 항목의 값을 변경하면 실시간으로 변경되는 `Present Position` 을 확인할 수 있습니다.
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_004.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_004_kr.png)
 
 4. 다음의 메뉴를 통해 그래프를 제어할 수 있습니다.
 
-    - Start/Stop : 그래프 시작/정지
-    - Reset : 줌화면에서 원래화면으로 복귀
-    - Capture : 그래프를 이미지로 저장
-    - Save : 데이터를 CSV파일로 저장
+    - 시작/정지 : 그래프 시작/정지
+    - 리셋 : 줌화면에서 원래화면으로 복귀
+    - 캡처 : 그래프를 이미지로 저장
+    - 저장 : 데이터를 CSV파일로 저장
     - 항목 표시 설정 : 그래프 우측에 있는 항목을 클릭하여 표시 여부 설정
     - 확대/축소 : 마우스 드래그로 줌영역을 선택
-      - + `Shift` : y축 고정, x축 확대
-      - + `Ctrl` : x축 고정, y축 확대
+      - `Shift` + 드래그 : y축 고정, x축 확대
+      - `Ctrl` + 드래그 : x축 고정, y축 확대
       - 마우스 휠로 이전 줌, 다음 줌으로 이동
     - 그래프 동작시 Ctrl과 마우스휠로 시간축을 1~10초로 1초단위로 조절
 
 ## [패킷](#패킷)
 
-1. 메인 메뉴에서 `View` > `Packet` 를 선택하면 패킷창이 나타납니다.
+1. 메인 메뉴에서 `보기` > `패킷` 를 선택하면 패킷창이 나타납니다.
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_014.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_014_kr.png)
 
-1. 통신포트와 통신속도를 설정하고 `Open` 버튼을 클릭합니다.  
+1. 통신포트와 통신속도를 설정하고 `열기` 버튼을 클릭합니다.  
   열기에 성공하면 해당 포트의 다이나믹셀 프로토콜 통신 모니터링을 시작합니다.
 
     **참고** : 만약, 해당 통신 포트에 연결을 실패하면 사용중인 프로그램을 찾아 사용을 해제해야합니다.  
     {: .notice}
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_packet_002.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_packet_002_kr.png)
 
 2. 우측 메뉴에서 통신할 프로토콜 버전과 Instruction을 설정할 수 있습니다.  
   프로토콜 버전을 `2.0` 으로 Instruction을 `Write` 로 설정합니다.  
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_packet_003.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_packet_003_kr.png)
 
 3. Instuction에 대한 상세설정을 할 수 있습니다.  
   다음과 같이 LED 켜기의 패킷을 설정합니다.  
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_packet_004.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_packet_004_kr.png)
 
     - LED 항목의 컨트롤 테이블 주소 : 65
     - LED 항목의 컨트롤 테이블 길이[Byte] : 1
@@ -295,87 +295,87 @@ sidebar:
 
 4. 설정된 값에 따라 변화되는 패킷정보를 하단에 있는 `패킷상세정보` 에서 확인할 수 있습니다.  
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_packet_005.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_packet_005_kr.png)
 
-5. `Send` 버튼을 클릭하여 패킷을 전송합니다.  
+5. `전송` 버튼을 클릭하여 패킷을 전송합니다.  
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_packet_006.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_packet_006_kr.png)
 
 6. 패킷목록에서 응답패킷을 클릭하면 패킷상세정보를 확인할 수 있습니다.  
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_packet_007.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_packet_007_kr.png)
 
 ## [펌웨어 업데이트](#펌웨어-업데이트)
 
-1. 메인 메뉴에서 `Tools` > `Firmware Update`를 선택합니다.
+1. 메인 메뉴에서 `도구` > `펌웨어 업데이트`를 선택합니다.
 
     **참고** : 선택된 장치가 없으면 해당 메뉴가 비활성화된 상태입니다. 검색 후 다이나믹셀이 연결된 상태에서 진행해 주세요.  
     {: .notice}
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_015.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_015_kr.png)
 
 2. 간단한 도움말과 함께 펌웨어 업데이트를 시작합니다. 특히, 업데이트 도중 연결이 끊기거나 전원이 꺼지지 않도록 유의하십시오.
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_update_001.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_update_001_kr.png)
 
 3. 다음을 누르면 펌웨어 업데이트를 시작합니다. 완료될때 까지 전원이 꺼지거나 케이블이 빠지지 않도록 유의합니다.
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_update_002.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_update_002_kr.png)
 
 4. 다이나믹셀 펌웨어 설치 결과를 학인합니다.
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_update_004.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_update_004_kr.png)
 
 ## [펌웨어 전체 업데이트](#펌웨어-전체-업데이트)
 
-1. 메인 메뉴에서 `Tools` > `Firmware Update All`을 선택합니다.
+1. 메인 메뉴에서 `도구` > `펌웨어 전체 업데이트`을 선택합니다.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_016.png)
 
 2. 관리할 대상이 정상적으로 검색되었는지 확인한 후 다음 버튼을 클릭합니다.  
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_update_all_001.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_update_all_001_kr.png)
 
 3. 검색된 장치들 중 업데이트가 필요한 장치들만 진행합니다.  
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_update_all_002.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_update_all_002_kr.png)
 
 4. 업데이트가 정상적으로 완료될때까지 기다린후, 닫기 버튼을 클릭합니다.  
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_update_all_003.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_update_all_003_kr.png)
 
 ## [펌웨어 복구](#펌웨어-복구)
 
-1. 메인 메뉴에서 `Tools` > `Firmware Recovery`를 선택합니다.
+1. 메인 메뉴에서 `도구` > `펌웨어 복구`를 선택합니다.
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_017.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_017_kr.png)
 
 2. 간단한 도움말과 함께 다이나믹셀 펌웨어 복구 마법사를 시작합니다.  
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_recovery_001.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_recovery_001_kr.png)
 
 3. 다이나믹셀 펌웨어 복구 모드에서는 모델명을 자동으로 인식할 수 없기 때문에, 사용자가 정확한 모델을 선택해 주어야 합니다. 잘못된 모델을 선택하면 정상적으로 동작하지 않습니다.  
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_recovery_002.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_recovery_002_kr.png)
 
 4. 사용자가 다이나믹셀이 연결된 포트를 수동으로 설정해 주어야 합니다. 포트가 사용중이면 다이나믹셀을 인식할 수 없으니 다른 프로그램을 종료하고 진행하십시오.  
 
     **주의** : 다이나믹셀 펌웨어 복구시에는 반드시 한개의 다이나믹셀만 연결되어 있어야 합니다.  
     {: .notice--warning}
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_recovery_003.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_recovery_003_kr.png)
 
 5. 다이나믹셀을 찾기 위해 복구할 다이나믹셀의 전원을 껐다가 켜십시오.  
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_recovery_004.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_recovery_004_kr.png)
 
 6. 다이나믹셀 검색에 성공하면 펌웨어 복구를 시작합니다. 완료될 때까지 전원이 꺼지거나 케이블이 빠지지 않도록 주의하십시오.  
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_recovery_005.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_recovery_005_kr.png)
 
 7. 다이나믹셀 펌웨어 복구 결과를 확인합니다.  
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_recovery_007.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_recovery_007_kr.png)
 
 # [고급 기능](#고급-기능)
 
@@ -404,116 +404,116 @@ sidebar:
 
 제품의 펌웨어 버전, 배포일, 업데이트 노트를 확인하는 기능입니다.
 
-1. 메인 메뉴의 `Help` > `About Dynamixel Firmware` 메뉴를 클릭합니다.  
+1. 메인 메뉴의 `도움말` > `다이나믹셀 펌웨어 정보` 메뉴를 클릭합니다.  
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_009.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_009_kr.png)
 
 2. 선택된 제품의 펌웨어 버전, 배포일, 업데이트 노트를 확인할 수 있습니다.  
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_010.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_010_kr.png)
 
 ## [캘리브레이션](#캘리브레이션)
 
 기어교체등으로 인해 혼의 위치값이 틀여졌다면 캘리브레이션을 통해 위치를 다시 설정해 줄 수 있습니다.
 
-1. 메인 메뉴의 `Tool` > `Calibration` 메뉴를 클릭합니다.  
+1. 메인 메뉴의 `도구` > `캘리브레이션` 메뉴를 클릭합니다.  
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_cali_001.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_cali_001_kr.png)
 
 2. 간단한 도움말과 함께 다이나믹셀 캘리브레이션을 시작합니다.  
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_cali_002.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_cali_002_kr.png)
 
 3. 다이나믹셀 캘리브레이션 모드에서는 모델명을 자동으로 인식할 수 없기 때문에, 사용자가 정확한 모델을 선택해 주어야 합니다. 잘못된 모델을 선택하면 정상적으로 동작하지 않습니다.  
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_cali_003.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_cali_003_kr.png)
 
 4. 사용자가 다이나믹셀이 연결된 포트를 수동으로 설정해 주어야 합니다. 포트가 사용중이면 다이나믹셀을 인식할 수 없으니 다른 프로그램을 종료하고 진행하십시오.  
 
     **주의** : 다이나믹셀 캘리브레이션시에는 반드시 한개의 다이나믹셀만 연결되어 있어야 합니다.  
     {: .notice--warning}
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_cali_004.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_cali_004_kr.png)
 
 5. 다이나믹셀을 찾기 위해 다이나믹셀의 전원을 껐다가 켜십시오.  
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_cali_005.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_cali_005_kr.png)
 
 6. 다이나믹셀 검색에 성공하면 캘리브레이션 펌웨어를 설치합니다.  
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_cali_006.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_cali_006_kr.png)
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_cali_007.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_cali_007_kr.png)
 
 7. 첫번째 위치를 설정합니다.  
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_cali_008.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_cali_008_kr.png)
 
 8. 두번째 위치를 설정합니다.  
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_cali_009.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_cali_009_kr.png)
 
 9. 세번째 위치를 설정합니다.  
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_cali_010.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_cali_010_kr.png)
 
 10. 네번째 위치를 설정합니다.  
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_cali_011.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_cali_011_kr.png)
 
 11. 캘리브레이션이 완료되었습니다.  
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_cali_012.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_cali_012_kr.png)
 
 ## [자가진단](#자가진단)
 
 다이나믹셀의 불량여부를 판단하기위해 자가진단을 실행할 수 있습니다.
 
-1. 메인 메뉴의 `Tool` > `Self-Diagnosis` 메뉴를 클릭합니다.  
+1. 메인 메뉴의 `도구` > `자가진단` 메뉴를 클릭합니다.  
 
     **참고** : 선택된 장치가 없으면 해당 메뉴가 비활성화된 상태입니다. 검색 후 다이나믹셀이 연결된 상태에서 진행해 주세요.  
     {: .notice}
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_self_001.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_self_001_kr.png)
 
 2. 간단한 도움말과 함께 자가진단을 시작합니다.  
 
     **주의** : 다이나믹셀 자가진단시에는 공장 초기화 상태로 변경됩니다.  
     {: .notice--warning}  
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_self_002.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_self_002_kr.png)
 
 3. 자가진단을 진행할 다이나믹셀의 모델명과 펌웨어 버전을 확인합니다.  
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_self_003.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_self_003_kr.png)
 
 4. 다이나믹셀의 하드웨어 에러 상태를 확인합니다.  
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_self_004.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_self_004_kr.png)
 
 5. 다이나믹셀의 동작 온도가 정상범위인지 확인합니다.  
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_self_005.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_self_005_kr.png)
 
 6. 다이나믹셀의 입력 전압이 정상범위인지 확인합니다.  
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_self_006.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_self_006_kr.png)
 
 7. 다이나믹셀의 LED가 제대로 깜박이는지 확인합니다.  
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_self_007.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_self_007_kr.png)
 
 8. 다이나믹셀의 혼이 센터 위치로 이동했는지 확인합니다.  
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_self_008.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_self_008_kr.png)
 
 9. 성능테스트를 진행합니다.  
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_self_009.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_self_009_kr.png)
 
 10. 자가진단 결과를 확인합니다.  
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_self_010.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_self_010_kr.png)
 
 ## [그래프 속도 최적화](#그래프-속도-최적화)
 
@@ -550,13 +550,13 @@ sidebar:
 
 ### [다이나믹셀 설정](#다이나믹셀-설정)
 
-1. 그래프 설정에서 `Interval` 을 `1ms` 로 설정하고 `Read only selected item for Speed` 항목을 체크합니다.
+1. 그래프 설정에서 `통신 주기` 을 `1ms` 로 설정하고 `선택항목만 읽어오기` 항목을 체크합니다.
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_005.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_005_kr.png)
 
 2. 다이나믹셀의 통신속도(Baud Rate)를 최대로 설정하고 `Return Delay Time` 을 `0` 으로 설정합니다.
 
-    ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_007.png)
+    ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_007_kr.png)
 
 
 [기본 기능 - 그래프]: #그래프
