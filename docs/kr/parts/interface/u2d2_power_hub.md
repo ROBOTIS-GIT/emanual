@@ -40,36 +40,36 @@ U2D2와 결합하여, 여러 종류의 외부 전원을 연결하여 다이나�
 
 # [조립 예시](#조립-예시)
 
-1. 네 개의 플라스틱 서포터를 U2D2 파워 허브 보드의 각 모퉁이에 조립한다.  
+1. 네 개의 플라스틱 서포터를 `U2D2 파워 허브 보드`의 각 모퉁이에 조립한다.  
 
     ![](/assets/images/parts/interface/u2d2_power_hub/u2d2_phb_06.jpg)
 
-2. 플라스틱 리벳을 사용해서 U2D2를 U2D2 파워 허브 보드에 조립한다.
+2. 플라스틱 리벳을 사용해서 `U2D2`를 `U2D2 파워 허브 보드`에 조립한다.
 
-    ![](/assets/images/parts/interface/u2d2_power_hub/u2d2_phb_07.jpg)![](/assets/images/parts/interface/u2d2_power_hub/u2d2_phb_08.jpg)
+    ![](/assets/images/parts/interface/u2d2_power_hub/u2d2_phb_07.jpg)
 
-3. U2D2와 U2D2 파워 허브 보드를 연결하기 위해 3P 또는 4P 케이블을 그림과 같이 연결한다 (3P와 4P 케이블을 동시에 사용할 수 있음).
+3. `U2D2`와 `U2D2 파워 허브 보드`를 연결하기 위해 3P 또는 4P 케이블을 그림과 같이 연결한다 (3P와 4P 케이블을 동시에 사용할 수 있음).
 
     ![](/assets/images/parts/interface/u2d2_power_hub/u2d2_phb_03.jpg)
 
-4. 다이나믹셀과 U2D2를 연결하기 위한 별도의 케이블을 연결한다 (다이나믹셀 모델에 따라 변환케이블이 필요할 수 있음).
+4. `다이나믹셀`과 `U2D2`를 연결하기 위한 별도의 케이블을 연결한다 (다이나믹셀 모델에 따라 변환케이블이 필요할 수 있음).
 
     ![](/assets/images/parts/interface/u2d2_power_hub/u2d2_phb_04.jpg)
 
-5. 케이블의 반대쪽을 다이나믹셀에 연결한다 (다이나믹셀 모델에 따라 변환케이블이 필요할 수 있음).
+5. 케이블의 반대쪽을 `다이나믹셀`에 연결한다 (다이나믹셀 모델에 따라 변환케이블이 필요할 수 있음).
 
     ![](/assets/images/parts/interface/u2d2_power_hub/u2d2_phb_05.jpg)
 
-6. U2D2 파워 허브 보드에 전원을 연결한다.
+6. `U2D2 파워 허브 보드`에 전원을 연결한다.
 
     **경고** : 양쪽 전원 입력단자를 동시에 사용하지 마시오. 한번에 한 개의 입력단자만 사용할 것.
     {: .notice--danger}
-    
+
     **주의** : 전원을 공급하기 전에 다이나믹셀의 권장 전압을 확인할 것.
     {: .notice--warning}
 
     ![](/assets/images/parts/interface/u2d2_power_hub/u2d2_phb_01.jpg)![](/assets/images/parts/interface/u2d2_power_hub/u2d2_phb_02.jpg)
 
-7. 다이나믹셀에 전원을 공급하려면 U2D2 파워 허브 보드의 전원 스위치를 켠다.
+7. 다이나믹셀에 전원을 공급하려면 `U2D2 파워 허브 보드`의 전원 스위치를 켠다.
 
     ![](/assets/images/parts/interface/u2d2_power_hub/u2d2_phb_08.jpg)
