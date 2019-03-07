@@ -7,5 +7,5 @@ Present Position(132) = Actual Position + Homing Offset(20).
 
 **NOTE** : In case of the Position Control Mode(Joint Mode) that rotates less than 360 degrees, any invalid Homing Offset(20) values will be ignored(valid range : -1,024 ~ 1,024).
 
-**NOTE** : In the case of Reverse Mode bit is set to Drive Mode (10) that Homing offset value is not reversed.
+**NOTE** : In the case of Reverse Mode bit is set in Drive Mode(10), the sign of Homing Offset value will not be reversed.
 {: .notice}
