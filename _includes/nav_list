@@ -2,6 +2,7 @@
 <nav class="nav__list">
 
   {% if page.sidebar.title %}<ul class="nav__items"><li><label><a href={{ page.permalink | absolute_url }} style="font-size:18px; color: #7a9c1b; text-decoration: none; font-weight: 600; line-height: 40px;">{{ page.sidebar.title }}</a></label></li>{% endif %}
+  {% assign parent_index = 0 %}
   {% for nav in navigation %}
     {% if page.lang=='kr' %}
       {% if nav.titlekr %}
@@ -30,19 +31,19 @@
 
     {% if navtitle==null %}
     {% else %}
+      {% assign parent_index = parent_index | plus: 1 %}
 
       {% assign toplevel_id = navurl | split: "/" %}
       {% assign toppage_id = toplevel_id | reverse %}
       {% if nav.children != null %}
       <li class="has-children">
         <input type="checkbox" name="toplevel" id="{{ toppage_id[1] }}_{{ toplevel_id.last | remove: "#" | prepend: "toc_" }}">
-        <label for="{{ toppage_id[1] }}_{{ toplevel_id.last | remove: "#" | prepend: "toc_" }}"><button class="tocLevel1" onclick="movetopage('{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ navurl }}');">{{ forloop.index }}. {{ navtitle }}</button></label>
+        <label for="{{ toppage_id[1] }}_{{ toplevel_id.last | remove: "#" | prepend: "toc_" }}"><button class="tocLevel1" onclick="movetopage('{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ navurl }}');">{{ parent_index }}. {{ navtitle }}</button></label>
       {% else %}
       <li>
-        <a id="{{ toppage_id[1] }}_{{ toplevel_id.last | remove: "#" | prepend: "toc_" }}" href="{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ navurl }}">{{ forloop.index }}. {{ navtitle }}</a>
+        <a id="{{ toppage_id[1] }}_{{ toplevel_id.last | remove: "#" | prepend: "toc_" }}" href="{{ site.url }}{{ site.baseurl }}/docs/{{page.lang}}{{ navurl }}">{{ parent_index }}. {{ navtitle }}</a>
       </li>
       {% endif %}
-      {% assign parent_index = forloop.index %}
 
       {% if nav.children != null %}
         <ul>
