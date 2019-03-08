@@ -11,7 +11,7 @@ sidebar:
   nav: "manipulator_h"
 ---
 
-<div style="counter-reset: h1 6"></div>
+<div style="counter-reset: h1 7"></div>
 
 # [ROS Reference](#ros-reference)
 

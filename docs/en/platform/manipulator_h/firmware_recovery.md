@@ -11,7 +11,7 @@ sidebar:
   nav: "manipulator_h"
 ---
 
-<div style="counter-reset: h1 4"></div>
+<div style="counter-reset: h1 8"></div>
 
 # [Firmware Recovery](#firmware-recovery)
 

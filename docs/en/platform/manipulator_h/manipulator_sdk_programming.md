@@ -11,7 +11,7 @@ sidebar:
   nav: "manipulator_h"
 ---
 
-<div style="counter-reset: h1 3"></div>
+<div style="counter-reset: h1 2"></div>
 
 # [Manipulator SDK Programming](#manipulator-sdk-programming)
 

@@ -14959,7 +14959,7 @@ manipulator_h:
       url: /platform/manipulator_h/introduction/#d-h-configuration
     - title: "Home Position"
       url: /platform/manipulator_h/introduction/#home-position
-    - title: "Home Position"
+    - title: "Mass Property"
       url: /platform/manipulator_h/introduction/#mass-property
   - title: "Getting Started"
     url: /platform/manipulator_h/getting_started/#getting-started
@@ -15010,11 +15010,11 @@ manipulator_h:
   - title: "[ROS] Manipulator ROS Programming"
     url: /platform/manipulator_h/manipulator_ros_programming/#robotis-maipulator-ros
     children:
-    - title: "ROBOTIS MANIPULATOR Common"
+    - title: "PC Setup"
       url: /platform/manipulator_h/manipulator_ros_programming/#pc-setup
-    - title: "ROBOTIS MANIPULATOR Module"
+    - title: "Install ROS package"
       url: /platform/manipulator_h/manipulator_ros_programming/#install-ros-package
-  - title: "[ROS] Example"
+  - title: "[ROS] Examples"
     url: /platform/manipulator_h/ros_example/#ros-example
     children:
     - title: "Manipulator manager"
