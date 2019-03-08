@@ -53,7 +53,7 @@ sidebar:
 
     ![](/assets/images/edu/info/entry_002.png)
 
-3. 다운받은 파일을 실행하고 아래 내용을 참고하여 엔트리를 PC에 설치합니다
+3. 다운로드한 파일을 실행하고 아래와 같이 엔트리를 PC에 설치합니다
 
     ![](/assets/images/edu/info/entry_003.png)
 
@@ -74,7 +74,7 @@ sidebar:
 
     ![](/assets/images/edu/info/entry_008.png)
 
-3. 다운로드한 프로그램 파일이 저장된 위치를 찾아 불러옵니다 (예시: 청소로봇)
+3. 다운로드한 예제 프로그램이 저장된 위치를 찾아 불러옵니다 (예시: 청소로봇)
 
     ![](/assets/images/edu/info/entry_009.png)
 
@@ -144,7 +144,7 @@ sidebar:
 
 
 
-[www.playentry.org]: www.playentry.org
+[www.playentry.org]: https://playentry.org
 
 [제어기(OpenCM7.0 B-Type)]: /docs/kr/parts/controller/opencm7/
 [감속 모터]: /docs/kr/parts/motor/gm-10a/
