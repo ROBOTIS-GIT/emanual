@@ -350,7 +350,7 @@ The navigation enables a robot to move from the current pose to the designated g
 
 ```bash
 $ export TURTLEBOT3_MODEL=${TB3_MODEL}
-$ ros2 launch turtlebot3_navigation2 navigation2.launch.py
+$ ros2 launch turtlebot3_navigation2 navigation2.launch.py map:=${HOME}/map/map.yaml
 ```
 
 ## [Simulation](#simulation)
@@ -403,7 +403,7 @@ $ ros2 run nav2_map_server map_saver -f ~/map
 **[Remote PC]** Load Navigation2
 ```bash
 $ export TURTLEBOT3_MODEL=${TB3_MODEL}
-$ ros2 launch turtlebot3_navigation2 navigation2.launch.py
+$ ros2 launch turtlebot3_navigation2 navigation2.launch.py map:=${HOME}/map/map.yaml
 ```
 
 You should set some parameters to use simulation time. If you need futher information about it, please following [navigation2 repo](https://github.com/ros-planning/navigation2/tree/master/nav2_bringup)
