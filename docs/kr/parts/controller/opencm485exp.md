@@ -88,35 +88,34 @@ OpenCM 485 확장보드의 TTL/485 버스는 OpenCM9.04의 USART3(Serial3)을 �
 
 # [OpenCM 485 확장보드 프로그래밍](#opencm-485-확장보드-프로그래밍)
 
-1. Support.robotis.com -> 소프트웨어 도움말 -> ROBORIS_OpenCM 반드시 V 1.0.1 이 후 버전을 사용하셔야 합니다.
+OpenCM 485 확장보드를 OpenCM9.04와 연결해서 사용하기 위해서는 아두이노 IDE를 사용해야 합니다.
 
-    ![](/assets/images/parts/controller/opencm904/opencm485exp_4.png)
+1. [아두이노 IDE 설치하기]{: .blank}
 
-2. 다운받은 OpenCM IDE  압축을 풀고 ROBOTIS_OpenCM.exe를 실행 합니다.
+2. OpenCM 485 확장보드의 485 Bus는 OpenCM9.04에서 Serial3(USART3)를 통해서 패킷을 주고 받습니다.
 
-    ![](/assets/images/parts/controller/opencm904/opencm485exp_5.png)
-
-3. OpenCM 485 확장보드의 485 Bus는 OpenCM9.04에서 Serial3(USART3)를 통해서 패킷을 주고 받습니다. 반드시 Dynamixel 클래스 변수 선언시 3으로 초기화 해야 합니다.
+    - DynamixelSDK를 사용해서 프로그래밍 하는 경우 아래와 같이 Serial3를 사용하도록 설정해야 합니다.
 
     ```cpp
-    Dynamixel Dxl(3); //Dynamixel on Serial3 (USART3). -> OpenCM 485 확장보드에 있는  USART3을 사용 하려면 3으로 써야 합니다.
-    void setup() {
-      Dxl.begin(1);  //1Mbps  
-    }
-
-    void loop() {  
-      Dxl.writeWord(6, 30, 0);
-      Dxl.writeWord(2, 30, 0);
-      delay(1000);              
-      Dxl.writeWord(6, 30, 1023);
-      Dxl.writeWord(2, 30, 4095);
-      delay(1000);
-    }
+    #include <DynamixelSDK.h>
+    
+    #define DEVICENAME      "3"   //Serial3 포트 사용
+    
+    dynamixel::PortHandler *portHandler = dynamixel::PortHandler::getPortHandler(DEVICENAME);
+    portHandler->openPort();
     ```
-
-4. 아래의 다운로드 버튼을 눌러서 프로그램을 다운로드 합니다.
-
-    ![](/assets/images/parts/controller/opencm904/opencm485exp_7.png)
+    
+    - DynamixelWorkbench를 사용해서 프로그래밍 하는 경우 아래와 같이 Serial3를 사용하도록 설정합니다.
+    
+    ```cpp
+    #include <DynamixelWorkbench.h>
+    
+    #define DEVICENAME      "3"   //Serial3 포트 사용
+    #define BAUDRATE        57600
+    
+    DynamixelWorkbench dxl_wb;
+    dxl_wb.begin(DEVICE_NAME, BAUDRATE);
+    ```
 
 # [버튼 및 LED 활용](#버튼-및-led-활용)
 
@@ -138,7 +137,5 @@ OpenCM 485  확장보드에는 OpenCM9.04의 IO핀과 연결된 버튼 2개와 
 
 - `다운로드` [SCHEMATIC-OpenCM 485 EXP.pdf]
 
-
-
-
- [SCHEMATIC-OpenCM 485 EXP.pdf]: http://support.robotis.com/ko/baggage_files/opencm/schematic1___opencm_485exp.pdf
+[아두이노 IDE 설치하기]: /docs/kr/software/arduino_ide/
+[SCHEMATIC-OpenCM 485 EXP.pdf]: http://support.robotis.com/ko/baggage_files/opencm/schematic1___opencm_485exp.pdf
