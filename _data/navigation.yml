@@ -322,8 +322,7 @@ main:
         url: /edu/iot/iot-1/
       - titlekr: "2단계 교육키트"
         url: /edu/iot/iot-2/
-    # - title: "Info Robot"
-    #   titlekr: "실과 로봇"
+    # - titlekr: "실과 로봇"
     #   url: /edu/info/
     - titlekr: "*자동차 로봇"
       url: /edu/car/
@@ -12617,6 +12616,32 @@ iot-2:
   - titlekr: "교안예제"
     urlkr: /edu/iot/iot-2/#교안예제
 
+info_robot:
+  - titlekr: "개요"
+    urlkr: /edu/info/#개요
+  - titlekr: "부품 목록"
+    urlkr: /edu/info/#부품-목록
+  - titlekr: "작동하기"
+    urlkr: /edu/info/#작동하기
+    children:
+      - titlekr: "엔트리 설치하기"
+        urlkr: /edu/info/#엔트리-설치하기
+      - titlekr: "PC에 예제 다운로드하기"
+        urlkr: /edu/info/#pc에-예제-다운로드하기
+      - titlekr: "엔트리에서 예제 불러오기"
+        urlkr: /edu/info/#엔트리에서-예제-불러오기
+      - titlekr: "PC에 블루투스 연결하기"
+        urlkr: /edu/info/#pc에-블루투스-연결하기
+      - titlekr: "엔트리에 로봇 연결하기"
+        urlkr: /edu/info/#엔트리에-로봇-연결하기
+  - titlekr: "교육자료 다운로드"
+    urlkr: /edu/info/#교육자료-다운로드
+    children:
+      - titlekr: "엔트리 예제"
+        urlkr: /edu/info/#엔트리-예제
+      - titlekr: "태스크 예제"
+        urlkr: /edu/info/#태스크-예제
+
 #BIOLOID
 bioloid:
   - titlekr: "바이올로이드 초급키트"
@@ -14804,8 +14829,8 @@ openmanipulator:
         url: /platform/openmanipulator/#challenge-various-applications
       - title: "Let's design my own manipulator"
         url: /platform/openmanipulator/#lets-design-my-own-manipulator
-  - title: "Hardware Setup"
-    url: /platform/openmanipulator/#hardware-setup
+  - title: "Assembly"
+    url: /platform/openmanipulator/#assembly
     children:
       - title: "Part Lists"
         url: /platform/openmanipulator/#part-lists
@@ -14813,15 +14838,10 @@ openmanipulator:
         url: /platform/openmanipulator/#3d-printed-parts
       - title: "Assembly Manual"
         url: /platform/openmanipulator/#assembly-manual
-      - title: "Board Setup"
-        url: /platform/openmanipulator/#board-setup
-        children:
-        - title: "U2D2"
-          url: /platform/openmanipulator/#u2d2
-        - title: "OpenCR"
-          url: /platform/openmanipulator/#opencr
-  - title: "PC Setup"
-    url: /platform/openmanipulator/#pc-setup
+      - title: "Connection"
+        url: /platform/openmanipulator/#connection
+  - title: "[ROS] PC Setup"
+    url: /platform/openmanipulator/#ros-pc-setup
     children:
       - title: "Install Ubuntu on PC"
         url: /platform/openmanipulator/#install-ubuntu-on-pc
@@ -14829,10 +14849,12 @@ openmanipulator:
         url: /platform/openmanipulator/#install-ros-on-pc
       - title: "Install ROS Packages"
         url: /platform/openmanipulator/#install-ros-packages
-      - title: "Usb Settings"
-        url: /platform/openmanipulator/#usb-settings
-  - title: "Controller"
-    url: /platform/openmanipulator/#controller
+      - title: "U2D2 Settings"
+        url: /platform/openmanipulator/#u2d2-settings
+      - title: "OpenCR Settings"
+        url: /platform/openmanipulator/#opencr-settings
+  - title: "[ROS] Controller"
+    url: /platform/openmanipulator/#ros-controller
     children:
       - title: "Run roscore"
         url: /platform/openmanipulator/#run-roscore
@@ -14852,8 +14874,8 @@ openmanipulator:
             url: /platform/openmanipulator/#topic
           - title: "Service"
             url: /platform/openmanipulator/#service
-  - title: "Basic Manipulation"
-    url: /platform/openmanipulator/#basic-manipulation
+  - title: "[ROS] Operation"
+    url: /platform/openmanipulator/#ros-operation
     children:
       - title: "GUI Program"
         url: /platform/openmanipulator/#gui-program
@@ -14868,13 +14890,29 @@ openmanipulator:
             url: /platform/openmanipulator/#xbox-360-joystick
       - title: "MoveIt!"
         url: /platform/openmanipulator/#moveit
-  - title: "Gazebo Simulation"
-    url: /platform/openmanipulator/#gazebo-simulation
+  - title: "[ROS] Simulation"
+    url: /platform/openmanipulator/#ros-simulation
     children:
       - title: "Controller for gazebo"
         url: /platform/openmanipulator/#controller-for-gazebo
       - title: "Launch gazebo"
         url: /platform/openmanipulator/#launch-gazebo
+  - title: "[ROS] Examples"
+    url: /platform/openmanipulator/#ros-examples
+    children:
+      - title: "Camera Application"
+        url: /platform/openmanipulator/#camera-application
+        children:
+          - title: "Astra Pro"
+            url: /platform/openmanipulator/#astra-pro
+          - title: "Realsense D435"
+            url: /platform/openmanipulator/#realsense-d435
+          - title: "Raspberry Pi Camera V2"
+            url: /platform/openmanipulator/#raspberry-pi-camera-v2
+          - title: "AR Marker"
+            url: /platform/openmanipulator/#ar-marker
+      - title: "Mobile Manipulation"
+        url: /platform/openmanipulator/#mobile-manipulation
   - title: "How to Control on OpenCR"
     url: /platform/openmanipulator/#how-to-control-on-opencr
     children:
@@ -14893,17 +14931,6 @@ openmanipulator:
             url: /platform/openmanipulator/#teleoperation-rc100
           - title: "Hand guiding"
             url: /platform/openmanipulator/#hand-guiding
-  - title: "Camera Application"
-    url: /platform/openmanipulator/#camera-application
-    children:
-      - title: "Astra Pro"
-        url: /platform/openmanipulator/#astra-pro
-      - title: "Realsense D435"
-        url: /platform/openmanipulator/#realsense-d435
-      - title: "Raspberry Pi Camera V2"
-        url: /platform/openmanipulator/#raspberry-pi-camera-v2
-      - title: "AR Marker"
-        url: /platform/openmanipulator/#ar-marker
   - title: "Tool Modification"
     url: /platform/openmanipulator/#tool-modification
     children:
@@ -14911,8 +14938,6 @@ openmanipulator:
         url: /platform/openmanipulator/#vacuum-gripper
       - title: "Pen Holder"
         url: /platform/openmanipulator/#pen-holder
-  - title: "Mobile Manipulation"
-    url: /platform/openmanipulator/#mobile-manipulation
   - title: "Friends"
     url: /platform/openmanipulator/#friends
     children:

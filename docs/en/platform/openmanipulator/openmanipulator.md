@@ -45,7 +45,7 @@ OpenManipulator is composed of [Dynamixel X series](http://emanual.robotis.com/d
 ## [Hardware Specification](#hardware-specification)
 
 | Items               | Unit    | RM-X52-TNM                              |
-|---------------------|---------|-----------------------------------------|
+|:--------------------|:--------|:----------------------------------------|
 | **Actuator**        |         | Dynamixel XM430-W350-T                  |
 | **Input Voltage**   | V       | 12                                      |
 | **DOF**             | -       | 5 (4 DOF + 1 DOF Gripper)               |
@@ -126,63 +126,63 @@ We provide a variety of [OpenManipulator Friends](/docs/en/platform/openmanipula
 
 <img src="/assets/images/platform/openmanipulator/OpenManipulator_friends.png" width="800">
 
-# [Hardware Setup](#hardware-setup)
+# [Assembly](#assembly)
 
 ## [Part Lists](#part-lists)
 
 - Necessary Parts
 
-|                   | Part Name              |  Quantity  |
-|-------------------|------------------------|:----------:|
-| **Chassis Parts** | LINK FRAME(LONG)       |     1      |
-| .                 | LINK FRAME(SHORT)      |     1      |
-| .                 | RAIL BRACKET(LEFT)     |     1      |
-| .                 | RAIL BRACKET(RIGHT)    |     1      |
-| .                 | PALM GRIPPER           |     2      |
-| .                 | LINK ROD               |     2      |
-| .                 | FLANGE BUSH            |     4      |
-| .                 | CRANK ARM              |     1      |
-| .                 | RAIL BLOCK             |     2      |
-| .                 | FR12-S101-K            |     1      |
-| .                 | FR12-S102-K            |     2      |
-| .                 | FR12-H101-K            |     2      |
-| .                 | FR12-H104-K            |     1      |
-| **Actuators**     | Dynamixel XM430-W350-T |     5      |
-| **Cables**        | CABLE-X3P-100          |     1      |
-| .                 | CABLE-X3P-180          |     2      |
-| .                 | CABLE-X3P-240          |     2      |
-| **Tools**         | Screw Driver           |     1      |
-| .                 | Wrench-1.5             |     1      |
-| .                 | Wrench-2.0             |     1      |
-| .                 | Wrench-2.5             |     1      |
-| **Miscellaneous** | X-SP                   |     24     |
-| .                 | NUT-M2.5               |     16     |
-| .                 | NUT-M3                 |     4      |
-| .                 | FHS-M2.5x14            |     12     |
-| .                 | WB-M2x3                |     38     |
-| .                 | WB-M2x4                |     4      |
-| .                 | WB-M2.5x4              |     4      |
-| .                 | WB-M2.5x6              |     8      |
-| .                 | WB-M2.5x8              |     16     |
-| .                 | WB-M2.5x12             |     8      |
-| .                 | WB-M2.5x20             |     4      |
-| .                 | WB-M3x10               |     4      |
-| .                 | DC12-IDLER             |     3      |
-| .                 | DC12-IDLER-CAP         |     3      |
-| .                 | DC12-P-BEARING         |     3      |
-| .                 | RUBBER PAD             |     2      |
+|                   | Part Name              | Quantity |
+|:------------------|:-----------------------|:--------:|
+| **Chassis Parts** | LINK FRAME(LONG)       |    1     |
+| .                 | LINK FRAME(SHORT)      |    1     |
+| .                 | RAIL BRACKET(LEFT)     |    1     |
+| .                 | RAIL BRACKET(RIGHT)    |    1     |
+| .                 | PALM GRIPPER           |    2     |
+| .                 | LINK ROD               |    2     |
+| .                 | FLANGE BUSH            |    4     |
+| .                 | CRANK ARM              |    1     |
+| .                 | RAIL BLOCK             |    2     |
+| .                 | FR12-S101-K            |    1     |
+| .                 | FR12-S102-K            |    2     |
+| .                 | FR12-H101-K            |    2     |
+| .                 | FR12-H104-K            |    1     |
+| **Actuators**     | Dynamixel XM430-W350-T |    5     |
+| **Cables**        | CABLE-X3P-100          |    1     |
+| .                 | CABLE-X3P-180          |    2     |
+| .                 | CABLE-X3P-240          |    2     |
+| **Tools**         | Screw Driver           |    1     |
+| .                 | Wrench-1.5             |    1     |
+| .                 | Wrench-2.0             |    1     |
+| .                 | Wrench-2.5             |    1     |
+| **Miscellaneous** | X-SP                   |    24    |
+| .                 | NUT-M2.5               |    16    |
+| .                 | NUT-M3                 |    4     |
+| .                 | FHS-M2.5x14            |    12    |
+| .                 | WB-M2x3                |    38    |
+| .                 | WB-M2x4                |    4     |
+| .                 | WB-M2.5x4              |    4     |
+| .                 | WB-M2.5x6              |    8     |
+| .                 | WB-M2.5x8              |    16    |
+| .                 | WB-M2.5x12             |    8     |
+| .                 | WB-M2.5x20             |    4     |
+| .                 | WB-M3x10               |    4     |
+| .                 | DC12-IDLER             |    3     |
+| .                 | DC12-IDLER-CAP         |    3     |
+| .                 | DC12-P-BEARING         |    3     |
+| .                 | RUBBER PAD             |    2     |
 
 
 - Optional Parts
 
-|            | Part Name  |  Quantity  |
-|------------|------------|:----------:|
-| **Powers** | [SMPS 12V5A](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=1369&keyword=smps) |     1      |
-| **Boards** | [OpenCR](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=3289&GC=GD0B0100)     |     1      |
-| .          | [U2D2](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=3288&keyword=u2d2)       |     1      |
-| .          | [U2D2 Power Hub Board](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=3332&GC=GD0B01)       |     1      |
-| **Plate**  | [Base Plate-02](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=3331) |     1      |
-| .          | .          |     1      |
+|            | Part Name                                                                                        | Quantity |
+|:-----------|:-------------------------------------------------------------------------------------------------|:--------:|
+| **Powers** | [SMPS 12V5A](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=1369&keyword=smps)        |    1     |
+| **Boards** | [OpenCR](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=3289&GC=GD0B0100)             |    1     |
+| .          | [U2D2](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=3288&keyword=u2d2)              |    1     |
+| .          | [U2D2 Power Hub Board](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=3332&GC=GD0B01) |    1     |
+| **Plate**  | [Base Plate-02](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=3331)                  |    1     |
+| .          | .                                                                                                |    1     |
 
 
 <!-- - [Parts of OpenManipulator](https://docs.google.com/a/robotis.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit?usp=sharing) -->
@@ -207,46 +207,26 @@ OpenManipulator is delivered as unassembled parts in the box. Follow the followi
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/eJTIeDepmNo" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
 
-## [Board Setup](#board-setup)
+## [Connection](#connection)
 
-### [U2D2](#u2d2)
 Connect micro USB (connected to PC), Dynamixel(OpenManipulator), and 12V Power to U2D2 and U2D2 power hub board as shown below.
 
 <img src="/assets/images/platform/openmanipulator/OpenManipulator_u2d2_setup.png" width="500">
 
-**NOTE**: U2D2 and U2D2 power hub board are required when operating OpenManipulator using U2D2.
+**NOTE** : U2D2 and U2D2 power hub board are required when operating OpenManipulator using U2D2.
+{: .notice}
+
+**TIP** : You can replace U2D2 with OpenCR1.0. In this case, please follow the instruction in [OpenCR Settings](#opencr-settings) section.
+{: .notice--success}
+
+# [[ROS] PC Setup](#ros-pc-setup)
+
+**NOTE** : The following instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 {: .notice--info}
 
+**WARNING** : If you would like to control OpenManipulator on OpenCR (Embedded board) instead of using ROS, please set it up as described in [How to Control on OpenCR](/docs/en/platform/openmanipulator/#how-to-control-on-opencr).
+{: .notice--warning}
 
-### [OpenCR](#opencr)
-This chapter explains how to set up OpenCR as a communication board between ROS Packages of PC and DYNAMIXEL of OpenManipulator. If you want to operate OpenManipulator on embedded system (OpenCR) without ROS, please refer [how to control on opencr](/docs/en/platform/openmanipulator/#how-to-control-on-opencr).
-
-Connect micro USB (connected to PC), Dynamixel(OpenManipulator), and 12V Power to OpenCR as shown below.
-
-<img src="/assets/images/platform/openmanipulator/OpenManipulator_opencr_setup.png" width="500">
-
-Please refer the detailed description of [OpenCR](http://emanual.robotis.com/docs/en/parts/controller/opencr10/)
-
-Download Arduino IDE and load OpenCR board on it
-
-- [Arduino IDE for using OpenCR](/docs/en/parts/controller/opencr10/#arduino-ide)
-
-Find `usb to dxl` example source codes.
-
-Go to `Examples` → `OpenCR` → `10.Etc` → `usb_to_dxl` on Arduino IDE for OpenCR.
-
-![](/assets/images/platform/openmanipulator/OpenManipulator_opencr_utd_setup.png)
-
-Upload the `usb to dxl` example source to OpenCR.
-
-# [PC Setup](#pc-setup)
-
-{% capture notice_01 %}
-**NOTE**:
-- The following instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
-- If you would like to control OpenManipulator on OpenCR (Embedded board) instead of using ROS, please set it up as described in [How to Control on OpenCR](/docs/en/platform/openmanipulator/#how-to-control-on-opencr).
-{% endcapture %}
-<div class="notice--info">{{ notice_01 | markdownify }}</div>
 
 ## [Install Ubuntu on PC](#install-ubuntu-on-pc)
 
@@ -301,9 +281,9 @@ $ cd ~/catkin_ws && catkin_make
 
 If the catkin_make command has been completed without any errors, all the preparations for using OpenManipulator are done.
 
-## [USB Settings](#usb-settings)
+## [U2D2 Settings](#u2d2-settings)
 
-**NOTE**:If you are using OpenCR instead of U2D2 as a board, you can skip this step.
+**NOTE** : If you are using OpenCR instead of U2D2 to connect to PC, please refer to OpenCR Setting section.
 {: .notice--info}
 
 The following commands allow to use USB port
@@ -316,7 +296,29 @@ $ rosrun open_manipulator_controller create_udev_rules
 `cat /sys/bus/usb-serial/devices/ttyUSB0/latency_timer`
 {: .notice--success}
 
-# [Controller](#controller)
+## [OpenCR Settings](#opencr-settings)
+This section explains how to set up OpenCR as a communication board between ROS Packages of PC and DYNAMIXEL of OpenManipulator.  
+If you want to operate OpenManipulator on embedded system (OpenCR) without ROS, please refer [how to control on opencr](/docs/en/platform/openmanipulator/#how-to-control-on-opencr).
+
+Connect micro USB (connected to PC), Dynamixel(OpenManipulator), and 12V Power to OpenCR as shown below.
+
+<img src="/assets/images/platform/openmanipulator/OpenManipulator_opencr_setup.png" width="500">
+
+Please refer the detailed description of [OpenCR](http://emanual.robotis.com/docs/en/parts/controller/opencr10/)
+
+Download Arduino IDE and load OpenCR board on it
+
+- [Arduino IDE for using OpenCR](/docs/en/parts/controller/opencr10/#arduino-ide)
+
+Find `usb to dxl` example source codes.
+
+Go to `Examples` → `OpenCR` → `10.Etc` → `usb_to_dxl` on Arduino IDE for OpenCR.
+
+![](/assets/images/platform/openmanipulator/OpenManipulator_opencr_utd_setup.png)
+
+Upload the `usb to dxl` example source to OpenCR.
+
+# [[ROS] Controller](#ros-controller)
 
 The OpenManipulator controller provides basic manipulation of OpenManipulator. You can control the dynamixel of OpenManipulator and check states of OpenManipulator through [messages](/docs/en/platform/openmanipulator/#message-list) of the controller.
 
@@ -887,7 +889,7 @@ If the user set false at set_actuator_state valuable, the actuator will be disab
 - `/open_manipulator/goal_drawing_trajectory` ([open_manipulator_msgs/SetDrawingTrajectory]{: .popup})  
 The user can use this service to create a drawing trajectory. The user can create the circle, the rhombus, the heart, and the straight line trajectory.
 
-# [Basic Manipulation](#basic-manipulation)
+# [[ROS] Operation](#ros-operation)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/dctx7Y6zNKA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -1108,7 +1110,7 @@ The user can use this service to create a trajectory in the [task space]{: .popu
   ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_moveit_real_4.png)
 
 
-# [Gazebo Simulation](#gazebo-simulation)
+# [[ROS] Simulation](#ros-simulation)
 
 {% capture notice_01 %}
 **NOTE**:
@@ -1200,6 +1202,288 @@ Open an [open_manipulator_control_gui](/docs/en/platform/openmanipulator/#gui-pr
 
   ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_gazebo_2.png)
 
+# [[ROS] Examples](#ros-examples)
+
+## [Camera Application](#camera-application)
+
+{% capture notice_01 %}
+**NOTE**:
+- This instructions were tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+- This instructions are supposed to be running on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.
+{% endcapture %}
+<div class="notice--info">{{ notice_01 | markdownify }}</div>
+
+### [Astra Pro](#astra-pro)
+
+#### Overview
+![](/assets/images/platform/openmanipulator/OpenManipulator_camera_Astra_pro.png)  
+
+The [Astra Series](https://orbbec3d.com/product-astra/) was designed to further improve on the attributes that set Orbbec 3D cameras apart from existing 3D cameras on the market. Astra 3D cameras provide computer vision that enables dozens of functions such as face recognition, gesture recognition, human body tracking, three-dimensional measurement, environment perception, and three-dimensional map reconstruction.
+
+#### Specifications
+
+| Items                                 | Specifications               |
+|:--------------------------------------|:-----------------------------|
+| RGB Image Resolution and Frame Rate   | 1280 x 720, @30fps           |
+| Depth Imgae Resolution and Frame Rate | 640 x 480, @30fps            |
+| FOV (Field-of-View)                   | 60°H x 49.5°V x 73°D         |
+| Range                                 | 0.6m - 8m                    |
+| USB Port                              | USB 2.0                      |
+| Dimensions                            | 165mm x 30mm x 40mm          |
+| Operating Systems                     | Android/Linux/Windows 7/8/10 |
+| SDK                                   | Astra SDK or OpenNI          |
+| Microphones                           | 2 (Built - in)               |
+
+#### User Guide
+
+##### Installation
+The following commands will install relevant Astra Pro library.
+  ``` bash
+  $ sudo apt-get install ros-kinetic-rgbd-launch ros-kinetic-libuvc-camera
+  ```
+  ``` bash
+  $ cd ~/catkin_ws/src
+  $ git clone https://github.com/orbbec/ros_astra_camera.git
+  $ git clone https://github.com/ROBOTIS-GIT/ros_astra_launch.git
+  $ cd ~/catkin_ws && catkin_make
+  $ roscd astra_camera && ./scripts/create_udev_rules
+  ```
+##### Execution  
+Run the following command.
+  ``` bash
+  $ sudo chmod a+rw /dev/bus/usb/${USB}/${PORT}
+  $ roslaunch ros_astra_launch astra_pro.launch
+  ```
+
+You can use rviz or image_view to verify driver. You can select data topic name related to Astra Pro from drop down menu at the top of the application.
+  ``` bash
+  $ rqt_image_view
+  ```
+
+#### Reference
+- [ORBBEC Astra Pro](https://orbbec3d.com/product-astra-pro/)    
+- [Astra Pro ROS package](https://github.com/orbbec/ros_astra_camera)
+
+### [Realsense D435](#realsense-d435)
+
+#### Overview
+![](/assets/images/platform/openmanipulator/OpenManipulator_camera_Realsense_D435.png)  
+
+The [Intel® RealSense™ Depth Camera D435](https://realsense.intel.com/depth-camera/#D415_D435) is a USB-powered depth camera and consists of a pair of depth sensors, RGB sensor, and infrared projector. It is ideal for makers and developers to add depth perception capability to their prototype development. The D435 is designed to best fit your prototype.
+
+#### Specifications
+
+| Items                                | Specifications                        |
+|:-------------------------------------|:--------------------------------------|
+| Use Environment                      | Indoor/Outdoor                        |
+| RGB Sensor Resolution and Frame Rate | 1920 x 1080 at 30 fps                 |
+| RGB Sensor FOV                       | 69.4°(H) x 42.5°(V) x 77°(D) (+/- 3°) |
+| Depth Stream Output Resolution       | Up to 1280 x 720                      |
+| Depth Stream Output Frame Rate       | Up to 90 fps                          |
+| Depth Field of View (FOV)            | 85.2°(H) x 58°(V) x 94°(D) (+/- 3°)   |
+| Minimum Depth Distance (Min-Z)       | 0.2m                                  |
+| Maximum Range                        | Approx.10 meters                      |
+| Dimension                            | 90 mm x 25 mm x 25 mm                 |
+| Connectors                           | USB 3.0 Type - C                      |
+
+#### User Guide
+
+##### Installation
+The following commands will install relevant Intel® RealSense™ Depth Camera D435 library.
+  ``` bash
+  $ sudo add-apt-repository "deb http://realsense-hw-public.s3.amazonaws.com/Debian/apt-repo xenial main" -u
+  $ sudo apt-get install librealsense2-dev ros-kinetic-rgbd-launch
+  ```
+  ``` bash
+  $ cd ~/catkin_ws/src
+  $ git clone https://github.com/intel-ros/realsense.git
+  $ cd ~/catkin_ws && catkin_make
+  ```
+##### Execution  
+Run the following command.
+  ``` bash
+  $ roslaunch realsense2_camera rs_camera.launch
+  ```
+
+You can use rviz or image_view to verify driver. You can select data topic name related to Intel® RealSense™ Depth Camera D435 from drop down menu at the top of the application.
+  ``` bash
+  $ rqt_image_view
+  ```
+
+#### Reference
+- [Intel® RealSense™ Depth Camera D435](https://realsense.intel.com/depth-camera/#D415_D435)    
+- [Realsense ROS package](https://github.com/intel-ros/realsense)
+
+### [Raspberry Pi Camera V2](#raspberry-pi-camera-v2)
+
+#### Overview
+![](/assets/images/platform/turtlebot3/appendix_raspi_cam/Pi-Camera-front.jpg)
+
+Please refer the detailed description of [Raspberry Pi Camera V2](/docs/en/platform/turtlebot3/appendix_raspi_cam/#overview)
+
+
+#### Specifications
+
+Please refer the detailed Specification of [Raspberry Pi Camera V2](/docs/en/platform/turtlebot3/appendix_raspi_cam/#specifications)
+
+#### User Guide
+
+##### Installation
+
+**Warning!**     
+Raspberry pi must be installed before setting up the Raspberry Pi Camera V2.    
+Please check this link out. [Raspberry Pi 3 Setup](/docs/en/platform/turtlebot3/raspberry_pi_3_setup/)
+{: .notice--warning}
+
+**[Raspberry Pi]** Setting up the camera hardware
+
+``` bash
+$ sudo raspi-config
+```
+
+![](/assets/images/platform/turtlebot3/appendix_raspi_cam/pi-cam-hardware-setting-1.png)
+
+Select **3 Interfacing Options**    
+![](/assets/images/platform/turtlebot3/appendix_raspi_cam/pi-cam-hardware-setting-2.png)
+
+Select **P1 Camera**    
+![](/assets/images/platform/turtlebot3/appendix_raspi_cam/pi-cam-hardware-setting-3.png)
+
+Enable camera interface    
+![](/assets/images/platform/turtlebot3/appendix_raspi_cam/pi-cam-hardware-setting-4.png)    
+![](/assets/images/platform/turtlebot3/appendix_raspi_cam/pi-cam-hardware-setting-5.png)
+
+After **reboot Raspberry Pi**, to test that the system is installed and working, try the following command:
+
+``` bash
+$ raspistill -v -o test.jpg
+```
+The display should show a five-second preview from the camera and then take a picture, saved to the file *test.jpg*
+
+The following commands will install relevant Raspberry Pi Camera packages on your ROS system.
+
+- If you use Ubuntu in Raspberry Pi, enter the following command     
+``` bash
+$ sudo apt-get install ros-kinetic-compressed-image-transport ros-kinetic-camera-info-manager
+```
+
+``` bash
+$ cd ~/catkin_ws/src
+$ git clone https://github.com/UbiquityRobotics/raspicam_node.git
+$ cd ~/catkin_ws && catkin_make
+```
+##### Execution  
+
+**Warning!**     
+Before you run `rqt_image_view` in Remote PC, check your Raspberry Pi and Remote PC whether they are connected. Please check this link out.    
+[Raspberry Pi 3 Setup](/docs/en/platform/turtlebot3/raspberry_pi_3_setup/#5-network-configuration)    
+[Remote PC Setup](/docs/en/platform/turtlebot3/pc_setup/#network-configuration)
+{: .notice--warning}
+
+**[Remote PC]** Run the following command
+
+``` bash
+$ roscore
+$ rqt_image_view
+```
+
+**[Raspberry Pi]** Run the following command.
+``` bash
+$ roslaunch raspicam_node camerav2_1280x960.launch
+```
+
+
+##### Reference
+
+- [Raspberry Pi Camera](https://www.raspberrypi.org/documentation/hardware/camera/README.md)
+- [Getting Started](https://projects.raspberrypi.org/en/projects/getting-started-with-picamera)
+- [Pi Camera ROS package](https://github.com/UbiquityRobotics/raspicam_node)
+
+### [AR Marker](#ar-marker)
+
+{% capture notice_01 %}
+**NOTE**:
+- This instructions were tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+- The `open_manipulator_perceptions` package requires [`ar_track_alvar`](http://wiki.ros.org/ar_track_alvar) package.
+- Make sure to run the [Open Manipulator controller](/docs/en/platform/openmanipulator/#launch-controller) instructions before running the instructions below.
+{% endcapture %}
+<div class="notice--info">{{ notice_01 | markdownify }}</div>
+
+#### Installation
+
+{% capture notice_01 %}
+**NOTE**:
+- To use the **Raspberry Pi Camera V2**, install it on the **Remote PC**
+{% endcapture %}
+<div class="notice--info">{{ notice_01 | markdownify }}</div>
+
+  ``` bash
+  $ sudo apt-get install ros-kinetic-ar-track-alvar ros-kinetic-ar-track-alvar-msgs
+  ```
+  ``` bash
+  $ cd ~/catkin_ws/src
+  $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_perceptions.git
+  $ cd ~/catkin_ws && catkin_make
+  ```
+
+#### Execution
+You have to change the parameters according to the type of camera. Run the following command.
+
+##### Astra Pro
+  ``` bash
+  $ roslaunch open_manipulator_ar_markers ar_pose.launch camera_model:=astra_pro
+  ```
+##### Realsense D435
+  ``` bash
+  $ roslaunch open_manipulator_ar_markers ar_pose.launch camera_model:=realsense_d435
+  ```
+##### Raspberry Pi Camera V2
+**[Raspberry Pi]**
+  ``` bash
+  $ roslaunch raspicam_node camerav2_1280x960.launch
+  ```
+**[Remote PC]**
+  ``` bash
+  $ roslaunch open_manipulator_ar_markers ar_pose.launch camera_model:=raspicam
+  ```
+
+##### Rviz
+When the camera recognizes the AR marker, the pose of the AR marker is shown on Rviz.
+![](/assets/images/platform/openmanipulator/OpenManipulator_AR_Marker.png)  
+
+## [Mobile Manipulation](#mobile-manipulation)
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/Qhvk5cnX2hM" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/P82pZsqpBg0" frameborder="0" allowfullscreen></iframe>
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/DLOq8yNcCoE" frameborder="0" allowfullscreen></iframe>
+
+  **TIP**: You can get a more information about it in [Manipulation section of TurtleBot3](/docs/en/platform/turtlebot3/manipulation/#manipulation)
+  {: .notice--success}
+
+Install dependent packages
+
+  ``` bash
+  $ cd ~/catkin_ws/src
+  $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_with_tb3.git
+  $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_with_tb3_msgs.git
+  $ git clone https://github.com/ROBOTIS-GIT/turtlebot3.git
+  $ sudo apt-get install ros-kinetic-smach*
+  $ cd ~/catkin_ws && catkin_make
+  ```
+
+Load a TurtleBot3 Waffle or Waffle Pi with OpenManipulator on RViz.
+
+  **TIP**: TB3_MODEL =  `waffle`, `waffle_pi`
+  {: .notice--success}
+
+  ``` bash
+  $ export TURTLEBOT3_MODEL=${TB3_MODEL}
+  $ roslaunch open_manipulator_with_tb3_description open_manipulator_with_tb3_rviz.launch
+  ```
+
+![](/assets/images/platform/openmanipulator/TurtleBot3_with_Open_Manipulator.png)
 
 # [How to Control on OpenCR](#how-to-control-on-opencr)
 
@@ -1309,252 +1593,6 @@ Open processing source code file
   ![](/assets/images/platform/openmanipulator/OpenManipulator_chain_processing_6.png)
 
 
-# [Camera Application](#camera-application)
-
-{% capture notice_01 %}
-**NOTE**:
-- This instructions were tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
-- This instructions are supposed to be running on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.
-{% endcapture %}
-<div class="notice--info">{{ notice_01 | markdownify }}</div>
-
-## [Astra Pro](#astra-pro)
-
-### Overview
-![](/assets/images/platform/openmanipulator/OpenManipulator_camera_Astra_pro.png)  
-
-The [Astra Series](https://orbbec3d.com/product-astra/) was designed to further improve on the attributes that set Orbbec 3D cameras apart from existing 3D cameras on the market. Astra 3D cameras provide computer vision that enables dozens of functions such as face recognition, gesture recognition, human body tracking, three-dimensional measurement, environment perception, and three-dimensional map reconstruction.
-
-### Specifications
-
-| Items                                  | Specifications                                       |
-|----------------------------------------|------------------------------------------------------|
-| RGB Image Resolution and Frame Rate    | 1280 x 720, @30fps                                   |
-| Depth Imgae Resolution and Frame Rate  | 640 x 480, @30fps                                    |
-| FOV (Field-of-View)                    | 60°H x 49.5°V x 73°D                                 |
-| Range                                  | 0.6m - 8m                                            |
-| USB Port                               | USB 2.0                                              |
-| Dimensions                             | 165mm x 30mm x 40mm                                  |
-| Operating Systems                      | Android/Linux/Windows 7/8/10                         |
-| SDK                                    | Astra SDK or OpenNI                                  |
-| Microphones                            | 2 (Built - in)                                       |
-
-### User Guide
-
-#### Installation
-The following commands will install relevant Astra Pro library.
-  ``` bash
-  $ sudo apt-get install ros-kinetic-rgbd-launch ros-kinetic-libuvc-camera
-  ```
-  ``` bash
-  $ cd ~/catkin_ws/src
-  $ git clone https://github.com/orbbec/ros_astra_camera.git
-  $ git clone https://github.com/ROBOTIS-GIT/ros_astra_launch.git
-  $ cd ~/catkin_ws && catkin_make
-  $ roscd astra_camera && ./scripts/create_udev_rules
-  ```
-#### Execution  
-Run the following command.
-  ``` bash
-  $ sudo chmod a+rw /dev/bus/usb/${USB}/${PORT}
-  $ roslaunch ros_astra_launch astra_pro.launch
-  ```
-
-You can use rviz or image_view to verify driver. You can select data topic name related to Astra Pro from drop down menu at the top of the application.
-  ``` bash
-  $ rqt_image_view
-  ```
-
-### Reference
-- [ORBBEC Astra Pro](https://orbbec3d.com/product-astra-pro/)    
-- [Astra Pro ROS package](https://github.com/orbbec/ros_astra_camera)
-
-## [Realsense D435](#realsense-d435)
-
-### Overview
-![](/assets/images/platform/openmanipulator/OpenManipulator_camera_Realsense_D435.png)  
-
-The [Intel® RealSense™ Depth Camera D435](https://realsense.intel.com/depth-camera/#D415_D435) is a USB-powered depth camera and consists of a pair of depth sensors, RGB sensor, and infrared projector. It is ideal for makers and developers to add depth perception capability to their prototype development. The D435 is designed to best fit your prototype.
-
-### Specifications
-
-| Items                                 | Specifications                               |
-|---------------------------------------|----------------------------------------------|
-| Use Environment                       | Indoor/Outdoor                               |
-| RGB Sensor Resolution and Frame Rate  | 1920 x 1080 at 30 fps                        |
-| RGB Sensor FOV 	                      | 69.4°(H) x 42.5°(V) x 77°(D) (+/- 3°)        |
-| Depth Stream Output Resolution	      | Up to 1280 x 720                             |
-| Depth Stream Output Frame Rate	      | Up to 90 fps                                 |
-| Depth Field of View (FOV)             | 85.2°(H) x 58°(V) x 94°(D) (+/- 3°)          |
-| Minimum Depth Distance (Min-Z)        | 0.2m                                         |
-| Maximum Range                         | Approx.10 meters                             |
-| Dimension                             | 90 mm x 25 mm x 25 mm                        |
-| Connectors                            | USB 3.0 Type - C                             |
-
-### User Guide
-
-#### Installation
-The following commands will install relevant Intel® RealSense™ Depth Camera D435 library.
-  ``` bash
-  $ sudo add-apt-repository "deb http://realsense-hw-public.s3.amazonaws.com/Debian/apt-repo xenial main" -u
-  $ sudo apt-get install librealsense2-dev ros-kinetic-rgbd-launch
-  ```
-  ``` bash
-  $ cd ~/catkin_ws/src
-  $ git clone https://github.com/intel-ros/realsense.git
-  $ cd ~/catkin_ws && catkin_make
-  ```
-#### Execution  
-Run the following command.
-  ``` bash
-  $ roslaunch realsense2_camera rs_camera.launch
-  ```
-
-You can use rviz or image_view to verify driver. You can select data topic name related to Intel® RealSense™ Depth Camera D435 from drop down menu at the top of the application.
-  ``` bash
-  $ rqt_image_view
-  ```
-
-### Reference
-- [Intel® RealSense™ Depth Camera D435](https://realsense.intel.com/depth-camera/#D415_D435)    
-- [Realsense ROS package](https://github.com/intel-ros/realsense)
-
-## [Raspberry Pi Camera V2](#raspberry-pi-camera-v2)
-
-### Overview
-![](/assets/images/platform/turtlebot3/appendix_raspi_cam/Pi-Camera-front.jpg)
-
-Please refer the detailed description of [Raspberry Pi Camera V2](/docs/en/platform/turtlebot3/appendix_raspi_cam/#overview)
-
-
-### Specifications
-
-Please refer the detailed Specification of [Raspberry Pi Camera V2](/docs/en/platform/turtlebot3/appendix_raspi_cam/#specifications)
-
-### User Guide
-
-#### Installation
-
-**Warning!**     
-Raspberry pi must be installed before setting up the Raspberry Pi Camera V2.    
-Please check this link out. [Raspberry Pi 3 Setup](/docs/en/platform/turtlebot3/raspberry_pi_3_setup/)
-{: .notice--warning}
-
-**[Raspberry Pi]** Setting up the camera hardware
-
-``` bash
-$ sudo raspi-config
-```
-
-![](/assets/images/platform/turtlebot3/appendix_raspi_cam/pi-cam-hardware-setting-1.png)
-
-Select **3 Interfacing Options**    
-![](/assets/images/platform/turtlebot3/appendix_raspi_cam/pi-cam-hardware-setting-2.png)
-
-Select **P1 Camera**    
-![](/assets/images/platform/turtlebot3/appendix_raspi_cam/pi-cam-hardware-setting-3.png)
-
-Enable camera interface    
-![](/assets/images/platform/turtlebot3/appendix_raspi_cam/pi-cam-hardware-setting-4.png)    
-![](/assets/images/platform/turtlebot3/appendix_raspi_cam/pi-cam-hardware-setting-5.png)
-
-After **reboot Raspberry Pi**, to test that the system is installed and working, try the following command:
-
-``` bash
-$ raspistill -v -o test.jpg
-```
-The display should show a five-second preview from the camera and then take a picture, saved to the file *test.jpg*
-
-The following commands will install relevant Raspberry Pi Camera packages on your ROS system.
-
-- If you use Ubuntu in Raspberry Pi, enter the following command     
-``` bash
-$ sudo apt-get install ros-kinetic-compressed-image-transport ros-kinetic-camera-info-manager
-```
-
-``` bash
-$ cd ~/catkin_ws/src
-$ git clone https://github.com/UbiquityRobotics/raspicam_node.git
-$ cd ~/catkin_ws && catkin_make
-```
-#### Execution  
-
-**Warning!**     
-Before you run `rqt_image_view` in Remote PC, check your Raspberry Pi and Remote PC whether they are connected. Please check this link out.    
-[Raspberry Pi 3 Setup](/docs/en/platform/turtlebot3/raspberry_pi_3_setup/#5-network-configuration)    
-[Remote PC Setup](/docs/en/platform/turtlebot3/pc_setup/#network-configuration)
-{: .notice--warning}
-
-**[Remote PC]** Run the following command
-
-``` bash
-$ roscore
-$ rqt_image_view
-```
-
-**[Raspberry Pi]** Run the following command.
-``` bash
-$ roslaunch raspicam_node camerav2_1280x960.launch
-```
-
-
-#### Reference
-
-- [Raspberry Pi Camera](https://www.raspberrypi.org/documentation/hardware/camera/README.md)
-- [Getting Started](https://projects.raspberrypi.org/en/projects/getting-started-with-picamera)
-- [Pi Camera ROS package](https://github.com/UbiquityRobotics/raspicam_node)
-
-## [AR Marker](#ar-marker)
-
-{% capture notice_01 %}
-**NOTE**:
-- This instructions were tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
-- The `open_manipulator_perceptions` package requires [`ar_track_alvar`](http://wiki.ros.org/ar_track_alvar) package.
-- Make sure to run the [Open Manipulator controller](/docs/en/platform/openmanipulator/#launch-controller) instructions before running the instructions below.
-{% endcapture %}
-<div class="notice--info">{{ notice_01 | markdownify }}</div>
-
-### Installation
-
-{% capture notice_01 %}
-**NOTE**:
-- To use the **Raspberry Pi Camera V2**, install it on the **Remote PC**
-{% endcapture %}
-<div class="notice--info">{{ notice_01 | markdownify }}</div>
-
-  ``` bash
-  $ sudo apt-get install ros-kinetic-ar-track-alvar ros-kinetic-ar-track-alvar-msgs
-  ```
-  ``` bash
-  $ cd ~/catkin_ws/src
-  $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_perceptions.git
-  $ cd ~/catkin_ws && catkin_make
-  ```
-
-### Execution
-You have to change the parameters according to the type of camera. Run the following command.
-
-#### Astra Pro
-  ``` bash
-  $ roslaunch open_manipulator_ar_markers ar_pose.launch camera_model:=astra_pro
-  ```
-#### Realsense D435
-  ``` bash
-  $ roslaunch open_manipulator_ar_markers ar_pose.launch camera_model:=realsense_d435
-  ```
-#### Raspberry Pi Camera V2
-**[Raspberry Pi]**
-  ``` bash
-  $ roslaunch raspicam_node camerav2_1280x960.launch
-  ```
-**[Remote PC]**
-  ``` bash
-  $ roslaunch open_manipulator_ar_markers ar_pose.launch camera_model:=raspicam
-  ```
-
-#### Rviz
-When the camera recognizes the AR marker, the pose of the AR marker is shown on Rviz.
-![](/assets/images/platform/openmanipulator/OpenManipulator_AR_Marker.png)  
 
 
 # [Tool Modification](#tool-modification)
@@ -1567,18 +1605,18 @@ When the camera recognizes the AR marker, the pose of the AR marker is shown on 
 ### Hardware Setup
 #### Part List
 
-|                   | Part Name    | Quantity | Link|
-|---------          |----------    |--------- |---- |
-|**3D Printed Tool Part** |Vacuum Holder    |1 |[Download Link](https://www.thingiverse.com/thing:3069574)|
-|**Vacuum System** |ARDUINO 4 RELAYS SHIELD |1 |[shop Link](https://store.arduino.cc/usa/arduino-4-relays-shield)|
-|.                 |12V Air Pump Motor          |1 |[shop Link](https://www.amazon.com/dp/B00DYA21PU/ref=sxbs_sxwds-stppvp_1?pf_rd_p=d45777d6-4c64-4117-8332-1659db52e64f&pd_rd_wg=4GrxM&pf_rd_r=B6N50VB3NHQT92HY91GK&pd_rd_i=B00DYA21PU&pd_rd_w=hP7Ev&pd_rd_r=f1ca7704-2522-4488-a625-16e3a8803027&ie=UTF8&qid=1547619718&sr=1)|
-|.                 |UD0640-20-C (Air Tube 6Ø) |1 |[shop Link](https://us.misumi-ec.com/vona2/detail/221000039579/?HissuCode=UD0640-20-C&PNSearch=UD0640-20-C&KWSearch=UD0640-20-C&searchFlow=results2type)|
-|.                 |UD0860-20-C (Air Tube 8Ø) |1 |[shop Link](https://us.misumi-ec.com/vona2/detail/221000039579/?HissuCode=UD0860-20-C&PNSearch=UD0860-20-C&KWSearch=UD0860-20-C&searchFlow=results2type)|
-|.                 |MSCNL6-1 (Coupling 6Ø)  |1 |[shop Link](https://us.misumi-ec.com/vona2/detail/110300335060/?HissuCode=MSCNL6-1&PNSearch=MSCNL6-1&KWSearch=MSCNL6-1&searchFlow=results2type)|
-|.                 |MSCNL8-1 (Coupling 8Ø)  |2 |[shop Link](https://us.misumi-ec.com/vona2/detail/110300335060/?HissuCode=MSCNL8-1&PNSearch=MSCNL8-1&KWSearch=MSCNL8-1&searchFlow=results2type)|
-|.                 |MVPKE8 (Suction Cup)      |1 |[shop Link](https://us.misumi-ec.com/vona2/detail/110300346620/?HissuCode=MVPKE8&PNSearch=MVPKE8&KWSearch=MVPKE8&searchFlow=results2type)|
-|.                 |MHE3-M1H-3/2G-1/8 (Control Valve) |1 |[shop Link](https://www.festo.com/cat/en-us_us/products_MH2?CurrentIDCode1=MHE3-M1H-3%2F2G-1%2F8&CurrentPartNo=525146)|
-|.                 |NEBV-Z4WA2L-P-E-2.5-N-LE2-S1 (Cable for Valve) |1 |[shop Link](https://www.festo.com/cat/en-us_us/products_NEBV_V?CurrentIDCode1=NEBV-Z4WA2L-P-E-2.5-N-LE2&CurrentPartNo=8003577)|
+|                          | Part Name                                      | Quantity | Link                                                                                                                                                                                                                                                                         |
+|:-------------------------|:-----------------------------------------------|:---------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **3D Printed Tool Part** | Vacuum Holder                                  | 1        | [Download Link](https://www.thingiverse.com/thing:3069574)                                                                                                                                                                                                                   |
+| **Vacuum System**        | ARDUINO 4 RELAYS SHIELD                        | 1        | [shop Link](https://store.arduino.cc/usa/arduino-4-relays-shield)                                                                                                                                                                                                            |
+| .                        | 12V Air Pump Motor                             | 1        | [shop Link](https://www.amazon.com/dp/B00DYA21PU/ref=sxbs_sxwds-stppvp_1?pf_rd_p=d45777d6-4c64-4117-8332-1659db52e64f&pd_rd_wg=4GrxM&pf_rd_r=B6N50VB3NHQT92HY91GK&pd_rd_i=B00DYA21PU&pd_rd_w=hP7Ev&pd_rd_r=f1ca7704-2522-4488-a625-16e3a8803027&ie=UTF8&qid=1547619718&sr=1) |
+| .                        | UD0640-20-C (Air Tube 6Ø)                      | 1        | [shop Link](https://us.misumi-ec.com/vona2/detail/221000039579/?HissuCode=UD0640-20-C&PNSearch=UD0640-20-C&KWSearch=UD0640-20-C&searchFlow=results2type)                                                                                                                     |
+| .                        | UD0860-20-C (Air Tube 8Ø)                      | 1        | [shop Link](https://us.misumi-ec.com/vona2/detail/221000039579/?HissuCode=UD0860-20-C&PNSearch=UD0860-20-C&KWSearch=UD0860-20-C&searchFlow=results2type)                                                                                                                     |
+| .                        | MSCNL6-1 (Coupling 6Ø)                         | 1        | [shop Link](https://us.misumi-ec.com/vona2/detail/110300335060/?HissuCode=MSCNL6-1&PNSearch=MSCNL6-1&KWSearch=MSCNL6-1&searchFlow=results2type)                                                                                                                              |
+| .                        | MSCNL8-1 (Coupling 8Ø)                         | 2        | [shop Link](https://us.misumi-ec.com/vona2/detail/110300335060/?HissuCode=MSCNL8-1&PNSearch=MSCNL8-1&KWSearch=MSCNL8-1&searchFlow=results2type)                                                                                                                              |
+| .                        | MVPKE8 (Suction Cup)                           | 1        | [shop Link](https://us.misumi-ec.com/vona2/detail/110300346620/?HissuCode=MVPKE8&PNSearch=MVPKE8&KWSearch=MVPKE8&searchFlow=results2type)                                                                                                                                    |
+| .                        | MHE3-M1H-3/2G-1/8 (Control Valve)              | 1        | [shop Link](https://www.festo.com/cat/en-us_us/products_MH2?CurrentIDCode1=MHE3-M1H-3%2F2G-1%2F8&CurrentPartNo=525146)                                                                                                                                                       |
+| .                        | NEBV-Z4WA2L-P-E-2.5-N-LE2-S1 (Cable for Valve) | 1        | [shop Link](https://www.festo.com/cat/en-us_us/products_NEBV_V?CurrentIDCode1=NEBV-Z4WA2L-P-E-2.5-N-LE2&CurrentPartNo=8003577)                                                                                                                                               |
 
 ### Software Setup
 Please refer the detailed description of [How to Control on OpenCR](/docs/en/platform/openmanipulator/#how-to-control-on-opencr)    
@@ -1601,9 +1639,9 @@ Go to `Examples` → `OpenManipulator` → `example` → `Chain` → `open_manip
 
 ### Hardware Setup
 
-|                | Part Name  | Quantity | Link                                    |
-| -------------- | ---------- | -------- | --------------------------------------- |
-| **3D Printed Tool Part**  | Pen Holder | 1        | [Download Link](https://www.thingiverse.com/thing:3069574) |
+|                          | Part Name  | Quantity | Link                                                       |
+|:-------------------------|:-----------|:---------|:-----------------------------------------------------------|
+| **3D Printed Tool Part** | Pen Holder | 1        | [Download Link](https://www.thingiverse.com/thing:3069574) |
 
 ### Software Setup
 Please refer the detailed description of [How to Control on OpenCR](/docs/en/platform/openmanipulator/#how-to-control-on-opencr)    
@@ -1617,40 +1655,6 @@ Go to `Examples` → `OpenManipulator` → `example` → `Chain` → `open_manip
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_chain_arduino.png)
 
-
-# [Mobile Manipulation](#mobile-manipulation)
-
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/Qhvk5cnX2hM" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/P82pZsqpBg0" frameborder="0" allowfullscreen></iframe>
-
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/DLOq8yNcCoE" frameborder="0" allowfullscreen></iframe>
-
-  **TIP**: You can get a more information about it in [Manipulation section of TurtleBot3](/docs/en/platform/turtlebot3/manipulation/#manipulation)
-  {: .notice--success}
-
-Install dependent packages
-
-  ``` bash
-  $ cd ~/catkin_ws/src
-  $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_with_tb3.git
-  $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_with_tb3_msgs.git
-  $ git clone https://github.com/ROBOTIS-GIT/turtlebot3.git
-  $ sudo apt-get install ros-kinetic-smach*
-  $ cd ~/catkin_ws && catkin_make
-  ```
-
-Load a TurtleBot3 Waffle or Waffle Pi with OpenManipulator on RViz.
-
-  **TIP**: TB3_MODEL =  `waffle`, `waffle_pi`
-  {: .notice--success}
-
-  ``` bash
-  $ export TURTLEBOT3_MODEL=${TB3_MODEL}
-  $ roslaunch open_manipulator_with_tb3_description open_manipulator_with_tb3_rviz.launch
-  ```
-
-![](/assets/images/platform/openmanipulator/TurtleBot3_with_Open_Manipulator.png)
 
 # [Friends](#friends)
 
@@ -1671,16 +1675,16 @@ Load a TurtleBot3 Waffle or Waffle Pi with OpenManipulator on RViz.
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_SCARA_Capture.png)
 
-| Items               | Unit    |                                         |
-| ------------------- | ------- | --------------------------------------- |
-| **Actuator**        |         | Dynamixel XM430-W350-T                  |
-| **Input Voltage**   | V       | 12                                      |
-| **DOF**             | -       | 4 (3 DOF + 1 End-Effector)              |
-| **Speed(Joint)**    | RPM     | 46                                      |
-| **Reach**           | mm (in) | 276 (10.87)                             |
-| **Communication**   | -       | TTL (Level Multidrop BUS)               |
-| **Software**        | -       | Dynamixel SDK, Arduino, Processing      |
-| **Main Controller** | -       | PC, OpenCR                              |
+| Items               | Unit    |                                    |
+|:--------------------|:--------|:-----------------------------------|
+| **Actuator**        |         | Dynamixel XM430-W350-T             |
+| **Input Voltage**   | V       | 12                                 |
+| **DOF**             | -       | 4 (3 DOF + 1 End-Effector)         |
+| **Speed(Joint)**    | RPM     | 46                                 |
+| **Reach**           | mm (in) | 276 (10.87)                        |
+| **Communication**   | -       | TTL (Level Multidrop BUS)          |
+| **Software**        | -       | Dynamixel SDK, Arduino, Processing |
+| **Main Controller** | -       | PC, OpenCR                         |
 
 ### Dimension
 
@@ -1690,24 +1694,24 @@ Load a TurtleBot3 Waffle or Waffle Pi with OpenManipulator on RViz.
 
 #### Part Lists
 
-|              | Part Name | Quantity | Link
-|---------     |---------- |---------   |
-|**Chassis Parts** |BASE FRAME|1|[Download Link](https://www.thingiverse.com/thing:3069581)|
-|.                 |PEN HOLDER|1|[Download Link](https://www.thingiverse.com/thing:3069581)|
-|.                 |FRM BASE|1|[Download Link](https://www.thingiverse.com/thing:3069581)|
-|.                 |TAP HOLDER|1|[Download Link](https://www.thingiverse.com/thing:3069581)|
-|.                 |FR12_H101_K|4|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2768&GC=GD0B0001)|
-|.                 |FR12_S102_K|3|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2766&GC=GD0B0001)|
-|.                 |HN12_I101|4|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2759&GC=GD0B0006)|
-|**Actuators**     |Dynamixel XM430-W350-T|4|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2923&GC=GD080101)|
-|**Cables**        |CABLE_3P_130MM|3|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2347&GC=GD0B0105&page=2)|
-|.                 |CABLE_3P_240MM|1|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2926&GC=GD0B0105&page=3)|
-|**Miscellaneous** |WB_M2X03|24|[Shop Link](https://us.misumi-ec.com/vona2/detail/221000551286/?Inch=0&CategorySpec=00000070644%3A%3A2%0900000070373%3A%3A3)|
-|.                 |WB_M2_5X4|14|[Shop Link](https://us.misumi-ec.com/vona2/detail/221000551286/?Inch=0&CategorySpec=00000070644%3A%3A2.5%0900000070373%3A%3A8)|
-|.                 |WB_M2_5X06|8|[Shop Link](https://us.misumi-ec.com/vona2/detail/221000551286/?Inch=0&CategorySpec=00000070644%3A%3A2.5%0900000070373%3A%3A3%2C6)|
-|.                 |WB_M2_5X12|2|[Shop Link](https://us.misumi-ec.com/vona2/detail/221000551286/?Inch=0&CategorySpec=00000070644%3A%3A2.5%0900000070373%3A%3A8)|
-|.                 |FHS_M2_5X14|12|[Shop Link](https://us.misumi-ec.com/vona2/detail/221000547315/?Inch=0&CategorySpec=00000071822%3A%3A2.5%0900000071552%3)|
-|.                 |NUT_M2_5(0.45P)|8|[Shop Link](https://us.misumi-ec.com/vona2/detail/110300250540/?Inch=0&CategorySpec=00000070281%3A%3A2.5)|
+|                   | Part Name              | Quantity | Link                                                                                                                      |
+|:------------------|:-----------------------|:-------------------------------------------------------------------------------------------------------------------------------------|
+| **Chassis Parts** | BASE FRAME             | 1|[Download Link](https://www.thingiverse.com/thing:3069581)                                                                         |
+| .                 | PEN HOLDER             | 1|[Download Link](https://www.thingiverse.com/thing:3069581)                                                                         |
+| .                 | FRM BASE               | 1|[Download Link](https://www.thingiverse.com/thing:3069581)                                                                         |
+| .                 | TAP HOLDER             | 1|[Download Link](https://www.thingiverse.com/thing:3069581)                                                                         |
+| .                 | FR12_H101_K            | 4|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2768&GC=GD0B0001)                                            |
+| .                 | FR12_S102_K            | 3|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2766&GC=GD0B0001)                                            |
+| .                 | HN12_I101              | 4|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2759&GC=GD0B0006)                                            |
+| **Actuators**     | Dynamixel XM430-W350-T | 4|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2923&GC=GD080101)                                            |
+| **Cables**        | CABLE_3P_130MM         | 3|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2347&GC=GD0B0105&page=2)                                     |
+| .                 | CABLE_3P_240MM         | 1|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2926&GC=GD0B0105&page=3)                                     |
+| **Miscellaneous** | WB_M2X03               | 24|[Shop Link](https://us.misumi-ec.com/vona2/detail/221000551286/?Inch=0&CategorySpec=00000070644%3A%3A2%0900000070373%3A%3A3)      |
+| .                 | WB_M2_5X4              | 14|[Shop Link](https://us.misumi-ec.com/vona2/detail/221000551286/?Inch=0&CategorySpec=00000070644%3A%3A2.5%0900000070373%3A%3A8)    |
+| .                 | WB_M2_5X06             | 8|[Shop Link](https://us.misumi-ec.com/vona2/detail/221000551286/?Inch=0&CategorySpec=00000070644%3A%3A2.5%0900000070373%3A%3A3%2C6) |
+| .                 | WB_M2_5X12             | 2|[Shop Link](https://us.misumi-ec.com/vona2/detail/221000551286/?Inch=0&CategorySpec=00000070644%3A%3A2.5%0900000070373%3A%3A8)     |
+| .                 | FHS_M2_5X14            | 12|[Shop Link](https://us.misumi-ec.com/vona2/detail/221000547315/?Inch=0&CategorySpec=00000071822%3A%3A2.5%0900000071552%3)         |
+| .                 | NUT_M2_5(0.45P)        | 8|[Shop Link](https://us.misumi-ec.com/vona2/detail/110300250540/?Inch=0&CategorySpec=00000070281%3A%3A2.5)                          |
 
 For more information, please refer to [BOM](https://docs.google.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit#gid=1200068410).
 
@@ -1748,17 +1752,17 @@ Open processing source code file (`open_manipulator_processing` → `Scara` → 
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_Link_Capture.png)
 
-| Items                    | Unit    |                                         |
-| -------------------      | ------- | --------------------------------------- |
-| **Actuator**             |         | Dynamixel XM430-W350-T                  |
-| **DOF**                  | -       | 3                                       |
-| **Payload With Suction** | g (lb)  | 500 (1.10)                              |
-| **Speed(Joint)**         | rad/sec | 4.82                                    |
-| **Weight**               | kg(lb)  | 0.55 (1.21)                             |
-| **Reach**                | mm (in) | 350 (13.78)                             |
-| **Communication**        | -       | TTL (Level Multidrop BUS)               |
-| **Software**             | -       | Dynamixel SDK, Arduino, Processing      |
-| **Main Controller**      | -       | PC, OpenCR                              |
+| Items                    | Unit    |                                    |
+|:-------------------------|:--------|:-----------------------------------|
+| **Actuator**             |         | Dynamixel XM430-W350-T             |
+| **DOF**                  | -       | 3                                  |
+| **Payload With Suction** | g (lb)  | 500 (1.10)                         |
+| **Speed(Joint)**         | rad/sec | 4.82                               |
+| **Weight**               | kg(lb)  | 0.55 (1.21)                        |
+| **Reach**                | mm (in) | 350 (13.78)                        |
+| **Communication**        | -       | TTL (Level Multidrop BUS)          |
+| **Software**             | -       | Dynamixel SDK, Arduino, Processing |
+| **Main Controller**      | -       | PC, OpenCR                         |
 
 ### Dimension
 
@@ -1768,36 +1772,36 @@ Open processing source code file (`open_manipulator_processing` → `Scara` → 
 
 #### Part Lists
 
-|                   | Part Name                        | Quantity | Link                                                                                                                                                                           |
-|-------------------|----------------------------------|-------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Plate**         | Base Plate-02                    | 1     |[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=3331)|
-| **Chassis Parts** | BASE LINK                        | 1     | [Download Link](https://www.thingiverse.com/thing:3069557)|
-| .                 | ROTATION BASE                    | 1     | [Download Link](https://www.thingiverse.com/thing:3069557)|
-| .                 | HOLDER A                         | 1     | [Download Link](https://www.thingiverse.com/thing:3069557)|
-| .                 | HOLDER B                         | 1     | [Download Link](https://www.thingiverse.com/thing:3069557)|
-| .                 | LINK 50                          | 1     | [Download Link](https://www.thingiverse.com/thing:3069557)|
-| .                 | LINK 200 A                       | 1     | [Download Link](https://www.thingiverse.com/thing:3069557)|
-| .                 | LINK 50 FOR 250                  | 1     | [Download Link](https://www.thingiverse.com/thing:3069557)|
-| .                 | LINK 200 FOR 250                 | 1     | [Download Link](https://www.thingiverse.com/thing:3069557)|
-| .                 | LINK 200 B                       | 4     | [Download Link](https://www.thingiverse.com/thing:3069557)|
-| .                 | TRIANGLE LINK                    | 1     | [Download Link](https://www.thingiverse.com/thing:3069557)|
-| .                 | TOOL LINK                        | 1     | [Download Link](https://www.thingiverse.com/thing:3069557)|
-| **Actuators**     | Dynamixel XM430-W350-T           | 3     | [Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2923&GC=GD080101)|
-| **Cables**        | CABLE_3P_180MM                   | 2     | [Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2755&GC=GD0B0105&page=2)|
-| .                 | CABLE_3P_240MM                   | 1     | [Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2926&GC=GD0B0105&page=3)|
-| **Miscellaneous** | FHS_M2x3mm                       | 16    | [Shop Link](https://us.misumi-ec.com/vona2/detail/221000547315/?Inch=0&CategorySpec=00000071822%3A%3A2%0900000071552%3A%3A3)|
-| .                 | FHS_M2x6mm                       | 4     | [Shop Link](https://us.misumi-ec.com/vona2/detail/221000547315/?Inch=0&CategorySpec=00000071822%3A%3A2%0900000071552%3A%3A6)|
-| .                 | FHS_M2.5x5mm                     | 8     | [Shop Link](https://us.misumi-ec.com/vona2/detail/221000547315/?Inch=0&CategorySpec=00000071822%3A%3A2.5%0900000071552%3A%3A5)|
-| .                 | FHS_M2.5x10mm                    | 4     | [Shop Link](https://us.misumi-ec.com/vona2/detail/221000547315/?Inch=0&CategorySpec=00000071822%3A%3A2.5%0900000071552%3A%3A10)|
-| .                 | FHS_M3x10mm                      | 4     | [Shop Link](https://us.misumi-ec.com/vona2/detail/221000547315/?Inch=0&CategorySpec=00000071822%3a%3a2.5%0900000071552%3a%3a10&curSearch=%7b%22field%22%3a%22%40search%22%2c%22seriesCode%22%3a%22221000547315%22%2c%22innerCode%22%3a%22%22%2c%22sort%22%3a1%2c%22specSortFlag%22%3a0%2c%22allSpecFlag%22%3a0%2c%22page%22%3a1%2c%22pageSize%22%3a%2260%22%2c%2200000071822%22%3a%22nvd00000000000002%22%2c%2200000071552%22%3a%22mig00000001426443%22%7d&Tab=wysiwyg_area_0)|
-| .                 | NUT_M2                           | 4     | [Shop Link](https://us.misumi-ec.com/vona2/detail/110300250540/?Inch=0&CategorySpec=00000070281%3A%3A2)|
-| .                 | NUT_M2.5                         | 4     | [Shop Link](https://us.misumi-ec.com/vona2/detail/110300250540/?Inch=0&CategorySpec=00000070281%3A%3A2.5)|
-| .                 | PSCBRJ6-9                        | 18    | [Shop Link](https://us.misumi-ec.com/vona2/detail/110302637270/?HissuCode=PSCBRJ6-9&PNSearch=PSCBRJ6-9&KWSearch=PSCBRJ6-9&searchFlow=results2type)|
-| .                 | MSRB6-1.0                        | 40    | [Shop Link](https://us.misumi-ec.com/vona2/detail/110100142970/?HissuCode=MSRB6-1.0&PNSearch=MSRB6-1.0&KWSearch=MSRB6-1.0&searchFlow=results2type)|
-| .                 | NSFMR6-38                        | 1     | [Shop Link](https://jp.misumi-ec.com/vona2/detail/110300086920/?HissuCode=NSFMR6-38&PNSearch=NSFMR6-38&KWSearch=NSFMR6-38&searchFlow=results2products)|
-| .                 | NSFMR6-42                        | 1     | [Shop Link](https://jp.misumi-ec.com/vona2/detail/110300086920/?HissuCode=NSFMR6-42&PNSearch=NSFMR6-42&KWSearch=NSFMR6-42&searchFlow=results2products)|
-| .                 | NSFMR6-24                        | 6     | [Shop Link](https://jp.misumi-ec.com/vona2/detail/110300086920/?HissuCode=NSFMR6-24&PNSearch=NSFMR6-24&KWSearch=NSFMR6-24&searchFlow=results2products)|
-| .                 | Ball Bearing(O.D 10mm / I.D 6mm) | 20    | [Shop Link](https://us.misumi-ec.com/vona2/detail/221000531116/?CategorySpec=unitType%3a%3a1%0900000044017%3a%3amig00000001446936%0900000043985%3a%3amig00000001455783&Inch=0)|
+|                   | Part Name                        | Quantity | Link                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+|:------------------|:---------------------------------|:---------|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Plate**         | Base Plate-02                    | 1        | [Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=3331)                                                                                                                                                                                                                                                                                                                                                                                                    |
+| **Chassis Parts** | BASE LINK                        | 1        | [Download Link](https://www.thingiverse.com/thing:3069557)                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| .                 | ROTATION BASE                    | 1        | [Download Link](https://www.thingiverse.com/thing:3069557)                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| .                 | HOLDER A                         | 1        | [Download Link](https://www.thingiverse.com/thing:3069557)                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| .                 | HOLDER B                         | 1        | [Download Link](https://www.thingiverse.com/thing:3069557)                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| .                 | LINK 50                          | 1        | [Download Link](https://www.thingiverse.com/thing:3069557)                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| .                 | LINK 200 A                       | 1        | [Download Link](https://www.thingiverse.com/thing:3069557)                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| .                 | LINK 50 FOR 250                  | 1        | [Download Link](https://www.thingiverse.com/thing:3069557)                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| .                 | LINK 200 FOR 250                 | 1        | [Download Link](https://www.thingiverse.com/thing:3069557)                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| .                 | LINK 200 B                       | 4        | [Download Link](https://www.thingiverse.com/thing:3069557)                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| .                 | TRIANGLE LINK                    | 1        | [Download Link](https://www.thingiverse.com/thing:3069557)                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| .                 | TOOL LINK                        | 1        | [Download Link](https://www.thingiverse.com/thing:3069557)                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| **Actuators**     | Dynamixel XM430-W350-T           | 3        | [Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2923&GC=GD080101)                                                                                                                                                                                                                                                                                                                                                                                        |
+| **Cables**        | CABLE_3P_180MM                   | 2        | [Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2755&GC=GD0B0105&page=2)                                                                                                                                                                                                                                                                                                                                                                                 |
+| .                 | CABLE_3P_240MM                   | 1        | [Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2926&GC=GD0B0105&page=3)                                                                                                                                                                                                                                                                                                                                                                                 |
+| **Miscellaneous** | FHS_M2x3mm                       | 16       | [Shop Link](https://us.misumi-ec.com/vona2/detail/221000547315/?Inch=0&CategorySpec=00000071822%3A%3A2%0900000071552%3A%3A3)                                                                                                                                                                                                                                                                                                                                                   |
+| .                 | FHS_M2x6mm                       | 4        | [Shop Link](https://us.misumi-ec.com/vona2/detail/221000547315/?Inch=0&CategorySpec=00000071822%3A%3A2%0900000071552%3A%3A6)                                                                                                                                                                                                                                                                                                                                                   |
+| .                 | FHS_M2.5x5mm                     | 8        | [Shop Link](https://us.misumi-ec.com/vona2/detail/221000547315/?Inch=0&CategorySpec=00000071822%3A%3A2.5%0900000071552%3A%3A5)                                                                                                                                                                                                                                                                                                                                                 |
+| .                 | FHS_M2.5x10mm                    | 4        | [Shop Link](https://us.misumi-ec.com/vona2/detail/221000547315/?Inch=0&CategorySpec=00000071822%3A%3A2.5%0900000071552%3A%3A10)                                                                                                                                                                                                                                                                                                                                                |
+| .                 | FHS_M3x10mm                      | 4        | [Shop Link](https://us.misumi-ec.com/vona2/detail/221000547315/?Inch=0&CategorySpec=00000071822%3a%3a2.5%0900000071552%3a%3a10&curSearch=%7b%22field%22%3a%22%40search%22%2c%22seriesCode%22%3a%22221000547315%22%2c%22innerCode%22%3a%22%22%2c%22sort%22%3a1%2c%22specSortFlag%22%3a0%2c%22allSpecFlag%22%3a0%2c%22page%22%3a1%2c%22pageSize%22%3a%2260%22%2c%2200000071822%22%3a%22nvd00000000000002%22%2c%2200000071552%22%3a%22mig00000001426443%22%7d&Tab=wysiwyg_area_0) |
+| .                 | NUT_M2                           | 4        | [Shop Link](https://us.misumi-ec.com/vona2/detail/110300250540/?Inch=0&CategorySpec=00000070281%3A%3A2)                                                                                                                                                                                                                                                                                                                                                                        |
+| .                 | NUT_M2.5                         | 4        | [Shop Link](https://us.misumi-ec.com/vona2/detail/110300250540/?Inch=0&CategorySpec=00000070281%3A%3A2.5)                                                                                                                                                                                                                                                                                                                                                                      |
+| .                 | PSCBRJ6-9                        | 18       | [Shop Link](https://us.misumi-ec.com/vona2/detail/110302637270/?HissuCode=PSCBRJ6-9&PNSearch=PSCBRJ6-9&KWSearch=PSCBRJ6-9&searchFlow=results2type)                                                                                                                                                                                                                                                                                                                             |
+| .                 | MSRB6-1.0                        | 40       | [Shop Link](https://us.misumi-ec.com/vona2/detail/110100142970/?HissuCode=MSRB6-1.0&PNSearch=MSRB6-1.0&KWSearch=MSRB6-1.0&searchFlow=results2type)                                                                                                                                                                                                                                                                                                                             |
+| .                 | NSFMR6-38                        | 1        | [Shop Link](https://jp.misumi-ec.com/vona2/detail/110300086920/?HissuCode=NSFMR6-38&PNSearch=NSFMR6-38&KWSearch=NSFMR6-38&searchFlow=results2products)                                                                                                                                                                                                                                                                                                                         |
+| .                 | NSFMR6-42                        | 1        | [Shop Link](https://jp.misumi-ec.com/vona2/detail/110300086920/?HissuCode=NSFMR6-42&PNSearch=NSFMR6-42&KWSearch=NSFMR6-42&searchFlow=results2products)                                                                                                                                                                                                                                                                                                                         |
+| .                 | NSFMR6-24                        | 6        | [Shop Link](https://jp.misumi-ec.com/vona2/detail/110300086920/?HissuCode=NSFMR6-24&PNSearch=NSFMR6-24&KWSearch=NSFMR6-24&searchFlow=results2products)                                                                                                                                                                                                                                                                                                                         |
+| .                 | Ball Bearing(O.D 10mm / I.D 6mm) | 20       | [Shop Link](https://us.misumi-ec.com/vona2/detail/221000531116/?CategorySpec=unitType%3a%3a1%0900000044017%3a%3amig00000001446936%0900000043985%3a%3amig00000001455783&Inch=0)                                                                                                                                                                                                                                                                                                 |
 
 <!-- [Parts of OpenManipulator](https://docs.google.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit#gid=1110711693) -->
 
@@ -1836,15 +1840,15 @@ Open processing source code file (`open_manipulator_processing` → `Link` → `
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_Planar_Capture.png)
 
-| Items                    | Unit    |                                         |
-| -------------------      | ------- | --------------------------------------- |
-| **Actuator**             |         | Dynamixel XM430-W350-T                  |
-| **Input Voltage**        | V       | 12                                      |
-| **DOF**                  | -       | 3                                       |
-| **Speed(Joint)**         | RPM     | 46                                      |
-| **Communication**        | -       | TTL (Level Multidrop BUS)               |
-| **Software**             | -       | Dynamixel SDK, Arduino, Processing      |
-| **Main Controller**      | -       | PC, OpenCR                              |
+| Items               | Unit |                                    |
+|:--------------------|:-----|:-----------------------------------|
+| **Actuator**        |      | Dynamixel XM430-W350-T             |
+| **Input Voltage**   | V    | 12                                 |
+| **DOF**             | -    | 3                                  |
+| **Speed(Joint)**    | RPM  | 46                                 |
+| **Communication**   | -    | TTL (Level Multidrop BUS)          |
+| **Software**        | -    | Dynamixel SDK, Arduino, Processing |
+| **Main Controller** | -    | PC, OpenCR                         |
 
 ### Dimension
 
@@ -1854,19 +1858,19 @@ Open processing source code file (`open_manipulator_processing` → `Link` → `
 
 #### Part Lists
 
-|              | Part Name | Quantity | Link
-|---------     |---------- |---------   |
-|**Chassis Parts** |BASE FRAME|1|[Download Link](https://www.thingiverse.com/thing:3064437)|
-|.                 |laser_gripper|1|[Download Link](https://www.thingiverse.com/thing:3064437)|
-|.                 |link_100|3|[Download Link](https://www.thingiverse.com/thing:3064437)|
-|.                 |link_120|3|[Download Link](https://www.thingiverse.com/thing:3064437)|
-|.                 |HN12_I101|3|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2759&GC=GD0B0006)|
-|**Actuators**     |Dynamixel XM430-W350-T|3|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2923&GC=GD080101)|
-|**Cables**        |CABLE_3P_240MM|3|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2926&GC=GD0B0105&page=3)|
-|**Miscellaneous** |WB_M2_5X12|24|[Shop Link](https://us.misumi-ec.com/vona2/detail/221000551286/?Inch=0&CategorySpec=00000070644%3A%3A2.5%0900000070373%3A%3A8)|
-|.                 |FHS_M2_5X14|12|[Shop Link](https://us.misumi-ec.com/vona2/detail/221000547315/?Inch=0&CategorySpec=00000071822%3A%3A2.5%0900000071552%3)|
-|.                 | NSFMR6-24                        | 6     | [Shop Link](https://jp.misumi-ec.com/vona2/detail/110300086920/?HissuCode=NSFMR6-26&PNSearch=NSFMR6-26&KWSearch=NSFMR6-26&searchFlow=results2products)|
-|.                 | Ball Bearing(O.D 10mm / I.D 6mm) | 24    | [Shop Link](https://us.misumi-ec.com/vona2/detail/221000531116/?CategorySpec=unitType%3a%3a1%0900000044017%3a%3amig00000001446936%0900000043985%3a%3amig00000001455783&Inch=0)|
+|                   | Part Name                        | Quantity | Link                                                                                                                                                                        |
+|:------------------|:---------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Chassis Parts** | BASE FRAME                       | 1|[Download Link](https://www.thingiverse.com/thing:3064437)                                                                                                                           |
+| .                 | laser_gripper                    | 1|[Download Link](https://www.thingiverse.com/thing:3064437)                                                                                                                           |
+| .                 | link_100                         | 3|[Download Link](https://www.thingiverse.com/thing:3064437)                                                                                                                           |
+| .                 | link_120                         | 3|[Download Link](https://www.thingiverse.com/thing:3064437)                                                                                                                           |
+| .                 | HN12_I101                        | 3|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2759&GC=GD0B0006)                                                                                              |
+| **Actuators**     | Dynamixel XM430-W350-T           | 3|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2923&GC=GD080101)                                                                                              |
+| **Cables**        | CABLE_3P_240MM                   | 3|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2926&GC=GD0B0105&page=3)                                                                                       |
+| **Miscellaneous** | WB_M2_5X12                       | 24|[Shop Link](https://us.misumi-ec.com/vona2/detail/221000551286/?Inch=0&CategorySpec=00000070644%3A%3A2.5%0900000070373%3A%3A8)                                                      |
+| .                 | FHS_M2_5X14                      | 12|[Shop Link](https://us.misumi-ec.com/vona2/detail/221000547315/?Inch=0&CategorySpec=00000071822%3A%3A2.5%0900000071552%3)                                                           |
+| .                 | NSFMR6-24                        | 6     | [Shop Link](https://jp.misumi-ec.com/vona2/detail/110300086920/?HissuCode=NSFMR6-26&PNSearch=NSFMR6-26&KWSearch=NSFMR6-26&searchFlow=results2products)                         |
+| .                 | Ball Bearing(O.D 10mm / I.D 6mm) | 24    | [Shop Link](https://us.misumi-ec.com/vona2/detail/221000531116/?CategorySpec=unitType%3a%3a1%0900000044017%3a%3amig00000001446936%0900000043985%3a%3amig00000001455783&Inch=0) |
 
 For more information, please refer to [BOM](https://docs.google.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit#gid=1200068410).
 
@@ -1903,15 +1907,15 @@ Open processing source code file (`open_manipulator_processing` → `Planar` →
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_Delta_Capture.png)
 
-| Items                    | Unit    |                                         |
-| -------------------      | ------- | --------------------------------------- |
-| **Actuator**             |         | Dynamixel XM430-W350-T                  |
-| **Input Voltage**        | V       | 12                                      |
-| **DOF**                  | -       | 3                                       |
-| **Speed(Joint)**         | RPM     | 46                                      |
-| **Communication**        | -       | TTL (Level Multidrop BUS)               |
-| **Software**             | -       | Dynamixel SDK, Arduino, Processing      |
-| **Main Controller**      | -       | PC, OpenCR                              |
+| Items               | Unit |                                    |
+|:--------------------|:-----|:-----------------------------------|
+| **Actuator**        |      | Dynamixel XM430-W350-T             |
+| **Input Voltage**   | V    | 12                                 |
+| **DOF**             | -    | 3                                  |
+| **Speed(Joint)**    | RPM  | 46                                 |
+| **Communication**   | -    | TTL (Level Multidrop BUS)          |
+| **Software**        | -    | Dynamixel SDK, Arduino, Processing |
+| **Main Controller** | -    | PC, OpenCR                         |
 
 ### Dimension
 
@@ -1921,19 +1925,19 @@ Open processing source code file (`open_manipulator_processing` → `Planar` →
 
 #### Part Lists
 
-|              | Part Name | Quantity | Link
-|---------     |---------- |---------   |
-|**Chassis Parts** |BASE FRAME|1|[Download Link](https://www.thingiverse.com/thing:3217182)|
-|.                 |Delta_centre|1|[Download Link](https://www.thingiverse.com/thing:3217182)|
-|.                 |Delta_gripper|1|[Download Link](https://www.thingiverse.com/thing:3217182)|
-|.                 |link|3|[Download Link](https://www.thingiverse.com/thing:3217182)|
-|.                 |HN12_I101|3|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2759&GC=GD0B0006)|
-|**Actuators**     |Dynamixel XM430-W350-T|3|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2923&GC=GD080101)|
-|**Cables**        |CABLE_3P_240MM|3|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2926&GC=GD0B0105&page=3)|
-|**Miscellaneous** |WB_M2_5X12|24|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2923&GC=GD080101http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2923&GC=GD080101)|
-|.                 |FHS_M2_5X14|12|[Shop Link](https://us.misumi-ec.com/vona2/detail/221000547315/?Inch=0&CategorySpec=00000071822%3A%3A2.5%0900000071552%3)|
-|.                 |NSFMR6-24|6|[Shop Link](https://jp.misumi-ec.com/vona2/detail/110300086920/?HissuCode=NSFMR6-26&PNSearch=NSFMR6-26&KWSearch=NSFMR6-26&searchFlow=results2products)|
-|.                 |Rod End Bearing(D 3mm)|12|[Shop Link](https://us.misumi-ec.com/vona2/detail/110300371730/?HissuCode=PHSOM3&PNSearch=PHSOM3&KWSearch=phsom3&searchFlow=results2type)|
+|                   | Part Name              | Quantity | Link                                                                                                                                                      |
+|:------------------|:-----------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Chassis Parts** | BASE FRAME             | 1|[Download Link](https://www.thingiverse.com/thing:3217182)                                                                                                         |
+| .                 | Delta_centre           | 1|[Download Link](https://www.thingiverse.com/thing:3217182)                                                                                                         |
+| .                 | Delta_gripper          | 1|[Download Link](https://www.thingiverse.com/thing:3217182)                                                                                                         |
+| .                 | link                   | 3|[Download Link](https://www.thingiverse.com/thing:3217182)                                                                                                         |
+| .                 | HN12_I101              | 3|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2759&GC=GD0B0006)                                                                            |
+| **Actuators**     | Dynamixel XM430-W350-T | 3|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2923&GC=GD080101)                                                                            |
+| **Cables**        | CABLE_3P_240MM         | 3|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2926&GC=GD0B0105&page=3)                                                                     |
+| **Miscellaneous** | WB_M2_5X12             | 24|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2923&GC=GD080101http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2923&GC=GD080101) |
+| .                 | FHS_M2_5X14            | 12|[Shop Link](https://us.misumi-ec.com/vona2/detail/221000547315/?Inch=0&CategorySpec=00000071822%3A%3A2.5%0900000071552%3)                                         |
+| .                 | NSFMR6-24              | 6|[Shop Link](https://jp.misumi-ec.com/vona2/detail/110300086920/?HissuCode=NSFMR6-26&PNSearch=NSFMR6-26&KWSearch=NSFMR6-26&searchFlow=results2products)             |
+| .                 | Rod End Bearing(D 3mm) | 12|[Shop Link](https://us.misumi-ec.com/vona2/detail/110300371730/?HissuCode=PHSOM3&PNSearch=PHSOM3&KWSearch=phsom3&searchFlow=results2type)                         |
 
 For more information, please refer to [BOM](https://docs.google.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit#gid=1200068410).
 
@@ -1970,15 +1974,15 @@ Open processing source code file (`open_manipulator_processing` → `Delta` → 
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_Stewart_Capture.png)
 
-| Items                    | Unit    |                                         |
-| -------------------      | ------- | --------------------------------------- |
-| **Actuator**             |         | Dynamixel XM430-W350-T                  |
-| **Input Voltage**        | V       | 12                                      |
-| **DOF**                  | -       | 6                                       |
-| **Speed(Joint)**         | RPM     | 46                                      |
-| **Communication**        | -       | TTL (Level Multidrop BUS)               |
-| **Software**             | -       | Dynamixel SDK, Arduino, Processing      |
-| **Main Controller**      | -       | PC, OpenCR                              |
+| Items               | Unit |                                    |
+|:--------------------|:-----|:-----------------------------------|
+| **Actuator**        |      | Dynamixel XM430-W350-T             |
+| **Input Voltage**   | V    | 12                                 |
+| **DOF**             | -    | 6                                  |
+| **Speed(Joint)**    | RPM  | 46                                 |
+| **Communication**   | -    | TTL (Level Multidrop BUS)          |
+| **Software**        | -    | Dynamixel SDK, Arduino, Processing |
+| **Main Controller** | -    | PC, OpenCR                         |
 
 ### Dimension
 
@@ -1990,18 +1994,18 @@ Open processing source code file (`open_manipulator_processing` → `Delta` → 
 
 #### Part Lists
 
-|              | Part Name | Quantity | Link
-|---------     |---------- |---------   |
-|**Chassis Parts** |BASE FRAME|1|[Download Link](https://www.thingiverse.com/thing:3272579)|
-|.                 |stewart_conv|6|[Download Link](https://www.thingiverse.com/thing:3272579)|
-|.                 |st_link_new|6|[Download Link](https://www.thingiverse.com/thing:3272579)|
-|.                 |PHSOM3|12|[Shop Link](https://kr.misumi-ec.com/vona2/detail/110300371730/?HissuCode=PHSOM3&PNSearch=PHSOM3&KWSearch=phsom3&searchFlow=results2type)|
-|.                 |SPJW6-100-M3-N3|6|[Shop Link](https://kr.misumi-ec.com/vona2/detail/110302636140/?HissuCode=SPJW6-100-M3-N3&PNSearch=SPJW6-100-M3-N3&KWSearch=SPJW6-100-M3-N3&searchFlow=results2type)|
-|.                 |HN12_I101|6|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2759&GC=GD0B0006)|
-|**Actuators**     |Dynamixel XM430-W350-T|6|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2923&GC=GD080101)|
-|**Cables**        |CABLE_3P_130MM|6|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2347&GC=GD0B0105&page=2)|
-|**Miscellaneous** |WB_M3X08|24|[Shop Link](https://us.misumi-ec.com/vona2/detail/221000551286/)|
-|.                 |NUT_M3|24|[Shop Link](https://us.misumi-ec.com/vona2/detail/110300250540/)|
+|                   | Part Name              | Quantity | Link                                                                                                                                                        |
+|:------------------|:-----------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Chassis Parts** | BASE FRAME             | 1|[Download Link](https://www.thingiverse.com/thing:3272579)                                                                                                           |
+| .                 | stewart_conv           | 6|[Download Link](https://www.thingiverse.com/thing:3272579)                                                                                                           |
+| .                 | st_link_new            | 6|[Download Link](https://www.thingiverse.com/thing:3272579)                                                                                                           |
+| .                 | PHSOM3                 | 12|[Shop Link](https://kr.misumi-ec.com/vona2/detail/110300371730/?HissuCode=PHSOM3&PNSearch=PHSOM3&KWSearch=phsom3&searchFlow=results2type)                           |
+| .                 | SPJW6-100-M3-N3        | 6|[Shop Link](https://kr.misumi-ec.com/vona2/detail/110302636140/?HissuCode=SPJW6-100-M3-N3&PNSearch=SPJW6-100-M3-N3&KWSearch=SPJW6-100-M3-N3&searchFlow=results2type) |
+| .                 | HN12_I101              | 6|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2759&GC=GD0B0006)                                                                              |
+| **Actuators**     | Dynamixel XM430-W350-T | 6|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2923&GC=GD080101)                                                                              |
+| **Cables**        | CABLE_3P_130MM         | 6|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2347&GC=GD0B0105&page=2)                                                                       |
+| **Miscellaneous** | WB_M3X08               | 24|[Shop Link](https://us.misumi-ec.com/vona2/detail/221000551286/)                                                                                                    |
+| .                 | NUT_M3                 | 24|[Shop Link](https://us.misumi-ec.com/vona2/detail/110300250540/)                                                                                                    |
 
 For more information, please refer to [BOM](https://docs.google.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit#gid=1200068410).
 
@@ -2038,15 +2042,15 @@ Open processing source code file (`open_manipulator_processing` → `Stewart` �
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_Linear_Capture.png)
 
-| Items                    | Unit    |                                         |
-| -------------------      | ------- | --------------------------------------- |
-| **Actuator**             |         | Dynamixel XM430-W350-T                  |
-| **Input Voltage**        | V       | 12                                      |
-| **DOF**                  | -       | 3                                       |
-| **Speed(Joint)**         | RPM     | 46                                      |
-| **Communication**        | -       | TTL (Level Multidrop BUS)               |
-| **Software**             | -       | Dynamixel SDK, Arduino, Processing      |
-| **Main Controller**      | -       | PC, OpenCR                              |
+| Items               | Unit |                                    |
+|:--------------------|:-----|:-----------------------------------|
+| **Actuator**        |      | Dynamixel XM430-W350-T             |
+| **Input Voltage**   | V    | 12                                 |
+| **DOF**             | -    | 3                                  |
+| **Speed(Joint)**    | RPM  | 46                                 |
+| **Communication**   | -    | TTL (Level Multidrop BUS)          |
+| **Software**        | -    | Dynamixel SDK, Arduino, Processing |
+| **Main Controller** | -    | PC, OpenCR                         |
 
 ### Dimension
 
@@ -2056,21 +2060,21 @@ Open processing source code file (`open_manipulator_processing` → `Stewart` �
 
 #### Part Lists
 
-|              | Part Name | Quantity | Link
-|---------     |---------- |---------   |
-|**Chassis Parts** |BASE FRAME|1|[Download Link](https://www.thingiverse.com/thing:3069581)|
-|.                 |linear_x_holder|1|[Download Link](https://www.thingiverse.com/thing:3255864)|
-|.                 |linear_z_holder|1|[Download Link](https://www.thingiverse.com/thing:3255864)|
-|.                 |linear_griper_bt|1|[Download Link](https://www.thingiverse.com/thing:3255864)|
-|.                 |linear_y_holder|1|[Download Link](https://www.thingiverse.com/thing:3255864)|
-|.                 |linear_y_holder_mr|1|[Download Link](https://www.thingiverse.com/thing:3255864)|
-|.                 |LINEAR_Y_HOLDER|1|[Download Link](https://www.thingiverse.com/thing:3255864)|
-|.                 |linear_y_guide_holder|1|[Download Link](https://www.thingiverse.com/thing:3255864)|
-|.                 |linear_pully_conv|1|[Download Link](https://www.thingiverse.com/thing:3255864)|
-|.                 |linear_pully_conv_dummy|1|[Download Link](https://www.thingiverse.com/thing:3255864)|
-|.                 |Aluminum Extrusion - 6 series, Base 30|8|[Shop Link](https://us.misumi-ec.com/vona2/detail/110302686450/?HissuCode=HFSLB6-3030-%5b50-1800%2f0.5%5d&searchFlow=results2similartn)|
-|**Actuators**     |Dynamixel XM430-W350-T|3|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2923&GC=GD080101)|
-|**Cables**        |CABLE_3P_240MM|1|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2926&GC=GD0B0105&page=3)|
+|                   | Part Name                              | Quantity | Link                                                                                                                           |
+|:------------------|:---------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------|
+| **Chassis Parts** | BASE FRAME                             | 1|[Download Link](https://www.thingiverse.com/thing:3069581)                                                                              |
+| .                 | linear_x_holder                        | 1|[Download Link](https://www.thingiverse.com/thing:3255864)                                                                              |
+| .                 | linear_z_holder                        | 1|[Download Link](https://www.thingiverse.com/thing:3255864)                                                                              |
+| .                 | linear_griper_bt                       | 1|[Download Link](https://www.thingiverse.com/thing:3255864)                                                                              |
+| .                 | linear_y_holder                        | 1|[Download Link](https://www.thingiverse.com/thing:3255864)                                                                              |
+| .                 | linear_y_holder_mr                     | 1|[Download Link](https://www.thingiverse.com/thing:3255864)                                                                              |
+| .                 | LINEAR_Y_HOLDER                        | 1|[Download Link](https://www.thingiverse.com/thing:3255864)                                                                              |
+| .                 | linear_y_guide_holder                  | 1|[Download Link](https://www.thingiverse.com/thing:3255864)                                                                              |
+| .                 | linear_pully_conv                      | 1|[Download Link](https://www.thingiverse.com/thing:3255864)                                                                              |
+| .                 | linear_pully_conv_dummy                | 1|[Download Link](https://www.thingiverse.com/thing:3255864)                                                                              |
+| .                 | Aluminum Extrusion - 6 series, Base 30 | 8|[Shop Link](https://us.misumi-ec.com/vona2/detail/110302686450/?HissuCode=HFSLB6-3030-%5b50-1800%2f0.5%5d&searchFlow=results2similartn) |
+| **Actuators**     | Dynamixel XM430-W350-T                 | 3|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2923&GC=GD080101)                                                 |
+| **Cables**        | CABLE_3P_240MM                         | 1|[Shop Link](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2926&GC=GD0B0105&page=3)                                          |
 
 For more information, please refer to [BOM](https://docs.google.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit#gid=1200068410).
 
