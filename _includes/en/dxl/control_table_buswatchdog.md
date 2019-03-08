@@ -10,7 +10,7 @@ Communication is defined as all the Instruction Packet in the DYNAMIXEL Protocol
 
 The Bus Watchdog function monitors the communication interval (time) between the controller and DYNAMIXEL when Torque Enable (64) is '1'.
 If the measured communication interval (time) is larger than Bus Watchdog (98), the DYNAMIXEL will stop. Bus Watchdog (98) will be changed to '-1' (Bus Watchdog Error).
-If the Bus Watchdog Error screen appears, the Goal Value (Goal PWM(100), Goal Current(102), Goal Velocity(104), Goal Position(116)) will be changed to read-only-access.
+If the Bus Watchdog Error screen appears, the Goal Value ([Goal PWM(100)], [Goal Current(102)], Goal Velocity(104), Goal Position(116)) will be changed to read-only-access.
 Therefore, when a new value is written to the Goal Value, a Range Error will be returned via the Status packet.
 If the value of Bus Watchdog (98) is changed to '0', Bus Watchdog Error will be cleared.
 

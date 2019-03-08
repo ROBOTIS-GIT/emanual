@@ -1,8 +1,8 @@
 The Dynamixel can protect itself by detecting dangerous situations that could occur during the operation.  
 Each Bit is inclusively processed with the ‘OR’ logic, therefore, multiple options can be generated.  
-For instance, when ‘0x05’ (binary : 00000101) is defined in Shutdown(63), Dynamixel can detect both Input Voltage Error(binary : 00000001) and Overheating Error(binary : 00000100).  
-If those errors are detected, Torque Enable(64) is cleared to ‘0’ and the motor output becomes 0[%].  
-REBOOT is the only method to reset Torque Enable(64) to ‘1’(Torque ON) after the shutdown.  
+For instance, when ‘0x05’ (binary : 00000101) is defined in [Shutdown(63)], Dynamixel can detect both Input Voltage Error(binary : 00000001) and Overheating Error(binary : 00000100).  
+If those errors are detected, [Torque Enable(64)] is cleared to ‘0’ and the motor output becomes 0[%].  
+REBOOT is the only method to reset [Torque Enable(64)] to ‘1’(Torque ON) after the shutdown.  
 The followings are detectable situations.
 
 |  Bit  |              Item               | Description                                                                     |

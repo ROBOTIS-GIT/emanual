@@ -1,9 +1,9 @@
 장치는 동작 중에 발생하는 위험 상황을 감지하여 스스로를 보호할 수 있습니다.  
 각 Bit의 기능은 ‘OR’의 논리로 적용되기 때문에 중복 설정이 가능합니다.  
-즉, Shutdown(63)이 ‘0x05’ (2 진수: 00000101)로 설정되었을 경우, Input Voltage Error(2 진수 : 00000001)와 Overheating Error(2 진수 : 00000100)가 발생하는 것을 모두 감지할 수 있습니다.  
-위험 상황이 감지되면, Torque Enable(64) 값이 ‘0’으로 변경되고 모터 출력은 0 [%]가 됩니다.  
+즉, [Shutdown(63)]이 ‘0x05’ (2 진수: 00000101)로 설정되었을 경우, Input Voltage Error(2 진수 : 00000001)와 Overheating Error(2 진수 : 00000100)가 발생하는 것을 모두 감지할 수 있습니다.  
+위험 상황이 감지되면, [Torque Enable(64)] 값이 ‘0’으로 변경되고 모터 출력은 0 [%]가 됩니다.  
 제어기는 Status Packet의 Error 필드에 Hardware Error Bit(0x80)이 설정되었는지를 확인하거나, Hardware Error Status(70)을 통해서 현재 상태를 확인할 수 있습니다.  
-위험 상황이 감지된 후에는 REBOOT을 하지 않는 한, Torque Enable(64)을 ‘1’(Torque ON)로 설정할 수 없습니다.  
+위험 상황이 감지된 후에는 REBOOT을 하지 않는 한, [Torque Enable(64)]을 ‘1’(Torque ON)로 설정할 수 없습니다.  
 Shutdown(63)에서 감지할 수 있는 위험 상황은 아래 표와 같습니다.
 
 |Bit   | 항목     | 설명     |

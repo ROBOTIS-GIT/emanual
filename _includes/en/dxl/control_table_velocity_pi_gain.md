@@ -8,12 +8,12 @@ These values indicate Gains of Velocity Control Mode. Gains of DYNAMIXEL’s int
 
 Below figure is a block diagram describing the velocity controller in Velocity Control Mode. When the instruction transmitted from the user is received by DYNAMIXEL, it takes following steps until driving the horn.
 1. An Instruction from the user is transmitted via DYNAMIXEL bus, then registered to Goal Velocity(104).
-2. Goal Velocity(104) is converted to desired velocity trajectory by Profile Acceleration(108).
+2. Goal Velocity(104) is converted to desired velocity trajectory by [Profile Acceleration(108)].
 3. The desired velocity trajectory is stored at Velocity Trajectory(136).
 4. PI controller calculates PWM output for the motor based on the desired velocity trajectory.
-5. Goal PWM(100) sets a limit on the calculated PWM output and decides the final PWM value.
+5. [Goal PWM(100)] sets a limit on the calculated PWM output and decides the final PWM value.
 6. The final PWM value is applied to the motor through an Inverter, and the horn of DYNAMIXEL is driven.
-7. Results are stored at Present Position(132), Present Velocity(128), Present PWM(124) and Present Current(126).
+7. Results are stored at [Present Position(132)], [Present Velocity(128)], [Present PWM(124)] and [Present Current(126)].
 
 ![](/assets/images/dxl/velocity_controller_pi_gain.jpg)
 

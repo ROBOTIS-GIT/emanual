@@ -1,4 +1,4 @@
-Users can adjust the Home position by setting Home Offset(20). The Homing Offset value is added to the Present Position(132).
+Users can adjust the Home position by setting Home Offset(20). The Homing Offset value is added to the [Present Position(132)].
 Present Position(132) = Actual Position + Homing Offset(20).
 
 |Unit|Value Range|Description|
