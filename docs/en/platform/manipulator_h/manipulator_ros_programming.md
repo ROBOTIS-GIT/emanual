@@ -1,11 +1,11 @@
 ---
 layout: archive
 lang: en
-ref: manipulator_h_manipulator_ros
+ref: manipulator_h_manipulator_ros_programming
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/manipulator_h/manipulator_ros/
+permalink: /docs/en/platform/manipulator_h/manipulator_ros_programming/
 sidebar:
   title: MANIPULATOR-H
   nav: "manipulator_h"
@@ -14,6 +14,22 @@ sidebar:
 <div style="counter-reset: h1 6"></div>
 
 # [ROBOTIS MANIPULATOR ROS](#robotis-manipulator-ros)
+
+
+## [PC Setup](#pc-setup)
+
+### Install Ubuntu
+
+### Install ROS
+
+
+
+## [Install ROS package](#install-ros-package)
+
+### Downloads
+
+
+
 
 ## [ROBOTIS MANIPULATOR Common](#robotis-manipulator-common)
 
@@ -231,68 +247,6 @@ launch parameters
 `robot_file_path` (string, default: "")  
 &emsp;&emsp; The file `.robot` 's path that includes robot information.
 
-## [How to Execute ROS Package](#how-to-execute-ros-package)
-
-### [How to run ROBOTIS MANIPULATOR](#how-to-run-robotis-manipulator)
-
-#### Overview
-* Bring up the robot in Rviz
-```
-$ roslaunch manipulator_h_bringup robotis_manipulator.launch   
-```
-* Run manipulator manager
-```
-$ sudo bash
-[sudo] password for robotis:   
-# roslaunch manipulator_h_manager manipulator_h_manager.launch   
-```
-
-### [How to operate GUI program](#how-to-operate-gui-program)
-
-#### Overview
-* Run GUI program
-```
-$ rosrun manipulator_h_gui manipulator_h_gui
-```
-
-#### How to operate
-1. Click `set mode`   
-2. Click `go to initial pose`
-
-##### Joint Space Control
-1. Change the values in `joint space control` tab
-2. Click `send` button`
-
-##### Task Space Control
-1. Change the values in `task space control` tab
-2. Click `send` button
-
-### [How to execute Gazebo](#how-to-execute-gazebo)
-
-#### Overview
-How to execute Gazebo simulation
-
-#### Additional installation for Gazebo
-[[Gazebo installation|Gazebo installation]]
-
-#### How to execute Gazebo
-* Load Robotis Manipulator in Gazebo
-```
-$ roslaunch manipulator_h_gazebo manipulator_h_gazebo.launch   
-```
-
-#### [manipulator_manager] for Gazebo
-* Set up the `manipulator_h_manager.launch` for Gazebo simulation      
-```
-<param name="gazebo"                   value="false"     type="bool"/>
-<param name="gazebo_robot_name"        value="robotis_manipulator_h" />
-```
-
-* manipulator_h_manager execution
-
-```
-$ roslaunch manipulator_h_manager manipulator_h_manager.launch
-```
 
 
 [std_msgs/String]: /docs/en/popup/std_msgs_string/

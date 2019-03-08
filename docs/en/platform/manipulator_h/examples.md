@@ -433,15 +433,15 @@ These 4 functions allows the directional keys to control cursor location.
 
   > UpdownGoalValue allows change in goal pose, UpDownJointParameter allows changes to  joint’s parameters (Velocity, Acceleration, Position P, I, D Gain,  Velocity P,  I Gain). UpDownValue combines both functions.
 
-## [SimplePtoP](#simpleptop)
+## [Simple P to P](#simple-p-to-p)
 
 **WARNING** : Product may move fast with this example. When testing this example keep a safe distance while able to cut power off in case of undesired operation.
 {: .notice--warning}
 
-SimplePtoP is the end effector’s move point (from P1 to P2).
+Simple P to P is the end effector’s move point (from P1 to P2).
 
-### How to Use SimplePtoP
-To start SimplePtoP follow the same procedure for ArmMonitor. Then press the Ctrl + F5 keys to run.
+### How to Use Simple P to P
+To start Simple P to P follow the same procedure for ArmMonitor. Then press the Ctrl + F5 keys to run.
 
 ![](/assets/images/platform/manipulator/manipulator_h_059.jpg)
 
@@ -453,9 +453,9 @@ Then press a key to begin P2P Motion. The photo below is the arm in its initial 
 
 ![](/assets/images/platform/manipulator/manipulator_h_061.jpg)
 
-SimplePtoP displays the joints’ pose(rad). In SimplePtoP prssing the 'p' or ‘P' will cause motion to pause. Press the ESC key to end.
+Simple P to P displays the joints’ pose(rad). In Simple P to P prssing the 'p' or ‘P' will cause motion to pause. Press the ESC key to end.
 
-### SimplePtoP Source Description
+### Simple P to P Source Description
 
 ```cpp
 vecd P1, P2;
@@ -528,12 +528,12 @@ MotionPlayer.Set_Time_Period(DEFAULT_Ctrl_TIME_PERIOD);
 
 > Sets time period. For value lesser than 0 then a default value (=8) gets inputted.
 
-## [SimpleIK](#simpleik)
+## [Simple IK](#simple-ik)
 
 **WARNING** : Use of this example may pose safety risks. When testing the example keep a safe distance while able to cut power off in case of undesired operation.
 {: .notice--warning}
 
-- Allows operation of end effector’s pose via position(X, Y, Z) and orientation(Roll, Pitch, Yaw). The keys for SimpleIK are q, w, e, r, t, y and a, s ,d ,f, g, h.
+- Allows operation of end effector’s pose via position(X, Y, Z) and orientation(Roll, Pitch, Yaw). The keys for Simple IK are q, w, e, r, t, y and a, s ,d ,f, g, h.
 
 - EndEffector Pose table
 
@@ -546,12 +546,12 @@ MotionPlayer.Set_Time_Period(DEFAULT_Ctrl_TIME_PERIOD);
 |Orientation Pitch|t|g|
 |Orientation Yaw|y|h|
 
-### How to Use SimpleIK
-To start SimpleIK start a new project just like SimplePtoP. Then press the Ctrl + F5 ekys to begin.
+### How to Use Simple IK
+To start Simple IK start a new project just like SimplePtoP. Then press the Ctrl + F5 ekys to begin.
 
 ![](/assets/images/platform/manipulator/manipulator_h_062.jpg)
 
-In SimpleIK you will be asked for COM port and baud rate numbers. If succeeded you will see a 'Succeed to open USB2Dynamixel' followed by ‘Press any key to move first pose.' Press a key to begin.
+In Simple IK you will be asked for COM port and baud rate numbers. If succeeded you will see a 'Succeed to open USB2Dynamixel' followed by ‘Press any key to move first pose.' Press a key to begin.
 The arm moves to its initial pose as shown below.
 
 ![](/assets/images/platform/manipulator/manipulator_h_052.png)
@@ -562,7 +562,7 @@ This windows pops up after the arms moves to its initial pose. The values printe
 
 ![](/assets/images/platform/manipulator/manipulator_h_064.jpg)
 
-SimpleIK q key control the 3rd value.  
+Simple IK q key control the 3rd value.  
 Q controls the end effector position (X) by increasing delta(5mm)amounts.  
 **Visually verify arm movement every time when changing position.**
 
@@ -571,7 +571,7 @@ Q controls the end effector position (X) by increasing delta(5mm)amounts.
 Press the q and r keys 3 times each. The r key controls the end effector’s roll. The orientation (Roll, Pitch, Yaw) change by (3&pi;/180)rad per keystroke.  
 **Visually verify arm movement every time when changing position.**
 
-### SimpleIK Source Description
+### Simple IK Source Description
 
 ```cpp
 if(temp == 'q')
@@ -713,7 +713,7 @@ vecd DesiredRPY = Algebra::GetEulerRollPitchYaw(DesiredRotation);
 
 > DesiredRotation’s roll, pitch, and yaw.
 
-## [SimpleTorqueFK](#simpletorquefk)
+## [Simple Torque FK](#simple-torque-fk)
 
 Turns the Manipulator joints’ torque on/off. When torque goes off→on Forward Kinematics runs and putputs all joints pose(rad) and end effector’s position and orientation.
 

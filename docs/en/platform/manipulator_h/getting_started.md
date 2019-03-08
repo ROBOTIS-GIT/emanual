@@ -190,25 +190,5 @@ The USB2Dynamixel sends ArmSDK commands to the Manipulator. Connect the USB2Dyna
 |L54-30-S500-R|-180 ~ 180 (deg) → -144180 ~ 144180<br />![](/assets/images/platform/manipulator/manipulator_h_042.jpg)<br />![](/assets/images/platform/manipulator/manipulator_h_043.gif)|
 |L42-20-S300-R|-180 ~ 180 (deg) → -2048 ~ 2048<br />![](/assets/images/platform/manipulator/manipulator_h_044.jpg)<br />![](/assets/images/platform/manipulator/manipulator_h_045.gif)|
 
-## [Manipulator SDK](#manipulator-sdk)
 
-- Preparation Before using Robotis Manipulator SDK.  
-  The following are pre-requisites for the ArmSDK.  
-  Eigen Package([http://eigen.tuxfamily.org], version 3.0.6 or Later)
-
-- Installation Package
-  - Download and unzip Eigen Package.
-  - Start Visual Studio go to “Project Properties -> VC++ Directories -> Include Directories” set Eigen’s source directory.
-
-    ![](/assets/images/platform/manipulator/manipulator_h_046.jpg)
-
-    ![](/assets/images/platform/manipulator/manipulator_h_047.jpg)
-
-    ![](/assets/images/platform/manipulator/manipulator_h_048.jpg)
-
-  - Repeat procedure (i)~(ii) to include the examples and include directories.
-  - Once preparations are complete press the F7 key to compile and build.
-
-
-[http://eigen.tuxfamily.org]: http://eigen.tuxfamily.org
 [http://www.robotis.com/xe/download]: http://www.robotis.com/xe/download

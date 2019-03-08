@@ -234,7 +234,7 @@ main:
       url: /platform/turtlebot3/overview/
     - title: "OpenManipulator"
       titlekr: "오픈매니퓰레이터"
-      url: /platform/openmanipulator/
+      url: /platform/openmanipulator/overview/
   - title: "STEAM"
     titlekr: "교육키트"
     children:
@@ -14959,6 +14959,8 @@ manipulator_h:
       url: /platform/manipulator_h/introduction/#d-h-configuration
     - title: "Home Position"
       url: /platform/manipulator_h/introduction/#home-position
+    - title: "Home Position"
+      url: /platform/manipulator_h/introduction/#mass-property
   - title: "Getting Started"
     url: /platform/manipulator_h/getting_started/#getting-started
     children:
@@ -14972,52 +14974,66 @@ manipulator_h:
       url: /platform/manipulator_h/getting_started/#usb2dynamixel-setting
     - title: "Manipulator Test"
       url: /platform/manipulator_h/getting_started/#manipulator-test
+  - title: "[ArmSDK] Manipulator SDK Programming"
+    url: /platform/manipulator_h/manipulator_sdk_programming/#manipulator-sdk-programming
+    children:
     - title: "Manipulator SDK"
-      url: /platform/manipulator_h/getting_started/#manipulator-sdk
-  - title: "Examples"
+      url: /platform/manipulator_h/manipulator_sdk_programming/#manipulator-sdk
+    - title: "SDK Description"
+      url: /platform/manipulator_h/manipulator_sdk_programming/#sdk-description
+    - title: "SDK Flowchart"
+      url: /platform/manipulator_h/manipulator_sdk_programming/#sdk-flowchart
+  - title: "[ArmSDK] Examples"
     url: /platform/manipulator_h/examples/#examples
     children:
     - title: "Arm Monitor"
       url: /platform/manipulator_h/examples/#armmonitor
     - title: "Simple P to P"
-      url: /platform/manipulator_h/examples/#simpleptop
+      url: /platform/manipulator_h/examples/#simple-p-to-p
     - title: "Simple IK"
-      url: /platform/manipulator_h/examples/#simpleik
+      url: /platform/manipulator_h/examples/#simple-ik
     - title: "Simple Torque & FK"
-      url: /platform/manipulator_h/examples/#simpletorquefk
-  - title: "Manipulator SDK Programming"
-    url: /platform/manipulator_h/manipulator_sdk_programming/#manipulator-sdk-programming
-    children:
-    - title: "SDK Description"
-      url: /platform/manipulator_h/manipulator_sdk_programming/#sdk-description
-    - title: "SDK Flowchart"
-      url: /platform/manipulator_h/manipulator_sdk_programming/#sdk-flowchart
-  - title: "Firmware Recovery"
-    url: /platform/manipulator_h/firmware_recovery/#firmware-recovery
-  - title: "References"
+      url: /platform/manipulator_h/examples/#simple-torque-fk
+  - title: "[ArmSDK] References"
     url: /platform/manipulator_h/references/#references
     children:
-    - title: "ARMSDK Define"
+    - title: "ArmSDK Define"
       url: /platform/manipulator_h/references/#armsdk-define
-    - title: "ARMSDK Math"
+    - title: "ArmSDK Math"
       url: /platform/manipulator_h/references/#armsdk-math
-    - title: "MotionEngine"
+    - title: "Motion Engine"
       url: /platform/manipulator_h/references/#motionengine
     - title: "RobotisLib"
       url: /platform/manipulator_h/references/#robotislib
     - title: "Timer"
       url: /platform/manipulator_h/references/#timer
-    - title: "Mass Property"
-      url: /platform/manipulator_h/references/#mass-property
-  - title: "Manipulator ROS Programming"
-    url: /platform/manipulator_h/manipulator_ros/#robotis-maipulator-ros
+  - title: "[ROS] Manipulator ROS Programming"
+    url: /platform/manipulator_h/manipulator_ros_programming/#robotis-maipulator-ros
     children:
     - title: "ROBOTIS MANIPULATOR Common"
-      url: /platform/manipulator_h/manipulator_ros/#robotis-manipulator-common
+      url: /platform/manipulator_h/manipulator_ros_programming/#pc-setup
     - title: "ROBOTIS MANIPULATOR Module"
-      url: /platform/manipulator_h/manipulator_ros/#robotis-manipulator-module
-    - title: "How to Execute ROS Package"
-      url: /platform/manipulator_h/manipulator_ros/#how-to-execute-ros-package
+      url: /platform/manipulator_h/manipulator_ros_programming/#install-ros-package
+  - title: "[ROS] Example"
+    url: /platform/manipulator_h/ros_example/#ros-example
+    children:
+    - title: "Manipulator manager"
+      url: /platform/manipulator_h/ros_example/#manipulator-manager
+    - title: "GUI program"
+      url: /platform/manipulator_h/ros_example/#gui-program
+    - title: "Simulation"
+      url: /platform/manipulator_h/ros_example/#simulation
+  - title: "[ROS] Reference"
+    url: /platform/manipulator_h/ros_reference/#ros-reference
+    children:
+    - title: "ROS package description"
+      url: /platform/manipulator_h/ros_reference/#ros-package-description
+    - title: "ROS message type"
+      url: /platform/manipulator_h/ros_reference/#ros-message-type
+    - title: "ROS message API"
+      url: /platform/manipulator_h/ros_reference/#ros-message-api
+  - title: "Firmware Recovery"
+    url: /platform/manipulator_h/firmware_recovery/#firmware-recovery
 
 #R+ Task 1.0 sidebar
 rplustask1:

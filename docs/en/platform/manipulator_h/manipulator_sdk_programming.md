@@ -15,6 +15,25 @@ sidebar:
 
 # [Manipulator SDK Programming](#manipulator-sdk-programming)
 
+## [Manipulator SDK](#manipulator-sdk)
+
+- Preparation Before using Robotis Manipulator SDK.  
+  The following are pre-requisites for the ArmSDK.  
+  Eigen Package([http://eigen.tuxfamily.org], version 3.0.6 or Later)
+
+- Installation Package
+  - Download and unzip Eigen Package.
+  - Start Visual Studio go to “Project Properties -> VC++ Directories -> Include Directories” set Eigen’s source directory.
+
+    ![](/assets/images/platform/manipulator/manipulator_h_046.jpg)
+
+    ![](/assets/images/platform/manipulator/manipulator_h_047.jpg)
+
+    ![](/assets/images/platform/manipulator/manipulator_h_048.jpg)
+
+  - Repeat procedure (i)~(ii) to include the examples and include directories.
+  - Once preparations are complete press the F7 key to compile and build.
+
 ## [SDK Description](#sdk-description)
 
 ### RobotInfo
@@ -63,3 +82,5 @@ This is useful when writing separate code.
 ## [SDK Flowchart](#sdk-flowchart)
 
 ![](/assets/images/platform/manipulator/manipulator_h_075.jpg)
+
+[http://eigen.tuxfamily.org]: http://eigen.tuxfamily.org
