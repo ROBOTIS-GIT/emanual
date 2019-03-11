@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/openmanipulator/tool_modification/
 sidebar:
-  title: OpenManipulator
+  title: OpenManipulator RM-X52-TNM
   nav: "openmanipulator"
 ---
 

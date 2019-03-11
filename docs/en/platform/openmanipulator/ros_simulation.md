@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/openmanipulator/ros_simulation/
 sidebar:
-  title: OpenManipulator
+  title: OpenManipulator RM-X52-TNM
   nav: "openmanipulator"
 ---
 
