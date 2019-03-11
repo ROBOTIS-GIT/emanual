@@ -15,63 +15,154 @@ sidebar:
 
 # [ROS example](#ros-example)
 
+{% capture notice_01 %}
+**NOTE**:
+- This instructions has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+- This instructions are supposed to be running on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.
+{% endcapture %}
+<div class="notice--info">{{ notice_01 | markdownify }}</div>
+
+**NOTE**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`+`Alt`+`t`.
+{: .notice--info}
+
 ## [Manipulator manager](#manipulator-maneger)
 
-### Overview
-* Bring up the robot in Rviz
+### Bring up the robot in Rviz
 ```
 $ roslaunch manipulator_h_bringup robotis_manipulator.launch   
 ```
-* Run manipulator manager
+![](/assets/images/platform/manipulator/manipulator_h_rviz.png)
+  
+
+### Run manipulator manager
+* Manipulaotr-H
 ```
 $ sudo bash
 [sudo] password for robotis:   
 # roslaunch manipulator_h_manager manipulator_h_manager.launch   
 ```
 
+* Manipulator-H+
+```
+$ sudo bash
+[sudo] password for robotis:   
+# roslaunch manipulator_h_manager manipulator_h_manager_plus.launch   
+```
+
+If the manipulator manger has been launched successfully, the terminal will show the following message.
+
+```
+SUMMARY
+========
+
+PARAMETERS
+ * /gazebo: False
+ * /gazebo_robot_name: robotis_manipulat...
+ * /init_file_path: /home/user/catkin...
+ * /offset_table: /home/user/catkin...
+ * /robot_file_path: /home/user/catkin...
+ * /rosdistro: kinetic
+ * /rosversion: 1.12.14
+
+NODES
+  /
+    manipulator_h_manager (manipulator_h_manager/manipulator_h_manager)
+
+ROS_MASTER_URI=http://localhost:11311
+
+process[manipulator_h_manager-1]: started with pid [19408]
+[ INFO] [1552279834.246020783]: manager->init
+/dev/ttyUSB0 added. (baudrate: 2000000)
+(/dev/ttyUSB0) [ID:  1] H54P-200-S500-R added. 
+(/dev/ttyUSB0) [ID:  2] H54P-200-S500-R added. 
+(/dev/ttyUSB0) [ID:  3] H54P-100-S500-R added. 
+(/dev/ttyUSB0) [ID:  4] H54P-100-S500-R added. 
+(/dev/ttyUSB0) [ID:  5] H42P-020-S300-R added. 
+(/dev/ttyUSB0) [ID:  6] H42P-020-S300-R added. 
+[ INFO] [1552279834.361381084]: Load offsets...
+```
+{% capture notice_01 %}
+**TIP**:
+- If you can't load Dynamixels, please check your Dynamixels settings using [this page](/docs/en/platform/manipulator_h/getting_started/#prerequisite).
+{% endcapture %}
+<div class="notice--success">{{ notice_01 | markdownify }}</div>
+
 ## [GUI program](#gui-program)
 
-### Overview
-* Run GUI program
+### Run GUI program
+You can use the GUI program to manipulate the Manipulator-H or Manipulator-H+.
+
 ```
 $ rosrun manipulator_h_gui manipulator_h_gui
 ```
 
-### How to operate
-1. Click `set mode`   
-2. Click `go to initial pose`
+![](/assets/images/platform/manipulator/manipulator_h_gui.png)  
 
-### Joint Space Control
-1. Change the values in `joint space control` tab
-2. Click `send` button`
+To control manipulator, first click the `set mode` button.   
 
-### Task Space Control
-1. Change the values in `task space control` tab
-2. Click `send` button
+Set the manipulator to initial pose, click the `go to initial pose` button.   
+
+To check the joint angles of the manipulator, click the `Get current joint values` button. And To check the pose in the task space, click the `Get current pose` button.   
+
+To move the manipulator in the joint space. Enter the joint angles. Then click the `Send Des Joint Val.` button. And, to move the manipulator in the task space. Enter the kinematics pose of the end-effector(tool) in the task space. Then click the `Send Des Pos.` button.  
 
 ## [Simulation](#simulation)
 
-### Overview
-How to execute Gazebo simulation
+{% capture notice_01 %}
+**NOTE**:
+- This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+- This instruction is supposed to be run on PC with ROS packages installed in.
+{% endcapture %}
+<div class="notice--info">{{ notice_01 | markdownify }}</div>
 
-### Additional installation for Gazebo
-[[Gazebo installation|Gazebo installation]]
-
-### How to execute Gazebo
-* Load Robotis Manipulator in Gazebo
+### Launch Gazebo
+Load the manipulator on Gazebo simulator and click on Play `▶` button.
 ```
 $ roslaunch manipulator_h_gazebo manipulator_h_gazebo.launch   
 ```
+![](/assets/images/platform/manipulator/manipulator_h_gazebo.png)  
 
-### [manipulator_manager] for Gazebo
-* Set up the `manipulator_h_manager.launch` for Gazebo simulation      
+### Manipulator manager for Gazebo simulator
+
+* Manipulaotr-H
 ```
-<param name="gazebo"                   value="false"     type="bool"/>
-<param name="gazebo_robot_name"        value="robotis_manipulator_h" />
+$ roslaunch manipulator_h_manager manipulator_h_manager_gazebo.launch 
 ```
 
-* manipulator_h_manager execution
+* Manipulator-H+
+```
+$ roslaunch manipulator_h_manager manipulator_h_manager_gazebo_plus.launch 
+```
+
+If the manipulator manger has been launched successfully, the terminal will show the following message.
 
 ```
-$ roslaunch manipulator_h_manager manipulator_h_manager.launch
+SUMMARY
+========
+
+PARAMETERS
+ * /gazebo: True
+ * /gazebo_robot_name: robotis_manipulat...
+ * /init_file_path: /home/user/catkin...
+ * /offset_table: /home/user/catkin...
+ * /robot_file_path: /home/user/catkin...
+ * /rosdistro: kinetic
+ * /rosversion: 1.12.14
+
+NODES
+  /
+    manipulator_h_manager (manipulator_h_manager/manipulator_h_manager)
+
+ROS_MASTER_URI=http://localhost:11311
+
+process[manipulator_h_manager-1]: started with pid [19408]
+[ INFO] [1552279834.246020783]: manager->init
+/dev/ttyUSB0 added. (baudrate: 2000000)
+(/dev/ttyUSB0) [ID:  1] H54P-200-S500-R added. 
+(/dev/ttyUSB0) [ID:  2] H54P-200-S500-R added. 
+(/dev/ttyUSB0) [ID:  3] H54P-100-S500-R added. 
+(/dev/ttyUSB0) [ID:  4] H54P-100-S500-R added. 
+(/dev/ttyUSB0) [ID:  5] H42P-020-S300-R added. 
+(/dev/ttyUSB0) [ID:  6] H42P-020-S300-R added. 
+[ INFO] [1552279834.361381084]: Load offsets...
 ```

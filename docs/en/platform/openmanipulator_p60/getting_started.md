@@ -1,14 +1,14 @@
 ---
 layout: archive
 lang: en
-ref: manipulator_h_getting_started
+ref: openmanipulator_p60_getting_started
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/manipulator_h/getting_started/
+permalink: /docs/en/platform/openmanipulator_p60/getting_started/
 sidebar:
-  title: MANIPULATOR-H
-  nav: "manipulator_h"
+  title: OpenManipulator RM-P60-RNH
+  nav: "openmanipulator_p60"
 ---
 
 <div style="counter-reset: h1 1"></div>

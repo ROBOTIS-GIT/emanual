@@ -17,10 +17,14 @@ sidebar:
 
 ## [Manipulator SDK](#manipulator-sdk)
 
+- The ArmSDK is based on Window 7 OS and Visual Studio 2010.
+- The ArmSDK trajectory is generated from the MotionPlay class’ instance and utilizes QueryPerformanceCounter. This requires the use of a thread, in which sharing said thread may reach to 100%.  
+  It is highly recommended your PC is at least dual-core-based.
+- The Numerical IK implements Damped Least Square Method to reach target by acquiring each joint’s angle. This allows joints to go from initial position to a point and then return to its initial pose.  
+  This will allow you to perform tests to the Manipulator.     
 - Preparation Before using Robotis Manipulator SDK.  
   The following are pre-requisites for the ArmSDK.  
   Eigen Package([http://eigen.tuxfamily.org], version 3.0.6 or Later)
-
 - Installation Package
   - Download and unzip Eigen Package.
   - Start Visual Studio go to “Project Properties -> VC++ Directories -> Include Directories” set Eigen’s source directory.

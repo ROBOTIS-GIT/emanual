@@ -1,14 +1,14 @@
 ---
 layout: archive
 lang: en
-ref: manipulator_h_ros_reference
+ref: openmanipulator_p60_specification
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/manipulator_h/ros_reference/
+permalink: /docs/en/platform/openmanipulator_p60/specification/
 sidebar:
-  title: MANIPULATOR-H
-  nav: "manipulator_h"
+  title: OpenManipulator RM-P60-RNH
+  nav: "openmanipulator_p60"
 ---
 
 <div style="counter-reset: h1 7"></div>

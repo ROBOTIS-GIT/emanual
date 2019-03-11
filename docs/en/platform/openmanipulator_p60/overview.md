@@ -1,21 +1,21 @@
 ---
 layout: archive
 lang: en
-ref: manipulator_h_introduction
+ref: openmanipulator_p60_overview
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/manipulator_h/introduction/
+permalink: /docs/en/platform/openmanipulator_p60/overview/
 sidebar:
-  title: MANIPULATOR-H
-  nav: "manipulator_h"
+  title: OpenManipulator RM-P60-RNH
+  nav: "openmanipulator_p60"
 ---
 
 ![](/assets/images/platform/manipulator/manipulator_product.gif)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/VHpNbKvo0AE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-# [Introduction](#introduction)
+# [Overview](#overview)
 
 - This manual applies to the Dynamixel PRO or Dynamixel PRO+ based Robotis Manipulator.
 - The Dynamixel PRO based Robotis Manipulator is called **Manipulator-H** and the Dynamixel PRO+ based Robotis Manipulator is called **Manipulator-H+**.

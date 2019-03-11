@@ -14948,6 +14948,80 @@ openmanipulator:
       - title: "OpenManipulator Linear"
         url: /platform/openmanipulator/friends/#openmanipulator-linear
 
+#OpenManipulator_P60
+openmanipulator_p60:
+  - title: "Overview"
+    url: /platform/openmanipulator_p60/overview/#overview
+    children:
+      - title: "OpenSoftware"
+        url: /platform/openmanipulator_p60/overview/#opensoftware
+      - title: "Dynamixel Examples"
+        url: /platform/openmanipulator_p60/overview/#dynamixel-examples
+      - title: "Introduction video"
+        url: /platform/openmanipulator_p60/overview/#introduction-video
+  - title: "Specification"
+    url: /platform/openmanipulator_p60/specification/#specification
+    children:
+      - title: "Specifications"
+        url: /platform/openmanipulator_p60/specification/#specifications
+      - title: "Dimension"
+        url: /platform/openmanipulator_p60/specification/#dimension
+      - title: "D-H Configuration"
+        url: /platform/openmanipulator_p60/specification/#d-h-configuration
+      - title: "Mass Property"
+        url: /platform/openmanipulator_p60/specification/#mass-property
+  - title: "Getting Started"
+    url: /platform/openmanipulator_p60/getting_started/#getting-started
+    children:
+      - title: "Safety Information"
+        url: /platform/openmanipulator_p60/getting_started/#safety-information
+      - title: "Package Contents"
+        url: /platform/openmanipulator_p60/getting_started/#package-contents
+      - title: "Setup"
+        url: /platform/openmanipulator_p60/getting_started/#setup
+      - title: "Home Position"
+        url: /platform/openmanipulator_p60/getting_started/#home-position
+  - title: "[ROS] Setup"
+    url: /platform/openmanipulator_p60/ros_setup/#ros-setup
+    children:
+      - title: "Install Ubuntu on PC"
+        url: /platform/openmanipulator_p60/ros_setup/#install-ubuntu-on-pc
+      - title: "Install ROS on PC"
+        url: /platform/openmanipulator_p60/ros_setup/#install-ros-on-pc
+      - title: "Install ROS Packages"
+        url: /platform/openmanipulator_p60/ros_setup/#install-ros-packages
+  - title: "[ROS] Manipulator Manager"
+    url: /platform/openmanipulator_p60/ros_manipulator_manager/#ros-manipulator-manager
+    children:
+      - title: "Launch Manager"
+        url: /platform/openmanipulator_p60/ros_manipulator_manager/#launch-manager
+      - title: "Check Setting"
+        url: /platform/openmanipulator_p60/ros_manipulator_manager/#check-setting
+        children:
+          - title: "RViz"
+            url: /platform/openmanipulator_p60/ros_manipulator_manager/#rviz
+      - title: "Message List"
+        url: /platform/openmanipulator_p60/ros_manipulator_manager/#message-list
+        children:
+          - title: "Topic"
+            url: /platform/openmanipulator_p60/ros_manipulator_manager/#topic
+          - title: "Service"
+            url: /platform/openmanipulator_p60/ros_manipulator_manager/#service
+  - title: "[ROS] Operation"
+    url: /platform/openmanipulator_p60/ros_operation/#ros-operation
+    children:
+      - title: "GUI Program"
+        url: /platform/openmanipulator_p60/ros_operation/#gui-program
+      - title: "MoveIt!"
+        url: /platform/openmanipulator_p60/ros_operation/#moveit
+  - title: "[ROS] Simulation"
+    url: /platform/openmanipulator_p60/ros_simulation/#ros-simulation
+    children:
+      - title: "Launch gazebo"
+        url: /platform/openmanipulator_p60/ros_simulation/#launch-gazebo
+      - title: "Manager for gazebo"
+        url: /platform/openmanipulator_p60/ros_simulation/#manager-for-gazebo
+
 #Manipulator-H
 manipulator_h:
   - title: "Introduction"

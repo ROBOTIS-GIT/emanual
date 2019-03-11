@@ -1,14 +1,14 @@
 ---
 layout: archive
 lang: en
-ref: manipulator_h_manipulator_ros_programming
+ref: openmanipulator_p60_ros_simulation
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/manipulator_h/manipulator_ros_programming/
+permalink: /docs/en/platform/openmanipulator_p60/ros_simulation/
 sidebar:
-  title: MANIPULATOR-H
-  nav: "manipulator_h"
+  title: OpenManipulator RM-P60-RNH
+  nav: "openmanipulator_p60"
 ---
 
 <div style="counter-reset: h1 5"></div>
