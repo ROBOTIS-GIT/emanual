@@ -14,63 +14,47 @@ sidebar:
 
 <div style="counter-reset: h1 5"></div>
 
-# [ROBOTIS manipulator ROS](#robotis-manipulator-ros)
+# [[ROS] Operation](#ros-operation)
 
-- The ROBOTIS manipulator ROS program is based on **Linux Ununtu 16.04** OS and **ROS Kenitic Kame**.
-- Both **Manipulator-H** and **Manipulator-H+** support the ROBOTIS manipulator ROS program.
-
-## [PC Setup](#pc-setup)
-
-### [Install Ubuntu on PC](#install-ubuntu-on-pc)
-
-Download and install `Ubuntu 16.04` on your PC.
-
-- [Download link](https://www.ubuntu.com/download/alternative-downloads)
-
-If you need more help with installing Ubuntu, check out the step-by-step guide from the link below.
-
-- [Install ubuntu desktop](https://www.ubuntu.com/download/desktop/install-ubuntu-desktop)
-
-### [Install ROS on PC](#install-ros-on-pc)
-
-![](/assets/images/platform/turtlebot3/logo_ros.png)
-
-The following script will allow you to simplify the ROS installation procedure. Run the following command in a terminal window. The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. The shortcut key to open a terminal is `Ctrl`+`Alt`+`t`. After installing ROS, please reboot PC.
-
-``` bash
-$ sudo apt-get update
-$ sudo apt-get upgrade
-$ wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic.sh && chmod 755 ./install_ros_kinetic.sh && bash ./install_ros_kinetic.sh
-```
-
-**NOTE**: In order to check which packages are installed, please check this link out. [install_ros_kinetic.sh](https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic.sh)
-{: .notice--info}
-
-If you prefer manual installation, please following the link below.
-
-- [Manual installation of ROS Kinetic](http://wiki.ros.org/kinetic/Installation/Ubuntu)
-
-## [Install ROS package](#install-ros-package)
-
-Install dependent packages for ROBOTIS manipulator ROS program. Run the following command in a terminal window.
+{% capture notice_01 %}
+**NOTE**:
+- This instructions has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+- This instructions are supposed to be running on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.
+- Make sure to run the [Open Manipulator Manager](/docs/en/platform/openmanipulator_p60/ros_manipulator_manager/#ros-manipulator-manager) instructions before running the instruction below.
+{% endcapture %}
+<div class="notice--info">{{ notice_01 | markdownify }}</div>
 
 **NOTE**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`+`Alt`+`t`.
 {: .notice--info}
 
-``` bash
-$ sudo apt-get install ros-kinetic-gazebo*
+## [GUI Program](#gui-program)
+
+You can use the GUI program to manipulate OpenManipulator RM-P60-RNH. This program shows the status of and allows users to control OpenManipulator RM-P60-RNH.
+
+```
+$ rosrun manipulator_h_gui manipulator_h_gui
 ```
 
-``` bash
-$ cd ~/catkin_ws/src/
-$ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK.git
-$ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-Framework.git
-$ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-Framework-msgs.git
-$ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-MANIPULATOR-H.git
-$ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-Math.git
-$ cd ~/catkin_ws && catkin_make
-```
+![](/assets/images/platform/manipulator_h/manipulator_h_gui.png)  
 
-If the catkin_make command has been completed without any errors, all the preparations for using Manipulator-H or Manipulator-H+ are done.
+To control manipulator, first click the `set mode` button.   
+
+Set the manipulator to initial pose, click the `go to initial pose` button.   
+
+To check the joint angles of the manipulator, click the `Get current joint values` button. And To check the pose in the task space, click the `Get current pose` button.   
+
+To move the manipulator in the joint space. Enter the joint angles. Then click the `Send Des Joint Val.` button. And, to move the manipulator in the task space. Enter the kinematics pose of the end-effector(tool) in the task space. Then click the `Send Des Pos.` button.  
+
+## [MoveIt!](#moveit)
+**Comming Soon!**
 
 
+
+[std_msgs/String]: /docs/en/popup/std_msgs_string/
+[std_msgs/Float64]: /docs/en/popup/std_msgs_float64_msg/
+[geometry_msgs/Pose]: /docs/en/popup/geometry_msgs_Pose_msg/
+[robotis_controller_msgs/StatusMsg]: /docs/en/popup/StatusMsg.msg/
+[manipulator_manipulation_module_msgs/JointPose]: /docs/en/popup/JointPose.msg/
+[manipulator_manipulation_module_msgs/KinematicsPose]: /docs/en/popup/KinematicsPose.msg/
+[manipulator_manipulation_module_msgs/GetJointPose]: /docs/en/popup/GetJointPose.srv/
+[manipulator_manipulation_module_msgs/GetKinematicsPose]: /docs/en/popup/GetKinematicsPose.srv/

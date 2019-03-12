@@ -247,4 +247,4 @@ launch parameters
 [manipulator_manipulation_module_msgs/GetJointPose]: /docs/en/popup/GetJointPose.srv/
 [manipulator_manipulation_module_msgs/GetKinematicsPose]: /docs/en/popup/GetKinematicsPose.srv/
 [Creating new robot manager]: /docs/en/software/robotis_framework_packages/tutorials/#creating-new-robot-manager
-[manipulator_manager]: /docs/en/platform/manipulator_h/manipulator_ros/#manipulator-manager
+[manipulator_manager]: /docs/en//platform/manipulator_h/ros_example/#manipulator-manager

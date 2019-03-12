@@ -264,8 +264,15 @@ When the camera recognizes the AR marker, the pose of the AR marker is shown on 
 
 ## [Master Slave](#master-slave)
 
-**Coming Soon**
+In this example, if the user is holding the master OpenManipulator, the slave OpenManipulator moves like master robot. Recording mode allows you to save the trajectory as you move the master OpenManipulator and play it back to the slave OpenManipulator.
 
+### Video
+
+### Setup of the OpenManipulator
+
+### Install ROS package
+
+### Execution
 
 ## [Mobile Manipulation](#mobile-manipulation)
 

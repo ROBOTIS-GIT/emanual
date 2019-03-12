@@ -14966,6 +14966,8 @@ openmanipulator_p60:
         url: /platform/openmanipulator_p60/specification/#specifications
       - title: "Dimension"
         url: /platform/openmanipulator_p60/specification/#dimension
+      - title: "Home Position"
+        url: /platform/openmanipulator_p60/specification/#home-position
       - title: "D-H Configuration"
         url: /platform/openmanipulator_p60/specification/#d-h-configuration
       - title: "Mass Property"
@@ -14979,8 +14981,6 @@ openmanipulator_p60:
         url: /platform/openmanipulator_p60/getting_started/#package-contents
       - title: "Setup"
         url: /platform/openmanipulator_p60/getting_started/#setup
-      - title: "Home Position"
-        url: /platform/openmanipulator_p60/getting_started/#home-position
   - title: "[ROS] Setup"
     url: /platform/openmanipulator_p60/ros_setup/#ros-setup
     children:
@@ -15017,10 +15017,10 @@ openmanipulator_p60:
   - title: "[ROS] Simulation"
     url: /platform/openmanipulator_p60/ros_simulation/#ros-simulation
     children:
-      - title: "Launch gazebo"
-        url: /platform/openmanipulator_p60/ros_simulation/#launch-gazebo
       - title: "Manager for gazebo"
         url: /platform/openmanipulator_p60/ros_simulation/#manager-for-gazebo
+      - title: "Launch gazebo"
+        url: /platform/openmanipulator_p60/ros_simulation/#launch-gazebo
 
 #Manipulator-H
 manipulator_h:

@@ -11,65 +11,63 @@ sidebar:
   nav: "openmanipulator_p60"
 ---
 
-<div style="counter-reset: h1 5"></div>
+<div style="counter-reset: h1 6"></div>
 
-# [ROBOTIS manipulator ROS](#robotis-manipulator-ros)
+# [[ROS] Simulation](#ros-simulation)
 
-- The ROBOTIS manipulator ROS program is based on **Linux Ununtu 16.04** OS and **ROS Kenitic Kame**.
-- Both **Manipulator-H** and **Manipulator-H+** support the ROBOTIS manipulator ROS program.
-
-## [PC Setup](#pc-setup)
-
-### [Install Ubuntu on PC](#install-ubuntu-on-pc)
-
-Download and install `Ubuntu 16.04` on your PC.
-
-- [Download link](https://www.ubuntu.com/download/alternative-downloads)
-
-If you need more help with installing Ubuntu, check out the step-by-step guide from the link below.
-
-- [Install ubuntu desktop](https://www.ubuntu.com/download/desktop/install-ubuntu-desktop)
-
-### [Install ROS on PC](#install-ros-on-pc)
-
-![](/assets/images/platform/turtlebot3/logo_ros.png)
-
-The following script will allow you to simplify the ROS installation procedure. Run the following command in a terminal window. The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. The shortcut key to open a terminal is `Ctrl`+`Alt`+`t`. After installing ROS, please reboot PC.
-
-``` bash
-$ sudo apt-get update
-$ sudo apt-get upgrade
-$ wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic.sh && chmod 755 ./install_ros_kinetic.sh && bash ./install_ros_kinetic.sh
-```
-
-**NOTE**: In order to check which packages are installed, please check this link out. [install_ros_kinetic.sh](https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic.sh)
-{: .notice--info}
-
-If you prefer manual installation, please following the link below.
-
-- [Manual installation of ROS Kinetic](http://wiki.ros.org/kinetic/Installation/Ubuntu)
-
-## [Install ROS package](#install-ros-package)
-
-Install dependent packages for ROBOTIS manipulator ROS program. Run the following command in a terminal window.
+{% capture notice_01 %}
+**NOTE**:
+- This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+- This instruction is supposed to be run on PC with ROS packages installed in.
+{% endcapture %}
+<div class="notice--info">{{ notice_01 | markdownify }}</div>
 
 **NOTE**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`+`Alt`+`t`.
 {: .notice--info}
 
-``` bash
-$ sudo apt-get install ros-kinetic-gazebo*
+## [Manager for gazebo](#manager-for-gazebo)
+
+```
+$ roslaunch manipulator_h_manager open_manipulator_p60_manager_gazebo.launch
 ```
 
-``` bash
-$ cd ~/catkin_ws/src/
-$ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK.git
-$ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-Framework.git
-$ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-Framework-msgs.git
-$ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-MANIPULATOR-H.git
-$ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-Math.git
-$ cd ~/catkin_ws && catkin_make
+If the manipulator manger has been launched successfully, the terminal will show the following message.
+
+```
+SUMMARY
+========
+
+PARAMETERS
+ * /gazebo: True
+ * /gazebo_robot_name: robotis_manipulat...
+ * /init_file_path: /home/user/catkin...
+ * /offset_table: /home/user/catkin...
+ * /robot_file_path: /home/user/catkin...
+ * /rosdistro: kinetic
+ * /rosversion: 1.12.14
+
+NODES
+  /
+    manipulator_h_manager (manipulator_h_manager/manipulator_h_manager)
+
+ROS_MASTER_URI=http://localhost:11311
+
+process[manipulator_h_manager-1]: started with pid [19408]
+[ INFO] [1552279834.246020783]: manager->init
+/dev/ttyUSB0 added. (baudrate: 2000000)
+(/dev/ttyUSB0) [ID:  1] H54P-200-S500-R added. 
+(/dev/ttyUSB0) [ID:  2] H54P-200-S500-R added. 
+(/dev/ttyUSB0) [ID:  3] H54P-100-S500-R added. 
+(/dev/ttyUSB0) [ID:  4] H54P-100-S500-R added. 
+(/dev/ttyUSB0) [ID:  5] H42P-020-S300-R added. 
+(/dev/ttyUSB0) [ID:  6] H42P-020-S300-R added. 
+[ INFO] [1552279834.361381084]: Load offsets...
 ```
 
-If the catkin_make command has been completed without any errors, all the preparations for using Manipulator-H or Manipulator-H+ are done.
+## [Launch gazebo](#launch-gazebo)
 
-
+Load the manipulator on Gazebo simulator and click on Play `▶` button.
+```
+$ roslaunch manipulator_h_gazebo open_manipulator_p60_gazebo.launch   
+```
+![](/assets/images/platform/openmanipulator_p60/gazebo.png)  

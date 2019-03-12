@@ -25,28 +25,20 @@ sidebar:
 **NOTE**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`+`Alt`+`t`.
 {: .notice--info}
 
-## [Manipulator manager](#manipulator-maneger)
+## [Manipulator manager](#manipulator-manager)
 
 ### Bring up the robot in Rviz
 ```
 $ roslaunch manipulator_h_bringup robotis_manipulator.launch   
 ```
-![](/assets/images/platform/manipulator/manipulator_h_rviz.png)
+![](/assets/images/platform/manipulator_h/manipulator_h_rviz.png)
   
 
 ### Run manipulator manager
-* Manipulaotr-H
 ```
 $ sudo bash
 [sudo] password for robotis:   
 # roslaunch manipulator_h_manager manipulator_h_manager.launch   
-```
-
-* Manipulator-H+
-```
-$ sudo bash
-[sudo] password for robotis:   
-# roslaunch manipulator_h_manager manipulator_h_manager_plus.launch   
 ```
 
 If the manipulator manger has been launched successfully, the terminal will show the following message.
@@ -72,13 +64,13 @@ ROS_MASTER_URI=http://localhost:11311
 
 process[manipulator_h_manager-1]: started with pid [19408]
 [ INFO] [1552279834.246020783]: manager->init
-/dev/ttyUSB0 added. (baudrate: 2000000)
-(/dev/ttyUSB0) [ID:  1] H54P-200-S500-R added. 
-(/dev/ttyUSB0) [ID:  2] H54P-200-S500-R added. 
-(/dev/ttyUSB0) [ID:  3] H54P-100-S500-R added. 
-(/dev/ttyUSB0) [ID:  4] H54P-100-S500-R added. 
-(/dev/ttyUSB0) [ID:  5] H42P-020-S300-R added. 
-(/dev/ttyUSB0) [ID:  6] H42P-020-S300-R added. 
+/dev/ttyUSB0 added. (baudrate: 1000000)
+(/dev/ttyUSB0) [ID:  1] H54-200-S500-R added. 
+(/dev/ttyUSB0) [ID:  2] H54-200-S500-R added. 
+(/dev/ttyUSB0) [ID:  3] H54-100-S500-R added. 
+(/dev/ttyUSB0) [ID:  4] H54-100-S500-R added. 
+(/dev/ttyUSB0) [ID:  5] H42-20-S300-R added. 
+(/dev/ttyUSB0) [ID:  6] H42-20-S300-R added. 
 [ INFO] [1552279834.361381084]: Load offsets...
 ```
 {% capture notice_01 %}
@@ -90,13 +82,13 @@ process[manipulator_h_manager-1]: started with pid [19408]
 ## [GUI program](#gui-program)
 
 ### Run GUI program
-You can use the GUI program to manipulate the Manipulator-H or Manipulator-H+.
+You can use the GUI program to manipulate the Manipulator-H.
 
 ```
 $ rosrun manipulator_h_gui manipulator_h_gui
 ```
 
-![](/assets/images/platform/manipulator/manipulator_h_gui.png)  
+![](/assets/images/platform/manipulator_h/manipulator_h_gui.png)  
 
 To control manipulator, first click the `set mode` button.   
 
@@ -120,18 +112,12 @@ Load the manipulator on Gazebo simulator and click on Play `▶` button.
 ```
 $ roslaunch manipulator_h_gazebo manipulator_h_gazebo.launch   
 ```
-![](/assets/images/platform/manipulator/manipulator_h_gazebo.png)  
+![](/assets/images/platform/manipulator_h/manipulator_h_gazebo.png)  
 
 ### Manipulator manager for Gazebo simulator
 
-* Manipulaotr-H
 ```
 $ roslaunch manipulator_h_manager manipulator_h_manager_gazebo.launch 
-```
-
-* Manipulator-H+
-```
-$ roslaunch manipulator_h_manager manipulator_h_manager_gazebo_plus.launch 
 ```
 
 If the manipulator manger has been launched successfully, the terminal will show the following message.
@@ -157,12 +143,12 @@ ROS_MASTER_URI=http://localhost:11311
 
 process[manipulator_h_manager-1]: started with pid [19408]
 [ INFO] [1552279834.246020783]: manager->init
-/dev/ttyUSB0 added. (baudrate: 2000000)
-(/dev/ttyUSB0) [ID:  1] H54P-200-S500-R added. 
-(/dev/ttyUSB0) [ID:  2] H54P-200-S500-R added. 
-(/dev/ttyUSB0) [ID:  3] H54P-100-S500-R added. 
-(/dev/ttyUSB0) [ID:  4] H54P-100-S500-R added. 
-(/dev/ttyUSB0) [ID:  5] H42P-020-S300-R added. 
-(/dev/ttyUSB0) [ID:  6] H42P-020-S300-R added. 
+/dev/ttyUSB0 added. (baudrate: 1000000)
+(/dev/ttyUSB0) [ID:  1] H54-200-S500-R added. 
+(/dev/ttyUSB0) [ID:  2] H54-200-S500-R added. 
+(/dev/ttyUSB0) [ID:  3] H54-100-S500-R added. 
+(/dev/ttyUSB0) [ID:  4] H54-100-S500-R added. 
+(/dev/ttyUSB0) [ID:  5] H42-20-S300-R added. 
+(/dev/ttyUSB0) [ID:  6] H42-20-S300-R added. 
 [ INFO] [1552279834.361381084]: Load offsets...
 ```

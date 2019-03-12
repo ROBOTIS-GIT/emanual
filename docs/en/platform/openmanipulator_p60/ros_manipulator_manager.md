@@ -11,65 +11,110 @@ sidebar:
   nav: "openmanipulator_p60"
 ---
 
-<div style="counter-reset: h1 5"></div>
+<div style="counter-reset: h1 4"></div>
 
-# [ROBOTIS manipulator ROS](#robotis-manipulator-ros)
+# [[ROS] Manipulator Manager](#ros-manipulator-manager)
 
-- The ROBOTIS manipulator ROS program is based on **Linux Ununtu 16.04** OS and **ROS Kenitic Kame**.
-- Both **Manipulator-H** and **Manipulator-H+** support the ROBOTIS manipulator ROS program.
+{% capture notice_01 %}
+**NOTE**:
+- This instructions has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
+- This instructions are supposed to be running on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.
+{% endcapture %}
+<div class="notice--info">{{ notice_01 | markdownify }}</div>
 
-## [PC Setup](#pc-setup)
-
-### [Install Ubuntu on PC](#install-ubuntu-on-pc)
-
-Download and install `Ubuntu 16.04` on your PC.
-
-- [Download link](https://www.ubuntu.com/download/alternative-downloads)
-
-If you need more help with installing Ubuntu, check out the step-by-step guide from the link below.
-
-- [Install ubuntu desktop](https://www.ubuntu.com/download/desktop/install-ubuntu-desktop)
-
-### [Install ROS on PC](#install-ros-on-pc)
-
-![](/assets/images/platform/turtlebot3/logo_ros.png)
-
-The following script will allow you to simplify the ROS installation procedure. Run the following command in a terminal window. The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. The shortcut key to open a terminal is `Ctrl`+`Alt`+`t`. After installing ROS, please reboot PC.
-
-``` bash
-$ sudo apt-get update
-$ sudo apt-get upgrade
-$ wget https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic.sh && chmod 755 ./install_ros_kinetic.sh && bash ./install_ros_kinetic.sh
-```
-
-**NOTE**: In order to check which packages are installed, please check this link out. [install_ros_kinetic.sh](https://raw.githubusercontent.com/ROBOTIS-GIT/robotis_tools/master/install_ros_kinetic.sh)
-{: .notice--info}
-
-If you prefer manual installation, please following the link below.
-
-- [Manual installation of ROS Kinetic](http://wiki.ros.org/kinetic/Installation/Ubuntu)
-
-## [Install ROS package](#install-ros-package)
-
-Install dependent packages for ROBOTIS manipulator ROS program. Run the following command in a terminal window.
+## [Launch Manager](#launch-manager)
 
 **NOTE**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`+`Alt`+`t`.
 {: .notice--info}
 
-``` bash
-$ sudo apt-get install ros-kinetic-gazebo*
+```
+$ sudo bash
+[sudo] password for robotis:   
+# roslaunch manipulator_h_manager open_manipulator_p60_manager.launch   
 ```
 
-``` bash
-$ cd ~/catkin_ws/src/
-$ git clone https://github.com/ROBOTIS-GIT/DynamixelSDK.git
-$ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-Framework.git
-$ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-Framework-msgs.git
-$ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-MANIPULATOR-H.git
-$ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-Math.git
-$ cd ~/catkin_ws && catkin_make
+If the manipulator manger has been launched successfully, the terminal will show the following message.
+
+```
+SUMMARY
+========
+
+PARAMETERS
+ * /gazebo: False
+ * /gazebo_robot_name: robotis_manipulat...
+ * /init_file_path: /home/user/catkin...
+ * /offset_table: /home/user/catkin...
+ * /robot_file_path: /home/user/catkin...
+ * /rosdistro: kinetic
+ * /rosversion: 1.12.14
+
+NODES
+  /
+    manipulator_h_manager (manipulator_h_manager/manipulator_h_manager)
+
+ROS_MASTER_URI=http://localhost:11311
+
+process[manipulator_h_manager-1]: started with pid [19408]
+[ INFO] [1552279834.246020783]: manager->init
+/dev/ttyUSB0 added. (baudrate: 2000000)
+(/dev/ttyUSB0) [ID:  1] H54P-200-S500-R added. 
+(/dev/ttyUSB0) [ID:  2] H54P-200-S500-R added. 
+(/dev/ttyUSB0) [ID:  3] H54P-100-S500-R added. 
+(/dev/ttyUSB0) [ID:  4] H54P-100-S500-R added. 
+(/dev/ttyUSB0) [ID:  5] H42P-020-S300-R added. 
+(/dev/ttyUSB0) [ID:  6] H42P-020-S300-R added. 
+[ INFO] [1552279834.361381084]: Load offsets...
 ```
 
-If the catkin_make command has been completed without any errors, all the preparations for using Manipulator-H or Manipulator-H+ are done.
+## [Check Setting](#check-setting)
+### [RViz](#rviz)
+```
+$ roslaunch manipulator_h_bringup robotis_manipulator.launch   
+```
+![](/assets/images/platform/openmanipulator_p60/rviz.png)
+  
+## [Message List](#message-list)
+### [Topic](#topic)
+
+#### ROS Message Type
+* JointPose.msg   
+  * `name` : target joint name ([std_msgs/String]{: .popup})    
+  * `value` : target joint value ([std_msgs/Float64]{: .popup})    
+* KinematicsPose.msg    
+  * `name` : target kinematics group ([std_msgs/String]{: .popup})    
+  * `pose` : target Pose ([geometry_msgs/Pose]{: .popup})   
+
+#### Subscribed Topics
+`/robotis/base/ini_pose_msg` ([std_msgs/String]{: .popup})    
+&emsp;&emsp; Message for initial pose
+
+`/robotis/base/set_mode_msg` ([std_msgs/String]{: .popup})    
+&emsp;&emsp; Message for set mode
+
+`/robotis/base/joint_pose_msg` ([manipulator_manipulation_module_msgs/JointPose]{: .popup})   
+&emsp;&emsp; Message for joint space control
+
+`/robotis/base/kinematics_pose_msg` ([manipulator_manipulation_module_msgs/KinematicsPose]{: .popup})   
+&emsp;&emsp; Message for task space control
+
+#### Published Topics
+`/robotis/status`([robotis_controller_msgs/StatusMsg]{: .popup})    
+&emsp;&emsp; Message for current state
 
 
+### [Service](#service)
+
+#### ROS Service Type   
+* GetJointPose.srv   
+  * Request : `joint_name` : joint name ([std_msgs/String]{: .popup})   
+  * Response : `joint_value` : joint value ([std_msgs/Float64]{: .popup})   
+* GetKinematicsPose.srv     
+  * Request : `group_name` : kinematics group ([std_msgs/String]{: .popup})   
+  * Response : `group_pose` : kinematics pose ([geometry_msgs/Pose]{: .popup})   
+
+#### Services
+`/robotis/base/get_joint_pose` ([manipulator_manipulation_module_msgs/GetJointPose]{: .popup})   
+&emsp;&emsp; Service to read current joint value
+
+`/robotis/base/get_kinematics_pose` ([manipulator_manipulation_module_msgs/GetKinematicsPose]{: .popup})   
+&emsp;&emsp; Service to read current end effector's pose

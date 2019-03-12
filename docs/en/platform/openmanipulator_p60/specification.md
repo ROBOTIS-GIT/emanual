@@ -11,240 +11,154 @@ sidebar:
   nav: "openmanipulator_p60"
 ---
 
-<div style="counter-reset: h1 7"></div>
+<div style="counter-reset: h1 1"></div>
 
-# [ROS Reference](#ros-reference)
+# [Specification](#specification)
 
-## [ROS package description](#ros-package-description)
+## [Specifications](#specifications)
 
-### manipulator_h_base_module
-This package describes basic function to control ROBOTIS MANIPULATOR-H. This module is based on position control.
-
-### manipulator_h_base_module_msgs
-This package includes ROS messages and services for manipulator_h_base_module_msgs.
-
-### manipulator_h_bringup   
-This package includes launch file to describe robotis in Rviz.     
-`launch` : launch file to bring up the robot in Rviz
-
-### robotis_manipulator_description   
-This package includes URDF model of ROBOTIS MANIPULATOR-H.
-Additionally, we provide full kinematics and dynamics information of each link.     
-`doc` : document for robotis manipulator joint & link information   
-`launch` : launch file to confirm the urdf model   
-`meshes` : STL files of each link   
-`urdf` : urdf files to create robot model   
-
-### robotis_manipulator_gazebo
-This package provides GAZEBO simulation environment for ROBOTIS MANIPULATOR-H.
-We provides two controllers such as position and effort controllers.     
-`config` : yaml files of gazebo simulation controller   
-`launch` : launch files to execute gazebo simulation   
-`worlds` : world file for gazebo simulation
-
-### robotis_manipulator_gui
-This package provides simple GUI to control ROBOTIS MANIPULATOR-H.
-This GUI is connected to manipulator_h_base_module.     
-GUI program using `qt creater`
-
-### robotis_manipulator_kinematics_dynamics
-This packages provides library of kinematics and dynamics information for ROBOTIS MANIPULATOR-H.
-Additionally, there are some function to calculate kinematics and dynamics.
-
-### robotis_manipulator_manager
-This package describes robot manager to execute manipulator_h_base_module.
+|Item|OpenManipulator RM-P60-RNH|
+|:---:|:---:|
+|DOF|6|
+|Payload|3 kg|
+|Reach|645 mm|
+|Repeatability|±0.05 mm|
+|Weight|5 kg|
+|Operating voltage|24 V|
+|Resolution|Joint 1 : -&pi;(rad) ~ &pi;(rad) , -501,923 ~ 501,923 (pulse)<br />Joint 2 : -&pi;(rad) ~ &pi;(rad) , -501,923 ~ 501,923 (pulse)<br />Joint 3 : -&pi;(rad) ~ &pi;(rad) , -501,923 ~ 501,923 (pulse)<br />Joint 4 : -&pi;(rad) ~ &pi;(rad) , -501,923 ~ 501,923 (pulse)<br />Joint 5 : -&pi;(rad) ~ &pi;(rad) , -303,750 ~ 303,750 (pulse)<br />Joint 6 : -&pi;(rad) ~ &pi;(rad) , -303,750 ~ 303,750 (pulse)|
+|Dynamixel Pro<br />Model Name|Joint 1, 2 : H54P-200-S500-R (200W)<br />Joint 3, 4 : H54P-100-S500-R (100W)<br />Joint 5, 6 : H42P-020-S300-R (20W)|
+|Operating Range|Joint 1 : -&pi;(rad) ~ &pi;(rad)<br />Joint 2 : -&pi;/2(rad) ~ &pi;/2(rad)<br />Joint 3 : -&pi;/2(rad) ~ 3&pi;/4(rad)<br />Joint 4 : -&pi;(rad) ~ &pi;(rad)<br />Joint 5 : -&pi;/2(rad) ~ &pi;/2(rad)<br />Joint 6 : -&pi;(rad) ~ &pi;(rad)|
+|Default ID|Joint 1 (ID:1), Joint 2 (ID:2), Joint 3 (ID:3),<br />Joint 4 (ID:4), Joint 5 (ID:5), Joint 6 (ID:6)|
+|Motor type|Brushless DC Servo(H54P Series),<br />Coreless DC Motor(H42P Series)|
+|Position sensor type|Absolute Encoder(for Homing),<br />Incremental Encoder(for Control)|
+|Communications|RS485|
+|Communication Baudrate|2000000 bps|
 
 
-## [ROS message type](#ros-message-type)
-
-### ROS Message Type
-* JointPose.msg   
-  * `name` : target joint name ([std_msgs/String]{: .popup})    
-  * `value` : target joint value ([std_msgs/Float64]{: .popup})    
-* KinematicsPose.msg    
-  * `name` : target kinematics group ([std_msgs/String]{: .popup})    
-  * `pose` : target Pose ([geometry_msgs/Pose]{: .popup})   
-
-### ROS Service Type   
-* GetJointPose.srv   
-  * Request : `joint_name` : joint name ([std_msgs/String]{: .popup})   
-  * Response : `joint_value` : joint value ([std_msgs/Float64]{: .popup})   
-* GetKinematicsPose.srv     
-  * Request : `group_name` : kinematics group ([std_msgs/String]{: .popup})   
-  * Response : `group_pose` : kinematics pose ([geometry_msgs/Pose]{: .popup})   
+## [Dimension](#dimension)
+![](/assets/images/platform/openmanipulator_p60/dimension.jpg)
 
 
+## [Home Position](#home-position)
 
-## [ROS API](#ros-api)
+The diagram below shows the “home position” of the Dynamixel PRO+s from OpenManipulator RM-P60-RNH.
 
-### [manipulator_base_module](#manipulator_base_module)
-
-#### Subscribed Topics
-`/robotis/base/ini_pose_msg` ([std_msgs/String]{: .popup})    
-&emsp;&emsp; Message for initial pose
-
-`/robotis/base/set_mode_msg` ([std_msgs/String]{: .popup})    
-&emsp;&emsp; Message for set mode
-
-`/robotis/base/joint_pose_msg` ([manipulator_manipulation_module_msgs/JointPose]{: .popup})   
-&emsp;&emsp; Message for joint space control
-
-`/robotis/base/kinematics_pose_msg` ([manipulator_manipulation_module_msgs/KinematicsPose]{: .popup})   
-&emsp;&emsp; Message for task space control
-
-#### Published Topics
-`/robotis/status`([robotis_controller_msgs/StatusMsg]{: .popup})    
-&emsp;&emsp; Message for current state
-
-#### Services
-`/robotis/base/get_joint_pose` ([manipulator_manipulation_module_msgs/GetJointPose]{: .popup})   
-&emsp;&emsp; Service to read current joint value
-
-`/robotis/base/get_kinematics_pose` ([manipulator_manipulation_module_msgs/GetKinematicsPose]{: .popup})   
-&emsp;&emsp; Service to read current end effector's pose
+![](/assets/images/platform/openmanipulator_p60/home_position.jpg)
 
 
-### [manipulator_manager](#manipulator-manager)
+## [D-H Configuration](#d-h-configuration)
+![](/assets/images/platform/openmanipulator_p60/d_h_configuration.jpg)
 
-#### Overview
-`manipulator_manager` is a package to apply ROBOTIS Framework to ROBOTIS Manipulator.   
-If you want to create new manager, please refer the link as below.
-> Ref. : [Creating new robot manager]
+- DH Parameter
 
-#### Parameters
-launch parameters
+|Link|Link Length(mm)|Link Twist(rad)|Joint Offset(mm)|Joint Angle(rad)|DXL Angle(rad)|
+|:---:|:---:|:---:|:---:|:---:|:---:|
+|1|0|-&pi;/2|0|0|0|
+|2|265.69|0|0|0|![](/assets/images/platform/openmanipulator_p60/d_h_eq_001.gif)|
+|3|30|-&pi;/2|0|0|![](/assets/images/platform/openmanipulator_p60/d_h_eq_002.gif)|
+|4|0|-&pi;/2|258|0|0|
+|5|0|-&pi;/2|0|0|0|
+|6|0|0|0|0|0|
 
-`gazebo` (bool, default: false)  
-&emsp;&emsp; Select using simulation (gazebo) mode or real robot mode.  
+## [Mass Property](#mass-property)
+### Coordinate
 
-`gazebo_robot_name` (string, default: "")  
-&emsp;&emsp; robot name for joint_states topic name using gazebo mode.  
-&emsp;&emsp; ex) If the `gazebo_robot_name` is `robotis_manipulator`, subscribing topic is  
-&emsp;&emsp;&emsp; `/robotis_manipulator/joint_states`.
+![](/assets/images/platform/openmanipulator_p60/mass1.jpg)
 
-`offset_file_path` (string, default: "")  
-&emsp;&emsp; The file path that includes joint offset information and initial pose of tuning offset.
+Total Mass : 5,551g
 
-`robot_file_path` (string, default: "")  
-&emsp;&emsp; The file `.robot` 's path that includes robot information.
+### Link 1
 
-### [manipulator_kinematics_dynamcis](#manipulator_kinematics_dynamcis)
+![](/assets/images/platform/openmanipulator_p60/mass2.jpg)
 
-#### Getting started
+- Mass(g) : 1,030
+- Center of Gravity(mm)
+  - x : 0
+  - y : 1
+  - z : -1.1
+- Inertia Tensor(g * mm<sup>2</sup>)
+  - Ixx Ixy Ixz : 1.4957303e+06 0.0000000e+00 0.0000000e+00
+  - Iyx Iyy Iyz : 0.0000000e+00 4.5009641e+05 -1.0959043e+04
+  - Izz Izy Izz : 0.0000000e+00 -1.0959043e+04 1.4874997e+06
+- Principal Moments(g * mm<sup>2</sup>)
+  - I1 : 4.4998065e+05
+  - I2 : 1.4876155e+06
+  - I3 : 1.4957303e+06
 
-  To use this library, it is necessary to set the `CMakeList.txt` and `package.xml` of each module
+### Link 2
 
-  In `CMakeList.txt`,
-  ```
-  find_package( manipulator_kinematics_dynamics )   
-  target_link_libraries( manipulator_kinematics_dynamics )   
-  ```
+![](/assets/images/platform/openmanipulator_p60/mass3.jpg)
 
-  In `package.xml`,
-  ```
-  <build_depend>manipulator_kinematics_dynamics</build_depend>   
-  ```
+- Mass(g) : 1,404
+- Center of Gravity(mm)
+  - x : 17.9
+  - y : 0.3
+  - z : 206.9
+- Inertia Tensor(g * mm<sup>2</sup>)
+  - Ixx Ixy Ixz : 1.0627201e+07 1.2357497e+04 -1.2920605e+06
+  - Iyx Iyy Iyz : 1.2357497e+04 1.0014640e+07 1.5798255e+05
+  - Izz Izy Izz : -1.2920605e+06 1.5798255e+05 1.9568681e+06
+- Principal Moments(g * mm<sup>2</sup>)
+  - I1 : 1.7653895e+06
+  - I2 : 1.0017530e+07
+  - I3 : 1.0815789e+07
 
-#### Functions
+### Link 3
 
-##### LinkData.cpp
+![](/assets/images/platform/openmanipulator_p60/mass4.jpg)
 
-  `name` : Joint name   
-  `parent` : Parent joint ID   
-  `sibling` : Sibling joint ID   
-  `child` : Child joint ID   
-  `mass` : Mass   
-  `relative_position` : Joint relative position (relative to parent)   
-  `joint_axis` : Joint axis vector (relative to parent)   
-  `center_of_mass` : Center of mass (Link Local)   
-  `inertia` : Moment of Inertia (Link Local)   
-  `joint_limit_max` : Joint upper limit   
-  `joint_limit_min` : Joint lower limit    
-  `joint_angle` : Joint angle   
-  `joint_velocity` : Joint velocity   
-  `joint_acceleration` : Joint acceleration      
-  `position`: Link position   
-  `orientation` : Link orienataion   
-  `transformation` : Link transformation matrix   
+- Mass(g) : 1,236
+- Center of Gravity(mm)
+  - x : 0.2
+  - y : 0.3
+  - z : 387.9
+- Inertia Tensor(g * mm<sup>2</sup>)
+  - Ixx Ixy Ixz : 3.1318491e+06 –6.0760429e+03 2.4765806e+04
+  - Iyx Iyy Iyz : -6.0760429e+03 2.9193915e+06 4.2823763e+04
+  - Izz Izy Izz : 2.4765806e+04 4.2823763e+04 9.2402606e+05
+- Principal Moments(g * mm<sup>2</sup>)
+  - I1 : 9.2282696e+05
+  - I2 : 2.9201652e+06
+  - I3 : 3.1322745e+06
 
-##### ManipulatorKinematicsDynamics.cpp
+### Link 4
 
-  ```cpp
-  ManipulatorKinematicsDynamics(TREE_SELECT tree)
-  ```
-  > * description : ROBOTIS MANIPULATOR joint & link information
+![](/assets/images/platform/openmanipulator_p60/mass5.jpg)
 
-  ```cpp
-  std::vector<int> findRoute( int to )
-  ```
-  > * description : find kinematics tree
-  > * arguments : start joint id
-  > * return value : vector ( n x 1 )
+- Mass(g) : 491
+- Center of Gravity(mm)
+  - x : 0
+  - y : -1.5
+  - z : 514.3
+- Inertia Tensor(g * mm<sup>2</sup>)
+  - Ixx Ixy Ixz : 3.9670485e+05 –3.3867048e+00 -4.7608394e+01
+  - Iyx Iyy Iyz : -3.3867048e+00 2.3556702e+05 3.9098238e+03
+  - Izz Izy Izz : -4.7608394e+01 3.9098238e+03 2.9647894e+05
+- Principal Moments(g * mm<sup>2</sup>)
+  - I1 : 2.3531708e+05
+  - I2 : 2.9672886e+05
+  - I3 : 3.9670487e+05
 
-  ```cpp
-  std::vector<int> findRoute( int from , int to )
-  ```
-  > * description : find kinematics tree
-  > * arguments : start joint id and end joint id
-  > * return value : vector ( n x 1 )
+### Link 5
 
-  ```cpp
-  double TotalMass( int joint_ID )
-  ```
-  > * description : calculate total mass
-  > * arguments : start joint id
-  > * return value : total mass
+![](/assets/images/platform/openmanipulator_p60/mass6.jpg)
 
-  ```cpp
-  Eigen::MatrixXd CalcMC( int joint_ID )
-  Eigen::MatrixXd CalcCOM( Eigen::MatrixXd MC )
-  ```
-  > * description : calculate center of mass
-  > * arguments : start joint id
-  > * return value : 3 x 1 matrix
-
-  ```cpp
-  void ForwardKinematics( int joint_ID )
-  ```
-  > * description : calculate forward kinematics
-  > * arguments : start joint id
-
-  ```cpp
-  Eigen::MatrixXd CalcJacobian( std::vector<int> idx )
-  ```
-  > * description : calculate forward kinematics
-  > * arguments : vector ( n x 1 )
-  > * return value : 6 x n matrix
-
-  ```cpp
-  bool InverseKinematics
-  ( int to,
-    Eigen::MatrixXd tar_position, Eigen::MatrixXd tar_orientation,
-    int max_iter,                 double ik_err )
-  ```
-  > * description : calculate inverse kinematics
-  > * arguments : end joint id, target position, target orientation, max iteration, calculation error
-  > * return value : true or false
-
-  ```cpp
-  bool InverseKinematics
-  ( int from,                     int to,
-    Eigen::MatrixXd tar_position, Eigen::MatrixXd tar_orientation,
-    int max_iter,                 double ik_err )
-  ```
-  > * description : calculate inverse kinematics
-  > * arguments : start joint id, end joint id, target position, target orientation, max iteration, calculation error
-  > * return value : true or false
+- Mass(g) : 454
+- Center of Gravity(mm)
+  - x : 0
+  - y : 0.8
+  - z : 591.5
+- Inertia Tensor(g * mm<sup>2</sup>)
+  - Ixx Ixy Ixz : 4.7548066e+05 0.0000000e+00 0.0000000e+00
+  - Iyx Iyy Iyz : 0.0000000e+00 3.9961989e+05 1.4840847e+04
+  - Izz Izy Izz : 0.0000000e+00 1.4840847e+04 1.9795791e+05
+- Principal Moments(g * mm<sup>2</sup>)
+  - I1 : 1.9687159e+05
+  - I2 : 4.0070622e+05
+  - I3 : 4.7548066e+05
 
 
 
-[std_msgs/String]: /docs/en/popup/std_msgs_string/
-[std_msgs/Float64]: /docs/en/popup/std_msgs_float64_msg/
-[geometry_msgs/Pose]: /docs/en/popup/geometry_msgs_Pose_msg/
-[robotis_controller_msgs/StatusMsg]: /docs/en/popup/StatusMsg.msg/
-[manipulator_manipulation_module_msgs/JointPose]: /docs/en/popup/JointPose.msg/
-[manipulator_manipulation_module_msgs/KinematicsPose]: /docs/en/popup/KinematicsPose.msg/
-[manipulator_manipulation_module_msgs/GetJointPose]: /docs/en/popup/GetJointPose.srv/
-[manipulator_manipulation_module_msgs/GetKinematicsPose]: /docs/en/popup/GetKinematicsPose.srv/
-[Creating new robot manager]: /docs/en/software/robotis_framework_packages/tutorials/#creating-new-robot-manager
-[manipulator_manager]: /docs/en/platform/manipulator_h/manipulator_ros/#manipulator-manager
+
+
+

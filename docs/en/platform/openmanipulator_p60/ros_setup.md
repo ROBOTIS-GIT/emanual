@@ -11,16 +11,13 @@ sidebar:
   nav: "openmanipulator_p60"
 ---
 
-<div style="counter-reset: h1 5"></div>
+<div style="counter-reset: h1 3"></div>
 
-# [ROBOTIS manipulator ROS](#robotis-manipulator-ros)
+# [[ROS] Setup](#ros-setup)
 
-- The ROBOTIS manipulator ROS program is based on **Linux Ununtu 16.04** OS and **ROS Kenitic Kame**.
-- Both **Manipulator-H** and **Manipulator-H+** support the ROBOTIS manipulator ROS program.
+- The OpenManipulator ROS program is based on **Linux Ununtu 16.04** OS and **ROS Kinetic Kame**.
 
-## [PC Setup](#pc-setup)
-
-### [Install Ubuntu on PC](#install-ubuntu-on-pc)
+## [Install Ubuntu on PC](#install-ubuntu-on-pc)
 
 Download and install `Ubuntu 16.04` on your PC.
 
@@ -30,9 +27,9 @@ If you need more help with installing Ubuntu, check out the step-by-step guide f
 
 - [Install ubuntu desktop](https://www.ubuntu.com/download/desktop/install-ubuntu-desktop)
 
-### [Install ROS on PC](#install-ros-on-pc)
+## [Install ROS on PC](#install-ros-on-pc)
 
-![](/assets/images/platform/turtlebot3/logo_ros.png)
+![](/assets/images/platform/openmanipulator_p60/logo_ros.png)
 
 The following script will allow you to simplify the ROS installation procedure. Run the following command in a terminal window. The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. The shortcut key to open a terminal is `Ctrl`+`Alt`+`t`. After installing ROS, please reboot PC.
 
@@ -70,6 +67,6 @@ $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-Math.git
 $ cd ~/catkin_ws && catkin_make
 ```
 
-If the catkin_make command has been completed without any errors, all the preparations for using Manipulator-H or Manipulator-H+ are done.
+If the catkin_make command has been completed without any errors, all the preparations for using OpenManipulator RM-P60-RNH is done.
 
 

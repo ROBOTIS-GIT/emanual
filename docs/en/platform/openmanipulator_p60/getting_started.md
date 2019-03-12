@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: openmanipulator_p60_getting_started
+ref: openopenmanipulator_p60_getting_started
 read_time: true
 share: true
 author_profile: false
@@ -11,11 +11,11 @@ sidebar:
   nav: "openmanipulator_p60"
 ---
 
-<div style="counter-reset: h1 1"></div>
+<div style="counter-reset: h1 2"></div>
 
 # [Getting Started](#getting-started)
 
-## [Prerequisite](#prerequisite)
+## [Safety Information](#safety-information)
 
 - Allow sufficient workspace prior to setup by clearing objects in the arm’s vicinity.
 - Always ensure the Manipulator is properly fixed to the base plate prior to operations; otherwise arm movements can cause damage and physical injury.
@@ -24,168 +24,87 @@ sidebar:
 - If the Manipulator operates erroneously quickly cut off power by turning the power supply off.
 - While the Manipulator is in operation keep out of its workspace; ensure no objects enter the workspace during operations.
 
-## [Preparation](#preparation)
+{% capture manipulator_danger_01 %}
+`DANGER`
+
+Information appearing in a DANGER concerns the protection of personnel from the immediate and imminent hazards that, if not avoided, will result in immediate, serious personal injury or loss of life in addition to equipment damage.
+- Keep away from the robot while its moving.
+- Do not touch with the robot with wet hands.
+- Turn off power of the robot whenever robot is problematic.
+{% endcapture %}
+
+<div class="notice--danger">{{ manipulator_danger_01 | markdownify }}</div>
+
+
+{% capture manipulator_warning_01 %}
+`WARNING`
+
+Information appearing in a WARNING concerns the protection of personnel and equipment from potential hazards that can result in personal injury or loss of life in addition to equipment damage.
+- Setup robot in an environment low on dust and humidity.
+- The robot must always be attached to the based when powered on.
+- The robot wiring must be checked prior to powering on.
+- The robot connection to power supplly must be check prior to powering on.
+- Do not change wiring on Robotis Manipulator while powered on.
+{% endcapture %}
+
+<div class="notice--warning">{{ manipulator_warning_01 | markdownify }}</div>
+
+{% capture manipulator_caution_01 %}
+`CAUTION`
+
+Information appearing in a CAUTION concerns the protection of personnel and equipment, software, and data from hazards that can result in minor personal injury or equipment damage.
+- Keep robot’s workspace clear of object.
+- Ensure wiring is not tangled up on every joint.
+- Make sure USB2Dynamixel and PC does not interfere with the robot’s moving
+{% endcapture %}
+
+<div class="notice--warning">{{ manipulator_caution_01 | markdownify }}</div>
+
+## [Package Contents](#package-contents)
+ 
+| Item                            | Quantity | 
+|:-------------------------------:|:---:| 
+| OpenManipulator RM-P60-RNH      | 1 | 
+| Manipulator Case                | 1 | 
+| U2D2                            | 1 | 
+| Extra cable set(4P, 2P)         | 1 | 
+| 4P Ext Hub                      | 2 | 
+| Screw set (WB M2.5 and others)  | 1 | 
+| [Gripper(**optional**)](/docs/en/platform/rh_p12_rn/)           | 1 | 
+| [Base Plate Frame(**optional**)](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2538&GC=GD070002)| 1 | 
+
+
+## [Setup](#setup)
+
+### Wiring
+
+![](/assets/images/platform/openmanipulator_p60/wiring.jpg)
+
+- The diagram above illustrates joints 1~6 connected in daisy-chain (serial) configuration with 4P Cable.
+- Joint 1 (labeled as “1st”) connects to U2D2 via 4P Cable.
+- U2D2 connects to PC via USB hub.
+- Dynamixel Pro+ is powered from a a power supply via power expansion hub.
+- Joints 5 and 6 (model: H42P-020-S300-R) are not separately powered; instead power comes from the same 4P Cable.
 
 ### Power Supply
-The Manipulator requires 24V for operations. Ensure the power supply is capable of supplying 24V and 15A or higher.
+The OpenManipulator RM-P60-RNH requires 24V for operations. Ensure the power supply is capable of supplying 24V and 15A or higher.
 
-### 4P Cable
-The 4P Cable connects the Manipulator and USB2Dynamixel.
-
-![](/assets/images/platform/manipulator/manipulator_h_006.jpg)
-
-### Power Cable
+### Connector Information
+The 4P Cable connects the OpenManipulator RM-P60-RNH and U2D2.     
 The power cable supplies power to the Manipulator.
 
-![](/assets/images/platform/manipulator/manipulator_h_007.jpg)
+{% include en/dxl/pro_plus/jst_485_pro_plus.md %}
 
-For additional power or 4P cables contact ROBOTIS or obtain them with the specifications listed above. 
+### U2D2
+[U2D2](/docs/en/parts/interface/u2d2/) is a small size USB communication converter that enables to control and operate DYNAMIXEL with PC. Connect the [U2D2](/docs/en/parts/interface/u2d2/) to the PC via USB hub.
 
-### USB2Dynamixel
-The USB2Dynamixel sends ArmSDK commands to the Manipulator. Connect the USB2Dynamixel to the PC via USB hub.
-
-![](/assets/images/platform/manipulator/manipulator_h_008.jpg)
-
-## [Product Assembly](#product-assembly)
-
-**NOTE** : The content below is based on an **optional** base plate and differs from the actual base plate.
-{: .notice}
-
-![](/assets/images/platform/manipulator/manipulator_h_009.jpg)
-
-- Rest and fix joint 1 of the Manipulator.
-
-![](/assets/images/platform/manipulator/manipulator_h_010.jpg)
-
-![](/assets/images/platform/manipulator/manipulator_h_011.png)
-
-- The photo on the left is the external wiring for the arm. Label “1” shows a pair of 4P cables and power connector; these connect to joint 1 as shown on the right picture.
-
-- Label “2” shows a 4P connector and 4 power connectors and these connect to the power expansion hub and the 4P cable connects to the extension.
-
-![](/assets/images/platform/manipulator/manipulator_h_012.png)
-
-![](/assets/images/platform/manipulator/manipulator_h_013.png)
-
-![](/assets/images/platform/manipulator/manipulator_h_014.png)
-
-![](/assets/images/platform/manipulator/manipulator_h_015.png)
-
-- Once connections are complete fix the arm to the base plate as shown on the photo above. The joint fixed to the plate is joint 1.
-
-![](/assets/images/platform/manipulator/manipulator_h_016.jpg)
-
-- Connect USB2Dynamixel to the hub with 4P cable; connect another port of the 4P hub to the extension.
-
-**CAUTION** : Connect the USB2Dynamixel to the PC via USB hub. The USB hub acts as an isolator to protect the PC from any possible unexpected surges caused by arm action.
-{: .notice--warning}
-
-## [USB2Dynamixel Setting](#usb2dynamixel-setting)
-
-![](/assets/images/platform/manipulator/manipulator_h_017.png)
-
-|Communication|Description|
-|:---:|:---:|
-|TTL|AX, 3-pin MX; communicate with 3-pin Dynamixel|
-|RS485|RX, 4-pin MX and Pro; communicate with 4-pin Dynamixel|
-|RS232|CM-5, CM-510; communicate with these controllers. Communicate with other RS-232 devices|
-
-**NOTE** : The manipulator is based on RS-485 communications so make sure to set the dongle to 485.
-{: .notice}
-
-## [Manipulator Test](#manipulator-test)
-
-- Test the arm with Dynamixel Wizard to check for any anomalies. DynamixelWizard is included in RoboPlus suite. RoboPlus can be downloaded from ROBOTIS home page’s Support -> Downloads([http://www.robotis.com/xe/download]).  
-
-**CAUTION** : Do NOT download RoboPlus v2.0. Use RoboPlus v1.0 for Manipulator-H.
-{: .notice--warning}
-
-  ![](/assets/images/platform/manipulator/manipulator_h_018.jpg)
-
-- Install and run RoboPlus; click on Dynamixel Wizard button to start Dynamixel Wizard.
-
-  ![](/assets/images/platform/manipulator/manipulator_h_019.jpg)
-
-### Operating the Manipulator
-
-**DANGER** : Before starting Dynamixel Wizard ensure the arm is fixed to the base plate; then extend the arm. Otherwise; it may cause physical harm.
-{: .notice--danger}
-
-- USB2Dynamixel to the PC after wiring is complete. From the PC check the COM port number of USB2Dynamixel.
-
-  ![](/assets/images/platform/manipulator/manipulator_h_020.jpg)
-
-  ![](/assets/images/platform/manipulator/manipulator_h_021.jpg)
-
-  ![](/assets/images/platform/manipulator/manipulator_h_022.jpg)
-
-- Select the Port Settings tab and click on the Advanced button-> change the latency time from 16 (default) to 1.
-- After changing the COM port settings supply the 24V to the arm (of course, this means wiring is complete).
-
-**CAUTION** : Always ensure before powering on. While power is on do not change wires; otherwise it may cause undesired operations.
-{: .notice-warning}
-
-  ![](/assets/images/platform/manipulator/manipulator_h_023.jpg)
-
-  ![](/assets/images/platform/manipulator/manipulator_h_024.jpg)
-
-- The picture on the left is the COM port number of USB2Dynamixel (which should be connected to the arm). Click on the   to continue
-
-  ![](/assets/images/platform/manipulator/manipulator_h_025.jpg)
-
-- Once connected make sure that 1000000bps box is checked and “DXL 2.0” is selected. Then click on Search. The arm’s default baud rate is 1 Mbps.
-
-  ![](/assets/images/platform/manipulator/manipulator_h_026.jpg)
-
-  ![](/assets/images/platform/manipulator/manipulator_h_027.jpg)
-
-- Once search is complete the arm’s components (Dynamixel PROs) are listed on the left. Click on an individual Dynamixel PRO to display the contents of its Control Table.
-
-  ![](/assets/images/platform/manipulator/manipulator_h_028.jpg)
-
-  ![](/assets/images/platform/manipulator/manipulator_h_029.jpg)
-
-- Dynamixel Pro will only move (operate) when Torque Mode is on. So always make sure the Torque Mode is on prior to sending moving commands.  
-  Torque Enable is located on address number 562. A value of 1 means on and 0 means off.
-
-  ![](/assets/images/platform/manipulator/manipulator_h_030.jpg)
-
-  ![](/assets/images/platform/manipulator/manipulator_h_031.jpg)
-
-  ![](/assets/images/platform/manipulator/manipulator_h_032.jpg)
-
-  ![](/assets/images/platform/manipulator/manipulator_h_033.jpg)
-
-- Turn ‘Torque Enable’ on to all joints. The pose of the arm will become rigid (check by applying a small force). Afterwards click on joint 6.
-
-  ![](/assets/images/platform/manipulator/manipulator_h_034.jpg)
-
-- Now verify the arm moves properly by changing Goal Position. Move the end effector (joint 6) +90 degrees.  
-  To move joint 6 to +90 degrees set Goal Position of the Dynamixel PRO model H42-20-S300-R to 75938 or L42-10-S300-R to 1024.
-- Once Goal Position has been set visually verify that joint 6 has rotated 90 degrees.
-- To actually get Dynamixel PRO to move to its respective Goal Position, click on the Apply button after setting the value. If there is no movement, make sure Torque Enable is turned on (set to 1).
-- Set Goal Position back to 0 to set position to its original position.
-
-  ![](/assets/images/platform/manipulator/manipulator_h_035.jpg)
-
-- Click on ID. Set the Goal Position to 1000 (500 for L42 model).
-- To actually get Dynamixel PRO to move to its respective Goal Position, click on the Apply button after setting the value. If there is no movement, make sure Torque Enable is turned on (set to 1).
-- Set Goal Position back to 0 to set position to its original position..
-- Do the same procedure for joint 2 through 6.
+![](/assets/images/platform/openmanipulator_p60/u2d2.png)
 
 ### Goal Position Values with Respect to Rotation
 
-- Goal Position value determines the rotational position of Dynamixel PRO.
+- Goal Position value determines the rotational position of Dynamixel PRO+.
 
 |Model Name|Relationship between angle(deg) and position value|
 |:---:|:---:|
-|H54-200-S500-R<br />H54-100-S500-R|-180 ~ 180 (deg) → -251000 ~ 251000<br />![](/assets/images/platform/manipulator/manipulator_h_036.jpg)<br />![](/assets/images/platform/manipulator/manipulator_h_037.gif)|
-|H42-20-S300-R|-180 ~ 180 (deg) → -151875 ~ 151875<br />![](/assets/images/platform/manipulator/manipulator_h_038.jpg)<br />![](/assets/images/platform/manipulator/manipulator_h_039.gif)|
-|L54-50-S500-R|-180 ~ 180 (deg) → -125700 ~ 125700<br />![](/assets/images/platform/manipulator/manipulator_h_040.jpg)<br />![](/assets/images/platform/manipulator/manipulator_h_041.gif)|
-|L54-30-S500-R|-180 ~ 180 (deg) → -144180 ~ 144180<br />![](/assets/images/platform/manipulator/manipulator_h_042.jpg)<br />![](/assets/images/platform/manipulator/manipulator_h_043.gif)|
-|L42-20-S300-R|-180 ~ 180 (deg) → -2048 ~ 2048<br />![](/assets/images/platform/manipulator/manipulator_h_044.jpg)<br />![](/assets/images/platform/manipulator/manipulator_h_045.gif)|
-|H54P-200-S500-R<br />H54P-100-S500-R|-180 ~ 180 (deg) → -501923 ~ 501923<br />![](/assets/images/platform/manipulator/h54p_goal_position.png)<br />![](/assets/images/platform/manipulator/h54p_goal_angle.png)|
-|H42P-020-S300-R|-180 ~ 180 (deg) → -303750 ~ 303750<br />![](/assets/images/platform/manipulator/h42p_goal_position.png)<br />![](/assets/images/platform/manipulator/h42p_goal_angle.png)|
-
-
-[http://www.robotis.com/xe/download]: http://www.robotis.com/xe/download
+|H54P-200-S500-R<br />H54P-100-S500-R|-180 ~ 180 (deg) → -501923 ~ 501923<br />![](/assets/images/platform/openmanipulator_p60/h54p_goal_position.png)<br />![](/assets/images/platform/openmanipulator_p60/h54p_goal_angle.png)|
+|H42P-020-S300-R|-180 ~ 180 (deg) → -303750 ~ 303750<br />![](/assets/images/platform/openmanipulator_p60/h42p_goal_position.png)<br />![](/assets/images/platform/openmanipulator_p60/h42p_goal_angle.png)|
