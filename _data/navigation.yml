@@ -12616,13 +12616,13 @@ iot-2:
   - titlekr: "교안예제"
     urlkr: /edu/iot/iot-2/#교안예제
 
-info_robot:
+info:
   - titlekr: "개요"
     urlkr: /edu/info/#개요
   - titlekr: "부품 목록"
     urlkr: /edu/info/#부품-목록
-  - titlekr: "작동하기"
-    urlkr: /edu/info/#작동하기
+  - titlekr: "엔트리로 작동하기"
+    urlkr: /edu/info/#엔트리로-작동하기
     children:
       - titlekr: "엔트리 설치하기"
         urlkr: /edu/info/#엔트리-설치하기
@@ -12634,6 +12634,17 @@ info_robot:
         urlkr: /edu/info/#pc에-블루투스-연결하기
       - titlekr: "엔트리에 로봇 연결하기"
         urlkr: /edu/info/#엔트리에-로봇-연결하기
+  - titlekr: "태스크로 작동하기"
+    urlkr: /edu/info/#태스크로-작동하기
+    children:
+      - titlekr: "R+ m.Task 2 설치하기"
+        urlkr: /edu/info/#r-mtask-2-설치하기
+      - titlekr: "R+ Smart 설치하기"
+        urlkr: /edu/info/#r-smart-설치하기
+      - titlekr: "제어기와 스마트기기 연결"
+        urlkr: /edu/info/#제어기와-스마트기기-연결
+      - titlekr: "R+ Smart에서 예제 불러오기"
+        urlkr: /edu/info/#r-smart에서-예제-불러오기
   - titlekr: "교육자료 다운로드"
     urlkr: /edu/info/#교육자료-다운로드
     children:
@@ -17074,8 +17085,8 @@ rplussmart:
     children:
     - titlekr: "모션파일 다운로드"
       urlkr: /software/mobile_app/rplussmart/#모션파일-다운로드
-    - titlekr: "제어기(CM-200)와 스마트기기 블루투스 연결"
-      urlkr: /software/mobile_app/rplussmart/#제어기cm-200와-스마트기기-블루투스-연결
+    - titlekr: "제어기와 스마트기기 연결"
+      urlkr: /software/mobile_app/rplussmart/#제어기-스마트기기-연결
     - titlekr: "태스크파일 다운로드"
       urlkr: /software/mobile_app/rplussmart/#태스크파일-다운로드
 

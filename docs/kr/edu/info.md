@@ -1,14 +1,14 @@
 ---
 layout: archive
 lang: kr
-ref: info_robot
+ref: info
 read_time: true
 share: false
 author_profile: false
 permalink: /docs/kr/edu/info/
 sidebar:
   title: 실과로봇
-  nav: "info_robot"
+  nav: "info"
 ---
 
 # [개요](#개요)
@@ -34,7 +34,7 @@ sidebar:
 - [적외선 센서]
 - [컬러 센서]
 
-# [작동하기](#작동하기)
+# [엔트리로 작동하기](#엔트리로-작동하기)
 
 ## [엔트리 설치하기](#엔트리-설치하기)
 
@@ -113,8 +113,49 @@ sidebar:
 
     ![](/assets/images/edu/info/entry_016.png)
 
+# [태스크로 작동하기](#태스크로-작동하기)
+
+## [R+ m.Task 2 설치하기](#r-mtask-2-설치하기)
+
+1. 스마트 기기에서 `구글 플레이 스토어`를 실행합니다.
+2. 구글 플레이 검색창에 `로보티즈`를 입력합니다.
+3. 검색된 목록에서 `R+ m.Task2`를 찾아 `설치`를 선택합니다.
+4. 팝업창에서 `동의`버튼을 누르면 설치가 진행됩니다.
+
+    ![](/assets/images/edu/info/entry_017.png)
+
+## [R+ Smart 설치하기](#r-smart-설치하기)
+
+{% include kr/software/mobile_app/smart/install.md %}
+
+## [제어기와 스마트기기 연결](#제어기와-스마트기기-연결)
+
+### 블루투스를 OpenCM7.0 제어기에 연결하기   
+1. 블루투스를 OpenCM7.0의 `4핀 포트`에 연결합니다.  
+2. OpenCM7.0의 시작버튼을 한 번 누르고 블루투스의 LED가 깜빡이면 제어기와 블루투스가 정상적으로 연결된 것입니다.
+
+    ![](/assets/images/sw/mobile/image11_kr.png)
+
+### 블루투스를 통해 제어기와 스마트기기 연결하기
+
+![](/assets/images/sw/mobile/image13_kr.gif)
+
+![](/assets/images/sw/mobile/image15_kr.gif)
+
+1. R+ Smart 앱을 실행한 후 우측 상단에 환경설정을 선택합니다.  
+2. 환경설정 창이 뜨면 “연결할 장치 선택”을 선택합니다.  
+3. 연결할 장치를 선택하라는 창이 뜨면 하단의 목록 중에서 제어기에 연결된 블루투스(BT-210)의 윗면에 있는 번호와 동일한 번호를 선택합니다.  
+4. 만약 동일한 번호가 없으면 검색을 통해 등록합니다.(이때, PIN정보가 필요합니다. PIN은 `0000`으로 기본 설정되어 있습니다.)
+
+ **참고**: PIN 정보는 로보티즈 고객지원센터를 통해서만 변경이 가능합니다.
+ {: .notice}
+
+## [R+ Smart에서 예제 불러오기](#r-smart에서-예제-불러오기)
+
+{% include kr/software/mobile_app/smart/task_download.md %}
+
 # [교육자료 다운로드](#교육자료-다운로드)
-각 예제를 실행할 때 동작에 대해서는 키트 내 교안을 참고하거나 교육자료를 확인해보세요.
+각 예제를 실행할 때 동작에 대해서는 키트에 포함된 교안을 참고하거나 교육자료를 확인해보세요.
 
 **참고** : 활동자료를 출력할 때는 실제크기(A4 원본크기)로 인쇄해야 합니다.
 {: .notice}
