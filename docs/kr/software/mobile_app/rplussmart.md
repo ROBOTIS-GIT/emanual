@@ -249,22 +249,14 @@ sidebar:
 - 시스템 최저 요구 사양
   - OS : Android 2.3이상
   - 하드웨어 : 1.2 dual-core CPU, 1GB RAM 이상, 블루투스 및 센서 내장 기기
- 
+
 - 통신
   - BT-410 지원 (Android 4.4이상)
   - BT-210, BT-110 지원
 
 - `다운로드` [Android 앱 다운로드](https://play.google.com/store/apps/details?id=com.robotis.smart)
 
-스마트 기기에서 Play 스토어를 실행합니다. (Play 스토어는 안드로이드 마켓 앱입니다.)
-Play스토어에서 “R+ SMART”와 “R+m.Task”를 검색한 후 설치합니다. (제품별 버전 상이)
-
-1. 구글 플레이에서 로보티즈 또는 R+ Smart로 검색해서 설치합니다.  
-2. R+m.Task도 함께 설치해 주세요.
-
-   ![](/assets/images/sw/mobile/s3_app_kr.jpg)
-
-   ![](/assets/images/sw/mobile/smart_0_kr.png)    
+{% include kr/software/mobile_app/smart/install.md %}
 
 3. 설치 후, 실행하면 SD card\Smart에 폴더가 아래와 같이 생성됩니다.  
 
@@ -275,11 +267,11 @@ Play스토어에서 “R+ SMART”와 “R+m.Task”를 검색한 후 설치합�
 5. System에서 각 프로젝트는 다음과 같은 구조를 가집니다.
 
     - Audio : 프로젝트에서 사용되는 사운드 파일이 저장됩니다.
-    - Capture : 프로젝트t에서 캡쳐된 사진 파일이 저장됩니다.
+    - Capture : 프로젝트에서 캡쳐된 사진 파일이 저장됩니다.
     - Db : 프로젝트에서 사용되는 모든 파일  정보 및 제즈쳐 파일이 저장됩니다.
     - Image : 프로젝트에서 사용되는 이미지 파일이 저장됩니다.
-    - Recorded : 프로젝트에 서 녹화된 동영상 파일이 저장 됩니다.
-    - Task : 프로젝트 관련 태스크 파일이 저장됩니다. PC에서 태스크를 작성 하였다면 스마트 단말기를 PC 와 연결하여 작성한 태스크 파일을 해당 프로젝트의 Task 폴더에 복사하면 m.Task와 연동하여 사용할 수 있습니다.
+    - Recorded : 프로젝트에서 녹화된 동영상 파일이 저장 됩니다.
+    - Task : 프로젝트 관련 태스크 파일이 저장됩니다. PC에서 태스크를 작성하였다면 스마트 단말기를 PC 와 연결하여 작성한 태스크 파일을 해당 프로젝트의 Task 폴더에 복사하면 R+m.Task 또는 R+m.Task2와 연동하여 사용할 수 있습니다.
     - Video : 프로젝트에서 사용되는 동영상 파일이 저장됩니다.
 
    ![](/assets/images/sw/mobile/smart_2_kr.png)
@@ -304,15 +296,21 @@ Play스토어에서 “R+ SMART”와 “R+m.Task”를 검색한 후 설치합�
 
     ![](/assets/images/sw/mobile/r+motion63_kr.jpg)
 
-## [제어기(CM-200)와 스마트기기 블루투스 연결](#제어기cm-200와-스마트기기-블루투스-연결)
+## [제어기와 스마트기기 연결](#제어기와-스마트기기-연결)
 
-### 블루투스를 제어기에 연결하기   
-1. 블루투스(BT-210)의 케이블을 제어기(CM-200) “HOST LINK”에 연결합니다.  
-2. 제어기(CM-200)의 시작버튼을 한 번 누르고 블루투스(BT-210)의 LED가 깜빡이면 제어기와 블루투스가 정상적으로 연결된 것입니다.
- 
+### 블루투스를 CM-200 제어기에 연결하기   
+1. 블루투스를 CM-200의 `HOST LINK` 포트에 연결합니다.  
+2. CM-200의 시작버튼을 한 번 누르고 블루투스의 LED가 깜빡이면 제어기와 블루투스가 정상적으로 연결된 것입니다.
+
     ![](/assets/images/sw/mobile/image10_kr.gif)
 
-### 블루투스를 통해 제어기(CM-200)와 스마트기기 연결하기
+### 블루투스를 OpenCM7.0 제어기에 연결하기   
+1. 블루투스를 OpenCM7.0의 `4핀 포트`에 연결합니다.  
+2. OpenCM7.0의 시작버튼을 한 번 누르고 블루투스의 LED가 깜빡이면 제어기와 블루투스가 정상적으로 연결된 것입니다.
+
+    ![](/assets/images/sw/mobile/image11_kr.png)
+
+### 블루투스를 통해 제어기와 스마트기기 연결하기
 
 ![](/assets/images/sw/mobile/image13_kr.gif)
 
@@ -328,13 +326,4 @@ Play스토어에서 “R+ SMART”와 “R+m.Task”를 검색한 후 설치합�
 
 ## [태스크파일 다운로드](#태스크파일-다운로드)
 
-1. R+ SMART 앱을 실행하고 작동하고자 하는 로봇예제 이미지를 길게 누른후 "아이템 > R+m.Task" 를 선택합니다. (스마트3 앱에서는 예제 그림 하단의 편집 버튼을 선택합니다.)
-2. R+m.Task를 선택하면 해당 로봇예제의 task 파일들이 확인됩니다. 이 중에서 다운받고자 하는 task 파일을 선택합니다.
-3. 정상적으로 실행되면 task 파일이 열립니다.
-
-   ![](/assets/images/sw/mobile/image16_kr.gif)
-
-4. 스마트기기의 메뉴를 누르고 "다운로드" 를 누르면 블루투스를 통해 무선으로 연결된 제어기에 task 파일이 다운로드 됩니다. (이 때, 스마트기기와 블루투스가 연결되어 있지 않으면 "장치 선택 창" 이 열리므로 블루투스를 선택하여 연결해 주면 됩니다.)
-5. 다운로드가 완료되면 제어기(CM-200)는 자동으로 꺼지고, 스마트기기에는 다운로드가 완료되었다는 메시지가 나타납니다.
-
-   ![](/assets/images/sw/mobile/image17_kr.gif)
+{% include kr/software/mobile_app/smart/task_download.md %}

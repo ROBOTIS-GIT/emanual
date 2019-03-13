@@ -21,6 +21,18 @@ sidebar:
 항상 제어기의 펌웨어를 최신 버전으로 유지 시켜주세요.  
 반드시 구동 기기에서 블루투스를 지원해야 다운로드 기능을 이용할 수 있습니다.
 
+### [Android](#android)
+  - OS : Android 2.3이상
+  - 하드웨어 : 1.2 dual-core CPU, 1GB RAM 이상, 블루투스 및 센서 내장 기기
+  - BT-210, BT-110 지원
+  - BT-410 지원 (Android 4.4이상)
+
+### [iOS](#ios)
+  - OS : iOS 8.0 이상
+  - 하드웨어 : iPhone4S, iPod 5G, iPad mini, iPad 2 이상
+  - BT-410 지원
+  - BT-210, BT-110 **미지원**
+
 ## [지원 제품](#지원-제품)
 
 - [ROBOTIS DREAM]
@@ -40,6 +52,15 @@ sidebar:
 - [CM-700]
 - [OpenCM9.04]
 - [OpenCM7.0]
+
+## [앱 다운로드](#앱-다운로드)
+
+- [안드로이드 앱 다운로드](https://play.google.com/store/apps/details?id=com.robotis.task2)
+- [아이폰 앱 다운로드](https://itunes.apple.com/kr/app/r%2b-m.task2-robotis/id1031166481?mt=8)
+
+## [앱 설치](#앱-설치)
+
+{% include kr/software/mobile_app/task/install.md %}
 
 # [메뉴설명](#메뉴설명)
 
@@ -303,30 +324,6 @@ R+ m.Task 2.0에서 사용하는 파라미터는 R+ Task 2.0과 동일합니다.
 R+ Task 2.0 매뉴얼의 [프로그래밍(파라미터)]를 참고하세요.
 
 [프로그래밍(명령어)]: /docs/kr/software/rplus2/task/#프로그래밍파라미터
-
-# [소프트웨어 다운로드](#소프트웨어-다운로드)
-
-## [Android](#android)
-- 시스템 최저 요구 사양
-  - OS : Android 2.3이상
-  - 하드웨어 : 1.2 dual-core CPU, 1GB RAM 이상, 블루투스 및 센서 내장 기기
-
-- 통신
-  - BT-410 지원 (Android 4.4이상)
-  - BT-210, BT-110 지원
-
-- [다운로드](https://play.google.com/store/apps/details?id=com.robotis.task2)
-
-## [Apple](#apple)
-- 시스템 최저 요구 사양
-  - OS : iOS 8.0 이상
-  - 하드웨어 : iPhone4S, iPod 5G, iPad mini, iPad 2 이상
-
-- 통신 관련
-  - BT-410 지원
-  - BT-210, BT-110 지원 불가
-
-- [다운로드](https://itunes.apple.com/kr/app/r%2b-m.task2-robotis/id1031166481?mt=8)
 
 # [유용한 정보](#유용한-정보)
 
