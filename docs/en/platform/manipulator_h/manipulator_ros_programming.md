@@ -69,6 +69,6 @@ $ git clone https://github.com/ROBOTIS-GIT/ROBOTIS-Math.git
 $ cd ~/catkin_ws && catkin_make
 ```
 
-If the catkin_make command has been completed without any errors, all the preparations for using Manipulator-H is done.
+If the catkin_make command has been completed without any errors, all the preparations for using Manipulator-H are done.
 
 

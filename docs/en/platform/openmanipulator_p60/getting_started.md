@@ -55,7 +55,7 @@ Information appearing in a WARNING concerns the protection of personnel and equi
 Information appearing in a CAUTION concerns the protection of personnel and equipment, software, and data from hazards that can result in minor personal injury or equipment damage.
 - Keep robot’s workspace clear of object.
 - Ensure wiring is not tangled up on every joint.
-- Make sure USB2Dynamixel and PC does not interfere with the robot’s moving
+- Make sure U2D2 and PC does not interfere with the robot’s moving
 {% endcapture %}
 
 <div class="notice--warning">{{ manipulator_caution_01 | markdownify }}</div>
@@ -70,10 +70,14 @@ Information appearing in a CAUTION concerns the protection of personnel and equi
 | Extra cable set(4P, 2P)         | 1 | 
 | 4P Ext Hub                      | 2 | 
 | Screw set (WB M2.5 and others)  | 1 | 
+
+### Optional Parts
+ 
+| Item                            | Quantity | 
+|:-------------------------------:|:---:| 
 | [Gripper(**optional**)](/docs/en/platform/rh_p12_rn/)           | 1 | 
-| [Base Plate Frame(**optional**)](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2538&GC=GD070002)| 1 | 
-
-
+| [Base Plate Frame(**optional**)](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2538&GC=GD070002)| 1 |  
+     
 ## [Setup](#setup)
 
 ### Wiring

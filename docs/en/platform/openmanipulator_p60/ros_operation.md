@@ -20,7 +20,7 @@ sidebar:
 **NOTE**:
 - This instructions has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 - This instructions are supposed to be running on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.
-- Make sure to run the [Open Manipulator Manager](/docs/en/platform/openmanipulator_p60/ros_manipulator_manager/#ros-manipulator-manager) instructions before running the instruction below.
+- Make sure to run the [OpenManipulator Manager](/docs/en/platform/openmanipulator_p60/ros_manipulator_manager/#ros-manipulator-manager) instructions before running the instruction below.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
@@ -46,7 +46,7 @@ To check the joint angles of the manipulator, click the `Get current joint value
 To move the manipulator in the joint space. Enter the joint angles. Then click the `Send Des Joint Val.` button. And, to move the manipulator in the task space. Enter the kinematics pose of the end-effector(tool) in the task space. Then click the `Send Des Pos.` button.  
 
 ## [MoveIt!](#moveit)
-**Comming Soon!**
+**Coming Soon!**
 
 
 
