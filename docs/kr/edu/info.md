@@ -117,12 +117,7 @@ sidebar:
 
 ## [R+ m.Task 2 설치하기](#r-mtask-2-설치하기)
 
-1. 스마트 기기에서 `구글 플레이 스토어`를 실행합니다.
-2. 구글 플레이 검색창에 `로보티즈`를 입력합니다.
-3. 검색된 목록에서 `R+ m.Task2`를 찾아 `설치`를 선택합니다.
-4. 팝업창에서 `동의`버튼을 누르면 설치가 진행됩니다.
-
-    ![](/assets/images/edu/info/entry_017.png)
+{% include kr/software/mobile_app/task/install.md %}
 
 ## [R+ Smart 설치하기](#r-smart-설치하기)
 

@@ -16900,9 +16900,9 @@ mtask20:
     url: /software/rplus_mobile/mtask20/#introduction
     urlkr: /software/rplus_mobile/mtask20/#개요
     children:
-    - title: "Cautions"
+    - title: "System Requirements"
       titlekr: "구동사양 및 주의사항"
-      url: /software/rplus_mobile/mtask20/#cautions
+      url: /software/rplus_mobile/mtask20/#system-requirements
       urlkr: /software/rplus_mobile/mtask20/#구동사양-및-주의사항
     - title: "Supported Products"
       titlekr: "지원 제품"
@@ -16912,6 +16912,14 @@ mtask20:
       titlekr: "지원 제어기"
       url: /software/rplus_mobile/mtask20/#supported-controllers
       urlkr: /software/rplus_mobile/mtask20/#지원-제어기
+    - title: "App Download"
+      titlekr: "앱 다운로드"
+      url: /software/rplus_mobile/mtask20/#app-download
+      urlkr: /software/rplus_mobile/mtask20/#앱-다운로드
+    - title: "App Installation"
+      titlekr: "앱 설치"
+      url: /software/rplus_mobile/mtask20/#app-installation
+      urlkr: /software/rplus_mobile/mtask20/#앱-설치
   - title: "Menu Descriptions"
     titlekr: "메뉴설명"
     url: /software/rplus_mobile/mtask20/#menu-descriptions
@@ -17007,10 +17015,6 @@ mtask20:
     titlekr: "프로그래밍(파라미터)"
     url: /software/rplus_mobile/mtask20/#programmingparameters
     urlkr: /software/rplus_mobile/mtask20/#프로그래밍파라미터
-  - title: "Software Download"
-    titlekr: "소프트웨어 다운로드"
-    url: /software/rplus_mobile/mtask20/#software-download
-    urlkr: /software/rplus_mobile/mtask20/#소프트웨어-다운로드
   - title: "Useful Tips"
     titlekr: "유용한 정보"
     url: /software/rplus_mobile/mtask20/#useful-tips
