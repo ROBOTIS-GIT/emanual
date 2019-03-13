@@ -5,5 +5,3 @@ Play스토어에서 `R+ SMART`와 `R+m.Task` 또는 `R+m.Task2`를 검색한 후
 2. `R+m.Task` 또는 `R+m.Task2`도 함께 설치해 주세요.
 
    ![](/assets/images/sw/mobile/s3_app_kr.jpg)
-
-   ![](/assets/images/sw/mobile/smart_0_kr.png)
