@@ -266,8 +266,7 @@ When the camera recognizes the AR marker, the pose of the AR marker is shown on 
 
 In this example, if the user is holding the master OpenManipulator, the slave OpenManipulator moves like master robot. Recording mode allows you to save the trajectory as you move the master OpenManipulator and play it back to the slave OpenManipulator.
 
-### Video
-**Coming soon**
+<iframe width="560" height="315" src="https://www.youtube.com/embed/kTS3Yx75mLo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Setup of the OpenManipulator
 Since you need to control two OpenManipulators on one PC, use two U2D2s and two OpenManipulators to connect as shown below.
