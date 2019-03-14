@@ -75,7 +75,7 @@ Information appearing in a CAUTION concerns the protection of personnel and equi
  
 | Item                            | Quantity | 
 |:-------------------------------:|:---:| 
-| [Gripper(**optional**)](/docs/en/platform/rh_p12_rn/)           | 1 | 
+| [Gripper(**optional**)](/docs/en/platform/rh_p12_rna/)           | 1 | 
 | [Base Plate Frame(**optional**)](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2538&GC=GD070002)| 1 |  
      
 ## [Setup](#setup)

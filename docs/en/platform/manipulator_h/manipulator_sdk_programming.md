@@ -53,7 +53,7 @@ ComputeIK’s factor’s the pose from end effector and joint values, as well as
 The Roll(&phi;), Pitch(&theta;) and Yaw(&psi;) are calculated as R<sub>x</sub>(&phi;), R<sub>y</sub>(&theta;), R<sub>z</sub>(&psi;) in the rotation transformation matrix. This is to be taken into consideration when entering the pose for ComputeIK.
 
 ### Trajectory Generating
-The TrajectoryGenerator class generates an instance for the arm’s trajectory. The SDK’s  Point to Point, Linear, and Circular can generate a trajectory. For arm-only trajectory then only Set_PTP, Set_LIN, Set_Circular; for the gripper then Set_PTPwithHand, Set_LINwithHand, Set_CIRCwithHand.
+The Trajectory Generator class generates an instance for the arm’s trajectory. The SDK’s  Point to Point, Linear, and Circular can generate a trajectory. For arm-only trajectory then only Set_PTP, Set_LIN, Set_Circular; for the gripper then Set_PTPwithHand, Set_LINwithHand, Set_CIRCwithHand.
 
 ### Velocity Profile
 The SDK’s Velocity Profile does not take max velocity and max acceleration into consideration in the Trapezoidal Velocity Profile. The initial and final velocity are always set to 0. The following methods generate velocity profile in Joint Space and Cartesian Space, where both are independent of each other.

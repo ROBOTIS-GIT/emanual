@@ -32,10 +32,13 @@ sidebar:
 |Motor type|Brushless DC Servo(H54P Series),<br />Coreless DC Motor(H42P Series)|
 |Position sensor type|Absolute Encoder(for Homing),<br />Incremental Encoder(for Control)|
 |Communications|RS485|
-|Communication Baudrate|2000000 bps|
+|Communication Baudrate|1000000 bps|
 
 
 ## [Dimension](#dimension)
+![](/assets/images/platform/openmanipulator_p60/dimension.jpg)
+
+If you have a gripper([RH-P12-RN(A)](/docs/en/platform/rh_p12_rna/)), see below. 
 ![](/assets/images/platform/openmanipulator_p60/dimension.jpg)
 
 

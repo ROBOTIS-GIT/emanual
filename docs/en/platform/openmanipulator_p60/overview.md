@@ -16,10 +16,10 @@ sidebar:
 # [Overview](#overview)
 
 ## [OpenSoftware](#opensoftware)
-OpenManipulator RM-P60-RNH is based on ROS ​and OpenSource. ROS official hardware platform ,TurtleBot series has been supporting ‘TurtleBot Arm’. Users can also control it more easily by linking it with the MoveIt! package. Even if you do not have an actual robot, you can control the robot in the Gazebo simulator​.
+OpenManipulator RM-P60-RNH is based on ROS ​and OpenSource. Users can also control it more easily by linking it with the MoveIt! package. Even if you do not have an actual robot, you can control the robot in the Gazebo simulator​.
 
 ## [Dynamixel Examples](#dynamixel-examples)
-OpenManipulator is composed of [Dynamixel Pro+ series](/docs/en/dxl/pro_plus/). Dynamixel has a modular form and adopts the daisy chain method. It allows users to easily add or remove joints for their own use. Taking advantage of this characteristic, users can build seven different types of OpenManipulator robots.
+OpenManipulator RM-P60-RNH is composed of [Dynamixel Pro+ series](/docs/en/dxl/pro_plus/). Dynamixel has a modular form and adopts the daisy chain method. It allows users to easily add or remove joints for their own use. Taking advantage of this characteristic, users can build seven different types of OpenManipulator robots.
 
 ## [Introduction Video](#introduction-video)
-Comming Soon.
+Coming Soon.

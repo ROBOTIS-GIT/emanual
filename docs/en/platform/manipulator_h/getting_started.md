@@ -179,7 +179,7 @@ The USB2Dynamixel sends ArmSDK commands to the Manipulator. Connect the USB2Dyna
 
 |Model Name|Relationship between angle(deg) and position value|
 |:---:|:---:|
-|H54-200-S500-R<br />H54-100-S500-R|-180 ~ 180 (deg) → -251000 ~ 251000<br />![](/assets/images/platform/manipulato_hr/manipulator_h_036.jpg)<br />![](/assets/images/platform/manipulator_h/manipulator_h_037.gif)|
+|H54-200-S500-R<br />H54-100-S500-R|-180 ~ 180 (deg) → -251000 ~ 251000<br />![](/assets/images/platform/manipulator_h/manipulator_h_036.jpg)<br />![](/assets/images/platform/manipulator_h/manipulator_h_037.gif)|
 |H42-20-S300-R|-180 ~ 180 (deg) → -151875 ~ 151875<br />![](/assets/images/platform/manipulator_h/manipulator_h_038.jpg)<br />![](/assets/images/platform/manipulator_h/manipulator_h_039.gif)|
 |L54-50-S500-R|-180 ~ 180 (deg) → -125700 ~ 125700<br />![](/assets/images/platform/manipulator_h/manipulator_h_040.jpg)<br />![](/assets/images/platform/manipulator_h/manipulator_h_041.gif)|
 |L54-30-S500-R|-180 ~ 180 (deg) → -144180 ~ 144180<br />![](/assets/images/platform/manipulator_h/manipulator_h_042.jpg)<br />![](/assets/images/platform/manipulator_h/manipulator_h_043.gif)|
