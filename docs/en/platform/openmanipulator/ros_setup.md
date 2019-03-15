@@ -18,7 +18,7 @@ sidebar:
 **NOTE** : The following instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 {: .notice--info}
 
-**WARNING** : If you would like to control OpenManipulator on OpenCR (Embedded board) instead of using ROS, please set it up as described in [[OpenCR] Setup](/docs/en/platform/openmanipulator/opencr-setup/#opencr-setup).
+**WARNING** : If you would like to control OpenManipulator on OpenCR (Embedded board) instead of using ROS, please set it up as described in [[OpenCR] Setup](/docs/en/platform/openmanipulator/opencr_setup/#opencr-setup).
 {: .notice--warning}
 
 
@@ -77,19 +77,26 @@ If the catkin_make command has been completed without any errors, all the prepar
 
 ## [Communication Converter](#communication-converter)
 
-## [U2D2](#u2d2)
+### [U2D2](#u2d2)
 
+#### Connection
 Connect micro USB (connected to PC), Dynamixel(OpenManipulator), and 12V Power to U2D2 and U2D2 power hub board as shown below.
 
-<img src="/assets/images/platform/openmanipulator/OpenManipulator_u2d2_setup.png" width="500">
+<img src="/assets/images/platform/openmanipulator/OpenManipulator_u2d2_setup2.png" width="800">
 
-**NOTE** : U2D2 and U2D2 power hub board are required when operating OpenManipulator using U2D2.
+**NOTE** : Please refer to [U2D2 e-manual](/docs/en/parts/interface/u2d2/) and [U2D2 power hub board e-manual](/docs/en/parts/interface/u2d2_power_hub/) for detailed connection of U2D2 and U2D2 power hub board.
 {: .notice}
 
-**NOTE** : If you are using OpenCR instead of U2D2 to connect to PC, please refer to OpenCR Setting section.
-{: .notice--info}
+#### USE Latency Timer Setting
+In linux(ubuntu) environment, USB latency time is set to 16ms by default. Follow the steps below to set the communication latency time to the lowest value (1ms) between Dynamixel and PC connected via USB.
 
-The following commands allow to use USB port
+Open a terminal window and run the roscore.
+
+``` bash
+$ roscore
+```
+
+With the roscore running, open a new terminal window and enter the following command to set usb latency time.
 
 ``` bash
 $ rosrun open_manipulator_controller create_udev_rules
@@ -99,26 +106,35 @@ $ rosrun open_manipulator_controller create_udev_rules
 `cat /sys/bus/usb-serial/devices/ttyUSB0/latency_timer`
 {: .notice--success}
 
-## [OpenCR](#opencr)
-This section explains how to set up OpenCR as a communication board between ROS Packages of PC and DYNAMIXEL of OpenManipulator.  
+### [OpenCR](#opencr)
+This section explains how to set up OpenCR as a communication board between **ROS Packages** of PC and DYNAMIXEL of OpenManipulator RM-X52-TNM.  
 If you want to operate OpenManipulator on embedded system (OpenCR) without ROS, please refer [[OpenCR] Setup](/docs/en/platform/openmanipulator/opencr-setup/#opencr-setup).
+
+#### Connection
 
 Connect micro USB (connected to PC), Dynamixel(OpenManipulator), and 12V Power to OpenCR as shown below.
 
-<img src="/assets/images/platform/openmanipulator/OpenManipulator_opencr_setup.png" width="500">
+<img src="/assets/images/platform/openmanipulator/OpenManipulator_opencr_setup2.png" width="800">
 
-Please refer the detailed description of [OpenCR](http://emanual.robotis.com/docs/en/parts/controller/opencr10/)
+**NOTE** : Please refer the detailed description of [OpenCR](http://emanual.robotis.com/docs/en/parts/controller/opencr10/).
+{: .notice}
 
-Download Arduino IDE and load OpenCR board on it
+#### Upload Source code
+
+Please refer to the following pages to install the Arduino IDE and enable the OpenCR board in the Arduino IDE environment.
 
 - [Arduino IDE for using OpenCR](/docs/en/platform/openmanipulator/opencr_setup/#arduino-ide-setup)
 
-Find `usb to dxl` example source codes.
-
+After completing all the above settings, open the Arduino IDE and open `usb to dxl` example source code as shown below.
 Go to `Examples` → `OpenCR` → `10.Etc` → `usb_to_dxl` on Arduino IDE for OpenCR.
 
 ![](/assets/images/platform/openmanipulator/OpenManipulator_opencr_utd_setup.png)
 
 Upload the `usb to dxl` example source to OpenCR.
 
+![](/assets/images/platform/openmanipulator/upload_use_to_dxl.png)
+
+When the upload is completed, the following comments are displayed in the log window. If you see a different comment than this, try uploading again and refer to the [OpenCR](http://emanual.robotis.com/docs/en/parts/controller/opencr10/) for details.
+
+![](/assets/images/parts/controller/opencr10/downloader_01.png)
 
