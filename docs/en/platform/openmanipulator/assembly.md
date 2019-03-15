@@ -59,7 +59,6 @@ sidebar:
 | .                 | DC12-P-BEARING         |    3     |
 | .                 | RUBBER PAD             |    2     |
 
-
 - Optional Parts
 
 |            | Part Name                                                                                        | Quantity |
@@ -69,7 +68,6 @@ sidebar:
 | .          | [U2D2](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=3288&keyword=u2d2)              |    1     |
 | .          | [U2D2 Power Hub Board](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=3332&GC=GD0B01) |    1     |
 | **Plate**  | [Base Plate-02](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=3331)                  |    1     |
-| .          | .                                                                                                |    1     |
 
 
 <!-- - [Parts of OpenManipulator](https://docs.google.com/a/robotis.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit?usp=sharing) -->

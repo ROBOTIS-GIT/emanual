@@ -237,7 +237,7 @@ main:
         url: /platform/manipulator_h/introduction/
       - title: "RM-X52-TNM"
         titlekr: "RM-X52-TNM"
-        url: /platform/openmanipulator/overview/
+        url: /platform/openmanipulator/
       - title: "RM-P60-RNH"
         titlekr: "RM-P60-RNH"
         url: /platform/openmanipulator_p60/overview/
@@ -14776,18 +14776,18 @@ turtlebot3:
 #OpenManipulator
 openmanipulator:
   - title: "Overview"
-    url: /platform/openmanipulator/overview/#overview
+    url: /platform/openmanipulator/#overview
     children:
       - title: "OpenSoftware"
-        url: /platform/openmanipulator/overview/#opensoftware
+        url: /platform/openmanipulator/#opensoftware
       - title: "OpenHardware"
-        url: /platform/openmanipulator/overview/#openhardware
+        url: /platform/openmanipulator/#openhardware
       - title: "OpenCR (Embedded board)"
-        url: /platform/openmanipulator/overview/#opencr-embedded-board
+        url: /platform/openmanipulator/#opencr-embedded-board
       - title: "Dynamixel Examples"
-        url: /platform/openmanipulator/overview/#dynamixel-examples
+        url: /platform/openmanipulator/#dynamixel-examples
       - title: "Introduction video"
-        url: /platform/openmanipulator/overview/#introduction-video
+        url: /platform/openmanipulator/#introduction-video
   - title: "Specification"
     url: /platform/openmanipulator/specification/#specification
     children:
@@ -14804,10 +14804,10 @@ openmanipulator:
         url: /platform/openmanipulator/getting_started/#about-openmanipulator
       - title: "OpenManipulator Setup"
         url: /platform/openmanipulator/getting_started/#openmanipulator-setup
-      - title: "Let's try basic manipulation"
-        url: /platform/openmanipulator/getting_started/#lets-try-basic-manipulation
-      - title: "Challenge Various Applications"
-        url: /platform/openmanipulator/getting_started/#challenge-various-applications
+      - title: "Let's try Basic Operation"
+        url: /platform/openmanipulator/getting_started/#lets-try-basic-operation
+      - title: "Challenge Applications"
+        url: /platform/openmanipulator/getting_started/#challenge-applications
       - title: "Let's design my own manipulator"
         url: /platform/openmanipulator/getting_started/#lets-design-my-own-manipulator
   - title: "Assembly"
@@ -14877,24 +14877,22 @@ openmanipulator:
         url: /platform/openmanipulator/ros_simulation/#launch-gazebo
       - title: "Controller for gazebo"
         url: /platform/openmanipulator/ros_simulation/#controller-for-gazebo
-  - title: "[ROS] Examples"
-    url: /platform/openmanipulator/ros_examples/#ros-examples
+  - title: "[ROS] Applications"
+    url: /platform/openmanipulator/ros_applications/#ros-applications
     children:
       - title: "Camera Application"
-        url: /platform/openmanipulator/ros_examples/#camera-application
+        url: /platform/openmanipulator/ros_applications/#camera-application
         children:
           - title: "Astra Pro"
-            url: /platform/openmanipulator/ros_examples/#astra-pro
+            url: /platform/openmanipulator/ros_applications/#astra-pro
           - title: "Realsense D435"
-            url: /platform/openmanipulator/ros_examples/#realsense-d435
+            url: /platform/openmanipulator/ros_applications/#realsense-d435
           - title: "Raspberry Pi Camera V2"
-            url: /platform/openmanipulator/ros_examples/#raspberry-pi-camera-v2
+            url: /platform/openmanipulator/ros_applications/#raspberry-pi-camera-v2
           - title: "AR Marker package"
-            url: /platform/openmanipulator/ros_examples/#ar-marker-package
+            url: /platform/openmanipulator/ros_applications/#ar-marker-package
       - title: "Master Slave"
-        url: /platform/openmanipulator/ros_examples/#master-slave
-      - title: "Mobile Manipulation"
-        url: /platform/openmanipulator/ros_examples/#mobile-manipulation
+        url: /platform/openmanipulator/ros_applications/#master-slave
   - title: "[OpenCR] Setup"
     url: /platform/openmanipulator/opencr_setup/#opencr-setup
     children:
@@ -14932,6 +14930,8 @@ openmanipulator:
         url: /platform/openmanipulator/tool_modification/#vacuum-gripper
       - title: "Pen Holder"
         url: /platform/openmanipulator/tool_modification/#pen-holder
+  - title: "Mobile Manipulation"
+    url: /platform/openmanipulator/mobile_manipulation/#mobile-manipulation
   - title: "Friends"
     url: /platform/openmanipulator/friends/#friends
     children:

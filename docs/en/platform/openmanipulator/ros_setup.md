@@ -77,17 +77,14 @@ If the catkin_make command has been completed without any errors, all the prepar
 
 ## [Communication Converter](#communication-converter)
 
+## [U2D2](#u2d2)
+
 Connect micro USB (connected to PC), Dynamixel(OpenManipulator), and 12V Power to U2D2 and U2D2 power hub board as shown below.
 
 <img src="/assets/images/platform/openmanipulator/OpenManipulator_u2d2_setup.png" width="500">
 
 **NOTE** : U2D2 and U2D2 power hub board are required when operating OpenManipulator using U2D2.
 {: .notice}
-
-**TIP** : You can replace U2D2 with OpenCR1.0. In this case, please follow the instruction in [OpenCR Settings](#opencr-settings) section.
-{: .notice--success}
-
-## [U2D2](#u2d2)
 
 **NOTE** : If you are using OpenCR instead of U2D2 to connect to PC, please refer to OpenCR Setting section.
 {: .notice--info}
@@ -114,7 +111,7 @@ Please refer the detailed description of [OpenCR](http://emanual.robotis.com/doc
 
 Download Arduino IDE and load OpenCR board on it
 
-- [Arduino IDE for using OpenCR](/docs/en/parts/controller/opencr10/#arduino-ide)
+- [Arduino IDE for using OpenCR](/docs/en/platform/openmanipulator/opencr_setup/#arduino-ide-setup)
 
 Find `usb to dxl` example source codes.
 

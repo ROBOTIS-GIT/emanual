@@ -5,7 +5,7 @@ ref: openmanipulator
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/openmanipulator/ros_examples/
+permalink: /docs/en/platform/openmanipulator/ros_applications/
 sidebar:
   title: OpenManipulator RM-X52-TNM
   nav: "openmanipulator"
@@ -13,7 +13,7 @@ sidebar:
 
 <div style="counter-reset: h1 8"></div>
 
-# [[ROS] Examples](#ros-examples)
+# [[ROS] Applications](#ros-applications)
 
 ## [Camera Application](#camera-application)
 
@@ -210,7 +210,7 @@ $ roslaunch raspicam_node camerav2_1280x960.launch
 - [Getting Started](https://projects.raspberrypi.org/en/projects/getting-started-with-picamera)
 - [Pi Camera ROS package](https://github.com/UbiquityRobotics/raspicam_node)
 
-### [AR Marker](#ar-marker)
+### [AR Marker Package](#ar-marker-package)
 
 {% capture notice_01 %}
 **NOTE**:
@@ -411,39 +411,6 @@ There are four control modes.
 3. Stop Recording Trajectory: Ends the recording.
 4. Play Recorded Trajectory: The trajectory recorded in the 2nd mode is reproduced only by the slave robot.
 
-## [Mobile Manipulation](#mobile-manipulation)
-
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/Qhvk5cnX2hM" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/P82pZsqpBg0" frameborder="0" allowfullscreen></iframe>
-
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/DLOq8yNcCoE" frameborder="0" allowfullscreen></iframe>
-
-  **TIP**: You can get a more information about it in [Manipulation section of TurtleBot3](/docs/en/platform/turtlebot3/manipulation/#manipulation)
-  {: .notice--success}
-
-Install dependent packages
-
-  ``` bash
-  $ cd ~/catkin_ws/src
-  $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_with_tb3.git
-  $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_with_tb3_msgs.git
-  $ git clone https://github.com/ROBOTIS-GIT/turtlebot3.git
-  $ sudo apt-get install ros-kinetic-smach*
-  $ cd ~/catkin_ws && catkin_make
-  ```
-
-Load a TurtleBot3 Waffle or Waffle Pi with OpenManipulator on RViz.
-
-  **TIP**: TB3_MODEL =  `waffle`, `waffle_pi`
-  {: .notice--success}
-
-  ``` bash
-  $ export TURTLEBOT3_MODEL=${TB3_MODEL}
-  $ roslaunch open_manipulator_with_tb3_description open_manipulator_with_tb3_rviz.launch
-  ```
-
-![](/assets/images/platform/openmanipulator/TurtleBot3_with_Open_Manipulator.png)
 
 [OpenCR]: /docs/en/parts/controller/opencr10/
 [OpenCR Manual]: /docs/en/parts/controller/opencr10/
