@@ -246,6 +246,12 @@ sidebar:
 
 # [R+ SMART 다운로드/설치](#r-smart-다운로드설치)
 
+**주의** : 구글의 변경된 정책으로 SMS 기능은 더이상 지원되지 않습니다.  
+SMS 기능이 필요한 경우 이전 버전의 앱 설치파일(APK)을 다운로드 받아 수동으로 설치하시기 바랍니다.  
+[R+ SMART (v0.9.3.6) 다운로드](http://www.robotis.com/service/download.php?no=1674)
+[R+ SMART2 (v0.9.3.6) 다운로드](http://www.robotis.com/service/download.php?no=1675)
+{: .notice--warning}
+
 - 시스템 최저 요구 사양
   - OS : Android 2.3이상
   - 하드웨어 : 1.2 dual-core CPU, 1GB RAM 이상, 블루투스 및 센서 내장 기기
