@@ -134,7 +134,7 @@ Upload the `usb to dxl` example source to OpenCR.
 
 ![](/assets/images/platform/openmanipulator/upload_use_to_dxl.png)
 
-When the upload is completed, the following comments are displayed in the log window. If you see a different comment than this, try uploading again and refer to the [OpenCR](http://emanual.robotis.com/docs/en/parts/controller/opencr10/) for details.
+When the upload is completed, the following comments are displayed in the log window. If it is shown different comments than this, try uploading again. Refer to the [OpenCR](http://emanual.robotis.com/docs/en/parts/controller/opencr10/) for details.
 
 ![](/assets/images/parts/controller/opencr10/downloader_01.png)
 
