@@ -11,7 +11,6 @@ sidebar:
   nav: "openmanipulator_p60"
 ---
 
-**OpenManipulator RM-P60-RNM Picture**
 
 # [Overview](#overview)
 
