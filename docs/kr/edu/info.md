@@ -55,7 +55,10 @@ sidebar:
 
 3. 다운로드한 파일을 실행하고 아래와 같이 엔트리를 PC에 설치합니다
 
-    ![](/assets/images/edu/info/entry_003.png)
+    ![](/assets/images/edu/info/entry_003_1.png)  
+    ![](/assets/images/edu/info/entry_003_2.png)  
+    ![](/assets/images/edu/info/entry_003_3.png)  
+    ![](/assets/images/edu/info/entry_003_4.png)  
 
 ## [PC에 예제 다운로드하기](#pc에-예제-다운로드하기)
 
