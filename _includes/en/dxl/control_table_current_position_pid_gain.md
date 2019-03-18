@@ -9,5 +9,4 @@ Below figure is a block diagram describing the current-based position controller
 ![](/assets/images/dxl/current_position_controller_pid_gain.jpg)
 
 **NOTE** : K<sub>a</sub> is an Anti-windup Gain that cannot be modified by users.  
-For more details about the PID controller and Feedforward controller, please refer to the [PID Controller](http://en.wikipedia.org/wiki/PID_controller) and [Feed Forward](https://en.wikipedia.org/wiki/Feed_forward_(control)).
 {: .notice}

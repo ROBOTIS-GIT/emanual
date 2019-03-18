@@ -5,8 +5,8 @@ Desired position can be set with Goal Position(116). From the front view of Dyna
 | Mode     | Values     | Description |
 | :--------: | :--------: | :--------: |
 | Position Control Mode | Min Position Limit(52) ~ Max Position Limit(48)| Initial Value : 0 ~ 4,095|
-|Extended Position Control Mode|-1,048,575 ~ 1,048,575|-256[rev] ~ 256[rev]|
-|Current-based Position Control Mode|-1,048,575 ~ 1,048,575|-256[rev] ~ 256[rev]|
+|Extended Position Control Mode|-1,048,575 ~ 1,048,575|-256[rev] ~ 256[rev]|{% if page.product_group!='dxl_xl430' %}
+|Current-based Position Control Mode|-1,048,575 ~ 1,048,575|-256[rev] ~ 256[rev]|{% else %}{% endif %}
 
 |Degree Conversion Constant|Description|
 | :---: | :---: |

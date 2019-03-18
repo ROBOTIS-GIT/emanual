@@ -13,11 +13,11 @@
 
 {% capture group_notice_01 %}
 **참고** : 제어 모드가 변경될 때 제어기의Gain(PID, Feedforward)은 제어 모드에 적합하게 초기화 됩니다. 또한 프로파일 생성기와 제한값들 역시 초기화 됩니다.
-1. [Profile Velocity(112)], [Profile Acceleration(108)] : '0'으로 초기화
-2. [Goal PWM(100)], [Goal Current(102)] : [PWM Limit(36)], [Current Limit(38)]으로 초기화
-3. 전류기반 위치 제어 모드 : 별도의 Position Gain(PID)과 [PWM Limit(36)] 값으로 재설정 됩니다.  
+1. [Profile Velocity(112)](#profile-velocity112), [Profile Acceleration(108)](#profile-acceleration108) : '0'으로 초기화
+2. [Goal PWM(100)](#goal-pwm100), [Goal Current(102)](#goal-current102) : [PWM Limit(36)](#pwm-limit36), [Current Limit(38)](#current-limit38)으로 초기화
+3. 전류기반 위치 제어 모드 : 별도의 Position Gain(PID)과 [PWM Limit(36)](#pwm-limit36) 값으로 재설정 됩니다.  
 
-변경된 Position Gain(PID)과 [PWM Limit(36)] 값은 컨트롤테이블을 통해서 확인할 수 있습니다.
+변경된 Position Gain(PID)과 [PWM Limit(36)](#pwm-limit36) 값은 컨트롤테이블을 통해서 확인할 수 있습니다.
 {% endcapture %}
 
 <div class="notice">

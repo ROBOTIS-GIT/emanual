@@ -30,7 +30,7 @@ When given Goal Position(116), Dynamixel's profile creates desired velocity traj
 When Dynamixel receives updated desired position from a new Goal Position(116) while it is moving toward the previous Goal Position(116), velocity smoothly varies for the new desired velocity trajectory.  
 Maintaining velocity continuity while updating desired velocity trajectory is called Velocity Override.  
 For a simple calculation, let's assume that the initial velocity of the Profile is '0'.  
-The following explains how Profile processes Goal Position(116) instruction in Position Control mode, Extended Position Control Mode, Current-based Position Control Mode.
+The following explains how Profile processes Goal Position(116) instruction in Position Control mode, Extended Position Control Mode{% if page.product_group!='dxl_xl430' %}, Current-based Position Control Mode{% else %}{% endif %}.
 
 1. An Instruction from the user is transmitted via Dynamixel bus, then registered to Goal Position(116) (If Velocity-based Profile is selected).
 2. Acceleration time(t1) is calculated from Profile Velocity(112) and [Profile Acceleration(108)].
