@@ -158,277 +158,277 @@ This parameter is descripted on OpenManipulator.cpp in open_manipulator_libs pkg
 `~/catkin_ws/src/open_manipulator/open_manipulator_libs/src/OpenManipulator.cpp`
 
 ```
-----------<Manipulator Description>----------
-<Degree of freedom>
- 4.000
-<Size of Components>
- 5.000
+    ----------<Manipulator Description>----------
+    <Degree of freedom>
+    4.000
+    <Size of Components>
+    5.000
 
-<Configuration of world>
- [Name]
- -World Name : world
- -Child Name : joint1
- [Static Pose]
- -Position :
-(0.000, 0.000, 0.000)
- -Orientation :
-(1.000, 0.000, 0.000
- 0.000, 1.000, 0.000
- 0.000, 0.000, 1.000)
- [Dynamic Pose]
- -Linear Velocity :
-(0.000, 0.000, 0.000)
- -Linear acceleration :
-(0.000, 0.000, 0.000)
- -Angular Velocity :
-(0.000, 0.000, 0.000)
- -Angular acceleration :
-(0.000, 0.000, 0.000)
+    <Configuration of world>
+    [Name]
+    -World Name : world
+    -Child Name : joint1
+    [Static Pose]
+    -Position :
+    (0.000, 0.000, 0.000)
+    -Orientation :
+    (1.000, 0.000, 0.000
+    0.000, 1.000, 0.000
+    0.000, 0.000, 1.000)
+    [Dynamic Pose]
+    -Linear Velocity :
+    (0.000, 0.000, 0.000)
+    -Linear acceleration :
+    (0.000, 0.000, 0.000)
+    -Angular Velocity :
+    (0.000, 0.000, 0.000)
+    -Angular acceleration :
+    (0.000, 0.000, 0.000)
 
-<Configuration of gripper>
- [Component Type]
-  Tool
- [Name]
- -Parent Name : joint4
- [Actuator]
- -Actuator Name : tool_dxl
- -ID :  15
- -Joint Axis :
-(0.000, 0.000, 0.000)
- -Coefficient :  -0.015
- -Limit :
-    Maximum : 0.010, Minimum : -0.010
- [Actuator Value]
- -Value :  0.008
- -Velocity :  0.000
- -Acceleration :  0.000
- -Effort :  0.000
- [Constant]
- -Relative Position from parent component :
-(0.130, 0.000, 0.000)
- -Relative Orientation from parent component :
-(1.000, 0.000, 0.000
- 0.000, 1.000, 0.000
- 0.000, 0.000, 1.000)
- -Mass :  0.000
- -Inertia Tensor :
-(1.000, 0.000, 0.000
- 0.000, 1.000, 0.000
- 0.000, 0.000, 1.000)
- -Center of Mass :
-(0.000, 0.000, 0.000)
- [Variable]
- -Position :
-(0.138, -0.005, 0.015)
- -Orientation :
-(-0.006, 0.043, 0.999
- 0.000, 0.999, -0.043
- -1.000, 0.000, -0.006)
- -Linear Velocity :
-(0.000, 0.000, 0.000)
- -Linear acceleration :
-(0.000, 0.000, 0.000)
- -Angular Velocity :
-(0.000, 0.000, 0.000)
- -Angular acceleration :
-(0.000, 0.000, 0.000)
+    <Configuration of gripper>
+    [Component Type]
+      Tool
+    [Name]
+    -Parent Name : joint4
+    [Actuator]
+    -Actuator Name : tool_dxl
+    -ID :  15
+    -Joint Axis :
+    (0.000, 0.000, 0.000)
+    -Coefficient :  -0.015
+    -Limit :
+        Maximum : 0.010, Minimum : -0.010
+    [Actuator Value]
+    -Value :  0.008
+    -Velocity :  0.000
+    -Acceleration :  0.000
+    -Effort :  0.000
+    [Constant]
+    -Relative Position from parent component :
+    (0.130, 0.000, 0.000)
+    -Relative Orientation from parent component :
+    (1.000, 0.000, 0.000
+    0.000, 1.000, 0.000
+    0.000, 0.000, 1.000)
+    -Mass :  0.000
+    -Inertia Tensor :
+    (1.000, 0.000, 0.000
+    0.000, 1.000, 0.000
+    0.000, 0.000, 1.000)
+    -Center of Mass :
+    (0.000, 0.000, 0.000)
+    [Variable]
+    -Position :
+    (0.138, -0.005, 0.015)
+    -Orientation :
+    (-0.006, 0.043, 0.999
+    0.000, 0.999, -0.043
+    -1.000, 0.000, -0.006)
+    -Linear Velocity :
+    (0.000, 0.000, 0.000)
+    -Linear acceleration :
+    (0.000, 0.000, 0.000)
+    -Angular Velocity :
+    (0.000, 0.000, 0.000)
+    -Angular acceleration :
+    (0.000, 0.000, 0.000)
 
-<Configuration of joint1>
- [Component Type]
-  Active Joint
- [Name]
- -Parent Name : world
- -Child Name 1 : joint2
- [Actuator]
- -Actuator Name : joint_dxl
- -ID :  11
- -Joint Axis :
-(0.000, 0.000, 1.000)
- -Coefficient :  1.000
- -Limit :
-    Maximum : 3.142, Minimum : -3.142
- [Actuator Value]
- -Value :  -0.043
- -Velocity :  0.000
- -Acceleration :  0.000
- -Effort :  0.000
- [Constant]
- -Relative Position from parent component :
-(0.012, 0.000, 0.017)
- -Relative Orientation from parent component :
-(1.000, 0.000, 0.000
- 0.000, 1.000, 0.000
- 0.000, 0.000, 1.000)
- -Mass :  0.000
- -Inertia Tensor :
-(1.000, 0.000, 0.000
- 0.000, 1.000, 0.000
- 0.000, 0.000, 1.000)
- -Center of Mass :
-(0.000, 0.000, 0.000)
- [Variable]
- -Position :
-(0.012, 0.000, 0.017)
- -Orientation :
-(0.999, 0.043, 0.000
- -0.043, 0.999, 0.000
- 0.000, 0.000, 1.000)
- -Linear Velocity :
-(0.000, 0.000, 0.000)
- -Linear acceleration :
-(0.000, 0.000, 0.000)
- -Angular Velocity :
-(0.000, 0.000, 0.000)
- -Angular acceleration :
-(0.000, 0.000, 0.000)
+    <Configuration of joint1>
+    [Component Type]
+      Active Joint
+    [Name]
+    -Parent Name : world
+    -Child Name 1 : joint2
+    [Actuator]
+    -Actuator Name : joint_dxl
+    -ID :  11
+    -Joint Axis :
+    (0.000, 0.000, 1.000)
+    -Coefficient :  1.000
+    -Limit :
+        Maximum : 3.142, Minimum : -3.142
+    [Actuator Value]
+    -Value :  -0.043
+    -Velocity :  0.000
+    -Acceleration :  0.000
+    -Effort :  0.000
+    [Constant]
+    -Relative Position from parent component :
+    (0.012, 0.000, 0.017)
+    -Relative Orientation from parent component :
+    (1.000, 0.000, 0.000
+    0.000, 1.000, 0.000
+    0.000, 0.000, 1.000)
+    -Mass :  0.000
+    -Inertia Tensor :
+    (1.000, 0.000, 0.000
+    0.000, 1.000, 0.000
+    0.000, 0.000, 1.000)
+    -Center of Mass :
+    (0.000, 0.000, 0.000)
+    [Variable]
+    -Position :
+    (0.012, 0.000, 0.017)
+    -Orientation :
+    (0.999, 0.043, 0.000
+    -0.043, 0.999, 0.000
+    0.000, 0.000, 1.000)
+    -Linear Velocity :
+    (0.000, 0.000, 0.000)
+    -Linear acceleration :
+    (0.000, 0.000, 0.000)
+    -Angular Velocity :
+    (0.000, 0.000, 0.000)
+    -Angular acceleration :
+    (0.000, 0.000, 0.000)
 
-<Configuration of joint2>
- [Component Type]
-  Active Joint
- [Name]
- -Parent Name : joint1
- -Child Name 1 : joint3
- [Actuator]
- -Actuator Name : joint_dxl
- -ID :  12
- -Joint Axis :
-(0.000, 1.000, 0.000)
- -Coefficient :  1.000
- -Limit :
-    Maximum : 1.571, Minimum : -2.050
- [Actuator Value]
- -Value :  -0.052
- -Velocity :  0.000
- -Acceleration :  0.000
- -Effort :  0.000
- [Constant]
- -Relative Position from parent component :
-(0.000, 0.000, 0.058)
- -Relative Orientation from parent component :
-(1.000, 0.000, 0.000
- 0.000, 1.000, 0.000
- 0.000, 0.000, 1.000)
- -Mass :  0.000
- -Inertia Tensor :
-(1.000, 0.000, 0.000
- 0.000, 1.000, 0.000
- 0.000, 0.000, 1.000)
- -Center of Mass :
-(0.000, 0.000, 0.000)
- [Variable]
- -Position :
-(0.012, 0.000, 0.075)
- -Orientation :
-(0.998, 0.043, -0.052
- -0.043, 0.999, 0.002
- 0.052, 0.000, 0.999)
- -Linear Velocity :
-(0.000, 0.000, 0.000)
- -Linear acceleration :
-(0.000, 0.000, 0.000)
- -Angular Velocity :
-(0.000, 0.000, 0.000)
- -Angular acceleration :
-(0.000, 0.000, 0.000)
+    <Configuration of joint2>
+    [Component Type]
+      Active Joint
+    [Name]
+    -Parent Name : joint1
+    -Child Name 1 : joint3
+    [Actuator]
+    -Actuator Name : joint_dxl
+    -ID :  12
+    -Joint Axis :
+    (0.000, 1.000, 0.000)
+    -Coefficient :  1.000
+    -Limit :
+        Maximum : 1.571, Minimum : -2.050
+    [Actuator Value]
+    -Value :  -0.052
+    -Velocity :  0.000
+    -Acceleration :  0.000
+    -Effort :  0.000
+    [Constant]
+    -Relative Position from parent component :
+    (0.000, 0.000, 0.058)
+    -Relative Orientation from parent component :
+    (1.000, 0.000, 0.000
+    0.000, 1.000, 0.000
+    0.000, 0.000, 1.000)
+    -Mass :  0.000
+    -Inertia Tensor :
+    (1.000, 0.000, 0.000
+    0.000, 1.000, 0.000
+    0.000, 0.000, 1.000)
+    -Center of Mass :
+    (0.000, 0.000, 0.000)
+    [Variable]
+    -Position :
+    (0.012, 0.000, 0.075)
+    -Orientation :
+    (0.998, 0.043, -0.052
+    -0.043, 0.999, 0.002
+    0.052, 0.000, 0.999)
+    -Linear Velocity :
+    (0.000, 0.000, 0.000)
+    -Linear acceleration :
+    (0.000, 0.000, 0.000)
+    -Angular Velocity :
+    (0.000, 0.000, 0.000)
+    -Angular acceleration :
+    (0.000, 0.000, 0.000)
 
-<Configuration of joint3>
- [Component Type]
-  Active Joint
- [Name]
- -Parent Name : joint2
- -Child Name 1 : joint4
- [Actuator]
- -Actuator Name : joint_dxl
- -ID :  13
- -Joint Axis :
-(0.000, 1.000, 0.000)
- -Coefficient :  1.000
- -Limit :
-    Maximum : 1.530, Minimum : -1.571
- [Actuator Value]
- -Value :  0.546
- -Velocity :  0.000
- -Acceleration :  0.000
- -Effort :  0.000
- [Constant]
- -Relative Position from parent component :
-(0.024, 0.000, 0.128)
- -Relative Orientation from parent component :
-(1.000, 0.000, 0.000
- 0.000, 1.000, 0.000
- 0.000, 0.000, 1.000)
- -Mass :  0.000
- -Inertia Tensor :
-(1.000, 0.000, 0.000
- 0.000, 1.000, 0.000
- 0.000, 0.000, 1.000)
- -Center of Mass :
-(0.000, 0.000, 0.000)
- [Variable]
- -Position :
-(0.029, -0.001, 0.204)
- -Orientation :
-(0.880, 0.043, 0.474
- -0.038, 0.999, -0.020
- -0.474, 0.000, 0.880)
- -Linear Velocity :
-(0.000, 0.000, 0.000)
- -Linear acceleration :
-(0.000, 0.000, 0.000)
- -Angular Velocity :
-(0.000, 0.000, 0.000)
- -Angular acceleration :
-(0.000, 0.000, 0.000)
+    <Configuration of joint3>
+    [Component Type]
+      Active Joint
+    [Name]
+    -Parent Name : joint2
+    -Child Name 1 : joint4
+    [Actuator]
+    -Actuator Name : joint_dxl
+    -ID :  13
+    -Joint Axis :
+    (0.000, 1.000, 0.000)
+    -Coefficient :  1.000
+    -Limit :
+        Maximum : 1.530, Minimum : -1.571
+    [Actuator Value]
+    -Value :  0.546
+    -Velocity :  0.000
+    -Acceleration :  0.000
+    -Effort :  0.000
+    [Constant]
+    -Relative Position from parent component :
+    (0.024, 0.000, 0.128)
+    -Relative Orientation from parent component :
+    (1.000, 0.000, 0.000
+    0.000, 1.000, 0.000
+    0.000, 0.000, 1.000)
+    -Mass :  0.000
+    -Inertia Tensor :
+    (1.000, 0.000, 0.000
+    0.000, 1.000, 0.000
+    0.000, 0.000, 1.000)
+    -Center of Mass :
+    (0.000, 0.000, 0.000)
+    [Variable]
+    -Position :
+    (0.029, -0.001, 0.204)
+    -Orientation :
+    (0.880, 0.043, 0.474
+    -0.038, 0.999, -0.020
+    -0.474, 0.000, 0.880)
+    -Linear Velocity :
+    (0.000, 0.000, 0.000)
+    -Linear acceleration :
+    (0.000, 0.000, 0.000)
+    -Angular Velocity :
+    (0.000, 0.000, 0.000)
+    -Angular acceleration :
+    (0.000, 0.000, 0.000)
 
-<Configuration of joint4>
- [Component Type]
-  Active Joint
- [Name]
- -Parent Name : joint3
- -Child Name 1 : gripper
- [Actuator]
- -Actuator Name : joint_dxl
- -ID :  14
- -Joint Axis :
-(0.000, 1.000, 0.000)
- -Coefficient :  1.000
- -Limit :
-    Maximum : 2.000, Minimum : -1.800
- [Actuator Value]
- -Value :  1.083
- -Velocity :  0.000
- -Acceleration :  0.000
- -Effort :  -2.690
- [Constant]
- -Relative Position from parent component :
-(0.124, 0.000, 0.000)
- -Relative Orientation from parent component :
-(1.000, 0.000, 0.000
- 0.000, 1.000, 0.000
- 0.000, 0.000, 1.000)
- -Mass :  0.000
- -Inertia Tensor :
-(1.000, 0.000, 0.000
- 0.000, 1.000, 0.000
- 0.000, 0.000, 1.000)
- -Center of Mass :
-(0.000, 0.000, 0.000)
- [Variable]
- -Position :
-(0.138, -0.005, 0.145)
- -Orientation :
-(-0.006, 0.043, 0.999
- 0.000, 0.999, -0.043
- -1.000, 0.000, -0.006)
- -Linear Velocity :
-(0.000, 0.000, 0.000)
- -Linear acceleration :
-(0.000, 0.000, 0.000)
- -Angular Velocity :
-(0.000, 0.000, 0.000)
- -Angular acceleration :
-(0.000, 0.000, 0.000)
----------------------------------------------
+    <Configuration of joint4>
+    [Component Type]
+      Active Joint
+    [Name]
+    -Parent Name : joint3
+    -Child Name 1 : gripper
+    [Actuator]
+    -Actuator Name : joint_dxl
+    -ID :  14
+    -Joint Axis :
+    (0.000, 1.000, 0.000)
+    -Coefficient :  1.000
+    -Limit :
+        Maximum : 2.000, Minimum : -1.800
+    [Actuator Value]
+    -Value :  1.083
+    -Velocity :  0.000
+    -Acceleration :  0.000
+    -Effort :  -2.690
+    [Constant]
+    -Relative Position from parent component :
+    (0.124, 0.000, 0.000)
+    -Relative Orientation from parent component :
+    (1.000, 0.000, 0.000
+    0.000, 1.000, 0.000
+    0.000, 0.000, 1.000)
+    -Mass :  0.000
+    -Inertia Tensor :
+    (1.000, 0.000, 0.000
+    0.000, 1.000, 0.000
+    0.000, 0.000, 1.000)
+    -Center of Mass :
+    (0.000, 0.000, 0.000)
+    [Variable]
+    -Position :
+    (0.138, -0.005, 0.145)
+    -Orientation :
+    (-0.006, 0.043, 0.999
+    0.000, 0.999, -0.043
+    -1.000, 0.000, -0.006)
+    -Linear Velocity :
+    (0.000, 0.000, 0.000)
+    -Linear acceleration :
+    (0.000, 0.000, 0.000)
+    -Angular Velocity :
+    (0.000, 0.000, 0.000)
+    -Angular acceleration :
+    (0.000, 0.000, 0.000)
+    ---------------------------------------------
 ```
 
 ### [RViz](#rviz)
@@ -499,39 +499,52 @@ If you would like to see more detail topic message, click the `▶` button next 
 
 **Published Topic List** :
 A list of topics that the open_manipulator_controller publishes.
+- `/open_manipulator/states`
 - `/open_manipulator/joint_states`
 - `/open_manipulator/gripper/kinematics_pose`
-- `/open_manipulator/states`
+- `/open_manipulator/*joint_name*_position/command`
+- `/open_manipulator/rviz/moveit/update_start_state`
 
 **NOTE**: These topics are messages for checking the status of the robot regardless of the robot's motion.
 {: .notice--info}
 
 `/open_manipulator/joint_states`([sensor_msgs/JointState]{: .popup}) is a message indicating the states of joints of OpenManipulator. **"name"** indicates joint component names.  **"effort"** shows currents of the joint Dynamixels. **"position"** and **"velocity"** indicates angles and angular velocities of joints.
 
- <img src="/assets/images/platform/openmanipulator/rqt_joint_states.png" width="1000">
+ <!-- <img src="/assets/images/platform/openmanipulator/rqt_joint_states.png" width="1000"> -->
 
 `/open_manipulator/gripper/kinematics_pose`([open_manipulator_msgs/KinematicsPose]{: .popup}) is a message indicating pose (position and orientation) in [task space]{: .popup}. **"position"** indicates the x, y and z values of the center of the end-effector (tool). **"Orientation"** indicates the direction of the end-effector (tool) as quaternion.
 
- <img src="/assets/images/platform/openmanipulator/rqt_kinematic_pose.png" width="1000">
+ <!-- <img src="/assets/images/platform/openmanipulator/rqt_kinematic_pose.png" width="1000"> -->
 
 `/open_manipulator/states`([open_manipulator_msgs/OpenManipulatorState]{: .popup}) is a message indicating the status of OpenManipulator. **"open_manipulator_actuator_state"** indicates whether actuators (Dynamixels) are enabled ("ACTUATOR_ENABLE") or disabled ("ACTUATOR_DISABLE"). **"open_manipulator_moving_state"** indicates whether OpenManipulator is moving along the trajectory ("IS_MOVING") or stopped ("STOPPED").
 
- <img src="/assets/images/platform/openmanipulator/rqt_states.png" width="1000">
+ <!-- <img src="/assets/images/platform/openmanipulator/rqt_states.png" width="1000"> -->
+
+`/open_manipulator/*joint_name*_position/command`([std_msgs/Float64]{: .popup}) are the messages to publish goal position of each joint to gazebo simulation node. `*joint_name*` shows the name of each joint. The messages will only be published if you run the controller package with the `use_platform` parameter set to `false`.
+
+`/rviz/moveit/update_start_state`([std_msgs/Empty]{: .popup}) is a message to update start state of moveit! trajectory. This message will only be published if you run the controller package with the `use_moveit` parameter set to `true`.
 
 #### [Subscribed Topic List](#published-topic-list)
 
 **Subscribed Topic List**:
 A list of topics that the open_manipulator_controller subscribes.
 - `/open_manipulator/option`
+- `/open_manipulator/move_group/display_planned_path`
+- `/open_manipulator/move_group/goal`
+- `/open_manipulator/execute_trajectory/goal`
 
 **NOTE**: These topics are messages for checking the status of the robot regardless of the robot's motion.
 {: .notice--info}
 
-`/open_manipulator/option`([std_msgs::String]{: .popup}) is used to set OpenManipulator options.
-- **"print_open_manipulator_setting"** : request the open_manipulator_controller controller to display "Manipulator Description".
+`/open_manipulator/option`([std_msgs/String]{: .popup}) is used to set OpenManipulator options. **"print_open_manipulator_setting"** : request the open_manipulator_controller controller to display "Manipulator Description".
 
- <img src="/assets/images/platform/openmanipulator/rqt_option.png" width="1000">
+ <!-- <img src="/assets/images/platform/openmanipulator/rqt_option.png" width="1000"> -->
 
+`/open_manipulator/option`([moveit_msgs/DisplayTrajectory]{: .popup}) is used to subscribe a planned joint trajectory published from moveit!
+
+`/move_group/goal`([moveit_msgs/MoveGroupActionGoal]{: .popup}) is used to subscribe a planning option data published from moveit!
+
+`/move_group/execute_trajectory/goal`([moveit_msgs/ExecuteTrajectoryActionGoal]{: .popup}) is used to subscribe states of trajectory execution published from moveit!
 
 In addition, you can monitor topics through rqt whenever you have a topic added in your controller.
 
@@ -551,6 +564,14 @@ A list of service servers that open_manipulator_controller has.
 - `/open_manipulator/goal_joint_space_path` ([open_manipulator_msgs/SetJointPosition]{: .popup})  
 The user can use this service to create a trajectory in the [joint space]{: .popup}. The user inputs the angle of the target joint and the total time of the trajectory.
 
+- `/open_manipulator/goal_joint_space_path_to_kinematics_pose` ([open_manipulator_msgs/SetKinematicsPose]{: .popup})  
+The user can use this service to create a trajectory in the [joint space]{: .popup}. The user inputs the kinematics pose of the OpenManipulator end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
+
+- `/open_manipulator/goal_joint_space_path_to_kinematics_position` ([open_manipulator_msgs/SetKinematicsPose]{: .popup})  
+The user can use this service to create a trajectory in the [joint space]{: .popup}. The user inputs the kinematics pose(position only) of the OpenManipulator end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
+
+- `/open_manipulator/goal_joint_space_path_to_kinematics_orientation` ([open_manipulator_msgs/SetKinematicsPose]{: .popup})  
+The user can use this service to create a trajectory in the [joint space]{: .popup}. The user inputs the kinematics pose(orientation only) of the OpenManipulator end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
 
 - `/open_manipulator/goal_task_space_path` ([open_manipulator_msgs/SetKinematicsPose]{: .popup})  
 The user can use this service to create a trajectory in the [task space]{: .popup}. The user inputs the kinematics pose of the OpenManipulator end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
@@ -584,6 +605,17 @@ If the user set false at set_actuator_state valuable, the actuator will be disab
 - `/open_manipulator/goal_drawing_trajectory` ([open_manipulator_msgs/SetDrawingTrajectory]{: .popup})  
 The user can use this service to create a drawing trajectory. The user can create the circle, the rhombus, the heart, and the straight line trajectory.
 
+- `/moveit/get_joint_position` ([open_manipulator_msgs/GetJointPosition]{: .popup})  
+This service is used when using moveit! The user can use this service to receives a joint position which is calculated by move_group.
+
+- `/moveit/get_kinematics_pose` ([open_manipulator_msgs/GetKinematicsPose]{: .popup})  
+This service is used when using moveit! The user can use this service to receives a kinematics pose which is calculated by move_group.
+
+- `/moveit/set_joint_position` ([open_manipulator_msgs/SetJointPosition]{: .popup})  
+This service is used when using moveit! The user can use this service to create a trajectory in the [joint space]{: .popup} by move_group. The user inputs the angle of the target joint and the total time of the trajectory.
+
+- `/moveit/set_kinematics_pose` ([open_manipulator_msgs/SetKinematicsPose]{: .popup})  
+This service is used when using moveit! The user can use this service to create a trajectory in the [task space]{: .popup} by move_group. The user inputs the kinematics pose of the OpenManipulator end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory.
 
 [open_manipulator_msgs/GetJointPosition]: /docs/en/popup/open_manipulator_msgs_GetJointPosition/
 [open_manipulator_msgs/GetKinematicsPose]: /docs/en/popup/open_manipulator_msgs_GetKinematicsPose/
@@ -591,11 +623,17 @@ The user can use this service to create a drawing trajectory. The user can creat
 [open_manipulator_msgs/SetKinematicsPose]: /docs/en/popup/open_manipulator_msgs_SetKinematicsPose/
 [open_manipulator_msgs/SetActuatorState]: /docs/en/popup/open_manipulator_msgs_SetActuatorState/
 [open_manipulator_msgs/SetDrawingTrajectory]: /docs/en/popup/open_manipulator_msgs_SetDrawingTrajectory/
+[std_msgs/Float64]: /docs/en/popup/std_msgs_Float64_msg/
+[std_msgs/Empty]: /docs/en/popup/std_msgs_Empty_msg/
+[moveit_msgs/DisplayTrajectory]: /docs/en/popup/moveit_msgs_DisplayTrajectory_msg/
+[moveit_msgs/MoveGroupActionGoal]: /docs/en/popup/moveit_msgs_MoveGroup_action/
+[moveit_msgs/ExecuteTrajectoryActionGoal]: /docs/en/popup/moveit_msgs_ExecuteTrajectory_action/
+
 
 [sensor_msgs/JointState]: /docs/en/popup/sensor_msgs_JointState_msg/
 [open_manipulator_msgs/KinematicsPose]: /docs/en/popup/open_manipulator_msgs_KinematicsPose/
 [open_manipulator_msgs/OpenManipulatorState]: /docs/en/popup/open_manipulator_msgs_OpenManipulatorState/
-[std_msgs::String]: /docs/en/popup/std_msgs_string/
+[std_msgs/String]: /docs/en/popup/std_msgs_string/
 
 [task space]: /docs/en/popup/open_manipulator_coordinates/
 [joint space]: /docs/en/popup/open_manipulator_coordinates/

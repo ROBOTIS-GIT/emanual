@@ -25,8 +25,13 @@ Go to `Examples` → `OpenManipulator` → `example` → `Chain` → `open_manip
 
 Upload the example source to OpenCR.
 
+![](/assets/images/platform/openmanipulator/upload_chain_example.png)
+
+When the upload is completed, the following comments are displayed in the log window. 
+
+![](/assets/images/parts/controller/opencr10/downloader_01.png)
+
 **Tip**: If an error of `cmd_read_board_name fail: 0xF020` occurs constantly during upload, please refer to [OpenCR e-manual](http://emanual.robotis.com/docs/en/parts/controller/opencr10/#firmware-recovery-mode) to enter the firmware recovery mode and upload the source code again after entering mode.
-.
 {: .notice--success}
 
 ## [GUI Program](#gui-program)
@@ -39,7 +44,8 @@ Download Processing and load OpenCR board on it
 
 Open Processing and Go to `Tools` → `Add Tool..`. Search `ControlP5` and install it.
 
-![](/assets/images/platform/openmanipulator/OpenManipulator_chain_processing_1.png)
+<img src="/assets/images/platform/openmanipulator/processing_add_tools.png" width="400">
+<img src="/assets/images/platform/openmanipulator/OpenManipulator_chain_processing_1.png" width="400">
 
 Download processing source code for OpenManipulator.
 
@@ -47,13 +53,28 @@ Download processing source code for OpenManipulator.
 $ git clone https://github.com/ROBOTIS-GIT/open_manipulator_processing.git
 ```
 
-Open processing source code file
-(`open_manipulator_processing` → `Chain` → `Chain.pde`) on Processing IDE, and Run it.
+Open downloaded processing source code file (**Folder where you downloaded the source code** → `open_manipulator_processing` → `Chain` → `Chain.pde`) on Processing IDE, and Run it.
 
 **NOTE**: Upload **OpenCR example source code** to OpenCR before run **processing source code**.
 {: .notice--info}
 
+<img src="/assets/images/platform/openmanipulator/processing_open1.png" width="400">
+<img src="/assets/images/platform/openmanipulator/processing_open2.png" width="450">
+<img src="/assets/images/platform/openmanipulator/processing_run.png" width="400">
+
+When the processing source code is successfully executed, the following graphical GUI is displayed.
+
 ![](/assets/images/platform/openmanipulator/OpenManipulator_chain_processing_2.png)
+
+{% capture notice_01 %}
+**Tip**: If the processing console displays an error message and the GUI does not run normally, check the following:
+- Check if ControlP5 is properly installed.
+- Check if the graphics driver is installed properly.
+- Check if the Java library is properly installed.
+
+If you have checked the above and it does not work normally, I recommend running it in a different OS environment (Windows, mac, linux).
+{% endcapture %}
+<div class="notice--success">{{ notice_01 | markdownify }}</div>
 
 ### [Control Interface](##control-interface)
 

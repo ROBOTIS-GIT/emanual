@@ -134,7 +134,10 @@ Upload the `usb to dxl` example source to OpenCR.
 
 ![](/assets/images/platform/openmanipulator/upload_use_to_dxl.png)
 
-When the upload is completed, the following comments are displayed in the log window. If it is shown different comments than this, try uploading again. Refer to the [OpenCR](http://emanual.robotis.com/docs/en/parts/controller/opencr10/) for details.
+When the upload is completed, the following comments are displayed in the log window. 
 
 ![](/assets/images/parts/controller/opencr10/downloader_01.png)
 
+If it is shown different comments than this, try uploading again. Refer to the [OpenCR](http://emanual.robotis.com/docs/en/parts/controller/opencr10/) for details.
+
+**Tip**: If an error of `cmd_read_board_name fail: 0xF020` occurs constantly during upload, please refer to [OpenCR e-manual](http://emanual.robotis.com/docs/en/parts/controller/opencr10/#firmware-recovery-mode) to enter the firmware recovery mode and upload the source code again after entering mode.
