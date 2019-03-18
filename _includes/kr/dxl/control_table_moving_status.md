@@ -1,5 +1,5 @@
 
-움직임에 대한 추가적인 정보를 제공합니다. Following Error Bit(0x08)과 In-Position Bit(0x01)은 위치 제어 모드, 확장 위치 제어 모드, 전류기반 위치 제어 모드에서만 동작합니다.
+움직임에 대한 추가적인 정보를 제공합니다. Following Error Bit(0x08)과 In-Position Bit(0x01)은 위치 제어 모드, 확장 위치 제어 모드{% if page.product_group!='dxl_xl430' %}, 전류기반 위치 제어 모드{% else %}{% endif %}에서만 동작합니다.
 
 ||| 상세     | 설명     |
 | :---: | :---: |:---: | :---: |

@@ -26,7 +26,7 @@ Profile이란 모터 구동 시 급격하게 변하는 속도와 가속도를 �
 이와 같이 속도의 불연속이 발생하지 않도록 목표 속도 궤적을 생성하는 기능을 Velocity Override라고 합니다.  
 여기서는 수식의 단순화를 위해 Profile의 시작속도를 ‘0’으로 가정합니다.
 
-다음은 위치 제어 모드, 확장 위치 제어 모드, 전류기반 위치 제어 모드에서, Goal Position(116) 명령에 대한 Profile의 동작 과정을 나타냅니다.
+다음은 위치 제어 모드, 확장 위치 제어 모드{% if page.product_group!='dxl_xl430' %}, 전류기반 위치 제어 모드{% else %}{% endif %}에서 Goal Position(116) 명령에 대한 Profile의 동작 과정을 나타냅니다.
 
 1. 사용자의 요청이 통신 버스를 통해 Goal Position(116)에 등록됩니다(Velocity-based Profile의 경우).
 2. Profile Velocity(112)와 [Profile Acceleration(108)]에 의해서 가속 시간(t1)이 결정됩니다.  

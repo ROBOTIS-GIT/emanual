@@ -1,4 +1,4 @@
-This value provides additional information about the movement. Following Error Bit(0x08) and In-Position Bit(0x01) only work with Position Control Mode, Extended Position Control Mode, Current-based Position Control Mode.
+This value provides additional information about the movement. Following Error Bit(0x08) and In-Position Bit(0x01) only work with Position Control Mode, Extended Position Control Mode{% if page.product_group!='dxl_xl430' %}, Current-based Position Control Mode{% else %}{% endif %}.
 
 
 ||| Details     | Description     |
