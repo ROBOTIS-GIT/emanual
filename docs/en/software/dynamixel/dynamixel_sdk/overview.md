@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: overview
+ref: dynamixel_sdk_overview
 read_time: true
 share: true
 author_profile: false

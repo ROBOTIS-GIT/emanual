@@ -590,8 +590,13 @@ main:
         url: /parts/display/lm-10/
   - title: "FAQ"
     titlekr: "FAQ"
-    url: /faq/
-    urlkr: /faq/
+    children:
+      - title: "DYNAMIXEL"
+        titlekr: "다이나믹셀"
+        url: /faq/faq_dynamixel/
+      - title: "General"
+        titlekr: "자주 묻는 질문"
+        url: /faq/
 
 all-dynamixel:
   - title: "AX Series"

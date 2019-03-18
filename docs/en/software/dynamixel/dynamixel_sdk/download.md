@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: download
+ref: dynamixel_sdk_download
 read_time: true
 share: true
 author_profile: false
@@ -58,5 +58,3 @@ The example sources coded with C# / Java / MATLAB / LabVIEW are not using librar
 ![](/assets/images/sw/sdk/dynamixel_sdk/overview/dynamixel_sdk_language_struct.png)
 
 You can find out how to run the examples in the Dynamixel SDK sources at [here](/docs/en/software/dynamixel/dynamixel_sdk/sample_code/c_read_write_protocol_1_0/#sample-code)
-
-
