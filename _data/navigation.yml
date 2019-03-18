@@ -12639,12 +12639,12 @@ info:
     children:
       - titlekr: "R+ m.Task 2 설치하기"
         urlkr: /edu/info/#r-mtask-2-설치하기
-      - titlekr: "R+ Smart 설치하기"
-        urlkr: /edu/info/#r-smart-설치하기
+      - titlekr: "R+ 실과로봇 설치하기"
+        urlkr: /edu/info/#r-실과로봇-설치하기
       - titlekr: "제어기와 스마트기기 연결"
         urlkr: /edu/info/#제어기와-스마트기기-연결
-      - titlekr: "R+ Smart에서 예제 불러오기"
-        urlkr: /edu/info/#r-smart에서-예제-불러오기
+      - titlekr: "R+ 실과로봇에서 예제 불러오기"
+        urlkr: /edu/info/#r-실과로봇에서-예제-불러오기
   - titlekr: "교육자료 다운로드"
     urlkr: /edu/info/#교육자료-다운로드
     children:
