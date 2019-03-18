@@ -36,10 +36,10 @@ sidebar:
 
 
 ## [Dimension](#dimension)
-![](/assets/images/platform/openmanipulator_p60/dimension.jpg)
+![](/assets/images/platform/openmanipulator_p60/dimension.png)
 
 If you have a gripper([RH-P12-RN(A)](/docs/en/platform/rh_p12_rna/)), see below. 
-![](/assets/images/platform/openmanipulator_p60/dimension.jpg)
+![](/assets/images/platform/openmanipulator_p60/dimension_with_gripper.png)
 
 
 ## [Home Position](#home-position)
