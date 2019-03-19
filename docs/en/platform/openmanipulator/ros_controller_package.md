@@ -143,7 +143,7 @@ Even if you can't find any Dynamixels, please check firmware to use ROBOTIS soft
 **NOTE**:
 - The below instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 - This instruction is supposed to be running on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.
-- Make sure to run the [Open Manipulator controller](/docs/en/platform/openmanipulator/ros_controller_package/#launch-controller) instructions before running the instructions below.
+- Make sure to run the [OpenManipulator controller](/docs/en/platform/openmanipulator/ros_controller_package/#launch-controller) instructions before running the instructions below.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
@@ -153,8 +153,8 @@ Publish a topic message to check the OpenManipulator setting.
 $ rostopic pub /open_manipulator/option std_msgs/String "print_open_manipulator_setting"
 ```
 
-<**Manipulator Description**> will be printed on the terminal launch the open_manipulator_controller. It is shown that present state of the OpenManipulator.  
-This parameter is descripted on OpenManipulator.cpp in open_manipulator_libs pkg  
+<**Manipulator Description**> will be printed on the terminal launch the open_manipulator_controller. It is shown that present states of the OpenManipulator.  
+This parameter is descripted on OpenManipulator.cpp in open_manipulator_libs package.  
 `~/catkin_ws/src/open_manipulator/open_manipulator_libs/src/OpenManipulator.cpp`
 
 ```
@@ -448,9 +448,9 @@ $ roslaunch open_manipulator_description open_manipulator_rviz.launch
 
 {% capture notice_01 %}
 **NOTE**:
-- If you launched the [OpenManipulator controller](/docs/en/platform/openmanipulator/ros_controller_package/#launch-controller) before launching the open_manipulator_controller file, the robot model on Rviz would be synchronized with the actual robot.
-- If the user would like to check only model of OpenManipulator without control the actual OpenManipulator, the user can launch the Rviz without the OpenManipulator controller.
-The user can change each joint by GUI, if the user launch only Rviz by executing the following command :
+- If you launched the [OpenManipulator controller](/docs/en/platform/openmanipulator/ros_controller_package/#launch-controller) before launching the open_manipulator_controller file, the robot model on RViz would be synchronized with the actual robot.
+- If the user would like to check only model of OpenManipulator without control the actual OpenManipulator, the user can launch the RViz without the OpenManipulator controller.
+The user can change each joint by GUI, if the user launch only RViz by executing the following command :
 `$ roslaunch open_manipulator_description open_manipulator_rviz.launch use_gui:=true`
 
 {% endcapture %}
@@ -464,11 +464,11 @@ The user can change each joint by GUI, if the user launch only Rviz by executing
 **NOTE**:
 - This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 - This instruction is supposed to be running on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.
-- Make sure to run the [Open Manipulator controller](/docs/en/platform/openmanipulator/ros_controller_package/#launch-controller) instructions before running the instructions below.
+- Make sure to run the [OpenManipulator controller](/docs/en/platform/openmanipulator/ros_controller_package/#launch-controller) instructions before running the instructions below.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
-Open Manipulator Controller provides **topic** and **service** messages to control manipulator and check the states of manipulator.
+OpenManipulator Controller provides **topic** and **service** messages to control manipulator and check the states of manipulator.
 
 ### [Topic](#topic)
 

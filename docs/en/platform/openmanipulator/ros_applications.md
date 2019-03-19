@@ -66,7 +66,7 @@ Run the following command.
   $ roslaunch ros_astra_launch astra_pro.launch
   ```
 
-You can use rviz or image_view to verify driver. You can select data topic name related to Astra Pro from drop down menu at the top of the application.
+You can use RViz or image_view to verify driver. You can select data topic name related to Astra Pro from drop down menu at the top of the application.
   ``` bash
   $ rqt_image_view
   ```
@@ -116,7 +116,7 @@ Run the following command.
   $ roslaunch realsense2_camera rs_camera.launch
   ```
 
-You can use rviz or image_view to verify driver. You can select data topic name related to Intel® RealSense™ Depth Camera D435 from drop down menu at the top of the application.
+You can use RViz or image_view to verify driver. You can select data topic name related to Intel® RealSense™ Depth Camera D435 from drop down menu at the top of the application.
   ``` bash
   $ rqt_image_view
   ```
@@ -216,7 +216,7 @@ $ roslaunch raspicam_node camerav2_1280x960.launch
 **NOTE**:
 - This instructions were tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 - The `open_manipulator_perceptions` package requires [`ar_track_alvar`](http://wiki.ros.org/ar_track_alvar) package.
-- Make sure to run the [Open Manipulator controller](/docs/en/platform/openmanipulator/ros_controller_package/#launch-controller) instructions before running the instructions below.
+- Make sure to run the [OpenManipulator controller](/docs/en/platform/openmanipulator/ros_controller_package/#launch-controller) instructions before running the instructions below.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
@@ -258,8 +258,8 @@ You have to change the parameters according to the type of camera. Run the follo
   $ roslaunch open_manipulator_ar_markers ar_pose.launch camera_model:=raspicam
   ```
 
-##### Rviz
-When the camera recognizes the AR marker, the pose of the AR marker is shown on Rviz.
+##### RViz
+When the camera recognizes the AR marker, the pose of the AR marker is shown on RViz.
 ![](/assets/images/platform/openmanipulator/OpenManipulator_AR_Marker.png)
 
 ## [Master Slave](#master-slave)

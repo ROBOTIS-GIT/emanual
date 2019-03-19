@@ -132,3 +132,13 @@ $ roslaunch manipulator_h_bringup open_manipulator_p60.launch with_gripper:=true
 
 `/robotis/base/get_kinematics_pose` ([manipulator_manipulation_module_msgs/GetKinematicsPose]{: .popup})   
 &emsp;&emsp; Service to read current end effector's pose
+
+
+[std_msgs/String]: /docs/en/popup/std_msgs_string/
+[std_msgs/Float64]: /docs/en/popup/std_msgs_float64_msg/
+[geometry_msgs/Pose]: /docs/en/popup/geometry_msgs_Pose_msg/
+[robotis_controller_msgs/StatusMsg]: /docs/en/popup/StatusMsg.msg/
+[manipulator_manipulation_module_msgs/JointPose]: /docs/en/popup/JointPose.msg/
+[manipulator_manipulation_module_msgs/KinematicsPose]: /docs/en/popup/KinematicsPose.msg/
+[manipulator_manipulation_module_msgs/GetJointPose]: /docs/en/popup/GetJointPose.srv/
+[manipulator_manipulation_module_msgs/GetKinematicsPose]: /docs/en/popup/GetKinematicsPose.srv/

@@ -68,7 +68,7 @@ Launch the open_manipulator_controller for gazebo simulation.
   ```
 {% capture notice_01 %}
 **NOTE**:
-- To control the OpenManipulator in the Gazebo environment using the Open Manipulator Controller, the controller must set the **use_platform** parameter to **false** because it needs to send messages to gazebo instead of Platform.
+- To control the OpenManipulator in the Gazebo environment using the OpenManipulator Controller, the controller must set the **use_platform** parameter to **false** because it needs to send messages to gazebo instead of Platform.
 - If you want to manipulate the OpenManipulator using Moveit within the Gazebo simulator, you should also convert the **use_moveit** to **ture** in open_manipulator_controller launch file.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>

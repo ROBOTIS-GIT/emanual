@@ -23,7 +23,7 @@ sidebar:
 **NOTE**:
 - This instructions has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 - This instructions are supposed to be running on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.
-- Make sure to run the [Open Manipulator controller](/docs/en/platform/openmanipulator/ros_controller_package/#launch-controller) instructions before running the instruction below.
+- Make sure to run the [OpenManipulator controller](/docs/en/platform/openmanipulator/ros_controller_package/#launch-controller) instructions before running the instruction below.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
@@ -32,7 +32,7 @@ sidebar:
   ``` bash
   $ roslaunch open_manipulator_control_gui open_manipulator_control_gui.launch
   ```
-  To controll OpenManipulator, first click on the `Timer Start` button.  
+  To controll OpenManipulator, first click the `Timer Start` button.  
   ![](/assets/images/platform/openmanipulator/OpenManipulator_GUI.png)  
 
   To check the status of the OpenManipulator (joint states, kinematics pose).  
@@ -52,7 +52,7 @@ sidebar:
 **NOTE**:
 - This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 - This instruction is supposed to be run on PC with ROS packages installed in. Please run the instruction below on your PC ROS packages installed in.
-- Make sure to run [Open Manipulator controller](/docs/en/platform/openmanipulator/ros_controller_package/#launch-controller) instructions before running the instructions below.
+- Make sure to run [OpenManipulator controller](/docs/en/platform/openmanipulator/ros_controller_package/#launch-controller) instructions before running the instructions below.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
@@ -60,7 +60,7 @@ sidebar:
 
 ### [Keyboard](#keyboard)
 
-**TIP**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`-`Alt`-`T`.
+**TIP**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`+`Alt`+`t`.
 {: .notice--success}
 
   Launch `open_manipulator_teleop_keyboard` node for simple teleoperation test using the keyboard.
@@ -147,7 +147,7 @@ $ roslaunch open_manipulator_teleop open_manipulator_teleop_joystick.launch
 
 ## [MoveIt!](#moveit)
 
-**TIP**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`-`Alt`-`T`.
+**TIP**: The terminal application can be found with the Ubuntu search icon on the top left corner of the screen. Shortcut key for terminal is `Ctrl`+`Alt`+`t`.
 {: .notice--success}
 
 Before you launch controller using MoveIt!, check `open_manipulator_controller` launch file in `open_manipulator_controller` package.
