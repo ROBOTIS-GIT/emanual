@@ -7,7 +7,7 @@ share: true
 author_profile: false
 permalink: /docs/en/platform/openmanipulator_p60/ros_operation/
 sidebar:
-  title: OpenManipulator RM-P60-RNH
+  title: OpenManipulator P-Series
   nav: "openmanipulator_p60"
   
 ---

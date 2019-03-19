@@ -1,13 +1,13 @@
 ---
 layout: archive
 lang: en
-ref: openmanipulator
+ref: openmanipulator_getting_started
 read_time: true
 share: true
 author_profile: false
 permalink: /docs/en/platform/openmanipulator/getting_started/
 sidebar:
-  title: OpenManipulator RM-X52-TNM
+  title: OpenManipulator X-Series
   nav: "openmanipulator"
 ---
 

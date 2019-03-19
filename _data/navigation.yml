@@ -235,11 +235,11 @@ main:
       - title: "*Manipulator-H"
         titlekr: "*Manipulator-H"
         url: /platform/manipulator_h/introduction/
-      - title: "RM-X52-TNM"
-        titlekr: "RM-X52-TNM"
+      - title: "X-Series"
+        titlekr: "X-Series"
         url: /platform/openmanipulator/
-      - title: "RM-P60-RNH"
-        titlekr: "RM-P60-RNH"
+      - title: "P-Series"
+        titlekr: "P-Series"
         url: /platform/openmanipulator_p60/overview/
   - title: "STEAM"
     titlekr: "교육키트"

@@ -1,13 +1,13 @@
 ---
 layout: archive
 lang: en
-ref: openmanipulator
+ref: openmanipulator_tool_modification
 read_time: true
 share: true
 author_profile: false
 permalink: /docs/en/platform/openmanipulator/tool_modification/
 sidebar:
-  title: OpenManipulator RM-X52-TNM
+  title: OpenManipulator X-Series
   nav: "openmanipulator"
 ---
 
