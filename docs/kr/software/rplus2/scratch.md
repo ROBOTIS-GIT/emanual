@@ -39,18 +39,18 @@ sidebar:
   Micro USB 또는 무선통신 모듈을 이용해서 선택된 포트를 통해 제어기를 PC에 연결할 수 있습니다.
 
 8. 연결 / 연결 끊기  
-  연결 버튼을 클릭하면 R+ Scratch 와 제어기와 연결되고 Scratch2Offline 에서 사용하는 “추가 블록” 에 대한 처리를 할 수 있는 준비 상태가 됩니다.  
-  또한 Scratch2Offline 과 R+ Scratch 가 서로 잘 통신하고 있다면 아래 그림처럼 “추가 블록” 에 등록된 블록 설명 옆의 O 표시가 빨간색에서 초록색으로 변합니다.
+  연결 버튼을 클릭하면 R+ Scratch 와 제어기와 연결되고 스크래치 2.0 오프라인 에디터 에서 사용하는 “추가 블록” 에 대한 처리를 할 수 있는 준비 상태가 됩니다.  
+  또한 스크래치 2.0 오프라인 에디터 과 R+ Scratch 가 서로 잘 통신하고 있다면 아래 그림처럼 “추가 블록” 에 등록된 블록 설명 옆의 O 표시가 빨간색에서 초록색으로 변합니다.
 
 9. 스크래치 새로 만들기  
-  Scratch2Offline 이 설치되어 있으면 선택한 제어기에 필요한 블록들이 추가된 상태의 새로운 스크래치 프로젝트 파일이 열립니다. (Scratch2Offline 이 설치되어 있지 않다면 “기타 > Scratch2Offline 설치” 설명의 다운로드 페이지를 표시합니다.)
+  스크래치 2.0 오프라인 에디터 이 설치되어 있으면 선택한 제어기에 필요한 블록들이 추가된 상태의 새로운 스크래치 프로젝트 파일이 열립니다. (스크래치 2.0 오프라인 에디터 이 설치되어 있지 않다면 “기타 > 스크래치 2.0 오프라인 에디터 설치” 설명의 다운로드 페이지를 표시합니다.)
 
 10. 스크래치 열기  
-  Scratch2Offline 이 설치되어 있으면 선택한 제어기에서 제공되는 예제 프로젝트들이 아래 그림과 같이 표시 됩니다.
+  스크래치 2.0 오프라인 에디터 이 설치되어 있으면 선택한 제어기에서 제공되는 예제 프로젝트들이 아래 그림과 같이 표시 됩니다.
 
     ![](/assets/images/sw/rplus2/scratch/r+scratch_5.jpg)
 
-    예제를 선택하면 해당 예제의 스크래치 프로젝트가 열립니다.(Scratch2Offline 이 설치되어 있지 않다면 “기타 > Scratch2Offline 설치” 설명의 다운로드 페이지를 표시합니다.)
+    예제를 선택하면 해당 예제의 스크래치 프로젝트가 열립니다.(스크래치 2.0 오프라인 에디터 이 설치되어 있지 않다면 “기타 > 스크래치 2.0 오프라인 에디터 설치” 설명의 다운로드 페이지를 표시합니다.)
 
 11. 도움말 보기  
   도움말 보기를 클릭하면 아래 그림과 같은 도움말 파일이 있는 폴더가 표시 됩니다.
@@ -67,7 +67,7 @@ sidebar:
 
   ![](/assets/images/sw/rplus2/scratch/r+scratch_2.jpg)
 
-2. Micro USB 케이블을 연결하고 전원을 키면 “연결 포트 선택”을 클릭했을 때 아래와 같이 “ROBOTIS Virtual COM Port” 가 표시됩니다.
+2. Micro USB 케이블을 연결하고 전원을 켜면 “연결 포트 선택”을 클릭했을 때 아래와 같이 “ROBOTIS Virtual COM Port” 가 표시됩니다.
 
   ![](/assets/images/sw/rplus2/scratch/r+scratch_3.jpg)
 
@@ -88,11 +88,11 @@ sidebar:
 
 # [참고자료](#참고자료)
 
-## [Scratch2Offline 설치](#Scratch2Offline-설치)
+## [스크래치 2.0 오프라인 에디터 설치](#스크래치-20-오프라인-에디터-설치)
 
- Scratch2Offline 다운로드 페이지 ([https://scratch.mit.edu/scratch2download/](https://scratch.mit.edu/scratch2download/)) 에서 OS 맞게 (windows) Adobe AIR 과 스크래치 오프라인 에디터를 다운받아 설치 합니다.
+스크래치 2.0 오프라인 에디터 다운로드 페이지 ([https://scratch.mit.edu/download/scratch2](https://scratch.mit.edu/download/scratch2))에서 Windows용 [Adobe AIR](http://get.adobe.com/air/)와 [스크래치 오프라인 에디터](https://scratch.mit.edu/scratchr2/static/sa/Scratch-461.exe)를 다운받아 설치합니다.
 
- Scratch2Offline 이 설치 되지 않은 상태에서 홈 화면의 “스크래치 새로 만들기” 또는 “스크래치 열기” 버튼을 클릭하면 다운로드 페이지로 이동합니다.
+ 스크래치 2.0 오프라인 에디터가 설치되지 않은 상태에서 홈 화면의 “스크래치 새로 만들기” 또는 “스크래치 열기” 버튼을 클릭하면 다운로드 페이지로 이동합니다.
 
 
 ## [ROBOTIS Virtual COM Port 설치](#robotis-virtual-com-port-설치)
@@ -109,11 +109,11 @@ USB 직렬 장치를 마우스로 우클릭하여 드라이버 소프트웨어 �
 
 ![](/assets/images/sw/rplus2/scratch/r+scratch_9.jpg)
 
-컴퓨터에서 드라이버 소프트웨어 찾아보기 를 선택합니다.
+컴퓨터에서 드라이버 소프트웨어 찾아보기를 선택합니다.
 
 ![](/assets/images/sw/rplus2/scratch/r+scratch_10.jpg)
 
-컴퓨터의 장치 드라이버 목록에서 직접 선택 을 선택합니다.
+컴퓨터의 장치 드라이버 목록에서 직접 선택을 선택합니다.
 
 ![](/assets/images/sw/rplus2/scratch/r+scratch_11.jpg)
 
@@ -141,7 +141,7 @@ ROBOTIS Virtual COM Port 를 선택한 후 다음을 클릭하여 설치를 완�
 
     ![](/assets/images/sw/rplus2/scratch/r+scratch_15.jpg)
 
-3. HTTP extension 메뉴 클릭하여 나온 선택창에 복사한 후, 표시되는 파일 중 추가하고자 하는 제어기 명의 *.json 파일을 선택합니다.
+3. HTTP extension 메뉴 클릭하여 나온 선택창에 복사한 후, 표시되는 파일 중 추가하고자 하는 제어기 명의 \*.json 파일을 선택합니다.
 
     ![](/assets/images/sw/rplus2/scratch/r+scratch_16.jpg)
 
