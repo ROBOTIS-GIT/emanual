@@ -1,14 +1,14 @@
 ---
 layout: archive
 lang: en
-ref: openmanipulator_opencr_operation
+ref: openmanipulator_x_opencr_operation
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/openmanipulator/opencr_operation/
+permalink: /docs/en/platform/openmanipulator_x/opencr_operation/
 sidebar:
-  title: OpenManipulator X-Series
-  nav: "openmanipulator"
+  title: OpenManipulator-X
+  nav: "openmanipulator_x"
 ---
 
 <div style="counter-reset: h1 10"></div>
@@ -21,11 +21,11 @@ Find example source codes.
 
 Go to `Examples` → `OpenManipulator` → `example` → `Chain` → `open_manipulator_chain` on Arduino IDE for OpenCR.
 
-![](/assets/images/platform/openmanipulator/OpenManipulator_chain_arduino.png)
+![](/assets/images/platform/openmanipulator_x/OpenManipulator_chain_arduino.png)
 
 Upload the example source to OpenCR.
 
-![](/assets/images/platform/openmanipulator/upload_chain_example.png)
+![](/assets/images/platform/openmanipulator_x/upload_chain_example.png)
 
 When the upload is completed, the following comments are displayed in the log window. 
 
@@ -44,8 +44,8 @@ Download Processing and load OpenCR board on it
 
 Open Processing and Go to `Tools` → `Add Tool..`. Search `ControlP5` and install it.
 
-<img src="/assets/images/platform/openmanipulator/processing_add_tools.png" width="400">
-<img src="/assets/images/platform/openmanipulator/OpenManipulator_chain_processing_1.png" width="400">
+<img src="/assets/images/platform/openmanipulator_x/processing_add_tools.png" width="400">
+<img src="/assets/images/platform/openmanipulator_x/OpenManipulator_chain_processing_1.png" width="400">
 
 Download processing source code for OpenManipulator.
 
@@ -58,13 +58,13 @@ Open downloaded processing source code file (**Folder where you downloaded the s
 **NOTE**: Upload **OpenCR example source code** to OpenCR before run **processing source code**.
 {: .notice--info}
 
-<img src="/assets/images/platform/openmanipulator/processing_open1.png" width="400">
-<img src="/assets/images/platform/openmanipulator/processing_open2.png" width="450">
-<img src="/assets/images/platform/openmanipulator/processing_run.png" width="400">
+<img src="/assets/images/platform/openmanipulator_x/processing_open1.png" width="400">
+<img src="/assets/images/platform/openmanipulator_x/processing_open2.png" width="450">
+<img src="/assets/images/platform/openmanipulator_x/processing_run.png" width="400">
 
 When the processing source code is successfully executed, the following graphical GUI is displayed.
 
-![](/assets/images/platform/openmanipulator/OpenManipulator_chain_processing_2.png)
+![](/assets/images/platform/openmanipulator_x/OpenManipulator_chain_processing_2.png)
 
 {% capture notice_01 %}
 **Tip**: If the processing console displays an error message and the GUI does not run normally, check the following:
@@ -83,15 +83,15 @@ If you have checked the above and it does not work normally, I recommend running
 
 The user can use processing program to manipulate the OpenManipulator.  
   To manipulate the OpenManipulator, click the toggle button to `CONTROLLER ON`.  
-  ![](/assets/images/platform/openmanipulator/OpenManipulator_chain_processing_3.png)  
+  ![](/assets/images/platform/openmanipulator_x/OpenManipulator_chain_processing_3.png)  
 
   The user can manipulate the OpenManipulator in the [joint space]{: .popup}.  
   Set the joint angles. Then click the `SEND JOINT ANGLE` button. And set the gripper parameter. Then click the `SET GRIPPER` button.  
-  ![](/assets/images/platform/openmanipulator/OpenManipulator_chain_processing_4.png)  
+  ![](/assets/images/platform/openmanipulator_x/OpenManipulator_chain_processing_4.png)  
 
   The user can manipulate the OpenManipulator in the ([task space]{: .popup}). Click the `TASK SPACE CONTROL` button to change the tab.  
   Click the desired direction button to manipulate the OpenManipulator.  
-  ![](/assets/images/platform/openmanipulator/OpenManipulator_chain_processing_5.png)
+  ![](/assets/images/platform/openmanipulator_x/OpenManipulator_chain_processing_5.png)
 
 ### [Hand guiding](#hand-guiding)
 
@@ -109,14 +109,14 @@ The user can make the demonstration using hand guiding function.
 
   Click the toggle button to `MOTION REPEAT ON` if you want to repeat the demonstration.  
   The total time of the trajectory between saved poses is the same as 2 seconds.  
-  ![](/assets/images/platform/openmanipulator/OpenManipulator_chain_processing_6.png)
+  ![](/assets/images/platform/openmanipulator_x/OpenManipulator_chain_processing_6.png)
 
 ## [Teleoperation RC100](#teleoperation-rc100)
 
   <iframe width="560" height="315" src="https://www.youtube.com/embed/FGHBMJByJ7k" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
   The settings for [ROBOTIS RC-100B][rc100] controller is included in the OpenCR firmware for OpenManipulator. This controller can be used with the Bluetooth module [BT410][bt410].    
-  ![](/assets/images/platform/openmanipulator/OpenManipulator_chain_processing_teleop.png)
+  ![](/assets/images/platform/openmanipulator_x/OpenManipulator_chain_processing_teleop.png)
 
 
 

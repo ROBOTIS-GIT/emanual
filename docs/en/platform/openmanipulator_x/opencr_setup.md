@@ -1,14 +1,14 @@
 ---
 layout: archive
 lang: en
-ref: openmanipulator_opencr_setup
+ref: openmanipulator_x_opencr_setup
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/openmanipulator/opencr_setup/
+permalink: /docs/en/platform/openmanipulator_x/opencr_setup/
 sidebar:
-  title: OpenManipulator X-Series
-  nav: "openmanipulator"
+  title: OpenManipulator-X
+  nav: "openmanipulator_x"
 ---
 
 <div style="counter-reset: h1 9"></div>
@@ -29,9 +29,9 @@ The way OpenManipulator is controlled by OpenCR (embedded system) and ROS is com
 
 Connect micro USB (connected to PC), Dynamixel(OpenManipulator), and 12V Power to OpenCR as shown below.
 
-<img src="/assets/images/platform/openmanipulator/OpenManipulator_opencr_setup.png" width="500">
+<img src="/assets/images/platform/openmanipulator_x/OpenManipulator_opencr_setup.png" width="500">
 
-<img src="/assets/images/platform/openmanipulator/OpenManipulator_opencr_setup2.png" width="800">
+<img src="/assets/images/platform/openmanipulator_x/OpenManipulator_opencr_setup2.png" width="800">
 
 **NOTE** : Please refer the detailed description of [OpenCR](http://emanual.robotis.com/docs/en/parts/controller/opencr10/).
 {: .notice}

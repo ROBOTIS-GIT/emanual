@@ -1,14 +1,14 @@
 ---
 layout: archive
 lang: en
-ref: openmanipulator_friends
+ref: openmanipulator_x_friends
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/openmanipulator/friends/
+permalink: /docs/en/platform/openmanipulator_x/friends/
 sidebar:
-  title: OpenManipulator X-Series
-  nav: "openmanipulator"
+  title: OpenManipulator-X
+  nav: "openmanipulator_x"
 ---
 
 <div style="counter-reset: h1 13"></div>
@@ -17,20 +17,20 @@ sidebar:
 
   Friends List
 
-  - [OpenManipulator SCARA](/docs/en/platform/openmanipulator/friends/#openmanipulator-scara)
-  - [OpenManipulator Link](/docs/en/platform/openmanipulator/friends/#openmanipulator-link)
-  - [OpenManipulator Planar](/docs/en/platform/openmanipulator/friends/#openmanipulator-planar)
-  - [OpenManipulator Delta](/docs/en/platform/openmanipulator/friends/#openmanipulator-delta)
-  - [OpenManipulator Stewart](/docs/en/platform/openmanipulator/friends/#openmanipulator-stewart)
-  - [OpenManipulator Linear](/docs/en/platform/openmanipulator/friends/#openmanipulator-linear)
+  - [OpenManipulator SCARA](/docs/en/platform/openmanipulator_x/friends/#openmanipulator-scara)
+  - [OpenManipulator Link](/docs/en/platform/openmanipulator_x/friends/#openmanipulator-link)
+  - [OpenManipulator Planar](/docs/en/platform/openmanipulator_x/friends/#openmanipulator-planar)
+  - [OpenManipulator Delta](/docs/en/platform/openmanipulator_x/friends/#openmanipulator-delta)
+  - [OpenManipulator Stewart](/docs/en/platform/openmanipulator_x/friends/#openmanipulator-stewart)
+  - [OpenManipulator Linear](/docs/en/platform/openmanipulator_x/friends/#openmanipulator-linear)
 
 ## [OpenManipulator SCARA](#openmanipulator-scara)
 
-![](/assets/images/platform/openmanipulator/OpenManipulator_SCARA.png)
+![](/assets/images/platform/openmanipulator_x/OpenManipulator_SCARA.png)
 
 ### Specification
 
-![](/assets/images/platform/openmanipulator/OpenManipulator_SCARA_Capture.png)
+![](/assets/images/platform/openmanipulator_x/OpenManipulator_SCARA_Capture.png)
 
 | Items               | Unit    |                                    |
 |:--------------------|:--------|:-----------------------------------|
@@ -45,7 +45,7 @@ sidebar:
 
 ### Dimension
 
-![](/assets/images/platform/openmanipulator/OpenManipulator_SCARA_spec_side.png)
+![](/assets/images/platform/openmanipulator_x/OpenManipulator_SCARA_spec_side.png)
 
 ### Hardware Setup
 
@@ -78,7 +78,7 @@ For more information, please refer to [BOM](https://docs.google.com/spreadsheets
 
 - CAD Files ([Onshape](http://www.robotis.com/service/download.php?no=691), [Thingiverse](https://www.thingiverse.com/thing:3069581))
 
-![](/assets/images/platform/openmanipulator/OpenManipulator_SCARA_OnShape.png)
+![](/assets/images/platform/openmanipulator_x/OpenManipulator_SCARA_OnShape.png)
 
 ### Software Setup
 
@@ -95,7 +95,7 @@ Open processing source code file (`open_manipulator_processing` → `Scara` → 
 **NOTE**: Upload **OpenCR example source code** to OpenCR before run **processing source code**.
 {: .notice--info}
 
-![](/assets/images/platform/openmanipulator/OpenManipulator_SCARA_Processing.png)
+![](/assets/images/platform/openmanipulator_x/OpenManipulator_SCARA_Processing.png)
 
 ### Video
 
@@ -103,11 +103,11 @@ Open processing source code file (`open_manipulator_processing` → `Scara` → 
 
 ## [OpenManipulator Link](#openmanipulator-link)
 
-![](/assets/images/platform/openmanipulator/OpenManipulator_Link.png)
+![](/assets/images/platform/openmanipulator_x/OpenManipulator_Link.png)
 
 ### Specification
 
-![](/assets/images/platform/openmanipulator/OpenManipulator_Link_Capture.png)
+![](/assets/images/platform/openmanipulator_x/OpenManipulator_Link_Capture.png)
 
 | Items                    | Unit    |                                    |
 |:-------------------------|:--------|:-----------------------------------|
@@ -123,7 +123,7 @@ Open processing source code file (`open_manipulator_processing` → `Scara` → 
 
 ### Dimension
 
-![](/assets/images/platform/openmanipulator/OpenManipulator_Link_spec.png)
+![](/assets/images/platform/openmanipulator_x/OpenManipulator_Link_spec.png)
 
 ### Hardware Setup
 
@@ -179,7 +179,7 @@ Open processing source code file (`open_manipulator_processing` → `Scara` → 
 
 CAD Files ([Onshape](http://www.robotis.com/service/download.php?no=692), [Thingiverse](https://www.thingiverse.com/thing:3069557))
 
-![](/assets/images/platform/openmanipulator/OpenManipulator_Link_OnShape.png)
+![](/assets/images/platform/openmanipulator_x/OpenManipulator_Link_OnShape.png)
 
 #### Assembly
 Assemble the OpenManipulator Link by referring to the manual uploaded on [Instructables page](https://www.instructables.com/id/OpenManipulator-Link/).
@@ -191,7 +191,7 @@ Assemble the OpenManipulator Link by referring to the manual uploaded on [Instru
 {: .notice--info}
 
 #### OpenCR
-First of all, set the OpenCR board referring to [[OpenCR] setup](/docs/en/platform/openmanipulator/opencr-setup/#opencr-setup).
+First of all, set the OpenCR board referring to [[OpenCR] setup](/docs/en/platform/openmanipulator_x/opencr-setup/#opencr-setup).
 
 Open example source code `Examples` → `OpenManipulator` → `example` → `Link` → `open_manipulator_link` on Arduino IDE for OpenCR.
 Upload the example source to OpenCR.
@@ -200,7 +200,7 @@ Upload the example source to OpenCR.
 {: .notice--success}
 
 #### Processing
-Set the Processing IDE referring to [Processing Setup](/docs/en/platform/openmanipulator/opencr-setup/#opencr-setup).
+Set the Processing IDE referring to [Processing Setup](/docs/en/platform/openmanipulator_x/opencr-setup/#opencr-setup).
 
 Download processing source code for OpenManipulator Link.
 
@@ -215,7 +215,7 @@ Open downloaded processing source code file (**Folder where you downloaded the s
 
 When the processing source code is successfully executed, the following graphical GUI is displayed.
 
-![](/assets/images/platform/openmanipulator/OpenManipulator_Link_Processing.png)
+![](/assets/images/platform/openmanipulator_x/OpenManipulator_Link_Processing.png)
 
 {% capture notice_01 %}
 **Tip**: If the processing console displays an error message and the GUI does not run normally, check the following:
@@ -233,11 +233,11 @@ If you have checked the above and it does not work normally, I recommend running
 
 ## [OpenManipulator Planar](#openmanipulator-planar)
 
-![](/assets/images/platform/openmanipulator/OpenManipulator_Planar.png)
+![](/assets/images/platform/openmanipulator_x/OpenManipulator_Planar.png)
 
 ### Specification
 
-![](/assets/images/platform/openmanipulator/OpenManipulator_Planar_Capture.png)
+![](/assets/images/platform/openmanipulator_x/OpenManipulator_Planar_Capture.png)
 
 | Items               | Unit |                                    |
 |:--------------------|:-----|:-----------------------------------|
@@ -251,7 +251,7 @@ If you have checked the above and it does not work normally, I recommend running
 
 ### Dimension
 
-![](/assets/images/platform/openmanipulator/OpenManipulator_Planar_spec.png)
+![](/assets/images/platform/openmanipulator_x/OpenManipulator_Planar_spec.png)
 
 ### Hardware Setup
 
@@ -277,7 +277,7 @@ For more information, please refer to [BOM](https://docs.google.com/spreadsheets
 
 CAD Files ([Onshape](https://cad.onshape.com/documents/03dca3ccd6175a054a517d7a/w/bd02756435abc4861fbe19d3/e/512dba920820826220bb1be1), [Thingiverse](https://www.thingiverse.com/thing:3064437))
 
-![](/assets/images/platform/openmanipulator/OpenManipulator_Planar_OnShape.png)
+![](/assets/images/platform/openmanipulator_x/OpenManipulator_Planar_OnShape.png)
 
 ### Software Setup
 
@@ -300,11 +300,11 @@ Open processing source code file (`open_manipulator_processing` → `Planar` →
 
 ## [OpenManipulator Delta](#openmanipulator-delta)
 
-![](/assets/images/platform/openmanipulator/OpenManipulator_Delta.png)
+![](/assets/images/platform/openmanipulator_x/OpenManipulator_Delta.png)
 
 ### Specification
 
-![](/assets/images/platform/openmanipulator/OpenManipulator_Delta_Capture.png)
+![](/assets/images/platform/openmanipulator_x/OpenManipulator_Delta_Capture.png)
 
 | Items               | Unit |                                    |
 |:--------------------|:-----|:-----------------------------------|
@@ -318,7 +318,7 @@ Open processing source code file (`open_manipulator_processing` → `Planar` →
 
 ### Dimension
 
-![](/assets/images/platform/openmanipulator/OpenManipulator_Delta_spec.png)
+![](/assets/images/platform/openmanipulator_x/OpenManipulator_Delta_spec.png)
 
 ### Hardware Setup
 
@@ -344,7 +344,7 @@ For more information, please refer to [BOM](https://docs.google.com/spreadsheets
 
 CAD Files ([Onshape](https://cad.onshape.com/documents/cc6fdde79eccc8c21ff6048b/w/5275a0e3ad2bfd7d5bc573ac/e/485c206801d5b810c0c4297a), [Thingiverse](https://www.thingiverse.com/thing:3217182))
 
-![](/assets/images/platform/openmanipulator/OpenManipulator_Delta_OnShape.png)
+![](/assets/images/platform/openmanipulator_x/OpenManipulator_Delta_OnShape.png)
 
 ### Software Setup
 
@@ -367,11 +367,11 @@ Open processing source code file (`open_manipulator_processing` → `Delta` → 
 
 ## [OpenManipulator Stewart](#openmanipulator-stewart)
 
-![](/assets/images/platform/openmanipulator/OpenManipulator_Stewart.png)
+![](/assets/images/platform/openmanipulator_x/OpenManipulator_Stewart.png)
 
 ### Specification
 
-![](/assets/images/platform/openmanipulator/OpenManipulator_Stewart_Capture.png)
+![](/assets/images/platform/openmanipulator_x/OpenManipulator_Stewart_Capture.png)
 
 | Items               | Unit |                                    |
 |:--------------------|:-----|:-----------------------------------|
@@ -385,9 +385,9 @@ Open processing source code file (`open_manipulator_processing` → `Delta` → 
 
 ### Dimension
 
-![](/assets/images/platform/openmanipulator/OpenManipulator_Stewart_spec_side.png)
-![](/assets/images/platform/openmanipulator/OpenManipulator_Stewart_spec_bottom.png)
-![](/assets/images/platform/openmanipulator/OpenManipulator_Stewart_spec_top.png)
+![](/assets/images/platform/openmanipulator_x/OpenManipulator_Stewart_spec_side.png)
+![](/assets/images/platform/openmanipulator_x/OpenManipulator_Stewart_spec_bottom.png)
+![](/assets/images/platform/openmanipulator_x/OpenManipulator_Stewart_spec_top.png)
 
 ### Hardware Setup
 
@@ -412,7 +412,7 @@ For more information, please refer to [BOM](https://docs.google.com/spreadsheets
 
 CAD Files ([Onshape](https://cad.onshape.com/documents/7dd4f10904b98bdc250fd542/w/a3a3f0239f81db22c2393e00/e/83b69168ebe68946a7da5f22), [Thingiverse](https://www.thingiverse.com/thing:3272579))
 
-![](/assets/images/platform/openmanipulator/OpenManipulator_Stewart_OnShape.png)
+![](/assets/images/platform/openmanipulator_x/OpenManipulator_Stewart_OnShape.png)
 
 ### Software Setup
 
@@ -435,11 +435,11 @@ Open processing source code file (`open_manipulator_processing` → `Stewart` �
 
 ## [OpenManipulator Linear](#openmanipulator-linear)
 
-![](/assets/images/platform/openmanipulator/OpenManipulator_Linear.png)
+![](/assets/images/platform/openmanipulator_x/OpenManipulator_Linear.png)
 
 ### Specification
 
-![](/assets/images/platform/openmanipulator/OpenManipulator_Linear_Capture.png)
+![](/assets/images/platform/openmanipulator_x/OpenManipulator_Linear_Capture.png)
 
 | Items               | Unit |                                    |
 |:--------------------|:-----|:-----------------------------------|
@@ -453,7 +453,7 @@ Open processing source code file (`open_manipulator_processing` → `Stewart` �
 
 ### Dimension
 
-![](/assets/images/platform/openmanipulator/OpenManipulator_Linear_spec.png)
+![](/assets/images/platform/openmanipulator_x/OpenManipulator_Linear_spec.png)
 
 ### Hardware Setup
 
@@ -481,7 +481,7 @@ For more information, please refer to [BOM](https://docs.google.com/spreadsheets
 
 CAD Files ([Onshape](https://cad.onshape.com/documents/056051479aa43c1d3575467b/w/e4a798df49f872fa4589217b/e/85be5fe21aa7c9c76732a701), [Thingiverse](https://www.thingiverse.com/thing:3255864))
 
-![](/assets/images/platform/openmanipulator/OpenManipulator_Linear_OnShape.png)
+![](/assets/images/platform/openmanipulator_x/OpenManipulator_Linear_OnShape.png)
 
 ### Software Setup
 

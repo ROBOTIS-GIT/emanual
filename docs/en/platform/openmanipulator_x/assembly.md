@@ -1,14 +1,14 @@
 ---
 layout: archive
 lang: en
-ref: openmanipulator_assembly
+ref: openmanipulator_x_assembly
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/openmanipulator/assembly/
+permalink: /docs/en/platform/openmanipulator_x/assembly/
 sidebar:
-  title: OpenManipulator X-Series
-  nav: "openmanipulator"
+  title: OpenManipulator-X
+  nav: "openmanipulator_x"
 ---
 
 <div style="counter-reset: h1 3"></div>
@@ -51,7 +51,8 @@ sidebar:
 | .                 | WB-M2.5x4              |    4     |
 | .                 | WB-M2.5x6              |    8     |
 | .                 | WB-M2.5x8              |    16    |
-| .                 | WB-M2.5x12             |    8     |
+| .                 | WB-M2.5x12             |    4     |
+| .                 | WB-M2.5x17             |    4     |
 | .                 | WB-M2.5x20             |    4     |
 | .                 | WB-M3x10               |    4     |
 | .                 | DC12-IDLER             |    3     |
@@ -70,23 +71,23 @@ sidebar:
 | **Plate**  | [Base Plate-02](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=3331)                  |    1     |
 
 
-<!-- - [Parts of OpenManipulator](https://docs.google.com/a/robotis.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit?usp=sharing) -->
+<!-- - [Parts of OpenManipulator-X](https://docs.google.com/a/robotis.com/spreadsheets/d/1h46Vw3amU0FZl3JSRS42BNoAaKeJoDlHAJGMKVe05ts/edit?usp=sharing) -->
 
 <!-- [DIY Manual](https://drive.google.com/open?id=1c5U0v2dQhYiulqiWI0VQMameG82WCc-4rl6J6zlQejA) -->
 
 ## [3D Printed Parts](#3d-printed-parts)
 
-We provide the 3D CAD files of OpenManipulator parts. User can easily modify and print them.
+We provide the 3D CAD files of OpenManipulator-X parts. User can easily modify and print them.
 
 - 3D CAD Files ([Onshape](http://www.robotis.com/service/download.php?no=690), [Thingiverse](https://www.thingiverse.com/thing:3069574))
 
-![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_OnShape.png)
+![](/assets/images/platform/openmanipulator_x/OpenManipulator_Chain_OnShape.png)
 
 ## [Assembly Manual](#assembly-manual)
 
-OpenManipulator is delivered as unassembled parts in the box. Follow the following instruction to assemble it.
+OpenManipulator-X is delivered as unassembled parts in the box. Follow the following instruction to assemble it.
 
-- `Download PDF` [Assembly Manual for OpenManipulator](http://www.robotis.com/service/download.php?no=1255)
+- `Download PDF` [Assembly Manual for OpenManipulator-X](http://www.robotis.com/service/download.php?no=1255)
 
 - `Assembly Video`
 

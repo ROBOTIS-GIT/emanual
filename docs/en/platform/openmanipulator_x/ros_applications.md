@@ -1,14 +1,14 @@
 ---
 layout: archive
 lang: en
-ref: openmanipulator_ros_applications
+ref: openmanipulator_x_ros_applications
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/openmanipulator/ros_applications/
+permalink: /docs/en/platform/openmanipulator_x/ros_applications/
 sidebar:
-  title: OpenManipulator X-Series
-  nav: "openmanipulator"
+  title: OpenManipulator-X
+  nav: "openmanipulator_x"
 ---
 
 <div style="counter-reset: h1 8"></div>
@@ -27,7 +27,7 @@ sidebar:
 ### [Astra Pro](#astra-pro)
 
 #### Overview
-![](/assets/images/platform/openmanipulator/OpenManipulator_camera_Astra_pro.png)  
+![](/assets/images/platform/openmanipulator_x/OpenManipulator_camera_Astra_pro.png)  
 
 The [Astra Series](https://orbbec3d.com/product-astra/) was designed to further improve on the attributes that set Orbbec 3D cameras apart from existing 3D cameras on the market. Astra 3D cameras provide computer vision that enables dozens of functions such as face recognition, gesture recognition, human body tracking, three-dimensional measurement, environment perception, and three-dimensional map reconstruction.
 
@@ -78,7 +78,7 @@ You can use RViz or image_view to verify driver. You can select data topic name 
 ### [Realsense D435](#realsense-d435)
 
 #### Overview
-![](/assets/images/platform/openmanipulator/OpenManipulator_camera_Realsense_D435.png)  
+![](/assets/images/platform/openmanipulator_x/OpenManipulator_camera_Realsense_D435.png)  
 
 The [Intel® RealSense™ Depth Camera D435](https://realsense.intel.com/depth-camera/#D415_D435) is a USB-powered depth camera and consists of a pair of depth sensors, RGB sensor, and infrared projector. It is ideal for makers and developers to add depth perception capability to their prototype development. The D435 is designed to best fit your prototype.
 
@@ -216,7 +216,7 @@ $ roslaunch raspicam_node camerav2_1280x960.launch
 **NOTE**:
 - This instructions were tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 - The `open_manipulator_perceptions` package requires [`ar_track_alvar`](http://wiki.ros.org/ar_track_alvar) package.
-- Make sure to run the [OpenManipulator controller](/docs/en/platform/openmanipulator/ros_controller_package/#launch-controller) instructions before running the instructions below.
+- Make sure to run the [OpenManipulator controller](/docs/en/platform/openmanipulator_x/ros_controller_package/#launch-controller) instructions before running the instructions below.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
@@ -260,7 +260,7 @@ You have to change the parameters according to the type of camera. Run the follo
 
 ##### RViz
 When the camera recognizes the AR marker, the pose of the AR marker is shown on RViz.
-![](/assets/images/platform/openmanipulator/OpenManipulator_AR_Marker.png)
+![](/assets/images/platform/openmanipulator_x/OpenManipulator_AR_Marker.png)
 
 ## [Master Slave](#master-slave)
 
@@ -271,9 +271,9 @@ In this example, if the user is holding the master OpenManipulator, the slave Op
 ### Setup of the OpenManipulator
 Since you need to control two OpenManipulators on one PC, use two U2D2s and two OpenManipulators to connect as shown below.
 
-![](/assets/images/platform/openmanipulator/OpenManipulator_master_slave_connection.png)
+![](/assets/images/platform/openmanipulator_x/OpenManipulator_master_slave_connection.png)
 
-![](/assets/images/platform/openmanipulator/OpenManipulator_master_slave.png)
+![](/assets/images/platform/openmanipulator_x/OpenManipulator_master_slave.png)
 #### Master OpenManipulator
 Master OpenManipulator is a robot that is controlled by the user. This is easy to move because no torque is applied to dynamixel. Dynamixel of master OpenManipulator sets the ID as below and the baudrate as 1000000bps.
 

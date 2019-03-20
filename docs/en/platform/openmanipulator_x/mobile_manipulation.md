@@ -1,14 +1,14 @@
 ---
 layout: archive
 lang: en
-ref: openmanipulator_mobile_manipulation
+ref: openmanipulator_x_mobile_manipulation
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/openmanipulator/mobile_manipulation/
+permalink: /docs/en/platform/openmanipulator_x/mobile_manipulation/
 sidebar:
-  title: OpenManipulator X-Series
-  nav: "openmanipulator"
+  title: OpenManipulator-X
+  nav: "openmanipulator_x"
 ---
 
 <div style="counter-reset: h1 12"></div>
@@ -45,7 +45,7 @@ Load a TurtleBot3 Waffle or Waffle Pi with OpenManipulator on RViz.
   $ roslaunch open_manipulator_with_tb3_description open_manipulator_with_tb3_rviz.launch
   ```
 
-![](/assets/images/platform/openmanipulator/TurtleBot3_with_Open_Manipulator.png)
+![](/assets/images/platform/openmanipulator_x/TurtleBot3_with_Open_Manipulator.png)
 
   **TIP**: You can get a more information about it in [Manipulation section of TurtleBot3](/docs/en/platform/turtlebot3/manipulation/#manipulation)
   {: .notice--success}

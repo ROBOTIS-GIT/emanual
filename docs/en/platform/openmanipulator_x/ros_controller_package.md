@@ -1,21 +1,21 @@
 ---
 layout: archive
 lang: en
-ref: openmanipulator_ros_controller_package
+ref: openmanipulator_x_ros_controller_package
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/openmanipulator/ros_controller_package/
+permalink: /docs/en/platform/openmanipulator_x/ros_controller_package/
 sidebar:
-  title: OpenManipulator X-Series
-  nav: "openmanipulator"
+  title: OpenManipulator-X
+  nav: "openmanipulator_x"
 ---
 
 <div style="counter-reset: h1 5"></div>
 
 # [[ROS] Controller Package](#ros-controller-package)
 
-The OpenManipulator controller provides basic manipulation of OpenManipulator. You can control the dynamixel of OpenManipulator and check states of OpenManipulator through [messages](/docs/en/platform/openmanipulator/#message-list) of the controller.
+The OpenManipulator controller provides basic manipulation of OpenManipulator. You can control the dynamixel of OpenManipulator and check states of OpenManipulator through [messages](/docs/en/platform/openmanipulator_x/#message-list) of the controller.
 
 **NOTE**: This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 {: .notice--info}
@@ -71,10 +71,10 @@ Before you launch controller, let's check `open_manipulator_controller` launch f
 `dynamixel_usb_port` is a parameter to set use port to connected with Dynamixel of OpenManipulator. If you use U2D2, it should be set **/dev/ttyUSB@**. If you use OpenCR, it should be set **/dev/ttyACM@** (@ indicates the port number connected to the Dynamixel).  
 `dynamixel_baud_rate` is a parameter to set baud rate of dynamixel. default baud rate of dynamixel used in OpenManipulator is 1000000.  
 `control_period` is a parameter to set communication period between dynamixel and PC (control loop time).  
-`use_platform` is a parameter that sets whether to use the actual OpenManipulator or OpenManipulator simulation. please refer [ROS Simulation](/docs/en/platform/openmanipulator/ros_simulation/#ros-simulation) chapter.  
-`use_moveit`, `planning_group_name` and `moveit_sample_duration` are parameters supposed to set loading [move_group](http://docs.ros.org/kinetic/api/moveit_tutorials/html/doc/move_group_interface/move_group_interface_tutorial.html) package. please refer [MoveIt!](/docs/en/platform/openmanipulator/ros-operation/#moveit) chapter.
+`use_platform` is a parameter that sets whether to use the actual OpenManipulator or OpenManipulator simulation. please refer [ROS Simulation](/docs/en/platform/openmanipulator_x/ros_simulation/#ros-simulation) chapter.  
+`use_moveit`, `planning_group_name` and `moveit_sample_duration` are parameters supposed to set loading [move_group](http://docs.ros.org/kinetic/api/moveit_tutorials/html/doc/move_group_interface/move_group_interface_tutorial.html) package. please refer [MoveIt!](/docs/en/platform/openmanipulator_x/ros-operation/#moveit) chapter.
 
-After set the parameters, launch the OpenManipulator controller to start [[ROS] Operation](/docs/en/platform/openmanipulator/ros_operation/#ros-operation).
+After set the parameters, launch the OpenManipulator controller to start [[ROS] Operation](/docs/en/platform/openmanipulator_x/ros_operation/#ros-operation).
 
 Please, open the terminal window, run roscore as entering following command.
 
@@ -89,8 +89,8 @@ $ roslaunch open_manipulator_controller open_manipulator_controller.launch
 ```
 
 **WARNING**: It is recommended to place OpenManipulator at the following pose and start the controller so that each component of OpenManipulator does not conflict.  
-<img src="/assets/images/platform/openmanipulator/open_manipulator_start_pose.png" width="250">
-<!-- ![](/assets/images/platform/openmanipulator/open_manipulator_start_pose.png) -->
+<img src="/assets/images/platform/openmanipulator_x/open_manipulator_start_pose.png" width="250">
+<!-- ![](/assets/images/platform/openmanipulator_x/open_manipulator_start_pose.png) -->
 {: .notice--warning}
 
 If the OpenManipulator controller has been launched successfully, the terminal will show the following message.
@@ -143,7 +143,7 @@ Even if you can't find any Dynamixels, please check firmware to use ROBOTIS soft
 **NOTE**:
 - The below instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 - This instruction is supposed to be running on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.
-- Make sure to run the [OpenManipulator controller](/docs/en/platform/openmanipulator/ros_controller_package/#launch-controller) instructions before running the instructions below.
+- Make sure to run the [OpenManipulator controller](/docs/en/platform/openmanipulator_x/ros_controller_package/#launch-controller) instructions before running the instructions below.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
@@ -448,7 +448,7 @@ $ roslaunch open_manipulator_description open_manipulator_rviz.launch
 
 {% capture notice_01 %}
 **NOTE**:
-- If you launched the [OpenManipulator controller](/docs/en/platform/openmanipulator/ros_controller_package/#launch-controller) before launching the open_manipulator_controller file, the robot model on RViz would be synchronized with the actual robot.
+- If you launched the [OpenManipulator controller](/docs/en/platform/openmanipulator_x/ros_controller_package/#launch-controller) before launching the open_manipulator_controller file, the robot model on RViz would be synchronized with the actual robot.
 - If the user would like to check only model of OpenManipulator without control the actual OpenManipulator, the user can launch the RViz without the OpenManipulator controller.
 The user can change each joint by GUI, if the user launch only RViz by executing the following command :
 `$ roslaunch open_manipulator_description open_manipulator_rviz.launch use_gui:=true`
@@ -456,7 +456,7 @@ The user can change each joint by GUI, if the user launch only RViz by executing
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
-![](/assets/images/platform/openmanipulator/OpenManipulator_rviz.png)
+![](/assets/images/platform/openmanipulator_x/OpenManipulator_rviz.png)
 
 ## [Message List](#message-list)
 
@@ -464,7 +464,7 @@ The user can change each joint by GUI, if the user launch only RViz by executing
 **NOTE**:
 - This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 - This instruction is supposed to be running on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.
-- Make sure to run the [OpenManipulator controller](/docs/en/platform/openmanipulator/ros_controller_package/#launch-controller) instructions before running the instructions below.
+- Make sure to run the [OpenManipulator controller](/docs/en/platform/openmanipulator_x/ros_controller_package/#launch-controller) instructions before running the instructions below.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
@@ -480,18 +480,18 @@ Run rqt.
 ``` bash
 $ rqt
 ```
- <img src="/assets/images/platform/openmanipulator/rqt_om.png" width="1000">
+ <img src="/assets/images/platform/openmanipulator_x/rqt_om.png" width="1000">
 
 **TIP**: If rqt is not displayed, select the `plugin` -> `Topics` -> `Topic Monitor`.
 {: .notice--success}
 
 Topics without their checkboxes clicked will not be monitored. To monitor topics, click on the checkboxes next to topic names.
 
- <img src="/assets/images/platform/openmanipulator/rqt_1.png" width="1000">
+ <img src="/assets/images/platform/openmanipulator_x/rqt_1.png" width="1000">
 
 If you would like to see more detail topic message, click the `▶` button next to each checkbox.
 
- <img src="/assets/images/platform/openmanipulator/rqt_2.png" width="1000">
+ <img src="/assets/images/platform/openmanipulator_x/rqt_2.png" width="1000">
 
 [rqt]: http://wiki.ros.org/rqt
 
@@ -510,15 +510,15 @@ A list of topics that the open_manipulator_controller publishes.
 
 `/open_manipulator/joint_states`([sensor_msgs/JointState]{: .popup}) is a message indicating the states of joints of OpenManipulator. **"name"** indicates joint component names.  **"effort"** shows currents of the joint Dynamixels. **"position"** and **"velocity"** indicates angles and angular velocities of joints.
 
- <!-- <img src="/assets/images/platform/openmanipulator/rqt_joint_states.png" width="1000"> -->
+ <!-- <img src="/assets/images/platform/openmanipulator_x/rqt_joint_states.png" width="1000"> -->
 
 `/open_manipulator/gripper/kinematics_pose`([open_manipulator_msgs/KinematicsPose]{: .popup}) is a message indicating pose (position and orientation) in [task space]{: .popup}. **"position"** indicates the x, y and z values of the center of the end-effector (tool). **"Orientation"** indicates the direction of the end-effector (tool) as quaternion.
 
- <!-- <img src="/assets/images/platform/openmanipulator/rqt_kinematic_pose.png" width="1000"> -->
+ <!-- <img src="/assets/images/platform/openmanipulator_x/rqt_kinematic_pose.png" width="1000"> -->
 
 `/open_manipulator/states`([open_manipulator_msgs/OpenManipulatorState]{: .popup}) is a message indicating the status of OpenManipulator. **"open_manipulator_actuator_state"** indicates whether actuators (Dynamixels) are enabled ("ACTUATOR_ENABLE") or disabled ("ACTUATOR_DISABLE"). **"open_manipulator_moving_state"** indicates whether OpenManipulator is moving along the trajectory ("IS_MOVING") or stopped ("STOPPED").
 
- <!-- <img src="/assets/images/platform/openmanipulator/rqt_states.png" width="1000"> -->
+ <!-- <img src="/assets/images/platform/openmanipulator_x/rqt_states.png" width="1000"> -->
 
 `/open_manipulator/*joint_name*_position/command`([std_msgs/Float64]{: .popup}) are the messages to publish goal position of each joint to gazebo simulation node. `*joint_name*` shows the name of each joint. The messages will only be published if you run the controller package with the `use_platform` parameter set to `false`.
 
@@ -538,7 +538,7 @@ A list of topics that the open_manipulator_controller subscribes.
 
 `/open_manipulator/option`([std_msgs/String]{: .popup}) is used to set OpenManipulator options. **"print_open_manipulator_setting"** : request the open_manipulator_controller controller to display "Manipulator Description".
 
- <!-- <img src="/assets/images/platform/openmanipulator/rqt_option.png" width="1000"> -->
+ <!-- <img src="/assets/images/platform/openmanipulator_x/rqt_option.png" width="1000"> -->
 
 `/open_manipulator/option`([moveit_msgs/DisplayTrajectory]{: .popup}) is used to subscribe a planned joint trajectory published from moveit!
 

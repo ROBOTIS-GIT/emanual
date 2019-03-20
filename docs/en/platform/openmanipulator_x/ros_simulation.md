@@ -1,14 +1,14 @@
 ---
 layout: archive
 lang: en
-ref: openmanipulator_ros_simulation
+ref: openmanipulator_x_ros_simulation
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/openmanipulator/ros_simulation/
+permalink: /docs/en/platform/openmanipulator_x/ros_simulation/
 sidebar:
-  title: OpenManipulator X-Series
-  nav: "openmanipulator"
+  title: OpenManipulator-X
+  nav: "openmanipulator_x"
 ---
 
 <div style="counter-reset: h1 7"></div>
@@ -32,7 +32,7 @@ Load OpenManipulator on Gazebo simulator and click on Play `▶` button.
 
 A red box is pointing end-effector link.
 
-  ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_gazebo_1.png)
+  ![](/assets/images/platform/openmanipulator_x/OpenManipulator_Chain_gazebo_1.png)
 
 Enter `rostopic list` to list up the activated topics.
 
@@ -55,9 +55,9 @@ Enter `rostopic list` to list up the activated topics.
   /rosout
   /rosout_agg
   ```
-Open an [open_manipulator_control_gui](/docs/en/platform/openmanipulator/ros_operation/#gui-program)
+Open an [open_manipulator_control_gui](/docs/en/platform/openmanipulator_x/ros_operation/#gui-program)
 
-  ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_gazebo_2.png)
+  ![](/assets/images/platform/openmanipulator_x/OpenManipulator_Chain_gazebo_2.png)
 
 ## [Controller for gazebo](#controller-for-gazebo)
 

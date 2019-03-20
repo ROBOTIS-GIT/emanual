@@ -1,14 +1,14 @@
 ---
 layout: archive
 lang: en
-ref: openmanipulator_ros_operation
+ref: openmanipulator_x_ros_operation
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/openmanipulator/ros_operation/
+permalink: /docs/en/platform/openmanipulator_x/ros_operation/
 sidebar:
-  title: OpenManipulator X-Series
-  nav: "openmanipulator"
+  title: OpenManipulator-X
+  nav: "openmanipulator_x"
 ---
 
 <div style="counter-reset: h1 6"></div>
@@ -23,7 +23,7 @@ sidebar:
 **NOTE**:
 - This instructions has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 - This instructions are supposed to be running on PC ROS packages installed in. Please run the instructions below on your PC ROS packages installed in.
-- Make sure to run the [OpenManipulator controller](/docs/en/platform/openmanipulator/ros_controller_package/#launch-controller) instructions before running the instruction below.
+- Make sure to run the [OpenManipulator controller](/docs/en/platform/openmanipulator_x/ros_controller_package/#launch-controller) instructions before running the instruction below.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
@@ -33,26 +33,26 @@ sidebar:
   $ roslaunch open_manipulator_control_gui open_manipulator_control_gui.launch
   ```
   To controll OpenManipulator, first click the `Timer Start` button.  
-  ![](/assets/images/platform/openmanipulator/OpenManipulator_GUI.png)  
+  ![](/assets/images/platform/openmanipulator_x/OpenManipulator_GUI.png)  
 
   To check the status of the OpenManipulator (joint states, kinematics pose).  
-  ![](/assets/images/platform/openmanipulator/OpenManipulator_GUI2.png)  
+  ![](/assets/images/platform/openmanipulator_x/OpenManipulator_GUI2.png)  
 
   To manipulate the OpenManipulator in the [joint space]{: .popup}. Enter the joint angles and total time of the trajectory. Then click the `send` button.  
-  ![](/assets/images/platform/openmanipulator/OpenManipulator_GUI3.png)  
+  ![](/assets/images/platform/openmanipulator_x/OpenManipulator_GUI3.png)  
 
   To manipulate the OpenManipulator in the [task space]{: .popup}. Enter the kinematics pose of the OpenManipulator end-effector(tool) in the [task space]{: .popup} and the total time of the trajectory. Then click the `send` button.  
-  ![](/assets/images/platform/openmanipulator/OpenManipulator_GUI4.png)  
+  ![](/assets/images/platform/openmanipulator_x/OpenManipulator_GUI4.png)  
 
   To create a drawing trajectory with the OpenManipulator. First, choose the drawing trajectory type(line, circle, rhombus, heart). And enter the parameters according to the drawing trajectory type and the total time of the drawing trajectory. Then click the `send` button.  
-  ![](/assets/images/platform/openmanipulator/OpenManipulator_GUI5.png)  
+  ![](/assets/images/platform/openmanipulator_x/OpenManipulator_GUI5.png)  
 
 ## [Teleoperation](#teleoperation)
 {% capture notice_01 %}
 **NOTE**:
 - This instruction has been tested on `Ubuntu 16.04` and `ROS Kinetic Kame`.
 - This instruction is supposed to be run on PC with ROS packages installed in. Please run the instruction below on your PC ROS packages installed in.
-- Make sure to run [OpenManipulator controller](/docs/en/platform/openmanipulator/ros_controller_package/#launch-controller) instructions before running the instructions below.
+- Make sure to run [OpenManipulator controller](/docs/en/platform/openmanipulator_x/ros_controller_package/#launch-controller) instructions before running the instructions below.
 {% endcapture %}
 <div class="notice--info">{{ notice_01 | markdownify }}</div>
 
@@ -202,10 +202,10 @@ After set the parameters, launch the open_manipulator_controller.
   ```
 
 **Warning!**     
-When launching the controller to use MoveIt!, [OpenManipulator launch file](/docs/en/platform/openmanipulator/ros_controller_package/#launch-controller) must be turned off.
+When launching the controller to use MoveIt!, [OpenManipulator launch file](/docs/en/platform/openmanipulator_x/ros_controller_package/#launch-controller) must be turned off.
 {: .notice--warning}
 
-  ![](/assets/images/platform/openmanipulator/moveit_launch.png)  
+  ![](/assets/images/platform/openmanipulator_x/moveit_launch.png)  
 
 **Service Server List** :
 A list of MoveIt!-related service server that open_manipulator_controller has.
@@ -225,13 +225,13 @@ The user can use this service to create a trajectory in the [task space]{: .popu
 **TIP**: If you would like to use inverse kinematics with `position_only`, check `open_manipulator_moveit` -> `config` -> `kinematics.yaml` and set `position_only_ik` parameter to **True**.
 {: .notice--success}
 
-  ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_moveit_real_1.png)
+  ![](/assets/images/platform/openmanipulator_x/OpenManipulator_Chain_moveit_real_1.png)
 
-  ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_moveit_real_2.png)
+  ![](/assets/images/platform/openmanipulator_x/OpenManipulator_Chain_moveit_real_2.png)
 
-  ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_moveit_real_3.png)
+  ![](/assets/images/platform/openmanipulator_x/OpenManipulator_Chain_moveit_real_3.png)
 
-  ![](/assets/images/platform/openmanipulator/OpenManipulator_Chain_moveit_real_4.png)
+  ![](/assets/images/platform/openmanipulator_x/OpenManipulator_Chain_moveit_real_4.png)
 
 
 [OpenCR]: /docs/en/parts/controller/opencr10/
