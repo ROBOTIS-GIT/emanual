@@ -1,14 +1,14 @@
 ---
 layout: archive
 lang: en
-ref: openmanipulator_p60_specification
+ref: openmanipulator_pro_specification
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/openmanipulator_p60/specification/
+permalink: /docs/en/platform/openmanipulator_pro/specification/
 sidebar:
-  title: OpenManipulator P-Series
-  nav: "openmanipulator_p60"
+  title: OpenManipulator-PRO
+  nav: "openmanipulator_pro"
 ---
 
 <div style="counter-reset: h1 1"></div>
@@ -17,7 +17,7 @@ sidebar:
 
 ## [Specifications](#specifications)
 
-|Item|OpenManipulator RM-P60-RNH|
+|Item|OpenManipulator-PRO RM-P60-RNH|
 |:---:|:---:|
 |DOF|6|
 |Payload|3 kg|
@@ -36,29 +36,29 @@ sidebar:
 
 
 ## [Dimension](#dimension)
-![](/assets/images/platform/openmanipulator_p60/dimension.png)
+![](/assets/images/platform/openmanipulator_pro/dimension.png)
 
 If you have a gripper([RH-P12-RN(A)](/docs/en/platform/rh_p12_rna/)), see below. 
-![](/assets/images/platform/openmanipulator_p60/dimension_with_gripper.png)
+![](/assets/images/platform/openmanipulator_pro/dimension_with_gripper.png)
 
 
 ## [Home Position](#home-position)
 
-The diagram below shows the “home position” of the Dynamixel PRO+s from OpenManipulator RM-P60-RNH.
+The diagram below shows the “home position” of the Dynamixel PRO+s from OpenManipulator-PRO.
 
-![](/assets/images/platform/openmanipulator_p60/home_position.jpg)
+![](/assets/images/platform/openmanipulator_pro/home_position.jpg)
 
 
 ## [D-H Configuration](#d-h-configuration)
-![](/assets/images/platform/openmanipulator_p60/d_h_configuration.jpg)
+![](/assets/images/platform/openmanipulator_pro/d_h_configuration.jpg)
 
 - DH Parameter
 
 |Link|Link Length(mm)|Link Twist(rad)|Joint Offset(mm)|Joint Angle(rad)|DXL Angle(rad)|
 |:---:|:---:|:---:|:---:|:---:|:---:|
 |1|0|-&pi;/2|0|0|0|
-|2|265.69|0|0|0|![](/assets/images/platform/openmanipulator_p60/d_h_eq_001.gif)|
-|3|30|-&pi;/2|0|0|![](/assets/images/platform/openmanipulator_p60/d_h_eq_002.gif)|
+|2|265.69|0|0|0|![](/assets/images/platform/openmanipulator_pro/d_h_eq_001.gif)|
+|3|30|-&pi;/2|0|0|![](/assets/images/platform/openmanipulator_pro/d_h_eq_002.gif)|
 |4|0|-&pi;/2|258|0|0|
 |5|0|-&pi;/2|0|0|0|
 |6|0|0|0|0|0|
@@ -66,13 +66,13 @@ The diagram below shows the “home position” of the Dynamixel PRO+s from Open
 ## [Mass Property](#mass-property)
 ### Coordinate
 
-![](/assets/images/platform/openmanipulator_p60/mass1.jpg)
+![](/assets/images/platform/openmanipulator_pro/mass1.jpg)
 
 Total Mass : 5,551g
 
 ### Link 1
 
-![](/assets/images/platform/openmanipulator_p60/mass2.jpg)
+![](/assets/images/platform/openmanipulator_pro/mass2.jpg)
 
 - Mass(g) : 1,030
 - Center of Gravity(mm)
@@ -90,7 +90,7 @@ Total Mass : 5,551g
 
 ### Link 2
 
-![](/assets/images/platform/openmanipulator_p60/mass3.jpg)
+![](/assets/images/platform/openmanipulator_pro/mass3.jpg)
 
 - Mass(g) : 1,404
 - Center of Gravity(mm)
@@ -108,7 +108,7 @@ Total Mass : 5,551g
 
 ### Link 3
 
-![](/assets/images/platform/openmanipulator_p60/mass4.jpg)
+![](/assets/images/platform/openmanipulator_pro/mass4.jpg)
 
 - Mass(g) : 1,236
 - Center of Gravity(mm)
@@ -126,7 +126,7 @@ Total Mass : 5,551g
 
 ### Link 4
 
-![](/assets/images/platform/openmanipulator_p60/mass5.jpg)
+![](/assets/images/platform/openmanipulator_pro/mass5.jpg)
 
 - Mass(g) : 491
 - Center of Gravity(mm)
@@ -144,7 +144,7 @@ Total Mass : 5,551g
 
 ### Link 5
 
-![](/assets/images/platform/openmanipulator_p60/mass6.jpg)
+![](/assets/images/platform/openmanipulator_pro/mass6.jpg)
 
 - Mass(g) : 454
 - Center of Gravity(mm)

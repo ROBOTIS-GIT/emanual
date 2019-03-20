@@ -1,14 +1,14 @@
 ---
 layout: archive
 lang: en
-ref: openmanipulator_p60_ros_manipulator_manager
+ref: openmanipulator_pro_ros_manipulator_manager
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/openmanipulator_p60/ros_manipulator_manager/
+permalink: /docs/en/platform/openmanipulator_pro/ros_manipulator_manager/
 sidebar:
-  title: OpenManipulator P-Series
-  nav: "openmanipulator_p60"
+  title: OpenManipulator-PRO
+  nav: "openmanipulator_pro"
 ---
 
 <div style="counter-reset: h1 4"></div>
@@ -30,14 +30,14 @@ sidebar:
 ```
 $ sudo bash
 [sudo] password for robotis:   
-# roslaunch manipulator_h_manager open_manipulator_p60_manager.launch   
+# roslaunch manipulator_h_manager open_manipulator_pro_manager.launch   
 ```
 If you have a gripper([RH-P12-RN(A)](/docs/en/platform/rh_p12_rna/)), see below. 
 
 ```
 $ sudo bash
 [sudo] password for robotis:   
-# roslaunch manipulator_h_manager open_manipulator_p60_manager.launch with_gripper:=true
+# roslaunch manipulator_h_manager open_manipulator_pro_manager.launch with_gripper:=true
 ```
 
 
@@ -64,7 +64,7 @@ NODES
 ROS_MASTER_URI=http://localhost:11311
 
 process[manipulator_h_manager-1]: started with pid [19408]
-[ INFO] [1552279834.246020783]: manager->init
+[ INFO] [1552279834.24ro20783]: manager->init
 /dev/ttyUSB0 added. (baudrate: 1000000)
 (/dev/ttyUSB0) [ID:  1] H54P-200-S500-R added. 
 (/dev/ttyUSB0) [ID:  2] H54P-200-S500-R added. 
@@ -78,14 +78,14 @@ process[manipulator_h_manager-1]: started with pid [19408]
 ## [Check Setting](#check-setting)
 ### [RViz](#rviz)
 ```
-$ roslaunch manipulator_h_bringup open_manipulator_p60.launch 
+$ roslaunch manipulator_h_bringup open_manipulator_pro.launch 
 ```
 
 If you have a gripper([RH-P12-RN(A)](/docs/en/platform/rh_p12_rna/)), see below. 
 ```
-$ roslaunch manipulator_h_bringup open_manipulator_p60.launch with_gripper:=true
+$ roslaunch manipulator_h_bringup open_manipulator_pro.launch with_gripper:=true
 ```
-![](/assets/images/platform/openmanipulator_p60/rviz.png)
+![](/assets/images/platform/openmanipulator_pro/rviz.png)
   
 ## [Message List](#message-list)
 ### [Topic](#topic)

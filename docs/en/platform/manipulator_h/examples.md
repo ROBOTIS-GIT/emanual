@@ -538,7 +538,7 @@ MotionPlayer.Set_Time_Period(DEFAULT_Ctrl_TIME_PERIOD);
 - EndEffector Pose table
 
 |Control EndEffector|Position -> +5mm<br />orientation -> +(3&pi;/180)rad|Position -> -5mm<br />orientation -> -(3&pi;/180)rad|
-|:---:|:---:|
+|:---:|:---:|:---:|
 |Position X|q|a|
 |Position Y|w|s|
 |Position Z|e|d|

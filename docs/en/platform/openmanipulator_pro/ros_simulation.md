@@ -1,14 +1,14 @@
 ---
 layout: archive
 lang: en
-ref: openmanipulator_p60_ros_simulation
+ref: openmanipulator_pro_ros_simulation
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/openmanipulator_p60/ros_simulation/
+permalink: /docs/en/platform/openmanipulator_pro/ros_simulation/
 sidebar:
-  title: OpenManipulator P-Series
-  nav: "openmanipulator_p60"
+  title: OpenManipulator-PRO
+  nav: "openmanipulator_pro"
 ---
 
 <div style="counter-reset: h1 6"></div>
@@ -28,12 +28,12 @@ sidebar:
 ## [Manager for gazebo](#manager-for-gazebo)
 
 ```
-$ roslaunch manipulator_h_manager open_manipulator_p60_manager_gazebo.launch
+$ roslaunch manipulator_h_manager open_manipulator_pro_manager_gazebo.launch
 ```
 
 If you have a gripper([RH-P12-RN(A)](/docs/en/platform/rh_p12_rna/)), see below. 
 ```
-$ roslaunch manipulator_h_manager open_manipulator_p60_manager_gazebo.launch with_gripper:=true
+$ roslaunch manipulator_h_manager open_manipulator_pro_manager_gazebo.launch with_gripper:=true
 ```
 
 If the manipulator manger has been launched successfully, the terminal will show the following message.
@@ -73,10 +73,10 @@ process[manipulator_h_manager-1]: started with pid [19408]
 
 Load the manipulator on Gazebo simulator and click on Play `▶` button.
 ```
-$ roslaunch manipulator_h_gazebo open_manipulator_p60_gazebo.launch   
+$ roslaunch manipulator_h_gazebo open_manipulator_pro_gazebo.launch   
 ```
 If you have a gripper([RH-P12-RN(A)](/docs/en/platform/rh_p12_rna/)), see below. 
 ```
-$ roslaunch manipulator_h_gazebo open_manipulator_p60_gazebo.launch with_gripper:=true
+$ roslaunch manipulator_h_gazebo open_manipulator_pro_gazebo.launch with_gripper:=true
 ```
-![](/assets/images/platform/openmanipulator_p60/gazebo.png)  
+![](/assets/images/platform/openmanipulator_pro/gazebo.png)  
