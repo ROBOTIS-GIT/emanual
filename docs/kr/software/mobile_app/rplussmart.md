@@ -248,8 +248,10 @@ sidebar:
 
 **주의** : 구글의 변경된 정책으로 SMS 기능은 더이상 지원되지 않습니다.  
 SMS 기능이 필요한 경우 이전 버전의 앱 설치파일(APK)을 다운로드 받아 수동으로 설치하시기 바랍니다.  
-[R+ SMART (v0.9.3.6) 다운로드](http://www.robotis.com/service/download.php?no=1674)
-[R+ SMART2 (v0.9.3.6) 다운로드](http://www.robotis.com/service/download.php?no=1675)
+이전 버전 사용시 최신 업데이트가 반영되지 않는 점 유의하시기 바랍니다.  
+[R+ SMART (v0.9.3.6) 다운로드]{: .blank}  
+[R+ SMART2 (v0.9.3.6) 다운로드]{: .blank}  
+[R+ SMART3 (v0.9.6.1) 다운로드]{: .blank}
 {: .notice--warning}
 
 - 시스템 최저 요구 사양
@@ -333,3 +335,7 @@ SMS 기능이 필요한 경우 이전 버전의 앱 설치파일(APK)을 다운�
 ## [태스크파일 다운로드](#태스크파일-다운로드)
 
 {% include kr/software/mobile_app/smart/task_download.md %}
+
+[R+ SMART (v0.9.3.6) 다운로드]: http://www.robotis.com/service/download.php?no=1674
+[R+ SMART2 (v0.9.3.6) 다운로드]: http://www.robotis.com/service/download.php?no=1675
+[R+ SMART3 (v0.9.6.1) 다운로드]: http://www.robotis.com/service/download.php?no=1673
