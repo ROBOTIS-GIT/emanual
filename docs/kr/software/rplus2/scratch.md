@@ -86,16 +86,29 @@ sidebar:
 
   ![](/assets/images/sw/rplus2/scratch/r+scratch_6.jpg)
 
-# [참고자료](#참고자료)
-
 ## [스크래치 2.0 오프라인 에디터 설치](#스크래치-20-오프라인-에디터-설치)
 
-스크래치 2.0 오프라인 에디터 다운로드 페이지 ([https://scratch.mit.edu/download/scratch2](https://scratch.mit.edu/download/scratch2))에서 Windows용 [Adobe AIR](http://get.adobe.com/air/)와 [스크래치 오프라인 에디터](https://scratch.mit.edu/scratchr2/static/sa/Scratch-461.exe)를 다운받아 설치합니다.
+스크래치 2.0 오프라인 에디터 다운로드 페이지 ([https://scratch.mit.edu/download/scratch2](https://scratch.mit.edu/download/scratch2))에서 Windows용 [스크래치 오프라인 에디터](https://scratch.mit.edu/scratchr2/static/sa/Scratch-461.exe)를 다운받아 설치합니다.
 
- 스크래치 2.0 오프라인 에디터가 설치되지 않은 상태에서 홈 화면의 “스크래치 새로 만들기” 또는 “스크래치 열기” 버튼을 클릭하면 다운로드 페이지로 이동합니다.
+![](/assets/images/sw/rplus2/scratch/roboplus_scratch_06.png)
 
+![](/assets/images/sw/rplus2/scratch/roboplus_scratch_07.png)
 
-## [ROBOTIS Virtual COM Port 설치](#robotis-virtual-com-port-설치)
+![](/assets/images/sw/rplus2/scratch/roboplus_scratch_08.png)
+
+![](/assets/images/sw/rplus2/scratch/roboplus_scratch_09.png)
+
+프로그램의 설치가 완료되면 메뉴의 지구본 모양 아이콘을 눌러 사용 언어를 설정할 수 있습니다.
+
+![](/assets/images/sw/rplus2/scratch/roboplus_scratch_10.png)
+
+![](/assets/images/sw/rplus2/scratch/roboplus_scratch_11.png)
+
+스크래치 2.0 오프라인 에디터가 정상적으로 설치되면 R+Scratch 홈 화면의 “스크래치 새로 만들기” 또는 “스크래치 열기” 버튼을 클릭해서 스크래치 2.0 오프라인 에디터를 실행할 수 있습니다.
+
+# [참고자료](#참고자료)
+
+## [USB 드라이버 설치](#usb-드라이버-설치)
 
 드라이버가 정상적으로 설치되었다면 PC와 제어기를 연결하고 제어기의 전원을 켰을 때 아래와 같이 장치관리자에 “ROBOTIS Virtual Com port(COM X)” 가 표시됩니다.
 
@@ -125,25 +138,28 @@ ROBOTIS Virtual COM Port 를 선택한 후 다음을 클릭하여 설치를 완�
 
 [USB 드라이버 설치]: /docs/kr/faq/usb_driver_install/
 
-## [추가 블록 직접 추가](#추가-블록-직접-추가)
+## [블록 직접 추가](#블록-직접-추가)
 
-제어기를 선택하고 “스크래치 새로 만들기” 또는 “스크래치 열기” 버튼을 클릭하여 실행되는 스크래치 프로젝트에서는 선택한 제어기 관련 블록들이 자동으로 추가됩니다.
+제어기를 선택하고 `스크래치 새로 만들기` 또는 `스크래치 열기` 버튼을 클릭하여 실행되는 스크래치 프로젝트에서는 선택한 제어기와 관련된 블록들이 자동으로 추가되어 있습니다.
 
-스크래치를 직접 실행하거나 스크래치 메뉴의 새로 만들기를 클릭한 경우 아래와 같이 직접 블록을 추가해야 합니다.
-
+만약, 스크래치를 별도로 실행하거나 스크래치 메뉴에서 새로 만들기를 클릭한 경우 아래와 같이 사용하려는 제어기에 대한 블록을 직접 추가해야 합니다.  
 스크래치 사이트에서 다운로드 받은 예제 ([https://scratch.mit.edu/starter_projects/](https://scratch.mit.edu/starter_projects/)) 또는 기존 작성했던 스크래치를 제어기와 연결하도록 사용하고자 할 때, 직접 추가할 수 있습니다.
 
-1. 키보드의 “Shift” 키를 누른고 “파일” 메뉴를 클릭하면 그림과 같이 메뉴 제일 밑에 “import experimental HTTP extension” 메뉴가 표시됩니다. HTTP extension 메뉴를 클릭합니다.
+1. 로보플러스 스크래치의 `도움말 보기`를 클릭하면 생성되는 탐색기에서 폴더 경로를 복사합니다.
+
+    ![](/assets/images/sw/rplus2/scratch/r+scratch_15.jpg)
+    
+    ![](/assets/images/sw/rplus2/scratch/r+scratch_15-1.jpg)
+
+2. 스크래치 2.0 오프라인 에디터에서 키보드의 `Shift` 키를 누른 상태에서 `파일` 메뉴를 클릭하고 그림과 같이 `HTTP 확장 기능 불러오기`를 선택합니다.
 
     ![](/assets/images/sw/rplus2/scratch/r+scratch_14.jpg)
 
-2. 도움말 보기를 클릭하여 나오는 폴더 경로를 복사하고
-
-    ![](/assets/images/sw/rplus2/scratch/r+scratch_15.jpg)
-
-3. HTTP extension 메뉴 클릭하여 나온 선택창에 복사한 후, 표시되는 파일 중 추가하고자 하는 제어기 명의 \*.json 파일을 선택합니다.
+3. 아래와 같이 새 창이 열리면 파일 이름에 복사해둔 폴더 경로를 붙여넣은 다음, 표시되는 파일 중 추가하고자 하는 \*.json 파일을 선택합니다.
 
     ![](/assets/images/sw/rplus2/scratch/r+scratch_16.jpg)
+    
+    ![](/assets/images/sw/rplus2/scratch/r+scratch_16-1.jpg)
 
 4. 아래 그림과 같이 선택한 블록들이 “추가 블록” 에 표시됩니다.
 

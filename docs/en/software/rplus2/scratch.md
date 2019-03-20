@@ -47,12 +47,12 @@ If Scratch2Offline and R+ Scratch are properly communicating, the O icon above t
 ### New Scratch
 If Scratch2Offline is installed, clicking on the “New Scratch” button will load a new Scratch project that includes the blocks relevant for programming the selected Controller in Scratch2Offline.  
 You will first need to save the Scratch project before it loads in Scratch2Offline.  
-If Scratch2Offline is not installed, clicking on the “New Scratch” button will link to the Scratch2Offline download page. See [Installing Scratch2Offline] section.
+If Scratch2Offline is not installed, clicking on the “New Scratch” button will link to the Scratch2Offline download page. See [Install Scratch 2.0 Offline] section.
 
 ### Open Scratch
 If Scratch2Offline is installed, clicking on the “Open Scratch” button will load the list of provided example projects for the selected Controller. Double click on example project from the list to load that project.  
 You will first need to save the Scratch project before it loads in Scratch2Offline.  
-If Scratch2Offline is not installed, clicking on the “New Scratch” button will link to the Scratch2Offline download page. See [Installing Scratch2Offline] section.
+If Scratch2Offline is not installed, clicking on the “New Scratch” button will link to the Scratch2Offline download page. See [Install Scratch 2.0 Offline] section.
 
 ### Help Menu
 Clicking the “Help” button will load a folder containing help files.  
@@ -107,16 +107,16 @@ This method utilizes BT-210 Bluetooth module or ZigBee (ZIG-110A Set + ZIG2Seria
 4. Click on “Auto Search” to automatically detect the Controller or manually select the COM Port by double clicking on “USB Serial Port.”
 5. Click “Connect” to begin communicating between robot and PC.  
 
-# [Miscellaneous](#miscellaneous)
+# [Install Scratch 2.0 Offline](#install-scratch-20-offline)
+1. Go to the Scratch 2.0 Offline download page ([https://scratch.mit.edu/download/scratch2](https://scratch.mit.edu/download/scratch2))
+2. Download [Scratch 2.0 Offline Editor](https://scratch.mit.edu/scratchr2/static/sa/Scratch-461.exe).
 
-## Installing Scratch2Offline
-1. Go to the Scratch2Offline download page ([https://scratch.mit.edu/scratch2download/](https://scratch.mit.edu/scratch2download/))
-2. Download Adobe AIR and the Scratch Offline Editor for your OS.
-
-**NOTE** : If Scratch2Offline is not installed, clicking on the “New Scratch” or “Open Scratch” buttons from R+ Scratch’s Home Screen will link to the Scratch2Offline download page.
+**NOTE** : If Scratch 2.0 Offline is not installed, clicking on the “New Scratch” or “Open Scratch” buttons from R+ Scratch’s Home Screen will link to the Scratch2Offline download page.
 {: .notice}
 
-## Installing the ROBOTIS Virtual COM Port Driver
+# [Miscellaneous](#miscellaneous)
+
+## [Install USB Driver](#install-usb-driver)
 1. If the driver is properly installed and your Controller is connected to your PC and powered on, you will see “ROBOTIS Virtual COM Port(COM X)” in Device Manager.
 2. If the device shows up as “USB Serial Port,” then you must update the driver.
 3. Right-click on “USB Serial Port” and select “Update Driver Software...”
@@ -127,7 +127,7 @@ This method utilizes BT-210 Bluetooth module or ZigBee (ZIG-110A Set + ZIG2Seria
 To install the USB driver manually, please visit the following link:  
 http://support.robotis.com/ko/software/sw_reference/cm150_usb_install.htm
 
-## Directly Adding an Extension Block
+## [Add Extension Blocks](#add-extension-blocks)
 - Selecting the Controller and clicking the “New Scratch” or “Open Scratch” buttons will open a Scratch project with the blocks related to the Controller automatically included.
 - When executing Scratch directly or clicking Create New in the Scratch Menu, you will have to add a block directly as instructed below.
 - When you are trying to connect an example downloaded from the Scratch website ([https://scratch.mit.edu/starter_projects/](https://scratch.mit.edu/starter_projects/)) or a previously created Scratch with the Controller, you can add an Extension Block directly.
@@ -139,4 +139,4 @@ http://support.robotis.com/ko/software/sw_reference/cm150_usb_install.htm
 4. The selected blocks are now shown in the “Extension Block” list.
 
 
-[Installing Scratch2Offline]: #installing-scratch2offline
+[Install Scratch 2.0 Offline]: #install-scratch-20-offline
