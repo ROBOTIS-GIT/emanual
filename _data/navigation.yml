@@ -16891,18 +16891,31 @@ rplusscratch:
     url: /software/rplus2/scratch/#introduction
     urlkr: /software/rplus2/scratch/#개요
     children:
-    - title: "Program Layout"
-      titlekr: "로보플러스 스크래치 설명"
-      url: /software/rplus2/scratch/#program-layout
-      urlkr: /software/rplus2/scratch/#로보플러스-스크래치-설명
-    - title: "Connect Controller to PC"
-      titlekr: "제어기를 PC에 연결하기"
-      url: /software/rplus2/scratch/#connect-controller-to-pc
-      urlkr: /software/rplus2/scratch/#제어기를-pc에-연결하기
+      - title: "Program Layout"
+        titlekr: "로보플러스 스크래치 설명"
+        url: /software/rplus2/scratch/#program-layout
+        urlkr: /software/rplus2/scratch/#로보플러스-스크래치-설명
+      - title: "Connect Controller to PC"
+        titlekr: "제어기를 PC에 연결하기"
+        url: /software/rplus2/scratch/#connect-controller-to-pc
+        urlkr: /software/rplus2/scratch/#제어기를-pc에-연결하기
+  - title: "Install Scratch 2.0 Offline"
+    titlekr: "스크래치 2.0 오프라인 에디터 설치"
+    url: /software/rplus2/scratch/#install-scratch-20-offline
+    urlkr: /software/rplus2/scratch/#스크래치-20-오프라인-에디터-설치
   - title: "Miscellenous"
     titlekr: "참고자료"
     url: /software/rplus2/scratch/#miscellaneous
     urlkr: /software/rplus2/scratch/#참고자료
+    children:
+      - title: "Install USB Driver"
+        titlekr: "USB 드라이버 설치"
+        url: /software/rplus2/scratch/#install-usb-driver
+        urlkr: /software/rplus2/scratch/#usb-드라이버-설치
+      - title: "Add Extention Blocks"
+        titlekr: "블록 직접 추가"
+        url: /software/rplus2/scratch/#add-extension-blocks
+        urlkr: /software/rplus2/scratch/#블록-직접-추가
 
 rplus2_block:
   - title: "Introduction"

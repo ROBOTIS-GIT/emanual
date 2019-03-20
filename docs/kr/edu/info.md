@@ -128,7 +128,7 @@ sidebar:
 2. Play스토어에서 `R+ 실과로봇`을 검색한 후 설치합니다.
 3. 구글 플레이에서 `로보티즈` 또는 `R+ 실과로봇`으로 검색해서 설치합니다.
 
-   ![](/assets/images/sw/mobile/s3_app_kr.jpg)
+   ![](/assets/images/sw/mobile/s3_app_kr.png)
 
 
 ## [제어기와 스마트기기 연결](#제어기와-스마트기기-연결)
@@ -164,7 +164,9 @@ sidebar:
   (이 때, 스마트기기와 블루투스가 연결되어 있지 않으면 "장치 선택 창" 이 열리므로 블루투스를 선택하여 연결해 주면 됩니다.)
 5. 다운로드가 완료되면 다운로드가 완료되었다는 메시지가 나타납니다.
 
-   ![](/assets/images/sw/mobile/image17_kr.gif)
+   ![](/assets/images/sw/mobile/image17_kr.png)
+   ![](/assets/images/sw/mobile/image17-1_kr.png)
+
 
 
 # [교육자료 다운로드](#교육자료-다운로드)
@@ -182,7 +184,7 @@ sidebar:
 |       경찰 (Police Officer)<br>![](/assets/images/edu/info/info_entry_police.png)       | [교안 다운로드][교안_경찰]<br>[조립서 다운로드][조립서_경찰] | **경찰 예제프로그램 다운로드**<br>키트 데모 예제 : [01_inforobot_Police_Officer_kr]<br>기초 코딩 예제 : [02_inforobot_Police_Officer_Basic_kr]                                                                 |
 |         스쿠터 (Scooter)<br>![](/assets/images/edu/info/info_entry_scooter.png)         | [교안 다운로드][교안_스쿠터]<br>[조립서 다운로드][조립서_스쿠터] | **스쿠터 예제프로그램 다운로드**<br>키트 데모 예제 : [01_inforobot_Scooter_kr]<br>기초 코딩 예제 : [02_inforobot_Scooter_Basic_kr]                                                                             |
 | 분리수거로봇 (Recycling Robot)<br>![](/assets/images/edu/info/info_entry_recycling.png) | [교안 다운로드][교안_분리수거]<br>[조립서 다운로드][조립서_분리수거] | **분리수거로봇 예제프로그램 다운로드**<br>키트 데모 예제 : [01_inforobot_Recycling_Robot_kr]<br>기초 코딩 예제 : [02_inforobot_Recycling_Robot_Basic_kr]<br>활동자료 : [inforobot_Recycling_Robot_sourcebook] |
-|    청소로봇 (Cleaning Robot)<br>![](/assets/images/edu/info/info_entry_cleaning.png)    | [교안 다운로드][교안_청소]<br>[조립서 다운로드][조립서_청소] | **청소로봇 예제프로그램 다운로드**<br>키트 데모 예제 : [01_infoRobot_Cleaning_Robot_kr]<br>기초 코딩 예제 : [02_infoRobot_Cleaning_Robot_Basic_kr]<br>활동자료 : [infoRobot_Cleaning_Robot_sourcebook]        |
+|    청소로봇 (Cleaning Robot)<br>![](/assets/images/edu/info/info_entry_cleaning.png)    | [교안 다운로드][교안_청소]<br>[조립서 다운로드][조립서_청소] | **청소로봇 예제프로그램 다운로드**<br>키트 데모 예제 : [01_infoRobot_Cleaning_Robot_kr]<br>기초 코딩 예제 : [02_infoRobot_Cleaning_Robot_Basic_kr]<br>활동자료 : [infoRobot_Cleaning_Robot_sourcebook]<br><br>**[실과 교과서 전용 코드](http://www.robotis.com/service/download.php?no=1718)**{: .notice--info}       |
 
 ## [태스크 예제](#테스크-예제)
 
@@ -193,7 +195,7 @@ sidebar:
 |       투석기 (Catapult)<br>![](/assets/images/edu/info/info_task_catapult.png)        | [교안 다운로드][교안_투석기]<br>[조립서 다운로드][조립서_투석기] | **투석기 예제프로그램 다운로드**<br>키트 데모 예제 : [01_inforobot_Catapult_kr]<br>기초 코딩 예제 : [02_inforobot_Catapult_Basic_kr]<br>응용코딩예제 : [03_inforobot_Catapult_Advance_kr]<br>활동자료 : [inforobot_Catapult_sourcebook]                           |
 |      곤충로봇 (Hexapod Robot)<br>![](/assets/images/edu/info/info_task_bug.png)       | [교안 다운로드][교안_곤충]<br>[조립서 다운로드][조립서_곤충] | **곤충로봇 예제프로그램 다운로드**<br>키트 데모 예제 : [01_inforobot_Hexapod_Robot_kr]<br>기초 코딩 예제 : [02_inforobot_Hexapod_Robot_Basic_kr]<br>응용코딩예제 : [03_inforobot_Hexapod_Robot_Advance_kr]                                                         |
 |  집게로봇 (Gripper Robot)<br>![](/assets/images/edu/info/info_task_gripperrobot.png)  | [교안 다운로드][교안_집게]<br>[조립서 다운로드][조립서_집게] | **집게로봇 예제프로그램 다운로드**<br>키트 데모 예제 : [01_inforobot_Gripper_Robot_kr]<br>기초 코딩 예제 : [02_inforobot_Gripper_Robot_Basic_kr]<br>응용코딩예제 : [03_inforobot_Gripper_Robot_Advance_kr]                                                         |
-| 안내로봇 (Guidance Robot)<br>![](/assets/images/edu/info/info_task_guidancerobot.png) | [교안 다운로드][교안_안내]<br>[조립서 다운로드][조립서_안내] | **안내로봇 예제프로그램 다운로드**<br>키트 데모 예제 : [01_inforobot_Guidance_Robot_kr]<br>기초 코딩 예제 : [02_inforobot_Guidance_Robot_Basic_kr]<br>응용코딩예제 : [03_inforobot_Guidance_Robot_Advance_kr]<br>활동자료 : [inforobot_Guidance_Robot_sourcebook] |
+| 안내로봇 (Guidance Robot)<br>![](/assets/images/edu/info/info_task_guidancerobot.png) | [교안 다운로드][교안_안내]<br>[조립서 다운로드][조립서_안내] | **안내로봇 예제프로그램 다운로드**<br>키트 데모 예제 : [01_inforobot_Guidance_Robot_kr]<br>기초 코딩 예제 : [02_inforobot_Guidance_Robot_Basic_kr]<br>응용코딩예제 : [03_inforobot_Guidance_Robot_Advance_kr]<br>활동자료 : [inforobot_Guidance_Robot_sourcebook]<br><br>**[실과 교과서 전용 코드](http://www.robotis.com/service/download.php?no=1717)**{: .notice--info}    |
 
 
 
