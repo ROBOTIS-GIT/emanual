@@ -20,22 +20,22 @@ product_group: rh_p12_rna
 
 # [주요 사양](#주요-사양)
 
-| 항목                  | 사양                                                                                            |
-|:---------------------|:-----------------------------------------------------------------------------------------------|
-| MCU                  | ST CORTEX-M4 (STM32F405 @ 168Mhz, 32bit)                                                       |
-| 위치 센서              | Contactless Absolute Encoder (12bit, 360&deg;)<br />Maker : ams(www.ams.com), Part No : AS5045 |
-| 모터                  | Coreless                                                                                       |
-| 통신 속도              | 9,600 bps ~ 10.5 Mbps                                                                          |
-| 제어 알고리즘           | PID Control                                                                                    |
-| 정밀도                 | 0.088&deg;                                                                                     |
-| 동작 모드              | 전류제어 모드<br />전류기반 위치제어 모드                                                            |
-| 무게                  | 500g                                                                                           |
-| 스트로크               | 0 ~ 109mm                                                                                      |
-| 감속비                 | 1181 : 1                                                                                     |
-| 최대 파지력             | 170N                                                                                           |
-| 권장 가반하중           | 5kg                                                                                            |
-| 동작 온도              | -5&deg;C ~ 55&deg;C                                                                            |
-| 사용 전압              | 24V                                                                                            |
+| 항목                | 사양                                                                                           |
+|:--------------------|:-----------------------------------------------------------------------------------------------|
+| MCU                 | ST CORTEX-M4 (STM32F405 @ 168Mhz, 32bit)                                                       |
+| 위치 센서           | Contactless Absolute Encoder (12bit, 360&deg;)<br />Maker : ams(www.ams.com), Part No : AS5045 |
+| 모터                | Coreless                                                                                       |
+| 통신 속도           | 9,600 bps ~ 10.5 Mbps                                                                          |
+| 제어 알고리즘       | PID Control                                                                                    |
+| 정밀도              | 0.088&deg;                                                                                     |
+| 동작 모드           | 전류제어 모드<br />전류기반 위치제어 모드                                                      |
+| 무게                | 500g                                                                                           |
+| 스트로크            | 0 ~ 109mm                                                                                      |
+| 감속비              | 1181 : 1                                                                                       |
+| 최대 파지력         | 170N                                                                                           |
+| 권장 가반하중       | 5kg                                                                                            |
+| 동작 온도           | -5&deg;C ~ 55&deg;C                                                                            |
+| 사용 전압           | 24V                                                                                            |
 | Command Signal      | Digital Packet                                                                                 |
 | Protocol Type       | RS485 Asynchronous Serial Communication<br />(8bit, 1stop, No Parity)                          |
 | Physical Connection | RS485 Multidrop Bus                                                                            |
@@ -51,83 +51,83 @@ product_group: rh_p12_rna
 
 ## [EEPROM 영역](#eeprom-영역)
 
-| 주소 | 크기<br>(Byte) | 명칭                                          |  접근   |  기본값  |             범위               | 단위 |
-|:---:|:------------:|:--------------------------------------------|:-----:|:------:|:----------------------------:|:------:|
-|  0  |      2       | [Model Number](#model-number)               |   R   | 35,074 |              -               | - |
-|  2  |      4       | [Model Information](#model-information)     |   R   |   -    |              -               | - |
-|  6  |      1       | [Firmware Version](#firmware-version)       |   R   |   -    |              -               | - |
-|  7  |      1       | [ID](#id)                                   |   RW  |   1    |           0 ~ 252            | - |
-|  8  |      1       | [Baud Rate](#baud-rate)                     |   RW  |   1    |            0 ~ 9             | - |
-|  9  |      1       | [Return Delay Time](#return-delay-time)     |   RW  |  250   |           0 ~ 255            | 2 [μsec] |
-|  11 |      1       | [Operating Mode](#operating-mode)           |   RW  |   5    |            0, 5              | - |
-|  12 |      1       | [Sencondary ID](#secondary-id)              |   RW  |  255   |           0 ~ 255            | - |
-|  20 |      4       | [Homing Offset](#homing-offset)             |   RW  |   0    |         0 ~ 1,150            | 1 [pulse] |
-|  24 |      4       | [Moving Threshold](#moving-threshold)       |   RW  |   80   |          0 ~ 2,970           | 0.01 [rev/min] |
-|  31 |      1       | [Temperature Limit](#temperature-limit)     |   RW  |   80   |           0 ~ 100            | 1 [&deg;C] |
-|  32 |      2       | [Max Voltage Limit](#max-voltage-limit)     |   RW  |  350   |           0 ~ 350            | 0.1 [V] |
-|  34 |      2       | [Min Voltage Limit](#min-voltage-limit)     |   RW  |  150   |           0 ~ 350            | 0.1 [V] |
-|  36 |      2       | [PWM Limit](#pwm-limit)                     |   RW  | 2,009  |         0 ~ 2,009            | - |
-|  38 |      2       | [Current Limit](#current-limit)             |   RW  |  1,984 |          0 ~ 1,984           | 1 [mA] |
-|  40 |      4       | [Acceleration Limit](#acceleration-limit)   |   RW  |  3,447 |          0 ~ 1,378,788       | 1 [rev/min<sup>2</sup>] |
-|  44 |      4       | [Velocity Limit](#velocity-limit)           |   RW  |  2,970 |          0 ~ 2,970           | 0.01 [rev/min] |
-|  48 |      4       | [Max Position Limit](#max-position-limit)   |   RW  |  1,150 |         0 ~ 1,150            | 1 [pulse] |
-|  52 |      4       | [Min Position Limit](#min-position-limit)   |   RW  |   0    |          0 ~ 1,150           | 1 [pulse] |
-|  56 |      1       | [External Port Mode 1](#external-port-mode) |   RW  |   3    |            0 ~ 3             | - |
-|  57 |      1       | [External Port Mode 2](#external-port-mode) |   RW  |   3    |            0 ~ 3             | - |
-|  58 |      1       | [External Port Mode 3](#external-port-mode) |   RW  |   3    |            0 ~ 3             | - |
-|  59 |      1       | [External Port Mode 4](#external-port-mode) |   RW  |   3    |            0 ~ 3             | - |
-|  63 |      1       | [Shutdown](#shutdown)                       |   RW  |   52   |           0 ~ 255            | - |
-| 168 |      2       | [Indirect Address 1](#indirect-address)     |   RW  |  634   |          512 ~ 1,023         | - |
-| 170 |      2       | [Indirect Address 2](#indirect-address)     |   RW  |  635   |          512 ~ 1,023         | - |
-| 172 |      2       | [Indirect Address 3](#indirect-address)     |   RW  |  636   |          512 ~ 1,023         | - |
-| ... |     ...      | ...                                         |  ...  |  ...   |             ...              | ... |
-| 422 |      2       | [Indirect Address 128](#indirect-address)   |   RW  |  761   |          512 ~ 1,023         | - |
+| 주소 | 크기<br>(Byte) | 명칭                                        | 접근 | 기본값 |     범위      |          단위           |
+|:----:|:--------------:|:--------------------------------------------|:----:|:------:|:-------------:|:-----------------------:|
+|  0   |       2        | [Model Number](#model-number)               |  R   | 35,074 |       -       |            -            |
+|  2   |       4        | [Model Information](#model-information)     |  R   |   -    |       -       |            -            |
+|  6   |       1        | [Firmware Version](#firmware-version)       |  R   |   -    |       -       |            -            |
+|  7   |       1        | [ID](#id)                                   |  RW  |   1    |    0 ~ 252    |            -            |
+|  8   |       1        | [Baud Rate](#baud-rate)                     |  RW  |   1    |     0 ~ 9     |            -            |
+|  9   |       1        | [Return Delay Time](#return-delay-time)     |  RW  |  250   |    0 ~ 255    |        2 [μsec]         |
+|  11  |       1        | [Operating Mode](#operating-mode)           |  RW  |   5    |     0, 5      |            -            |
+|  12  |       1        | [Sencondary ID](#secondary-id)              |  RW  |  255   |    0 ~ 255    |            -            |
+|  20  |       4        | [Homing Offset](#homing-offset)             |  RW  |   0    |   0 ~ 1,150   |        1 [pulse]        |
+|  24  |       4        | [Moving Threshold](#moving-threshold)       |  RW  |   80   |   0 ~ 2,970   |     0.01 [rev/min]      |
+|  31  |       1        | [Temperature Limit](#temperature-limit)     |  RW  |   80   |    0 ~ 100    |       1 [&deg;C]        |
+|  32  |       2        | [Max Voltage Limit](#max-voltage-limit)     |  RW  |  350   |    0 ~ 350    |         0.1 [V]         |
+|  34  |       2        | [Min Voltage Limit](#min-voltage-limit)     |  RW  |  150   |    0 ~ 350    |         0.1 [V]         |
+|  36  |       2        | [PWM Limit](#pwm-limit)                     |  RW  | 2,009  |   0 ~ 2,009   |            -            |
+|  38  |       2        | [Current Limit](#current-limit)             |  RW  | 1,984  |   0 ~ 1,984   |         1 [mA]          |
+|  40  |       4        | [Acceleration Limit](#acceleration-limit)   |  RW  | 3,447  | 0 ~ 1,378,788 | 1 [rev/min<sup>2</sup>] |
+|  44  |       4        | [Velocity Limit](#velocity-limit)           |  RW  | 2,970  |   0 ~ 2,970   |     0.01 [rev/min]      |
+|  48  |       4        | [Max Position Limit](#max-position-limit)   |  RW  | 1,150  |   0 ~ 1,150   |        1 [pulse]        |
+|  52  |       4        | [Min Position Limit](#min-position-limit)   |  RW  |   0    |   0 ~ 1,150   |        1 [pulse]        |
+|  56  |       1        | [External Port Mode 1](#external-port-mode) |  RW  |   3    |     0 ~ 3     |            -            |
+|  57  |       1        | [External Port Mode 2](#external-port-mode) |  RW  |   3    |     0 ~ 3     |            -            |
+|  58  |       1        | [External Port Mode 3](#external-port-mode) |  RW  |   3    |     0 ~ 3     |            -            |
+|  59  |       1        | [External Port Mode 4](#external-port-mode) |  RW  |   3    |     0 ~ 3     |            -            |
+|  63  |       1        | [Shutdown](#shutdown)                       |  RW  |   52   |    0 ~ 255    |            -            |
+| 168  |       2        | [Indirect Address 1](#indirect-address)     |  RW  |  634   |  512 ~ 1,023  |            -            |
+| 170  |       2        | [Indirect Address 2](#indirect-address)     |  RW  |  635   |  512 ~ 1,023  |            -            |
+| 172  |       2        | [Indirect Address 3](#indirect-address)     |  RW  |  636   |  512 ~ 1,023  |            -            |
+| ...  |      ...       | ...                                         | ...  |  ...   |      ...      |           ...           |
+| 422  |       2        | [Indirect Address 128](#indirect-address)   |  RW  |  761   |  512 ~ 1,023  |            -            |
 
 ## [RAM 영역](#ram-영역)
 
-| 주소 | 크기<br />(Byte)   | 명칭                                              |  접근 | 기본값 |                        범위                            |  단위 |
-|:----:|:----------------:|:--------------------------------------------------|:----:|:------:|:---------------------------------------------------:|:------:|
-| 512  |        1         | [Torque Enable](#torque-enable)                   |   RW  |   0    |                        0 ~ 1                        | - |
-| 513  |        1         | [LED Red](#led-red)                               |   RW  |   0    |                       0 ~ 255                       | - |
-| 514  |        1         | [LED Green](#led-green)                           |   RW  |   0    |                       0 ~ 255                       | - |
-| 515  |        1         | [LED Blue](#led-blue)                             |   RW  |   0    |                       0 ~ 255                       | - |
-| 516  |        1         | [Status Return Level](#status-return-level)       |   RW  |   2    |                        0 ~ 2                        | - |
-| 517  |        1         | [Registered Instruction](#registered-instruction) |   R   |   0    |                          -                          | - |
-| 518  |        1         | [Hardware Error Status](#hardware-error-status)   |   R   |   0    |                          -                          | - |
-| 524  |        2         | [Velocity I Gain](#velocity-i-gain)               |   RW  |   -    |                      0 ~ 32,767                      | - |
-| 526  |        2         | [Velocity P Gain](#velocity-i-gain)               |   RW  |   -    |                      0 ~ 32,767                      | - |
-| 528  |        2         | [Position D Gain](#position-p-gain)               |   RW  |   -    |                      0 ~ 32,767                      | - |
-| 532  |        2         | [Position P Gain](#position-p-gain)               |   RW  |   -    |                      0 ~ 32,767                      | - |
-| 530  |        2         | [Position I Gain](#position-p-gain)               |   RW  |   -    |                      0 ~ 32,767                      | - |
-| 536  |        2         | [Feedforward 2nd Gain](#feedforward-2nd-gain)     |   RW  |   -    |                      0 ~ 32,767                      | - |
-| 538  |        2         | [Feedforward 1st Gain](#feedforward-1st-gain)     |   RW  |   -    |                      0 ~ 32,767                      | - |
-| 546  |        1         | [Bus Watchdog](#bus-watchdog)                     |   RW  |   -    |                       0 ~ 127                       | 20 [msec] |
-| 548  |        2         | [Goal PWM](#goal-pwm)                             |   RW  |   -    |         -PWM Limit(36) ~<br> PWM Limit(36)          | - |
-| 550  |        2         | [Goal Current](#goal-current)                     |   RW  |   0    |     -Current Limit(38) ~<br> Current Limit(38)      | 1 [mA] |
-| 552  |        4         | [Goal Velocity](#goal-velocity)                   |   RW  |   0    |    -Velocity Limit(44) ~<br> Velocity Limit(44)     | 0.01 [rev/min] |
-| 556  |        4         | [Profile Acceleration](#profile-acceleration)     |   RW  |   0    |           0 ~<br> Acceleration Limit(40)            | 1 [rev/min<sup>2</sup>] |
-| 560  |        4         | [Profile Velocity](#profile-velocity)             |   RW  |   0    |             0 ~<br> Velocity Limit(44)              | 0.01 [rev/min] |
-| 564  |        4         | [Goal Position](#goal-position)                   |   RW  |   -    | Min Position Limit(52) ~<br> Max Position Limit(48) | 1[pulse] |
-| 568  |        2         | [Realtime Tick](#realtime-tick)                   |   R   |   -    |                      0 ~ 32,767                     | 1 [msec] |
-| 570  |        1         | [Moving](#moving)                                 |   R   |   -    |                          -                          | - |
-| 571  |        1         | [Moving Status](#moving-status)                   |   R   |   -    |                          -                          | - |
-| 572  |        2         | [Present PWM](#present-pwm)                       |   R   |   -    |                          -                          | - |
-| 574  |        2         | [Present Current](#present-current)               |   R   |   -    |                          -                          | 1 [mA] |
-| 576  |        4         | [Present Velocity](#present-velocity)             |   R   |   -    |                          -                          | 0.01 [rev/min] |
-| 580  |        4         | [Present Position](#present-position)             |   R   |   -    |                          -                          | 1 [pulse] |
-| 584  |        4         | [Velocity Trajectory](#velocity-trajectory)       |   R   |   -    |                          -                          | 0.01 [rev/min] |
-| 588  |        4         | [Position Trajectory](#position-trajectory)       |   R   |   -    |                          -                          | 1 [pulse] |
-| 592  |        2         | [Present Input Voltage](#present-input-voltage)   |   R   |   -    |                          -                          | 0.1 [V] |
-| 594  |        1         | [Present Temperature](#present-temperature)       |   R   |   -    |                          -                          | 1 [&deg;C] |
-| 600  |        2         | [External Port Data 1](#external-port-data)       |  R/RW |   0    |                       0 ~ 4,095                     | - |
-| 602  |        2         | [External Port Data 2](#external-port-data)       |  R/RW |   0    |                       0 ~ 4,095                     | - |
-| 604  |        2         | [External Port Data 3](#external-port-data)       |  R/RW |   0    |                       0 ~ 4,095                     | - |
-| 606  |        2         | [External Port Data 4](#external-port-data)       |  R/RW |   0    |                       0 ~ 4,095                     | - |
-| 634  |        1         | [Indirect Data 1](#indirect-data)                 |   RW  |   0    |                       0 ~ 255                       | - |
-| 635  |        1         | [Indirect Data 2](#indirect-data)                 |   RW  |   0    |                       0 ~ 255                       | - |
-| 636  |        1         | [Indirect Data 3](#indirect-data)                 |   RW  |   0    |                       0 ~ 255                       | - |
-| ...  |       ...        | ...                                               |  ...  |  ...   |                         ...                         | ... |
-| 761  |        1         | [Indirect Data 128](#indirect-data)               |   RW  |   0    |                       0 ~ 255                       | - |
+| 주소 | 크기<br />(Byte) | 명칭                                              | 접근 | 기본값 |                        범위                         |          단위           |
+|:----:|:----------------:|:--------------------------------------------------|:----:|:------:|:---------------------------------------------------:|:-----------------------:|
+| 512  |        1         | [Torque Enable](#torque-enable)                   |  RW  |   0    |                        0 ~ 1                        |            -            |
+| 513  |        1         | [LED Red](#led-red)                               |  RW  |   0    |                       0 ~ 255                       |            -            |
+| 514  |        1         | [LED Green](#led-green)                           |  RW  |   0    |                       0 ~ 255                       |            -            |
+| 515  |        1         | [LED Blue](#led-blue)                             |  RW  |   0    |                       0 ~ 255                       |            -            |
+| 516  |        1         | [Status Return Level](#status-return-level)       |  RW  |   2    |                        0 ~ 2                        |            -            |
+| 517  |        1         | [Registered Instruction](#registered-instruction) |  R   |   0    |                          -                          |            -            |
+| 518  |        1         | [Hardware Error Status](#hardware-error-status)   |  R   |   0    |                          -                          |            -            |
+| 524  |        2         | [Velocity I Gain](#velocity-i-gain)               |  RW  |   -    |                     0 ~ 32,767                      |            -            |
+| 526  |        2         | [Velocity P Gain](#velocity-i-gain)               |  RW  |   -    |                     0 ~ 32,767                      |            -            |
+| 528  |        2         | [Position D Gain](#position-p-gain)               |  RW  |   -    |                     0 ~ 32,767                      |            -            |
+| 532  |        2         | [Position P Gain](#position-p-gain)               |  RW  |   -    |                     0 ~ 32,767                      |            -            |
+| 530  |        2         | [Position I Gain](#position-p-gain)               |  RW  |   -    |                     0 ~ 32,767                      |            -            |
+| 536  |        2         | [Feedforward 2nd Gain](#feedforward-2nd-gain)     |  RW  |   -    |                     0 ~ 32,767                      |            -            |
+| 538  |        2         | [Feedforward 1st Gain](#feedforward-1st-gain)     |  RW  |   -    |                     0 ~ 32,767                      |            -            |
+| 546  |        1         | [Bus Watchdog](#bus-watchdog)                     |  RW  |   -    |                       0 ~ 127                       |        20 [msec]        |
+| 548  |        2         | [Goal PWM](#goal-pwm)                             |  RW  |   -    |         -PWM Limit(36) ~<br> PWM Limit(36)          |            -            |
+| 550  |        2         | [Goal Current](#goal-current)                     |  RW  |   0    |     -Current Limit(38) ~<br> Current Limit(38)      |         1 [mA]          |
+| 552  |        4         | [Goal Velocity](#goal-velocity)                   |  RW  |   0    |    -Velocity Limit(44) ~<br> Velocity Limit(44)     |     0.01 [rev/min]      |
+| 556  |        4         | [Profile Acceleration](#profile-acceleration)     |  RW  |   0    |           0 ~<br> Acceleration Limit(40)            | 1 [rev/min<sup>2</sup>] |
+| 560  |        4         | [Profile Velocity](#profile-velocity)             |  RW  |   0    |             0 ~<br> Velocity Limit(44)              |     0.01 [rev/min]      |
+| 564  |        4         | [Goal Position](#goal-position)                   |  RW  |   -    | Min Position Limit(52) ~<br> Max Position Limit(48) |        1[pulse]         |
+| 568  |        2         | [Realtime Tick](#realtime-tick)                   |  R   |   -    |                     0 ~ 32,767                      |        1 [msec]         |
+| 570  |        1         | [Moving](#moving)                                 |  R   |   -    |                          -                          |            -            |
+| 571  |        1         | [Moving Status](#moving-status)                   |  R   |   -    |                          -                          |            -            |
+| 572  |        2         | [Present PWM](#present-pwm)                       |  R   |   -    |                          -                          |            -            |
+| 574  |        2         | [Present Current](#present-current)               |  R   |   -    |                          -                          |         1 [mA]          |
+| 576  |        4         | [Present Velocity](#present-velocity)             |  R   |   -    |                          -                          |     0.01 [rev/min]      |
+| 580  |        4         | [Present Position](#present-position)             |  R   |   -    |                          -                          |        1 [pulse]        |
+| 584  |        4         | [Velocity Trajectory](#velocity-trajectory)       |  R   |   -    |                          -                          |     0.01 [rev/min]      |
+| 588  |        4         | [Position Trajectory](#position-trajectory)       |  R   |   -    |                          -                          |        1 [pulse]        |
+| 592  |        2         | [Present Input Voltage](#present-input-voltage)   |  R   |   -    |                          -                          |         0.1 [V]         |
+| 594  |        1         | [Present Temperature](#present-temperature)       |  R   |   -    |                          -                          |       1 [&deg;C]        |
+| 600  |        2         | [External Port Data 1](#external-port-data)       | R/RW |   0    |                      0 ~ 4,095                      |            -            |
+| 602  |        2         | [External Port Data 2](#external-port-data)       | R/RW |   0    |                      0 ~ 4,095                      |            -            |
+| 604  |        2         | [External Port Data 3](#external-port-data)       | R/RW |   0    |                      0 ~ 4,095                      |            -            |
+| 606  |        2         | [External Port Data 4](#external-port-data)       | R/RW |   0    |                      0 ~ 4,095                      |            -            |
+| 634  |        1         | [Indirect Data 1](#indirect-data)                 |  RW  |   0    |                       0 ~ 255                       |            -            |
+| 635  |        1         | [Indirect Data 2](#indirect-data)                 |  RW  |   0    |                       0 ~ 255                       |            -            |
+| 636  |        1         | [Indirect Data 3](#indirect-data)                 |  RW  |   0    |                       0 ~ 255                       |            -            |
+| ...  |       ...        | ...                                               | ...  |  ...   |                         ...                         |           ...           |
+| 761  |        1         | [Indirect Data 128](#indirect-data)               |  RW  |   0    |                       0 ~ 255                       |            -            |
 
 
 ## [컨트롤 테이블 설명](#컨트롤-테이블-설명)
@@ -141,9 +141,9 @@ product_group: rh_p12_rna
 ### <a name="model-number"></a>**[Model Number(0)](#model-number0)**
 RH-P12-RN(A)의 모델 번호입니다.
 
-|    모델명     |  Model Number  |
-|:-------------:|:--------------:|
-| RH-P12-RN(A)  | 35,074 (0x8902) |
+|    모델명    |  Model Number   |
+|:------------:|:---------------:|
+| RH-P12-RN(A) | 35,074 (0x8902) |
 
 ### <a name="firmware-version"></a>**[Firmware Version(6)](#firmware-version6)**
 {% include kr/dxl/pro_plus/control_table_6_firmware_version.md %}
@@ -160,11 +160,11 @@ RH-P12-RN(A)의 모델 번호입니다.
 ### <a name="operating-mode"></a>**[Operating Mode(11)](#operating-mode11)**
 장치의 제어 모드를 설정합니다. 각 제어 모드마다 특성이 다르기 때문에, 구현하려는 시스템에 적합한 제어 모드를 설정하시기 바랍니다.
 
-| 값         | 동작 모드                | 설명                                             |
+| 값         | 동작 모드              | 설명                                            |
 |:-----------|:-----------------------|:------------------------------------------------|
-| 0          | 전류제어 모드            | 속도와 위치는 제어하지 않고, 전류를 제어합니다.         |
+| 0          | 전류제어 모드          | 속도와 위치는 제어하지 않고, 전류를 제어합니다. |
 | 1 ~ 4      | Reserved               | -                                               |
-| 5(Default) | 전류기반 위치제어 모드     | 위치와 전류를 제어합니다.                           |
+| 5(Default) | 전류기반 위치제어 모드 | 위치와 전류를 제어합니다.                       |
 
 ### <a name="secondary-id"></a>**[Secondary ID(12)](#secondary-id12)**
 {% include kr/dxl/pro_plus/control_table_12_secondary_id.md %}
@@ -174,15 +174,15 @@ RH-P12-RN(A)의 모델 번호입니다.
 Present Position = 실제 위치 + Homing offset(20) 이 됩니다.
 
 |   단위    | 값의 범위 |
-|:--------:|:--------:|
-|1 [pulse] | 0 ~ 1150 |
+|:---------:|:---------:|
+| 1 [pulse] | 0 ~ 1150  |
 
 ### <a name="moving-threshold"></a>**[Moving Threshold(24)](#moving-threshold24)**
 {% include kr/dxl/pro_plus/control_table_24_moving_threshold.md %}
 
-| 단위            |     값의 범위      |
-| :------------: | :---------------: |
-| 0.01 [rev/min] |     0 ~ 2,970     |
+|      단위      | 값의 범위 |
+|:--------------:|:---------:|
+| 0.01 [rev/min] | 0 ~ 2,970 |
 
 ### <a name="temperature-limit"></a>**[Temperature Limit(31)](#temperature-limit31)**
 {% include kr/dxl/pro_plus/control_table_31_temperature_limit.md %}
@@ -196,30 +196,30 @@ Present Position = 실제 위치 + Homing offset(20) 이 됩니다.
 ### <a name="current-limit"></a>**[Current Limit(38)](#current-limit38)**
 목표 전류 값의 한계 값입니다. Goal Current(550)은 이 값보다 큰 값을 쓸 수 없습니다. 이 값보다 큰 값을 쓰려 하면, 값이 써지지 않고, Status packet의 error 에 Limit error bit가 set 됩니다.
 
-| 단위    | 값의 범위  |
-| :----: | :-------: |
+|  단위  | 값의 범위 |
+|:------:|:---------:|
 | 1 [mA] | 0 ~ 1,984 |
 
 ### <a name="acceleration-limit"></a>**[Acceleration Limit(40)](#acceleration-limit40)**
 프로파일 가속도 값의 한계 값입니다. Profile Acceleration(556)은 이 값보다 큰 값을 쓸 수 없습니다. 이 값보다 큰 값을 쓰려 하면, 값이 써지지 않고, Status packet의 error 에 Limit error bit가 set 됩니다.
 
-| 단위                     | 값의 범위      |
-| :---------------------: | :-----------: |
+|          단위           |   값의 범위   |
+|:-----------------------:|:-------------:|
 | 1 [rev/min<sup>2</sup>] | 0 ~ 1,378,788 |
 
 ### <a name="velocity-limit"></a>**[Velocity Limit(44)](#velocity-limit44)**
 목표 속도 값과 프로파일 속도 값의 한계 값입니다. Goal Velocity(552)와 Profile Velocity(560)는 이 값보다 큰 값을 쓸 수 없습니다. 이 값보다 큰 값을 쓰려 하면, 값이 써지지 않고, Status packet의 error 에 Limit error bit가 set 됩니다.
 
-| 단위            | 값의 범위  |
-| :------------: | :-------: |
+|      단위      | 값의 범위 |
+|:--------------:|:---------:|
 | 0.01 [rev/min] | 0 ~ 2,970 |
 
 ### <a name="max-position-limit"></a><a name="min-position-limit"></a>**[Max/Min Position Limit(48, 52)](#maxmin-position-limit48-52)**
 전류 기반 위치 제어 모드에서 목표 위치의 제한 값으로써, 0 ~ 1,150 범위 내에서 목표 위치를 제한 합니다.  
 따라서 위치 제어 모드에서 Goal position(564)은 이 값보다 클 수 없습니다. 이 값보다 큰 값을 쓰려 하면, 값이 써지지 않고, Status packet의 error 에 Limit error bit가 set 됩니다.
 
-| 단위       | 값의 범위  |
-| :-------: | :-------: |
+|   단위    | 값의 범위 |
+|:---------:|:---------:|
 | 1 [pulse] | 0 ~ 1,150 |
 
 ### <a name="external-port-mode"></a><a name="external-port-data"></a>**[External Port Mode](#external-port-mode)**, **[External Port Data](#external-port-data)**
@@ -232,7 +232,7 @@ Present Position = 실제 위치 + Homing offset(20) 이 됩니다.
 {% include kr/dxl/pro_plus/control_table_168_indirect.md %}
 
 ### <a name="torque-enable"></a>**[Torque Enable(512)](#torque-enable512)**
-{% include kr/dxl/pro_plus/control_table_512_torque_enable.md %}
+{% include kr/dxl/control_table_torque_enable.md %}
 
 ### <a name="led"></a>**[RGB LED](#rgb-led)**
 {% include kr/dxl/pro_plus/control_table_513_led.md %}
@@ -249,15 +249,15 @@ Present Position = 실제 위치 + Homing offset(20) 이 됩니다.
 ### <a name="velocity-i-gain"><a name="position-p-gain"></a><a name="feedforward-2nd-gain"></a><a name="feedforward-1st-gain"></a>**[Velocity PI Gain(524, 526), Position PID Gain(528,530,532), Feedforward 2nd Gains(536), Feedforward 1st Gains(538)](#velocity-pi-gain524-526, #position-pid-gain528-530-532, Feedforward 2nd Gains536, Feedforward 1st Gains538)**
 전류기반 위치 제어 모드에서 동작하는 위치 제어기의 Gain입니다. 편의상 장치 내부 제어기의 Position P Gain을 K<sub>P</sub>P로 표기하고 Control Table의 Gain은 K<sub>P</sub>P<sub>(TBL)</sub>로 표기합니다.
 
-|                      | 제어기 Gain     | 범위 | 설명 |
-| :------------:       | :------------: | :------------: |
-| Velocity I Gain(524) | K<sub>V</sub>I | 0 ~ 32,767 | Velocity Integral Gain |
-| Velocity P Gain(526) | K<sub>V</sub>P | 0 ~ 32,767 | Velocity Proportion Gain |
-| Position D Gain(528) | K<sub>P</sub>D | 0 ~ 32,767 | Position Differential Gain |
-| Position I Gain(530) | K<sub>P</sub>I | 0 ~ 32,767 | Position Integral Gain |
-| Position P Gain(532) | K<sub>P</sub>P | 0 ~ 32,767 | Position Proportion Gain |
+|                           |    제어기 Gain    |                범위 | 설명                 |
+|:-------------------------:|:-----------------:|:------------------------------------------:|
+|   Velocity I Gain(524)    |  K<sub>V</sub>I   |    0 ~ 32,767 | Velocity Integral Gain     |
+|   Velocity P Gain(526)    |  K<sub>V</sub>P   |   0 ~ 32,767 | Velocity Proportion Gain    |
+|   Position D Gain(528)    |  K<sub>P</sub>D   |  0 ~ 32,767 | Position Differential Gain   |
+|   Position I Gain(530)    |  K<sub>P</sub>I   |    0 ~ 32,767 | Position Integral Gain     |
+|   Position P Gain(532)    |  K<sub>P</sub>P   |   0 ~ 32,767 | Position Proportion Gain    |
 | Feedforward 2nd Gain(536) | K<sub>FF1st</sub> | 0 ~ 32,767 | Feedforward Acceleration Gain |
-| Feedforward 1st Gain(538) | K<sub>FF1st</sub> | 0 ~ 32,767 | Feedforward Velocity Gain |
+| Feedforward 1st Gain(538) | K<sub>FF1st</sub> |   0 ~ 32,767 | Feedforward Velocity Gain   |
 
 다음은 전류기반 위치 제어 모드에서 동작하는 위치제어기의 블록다이어그램입니다. 사용자의 요청이 장치에 전달된 후, 장치의 Horn이 구동되기까지의 과정은 다음과 같습니다.
 
@@ -301,8 +301,8 @@ Profile Velocity(560)는 전류기반 위치 제어 모드에서만 적용 가�
 Profile Velocity(560)는 Velocity Limit(44)보다 클 수 없습니다.  
 참고로 속도 제어 모드에서는 Profile Velocity(560)는 적용되지 않고 Profile Acceleration(556)만 적용됩니다.
 
-|단위            |  범위                   | 설명                                                      |
-|    :---:       | :---:                  | :---:                                                     |
+|      단위      |          범위          |                            설명                             |
+|:--------------:|:----------------------:|:-----------------------------------------------------------:|
 | 0.01 [rev/min] | 0 ~ Velocity Limit(44) | Profile Velocity(560)이 ‘0’인 경우, 무한대 속도를 뜻합니다. |
 
 Profile이란 모터 구동 시 급격하게 변하는 속도와 가속도를 조절함으로써 진동, 소음 및 모터의 부하를 줄이는 가감속 제어 방법입니다.  
@@ -329,10 +329,10 @@ Profile이란 모터 구동 시 급격하게 변하는 속도와 가속도를 �
 5. 장치는 Profile에 의해 산출된 목표 궤적에 따라 이동하게 됩니다.
 6. Profile에 의한 목표 속도 궤적과 목표 위치 궤적은 Velocity Trajectory(584)와 Position Trajectory(588)에 표기됩니다.
 
-| 조건                                                           | 프로파일 형태             |
-| :------------------------------------------------------------ | :---------------------- |
+| 조건                                                          | 프로파일 형태              |
+|:--------------------------------------------------------------|:---------------------------|
 | Profile Velocity(560) = 0                                     | 프로파일 미사용(Step 명령) |
-| (Profile Velocity(560) ≠ 0) & (Profile Acceleration(556) = 0) | 사각 프로파일             |
+| (Profile Velocity(560) ≠ 0) & (Profile Acceleration(556) = 0) | 사각 프로파일              |
 | (Profile Velocity(560) ≠ 0) & (Profile Acceleration(556) ≠ 0) | 사다리꼴 프로파일          |
 
 ![](/assets/images/dxl/pro_plus/velocity_profile.png)
@@ -354,9 +354,9 @@ Velocity Override 기능은 동일하게 동작합니다.
 이동시키고자 하는 곳의 위치 값입니다.  
 값의 범위는 Min Position Limit(52) ~ Max Position Limit(48) 이며, 초기값은 0 ~ 1,150 (0x47E) 입니다.
 
-| 모델명      | Goal Position = 0 | Goal Position = 740 |
-| :--------: | :---------------: | :-----------------: |
-| RH-P12-RN  | ![](/assets/images/platform/rh_p12_rn/rh_p12_rn_position_open.png) | ![](/assets/images/platform/rh_p12_rn/rh_p12_rn_position_close.png) |
+|  모델명   |                         Goal Position = 0                          |                         Goal Position = 740                         |
+|:---------:|:------------------------------------------------------------------:|:-------------------------------------------------------------------:|
+| RH-P12-RN | ![](/assets/images/platform/rh_p12_rn/rh_p12_rn_position_open.png) | ![](/assets/images/platform/rh_p12_rn/rh_p12_rn_position_close.png) |
 
 ### <a name="realtime-tick"></a>**[Realtime Tick(568)](#realtime-tick568)**
 {% include kr/dxl/pro_plus/control_table_568_realtime_tick.md %}
@@ -367,15 +367,15 @@ Velocity Override 기능은 동일하게 동작합니다.
 ### <a name="moving-status"></a>**[Moving Status(571)](#moving-status571)**
 움직임에 대한 추가적인 정보를 제공합니다. In-Position Bit(0x01)은 전류기반 위치 제어 모드에서만 동작합니다.
 
-|                         |      |                                상세                                 |        설명       |
-|:-----------------------:|:----:|:------------------------------------------------------------------:|:-----------------:|
-|          Bit 7          | 0x80 |                                 -                                  |       미사용       |
-|          Bit 6          | 0x40 |                                 -                                  |       미사용       |
-| Bit 5<br />~<br />Bit 4 | 0x30 | Profile Type(0x30)<br />Profile Type(0x10)<br />Profile Type(0x00) |사다리꼴 속도 프로파일(Trapezoidal Velocity Profile)<br />사각 속도 프로파일(Rectangular Velocity Profile)<br />프로파일 미사용(Step)|
-|          Bit 3          | 0x08 |                                 -                                  |       미사용       |
-|          Bit 2          | 0x04 |                                 -                                  |       미사용       |
-|          Bit 1          | 0x02 |                                 -                                  |       미사용       |
-|          Bit 0          | 0x01 |                            In-Position                             | 목표위치에 도달 경우 |
+|                         |      |                                상세                                |                                                                 설명                                                                  |
+|:-----------------------:|:----:|:------------------------------------------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------:|
+|          Bit 7          | 0x80 |                                 -                                  |                                                                미사용                                                                 |
+|          Bit 6          | 0x40 |                                 -                                  |                                                                미사용                                                                 |
+| Bit 5<br />~<br />Bit 4 | 0x30 | Profile Type(0x30)<br />Profile Type(0x10)<br />Profile Type(0x00) | 사다리꼴 속도 프로파일(Trapezoidal Velocity Profile)<br />사각 속도 프로파일(Rectangular Velocity Profile)<br />프로파일 미사용(Step) |
+|          Bit 3          | 0x08 |                                 -                                  |                                                                미사용                                                                 |
+|          Bit 2          | 0x04 |                                 -                                  |                                                                미사용                                                                 |
+|          Bit 1          | 0x02 |                                 -                                  |                                                                미사용                                                                 |
+|          Bit 0          | 0x01 |                            In-Position                             |                                                         목표위치에 도달 경우                                                          |
 
 
 ### <a name="present-pwm"></a>**[Present PWM(572)](#present-pwm572)**
@@ -390,9 +390,9 @@ Velocity Override 기능은 동일하게 동작합니다.
 ### <a name="present-position"></a>**[Present Position(580)](#present-position580)**
 장치의 현재 위치 값입니다.
 
-| 모델명      | Goal Position = 0 | Goal Position = 740 |
-| :--------: | :---------------: | :-----------------: |
-| RH-P12-RN  |![](/assets/images/platform/rh_p12_rn/rh_p12_rn_position_open.png)|![](/assets/images/platform/rh_p12_rn/rh_p12_rn_position_close.png)|
+|  모델명   |                         Goal Position = 0                          |                         Goal Position = 740                         |
+|:---------:|:------------------------------------------------------------------:|:-------------------------------------------------------------------:|
+| RH-P12-RN | ![](/assets/images/platform/rh_p12_rn/rh_p12_rn_position_open.png) | ![](/assets/images/platform/rh_p12_rn/rh_p12_rn_position_close.png) |
 
 ### <a name="velocity-trajectory"></a>**[Velocity Trajectory(584)](#velocity-trajectory584)**
 Profile에 의해 생성된 목표 속도 궤적입니다. 자세한 사항은 [Profile Velocity(560)]를 참고하세요.
@@ -421,14 +421,14 @@ Profile에 의해 생성된 목표 위치 궤적입니다. 전류기반 위치 �
 
 ## [커넥터 정보](#커넥터-정보)
 
-|     항목     |                           RS-485                           |                                 외부포트                                    |
-|:-----------:|:----------------------------------------------------------:|:--------------------------------------------------------------------------:|
-|    핀 번호   |       `1` GND<br>`2` VDD<br>`3` DATA+<br>`4` DATA-         | `1` GND<br>`2` VDD<br>`3` PORT 1<br>`4` PORT 2<br>`5` PORT 3<br>`6` PORT 4 |
-|   다이어그램  |       ![](/assets/images/dxl/jst_b4beha_diagram.png)       | ![](/assets/images/dxl/molex_5304706_diagram.png)                          |
-|    하우징    |                        [JST EHR-04]                        | ![](/assets/images/dxl/molex_510210600.png)<br />[MOLEX 51021-0600]        |
-|   PCB 헤더   | ![](/assets/images/dxl/jst_b4beha.png)<br />[JST B4B-EH-A] | ![](/assets/images/dxl/molex_530470610.png)<br />[MOLEX 53047-0610]        |
-| Crimp 터미널 |                     [JST SEH-001T-P0.6]                    | [MOLEX 50079-8100]                                                         |
-| Wire Gauge  |                           21 AWG                           | 21 AWG                                                                     |
+|     항목     |                           RS-485                           |                                  외부포트                                  |
+|:------------:|:----------------------------------------------------------:|:--------------------------------------------------------------------------:|
+|   핀 번호    |        `1` GND<br>`2` VDD<br>`3` DATA+<br>`4` DATA-        | `1` GND<br>`2` VDD<br>`3` PORT 1<br>`4` PORT 2<br>`5` PORT 3<br>`6` PORT 4 |
+|  다이어그램  |       ![](/assets/images/dxl/jst_b4beha_diagram.png)       |             ![](/assets/images/dxl/molex_5304706_diagram.png)              |
+|    하우징    |                        [JST EHR-04]                        |    ![](/assets/images/dxl/molex_510210600.png)<br />[MOLEX 51021-0600]     |
+|   PCB 헤더   | ![](/assets/images/dxl/jst_b4beha.png)<br />[JST B4B-EH-A] |    ![](/assets/images/dxl/molex_530470610.png)<br />[MOLEX 53047-0610]     |
+| Crimp 터미널 |                    [JST SEH-001T-P0.6]                     |                             [MOLEX 50079-8100]                             |
+|  Wire Gauge  |                           21 AWG                           |                                   21 AWG                                   |
 
 [JST EHR-04]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
 [JST B4B-EH-A]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
@@ -441,6 +441,4 @@ Profile에 의해 생성된 목표 위치 궤적입니다. 전류기반 위치 �
 `다운로드` [RH-P12-RN(PDF).zip](http://www.robotis.com/service/download.php?no=740)  
 `다운로드` [RH-P12-RN(STP).zip](http://www.robotis.com/service/download.php?no=741)
 
-
-[Torque Enable(562)]: #torque-enable562
-[Profile Velocity(560)]: #profile-velocity560
+{% include kr/dxl/common_link.md %}

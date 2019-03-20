@@ -254,7 +254,8 @@ sidebar:
 
 **주의** : 구글의 변경된 정책으로 SMS 기능은 더이상 지원되지 않습니다.  
 SMS 기능이 필요한 경우 이전 버전의 앱 설치파일(APK)을 다운로드 받아 수동으로 설치하시기 바랍니다.  
-[R+ IoT (v0.9.3.6) 다운로드](http://www.robotis.com/service/download.php?no=1669)
+이전 버전 사용시 최신 업데이트가 반영되지 않는 점 유의하시기 바랍니다.  
+[R+ IoT (v0.9.3.6) 다운로드]{: .blank}
 {: .notice--warning}
 
 ![](/assets/images/sw/mobile/1111_kr.jpg)
@@ -328,3 +329,5 @@ SMS 기능이 필요한 경우 이전 버전의 앱 설치파일(APK)을 다운�
 8. 확장 메뉴를 닫고 "다운로드" 를 누르면 블루투스를 통해 무선으로 연결된 제어기에 task 파일이 다운로드 됩니다.
 
     ![](/assets/images/sw/mobile/r+iot_6_kr.jpg)
+
+[R+ IoT (v0.9.3.6) 다운로드]: http://www.robotis.com/service/download.php?no=1669
