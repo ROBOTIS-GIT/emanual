@@ -13,7 +13,7 @@ sidebar:
 
 
 # [Overview](#overview)
-
+The robotis_manipulator package is a library package for controlling the manipulator. This package provides a manipulator class for setting manipulator parameters, and provides some math functions to configure the manipulator controller and a basic trajectory generators that uses minimum jerk. The user makes a class inheriting RobotisManipulator class, and set up the class by using the provided functions and the vurtual classes. The class provides functions such as creating the trajectory, receiving joint positions from the actuators and sending the target positions to the actuators. The open_manipulator_libs package can be refer as an example.
 
 
 # [Installation](#installation)
