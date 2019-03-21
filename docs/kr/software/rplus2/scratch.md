@@ -136,7 +136,7 @@ ROBOTIS Virtual COM Port 를 선택한 후 다음을 클릭하여 설치를 완�
 
 수동으로 USB 드라이버를 설치하기 위한 방법은 [USB 드라이버 설치]{: .popup} 에서 확인 할 수 있습니다.
 
-[USB 드라이버 설치]: /docs/kr/faq/usb_driver_install/
+[USB 드라이버 설치]: /docs/kr/popup/usb_driver_install/
 
 ## [블록 직접 추가](#블록-직접-추가)
 
