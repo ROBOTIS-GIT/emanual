@@ -15113,6 +15113,8 @@ turtlebot3:
       url: /platform/turtlebot3/projects/#turtlebot3-collaboration-project
     - title: "TurtleBot3 Awesome Projects"
       url: /platform/turtlebot3/projects/#turtlebot3-awesome-projects
+    - title: "AWS RoboMaker with TurtleBot3"
+      url: /platform/turtlebot3/projects_aws_robomaker/#turtlebot3-aws-robomaker
   - title: "Challenges"
     url: /platform/turtlebot3/challenges/#challenges
     children:
