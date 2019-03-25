@@ -89,36 +89,35 @@ OpenCM 485 EXP’s Dynamixel 485 bus operates as a Dynamixel bus using OpenCM9.0
 
 # [EXP Board Programming](#exp-board-programming)
 
-1. Support.robotis.com -> Software Help -> ROBORIS_OpenCM (MUST use V 1.0.1 or later).
- 
-    ![](/assets/images/parts/controller/opencm904/opencm485exp_08.png)
- 
-2. Extract OpenCM IDE and execute ROBOTIS_OpenCM.exe file.
 
-    ![](/assets/images/parts/controller/opencm904/opencm485exp_09.jpg)
-            
-3. OpenCM 485 EXP’s 485 Bus sends and receives communication packets from OpenCM9.04’s Serial3(USART3).  
-  Dynamixel Class variable MUST be set to 3 once it has been declared.
+In order to use OpenCM 485 EXP board with OpenCM9.04, please use Arduino IDE.
+
+1. [Install Arduino IDE]{: .blank}
+
+2. OpenCM 485 EXP’s 485 Bus sends and receives communication packets via OpenCM9.04’s Serial3(USART3).  
+
+    - In case of programming with DynamixelSDK, please set Serial3 port as shown below.
 
     ```cpp
-    Dynamixel Dxl(3); //Dynamixel on Serial3 (USART3). Needs to be set as 3 to used USART3 on OpenCM 485 EXP.
-    void setup() {
-      Dxl.begin(1);  //1Mbps  
-    }
-
-    void loop() {  
-      Dxl.writeWord(6, 30, 0);
-      Dxl.writeWord(2, 30, 0);
-      delay(1000);              
-      Dxl.writeWord(6, 30, 1023);
-      Dxl.writeWord(2, 30, 4,095);
-      delay(1000);
-    }
+    #include <DynamixelSDK.h>
+    
+    #define DEVICENAME      "3"   //Use Serial3 port
+    
+    dynamixel::PortHandler *portHandler = dynamixel::PortHandler::getPortHandler(DEVICENAME);
+    portHandler->openPort();
     ```
 
-4. Click on “Download” button indicated below to download the program.
- 
-    ![](/assets/images/parts/controller/opencm904/opencm485exp_10.jpg)
+    - In case of programming with DynamixelWorkbench, please set Serial3 port as shown below.
+
+    ```cpp
+    #include <DynamixelWorkbench.h>
+    
+    #define DEVICENAME      "3"   //Use Serial3 port
+    #define BAUDRATE        57600
+    
+    DynamixelWorkbench dxl_wb;
+    dxl_wb.begin(DEVICE_NAME, BAUDRATE);
+    ```
 
 # [Button & LED](#button-led)
 
@@ -153,3 +152,4 @@ The OpenCM9.04 I/O pin numbers for the buttons and LED’s are indicated below.
 [Bottom Gerber]: http://support.robotis.com/en/baggage_files/opencm/opencm9.04__rev_1.0(131009)-bottom.pdf
 [Gerber]: http://support.robotis.com/en/baggage_files/opencm/opencm9.04__rev_1.0(131009)-gerber.pdf
 [DARWIN-MINI Controller Firmware Update]: /docs/en/edu/mini/#firmware-update
+[Install Arduino IDE]: /docs/en/software/arduino_ide/

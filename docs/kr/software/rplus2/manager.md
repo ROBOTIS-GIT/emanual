@@ -341,5 +341,5 @@ AX시리즈, MX시리즈, RX시리즈, DX시리즈, EX시리즈, CM-530, CM-510,
 [ROBOTIS IoT]: /docs/kr/edu/
 [ROBOTIS MINI]: /docs/kr/edu/
 [CM-150, CM-200, OpenCM9.04, OpenCM7.0]: /docs/kr/parts/controller/controller_compatibility/
-[USB 드라이버 설치]: /docs/kr/faq/usb_driver_install/
+[USB 드라이버 설치]: /docs/kr/popup/usb_driver_install/
 [LN-101 드라이버 설치]: /docs/kr/parts/interface/ln-101/#드라이버-설치-확인

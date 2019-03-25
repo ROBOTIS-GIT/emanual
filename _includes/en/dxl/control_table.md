@@ -32,7 +32,7 @@ The Control Table is a structure of data implemented in the device. Users can re
 <div class="notice--warning">{{ mx2_control_table | markdownify }}</div>
 {% assign torque_enable= "64" %}
 
-{% elsif page.product_group=='dxl_x430' or page.product_group=='dxl_x540' %}
+{% elsif page.product_group=='dxl_x430' or page.product_group=='dxl_xl430' or page.product_group=='dxl_x540' %}
 {% assign torque_enable= "64" %}
 
 {% elsif page.product_group=='dxl_xl320' %}
@@ -55,7 +55,9 @@ The Control Table is a structure that consists of multiple Data fields to store 
 
 ### [Area (EEPROM, RAM)](#area-eeprom-ram)
 The Control Table is divided into 2 Areas. Data in the RAM Area is reset to initial values when the power is reset(Volatile). On the other hand, data in the EEPROM Area is maintained even when the device is powered off(Non-Volatile).  
+
 **Data in the EEPROM Area can only be written to if Torque Enable({{ torque_enable }}) is cleared to ‘0’(Off).**
+{: .notice--warning}
 
 ### [Size](#size)
 The Size of data varies from {{ data_size }} bytes depend on their usage. Please check the size of data when updating the data with an Instruction Packet. For data larger than 2 bytes will be saved according to [Little Endian].

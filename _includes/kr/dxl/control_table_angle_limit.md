@@ -1,6 +1,6 @@
-동작이 허용되는 각도를 설정할 수 있습니다. 값의 범위와 단위는 Goal Position(Address 30, 31)과 같습니다.
-- CW Angle Limit: Goal Position(Address 30, 31)의 최소 값
-- CCW Angle Limit: Goal Position(Address 30, 31)의 최대 값
+동작이 허용되는 각도를 설정할 수 있습니다. 값의 범위와 단위는 [Goal Position(30)]과 같습니다.
+- CW Angle Limit: [Goal Position(30)]의 최소 값
+- CCW Angle Limit: [Goal Position(30)]의 최대 값
 
 CW와 CCW의 값에 따라 다음의 2가지 동작 모드를 설정할 수 있습니다.
 

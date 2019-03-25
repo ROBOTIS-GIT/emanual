@@ -328,8 +328,7 @@ main:
         url: /edu/iot/iot-1/
       - titlekr: "2단계 교육키트"
         url: /edu/iot/iot-2/
-    # - title: "Info Robot"
-    #   titlekr: "실과 로봇"
+    # - titlekr: "실과 로봇"
     #   url: /edu/info/
     - titlekr: "*자동차 로봇"
       url: /edu/car/
@@ -600,8 +599,13 @@ main:
         url: /parts/display/lm-10/
   - title: "FAQ"
     titlekr: "FAQ"
-    url: /faq/
-    urlkr: /faq/
+    children:
+      - title: "DYNAMIXEL"
+        titlekr: "다이나믹셀"
+        url: /faq/faq_dynamixel/
+      - title: "General"
+        titlekr: "자주 묻는 질문"
+        url: /faq/
 
 all-dynamixel:
   - title: "AX Series"
@@ -5025,6 +5029,232 @@ xl430-w250:
         url: /dxl/x/xl430-w250/#drawings
         urlkr: /dxl/x/xl430-w250/#도면
 
+#XC430-W150 sidebar
+xc430-w150:
+  - title: "Specifications"
+    titlekr: "주요 사양"
+    url: /dxl/x/xc430-w150/#specifications
+    urlkr: /dxl/x/xc430-w150/#주요-사양
+    children:
+      - title: "Performance Graph"
+        titlekr: "성능 그래프"
+        url: /dxl/x/xc430-w150/#performance-graph
+        urlkr: /dxl/x/xc430-w150/#성능-그래프
+  - title: "Control Table"
+    titlekr: "컨트롤 테이블"
+    url: /dxl/x/xc430-w150/#control-table
+    urlkr: /dxl/x/xc430-w150/#컨트롤-테이블
+    children:
+      - title: "Control Table, Data, Address"
+        titlekr: "컨트롤 테이블, 데이터, 주소"
+        url: /dxl/x/xc430-w150/#control-table-data-address
+        urlkr: /dxl/x/xc430-w150/#컨트롤-테이블-데이터-주소
+        children:
+          - title: "Area(EEPROM, RAM)"
+            titlekr: "영역 (EEPROM, RAM)"
+            url: /dxl/x/xc430-w150/#area-eeprom-ram
+            urlkr: /dxl/x/xc430-w150/#영역-eeprom-ram
+          - title: "Size"
+            titlekr: "크기"
+            url: /dxl/x/xc430-w150/#size
+            urlkr: /dxl/x/xc430-w150/#크기
+          - title: "Access"
+            titlekr: "접근권한"
+            url: /dxl/x/xc430-w150/#access
+            urlkr: /dxl/x/xc430-w150/#접근권한
+          - title: "Initial Value"
+            titlekr: "초기값"
+            url: /dxl/x/xc430-w150/#initial-value
+            urlkr: /dxl/x/xc430-w150/#초기값
+      - title: "EEPROM Area"
+        titlekr: "EEPROM 영역"
+        url: /dxl/x/xc430-w150/#control-table-of-eeprom-area
+        urlkr: /dxl/x/xc430-w150/#eeprom-영역
+      - title: "RAM Area"
+        titlekr: "RAM 영역"
+        url: /dxl/x/xc430-w150/#control-table-of-ram-area
+        urlkr: /dxl/x/xc430-w150/#ram-영역
+      - title: "Control Table Description"
+        titlekr: "컨트롤 테이블 설명"
+        url: /dxl/x/xc430-w150/#control-table-description
+        urlkr: /dxl/x/xc430-w150/#컨트롤-테이블-설명
+        children:
+          - title: "Model Number(0)"
+            titlekr: "Model Number(0)"
+            url: /dxl/x/xc430-w150/#model-number0
+          - title: "Firmware Version(6)"
+            titlekr: "Firmware Version(6)"
+            url: /dxl/x/xc430-w150/#firmware-version6
+          - title: "ID(7)"
+            titlekr: "ID(7)"
+            url: /dxl/x/xc430-w150/#id7
+          - title: "Baud Rate(8)"
+            titlekr: "Baud Rate(8)"
+            url: /dxl/x/xc430-w150/#baud-rate8
+          - title: "Return Delay Time(9)"
+            titlekr: "Return Delay Time(9)"
+            url: /dxl/x/xc430-w150/#return-delay-time9
+          - title: "Drive Mode(10)"
+            titlekr: "Drive Mode(10)"
+            url: /dxl/x/xc430-w150/#drive-mode10
+          - title: "Operating Mode(11)"
+            titlekr: "Operating Mode(11)"
+            url: /dxl/x/xc430-w150/#operating-mode11
+          - title: "Secondary(Shadow) ID(12)"
+            titlekr: "Secondary(Shadow) ID(12)"
+            url: /dxl/x/xc430-w150/#secondaryshadow-id12
+          - title: "Protocol Version(13)"
+            titlekr: "Protocol Version(13)"
+            url: /dxl/x/xc430-w150/#protocol-version13
+          - title: "Homing Offset(20)"
+            titlekr: "Homing Offset(20)"
+            url: /dxl/x/xc430-w150/#homing-offset20
+          - title: "Moving Threshold(24)"
+            titlekr: "Moving Threshold(24)"
+            url: /dxl/x/xc430-w150/#moving-threshold24
+          - title: "Temperature Limit(31)"
+            titlekr: "Temperature Limit(31)"
+            url: /dxl/x/xc430-w150/#temperature-limit31
+          - title: "Min/Max Voltage Limit(32,34)"
+            titlekr: "Min/Max Voltage Limit(32,34)"
+            url: /dxl/x/xc430-w150/#minmax-voltage-limit32-34
+          - title: "PWM Lmit(36)"
+            titlekr: "PWM Limit(36)"
+            url: /dxl/x/xc430-w150/#pwm-limit36
+          - title: "Velocity Limit(44)"
+            titlekr: "Velocity Limit(44)"
+            url: /dxl/x/xc430-w150/#velocity-limit44
+          - title: "Min/Max Position Limit(48, 52)"
+            titlekr: "Min/Max Position Limit(48, 52)"
+            url: /dxl/x/xc430-w150/#minmax-position-limit48-52
+          - title: "Shutdown(63)"
+            titlekr: "Shutdown(63)"
+            url: /dxl/x/xc430-w150/#shutdown63
+          - title: "Torque Enable(64)"
+            titlekr: "Torque Enable(64)"
+            url: /dxl/x/xc430-w150/#torque-enable64
+          - title: "LED(65)"
+            titlekr: "LED(65)"
+            url: /dxl/x/xc430-w150/#led65
+          - title: "Status Return Level(68)"
+            titlekr: "Status Return Level(68)"
+            url: /dxl/x/xc430-w150/#status-return-level68
+          - title: "Registered Instruction(69)"
+            titlekr: "Registered Instruction(69)"
+            url: /dxl/x/xc430-w150/#registered-instruction69
+          - title: "Hardware Error Status(70)"
+            titlekr: "Hardware Error Status(70)"
+            url: /dxl/x/xc430-w150/#hardware-error-status70
+          - title: "Velocity PI Gain(76, 78)"
+            titlekr: "Velocity PI Gain(76, 78)"
+            url: /dxl/x/xc430-w150/#velocity-pi-gain76-78
+          - title: "Position PID Gain(80, 82, 84)"
+            titlekr: "Position PID Gain(80, 82, 84)"
+            url: /dxl/x/xc430-w150/#position-pid-gain80-82-84
+          - title: "Feedforward 1st/2nd Gains(88, 90)"
+            titlekr: "Feedforward 1st/2nd Gains(88, 90)"
+            url: /dxl/x/xc430-w150/#feedforward-1st2nd-gains88-90
+          - title: "BUS Watchdog(98)"
+            titlekr: "BUS Watchdog(98)"
+            url: /dxl/x/xc430-w150/#bus-watchdog98
+          - title: "Goal PWM(100)"
+            titlekr: "Goal PWM(100)"
+            url: /dxl/x/xc430-w150/#goal-pwm100
+          - title: "Goal Velocity(104)"
+            titlekr: "Goal Velocity(104)"
+            url: /dxl/x/xc430-w150/#goal-velocity104
+          - title: "Profile Acceleration(108)"
+            titlekr: "Profile Acceleration(108)"
+            url: /dxl/x/xc430-w150/#profile-acceleration108
+          - title: "Profile Velocity(112)"
+            titlekr: "Profile Velocity(112)"
+            url: /dxl/x/xc430-w150/#profile-velocity112
+          - title: "Goal Position(116)"
+            titlekr: "Goal Position(116)"
+            url: /dxl/x/xc430-w150/#goal-position116
+          - title: "Realtime Tick(120)"
+            titlekr: "Realtime Tick(120)"
+            url: /dxl/x/xc430-w150/#realtime-tick120
+          - title: "Moving(122)"
+            titlekr: "Moving(122)"
+            url: /dxl/x/xc430-w150/#moving122
+          - title: "Moving Status(123)"
+            titlekr: "Moving Status(123)"
+            url: /dxl/x/xc430-w150/#moving-status123
+          - title: "Present PWM(124)"
+            titlekr: "Present PWM(124)"
+            url: /dxl/x/xc430-w150/#present-pwm124
+          - title: "Present Load(126)"
+            titlekr: "Present Load(126)"
+            url: /dxl/x/xc430-w150/#present-load126
+          - title: "Present Velocity(128)"
+            titlekr: "Present Velocity(128)"
+            url: /dxl/x/xc430-w150/#present-velocity128
+          - title: "Present Position(132)"
+            titlekr: "Present Position(132)"
+            url: /dxl/x/xc430-w150/#present-position132
+          - title: "Velocity Trajectory(136)"
+            titlekr: "Velocity Trajectory(136)"
+            url: /dxl/x/xc430-w150/#velocity-trajectory136
+          - title: "Position Trajectory(140)"
+            titlekr: "Position Trajectory(140)"
+            url: /dxl/x/xc430-w150/#position-trajectory140
+          - title: "Present Input Voltage(144)"
+            titlekr: "Present Input Voltage(144)"
+            url: /dxl/x/xc430-w150/#present-input-voltage144
+          - title: "Present Temperature(146)"
+            titlekr: "Present Temperature(146)"
+            url: /dxl/x/xc430-w150/#present-temperature146
+          - title: "Indirect Address"
+            titlekr: "Indirect Address"
+            url: /dxl/x/xc430-w150/#indirect-address
+          - title: "Indirect Data"
+            titlekr: "Indirect Data"
+            url: /dxl/x/xc430-w150/#indirect-data
+  - title: "How to Assemble"
+    titlekr: "조립 예시"
+    url: /dxl/x/xc430-w150/#how-to-assemble
+    urlkr: /dxl/x/xc430-w150/#조립-예시
+    children:
+      - title: "Wiring through Back Case"
+        titlekr: "배선 예시"
+        url: /dxl/x/xc430-w150/#wiring-through-back-case
+        urlkr: /dxl/x/xc430-w150/#배선-예시
+      - title: "Option Frame Assembly"
+        titlekr: "옵션프레임 조립"
+        url: /dxl/x/xc430-w150/#option-frame-assembly
+        urlkr: /dxl/x/xc430-w150/#옵션프레임-조립
+  - title: "Maintenance"
+    titlekr: "유지보수"
+    url: /dxl/x/xc430-w150/#maintenance
+    urlkr: /dxl/x/xc430-w150/#유지보수
+    children:
+      - title: "Horn, Gear Replacement"
+        titlekr: "혼과 기어 교체"
+        url: /dxl/x/xc430-w150/#horn-and-gear-replacement
+        urlkr: /dxl/x/xc430-w150/#혼과-기어-교체
+  - title: "Reference"
+    titlekr: "참고자료"
+    url: /dxl/x/xc430-w150/#reference
+    urlkr: /dxl/x/xc430-w150/#참고자료
+    children:
+      - title: "Quick Start"
+        titlekr: "퀵스타트"
+        url: /dxl/x/xc430-w150/#quick-start
+        urlkr: /dxl/x/xc430-w150/#퀵스타트
+      - title: "Connector Information"
+        titlekr: "커넥터 정보"
+        url: /dxl/x/xc430-w150/#connector-information
+        urlkr: /dxl/x/xc430-w150/#커넥터-정보
+      - title: "Communication Circuit"
+        titlekr: "통신 회로"
+        url: /dxl/x/xc430-w150/#communication-circuit
+        urlkr: /dxl/x/xc430-w150/#통신-회로
+      - title: "Drawings"
+        titlekr: "도면"
+        url: /dxl/x/xc430-w150/#drawings
+        urlkr: /dxl/x/xc430-w150/#도면
+
 #XC430-W240 sidebar
 xc430-w240:
   - title: "Specifications"
@@ -5220,6 +5450,15 @@ xc430-w240:
         titlekr: "옵션프레임 조립"
         url: /dxl/x/xc430-w240/#option-frame-assembly
         urlkr: /dxl/x/xc430-w240/#옵션프레임-조립
+  - title: "Maintenance"
+    titlekr: "유지보수"
+    url: /dxl/x/xc430-w240/#maintenance
+    urlkr: /dxl/x/xc430-w240/#유지보수
+    children:
+      - title: "Horn, Gear Replacement"
+        titlekr: "혼과 기어 교체"
+        url: /dxl/x/xc430-w240/#horn-and-gear-replacement
+        urlkr: /dxl/x/xc430-w240/#혼과-기어-교체
   - title: "Reference"
     titlekr: "참고자료"
     url: /dxl/x/xc430-w240/#reference
@@ -12626,6 +12865,43 @@ iot-2:
   - titlekr: "교안예제"
     urlkr: /edu/iot/iot-2/#교안예제
 
+info:
+  - titlekr: "개요"
+    urlkr: /edu/info/#개요
+  - titlekr: "부품 목록"
+    urlkr: /edu/info/#부품-목록
+  - titlekr: "엔트리로 작동하기"
+    urlkr: /edu/info/#엔트리로-작동하기
+    children:
+      - titlekr: "엔트리 설치하기"
+        urlkr: /edu/info/#엔트리-설치하기
+      - titlekr: "PC에 예제 다운로드하기"
+        urlkr: /edu/info/#pc에-예제-다운로드하기
+      - titlekr: "엔트리에서 예제 불러오기"
+        urlkr: /edu/info/#엔트리에서-예제-불러오기
+      - titlekr: "PC에 블루투스 연결하기"
+        urlkr: /edu/info/#pc에-블루투스-연결하기
+      - titlekr: "엔트리에 로봇 연결하기"
+        urlkr: /edu/info/#엔트리에-로봇-연결하기
+  - titlekr: "태스크로 작동하기"
+    urlkr: /edu/info/#태스크로-작동하기
+    children:
+      - titlekr: "R+ m.Task 2 설치하기"
+        urlkr: /edu/info/#r-mtask-2-설치하기
+      - titlekr: "R+ 실과로봇 설치하기"
+        urlkr: /edu/info/#r-실과로봇-설치하기
+      - titlekr: "제어기와 스마트기기 연결"
+        urlkr: /edu/info/#제어기와-스마트기기-연결
+      - titlekr: "R+ 실과로봇에서 예제 불러오기"
+        urlkr: /edu/info/#r-실과로봇에서-예제-불러오기
+  - titlekr: "교육자료 다운로드"
+    urlkr: /edu/info/#교육자료-다운로드
+    children:
+      - titlekr: "엔트리 예제"
+        urlkr: /edu/info/#엔트리-예제
+      - titlekr: "태스크 예제"
+        urlkr: /edu/info/#태스크-예제
+
 #BIOLOID
 bioloid:
   - titlekr: "바이올로이드 초급키트"
@@ -16727,18 +17003,31 @@ rplusscratch:
     url: /software/rplus2/scratch/#introduction
     urlkr: /software/rplus2/scratch/#개요
     children:
-    - title: "Program Layout"
-      titlekr: "로보플러스 스크래치 설명"
-      url: /software/rplus2/scratch/#program-layout
-      urlkr: /software/rplus2/scratch/#로보플러스-스크래치-설명
-    - title: "Connect Controller to PC"
-      titlekr: "제어기를 PC에 연결하기"
-      url: /software/rplus2/scratch/#connect-controller-to-pc
-      urlkr: /software/rplus2/scratch/#제어기를-pc에-연결하기
+      - title: "Program Layout"
+        titlekr: "로보플러스 스크래치 설명"
+        url: /software/rplus2/scratch/#program-layout
+        urlkr: /software/rplus2/scratch/#로보플러스-스크래치-설명
+      - title: "Connect Controller to PC"
+        titlekr: "제어기를 PC에 연결하기"
+        url: /software/rplus2/scratch/#connect-controller-to-pc
+        urlkr: /software/rplus2/scratch/#제어기를-pc에-연결하기
+  - title: "Install Scratch 2.0 Offline"
+    titlekr: "스크래치 2.0 오프라인 에디터 설치"
+    url: /software/rplus2/scratch/#install-scratch-20-offline
+    urlkr: /software/rplus2/scratch/#스크래치-20-오프라인-에디터-설치
   - title: "Miscellenous"
     titlekr: "참고자료"
     url: /software/rplus2/scratch/#miscellaneous
     urlkr: /software/rplus2/scratch/#참고자료
+    children:
+      - title: "Install USB Driver"
+        titlekr: "USB 드라이버 설치"
+        url: /software/rplus2/scratch/#install-usb-driver
+        urlkr: /software/rplus2/scratch/#usb-드라이버-설치
+      - title: "Add Extention Blocks"
+        titlekr: "블록 직접 추가"
+        url: /software/rplus2/scratch/#add-extension-blocks
+        urlkr: /software/rplus2/scratch/#블록-직접-추가
 
 rplus2_block:
   - title: "Introduction"
@@ -16976,9 +17265,9 @@ mtask20:
     url: /software/rplus_mobile/mtask20/#introduction
     urlkr: /software/rplus_mobile/mtask20/#개요
     children:
-    - title: "Cautions"
+    - title: "System Requirements"
       titlekr: "구동사양 및 주의사항"
-      url: /software/rplus_mobile/mtask20/#cautions
+      url: /software/rplus_mobile/mtask20/#system-requirements
       urlkr: /software/rplus_mobile/mtask20/#구동사양-및-주의사항
     - title: "Supported Products"
       titlekr: "지원 제품"
@@ -16988,6 +17277,14 @@ mtask20:
       titlekr: "지원 제어기"
       url: /software/rplus_mobile/mtask20/#supported-controllers
       urlkr: /software/rplus_mobile/mtask20/#지원-제어기
+    - title: "App Download"
+      titlekr: "앱 다운로드"
+      url: /software/rplus_mobile/mtask20/#app-download
+      urlkr: /software/rplus_mobile/mtask20/#앱-다운로드
+    - title: "App Installation"
+      titlekr: "앱 설치"
+      url: /software/rplus_mobile/mtask20/#app-installation
+      urlkr: /software/rplus_mobile/mtask20/#앱-설치
   - title: "Menu Descriptions"
     titlekr: "메뉴설명"
     url: /software/rplus_mobile/mtask20/#menu-descriptions
@@ -17083,10 +17380,6 @@ mtask20:
     titlekr: "프로그래밍(파라미터)"
     url: /software/rplus_mobile/mtask20/#programmingparameters
     urlkr: /software/rplus_mobile/mtask20/#프로그래밍파라미터
-  - title: "Software Download"
-    titlekr: "소프트웨어 다운로드"
-    url: /software/rplus_mobile/mtask20/#software-download
-    urlkr: /software/rplus_mobile/mtask20/#소프트웨어-다운로드
   - title: "Useful Tips"
     titlekr: "유용한 정보"
     url: /software/rplus_mobile/mtask20/#useful-tips
@@ -17161,8 +17454,8 @@ rplussmart:
     children:
     - titlekr: "모션파일 다운로드"
       urlkr: /software/mobile_app/rplussmart/#모션파일-다운로드
-    - titlekr: "제어기(CM-200)와 스마트기기 블루투스 연결"
-      urlkr: /software/mobile_app/rplussmart/#제어기cm-200와-스마트기기-블루투스-연결
+    - titlekr: "제어기와 스마트기기 연결"
+      urlkr: /software/mobile_app/rplussmart/#제어기-스마트기기-연결
     - titlekr: "태스크파일 다운로드"
       urlkr: /software/mobile_app/rplussmart/#태스크파일-다운로드
 

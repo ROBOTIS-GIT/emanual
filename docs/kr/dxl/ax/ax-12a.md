@@ -27,7 +27,7 @@ product_group: dxl_ax
 
 | 항목          | 내용                                                                         |
 |:--------------|:-----------------------------------------------------------------------------|
-| 무게          | AX-12 (53.5 [g]), AX-12+ (53.5 [g]), AX-12A (54.6 [g])                                    |
+| 무게          | AX-12 (53.5 [g]), AX-12+ (53.5 [g]), AX-12A (54.6 [g])                       |
 | 크기          | 32 X 50 X 40 [mm]<br />1.26 X 1.97 X 1.57 [inch]                             |
 | 최소 제어각   | 0.29 [deg]                                                                   |
 | 모터          | Cored                                                                        |
@@ -240,4 +240,4 @@ F3은 다음과 같은 방법으로 적용됩니다. F3은 AX-12A의 3면(좌,�
 {% include kr/dxl/485_ttl_connection.md %}
 
 [호환성 가이드]: http://www.robotis.com/service/compatibility_table.php?cate=d
-[케이블 호환성]: /docs/kr/popup/cable_compatibility/
+{% include kr/dxl/common_link.md %}
