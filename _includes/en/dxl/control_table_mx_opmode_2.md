@@ -8,8 +8,8 @@
 
 {% capture opmode_notice_01 %}
 **NOTE** : Switching Operating Mode will reset gains(PID, Feedfoward) properly to the selected Operating Mode. The profile generator and limits will also be reset.
-1. Profile Velocity(112), Profile Acceleration(108) : Reset to ‘0’
-2. Goal PWM(100) : Reset to PWM Limit(36)
+1. [Profile Velocity(112)](#profile-velocity112), [Profile Acceleration(108)](#profile-acceleration108) : Reset to ‘0’
+2. [Goal PWM(100)](#goal-pwm100) : Reset to [PWM Limit(36)](#pwm-limit36)
 {% endcapture %}
 
 <div class="notice">
@@ -18,6 +18,6 @@
 
 **NOTE** : PWM is the abbreviation for Pulse Width Modulation that modulates PWM Duty to control motors.  
 The PWM Control Mode changes pulse width to control average supply voltage to the motor and this technique is widely used in the motor control field.  
-Therefore, PWM Control Mode uses Goal PWM(100) value to control supply voltage for Dynamixel.  
+Therefore, PWM Control Mode uses [Goal PWM(100)] value to control supply voltage for Dynamixel.  
 PWM Control Mode is similar to the Wheel Mode of Dynamixel AX and RX series.
 {: .notice}

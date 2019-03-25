@@ -1,4 +1,4 @@
-‘0’ 점의 위치를 조절 할 수 있습니다. 이 값은 Present Position(132)에 더해지게 됩니다.  
+‘0’ 점의 위치를 조절 할 수 있습니다. 이 값은 [Present Position(132)]에 더해지게 됩니다.  
 Present Position(132) = 실제 위치 + Homing Offset(20) 이 됩니다.
 
 |단위|범위|설명|

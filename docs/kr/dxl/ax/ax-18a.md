@@ -224,4 +224,5 @@ Baudrate(BPS) = 2,000,000 / (Value + 1)
 {% include kr/dxl/485_ttl_connection.md %}
 
 [호환성 가이드]: http://www.robotis.com/service/compatibility_table.php?cate=d
-[케이블 호환성]: /docs/kr/popup/cable_compatibility/
+
+{% include kr/dxl/common_link.md %}

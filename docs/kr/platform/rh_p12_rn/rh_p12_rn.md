@@ -271,7 +271,7 @@ External Port 의 용도는 External Port Mode (44, 45, 46, 47) 에 의해서 �
 {% include kr/dxl/control_table_49_indirectdata_pro.md %}
 
 ### <a name="torque-enable"></a>**[Torque Enable(562)](#torque-enable562)**
-{% include kr/dxl/control_table_torque_enable_2.md %}
+{% include kr/dxl/control_table_torque_enable.md %}
 
 ### <a name="led"></a>**[RGB LED(563)](#rgb-led563)**
 {% include kr/dxl/control_table_563_led_pro.md %}
@@ -409,4 +409,4 @@ Goal Velocity(600)가 ‘0’인 경우, Profile 이 비활성화 되어 Goal Ac
 `다운로드` [RH-P12-RN(PDF).zip](http://www.robotis.com/service/download.php?no=740)  
 `다운로드` [RH-P12-RN(STP).zip](http://www.robotis.com/service/download.php?no=741)
 
-[Torque Enable(562)]: #torque-enable562
+{% include kr/dxl/common_link.md %}
