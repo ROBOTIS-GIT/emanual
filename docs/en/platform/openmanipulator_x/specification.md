@@ -39,5 +39,9 @@ sidebar:
 
 ## [Repeatability](#repeatability)
 
-**Coming Soon**
+The below video introduces how the repeatability of OpenManipulator-X was measured. 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-xmEE9WrwtM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+QC MANAGER single LSY-220LN ([Korean Manual](http://qcmanager.cafe24.com/wp/wp-content/uploads/2017/11/KYENG_qcmanager_cata.pdf)) and Mitutoyo 540-390 digimatic indicator ID-C, 12.7mm ([English Manual](https://ecatalog.mitutoyo.com/ABSOLUTE-Digimatic-Indicator-ID-C-Series-543-Standard-Type-C1198.aspx)) were used for the data collection. Based on the result from 300 measurements, we guarantee less than 0.05 mm repeatability.
 
