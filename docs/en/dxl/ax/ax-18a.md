@@ -217,6 +217,17 @@ product_group: dxl_ax
 [Harness Compatibility]{: .popup}
 {: .notice}
 
+## [Certifications](#certifications)
+Please inquire us for information regarding unlisted certifications.
+
+### [FCC](#fcc)
+
+#### AX-18A
+{% include en/dxl/fcc_class_a.md %}
+
+#### AX-18F
+{% include en/dxl/fcc_class_b.md %}
+
 ## [Connector Information](#connector-information)
 
 {% include en/dxl/molex_ttl.md %}
