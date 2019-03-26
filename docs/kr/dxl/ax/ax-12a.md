@@ -228,6 +228,17 @@ F3은 다음과 같은 방법으로 적용됩니다. F3은 AX-12A의 3면(좌,�
 [케이블 호환성]{: .popup}
 {: .notice}
 
+## [인증 획득](#인증-획득)
+표기되지 않은 인증에 대해서는 별도 문의하시기 바랍니다.
+
+### [FCC](#fcc)
+
+#### AX-12
+{% include kr/dxl/fcc_class_b.md %}
+
+#### AX-12+ / AX-12A
+{% include kr/dxl/fcc_class_a.md %}
+
 ## [커넥터 정보](#커넥터-정보)
 {% include kr/dxl/molex_ttl.md %}
 

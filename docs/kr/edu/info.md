@@ -177,25 +177,26 @@ sidebar:
 
 ## [엔트리 예제](#엔트리-예제)
 
-|                                        예제 이름                                        |                    교안 / 조립서                     | 프로그램 자료                                                                                                                                                                                                 |
-|:---------------------------------------------------------------------------------------:|:----------------------------------------------------:|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|             선풍기 (Fan)<br>![](/assets/images/edu/info/info_entry_fan.png)             | [교안 다운로드][교안_선풍기]<br>[조립서 다운로드][조립서_선풍기] | **선풍기 예제프로그램 다운로드**<br>키트 데모 예제 : [01_inforobot_Fan_kr]<br>기초 코딩 예제 : [02_inforobot_Fan_Basic_kr]<br>활동자료 : [inforobot_Fan_sourcebook]                                           |
-|        다람쥐 (Squirrel)<br>![](/assets/images/edu/info/info_entry_squirrel.png)        | [교안 다운로드][교안_다람쥐]<br>[조립서 다운로드][조립서_다람쥐] | **다람쥐 예제프로그램 다운로드**<br>키트 데모 예제 : [01_inforobot_Squirel_kr]<br>기초 코딩 예제 : [02_inforobot_Squirel_Basic_kr]                                                                             |
-|       경찰 (Police Officer)<br>![](/assets/images/edu/info/info_entry_police.png)       | [교안 다운로드][교안_경찰]<br>[조립서 다운로드][조립서_경찰] | **경찰 예제프로그램 다운로드**<br>키트 데모 예제 : [01_inforobot_Police_Officer_kr]<br>기초 코딩 예제 : [02_inforobot_Police_Officer_Basic_kr]                                                                 |
-|         스쿠터 (Scooter)<br>![](/assets/images/edu/info/info_entry_scooter.png)         | [교안 다운로드][교안_스쿠터]<br>[조립서 다운로드][조립서_스쿠터] | **스쿠터 예제프로그램 다운로드**<br>키트 데모 예제 : [01_inforobot_Scooter_kr]<br>기초 코딩 예제 : [02_inforobot_Scooter_Basic_kr]                                                                             |
-| 분리수거로봇 (Recycling Robot)<br>![](/assets/images/edu/info/info_entry_recycling.png) | [교안 다운로드][교안_분리수거]<br>[조립서 다운로드][조립서_분리수거] | **분리수거로봇 예제프로그램 다운로드**<br>키트 데모 예제 : [01_inforobot_Recycling_Robot_kr]<br>기초 코딩 예제 : [02_inforobot_Recycling_Robot_Basic_kr]<br>활동자료 : [inforobot_Recycling_Robot_sourcebook] |
-|    청소로봇 (Cleaning Robot)<br>![](/assets/images/edu/info/info_entry_cleaning.png)    | [교안 다운로드][교안_청소]<br>[조립서 다운로드][조립서_청소] | **청소로봇 예제프로그램 다운로드**<br>키트 데모 예제 : [01_infoRobot_Cleaning_Robot_kr]<br>기초 코딩 예제 : [02_infoRobot_Cleaning_Robot_Basic_kr]<br>활동자료 : [infoRobot_Cleaning_Robot_sourcebook]<br><br>**[실과 교과서 전용 청소로봇 코드]{: .blank}**{: .notice--info}       |
+|                                        예제 이름                                        |               조립서               | 프로그램 자료                                                                                                                                                                                                                                |
+|:---------------------------------------------------------------------------------------:|:----------------------------------:|:-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|             선풍기 (Fan)<br>![](/assets/images/edu/info/info_entry_fan.png)             |  [조립서 다운로드][조립서_선풍기]  | 교과형 기초 코딩 : [01_inforobot_Fan_Basic_kr]<br>교과형 응용 코딩 : [02_inforobot_Fan_Advance_kr]<br>활동자료 : [inforobot_Fan_sourcebook]                                                                                                      |
+|        다람쥐 (Squirrel)<br>![](/assets/images/edu/info/info_entry_squirrel.png)        |  [조립서 다운로드][조립서_다람쥐]  | 교과형 기초 코딩 : [01_inforobot_Squirel_Basic_kr]<br>교과형 응용 코딩 : [02_inforobot_Squirel_Advance_kr]                                                                                                                                      |
+|       경찰 (Police Officer)<br>![](/assets/images/edu/info/info_entry_police.png)       |   [조립서 다운로드][조립서_경찰]   | 교과형 기초 코딩 : [01_inforobot_Police_Officer_Basic_kr]<br>교과형 응용 코딩 : [02_inforobot_Police_Officer_Advance_kr]                                                                                                                        |
+|         스쿠터 (Scooter)<br>![](/assets/images/edu/info/info_entry_scooter.png)         |  [조립서 다운로드][조립서_스쿠터]  | 교과형 기초 코딩 : [01_inforobot_Scooter_Basic_kr]<br>교과형 응용 코딩 : [02_inforobot_Scooter_Advance_kr]                                                                                                                                      |
+| 분리수거로봇 (Recycling Robot)<br>![](/assets/images/edu/info/info_entry_recycling.png) | [조립서 다운로드][조립서_분리수거] | 교과형 기초 코딩 : [01_inforobot_Recycling_Robot_Basic_kr]<br>교과형 응용 코딩 : [02_inforobot_Recycling_Robot_Advance_kr]<br>활동자료 : [inforobot_Recycling_Robot_sourcebook]                                                                   |
+|    청소로봇 (Cleaning Robot)<br>![](/assets/images/edu/info/info_entry_cleaning.png)    |   [조립서 다운로드][조립서_청소]   | 교과형 기초 코딩 : [01_infoRobot_Cleaning_Robot_Basic_kr]<br>교과형 응용 코딩 : [02_infoRobot_Cleaning_Robot_Advance_kr]<br>활동자료 : [infoRobot_Cleaning_Robot_sourcebook]<br><br>**[실과 교과서 전용 청소로봇 코드]{: .blank}**{: .notice--info} |
 
-## [태스크 예제](#테스크-예제)
+## [태스크 예제](#태스크-예제)
 
-|                                       예제 이름                                       |                    교안 / 조립서                     | 프로그램 자료                                                                                                                                                                                                                                                    |
-|:-------------------------------------------------------------------------------------:|:----------------------------------------------------:|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|         룰렛 (Roulette)<br>![](/assets/images/edu/info/info_task_lottery.png)         | [교안 다운로드][교안_룰렛]<br>[조립서 다운로드][조립서_룰렛] | **룰렛 예제프로그램 다운로드**<br>키트 데모 예제 : [01_inforobot_Roulette_kr]<br>기초 코딩 예제 : [02_inforobot_Roulette_Basic_kr]<br>응용코딩예제 : [03_inforobot_Roulette_Advance_kr]<br>활동자료 : [inforobot_Roulette_sourcebook]                             |
-|      자동문 (Automatic Door)<br>![](/assets/images/edu/info/info_task_door.png)       | [교안 다운로드][교안_자동문]<br>[조립서 다운로드][조립서_자동문] | **자동문 예제프로그램 다운로드**<br>키트 데모 예제 : [01_inforobot_Automatic_Door_kr]<br>기초 코딩 예제 : [02_inforobot_Automatic_Door_Basic_kr]<br>응용코딩예제 : [03_inforobot_Automatic_Door_Advance_kr]                                                        |
-|       투석기 (Catapult)<br>![](/assets/images/edu/info/info_task_catapult.png)        | [교안 다운로드][교안_투석기]<br>[조립서 다운로드][조립서_투석기] | **투석기 예제프로그램 다운로드**<br>키트 데모 예제 : [01_inforobot_Catapult_kr]<br>기초 코딩 예제 : [02_inforobot_Catapult_Basic_kr]<br>응용코딩예제 : [03_inforobot_Catapult_Advance_kr]<br>활동자료 : [inforobot_Catapult_sourcebook]                           |
-|      곤충로봇 (Hexapod Robot)<br>![](/assets/images/edu/info/info_task_bug.png)       | [교안 다운로드][교안_곤충]<br>[조립서 다운로드][조립서_곤충] | **곤충로봇 예제프로그램 다운로드**<br>키트 데모 예제 : [01_inforobot_Hexapod_Robot_kr]<br>기초 코딩 예제 : [02_inforobot_Hexapod_Robot_Basic_kr]<br>응용코딩예제 : [03_inforobot_Hexapod_Robot_Advance_kr]                                                         |
-|  집게로봇 (Gripper Robot)<br>![](/assets/images/edu/info/info_task_gripperrobot.png)  | [교안 다운로드][교안_집게]<br>[조립서 다운로드][조립서_집게] | **집게로봇 예제프로그램 다운로드**<br>키트 데모 예제 : [01_inforobot_Gripper_Robot_kr]<br>기초 코딩 예제 : [02_inforobot_Gripper_Robot_Basic_kr]<br>응용코딩예제 : [03_inforobot_Gripper_Robot_Advance_kr]                                                         |
-| 안내로봇 (Guidance Robot)<br>![](/assets/images/edu/info/info_task_guidancerobot.png) | [교안 다운로드][교안_안내]<br>[조립서 다운로드][조립서_안내] | **안내로봇 예제프로그램 다운로드**<br>키트 데모 예제 : [01_inforobot_Guidance_Robot_kr]<br>기초 코딩 예제 : [02_inforobot_Guidance_Robot_Basic_kr]<br>응용코딩예제 : [03_inforobot_Guidance_Robot_Advance_kr]<br>활동자료 : [inforobot_Guidance_Robot_sourcebook]<br><br>**[실과 교과서 전용 안내로봇 코드]{: .blank}**{: .notice--info}    |
+|                                       예제 이름                                       |                          교안 / 조립서                           | 프로그램 자료                                                                                                                                                                                                                                                                             |
+|:-------------------------------------------------------------------------------------:|:----------------------------------------------------------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|         룰렛 (Roulette)<br>![](/assets/images/edu/info/info_task_lottery.png)         |   [교안 다운로드][교안_룰렛]<br>[조립서 다운로드][조립서_룰렛]   | 키트 데모 예제 : [01_inforobot_Roulette_kr]<br>기초 코딩 예제 : [02_inforobot_Roulette_Basic_kr]<br>응용코딩예제 : [03_inforobot_Roulette_Advance_kr]<br>활동자료 : [inforobot_Roulette_sourcebook]                                                                                             |
+|      자동문 (Automatic Door)<br>![](/assets/images/edu/info/info_task_door.png)       | [교안 다운로드][교안_자동문]<br>[조립서 다운로드][조립서_자동문] | 키트 데모 예제 : [01_inforobot_Automatic_Door_kr]<br>기초 코딩 예제 : [02_inforobot_Automatic_Door_Basic_kr]<br>응용코딩예제 : [03_inforobot_Automatic_Door_Advance_kr]                                                                                                                         |
+|       투석기 (Catapult)<br>![](/assets/images/edu/info/info_task_catapult.png)        | [교안 다운로드][교안_투석기]<br>[조립서 다운로드][조립서_투석기] | 키트 데모 예제 : [01_inforobot_Catapult_kr]<br>기초 코딩 예제 : [02_inforobot_Catapult_Basic_kr]<br>응용코딩예제 : [03_inforobot_Catapult_Advance_kr]<br>활동자료 : [inforobot_Catapult_sourcebook]                                                                                              |
+|      곤충로봇 (Hexapod Robot)<br>![](/assets/images/edu/info/info_task_bug.png)       |   [교안 다운로드][교안_곤충]<br>[조립서 다운로드][조립서_곤충]   | 키트 데모 예제 : [01_inforobot_Hexapod_Robot_kr]<br>기초 코딩 예제 : [02_inforobot_Hexapod_Robot_Basic_kr]<br>응용코딩예제 : [03_inforobot_Hexapod_Robot_Advance_kr]                                                                                                                            |
+|  집게로봇 (Gripper Robot)<br>![](/assets/images/edu/info/info_task_gripperrobot.png)  |   [교안 다운로드][교안_집게]<br>[조립서 다운로드][조립서_집게]   | 키트 데모 예제 : [01_inforobot_Gripper_Robot_kr]<br>기초 코딩 예제 : [02_inforobot_Gripper_Robot_Basic_kr]<br>응용코딩예제 : [03_inforobot_Gripper_Robot_Advance_kr]                                                                                                                            |
+| 안내로봇 (Guidance Robot)<br>![](/assets/images/edu/info/info_task_guidancerobot.png) |   [교안 다운로드][교안_안내]<br>[조립서 다운로드][조립서_안내]   | 키트 데모 예제 : [01_inforobot_Guidance_Robot_kr]<br>기초 코딩 예제 : [02_inforobot_Guidance_Robot_Basic_kr]<br>응용코딩예제 : [03_inforobot_Guidance_Robot_Advance_kr]<br>활동자료 : [inforobot_Guidance_Robot_sourcebook]<br><br>**[실과 교과서 전용 안내로봇 코드]{: .blank}**{: .notice--info} |
+|                             실과 교과서 통합 태스크 코드                              |                                -                                 | [실과 교과서 통합 태스크 코드]                                                                                                                                                                                                                                                              |
 
 
 
@@ -209,46 +210,33 @@ sidebar:
 [적외선 센서]: /docs/kr/parts/sensor/irss-10/
 [컬러 센서]: /docs/kr/parts/sensor/cs-10/
 
-[교안_선풍기]: #
-[교안_다람쥐]: #
-[교안_경찰]: #
-[교안_스쿠터]: #
-[교안_분리수거]: #
-[교안_청소]: #
-[교안_룰렛]: #
-[교안_자동문]: #
-[교안_투석기]: #
-[교안_곤충]: #
-[교안_집게]: #
-[교안_안내]: #
+[조립서_선풍기]: http://www.robotis.com/service/download.php?no=1720
+[조립서_다람쥐]: http://www.robotis.com/service/download.php?no=1721
+[조립서_경찰]: http://www.robotis.com/service/download.php?no=1722
+[조립서_스쿠터]: http://www.robotis.com/service/download.php?no=1723
+[조립서_분리수거]: http://www.robotis.com/service/download.php?no=1724
+[조립서_청소]:
+[조립서_룰렛]: http://www.robotis.com/service/download.php?no=1725
+[조립서_자동문]: http://www.robotis.com/service/download.php?no=1726
+[조립서_투석기]: http://www.robotis.com/service/download.php?no=1727
+[조립서_곤충]: http://www.robotis.com/service/download.php?no=1728
+[조립서_집게]: http://www.robotis.com/service/download.php?no=1729
+[조립서_안내]:
 
-[조립서_선풍기]: #
-[조립서_다람쥐]: #
-[조립서_경찰]: #
-[조립서_스쿠터]: #
-[조립서_분리수거]: #
-[조립서_청소]: #
-[조립서_룰렛]: #
-[조립서_자동문]: #
-[조립서_투석기]: #
-[조립서_곤충]: #
-[조립서_집게]: #
-[조립서_안내]: #
-
-[01_inforobot_Fan_kr]: http://www.robotis.com/service/download.php?no=1677
-[02_inforobot_Fan_Basic_kr]: http://www.robotis.com/service/download.php?no=1678
+[01_inforobot_Fan_Basic_kr]: http://www.robotis.com/service/download.php?no=1677
+[02_inforobot_Fan_Advance_kr]: http://www.robotis.com/service/download.php?no=1678
 [inforobot_Fan_sourcebook]: http://www.robotis.com/service/download.php?no=1692
-[01_inforobot_Squirel_kr]: http://www.robotis.com/service/download.php?no=1679
-[02_inforobot_Squirel_Basic_kr]: http://www.robotis.com/service/download.php?no=1680
-[01_inforobot_Police_Officer_kr]: http://www.robotis.com/service/download.php?no=1681
-[02_inforobot_Police_Officer_Basic_kr]: http://www.robotis.com/service/download.php?no=1682
-[01_inforobot_Scooter_kr]: http://www.robotis.com/service/download.php?no=1683
-[02_inforobot_Scooter_Basic_kr]: http://www.robotis.com/service/download.php?no=1684
-[01_inforobot_Recycling_Robot_kr]: http://www.robotis.com/service/download.php?no=1685
-[02_inforobot_Recycling_Robot_Basic_kr]: http://www.robotis.com/service/download.php?no=1686
+[01_inforobot_Squirel_Basic_kr]: http://www.robotis.com/service/download.php?no=1679
+[02_inforobot_Squirel_Advance_kr]: http://www.robotis.com/service/download.php?no=1680
+[01_inforobot_Police_Officer_Basic_kr]: http://www.robotis.com/service/download.php?no=1681
+[02_inforobot_Police_Officer_Advance_kr]: http://www.robotis.com/service/download.php?no=1682
+[01_inforobot_Scooter_Basic_kr]: http://www.robotis.com/service/download.php?no=1683
+[02_inforobot_Scooter_Advance_kr]: http://www.robotis.com/service/download.php?no=1684
+[01_inforobot_Recycling_Robot_Basic_kr]: http://www.robotis.com/service/download.php?no=1685
+[02_inforobot_Recycling_Robot_Advance_kr]: http://www.robotis.com/service/download.php?no=1686
 [inforobot_Recycling_Robot_sourcebook]: http://www.robotis.com/service/download.php?no=1694
-[01_infoRobot_Cleaning_Robot_kr]: http://www.robotis.com/service/download.php?no=1687
-[02_infoRobot_Cleaning_Robot_Basic_kr]: http://www.robotis.com/service/download.php?no=1688
+[01_infoRobot_Cleaning_Robot_Basic_kr]: http://www.robotis.com/service/download.php?no=1687
+[02_infoRobot_Cleaning_Robot_Advance_kr]: http://www.robotis.com/service/download.php?no=1688
 [infoRobot_Cleaning_Robot_sourcebook]: http://www.robotis.com/service/download.php?no=1695
 
 [01_inforobot_Roulette_kr]: http://www.robotis.com/service/download.php?no=1699
@@ -275,3 +263,4 @@ sidebar:
 
 [실과 교과서 전용 청소로봇 코드]: http://www.robotis.com/service/download.php?no=1718
 [실과 교과서 전용 안내로봇 코드]: http://www.robotis.com/service/download.php?no=1717
+[실과 교과서 통합 태스크 코드]: http://www.robotis.com/service/download.php?no=1719
