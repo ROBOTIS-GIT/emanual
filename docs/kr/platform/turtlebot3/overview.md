@@ -13,7 +13,9 @@ sidebar:
 
 # 터틀봇3
 
+![](/assets/images/platform/turtlebot3/overview/turtlebot3_with_logo.png)
+
 터틀봇3는 현재 영문으로만 지원되고 있습니다. [영문 e매뉴얼의 TurtleBot3]를 이용하시기 바랍니다.
 {: .notice--warning}
 
-[영문 e매뉴얼의 TurtleBot3]: http://emanual.robotis.com/docs/en/platform/turtlebot3/overview/
+[영문 e매뉴얼의 TurtleBot3]: /docs/en/platform/turtlebot3/overview/

@@ -5,7 +5,7 @@ ref: openmanipulator_overview
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/openmanipulator_x/overview
+permalink: /docs/en/platform/openmanipulator_x/overview/
 sidebar:
   title: OpenManipulator-X
   nav: "openmanipulator_x"
