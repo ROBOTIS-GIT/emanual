@@ -1,54 +1,85 @@
 ---
 layout: archive
 lang: en
-ref: manipulator_h_manipulator_ros
+ref: manipulator_h_ros_reference
 read_time: true
 share: true
 author_profile: false
-permalink: /docs/en/platform/manipulator_h/manipulator_ros/
+permalink: /docs/en/platform/manipulator_h/ros_reference/
 sidebar:
   title: MANIPULATOR-H
   nav: "manipulator_h"
 ---
 
-<div style="counter-reset: h1 6"></div>
+<div style="counter-reset: h1 7"></div>
 
-# [ROBOTIS MANIPULATOR ROS](#robotis-manipulator-ros)
+# [ROS Reference](#ros-reference)
 
-## [ROBOTIS MANIPULATOR Common](#robotis-manipulator-common)
+## [ROS package description](#ros-package-description)
 
-### robotis_manipulator_bringup   
+### manipulator_h_base_module
+This package describes basic function to control ROBOTIS MANIPULATOR-H. This module is based on position control.
 
+### manipulator_h_base_module_msgs
+This package includes ROS messages and services for manipulator_h_base_module_msgs.
+
+### manipulator_h_bringup   
+This package includes launch file to describe robotis in Rviz.     
 `launch` : launch file to bring up the robot in Rviz
 
 ### robotis_manipulator_description   
-
+This package includes URDF model of ROBOTIS MANIPULATOR-H.
+Additionally, we provide full kinematics and dynamics information of each link.     
 `doc` : document for robotis manipulator joint & link information   
 `launch` : launch file to confirm the urdf model   
 `meshes` : STL files of each link   
 `urdf` : urdf files to create robot model   
 
 ### robotis_manipulator_gazebo
-
+This package provides GAZEBO simulation environment for ROBOTIS MANIPULATOR-H.
+We provides two controllers such as position and effort controllers.     
 `config` : yaml files of gazebo simulation controller   
 `launch` : launch files to execute gazebo simulation   
 `worlds` : world file for gazebo simulation
 
 ### robotis_manipulator_gui
-
+This package provides simple GUI to control ROBOTIS MANIPULATOR-H.
+This GUI is connected to manipulator_h_base_module.     
 GUI program using `qt creater`
 
-## [ROBOTIS MANIPULATOR Module](#robotis-manipulator-module)
+### robotis_manipulator_kinematics_dynamics
+This packages provides library of kinematics and dynamics information for ROBOTIS MANIPULATOR-H.
+Additionally, there are some function to calculate kinematics and dynamics.
 
+### robotis_manipulator_manager
+This package describes robot manager to execute manipulator_h_base_module.
+
+
+## [ROS message type](#ros-message-type)
+
+### ROS Message Type
+* JointPose.msg   
+  * `name` : target joint name ([std_msgs/String]{: .popup})    
+  * `value` : target joint value ([std_msgs/Float64]{: .popup})    
+* KinematicsPose.msg    
+  * `name` : target kinematics group ([std_msgs/String]{: .popup})    
+  * `pose` : target Pose ([geometry_msgs/Pose]{: .popup})   
+
+### ROS Service Type   
+* GetJointPose.srv   
+  * Request : `joint_name` : joint name ([std_msgs/String]{: .popup})   
+  * Response : `joint_value` : joint value ([std_msgs/Float64]{: .popup})   
+* GetKinematicsPose.srv     
+  * Request : `group_name` : kinematics group ([std_msgs/String]{: .popup})   
+  * Response : `group_pose` : kinematics pose ([geometry_msgs/Pose]{: .popup})   
+
+
+
+## [ROS API](#ros-api)
 
 ### [manipulator_base_module](#manipulator_base_module)
 
-#### Overview
-manipulator base module
-
-#### ROS API
-
-##### Subscribed Topics
+#### Subscribed Topics
 `/robotis/base/ini_pose_msg` ([std_msgs/String]{: .popup})    
 &emsp;&emsp; Message for initial pose
 
@@ -61,44 +92,43 @@ manipulator base module
 `/robotis/base/kinematics_pose_msg` ([manipulator_manipulation_module_msgs/KinematicsPose]{: .popup})   
 &emsp;&emsp; Message for task space control
 
-##### Published Topics
+#### Published Topics
 `/robotis/status`([robotis_controller_msgs/StatusMsg]{: .popup})    
 &emsp;&emsp; Message for current state
 
-##### Services
+#### Services
 `/robotis/base/get_joint_pose` ([manipulator_manipulation_module_msgs/GetJointPose]{: .popup})   
 &emsp;&emsp; Service to read current joint value
 
 `/robotis/base/get_kinematics_pose` ([manipulator_manipulation_module_msgs/GetKinematicsPose]{: .popup})   
 &emsp;&emsp; Service to read current end effector's pose
 
-### [manipulator_base_module_msgs](#manipulator_base_module_msgs)
+
+### [manipulator_manager](#manipulator-manager)
 
 #### Overview
-[manipulator_base_module](#manipulator_base_module)'s Message & Service  
+`manipulator_manager` is a package to apply ROBOTIS Framework to ROBOTIS Manipulator.   
+If you want to create new manager, please refer the link as below.
+> Ref. : [Creating new robot manager]
 
-#### ROS Message Type
-* JointPose.msg   
-  * `name` : target joint name ([std_msgs/String]{: .popup})    
-  * `value` : target joint value ([std_msgs/Float64]{: .popup})    
-* KinematicsPose.msg    
-  * `name` : target kinematics group ([std_msgs/String]{: .popup})    
-  * `pose` : target Pose ([geometry_msgs/Pose]{: .popup})   
+#### Parameters
+launch parameters
 
-#### ROS Service Type   
-* GetJointPose.srv   
-  * Request : `joint_name` : joint name ([std_msgs/String]{: .popup})   
-  * Response : `joint_value` : joint value ([std_msgs/Float64]{: .popup})   
-* GetKinematicsPose.srv     
-  * Request : `group_name` : kinematics group ([std_msgs/String]{: .popup})   
-  * Response : `group_pose` : kinematics pose ([geometry_msgs/Pose]{: .popup})   
+`gazebo` (bool, default: false)  
+&emsp;&emsp; Select using simulation (gazebo) mode or real robot mode.  
 
+`gazebo_robot_name` (string, default: "")  
+&emsp;&emsp; robot name for joint_states topic name using gazebo mode.  
+&emsp;&emsp; ex) If the `gazebo_robot_name` is `robotis_manipulator`, subscribing topic is  
+&emsp;&emsp;&emsp; `/robotis_manipulator/joint_states`.
+
+`offset_file_path` (string, default: "")  
+&emsp;&emsp; The file path that includes joint offset information and initial pose of tuning offset.
+
+`robot_file_path` (string, default: "")  
+&emsp;&emsp; The file `.robot` 's path that includes robot information.
 
 ### [manipulator_kinematics_dynamcis](#manipulator_kinematics_dynamcis)
-
-#### Overview
-
-  manipulator_kinematics_dynamics provides joint & link information and basic robotics function.
 
 #### Getting started
 
@@ -206,93 +236,6 @@ manipulator base module
   > * arguments : start joint id, end joint id, target position, target orientation, max iteration, calculation error
   > * return value : true or false
 
-### [manipulator_manager](#manipulator-manager)
-
-#### Overview
-`manipulator_manager` is a package to apply ROBOTIS Framework to ROBOTIS Manipulator.   
-If you want to create new manager, please refer the link as below.
-> Ref. : [Creating new robot manager]
-
-#### ROS API
-##### Parameters
-launch parameters
-
-`gazebo` (bool, default: false)  
-&emsp;&emsp; Select using simulation (gazebo) mode or real robot mode.  
-
-`gazebo_robot_name` (string, default: "")  
-&emsp;&emsp; robot name for joint_states topic name using gazebo mode.  
-&emsp;&emsp; ex) If the `gazebo_robot_name` is `robotis_manipulator`, subscribing topic is  
-&emsp;&emsp;&emsp; `/robotis_manipulator/joint_states`.
-
-`offset_file_path` (string, default: "")  
-&emsp;&emsp; The file path that includes joint offset information and initial pose of tuning offset.
-
-`robot_file_path` (string, default: "")  
-&emsp;&emsp; The file `.robot` 's path that includes robot information.
-
-## [How to Execute ROS Package](#how-to-execute-ros-package)
-
-### [How to run ROBOTIS MANIPULATOR](#how-to-run-robotis-manipulator)
-
-#### Overview
-* Bring up the robot in Rviz
-```
-$ roslaunch manipulator_h_bringup robotis_manipulator.launch   
-```
-* Run manipulator manager
-```
-$ sudo bash
-[sudo] password for robotis:   
-# roslaunch manipulator_h_manager manipulator_h_manager.launch   
-```
-
-### [How to operate GUI program](#how-to-operate-gui-program)
-
-#### Overview
-* Run GUI program
-```
-$ rosrun manipulator_h_gui manipulator_h_gui
-```
-
-#### How to operate
-1. Click `set mode`   
-2. Click `go to initial pose`
-
-##### Joint Space Control
-1. Change the values in `joint space control` tab
-2. Click `send` button`
-
-##### Task Space Control
-1. Change the values in `task space control` tab
-2. Click `send` button
-
-### [How to execute Gazebo](#how-to-execute-gazebo)
-
-#### Overview
-How to execute Gazebo simulation
-
-#### Additional installation for Gazebo
-[[Gazebo installation|Gazebo installation]]
-
-#### How to execute Gazebo
-* Load Robotis Manipulator in Gazebo
-```
-$ roslaunch manipulator_h_gazebo manipulator_h_gazebo.launch   
-```
-
-#### [manipulator_manager] for Gazebo
-* Set up the `manipulator_h_manager.launch` for Gazebo simulation      
-```
-<param name="gazebo"                   value="false"     type="bool"/>
-<param name="gazebo_robot_name"        value="robotis_manipulator_h" />
-```
-
-* manipulator_h_manager execution
-
-```
-$ roslaunch manipulator_h_manager manipulator_h_manager.launch
-```
 
 
 [std_msgs/String]: /docs/en/popup/std_msgs_string/
@@ -304,4 +247,4 @@ $ roslaunch manipulator_h_manager manipulator_h_manager.launch
 [manipulator_manipulation_module_msgs/GetJointPose]: /docs/en/popup/GetJointPose.srv/
 [manipulator_manipulation_module_msgs/GetKinematicsPose]: /docs/en/popup/GetKinematicsPose.srv/
 [Creating new robot manager]: /docs/en/software/robotis_framework_packages/tutorials/#creating-new-robot-manager
-[manipulator_manager]: /docs/en/platform/manipulator_h/manipulator_ros/#manipulator-manager
+[manipulator_manager]: /docs/en//platform/manipulator_h/ros_example/#manipulator-manager
