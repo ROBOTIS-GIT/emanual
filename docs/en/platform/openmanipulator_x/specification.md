@@ -23,6 +23,7 @@ sidebar:
 | **Input Voltage**   | V       | 12                                      |
 | **DOF**             | -       | 5 (4 DOF + 1 DOF Gripper)               |
 | **Payload**         | g       | 500                                     |
+| **Repeatability**   | mm      | < 0.05                                  |
 | **Speed(Joint)**    | RPM     | 46                                      |
 | **Weight**          | kg (lb) | 0.70  (1.54)                            |
 | **Reach**           | mm (in) | 380   (14.9)                            |
