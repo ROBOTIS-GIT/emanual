@@ -811,6 +811,10 @@ ax-12w:
     url: /dxl/ax/ax-12w/#reference
     urlkr: /dxl/ax/ax-12w/#참고자료
     children:
+      - title: "Certifications"
+        titlekr: "인증 획득"
+        url: /dxl/ax/ax-12w/#certifications
+        urlkr: /dxl/ax/ax-12w/#인증-획득
       - title: "Connector Information"
         titlekr: "커넥터 정보"
         url: /dxl/ax/ax-12w/#connector-information
@@ -999,6 +1003,10 @@ ax-12a:
     url: /dxl/ax/ax-12a/#reference
     urlkr: /dxl/ax/ax-12a/#참고자료
     children:
+      - title: "Certifications"
+        titlekr: "인증 획득"
+        url: /dxl/ax/ax-12a/#certifications
+        urlkr: /dxl/ax/ax-12a/#인증-획득
       - title: "Connector Information"
         titlekr: "커넥터 정보"
         url: /dxl/ax/ax-12a/#connector-information
@@ -1159,6 +1167,10 @@ ax-18a:
     url: /dxl/ax/ax-18a/#reference
     urlkr: /dxl/ax/ax-18a/#참고자료
     children:
+      - title: "Certifications"
+        titlekr: "인증 획득"
+        url: /dxl/ax/ax-18a/#certifications
+        urlkr: /dxl/ax/ax-18a/#인증-획득
       - title: "Connector Information"
         titlekr: "커넥터 정보"
         url: /dxl/ax/ax-18a/#connector-information
@@ -2776,6 +2788,10 @@ mx-28:
     url: /dxl/mx/mx-28/#reference
     urlkr: /dxl/mx/mx-28/#참고자료
     children:
+      - title: "Certifications"
+        titlekr: "인증 획득"
+        url: /dxl/mx/mx-28/#certifications
+        urlkr: /dxl/mx/mx-28/#인증-획득
       - title: "Connector Information"
         titlekr: "커넥터 정보"
         url: /dxl/mx/mx-28/#connector-information
@@ -2956,6 +2972,10 @@ mx-64:
     url: /dxl/mx/mx-64/#reference
     urlkr: /dxl/mx/mx-64/#참고자료
     children:
+      - title: "Certifications"
+        titlekr: "인증 획득"
+        url: /dxl/mx/mx-64/#certifications
+        urlkr: /dxl/mx/mx-64/#인증-획득
       - title: "Connector Information"
         titlekr: "커넥터 정보"
         url: /dxl/mx/mx-64/#connector-information
@@ -3139,6 +3159,10 @@ mx-106:
     url: /dxl/mx/mx-106/#reference
     urlkr: /dxl/mx/mx-106/#참고자료
     children:
+      - title: "Certifications"
+        titlekr: "인증 획득"
+        url: /dxl/mx/mx-106/#certifications
+        urlkr: /dxl/mx/mx-106/#인증-획득
       - title: "Connector Information"
         titlekr: "커넥터 정보"
         url: /dxl/mx/mx-106/#connector-information
@@ -3358,6 +3382,10 @@ mx-28-2:
     url: /dxl/mx/mx-28-2/#reference
     urlkr: /dxl/mx/mx-28-2/#참고자료
     children:
+      - title: "Certifications"
+        titlekr: "인증 획득"
+        url: /dxl/mx/mx-28-2/#certifications
+        urlkr: /dxl/mx/mx-28-2/#인증-획득
       - title: "Connector Information"
         titlekr: "커넥터 정보"
         url: /dxl/mx/mx-28-2/#connector-information
@@ -3578,6 +3606,10 @@ mx-64-2:
     url: /dxl/mx/mx-64-2/#reference
     urlkr: /dxl/mx/mx-64-2/#참고자료
     children:
+      - title: "Certifications"
+        titlekr: "인증 획득"
+        url: /dxl/mx/mx-64-2/#certifications
+        urlkr: /dxl/mx/mx-64-2/#인증-획득
       - title: "Connector Information"
         titlekr: "커넥터 정보"
         url: /dxl/mx/mx-64-2/#connector-information
@@ -3802,6 +3834,10 @@ mx-106-2:
     url: /dxl/mx/mx-106-2/#reference
     urlkr: /dxl/mx/mx-106-2/#참고자료
     children:
+      - title: "Certifications"
+        titlekr: "인증 획득"
+        url: /dxl/mx/mx-106-2/#certifications
+        urlkr: /dxl/mx/mx-106-2/#인증-획득
       - title: "Connector Information"
         titlekr: "커넥터 정보"
         url: /dxl/mx/mx-106-2/#connector-information
@@ -4028,6 +4064,10 @@ xh430-v210:
     url: /dxl/x/xh430-v210/#reference
     urlkr: /dxl/x/xh430-v210/#참고자료
     children:
+      - title: "Certifications"
+        titlekr: "인증 획득"
+        url: /dxl/x/xh430-v210/#certifications
+        urlkr: /dxl/x/xh430-v210/#인증-획득
       - title: "Quick Start"
         titlekr: "퀵스타트"
         url: /dxl/x/xh430-v210/#quick-start
@@ -4260,6 +4300,10 @@ xh430-v350:
     url: /dxl/x/xh430-v350/#reference
     urlkr: /dxl/x/xh430-v350/#참고자료
     children:
+      - title: "Certifications"
+        titlekr: "인증 획득"
+        url: /dxl/x/xh430-v350/#certifications
+        urlkr: /dxl/x/xh430-v350/#인증-획득
       - title: "Quick Start"
         titlekr: "퀵스타트"
         url: /dxl/x/xh430-v350/#quick-start
@@ -4492,6 +4536,10 @@ xh430-w210:
     url: /dxl/x/xh430-w210/#reference
     urlkr: /dxl/x/xh430-w210/#참고자료
     children:
+      - title: "Certifications"
+        titlekr: "인증 획득"
+        url: /dxl/x/xh430-w210/#certifications
+        urlkr: /dxl/x/xh430-w210/#인증-획득
       - title: "Quick Start"
         titlekr: "퀵스타트"
         url: /dxl/x/xh430-w210/#quick-start
@@ -4724,6 +4772,10 @@ xh430-w350:
     url: /dxl/x/xh430-w350/#reference
     urlkr: /dxl/x/xh430-w350/#참고자료
     children:
+      - title: "Certifications"
+        titlekr: "인증 획득"
+        url: /dxl/x/xh430-w350/#certifications
+        urlkr: /dxl/x/xh430-w350/#인증-획득
       - title: "Quick Start"
         titlekr: "퀵스타트"
         url: /dxl/x/xh430-w350/#quick-start
@@ -5229,6 +5281,10 @@ xc430-w150:
     url: /dxl/x/xc430-w150/#reference
     urlkr: /dxl/x/xc430-w150/#참고자료
     children:
+      - title: "Certifications"
+        titlekr: "인증 획득"
+        url: /dxl/x/xc430-w150/#certifications
+        urlkr: /dxl/x/xc430-w150/#인증-획득
       - title: "Quick Start"
         titlekr: "퀵스타트"
         url: /dxl/x/xc430-w150/#quick-start
@@ -5455,6 +5511,10 @@ xc430-w240:
     url: /dxl/x/xc430-w240/#reference
     urlkr: /dxl/x/xc430-w240/#참고자료
     children:
+      - title: "Certifications"
+        titlekr: "인증 획득"
+        url: /dxl/x/xc430-w240/#certifications
+        urlkr: /dxl/x/xc430-w240/#인증-획득
       - title: "Quick Start"
         titlekr: "퀵스타트"
         url: /dxl/x/xc430-w240/#quick-start
@@ -5672,6 +5732,10 @@ xc430-w240:
     url: /dxl/x/2xl430-w250/#reference
     urlkr: /dxl/x/2xl430-w250/#참고자료
     children:
+      - title: "Certifications"
+        titlekr: "인증 획득"
+        url: /dxl/x/2xl430-w250/#certifications
+        urlkr: /dxl/x/2xl430-w250/#인증-획득
       - title: "Quick Start"
         titlekr: "퀵스타트"
         url: /dxl/x/2xl430-w250/#quick-start
@@ -5904,6 +5968,10 @@ xm430-w210:
     url: /dxl/x/xm430-w210/#reference
     urlkr: /dxl/x/xm430-w210/#참고자료
     children:
+      - title: "Certifications"
+        titlekr: "인증 획득"
+        url: /dxl/x/xm430-w210/#certifications
+        urlkr: /dxl/x/xm430-w210/#인증-획득
       - title: "Quick Start"
         titlekr: "퀵스타트"
         url: /dxl/x/xm430-w210/#quick-start
@@ -6136,6 +6204,10 @@ xm430-w350:
     url: /dxl/x/xm430-w350/#reference
     urlkr: /dxl/x/xm430-w350/#참고자료
     children:
+      - title: "Certifications"
+        titlekr: "인증 획득"
+        url: /dxl/x/xm430-w350/#certifications
+        urlkr: /dxl/x/xm430-w350/#인증-획득
       - title: "Quick Start"
         titlekr: "퀵스타트"
         url: /dxl/x/xm430-w350/#quick-start
@@ -6374,6 +6446,10 @@ xm540-w150:
     url: /dxl/x/xm540-w150/#reference
     urlkr: /dxl/x/xm540-w150/#참고자료
     children:
+      - title: "Certifications"
+        titlekr: "인증 획득"
+        url: /dxl/x/xm540-w150/#certifications
+        urlkr: /dxl/x/xm540-w150/#인증-획득
       - title: "Quick Start"
         titlekr: "퀵스타트"
         url: /dxl/x/xm540-w150/#quick-start
@@ -6612,6 +6688,10 @@ xm540-w270:
     url: /dxl/x/xm540-w270/#reference
     urlkr: /dxl/x/xm540-w270/#참고자료
     children:
+      - title: "Certifications"
+        titlekr: "인증 획득"
+        url: /dxl/x/xm540-w270/#certifications
+        urlkr: /dxl/x/xm540-w270/#인증-획득
       - title: "Quick Start"
         titlekr: "퀵스타트"
         url: /dxl/x/xm540-w270/#quick-start
@@ -6850,6 +6930,10 @@ xh540-w150:
     url: /dxl/x/xh540-w150/#reference
     urlkr: /dxl/x/xh540-w150/#참고자료
     children:
+      - title: "Certifications"
+        titlekr: "인증 획득"
+        url: /dxl/x/xh540-w150/#certifications
+        urlkr: /dxl/x/xh540-w150/#인증-획득
       - title: "Quick Start"
         titlekr: "퀵스타트"
         url: /dxl/x/xh540-w150/#quick-start
@@ -7088,6 +7172,10 @@ xh540-w270:
     url: /dxl/x/xh540-w270/#reference
     urlkr: /dxl/x/xh540-w270/#참고자료
     children:
+      - title: "Certifications"
+        titlekr: "인증 획득"
+        url: /dxl/x/xh540-w270/#certifications
+        urlkr: /dxl/x/xh540-w270/#인증-획득
       - title: "Quick Start"
         titlekr: "퀵스타트"
         url: /dxl/x/xh540-w270/#quick-start
@@ -7754,6 +7842,10 @@ h42-20-s300-r:
     url: /dxl/pro/h42-20-s300-r/#reference
     urlkr: /dxl/pro/h42-20-s300-r/#참고자료
     children:
+      - title: "Certifications"
+        titlekr: "인증 획득"
+        url: /dxl/pro/h42-20-s300-r/#certifications
+        urlkr: /dxl/pro/h42-20-s300-r/#인증-획득
       - title: "Connector Information"
         titlekr: "커넥터 정보"
         url: /dxl/pro/h42-20-s300-r/#connector-information
@@ -7977,6 +8069,10 @@ h42-20-s300-ra:
     url: /dxl/pro/h42-20-s300-ra/#reference
     urlkr: /dxl/pro/h42-20-s300-ra/#참고자료
     children:
+      - title: "Certifications"
+        titlekr: "인증 획득"
+        url: /dxl/pro/h42-20-s300-ra/#certifications
+        urlkr: /dxl/pro/h42-20-s300-ra/#인증-획득
       - title: "Connector Information"
         titlekr: "커넥터 정보"
         url: /dxl/pro/h42-20-s300-ra/#connector-information
@@ -8159,6 +8255,10 @@ h54-100-s500-r:
     url: /dxl/pro/h54-100-s500-r/#reference
     urlkr: /dxl/pro/h54-100-s500-r/#참고자료
     children:
+      - title: "Certifications"
+        titlekr: "인증 획득"
+        url: /dxl/pro/h54-100-s500-r/#certifications
+        urlkr: /dxl/pro/h54-100-s500-r/#인증-획득
       - title: "Connector Information"
         titlekr: "커넥터 정보"
         url: /dxl/pro/h54-100-s500-r/#connector-information
@@ -8382,6 +8482,10 @@ h54-100-s500-ra:
     url: /dxl/pro/h54-100-s500-ra/#reference
     urlkr: /dxl/pro/h54-100-s500-ra/#참고자료
     children:
+      - title: "Certifications"
+        titlekr: "인증 획득"
+        url: /dxl/pro/h54-100-s500-ra/#certifications
+        urlkr: /dxl/pro/h54-100-s500-ra/#인증-획득
       - title: "Connector Information"
         titlekr: "커넥터 정보"
         url: /dxl/pro/h54-100-s500-ra/#connector-information
@@ -8564,6 +8668,10 @@ h54-200-s500-r:
     url: /dxl/pro/h54-200-s500-r/#reference
     urlkr: /dxl/pro/h54-200-s500-r/#참고자료
     children:
+      - title: "Certifications"
+        titlekr: "인증 획득"
+        url: /dxl/pro/h54-200-s500-r/#certifications
+        urlkr: /dxl/pro/h54-200-s500-r/#인증-획득
       - title: "Connector Information"
         titlekr: "커넥터 정보"
         url: /dxl/pro/h54-200-s500-r/#connector-information
@@ -8787,6 +8895,10 @@ h54-200-s500-ra:
     url: /dxl/pro/h54-200-s500-ra/#reference
     urlkr: /dxl/pro/h54-200-s500-ra/#참고자료
     children:
+      - title: "Certifications"
+        titlekr: "인증 획득"
+        url: /dxl/pro/h54-200-s500-ra/#certifications
+        urlkr: /dxl/pro/h54-200-s500-ra/#인증-획득
       - title: "Connector Information"
         titlekr: "커넥터 정보"
         url: /dxl/pro/h54-200-s500-ra/#connector-information
@@ -8963,6 +9075,10 @@ l42-10-s300-r:
     url: /dxl/pro/l42-10-s300-r/#reference
     urlkr: /dxl/pro/l42-10-s300-r/#참고자료
     children:
+      - title: "Certifications"
+        titlekr: "인증 획득"
+        url: /dxl/pro/l42-10-s300-r/#certifications
+        urlkr: /dxl/pro/l42-10-s300-r/#인증-획득
       - title: "Connector Information"
         titlekr: "커넥터 정보"
         url: /dxl/pro/l42-10-s300-r/#connector-information
@@ -9145,6 +9261,10 @@ l54-30-s400-r:
     url: /dxl/pro/l54-30-s400-r/#reference
     urlkr: /dxl/pro/l54-30-s400-r/#참고자료
     children:
+      - title: "Certifications"
+        titlekr: "인증 획득"
+        url: /dxl/pro/l54-30-s400-r/#certifications
+        urlkr: /dxl/pro/l54-30-s400-r/#인증-획득
       - title: "Connector Information"
         titlekr: "커넥터 정보"
         url: /dxl/pro/l54-30-s400-r/#connector-information
@@ -9327,6 +9447,10 @@ l54-30-s500-r:
     url: /dxl/pro/l54-30-s500-r/#reference
     urlkr: /dxl/pro/l54-30-s500-r/#참고자료
     children:
+      - title: "Certifications"
+        titlekr: "인증 획득"
+        url: /dxl/pro/l54-30-s500-r/#certifications
+        urlkr: /dxl/pro/l54-30-s500-r/#인증-획득
       - title: "Connector Information"
         titlekr: "커넥터 정보"
         url: /dxl/pro/l54-30-s500-r/#connector-information
@@ -9509,6 +9633,10 @@ l54-50-s290-r:
     url: /dxl/pro/l54-50-s290-r/#reference
     urlkr: /dxl/pro/l54-50-s290-r/#참고자료
     children:
+      - title: "Certifications"
+        titlekr: "인증 획득"
+        url: /dxl/pro/l54-50-s290-r/#certifications
+        urlkr: /dxl/pro/l54-50-s290-r/#인증-획득
       - title: "Connector Information"
         titlekr: "커넥터 정보"
         url: /dxl/pro/l54-50-s290-r/#connector-information
@@ -9691,6 +9819,10 @@ l54-50-s500-r:
     url: /dxl/pro/l54-50-s500-r/#reference
     urlkr: /dxl/pro/l54-50-s500-r/#참고자료
     children:
+      - title: "Certifications"
+        titlekr: "인증 획득"
+        url: /dxl/pro/l54-50-s500-r/#certifications
+        urlkr: /dxl/pro/l54-50-s500-r/#인증-획득
       - title: "Connector Information"
         titlekr: "커넥터 정보"
         url: /dxl/pro/l54-50-s500-r/#connector-information
@@ -9873,6 +10005,10 @@ m42-10-s260-r:
     url: /dxl/pro/m42-10-s260-r/#reference
     urlkr: /dxl/pro/m42-10-s260-r/#참고자료
     children:
+      - title: "Certifications"
+        titlekr: "인증 획득"
+        url: /dxl/pro/m42-10-s260-r/#certifications
+        urlkr: /dxl/pro/m42-10-s260-r/#인증-획득
       - title: "Connector Information"
         titlekr: "커넥터 정보"
         url: /dxl/pro/m42-10-s260-r/#connector-information
@@ -10096,6 +10232,10 @@ m42-10-s260-ra:
     url: /dxl/pro/m42-10-s260-ra/#reference
     urlkr: /dxl/pro/m42-10-s260-ra/#참고자료
     children:
+      - title: "Certifications"
+        titlekr: "인증 획득"
+        url: /dxl/pro/m42-10-s260-ra/#certifications
+        urlkr: /dxl/pro/m42-10-s260-ra/#인증-획득
       - title: "Connector Information"
         titlekr: "커넥터 정보"
         url: /dxl/pro/m42-10-s260-ra/#connector-information
@@ -10278,6 +10418,10 @@ m54-40-s250-r:
     url: /dxl/pro/m54-40-s250-r/#reference
     urlkr: /dxl/pro/m54-40-s250-r/#참고자료
     children:
+      - title: "Certifications"
+        titlekr: "인증 획득"
+        url: /dxl/pro/m54-40-s250-r/#certifications
+        urlkr: /dxl/pro/m54-40-s250-r/#인증-획득
       - title: "Connector Information"
         titlekr: "커넥터 정보"
         url: /dxl/pro/m54-40-s250-r/#connector-information
@@ -10501,6 +10645,10 @@ m54-40-s250-ra:
     url: /dxl/pro/m54-40-s250-ra/#reference
     urlkr: /dxl/pro/m54-40-s250-ra/#참고자료
     children:
+      - title: "Certifications"
+        titlekr: "인증 획득"
+        url: /dxl/pro/m54-40-s250-ra/#certifications
+        urlkr: /dxl/pro/m54-40-s250-ra/#인증-획득
       - title: "Connector Information"
         titlekr: "커넥터 정보"
         url: /dxl/pro/m54-40-s250-ra/#connector-information
@@ -10683,6 +10831,10 @@ m54-60-s250-r:
     url: /dxl/pro/m54-60-s250-r/#reference
     urlkr: /dxl/pro/m54-60-s250-r/#참고자료
     children:
+      - title: "Certifications"
+        titlekr: "인증 획득"
+        url: /dxl/pro/m54-60-s250-r/#certifications
+        urlkr: /dxl/pro/m54-60-s250-r/#인증-획득
       - title: "Connector Information"
         titlekr: "커넥터 정보"
         url: /dxl/pro/m54-60-s250-r/#connector-information
@@ -10906,6 +11058,10 @@ m54-60-s250-ra:
     url: /dxl/pro/m54-60-s250-ra/#reference
     urlkr: /dxl/pro/m54-60-s250-ra/#참고자료
     children:
+      - title: "Certifications"
+        titlekr: "인증 획득"
+        url: /dxl/pro/m54-60-s250-ra/#certifications
+        urlkr: /dxl/pro/m54-60-s250-ra/#인증-획득
       - title: "Connector Information"
         titlekr: "커넥터 정보"
         url: /dxl/pro/m54-60-s250-ra/#connector-information
@@ -11120,6 +11276,10 @@ h54p-200-s500-r:
   url: /dxl/pro_plus/h54p-200-s500-r/#reference
   urlkr: /dxl/pro_plus/h54p-200-s500-r/#참고자료
   children:
+    - title: "Certifications"
+      titlekr: "인증 획득"
+      url: /dxl/pro_plus/h54p-200-s500-r/#certifications
+      urlkr: /dxl/pro_plus/h54p-200-s500-r/#인증-획득
     - title: "Connector Information"
       titlekr: "커넥터 정보"
       url: /dxl/pro_plus/h54p-200-s500-r/#connector-information
@@ -11334,6 +11494,10 @@ h54p-100-s500-r:
   url: /dxl/pro_plus/h54p-100-s500-r/#reference
   urlkr: /dxl/pro_plus/h54p-100-s500-r/#참고자료
   children:
+    - title: "Certifications"
+      titlekr: "인증 획득"
+      url: /dxl/pro_plus/h54p-100-s500-r/#certifications
+      urlkr: /dxl/pro_plus/h54p-100-s500-r/#인증-획득
     - title: "Connector Information"
       titlekr: "커넥터 정보"
       url: /dxl/pro_plus/h54p-100-s500-r/#connector-information
@@ -11548,6 +11712,10 @@ h42p-020-s300-r:
   url: /dxl/pro_plus/h42p-020-s300-r/#reference
   urlkr: /dxl/pro_plus/h42p-020-s300-r/#참고자료
   children:
+    - title: "Certifications"
+      titlekr: "인증 획득"
+      url: /dxl/pro_plus/h42p-020-s300-r/#certifications
+      urlkr: /dxl/pro_plus/h42p-020-s300-r/#인증-획득
     - title: "Connector Information"
       titlekr: "커넥터 정보"
       url: /dxl/pro_plus/h42p-020-s300-r/#connector-information
@@ -11762,6 +11930,10 @@ m42p-010-s260-r:
   url: /dxl/pro_plus/m42p-010-s260-r/#reference
   urlkr: /dxl/pro_plus/m42p-010-s260-r/#참고자료
   children:
+    - title: "Certifications"
+      titlekr: "인증 획득"
+      url: /dxl/pro_plus/m42p-010-s260-r/#certifications
+      urlkr: /dxl/pro_plus/m42p-010-s260-r/#인증-획득
     - title: "Connector Information"
       titlekr: "커넥터 정보"
       url: /dxl/pro_plus/m42p-010-s260-r/#connector-information
@@ -11976,6 +12148,10 @@ m54p-040-s250-r:
   url: /dxl/pro_plus/m54p-040-s250-r/#reference
   urlkr: /dxl/pro_plus/m54p-040-s250-r/#참고자료
   children:
+    - title: "Certifications"
+      titlekr: "인증 획득"
+      url: /dxl/pro_plus/m54p-040-s250-r/#certifications
+      urlkr: /dxl/pro_plus/m54p-040-s250-r/#인증-획득
     - title: "Connector Information"
       titlekr: "커넥터 정보"
       url: /dxl/pro_plus/m54p-040-s250-r/#connector-information
@@ -12190,6 +12366,10 @@ m54p-060-s250-r:
   url: /dxl/pro_plus/m54p-060-s250-r/#reference
   urlkr: /dxl/pro_plus/m54p-060-s250-r/#참고자료
   children:
+    - title: "Certifications"
+      titlekr: "인증 획득"
+      url: /dxl/pro_plus/m54p-060-s250-r/#certifications
+      urlkr: /dxl/pro_plus/m54p-060-s250-r/#인증-획득
     - title: "Connector Information"
       titlekr: "커넥터 정보"
       url: /dxl/pro_plus/m54p-060-s250-r/#connector-information

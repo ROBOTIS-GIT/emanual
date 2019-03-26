@@ -31,7 +31,7 @@ product_group: dxl_ax
 | Input Voltage          | 9.0 ~ 12.0V (**Recommended : 11.1V**)                                       |
 | Command Signal         | Digital Packet                                                              |
 | Protocol Type          | Half Duplex Asynchronous Serial Communication<br />(8bit, 1stop, No Parity) |
-| Physical Connection    | TTL Level Multi Drop Bus                        |
+| Physical Connection    | TTL Level Multi Drop Bus                                                    |
 | ID                     | 0 ~ 253                                                                     |
 | Feedback               | Position, Temperature, Load, Input Voltage, etc                             |
 | Material               | Engineering Plastic                                                         |
@@ -208,6 +208,12 @@ product_group: dxl_ax
 [Compatibility Guide]{: .blank}  
 [Harness Compatibility]{: .popup}
 {: .notice}
+
+## [Certifications](#certifications)
+Please inquire us for information regarding unlisted certifications.
+
+### [FCC](#fcc)
+{% include en/dxl/fcc_class_a.md %}
 
 ## [Connector Information](#connector-information)
 
