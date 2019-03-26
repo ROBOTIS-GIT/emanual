@@ -451,8 +451,8 @@ main:
       url: /software/arduino_ide/
     - title: "ROBOTIS Framework Packages"
       url: /software/robotis_framework_packages/
-    - title: "robotis manipulator library"
-      titlekr: "robotis manipulator library"
+    - title: "ROBOTIS Manipulator library"
+      titlekr: "ROBOTIS Manipulator library"
       url: /software/robotis_manipulator_libs/
   - title: "PARTS"
     titlekr: "부품"
@@ -603,6 +603,18 @@ main:
       - title: "DYNAMIXEL"
         titlekr: "다이나믹셀"
         url: /faq/faq_dynamixel/
+      - title: "PLATFORM"
+        titlekr: "플랫폼"
+        url: /faq/faq_platform/
+      - title: "STEAM"
+        titlekr: "교육키트"
+        url: /faq/faq_steam/
+      - title: "SOFTWARE"
+        titlekr: "소프트웨어"
+        url: /faq/faq_software/
+      - title: "PARTS"
+        titlekr: "부품"
+        url: /faq/faq_parts/
       - title: "General"
         titlekr: "자주 묻는 질문"
         url: /faq/
@@ -20631,6 +20643,12 @@ u2d2:
 #FAQ sidebar
 faq:
 
+#FAQ Platform
+faq_platform:
+  - title: "OP Series"
+    url: /faq/faq_platform/#op-series
+  - title: "Manipulator"
+    url: /faq/faq_platform/#manipulator
 
 contents-guide:
   - title: "Contents Guide"
