@@ -3,13 +3,13 @@ layout: archive
 lang: en
 ref: openmanipulator_pro_ros_operation
 read_time: true
-share: true
+share: false
 author_profile: false
 permalink: /docs/en/platform/openmanipulator_pro/ros_operation/
 sidebar:
   title: OpenManipulator-PRO
   nav: "openmanipulator_pro"
-  
+
 ---
 
 <div style="counter-reset: h1 5"></div>

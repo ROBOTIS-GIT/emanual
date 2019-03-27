@@ -3,7 +3,7 @@ layout: archive
 lang: en
 ref: openopenmanipulator_pro_getting_started
 read_time: true
-share: true
+share: false
 author_profile: false
 permalink: /docs/en/platform/openmanipulator_pro/getting_started/
 sidebar:
@@ -61,23 +61,23 @@ Information appearing in a CAUTION concerns the protection of personnel and equi
 <div class="notice--warning">{{ manipulator_caution_01 | markdownify }}</div>
 
 ## [Package Contents](#package-contents)
- 
-| Item                            | Quantity | 
-|:-------------------------------:|:---:| 
-| OpenManipulator-PRO RM-P60-RNH      | 1 | 
-| Manipulator Case                | 1 | 
-| U2D2                            | 1 | 
-| Extra cable set(4P, 2P)         | 1 | 
-| 4P Ext Hub                      | 2 | 
-| Screw set (WB M2.5 and others)  | 1 | 
+
+| Item                            | Quantity |
+|:-------------------------------:|:---:|
+| OpenManipulator-PRO RM-P60-RNH      | 1 |
+| Manipulator Case                | 1 |
+| U2D2                            | 1 |
+| Extra cable set(4P, 2P)         | 1 |
+| 4P Ext Hub                      | 2 |
+| Screw set (WB M2.5 and others)  | 1 |
 
 ### Optional Parts
- 
-| Item                            | Quantity | 
-|:-------------------------------:|:---:| 
-| [Gripper](/docs/en/platform/rh_p12_rna/)           | 1 | 
+
+| Item                            | Quantity |
+|:-------------------------------:|:---:|
+| [Gripper](/docs/en/platform/rh_p12_rna/)           | 1 |
 | [Base Plate Frame](http://www.robotis-shop-en.com/?act=shop_en.goods_view&GS=2538&GC=GD070002)| 1 |  
-     
+
 ## [Setup](#setup)
 
 ### Wiring

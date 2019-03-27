@@ -3,7 +3,7 @@ layout: archive
 lang: en
 ref: openmanipulator_pro_ros_manipulator_manager
 read_time: true
-share: true
+share: false
 author_profile: false
 permalink: /docs/en/platform/openmanipulator_pro/ros_manipulator_manager/
 sidebar:
@@ -32,7 +32,7 @@ $ sudo bash
 [sudo] password for robotis:   
 # roslaunch manipulator_h_manager open_manipulator_pro_manager.launch   
 ```
-If you have a gripper([RH-P12-RN(A)](/docs/en/platform/rh_p12_rna/)), see below. 
+If you have a gripper([RH-P12-RN(A)](/docs/en/platform/rh_p12_rna/)), see below.
 
 ```
 $ sudo bash
@@ -66,27 +66,27 @@ ROS_MASTER_URI=http://localhost:11311
 process[manipulator_h_manager-1]: started with pid [19408]
 [ INFO] [1552279834.24ro20783]: manager->init
 /dev/ttyUSB0 added. (baudrate: 1000000)
-(/dev/ttyUSB0) [ID:  1] H54P-200-S500-R added. 
-(/dev/ttyUSB0) [ID:  2] H54P-200-S500-R added. 
-(/dev/ttyUSB0) [ID:  3] H54P-100-S500-R added. 
-(/dev/ttyUSB0) [ID:  4] H54P-100-S500-R added. 
-(/dev/ttyUSB0) [ID:  5] H42P-020-S300-R added. 
-(/dev/ttyUSB0) [ID:  6] H42P-020-S300-R added. 
+(/dev/ttyUSB0) [ID:  1] H54P-200-S500-R added.
+(/dev/ttyUSB0) [ID:  2] H54P-200-S500-R added.
+(/dev/ttyUSB0) [ID:  3] H54P-100-S500-R added.
+(/dev/ttyUSB0) [ID:  4] H54P-100-S500-R added.
+(/dev/ttyUSB0) [ID:  5] H42P-020-S300-R added.
+(/dev/ttyUSB0) [ID:  6] H42P-020-S300-R added.
 [ INFO] [1552279834.361381084]: Load offsets...
 ```
 
 ## [Check Setting](#check-setting)
 ### [RViz](#rviz)
 ```
-$ roslaunch manipulator_h_bringup open_manipulator_pro.launch 
+$ roslaunch manipulator_h_bringup open_manipulator_pro.launch
 ```
 
-If you have a gripper([RH-P12-RN(A)](/docs/en/platform/rh_p12_rna/)), see below. 
+If you have a gripper([RH-P12-RN(A)](/docs/en/platform/rh_p12_rna/)), see below.
 ```
 $ roslaunch manipulator_h_bringup open_manipulator_pro.launch with_gripper:=true
 ```
 ![](/assets/images/platform/openmanipulator_pro/rviz.png)
-  
+
 ## [Message List](#message-list)
 ### [Topic](#topic)
 

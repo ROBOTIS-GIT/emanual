@@ -3,7 +3,7 @@ layout: archive
 lang: en
 ref: openmanipulator_pro_specification
 read_time: true
-share: true
+share: false
 author_profile: false
 permalink: /docs/en/platform/openmanipulator_pro/specification/
 sidebar:
@@ -38,7 +38,7 @@ sidebar:
 ## [Dimension](#dimension)
 ![](/assets/images/platform/openmanipulator_pro/dimension.png)
 
-If you have a gripper([RH-P12-RN(A)](/docs/en/platform/rh_p12_rna/)), see below. 
+If you have a gripper([RH-P12-RN(A)](/docs/en/platform/rh_p12_rna/)), see below.
 ![](/assets/images/platform/openmanipulator_pro/dimension_with_gripper.png)
 
 
@@ -159,9 +159,3 @@ Total Mass : 5,551g
   - I1 : 1.9687159e+05
   - I2 : 4.0070622e+05
   - I3 : 4.7548066e+05
-
-
-
-
-
-
