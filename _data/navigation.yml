@@ -20650,6 +20650,21 @@ faq_platform:
   - title: "Manipulator"
     url: /faq/faq_platform/#manipulator
 
+#STEAM sidebar
+faq_steam:
+  - title: "PLAY"
+    url: /faq/faq_steam/#play
+  - title: "DREAM"
+    url: /faq/faq_steam/#dream
+  - title: "MINI"
+    url: /faq/faq_steam/#mini
+  - title: "STEM"
+    url: /faq/faq_steam/#stem
+  - title: "GP"
+    url: /faq/faq_steam/#gp
+  - title: "Premium"
+    url: /faq/faq_steam/#premium
+
 contents-guide:
   - title: "Contents Guide"
     titlekr: "컨텐츠 작성방법"
