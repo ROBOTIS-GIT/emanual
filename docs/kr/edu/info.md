@@ -30,7 +30,6 @@ sidebar:
 - [제어기(OpenCM7.0 B-Type)]
 - [감속 모터]
 - [서보 모터]
-- [LED 모듈]
 - [적외선 센서]
 - [컬러 센서]
 
@@ -206,7 +205,6 @@ sidebar:
 [제어기(OpenCM7.0 B-Type)]: /docs/kr/parts/controller/opencm7/
 [감속 모터]: /docs/kr/parts/motor/gm-10a/
 [서보 모터]: /docs/kr/parts/motor/servo_motor/
-[LED 모듈]: /docs/kr/parts/display/lm-10/
 [적외선 센서]: /docs/kr/parts/sensor/irss-10/
 [컬러 센서]: /docs/kr/parts/sensor/cs-10/
 
@@ -215,13 +213,13 @@ sidebar:
 [조립서_경찰]: http://www.robotis.com/service/download.php?no=1722
 [조립서_스쿠터]: http://www.robotis.com/service/download.php?no=1723
 [조립서_분리수거]: http://www.robotis.com/service/download.php?no=1724
-[조립서_청소]:
+[조립서_청소]: http://www.robotis.com/service/download.php?no=1730
 [조립서_룰렛]: http://www.robotis.com/service/download.php?no=1725
 [조립서_자동문]: http://www.robotis.com/service/download.php?no=1726
 [조립서_투석기]: http://www.robotis.com/service/download.php?no=1727
 [조립서_곤충]: http://www.robotis.com/service/download.php?no=1728
 [조립서_집게]: http://www.robotis.com/service/download.php?no=1729
-[조립서_안내]:
+[조립서_안내]: http://www.robotis.com/service/download.php?no=1731
 
 [01_inforobot_Fan_Basic_kr]: http://www.robotis.com/service/download.php?no=1677
 [02_inforobot_Fan_Advance_kr]: http://www.robotis.com/service/download.php?no=1678
