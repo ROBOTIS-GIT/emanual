@@ -3,7 +3,7 @@ layout: archive
 lang: en
 ref: openmanipulator_pro_ros_setup
 read_time: true
-share: true
+share: false
 author_profile: false
 permalink: /docs/en/platform/openmanipulator_pro/ros_setup/
 sidebar:
@@ -68,5 +68,3 @@ $ cd ~/catkin_ws && catkin_make
 ```
 
 If the catkin_make command has been completed without any errors, all the preparations for using OpenManipulator-PRO are done.
-
-
