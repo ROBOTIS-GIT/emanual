@@ -404,4 +404,10 @@ This value indicates present internal Temperature. For more details, please refe
 `Download` [RH-P12-RN(PDF).zip](http://www.robotis.com/service/download.php?no=740)  
 `Download` [RH-P12-RN(STP).zip](http://www.robotis.com/service/download.php?no=741)
 
+## [Certifications](#certifications)
+Please inquire us for information regarding unlisted certifications.
+
+### [FCC](#fcc)
+{% include en/dxl/fcc_class_b.md %}
+
 {% include en/dxl/common_link.md %}

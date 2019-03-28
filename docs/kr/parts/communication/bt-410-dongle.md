@@ -218,6 +218,11 @@ BT-410 동글 드라이버가 PC에 바르게 설치되었는지 확인하는 �
 
     ![img](/assets/images/parts/interface/ln101_08_kr.png)
 
+# [참고자료](#참고자료)
+
+## [인증 획득](#인증-획득)
+표기되지 않은 인증에 대해서는 별도 문의하시기 바랍니다.
+- KCC, FCC, CE
 
 [R+ Scratch]: /docs/kr/software/rplus2/scratch/
 [CM-150]: /doc/kr/parts/controller/cm-150

@@ -238,4 +238,10 @@ $ git clone https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver.git
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/7wKyW6yLNSg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
+### [Certifications](#certifications)
+Please inquire us for information regarding unlisted certifications.
+
+#### [FCC](#fcc)
+{% include en/dxl/fcc_class_b.md %}
+
 [USB2LDS]: /docs/en/platform/turtlebot3/appendix_lds_01/#user-guide-for-embedded-board

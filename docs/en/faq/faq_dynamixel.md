@@ -21,10 +21,10 @@ sidebar:
 The structure of the instruction and status packet are different.  
 Please refer to [Protocol 1.0] and [Protocol 2.0] description pages.
 
-# Which DYNAMIXEL uses Protocol 1.0? 
+# Which DYNAMIXEL uses Protocol 1.0?
 [DX], [AX], [RX], [EX] series and [MX] series with Protocol 1.0 firmware.
 
-# Which DYNAMIXEL uses Protocol 2.0? 
+# Which DYNAMIXEL uses Protocol 2.0?
 [DYNAMIXEL X], [DYNAMIXEL Pro], [DYNAMIXEL Pro+] series and some [MX] series(MX-28/64/106) with Protocol 2.0 firmware.
 
 # What kind of connector and cable does DYNAMIXEL use?
@@ -34,7 +34,7 @@ Please refer to Connector Information section of each DYNAMIXEL manual page.
 1. [U2D2]  
   U2D2 is the most widely used and recommended interface to connect DYNAMIXEL and PC.
 2. [USB2Dynamixel]  
-  Check QC number. If it's in the range of 1412-1502 there may be an FTDI issue. Try [manual installation] or return the product for replacement. 
+  Check QC number. If it's in the range of 1412-1502 there may be an FTDI issue. Try [manual installation] or return the product for replacement.
 2. ROBOTIS controllers  
   You can use [OpenCM9.04], [OpenCM9.04] + [OpenCM 485 EXP], [CM-530], [CM-700], and [OpenCR1.0].
 3. Other controllers  
