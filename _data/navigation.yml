@@ -615,7 +615,7 @@ main:
       - title: "PARTS"
         titlekr: "부품"
         url: /faq/faq_parts/
-      - title: "General"
+      - title: "GENERAL"
         titlekr: "자주 묻는 질문"
         url: /faq/
 
@@ -20652,18 +20652,23 @@ faq_platform:
 
 #STEAM sidebar
 faq_steam:
+  - title: "OLLO"
+    url: /faq/faq_steam/#ollo
   - title: "PLAY"
     url: /faq/faq_steam/#play
   - title: "DREAM"
     url: /faq/faq_steam/#dream
   - title: "MINI"
     url: /faq/faq_steam/#mini
-  - title: "STEM"
-    url: /faq/faq_steam/#stem
   - title: "GP"
     url: /faq/faq_steam/#gp
-  - title: "Premium"
+  - title: "STEM"
+    url: /faq/faq_steam/#stem
+  - title: "PREMIUM"
     url: /faq/faq_steam/#premium
+  - title: "BIOLOID Beginner/Comprehensive"
+    url: /faq/faq_steam/#bioloid-beginnercomprehensive
+
 
 contents-guide:
   - title: "Contents Guide"

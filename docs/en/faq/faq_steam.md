@@ -13,395 +13,425 @@ sidebar:
 
 # [OLLO](#ollo)
 
-## **Frequently Asked Questions for ROBOTIS OLLO**
+## **I want to know how to download the program.**
+- Please refer to [the page](http://emanual.robotis.com/docs/en/faq/download_task_code/)
 
-1. **[I want to know how to download the program.](http://emanual.robotis.com/docs/en/faq/download_task_code/)**  
+## **How can I set the IR channel for wireless control?**
+- Please refer to [the page](http://emanual.robotis.com/docs/en/parts/communication/rc-100/)    
 
+## **How can I do the Zigbee wireless control?**  
+- Please refer to [the page](http://emanual.robotis.com/docs/en/parts/communication/zig-110/)
 
-2. **[How can I set the IR channel for wireless control?](http://emanual.robotis.com/docs/en/parts/communication/rc-100/)**    
+## **I want to learn the programming.**  
+- Please refer to [the page](http://emanual.robotis.com/docs/en/edu/ollo/bugkit/#print-on-the-screen)
 
-3. **[How can I do the Zigbee wireless control?](http://emanual.robotis.com/docs/en/parts/communication/zig-110/)**  
-
-4. **[I want to learn the programming.](http://emanual.robotis.com/docs/en/edu/ollo/bugkit/#print-on-the-screen)**  
 
 # [PLAY](#play)  
 
-## **Frequently Asked Questions for ROBOTIS PLAY**  
-
-1. **Motor does not work?**  
-    -  Please check assembly and make sure that nothing is blocking the motor.  
+## **Motor does not work?**  
+  -  Please check assembly and make sure that nothing is blocking the motor.  
     Sometimes, a spindle or other piece blocks the motor and it may seem like the motor is not working.  
-    Recommend R+ Design 2.0([Windows](http://en.robotis.com/service/download.php?no=11) / [Android](https://play.google.com/store/apps/details?id=com.robotis.mdesign&hl=en)/ [iOS]{: .blank}) for interactive assembly.  
+    - **R+ Design 2.0**([Windows](http://en.robotis.com/service/download.php?no=11) / [Android](https://play.google.com/store/apps/details?id=com.robotis.mdesign&hl=en)/ [iOS]{: .blank}) is recommended for interactive assembly.  
 
+## **Faulty power switch on the CM-20**   
+  - CM-20 is broken. Please replace the broken **CM-20** with a new controller.  
 
-2. **Faulty power switch on the CM-20**   
-    - CM-20 is broken. Please replace the broken CM-20 with a new controller.  
+## **Battery case is difficult to open on CM-20**  
+  - Apply firm and evenly distributed pressure near the center of the battery cover and press outward in the direction that the arrows are pointing.  
 
-3. **Battery case is difficult to open on CM-20**  
-    - Apply firm and evenly distributed pressure near the center of the battery cover and press outward in the direction that the arrows are pointing.  
+## **How to use rivets and rivet tool?**
+  - Please refer to [here](http://emanual.robotis.com/docs/en/software/rplus2/design/#connect-parts)
 
-4. **How to use rivets and rivet tool?**
-    - click to [here](http://emanual.robotis.com/docs/en/software/rplus2/design/#connect-parts)
 
 # [DREAM](#dream)  
 
-## **Frequently Asked Questions for ROBOTIS DREAM**
-
-1. **What is the difference between Sets and Levels?**  
-    - Set A combines Level 1 and 2 while Set B combines Level 3 and 4.
-    Set A and B include assembly manuals for (4) robots each. You will need R+Design 2.0 to build all example robots.
+## **What is the difference between Sets and Levels?**  
+  - Set A combines Level 1 and 2 while Set B combines Level 3 and 4.
+    Set A and B include assembly manuals for (4) robots each. You will need **R+Design 2.0** to build all example robots.
     Additionally, sets do not contain workbooks so these must be purchased separately. [Workbook purchase link](http://www.robotis.us/books/)
     Level 1 is the base kit and Level 2, 3 and 4 are expansion kits.
     The previous kit(s) are needed as you progress up a level.
 
-2. **Can I purchase specific parts separately?**  
-    - Not all parts is sold separately. (Link){: .blank}  
+## **Can I purchase specific parts separately?**  
+  - Not all parts is sold separately. (Link){: .blank}  
 
-3. **Where can I download example programs?**  
-    - Example programs can be found in [e-manual](http://emanual.robotis.com/docs/en/edu/dream/#dream) or R+Task 2.0([Windows](http://en.robotis.com/service/download.php?no=1) / [Android](https://play.google.com/store/apps/details?id=com.robotis.task2&hl=en) + [BT-210]{: .blank} or [BT-410]{: .blank} / [iOS]{: .blank} + [BT-410]{: .blank}).  
+## **Where can I download example programs?**  
+  - Example programs can be found in [e-manual](http://emanual.robotis.com/docs/en/edu/dream/#dream) or **R+Task 2.0**([Windows](http://en.robotis.com/service/download.php?no=1) / [Android](https://play.google.com/store/apps/details?id=com.robotis.task2&hl=en) + [BT-210]{: .blank} or [BT-410]{: .blank} / [iOS]{: .blank} + [BT-410]{: .blank}).  
 
-4. **How can I program my DREAM?**  
-    - You can use [RoboPlus]{: .blank} Task or R+Task 2.0([Windows](http://en.robotis.com/service/download.php?no=1) / [Android](https://play.google.com/store/apps/details?id=com.robotis.task2&hl=en) / [iOS]{: .blank}). It is recommended to use R+Task 2.0 because you can also directly download the examples within the software instead of visiting [e-manual](http://emanual.robotis.com/docs/en/edu/dream/#dream) for examples.  
+## **How can I program my DREAM?**  
+  - You can use [RoboPlus]{: .blank} Task or **R+Task 2.0**([Windows](http://en.robotis.com/service/download.php?no=1) / [Android](https://play.google.com/store/apps/details?id=com.robotis.task2&hl=en) / [iOS]{: .blank}). It is recommended to use **R+Task 2.0** because you can also directly download the examples within the software instead of visiting [e-manual](http://emanual.robotis.com/docs/en/edu/dream/#dream) for examples.  
 
-5. **How can I update or recover CM-150 firmware?**  
-    - You can use [R+Manager 2.0]{: .blank} with micro USB or BT-210.  
+## **How can I update or recover CM-150 firmware?**  
+  - You can use **[R+Manager 2.0]**{: .blank} with micro USB or BT-210.  
 
-6. **It is difficult to assemble the robot.**  
-    - It is recommended to use R+ Design 2.0([Windows](http://en.robotis.com/service/download.php?no=11) / [Android](https://play.google.com/store/apps/details?id=com.robotis.mdesign&hl=en) + [BT-210]{: .blank} or [BT-410]{: .blank} / [iOS]{: .blank} + [BT-410]{: .blank}) for interactive assembly.  
+## **It is difficult to assemble the robot.**  
+  - It is recommended to use **R+ Design 2.0**([Windows](http://en.robotis.com/service/download.php?no=11) / [Android](https://play.google.com/store/apps/details?id=com.robotis.mdesign&hl=en) + [BT-210]{: .blank} or [BT-410]{: .blank} / [iOS]{: .blank} + [BT-410]{: .blank}) for interactive assembly.  
 
 
 
-## [MINI](#mini)  
+# [MINI](#mini)  
 
-## **Frequently Asked Questions for ROBOTIS MINI**  
+## **Servos flashing red or making a grinding noise or robot twisting into weird initial position.**   
+  - There might be an assembly issue. Please watch the reference [video]{: .blank} and [ID map]{: .blank}.  
+  - Check that cables are properly inserted and make sure that no cable is stuck or impeding a servo's motion.  
+  - Check if all 16 servos are recognized in [R+Motion 2.0]{: .blank} or [R+Manager 2.0]{: .blank}. If not, please recover XL320 firmware in R+Manager 2.0. You can use [LN-101]{: .blank} or [BT-210]{: .blank} for recovery.  
+  - Recover OpenCM9.04 firmware in [R+Manager 2.0]{: .blank}. You can use micro USB or [BT-210]{: .blank} for recovery. [(OpenCM9.04 firmware update)](http://emanual.robotis.com/docs/en/edu/mini/#firmware-update)
 
-1. **Servos flashing red or making a grinding noise or robot twisting into weird initial position.**   
-    - There might be an assembly issue. Please watch the reference [video]{: .blank} and [ID map]{: .blank}.  
-    - Check that cables are properly inserted and make sure that no cable is stuck or impeding a servo's motion.  
-    - Check if all 16 servos are recognized in [R+Motion 2.0]{: .blank} or [R+Manager 2.0]{: .blank}. If not, please recover XL320 firmware in R+Manager 2.0. You can use [LN-101]{: .blank} or [BT-210]{: .blank} for recovery.  
-    - Recover OpenCM9.04 firmware in [R+Manager 2.0]{: .blank}. You can use micro USB or [BT-210]{: .blank} for recovery. [(OpenCM9.04 firmware update)](http://emanual.robotis.com/docs/en/edu/mini/#firmware-update)
+## **How can I test XL320 control table?**  
+  - You can use [R+Manager 2.0]{: .blank} with [LN-101]{: .blank} or [BT-210]{: .blank}. [Testing DXL control table]{: .blank}  
 
-2. **How can I test XL320 control table?**  
-    - You can use [R+Manager 2.0]{: .blank} with [LN-101]{: .blank} or [BT-210]{: .blank}. (Testing DXL control table){: .blank}  
-3. **How can I test OpenCM9.04 control table?**
-    - You can use [R+Manager 2.0]{: .blank} with [LN-101]{: .blank}  or [BT-210]{: .blank}. (Testing controller control table){: .blank}
-4. **Robot does not power on.**  
-    - Check that cables are properly and fully inserted into the battery boxes.
-5. **Can I purchase specific parts separately?**  
-    - Not all parts is sold separately.
-6. **Where can I find CAD files(STP)?**  
-    - CAD files can be downloaded from this [link](http://emanual.robotis.com/docs/en/edu/mini/#download)
-7. **Where can I find 3D printable files(STL)?**  
-    - 3D printable files can be downloaded from this [link](http://emanual.robotis.com/docs/en/edu/mini/#download)
-8. **Where can I download example programs?**  
-    - Example programs can be downloaded from [e-Manual]{: .blank} or R+Task 2.0([Windows](http://en.robotis.com/service/download.php?no=1) / [Android]{: .blank} + [BT-210]{: .blank} or [BT-410]{: .blank}) or R+Motion 2.0([Windows](http://www.robotis.com/sub/page_routing.php?key=1) / [OS X](http://www.robotis.com/sub/page_routing.php?key=1) / [Android]{: .blank} + [BT-210]{: .blank} or [BT-410]{: .blank} / [iOS]{: .blank} + [BT-410]{: .blank})
-9. **How can I download programs to the robot?**  
-    - Please use [LN-101]{: .blank} or [BT-210]{: .blank} to download programs to the robot.
-10. **How can I program my MINI?**  
-    - Please use [OpenCM IDE]{: .blank} in order to program the ROBOTIS-MINI.
-    - Please note that if you use the [OpenCM IDE]{: .blank}, you will **delete the RoboPlus firmware that is on the OpenCM9.04**. Therefore, you will need to recover the OpenCM9.04's firmware in order to use your robot with RoboPlus again.
-    It is recommended to use **R+Task 2.0**([Windows](http://en.robotis.com/service/download.php?no=1) / [Android](https://play.google.com/store/apps/details?id=com.robotis.task2&hl=en) + [BT-210]{: .blank} or [BT-410]{: .blank}) because you can also directly download the examples within the software instead of visiting [e-Manaul](http://emanual.robotis.com/docs/en/edu/mini/) for examples.
+## **How can I test OpenCM9.04 control table?**
+  - You can use [R+Manager 2.0]{: .blank} with [LN-101]{: .blank} or [BT-210]{: .blank}. [Testing controller control table]{: .blank}
 
-11. **How can I control MINI with ROBOTIS MINI app?**  
-    1. Please download ROBOTIS MINI app. ([Android](https://play.google.com/store/apps/details?id=com.robotis.darwinmini) + [BT-210]{: .blank} or [BT-410]{: .blank} / [iOS]{: .blank} + [BT-410]{: .blank})
-    2. Pair BT-210 to PC. Default pin is 0000. ([Link](http://emanual.robotis.com/docs/en/edu/mini/#operating-mini))
-    3. [Download example programs](http://emanual.robotis.com/docs/en/edu/mini/#download) with [LN-101]{: .blank} or [BT-210]({: .blank}).
-    4. Run ROBOTIS MINI app. [Here](http://emanual.robotis.com/docs/en/edu/mini/#operating-mini) is the operation manual for mini_app.
-    5. Pair BT-210 to smart device. Default pin is 0000. Enter the last 2 alphanumeric digits on BT-210 to detect robot.
-12. **How can I use ROBOTIS MINI features?**  
-    - [Here](http://emanual.robotis.com/docs/en/edu/mini/#operating-mini) is the operation manual for mini_app.
-13. **How can I control MINI with iOS?**  
-    - The ROBOTIS MINI comes with the [BT-210]{: .blank}. [BT-410]{: .blank} is required to connect with iOS devices.
-14. **What is the difference between BT-210 and BT-410?**  
-    - [BT-210]{: .blank} supports Android devices with Bluetooth 2.1 or higher and it can be paired with your PC.
-     [BT-410]{: .blank} supports Android and iOS devices with Bluetooth 4.0 Low Energy(BLE) but it cannot be paired with your PC.  
+## **Robot does not power on.**  
+  - Check that cables are properly and fully inserted into the battery boxes.  
 
-15. **I'd like to add a head servo.**  
-    - Please watch the reference video. [(Link)](https://www.youtube.com/watch?v=rVBDah3DjDQ&index=9&list=PLtix7rPAJwqzgBn5dR1KICUAPIvB0h3uZ)  
-16. **Are sensors sold with the MINI?**  
-    - The sensors are sold separately.
-17. **How can I assemble sensors? How to insert sensors?**  
-    - Please refer to this webpages. ([Assembly link](http://emanual.robotis.com/docs/en/edu/mini/#customize), [OpenCM9.04](http://emanual.robotis.com/docs/en/parts/controller/opencm904/))[
-18. **Where can I find sensor informations?**  
-    - Please refer to this sensor information page. ([Sensor's Link](http://emanual.robotis.com/docs/en/parts/sensor/), [Video Tutorials](https://www.youtube.com/playlist?list=PLEf1s0tzVSnRgF2Cu9r91bU3bHuZU8Fxu))
-19. **The robot falls over when playing examples.**  
-    - Make sure to perform [Motion Offset](http://emanual.robotis.com/docs/en/edu/mini/#motion-offset) in the app setting - each ROBOTIS MINI will be assembled to slightly different tolerances therefore the robot will have to be calibrated with these mechanical offsets.
-    ii) A smooth, hard surface is recommended for ease of movement with the feet but the user can modify the bottom of the MINI's feet to improve friction for certain movements.
-20. **How to use rivets and rivet tool?**  
+## **Can I purchase specific parts separately?**  
+  - Not all parts is sold separately.  
+
+## **Where can I find CAD files(STP)?**  
+  - CAD files can be downloaded from this [link](http://emanual.robotis.com/docs/en/edu/mini/#download)  
+
+## **Where can I find 3D printable files(STL)?**  
+  - 3D printable files can be downloaded from this [link](http://emanual.robotis.com/docs/en/edu/mini/#download)
+
+## **Where can I download example programs?**  
+  - Example programs can be downloaded from [e-Manual]{: .blank} or **R+Task 2.0**([Windows](http://en.robotis.com/service/download.php?no=1) / [Android](https://play.google.com/store/apps/details?id=com.robotis.task2&hl=en) + [BT-210]{: .blank} or [BT-410]{: .blank}) or **R+Motion 2.0**([Windows](http://www.robotis.com/sub/page_routing.php?key=1) / [OS X](http://www.robotis.com/sub/page_routing.php?key=1) / [Android](https://play.google.com/store/apps/details?id=com.robotis.motion&hl=en) + [BT-210]{: .blank} or [BT-410]{: .blank} / [iOS]{: .blank} + [BT-410]{: .blank})  
+
+## **How can I download programs to the robot?**  
+  - Please use [LN-101]{: .blank} or [BT-210]{: .blank} to download programs to the robot.  
+
+## **How can I program my MINI?**   
+  - Please use [OpenCM IDE]{: .blank} in order to program the ROBOTIS-MINI.  
+  - Please note that if you use the [OpenCM IDE]{: .blank}, you will delete the RoboPlus firmware that is on the OpenCM9.04.   Therefore, you will need to recover the OpenCM9.04's firmware in order to use your robot with RoboPlus again.  
+  It is recommended to use **R+Task 2.0**([Windows](http://en.robotis.com/service/download.php?no=1) / [Android](https://play.google.com/store/apps/details?id=com.robotis.task2&hl=en) + [BT-210]{: .blank} or [BT-410]{: .blank}) because you can also directly download the examples within the software instead of visiting [e-Manaul](http://emanual.robotis.com/docs/en/edu/mini/) for examples.  
+
+## **How can I control MINI with ROBOTIS MINI app?**   
+  1. Please download ROBOTIS MINI app ([Android](https://play.google.com/store/apps/details?id=com.robotis.darwinmini) + [BT-210]{: .blank} or [BT-410]{: .blank} / [iOS]{: .blank} + [BT-410]{: .blank})  
+  2. Pair BT-210 to PC. Default pin is 0000. ([Link](http://emanual.robotis.com/docs/en/edu/mini/#operating-mini))  
+  3. Download example with [LN-101]{: .blank} or [BT-210]{: .blank}.  
+  4. Run ROBOTIS MINI app.  
+  5. Pair BT-210 to smart device. Default pin is 0000. Enter the last 2 alphanumeric digits on BT-210 to detect robot.  
+
+## **How can I use ROBOTIS MINI features?**   
+  - [Here](http://emanual.robotis.com/docs/en/edu/mini/#operating-mini) is the operation manual for mini_app.  
+
+## **How can I control MINI with iOS?**   
+  - The ROBOTIS MINI comes with the [BT-210]{: .blank}. [BT-410]{: .blank} is required to connect with iOS devices.  
+
+## **What is the difference between BT-210 and BT-410?**   
+  - [BT-210]{: .blank} supports Android devices with Bluetooth 2.1 or higher and it can be paired with your PC.  
+  - [BT-410]{: .blank} supports Android and iOS devices with Bluetooth 4.0 Low Energy(BLE) but it cannot be paired with your PC.  
+
+## **I'd like to add a head servo.**  
+  - Please watch the reference video. [(Link)](https://www.youtube.com/watch?v=rVBDah3DjDQ&index=9&list=PLtix7rPAJwqzgBn5dR1KICUAPIvB0h3uZ)  
+
+## **Are sensors sold with the MINI?**  
+  - The sensors are sold separately.  
+
+## **How can I assemble sensors? How to insert sensors?**  
+  - Please refer to this webpages. ([Assembly link](http://emanual.robotis.com/docs/en/edu/mini/#customize), [OpenCM9.04](http://emanual.robotis.com/docs/en/parts/controller/opencm904/))
+
+## **Where can I find sensor informations?**  
+  - Please refer to this sensor information page. ([Sensor's Link](http://emanual.robotis.com/docs/en/parts/sensor/), [Video Tutorials](https://www.youtube.com/playlist?list=PLEf1s0tzVSnRgF2Cu9r91bU3bHuZU8Fxu))  
+
+## **The robot falls over when playing examples.**   
+  - Make sure to perform [Motion Offset](http://emanual.robotis.com/docs/en/edu/mini/#motion-offset) in the app setting  
+
+  - A smooth, hard surface is recommended for ease of movement with the feet but the user can modify the bottom of the MINI's feet to improve friction for certain movements.  
+
+      - Each ROBOTIS MINI will be assembled to slightly different tolerances therefore the robot will have to be calibrated with these mechanical offsets.
+      {: .notice --info}
 
 
 # [STEM](#stem)  
 
-## **Frequently Asked Questions for ROBOTIS STEM**
 
-1. **Do I need Level 1 in order to play Level 2?**  
-    - Yes, Level 2 is an expansion kit for Level 1 and is not a standalone kit. [Link](http://emanual.robotis.com/docs/en/edu/bioloid/stem/#expansion-examples)  
-2. **Can I purchase specific parts for Level 1?**  
-    - Not all parts is sold separately.[Link](http://emanual.robotis.com/docs/en/edu/bioloid/stem/#standard-part-list)  
-3. **Can I purchase specific parts for Level 2?**  
-    - Not all parts is sold separately. [STEM Expansion](http://emanual.robotis.com/docs/en/edu/bioloid/stem/#expansion-part-list) requires standard parts from ROBOTIS STEM Level1. [Link](http://en.robotis.com/shop_en/item.php?it_id=901-0029-200)  
-4. **How can I operate STEM robots?**  
-    - Please refer to workbooks enveloped in the kit and [the manual](http://emanual.robotis.com/docs/en/edu/bioloid/stem/#getting-started) which help you start out in the kit.  
-5. **Robot does not power on.**  
-    - If you have the 6 battery boxes, please make sure the followings  
+## **Do I need Level 1 in order to play Level 2?**  
+  - Yes, Level 2 is an expansion kit for Level 1 and is not a standalone kit. [(Link)](http://emanual.robotis.com/docs/en/edu/bioloid/stem/#expansion-e##xamples)  
 
-      - using all 6 batteries.  
-      - cables are fully inserted into the battery boxes.  
+## **Can I purchase specific parts for Level 1?**  
+  - Not all parts is sold separately.[(Link)](http://emanual.robotis.com/docs/en/edu/bioloid/stem/#standard-part-list)  
 
-    - Please verify the polarity of installed AA batteries (+ connected to positive polarity and - connected to negative polarity).  
-6. **Li-Po battery / battery charger is damaged.**  
-    - Is the battery swollen?  
-        - If yes, please return the battery for replacement.  
+## **Can I purchase specific parts for Level 2?**  
+  - Not all parts is sold separately. [STEM Expansion](http://emanual.robotis.com/docs/en/edu/bioloid/stem/#expansion-part-list) requires standard parts from ROBOTIS STEM Level1. [(Link)](http://en.robotis.com/shop_en/item.php?it_id=901-0029-200)  
 
-    - Do both red and green LEDs blink once when SMPS is connected?  
-        - If yes, there is no problem with the charger.  
-        - If no, the charger may be faulty.  
+## **How can I operate STEM robots?**  
+  - Please refer to workbooks enveloped in the kit and [the manual](http://emanual.robotis.com/docs/en/edu/bioloid/stem/#getting-started) which help you start out in the kit.
 
-    - If you answered yes to ii) question, connect the battery to the charger and check the LED blinks / flickers.  
-        - If the red LED flickers, the charger may be faulty.  
-        - If the red LED is solid, the battery is charging.  
-        - If the green LED is solid, charging is completed.  
+## **Robot does not power on.**  
+  - If you have the 6 battery boxes, please make sure the followings  
 
-7. **Where can I download example programs for Level 1?**  
+    - using all 6 batteries.  
+    - cables are fully inserted into the battery boxes.  
 
-    - Example programs can be downloaded from [e-Manual](http://emanual.robotis.com/docs/en/edu/bioloid/stem/#standard-examples) or R+Task 2.0([Windows](http://en.robotis.com/service/download.php?no=1) / [Android](https://play.google.com/store/apps/details?id=com.robotis.task2&hl=en) + [BT-210]{: .blank} or [BT-410]{: .blank})  
+  - Please verify the polarity of installed AA batteries (+ connected to positive polarity and - connected to negative polarity).
 
-8. **Where can I download example programs for Level 2?**  
-    - Example programs can be downloaded from [e-Manual](http://emanual.robotis.com/docs/en/edu/bioloid/stem/#expansion-examples) or R+Task 2.0([Windows](http://en.robotis.com/service/download.php?no=1) /[Android](https://play.google.com/store/apps/details?id=com.robotis.task2&hl=en) + [BT-210]{: .blank} or [BT-410]{: .blank}) or R+Motion 2.0([Windows](http://www.robotis.com/sub/page_routing.php?key=1) / [OS X](http://www.robotis.com/sub/page_routing.php?key=1) / [Android](https://play.google.com/store/apps/details?id=com.robotis.motion&hl=en) + [BT-210]{: .blank} or [BT-410]{: .blank} / [iOS]{: .blank} + [BT-410]{: .blank}).  
-9. **How can I program Level 1?**  
-    - You can use RoboPlus Task(R+ 1.0) or  R+Task 2.0([Windows](http://en.robotis.com/service/download.php?no=1) / [Android](https://play.google.com/store/apps/details?id=com.robotis.task2&hl=en) + [BT-210]{: .blank} or [BT-410]{: .blank}). It is recommended to use R+Task 2.0 because you can directly download the examples within the software instead of visiting e-Manaul for examples.  
-    For advanced users, you will use [embedded C(CM530)]{: .blank} for programming.  
-10. **How can I program Level 2?**  
-    - You can use RoboPlus Task(R+ 1.0) or  R+Task 2.0([Windows](http://en.robotis.com/service/download.php?no=1) / [Android](https://play.google.com/store/apps/details?id=com.robotis.task2&hl=en) + [BT-210]{: .blank} or [BT-410]{: .blank}) and RoboPlus Motion(R+ 1.0) or R+Motion 2.0([Windows](http://www.robotis.com/sub/page_routing.php?key=1) / [OS X](http://www.robotis.com/sub/page_routing.php?key=1) / [Android](https://play.google.com/store/apps/details?id=com.robotis.motion&hl=en) + [BT-210]{: .blank} or [BT-410]{: .blank} / [iOS]{: .blank} + [BT-410]{: .blank}. It is recommended to use R+Task 2.0 and R+Motion 2.0 because you can directly download the examples within the software instead of visiting e-Manaul for examples.  
-    For advanced users, you will use [embedded C(CM530)]{: .blank} for programming.  
+## **Li-Po battery / battery charger is damaged.**  
+  - Is the battery swollen?  
+      - If yes, please return the battery for replacement.  
 
-11. **CM-510 / CM-530 is not recognized from my PC.**  
+  - Do both red and green LEDs blink once when SMPS is connected?  
+      - If yes, there is no problem with the charger.  
+      - If no, the charger may be faulty.  
 
-    - Is the controller connected to PC?  
+  - If you answered yes to ii) question, connect the battery to the charger and check the LED blinks / flickers.   
+      - If the red LED flickers, the charger may be faulty.  
+      - If the red LED is solid, the battery is charging.  
+      - If the green LED is solid, charging is completed.  
 
-    - Is the controller powered on?  
+## **Where can I download example programs for Level 1?**  
 
-    - Is the controller connected to the proper port? Please check COM Port in Windows Device Manager.
+  - Example programs can be downloaded from [e-Manual](http://emanual.robotis.com/docs/en/edu/bioloid/stem/#standard-examples) or **R+Task 2.0**([Windows](http://en.robotis.com/service/download.php?no=1) / [Android](https://play.google.com/store/apps/details?id=com.robotis.task2&hl=en) + [BT-210]{: .blank} or [BT-410]{: .blank})  
 
-    - Is the COM Port currently in use by another program or application?  
+## **Where can I download example programs for Level 2?**  
+  - Example programs can be downloaded from [e-Manual](http://emanual.robotis.com/docs/en/edu/bioloid/stem/#expansion-examples) or **R+Task 2.0**([Windows](http://en.robotis.com/service/download.php?no=1) /[Android](https://play.google.com/store/apps/details?id=com.robotis.task2&hl=en) + [BT-210]{: .blank} or [BT-410]{: .blank}) or **R+Motion 2.0**([Windows](http://www.robotis.com/sub/page_routing.php?key=1) / [OS X](http://www.robotis.com/sub/page_routing.php?key=1) / [Android](https://play.google.com/store/apps/details?id=com.robotis.motion&hl=en) + [BT-210]{: .blank} or [BT-410]{: .blank} / [iOS]{: .blank} + [BT-410]{: .blank}).  
 
-    - Try firmware recovery in RoboPlus Manager(R+ 1.0) with mini USB or BT-210.  
+## **How can I program Level 1?**  
+  - You can use **RoboPlus Task(R+ 1.0)** or  **R+Task 2.0**([Windows](http://en.robotis.com/service/download.php?no=1) / [Android](https://play.google.com/store/apps/details?id=com.robotis.task2&hl=en) + [BT-210]{: .blank} or [BT-410]{: .blank}). It is recommended to use **R+Task 2.0** because you can directly download the examples within the software instead of visiting e-Manaul for examples.  
+  For advanced users, you will use [embedded C(CM530)]{: .blank} for programming.  
 
-    - Check QC number. If it's in the range of 1412-1502, there may be an FTDI issue. Try the solution [here](http://emanual.robotis.com/docs/en/parts/interface/usb2dynamixel/#install-driver-manually) or return the controller for replacement.  
+## **How can I program Level 2?**  
+  - You can use **RoboPlus Task(R+ 1.0)** or  **R+Task 2.0**([Windows](http://en.robotis.com/service/download.php?no=1) / [Android](https://play.google.com/store/apps/details?id=com.robotis.task2&hl=en) + [BT-210]{: .blank} or [BT-410]{: .blank}) and **RoboPlus Motion(R+ 1.0)** or **R+Motion 2.0**([Windows](http://www.robotis.com/sub/page_routing.php?key=1) / [OS X](http://www.robotis.com/sub/page_routing.php?key=1) / [Android](https://play.google.com/store/apps/details?id=com.robotis.motion&hl=en) + [BT-210]{: .blank} or [BT-410]{: .blank} / [iOS]{: .blank} + [BT-410]{: .blank}. It is recommended to use **R+Task 2.0** and **R+Motion 2.0** because you can directly download the examples within the software instead of visiting e-Manaul for examples.  
+  For advanced users, you will use [embedded C(CM530)]{: .blank} for programming.  
 
-12. **Dynamixel is not recognized in R+ Manager.**  
+## **CM-510 / CM-530 is not recognized from my PC.**  
 
-    1. Connect one Dynamixel at a time and make sure that there are no duplicate IDs.  
-    2. Check the Dynamixel cable is properly and securely connected.  
-    3. Check the Dynamixel cable is not damaged.  
-    4. Confirm Dynamixel baud rate by clicking Dynamixel Search in RoboPlus Manager(R+ 1.0).  
-    5. Recover firmware in [Dynamixel Wizard](http://emanual.robotis.com/docs/en/software/rplus1/dynamixel_wizard/#firmware-recovery)(included in Roboplus Manager(R+ 1.0)) one Dynamixel at a time with USB2Dynamixel. [(Video Tutorial)](https://www.youtube.com/watch?v=PRVtfENb3Ok)  
+  - Is the controller connected to PC?  
 
-13. **How can I manage connected Dynamixels / sensors?**  
-    - Please use [RoboPlus Manager](http://emanual.robotis.com/docs/en/software/rplus1/manager/#dynamixel).
-14. **Controller is making a warning sound / Dynamixel LED is flashing red and torque is disabled.**  
-    - Is the battery charged?  
-    - Make sure that the robot is assembled correctly : Dynamixel horn orientation, cabling and connections. [(Assembly Check)](http://emanual.robotis.com/docs/en/edu/bioloid/stem/#assembly-check)  
-15. **Where can I find IR sensor information?**  
-    - Please refer to IR Sensor array information page. [(Link)](http://emanual.robotis.com/docs/en/parts/sensor/irss-10/)  
-16. **Where can I find IR sensor array information?**  
-    - Please refer to IR Sensor array information page. [(Link)](http://emanual.robotis.com/docs/en/parts/sensor/ir-array/)  
-17. **What kind of wireless control options I have?**  
-    - You can select [RC-100A/B]{: .blank} (via IR, ZigBee, Bluetooth) or smart devices (via Bluetooth).  
-    RC-100A isn't produced currently and sold any longer on the shop. Please use [RC-100B](http://emanual.robotis.com/docs/en/parts/communication/rc-100/){: .notice--info}  
-18. **How can I configure wireless control devices?**  
-    - [RC-100A / RC-100B]{: .blank}  
-      - IR Receiver connects to controller.  
-      - Use RC-100A or RC-100B to control the robot.
-RC-100A isn't produced currently and sold any longer on the shop. Please use [RC-100B](http://emanual.robotis.com/docs/en/parts/communication/rc-100/){: .notice--info}
+  - Is the controller powered on?  
 
-    - [ZIG-100/110A]{: .blank} Set  
-      - ZIG-100 connects to [RC-100A / RC-100B]{: .blank}.  
-      - ZIG-110A connects to controller.  
-      - ZigBee can be used to control robot.  
-      - ZIG-100 + [ZIG2Serial](http://emanual.robotis.com/docs/en/parts/communication/zig2serial/) + USB2Dynamixel connects to PC.  
-      - ZIG-110A connects to controller.  
+  - Is the controller connected to the proper port? Please check COM Port in Windows Device Manager.
 
-    - [BT-210]{: .blank} / [BT-410]{: .blank}  
-      - BT-210 / BT-410 connects to controller.  
-      - Pair BT-210 / BT-410 module to the smart device. You can also control the robot via PC by pairing BT-210 to PC.  
+  - Is the COM Port currently in use by another program or application?  
 
-    - [BT-210]{: .blank} / [BT-410]{: .blank}  
-      - BT-210 / BT-410 Master connects to RC-100B.  
-      - BT-210 / BT-410 Slave connects to controller.  
+  - Try firmware recovery in **RoboPlus Manager(R+ 1.0)** with mini USB or BT-210.  
+
+  - Check QC number. If it's in the range of 1412-1502, there may be an FTDI issue. Try the solution [here](http://emanual.robotis.com/docs/en/parts/interface/usb2dynamixel/#install-driver-manually) or return the controller for replacement.  
+
+## **Dynamixel is not recognized in R+ Manager.**  
+
+  1. Connect one Dynamixel at a time and make sure that there are no duplicate IDs.  
+  2. Check the Dynamixel cable is properly and securely connected.  
+  3. Check the Dynamixel cable is not damaged.  
+  4. Confirm Dynamixel baud rate by clicking Dynamixel Search in RoboPlus Manager(R+ 1.0).  
+  5. Recover firmware in [Dynamixel Wizard](http://emanual.robotis.com/docs/en/software/rplus1/dynamixel_wizard/#firmware-recovery)(included in Roboplus Manager(R+ 1.0)) one Dynamixel at a time with USB2Dynamixel. [(Video Tutorial)](https://www.youtube.com/watch?v=PRVtfENb3Ok)  
+
+## **How can I manage connected Dynamixels / sensors?**  
+  - Please use [RoboPlus Manager](http://emanual.robotis.com/docs/en/software/rplus1/manager/#dynamixel).
+
+## **Controller is making a warning sound / Dynamixel LED is flashing red and torque is disabled.**  
+  - Is the battery charged?  
+  - Make sure that the robot is assembled correctly : Dynamixel horn orientation, cabling and connections. [(Assembly Check)](http://emanual.robotis.com/docs/en/edu/bioloid/stem/#assembly-check)  
+
+## **Where can I find IR sensor information?**  
+  - Please refer to IR Sensor array information page. [(Link)](http://emanual.robotis.com/docs/en/parts/sensor/irss-10/)  
+
+## **Where can I find IR sensor array information?**  
+  - Please refer to IR Sensor array information page. [(Link)](http://emanual.robotis.com/docs/en/parts/sensor/ir-array/)  
+
+## **What kind of wireless control options I have?**  
+  - You can select [RC-100A/B]{: .blank} (via IR, ZigBee, Bluetooth) or smart devices (via Bluetooth).  
+
+  `RC-100A` isn't produced currently and sold any longer on the shop. Please use [RC-100B](http://emanual.robotis.com/docs/en/parts/communication/rc-100/)
+  {: .notice}
+
+## **How can I configure wireless control devices?**  
+  - [RC-100A / RC-100B]{: .blank}  
+    - IR Receiver connects to controller.  
+    - Use RC-100A or RC-100B to control the robot.   
+
+  `RC-100A` isn't produced currently and sold any longer on the shop. Please use [RC-100B](http://emanual.robotis.com/docs/en/parts/communication/rc-100/)
+    {: .notice}
+
+  - [ZIG-100/110A]{: .blank} Set  
+    - ZIG-100 connects to [RC-100A / RC-100B]{: .blank}.  
+    - ZIG-110A connects to controller.  
+    - ZigBee can be used to control robot.  
+    - ZIG-100 + [ZIG2Serial](http://emanual.robotis.com/docs/en/parts/communication/zig2serial/) + USB2Dynamixel connects to PC.  
+    - ZIG-110A connects to controller.  
+
+  - [BT-210]{: .blank} / [BT-410]{: .blank}  
+    - BT-210 / BT-410 connects to controller.  
+    - Pair BT-210 / BT-410 module to the smart device. You can also control the robot via PC by pairing BT-210 to PC.  
+
+  - [BT-210]{: .blank} / [BT-410]{: .blank}  
+    - BT-210 / BT-410 Master connects to RC-100B.  
+    - BT-210 / BT-410 Slave connects to controller.  
 
 
 # [GP](#gp)
 
-## **Frequently Asked Questions for ROBOTIS GP**
+## **Where can I find CAD files?**  
+  - The CAD files are not available for GP.  
 
-1. **Where can I find CAD files?**  
-    - The CAD files are not available for GP.  
+## **Where can I find Quick Start Guide?**  
+  - Download QuickStart Guide PDF File at Download table. [(Link)](http://emanual.robotis.com/docs/en/edu/bioloid/gp/#download)  
 
-2. **Where can I find Quick Start Guide?**  
-    - Download QuickStart Guide PDF File at Download table. [(Link)](http://emanual.robotis.com/docs/en/edu/bioloid/gp/#download)  
+## **Can I purchase specific parts for GP?**  
+  - Not all parts is sold separately. [(Link)](http://emanual.robotis.com/docs/en/edu/bioloid/gp/#part-list)  
 
-3. **Can I purchase specific parts for GP?**  
-    - Not all parts is sold separately. [(Link)](http://emanual.robotis.com/docs/en/edu/bioloid/gp/#part-list)  
+## **How can I operate GP?**  
+  - Please refer to the QuickStart for GP. [(Link)](http://emanual.robotis.com/docs/en/edu/bioloid/gp/#operating)  
 
-4. **How can I operate GP?**  
-    - Please refer to the QuickStart for GP. [(Link)](http://emanual.robotis.com/docs/en/edu/bioloid/gp/#operating)  
+## **Robot does not power on.**  
+  - Please make sure the followings  
+    - Is the battery charged?  
+    - Is the battery properly inserted into the controller's battery port?  
+  - If you cannot power the controller with the battery, try powering it with the SMPS in the kit. If unsuccessful, request an RMA. If successful, replace the controller's fuse(Instruction link) and try powering it with the battery once more. If you still cannot power the controller with the battery, please request an [RMA](https://docs.google.com/a/robotis.com/forms/d/e/1FAIpQLScaHDCDIpeVF1IBGwdLrkXp5P4Iy5bUPxW_15rt0qMSYJmuYw/viewform)
 
-5. **Robot does not power on.**  
-    - Please make sure the followings  
+## **How can I charge the battery?**  
+  - Please refer to the quickstart for charging. [(Link)](http://emanual.robotis.com/docs/en/edu/bioloid/gp/#battery-charge)  
+
+## **Li-Po battery / charger is damaged.**
+  - Is the battery swollen? If yes, please return the battery for replacement.  
+  - Do both red and green LEDs blink once when SMPS is connected?  
+      1. If yes, there is no problem with the charger.  
+      2. If no, the charger may be faulty.  
+  - If you answered yes to ii) question, connect the battery to the charger and check the LED blinks / flickers.  
+      1. If the red LED flickers, the charger may be faulty.  
+      2. If the red LED is solid, the battery is charging.  
+      3. If the green LED is solid, charging is completed.
+
+## **Where can I download default program?**  
+  - The default program can be downloaded from e-Manual / **R+Task 2.0**([Windows](http://en.robotis.com/service/download.php?no=1) / [Android](https://play.google.com/store/apps/details?id=com.robotis.task2&hl=en) + [BT-210]{: .blank} / **R+Motion 2.0**([Windows](http://www.robotis.com/sub/page_routing.php?key=1) / [OS X](http://www.robotis.com/sub/page_routing.php?key=1) / [Android](https://play.google.com/store/apps/details?id=com.robotis.motion&hl=en) + [BT-210]{: .blank} or [BT-410]{: .blank} / [iOS]{: .blank} + [BT-410]{: .blank}).  
+
+## **Which softwares do I need for programming?**  
+  - You can use **RoboPlus Task(R+ 1.0)** or **R+Task 2.0**([Windows](http://en.robotis.com/service/download.php?no=1) / [Android](https://play.google.com/store/apps/details?id=com.robotis.task2&hl=en) + [BT-210]{: .blank} or [BT-410]{: .blank}) and RoboPlus Motion(R+ 1.0) or **R+Motion 2.0**([Windows](http://www.robotis.com/sub/page_routing.php?key=1) / [OS X](http://www.robotis.com/sub/page_routing.php?key=1)/ Android + BT-210 or BT-410 / iOS + BT-410). It is recommended to use **R+Task 2.0** and **R+Motion 2.0** because you can directly download the examples within the software instead of visiting e-Manaul for examples.  
+
+## **How can I update or restore the firmware of controller?**  
+  - Please use **RoboPlus Manager(R+ 1.0)** to update / restore controller firmware.  
+
+## **How can I update or restore the firmware of DYNAMIXEL?**  
+  - Please use [DYNAMIXEL Wizard](http://emanual.robotis.com/docs/en/software/rplus1/dynamixel_wizard/#firmware-update)(included in RoboPlus Manager) to update / restore DYNAMIXEL firmware.  
+
+## **Controller is making a warning sound / DYNAMIXEL LED is flashing red and torque is disabled.**  
+  - Is the battery charged?  
+  - Make sure that the robot is assembled correctly : DYNAMIXEL horn orientation, cabling and connections.
+
+## **How can I add sensors?**  
+  - [Attaching ROBOTIS sensors](http://emanual.robotis.com/docs/en/edu/bioloid/gp/#adding-sensors)  
+  - [Attaching custom sensors](http://emanual.robotis.com/docs/en/edu/bioloid/gp/#external-output-control)  
+
+## **What kind of wireless control options I have?**  
+  - You can select [RC-100A / RC-100B]{: .blank}(via IR, ZigBee, Bluetooth) or smart devices (via Bluetooth).   
+
+  `RC-100A` isn't produced currently and sold any longer on the shop. Please use [RC-100B](http://emanual.robotis.com/docs/en/parts/communication/rc-100/).   
+  {: .notice}
+
+## **How can I configure wireless control devices?**  
+  - [RC-100A / RC-100B]{: .blank}  
+      - IR Receiver connects to controller.  
+      - Use RC-100A or RC-100B to control the robot.  
+  - [ZIG-100/110A]{: .blank} Set  
+      - ZIG-100 connects to [RC-100A / RC-100B]{: .blank}.  
+      - ZIG-110A connects to controller.  
+      - ZigBee can be used to control robot.  
+        i) ZIG-100 + [ZIG2Serial](http://emanual.robotis.com/docs/en/parts/communication/zig2serial/) + USB2Dynamixel connects to PC.  
+        ii) ZIG-110A connects to controller.  
+  - [BT-210]{: .blank} / [BT-410]{: .blank}  
+      - BT-210 / BT-410 connects to controller.  
+      - Pair BT-210 / BT-410 module to the smart device. You can also control the robot via PC by pairing BT-210 to PC.  
+  - [BT-210]{: .blank} / [BT-410]{: .blank}  
+      - BT-210 / BT-410 Master connects to RC-100B.    
+      - BT-210 / BT-410 Slave connects to controller.  
+
+  `RC-100A,ZIG-100/110A` aren't produced currently and sold any longer on the shop. Please use [RC-100B](http://emanual.robotis.com/docs/en/parts/communication/rc-100/).  
+  {: .notice}
+
+## **How can I control multiple robots?**  
+  - Please refer to the instruction page. [(Link)](http://emanual.robotis.com/docs/en/edu/bioloid/gp/#control-multiple-robots)  
+
+# [PREMIUM](#premium)  
+
+## **I want to know more about how to operate the robot.**  
+  - Please refer to [Quickstart manaul.](http://emanual.robotis.com/docs/en/edu/bioloid/premium/#operating)
+
+## **I want to know how to download the program.**  
+  - Please refer to downloading [default program manual.](http://emanual.robotis.com/docs/en/edu/bioloid/premium/#default-program)
+
+## **Where can I download default program?**  
+  - The default program can be downloaded from [e-Manual](http://emanual.robotis.com/docs/en/edu/bioloid/premium/#default-program) / **R+Task 2.0**([Windows](http://en.robotis.com/service/download.php?no=1) / [Android](https://play.google.com/store/apps/details?id=com.robotis.task2&hl=en) + [BT-210]{: .blank}) / **R+Motion 2.0**([Windows](http://en.robotis.com/service/download.php?no=3) / [OS X](http://www.robotis.com/sub/page_routing.php?key=1) / [Android](https://play.google.com/store/apps/details?id=com.robotis.motion) + [BT-210]{: .blank} or [BT-410]{: .blank} / [iOS]{: .blank} + [BT-410]{: .blank}).  
+
+## **What kind of wireless control options I have?**  
+  - You can select [RC-100A/B]{: .blank} (via IR, ZigBee, Bluetooth) or smart devices (via Bluetooth).  
+
+  `RC-100A` isn't produced currently and sold any longer on the shop. Please use [RC-100B](http://emanual.robotis.com/docs/en/parts/communication/rc-100/)
+  {: .notice}
+
+
+## **How can I use the IR channel for wireless control?**  
+  - Please refer to [the IR wireless communication setting manual.](http://emanual.robotis.com/docs/en/edu/bioloid/premium/#setting-the-cm-510-ir-channels)  
+## **How can I use Zigbee Wireless Control?**  
+  - Please refer to [the Zigbee wireless communication setting manual.](http://emanual.robotis.com/docs/en/edu/bioloid/premium/#zigbee-wireless-control)  
+## **I want to know how to charge the battery.**  
+  - Please refer to [the battery charging manual](http://emanual.robotis.com/docs/en/edu/bioloid/premium/#battery-charge).  
+## **Li-Po battery / charger is damaged.**  
+  - Is the battery swollen? If yes, please return the battery for replacement.
+  - Do both red and green LEDs blink once when SMPS is connected?
+    - If yes, there is no problem with the charger.  
+    - If no, the charger may be faulty.  
+  - If you answered yes to ii) question, connect the battery to the charger and check the LED blinks / flickers.  
+    - If the red LED flickers, the charger may be faulty.  
+    - If the red LED is solid, the battery is charging.  
+    - If the green LED is solid, charging is completed.
+
+## **How can I replace the fuse?**  
+  - Please refer to [the controller fuse replacement manual.](http://emanual.robotis.com/docs/en/edu/bioloid/premium/#replacing-fuse)  
+## **I want to control the robot by myself using C Language.**  
+  -  You can use [embedded C(CM530)]{: .blank} to program your own code  
+## **I want to control the robot remotely using my PC.**  
+  -  You can use [Zigbee SDK](http://emanual.robotis.com/docs/en/software/embedded_sdk/zigbee_sdk/)  
+
+## **Which softwares do I need for programming?**  
+  - You can use **RoboPlus Task(R+ 1.0)** or **R+Task 2.0**([Windows](http://en.robotis.com/service/download.php?no=1) / [Android](https://play.google.com/store/apps/details?id=com.robotis.task2&hl=en) + [BT-210]{: .blank} or [BT-410]{: .blank}) and **RoboPlus Motion(R+ 1.0)** or **R+Motion 2.0**([Windows](http://en.robotis.com/service/download.php?no=3) / [OS X](http://www.robotis.com/sub/page_routing.php?key=1) / [Android](https://play.google.com/store/apps/details?id=com.robotis.motion&hl=en) + [BT-210]{: .blank} or [BT-410]{: .blank} / [iOS]{: .blank} + [BT-410]{: .blank}). It is recommended to use **R+Task 2.0** and **R+Motion 2.0** because you can directly download the examples within the software instead of visiting e-Manaul for examples.  
+## **I want to learn how to program the robot.**  
+  - There is [tutorials](http://emanual.robotis.com/docs/en/edu/bioloid/premium/#tutorial) for example codes to learn how to program the robot.  
+## **I want to develop a software to communicate with RoboPlus Task code.**  
+  - You can use [Zigbee SDK.](http://emanual.robotis.com/docs/en/software/embedded_sdk/zigbee_sdk/)   
+## **Is there any easier way to make the robot's motions?**  
+  - Yes, there is. [Pose Utility](http://emanual.robotis.com/docs/en/software/rplus1/motion/#pose-utility)   
+## **Where can I find CAD files?**  
+  - CAD files are not available for PREMIUM.  
+## **Where can I find Quick Start Guide?**  
+  - Please refer to [Operating manual.](http://emanual.robotis.com/docs/en/edu/bioloid/premium/#operating)  
+## **Can I purchase specific parts for GP?**  
+  - Not all parts is sold separately.[Link](http://emanual.robotis.com/docs/en/edu/bioloid/premium/#part-list).  
+##. **The controller is not powering on.**  
+  - Please make sure the followings  
       - Is the battery charged?  
       - Is the battery properly inserted into the controller's battery port?  
-    - If you cannot power the controller with the battery, try powering it with the SMPS in the kit. If unsuccessful, request an RMA. If successful, replace the controller's fuse(Instruction link) and try powering it with the battery once more. If you still cannot power the controller with the battery, please request an [RMA](https://docs.google.com/a/robotis.com/forms/d/e/1FAIpQLScaHDCDIpeVF1IBGwdLrkXp5P4Iy5bUPxW_15rt0qMSYJmuYw/viewform)
-
-6. **How can I charge the battery?**  
-    - Please refer to the quickstart for charging. [(Link)](http://emanual.robotis.com/docs/en/edu/bioloid/gp/#battery-charge)  
-
-7. **Li-Po battery / charger is damaged.**
-    - Is the battery swollen? If yes, please return the battery for replacement.  
-    - Do both red and green LEDs blink once when SMPS is connected?  
-        1. If yes, there is no problem with the charger.  
-        2. If no, the charger may be faulty.  
-    - If you answered yes to ii) question, connect the battery to the charger and check the LED blinks / flickers.  
-        1. If the red LED flickers, the charger may be faulty.  
-        2. If the red LED is solid, the battery is charging.  
-        3. If the green LED is solid, charging is completed.
-
-8. **Where can I download default program?**  
-    - The default program can be downloaded from e-Manual / R+Task 2.0([Windows](http://en.robotis.com/service/download.php?no=1) / [Android](https://play.google.com/store/apps/details?id=com.robotis.task2&hl=en) + [BT-210]{: .blank} / R+Motion 2.0([Windows](http://www.robotis.com/sub/page_routing.php?key=1) / [OS X](http://www.robotis.com/sub/page_routing.php?key=1) / [Android](https://play.google.com/store/apps/details?id=com.robotis.motion&hl=en) + [BT-210]{: .blank} or [BT-410]{: .blank} / [iOS]{: .blank} + [BT-410]{: .blank}).  
-
-9. **Which softwares do I need for programming?**  
-    - You can use RoboPlus Task(R+ 1.0) or R+Task 2.0([Windows](http://en.robotis.com/service/download.php?no=1) / [Android](https://play.google.com/store/apps/details?id=com.robotis.task2&hl=en) + [BT-210]{: .blank} or [BT-410]{: .blank}) and RoboPlus Motion(R+ 1.0) or R+Motion 2.0([Windows](http://www.robotis.com/sub/page_routing.php?key=1) / [OS X](http://www.robotis.com/sub/page_routing.php?key=1)/ Android + BT-210 or BT-410 / iOS + BT-410). It is recommended to use R+Task 2.0 and R+Motion 2.0 because you can directly download the examples within the software instead of visiting e-Manaul for examples.  
-
-10. **How can I update or restore the firmware of controller?**  
-    - Please use RoboPlus Manager(R+ 1.0) to update / restore controller firmware.  
-
-11. **How can I update or restore the firmware of DYNAMIXEL?**  
-    - Please use [DYNAMIXEL Wizard](http://emanual.robotis.com/docs/en/software/rplus1/dynamixel_wizard/#firmware-update)(included in RoboPlus Manager) to update / restore DYNAMIXEL firmware.  
-
-12. **Controller is making a warning sound / DYNAMIXEL LED is flashing red and torque is disabled.**  
-    - Is the battery charged?  
-    - Make sure that the robot is assembled correctly : DYNAMIXEL horn orientation, cabling and connections.
-
-13. **How can I add sensors?**  
-    - [Attaching ROBOTIS sensors](http://emanual.robotis.com/docs/en/edu/bioloid/gp/#adding-sensors)  
-    - [Attaching custom sensors](http://emanual.robotis.com/docs/en/edu/bioloid/gp/#external-output-control)  
-
-14. **What kind of wireless control options I have?**  
-    - You can select [RC-100A / RC-100B]{: .blank}(via IR, ZigBee, Bluetooth) or smart devices (via Bluetooth).  
-    RC-100A isn't produced currently and sold any longer on the shop. Please use [RC-100B](http://emanual.robotis.com/docs/en/parts/communication/rc-100/).{: .notice--info}   
-
-15. **How can I configure wireless control devices?**  
-    - [RC-100A / RC-100B]{: .blank}  
-        - IR Receiver connects to controller.  
-        - Use RC-100A or RC-100B to control the robot.  
-    - [ZIG-100/110A]{: .blank} Set  
-        - ZIG-100 connects to [RC-100A / RC-100B]{: .blank}.  
-        - ZIG-110A connects to controller.  
-        - ZigBee can be used to control robot.  
-          i) ZIG-100 + [ZIG2Serial](http://emanual.robotis.com/docs/en/parts/communication/zig2serial/) + USB2Dynamixel connects to PC.  
-          ii) ZIG-110A connects to controller.  
-    - [BT-210]{: .blank} / [BT-410]{: .blank}  
-        - BT-210 / BT-410 connects to controller.  
-        - Pair BT-210 / BT-410 module to the smart device. You can also control the robot via PC by pairing BT-210 to PC.  
-    - [BT-210]{: .blank} / [BT-410]{: .blank}  
-        - BT-210 / BT-410 Master connects to RC-100B.    
-        - BT-210 / BT-410 Slave connects to controller.  
-
-    RC-100A,ZIG-100/110A aren't produced currently and sold any longer on the shop. Please use [RC-100B](http://emanual.robotis.com/docs/en/parts/communication/rc-100/).{: .notice--info}  
-
-16. **How can I control multiple robots?**  
-    - Please refer to the instruction page. [(Link)](http://emanual.robotis.com/docs/en/edu/bioloid/gp/#control-multiple-robots)  
-
-# [Premium](#premium)  
-
-## **Frequently Asked Questions for ROBOTIS PREMIUM**
-1. **I want to know more about how to operate the robot.**  
-    - Please refer to [Quickstart manaul.](http://emanual.robotis.com/docs/en/edu/bioloid/premium/#operating)
-
-2. **I want to know how to download the program.**  
-    - Please refer to downloading [default program manual.](http://emanual.robotis.com/docs/en/edu/bioloid/premium/#default-program)
-
-3. **Where can I download default program?**  
-    - The default program can be downloaded from [e-Manual](http://emanual.robotis.com/docs/en/edu/bioloid/premium/#default-program) / R+Task 2.0([Windows](http://en.robotis.com/service/download.php?no=1) / [Android](https://play.google.com/store/apps/details?id=com.robotis.task2&hl=en) + [BT-210]{: .blank}) / R+Motion 2.0([Windows](http://en.robotis.com/service/download.php?no=3) / [OS X](http://www.robotis.com/sub/page_routing.php?key=1) / [Android](https://play.google.com/store/apps/details?id=com.robotis.motion) + [BT-210]{: .blank} or [BT-410]{: .blank} / [iOS]{: .blank} + [BT-410]{: .blank}).  
-
-4. **What kind of wireless control options I have?**  
-    - You can select [RC-100A/B]{: .blank} (via IR, ZigBee, Bluetooth) or smart devices (via Bluetooth).  
-    RC-100A isn't produced currently and sold any longer on the shop. Please use [RC-100B](http://emanual.robotis.com/docs/en/parts/communication/rc-100/).{: .notice--info}  
-
-5. **How can I use the IR channel for wireless control?**  
-    - Please refer to [the IR wireless communication setting manual.](http://emanual.robotis.com/docs/en/edu/bioloid/premium/#setting-the-cm-510-ir-channels)  
-6. **How can I use Zigbee Wireless Control?**  
-    - Please refer to [the Zigbee wireless communication setting manual.](http://emanual.robotis.com/docs/en/edu/bioloid/premium/#zigbee-wireless-control)  
-7. **I want to know how to charge the battery.**  
-    - Please refer to [the battery charging manual](http://emanual.robotis.com/docs/en/edu/bioloid/premium/#battery-charge).  
-8. **Li-Po battery / charger is damaged.**  
-    - Is the battery swollen? If yes, please return the battery for replacement.
-    - Do both red and green LEDs blink once when SMPS is connected?
-      - If yes, there is no problem with the charger.  
-      - If no, the charger may be faulty.  
-    - If you answered yes to ii) question, connect the battery to the charger and check the LED blinks / flickers.  
-      - If the red LED flickers, the charger may be faulty.  
-      - If the red LED is solid, the battery is charging.  
-      - If the green LED is solid, charging is completed.
-
-9. **How can I replace the fuse?**  
-    - Please refer to [the controller fuse replacement manual.](http://emanual.robotis.com/docs/en/edu/bioloid/premium/#replacing-fuse)  
-10. **I want to control the robot by myself using C Language.**  
-    -  You can use [embedded C(CM530)]{: .blank} to program your own code  
-11. **I want to control the robot remotely using my PC.**  
-    -  You can use (Zigbee SDK.)[http://emanual.robotis.com/docs/en/software/embedded_sdk/zigbee_sdk/]  
-
-12. **Which softwares do I need for programming?**  
-    - You can use RoboPlus Task(R+ 1.0) or R+Task 2.0([Windows](http://en.robotis.com/service/download.php?no=1) / [Android](https://play.google.com/store/apps/details?id=com.robotis.task2&hl=en) + [BT-210]{: .blank} or [BT-410]{: .blank}) and RoboPlus Motion(R+ 1.0) or R+Motion 2.0([Windows](http://en.robotis.com/service/download.php?no=3) / [OS X](http://www.robotis.com/sub/page_routing.php?key=1) / [Android](https://play.google.com/store/apps/details?id=com.robotis.motion&hl=en) + [BT-210]{: .blank} or [BT-410]{: .blank} / [iOS]{: .blank} + [BT-410]{: .blank}). It is recommended to use R+Task 2.0 and R+Motion 2.0 because you can directly download the examples within the software instead of visiting e-Manaul for examples.  
-13. **I want to learn how to program the robot.**  
-    - There is [tutorials](http://emanual.robotis.com/docs/en/edu/bioloid/premium/#tutorial) for example codes to learn how to program the robot.  
-14. **I want to develop a software to communicate with RoboPlus Task code.**  
-    - You can use [Zigbee SDK.](http://emanual.robotis.com/docs/en/software/embedded_sdk/zigbee_sdk/)   
-15. **Is there any easier way to make the robot's motions?**  
-    - Yes, there is. [Pose Utility](http://emanual.robotis.com/docs/en/software/rplus1/motion/#pose-utility)   
-16. **Where can I find CAD files?**  
-    - CAD files are not available for PREMIUM.  
-17. **Where can I find Quick Start Guide?**  
-    - Please refer to [Operating manual.](http://emanual.robotis.com/docs/en/edu/bioloid/premium/#operating)  
-18. **Can I purchase specific parts for GP?**  
-    - Not all parts is sold separately.[Link](http://emanual.robotis.com/docs/en/edu/bioloid/premium/#part-list).  
-19. **The controller is not powering on.**  
-    - Please make sure the followings  
-        - Is the battery charged?  
-        - Is the battery properly inserted into the controller's battery port?  
-    - If you cannot power the controller with the battery, try powering it with the SMPS. If unsuccessful, request an RMA. If successful, replace the controller's fuse([Instruction link](http://emanual.robotis.com/docs/en/edu/bioloid/premium/#replacing-fuse)) and try powering it with the battery once more. If you still cannot power the controller with the battery, please request an RMA.  
-20. **How can I update or restore the firmware of controller?**  
-    - Please use RoboPlus Manager(R+ 1.0) to update / restore controller firmware.  
-21. **How can I update or restore the firmware of Dynamixel?**  
-    - Please use [DYNAMIXEL Wizard](http://emanual.robotis.com/docs/en/software/rplus1/dynamixel_wizard/#firmware-update)(included in RoboPlus Manager(R+ 1.0)) to update / restore DYNAMIXEL firmware.  
-22. **Controller is making a warning sound / Dynamixel LED is flashing red and torque is disabled.**  
-    - Is the battery charged?  
-    - Make sure that the robot is assembled correctly : DYNAMIXEL horn orientation, cabling and connections.  
-23. **How can I add sensors?**  
-    - [Attaching ROBOTIS sensors](http://emanual.robotis.com/docs/en/edu/bioloid/premium/#adding-sensors)  
-    - [Attaching custom sensors](http://emanual.robotis.com/docs/en/edu/bioloid/premium/#make-your-own-sensor)  
+  - If you cannot power the controller with the battery, try powering it with the SMPS. If unsuccessful, request an RMA. If successful, replace the controller's fuse([Instruction link](http://emanual.robotis.com/docs/en/edu/bioloid/premium/#replacing-fuse)) and try powering it with the battery once more. If you still cannot power the controller with the battery, please request an RMA.  
+## **How can I update or restore the firmware of controller?**  
+  - Please use **RoboPlus Manager(R+ 1.0)** to update / restore controller firmware.  
+## **How can I update or restore the firmware of Dynamixel?**  
+  - Please use [DYNAMIXEL Wizard](http://emanual.robotis.com/docs/en/software/rplus1/dynamixel_wizard/#firmware-update)(included in RoboPlus Manager(R+ 1.0)) to update / restore DYNAMIXEL firmware.  
+## **Controller is making a warning sound / Dynamixel LED is flashing red and torque is disabled.**  
+  - Is the battery charged?  
+  - Make sure that the robot is assembled correctly : DYNAMIXEL horn orientation, cabling and connections.  
+## **How can I add sensors?**  
+  - [Attaching ROBOTIS sensors](http://emanual.robotis.com/docs/en/edu/bioloid/premium/#adding-sensors)  
+  - [Attaching custom sensors](http://emanual.robotis.com/docs/en/edu/bioloid/premium/#make-your-own-sensor)  
 
 
-24. **How can I control multiple robots?**  
-    - Please refer to the instruction page. [(Link)](http://emanual.robotis.com/docs/en/edu/bioloid/premium/#control-multiple-robots)  
+## **How can I control multiple robots?**  
+  - Please refer to the instruction page. [(Link)](http://emanual.robotis.com/docs/en/edu/bioloid/premium/#control-multiple-robots)  
 
-# [BIOLOID Beginner/Comprehensive](#beginer-comprehensive)  
+# [BIOLOID Beginner/Comprehensive](#bioloid-beginnercomprehensive)  
 
-## **Frequently Asked Questions for ROBOTIS BIOLOID Beginner/Comprehensive**
+## **[I want to know how to use RoboPlus.](http://emanual.robotis.com/docs/en/edu/bioloid/beginner/#part-list)**  
 
-1. **[I want to know how to use RoboPlus.](http://emanual.robotis.com/docs/en/edu/bioloid/beginner/#part-list)**  
+## **[I want to know how to download the program.](http://emanual.robotis.com/docs/en/edu/bioloid/beginner/#download)**  
 
-2. **[I want to know how to download the program.](http://emanual.robotis.com/docs/en/edu/bioloid/beginner/#download)**  
+## **[How can I do the Zigbee Wireless Control?](http://emanual.robotis.com/docs/en/edu/bioloid/beginner/#zigbee-wireless-control)**   
 
-3. **[How can I do the Zigbee Wireless Control?](http://emanual.robotis.com/docs/en/edu/bioloid/beginner/#zigbee-wireless-control)**   
-    - ZIG-100/110A aren't produced currently and sold any longer on the shop.{: .notice--info}   
-4. **[I want to learn the programming.](http://emanual.robotis.com/docs/en/edu/bioloid/beginner/#tutorial)**  
+## **[I want to learn the programming.](http://emanual.robotis.com/docs/en/edu/bioloid/beginner/#tutorial)**  
 
-5. **[I want to know how to charge the battery.](http://emanual.robotis.com/docs/en/edu/bioloid/beginner/#charging-cm-5)**  
+## **[I want to know how to charge the battery.](http://emanual.robotis.com/docs/en/edu/bioloid/beginner/#charging-cm-5)**  
 
-6. **[How can I replace the fuse?](http://emanual.robotis.com/docs/en/edu/bioloid/beginner/#references)**  
+## **[How can I replace the fuse?](http://emanual.robotis.com/docs/en/edu/bioloid/beginner/#references)**  
 
-7. **[Is there any easier way to make the robot's motions?](http://emanual.robotis.com/docs/en/software/rplus1/motion/#pose-utility)**  
+## **[Is there any easier way to make the robot's motions?](http://emanual.robotis.com/docs/en/software/rplus1/motion/#pose-utility)**  
 
 
 
