@@ -11,14 +11,14 @@ sidebar:
   nav: "op"
 ---
 
-<div style="counter-reset: h1 4"></div>
+<div style="counter-reset: h1 6"></div>
 
 # [References](#references)
 
 ## [Brochure](#brochure)
 
-`Download PDF` [Outside pages (1, 4)](http://sourceforge.net/projects/darwinop/files/Overall/DARwIn-OP_Brochure%20Page1-Page4.pdf/download)
-`Download PDF` [Inside pages (2, 3)](http://sourceforge.net/projects/darwinop/files/Overall/DARwIn-OP_Brochure%20Page2-Page3.pdf/download)
+- `Download PDF` [Outside pages (1, 4)](http://sourceforge.net/projects/darwinop/files/Overall/DARwIn-OP_Brochure%20Page1-Page4.pdf/download)  
+- `Download PDF` [Inside pages (2, 3)](http://sourceforge.net/projects/darwinop/files/Overall/DARwIn-OP_Brochure%20Page2-Page3.pdf/download)
 
 ## [Specifications](#specifications)
 
@@ -32,8 +32,8 @@ sidebar:
 
 ![](/assets/images/platform/op/op_system_blockdiagram.jpg)
 
-`Link` [Overall Specifications](http://support.robotis.com/e-Manual_KOR/PRODUCT/DARwIn-OP/References/Reference/Hardware_Specifications.htm)
-`Download PDF` [Diagrams](http://sourceforge.net/projects/darwinop/files/Overall/DARwIn-OP_Specifications_Ver1.0.2.pdf/download)
+- `Link` [Overall Specifications](http://support.robotis.com/e-Manual_KOR/PRODUCT/DARwIn-OP/References/Reference/Hardware_Specifications.htm)  
+- `Download PDF` [Diagrams](http://sourceforge.net/projects/darwinop/files/Overall/DARwIn-OP_Specifications_Ver1.0.2.pdf/download)
 
 ### [Hardware Specifications](#hardware-specifications)
 
@@ -121,8 +121,7 @@ Simply apply the 2 changes below to change the comm. method.
 - Red Rectangle : Must change connector.
   - Not sold separately by ROBOTIS.
 
-For more information on the connector, please refer to the link below.
-http://support.robotis.com/en/techsupport_eng.htm#product/dynamixel/dxl_connector.htm
+For more information on the connector, please refer to the [MX-28 Connector Information](/docs/en/dxl/mx/mx-28/#connector-information).
 
 ##### Features
 
@@ -934,6 +933,12 @@ http://www.popsci.com/technology/article/2011-07/video-darwin-op-wants-tecate-no
 <iframe width="560" height="315" src="https://www.youtube.com/embed/vwYtbhs7xCk" frameborder="0" allowfullscreen></iframe>
 
 > DARWIN-OP with gripper demo
+
+## [Certifications](#certifications)
+Please inquire us for information regarding unlisted certifications.
+
+### [FCC](#fcc)
+{% include en/dxl/fcc_class_a.md %}
 
 [Dynamixel Monitor]: /docs/en/platform/op/development/#dynamixel-monitor
 [Firmware Installer]: /docs/en/platform/op/development/#firmware-installer

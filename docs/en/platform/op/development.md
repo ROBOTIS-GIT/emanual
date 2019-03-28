@@ -11,7 +11,7 @@ sidebar:
   nav: "op"
 ---
 
-<div style="counter-reset: h1 1"></div>
+<div style="counter-reset: h1 3"></div>
 
 # [Development](#development)
 

@@ -441,4 +441,10 @@ Profile에 의해 생성된 목표 위치 궤적입니다. 전류기반 위치 �
 `다운로드` [RH-P12-RN(PDF).zip](http://www.robotis.com/service/download.php?no=740)  
 `다운로드` [RH-P12-RN(STP).zip](http://www.robotis.com/service/download.php?no=741)
 
+## [인증 획득](#인증-획득)
+표기되지 않은 인증에 대해서는 별도 문의하시기 바랍니다.
+
+### [FCC](#fcc)
+{% include kr/dxl/fcc_class_b.md %}
+
 {% include kr/dxl/common_link.md %}

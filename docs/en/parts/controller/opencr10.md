@@ -1242,6 +1242,12 @@ Error while burning bootloader.
 5. Enter Bootloader by holding `Boot` button and press `Reset` button and check the driver is correctly installed from the device manager.
 
     ![](/assets/images/parts/controller/opencr10/dfu_device_manager.png)
+    
+## [Certifications](#certifications)
+Please inquire us for information regarding unlisted certifications.
+
+### [FCC](#fcc)
+{% include en/dxl/fcc_class_a.md %}
 
 
 # [Bootloader](#bootloader)

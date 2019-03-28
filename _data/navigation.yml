@@ -13867,6 +13867,12 @@ op:
         url: /platform/op/references/#text-editor-tutorials
       - title: "Videos"
         url: /platform/op/references/#videos
+    - title: "Certifications"
+      url: /platform/op/references/#certifications
+      children:
+      - title: "FCC"
+        url: /platform/op/references/#fcc
+
 
 #ROBOTIS OP2 sidebar
 op2:
@@ -13911,8 +13917,8 @@ op2:
       url: /platform/op2/getting_started/#recovery-software
     - title: "Useful Information"
       url: /platform/op2/getting_started/#useful-information
-  - title: "Miscellaneous"
-    url: /platform/op2/getting_started/#miscellaneous
+  - title: "References"
+    url: /platform/op2/getting_started/#references
     children:
     - title: "System Block Diagram"
       url: /platform/op2/getting_started/#system-block-diagram
@@ -13920,6 +13926,8 @@ op2:
       url: /platform/op2/getting_started/#id-map
     - title: "Warranty"
       url: /platform/op2/getting_started/#warranty
+    - title: "Certifications"
+      url: /platform/op2/getting_started/#certifications
   - title: "Sub Controller(CM-740)"
     url: /platform/op2/getting_started/#sub-controllercm-740
   - title: "ROS Packages"
@@ -14274,6 +14282,10 @@ rh_p12_rn:
       titlekr: "도면"
       url: /platform/rh_p12_rn/#drawings
       urlkr: /platform/rh_p12_rn/#도면
+    - title: "Certifications"
+      titlekr: "인증 획득"
+      url: /platform/rh_p12_rn/#certifications
+      urlkr: /platform/rh_p12_rn/#인증-획득
   - title: "Examples"
     titlekr: "예제"
     url: /platform/rh_p12_rn/examples/#examples
@@ -14530,6 +14542,10 @@ rh_p12_rna:
       titlekr: "도면"
       url: /platform/rh_p12_rna/#drawings
       urlkr: /platform/rh_p12_rna/#도면
+    - title: "Certifications"
+      titlekr: "인증 획득"
+      url: /platform/rh_p12_rna/#certifications
+      urlkr: /platform/rh_p12_rna/#인증-획득
 
 robothand_rx28:
   - titlekr: "개요"
@@ -15191,6 +15207,8 @@ turtlebot3:
         url: /platform/turtlebot3/appendix_lds_01/#user-guide-for-gui
       - title: "User Guide (for Embedded Board)"
         url: /platform/turtlebot3/appendix_lds_01/#user-guide-for-embedded-board
+      - title: "Certifications"
+        url: /platform/turtlebot3/appendix_lds_01/#certifications
     - title: "RealSense™"
       url: /platform/turtlebot3/appendix_realsense/#appendix-realsense
       children:
@@ -19247,6 +19265,15 @@ cm-150:
     titlekr: "무선통신 연결"
     url: /parts/controller/cm-150/#wireless-communication
     urlkr: /parts/controller/cm-150/#무선-통신-모듈-연결하기
+  - title: "References"
+    titlekr: "참고자료"
+    url: /parts/controller/cm-200/#references
+    urlkr: /parts/controller/cm-200/#참고자료
+    children:
+      - title: "Certifications"
+        titlekr: "인증 획득"
+        url: /parts/controller/cm-150/#certifications
+        urlkr: /parts/controller/cm-150/#인증-획득
 
 #CM-200 Controller sidebar
 cm-200:
@@ -19291,8 +19318,17 @@ cm-200:
     url: /parts/controller/cm-200/#wireless-communication
   - titlekr: "펌웨어 복구"
     urlkr: /parts/controller/cm-200/#펌웨어-복구
-  - titlekr: "참고자료"
+  - title: "References"
+    titlekr: "참고자료"
+    url: /parts/controller/cm-200/#references
     urlkr: /parts/controller/cm-200/#참고자료
+    children:
+    - titlekr: "호환성"
+      urlkr: /parts/controller/cm-200/#호환성
+    - title: "Certifications"
+      titlekr: "인증 획득"
+      url: /parts/controller/cm-200/#certifications
+      urlkr: /parts/controller/cm-200/#인증-획득
 
 #CM-5 Controller sidebar
 cm-5:
@@ -19502,6 +19538,17 @@ cm-900:
     titlekr: "다운로드"
     url: /parts/controller/cm-900/#downloads
     urlkr: /parts/controller/cm-900/#cm-900-소프트웨어-다운로드
+  - title: "References"
+    titlekr: "참고자료"
+    url: /parts/controller/cm-900/#references
+    urlkr: /parts/controller/cm-900/#참고자료
+    children:
+    - titlekr: "호환성"
+      urlkr: /parts/controller/cm-900/#호환성
+    - title: "Certifications"
+      titlekr: "인증 획득"
+      url: /parts/controller/cm-900/#certifications
+      urlkr: /parts/controller/cm-900/#인증-획득
 
 #OpenCM 9.04 sidebar
 opencm904:
@@ -19813,6 +19860,8 @@ opencr10:
       url: /parts/controller/opencr10/#recovery-mode
     - title: "Install Windows Driver"
       url: /parts/controller/opencr10/#install-windows-driver
+    - title: "Certifications"
+      url: /parts/controller/opencr10/#certifications
   - title: "Bootloader"
     url: /parts/controller/opencr10/#bootloader
     children:
@@ -19967,6 +20016,11 @@ opencm7:
       urlkr: /parts/controller/opencm7/#ram-영역
     - titlekr: "Address 기능 설명"
       urlkr: /parts/controller/opencm7/#address-기능-설명
+  - titlekr: "참고자료"
+    urlkr: /parts/controller/opencm7/#참고자료
+    children:
+    - titlekr: "인증 획득"
+      urlkr: /parts/controller/opencm7/#인증-획득
 
 rc-100:
   - title: "Introduction"
@@ -20086,6 +20140,15 @@ bt-210:
     titlekr: "핀 배열"
     url: /parts/communication/bt-210/#pinout
     urlkr: /parts/communication/bt-210/#핀-배열
+  - title: "References"
+    titlekr: "참고자료"
+    url: /parts/communication/bt-210/#references
+    urlkr: /parts/communication/bt-210/#참고자료
+    children:
+    - title: "Certifications"
+      titlekr: "인증 획득"
+      url: /parts/communication/bt-210/#certifications
+      urlkr: /parts/communication/bt-210/#인증-획득
 
 #BT-410 sidebar
 bt-410:
@@ -20117,6 +20180,15 @@ bt-410:
     titlekr: "핀 배열"
     url: /parts/communication/bt-410/#pinout
     urlkr: /parts/communication/bt-410/#핀-배열
+  - title: "References"
+    titlekr: "참고자료"
+    url: /parts/communication/bt-410/#references
+    urlkr: /parts/communication/bt-410/#참고자료
+    children:
+    - title: "Certifications"
+      titlekr: "인증 획득"
+      url: /parts/communication/bt-410/#certifications
+      urlkr: /parts/communication/bt-410/#인증-획득
 
 #BT-410 Dongle sidebar
 bt-410-dongle:
@@ -20152,6 +20224,15 @@ bt-410-dongle:
     titlekr: "드라이버 수동 설치"
     url: /parts/communication/bt-410-dongle/#install-driver-manually
     urlkr: /parts/communication/bt-410-dongle/#드라이버-수동-설치
+  - title: "References"
+    titlekr: "참고자료"
+    url: /parts/communication/bt-410-dongle/#references
+    urlkr: /parts/communication/bt-410-dongle/#참고자료
+    children:
+    - title: "Certifications"
+      titlekr: "인증 획득"
+      url: /parts/communication/bt-410-dongle/#certifications
+      urlkr: /parts/communication/bt-410-dongle/#인증-획득
 
 #ZIG2Serial sidebar
 zig2serial:
@@ -20639,6 +20720,15 @@ u2d2:
     titlekr: "추가정보"
     url: /parts/interface/u2d2/#additional-features
     urlkr: /parts/interface/u2d2/#추가정보
+  - title: "References"
+    titlekr: "참고자료"
+    url: /parts/interface/u2d2/#references
+    urlkr: /parts/interface/u2d2/#참고자료
+    children:
+      - title: "Certifications"
+        titlekr: "인증 획득"
+        url: /parts/interface/u2d2/#certifications
+        urlkr: /parts/interface/u2d2/#인증-획득
 
 #FAQ sidebar
 faq:
