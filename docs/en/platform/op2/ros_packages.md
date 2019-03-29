@@ -18,10 +18,9 @@ sidebar:
 ## [OS Install](#os-install)
 
 ROBOTIS-OP2 is installed with Lubuntu 12.04 by default.  
-The ROS that can be installed on Lubuntu 12.04 (Precise Pangolin) is the "Hydro Medusa" version.  
-Although Ubuntu 16.04 and 18.04 can be installed on ROBOTIS-OP2, there are issues with the SBC graphic driver.  
+Although the Hydro Medusa ROS can be installed on Lubuntu 12.04 (Precise Pangolin), but it is recommended to use the latest version as possible.  
 
-Therefore, it is recommended to install **Linux Mint 17.3 (Rosa) - Xfce (32bit)** that is based on Ubuntu 14.04 (Trusty Tahr) in order to operate ROBOTIS-OP2 with ROS.  
+Since Ubuntu 16.04 and 18.04 have issues with the SBC graphic driver, it is recommended to install **Linux Mint 17.3 (Rosa) - Xfce (32bit)** that is based on Ubuntu 14.04 (Trusty Tahr) in order to operate ROBOTIS-OP2 with ROS.  
 Please refer to the link below for how to install Linux Mint:  
 > Install Guide : [Linux Mint Installation Guide]  
 > Download : [Linux Mint 17.3 "Rosa" - Xfce (32-bit)]  
