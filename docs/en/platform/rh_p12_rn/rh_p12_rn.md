@@ -18,7 +18,7 @@ product_group: rh_p12_rn
 
 > RH-P12-RN
 
-* **Releated Products:**   
+* **Related Products:**   
   * [Manipulator-H](http://emanual.robotis.com/docs/en/platform/manipulator_h/introduction/)
   
 
