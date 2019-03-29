@@ -7,5 +7,5 @@
 **참고** : 장치의 최대 속도와 최대 토크는 입력전압에 따라 달라집니다. 따라서 입력 전압에 따라 추종할 수 있는 최대 속도 역시 달라집니다. 매뉴얼에서는 권장전압을 기준으로 설명합니다.
 {: .notice}
 
-**참고** : Profile Acceleration(108)과 Goal Velocity(104)를 동시에 변경할 경우, 변경된 Profile Acceleration(108)이 적용되어 Goal Velocity(104)가 수행됩니다.
+**참고** : [Profile Acceleration(108)]과 Goal Velocity(104)를 동시에 변경할 경우, 변경된 [Profile Acceleration(108)]이 적용되어 Goal Velocity(104)가 수행됩니다.
 {: .notice}

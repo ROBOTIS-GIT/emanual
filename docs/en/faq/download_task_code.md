@@ -68,7 +68,7 @@ sidebar:
 
 2. Open the Task Code file(\*.tsk) from R+Task 2.0.
 
-3. Connect the battery(LBS-041) to the controller(CM-150) and turn on the controller.
+3. Connect the battery(LB-041) to the controller(CM-150) and turn on the controller.
 
 4. Connect the controller(CM-150) and the PC using a micro USB cable.
 

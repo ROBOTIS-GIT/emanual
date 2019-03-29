@@ -36,7 +36,8 @@ Remove bolts and cover plate to reveal External Port connector.
 
 {% if page.ref=='rh_p12_rn' or page.ref=='rh_p12_rna' %}
 ![](/assets/images/platform/rh_p12_rn/rh_p12_rn_external_port.png)
-
+{% elsif page.product_group=='dxl_pro_a' %}
+![](/assets/images/dxl/pro/pro_external_port.png)
 {% else %}
 ![](/assets/images/dxl/pro_plus/external_port.png)
 {% endif %}

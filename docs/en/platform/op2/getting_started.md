@@ -49,14 +49,14 @@ You can now focus your efforts more into developing the robot and less on devoti
 
 - Hardware Spec Comparison
 
-||DARWIN OP|ROBOTIS OP2|
-|:---:|:---:|:---:|
-|CPU|Intel Atom Z530<br />@1.6GHz single core|Intel Atom N2600<br />@1.6GHz dual core|
-|RAM|1GB DDR2<br />(fi xed capacity)|up to 4GB DDR3<br />204-pin SO-DIMM module<br />(user-replaceable)|
-|Storage|4GB NAND flash IDE100<br />(fixed capacity)|half-size mSATA module (32GB)<br />(user-replaceable)|
-|LAN speed|100 Mbps|1 Gbps|
-|Installable OS|Linux only (32-bit)|any Linux release (32-bit)<br />any Windows release (32-bit)|
-|wi-fi|802.11g|802.11n (2.4GHz-only)|
+|                |                  DARWIN OP                  |                            ROBOTIS OP2                             |
+|:--------------:|:-------------------------------------------:|:------------------------------------------------------------------:|
+|      CPU       |  Intel Atom Z530<br />@1.6GHz single core   |              Intel Atom N2600<br />@1.6GHz dual core               |
+|      RAM       |       1GB DDR2<br />(fi xed capacity)       | up to 4GB DDR3<br />204-pin SO-DIMM module<br />(user-replaceable) |
+|    Storage     | 4GB NAND flash IDE100<br />(fixed capacity) |       half-size mSATA module (32GB)<br />(user-replaceable)        |
+|   LAN speed    |                  100 Mbps                   |                               1 Gbps                               |
+| Installable OS |             Linux only (32-bit)             |    any Linux release (32-bit)<br />any Windows release (32-bit)    |
+|     wi-fi      |                   802.11g                   |                       802.11n (2.4GHz-only)                        |
 
 ROBOTIS OP2 is an affordable, miniature-humanoid-robot platform with advanced computational power, sophisticated sensors,
 high payload capacity, and dynamic motion ability to enable many exciting research and education activities.
@@ -235,7 +235,7 @@ You may find other ROBOTIS OP2-related softwares at:
   - RBrowser (for Mac users) : [http://www.rbrowser.com/](http://www.rbrowser.com/)
   - Chicken of the VNC (for Mac users) : [http://sourceforge.net/projects/cotvnc/](http://sourceforge.net/projects/cotvnc/)
 
-# [Miscellaneous](#miscellaneous)
+# [References](#references)
 
 ## [System Block Diagram](#system-block-diagram)
 
@@ -293,6 +293,12 @@ from ROBOTIS before their standard warranty period is over.
   Evaluation, maintenance and quality assurance of assembled robot can be provided by ROBOTIS only.  
   RMA is required and additional fee may apply. Service will not be rendered for seriously customized hardware.
 
+## [Certifications](#certifications)
+Please inquire us for information regarding unlisted certifications.
+
+### [FCC](#fcc)
+{% include en/dxl/fcc_class_a.md %}
+
 # [Sub Controller(CM-740)](#sub-controllercm-740)
 
 - `Download ZIP` [Framework](https://sourceforge.net/projects/darwinop/files/Software/Sub%20Controller/CM730_FIRMWARE_FRAMEWORK.zip/download)
@@ -301,20 +307,20 @@ from ROBOTIS before their standard warranty period is over.
 
 You can also get information about the  [gyroscope](http://sourceforge.net/projects/darwinop/files/Hardware/Electronics/Sub%20Controller/Datasheets/Sensor/DARwIn-OP_Gyroscope.pdf/download) and [accelerometer](http://sourceforge.net/projects/darwinop/files/Hardware/Electronics/Sub%20Controller/Datasheets/Sensor/DARwIn-OP_Accelerometer.pdf/download).
 
-|Feature|Specifications|
-|:---:|:---:|
-|CPU|STMicroelectronics 32F103RE ARM Cortex 32-bit CPU (clocked @ 72MHz)<br />(512KB Flash, 64KB SRAM )|
-|Interface|1x LED , 1 x Buzzer|
-|External ports|3 x ADC /I/O Ports|
-|Sensor|3-axis gyroscope , 3-axis accelerometer, supply voltage sensor|
-|Communication|USB Port, Serial Port , 5x TTL Ports (for Dynamixel)|
-|Audio & Mic Amp|Audio amp gain : 20, mic amp gain : 2027|
-|ETC|Dynamixel Power Control Unit, Head board port, Interface board port.|
-|External supply voltage|8V ~ 14.8v|
-|Current consumption|Maximum 200mA , Standby 130mA|
-|Dimensions|80.0mm x 43.0mm x 20.0mm|
-|Operation temperature|-65&deg;C to +80&deg;C|
-|Weight|26g|
+|         Feature         |                                           Specifications                                           |
+|:-----------------------:|:--------------------------------------------------------------------------------------------------:|
+|           CPU           | STMicroelectronics 32F103RE ARM Cortex 32-bit CPU (clocked @ 72MHz)<br />(512KB Flash, 64KB SRAM ) |
+|        Interface        |                                        1x LED , 1 x Buzzer                                         |
+|     External ports      |                                         3 x ADC /I/O Ports                                         |
+|         Sensor          |                   3-axis gyroscope , 3-axis accelerometer, supply voltage sensor                   |
+|      Communication      |                        USB Port, Serial Port , 5x TTL Ports (for Dynamixel)                        |
+|     Audio & Mic Amp     |                              Audio amp gain : 20, mic amp gain : 2027                              |
+|           ETC           |                Dynamixel Power Control Unit, Head board port, Interface board port.                |
+| External supply voltage |                                             8V ~ 14.8v                                             |
+|   Current consumption   |                                   Maximum 200mA , Standby 130mA                                    |
+|       Dimensions        |                                      80.0mm x 43.0mm x 20.0mm                                      |
+|  Operation temperature  |                                       -65&deg;C to +80&deg;C                                       |
+|         Weight          |                                                26g                                                 |
 
 ## [Control Table](#contrl-table)
 Control Table consists of data regarding the current status and operation of CM-740. The user can control CM-740 by changing data of Control Table via Instruction packet.
@@ -337,70 +343,70 @@ In the Control table, some data share the same name, but they are attached with 
 
 ## [EEPROM Area](#eeprom-area)
 
-|Address|Name|Description|Access|Init Value|
-|:---:|:---:|:---:|:---:|:---:|
-|0 (0X00)|Model Number(L)|model number low byte|R|0(0X00)|
-|1 (0X01)|Model Number(H)|model number high byte|R|116 (0X74)|
-|2 (0X02)|Version of Firmware|firmware version|R|-|
-|3 (0X03)|ID|Dynamixel ID|RW|200 (0XC8)|
-|4 (0X04)|Baud Rate|Dynamixel baud rate|RW|1 (0X01)|
-|5 (0X05)|Return Delay Time|Return Delay Time|RW|0 (0X0)|
-|16 (0X10)|Status Return Level|Status Return Level|RW|2 (0X02)|
+|  Address  |        Name         |      Description       | Access | Init Value |
+|:---------:|:-------------------:|:----------------------:|:------:|:----------:|
+| 0 (0X00)  |   Model Number(L)   | model number low byte  |   R    |  0(0X00)   |
+| 1 (0X01)  |   Model Number(H)   | model number high byte |   R    | 116 (0X74) |
+| 2 (0X02)  | Version of Firmware |    firmware version    |   R    |     -      |
+| 3 (0X03)  |         ID          |      Dynamixel ID      |   RW   | 200 (0XC8) |
+| 4 (0X04)  |      Baud Rate      |  Dynamixel baud rate   |   RW   |  1 (0X01)  |
+| 5 (0X05)  |  Return Delay Time  |   Return Delay Time    |   RW   |  0 (0X0)   |
+| 16 (0X10) | Status Return Level |  Status Return Level   |   RW   |  2 (0X02)  |
 
 ## [RAM Area](#ram-area)
 
-|Address|Name|Description|Access|Init Value|
-|:---:|:---:|:---:|:---:|:---:|
-|24 (0X18)|Dynamixel Power|Dynamixel On/Off|RW|0 (0X00)|
-|25 (0X19)|LED Pannel|LED Pannel On/Off|RW|0 (0X00)|
-|26 (0X1A)|LED 5 (L)|LED 5 low byte|RW|0 (0X00)|
-|27 (0X1B)|LED 5 (H)|LED 5 high byte|RW|0 (0X01)|
-|28 (0X1C)|LED 6 (L)|LED 6 low byte|RW|0 (0X00)|
-|29 (0X1D)|LED 6 (H)|LED 6 high byte|RW|0 (0X01)|
-|30 (0X1E)|Button|Button status|R|-|
-|38 (0X26)|Gyro_Z(L)|Gyroscope Z-axis low byte|R|-|
-|39 (0X27)|Gyro_Z(H)|Gyroscope Z-axis high byte|R|-|
-|40 (0X28)|Gyro_Y(L)|Gyroscope Y-axis low byte|R|-|
-|41 (0X29)|Gyro_Y(H)|Gyroscope Y-axis high byte|R|-|
-|42 (0X2A)|Gyro_X(L)|Gyroscope X-axis low byte|R|-|
-|43 (0X2B)|Gyro_X(H)|Gyroscope X-axis high byte|R|-|
-|44 (0X2C)|ACC_X(L)|Accelerometer X-axis low byte|R|-|
-|45 (0X2D)|ACC_X(H)|Accelerometer X-axis high byte|R|-|
-|46 (0X2E)|ACC_Y(L)|Accelerometer Y-axis low byte|R|-|
-|47 (0X2F)|ACC_Y(H)|Accelerometer Y-axis high byte|R|-|
-|48 (0X30)|ACC_Z(L)|Accelerometer Z-axis low byte|R|-|
-|49 (0x31)|ACC_Z(H)|Accelerometer Z-axis high byte|R|-|
-|50 (0X32)|Present Voltage|Current Voltage|R|-|
-|51 (0X33)|MIC 1 (L)|Mic 1 low byte|R|-|
-|52(0x34)|MIC 1 (H)|Mic 1 high byte|R|-|
-|53(0x35)|ADC 2(L)|ADC channel 2 low byte|R|-|
-|54(0x36)|ADC 2(H)|ADC channel 2 high byte|R|-|
-|55(0x37)|ADC 3(L)|ADC channel 3 low byte|R|-|
-|56(0x38)|ADC 3(H)|ADC channel 3 high vyte|R|-|
-|57(0x39)|ADC 4(L)|ADC channel 4 low byte|R|-|
-|58(0x3A)|ADC 4(H)|ADC channel 4 high byte|R|-|
-|59(0x3B)|ADC 5(L)|ADC channel 5 low byte|R|-|
-|60(0x3C)|ADC 5(H)|ADC channel 5 high byte|R|-|
-|61(0x3D)|ADC 6(L)|ADC channel 6 low byte|R|-|
-|62(0x3E)|ADC 6(H)|ADC channel 6 high byte|R|-|
-|63(0x3F)|ADC 7(L)|ADC channel 7 low byte|R|-|
-|64(0x40)|ADC 7(H)|ADC channel 7 high byte|R|-|
-|65(0x41)|ADC 8(L)|ADC channel 8 low byte|R|-|
-|66(0x42)|ADC 8(H)|ADC channel 8 high byte|R|-|
-|67(0x43)|MIC 2 (L)|Mic 2 low byte|R|-|
-|68(0x44)|MIC 2 (H)|Mic 2 high byte|R|-|
-|69(0x45)|ADC 10(L)|ADC channel 10 low byte|R|-|
-|70(0x46)|ADC 10(H)|ADC channel 10 high byte|R|-|
-|71(0x47)|ADC 11(L)|ADC channel 11 low byte|R|-|
-|72(0x48)|ADC 11(H)|ADC channel 11 high byte|R|-|
-|73(0x49)|ADC 12(L)|ADC channel 12 low byte|R|-|
-|74(0x4A)|ADC 12(H)|ADC channel 12 high byte|R|-|
-|75(0x4B)|ADC 13(L)|ADC channel 13 low byte|R|-|
-|76(0x4C)|ADC 13(H)|ADC channel 13 high byte|R|-|
-|77(0x4D)|ADC 14(L)|ADC channel 14 low byte|R|-|
-|78(0x4E)|ADC 14(H)|ADC channel 14 high byte|R|-|
-|79(0x4F)|ADC 15(L)|ADC channel 15 low byte|R|-|
-|80(0x50)|ADC 15(H)|ADC channel 15 high byte|R|-|
+|  Address  |      Name       |          Description           | Access | Init Value |
+|:---------:|:---------------:|:------------------------------:|:------:|:----------:|
+| 24 (0X18) | Dynamixel Power |        Dynamixel On/Off        |   RW   |  0 (0X00)  |
+| 25 (0X19) |   LED Pannel    |       LED Pannel On/Off        |   RW   |  0 (0X00)  |
+| 26 (0X1A) |    LED 5 (L)    |         LED 5 low byte         |   RW   |  0 (0X00)  |
+| 27 (0X1B) |    LED 5 (H)    |        LED 5 high byte         |   RW   |  0 (0X01)  |
+| 28 (0X1C) |    LED 6 (L)    |         LED 6 low byte         |   RW   |  0 (0X00)  |
+| 29 (0X1D) |    LED 6 (H)    |        LED 6 high byte         |   RW   |  0 (0X01)  |
+| 30 (0X1E) |     Button      |         Button status          |   R    |     -      |
+| 38 (0X26) |    Gyro_Z(L)    |   Gyroscope Z-axis low byte    |   R    |     -      |
+| 39 (0X27) |    Gyro_Z(H)    |   Gyroscope Z-axis high byte   |   R    |     -      |
+| 40 (0X28) |    Gyro_Y(L)    |   Gyroscope Y-axis low byte    |   R    |     -      |
+| 41 (0X29) |    Gyro_Y(H)    |   Gyroscope Y-axis high byte   |   R    |     -      |
+| 42 (0X2A) |    Gyro_X(L)    |   Gyroscope X-axis low byte    |   R    |     -      |
+| 43 (0X2B) |    Gyro_X(H)    |   Gyroscope X-axis high byte   |   R    |     -      |
+| 44 (0X2C) |    ACC_X(L)     | Accelerometer X-axis low byte  |   R    |     -      |
+| 45 (0X2D) |    ACC_X(H)     | Accelerometer X-axis high byte |   R    |     -      |
+| 46 (0X2E) |    ACC_Y(L)     | Accelerometer Y-axis low byte  |   R    |     -      |
+| 47 (0X2F) |    ACC_Y(H)     | Accelerometer Y-axis high byte |   R    |     -      |
+| 48 (0X30) |    ACC_Z(L)     | Accelerometer Z-axis low byte  |   R    |     -      |
+| 49 (0x31) |    ACC_Z(H)     | Accelerometer Z-axis high byte |   R    |     -      |
+| 50 (0X32) | Present Voltage |        Current Voltage         |   R    |     -      |
+| 51 (0X33) |    MIC 1 (L)    |         Mic 1 low byte         |   R    |     -      |
+| 52(0x34)  |    MIC 1 (H)    |        Mic 1 high byte         |   R    |     -      |
+| 53(0x35)  |    ADC 2(L)     |     ADC channel 2 low byte     |   R    |     -      |
+| 54(0x36)  |    ADC 2(H)     |    ADC channel 2 high byte     |   R    |     -      |
+| 55(0x37)  |    ADC 3(L)     |     ADC channel 3 low byte     |   R    |     -      |
+| 56(0x38)  |    ADC 3(H)     |    ADC channel 3 high vyte     |   R    |     -      |
+| 57(0x39)  |    ADC 4(L)     |     ADC channel 4 low byte     |   R    |     -      |
+| 58(0x3A)  |    ADC 4(H)     |    ADC channel 4 high byte     |   R    |     -      |
+| 59(0x3B)  |    ADC 5(L)     |     ADC channel 5 low byte     |   R    |     -      |
+| 60(0x3C)  |    ADC 5(H)     |    ADC channel 5 high byte     |   R    |     -      |
+| 61(0x3D)  |    ADC 6(L)     |     ADC channel 6 low byte     |   R    |     -      |
+| 62(0x3E)  |    ADC 6(H)     |    ADC channel 6 high byte     |   R    |     -      |
+| 63(0x3F)  |    ADC 7(L)     |     ADC channel 7 low byte     |   R    |     -      |
+| 64(0x40)  |    ADC 7(H)     |    ADC channel 7 high byte     |   R    |     -      |
+| 65(0x41)  |    ADC 8(L)     |     ADC channel 8 low byte     |   R    |     -      |
+| 66(0x42)  |    ADC 8(H)     |    ADC channel 8 high byte     |   R    |     -      |
+| 67(0x43)  |    MIC 2 (L)    |         Mic 2 low byte         |   R    |     -      |
+| 68(0x44)  |    MIC 2 (H)    |        Mic 2 high byte         |   R    |     -      |
+| 69(0x45)  |    ADC 10(L)    |    ADC channel 10 low byte     |   R    |     -      |
+| 70(0x46)  |    ADC 10(H)    |    ADC channel 10 high byte    |   R    |     -      |
+| 71(0x47)  |    ADC 11(L)    |    ADC channel 11 low byte     |   R    |     -      |
+| 72(0x48)  |    ADC 11(H)    |    ADC channel 11 high byte    |   R    |     -      |
+| 73(0x49)  |    ADC 12(L)    |    ADC channel 12 low byte     |   R    |     -      |
+| 74(0x4A)  |    ADC 12(H)    |    ADC channel 12 high byte    |   R    |     -      |
+| 75(0x4B)  |    ADC 13(L)    |    ADC channel 13 low byte     |   R    |     -      |
+| 76(0x4C)  |    ADC 13(H)    |    ADC channel 13 high byte    |   R    |     -      |
+| 77(0x4D)  |    ADC 14(L)    |    ADC channel 14 low byte     |   R    |     -      |
+| 78(0x4E)  |    ADC 14(H)    |    ADC channel 14 high byte    |   R    |     -      |
+| 79(0x4F)  |    ADC 15(L)    |    ADC channel 15 low byte     |   R    |     -      |
+| 80(0x50)  |    ADC 15(H)    |    ADC channel 15 high byte    |   R    |     -      |
 
 ## [Address Function Help](#address-function-help)
 
@@ -422,17 +428,17 @@ If the Broadcast ID is used to transmit Instruction Packet, then it can command 
 Represents the communication speed. 0 (0x00) to 254 (0xFE) can be used for it. This speed is calculated by using the below formula.  
 Speed(BPS) = 2000000/(Data+1)
 
-|Data|Set BPS|Target BPS|Tolerance|
-|:---:|:---:|:---:|:---:|
-|1|1000000.0|1000000.0|0.000 %|
-|3|500000.0|500000.0|0.000 %|
-|4|400000.0|400000.0|0.000 %|
-|7|250000.0|250000.0|0.000 %|
-|9|200000.0|200000.0|0.000 %|
-|16|117647.1|115200.0|-2.124 %|
-|34|57142.9|57600.0|0.794 %|
-|103|19230.8|19200.0|-0.160 %|
-|207|9615.4|9600.0|-0.160 %|
+| Data |  Set BPS  | Target BPS | Tolerance |
+|:----:|:---------:|:----------:|:---------:|
+|  1   | 1000000.0 | 1000000.0  |  0.000 %  |
+|  3   | 500000.0  |  500000.0  |  0.000 %  |
+|  4   | 400000.0  |  400000.0  |  0.000 %  |
+|  7   | 250000.0  |  250000.0  |  0.000 %  |
+|  9   | 200000.0  |  200000.0  |  0.000 %  |
+|  16  | 117647.1  |  115200.0  | -2.124 %  |
+|  34  |  57142.9  |  57600.0   |  0.794 %  |
+| 103  |  19230.8  |  19200.0   | -0.160 %  |
+| 207  |  9615.4   |   9600.0   | -0.160 %  |
 
 **NOTE** : Maximum Baud Rate error of 3% is within the tolerance of UART communication.
 {: .notice}
@@ -445,27 +451,27 @@ If the data value is delayed by 10, 20 usec the initial value is 250 (0xFA) (i.e
 ### Status Return Level
 Decides how to return Status packet. There are three possibilities:
 
-|Value|Return of Status Packet|
-|:---:|:---:|
-|0|No return against all commands (Except PING Command)|
-|1|Return only for the READ command|
-|2|Return for all commands|
+| Value |               Return of Status Packet                |
+|:-----:|:----------------------------------------------------:|
+|   0   | No return against all commands (Except PING Command) |
+|   1   |           Return only for the READ command           |
+|   2   |               Return for all commands                |
 
 **NOTE** : When Instruction packet is Broadcast ID, Status packet is not returned regardless of Status return level.
 {: .notice}
 
 ### Dynamixel Power
 
-|Value|Meaning|
-|:---:|:---:|
-|0|Turn off the power of all Dynamixels connected to CM-740.|
-|1|Turn on the power of all Dynamixels connected to CM-740.|
+| Value |                          Meaning                          |
+|:-----:|:---------------------------------------------------------:|
+|   0   | Turn off the power of all Dynamixels connected to CM-740. |
+|   1   | Turn on the power of all Dynamixels connected to CM-740.  |
 
 ### LED Pannel
 
-|BIT|7 ~ 3 |2|1|0|
-|:---:|:---:|:---:|:---:|:---:|
-|Value|X|LED4|LED3|LED2|
+|  BIT  | 7 ~ 3 |  2   |  1   |  0   |
+|:-----:|:-----:|:----:|:----:|:----:|
+| Value |   X   | LED4 | LED3 | LED2 |
 
 If each bit is SET, applicable LED lights up.  
 If each bit is RESET, applicable LED goes off.  
@@ -473,18 +479,18 @@ EX) When the LED Panel = 3 (00000101), the LED4 and LED2 light up.
 
 ### LED5 / LED6
 
-|BIT|15|14 ~ 10|9 ~ 5|4 ~ 0|
-|:---:|:---:|:---:|:---:|:---:|
-|Value|X|the value of blue light|the value of green light|the value of red light|
+|  BIT  | 15 |         14 ~ 10         |          9 ~ 5           |         4 ~ 0          |
+|:-----:|:--:|:-----------------------:|:------------------------:|:----------------------:|
+| Value | X  | the value of blue light | the value of green light | the value of red light |
 
 LED HEAD/ LED EYE is 3 color LED. It can represent the value of 32 steps by colors.  
 It can be represent by controling the value of light by colors.
 
 ### BUTTON STATUS
 
-|BIT|7 ~ 2|1|0|
-|:---:|:---:|:---:|:---:|
-|Value|X|the state value of START button|the state value of MODE button|
+|  BIT  | 7 ~ 2 |                1                |               0                |
+|:-----:|:-----:|:-------------------------------:|:------------------------------:|
+| Value |   X   | the state value of START button | the state value of MODE button |
 
 It is the value which represents the state of buttons.  
 If the bit is SET, it represents that the button is pressed.  
@@ -507,9 +513,9 @@ The Gyroscope and Accelerometer is 10mm distant respectively from the central ax
 
 > Accelerometer
 
-|![](/assets/images/platform/op2/op2_035.gif)|![](/assets/images/platform/op2/op2_036.gif)|
-|:---:|:---:|
-|The Gyroscope axis in the ROBOTIS-OP2|The Accelerometer axis in ROBOTIS-OP2|
+| ![](/assets/images/platform/op2/op2_035.gif) | ![](/assets/images/platform/op2/op2_036.gif) |
+|:--------------------------------------------:|:--------------------------------------------:|
+|    The Gyroscope axis in the ROBOTIS-OP2     |    The Accelerometer axis in ROBOTIS-OP2     |
 
 
 ### GYRO_X, GYRO_Y, GYRO_Z

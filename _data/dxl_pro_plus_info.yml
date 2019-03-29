@@ -112,21 +112,21 @@ m42p-010-s260-r:
   baudrate:           *baudrate
   opmode_en:          *opmode_en
   opmode:             *opmode
-  weight:             "340 [g]"
-  dimensions:         "42 x 84 x 42 [mm]"
+  weight:             "270 [g]"
+  dimensions:         "42 x 72 x 42 [mm]"
   resolution:         "526,374 [pulse/rev]"
-  gearratio:          "257.02:1"
+  gearratio:          "257.019:1"
   backlash:           *backlash_pro
   radialload:         *radialload_42
   radialload_en:      *radialload_42_en
   axialload:          *axialload_42
-  noloadspeed:        "32.7 [rev/min]"
-  noloadcurrent:      "0.57 [A]"
-  contspeed:          "29.2 [rev/min]"
-  conttorque:         "5.1 [Nm]"
-  contcurrent:        "1.5 [A]"
-  output:             "20 [W]"
-  optemperature:      *temperature
+  noloadspeed:        "28.0 [rev/min]"
+  noloadcurrent:      "0.52 [A]"
+  contspeed:          "26.0 [rev/min]"
+  conttorque:         "1.7 [Nm]"
+  contcurrent:        "0.6 [A]"
+  output:             "10 [W]"
+  temperature:        *temperature
   opvoltage:          *voltage
   commandsignal:      *command
   commandsignalkr:    *command_kr
@@ -141,7 +141,7 @@ m54p-040-s250-r:
   baudrate:           *baudrate
   opmode_en:          *opmode_en
   opmode:             *opmode
-  weight:             "740 [g]"
+  weight:             "710 [g]"
   dimensions:         "54 x 108 x 54 [mm]"
   resolution:         "502,834 [pulse/rev]"
   gearratio:          "251.417 : 1"
@@ -149,13 +149,13 @@ m54p-040-s250-r:
   radialload:         *radialload_54
   radialload_en:      *radialload_54_en
   axialload:          *axialload_54
-  noloadspeed:        "33.3 [rev/min]"
-  noloadcurrent:      "1.13 [A]"
-  contspeed:          "29.2 [rev/min]"
-  conttorque:         "25.3 [Nm]"
-  contcurrent:        "5.5 [A]"
-  output:             "100 [W]"
-  optemperature:      *temperature
+  noloadspeed:        "28.4 [rev/min]"
+  noloadcurrent:      "1.32 [A]"
+  contspeed:          "24.2 [rev/min]"
+  conttorque:         "3.9 [Nm]"
+  contcurrent:        "1.9 [A]"
+  output:             "40 [W]"
+  temperature:        *temperature
   opvoltage:          *voltage
   commandsignal:      *command
   commandsignalkr:    *command_kr
@@ -179,12 +179,12 @@ m54p-060-s250-r:
   radialload_en:      *radialload_54_en
   axialload:          *axialload_54
   noloadspeed:        "33.1 [rev/min]"
-  noloadcurrent:      "1.65 [A]"
-  contspeed:          "29.0 [rev/min]"
-  conttorque:         "44.7 [Nm]"
-  contcurrent:        "9.3 [A]"
-  output:             "200 [W]"
-  optemperature:      *temperature
+  noloadcurrent:      "1.25 [A]"
+  contspeed:          "28.3 [rev/min]"
+  conttorque:         "10.1 [Nm]"
+  contcurrent:        "3.0 [A]"
+  output:             "60 [W]"
+  temperature:        *temperature
   opvoltage:          *voltage
   commandsignal:      *command
   commandsignalkr:    *command_kr

@@ -121,15 +121,26 @@ Turtlebot3 can be moved by 2D point(x,y) and z-angular. For example, if you inse
 $ roslaunch turtlebot3_example turtlebot3_pointop_key.launch
 ```
 
+**[Remote PC]** Type the goal point. (x = 0.5m, y = 0.3m, degree = 60)
+``` bash
+0.5 0.3 60
+```
+
 ## [Patrol](#patrol)
 
-Turtlebot3 can be moved by custom routes. There are three routes(rectangle, triangle and circle). This example uses action topic. Action client translates patrol data(mode, area, count) to action server. And then action server translates `cmd_vel` to turtlebot3.
+Turtlebot3 can be moved by custom routes. There are three routes(square, triangle and circle). This example uses action topic. Action client translates patrol data(mode, area, count) to action server. And then action server translates `cmd_vel` to turtlebot3.
 
 **[Remote PC]** Run the patrol server file.
 ``` bash
 $ rosrun turtlebot3_example turtlebot3_server.py
 ```
+
 **[Remote PC]** Run the patrol client file.
 ``` bash
 $ rosrun turtlebot3_example turtlebot3_client.py
+```
+
+**[Remote PC]** Type the patrol data.(mode = square, area = 0.5m, count = 2)
+``` bash
+s 0.5 2
 ```

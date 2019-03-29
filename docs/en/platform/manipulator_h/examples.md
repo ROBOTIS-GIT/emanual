@@ -11,7 +11,7 @@ sidebar:
   nav: "manipulator_h"
 ---
 
-<div style="counter-reset: h1 2"></div>
+<div style="counter-reset: h1 3"></div>
 
 
 # [Examples](#examples)
@@ -23,18 +23,18 @@ ArmMonitor allows viewing of a joint current position, target position, end effe
 - Joint’s values table  
   Note that a press of \[, \{ key denote decrease by shown units and \}, \] denote increase by shown units.
 
-![](/assets/images/platform/manipulator/manipulator_h_049.png)
+![](/assets/images/platform/manipulator_h/manipulator_h_049.png)
 
 ### How to Use ArmMonitor
 
 #### ArmMonitor01
 - To start ArmMonitor01, create a new project; once created press the Ctrl + F5 keys to run.
 
-![](/assets/images/platform/manipulator/manipulator_h_050.gif)
+![](/assets/images/platform/manipulator_h/manipulator_h_050.gif)
 
 You will need to enter the COM port number and baud rate. Simply enter the values and “Succeed to open USB2Dynamixel” should appear onscreen followed by “Press any key to move first pose.” Use the keyboard to move the arm.         
 
-![](/assets/images/platform/manipulator/manipulator_h_051.png)
+![](/assets/images/platform/manipulator_h/manipulator_h_051.png)
 
 The following table is a list of baud rate values and its corresponding speed; Robotis Manipulator default value is 3 (1Mbps).
 
@@ -51,9 +51,9 @@ The following table is a list of baud rate values and its corresponding speed; R
 
 The photo below is the arm in its “arrival” pose.
 
-![](/assets/images/platform/manipulator/manipulator_h_052.png)
+![](/assets/images/platform/manipulator_h/manipulator_h_052.png)
 
-![](/assets/images/platform/manipulator/manipulator_h_053.gif)
+![](/assets/images/platform/manipulator_h/manipulator_h_053.gif)
 
 - Press the Ctrl + F5 keys simultaneously and the screen should appears like the picture above
 - From ArmMonitor01 change the joint’s target position and joint parameter to move the arm.
@@ -64,7 +64,7 @@ The photo below is the arm in its “arrival” pose.
 - **Values from joints 2 and 3, Calc&lt;rad&gt; and DYNAMIXEL&lt;rad&gt;, show on the red ares with “1” and “2” due to difference between point of origin and DH Configuration.**
 -  Calc&lt;rad&gt; is the calculated angle from DH and DYNAMIXEL&lt;rad&gt; from the servo’s. The cursor and only control Goal Value Joint Parameter.
 
-![](/assets/images/platform/manipulator/manipulator_h_054.gif)
+![](/assets/images/platform/manipulator_h/manipulator_h_054.gif)
 
 The Goal Value of Arm의 Calc&lt;rad&gt; value (enclosed by the red frame) can be increased with the‘]’ key. The unit is (&pi;/180)rad.  
 After adjusting the joint, check if the Manipulator follows.
@@ -74,22 +74,22 @@ ArmMonitor02 allows direct control of the end effector. Control the end effector
 
 - EndEffector pose table
 
-![](/assets/images/platform/manipulator/manipulator_h_055.png)
+![](/assets/images/platform/manipulator_h/manipulator_h_055.png)
 
 To setup and run ArmMonitor02 follow the same procedure as in ArmMonitor01.  
 As in ArmMonitor01 you will be asked to enter COM port number and baud rate. You should also see “Succeed to open USB2Dynamixel” followed by “Press any key to move first pose.” The arm moves to its initial pose.
 
-![](/assets/images/platform/manipulator/manipulator_h_056.png)
+![](/assets/images/platform/manipulator_h/manipulator_h_056.png)
 
 The photo below is the arm in its “arrival” pose.
 
-![](/assets/images/platform/manipulator/manipulator_h_052.png)
+![](/assets/images/platform/manipulator_h/manipulator_h_052.png)
 
-![](/assets/images/platform/manipulator/manipulator_h_057.gif)
+![](/assets/images/platform/manipulator_h/manipulator_h_057.gif)
 
 The different values of the end effector depicted from the red areas with “1” and “2” (from the screen output image above) is due to the difference of Dynamixel Pro’s Goal Position and Present Position values (gear backlash) and DH with the point of origin. **”1” shows the end effector’s pose via calculations from kinematics and “2” the actual pose**.
 
-![](/assets/images/platform/manipulator/manipulator_h_058.gif)
+![](/assets/images/platform/manipulator_h/manipulator_h_058.gif)
 
 Press the ] key to increase the end effector’s pose value by (&pi;/180)rad ; X increases by 2mm.
 **Visually verify arm movement every time when changing position**.
@@ -433,29 +433,29 @@ These 4 functions allows the directional keys to control cursor location.
 
   > UpdownGoalValue allows change in goal pose, UpDownJointParameter allows changes to  joint’s parameters (Velocity, Acceleration, Position P, I, D Gain,  Velocity P,  I Gain). UpDownValue combines both functions.
 
-## [SimplePtoP](#simpleptop)
+## [Simple P to P](#simple-p-to-p)
 
 **WARNING** : Product may move fast with this example. When testing this example keep a safe distance while able to cut power off in case of undesired operation.
 {: .notice--warning}
 
-SimplePtoP is the end effector’s move point (from P1 to P2).
+Simple P to P is the end effector’s move point (from P1 to P2).
 
-### How to Use SimplePtoP
-To start SimplePtoP follow the same procedure for ArmMonitor. Then press the Ctrl + F5 keys to run.
+### How to Use Simple P to P
+To start Simple P to P follow the same procedure for ArmMonitor. Then press the Ctrl + F5 keys to run.
 
-![](/assets/images/platform/manipulator/manipulator_h_059.jpg)
+![](/assets/images/platform/manipulator_h/manipulator_h_059.jpg)
 
 You will be asked for COM port number and baud rate.  
 If succeeded then you will see a ‘Succeed to open USB2Dynamixel’ followed by ‘Press any key to move first pose.' Press a key to move the arm to its initial pose.  
 Then press a key to begin P2P Motion. The photo below is the arm in its initial pose.
 
-![](/assets/images/platform/manipulator/manipulator_h_060.png)
+![](/assets/images/platform/manipulator_h/manipulator_h_060.png)
 
-![](/assets/images/platform/manipulator/manipulator_h_061.jpg)
+![](/assets/images/platform/manipulator_h/manipulator_h_061.jpg)
 
-SimplePtoP displays the joints’ pose(rad). In SimplePtoP prssing the 'p' or ‘P' will cause motion to pause. Press the ESC key to end.
+Simple P to P displays the joints’ pose(rad). In Simple P to P prssing the 'p' or ‘P' will cause motion to pause. Press the ESC key to end.
 
-### SimplePtoP Source Description
+### Simple P to P Source Description
 
 ```cpp
 vecd P1, P2;
@@ -528,17 +528,17 @@ MotionPlayer.Set_Time_Period(DEFAULT_Ctrl_TIME_PERIOD);
 
 > Sets time period. For value lesser than 0 then a default value (=8) gets inputted.
 
-## [SimpleIK](#simpleik)
+## [Simple IK](#simple-ik)
 
 **WARNING** : Use of this example may pose safety risks. When testing the example keep a safe distance while able to cut power off in case of undesired operation.
 {: .notice--warning}
 
-- Allows operation of end effector’s pose via position(X, Y, Z) and orientation(Roll, Pitch, Yaw). The keys for SimpleIK are q, w, e, r, t, y and a, s ,d ,f, g, h.
+- Allows operation of end effector’s pose via position(X, Y, Z) and orientation(Roll, Pitch, Yaw). The keys for Simple IK are q, w, e, r, t, y and a, s ,d ,f, g, h.
 
 - EndEffector Pose table
 
 |Control EndEffector|Position -> +5mm<br />orientation -> +(3&pi;/180)rad|Position -> -5mm<br />orientation -> -(3&pi;/180)rad|
-|:---:|:---:|
+|:---:|:---:|:---:|
 |Position X|q|a|
 |Position Y|w|s|
 |Position Z|e|d|
@@ -546,32 +546,32 @@ MotionPlayer.Set_Time_Period(DEFAULT_Ctrl_TIME_PERIOD);
 |Orientation Pitch|t|g|
 |Orientation Yaw|y|h|
 
-### How to Use SimpleIK
-To start SimpleIK start a new project just like SimplePtoP. Then press the Ctrl + F5 ekys to begin.
+### How to Use Simple IK
+To start Simple IK start a new project just like SimplePtoP. Then press the Ctrl + F5 ekys to begin.
 
-![](/assets/images/platform/manipulator/manipulator_h_062.jpg)
+![](/assets/images/platform/manipulator_h/manipulator_h_062.jpg)
 
-In SimpleIK you will be asked for COM port and baud rate numbers. If succeeded you will see a 'Succeed to open USB2Dynamixel' followed by ‘Press any key to move first pose.' Press a key to begin.
+In Simple IK you will be asked for COM port and baud rate numbers. If succeeded you will see a 'Succeed to open USB2Dynamixel' followed by ‘Press any key to move first pose.' Press a key to begin.
 The arm moves to its initial pose as shown below.
 
-![](/assets/images/platform/manipulator/manipulator_h_052.png)
+![](/assets/images/platform/manipulator_h/manipulator_h_052.png)
 
-![](/assets/images/platform/manipulator/manipulator_h_063.jpg)
+![](/assets/images/platform/manipulator_h/manipulator_h_063.jpg)
 
 This windows pops up after the arms moves to its initial pose. The values printed are the joints’ angles(rad). Press the keys(ex : q, w....) to move the end effector.
 
-![](/assets/images/platform/manipulator/manipulator_h_064.jpg)
+![](/assets/images/platform/manipulator_h/manipulator_h_064.jpg)
 
-SimpleIK q key control the 3rd value.  
+Simple IK q key control the 3rd value.  
 Q controls the end effector position (X) by increasing delta(5mm)amounts.  
 **Visually verify arm movement every time when changing position.**
 
-![](/assets/images/platform/manipulator/manipulator_h_065.png)
+![](/assets/images/platform/manipulator_h/manipulator_h_065.png)
 
 Press the q and r keys 3 times each. The r key controls the end effector’s roll. The orientation (Roll, Pitch, Yaw) change by (3&pi;/180)rad per keystroke.  
 **Visually verify arm movement every time when changing position.**
 
-### SimpleIK Source Description
+### Simple IK Source Description
 
 ```cpp
 if(temp == 'q')
@@ -696,7 +696,7 @@ When error is too large and IK is unrealizable 'No IK Solution‘ will be displa
 The sample code from above is broken down below. Press the r key to move the roll by delta_angle_rad.  
 The desired rotation matrix can then be obtain with the following
 
-![](/assets/images/platform/manipulator/manipulator_h_066.gif)
+![](/assets/images/platform/manipulator_h/manipulator_h_066.gif)
 
 Where the code is shown below.
 
@@ -713,21 +713,21 @@ vecd DesiredRPY = Algebra::GetEulerRollPitchYaw(DesiredRotation);
 
 > DesiredRotation’s roll, pitch, and yaw.
 
-## [SimpleTorqueFK](#simpletorquefk)
+## [Simple Torque FK](#simple-torque-fk)
 
 Turns the Manipulator joints’ torque on/off. When torque goes off→on Forward Kinematics runs and putputs all joints pose(rad) and end effector’s position and orientation.
 
 ### How to Use SimpleTorqueOnOffandFK
 To start SimpleTorqueOnOffandFK start a new project just like SimplePtoP. Then press the Ctrl+F5 keys to begin.SimpleTorqueOnOffandFK.
 
-![](/assets/images/platform/manipulator/manipulator_h_067.jpg)
+![](/assets/images/platform/manipulator_h/manipulator_h_067.jpg)
 
 Input the COM port and baud rate numbers. If succeeded you will see a 'Succeed to open USB2Dynamixel;' then torque gets turned off.
 Press the Enter key turn torque on and the arm’s joints pose(rad) and end effector’s pose(rad) will be displayed (joints 1 through 6).
 
-![](/assets/images/platform/manipulator/manipulator_h_068.jpg)
+![](/assets/images/platform/manipulator_h/manipulator_h_068.jpg)
 
-![](/assets/images/platform/manipulator/manipulator_h_069.jpg)
+![](/assets/images/platform/manipulator_h/manipulator_h_069.jpg)
 
 Press Enter again to turn torque off and it will display 'Torque Off.'
 

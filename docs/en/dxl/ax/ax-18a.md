@@ -217,6 +217,17 @@ product_group: dxl_ax
 [Harness Compatibility]{: .popup}
 {: .notice}
 
+## [Certifications](#certifications)
+Please inquire us for information regarding unlisted certifications.
+
+### [FCC](#fcc)
+
+#### AX-18A
+{% include en/dxl/fcc_class_a.md %}
+
+#### AX-18F
+{% include en/dxl/fcc_class_b.md %}
+
 ## [Connector Information](#connector-information)
 
 {% include en/dxl/molex_ttl.md %}
@@ -229,7 +240,6 @@ product_group: dxl_ax
 
 {% include en/dxl/485_ttl_connection.md %}
 
-[Two's complement]: #
-
 [Compatibility Guide]: http://en.robotis.com/service/compatibility_table.php?cate=d
-[Harness Compatibility]: /assets/images/dxl/cable_compatibility.png
+
+{% include en/dxl/common_link.md %}

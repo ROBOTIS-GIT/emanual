@@ -47,24 +47,24 @@ product_group: dxl_mx
 
 ## [EEPROM 영역](#eeprom-영역)
 
-| 주소     | 크기<br>(Byte)     | 명칭     | 의미    | 접근     | 기본값  |
-| :---------: | :-----------:  | :----------- | :------------ | :--------: | :------------: |
-|0|2|[Model Number](#model-number)         | 모델 번호의 바이트      | R       | 104 |
-|2|1|[Firmware Version](#firmware-version)    |펌웨어 버전 정보|R|-|
-|3|1|[ID](#id)                  |통신 ID     |RW|1|
-|4|1|[Baud Rate](#baud-rate)           |통신 속도|RW|1|
-|5|1|[Return Delay Time](#return-delay-time)   |응답 지연 시간|RW|250|
-|6|2|[CW Angle Limit](#cw-angle-limit)          |시계 방향 한계 각도 값의 바이트|RW|0|
-|8|2|[CCW Angle Limit](#ccw-angle-limit)          |반시계 방향 한계 각도 값의 바이트|RW|4,095|
-|11|1|[Temperature Limit](#temperature-limit)   |내부 한계 온도|RW|70|
-|12|1|[Min Voltage Limit](#min-voltage-limit)   |최저 한계 전압|RW|60|
-|13|1|[Max Voltage Limit](#max-voltage-limit)   |최고 한계 전압|RW|160|
-|14|2|[Max Torque](#max-torque)           |토크 한계 값의 바이트|RW|1023|
-|16|1|[Status Return Level](#status-return-level)      |응답 레벨|RW|2|
-|17|1|[Alarm LED](#alarm-led)                             |알람용 LED 기능|RW|36|
-|18|1|[Shutdown](#shutdown)            |알람용 셧 다운(Shut down) 기능|RW|36|
-|20|2|[Multi Turn Offset](#multi-turn-offset)   |다중 회전 오프셋 바이트|RW|0|
-|22|1|[Resolution Divider](#resolution-divider) |해상도 디바이더|RW|1|
+| 주소 | 크기<br>(Byte) | 명칭                                        | 의미                              | 접근 | 기본값 |
+|:----:|:--------------:|:--------------------------------------------|:----------------------------------|:----:|:------:|
+|  0   |       2        | [Model Number](#model-number)               | 모델 번호의 바이트                |  R   |  360   |
+|  2   |       1        | [Firmware Version](#firmware-version)       | 펌웨어 버전 정보                  |  R   |   -    |
+|  3   |       1        | [ID](#id)                                   | 통신 ID                           |  RW  |   1    |
+|  4   |       1        | [Baud Rate](#baud-rate)                     | 통신 속도                         |  RW  |   1    |
+|  5   |       1        | [Return Delay Time](#return-delay-time)     | 응답 지연 시간                    |  RW  |  250   |
+|  6   |       2        | [CW Angle Limit](#cw-angle-limit)           | 시계 방향 한계 각도 값의 바이트   |  RW  |   0    |
+|  8   |       2        | [CCW Angle Limit](#ccw-angle-limit)         | 반시계 방향 한계 각도 값의 바이트 |  RW  | 4,095  |
+|  11  |       1        | [Temperature Limit](#temperature-limit)     | 내부 한계 온도                    |  RW  |   70   |
+|  12  |       1        | [Min Voltage Limit](#min-voltage-limit)     | 최저 한계 전압                    |  RW  |   60   |
+|  13  |       1        | [Max Voltage Limit](#max-voltage-limit)     | 최고 한계 전압                    |  RW  |  160   |
+|  14  |       2        | [Max Torque](#max-torque)                   | 토크 한계 값의 바이트             |  RW  |  1023  |
+|  16  |       1        | [Status Return Level](#status-return-level) | 응답 레벨                         |  RW  |   2    |
+|  17  |       1        | [Alarm LED](#alarm-led)                     | 알람용 LED 기능                   |  RW  |   36   |
+|  18  |       1        | [Shutdown](#shutdown)                       | 알람용 셧 다운(Shut down) 기능    |  RW  |   36   |
+|  20  |       2        | [Multi Turn Offset](#multi-turn-offset)     | 다중 회전 오프셋 바이트           |  RW  |   0    |
+|  22  |       1        | [Resolution Divider](#resolution-divider)   | 해상도 디바이더                   |  RW  |   1    |
 
 
 ## [RAM 영역](#ram-영역)
@@ -242,4 +242,5 @@ Value 값이 250 이상인 경우 :
 {% include kr/dxl/download_center_notice.md %}
 
 [호환성 가이드]: http://www.robotis.com/service/compatibility_table.php?cate=d
-[케이블 호환성]: /assets/images/dxl/cable_compatibility.png
+
+{% include kr/dxl/common_link.md %}

@@ -1,0 +1,46 @@
+---
+---
+
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.4.1 by Michael Rose
+  Copyright 2017 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
+-->
+<!-- <html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js"> -->
+<html lang="{{ page.lang | default: "en" }}" class="no-js">
+  <head>
+    <title>A web page that points a browser to a different page after 2 seconds</title>
+    <meta http-equiv="refresh" content="0; URL={{ page.redirecturl }}">
+    <meta name="keywords" content="automatic redirection">
+    {% include head.html %}
+    {% include head/custom.html %}
+    <script type="text/javascript" src="/assets/js/plugins/elasticlunr.js"></script>
+    <script src="/assets/js/search.js"></script>
+    <!-- <script src="/assets/js/robotis_product_parse.js"></script> -->
+    <!-- <script type="text/javascript" src="/assets/js/plugins/lunr.js"></script> -->
+  </head>
+
+  <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
+
+    {% include browser-upgrade.html %}
+    {% include masthead.html %}
+
+    {{ content }}
+
+    {% if page.layout == 'archive' %}
+    <div class="page__footer archive_footer">
+    {% else %}
+    <div class="page__footer splash_footer">
+    {% endif %}
+      <footer>
+        {% include footer/custom.html %}
+        {% include footer.html %}
+      </footer>
+    </div>
+
+    {% include scripts.html %}
+
+  </body>
+</html>

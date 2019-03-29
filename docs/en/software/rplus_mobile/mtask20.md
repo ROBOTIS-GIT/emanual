@@ -16,10 +16,22 @@ sidebar:
 R+m.Task 2.0 provides identical functions on Android / iOS devices as R+Task 2.0 does on PC.  
 Downloading, editing, debugging tasks, and remote controller is supported.
 
-## [Cautions](#cautions)
+## [System Requirements](#system-requirements)
 
 Please keep the lastest firmware for the controller.  
 The device must support bluetooth in order to use download feature.
+
+### [Android](#android)
+  - OS : Android 2.3
+  - Hardware : 1.2 dual-core CPU, 1GB RAM, Bluetooth/IMU sensor
+  - BT-410 Support (Android 4.4 or above)
+  - BT-210, BT-110 Support
+
+### [Apple](#apple)
+  - OS : iOS 8.0
+  - Hardware : iPhone4S, iPod 5G, iPad mini, iPad 2
+  - BT-410 Support
+  - BT-210, BT-110 **NOT supported**
 
 ## [Supported Products](#supported-products)
 
@@ -39,6 +51,16 @@ The device must support bluetooth in order to use download feature.
 - [CM-530]
 - [CM-700]
 - [OpenCM9.04]
+- [OpenCM7.0]
+
+## [App Download](#app-download)
+
+- [Android App Download](https://play.google.com/store/apps/details?id=com.robotis.task2)
+- [iPhone App Download](https://itunes.apple.com/us/app/r-m-task2-robotis/id1031166481?mt=8)
+
+## [App Installation](#app-installation)
+
+{% include en/software/mobile_app/task/install.md %}
 
 # [Menu Descriptions](#menu-descriptions)
 
@@ -315,30 +337,6 @@ R+m.Task 2.0 uses identical parameters from R+Task 2.0.
 Please refer to [Programming(Parameters)] section of the R+Task 2.0 manual.
 
 [Programming(Parameters)]: /docs/en/software/rplus2/task/#programmingparameters
-
-# [Software Download](#software-download)
-
-## [Android](#android)
-- Minimum System Requirements
-  - OS : Android 2.3
-  - Hardware : 1.2 dual-core CPU, 1GB RAM, Bluetooth/IMU sensor
-
-- Communication
-  - BT-410 Support (Android 4.4 or above)
-  - BT-210, BT-110 Support
-
-- [Download](https://play.google.com/store/apps/details?id=com.robotis.task2)
-
-## [Apple](#apple)
-- Minimum System Requirements
-  - OS : iOS 8.0
-  - Hardware : iPhone4S, iPod 5G, iPad mini, iPad 2
-
-- Communication
-  - BT-410 Support
-  - BT-210, BT-110 Not supported
-
-- [Download](https://itunes.apple.com/us/app/r-m-task2-robotis/id1031166481?mt=8)
 
 # [Useful Tips](#useful-tips)
 

@@ -1,7 +1,7 @@
 ---
 layout: archive
 lang: en
-ref: faq
+ref: turtlebot3_faq
 read_time: true
 share: true
 author_profile: false
@@ -11,7 +11,7 @@ sidebar:
   nav: "turtlebot3"
 ---
 
-<div style="counter-reset: h1 22"></div>
+<div style="counter-reset: h1 23"></div>
 
 # [FAQ](#faq)
 

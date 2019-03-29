@@ -235,7 +235,7 @@ Therefore, Goal Position(564) should not exceed the limit range. Attempting to w
 {% include en/dxl/pro_plus/control_table_168_indirect.md %}
 
 ### <a name="torque-enable"></a>**[Torque Enable(512)](#torque-enable512)**
-{% include en/dxl/pro_plus/control_table_512_torque_enable.md %}
+{% include en/dxl/control_table_torque_enable.md %}
 
 ### <a name="led"></a>**[RGB LED](#rgb-led)**
 {% include en/dxl/pro_plus/control_table_513_led.md %}
@@ -442,5 +442,10 @@ This is a desired position trajectory created by Profile. This value is only use
 `Download` [RH-P12-RN(PDF).zip](http://www.robotis.com/service/download.php?no=740)  
 `Download` [RH-P12-RN(STP).zip](http://www.robotis.com/service/download.php?no=741)
 
+## [Certifications](#certifications)
+Please inquire us for information regarding unlisted certifications.
 
-[Torque Enable(562)]: #torque-enable562
+### [FCC](#fcc)
+{% include en/dxl/fcc_class_b.md %}
+
+{% include en/dxl/common_link.md %}

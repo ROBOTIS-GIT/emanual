@@ -142,11 +142,11 @@ This address stores firmware version of the RH-P12-RN.
 ### <a name="operating-mode"></a>**[Operating Mode(11)](#operating-mode11)**
 Operating mode of the device can be configured. Each control mode has different characteristics so please choose appropriate mode for the application.
 
-| Value      | Operating Mode                      | Description                                                              |
-|:-----------|:------------------------------------|:-------------------------------------------------------------------------|
-| 0          | Current Control Mode                | This mode only controls Current regardless of speed and position.        |
-| 1 ~ 4      | Reserved                            | -                                                                        |
-| 5(Default) | Current based Position Control Mode | This mode controls both Position and Current.                            |
+| Value      | Operating Mode                      | Description                                                       |
+|:-----------|:------------------------------------|:------------------------------------------------------------------|
+| 0          | Current Control Mode                | This mode only controls Current regardless of speed and position. |
+| 1 ~ 4      | Reserved                            | -                                                                 |
+| 5(Default) | Current based Position Control Mode | This mode controls both Position and Current.                     |
 
 ### <a name="moving-threshold"></a>**[Moving Threshold(17)](#moving-threshold17)**
 {% include en/dxl/control_table_17_movingthreshold_pro.md %}
@@ -268,7 +268,7 @@ The Dynamixel can protect itself by detecting dangerous situations that could oc
 {% include en/dxl/control_table_49_indirectdata_pro.md %}
 
 ### <a name="torque-enable"></a>**[Torque Enable(562)](#torque-enable562)**
-{% include en/dxl/control_table_torque_enable_2.md %}
+{% include en/dxl/control_table_torque_enable.md %}
 
 ### <a name="led"></a>**[RGB LED(563)](#rgb-led563)**
 {% include en/dxl/control_table_563_led_pro.md %}
@@ -320,7 +320,7 @@ Goal Current is used for other purposes according to Operating Mode(11).
 
 |             Operating Mode              |                    Goal Current                    |
 |:---------------------------------------:|:--------------------------------------------------:|
-| 0 (Current Control Mode)                | Goal Current(604) is used as Target Current value  |
+|        0 (Current Control Mode)         | Goal Current(604) is used as Target Current value  |
 | 5 (Current-based Position Control Mode) | Goal Current(604) is used as Maximum Current value |
 
 Also, [Goal Current(604)] cannot exceed Current Limit(30).
@@ -383,14 +383,14 @@ This value indicates present internal Temperature. For more details, please refe
 
 ## [Connector Information](#connector-information)
 
-|     Item     |                            RS-485                           |                              External Port                               |
-|:------------:|:-----------------------------------------------------------:|:------------------------------------------------------------------------:|
-|    Pinout    |        `1` GND<br>`2` VDD<br>`3` DATA+<br>`4` DATA-         |`1` GND<br>`2` VDD<br>`3` PORT 1<br>`4` PORT 2<br>`5` PORT 3<br>`6` PORT 4|
-|   Diagram    |       ![](/assets/images/dxl/jst_b4beha_diagram.png)        |           ![](/assets/images/dxl/molex_5304706_diagram.png)              |
-|   Housing    |   ![](/assets/images/dxl/JST_EHR-4.png)<br />[JST EHR-04]   |   ![](/assets/images/dxl/molex_510210600.png)<br />[MOLEX 51021-0600]    |
-|  PCB Header  | ![](/assets/images/dxl/jst_b4beha.png)<br />[JST B4B-EH-A]  |   ![](/assets/images/dxl/molex_530470610.png)<br />[MOLEX 53047-0610]    |
-|Crimp Terminal|                    [JST SEH-001T-P0.6]                      |                            [MOLEX 50079-8100]                            |
-|  Wire Gauge  |                           21 AWG                            |                                  21 AWG                                  |
+|      Item      |                           RS-485                           |                               External Port                                |
+|:--------------:|:----------------------------------------------------------:|:--------------------------------------------------------------------------:|
+|     Pinout     |        `1` GND<br>`2` VDD<br>`3` DATA+<br>`4` DATA-        | `1` GND<br>`2` VDD<br>`3` PORT 1<br>`4` PORT 2<br>`5` PORT 3<br>`6` PORT 4 |
+|    Diagram     |       ![](/assets/images/dxl/jst_b4beha_diagram.png)       |             ![](/assets/images/dxl/molex_5304706_diagram.png)              |
+|    Housing     |  ![](/assets/images/dxl/JST_EHR-4.png)<br />[JST EHR-04]   |    ![](/assets/images/dxl/molex_510210600.png)<br />[MOLEX 51021-0600]     |
+|   PCB Header   | ![](/assets/images/dxl/jst_b4beha.png)<br />[JST B4B-EH-A] |    ![](/assets/images/dxl/molex_530470610.png)<br />[MOLEX 53047-0610]     |
+| Crimp Terminal |                    [JST SEH-001T-P0.6]                     |                             [MOLEX 50079-8100]                             |
+|   Wire Gauge   |                           21 AWG                           |                                   21 AWG                                   |
 
 [JST EHR-04]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
 [JST B4B-EH-A]: http://www.jst-mfg.com/product/pdf/eng/eEH.pdf
@@ -404,9 +404,10 @@ This value indicates present internal Temperature. For more details, please refe
 `Download` [RH-P12-RN(PDF).zip](http://www.robotis.com/service/download.php?no=740)  
 `Download` [RH-P12-RN(STP).zip](http://www.robotis.com/service/download.php?no=741)
 
+## [Certifications](#certifications)
+Please inquire us for information regarding unlisted certifications.
 
-[Torque Enable(562)]: #torque-enable562
-[Goal Current(604)]: #goal-current604
-[Acceleration Limit(26)]: #acceleration-limit26
-[Goal Acceleration(606)]: #goal-acceleration606
-[Goal Velocity(600)]: #goal-velocity600
+### [FCC](#fcc)
+{% include en/dxl/fcc_class_b.md %}
+
+{% include en/dxl/common_link.md %}

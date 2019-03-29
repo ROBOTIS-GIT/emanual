@@ -5,7 +5,7 @@
 |:-------------------------:|:-----------------:|:----------:|:-----------------------------:|
 |   Velocity I Gain(524)    |  K<sub>V</sub>I   | 0 ~ 32,767 |     Veocity Integral Gain     |
 |   Velocity P Gain(526)    |  K<sub>V</sub>P   | 0 ~ 32,767 |  Velocity Proportional Gain   |
-| Feedforward 2nd Gain(536) | K<sub>FF1st</sub> | 0 ~ 32,767 | Acceleration Feedforward Gain |
+| Feedforward 2nd Gain(536) | K<sub>FF2nd</sub> | 0 ~ 32,767 | Acceleration Feedforward Gain |
 
 다음은 속도 제어 모드에서 동작하는 속도제어기의 블록다이어그램입니다. 사용자의 요청이 장치에 전달된 후, 장치의 Horn이 구동되기까지의 과정은 다음과 같습니다.
 

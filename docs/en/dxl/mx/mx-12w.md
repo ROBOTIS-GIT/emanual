@@ -45,7 +45,7 @@ product_group: dxl_mx
 
 | Address | Size<br>(Byte) | Data Name                                   | Description                        | Access | Initial<br />Value |
 |:-------:|:--------------:|:--------------------------------------------|:-----------------------------------|:------:|:------------------:|
-|    0    |       2        | [Model Number](#model-number)               | Model Number                       |   R    |        104         |
+|    0    |       2        | [Model Number](#model-number)               | Model Number                       |   R    |        360         |
 |    2    |       1        | [Firmware Version](#firmware-version)       | Firmware Version                   |   R    |         -          |
 |    3    |       1        | [ID](#id)                                   | DYNAMIXEL ID                       |   RW   |         1          |
 |    4    |       1        | [Baud Rate](#baud-rate)                     | Communication Speed                |   RW   |         1          |
@@ -254,4 +254,5 @@ For example, if it is set to 300 then the motor is moving to the CCW direction a
 {% include en/dxl/download_center_notice.md %}
 
 [Compatibility Guide]: http://en.robotis.com/service/compatibility_table.php?cate=d
-[Harness Compatibility]: /assets/images/dxl/cable_compatibility.png
+
+{% include en/dxl/common_link.md %}

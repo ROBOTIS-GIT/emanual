@@ -23,23 +23,24 @@ The development environment for OpenCR1.0 is wide open from Arduino IDE and Scra
 
 # [Specifications](#specifications)
 
-| Items               | Specifications                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-|:--------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Microcontroller     | STM32F746ZGT6 / 32-bit ARM Cortex®-M7 with  FPU (216MHz, 462DMIPS)<br />[Reference Manual], [Datasheet]                                                                                                                                                                                                                                                                                                                                                             |
-| Sensors             | Gyroscope 3Axis, Accelerometer 3Axis, Magnetometer 3Axis (MPU9250)                                                                                                                                                                                                                                                                                                                                                                                                  |
-| Programmer          | ARM Cortex 10pin JTAG/SWD connector<br />USB Device Firmware Upgrade (DFU)<br />Serial                                                                                                                                                                                                                                                                                                                                                                              |
-| Digital I/O         | 32 pins (L 14, R 18) *Arduino connectivity<br />5Pin OLLO x 4<br />GPIO x 18 pins<br />PWM x 6<br />I2C x 1<br />SPI x 1                                                                                                                                                                                                                                                                                                                                            |
-| Analog INPUT        | ADC Channels (Max 12bit) x 6                                                                                                                                                                                                                                                                                                                                                                                                                  |
-| Communication Ports | USB x 1 (Micro-B USB connector/USB 2.0/Host/Peripheral/OTG)<br />TTL x 3 ([B3B-EH-A] / Dynamixel)<br />RS485 x 3 ([B4B-EH-A] / Dynamixel)<br />UART x 2 ([20010WS-04])<br />CAN x 1 ([20010WS-04])                                                                                                                                                                                                                                                                  |
-| LEDs and buttons    | LD2 (red/green) : USB communication<br />User LED x 4 : LD3 (red), LD4 (green), LD5 (blue)<br />User button  x 2                                                                                                                                                                                                                                                                                                                                                    |
-| Powers              | External input source<br />5 V (USB VBUS), 7-24 V (Battery or SMPS)<br />Default battery : LI-PO 11.1V 1,800mAh 19.98Wh<br />Default SMPS: 12V 5A<br />External output source<br />`1`12V max 5A([SMW250-02]), `1`5V max 4A([5267-02A]), 3.3V@800mA([20010WS-02])<br />External battery Port for RTC (Real Time Clock) ([Molex 53047-0210])<br />Power LED: LD1 (red, 3.3 V power on)<br />Reset button x 1 (for power reset of board)<br />Power on/off switch x 1 |
-| Dimensions          | 105(W) X 75(D) mm                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
-| Mass                | 60g                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| Items                | Specifications                                                                                                                                                                                                                            |
+|:---------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Microcontroller      | STM32F746ZGT6 / 32-bit ARM Cortex®-M7 with  FPU (216MHz, 462DMIPS)<br />[Reference Manual], [Datasheet]                                                                                                                                   |
+| Sensors              | Gyroscope 3Axis, Accelerometer 3Axis, Magnetometer 3Axis (MPU9250)                                                                                                                                                                        |
+| Programmer           | ARM Cortex 10pin JTAG/SWD connector<br />USB Device Firmware Upgrade (DFU)<br />Serial                                                                                                                                                    |
+| Digital I/O          | 32 pins (L 14, R 18) *Arduino connectivity<br />5Pin OLLO x 4<br />GPIO x 18 pins<br />PWM x 6<br />I2C x 1<br />SPI x 1                                                                                                                  |
+| Analog INPUT         | ADC Channels (Max 12bit) x 6                                                                                                                                                                                                              |
+| Communication Ports  | USB x 1 (Micro-B USB connector/USB 2.0/Host/Peripheral/OTG)<br />TTL x 3 ([B3B-EH-A] / Dynamixel)<br />RS485 x 3 ([B4B-EH-A] / Dynamixel)<br />UART x 2 ([20010WS-04])<br />CAN x 1 ([20010WS-04])                                        |
+| LEDs and buttons     | LD2 (red/green) : USB communication<br />User LED x 4 : LD3 (red), LD4 (green), LD5 (blue)<br />User button  x 2<br />Power LED : LD1 (red, 3.3 V power on)<br />Reset button x 1 (for power reset of board)<br />Power on/off switch x 1 |
+| Input Power Sources  | 5 V (USB VBUS), 7-24 V (Battery or SMPS)<br />Default battery : LI-PO 11.1V 1,800mAh 19.98Wh<br />Default SMPS : 12V 4.5A<br />External battery Port for RTC (Real Time Clock) ([Molex 53047-0210])                                       |
+| Output Power Sources | <sup>`*`</sup>12V max 4.5A([SMW250-02])<br /><sup>`*`</sup>5V max 4A([5267-02A]), 3.3V@800mA([20010WS-02])                                                                                                                                |
+| Dimensions           | 105(W) X 75(D) mm                                                                                                                                                                                                                         |
+| Weight               | 60g                                                                                                                                                                                                                                       |
 
-`1` 5V power source is supplied from regulated 12V output.
+<sup>`*`</sup> 5V power source is supplied from regulated 12V output.
 {: .notice}
 
-**NOTE** : Hot swap power switch between "shore power"(12V, 5A SMPS) and "mobile power"(battery) from OpenCR1.0 board enables UPS(Uninterrupted Power Supply) feature.
+**NOTE** : Hot swap power switch between "shore power"(12V, 4.5A SMPS) and "mobile power"(battery) from OpenCR1.0 board enables UPS(Uninterrupted Power Supply) feature.
 {: .notice}
 
 # [Layout/Pin Map](#layoutpin-map)
@@ -1241,6 +1242,12 @@ Error while burning bootloader.
 5. Enter Bootloader by holding `Boot` button and press `Reset` button and check the driver is correctly installed from the device manager.
 
     ![](/assets/images/parts/controller/opencr10/dfu_device_manager.png)
+    
+## [Certifications](#certifications)
+Please inquire us for information regarding unlisted certifications.
+
+### [FCC](#fcc)
+{% include en/dxl/fcc_class_a.md %}
 
 
 # [Bootloader](#bootloader)

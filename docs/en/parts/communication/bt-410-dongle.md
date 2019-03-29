@@ -37,23 +37,23 @@ Please make sure to turn off the controller before connecting the Bluetooth modu
 
 # [Specifications](#specifications)
 
-|Item|Description|
-|:---:|:---:|
-|Weight|7.5g|
-|Dimension|50.5mm x 20mm x 10.5mm|
-|Bluetooth| Bluetooth Specification 4.0 Low Energy Support|
-|Effective Communication Distance|10M|
-|Frequency|2.4GHz ISM Band|
-|Bandwidth|MAX 128kbps|
-|Default baud rate|57,600bps|
-|Operating Voltage|5.0V|
-|Current Consumption|25mA (Max)|
-|Operating temperature|0&deg;C ~ 40&deg;C|
-|Baud rates|1,200bps ~ 1,000,000bps|
-|Antenna|Chip Antenna|
-|Interface|USB 2.0 Full Speed|
-|Sensitivity|-81dBm (Typical)|
-|Conducted Net Power|-6 ~ 4dBm (Class 2)|
+|               Item               |                  Description                   |
+|:--------------------------------:|:----------------------------------------------:|
+|              Weight              |                      7.5g                      |
+|            Dimension             |             50.5mm x 20mm x 10.5mm             |
+|            Bluetooth             | Bluetooth Specification 4.0 Low Energy Support |
+| Effective Communication Distance |                      10M                       |
+|            Frequency             |                2.4GHz ISM Band                 |
+|            Bandwidth             |                  MAX 128kbps                   |
+|        Default baud rate         |                   57,600bps                    |
+|        Operating Voltage         |                      5.0V                      |
+|       Current Consumption        |                   25mA (Max)                   |
+|      Operating temperature       |               0&deg;C ~ 40&deg;C               |
+|            Baud rates            |            1,200bps ~ 1,000,000bps             |
+|             Antenna              |                  Chip Antenna                  |
+|            Interface             |               USB 2.0 Full Speed               |
+|           Sensitivity            |                -81dBm (Typical)                |
+|       Conducted Net Power        |              -6 ~ 4dBm (Class 2)               |
 
 ## [Available Baudrate](#available-baudrate)
 
@@ -62,15 +62,15 @@ Please make sure to turn off the controller before connecting the Bluetooth modu
 # [Compatibility](#compatibility)
 Available features with BT-410 Dongle and BT-410 Slave pair.
 
-||Firmware Recovery<br />R+ Manager 2.0|Firmware Update<br />R+ Manager 2.0|Entry|R+ Scratch|TASK 2.0 Download|Motion 2.0 Download|
-|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|CM-50(PLAY700)|O|O|-|O|O|-|
-|[CM-150]|O|O|-|-|O|-|
-|[CM-200]|O|O|-|-|O|O|
-|[CM-530]|O|O|-|-|O|O|
-|OpenCM7.0|O|O|O|O|O||
-|[OpenCM9.04]|O|O|-|-|O|O|
-|Car Robot|-|-|O|O|-|-|
+|                | Firmware Recovery<br />R+ Manager 2.0 | Firmware Update<br />R+ Manager 2.0 | Entry | R+ Scratch | TASK 2.0 Download | Motion 2.0 Download |
+|:--------------:|:-------------------------------------:|:-----------------------------------:|:-----:|:----------:|:-----------------:|:-------------------:|
+| CM-50(PLAY700) |                   O                   |                  O                  |   -   |     O      |         O         |          -          |
+|    [CM-150]    |                   O                   |                  O                  |   -   |     -      |         O         |          -          |
+|    [CM-200]    |                   O                   |                  O                  |   -   |     -      |         O         |          O          |
+|    [CM-530]    |                   O                   |                  O                  |   -   |     -      |         O         |          O          |
+|   OpenCM7.0    |                   O                   |                  O                  |   O   |     O      |         O         |                     |
+|  [OpenCM9.04]  |                   O                   |                  O                  |   -   |     -      |         O         |          O          |
+|   Car Robot    |                   -                   |                  -                  |   O   |     O      |         -         |          -          |
 
 # [Communication Mode](#communication-mode)
 
@@ -205,6 +205,13 @@ If you installed RoboPlus, FTDI Driver (USB2Dynamixel, USB Downloader (LN-101) d
 4. Install the USB Serial Port driver in the same way.
 
     ![img_11][img_11]
+
+    
+# [References](#references)
+
+## [Certifications](#certifications)
+Please inquire us for information regarding unlisted certifications.
+- KCC, FCC, CE
 
 [CM-150]: /docs/en/parts/controller/cm-150/
 [CM-200]: /docs/en/parts/controller/cm-200/
