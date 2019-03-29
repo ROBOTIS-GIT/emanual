@@ -7,11 +7,11 @@ share: true
 author_profile: false
 permalink: /docs/kr/platform/openmanipulator_x/overview/
 sidebar:
-  title: OpenManipulator-X
+  title: 오픈매니퓰레이터-X
   nav: "openmanipulator_x"
 ---
 
-# OpenManipulator-X
+# 오픈매니퓰레이터-X
 
 ![](/assets/images/platform/openmanipulator_x/OpenManipulator.png)
 
