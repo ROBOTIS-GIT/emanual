@@ -29,7 +29,7 @@ If the electrical specification is exceeded or there is a problem with the signa
 - Do not connect the GNDext pin of External Port directly to the GND pin of DYNAMIXEL connector. Noise from power may affect on the External Port.
 {% endcapture %}
 
-<div class="notice--warning">{{ control_table_externalportdata_warning | markdownify }}</div>
+<div class="notice--danger">{{ control_table_externalportdata_warning | markdownify }}</div>
 
 #### External expansion port location and pin function
 Remove bolts and cover plate to reveal External Port connector.
