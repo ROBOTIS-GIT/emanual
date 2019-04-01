@@ -332,7 +332,7 @@ sidebar:
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_016.png)
 
-2. 관리할 대상이 정상적으로 검색되었는지 확인한 후 다음 버튼을 클릭합니다.  
+2. 관리할 대상이 정상적으로 검색되었는지 확인한 후 `다음` 버튼을 클릭합니다.  
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_update_all_001_kr.png)
 
@@ -340,7 +340,7 @@ sidebar:
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_update_all_002_kr.png)
 
-4. 업데이트가 정상적으로 완료될때까지 기다린후, 닫기 버튼을 클릭합니다.  
+4. 업데이트가 정상적으로 완료될때까지 기다린후, `닫기` 버튼을 클릭합니다.  
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_update_all_003_kr.png)
 
@@ -517,14 +517,14 @@ sidebar:
 
 ## [그래프 속도 최적화](#그래프-속도-최적화)
 
-그래프 설정에서 통신주기(Interval)를 최소 1ms로 설정할 수 있습니다.    
+그래프 설정에서 통신주기(Interval)를 최소 1 [ms]로 설정할 수 있습니다.  
 다음과 같이 설정하면 그래프를 최대한 빠르게 동작시킬 수 있습니다.
 
 ### [포트 응답 속도 설정](#포트-응답-속도-설정)
 
 #### 윈도우
 
-1. 윈도우의 장치관리자를 실행합니다. 해당 포트를 선택하고 마우스 오른쪽 버튼을 클릭하여 나온 메뉴에서 `속성`을 선택합니다.
+1. 윈도우의 `장치 관리자`를 실행합니다. 해당 포트를 선택하고 마우스 오른쪽 버튼을 클릭하여 나온 메뉴에서 `속성`을 선택합니다.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_graph_008.png)
 

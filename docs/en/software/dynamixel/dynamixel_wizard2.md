@@ -99,10 +99,30 @@ Detailed packet data can be loaded by selecting a packet in the packet history.
   - [for Windows](http://www.robotis.com/service/download.php?no=1670)
   - [for Linux](http://www.robotis.com/service/download.php?no=1671)
 
-Execute downloaded install file.  
-Click on `Next` button to proceed installation.
+## [Install: Windows](#install-windows)
+
+1. Execute downloaded installation file.  
+2. Click on `Next` button to proceed installation.
 
 ![](/assets/images/sw/dynamixel/wizard2/wizard2_setup_win_01.png)
+
+## [Install: Linux](#install-linux)
+
+1. Download the installation file.
+
+2. Enter the following command to change the permission.
+
+    ```c
+    # sudo chmod 775 DynamixelWizard2Setup-x86
+    ```
+
+3. Run the install program.  
+
+    ```c
+    # ./DynamixelWizard2Setup-x86
+    ```
+
+4. Click on `Next` button to proceed installation.
 
 # [Uninstall Software](#uninstall-software)
 
@@ -124,7 +144,7 @@ Click on `Next` button to proceed installation.
 
 1. From the folder where Dynamixel Wizard 2.0 is installed, execute `maintenancetool`.
 
-2. Select `Remove all components` and click `Next` to proceed..
+2. Select `Remove all components` and click `Next` to proceed.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_setup_linux_03.png)
 
@@ -247,10 +267,10 @@ Click on `Next` button to proceed installation.
     - Save : Save plotted data to CSV file
     - Enable/Disable Item : Click items on the right to toggle visibility
     - Zoom In : Drag an area to zoom in
-      - + `Shift` : Zoom In on X axis only
-      - + `Ctrl` : Zoom In on Y axis only
+      - `Shift` + `Select Area` : Zoom In on X axis only
+      - `Ctrl` + `Select Area` : Zoom In on Y axis only
       - Use mouse wheel to undo / redo zoom level setting
-    - While running the graph, use `Ctrl` + `Mouse Wheel` to adjust X axis length between 1 and 10 seconds.
+    - While running the graph, use `Ctrl` + `Mouse Wheel` to adjust X axis length from 1 to 10 seconds.
 
 ## [Packet](#packet)
 
@@ -337,7 +357,7 @@ Click on `Next` button to proceed installation.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_017.png)
 
-2. Firmware recovery will begin with a breif instruction. Please do NOT disconnect or turn off the DYNAMIXEL.
+2. Firmware recovery will begin with a breif instruction. Please do **NOT** disconnect or turn off the DYNAMIXEL.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_recovery_001.png)
 
@@ -347,7 +367,7 @@ Click on `Next` button to proceed installation.
 
 4. The proper communication port that is connected to DYNAMIXEL has to be selected manually. If the port is in use, it has to be released first.
 
-    **WARNING** : Only one DYNAMIXEL has to be connected to the port when recoverying the DYNAMIXEL firmware.
+    **WARNING** : Only one DYNAMIXEL should be connected to the port when recoverying the DYNAMIXEL firmware.
     {: .notice--warning}
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_recovery_003.png)
@@ -356,7 +376,7 @@ Click on `Next` button to proceed installation.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_recovery_004.png)
 
-6. If DYNAMIXEL is successfully detected, wizard begins firmware recovery. Please do NOT disconnect or turn off the DYNAMIXEL.
+6. If DYNAMIXEL is successfully detected, wizard begins firmware recovery. Please do **NOT** disconnect or turn off the DYNAMIXEL.
 
     ![](/assets/images/sw/dynamixel/wizard2/wizard2_firmware_recovery_005.png)
 
@@ -505,7 +525,7 @@ In order to find error in DYNAMIXEL, self diagnosis can be performed.
 
 ## [Graph Optimization](#graph-optimization)
 
-In order to use the minimum communication interval(1[ms]), please follow the instruction below.
+In order to use the minimum communication interval(1 [ms]), please follow the instruction below.
 
 ### [USB Latency Setting](#usb-latency-setting)
 
