@@ -238,6 +238,32 @@ Here is a list of all namespace members with links to the namespace documentatio
 # [Classes](#classes)
 
 ## [ChainingName](#chainingname)
+
+### robotis_manipulator::ChainingName Struct Reference
+
+```
+#include <robotis_manipulator_common.h>
+```
+> Definition at line 133 of file robotis_manipulator_common.h
+
+![](/assets/images/sw/api_references/chaining_name__coll__graph.png)
+> Collaboration diagram for robotis_manipulator::ChainingName
+
+#### Public Attributes
+
+|                Type | Name   |
+|--------------------:|:-------|
+|                Name | parent |
+| std::vector< Name > | child  |
+
+#### Member Data
+
+- std::vector\< Name \> robotis_manipulator::ChainingName::child
+  > Definition at line 136 of file robotis_manipulator_common.h
+- Name robotis_manipulator::ChainingName::parent
+  > Definition at line 135 of file robotis_manipulator_common.h
+
+
 ## [Component](#component)
 ## [CustomJointTrajectory](#customjointtrajectory)
 ## [CustomTaskTrajectory](#customtasktrajectory)
