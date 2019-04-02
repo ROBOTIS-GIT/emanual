@@ -1,0 +1,8 @@
+<map id="robotis_manipulator::TaskTrajectory::getTaskWaypoint" name="robotis_manipulator::TaskTrajectory::getTaskWaypoint">
+<area shape="rect" id="node2" href="$namespacerobotis__manipulator_1_1math.html#a4bbc795e8c06dd0472ed25864f6ec886" title="convertRPYToRotationMatrix " alt="" coords="284,85,487,141"/>
+<area shape="rect" id="node6" href="$namespacerobotis__manipulator_1_1math.html#a73d50f3962eeac18f464f879e6a0c8fc" title="convertRPYVelocityToOmega " alt="" coords="293,165,478,221"/>
+<area shape="rect" id="node7" href="$namespacerobotis__manipulator_1_1math.html#a752d1631596538515894f09f210eb17b" title="convertRPYAccelerationToOmegaDot " alt="" coords="280,245,491,301"/>
+<area shape="rect" id="node3" href="$namespacerobotis__manipulator_1_1math.html#a0a45b10176c2a214876aa265ec8e707e" title="convertYawAngleToRotationMatrix " alt="" coords="539,5,772,61"/>
+<area shape="rect" id="node4" href="$namespacerobotis__manipulator_1_1math.html#aa6112f12db3755d6677f45c9e0806cbf" title="convertPitchAngleToRotationMatrix " alt="" coords="561,85,749,141"/>
+<area shape="rect" id="node5" href="$namespacerobotis__manipulator_1_1math.html#ab7682932090e254cb077badb80fe8667" title="convertRollAngleToRotationMatrix " alt="" coords="565,165,746,221"/>
+</map>

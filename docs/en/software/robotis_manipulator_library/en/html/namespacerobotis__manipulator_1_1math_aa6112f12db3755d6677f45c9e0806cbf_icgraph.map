@@ -1,0 +1,8 @@
+<map id="robotis_manipulator::math::convertPitchAngleToRotationMatrix" name="robotis_manipulator::math::convertPitchAngleToRotationMatrix">
+<area shape="rect" id="node2" href="$namespacerobotis__manipulator_1_1math.html#a4bbc795e8c06dd0472ed25864f6ec886" title="convertRPYToRotationMatrix " alt="" coords="241,31,444,87"/>
+<area shape="rect" id="node3" href="$namespacerobotis__manipulator_1_1math.html#aa1d5ec03193d986594c03ab884126416" title="convertRPYToQuaternion " alt="" coords="497,5,713,47"/>
+<area shape="rect" id="node4" href="$classrobotis__manipulator_1_1_task_trajectory.html#a10718a16244458b0240ec357acfa09bd" title="getTaskWaypoint " alt="" coords="492,71,719,112"/>
+<area shape="rect" id="node5" href="$classrobotis__manipulator_1_1_robotis_manipulator.html#a94f13f3855b973d213a260e097b25fa2" title="getTrajectoryJointValue " alt="" coords="767,63,933,119"/>
+<area shape="rect" id="node6" href="$classrobotis__manipulator_1_1_robotis_manipulator.html#a78ce7a7754a99409c082e9124403cb62" title="getJointGoalValueFromTrajectory " alt="" coords="981,19,1205,75"/>
+<area shape="rect" id="node7" href="$classrobotis__manipulator_1_1_robotis_manipulator.html#aeabf7d5e0159fa82898e6372313ee44c" title="getJointGoalValueFromTrajectoryTickTime " alt="" coords="981,100,1205,171"/>
+</map>
