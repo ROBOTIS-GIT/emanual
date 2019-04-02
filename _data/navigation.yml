@@ -15286,8 +15286,8 @@ openmanipulator_x:
         url: /platform/openmanipulator_x/specification/#hardware-specification
       - title: "Dimension"
         url: /platform/openmanipulator_x/specification/#dimension
-      - title: "Repeatability"
-        url: /platform/openmanipulator_x/specification/#repeatability
+#      - title: "Repeatability"
+#        url: /platform/openmanipulator_x/specification/#repeatability
   - title: "Getting Started"
     url: /platform/openmanipulator_x/getting_started/#getting-started
     children:
