@@ -17926,8 +17926,20 @@ robotis_manipulator_libs:
     children:
     - title: "ROS Package"
       url: /software/robotis_manipulator_libs/#ros-package
+      childreb:
+      - title: "Install Ubuntu on PC"
+        url: /software/robotis_manipulator_libs/#install-ubuntu-on-pc
+      - title: "Install ROS on PC"
+        url: /software/robotis_manipulator_libs/#install-ros-on-pc
+      - title: "Install ROS Package"
+        url: /software/robotis_manipulator_libs/#install-ros-package
     - title: "OpenCR"
       url: /software/robotis_manipulator_libs/#opencr
+      children:
+      - title: "Connection"
+        url: /software/robotis_manipulator_libs/#connection
+      - title: "Arduino IDE Setup"
+        url: /software/robotis_manipulator_libs/#arduino-ide-setup
   # - title: "Struct List"
   #   url: /software/robotis_manipulator_libs/#struct-list
   #   children:
