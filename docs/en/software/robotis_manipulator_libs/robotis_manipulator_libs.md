@@ -23,7 +23,58 @@ The robotis_manipulator package is a library package for controlling the manipul
 ## [OpenCR](#opencr)
 
 
-# [Struct List](#struct-list)
+# [API References](#api-references)
+
+refer Doxygen.
+** Coming soon **
+
+# [API Usage Tutorials](#api-usage-tutorials)
+
+** Coming soon **
+
+## [Step1 Make Manipulator Class](#step1.-make-manipulator-class)
+
+** Coming soon **
+
+## [Step2 Initialize Manipulator](##step2.-initialize-manipulator)
+
+** Coming soon **
+
+### [Set Robot Parameter](#set-robot-parameter)
+
+** Coming soon **
+
+### [Add Kinematics Object](#add-kinematics-object)
+
+** Coming soon **
+
+### [Add Actuator Object](#add-actuator-object)
+
+** Coming soon **
+
+### [Add Custom Trajectory Object](add-custom-trajectory-object)
+
+** Coming soon **
+
+## [Step3 Make Control process Function](##step3.-make-control-process-function)
+
+** Coming soon **
+
+## [Step4 Use it](#step4.-use-it)
+
+** Coming soon **
+
+
+
+
+
+
+
+
+
+
+
+<!-- # [Struct List](#struct-list)
 
 ## [Value Set](#value-set)
 
@@ -1019,41 +1070,4 @@ Eigen::VectorXd poseDifference(Eigen::Vector3d desired_position, Eigen::Vector3d
 
 ```c
   template <typename matrix> void print_matrix(matrix &m, uint8_t decimal_point = 3);
-```
-
-# [API Usage Tutorials](#api-usage-tutorials)
-
-** Coming soon **
-
-## [Step1 Make Manipulator Class](#step1.-make-manipulator-class)
-
-** Coming soon **
-
-## [Step2 Initialize Manipulator](##step2.-initialize-manipulator)
-
-** Coming soon **
-
-### [Set Robot Parameter](#set-robot-parameter)
-
-** Coming soon **
-
-### [Add Kinematics Object](#add-kinematics-object)
-
-** Coming soon **
-
-### [Add Actuator Object](#add-actuator-object)
-
-** Coming soon **
-
-### [Add Custom Trajectory Object](add-custom-trajectory-object)
-
-** Coming soon **
-
-## [Step3 Make Control process Function](##step3.-make-control-process-function)
-
-** Coming soon **
-
-## [Step4 Use it](#step4.-use-it)
-
-** Coming soon **
-
+``` -->
