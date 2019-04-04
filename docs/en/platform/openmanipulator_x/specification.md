@@ -23,7 +23,7 @@ sidebar:
 | **Input Voltage**   | V       | 12                                      |
 | **DOF**             | -       | 5 (4 DOF + 1 DOF Gripper)               |
 | **Payload**         | g       | 500                                     |
-| **Repeatability**   | mm      | < 0.05                                  |
+| **Repeatability**   | mm      | < 0.2                                   |
 | **Speed(Joint)**    | RPM     | 46                                      |
 | **Weight**          | kg (lb) | 0.70  (1.54)                            |
 | **Reach**           | mm (in) | 380   (14.9)                            |
@@ -38,6 +38,8 @@ sidebar:
 
 <!-- ![](/assets/images/platform/openmanipulator_x/OpenManipulator_Chain_spec_gripper.jpg) -->
 
+<!--
+
 ## [Repeatability](#repeatability)
 
 The below video introduces how the repeatability of OpenManipulator-X was measured. 
@@ -46,3 +48,4 @@ The below video introduces how the repeatability of OpenManipulator-X was measur
 
 QC MANAGER single LSY-220LN ([Korean Manual](http://qcmanager.cafe24.com/wp/wp-content/uploads/2017/11/KYENG_qcmanager_cata.pdf)) and Mitutoyo 540-390 digimatic indicator ID-C, 12.7mm ([English Manual](https://ecatalog.mitutoyo.com/ABSOLUTE-Digimatic-Indicator-ID-C-Series-543-Standard-Type-C1198.aspx)) were used for the data collection. Based on the result from 300 measurements, we guarantee less than 0.05 mm repeatability.
 
+-->
